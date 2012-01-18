@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<history>
+  <StructureModification>
+    <dependencies>
+      <model index="jmu5" modelUID="r:d36b57a1-0d5c-4bdc-85a8-b1496d753369(com.mbeddr.graph.behavior)" version="-1" />
+      <model index="7agb" modelUID="r:55fe2672-d62e-4c9c-8db4-5a00d7c96145(com.mbeddr.graph.constraints)" version="-1" />
+      <model index="e4j1" modelUID="r:54a3b42e-bf25-49f0-8b92-5b8eeb157b3d(com.mbeddr.graph.editor)" version="-1" />
+      <model index="4s7u" modelUID="r:2c1e4771-d0b0-479f-af0c-22db0dc954ef(com.mbeddr.graph.typesystem)" version="-1" />
+      <model index="fu4" modelUID="r:7548c497-f566-4ab6-8b07-0394a89bfb99(com.mbeddr.graph.structure)" version="-1" />
+    </dependencies>
+    <RenameModel oldModel="r:7548c497-f566-4ab6-8b07-0394a89bfb99(com.mbeddr.graph.structure)" newModel="r:7548c497-f566-4ab6-8b07-0394a89bfb99(com.mbeddr.mpsutil.graph.structure)" />
+    <RenameModel oldModel="r:2c1e4771-d0b0-479f-af0c-22db0dc954ef(com.mbeddr.graph.typesystem)" newModel="r:2c1e4771-d0b0-479f-af0c-22db0dc954ef(com.mbeddr.mpsutil.graph.typesystem)" />
+    <RenameModel oldModel="r:55fe2672-d62e-4c9c-8db4-5a00d7c96145(com.mbeddr.graph.constraints)" newModel="r:55fe2672-d62e-4c9c-8db4-5a00d7c96145(com.mbeddr.mpsutil.graph.constraints)" />
+    <RenameModel oldModel="r:54a3b42e-bf25-49f0-8b92-5b8eeb157b3d(com.mbeddr.graph.editor)" newModel="r:54a3b42e-bf25-49f0-8b92-5b8eeb157b3d(com.mbeddr.mpsutil.graph.editor)" />
+    <RenameModel oldModel="r:d36b57a1-0d5c-4bdc-85a8-b1496d753369(com.mbeddr.graph.behavior)" newModel="r:d36b57a1-0d5c-4bdc-85a8-b1496d753369(com.mbeddr.mpsutil.graph.behavior)" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="fu4" modelUID="r:7548c497-f566-4ab6-8b07-0394a89bfb99(com.mbeddr.mpsutil.graph.structure)" version="0" />
+    </dependencies>
+    <rename id="fu4.5104882350373546418" type="REFERENCE" from="node" to="target" />
+  </StructureModification>
+</history>
+

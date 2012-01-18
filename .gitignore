@@ -1,0 +1,59 @@
+# -----------------------------------------------------------
+# General
+
+distros/*
+MPS/*
+
+.DS_Store
+.metadata
+
+junitvmwatcher*.properties
+build.properties
+TEST-*.xml
+junit*.properties
+
+# -----------------------------------------------------------
+# * diagrams
+code/languages/com.mbeddr.core/diagrams/*.dot
+code/languages/com.mbeddr.core/diagrams/*.gv
+code/languages/com.mbeddr.core/diagrams/*.png
+code/languages/com.mbeddr.ext/diagrams/*.dot
+code/languages/com.mbeddr.ext/diagrams/*.gv
+code/languages/com.mbeddr.ext/diagrams/*.png
+
+# -----------------------------------------------------------
+# * languages
+code/languages/*/languages/*/classes_gen
+code/languages/*/languages/*/source_gen
+code/languages/*/languages/*/source_gen.caches
+
+# -----------------------------------------------------------
+# * tests
+code/languages/*/tests/*/classes_gen
+code/languages/*/tests/*/source_gen
+code/languages/*/tests/*/source_gen.caches
+
+# -----------------------------------------------------------
+# * libs
+code/languages/*/lib/*/classes_gen
+code/languages/*/lib/*/source_gen
+code/languages/*/lib/*/source_gen.caches
+
+
+# -----------------------------------------------------------
+# * solutions
+code/languages/*/solutions/*/classes_gen
+code/languages/*/solutions/*/source_gen
+code/languages/*/solutions/*/source_gen.caches
+
+# -----------------------------------------------------------
+# * project settings
+code/languages/*/*.dev.iws
+code/languages/*/build.properties
+code/languages/*/TEST*.xml
+
+#-----------------------------------------------------------
+# tests
+code/languages/*/solutions/*/test_gen.caches/
+code/languages/*/solutions/*/test_gen/
+

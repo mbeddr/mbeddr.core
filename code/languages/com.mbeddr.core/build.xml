@@ -1,0 +1,101 @@
+<project name="com.mbeddr.core build and test" default="build">
+
+  <property file="build.properties"/>
+
+  <taskdef resource="jetbrains/mps/build/ant/antlib.xml"
+           classpath="${mps.home}/languages/generate.ant.task.jar"/>
+
+  <property name="mbeddr.core.project.dir" value="code/languages/com.mbeddr.core"/>
+  <property name="mbeddr.core.project.mpr" value="code/languages/com.mbeddr.core/core.dev.mpr"/>
+  
+  <property name="util.project.dir" value="code/languages/com.mbeddr.mpsutil"/>
+  <property name="util.project.mpr" value="code/languages/com.mbeddr.mpsutil/mpsutil.dev.mpr"/>
+ 
+ 
+  <jvmargs id="myargs">
+      <arg value="-ea"/>
+      <arg value="-Xss1024k"/>
+      <arg value="-Xmx1024m"/>
+      <arg value="-XX:MaxPermSize=92m"/>
+      <arg value="-XX:+HeapDumpOnOutOfMemoryError"/>
+	  <arg value="-Didea.system.path=${mps.platform.caches}/system"/>
+	  <arg value="-Didea.config.path=${mps.platform.caches}/config"/>
+	  <arg value="-Didea.plugins.path=${mps.platform.caches}/plugins"/>
+  </jvmargs>
+
+  <target name="init">
+      <delete dir="${mps.platform.caches}"/>
+      <mkdir dir="${mps.platform.caches}"/>
+  </target>
+  
+  <target name="build">
+	<antcall target="build-languages"/>
+	<antcall target="build-tests"/>
+  </target>
+   
+  
+  <target name="build-languages" depends="init">
+    <mps.generate parallelMode="true" fork="true">
+      <jvmargs id="myargs"/>
+      <library name="mbeddr.project" dir="${mbeddr.home}/${mbeddr.core.project.dir}"/>
+      <library name="util.languages" dir="${mbeddr.home}/${util.project.dir}/languages"/>
+
+      <modules dir="${mbeddr.home}/${mbeddr.core.project.dir}/languages"/>
+    </mps.generate>
+  </target>
+
+  
+  <target name="build-tests" depends="init">
+    <mps.generate parallelMode="true" fork="true">
+      <jvmargs id="myargs"/>
+      <library name="project" dir="${mbeddr.home}/${mbeddr.core.project.dir}"/>
+      <library name="mbeddr.project" dir="${mbeddr.home}/${mbeddr.core.project.dir}"/>
+      <library name="util.languages" dir="${mbeddr.home}/${util.project.dir}/languages"/>
+
+	  <!-- executable tests -->
+      <modules dir="${mbeddr.home}/${mbeddr.core.project.dir}/tests/test.ex.core"/>
+	  <modules dir="${mbeddr.home}/${mbeddr.core.project.dir}/tests/test.ex.errorreporting"/>
+  
+	  
+	  <!-- type system tests -->
+      <modules dir="${mbeddr.home}/${mbeddr.core.project.dir}/tests/test.ts.core"/>
+
+	  </mps.generate>
+  </target>
+
+  
+  
+  <target name="run-ts-tests" >
+    
+    <echo message="mbeddr.home = ${mbeddr.home}"/>
+	<echo message="path.macro.mbeddr.home := ${mbeddr.home}"/>
+	
+    <junit haltonfailure="true" showoutput="true" fork="true" dir="${mps.home}">
+      <jvmarg value="-ea"/>
+      <jvmarg value="-Xss1024k"/>
+      <jvmarg value="-Xmx1024m"/>
+      <jvmarg value="-XX:MaxPermSize=256m"/>
+      <jvmarg value="-XX:+HeapDumpOnOutOfMemoryError"/>
+      <jvmarg value="-XX:-UseGCOverheadLimit"/>
+	  
+      <sysproperty key="idea.system.path" value="${mps.platform.caches}/system"/>
+      <sysproperty key="idea.config.path" value="${mps.platform.caches}/config"/>
+      <sysproperty key="idea.plugins.path" value="${mps.platform.caches}/plugins"/>
+ 	  
+      <sysproperty key="mps.junit.pathmacro.mbeddr.home" value="${mbeddr.home}"/>
+	  <sysproperty key="mps.junit.project" value="${mbeddr.home}/${mbeddr.core.project.mpr}"/>
+
+      <classpath>
+        <fileset dir="${mps.home}/lib">
+          <include name="**/*.jar"/>
+        </fileset>
+        <fileset dir="${mps.home}/plugins">
+          <include name="**/*.jar"/>
+        </fileset>
+      </classpath>
+
+      <test name="jetbrains.mps.testbench.junit.suites.DefaultTestSuite"/>
+      <formatter type="xml"/>
+    </junit>
+  </target>
+</project>

@@ -1,0 +1,6 @@
+# MPS installation
+mps.home="/Applications/MPS\ 2.0.app/"
+# directory that contains the mbeddr project (the one that contains the .git dir)
+mbeddr.home=/Users/berndkolb/mps/mbeddr
+# an existing, empty dir that MPS can use for caching
+mps.platform.caches=/Users/berndkolb/mps/mbeddr/cached

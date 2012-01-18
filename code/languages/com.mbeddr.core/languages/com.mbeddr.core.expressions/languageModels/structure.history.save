@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<history>
+  <StructureModification>
+    <dependencies>
+      <model index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="6" />
+    </dependencies>
+    <rename id="mj1l.4739982148980385695" type="CONCEPT" from="DoubleType" to="FloatType" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="0" />
+    </dependencies>
+    <rename id="mj1l.3342324201518846461" type="CONCEPT" from="BitwiseOperation" to="INumberOperation" />
+  </StructureModification>
+</history>
+

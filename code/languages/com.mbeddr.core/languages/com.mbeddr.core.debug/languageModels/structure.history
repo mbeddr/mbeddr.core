@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<history>
+  <StructureModification>
+    <dependencies>
+      <model index="deyh" modelUID="r:e848bdb6-7935-4251-b2eb-127fad59ac61(com.mbeddr.core.debug.plugin)" version="-1" />
+      <model index="2gv2" modelUID="r:055bac8c-a50b-42ec-a317-e20a256152b4(com.mbeddr.core.debug.structure)" version="-1" />
+    </dependencies>
+    <move id="deyh.1710928992638358258" to="2gv2.568116135000812899" />
+    <move id="deyh.568116135000812339" to="2gv2.568116135000812918" />
+    <move id="deyh.568116135000812352" to="2gv2.568116135000812905" />
+    <move id="deyh.1710928992638149136" to="2gv2.568116135000812921" />
+    <move id="deyh.568116135000812338" to="2gv2.568116135000812920" />
+    <move id="deyh.568116135000812332" to="2gv2.568116135000812913" />
+    <move id="deyh.568116135000812355" to="2gv2.568116135000812916" />
+    <move id="deyh.568116135000812333" to="2gv2.568116135000812914" />
+    <move id="deyh.568116135000812351" to="2gv2.568116135000812904" />
+    <move id="deyh.568116135000812337" to="2gv2.568116135000812919" />
+    <move id="deyh.568116135000812330" to="2gv2.568116135000812909" />
+    <move id="deyh.568116135000812354" to="2gv2.568116135000812911" />
+    <move id="deyh.568116135000812334" to="2gv2.568116135000812912" />
+    <move id="deyh.568116135000812325" to="2gv2.568116135000812903" />
+    <move id="deyh.568116135000812349" to="2gv2.568116135000812901" />
+    <move id="deyh.568116135000812350" to="2gv2.568116135000812902" />
+    <move id="deyh.568116135000812327" to="2gv2.568116135000812907" />
+    <move id="deyh.1710928992638358259" to="2gv2.568116135000812900" />
+    <move id="deyh.568116135000812335" to="2gv2.568116135000812915" />
+    <move id="deyh.568116135000580421" to="2gv2.568116135000812898" />
+    <move id="deyh.568116135000812353" to="2gv2.568116135000812910" />
+    <move id="deyh.568116135000812328" to="2gv2.568116135000812908" />
+    <move id="deyh.1710928992638149135" to="2gv2.568116135000812896" />
+    <move id="deyh.568116135000812329" to="2gv2.568116135000812906" />
+    <move id="deyh.1710928992638358256" to="2gv2.568116135000812897" />
+    <move id="deyh.568116135000812356" to="2gv2.568116135000812917" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="deyh" modelUID="r:e848bdb6-7935-4251-b2eb-127fad59ac61(com.mbeddr.core.debug.plugin)" version="0" />
+      <model index="2gv2" modelUID="r:055bac8c-a50b-42ec-a317-e20a256152b4(com.mbeddr.core.debug.structure)" version="0" />
+    </dependencies>
+    <move id="deyh.3459385192073379395" to="2gv2.3459385192073384466" />
+    <move id="deyh.3459385192073379397" to="2gv2.3459385192073384463" />
+    <move id="deyh.3459385192073379394" to="2gv2.3459385192073384461" />
+    <move id="deyh.3459385192073379399" to="2gv2.3459385192073384465" />
+    <move id="deyh.3459385192073379398" to="2gv2.3459385192073384464" />
+    <move id="deyh.3459385192073379396" to="2gv2.3459385192073384462" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="2gv2" modelUID="r:055bac8c-a50b-42ec-a317-e20a256152b4(com.mbeddr.core.debug.structure)" version="1" />
+    </dependencies>
+    <rename id="2gv2.9057217260024409663" type="CONCEPT" from="IVariablesProvider" to="IWatchablesProvider" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="2gv2" modelUID="r:055bac8c-a50b-42ec-a317-e20a256152b4(com.mbeddr.core.debug.structure)" version="2" />
+    </dependencies>
+    <rename id="2gv2.4474148880361719194" type="CONCEPT" from="IGlobalVarProvider" to="IGlobalVariablesProvider" />
+  </StructureModification>
+</history>
+

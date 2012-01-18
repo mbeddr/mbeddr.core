@@ -1,0 +1,5 @@
+*.mps merge=mps
+trace.info merge=mps
+.dependencies merge=mps
+dependencies merge=mps
+generated merge=mps

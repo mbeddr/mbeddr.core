@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<history>
+  <StructureModification>
+    <dependencies>
+      <model index="k146" modelUID="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" version="-1" />
+    </dependencies>
+    <rename id="k146.2688792604367964821" type="CONCEPT" from="CheckConditionStatement" to="RaiseConditionStatement" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="k146" modelUID="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" version="0" />
+    </dependencies>
+    <rename id="k146.2688792604367903085" type="CONCEPT" from="ConditionTable" to="MessageDefinitionTable" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="k146" modelUID="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" version="1" />
+    </dependencies>
+    <rename id="k146.2688792604367903087" type="CONCEPT" from="ConditionDefinition" to="MessageDefinition" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="k146" modelUID="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" version="2" />
+    </dependencies>
+    <rename id="k146.2688792604367903089" type="PROPERTY" from="message" to="text" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="k146" modelUID="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" version="3" />
+    </dependencies>
+    <rename id="k146.2688792604367964823" type="CONCEPT" from="ConditionReference" to="MessageRef" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="k146" modelUID="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" version="4" />
+    </dependencies>
+    <rename id="k146.2688792604367964825" type="REFERENCE" from="conddef" to="msg" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="k146" modelUID="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" version="5" />
+    </dependencies>
+    <rename id="k146.2688792604367973273" type="CHILD" from="ref" to="msgref" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="k146" modelUID="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" version="6" />
+    </dependencies>
+    <rename id="k146.2688792604367903095" type="CHILD" from="definitions" to="messages" />
+  </StructureModification>
+</history>
+

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CodeStyleSettings">
+    <option name="fieldPrefix" value="" />
+    <option name="fieldSuffix" value="" />
+    <option name="localVariablePrefix" value="" />
+    <option name="localVariableSuffix" value="" />
+    <option name="parameterPrefix" value="" />
+    <option name="parameterSuffix" value="" />
+    <option name="staticFieldPrefix" value="" />
+    <option name="staticFieldSuffix" value="" />
+  </component>
+  <component name="DependencyValidationManager">
+    <option name="SKIP_IMPORT_STATEMENTS" value="false" />
+  </component>
+  <component name="Encoding" useUTFGuessing="true" native2AsciiForPropertiesFiles="false" />
+  <component name="MPSProject">
+    <projectModules>
+      <modulePath path="${project}/devkits/com.mbeddr.core/core.devkit" />
+      <modulePath path="${project}/languages/com.mbeddr.core.arrays/arrays.mpl" folder="core" />
+      <modulePath path="${project}/languages/com.mbeddr.core.base/base.mpl" folder="core" />
+      <modulePath path="${project}/languages/com.mbeddr.core.buildconfig/buildconfig.mpl" folder="core" />
+      <modulePath path="${project}/languages/com.mbeddr.core.debug/debug.mpl" folder="core" />
+      <modulePath path="${project}/languages/com.mbeddr.core.expressions/expressions.mpl" folder="core" />
+      <modulePath path="${project}/languages/com.mbeddr.core.make/make.mpl" folder="core" />
+      <modulePath path="${project}/languages/com.mbeddr.core.modules.gen/gen.mpl" folder="core" />
+      <modulePath path="${project}/languages/com.mbeddr.core.modules/modules.mpl" folder="core" />
+      <modulePath path="${project}/languages/com.mbeddr.core.statements/statements.mpl" folder="core" />
+      <modulePath path="${project}/languages/com.mbeddr.core.udt/udt.mpl" folder="core" />
+      <modulePath path="${project}/languages/com.mbeddr.core.unittest/unittest.mpl" folder="core" />
+      <modulePath path="${project}/languages/com.mbeddr.core.util/util.mpl" folder="core" />
+      <modulePath path="${project}/solutions/com.mbeddr.core.about/about.msd" folder="" />
+      <modulePath path="${project}/tests/aLibrary/aLibrary.msd" folder="tests" />
+      <modulePath path="${project}/tests/test.ex.core.libs/libs.msd" folder="tests" />
+      <modulePath path="${project}/tests/test.ex.core/core.msd" folder="tests" />
+      <modulePath path="${project}/tests/test.ex.errorreporting/errorreporting.msd" folder="tests" />
+      <modulePath path="${project}/tests/test.ts.core/core.msd" folder="tests" />
+    </projectModules>
+    <genConfs />
+  </component>
+  <component name="MigrationState">
+    <option name="myState" value="DONE" />
+  </component>
+  <component name="ProjectLibraryManager">
+    <option name="libraries">
+      <map>
+        <entry key="mpsutils">
+          <value>
+            <Library>
+              <option name="name" value="mpsutils" />
+              <option name="path" value="${mbeddr.home}/code/languages/com.mbeddr.mpsutil" />
+            </Library>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="ProjectModuleManager">
+    <modules />
+  </component>
+  <component name="ProjectRootManager" version="2" />
+  <component name="ProjectVersion">
+    <option name="version" value="2.0" />
+  </component>
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$mbeddr.home$" vcs="Git" />
+  </component>
+</project>
+

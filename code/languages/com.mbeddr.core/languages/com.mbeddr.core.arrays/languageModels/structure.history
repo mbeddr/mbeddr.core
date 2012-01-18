@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<history>
+  <StructureModification>
+    <dependencies>
+      <model index="yq40" modelUID="r:152b3fc0-83a1-4bab-a8cd-565eb8483785(com.mbeddr.core.pointers.structure)" version="-1" />
+    </dependencies>
+    <rename id="yq40.6883925235272353063" type="CHILD" from="type2Calculate" to="expr" />
+  </StructureModification>
+</history>
+

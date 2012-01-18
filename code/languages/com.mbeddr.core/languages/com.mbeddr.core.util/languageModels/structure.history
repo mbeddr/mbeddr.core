@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<history>
+  <StructureModification>
+    <dependencies>
+      <model index="k146" modelUID="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" version="-1" />
+    </dependencies>
+    <rename id="k146.2688792604367903085" type="CONCEPT" from="MessageDefinitionTable" to="MessageList" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="k146" modelUID="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" version="0" />
+    </dependencies>
+    <rename id="k146.8729447926330198397" type="CHILD" from="viterator" to="iterator" />
+  </StructureModification>
+</history>
+

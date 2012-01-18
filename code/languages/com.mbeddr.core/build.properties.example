@@ -1,0 +1,6 @@
+# MPS installation
+mps.home=T:/MPS2.0/
+# directory that contains the mbeddr project (the one that contains the .git dir)
+mbeddr.home=L:/lwes-assembla/mbeddr/
+# an existing, empty dir that MPS can use for caching
+mps.platform.caches=L:/lwes-assembla/mps-ant-caches/

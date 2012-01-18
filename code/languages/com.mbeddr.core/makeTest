@@ -1,0 +1,147 @@
+#!/bin/sh
+#set +v
+
+PROC_RET=0
+
+cd tests/test.ex.core/source_gen/test/ex/core/
+
+echo -------------------------------------
+echo blocksAndScopes
+cd blocksAndScopes
+make test
+PROC_RET=$(($?+$PROC_RET))
+
+echo -------------------------------------
+echo expressions
+cd ../expressions
+make test
+PROC_RET=$(($?+$PROC_RET))
+
+echo -------------------------------------
+echo sections
+cd ../sections
+make test
+PROC_RET=$(($?+$PROC_RET))
+
+echo -------------------------------------
+echo commenting
+cd ../commenting
+make test
+PROC_RET=$(($?+$PROC_RET))
+
+echo -------------------------------------
+echo goto
+cd ../gototests
+make test
+PROC_RET=$(($?+$PROC_RET))
+
+echo -------------------------------------
+echo reporting
+cd ../reporting
+make test
+PROC_RET=$(($?+$PROC_RET))
+
+echo -------------------------------------
+echo ranges
+cd ../ranges
+make test
+PROC_RET=$(($?+$PROC_RET))
+
+
+
+echo -------------------------------------
+echo strangenumbers
+cd ../strangenumbers
+make test
+PROC_RET=$(($?+$PROC_RET))
+
+echo -------------------------------------
+echo externalModules
+cd ../externalModules
+make test
+PROC_RET=$(($?+$PROC_RET))
+
+echo -------------------------------------
+echo pointers
+cd ../pointers
+make test
+PROC_RET=$(($?+$PROC_RET))
+
+echo -------------------------------------
+echo externalOFile
+cd ../externalOFile
+make test
+PROC_RET=$(($?+$PROC_RET))
+
+echo -------------------------------------
+echo globals
+cd ../globals
+make test
+PROC_RET=$(($?+$PROC_RET))
+
+echo -------------------------------------
+echo statements
+cd ../statements
+make test
+PROC_RET=$(($?+$PROC_RET))
+
+echo -------------------------------------
+echo structsAndEnums
+cd ../structsAndEnums
+make test
+PROC_RET=$(($?+$PROC_RET))
+
+echo -------------------------------------
+echo typedef
+cd ../typedef
+make test
+PROC_RET=$(($?+$PROC_RET))
+
+echo -------------------------------------
+echo utils
+cd ../utils
+make test
+PROC_RET=$(($?+$PROC_RET))
+
+
+echo -------------------------------------
+echo Library Test
+cd ../../../../../../aLibrary/source_gen/aLibrary/lib
+make 
+PROC_RET=$(($?+$PROC_RET))
+cd ../../../../test.ex.core.libs/source_gen/test/ex/core/libs/app
+make test
+PROC_RET=$(($?+$PROC_RET))
+
+
+
+
+echo -------------------------------------
+echo MainTest
+cd ../../../../MainTest
+make test
+PROC_RET=$(($?+$PROC_RET))
+
+
+if [ "$PROC_RET" -ne "0" ]; 
+ then
+    echo ""
+    echo "" 
+    echo "================================================"
+    echo "================================================" 
+    echo "               $PROC_RET test(s) failed"
+    echo "================================================"
+    echo "================================================"
+    echo ""
+    echo ""
+ else
+  echo ""
+    echo "" 
+    echo "================================================"
+    echo "              OK - All tests green"
+    echo "================================================"
+    echo ""
+    echo ""
+fi
+
+exit $PROC_RET
