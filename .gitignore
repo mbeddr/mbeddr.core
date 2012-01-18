@@ -57,3 +57,32 @@ code/languages/*/TEST*.xml
 code/languages/*/solutions/*/test_gen.caches/
 code/languages/*/solutions/*/test_gen/
 
+# -----------------------------------------------------------
+# applications
+code/applications/*/*.iws
+code/applications/*/solutions/*/source_gen
+code/applications/*/solutions/*/source_gen.caches
+code/applications/*/solutions/*/classes_gen
+code/applications/*/tests/*/source_gen
+code/applications/*/tests/*/source_gen.caches
+code/applications/*/tests/*/classes_gen
+code/applications/*/languages/*/source_gen
+code/applications/*/languages/*/source_gen.caches
+code/applications/*/languages/*/classes_gen
+code/applications/*/source_gen
+code/applications/*/source_gen.caches
+code/applications/*/classes_gen
+code/applications/*/classes_gen.caches
+code/applications/*/build.properties
+
+# -----------------------------------------------------------
+# documentation
+documentation/*/*.aux
+documentation/*/*.bbl
+documentation/*/*.blg
+documentation/*/*.dvi
+documentation/*/*.log
+documentation/*/*.out
+documentation/*/*.toc
+documentation/*/*.synctex.gz
+

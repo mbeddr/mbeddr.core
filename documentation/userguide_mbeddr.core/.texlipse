@@ -1,0 +1,13 @@
+#TeXlipse project settings
+#Fri Nov 18 09:34:15 CET 2011
+builderNum=2
+outputDir=
+makeIndSty=
+bibrefDir=
+outputFormat=pdf
+tempDir=
+mainTexFile=userguide_mbeddr.core.tex
+outputFile=userguide_mbeddr.core.pdf
+langSpell=en
+markDer=true
+srcDir=

@@ -1,0 +1,19 @@
+<project name="HelloWorld" default="build">
+
+  <property file="build.properties"/>
+
+  <taskdef resource="jetbrains/mps/build/ant/antlib.xml"
+           classpath="${mps.home}/languages/generate.ant.task.jar"/>
+
+  <target name="build">
+    <mps.generate loglevel="info" fork="true" failonerror="true">
+      <jvmargs id="myargs">
+       <arg value="-Xmx512m"/>
+      </jvmargs>
+	  <project file="${mbeddr.home}/code/applications/HelloWorld/HelloWorld.mpr"/>
+	  <library name="mbeddr.core" dir="${mbeddr.home}/code/languages/com.mbeddr.core"/>
+	  <library name="mbeddr.utils" dir="${mbeddr.home}/code/languages/com.mbeddr.mpsutil"/>
+    </mps.generate>
+  </target>
+
+</project>

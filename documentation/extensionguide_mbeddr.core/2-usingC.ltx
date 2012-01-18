@@ -1,0 +1,272 @@
+
+\subsection{Using the Extensible C}
+\label{usingC}
+
+In this section we show how to use the extensible C language and some example
+extensions to address the challenges discussed above (\sect{challenges}). How
+such extensions are added to the core language will be discussed in \sect{design}. We
+address each of the challenges $C_n$ and ways of extending C $W_n$ with at least
+one example each.
+
+
+
+\paragraph{A cleaned up C} (addresses $C_3$) To make C extensible, we first had
+to implement C in MPS. This entails the definition of the language structure,
+the syntax and the type system\footnote{A generator to C text is also required,
+so the code can be fed into an existing compiler. However, since this generator
+merely renders the tree as text, with no structural differences, this generator
+is trivial and hardly worth mentioning.}. While doing this we changed some
+aspects of C. Some of these changes are a first step in providing a safer C.
+Others changes were implemented because it is more convenient to the user or
+because it simplified the implementation of the language in MPS. Here are some
+examples.
+
+Our C implementation provides \emph{modules} (\fig{moduleexample}). A module
+contains the top level C constructs (such as structs, functions, variables,
+etc.). These module contents can be \lcr{exported}. Furthermore modules can
+\emph{import} other modules, so they can access the exported contents of the
+imported modules. While header files are of course generated, we don't expose
+them to the user. This is an example of a simplification of C --- header files
+are in essence just C's workaround for distinguishing public and private aspects
+of a C file. 
+
+\begin{figure}[h]
+\begin{code} 
+	module Calculator { 
+	  exported int add(int x, int y) { 
+	    return x + y; 
+	  }  
+	}
+	
+	module CalculatorClient imports Calculator { 
+	  int main(char*[] args, int argc) { 
+	    return add(1, 2); 
+	  }  
+	}
+\end{code}
+\caption{Modules form the top-level container in our C. They can import other
+modules, whose exported contents become visible to the importing module.}
+\label{moduleexample}
+\end{figure}
+
+
+We intentionally do not support the \emph{preprocessor}. The preprocessor is
+used for various tasks in C, some of them legitimate (e.g. header files, constants or simple
+macros) and other questionable (e.g. fine-grained \lcr{\#ifdef}s for variability
+implementation). Our C implementation provides first-class support for the
+legitimate uses of the preprocessor. An example of this is the module system
+mentioned in the previous paragraph as well as the support for expressing
+variability discussed below. Removing the preprocessor and providing more
+specific support for the legitimate use cases will lead to more maintainable
+programs.
+
+TODO: in general the pointer syntax is not very nice\ldots 
+
+The syntax for function pointers is a bit convoluted in C, so we have cleaned up
+and extended it. In particular, we support lambdas (see
+\fig{funpointerexample}).
+
+\begin{figure}[h]
+\begin{code} 
+  void main(char*[] args, int argc) { 
+    int[] anArray = {1, 2, 3}; 
+    forEachElement(anArray, 3, :times2); 
+    forEachElement(anArray, 3, [a|3 * a;]); 
+  } 
+  
+  int times2(int a) { return 2 * a; } 
+ 
+  void forEachElement(int[] arr, int len, (int)=>(int) f) { 
+    for (int i = 0; i < len; i++) { arr[i] = f(arr[i]); } 
+  } 
+\end{code}
+
+\caption{The function \lcr{each} is a higher order function takes takes a
+reference to another function as its third argument. That function has to take 
+one \lcr{int} as the argument and return an \lcr{int}. From main we call this
+\lcr{each} with a reference to \lcr{times2} and with a lambda that multiplies
+by three.} 
+\label{funpointerexample}  
+\end{figure}
+
+
+\lcr{int} is not interpreted as Boolean by default. We have introduced a
+separate \lcr{boolean} type. An explicit cast operator is available to support
+interoperability with legacy code. This is an example of a change that makes C
+safer and more easily analyzable.
+
+All type annotations, such as array brackets or the pointer asterisk have to be
+specified on the type, not on the identifier (so you have to write \ic{int* a;}
+instead of \ic{int *a;}). We also don't support several variable declarations
+in the same statement (as in \ic{int a, b, c;}. While these descisions made is
+eaasier for us to implement C in MPS, it also improves readability of the
+source code in general.
+
+
+\paragraph{Decision Tables (adressing $W_3$)} are a new expression. An example
+is shown in \fig{dectab}. Since expressions need a type and a value, decision
+tables specify the expected type of the result expressions (\lcr{int} in the
+example) and a default value (\lcr{-1}). A decision table is basically a
+two-level \lcr{if} statement. It evaluates to the value in the cell whose column
+and row headers evaluate to \lcr{true}.
+
+\paragraph{Unit Tests} (addresses $W_1$ and $W_2$) are additional a new kind
+of top level constructs (\fig{testcase}). They are introduced in a separate
+\emph{unittest} language that extends the C core. Unit tests are like void functions without
+arguments. The \emph{unittest} language also introduces the \lcr{assert} and
+\lcr{fail} statements which can only be used inside of a test case.
+
+\begin{figure}[h]
+\begin{code} 
+module UnitTestDemo imports multiplier { 
+  exported test case testMultiply { 
+    assert(0) times2(21) == 42; 
+    if ( 1 > 2 ) { fail(1); }  
+  }  
+}\end{code}
+\caption{Test cases are new top level constructs. The \emph{unittest} language
+also introduces the \lcr{assert} and \lcr{fail} statements which can only be
+used inside of a test case. The arguments to \lcr{assert} and \lcr{fail} denote
+the index of the statement. In error messages this number is output as a way of
+finding the cause in the code. These indexes are automatically projected and
+cannot be changed in the editor.}
+\label{testcase}  
+\end{figure}
+
+\paragraph{State Machines}  (addresses $C_2$ and $W_1$) provide a new top level
+construct as well as new statements and expressions to interact with state
+machines from regular C code. Entry, exit and transition actions may only access
+variables defined locally in state machines and set output events. This way,
+state machines are semantically isolated from the remaining system and can be
+model checked using the integrated NuSMV model checker. State machines can be
+connected to the surrounding C program by mapping output events to function
+calls and by regular C code triggering input events in the state machines.
+Both these aspects are not relevant to verification.
+
+\begin{figure}[h]
+\begin{code} 
+module Statemachine from cdesignpaper.statemachine { 
+  statemachine Counter {                                                                                                                                                                                                                                                    
+    in start()                                                                                                                                                                                                                                                             
+       step(int[0..10] size)                                                                                                                                                                                                                                              
+    out started()                                                                                                                                                                                                                                                         
+        resetted()                                                                                                                                                                                                                                                        
+        incremented(int[0..10] newVal)                                                                                                                                                                                                                                     
+    vars int[0..10] currentVal = 0                                                                                                                                                                                                                                                     
+         int[0..10] LIMIT = 10                                                                                                                                                                                                                                                         
+    states (initial = start)                                                                                                                                                                                                                                                           
+     state start { 
+       on start [] -> countState { send started(); } 
+     }                                                                                                                                                                                                              
+     state countState { 
+       on step [currentVal + size > LIMIT] -> start { send resetted(); } 
+       on step [currentVal + size <= LIMIT] -> countState { 
+         currentVal = currentVal + size; 
+         send incremented(currentVal); 
+       } 
+       on start [ ] -> start { send resetted(); } 
+     }   
+  }
+}
+\end{code}
+\caption{A state machine embedded into a C module. It declares in and out
+events as well as local variables, states and transitions. Transitions react to
+in events and out events can be created in actions. State machines can be
+verified with the NuSMV model checker, a topic not discussed further in
+this paper. Through bindings (not shown) they can interact with surrounding C
+code, e.g. by calling functions when an out event is created.}
+\label{components}  
+\end{figure}
+
+
+\paragraph{Components} (addresses $C_1$ and $W_1$) are new top level constructs
+used for modularization, encapsulation and the separation between specification
+and implementation (\fig{components}). Interfaces declare operation signatures
+that can be implemented by components. Provided ports specify the interfaces
+offered by a component, required ports specify the interfaces a component
+expects to use. Different components can implement the same interface operations
+differently. Components can be instantiated, and each instance's required ports
+have to be connected to compatible provided ports provided by other component
+instances.
+
+\begin{figure}[h]
+\begin{code} 
+module Components { 
+  c/s interface Calculator { 
+    int multiply(int x, int y) ; 
+  } 
+ 
+  component Computer { 
+    provides Calculator calc 
+    requires LoggingService log
+    int calc_multiply(int x, int y) <- op calc.multiply {
+      log.info("called with " + x + " and " + y); 
+      return x + y; 
+    }  
+  } 
+ 
+  component PrimitiveComputer { 
+    provides Calculator calc 
+    int calc_multiply(int x, int y) <- op calc.multiply { 
+      int res = 0; 
+      for (int i = 0; i < y; i++) { 
+        res = res + x; 
+      }  
+      return res; 
+    } 
+  } 
+}\end{code}
+\caption{Two components providing the same interface. The \lcr{<-} notation
+maps operations offered through provided ports to their implementation in
+components.}
+\label{components}  
+\end{figure}
+
+\paragraph{Physical Units} (addresses $C_4$ and $W_4$) are new types that, in
+addition to defining their actual data type, also specify the physical unit
+(such as \emph{m/s} or \emph{N}). They also specify a resolution. New literals
+are defined to support specifying values for these types that include the
+physical unit. The type checker takes into account unit compatibility. Scaling
+(e.g. if working with \emph{N} and \emph{kN} in one expression) is taken into
+account automatically.
+
+\paragraph{Requirements Traces} (addresses $C_5$ and $W_6$) Requirements traces
+are meta data annotations that point to requirements, essentially elements in
+other models imported from tools such as DOORS. Requirements traces can be
+applied to any program element without the definition of that element being
+aware of this (see \fig{traces}).
+
+
+\begin{figure}[h]
+\rule{\textwidth}{0.7pt}
+\vspace{-0.65cm}
+\begin{center} 
+  \includegraphics[width=9cm]{figures/traces.png}
+\end{center}
+\vspace{-0.6cm}
+\rule{\textwidth}{0.7pt}
+\caption{Requirements traces can be attached to any program element of any
+language. An intention (pressing Alt-Enter and selecting \emph{Add Trace}) is
+used to attach them.}
+\label{traces}  
+\end{figure}
+
+\paragraph{Presence Conditions} (addresses $C_6$ and $W_6$) Like requirements
+traces, presence conditions can be attached to any program element. They are
+boolean expressions over features in a feature model (essentially configuration
+switches). Their semantics is that the element they are attached to is only part
+of a program variant, if the boolean expression is true for the feature
+combination defined by that variant's feature configuration. During code
+generation, the program is "cut down" by removing all those elements whose
+condition is false. This can also be done in the editor, supporting
+variant-specific editing of the program. 
+
+TODO: currently we do not have them\ldots
+
+\paragraph{Safe Modules} (addresses $W_5$ and $C_3$) Safe modules restrict the
+set of constructs that can be used inside them. For example, pointer arithmetics
+is disallowed. Errors are reported if this is attempted. In addition, runtime
+range checking is performed for arithmetic expressions and assignments. To
+enable this, arithmetic expressions are replaced by function calls that
+perform range checking and report errors if an overflow is detected.
+

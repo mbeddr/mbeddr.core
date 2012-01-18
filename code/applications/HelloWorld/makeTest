@@ -1,0 +1,119 @@
+#!/bin/sh
+#set +v
+
+PROC_RET=0
+
+cd solutions/HelloWorld/source_gen/HelloWorld/
+
+echo -------------------------------------
+echo Variables
+cd Variables
+make test
+PROC_RET=$(($?+$PROC_RET))
+cd ..
+
+
+echo -------------------------------------
+echo UnitTests
+cd UnitTests
+make test
+PROC_RET=$(($?+$PROC_RET))
+cd ..
+
+
+echo -------------------------------------
+echo SwitchStatement
+cd SwitchStatement
+make test
+PROC_RET=$(($?+$PROC_RET))
+cd ..
+
+
+echo -------------------------------------
+echo Reporting
+cd Reporting
+make test
+PROC_RET=$(($?+$PROC_RET))
+cd ..
+
+
+echo -------------------------------------
+echo Pointer
+cd Pointer
+make test
+PROC_RET=$(($?+$PROC_RET))
+cd ..
+
+
+echo -------------------------------------
+echo Literals
+cd Literals
+make test
+PROC_RET=$(($?+$PROC_RET))
+cd ..
+
+
+echo -------------------------------------
+echo ImplementationModules
+cd ImplementationModules
+make
+PROC_RET=$(($?+$PROC_RET))
+cd ..
+
+
+echo -------------------------------------
+echo ExternalModules
+cd ExternalModules
+make
+PROC_RET=$(($?+$PROC_RET))
+cd ..
+
+
+echo -------------------------------------
+echo Enumerations
+cd Enumerations
+make test
+PROC_RET=$(($?+$PROC_RET))
+cd ..
+
+
+echo -------------------------------------
+echo BuildConfiguration
+cd BuildConfiguration
+make
+PROC_RET=$(($?+$PROC_RET))
+cd ..
+
+
+echo -------------------------------------
+echo Arrays
+cd Arrays
+make test
+PROC_RET=$(($?+$PROC_RET))
+cd ..
+
+
+
+
+if [ "$PROC_RET" -ne "0" ]; 
+ then
+    echo ""
+    echo "" 
+    echo "================================================"
+    echo "================================================" 
+    echo "               $PROC_RET test(s) failed"
+    echo "================================================"
+    echo "================================================"
+    echo ""
+    echo ""
+ else
+  echo ""
+    echo "" 
+    echo "================================================"
+    echo "              OK - All tests green"
+    echo "================================================"
+    echo ""
+    echo ""
+fi
+
+exit $PROC_RET

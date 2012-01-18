@@ -1,0 +1,4 @@
+*.pdf
+.DS_Store
+*.log
+*/.DS_Store
