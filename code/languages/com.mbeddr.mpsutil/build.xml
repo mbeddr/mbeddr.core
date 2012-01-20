@@ -3,7 +3,7 @@
   <property file="build.properties"/>
 
   <taskdef resource="jetbrains/mps/build/ant/antlib.xml"
-           classpath="${mps.home}/languages/generate.ant.task.jar"/>
+           classpath="${mps.code.home}/languages/generate.ant.task.jar"/>
 
   <property name="util.project.dir" value="languages/com.mbeddr.mpsutil"/>
   <property name="util.project.mpr" value="languages/com.mbeddr.mpsutil/mpsutil.dev.mpr"/>
