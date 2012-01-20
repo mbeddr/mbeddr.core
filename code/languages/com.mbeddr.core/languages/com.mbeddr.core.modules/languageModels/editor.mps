@@ -616,9 +616,6 @@
             <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="tpck.1169194664001" resolveInfo="name" />
           </node>
         </node>
-        <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.PunctuationRightStyleClassItem" typeId="tpc2.1233759184865" id="1063109141164787119">
-          <property name="flag" nameId="tpc2.1186414551515" value="true" />
-        </node>
       </node>
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="5950410542643524508">
         <property name="text" nameId="tpc2.1073389577007" value="(" />
