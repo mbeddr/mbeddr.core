@@ -10,9 +10,9 @@
       <jvmargs id="myargs">
        <arg value="-Xmx512m"/>
       </jvmargs>
-	  <project file="${mbeddr.home}/code/applications/HelloWorld/HelloWorld.mpr"/>
-	  <library name="mbeddr.core" dir="${mbeddr.home}/code/languages/com.mbeddr.core"/>
-	  <library name="mbeddr.utils" dir="${mbeddr.home}/code/languages/com.mbeddr.mpsutil"/>
+	  <project file="${mbeddr.code.home}/applications/HelloWorld/HelloWorld.mpr"/>
+	  <library name="mbeddr.core" dir="${mbeddr.code.home}/languages/com.mbeddr.core"/>
+	  <library name="mbeddr.utils" dir="${mbeddr.code.home}/languages/com.mbeddr.mpsutil"/>
     </mps.generate>
   </target>
 

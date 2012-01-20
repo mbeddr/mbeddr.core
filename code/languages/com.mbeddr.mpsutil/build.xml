@@ -5,8 +5,8 @@
   <taskdef resource="jetbrains/mps/build/ant/antlib.xml"
            classpath="${mps.home}/languages/generate.ant.task.jar"/>
 
-  <property name="util.project.dir" value="code/languages/com.mbeddr.mpsutil"/>
-  <property name="util.project.mpr" value="code/languages/com.mbeddr.mpsutil/mpsutil.dev.mpr"/>
+  <property name="util.project.dir" value="languages/com.mbeddr.mpsutil"/>
+  <property name="util.project.mpr" value="languages/com.mbeddr.mpsutil/mpsutil.dev.mpr"/>
 
   <jvmargs id="myargs">
       <arg value="-ea"/>
@@ -32,8 +32,8 @@
   <target name="build-languages" depends="init">
     <mps.generate parallelMode="true" fork="true">
       <jvmargs id="myargs"/>
-      <project file="${mbeddr.home}/${util.project.mpr}"/>
-      <modules dir="${mbeddr.home}/${util.project.dir}/languages"/>
+      <project file="${mbeddr.code.home}/${util.project.mpr}"/>
+      <modules dir="${mbeddr.code.home}/${util.project.dir}/languages"/>
     </mps.generate>
   </target>
 
