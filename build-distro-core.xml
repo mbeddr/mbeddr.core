@@ -17,10 +17,10 @@
           <zipfileset dir="code/languages/com.mbeddr.core/devkits" prefix="mbeddr/core/devkits"/>
           <zipfileset dir="code/languages/com.mbeddr.mpsutil/languages" prefix="mbeddr/mpsutil/languages"/>
 	  </zip>
-	  <zip destfile="${path}/mbeddr.core-${version}-examples.zip">
+	  <zip destfile="${path}/mbeddr.core-examples-${version}.zip">
           <zipfileset dir="code/applications/HelloWorld" prefix="mbeddr/core/applications/HelloWorld"/>
 	  </zip>
-	  <copy file="documentation/userguide_mbeddr.core/userguide_mbeddr.core.pdf" tofile="${path}/userguide_mbeddr.core.pdf"/>
+	  <copy file="papers/userguide_mbeddr.core/userguide_mbeddr.core.pdf" tofile="${path}/userguide_mbeddr.core.pdf"/>
 	  
 	  <createHtml path="${path}" version="${version}" webRoot="${webRoot}"/> 
 
