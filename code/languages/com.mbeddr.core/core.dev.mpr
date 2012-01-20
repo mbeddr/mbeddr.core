@@ -44,7 +44,7 @@
   <component name="ProjectLibraryManager">
     <option name="libraries">
       <map>
-        <entry key="mpsutils">
+        <entry key="mpsutil.root">
           <value>
             <Library>
               <option name="name" value="mpsutils" />
