@@ -20,7 +20,7 @@
 	  <zip destfile="${path}/mbeddr.core-examples-${version}.zip">
           <zipfileset dir="code/applications/HelloWorld" prefix="mbeddr/core/applications/HelloWorld"/>
 	  </zip>
-	  <copy file="papers/userguide_mbeddr.core/userguide_mbeddr.core.pdf" tofile="${path}/userguide_mbeddr.core.pdf"/>
+	  <copy file="documentation/userguide_mbeddr.core/userguide_mbeddr.core.pdf" tofile="${path}/userguide_mbeddr.core.pdf"/>
 	  
 	  <createHtml path="${path}" version="${version}" webRoot="${webRoot}"/> 
 
