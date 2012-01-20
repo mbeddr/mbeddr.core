@@ -37,10 +37,10 @@
   <target name="build-languages" depends="init">
     <mps.generate parallelMode="true" fork="true">
       <jvmargs id="myargs"/>
-      <library name="mbeddr.project" dir="${mbeddr.home}/${mbeddr.core.project.dir}"/>
-      <library name="util.languages" dir="${mbeddr.home}/${util.project.dir}/languages"/>
+      <library name="mbeddr.project" dir="${mbeddr.github.home}/${mbeddr.core.project.dir}"/>
+      <library name="util.languages" dir="${mbeddr.github.home}/${util.project.dir}/languages"/>
 
-      <modules dir="${mbeddr.home}/${mbeddr.core.project.dir}/languages"/>
+      <modules dir="${mbeddr.github.home}/${mbeddr.core.project.dir}/languages"/>
     </mps.generate>
   </target>
 
@@ -48,17 +48,17 @@
   <target name="build-tests" depends="init">
     <mps.generate parallelMode="true" fork="true">
       <jvmargs id="myargs"/>
-      <library name="project" dir="${mbeddr.home}/${mbeddr.core.project.dir}"/>
-      <library name="mbeddr.project" dir="${mbeddr.home}/${mbeddr.core.project.dir}"/>
-      <library name="util.languages" dir="${mbeddr.home}/${util.project.dir}/languages"/>
+      <library name="project" dir="${mbeddr.github.home}/${mbeddr.core.project.dir}"/>
+      <library name="mbeddr.project" dir="${mbeddr.github.home}/${mbeddr.core.project.dir}"/>
+      <library name="util.languages" dir="${mbeddr.github.home}/${util.project.dir}/languages"/>
 
 	  <!-- executable tests -->
-      <modules dir="${mbeddr.home}/${mbeddr.core.project.dir}/tests/test.ex.core"/>
-	  <modules dir="${mbeddr.home}/${mbeddr.core.project.dir}/tests/test.ex.errorreporting"/>
+      <modules dir="${mbeddr.github.home}/${mbeddr.core.project.dir}/tests/test.ex.core"/>
+	  <modules dir="${mbeddr.github.home}/${mbeddr.core.project.dir}/tests/test.ex.errorreporting"/>
   
 	  
 	  <!-- type system tests -->
-      <modules dir="${mbeddr.home}/${mbeddr.core.project.dir}/tests/test.ts.core"/>
+      <modules dir="${mbeddr.github.home}/${mbeddr.core.project.dir}/tests/test.ts.core"/>
 
 	  </mps.generate>
   </target>
@@ -67,8 +67,8 @@
   
   <target name="run-ts-tests" >
     
-    <echo message="mbeddr.home = ${mbeddr.home}"/>
-	<echo message="path.macro.mbeddr.home := ${mbeddr.home}"/>
+    <echo message="mbeddr.home = ${mbeddr.github.home}"/>
+	<echo message="path.macro.mbeddr.home := ${mbeddr.github.home}"/>
 	
     <junit haltonfailure="true" showoutput="true" fork="true" dir="${mps.home}">
       <jvmarg value="-ea"/>
@@ -82,8 +82,8 @@
       <sysproperty key="idea.config.path" value="${mps.platform.caches}/config"/>
       <sysproperty key="idea.plugins.path" value="${mps.platform.caches}/plugins"/>
  	  
-      <sysproperty key="mps.junit.pathmacro.mbeddr.home" value="${mbeddr.home}"/>
-	  <sysproperty key="mps.junit.project" value="${mbeddr.home}/${mbeddr.core.project.mpr}"/>
+      <sysproperty key="mps.junit.pathmacro.mbeddr.github.home" value="${mbeddr.github.home}"/>
+	  <sysproperty key="mps.junit.project" value="${mbeddr.github.home}/${mbeddr.core.project.mpr}"/>
 
       <classpath>
         <fileset dir="${mps.home}/lib">

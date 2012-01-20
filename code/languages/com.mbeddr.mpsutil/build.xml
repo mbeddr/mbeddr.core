@@ -32,8 +32,8 @@
   <target name="build-languages" depends="init">
     <mps.generate parallelMode="true" fork="true">
       <jvmargs id="myargs"/>
-      <project file="${mbeddr.home}/${util.project.mpr}"/>
-      <modules dir="${mbeddr.home}/${util.project.dir}/languages"/>
+      <project file="${mbeddr.github.home}/${util.project.mpr}"/>
+      <modules dir="${mbeddr.github.home}/${util.project.dir}/languages"/>
     </mps.generate>
   </target>
 
