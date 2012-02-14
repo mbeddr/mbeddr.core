@@ -86,10 +86,10 @@
 	  <sysproperty key="mps.junit.project" value="${mbeddr.github.core.home}/${mbeddr.core.project.mpr}"/>
 
       <classpath>
-        <fileset dir="${mbeddr.github.core.home}/lib">
+        <fileset dir="${mps.home}/lib">
           <include name="**/*.jar"/>
         </fileset>
-        <fileset dir="${mbeddr.github.core.home}/plugins">
+        <fileset dir="${mps.home}/plugins">
           <include name="**/*.jar"/>
         </fileset>
       </classpath>
