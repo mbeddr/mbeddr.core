@@ -97,13 +97,8 @@
               <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2252187154380950451">
                 <property name="value" nameId="mj1l.8860443239512128104" value="0" />
               </node>
-              <node role="left" roleId="mj1l.8860443239512128064" type="mj1l.MultiExpression" typeId="mj1l.5763383285156373020" id="374287044672366228">
-                <node role="right" roleId="mj1l.8860443239512128065" type="x27k.ArgumentRef" typeId="x27k.2093108837558505658" id="374287044672366231">
-                  <link role="arg" roleId="x27k.2093108837558505659" targetNodeId="6209595569797596699" resolveInfo="y" />
-                </node>
-                <node role="left" roleId="mj1l.8860443239512128064" type="x27k.ArgumentRef" typeId="x27k.2093108837558505658" id="374287044672366227">
-                  <link role="arg" roleId="x27k.2093108837558505659" targetNodeId="6209595569797596697" resolveInfo="x" />
-                </node>
+              <node role="left" roleId="mj1l.8860443239512128064" type="x27k.ArgumentRef" typeId="x27k.2093108837558505658" id="374287044672366227">
+                <link role="arg" roleId="x27k.2093108837558505659" targetNodeId="6209595569797596697" resolveInfo="x" />
               </node>
             </node>
             <node role="yExpr" roleId="k146.6209595569797584863" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="2252187154380950453">
