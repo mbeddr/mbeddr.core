@@ -76,11 +76,15 @@
         <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="5708867820621171298" />
       </node>
     </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="374287044672366232">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1329255227836_1" />
+    </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="6209595569797596693">
       <property name="name" nameId="tpck.1169194664001" value="decide" />
       <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="6209595569797596694">
         <node role="statements" roleId="c4fa.4185783222026475862" type="x27k.ReturnStatement" typeId="x27k.8967919205527146149" id="6209595569797596702">
           <node role="expression" roleId="x27k.8967919205527146150" type="k146.DecTab" typeId="k146.6209595569797584861" id="2252187154380950431">
+            <property name="verifiable" nameId="k146.374287044672327457" value="true" />
             <node role="xExpr" roleId="k146.6209595569797584862" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="2252187154380950443">
               <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2252187154380950446">
                 <property name="value" nameId="mj1l.8860443239512128104" value="0" />
@@ -93,8 +97,13 @@
               <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2252187154380950451">
                 <property name="value" nameId="mj1l.8860443239512128104" value="0" />
               </node>
-              <node role="left" roleId="mj1l.8860443239512128064" type="x27k.ArgumentRef" typeId="x27k.2093108837558505658" id="3608436418819719409">
-                <link role="arg" roleId="x27k.2093108837558505659" targetNodeId="6209595569797596697" resolveInfo="x" />
+              <node role="left" roleId="mj1l.8860443239512128064" type="mj1l.MultiExpression" typeId="mj1l.5763383285156373020" id="374287044672366228">
+                <node role="right" roleId="mj1l.8860443239512128065" type="x27k.ArgumentRef" typeId="x27k.2093108837558505658" id="374287044672366231">
+                  <link role="arg" roleId="x27k.2093108837558505659" targetNodeId="6209595569797596699" resolveInfo="y" />
+                </node>
+                <node role="left" roleId="mj1l.8860443239512128064" type="x27k.ArgumentRef" typeId="x27k.2093108837558505658" id="374287044672366227">
+                  <link role="arg" roleId="x27k.2093108837558505659" targetNodeId="6209595569797596697" resolveInfo="x" />
+                </node>
               </node>
             </node>
             <node role="yExpr" roleId="k146.6209595569797584863" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="2252187154380950453">
@@ -141,6 +150,9 @@
         <property name="name" nameId="tpck.1169194664001" value="y" />
         <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="5708867820621171351" />
       </node>
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="374287044672366233">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1329255230486_2" />
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="yz9a.TestCase" typeId="yz9a.6275792049641586523" id="2252187154380950477">
       <property name="exported" nameId="x27k.1317894735999272944" value="true" />

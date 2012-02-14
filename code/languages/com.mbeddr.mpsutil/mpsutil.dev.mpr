@@ -7,6 +7,7 @@
   <component name="MPSProject">
     <projectModules>
       <modulePath path="${project}/languages/com.mbeddr.mpsutil.bldoc/bldoc.mpl" />
+      <modulePath path="${project}/languages/com.mbeddr.mpsutil.blutil/blutil.mpl" folder="" />
       <modulePath path="${project}/languages/com.mbeddr.mpsutil.graph/graph.mpl" />
       <modulePath path="${project}/languages/com.mbeddr.mpsutil.graphview/graphview.mpl" folder="" />
       <modulePath path="${project}/languages/com.mbeddr.mpsutil.langdepdiag/langdepdiag.mpl" folder="" />
@@ -15,6 +16,7 @@
       <modulePath path="${project}/languages/com.mbeddr.mpsutil.presentation/presentation.mpl" folder="" />
       <modulePath path="${project}/languages/com.mbeddr.mpsutil.tables.rt/tables.rt.msd" />
       <modulePath path="${project}/languages/com.mbeddr.mpsutil.textshape/textshape.mpl" />
+      <modulePath path="${project}/solutions/com.mbeddr.mpsutil.blutil.playground/playground.msd" folder="" />
       <modulePath path="${project}/solutions/com.mbeddr.mpsutil.graph.demo/demo.msd" folder="" />
     </projectModules>
     <genConfs />
