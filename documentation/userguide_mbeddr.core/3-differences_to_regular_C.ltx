@@ -60,7 +60,8 @@ module ModuleUsingTheExportedFunction from HelloWorld.ImplementationModules
 	
 \paragraph{External modules} mbeddr C code must be able to work with existing
 code and existing C libraries. So to call existing functions or instantiate
-\ic{struct}s, we use the following approach:
+\ic{struct}s, we use the following approach:
+
 
 \begin{itemize}
   \item We identify existing external header files and the corresponding object
@@ -128,7 +129,8 @@ The build configuration, if it uses the \ic{desktop} target, results in a
 \ic{make} file which is automatically invoked as part of the MPS build,
 resulting in the corresponding executable binaries. The generated code, the make
 file and the executables can be found in the \ic{source\_gen} folder of the
-respective solution.
+respective solution.
+
 Below is the build configuration of the \ic{ExternalModules} example. It defines
 one executable \ic{Application}. It consist of the modules \ic{MainApp} and
 \ic{STDIO}.
@@ -174,7 +176,7 @@ different MPS model!) there are three steps:
   all the exported contents in the imported module (this is just like any other
   inter-module dependency).
   \item finally, in the build configuration of the executable that \emph{uses}
-  the library, that used library has to be specified in the \ic{used líbraries}
+  the library, that used library has to be specified in the \ic{used lï¿½braries}
   section. 
 \end{itemize}
 
@@ -527,7 +529,8 @@ example. The typedef \ic{typedef (int3\_t, int32\_t)=>(int32\_t) as ftype;}
 defines a new function type. The type \ic{ftype} is the first parameter in the
 \ic{doOperation} function. You can easily call the function
 \ic{doOperation(:add, 20, 10)} and put any suitable function reference as the
-first parameter.
+first parameter.
+
 
 
 \begin{code}
@@ -705,7 +708,8 @@ time; otherwise is it is just like in C.
 
 Array brackets must show up after the type, not the variable name. The
 following example shows the usage of arrays in mbeddr C, which also supports
-multi-dimensional arrays. Their usage is equivalent to regular C.
+multi-dimensional arrays. Their usage is equivalent to regular C.
+
 
 \begin{code}
 module ArrayApplication from HelloWorld.Arrays imports nothing { 

@@ -11,14 +11,16 @@ often prohibited from use in real world projects.
 
 This document covers mbeddr \emph{core}, which is mainly a subset of the C
 language for MPS. We do not discuss any extensions of the C language for development in the embedded area,
-such as e.g. support for statemachines, type safe units etc.
+such as e.g. support for statemachines, type safe units etc.
+
 
 \greyboxnote{As of now, these extension modules are not yet released. They have
 to be polished further. They will become available in 2012.}
   
 This document does not discuss how to develop new languages or extend existing
 languages. We refer to the \emph{Extension Guide} instead. It is available from
-\ic{http://mbeddr.com}.
+\ic{http://mbeddr.com}.
+
 
  
 \section{Installation}
@@ -36,8 +38,10 @@ available from \ic{http://www.jetbrains.com/mps/}. MPS is available for Windows,
 Mac and Linux, and we require the use of the 2.0.3 version. Please make sure you
 install MPS in a path that does not contains blanks in any of its directory or
 file names (not even in the \ic{MPS 2.0} folder). This will simplify some of the
-command line work you may want to do.
-
+command line work you may want to do.
+
+
+
 After installing MPS using the platform-specific installer, please open the
 \ic{bin} folder and edit the \ic{mps.vmoptions}  or \ic{mps.exe.vmoptions} file
 (depending on your platform). To make MPS run smoothly, the \ic{MaxPermSize}
@@ -89,7 +93,8 @@ You can get the mbeddr system via a zip file download from
 \\\ic{http://mbeddr.wordpress.com/getit/} (later we will provide public git
 repository access). This document describes the mbeddr.core package. Save the
 zip file into a folder on your hard disk and unzip it. Once again, please make
-sure the path to the unzipped folder contains no blanks!
+sure the path to the unzipped folder contains no blanks!
+
 
 \section{Important keyboard shortcuts in MPS and mbeddr}
 
@@ -178,7 +183,11 @@ own set of intentions). For example, module contents in mbeddr can only be set
 to be \ic{exported} by selecting \emph{export} from the intentions menu. Explore
 the contents of the intentions menu from time to time to see what's possible.
 
-Note that you can just type the name of an intention once the menu is open, youdon't have to use the cursor keys to select from the list. So, for example, toexport a module content (function, struct), you type \keystroke{Alt-Enter}, \keystroke{ex}, \keystroke{Enter}. 
+Note that you can just type the name of an intention once the menu is open, you
+don't have to use the cursor keys to select from the list. So, for example, to
+export a module content (function, struct), you type 
+\keystroke{Alt-Enter}, \keystroke{ex}, \keystroke{Enter}. 
+
 \paragraph{Surround-With Intentions} Surround-With intentions are used to
 surround a selection with another construct. For example, if you select a couple
 of lines (i.e. a list of statements) in a C program, you can then surround these
@@ -205,7 +214,8 @@ documentation is basically free text associated with a program element.
 We distinguish documentation from commenting out code (explained below). A
 documentation is shown as a grey comment above the commented element (the
 documentation is really attached to the element, and not just written into a
-line above it --- a subtle but important difference!)
+line above it --- a subtle but important difference!)
+
 
 \begin{center} 
   \includegraphics[width=9cm]{figures/documentation.jpg}

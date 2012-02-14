@@ -1,0 +1,246 @@
+/*   AUTHOR : Romain Primet (romain.primet@inria.fr)
+ *
+ *  (c) COPYRIGHT INRIA (Institut National de Recherche en Informatique et en Automatique), 2009-2011.
+ *  Licensed under the GNU LGPL. For full terms see the file COPYING.
+ *
+ * $Id: TestCameraPosition.java 4294 2011-03-03 10:22:53Z epietrig $ 
+ */
+
+package fr.inria.zvtm.animation.examples;
+
+import java.awt.*;
+import java.util.Random;
+import java.util.Vector;
+
+import java.awt.event.KeyEvent;
+import java.awt.event.MouseEvent;
+import java.awt.event.MouseWheelEvent;
+
+import fr.inria.zvtm.engine.*;
+import fr.inria.zvtm.glyphs.*;
+import fr.inria.zvtm.event.*;
+import fr.inria.zvtm.animation.*;
+import fr.inria.zvtm.animation.interpolation.*;
+import org.jdesktop.animation.timing.interpolation.*;
+
+// Click handler that animates the Camera to a new position.
+// Left-click in the view to move the camera.
+public class TestCameraPosition {
+
+    VirtualSpaceManager vsm;
+    VirtualSpace vs;
+    ViewListener eh;   //class that receives the events sent from views (include mouse click, entering object,...)
+    AnimationManager am;
+
+    View testView;
+    Camera cam;
+
+    TestCameraPosition(){
+        vsm=VirtualSpaceManager.INSTANCE;
+	am = vsm.getAnimationManager();
+        vsm.setDebug(true);
+    }
+
+    public void startAnim(String vt){
+        eh=new TestCameraPosition.MyEventHandler(this);
+        vs = vsm.addVirtualSpace("src");
+        cam = vs.addCamera();
+        Vector cameras=new Vector();
+        cameras.add(cam);
+        cam.setZoomFloor(-90);
+        testView = vsm.addFrameView(cameras, "Test", vt, 800, 600, true);
+        testView.setBackgroundColor(Color.LIGHT_GRAY);
+        testView.setListener(eh);
+
+	final int NB_GLYPHS = 100;
+	java.util.List<Glyph> circles = new java.util.ArrayList<Glyph>();
+
+	Random rnd = new Random();
+
+	for(int i=0; i<NB_GLYPHS;++i){
+	    final Glyph circle = new VCircle((60+3)*i,30*i,0,30,Color.getHSBColor(rnd.nextFloat(),
+										  rnd.nextFloat(),
+										  rnd.nextFloat()));
+	    circles.add(circle);
+	    vs.addGlyph(circle);
+
+	    Animation anim = am.getAnimationFactory().createAnimation(3000, 
+						Animation.INFINITE,
+						Animation.RepeatBehavior.REVERSE,
+						circle,
+						Animation.Dimension.POSITION,
+						new DefaultTimingHandler(){
+						    final double initX = circle.vx;
+						    final double initY = circle.vy;
+
+						    public void timingEvent(float fraction, 
+									    Object subject, Animation.Dimension dim){
+							Glyph g = (Glyph)subject;
+							
+							g.moveTo(initX,
+								 Double.valueOf((1-fraction)*initY).doubleValue());
+						    }
+						},
+						new SplineInterpolator(0.1f,0.95f,0.2f,0.95f));
+	    anim.setStartFraction(rnd.nextFloat());
+	    am.startAnimation(anim, false);
+	}
+
+	cam.setLocation(testView.getGlobalView(cam));
+    }
+    
+    public static void main(String[] args){
+        System.out.println("-----------------");
+        System.out.println("General information");
+        System.out.println("JVM version: "+System.getProperty("java.vm.vendor")+" "+System.getProperty("java.vm.name")+" "+System.getProperty("java.vm.version"));
+        System.out.println("OS type: "+System.getProperty("os.name")+" "+System.getProperty("os.version")+"/"+System.getProperty("os.arch")+" "+System.getProperty("sun.cpu.isalist"));
+        System.out.println("-----------------");
+        System.out.println("Directory information");
+        System.out.println("Java Classpath: "+System.getProperty("java.class.path"));	
+        System.out.println("Java directory: "+System.getProperty("java.home"));
+        System.out.println("Launching from: "+System.getProperty("user.dir"));
+        System.out.println("-----------------");
+        System.out.println("User informations");
+        System.out.println("User name: "+System.getProperty("user.name"));
+        System.out.println("User home directory: "+System.getProperty("user.home"));
+        System.out.println("-----------------");
+	System.out.println("Left-click in the view to move the camera");
+        new TestCameraPosition().startAnim((args.length > 0) ? args[0] : View.STD_VIEW);
+    }
+
+    class MyEventHandler implements ViewListener{
+	TestCameraPosition application;
+
+	MyEventHandler(TestCameraPosition appli){
+	    application=appli;
+	}
+
+	public void press1(ViewPanel v,int mod,int jpx,int jpy, MouseEvent e){
+
+	}
+
+	public void release1(ViewPanel v,int mod,int jpx,int jpy, MouseEvent e){
+
+	}
+
+	public void click1(ViewPanel v,int mod,int jpx,int jpy,int clickNumber, MouseEvent e){
+	    //Animate from the current position to the target position 
+	    //over the course of a second
+	    final double sx = cam.vx;
+	    final double sy = cam.vy;
+	    final double ex = v.getVCursor().getVSXCoordinate();
+	    final double ey = v.getVCursor().getVSYCoordinate();
+
+	    Animation trans = am.getAnimationFactory().createAnimation(1000, 1f, Animation.RepeatBehavior.LOOP,
+						 cam,
+						 Animation.Dimension.POSITION,
+						  new DefaultTimingHandler(){
+						      final double startX = sx;
+						      final double startY = sy;
+						      final double endX = ex;
+						      final double endY = ey;
+
+						      public void timingEvent(float fraction, 
+									      Object subject, Animation.Dimension dim){
+							  Camera c = (Camera)subject;
+							  
+							  c.moveTo((fraction*(endX-startX))+startX,
+								   (fraction*(endY-startY))+startY);
+						      }},
+						 SlowInSlowOutInterpolator.getInstance());
+
+	    Animation altitude = am.getAnimationFactory().createAnimation(1000,
+						    cam,
+						    Animation.Dimension.ALTITUDE,
+						    new DefaultTimingHandler(){
+							final double initZ = cam.getAltitude();
+							public void timingEvent(float fraction, 
+										Object subject, Animation.Dimension dim){
+							    Camera c = (Camera)subject;
+							    
+							    c.setAltitude((initZ + 0.25*initZ*Math.sin(Math.PI * fraction)));
+							}
+
+							@Override public void end(Object subject, 
+                                Animation.Dimension dim){
+							    Camera c = (Camera)subject;
+							    c.setAltitude(initZ);
+							}
+						    }
+						    );
+	    am.startAnimation(trans, true); //force anim start
+	    //XXX I think this makes a case that we should be able to request 
+	    //bypassed animations to execute their end action when forcing 
+	    //a new animation to start
+	    am.startAnimation(altitude, true);
+	}
+
+	public void press2(ViewPanel v,int mod,int jpx,int jpy, MouseEvent e){
+
+	}
+
+	public void release2(ViewPanel v,int mod,int jpx,int jpy, MouseEvent e){
+	}
+
+	public void click2(ViewPanel v,int mod,int jpx,int jpy,int clickNumber, MouseEvent e){
+	}
+
+	public void press3(ViewPanel v,int mod,int jpx,int jpy, MouseEvent e){
+	    v.setDrawDrag(true);
+	    application.vsm.getActiveView().mouse.setSensitivity(false);
+	    //because we would not be consistent  (when dragging the mouse, we computeMouseOverList, but if there is an anim triggered by {X,Y,A}speed, and if the mouse is not moving, this list is not computed - so here we choose to disable this computation when dragging the mouse with button 3 pressed)
+	}
+
+	public void release3(ViewPanel v,int mod,int jpx,int jpy, MouseEvent e){
+	    v.setDrawDrag(false);
+	    application.vsm.getActiveView().mouse.setSensitivity(true);
+	}
+
+	public void click3(ViewPanel v,int mod,int jpx,int jpy,int clickNumber, MouseEvent e){}
+
+	public void mouseMoved(ViewPanel v,int jpx,int jpy, MouseEvent e){
+
+	}
+
+	public void mouseDragged(ViewPanel v,int mod,int buttonNumber,int jpx,int jpy, MouseEvent e){
+	    
+	}
+
+	public void mouseWheelMoved(ViewPanel v,short wheelDirection,int jpx,int jpy, MouseWheelEvent e){
+	    Camera c=application.vsm.getActiveCamera();
+	    double a=(c.focal+Math.abs(c.altitude))/c.focal;
+	    if (wheelDirection == WHEEL_UP){
+		c.altitudeOffset(-a*5);
+		application.vsm.repaint();
+	    }
+	    else {
+		c.altitudeOffset(a*5);
+		application.vsm.repaint();
+	    }
+	}
+
+	public void enterGlyph(Glyph g){
+	    g.highlight(true, null);
+	}
+
+	public void exitGlyph(Glyph g){
+	    g.highlight(false, null);
+	}
+
+	public void Ktype(ViewPanel v,char c,int code,int mod, KeyEvent e){}
+    
+	public void Kpress(ViewPanel v,char c,int code,int mod, KeyEvent e){}
+    
+	public void Krelease(ViewPanel v,char c,int code,int mod, KeyEvent e){}
+
+	public void viewActivated(View v){}
+
+	public void viewDeactivated(View v){}
+
+	public void viewIconified(View v){}
+
+	public void viewDeiconified(View v){}
+
+	public void viewClosing(View v){System.exit(0);}
+    }
+}

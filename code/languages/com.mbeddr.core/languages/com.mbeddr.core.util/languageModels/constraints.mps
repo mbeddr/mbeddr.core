@@ -3,7 +3,7 @@
   <persistence version="7" />
   <language namespace="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1(jetbrains.mps.lang.constraints)" />
   <devkit namespace="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
-  <import index="k146" modelUID="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" version="1" />
+  <import index="k146" modelUID="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" version="0" />
   <import index="qd6m" modelUID="r:c4c3f7d3-0acf-4671-a134-5fab66c4e637(com.mbeddr.core.modules.behavior)" version="-1" />
   <import index="yz9a" modelUID="r:734c02dd-cc16-4184-99eb-5fd9f43aa37e(com.mbeddr.core.unittest.structure)" version="-1" />
   <import index="tp25" modelUID="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" version="-1" implicit="yes" />
@@ -30,12 +30,12 @@
       <property name="virtualPackage" nameId="tpck.1193676396447" value="reporting" />
       <link role="concept" roleId="tp1t.1213093996982" targetNodeId="k146.2688792604367964823" resolveInfo="MessageRef" />
     </node>
+    <node type="tp1t.ConceptConstraints" typeId="tp1t.1213093968558" id="6209278014151108445">
+      <link role="concept" roleId="tp1t.1213093996982" targetNodeId="k146.6209278014151108441" resolveInfo="MessageCountExpr" />
+    </node>
     <node type="tp1t.ConceptConstraints" typeId="tp1t.1213093968558" id="8729447926330241147">
       <property name="virtualPackage" nameId="tpck.1193676396447" value="range" />
       <link role="concept" roleId="tp1t.1213093996982" targetNodeId="k146.8729447926330198396" resolveInfo="ForRangeStatement" />
-    </node>
-    <node type="tp1t.ConceptConstraints" typeId="tp1t.1213093968558" id="6209278014151108445">
-      <link role="concept" roleId="tp1t.1213093996982" targetNodeId="k146.6209278014151108441" resolveInfo="MessageCountExpr" />
     </node>
   </roots>
   <root id="5686538669182296675">
@@ -172,7 +172,6 @@
       </node>
     </node>
   </root>
-  <root id="8729447926330241147" />
   <root id="6209278014151108445">
     <node role="referent" roleId="tp1t.1213100494875" type="tp1t.NodeReferentConstraint" typeId="tp1t.1148687176410" id="6209278014151108446">
       <link role="applicableLink" roleId="tp1t.1148687202698" targetNodeId="k146.6209278014151108442" />
@@ -249,5 +248,6 @@
       </node>
     </node>
   </root>
+  <root id="8729447926330241147" />
 </model>
 

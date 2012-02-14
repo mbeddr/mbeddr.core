@@ -6,6 +6,7 @@ MPS/*
 
 .DS_Store
 .metadata
+.svn
 
 junitvmwatcher*.properties
 build.properties
@@ -17,15 +18,19 @@ junit*.properties
 code/languages/com.mbeddr.core/diagrams/*.dot
 code/languages/com.mbeddr.core/diagrams/*.gv
 code/languages/com.mbeddr.core/diagrams/*.png
-code/languages/com.mbeddr.ext/diagrams/*.dot
-code/languages/com.mbeddr.ext/diagrams/*.gv
-code/languages/com.mbeddr.ext/diagrams/*.png
 
 # -----------------------------------------------------------
 # * languages
 code/languages/*/languages/*/classes_gen
 code/languages/*/languages/*/source_gen
 code/languages/*/languages/*/source_gen.caches
+
+# -----------------------------------------------------------
+# * lib - here we seem to need the generated sources.
+code/languages/*/lib/*/classes_gen
+code/languages/*/lib/*/source_gen.caches
+
+
 
 # -----------------------------------------------------------
 # * tests
@@ -52,11 +57,6 @@ code/languages/*/*.dev.iws
 code/languages/*/build.properties
 code/languages/*/TEST*.xml
 
-#-----------------------------------------------------------
-# tests
-code/languages/*/solutions/*/test_gen.caches/
-code/languages/*/solutions/*/test_gen/
-
 # -----------------------------------------------------------
 # applications
 code/applications/*/*.iws
@@ -75,14 +75,32 @@ code/applications/*/classes_gen
 code/applications/*/classes_gen.caches
 code/applications/*/build.properties
 
-# -----------------------------------------------------------
-# documentation
-documentation/*/*.aux
-documentation/*/*.bbl
-documentation/*/*.blg
-documentation/*/*.dvi
-documentation/*/*.log
-documentation/*/*.out
-documentation/*/*.toc
-documentation/*/*.synctex.gz
+#-----------------------------------------------------------
+# tests
+code/languages/*/solutions/*/test_gen.caches/
+code/languages/*/solutions/*/test_gen/
 
+
+# -----------------------------------------------------------
+# documents
+deliverables/*/*.aux
+deliverables/*/*.bbl
+deliverables/*/*.blg
+deliverables/*/*.dvi
+deliverables/*/*.log
+deliverables/*/*.out
+deliverables/*/*.toc
+
+papers/*/*.aux
+papers/*/*.bbl
+papers/*/*.blg
+papers/*/*.dvi
+papers/*/*.log
+papers/*/*.out
+papers/*/*.toc
+papers/*/*.synctex.gz
+
+# -----------------------------------------------------------
+# tools
+tools/zgrviewer/zgrviewerformps/target/*
+tools/zgrviewer/zvtm-core-formps/target/*

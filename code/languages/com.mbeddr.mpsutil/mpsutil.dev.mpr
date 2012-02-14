@@ -8,6 +8,7 @@
     <projectModules>
       <modulePath path="${project}/languages/com.mbeddr.mpsutil.bldoc/bldoc.mpl" />
       <modulePath path="${project}/languages/com.mbeddr.mpsutil.graph/graph.mpl" />
+      <modulePath path="${project}/languages/com.mbeddr.mpsutil.graphview/graphview.mpl" folder="" />
       <modulePath path="${project}/languages/com.mbeddr.mpsutil.langdepdiag/langdepdiag.mpl" folder="" />
       <modulePath path="${project}/languages/com.mbeddr.mpsutil.langdiag/langdiag.mpl" />
       <modulePath path="${project}/languages/com.mbeddr.mpsutil.outline/outline.mpl" />
@@ -29,7 +30,7 @@
     <option name="version" value="2.0" />
   </component>
   <component name="VcsDirectoryMappings">
-    <mapping directory="$PROJECT_DIR$/../../.." vcs="Git" />
+    <mapping directory="$mbeddr.github.core.home$" vcs="Git" />
   </component>
 </project>
 

@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- $Id: pom.xml 4704 2012-01-12 14:46:39Z epietrig $ -->
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>fr.inria.zvtm</groupId>
+	<artifactId>zgrviewer-formps</artifactId>
+	<packaging>jar</packaging>
+	<name>ZGRViewer</name>
+	<version>1.0.0-SNAPSHOT</version>
+	<description>ZGRViewer is a graph visualizer implemented in Java and based upon the Zoomable Visual Transformation Machine. It is specifically aimed at displaying graphs expressed using the DOT language from AT&amp;T GraphViz and processed by programs dot, neato or others such as twopi. ZGRViewer is designed to handle large graphs, and offers a zoomable user interface (ZUI), which enables smooth zooming and easy navigation in the visualized structure. ZGRViewer should be able to load any file that uses the DOT language to describe the graph.</description>
+	<url>http://zvtm.sourceforge.net/zgrviewer.html</url>
+	<licenses>
+		<license>
+			<name>GNU Lesser General Public License (LGPL)</name>
+			<url>http://www.gnu.org/licenses/lgpl.html</url>
+			<distribution>repo</distribution>
+		</license>
+	</licenses>
+	<scm>
+		<url>https://zvtm.svn.sourceforge.net/svnroot/zvtm/zgrviewer/</url>
+	</scm>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+
+	<!-- Repositories -->
+	<repositories>
+		<repository>
+			<id>zvtm repository</id>
+			<url>http://zvtm.sourceforge.net/maven</url>
+		</repository>
+		<repository>
+			<id>central</id>
+			<name>Maven Repository</name>
+			<url>http://repo1.maven.org/maven2</url>
+		</repository>
+		<repository>
+			<id>codehaus-repository</id>
+			<name>Codehaus Repository</name>
+			<url>http://repository.codehaus.org</url>
+		</repository>
+	</repositories>
+
+	<!-- Deployment -->
+	<distributionManagement>
+		<repository>
+			<id>zvtm.sf.net</id>
+			<url>scp://shell.sourceforge.net/home/project-web/zvtm/htdocs/maven</url>
+		</repository>
+	</distributionManagement>
+
+	<!-- Dependencies -->
+	<dependencies>
+		<dependency>
+			<groupId>fr.inria.zvtm</groupId>
+			<artifactId>zvtm-core-formps</artifactId>
+			<version>1.0.0-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>commons-io</groupId>
+			<artifactId>commons-io</artifactId>
+			<version>2.1</version>
+		</dependency>		
+		<dependency>
+			<groupId>fr.inria.zvtm</groupId>
+			<artifactId>zvtm-svg</artifactId>
+			<version>0.2.1-SNAPSHOT</version>
+			<exclusions>
+				<exclusion>
+					<groupId>fr.inria.zvtm</groupId>
+					<artifactId>zvtm-core</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+		<!--dependency> <groupId>xml-apis</groupId> <artifactId>xml-apis</artifactId> 
+			<version>1.3.03</version> </dependency> <dependency> <groupId>xerces</groupId> 
+			<artifactId>xercesImpl</artifactId> <version>2.8.1</version> </dependency -->
+		<dependency>
+			<groupId>antlr</groupId>
+			<artifactId>antlr</artifactId>
+			<version>2.7.7</version>
+			<scope>compile</scope>
+		</dependency>
+	</dependencies>
+
+	<!-- Build -->
+	<build>
+		<extensions>
+			<extension>
+				<groupId>org.apache.maven.wagon</groupId>
+				<artifactId>wagon-ssh</artifactId>
+				<version>2.2</version>
+			</extension>
+		</extensions>
+		<resources>
+			<resource>
+				<directory>src/main/resources/p</directory>
+				<filtering>true</filtering>
+			</resource>
+			<resource>
+				<directory>src/main/resources</directory>
+				<excludes>
+					<exclude>images/*.psd</exclude>
+					<exclude>antlr/**</exclude>
+				</excludes>
+			</resource>
+		</resources>
+		<plugins>
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>antlr-maven-plugin</artifactId>
+				<version>2.1</version>
+				<configuration>
+					<grammars>*.g</grammars>
+				</configuration>
+				<executions>
+					<execution>
+						<goals>
+							<goal>generate</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>dependency-maven-plugin</artifactId>
+				<version>1.0</version>
+				<executions>
+					<execution>
+						<id>copy-dependencies</id>
+						<phase>package</phase>
+						<goals>
+							<goal>copy-dependencies</goal>
+						</goals>
+						<configuration>
+							<outputDirectory>${project.build.directory}</outputDirectory>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+				<inherited>true</inherited>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-source-plugin</artifactId>
+				<version>2.1.2</version>
+				<executions>
+					<execution>
+						<id>attach-sources</id>
+						<goals>
+							<goal>jar</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>2.3.2</version>
+				<configuration>
+					<source>1.5</source>
+					<target>1.5</target>
+					<showDeprecation>true</showDeprecation>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-jar-plugin</artifactId>
+				<version>2.3.1</version>
+				<configuration>
+					<archive>
+						<manifest>
+							<useUniqueVersions>false</useUniqueVersions>
+							<mainClass>net.claribole.zgrviewer.ZGRViewer</mainClass>
+							<packageName>net.claribole.zgrviewer</packageName>
+							<addClasspath>true</addClasspath>
+						</manifest>
+						<manifestEntries>
+							<mode>development</mode>
+							<url>${project.url}</url>
+						</manifestEntries>
+					</archive>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-eclipse-plugin</artifactId>
+				<version>2.8</version>
+				<configuration>
+					<downloadSources>true</downloadSources>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
+	<!-- Reporting -->
+	<reporting>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-javadoc-plugin</artifactId>
+				<version>2.7</version>
+				<configuration>
+					<aggregate>true</aggregate>
+					<overview>${basedir}/overview.html</overview>
+					<doctitle><![CDATA[<h1>ZVTM API documentation</h1>]]></doctitle>
+					<bottom><![CDATA[Copyright &#169; 2003 World Wide Web Consortium. All Rights Reserved<br />Copyright &#169; 2004-2011 INRIA. All Rights Reserved<br />Licensed under the GNU LGPL. For full terms see the file COPYING.</i>]]></bottom>
+					<links>
+						<link>http://java.sun.com/j2se/1.5.0/docs/api</link>
+					</links>
+				</configuration>
+			</plugin>
+		</plugins>
+	</reporting>
+
+</project>

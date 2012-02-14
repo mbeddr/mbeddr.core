@@ -62,9 +62,9 @@
       <link role="forConcept" roleId="tp3j.2522969319638198290" targetNodeId="c4fa.4185783222026464515" resolveInfo="Statement" />
     </node>
     <node type="tp3j.IntentionDeclaration" typeId="tp3j.1192794744107" id="8230986965007542879">
-      <property name="name" nameId="tpck.1169194664001" value="makeConst" />
+      <property name="name" nameId="tpck.1169194664001" value="toggleConst" />
       <property name="isAvailableInChildNodes" nameId="tp3j.2522969319638091386" value="true" />
-      <link role="forConcept" roleId="tp3j.2522969319638198290" targetNodeId="c4fa.4185783222026475238" resolveInfo="LocalVariableDeclaration" />
+      <link role="forConcept" roleId="tp3j.2522969319638198290" targetNodeId="c4fa.1782955756756899612" resolveInfo="IConstable" />
     </node>
   </roots>
   <root id="4185783222026506692">
@@ -796,14 +796,28 @@
               <node role="expression" roleId="tpee.1081516765348" type="tpee.DotExpression" typeId="tpee.1197027756228" id="8230986965007542889">
                 <node role="operand" roleId="tpee.1197027771414" type="tp3j.ConceptFunctionParameter_node" typeId="tp3j.1192796902958" id="8230986965007542890" />
                 <node role="operation" roleId="tpee.1197027833540" type="tp25.SPropertyAccess" typeId="tp25.1138056022639" id="8230986965007542896">
-                  <link role="property" roleId="tp25.1138056395725" targetNodeId="c4fa.8230986965007542852" resolveInfo="const" />
+                  <link role="property" roleId="tp25.1138056395725" targetNodeId="c4fa.1782955756756899613" resolveInfo="const" />
                 </node>
               </node>
             </node>
             <node role="lValue" roleId="tpee.1068498886295" type="tpee.DotExpression" typeId="tpee.1197027756228" id="8230986965007542892">
               <node role="operand" roleId="tpee.1197027771414" type="tp3j.ConceptFunctionParameter_node" typeId="tp3j.1192796902958" id="8230986965007542893" />
               <node role="operation" roleId="tpee.1197027833540" type="tp25.SPropertyAccess" typeId="tp25.1138056022639" id="8230986965007542895">
-                <link role="property" roleId="tp25.1138056395725" targetNodeId="c4fa.8230986965007542852" resolveInfo="const" />
+                <link role="property" roleId="tp25.1138056395725" targetNodeId="c4fa.1782955756756899613" resolveInfo="const" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node role="childFilterFunction" roleId="tp3j.2522969319638093994" type="tp3j.ChildFilterFunction" typeId="tp3j.3618415754251190715" id="1118251489464874465">
+      <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="1118251489464874466">
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="1118251489464880664">
+          <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="1118251489464880666">
+            <node role="operand" roleId="tpee.1197027771414" type="tp3j.ConceptFunctionParameter_childNode" typeId="tp3j.3618415754251192144" id="1118251489464880665" />
+            <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_IsInstanceOfOperation" typeId="tp25.1139621453865" id="1118251489464881531">
+              <node role="conceptArgument" roleId="tp25.1177027386292" type="tp25.RefConcept_Reference" typeId="tp25.1177026924588" id="1118251489464881533">
+                <link role="conceptDeclaration" roleId="tp25.1177026940964" targetNodeId="mj1l.8860443239512128054" resolveInfo="Type" />
               </node>
             </node>
           </node>

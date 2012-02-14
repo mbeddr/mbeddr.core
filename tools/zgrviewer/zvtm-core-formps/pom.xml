@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+$Id: pom.xml 4686 2012-01-11 16:41:33Z epietrig $
+-->
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" 
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>fr.inria.zvtm</groupId>
+  <artifactId>zvtm-core-formps</artifactId>
+  <packaging>jar</packaging>
+  <name>ZVTM</name>
+  <version>1.0.0-SNAPSHOT</version>
+  <description>The ZVTM is a Zoomable User Interface (ZUI) toolkit implemented in Java, designed to ease the task of creating complex visual editors in which large amounts of objects have to be displayed, or which contain complex geometrical shapes that need to be animated. It is based on the metaphor of universes that can be observed through smart movable/zoomable cameras, and offers features such as perceptual continuity in object animations and camera movements, which should make the end-user's overall experience more pleasing.</description>
+  <url>http://zvtm.sourceforge.net</url>
+  <licenses>
+    <license>
+      <name>GNU Lesser General Public License (LGPL)</name>
+      <url>http://www.gnu.org/licenses/lgpl.html</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+  <scm>
+    <url>https://zvtm.svn.sourceforge.net/svnroot/zvtm</url>
+  </scm>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+  
+  <!-- Repositories -->
+  <repositories>
+	<repository>
+      <id>zvtm repository</id>
+      <url>http://zvtm.sourceforge.net/maven</url>
+    </repository>
+    <repository>
+      <id>central</id>
+      <name>Maven Repository</name>
+      <url>http://repo1.maven.org/maven2</url>
+    </repository>
+  </repositories>
+  
+  <!-- Deployment -->
+  <distributionManagement>
+	<repository>
+      <id>zvtm.sf.net</id>
+      <url>scp://shell.sourceforge.net/home/project-web/zvtm/htdocs/maven</url>
+    </repository>
+  </distributionManagement>
+  
+  <!-- Dependencies -->
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+    </dependency>
+    <dependency>
+		<groupId>net.java.dev.timingframework</groupId>
+		<artifactId>timingframework</artifactId>
+		<version>1.0</version>
+	</dependency>
+	<dependency>
+		<groupId>net.jcip</groupId>
+		<artifactId>jcip-annotations</artifactId>
+		<version>1.0</version>
+	</dependency>
+</dependencies>
+
+  <!-- Build -->
+  <build>
+      <extensions>
+            <extension>
+              <groupId>org.apache.maven.wagon</groupId>
+               <artifactId>wagon-ssh</artifactId>
+               <version>2.2</version>
+            </extension>
+          </extensions>
+	<resources> 
+	  <resource>
+        <directory>src/main/resources</directory> 
+          <excludes> 
+		    <exclude>images/test.jpg</exclude>
+		    <exclude>images/1st-order.ai</exclude>
+		</excludes> 
+      </resource>
+	</resources>
+    <plugins>
+    <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>dependency-maven-plugin</artifactId>
+        <version>1.0</version>
+        <executions>
+          <execution>
+            <id>copy-dependencies</id>
+            <phase>package</phase>
+            <goals>
+              <goal>copy-dependencies</goal>
+            </goals>
+            <configuration>
+              <outputDirectory>${project.build.directory}</outputDirectory>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+    	<version>2.3.2</version>
+        <configuration>
+          <source>1.5</source>
+          <target>1.5</target>
+          <showDeprecation>true</showDeprecation>
+        </configuration>
+      </plugin>
+      <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-eclipse-plugin</artifactId>
+      	<version>2.8</version>
+          <configuration>
+              <downloadSources>true</downloadSources>
+          </configuration>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-jar-plugin</artifactId>
+    	<version>2.3.1</version>
+        <configuration>
+              <excludes>
+                <exclude>**/tests</exclude>
+                <exclude>**/tests/*</exclude>
+            </excludes>
+        </configuration>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-javadoc-plugin</artifactId>
+   	    <version>2.7</version>
+        <configuration>
+          <code>javadoc:aggregate</code>
+          <overview>${basedir}/overview.html</overview>
+          <doctitle><![CDATA[<h1>ZVTM API documentation</h1>]]></doctitle>
+          <bottom><![CDATA[<i>Copyright &#169; 2000-2002 Xerox Corporation. All Rights Reserved<br />Copyright &#169; 2003 World Wide Web Consortium. All Rights Reserved<br />Copyright &#169; 2004-2011 INRIA. All Rights Reserved<br />Licensed under the GNU LGPL. For full terms see the file COPYING.</i>]]></bottom>
+          <links> 
+            <link>http://download.oracle.com/javase/1.5.0/docs/api</link>
+          </links>
+          <excludePackageNames>fr.inria.zvtm.tests,fr.inria.zvtm.glyphs.projection,fr.inria.zvtm.animation.examples</excludePackageNames>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+
+</project>

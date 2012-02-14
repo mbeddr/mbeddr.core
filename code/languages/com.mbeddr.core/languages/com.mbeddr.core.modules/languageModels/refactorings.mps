@@ -37,13 +37,13 @@
       <property name="name" nameId="tpck.1169194664001" value="replicate" />
       <property name="userFriendlyName" nameId="tp1h.6895093993902236371" value="Replicate" />
     </node>
-    <node type="tp1h.Refactoring" typeId="tp1h.6895093993902236229" id="5947739078127898585">
-      <property name="name" nameId="tpck.1169194664001" value="moveIntoNewSection" />
-      <property name="userFriendlyName" nameId="tp1h.6895093993902236371" value="Move Into New Section" />
-    </node>
     <node type="tp1h.Refactoring" typeId="tp1h.6895093993902236229" id="5947739078127914184">
       <property name="name" nameId="tpck.1169194664001" value="moveIntoSection" />
       <property name="userFriendlyName" nameId="tp1h.6895093993902236371" value="Move Into Existing Section" />
+    </node>
+    <node type="tp1h.Refactoring" typeId="tp1h.6895093993902236229" id="5947739078127898585">
+      <property name="name" nameId="tpck.1169194664001" value="moveIntoNewSection" />
+      <property name="userFriendlyName" nameId="tp1h.6895093993902236371" value="Move Into New Section" />
     </node>
   </roots>
   <root id="3769661359949250512">
@@ -892,6 +892,73 @@
       </node>
     </node>
   </root>
+  <root id="5947739078127914184">
+    <node role="parameter" roleId="tp1h.6895093993902236376" type="tp1h.RefactoringParameter" typeId="tp1h.6895093993902311012" id="5947739078127914232">
+      <property name="name" nameId="tpck.1169194664001" value="targetSection" />
+      <node role="chooser" roleId="tp1h.5497648299878741978" type="tp1h.MPSParameterChooser" typeId="tp1h.5497648299878742011" id="5947739078127914234">
+        <property name="title" nameId="tp1h.6647259624309067737" value="Select Target Section" />
+        <node role="paramType" roleId="tp1h.4413749148913695157" type="tp1h.NodeMPSParameterType" typeId="tp1h.4413749148913695142" id="5947739078127914236" />
+        <node role="filterBlock" roleId="tp1h.5497648299878742028" type="tp1h.FilterParameterClause" typeId="tp1h.5497648299878742016" id="5947739078127914239">
+          <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="5947739078127914240">
+            <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="5947739078127914272">
+              <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="5947739078127914274">
+                <node role="operand" roleId="tpee.1197027771414" type="tp1h.ConceptFunctionParameter_RefactoringParameter" typeId="tp1h.5497648299878742024" id="5947739078127914273" />
+                <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_IsInstanceOfOperation" typeId="tp25.1139621453865" id="5947739078127914279">
+                  <node role="conceptArgument" roleId="tp25.1177027386292" type="tp25.RefConcept_Reference" typeId="tp25.1177026924588" id="5947739078127914281">
+                    <link role="conceptDeclaration" roleId="tp25.1177026940964" targetNodeId="x27k.6512473996287153137" resolveInfo="Section" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node role="target" roleId="tp1h.6895093993902310998" type="tp1h.NodeTarget" typeId="tp1h.6895093993902310764" id="5947739078127914188">
+      <property name="allowMultiple" nameId="tp1h.6895093993902310999" value="true" />
+      <link role="concept" roleId="tp1h.6895093993902310806" targetNodeId="x27k.6437088627575722831" resolveInfo="IModuleContent" />
+    </node>
+    <node role="doRefactorBlock" roleId="tp1h.6895093993902236381" type="tp1h.DoRefactorClause" typeId="tp1h.1189694053795" id="5947739078127914189">
+      <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="5947739078127914190">
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="5947739078127914284">
+          <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="5947739078127914297">
+            <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="5947739078127914292">
+              <node role="operand" roleId="tpee.1197027771414" type="tp25.SNodeTypeCastExpression" typeId="tp25.1140137987495" id="5947739078127914290">
+                <link role="concept" roleId="tp25.1140138128738" targetNodeId="x27k.6512473996287153137" resolveInfo="Section" />
+                <node role="leftExpression" roleId="tp25.1140138123956" type="tp1h.RefactoringParameterReference" typeId="tp1h.6895093993902496262" id="5947739078127914285">
+                  <link role="refactoringParameter" roleId="tp1h.6895093993902496263" targetNodeId="5947739078127914232" resolveInfo="targetSection" />
+                </node>
+              </node>
+              <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkListAccess" typeId="tp25.1138056282393" id="5947739078127914296">
+                <link role="link" roleId="tp25.1138056546658" targetNodeId="x27k.6512473996287153139" />
+              </node>
+            </node>
+            <node role="operation" roleId="tpee.1197027833540" type="tp2q.AddAllElementsOperation" typeId="tp2q.1160666733551" id="5947739078127914301">
+              <node role="argument" roleId="tp2q.1160666822012" type="tpee.DotExpression" typeId="tpee.1197027756228" id="5947739078127914304">
+                <node role="operand" roleId="tpee.1197027771414" type="tp1h.RefactoringContext_ConceptFunctionParameter" typeId="tp1h.7953996722066256458" id="5947739078127914303" />
+                <node role="operation" roleId="tpee.1197027833540" type="tp1h.NodesOperation" typeId="tp1h.7953996722066252917" id="5947739078127914308" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node role="keystroke" roleId="tp1h.6895093993902236375" type="tp4k.KeyMapKeystroke" typeId="tp4k.1207318242772" id="5947739078127914226">
+      <property name="modifiers" nameId="tp4k.1207318242773" value="ctrl+alt" />
+      <property name="keycode" nameId="tp4k.1207318242774" value="E" />
+    </node>
+    <node role="initBlock" roleId="tp1h.5497648299878741976" type="tp1h.InitClause" typeId="tp1h.5497648299878741970" id="5947739078127914227">
+      <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="5947739078127914228">
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.ReturnStatement" typeId="tpee.1068581242878" id="5947739078127914229">
+          <node role="expression" roleId="tpee.1068581517676" type="tp1h.AskExpression" typeId="tp1h.6895093993902311015" id="5947739078127914230">
+            <node role="parameter" roleId="tp1h.6895093993902311020" type="tp1h.RefactoringParameterReference" typeId="tp1h.6895093993902496262" id="5947739078127914282">
+              <link role="refactoringParameter" roleId="tp1h.6895093993902496263" targetNodeId="5947739078127914232" resolveInfo="targetSection" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </root>
   <root id="5947739078127898585">
     <node role="parameter" roleId="tp1h.6895093993902236376" type="tp1h.RefactoringParameter" typeId="tp1h.6895093993902311012" id="5947739078127898586">
       <property name="name" nameId="tpck.1169194664001" value="newSectionName" />
@@ -997,73 +1064,6 @@
           <node role="expression" roleId="tpee.1068581517676" type="tp1h.AskExpression" typeId="tp1h.6895093993902311015" id="5947739078127898690">
             <node role="parameter" roleId="tp1h.6895093993902311020" type="tp1h.RefactoringParameterReference" typeId="tp1h.6895093993902496262" id="5947739078127898691">
               <link role="refactoringParameter" roleId="tp1h.6895093993902496263" targetNodeId="5947739078127898586" resolveInfo="newSectionName" />
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-  </root>
-  <root id="5947739078127914184">
-    <node role="parameter" roleId="tp1h.6895093993902236376" type="tp1h.RefactoringParameter" typeId="tp1h.6895093993902311012" id="5947739078127914232">
-      <property name="name" nameId="tpck.1169194664001" value="targetSection" />
-      <node role="chooser" roleId="tp1h.5497648299878741978" type="tp1h.MPSParameterChooser" typeId="tp1h.5497648299878742011" id="5947739078127914234">
-        <property name="title" nameId="tp1h.6647259624309067737" value="Select Target Section" />
-        <node role="paramType" roleId="tp1h.4413749148913695157" type="tp1h.NodeMPSParameterType" typeId="tp1h.4413749148913695142" id="5947739078127914236" />
-        <node role="filterBlock" roleId="tp1h.5497648299878742028" type="tp1h.FilterParameterClause" typeId="tp1h.5497648299878742016" id="5947739078127914239">
-          <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="5947739078127914240">
-            <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="5947739078127914272">
-              <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="5947739078127914274">
-                <node role="operand" roleId="tpee.1197027771414" type="tp1h.ConceptFunctionParameter_RefactoringParameter" typeId="tp1h.5497648299878742024" id="5947739078127914273" />
-                <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_IsInstanceOfOperation" typeId="tp25.1139621453865" id="5947739078127914279">
-                  <node role="conceptArgument" roleId="tp25.1177027386292" type="tp25.RefConcept_Reference" typeId="tp25.1177026924588" id="5947739078127914281">
-                    <link role="conceptDeclaration" roleId="tp25.1177026940964" targetNodeId="x27k.6512473996287153137" resolveInfo="Section" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-    <node role="target" roleId="tp1h.6895093993902310998" type="tp1h.NodeTarget" typeId="tp1h.6895093993902310764" id="5947739078127914188">
-      <property name="allowMultiple" nameId="tp1h.6895093993902310999" value="true" />
-      <link role="concept" roleId="tp1h.6895093993902310806" targetNodeId="x27k.6437088627575722831" resolveInfo="IModuleContent" />
-    </node>
-    <node role="doRefactorBlock" roleId="tp1h.6895093993902236381" type="tp1h.DoRefactorClause" typeId="tp1h.1189694053795" id="5947739078127914189">
-      <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="5947739078127914190">
-        <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="5947739078127914284">
-          <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="5947739078127914297">
-            <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="5947739078127914292">
-              <node role="operand" roleId="tpee.1197027771414" type="tp25.SNodeTypeCastExpression" typeId="tp25.1140137987495" id="5947739078127914290">
-                <link role="concept" roleId="tp25.1140138128738" targetNodeId="x27k.6512473996287153137" resolveInfo="Section" />
-                <node role="leftExpression" roleId="tp25.1140138123956" type="tp1h.RefactoringParameterReference" typeId="tp1h.6895093993902496262" id="5947739078127914285">
-                  <link role="refactoringParameter" roleId="tp1h.6895093993902496263" targetNodeId="5947739078127914232" resolveInfo="targetSection" />
-                </node>
-              </node>
-              <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkListAccess" typeId="tp25.1138056282393" id="5947739078127914296">
-                <link role="link" roleId="tp25.1138056546658" targetNodeId="x27k.6512473996287153139" />
-              </node>
-            </node>
-            <node role="operation" roleId="tpee.1197027833540" type="tp2q.AddAllElementsOperation" typeId="tp2q.1160666733551" id="5947739078127914301">
-              <node role="argument" roleId="tp2q.1160666822012" type="tpee.DotExpression" typeId="tpee.1197027756228" id="5947739078127914304">
-                <node role="operand" roleId="tpee.1197027771414" type="tp1h.RefactoringContext_ConceptFunctionParameter" typeId="tp1h.7953996722066256458" id="5947739078127914303" />
-                <node role="operation" roleId="tpee.1197027833540" type="tp1h.NodesOperation" typeId="tp1h.7953996722066252917" id="5947739078127914308" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-    <node role="keystroke" roleId="tp1h.6895093993902236375" type="tp4k.KeyMapKeystroke" typeId="tp4k.1207318242772" id="5947739078127914226">
-      <property name="modifiers" nameId="tp4k.1207318242773" value="ctrl+alt" />
-      <property name="keycode" nameId="tp4k.1207318242774" value="E" />
-    </node>
-    <node role="initBlock" roleId="tp1h.5497648299878741976" type="tp1h.InitClause" typeId="tp1h.5497648299878741970" id="5947739078127914227">
-      <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="5947739078127914228">
-        <node role="statement" roleId="tpee.1068581517665" type="tpee.ReturnStatement" typeId="tpee.1068581242878" id="5947739078127914229">
-          <node role="expression" roleId="tpee.1068581517676" type="tp1h.AskExpression" typeId="tp1h.6895093993902311015" id="5947739078127914230">
-            <node role="parameter" roleId="tp1h.6895093993902311020" type="tp1h.RefactoringParameterReference" typeId="tp1h.6895093993902496262" id="5947739078127914282">
-              <link role="refactoringParameter" roleId="tp1h.6895093993902496263" targetNodeId="5947739078127914232" resolveInfo="targetSection" />
             </node>
           </node>
         </node>

@@ -73,10 +73,6 @@
       <property name="name" nameId="tpck.1169194664001" value="togglePreventNameMangling" />
       <link role="forConcept" roleId="tp3j.2522969319638198290" targetNodeId="x27k.6437088627575722831" resolveInfo="IModuleContent" />
     </node>
-    <node type="tp3j.IntentionDeclaration" typeId="tp3j.1192794744107" id="8230986965007542898">
-      <property name="name" nameId="tpck.1169194664001" value="makeConst" />
-      <link role="forConcept" roleId="tp3j.2522969319638198290" targetNodeId="x27k.8444296659257696249" resolveInfo="IArgumentLike" />
-    </node>
     <node type="tp3j.IntentionDeclaration" typeId="tp3j.1192794744107" id="8934095934011993998">
       <property name="name" nameId="tpck.1169194664001" value="addNewlinesBetweenFunctions" />
       <link role="forConcept" roleId="tp3j.2522969319638198290" targetNodeId="x27k.6437088627575722813" resolveInfo="Module" />
@@ -1428,39 +1424,6 @@
                 <node role="conceptArgument" roleId="tp25.1177027386292" type="tp25.RefConcept_Reference" typeId="tp25.1177026924588" id="6708182213627622710">
                   <link role="conceptDeclaration" roleId="tp25.1177026940964" targetNodeId="x27k.6610873504380335822" resolveInfo="GlobalVariableDeclaration" />
                 </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-  </root>
-  <root id="8230986965007542898">
-    <node role="descriptionFunction" roleId="tp3j.2522969319638093993" type="tp3j.DescriptionBlock" typeId="tp3j.1192794782375" id="8230986965007542899">
-      <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="8230986965007542900">
-        <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="8230986965007542903">
-          <node role="expression" roleId="tpee.1068580123156" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="8230986965007542904">
-            <property name="value" nameId="tpee.1070475926801" value="Toggle Const" />
-          </node>
-        </node>
-      </node>
-    </node>
-    <node role="executeFunction" roleId="tp3j.2522969319638198291" type="tp3j.ExecuteBlock" typeId="tp3j.1192795911897" id="8230986965007542901">
-      <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="8230986965007542902">
-        <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="8230986965007542905">
-          <node role="expression" roleId="tpee.1068580123156" type="tpee.AssignmentExpression" typeId="tpee.1068498886294" id="8230986965007542912">
-            <node role="rValue" roleId="tpee.1068498886297" type="tpee.NotExpression" typeId="tpee.1081516740877" id="8230986965007542915">
-              <node role="expression" roleId="tpee.1081516765348" type="tpee.DotExpression" typeId="tpee.1197027756228" id="8230986965007542918">
-                <node role="operand" roleId="tpee.1197027771414" type="tp3j.ConceptFunctionParameter_node" typeId="tp3j.1192796902958" id="8230986965007542917" />
-                <node role="operation" roleId="tpee.1197027833540" type="tp25.SPropertyAccess" typeId="tp25.1138056022639" id="8230986965007542922">
-                  <link role="property" roleId="tp25.1138056395725" targetNodeId="x27k.8230986965007542897" resolveInfo="const" />
-                </node>
-              </node>
-            </node>
-            <node role="lValue" roleId="tpee.1068498886295" type="tpee.DotExpression" typeId="tpee.1197027756228" id="8230986965007542907">
-              <node role="operand" roleId="tpee.1197027771414" type="tp3j.ConceptFunctionParameter_node" typeId="tp3j.1192796902958" id="8230986965007542906" />
-              <node role="operation" roleId="tpee.1197027833540" type="tp25.SPropertyAccess" typeId="tp25.1138056022639" id="8230986965007542911">
-                <link role="property" roleId="tp25.1138056395725" targetNodeId="x27k.8230986965007542897" resolveInfo="const" />
               </node>
             </node>
           </node>

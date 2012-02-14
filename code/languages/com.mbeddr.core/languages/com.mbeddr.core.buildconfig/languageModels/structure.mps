@@ -11,7 +11,6 @@
   <import index="f2yx" modelUID="r:50085297-b330-46da-b541-883806c23ebc(com.mbeddr.mpsutil.langdiag.structure)" version="1" implicit="yes" />
   <import index="x7ww" modelUID="r:66990afc-1053-4945-b2b8-893dc873b7d4(com.mbeddr.mpsutil.outline.structure)" version="-1" implicit="yes" />
   <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="1" implicit="yes" />
-  <import index="51wr" modelUID="r:b31f1c3c-99aa-4f1e-a329-cba27efb1a6b(com.mbeddr.core.buildconfig.structure)" version="1" implicit="yes" />
   <roots>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7717755763392524104">
       <property name="name" nameId="tpck.1169194664001" value="BuildConfiguration" />
@@ -228,6 +227,9 @@
     </node>
   </root>
   <root id="5323740605968447022">
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="2736179788492003946">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="2736179788492003936" resolveInfo="IDebuggablePlatform" />
+    </node>
     <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="5323740605968447024">
       <property name="name" nameId="tpck.1169194664001" value="compiler" />
       <link role="dataType" roleId="tpce.1082985295845" targetNodeId="tpck.1082983041843" resolveInfo="string" />
@@ -247,9 +249,6 @@
     <node role="conceptLink" roleId="tpce.1105736949336" type="tpce.ReferenceConceptLink" typeId="tpce.1105736778597" id="4509600423770387311">
       <link role="conceptLinkDeclaration" roleId="tpce.1105736734721" targetNodeId="4509600423770387303" resolveInfo="binaryKind" />
       <link role="target" roleId="tpce.1105736807942" targetNodeId="5046689135693761554" resolveInfo="Executable" />
-    </node>
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="2736179788492003946">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="2736179788492003936" resolveInfo="IDebuggablePlatform" />
     </node>
   </root>
   <root id="2736179788492003936">

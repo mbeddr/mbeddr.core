@@ -56,5 +56,35 @@
     </dependencies>
     <rename id="2gv2.4474148880361719194" type="CONCEPT" from="IGlobalVarProvider" to="IGlobalVariablesProvider" />
   </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="2gv2" modelUID="r:055bac8c-a50b-42ec-a317-e20a256152b4(com.mbeddr.core.debug.structure)" version="3" />
+    </dependencies>
+    <rename id="2gv2.2425085581001949605" type="CONCEPT" from="ISteppabeUnit" to="ISteppableUnit" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="2gv2" modelUID="r:055bac8c-a50b-42ec-a317-e20a256152b4(com.mbeddr.core.debug.structure)" version="4" />
+    </dependencies>
+    <rename id="2gv2.1061857790208788191" type="CONCEPT" from="IVirtualStackContributor" to="IVirtualStackFrameContributor" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="2gv2" modelUID="r:055bac8c-a50b-42ec-a317-e20a256152b4(com.mbeddr.core.debug.structure)" version="5" />
+    </dependencies>
+    <rename id="2gv2.9057217260024409663" type="CONCEPT" from="IWatchableProvider" to="IWatchablesProvider" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="2gv2" modelUID="r:055bac8c-a50b-42ec-a317-e20a256152b4(com.mbeddr.core.debug.structure)" version="6" />
+    </dependencies>
+    <rename id="2gv2.4474148880361719194" type="CONCEPT" from="IWatchtablesProviderContext" to="IWatchablesProviderContext" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="2gv2" modelUID="r:055bac8c-a50b-42ec-a317-e20a256152b4(com.mbeddr.core.debug.structure)" version="7" />
+    </dependencies>
+    <rename id="2gv2.1061857790208788243" type="CONCEPT" from="IRealStackContributor" to="IRealStackFrameContributor" />
+  </StructureModification>
 </history>
 

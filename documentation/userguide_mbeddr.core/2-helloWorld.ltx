@@ -38,7 +38,8 @@ discuss this aspect of mbeddr in the \emph{Extension Guide}}. A \emph{solution}
 is an application project that \emph{uses} existing languages. Solutions contain
 any number of models; models contain root nodes. Physically, models are XML
 files that store MPS programs. They are the relevant version control unit, and
-the fundamental unit of configuration.
+the fundamental unit of configuration.
+
 
 \begin{center} 
   \includegraphics[width=8cm]{figures/workspacecontents.png}
@@ -46,7 +47,8 @@ the fundamental unit of configuration.
 
 In the solution, create a new model with the name \ic{main}, prefixed with the
 solution's name: select $New \rightarrow Model$ from the solution's context
-menu. No sterotype.
+menu. No sterotype.
+
  
 
 A model has to be configured with the languages that should be used to write the
@@ -54,7 +56,8 @@ program in the model. In our case we need all the \ic{mbeddr.core} languages. We
 have provided a \emph{devkit} for these languages. A devkit is essentially a set
 of languages, used to simplify the import settings. As you create the model, the
 model properties dialog should open automatically. In the \emph{Used Devkits}
-section, select the \ic{+} button and add the \ic{com.mbeddr.core} devkit.
+section, select the \ic{+} button and add the \ic{com.mbeddr.core} devkit.
+
 
 
 \begin{center} 
@@ -73,7 +76,8 @@ namespaces and as the unit of encapsulation.  So the first step is to create an
 empty Module. The mbeddr.core C language does not use the artificial separation
 between \ic{.h} and \ic{.c} files you know it from classical C. Instead
 mbeddr C uses the aforementioned module concept. During code generation we then
-create the corresponding \ic{.h} and \ic{.c} files.
+create the corresponding \ic{.h} and \ic{.c} files.
+
 A module can import other modules. The importing module can then
 access the \emph{exported} contents of imported modules. 
 
@@ -81,7 +85,8 @@ So to get started, we create a new \ic{implementation module} using the model's
 context menu as shown in the following screenshot:
 \begin{center} 
   \includegraphics[width=12cm]{figures/ContextMenuNewModule.png}
-\end{center}
+\end{center}
+
 
 \greyboxnote{This operation, as well as almost all others, can be performed with
 the keyboard as well. Take a look at $File \rightarrow Settings
@@ -118,7 +123,10 @@ You may have to press \keystroke{F5} to make the red underline go away. For more
 details on type size configurations see chapter \ref{PrimitiveNumericDatatypes}.
 \begin{center} 
   \includegraphics[width=8cm]{figures/AddDefaultTSC.png}
-\end{center}
+\end{center}
+
+
+
 
 
 \subsection{Writing the Program}			
@@ -134,11 +142,13 @@ enter a main function in one of the the following ways:
 	\item specifically for the main function, you can also just type
 	\keystroke{main} 
 	\\(it will set up the correct signature automatically)
-\end{itemize} 
+\end{itemize} 
+
 
 At this point, we are ready to implement the Hello World program. Our aim is to
 simply output a log message and return \ic{0}. To add a return value, move the
-cursor into the function body and type \keystroke{return 0}.
+cursor into the function body and type \keystroke{return 0}.
+
 
 \begin{code}
 module HelloWorld from HelloWorld.main imports nothing {                                            
@@ -155,13 +165,16 @@ logging. It will be translated in a suitable way, depending on the available
 facilities on the target platform. Also, specific log messages can be
 deactivated in which case they are completely removed from the program. Below
 our main function we create a new \ic{message list} (just type
-\keystroke{message} followed by return) and give it the name \ic{log}.
+\keystroke{message} followed by return) and give it the name \ic{log}.
+
 
 Within the message list, hit \keystroke{return} or type \keystroke{message} to
 create a new message. Change the type from \ic{ERROR} to \ic{INFO} with the help
 of auto completion. Specify the name \ic{hello}. Add a message property by 
 hitting \keystroke{return} between the parentheses. The type should be a
-\ic{string} and the name should be \ic{who}. Specify \ic{Hello} as the valueof the \ic{message text} property. The resulting message should look like this:
+\ic{string} and the name should be \ic{who}. Specify \ic{Hello} as the value
+of the \ic{message text} property. The resulting message should look like this:
+
 \begin{code}
   message list log { 
     INFO hello(string who) active: Hello 
@@ -212,7 +225,8 @@ well as other aspects related to creating an executable. Depending on the
 selected target platform, a \ic{BuildConfiguration} will automatically generate
 a corresponding \ic{make} file. In the main model, create a new instance of
 \lcr{BuildConfiguration} (via the model's context menu, see
-\fig{addBuildConfiguraitonModel}). Initially, it will look as follows:
+\fig{addBuildConfiguraitonModel}). Initially, it will look as follows:
+
 
 \begin{code}
 Target Platform: 
@@ -253,7 +267,8 @@ Configuration Items
 
 Finally, in the \ic{Binaries} section, we create a new \lcr{exectuable} and
 call it \lcr{HelloWorld}. In the program's body, add a reference to the \lcr{HelloWorld}
-implementation module we've created before. The code should look like this:
+implementation module we've created before. The code should look like this:
+
 \begin{code}
 executable main isTest: false { 
   used libraries 
@@ -283,7 +298,8 @@ HelloWorld.h
 The files should be already compiled as part of the mbeddr C build facet (i.e.
 \ic{make} is run by MPS automatically). Alternatively, to compile the files
 manually, open a command prompt (must be a cygwin prompt on Windows!) in this
-directory and type \keystroke{make}. The output should look like the following:
+directory and type \keystroke{make}. The output should look like the following:
+
 
 \begin{code}
 \$ make
@@ -304,7 +320,8 @@ hello: Hello @HelloWorld:main:0
 Note the output of the log statement in the program (report statement number
 \ic{0} in function \ic{main} in module \ic{HelloWorld}; take a look back at the
 source code: the index of the statement (here: \ic{0}) is also output in the
-program source). 
+program source). 
+
 
 This concludes our hello world example. In the next section we will examine
 important differences between mbeddr C and regular C. 

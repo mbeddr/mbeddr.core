@@ -38,6 +38,7 @@
   <root id="2232906979338141607">
     <node role="nodes" roleId="fu4.5104882350373547322" type="fu4.Node" typeId="fu4.5104882350373546414" id="2232906979338141610">
       <property name="name" nameId="tpck.1169194664001" value="langName" />
+      <property name="id" nameId="fu4.2572433829548657085" value=" " />
       <node role="shape" roleId="fu4.5104882350373598809" type="fu4.SimpleShapeWithLabel" typeId="fu4.5104882350373597221" id="2232906979338145919">
         <node role="label" roleId="fu4.5104882350373605132" type="fu4.TextLabel" typeId="fu4.5104882350373605077" id="2232906979338145923">
           <property name="label" nameId="fu4.5104882350373605078" value="langName" />
@@ -220,6 +221,7 @@
       </node>
       <node role="outEdges" roleId="fu4.6641971848870911318" type="fu4.Edge" typeId="fu4.5104882350373546416" id="6943634275203281344">
         <property name="lineStyle" nameId="fu4.5104882350373613578" value="solid" />
+        <property name="id" nameId="fu4.5640895251118692654" value=" " />
         <link role="source" roleId="fu4.5104882350373546417" targetNodeId="2232906979338141610" resolveInfo="langName" />
         <link role="target" roleId="fu4.5104882350373546418" targetNodeId="2232906979338141610" resolveInfo="langName" />
         <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.LoopMacro" typeId="tpf8.1118786554307" id="6943634275203281350">
