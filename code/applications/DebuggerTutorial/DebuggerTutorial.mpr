@@ -16,6 +16,7 @@
   <component name="Encoding" useUTFGuessing="true" native2AsciiForPropertiesFiles="false" />
   <component name="MPSProject">
     <projectModules>
+      <modulePath path="${mbeddr.github.core.home}/code/languages/com.mbeddr.core/languages/com.mbeddr.core.debug.blext/blext.mpl" />
       <modulePath path="${mbeddr.github.core.home}/code/languages/com.mbeddr.core/languages/com.mbeddr.core.debug/debug.mpl" />
       <modulePath path="${project}/languages/ForeachLanguage/ForeachLanguage.mpl" folder="" />
       <modulePath path="${project}/languages/UnlessLanguage/UnlessLanguage.mpl" />

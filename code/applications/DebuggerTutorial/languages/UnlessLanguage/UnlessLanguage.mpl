@@ -38,6 +38,7 @@
   </generators>
   <sourcePath />
   <usedLanguages>
+    <usedLanguage>ebb5e132-d298-4649-b320-b3f4d7f3acff(com.mbeddr.core.debug.blext)</usedLanguage>
     <usedLanguage>61c69711-ed61-4850-81d9-7714ff227fb0(com.mbeddr.core.expressions)</usedLanguage>
   </usedLanguages>
   <usedDevKits>
