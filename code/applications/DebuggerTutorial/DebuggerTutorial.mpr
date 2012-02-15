@@ -17,6 +17,7 @@
   <component name="MPSProject">
     <projectModules>
       <modulePath path="${mbeddr.github.core.home}/code/languages/com.mbeddr.core/languages/com.mbeddr.core.debug/debug.mpl" />
+      <modulePath path="${project}/languages/ForeachLanguage/ForeachLanguage.mpl" folder="" />
       <modulePath path="${project}/languages/UnlessLanguage/UnlessLanguage.mpl" />
       <modulePath path="${project}/solutions/UnlessLanguage.sandbox/UnlessLanguage.sandbox.msd" />
     </projectModules>
