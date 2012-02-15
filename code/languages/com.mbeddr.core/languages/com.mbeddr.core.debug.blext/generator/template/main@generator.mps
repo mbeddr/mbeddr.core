@@ -261,8 +261,8 @@
                   </node>
                   <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_GetDescendantsOperation" typeId="tp25.1171305280644" id="8344177855845750602">
                     <node role="parameter" roleId="tp25.1144104376918" type="tp25.OperationParm_Concept" typeId="tp25.1144101972840" id="8344177855845750603">
-                      <node role="conceptArgument" roleId="tp25.1207343664468" type="tp25.RefConcept_Reference" typeId="tp25.1177026924588" id="8344177855845762552">
-                        <link role="conceptDeclaration" roleId="tp25.1177026940964" targetNodeId="talm.8344177855845762549" resolveInfo="IStrategyAdder" />
+                      <node role="conceptArgument" roleId="tp25.1207343664468" type="tp25.RefConcept_Reference" typeId="tp25.1177026924588" id="5333670511000731187">
+                        <link role="conceptDeclaration" roleId="tp25.1177026940964" targetNodeId="talm.5333670511000731186" resolveInfo="AbstractStrategyAdder" />
                       </node>
                     </node>
                   </node>
@@ -366,8 +366,8 @@
                   </node>
                   <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_GetDescendantsOperation" typeId="tp25.1171305280644" id="8344177855845754699">
                     <node role="parameter" roleId="tp25.1144104376918" type="tp25.OperationParm_Concept" typeId="tp25.1144101972840" id="8344177855845754700">
-                      <node role="conceptArgument" roleId="tp25.1207343664468" type="tp25.RefConcept_Reference" typeId="tp25.1177026924588" id="8344177855845754701">
-                        <link role="conceptDeclaration" roleId="tp25.1177026940964" targetNodeId="talm.1734689175229870835" resolveInfo="AddStrategyStatement" />
+                      <node role="conceptArgument" roleId="tp25.1207343664468" type="tp25.RefConcept_Reference" typeId="tp25.1177026924588" id="5333670511000731188">
+                        <link role="conceptDeclaration" roleId="tp25.1177026940964" targetNodeId="talm.5333670511000731186" resolveInfo="AbstractStrategyAdder" />
                       </node>
                     </node>
                   </node>

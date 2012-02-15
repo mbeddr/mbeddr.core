@@ -11,7 +11,7 @@
   <roots>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="1734689175229870835">
       <property name="name" nameId="tpck.1169194664001" value="AddStrategyStatement" />
-      <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpee.1068580123157" resolveInfo="Statement" />
+      <link role="extends" roleId="tpce.1071489389519" targetNodeId="5333670511000731186" resolveInfo="AbstractStrategyAdder" />
     </node>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="8344177855845747242">
       <property name="name" nameId="tpck.1169194664001" value="CollectedStrategies" />
@@ -19,13 +19,17 @@
     </node>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="8344177855845759727">
       <property name="name" nameId="tpck.1169194664001" value="AddAncestorStrategy" />
-      <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpee.1068580123157" resolveInfo="Statement" />
+      <link role="extends" roleId="tpce.1071489389519" targetNodeId="5333670511000731186" resolveInfo="AbstractStrategyAdder" />
     </node>
     <node type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="8344177855845762549">
       <property name="name" nameId="tpck.1169194664001" value="IStrategyAdder" />
     </node>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="8344177855845765595">
       <property name="name" nameId="tpck.1169194664001" value="AddStatementListStrategy" />
+      <link role="extends" roleId="tpce.1071489389519" targetNodeId="5333670511000731186" resolveInfo="AbstractStrategyAdder" />
+    </node>
+    <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="5333670511000731186">
+      <property name="name" nameId="tpck.1169194664001" value="AbstractStrategyAdder" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpee.1068580123157" resolveInfo="Statement" />
     </node>
   </roots>
@@ -39,9 +43,6 @@
     <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="1734689175229870836">
       <property name="value" nameId="tpce.1105725733873" value="add strategy" />
       <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473891462" resolveInfo="alias" />
-    </node>
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="8344177855845762550">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="8344177855845762549" resolveInfo="IStrategyAdder" />
     </node>
   </root>
   <root id="8344177855845747242">
@@ -59,9 +60,6 @@
       <property name="value" nameId="tpce.1105725733873" value="add ancestor stepover strategy" />
       <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473891462" resolveInfo="alias" />
     </node>
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="8344177855845762551">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="8344177855845762549" resolveInfo="IStrategyAdder" />
-    </node>
   </root>
   <root id="8344177855845762549" />
   <root id="8344177855845765595">
@@ -75,9 +73,7 @@
       <property name="value" nameId="tpce.1105725733873" value="add statement list stepover strategy" />
       <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473891462" resolveInfo="alias" />
     </node>
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="8344177855845765598">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="8344177855845762549" resolveInfo="IStrategyAdder" />
-    </node>
   </root>
+  <root id="5333670511000731186" />
 </model>
 
