@@ -5,11 +5,26 @@
   <taskdef resource="jetbrains/mps/build/ant/antlib.xml"
            classpath="${mps.home}/languages/generate.ant.task.jar"/>
 
-  <target name="build">
+  <jvmargs id="myargs">
+      <arg value="-ea"/>
+      <arg value="-Xss1024k"/>
+      <arg value="-Xmx1024m"/>
+      <arg value="-XX:MaxPermSize=92m"/>
+      <arg value="-XX:+HeapDumpOnOutOfMemoryError"/>
+	  <arg value="-Didea.system.path=${mps.platform.caches}/system"/>
+	  <arg value="-Didea.config.path=${mps.platform.caches}/config"/>
+	  <arg value="-Didea.plugins.path=${mps.platform.caches}/plugins"/>
+  </jvmargs>
+
+
+  <target name="init">
+      <delete dir="${mps.platform.caches}"/>
+      <mkdir dir="${mps.platform.caches}"/>
+  </target>
+
+  <target name="build" depends="init">
     <mps.generate loglevel="info" fork="true" failonerror="true">
-      <jvmargs id="myargs">
-       <arg value="-Xmx512m"/>
-      </jvmargs>
+      <jvmargs id="myargs"/>
 	  <project file="${mbeddr.github.core.home}/code/applications/HelloWorld/HelloWorld.mpr"/>
 	  <library name="mbeddr.core" dir="${mbeddr.github.core.home}/code/languages/com.mbeddr.core"/>
 	  <library name="mbeddr.utils" dir="${mbeddr.github.core.home}/code/languages/com.mbeddr.mpsutil"/>
