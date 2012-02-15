@@ -23,11 +23,10 @@
   </target>
 
   <target name="build" depends="init">
-    <mps.generate loglevel="info" fork="true" failonerror="true">
+    <mps.generate parallelMode="true" fork="true">
       <jvmargs id="myargs"/>
 	  <project file="${mbeddr.github.core.home}/code/applications/HelloWorld/HelloWorld.mpr"/>
-	  <library name="mbeddr.core" dir="${mbeddr.github.core.home}/code/languages/com.mbeddr.core"/>
-	  <library name="mbeddr.utils" dir="${mbeddr.github.core.home}/code/languages/com.mbeddr.mpsutil"/>
+	  <library name="core" dir="${mbeddr.github.core.home}/code/languages/"/>
     </mps.generate>
   </target>
 
