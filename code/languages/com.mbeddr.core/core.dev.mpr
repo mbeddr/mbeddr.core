@@ -20,6 +20,7 @@
       <modulePath path="${project}/languages/com.mbeddr.core.arrays/arrays.mpl" folder="core" />
       <modulePath path="${project}/languages/com.mbeddr.core.base/base.mpl" folder="core" />
       <modulePath path="${project}/languages/com.mbeddr.core.buildconfig/buildconfig.mpl" folder="core" />
+      <modulePath path="${project}/languages/com.mbeddr.core.debug.blext/blext.mpl" folder="core" />
       <modulePath path="${project}/languages/com.mbeddr.core.debug/debug.mpl" folder="core" />
       <modulePath path="${project}/languages/com.mbeddr.core.expressions/expressions.mpl" folder="core" />
       <modulePath path="${project}/languages/com.mbeddr.core.make/make.mpl" folder="core" />
