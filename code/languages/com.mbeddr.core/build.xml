@@ -41,6 +41,7 @@
       <library name="util.languages" dir="${mbeddr.github.core.home}/${util.project.dir}/languages"/>
 
       <modules dir="${mbeddr.github.core.home}/${mbeddr.core.project.dir}/languages"/>
+      <modules dir="${mbeddr.github.core.home}/${mbeddr.core.project.dir}/solutions/com.mbeddr.core.modules.runtime"/>
     </mps.generate>
   </target>
 

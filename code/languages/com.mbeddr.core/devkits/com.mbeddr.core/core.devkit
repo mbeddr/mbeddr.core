@@ -10,5 +10,8 @@
   <exported-language name="efda956e-491e-4f00-ba14-36af2f213ecf(com.mbeddr.core.udt)" />
   <exported-language name="06d68b77-b699-4918-83b8-857e63787800(com.mbeddr.core.unittest)" />
   <exported-language name="2693fc71-9b0e-4b05-ab13-f57227d675f2(com.mbeddr.core.util)" />
+  <exported-solutions>
+    <exported-solution>fda566a8-0df7-442b-b355-ba0f7b3d1cbd(com.mbeddr.core.modules.runtime)</exported-solution>
+  </exported-solutions>
 </dev-kit>
 
