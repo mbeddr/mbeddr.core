@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="com.mbeddr.core.Include" uuid="fda566a8-0df7-442b-b355-ba0f7b3d1cbd" compileInMPS="true">
+<solution name="com.mbeddr.core.modules.runtime" uuid="fda566a8-0df7-442b-b355-ba0f7b3d1cbd" compileInMPS="true">
   <models>
     <modelRoot path="${solution_descriptor}/" namespacePrefix="" />
-    <modelRoot path="${solution_descriptor}/models" namespacePrefix="com.mbeddr.core.Include" />
+    <modelRoot path="${solution_descriptor}/models" namespacePrefix="com.mbeddr.core.modules.runtime" />
   </models>
   <sourcePath />
   <dependencies>

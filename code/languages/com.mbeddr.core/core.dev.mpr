@@ -30,8 +30,8 @@
       <modulePath path="${project}/languages/com.mbeddr.core.udt/udt.mpl" folder="core" />
       <modulePath path="${project}/languages/com.mbeddr.core.unittest/unittest.mpl" folder="core" />
       <modulePath path="${project}/languages/com.mbeddr.core.util/util.mpl" folder="core" />
-      <modulePath path="${project}/solutions/com.mbeddr.core.Include/Include.msd" folder="core" />
       <modulePath path="${project}/solutions/com.mbeddr.core.about/about.msd" folder="" />
+      <modulePath path="${project}/solutions/com.mbeddr.core.modules.runtime/include.msd" folder="core" />
       <modulePath path="${project}/tests/aLibrary/aLibrary.msd" folder="tests" />
       <modulePath path="${project}/tests/test.ex.core.libs/libs.msd" folder="tests" />
       <modulePath path="${project}/tests/test.ex.core/core.msd" folder="tests" />
