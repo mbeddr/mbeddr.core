@@ -20,10 +20,12 @@
       <modulePath path="${project}/languages/com.mbeddr.core.arrays/arrays.mpl" folder="core" />
       <modulePath path="${project}/languages/com.mbeddr.core.base/base.mpl" folder="core" />
       <modulePath path="${project}/languages/com.mbeddr.core.buildconfig/buildconfig.mpl" folder="core" />
+      <modulePath path="${project}/languages/com.mbeddr.core.debug.blext/blext.mpl" folder="core" />
       <modulePath path="${project}/languages/com.mbeddr.core.debug/debug.mpl" folder="core" />
       <modulePath path="${project}/languages/com.mbeddr.core.expressions/expressions.mpl" folder="core" />
       <modulePath path="${project}/languages/com.mbeddr.core.make/make.mpl" folder="core" />
       <modulePath path="${project}/languages/com.mbeddr.core.modules.gen/gen.mpl" folder="core" />
+      <modulePath path="${project}/languages/com.mbeddr.core.modules.runtime/include.msd" folder="core" />
       <modulePath path="${project}/languages/com.mbeddr.core.modules/modules.mpl" folder="core" />
       <modulePath path="${project}/languages/com.mbeddr.core.statements/statements.mpl" folder="core" />
       <modulePath path="${project}/languages/com.mbeddr.core.udt/udt.mpl" folder="core" />
@@ -44,10 +46,10 @@
   <component name="ProjectLibraryManager">
     <option name="libraries">
       <map>
-        <entry key="mpsutils">
+        <entry key="mpsutil">
           <value>
             <Library>
-              <option name="name" value="mpsutils" />
+              <option name="name" value="mpsutil" />
               <option name="path" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.mpsutil" />
             </Library>
           </value>
