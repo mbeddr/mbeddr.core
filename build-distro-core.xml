@@ -18,7 +18,6 @@
 	  <registerZip file="mbeddr.core-${version}.zip" desc="mbeddr.core" dependsOn="" docs="userguide_mbeddr.core.pdf" example="mbeddr.core-examples-${version}.zip"/>
 	  <zip destfile="${path}/mbeddr.core-${version}.zip">
           <zipfileset dir="code/languages/com.mbeddr.core/languages" prefix="${prefix.core}/languages"/>
-          <zipfileset dir="code/languages/com.mbeddr.core/solutions/com.mbeddr.core.modules.runtime" prefix="${prefix.core}/solutions/com.mbeddr.core.modules.runtime"/>
           <zipfileset dir="code/languages/com.mbeddr.core/devkits" prefix="${prefix.core}/devkits"/>
           <zipfileset dir="code/languages/com.mbeddr.mpsutil/languages" prefix="${prefix.util}/languages"/>
 	  </zip>
