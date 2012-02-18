@@ -3,6 +3,7 @@
   <persistence version="7" />
   <devkit namespace="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
   <import index="c4su" modelUID="r:45ac346c-c8cc-467b-a145-2ac1a841a898(test.ex.core.expressions)" version="-1" />
+  <import index="1xm8" modelUID="f:c_stub#c61d0eb8-290b-4dfe-a65f-0064e9c79858#/usr/include/(StdInclude//usr/include/@c_stub)" version="-1" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="10" implicit="yes" />
   <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="1" implicit="yes" />
@@ -78,6 +79,9 @@
     </node>
     <node role="imports" roleId="x27k.1317894735999304826" type="x27k.ModuleImport" typeId="x27k.1317894735999299713" id="3608436418819719413">
       <link role="module" roleId="x27k.1317894735999299714" targetNodeId="c4su.7646082028326282928" resolveInfo="ExpressionTests1" />
+    </node>
+    <node role="imports" roleId="x27k.1317894735999304826" type="x27k.ModuleImport" typeId="x27k.1317894735999299713" id="2798071964386689273">
+      <link role="module" roleId="x27k.1317894735999299714" targetNodeId="1xm8.7825285260293515640" resolveInfo="stdio" />
     </node>
   </root>
   <root id="55677248263986602">
