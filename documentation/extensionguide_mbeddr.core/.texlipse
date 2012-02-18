@@ -1,13 +1,13 @@
 #TeXlipse project settings
-#Sat Aug 20 08:38:08 CEST 2011
+#Sat Feb 18 11:58:26 CET 2012
 builderNum=2
 outputDir=
 makeIndSty=
 bibrefDir=
 outputFormat=pdf
 tempDir=
-mainTexFile=doc.tex
-outputFile=doc.pdf
+mainTexFile=extensionguide_mbeddr.core.tex
+outputFile=extensionguide_mbeddr.core.pdf
 langSpell=en
 markDer=true
 srcDir=
