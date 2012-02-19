@@ -40,6 +40,15 @@
       <property name="name" nameId="tpck.1169194664001" value="IConfigurationContainer" />
       <property name="virtualPackage" nameId="tpck.1193676396447" value="config" />
     </node>
+    <node type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="8628579007224192794">
+      <property name="name" nameId="tpck.1169194664001" value="INameFirstCharLowerCase" />
+    </node>
+    <node type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="8628579007224193610">
+      <property name="name" nameId="tpck.1169194664001" value="INameFirstCharUpperCase" />
+    </node>
+    <node type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="8628579007224193612">
+      <property name="name" nameId="tpck.1169194664001" value="INameAllUpperCase" />
+    </node>
   </roots>
   <root id="7024921229555594291">
     <node role="extends" roleId="tpce.1169127546356" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7024921229555594292">
@@ -105,6 +114,21 @@
       <property name="role" nameId="tpce.1071599776563" value="configurationItems" />
       <property name="sourceCardinality" nameId="tpce.1071599893252" value="0..n" />
       <link role="target" roleId="tpce.1071599976176" targetNodeId="4459718605982007336" resolveInfo="IConfigurationItem" />
+    </node>
+  </root>
+  <root id="8628579007224192794">
+    <node role="extends" roleId="tpce.1169127546356" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="8628579007224192795">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="7024921229555594291" resolveInfo="IIdentifierNamedConcept" />
+    </node>
+  </root>
+  <root id="8628579007224193610">
+    <node role="extends" roleId="tpce.1169127546356" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="8628579007224193611">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="7024921229555594291" resolveInfo="IIdentifierNamedConcept" />
+    </node>
+  </root>
+  <root id="8628579007224193612">
+    <node role="extends" roleId="tpce.1169127546356" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="8628579007224193613">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="7024921229555594291" resolveInfo="IIdentifierNamedConcept" />
     </node>
   </root>
 </model>
