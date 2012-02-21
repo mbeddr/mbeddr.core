@@ -144,36 +144,42 @@ class DOTManager {
     
     private boolean generateDOTFile(String dotFilePath, String tmpFilePath, short prg){
         String[] cmdArray = new String[(cfgMngr.FORCE_SILENT) ? 7 : 6];
-        cmdArray[0] = getProgram(prg);
-        cmdArray[1] = "-Tdot";
-        if (cfgMngr.FORCE_SILENT){
-            cmdArray[2] = "-q";
-            cmdArray[3] = checkOptions(ConfigManager.CMD_LINE_OPTS);
-            cmdArray[4] = "-o";
-            cmdArray[5] = tmpFilePath;
-            cmdArray[6] = dotFilePath;
+        String pathToProgram = getProgram(prg);
+        File programFile=new File(pathToProgram);
+        if(programFile.canExecute()){
+	        cmdArray[0] = getProgram(prg);
+	        cmdArray[1] = "-Tdot";
+	        if (cfgMngr.FORCE_SILENT){
+	            cmdArray[2] = "-q";
+	            cmdArray[3] = checkOptions(ConfigManager.CMD_LINE_OPTS);
+	            cmdArray[4] = "-o";
+	            cmdArray[5] = tmpFilePath;
+	            cmdArray[6] = dotFilePath;
+	        }
+	        else {
+	            cmdArray[2] = checkOptions(ConfigManager.CMD_LINE_OPTS);
+	            cmdArray[3] = "-o";
+	            cmdArray[4] = tmpFilePath;
+	            cmdArray[5] = dotFilePath;
+	        }
+	        Runtime rt=Runtime.getRuntime();
+	        grMngr.gp.setMessage("Computing Graph Layout (GraphViz)...");
+	        grMngr.gp.setProgress(40);
+	        try {
+	            try {
+	                File execDir = (new File(dotFilePath)).getParentFile();
+	                Process p = rt.exec(cmdArray, null, execDir);
+	                executeProcess(p);
+	            }
+	            catch (IOException ex){
+	                Process p = rt.exec(cmdArray);
+	                executeProcess(p);
+	            }
+	        }
+	        catch (Exception e) {System.err.println("Error: generating OutputFile.\n");return false;}
+        } else {
+        	return false;
         }
-        else {
-            cmdArray[2] = checkOptions(ConfigManager.CMD_LINE_OPTS);
-            cmdArray[3] = "-o";
-            cmdArray[4] = tmpFilePath;
-            cmdArray[5] = dotFilePath;
-        }
-        Runtime rt=Runtime.getRuntime();
-        grMngr.gp.setMessage("Computing Graph Layout (GraphViz)...");
-        grMngr.gp.setProgress(40);
-        try {
-            try {
-                File execDir = (new File(dotFilePath)).getParentFile();
-                Process p = rt.exec(cmdArray, null, execDir);
-                executeProcess(p);
-            }
-            catch (IOException ex){
-                Process p = rt.exec(cmdArray);
-                executeProcess(p);
-            }
-        }
-        catch (Exception e) {System.err.println("Error: generating OutputFile.\n");return false;}
         return true;
     }
 

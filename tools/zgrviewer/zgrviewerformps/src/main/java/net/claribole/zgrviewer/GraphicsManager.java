@@ -239,12 +239,13 @@ public class GraphicsManager implements ComponentListener, CameraListener, Java2
         Vector cameras = new Vector();
         cameras.add(mSpace.getCamera(0));
         cameras.add(mnSpace.getCamera(0));
-//        cameras.add(tp.getPaletteCamera());
+        cameras.add(tp.getPaletteCamera());
         return cameras;
     }
 
     void createFrameView(Vector cameras, String vt, JMenuBar jmb, ZVTMJPanel jPanel, JFrame mainFrame){
-    	
+  
+    	//Added a function to add external
 //    	mainView = vsm.addFrameView(cameras, ConfigManager.MAIN_TITLE, vt, ConfigManager.mainViewW, ConfigManager.mainViewH, true);
 ////        mainView = vsm.addFrameView(cameras, ConfigManager.MAIN_TITLE, vt,
 ////            ConfigManager.mainViewW, ConfigManager.mainViewH,
@@ -256,7 +257,6 @@ public class GraphicsManager implements ComponentListener, CameraListener, Java2
         
         
     	mainView = vsm.addExternalFrameView(cameras, ConfigManager.MAIN_TITLE, vt, ConfigManager.mainViewW, ConfigManager.mainViewH, true, jPanel, mainFrame);
-//		mainView = vsm.addExternalFrameView(cameras, ConfigManager.MAIN_TITLE, ConfigManager.mainViewW, ConfigManager.mainViewH,true,false,(short) 2,mainPanel,mainFrame);
 		mainView.setLocation(ConfigManager.mainViewX, ConfigManager.mainViewY);
 		mainView.getFrame().addComponentListener(this);
 		gp = new ZGRGlassPane(this);
