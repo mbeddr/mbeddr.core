@@ -54,11 +54,13 @@ public class Utils {
 // 	catch(Exception ex){System.err.println("An error occured while trying to change the look and feel\n"+ex);}
 	String key;
 	Object okey;
-	for (Enumeration e=UIManager.getLookAndFeelDefaults().keys();e.hasMoreElements();){
-	    okey = e.nextElement(); // depending on JVM (1.5.x and earlier, or 1.6.x or later) and OS,
-	    key = okey.toString();  // keys are respectively String or StringBuffer objects
-	    if (key.endsWith(".font") || key.endsWith("Font")){UIManager.put(okey, smallFont);}
-	}
+	
+	//The following code modifiy the small font in the whole application, for mps, no change is needed
+//	for (Enumeration e=UIManager.getLookAndFeelDefaults().keys();e.hasMoreElements();){
+//	    okey = e.nextElement(); // depending on JVM (1.5.x and earlier, or 1.6.x or later) and OS,
+//	    key = okey.toString();  // keys are respectively String or StringBuffer objects
+//	    if (key.endsWith(".font") || key.endsWith("Font")){UIManager.put(okey, smallFont);}
+//	}
 	UIManager.put("ProgressBar.foreground",pastelBlue);
 	UIManager.put("ProgressBar.background",java.awt.Color.lightGray);
 	UIManager.put("Label.foreground",java.awt.Color.black);

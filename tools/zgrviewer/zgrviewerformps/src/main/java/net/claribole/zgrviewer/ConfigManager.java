@@ -34,9 +34,10 @@ public class ConfigManager {
 
     public static final String zgrvURI = "http://zvtm.sourceforge.net/zgrviewer";
 
-	static final String MAC_OS_ID="Mac OS X";
+	static final String MAC_OS_NANME="mac";
+	static final String LINUX_OS_NAME="linux";
 	static final String OS_ENV_ID="os.name";
-	static final String MAC_OS_GRAPHVIZ_BASEDIR="/opt/local/bin/";
+	static final String XOS_GRAPHVIZ_BASEDIR="/usr/local/bin/";
     
     static final String MAIN_TITLE = "ZGRViewer";
 

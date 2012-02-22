@@ -110,44 +110,47 @@ class DOTManager {
 	if (svgF!=null){svgF.delete();}	
     }
 
-	protected String getProgram(short prg) {
+    protected String getProgram(short prg) {
 		// prg is the program to use DOTManager.*_PROGRAM
 		String program = "";
-		if (System.getProperty(ConfigManager.OS_ENV_ID) != null
-				&& System.getProperty(ConfigManager.OS_ENV_ID).equals(
-						ConfigManager.MAC_OS_ID)) {
-			program = ConfigManager.MAC_OS_GRAPHVIZ_BASEDIR;
+		
+		String osName = System.getProperty(ConfigManager.OS_ENV_ID).toLowerCase();
+		if (osName != null) {
+			if(osName.contains(ConfigManager.MAC_OS_NANME) || osName.contains(ConfigManager.LINUX_OS_NAME))
+			program = ConfigManager.XOS_GRAPHVIZ_BASEDIR;
 		}
+		program += getProgramExe(prg);
+		return program;
+	}
+    protected String getProgramExe(short prg) {
 		switch (prg) {
 		case DOT_PROGRAM: {
-			program += ConfigManager.m_DotPath.toString();
-			break;
+			return ConfigManager.m_DotPath.toString();
 		}
 		case NEATO_PROGRAM: {
-			program += ConfigManager.m_NeatoPath.toString();
-			break;
+			return ConfigManager.m_NeatoPath.toString();
+	
 		}
 		case TWOPI_PROGRAM: {
-			program += ConfigManager.m_TwopiPath.toString();
-			break;
+			return ConfigManager.m_TwopiPath.toString();
+	
 		}
 		case CIRCO_PROGRAM: {
-			program += ConfigManager.m_CircoPath.toString();
-			break;
+			return ConfigManager.m_CircoPath.toString();
+	
 		}
 		default: {
-			program += ConfigManager.m_DotPath.toString();
+			return ConfigManager.m_DotPath.toString();
 		}
 		}
-		return program;
 	}
     
     private boolean generateDOTFile(String dotFilePath, String tmpFilePath, short prg){
         String[] cmdArray = new String[(cfgMngr.FORCE_SILENT) ? 7 : 6];
         String pathToProgram = getProgram(prg);
         File programFile=new File(pathToProgram);
-        if(programFile.canExecute()){
-	        cmdArray[0] = getProgram(prg);
+        if(programFile.exists()){
+	        cmdArray[0] = pathToProgram;
 	        cmdArray[1] = "-Tdot";
 	        if (cfgMngr.FORCE_SILENT){
 	            cmdArray[2] = "-q";
@@ -176,8 +179,14 @@ class DOTManager {
 	                executeProcess(p);
 	            }
 	        }
-	        catch (Exception e) {System.err.println("Error: generating OutputFile.\n");return false;}
+	        catch (Exception e) {
+	        	System.err.println("Error: generating OutputFile.\n");
+	        	return false;
+	        }
         } else {
+        	System.err.println("Error: generating OutputFile.");
+        	System.err.println("No \"Dot\" program found.");
+        	System.err.println("Please install graphiz an make sure that the \"dot\" program is located in: " + ConfigManager.XOS_GRAPHVIZ_BASEDIR);
         	return false;
         }
         return true;
@@ -193,41 +202,50 @@ class DOTManager {
         */
     private boolean generateSVGFile(String dotFilePath, String svgFilePath, short prg){
         String[] cmdArray = new String[(cfgMngr.FORCE_SILENT) ? 7 : 6];
-        cmdArray[0] = getProgram(prg);
-        cmdArray[1] = "-Tsvg";
-        if (cfgMngr.FORCE_SILENT){
-            cmdArray[2] = "-q";
-            cmdArray[3] = checkOptions(ConfigManager.CMD_LINE_OPTS);
-            cmdArray[4] = "-o";
-            cmdArray[5] = svgFilePath;
-            cmdArray[6] = dotFilePath;
-        }
-        else {
-            cmdArray[2] = checkOptions(ConfigManager.CMD_LINE_OPTS);
-            cmdArray[3] = "-o";
-            cmdArray[4] = svgFilePath;
-            cmdArray[5] = dotFilePath;
-        }
-        System.out.println("Call Graphiz");
-        for(String s: cmdArray){
-        	System.out.println(s);	
-        }
         
-        Runtime rt=Runtime.getRuntime();
-        grMngr.gp.setMessage("Computing Graph Layout (GraphViz)...");
-        grMngr.gp.setProgress(40);
-        try {
+        String pathToProgram = getProgram(prg);
+        File programFile=new File(pathToProgram);
+        if(programFile.canExecute()){
+            cmdArray[0] = pathToProgram;
+            cmdArray[1] = "-Tsvg";
+            if (cfgMngr.FORCE_SILENT){
+                cmdArray[2] = "-q";
+                cmdArray[3] = checkOptions(ConfigManager.CMD_LINE_OPTS);
+                cmdArray[4] = "-o";
+                cmdArray[5] = svgFilePath;
+                cmdArray[6] = dotFilePath;
+            }
+            else {
+                cmdArray[2] = checkOptions(ConfigManager.CMD_LINE_OPTS);
+                cmdArray[3] = "-o";
+                cmdArray[4] = svgFilePath;
+                cmdArray[5] = dotFilePath;
+            }
+            Runtime rt=Runtime.getRuntime();
+            grMngr.gp.setMessage("Computing Graph Layout (GraphViz)...");
+            grMngr.gp.setProgress(40);
             try {
-                File execDir = (new File(dotFilePath)).getParentFile();
-                final Process p = rt.exec(cmdArray, null, execDir);
-                executeProcess(p);
+                try {
+                    File execDir = (new File(dotFilePath)).getParentFile();
+                    final Process p = rt.exec(cmdArray, null, execDir);
+                    executeProcess(p);
+                }
+                catch (IOException ex){
+                    Process p = rt.exec(cmdArray);
+                    p.waitFor();
+                }
             }
-            catch (IOException ex){
-                Process p = rt.exec(cmdArray);
-                p.waitFor();
-            }
+            catch (Exception e) {System.err.println("Error: generating OutputFile.\n");return false;}
+        } else {
+        	
+//        	throw new RuntimeException("Error: generating OutputFile.\n" +
+//        			"No \"Dot\" program found.\n" +
+//        			"Please install graphiz and make sure that the \"dot\" program is located in: " + ConfigManager.XOS_GRAPHVIZ_BASEDIR);
+        	System.err.println("Error: generating OutputFile.");
+        	System.err.println("No \"Dot\" program found.");
+        	System.err.println();
+        	return false;
         }
-        catch (Exception e) {System.err.println("Error: generating OutputFile.\n");return false;}
         return true;
     }
     

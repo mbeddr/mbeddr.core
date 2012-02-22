@@ -679,9 +679,15 @@ public class ZGRViewer implements ZGRApplication {
 
 	public void openDOTFile(String path) {
 		this.dotFile = path;
-		System.out.println("OpenDotFile: " + path);
+//		System.out.println("OpenDotFile: " + path);
 		// "/Users/matzat/Desktop/module_dependencies.gv"
-		gvLdr.open(DOTManager.DOT_PROGRAM, false, path);
+		if(path != null ){
+			gvLdr.open(DOTManager.DOT_PROGRAM, false, path);
+		} 
+	}
+	public void resetGraph() {
+		this.dotFile = null;
+		grMngr.reset();
 	}
 	
 	public void addGraphSelectionListener(GraphSelectionListener listener){
