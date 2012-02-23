@@ -34,10 +34,16 @@
                 <node role="ref" roleId="hba4.4481811096720976628" type="hba4.ConceptRef" typeId="hba4.4481811096720976618" id="4481811096720992880">
                   <link role="concept" roleId="hba4.4481811096720976619" targetNodeId="tpee.1068581242863" resolveInfo="LocalVariableDeclaration" />
                 </node>
-                <node role="children" roleId="hba4.4481811096720537463" type="hba4.SimplePropertyStep" typeId="hba4.4481811096720581223" id="4481811096720992958">
+                <node role="children" roleId="hba4.4481811096720537463" type="hba4.SimplePropertyStep" typeId="hba4.4481811096720581223" id="4481811096721032472">
                   <link role="property" roleId="hba4.4481811096720581232" targetNodeId="tpck.1169194664001" resolveInfo="name" />
-                  <node role="value" roleId="hba4.4481811096720588312" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="4481811096720992960">
+                  <node role="value" roleId="hba4.4481811096720588312" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="4481811096721032474">
                     <property name="value" nameId="tpee.1070475926801" value="i" />
+                  </node>
+                </node>
+                <node role="children" roleId="hba4.4481811096720537463" type="hba4.ChildStep" typeId="hba4.4481811096720537459" id="4481811096721025231">
+                  <link role="childLink" roleId="hba4.4481811096720607067" targetNodeId="tpee.5680397130376446158" />
+                  <node role="ref" roleId="hba4.4481811096720976628" type="hba4.ConceptRef" typeId="hba4.4481811096720976618" id="4481811096721025233">
+                    <link role="concept" roleId="hba4.4481811096720976619" targetNodeId="tpee.1070534370425" resolveInfo="IntegerType" />
                   </node>
                 </node>
                 <node role="children" roleId="hba4.4481811096720537463" type="hba4.ChildStep" typeId="hba4.4481811096720537459" id="4481811096720992962">
@@ -54,6 +60,18 @@
                       <link role="property" roleId="hba4.4481811096720581232" targetNodeId="tpee.1070475926801" resolveInfo="value" />
                       <node role="value" roleId="hba4.4481811096720588312" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="4481811096720992972">
                         <property name="value" nameId="tpee.1070475926801" value="10" />
+                      </node>
+                    </node>
+                  </node>
+                  <node role="children" roleId="hba4.4481811096720537463" type="hba4.ChildStep" typeId="hba4.4481811096720537459" id="4481811096721032476">
+                    <link role="childLink" roleId="hba4.4481811096720607067" targetNodeId="tpee.1081773367579" />
+                    <node role="ref" roleId="hba4.4481811096720976628" type="hba4.ConceptRef" typeId="hba4.4481811096720976618" id="4481811096721032478">
+                      <link role="concept" roleId="hba4.4481811096720976619" targetNodeId="tpee.1070475926800" resolveInfo="StringLiteral" />
+                    </node>
+                    <node role="children" roleId="hba4.4481811096720537463" type="hba4.SimplePropertyStep" typeId="hba4.4481811096720581223" id="4481811096721032480">
+                      <link role="property" roleId="hba4.4481811096720581232" targetNodeId="tpee.1070475926801" resolveInfo="value" />
+                      <node role="value" roleId="hba4.4481811096720588312" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="4481811096721032482">
+                        <property name="value" nameId="tpee.1070475926801" value="20" />
                       </node>
                     </node>
                   </node>
