@@ -18,11 +18,13 @@
     </node>
     <node type="tpf8.TemplateDeclaration" typeId="tpf8.1092059087312" id="374287044672170908">
       <property name="name" nameId="tpck.1169194664001" value="weave_DispatchExpression" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="dispatch" />
       <link role="applicableConcept" roleId="tpf8.1168285871518" targetNodeId="hba4.374287044672141846" resolveInfo="DispatchExpression" />
     </node>
   </roots>
   <root id="374287044672169668">
     <node role="reductionMappingRule" roleId="tpf8.1167328349397" type="tpf8.Reduction_MappingRule" typeId="tpf8.1167327847730" id="374287044672216172">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="dispatch" />
       <link role="applicableConcept" roleId="tpf8.1167169349424" targetNodeId="hba4.374287044672216149" resolveInfo="IsInstanceOfExpression" />
       <node role="ruleConsequence" roleId="tpf8.1169672767469" type="tpf8.InlineTemplateWithContext_RuleConsequence" typeId="tpf8.8900764248744213868" id="374287044672216174">
         <node role="contentNode" roleId="tpf8.8900764248744213871" type="tpee.InstanceMethodDeclaration" typeId="tpee.1068580123165" id="374287044672216176">
@@ -91,6 +93,7 @@
       </node>
     </node>
     <node role="reductionMappingRule" roleId="tpf8.1167328349397" type="tpf8.Reduction_MappingRule" typeId="tpf8.1167327847730" id="374287044672196695">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="dispatch" />
       <link role="applicableConcept" roleId="tpf8.1167169349424" targetNodeId="hba4.374287044672146034" resolveInfo="CastedCandidateExpr" />
       <node role="ruleConsequence" roleId="tpf8.1169672767469" type="tpf8.InlineTemplateWithContext_RuleConsequence" typeId="tpf8.8900764248744213868" id="374287044672196702">
         <node role="contentNode" roleId="tpf8.8900764248744213871" type="tpee.ClassConcept" typeId="tpee.1068390468198" id="374287044672196704">
@@ -154,6 +157,7 @@
       </node>
     </node>
     <node role="reductionMappingRule" roleId="tpf8.1167328349397" type="tpf8.Reduction_MappingRule" typeId="tpf8.1167327847730" id="374287044672196109">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="dispatch" />
       <link role="applicableConcept" roleId="tpf8.1167169349424" targetNodeId="hba4.374287044672161344" resolveInfo="CallRecursivelyExpression" />
       <node role="ruleConsequence" roleId="tpf8.1169672767469" type="tpf8.InlineTemplateWithContext_RuleConsequence" typeId="tpf8.8900764248744213868" id="374287044672196111">
         <node role="contentNode" roleId="tpf8.8900764248744213871" type="tpee.ClassConcept" typeId="tpee.1068390468198" id="374287044672196119">
@@ -227,6 +231,7 @@
       </node>
     </node>
     <node role="reductionMappingRule" roleId="tpf8.1167328349397" type="tpf8.Reduction_MappingRule" typeId="tpf8.1167327847730" id="374287044672191052">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="dispatch" />
       <link role="applicableConcept" roleId="tpf8.1167169349424" targetNodeId="hba4.374287044672141846" resolveInfo="DispatchExpression" />
       <node role="ruleConsequence" roleId="tpf8.1169672767469" type="tpf8.InlineTemplateWithContext_RuleConsequence" typeId="tpf8.8900764248744213868" id="374287044672191054">
         <node role="contentNode" roleId="tpf8.8900764248744213871" type="tpee.ClassConcept" typeId="tpee.1068390468198" id="374287044672191056">
@@ -291,6 +296,7 @@
       </node>
     </node>
     <node role="weavingMappingRule" roleId="tpf8.1167172143858" type="tpf8.Weaving_MappingRule" typeId="tpf8.1167171569011" id="374287044672170904">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="dispatch" />
       <link role="applicableConcept" roleId="tpf8.1167169349424" targetNodeId="hba4.374287044672141846" resolveInfo="DispatchExpression" />
       <node role="contextNodeQuery" roleId="tpf8.1184616230853" type="tpf8.Weaving_MappingRule_ContextNodeQuery" typeId="tpf8.1184616041890" id="374287044672170906">
         <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="374287044672170907">
