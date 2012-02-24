@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=pdflatex 2011.7.3)  24 FEB 2012 14:36
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=pdflatex 2011.7.3)  24 FEB 2012 17:20
 entering extended mode
  restricted \write18 enabled.
  Source specials enabled.
@@ -450,11 +450,7 @@ Package: verbatim 2003/08/22 v1.5q LaTeX2e package for verbatim enhancements
 \verbatim@line=\toks29
 \verbatim@in@stream=\read1
 )
-(./userguide_mbeddr.core.aux
-
-LaTeX Warning: Label `addBuildConfiguraitonModel' multiply defined.
-
-)
+(./userguide_mbeddr.core.aux)
 \openout1 = `userguide_mbeddr.core.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 63.
@@ -469,7 +465,8 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 63.
 LaTeX Font Info:    ... okay on input line 63.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 63.
 LaTeX Font Info:    ... okay on input line 63.
- (/usr/local/texlive/2011/texmf-dist/tex/context/base/supp-pdf.mkii
+
+(/usr/local/texlive/2011/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count117
 \scratchdimen=\dimen135
@@ -644,34 +641,27 @@ Package pdftex.def Info: figures/AddBuildConfiguration.png used on input line 2
 13.
 (pdftex.def)             Requested size: 341.43306pt x 23.14127pt.
  [13 <./figures/AddBuildConfiguration.png>] [14] [15]) (./3-differences_to_regu
-lar_C.ltx [16] [17] [18]
+lar_C.ltx
+Overfull \hbox (92.76884pt too wide) in paragraph at lines 36--42
+\T1/cmr/m/it/10 ported \T1/cmr/m/n/10 flag with the in-ten-tion \T1/cmr/m/it/10
+ Tog-gle Ex-port\T1/cmr/m/n/10 . The sec-ond mod-ule (\T1/cmtt/m/n/10 ModuleUsi
+ngTheExportedFunction\T1/cmr/m/n/10 )
+ []
 
-! Package inputenc Error: Unicode char \u8:� not set up for use with LaTeX.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.179 ...be specified in the \ic{used l�braries}
-                                                  
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-<figures/modelimport.png, id=90, 487.8225pt x 352.9185pt>
+[16] [17] [18] <figures/modelimport.png, id=90, 487.8225pt x 352.9185pt>
 File: figures/modelimport.png Graphic file (type png)
 
 <use figures/modelimport.png>
-Package pdftex.def Info: figures/modelimport.png used on input line 196.
+Package pdftex.def Info: figures/modelimport.png used on input line 204.
 (pdftex.def)             Requested size: 341.43306pt x 247.01433pt.
 
-Overfull \hbox (43.28528pt too wide) in paragraph at lines 210--214
+Overfull \hbox (43.28528pt too wide) in paragraph at lines 219--223
 [][]\T1/cmr/m/n/10 New con-fig-u-ra-tion items can be con-tributed by im-ple-me
 nt-ing the \T1/cmtt/m/n/10 IConfigurationItem
  []
 
 [19] [20 <./figures/modelimport.png>]
-Overfull \hbox (6.04388pt too wide) in paragraph at lines 274--277
+Overfull \hbox (6.04388pt too wide) in paragraph at lines 286--289
 [][]\T1/cmr/m/n/10 If you change the as-ser-tion to \T1/cmtt/m/n/10 assert(1) -
 1 + 1 == 0;\T1/cmr/m/n/10 , re-build with \T1/cmtt/m/n/10 Ctrl-F9
  []
@@ -679,36 +669,36 @@ Overfull \hbox (6.04388pt too wide) in paragraph at lines 274--277
 [21]
 File: figures/AddDefaultTSC.png Graphic file (type png)
  <use figures/AddDefaultTSC.png>
-Package pdftex.def Info: figures/AddDefaultTSC.png used on input line 306.
+Package pdftex.def Info: figures/AddDefaultTSC.png used on input line 320.
 (pdftex.def)             Requested size: 199.16928pt x 136.43759pt.
  [22] [23] [24]
 <figures/AddFunctionPointer.png, id=112, 365.365pt x 80.3pt>
 File: figures/AddFunctionPointer.png Graphic file (type png)
 
 <use figures/AddFunctionPointer.png>
-Package pdftex.def Info: figures/AddFunctionPointer.png used on input line 481.
+Package pdftex.def Info: figures/AddFunctionPointer.png used on input line 495.
 
 (pdftex.def)             Requested size: 199.16928pt x 43.77303pt.
 
-Overfull \hbox (2.29114pt too wide) in paragraph at lines 489--496
+Overfull \hbox (2.29114pt too wide) in paragraph at lines 503--510
 \T1/cmr/m/n/10 lar C, you have use the ad-dress op-er-a-tor to ob-tain a func-t
 ion pointer (\T1/cmtt/m/n/10 &function\T1/cmr/m/n/10 ).
  []
 
 [25 <./figures/AddFunctionPointer.png>]
-Overfull \hbox (4.56836pt too wide) in paragraph at lines 527--533
+Overfull \hbox (4.56836pt too wide) in paragraph at lines 541--547
 \T1/cmr/m/n/10 ex-am-ple. The type-def \T1/cmtt/m/n/10 typedef (int3_t, int32_t
 )=>(int32_t) as ftype; \T1/cmr/m/n/10 de-
  []
 
 
-Overfull \hbox (8.42853pt too wide) in paragraph at lines 527--533
+Overfull \hbox (8.42853pt too wide) in paragraph at lines 541--547
 \T1/cmr/m/n/10 fines a new func-tion type. The type \T1/cmtt/m/n/10 ftype \T1/c
 mr/m/n/10 is the first pa-ram-e-ter in the \T1/cmtt/m/n/10 doOperation
  []
 
 
-Overfull \hbox (32.03387pt too wide) in paragraph at lines 556--560
+Overfull \hbox (32.03387pt too wide) in paragraph at lines 570--574
 \T1/cmr/m/n/10 func-tion. The syn-tax for a lambda is \T1/cmtt/m/n/10 [arg1, ar
 g2, ...|an-expression-using-args]\T1/cmr/m/n/10 .
  []
@@ -725,68 +715,61 @@ Overfull \hbox (35.81342pt too wide) in paragraph at lines 68--68
 code\applications\HelloWorld\HelloWorld.mpr[] 
  []
 
-[31]
+[31] [32]
 Overfull \hbox (2.60077pt too wide) in paragraph at lines 135--140
 \T1/cmr/m/n/10 plies as for lan-guages. If these are other so-lu-tions to which
  the MPS-integrated
  []
 
-[32] <figures/green.jpg, id=139, 496.85625pt x 278.03876pt>
+<figures/green.jpg, id=139, 496.85625pt x 278.03876pt>
 File: figures/green.jpg Graphic file (type jpg)
-
-<use figures/green.jpg>
+ <use figures/green.jpg>
 Package pdftex.def Info: figures/green.jpg used on input line 162.
 (pdftex.def)             Requested size: 256.0748pt x 143.29973pt.
 
+[33 <./figures/green.jpg>]
 Overfull \hbox (3.73889pt too wide) in paragraph at lines 180--185
 [][]\T1/cmr/m/n/10 In ad-di-tion you can use the \T1/cmtt/m/n/10 Changes \T1/cm
 r/m/n/10 view (from the \T1/cmtt/m/n/10 Window -> Tool Windows
  []
 
-<figures/changesview.jpg, id=140, 772.8875pt x 216.81pt>
+<figures/changesview.jpg, id=143, 772.8875pt x 216.81pt>
 File: figures/changesview.jpg Graphic file (type jpg)
 
 <use figures/changesview.jpg>
 Package pdftex.def Info: figures/changesview.jpg used on input line 188.
 (pdftex.def)             Requested size: 341.43306pt x 95.77713pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[33 <./figures/green.jpg>] [34 <./figures/changesview.jpg>] [35])
-(./5-debugging.ltx)) [36] (./userguide_mbeddr.core.aux)
-
-LaTeX Warning: There were multiply-defined labels.
-
- ) 
+ [34 <./figures/changesview.jpg>] [35])
+(./5-debugging.ltx)) [36] (./userguide_mbeddr.core.aux) ) 
 Here is how much of TeX's memory you used:
  3097 strings out of 493633
- 41070 string characters out of 3143378
- 101292 words of memory out of 3000000
+ 41077 string characters out of 3143378
+ 101262 words of memory out of 3000000
  6279 multiletter control sequences out of 15000+200000
  19150 words of font info for 50 fonts, out of 3000000 for 9000
  831 hyphenation exceptions out of 8191
  38i,9n,24p,260b,289s stack positions out of 5000i,500n,10000p,200000b,50000s
-{/usr/local/texlive/2011/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}
-</usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><
-/usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></us
-r/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/l
-ocal/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/lo
-cal/texlive/2011/texmf-dist/fonts/type1/public/cm-super/sfbi1000.pfb></usr/loca
-l/texlive/2011/texmf-dist/fonts/type1/public/cm-super/sfbx0900.pfb></usr/local/
-texlive/2011/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/local/te
-xlive/2011/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texl
-ive/2011/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texliv
-e/2011/texmf-dist/fonts/type1/public/cm-super/sfrm0600.pfb></usr/local/texlive/
-2011/texmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb></usr/local/texlive/20
-11/texmf-dist/fonts/type1/public/cm-super/sfrm0900.pfb></usr/local/texlive/2011
-/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2011/t
-exmf-dist/fonts/type1/public/cm-super/sfti0900.pfb></usr/local/texlive/2011/tex
-mf-dist/fonts/type1/public/cm-super/sfti1000.pfb></usr/local/texlive/2011/texmf
--dist/fonts/type1/public/cm-super/sftt0800.pfb></usr/local/texlive/2011/texmf-d
-ist/fonts/type1/public/cm-super/sftt0900.pfb></usr/local/texlive/2011/texmf-dis
-t/fonts/type1/public/cm-super/sftt1000.pfb>
-Output written on userguide_mbeddr.core.pdf (36 pages, 920765 bytes).
+{/usr/local/texlive/20
+11/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/local/texlive/2011
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2011/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2011/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2011/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2011/texmf-d
+ist/fonts/type1/public/cm-super/sfbi1000.pfb></usr/local/texlive/2011/texmf-dis
+t/fonts/type1/public/cm-super/sfbx0900.pfb></usr/local/texlive/2011/texmf-dist/
+fonts/type1/public/cm-super/sfbx1000.pfb></usr/local/texlive/2011/texmf-dist/fo
+nts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2011/texmf-dist/font
+s/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2011/texmf-dist/fonts/
+type1/public/cm-super/sfrm0600.pfb></usr/local/texlive/2011/texmf-dist/fonts/ty
+pe1/public/cm-super/sfrm0700.pfb></usr/local/texlive/2011/texmf-dist/fonts/type
+1/public/cm-super/sfrm0900.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/
+public/cm-super/sfrm1000.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/pu
+blic/cm-super/sfti0900.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/publ
+ic/cm-super/sfti1000.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/public
+/cm-super/sftt0800.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/public/c
+m-super/sftt0900.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/public/cm-
+super/sftt1000.pfb>
+Output written on userguide_mbeddr.core.pdf (36 pages, 921193 bytes).
 PDF statistics:
  212 PDF objects out of 1000 (max. 8388607)
  136 compressed objects within 2 object streams
