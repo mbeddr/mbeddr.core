@@ -54,17 +54,15 @@
   </generators>
   <sourcePath />
   <dependencies>
-    <dependency reexport="false">258bd2f6-0d02-411d-86b2-5a5ea083e6d2(jetbrains.mps.lang.editor.table.runtime)</dependency>
     <dependency reexport="false">06d68b77-b699-4918-83b8-857e63787800(com.mbeddr.core.unittest)</dependency>
-    <dependency reexport="false">797d0abe-30a5-4698-a9cf-31703733bdc9(com.mbeddr.ext.yices)</dependency>
+    <dependency reexport="false">258bd2f6-0d02-411d-86b2-5a5ea083e6d2(jetbrains.mps.lang.editor.table.runtime)</dependency>
     <dependency reexport="false">13039307-a08f-4bb3-810e-10cbbf8b757b(com.mbeddr.ext.yices.rt)</dependency>
   </dependencies>
   <usedLanguages>
+    <usedLanguage>63e0e566-5131-447e-90e3-12ea330e1a00(com.mbeddr.mpsutil.blutil)</usedLanguage>
     <usedLanguage>dcf3d84b-ead9-4694-abd0-78416ced3097(com.mbeddr.mpsutil.langdiag)</usedLanguage>
     <usedLanguage>355d5342-5908-4dc6-844e-5ef34bd14af7(com.mbeddr.mpsutil.outline)</usedLanguage>
     <usedLanguage>0272d3b4-4cc8-481e-9e2f-07793fbfcb41(jetbrains.mps.lang.editor.table)</usedLanguage>
-    <usedLanguage>63e0e566-5131-447e-90e3-12ea330e1a00(com.mbeddr.mpsutil.blutil)</usedLanguage>
-    <usedLanguage>63e0e566-5131-447e-90e3-12ea330e1a00(com.mbeddr.mpsutil.blutil)</usedLanguage>
     <usedLanguage>d7706f63-9be2-479c-a3da-ae92af1e64d5(jetbrains.mps.lang.generator.generationContext)</usedLanguage>
   </usedLanguages>
   <usedDevKits>
