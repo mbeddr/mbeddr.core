@@ -48,6 +48,7 @@
     </node>
     <node type="tpc2.CellKeyMapDeclaration" typeId="tpc2.1081293058843" id="4481811096720961692">
       <property name="name" nameId="tpck.1169194664001" value="addChild" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="builder" />
       <link role="applicableConcept" roleId="tpc2.1139445935125" targetNodeId="hba4.4481811096720976618" resolveInfo="ConceptRef" />
     </node>
     <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="4481811096720976622">
@@ -389,9 +390,6 @@
         <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.SelectableStyleSheetItem" typeId="tpc2.1186414928363" id="4481811096720961675">
           <property name="flag" nameId="tpc2.1186414551515" value="false" />
         </node>
-        <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="4481811096720537484">
-          <property name="text" nameId="tpc2.1073389577007" value="{" />
-        </node>
         <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_RefNodeList" typeId="tpc2.1073390211982" id="4481811096720537472">
           <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="hba4.4481811096720537463" />
           <node role="cellLayout" roleId="tpc2.1140524464360" type="tpc2.CellLayout_Indent" typeId="tpc2.1237303669825" id="4481811096720537473" />
@@ -417,9 +415,6 @@
               </node>
             </node>
           </node>
-        </node>
-        <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="4481811096720537486">
-          <property name="text" nameId="tpc2.1073389577007" value="}" />
         </node>
         <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Indent" typeId="tpc2.1237303669825" id="4481811096720961677" />
         <node role="renderingCondition" roleId="tpc2.1142887637401" type="tpc2.QueryFunction_NodeCondition" typeId="tpc2.1142886221719" id="4481811096720961678">
@@ -464,7 +459,8 @@
   <root id="4481811096720961692">
     <node role="item" roleId="tpc2.1136930944870" type="tpc2.CellKeyMapItem" typeId="tpc2.1136916919141" id="4481811096720961693">
       <node role="keystroke" roleId="tpc2.1136916998332" type="tpc2.CellKeyMapKeystroke" typeId="tpc2.1136916976737" id="4481811096720961694">
-        <property name="keycode" nameId="tpc2.1136923970224" value="{" />
+        <property name="keycode" nameId="tpc2.1136923970224" value="VK_ENTER" />
+        <property name="modifiers" nameId="tpc2.1136923970223" value="ctrl" />
       </node>
       <node role="executeFunction" roleId="tpc2.1136920925604" type="tpc2.CellKeyMap_ExecuteFunction" typeId="tpc2.1136917288805" id="4481811096720961695">
         <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="4481811096720961696">
