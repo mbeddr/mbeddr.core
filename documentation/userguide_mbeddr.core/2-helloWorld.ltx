@@ -1,8 +1,8 @@
 \section{Hello World Example}
 
 For this tutorial we assume that you know how to use the C programming language.
-We also assume that you have have installed MPS, gcc/make and the mbeddr.core
-distribution. This has been disussed in the previous section. 
+We also assume that you have have installed MPS, gcc/make, graphviz and the
+mbeddr.core distribution. This has been disussed in the previous section. 
 
 \subsection{Create new project}
 
@@ -15,9 +15,10 @@ solution, but no language.
 \end{center}
 
 We now have to make the project aware of the \emph{mbeddr.core} languages
-installed via the distribution. Go to the $File \rightarrow Settings$ and select the $Global
-Libraries$ in the IDE settings. Create a library called \ic{mbeddr.core} that
-points to the root directory of the unzipped mbeddr installation. 
+installed via the distribution. Go to the $File \rightarrow Settings$ and select
+the $Global Libraries$ in the IDE settings. Create a library called
+\ic{mbeddr.core} that points to the root directory of the unzipped mbeddr
+installation.
 
 \textbf{Note: This library must point to the root directory of the checkout so
 that all languages are below it, including \emph{core} and \emph{mpsutil}.}
@@ -26,8 +27,8 @@ that all languages are below it, including \emph{core} and \emph{mpsutil}.}
   \includegraphics[width=10cm]{figures/SettingsGlobalLibraries.png}
 \end{center}
 
-Notice that these are global settings and have to be performed only once before
-your first application project.
+Notice that this is a settings and have to be performed only once
+before your first application project.
 
 
 \subsection{Project Structure and Settings}
@@ -73,7 +74,7 @@ writing C code.
 
 The top level concept in mbeddr C programs are \emph{modules}. Modules act as
 namespaces and as the unit of encapsulation.  So the first step is to create an
-empty Module. The mbeddr.core C language does not use the artificial separation
+empty module. The mbeddr.core C language does not use the artificial separation
 between \ic{.h} and \ic{.c} files you know it from classical C. Instead
 mbeddr C uses the aforementioned module concept. During code generation we then
 create the corresponding \ic{.h} and \ic{.c} files.
@@ -93,10 +94,10 @@ the keyboard as well. Take a look at $File \rightarrow Settings
 \rightharpoondown Keymap$ to find out or change keyboard mappings.}
 
 
-
 As a result, you will get an empty implementation module. It currently has
-no name (name is red and underlined) and only a placeholder \ic{<<...>>} where
-top level C constructs such as functions, structs, or enums can be added later.
+no name (the name is red and underlined) and only a placeholder \ic{<<...>>}
+where top level C constructs such as functions, \ic{struct}s, or \ic{enum}s can
+be added later.
 
 
 \begin{center} 
@@ -105,7 +106,8 @@ top level C constructs such as functions, structs, or enums can be added later.
 
 
 
-Next, specify \ic{HelloWorld} as the name for the implementation module.
+\noindent Next, specify \ic{HelloWorld} as the name for the implementation
+module.
 
 \begin{code}
 module HelloWorld from HelloWorld.main imports nothing {                                
@@ -115,10 +117,11 @@ module HelloWorld from HelloWorld.main imports nothing {
 
 The module name is still underlined in red because of a missing type size
 configuration. The \ic{TypeSizeConfiguration} specifies the sizes of the
-primitive types (such as int or long) for the particular target platform. mbeddr
-C provides a \emph{default} type size configuration, which can be added to a
-module via an intention \intention{Create default type size configuration} on
-the module in the editor. To invoke intentions please use \keystroke{Alt-Enter}.
+primitive types (such as \ic{int} or \ic{long}) for the particular target
+platform. mbeddr C provides a \emph{default} type size configuration, which can
+be added to a module via an intention \intention{Create default type size
+configuration} on the module in the editor. To invoke intentions please use
+\keystroke{Alt-Enter}.
 You may have to press \keystroke{F5} to make the red underline go away. For more
 details on type size configurations see chapter \ref{PrimitiveNumericDatatypes}.
 \begin{center} 
@@ -131,9 +134,9 @@ details on type size configurations see chapter \ref{PrimitiveNumericDatatypes}.
 
 \subsection{Writing the Program}			
 
-Within the module you can now add contents such as functions, structs or global
-variables. Let's enter a main function so we can run the program later. You can
-enter a main function in one of the the following ways:
+Within the module you can now add contents such as functions, \ic{struct}s or global
+variables. Let's enter a \ic{main} function so we can run the program later. You can
+enter a \ic{main} function in one of the the following ways:
 \begin{itemize}
 	\item create a new function instance by typing \keystroke{function} at the
 	placeholder in the module, and then specify the name and arguments. 
@@ -170,7 +173,7 @@ our main function we create a new \ic{message list} (just type
 
 Within the message list, hit \keystroke{return} or type \keystroke{message} to
 create a new message. Change the type from \ic{ERROR} to \ic{INFO} with the help
-of auto completion. Specify the name \ic{hello}. Add a message property by 
+of code completion. Specify the name \ic{hello}. Add a message property by 
 hitting \keystroke{return} between the parentheses. The type should be a
 \ic{string} and the name should be \ic{who}. Specify \ic{Hello} as the value
 of the \ic{message text} property. The resulting message should look like this:

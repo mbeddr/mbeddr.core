@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.11 (MiKTeX 2.9) (preloaded format=pdflatex 2011.11.30)  18 FEB 2012 11:50
+This is pdfTeX, Version 3.1415926-1.40.11 (MiKTeX 2.9) (preloaded format=pdflatex 2011.11.30)  24 FEB 2012 09:21
 entering extended mode
 **userguide_mbeddr.core.tex
 
@@ -497,7 +497,7 @@ File: umsb.fd 2009/06/22 v3.00 AMS symbols B
 (L:\lwes-assembla\mbeddr.core\documentation\userguide_mbeddr.core\abstract.ltx)
 (L:\lwes-assembla\mbeddr.core\documentation\userguide_mbeddr.core\body.ltx
 (L:\lwes-assembla\mbeddr.core\documentation\userguide_mbeddr.core\1-intro.ltx
-Overfull \hbox (13.51823pt too wide) in paragraph at lines 30--33
+Overfull \hbox (13.51823pt too wide) in paragraph at lines 31--34
 | \T1/cmtt/m/n/10 http://www.oracle.com/technetwork/java/javase/downloads/index
 .html 
  []
@@ -505,70 +505,71 @@ Overfull \hbox (13.51823pt too wide) in paragraph at lines 30--33
 [2] [3] [4] [5] <figures/documentation.jpg, id=29, 398.48875pt x 118.4425pt>
 File: figures/documentation.jpg Graphic file (type jpg)
 
-<use figures/documentation.jpg>
-<figures/commenting.jpg, id=30, 411.5375pt x 128.48pt>
+<use figures/documentation.jpg> [6 <L:/lwes-assembla/mbeddr.core/documentation/
+userguide_mbeddr.core/figures/documentation.jpg>]
+<figures/commenting.jpg, id=33, 411.5375pt x 128.48pt>
 File: figures/commenting.jpg Graphic file (type jpg)
 
-<use figures/commenting.jpg> [6 <L:/lwes-assembla/mbeddr.core/documentation/use
-rguide_mbeddr.core/figures/documentation.jpg> <L:/lwes-assembla/mbeddr.core/doc
-umentation/userguide_mbeddr.core/figures/commenting.jpg>])
+<use figures/commenting.jpg>)
 (L:\lwes-assembla\mbeddr.core\documentation\userguide_mbeddr.core\2-helloWorld.
-ltx <figures/NewProject.png, id=35, 843.15pt x 476.78125pt>
+ltx [7 <L:/lwes-assembla/mbeddr.core/documentation/userguide_mbeddr.core/figure
+s/commenting.jpg>] <figures/NewProject.png, id=39, 843.15pt x 476.78125pt>
 File: figures/NewProject.png Graphic file (type png)
 
 <use figures/NewProject.png>
-Overfull \hbox (19.49278pt too wide) in paragraph at lines 17--21
+Overfull \hbox (19.49278pt too wide) in paragraph at lines 17--22
 \T1/cmr/m/n/10 stalled via the dis-tri-bu-tion. Go to the $\OML/cmm/m/it/10 Fil
 e \OMS/cmsy/m/n/10 ! \OML/cmm/m/it/10 Settings$ \T1/cmr/m/n/10 and se-lect the 
 $\OML/cmm/m/it/10 GlobalLibraries$
  []
 
-[7 <L:/lwes-assembla/mbeddr.core/documentation/userguide_mbeddr.core/figures/Ne
-wProject.png>]
-<figures/SettingsGlobalLibraries.png, id=42, 486.81876pt x 400.49625pt>
+<figures/SettingsGlobalLibraries.png, id=41, 486.81876pt x 400.49625pt>
 File: figures/SettingsGlobalLibraries.png Graphic file (type png)
 
 <use figures/SettingsGlobalLibraries.png>
-<figures/workspacecontents.png, id=43, 311.9655pt x 272.217pt>
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [8 <L:/lwes-assembla/mbeddr.core/documentation/userguide_mbeddr.core/figures/N
+ewProject.png>] <figures/workspacecontents.png, id=48, 311.9655pt x 272.217pt>
 File: figures/workspacecontents.png Graphic file (type png)
 
 <use figures/workspacecontents.png>
-Underfull \vbox (badness 2744) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [8 <L:/lwes-assembla/mbeddr.core/documentation/userguide_mbeddr.core/figures/S
+ [9 <L:/lwes-assembla/mbeddr.core/documentation/userguide_mbeddr.core/figures/S
 ettingsGlobalLibraries.png (PNG copy)>]
-<figures/AddDependencies.png, id=52, 647.41875pt x 350.30875pt>
+<figures/AddDependencies.png, id=55, 647.41875pt x 350.30875pt>
 File: figures/AddDependencies.png Graphic file (type png)
 
 <use figures/AddDependencies.png>
 Underfull \vbox (badness 1371) has occurred while \output is active []
 
- [9 <L:/lwes-assembla/mbeddr.core/documentation/userguide_mbeddr.core/figures/w
-orkspacecontents.png> <L:/lwes-assembla/mbeddr.core/documentation/userguide_mbe
-ddr.core/figures/AddDependencies.png (PNG copy)>]
-<figures/ContextMenuNewModule.png, id=57, 710.655pt x 151.56625pt>
+ [10 <L:/lwes-assembla/mbeddr.core/documentation/userguide_mbeddr.core/figures/
+workspacecontents.png> <L:/lwes-assembla/mbeddr.core/documentation/userguide_mb
+eddr.core/figures/AddDependencies.png (PNG copy)>]
+<figures/ContextMenuNewModule.png, id=60, 710.655pt x 151.56625pt>
 File: figures/ContextMenuNewModule.png Graphic file (type png)
 
 <use figures/ContextMenuNewModule.png>
-<figures/EmptyModule.png, id=58, 465.74pt x 123.46124pt>
+<figures/EmptyModule.png, id=61, 465.74pt x 123.46124pt>
 File: figures/EmptyModule.png Graphic file (type png)
 
-<use figures/EmptyModule.png> [10 <L:/lwes-assembla/mbeddr.core/documentation/u
+<use figures/EmptyModule.png> [11 <L:/lwes-assembla/mbeddr.core/documentation/u
 serguide_mbeddr.core/figures/ContextMenuNewModule.png (PNG copy)> <L:/lwes-asse
 mbla/mbeddr.core/documentation/userguide_mbeddr.core/figures/EmptyModule.png (P
-NG copy)>] <figures/AddDefaultTSC.png, id=62, 382.42876pt x 261.97874pt>
+NG copy)>] <figures/AddDefaultTSC.png, id=65, 382.42876pt x 261.97874pt>
 File: figures/AddDefaultTSC.png Graphic file (type png)
 
-<use figures/AddDefaultTSC.png> [11 <L:/lwes-assembla/mbeddr.core/documentation
+<use figures/AddDefaultTSC.png> [12 <L:/lwes-assembla/mbeddr.core/documentation
 /userguide_mbeddr.core/figures/AddDefaultTSC.png (PNG copy)>]
-<figures/AddBuildConfiguration.png, id=66, 962.59625pt x 65.24374pt>
+<figures/AddBuildConfiguration.png, id=69, 962.59625pt x 65.24374pt>
 File: figures/AddBuildConfiguration.png Graphic file (type png)
 
-<use figures/AddBuildConfiguration.png> [12 <L:/lwes-assembla/mbeddr.core/docum
+<use figures/AddBuildConfiguration.png> [13 <L:/lwes-assembla/mbeddr.core/docum
 entation/userguide_mbeddr.core/figures/AddBuildConfiguration.png (PNG copy)>]
-[13])
+[14])
 (L:\lwes-assembla\mbeddr.core\documentation\userguide_mbeddr.core\3-differences
-_to_regular_C.ltx [14] [15] [16]
+_to_regular_C.ltx [15] [16] [17]
 
 ! Package inputenc Error: Unicode char \u8:� not set up for use with LaTeX.
 
@@ -582,7 +583,7 @@ Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-[17] <figures/modelimport.png, id=86, 487.8225pt x 352.9185pt>
+[18] <figures/modelimport.png, id=89, 487.8225pt x 352.9185pt>
 File: figures/modelimport.png Graphic file (type png)
 
 <use figures/modelimport.png>
@@ -591,17 +592,17 @@ Overfull \hbox (43.28528pt too wide) in paragraph at lines 210--214
 nt-ing the \T1/cmtt/m/n/10 IConfigurationItem
  []
 
-[18 <L:/lwes-assembla/mbeddr.core/documentation/userguide_mbeddr.core/figures/m
+[19 <L:/lwes-assembla/mbeddr.core/documentation/userguide_mbeddr.core/figures/m
 odelimport.png>]
 Overfull \hbox (6.04388pt too wide) in paragraph at lines 274--277
 [][]\T1/cmr/m/n/10 If you change the as-ser-tion to \T1/cmtt/m/n/10 assert(1) -
 1 + 1 == 0;\T1/cmr/m/n/10 , re-build with \T1/cmtt/m/n/10 Ctrl-F9
  []
 
-[19]
+[20]
 File: figures/AddDefaultTSC.png Graphic file (type png)
- <use figures/AddDefaultTSC.png> [20] [21] [22]
-<figures/AddFunctionPointer.png, id=105, 365.365pt x 80.3pt>
+ <use figures/AddDefaultTSC.png> [21] [22] [23]
+<figures/AddFunctionPointer.png, id=108, 365.365pt x 80.3pt>
 File: figures/AddFunctionPointer.png Graphic file (type png)
 
 <use figures/AddFunctionPointer.png>
@@ -610,7 +611,7 @@ Overfull \hbox (2.29114pt too wide) in paragraph at lines 489--496
 ion pointer (\T1/cmtt/m/n/10 &function\T1/cmr/m/n/10 ).
  []
 
-[23 <L:/lwes-assembla/mbeddr.core/documentation/userguide_mbeddr.core/figures/A
+[24 <L:/lwes-assembla/mbeddr.core/documentation/userguide_mbeddr.core/figures/A
 ddFunctionPointer.png (PNG copy)>]
 Overfull \hbox (4.56836pt too wide) in paragraph at lines 527--533
 \T1/cmr/m/n/10 ex-am-ple. The type-def \T1/cmtt/m/n/10 typedef (int3_t, int32_t
@@ -629,9 +630,9 @@ Overfull \hbox (32.03387pt too wide) in paragraph at lines 556--560
 g2, ...|an-expression-using-args]\T1/cmr/m/n/10 .
  []
 
-[24] [25] [26] [27])
+[25] [26] [27] [28])
 (L:\lwes-assembla\mbeddr.core\documentation\userguide_mbeddr.core\4-advanced.lt
-x [28]
+x [29]
 Overfull \hbox (76.7096pt too wide) in paragraph at lines 65--65
 [][]\T1/cmtt/m/n/7 [mps.generate] Loaded project MPSProject file: L:\lwes-assem
 bla\mbeddr\code\applications\HelloWorld\HelloWorld.mpr[] 
@@ -643,29 +644,29 @@ Overfull \hbox (35.81342pt too wide) in paragraph at lines 68--68
 code\applications\HelloWorld\HelloWorld.mpr[] 
  []
 
-[29] [30]
+[30] [31]
 Overfull \hbox (2.60077pt too wide) in paragraph at lines 135--140
 \T1/cmr/m/n/10 plies as for lan-guages. If these are other so-lu-tions to which
  the MPS-integrated
  []
 
-<figures/green.jpg, id=131, 496.85625pt x 278.03876pt>
+<figures/green.jpg, id=135, 496.85625pt x 278.03876pt>
 File: figures/green.jpg Graphic file (type jpg)
  <use figures/green.jpg>
-[31 <L:/lwes-assembla/mbeddr.core/documentation/userguide_mbeddr.core/figures/g
+[32 <L:/lwes-assembla/mbeddr.core/documentation/userguide_mbeddr.core/figures/g
 reen.jpg>]
 Overfull \hbox (3.73889pt too wide) in paragraph at lines 180--185
 [][]\T1/cmr/m/n/10 In ad-di-tion you can use the \T1/cmtt/m/n/10 Changes \T1/cm
 r/m/n/10 view (from the \T1/cmtt/m/n/10 Window -> Tool Windows
  []
 
-<figures/changesview.jpg, id=136, 772.8875pt x 216.81pt>
+<figures/changesview.jpg, id=139, 772.8875pt x 216.81pt>
 File: figures/changesview.jpg Graphic file (type jpg)
 
-<use figures/changesview.jpg> [32 <L:/lwes-assembla/mbeddr.core/documentation/u
-serguide_mbeddr.core/figures/changesview.jpg>] [33])
+<use figures/changesview.jpg> [33 <L:/lwes-assembla/mbeddr.core/documentation/u
+serguide_mbeddr.core/figures/changesview.jpg>] [34])
 (L:\lwes-assembla\mbeddr.core\documentation\userguide_mbeddr.core\5-debugging.l
-tx)) [34]
+tx)) [35]
 (L:\lwes-assembla\mbeddr.core\documentation\userguide_mbeddr.core\userguide_mbe
 ddr.core.aux)
 
@@ -700,9 +701,9 @@ ype1/public/cm-super/sfti1000.pfb><C:/data/javadev/commonTools/miktex-2.9/fonts
 /type1/public/cm-super/sftt0800.pfb><C:/data/javadev/commonTools/miktex-2.9/fon
 ts/type1/public/cm-super/sftt0900.pfb><C:/data/javadev/commonTools/miktex-2.9/f
 onts/type1/public/cm-super/sftt1000.pfb>
-Output written on userguide_mbeddr.core.pdf (34 pages, 969116 bytes).
+Output written on userguide_mbeddr.core.pdf (35 pages, 970721 bytes).
 PDF statistics:
- 203 PDF objects out of 1000 (max. 8388607)
+ 206 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  76 words of extra memory for PDF output out of 10000 (max. 10000000)
 

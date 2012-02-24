@@ -7,6 +7,13 @@ MPS/*
 .DS_Store
 .metadata
 .svn
+*.synctex.gz
+*.aux
+*.log
+*.*.synctex.gz
+*.*.aux
+*.*.log
+
 
 junitvmwatcher*.properties
 build.properties
