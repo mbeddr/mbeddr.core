@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=pdflatex 2011.7.3)  24 FEB 2012 12:59
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=pdflatex 2011.7.3)  24 FEB 2012 14:36
 entering extended mode
  restricted \write18 enabled.
  Source specials enabled.
@@ -560,14 +560,14 @@ Overfull \hbox (13.51823pt too wide) in paragraph at lines 37--40
 File: figures/documentation.jpg Graphic file (type jpg)
 
 <use figures/documentation.jpg>
-Package pdftex.def Info: figures/documentation.jpg used on input line 251.
+Package pdftex.def Info: figures/documentation.jpg used on input line 248.
 (pdftex.def)             Requested size: 256.0748pt x 76.11559pt.
  [6 <./figures/documentation.jpg>]
 <figures/commenting.jpg, id=34, 411.5375pt x 128.48pt>
 File: figures/commenting.jpg Graphic file (type jpg)
 
 <use figures/commenting.jpg>
-Package pdftex.def Info: figures/commenting.jpg used on input line 267.
+Package pdftex.def Info: figures/commenting.jpg used on input line 264.
 (pdftex.def)             Requested size: 256.0748pt x 79.94495pt.
 ) (./2-helloWorld.ltx [7 <./figures/commenting.jpg>] <figures/NewProject.png, i
 d=40, 843.15pt x 476.78125pt>
@@ -786,7 +786,7 @@ mf-dist/fonts/type1/public/cm-super/sfti1000.pfb></usr/local/texlive/2011/texmf
 -dist/fonts/type1/public/cm-super/sftt0800.pfb></usr/local/texlive/2011/texmf-d
 ist/fonts/type1/public/cm-super/sftt0900.pfb></usr/local/texlive/2011/texmf-dis
 t/fonts/type1/public/cm-super/sftt1000.pfb>
-Output written on userguide_mbeddr.core.pdf (36 pages, 921093 bytes).
+Output written on userguide_mbeddr.core.pdf (36 pages, 920765 bytes).
 PDF statistics:
  212 PDF objects out of 1000 (max. 8388607)
  136 compressed objects within 2 object streams
