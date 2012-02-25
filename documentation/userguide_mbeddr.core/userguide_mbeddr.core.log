@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.11 (MiKTeX 2.9) (preloaded format=pdflatex 2011.11.30)  25 FEB 2012 17:25
+This is pdfTeX, Version 3.1415926-1.40.11 (MiKTeX 2.9) (preloaded format=pdflatex 2011.11.30)  25 FEB 2012 21:50
 entering extended mode
 **userguide_mbeddr.core.tex
 
@@ -698,16 +698,90 @@ re/documentation/userguide_mbeddr.core/figures/debugger5.png>]
 <figures/debugger7.png, id=175, 576.9555pt x 422.17725pt>
 File: figures/debugger7.png Graphic file (type png)
 
-<use figures/debugger7.png>)) [41 <L:/lwes-assembla/mbeddr.core/documentation/u
-serguide_mbeddr.core/figures/debugger6.png> <L:/lwes-assembla/mbeddr.core/docum
-entation/userguide_mbeddr.core/figures/debugger7.png>]
+<use figures/debugger7.png>)
+(L:\lwes-assembla\mbeddr.core\documentation\userguide_mbeddr.core\6-generatingG
+raphs.ltx
+Underfull \vbox (badness 3907) has occurred while \output is active []
+
+ [41 <L:/lwes-assembla/mbeddr.core/documentation/userguide_mbeddr.core/figures/
+debugger6.png> <L:/lwes-assembla/mbeddr.core/documentation/userguide_mbeddr.cor
+e/figures/debugger7.png>]
+Overfull \hbox (11.31671pt too wide) in paragraph at lines 11--13
+[]\T1/cmr/m/n/10 The ex-am-ple code for this chap-ter can be found in \T1/cmtt/
+m/n/10 code/applications/Callgraph\T1/cmr/m/n/10 . 
+ []
+
+<figures/graph1.png, id=181, 178.266pt x 258.9675pt>
+File: figures/graph1.png Graphic file (type png)
+ <use figures/graph1.png>
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [42]
+Overfull \hbox (21.42902pt too wide) in paragraph at lines 59--65
+[][]\T1/cmr/m/n/10 We cre-ate a new lan-guage \T1/cmtt/m/n/10 callgraph\T1/cmr/
+m/n/10 . It has to ex-tend \T1/cmtt/m/n/10 com.mbeddr.core.modules
+ []
+
+<figures/graph2.png, id=185, 320.397pt x 65.043pt>
+File: figures/graph2.png Graphic file (type png)
+ <use figures/graph2.png>
+<figures/graph3.png, id=186, 187.29974pt x 117.43875pt>
+File: figures/graph3.png Graphic file (type png)
+
+<use figures/graph3.png> [43 <L:/lwes-assembla/mbeddr.core/documentation/usergu
+ide_mbeddr.core/figures/graph1.png> <L:/lwes-assembla/mbeddr.core/documentation
+/userguide_mbeddr.core/figures/graph2.png>] [44 <L:/lwes-assembla/mbeddr.core/d
+ocumentation/userguide_mbeddr.core/figures/graph3.png>]
+<figures/graph4.png, id=197, 380.01974pt x 177.0615pt>
+File: figures/graph4.png Graphic file (type png)
+
+<use figures/graph4.png> <figures/graph5.png, id=198, 354.123pt x 66.84975pt>
+File: figures/graph5.png Graphic file (type png)
+
+<use figures/graph5.png>
+<figures/graph6.png, id=199, 494.44725pt x 339.06676pt>
+File: figures/graph6.png Graphic file (type png)
+
+<use figures/graph6.png> [45 <L:/lwes-assembla/mbeddr.core/documentation/usergu
+ide_mbeddr.core/figures/graph4.png> <L:/lwes-assembla/mbeddr.core/documentation
+/userguide_mbeddr.core/figures/graph5.png>]
+<figures/graph7.png, id=205, 410.7345pt x 225.2415pt>
+File: figures/graph7.png Graphic file (type png)
+ <use figures/graph7.png>
+<figures/graph8.png, id=206, 291.489pt x 196.3335pt>
+File: figures/graph8.png Graphic file (type png)
+ <use figures/graph8.png>
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [46 <L:/lwes-assembla/mbeddr.core/documentation/userguide_mbeddr.core/figures/
+graph6.png> <L:/lwes-assembla/mbeddr.core/documentation/userguide_mbeddr.core/f
+igures/graph7.png>] <figures/graph9.png, id=212, 115.632pt x 42.1575pt>
+File: figures/graph9.png Graphic file (type png)
+
+<use figures/graph9.png> <figures/graphA.png, id=213, 289.08pt x 199.947pt>
+File: figures/graphA.png Graphic file (type png)
+
+<use figures/graphA.png>
+<figures/graphB.png, id=214, 408.3255pt x 112.62074pt>
+File: figures/graphB.png Graphic file (type png)
+
+<use figures/graphB.png> [47 <L:/lwes-assembla/mbeddr.core/documentation/usergu
+ide_mbeddr.core/figures/graph8.png> <L:/lwes-assembla/mbeddr.core/documentation
+/userguide_mbeddr.core/figures/graph9.png> <L:/lwes-assembla/mbeddr.core/docume
+ntation/userguide_mbeddr.core/figures/graphA.png>]
+<figures/graphC.png, id=221, 764.8575pt x 508.90125pt>
+File: figures/graphC.png Graphic file (type png)
+
+<use figures/graphC.png>)) [48 <L:/lwes-assembla/mbeddr.core/documentation/user
+guide_mbeddr.core/figures/graphB.png> <L:/lwes-assembla/mbeddr.core/documentati
+on/userguide_mbeddr.core/figures/graphC.png>]
 (L:\lwes-assembla\mbeddr.core\documentation\userguide_mbeddr.core\userguide_mbe
 ddr.core.aux) ) 
 Here is how much of TeX's memory you used:
- 2643 strings out of 494019
- 35283 string characters out of 3141698
+ 2706 strings out of 494019
+ 36687 string characters out of 3141698
  92778 words of memory out of 3000000
- 5841 multiletter control sequences out of 15000+200000
+ 5889 multiletter control sequences out of 15000+200000
  19150 words of font info for 50 fonts, out of 3000000 for 9000
  714 hyphenation exceptions out of 8191
  29i,9n,24p,241b,284s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -731,9 +805,9 @@ x-2.9/fonts/type1/public/cm-super/sfti1000.pfb><C:/data/javadev/commonTools/mik
 tex-2.9/fonts/type1/public/cm-super/sftt0800.pfb><C:/data/javadev/commonTools/m
 iktex-2.9/fonts/type1/public/cm-super/sftt0900.pfb><C:/data/javadev/commonTools
 /miktex-2.9/fonts/type1/public/cm-super/sftt1000.pfb>
-Output written on userguide_mbeddr.core.pdf (41 pages, 1486825 bytes).
+Output written on userguide_mbeddr.core.pdf (48 pages, 1788919 bytes).
 PDF statistics:
- 240 PDF objects out of 1000 (max. 8388607)
+ 286 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 111 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 171 words of extra memory for PDF output out of 10000 (max. 10000000)
 

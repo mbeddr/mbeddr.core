@@ -69,3 +69,9 @@
 \contentsline {section}{\numberline {8}Debugging}{38}
 \contentsline {subsection}{\numberline {8.1}Creating a Debug Configuration}{39}
 \contentsline {subsection}{\numberline {8.2}Running a Debug Session}{40}
+\contentsline {section}{\numberline {9}Graphs}{42}
+\contentsline {subsection}{\numberline {9.1}Setting up a Language}{43}
+\contentsline {subsection}{\numberline {9.2}Creating the Generator}{43}
+\contentsline {subsection}{\numberline {9.3}Generator Priorities}{45}
+\contentsline {subsection}{\numberline {9.4}Making the Generation Optional}{46}
+\contentsline {subsection}{\numberline {9.5}Wrap Up}{48}
