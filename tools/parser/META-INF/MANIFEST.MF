@@ -4,6 +4,4 @@ Bundle-Name: Parser
 Bundle-SymbolicName: parser
 Bundle-Version: 1.0.0.qualifier
 Bundle-RequiredExecutionEnvironment: JavaSE-1.6
-Require-Bundle: org.eclipse.cdt.core;
- org.eclipse.core.runtime;
 Import-Package: org.eclipse.core.runtime
