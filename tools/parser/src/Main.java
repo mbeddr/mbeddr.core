@@ -35,13 +35,13 @@ public class Main {
 		StringBuilder content = new StringBuilder();
 		content.append("#include <stdio.h>\n");
 		content.append("#define AVAR 5\n");
-		 content.append("int main(int argc, char **argv) {\n");
-		 content.append("	int x = AVAR;\n");
-		 content.append("#ifdef bla\n");
-		 content.append("	x=1+2;\n");
-		 content.append("#endif\n");
-		 content.append("	return x;\n");
-		 content.append("};\n");
+		content.append("int main(int argc, char **argv) {\n");
+		content.append("	int x = AVAR;\n");
+		content.append("#ifdef bla\n");
+		content.append("	x=1+2;\n");
+		content.append("#endif\n");
+		content.append("	return x;\n");
+		content.append("};\n");
 
 		HashMap<String, String> options = new HashMap<String, String>();
 		// options.put("bla", "1");
