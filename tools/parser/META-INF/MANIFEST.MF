@@ -5,3 +5,4 @@ Bundle-SymbolicName: parser
 Bundle-Version: 1.0.0.qualifier
 Bundle-RequiredExecutionEnvironment: JavaSE-1.6
 Import-Package: org.eclipse.core.runtime
+Require-Bundle: org.junit
