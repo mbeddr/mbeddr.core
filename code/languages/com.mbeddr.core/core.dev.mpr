@@ -17,6 +17,7 @@
   <component name="MPSProject">
     <projectModules>
       <modulePath path="${project}/devkits/com.mbeddr.core/core.devkit" />
+      <modulePath path="${project}/languages/Stephan/Stephan.mpl" folder="" />
       <modulePath path="${project}/languages/com.mbeddr.core.arrays/arrays.mpl" folder="core" />
       <modulePath path="${project}/languages/com.mbeddr.core.base/base.mpl" folder="core" />
       <modulePath path="${project}/languages/com.mbeddr.core.buildconfig/buildconfig.mpl" folder="core" />
@@ -31,6 +32,7 @@
       <modulePath path="${project}/languages/com.mbeddr.core.udt/udt.mpl" folder="core" />
       <modulePath path="${project}/languages/com.mbeddr.core.unittest/unittest.mpl" folder="core" />
       <modulePath path="${project}/languages/com.mbeddr.core.util/util.mpl" folder="core" />
+      <modulePath path="${project}/solutions/Example/Example.msd" folder="" />
       <modulePath path="${project}/tests/aLibrary/aLibrary.msd" folder="tests" />
       <modulePath path="${project}/tests/test.ex.core.libs/libs.msd" folder="tests" />
       <modulePath path="${project}/tests/test.ex.core/core.msd" folder="tests" />
