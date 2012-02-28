@@ -35,7 +35,7 @@
       <property name="virtualPackage" nameId="tpck.1193676396447" value="dispatch" />
     </node>
     <node type="tpd4.InferenceRule" typeId="tpd4.1174643105530" id="4481811096720536893">
-      <property name="name" nameId="tpck.1169194664001" value="typeof_IBuilderStep" />
+      <property name="name" nameId="tpck.1169194664001" value="typeof_ChildStep" />
       <property name="virtualPackage" nameId="tpck.1193676396447" value="builder" />
     </node>
     <node type="tpd4.InferenceRule" typeId="tpd4.1174643105530" id="4481811096720603166">
@@ -229,10 +229,10 @@
           <node role="initializer" roleId="tpee.1068431790190" type="tpee.DotExpression" typeId="tpee.1197027756228" id="4481811096720976636">
             <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="4481811096720536899">
               <node role="operand" roleId="tpee.1197027771414" type="tpd4.ApplicableNodeReference" typeId="tpd4.1174650418652" id="4481811096720536925">
-                <link role="applicableNode" roleId="tpd4.1174650432090" targetNodeId="4481811096720536895" resolveInfo="ibs" />
+                <link role="applicableNode" roleId="tpd4.1174650432090" targetNodeId="4481811096720536895" resolveInfo="childStep" />
               </node>
-              <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="4481811096720976635">
-                <link role="link" roleId="tp25.1138056516764" targetNodeId="hba4.4481811096720976628" />
+              <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="6308171743671993392">
+                <link role="link" roleId="tp25.1138056516764" targetNodeId="hba4.6308171743671982944" />
               </node>
             </node>
             <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="4481811096721052491">
@@ -275,7 +275,7 @@
         <node role="leftExpression" roleId="tpd4.1174660783413" type="tpd4.NormalTypeClause" typeId="tpd4.1185788614172" id="4481811096720536920">
           <node role="normalType" roleId="tpd4.1185788644032" type="tpd4.TypeOfExpression" typeId="tpd4.1174657487114" id="4481811096720536921">
             <node role="term" roleId="tpd4.1174657509053" type="tpd4.ApplicableNodeReference" typeId="tpd4.1174650418652" id="4481811096720536926">
-              <link role="applicableNode" roleId="tpd4.1174650432090" targetNodeId="4481811096720536895" resolveInfo="ibs" />
+              <link role="applicableNode" roleId="tpd4.1174650432090" targetNodeId="4481811096720536895" resolveInfo="childStep" />
             </node>
           </node>
         </node>
@@ -287,8 +287,8 @@
       </node>
     </node>
     <node role="applicableNode" roleId="tpd4.1174648101952" type="tpd4.ConceptReference" typeId="tpd4.1174642788531" id="4481811096720536895">
-      <property name="name" nameId="tpck.1169194664001" value="ibs" />
-      <link role="concept" roleId="tpd4.1174642800329" targetNodeId="hba4.4481811096720536891" resolveInfo="IBuilderStep" />
+      <property name="name" nameId="tpck.1169194664001" value="childStep" />
+      <link role="concept" roleId="tpd4.1174642800329" targetNodeId="hba4.4481811096720537459" resolveInfo="ChildStep" />
     </node>
   </root>
   <root id="4481811096720603166">
