@@ -18,5 +18,11 @@
     </dependencies>
     <move id="hba4.4481811096721066748" to="hba4.6308171743672060012" />
   </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="hba4" modelUID="r:f5bd2ad9-cd54-4408-b815-07f9f306f074(com.mbeddr.mpsutil.blutil.structure)" version="2" />
+    </dependencies>
+    <rename id="hba4.6308171743671982944" type="CHILD" from="ref" to="value" />
+  </StructureModification>
 </history>
 
