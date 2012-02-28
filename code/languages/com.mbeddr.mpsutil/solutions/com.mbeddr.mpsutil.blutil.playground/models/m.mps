@@ -30,9 +30,9 @@
                 <link role="concept" roleId="hba4.4481811096720976619" targetNodeId="tpee.1068581242864" resolveInfo="LocalVariableDeclarationStatement" />
               </node>
               <node role="children" roleId="hba4.4481811096720537463" type="hba4.ChildStep" typeId="hba4.4481811096720537459" id="4481811096721075726">
+                <property name="optionalName" nameId="hba4.4481811096721066748" value="i" />
                 <link role="childLink" roleId="hba4.4481811096720607067" targetNodeId="tpee.1068581242865" />
                 <node role="ref" roleId="hba4.4481811096720976628" type="hba4.ConceptRef" typeId="hba4.4481811096720976618" id="4481811096721075728">
-                  <property name="optionalName" nameId="hba4.4481811096721066748" value="i" />
                   <link role="concept" roleId="hba4.4481811096720976619" targetNodeId="tpee.1068581242863" resolveInfo="LocalVariableDeclaration" />
                 </node>
                 <node role="children" roleId="hba4.4481811096720537463" type="hba4.ChildStep" typeId="hba4.4481811096720537459" id="4481811096721075730">
@@ -95,8 +95,8 @@
                     </node>
                     <node role="children" roleId="hba4.4481811096720537463" type="hba4.RefStep" typeId="hba4.4481811096721038000" id="4481811096721055663">
                       <link role="refLink" roleId="hba4.4481811096721038001" targetNodeId="tpee.1068581517664" />
-                      <node role="target" roleId="hba4.4481811096721038002" type="hba4.ChildRefExpr" typeId="hba4.4481811096721075737" id="4481811096721092268">
-                        <link role="conceptRef" roleId="hba4.4481811096721075738" targetNodeId="4481811096721075728" />
+                      <node role="target" roleId="hba4.4481811096721038002" type="hba4.ChildRefExpr" typeId="hba4.4481811096721075737" id="6308171743671962235">
+                        <link role="child" roleId="hba4.4481811096721075738" targetNodeId="4481811096721075726" />
                       </node>
                     </node>
                   </node>

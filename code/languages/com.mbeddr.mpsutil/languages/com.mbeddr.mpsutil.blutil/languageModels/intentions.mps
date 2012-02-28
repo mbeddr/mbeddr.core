@@ -13,7 +13,7 @@
   <roots>
     <node type="tp3j.IntentionDeclaration" typeId="tp3j.1192794744107" id="4481811096721066850">
       <property name="name" nameId="tpck.1169194664001" value="addName" />
-      <link role="forConcept" roleId="tp3j.2522969319638198290" targetNodeId="hba4.4481811096720976618" resolveInfo="ConceptRef" />
+      <link role="forConcept" roleId="tp3j.2522969319638198290" targetNodeId="hba4.4481811096720537459" resolveInfo="ChildStep" />
     </node>
     <node type="tp3j.IntentionDeclaration" typeId="tp3j.1192794744107" id="4481811096721094362">
       <property name="name" nameId="tpck.1169194664001" value="addChild" />
@@ -38,7 +38,12 @@
             <node role="rValue" roleId="tpee.1068498886297" type="tpee.DotExpression" typeId="tpee.1197027756228" id="4481811096721066896">
               <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="4481811096721066891">
                 <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="4481811096721066886">
-                  <node role="operand" roleId="tpee.1197027771414" type="tp3j.ConceptFunctionParameter_node" typeId="tp3j.1192796902958" id="4481811096721066885" />
+                  <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="6308171743671942356">
+                    <node role="operand" roleId="tpee.1197027771414" type="tp3j.ConceptFunctionParameter_node" typeId="tp3j.1192796902958" id="4481811096721066885" />
+                    <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="6308171743671942360">
+                      <link role="link" roleId="tp25.1138056516764" targetNodeId="hba4.4481811096720976628" />
+                    </node>
+                  </node>
                   <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="4481811096721066890">
                     <link role="link" roleId="tp25.1138056516764" targetNodeId="hba4.4481811096720976619" />
                   </node>
