@@ -74,16 +74,9 @@
           </node>
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="734120071946400643" />
-        <node role="statements" roleId="c4fa.4185783222026475862" type="nw51.UnlessStatement" typeId="nw51.734120071946394502" id="734120071946400986">
-          <node role="condition" roleId="nw51.734120071946394503" type="mj1l.GreaterExpression" typeId="mj1l.8860443239512147445" id="734120071946400987">
-            <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="734120071946400988">
-              <property name="value" nameId="mj1l.8860443239512128104" value="0" />
-            </node>
-            <node role="left" roleId="mj1l.8860443239512128064" type="x27k.ArgumentRef" typeId="x27k.2093108837558505658" id="734120071946400989">
-              <link role="arg" roleId="x27k.2093108837558505659" targetNodeId="734120071946397003" resolveInfo="x" />
-            </node>
-          </node>
-          <node role="body" roleId="nw51.734120071946394504" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="734120071946400646" />
+        <node role="statements" roleId="c4fa.4185783222026475862" type="nw51.UnlessStatement" typeId="nw51.734120071946394502" id="734120071946450933">
+          <node role="body" roleId="nw51.734120071946394504" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="734120071946450928" />
+          <node role="condition" roleId="nw51.734120071946394503" type="mj1l.TrueLiteral" typeId="mj1l.8860443239512128094" id="734120071946450934" />
         </node>
       </node>
       <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="734120071946396799" />
