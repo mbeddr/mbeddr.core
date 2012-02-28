@@ -6,22 +6,22 @@
   <accessoryModels />
   <generators />
   <stubModelEntries>
-    <stubModelEntry path="${mps_home}/plugins/zgrviewer/antlr-2.7.7.jar">
+    <stubModelEntry path="${language_descriptor}/lib/antlr-2.7.7.jar">
       <manager moduleId="f3061a53-9226-4cc5-a443-f952ceaf5816" className="jetbrains.mps.baseLanguage.stubs.JavaStubs" />
     </stubModelEntry>
-    <stubModelEntry path="${mps_home}/plugins/zgrviewer/commons-io-2.1.jar">
+    <stubModelEntry path="${language_descriptor}/lib/commons-io-2.1.jar">
       <manager moduleId="f3061a53-9226-4cc5-a443-f952ceaf5816" className="jetbrains.mps.baseLanguage.stubs.JavaStubs" />
     </stubModelEntry>
-    <stubModelEntry path="${mps_home}/plugins/zgrviewer/timingframework-1.0.jar">
+    <stubModelEntry path="${language_descriptor}/lib/timingframework-1.0.jar">
       <manager moduleId="f3061a53-9226-4cc5-a443-f952ceaf5816" className="jetbrains.mps.baseLanguage.stubs.JavaStubs" />
     </stubModelEntry>
-    <stubModelEntry path="${mps_home}/plugins/zgrviewer/zgrviewer-formps-1.0.0-SNAPSHOT.jar">
+    <stubModelEntry path="${language_descriptor}/lib/zgrviewer-formps-1.0.0-SNAPSHOT.jar">
       <manager moduleId="f3061a53-9226-4cc5-a443-f952ceaf5816" className="jetbrains.mps.baseLanguage.stubs.JavaStubs" />
     </stubModelEntry>
-    <stubModelEntry path="${mps_home}/plugins/zgrviewer/zvtm-core-formps-1.0.0-SNAPSHOT.jar">
+    <stubModelEntry path="${language_descriptor}/lib/zvtm-core-formps-1.0.0-SNAPSHOT.jar">
       <manager moduleId="f3061a53-9226-4cc5-a443-f952ceaf5816" className="jetbrains.mps.baseLanguage.stubs.JavaStubs" />
     </stubModelEntry>
-    <stubModelEntry path="${mps_home}/plugins/zgrviewer/zvtm-svg-0.2.1-SNAPSHOT.jar">
+    <stubModelEntry path="${language_descriptor}/lib/zvtm-svg-0.2.1-SNAPSHOT.jar">
       <manager moduleId="f3061a53-9226-4cc5-a443-f952ceaf5816" className="jetbrains.mps.baseLanguage.stubs.JavaStubs" />
     </stubModelEntry>
   </stubModelEntries>
