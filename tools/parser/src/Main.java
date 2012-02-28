@@ -33,15 +33,16 @@ public class Main {
 
 	public static void main(String[] args) throws CoreException {
 		StringBuilder content = new StringBuilder();
-		content.append("#include <stdio.h>\n");
+//		content.append("#include <stdio.h>\n");
 		content.append("#define AVAR 5\n");
-		content.append("int main(int argc, char **argv) {\n");
-		content.append("	int x = AVAR;\n");
-		content.append("#ifdef bla\n");
-		content.append("	x=1+2;\n");
-		content.append("#endif\n");
-		content.append("	return x;\n");
-		content.append("};\n");
+		content.append("#define AVAR 5\n");
+//		content.append("int main(int argc, char **argv) {\n");
+//		content.append("	int x = AVAR;\n");
+//		content.append("#ifdef bla\n");
+//		content.append("	x=1+2;\n");
+//		content.append("#endif\n");
+//		content.append("	return x;\n");
+//		content.append("};\n");
 
 		HashMap<String, String> options = new HashMap<String, String>();
 		// options.put("bla", "1");
@@ -55,12 +56,25 @@ public class Main {
 						null, 0, new DefaultLogService());
 		IASTPreprocessorMacroDefinition[] macroDefinitions = astTranslationUnit
 				.getMacroDefinitions();
-		for (IASTPreprocessorMacroDefinition md : macroDefinitions) {
-			IASTPreprocessorMacroDefinition def = (IASTPreprocessorMacroDefinition) md;
-			System.err.println(def.getExpansion());
-			System.err.println(md.toString());
-		}
+//		for (IASTPreprocessorMacroDefinition md : macroDefinitions) {
+//			IASTPreprocessorMacroDefinition def = (IASTPreprocessorMacroDefinition) md;
+//			System.err.println(def.getExpansion());
+//			System.err.println(md.toString());
+//		}
 		astTranslationUnit.accept(new ASTVisitor(true) {
+			
+			  public int visist(IASTTranslationUnit x) {
+				    System.out.println("Visit IASTPreprocessorMacroDefinition");
+				    for (IASTPreprocessorMacroDefinition m : x.getMacroDefinitions()) {
+				      String name = m.getName().toString();
+				      String valueAsString = m.getExpansion();
+//				      if (StringUtils.isNotEmpty(valueAsString)) {
+//				        ListSequence.fromList(SLinkOperations.getTargets(externalModule, "contents", true)).addElement(createGlobalConstantDeclaration(name, valueAsString));
+//				      }
+				    }
+				    return PROCESS_CONTINUE;
+				  }
+			
 			public int visit(IASTTranslationUnit x) {
 				System.err.println(x.toString());
 				return PROCESS_CONTINUE;

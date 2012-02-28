@@ -45,6 +45,14 @@
   <component name="ProjectLibraryManager">
     <option name="libraries">
       <map>
+        <entry key="ext">
+          <value>
+            <Library>
+              <option name="name" value="ext" />
+              <option name="path" value="${mbeddr.assembla.ext.home}/" />
+            </Library>
+          </value>
+        </entry>
         <entry key="mpsutil">
           <value>
             <Library>
