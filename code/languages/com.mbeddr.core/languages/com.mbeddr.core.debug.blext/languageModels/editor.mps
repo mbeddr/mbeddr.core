@@ -28,24 +28,12 @@
       <property name="virtualPackage" nameId="tpck.1193676396447" value="stepping" />
       <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="talm.2513598210665113936" resolveInfo="AddSubtreeStepIntoStrategy" />
     </node>
-    <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="2513598210665128826">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="watches" />
-      <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="talm.2513598210665128821" resolveInfo="FindUnmappedByIdExpr" />
-    </node>
-    <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="2513598210665134951">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="watches" />
-      <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="talm.2513598210665134945" resolveInfo="MapVariableBasedOnType" />
-    </node>
     <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="8483575004407054701">
       <property name="virtualPackage" nameId="tpck.1193676396447" value="watches" />
       <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="talm.8483575004407054697" resolveInfo="HideById" />
     </node>
-    <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="8483575004407061638">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="watches" />
-      <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="talm.8483575004407061635" resolveInfo="CreateWatchableExpr" />
-    </node>
     <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="8483575004407084869">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="stepping" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="watches" />
       <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="talm.8483575004407084862" resolveInfo="MapExpression" />
     </node>
   </roots>
@@ -113,40 +101,6 @@
       </node>
     </node>
   </root>
-  <root id="2513598210665128826">
-    <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="2513598210665128828">
-      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="2513598210665128831">
-        <property name="text" nameId="tpc2.1073389577007" value="find unmapped by id" />
-      </node>
-      <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Indent" typeId="tpc2.1237303669825" id="2513598210665128830" />
-      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_RefNode" typeId="tpc2.1073389882823" id="2513598210665128833">
-        <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="talm.2513598210665128825" />
-      </node>
-    </node>
-  </root>
-  <root id="2513598210665134951">
-    <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="2513598210665134953">
-      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="2513598210665134956">
-        <property name="text" nameId="tpc2.1073389577007" value="map variable" />
-      </node>
-      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_RefNode" typeId="tpc2.1073389882823" id="2513598210665134965">
-        <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="talm.2513598210665134961" />
-      </node>
-      <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Indent" typeId="tpc2.1237303669825" id="2513598210665134955" />
-      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="2513598210665134967">
-        <property name="text" nameId="tpc2.1073389577007" value="named" />
-      </node>
-      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_RefNode" typeId="tpc2.1073389882823" id="2513598210665134969">
-        <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="talm.2513598210665134962" />
-      </node>
-      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="2513598210665134972">
-        <property name="text" nameId="tpc2.1073389577007" value="typed to" />
-      </node>
-      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_RefNode" typeId="tpc2.1073389882823" id="2513598210665134974">
-        <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="talm.2513598210665134963" />
-      </node>
-    </node>
-  </root>
   <root id="8483575004407054701">
     <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="8483575004407054703">
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="8483575004407054706">
@@ -155,32 +109,6 @@
       <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Indent" typeId="tpc2.1237303669825" id="8483575004407054705" />
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_RefNode" typeId="tpc2.1073389882823" id="8483575004407054708">
         <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="talm.8483575004407054700" />
-      </node>
-    </node>
-  </root>
-  <root id="8483575004407061638">
-    <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="8483575004407061640">
-      <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Indent" typeId="tpc2.1237303669825" id="8483575004407061641" />
-      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="8483575004407061643">
-        <property name="text" nameId="tpc2.1073389577007" value="create watchable" />
-      </node>
-      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="8483575004407061645">
-        <property name="text" nameId="tpc2.1073389577007" value="for" />
-      </node>
-      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_RefNode" typeId="tpc2.1073389882823" id="8483575004407063673">
-        <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="talm.8483575004407061647" />
-      </node>
-      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="8483575004407063683">
-        <property name="text" nameId="tpc2.1073389577007" value="in category" />
-      </node>
-      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_RefNode" typeId="tpc2.1073389882823" id="8483575004407063685">
-        <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="talm.8483575004407061651" />
-      </node>
-      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="8483575004407063679">
-        <property name="text" nameId="tpc2.1073389577007" value="context" />
-      </node>
-      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_RefNode" typeId="tpc2.1073389882823" id="8483575004407063681">
-        <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="talm.8483575004407061650" />
       </node>
     </node>
   </root>
