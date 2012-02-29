@@ -52,6 +52,10 @@
       <property name="virtualPackage" nameId="tpck.1193676396447" value="state" />
       <property name="name" nameId="tpck.1169194664001" value="IRealStackFrameContributor" />
     </node>
+    <node type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="2513598210665148633">
+      <property name="name" nameId="tpck.1169194664001" value="IMappableType" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="watches" />
+    </node>
   </roots>
   <root id="568116135000816591" />
   <root id="3205769394890863066" />
@@ -71,5 +75,6 @@
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="3205769394890863066" resolveInfo="IStackFrameContributor" />
     </node>
   </root>
+  <root id="2513598210665148633" />
 </model>
 
