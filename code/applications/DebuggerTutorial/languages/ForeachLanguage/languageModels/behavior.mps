@@ -185,82 +185,6 @@
       <property name="name" nameId="tpck.1169194664001" value="mapCVariable" />
       <link role="overriddenMethod" roleId="1i04.1225194472831" targetNodeId="exl8.8973067500929675510" resolveInfo="mapCVariable" />
       <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="1734689175229861721">
-        <node role="statement" roleId="tpee.1068581517665" type="tpee.CommentedStatementsBlock" typeId="tpee.1177326519037" id="8483575004407118326">
-          <node role="statement" roleId="tpee.1177326540772" type="tpee.LocalVariableDeclarationStatement" typeId="tpee.1068581242864" id="1734689175229195476">
-            <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="1734689175229195477">
-              <property name="name" nameId="tpck.1169194664001" value="it" />
-              <node role="type" roleId="tpee.5680397130376446158" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="1734689175229195513">
-                <link role="classifier" roleId="tpee.1107535924139" targetNodeId="x30c.8973067500929675445" resolveInfo="UnmappedVariable" />
-              </node>
-              <node role="initializer" roleId="tpee.1068431790190" type="talm.FindUnmappedByIdExpr" typeId="talm.2513598210665128821" id="2513598210665134940">
-                <node role="varId" roleId="talm.2513598210665128825" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="2513598210665134942">
-                  <property name="value" nameId="tpee.1070475926801" value="__it" />
-                </node>
-              </node>
-            </node>
-          </node>
-          <node role="statement" roleId="tpee.1177326540772" type="tpee.LocalVariableDeclarationStatement" typeId="tpee.1068581242864" id="1734689175229239436">
-            <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="1734689175229239437">
-              <property name="name" nameId="tpck.1169194664001" value="itType" />
-              <node role="type" roleId="tpee.5680397130376446158" type="tp25.SNodeType" typeId="tp25.1138055754698" id="1734689175229239438">
-                <link role="concept" roleId="tp25.1138405853777" targetNodeId="mj1l.8860443239512128054" resolveInfo="Type" />
-              </node>
-              <node role="initializer" roleId="tpee.1068431790190" type="tpee.DotExpression" typeId="tpee.1197027756228" id="1734689175229239439">
-                <node role="operand" roleId="tpee.1197027771414" type="tp25.SNodeTypeCastExpression" typeId="tp25.1140137987495" id="1734689175229239440">
-                  <link role="concept" roleId="tp25.1140138128738" targetNodeId="yq40.5679441017214012545" resolveInfo="ArrayType" />
-                  <node role="leftExpression" roleId="tp25.1140138123956" type="tpee.DotExpression" typeId="tpee.1197027756228" id="1734689175229239441">
-                    <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="1734689175229239442">
-                      <node role="operand" roleId="tpee.1197027771414" type="1i04.ThisNodeExpression" typeId="1i04.1225194691553" id="1734689175229239443" />
-                      <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="1734689175229239444">
-                        <link role="link" roleId="tp25.1138056516764" targetNodeId="r4c1.1734689175229163205" />
-                      </node>
-                    </node>
-                    <node role="operation" roleId="tpee.1197027833540" type="tpd4.Node_TypeOperation" typeId="tpd4.1176544042499" id="1734689175229239445" />
-                  </node>
-                </node>
-                <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="1734689175229239446">
-                  <link role="link" roleId="tp25.1138056516764" targetNodeId="yq40.5679441017214012546" />
-                </node>
-              </node>
-            </node>
-          </node>
-          <node role="statement" roleId="tpee.1177326540772" type="tpee.LocalVariableDeclarationStatement" typeId="tpee.1068581242864" id="8483575004407043638">
-            <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="8483575004407043639">
-              <property name="name" nameId="tpck.1169194664001" value="mappedVariable" />
-              <node role="type" roleId="tpee.5680397130376446158" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="8483575004407043640">
-                <link role="classifier" roleId="tpee.1107535924139" targetNodeId="x30c.8973067500929635632" resolveInfo="AbstractMappedVariable" />
-              </node>
-              <node role="initializer" roleId="tpee.1068431790190" type="talm.MapVariableBasedOnType" typeId="talm.2513598210665134945" id="8483575004407043649">
-                <node role="unmappedVariable" roleId="talm.2513598210665134961" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="8483575004407043653">
-                  <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="1734689175229195477" resolveInfo="it" />
-                </node>
-                <node role="newName" roleId="talm.2513598210665134962" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="8483575004407043654">
-                  <property name="value" nameId="tpee.1070475926801" value="it" />
-                </node>
-                <node role="typeExpr" roleId="talm.2513598210665134963" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="8483575004407043655">
-                  <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="1734689175229239437" resolveInfo="itType" />
-                </node>
-              </node>
-            </node>
-          </node>
-          <node role="statement" roleId="tpee.1177326540772" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="8483575004407063667">
-            <node role="expression" roleId="tpee.1068580123156" type="talm.CreateWatchableExpr" typeId="talm.8483575004407061635" id="8483575004407063668">
-              <node role="mappedVariable" roleId="talm.8483575004407061647" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="8483575004407070694">
-                <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="8483575004407043639" resolveInfo="mappedVariable" />
-              </node>
-              <node role="contextNode" roleId="talm.8483575004407061650" type="1i04.ThisNodeExpression" typeId="1i04.1225194691553" id="8483575004407070698" />
-              <node role="category" roleId="talm.8483575004407061651" type="tpee.StaticFieldReference" typeId="tpee.1070533707846" id="8483575004407070695">
-                <link role="classifier" roleId="tpee.1144433057691" targetNodeId="x30c.7136645803916906828" resolveInfo="WatchableCategories" />
-                <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="x30c.7136645803916906834" resolveInfo="LOCAL_VARIABLES" />
-              </node>
-              <node role="icon" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="8483575004407070696">
-                <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="205.~IconManager" resolveInfo="IconManager" />
-                <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="205.~IconManager%dgetIconFor(jetbrains%dmps%dsmodel%dSNode)%cjavax%dswing%dIcon" resolveInfo="getIconFor" />
-                <node role="actualArgument" roleId="tpee.1068499141038" type="1i04.ThisNodeExpression" typeId="1i04.1225194691553" id="8483575004407070697" />
-              </node>
-            </node>
-          </node>
-        </node>
         <node role="statement" roleId="tpee.1068581517665" type="talm.HideById" typeId="talm.8483575004407054697" id="8483575004407061632">
           <node role="varName" roleId="talm.8483575004407054700" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="8483575004407061634">
             <property name="value" nameId="tpee.1070475926801" value="__c" />
@@ -384,6 +308,7 @@
         </node>
       </node>
     </node>
+    <node role="smodelAttribute" roleId="tpck.5169995583184591170" type=".com.mbeddr.core.debug.blext.structure.DebugSpec" id="8483575004407187900" />
   </root>
 </model>
 
