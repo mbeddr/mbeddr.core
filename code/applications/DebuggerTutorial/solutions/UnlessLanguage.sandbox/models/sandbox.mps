@@ -252,7 +252,7 @@
           </node>
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="2194195324959155918">
-          <property name="name" nameId="tpck.1169194664001" value="array" />
+          <property name="name" nameId="tpck.1169194664001" value="arr" />
           <node role="type" roleId="mj1l.318113533128716676" type="yq40.ArrayType" typeId="yq40.5679441017214012545" id="2194195324959155920">
             <node role="baseType" roleId="yq40.5679441017214012546" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="2194195324959155919" />
           </node>
@@ -276,7 +276,7 @@
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="r4c1.ForEachStatement" typeId="r4c1.1734689175229163199" id="2194195324959155933">
           <node role="array" roleId="r4c1.1734689175229163205" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="2194195324959155937">
-            <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="2194195324959155918" resolveInfo="array" />
+            <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="2194195324959155918" resolveInfo="arr" />
           </node>
           <node role="len" roleId="r4c1.1734689175229163206" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2194195324959155938">
             <property name="value" nameId="mj1l.8860443239512128104" value="5" />
