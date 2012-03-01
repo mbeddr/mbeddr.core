@@ -12,6 +12,7 @@
       <modulePath path="${project}/languages/com.mbeddr.mpsutil.graphview/graphview.mpl" folder="" />
       <modulePath path="${project}/languages/com.mbeddr.mpsutil.langdepdiag/langdepdiag.mpl" folder="" />
       <modulePath path="${project}/languages/com.mbeddr.mpsutil.langdiag/langdiag.mpl" />
+      <modulePath path="${project}/languages/com.mbeddr.mpsutil.langstats/langstats.mpl" folder="" />
       <modulePath path="${project}/languages/com.mbeddr.mpsutil.outline/outline.mpl" />
       <modulePath path="${project}/languages/com.mbeddr.mpsutil.presentation/presentation.mpl" folder="" />
       <modulePath path="${project}/languages/com.mbeddr.mpsutil.tables.rt/tables.rt.msd" />
