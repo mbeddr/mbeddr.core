@@ -3,8 +3,7 @@
   <persistence version="7" />
   <language namespace="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" />
   <devkit namespace="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
-  <import index="1xm8" modelUID="f:c_stub#c61d0eb8-290b-4dfe-a65f-0064e9c79858#/usr/include/(StdInclude//usr/include/@c_stub)" version="-1" />
-  <import index="y0gz" modelUID="f:c_stub#e2fc6d37-d837-405c-bc82-e5cab6f7c813#/Users/matzat/Documents/lwes/mbeddr.core/code/languages/com.mbeddr.core/tests/test.ex.core.cStubTestInclude/include(CStubTestInclude//Users/matzat/Documents/lwes/mbeddr.core/code/languages/com.mbeddr.core/tests/test.ex.core.cStubTestInclude/include@c_stub)" version="-1" />
+  <import index="sgaa" modelUID="f:c_stub#e2fc6d37-d837-405c-bc82-e5cab6f7c813#CStubTestInclude(CStubTestInclude/CStubTestInclude@c_stub)" version="-1" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="k146" modelUID="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" version="1" implicit="yes" />
   <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="10" implicit="yes" />
@@ -45,8 +44,8 @@
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="4073283812758562923">
               <property name="value" nameId="mj1l.8860443239512128104" value="3" />
             </node>
-            <node role="left" roleId="mj1l.8860443239512128064" type="x27k.GlobalConstantRef" typeId="x27k.3788988821852026523" id="1773371170830635961">
-              <link role="constant" roleId="x27k.3788988821852026524" targetNodeId="y0gz.454832265266745825" resolveInfo="IntValue" />
+            <node role="left" roleId="mj1l.8860443239512128064" type="x27k.GlobalConstantRef" typeId="x27k.3788988821852026523" id="8293603562008212599">
+              <link role="constant" roleId="x27k.3788988821852026524" targetNodeId="sgaa.6899932190960172705" resolveInfo="IntValue" />
             </node>
           </node>
         </node>
@@ -55,8 +54,8 @@
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6820582691324140984">
               <property name="value" nameId="mj1l.8860443239512128104" value="10" />
             </node>
-            <node role="left" roleId="mj1l.8860443239512128064" type="x27k.GlobalConstantRef" typeId="x27k.3788988821852026523" id="6820582691324140980">
-              <link role="constant" roleId="x27k.3788988821852026524" targetNodeId="y0gz.454832265266745827" resolveInfo="HexValue" />
+            <node role="left" roleId="mj1l.8860443239512128064" type="x27k.GlobalConstantRef" typeId="x27k.3788988821852026523" id="8293603562008212600">
+              <link role="constant" roleId="x27k.3788988821852026524" targetNodeId="sgaa.6899932190960172707" resolveInfo="HexValue" />
             </node>
           </node>
         </node>
@@ -65,8 +64,8 @@
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.StringLiteral" typeId="mj1l.2088909457728253268" id="6820582691324140992">
               <property name="value" nameId="mj1l.2088909457728253269" value="ImAString" />
             </node>
-            <node role="left" roleId="mj1l.8860443239512128064" type="x27k.GlobalConstantRef" typeId="x27k.3788988821852026523" id="6820582691324140988">
-              <link role="constant" roleId="x27k.3788988821852026524" targetNodeId="y0gz.454832265266745829" resolveInfo="StringValue" />
+            <node role="left" roleId="mj1l.8860443239512128064" type="x27k.GlobalConstantRef" typeId="x27k.3788988821852026523" id="8293603562008212601">
+              <link role="constant" roleId="x27k.3788988821852026524" targetNodeId="sgaa.6899932190960172709" resolveInfo="StringValue" />
             </node>
           </node>
         </node>
@@ -75,8 +74,8 @@
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="7605864222577497204">
       <property name="name" nameId="tpck.1169194664001" value="empty_1330354704403_2" />
     </node>
-    <node role="imports" roleId="x27k.1317894735999304826" type="x27k.ModuleImport" typeId="x27k.1317894735999299713" id="1773371170830635960">
-      <link role="module" roleId="x27k.1317894735999299714" targetNodeId="y0gz.454832265266745824" resolveInfo="defineTestHeader" />
+    <node role="imports" roleId="x27k.1317894735999304826" type="x27k.ModuleImport" typeId="x27k.1317894735999299713" id="8293603562008212598">
+      <link role="module" roleId="x27k.1317894735999299714" targetNodeId="sgaa.6899932190960172704" resolveInfo="defineTestHeader" />
     </node>
   </root>
   <root id="7605864222577497210">
@@ -184,8 +183,8 @@
       <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="5255370464256878770">
         <link role="module" roleId="51wr.7717755763392524108" targetNodeId="5255370464256878052" resolveInfo="Driver" />
       </node>
-      <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="454832265266897316">
-        <link role="module" roleId="51wr.7717755763392524108" targetNodeId="y0gz.454832265266745824" resolveInfo="defineTestHeader" />
+      <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="6899932190960295297">
+        <link role="module" roleId="51wr.7717755763392524108" targetNodeId="sgaa.6899932190960172704" resolveInfo="defineTestHeader" />
       </node>
     </node>
   </root>
