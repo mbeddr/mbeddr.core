@@ -16,6 +16,7 @@ import org.eclipse.cdt.core.parser.FileContent;
 import org.eclipse.cdt.core.parser.IncludeFileContentProvider;
 import org.eclipse.cdt.core.parser.ScannerInfo;
 import org.eclipse.cdt.internal.core.dom.parser.c.CASTBinaryExpression;
+import org.eclipse.cdt.internal.core.dom.parser.c.CASTElaboratedTypeSpecifier;
 import org.eclipse.cdt.internal.core.dom.parser.c.CASTEnumerationSpecifier;
 import org.eclipse.cdt.internal.core.dom.parser.c.CASTLiteralExpression;
 import org.eclipse.cdt.internal.core.dom.parser.c.CASTTypedefNameSpecifier;
@@ -24,10 +25,10 @@ import org.eclipse.core.runtime.CoreException;
 public class EnumTestCase extends TestCase {
 
 	public void testBasicTest() throws CoreException {
-		StringBuilder content = new StringBuilder();
-		content.append("#define someNumber 7\n");
+		StringBuilder content = new StringBuilder();	
+		content.append("#define someNumber 3 \n");
 		content.append("enum simpleMonths {Apr, May, Jun}; \n");
-		content.append("simpleMonths refSimpleMonths; \n");
+		content.append("enum simpleMonths refSimpleMonths; \n");
 		content.append("typedef enum just3Month {Jan, Feb, Mar} typeSimpleMonth; \n");
 		content.append("enum monthsWithValues {Dec=12, Nov=11, Oct=10, Sep=3+1, Aug=someNumber} monthValue;\n");
 
@@ -105,6 +106,11 @@ public class EnumTestCase extends TestCase {
 						System.out.print("CASTEnumerationSpecifier " + specifier.getName());
 						fullyParsed = true;
 					}
+					if(CASTElaboratedTypeSpecifier.class.isInstance(simpleDeclaration.getDeclSpecifier())){
+						CASTElaboratedTypeSpecifier specifier = (CASTElaboratedTypeSpecifier) simpleDeclaration.getDeclSpecifier();
+						System.out.print("CASTElaboratedTypeSpecifier " + specifier.getName());
+						fullyParsed = true;
+					}					
 					if(!fullyParsed){
 						System.err.println(simpleDeclaration.getDeclSpecifier() + " not fully parsed ");
 					}

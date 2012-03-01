@@ -32,6 +32,7 @@
       <modulePath path="${project}/languages/com.mbeddr.core.unittest/unittest.mpl" folder="core" />
       <modulePath path="${project}/languages/com.mbeddr.core.util/util.mpl" folder="core" />
       <modulePath path="${project}/tests/aLibrary/aLibrary.msd" folder="tests" />
+      <modulePath path="${project}/tests/test.ex.core.cStubTestInclude/cStubTestInclude.mpl" folder="tests" />
       <modulePath path="${project}/tests/test.ex.core.libs/libs.msd" folder="tests" />
       <modulePath path="${project}/tests/test.ex.core/core.msd" folder="tests" />
       <modulePath path="${project}/tests/test.ex.errorreporting/errorreporting.msd" folder="tests" />
