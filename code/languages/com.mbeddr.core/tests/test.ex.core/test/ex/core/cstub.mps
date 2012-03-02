@@ -45,7 +45,7 @@
               <property name="value" nameId="mj1l.8860443239512128104" value="3" />
             </node>
             <node role="left" roleId="mj1l.8860443239512128064" type="x27k.GlobalConstantRef" typeId="x27k.3788988821852026523" id="8293603562008212599">
-              <link role="constant" roleId="x27k.3788988821852026524" targetNodeId="sgaa.6899932190960172705" resolveInfo="IntValue" />
+              <link role="constant" roleId="x27k.3788988821852026524" targetNodeId="sgaa.8835563695818860324" resolveInfo="IntValue" />
             </node>
           </node>
         </node>
@@ -55,7 +55,7 @@
               <property name="value" nameId="mj1l.8860443239512128104" value="10" />
             </node>
             <node role="left" roleId="mj1l.8860443239512128064" type="x27k.GlobalConstantRef" typeId="x27k.3788988821852026523" id="8293603562008212600">
-              <link role="constant" roleId="x27k.3788988821852026524" targetNodeId="sgaa.6899932190960172707" resolveInfo="HexValue" />
+              <link role="constant" roleId="x27k.3788988821852026524" targetNodeId="sgaa.8835563695818860326" resolveInfo="HexValue" />
             </node>
           </node>
         </node>
@@ -65,7 +65,7 @@
               <property name="value" nameId="mj1l.2088909457728253269" value="ImAString" />
             </node>
             <node role="left" roleId="mj1l.8860443239512128064" type="x27k.GlobalConstantRef" typeId="x27k.3788988821852026523" id="8293603562008212601">
-              <link role="constant" roleId="x27k.3788988821852026524" targetNodeId="sgaa.6899932190960172709" resolveInfo="StringValue" />
+              <link role="constant" roleId="x27k.3788988821852026524" targetNodeId="sgaa.8835563695818860328" resolveInfo="StringValue" />
             </node>
           </node>
         </node>
@@ -75,7 +75,7 @@
       <property name="name" nameId="tpck.1169194664001" value="empty_1330354704403_2" />
     </node>
     <node role="imports" roleId="x27k.1317894735999304826" type="x27k.ModuleImport" typeId="x27k.1317894735999299713" id="8293603562008212598">
-      <link role="module" roleId="x27k.1317894735999299714" targetNodeId="sgaa.6899932190960172704" resolveInfo="defineTestHeader" />
+      <link role="module" roleId="x27k.1317894735999299714" targetNodeId="sgaa.8835563695818860323" resolveInfo="defineTestHeader" />
     </node>
   </root>
   <root id="7605864222577497210">
@@ -184,7 +184,10 @@
         <link role="module" roleId="51wr.7717755763392524108" targetNodeId="5255370464256878052" resolveInfo="Driver" />
       </node>
       <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="6899932190960295297">
-        <link role="module" roleId="51wr.7717755763392524108" targetNodeId="sgaa.6899932190960172704" resolveInfo="defineTestHeader" />
+        <link role="module" roleId="51wr.7717755763392524108" targetNodeId="sgaa.8835563695818860323" resolveInfo="defineTestHeader" />
+      </node>
+      <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="8835563695819023381">
+        <link role="module" roleId="51wr.7717755763392524108" targetNodeId="sgaa.8835563695818860330" resolveInfo="enumTestHeader" />
       </node>
     </node>
   </root>
@@ -195,9 +198,18 @@
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="5255370464256863190">
       <property name="name" nameId="tpck.1169194664001" value="empty_1330354831054_4" />
     </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="5005347231632228968">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1330689767280_1" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="yz9a.TestCase" typeId="yz9a.6275792049641586523" id="5005347231632228970">
+      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
+      <property name="name" nameId="tpck.1169194664001" value="basicTest" />
+      <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="5005347231632228971" />
+      <node role="body" roleId="yz9a.6275792049641586525" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="5005347231632228972" />
+    </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="yz9a.TestCase" typeId="yz9a.6275792049641586523" id="5255370464256863191">
       <property name="exported" nameId="x27k.1317894735999272944" value="true" />
-      <property name="name" nameId="tpck.1169194664001" value="EnumBasicTest" />
+      <property name="name" nameId="tpck.1169194664001" value="enumTestResult" />
       <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="5255370464256863192" />
       <node role="body" roleId="yz9a.6275792049641586525" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="5255370464256863193">
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.AssignmentStatement" typeId="c4fa.6275792049641552210" id="4715377819726032786">
@@ -249,7 +261,10 @@
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="5255370464256863195">
       <property name="name" nameId="tpck.1169194664001" value="empty_1330354704403_2" />
     </node>
-    <node role="imports" roleId="x27k.1317894735999304826" type="x27k.ModuleImport" typeId="x27k.1317894735999299713" id="4715377819726032782">
+    <node role="imports" roleId="x27k.1317894735999304826" type="x27k.ModuleImport" typeId="x27k.1317894735999299713" id="5005347231632228965">
+      <link role="module" roleId="x27k.1317894735999299714" targetNodeId="sgaa.8835563695818860330" resolveInfo="enumTestHeader" />
+    </node>
+    <node role="imports" roleId="x27k.1317894735999304826" type="x27k.ModuleImport" typeId="x27k.1317894735999299713" id="5005347231632228967">
       <link role="module" roleId="x27k.1317894735999299714" targetNodeId="4715377819726032721" resolveInfo="EnumHeaderResult" />
     </node>
   </root>
@@ -270,7 +285,7 @@
               <link role="testcase" roleId="yz9a.5686538669182340986" targetNodeId="7605864222577497264" resolveInfo="defineBasicTest" />
             </node>
             <node role="tests" roleId="yz9a.5686538669182341016" type="yz9a.TestCaseRef" typeId="yz9a.5686538669182340985" id="5255370464256878090">
-              <link role="testcase" roleId="yz9a.5686538669182340986" targetNodeId="5255370464256863191" resolveInfo="EnumBasicTest" />
+              <link role="testcase" roleId="yz9a.5686538669182340986" targetNodeId="5255370464256863191" resolveInfo="enumTestResult" />
             </node>
           </node>
         </node>
@@ -390,13 +405,6 @@
       <node role="type" roleId="mj1l.318113533128716676" type="clbe.EnumType" typeId="clbe.8811614583515725893" id="4715377819726032774">
         <link role="enum" roleId="clbe.8811614583515725894" targetNodeId="4715377819726032751" resolveInfo="monthWithValues" />
       </node>
-    </node>
-    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="454832265266907075">
-      <property name="name" nameId="tpck.1169194664001" value="empty_1330598137378_4" />
-    </node>
-    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.GlobalVariableDeclaration" typeId="x27k.6610873504380335822" id="454832265266907077">
-      <property name="name" nameId="tpck.1169194664001" value="intValue3" />
-      <node role="type" roleId="mj1l.318113533128716676" type="mj1l.IntType" typeId="mj1l.8860443239512128108" id="454832265266907079" />
     </node>
   </root>
 </model>
