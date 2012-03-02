@@ -6,7 +6,6 @@
   <import index="yq40" modelUID="r:152b3fc0-83a1-4bab-a8cd-565eb8483785(com.mbeddr.core.pointers.structure)" version="1" />
   <import index="ywuz" modelUID="r:c6ce92e7-5a98-4a6f-866a-ec8b9e945dd8(com.mbeddr.core.expressions.behavior)" version="-1" />
   <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="10" />
-  <import index="x30c" modelUID="r:04a32be8-7074-4c9c-b2f8-77d4a01a19dc(com.mbeddr.core.buildconfig.debugger)" version="-1" />
   <import index="k7g3" modelUID="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.util(JDK/java.util@java_stub)" version="-1" />
   <import index="p8nh" modelUID="f:java_stub#37a3367b-1fb2-44d8-aa6b-18075e74e003#jetbrains.mps.debug.api.programState(MPS.Classpath/jetbrains.mps.debug.api.programState@java_stub)" version="-1" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
@@ -18,6 +17,7 @@
   <import index="tp2q" modelUID="r:00000000-0000-4000-0000-011c8959032e(jetbrains.mps.baseLanguage.collections.structure)" version="7" implicit="yes" />
   <import index="e2lb" modelUID="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" version="-1" implicit="yes" />
   <import index="tpib" modelUID="r:00000000-0000-4000-0000-011c8959057f(jetbrains.mps.baseLanguage.logging.structure)" version="0" implicit="yes" />
+  <import index="x30c" modelUID="r:04a32be8-7074-4c9c-b2f8-77d4a01a19dc(com.mbeddr.core.buildconfig.debugger)" version="-1" implicit="yes" />
   <roots>
     <node type="1i04.ConceptBehavior" typeId="1i04.1225194240794" id="279446265608462194">
       <property name="virtualPackage" nameId="tpck.1193676396447" value="pointers" />
@@ -163,7 +163,7 @@
                         <node role="operand" roleId="tpee.1197027771414" type="tpee.ParenthesizedExpression" typeId="tpee.1079359253375" id="8973067500929974434">
                           <node role="expression" roleId="tpee.1079359253376" type="tpee.CastExpression" typeId="tpee.1070534934090" id="8973067500929974430">
                             <node role="type" roleId="tpee.1070534934091" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="8973067500929974433">
-                              <link role="classifier" roleId="tpee.1107535924139" targetNodeId="x30c.8973067500929668169" resolveInfo="CPointerVariable" />
+                              <link role="classifier" roleId="tpee.1107535924139" targetNodeId="x30c.8973067500929668169" resolveInfo="CSimplePointerVariable" />
                             </node>
                             <node role="expression" roleId="tpee.1070534934092" type="tpee.ParameterReference" typeId="tpee.1068581242874" id="8973067500929973415">
                               <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="8973067500929973391" resolveInfo="cVariable" />
@@ -208,7 +208,7 @@
           </node>
           <node role="condition" roleId="tpee.1068580123160" type="tpee.InstanceOfExpression" typeId="tpee.1081256982272" id="7164231072192088067">
             <node role="classType" roleId="tpee.1081256993305" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="7164231072192088071">
-              <link role="classifier" roleId="tpee.1107535924139" targetNodeId="x30c.8973067500929668169" resolveInfo="CPointerVariable" />
+              <link role="classifier" roleId="tpee.1107535924139" targetNodeId="x30c.8973067500929668169" resolveInfo="CSimplePointerVariable" />
             </node>
             <node role="leftExpression" roleId="tpee.1081256993304" type="tpee.ParameterReference" typeId="tpee.1068581242874" id="7164231072192088072">
               <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="8973067500929973391" resolveInfo="cVariable" />
@@ -375,7 +375,7 @@
                     <node role="operand" roleId="tpee.1197027771414" type="tpee.ParenthesizedExpression" typeId="tpee.1079359253375" id="7459818927034546790">
                       <node role="expression" roleId="tpee.1079359253376" type="tpee.CastExpression" typeId="tpee.1070534934090" id="7459818927034546791">
                         <node role="type" roleId="tpee.1070534934091" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="7459818927034546792">
-                          <link role="classifier" roleId="tpee.1107535924139" targetNodeId="x30c.8973067500929668169" resolveInfo="CPointerVariable" />
+                          <link role="classifier" roleId="tpee.1107535924139" targetNodeId="x30c.8973067500929668169" resolveInfo="CSimplePointerVariable" />
                         </node>
                         <node role="expression" roleId="tpee.1070534934092" type="tpee.ParameterReference" typeId="tpee.1068581242874" id="7459818927034546793">
                           <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="7459818927034546767" resolveInfo="cVariable" />
@@ -746,7 +746,7 @@
           </node>
           <node role="condition" roleId="tpee.1068580123160" type="tpee.InstanceOfExpression" typeId="tpee.1081256982272" id="7164231072192093326">
             <node role="classType" roleId="tpee.1081256993305" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="7164231072192093327">
-              <link role="classifier" roleId="tpee.1107535924139" targetNodeId="x30c.8973067500929668169" resolveInfo="CPointerVariable" />
+              <link role="classifier" roleId="tpee.1107535924139" targetNodeId="x30c.8973067500929668169" resolveInfo="CSimplePointerVariable" />
             </node>
             <node role="leftExpression" roleId="tpee.1081256993304" type="tpee.ParameterReference" typeId="tpee.1068581242874" id="7164231072192093328">
               <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="8973067500929876195" resolveInfo="cVariable" />

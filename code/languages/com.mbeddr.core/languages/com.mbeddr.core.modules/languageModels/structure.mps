@@ -767,9 +767,6 @@
     <node role="extends" roleId="tpce.1169127546356" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="5708867820622082823">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="mj1l.318113533128716675" resolveInfo="ITyped" />
     </node>
-    <node role="extends" roleId="tpce.1169127546356" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="8628579007224197662">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="vs0r.8628579007224192794" resolveInfo="INameFirstCharLowerCase" />
-    </node>
   </root>
   <root id="2093108837558505658">
     <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="4058325937810995814">

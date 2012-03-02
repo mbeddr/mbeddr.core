@@ -1,0 +1,224 @@
+\section{Graphs}
+
+This section explains how you can create custom graphs from your models. mbeddr
+comes with the \ic{com.mbeddr.mpsutil.graph} language. It is an MPS language you
+can use to describe graphs. These graphs are then automatically translated into
+a \ic{.gv} file, which is then picked up by the graphview for rendering.
+
+\greyboxnote{This section assumes that you have a basic understanding of MPS
+generators.}
+
+\noindent The example code for this chapter can be found in
+\ic{code/applications/Callgraph}.
+
+A call graph shows the \emph{call} relationships between functions. Here is an
+example program:
+
+\begin{code}
+module Module1 { 
+   
+  void function1() { 
+    function2(); 
+    function3(); 
+  } 
+   
+  void function2() { 
+    function3(); 
+    function1(); 
+  } 
+   
+  void function3() { 
+    function4(); 
+    function2(); 
+  } 
+   
+  void function4() { 
+    function1(); 
+    function2(); 
+  } 
+   
+  int32_t main(int32_t argc, int8_t*[ ] argv) { 
+    function1(); 
+    return 0; 
+  } 
+}
+\end{code}
+
+Here is the resulting call graph diagram we are going to create in this chapter:
+
+\begin{center} 
+  \includegraphics[width=5cm]{figures/graph1.png}
+\end{center}
+
+\subsection{Setting up a Language}
+
+To define the transformation to the \ic{graph} language we have to define our
+own language, even though we're not going to define any new \emph{language}
+constructs, but just a generator. MPS still considers this a language.
+
+We create a new language \ic{callgraph}. It has to extend
+\ic{com.mbeddr.core.modules} (because it defines functions, and we want to
+create a callgraph between functions), \ic{com.mbeddr.core.buildconfig}
+(because we're going to hook the creation of the graph to the build
+configuration) and \ic{com.mbeddr.core.base} (because we'll need one specific
+concept from this language, as we'll see later).
+
+\subsection{Creating the Generator}
+
+In this new language we now create a new generator. It contains one root mapping
+rule that maps a \ic{BuildConfiguration} to a graph.
+
+\begin{center} 
+  \includegraphics[width=9cm]{figures/graph2.png}
+\end{center}
+
+The \ic{map\_BuildConfiguration} template creates the actual graph. It is a
+root template that uses a \ic{Graph} from the \ic{com.mbeddr.mpsutil.graph}
+language. To make this available, the generator model has to \ic{use} this
+language. Here is the empty \ic{Graph} node:
+
+\begin{center} 
+  \includegraphics[width=7cm]{figures/graph3.png}
+\end{center}
+
+If we generated this, it would create an empty and useless graph. So we now have
+to create a new \ic{Node} for each function in each module in the executable
+created by the build configuration from which we generate the graph. So we first
+create a \ic{node} object (that's a \ic{node} from the \ic{graph} language):
+
+\begin{code}
+node function id someID (shape: rect t:"function") style normal
+\end{code}
+
+We specify an arbitrary name (\ic{function}), an arbitrary ID (\ic{someID}), we
+use a \ic{rect} as the shape, a \ic{normal} style and a label that is also
+arbitrary (\ic{"function"}). Then we attach a \ic{LOOP} macro. It is used to
+iterate over all relevant functions using the following \ic{LOOP} code:
+
+\begin{code}
+sequence<node<Binary>> allExecutables = 
+  node.binaries.where({~it => it.isInstanceOf(Executable);}).
+  ofType<node<Executable>>; sequence<node<Module>> 
+allModules = allExecutables.
+  selectMany({~it => it.referencedModules.module; }); 
+allModules.selectMany({~it => it.descendants<concept = Function>; });
+\end{code}
+
+We then use a property macro on the function name that uses the qualified name
+of the function as the name of the node:
+
+\begin{code}
+node.qualifiedName().replaceAll("\\.", "_");
+\end{code}
+
+We put the function's internal node ID as the ID of the created graph node using
+another property macro:
+
+\begin{code}
+node.adapter.getId();
+\end{code}
+
+We use another property macro for the label of the node that also contains the
+qualified name of the function. Next up, we have to create an out edge for each
+function call in that function. So we add an out edge to the template graph node
+and \ic{LOOP} over all functions:
+
+\begin{center} 
+  \includegraphics[width=12cm]{figures/graph4.png}
+\end{center}
+
+Here is the expression we use in the \ic{LOOP} macro:
+
+\begin{center} 
+  \includegraphics[width=9cm]{figures/graph5.png}
+\end{center}
+
+We make the edge bidirectional (\ic{<-->}), we specify the ID to be the ID of
+the function call node (over which we currently iterate) and then we specify a
+\ic{dot} tail arrow style and a \ic{normal} head arrow style. Finally, we
+specify the target; we use the same \ic{function} node defined above as the
+target, and then use a reference macro (\ic{->}) to "rewire" the edge to its
+actual target node. Here is the expression in the reference macro:
+
+\begin{code}
+node.function.qualifiedName().replaceAll("\\.", "_");
+\end{code}
+
+That's all we need to do in the generator template.
+
+\subsection{Generator Priorities}
+
+We have to make sure that our generator runs at the right time during the
+overall, multistep transformation process. To make our lives simple, we simple
+have it run at the same time as the generator that create the module
+dependencies. It runs as part of every transformation by default. So we open the
+generator properties of the generator we just wrote and specify a dependency to
+the \ic{com.mbeddr.core.buildconfig} generator (it is the one creating the
+module dependency graph). 
+
+\begin{center} 
+  \includegraphics[width=9cm]{figures/graph6.png}
+\end{center}
+
+We then swap over to the next tab and specify that our generator runs at the
+same time (\ic{=}) as the \ic{com.mbeddr.core.buildconfig/main.dependencyGraph}.
+
+\begin{center} 
+  \includegraphics[width=9cm]{figures/graph7.png}
+\end{center}
+
+
+
+\subsection{Making the Generation Optional}
+
+mbeddr comes with a generic configuration framework. \ic{BuildConfiguration}s
+contain so-called configuration items:
+
+\begin{center} 
+  \includegraphics[width=8cm]{figures/graph8.png}
+\end{center}
+
+We create a configuration item; we only generate the graph if the \ic{callgraph}
+item is configured.
+
+\begin{center} 
+  \includegraphics[width=3cm]{figures/graph9.png}
+\end{center}
+
+To make enable this feature, we have to do two things. In our \ic{callgraph}
+language we create a new language concept called \ic{CallGraphConfigItem}. It
+has to implement the \ic{IConfigurationItem} interface for this to work. The
+editor for the concept is simply the constant \ic{callgraph}
+
+\begin{center} 
+  \includegraphics[width=10cm]{figures/graphA.png}
+\end{center}
+
+Finally, we have to make sure the transformation only runs if this item is
+present. To do this, we go back to the mapping configuration and to the root
+mapping rule we created earlier. We make this conditional on the presence of the
+configuration item:
+
+\begin{center} 
+  \includegraphics[width=12cm]{figures/graphB.png}
+\end{center}
+
+\subsection{Wrap Up}
+
+This finishes our implementation of the callgraph. You can now create some kind
+of example program (including a \ic{BuildConfiguration} with the
+\ic{callgraph} item). After rebuilding this example program, you should be able
+to open the graph viewer and see the new diagram:
+
+\begin{center} 
+  \includegraphics[width=12cm]{figures/graphC.png}
+\end{center}
+
+You can click on the boxes and select the function. You can also click on either
+end of the arrows and highlight the "outgoing" function calls.
+
+
+
+
+
+

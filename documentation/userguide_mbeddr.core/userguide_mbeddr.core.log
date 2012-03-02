@@ -1,28 +1,26 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=pdflatex 2011.7.3)  24 FEB 2012 12:59
+This is pdfTeX, Version 3.1415926-1.40.11 (MiKTeX 2.9) (preloaded format=pdflatex 2011.11.30)  25 FEB 2012 21:50
 entering extended mode
- restricted \write18 enabled.
- Source specials enabled.
- %&-line parsing enabled.
 **userguide_mbeddr.core.tex
-(./userguide_mbeddr.core.tex
+
+(L:\lwes-assembla\mbeddr.core\documentation\userguide_mbeddr.core\userguide_mbe
+ddr.core.tex
 LaTeX2e <2009/09/24>
-Babel <v3.8l> and hyphenation patterns for english, dumylang, nohyphenation, ge
-rman-x-2009-06-19, ngerman-x-2009-06-19, afrikaans, ancientgreek, ibycus, arabi
-c, armenian, basque, bulgarian, catalan, pinyin, coptic, croatian, czech, danis
-h, dutch, ukenglish, usenglishmax, esperanto, estonian, ethiopic, farsi, finnis
-h, french, galician, german, ngerman, swissgerman, monogreek, greek, hungarian,
- icelandic, assamese, bengali, gujarati, hindi, kannada, malayalam, marathi, or
-iya, panjabi, tamil, telugu, indonesian, interlingua, irish, italian, kurmanji,
- lao, latin, latvian, lithuanian, mongolian, mongolianlmc, bokmal, nynorsk, pol
-ish, portuguese, romanian, russian, sanskrit, serbian, serbianc, slovak, sloven
-ian, spanish, swedish, turkish, turkmen, ukrainian, uppersorbian, welsh, loaded
-.
-(./llncs.cls
+Babel <v3.8l> and hyphenation patterns for english, afrikaans, ancientgreek, ar
+abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
+croatian, czech, danish, dutch, esperanto, estonian, farsi, finnish, french, ga
+lician, german, german-x-2009-06-19, greek, gujarati, hindi, hungarian, iceland
+ic, indonesian, interlingua, irish, italian, kannada, kurmanji, lao, latin, lat
+vian, lithuanian, malayalam, marathi, mongolian, mongolianlmc, monogreek, ngerm
+an, ngerman-x-2009-06-19, nynorsk, oriya, panjabi, pinyin, polish, portuguese, 
+romanian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, swis
+sgerman, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, u
+senglishmax, welsh, loaded.
+(L:\lwes-assembla\mbeddr.core\documentation\userguide_mbeddr.core\llncs.cls
 Document Class: llncs 2010/07/12 v2.17 
  LaTeX document class for Lecture Notes in Computer Science
-(/usr/local/texlive/2011/texmf-dist/tex/latex/base/article.cls
+(C:\data\javadev\commonTools\miktex-2.9\tex\latex\base\article.cls
 Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
-(/usr/local/texlive/2011/texmf-dist/tex/latex/base/size10.clo
+(C:\data\javadev\commonTools\miktex-2.9\tex\latex\base\size10.clo
 File: size10.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
@@ -37,7 +35,7 @@ File: size10.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
 )
-(/usr/local/texlive/2011/texmf-dist/tex/latex/tools/multicol.sty
+(C:\data\javadev\commonTools\miktex-2.9\tex\latex\tools\multicol.sty
 Package: multicol 2008/12/05 v1.6h multicolumn formatting (FMi)
 \c@tracingmulticols=\count87
 \mult@box=\box26
@@ -84,10 +82,10 @@ Package: multicol 2008/12/05 v1.6h multicolumn formatting (FMi)
 \mult@nat@firstbox=\box50
 \colbreak@box=\box51
 )
-(/usr/local/texlive/2011/texmf-dist/tex/latex/oberdiek/aliascnt.sty
+(C:\data\javadev\commonTools\miktex-2.9\tex\latex\oberdiek\aliascnt.sty
 Package: aliascnt 2009/09/08 v1.3 Alias counter (HO)
 
-(/usr/local/texlive/2011/texmf-dist/tex/latex/carlisle/remreset.sty))
+(C:\data\javadev\commonTools\miktex-2.9\tex\latex\carlisle\remreset.sty))
 \c@chapter=\count95
 LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 362.
 LaTeX Font Info:    Redeclaring math symbol \Delta on input line 363.
@@ -139,10 +137,10 @@ LaTeX Font Info:    Redeclaring math symbol \Omega on input line 372.
 \c@remark=\count114
 \headlineindent=\dimen123
 )
-(/usr/local/texlive/2011/texmf-dist/tex/latex/amsfonts/amssymb.sty
+(C:\data\javadev\commonTools\miktex-2.9\tex\latex\amsfonts\amssymb.sty
 Package: amssymb 2009/06/22 v3.00
 
-(/usr/local/texlive/2011/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+(C:\data\javadev\commonTools\miktex-2.9\tex\latex\amsfonts\amsfonts.sty
 Package: amsfonts 2009/06/22 v3.00 Basic AMSFonts support
 \@emptytoks=\toks18
 \symAMSa=\mathgroup4
@@ -150,7 +148,7 @@ Package: amsfonts 2009/06/22 v3.00 Basic AMSFonts support
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 96.
 ))
-(/usr/local/texlive/2011/texmf-dist/tex/latex/soul/soul.sty
+(C:\Users\Markus\AppData\Roaming\MiKTeX\2.9\tex\latex\soul\soul.sty
 Package: soul 2003/11/17 v2.4 letterspacing/underlining (mf)
 \SOUL@word=\toks19
 \SOUL@lasttoken=\toks20
@@ -162,51 +160,44 @@ Package: soul 2003/11/17 v2.4 letterspacing/underlining (mf)
 \SOUL@uldp=\dimen125
 \SOUL@ulht=\dimen126
 )
-(/usr/local/texlive/2011/texmf-dist/tex/latex/graphics/graphicx.sty
+(C:\data\javadev\commonTools\miktex-2.9\tex\latex\graphics\graphicx.sty
 Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
 
-(/usr/local/texlive/2011/texmf-dist/tex/latex/graphics/keyval.sty
+(C:\data\javadev\commonTools\miktex-2.9\tex\latex\graphics\keyval.sty
 Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
 \KV@toks@=\toks24
 )
-(/usr/local/texlive/2011/texmf-dist/tex/latex/graphics/graphics.sty
+(C:\data\javadev\commonTools\miktex-2.9\tex\latex\graphics\graphics.sty
 Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
 
-(/usr/local/texlive/2011/texmf-dist/tex/latex/graphics/trig.sty
+(C:\data\javadev\commonTools\miktex-2.9\tex\latex\graphics\trig.sty
 Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
 )
-(/usr/local/texlive/2011/texmf-dist/tex/latex/latexconfig/graphics.cfg
-File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
+(C:\data\javadev\commonTools\miktex-2.9\tex\latex\00miktex\graphics.cfg
+File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
 )
 Package graphics Info: Driver file: pdftex.def on input line 91.
 
-(/usr/local/texlive/2011/texmf-dist/tex/latex/pdftex-def/pdftex.def
-File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
-
-(/usr/local/texlive/2011/texmf-dist/tex/generic/oberdiek/infwarerr.sty
-Package: infwarerr 2010/04/08 v1.3 Providing info/warning/message (HO)
-)
-(/usr/local/texlive/2011/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
-Package: ltxcmds 2011/04/18 v1.20 LaTeX kernel commands for general use (HO)
-)
+(C:\data\javadev\commonTools\miktex-2.9\tex\latex\pdftex-def\pdftex.def
+File: pdftex.def 2010/09/14 v0.05b Graphics/color for pdfTeX
 \Gread@gobject=\count115
 ))
 \Gin@req@height=\dimen127
 \Gin@req@width=\dimen128
 )
-(/usr/local/texlive/2011/texmf-dist/tex/latex/base/inputenc.sty
+(C:\data\javadev\commonTools\miktex-2.9\tex\latex\base\inputenc.sty
 Package: inputenc 2008/03/30 v1.1d Input encoding file
 \inpenc@prehook=\toks25
 \inpenc@posthook=\toks26
 
-(/usr/local/texlive/2011/texmf-dist/tex/latex/base/utf8.def
+(C:\data\javadev\commonTools\miktex-2.9\tex\latex\base\utf8.def
 File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
 Now handling font encoding OML ...
 ... no UTF-8 mapping file for font encoding OML
 Now handling font encoding T1 ...
 ... processing UTF-8 mapping file for font encoding T1
 
-(/usr/local/texlive/2011/texmf-dist/tex/latex/base/t1enc.dfu
+(C:\data\javadev\commonTools\miktex-2.9\tex\latex\base\t1enc.dfu
 File: t1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
    defining Unicode char U+00A1 (decimal 161)
    defining Unicode char U+00A3 (decimal 163)
@@ -356,7 +347,7 @@ File: t1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
 Now handling font encoding OT1 ...
 ... processing UTF-8 mapping file for font encoding OT1
 
-(/usr/local/texlive/2011/texmf-dist/tex/latex/base/ot1enc.dfu
+(C:\data\javadev\commonTools\miktex-2.9\tex\latex\base\ot1enc.dfu
 File: ot1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
    defining Unicode char U+00A1 (decimal 161)
    defining Unicode char U+00A3 (decimal 163)
@@ -387,7 +378,7 @@ File: ot1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
 Now handling font encoding OMS ...
 ... processing UTF-8 mapping file for font encoding OMS
 
-(/usr/local/texlive/2011/texmf-dist/tex/latex/base/omsenc.dfu
+(C:\data\javadev\commonTools\miktex-2.9\tex\latex\base\omsenc.dfu
 File: omsenc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
    defining Unicode char U+00A7 (decimal 167)
    defining Unicode char U+00B6 (decimal 182)
@@ -411,11 +402,11 @@ Now handling font encoding U ...
    defining Unicode char U+2122 (decimal 8482)
    defining Unicode char U+2423 (decimal 9251)
 ))
-(/usr/local/texlive/2011/texmf-dist/tex/latex/comment/comment.sty
+(C:\Users\Markus\AppData\Roaming\MiKTeX\2.9\tex\latex\comment\comment.sty
 \CommentStream=\write3
 
 Excluding comment 'comment')
-(/usr/local/texlive/2011/texmf-dist/tex/latex/wrapfig/wrapfig.sty
+(C:\Users\Markus\AppData\Roaming\MiKTeX\2.9\tex\latex\wrapfig\wrapfig.sty
 \wrapoverhang=\dimen129
 \WF@size=\dimen130
 \c@WF@wrappedlines=\count116
@@ -423,40 +414,36 @@ Excluding comment 'comment')
 \WF@everypar=\toks27
 Package: wrapfig 2003/01/31  v 3.6
 )
-(/usr/local/texlive/2011/texmf-dist/tex/latex/graphics/color.sty
+(C:\data\javadev\commonTools\miktex-2.9\tex\latex\graphics\color.sty
 Package: color 2005/11/14 v1.0j Standard LaTeX Color (DPC)
 
-(/usr/local/texlive/2011/texmf-dist/tex/latex/latexconfig/color.cfg
+(C:\data\javadev\commonTools\miktex-2.9\tex\latex\00miktex\color.cfg
 File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
 Package color Info: Driver file: pdftex.def on input line 130.
 )
-(/usr/local/texlive/2011/texmf-dist/tex/latex/base/fontenc.sty
+(C:\data\javadev\commonTools\miktex-2.9\tex\latex\base\fontenc.sty
 Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
 
-(/usr/local/texlive/2011/texmf-dist/tex/latex/base/t1enc.def
+(C:\data\javadev\commonTools\miktex-2.9\tex\latex\base\t1enc.def
 File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
 LaTeX Font Info:    Redeclaring font encoding T1 on input line 43.
-)) (./framed.sty
+))
+(L:\lwes-assembla\mbeddr.core\documentation\userguide_mbeddr.core\framed.sty
 Package: framed 2007/10/04 v 0.95: framed or shaded text with page breaks
 \fb@frw=\dimen131
 \fb@frh=\dimen132
 \FrameRule=\dimen133
 \FrameSep=\dimen134
 )
-(/usr/local/texlive/2011/texmf-dist/tex/latex/tools/verbatim.sty
+(C:\data\javadev\commonTools\miktex-2.9\tex\latex\tools\verbatim.sty
 Package: verbatim 2003/08/22 v1.5q LaTeX2e package for verbatim enhancements
 \every@verbatim=\toks28
 \verbatim@line=\toks29
 \verbatim@in@stream=\read1
 )
-(./userguide_mbeddr.core.aux
-
-LaTeX Warning: Label `addBuildConfiguraitonModel' multiply defined.
-
-)
-\openout1 = `userguide_mbeddr.core.aux'.
-
+(L:\lwes-assembla\mbeddr.core\documentation\userguide_mbeddr.core\userguide_mbe
+ddr.core.aux)
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 63.
 LaTeX Font Info:    ... okay on input line 63.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 63.
@@ -469,7 +456,8 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 63.
 LaTeX Font Info:    ... okay on input line 63.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 63.
 LaTeX Font Info:    ... okay on input line 63.
- (/usr/local/texlive/2011/texmf-dist/tex/context/base/supp-pdf.mkii
+
+(C:\Users\Markus\AppData\Roaming\MiKTeX\2.9\tex\context\base\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count117
 \scratchdimen=\dimen135
@@ -480,240 +468,171 @@ LaTeX Font Info:    ... okay on input line 63.
 \MPscratchCnt=\count120
 \MPscratchDim=\dimen136
 \MPnumerator=\count121
-\makeMPintoPDFobject=\count122
 \everyMPtoPDFconversion=\toks31
-) (/usr/local/texlive/2011/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
-Package: pdftexcmds 2011/04/22 v0.16 Utilities of pdfTeX for LuaTeX (HO)
-
-(/usr/local/texlive/2011/texmf-dist/tex/generic/oberdiek/ifluatex.sty
-Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
-Package ifluatex Info: LuaTeX not detected.
 )
-(/usr/local/texlive/2011/texmf-dist/tex/generic/oberdiek/ifpdf.sty
-Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
-Package ifpdf Info: pdfTeX in PDF mode is detected.
+LaTeX Font Info:    Try loading font information for U+msa on input line 65.
+ (C:\data\javadev\commonTools\miktex-2.9\tex\latex\amsfonts\umsa.fd
+File: umsa.fd 2009/06/22 v3.00 AMS symbols A
 )
-Package pdftexcmds Info: LuaTeX not detected.
-Package pdftexcmds Info: \pdf@primitive is available.
-Package pdftexcmds Info: \pdf@ifprimitive is available.
-Package pdftexcmds Info: \pdfdraftmode found.
+LaTeX Font Info:    Try loading font information for U+msb on input line 65.
+
+(C:\data\javadev\commonTools\miktex-2.9\tex\latex\amsfonts\umsb.fd
+File: umsb.fd 2009/06/22 v3.00 AMS symbols B
 )
-(/usr/local/texlive/2011/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
-Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
-
-(/usr/local/texlive/2011/texmf-dist/tex/latex/oberdiek/grfext.sty
-Package: grfext 2010/08/19 v1.1 Managing graphics extensions (HO)
-
-(/usr/local/texlive/2011/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
-Package: kvdefinekeys 2011/04/07 v1.3 Defining keys (HO)
-))
-(/usr/local/texlive/2011/texmf-dist/tex/latex/oberdiek/kvoptions.sty
-Package: kvoptions 2010/12/23 v3.10 Keyval support for LaTeX options (HO)
-
-(/usr/local/texlive/2011/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
-Package: kvsetkeys 2011/04/07 v1.13 Key value parser (HO)
-
-(/usr/local/texlive/2011/texmf-dist/tex/generic/oberdiek/etexcmds.sty
-Package: etexcmds 2011/02/16 v1.5 Prefix for e-TeX command names (HO)
-Package etexcmds Info: Could not find \expanded.
-(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
-(etexcmds)             that some package has redefined \expanded.
-(etexcmds)             In the latter case, load this package earlier.
-)))
-Package grfext Info: Graphics extension search list:
-(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
-G,.JBIG2,.JB2,.eps]
-(grfext)             \AppendGraphicsExtensions on input line 452.
-
-(/usr/local/texlive/2011/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
-File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
-e
-))
+(L:\lwes-assembla\mbeddr.core\documentation\userguide_mbeddr.core\abstract.ltx)
+(L:\lwes-assembla\mbeddr.core\documentation\userguide_mbeddr.core\body.ltx
+(L:\lwes-assembla\mbeddr.core\documentation\userguide_mbeddr.core\1-intro.ltx
 <logoWithSlogan.png, id=1, 233.87375pt x 62.2325pt>
 File: logoWithSlogan.png Graphic file (type png)
  <use logoWithSlogan.png>
-Package pdftex.def Info: logoWithSlogan.png used on input line 66.
-(pdftex.def)             Requested size: 233.87315pt x 62.23235pt.
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 70.
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 10.
 
-(/usr/local/texlive/2011/texmf-dist/tex/latex/base/t1cmtt.fd
+(C:\data\javadev\commonTools\miktex-2.9\tex\latex\base\t1cmtt.fd
 File: t1cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 ) [1
 
-{/usr/local/texlive/2011/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./logoW
-ithSlogan.png (PNG copy)>]
-LaTeX Font Info:    Try loading font information for U+msa on input line 79.
- (/usr/local/texlive/2011/texmf-dist/tex/latex/amsfonts/umsa.fd
-File: umsa.fd 2009/06/22 v3.00 AMS symbols A
-)
-LaTeX Font Info:    Try loading font information for U+msb on input line 79.
+{C:/Users/Markus/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <L:/lwes-as
+sembla/mbeddr.core/documentation/userguide_mbeddr.core/logoWithSlogan.png (PNG 
+copy)>]
+(L:\lwes-assembla\mbeddr.core\documentation\userguide_mbeddr.core\userguide_mbe
+ddr.core.toc [2
 
-(/usr/local/texlive/2011/texmf-dist/tex/latex/amsfonts/umsb.fd
-File: umsb.fd 2009/06/22 v3.00 AMS symbols B
-) (./abstract.ltx) (./body.ltx (./1-intro.ltx
-Overfull \hbox (13.51823pt too wide) in paragraph at lines 37--40
+])
+\tf@toc=\write4
+ [3]
+Overfull \hbox (13.51823pt too wide) in paragraph at lines 64--67
 | \T1/cmtt/m/n/10 http://www.oracle.com/technetwork/java/javase/downloads/index
 .html 
  []
 
-[2] [3] [4] [5] <figures/documentation.jpg, id=30, 398.48875pt x 118.4425pt>
+[4] [5]
+Overfull \hbox (13.50641pt too wide) in paragraph at lines 173--173
+[][]  \T1/cmtt/m/n/7 "<mbeddr-root>/code/languages/com.mbeddr.core/languages/co
+m.mbeddr.core.debug/lib/spawner/<os>"[] 
+ []
+
+[6] [7] [8] <figures/documentation.jpg, id=40, 398.48875pt x 118.4425pt>
 File: figures/documentation.jpg Graphic file (type jpg)
 
 <use figures/documentation.jpg>
-Package pdftex.def Info: figures/documentation.jpg used on input line 251.
-(pdftex.def)             Requested size: 256.0748pt x 76.11559pt.
- [6 <./figures/documentation.jpg>]
-<figures/commenting.jpg, id=34, 411.5375pt x 128.48pt>
+<figures/commenting.jpg, id=41, 411.5375pt x 128.48pt>
 File: figures/commenting.jpg Graphic file (type jpg)
 
-<use figures/commenting.jpg>
-Package pdftex.def Info: figures/commenting.jpg used on input line 267.
-(pdftex.def)             Requested size: 256.0748pt x 79.94495pt.
-) (./2-helloWorld.ltx [7 <./figures/commenting.jpg>] <figures/NewProject.png, i
-d=40, 843.15pt x 476.78125pt>
+<use figures/commenting.jpg> [9 <L:/lwes-assembla/mbeddr.core/documentation/use
+rguide_mbeddr.core/figures/documentation.jpg> <L:/lwes-assembla/mbeddr.core/doc
+umentation/userguide_mbeddr.core/figures/commenting.jpg>])
+(L:\lwes-assembla\mbeddr.core\documentation\userguide_mbeddr.core\2-helloWorld.
+ltx <figures/NewProject.png, id=45, 843.15pt x 476.78125pt>
 File: figures/NewProject.png Graphic file (type png)
 
 <use figures/NewProject.png>
-Package pdftex.def Info: figures/NewProject.png used on input line 14.
-(pdftex.def)             Requested size: 341.43306pt x 193.07352pt.
-
 Overfull \hbox (19.49278pt too wide) in paragraph at lines 17--22
 \T1/cmr/m/n/10 stalled via the dis-tri-bu-tion. Go to the $\OML/cmm/m/it/10 Fil
 e \OMS/cmsy/m/n/10 ! \OML/cmm/m/it/10 Settings$ \T1/cmr/m/n/10 and se-lect the 
 $\OML/cmm/m/it/10 GlobalLibraries$
  []
 
-<figures/SettingsGlobalLibraries.png, id=42, 486.81876pt x 400.49625pt>
+<figures/SettingsGlobalLibraries.png, id=47, 486.81876pt x 400.49625pt>
 File: figures/SettingsGlobalLibraries.png Graphic file (type png)
 
-<use figures/SettingsGlobalLibraries.png>
-Package pdftex.def Info: figures/SettingsGlobalLibraries.png used on input line
- 27.
-(pdftex.def)             Requested size: 284.52756pt x 234.07242pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [8 <./figures/NewProject.png>]
-<figures/workspacecontents.png, id=49, 311.9655pt x 272.217pt>
+<use figures/SettingsGlobalLibraries.png> [10 <L:/lwes-assembla/mbeddr.core/doc
+umentation/userguide_mbeddr.core/figures/NewProject.png>]
+<figures/workspacecontents.png, id=54, 311.9655pt x 272.217pt>
 File: figures/workspacecontents.png Graphic file (type png)
 
 <use figures/workspacecontents.png>
-Package pdftex.def Info: figures/workspacecontents.png used on input line 46.
-(pdftex.def)             Requested size: 227.62204pt x 198.62535pt.
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [9 <./figures/SettingsGlobalLibraries.png>]
-<figures/AddDependencies.png, id=56, 647.41875pt x 350.30875pt>
+ [11 <L:/lwes-assembla/mbeddr.core/documentation/userguide_mbeddr.core/figures/
+SettingsGlobalLibraries.png (PNG copy)>]
+<figures/AddDependencies.png, id=61, 647.41875pt x 350.30875pt>
 File: figures/AddDependencies.png Graphic file (type png)
 
 <use figures/AddDependencies.png>
-Package pdftex.def Info: figures/AddDependencies.png used on input line 65.
-(pdftex.def)             Requested size: 284.52756pt x 153.95457pt.
-
 Underfull \vbox (badness 1371) has occurred while \output is active []
 
- [10 <./figures/workspacecontents.png> <./figures/AddDependencies.png>]
-<figures/ContextMenuNewModule.png, id=61, 710.655pt x 151.56625pt>
+ [12 <L:/lwes-assembla/mbeddr.core/documentation/userguide_mbeddr.core/figures/
+workspacecontents.png> <L:/lwes-assembla/mbeddr.core/documentation/userguide_mb
+eddr.core/figures/AddDependencies.png (PNG copy)>]
+<figures/ContextMenuNewModule.png, id=66, 710.655pt x 151.56625pt>
 File: figures/ContextMenuNewModule.png Graphic file (type png)
 
 <use figures/ContextMenuNewModule.png>
-Package pdftex.def Info: figures/ContextMenuNewModule.png used on input line 88
-.
-(pdftex.def)             Requested size: 341.43306pt x 72.82034pt.
-
-<figures/EmptyModule.png, id=62, 465.74pt x 123.46124pt>
+<figures/EmptyModule.png, id=67, 465.74pt x 123.46124pt>
 File: figures/EmptyModule.png Graphic file (type png)
 
-<use figures/EmptyModule.png>
-Package pdftex.def Info: figures/EmptyModule.png used on input line 104.
-(pdftex.def)             Requested size: 256.0748pt x 67.88315pt.
- [11 <./figures/ContextMenuNewModule.png> <./figures/EmptyModule.png>]
-<figures/AddDefaultTSC.png, id=66, 382.42876pt x 261.97874pt>
+<use figures/EmptyModule.png> [13 <L:/lwes-assembla/mbeddr.core/documentation/u
+serguide_mbeddr.core/figures/ContextMenuNewModule.png (PNG copy)> <L:/lwes-asse
+mbla/mbeddr.core/documentation/userguide_mbeddr.core/figures/EmptyModule.png (P
+NG copy)>] <figures/AddDefaultTSC.png, id=72, 382.42876pt x 261.97874pt>
 File: figures/AddDefaultTSC.png Graphic file (type png)
 
-<use figures/AddDefaultTSC.png>
-Package pdftex.def Info: figures/AddDefaultTSC.png used on input line 128.
-(pdftex.def)             Requested size: 227.62204pt x 155.92924pt.
- [12 <./figures/AddDefaultTSC.png>]
-<figures/AddBuildConfiguration.png, id=70, 962.59625pt x 65.24374pt>
+<use figures/AddDefaultTSC.png> [14 <L:/lwes-assembla/mbeddr.core/documentation
+/userguide_mbeddr.core/figures/AddDefaultTSC.png (PNG copy)>]
+<figures/AddBuildConfiguration.png, id=76, 962.59625pt x 65.24374pt>
 File: figures/AddBuildConfiguration.png Graphic file (type png)
 
-<use figures/AddBuildConfiguration.png>
-Package pdftex.def Info: figures/AddBuildConfiguration.png used on input line 2
-13.
-(pdftex.def)             Requested size: 341.43306pt x 23.14127pt.
- [13 <./figures/AddBuildConfiguration.png>] [14] [15]) (./3-differences_to_regu
-lar_C.ltx [16] [17] [18]
+<use figures/AddBuildConfiguration.png> [15 <L:/lwes-assembla/mbeddr.core/docum
+entation/userguide_mbeddr.core/figures/AddBuildConfiguration.png (PNG copy)>]
+[16] [17])
+(L:\lwes-assembla\mbeddr.core\documentation\userguide_mbeddr.core\3-differences
+_to_regular_C.ltx
+Overfull \hbox (92.76884pt too wide) in paragraph at lines 36--42
+\T1/cmr/m/it/10 ported \T1/cmr/m/n/10 flag with the in-ten-tion \T1/cmr/m/it/10
+ Tog-gle Ex-port\T1/cmr/m/n/10 . The sec-ond mod-ule (\T1/cmtt/m/n/10 ModuleUsi
+ngTheExportedFunction\T1/cmr/m/n/10 )
+ []
 
-! Package inputenc Error: Unicode char \u8:� not set up for use with LaTeX.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.179 ...be specified in the \ic{used l�braries}
-                                                  
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-<figures/modelimport.png, id=90, 487.8225pt x 352.9185pt>
+[18] [19] [20] <figures/modelimport.png, id=96, 487.8225pt x 352.9185pt>
 File: figures/modelimport.png Graphic file (type png)
 
 <use figures/modelimport.png>
-Package pdftex.def Info: figures/modelimport.png used on input line 196.
-(pdftex.def)             Requested size: 341.43306pt x 247.01433pt.
-
-Overfull \hbox (43.28528pt too wide) in paragraph at lines 210--214
+Overfull \hbox (43.28528pt too wide) in paragraph at lines 219--223
 [][]\T1/cmr/m/n/10 New con-fig-u-ra-tion items can be con-tributed by im-ple-me
 nt-ing the \T1/cmtt/m/n/10 IConfigurationItem
  []
 
-[19] [20 <./figures/modelimport.png>]
-Overfull \hbox (6.04388pt too wide) in paragraph at lines 274--277
+[21] [22 <L:/lwes-assembla/mbeddr.core/documentation/userguide_mbeddr.core/figu
+res/modelimport.png>]
+Overfull \hbox (6.04388pt too wide) in paragraph at lines 286--289
 [][]\T1/cmr/m/n/10 If you change the as-ser-tion to \T1/cmtt/m/n/10 assert(1) -
 1 + 1 == 0;\T1/cmr/m/n/10 , re-build with \T1/cmtt/m/n/10 Ctrl-F9
  []
 
-[21]
+[23]
 File: figures/AddDefaultTSC.png Graphic file (type png)
- <use figures/AddDefaultTSC.png>
-Package pdftex.def Info: figures/AddDefaultTSC.png used on input line 306.
-(pdftex.def)             Requested size: 199.16928pt x 136.43759pt.
- [22] [23] [24]
-<figures/AddFunctionPointer.png, id=112, 365.365pt x 80.3pt>
+ <use figures/AddDefaultTSC.png> [24] [25] [26]
+<figures/AddFunctionPointer.png, id=118, 365.365pt x 80.3pt>
 File: figures/AddFunctionPointer.png Graphic file (type png)
 
 <use figures/AddFunctionPointer.png>
-Package pdftex.def Info: figures/AddFunctionPointer.png used on input line 481.
-
-(pdftex.def)             Requested size: 199.16928pt x 43.77303pt.
-
-Overfull \hbox (2.29114pt too wide) in paragraph at lines 489--496
+Overfull \hbox (2.29114pt too wide) in paragraph at lines 503--510
 \T1/cmr/m/n/10 lar C, you have use the ad-dress op-er-a-tor to ob-tain a func-t
 ion pointer (\T1/cmtt/m/n/10 &function\T1/cmr/m/n/10 ).
  []
 
-[25 <./figures/AddFunctionPointer.png>]
-Overfull \hbox (4.56836pt too wide) in paragraph at lines 527--533
+[27 <L:/lwes-assembla/mbeddr.core/documentation/userguide_mbeddr.core/figures/A
+ddFunctionPointer.png (PNG copy)>]
+Overfull \hbox (4.56836pt too wide) in paragraph at lines 541--547
 \T1/cmr/m/n/10 ex-am-ple. The type-def \T1/cmtt/m/n/10 typedef (int3_t, int32_t
 )=>(int32_t) as ftype; \T1/cmr/m/n/10 de-
  []
 
 
-Overfull \hbox (8.42853pt too wide) in paragraph at lines 527--533
+Overfull \hbox (8.42853pt too wide) in paragraph at lines 541--547
 \T1/cmr/m/n/10 fines a new func-tion type. The type \T1/cmtt/m/n/10 ftype \T1/c
 mr/m/n/10 is the first pa-ram-e-ter in the \T1/cmtt/m/n/10 doOperation
  []
 
 
-Overfull \hbox (32.03387pt too wide) in paragraph at lines 556--560
+Overfull \hbox (32.03387pt too wide) in paragraph at lines 570--574
 \T1/cmr/m/n/10 func-tion. The syn-tax for a lambda is \T1/cmtt/m/n/10 [arg1, ar
 g2, ...|an-expression-using-args]\T1/cmr/m/n/10 .
  []
 
-[26] [27] [28] [29]) (./4-advanced.ltx [30]
+[28] [29] [30] [31])
+(L:\lwes-assembla\mbeddr.core\documentation\userguide_mbeddr.core\4-advanced.lt
+x [32]
 Overfull \hbox (76.7096pt too wide) in paragraph at lines 65--65
 [][]\T1/cmtt/m/n/7 [mps.generate] Loaded project MPSProject file: L:\lwes-assem
 bla\mbeddr\code\applications\HelloWorld\HelloWorld.mpr[] 
@@ -725,71 +644,170 @@ Overfull \hbox (35.81342pt too wide) in paragraph at lines 68--68
 code\applications\HelloWorld\HelloWorld.mpr[] 
  []
 
-[31]
+[33] [34]
 Overfull \hbox (2.60077pt too wide) in paragraph at lines 135--140
 \T1/cmr/m/n/10 plies as for lan-guages. If these are other so-lu-tions to which
  the MPS-integrated
  []
 
-[32] <figures/green.jpg, id=139, 496.85625pt x 278.03876pt>
+<figures/green.jpg, id=144, 496.85625pt x 278.03876pt>
 File: figures/green.jpg Graphic file (type jpg)
-
-<use figures/green.jpg>
-Package pdftex.def Info: figures/green.jpg used on input line 162.
-(pdftex.def)             Requested size: 256.0748pt x 143.29973pt.
-
+ <use figures/green.jpg>
+[35 <L:/lwes-assembla/mbeddr.core/documentation/userguide_mbeddr.core/figures/g
+reen.jpg>]
 Overfull \hbox (3.73889pt too wide) in paragraph at lines 180--185
 [][]\T1/cmr/m/n/10 In ad-di-tion you can use the \T1/cmtt/m/n/10 Changes \T1/cm
 r/m/n/10 view (from the \T1/cmtt/m/n/10 Window -> Tool Windows
  []
 
-<figures/changesview.jpg, id=140, 772.8875pt x 216.81pt>
+<figures/changesview.jpg, id=148, 772.8875pt x 216.81pt>
 File: figures/changesview.jpg Graphic file (type jpg)
 
-<use figures/changesview.jpg>
-Package pdftex.def Info: figures/changesview.jpg used on input line 188.
-(pdftex.def)             Requested size: 341.43306pt x 95.77713pt.
+<use figures/changesview.jpg> [36 <L:/lwes-assembla/mbeddr.core/documentation/u
+serguide_mbeddr.core/figures/changesview.jpg>] [37])
+(L:\lwes-assembla\mbeddr.core\documentation\userguide_mbeddr.core\5-debugging.l
+tx [38] <figures/debugger2.png, id=159, 560.69475pt x 379.4175pt>
+File: figures/debugger2.png Graphic file (type png)
 
+<use figures/debugger2.png>
+<figures/debugger3.png, id=160, 750.805pt x 338.26375pt>
+File: figures/debugger3.png Graphic file (type png)
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+<use figures/debugger3.png> [39 <L:/lwes-assembla/mbeddr.core/documentation/use
+rguide_mbeddr.core/figures/debugger2.png> <L:/lwes-assembla/mbeddr.core/documen
+tation/userguide_mbeddr.core/figures/debugger3.png (PNG copy)>]
+<figures/debugger4.png, id=165, 210.18526pt x 78.2925pt>
+File: figures/debugger4.png Graphic file (type png)
 
-[33 <./figures/green.jpg>] [34 <./figures/changesview.jpg>] [35])
-(./5-debugging.ltx)) [36] (./userguide_mbeddr.core.aux)
+<use figures/debugger4.png>
+<figures/debugger1.png, id=166, 552.26324pt x 352.31625pt>
+File: figures/debugger1.png Graphic file (type png)
 
-LaTeX Warning: There were multiply-defined labels.
+<use figures/debugger1.png>
+<figures/debugger5.png, id=167, 214.401pt x 78.89474pt>
+File: figures/debugger5.png Graphic file (type png)
 
- ) 
+<use figures/debugger5.png>
+<figures/debugger6.png, id=168, 579.3645pt x 426.393pt>
+File: figures/debugger6.png Graphic file (type png)
+
+<use figures/debugger6.png> [40 <L:/lwes-assembla/mbeddr.core/documentation/use
+rguide_mbeddr.core/figures/debugger4.png> <L:/lwes-assembla/mbeddr.core/documen
+tation/userguide_mbeddr.core/figures/debugger1.png> <L:/lwes-assembla/mbeddr.co
+re/documentation/userguide_mbeddr.core/figures/debugger5.png>]
+<figures/debugger7.png, id=175, 576.9555pt x 422.17725pt>
+File: figures/debugger7.png Graphic file (type png)
+
+<use figures/debugger7.png>)
+(L:\lwes-assembla\mbeddr.core\documentation\userguide_mbeddr.core\6-generatingG
+raphs.ltx
+Underfull \vbox (badness 3907) has occurred while \output is active []
+
+ [41 <L:/lwes-assembla/mbeddr.core/documentation/userguide_mbeddr.core/figures/
+debugger6.png> <L:/lwes-assembla/mbeddr.core/documentation/userguide_mbeddr.cor
+e/figures/debugger7.png>]
+Overfull \hbox (11.31671pt too wide) in paragraph at lines 11--13
+[]\T1/cmr/m/n/10 The ex-am-ple code for this chap-ter can be found in \T1/cmtt/
+m/n/10 code/applications/Callgraph\T1/cmr/m/n/10 . 
+ []
+
+<figures/graph1.png, id=181, 178.266pt x 258.9675pt>
+File: figures/graph1.png Graphic file (type png)
+ <use figures/graph1.png>
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [42]
+Overfull \hbox (21.42902pt too wide) in paragraph at lines 59--65
+[][]\T1/cmr/m/n/10 We cre-ate a new lan-guage \T1/cmtt/m/n/10 callgraph\T1/cmr/
+m/n/10 . It has to ex-tend \T1/cmtt/m/n/10 com.mbeddr.core.modules
+ []
+
+<figures/graph2.png, id=185, 320.397pt x 65.043pt>
+File: figures/graph2.png Graphic file (type png)
+ <use figures/graph2.png>
+<figures/graph3.png, id=186, 187.29974pt x 117.43875pt>
+File: figures/graph3.png Graphic file (type png)
+
+<use figures/graph3.png> [43 <L:/lwes-assembla/mbeddr.core/documentation/usergu
+ide_mbeddr.core/figures/graph1.png> <L:/lwes-assembla/mbeddr.core/documentation
+/userguide_mbeddr.core/figures/graph2.png>] [44 <L:/lwes-assembla/mbeddr.core/d
+ocumentation/userguide_mbeddr.core/figures/graph3.png>]
+<figures/graph4.png, id=197, 380.01974pt x 177.0615pt>
+File: figures/graph4.png Graphic file (type png)
+
+<use figures/graph4.png> <figures/graph5.png, id=198, 354.123pt x 66.84975pt>
+File: figures/graph5.png Graphic file (type png)
+
+<use figures/graph5.png>
+<figures/graph6.png, id=199, 494.44725pt x 339.06676pt>
+File: figures/graph6.png Graphic file (type png)
+
+<use figures/graph6.png> [45 <L:/lwes-assembla/mbeddr.core/documentation/usergu
+ide_mbeddr.core/figures/graph4.png> <L:/lwes-assembla/mbeddr.core/documentation
+/userguide_mbeddr.core/figures/graph5.png>]
+<figures/graph7.png, id=205, 410.7345pt x 225.2415pt>
+File: figures/graph7.png Graphic file (type png)
+ <use figures/graph7.png>
+<figures/graph8.png, id=206, 291.489pt x 196.3335pt>
+File: figures/graph8.png Graphic file (type png)
+ <use figures/graph8.png>
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [46 <L:/lwes-assembla/mbeddr.core/documentation/userguide_mbeddr.core/figures/
+graph6.png> <L:/lwes-assembla/mbeddr.core/documentation/userguide_mbeddr.core/f
+igures/graph7.png>] <figures/graph9.png, id=212, 115.632pt x 42.1575pt>
+File: figures/graph9.png Graphic file (type png)
+
+<use figures/graph9.png> <figures/graphA.png, id=213, 289.08pt x 199.947pt>
+File: figures/graphA.png Graphic file (type png)
+
+<use figures/graphA.png>
+<figures/graphB.png, id=214, 408.3255pt x 112.62074pt>
+File: figures/graphB.png Graphic file (type png)
+
+<use figures/graphB.png> [47 <L:/lwes-assembla/mbeddr.core/documentation/usergu
+ide_mbeddr.core/figures/graph8.png> <L:/lwes-assembla/mbeddr.core/documentation
+/userguide_mbeddr.core/figures/graph9.png> <L:/lwes-assembla/mbeddr.core/docume
+ntation/userguide_mbeddr.core/figures/graphA.png>]
+<figures/graphC.png, id=221, 764.8575pt x 508.90125pt>
+File: figures/graphC.png Graphic file (type png)
+
+<use figures/graphC.png>)) [48 <L:/lwes-assembla/mbeddr.core/documentation/user
+guide_mbeddr.core/figures/graphB.png> <L:/lwes-assembla/mbeddr.core/documentati
+on/userguide_mbeddr.core/figures/graphC.png>]
+(L:\lwes-assembla\mbeddr.core\documentation\userguide_mbeddr.core\userguide_mbe
+ddr.core.aux) ) 
 Here is how much of TeX's memory you used:
- 3097 strings out of 493633
- 41070 string characters out of 3143378
- 101292 words of memory out of 3000000
- 6279 multiletter control sequences out of 15000+200000
+ 2706 strings out of 494019
+ 36687 string characters out of 3141698
+ 92778 words of memory out of 3000000
+ 5889 multiletter control sequences out of 15000+200000
  19150 words of font info for 50 fonts, out of 3000000 for 9000
- 831 hyphenation exceptions out of 8191
- 38i,9n,24p,260b,289s stack positions out of 5000i,500n,10000p,200000b,50000s
-{/usr/local/texlive/2011/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}
-</usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><
-/usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></us
-r/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/l
-ocal/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/lo
-cal/texlive/2011/texmf-dist/fonts/type1/public/cm-super/sfbi1000.pfb></usr/loca
-l/texlive/2011/texmf-dist/fonts/type1/public/cm-super/sfbx0900.pfb></usr/local/
-texlive/2011/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/local/te
-xlive/2011/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texl
-ive/2011/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texliv
-e/2011/texmf-dist/fonts/type1/public/cm-super/sfrm0600.pfb></usr/local/texlive/
-2011/texmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb></usr/local/texlive/20
-11/texmf-dist/fonts/type1/public/cm-super/sfrm0900.pfb></usr/local/texlive/2011
-/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2011/t
-exmf-dist/fonts/type1/public/cm-super/sfti0900.pfb></usr/local/texlive/2011/tex
-mf-dist/fonts/type1/public/cm-super/sfti1000.pfb></usr/local/texlive/2011/texmf
--dist/fonts/type1/public/cm-super/sftt0800.pfb></usr/local/texlive/2011/texmf-d
-ist/fonts/type1/public/cm-super/sftt0900.pfb></usr/local/texlive/2011/texmf-dis
-t/fonts/type1/public/cm-super/sftt1000.pfb>
-Output written on userguide_mbeddr.core.pdf (36 pages, 921093 bytes).
+ 714 hyphenation exceptions out of 8191
+ 29i,9n,24p,241b,284s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/data/javadev/commonTools/miktex-2.9/fonts/enc/dvips/cm-super
+/cm-super-t1.enc}<C:/data/javadev/commonTools/miktex-2.9/fonts/type1/public/ams
+fonts/cm/cmmi10.pfb><C:/data/javadev/commonTools/miktex-2.9/fonts/type1/public/
+amsfonts/cm/cmr6.pfb><C:/data/javadev/commonTools/miktex-2.9/fonts/type1/public
+/amsfonts/cm/cmr7.pfb><C:/data/javadev/commonTools/miktex-2.9/fonts/type1/publi
+c/amsfonts/cm/cmsy10.pfb><C:/data/javadev/commonTools/miktex-2.9/fonts/type1/pu
+blic/cm-super/sfbi1000.pfb><C:/data/javadev/commonTools/miktex-2.9/fonts/type1/
+public/cm-super/sfbx0900.pfb><C:/data/javadev/commonTools/miktex-2.9/fonts/type
+1/public/cm-super/sfbx1000.pfb><C:/data/javadev/commonTools/miktex-2.9/fonts/ty
+pe1/public/cm-super/sfbx1200.pfb><C:/data/javadev/commonTools/miktex-2.9/fonts/
+type1/public/cm-super/sfbx1440.pfb><C:/data/javadev/commonTools/miktex-2.9/font
+s/type1/public/cm-super/sfrm0600.pfb><C:/data/javadev/commonTools/miktex-2.9/fo
+nts/type1/public/cm-super/sfrm0700.pfb><C:/data/javadev/commonTools/miktex-2.9/
+fonts/type1/public/cm-super/sfrm0900.pfb><C:/data/javadev/commonTools/miktex-2.
+9/fonts/type1/public/cm-super/sfrm1000.pfb><C:/data/javadev/commonTools/miktex-
+2.9/fonts/type1/public/cm-super/sfti0900.pfb><C:/data/javadev/commonTools/mikte
+x-2.9/fonts/type1/public/cm-super/sfti1000.pfb><C:/data/javadev/commonTools/mik
+tex-2.9/fonts/type1/public/cm-super/sftt0800.pfb><C:/data/javadev/commonTools/m
+iktex-2.9/fonts/type1/public/cm-super/sftt0900.pfb><C:/data/javadev/commonTools
+/miktex-2.9/fonts/type1/public/cm-super/sftt1000.pfb>
+Output written on userguide_mbeddr.core.pdf (48 pages, 1788919 bytes).
 PDF statistics:
- 212 PDF objects out of 1000 (max. 8388607)
- 136 compressed objects within 2 object streams
+ 286 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 76 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 171 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,3 +1,32 @@
+
+\vspace{50mm}
+
+
+\begin{center} 
+  \includegraphics{logoWithSlogan.png}
+
+\vspace{5mm}
+This document is part of the \\ 
+mbeddr project at \ic{http://mbeddr.com}. 
+
+\vspace{5mm}
+This document is licensed under the \\ 
+Eclipse Public License 1.0 (EPL).
+\end{center}
+
+
+
+\newpage
+
+
+\setcounter{tocdepth}{2}
+\tableofcontents
+ 
+\newpage
+
+
+
+
 \section{Introduction}
 
 \subsection{Specific Challenges in Embedded Development}
@@ -52,7 +81,8 @@ others, are prohibited in many organizations. Standards such as MISRA-C limit
 the language subset to what is considered \emph{safe}. However, most C IDEs are
 not out of the box MISRA-C aware, so separate checkers have to be used and they
 may or may not be integrated with developers' tools. This makes it hard for
-developers to use the safe language subset of C efficiently.
+developers to use the safe language subset of C efficiently.
+
 
 \paragraph{$C_4$: Inclusion of Meta Data} Non-trivial embedded systems often
 associate various kinds of meta data with program elements. Examples include
@@ -120,7 +150,8 @@ independent languages: the embedded language has no dependency on the language
 it is embedded in. In language \emph{extension}, the extensions depend on the
 extended language, for example, by inheriting from language concepts defined in
 the base language. The extensible C language described in this paper mainly uses
-language extension: the extended languages depend on C as the base language.
+language extension: the extended languages depend on C as the base language.
+
 
 Language extension as we understand it provides deep syntactic and semantic
 integration, as well as an IDE that is aware of the language extensions. It is
@@ -154,7 +185,8 @@ language may become big and unwieldy. Thus, extensions have to be
 \emph{modular}. They have to be created without modifying the original core
 language, and unintended interactions between independently created extensions
 must be taken care of. Users must be able to include only those language modules
-they actually need.
+they actually need.
+
 
 \subsection{Ways to extend C}
 \label{ways}

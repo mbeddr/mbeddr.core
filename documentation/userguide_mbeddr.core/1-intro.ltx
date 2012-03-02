@@ -1,3 +1,30 @@
+
+\vspace{50mm}
+
+
+\begin{center} 
+  \includegraphics{logoWithSlogan.png}
+
+\vspace{5mm}
+This document is part of the \\ 
+mbeddr project at \ic{http://mbeddr.com}. 
+
+\vspace{5mm}
+This document is licensed under the \\ 
+Eclipse Public License 1.0 (EPL).
+\end{center}
+
+
+
+\newpage
+
+
+\setcounter{tocdepth}{2}
+\tableofcontents
+ 
+\newpage
+
+
 \section{Language Use vs. Language Development}
 
 This document focuses on the C programmer who wants to exploit the benefits of
@@ -105,9 +132,6 @@ in the same way as above:
 set PATH=C:\ide\graphviz2.28\bin;%PATH%
 \end{code}
 
-To enable the graphviz viewer directly in MPS, you have to also put a number of
-JAR files into the plugins directory of MPS itself. \todo{}
-
 \subsection{mbeddr}
 
 You can get the mbeddr code either via distributions or via the public github
@@ -124,6 +148,37 @@ or you can fork it to your own github account so you can make changes. Contact
 us if you want to become a committer.
 \end{description}
 
+
+\subsection{Debugger}
+
+The mbeddr debugger is based on \ic{gdb}, which has been installed as part of
+the Cygwin install. However, we don't use \ic{gdb} directly; rather we use the
+Eclipse CDT debug bridge. This contains a native code, and Java has to be able
+to find this native code. Hence, the \ic{java.library.path} property has to be
+set as part of the MPS JVM startup. It has to point to a path that depends on
+your OS platform. 
+
+Open the mps startup script (\ic{.bat} or \ic{.sh}) and look for the line that
+begins with
+
+\begin{code}
+set ADDITIONAL_JVM_ARGS=
+\end{code}
+
+It should be used to set the property, as shown in the following code (keep it
+in one line!):
+
+\begin{code}
+set ADDITIONAL_JVM_ARGS=-Djava.library.path=
+  "<mbeddr-root>/code/languages/com.mbeddr.core/languages/com.mbeddr.core.debug/lib/spawner/<os>"
+\end{code}
+
+The \ic{<mbeddr-root>} points to the root directory of the mbeddr languages as
+cloned from github or unzipped after download. \ic{<os>} has to be set
+specifically for your platform, it can be any of \ic{linux.x86},
+\ic{linux.x86\_64}, \ic{macosx..x86\_64}, \ic{macosx.ppc}, \ic{macosx.x86},
+\ic{win32.x86}, \ic{win32.x86\_64}. We suggest you take a look at the respective directory
+structure to better understand what's going on.
 
 
 \section{Important keyboard shortcuts in MPS and mbeddr}

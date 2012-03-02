@@ -1,6 +1,6 @@
 \section{Differences to regular C}
 
-This section describes the differences between \emph{mbeddr C} and regluar C 99.
+This section describes the differences between \emph{mbeddr C} and regular C99.
 All examples shown in this chapter can be found in the \emph{HelloWorld} project
 that is available for download together with the \emph{mbeddr.core}
 distribution.
@@ -11,16 +11,19 @@ distribution.
 mbeddr C does not support the preprocessor. Instead we provide first class
 concepts for the various use cases of the C preprocessor. This avoids some of
 the chaos that can be created by misusing the preprocessor and provides much
-better analyzability. We will provide examples later. The first example is the
-module system explained in the next section.
+better analyzability. We will provide examples later.
+
+The major consequence of not having a preprocessor is that the separation
+between header and implementation file does not work anymore. mbeddr provides
+\ic{modules} instead.
 
 
 \subsection{Modules}
 
 While we \emph{generate} header files, we don't \emph{expose} them to the
-programmer in MPS. Instead, we have defined modules as the top-level concept.
+user in MPS. Instead, we have defined modules as the top-level concept.
 Modules also act as a kind of namespace. Module contents can be exported, in
-which case, if that module is imported by another module, the exported contents
+which case, if a module is imported by another module, the exported contents
 can be used by the importing module.
 
 
@@ -30,10 +33,10 @@ pre-existing header files that we want to be able to use from within mbeddr C
 programs.
 
 
-\paragraph{Implementation modules} The following example shows an implementation
+\paragraph{Implementation Modules} The following example shows an implementation
 module (\ic{ImplementationModule}) with an exported function. You can toggle the
-\emph{exported} flag with the intention \intention{export} or \intention{export:
-remove}. The second module (\ic{ModuleUsingTheExportedFunction}) imports the
+\emph{exported} flag with the intention \intention{Toggle Export}. The second
+module (\ic{ModuleUsingTheExportedFunction}) imports the
 \ic{ImplementationModule} with the \ic{imports} keyword in the module header. An
 importing module can access all exported contents defined in imported modules.
 
@@ -51,7 +54,7 @@ module ModuleUsingTheExportedFunction from HelloWorld.ImplementationModules
   imports ImplementationModule {
 
   int32_t main(int8_t argc, string[ ] args) { 
-    int32_t result = ImplementationModule::add(10, 15); 
+    int32_t result = add(10, 15); 
     return 0; 
   } main (function) 
 }
@@ -76,15 +79,15 @@ code and existing C libraries. So to call existing functions or instantiate
   corresponding build configuration.
 \end{itemize}
 
-\greyboxnote{In the future we will provide a mechanism to automatically import existing
-header files into an external module. As of now, the relevant signatures etc.
-have to be typed in manually.}
+\greyboxnote{In the future we will provide a mechanism to automatically import
+existing header files into an external module. As of now, the relevant
+signatures etc. have to be typed in manually.}
 
 The following code shows the external module \ic{STDIO}. In the
 \ic{resources} section, you have to provide the path to the resources
 associated with this external module. You can add \ic{header}s and
-\ic{linkable}s here. Since gcc knows what to link when \ic{<stdio.h>} is
-included, we don't have to specify a linkable here. 
+\ic{linkable}s (\ic{.o} or \ic{.a} files) here. Since \ic{gcc} knows what to
+link when \ic{<stdio.h>} is included, we don't have to specify a linkable here. 
 
 \begin{code}
 external module STDIO resources header : <stdio.h> 
@@ -102,7 +105,7 @@ the \ic{printf} function defined in the external module.
 module MainApp from HelloWorld.ExternalModules imports STDIO { 
    
   int32_t main() { 
-    STDIO::printf("Dies ist ein stdout.printf Text: %s\n", "Noch einer"); 
+    printf("Dies ist ein stdout.printf Text: %s\n", "Noch einer"); 
     return 0; 
   } main (function) 
 }
@@ -121,15 +124,20 @@ repeat the basics here.
 The main part of the build configuration supports the definition of binaries.
 Binaries are either executables or libraries. 
 
-\paragraph{Executables} An exectuable binds together a set of modules references
-in the program, and compiles it into an executable. Exactly one module in a 
-executable shall have a main function.
+\paragraph{Executables} An executable binds together a set of modules and
+compiles them into an executable. Exactly one module in a executable shall have
+a main function.
 
 The build configuration, if it uses the \ic{desktop} target, results in a
 \ic{make} file which is automatically invoked as part of the MPS build,
 resulting in the corresponding executable binaries. The generated code, the make
 file and the executables can be found in the \ic{source\_gen} folder of the
 respective solution.
+
+\greyboxnote{The build language is designed to be extended for integration with
+other build infrastructures. In that case, other targets (than \ic{desktop})
+would be provided by the language that provides integration with a particular
+build infrastructure.}
 
 Below is the build configuration of the \ic{ExternalModules} example. It defines
 one executable \ic{Application}. It consist of the modules \ic{MainApp} and
@@ -163,20 +171,20 @@ static library MathLib {
 
 Running the resulting make file will create a \ic{libMathLib.a}.
 
-Using the library for inclusion in an executable (that \emph{has} to be in a
-different MPS model!) there are three steps:
+Using the library for inclusion in an executable (which \emph{has} to be in a
+different MPS model!) requires the following three steps:
 
 \begin{itemize}
   \item You have to import the model. Open the properties of the model that
   contains the code that \emph{uses} the library, and add the model that
-  contains the library to the \ic{Imported Models} (see figure below). This is
-  necessary so that MPS can see the nodes defined in that model.
+  \emph{contains} the library to the \ic{Imported Models} (\fig{modelImport}).
+  This is necessary so that MPS can see the nodes defined in that model.
   \item In the implementation module that wants to use the functionality defined
-  in the library, import the corresponding module. The importing module will see
-  all the exported contents in the imported module (this is just like any other
-  inter-module dependency).
+  in the library, import the corresponding module(s) from the library. The
+  importing module will see all the exported contents in the imported module 
+  (this is just like any other inter-module dependency).
   \item finally, in the build configuration of the executable that \emph{uses}
-  the library, that used library has to be specified in the \ic{used l�braries}
+  the library, the used library has to be specified in the \ic{used libraries}
   section. 
 \end{itemize}
 
@@ -198,8 +206,9 @@ executable AnExe isTest: true {
 	\vspace{-0.3cm}
 	\rule{\textwidth}{0.7pt}
 	\caption{Importing a model that contains a library}
-	\label{addBuildConfiguraitonModel}  
+	\label{modelImport}  
 \end{figure}
+
 
 \subsubsection{Extending the Build Process}
 
@@ -215,14 +224,17 @@ discuss details in the extension guide, but here are a couple of hints:
   Users then also have to provide a generator for \ic{BuildConfigurations}.
 \end{itemize} 
 
+
+
 \subsection{Unit tests}
 
 Unit Tests are supported as first class citizens by mbeddr C. A \ic{TestCase}
 implements \ic{IModuleContent}, so it can be used in implementation modules
-alongside with functions, structs or global variables. To assert the corecctness
-of a result you have to use the \ic{assert} statement followed by an boolean
-expression (note that \ic{assert} really can just be used inside test cases). A
-\ic{fail} statement is also available --- it fails the test unconditionally.
+alongside with functions, \ic{struct}s or global variables. To assert the
+correctness of a result you have to use the \ic{assert} statement followed by an
+Boolean expression (note that \ic{assert} can just be used \emph{only }inside
+test cases). A \ic{fail} statement is also available --- it fails the test
+unconditionally.
 
 \begin{code}
 module AddTest from HelloWorld.UnitTests imports nothing { 
@@ -242,8 +254,8 @@ module AddTest from HelloWorld.UnitTests imports nothing {
 \end{code}
 
 
-The next code shows a main function that executes the test cases imported from
-the \ic{AddTest} module. The \ic{test} expression supports invocations of test
+The next piece of code shows a main function that executes the test cases
+imported from the \ic{AddTest} module. The \ic{test} expression supports invocations of test
 cases; it also evaluates to the number of failed assertions. By returning this
 value from \ic{main}, we get an exit code != 0 in the case a test failed.
 
@@ -257,7 +269,7 @@ module TestSuite from HelloWorld.UnitTests imports AddTest {
 
 In the build configuration, the \ic{isTest: true} flag can be set to true; this
 adds a \ic{test} target to the make file, so you can call \ic{make test} on the
-command line in the source folder and run the tests. 
+command line in the \ic{source\_gen} folder to run the tests. 
 
 The example above contains a failing assertion \ic{assert(1) -1 + 1 == 1;}.
 Below is the console output after running \ic{make test} in the generated source
@@ -284,6 +296,7 @@ runningTest: running test @AddTest:test_testAddFloat:0
 
 \subsection{Primitive Numeric Datatypes}
 \label{PrimitiveNumericDatatypes}
+
 The standard C data types (\ic{int}, \ic{long}, etc.) have different sizes on
 different platforms. This makes them non-portable. C99 provides another set of
 primitive data types with clearly defined sizes (\ic{int8\_t}, \ic{int16\_t}).
@@ -294,10 +307,11 @@ the \ic{TypeSizeConfiguration}. It establishes a mapping between the C99 types
 and the standard primitive types. 
 
 The \ic{TypeSizeConfiguration} mentioned above can be added with the
-\intention{Create default type size configuration} (\fig{addDefaultTSC}), or by
-creating one through the $New$ menu on models. Every model has to contain
-exactly one type size configuration. To create the default, you can use an
-intention on the \ic{TypeSizeConfiguration} itself.
+\intention{Create default type size configuration} (\fig{addDefaultTSC}) on
+modules, or by creating one through the $New$ menu on models. Every model has to
+contain exactly one type size configuration. To fill an existing empty
+type size configuration with the default values, you can use
+an intention on the \ic{TypeSizeConfiguration}.
 
 \begin{figure}
 	\vspace{0.2cm}
@@ -444,10 +458,10 @@ with \ic{imports stdlib}. You can then call \ic{malloc} or \ic{free}:
 module BasicPointer from HelloWorld.Pointer imports stdlib {    
   ...
   exported test case mallocTest { 
-    int8_t* mem = ((int8_t*) stdlib::malloc(sizeof int8_t)); 
+    int8_t* mem = ((int8_t*) malloc(sizeof int8_t)); 
     *mem = 10; 
     assert(0) *mem == 10; 
-    stdlib::free(mem); 
+    free(mem); 
   } mallocTest(test case) 
 }
 \end{code}
@@ -700,7 +714,7 @@ module GlobalVariables from HelloWorld.Variables imports nothing {
 
 \subsubsection{Local variables}
 At this point a local variable declaration can only declare one variable at a
-time; otherwise is it is just like in C.
+time; otherwise is it is just like in C (so you cannot write \ic{int a,b;}).
 
 
 
