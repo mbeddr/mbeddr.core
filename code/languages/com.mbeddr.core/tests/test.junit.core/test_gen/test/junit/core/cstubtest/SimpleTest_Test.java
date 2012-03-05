@@ -7,49 +7,12 @@ import junit.framework.TestCase;
 import jetbrains.mps.smodel.SNode;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
-import jetbrains.mps.baseLanguage.closures.runtime._FunctionTypes;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 
 @MPSLaunch
 public class SimpleTest_Test extends TestCase {
-  public void test_BuilderLanguage() throws Exception {
+  @MPSLaunch
+  public void test_builderLanguage() throws Exception {
     SNode statement = SConceptOperations.createNewNode("jetbrains.mps.baseLanguage.structure.StringLiteral", null);
     SPropertyOperations.set(statement, "value", "10");
-  }
-
-  public SNode createNewNode() {
-    return new _FunctionTypes._return_P0_E0<SNode>() {
-      public SNode invoke() {
-        final SNode node_IntegerType_3 = new _FunctionTypes._return_P0_E0<SNode>() {
-          public SNode invoke() {
-            SNode res = SConceptOperations.createNewNode("jetbrains.mps.baseLanguage.structure.IntegerType", null);
-            return res;
-          }
-        }.invoke();
-        final SNode node_LocalVariableDeclaration_2 = new _FunctionTypes._return_P0_E0<SNode>() {
-          public SNode invoke() {
-            SNode res = SConceptOperations.createNewNode("jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration", null);
-            SPropertyOperations.set(res, "name", "i");
-            SLinkOperations.setTarget(res, "type", node_IntegerType_3, true);
-            return res;
-          }
-        }.invoke();
-        final SNode node_LocalVariableDeclarationStatement_1 = new _FunctionTypes._return_P0_E0<SNode>() {
-          public SNode invoke() {
-            SNode res = SConceptOperations.createNewNode("jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement", null);
-            SLinkOperations.setTarget(res, "localVariableDeclaration", node_LocalVariableDeclaration_2, true);
-            return res;
-          }
-        }.invoke();
-        SNode node_StatementList_0 = new _FunctionTypes._return_P0_E0<SNode>() {
-          public SNode invoke() {
-            SNode res = SConceptOperations.createNewNode("jetbrains.mps.baseLanguage.structure.StatementList", null);
-            SLinkOperations.setTarget(res, "statement", node_LocalVariableDeclarationStatement_1, true);
-            return res;
-          }
-        }.invoke();
-        return node_StatementList_0;
-      }
-    }.invoke();
   }
 }
