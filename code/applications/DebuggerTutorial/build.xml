@@ -1,4 +1,4 @@
-<project name="HelloWorld" default="build">
+<project name="DebuggerTutorial" default="build">
 
   <property file="build.properties"/>
 
