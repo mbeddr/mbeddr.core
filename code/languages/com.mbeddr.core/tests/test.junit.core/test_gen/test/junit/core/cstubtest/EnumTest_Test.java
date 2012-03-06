@@ -8,20 +8,10 @@ import org.junit.Test;
 import jetbrains.mps.lang.test.runtime.BaseTestBody;
 import com.intellij.openapi.application.PathMacros;
 import jetbrains.mps.smodel.SNode;
-import junit.framework.Assert;
 import test.junit.core.cstubtest_helper.CheckModuleContentHelper;
+import junit.framework.Assert;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
-import org.eclipse.cdt.core.parser.ScannerInfo;
-import org.eclipse.cdt.core.dom.ast.IASTTranslationUnit;
-import org.eclipse.cdt.core.dom.ast.gnu.c.GCCLanguage;
-import org.eclipse.cdt.core.parser.FileContent;
-import org.eclipse.cdt.core.parser.IncludeFileContentProvider;
-import org.eclipse.cdt.core.model.ILanguage;
-import org.eclipse.cdt.core.parser.DefaultLogService;
-import com.mbeddr.core.modules.runtime.include.CHeaderParser;
-import org.eclipse.core.runtime.CoreException;
 
 @MPSLaunch
 public class EnumTest_Test extends BaseTransformationTest {
@@ -37,7 +27,7 @@ public class EnumTest_Test extends BaseTransformationTest {
       String pathToEnum = PathMacros.getInstance().getValue("mbeddr.github.core.home") + "/code/languages/com.mbeddr.core/tests/test.ex.core.cStubTestInclude/include";
       pathToEnum += "/enumTestHeader.h";
 
-      SNode externalModule = this.parseHeader(pathToEnum);
+      SNode externalModule = CheckModuleContentHelper.parsteHeader(pathToEnum);
       Assert.assertNotNull(externalModule);
       Assert.assertNotNull(CheckModuleContentHelper.checkContentExists("simpleMonths", externalModule));
       Assert.assertNotNull(CheckModuleContentHelper.checkContentExists("refSimpleMonths", externalModule));
@@ -67,20 +57,6 @@ public class EnumTest_Test extends BaseTransformationTest {
       Assert.assertNotNull(CheckModuleContentHelper.checkChildExistsInNode("Nov", enumDeclmonthsWithValues));
       Assert.assertNotNull(CheckModuleContentHelper.checkChildExistsInNode("Dec", enumDeclmonthsWithValues));
 
-    }
-
-    public SNode parseHeader(String path) {
-      SNode module = SConceptOperations.createNewNode("com.mbeddr.core.modules.structure.ExternalModule", null);
-      ScannerInfo info = new ScannerInfo();
-
-      try {
-        IASTTranslationUnit tu = GCCLanguage.getDefault().getASTTranslationUnit(FileContent.createForExternalFileLocation(path), info, IncludeFileContentProvider.getEmptyFilesProvider(), null, ILanguage.OPTION_IS_SOURCE_UNIT | ILanguage.OPTION_SKIP_FUNCTION_BODIES, new DefaultLogService());
-        tu.accept(new CHeaderParser(module));
-
-      } catch (CoreException ex) {
-        Assert.fail("no exception expected");
-      }
-      return module;
     }
   }
 }

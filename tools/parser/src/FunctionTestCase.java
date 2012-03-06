@@ -86,7 +86,7 @@ public class FunctionTestCase extends TestCase {
 					//parameter
 					for(IASTParameterDeclaration parameterDeclaration : functionDeclarator.getParameters()){
 						if(CASTParameterDeclaration.class.isInstance(parameterDeclaration)){
-							CASTParameterDeclaration castParameterDeclaration = (CASTParameterDeclaration) parameterDeclaration;
+//							CASTParameterDeclaration castParameterDeclaration = (CASTParameterDeclaration) parameterDeclaration;
 
 							//paramtype
 							//same code see above! todo: refactoring 
