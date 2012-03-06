@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<history>
+  <StructureModification>
+    <dependencies>
+      <model index="talm" modelUID="r:98c60105-1d91-4aab-8dfe-5ef258ec8eb6(com.mbeddr.core.debug.blext.structure)" version="-1" />
+    </dependencies>
+    <rename id="talm.8483575004407084862" type="CONCEPT" from="MapExpression" to="MapStatement" />
+  </StructureModification>
+</history>
+
