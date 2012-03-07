@@ -3,6 +3,7 @@ import java.util.HashMap;
 import junit.framework.TestCase;
 
 import org.eclipse.cdt.core.dom.ast.ASTVisitor;
+import org.eclipse.cdt.core.dom.ast.IASTDeclSpecifier;
 import org.eclipse.cdt.core.dom.ast.IASTDeclaration;
 import org.eclipse.cdt.core.dom.ast.IASTDeclarator;
 import org.eclipse.cdt.core.dom.ast.IASTEnumerationSpecifier;
@@ -89,6 +90,8 @@ public class EnumTestCase extends TestCase {
 				return PROCESS_CONTINUE;
 			}
 
+	
+			
 			public int visit(IASTDeclarator x) {
 
 

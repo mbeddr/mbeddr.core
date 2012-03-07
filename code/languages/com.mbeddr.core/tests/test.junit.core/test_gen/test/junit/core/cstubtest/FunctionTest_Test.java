@@ -10,25 +10,55 @@ import com.intellij.openapi.application.PathMacros;
 import jetbrains.mps.smodel.SNode;
 import test.junit.core.cstubtest_helper.CheckModuleContentHelper;
 import junit.framework.Assert;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
+import jetbrains.mps.internal.collections.runtime.ListSequence;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 
 @MPSLaunch
 public class FunctionTest_Test extends BaseTransformationTest {
   @Test
-  public void test_testEnumParser() throws Throwable {
+  public void test_testFunctionParser() throws Throwable {
     this.initTest("${mbeddr.github.core.home}/code/languages/com.mbeddr.core/core.dev.mpr", "r:ebbcbc09-f404-4ab3-b0c3-f9ae71bbe3f7(test.junit.core.cstubtest@tests)");
-    this.runTest("test.junit.core.cstubtest.FunctionTest_Test$TestBody", "test_testEnumParser", true);
+    this.runTest("test.junit.core.cstubtest.FunctionTest_Test$TestBody", "test_testFunctionParser", true);
   }
 
   @MPSLaunch
   public static class TestBody extends BaseTestBody {
-    public void test_testEnumParser() throws Exception {
+    public void test_testFunctionParser() throws Exception {
       String pathToEnum = PathMacros.getInstance().getValue("mbeddr.github.core.home") + "/code/languages/com.mbeddr.core/tests/test.ex.core.cStubTestInclude/include";
       pathToEnum += "/functionTestHeader.h";
 
       SNode externalModule = CheckModuleContentHelper.parsteHeader(pathToEnum);
       Assert.assertNotNull(externalModule);
       Assert.assertNotNull(CheckModuleContentHelper.checkContentExists("add", externalModule));
+      SNode functionPrototype = (SNode) CheckModuleContentHelper.checkContentExists("add", externalModule);
+      Assert.assertTrue(SNodeOperations.isInstanceOf(SLinkOperations.getTarget(functionPrototype, "type", true), "com.mbeddr.core.expressions.structure.IntType"));
+      Assert.assertEquals(3, ListSequence.fromList(SLinkOperations.getTargets(functionPrototype, "arguments", true)).count());
+      System.out.println(SPropertyOperations.getString(ListSequence.fromList(SLinkOperations.getTargets(functionPrototype, "arguments", true)).getElement(0), "name"));
+      System.out.println(SPropertyOperations.getString(ListSequence.fromList(SLinkOperations.getTargets(functionPrototype, "arguments", true)).getElement(1), "name"));
+      System.out.println(SPropertyOperations.getString(ListSequence.fromList(SLinkOperations.getTargets(functionPrototype, "arguments", true)).getElement(2), "name"));
+      boolean aFound = false;
+      boolean bFound = false;
+      boolean cFound = false;
 
+      for (SNode argument : ListSequence.fromList(SLinkOperations.getTargets(functionPrototype, "arguments", true))) {
+        if (SPropertyOperations.getString(argument, "name").equals("a")) {
+          aFound = true;
+          Assert.assertTrue(SNodeOperations.isInstanceOf(SLinkOperations.getTarget(argument, "type", true), "com.mbeddr.core.expressions.structure.ShortType"));
+        }
+        if (SPropertyOperations.getString(argument, "name").equals("b")) {
+          bFound = true;
+          Assert.assertTrue(SNodeOperations.isInstanceOf(SLinkOperations.getTarget(argument, "type", true), "com.mbeddr.core.expressions.structure.CharType"));
+        }
+        if (SPropertyOperations.getString(argument, "name").equals("c")) {
+          cFound = true;
+          Assert.assertTrue(SNodeOperations.isInstanceOf(SLinkOperations.getTarget(argument, "type", true), "com.mbeddr.core.expressions.structure.FloatType"));
+        }
+      }
+      Assert.assertTrue(aFound);
+      Assert.assertTrue(bFound);
+      Assert.assertTrue(cFound);
     }
   }
 }

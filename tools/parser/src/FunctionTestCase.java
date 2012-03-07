@@ -23,8 +23,8 @@ public class FunctionTestCase extends TestCase {
 		StringBuilder content = new StringBuilder();
 
 		
-		content.append("int add(char c, short a, int b, long c, float f, double d);");
-		content.append("int add(int c, int a, int b, int c, int f, int d);");
+		content.append("int add(short s, long l, long ll, char c, int b, float f, double d);");
+
 		
 
 		HashMap<String, String> options = new HashMap<String, String>();
