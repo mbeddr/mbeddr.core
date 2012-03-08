@@ -298,13 +298,99 @@
     </node>
   </root>
   <root id="1883447499227799015">
-    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.FunctionPrototype" typeId="x27k.6437088627575724000" id="2497083023867902110">
-      <property name="name" nameId="tpck.1169194664001" value="blaBlub" />
-      <node role="arguments" roleId="x27k.5708867820623310661" type="x27k.Argument" typeId="x27k.7892328519581704407" id="2497083023867910353">
-        <property name="name" nameId="tpck.1169194664001" value="b" />
-        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.IntType" typeId="mj1l.8860443239512128108" id="2497083023867910354" />
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.CommentedModuleContent" typeId="x27k.7024921229556176022" id="8627413799323425119">
+      <node role="commentedCode" roleId="vs0r.7024921229556133804" type="mj1l.StringLiteral" typeId="mj1l.2088909457728253268" id="8627413799323425121">
+        <property name="value" nameId="mj1l.2088909457728253269" value="typedef int aaa, bbb, ccc;" />
       </node>
-      <node role="type" roleId="mj1l.318113533128716676" type="mj1l.IntType" typeId="mj1l.8860443239512128108" id="2497083023867902111" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="clbe.TypeDef" typeId="clbe.6116558314501347857" id="8627413799323425104">
+      <property name="name" nameId="tpck.1169194664001" value="aaa" />
+      <node role="original" roleId="clbe.6116558314501347862" type="mj1l.IntType" typeId="mj1l.8860443239512128108" id="8627413799323425106" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="clbe.TypeDef" typeId="clbe.6116558314501347857" id="8627413799323425108">
+      <property name="name" nameId="tpck.1169194664001" value="bbb" />
+      <node role="original" roleId="clbe.6116558314501347862" type="mj1l.IntType" typeId="mj1l.8860443239512128108" id="8627413799323425109" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="clbe.TypeDef" typeId="clbe.6116558314501347857" id="8627413799323425110">
+      <property name="name" nameId="tpck.1169194664001" value="ccc" />
+      <node role="original" roleId="clbe.6116558314501347862" type="mj1l.IntType" typeId="mj1l.8860443239512128108" id="8627413799323425111" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="8627413799323425112">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1331200316778_2" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.CommentedModuleContent" typeId="x27k.7024921229556176022" id="8627413799323425123">
+      <node role="commentedCode" roleId="vs0r.7024921229556133804" type="mj1l.StringLiteral" typeId="mj1l.2088909457728253268" id="8627413799323425124">
+        <property name="value" nameId="mj1l.2088909457728253269" value="typedef int ar[15], arr[9][6];" />
+      </node>
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="clbe.TypeDef" typeId="clbe.6116558314501347857" id="8627413799323425125">
+      <property name="name" nameId="tpck.1169194664001" value="ar" />
+      <node role="original" roleId="clbe.6116558314501347862" type="yq40.ArrayType" typeId="yq40.5679441017214012545" id="8627413799323425128">
+        <node role="baseType" roleId="yq40.5679441017214012546" type="mj1l.IntType" typeId="mj1l.8860443239512128108" id="8627413799323425127" />
+        <node role="size" roleId="yq40.5679441017214043897" type="yq40.IntLitArraySizeSpec" typeId="yq40.5679441017214053340" id="8627413799323425129">
+          <property name="size" nameId="yq40.5679441017214053341" value="15" />
+        </node>
+      </node>
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="clbe.TypeDef" typeId="clbe.6116558314501347857" id="999257560796728561">
+      <property name="name" nameId="tpck.1169194664001" value="blub" />
+      <node role="original" roleId="clbe.6116558314501347862" type="yq40.ArrayType" typeId="yq40.5679441017214012545" id="999257560796728564">
+        <node role="baseType" roleId="yq40.5679441017214012546" type="mj1l.IntType" typeId="mj1l.8860443239512128108" id="999257560796728563" />
+      </node>
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="clbe.TypeDef" typeId="clbe.6116558314501347857" id="8627413799323425131">
+      <property name="name" nameId="tpck.1169194664001" value="arr" />
+      <node role="original" roleId="clbe.6116558314501347862" type="yq40.ArrayType" typeId="yq40.5679441017214012545" id="8627413799323425134">
+        <node role="baseType" roleId="yq40.5679441017214012546" type="yq40.ArrayType" typeId="yq40.5679441017214012545" id="8627413799323425135">
+          <node role="baseType" roleId="yq40.5679441017214012546" type="mj1l.IntType" typeId="mj1l.8860443239512128108" id="8627413799323425133" />
+          <node role="size" roleId="yq40.5679441017214043897" type="yq40.IntLitArraySizeSpec" typeId="yq40.5679441017214053340" id="8627413799323425136">
+            <property name="size" nameId="yq40.5679441017214053341" value="9" />
+          </node>
+        </node>
+        <node role="size" roleId="yq40.5679441017214043897" type="yq40.IntLitArraySizeSpec" typeId="yq40.5679441017214053340" id="2548266623713134807">
+          <property name="size" nameId="yq40.5679441017214053341" value="3" />
+        </node>
+      </node>
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="8627413799323425140">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1331200568306_10" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.CommentedModuleContent" typeId="x27k.7024921229556176022" id="8627413799323425152">
+      <node role="commentedCode" roleId="vs0r.7024921229556133804" type="mj1l.StringLiteral" typeId="mj1l.2088909457728253268" id="8627413799323425153">
+        <property name="value" nameId="mj1l.2088909457728253269" value="typedef char c, *cp, carr[100];" />
+      </node>
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="clbe.TypeDef" typeId="clbe.6116558314501347857" id="8627413799323425142">
+      <property name="name" nameId="tpck.1169194664001" value="c" />
+      <node role="original" roleId="clbe.6116558314501347862" type="mj1l.CharType" typeId="mj1l.1664480272136207708" id="8627413799323425144" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="clbe.TypeDef" typeId="clbe.6116558314501347857" id="8627413799323425145">
+      <property name="name" nameId="tpck.1169194664001" value="cp" />
+      <node role="original" roleId="clbe.6116558314501347862" type="yq40.PointerType" typeId="yq40.279446265608459824" id="8627413799323425151">
+        <node role="baseType" roleId="yq40.279446265608459825" type="mj1l.CharType" typeId="mj1l.1664480272136207708" id="8627413799323425146" />
+      </node>
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="clbe.TypeDef" typeId="clbe.6116558314501347857" id="8627413799323425147">
+      <property name="name" nameId="tpck.1169194664001" value="carr" />
+      <node role="original" roleId="clbe.6116558314501347862" type="yq40.ArrayType" typeId="yq40.5679441017214012545" id="8627413799323425149">
+        <node role="baseType" roleId="yq40.5679441017214012546" type="mj1l.CharType" typeId="mj1l.1664480272136207708" id="8627413799323425148" />
+        <node role="size" roleId="yq40.5679441017214043897" type="yq40.IntLitArraySizeSpec" typeId="yq40.5679441017214053340" id="8627413799323425150">
+          <property name="size" nameId="yq40.5679441017214053341" value="100" />
+        </node>
+      </node>
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="clbe.TypeDef" typeId="clbe.6116558314501347857" id="2009438888129347555">
+      <property name="name" nameId="tpck.1169194664001" value="test" />
+      <node role="original" roleId="clbe.6116558314501347862" type="yq40.ArrayType" typeId="yq40.5679441017214012545" id="2009438888129347558">
+        <node role="baseType" roleId="yq40.5679441017214012546" type="yq40.PointerType" typeId="yq40.279446265608459824" id="2009438888129347560">
+          <node role="baseType" roleId="yq40.279446265608459825" type="yq40.PointerType" typeId="yq40.279446265608459824" id="2009438888129347561">
+            <node role="baseType" roleId="yq40.279446265608459825" type="mj1l.IntType" typeId="mj1l.8860443239512128108" id="2009438888129347557" />
+          </node>
+        </node>
+        <node role="size" roleId="yq40.5679441017214043897" type="yq40.IntLitArraySizeSpec" typeId="yq40.5679441017214053340" id="2009438888129347559">
+          <property name="size" nameId="yq40.5679441017214053341" value="10" />
+        </node>
+      </node>
     </node>
   </root>
 </model>
