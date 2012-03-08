@@ -392,6 +392,21 @@
         </node>
       </node>
     </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="7667824837781808211">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1331220160800_1" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="7667824837781808218">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1331220284230_3" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.FunctionPrototype" typeId="x27k.6437088627575724000" id="7667824837781808213">
+      <property name="name" nameId="tpck.1169194664001" value="someFunc" />
+      <node role="type" roleId="mj1l.318113533128716676" type="x27k.FunctionRefType" typeId="x27k.8551646674110395547" id="7667824837781808214">
+        <node role="returnType" roleId="x27k.8551646674110395548" type="mj1l.IntType" typeId="mj1l.8860443239512128108" id="7667824837781808216" />
+        <node role="argTypes" roleId="x27k.8551646674110395549" type="clbe.TypeDefType" typeId="clbe.6116558314501347863" id="7667824837781808217">
+          <link role="typeDef" roleId="clbe.6116558314501347864" targetNodeId="8627413799323425104" resolveInfo="aaa" />
+        </node>
+      </node>
+    </node>
   </root>
 </model>
 

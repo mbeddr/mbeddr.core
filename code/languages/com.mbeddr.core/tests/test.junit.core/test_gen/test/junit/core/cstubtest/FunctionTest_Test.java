@@ -14,18 +14,25 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
 
 @MPSLaunch
 public class FunctionTest_Test extends BaseTransformationTest {
   @Test
-  public void test_testFunctionParser() throws Throwable {
+  public void test_testSimpleFunctionParser() throws Throwable {
     this.initTest("${mbeddr.github.core.home}/code/languages/com.mbeddr.core/core.dev.mpr", "r:ebbcbc09-f404-4ab3-b0c3-f9ae71bbe3f7(test.junit.core.cstubtest@tests)");
-    this.runTest("test.junit.core.cstubtest.FunctionTest_Test$TestBody", "test_testFunctionParser", true);
+    this.runTest("test.junit.core.cstubtest.FunctionTest_Test$TestBody", "test_testSimpleFunctionParser", true);
+  }
+
+  @Test
+  public void test_testFunctionParameterParser() throws Throwable {
+    this.initTest("${mbeddr.github.core.home}/code/languages/com.mbeddr.core/core.dev.mpr", "r:ebbcbc09-f404-4ab3-b0c3-f9ae71bbe3f7(test.junit.core.cstubtest@tests)");
+    this.runTest("test.junit.core.cstubtest.FunctionTest_Test$TestBody", "test_testFunctionParameterParser", true);
   }
 
   @MPSLaunch
   public static class TestBody extends BaseTestBody {
-    public void test_testFunctionParser() throws Exception {
+    public void test_testSimpleFunctionParser() throws Exception {
       String pathToEnum = PathMacros.getInstance().getValue("mbeddr.github.core.home") + "/code/languages/com.mbeddr.core/tests/test.ex.core.cStubTestInclude/include";
       pathToEnum += "/functionTestHeader.h";
 
@@ -59,6 +66,28 @@ public class FunctionTest_Test extends BaseTransformationTest {
       Assert.assertTrue(aFound);
       Assert.assertTrue(bFound);
       Assert.assertTrue(cFound);
+    }
+
+    public void test_testFunctionParameterParser() throws Exception {
+      String pathToEnum = PathMacros.getInstance().getValue("mbeddr.github.core.home") + "/code/languages/com.mbeddr.core/tests/test.ex.core.cStubTestInclude/include";
+      pathToEnum += "/functionTestHeader.h";
+
+      SNode externalModule = CheckModuleContentHelper.parsteHeader(pathToEnum);
+      Assert.assertNotNull(externalModule);
+
+      SNode function = (SNode) CheckModuleContentHelper.checkContentExists("complexParameters", SConceptOperations.findConceptDeclaration("com.mbeddr.core.modules.structure.FunctionPrototype"), externalModule);
+      Assert.assertEquals(2, ListSequence.fromList(SLinkOperations.getTargets(function, "arguments", true)).count());
+      SNode argumentA = ListSequence.fromList(SLinkOperations.getTargets(function, "arguments", true)).getElement(0);
+      SNode argumentB = ListSequence.fromList(SLinkOperations.getTargets(function, "arguments", true)).getElement(1);
+      Assert.assertTrue(SPropertyOperations.getString(argumentA, "name").equals("a"));
+      Assert.assertTrue(SNodeOperations.isInstanceOf(SLinkOperations.getTarget(argumentA, "type", true), "com.mbeddr.core.pointers.structure.PointerType"));
+      Assert.assertTrue(SNodeOperations.isInstanceOf(SLinkOperations.getTarget(SNodeOperations.cast(SLinkOperations.getTarget(argumentA, "type", true), "com.mbeddr.core.pointers.structure.PointerType"), "baseType", true), "com.mbeddr.core.expressions.structure.ShortType"));
+
+      Assert.assertTrue(SPropertyOperations.getString(argumentB, "name").equals("b"));
+      Assert.assertTrue(SNodeOperations.isInstanceOf(SLinkOperations.getTarget(argumentB, "type", true), "com.mbeddr.core.pointers.structure.PointerType"));
+      Assert.assertTrue(SNodeOperations.isInstanceOf(SLinkOperations.getTarget(SNodeOperations.cast(SLinkOperations.getTarget(argumentB, "type", true), "com.mbeddr.core.pointers.structure.PointerType"), "baseType", true), "com.mbeddr.core.pointers.structure.ArrayType"));
+      Assert.assertTrue(SNodeOperations.isInstanceOf(SLinkOperations.getTarget(SNodeOperations.cast(SLinkOperations.getTarget(SNodeOperations.cast(SLinkOperations.getTarget(argumentB, "type", true), "com.mbeddr.core.pointers.structure.PointerType"), "baseType", true), "com.mbeddr.core.pointers.structure.ArrayType"), "baseType", true), "com.mbeddr.core.expressions.structure.CharType"));
+
     }
   }
 }
