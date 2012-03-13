@@ -43,7 +43,7 @@ public class TypeDefTestCase extends TestCase {
 //		content.append("typedef int ar[15], arr[9][6];");
 //		content.append("typedef char c, *cp, carr[100];");
 
-		content.append("int complexParametersWithTypeDefType(t1 a, t2 b);");
+		content.append("int *fun();");
 		
 		HashMap<String, String> options = new HashMap<String, String>();
 

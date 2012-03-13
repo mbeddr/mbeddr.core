@@ -37,6 +37,12 @@ public class FunctionTest_Test extends BaseTransformationTest {
     this.runTest("test.junit.core.cstubtest.FunctionTest_Test$TestBody", "test_testFunctionParameterWithReferenceParser", true);
   }
 
+  @Test
+  public void test_testReturnValueIsAPointer() throws Throwable {
+    this.initTest("${mbeddr.github.core.home}/code/languages/com.mbeddr.core/core.dev.mpr", "r:ebbcbc09-f404-4ab3-b0c3-f9ae71bbe3f7(test.junit.core.cstubtest@tests)");
+    this.runTest("test.junit.core.cstubtest.FunctionTest_Test$TestBody", "test_testReturnValueIsAPointer", true);
+  }
+
   @MPSLaunch
   public static class TestBody extends BaseTestBody {
     public void test_testSimpleFunctionParser() throws Exception {
@@ -121,6 +127,19 @@ public class FunctionTest_Test extends BaseTransformationTest {
       Assert.assertTrue(SNodeOperations.isInstanceOf(SLinkOperations.getTarget(SNodeOperations.cast(SLinkOperations.getTarget(argumentB, "type", true), "com.mbeddr.core.pointers.structure.PointerType"), "baseType", true), "com.mbeddr.core.pointers.structure.ArrayType"));
       Assert.assertTrue(SNodeOperations.isInstanceOf(SLinkOperations.getTarget(SNodeOperations.cast(SLinkOperations.getTarget(SNodeOperations.cast(SLinkOperations.getTarget(argumentB, "type", true), "com.mbeddr.core.pointers.structure.PointerType"), "baseType", true), "com.mbeddr.core.pointers.structure.ArrayType"), "baseType", true), "com.mbeddr.core.udt.structure.TypeDefType"));
       Assert.assertTrue(SPropertyOperations.getString(SLinkOperations.getTarget(SNodeOperations.cast(SLinkOperations.getTarget(SNodeOperations.cast(SLinkOperations.getTarget(SNodeOperations.cast(SLinkOperations.getTarget(argumentB, "type", true), "com.mbeddr.core.pointers.structure.PointerType"), "baseType", true), "com.mbeddr.core.pointers.structure.ArrayType"), "baseType", true), "com.mbeddr.core.udt.structure.TypeDefType"), "typeDef", false), "name").equals("t2"));
+    }
+
+    public void test_testReturnValueIsAPointer() throws Exception {
+      String pathToEnum = PathMacros.getInstance().getValue("mbeddr.github.core.home") + "/code/languages/com.mbeddr.core/tests/test.ex.core.cStubTestInclude/include";
+      pathToEnum += "/functionTestHeader.h";
+      SNode externalModule = CheckModuleContentHelper.parsteHeader(pathToEnum);
+      Assert.assertNotNull(externalModule);
+
+      SNode returnValueIsAPointer = (SNode) CheckModuleContentHelper.checkContentExists("returnValueIsAPointer", SConceptOperations.findConceptDeclaration("com.mbeddr.core.modules.structure.FunctionPrototype"), externalModule);
+      Assert.assertNotNull(returnValueIsAPointer);
+
+      Assert.assertTrue(SNodeOperations.isInstanceOf(SLinkOperations.getTarget(returnValueIsAPointer, "type", true), "com.mbeddr.core.pointers.structure.PointerType"));
+      Assert.assertTrue(SNodeOperations.isInstanceOf(SLinkOperations.getTarget(SNodeOperations.cast(SLinkOperations.getTarget(returnValueIsAPointer, "type", true), "com.mbeddr.core.pointers.structure.PointerType"), "baseType", true), "com.mbeddr.core.expressions.structure.IntType"));
     }
   }
 }

@@ -11,6 +11,9 @@ import jetbrains.mps.smodel.SNode;
 import test.junit.core.cstubtest_helper.CheckModuleContentHelper;
 import junit.framework.Assert;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 
 @MPSLaunch
 public class StructTest_Test extends BaseTransformationTest {
@@ -18,6 +21,12 @@ public class StructTest_Test extends BaseTransformationTest {
   public void test_testSimpleStruct() throws Throwable {
     this.initTest("${mbeddr.github.core.home}/code/languages/com.mbeddr.core/core.dev.mpr", "r:ebbcbc09-f404-4ab3-b0c3-f9ae71bbe3f7(test.junit.core.cstubtest@tests)");
     this.runTest("test.junit.core.cstubtest.StructTest_Test$TestBody", "test_testSimpleStruct", true);
+  }
+
+  @Test
+  public void test_testStructWithNestedStruct() throws Throwable {
+    this.initTest("${mbeddr.github.core.home}/code/languages/com.mbeddr.core/core.dev.mpr", "r:ebbcbc09-f404-4ab3-b0c3-f9ae71bbe3f7(test.junit.core.cstubtest@tests)");
+    this.runTest("test.junit.core.cstubtest.StructTest_Test$TestBody", "test_testStructWithNestedStruct", true);
   }
 
   @MPSLaunch
@@ -33,15 +42,53 @@ public class StructTest_Test extends BaseTransformationTest {
 
       SNode forenameMember = (SNode) CheckModuleContentHelper.checkChildExistsInNode("forename", fullname);
       Assert.assertNotNull(forenameMember);
-      // TODO: type check (char) 
-      // TODO: surename test incl. typecheck 
+      Assert.assertTrue(SNodeOperations.isInstanceOf(SLinkOperations.getTarget(forenameMember, "type", true), "com.mbeddr.core.pointers.structure.ArrayType"));
+      Assert.assertTrue(SNodeOperations.isInstanceOf(SLinkOperations.getTarget(SNodeOperations.cast(SLinkOperations.getTarget(forenameMember, "type", true), "com.mbeddr.core.pointers.structure.ArrayType"), "baseType", true), "com.mbeddr.core.expressions.structure.CharType"));
+      SNode surenameMember = (SNode) CheckModuleContentHelper.checkChildExistsInNode("surname", fullname);
+      Assert.assertNotNull(surenameMember);
+      Assert.assertTrue(SNodeOperations.isInstanceOf(SLinkOperations.getTarget(surenameMember, "type", true), "com.mbeddr.core.pointers.structure.ArrayType"));
+      Assert.assertTrue(SNodeOperations.isInstanceOf(SLinkOperations.getTarget(SNodeOperations.cast(SLinkOperations.getTarget(surenameMember, "type", true), "com.mbeddr.core.pointers.structure.ArrayType"), "baseType", true), "com.mbeddr.core.expressions.structure.CharType"));
+
+      SNode fullNameStruct = (SNode) CheckModuleContentHelper.checkContentExists("fullNameStruct", SConceptOperations.findConceptDeclaration("com.mbeddr.core.modules.structure.GlobalVariableDeclaration"), externalModule);
+      Assert.assertNotNull(fullNameStruct);
+      Assert.assertTrue(SNodeOperations.isInstanceOf(SLinkOperations.getTarget(fullNameStruct, "type", true), "com.mbeddr.core.udt.structure.StructType"));
+      Assert.assertTrue(SPropertyOperations.getString(SLinkOperations.getTarget(SNodeOperations.cast(SLinkOperations.getTarget(fullNameStruct, "type", true), "com.mbeddr.core.udt.structure.StructType"), "struct", false), "name").equals(SPropertyOperations.getString(fullname, "name")));
+
+      SNode fullNameStructP = (SNode) CheckModuleContentHelper.checkContentExists("fullNameStructP", SConceptOperations.findConceptDeclaration("com.mbeddr.core.modules.structure.GlobalVariableDeclaration"), externalModule);
+      Assert.assertNotNull(fullNameStructP);
+      Assert.assertTrue(SNodeOperations.isInstanceOf(SLinkOperations.getTarget(fullNameStructP, "type", true), "com.mbeddr.core.pointers.structure.PointerType"));
+      Assert.assertTrue(SNodeOperations.isInstanceOf(SLinkOperations.getTarget(SNodeOperations.cast(SLinkOperations.getTarget(fullNameStructP, "type", true), "com.mbeddr.core.pointers.structure.PointerType"), "baseType", true), "com.mbeddr.core.udt.structure.StructType"));
+      Assert.assertTrue(SPropertyOperations.getString(SLinkOperations.getTarget(SNodeOperations.cast(SLinkOperations.getTarget(SNodeOperations.cast(SLinkOperations.getTarget(fullNameStructP, "type", true), "com.mbeddr.core.pointers.structure.PointerType"), "baseType", true), "com.mbeddr.core.udt.structure.StructType"), "struct", false), "name").equals(SPropertyOperations.getString(fullname, "name")));
+
+      SNode fullNameStructPA = (SNode) CheckModuleContentHelper.checkContentExists("fullNameStructAP", SConceptOperations.findConceptDeclaration("com.mbeddr.core.modules.structure.GlobalVariableDeclaration"), externalModule);
+      Assert.assertNotNull(fullNameStructPA);
+      Assert.assertTrue(SNodeOperations.isInstanceOf(SLinkOperations.getTarget(fullNameStructPA, "type", true), "com.mbeddr.core.pointers.structure.PointerType"));
+      Assert.assertTrue(SNodeOperations.isInstanceOf(SLinkOperations.getTarget(SNodeOperations.cast(SLinkOperations.getTarget(fullNameStructPA, "type", true), "com.mbeddr.core.pointers.structure.PointerType"), "baseType", true), "com.mbeddr.core.pointers.structure.ArrayType"));
+      Assert.assertTrue(SNodeOperations.isInstanceOf(SLinkOperations.getTarget(SNodeOperations.cast(SLinkOperations.getTarget(SNodeOperations.cast(SLinkOperations.getTarget(fullNameStructPA, "type", true), "com.mbeddr.core.pointers.structure.PointerType"), "baseType", true), "com.mbeddr.core.pointers.structure.ArrayType"), "baseType", true), "com.mbeddr.core.udt.structure.StructType"));
+      Assert.assertTrue(SPropertyOperations.getString(SLinkOperations.getTarget(SNodeOperations.cast(SLinkOperations.getTarget(SNodeOperations.cast(SLinkOperations.getTarget(SNodeOperations.cast(SLinkOperations.getTarget(fullNameStructPA, "type", true), "com.mbeddr.core.pointers.structure.PointerType"), "baseType", true), "com.mbeddr.core.pointers.structure.ArrayType"), "baseType", true), "com.mbeddr.core.udt.structure.StructType"), "struct", false), "name").equals(SPropertyOperations.getString(fullname, "name")));
+
+    }
+
+    public void test_testStructWithNestedStruct() throws Exception {
+      String pathToEnum = PathMacros.getInstance().getValue("mbeddr.github.core.home") + "/code/languages/com.mbeddr.core/tests/test.ex.core.cStubTestInclude/include";
+      pathToEnum += "/structTestHeader.h";
+
+      SNode externalModule = CheckModuleContentHelper.parsteHeader(pathToEnum);
+      Assert.assertNotNull(externalModule);
+
+      SNode fullname = (SNode) CheckModuleContentHelper.checkContentExists("fullname", SConceptOperations.findConceptDeclaration("com.mbeddr.core.udt.structure.StructDeclaration"), externalModule);
+      Assert.assertNotNull(fullname);
 
       SNode person = (SNode) CheckModuleContentHelper.checkContentExists("person", SConceptOperations.findConceptDeclaration("com.mbeddr.core.udt.structure.StructDeclaration"), externalModule);
       Assert.assertNotNull(person);
 
+      // TODO: test type of members an type of struct reference (fullname) 
       SNode nameMember = (SNode) CheckModuleContentHelper.checkChildExistsInNode("name", person);
       Assert.assertNotNull(nameMember);
+      Assert.assertTrue(SNodeOperations.isInstanceOf(SLinkOperations.getTarget(nameMember, "type", true), "com.mbeddr.core.udt.structure.StructType"));
+      Assert.assertTrue(SPropertyOperations.getString(SLinkOperations.getTarget(SNodeOperations.cast(SLinkOperations.getTarget(nameMember, "type", true), "com.mbeddr.core.udt.structure.StructType"), "struct", false), "name").equals(SPropertyOperations.getString(fullname, "name")));
 
+      // TODO: test variables p, *pp and fullnamestruct 
     }
   }
 }
