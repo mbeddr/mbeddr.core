@@ -82,13 +82,11 @@ public class StructTest_Test extends BaseTransformationTest {
       SNode person = (SNode) CheckModuleContentHelper.checkContentExists("person", SConceptOperations.findConceptDeclaration("com.mbeddr.core.udt.structure.StructDeclaration"), externalModule);
       Assert.assertNotNull(person);
 
-      // TODO: test type of members an type of struct reference (fullname) 
       SNode nameMember = (SNode) CheckModuleContentHelper.checkChildExistsInNode("name", person);
       Assert.assertNotNull(nameMember);
       Assert.assertTrue(SNodeOperations.isInstanceOf(SLinkOperations.getTarget(nameMember, "type", true), "com.mbeddr.core.udt.structure.StructType"));
       Assert.assertTrue(SPropertyOperations.getString(SLinkOperations.getTarget(SNodeOperations.cast(SLinkOperations.getTarget(nameMember, "type", true), "com.mbeddr.core.udt.structure.StructType"), "struct", false), "name").equals(SPropertyOperations.getString(fullname, "name")));
 
-      // TODO: test variables p, *pp and fullnamestruct 
     }
   }
 }

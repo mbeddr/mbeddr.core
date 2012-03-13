@@ -33,17 +33,39 @@ import org.eclipse.cdt.internal.core.dom.parser.c.CASTFunctionDeclarator;
 import org.eclipse.cdt.internal.core.dom.parser.c.CASTParameterDeclaration;
 import org.eclipse.core.runtime.CoreException;
 
-public class TypeDefTestCase extends TestCase {
+public class GlobalVariableTestCase extends TestCase {
 
 	public void testBasicTest() throws CoreException {
 		StringBuilder content = new StringBuilder();
 
+		
+//		struct fullname	{
+//			char forename[20];
+//			char surname[20];
+//		};
+		content.append("struct fullname	{");
+		content.append("char forename[20];");
+		content.append("char surname[20];");
+		content.append("} fullnameStruct;");
+		
+//		struct person {
+//			struct fullname name;
+//			int age;
+//		};
+		content.append("struct person {");
+		content.append("struct fullname name;");
+		content.append("int age;");
+		content.append("};");
+
+		content.append("struct person p, *pp;");
+		
+		
 //		content.append("int aaa1, bbb2, ccc3;");
 //		content.append("typedef int aaa, bbb, ccc;");
 //		content.append("typedef int ar[15], arr[9][6];");
 //		content.append("typedef char c, *cp, carr[100];");
 
-		content.append("typedef int **c[5];");
+		
 		
 		HashMap<String, String> options = new HashMap<String, String>();
 
@@ -64,14 +86,7 @@ public class TypeDefTestCase extends TestCase {
 		astTranslationUnit.accept(new ASTVisitor(true) {
 			
 			  public int visist(IASTTranslationUnit x) {
-				    System.out.println("Visit IASTPreprocessorMacroDefinition");
-				    for (IASTPreprocessorMacroDefinition m : x.getMacroDefinitions()) {
-				      String name = m.getName().toString();
-				      String valueAsString = m.getExpansion();
-//				      if (StringUtils.isNotEmpty(valueAsString)) {
-//				        ListSequence.fromList(SLinkOperations.getTargets(externalModule, "contents", true)).addElement(createGlobalConstantDeclaration(name, valueAsString));
-//				      }
-				    }
+				  System.err.println(x.toString());
 				    return PROCESS_CONTINUE;
 				  }
 			

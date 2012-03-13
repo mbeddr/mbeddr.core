@@ -6,5 +6,3 @@ struct person {
 	struct fullname name;
 	int age;
 };
-
-struct person p, *pp.;
