@@ -6,3 +6,7 @@ struct person {
 	struct fullname name;
 	int age;
 };
+
+typedef struct inTypeDef {
+	int i;
+} typedefOfAStruct;

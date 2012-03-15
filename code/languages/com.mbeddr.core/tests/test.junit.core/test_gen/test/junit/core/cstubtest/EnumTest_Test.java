@@ -12,6 +12,8 @@ import test.junit.core.cstubtest_helper.CheckModuleContentHelper;
 import junit.framework.Assert;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 
 @MPSLaunch
 public class EnumTest_Test extends BaseTransformationTest {
@@ -32,7 +34,7 @@ public class EnumTest_Test extends BaseTransformationTest {
       Assert.assertNotNull(CheckModuleContentHelper.checkContentExists("simpleMonths", externalModule));
       Assert.assertNotNull(CheckModuleContentHelper.checkContentExists("refSimpleMonths", externalModule));
       Assert.assertNotNull(CheckModuleContentHelper.checkContentExists("just3Month", externalModule));
-      Assert.assertNotNull(CheckModuleContentHelper.checkContentExists("typeSimpleMonth", externalModule));
+      Assert.assertNotNull(CheckModuleContentHelper.checkContentExists("typeJust3Month", externalModule));
       Assert.assertNotNull(CheckModuleContentHelper.checkContentExists("monthsWithValues", externalModule));
       Assert.assertNotNull(CheckModuleContentHelper.checkContentExists("monthValue", externalModule));
 
@@ -48,6 +50,13 @@ public class EnumTest_Test extends BaseTransformationTest {
       Assert.assertTrue(SNodeOperations.isInstanceOf(SLinkOperations.getTarget(((SNode) refSimpleMonth), "type", true), "com.mbeddr.core.udt.structure.EnumType"));
       SNode enumType = (SNode) (SLinkOperations.getTarget(((SNode) refSimpleMonth), "type", true));
       Assert.assertTrue(SLinkOperations.getTarget(enumType, "enum", false).equals(enumDeclSimpleMonth));
+
+      SNode just3Month = (SNode) CheckModuleContentHelper.checkContentExists("just3Month", SConceptOperations.findConceptDeclaration("com.mbeddr.core.udt.structure.EnumDeclaration"), externalModule);
+      Assert.assertNotNull(just3Month);
+      SNode typeJust3Month = (SNode) CheckModuleContentHelper.checkContentExists("typeJust3Month", SConceptOperations.findConceptDeclaration("com.mbeddr.core.udt.structure.TypeDef"), externalModule);
+      Assert.assertNotNull(typeJust3Month);
+      Assert.assertTrue(SNodeOperations.isInstanceOf(SLinkOperations.getTarget(typeJust3Month, "original", true), "com.mbeddr.core.udt.structure.EnumType"));
+      Assert.assertTrue(SPropertyOperations.getString(SLinkOperations.getTarget(SNodeOperations.cast(SLinkOperations.getTarget(typeJust3Month, "original", true), "com.mbeddr.core.udt.structure.EnumType"), "enum", false), "name").equals(SPropertyOperations.getString(just3Month, "name")));
 
       SNode enumDeclmonthsWithValues = CheckModuleContentHelper.checkContentExists("monthsWithValues", externalModule);
       Assert.assertTrue(SNodeOperations.isInstanceOf(enumDeclmonthsWithValues, "com.mbeddr.core.udt.structure.EnumDeclaration"));

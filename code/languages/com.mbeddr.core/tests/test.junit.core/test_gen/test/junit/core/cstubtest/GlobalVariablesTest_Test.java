@@ -129,6 +129,20 @@ public class GlobalVariablesTest_Test extends BaseTransformationTest {
 
       SNode simpleMonths = (SNode) CheckModuleContentHelper.checkContentExists("simpleMonths", SConceptOperations.findConceptDeclaration("com.mbeddr.core.udt.structure.EnumDeclaration"), externalModule);
       Assert.assertNotNull(simpleMonths);
+
+      SNode typeSimpleMonth = (SNode) CheckModuleContentHelper.checkContentExists("typeSimpleMonth", SConceptOperations.findConceptDeclaration("com.mbeddr.core.udt.structure.TypeDef"), externalModule);
+      Assert.assertNotNull(typeSimpleMonth);
+
+      SNode enumV1 = (SNode) CheckModuleContentHelper.checkContentExists("enumV1", SConceptOperations.findConceptDeclaration("com.mbeddr.core.modules.structure.GlobalVariableDeclaration"), externalModule);
+      Assert.assertNotNull(enumV1);
+      Assert.assertTrue(SNodeOperations.isInstanceOf(SLinkOperations.getTarget(enumV1, "type", true), "com.mbeddr.core.udt.structure.TypeDefType"));
+      Assert.assertTrue(SPropertyOperations.getString(SLinkOperations.getTarget(SNodeOperations.cast(SLinkOperations.getTarget(enumV1, "type", true), "com.mbeddr.core.udt.structure.TypeDefType"), "typeDef", false), "name").equals(SPropertyOperations.getString(typeSimpleMonth, "name")));
+
+      SNode enumV2 = (SNode) CheckModuleContentHelper.checkContentExists("enumV2", SConceptOperations.findConceptDeclaration("com.mbeddr.core.modules.structure.GlobalVariableDeclaration"), externalModule);
+      Assert.assertNotNull(enumV2);
+      Assert.assertTrue(SNodeOperations.isInstanceOf(SLinkOperations.getTarget(enumV2, "type", true), "com.mbeddr.core.udt.structure.EnumType"));
+      Assert.assertTrue(SPropertyOperations.getString(SLinkOperations.getTarget(SNodeOperations.cast(SLinkOperations.getTarget(enumV2, "type", true), "com.mbeddr.core.udt.structure.EnumType"), "enum", false), "name").equals(SPropertyOperations.getString(simpleMonths, "name")));
+
     }
   }
 }

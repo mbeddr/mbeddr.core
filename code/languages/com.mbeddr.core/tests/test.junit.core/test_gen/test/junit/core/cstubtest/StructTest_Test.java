@@ -29,6 +29,12 @@ public class StructTest_Test extends BaseTransformationTest {
     this.runTest("test.junit.core.cstubtest.StructTest_Test$TestBody", "test_testStructWithNestedStruct", true);
   }
 
+  @Test
+  public void test_testStructInTypeDef() throws Throwable {
+    this.initTest("${mbeddr.github.core.home}/code/languages/com.mbeddr.core/core.dev.mpr", "r:ebbcbc09-f404-4ab3-b0c3-f9ae71bbe3f7(test.junit.core.cstubtest@tests)");
+    this.runTest("test.junit.core.cstubtest.StructTest_Test$TestBody", "test_testStructInTypeDef", true);
+  }
+
   @MPSLaunch
   public static class TestBody extends BaseTestBody {
     public void test_testSimpleStruct() throws Exception {
@@ -87,6 +93,22 @@ public class StructTest_Test extends BaseTransformationTest {
       Assert.assertTrue(SNodeOperations.isInstanceOf(SLinkOperations.getTarget(nameMember, "type", true), "com.mbeddr.core.udt.structure.StructType"));
       Assert.assertTrue(SPropertyOperations.getString(SLinkOperations.getTarget(SNodeOperations.cast(SLinkOperations.getTarget(nameMember, "type", true), "com.mbeddr.core.udt.structure.StructType"), "struct", false), "name").equals(SPropertyOperations.getString(fullname, "name")));
 
+    }
+
+    public void test_testStructInTypeDef() throws Exception {
+      String pathToEnum = PathMacros.getInstance().getValue("mbeddr.github.core.home") + "/code/languages/com.mbeddr.core/tests/test.ex.core.cStubTestInclude/include";
+      pathToEnum += "/structTestHeader.h";
+
+      SNode externalModule = CheckModuleContentHelper.parsteHeader(pathToEnum);
+      Assert.assertNotNull(externalModule);
+
+      SNode inTypeDef = (SNode) CheckModuleContentHelper.checkContentExists("inTypeDef", SConceptOperations.findConceptDeclaration("com.mbeddr.core.udt.structure.StructDeclaration"), externalModule);
+      Assert.assertNotNull(inTypeDef);
+
+      SNode typedefOfAStruct = (SNode) CheckModuleContentHelper.checkContentExists("typedefOfAStruct", SConceptOperations.findConceptDeclaration("com.mbeddr.core.udt.structure.TypeDef"), externalModule);
+      Assert.assertNotNull(typedefOfAStruct);
+      Assert.assertTrue(SNodeOperations.isInstanceOf(SLinkOperations.getTarget(typedefOfAStruct, "original", true), "com.mbeddr.core.udt.structure.StructType"));
+      Assert.assertTrue(SPropertyOperations.getString(SLinkOperations.getTarget(SNodeOperations.cast(SLinkOperations.getTarget(typedefOfAStruct, "original", true), "com.mbeddr.core.udt.structure.StructType"), "struct", false), "name").equals(SPropertyOperations.getString(inTypeDef, "name")));
     }
   }
 }
