@@ -23,7 +23,7 @@ public class FunctionTestCase extends TestCase {
 		StringBuilder content = new StringBuilder();
 
 		
-		content.append("int add(short s, long l, long ll, char c, int b, float f, double d);");
+		content.append("int sum();");
 
 		
 

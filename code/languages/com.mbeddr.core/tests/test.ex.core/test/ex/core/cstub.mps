@@ -343,6 +343,9 @@
       <node role="type" roleId="mj1l.318113533128716676" type="clbe.StructType" typeId="clbe.6394819151180597816" id="2274997040902808492">
         <link role="struct" roleId="clbe.6394819151180597817" targetNodeId="2274997040902808478" resolveInfo="person" />
       </node>
+      <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="vs0r.ElementDocumentation" typeId="vs0r.3857533489766146428" id="1984157627501902054">
+        <node role="parts" roleId="vs0r.3857533489766836837" type="vs0r.DocPart" typeId="vs0r.3857533489766836826" id="1984157627501902055" />
+      </node>
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.GlobalVariableDeclaration" typeId="x27k.6610873504380335822" id="2274997040902808494">
       <property name="name" nameId="tpck.1169194664001" value="pp" />
@@ -351,6 +354,14 @@
           <link role="struct" roleId="clbe.6394819151180597817" targetNodeId="2274997040902808478" resolveInfo="person" />
         </node>
       </node>
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="2095250896926750226">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1331829476970_1" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.FunctionPrototype" typeId="x27k.6437088627575724000" id="2095250896926750228">
+      <property name="name" nameId="tpck.1169194664001" value="sum" />
+      <property name="hasEllipsis" nameId="x27k.9066372830132870213" value="true" />
+      <node role="type" roleId="mj1l.318113533128716676" type="mj1l.IntType" typeId="mj1l.8860443239512128108" id="2095250896926750229" />
     </node>
   </root>
 </model>

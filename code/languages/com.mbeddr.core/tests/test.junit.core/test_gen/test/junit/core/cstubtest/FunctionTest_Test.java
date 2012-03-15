@@ -43,6 +43,12 @@ public class FunctionTest_Test extends BaseTransformationTest {
     this.runTest("test.junit.core.cstubtest.FunctionTest_Test$TestBody", "test_testReturnValueIsAPointer", true);
   }
 
+  @Test
+  public void test_testFunctionHasEllipses() throws Throwable {
+    this.initTest("${mbeddr.github.core.home}/code/languages/com.mbeddr.core/core.dev.mpr", "r:ebbcbc09-f404-4ab3-b0c3-f9ae71bbe3f7(test.junit.core.cstubtest@tests)");
+    this.runTest("test.junit.core.cstubtest.FunctionTest_Test$TestBody", "test_testFunctionHasEllipses", true);
+  }
+
   @MPSLaunch
   public static class TestBody extends BaseTestBody {
     public void test_testSimpleFunctionParser() throws Exception {
@@ -140,6 +146,17 @@ public class FunctionTest_Test extends BaseTransformationTest {
 
       Assert.assertTrue(SNodeOperations.isInstanceOf(SLinkOperations.getTarget(returnValueIsAPointer, "type", true), "com.mbeddr.core.pointers.structure.PointerType"));
       Assert.assertTrue(SNodeOperations.isInstanceOf(SLinkOperations.getTarget(SNodeOperations.cast(SLinkOperations.getTarget(returnValueIsAPointer, "type", true), "com.mbeddr.core.pointers.structure.PointerType"), "baseType", true), "com.mbeddr.core.expressions.structure.IntType"));
+    }
+
+    public void test_testFunctionHasEllipses() throws Exception {
+      String pathToEnum = PathMacros.getInstance().getValue("mbeddr.github.core.home") + "/code/languages/com.mbeddr.core/tests/test.ex.core.cStubTestInclude/include";
+      pathToEnum += "/functionTestHeader.h";
+      SNode externalModule = CheckModuleContentHelper.parsteHeader(pathToEnum);
+      Assert.assertNotNull(externalModule);
+
+      SNode sum = (SNode) CheckModuleContentHelper.checkContentExists("sum", SConceptOperations.findConceptDeclaration("com.mbeddr.core.modules.structure.FunctionPrototype"), externalModule);
+      Assert.assertNotNull(sum);
+      Assert.assertTrue(SPropertyOperations.getBoolean(sum, "hasEllipsis"));
     }
   }
 }

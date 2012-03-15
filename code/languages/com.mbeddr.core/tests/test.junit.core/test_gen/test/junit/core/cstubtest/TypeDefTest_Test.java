@@ -42,6 +42,11 @@ public class TypeDefTest_Test extends BaseTransformationTest {
       Assert.assertNotNull(ccc);
       Assert.assertTrue(SNodeOperations.isInstanceOf(SLinkOperations.getTarget(ccc, "original", true), "com.mbeddr.core.expressions.structure.IntType"));
 
+      SNode aaaAAA = (SNode) CheckModuleContentHelper.checkContentExists("aaaAAA", SConceptOperations.findConceptDeclaration("com.mbeddr.core.udt.structure.TypeDef"), externalModule);
+      Assert.assertNotNull(aaaAAA);
+      Assert.assertTrue(SNodeOperations.isInstanceOf(SLinkOperations.getTarget(aaaAAA, "original", true), "com.mbeddr.core.udt.structure.TypeDefType"));
+      Assert.assertTrue(SNodeOperations.isInstanceOf(SLinkOperations.getTarget(SLinkOperations.getTarget(SNodeOperations.cast(SLinkOperations.getTarget(aaaAAA, "original", true), "com.mbeddr.core.udt.structure.TypeDefType"), "typeDef", false), "original", true), "com.mbeddr.core.expressions.structure.IntType"));
+
       SNode ar = (SNode) CheckModuleContentHelper.checkContentExists("ar", SConceptOperations.findConceptDeclaration("com.mbeddr.core.udt.structure.TypeDef"), externalModule);
       Assert.assertNotNull(ar);
       Assert.assertTrue(SNodeOperations.isInstanceOf(SLinkOperations.getTarget(ar, "original", true), "com.mbeddr.core.pointers.structure.ArrayType"));
