@@ -4,7 +4,7 @@ typedef short *t1;
 typedef char *t2[5];
 int complexParametersWithTypeDefType(t1 a, t2 *b[5]);
 int *returnValueIsAPointer();
-int sum(É);
+int sum(...);
 
 typedef int (*addFunType)(int,int);
 int (*addFun)(int,int);
