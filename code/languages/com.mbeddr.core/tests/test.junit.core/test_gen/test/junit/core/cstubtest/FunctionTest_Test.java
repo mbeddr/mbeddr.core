@@ -194,6 +194,7 @@ public class FunctionTest_Test extends BaseTransformationTest {
       Assert.assertTrue(SNodeOperations.isInstanceOf(SLinkOperations.getTarget(SNodeOperations.cast(ListSequence.fromList(SLinkOperations.getTargets(SNodeOperations.cast(SLinkOperations.getTarget(SNodeOperations.cast(SLinkOperations.getTarget(addFunction, "type", true), "com.mbeddr.core.pointers.structure.PointerType"), "baseType", true), "com.mbeddr.core.modules.structure.FunctionRefType"), "argTypes", true)).getElement(1), "com.mbeddr.core.pointers.structure.PointerType"), "baseType", true), "com.mbeddr.core.expressions.structure.IntType"));
       // ToDo: add ellipses to functionRefs (functionpointer) 
       // <node> 
+      Assert.fail("see ToDo");
 
       SNode addFunInvalid = (SNode) CheckModuleContentHelper.checkContentExists("addFunInvalid", SConceptOperations.findConceptDeclaration("com.mbeddr.core.modules.structure.IModuleContent"), externalModule);
       Assert.assertNull(addFunInvalid);
