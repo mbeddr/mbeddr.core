@@ -24,20 +24,6 @@
     </projectModules>
     <genConfs />
   </component>
-  <component name="ProjectLibraryManager">
-    <option name="libraries">
-      <map>
-        <entry key="core">
-          <value>
-            <Library>
-              <option name="name" value="core" />
-              <option name="path" value="${mbeddr.github.core.home}/code/languages" />
-            </Library>
-          </value>
-        </entry>
-      </map>
-    </option>
-  </component>
   <component name="ProjectModuleManager">
     <modules />
   </component>
