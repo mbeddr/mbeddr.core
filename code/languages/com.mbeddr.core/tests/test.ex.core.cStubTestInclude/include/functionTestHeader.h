@@ -6,5 +6,8 @@ int complexParametersWithTypeDefType(t1 a, t2 *b[5]);
 int *returnValueIsAPointer();
 int sum(...);
 
-typedef int (*addFunType)(int,int);
-int (*addFun)(int,int);
+typedef int (*addFunType[5])(int,t2 *[4]);
+int *(**addFun)(int,int *,É);
+
+
+int (addFun2)(int,int); //result?

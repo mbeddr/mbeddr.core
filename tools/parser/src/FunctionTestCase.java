@@ -38,9 +38,10 @@ public class FunctionTestCase extends TestCase {
 		StringBuilder content = new StringBuilder();
 
 		
-		content.append("typedef int (*addFunType)(int,int);");
-		content.append("int (*addFun)(int,int);");
 
+		content.append("typedef int (*addFun)(int,int);");
+		content.append("int *addFun2(int,int);");
+		content.append("int addFun3(int,int);");
 		
 
 		HashMap<String, String> options = new HashMap<String, String>();
@@ -226,7 +227,6 @@ public class FunctionTestCase extends TestCase {
 //			}
 //
 //		});
-
 //		s
 	}
 }
