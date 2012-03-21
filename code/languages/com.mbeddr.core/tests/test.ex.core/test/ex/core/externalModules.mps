@@ -10,6 +10,7 @@
   <import index="k146" modelUID="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" version="7" implicit="yes" />
   <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="-1" implicit="yes" />
   <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="1" implicit="yes" />
+  <import index="clbe" modelUID="r:61d840b4-12c1-49ea-b142-b2a1550a9b15(com.mbeddr.core.udt.structure)" version="-1" implicit="yes" />
   <roots>
     <node type="x27k.ExternalModule" typeId="x27k.6116558314501417921" id="9066372830132809598">
       <property name="name" nameId="tpck.1169194664001" value="std" />
@@ -19,6 +20,12 @@
     </node>
     <node type="51wr.BuildConfiguration" typeId="51wr.7717755763392524104" id="9066372830133147125" />
     <node type="mj1l.TypeSizeConfiguration" typeId="mj1l.3335993110369795380" id="7496733358578280435" />
+    <node type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="7705997077751341663">
+      <property name="name" nameId="tpck.1169194664001" value="ModuleWithTypeDef" />
+    </node>
+    <node type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="7705997077751341673">
+      <property name="name" nameId="tpck.1169194664001" value="ModuleUsesTypeDef" />
+    </node>
   </roots>
   <root id="9066372830132809598">
     <node role="descriptors" roleId="x27k.6116558314501417978" type="x27k.HeaderDescriptor" typeId="x27k.6116558314501417952" id="9066372830132809599">
@@ -92,6 +99,12 @@
       <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="9066372830133147127">
         <link role="module" roleId="51wr.7717755763392524108" targetNodeId="9066372830132894103" resolveInfo="TestVaraArgs" />
       </node>
+      <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="7705997077751341679">
+        <link role="module" roleId="51wr.7717755763392524108" targetNodeId="7705997077751341673" resolveInfo="ModuleUsesTypeDef" />
+      </node>
+      <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="7705997077751341681">
+        <link role="module" roleId="51wr.7717755763392524108" targetNodeId="7705997077751341663" resolveInfo="ModuleWithTypeDef" />
+      </node>
       <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="9066372830133148998">
         <link role="module" roleId="51wr.7717755763392524108" targetNodeId="9066372830132809598" resolveInfo="std" />
       </node>
@@ -157,6 +170,33 @@
       <property name="exists" nameId="mj1l.3335993110370236888" value="true" />
       <node role="basicType" roleId="mj1l.7496733358578231498" type="mj1l.UnsignedLongLongType" typeId="mj1l.8463282783691618471" id="8863019357864489295" />
       <node role="c99Type" roleId="mj1l.7496733358578231499" type="mj1l.UnsignedInt64tType" typeId="mj1l.8463282783691618456" id="8863019357864489296" />
+    </node>
+  </root>
+  <root id="7705997077751341663">
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.GlobalConstantDeclaration" typeId="x27k.3788988821851860886" id="7705997077751341670">
+      <property name="name" nameId="tpck.1169194664001" value="someInt" />
+      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
+      <property name="preventNameMangling" nameId="x27k.6708182213627106114" value="true" />
+      <node role="value" roleId="x27k.3788988821851871048" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="7705997077751341672">
+        <property name="value" nameId="mj1l.8860443239512128104" value="22" />
+      </node>
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="clbe.TypeDef" typeId="clbe.6116558314501347857" id="7705997077751341664">
+      <property name="name" nameId="tpck.1169194664001" value="smallT" />
+      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
+      <node role="original" roleId="clbe.6116558314501347862" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="7705997077751341666" />
+    </node>
+  </root>
+  <root id="7705997077751341673">
+    <node role="contents" roleId="x27k.6437088627575722833" type="clbe.TypeDef" typeId="clbe.6116558314501347857" id="7705997077751341674">
+      <property name="name" nameId="tpck.1169194664001" value="smallTTT" />
+      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
+      <node role="original" roleId="clbe.6116558314501347862" type="clbe.TypeDefType" typeId="clbe.6116558314501347863" id="7705997077751341677">
+        <link role="typeDef" roleId="clbe.6116558314501347864" targetNodeId="7705997077751341664" resolveInfo="smallT" />
+      </node>
+    </node>
+    <node role="imports" roleId="x27k.1317894735999304826" type="x27k.ModuleImport" typeId="x27k.1317894735999299713" id="7705997077751341676">
+      <link role="module" roleId="x27k.1317894735999299714" targetNodeId="7705997077751341663" resolveInfo="ModuleWithTypeDef" />
     </node>
   </root>
 </model>

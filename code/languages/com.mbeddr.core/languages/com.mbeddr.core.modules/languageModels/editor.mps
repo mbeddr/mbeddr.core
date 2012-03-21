@@ -826,6 +826,24 @@
         <property name="attractsFocus" nameId="tpc2.1130859485024" value="2" />
         <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="tpck.1169194664001" resolveInfo="name" />
       </node>
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="7705997077751331423">
+        <property name="text" nameId="tpc2.1073389577007" value="imports" />
+      </node>
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_RefNodeList" typeId="tpc2.1073390211982" id="7705997077751331425">
+        <property name="separatorText" nameId="tpc2.1140524450557" value="," />
+        <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="x27k.1317894735999304826" />
+        <node role="emptyCellModel" roleId="tpc2.1140524464359" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="7705997077751331426">
+          <property name="text" nameId="tpc2.1073389577007" value="nothing" />
+          <link role="styleClass" roleId="tpc2.1186406756722" targetNodeId="vrqd.3134547887598403854" resolveInfo="nothing" />
+        </node>
+        <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.IndentLayoutNewLineChildrenStyleClassItem" typeId="tpc2.1237375020029" id="7705997077751331427">
+          <property name="flag" nameId="tpc2.1186414551515" value="false" />
+        </node>
+        <node role="cellLayout" roleId="tpc2.1140524464360" type="tpc2.CellLayout_Indent" typeId="tpc2.1237303669825" id="7705997077751331428" />
+        <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.IndentLayoutNewLineStyleClassItem" typeId="tpc2.1237308012275" id="7705997077751331429">
+          <property name="flag" nameId="tpc2.1186414551515" value="false" />
+        </node>
+      </node>
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="1006091569937120352">
         <property name="text" nameId="tpc2.1073389577007" value="resources" />
       </node>

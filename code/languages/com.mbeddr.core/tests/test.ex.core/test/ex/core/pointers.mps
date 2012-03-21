@@ -2008,6 +2008,7 @@
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.GlobalConstantFunctionDeclaration" typeId="x27k.6021475212425916971" id="3926162927329529281">
       <property name="name" nameId="tpck.1169194664001" value="va_end" />
       <property name="body" nameId="x27k.6021475212426234033" value="dummy" />
+      <property name="preventNameMangling" nameId="x27k.6708182213627106114" value="true" />
       <node role="arguments" roleId="x27k.6021475212425916983" type="x27k.GlobalConstantFunctionArgument" typeId="x27k.6021475212426054485" id="3926162927329529282">
         <property name="name" nameId="tpck.1169194664001" value="a" />
       </node>
