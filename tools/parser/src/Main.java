@@ -34,8 +34,8 @@ public class Main {
 	public static void main(String[] args) throws CoreException {
 		StringBuilder content = new StringBuilder();
 //		content.append("#include <stdio.h>\n");
-		content.append("#define AVAR 5\n");
-		content.append("#define AVAR 5\n");
+		content.append("#define MUL(i, j) (i*j)\n");
+	
 //		content.append("int main(int argc, char **argv) {\n");
 //		content.append("	int x = AVAR;\n");
 //		content.append("#ifdef bla\n");
@@ -56,11 +56,11 @@ public class Main {
 						null, 0, new DefaultLogService());
 		IASTPreprocessorMacroDefinition[] macroDefinitions = astTranslationUnit
 				.getMacroDefinitions();
-//		for (IASTPreprocessorMacroDefinition md : macroDefinitions) {
-//			IASTPreprocessorMacroDefinition def = (IASTPreprocessorMacroDefinition) md;
-//			System.err.println(def.getExpansion());
-//			System.err.println(md.toString());
-//		}
+		for (IASTPreprocessorMacroDefinition md : macroDefinitions) {
+			IASTPreprocessorMacroDefinition def = (IASTPreprocessorMacroDefinition) md;
+			System.err.println(def.getExpansion());
+			System.err.println(md.toString());
+		}
 		astTranslationUnit.accept(new ASTVisitor(true) {
 			
 			  public int visist(IASTTranslationUnit x) {
