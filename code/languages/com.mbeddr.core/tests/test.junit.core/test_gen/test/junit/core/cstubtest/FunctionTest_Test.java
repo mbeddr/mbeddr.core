@@ -16,6 +16,7 @@ import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
 import com.mbeddr.core.modules.runtime.include.ParseUtil;
+import jetbrains.mps.internal.collections.runtime.Sequence;
 
 @MPSLaunch
 public class FunctionTest_Test extends BaseTransformationTest {
@@ -198,6 +199,15 @@ public class FunctionTest_Test extends BaseTransformationTest {
 
       SNode addFunInvalid = (SNode) CheckModuleContentHelper.checkContentExists("addFunInvalid", SConceptOperations.findConceptDeclaration("com.mbeddr.core.modules.structure.IModuleContent"), externalModule);
       Assert.assertNull(addFunInvalid);
+    }
+
+    public void cleanUp() {
+      for (SNode root : Sequence.fromIterable(this.myModel.getSModel().roots())) {
+        if (root.isInstanceOfConcept(SNodeOperations.getNode("r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)", "6116558314501417921"))) {
+          this.myModel.getSModel().removeRoot(root);
+        }
+      }
+
     }
   }
 }

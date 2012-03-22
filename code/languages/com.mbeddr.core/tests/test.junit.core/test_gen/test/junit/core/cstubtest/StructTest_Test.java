@@ -14,6 +14,7 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
+import jetbrains.mps.internal.collections.runtime.Sequence;
 
 @MPSLaunch
 public class StructTest_Test extends BaseTransformationTest {
@@ -109,6 +110,15 @@ public class StructTest_Test extends BaseTransformationTest {
       Assert.assertNotNull(typedefOfAStruct);
       Assert.assertTrue(SNodeOperations.isInstanceOf(SLinkOperations.getTarget(typedefOfAStruct, "original", true), "com.mbeddr.core.udt.structure.StructType"));
       Assert.assertTrue(SPropertyOperations.getString(SLinkOperations.getTarget(SNodeOperations.cast(SLinkOperations.getTarget(typedefOfAStruct, "original", true), "com.mbeddr.core.udt.structure.StructType"), "struct", false), "name").equals(SPropertyOperations.getString(inTypeDef, "name")));
+    }
+
+    public void cleanUp() {
+      for (SNode root : Sequence.fromIterable(this.myModel.getSModel().roots())) {
+        if (root.isInstanceOfConcept(SNodeOperations.getNode("r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)", "6116558314501417921"))) {
+          this.myModel.getSModel().removeRoot(root);
+        }
+      }
+
     }
   }
 }

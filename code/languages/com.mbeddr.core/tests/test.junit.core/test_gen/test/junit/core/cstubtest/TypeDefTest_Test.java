@@ -13,6 +13,7 @@ import junit.framework.Assert;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
+import jetbrains.mps.internal.collections.runtime.Sequence;
 
 @MPSLaunch
 public class TypeDefTest_Test extends BaseTransformationTest {
@@ -84,6 +85,15 @@ public class TypeDefTest_Test extends BaseTransformationTest {
       Assert.assertTrue(SNodeOperations.isInstanceOf(SLinkOperations.getTarget(SNodeOperations.cast(SLinkOperations.getTarget(SNodeOperations.cast(SLinkOperations.getTarget(cpparr, "original", true), "com.mbeddr.core.pointers.structure.PointerType"), "baseType", true), "com.mbeddr.core.pointers.structure.PointerType"), "baseType", true), "com.mbeddr.core.pointers.structure.ArrayType"));
       Assert.assertTrue(SNodeOperations.isInstanceOf(SLinkOperations.getTarget(SNodeOperations.cast(SLinkOperations.getTarget(SNodeOperations.cast(SLinkOperations.getTarget(SNodeOperations.cast(SLinkOperations.getTarget(cpparr, "original", true), "com.mbeddr.core.pointers.structure.PointerType"), "baseType", true), "com.mbeddr.core.pointers.structure.PointerType"), "baseType", true), "com.mbeddr.core.pointers.structure.ArrayType"), "baseType", true), "com.mbeddr.core.pointers.structure.ArrayType"));
       Assert.assertTrue(SNodeOperations.isInstanceOf(SLinkOperations.getTarget(SNodeOperations.cast(SLinkOperations.getTarget(SNodeOperations.cast(SLinkOperations.getTarget(SNodeOperations.cast(SLinkOperations.getTarget(SNodeOperations.cast(SLinkOperations.getTarget(cpparr, "original", true), "com.mbeddr.core.pointers.structure.PointerType"), "baseType", true), "com.mbeddr.core.pointers.structure.PointerType"), "baseType", true), "com.mbeddr.core.pointers.structure.ArrayType"), "baseType", true), "com.mbeddr.core.pointers.structure.ArrayType"), "baseType", true), "com.mbeddr.core.expressions.structure.CharType"));
+
+    }
+
+    public void cleanUp() {
+      for (SNode root : Sequence.fromIterable(this.myModel.getSModel().roots())) {
+        if (root.isInstanceOfConcept(SNodeOperations.getNode("r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)", "6116558314501417921"))) {
+          this.myModel.getSModel().removeRoot(root);
+        }
+      }
 
     }
   }

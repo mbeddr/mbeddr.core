@@ -14,6 +14,7 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
+import jetbrains.mps.internal.collections.runtime.Sequence;
 
 @MPSLaunch
 public class EnumTest_Test extends BaseTransformationTest {
@@ -65,6 +66,15 @@ public class EnumTest_Test extends BaseTransformationTest {
       Assert.assertNotNull(CheckModuleContentHelper.checkChildExistsInNode("Oct", enumDeclmonthsWithValues));
       Assert.assertNotNull(CheckModuleContentHelper.checkChildExistsInNode("Nov", enumDeclmonthsWithValues));
       Assert.assertNotNull(CheckModuleContentHelper.checkChildExistsInNode("Dec", enumDeclmonthsWithValues));
+
+    }
+
+    public void cleanUp() {
+      for (SNode root : Sequence.fromIterable(this.myModel.getSModel().roots())) {
+        if (root.isInstanceOfConcept(SNodeOperations.getNode("r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)", "6116558314501417921"))) {
+          this.myModel.getSModel().removeRoot(root);
+        }
+      }
 
     }
   }
