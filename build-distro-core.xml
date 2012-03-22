@@ -2,6 +2,7 @@
  
   <property name="prefix.core" value="mbeddr/code/languages/com.mbeddr.core"/>
   <property name="prefix.util" value="mbeddr/code/languages/com.mbeddr.mpsutil"/>
+  <property name="prefix.cc" value="mbeddr/code/languages/com.mbeddr.cc"/>  
   <property name="prefix.apps" value="mbeddr/code/applications"/>
 	
   <target name="build-distro">
@@ -21,8 +22,8 @@
           <zipfileset dir="code/languages/com.mbeddr.core/devkits" prefix="${prefix.core}/devkits"/>
 
 	  	  <!-- CC -->
-          <zipfileset dir="code/languages/com.mbeddr.cc/languages/" prefix="${prefix.core}/languages"/>
-          <zipfileset dir="code/languages/com.mbeddr.cc/devkits/"	prefix="${prefix.core}/devkits"/>
+          <zipfileset dir="code/languages/com.mbeddr.cc/languages/" prefix="${prefix.cc}/languages"/>
+          <zipfileset dir="code/languages/com.mbeddr.cc/devkits/"	prefix="${prefix.cc}/devkits"/>
           
           <!-- LICENSE -->
 		  <zipfileset dir="." includes="license.html"/> 
