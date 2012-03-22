@@ -19,6 +19,7 @@
 				prefix="mbeddr/cc/languages/com.mbeddr.cc.trace"/>
           <zipfileset dir="code/languages/com.mbeddr.cc/devkits/com.mbeddr.cc.reqtrace" 
 				prefix="mbeddr/cc/devkits/com.mbeddr.cc.reqtrace"/>
+          <zipfileset dir="." includes="license.html"/> 
 	  </zip>
 
 	  
@@ -32,6 +33,7 @@
 				prefix="mbeddr/cc/languages/com.mbeddr.cc.var.buildconfig"/>
           <zipfileset dir="code/languages/com.mbeddr.cc/devkits/com.mbeddr.cc.variability" 
 				prefix="mbeddr/cc/devkits/com.mbeddr.cc.variability"/>
+		  <zipfileset dir="." includes="license.html"/>
 	  </zip>
 	  <copy file="documentation/userguide_mbeddr.cc/userguide_mbeddr.cc.pdf" tofile="${path}/userguide_mbeddr.cc.pdf"/>
 	  
