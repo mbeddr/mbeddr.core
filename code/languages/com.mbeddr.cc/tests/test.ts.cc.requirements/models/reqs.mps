@@ -81,7 +81,22 @@
       <property name="open" nameId="75wo.1165432222361744926" value="false" />
       <property name="name" nameId="tpck.1169194664001" value="ANewOne" />
       <property name="summmary" nameId="75wo.3402431285977818823" value="A new requirement, no traces yet" />
+      <property name="traced" nameId="75wo.2667296550441527826" value="false" />
+      <property name="implemented" nameId="75wo.2667296550441502913" value="false" />
+      <property name="tested" nameId="75wo.2667296550441527827" value="false" />
       <node role="kind" roleId="75wo.8921256082857728256" type="75wo.FunctionalRequirementKind" typeId="75wo.8921256082857728250" id="2667296550441654211" />
+    </node>
+    <node role="requirements" roleId="75wo.8745401669462963171" type="75wo.Requirement" typeId="75wo.8745401669462952101" id="4458576562019058202">
+      <property name="open" nameId="75wo.1165432222361744926" value="false" />
+      <property name="name" nameId="tpck.1169194664001" value="YetAnitherOne" />
+      <property name="summmary" nameId="75wo.3402431285977818823" value="AnotherRequirement" />
+      <node role="kind" roleId="75wo.8921256082857728256" type="75wo.FunctionalRequirementKind" typeId="75wo.8921256082857728250" id="4458576562019058203" />
+    </node>
+    <node role="requirements" roleId="75wo.8745401669462963171" type="75wo.Requirement" typeId="75wo.8745401669462952101" id="4458576562019058204">
+      <property name="open" nameId="75wo.1165432222361744926" value="false" />
+      <property name="name" nameId="tpck.1169194664001" value="RequirementNumber25" />
+      <property name="summmary" nameId="75wo.3402431285977818823" value="It also has a summary" />
+      <node role="kind" roleId="75wo.8921256082857728256" type="75wo.FunctionalRequirementKind" typeId="75wo.8921256082857728250" id="4458576562019058205" />
     </node>
   </root>
   <root id="1165432222362120317">

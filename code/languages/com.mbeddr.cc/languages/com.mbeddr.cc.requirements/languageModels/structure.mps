@@ -88,6 +88,42 @@
       <property name="name" nameId="tpck.1169194664001" value="RequirementRef" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="26ao.439567521322929331" resolveInfo="TraceTargetRef" />
     </node>
+    <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="1959513067891105457">
+      <property name="name" nameId="tpck.1169194664001" value="TreeStatusPlusIcon" />
+      <property name="iconPath" nameId="tpce.1160488491229" value="${language_descriptor}/icons/plus.png" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="icons" />
+      <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
+    </node>
+    <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="1959513067891116320">
+      <property name="name" nameId="tpck.1169194664001" value="TreeStatusMinusIcon" />
+      <property name="iconPath" nameId="tpce.1160488491229" value="${language_descriptor}/icons/minus.png" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="icons" />
+      <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
+    </node>
+    <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="1959513067891167046">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="icons" />
+      <property name="name" nameId="tpck.1169194664001" value="ReqStatusGreyIcon" />
+      <property name="iconPath" nameId="tpce.1160488491229" value="${language_descriptor}/icons/grey.png" />
+      <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
+    </node>
+    <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="1959513067891167050">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="icons" />
+      <property name="name" nameId="tpck.1169194664001" value="ReqStatusBlueIcon" />
+      <property name="iconPath" nameId="tpce.1160488491229" value="${language_descriptor}/icons/blue.png" />
+      <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
+    </node>
+    <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="1959513067891167051">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="icons" />
+      <property name="name" nameId="tpck.1169194664001" value="ReqStatusGreenIcon" />
+      <property name="iconPath" nameId="tpce.1160488491229" value="${language_descriptor}/icons/green.png" />
+      <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
+    </node>
+    <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="1959513067891167052">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="icons" />
+      <property name="name" nameId="tpck.1169194664001" value="ReqStatusRedIcon" />
+      <property name="iconPath" nameId="tpce.1160488491229" value="${language_descriptor}/icons/red.png" />
+      <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
+    </node>
   </roots>
   <root id="8745401669462952101">
     <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="3402431285977818823">
@@ -274,5 +310,11 @@
       <link role="specializedLink" roleId="tpce.1071599698500" targetNodeId="26ao.439567521322959431" />
     </node>
   </root>
+  <root id="1959513067891105457" />
+  <root id="1959513067891116320" />
+  <root id="1959513067891167046" />
+  <root id="1959513067891167050" />
+  <root id="1959513067891167051" />
+  <root id="1959513067891167052" />
 </model>
 
