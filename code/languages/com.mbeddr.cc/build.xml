@@ -50,7 +50,7 @@
     <mps.generate parallelMode="true" fork="true" failonerror="true">
       <jvmargs id="myargs"/>
       <library name="project" dir="${mbeddr.github.core.home}/${mbeddr.cc.project.dir}"/>
-      <library name="mbeddr.core.project" dir="${mbeddr.github.core.home}/${mbeddr.core.project.dir}"/>
+      <library name="mbeddr.core.project" dir="${mbeddr.github.core.home}/"/>
       <library name="util.languages" dir="${mbeddr.github.core.home}/${util.project.dir}/languages"/>
 
 	  <!-- executable tests -->
