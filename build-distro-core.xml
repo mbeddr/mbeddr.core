@@ -20,12 +20,14 @@
           <zipfileset dir="code/languages/com.mbeddr.core/languages" prefix="${prefix.core}/languages"/>
           <zipfileset dir="code/languages/com.mbeddr.core/devkits" prefix="${prefix.core}/devkits"/>
           <zipfileset dir="code/languages/com.mbeddr.mpsutil/languages" prefix="${prefix.util}/languages"/>
+		  <zipfileset dir="." includes="license.html"/> 
 	  </zip>
 	  
 	  <zip destfile="${path}/mbeddr.core-examples-${version}.zip">
           <zipfileset dir="code/applications/HelloWorld" prefix="${prefix.apps}/HelloWorld"/>
           <zipfileset dir="code/applications/DebuggerTutorial" prefix="${prefix.apps}/DebuggerTutorial"/>
           <zipfileset dir="code/applications/CallGraph" prefix="${prefix.apps}/CallGraph"/>
+		  <zipfileset dir="." includes="license.html"/> 
 	  </zip>
 	  
 	  <copy file="documentation/userguide_mbeddr.core/userguide_mbeddr.core.pdf" tofile="${path}/userguide_mbeddr.core.pdf"/>
