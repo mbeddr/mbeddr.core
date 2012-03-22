@@ -11,7 +11,7 @@
           <fileset dir="${path}" includes="**/*"/>
       </delete>
       	  
-	  <registerZip file="mbeddr.requirements-${version}.zip" desc="mbeddr.requirements" dependsOn="mbeddr.core" docs=""/>
+	  <registerZip file="mbeddr.requirements-${version}.zip" desc="mbeddr.requirements" dependsOn="mbeddr.core" docs="userguide_mbeddr.cc.pdf"/>
       <zip destfile="${path}/mbeddr.requirements-${version}.zip">
           <zipfileset dir="code/languages/com.mbeddr.cc/languages/com.mbeddr.cc.requirements" 
 				prefix="mbeddr/cc/languages/com.mbeddr.cc.requirements"/>
