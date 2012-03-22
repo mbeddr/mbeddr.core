@@ -1,0 +1,119 @@
+\documentclass[DIV=8, pagesize=auto]{scrartcl}
+
+\usepackage{fixltx2e}
+\usepackage{etex}
+\usepackage{lmodern}
+\usepackage[T1]{fontenc}
+\usepackage{textcomp}
+\usepackage{array}
+\usepackage{booktabs}
+\usepackage{microtype}
+\usepackage[unicode=true]{hyperref}
+
+\newcommand*{\mail}[1]{\href{mailto:#1}{\texttt{#1}}}
+\newcommand*{\pkg}[1]{\textsf{#1}}
+\newcommand*{\cs}[1]{\texttt{\textbackslash#1}}
+\makeatletter
+\newcommand*{\cmd}[1]{\cs{\expandafter\@gobble\string#1}}
+\makeatother
+\newcommand*{\env}[1]{\texttt{#1}}
+\newcommand*{\opt}[1]{\texttt{#1}}
+\newcommand*{\meta}[1]{\textlangle\textsl{#1}\textrangle}
+\newcommand*{\marg}[1]{\texttt{\{}\meta{#1}\texttt{\}}}
+
+\addtokomafont{title}{\rmfamily}
+
+\title{The \pkg{framed} package\thanks{This manual corresponds to \pkg{framed}~v0.95, dated~2007/10/04.}}
+\author{Donald Arseneau  (\mail{asnd@triumf.ca})}
+\date{2007/10/04}
+
+
+\begin{document}
+
+\maketitle
+
+\noindent
+Create framed, shaded, or differently highlighted regions that can 
+break across pages.  The environments defined are
+
+\medskip
+\noindent
+\begin{tabular}{@{}>{\ttfamily}l@{~~--~~}l@{}}
+  framed    & ordinary frame box (\cmd{\fbox}) with edge at margin     \\
+  shaded    & shaded background (\cmd{\colorbox}) bleeding into margin \\
+  snugshade & similar                                                  \\
+  leftbar   & thick vertical line in left margin
+\end{tabular}
+\medskip
+
+\noindent
+to be used like
+%
+\begin{verbatim}
+\begin{framed}
+ copious text
+\end{framed}
+\end{verbatim}
+
+
+But the more general purpose of this package is to facilitate the
+creation of environments that enable page breaking
+within arbitrary decorations using a simple new-environment definition
+incorporating \cmd{\FrameCommand} and\\
+\verb+\begin{MakeFramed}+\marg{settings} \ldots\ \verb+\end{MakeFramed}+
+
+The ``\env{framed}'' environment uses ``\cmd{\fbox}'' as its ``\cmd{\FrameCommand}'' with 
+the additional settings \verb+\fboxrule=\FrameRule+ and \verb+\fboxsep=\FrameSep+.
+You can change these lengths (using \cmd{\setlength}) and you can change 
+the definition of \cmd{\FrameCommand} to use much fancier boxes.
+
+In fact, the ``\env{shaded}'' environment just redefines \cmd{\FrameCommand} to be
+\verb+\colorbox{shadecolor}+ (and you have to define the color ``\texttt{shadecolor}'':
+\verb+\definecolor{shadecolor}...+).
+
+A page break is allowed, and even encouraged, before the \env{framed}
+environment.  If you want to attach some text (a box title) to the
+frame, then the text should be inserted by \cmd{\FrameCommand}.
+
+The contents of the framed regions are restricted: 
+Floats, footnotes, marginpars and head-line entries will be lost.
+(Some of these may be handled in a later version.)
+This package will not work with the page breaking of \pkg{multicol.sty},
+or other systems that perform column-balancing.
+
+The \env{MakeFramed} environment does the work.  Its ``\meta{settings}'' argument
+should contain any adjustments to the text width (applied to \cmd{\hsize},
+and using the ``\cmd{\width}'' of the frame itself) as well as a ``restore''
+command -- \cmd{\@parboxrestore} or \cmd{\FrameRestore} or something similar;
+as an example, the \env{snugshade} environment shows how to suppress excess
+spacing within the box, copying the code from minipage.
+
+
+\section*{Expert commands:}
+
+\begin{itemize}
+\item \cmd{\MakeFramed}, \cmd{\endMakeFramed}: the ``\env{MakeFramed}'' environment
+\item \cmd{\FrameCommand}: command to draw the frame around its argument
+\item \cmd{\FrameRestore}: restore some text settings, but fewer than \cmd{\@parbox\-restore}
+\item \cmd{\FrameRule}: length register; \cmd{\fboxrule} for default ``\env{framed}''.
+\item \cmd{\FrameSep}: length register; \cmd{\fboxsep} for default ``\env{framed}''.
+\item \cmd{\FrameHeightAdjust}: macro; height of frame above baseline at top of page
+\end{itemize}
+
+\medskip
+This is still a `pre-production' version because I can think of many
+features/improvements that should be made.  Nevertheless, starting 
+with version~0.5 it should be bug-free.
+
+
+\section*{ToDo:}
+
+\begin{itemize}
+\item Test more varieties of list 
+\item Improve and correct documentation
+\item Propagation of \cmd{\marks}
+\item Handle footnotes (how??) floats (?) and marginpars.
+\item Stretchability modification.
+\end{itemize}
+
+\end{document}

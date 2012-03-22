@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<history>
+  <StructureModification>
+    <dependencies>
+      <model index="2xq8" modelUID="r:acb944b8-1619-4cb9-976c-0d6174d7d420(com.mbeddr.cc.fm.buildconfig.editor)" version="0" />
+      <model index="yuyx" modelUID="r:36dc04ce-d511-478b-8615-e829c96b5b25(com.mbeddr.cc.fm.buildconfig.behavior)" version="0" />
+      <model index="87m1" modelUID="r:6d39f3c7-1bd3-44df-812a-bc6037006bf1(com.mbeddr.cc.fm.buildconfig.constraints)" version="0" />
+      <model index="klub" modelUID="r:d53bf4a4-6b8d-4330-b958-f40d3b578a0a(com.mbeddr.cc.fm.buildconfig.typesystem)" version="0" />
+      <model index="nrm7" modelUID="r:cf0d5c91-a61e-4486-81f6-34875948501f(com.mbeddr.cc.fm.buildconfig.intentions)" version="-1" />
+      <model index="rbly" modelUID="r:a38003d5-3cc2-4cc7-bfed-041d3d2d1289(com.mbeddr.cc.fm.buildconfig.structure)" version="0" />
+      <model index="syuw" modelUID="r:2f2bb760-61eb-497c-8faf-ef8cae7405e8(com.mbeddr.cc.fm.buildconfig.generator.template.generator.template.main@generator)" version="0" />
+    </dependencies>
+    <RenameModel oldModel="r:acb944b8-1619-4cb9-976c-0d6174d7d420(com.mbeddr.cc.fm.buildconfig.editor)" newModel="r:acb944b8-1619-4cb9-976c-0d6174d7d420(com.mbeddr.cc.var.buildconfig.editor)" />
+    <RenameModel oldModel="r:a38003d5-3cc2-4cc7-bfed-041d3d2d1289(com.mbeddr.cc.fm.buildconfig.structure)" newModel="r:a38003d5-3cc2-4cc7-bfed-041d3d2d1289(com.mbeddr.cc.var.buildconfig.structure)" />
+    <RenameModel oldModel="r:cf0d5c91-a61e-4486-81f6-34875948501f(com.mbeddr.cc.fm.buildconfig.intentions)" newModel="r:cf0d5c91-a61e-4486-81f6-34875948501f(com.mbeddr.cc.var.buildconfig.intentions)" />
+    <RenameModel oldModel="r:d53bf4a4-6b8d-4330-b958-f40d3b578a0a(com.mbeddr.cc.fm.buildconfig.typesystem)" newModel="r:d53bf4a4-6b8d-4330-b958-f40d3b578a0a(com.mbeddr.cc.var.buildconfig.typesystem)" />
+    <RenameModel oldModel="r:36dc04ce-d511-478b-8615-e829c96b5b25(com.mbeddr.cc.fm.buildconfig.behavior)" newModel="r:36dc04ce-d511-478b-8615-e829c96b5b25(com.mbeddr.cc.var.buildconfig.behavior)" />
+    <RenameModel oldModel="r:6d39f3c7-1bd3-44df-812a-bc6037006bf1(com.mbeddr.cc.fm.buildconfig.constraints)" newModel="r:6d39f3c7-1bd3-44df-812a-bc6037006bf1(com.mbeddr.cc.var.buildconfig.constraints)" />
+    <RenameModel oldModel="r:2f2bb760-61eb-497c-8faf-ef8cae7405e8(com.mbeddr.cc.fm.buildconfig.generator.template.generator.template.main@generator)" newModel="r:2f2bb760-61eb-497c-8faf-ef8cae7405e8(com.mbeddr.cc.var.buildconfig.generator.template.generator.template.generator.template.main@generator)" />
+  </StructureModification>
+</history>
+
