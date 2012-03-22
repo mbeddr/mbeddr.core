@@ -17,9 +17,18 @@
       
 	  <registerZip file="mbeddr.core-${version}.zip" desc="mbeddr.core" dependsOn="" docs="userguide_mbeddr.core.pdf" example="mbeddr.core-examples-${version}.zip"/>
 	  <zip destfile="${path}/mbeddr.core-${version}.zip">
+	  	  <!-- UTIL -->
+          <zipfileset dir="code/languages/com.mbeddr.mpsutil/languages" prefix="${prefix.util}/languages"/>
+
+	  	  <!-- CORE -->
           <zipfileset dir="code/languages/com.mbeddr.core/languages" prefix="${prefix.core}/languages"/>
           <zipfileset dir="code/languages/com.mbeddr.core/devkits" prefix="${prefix.core}/devkits"/>
-          <zipfileset dir="code/languages/com.mbeddr.mpsutil/languages" prefix="${prefix.util}/languages"/>
+
+	  	  <!-- CC -->
+          <zipfileset dir="code/languages/com.mbeddr.cc/languages/" prefix="${prefix.core}/languages"/>
+          <zipfileset dir="code/languages/com.mbeddr.cc/devkits/"	prefix="${prefix.core}/devkits"/>
+          
+          <!-- LICENSE -->
 		  <zipfileset dir="." includes="license.html"/> 
 	  </zip>
 	  
