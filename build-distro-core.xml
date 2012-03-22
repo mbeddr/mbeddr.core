@@ -1,8 +1,5 @@
 <project name="com.mbeddr.core dsitribution" default="build-distro">
  
-  <taskdef name="registerZip" classname="com.mbeddr.util.RegisterZipTask"/>
-  <taskdef name="createHtml" classname="com.mbeddr.util.AntHtmlTask"/>
-	 
   <property name="prefix.core" value="mbeddr/code/languages/com.mbeddr.core"/>
   <property name="prefix.util" value="mbeddr/code/languages/com.mbeddr.mpsutil"/>
   <property name="prefix.apps" value="mbeddr/code/applications"/>
@@ -15,7 +12,6 @@
           <fileset dir="${path}" includes="**/*"/>
       </delete>
       
-	  <registerZip file="mbeddr.core-${version}.zip" desc="mbeddr.core" dependsOn="" docs="userguide_mbeddr.core.pdf" example="mbeddr.core-examples-${version}.zip"/>
 	  <zip destfile="${path}/mbeddr.core-${version}.zip">
 	  	  <!-- UTIL -->
           <zipfileset dir="code/languages/com.mbeddr.mpsutil/languages" prefix="${prefix.util}/languages"/>
@@ -40,8 +36,7 @@
 	  </zip>
 	  
 	  <copy file="documentation/userguide_mbeddr.core/userguide_mbeddr.core.pdf" tofile="${path}/userguide_mbeddr.core.pdf"/>
-	  
-	  <createHtml path="${path}" version="${version}" webRoot="${webRoot}"/> 
+	  <copy file="documentation/userguide_mbeddr.cc/userguide_mbeddr.cc.pdf" tofile="${path}/userguide_mbeddr.cc.pdf"/>
 
   </target>
   
