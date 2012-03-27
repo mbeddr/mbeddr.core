@@ -99,14 +99,14 @@ deliverables/*/*.log
 deliverables/*/*.out
 deliverables/*/*.toc
 
-papers/*/*.aux
-papers/*/*.bbl
-papers/*/*.blg
-papers/*/*.dvi
-papers/*/*.log
-papers/*/*.out
-papers/*/*.toc
-papers/*/*.synctex.gz
+documentation/*/*.aux
+documentation/*/*.bbl
+documentation/*/*.blg
+documentation/*/*.dvi
+documentation/*/*.log
+documentation/*/*.out
+documentation/*/*.toc
+documentation/*/*.synctex.gz
 
 # -----------------------------------------------------------
 # tools

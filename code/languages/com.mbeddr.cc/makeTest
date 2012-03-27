@@ -1,0 +1,44 @@
+#!/bin/sh
+#set +v
+
+PROC_RET=0
+
+cd tests/test.ex.cc.fm/source_gen/test/ex/cc
+
+
+echo -------------------------------------
+echo comptest
+cd v_debug
+make test
+PROC_RET=$(($?+$PROC_RET))
+
+echo -------------------------------------
+echo CompWithDectab
+cd ../v_production
+make test
+PROC_RET=$(($?+$PROC_RET))
+
+
+
+if [ "$PROC_RET" -ne "0" ]; 
+ then
+    echo ""
+    echo "" 
+    echo "================================================"
+    echo "================================================" 
+    echo "               $PROC_RET test(s) failed"
+    echo "================================================"
+    echo "================================================"
+    echo ""
+    echo ""
+ else
+  echo ""
+    echo "" 
+    echo "================================================"
+    echo "              OK - All tests green"
+    echo "================================================"
+    echo ""
+    echo ""
+fi
+
+exit $PROC_RET

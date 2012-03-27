@@ -19,6 +19,9 @@
     <node type="tp1t.ConceptConstraints" typeId="tp1t.1213093968558" id="5178825530493136915">
       <link role="concept" roleId="tp1t.1213093996982" targetNodeId="51wr.7717755763392524107" resolveInfo="ModuleRef" />
     </node>
+    <node type="tp1t.ConceptConstraints" typeId="tp1t.1213093968558" id="9108052991586151877">
+      <link role="concept" roleId="tp1t.1213093996982" targetNodeId="51wr.7717755763392524104" resolveInfo="BuildConfiguration" />
+    </node>
   </roots>
   <root id="2671893947946328090">
     <node role="referent" roleId="tp1t.1213100494875" type="tp1t.NodeReferentConstraint" typeId="tp1t.1148687176410" id="2671893947946328091">
@@ -74,6 +77,20 @@
                   <property name="value" nameId="tpee.1070475926801" value="   from " />
                 </node>
               </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </root>
+  <root id="9108052991586151877">
+    <node role="property" roleId="tp1t.1213098023997" type="tp1t.NodePropertyConstraint" typeId="tp1t.1147467115080" id="9108052991586151878">
+      <link role="applicableProperty" roleId="tp1t.1147467295099" targetNodeId="tpck.1169194664001" resolveInfo="name" />
+      <node role="propertyGetter" roleId="tp1t.1147468630220" type="tp1t.ConstraintFunction_PropertyGetter" typeId="tp1t.1147467790433" id="9108052991586151879">
+        <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="9108052991586151880">
+          <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="9108052991586151881">
+            <node role="expression" roleId="tpee.1068580123156" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="9108052991586151882">
+              <property name="value" nameId="tpee.1070475926801" value="BuildConfiguration" />
             </node>
           </node>
         </node>

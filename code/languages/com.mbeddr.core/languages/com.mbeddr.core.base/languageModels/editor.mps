@@ -41,6 +41,9 @@
     <node type="tpc2.StyleSheet" typeId="tpc2.1186402211651" id="5947739078127918694">
       <property name="name" nameId="tpck.1169194664001" value="important" />
     </node>
+    <node type="tpc2.StyleSheet" typeId="tpc2.1186402211651" id="9108052991586064671">
+      <property name="name" nameId="tpck.1169194664001" value="heading" />
+    </node>
   </roots>
   <root id="7024921229556157914">
     <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="7024921229556157916">
@@ -194,6 +197,20 @@
       <property name="name" nameId="tpck.1169194664001" value="important" />
       <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.ForegroundColorStyleClassItem" typeId="tpc2.1186404549998" id="5947739078127918696">
         <property name="color" nameId="tpc2.1186403713874" value="DARK_BLUE" />
+      </node>
+    </node>
+  </root>
+  <root id="9108052991586064671">
+    <node role="styleClass" roleId="tpc2.1186402402630" type="tpc2.StyleSheetClass" typeId="tpc2.1186402373407" id="9108052991586064672">
+      <property name="name" nameId="tpck.1169194664001" value="heading" />
+      <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.FontSizeStyleClassItem" typeId="tpc2.1186415722038" id="9108052991586064673">
+        <property name="value" nameId="tpc2.1221209241505" value="17" />
+      </node>
+      <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.FontStyleStyleClassItem" typeId="tpc2.1186403751766" id="9108052991586066017">
+        <property name="style" nameId="tpc2.1186403771423" value="BOLD" />
+      </node>
+      <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.UnderlinedStyleClassItem" typeId="tpc2.1186414999511" id="9108052991586064675">
+        <property name="underlined" nameId="tpc2.1214316229833" value="2" />
       </node>
     </node>
   </root>
