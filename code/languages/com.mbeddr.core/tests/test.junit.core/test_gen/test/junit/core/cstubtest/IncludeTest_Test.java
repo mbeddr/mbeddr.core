@@ -12,6 +12,11 @@ import junit.framework.Assert;
 import jetbrains.mps.smodel.SNode;
 import jetbrains.mps.internal.collections.runtime.Sequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
+import jetbrains.mps.internal.collections.runtime.ListSequence;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
+import test.junit.core.cstubtest_helper.CheckModuleContentHelper;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
 
 @MPSLaunch
 public class IncludeTest_Test extends BaseTransformationTest {
@@ -24,6 +29,9 @@ public class IncludeTest_Test extends BaseTransformationTest {
   @MPSLaunch
   public static class TestBody extends BaseTestBody {
     public void test_testRecursiveInclude() throws Exception {
+
+      System.out.println("--------------------------------------------------------");
+
       this.cleanUp();
 
       String pathToModulUsesTypeDef = PathMacros.getInstance().getValue("mbeddr.github.core.home") + "/code/languages/com.mbeddr.core/tests/test.ex.core.cStubTestInclude/include";
@@ -31,16 +39,76 @@ public class IncludeTest_Test extends BaseTransformationTest {
       String pathToModuleWithTypeDef = PathMacros.getInstance().getValue("mbeddr.github.core.home") + "/code/languages/com.mbeddr.core/tests/test.ex.core.cStubTestInclude/include";
       pathToModuleWithTypeDef += "/ModuleWithTypeDef.h";
 
-      System.out.println("ROOTS Count before: " + this.myModel.getSModel().rootsCount());
+      String pathToModuleUsesDefine = PathMacros.getInstance().getValue("mbeddr.github.core.home") + "/code/languages/com.mbeddr.core/tests/test.ex.core.cStubTestInclude/include";
+      pathToModuleUsesDefine += "/ModuleUsesTypeDef2.h";
+
+
       int countBefore = this.myModel.getSModel().rootsCount();
-      ParseUtil.parseHFile(pathToModulUsesTypeDef, this.myModel.getSModel());
-      Assert.assertEquals(2, this.myModel.getSModel().rootsCount() - countBefore);
 
       ParseUtil.parseHFile(pathToModuleWithTypeDef, this.myModel.getSModel());
-      Assert.assertEquals(2, this.myModel.getSModel().rootsCount() - countBefore);
+      Assert.assertEquals(1, this.myModel.getSModel().rootsCount() - countBefore);
+
+      ParseUtil.parseHFile(pathToModuleUsesDefine, this.myModel.getSModel());
+      Assert.assertEquals(3, this.myModel.getSModel().rootsCount() - countBefore);
 
 
-      System.out.println("ROOTS Count after: " + this.myModel.getSModel().rootsCount());
+      ParseUtil.parseHFile(pathToModulUsesTypeDef, this.myModel.getSModel());
+      Assert.assertEquals(3, this.myModel.getSModel().rootsCount() - countBefore);
+
+
+      SNode moduleWithTypeDef = null;
+      SNode moduleUsesTypeDef = null;
+      SNode moduleUsesTypeDef2 = null;
+
+      for (SNode root : Sequence.fromIterable(this.myModel.getSModel().roots())) {
+        if (root.isInstanceOfConcept(SNodeOperations.getNode("r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)", "6116558314501417921"))) {
+          if (SPropertyOperations.getString(SNodeOperations.cast(root, "com.mbeddr.core.modules.structure.ExternalModule"), "name").equals("ModuleWithTypeDef")) {
+            moduleWithTypeDef = SNodeOperations.cast(root, "com.mbeddr.core.modules.structure.ExternalModule");
+          }
+          if (SPropertyOperations.getString(SNodeOperations.cast(root, "com.mbeddr.core.modules.structure.ExternalModule"), "name").equals("ModuleUsesTypeDef")) {
+            moduleUsesTypeDef = SNodeOperations.cast(root, "com.mbeddr.core.modules.structure.ExternalModule");
+          }
+          if (SPropertyOperations.getString(SNodeOperations.cast(root, "com.mbeddr.core.modules.structure.ExternalModule"), "name").equals("ModuleUsesTypeDef2")) {
+            moduleUsesTypeDef2 = SNodeOperations.cast(root, "com.mbeddr.core.modules.structure.ExternalModule");
+          }
+
+        }
+      }
+      Assert.assertNotNull(moduleUsesTypeDef);
+      Assert.assertNotNull(moduleWithTypeDef);
+      Assert.assertNotNull(moduleUsesTypeDef2);
+
+
+      Assert.assertTrue((int) ListSequence.fromList(SLinkOperations.getTargets(moduleUsesTypeDef, "imports", true)).count() == 1);
+      Assert.assertTrue(SPropertyOperations.getString(SLinkOperations.getTarget(SNodeOperations.cast(ListSequence.fromList(SLinkOperations.getTargets(moduleUsesTypeDef, "imports", true)).getElement(0), "com.mbeddr.core.modules.structure.ModuleImport"), "module", false), "name").equals(SPropertyOperations.getString(moduleWithTypeDef, "name")));
+
+
+
+      Assert.assertTrue((int) ListSequence.fromList(SLinkOperations.getTargets(moduleUsesTypeDef2, "imports", true)).count() == 1);
+      Assert.assertTrue(SPropertyOperations.getString(SLinkOperations.getTarget(SNodeOperations.cast(ListSequence.fromList(SLinkOperations.getTargets(moduleUsesTypeDef2, "imports", true)).getElement(0), "com.mbeddr.core.modules.structure.ModuleImport"), "module", false), "name").equals(SPropertyOperations.getString(moduleUsesTypeDef, "name")));
+
+      SNode ar = (SNode) CheckModuleContentHelper.checkContentExists("ar", SConceptOperations.findConceptDeclaration("com.mbeddr.core.modules.structure.GlobalVariableDeclaration"), moduleUsesTypeDef2);
+      Assert.assertNotNull(ar);
+
+      SNode smallT = (SNode) CheckModuleContentHelper.checkContentExists("smallT", SConceptOperations.findConceptDeclaration("com.mbeddr.core.udt.structure.TypeDef"), moduleWithTypeDef);
+      Assert.assertNotNull(smallT);
+      SNode smallTTT = (SNode) CheckModuleContentHelper.checkContentExists("smallTTT", SConceptOperations.findConceptDeclaration("com.mbeddr.core.udt.structure.TypeDef"), moduleUsesTypeDef);
+      Assert.assertNotNull(smallTTT);
+
+
+      Assert.assertTrue(SNodeOperations.isInstanceOf(SLinkOperations.getTarget(ar, "type", true), "com.mbeddr.core.pointers.structure.ArrayType"));
+      Assert.assertTrue(SNodeOperations.isInstanceOf(SLinkOperations.getTarget(SNodeOperations.cast(SLinkOperations.getTarget(ar, "type", true), "com.mbeddr.core.pointers.structure.ArrayType"), "baseType", true), "com.mbeddr.core.udt.structure.TypeDefType"));
+      Assert.assertTrue(SPropertyOperations.getString(SLinkOperations.getTarget(SNodeOperations.cast(SLinkOperations.getTarget(SNodeOperations.cast(SLinkOperations.getTarget(ar, "type", true), "com.mbeddr.core.pointers.structure.ArrayType"), "baseType", true), "com.mbeddr.core.udt.structure.TypeDefType"), "typeDef", false), "name").equals(SPropertyOperations.getString(smallT, "name")));
+
+      SNode functionPrototype = (SNode) CheckModuleContentHelper.checkContentExists("add", SConceptOperations.findConceptDeclaration("com.mbeddr.core.modules.structure.FunctionPrototype"), moduleWithTypeDef);
+      Assert.assertTrue(SNodeOperations.isInstanceOf(SLinkOperations.getTarget(functionPrototype, "type", true), "com.mbeddr.core.expressions.structure.IntType"));
+      Assert.assertTrue((int) ListSequence.fromList(SLinkOperations.getTargets(functionPrototype, "arguments", true)).count() == 2);
+      Assert.assertTrue(SNodeOperations.isInstanceOf(ListSequence.fromList(SLinkOperations.getTargets(functionPrototype, "arguments", true)).getElement(0), "com.mbeddr.core.udt.structure.TypeDefType"));
+      Assert.assertTrue(SPropertyOperations.getString(SLinkOperations.getTarget(SNodeOperations.cast(ListSequence.fromList(SLinkOperations.getTargets(functionPrototype, "arguments", true)).getElement(0), "com.mbeddr.core.udt.structure.TypeDefType"), "typeDef", false), "name").equals(SPropertyOperations.getString(smallT, "name")));
+
+      Assert.assertTrue(SNodeOperations.isInstanceOf(ListSequence.fromList(SLinkOperations.getTargets(functionPrototype, "arguments", true)).getElement(1), "com.mbeddr.core.udt.structure.TypeDefType"));
+      Assert.assertTrue(SPropertyOperations.getString(SLinkOperations.getTarget(SNodeOperations.cast(ListSequence.fromList(SLinkOperations.getTargets(functionPrototype, "arguments", true)).getElement(1), "com.mbeddr.core.udt.structure.TypeDefType"), "typeDef", false), "name").equals(SPropertyOperations.getString(smallT, "name")));
+
     }
 
     public void cleanUp() {

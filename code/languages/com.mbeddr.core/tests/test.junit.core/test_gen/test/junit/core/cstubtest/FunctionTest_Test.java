@@ -68,9 +68,6 @@ public class FunctionTest_Test extends BaseTransformationTest {
       SNode functionPrototype = (SNode) CheckModuleContentHelper.checkContentExists("add", externalModule);
       Assert.assertTrue(SNodeOperations.isInstanceOf(SLinkOperations.getTarget(functionPrototype, "type", true), "com.mbeddr.core.expressions.structure.IntType"));
       Assert.assertEquals(3, ListSequence.fromList(SLinkOperations.getTargets(functionPrototype, "arguments", true)).count());
-      System.out.println(SPropertyOperations.getString(ListSequence.fromList(SLinkOperations.getTargets(functionPrototype, "arguments", true)).getElement(0), "name"));
-      System.out.println(SPropertyOperations.getString(ListSequence.fromList(SLinkOperations.getTargets(functionPrototype, "arguments", true)).getElement(1), "name"));
-      System.out.println(SPropertyOperations.getString(ListSequence.fromList(SLinkOperations.getTargets(functionPrototype, "arguments", true)).getElement(2), "name"));
       boolean aFound = false;
       boolean bFound = false;
       boolean cFound = false;
