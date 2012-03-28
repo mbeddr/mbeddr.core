@@ -1861,8 +1861,8 @@
                 <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="454832265266945336">
                   <property name="value" nameId="mj1l.8860443239512128104" value="10" />
                 </node>
-                <node role="left" roleId="mj1l.8860443239512128064" type="clbe.EnumLiteralRef" typeId="clbe.8811614583515726007" id="454832265266945332">
-                  <link role="literal" roleId="clbe.8811614583515726008" targetNodeId="454832265266945315" resolveInfo="Feb" />
+                <node role="left" roleId="mj1l.8860443239512128064" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="6709207522408555235">
+                  <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="454832265266945325" resolveInfo="month" />
                 </node>
               </node>
             </node>
