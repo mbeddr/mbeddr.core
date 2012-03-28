@@ -48,6 +48,14 @@
   <component name="ProjectLibraryManager">
     <option name="libraries">
       <map>
+        <entry key="cc">
+          <value>
+            <Library>
+              <option name="name" value="cc" />
+              <option name="path" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.cc" />
+            </Library>
+          </value>
+        </entry>
         <entry key="ext">
           <value>
             <Library>

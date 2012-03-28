@@ -16,7 +16,7 @@
   <roots>
     <node type="n3kn.LibraryStubDescriptor" typeId="n3kn.8529737993487825733" id="6258116718425333664">
       <property name="name" nameId="tpck.1169194664001" value="CStubTestInclude" />
-      <property name="moduleName" nameId="n3kn.7076427504342075466" value="CStubTestInclude" />
+      <property name="moduleName" nameId="n3kn.7076427504342075466" value="CStubTestIncludxe" />
       <property name="moduleId" nameId="n3kn.8529737993487825735" value="e2fc6d37-d837-405c-bc82-e5cab6f7c813" />
       <link role="creator" roleId="n3kn.8529737993487992546" targetNodeId="270496905847335950" resolveInfo="CStubs" />
     </node>
@@ -67,6 +67,18 @@
                     </node>
                   </node>
                 </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="7112389732804235417">
+          <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="7112389732804235421">
+            <node role="operand" roleId="tpee.1197027771414" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="7112389732804235418">
+              <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="270496905847335932" resolveInfo="strings" />
+            </node>
+            <node role="operation" roleId="tpee.1197027833540" type="tp2q.AddElementOperation" typeId="tp2q.1160612413312" id="7112389732804235427">
+              <node role="argument" roleId="tp2q.1160612519549" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="7112389732804235429">
+                <property name="value" nameId="tpee.1070475926801" value="/Users/matzat/Documents/lwes/smartmeter" />
               </node>
             </node>
           </node>

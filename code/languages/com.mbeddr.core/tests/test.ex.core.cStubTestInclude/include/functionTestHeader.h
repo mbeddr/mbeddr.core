@@ -1,4 +1,5 @@
 int add(short a, char b, float c);
+void voidFun();
 int complexParameters(short *a, char *b[5]);
 typedef short *t1;
 typedef char *t2[5];

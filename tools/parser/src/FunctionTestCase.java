@@ -39,9 +39,8 @@ public class FunctionTestCase extends TestCase {
 
 		
 
-		content.append("typedef int (*addFun)(int,int);");
-		content.append("int *addFun2(int,int);");
-		content.append("int addFun3(int,int);");
+
+		content.append("void addFun(int a,int b);");
 		
 
 		HashMap<String, String> options = new HashMap<String, String>();
