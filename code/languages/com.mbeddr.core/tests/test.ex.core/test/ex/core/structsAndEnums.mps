@@ -695,7 +695,7 @@
       <node role="literals" roleId="clbe.8811614583515725857" type="clbe.EnumLiteral" typeId="clbe.8811614583515725853" id="8811614583515751350">
         <property name="name" nameId="tpck.1169194664001" value="RED" />
         <node role="init" roleId="clbe.8811614583515725856" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="8811614583515751368">
-          <property name="value" nameId="mj1l.8860443239512128104" value="1" />
+          <property name="value" nameId="mj1l.8860443239512128104" value="4000" />
         </node>
       </node>
       <node role="literals" roleId="clbe.8811614583515725857" type="clbe.EnumLiteral" typeId="clbe.8811614583515725853" id="8811614583515751369">
@@ -743,6 +743,26 @@
           </node>
           <node role="init" roleId="c4fa.4185783222026502647" type="clbe.EnumLiteralRef" typeId="clbe.8811614583515726007" id="6709207522408585978">
             <link role="literal" roleId="clbe.8811614583515726008" targetNodeId="8811614583515751350" resolveInfo="RED" />
+          </node>
+        </node>
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="1451255793041133924">
+          <property name="name" nameId="tpck.1169194664001" value="i32" />
+          <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="1451255793041197397" />
+        </node>
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.AssignmentStatement" typeId="c4fa.6275792049641552210" id="1451255793041133931">
+          <node role="lvalue" roleId="c4fa.6275792049641552218" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="1451255793041133928">
+            <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="1451255793041133924" resolveInfo="i32" />
+          </node>
+          <node role="rvalue" roleId="c4fa.6275792049641552219" type="clbe.EnumLiteralRef" typeId="clbe.8811614583515726007" id="1451255793041133933">
+            <link role="literal" roleId="clbe.8811614583515726008" targetNodeId="8811614583515751350" resolveInfo="RED" />
+          </node>
+        </node>
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.AssignmentStatement" typeId="c4fa.6275792049641552210" id="1451255793041202558">
+          <node role="rvalue" roleId="c4fa.6275792049641552219" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="1451255793041202560">
+            <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="1451255793041133924" resolveInfo="i32" />
+          </node>
+          <node role="lvalue" roleId="c4fa.6275792049641552218" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="1451255793041189838">
+            <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="8811614583515754758" resolveInfo="c" />
           </node>
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="8811614583515760419">
