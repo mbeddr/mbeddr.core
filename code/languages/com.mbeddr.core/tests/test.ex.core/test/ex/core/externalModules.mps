@@ -40,6 +40,11 @@
         <node role="type" roleId="mj1l.318113533128716676" type="mj1l.StringType" typeId="mj1l.2088909457728253264" id="5708867820621171272" />
       </node>
     </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.GlobalVariableDeclaration" typeId="x27k.6610873504380335822" id="3948649030656103409">
+      <property name="name" nameId="tpck.1169194664001" value="dsf" />
+      <property name="volatile" nameId="c4fa.7825285260294008966" value="true" />
+      <node role="type" roleId="mj1l.318113533128716676" type="mj1l.IntType" typeId="mj1l.8860443239512128108" id="3948649030656103411" />
+    </node>
   </root>
   <root id="9066372830132894103">
     <node role="contents" roleId="x27k.6437088627575722833" type="yz9a.TestCase" typeId="yz9a.6275792049641586523" id="9066372830132894104">

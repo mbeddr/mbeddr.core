@@ -40,7 +40,7 @@ public class FunctionTestCase extends TestCase {
 		
 
 
-		content.append("void addFun(int a,int b);");
+		content.append("unsigned int addFun(unsigned int a,int b);");
 		
 
 		HashMap<String, String> options = new HashMap<String, String>();

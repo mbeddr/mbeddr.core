@@ -1408,7 +1408,21 @@
                 </node>
               </node>
             </node>
-            <node role="statement" roleId="tpee.1068581517665" type="tpee.Statement" typeId="tpee.1068580123157" id="2497083023867902370" />
+            <node role="statement" roleId="tpee.1068581517665" type="tpee.LocalVariableDeclarationStatement" typeId="tpee.1068581242864" id="3948649030656113883">
+              <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="3948649030656113884">
+                <property name="name" nameId="tpck.1169194664001" value="isUnsigned" />
+                <node role="type" roleId="tpee.5680397130376446158" type="tpee.BooleanType" typeId="tpee.1070534644030" id="3948649030656113885" />
+                <node role="initializer" roleId="tpee.1068431790190" type="tpee.DotExpression" typeId="tpee.1197027756228" id="3948649030656113891">
+                  <node role="operand" roleId="tpee.1197027771414" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="3948649030656113888">
+                    <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="2497083023867902262" resolveInfo="declSpecifier" />
+                  </node>
+                  <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="3948649030656113897">
+                    <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="2tdm.~IASTSimpleDeclSpecifier%disUnsigned()%cboolean" resolveInfo="isUnsigned" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node role="statement" roleId="tpee.1068581517665" type="tpee.Statement" typeId="tpee.1068580123157" id="3948649030656113886" />
             <node role="statement" roleId="tpee.1068581517665" type="tpee.SwitchStatement" typeId="tpee.1163670490218" id="2497083023867902282">
               <node role="case" roleId="tpee.1163670772911" type="tpee.SwitchCase" typeId="tpee.1163670641947" id="2497083023867902445">
                 <node role="expression" roleId="tpee.1163670677455" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="2497083023867902448">
@@ -1417,18 +1431,31 @@
                 <node role="body" roleId="tpee.1163670683720" type="tpee.StatementList" typeId="tpee.1068580123136" id="2497083023867902447">
                   <node role="statement" roleId="tpee.1068581517665" type="tpee.IfStatement" typeId="tpee.1068580123159" id="2497083023867902344">
                     <node role="ifTrue" roleId="tpee.1068580123161" type="tpee.StatementList" typeId="tpee.1068580123136" id="2497083023867902345">
-                      <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="2497083023867939869">
-                        <node role="expression" roleId="tpee.1068580123156" type="tpee.AssignmentExpression" typeId="tpee.1068498886294" id="2497083023867939871">
-                          <node role="lValue" roleId="tpee.1068498886295" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="2497083023867939870">
-                            <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="2497083023867939857" resolveInfo="result" />
-                          </node>
-                          <node role="rValue" roleId="tpee.1068498886297" type="hba4.BuilderExpression" typeId="hba4.4481811096720536877" id="2497083023867902355">
-                            <node role="root" roleId="hba4.4481811096720536927" type="hba4.ChildStep" typeId="hba4.4481811096720537459" id="2497083023867902356">
-                              <link role="childLink" roleId="hba4.4481811096720607067" targetNodeId="tpck.5169995583184591170" />
-                              <node role="value" roleId="hba4.6308171743671982944" type="hba4.ConceptRef" typeId="hba4.4481811096720976618" id="2497083023867902358">
-                                <link role="concept" roleId="hba4.4481811096720976619" targetNodeId="mj1l.3335993110369949928" resolveInfo="ShortType" />
+                      <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="3948649030656113898">
+                        <node role="expression" roleId="tpee.1068580123156" type="tpee.AssignmentExpression" typeId="tpee.1068498886294" id="3948649030656113902">
+                          <node role="rValue" roleId="tpee.1068498886297" type="tpee.TernaryOperatorExpression" typeId="tpee.1163668896201" id="3948649030656113908">
+                            <node role="ifTrue" roleId="tpee.1163668922816" type="hba4.BuilderExpression" typeId="hba4.4481811096720536877" id="3948649030656113912">
+                              <node role="root" roleId="hba4.4481811096720536927" type="hba4.ChildStep" typeId="hba4.4481811096720537459" id="3948649030656113913">
+                                <link role="childLink" roleId="hba4.4481811096720607067" targetNodeId="tpck.5169995583184591170" />
+                                <node role="value" roleId="hba4.6308171743671982944" type="hba4.ConceptRef" typeId="hba4.4481811096720976618" id="3948649030656113961">
+                                  <link role="concept" roleId="hba4.4481811096720976619" targetNodeId="mj1l.595416243537320771" resolveInfo="UnsignedShortType" />
+                                </node>
                               </node>
                             </node>
+                            <node role="condition" roleId="tpee.1163668914799" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="3948649030656113905">
+                              <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="3948649030656113884" resolveInfo="isUnsigned" />
+                            </node>
+                            <node role="ifFalse" roleId="tpee.1163668934364" type="hba4.BuilderExpression" typeId="hba4.4481811096720536877" id="2497083023867902355">
+                              <node role="root" roleId="hba4.4481811096720536927" type="hba4.ChildStep" typeId="hba4.4481811096720537459" id="2497083023867902356">
+                                <link role="childLink" roleId="hba4.4481811096720607067" targetNodeId="tpck.5169995583184591170" />
+                                <node role="value" roleId="hba4.6308171743671982944" type="hba4.ConceptRef" typeId="hba4.4481811096720976618" id="2497083023867902358">
+                                  <link role="concept" roleId="hba4.4481811096720976619" targetNodeId="mj1l.3335993110369949928" resolveInfo="ShortType" />
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                          <node role="lValue" roleId="tpee.1068498886295" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="3948649030656113899">
+                            <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="2497083023867939857" resolveInfo="result" />
                           </node>
                         </node>
                       </node>
@@ -1444,18 +1471,31 @@
                   </node>
                   <node role="statement" roleId="tpee.1068581517665" type="tpee.IfStatement" typeId="tpee.1068580123159" id="2497083023867902373">
                     <node role="ifTrue" roleId="tpee.1068580123161" type="tpee.StatementList" typeId="tpee.1068580123136" id="2497083023867902374">
-                      <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="2497083023867939875">
-                        <node role="expression" roleId="tpee.1068580123156" type="tpee.AssignmentExpression" typeId="tpee.1068498886294" id="2497083023867939876">
-                          <node role="lValue" roleId="tpee.1068498886295" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="2497083023867939877">
-                            <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="2497083023867939857" resolveInfo="result" />
-                          </node>
-                          <node role="rValue" roleId="tpee.1068498886297" type="hba4.BuilderExpression" typeId="hba4.4481811096720536877" id="2497083023867939878">
-                            <node role="root" roleId="hba4.4481811096720536927" type="hba4.ChildStep" typeId="hba4.4481811096720537459" id="2497083023867939879">
-                              <link role="childLink" roleId="hba4.4481811096720607067" targetNodeId="tpck.5169995583184591170" />
-                              <node role="value" roleId="hba4.6308171743671982944" type="hba4.ConceptRef" typeId="hba4.4481811096720976618" id="2497083023867939888">
-                                <link role="concept" roleId="hba4.4481811096720976619" targetNodeId="mj1l.86532984527104137" resolveInfo="LongType" />
+                      <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="3948649030656113917">
+                        <node role="expression" roleId="tpee.1068580123156" type="tpee.AssignmentExpression" typeId="tpee.1068498886294" id="3948649030656113918">
+                          <node role="rValue" roleId="tpee.1068498886297" type="tpee.TernaryOperatorExpression" typeId="tpee.1163668896201" id="3948649030656113919">
+                            <node role="ifTrue" roleId="tpee.1163668922816" type="hba4.BuilderExpression" typeId="hba4.4481811096720536877" id="3948649030656113920">
+                              <node role="root" roleId="hba4.4481811096720536927" type="hba4.ChildStep" typeId="hba4.4481811096720537459" id="3948649030656113921">
+                                <link role="childLink" roleId="hba4.4481811096720607067" targetNodeId="tpck.5169995583184591170" />
+                                <node role="value" roleId="hba4.6308171743671982944" type="hba4.ConceptRef" typeId="hba4.4481811096720976618" id="3948649030656113962">
+                                  <link role="concept" roleId="hba4.4481811096720976619" targetNodeId="mj1l.8463282783691596310" resolveInfo="UnsignedLongType" />
+                                </node>
                               </node>
                             </node>
+                            <node role="condition" roleId="tpee.1163668914799" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="3948649030656113924">
+                              <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="3948649030656113884" resolveInfo="isUnsigned" />
+                            </node>
+                            <node role="ifFalse" roleId="tpee.1163668934364" type="hba4.BuilderExpression" typeId="hba4.4481811096720536877" id="2497083023867939878">
+                              <node role="root" roleId="hba4.4481811096720536927" type="hba4.ChildStep" typeId="hba4.4481811096720537459" id="2497083023867939879">
+                                <link role="childLink" roleId="hba4.4481811096720607067" targetNodeId="tpck.5169995583184591170" />
+                                <node role="value" roleId="hba4.6308171743671982944" type="hba4.ConceptRef" typeId="hba4.4481811096720976618" id="2497083023867939888">
+                                  <link role="concept" roleId="hba4.4481811096720976619" targetNodeId="mj1l.86532984527104137" resolveInfo="LongType" />
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                          <node role="lValue" roleId="tpee.1068498886295" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="3948649030656113925">
+                            <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="2497083023867939857" resolveInfo="result" />
                           </node>
                         </node>
                       </node>
@@ -1471,18 +1511,31 @@
                   </node>
                   <node role="statement" roleId="tpee.1068581517665" type="tpee.IfStatement" typeId="tpee.1068580123159" id="2497083023867902382">
                     <node role="ifTrue" roleId="tpee.1068580123161" type="tpee.StatementList" typeId="tpee.1068580123136" id="2497083023867902383">
-                      <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="2497083023867939881">
-                        <node role="expression" roleId="tpee.1068580123156" type="tpee.AssignmentExpression" typeId="tpee.1068498886294" id="2497083023867939882">
-                          <node role="lValue" roleId="tpee.1068498886295" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="2497083023867939883">
-                            <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="2497083023867939857" resolveInfo="result" />
-                          </node>
-                          <node role="rValue" roleId="tpee.1068498886297" type="hba4.BuilderExpression" typeId="hba4.4481811096720536877" id="2497083023867939884">
-                            <node role="root" roleId="hba4.4481811096720536927" type="hba4.ChildStep" typeId="hba4.4481811096720537459" id="2497083023867939885">
-                              <link role="childLink" roleId="hba4.4481811096720607067" targetNodeId="tpck.5169995583184591170" />
-                              <node role="value" roleId="hba4.6308171743671982944" type="hba4.ConceptRef" typeId="hba4.4481811096720976618" id="2497083023867939887">
-                                <link role="concept" roleId="hba4.4481811096720976619" targetNodeId="mj1l.8463282783691596316" resolveInfo="LongLongType" />
+                      <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="3948649030656113927">
+                        <node role="expression" roleId="tpee.1068580123156" type="tpee.AssignmentExpression" typeId="tpee.1068498886294" id="3948649030656113928">
+                          <node role="rValue" roleId="tpee.1068498886297" type="tpee.TernaryOperatorExpression" typeId="tpee.1163668896201" id="3948649030656113929">
+                            <node role="ifTrue" roleId="tpee.1163668922816" type="hba4.BuilderExpression" typeId="hba4.4481811096720536877" id="3948649030656113930">
+                              <node role="root" roleId="hba4.4481811096720536927" type="hba4.ChildStep" typeId="hba4.4481811096720537459" id="3948649030656113931">
+                                <link role="childLink" roleId="hba4.4481811096720607067" targetNodeId="tpck.5169995583184591170" />
+                                <node role="value" roleId="hba4.6308171743671982944" type="hba4.ConceptRef" typeId="hba4.4481811096720976618" id="3948649030656113963">
+                                  <link role="concept" roleId="hba4.4481811096720976619" targetNodeId="mj1l.8463282783691618471" resolveInfo="UnsignedLongLongType" />
+                                </node>
                               </node>
                             </node>
+                            <node role="condition" roleId="tpee.1163668914799" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="3948649030656113934">
+                              <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="3948649030656113884" resolveInfo="isUnsigned" />
+                            </node>
+                            <node role="ifFalse" roleId="tpee.1163668934364" type="hba4.BuilderExpression" typeId="hba4.4481811096720536877" id="2497083023867939884">
+                              <node role="root" roleId="hba4.4481811096720536927" type="hba4.ChildStep" typeId="hba4.4481811096720537459" id="2497083023867939885">
+                                <link role="childLink" roleId="hba4.4481811096720607067" targetNodeId="tpck.5169995583184591170" />
+                                <node role="value" roleId="hba4.6308171743671982944" type="hba4.ConceptRef" typeId="hba4.4481811096720976618" id="2497083023867939887">
+                                  <link role="concept" roleId="hba4.4481811096720976619" targetNodeId="mj1l.8463282783691596316" resolveInfo="LongLongType" />
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                          <node role="lValue" roleId="tpee.1068498886295" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="3948649030656113935">
+                            <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="2497083023867939857" resolveInfo="result" />
                           </node>
                         </node>
                       </node>
@@ -1527,18 +1580,31 @@
                   <property name="value" nameId="tpee.1068580320021" value="2" />
                 </node>
                 <node role="body" roleId="tpee.1163670683720" type="tpee.StatementList" typeId="tpee.1068580123136" id="3060393489280141218">
-                  <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="3060393489280141220">
-                    <node role="expression" roleId="tpee.1068580123156" type="tpee.AssignmentExpression" typeId="tpee.1068498886294" id="3060393489280141221">
-                      <node role="lValue" roleId="tpee.1068498886295" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="3060393489280141222">
-                        <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="2497083023867939857" resolveInfo="result" />
-                      </node>
-                      <node role="rValue" roleId="tpee.1068498886297" type="hba4.BuilderExpression" typeId="hba4.4481811096720536877" id="3060393489280141223">
-                        <node role="root" roleId="hba4.4481811096720536927" type="hba4.ChildStep" typeId="hba4.4481811096720537459" id="3060393489280141224">
-                          <link role="childLink" roleId="hba4.4481811096720607067" targetNodeId="tpck.5169995583184591170" />
-                          <node role="value" roleId="hba4.6308171743671982944" type="hba4.ConceptRef" typeId="hba4.4481811096720976618" id="3060393489280141227">
-                            <link role="concept" roleId="hba4.4481811096720976619" targetNodeId="mj1l.1664480272136207708" resolveInfo="CharType" />
+                  <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="3948649030656113937">
+                    <node role="expression" roleId="tpee.1068580123156" type="tpee.AssignmentExpression" typeId="tpee.1068498886294" id="3948649030656113938">
+                      <node role="rValue" roleId="tpee.1068498886297" type="tpee.TernaryOperatorExpression" typeId="tpee.1163668896201" id="3948649030656113939">
+                        <node role="ifTrue" roleId="tpee.1163668922816" type="hba4.BuilderExpression" typeId="hba4.4481811096720536877" id="3948649030656113940">
+                          <node role="root" roleId="hba4.4481811096720536927" type="hba4.ChildStep" typeId="hba4.4481811096720537459" id="3948649030656113941">
+                            <link role="childLink" roleId="hba4.4481811096720607067" targetNodeId="tpck.5169995583184591170" />
+                            <node role="value" roleId="hba4.6308171743671982944" type="hba4.ConceptRef" typeId="hba4.4481811096720976618" id="3948649030656113964">
+                              <link role="concept" roleId="hba4.4481811096720976619" targetNodeId="mj1l.8463282783691492716" resolveInfo="UnsignedCharType" />
+                            </node>
                           </node>
                         </node>
+                        <node role="condition" roleId="tpee.1163668914799" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="3948649030656113944">
+                          <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="3948649030656113884" resolveInfo="isUnsigned" />
+                        </node>
+                        <node role="ifFalse" roleId="tpee.1163668934364" type="hba4.BuilderExpression" typeId="hba4.4481811096720536877" id="3948649030656113958">
+                          <node role="root" roleId="hba4.4481811096720536927" type="hba4.ChildStep" typeId="hba4.4481811096720537459" id="3948649030656113959">
+                            <link role="childLink" roleId="hba4.4481811096720607067" targetNodeId="tpck.5169995583184591170" />
+                            <node role="value" roleId="hba4.6308171743671982944" type="hba4.ConceptRef" typeId="hba4.4481811096720976618" id="3948649030656113960">
+                              <link role="concept" roleId="hba4.4481811096720976619" targetNodeId="mj1l.1664480272136207708" resolveInfo="CharType" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                      <node role="lValue" roleId="tpee.1068498886295" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="3948649030656113945">
+                        <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="2497083023867939857" resolveInfo="result" />
                       </node>
                     </node>
                   </node>
@@ -1550,18 +1616,31 @@
                   <property name="value" nameId="tpee.1068580320021" value="3" />
                 </node>
                 <node role="body" roleId="tpee.1163670683720" type="tpee.StatementList" typeId="tpee.1068580123136" id="2497083023867902287">
-                  <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="2497083023867939901">
-                    <node role="expression" roleId="tpee.1068580123156" type="tpee.AssignmentExpression" typeId="tpee.1068498886294" id="2497083023867939902">
-                      <node role="lValue" roleId="tpee.1068498886295" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="2497083023867939903">
-                        <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="2497083023867939857" resolveInfo="result" />
-                      </node>
-                      <node role="rValue" roleId="tpee.1068498886297" type="hba4.BuilderExpression" typeId="hba4.4481811096720536877" id="2497083023867939904">
-                        <node role="root" roleId="hba4.4481811096720536927" type="hba4.ChildStep" typeId="hba4.4481811096720537459" id="2497083023867939905">
-                          <link role="childLink" roleId="hba4.4481811096720607067" targetNodeId="tpck.5169995583184591170" />
-                          <node role="value" roleId="hba4.6308171743671982944" type="hba4.ConceptRef" typeId="hba4.4481811096720976618" id="2497083023867939925">
-                            <link role="concept" roleId="hba4.4481811096720976619" targetNodeId="mj1l.8860443239512128108" resolveInfo="IntType" />
+                  <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="3948649030656113947">
+                    <node role="expression" roleId="tpee.1068580123156" type="tpee.AssignmentExpression" typeId="tpee.1068498886294" id="3948649030656113948">
+                      <node role="rValue" roleId="tpee.1068498886297" type="tpee.TernaryOperatorExpression" typeId="tpee.1163668896201" id="3948649030656113949">
+                        <node role="ifTrue" roleId="tpee.1163668922816" type="hba4.BuilderExpression" typeId="hba4.4481811096720536877" id="3948649030656113950">
+                          <node role="root" roleId="hba4.4481811096720536927" type="hba4.ChildStep" typeId="hba4.4481811096720537459" id="3948649030656113951">
+                            <link role="childLink" roleId="hba4.4481811096720607067" targetNodeId="tpck.5169995583184591170" />
+                            <node role="value" roleId="hba4.6308171743671982944" type="hba4.ConceptRef" typeId="hba4.4481811096720976618" id="3948649030656113965">
+                              <link role="concept" roleId="hba4.4481811096720976619" targetNodeId="mj1l.8463282783691492730" resolveInfo="UnsignedIntType" />
+                            </node>
                           </node>
                         </node>
+                        <node role="condition" roleId="tpee.1163668914799" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="3948649030656113954">
+                          <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="3948649030656113884" resolveInfo="isUnsigned" />
+                        </node>
+                        <node role="ifFalse" roleId="tpee.1163668934364" type="hba4.BuilderExpression" typeId="hba4.4481811096720536877" id="2497083023867939904">
+                          <node role="root" roleId="hba4.4481811096720536927" type="hba4.ChildStep" typeId="hba4.4481811096720537459" id="2497083023867939905">
+                            <link role="childLink" roleId="hba4.4481811096720607067" targetNodeId="tpck.5169995583184591170" />
+                            <node role="value" roleId="hba4.6308171743671982944" type="hba4.ConceptRef" typeId="hba4.4481811096720976618" id="2497083023867939925">
+                              <link role="concept" roleId="hba4.4481811096720976619" targetNodeId="mj1l.8860443239512128108" resolveInfo="IntType" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                      <node role="lValue" roleId="tpee.1068498886295" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="3948649030656113955">
+                        <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="2497083023867939857" resolveInfo="result" />
                       </node>
                     </node>
                   </node>
