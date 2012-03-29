@@ -40,7 +40,7 @@ public class FunctionTestCase extends TestCase {
 		
 
 
-		content.append("int addFun(const unsigned int a,int b);");
+		content.append("#define MUL(i, j) (i*j)");
 		
 
 		HashMap<String, String> options = new HashMap<String, String>();

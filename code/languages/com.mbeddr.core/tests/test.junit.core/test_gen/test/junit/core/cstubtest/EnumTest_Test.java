@@ -14,6 +14,7 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
+import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.internal.collections.runtime.Sequence;
 
 @MPSLaunch
@@ -22,6 +23,12 @@ public class EnumTest_Test extends BaseTransformationTest {
   public void test_testEnumParser() throws Throwable {
     this.initTest("${mbeddr.github.core.home}/code/languages/com.mbeddr.core/core.dev.mpr", "r:ebbcbc09-f404-4ab3-b0c3-f9ae71bbe3f7(test.junit.core.cstubtest@tests)");
     this.runTest("test.junit.core.cstubtest.EnumTest_Test$TestBody", "test_testEnumParser", true);
+  }
+
+  @Test
+  public void test_testAnonymousEnum() throws Throwable {
+    this.initTest("${mbeddr.github.core.home}/code/languages/com.mbeddr.core/core.dev.mpr", "r:ebbcbc09-f404-4ab3-b0c3-f9ae71bbe3f7(test.junit.core.cstubtest@tests)");
+    this.runTest("test.junit.core.cstubtest.EnumTest_Test$TestBody", "test_testAnonymousEnum", true);
   }
 
   @MPSLaunch
@@ -66,6 +73,33 @@ public class EnumTest_Test extends BaseTransformationTest {
       Assert.assertNotNull(CheckModuleContentHelper.checkChildExistsInNode("Oct", enumDeclmonthsWithValues));
       Assert.assertNotNull(CheckModuleContentHelper.checkChildExistsInNode("Nov", enumDeclmonthsWithValues));
       Assert.assertNotNull(CheckModuleContentHelper.checkChildExistsInNode("Dec", enumDeclmonthsWithValues));
+
+    }
+
+    public void test_testAnonymousEnum() throws Exception {
+      String pathToEnum = PathMacros.getInstance().getValue("mbeddr.github.core.home") + "/code/languages/com.mbeddr.core/tests/test.ex.core.cStubTestInclude/include";
+      pathToEnum += "/enumTestHeader.h";
+
+      SNode externalModule = CheckModuleContentHelper.parsteHeader(pathToEnum);
+      Assert.assertNotNull(externalModule);
+      for (SNode content : ListSequence.fromList(SLinkOperations.getTargets(externalModule, "contents", true))) {
+        System.out.println("+++++++++++++++++++++++: " + SPropertyOperations.getString(content, "name"));
+      }
+      SNode __CStubTestInclude__1 = (SNode) CheckModuleContentHelper.checkContentExistsAndEndsWith("__1", SConceptOperations.findConceptDeclaration("com.mbeddr.core.udt.structure.EnumDeclaration"), externalModule);
+      Assert.assertNotNull(__CStubTestInclude__1);
+
+      SNode refToAnonym1 = (SNode) CheckModuleContentHelper.checkContentExists("refToAnonym1", SConceptOperations.findConceptDeclaration("com.mbeddr.core.modules.structure.GlobalVariableDeclaration"), externalModule);
+      Assert.assertNotNull(refToAnonym1);
+      Assert.assertTrue(SNodeOperations.isInstanceOf(SLinkOperations.getTarget(refToAnonym1, "type", true), "com.mbeddr.core.udt.structure.EnumType"));
+
+
+      SNode __CStubTestInclude__2 = (SNode) CheckModuleContentHelper.checkContentExistsAndEndsWith("__2", SConceptOperations.findConceptDeclaration("com.mbeddr.core.udt.structure.EnumDeclaration"), externalModule);
+      Assert.assertNotNull(__CStubTestInclude__2);
+
+      SNode __CStubTestInclude__3 = (SNode) CheckModuleContentHelper.checkContentExistsAndEndsWith("__3", SConceptOperations.findConceptDeclaration("com.mbeddr.core.udt.structure.EnumDeclaration"), externalModule);
+      Assert.assertNotNull(__CStubTestInclude__3);
+
+
 
     }
 

@@ -100,15 +100,6 @@ public class IncludeTest_Test extends BaseTransformationTest {
       Assert.assertTrue(SNodeOperations.isInstanceOf(SLinkOperations.getTarget(SNodeOperations.cast(SLinkOperations.getTarget(ar, "type", true), "com.mbeddr.core.pointers.structure.ArrayType"), "baseType", true), "com.mbeddr.core.udt.structure.TypeDefType"));
       Assert.assertTrue(SPropertyOperations.getString(SLinkOperations.getTarget(SNodeOperations.cast(SLinkOperations.getTarget(SNodeOperations.cast(SLinkOperations.getTarget(ar, "type", true), "com.mbeddr.core.pointers.structure.ArrayType"), "baseType", true), "com.mbeddr.core.udt.structure.TypeDefType"), "typeDef", false), "name").equals(SPropertyOperations.getString(smallT, "name")));
 
-      SNode functionPrototype = (SNode) CheckModuleContentHelper.checkContentExists("add", SConceptOperations.findConceptDeclaration("com.mbeddr.core.modules.structure.FunctionPrototype"), moduleWithTypeDef);
-      Assert.assertTrue(SNodeOperations.isInstanceOf(SLinkOperations.getTarget(functionPrototype, "type", true), "com.mbeddr.core.expressions.structure.IntType"));
-      Assert.assertTrue((int) ListSequence.fromList(SLinkOperations.getTargets(functionPrototype, "arguments", true)).count() == 2);
-      Assert.assertTrue(SNodeOperations.isInstanceOf(ListSequence.fromList(SLinkOperations.getTargets(functionPrototype, "arguments", true)).getElement(0), "com.mbeddr.core.udt.structure.TypeDefType"));
-      Assert.assertTrue(SPropertyOperations.getString(SLinkOperations.getTarget(SNodeOperations.cast(ListSequence.fromList(SLinkOperations.getTargets(functionPrototype, "arguments", true)).getElement(0), "com.mbeddr.core.udt.structure.TypeDefType"), "typeDef", false), "name").equals(SPropertyOperations.getString(smallT, "name")));
-
-      Assert.assertTrue(SNodeOperations.isInstanceOf(ListSequence.fromList(SLinkOperations.getTargets(functionPrototype, "arguments", true)).getElement(1), "com.mbeddr.core.udt.structure.TypeDefType"));
-      Assert.assertTrue(SPropertyOperations.getString(SLinkOperations.getTarget(SNodeOperations.cast(ListSequence.fromList(SLinkOperations.getTargets(functionPrototype, "arguments", true)).getElement(1), "com.mbeddr.core.udt.structure.TypeDefType"), "typeDef", false), "name").equals(SPropertyOperations.getString(smallT, "name")));
-
     }
 
     public void cleanUp() {

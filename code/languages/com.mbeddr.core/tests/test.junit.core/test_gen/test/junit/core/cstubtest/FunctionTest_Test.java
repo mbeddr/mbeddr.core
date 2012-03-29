@@ -33,6 +33,12 @@ public class FunctionTest_Test extends BaseTransformationTest {
   }
 
   @Test
+  public void test_testVoidFunction() throws Throwable {
+    this.initTest("${mbeddr.github.core.home}/code/languages/com.mbeddr.core/core.dev.mpr", "r:ebbcbc09-f404-4ab3-b0c3-f9ae71bbe3f7(test.junit.core.cstubtest@tests)");
+    this.runTest("test.junit.core.cstubtest.FunctionTest_Test$TestBody", "test_testVoidFunction", true);
+  }
+
+  @Test
   public void test_testFunctionParameterWithReferenceParser() throws Throwable {
     this.initTest("${mbeddr.github.core.home}/code/languages/com.mbeddr.core/core.dev.mpr", "r:ebbcbc09-f404-4ab3-b0c3-f9ae71bbe3f7(test.junit.core.cstubtest@tests)");
     this.runTest("test.junit.core.cstubtest.FunctionTest_Test$TestBody", "test_testFunctionParameterWithReferenceParser", true);
@@ -76,14 +82,18 @@ public class FunctionTest_Test extends BaseTransformationTest {
         if (SPropertyOperations.getString(argument, "name").equals("a")) {
           aFound = true;
           Assert.assertTrue(SNodeOperations.isInstanceOf(SLinkOperations.getTarget(argument, "type", true), "com.mbeddr.core.expressions.structure.ShortType"));
+          Assert.assertTrue(SPropertyOperations.getBoolean(argument, "const"));
         }
         if (SPropertyOperations.getString(argument, "name").equals("b")) {
           bFound = true;
           Assert.assertTrue(SNodeOperations.isInstanceOf(SLinkOperations.getTarget(argument, "type", true), "com.mbeddr.core.expressions.structure.CharType"));
+          Assert.assertFalse(SPropertyOperations.getBoolean(argument, "const"));
+
         }
         if (SPropertyOperations.getString(argument, "name").equals("c")) {
           cFound = true;
           Assert.assertTrue(SNodeOperations.isInstanceOf(SLinkOperations.getTarget(argument, "type", true), "com.mbeddr.core.expressions.structure.FloatType"));
+          Assert.assertFalse(SPropertyOperations.getBoolean(argument, "const"));
         }
       }
       Assert.assertTrue(aFound);
@@ -110,6 +120,19 @@ public class FunctionTest_Test extends BaseTransformationTest {
       Assert.assertTrue(SNodeOperations.isInstanceOf(SLinkOperations.getTarget(argumentB, "type", true), "com.mbeddr.core.pointers.structure.PointerType"));
       Assert.assertTrue(SNodeOperations.isInstanceOf(SLinkOperations.getTarget(SNodeOperations.cast(SLinkOperations.getTarget(argumentB, "type", true), "com.mbeddr.core.pointers.structure.PointerType"), "baseType", true), "com.mbeddr.core.pointers.structure.ArrayType"));
       Assert.assertTrue(SNodeOperations.isInstanceOf(SLinkOperations.getTarget(SNodeOperations.cast(SLinkOperations.getTarget(SNodeOperations.cast(SLinkOperations.getTarget(argumentB, "type", true), "com.mbeddr.core.pointers.structure.PointerType"), "baseType", true), "com.mbeddr.core.pointers.structure.ArrayType"), "baseType", true), "com.mbeddr.core.expressions.structure.CharType"));
+
+    }
+
+    public void test_testVoidFunction() throws Exception {
+      String pathToEnum = PathMacros.getInstance().getValue("mbeddr.github.core.home") + "/code/languages/com.mbeddr.core/tests/test.ex.core.cStubTestInclude/include";
+      pathToEnum += "/functionTestHeader.h";
+
+      SNode externalModule = CheckModuleContentHelper.parsteHeader(pathToEnum);
+      Assert.assertNotNull(externalModule);
+
+      SNode voidFun = (SNode) CheckModuleContentHelper.checkContentExists("voidFun", SConceptOperations.findConceptDeclaration("com.mbeddr.core.modules.structure.FunctionPrototype"), externalModule);
+      Assert.assertNotNull(voidFun);
+      Assert.assertTrue(SNodeOperations.isInstanceOf(SLinkOperations.getTarget(voidFun, "type", true), "com.mbeddr.core.expressions.structure.VoidType"));
 
     }
 
