@@ -158,8 +158,33 @@
                               <property name="text" nameId="tpfo.1174482761807" value="e" />
                             </node>
                           </node>
-                          <node role="right" roleId="tpfo.1174485181039" type="tpfo.StringLiteralRegexp" typeId="tpfo.1174482753837" id="1054289341113451207">
-                            <property name="text" nameId="tpfo.1174482761807" value="f" />
+                          <node role="right" roleId="tpfo.1174485181039" type="tpfo.OrRegexp" typeId="tpfo.1174482769792" id="6454198876511565096">
+                            <node role="left" roleId="tpfo.1174485176897" type="tpfo.OrRegexp" typeId="tpfo.1174482769792" id="6454198876511565097">
+                              <node role="left" roleId="tpfo.1174485176897" type="tpfo.OrRegexp" typeId="tpfo.1174482769792" id="6454198876511565098">
+                                <node role="left" roleId="tpfo.1174485176897" type="tpfo.OrRegexp" typeId="tpfo.1174482769792" id="6454198876511565099">
+                                  <node role="left" roleId="tpfo.1174485176897" type="tpfo.OrRegexp" typeId="tpfo.1174482769792" id="6454198876511565100">
+                                    <node role="left" roleId="tpfo.1174485176897" type="tpfo.StringLiteralRegexp" typeId="tpfo.1174482753837" id="6454198876511565101">
+                                      <property name="text" nameId="tpfo.1174482761807" value="A" />
+                                    </node>
+                                    <node role="right" roleId="tpfo.1174485181039" type="tpfo.StringLiteralRegexp" typeId="tpfo.1174482753837" id="6454198876511565102">
+                                      <property name="text" nameId="tpfo.1174482761807" value="B" />
+                                    </node>
+                                  </node>
+                                  <node role="right" roleId="tpfo.1174485181039" type="tpfo.StringLiteralRegexp" typeId="tpfo.1174482753837" id="6454198876511565103">
+                                    <property name="text" nameId="tpfo.1174482761807" value="C" />
+                                  </node>
+                                </node>
+                                <node role="right" roleId="tpfo.1174485181039" type="tpfo.StringLiteralRegexp" typeId="tpfo.1174482753837" id="6454198876511565104">
+                                  <property name="text" nameId="tpfo.1174482761807" value="D" />
+                                </node>
+                              </node>
+                              <node role="right" roleId="tpfo.1174485181039" type="tpfo.StringLiteralRegexp" typeId="tpfo.1174482753837" id="6454198876511565105">
+                                <property name="text" nameId="tpfo.1174482761807" value="E" />
+                              </node>
+                            </node>
+                            <node role="right" roleId="tpfo.1174485181039" type="tpfo.StringLiteralRegexp" typeId="tpfo.1174482753837" id="1054289341113451207">
+                              <property name="text" nameId="tpfo.1174482761807" value="F" />
+                            </node>
                           </node>
                         </node>
                       </node>
