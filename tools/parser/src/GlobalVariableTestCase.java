@@ -38,31 +38,42 @@ public class GlobalVariableTestCase extends TestCase {
 	public void testBasicTest() throws CoreException {
 		StringBuilder content = new StringBuilder();
 
-		
-//		struct fullname	{
-//			char forename[20];
-//			char surname[20];
-//		};
-		content.append("struct fullname	{");
-		content.append("char forename[20];");
-		content.append("char surname[20];");
-		content.append("} fullnameStruct;");
-		
-//		struct person {
-//			struct fullname name;
-//			int age;
-//		};
-		content.append("struct person {");
-		content.append("struct fullname name;");
-		content.append("int age;");
-		content.append("};");
-
-		content.append("struct person p, *pp;");
+		content.append("int8_t i8;");
+		content.append("int16_t i16;");
+		content.append("int32_t i32;");
+		content.append("int64_t i64;");
 		
 		
-//		content.append("int aaa1, bbb2, ccc3;");
-//		content.append("typedef int aaa, bbb, ccc;");
-//		content.append("typedef int ar[15], arr[9][6];");
+		
+		content.append("u_int8_t ui8;");
+		content.append("u_int16_t ui16;");
+		content.append("u_int32_t ui32;");
+		content.append("u_int64_t ui64;");
+		
+////		struct fullname	{
+////			char forename[20];
+////			char surname[20];
+////		};
+//		content.append("struct fullname	{");
+//		content.append("char forename[20];");
+//		content.append("char surname[20];");
+//		content.append("} fullnameStruct;");
+//		
+////		struct person {
+////			struct fullname name;
+////			int age;
+////		};
+//		content.append("struct person {");
+//		content.append("struct fullname name;");
+//		content.append("int age;");
+//		content.append("};");
+//
+//		content.append("struct person p, *pp;");
+//		
+//		
+////		content.append("int aaa1, bbb2, ccc3;");
+////		content.append("typedef int aaa, bbb, ccc;");
+////		content.append("typedef int ar[15], arr[9][6];");
 //		content.append("typedef char c, *cp, carr[100];");
 
 		
