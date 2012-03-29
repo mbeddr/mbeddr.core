@@ -1098,7 +1098,7 @@
         </node>
       </node>
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="8551646674110395560">
-        <property name="text" nameId="tpc2.1073389577007" value="=&gt;" />
+        <property name="text" nameId="tpc2.1073389577007" value="⇒" />
         <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.PunctuationLeftStyleClassItem" typeId="tpc2.1233758997495" id="8551646674110483321">
           <property name="flag" nameId="tpc2.1186414551515" value="true" />
         </node>

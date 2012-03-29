@@ -162,7 +162,7 @@
         </node>
       </node>
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="374287044672141860">
-        <property name="text" nameId="tpc2.1073389577007" value="=&gt;" />
+        <property name="text" nameId="tpc2.1073389577007" value="⇒" />
       </node>
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_RefNode" typeId="tpc2.1073389882823" id="374287044672141867">
         <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="hba4.374287044672141865" />
