@@ -11,6 +11,10 @@ typedef struct inTypeDef {
 	int i;
 } typedefOfAStruct;
 
+struct structWithConst {
+ 	const int i;
+};
+
 struct {
 	int i;
 } refToAnonym;
