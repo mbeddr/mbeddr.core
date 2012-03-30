@@ -80,7 +80,7 @@
                 </node>
                 <node role="operation" roleId="tpee.1197027833540" type="tp2q.AddElementOperation" typeId="tp2q.1160612413312" id="7112389732804235427">
                   <node role="argument" roleId="tp2q.1160612519549" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="7112389732804235429">
-                    <property name="value" nameId="tpee.1070475926801" value="/Users/matzat/Documents/lwes/smartmeter" />
+                    <property name="value" nameId="tpee.1070475926801" value="/Users/matzat/Documents/lwes/smartmeter.header" />
                   </node>
                 </node>
               </node>
