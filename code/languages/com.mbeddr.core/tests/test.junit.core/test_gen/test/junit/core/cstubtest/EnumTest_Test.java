@@ -14,7 +14,6 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
-import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.internal.collections.runtime.Sequence;
 
 @MPSLaunch
@@ -82,9 +81,6 @@ public class EnumTest_Test extends BaseTransformationTest {
 
       SNode externalModule = CheckModuleContentHelper.parsteHeader(pathToEnum);
       Assert.assertNotNull(externalModule);
-      for (SNode content : ListSequence.fromList(SLinkOperations.getTargets(externalModule, "contents", true))) {
-        System.out.println("+++++++++++++++++++++++: " + SPropertyOperations.getString(content, "name"));
-      }
       SNode __CStubTestInclude__1 = (SNode) CheckModuleContentHelper.checkContentExistsAndEndsWith("__1", SConceptOperations.findConceptDeclaration("com.mbeddr.core.udt.structure.EnumDeclaration"), externalModule);
       Assert.assertNotNull(__CStubTestInclude__1);
 
@@ -98,9 +94,6 @@ public class EnumTest_Test extends BaseTransformationTest {
 
       SNode __CStubTestInclude__3 = (SNode) CheckModuleContentHelper.checkContentExistsAndEndsWith("__3", SConceptOperations.findConceptDeclaration("com.mbeddr.core.udt.structure.EnumDeclaration"), externalModule);
       Assert.assertNotNull(__CStubTestInclude__3);
-
-
-
     }
 
     public void cleanUp() {

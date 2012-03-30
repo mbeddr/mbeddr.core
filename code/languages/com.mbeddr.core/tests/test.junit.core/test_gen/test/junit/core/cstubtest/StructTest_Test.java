@@ -36,6 +36,12 @@ public class StructTest_Test extends BaseTransformationTest {
     this.runTest("test.junit.core.cstubtest.StructTest_Test$TestBody", "test_testStructInTypeDef", true);
   }
 
+  @Test
+  public void test_testAnonymousStruct() throws Throwable {
+    this.initTest("${mbeddr.github.core.home}/code/languages/com.mbeddr.core/core.dev.mpr", "r:ebbcbc09-f404-4ab3-b0c3-f9ae71bbe3f7(test.junit.core.cstubtest@tests)");
+    this.runTest("test.junit.core.cstubtest.StructTest_Test$TestBody", "test_testAnonymousStruct", true);
+  }
+
   @MPSLaunch
   public static class TestBody extends BaseTestBody {
     public void test_testSimpleStruct() throws Exception {
@@ -97,10 +103,10 @@ public class StructTest_Test extends BaseTransformationTest {
     }
 
     public void test_testStructInTypeDef() throws Exception {
-      String pathToEnum = PathMacros.getInstance().getValue("mbeddr.github.core.home") + "/code/languages/com.mbeddr.core/tests/test.ex.core.cStubTestInclude/include";
-      pathToEnum += "/structTestHeader.h";
+      String pathToStruct = PathMacros.getInstance().getValue("mbeddr.github.core.home") + "/code/languages/com.mbeddr.core/tests/test.ex.core.cStubTestInclude/include";
+      pathToStruct += "/structTestHeader.h";
 
-      SNode externalModule = CheckModuleContentHelper.parsteHeader(pathToEnum);
+      SNode externalModule = CheckModuleContentHelper.parsteHeader(pathToStruct);
       Assert.assertNotNull(externalModule);
 
       SNode inTypeDef = (SNode) CheckModuleContentHelper.checkContentExists("inTypeDef", SConceptOperations.findConceptDeclaration("com.mbeddr.core.udt.structure.StructDeclaration"), externalModule);
@@ -110,6 +116,22 @@ public class StructTest_Test extends BaseTransformationTest {
       Assert.assertNotNull(typedefOfAStruct);
       Assert.assertTrue(SNodeOperations.isInstanceOf(SLinkOperations.getTarget(typedefOfAStruct, "original", true), "com.mbeddr.core.udt.structure.StructType"));
       Assert.assertTrue(SPropertyOperations.getString(SLinkOperations.getTarget(SNodeOperations.cast(SLinkOperations.getTarget(typedefOfAStruct, "original", true), "com.mbeddr.core.udt.structure.StructType"), "struct", false), "name").equals(SPropertyOperations.getString(inTypeDef, "name")));
+    }
+
+    public void test_testAnonymousStruct() throws Exception {
+      String pathToStruct = PathMacros.getInstance().getValue("mbeddr.github.core.home") + "/code/languages/com.mbeddr.core/tests/test.ex.core.cStubTestInclude/include";
+      pathToStruct += "/structTestHeader.h";
+
+      SNode externalModule = CheckModuleContentHelper.parsteHeader(pathToStruct);
+      Assert.assertNotNull(externalModule);
+      SNode anonymStruct1 = (SNode) CheckModuleContentHelper.checkContentExistsAndEndsWith("__1", SConceptOperations.findConceptDeclaration("com.mbeddr.core.udt.structure.StructDeclaration"), externalModule);
+      Assert.assertNotNull(anonymStruct1);
+
+      SNode refToAnonym1 = (SNode) CheckModuleContentHelper.checkContentExists("refToAnonym", SConceptOperations.findConceptDeclaration("com.mbeddr.core.modules.structure.GlobalVariableDeclaration"), externalModule);
+      Assert.assertNotNull(refToAnonym1);
+      Assert.assertTrue(SNodeOperations.isInstanceOf(SLinkOperations.getTarget(refToAnonym1, "type", true), "com.mbeddr.core.udt.structure.StructType"));
+
+
     }
 
     public void cleanUp() {

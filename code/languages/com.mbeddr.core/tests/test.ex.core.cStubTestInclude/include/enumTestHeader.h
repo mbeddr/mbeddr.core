@@ -8,3 +8,7 @@ enum monthsWithValues {Dec=12, Nov=11, Oct=10, Sep=3+1, Aug=someNumber} monthVal
 enum {ANONYM1} refToAnonym1;
 enum {ANONYM2};
 enum {ANONYM3};
+
+struct {
+	int i;
+} refToAnonym;

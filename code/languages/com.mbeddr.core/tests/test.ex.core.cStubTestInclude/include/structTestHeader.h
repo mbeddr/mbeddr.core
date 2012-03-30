@@ -10,3 +10,7 @@ struct person {
 typedef struct inTypeDef {
 	int i;
 } typedefOfAStruct;
+
+struct {
+	int i;
+} refToAnonym;
