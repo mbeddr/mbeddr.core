@@ -12,3 +12,5 @@ int *(**addFun)(int,int *,É);
 
 
 int (addFun2)(int,int); //result?
+
+extern int externFunction();

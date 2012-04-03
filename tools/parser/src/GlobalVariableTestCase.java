@@ -38,17 +38,9 @@ public class GlobalVariableTestCase extends TestCase {
 	public void testBasicTest() throws CoreException {
 		StringBuilder content = new StringBuilder();
 
-		content.append("int8_t i8;");
-		content.append("int16_t i16;");
-		content.append("int32_t i32;");
-		content.append("int64_t i64;");
+		content.append("extern int8_t isExtern;");
+		content.append("int8_t isNotExtern;");
 		
-		
-		
-		content.append("u_int8_t ui8;");
-		content.append("u_int16_t ui16;");
-		content.append("u_int32_t ui32;");
-		content.append("u_int64_t ui64;");
 		
 ////		struct fullname	{
 ////			char forename[20];

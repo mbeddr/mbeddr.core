@@ -38,7 +38,7 @@
         <link role="module" roleId="51wr.7717755763392524108" targetNodeId="3134547887598558629" resolveInfo="Driver" />
       </node>
       <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="8484631292796338418">
-        <link role="module" roleId="51wr.7717755763392524108" targetNodeId="sgaa.3688978859842801780" resolveInfo="defineTestHeader" />
+        <link role="module" roleId="51wr.7717755763392524108" targetNodeId="sgaa.4861891518411926849" resolveInfo="defineTestHeader" />
       </node>
     </node>
     <node role="target" roleId="51wr.5323740605968447026" type="51wr.DesktopPlatform" typeId="51wr.5323740605968447022" id="4459718605982728856">
@@ -140,7 +140,7 @@
           <property name="name" nameId="tpck.1169194664001" value="i16" />
           <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int16tType" typeId="mj1l.8463282783691618435" id="8484631292796338400" />
           <node role="init" roleId="c4fa.4185783222026502647" type="x27k.GlobalConstantRef" typeId="x27k.3788988821852026523" id="8484631292796338402">
-            <link role="constant" roleId="x27k.3788988821852026524" targetNodeId="sgaa.3688978859842801782" resolveInfo="IntValue" />
+            <link role="constant" roleId="x27k.3788988821852026524" targetNodeId="sgaa.4861891518411926851" resolveInfo="IntValue" />
           </node>
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="8484631292796338404">
@@ -157,7 +157,7 @@
       <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="5708867820622915283" />
     </node>
     <node role="imports" roleId="x27k.1317894735999304826" type="x27k.ModuleImport" typeId="x27k.1317894735999299713" id="8484631292796338396">
-      <link role="module" roleId="x27k.1317894735999299714" targetNodeId="sgaa.3688978859842801780" resolveInfo="defineTestHeader" />
+      <link role="module" roleId="x27k.1317894735999299714" targetNodeId="sgaa.4861891518411926849" resolveInfo="defineTestHeader" />
     </node>
   </root>
 </model>

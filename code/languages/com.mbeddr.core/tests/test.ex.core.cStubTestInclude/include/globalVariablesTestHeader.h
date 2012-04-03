@@ -21,3 +21,5 @@ typedef enum simpleMonths {Apr, May, Jun} typeSimpleMonth;
 typeSimpleMonth enumV1;
 enum simpleMonths enumV2;
 
+extern int externInt;
+
