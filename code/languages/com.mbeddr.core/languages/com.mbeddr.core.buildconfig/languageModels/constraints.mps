@@ -22,6 +22,9 @@
     <node type="tp1t.ConceptConstraints" typeId="tp1t.1213093968558" id="9108052991586151877">
       <link role="concept" roleId="tp1t.1213093996982" targetNodeId="51wr.7717755763392524104" resolveInfo="BuildConfiguration" />
     </node>
+    <node type="tp1t.ConceptConstraints" typeId="tp1t.1213093968558" id="4809476668198876829">
+      <link role="concept" roleId="tp1t.1213093996982" targetNodeId="51wr.4809476668198796988" resolveInfo="Linkable" />
+    </node>
   </roots>
   <root id="2671893947946328090">
     <node role="referent" roleId="tp1t.1213100494875" type="tp1t.NodeReferentConstraint" typeId="tp1t.1148687176410" id="2671893947946328091">
@@ -97,5 +100,6 @@
       </node>
     </node>
   </root>
+  <root id="4809476668198876829" />
 </model>
 
