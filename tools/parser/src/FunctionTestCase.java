@@ -40,7 +40,7 @@ public class FunctionTestCase extends TestCase {
 		
 
 
-		content.append("#define MUL(i, j) (i*j)");
+		content.append("int8_t UnaryOperatorsTest_test_testUnaryOperatorOnFunction();");
 		
 
 		HashMap<String, String> options = new HashMap<String, String>();

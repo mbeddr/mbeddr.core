@@ -23,4 +23,4 @@ enum simpleMonths enumV2;
 
 extern int externInt;
 const int constInt;
-
+const int *constInt;
