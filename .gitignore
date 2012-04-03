@@ -45,8 +45,9 @@ code/languages/*/lib/*/source_gen.caches
 code/languages/*/tests/*/classes_gen
 code/languages/*/tests/*/source_gen
 code/languages/*/tests/*/source_gen.caches
-code/languages/*/test_gen
-code/languages/*/tests_gen.caches
+
+code/languages/*/tests/*/test_gen
+code/languages/*/tests/*/test_gen.caches
 
 
 # -----------------------------------------------------------
