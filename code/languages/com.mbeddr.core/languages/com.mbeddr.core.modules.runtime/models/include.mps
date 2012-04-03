@@ -10983,6 +10983,12 @@
                               <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="4861891518412095771" resolveInfo="isExtern" />
                             </node>
                           </node>
+                          <node role="children" roleId="hba4.4481811096720537463" type="hba4.SimplePropertyStep" typeId="hba4.4481811096720581223" id="4861891518412284007">
+                            <link role="property" roleId="hba4.4481811096720581232" targetNodeId="c4fa.1782955756756899613" resolveInfo="const" />
+                            <node role="value" roleId="hba4.4481811096720588312" type="tpee.LocalInstanceFieldReference" typeId="tpee.7785501532031639928" id="4861891518412284010">
+                              <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="4861891518412095728" resolveInfo="isConst" />
+                            </node>
+                          </node>
                         </node>
                       </node>
                     </node>
