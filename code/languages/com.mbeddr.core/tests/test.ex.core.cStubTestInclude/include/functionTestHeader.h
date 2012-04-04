@@ -19,3 +19,5 @@ const int *(*pGetIntConst)();
 const int *getIntConst();
 
 typedef const int *(*pGetIntConstAsATypeDef)();
+
+void aFunWithVoid(void);
