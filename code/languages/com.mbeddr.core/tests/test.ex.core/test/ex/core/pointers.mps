@@ -595,6 +595,32 @@
     </node>
   </root>
   <root id="8551646674110483309">
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.GlobalVariableDeclaration" typeId="x27k.6610873504380335822" id="2020194812908828597">
+      <property name="name" nameId="tpck.1169194664001" value="i8" />
+      <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="2020194812908828599" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="2020194812908828611">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1333549087036_4" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="clbe.TypeDef" typeId="clbe.6116558314501347857" id="8013029074172477867">
+      <property name="name" nameId="tpck.1169194664001" value="functionWithConstTypeDef" />
+      <node role="original" roleId="clbe.6116558314501347862" type="x27k.FunctionRefType" typeId="x27k.8551646674110395547" id="8013029074172477869">
+        <property name="const" nameId="c4fa.1782955756756899613" value="true" />
+        <node role="returnType" roleId="x27k.8551646674110395548" type="yq40.PointerType" typeId="yq40.279446265608459824" id="8013029074172477873">
+          <node role="baseType" roleId="yq40.279446265608459825" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="8013029074172477871" />
+        </node>
+        <node role="argTypes" roleId="x27k.8551646674110395549" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="2020194812908841167" />
+      </node>
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.GlobalVariableDeclaration" typeId="x27k.6610873504380335822" id="2020194812908828635">
+      <property name="name" nameId="tpck.1169194664001" value="functionPointerWithConst" />
+      <node role="type" roleId="mj1l.318113533128716676" type="clbe.TypeDefType" typeId="clbe.6116558314501347863" id="2020194812908828637">
+        <link role="typeDef" roleId="clbe.6116558314501347864" targetNodeId="8013029074172477867" resolveInfo="functionWithConstTypeDef" />
+      </node>
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="5949211654332319536">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1333544315880_6" />
+    </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.GlobalVariableDeclaration" typeId="x27k.6610873504380335822" id="8551646674110505752">
       <property name="name" nameId="tpck.1169194664001" value="globalRef" />
       <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="vs0r.ElementDocumentation" typeId="vs0r.3857533489766146428" id="2749618433534965683">
@@ -610,6 +636,12 @@
         <node role="argTypes" roleId="x27k.8551646674110395549" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="3912676515585629809" />
         <node role="argTypes" roleId="x27k.8551646674110395549" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="3912676515585629810" />
       </node>
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="2020194812908828630">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1333549189962_5" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="2020194812908828631">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1333549190402_6" />
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="clbe.TypeDef" typeId="clbe.6116558314501347857" id="6528677780846894583">
       <property name="name" nameId="tpck.1169194664001" value="twoIntArgsReturningInt" />
@@ -650,6 +682,45 @@
         <property name="name" nameId="tpck.1169194664001" value="y" />
         <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="5708867820621171241" />
       </node>
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="2020194812908828632">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1333549193033_7" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="2020194812908828588">
+      <property name="name" nameId="tpck.1169194664001" value="functionWithConst" />
+      <property name="const" nameId="c4fa.1782955756756899613" value="true" />
+      <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="2020194812908828589">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="2020194812908841159">
+          <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.DirectPlusAssignmentExpression" typeId="mj1l.3820836583575227340" id="2020194812908841163">
+            <node role="right" roleId="mj1l.8860443239512128065" type="x27k.ArgumentRef" typeId="x27k.2093108837558505658" id="2020194812908841166">
+              <link role="arg" roleId="x27k.2093108837558505659" targetNodeId="2020194812908841156" resolveInfo="i" />
+            </node>
+            <node role="left" roleId="mj1l.8860443239512128064" type="x27k.GlobalVarRef" typeId="x27k.6610873504380357354" id="2020194812908841160">
+              <link role="var" roleId="x27k.6610873504380357355" targetNodeId="2020194812908828597" resolveInfo="i8" />
+            </node>
+          </node>
+        </node>
+        <node role="statements" roleId="c4fa.4185783222026475862" type="x27k.ReturnStatement" typeId="x27k.8967919205527146149" id="2020194812908828613">
+          <node role="expression" roleId="x27k.8967919205527146150" type="yq40.ReferenceExpr" typeId="yq40.1595838349830846141" id="2020194812908828614">
+            <node role="expression" roleId="mj1l.7254843406768839760" type="x27k.GlobalVarRef" typeId="x27k.6610873504380357354" id="2020194812908828616">
+              <link role="var" roleId="x27k.6610873504380357355" targetNodeId="2020194812908828597" resolveInfo="i8" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node role="type" roleId="mj1l.318113533128716676" type="yq40.PointerType" typeId="yq40.279446265608459824" id="2020194812908828612">
+        <node role="baseType" roleId="yq40.279446265608459825" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="2020194812908828591" />
+      </node>
+      <node role="arguments" roleId="x27k.5708867820623310661" type="x27k.Argument" typeId="x27k.7892328519581704407" id="2020194812908841156">
+        <property name="name" nameId="tpck.1169194664001" value="i" />
+        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="2020194812908841157" />
+      </node>
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="2020194812908844364">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1333549793044_1" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="2020194812908828633">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1333549193187_8" />
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="yz9a.TestCase" typeId="yz9a.6275792049641586523" id="8551646674110483310">
       <property name="exported" nameId="x27k.1317894735999272944" value="true" />
@@ -830,6 +901,39 @@
               <link role="function" roleId="x27k.5950410542643524493" targetNodeId="6528677780846894590" resolveInfo="anotherHOF" />
               <node role="actuals" roleId="x27k.5950410542643524495" type="x27k.FunctionRefExpr" typeId="x27k.8551646674110484035" id="6528677780846894606">
                 <link role="function" roleId="x27k.8551646674110484037" targetNodeId="8551646674110484010" resolveInfo="add" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="2020194812908828601" />
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="2020194812908828602" />
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.AssignmentStatement" typeId="c4fa.6275792049641552210" id="2020194812908828608">
+          <node role="rvalue" roleId="c4fa.6275792049641552219" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2020194812908828610">
+            <property name="value" nameId="mj1l.8860443239512128104" value="20" />
+          </node>
+          <node role="lvalue" roleId="c4fa.6275792049641552218" type="x27k.GlobalVarRef" typeId="x27k.6610873504380357354" id="2020194812908828605">
+            <link role="var" roleId="x27k.6610873504380357355" targetNodeId="2020194812908828597" resolveInfo="i8" />
+          </node>
+        </node>
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.AssignmentStatement" typeId="c4fa.6275792049641552210" id="2020194812908828643">
+          <node role="rvalue" roleId="c4fa.6275792049641552219" type="x27k.FunctionRefExpr" typeId="x27k.8551646674110484035" id="2020194812908828645">
+            <link role="function" roleId="x27k.8551646674110484037" targetNodeId="2020194812908828588" resolveInfo="functionWithConst" />
+          </node>
+          <node role="lvalue" roleId="c4fa.6275792049641552218" type="x27k.GlobalVarRef" typeId="x27k.6610873504380357354" id="2020194812908828640">
+            <link role="var" roleId="x27k.6610873504380357355" targetNodeId="2020194812908828635" resolveInfo="functionPointerWithConst" />
+          </node>
+        </node>
+        <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="2020194812908836364">
+          <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="2020194812908841172">
+            <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2020194812908841175">
+              <property name="value" nameId="mj1l.8860443239512128104" value="25" />
+            </node>
+            <node role="left" roleId="mj1l.8860443239512128064" type="yq40.DerefExpr" typeId="yq40.279446265608463015" id="2020194812908841176">
+              <node role="expression" roleId="mj1l.7254843406768839760" type="x27k.FunctionCall" typeId="x27k.5950410542643524492" id="2020194812908841168">
+                <link role="function" roleId="x27k.5950410542643524493" targetNodeId="2020194812908828588" resolveInfo="functionWithConst" />
+                <node role="actuals" roleId="x27k.5950410542643524495" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2020194812908841169">
+                  <property name="value" nameId="mj1l.8860443239512128104" value="5" />
+                </node>
               </node>
             </node>
           </node>
