@@ -16,7 +16,7 @@
   <roots>
     <node type="n3kn.LibraryStubDescriptor" typeId="n3kn.8529737993487825733" id="6258116718425333664">
       <property name="name" nameId="tpck.1169194664001" value="CStubTestInclude" />
-      <property name="moduleName" nameId="n3kn.7076427504342075466" value="CStubTestIncludxe" />
+      <property name="moduleName" nameId="n3kn.7076427504342075466" value="CkStubTestInclude" />
       <property name="moduleId" nameId="n3kn.8529737993487825735" value="e2fc6d37-d837-405c-bc82-e5cab6f7c813" />
       <link role="creator" roleId="n3kn.8529737993487992546" targetNodeId="270496905847335950" resolveInfo="CStubs" />
     </node>
@@ -66,6 +66,8 @@
             </node>
           </node>
         </node>
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.Statement" typeId="tpee.1068580123157" id="1995004963226675512" />
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.Statement" typeId="tpee.1068580123157" id="1995004963226675513" />
         <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="2298248744506807083">
           <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="2298248744506807084">
             <node role="operand" roleId="tpee.1197027771414" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="2298248744506807085">
