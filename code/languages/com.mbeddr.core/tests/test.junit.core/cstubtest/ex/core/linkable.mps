@@ -37,7 +37,7 @@
         <link role="module" roleId="51wr.7717755763392524108" targetNodeId="3134547887598558629" resolveInfo="Driver" />
       </node>
       <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="1995004963226621634">
-        <link role="module" roleId="51wr.7717755763392524108" targetNodeId="n4x1.3967078200114914243" resolveInfo="HelperFunctions" />
+        <link role="module" roleId="51wr.7717755763392524108" targetNodeId="n4x1.4812743296608461920" resolveInfo="HelperFunctions" />
       </node>
       <node role="linkables" roleId="51wr.4809476668198796998" type="51wr.Linkable" typeId="51wr.4809476668198796988" id="1995004963226621635">
         <property name="name" nameId="51wr.4809476668198808306" value="HelperFunctions.o" />

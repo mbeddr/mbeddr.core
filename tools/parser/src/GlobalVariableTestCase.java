@@ -38,8 +38,13 @@ public class GlobalVariableTestCase extends TestCase {
 	public void testBasicTest() throws CoreException {
 		StringBuilder content = new StringBuilder();
 
-		content.append("extern int8_t isExtern;");
-		content.append("int8_t isNotExtern;");
+		content.append("#ifndef CONSTANT\n");
+		content.append("#define CONSTANT const\n");
+		content.append("#endif /* ifndef CONSTANT */\n");
+		content.append("#ifndef CONSTSEGMENT\n");
+		content.append("#define CONSTSEGMENT\n");
+		content.append("#endif /* ifndef CONSTSEGMENT */\n");
+		content.append("CONSTANT char CONSTSEGMENT acTD_VOID;");
 		
 		
 ////		struct fullname	{
@@ -83,15 +88,7 @@ public class GlobalVariableTestCase extends TestCase {
 
 		
 		astTranslationUnit.accept(new ASTVisitor(true) {
-
-		});
-
-		astTranslationUnit.accept(new ASTVisitor(true) {
 			
-			  public int visist(IASTTranslationUnit x) {
-				  System.err.println(x.toString());
-				    return PROCESS_CONTINUE;
-				  }
 			
 			public int visit(IASTTranslationUnit x) {
 				System.err.println(x.toString());
@@ -125,6 +122,7 @@ public class GlobalVariableTestCase extends TestCase {
 
 			public int visit(IASTDeclSpecifier x) {
 				System.err.println(x.toString());
+				System.err.println(x.isConst());
 				return PROCESS_CONTINUE;
 			}
 
