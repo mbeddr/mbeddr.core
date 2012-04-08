@@ -1,0 +1,31 @@
+\section{Physical Units}
+
+
+
+Physical Units are new types that, in
+addition to specifying their actual data type, also specify a physical unit (see
+\fig{unitsexample}). New literals are introduced to support specifying
+values for these types that include the physical unit. The typing rules for the
+existing operators (\ic{+}, \ic{*} or \ic{>}) are overridden to perform the
+correct type checks for types with units. The type system also performs unit
+computations to, for example, handle an \ic{speed = length/time} correctly.
+
+
+\begin{figure}[h]
+\rule{\columnwidth}{0.4pt}
+\vspace{-7mm}
+\begin{center} 
+\includegraphics[width=85mm]{figures/1/units.png}
+\end{center} 
+
+\caption{The \emph{units} extension comes with the sevel SI units predefined and
+lets users define arbitrary derived units (such as the \ic{mps} in the example).
+It is also possible to defined convertible units that require a numeric
+conversion factor to get back to SI units. Type checks ensure that the values
+associated with unit literals use the correct unit and perform unit computations
+(as in speed equals length divided by time). Errors are recorded if
+incompatible are used together (e.g. if we were to add length and time). To
+support this feature, the typing rules for the existing operators (such as
+\ic{+} or \ic{/}) have to be overridden.} 
+\label{unitsexample}
+\end{figure}
