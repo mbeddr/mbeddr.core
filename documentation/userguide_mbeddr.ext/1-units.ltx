@@ -1,7 +1,5 @@
 \section{Physical Units}
 
-
-
 Physical Units are new types that, in
 addition to specifying their actual data type, also specify a physical unit (see
 \fig{unitsexample}). New literals are introduced to support specifying
@@ -12,12 +10,10 @@ computations to, for example, handle an \ic{speed = length/time} correctly.
 
 
 \begin{figure}[h]
-\rule{\columnwidth}{0.4pt}
-\vspace{-7mm}
 \begin{center} 
-\includegraphics[width=85mm]{figures/1/units.png}
+\includegraphics[width=110mm]{figures/1/units.png}
 \end{center} 
-
+\vspace{-2mm}
 \caption{The \emph{units} extension comes with the sevel SI units predefined and
 lets users define arbitrary derived units (such as the \ic{mps} in the example).
 It is also possible to defined convertible units that require a numeric
@@ -29,3 +25,77 @@ support this feature, the typing rules for the existing operators (such as
 \ic{+} or \ic{/}) have to be overridden.} 
 \label{unitsexample}
 \end{figure}
+
+To use physical units use the \ic{com.mbeddr.physicalunits} devkit in your
+model.
+
+
+\subsection{Basic SI Units in C programs}
+
+Once the devkit is included, types can be annotated with physical units. We have
+defined the seven SI units in mbeddr:
+
+\begin{code}
+int8_t/m/ length; 
+int8_t/s/ time; 
+\end{code}
+
+It is also possible to define composite units. To add additional components
+press enter after the first one (the \ic{m} in the example below):
+
+\begin{code}
+          -1
+int8_t/m s  / speed; 
+\end{code}
+
+To change the exponent, use intentions on the unit. Types with units can also be
+\ic{typedef}'ed to make using them more convenient:
+
+\begin{code}
+                  -1
+typedef int8_t/m s  / as speed_t; 
+\end{code}
+
+If you want to assign a value to the variable, you have to use literals with
+units, otherwise you will get compile errors:
+
+\begin{code} 
+int8_t/m/ length = 3 m; 
+\end{code}
+
+Note that units are computed correctly:
+
+\begin{code}
+speed_t aSpeed = 10 m / 5 s;
+speed_t anotherSpeed = 10 m + 5 s; // error; adding apples and oranges 
+\end{code}
+
+Of course, the type system is fully aware of the types and ``pulls them
+through'':
+
+\begin{code}
+int8_t/m/ someLength;
+int8_t/m/ result = 10 m + someLength;
+\end{code}
+
+To get values ``into'' and out of the units world, you can use the
+\ic{stripunit} and \ic{introduceunit} expressions:
+
+\begin{code}
+int8_t/m/ someLength = 10 m;
+int8_t justSomeValue = stripunit[someLength];
+int8_t/m/ someLength = introduceunit[justSomeValue -> m];
+\end{code}
+
+
+\subsection{Derived Units}
+
+A derived unit is one that combines several SI units. For example, $N = kg
+\frac{m}{s^{2}}$ or $mps = \frac{m}{s}$. Such derived units can be defined with
+the units extension as well.
+
+
+
+
+
+
