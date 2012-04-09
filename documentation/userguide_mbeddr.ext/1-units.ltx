@@ -182,3 +182,10 @@ int8_t/#local/ aLocalVariable = 20#local;
 aGlobalVariable = [aLocalVariable -> #global]; 
 \end{code}
 
+\noindent The coordinate systems extension is especially useful if combined with a
+new type and literal, for example, for vectors:
+
+\begin{code}
+intvec/#global/ globalVector = (10,20)#global; 
+intvec/#local/ localVector = (20,20)#global; 
+\end{code} 
