@@ -127,8 +127,8 @@ conversion rules to be usable (\fig{convertible}).
 \label{convertible}
 \end{figure}
 
-Typically, a convertible unit is a non-SI unit, and the conversion rules map it
-back to the SI world. Notice how in the conversion rule the \ic{val} keyword
+\noindent Typically, a convertible unit is a non-SI unit, and the conversion
+rules map it back to the SI world. Notice how in the conversion rule the \ic{val} keyword
 represents the value in the original unit. 
 
 Conversions in the C programs do not happen automatically, since such a
@@ -141,4 +141,44 @@ int8_t/F/ tempInF = 10 F;
 int8_t/C/ tempInC = [tempInF -> C]; 
 \end{code}
 
+
+\subsection{Extension with new Units}
+
+The units extension can also be ``misused'' to work with other type annotations
+such as money, time or coordinate systems. To achieve this, you have to define
+new elementary unit declarations in a languge extension. Here is some example
+code with coordinate systems:
+
+\begin{code}
+int8_t/#global/ aGlobalVariable = 10#global; 
+int8_t/K/ aTemp = aGlobalVariable; // error; #global != K 
+aGlobalVariable = 10K; // error; #global != K 
+aGlobalVariable = 230#local; // error; #global != #local 
+\end{code}
+
+\noindent In the example above, \ic{\#global} and \ic{\#local} are two different
+coordinate systems; technically, both are subtypes of \ic{ElementaryUnitDeclaration}:
+
+\begin{code}
+concept GlobalCoords extends ElementaryUnitDeclaration
+                     implements <none>                
+  concept properties:                                 
+    alias = #global                                     
+\end{code}
+
+\noindent Even though these are not technically \emph{convertible} units, we can
+still define conversion rules:
+
+\begin{code}
+Conversion Rules 
+  conversion #global -> #local = val + 20 
+  conversion #local -> #global = val - 20 
+\end{code}
+
+\noindent The C code can then use conversions as shown above:
+
+\begin{code}
+int8_t/#local/ aLocalVariable = 20#local; 
+aGlobalVariable = [aLocalVariable -> #global]; 
+\end{code}
 
