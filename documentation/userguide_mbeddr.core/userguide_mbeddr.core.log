@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.11 (MiKTeX 2.9) (preloaded format=pdflatex 2011.11.30)  25 FEB 2012 21:50
+This is pdfTeX, Version 3.1415926-1.40.11 (MiKTeX 2.9) (preloaded format=pdflatex 2012.4.6)  9 APR 2012 13:43
 entering extended mode
 **userguide_mbeddr.core.tex
 
@@ -779,7 +779,7 @@ on/userguide_mbeddr.core/figures/graphC.png>]
 ddr.core.aux) ) 
 Here is how much of TeX's memory you used:
  2706 strings out of 494019
- 36687 string characters out of 3141698
+ 36687 string characters out of 3141700
  92778 words of memory out of 3000000
  5889 multiletter control sequences out of 15000+200000
  19150 words of font info for 50 fonts, out of 3000000 for 9000
@@ -805,7 +805,7 @@ x-2.9/fonts/type1/public/cm-super/sfti1000.pfb><C:/data/javadev/commonTools/mik
 tex-2.9/fonts/type1/public/cm-super/sftt0800.pfb><C:/data/javadev/commonTools/m
 iktex-2.9/fonts/type1/public/cm-super/sftt0900.pfb><C:/data/javadev/commonTools
 /miktex-2.9/fonts/type1/public/cm-super/sftt1000.pfb>
-Output written on userguide_mbeddr.core.pdf (48 pages, 1788919 bytes).
+Output written on userguide_mbeddr.core.pdf (48 pages, 1779424 bytes).
 PDF statistics:
  286 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
