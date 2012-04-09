@@ -119,6 +119,9 @@
       <property name="sep" nameId="f2yx.8281282103316080654" value="0.1" />
       <property name="path" nameId="f2yx.1184135985877008788" value="../../../../../../../../diagrams/pointers" />
     </node>
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="4497436839299179800">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="mj1l.8860443239512166593" resolveInfo="IComparable" />
+    </node>
   </root>
   <root id="279446265608463015">
     <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="6610873504380016743">
