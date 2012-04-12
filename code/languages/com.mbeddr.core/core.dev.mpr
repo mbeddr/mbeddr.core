@@ -20,6 +20,7 @@
       <modulePath path="${project}/languages/com.mbeddr.core.arrays/arrays.mpl" folder="core" />
       <modulePath path="${project}/languages/com.mbeddr.core.base/base.mpl" folder="core" />
       <modulePath path="${project}/languages/com.mbeddr.core.buildconfig/buildconfig.mpl" folder="core" />
+      <modulePath path="${project}/languages/com.mbeddr.core.cstubs/cstubs.mpl" folder="core" />
       <modulePath path="${project}/languages/com.mbeddr.core.debug.blext/blext.mpl" folder="core" />
       <modulePath path="${project}/languages/com.mbeddr.core.debug/debug.mpl" folder="core" />
       <modulePath path="${project}/languages/com.mbeddr.core.expressions/expressions.mpl" folder="core" />
@@ -33,8 +34,7 @@
       <modulePath path="${project}/languages/com.mbeddr.core.util/util.mpl" folder="core" />
       <modulePath path="${project}/solutions/com.mbeddr.core.statistics/statistics.msd" folder="core" />
       <modulePath path="${project}/tests/aLibrary/aLibrary.msd" folder="tests" />
-      <modulePath path="${project}/tests/test.ex.core.cStubTestInclude/cStubTestInclude.mpl" folder="tests" />
-      <modulePath path="${project}/tests/test.ex.core.cStubTestIncludeExpressions/cStubTestIncludeExpressions.mpl" folder="tests" />
+      <modulePath path="${project}/tests/test.cstub.testheader/testheader.msd" folder="tests" />
       <modulePath path="${project}/tests/test.ex.core.libs/libs.msd" folder="tests" />
       <modulePath path="${project}/tests/test.ex.core/core.msd" folder="tests" />
       <modulePath path="${project}/tests/test.ex.errorreporting/errorreporting.msd" folder="tests" />
