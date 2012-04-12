@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="test.junit.core" uuid="28b0fb17-21d9-440a-bb1c-b10da1784dee" compileInMPS="true">
+<solution name="test.cstub.core" uuid="28b0fb17-21d9-440a-bb1c-b10da1784dee" compileInMPS="true">
   <models>
     <modelRoot path="${solution_descriptor}/" namespacePrefix="" />
     <modelRoot path="${solution_descriptor}/models" namespacePrefix="test.junit.core" />
   </models>
   <sourcePath />
   <dependencies>
-    <dependency reexport="false">e2fc6d37-d837-405c-bc82-e5cab6f7c813(CStubTestInclude)</dependency>
-    <dependency reexport="false">c91d14a3-878f-49a3-8389-126ceceae767(CStubTestIncludeExpressions)</dependency>
     <dependency reexport="false">37a3367b-1fb2-44d8-aa6b-18075e74e003(MPS.Classpath)</dependency>
     <dependency reexport="false">6d11763d-483d-4b2b-8efc-09336c1b0001(com.mbeddr.core.modules)</dependency>
     <dependency reexport="false">efda956e-491e-4f00-ba14-36af2f213ecf(com.mbeddr.core.udt)</dependency>
@@ -16,6 +14,8 @@
     <dependency reexport="false">ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)</dependency>
     <dependency reexport="false">642f71f8-327a-425b-84f9-44ad58786d27(jetbrains.mps.lang.project.modules)</dependency>
     <dependency reexport="false">b8e4beec-8383-4fb9-b0bb-9d1c9c159cfc(jetbrains.mps.lang.structure#1170324972255)</dependency>
+    <dependency reexport="false">6294a0cc-a15a-4bf6-a2b1-14fee600d055(test.cstub.testheader)</dependency>
+    <dependency reexport="false">89eeeea8-fb22-4555-8402-93899e0ca495(test.cstub.testheader.expressions)</dependency>
     <dependency reexport="false">0f5cacaf-ece9-4a2a-8680-26d09a4e0b41(test.ex.core)</dependency>
   </dependencies>
   <usedLanguages>
