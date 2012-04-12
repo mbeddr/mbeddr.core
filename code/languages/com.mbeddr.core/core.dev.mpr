@@ -34,10 +34,11 @@
       <modulePath path="${project}/solutions/com.mbeddr.core.statistics/statistics.msd" folder="core" />
       <modulePath path="${project}/tests/aLibrary/aLibrary.msd" folder="tests" />
       <modulePath path="${project}/tests/test.ex.core.cStubTestInclude/cStubTestInclude.mpl" folder="tests" />
+      <modulePath path="${project}/tests/test.ex.core.cStubTestIncludeExpressions/cStubTestIncludeExpressions.mpl" folder="tests" />
       <modulePath path="${project}/tests/test.ex.core.libs/libs.msd" folder="tests" />
       <modulePath path="${project}/tests/test.ex.core/core.msd" folder="tests" />
       <modulePath path="${project}/tests/test.ex.errorreporting/errorreporting.msd" folder="tests" />
-      <modulePath path="${project}/tests/test.junit.core/core.msd" folder="tests" />
+      <modulePath path="${project}/tests/test.junit.core/core.msd" />
       <modulePath path="${project}/tests/test.ts.core/core.msd" folder="tests" />
     </projectModules>
     <genConfs />
