@@ -27,6 +27,9 @@
     <node type="tpd4.TypesystemQuickFix" typeId="tpd4.1216383170661" id="785275130114754291">
       <property name="name" nameId="tpck.1169194664001" value="correctBuildConfiguration" />
     </node>
+    <node type="tpd4.NonTypesystemRule" typeId="tpd4.1195214364922" id="440773076688644474">
+      <property name="name" nameId="tpck.1169194664001" value="complainAboutBinaries" />
+    </node>
   </roots>
   <root id="1873217430999130976">
     <node role="body" roleId="tpd4.1195213635060" type="tpee.StatementList" typeId="tpee.1068580123136" id="1873217430999130977">
@@ -751,6 +754,43 @@
           </node>
         </node>
       </node>
+    </node>
+  </root>
+  <root id="440773076688644474">
+    <node role="body" roleId="tpd4.1195213635060" type="tpee.StatementList" typeId="tpee.1068580123136" id="440773076688644475">
+      <node role="statement" roleId="tpee.1068581517665" type="tpee.IfStatement" typeId="tpee.1068580123159" id="440773076688644478">
+        <node role="ifTrue" roleId="tpee.1068580123161" type="tpee.StatementList" typeId="tpee.1068580123136" id="440773076688644480">
+          <node role="statement" roleId="tpee.1068581517665" type="tpd4.ReportErrorStatement" typeId="tpd4.1175517767210" id="440773076688644529">
+            <node role="nodeToReport" roleId="tpd4.1227096802790" type="tpd4.ApplicableNodeReference" typeId="tpd4.1174650418652" id="440773076688644533">
+              <link role="applicableNode" roleId="tpd4.1174650432090" targetNodeId="440773076688644477" resolveInfo="nothingPlatform" />
+            </node>
+            <node role="errorString" roleId="tpd4.1175517851849" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="440773076688644532">
+              <property name="value" nameId="tpee.1070475926801" value="You cannot have any binaries with nothing build system" />
+            </node>
+          </node>
+        </node>
+        <node role="condition" roleId="tpee.1068580123160" type="tpee.DotExpression" typeId="tpee.1197027756228" id="440773076688644517">
+          <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="440773076688644508">
+            <node role="operand" roleId="tpee.1197027771414" type="tp25.SNodeTypeCastExpression" typeId="tp25.1140137987495" id="440773076688644503">
+              <link role="concept" roleId="tp25.1140138128738" targetNodeId="51wr.7717755763392524104" resolveInfo="BuildConfiguration" />
+              <node role="leftExpression" roleId="tp25.1140138123956" type="tpee.DotExpression" typeId="tpee.1197027756228" id="440773076688644493">
+                <node role="operand" roleId="tpee.1197027771414" type="tpd4.ApplicableNodeReference" typeId="tpd4.1174650418652" id="440773076688644490">
+                  <link role="applicableNode" roleId="tpd4.1174650432090" targetNodeId="440773076688644477" resolveInfo="nothingPlatform" />
+                </node>
+                <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_GetParentOperation" typeId="tp25.1139613262185" id="440773076688644499" />
+              </node>
+            </node>
+            <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkListAccess" typeId="tp25.1138056282393" id="440773076688644513">
+              <link role="link" roleId="tp25.1138056546658" targetNodeId="51wr.5046689135694070731" />
+            </node>
+          </node>
+          <node role="operation" roleId="tpee.1197027833540" type="tp2q.IsNotEmptyOperation" typeId="tp2q.1176501494711" id="440773076688644528" />
+        </node>
+      </node>
+    </node>
+    <node role="applicableNode" roleId="tpd4.1174648101952" type="tpd4.ConceptReference" typeId="tpd4.1174642788531" id="440773076688644477">
+      <property name="name" nameId="tpck.1169194664001" value="nothingPlatform" />
+      <link role="concept" roleId="tpd4.1174642800329" targetNodeId="51wr.440773076688628186" resolveInfo="NothingPlatform" />
     </node>
   </root>
 </model>
