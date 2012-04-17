@@ -24,6 +24,7 @@
       <modulePath path="${project}/languages/com.mbeddr.core.debug.blext/blext.mpl" folder="core" />
       <modulePath path="${project}/languages/com.mbeddr.core.debug/debug.mpl" folder="core" />
       <modulePath path="${project}/languages/com.mbeddr.core.expressions/expressions.mpl" folder="core" />
+      <modulePath path="${project}/languages/com.mbeddr.core.legacy/legacy.mpl" folder="core" />
       <modulePath path="${project}/languages/com.mbeddr.core.make/make.mpl" folder="core" />
       <modulePath path="${project}/languages/com.mbeddr.core.modules.gen/gen.mpl" folder="core" />
       <modulePath path="${project}/languages/com.mbeddr.core.modules.runtime/include.msd" folder="core" />
