@@ -2,6 +2,9 @@
 
 #define HexValue 0xa
 
+#define hexWithBracket (0x244)
+#define intWithBracket (244)
+
 #define StringValue ImAString
 #define MUL(i, j) (i*j)
 
