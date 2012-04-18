@@ -2,8 +2,10 @@ import java.util.HashMap;
 
 import junit.framework.TestCase;
 
+import org.eclipse.cdt.core.dom.ast.ASTNodeProperty;
 import org.eclipse.cdt.core.dom.ast.ASTVisitor;
 import org.eclipse.cdt.core.dom.ast.IASTArrayModifier;
+import org.eclipse.cdt.core.dom.ast.IASTComment;
 import org.eclipse.cdt.core.dom.ast.IASTDeclSpecifier;
 import org.eclipse.cdt.core.dom.ast.IASTDeclaration;
 import org.eclipse.cdt.core.dom.ast.IASTDeclarator;
@@ -39,21 +41,38 @@ public class FunctionTestCase extends TestCase {
 
 		
 
-
-		content.append("int8_t UnaryOperatorsTest_test_testUnaryOperatorOnFunction();");
 		
+
+
+
+		content.append("//some comment\n");
+		content.append("#ifdef SYMBOL\n");
+		content.append("int a=10;\n");
+		content.append("#endif\n");
+		content.append("/* some comment 2 */\n");
+
 
 		HashMap<String, String> options = new HashMap<String, String>();
 
 		ScannerInfo scannerInfo = new ScannerInfo(options);
-		IASTTranslationUnit astTranslationUnit = GCCLanguage.getDefault()
-				.getASTTranslationUnit(
-						FileContent.create("someFile.h", content.toString()
-								.toCharArray()), scannerInfo,
-						IncludeFileContentProvider.getEmptyFilesProvider(),
-						null, 0, new DefaultLogService());
+		scannerInfo.getDefinedSymbols().put("SYMBOL", "SYMBOL");
+//		IASTTranslationUnit astTranslationUnit = GCCLanguage.getDefault()
+//				.getASTTranslationUnit(
+//						FileContent.create("someFile.h", content.toString()
+//								.toCharArray()), scannerInfo,
+//						IncludeFileContentProvider.getEmptyFilesProvider(),
+//						null, 0, new DefaultLogService());
 		
-		astTranslationUnit.accept(new ASTVisitor(true) {
+		IASTTranslationUnit astTranslationUnit = GCCLanguage.getDefault()
+		.getASTTranslationUnit(
+				FileContent.create("someFile.h", content.toString()
+						.toCharArray()), scannerInfo,
+				IncludeFileContentProvider.getEmptyFilesProvider(),
+				null, 0, new DefaultLogService());
+		
+		
+		
+		ASTVisitor astVisitor = new ASTVisitor(true) {
 			public int visit(IASTTranslationUnit x) {
 				System.err.println(x.toString());
 				return PROCESS_CONTINUE;
@@ -61,6 +80,11 @@ public class FunctionTestCase extends TestCase {
 
 			public int visit(IASTName x) {
 				System.err.println(x.toString());
+				return PROCESS_CONTINUE;
+			}
+			
+			public int visit(IASTComment comment) {
+				System.err.println(comment.getComment());
 				return PROCESS_CONTINUE;
 			}
 
@@ -148,7 +172,9 @@ public class FunctionTestCase extends TestCase {
 				System.err.println(x.toString());
 				return PROCESS_CONTINUE;
 			}
-		});
+		};
+
+		astTranslationUnit.accept(astVisitor);
 
 //		astTranslationUnit.accept(new ASTVisitor(true) {
 //

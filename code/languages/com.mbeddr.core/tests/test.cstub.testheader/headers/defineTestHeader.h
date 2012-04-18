@@ -10,3 +10,8 @@
 #define MUL(i, j) (i*j)
 
 #define ASSERT(x) /* no assertion (x is a logical expression) */
+
+
+//
+#define var(x)   unsigned int x;
+var(a)
