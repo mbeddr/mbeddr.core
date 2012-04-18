@@ -58,6 +58,13 @@
     </node>
   </root>
   <root id="7646082028326282928">
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.GlobalConstantFunctionDeclaration" typeId="x27k.6021475212425916971" id="5786992016202650806">
+      <property name="name" nameId="tpck.1169194664001" value="log" />
+      <property name="body" nameId="x27k.6021475212426234033" value="meineLoggingAPI(Error,msg)" />
+      <node role="arguments" roleId="x27k.6021475212425916983" type="x27k.GlobalConstantFunctionArgument" typeId="x27k.6021475212426054485" id="5786992016202650807">
+        <property name="name" nameId="tpck.1169194664001" value="msg" />
+      </node>
+    </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="yz9a.TestCase" typeId="yz9a.6275792049641586523" id="7646082028326282929">
       <property name="name" nameId="tpck.1169194664001" value="testLinkable" />
       <property name="exported" nameId="x27k.1317894735999272944" value="true" />
@@ -77,6 +84,16 @@
             </node>
             <node role="actuals" roleId="x27k.5950410542643524495" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="1995004963226621633">
               <property name="value" nameId="mj1l.8860443239512128104" value="5" />
+            </node>
+          </node>
+        </node>
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="5786992016202650808" />
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="5786992016202650810">
+          <node role="expr" roleId="c4fa.7254843406768833939" type="x27k.GlobalConstantFunctionRef" typeId="x27k.6021475212426147386" id="5786992016202650811">
+            <link role="constant" roleId="x27k.6021475212426147388" targetNodeId="5786992016202650806" resolveInfo="log" />
+            <node role="arguments" roleId="x27k.6021475212426185244" type="mj1l.StringLiteral" typeId="mj1l.2088909457728253268" id="5786992016202650812">
+              <property name="brackets" nameId="mj1l.5444603835251392549" value="true" />
+              <property name="value" nameId="mj1l.2088909457728253269" value="s" />
             </node>
           </node>
         </node>

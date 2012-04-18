@@ -1,3 +1,5 @@
+#include "testforinclude/testforinclude.h"
+
 #define IntValue 3
 
 #define HexValue 0xa
@@ -12,6 +14,12 @@
 #define ASSERT(x) /* no assertion (x is a logical expression) */
 
 
-//
-#define var(x)   unsigned int x;
-var(a)
+//test for ifdef and imported symbols
+#ifdef TESTDEFINESYMBOL
+#define includeDefineSuccessful successful
+#endif
+
+
+#ifdef NOTDEFINEDSYMOBL
+#define ifdefError error
+#endif
