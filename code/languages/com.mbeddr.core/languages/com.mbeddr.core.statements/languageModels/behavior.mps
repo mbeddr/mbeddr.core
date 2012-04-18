@@ -42,7 +42,6 @@
       <link role="concept" roleId="1i04.1225194240799" targetNodeId="c4fa.2093108837558113914" resolveInfo="LocalVarRef" />
     </node>
     <node type="1i04.ConceptBehavior" typeId="1i04.1225194240794" id="6275792049641552211">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="" />
       <link role="concept" roleId="1i04.1225194240799" targetNodeId="c4fa.6275792049641552210" resolveInfo="AssignmentStatement" />
     </node>
     <node type="1i04.ConceptBehavior" typeId="1i04.1225194240794" id="186853311768125005">

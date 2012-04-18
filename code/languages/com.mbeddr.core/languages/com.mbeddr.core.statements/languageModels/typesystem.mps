@@ -35,7 +35,6 @@
     </node>
     <node type="tpd4.NonTypesystemRule" typeId="tpd4.1195214364922" id="6275792049641552233">
       <property name="name" nameId="tpck.1169194664001" value="check_AssigmentStatement" />
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="" />
     </node>
     <node type="tpd4.InferenceRule" typeId="tpd4.1174643105530" id="6275792049641569824">
       <property name="name" nameId="tpck.1169194664001" value="typeof_AssigmentStatement" />

@@ -54,7 +54,6 @@
     </node>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="6275792049641552210">
       <property name="name" nameId="tpck.1169194664001" value="AssignmentStatement" />
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="4185783222026464515" resolveInfo="Statement" />
     </node>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="6275792049641600983">
@@ -147,6 +146,15 @@
     </node>
     <node type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="7825285260294008965">
       <property name="name" nameId="tpck.1169194664001" value="IVolatilable" />
+    </node>
+    <node type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="605413736672002878">
+      <property name="name" nameId="tpck.1169194664001" value="IHasPrefixes" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="prefixes" />
+    </node>
+    <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="605413736672002879">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="prefixes" />
+      <property name="name" nameId="tpck.1169194664001" value="Prefix" />
+      <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
     </node>
   </roots>
   <root id="4185783222026464515">
@@ -662,6 +670,19 @@
     <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="7825285260294008966">
       <property name="name" nameId="tpck.1169194664001" value="volatile" />
       <link role="dataType" roleId="tpce.1082985295845" targetNodeId="tpck.1082983657063" resolveInfo="boolean" />
+    </node>
+  </root>
+  <root id="605413736672002878">
+    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="605413736672002881">
+      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
+      <property name="role" nameId="tpce.1071599776563" value="prefixes" />
+      <property name="sourceCardinality" nameId="tpce.1071599893252" value="0..n" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="605413736672002879" resolveInfo="Prefix" />
+    </node>
+  </root>
+  <root id="605413736672002879">
+    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.BooleanConceptProperty" typeId="tpce.1105725574259" id="605413736672002880">
+      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473854053" resolveInfo="abstract" />
     </node>
   </root>
 </model>
