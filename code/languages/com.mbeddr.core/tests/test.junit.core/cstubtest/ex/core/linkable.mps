@@ -65,6 +65,12 @@
         <property name="name" nameId="tpck.1169194664001" value="msg" />
       </node>
     </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.GlobalConstantFunctionDeclaration" typeId="x27k.6021475212425916971" id="3521577043407742495">
+      <property name="name" nameId="tpck.1169194664001" value="blu" />
+      <node role="arguments" roleId="x27k.6021475212425916983" type="x27k.GlobalConstantFunctionArgument" typeId="x27k.6021475212426054485" id="3521577043407742496">
+        <property name="name" nameId="tpck.1169194664001" value="msg" />
+      </node>
+    </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="yz9a.TestCase" typeId="yz9a.6275792049641586523" id="7646082028326282929">
       <property name="name" nameId="tpck.1169194664001" value="testLinkable" />
       <property name="exported" nameId="x27k.1317894735999272944" value="true" />
