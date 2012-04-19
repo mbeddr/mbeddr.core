@@ -114,6 +114,11 @@
       <property name="virtualPackage" nameId="tpck.1193676396447" value="union" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="mj1l.3005510381523579442" resolveInfo="UnaryExpression" />
     </node>
+    <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="227598611278060792">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="union" />
+      <property name="name" nameId="tpck.1169194664001" value="UnionArrowExpression" />
+      <link role="extends" roleId="tpce.1071489389519" targetNodeId="mj1l.3005510381523579442" resolveInfo="UnaryExpression" />
+    </node>
   </roots>
   <root id="6394819151180597804">
     <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="4058325937810995959">
@@ -422,6 +427,15 @@
       <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473891462" resolveInfo="alias" />
     </node>
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="5882395403881957151">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="mj1l.5856418980158945545" resolveInfo="IDotExpression" />
+    </node>
+  </root>
+  <root id="227598611278060792">
+    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="227598611278060793">
+      <property name="value" nameId="tpce.1105725733873" value="union member access (pointer)" />
+      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473914776" resolveInfo="shortDescription" />
+    </node>
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="227598611278060794">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="mj1l.5856418980158945545" resolveInfo="IDotExpression" />
     </node>
   </root>
