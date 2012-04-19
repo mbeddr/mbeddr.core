@@ -21,7 +21,7 @@
   <roots>
     <node type="tpd4.NonTypesystemRule" typeId="tpd4.1195214364922" id="6394819151180597891">
       <property name="virtualPackage" nameId="tpck.1193676396447" value="struct" />
-      <property name="name" nameId="tpck.1169194664001" value="check_DotExpression" />
+      <property name="name" nameId="tpck.1169194664001" value="check_StructDotExpression" />
     </node>
     <node type="tpd4.InferenceRule" typeId="tpd4.1174643105530" id="6394819151180597922">
       <property name="name" nameId="tpck.1169194664001" value="typeof_StructMemberRef" />
@@ -96,6 +96,14 @@
     </node>
     <node type="tpd4.InferenceRule" typeId="tpd4.1174643105530" id="5882395403881908171">
       <property name="name" nameId="tpck.1169194664001" value="typeof_UnionMemberRef" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="union" />
+    </node>
+    <node type="tpd4.NonTypesystemRule" typeId="tpd4.1195214364922" id="5882395403881957205">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="struct" />
+      <property name="name" nameId="tpck.1169194664001" value="check_UnionDotExpression" />
+    </node>
+    <node type="tpd4.InferenceRule" typeId="tpd4.1174643105530" id="5882395403881957225">
+      <property name="name" nameId="tpck.1169194664001" value="typeof_UnionDotExpression" />
       <property name="virtualPackage" nameId="tpck.1193676396447" value="union" />
     </node>
   </roots>
@@ -1221,6 +1229,80 @@
     <node role="applicableNode" roleId="tpd4.1174648101952" type="tpd4.ConceptReference" typeId="tpd4.1174642788531" id="5882395403881908173">
       <property name="name" nameId="tpck.1169194664001" value="umr" />
       <link role="concept" roleId="tpd4.1174642800329" targetNodeId="clbe.5882395403881908167" resolveInfo="UnionMemberRef" />
+    </node>
+  </root>
+  <root id="5882395403881957205">
+    <node role="body" roleId="tpd4.1195213635060" type="tpee.StatementList" typeId="tpee.1068580123136" id="5882395403881957206">
+      <node role="statement" roleId="tpee.1068581517665" type="tpee.IfStatement" typeId="tpee.1068580123159" id="5882395403881957207">
+        <node role="condition" roleId="tpee.1068580123160" type="tpee.NotExpression" typeId="tpee.1081516740877" id="5882395403881957208">
+          <node role="expression" roleId="tpee.1081516765348" type="tpee.DotExpression" typeId="tpee.1197027756228" id="5882395403881957209">
+            <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="5882395403881957210">
+              <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="5882395403881957211">
+                <node role="operand" roleId="tpee.1197027771414" type="tpd4.ApplicableNodeReference" typeId="tpd4.1174650418652" id="5882395403881957212">
+                  <link role="applicableNode" roleId="tpd4.1174650432090" targetNodeId="5882395403881957223" resolveInfo="ude" />
+                </node>
+                <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="5882395403881957213">
+                  <link role="link" roleId="tp25.1138056516764" targetNodeId="mj1l.7254843406768839760" />
+                </node>
+              </node>
+              <node role="operation" roleId="tpee.1197027833540" type="tpd4.Node_TypeOperation" typeId="tpd4.1176544042499" id="5882395403881957214" />
+            </node>
+            <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_IsInstanceOfOperation" typeId="tp25.1139621453865" id="5882395403881957215">
+              <node role="conceptArgument" roleId="tp25.1177027386292" type="tp25.RefConcept_Reference" typeId="tp25.1177026924588" id="5882395403881957224">
+                <link role="conceptDeclaration" roleId="tp25.1177026940964" targetNodeId="clbe.5882395403881907205" resolveInfo="UnionType" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node role="ifTrue" roleId="tpee.1068580123161" type="tpee.StatementList" typeId="tpee.1068580123136" id="5882395403881957217">
+          <node role="statement" roleId="tpee.1068581517665" type="tpd4.ReportErrorStatement" typeId="tpd4.1175517767210" id="5882395403881957218">
+            <node role="errorString" roleId="tpd4.1175517851849" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="5882395403881957219">
+              <property name="value" nameId="tpee.1070475926801" value="only unions can be used as the context of a dot expression" />
+            </node>
+            <node role="nodeToReport" roleId="tpd4.1227096802790" type="tpee.DotExpression" typeId="tpee.1197027756228" id="5882395403881957220">
+              <node role="operand" roleId="tpee.1197027771414" type="tpd4.ApplicableNodeReference" typeId="tpd4.1174650418652" id="5882395403881957221">
+                <link role="applicableNode" roleId="tpd4.1174650432090" targetNodeId="5882395403881957223" resolveInfo="ude" />
+              </node>
+              <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="5882395403881957222">
+                <link role="link" roleId="tp25.1138056516764" targetNodeId="mj1l.7254843406768839760" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node role="applicableNode" roleId="tpd4.1174648101952" type="tpd4.ConceptReference" typeId="tpd4.1174642788531" id="5882395403881957223">
+      <property name="name" nameId="tpck.1169194664001" value="ude" />
+      <link role="concept" roleId="tpd4.1174642800329" targetNodeId="clbe.5882395403881957147" resolveInfo="UnionDotExpression" />
+    </node>
+  </root>
+  <root id="5882395403881957225">
+    <node role="body" roleId="tpd4.1195213635060" type="tpee.StatementList" typeId="tpee.1068580123136" id="5882395403881957226">
+      <node role="statement" roleId="tpee.1068581517665" type="tpd4.CreateEquationStatement" typeId="tpd4.1174658326157" id="5882395403881957228">
+        <node role="rightExpression" roleId="tpd4.1174660783414" type="tpd4.NormalTypeClause" typeId="tpd4.1185788614172" id="5882395403881957229">
+          <node role="normalType" roleId="tpd4.1185788644032" type="tpd4.TypeOfExpression" typeId="tpd4.1174657487114" id="5882395403881957230">
+            <node role="term" roleId="tpd4.1174657509053" type="tpee.DotExpression" typeId="tpee.1197027756228" id="5882395403881957231">
+              <node role="operand" roleId="tpee.1197027771414" type="tpd4.ApplicableNodeReference" typeId="tpd4.1174650418652" id="5882395403881957238">
+                <link role="applicableNode" roleId="tpd4.1174650432090" targetNodeId="5882395403881957227" resolveInfo="ude" />
+              </node>
+              <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="5882395403881957233">
+                <link role="link" roleId="tp25.1138056516764" targetNodeId="mj1l.6603034309021722828" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node role="leftExpression" roleId="tpd4.1174660783413" type="tpd4.NormalTypeClause" typeId="tpd4.1185788614172" id="5882395403881957234">
+          <node role="normalType" roleId="tpd4.1185788644032" type="tpd4.TypeOfExpression" typeId="tpd4.1174657487114" id="5882395403881957235">
+            <node role="term" roleId="tpd4.1174657509053" type="tpd4.ApplicableNodeReference" typeId="tpd4.1174650418652" id="5882395403881957237">
+              <link role="applicableNode" roleId="tpd4.1174650432090" targetNodeId="5882395403881957227" resolveInfo="ude" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node role="applicableNode" roleId="tpd4.1174648101952" type="tpd4.ConceptReference" typeId="tpd4.1174642788531" id="5882395403881957227">
+      <property name="name" nameId="tpck.1169194664001" value="ude" />
+      <link role="concept" roleId="tpd4.1174642800329" targetNodeId="clbe.5882395403881957147" resolveInfo="UnionDotExpression" />
     </node>
   </root>
 </model>
