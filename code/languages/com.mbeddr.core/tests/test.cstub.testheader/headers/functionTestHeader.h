@@ -21,3 +21,11 @@ const int *getIntConst();
 typedef const int *(*pGetIntConstAsATypeDef)();
 
 void aFunWithVoid(void);
+
+
+void aFunWithUnnamedArguments(int, int, char);
+
+
+#define BUILDFUN(name) void name(int a, int b)
+BUILDFUN(funBuildByMacro);
+BUILDFUN(funBuildByMacro2);
