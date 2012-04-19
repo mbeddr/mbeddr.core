@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model modelUID="r:61d840b4-12c1-49ea-b142-b2a1550a9b15(com.mbeddr.core.udt.structure)">
+<model modelUID="r:61d840b4-12c1-49ea-b142-b2a1550a9b15(com.mbeddr.core.udt.structure)" version="2">
   <persistence version="7" />
   <language namespace="c72da2b9-7cce-4447-8389-f407dc1158b7(jetbrains.mps.lang.structure)" />
   <language namespace="dcf3d84b-ead9-4694-abd0-78416ced3097(com.mbeddr.mpsutil.langdiag)" />
@@ -12,7 +12,7 @@
   <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="1" implicit="yes" />
   <import index="f2yx" modelUID="r:50085297-b330-46da-b541-883806c23ebc(com.mbeddr.mpsutil.langdiag.structure)" version="1" implicit="yes" />
   <import index="x7ww" modelUID="r:66990afc-1053-4945-b2b8-893dc873b7d4(com.mbeddr.mpsutil.outline.structure)" version="-1" implicit="yes" />
-  <import index="clbe" modelUID="r:61d840b4-12c1-49ea-b142-b2a1550a9b15(com.mbeddr.core.udt.structure)" version="-1" implicit="yes" />
+  <import index="clbe" modelUID="r:61d840b4-12c1-49ea-b142-b2a1550a9b15(com.mbeddr.core.udt.structure)" version="2" implicit="yes" />
   <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="0" implicit="yes" />
   <roots>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="6394819151180597804">
@@ -118,6 +118,33 @@
       <property name="virtualPackage" nameId="tpck.1193676396447" value="union" />
       <property name="name" nameId="tpck.1169194664001" value="UnionArrowExpression" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="mj1l.3005510381523579442" resolveInfo="UnaryExpression" />
+    </node>
+    <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="1730914748330631893">
+      <property name="name" nameId="tpck.1169194664001" value="MemoryLayoutSpec" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="memlayout" />
+      <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
+    </node>
+    <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="1730914748330631897">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="memlayout" />
+      <property name="name" nameId="tpck.1169194664001" value="StructMLE" />
+    </node>
+    <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="1730914748330632440">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="memlayout" />
+      <property name="name" nameId="tpck.1169194664001" value="UnionMLE" />
+    </node>
+    <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="1730914748330744597">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="memlayout" />
+      <property name="name" nameId="tpck.1169194664001" value="MemberMLE" />
+      <link role="extends" roleId="tpce.1071489389519" targetNodeId="5882395403881875736" resolveInfo="Member" />
+    </node>
+    <node type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="1730914748330744695">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="memlayout" />
+      <property name="name" nameId="tpck.1169194664001" value="IMemoryLayoutElement" />
+    </node>
+    <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="1730914748330839737">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="memlayout" />
+      <property name="name" nameId="tpck.1169194664001" value="MemberMLERef" />
+      <link role="extends" roleId="tpce.1071489389519" targetNodeId="mj1l.8860443239512128050" resolveInfo="Expression" />
     </node>
   </roots>
   <root id="6394819151180597804">
@@ -346,6 +373,9 @@
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="5882395403881875741">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="c4fa.1782955756756899612" resolveInfo="IConstable" />
     </node>
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="1730914748330808337">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="c4fa.7825285260294008965" resolveInfo="IVolatilable" />
+    </node>
     <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.BooleanConceptProperty" typeId="tpce.1105725574259" id="5882395403881875737">
       <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473854053" resolveInfo="abstract" />
     </node>
@@ -437,6 +467,66 @@
     </node>
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="227598611278060794">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="mj1l.5856418980158945545" resolveInfo="IDotExpression" />
+    </node>
+  </root>
+  <root id="1730914748330631893">
+    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="1730914748330744698">
+      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
+      <property name="role" nameId="tpce.1071599776563" value="root" />
+      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="1730914748330744695" resolveInfo="IMemoryLayoutElement" />
+    </node>
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="1730914748330671923">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="x27k.6437088627575722831" resolveInfo="IModuleContent" />
+    </node>
+    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="1730914748330671924">
+      <property name="value" nameId="tpce.1105725733873" value="memory layout" />
+      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473891462" resolveInfo="alias" />
+    </node>
+    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.BooleanConceptProperty" typeId="tpce.1105725574259" id="1730914748330839818">
+      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="x27k.1317894735999278394" resolveInfo="exportable" />
+    </node>
+  </root>
+  <root id="1730914748330631897">
+    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="1730914748330631898">
+      <property name="value" nameId="tpce.1105725733873" value="struct" />
+      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473891462" resolveInfo="alias" />
+    </node>
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="1730914748330744696">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="1730914748330744695" resolveInfo="IMemoryLayoutElement" />
+    </node>
+  </root>
+  <root id="1730914748330632440">
+    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="1730914748330632441">
+      <property name="value" nameId="tpce.1105725733873" value="union" />
+      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473891462" resolveInfo="alias" />
+    </node>
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="1730914748330744697">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="1730914748330744695" resolveInfo="IMemoryLayoutElement" />
+    </node>
+  </root>
+  <root id="1730914748330744597">
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="1730914748330744699">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="1730914748330744695" resolveInfo="IMemoryLayoutElement" />
+    </node>
+    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.BooleanConceptProperty" typeId="tpce.1105725574259" id="1730914748330803284">
+      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473994950" resolveInfo="dontSubstituteByDefault" />
+    </node>
+  </root>
+  <root id="1730914748330744695">
+    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="1730914748330631896">
+      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
+      <property name="role" nameId="tpce.1071599776563" value="children" />
+      <property name="sourceCardinality" nameId="tpce.1071599893252" value="0..n" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="1730914748330744695" resolveInfo="IMemoryLayoutElement" />
+    </node>
+  </root>
+  <root id="1730914748330839737">
+    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="1730914748330839738">
+      <property name="metaClass" nameId="tpce.1071599937831" value="reference" />
+      <property name="role" nameId="tpce.1071599776563" value="mle" />
+      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="1730914748330744597" resolveInfo="MemberMLE" />
     </node>
   </root>
 </model>
