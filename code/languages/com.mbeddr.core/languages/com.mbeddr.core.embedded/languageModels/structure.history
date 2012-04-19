@@ -2,24 +2,6 @@
 <history>
   <StructureModification>
     <dependencies>
-      <model index="clbe" modelUID="r:61d840b4-12c1-49ea-b142-b2a1550a9b15(com.mbeddr.core.udt.structure)" version="-1" />
-    </dependencies>
-    <rename id="clbe.1730914748330632440" type="CONCEPT" from="StructMLE" to="UnionMLE" />
-  </StructureModification>
-  <StructureModification>
-    <dependencies>
-      <model index="clbe" modelUID="r:61d840b4-12c1-49ea-b142-b2a1550a9b15(com.mbeddr.core.udt.structure)" version="0" />
-    </dependencies>
-    <rename id="clbe.1730914748330744597" type="CONCEPT" from="AtomicMLE" to="MemberMLE" />
-  </StructureModification>
-  <StructureModification>
-    <dependencies>
-      <model index="clbe" modelUID="r:61d840b4-12c1-49ea-b142-b2a1550a9b15(com.mbeddr.core.udt.structure)" version="1" />
-    </dependencies>
-    <rename id="clbe.1730914748330744695" type="CONCEPT" from="MemoryLayoutElement" to="IMemoryLayoutElement" />
-  </StructureModification>
-  <StructureModification>
-    <dependencies>
       <model index="bhga" modelUID="r:c4b50490-6973-43ac-bb5c-96c413eaf2e2(com.mbeddr.ext.embedded.constraints)" version="-1" />
       <model index="nb4f" modelUID="r:272921e7-7030-4de3-ab20-a851a2e6ef5a(com.mbeddr.ext.embedded.behavior)" version="-1" />
       <model index="9clu" modelUID="r:1200d76b-83c0-4a1a-bd4e-b2766a3a8515(com.mbeddr.ext.embedded.editor)" version="-1" />
@@ -251,6 +233,30 @@
     <move id="2rho.1730914748330886405" to="nb4f.1730914748330890343" />
     <move id="2rho.1730914748330886398" to="nb4f.1730914748330890347" />
     <move id="2rho.1730914748330874200" to="nb4f.1730914748330890338" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="jcux" modelUID="r:fdca2071-ad72-4f52-9517-3ce52ba7c01f(com.mbeddr.ext.embedded.textGen)" version="0" />
+      <model index="nbyu" modelUID="r:5104a07c-c91d-412c-8374-26edb13383eb(com.mbeddr.ext.embedded.structure)" version="0" />
+      <model index="e3eu" modelUID="r:5e0c701a-52e5-4f8d-a7a8-9a9d532f99cc(com.mbeddr.ext.embedded.typesystem)" version="0" />
+      <model index="bhga" modelUID="r:c4b50490-6973-43ac-bb5c-96c413eaf2e2(com.mbeddr.ext.embedded.constraints)" version="0" />
+      <model index="nb4f" modelUID="r:272921e7-7030-4de3-ab20-a851a2e6ef5a(com.mbeddr.ext.embedded.behavior)" version="0" />
+      <model index="9clu" modelUID="r:1200d76b-83c0-4a1a-bd4e-b2766a3a8515(com.mbeddr.ext.embedded.editor)" version="0" />
+      <model index="z4z8" modelUID="r:96ebd3ef-3795-4b34-8c2c-a4f631bc1fd9(com.mbeddr.ext.embedded.actions)" version="0" />
+    </dependencies>
+    <RenameModel oldModel="r:fdca2071-ad72-4f52-9517-3ce52ba7c01f(com.mbeddr.ext.embedded.textGen)" newModel="r:fdca2071-ad72-4f52-9517-3ce52ba7c01f(com.mbeddr.core.embedded.textGen)" />
+    <RenameModel oldModel="r:1200d76b-83c0-4a1a-bd4e-b2766a3a8515(com.mbeddr.ext.embedded.editor)" newModel="r:1200d76b-83c0-4a1a-bd4e-b2766a3a8515(com.mbeddr.core.embedded.editor)" />
+    <RenameModel oldModel="r:272921e7-7030-4de3-ab20-a851a2e6ef5a(com.mbeddr.ext.embedded.behavior)" newModel="r:272921e7-7030-4de3-ab20-a851a2e6ef5a(com.mbeddr.core.embedded.behavior)" />
+    <RenameModel oldModel="r:5104a07c-c91d-412c-8374-26edb13383eb(com.mbeddr.ext.embedded.structure)" newModel="r:5104a07c-c91d-412c-8374-26edb13383eb(com.mbeddr.core.embedded.structure)" />
+    <RenameModel oldModel="r:96ebd3ef-3795-4b34-8c2c-a4f631bc1fd9(com.mbeddr.ext.embedded.actions)" newModel="r:96ebd3ef-3795-4b34-8c2c-a4f631bc1fd9(com.mbeddr.core.embedded.actions)" />
+    <RenameModel oldModel="r:5e0c701a-52e5-4f8d-a7a8-9a9d532f99cc(com.mbeddr.ext.embedded.typesystem)" newModel="r:5e0c701a-52e5-4f8d-a7a8-9a9d532f99cc(com.mbeddr.core.embedded.typesystem)" />
+    <RenameModel oldModel="r:c4b50490-6973-43ac-bb5c-96c413eaf2e2(com.mbeddr.ext.embedded.constraints)" newModel="r:c4b50490-6973-43ac-bb5c-96c413eaf2e2(com.mbeddr.core.embedded.constraints)" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="nbyu" modelUID="r:5104a07c-c91d-412c-8374-26edb13383eb(com.mbeddr.core.embedded.structure)" version="1" />
+    </dependencies>
+    <rename id="nbyu.1730914748330889914" type="CONCEPT" from="MemoryLayoutSpec" to="NVMLayoutSpec" />
   </StructureModification>
 </history>
 
