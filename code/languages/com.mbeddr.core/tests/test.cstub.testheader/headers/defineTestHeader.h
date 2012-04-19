@@ -23,3 +23,9 @@
 #ifdef NOTDEFINEDSYMOBL
 #define ifdefError error
 #endif
+
+
+
+#define var(x) unsigned int x;
+var(a)
+var(b)

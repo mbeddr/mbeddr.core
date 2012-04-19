@@ -38,13 +38,10 @@ public class GlobalVariableTestCase extends TestCase {
 	public void testBasicTest() throws CoreException {
 		StringBuilder content = new StringBuilder();
 
-		content.append("#ifndef CONSTANT\n");
-		content.append("#define CONSTANT const\n");
-		content.append("#endif /* ifndef CONSTANT */\n");
-		content.append("#ifndef CONSTSEGMENT\n");
-		content.append("#define CONSTSEGMENT\n");
-		content.append("#endif /* ifndef CONSTSEGMENT */\n");
-		content.append("CONSTANT char CONSTSEGMENT acTD_VOID;");
+		content.append("#define BUILDFUN(name) void name(int a, int b) \n");
+		content.append("BUILDFUN(funname);\n");
+		content.append("BUILDFUN(funname2);\n");
+		
 		
 		
 ////		struct fullname	{
