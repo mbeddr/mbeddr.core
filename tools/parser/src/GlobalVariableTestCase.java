@@ -82,12 +82,13 @@ public class GlobalVariableTestCase extends TestCase {
 						IncludeFileContentProvider.getEmptyFilesProvider(),
 						null, 0, new DefaultLogService());
 
-
+		astTranslationUnit.get
 		
 		astTranslationUnit.accept(new ASTVisitor(true) {
 			
 			
 			public int visit(IASTTranslationUnit x) {
+				
 				System.err.println(x.toString());
 				return PROCESS_CONTINUE;
 			}
