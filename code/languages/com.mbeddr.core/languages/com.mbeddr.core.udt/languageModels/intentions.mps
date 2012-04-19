@@ -13,11 +13,11 @@
   <import index="tp2q" modelUID="r:00000000-0000-4000-0000-011c8959032e(jetbrains.mps.baseLanguage.collections.structure)" version="7" implicit="yes" />
   <roots>
     <node type="tp3j.IntentionDeclaration" typeId="tp3j.1192794744107" id="2558982571829174726">
-      <property name="name" nameId="tpck.1169194664001" value="convertDotToArrow" />
+      <property name="name" nameId="tpck.1169194664001" value="convertStructDotToArrow" />
       <link role="forConcept" roleId="tp3j.2522969319638198290" targetNodeId="clbe.6394819151180597804" resolveInfo="StructDotExpression" />
     </node>
     <node type="tp3j.IntentionDeclaration" typeId="tp3j.1192794744107" id="2558982571829183251">
-      <property name="name" nameId="tpck.1169194664001" value="convertArrowToDot" />
+      <property name="name" nameId="tpck.1169194664001" value="convertStructArrowToDot" />
       <link role="forConcept" roleId="tp3j.2522969319638198290" targetNodeId="clbe.6631303246402173901" resolveInfo="StructArrowExpression" />
     </node>
   </roots>
