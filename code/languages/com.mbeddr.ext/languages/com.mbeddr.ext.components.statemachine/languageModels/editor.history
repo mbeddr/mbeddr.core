@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<history>
+  <StructureModification>
+    <dependencies>
+      <model index="rnyo" modelUID="r:06cbd594-1b32-4614-b327-3d42fa27acd2(com.mbeddr.ext.sm_comp.generator.template.main@generator)" version="-1" />
+      <model index="axas" modelUID="r:31202737-9269-4435-876d-0a2c2319663a(com.mbeddr.ext.sm_comp.behavior)" version="-1" />
+      <model index="ruwb" modelUID="r:9eccd3a7-30d5-445b-9861-4a612ecc56b6(com.mbeddr.ext.sm_comp.typesystem)" version="-1" />
+      <model index="wf31" modelUID="r:1ad61c56-aac0-4b21-b867-da106219773a(com.mbeddr.ext.sm_comp.editor)" version="-1" />
+      <model index="8yj6" modelUID="r:b5ef41ef-8594-459c-bc08-a7e214c6fb43(com.mbeddr.ext.sm_comp.structure)" version="-1" />
+      <model index="ea7p" modelUID="r:7f8a94e2-0d34-400f-9588-c485b38a295d(com.mbeddr.ext.sm_comp.constraints)" version="-1" />
+    </dependencies>
+    <RenameModel oldModel="r:9eccd3a7-30d5-445b-9861-4a612ecc56b6(com.mbeddr.ext.sm_comp.typesystem)" newModel="r:9eccd3a7-30d5-445b-9861-4a612ecc56b6(com.mbeddr.ext.components.statemachine.typesystem)" />
+    <RenameModel oldModel="r:1ad61c56-aac0-4b21-b867-da106219773a(com.mbeddr.ext.sm_comp.editor)" newModel="r:1ad61c56-aac0-4b21-b867-da106219773a(com.mbeddr.ext.components.statemachine.editor)" />
+    <RenameModel oldModel="r:b5ef41ef-8594-459c-bc08-a7e214c6fb43(com.mbeddr.ext.sm_comp.structure)" newModel="r:b5ef41ef-8594-459c-bc08-a7e214c6fb43(com.mbeddr.ext.components.statemachine.structure)" />
+    <RenameModel oldModel="r:31202737-9269-4435-876d-0a2c2319663a(com.mbeddr.ext.sm_comp.behavior)" newModel="r:31202737-9269-4435-876d-0a2c2319663a(com.mbeddr.ext.components.statemachine.behavior)" />
+    <RenameModel oldModel="r:7f8a94e2-0d34-400f-9588-c485b38a295d(com.mbeddr.ext.sm_comp.constraints)" newModel="r:7f8a94e2-0d34-400f-9588-c485b38a295d(com.mbeddr.ext.components.statemachine.constraints)" />
+    <RenameModel oldModel="r:06cbd594-1b32-4614-b327-3d42fa27acd2(com.mbeddr.ext.sm_comp.generator.template.main@generator)" newModel="r:06cbd594-1b32-4614-b327-3d42fa27acd2(com.mbeddr.ext.components.statemachine.generator.template.generator.template.main@generator)" />
+  </StructureModification>
+</history>
+

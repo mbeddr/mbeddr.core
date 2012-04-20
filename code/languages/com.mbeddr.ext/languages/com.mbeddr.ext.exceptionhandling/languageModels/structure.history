@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<history>
+  <StructureModification>
+    <dependencies>
+      <model index="skt0" modelUID="r:cd7772f1-c9fe-4c4a-93ce-2a11779f34fe(exceptionhandling2.structure)" version="-1" />
+      <model index="tgn1" modelUID="r:66e9ace0-6783-42c9-b570-c9aa25dbccfe(exceptionhandling2.typesystem)" version="-1" />
+      <model index="ur0v" modelUID="r:8d66c5a0-b13e-4b03-a515-f27596574699(exceptionhandling2.editor)" version="-1" />
+      <model index="8k1t" modelUID="r:38550cb8-6790-4f9c-a3b5-aa02fd50eba7(exceptionhandling2.constraints)" version="-1" />
+      <model index="sob" modelUID="r:751f3830-35b1-4cc0-abf7-dea6fdf9197d(exceptionhandling2.behavior)" version="-1" />
+    </dependencies>
+    <RenameModel oldModel="r:8d66c5a0-b13e-4b03-a515-f27596574699(exceptionhandling2.editor)" newModel="r:8d66c5a0-b13e-4b03-a515-f27596574699(com.mbeddr.ext.exceptionhandling2.editor)" />
+    <RenameModel oldModel="r:38550cb8-6790-4f9c-a3b5-aa02fd50eba7(exceptionhandling2.constraints)" newModel="r:38550cb8-6790-4f9c-a3b5-aa02fd50eba7(com.mbeddr.ext.exceptionhandling2.constraints)" />
+    <RenameModel oldModel="r:751f3830-35b1-4cc0-abf7-dea6fdf9197d(exceptionhandling2.behavior)" newModel="r:751f3830-35b1-4cc0-abf7-dea6fdf9197d(com.mbeddr.ext.exceptionhandling2.behavior)" />
+    <RenameModel oldModel="r:66e9ace0-6783-42c9-b570-c9aa25dbccfe(exceptionhandling2.typesystem)" newModel="r:66e9ace0-6783-42c9-b570-c9aa25dbccfe(com.mbeddr.ext.exceptionhandling2.typesystem)" />
+    <RenameModel oldModel="r:cd7772f1-c9fe-4c4a-93ce-2a11779f34fe(exceptionhandling2.structure)" newModel="r:cd7772f1-c9fe-4c4a-93ce-2a11779f34fe(com.mbeddr.ext.exceptionhandling2.structure)" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="skt0" modelUID="r:cd7772f1-c9fe-4c4a-93ce-2a11779f34fe(com.mbeddr.ext.exceptionhandling2.structure)" version="0" />
+      <model index="tgn1" modelUID="r:66e9ace0-6783-42c9-b570-c9aa25dbccfe(com.mbeddr.ext.exceptionhandling2.typesystem)" version="0" />
+      <model index="ur0v" modelUID="r:8d66c5a0-b13e-4b03-a515-f27596574699(com.mbeddr.ext.exceptionhandling2.editor)" version="0" />
+      <model index="8k1t" modelUID="r:38550cb8-6790-4f9c-a3b5-aa02fd50eba7(com.mbeddr.ext.exceptionhandling2.constraints)" version="0" />
+      <model index="sob" modelUID="r:751f3830-35b1-4cc0-abf7-dea6fdf9197d(com.mbeddr.ext.exceptionhandling2.behavior)" version="0" />
+    </dependencies>
+    <RenameModel oldModel="r:8d66c5a0-b13e-4b03-a515-f27596574699(com.mbeddr.ext.exceptionhandling2.editor)" newModel="r:8d66c5a0-b13e-4b03-a515-f27596574699(com.mbeddr.ext.exceptionhandling.editor)" />
+    <RenameModel oldModel="r:38550cb8-6790-4f9c-a3b5-aa02fd50eba7(com.mbeddr.ext.exceptionhandling2.constraints)" newModel="r:38550cb8-6790-4f9c-a3b5-aa02fd50eba7(com.mbeddr.ext.exceptionhandling.constraints)" />
+    <RenameModel oldModel="r:751f3830-35b1-4cc0-abf7-dea6fdf9197d(com.mbeddr.ext.exceptionhandling2.behavior)" newModel="r:751f3830-35b1-4cc0-abf7-dea6fdf9197d(com.mbeddr.ext.exceptionhandling.behavior)" />
+    <RenameModel oldModel="r:66e9ace0-6783-42c9-b570-c9aa25dbccfe(com.mbeddr.ext.exceptionhandling2.typesystem)" newModel="r:66e9ace0-6783-42c9-b570-c9aa25dbccfe(com.mbeddr.ext.exceptionhandling.typesystem)" />
+    <RenameModel oldModel="r:cd7772f1-c9fe-4c4a-93ce-2a11779f34fe(com.mbeddr.ext.exceptionhandling2.structure)" newModel="r:cd7772f1-c9fe-4c4a-93ce-2a11779f34fe(com.mbeddr.ext.exceptionhandling.structure)" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="skt0" modelUID="r:cd7772f1-c9fe-4c4a-93ce-2a11779f34fe(com.mbeddr.ext.exceptionhandling.structure)" version="1" />
+    </dependencies>
+    <rename id="skt0.7020824145854549841" type="CONCEPT" from="ExceptionError" to="ExceptionErrorDeclaration" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="skt0" modelUID="r:cd7772f1-c9fe-4c4a-93ce-2a11779f34fe(com.mbeddr.ext.exceptionhandling.structure)" version="2" />
+    </dependencies>
+    <rename id="skt0.3788988821852026524" type="REFERENCE" from="constant" to="exceptionError" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="skt0" modelUID="r:cd7772f1-c9fe-4c4a-93ce-2a11779f34fe(com.mbeddr.ext.exceptionhandling.structure)" version="3" />
+    </dependencies>
+    <rename id="skt0.9206976458323358014" type="CHILD" from="exceptionErrorRef" to="ex" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="skt0" modelUID="r:cd7772f1-c9fe-4c4a-93ce-2a11779f34fe(com.mbeddr.ext.exceptionhandling.structure)" version="4" />
+    </dependencies>
+    <rename id="skt0.3788988821852026524" type="REFERENCE" from="tesetdfsdf" to="errorCode" />
+  </StructureModification>
+</history>
+

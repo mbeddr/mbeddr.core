@@ -26,6 +26,9 @@ junit*.properties
 code/languages/com.mbeddr.core/diagrams/*.dot
 code/languages/com.mbeddr.core/diagrams/*.gv
 code/languages/com.mbeddr.core/diagrams/*.png
+code/languages/com.mbeddr.ext/diagrams/*.dot
+code/languages/com.mbeddr.ext/diagrams/*.gv
+code/languages/com.mbeddr.ext/diagrams/*.png
 
 # -----------------------------------------------------------
 # * languages
@@ -107,6 +110,11 @@ documentation/*/*.log
 documentation/*/*.out
 documentation/*/*.toc
 documentation/*/*.synctex.gz
+
+# ----------------------------------------------------
+# result files from the NuSMV unit tests
+code/languages/com.mbeddr.ext/result.txt
+code/languages/com.mbeddr.ext/result.xml
 
 # -----------------------------------------------------------
 # tools

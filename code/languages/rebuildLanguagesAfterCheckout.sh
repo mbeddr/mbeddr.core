@@ -9,3 +9,7 @@ cd ..
 cd com.mbeddr.cc
 ant build-languages
 cd ..
+
+cd com.mbeddr.ext
+ant build-languages
+cd ..

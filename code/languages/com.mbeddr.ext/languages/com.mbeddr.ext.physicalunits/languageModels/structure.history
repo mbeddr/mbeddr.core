@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<history>
+  <StructureModification>
+    <dependencies>
+      <model index="ym4j" modelUID="r:cf0df747-2506-460f-a33d-eb236a605ee8(com.mbeddr.ext.physicalunits.structure)" version="6" />
+    </dependencies>
+    <rename id="ym4j.8099136929591129785" type="CONCEPT" from="NamedUnitDeclaration" to="NamedDerivedUnitDeclaration" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="ym4j" modelUID="r:cf0df747-2506-460f-a33d-eb236a605ee8(com.mbeddr.ext.physicalunits.structure)" version="7" />
+    </dependencies>
+    <move id="ym4j.1850134002004799552" to="ym4j.2078797996880543461" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="ym4j" modelUID="r:cf0df747-2506-460f-a33d-eb236a605ee8(com.mbeddr.ext.physicalunits.structure)" version="8" />
+    </dependencies>
+    <rename id="ym4j.3801772042669047873" type="CHILD" from="descs" to="declarations" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="ym4j" modelUID="r:cf0df747-2506-460f-a33d-eb236a605ee8(com.mbeddr.ext.physicalunits.structure)" version="9" />
+    </dependencies>
+    <rename id="ym4j.3801772042669047303" type="CONCEPT" from="SIBaseUnitDeclaration" to="ElementaryUnitDeclaration" />
+  </StructureModification>
+</history>
+
