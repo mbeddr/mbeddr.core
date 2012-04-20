@@ -76,6 +76,14 @@
             </Library>
           </value>
         </entry>
+        <entry key="smartmeter">
+          <value>
+            <Library>
+              <option name="name" value="smartmeter" />
+              <option name="path" value="${smartmeter.git.root}/" />
+            </Library>
+          </value>
+        </entry>
       </map>
     </option>
   </component>

@@ -60,25 +60,30 @@ public class UnionTestCase extends TestCase {
 		DEFCW(  ADC10CTL0         , ADC10CTL0_)
 		*/
 		
-		/*
+		
 		content.append("#define DEFCW(name, address) __no_init union \\ \n");
 		content.append("{ \\ \n");
 		content.append("struct \\ \n");
 		content.append(" { \\ \n");
 		content.append("volatile unsigned char  name##_L; \\ \n");
 		content.append("volatile unsigned char  name##_H; \\ \n");
+		content.append("volatile unsigned char  name##_M; \\ \n");
 		content.append(" }; \\ \n");
-		content.append("volatile unsigned short   name;  \\ \n");
-		content.append("} @ address; \n");
+	
+		
+//		content.append("volatile unsigned short   name;  \\ \n");
+		content.append("void __data20 * volatile DMA0SA;   \\ \n");
+		
+		content.append("} \n");
 		
 		content.append("#define ADC10CTL0_          (0x0740u) \n");
 		content.append("DEFCW(  ADC10CTL0   , ADC10CTL0_) \n");
-		*/
 		
-		content.append("union { \n");
-		content.append("float f; \n");
-		content.append("int i; \n");
-		content.append("} var; \n");
+		
+//		content.append("union { \n");
+//		content.append("float f; \n");
+//		content.append("int i; \n");
+//		content.append("} var; \n");
 		
 		
 		HashMap<String, String> options = new HashMap<String, String>();
