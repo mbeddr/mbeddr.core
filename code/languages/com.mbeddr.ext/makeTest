@@ -1,0 +1,105 @@
+#!/bin/sh
+#set +v
+
+PROC_RET=0
+
+
+echo -------------------------------------
+echo comptest
+cd tests/test.ex.ext.components/source_gen/test/ex/ext/components/comptest
+make test
+PROC_RET=$(($?+$PROC_RET))
+
+echo -------------------------------------
+echo ppc
+cd ..
+cd ppc
+make test
+PROC_RET=$(($?+$PROC_RET))
+
+echo -------------------------------------
+echo staticWiring
+cd ..
+cd staticWiring
+make test
+PROC_RET=$(($?+$PROC_RET))
+
+echo -------------------------------------
+echo insconextension
+cd ..
+cd insconextension
+make test
+PROC_RET=$(($?+$PROC_RET))
+
+echo -------------------------------------
+echo CompWithDectab
+cd ../
+cd CompWithDectab
+make test
+PROC_RET=$(($?+$PROC_RET))
+
+cd ../../../../../../../
+cd test.ex.ext.statemachine/source_gen/statemachine_components
+
+echo -------------------------------------
+echo Comp-Statemachines
+cd ../
+cd statemachine_components
+make test
+PROC_RET=$(($?+$PROC_RET))
+
+
+cd ../../../../
+cd tests/test.ex.ext.comp_mocking/source_gen/test/ex/ext/comp_mocking/m1
+
+echo -------------------------------------
+echo Mocking m1
+cd ../m1
+make test
+PROC_RET=$(($?+$PROC_RET))
+
+echo -------------------------------------
+echo Mocking m2
+cd ../m2
+make test
+PROC_RET=$(($?+$PROC_RET))
+
+echo -------------------------------------
+echo Mocking m3
+cd ../m3
+make test
+PROC_RET=$(($?+$PROC_RET))
+
+echo -------------------------------------
+echo Exception Handling
+cd ../../../../../../../../lib/com.mbeddr.ext.exceptionhandling.lib/source_gen/com/mbeddr/ext/exceptionhandling/lib/rt/
+make
+cd ../../../../../../../../../tests/test.ex.ext.exceptionhandling/source_gen/test/ex/ext/exceptionhandling/test/defaultimpl/
+make test
+PROC_RET=$(($?+$PROC_RET))
+
+
+
+
+if [ "$PROC_RET" -ne "0" ]; 
+ then
+    echo ""
+    echo "" 
+    echo "================================================"
+    echo "================================================" 
+    echo "               $PROC_RET test(s) failed"
+    echo "================================================"
+    echo "================================================"
+    echo ""
+    echo ""
+ else
+  echo ""
+    echo "" 
+    echo "================================================"
+    echo "              OK - All tests green"
+    echo "================================================"
+    echo ""
+    echo ""
+fi
+
+exit $PROC_RET

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dev-kit name="com.mbeddr.physicalunits" uuid="1a986be1-0ef0-4f9f-9d8a-81c3ea7227ae">
+  <exported-language name="fb853ce7-1235-4635-99f2-8ca7447fa202(com.mbeddr.ext.physicalunits)" />
+  <exported-language name="d72d3ee4-7395-438a-9a07-74a38a82cb0e(com.mbeddr.ext.physicalunits.c)" />
+</dev-kit>
+
