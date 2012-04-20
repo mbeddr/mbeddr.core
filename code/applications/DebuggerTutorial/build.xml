@@ -33,6 +33,7 @@
   <target name="build-languages" depends="init">
     <mps.generate parallelMode="true" fork="true">
       <jvmargs id="myargs"/>
+      <macro name="mbeddr.github.core.home" path="${mbeddr.github.core.home}"/>
 	  <project file="${mbeddr.github.core.home}/${projectDir}/DebuggerTutorial.mpr"/>
 	  <library name="core" dir="${mbeddr.github.core.home}/code/languages/"/>
       <modules dir="${mbeddr.github.core.home}/${projectDir}/languages"/>
