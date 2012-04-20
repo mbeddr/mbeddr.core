@@ -11,7 +11,6 @@
   <import index="tpce" modelUID="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" version="0" implicit="yes" />
   <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="1" implicit="yes" />
   <import index="f2yx" modelUID="r:50085297-b330-46da-b541-883806c23ebc(com.mbeddr.mpsutil.langdiag.structure)" version="1" implicit="yes" />
-  <import index="x7ww" modelUID="r:66990afc-1053-4945-b2b8-893dc873b7d4(com.mbeddr.mpsutil.outline.structure)" version="-1" implicit="yes" />
   <import index="clbe" modelUID="r:61d840b4-12c1-49ea-b142-b2a1550a9b15(com.mbeddr.core.udt.structure)" version="3" implicit="yes" />
   <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="0" implicit="yes" />
   <roots>
@@ -162,7 +161,6 @@
       <property name="sep" nameId="f2yx.8281282103316080654" value="0.1" />
       <property name="path" nameId="f2yx.1184135985877008788" value="../../../../../../../../diagrams/udt" />
     </node>
-    <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="x7ww.ShowConceptInOutlineAttribute" typeId="x7ww.2105832290755451125" id="2105832290755523512" />
   </root>
   <root id="6394819151180597810">
     <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="4058325937810995960">
@@ -224,7 +222,6 @@
       <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
       <link role="target" roleId="tpce.1071599976176" targetNodeId="mj1l.8860443239512128054" resolveInfo="Type" />
     </node>
-    <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="x7ww.ShowConceptInOutlineAttribute" typeId="x7ww.2105832290755451125" id="2105832290755523514" />
   </root>
   <root id="6116558314501347863">
     <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="4058325937810995964">
@@ -268,7 +265,6 @@
     <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.BooleanConceptProperty" typeId="tpce.1105725574259" id="8811614583515751377">
       <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="x27k.1317894735999278394" resolveInfo="exportable" />
     </node>
-    <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="x7ww.ShowConceptInOutlineAttribute" typeId="x7ww.2105832290755451125" id="2105832290755523499" />
   </root>
   <root id="8811614583515725853">
     <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="4058325937810995954">
@@ -378,7 +374,6 @@
       <property name="sep" nameId="f2yx.8281282103316080654" value="0.1" />
       <property name="path" nameId="f2yx.1184135985877008788" value="../../../../../../../../diagrams/udt" />
     </node>
-    <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="x7ww.ShowConceptInOutlineAttribute" typeId="x7ww.2105832290755451125" id="5882395403881907073" />
   </root>
   <root id="5882395403881907074">
     <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="5882395403881907075">

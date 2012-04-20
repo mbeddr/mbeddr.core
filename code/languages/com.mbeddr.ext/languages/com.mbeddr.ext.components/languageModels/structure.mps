@@ -12,7 +12,6 @@
   <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="10" implicit="yes" />
   <import index="f2yx" modelUID="r:50085297-b330-46da-b541-883806c23ebc(com.mbeddr.mpsutil.langdiag.structure)" version="1" implicit="yes" />
   <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="1" implicit="yes" />
-  <import index="x7ww" modelUID="r:66990afc-1053-4945-b2b8-893dc873b7d4(com.mbeddr.mpsutil.outline.structure)" version="-1" implicit="yes" />
   <import index="v7ag" modelUID="r:9596407c-f27a-49d3-abde-3a66293c5b61(com.mbeddr.ext.components.structure)" version="3" implicit="yes" />
   <import index="k146" modelUID="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" version="1" implicit="yes" />
   <roots>
@@ -418,7 +417,6 @@
       <property name="value" nameId="tpce.1105725733873" value="interface with operations" />
       <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473914776" resolveInfo="shortDescription" />
     </node>
-    <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="x7ww.ShowConceptInOutlineAttribute" typeId="x7ww.2105832290755451125" id="2105832290755523506" />
   </root>
   <root id="4491876417845484923">
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="4491876417845484929">
@@ -435,7 +433,6 @@
       <property name="value" nameId="tpce.1105725733873" value="interface with data items" />
       <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473914776" resolveInfo="shortDescription" />
     </node>
-    <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="x7ww.ShowConceptInOutlineAttribute" typeId="x7ww.2105832290755451125" id="2105832290755523507" />
   </root>
   <root id="4491876417845484924">
     <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="4058325937811252132">
@@ -473,7 +470,6 @@
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="4491876417845484925">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="vs0r.7024921229555594291" resolveInfo="IIdentifierNamedConcept" />
     </node>
-    <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="x7ww.ShowConceptInOutlineAttribute" typeId="x7ww.2105832290755451125" id="2105832290755575659" />
     <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="6591434695301777601">
       <property name="name" nameId="tpck.1169194664001" value="isQuery" />
       <link role="dataType" roleId="tpce.1082985295845" targetNodeId="tpck.1082983657063" resolveInfo="boolean" />
@@ -497,7 +493,6 @@
       <property name="value" nameId="tpce.1105725733873" value="message" />
       <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473891462" resolveInfo="alias" />
     </node>
-    <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="x7ww.ShowConceptInOutlineAttribute" typeId="x7ww.2105832290755451125" id="2105832290755575660" />
   </root>
   <root id="4491876417845484930">
     <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="4058325937811252136">
@@ -531,7 +526,6 @@
       <property name="value" nameId="tpce.1105725733873" value="services provided by component" />
       <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473914776" resolveInfo="shortDescription" />
     </node>
-    <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="x7ww.ShowConceptInOutlineAttribute" typeId="x7ww.2105832290755451125" id="2105832290755590696" />
   </root>
   <root id="4491876417845628841">
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="8922663937488545449">
@@ -551,7 +545,6 @@
       <property name="value" nameId="tpce.1105725733873" value="services used by component" />
       <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473914776" resolveInfo="shortDescription" />
     </node>
-    <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="x7ww.ShowConceptInOutlineAttribute" typeId="x7ww.2105832290755451125" id="2105832290755590695" />
   </root>
   <root id="4491876417845641670">
     <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="4491876417845678667">
@@ -592,7 +585,6 @@
       <property name="value" nameId="tpce.1105725733873" value="a &quot;function&quot; in a component" />
       <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473914776" resolveInfo="shortDescription" />
     </node>
-    <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="x7ww.ShowConceptInOutlineAttribute" typeId="x7ww.2105832290755451125" id="2105832290755575662" />
   </root>
   <root id="4491876417845641673">
     <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="4058325937811252156">
@@ -693,7 +685,6 @@
       <property name="value" nameId="tpce.1105725733873" value="component with no instances inside" />
       <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473914776" resolveInfo="shortDescription" />
     </node>
-    <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="x7ww.ShowConceptInOutlineAttribute" typeId="x7ww.2105832290755451125" id="2105832290755523497" />
   </root>
   <root id="4491876417845649012">
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="4491876417845649013">
@@ -713,7 +704,6 @@
       <property name="value" nameId="tpce.1105725733873" value="component with instances inside" />
       <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473914776" resolveInfo="shortDescription" />
     </node>
-    <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="x7ww.ShowConceptInOutlineAttribute" typeId="x7ww.2105832290755451125" id="2105832290755523498" />
   </root>
   <root id="4491876417845649014">
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="785275130114861567">
@@ -822,7 +812,6 @@
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="4491876417845704580">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="x27k.6437088627575722831" resolveInfo="IModuleContent" />
     </node>
-    <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="x7ww.ShowConceptInOutlineAttribute" typeId="x7ww.2105832290755451125" id="2105832290755523505" />
   </root>
   <root id="4491876417845683824">
     <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="4058325937811252127">
@@ -873,7 +862,6 @@
       <property name="value" nameId="tpce.1105725733873" value="port adapter" />
       <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473914776" resolveInfo="shortDescription" />
     </node>
-    <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="x7ww.ShowConceptInOutlineAttribute" typeId="x7ww.2105832290755451125" id="2105832290755523509" />
   </root>
   <root id="8105003328814473408">
     <node role="extends" roleId="tpce.1169127546356" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="8105003328814473413">
