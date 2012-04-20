@@ -61,7 +61,6 @@
   </dependencies>
   <usedLanguages>
     <usedLanguage>dcf3d84b-ead9-4694-abd0-78416ced3097(com.mbeddr.mpsutil.langdiag)</usedLanguage>
-    <usedLanguage>355d5342-5908-4dc6-844e-5ef34bd14af7(com.mbeddr.mpsutil.outline)</usedLanguage>
   </usedLanguages>
   <usedDevKits>
     <usedDevKit>2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)</usedDevKit>
