@@ -63,11 +63,13 @@
 	  <!-- executable tests -->
       <modules dir="${mbeddr.github.core.home}/${mbeddr.core.project.dir}/tests/test.ex.core"/>
 	  <modules dir="${mbeddr.github.core.home}/${mbeddr.core.project.dir}/tests/test.ex.errorreporting"/>
-  
 	  
 	  <!-- type system tests -->
       <modules dir="${mbeddr.github.core.home}/${mbeddr.core.project.dir}/tests/test.ts.core"/>
-
+	  
+	  <!-- stub tests -->
+	  <modules dir="${mbeddr.github.core.home}/${mbeddr.core.project.dir}/tests/test.cstub.core"/>  
+	  
 	  </mps.generate>
   </target>
 
