@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<history>
+  <StructureModification>
+    <dependencies>
+      <model index="p7vm" modelUID="r:28fa862e-f94d-4c39-bdf7-a4bdbc773888(com.mbeddr.ext.components.gen_nomw.structure)" version="-1" />
+      <model index="v7ag" modelUID="r:9596407c-f27a-49d3-abde-3a66293c5b61(com.mbeddr.ext.components.structure)" version="1" />
+      <model index="rpht" modelUID="r:ab1563bf-5863-41c9-8b32-5a1740e076b0(com.mbeddr.ext.components.gen_nomw.editor)" version="-1" />
+      <model index="okc0" modelUID="r:a77b09d3-76cb-4b3b-9620-10102158ec08(com.mbeddr.ext.components.editor)" version="-1" />
+    </dependencies>
+    <move id="v7ag.2103658896110121040" to="p7vm.2103658896110278833" />
+    <move id="v7ag.2103658896110121037" to="p7vm.2103658896110278831" />
+    <move id="v7ag.2103658896110121038" to="p7vm.2103658896110278832" />
+    <move id="okc0.2103658896110121041" to="rpht.2103658896110278834" />
+    <move id="okc0.2103658896110121043" to="rpht.2103658896110278835" />
+  </StructureModification>
+</history>
+

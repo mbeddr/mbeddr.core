@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<history>
+  <StructureModification>
+    <dependencies>
+      <model index="know" modelUID="r:775fb93d-1c49-4a5d-832a-a94f24da0fdf(com.mbeddr.ext.statemachine_mc.editor)" version="-1" />
+      <model index="bnsy" modelUID="r:1cada1d0-f158-48a9-b4a9-75b2f62d9489(com.mbeddr.ext.statemachine_mc.actions)" version="-1" />
+      <model index="ktif" modelUID="r:7581afdf-2eec-4ad5-b583-8a9ab51847f7(com.mbeddr.ext.statemachine_mc.behavior)" version="-1" />
+      <model index="ufns" modelUID="r:85e50421-dedc-4bdc-8958-78599cf38d6c(com.mbeddr.ext.statemachine_mc.plugin)" version="-1" />
+      <model index="silf" modelUID="r:e2d203fd-94d7-4156-aadb-5d8dfc0eeb05(com.mbeddr.ext.statemachine_mc.typesystem)" version="-1" />
+      <model index="ol92" modelUID="r:3a5367ae-3f46-4e7d-983f-868d317512c8(com.mbeddr.ext.statemachine_mc.generator.template.main@generator)" version="-1" />
+      <model index="kc4h" modelUID="r:db7f32ec-c3f2-4ce6-b6ec-45d5bf8157be(com.mbeddr.ext.statemachine_mc.intentions)" version="-1" />
+      <model index="3urm" modelUID="r:83bfdebe-5142-4e25-be3f-92ce5f6940d7(com.mbeddr.ext.statemachine_mc.constraints)" version="-1" />
+      <model index="clqz" modelUID="r:5ebcdb77-81e9-4964-beae-35bd9a2f28b5(com.mbeddr.ext.statemachine_mc.structure)" version="4" />
+    </dependencies>
+    <RenameModel oldModel="r:85e50421-dedc-4bdc-8958-78599cf38d6c(com.mbeddr.ext.statemachine_mc.plugin)" newModel="r:85e50421-dedc-4bdc-8958-78599cf38d6c(com.mbeddr.ext.statemachines.plugin)" />
+    <RenameModel oldModel="r:7581afdf-2eec-4ad5-b583-8a9ab51847f7(com.mbeddr.ext.statemachine_mc.behavior)" newModel="r:7581afdf-2eec-4ad5-b583-8a9ab51847f7(com.mbeddr.ext.statemachines.behavior)" />
+    <RenameModel oldModel="r:e2d203fd-94d7-4156-aadb-5d8dfc0eeb05(com.mbeddr.ext.statemachine_mc.typesystem)" newModel="r:e2d203fd-94d7-4156-aadb-5d8dfc0eeb05(com.mbeddr.ext.statemachines.typesystem)" />
+    <RenameModel oldModel="r:775fb93d-1c49-4a5d-832a-a94f24da0fdf(com.mbeddr.ext.statemachine_mc.editor)" newModel="r:775fb93d-1c49-4a5d-832a-a94f24da0fdf(com.mbeddr.ext.statemachines.editor)" />
+    <RenameModel oldModel="r:5ebcdb77-81e9-4964-beae-35bd9a2f28b5(com.mbeddr.ext.statemachine_mc.structure)" newModel="r:5ebcdb77-81e9-4964-beae-35bd9a2f28b5(com.mbeddr.ext.statemachines.structure)" />
+    <RenameModel oldModel="r:83bfdebe-5142-4e25-be3f-92ce5f6940d7(com.mbeddr.ext.statemachine_mc.constraints)" newModel="r:83bfdebe-5142-4e25-be3f-92ce5f6940d7(com.mbeddr.ext.statemachines.constraints)" />
+    <RenameModel oldModel="r:1cada1d0-f158-48a9-b4a9-75b2f62d9489(com.mbeddr.ext.statemachine_mc.actions)" newModel="r:1cada1d0-f158-48a9-b4a9-75b2f62d9489(com.mbeddr.ext.statemachines.actions)" />
+    <RenameModel oldModel="r:db7f32ec-c3f2-4ce6-b6ec-45d5bf8157be(com.mbeddr.ext.statemachine_mc.intentions)" newModel="r:db7f32ec-c3f2-4ce6-b6ec-45d5bf8157be(com.mbeddr.ext.statemachines.intentions)" />
+    <RenameModel oldModel="r:3a5367ae-3f46-4e7d-983f-868d317512c8(com.mbeddr.ext.statemachine_mc.generator.template.main@generator)" newModel="r:3a5367ae-3f46-4e7d-983f-868d317512c8(com.mbeddr.ext.statemachines.generator.template.generator.template.main@generator)" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="know" modelUID="r:775fb93d-1c49-4a5d-832a-a94f24da0fdf(com.mbeddr.ext.statemachines.editor)" version="0" />
+      <model index="uise" modelUID="r:aefd5806-11e6-4262-8d96-d21450e898ee(com.mbeddr.ext.statemachine.nusmv.editor)" version="-1" />
+      <model index="pszp" modelUID="r:5097c9c6-4a5a-40ee-bd76-4904ba8fa229(com.mbeddr.ext.statemachine.nusmv.structure)" version="-1" />
+      <model index="clqz" modelUID="r:5ebcdb77-81e9-4964-beae-35bd9a2f28b5(com.mbeddr.ext.statemachines.structure)" version="5" />
+    </dependencies>
+    <move id="clqz.7171799652488127249" to="pszp.1579201292659037804" />
+    <move id="clqz.7171799652488260751" to="pszp.1579201292659037805" />
+    <move id="clqz.7171799652488127248" to="pszp.1579201292659037803" />
+    <move id="know.7171799652488127250" to="uise.1579201292659037806" />
+    <move id="know.7171799652488260759" to="uise.1579201292659037813" />
+    <move id="know.7171799652488260756" to="uise.1579201292659037812" />
+    <move id="know.7171799652488260757" to="uise.1579201292659037811" />
+    <move id="know.7171799652488260754" to="uise.1579201292659037810" />
+    <move id="know.7171799652488189659" to="uise.1579201292659037808" />
+    <move id="know.7171799652488260753" to="uise.1579201292659037809" />
+    <move id="know.7171799652488189663" to="uise.1579201292659037814" />
+    <move id="know.7171799652488189658" to="uise.1579201292659037807" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="clqz" modelUID="r:5ebcdb77-81e9-4964-beae-35bd9a2f28b5(com.mbeddr.ext.statemachines.structure)" version="6" />
+    </dependencies>
+    <rename id="clqz.1957198122968598264" type="CONCEPT" from="Actions" to="ActionList" />
+  </StructureModification>
+</history>
+

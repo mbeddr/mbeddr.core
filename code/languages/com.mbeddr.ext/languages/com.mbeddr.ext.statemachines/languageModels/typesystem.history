@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<history>
+  <StructureModification>
+    <dependencies>
+      <model index="know" modelUID="r:775fb93d-1c49-4a5d-832a-a94f24da0fdf(com.mbeddr.ext.statemachine_mc.editor)" version="-1" />
+      <model index="ufns" modelUID="r:85e50421-dedc-4bdc-8958-78599cf38d6c(com.mbeddr.ext.statemachine_mc.plugin)" version="-1" />
+      <model index="ktif" modelUID="r:7581afdf-2eec-4ad5-b583-8a9ab51847f7(com.mbeddr.ext.statemachine_mc.behavior)" version="-1" />
+      <model index="bnsy" modelUID="r:1cada1d0-f158-48a9-b4a9-75b2f62d9489(com.mbeddr.ext.statemachine_mc.actions)" version="-1" />
+      <model index="silf" modelUID="r:e2d203fd-94d7-4156-aadb-5d8dfc0eeb05(com.mbeddr.ext.statemachine_mc.typesystem)" version="-1" />
+      <model index="ol92" modelUID="r:3a5367ae-3f46-4e7d-983f-868d317512c8(com.mbeddr.ext.statemachine_mc.generator.template.main@generator)" version="-1" />
+      <model index="kc4h" modelUID="r:db7f32ec-c3f2-4ce6-b6ec-45d5bf8157be(com.mbeddr.ext.statemachine_mc.intentions)" version="-1" />
+      <model index="3urm" modelUID="r:83bfdebe-5142-4e25-be3f-92ce5f6940d7(com.mbeddr.ext.statemachine_mc.constraints)" version="-1" />
+      <model index="clqz" modelUID="r:5ebcdb77-81e9-4964-beae-35bd9a2f28b5(com.mbeddr.ext.statemachine_mc.structure)" version="4" />
+    </dependencies>
+    <RenameModel oldModel="r:85e50421-dedc-4bdc-8958-78599cf38d6c(com.mbeddr.ext.statemachine_mc.plugin)" newModel="r:85e50421-dedc-4bdc-8958-78599cf38d6c(com.mbeddr.ext.statemachines.plugin)" />
+    <RenameModel oldModel="r:7581afdf-2eec-4ad5-b583-8a9ab51847f7(com.mbeddr.ext.statemachine_mc.behavior)" newModel="r:7581afdf-2eec-4ad5-b583-8a9ab51847f7(com.mbeddr.ext.statemachines.behavior)" />
+    <RenameModel oldModel="r:e2d203fd-94d7-4156-aadb-5d8dfc0eeb05(com.mbeddr.ext.statemachine_mc.typesystem)" newModel="r:e2d203fd-94d7-4156-aadb-5d8dfc0eeb05(com.mbeddr.ext.statemachines.typesystem)" />
+    <RenameModel oldModel="r:775fb93d-1c49-4a5d-832a-a94f24da0fdf(com.mbeddr.ext.statemachine_mc.editor)" newModel="r:775fb93d-1c49-4a5d-832a-a94f24da0fdf(com.mbeddr.ext.statemachines.editor)" />
+    <RenameModel oldModel="r:5ebcdb77-81e9-4964-beae-35bd9a2f28b5(com.mbeddr.ext.statemachine_mc.structure)" newModel="r:5ebcdb77-81e9-4964-beae-35bd9a2f28b5(com.mbeddr.ext.statemachines.structure)" />
+    <RenameModel oldModel="r:83bfdebe-5142-4e25-be3f-92ce5f6940d7(com.mbeddr.ext.statemachine_mc.constraints)" newModel="r:83bfdebe-5142-4e25-be3f-92ce5f6940d7(com.mbeddr.ext.statemachines.constraints)" />
+    <RenameModel oldModel="r:1cada1d0-f158-48a9-b4a9-75b2f62d9489(com.mbeddr.ext.statemachine_mc.actions)" newModel="r:1cada1d0-f158-48a9-b4a9-75b2f62d9489(com.mbeddr.ext.statemachines.actions)" />
+    <RenameModel oldModel="r:db7f32ec-c3f2-4ce6-b6ec-45d5bf8157be(com.mbeddr.ext.statemachine_mc.intentions)" newModel="r:db7f32ec-c3f2-4ce6-b6ec-45d5bf8157be(com.mbeddr.ext.statemachines.intentions)" />
+    <RenameModel oldModel="r:3a5367ae-3f46-4e7d-983f-868d317512c8(com.mbeddr.ext.statemachine_mc.generator.template.main@generator)" newModel="r:3a5367ae-3f46-4e7d-983f-868d317512c8(com.mbeddr.ext.statemachines.generator.template.generator.template.main@generator)" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="silf" modelUID="r:e2d203fd-94d7-4156-aadb-5d8dfc0eeb05(com.mbeddr.ext.statemachines.typesystem)" version="0" />
+      <model index="w7u6" modelUID="r:9fff930e-0eef-4088-b9aa-b74c093c9964(com.mbeddr.ext.statemachine.nusmv.typesystem)" version="-1" />
+    </dependencies>
+    <move id="silf.8599220535762256121" to="w7u6.1579201292659195698" />
+    <move id="silf.8599220535762278727" to="w7u6.1579201292659195652" />
+    <move id="silf.8599220535762278706" to="w7u6.1579201292659195663" />
+    <move id="silf.8599220535762265986" to="w7u6.1579201292659195689" />
+    <move id="silf.8599220535762255883" to="w7u6.1579201292659195585" />
+    <move id="silf.8599220535762278666" to="w7u6.1579201292659195633" />
+    <move id="silf.8599220535762278739" to="w7u6.1579201292659195646" />
+    <move id="silf.8599220535762255980" to="w7u6.1579201292659195614" />
+    <move id="silf.8599220535762255908" to="w7u6.1579201292659195588" />
+    <move id="silf.8599220535762255880" to="w7u6.1579201292659195700" />
+    <move id="silf.8599220535762278700" to="w7u6.1579201292659195658" />
+    <move id="silf.8599220535762256110" to="w7u6.1579201292659195627" />
+    <move id="silf.8599220535762256103" to="w7u6.1579201292659195622" />
+    <move id="silf.8599220535762256105" to="w7u6.1579201292659195624" />
+    <move id="silf.8599220535762278723" to="w7u6.1579201292659195650" />
+    <move id="silf.8599220535762255911" to="w7u6.1579201292659195591" />
+    <move id="silf.8599220535762256132" to="w7u6.1579201292659195683" />
+    <move id="silf.8599220535762256126" to="w7u6.1579201292659195681" />
+    <move id="silf.8599220535762256123" to="w7u6.1579201292659195682" />
+    <move id="silf.8599220535762255952" to="w7u6.1579201292659195605" />
+    <move id="silf.8599220535762255890" to="w7u6.1579201292659195582" />
+    <move id="silf.8599220535762255893" to="w7u6.1579201292659195583" />
+    <move id="silf.8599220535762278675" to="w7u6.1579201292659195666" />
+    <move id="silf.8599220535762255976" to="w7u6.1579201292659195611" />
+    <move id="silf.8599220535762256102" to="w7u6.1579201292659195621" />
+    <move id="silf.8599220535762255954" to="w7u6.1579201292659195607" />
+    <move id="silf.8599220535762255906" to="w7u6.1579201292659195586" />
+    <move id="silf.8599220535762255981" to="w7u6.1579201292659195613" />
+    <move id="silf.8599220535762255951" to="w7u6.1579201292659195604" />
+    <move id="silf.8599220535762255970" to="w7u6.1579201292659195596" />
+    <move id="silf.8599220535762278695" to="w7u6.1579201292659195659" />
+    <move id="silf.8599220535762255962" to="w7u6.1579201292659195619" />
+    <move id="silf.8599220535762255944" to="w7u6.1579201292659195597" />
+    <move id="silf.8599220535762278708" to="w7u6.1579201292659195643" />
+    <move id="silf.8599220535762278722" to="w7u6.1579201292659195651" />
+    <move id="silf.8599220535762256075" to="w7u6.1579201292659195685" />
+    <move id="silf.8599220535762265980" to="w7u6.1579201292659195687" />
+    <move id="silf.8599220535762256068" to="w7u6.1579201292659195673" />
+    <move id="silf.8599220535762255878" to="w7u6.1579201292659195576" />
+    <move id="silf.8599220535762255898" to="w7u6.1579201292659195584" />
+    <move id="silf.8599220535762256133" to="w7u6.1579201292659195692" />
+    <move id="silf.8599220535762278686" to="w7u6.1579201292659195639" />
+    <move id="silf.8599220535762255953" to="w7u6.1579201292659195606" />
+    <move id="silf.8599220535762256119" to="w7u6.1579201292659195697" />
+    <move id="silf.8599220535762255942" to="w7u6.1579201292659195594" />
+    <move id="silf.8599220535762278719" to="w7u6.1579201292659195647" />
+    <move id="silf.8599220535762255889" to="w7u6.1579201292659195581" />
+    <move id="silf.8599220535762278682" to="w7u6.1579201292659195635" />
+    <move id="silf.8599220535762255975" to="w7u6.1579201292659195610" />
+    <move id="silf.8599220535762278683" to="w7u6.1579201292659195636" />
+    <move id="silf.8599220535762256137" to="w7u6.1579201292659195693" />
+    <move id="silf.8599220535762255948" to="w7u6.1579201292659195601" />
+    <move id="silf.8599220535762256114" to="w7u6.1579201292659195696" />
+    <move id="silf.8599220535762255950" to="w7u6.1579201292659195603" />
+    <move id="silf.8599220535762255881" to="w7u6.1579201292659195577" />
+    <move id="silf.8599220535762278711" to="w7u6.1579201292659195656" />
+    <move id="silf.8599220535762278718" to="w7u6.1579201292659195657" />
+    <move id="silf.8599220535762256063" to="w7u6.1579201292659195670" />
+    <move id="silf.8599220535762278677" to="w7u6.1579201292659195667" />
+    <move id="silf.8599220535762255978" to="w7u6.1579201292659195616" />
+    <move id="silf.8599220535762256107" to="w7u6.1579201292659195626" />
+    <move id="silf.8599220535762255961" to="w7u6.1579201292659195620" />
+    <move id="silf.8599220535762278735" to="w7u6.1579201292659195644" />
+    <move id="silf.8599220535762256059" to="w7u6.1579201292659195669" />
+    <move id="silf.8599220535762265976" to="w7u6.1579201292659195678" />
+    <move id="silf.8599220535762255955" to="w7u6.1579201292659195608" />
+    <move id="silf.8599220535762255977" to="w7u6.1579201292659195615" />
+    <move id="silf.8599220535762278707" to="w7u6.1579201292659195642" />
+    <move id="silf.8599220535762255949" to="w7u6.1579201292659195602" />
+    <move id="silf.8599220535762256080" to="w7u6.1579201292659195686" />
+    <move id="silf.8599220535762256104" to="w7u6.1579201292659195623" />
+    <move id="silf.8599220535762255945" to="w7u6.1579201292659195598" />
+    <move id="silf.8599220535762278738" to="w7u6.1579201292659195645" />
+    <move id="silf.8599220535762255939" to="w7u6.1579201292659195699" />
+    <move id="silf.8599220535762255974" to="w7u6.1579201292659195609" />
+    <move id="silf.8599220535762278667" to="w7u6.1579201292659195634" />
+    <move id="silf.8599220535762255884" to="w7u6.1579201292659195580" />
+    <move id="silf.8599220535762255941" to="w7u6.1579201292659195593" />
+    <move id="silf.8599220535762255946" to="w7u6.1579201292659195599" />
+    <move id="silf.8599220535762256072" to="w7u6.1579201292659195676" />
+    <move id="silf.8599220535762278684" to="w7u6.1579201292659195637" />
+    <move id="silf.8599220535762255958" to="w7u6.1579201292659195617" />
+    <move id="silf.8599220535762256128" to="w7u6.1579201292659195680" />
+    <move id="silf.8599220535762255979" to="w7u6.1579201292659195612" />
+    <move id="silf.8599220535762278671" to="w7u6.1579201292659195664" />
+    <move id="silf.8599220535762255894" to="w7u6.1579201292659195578" />
+    <move id="silf.8599220535762255877" to="w7u6.1579201292659195575" />
+    <move id="silf.8599220535762256061" to="w7u6.1579201292659195675" />
+    <move id="silf.8599220535762255940" to="w7u6.1579201292659195592" />
+    <move id="silf.8599220535762255885" to="w7u6.1579201292659195579" />
+    <move id="silf.8599220535762278687" to="w7u6.1579201292659195638" />
+    <move id="silf.8599220535762265983" to="w7u6.1579201292659195688" />
+    <move id="silf.8599220535762278670" to="w7u6.1579201292659195665" />
+    <move id="silf.8599220535762256024" to="w7u6.1579201292659195631" />
+    <move id="silf.8599220535762278730" to="w7u6.1579201292659195648" />
+    <move id="silf.8599220535762256062" to="w7u6.1579201292659195671" />
+    <move id="silf.8599220535762278690" to="w7u6.1579201292659195640" />
+    <move id="silf.8599220535762255959" to="w7u6.1579201292659195618" />
+    <move id="silf.8599220535762256023" to="w7u6.1579201292659195632" />
+    <move id="silf.8599220535762256076" to="w7u6.1579201292659195684" />
+    <move id="silf.8599220535762278728" to="w7u6.1579201292659195649" />
+    <move id="silf.8599220535762265982" to="w7u6.1579201292659195690" />
+    <move id="silf.8599220535762255947" to="w7u6.1579201292659195600" />
+    <move id="silf.8599220535762256020" to="w7u6.1579201292659195629" />
+    <move id="silf.8599220535762256058" to="w7u6.1579201292659195668" />
+    <move id="silf.8599220535762278734" to="w7u6.1579201292659195653" />
+    <move id="silf.8599220535762278704" to="w7u6.1579201292659195662" />
+    <move id="silf.8599220535762255907" to="w7u6.1579201292659195587" />
+    <move id="silf.8599220535762256021" to="w7u6.1579201292659195630" />
+    <move id="silf.8599220535762278712" to="w7u6.1579201292659195655" />
+    <move id="silf.8599220535762255943" to="w7u6.1579201292659195595" />
+    <move id="silf.8599220535762278699" to="w7u6.1579201292659195661" />
+    <move id="silf.8599220535762255909" to="w7u6.1579201292659195589" />
+    <move id="silf.8599220535762278691" to="w7u6.1579201292659195641" />
+    <move id="silf.8599220535762256067" to="w7u6.1579201292659195672" />
+    <move id="silf.8599220535762256071" to="w7u6.1579201292659195674" />
+    <move id="silf.8599220535762256138" to="w7u6.1579201292659195694" />
+    <move id="silf.8599220535762256074" to="w7u6.1579201292659195691" />
+    <move id="silf.8599220535762256106" to="w7u6.1579201292659195625" />
+    <move id="silf.8599220535762256115" to="w7u6.1579201292659195695" />
+    <move id="silf.8599220535762265977" to="w7u6.1579201292659195677" />
+    <move id="silf.8599220535762278694" to="w7u6.1579201292659195660" />
+    <move id="silf.8599220535762256111" to="w7u6.1579201292659195628" />
+    <move id="silf.8599220535762256081" to="w7u6.1579201292659195679" />
+    <move id="silf.8599220535762278714" to="w7u6.1579201292659195654" />
+    <move id="silf.8599220535762255910" to="w7u6.1579201292659195590" />
+  </StructureModification>
+</history>
+
