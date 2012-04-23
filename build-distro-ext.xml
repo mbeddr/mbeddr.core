@@ -1,0 +1,32 @@
+<project name="com.mbeddr.core dsitribution" default="build-distro">
+	
+  <target name="build-distro">
+
+  
+ 	  <property name="path" value="distros/ext/"/>
+	  <mkdir dir="${path}"/>
+	  <delete includeemptydirs="true">
+          <fileset dir="${path}" includes="**/*"/>
+      </delete>
+      	  
+      <zip destfile="${path}/mbeddr.components-${version}.zip">
+          <zipfileset dir="code/languages/com.mbeddr.ext/languages/com.mbeddr.ext.components" 
+				prefix="mbeddr/ext/languages/com.mbeddr.ext.components"/>
+          <zipfileset dir="code/languages/com.mbeddr.ext/languages/com.mbeddr.ext.components.mock" 
+				prefix="mbeddr/ext/languages/com.mbeddr.ext.components.mock"/>
+          <zipfileset dir="code/languages/com.mbeddr.ext/languages/com.mbeddr.ext.components.gen_nomw" 
+				prefix="mbeddr/ext/languages/com.mbeddr.ext.components.gen_nomw"/>
+          <zipfileset dir="code/languages/com.mbeddr.ext/devkits/com.mbeddr.ext.components" 
+				prefix="mbeddr/ext/devkits/com.mbeddr.ext.components"/>
+	  </zip>
+
+      <zip destfile="${path}/mbeddr.statemachines-${version}.zip">
+          <zipfileset dir="code/languages/com.mbeddr.ext/languages/com.mbeddr.ext.statemachines" 
+				prefix="mbeddr/ext/languages/com.mbeddr.ext.statemachines"/>
+          <zipfileset dir="code/languages/com.mbeddr.ext/devkits/com.mbeddr.ext.statemachines" 
+				prefix="mbeddr/ext/devkits/com.mbeddr.ext.statemachines"/>
+	  </zip>	
+
+  </target>
+  
+</project>

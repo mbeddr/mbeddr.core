@@ -1,0 +1,1 @@
+ant -buildfile build-distro-ext.xml -DwebRoot=%2 -Dversion=%1 -lib tools/anthtmlbuilder/anthtmltask/bin/
