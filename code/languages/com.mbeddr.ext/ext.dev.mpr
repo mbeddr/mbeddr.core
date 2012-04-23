@@ -28,6 +28,7 @@
       <modulePath path="${project}/tests/test.ex.ext.exceptionhandling/exceptionhandling.msd" folder="tests.exhandling" />
       <modulePath path="${project}/tests/test.ex.ext.physicalunits.c/c.msd" folder="tests.units" />
       <modulePath path="${project}/tests/test.ex.ext.statemachine/statemachine.msd" folder="tests.sm" />
+      <modulePath path="${project}/tests/test.ts.ext.boundedNumbers/boundedNumbers.msd" folder="tests.units" />
       <modulePath path="${project}/tests/test.ts.ext.exceptionhandling/exceptionhandling.msd" folder="tests.exhandling" />
       <modulePath path="${project}/tests/test.ts.ext.physicalunits.c/c.msd" folder="tests.units" />
     </projectModules>

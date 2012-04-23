@@ -36,14 +36,6 @@
             <property name="value" nameId="mj1l.8860443239512128104" value="100" />
           </node>
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.AssignmentStatement" typeId="c4fa.6275792049641552210" id="4618139321488907610">
-          <node role="lvalue" roleId="c4fa.6275792049641552218" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="4618139321488907607">
-            <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="4618139321488882951" resolveInfo="speed" />
-          </node>
-          <node role="rvalue" roleId="c4fa.6275792049641552219" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="4618139321488909523">
-            <property name="value" nameId="mj1l.8860443239512128104" value="100" />
-          </node>
-        </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="4618139321488909524" />
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="4618139321488912477">
           <property name="name" nameId="tpck.1169194664001" value="s" />
@@ -80,30 +72,6 @@
           </node>
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="4618139321488914653" />
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="4618139321488914634">
-          <node role="expr" roleId="c4fa.7254843406768833939" type="x27k.FunctionCall" typeId="x27k.5950410542643524492" id="4618139321488914635">
-            <link role="function" roleId="x27k.5950410542643524493" targetNodeId="4618139321488914625" resolveInfo="aFunction" />
-            <node role="actuals" roleId="x27k.5950410542643524495" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="4618139321488914636">
-              <property name="value" nameId="mj1l.8860443239512128104" value="200" />
-            </node>
-          </node>
-        </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="4618139321488914638">
-          <node role="expr" roleId="c4fa.7254843406768833939" type="x27k.FunctionCall" typeId="x27k.5950410542643524492" id="4618139321488914639">
-            <link role="function" roleId="x27k.5950410542643524493" targetNodeId="4618139321488914625" resolveInfo="aFunction" />
-            <node role="actuals" roleId="x27k.5950410542643524495" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="4618139321488914640">
-              <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="4618139321488882951" resolveInfo="speed" />
-            </node>
-          </node>
-        </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="4618139321488914641">
-          <node role="expr" roleId="c4fa.7254843406768833939" type="x27k.FunctionCall" typeId="x27k.5950410542643524492" id="4618139321488914642">
-            <link role="function" roleId="x27k.5950410542643524493" targetNodeId="4618139321488914625" resolveInfo="aFunction" />
-            <node role="actuals" roleId="x27k.5950410542643524495" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="4618139321488914645">
-              <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="4618139321488912477" resolveInfo="s" />
-            </node>
-          </node>
-        </node>
       </node>
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="4618139321488914623">
