@@ -64,7 +64,7 @@
           <value>
             <Library>
               <option name="name" value="ext" />
-              <option name="path" value="${mbeddr.assembla.ext.home}/" />
+              <option name="path" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.ext" />
             </Library>
           </value>
         </entry>
