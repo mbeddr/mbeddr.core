@@ -3,7 +3,7 @@
   <persistence version="7" />
   <language namespace="d7a92d38-f7db-40d0-8431-763b0c3c9f20(jetbrains.mps.lang.intentions)" />
   <devkit namespace="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
-  <import index="clbe" modelUID="r:61d840b4-12c1-49ea-b142-b2a1550a9b15(com.mbeddr.core.udt.structure)" version="-1" />
+  <import index="clbe" modelUID="r:61d840b4-12c1-49ea-b142-b2a1550a9b15(com.mbeddr.core.udt.structure)" version="3" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="tp25" modelUID="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" version="-1" implicit="yes" />
   <import index="tp3j" modelUID="r:00000000-0000-4000-0000-011c89590353(jetbrains.mps.lang.intentions.structure)" version="8" implicit="yes" />
@@ -13,11 +13,11 @@
   <import index="tp2q" modelUID="r:00000000-0000-4000-0000-011c8959032e(jetbrains.mps.baseLanguage.collections.structure)" version="7" implicit="yes" />
   <roots>
     <node type="tp3j.IntentionDeclaration" typeId="tp3j.1192794744107" id="2558982571829174726">
-      <property name="name" nameId="tpck.1169194664001" value="convertDotToArrow" />
+      <property name="name" nameId="tpck.1169194664001" value="convertStructDotToArrow" />
       <link role="forConcept" roleId="tp3j.2522969319638198290" targetNodeId="clbe.6394819151180597804" resolveInfo="StructDotExpression" />
     </node>
     <node type="tp3j.IntentionDeclaration" typeId="tp3j.1192794744107" id="2558982571829183251">
-      <property name="name" nameId="tpck.1169194664001" value="convertArrowToDot" />
+      <property name="name" nameId="tpck.1169194664001" value="convertStructArrowToDot" />
       <link role="forConcept" roleId="tp3j.2522969319638198290" targetNodeId="clbe.6631303246402173901" resolveInfo="StructArrowExpression" />
     </node>
   </roots>

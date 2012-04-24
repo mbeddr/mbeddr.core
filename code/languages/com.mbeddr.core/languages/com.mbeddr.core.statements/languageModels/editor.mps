@@ -40,7 +40,6 @@
       <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="c4fa.7254843406768833938" resolveInfo="ExpressionStatement" />
     </node>
     <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="6275792049641552220">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="" />
       <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="c4fa.6275792049641552210" resolveInfo="AssignmentStatement" />
     </node>
     <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="6275792049641600986">
@@ -122,6 +121,11 @@
       <property name="virtualPackage" nameId="tpck.1193676396447" value="if" />
       <property name="name" nameId="tpck.1169194664001" value="deleteElse" />
       <link role="applicableConcept" roleId="tpc2.1139535219968" targetNodeId="c4fa.6275792049641600983" resolveInfo="IfStatement" />
+    </node>
+    <node type="tpc2.EditorComponentDeclaration" typeId="tpc2.1078938745671" id="605413736672002882">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="prefixes" />
+      <property name="name" nameId="tpck.1169194664001" value="IHasPrefixesComponent" />
+      <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="c4fa.605413736672002878" resolveInfo="IHasPrefixes" />
     </node>
   </roots>
   <root id="4185783222026475242">
@@ -1228,6 +1232,31 @@
                 </node>
               </node>
               <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_DeleteOperation" typeId="tp25.1140133623887" id="4459718605981902072" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </root>
+  <root id="605413736672002882">
+    <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="605413736672002884">
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_RefNodeList" typeId="tpc2.1073390211982" id="605413736672002887">
+        <property name="separatorText" nameId="tpc2.1140524450557" value=" " />
+        <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="c4fa.605413736672002881" />
+        <node role="cellLayout" roleId="tpc2.1140524464360" type="tpc2.CellLayout_Indent" typeId="tpc2.1237303669825" id="605413736672002888" />
+      </node>
+      <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Indent" typeId="tpc2.1237303669825" id="605413736672002886" />
+      <node role="renderingCondition" roleId="tpc2.1142887637401" type="tpc2.QueryFunction_NodeCondition" typeId="tpc2.1142886221719" id="605413736672002889">
+        <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="605413736672002890">
+          <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="605413736672084549">
+            <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="605413736672144443">
+              <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="605413736672094533">
+                <node role="operand" roleId="tpee.1197027771414" type="tpc2.ConceptFunctionParameter_node" typeId="tpc2.1142886811589" id="605413736672084550" />
+                <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkListAccess" typeId="tp25.1138056282393" id="605413736672144439">
+                  <link role="link" roleId="tp25.1138056546658" targetNodeId="c4fa.605413736672002881" />
+                </node>
+              </node>
+              <node role="operation" roleId="tpee.1197027833540" type="tp2q.IsNotEmptyOperation" typeId="tp2q.1176501494711" id="605413736672144448" />
             </node>
           </node>
         </node>

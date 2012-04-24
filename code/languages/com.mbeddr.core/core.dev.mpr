@@ -19,23 +19,29 @@
       <modulePath path="${project}/devkits/com.mbeddr.core/core.devkit" />
       <modulePath path="${project}/languages/com.mbeddr.core.arrays/arrays.mpl" folder="core" />
       <modulePath path="${project}/languages/com.mbeddr.core.base/base.mpl" folder="core" />
-      <modulePath path="${project}/languages/com.mbeddr.core.buildconfig/buildconfig.mpl" folder="core" />
+      <modulePath path="${project}/languages/com.mbeddr.core.buildconfig/buildconfig.mpl" folder="core-extended" />
+      <modulePath path="${project}/languages/com.mbeddr.core.cstubs/cstubs.mpl" folder="core" />
       <modulePath path="${project}/languages/com.mbeddr.core.debug.blext/blext.mpl" folder="core" />
       <modulePath path="${project}/languages/com.mbeddr.core.debug/debug.mpl" folder="core" />
+      <modulePath path="${project}/languages/com.mbeddr.core.embedded/embedded.mpl" folder="core-extended" />
       <modulePath path="${project}/languages/com.mbeddr.core.expressions/expressions.mpl" folder="core" />
+      <modulePath path="${project}/languages/com.mbeddr.core.legacy/legacy.mpl" folder="core" />
       <modulePath path="${project}/languages/com.mbeddr.core.make/make.mpl" folder="core" />
       <modulePath path="${project}/languages/com.mbeddr.core.modules.gen/gen.mpl" folder="core" />
       <modulePath path="${project}/languages/com.mbeddr.core.modules.runtime/include.msd" folder="core" />
       <modulePath path="${project}/languages/com.mbeddr.core.modules/modules.mpl" folder="core" />
       <modulePath path="${project}/languages/com.mbeddr.core.statements/statements.mpl" folder="core" />
       <modulePath path="${project}/languages/com.mbeddr.core.udt/udt.mpl" folder="core" />
-      <modulePath path="${project}/languages/com.mbeddr.core.unittest/unittest.mpl" folder="core" />
-      <modulePath path="${project}/languages/com.mbeddr.core.util/util.mpl" folder="core" />
+      <modulePath path="${project}/languages/com.mbeddr.core.unittest/unittest.mpl" folder="core-extended" />
+      <modulePath path="${project}/languages/com.mbeddr.core.util/util.mpl" folder="core-extended" />
       <modulePath path="${project}/solutions/com.mbeddr.core.statistics/statistics.msd" folder="core" />
       <modulePath path="${project}/tests/aLibrary/aLibrary.msd" folder="tests" />
+      <modulePath path="${project}/tests/test.cstub.testheader.expressions/expressions.msd" folder="tests" />
+      <modulePath path="${project}/tests/test.cstub.testheader/testheader.msd" folder="tests" />
       <modulePath path="${project}/tests/test.ex.core.libs/libs.msd" folder="tests" />
       <modulePath path="${project}/tests/test.ex.core/core.msd" folder="tests" />
       <modulePath path="${project}/tests/test.ex.errorreporting/errorreporting.msd" folder="tests" />
+      <modulePath path="${project}/tests/test.cstub.core/core.msd" folder="tests" />
       <modulePath path="${project}/tests/test.ts.core/core.msd" folder="tests" />
     </projectModules>
     <genConfs />
@@ -46,11 +52,35 @@
   <component name="ProjectLibraryManager">
     <option name="libraries">
       <map>
+        <entry key="cc">
+          <value>
+            <Library>
+              <option name="name" value="cc" />
+              <option name="path" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.cc" />
+            </Library>
+          </value>
+        </entry>
+        <entry key="ext">
+          <value>
+            <Library>
+              <option name="name" value="ext" />
+              <option name="path" value="${mbeddr.assembla.ext.home}/" />
+            </Library>
+          </value>
+        </entry>
         <entry key="mpsutil">
           <value>
             <Library>
               <option name="name" value="mpsutil" />
               <option name="path" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.mpsutil" />
+            </Library>
+          </value>
+        </entry>
+        <entry key="smartmeter">
+          <value>
+            <Library>
+              <option name="name" value="smartmeter" />
+              <option name="path" value="${smartmeter.git.root}/" />
             </Library>
           </value>
         </entry>

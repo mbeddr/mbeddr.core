@@ -38,7 +38,6 @@
       <link role="conceptDeclaration" roleId="2omo.1233670257997" targetNodeId="c4fa.7254843406768833938" resolveInfo="ExpressionStatement" />
     </node>
     <node type="2omo.ConceptTextGenDeclaration" typeId="2omo.1233670071145" id="6275792049641585885">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="" />
       <link role="conceptDeclaration" roleId="2omo.1233670257997" targetNodeId="c4fa.6275792049641552210" resolveInfo="AssignmentStatement" />
     </node>
     <node type="2omo.ConceptTextGenDeclaration" typeId="2omo.1233670071145" id="3830958861296583129">
