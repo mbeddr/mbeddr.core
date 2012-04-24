@@ -9,6 +9,7 @@
       <modulePath path="${project}/devkits/com.mbeddr.ext.components/components.devkit" />
       <modulePath path="${project}/devkits/com.mbeddr.ext.statemachines/statemachines.devkit" />
       <modulePath path="${project}/devkits/com.mbeddr.physicalunits/physicalunits.devkit" />
+      <modulePath path="${project}/languages/com.mbeddr.ext.boundedNumbers/boundedNumbers.mpl" folder="units" />
       <modulePath path="${project}/languages/com.mbeddr.ext.components.gen_nomw/gen_nomw.mpl" folder="components" />
       <modulePath path="${project}/languages/com.mbeddr.ext.components.mock/mock.mpl" folder="components" />
       <modulePath path="${project}/languages/com.mbeddr.ext.components.statemachine/sm_comp.mpl" folder="statemachine" />
@@ -21,11 +22,13 @@
       <modulePath path="${project}/lib/com.mbeddr.ext.components.mock.lib/lib.msd" folder="components" />
       <modulePath path="${project}/lib/com.mbeddr.ext.exceptionhandling.lib/lib.msd" folder="exceptionhandling" />
       <modulePath path="${project}/solutions/com.mbeddr.ext.statistics/statistics.msd" folder="" />
+      <modulePath path="${project}/tests/test.ex.ext.boundedNumbers/boundedNumbers.msd" folder="tests.units" />
       <modulePath path="${project}/tests/test.ex.ext.comp_mocking/comp_mocking.msd" folder="tests.comp" />
       <modulePath path="${project}/tests/test.ex.ext.components/components.msd" folder="tests.comp" />
       <modulePath path="${project}/tests/test.ex.ext.exceptionhandling/exceptionhandling.msd" folder="tests.exhandling" />
       <modulePath path="${project}/tests/test.ex.ext.physicalunits.c/c.msd" folder="tests.units" />
       <modulePath path="${project}/tests/test.ex.ext.statemachine/statemachine.msd" folder="tests.sm" />
+      <modulePath path="${project}/tests/test.ts.ext.boundedNumbers/boundedNumbers.msd" folder="tests.units" />
       <modulePath path="${project}/tests/test.ts.ext.exceptionhandling/exceptionhandling.msd" folder="tests.exhandling" />
       <modulePath path="${project}/tests/test.ts.ext.physicalunits.c/c.msd" folder="tests.units" />
     </projectModules>
