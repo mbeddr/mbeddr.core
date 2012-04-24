@@ -71,7 +71,27 @@
             <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="4618139321488882951" resolveInfo="speed" />
           </node>
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="4618139321488914653" />
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="5131768942630345432" />
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="5131768942630345950" />
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="5131768942630346888">
+          <property name="name" nameId="tpck.1169194664001" value="aBigInt" />
+          <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int32tType" typeId="mj1l.8463282783691618440" id="5131768942630355921" />
+          <node role="init" roleId="c4fa.4185783222026502647" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="5131768942630346891">
+            <property name="value" nameId="mj1l.8860443239512128104" value="125" />
+          </node>
+        </node>
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="5131768942630345434">
+          <node role="expr" roleId="c4fa.7254843406768833939" type="x27k.FunctionCall" typeId="x27k.5950410542643524492" id="5131768942630345435">
+            <link role="function" roleId="x27k.5950410542643524493" targetNodeId="4618139321488914625" resolveInfo="aFunction" />
+            <node role="actuals" roleId="x27k.5950410542643524495" type="4qyp.BoundsGuaranteeExpression" typeId="4qyp.5131768942630350847" id="5131768942630355924">
+              <property name="min" nameId="4qyp.5131768942630350849" value="0" />
+              <property name="max" nameId="4qyp.5131768942630350850" value="100" />
+              <node role="expr" roleId="4qyp.5131768942630350848" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="5131768942630346892">
+                <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="5131768942630346888" resolveInfo="aBigInt" />
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="4618139321488914623">
