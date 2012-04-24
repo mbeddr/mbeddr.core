@@ -104,7 +104,7 @@
       <link role="module" roleId="75wo.439567521322965025" targetNodeId="8745401669463114528" resolveInfo="HighLevelRequirements" />
     </node>
     <node role="requirements" roleId="75wo.8745401669462963171" type="75wo.Requirement" typeId="75wo.8745401669462952101" id="1165432222362134391">
-      <property name="open" nameId="75wo.1165432222361744926" value="false" />
+      <property name="open" nameId="75wo.1165432222361744926" value="true" />
       <property name="name" nameId="tpck.1169194664001" value="Specialized" />
       <property name="summmary" nameId="75wo.3402431285977818823" value="Specializes this other one" />
       <property name="proseText" nameId="75wo.8745401669463252438" value="This is the text." />
