@@ -1,6 +1,6 @@
 //nvmmemberLayoutSpec2
 union { //nvmmember1
-	unsigned char v0;	
+	unsigned char v0_1;	
 	struct { //nvmmember2
 		char v1_1;
 		int v1_2;
@@ -16,8 +16,8 @@ union { //nvmmember1
 		   	unsigned int v2_2b;
 	  	};	
 	};
-	unsigned long v1;
-}; 
+	unsigned long v0_2;
+}; //test that a filefilter removes compiler commands  
 
 //nvmmemberLayoutSpec2
 union { //nvmmember1
@@ -38,4 +38,4 @@ union { //nvmmember1
 	  	};	
 	};
 	unsigned long v1;
-};
+} @ address; 
