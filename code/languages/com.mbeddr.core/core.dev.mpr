@@ -36,12 +36,12 @@
       <modulePath path="${project}/languages/com.mbeddr.core.util/util.mpl" folder="core-extended" />
       <modulePath path="${project}/solutions/com.mbeddr.core.statistics/statistics.msd" folder="core" />
       <modulePath path="${project}/tests/aLibrary/aLibrary.msd" folder="tests" />
+      <modulePath path="${project}/tests/test.cstub.core/core.msd" folder="tests" />
       <modulePath path="${project}/tests/test.cstub.testheader.expressions/expressions.msd" folder="tests" />
       <modulePath path="${project}/tests/test.cstub.testheader/testheader.msd" folder="tests" />
       <modulePath path="${project}/tests/test.ex.core.libs/libs.msd" folder="tests" />
       <modulePath path="${project}/tests/test.ex.core/core.msd" folder="tests" />
       <modulePath path="${project}/tests/test.ex.errorreporting/errorreporting.msd" folder="tests" />
-      <modulePath path="${project}/tests/test.cstub.core/core.msd" folder="tests" />
       <modulePath path="${project}/tests/test.ts.core/core.msd" folder="tests" />
     </projectModules>
     <genConfs />
