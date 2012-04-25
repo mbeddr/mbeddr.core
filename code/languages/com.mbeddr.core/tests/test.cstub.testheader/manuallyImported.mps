@@ -12,11 +12,14 @@
     </node>
   </roots>
   <root id="3029574721709407579">
-    <node role="defines" roleId="punb.7097640331099443690" type="punb.Define" typeId="punb.7097640331099443679" id="3029574721709407580">
-      <property name="name" nameId="tpck.1169194664001" value="DEF1" />
+    <node role="regExFilters" roleId="punb.6068664427596389837" type="punb.Mapping" typeId="punb.6068664427596388055" id="6068664427596419326">
+      <property name="name" nameId="tpck.1169194664001" value="@ (\\w)*" />
     </node>
-    <node role="defines" roleId="punb.7097640331099443690" type="punb.Define" typeId="punb.7097640331099443679" id="3029574721709407581">
-      <property name="name" nameId="tpck.1169194664001" value="DEF2" />
+    <node role="filters" roleId="punb.6068664427596389836" type="punb.Mapping" typeId="punb.6068664427596388055" id="6068664427596393206">
+      <property name="name" nameId="tpck.1169194664001" value="@ address" />
+    </node>
+    <node role="defines" roleId="punb.7097640331099443690" type="punb.Define" typeId="punb.7097640331099443679" id="3029574721709407580">
+      <property name="name" nameId="tpck.1169194664001" value="TESTDEFINESYMBOL" />
     </node>
   </root>
 </model>
