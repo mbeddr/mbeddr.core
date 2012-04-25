@@ -101,6 +101,7 @@ IFunctionLike -> Runnable [ dir=back weight=3.0 style=dashed arrowtail = "empty"
 IRealStackFrameContributor -> Runnable [ dir=back weight=3.0 style=dashed arrowtail = "empty" ]
 ISteppableContext -> Runnable [ dir=back weight=3.0 style=dashed arrowtail = "empty" ]
 IWatchablesProviderContext -> Runnable [ dir=back weight=3.0 style=dashed arrowtail = "empty" ]
+IWatchablesProvider -> Runnable [ dir=back weight=3.0 style=dashed arrowtail = "empty" ]
 IVisibleElementProvider -> AtomicComponent [ dir=back weight=3.0 style=dashed arrowtail = "empty" ]
 ISteppableUnit -> AtomicComponent [ dir=back weight=3.0 style=dashed arrowtail = "empty" ]
 IWatchablesProviderContext -> AtomicComponent [ dir=back weight=3.0 style=dashed arrowtail = "empty" ]
