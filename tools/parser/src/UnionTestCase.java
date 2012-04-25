@@ -33,8 +33,8 @@ import org.eclipse.core.runtime.CoreException;
 public class UnionTestCase extends TestCase {
 
 	public void testBasicTest2() throws CoreException {
-		String includeDir = "$mbeddr.github.core.home$/code/languages/com.mbeddr.core/tests/test.cstub.testheader/headers"; 
-		Pattern p = Pattern.compile("\\$(\\.)*\\$"); 
+		String includeDir = "$(mbeddr.github.core.home)/code/languages/com.mbeddr.core/tests/test.cstub.testheader/headers"; 
+		Pattern p = Pattern.compile("\\$\\((\\w|\\.)*\\)"); 
 		Matcher m = p.matcher(includeDir); 
 		while (m.find()) { 
 			String match = m.group(); 

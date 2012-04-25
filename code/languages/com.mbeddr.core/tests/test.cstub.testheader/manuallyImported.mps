@@ -8,7 +8,7 @@
   <import index="punb" modelUID="r:401d5aa1-f59d-49c0-833e-cf94fb548e92(com.mbeddr.core.cstubs.structure)" version="-1" implicit="yes" />
   <roots>
     <node type="punb.HeaderImportSpec" typeId="punb.7097640331099443677" id="3029574721709407579">
-      <property name="includeDir" nameId="punb.7097640331099443678" value="$mbeddr.github.core.home$/code/languages/com.mbeddr.core/tests/test.cstub.testheader/headers" />
+      <property name="includeDir" nameId="punb.7097640331099443678" value="$(mbeddr.github.core.home)/code/languages/com.mbeddr.core/tests/test.cstub.testheader/headers" />
     </node>
   </roots>
   <root id="3029574721709407579">

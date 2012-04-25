@@ -38,4 +38,4 @@ union { //nvmmember1
 	  	};	
 	};
 	unsigned long v1;
-} @ address; 
+}; 
