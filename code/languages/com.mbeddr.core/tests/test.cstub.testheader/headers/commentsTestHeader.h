@@ -1,5 +1,10 @@
-//Some Comment
-
+//Some comment
+#define d d
 /*
-also a comment
+A
+B
 */
+		
+int a;
+//D
+int b;
