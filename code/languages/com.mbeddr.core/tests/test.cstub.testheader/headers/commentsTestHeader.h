@@ -3,8 +3,10 @@
 /*
 A
 B
-*/
-		
+*/	
 int a;
 //D
-int b;
+int b; //D1
+int c; //D2 
+//E
+//F
