@@ -1,0 +1,191 @@
+\section{Physical Units}
+
+\noindent Physical Units are new types that, in
+addition to specifying their actual data type, also specify a physical unit (see
+\fig{unitsexample}). New literals are introduced to support specifying
+values for these types that include the physical unit. The typing rules for the
+existing operators (\ic{+}, \ic{*} or \ic{>}) are overridden to perform the
+correct type checks for types with units. The type system also performs unit
+computations to, for example, handle an \ic{speed = length/time} correctly.
+
+
+\begin{figure}[h]
+\begin{center} 
+\includegraphics[width=110mm]{figures/ext/units.png}
+\end{center} 
+\vspace{-2mm}
+\caption{The \emph{units} extension comes with the sevel SI units predefined and
+lets users define arbitrary derived units (such as the \ic{mps} in the example).
+It is also possible to defined convertible units that require a numeric
+conversion factor to get back to SI units. Type checks ensure that the values
+associated with unit literals use the correct unit and perform unit computations
+(as in speed equals length divided by time). Errors are recorded if
+incompatible are used together (e.g. if we were to add length and time). To
+support this feature, the typing rules for the existing operators (such as
+\ic{+} or \ic{/}) have to be overridden.} 
+\label{unitsexample}
+\end{figure}
+
+\noindent To use physical units use the \ic{com.mbeddr.physicalunits} devkit in
+your model.
+
+
+\subsection{Basic SI Units in C programs}
+
+Once the devkit is included, types can be annotated with physical units. We have
+defined the seven SI units in mbeddr:
+
+\begin{code}
+int8_t/m/ length; 
+int8_t/s/ time; 
+\end{code}
+
+\noindent It is also possible to define composite units. To add additional
+components press enter after the first one (the \ic{m} in the example below):
+
+\begin{code}
+          -1
+int8_t/m s  / speed; 
+\end{code}
+
+\noindent To change the exponent, use intentions on the unit. Types with units
+can also be \ic{typedef}'ed to make using them more convenient:
+
+\begin{code}
+                  -1
+typedef int8_t/m s  / as speed_t; 
+\end{code}
+
+\noindent If you want to assign a value to the variable, you have to use
+literals with units, otherwise you will get compile errors:
+
+\begin{code} 
+int8_t/m/ length = 3 m; 
+\end{code}
+
+\noindent Note that units are computed correctly:
+
+\begin{code}
+speed_t aSpeed = 10 m / 5 s;
+speed_t anotherSpeed = 10 m + 5 s; // error; adding apples and oranges 
+\end{code}
+
+\noindent Of course, the type system is fully aware of the types and ``pulls
+them through'':
+
+\begin{code}
+int8_t/m/ someLength;
+int8_t/m/ result = 10 m + someLength;
+\end{code}
+
+\noindent To get values ``into'' and out of the units world, you can use the
+\ic{stripunit} and \ic{introduceunit} expressions:
+
+\begin{code}
+int8_t/m/ someLength = 10 m;
+int8_t justSomeValue = stripunit[someLength];
+int8_t/m/ someLength = introduceunit[justSomeValue -> m];
+\end{code}
+
+
+\subsection{Derived Units}
+
+\noindent A derived unit is one that combines several SI units. For example, $N
+= kg \frac{m}{s^{2}}$ or $mps = \frac{m}{s}$. Such derived units can be defined with
+the units extension as well.
+
+To define derived units, create a \ic{UnitContainer} in your model. There you
+can define derived units (\fig{unitcontainer}).
+
+\begin{figure}[h]
+\begin{center} 
+\includegraphics[width=70mm]{figures/ext/unitcontainer.png}
+\end{center} 
+\vspace{-2mm}
+\caption{Derived units are combinations of other units.} 
+\label{unitcontainer}
+\end{figure}
+
+Unit computations in C programs work as expected; compatibility is checked by
+reducing both to-be-compared units to their SI base units.
+
+
+\subsection{Convertible Units}
+
+The derived units discussed in the previous section are still within the SI
+system and require no value conversions. For convertible units, this is
+different. They can be declared in the unit container as well; but they need
+conversion rules to be usable (\fig{convertible}).
+
+
+\begin{figure}[h]
+\begin{center} 
+\includegraphics[width=70mm]{figures/ext/convertible.png}
+\end{center} 
+\vspace{-2mm}
+\caption{Convertible units require the definition of conversion rules.} 
+\label{convertible}
+\end{figure}
+
+\noindent Typically, a convertible unit is a non-SI unit, and the conversion
+rules map it back to the SI world. Notice how in the conversion rule the \ic{val} keyword
+represents the value in the original unit. 
+
+Conversions in the C programs do not happen automatically, since such a
+conversion produced runtime overhead. Instead, an explicit conversion has to be
+used which relies on the conversion rule defined in the units container. A
+conversion can be added with an intention.
+
+\begin{code}
+int8_t/F/ tempInF = 10 F; 
+int8_t/C/ tempInC = [tempInF -> C]; 
+\end{code}
+
+
+\subsection{Extension with new Units}
+
+The units extension can also be ``misused'' to work with other type annotations
+such as money, time or coordinate systems. To achieve this, you have to define
+new elementary unit declarations in a languge extension. Here is some example
+code with coordinate systems:
+
+\begin{code}
+int8_t/#global/ aGlobalVariable = 10#global; 
+int8_t/K/ aTemp = aGlobalVariable; // error; #global != K 
+aGlobalVariable = 10K; // error; #global != K 
+aGlobalVariable = 230#local; // error; #global != #local 
+\end{code}
+
+\noindent In the example above, \ic{\#global} and \ic{\#local} are two different
+coordinate systems; technically, both are subtypes of \ic{ElementaryUnitDeclaration}:
+
+\begin{code}
+concept GlobalCoords extends ElementaryUnitDeclaration
+                     implements <none>                
+  concept properties:                                 
+    alias = #global                                     
+\end{code}
+
+\noindent Even though these are not technically \emph{convertible} units, we can
+still define conversion rules:
+
+\begin{code}
+Conversion Rules 
+  conversion #global -> #local = val + 20 
+  conversion #local -> #global = val - 20 
+\end{code}
+
+\noindent The C code can then use conversions as shown above:
+
+\begin{code}
+int8_t/#local/ aLocalVariable = 20#local; 
+aGlobalVariable = [aLocalVariable -> #global]; 
+\end{code}
+
+\noindent The coordinate systems extension is especially useful if combined with a
+new type and literal, for example, for vectors:
+
+\begin{code}
+intvec/#global/ globalVector = (10,20)#global; 
+intvec/#local/ localVector = (20,20)#global; 
+\end{code} 
