@@ -37,6 +37,7 @@
 	  </zip>
 	  
 	  <copy file="documentation/userguide/mbeddr-userguide.pdf" tofile="${path}/mbeddr-userguide.pdf"/>
+	  <copy file="documentation/extensionguide/mbeddr-extensionguide.pdf" tofile="${path}/mbeddr-extensionguide.pdf"/>
 
   </target>
   
