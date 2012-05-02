@@ -28,8 +28,8 @@
           <zipfileset dir="code/languages/com.mbeddr.ext/languages" prefix="${prefix.ext}/languages"/>
           <zipfileset dir="code/languages/com.mbeddr.ext/devkits" prefix="${prefix.ext}/devkits"/>
 
-          <zipfileset dir="documentation/userguide/mbeddr-userguide.pdf" prefix="${prefix.docs}"/>
-          <zipfileset dir="documentation/extensionguide/mbeddr-extensionguide.pdf" prefix="${prefix.docs}"/>          
+          <zipfileset dir="documentation/userguide" includes="mbeddr-userguide.pdf" prefix="${prefix.docs}"/>
+          <zipfileset dir="documentation/extensionguide" includes="mbeddr-extensionguide.pdf" prefix="${prefix.docs}"/>          
           
           <!-- LICENSE -->
 		  <zipfileset dir="." includes="license.html"/> 
