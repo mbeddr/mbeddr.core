@@ -1,6 +1,7 @@
 <project name="com.mbeddr.ext distribution" default="build-distro">
  
   <property name="prefix.ext" value="mbeddr/code/languages/com.mbeddr.ext"/>
+  <property name="prefix.docs" value="mbeddr/doc"/>
 	
   <target name="build-distro">
 
@@ -20,12 +21,15 @@
 	  </zip>
 	  
 	  
-	   <zip destfile="${path}/mbeddr.all-in-one-${version}.zip">
+	   <zip destfile="${path}/mbeddr.all-in-one-${version}.zip" duplicate="preserve">
 	      <!-- CORE -->
 	      <zipfileset dir="MbeddrCore" prefix=""/>
 	  	  <!-- EXT -->
           <zipfileset dir="code/languages/com.mbeddr.ext/languages" prefix="${prefix.ext}/languages"/>
           <zipfileset dir="code/languages/com.mbeddr.ext/devkits" prefix="${prefix.ext}/devkits"/>
+
+          <zipfileset dir="documentation/userguide/mbeddr-userguide.pdf" prefix="${prefix.docs}"/>
+          <zipfileset dir="documentation/extensionguide/mbeddr-extensionguide.pdf" prefix="${prefix.docs}"/>          
           
           <!-- LICENSE -->
 		  <zipfileset dir="." includes="license.html"/> 
