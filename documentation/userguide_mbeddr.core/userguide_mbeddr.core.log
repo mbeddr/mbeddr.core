@@ -1,11 +1,11 @@
-This is pdfTeX, Version 3.1415926-1.40.11 (MiKTeX 2.9) (preloaded format=pdflatex 2012.4.6)  9 APR 2012 13:43
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2011.9.17)  2 MAY 2012 14:36
 entering extended mode
 **userguide_mbeddr.core.tex
 
-(L:\lwes-assembla\mbeddr.core\documentation\userguide_mbeddr.core\userguide_mbe
-ddr.core.tex
-LaTeX2e <2009/09/24>
-Babel <v3.8l> and hyphenation patterns for english, afrikaans, ancientgreek, ar
+(C:\Users\dpavleti\mbeddr.core\documentation\userguide_mbeddr.core\userguide_mb
+eddr.core.tex
+LaTeX2e <2011/06/27>
+Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
 abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
 croatian, czech, danish, dutch, esperanto, estonian, farsi, finnish, french, ga
 lician, german, german-x-2009-06-19, greek, gujarati, hindi, hungarian, iceland
@@ -15,12 +15,12 @@ an, ngerman-x-2009-06-19, nynorsk, oriya, panjabi, pinyin, polish, portuguese,
 romanian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, swis
 sgerman, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, u
 senglishmax, welsh, loaded.
-(L:\lwes-assembla\mbeddr.core\documentation\userguide_mbeddr.core\llncs.cls
+(C:\Users\dpavleti\mbeddr.core\documentation\userguide_mbeddr.core\llncs.cls
 Document Class: llncs 2010/07/12 v2.17 
  LaTeX document class for Lecture Notes in Computer Science
-(C:\data\javadev\commonTools\miktex-2.9\tex\latex\base\article.cls
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\article.cls"
 Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
-(C:\data\javadev\commonTools\miktex-2.9\tex\latex\base\size10.clo
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\size10.clo"
 File: size10.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
@@ -35,8 +35,8 @@ File: size10.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
 )
-(C:\data\javadev\commonTools\miktex-2.9\tex\latex\tools\multicol.sty
-Package: multicol 2008/12/05 v1.6h multicolumn formatting (FMi)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tools\multicol.sty"
+Package: multicol 2011/06/27 v1.7a multicolumn formatting (FMi)
 \c@tracingmulticols=\count87
 \mult@box=\box26
 \multicol@leftmargin=\dimen103
@@ -81,12 +81,13 @@ Package: multicol 2008/12/05 v1.6h multicolumn formatting (FMi)
 \multicolundershoot=\dimen110
 \mult@nat@firstbox=\box50
 \colbreak@box=\box51
+\multicol@sort@counter=\count95
 )
-(C:\data\javadev\commonTools\miktex-2.9\tex\latex\oberdiek\aliascnt.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\oberdiek\aliascnt.sty"
 Package: aliascnt 2009/09/08 v1.3 Alias counter (HO)
 
-(C:\data\javadev\commonTools\miktex-2.9\tex\latex\carlisle\remreset.sty))
-\c@chapter=\count95
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\carlisle\remreset.sty"))
+\c@chapter=\count96
 LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 362.
 LaTeX Font Info:    Redeclaring math symbol \Delta on input line 363.
 LaTeX Font Info:    Redeclaring math symbol \Theta on input line 364.
@@ -108,11 +109,11 @@ LaTeX Font Info:    Redeclaring math symbol \Omega on input line 372.
 \tocparanum=\dimen118
 \tocparatotal=\dimen119
 \tocsubparanum=\dimen120
-\@tempcntc=\count96
+\@tempcntc=\count97
 \fnindent=\dimen121
-\c@@inst=\count97
-\c@@auth=\count98
-\c@auco=\count99
+\c@@inst=\count98
+\c@@auth=\count99
+\c@auco=\count100
 \instindent=\dimen122
 \authrun=\box52
 \authorrunning=\toks14
@@ -120,27 +121,27 @@ LaTeX Font Info:    Redeclaring math symbol \Omega on input line 372.
 \titrun=\box53
 \titlerunning=\toks16
 \toctitle=\toks17
-\c@theorem=\count100
-\c@case=\count101
-\c@conjecture=\count102
-\c@corollary=\count103
-\c@definition=\count104
-\c@example=\count105
-\c@exercise=\count106
-\c@lemma=\count107
-\c@note=\count108
-\c@problem=\count109
-\c@property=\count110
-\c@proposition=\count111
-\c@question=\count112
-\c@solution=\count113
-\c@remark=\count114
+\c@theorem=\count101
+\c@case=\count102
+\c@conjecture=\count103
+\c@corollary=\count104
+\c@definition=\count105
+\c@example=\count106
+\c@exercise=\count107
+\c@lemma=\count108
+\c@note=\count109
+\c@problem=\count110
+\c@property=\count111
+\c@proposition=\count112
+\c@question=\count113
+\c@solution=\count114
+\c@remark=\count115
 \headlineindent=\dimen123
 )
-(C:\data\javadev\commonTools\miktex-2.9\tex\latex\amsfonts\amssymb.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\amssymb.sty"
 Package: amssymb 2009/06/22 v3.00
 
-(C:\data\javadev\commonTools\miktex-2.9\tex\latex\amsfonts\amsfonts.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\amsfonts.sty"
 Package: amsfonts 2009/06/22 v3.00 Basic AMSFonts support
 \@emptytoks=\toks18
 \symAMSa=\mathgroup4
@@ -148,7 +149,7 @@ Package: amsfonts 2009/06/22 v3.00 Basic AMSFonts support
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 96.
 ))
-(C:\Users\Markus\AppData\Roaming\MiKTeX\2.9\tex\latex\soul\soul.sty
+(C:\Users\dpavleti\AppData\Roaming\MiKTeX\2.9\tex\latex\soul\soul.sty
 Package: soul 2003/11/17 v2.4 letterspacing/underlining (mf)
 \SOUL@word=\toks19
 \SOUL@lasttoken=\toks20
@@ -160,44 +161,51 @@ Package: soul 2003/11/17 v2.4 letterspacing/underlining (mf)
 \SOUL@uldp=\dimen125
 \SOUL@ulht=\dimen126
 )
-(C:\data\javadev\commonTools\miktex-2.9\tex\latex\graphics\graphicx.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
 Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
 
-(C:\data\javadev\commonTools\miktex-2.9\tex\latex\graphics\keyval.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
 Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
 \KV@toks@=\toks24
 )
-(C:\data\javadev\commonTools\miktex-2.9\tex\latex\graphics\graphics.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
 Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
 
-(C:\data\javadev\commonTools\miktex-2.9\tex\latex\graphics\trig.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\trig.sty"
 Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
 )
-(C:\data\javadev\commonTools\miktex-2.9\tex\latex\00miktex\graphics.cfg
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\graphics.cfg"
 File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
 )
 Package graphics Info: Driver file: pdftex.def on input line 91.
 
-(C:\data\javadev\commonTools\miktex-2.9\tex\latex\pdftex-def\pdftex.def
-File: pdftex.def 2010/09/14 v0.05b Graphics/color for pdfTeX
-\Gread@gobject=\count115
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\pdftex-def\pdftex.def"
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty"
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/message (HO)
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
+Package: ltxcmds 2011/04/18 v1.20 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count116
 ))
 \Gin@req@height=\dimen127
 \Gin@req@width=\dimen128
 )
-(C:\data\javadev\commonTools\miktex-2.9\tex\latex\base\inputenc.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\inputenc.sty"
 Package: inputenc 2008/03/30 v1.1d Input encoding file
 \inpenc@prehook=\toks25
 \inpenc@posthook=\toks26
 
-(C:\data\javadev\commonTools\miktex-2.9\tex\latex\base\utf8.def
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\utf8.def"
 File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
 Now handling font encoding OML ...
 ... no UTF-8 mapping file for font encoding OML
 Now handling font encoding T1 ...
 ... processing UTF-8 mapping file for font encoding T1
 
-(C:\data\javadev\commonTools\miktex-2.9\tex\latex\base\t1enc.dfu
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\t1enc.dfu"
 File: t1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
    defining Unicode char U+00A1 (decimal 161)
    defining Unicode char U+00A3 (decimal 163)
@@ -347,7 +355,7 @@ File: t1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
 Now handling font encoding OT1 ...
 ... processing UTF-8 mapping file for font encoding OT1
 
-(C:\data\javadev\commonTools\miktex-2.9\tex\latex\base\ot1enc.dfu
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\ot1enc.dfu"
 File: ot1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
    defining Unicode char U+00A1 (decimal 161)
    defining Unicode char U+00A3 (decimal 163)
@@ -378,7 +386,7 @@ File: ot1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
 Now handling font encoding OMS ...
 ... processing UTF-8 mapping file for font encoding OMS
 
-(C:\data\javadev\commonTools\miktex-2.9\tex\latex\base\omsenc.dfu
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\omsenc.dfu"
 File: omsenc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
    defining Unicode char U+00A7 (decimal 167)
    defining Unicode char U+00B6 (decimal 182)
@@ -402,48 +410,48 @@ Now handling font encoding U ...
    defining Unicode char U+2122 (decimal 8482)
    defining Unicode char U+2423 (decimal 9251)
 ))
-(C:\Users\Markus\AppData\Roaming\MiKTeX\2.9\tex\latex\comment\comment.sty
+(C:\Users\dpavleti\AppData\Roaming\MiKTeX\2.9\tex\latex\comment\comment.sty
 \CommentStream=\write3
 
 Excluding comment 'comment')
-(C:\Users\Markus\AppData\Roaming\MiKTeX\2.9\tex\latex\wrapfig\wrapfig.sty
+(C:\Users\dpavleti\AppData\Roaming\MiKTeX\2.9\tex\latex\wrapfig\wrapfig.sty
 \wrapoverhang=\dimen129
 \WF@size=\dimen130
-\c@WF@wrappedlines=\count116
+\c@WF@wrappedlines=\count117
 \WF@box=\box54
 \WF@everypar=\toks27
 Package: wrapfig 2003/01/31  v 3.6
 )
-(C:\data\javadev\commonTools\miktex-2.9\tex\latex\graphics\color.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\color.sty"
 Package: color 2005/11/14 v1.0j Standard LaTeX Color (DPC)
 
-(C:\data\javadev\commonTools\miktex-2.9\tex\latex\00miktex\color.cfg
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\color.cfg"
 File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
 Package color Info: Driver file: pdftex.def on input line 130.
 )
-(C:\data\javadev\commonTools\miktex-2.9\tex\latex\base\fontenc.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\fontenc.sty"
 Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
 
-(C:\data\javadev\commonTools\miktex-2.9\tex\latex\base\t1enc.def
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\t1enc.def"
 File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
 LaTeX Font Info:    Redeclaring font encoding T1 on input line 43.
 ))
-(L:\lwes-assembla\mbeddr.core\documentation\userguide_mbeddr.core\framed.sty
+(C:\Users\dpavleti\mbeddr.core\documentation\userguide_mbeddr.core\framed.sty
 Package: framed 2007/10/04 v 0.95: framed or shaded text with page breaks
 \fb@frw=\dimen131
 \fb@frh=\dimen132
 \FrameRule=\dimen133
 \FrameSep=\dimen134
 )
-(C:\data\javadev\commonTools\miktex-2.9\tex\latex\tools\verbatim.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tools\verbatim.sty"
 Package: verbatim 2003/08/22 v1.5q LaTeX2e package for verbatim enhancements
 \every@verbatim=\toks28
 \verbatim@line=\toks29
 \verbatim@in@stream=\read1
 )
-(L:\lwes-assembla\mbeddr.core\documentation\userguide_mbeddr.core\userguide_mbe
-ddr.core.aux)
+(C:\Users\dpavleti\mbeddr.core\documentation\userguide_mbeddr.core\userguide_mb
+eddr.core.aux)
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 63.
 LaTeX Font Info:    ... okay on input line 63.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 63.
@@ -457,45 +465,48 @@ LaTeX Font Info:    ... okay on input line 63.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 63.
 LaTeX Font Info:    ... okay on input line 63.
 
-(C:\Users\Markus\AppData\Roaming\MiKTeX\2.9\tex\context\base\supp-pdf.mkii
+(C:\Users\dpavleti\AppData\Roaming\MiKTeX\2.9\tex\context\base\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count117
+\scratchcounter=\count118
 \scratchdimen=\dimen135
 \scratchbox=\box55
-\nofMPsegments=\count118
-\nofMParguments=\count119
+\nofMPsegments=\count119
+\nofMParguments=\count120
 \everyMPshowfont=\toks30
-\MPscratchCnt=\count120
+\MPscratchCnt=\count121
 \MPscratchDim=\dimen136
-\MPnumerator=\count121
+\MPnumerator=\count122
+\makeMPintoPDFobject=\count123
 \everyMPtoPDFconversion=\toks31
 )
 LaTeX Font Info:    Try loading font information for U+msa on input line 65.
- (C:\data\javadev\commonTools\miktex-2.9\tex\latex\amsfonts\umsa.fd
+ ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2009/06/22 v3.00 AMS symbols A
 )
 LaTeX Font Info:    Try loading font information for U+msb on input line 65.
 
-(C:\data\javadev\commonTools\miktex-2.9\tex\latex\amsfonts\umsb.fd
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2009/06/22 v3.00 AMS symbols B
 )
-(L:\lwes-assembla\mbeddr.core\documentation\userguide_mbeddr.core\abstract.ltx)
-(L:\lwes-assembla\mbeddr.core\documentation\userguide_mbeddr.core\body.ltx
-(L:\lwes-assembla\mbeddr.core\documentation\userguide_mbeddr.core\1-intro.ltx
+(C:\Users\dpavleti\mbeddr.core\documentation\userguide_mbeddr.core\abstract.ltx
+) (C:\Users\dpavleti\mbeddr.core\documentation\userguide_mbeddr.core\body.ltx
+(C:\Users\dpavleti\mbeddr.core\documentation\userguide_mbeddr.core\1-intro.ltx
 <logoWithSlogan.png, id=1, 233.87375pt x 62.2325pt>
 File: logoWithSlogan.png Graphic file (type png)
  <use logoWithSlogan.png>
+Package pdftex.def Info: logoWithSlogan.png used on input line 6.
+(pdftex.def)             Requested size: 233.87315pt x 62.23235pt.
 LaTeX Font Info:    Try loading font information for T1+cmtt on input line 10.
 
-(C:\data\javadev\commonTools\miktex-2.9\tex\latex\base\t1cmtt.fd
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\t1cmtt.fd"
 File: t1cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 ) [1
 
-{C:/Users/Markus/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <L:/lwes-as
-sembla/mbeddr.core/documentation/userguide_mbeddr.core/logoWithSlogan.png (PNG 
-copy)>]
-(L:\lwes-assembla\mbeddr.core\documentation\userguide_mbeddr.core\userguide_mbe
-ddr.core.toc [2
+{C:/Users/dpavleti/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <C:/Users
+/dpavleti/mbeddr.core/documentation/userguide_mbeddr.core/logoWithSlogan.png (P
+NG copy)>]
+(C:\Users\dpavleti\mbeddr.core\documentation\userguide_mbeddr.core\userguide_mb
+eddr.core.toc [2
 
 ])
 \tf@toc=\write4
@@ -515,68 +526,102 @@ m.mbeddr.core.debug/lib/spawner/<os>"[]
 File: figures/documentation.jpg Graphic file (type jpg)
 
 <use figures/documentation.jpg>
+Package pdftex.def Info: figures/documentation.jpg used on input line 311.
+(pdftex.def)             Requested size: 256.0748pt x 76.11559pt.
+
 <figures/commenting.jpg, id=41, 411.5375pt x 128.48pt>
 File: figures/commenting.jpg Graphic file (type jpg)
 
-<use figures/commenting.jpg> [9 <L:/lwes-assembla/mbeddr.core/documentation/use
-rguide_mbeddr.core/figures/documentation.jpg> <L:/lwes-assembla/mbeddr.core/doc
-umentation/userguide_mbeddr.core/figures/commenting.jpg>])
-(L:\lwes-assembla\mbeddr.core\documentation\userguide_mbeddr.core\2-helloWorld.
-ltx <figures/NewProject.png, id=45, 843.15pt x 476.78125pt>
+<use figures/commenting.jpg>
+Package pdftex.def Info: figures/commenting.jpg used on input line 327.
+(pdftex.def)             Requested size: 256.0748pt x 79.94495pt.
+ [9 <C:/Users/dpavleti/mbeddr.core/documentation/userguide_mbeddr.core/figures/
+documentation.jpg> <C:/Users/dpavleti/mbeddr.core/documentation/userguide_mbedd
+r.core/figures/commenting.jpg>])
+(C:\Users\dpavleti\mbeddr.core\documentation\userguide_mbeddr.core\2-helloWorld
+.ltx <figures/NewProject.png, id=45, 843.15pt x 476.78125pt>
 File: figures/NewProject.png Graphic file (type png)
 
 <use figures/NewProject.png>
+Package pdftex.def Info: figures/NewProject.png used on input line 14.
+(pdftex.def)             Requested size: 341.43306pt x 193.07352pt.
+
 Overfull \hbox (19.49278pt too wide) in paragraph at lines 17--22
 \T1/cmr/m/n/10 stalled via the dis-tri-bu-tion. Go to the $\OML/cmm/m/it/10 Fil
 e \OMS/cmsy/m/n/10 ! \OML/cmm/m/it/10 Settings$ \T1/cmr/m/n/10 and se-lect the 
 $\OML/cmm/m/it/10 GlobalLibraries$
  []
 
-<figures/SettingsGlobalLibraries.png, id=47, 486.81876pt x 400.49625pt>
+[10 <C:/Users/dpavleti/mbeddr.core/documentation/userguide_mbeddr.core/figures/
+NewProject.png>]
+<figures/SettingsGlobalLibraries.png, id=51, 486.81876pt x 400.49625pt>
 File: figures/SettingsGlobalLibraries.png Graphic file (type png)
 
-<use figures/SettingsGlobalLibraries.png> [10 <L:/lwes-assembla/mbeddr.core/doc
-umentation/userguide_mbeddr.core/figures/NewProject.png>]
-<figures/workspacecontents.png, id=54, 311.9655pt x 272.217pt>
+<use figures/SettingsGlobalLibraries.png>
+Package pdftex.def Info: figures/SettingsGlobalLibraries.png used on input line
+ 27.
+(pdftex.def)             Requested size: 284.52756pt x 234.07242pt.
+
+<figures/workspacecontents.png, id=52, 311.9655pt x 272.217pt>
 File: figures/workspacecontents.png Graphic file (type png)
 
 <use figures/workspacecontents.png>
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Package pdftex.def Info: figures/workspacecontents.png used on input line 46.
+(pdftex.def)             Requested size: 227.62204pt x 198.62535pt.
 
- [11 <L:/lwes-assembla/mbeddr.core/documentation/userguide_mbeddr.core/figures/
-SettingsGlobalLibraries.png (PNG copy)>]
+Underfull \vbox (badness 2744) has occurred while \output is active []
+
+ [11 <C:/Users/dpavleti/mbeddr.core/documentation/userguide_mbeddr.core/figures
+/SettingsGlobalLibraries.png>]
 <figures/AddDependencies.png, id=61, 647.41875pt x 350.30875pt>
 File: figures/AddDependencies.png Graphic file (type png)
 
 <use figures/AddDependencies.png>
+Package pdftex.def Info: figures/AddDependencies.png used on input line 65.
+(pdftex.def)             Requested size: 284.52756pt x 153.95457pt.
+
 Underfull \vbox (badness 1371) has occurred while \output is active []
 
- [12 <L:/lwes-assembla/mbeddr.core/documentation/userguide_mbeddr.core/figures/
-workspacecontents.png> <L:/lwes-assembla/mbeddr.core/documentation/userguide_mb
-eddr.core/figures/AddDependencies.png (PNG copy)>]
+ [12 <C:/Users/dpavleti/mbeddr.core/documentation/userguide_mbeddr.core/figures
+/workspacecontents.png> <C:/Users/dpavleti/mbeddr.core/documentation/userguide_
+mbeddr.core/figures/AddDependencies.png>]
 <figures/ContextMenuNewModule.png, id=66, 710.655pt x 151.56625pt>
 File: figures/ContextMenuNewModule.png Graphic file (type png)
 
 <use figures/ContextMenuNewModule.png>
+Package pdftex.def Info: figures/ContextMenuNewModule.png used on input line 88
+.
+(pdftex.def)             Requested size: 341.43306pt x 72.82034pt.
+
 <figures/EmptyModule.png, id=67, 465.74pt x 123.46124pt>
 File: figures/EmptyModule.png Graphic file (type png)
 
-<use figures/EmptyModule.png> [13 <L:/lwes-assembla/mbeddr.core/documentation/u
-serguide_mbeddr.core/figures/ContextMenuNewModule.png (PNG copy)> <L:/lwes-asse
-mbla/mbeddr.core/documentation/userguide_mbeddr.core/figures/EmptyModule.png (P
-NG copy)>] <figures/AddDefaultTSC.png, id=72, 382.42876pt x 261.97874pt>
+<use figures/EmptyModule.png>
+Package pdftex.def Info: figures/EmptyModule.png used on input line 104.
+(pdftex.def)             Requested size: 256.0748pt x 67.88315pt.
+ [13 <C:/Users/dpavleti/mbeddr.core/documentation/userguide_mbeddr.core/figures
+/ContextMenuNewModule.png> <C:/Users/dpavleti/mbeddr.core/documentation/usergui
+de_mbeddr.core/figures/EmptyModule.png>]
+<figures/AddDefaultTSC.png, id=72, 382.42876pt x 261.97874pt>
 File: figures/AddDefaultTSC.png Graphic file (type png)
 
-<use figures/AddDefaultTSC.png> [14 <L:/lwes-assembla/mbeddr.core/documentation
-/userguide_mbeddr.core/figures/AddDefaultTSC.png (PNG copy)>]
+<use figures/AddDefaultTSC.png>
+Package pdftex.def Info: figures/AddDefaultTSC.png used on input line 128.
+(pdftex.def)             Requested size: 227.62204pt x 155.92924pt.
+ [14 <C:/Users/dpavleti/mbeddr.core/documentation/userguide_mbeddr.core/figures
+/AddDefaultTSC.png>]
 <figures/AddBuildConfiguration.png, id=76, 962.59625pt x 65.24374pt>
 File: figures/AddBuildConfiguration.png Graphic file (type png)
 
-<use figures/AddBuildConfiguration.png> [15 <L:/lwes-assembla/mbeddr.core/docum
-entation/userguide_mbeddr.core/figures/AddBuildConfiguration.png (PNG copy)>]
-[16] [17])
-(L:\lwes-assembla\mbeddr.core\documentation\userguide_mbeddr.core\3-differences
-_to_regular_C.ltx
+<use figures/AddBuildConfiguration.png>
+Package pdftex.def Info: figures/AddBuildConfiguration.png used on input line 2
+13.
+(pdftex.def)             Requested size: 341.43306pt x 23.14127pt.
+ [15 <C:/Users/dpavleti/mbeddr.core/documentation/userguide_mbeddr.core/figures
+/AddBuildConfiguration.png>] [16]
+[17])
+(C:\Users\dpavleti\mbeddr.core\documentation\userguide_mbeddr.core\3-difference
+s_to_regular_C.ltx
 Overfull \hbox (92.76884pt too wide) in paragraph at lines 36--42
 \T1/cmr/m/it/10 ported \T1/cmr/m/n/10 flag with the in-ten-tion \T1/cmr/m/it/10
  Tog-gle Ex-port\T1/cmr/m/n/10 . The sec-ond mod-ule (\T1/cmtt/m/n/10 ModuleUsi
@@ -587,13 +632,16 @@ ngTheExportedFunction\T1/cmr/m/n/10 )
 File: figures/modelimport.png Graphic file (type png)
 
 <use figures/modelimport.png>
+Package pdftex.def Info: figures/modelimport.png used on input line 204.
+(pdftex.def)             Requested size: 341.43306pt x 247.01433pt.
+
 Overfull \hbox (43.28528pt too wide) in paragraph at lines 219--223
 [][]\T1/cmr/m/n/10 New con-fig-u-ra-tion items can be con-tributed by im-ple-me
 nt-ing the \T1/cmtt/m/n/10 IConfigurationItem
  []
 
-[21] [22 <L:/lwes-assembla/mbeddr.core/documentation/userguide_mbeddr.core/figu
-res/modelimport.png>]
+[21] [22 <C:/Users/dpavleti/mbeddr.core/documentation/userguide_mbeddr.core/fig
+ures/modelimport.png>]
 Overfull \hbox (6.04388pt too wide) in paragraph at lines 286--289
 [][]\T1/cmr/m/n/10 If you change the as-ser-tion to \T1/cmtt/m/n/10 assert(1) -
 1 + 1 == 0;\T1/cmr/m/n/10 , re-build with \T1/cmtt/m/n/10 Ctrl-F9
@@ -601,18 +649,25 @@ Overfull \hbox (6.04388pt too wide) in paragraph at lines 286--289
 
 [23]
 File: figures/AddDefaultTSC.png Graphic file (type png)
- <use figures/AddDefaultTSC.png> [24] [25] [26]
+ <use figures/AddDefaultTSC.png>
+Package pdftex.def Info: figures/AddDefaultTSC.png used on input line 320.
+(pdftex.def)             Requested size: 199.16928pt x 136.43759pt.
+ [24] [25] [26]
 <figures/AddFunctionPointer.png, id=118, 365.365pt x 80.3pt>
 File: figures/AddFunctionPointer.png Graphic file (type png)
 
 <use figures/AddFunctionPointer.png>
+Package pdftex.def Info: figures/AddFunctionPointer.png used on input line 495.
+
+(pdftex.def)             Requested size: 199.16928pt x 43.77303pt.
+
 Overfull \hbox (2.29114pt too wide) in paragraph at lines 503--510
 \T1/cmr/m/n/10 lar C, you have use the ad-dress op-er-a-tor to ob-tain a func-t
 ion pointer (\T1/cmtt/m/n/10 &function\T1/cmr/m/n/10 ).
  []
 
-[27 <L:/lwes-assembla/mbeddr.core/documentation/userguide_mbeddr.core/figures/A
-ddFunctionPointer.png (PNG copy)>]
+[27 <C:/Users/dpavleti/mbeddr.core/documentation/userguide_mbeddr.core/figures/
+AddFunctionPointer.png>]
 Overfull \hbox (4.56836pt too wide) in paragraph at lines 541--547
 \T1/cmr/m/n/10 ex-am-ple. The type-def \T1/cmtt/m/n/10 typedef (int3_t, int32_t
 )=>(int32_t) as ftype; \T1/cmr/m/n/10 de-
@@ -631,8 +686,8 @@ g2, ...|an-expression-using-args]\T1/cmr/m/n/10 .
  []
 
 [28] [29] [30] [31])
-(L:\lwes-assembla\mbeddr.core\documentation\userguide_mbeddr.core\4-advanced.lt
-x [32]
+(C:\Users\dpavleti\mbeddr.core\documentation\userguide_mbeddr.core\4-advanced.l
+tx [32]
 Overfull \hbox (76.7096pt too wide) in paragraph at lines 65--65
 [][]\T1/cmtt/m/n/7 [mps.generate] Loaded project MPSProject file: L:\lwes-assem
 bla\mbeddr\code\applications\HelloWorld\HelloWorld.mpr[] 
@@ -653,8 +708,11 @@ Overfull \hbox (2.60077pt too wide) in paragraph at lines 135--140
 <figures/green.jpg, id=144, 496.85625pt x 278.03876pt>
 File: figures/green.jpg Graphic file (type jpg)
  <use figures/green.jpg>
-[35 <L:/lwes-assembla/mbeddr.core/documentation/userguide_mbeddr.core/figures/g
-reen.jpg>]
+Package pdftex.def Info: figures/green.jpg used on input line 162.
+(pdftex.def)             Requested size: 256.0748pt x 143.29973pt.
+
+[35 <C:/Users/dpavleti/mbeddr.core/documentation/userguide_mbeddr.core/figures/
+green.jpg>]
 Overfull \hbox (3.73889pt too wide) in paragraph at lines 180--185
 [][]\T1/cmr/m/n/10 In ad-di-tion you can use the \T1/cmtt/m/n/10 Changes \T1/cm
 r/m/n/10 view (from the \T1/cmtt/m/n/10 Window -> Tool Windows
@@ -663,49 +721,73 @@ r/m/n/10 view (from the \T1/cmtt/m/n/10 Window -> Tool Windows
 <figures/changesview.jpg, id=148, 772.8875pt x 216.81pt>
 File: figures/changesview.jpg Graphic file (type jpg)
 
-<use figures/changesview.jpg> [36 <L:/lwes-assembla/mbeddr.core/documentation/u
-serguide_mbeddr.core/figures/changesview.jpg>] [37])
-(L:\lwes-assembla\mbeddr.core\documentation\userguide_mbeddr.core\5-debugging.l
-tx [38] <figures/debugger2.png, id=159, 560.69475pt x 379.4175pt>
+<use figures/changesview.jpg>
+Package pdftex.def Info: figures/changesview.jpg used on input line 188.
+(pdftex.def)             Requested size: 341.43306pt x 95.77713pt.
+ [36 <C:/Users/dpavleti/mbeddr.core/documentation/userguide_mbeddr.core/figures
+/changesview.jpg>] [37])
+(C:\Users\dpavleti\mbeddr.core\documentation\userguide_mbeddr.core\5-debugging.
+ltx [38] <figures/debugger2.png, id=159, 560.69475pt x 379.4175pt>
 File: figures/debugger2.png Graphic file (type png)
 
 <use figures/debugger2.png>
+Package pdftex.def Info: figures/debugger2.png used on input line 37.
+(pdftex.def)             Requested size: 312.9803pt x 211.78918pt.
+
 <figures/debugger3.png, id=160, 750.805pt x 338.26375pt>
 File: figures/debugger3.png Graphic file (type png)
 
-<use figures/debugger3.png> [39 <L:/lwes-assembla/mbeddr.core/documentation/use
-rguide_mbeddr.core/figures/debugger2.png> <L:/lwes-assembla/mbeddr.core/documen
-tation/userguide_mbeddr.core/figures/debugger3.png (PNG copy)>]
+<use figures/debugger3.png>
+Package pdftex.def Info: figures/debugger3.png used on input line 46.
+(pdftex.def)             Requested size: 312.9803pt x 141.01169pt.
+ [39 <C:/Users/dpavleti/mbeddr.core/documentation/userguide_mbeddr.core/figures
+/debugger2.png> <C:/Users/dpavleti/mbeddr.core/documentation/userguide_mbeddr.c
+ore/figures/debugger3.png (PNG copy)>]
 <figures/debugger4.png, id=165, 210.18526pt x 78.2925pt>
 File: figures/debugger4.png Graphic file (type png)
 
 <use figures/debugger4.png>
+Package pdftex.def Info: figures/debugger4.png used on input line 53.
+(pdftex.def)             Requested size: 142.26378pt x 52.99448pt.
+
 <figures/debugger1.png, id=166, 552.26324pt x 352.31625pt>
 File: figures/debugger1.png Graphic file (type png)
 
 <use figures/debugger1.png>
+Package pdftex.def Info: figures/debugger1.png used on input line 67.
+(pdftex.def)             Requested size: 312.9803pt x 199.66652pt.
+
 <figures/debugger5.png, id=167, 214.401pt x 78.89474pt>
 File: figures/debugger5.png Graphic file (type png)
 
 <use figures/debugger5.png>
+Package pdftex.def Info: figures/debugger5.png used on input line 75.
+(pdftex.def)             Requested size: 142.26378pt x 52.35117pt.
+
 <figures/debugger6.png, id=168, 579.3645pt x 426.393pt>
 File: figures/debugger6.png Graphic file (type png)
 
-<use figures/debugger6.png> [40 <L:/lwes-assembla/mbeddr.core/documentation/use
-rguide_mbeddr.core/figures/debugger4.png> <L:/lwes-assembla/mbeddr.core/documen
-tation/userguide_mbeddr.core/figures/debugger1.png> <L:/lwes-assembla/mbeddr.co
-re/documentation/userguide_mbeddr.core/figures/debugger5.png>]
+<use figures/debugger6.png>
+Package pdftex.def Info: figures/debugger6.png used on input line 81.
+(pdftex.def)             Requested size: 312.9803pt x 230.34637pt.
+ [40 <C:/Users/dpavleti/mbeddr.core/documentation/userguide_mbeddr.core/figures
+/debugger4.png> <C:/Users/dpavleti/mbeddr.core/documentation/userguide_mbeddr.c
+ore/figures/debugger1.png> <C:/Users/dpavleti/mbeddr.core/documentation/usergui
+de_mbeddr.core/figures/debugger5.png>]
 <figures/debugger7.png, id=175, 576.9555pt x 422.17725pt>
 File: figures/debugger7.png Graphic file (type png)
 
-<use figures/debugger7.png>)
-(L:\lwes-assembla\mbeddr.core\documentation\userguide_mbeddr.core\6-generatingG
-raphs.ltx
+<use figures/debugger7.png>
+Package pdftex.def Info: figures/debugger7.png used on input line 90.
+(pdftex.def)             Requested size: 312.9803pt x 229.02234pt.
+)
+(C:\Users\dpavleti\mbeddr.core\documentation\userguide_mbeddr.core\6-generating
+Graphs.ltx
 Underfull \vbox (badness 3907) has occurred while \output is active []
 
- [41 <L:/lwes-assembla/mbeddr.core/documentation/userguide_mbeddr.core/figures/
-debugger6.png> <L:/lwes-assembla/mbeddr.core/documentation/userguide_mbeddr.cor
-e/figures/debugger7.png>]
+ [41 <C:/Users/dpavleti/mbeddr.core/documentation/userguide_mbeddr.core/figures
+/debugger6.png> <C:/Users/dpavleti/mbeddr.core/documentation/userguide_mbeddr.c
+ore/figures/debugger7.png>]
 Overfull \hbox (11.31671pt too wide) in paragraph at lines 11--13
 []\T1/cmr/m/n/10 The ex-am-ple code for this chap-ter can be found in \T1/cmtt/
 m/n/10 code/applications/Callgraph\T1/cmr/m/n/10 . 
@@ -714,6 +796,9 @@ m/n/10 code/applications/Callgraph\T1/cmr/m/n/10 .
 <figures/graph1.png, id=181, 178.266pt x 258.9675pt>
 File: figures/graph1.png Graphic file (type png)
  <use figures/graph1.png>
+Package pdftex.def Info: figures/graph1.png used on input line 50.
+(pdftex.def)             Requested size: 142.26378pt x 206.68427pt.
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [42]
@@ -725,89 +810,123 @@ m/n/10 . It has to ex-tend \T1/cmtt/m/n/10 com.mbeddr.core.modules
 <figures/graph2.png, id=185, 320.397pt x 65.043pt>
 File: figures/graph2.png Graphic file (type png)
  <use figures/graph2.png>
+Package pdftex.def Info: figures/graph2.png used on input line 72.
+(pdftex.def)             Requested size: 256.0748pt x 51.98781pt.
+
 <figures/graph3.png, id=186, 187.29974pt x 117.43875pt>
 File: figures/graph3.png Graphic file (type png)
 
-<use figures/graph3.png> [43 <L:/lwes-assembla/mbeddr.core/documentation/usergu
-ide_mbeddr.core/figures/graph1.png> <L:/lwes-assembla/mbeddr.core/documentation
-/userguide_mbeddr.core/figures/graph2.png>] [44 <L:/lwes-assembla/mbeddr.core/d
-ocumentation/userguide_mbeddr.core/figures/graph3.png>]
+<use figures/graph3.png>
+Package pdftex.def Info: figures/graph3.png used on input line 81.
+(pdftex.def)             Requested size: 199.16928pt x 124.88228pt.
+ [43 <C:/Users/dpavleti/mbeddr.core/documentation/userguide_mbeddr.core/figures
+/graph1.png> <C:/Users/dpavleti/mbeddr.core/documentation/userguide_mbeddr.core
+/figures/graph2.png>] [44 <C:/Users/dpavleti/mbeddr.core/documentation/userguid
+e_mbeddr.core/figures/graph3.png>]
 <figures/graph4.png, id=197, 380.01974pt x 177.0615pt>
 File: figures/graph4.png Graphic file (type png)
 
-<use figures/graph4.png> <figures/graph5.png, id=198, 354.123pt x 66.84975pt>
+<use figures/graph4.png>
+Package pdftex.def Info: figures/graph4.png used on input line 127.
+(pdftex.def)             Requested size: 341.43306pt x 159.08907pt.
+ <figures/graph5.png, id=198, 354.123pt x 66.84975pt>
 File: figures/graph5.png Graphic file (type png)
 
 <use figures/graph5.png>
+Package pdftex.def Info: figures/graph5.png used on input line 133.
+(pdftex.def)             Requested size: 256.0748pt x 48.34393pt.
+
 <figures/graph6.png, id=199, 494.44725pt x 339.06676pt>
 File: figures/graph6.png Graphic file (type png)
 
-<use figures/graph6.png> [45 <L:/lwes-assembla/mbeddr.core/documentation/usergu
-ide_mbeddr.core/figures/graph4.png> <L:/lwes-assembla/mbeddr.core/documentation
-/userguide_mbeddr.core/figures/graph5.png>]
+<use figures/graph6.png>
+Package pdftex.def Info: figures/graph6.png used on input line 160.
+(pdftex.def)             Requested size: 256.0748pt x 175.60175pt.
+ [45 <C:/Users/dpavleti/mbeddr.core/documentation/userguide_mbeddr.core/figures
+/graph4.png> <C:/Users/dpavleti/mbeddr.core/documentation/userguide_mbeddr.core
+/figures/graph5.png>]
 <figures/graph7.png, id=205, 410.7345pt x 225.2415pt>
 File: figures/graph7.png Graphic file (type png)
  <use figures/graph7.png>
+Package pdftex.def Info: figures/graph7.png used on input line 167.
+(pdftex.def)             Requested size: 256.0748pt x 140.43188pt.
+
 <figures/graph8.png, id=206, 291.489pt x 196.3335pt>
 File: figures/graph8.png Graphic file (type png)
  <use figures/graph8.png>
+Package pdftex.def Info: figures/graph8.png used on input line 178.
+(pdftex.def)             Requested size: 227.62204pt x 153.31625pt.
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [46 <L:/lwes-assembla/mbeddr.core/documentation/userguide_mbeddr.core/figures/
-graph6.png> <L:/lwes-assembla/mbeddr.core/documentation/userguide_mbeddr.core/f
-igures/graph7.png>] <figures/graph9.png, id=212, 115.632pt x 42.1575pt>
+ [46 <C:/Users/dpavleti/mbeddr.core/documentation/userguide_mbeddr.core/figures
+/graph6.png> <C:/Users/dpavleti/mbeddr.core/documentation/userguide_mbeddr.core
+/figures/graph7.png>] <figures/graph9.png, id=212, 115.632pt x 42.1575pt>
 File: figures/graph9.png Graphic file (type png)
 
-<use figures/graph9.png> <figures/graphA.png, id=213, 289.08pt x 199.947pt>
+<use figures/graph9.png>
+Package pdftex.def Info: figures/graph9.png used on input line 185.
+(pdftex.def)             Requested size: 85.35826pt x 31.12143pt.
+ <figures/graphA.png, id=213, 289.08pt x 199.947pt>
 File: figures/graphA.png Graphic file (type png)
 
 <use figures/graphA.png>
+Package pdftex.def Info: figures/graphA.png used on input line 194.
+(pdftex.def)             Requested size: 284.52756pt x 196.80708pt.
+
 <figures/graphB.png, id=214, 408.3255pt x 112.62074pt>
 File: figures/graphB.png Graphic file (type png)
 
-<use figures/graphB.png> [47 <L:/lwes-assembla/mbeddr.core/documentation/usergu
-ide_mbeddr.core/figures/graph8.png> <L:/lwes-assembla/mbeddr.core/documentation
-/userguide_mbeddr.core/figures/graph9.png> <L:/lwes-assembla/mbeddr.core/docume
-ntation/userguide_mbeddr.core/figures/graphA.png>]
+<use figures/graphB.png>
+Package pdftex.def Info: figures/graphB.png used on input line 203.
+(pdftex.def)             Requested size: 341.43306pt x 94.17287pt.
+ [47 <C:/Users/dpavleti/mbeddr.core/documentation/userguide_mbeddr.core/figures
+/graph8.png> <C:/Users/dpavleti/mbeddr.core/documentation/userguide_mbeddr.core
+/figures/graph9.png> <C:/Users/dpavleti/mbeddr.core/documentation/userguide_mbe
+ddr.core/figures/graphA.png>]
 <figures/graphC.png, id=221, 764.8575pt x 508.90125pt>
 File: figures/graphC.png Graphic file (type png)
 
-<use figures/graphC.png>)) [48 <L:/lwes-assembla/mbeddr.core/documentation/user
-guide_mbeddr.core/figures/graphB.png> <L:/lwes-assembla/mbeddr.core/documentati
-on/userguide_mbeddr.core/figures/graphC.png>]
-(L:\lwes-assembla\mbeddr.core\documentation\userguide_mbeddr.core\userguide_mbe
-ddr.core.aux) ) 
+<use figures/graphC.png>
+Package pdftex.def Info: figures/graphC.png used on input line 214.
+(pdftex.def)             Requested size: 341.43306pt x 227.17085pt.
+)) [48 <C:/Users/dpavleti/mbeddr.core/documentation/userguide_mbeddr.core/figur
+es/graphB.png> <C:/Users/dpavleti/mbeddr.core/documentation/userguide_mbeddr.co
+re/figures/graphC.png>]
+(C:\Users\dpavleti\mbeddr.core\documentation\userguide_mbeddr.core\userguide_mb
+eddr.core.aux) ) 
 Here is how much of TeX's memory you used:
- 2706 strings out of 494019
- 36687 string characters out of 3141700
- 92778 words of memory out of 3000000
- 5889 multiletter control sequences out of 15000+200000
+ 2870 strings out of 494045
+ 39017 string characters out of 3145960
+ 94493 words of memory out of 3000000
+ 6050 multiletter control sequences out of 15000+200000
  19150 words of font info for 50 fonts, out of 3000000 for 9000
- 714 hyphenation exceptions out of 8191
- 29i,9n,24p,241b,284s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/data/javadev/commonTools/miktex-2.9/fonts/enc/dvips/cm-super
-/cm-super-t1.enc}<C:/data/javadev/commonTools/miktex-2.9/fonts/type1/public/ams
-fonts/cm/cmmi10.pfb><C:/data/javadev/commonTools/miktex-2.9/fonts/type1/public/
-amsfonts/cm/cmr6.pfb><C:/data/javadev/commonTools/miktex-2.9/fonts/type1/public
-/amsfonts/cm/cmr7.pfb><C:/data/javadev/commonTools/miktex-2.9/fonts/type1/publi
-c/amsfonts/cm/cmsy10.pfb><C:/data/javadev/commonTools/miktex-2.9/fonts/type1/pu
-blic/cm-super/sfbi1000.pfb><C:/data/javadev/commonTools/miktex-2.9/fonts/type1/
-public/cm-super/sfbx0900.pfb><C:/data/javadev/commonTools/miktex-2.9/fonts/type
-1/public/cm-super/sfbx1000.pfb><C:/data/javadev/commonTools/miktex-2.9/fonts/ty
-pe1/public/cm-super/sfbx1200.pfb><C:/data/javadev/commonTools/miktex-2.9/fonts/
-type1/public/cm-super/sfbx1440.pfb><C:/data/javadev/commonTools/miktex-2.9/font
-s/type1/public/cm-super/sfrm0600.pfb><C:/data/javadev/commonTools/miktex-2.9/fo
-nts/type1/public/cm-super/sfrm0700.pfb><C:/data/javadev/commonTools/miktex-2.9/
-fonts/type1/public/cm-super/sfrm0900.pfb><C:/data/javadev/commonTools/miktex-2.
-9/fonts/type1/public/cm-super/sfrm1000.pfb><C:/data/javadev/commonTools/miktex-
-2.9/fonts/type1/public/cm-super/sfti0900.pfb><C:/data/javadev/commonTools/mikte
-x-2.9/fonts/type1/public/cm-super/sfti1000.pfb><C:/data/javadev/commonTools/mik
-tex-2.9/fonts/type1/public/cm-super/sftt0800.pfb><C:/data/javadev/commonTools/m
-iktex-2.9/fonts/type1/public/cm-super/sftt0900.pfb><C:/data/javadev/commonTools
-/miktex-2.9/fonts/type1/public/cm-super/sftt1000.pfb>
-Output written on userguide_mbeddr.core.pdf (48 pages, 1779424 bytes).
+ 715 hyphenation exceptions out of 8191
+ 29i,9n,24p,260b,284s stack positions out of 5000i,500n,10000p,200000b,50000s
+ <C:\Users\dpavleti\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jk
+nappen\ec\dpi600\ectt0900.pk> <C:\Users\dpavleti\AppData\Local\MiKTeX\2.9\fonts
+\pk\ljfour\jknappen\ec\dpi600\ecti0900.pk> <C:\Users\dpavleti\AppData\Local\MiK
+TeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm0600.pk> <C:\Users\dpavleti\AppD
+ata\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm0700.pk> <C:\Users\
+dpavleti\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbi1000.p
+k> <C:\Users\dpavleti\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi5
+25\ectt0800.pk> <C:\Users\dpavleti\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jkn
+appen\ec\dpi600\ecbx1000.pk> <C:\Users\dpavleti\AppData\Local\MiKTeX\2.9\fonts\
+pk\ljfour\jknappen\ec\dpi600\ecbx1200.pk> <C:\Users\dpavleti\AppData\Local\MiKT
+eX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecti1000.pk> <C:\Users\dpavleti\AppDa
+ta\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ectt1000.pk> <C:\Users\d
+pavleti\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx0900.pk
+> <C:\Users\dpavleti\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi60
+0\ecrm0900.pk> <C:\Users\dpavleti\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jkna
+ppen\ec\dpi600\ecrm1000.pk> <C:\Users\dpavleti\AppData\Local\MiKTeX\2.9\fonts\p
+k\ljfour\jknappen\ec\dpi600\ecbx1440.pk><C:/Program Files (x86)/MiKTeX 2.9/font
+s/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/
+type1/public/amsfonts/cm/cmr6.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type
+1/public/amsfonts/cm/cmr7.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/pu
+blic/amsfonts/cm/cmsy10.pfb>
+Output written on userguide_mbeddr.core.pdf (48 pages, 1587095 bytes).
 PDF statistics:
- 286 PDF objects out of 1000 (max. 8388607)
+ 817 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  171 words of extra memory for PDF output out of 10000 (max. 10000000)
 

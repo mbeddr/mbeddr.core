@@ -13,7 +13,7 @@
 \contentsline {subsection}{\numberline {3.1}MPS in general}{7}
 \contentsline {paragraph}{Entering Code}{7}
 \contentsline {paragraph}{Navigation}{7}
-\contentsline {paragraph}{Selection}{7}
+\contentsline {paragraph}{Selection}{8}
 \contentsline {paragraph}{Deleting Things}{8}
 \contentsline {paragraph}{Intentions}{8}
 \contentsline {paragraph}{Surround-With Intentions}{8}
