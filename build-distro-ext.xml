@@ -18,6 +18,18 @@
           <!-- LICENSE -->
 		  <zipfileset dir="." includes="license.html"/> 
 	  </zip>
+	  
+	  
+	   <zip destfile="${path}/mbeddr.all-in-one-${version}.zip">
+	      <!-- CORE -->
+	      <zipfileset dir="MbeddrCore" prefix=""/>
+	  	  <!-- EXT -->
+          <zipfileset dir="code/languages/com.mbeddr.ext/languages" prefix="${prefix.ext}/languages"/>
+          <zipfileset dir="code/languages/com.mbeddr.ext/devkits" prefix="${prefix.ext}/devkits"/>
+          
+          <!-- LICENSE -->
+		  <zipfileset dir="." includes="license.html"/> 
+	  </zip>
 
   </target>
   
