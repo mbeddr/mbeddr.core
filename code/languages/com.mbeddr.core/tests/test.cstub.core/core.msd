@@ -19,6 +19,8 @@
     <dependency reexport="false">0f5cacaf-ece9-4a2a-8680-26d09a4e0b41(test.ex.core)</dependency>
     <dependency reexport="false">ac3c3af3-071f-47d4-8ed9-dd9e752fdfdf(com.mbeddr.mpsutil.graphview)</dependency>
     <dependency reexport="false">783af01f-87a7-412c-be99-293a162652b5(com.mbeddr.core.embedded)</dependency>
+    <dependency reexport="false">daacf807-0832-4338-866d-0f91b590ef56(Eclipse.Debugger)</dependency>
+    <dependency reexport="false">daacf807-0832-4338-866d-0f91b590ef56(Eclipse.Debugger)</dependency>
   </dependencies>
   <usedLanguages>
     <usedLanguage>2d7fadf5-33f6-4e80-a78f-0f739add2bde(com.mbeddr.core.buildconfig)</usedLanguage>

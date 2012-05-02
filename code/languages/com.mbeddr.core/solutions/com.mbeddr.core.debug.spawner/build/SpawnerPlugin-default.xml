@@ -1,0 +1,36 @@
+<project name="SpawnerPlugin-default" default="main">
+  <property file="${ant.file}/../SpawnerPlugin.properties" />
+  <import file="${ant.file}/../SpawnerPlugin-compile.xml" />
+  <target name="main" depends="compile,clean.before,folders.create,do.the.job,clean.after" />
+  <target name="compile">
+    <antcall target="compile.all" />
+  </target>
+  <target name="clean.before" depends="compile">
+    <delete dir="${deploy.dir}" />
+    <tstamp />
+  </target>
+  <target name="folders.create" depends="clean.before">
+    <mkdir dir="${deploy.dir}" />
+    <mkdir dir="${deploy.dir}/spawner.zip.tmp/spawner/lib/classes" />
+    <mkdir dir="${deploy.dir}/spawner.zip.tmp/spawner/lib" />
+    <mkdir dir="${deploy.dir}/spawner.zip.tmp/spawner/META-INF" />
+    <mkdir dir="${deploy.dir}/spawner.zip.tmp/spawner" />
+    <mkdir dir="${deploy.dir}/spawner.zip.tmp" />
+  </target>
+  <target name="do.the.job" depends="folders.create">
+    <copy todir="${deploy.dir}/spawner.zip.tmp/spawner/lib/classes">
+      <fileset dir="${base_dir}/code/languages/com.mbeddr.core/solutions/com.mbeddr.core.debug.spawner/classes_gen" />
+    </copy>
+    <mkdir dir="${deploy.dir}/spawner.zip.tmp/spawner/lib" />
+    <copy file="${base_dir}/code/languages/com.mbeddr.core/solutions/com.mbeddr.core.debug.spawner/source_gen/com/mbeddr/core/debug/spawner/loader/plugin.xml" tofile="${deploy.dir}/spawner.zip.tmp/spawner/META-INF/plugin.xml" />
+    <mkdir dir="${deploy.dir}/spawner.zip.tmp/spawner/META-INF" />
+    <mkdir dir="${deploy.dir}/spawner.zip.tmp/spawner" />
+    <zip destfile="${deploy.dir}/spawner.zip" duplicate="preserve" filesonly="true">
+      <zipfileset dir="${deploy.dir}/spawner.zip.tmp" />
+    </zip>
+    <delete dir="${deploy.dir}/spawner.zip.tmp" />
+  </target>
+  <target name="clean.after" depends="do.the.job">
+    <delete dir="${deploy.dir}/spawner.zip.tmp" />
+  </target>
+</project>
