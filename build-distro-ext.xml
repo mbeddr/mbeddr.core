@@ -1,31 +1,39 @@
-<project name="com.mbeddr.core dsitribution" default="build-distro">
+<project name="com.mbeddr.ext distribution" default="build-distro">
+ 
+  <property name="prefix.ext" value="mbeddr/code/languages/com.mbeddr.ext"/>
+  <property name="prefix.docs" value="mbeddr/doc"/>
 	
   <target name="build-distro">
 
-  
  	  <property name="path" value="distros/ext/"/>
 	  <mkdir dir="${path}"/>
 	  <delete includeemptydirs="true">
           <fileset dir="${path}" includes="**/*"/>
       </delete>
-      	  
-      <zip destfile="${path}/mbeddr.components-${version}.zip">
-          <zipfileset dir="code/languages/com.mbeddr.ext/languages/com.mbeddr.ext.components" 
-				prefix="mbeddr/ext/languages/com.mbeddr.ext.components"/>
-          <zipfileset dir="code/languages/com.mbeddr.ext/languages/com.mbeddr.ext.components.mock" 
-				prefix="mbeddr/ext/languages/com.mbeddr.ext.components.mock"/>
-          <zipfileset dir="code/languages/com.mbeddr.ext/languages/com.mbeddr.ext.components.gen_nomw" 
-				prefix="mbeddr/ext/languages/com.mbeddr.ext.components.gen_nomw"/>
-          <zipfileset dir="code/languages/com.mbeddr.ext/devkits/com.mbeddr.ext.components" 
-				prefix="mbeddr/ext/devkits/com.mbeddr.ext.components"/>
+      
+	  <zip destfile="${path}/mbeddr.ext-${version}.zip">
+	  	  <!-- EXT -->
+          <zipfileset dir="code/languages/com.mbeddr.ext/languages" prefix="${prefix.ext}/languages"/>
+          <zipfileset dir="code/languages/com.mbeddr.ext/devkits" prefix="${prefix.ext}/devkits"/>
+          
+          <!-- LICENSE -->
+		  <zipfileset dir="." includes="license.html"/> 
 	  </zip>
+	  
+	  
+	   <zip destfile="${path}/mbeddr.all-in-one-${version}.zip" duplicate="preserve">
+	      <!-- CORE -->
+	      <zipfileset dir="MbeddrCore" prefix=""/>
+	  	  <!-- EXT -->
+          <zipfileset dir="code/languages/com.mbeddr.ext/languages" prefix="${prefix.ext}/languages"/>
+          <zipfileset dir="code/languages/com.mbeddr.ext/devkits" prefix="${prefix.ext}/devkits"/>
 
-      <zip destfile="${path}/mbeddr.statemachines-${version}.zip">
-          <zipfileset dir="code/languages/com.mbeddr.ext/languages/com.mbeddr.ext.statemachines" 
-				prefix="mbeddr/ext/languages/com.mbeddr.ext.statemachines"/>
-          <zipfileset dir="code/languages/com.mbeddr.ext/devkits/com.mbeddr.ext.statemachines" 
-				prefix="mbeddr/ext/devkits/com.mbeddr.ext.statemachines"/>
-	  </zip>	
+          <zipfileset dir="documentation/userguide" includes="mbeddr-userguide.pdf" prefix="${prefix.docs}"/>
+          <zipfileset dir="documentation/extensionguide" includes="mbeddr-extensionguide.pdf" prefix="${prefix.docs}"/>          
+          
+          <!-- LICENSE -->
+		  <zipfileset dir="." includes="license.html"/> 
+	  </zip>
 
   </target>
   

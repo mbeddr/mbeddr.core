@@ -39,8 +39,8 @@
     <node type="fu4.Graph" typeId="fu4.5104882350373546412" id="651144826794084629">
       <property name="name" nameId="tpck.1169194664001" value="map_InstanceConfigurationToGraphviz" />
     </node>
-    <node type="v7ag.ComponentMappingDebugHelper" typeId="v7ag.7798021607625279741" id="7798021607625479930">
-      <property name="name" nameId="tpck.1169194664001" value="aConfig" />
+    <node type=".com.mbeddr.ext.components.structure.ComponentMappingDebugHelper" id="7798021607625479930">
+      <property name="name" value="aConfig" />
     </node>
     <node type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="7798021607625479932">
       <property name="name" nameId="tpck.1169194664001" value="CompMappingDebugHelperUtil" />
@@ -1512,11 +1512,11 @@
     </node>
   </root>
   <root id="7798021607625479930">
-    <node role="mappings" roleId="v7ag.7798021607625279750" type="v7ag.InterfaceToImplementationMapping" typeId="v7ag.2924520848052679299" id="3555620926033807844">
-      <property name="interfaceName" nameId="v7ag.2924520848052679301" value="targetInterface" />
-      <property name="componentNodeID" nameId="v7ag.2924520848052679302" value="nodeID" />
-      <property name="componentModelName" nameId="v7ag.3298295153090008254" value="modelName" />
-      <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.LoopMacro" typeId="tpf8.1118786554307" id="3555620926033807845">
+    <node role="mappings" type=".com.mbeddr.ext.components.structure.InterfaceToImplementationMapping" id="3555620926033807844">
+      <property name="interfaceName" value="targetInterface" />
+      <property name="componentNodeID" value="nodeID" />
+      <property name="componentModelName" value="modelName" />
+      <node role="smodelAttribute" type="tpf8.LoopMacro" typeId="tpf8.1118786554307" id="3555620926033807845">
         <node role="sourceNodesQuery" roleId="tpf8.1167952069335" type="tpf8.SourceSubstituteMacro_SourceNodesQuery" typeId="tpf8.1167951910403" id="3555620926033807846">
           <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="3555620926033807847">
             <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="3555620926033807848">
@@ -1530,7 +1530,7 @@
           </node>
         </node>
       </node>
-      <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.PropertyMacro" typeId="tpf8.1087833241328" id="3555620926033807852">
+      <node role="smodelAttribute" type="tpf8.PropertyMacro" typeId="tpf8.1087833241328" id="3555620926033807852">
         <property name="propertyName" nameId="tpck.1757699476691236117" value="interfaceName" />
         <node role="propertyValueFunction" roleId="tpf8.1167756362303" type="tpf8.PropertyMacro_GetPropertyValue" typeId="tpf8.1167756080639" id="3555620926033807853">
           <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="3555620926033807854">
@@ -1560,7 +1560,7 @@
           </node>
         </node>
       </node>
-      <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.PropertyMacro" typeId="tpf8.1087833241328" id="3555620926033807865">
+      <node role="smodelAttribute" type="tpf8.PropertyMacro" typeId="tpf8.1087833241328" id="3555620926033807865">
         <property name="propertyName" nameId="tpck.1757699476691236117" value="componentNodeID" />
         <node role="propertyValueFunction" roleId="tpf8.1167756362303" type="tpf8.PropertyMacro_GetPropertyValue" typeId="tpf8.1167756080639" id="3555620926033807866">
           <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="3555620926033807867">
@@ -1593,7 +1593,7 @@
           </node>
         </node>
       </node>
-      <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.PropertyMacro" typeId="tpf8.1087833241328" id="3555620926033807880">
+      <node role="smodelAttribute" type="tpf8.PropertyMacro" typeId="tpf8.1087833241328" id="3555620926033807880">
         <property name="propertyName" nameId="tpck.1757699476691236117" value="componentModelName" />
         <node role="propertyValueFunction" roleId="tpf8.1167756362303" type="tpf8.PropertyMacro_GetPropertyValue" typeId="tpf8.1167756080639" id="3555620926033807881">
           <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="3555620926033807882">
@@ -1625,10 +1625,10 @@
         </node>
       </node>
     </node>
-    <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.RootTemplateAnnotation" typeId="tpf8.1168619357332" id="7798021607625479931">
+    <node role="smodelAttribute" type="tpf8.RootTemplateAnnotation" typeId="tpf8.1168619357332" id="7798021607625479931">
       <link role="applicableConcept" roleId="tpf8.1168619429071" targetNodeId="v7ag.4491876417845649024" resolveInfo="InstanceConfiguration" />
     </node>
-    <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.PropertyMacro" typeId="tpf8.1087833241328" id="7798021607625564165">
+    <node role="smodelAttribute" type="tpf8.PropertyMacro" typeId="tpf8.1087833241328" id="7798021607625564165">
       <property name="propertyName" nameId="tpck.1757699476691236117" value="name" />
       <node role="propertyValueFunction" roleId="tpf8.1167756362303" type="tpf8.PropertyMacro_GetPropertyValue" typeId="tpf8.1167756080639" id="7798021607625564166">
         <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="7798021607625564167">
@@ -1645,34 +1645,34 @@
     </node>
   </root>
   <root id="7798021607625479932">
-    <node role="contents" roleId="x27k.6437088627575722833" type="v7ag.MessageInterface" typeId="v7ag.4491876417845484923" id="7798021607625479983">
-      <property name="name" nameId="tpck.1169194664001" value="ifaceXXX" />
+    <node role="contents" roleId="x27k.6437088627575722833" type=".com.mbeddr.ext.components.structure.MessageInterface" id="7798021607625479983">
+      <property name="name" value="ifaceXXX" />
     </node>
-    <node role="contents" roleId="x27k.6437088627575722833" type="v7ag.AtomicComponent" typeId="v7ag.4491876417845649011" id="7798021607625479985">
-      <property name="name" nameId="tpck.1169194664001" value="AComp" />
-      <node role="ports" roleId="v7ag.4491876417845639958" type="v7ag.ProvidedPort" typeId="v7ag.4491876417845628840" id="7798021607625479989">
-        <property name="name" nameId="tpck.1169194664001" value="ifProv" />
-        <link role="intf" roleId="v7ag.4491876417845484932" targetNodeId="7798021607625479983" resolveInfo="ifaceXXX" />
+    <node role="contents" roleId="x27k.6437088627575722833" type=".com.mbeddr.ext.components.structure.AtomicComponent" id="7798021607625479985">
+      <property name="name" value="AComp" />
+      <node role="ports" type=".com.mbeddr.ext.components.structure.ProvidedPort" id="7798021607625479989">
+        <property name="name" value="ifProv" />
+        <link role="intf" targetNodeId="7798021607625479983" resolveInfo="ifaceXXX" />
       </node>
-      <node role="ports" roleId="v7ag.4491876417845639958" type="v7ag.RequiredPort" typeId="v7ag.4491876417845628841" id="7798021607625479987">
-        <property name="name" nameId="tpck.1169194664001" value="if" />
-        <link role="intf" roleId="v7ag.4491876417845484932" targetNodeId="7798021607625479983" resolveInfo="ifaceXXX" />
+      <node role="ports" type=".com.mbeddr.ext.components.structure.RequiredPort" id="7798021607625479987">
+        <property name="name" value="if" />
+        <link role="intf" targetNodeId="7798021607625479983" resolveInfo="ifaceXXX" />
       </node>
     </node>
-    <node role="contents" roleId="x27k.6437088627575722833" type="v7ag.InstanceConfiguration" typeId="v7ag.4491876417845649024" id="7798021607625479991">
-      <property name="name" nameId="tpck.1169194664001" value="aConfig" />
-      <node role="instances" roleId="v7ag.4491876417845649026" type="v7ag.ComponentInstance" typeId="v7ag.4491876417845649014" id="7798021607625479992">
-        <property name="name" nameId="tpck.1169194664001" value="comp" />
-        <link role="component" roleId="v7ag.4491876417845649015" targetNodeId="7798021607625479985" resolveInfo="AComp" />
+    <node role="contents" roleId="x27k.6437088627575722833" type=".com.mbeddr.ext.components.structure.InstanceConfiguration" id="7798021607625479991">
+      <property name="name" value="aConfig" />
+      <node role="instances" type=".com.mbeddr.ext.components.structure.ComponentInstance" id="7798021607625479992">
+        <property name="name" value="comp" />
+        <link role="component" targetNodeId="7798021607625479985" resolveInfo="AComp" />
       </node>
-      <node role="connectors" roleId="v7ag.4491876417845649027" type="v7ag.Connector" typeId="v7ag.4491876417845649016" id="7798021607625479993">
-        <node role="source" roleId="v7ag.4491876417845649020" type="v7ag.InstancePortRef" typeId="v7ag.4491876417845649017" id="7798021607625479994">
-          <link role="instance" roleId="v7ag.4491876417845649018" targetNodeId="7798021607625479992" resolveInfo="comp" />
-          <link role="port" roleId="v7ag.4491876417845649019" targetNodeId="7798021607625479987" resolveInfo="if" />
+      <node role="connectors" type=".com.mbeddr.ext.components.structure.Connector" id="7798021607625479993">
+        <node role="source" type=".com.mbeddr.ext.components.structure.InstancePortRef" id="7798021607625479994">
+          <link role="instance" targetNodeId="7798021607625479992" resolveInfo="comp" />
+          <link role="port" targetNodeId="7798021607625479987" resolveInfo="if" />
         </node>
-        <node role="target" roleId="v7ag.4491876417845649021" type="v7ag.InstancePortRef" typeId="v7ag.4491876417845649017" id="7798021607625479995">
-          <link role="instance" roleId="v7ag.4491876417845649018" targetNodeId="7798021607625479992" resolveInfo="comp" />
-          <link role="port" roleId="v7ag.4491876417845649019" targetNodeId="7798021607625479989" resolveInfo="ifProv" />
+        <node role="target" type=".com.mbeddr.ext.components.structure.InstancePortRef" id="7798021607625479995">
+          <link role="instance" targetNodeId="7798021607625479992" resolveInfo="comp" />
+          <link role="port" targetNodeId="7798021607625479989" resolveInfo="ifProv" />
         </node>
       </node>
     </node>

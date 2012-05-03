@@ -1,0 +1,259 @@
+\section{Variability}
+
+\subsection{Overview}
+
+Product line engineering involves the coordinated construction of several
+related, but different products. Each product is typically referred to as a
+\emph{variant}. The product variants within a product line have a lot in common,
+but also exhibit a set of well-defined differences. Managing these differences
+over the sets of products in a product line is non trivial. This document
+explains how to do it in the context of mbeddr.
+
+
+
+
+A devkit \ic{com.mbeddr.cc.variability} is defined that comprises the following
+three languages:
+
+\begin{itemize}
+  \item \ic{com.mbeddr.cc.var.fm} supports the definition of feature models.
+  Feature models are a well-known formalism for expressing variability on a
+  high-level, independent of the realization of the variability in software.
+  \item \ic{com.mbeddr.cc.var.annotations} allows the connection of
+  implementation artifacts (any MPS model) to feature models as a way of mapping
+  the high-level variability to implementation code. This is done by attaching
+  presence conditions to program elements (this is mbeddr's replacement for
+  \ic{\#ifdef}s).
+  \item \ic{com.mbeddr.cc.var.buildconfig} ties the processing of annotations
+  into mbeddr's build process.
+\end{itemize}
+
+
+\subsection{Feature Models and Configurations}
+
+\subsubsection{Defining a Feature Model}
+
+Feature models express configuration options and the constraints between them.
+They are usually represented with a graphical notation as shown in
+\fig{examplefm}.
+
+
+\begin{figure}[h]
+\begin{center} 
+  \includegraphics[width=8cm]{figures/cc/examplefm.png}
+\end{center}
+\label{examplefm}
+\caption{An example feature model}
+\end{figure}
+
+
+\begin{figure}[h]
+\begin{center} 
+  \includegraphics[width=10cm]{figures/cc/fminmbeddr.png}
+\end{center}
+\label{fminmbeddr}
+\caption{An example feature model in mbeddr}
+\end{figure}
+
+
+The following four kinds of constraints are supported between the features in a
+feature model:
+
+\begin{itemize}
+  \item \textbf{mandatory}, the filled circle: mandatory features have to be in
+  each product variant. In the above example, each \ic{Stack} has to have the
+  feature \ic{ElementType}.
+  \item \textbf{optional}, the hollow circle: optional features may or may not
+  be in a product variant. In the example, \ic{Counter} and \ic{Optimization}
+  are examples of optional features.
+  \item \textbf{or}, the filled arc: a product variant may include zero, one or
+  any number of the features grouped into a an or group. For example, a product
+  may include any number of features from \ic{ThreadSafety}, \ic{BoundsCheck}
+  and \ic{TypeCheck}.
+  \item \textbf{xor}, the hollow arc: a product variant must include exactly one
+  of the features grouped into a xor group. In the example, the \ic{ElementType}
+  must either \ic{int}, \ic{float}, or \ic{String}.
+\end{itemize} 
+
+\fig{fminmbeddr} shows the textual notation for feature models used in mbeddr. Note how the constraint affects all children! We had to introduce the
+intermediate feature \ic{options} to separate the mandatory stuff from the
+optional stuff. Features can have configuration attributes (of any type!).
+Children and attributes can be added to a feature via an intention. You can also
+use a surround intention to wrap a new feature around an existing one.
+
+
+
+
+\subsubsection{Defining Configurations}
+
+The point of a feature model is to define and constrain the configuration space
+of a product. If a product configuration would just be expressed by a bunch of
+boolean variables, the configuration space would grow quickly, with $2^n$, where
+$n$ is the number of boolean config switches. With feature models, constraints
+are expressed over the features, defining what are valid configurations. This
+limits the space explosion and allows interesting analyses that will be provided
+in later releases.
+
+Let us now look at how to define a product variant as a set of selected
+features. \fig{twoconfigs} shows two examples:
+
+\begin{figure}[h]
+\vspace{-3mm}
+\begin{center} 
+  \includegraphics[width=10cm]{figures/cc/twoconfigs.png}
+\end{center}
+\label{twoconfigs}
+\vspace{-8mm}
+\caption{Two valid configurations of the feature model}
+\end{figure}
+
+
+Note that, if you create invalid configurations by selecting feature
+combinations that are prohibited by the constraints expressed in the feature
+model, errors will be shown.
+
+Feature models and configurations can be defined in a root concept called
+\ic{VariabilitySupport}. It lives in the \ic{com.mbeddr.cc.var.fm} language.
+
+\subsection{Presence Conditions}
+
+A presence condition is an annotation on a program element that specifies, under
+which conditions the program element is part of a product variant. To do so, the
+presence condition contains a boolean expression over the configuration
+features. For example the two \ic{report} statements and the message list in
+\fig{examplecode1} are only in the program, if the \ic{logging} feature is
+selected. \ic{logging} is a feature defined in the feature model \ic{FM} that is
+referenced by this root node. 
+
+\begin{figure}[h]
+\vspace{-5mm}
+\begin{center} 
+  \includegraphics[width=8cm]{figures/cc/examplecode1.png}
+\end{center}
+\label{examplecode1}
+\vspace{-5mm}
+\caption{C program code with presence conditions}
+\end{figure}
+
+To use presence conditions, the root note (here: an implementation module) as to
+have a \ic{FeatureModelConfiguration} annotation. It can be added via an
+intention if the \ic{com.mbeddr.cc.var.annotations} language is used in the
+respective model. The annotation points to the feature model whose features
+the respective presence conditions should be able to reference. The
+configuration and the presence conditions are attached via intentions.
+
+An existing presence condition can be \emph{pulled up} to a suitable parent
+element by pressing \keystroke{Ctrl-Shift-P} on the presence condition.
+
+The background color of an annotated note is computed from the expression.
+Several annotated nodes that use the same expression will have the same color
+(an idea borrowed from Christian Kaestner's CIDE).
+
+\subsection{Replacements}
+
+A presence condition is basically like an \ic{\#ifdef}: the node to which it is
+attached will \emph{not} be in the resulting system if the presence condition is
+\emph{false}. But sometimes you want to \emph{replace} something with something
+else if a certain feature condition is met. You can use replacements for that.
+\fig{examplecode2} shows an example.
+
+\begin{figure}[h]
+\vspace{-5mm}
+\begin{center} 
+  \includegraphics[width=8cm]{figures/cc/examplecode2.png}
+\end{center}
+\vspace{-5mm}
+\label{examplecode2}
+\caption{C program code with a conditional replacement}
+\end{figure}
+
+A replacement replaces the node to which it is attached with an alternative node
+if the condition is \emph{true}. In the example in \fig{examplecode2} the
+function call and the \ic{10} are both replaced with a \ic{42}. Note that you'll
+get an error if you try to replace a node with something that is not
+structurally compatible, or has the wrong type.
+
+\subsection{Attribute Injection}
+
+We have seen that features can have attributes and configurations specify values
+for these attributes. These values can be injected into programs. The attributes
+of those features that are used in ancestors of the current node are in scope
+and can be used. A type check is performed and errors are reported if the type
+is not compatible.
+
+\greyboxnote{At this time, this can only be done for expressions. This may be
+generalized later.}
+
+\begin{figure}[h]
+\vspace{-5mm}
+\begin{center} 
+  \includegraphics[width=8cm]{figures/cc/examplecode3.png}
+\end{center}
+\label{examplecode3}
+\vspace{-5mm}
+\caption{C program code with an attribute injection (\ic{value} is the name of
+an attribute of the \ic{valueTest} feature)}
+\end{figure}
+
+\vspace{-10mm}
+\subsection{Projection Magic}
+
+It is possible to show and edit the program as a product line (with the
+annotations), undecorated (with no annotations) as well as in a given variant.
+\fig{projection} shows an example. Note that due to a limitation in MPS, it is
+currently not possible to show the values of attributes directly in the program
+in variant mode. The projection mode can be changed in the configuration annotation on the root
+node.
+
+
+\begin{figure}[h]
+\vspace{-5mm}
+\begin{center} 
+  \includegraphics[width=15cm]{figures/cc/projection.png}
+\end{center}
+\label{projection}
+\vspace{-5mm}
+\caption{C program rendered in product line mode and in two variants}
+\end{figure}
+
+
+
+
+\subsection{Building Variable Systems}
+
+Building variable systems is a little bit tricky. The problem is that you will
+want to build different variants at the same time. To make the C build simple,
+each variant should live in its own directory. If you want to generate into
+different directories with MPS, you need different models. This results in the
+following setup:
+
+\begin{itemize}
+  \item You create one or more models that contains your product line artifacts,
+  i.e. the program code, the feature models and the configurations.
+  \item Then, for each variant you want to build, you create yet another model.
+  This model imports the product line model (the one above). In this model you
+  will have a build configuration that determines the variant that will be
+  built.
+\end{itemize}
+
+Figure \fig{build} shows an example of such as setup with one product line model
+(\ic{fm}) and two variant models \ic{v\_debug} and \ic{v\_production}. 
+
+\begin{figure}[h]
+\vspace{-5mm}
+\begin{center} 
+  \includegraphics[width=15cm]{figures/cc/build.png}
+\end{center}
+\label{build}
+\vspace{-5mm}
+\caption{Model setup and transformation configuration for generating several
+variants at the same time.}
+\end{figure}
+
+Each of the product models contains a \ic{BuildConfiguration} that specifies the
+structure of the binary. In addition, the \ic{BuildConfiguration} has an
+\ic{VariabilityTransformationConfiguration} attached to it. It determines which
+configuration should be used for each feature model (\ic{Debug} in the
+example). You can attach on of these to a build config using an intention, but
+you need the \ic{com.mbeddr.cc.var.buildconfig} language for that.
+

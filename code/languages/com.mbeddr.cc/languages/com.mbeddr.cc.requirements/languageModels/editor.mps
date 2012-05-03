@@ -95,6 +95,14 @@
       <property name="virtualPackage" nameId="tpck.1193676396447" value="icons" />
       <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="75wo.1959513067891167052" resolveInfo="ReqStatusRedIcon" />
     </node>
+    <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="6806638153458777150">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="icons" />
+      <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="75wo.1959513067891167050" resolveInfo="ReqStatusBlueIcon" />
+    </node>
+    <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="6806638153458777153">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="icons" />
+      <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="75wo.1959513067891167051" resolveInfo="ReqStatusGreenIcon" />
+    </node>
   </roots>
   <root id="8745401669462962631">
     <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="8745401669463116072">
@@ -1453,6 +1461,12 @@
     <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="1959513067891167055">
       <property name="text" nameId="tpc2.1073389577007" value="" />
     </node>
+  </root>
+  <root id="6806638153458777150">
+    <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="6806638153458777152" />
+  </root>
+  <root id="6806638153458777153">
+    <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="6806638153458777155" />
   </root>
 </model>
 
