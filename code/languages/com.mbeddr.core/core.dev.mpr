@@ -68,6 +68,14 @@
             </Library>
           </value>
         </entry>
+        <entry key="helloworld">
+          <value>
+            <Library>
+              <option name="name" value="helloworld" />
+              <option name="path" value="${mbeddr.github.core.home}/code/applications/HelloWorld" />
+            </Library>
+          </value>
+        </entry>
         <entry key="mpsutil">
           <value>
             <Library>
