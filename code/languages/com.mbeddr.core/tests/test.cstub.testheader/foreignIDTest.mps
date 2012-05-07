@@ -1,27 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model modelUID="r:9bba804f-61f7-43f4-b8d1-e18a2024fe01(manuallyImported)">
+<model modelUID="r:5f51a3c4-b888-4c77-ab2f-0df8d670b4f3(foreignIDTest)">
   <persistence version="7" />
-  <language namespace="5ce2e6a6-053e-4914-9e21-b9b7b61f3666(com.mbeddr.core.cstubs)" />
-  <language namespace="783af01f-87a7-412c-be99-293a162652b5(com.mbeddr.core.embedded)" />
-  <devkit namespace="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
+  <language namespace="efda956e-491e-4f00-ba14-36af2f213ecf(com.mbeddr.core.udt)" />
+  <language namespace="a9d69647-0840-491e-bf39-2eb0805d2011(com.mbeddr.core.statements)" />
+  <language namespace="61c69711-ed61-4850-81d9-7714ff227fb0(com.mbeddr.core.expressions)" />
+  <language namespace="6d11763d-483d-4b2b-8efc-09336c1b0001(com.mbeddr.core.modules)" />
+  <import index="3vhs" modelUID="r:9bba804f-61f7-43f4-b8d1-e18a2024fe01(manuallyImported)" version="-1" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
-  <import index="punb" modelUID="r:401d5aa1-f59d-49c0-833e-cf94fb548e92(com.mbeddr.core.cstubs.structure)" version="-1" implicit="yes" />
   <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="10" implicit="yes" />
+  <import index="clbe" modelUID="r:61d840b4-12c1-49ea-b142-b2a1550a9b15(com.mbeddr.core.udt.structure)" version="3" implicit="yes" />
+  <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="0" implicit="yes" />
+  <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="0" implicit="yes" />
   <roots>
-    <node type="punb.HeaderImportSpec" typeId="punb.7097640331099443677" id="3029574721709407579">
-      <property name="includeDir" nameId="punb.7097640331099443678" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.core/tests/test.cstub.testheader/headers" />
+    <node type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="6035280294641564539">
+      <property name="name" nameId="tpck.1169194664001" value="TestReferences" />
     </node>
     <node type="mj1l.TypeSizeConfiguration" typeId="mj1l.3335993110369795380" id="6035280294641564497" />
   </roots>
-  <root id="3029574721709407579">
-    <node role="regExFilters" roleId="punb.6068664427596389837" type="punb.Mapping" typeId="punb.6068664427596388055" id="6068664427596419326">
-      <property name="name" nameId="tpck.1169194664001" value="@ (\\w)*" />
+  <root id="6035280294641564539">
+    <node role="imports" roleId="x27k.1317894735999304826" type="x27k.ModuleImport" typeId="x27k.1317894735999299713" id="1742926242434152273">
+      <link role="module" roleId="x27k.1317894735999299714" targetNodeId="3vhs.~globalVariablesTestHeader" resolveInfo="globalVariablesTestHeader" />
     </node>
-    <node role="filters" roleId="punb.6068664427596389836" type="punb.Mapping" typeId="punb.6068664427596388055" id="6068664427596393206">
-      <property name="name" nameId="tpck.1169194664001" value="@ address" />
+    <node role="imports" roleId="x27k.1317894735999304826" type="x27k.ModuleImport" typeId="x27k.1317894735999299713" id="1742926242434152784">
+      <link role="module" roleId="x27k.1317894735999299714" targetNodeId="3vhs.~ModuleWithTypeDef" resolveInfo="ModuleWithTypeDef" />
     </node>
-    <node role="defines" roleId="punb.7097640331099443690" type="punb.Define" typeId="punb.7097640331099443679" id="3029574721709407580">
-      <property name="name" nameId="tpck.1169194664001" value="TESTDEFINESYMBOL" />
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="6035280294641564555">
+      <property name="name" nameId="tpck.1169194664001" value="funWithSmallT" />
+      <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="6035280294641564556">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.AssignmentStatement" typeId="c4fa.6275792049641552210" id="1742926242434152281">
+          <node role="rvalue" roleId="c4fa.6275792049641552219" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="1742926242434152283">
+            <property name="value" nameId="mj1l.8860443239512128104" value="20" />
+          </node>
+          <node role="lvalue" roleId="c4fa.6275792049641552218" type="x27k.GlobalVarRef" typeId="x27k.6610873504380357354" id="1742926242434152278">
+            <link role="var" roleId="x27k.6610873504380357355" targetNodeId="3vhs.~i1" resolveInfo="i1" />
+          </node>
+        </node>
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="1742926242434152785">
+          <property name="name" nameId="tpck.1169194664001" value="smallT" />
+          <node role="type" roleId="mj1l.318113533128716676" type="clbe.TypeDefType" typeId="clbe.6116558314501347863" id="1742926242434152786">
+            <link role="typeDef" roleId="clbe.6116558314501347864" targetNodeId="3vhs.~smallT" resolveInfo="smallT" />
+          </node>
+          <node role="init" roleId="c4fa.4185783222026502647" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="1742926242434152788">
+            <property name="value" nameId="mj1l.8860443239512128104" value="20" />
+          </node>
+        </node>
+      </node>
+      <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="1742926242434152274" />
     </node>
   </root>
   <root id="6035280294641564497">
