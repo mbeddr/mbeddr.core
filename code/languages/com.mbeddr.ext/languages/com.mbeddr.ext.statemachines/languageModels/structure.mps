@@ -393,6 +393,9 @@
       <property name="value" nameId="tpce.1105725733873" value="an int type with value ranges" />
       <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473914776" resolveInfo="shortDescription" />
     </node>
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="5095889050030668281">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="mj1l.4006257212296812970" resolveInfo="INumeric" />
+    </node>
   </root>
   <root id="1786180596061208520">
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="1786180596061208522">
