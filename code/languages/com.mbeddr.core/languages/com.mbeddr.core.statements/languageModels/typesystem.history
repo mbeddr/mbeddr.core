@@ -2,12 +2,6 @@
 <history>
   <StructureModification>
     <dependencies>
-      <model index="yq40" modelUID="r:152b3fc0-83a1-4bab-a8cd-565eb8483785(com.mbeddr.core.pointers.structure)" version="-1" />
-    </dependencies>
-    <rename id="yq40.6883925235272353063" type="CHILD" from="type2Calculate" to="expr" />
-  </StructureModification>
-  <StructureModification>
-    <dependencies>
       <model index="yvc7" modelUID="r:7a3b06b4-e496-46c1-a58f-c1aedae1c5fc(com.mbeddr.core.statements.textGen)" version="0" />
       <model index="h99f" modelUID="r:31fa710b-b3ef-4cb0-bfde-11f20f2ce96a(com.mbeddr.core.pointers.textGen)" version="-1" />
       <model index="j4gk" modelUID="r:44b6f9b4-bfdb-4b99-b104-960ec485d777(com.mbeddr.core.statements.editor)" version="0" />
