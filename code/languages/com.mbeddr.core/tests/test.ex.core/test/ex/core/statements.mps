@@ -29,8 +29,8 @@
   <root id="8441331188640862293">
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.GlobalConstantDeclaration" typeId="x27k.3788988821851860886" id="471432042395854437">
       <property name="name" nameId="tpck.1169194664001" value="star" />
-      <node role="value" roleId="x27k.3788988821851871048" type="mj1l.StringLiteral" typeId="mj1l.2088909457728253268" id="471432042395970243">
-        <property name="brackets" value="true" />
+      <node role="value" roleId="x27k.3788988821851871048" type="mj1l.StringLiteral" typeId="mj1l.2088909457728253268" id="7896055371488954556">
+        <property name="value" nameId="mj1l.2088909457728253269" value="..." />
       </node>
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="yz9a.TestCase" typeId="yz9a.6275792049641586523" id="8441331188640862294">
