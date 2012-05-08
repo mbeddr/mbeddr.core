@@ -1307,7 +1307,7 @@
       <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473891462" resolveInfo="alias" />
     </node>
     <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.IntegerConceptProperty" typeId="tpce.1105725498741" id="5962749441518381745">
-      <property name="value" nameId="tpce.1105725713309" value="900" />
+      <property name="value" nameId="tpce.1105725713309" value="990" />
       <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="5763383285156530264" resolveInfo="priolevel" />
     </node>
     <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="4058325937810995690">
@@ -1330,7 +1330,7 @@
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="3342324201518846461" resolveInfo="INumberOperation" />
     </node>
     <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.IntegerConceptProperty" typeId="tpce.1105725498741" id="1136530067488156616">
-      <property name="value" nameId="tpce.1105725713309" value="700" />
+      <property name="value" nameId="tpce.1105725713309" value="970" />
       <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="5763383285156530264" resolveInfo="priolevel" />
     </node>
     <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="1136530067488156618">
