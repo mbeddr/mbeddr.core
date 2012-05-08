@@ -1108,9 +1108,6 @@
             </node>
           </node>
         </node>
-        <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="6610873504380339026">
-          <property name="text" nameId="tpc2.1073389577007" value="var" />
-        </node>
         <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="1782955756756904785">
           <property name="text" nameId="tpc2.1073389577007" value="const" />
           <node role="renderingCondition" roleId="tpc2.1142887637401" type="tpc2.QueryFunction_NodeCondition" typeId="tpc2.1142886221719" id="1782955756756904786">

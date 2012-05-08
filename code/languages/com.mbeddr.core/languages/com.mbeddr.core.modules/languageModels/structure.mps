@@ -609,10 +609,6 @@
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="4861891518412170551">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="c4fa.1782955756756899612" resolveInfo="IConstable" />
     </node>
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="6610873504380339043">
-      <property name="value" nameId="tpce.1105725733873" value="var" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473891462" resolveInfo="alias" />
-    </node>
     <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.BooleanConceptProperty" typeId="tpce.1105725574259" id="6610873504380377807">
       <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="1317894735999278394" resolveInfo="exportable" />
     </node>
