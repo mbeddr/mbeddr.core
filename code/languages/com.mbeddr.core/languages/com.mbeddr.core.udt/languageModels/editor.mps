@@ -105,6 +105,7 @@
       </node>
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="6394819151180597821">
         <property name="text" nameId="tpc2.1073389577007" value="." />
+        <link role="actionMap" roleId="tpc2.1139959269582" targetNodeId="vrqd.5095889050032295398" resolveInfo="deleteDotOrArrow" />
         <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.PunctuationLeftStyleClassItem" typeId="tpc2.1233758997495" id="6394819151180597822">
           <property name="flag" nameId="tpc2.1186414551515" value="true" />
         </node>
@@ -114,7 +115,9 @@
       </node>
       <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Indent" typeId="tpc2.1237303669825" id="6394819151180597824" />
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_RefNode" typeId="tpc2.1073389882823" id="6394819151180597825">
+        <property name="attractsFocus" nameId="tpc2.1130859485024" value="3" />
         <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="mj1l.6603034309021722828" />
+        <link role="actionMap" roleId="tpc2.1139959269582" targetNodeId="vrqd.5095889050032295398" resolveInfo="deleteDotOrArrow" />
       </node>
     </node>
   </root>
@@ -241,6 +244,7 @@
       </node>
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="6631303246402173907">
         <property name="text" nameId="tpc2.1073389577007" value="-&gt;" />
+        <link role="actionMap" roleId="tpc2.1139959269582" targetNodeId="vrqd.5095889050032295398" resolveInfo="deleteDotOrArrow" />
         <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.PunctuationLeftStyleClassItem" typeId="tpc2.1233758997495" id="6631303246402173908">
           <property name="flag" nameId="tpc2.1186414551515" value="true" />
         </node>
@@ -250,7 +254,9 @@
       </node>
       <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Indent" typeId="tpc2.1237303669825" id="6631303246402173910" />
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_RefNode" typeId="tpc2.1073389882823" id="6631303246402173911">
+        <property name="attractsFocus" nameId="tpc2.1130859485024" value="3" />
         <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="mj1l.6603034309021722828" />
+        <link role="actionMap" roleId="tpc2.1139959269582" targetNodeId="vrqd.5095889050032295398" resolveInfo="deleteDotOrArrow" />
       </node>
     </node>
   </root>
@@ -537,6 +543,7 @@
       </node>
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="5882395403881957156">
         <property name="text" nameId="tpc2.1073389577007" value="." />
+        <link role="actionMap" roleId="tpc2.1139959269582" targetNodeId="vrqd.5095889050032295398" resolveInfo="deleteDotOrArrow" />
         <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.PunctuationLeftStyleClassItem" typeId="tpc2.1233758997495" id="5882395403881957157">
           <property name="flag" nameId="tpc2.1186414551515" value="true" />
         </node>
@@ -546,7 +553,9 @@
       </node>
       <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Indent" typeId="tpc2.1237303669825" id="5882395403881957159" />
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_RefNode" typeId="tpc2.1073389882823" id="5882395403881957160">
+        <property name="attractsFocus" nameId="tpc2.1130859485024" value="3" />
         <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="mj1l.6603034309021722828" />
+        <link role="actionMap" roleId="tpc2.1139959269582" targetNodeId="vrqd.5095889050032295398" resolveInfo="deleteDotOrArrow" />
       </node>
     </node>
   </root>
@@ -568,6 +577,7 @@
       </node>
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="227598611278060800">
         <property name="text" nameId="tpc2.1073389577007" value="-&gt;" />
+        <link role="actionMap" roleId="tpc2.1139959269582" targetNodeId="vrqd.5095889050032295398" resolveInfo="deleteDotOrArrow" />
         <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.PunctuationLeftStyleClassItem" typeId="tpc2.1233758997495" id="227598611278060801">
           <property name="flag" nameId="tpc2.1186414551515" value="true" />
         </node>
@@ -577,7 +587,9 @@
       </node>
       <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Indent" typeId="tpc2.1237303669825" id="227598611278060803" />
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_RefNode" typeId="tpc2.1073389882823" id="227598611278060804">
+        <property name="attractsFocus" nameId="tpc2.1130859485024" value="3" />
         <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="mj1l.6603034309021722828" />
+        <link role="actionMap" roleId="tpc2.1139959269582" targetNodeId="vrqd.5095889050032295398" resolveInfo="deleteDotOrArrow" />
       </node>
     </node>
   </root>
