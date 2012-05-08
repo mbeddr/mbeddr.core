@@ -21,6 +21,10 @@
     <node type="tp1t.ConceptConstraints" typeId="tp1t.1213093968558" id="6021475212426107481">
       <link role="concept" roleId="tp1t.1213093996982" targetNodeId="vs0r.8628579007224192794" resolveInfo="INameFirstCharLowerCase" />
     </node>
+    <node type="tp1t.ConceptConstraints" typeId="tp1t.1213093968558" id="5095889050031044991">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="documentation" />
+      <link role="concept" roleId="tp1t.1213093996982" targetNodeId="vs0r.3857533489766836826" resolveInfo="DocPart" />
+    </node>
   </roots>
   <root id="7024921229555594294">
     <node role="property" roleId="tp1t.1213098023997" type="tp1t.NodePropertyConstraint" typeId="tp1t.1147467115080" id="7024921229555594295">
@@ -79,5 +83,6 @@
   </root>
   <root id="7024921229556319962" />
   <root id="6021475212426107481" />
+  <root id="5095889050031044991" />
 </model>
 
