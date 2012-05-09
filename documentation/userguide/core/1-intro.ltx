@@ -153,38 +153,15 @@ us if you want to become a committer.
 
 The mbeddr debugger is based on \ic{gdb}, which has been installed as part of
 the Cygwin install. However, we don't use \ic{gdb} directly; rather we use the
-Eclipse CDT debug bridge. This contains a native code, and Java has to be able
-to find this native code. Hence, the \ic{java.library.path} property has to be
-set as part of the MPS JVM startup. It has to point to a path that depends on
-your OS platform. 
+Eclipse CDT debug bridge. This contains native code, and Java has to be able
+to find this native code. 
 
-Open the mps startup script (\ic{.bat} or \ic{.sh}) and look for the line that
-begins with
 
-\begin{code}
-set ADDITIONAL_JVM_ARGS=
-\end{code}
-
-It should be used to set the property, as shown in the following code (keep it
-in one line!):
-
-\begin{code}
-set ADDITIONAL_JVM_ARGS=-Djava.library.path=
-  "<mbeddr-root>/code/languages/com.mbeddr.core/languages/com.mbeddr.core.debug/lib/spawner/<os>"
-\end{code}
-
-The \ic{<mbeddr-root>} points to the root directory of the mbeddr languages as
-cloned from github or unzipped after download. \ic{<os>} has to be set
-specifically for your platform, it can be any of \ic{linux.x86},
-\ic{linux.x86\_64}, \ic{macosx..x86\_64}, \ic{macosx.ppc}, \ic{macosx.x86},
-\ic{win32.x86}, \ic{win32.x86\_64}. We suggest you take a look at the respective directory
-structure to better understand what's going on.
-
-The debugger needs a special library to control the \ic{gdb} process. We
-packaged this library into a MPS plugin named \emph{spawner}. Please download this plugin 
-from \url{bit.ly/K8HPD2} and unzip it into the \ic{plugins} directory of your
-MPS installation.
-
+We provide a special plugin which is responsible
+for loading the native code. This plugin is packaged into a zip file named
+\emph{spawner} and stored it in the directory \ic{mbeddr.core/tools/spawner}.
+In order to use the debugger, please unzip this plugin into the \ic{plugins}
+directory of your MPS installation.
 
 \section{Important keyboard shortcuts in MPS and mbeddr}
 
