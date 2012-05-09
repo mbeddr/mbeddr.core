@@ -136,14 +136,9 @@
                   </node>
                 </node>
               </node>
-              <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="5679441017214012600">
-                <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="5679441017214012615">
-                  <node role="operand" roleId="tpee.1197027771414" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="5679441017214012601">
-                    <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="5679441017214012593" resolveInfo="at" />
-                  </node>
-                  <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="5679441017214012620">
-                    <link role="link" roleId="tp25.1138056516764" targetNodeId="yq40.5679441017214012546" />
-                  </node>
+              <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="5463756505474838746">
+                <node role="expression" roleId="tpee.1068580123156" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="5463756505474838747">
+                  <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="5679441017214012593" resolveInfo="at" />
                 </node>
               </node>
             </node>
