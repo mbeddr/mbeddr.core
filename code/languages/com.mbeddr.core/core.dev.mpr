@@ -35,6 +35,7 @@
       <modulePath path="${project}/languages/com.mbeddr.core.udt/udt.mpl" folder="core" />
       <modulePath path="${project}/languages/com.mbeddr.core.unittest/unittest.mpl" folder="core-extended" />
       <modulePath path="${project}/languages/com.mbeddr.core.util/util.mpl" folder="core-extended" />
+      <modulePath path="${project}/languages/com/mbeddr/core/runconfiguration/runconfiguration.mpl" folder="core" />
       <modulePath path="${project}/solutions/com.mbeddr.core.debug.spawner/spawner.msd" folder="core" />
       <modulePath path="${project}/solutions/com.mbeddr.core.statistics/statistics.msd" folder="core" />
       <modulePath path="${project}/tests/aLibrary/aLibrary.msd" folder="tests" />

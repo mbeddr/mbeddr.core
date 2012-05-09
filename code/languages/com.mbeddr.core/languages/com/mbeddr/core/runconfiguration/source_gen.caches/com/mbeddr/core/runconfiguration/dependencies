@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dependenciesRoot>
+  <dependency className="com.mbeddr.core.runconfiguration.Language" file="Language.java">
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.util.Collection" />
+    <classNode dependClassName="jetbrains.mps.generator.runtime.TemplateModule" />
+    <classNode dependClassName="jetbrains.mps.ide.findusages.BaseFindUsagesDescriptor" />
+    <classNode dependClassName="jetbrains.mps.lang.typesystem.runtime.IHelginsDescriptor" />
+    <classNode dependClassName="jetbrains.mps.project.structure.modules.ModuleReference" />
+    <classNode extendsClassName="jetbrains.mps.smodel.language.LanguageRuntime" />
+  </dependency>
+</dependenciesRoot>
+
