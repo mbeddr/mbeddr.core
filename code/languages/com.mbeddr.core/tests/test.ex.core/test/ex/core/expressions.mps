@@ -4153,8 +4153,8 @@
       <node role="body" roleId="yz9a.6275792049641586525" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="61358920859968945">
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="61358920859970316">
           <property name="name" nameId="tpck.1169194664001" value="testArray" />
-          <node role="init" roleId="c4fa.4185783222026502647" type="yq40.ArrayInitExpression" typeId="yq40.5679441017214045880" id="61358920859970324">
-            <node role="exprs" roleId="yq40.5679441017214045881" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="61358920859970325">
+          <node role="init" roleId="c4fa.4185783222026502647" type="c4fa.ArrayInitExpression" typeId="c4fa.5095889050031622570" id="61358920859970324">
+            <node role="exprs" roleId="c4fa.5095889050031622571" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="61358920859970325">
               <property name="value" nameId="mj1l.8860443239512128104" value="10" />
             </node>
           </node>

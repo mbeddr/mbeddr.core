@@ -52,6 +52,10 @@
     <node type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="5095889050031055796">
       <property name="name" nameId="tpck.1169194664001" value="IContainerOfUniqueNames" />
     </node>
+    <node type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="5095889050032705070">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="config" />
+      <property name="name" nameId="tpck.1169194664001" value="IConfigurationItemWithProcessor" />
+    </node>
   </roots>
   <root id="7024921229555594291">
     <node role="extends" roleId="tpce.1169127546356" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7024921229555594292">
@@ -135,5 +139,10 @@
     </node>
   </root>
   <root id="5095889050031055796" />
+  <root id="5095889050032705070">
+    <node role="extends" roleId="tpce.1169127546356" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="5095889050032705071">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="4459718605982007336" resolveInfo="IConfigurationItem" />
+    </node>
+  </root>
 </model>
 
