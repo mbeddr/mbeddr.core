@@ -745,7 +745,8 @@
         </node>
       </node>
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Property" typeId="tpc2.1073389658414" id="2088909457728253281">
-        <property name="noTargetText" nameId="tpc2.1139852716018" value="..." />
+        <property name="allowEmptyText" nameId="tpc2.1140114345053" value="true" />
+        <property name="emptyNoTargetText" nameId="tpc2.1214560368769" value="true" />
         <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="mj1l.2088909457728253269" resolveInfo="value" />
         <link role="styleClass" roleId="tpc2.1186406756722" targetNodeId="8118534740657810997" resolveInfo="text" />
       </node>
@@ -1156,9 +1157,6 @@
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="6143206611772219495">
         <property name="text" nameId="tpc2.1073389577007" value="&gt;" />
         <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.PunctuationLeftStyleClassItem" typeId="tpc2.1233758997495" id="6143206611772222818">
-          <property name="flag" nameId="tpc2.1186414551515" value="true" />
-        </node>
-        <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.PunctuationRightStyleClassItem" typeId="tpc2.1233759184865" id="6143206611772222820">
           <property name="flag" nameId="tpc2.1186414551515" value="true" />
         </node>
         <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.FontStyleStyleClassItem" typeId="tpc2.1186403751766" id="6143206611772219497" />

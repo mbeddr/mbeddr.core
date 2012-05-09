@@ -243,6 +243,10 @@
     </node>
   </root>
   <root id="6631303246402173901">
+    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.IntegerConceptProperty" typeId="tpce.1105725498741" id="8793291511880171519">
+      <property name="value" nameId="tpce.1105725713309" value="4000" />
+      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="mj1l.5763383285156530264" resolveInfo="priolevel" />
+    </node>
     <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="4058325937810995957">
       <property name="value" nameId="tpce.1105725733873" value="struct member access (pointer)" />
       <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473914776" resolveInfo="shortDescription" />
@@ -439,6 +443,10 @@
     </node>
   </root>
   <root id="227598611278060792">
+    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.IntegerConceptProperty" typeId="tpce.1105725498741" id="8793291511880171520">
+      <property name="value" nameId="tpce.1105725713309" value="4000" />
+      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="mj1l.5763383285156530264" resolveInfo="priolevel" />
+    </node>
     <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="227598611278060793">
       <property name="value" nameId="tpce.1105725733873" value="union member access (pointer)" />
       <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473914776" resolveInfo="shortDescription" />

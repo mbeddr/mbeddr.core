@@ -19,6 +19,7 @@
     <dependency reexport="false">0f5cacaf-ece9-4a2a-8680-26d09a4e0b41(test.ex.core)</dependency>
     <dependency reexport="false">ac3c3af3-071f-47d4-8ed9-dd9e752fdfdf(com.mbeddr.mpsutil.graphview)</dependency>
     <dependency reexport="false">783af01f-87a7-412c-be99-293a162652b5(com.mbeddr.core.embedded)</dependency>
+    <dependency reexport="false">5ce2e6a6-053e-4914-9e21-b9b7b61f3666(com.mbeddr.core.cstubs)</dependency>
   </dependencies>
   <usedLanguages>
     <usedLanguage>2d7fadf5-33f6-4e80-a78f-0f739add2bde(com.mbeddr.core.buildconfig)</usedLanguage>
