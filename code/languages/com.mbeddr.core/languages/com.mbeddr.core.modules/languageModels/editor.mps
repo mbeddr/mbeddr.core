@@ -202,6 +202,10 @@
     <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="2877808180148899334">
       <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="x27k.2877808180148899328" resolveInfo="CommentModuleContent" />
     </node>
+    <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="5095889050032706548">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="functions" />
+      <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="x27k.5095889050032706476" resolveInfo="InlineConfigItem" />
+    </node>
   </roots>
   <root id="6437088627575722855">
     <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="6437088627575722857">
@@ -2249,6 +2253,17 @@
     </node>
     <node role="inspectedCellModel" roleId="tpc2.1078153129734" type="tpc2.CellModel_Property" typeId="tpc2.1073389658414" id="5607679019054070679">
       <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="x27k.2877808180148899333" resolveInfo="comment" />
+    </node>
+  </root>
+  <root id="5095889050032706548">
+    <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="5095889050032706550">
+      <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Indent" typeId="tpc2.1237303669825" id="5095889050032706552" />
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="5095889050032706553">
+        <property name="text" nameId="tpc2.1073389577007" value="inline text:" />
+      </node>
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Property" typeId="tpc2.1073389658414" id="5095889050032706555">
+        <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="x27k.5095889050032706514" resolveInfo="inlinetext" />
+      </node>
     </node>
   </root>
 </model>
