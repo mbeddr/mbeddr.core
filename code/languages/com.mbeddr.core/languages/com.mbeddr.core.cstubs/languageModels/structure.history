@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<history>
+  <StructureModification>
+    <dependencies>
+      <model index="punb" modelUID="r:401d5aa1-f59d-49c0-833e-cf94fb548e92(com.mbeddr.core.cstubs.structure)" version="-1" />
+    </dependencies>
+    <rename id="punb.3907424226054658970" type="PROPERTY" from="value" to="name" />
+  </StructureModification>
+</history>
+
