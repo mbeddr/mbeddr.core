@@ -295,6 +295,10 @@
             <link role="configuration" roleId="v7ag.5172178961827877444" targetNodeId="1854993706183439991" resolveInfo="C" />
             <link role="instance" roleId="v7ag.4491876417845704583" targetNodeId="1854993706183439992" resolveInfo="m" />
             <link role="port" roleId="v7ag.5172178961828017559" targetNodeId="1854993706183447577" resolveInfo="val" />
+            <node role="portRef" roleId="v7ag.6616025724454701213" type="v7ag.AdapterInstancePortRef" typeId="v7ag.6616025724454668918" id="4458342957759773907">
+              <link role="instance" roleId="v7ag.6616025724454668919" targetNodeId="1854993706183439992" resolveInfo="m" />
+              <link role="port" roleId="v7ag.6616025724454668920" targetNodeId="1854993706183447577" resolveInfo="val" />
+            </node>
           </node>
           <node role="contents" roleId="x27k.6437088627575722833" type="yz9a.TestCase" typeId="yz9a.6275792049641586523" id="1854993706183439994">
             <property name="exported" nameId="x27k.1317894735999272944" value="true" />
@@ -2380,6 +2384,20 @@
             <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="5172178961828242706">
               <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="5172178961828242707">
                 <node role="expression" roleId="tpee.1068580123156" type="tpf8.TemplateFunctionParameter_sourceNode" typeId="tpf8.1167169188348" id="5172178961828242708" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node role="portRef" roleId="v7ag.6616025724454701213" type="v7ag.AdapterInstancePortRef" typeId="v7ag.6616025724454668918" id="4458342957759773940">
+          <link role="instance" roleId="v7ag.6616025724454668919" targetNodeId="1854993706183451484" resolveInfo="m" />
+          <link role="port" roleId="v7ag.6616025724454668920" targetNodeId="1854993706183451482" resolveInfo="val" />
+          <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.ReferenceMacro" typeId="tpf8.1088761943574" id="4458342957759773941">
+            <property name="linkRole" nameId="tpck.1757699476691236116" value="instance" />
+            <node role="referentFunction" roleId="tpf8.1167770376702" type="tpf8.ReferenceMacro_GetReferent" typeId="tpf8.1167770111131" id="4458342957759773942">
+              <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="4458342957759773943">
+                <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="4458342957759773944">
+                  <node role="expression" roleId="tpee.1068580123156" type="tpf8.TemplateFunctionParameter_sourceNode" typeId="tpf8.1167169188348" id="4458342957759773945" />
+                </node>
               </node>
             </node>
           </node>
