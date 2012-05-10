@@ -207,12 +207,20 @@
       <link role="configuration" roleId="v7ag.5172178961827877444" targetNodeId="4157464901390188222" resolveInfo="instances" />
       <link role="instance" roleId="v7ag.4491876417845704583" targetNodeId="4157464901390188223" resolveInfo="s" />
       <link role="port" roleId="v7ag.5172178961828017559" targetNodeId="6307143892175816628" resolveInfo="sensor" />
+      <node role="portRef" roleId="v7ag.6616025724454701213" type="v7ag.AdapterInstancePortRef" typeId="v7ag.6616025724454668918" id="7537522850027796963">
+        <link role="instance" roleId="v7ag.6616025724454668919" targetNodeId="4157464901390188223" resolveInfo="s" />
+        <link role="port" roleId="v7ag.6616025724454668920" targetNodeId="6307143892175816628" resolveInfo="sensor" />
+      </node>
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="v7ag.PortAdapter" typeId="v7ag.4491876417845704581" id="8729447926330607726">
       <property name="name" nameId="tpck.1169194664001" value="manager" />
       <link role="configuration" roleId="v7ag.5172178961827877444" targetNodeId="4157464901390188222" resolveInfo="instances" />
       <link role="instance" roleId="v7ag.4491876417845704583" targetNodeId="8729447926330607721" resolveInfo="m" />
       <link role="port" roleId="v7ag.5172178961828017559" targetNodeId="8729447926330476744" resolveInfo="acq" />
+      <node role="portRef" roleId="v7ag.6616025724454701213" type="v7ag.AdapterInstancePortRef" typeId="v7ag.6616025724454668918" id="7537522850027796962">
+        <link role="instance" roleId="v7ag.6616025724454668919" targetNodeId="8729447926330607721" resolveInfo="m" />
+        <link role="port" roleId="v7ag.6616025724454668920" targetNodeId="8729447926330476744" resolveInfo="acq" />
+      </node>
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="yz9a.TestCase" typeId="yz9a.6275792049641586523" id="6307143892175882833">
       <property name="exported" nameId="x27k.1317894735999272944" value="true" />
