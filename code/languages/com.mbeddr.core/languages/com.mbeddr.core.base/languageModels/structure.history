@@ -3,8 +3,8 @@
   <StructureModification>
     <dependencies>
       <model index="wayc" modelUID="r:8ccd67a3-3ed6-472a-aeac-67e00cb6b91d(com.mbeddr.core.expressions.constraints)" version="-1" />
-      <model index="5c5e" modelUID="r:7a2f88d6-4108-4d29-b499-cc4de14ea970(com.mbeddr.core.base.constraints)" version="-1" />
       <model index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="7" />
+      <model index="5c5e" modelUID="r:7a2f88d6-4108-4d29-b499-cc4de14ea970(com.mbeddr.core.base.constraints)" version="-1" />
       <model index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="-1" />
     </dependencies>
     <move id="mj1l.995988627238200005" to="vs0r.7024921229555594291" />
@@ -27,11 +27,11 @@
       <model index="yvc7" modelUID="r:7a3b06b4-e496-46c1-a58f-c1aedae1c5fc(com.mbeddr.core.statements.textGen)" version="-1" />
       <model index="3ho" modelUID="r:5464eee6-9739-45c3-be18-bcd3e5d07f5a(com.mbeddr.core.base.textGen)" version="-1" />
       <model index="rj8d" modelUID="r:da9fd96f-5c71-45ab-b2da-1aa6232ec67f(com.mbeddr.core.statements.behavior)" version="-1" />
-      <model index="j4gk" modelUID="r:44b6f9b4-bfdb-4b99-b104-960ec485d777(com.mbeddr.core.statements.editor)" version="-1" />
       <model index="r4b4" modelUID="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" version="-1" />
+      <model index="j4gk" modelUID="r:44b6f9b4-bfdb-4b99-b104-960ec485d777(com.mbeddr.core.statements.editor)" version="-1" />
       <model index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="0" />
-      <model index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="0" />
       <model index="7kf" modelUID="r:52560947-b3d4-4502-82de-09a64d1cf1ac(com.mbeddr.core.statements.intentions)" version="0" />
+      <model index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="0" />
     </dependencies>
     <move id="c4fa.1679452829930469420" to="vs0r.3857533489766146432" />
     <move id="c4fa.1679452829930469425" to="vs0r.3857533489766146431" />
@@ -182,6 +182,27 @@
       <model index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="1" />
     </dependencies>
     <rename id="vs0r.5095889050031055796" type="CONCEPT" from="ContainerOfUniqueNames" to="IContainerOfUniqueNames" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="hba4" modelUID="r:f5bd2ad9-cd54-4408-b815-07f9f306f074(com.mbeddr.mpsutil.blutil.structure)" version="3" />
+      <model index="r4b4" modelUID="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" version="0" />
+      <model index="muut" modelUID="r:7b6c196f-8133-489b-a5b2-6ed29b884e93(com.mbeddr.mpsutil.blutil.editor)" version="-1" />
+      <model index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="2" />
+    </dependencies>
+    <move id="vs0r.1793958740514612279" to="hba4.1793958740514623183" />
+    <move id="vs0r.1793958740514612286" to="hba4.1793958740514623185" />
+    <move id="vs0r.1793958740514612276" to="hba4.1793958740514623184" />
+    <move id="vs0r.1793958740514612274" to="hba4.1793958740514623182" />
+    <move id="r4b4.1793958740514612285" to="muut.1793958740514623190" />
+    <move id="r4b4.1793958740514612280" to="muut.1793958740514623186" />
+    <move id="r4b4.1793958740514612282" to="muut.1793958740514623187" />
+    <move id="r4b4.1793958740514612290" to="muut.1793958740514623191" />
+    <move id="r4b4.1793958740514612294" to="muut.1793958740514623193" />
+    <move id="r4b4.1793958740514612287" to="muut.1793958740514623188" />
+    <move id="r4b4.1793958740514612284" to="muut.1793958740514623194" />
+    <move id="r4b4.1793958740514612295" to="muut.1793958740514623192" />
+    <move id="r4b4.1793958740514612288" to="muut.1793958740514623189" />
   </StructureModification>
 </history>
 
