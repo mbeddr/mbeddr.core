@@ -3597,6 +3597,37 @@
             </node>
           </node>
         </node>
+        <node role="portRef" roleId="v7ag.6616025724454701213" type="v7ag.AdapterInstancePortRef" typeId="v7ag.6616025724454668918" id="7537522850027555984">
+          <link role="instance" roleId="v7ag.6616025724454668919" targetNodeId="5172178961828344469" resolveInfo="m" />
+          <link role="port" roleId="v7ag.6616025724454668920" targetNodeId="5172178961828344473" resolveInfo="val" />
+          <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.ReferenceMacro" typeId="tpf8.1088761943574" id="7537522850027555985">
+            <property name="linkRole" nameId="tpck.1757699476691236116" value="instance" />
+            <node role="referentFunction" roleId="tpf8.1167770376702" type="tpf8.ReferenceMacro_GetReferent" typeId="tpf8.1167770111131" id="7537522850027555986">
+              <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="7537522850027555987">
+                <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="7537522850027555988">
+                  <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="7537522850027555992">
+                    <node role="operand" roleId="tpee.1197027771414" type="tpf8.TemplateFunctionParameter_sourceNode" typeId="tpf8.1167169188348" id="7537522850027555989" />
+                    <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="7537522850027555998">
+                      <link role="link" roleId="tp25.1138056516764" targetNodeId="mxvz.2151335435833463271" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.ReferenceMacro" typeId="tpf8.1088761943574" id="7537522850027555999">
+            <property name="linkRole" nameId="tpck.1757699476691236116" value="port" />
+            <node role="referentFunction" roleId="tpf8.1167770376702" type="tpf8.ReferenceMacro_GetReferent" typeId="tpf8.1167770111131" id="7537522850027556000">
+              <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="7537522850027556001">
+                <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="7537522850027556002">
+                  <node role="expression" roleId="tpee.1068580123156" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="7537522850027556003">
+                    <property name="value" nameId="tpee.1070475926801" value="___validate" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
       <node role="imports" roleId="x27k.1317894735999304826" type="x27k.ModuleImport" typeId="x27k.1317894735999299713" id="5172178961828344474">
         <link role="module" roleId="x27k.1317894735999299714" targetNodeId="wst6.1252295221377549447" resolveInfo="MockLib" />
