@@ -10,7 +10,7 @@
   <import index="51wr" modelUID="r:b31f1c3c-99aa-4f1e-a329-cba27efb1a6b(com.mbeddr.core.buildconfig.structure)" version="1" implicit="yes" />
   <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="-1" implicit="yes" />
   <import index="k146" modelUID="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" version="1" implicit="yes" />
-  <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="1" implicit="yes" />
+  <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="2" implicit="yes" />
   <roots>
     <node type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="55677248263828545">
       <property name="name" nameId="tpck.1169194664001" value="TestDriver" />
@@ -19,32 +19,18 @@
     <node type="mj1l.TypeSizeConfiguration" typeId="mj1l.3335993110369795380" id="7496733358578280435" />
   </roots>
   <root id="55677248263828545">
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="5095889050033424176">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1336489359008_1" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="5095889050033424177">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1336489359123_2" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="5095889050032878076">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1336483098249_1" />
+    </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="55677248263828546">
       <property name="name" nameId="tpck.1169194664001" value="main" />
       <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="55677248263828547">
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="4936905794596904945">
-          <property name="name" nameId="tpck.1169194664001" value="i" />
-          <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int16tType" typeId="mj1l.8463282783691618435" id="4936905794596904946" />
-          <node role="init" roleId="c4fa.4185783222026502647" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="4936905794596904948">
-            <property name="value" nameId="mj1l.8860443239512128104" value="23" />
-          </node>
-        </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="5257705196707279143">
-          <node role="expr" roleId="c4fa.7254843406768833939" type="x27k.FunctionCall" typeId="x27k.5950410542643524492" id="5257705196707279144">
-            <link role="function" roleId="x27k.5950410542643524493" targetNodeId="c4su.7646082028326282914" resolveInfo="add" />
-            <node role="actuals" roleId="x27k.5950410542643524495" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="5257705196707279145">
-              <property name="value" nameId="mj1l.8860443239512128104" value="2" />
-            </node>
-            <node role="actuals" roleId="x27k.5950410542643524495" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="5257705196707279147">
-              <property name="value" nameId="mj1l.8860443239512128104" value="5" />
-            </node>
-          </node>
-        </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="2344630019804334379">
-          <node role="expr" roleId="c4fa.7254843406768833939" type="x27k.FunctionCall" typeId="x27k.5950410542643524492" id="2344630019804334380">
-            <link role="function" roleId="x27k.5950410542643524493" targetNodeId="377216468299859414" resolveInfo="bla" />
-          </node>
-        </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="x27k.ReturnStatement" typeId="x27k.8967919205527146149" id="55677248263839945">
           <node role="expression" roleId="x27k.8967919205527146150" type="yz9a.ExecuteTestExpression" typeId="yz9a.186853311768094629" id="55677248263985366">
             <node role="tests" roleId="yz9a.5686538669182341016" type="yz9a.TestCaseRef" typeId="yz9a.5686538669182340985" id="55677248263985367">
@@ -55,23 +41,14 @@
       </node>
       <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int32tType" typeId="mj1l.8463282783691618440" id="5708867820622277851" />
     </node>
-    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="377216468299859414">
-      <property name="name" nameId="tpck.1169194664001" value="bla" />
-      <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="377216468299859415">
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="377216468299859418">
-          <property name="name" nameId="tpck.1169194664001" value="result" />
-          <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int16tType" typeId="mj1l.8463282783691618435" id="377216468299859419" />
-          <node role="init" roleId="c4fa.4185783222026502647" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="377216468299859421">
-            <property name="value" nameId="mj1l.8860443239512128104" value="400" />
-          </node>
-        </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type="x27k.ReturnStatement" typeId="x27k.8967919205527146149" id="377216468299859423">
-          <node role="expression" roleId="x27k.8967919205527146150" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="377216468299859424">
-            <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="377216468299859418" resolveInfo="result" />
-          </node>
-        </node>
-      </node>
-      <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int16tType" typeId="mj1l.8463282783691618435" id="377216468299859417" />
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="5095889050031607144">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1336469936040_3" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="5095889050031607150">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1336469944048_7" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="5095889050031607151">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1336469944200_8" />
     </node>
     <node role="imports" roleId="x27k.1317894735999304826" type="x27k.ModuleImport" typeId="x27k.1317894735999299713" id="3608436418819719412">
       <link role="module" roleId="x27k.1317894735999299714" targetNodeId="c4su.7646082028326282913" resolveInfo="HelperFunctions" />
@@ -101,6 +78,9 @@
     </node>
     <node role="configurationItems" roleId="vs0r.4459718605982007338" type="k146.ReportingConfiguration" typeId="k146.4459718605982051949" id="4459718605982728845">
       <node role="strategy" roleId="k146.4459718605982051999" type="k146.PrintfReportingStrategy" typeId="k146.4459718605982051980" id="4459718605982728846" />
+    </node>
+    <node role="configurationItems" roleId="vs0r.4459718605982007338" type="x27k.InlineConfigItem" typeId="x27k.5095889050032706476" id="5095889050032944459">
+      <property name="inlinetext" nameId="x27k.5095889050032706514" value="__inline__" />
     </node>
   </root>
   <root id="7496733358578280435">
