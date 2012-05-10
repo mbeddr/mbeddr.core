@@ -36,6 +36,9 @@
     <node type="tpd4.NonTypesystemRule" typeId="tpd4.1195214364922" id="6616025724454843621">
       <property name="name" nameId="tpck.1169194664001" value="check_IMustBeMigratedAutomatically" />
     </node>
+    <node type="tpd4.TypesystemQuickFix" typeId="tpd4.1216383170661" id="4458342957759924280">
+      <property name="name" nameId="tpck.1169194664001" value="fixMustBeMigratedAutomatically" />
+    </node>
   </roots>
   <root id="4459718605982014131">
     <node role="body" roleId="tpd4.1195213635060" type="tpee.StatementList" typeId="tpee.1068580123136" id="4459718605982014132">
@@ -632,9 +635,9 @@
             </node>
             <node role="helginsIntention" roleId="tpd4.1227096802791" type="tpd4.TypesystemIntention" typeId="tpd4.1210784285454" id="6616025724454843635">
               <property name="applyImmediately" nameId="tpd4.1216127910019" value="true" />
-              <link role="quickFix" roleId="tpd4.1216388525179" targetNodeId="20u6.6616025724454822200" resolveInfo="fixMustBeMigratedAutomatically" />
+              <link role="quickFix" roleId="tpd4.1216388525179" targetNodeId="4458342957759924280" resolveInfo="fixMustBeMigratedAutomatically" />
               <node role="actualArgument" roleId="tpd4.1210784493590" type="tpd4.TypesystemIntentionArgument" typeId="tpd4.1210784384552" id="6616025724454843636">
-                <link role="quickFixArgument" roleId="tpd4.1216386999476" targetNodeId="20u6.6616025724454822203" resolveInfo="nodeToBeFixed" />
+                <link role="quickFixArgument" roleId="tpd4.1216386999476" targetNodeId="4458342957759924281" resolveInfo="nodeToBeFixed" />
                 <node role="value" roleId="tpd4.1210784642750" type="tpd4.ApplicableNodeReference" typeId="tpd4.1174650418652" id="6616025724454843637">
                   <link role="applicableNode" roleId="tpd4.1174650432090" targetNodeId="6616025724454843638" resolveInfo="imm" />
                 </node>
@@ -647,6 +650,28 @@
     <node role="applicableNode" roleId="tpd4.1174648101952" type="tpd4.ConceptReference" typeId="tpd4.1174642788531" id="6616025724454843638">
       <property name="name" nameId="tpck.1169194664001" value="imm" />
       <link role="concept" roleId="tpd4.1174642800329" targetNodeId="vs0r.6616025724454843605" resolveInfo="IMustBeMigratedAutomatically" />
+    </node>
+  </root>
+  <root id="4458342957759924280">
+    <node role="quickFixArgument" roleId="tpd4.1216383476350" type="tpd4.QuickFixArgument" typeId="tpd4.1216383482742" id="4458342957759924281">
+      <property name="name" nameId="tpck.1169194664001" value="nodeToBeFixed" />
+      <node role="argumentType" roleId="tpd4.1216383511839" type="tp25.SNodeType" typeId="tp25.1138055754698" id="4458342957759924282">
+        <link role="concept" roleId="tp25.1138405853777" targetNodeId="vs0r.6616025724454843605" resolveInfo="IMustBeMigratedAutomatically" />
+      </node>
+    </node>
+    <node role="executeBlock" roleId="tpd4.1216383424566" type="tpd4.QuickFixExecuteBlock" typeId="tpd4.1216383287005" id="4458342957759924283">
+      <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="4458342957759924284">
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="4458342957759924285">
+          <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="4458342957759924286">
+            <node role="operand" roleId="tpee.1197027771414" type="tpd4.QuickFixArgumentReference" typeId="tpd4.1216390348809" id="4458342957759924287">
+              <link role="quickFixArgument" roleId="tpd4.1216390348810" targetNodeId="4458342957759924281" resolveInfo="nodeToBeFixed" />
+            </node>
+            <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_ConceptMethodCall" typeId="tp25.1179409122411" id="4458342957759924288">
+              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="hwgx.6616025724454843615" resolveInfo="migrate" />
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
   </root>
 </model>

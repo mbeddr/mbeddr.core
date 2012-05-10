@@ -68,9 +68,6 @@
       <property name="name" nameId="tpck.1169194664001" value="typeof_DisptachMatch" />
       <property name="virtualPackage" nameId="tpck.1193676396447" value="dispatch" />
     </node>
-    <node type="tpd4.TypesystemQuickFix" typeId="tpd4.1216383170661" id="6616025724454822200">
-      <property name="name" nameId="tpck.1169194664001" value="fixMustBeMigratedAutomatically" />
-    </node>
   </roots>
   <root id="374287044672146060">
     <node role="body" roleId="tpd4.1195213635060" type="tpee.StatementList" typeId="tpee.1068580123136" id="374287044672146061">
@@ -1114,28 +1111,6 @@
     <node role="applicableNode" roleId="tpd4.1174648101952" type="tpd4.ConceptReference" typeId="tpd4.1174642788531" id="8331426562765952009">
       <property name="name" nameId="tpck.1169194664001" value="m" />
       <link role="concept" roleId="tpd4.1174642800329" targetNodeId="hba4.374287044672141848" resolveInfo="DisptachMatch" />
-    </node>
-  </root>
-  <root id="6616025724454822200">
-    <node role="quickFixArgument" roleId="tpd4.1216383476350" type="tpd4.QuickFixArgument" typeId="tpd4.1216383482742" id="6616025724454822203">
-      <property name="name" nameId="tpck.1169194664001" value="nodeToBeFixed" />
-      <node role="argumentType" roleId="tpd4.1216383511839" type="tp25.SNodeType" typeId="tp25.1138055754698" id="6616025724454827227">
-        <link role="concept" roleId="tp25.1138405853777" targetNodeId="vs0r.6616025724454843605" resolveInfo="IMustBeMigratedAutomatically" />
-      </node>
-    </node>
-    <node role="executeBlock" roleId="tpd4.1216383424566" type="tpd4.QuickFixExecuteBlock" typeId="tpd4.1216383287005" id="6616025724454822201">
-      <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="6616025724454822202">
-        <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="6616025724454827232">
-          <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="6616025724454827237">
-            <node role="operand" roleId="tpee.1197027771414" type="tpd4.QuickFixArgumentReference" typeId="tpd4.1216390348809" id="6616025724454827234">
-              <link role="quickFixArgument" roleId="tpd4.1216390348810" targetNodeId="6616025724454822203" resolveInfo="nodeToBeFixed" />
-            </node>
-            <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_ConceptMethodCall" typeId="tp25.1179409122411" id="6616025724454827243">
-              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="hwgx.6616025724454843615" resolveInfo="migrate" />
-            </node>
-          </node>
-        </node>
-      </node>
     </node>
   </root>
 </model>
