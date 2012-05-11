@@ -41,6 +41,7 @@
   <import index="h1wo" modelUID="r:4e43dc7a-f1ab-43e0-b206-f2ab67b064d9(com.mbeddr.core.cstubs.editor)" version="-1" />
   <import index="punb" modelUID="r:401d5aa1-f59d-49c0-833e-cf94fb548e92(com.mbeddr.core.cstubs.structure)" version="0" />
   <import index="lgzw" modelUID="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.util.regex(JDK/java.util.regex@java_stub)" version="-1" />
+  <import index="s5bn" modelUID="r:a92dafc6-eacf-4328-984c-d7620d951c7f(com.mbeddr.core.legacy.structure)" version="1" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="tp25" modelUID="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" version="-1" implicit="yes" />
   <import index="tp2q" modelUID="r:00000000-0000-4000-0000-011c8959032e(jetbrains.mps.baseLanguage.collections.structure)" version="7" implicit="yes" />
@@ -9990,7 +9991,7 @@
           <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="8720844099624956331">
             <property name="name" nameId="tpck.1169194664001" value="lit" />
             <node role="type" roleId="tpee.5680397130376446158" type="tp25.SNodeType" typeId="tp25.1138055754698" id="8720844099624956332">
-              <link role="concept" roleId="tp25.1138405853777" targetNodeId="mj1l.8860443239512128090" resolveInfo="Literal" />
+              <link role="concept" roleId="tp25.1138405853777" targetNodeId="mj1l.8860443239512128050" resolveInfo="Expression" />
             </node>
           </node>
         </node>
@@ -10075,12 +10076,12 @@
                 <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="5255370464256887395">
                   <property name="name" nameId="tpck.1169194664001" value="textLit" />
                   <node role="type" roleId="tpee.5680397130376446158" type="tp25.SNodeType" typeId="tp25.1138055754698" id="5255370464256887396">
-                    <link role="concept" roleId="tp25.1138405853777" targetNodeId="x27k.8720844099624588923" resolveInfo="ArbitraryTextLiteral" />
+                    <link role="concept" roleId="tp25.1138405853777" targetNodeId="s5bn.8720844099624588923" resolveInfo="OpaqueTextWithType" />
                   </node>
                   <node role="initializer" roleId="tpee.1068431790190" type="tpee.GenericNewExpression" typeId="tpee.1145552977093" id="5255370464256887397">
                     <node role="creator" roleId="tpee.1145553007750" type="tp25.SNodeCreator" typeId="tp25.1180636770613" id="5255370464256887398">
                       <node role="createdType" roleId="tp25.1180636770616" type="tp25.SNodeType" typeId="tp25.1138055754698" id="5255370464256887399">
-                        <link role="concept" roleId="tp25.1138405853777" targetNodeId="x27k.8720844099624588923" resolveInfo="ArbitraryTextLiteral" />
+                        <link role="concept" roleId="tp25.1138405853777" targetNodeId="s5bn.8720844099624588923" resolveInfo="OpaqueTextWithType" />
                       </node>
                     </node>
                   </node>
@@ -10114,8 +10115,8 @@
                     <node role="operand" roleId="tpee.1197027771414" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="5255370464256887404">
                       <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="5255370464256887395" resolveInfo="textLit" />
                     </node>
-                    <node role="operation" roleId="tpee.1197027833540" type="tp25.SPropertyAccess" typeId="tp25.1138056022639" id="8720844099624589006">
-                      <link role="property" roleId="tp25.1138056395725" targetNodeId="x27k.8720844099624588924" resolveInfo="value" />
+                    <node role="operation" roleId="tpee.1197027833540" type="tp25.SPropertyAccess" typeId="tp25.1138056022639" id="5443628787102828396">
+                      <link role="property" roleId="tp25.1138056395725" targetNodeId="s5bn.5443628787102794761" resolveInfo="value" />
                     </node>
                   </node>
                 </node>
