@@ -3978,13 +3978,8 @@
                     </node>
                   </node>
                 </node>
-                <node role="nodeToCheck" roleId="tpd4.1174662598553" type="tpee.DotExpression" typeId="tpee.1197027756228" id="4006257212296773308">
-                  <node role="operand" roleId="tpee.1197027771414" type="tpd4.ApplicableNodeReference" typeId="tpd4.1174650418652" id="4006257212296773305">
-                    <link role="applicableNode" roleId="tpd4.1174650432090" targetNodeId="1762375172531559820" resolveInfo="boce" />
-                  </node>
-                  <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="4006257212296773313">
-                    <link role="link" roleId="tp25.1138056516764" targetNodeId="mj1l.8860443239512128065" />
-                  </node>
+                <node role="nodeToCheck" roleId="tpd4.1174662598553" type="tpd4.ApplicableNodeReference" typeId="tpd4.1174650418652" id="4006257212296773305">
+                  <link role="applicableNode" roleId="tpd4.1174650432090" targetNodeId="1762375172531559820" resolveInfo="boce" />
                 </node>
               </node>
               <node role="statement" roleId="tpee.1068581517665" type="tpd4.CreateEquationStatement" typeId="tpd4.1174658326157" id="4006257212296554273">
