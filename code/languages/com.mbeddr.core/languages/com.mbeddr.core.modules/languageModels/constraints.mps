@@ -7,7 +7,7 @@
   <devkit namespace="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="0" />
   <import index="clbe" modelUID="r:61d840b4-12c1-49ea-b142-b2a1550a9b15(com.mbeddr.core.udt.structure)" version="3" />
-  <import index="hwgx" modelUID="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)" version="0" />
+  <import index="hwgx" modelUID="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)" version="1" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="tp25" modelUID="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" version="16" implicit="yes" />
   <import index="tpee" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="3" implicit="yes" />
@@ -114,10 +114,6 @@
     </node>
     <node type="tp1t.ConceptConstraints" typeId="tp1t.1213093968558" id="1444839136044514446">
       <link role="concept" roleId="tp1t.1213093996982" targetNodeId="x27k.7024921229556176022" resolveInfo="CommentedModuleContent" />
-    </node>
-    <node type="tp1t.ConceptConstraints" typeId="tp1t.1213093968558" id="8720844099624588925">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="global" />
-      <link role="concept" roleId="tp1t.1213093996982" targetNodeId="x27k.8720844099624588923" resolveInfo="ArbitraryTextLiteral" />
     </node>
     <node type="tp1t.ConceptConstraints" typeId="tp1t.1213093968558" id="5763926061855771109">
       <link role="concept" roleId="tp1t.1213093996982" targetNodeId="x27k.2877808180148899328" resolveInfo="CommentModuleContent" />
@@ -819,28 +815,6 @@
                 <property name="value" nameId="tpee.1070475926801" value="__comment" />
               </node>
             </node>
-          </node>
-        </node>
-      </node>
-    </node>
-  </root>
-  <root id="8720844099624588925">
-    <node role="canBeChild" roleId="tp1t.1213106463729" type="tp1t.ConstraintFunction_CanBeAChild" typeId="tp1t.1202989531578" id="8720844099624588936">
-      <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="8720844099624588937">
-        <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="8720844099624588938">
-          <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="8720844099624588957">
-            <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="8720844099624588942">
-              <node role="operand" roleId="tpee.1197027771414" type="tp1t.ConstraintFunctionParameter_parentNode" typeId="tp1t.1202989658459" id="8720844099624588939" />
-              <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_GetAncestorOperation" typeId="tp25.1171407110247" id="8720844099624588948">
-                <node role="parameter" roleId="tp25.1144104376918" type="tp25.OperationParm_Concept" typeId="tp25.1144101972840" id="8720844099624588949">
-                  <node role="conceptArgument" roleId="tp25.1207343664468" type="tp25.RefConcept_Reference" typeId="tp25.1177026924588" id="8720844099624588952">
-                    <link role="conceptDeclaration" roleId="tp25.1177026940964" targetNodeId="x27k.3788988821851860886" resolveInfo="GlobalConstantDeclaration" />
-                  </node>
-                </node>
-                <node role="parameter" roleId="tp25.1144104376918" type="tp25.OperationParm_Inclusion" typeId="tp25.1144100932627" id="8720844099624588954" />
-              </node>
-            </node>
-            <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_IsNotNullOperation" typeId="tp25.1172008320231" id="8720844099624588963" />
           </node>
         </node>
       </node>

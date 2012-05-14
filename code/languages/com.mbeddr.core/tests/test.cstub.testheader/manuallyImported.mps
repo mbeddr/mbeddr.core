@@ -3,9 +3,10 @@
   <persistence version="7" />
   <language namespace="5ce2e6a6-053e-4914-9e21-b9b7b61f3666(com.mbeddr.core.cstubs)" />
   <language namespace="783af01f-87a7-412c-be99-293a162652b5(com.mbeddr.core.embedded)" />
+  <language namespace="ad5e9db1-9600-47c7-86ef-614165b281b8(com.mbeddr.core.legacy)" />
   <devkit namespace="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
-  <import index="punb" modelUID="r:401d5aa1-f59d-49c0-833e-cf94fb548e92(com.mbeddr.core.cstubs.structure)" version="-1" implicit="yes" />
+  <import index="punb" modelUID="r:401d5aa1-f59d-49c0-833e-cf94fb548e92(com.mbeddr.core.cstubs.structure)" version="0" implicit="yes" />
   <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="10" implicit="yes" />
   <roots>
     <node type="punb.HeaderImportSpec" typeId="punb.7097640331099443677" id="3029574721709407579">
@@ -22,6 +23,105 @@
     </node>
     <node role="defines" roleId="punb.7097640331099443690" type="punb.Define" typeId="punb.7097640331099443679" id="3029574721709407580">
       <property name="name" nameId="tpck.1169194664001" value="TESTDEFINESYMBOL" />
+    </node>
+    <node role="headerFiles" roleId="punb.3907424226054663630" type="punb.HeaderFile" typeId="punb.3907424226054658969" id="5736095952432656854">
+      <property name="defaultInclude" nameId="punb.3907424226054663596" value="false" />
+      <property name="name" nameId="tpck.1169194664001" value="annonydmTypes.h" />
+      <property name="path" nameId="punb.3907424226054658974" value="${mbeddr.github.core.home}/code/landguages/com.mbeddr.core/tests/test.cstub.testheader/headers/annonymTypes.h" />
+    </node>
+    <node role="headerFiles" roleId="punb.3907424226054663630" type="punb.HeaderFile" typeId="punb.3907424226054658969" id="5736095952432656855">
+      <property name="defaultInclude" nameId="punb.3907424226054663596" value="false" />
+      <property name="name" nameId="tpck.1169194664001" value="commentsTestHeader.h" />
+      <property name="path" nameId="punb.3907424226054658974" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.core/tests/test.cstub.testheader/headers/commentsTestHeader.h" />
+    </node>
+    <node role="headerFiles" roleId="punb.3907424226054663630" type="punb.HeaderFile" typeId="punb.3907424226054658969" id="5736095952432656856">
+      <property name="defaultInclude" nameId="punb.3907424226054663596" value="false" />
+      <property name="name" nameId="tpck.1169194664001" value="defineTestHeader.h" />
+      <property name="path" nameId="punb.3907424226054658974" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.core/tests/test.cstub.testheader/headers/defineTestHeader.h" />
+    </node>
+    <node role="headerFiles" roleId="punb.3907424226054663630" type="punb.HeaderFile" typeId="punb.3907424226054658969" id="5736095952432656857">
+      <property name="defaultInclude" nameId="punb.3907424226054663596" value="false" />
+      <property name="name" nameId="tpck.1169194664001" value="enumTestHeader.h" />
+      <property name="path" nameId="punb.3907424226054658974" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.core/tests/test.cstub.testheader/headers/enumTestHeader.h" />
+    </node>
+    <node role="headerFiles" roleId="punb.3907424226054663630" type="punb.HeaderFile" typeId="punb.3907424226054658969" id="5736095952432656858">
+      <property name="defaultInclude" nameId="punb.3907424226054663596" value="false" />
+      <property name="name" nameId="tpck.1169194664001" value="functionTestHeader.h" />
+      <property name="path" nameId="punb.3907424226054658974" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.core/tests/test.cstub.testheader/headers/functionTestHeader.h" />
+    </node>
+    <node role="headerFiles" roleId="punb.3907424226054663630" type="punb.HeaderFile" typeId="punb.3907424226054658969" id="5736095952432656859">
+      <property name="defaultInclude" nameId="punb.3907424226054663596" value="false" />
+      <property name="name" nameId="tpck.1169194664001" value="globalVariablesTestHeader.h" />
+      <property name="path" nameId="punb.3907424226054658974" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.core/tests/test.cstub.testheader/headers/globalVariablesTestHeader.h" />
+    </node>
+    <node role="headerFiles" roleId="punb.3907424226054663630" type="punb.HeaderFile" typeId="punb.3907424226054658969" id="5736095952432656860">
+      <property name="defaultInclude" nameId="punb.3907424226054663596" value="false" />
+      <property name="name" nameId="tpck.1169194664001" value="ModuleUsesTypeDef.h" />
+      <property name="path" nameId="punb.3907424226054658974" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.core/tests/test.cstub.testheader/headers/ModuleUsesTypeDef.h" />
+    </node>
+    <node role="headerFiles" roleId="punb.3907424226054663630" type="punb.HeaderFile" typeId="punb.3907424226054658969" id="5736095952432656861">
+      <property name="defaultInclude" nameId="punb.3907424226054663596" value="false" />
+      <property name="name" nameId="tpck.1169194664001" value="ModuleUsesTypeDef2.h" />
+      <property name="path" nameId="punb.3907424226054658974" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.core/tests/test.cstub.testheader/headers/ModuleUsesTypeDef2.h" />
+    </node>
+    <node role="headerFiles" roleId="punb.3907424226054663630" type="punb.HeaderFile" typeId="punb.3907424226054658969" id="5736095952432656862">
+      <property name="name" nameId="tpck.1169194664001" value="ModuleUsesTypeDefOnlyDefaultImport.h" />
+      <property name="path" nameId="punb.3907424226054658974" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.core/tests/test.cstub.testheader/headers/ModuleUsesTypeDefOnlyDefaultImport.h" />
+    </node>
+    <node role="headerFiles" roleId="punb.3907424226054663630" type="punb.HeaderFile" typeId="punb.3907424226054658969" id="5736095952432656863">
+      <property name="defaultInclude" nameId="punb.3907424226054663596" value="true" />
+      <property name="name" nameId="tpck.1169194664001" value="ModuleWithTypeDef.h" />
+      <property name="path" nameId="punb.3907424226054658974" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.core/tests/test.cstub.testheader/headers/ModuleWithTypeDef.h" />
+    </node>
+    <node role="headerFiles" roleId="punb.3907424226054663630" type="punb.HeaderFile" typeId="punb.3907424226054658969" id="5736095952432656864">
+      <property name="defaultInclude" nameId="punb.3907424226054663596" value="false" />
+      <property name="name" nameId="tpck.1169194664001" value="structTestHeader.h" />
+      <property name="path" nameId="punb.3907424226054658974" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.core/tests/test.cstub.testheader/headers/structTestHeader.h" />
+    </node>
+    <node role="headerFiles" roleId="punb.3907424226054663630" type="punb.HeaderFile" typeId="punb.3907424226054658969" id="5736095952432656865">
+      <property name="defaultInclude" nameId="punb.3907424226054663596" value="false" />
+      <property name="name" nameId="tpck.1169194664001" value="typeDefTestHeader.h" />
+      <property name="path" nameId="punb.3907424226054658974" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.core/tests/test.cstub.testheader/headers/typeDefTestHeader.h" />
+    </node>
+    <node role="headerFiles" roleId="punb.3907424226054663630" type="punb.HeaderFile" typeId="punb.3907424226054658969" id="5736095952432656866">
+      <property name="defaultInclude" nameId="punb.3907424226054663596" value="false" />
+      <property name="name" nameId="tpck.1169194664001" value="typesTestHeader.h" />
+      <property name="path" nameId="punb.3907424226054658974" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.core/tests/test.cstub.testheader/headers/typesTestHeader.h" />
+    </node>
+    <node role="headerFiles" roleId="punb.3907424226054663630" type="punb.HeaderFile" typeId="punb.3907424226054658969" id="5736095952432656867">
+      <property name="defaultInclude" nameId="punb.3907424226054663596" value="false" />
+      <property name="name" nameId="tpck.1169194664001" value="unionTestHeader.h" />
+      <property name="path" nameId="punb.3907424226054658974" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.core/tests/test.cstub.testheader/headers/unionTestHeader.h" />
+    </node>
+    <node role="headerFiles" roleId="punb.3907424226054663630" type="punb.HeaderFile" typeId="punb.3907424226054658969" id="5736095952432656868">
+      <property name="defaultInclude" nameId="punb.3907424226054663596" value="false" />
+      <property name="name" nameId="tpck.1169194664001" value="utilsTest.h" />
+      <property name="path" nameId="punb.3907424226054658974" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.core/tests/test.cstub.testheader/headers/utilsTest.h" />
+    </node>
+    <node role="headerFiles" roleId="punb.3907424226054663630" type="punb.HeaderFile" typeId="punb.3907424226054658969" id="5736095952432656869">
+      <property name="defaultInclude" nameId="punb.3907424226054663596" value="false" />
+      <property name="name" nameId="tpck.1169194664001" value="testforinclude.h" />
+      <property name="path" nameId="punb.3907424226054658974" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.core/tests/test.cstub.testheader/headers/testforinclude/testforinclude.h" />
+    </node>
+    <node role="headerFiles" roleId="punb.3907424226054663630" type="punb.HeaderFile" typeId="punb.3907424226054658969" id="5736095952432656870">
+      <property name="defaultInclude" nameId="punb.3907424226054663596" value="false" />
+      <property name="name" nameId="tpck.1169194664001" value="virtualFolderFileA.h" />
+      <property name="path" nameId="punb.3907424226054658974" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.core/tests/test.cstub.testheader/headers/virtualfolderA1/virtualFolderFileA.h" />
+    </node>
+    <node role="headerFiles" roleId="punb.3907424226054663630" type="punb.HeaderFile" typeId="punb.3907424226054658969" id="5736095952432656871">
+      <property name="defaultInclude" nameId="punb.3907424226054663596" value="false" />
+      <property name="name" nameId="tpck.1169194664001" value="virtualFolderFileB.h" />
+      <property name="path" nameId="punb.3907424226054658974" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.core/tests/test.cstub.testheader/headers/virtualfolderA1/virtualfolderB/virtualFolderFileB.h" />
+    </node>
+    <node role="headerFiles" roleId="punb.3907424226054663630" type="punb.HeaderFile" typeId="punb.3907424226054658969" id="5736095952432656872">
+      <property name="defaultInclude" nameId="punb.3907424226054663596" value="false" />
+      <property name="name" nameId="tpck.1169194664001" value="virtualFolderFileC.h" />
+      <property name="path" nameId="punb.3907424226054658974" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.core/tests/test.cstub.testheader/headers/virtualfolderA1/virtualfolderB/virtualfolderC/virtualFolderFileC.h" />
+    </node>
+    <node role="headerFiles" roleId="punb.3907424226054663630" type="punb.HeaderFile" typeId="punb.3907424226054658969" id="5736095952432656873">
+      <property name="defaultInclude" nameId="punb.3907424226054663596" value="false" />
+      <property name="name" nameId="tpck.1169194664001" value="virtualFolderFileA.h" />
+      <property name="path" nameId="punb.3907424226054658974" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.core/tests/test.cstub.testheader/headers/virtualfolderA2/virtualFolderFileA.h" />
     </node>
   </root>
   <root id="6035280294641564497">

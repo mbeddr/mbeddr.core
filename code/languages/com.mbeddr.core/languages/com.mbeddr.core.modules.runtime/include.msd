@@ -16,8 +16,11 @@
     <dependency reexport="false">efda956e-491e-4f00-ba14-36af2f213ecf(com.mbeddr.core.udt)</dependency>
     <dependency reexport="false">ac3c3af3-071f-47d4-8ed9-dd9e752fdfdf(com.mbeddr.mpsutil.graphview)</dependency>
     <dependency reexport="false">f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)</dependency>
-    <dependency reexport="false">954c4d77-e24b-4e49-a5a5-5476c966c092(jetbrains.mps.gwt.client)</dependency>
     <dependency reexport="false">86ef8290-12bb-4ca7-947f-093788f263a9(jetbrains.mps.lang.project)</dependency>
+    <dependency reexport="false">954c4d77-e24b-4e49-a5a5-5476c966c092(jetbrains.mps.gwt.client)</dependency>
+    <dependency reexport="false">783af01f-87a7-412c-be99-293a162652b5(com.mbeddr.core.embedded)</dependency>
+    <dependency reexport="false">5ce2e6a6-053e-4914-9e21-b9b7b61f3666(com.mbeddr.core.cstubs)</dependency>
+    <dependency reexport="false">ad5e9db1-9600-47c7-86ef-614165b281b8(com.mbeddr.core.legacy)</dependency>
   </dependencies>
   <usedLanguages>
     <usedLanguage>63e0e566-5131-447e-90e3-12ea330e1a00(com.mbeddr.mpsutil.blutil)</usedLanguage>

@@ -17,7 +17,7 @@
   <language namespace="3bf5377a-e904-4ded-9754-5a516023bfaa(com.mbeddr.core.pointers)" />
   <devkit namespace="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   <import index="mxvz" modelUID="r:b92c0a08-d42f-4c78-a3f4-d5f989493286(com.mbeddr.ext.components.mock.structure)" version="-1" />
-  <import index="v7ag" modelUID="r:9596407c-f27a-49d3-abde-3a66293c5b61(com.mbeddr.ext.components.structure)" version="2" />
+  <import index="v7ag" modelUID="r:9596407c-f27a-49d3-abde-3a66293c5b61(com.mbeddr.ext.components.structure)" version="3" />
   <import index="wst6" modelUID="r:5025f227-3fb4-475d-a7c6-c0ad6140a10d(com.mbeddr.ext.components.mock.lib.main)" version="-1" />
   <import index="51wr" modelUID="r:b31f1c3c-99aa-4f1e-a329-cba27efb1a6b(com.mbeddr.core.buildconfig.structure)" version="1" />
   <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="-1" />
@@ -33,10 +33,10 @@
   <import index="tp25" modelUID="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" version="-1" implicit="yes" />
   <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="10" implicit="yes" />
   <import index="tp2q" modelUID="r:00000000-0000-4000-0000-011c8959032e(jetbrains.mps.baseLanguage.collections.structure)" version="7" implicit="yes" />
-  <import index="clbe" modelUID="r:61d840b4-12c1-49ea-b142-b2a1550a9b15(com.mbeddr.core.udt.structure)" version="-1" implicit="yes" />
+  <import index="clbe" modelUID="r:61d840b4-12c1-49ea-b142-b2a1550a9b15(com.mbeddr.core.udt.structure)" version="3" implicit="yes" />
   <import index="tpf3" modelUID="r:00000000-0000-4000-0000-011c895902f3(jetbrains.mps.lang.generator.generationContext.structure)" version="0" implicit="yes" />
   <import index="yz9a" modelUID="r:734c02dd-cc16-4184-99eb-5fd9f43aa37e(com.mbeddr.core.unittest.structure)" version="-1" implicit="yes" />
-  <import index="yq40" modelUID="r:152b3fc0-83a1-4bab-a8cd-565eb8483785(com.mbeddr.core.pointers.structure)" version="0" implicit="yes" />
+  <import index="yq40" modelUID="r:152b3fc0-83a1-4bab-a8cd-565eb8483785(com.mbeddr.core.pointers.structure)" version="1" implicit="yes" />
   <import index="k146" modelUID="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" version="1" implicit="yes" />
   <roots>
     <node type="tpf8.MappingConfiguration" typeId="tpf8.1095416546421" id="2151335435833468531">
@@ -295,6 +295,10 @@
             <link role="configuration" roleId="v7ag.5172178961827877444" targetNodeId="1854993706183439991" resolveInfo="C" />
             <link role="instance" roleId="v7ag.4491876417845704583" targetNodeId="1854993706183439992" resolveInfo="m" />
             <link role="port" roleId="v7ag.5172178961828017559" targetNodeId="1854993706183447577" resolveInfo="val" />
+            <node role="portRef" roleId="v7ag.6616025724454701213" type="v7ag.AdapterInstancePortRef" typeId="v7ag.6616025724454668918" id="4458342957759773907">
+              <link role="instance" roleId="v7ag.6616025724454668919" targetNodeId="1854993706183439992" resolveInfo="m" />
+              <link role="port" roleId="v7ag.6616025724454668920" targetNodeId="1854993706183447577" resolveInfo="val" />
+            </node>
           </node>
           <node role="contents" roleId="x27k.6437088627575722833" type="yz9a.TestCase" typeId="yz9a.6275792049641586523" id="1854993706183439994">
             <property name="exported" nameId="x27k.1317894735999272944" value="true" />
@@ -2384,6 +2388,20 @@
             </node>
           </node>
         </node>
+        <node role="portRef" roleId="v7ag.6616025724454701213" type="v7ag.AdapterInstancePortRef" typeId="v7ag.6616025724454668918" id="4458342957759773940">
+          <link role="instance" roleId="v7ag.6616025724454668919" targetNodeId="1854993706183451484" resolveInfo="m" />
+          <link role="port" roleId="v7ag.6616025724454668920" targetNodeId="1854993706183451482" resolveInfo="val" />
+          <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.ReferenceMacro" typeId="tpf8.1088761943574" id="4458342957759773941">
+            <property name="linkRole" nameId="tpck.1757699476691236116" value="instance" />
+            <node role="referentFunction" roleId="tpf8.1167770376702" type="tpf8.ReferenceMacro_GetReferent" typeId="tpf8.1167770111131" id="4458342957759773942">
+              <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="4458342957759773943">
+                <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="4458342957759773944">
+                  <node role="expression" roleId="tpee.1068580123156" type="tpf8.TemplateFunctionParameter_sourceNode" typeId="tpf8.1167169188348" id="4458342957759773945" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
       <node role="imports" roleId="x27k.1317894735999304826" type="x27k.ModuleImport" typeId="x27k.1317894735999299713" id="1854993706183451526">
         <link role="module" roleId="x27k.1317894735999299714" targetNodeId="wst6.1252295221377549447" resolveInfo="MockLib" />
@@ -3573,6 +3591,37 @@
                   </node>
                   <node role="operation" roleId="tpee.1197027833540" type="tp25.SPropertyAccess" typeId="tp25.1138056022639" id="5172178961828397257">
                     <link role="property" roleId="tp25.1138056395725" targetNodeId="tpck.1169194664001" resolveInfo="name" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node role="portRef" roleId="v7ag.6616025724454701213" type="v7ag.AdapterInstancePortRef" typeId="v7ag.6616025724454668918" id="7537522850027555984">
+          <link role="instance" roleId="v7ag.6616025724454668919" targetNodeId="5172178961828344469" resolveInfo="m" />
+          <link role="port" roleId="v7ag.6616025724454668920" targetNodeId="5172178961828344473" resolveInfo="val" />
+          <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.ReferenceMacro" typeId="tpf8.1088761943574" id="7537522850027555985">
+            <property name="linkRole" nameId="tpck.1757699476691236116" value="instance" />
+            <node role="referentFunction" roleId="tpf8.1167770376702" type="tpf8.ReferenceMacro_GetReferent" typeId="tpf8.1167770111131" id="7537522850027555986">
+              <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="7537522850027555987">
+                <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="7537522850027555988">
+                  <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="7537522850027555992">
+                    <node role="operand" roleId="tpee.1197027771414" type="tpf8.TemplateFunctionParameter_sourceNode" typeId="tpf8.1167169188348" id="7537522850027555989" />
+                    <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="7537522850027555998">
+                      <link role="link" roleId="tp25.1138056516764" targetNodeId="mxvz.2151335435833463271" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.ReferenceMacro" typeId="tpf8.1088761943574" id="7537522850027555999">
+            <property name="linkRole" nameId="tpck.1757699476691236116" value="port" />
+            <node role="referentFunction" roleId="tpf8.1167770376702" type="tpf8.ReferenceMacro_GetReferent" typeId="tpf8.1167770111131" id="7537522850027556000">
+              <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="7537522850027556001">
+                <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="7537522850027556002">
+                  <node role="expression" roleId="tpee.1068580123156" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="7537522850027556003">
+                    <property name="value" nameId="tpee.1070475926801" value="___validate" />
                   </node>
                 </node>
               </node>

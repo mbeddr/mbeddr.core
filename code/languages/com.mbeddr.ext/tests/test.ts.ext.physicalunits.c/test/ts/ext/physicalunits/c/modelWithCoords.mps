@@ -10,15 +10,19 @@
   <import index="sfuj" modelUID="r:05191be5-2070-4bfb-a3fe-8fe927520ecc(com.mbeddr.ext.coords.structure)" version="-1" implicit="yes" />
   <import index="3c6d" modelUID="r:d6d71b6a-f5ea-4b72-bd01-9d5b19792726(com.mbeddr.ext.physicalunits.c.structure)" version="0" implicit="yes" />
   <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="10" implicit="yes" />
-  <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="0" implicit="yes" />
+  <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="1" implicit="yes" />
   <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="0" implicit="yes" />
   <import index="ym4j" modelUID="r:cf0df747-2506-460f-a33d-eb236a605ee8(com.mbeddr.ext.physicalunits.structure)" version="10" implicit="yes" />
+  <import index="k146" modelUID="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" version="1" implicit="yes" />
+  <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="4" implicit="yes" />
+  <import index="51wr" modelUID="r:b31f1c3c-99aa-4f1e-a329-cba27efb1a6b(com.mbeddr.core.buildconfig.structure)" version="1" implicit="yes" />
   <roots>
     <node type="tp5g.NodesTestCase" typeId="tp5g.1216913645126" id="4497436839299134881">
       <property name="name" nameId="tpck.1169194664001" value="testCoords" />
     </node>
     <node type="mj1l.TypeSizeConfiguration" typeId="mj1l.3335993110369795380" id="4497436839299134884" />
     <node type="ym4j.UnitContainer" typeId="ym4j.3801772042669047872" id="4497436839299135003" />
+    <node type="51wr.BuildConfiguration" typeId="51wr.7717755763392524104" id="1798411515023801994" />
   </roots>
   <root id="4497436839299134881">
     <node role="nodesToCheck" roleId="tp5g.1217501822150" type="tp5g.TestNode" typeId="tp5g.1216989428737" id="4497436839299134882">
@@ -142,12 +146,18 @@
                     <property name="value" nameId="mj1l.8860443239512128104" value="20" />
                   </node>
                 </node>
+                <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodePropertiesContainer" typeId="tp5g.1215507532627" id="1798411515023802322">
+                  <node role="properties" roleId="tp5g.1215507909023" type="tp5g.NodeErrorPropety" typeId="tp5g.1215507671101" id="1798411515023802323" />
+                </node>
               </node>
             </node>
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="4497436839299136359" />
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="4497436839299136360" />
           </node>
           <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="4497436839299134935" />
+        </node>
+        <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodeOperationsContainer" typeId="tp5g.1215603922101" id="1798411515023801992">
+          <node role="operations" roleId="tp5g.1215604436604" type="tp5g.TypesCheckOperation" typeId="tp5g.1215607067978" id="1798411515023801993" />
         </node>
       </node>
     </node>
@@ -253,6 +263,16 @@
       </node>
       <node role="from" roleId="ym4j.2078797996880475937" type="sfuj.LocalCoords" typeId="sfuj.4497436839299102577" id="4497436839299135026" />
       <node role="to" roleId="ym4j.2078797996880475938" type="sfuj.GlobalCoords" typeId="sfuj.4497436839299102624" id="4497436839299135027" />
+    </node>
+  </root>
+  <root id="1798411515023801994">
+    <node role="target" roleId="51wr.5323740605968447026" type="51wr.DesktopPlatform" typeId="51wr.5323740605968447022" id="1798411515023801995">
+      <property name="compiler" nameId="51wr.5323740605968447024" value="gcc" />
+      <property name="compilerOptions" nameId="51wr.5323740605968447025" value="-std=c99" />
+      <property name="debugOptions" nameId="51wr.2736179788492003937" value="-g" />
+    </node>
+    <node role="configurationItems" roleId="vs0r.4459718605982007338" type="k146.ReportingConfiguration" typeId="k146.4459718605982051949" id="1798411515023801996">
+      <node role="strategy" roleId="k146.4459718605982051999" type="k146.PrintfReportingStrategy" typeId="k146.4459718605982051980" id="1798411515023801997" />
     </node>
   </root>
 </model>

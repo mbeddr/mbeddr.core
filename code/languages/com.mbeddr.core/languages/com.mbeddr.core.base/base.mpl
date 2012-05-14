@@ -9,6 +9,8 @@
   <dependencies>
     <dependency reexport="false">be090156-a678-454c-bd8f-89ebd4a0e6af(com.mbeddr.core.modules.gen#1758019824472882132)</dependency>
     <dependency reexport="false">6d11763d-483d-4b2b-8efc-09336c1b0001(com.mbeddr.core.modules)</dependency>
+    <dependency reexport="false">d4280a54-f6df-4383-aa41-d1b2bffa7eb1(com.mbeddr.core.base)</dependency>
+    <dependency reexport="false">63e0e566-5131-447e-90e3-12ea330e1a00(com.mbeddr.mpsutil.blutil)</dependency>
   </dependencies>
   <usedLanguages>
     <usedLanguage>13744753-c81f-424a-9c1b-cf8943bf4e86(jetbrains.mps.lang.sharedConcepts)</usedLanguage>

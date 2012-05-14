@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model modelUID="r:7b6c196f-8133-489b-a5b2-6ed29b884e93(com.mbeddr.mpsutil.blutil.editor)">
+<model modelUID="r:7b6c196f-8133-489b-a5b2-6ed29b884e93(com.mbeddr.mpsutil.blutil.editor)" version="0">
   <persistence version="7" />
   <language namespace="63e0e566-5131-447e-90e3-12ea330e1a00(com.mbeddr.mpsutil.blutil)" />
   <language namespace="18bc6592-03a6-4e29-a83a-7ff23bde13ba(jetbrains.mps.lang.editor)" />
   <devkit namespace="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
-  <import index="hba4" modelUID="r:f5bd2ad9-cd54-4408-b815-07f9f306f074(com.mbeddr.mpsutil.blutil.structure)" version="3" />
+  <import index="hba4" modelUID="r:f5bd2ad9-cd54-4408-b815-07f9f306f074(com.mbeddr.mpsutil.blutil.structure)" version="5" />
   <import index="tpcn" modelUID="r:00000000-0000-4000-0000-011c8959028b(jetbrains.mps.lang.structure.behavior)" version="-1" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="tpc2" modelUID="r:00000000-0000-4000-0000-011c8959029e(jetbrains.mps.lang.editor.structure)" version="32" implicit="yes" />
@@ -66,6 +66,9 @@
     <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="734120071946422049">
       <property name="virtualPackage" nameId="tpck.1193676396447" value="builder" />
       <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="hba4.734120071946422046" resolveInfo="ExpressionChildValue" />
+    </node>
+    <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="1793958740514623186">
+      <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="hba4.1793958740514623182" resolveInfo="MustBeCleanedUp" />
     </node>
   </roots>
   <root id="374287044672141851">
@@ -624,6 +627,24 @@
         </node>
       </node>
       <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Indent" typeId="tpc2.1237303669825" id="734120071946422053" />
+    </node>
+  </root>
+  <root id="1793958740514623186">
+    <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="1793958740514623187">
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="1793958740514623188">
+        <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Indent" typeId="tpc2.1237303669825" id="1793958740514623189" />
+        <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="1793958740514623190">
+          <property name="text" nameId="tpc2.1073389577007" value="DEPRECATED: MUST BE CLEANED UP" />
+        </node>
+        <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Property" typeId="tpc2.1073389658414" id="1793958740514623191">
+          <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="hba4.1793958740514623185" resolveInfo="comment" />
+        </node>
+        <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.BackgroundColorStyleClassItem" typeId="tpc2.1186404574412" id="1793958740514623192">
+          <property name="color" nameId="tpc2.1186403713874" value="yellow" />
+        </node>
+      </node>
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_AttributedNodeCell" typeId="tpc2.1149850725784" id="1793958740514623193" />
+      <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Vertical" typeId="tpc2.1106270571710" id="1793958740514623194" />
     </node>
   </root>
 </model>

@@ -9,8 +9,8 @@
   <import index="k146" modelUID="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" version="1" implicit="yes" />
   <import index="v7ag" modelUID="r:9596407c-f27a-49d3-abde-3a66293c5b61(com.mbeddr.ext.components.structure)" version="3" implicit="yes" />
   <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="10" implicit="yes" />
-  <import index="yq40" modelUID="r:152b3fc0-83a1-4bab-a8cd-565eb8483785(com.mbeddr.core.pointers.structure)" version="0" implicit="yes" />
-  <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="1" implicit="yes" />
+  <import index="yq40" modelUID="r:152b3fc0-83a1-4bab-a8cd-565eb8483785(com.mbeddr.core.pointers.structure)" version="1" implicit="yes" />
+  <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="4" implicit="yes" />
   <import index="51wr" modelUID="r:b31f1c3c-99aa-4f1e-a329-cba27efb1a6b(com.mbeddr.core.buildconfig.structure)" version="1" implicit="yes" />
   <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="1" implicit="yes" />
   <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="-1" implicit="yes" />
@@ -174,11 +174,19 @@
         <property name="name" nameId="tpck.1169194664001" value="ci1" />
         <link role="instance" roleId="v7ag.4491876417845704583" targetNodeId="9016194309503490032" resolveInfo="client1" />
         <link role="port" roleId="v7ag.5172178961828017559" targetNodeId="8933128519014038680" resolveInfo="ci" />
+        <node role="portRef" roleId="v7ag.6616025724454701213" type="v7ag.AdapterInstancePortRef" typeId="v7ag.6616025724454668918" id="4458342957759743029">
+          <link role="instance" roleId="v7ag.6616025724454668919" targetNodeId="9016194309503490032" resolveInfo="client1" />
+          <link role="port" roleId="v7ag.6616025724454668920" targetNodeId="8933128519014038680" resolveInfo="ci" />
+        </node>
       </node>
       <node role="adapter" roleId="v7ag.5172178961828436596" type="v7ag.PortAdapterInInstanceConfig" typeId="v7ag.5172178961828157634" id="8933128519014040098">
         <property name="name" nameId="tpck.1169194664001" value="ci2" />
         <link role="port" roleId="v7ag.5172178961828017559" targetNodeId="8933128519014038680" resolveInfo="ci" />
         <link role="instance" roleId="v7ag.4491876417845704583" targetNodeId="9016194309503490033" resolveInfo="client2" />
+        <node role="portRef" roleId="v7ag.6616025724454701213" type="v7ag.AdapterInstancePortRef" typeId="v7ag.6616025724454668918" id="4458342957759743030">
+          <link role="instance" roleId="v7ag.6616025724454668919" targetNodeId="9016194309503490033" resolveInfo="client2" />
+          <link role="port" roleId="v7ag.6616025724454668920" targetNodeId="8933128519014038680" resolveInfo="ci" />
+        </node>
       </node>
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="yz9a.TestCase" typeId="yz9a.6275792049641586523" id="8933128519014040090">

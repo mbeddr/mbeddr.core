@@ -60,6 +60,7 @@ ComponentsConfigItem [ fontsize=12.0 shape=record style=solid label= " { Compone
 ComponentsGenStrategy [ fontsize=12.0 shape=record style=solid label= " { abstract\n ComponentsGenStrategy } " ] ;
 ComponentMappingDebugHelper [ fontsize=12.0 shape=record style=solid label= " { ComponentMappingDebugHelper \n(Named) } " ] ;
 InterfaceToImplementationMapping [ fontsize=12.0 shape=record style=solid label= " { InterfaceToImplementationMapping | interfaceName \ncomponentNodeID \ncomponentModelName } " ] ;
+AdapterInstancePortRef [ fontsize=12.0 shape=record style=solid label= " { AdapterInstancePortRef } " ] ;
 IComponentContent [ fontsize=12.0 shape=rectangle style=dashed label= " IComponentContent \n(Named) " ] ;
 Interface -> ClientServerInterface [ dir=back weight=10.0 style=solid arrowtail = "empty" ]
 Interface -> MessageInterface [ dir=back weight=10.0 style=solid arrowtail = "empty" ]
@@ -110,6 +111,7 @@ IModuleContent -> InstanceConfiguration [ dir=back weight=3.0 style=dashed arrow
 ITyped -> MessageParameter [ dir=back weight=3.0 style=dashed arrowtail = "empty" ]
 ITyped -> OperationParameter [ dir=back weight=3.0 style=dashed arrowtail = "empty" ]
 IModuleContent -> PortAdapter [ dir=back weight=3.0 style=dashed arrowtail = "empty" ]
+IMustBeMigratedAutomatically -> PortAdapter [ dir=back weight=3.0 style=dashed arrowtail = "empty" ]
 IArgumentLike -> RunnableArgument [ dir=back weight=3.0 style=dashed arrowtail = "empty" ]
 IWatchablesProvider -> RunnableArgument [ dir=back weight=3.0 style=dashed arrowtail = "empty" ]
 IStepIntoable -> PortAdapterOpCallExpr [ dir=back weight=3.0 style=dashed arrowtail = "empty" ]
@@ -121,6 +123,7 @@ IStatmentListContainer -> WithPortStatement [ dir=back weight=3.0 style=dashed a
 ILocalVarScopeProvider -> WithPortStatement [ dir=back weight=3.0 style=dashed arrowtail = "empty" ]
 ISteppableContext -> WithPortStatement [ dir=back weight=3.0 style=dashed arrowtail = "empty" ]
 IStepIntoable -> InternalRunnableCall [ dir=back weight=3.0 style=dashed arrowtail = "empty" ]
+IMustBeMigratedAutomatically -> AbstractPortAdapter [ dir=back weight=3.0 style=dashed arrowtail = "empty" ]
 IConfigurationItem -> ComponentsConfigItem [ dir=back weight=3.0 style=dashed arrowtail = "empty" ]
 Component -> Port [ style=solid fontsize=10.0 dir="both" arrowhead = "normal" arrowtail = "diamond" weight=5.0 label=" ports 0..n" ]
 ClientServerInterface -> Operation [ style=solid fontsize=10.0 dir="both" arrowhead = "normal" arrowtail = "diamond" weight=5.0 label=" operations 0..n" ]
@@ -155,6 +158,7 @@ PrePostCondition -> Expression [ style=solid fontsize=10.0 dir="both" arrowhead 
 ProtocolSpec -> PsmState [ style=solid fontsize=10.0 dir="both" arrowhead = "normal" arrowtail = "diamond" weight=5.0 label=" from 1" ]
 ProtocolSpec -> PsmState [ style=solid fontsize=10.0 dir="both" arrowhead = "normal" arrowtail = "diamond" weight=5.0 label=" to 1" ]
 InitFieldInitializer -> Expression [ style=solid fontsize=10.0 dir="both" arrowhead = "normal" arrowtail = "diamond" weight=5.0 label=" value 1" ]
+AbstractPortAdapter -> AdapterInstancePortRef [ style=solid fontsize=10.0 dir="both" arrowhead = "normal" arrowtail = "diamond" weight=5.0 label=" portRef 1" ]
 ComponentsConfigItem -> ComponentsGenStrategy [ style=solid fontsize=10.0 dir="both" arrowhead = "normal" arrowtail = "diamond" weight=5.0 label=" genStrategy 1" ]
 ComponentMappingDebugHelper -> InterfaceToImplementationMapping [ style=solid fontsize=10.0 dir="both" arrowhead = "normal" arrowtail = "diamond" weight=5.0 label=" mappings 0..n" ]
 
@@ -195,6 +199,8 @@ InitFieldInitializer -> Field [ style=solid fontsize=10.0 arrowhead = "normal" w
 InstanceConfigRef -> InstanceConfiguration [ style=solid fontsize=10.0 arrowhead = "normal" weight=0.5 label=" ref 1" ]
 AbstractPortAdapter -> ComponentInstance [ style=solid fontsize=10.0 arrowhead = "normal" weight=0.5 label=" instance 1" ]
 AbstractPortAdapter -> ProvidedPort [ style=solid fontsize=10.0 arrowhead = "normal" weight=0.5 label=" port 1" ]
+AdapterInstancePortRef -> ComponentInstance [ style=solid fontsize=10.0 arrowhead = "normal" weight=0.5 label=" instance 1" ]
+AdapterInstancePortRef -> ProvidedPort [ style=solid fontsize=10.0 arrowhead = "normal" weight=0.5 label=" port 1" ]
 { rank= same Interface Component }
 
 }

@@ -2,12 +2,10 @@
 <model modelUID="r:098cbe90-1cfd-414a-b5e8-aca28752df17(com.mbeddr.core.make.structure)">
   <persistence version="7" />
   <language namespace="c72da2b9-7cce-4447-8389-f407dc1158b7(jetbrains.mps.lang.structure)" />
-  <language namespace="dcf3d84b-ead9-4694-abd0-78416ced3097(com.mbeddr.mpsutil.langdiag)" />
-  <language-engaged-on-generation namespace="dcf3d84b-ead9-4694-abd0-78416ced3097(com.mbeddr.mpsutil.langdiag)" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="tpce" modelUID="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" version="0" implicit="yes" />
   <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="1" implicit="yes" />
-  <import index="f2yx" modelUID="r:50085297-b330-46da-b541-883806c23ebc(com.mbeddr.mpsutil.langdiag.structure)" version="1" implicit="yes" />
+  <import index="i2y7" modelUID="r:098cbe90-1cfd-414a-b5e8-aca28752df17(com.mbeddr.core.make.structure)" version="-1" implicit="yes" />
   <roots>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="5950410542643585247">
       <property name="name" nameId="tpck.1169194664001" value="Makefile" />
@@ -118,10 +116,6 @@
     </node>
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="5950410542643585248">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="tpck.1169194658468" resolveInfo="INamedConcept" />
-    </node>
-    <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="f2yx.DiagramAnnotation" typeId="f2yx.1184135985877008787" id="2197615781105471781">
-      <property name="sep" nameId="f2yx.8281282103316080654" value="0.1" />
-      <property name="path" nameId="f2yx.1184135985877008788" value="../../../../../../../../diagrams/make" />
     </node>
   </root>
   <root id="5950410542643587165">

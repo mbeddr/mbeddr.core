@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<history>
+  <StructureModification>
+    <dependencies>
+      <model index="hba4" modelUID="r:f5bd2ad9-cd54-4408-b815-07f9f306f074(com.mbeddr.mpsutil.blutil.structure)" version="3" />
+      <model index="r4b4" modelUID="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" version="0" />
+      <model index="muut" modelUID="r:7b6c196f-8133-489b-a5b2-6ed29b884e93(com.mbeddr.mpsutil.blutil.editor)" version="-1" />
+      <model index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="2" />
+    </dependencies>
+    <move id="vs0r.1793958740514612279" to="hba4.1793958740514623183" />
+    <move id="vs0r.1793958740514612286" to="hba4.1793958740514623185" />
+    <move id="vs0r.1793958740514612276" to="hba4.1793958740514623184" />
+    <move id="vs0r.1793958740514612274" to="hba4.1793958740514623182" />
+    <move id="r4b4.1793958740514612285" to="muut.1793958740514623190" />
+    <move id="r4b4.1793958740514612280" to="muut.1793958740514623186" />
+    <move id="r4b4.1793958740514612282" to="muut.1793958740514623187" />
+    <move id="r4b4.1793958740514612290" to="muut.1793958740514623191" />
+    <move id="r4b4.1793958740514612294" to="muut.1793958740514623193" />
+    <move id="r4b4.1793958740514612287" to="muut.1793958740514623188" />
+    <move id="r4b4.1793958740514612284" to="muut.1793958740514623194" />
+    <move id="r4b4.1793958740514612295" to="muut.1793958740514623192" />
+    <move id="r4b4.1793958740514612288" to="muut.1793958740514623189" />
+  </StructureModification>
+</history>
+

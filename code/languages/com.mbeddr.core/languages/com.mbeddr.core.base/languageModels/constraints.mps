@@ -3,7 +3,7 @@
   <persistence version="7" />
   <language namespace="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1(jetbrains.mps.lang.constraints)" />
   <devkit namespace="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
-  <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="1" />
+  <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="4" />
   <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="0" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="tpee" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="3" implicit="yes" />
@@ -20,6 +20,10 @@
     </node>
     <node type="tp1t.ConceptConstraints" typeId="tp1t.1213093968558" id="6021475212426107481">
       <link role="concept" roleId="tp1t.1213093996982" targetNodeId="vs0r.8628579007224192794" resolveInfo="INameFirstCharLowerCase" />
+    </node>
+    <node type="tp1t.ConceptConstraints" typeId="tp1t.1213093968558" id="5095889050031044991">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="documentation" />
+      <link role="concept" roleId="tp1t.1213093996982" targetNodeId="vs0r.3857533489766836826" resolveInfo="DocPart" />
     </node>
   </roots>
   <root id="7024921229555594294">
@@ -68,7 +72,7 @@
               <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="7024921229555594301">
                 <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="e2lb.~String%dmatches(java%dlang%dString)%cboolean" resolveInfo="matches" />
                 <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="7024921229555594302">
-                  <property name="value" nameId="tpee.1070475926801" value="[a-zA-Z$[_]][a-zA-Z0-9$[_]]*" />
+                  <property name="value" nameId="tpee.1070475926801" value="[a-zA-Z$[_]][a-zA-Z0-9$[_][-]]*" />
                 </node>
               </node>
             </node>
@@ -79,5 +83,6 @@
   </root>
   <root id="7024921229556319962" />
   <root id="6021475212426107481" />
+  <root id="5095889050031044991" />
 </model>
 

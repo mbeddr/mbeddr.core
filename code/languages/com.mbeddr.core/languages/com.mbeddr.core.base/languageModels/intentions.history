@@ -7,11 +7,11 @@
       <model index="yvc7" modelUID="r:7a3b06b4-e496-46c1-a58f-c1aedae1c5fc(com.mbeddr.core.statements.textGen)" version="-1" />
       <model index="3ho" modelUID="r:5464eee6-9739-45c3-be18-bcd3e5d07f5a(com.mbeddr.core.base.textGen)" version="-1" />
       <model index="rj8d" modelUID="r:da9fd96f-5c71-45ab-b2da-1aa6232ec67f(com.mbeddr.core.statements.behavior)" version="-1" />
-      <model index="r4b4" modelUID="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" version="-1" />
       <model index="j4gk" modelUID="r:44b6f9b4-bfdb-4b99-b104-960ec485d777(com.mbeddr.core.statements.editor)" version="-1" />
+      <model index="r4b4" modelUID="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" version="-1" />
       <model index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="0" />
-      <model index="7kf" modelUID="r:52560947-b3d4-4502-82de-09a64d1cf1ac(com.mbeddr.core.statements.intentions)" version="0" />
       <model index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="0" />
+      <model index="7kf" modelUID="r:52560947-b3d4-4502-82de-09a64d1cf1ac(com.mbeddr.core.statements.intentions)" version="0" />
     </dependencies>
     <move id="c4fa.1679452829930469420" to="vs0r.3857533489766146432" />
     <move id="c4fa.1679452829930469425" to="vs0r.3857533489766146431" />
@@ -156,6 +156,70 @@
     <move id="yvc7.1679452829930918080" to="3ho.3857533489766146547" />
     <move id="yvc7.1679452829930918146" to="3ho.3857533489766146560" />
     <move id="yvc7.1679452829930918089" to="3ho.3857533489766146569" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="gfi" modelUID="r:a2de504f-6afe-437f-a38e-a77813a7d666(com.mbeddr.core.base.intentions)" version="0" />
+      <model index="4l" modelUID="r:28de03cf-b82a-4919-95fe-0d4734adb734(com.mbeddr.mpsutil.blutil.intentions)" version="-1" />
+    </dependencies>
+    <move id="gfi.1793958740514612300" to="4l.1793958740515045521" />
+    <move id="gfi.1793958740514616568" to="4l.1793958740515045555" />
+    <move id="gfi.1793958740514616574" to="4l.1793958740515045561" />
+    <move id="gfi.1793958740514616566" to="4l.1793958740515045553" />
+    <move id="gfi.1793958740514616573" to="4l.1793958740515045560" />
+    <move id="gfi.1793958740514621418" to="4l.1793958740515045531" />
+    <move id="gfi.1793958740514621425" to="4l.1793958740515045547" />
+    <move id="gfi.1793958740514621431" to="4l.1793958740515045544" />
+    <move id="gfi.1793958740514616529" to="4l.1793958740515045546" />
+    <move id="gfi.1793958740514616564" to="4l.1793958740515045551" />
+    <move id="gfi.1793958740514621423" to="4l.1793958740515045536" />
+    <move id="gfi.1793958740514616551" to="4l.1793958740515045527" />
+    <move id="gfi.1793958740514616567" to="4l.1793958740515045554" />
+    <move id="gfi.1793958740514612299" to="4l.1793958740515045520" />
+    <move id="gfi.1793958740514621420" to="4l.1793958740515045533" />
+    <move id="gfi.1793958740514612304" to="4l.1793958740515045530" />
+    <move id="gfi.1793958740514612301" to="4l.1793958740515045518" />
+    <move id="gfi.1793958740514616535" to="4l.1793958740515045548" />
+    <move id="gfi.1793958740514616611" to="4l.1793958740515045572" />
+    <move id="gfi.1793958740514616577" to="4l.1793958740515045564" />
+    <move id="gfi.1793958740514616601" to="4l.1793958740515045571" />
+    <move id="gfi.1793958740514616592" to="4l.1793958740515045568" />
+    <move id="gfi.1793958740514621427" to="4l.1793958740515045538" />
+    <move id="gfi.1793958740514612296" to="4l.1793958740515045515" />
+    <move id="gfi.1793958740514616541" to="4l.1793958740515045524" />
+    <move id="gfi.1793958740514616615" to="4l.1793958740515045558" />
+    <move id="gfi.1793958740514621435" to="4l.1793958740515045542" />
+    <move id="gfi.1793958740514616565" to="4l.1793958740515045552" />
+    <move id="gfi.1793958740514616572" to="4l.1793958740515045559" />
+    <move id="gfi.1793958740514621421" to="4l.1793958740515045534" />
+    <move id="gfi.1793958740514616555" to="4l.1793958740515045523" />
+    <move id="gfi.1793958740514621429" to="4l.1793958740515045540" />
+    <move id="gfi.1793958740514616537" to="4l.1793958740515045522" />
+    <move id="gfi.1793958740514621430" to="4l.1793958740515045541" />
+    <move id="gfi.1793958740514621422" to="4l.1793958740515045535" />
+    <move id="gfi.1793958740514616563" to="4l.1793958740515045550" />
+    <move id="gfi.1793958740514621419" to="4l.1793958740515045532" />
+    <move id="gfi.1793958740514616570" to="4l.1793958740515045557" />
+    <move id="gfi.1793958740514612297" to="4l.1793958740515045516" />
+    <move id="gfi.1793958740514616536" to="4l.1793958740515045549" />
+    <move id="gfi.1793958740514616621" to="4l.1793958740515045563" />
+    <move id="gfi.1793958740514616589" to="4l.1793958740515045569" />
+    <move id="gfi.1793958740514616588" to="4l.1793958740515045566" />
+    <move id="gfi.1793958740514612303" to="4l.1793958740515045529" />
+    <move id="gfi.1793958740514621441" to="4l.1793958740515045543" />
+    <move id="gfi.1793958740514616578" to="4l.1793958740515045565" />
+    <move id="gfi.1793958740514616561" to="4l.1793958740515045528" />
+    <move id="gfi.1793958740514616605" to="4l.1793958740515045567" />
+    <move id="gfi.1793958740514612305" to="4l.1793958740515045545" />
+    <move id="gfi.1793958740514616538" to="4l.1793958740515045525" />
+    <move id="gfi.1793958740514616575" to="4l.1793958740515045562" />
+    <move id="gfi.1793958740514616598" to="4l.1793958740515045570" />
+    <move id="gfi.1793958740514621424" to="4l.1793958740515045537" />
+    <move id="gfi.1793958740514616547" to="4l.1793958740515045526" />
+    <move id="gfi.1793958740514612302" to="4l.1793958740515045519" />
+    <move id="gfi.1793958740514616569" to="4l.1793958740515045556" />
+    <move id="gfi.1793958740514612298" to="4l.1793958740515045517" />
+    <move id="gfi.1793958740514621428" to="4l.1793958740515045539" />
   </StructureModification>
 </history>
 
