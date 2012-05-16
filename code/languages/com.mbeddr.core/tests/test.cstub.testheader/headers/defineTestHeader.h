@@ -15,7 +15,7 @@
 
 
 //test for ifdef and imported symbols
-#ifdef TESTDEFINESYMBOL
+#if defined (TESTDEFINESYMBOL)
 #define includeDefineSuccessful successful
 #endif
 
