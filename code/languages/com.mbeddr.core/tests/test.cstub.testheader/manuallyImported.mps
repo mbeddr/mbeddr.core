@@ -14,6 +14,8 @@
   <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="0" implicit="yes" />
   <import index="nbyu" modelUID="r:5104a07c-c91d-412c-8374-26edb13383eb(com.mbeddr.core.embedded.structure)" version="2" implicit="yes" />
   <import index="yq40" modelUID="r:152b3fc0-83a1-4bab-a8cd-565eb8483785(com.mbeddr.core.pointers.structure)" version="1" implicit="yes" />
+  <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="4" implicit="yes" />
+  <import index="51wr" modelUID="r:b31f1c3c-99aa-4f1e-a329-cba27efb1a6b(com.mbeddr.core.buildconfig.structure)" version="1" implicit="yes" />
   <roots>
     <node type="punb.HeaderImportSpec" typeId="punb.7097640331099443677" id="3029574721709407579">
       <property name="includeDir" nameId="punb.7097640331099443678" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.core/tests/test.cstub.testheader/headers" />
@@ -98,6 +100,13 @@
     <node type="x27k.ExternalModule" typeId="x27k.6116558314501417921" id="832912756872105328">
       <property name="name" nameId="tpck.1169194664001" value="virtualfolderA2_virtualFolderFileA" />
       <property name="virtualPackage" nameId="tpck.1193676396447" value="virtualfolderA2." />
+    </node>
+    <node type="51wr.BuildConfiguration" typeId="51wr.7717755763392524104" id="5854175949791582807" />
+    <node type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="5854175949791582832">
+      <property name="name" nameId="tpck.1169194664001" value="Driver" />
+    </node>
+    <node type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="5854175949791582937">
+      <property name="name" nameId="tpck.1169194664001" value="deleteme" />
     </node>
   </roots>
   <root id="3029574721709407579">
@@ -2407,6 +2416,116 @@
         <property name="value" nameId="s5bn.5443628787102794761" value="A" />
         <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="832912756872105334" />
       </node>
+    </node>
+  </root>
+  <root id="5854175949791582807">
+    <node role="target" roleId="51wr.5323740605968447026" type="51wr.DesktopPlatform" typeId="51wr.5323740605968447022" id="5854175949791582809">
+      <property name="compiler" nameId="51wr.5323740605968447024" value="gcc" />
+      <property name="compilerOptions" nameId="51wr.5323740605968447025" value="-std=c99" />
+      <property name="debugOptions" nameId="51wr.2736179788492003937" value="-g" />
+    </node>
+    <node role="configurationItems" roleId="vs0r.4459718605982007338" type="x27k.InlineConfigItem" typeId="x27k.5095889050032706476" id="5854175949791582810">
+      <property name="inlinetext" nameId="x27k.5095889050032706514" value="inline" />
+    </node>
+    <node role="binaries" roleId="51wr.5046689135694070731" type="51wr.Executable" typeId="51wr.5046689135693761554" id="5854175949791582811">
+      <property name="name" nameId="tpck.1169194664001" value="deleteme" />
+      <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="5854175949791582846">
+        <link role="module" roleId="51wr.7717755763392524108" targetNodeId="5854175949791582832" resolveInfo="Driver" />
+      </node>
+      <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="5854175949791582961">
+        <link role="module" roleId="51wr.7717755763392524108" targetNodeId="5854175949791582937" resolveInfo="deleteme" />
+      </node>
+    </node>
+  </root>
+  <root id="5854175949791582832">
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="5854175949791582833">
+      <property name="name" nameId="tpck.1169194664001" value="main" />
+      <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="5854175949791582834">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="5854175949791582835" />
+        <node role="statements" roleId="c4fa.4185783222026475862" type="x27k.ReturnStatement" typeId="x27k.8967919205527146149" id="5854175949791582836">
+          <node role="expression" roleId="x27k.8967919205527146150" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="5854175949791582837">
+            <property name="value" nameId="mj1l.8860443239512128104" value="0" />
+          </node>
+        </node>
+      </node>
+      <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int32tType" typeId="mj1l.8463282783691618440" id="5854175949791582838" />
+      <node role="arguments" roleId="x27k.5708867820623310661" type="x27k.Argument" typeId="x27k.7892328519581704407" id="5854175949791582839">
+        <property name="name" nameId="tpck.1169194664001" value="argc" />
+        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int32tType" typeId="mj1l.8463282783691618440" id="5854175949791582840" />
+      </node>
+      <node role="arguments" roleId="x27k.5708867820623310661" type="x27k.Argument" typeId="x27k.7892328519581704407" id="5854175949791582841">
+        <property name="name" nameId="tpck.1169194664001" value="argv" />
+        <node role="type" roleId="mj1l.318113533128716676" type="yq40.ArrayType" typeId="yq40.5679441017214012545" id="5854175949791582842">
+          <node role="baseType" roleId="yq40.5679441017214012546" type="yq40.PointerType" typeId="yq40.279446265608459824" id="5854175949791582843">
+            <node role="baseType" roleId="yq40.279446265608459825" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="5854175949791582844" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </root>
+  <root id="5854175949791582937">
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.CommentModuleContent" typeId="x27k.2877808180148899328" id="5854175949791582938">
+      <property name="comment" nameId="x27k.2877808180148899333" value="//Some comment&#10;" />
+      <property name="name" nameId="tpck.1169194664001" value="&lt;no name&gt;" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.GlobalConstantDeclaration" typeId="x27k.3788988821851860886" id="5854175949791582939">
+      <property name="name" nameId="tpck.1169194664001" value="d" />
+      <property name="preventNameMangling" nameId="x27k.6708182213627106114" value="true" />
+      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
+      <node role="value" roleId="x27k.3788988821851871048" type="s5bn.OpaqueTextWithType" typeId="s5bn.8720844099624588923" id="5854175949791582940">
+        <property name="value" nameId="s5bn.5443628787102794761" value="d" />
+        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="5854175949791582941" />
+      </node>
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.CommentModuleContent" typeId="x27k.2877808180148899328" id="5854175949791582942">
+      <property name="comment" nameId="x27k.2877808180148899333" value="/*&#10;A&#10;B&#10;*/&#10;" />
+      <property name="name" nameId="tpck.1169194664001" value="&lt;no name&gt;" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.GlobalVariableDeclaration" typeId="x27k.6610873504380335822" id="5854175949791582943">
+      <property name="name" nameId="tpck.1169194664001" value="a" />
+      <property name="preventNameMangling" nameId="x27k.6708182213627106114" value="true" />
+      <property name="volatile" nameId="c4fa.7825285260294008966" value="false" />
+      <property name="extern" nameId="x27k.6708182213627045681" value="false" />
+      <property name="const" nameId="c4fa.1782955756756899613" value="false" />
+      <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="5854175949791582955" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.CommentModuleContent" typeId="x27k.2877808180148899328" id="5854175949791582945">
+      <property name="comment" nameId="x27k.2877808180148899333" value="//D&#10;//D1&#10;" />
+      <property name="name" nameId="tpck.1169194664001" value="&lt;no name&gt;" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.GlobalVariableDeclaration" typeId="x27k.6610873504380335822" id="5854175949791582946">
+      <property name="name" nameId="tpck.1169194664001" value="b" />
+      <property name="preventNameMangling" nameId="x27k.6708182213627106114" value="true" />
+      <property name="volatile" nameId="c4fa.7825285260294008966" value="false" />
+      <property name="extern" nameId="x27k.6708182213627045681" value="false" />
+      <property name="const" nameId="c4fa.1782955756756899613" value="false" />
+      <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="5854175949791582954" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.CommentModuleContent" typeId="x27k.2877808180148899328" id="5854175949791582948">
+      <property name="comment" nameId="x27k.2877808180148899333" value="//D2 &#10;" />
+      <property name="name" nameId="tpck.1169194664001" value="&lt;no name&gt;" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.GlobalVariableDeclaration" typeId="x27k.6610873504380335822" id="5854175949791582949">
+      <property name="name" nameId="tpck.1169194664001" value="c" />
+      <property name="preventNameMangling" nameId="x27k.6708182213627106114" value="true" />
+      <property name="volatile" nameId="c4fa.7825285260294008966" value="false" />
+      <property name="extern" nameId="x27k.6708182213627045681" value="false" />
+      <property name="const" nameId="c4fa.1782955756756899613" value="false" />
+      <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="5854175949791582956" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.CommentModuleContent" typeId="x27k.2877808180148899328" id="5854175949791582951">
+      <property name="comment" nameId="x27k.2877808180148899333" value="//E" />
+      <property name="name" nameId="tpck.1169194664001" value="&lt;no name&gt;" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.CommentModuleContent" typeId="x27k.2877808180148899328" id="5854175949791582952">
+      <property name="comment" nameId="x27k.2877808180148899333" value="//F" />
+      <property name="name" nameId="tpck.1169194664001" value="&lt;no name&gt;" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="5854175949792306084">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1337688483287_1" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="5854175949792306085">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1337688483675_2" />
     </node>
   </root>
 </model>
