@@ -115,6 +115,9 @@
       <property name="virtualPackage" nameId="tpck.1193676396447" value="reporting.config" />
       <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="k146.4459718605982051985" resolveInfo="DoNothingReportingStrategy" />
     </node>
+    <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="777213082402129270">
+      <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="k146.777213082402126069" resolveInfo="ErrorTypeNotFound" />
+    </node>
   </roots>
   <root id="5686538669182273030">
     <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="5686538669182273032">
@@ -1221,6 +1224,14 @@
   <root id="4459718605982051987">
     <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="4459718605982051989">
       <property name="text" nameId="tpc2.1073389577007" value="nothing" />
+    </node>
+  </root>
+  <root id="777213082402129270">
+    <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Property" typeId="tpc2.1073389658414" id="777213082402149875">
+      <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="k146.777213082402129269" resolveInfo="rawType" />
+      <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.BackgroundColorStyleClassItem" typeId="tpc2.1186404574412" id="777213082402149876">
+        <property name="color" nameId="tpc2.1186403713874" value="red" />
+      </node>
     </node>
   </root>
 </model>

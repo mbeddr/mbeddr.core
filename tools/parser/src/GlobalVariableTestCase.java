@@ -38,40 +38,16 @@ public class GlobalVariableTestCase extends TestCase {
 	public void testBasicTest() throws CoreException {
 		StringBuilder content = new StringBuilder();
 
-		content.append("#define BUILDFUN(name) void name(int a, int b) \n");
-		content.append("BUILDFUN(funname);\n");
-		content.append("BUILDFUN(funname2);\n");
-		
-		
-		
-////		struct fullname	{
-////			char forename[20];
-////			char surname[20];
-////		};
-//		content.append("struct fullname	{");
-//		content.append("char forename[20];");
-//		content.append("char surname[20];");
-//		content.append("} fullnameStruct;");
-//		
-////		struct person {
-////			struct fullname name;
-////			int age;
-////		};
-//		content.append("struct person {");
-//		content.append("struct fullname name;");
-//		content.append("int age;");
-//		content.append("};");
-//
-//		content.append("struct person p, *pp;");
-//		
-//		
-////		content.append("int aaa1, bbb2, ccc3;");
-////		content.append("typedef int aaa, bbb, ccc;");
-////		content.append("typedef int ar[15], arr[9][6];");
-//		content.append("typedef char c, *cp, carr[100];");
 
-		
-		
+		content.append("typedef struct tagSRBITS {\n");
+		content.append("	  union {\n");
+		content.append("	    struct {\n");
+		content.append("	      unsigned C:1;\n");
+		content.append("	    };\n");
+		content.append("	  };\n");
+		content.append("	} SRBITS;\n");
+
+
 		HashMap<String, String> options = new HashMap<String, String>();
 
 		ScannerInfo scannerInfo = new ScannerInfo(options);
@@ -82,12 +58,10 @@ public class GlobalVariableTestCase extends TestCase {
 						IncludeFileContentProvider.getEmptyFilesProvider(),
 						null, 0, new DefaultLogService());
 
-		
 		astTranslationUnit.accept(new ASTVisitor(true) {
-			
-			
+
 			public int visit(IASTTranslationUnit x) {
-				
+
 				System.err.println(x.toString());
 				return PROCESS_CONTINUE;
 			}
@@ -119,7 +93,6 @@ public class GlobalVariableTestCase extends TestCase {
 
 			public int visit(IASTDeclSpecifier x) {
 				System.err.println(x.toString());
-				System.err.println(x.isConst());
 				return PROCESS_CONTINUE;
 			}
 
