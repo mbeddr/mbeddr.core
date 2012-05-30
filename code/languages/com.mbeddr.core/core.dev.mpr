@@ -52,43 +52,11 @@
   <component name="ProjectLibraryManager">
     <option name="libraries">
       <map>
-        <entry key="cc">
-          <value>
-            <Library>
-              <option name="name" value="cc" />
-              <option name="path" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.cc" />
-            </Library>
-          </value>
-        </entry>
-        <entry key="ext">
-          <value>
-            <Library>
-              <option name="name" value="ext" />
-              <option name="path" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.ext" />
-            </Library>
-          </value>
-        </entry>
-        <entry key="helloworld">
-          <value>
-            <Library>
-              <option name="name" value="helloworld" />
-              <option name="path" value="${mbeddr.github.core.home}/code/applications/HelloWorld" />
-            </Library>
-          </value>
-        </entry>
         <entry key="mpsutil">
           <value>
             <Library>
               <option name="name" value="mpsutil" />
               <option name="path" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.mpsutil" />
-            </Library>
-          </value>
-        </entry>
-        <entry key="smartmeter">
-          <value>
-            <Library>
-              <option name="name" value="smartmeter" />
-              <option name="path" value="${smartmeter.git.root}/" />
             </Library>
           </value>
         </entry>

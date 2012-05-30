@@ -12,7 +12,7 @@
   <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="1" implicit="yes" />
   <import index="51wr" modelUID="r:b31f1c3c-99aa-4f1e-a329-cba27efb1a6b(com.mbeddr.core.buildconfig.structure)" version="1" implicit="yes" />
   <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="-1" implicit="yes" />
-  <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="2" implicit="yes" />
+  <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="4" implicit="yes" />
   <import index="p7vm" modelUID="r:28fa862e-f94d-4c39-bdf7-a4bdbc773888(com.mbeddr.ext.components.gen_nomw.structure)" version="0" implicit="yes" />
   <roots>
     <node type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="1817139875676347012">
@@ -126,6 +126,10 @@
       <link role="configuration" roleId="v7ag.5172178961827877444" targetNodeId="1817139875676347077" resolveInfo="instances" />
       <link role="instance" roleId="v7ag.4491876417845704583" targetNodeId="1817139875676347078" resolveInfo="ac" />
       <link role="port" roleId="v7ag.5172178961828017559" targetNodeId="1817139875676347074" resolveInfo="decider" />
+      <node role="portRef" roleId="v7ag.6616025724454701213" type="v7ag.AdapterInstancePortRef" typeId="v7ag.6616025724454668918" id="4458342957759599887">
+        <link role="instance" roleId="v7ag.6616025724454668919" targetNodeId="1817139875676347078" resolveInfo="ac" />
+        <link role="port" roleId="v7ag.6616025724454668920" targetNodeId="1817139875676347074" resolveInfo="decider" />
+      </node>
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="yz9a.TestCase" typeId="yz9a.6275792049641586523" id="1817139875676347082">
       <property name="exported" nameId="x27k.1317894735999272944" value="true" />

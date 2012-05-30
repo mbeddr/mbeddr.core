@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<history>
+  <StructureModification>
+    <dependencies>
+      <model index="20u6" modelUID="r:bb095207-e9e1-446e-bd19-f8d726d52200(com.mbeddr.mpsutil.blutil.typesystem)" version="-1" />
+      <model index="hwgx" modelUID="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)" version="0" />
+      <model index="p15z" modelUID="r:ac36bf27-36e9-407d-ba8e-953c68088e41(com.mbeddr.mpsutil.blutil.behavior)" version="-1" />
+      <model index="hba4" modelUID="r:f5bd2ad9-cd54-4408-b815-07f9f306f074(com.mbeddr.mpsutil.blutil.structure)" version="4" />
+      <model index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="3" />
+      <model index="9zoj" modelUID="r:1b0f275e-bd62-4f6e-8c4b-51b05d651a63(com.mbeddr.core.base.typesystem)" version="-1" />
+    </dependencies>
+    <move id="hba4.6616025724454822143" to="vs0r.6616025724454843605" />
+    <move id="p15z.6616025724454822180" to="hwgx.6616025724454843608" />
+    <move id="p15z.6616025724454822158" to="hwgx.6616025724454843617" />
+    <move id="p15z.6616025724454822179" to="hwgx.6616025724454843607" />
+    <move id="p15z.6616025724454822155" to="hwgx.6616025724454843616" />
+    <move id="p15z.6616025724454822157" to="hwgx.6616025724454843618" />
+    <move id="p15z.6616025724454822183" to="hwgx.6616025724454843609" />
+    <move id="p15z.6616025724454822144" to="hwgx.6616025724454843606" />
+    <move id="p15z.6616025724454822145" to="hwgx.6616025724454843619" />
+    <move id="p15z.6616025724454822146" to="hwgx.6616025724454843620" />
+    <move id="p15z.6616025724454822148" to="hwgx.6616025724454843612" />
+    <move id="p15z.6616025724454822151" to="hwgx.6616025724454843613" />
+    <move id="p15z.6616025724454822182" to="hwgx.6616025724454843610" />
+    <move id="p15z.6616025724454822154" to="hwgx.6616025724454843615" />
+    <move id="p15z.6616025724454822147" to="hwgx.6616025724454843611" />
+    <move id="p15z.6616025724454822150" to="hwgx.6616025724454843614" />
+    <move id="20u6.6616025724454822161" to="9zoj.6616025724454843638" />
+    <move id="20u6.6616025724454822165" to="9zoj.6616025724454843625" />
+    <move id="20u6.6616025724454822199" to="9zoj.6616025724454843634" />
+    <move id="20u6.6616025724454827245" to="9zoj.6616025724454843636" />
+    <move id="20u6.6616025724454822168" to="9zoj.6616025724454843624" />
+    <move id="20u6.6616025724454822160" to="9zoj.6616025724454843622" />
+    <move id="20u6.6616025724454822174" to="9zoj.6616025724454843626" />
+    <move id="20u6.6616025724454822198" to="9zoj.6616025724454843632" />
+    <move id="20u6.6616025724454822162" to="9zoj.6616025724454843623" />
+    <move id="20u6.6616025724454822164" to="9zoj.6616025724454843627" />
+    <move id="20u6.6616025724454827244" to="9zoj.6616025724454843635" />
+    <move id="20u6.6616025724454822175" to="9zoj.6616025724454843628" />
+    <move id="20u6.6616025724454827247" to="9zoj.6616025724454843637" />
+    <move id="20u6.6616025724454822192" to="9zoj.6616025724454843630" />
+    <move id="20u6.6616025724454822189" to="9zoj.6616025724454843631" />
+    <move id="20u6.6616025724454822159" to="9zoj.6616025724454843621" />
+    <move id="20u6.6616025724454822178" to="9zoj.6616025724454843633" />
+    <move id="20u6.6616025724454822186" to="9zoj.6616025724454843629" />
+  </StructureModification>
+</history>
+
