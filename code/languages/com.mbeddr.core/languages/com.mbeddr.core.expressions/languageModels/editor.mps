@@ -118,7 +118,7 @@
     </node>
     <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="3976803464656556880">
       <property name="virtualPackage" nameId="tpck.1193676396447" value="expr.arith.unary" />
-      <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="mj1l.3976803464656556878" resolveInfo="UnaryArithmeticNotExpression" />
+      <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="mj1l.3976803464656556878" resolveInfo="BitwiseNotExpression" />
     </node>
     <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="1054289341113450447">
       <property name="virtualPackage" nameId="tpck.1193676396447" value="literals" />
