@@ -9751,6 +9751,11 @@
                 </node>
               </node>
             </node>
+            <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="6769054173340282707">
+              <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6769054173340282708">
+                <property name="value" nameId="mj1l.8860443239512128104" value="24" />
+              </node>
+            </node>
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="1505692089826969422" />
           </node>
           <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="1505692089826969357" />
