@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <model modelUID="r:9bba804f-61f7-43f4-b8d1-e18a2024fe01(manuallyImported)">
   <persistence version="7" />
-  <language namespace="5ce2e6a6-053e-4914-9e21-b9b7b61f3666(com.mbeddr.core.cstubs)" />
   <language namespace="783af01f-87a7-412c-be99-293a162652b5(com.mbeddr.core.embedded)" />
   <language namespace="ad5e9db1-9600-47c7-86ef-614165b281b8(com.mbeddr.core.legacy)" />
   <devkit namespace="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="punb" modelUID="r:401d5aa1-f59d-49c0-833e-cf94fb548e92(com.mbeddr.core.cstubs.structure)" version="0" implicit="yes" />
-  <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="10" implicit="yes" />
+  <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="11" implicit="yes" />
   <import index="s5bn" modelUID="r:a92dafc6-eacf-4328-984c-d7620d951c7f(com.mbeddr.core.legacy.structure)" version="1" implicit="yes" />
-  <import index="clbe" modelUID="r:61d840b4-12c1-49ea-b142-b2a1550a9b15(com.mbeddr.core.udt.structure)" version="3" implicit="yes" />
+  <import index="clbe" modelUID="r:61d840b4-12c1-49ea-b142-b2a1550a9b15(com.mbeddr.core.udt.structure)" version="5" implicit="yes" />
   <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="1" implicit="yes" />
   <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="0" implicit="yes" />
   <import index="nbyu" modelUID="r:5104a07c-c91d-412c-8374-26edb13383eb(com.mbeddr.core.embedded.structure)" version="2" implicit="yes" />
@@ -105,12 +104,12 @@
     <node type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="5854175949791582937">
       <property name="name" nameId="tpck.1169194664001" value="deleteme" />
     </node>
-    <node type="x27k.ExternalModule" typeId="x27k.6116558314501417921" id="9107732955310738140">
-      <property name="name" nameId="tpck.1169194664001" value="bitFieldsTestHeader" />
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="" />
-    </node>
     <node type="x27k.ExternalModule" typeId="x27k.6116558314501417921" id="9107732955310777436">
       <property name="name" nameId="tpck.1169194664001" value="functionTestHeader" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="" />
+    </node>
+    <node type="x27k.ExternalModule" typeId="x27k.6116558314501417921" id="9107732955310738140">
+      <property name="name" nameId="tpck.1169194664001" value="bitFieldsTestHeader" />
       <property name="virtualPackage" nameId="tpck.1193676396447" value="" />
     </node>
     <node type="x27k.ExternalModule" typeId="x27k.6116558314501417921" id="9015901842067424937">
@@ -2170,36 +2169,6 @@
       <property name="name" nameId="tpck.1169194664001" value="empty_1337688483675_2" />
     </node>
   </root>
-  <root id="9107732955310738140">
-    <node role="descriptors" roleId="x27k.6116558314501417978" type="x27k.HeaderDescriptor" typeId="x27k.6116558314501417952" id="9107732955310738141">
-      <property name="path" nameId="x27k.6116558314501417936" value="&quot;bitFieldsTestHeader.h&quot;" />
-    </node>
-    <node role="imports" roleId="x27k.1317894735999304826" type="x27k.ModuleImport" typeId="x27k.1317894735999299713" id="9107732955310738142">
-      <link role="module" roleId="x27k.1317894735999299714" targetNodeId="832912756872104679" resolveInfo="ModuleWithTypeDef" />
-    </node>
-    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.CommentModuleContent" typeId="x27k.2877808180148899328" id="9107732955310738143">
-      <property name="comment" nameId="x27k.2877808180148899333" value="" />
-      <property name="name" nameId="tpck.1169194664001" value="&lt;no name&gt;" />
-    </node>
-    <node role="contents" roleId="x27k.6437088627575722833" type="clbe.UnionDeclaration" typeId="clbe.5882395403881907066" id="9107732955310738144">
-      <property name="name" nameId="tpck.1169194664001" value="BITFIELD" />
-      <property name="preventNameMangling" nameId="x27k.6708182213627106114" value="true" />
-      <node role="members" roleId="clbe.5882395403881907067" type="clbe.UnionMember" typeId="clbe.5882395403881907074" id="9107732955310738145">
-        <property name="name" nameId="tpck.1169194664001" value="A" />
-        <property name="const" nameId="c4fa.1782955756756899613" value="false" />
-        <node role="type" roleId="mj1l.318113533128716676" type="k146.ErrorTypeNotFound" typeId="k146.777213082402126069" id="9107732955310738146">
-          <property name="rawType" nameId="k146.777213082402129269" value="unsigned" />
-        </node>
-      </node>
-      <node role="members" roleId="clbe.5882395403881907067" type="clbe.UnionMember" typeId="clbe.5882395403881907074" id="9107732955310738147">
-        <property name="name" nameId="tpck.1169194664001" value="B" />
-        <property name="const" nameId="c4fa.1782955756756899613" value="false" />
-        <node role="type" roleId="mj1l.318113533128716676" type="k146.ErrorTypeNotFound" typeId="k146.777213082402126069" id="9107732955310738148">
-          <property name="rawType" nameId="k146.777213082402129269" value="unsigned" />
-        </node>
-      </node>
-    </node>
-  </root>
   <root id="9107732955310777436">
     <node role="descriptors" roleId="x27k.6116558314501417978" type="x27k.HeaderDescriptor" typeId="x27k.6116558314501417952" id="9107732955310777437">
       <property name="path" nameId="x27k.6116558314501417936" value="&quot;functionTestHeader.h&quot;" />
@@ -2446,7 +2415,7 @@
       <property name="name" nameId="tpck.1169194664001" value="pGetIntConst" />
       <property name="hasEllipsis" nameId="x27k.9066372830132870213" value="false" />
       <property name="extern" nameId="x27k.6708182213627045681" value="false" />
-      <property name="const" nameId="c4fa.1782955756756899613" value="true" />
+      <property name="const" nameId="c4fa.1782955756756899613" value="false" />
       <property name="preventNameMangling" nameId="x27k.6708182213627106114" value="true" />
       <node role="type" roleId="mj1l.318113533128716676" type="x27k.FunctionRefType" typeId="x27k.8551646674110395547" id="9107732955310777517">
         <property name="const" nameId="c4fa.1782955756756899613" value="true" />
@@ -2564,6 +2533,36 @@
         <property name="name" nameId="tpck.1169194664001" value="b" />
         <property name="const" nameId="c4fa.1782955756756899613" value="false" />
         <node role="type" roleId="mj1l.318113533128716676" type="mj1l.IntType" typeId="mj1l.8860443239512128108" id="9107732955310777554" />
+      </node>
+    </node>
+  </root>
+  <root id="9107732955310738140">
+    <node role="descriptors" roleId="x27k.6116558314501417978" type="x27k.HeaderDescriptor" typeId="x27k.6116558314501417952" id="9107732955310738141">
+      <property name="path" nameId="x27k.6116558314501417936" value="&quot;bitFieldsTestHeader.h&quot;" />
+    </node>
+    <node role="imports" roleId="x27k.1317894735999304826" type="x27k.ModuleImport" typeId="x27k.1317894735999299713" id="9107732955310738142">
+      <link role="module" roleId="x27k.1317894735999299714" targetNodeId="832912756872104679" resolveInfo="ModuleWithTypeDef" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.CommentModuleContent" typeId="x27k.2877808180148899328" id="9107732955310738143">
+      <property name="comment" nameId="x27k.2877808180148899333" value="" />
+      <property name="name" nameId="tpck.1169194664001" value="&lt;no name&gt;" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="clbe.UnionDeclaration" typeId="clbe.5882395403881907066" id="9107732955310738144">
+      <property name="name" nameId="tpck.1169194664001" value="BITFIELD" />
+      <property name="preventNameMangling" nameId="x27k.6708182213627106114" value="true" />
+      <node role="members" roleId="clbe.5882395403881907067" type="clbe.UnionMember" typeId="clbe.5882395403881907074" id="9107732955310738145">
+        <property name="name" nameId="tpck.1169194664001" value="A" />
+        <property name="const" nameId="c4fa.1782955756756899613" value="false" />
+        <node role="type" roleId="mj1l.318113533128716676" type="k146.ErrorTypeNotFound" typeId="k146.777213082402126069" id="9107732955310738146">
+          <property name="rawType" nameId="k146.777213082402129269" value="unsigned" />
+        </node>
+      </node>
+      <node role="members" roleId="clbe.5882395403881907067" type="clbe.UnionMember" typeId="clbe.5882395403881907074" id="9107732955310738147">
+        <property name="name" nameId="tpck.1169194664001" value="B" />
+        <property name="const" nameId="c4fa.1782955756756899613" value="false" />
+        <node role="type" roleId="mj1l.318113533128716676" type="k146.ErrorTypeNotFound" typeId="k146.777213082402126069" id="9107732955310738148">
+          <property name="rawType" nameId="k146.777213082402129269" value="unsigned" />
+        </node>
       </node>
     </node>
   </root>
