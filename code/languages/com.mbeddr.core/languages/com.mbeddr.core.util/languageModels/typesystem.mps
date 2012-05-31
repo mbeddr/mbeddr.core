@@ -3,10 +3,6 @@
   <persistence version="7" />
   <language namespace="7a5dda62-9140-4668-ab76-d5ed1746f2b2(jetbrains.mps.lang.typesystem)" />
   <language namespace="61c69711-ed61-4850-81d9-7714ff227fb0(com.mbeddr.core.expressions)" />
-  <language namespace="f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)" />
-  <language namespace="3a13115c-633c-4c5c-bbcc-75c4219e9555(jetbrains.mps.lang.quotation)" />
-  <language namespace="7866978e-a0f0-4cc7-81bc-4d213d9375e1(jetbrains.mps.lang.smodel)" />
-  <language namespace="83888646-71ce-4f1c-9c53-c54016f6ad4f(jetbrains.mps.baseLanguage.collections)" />
   <language namespace="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" />
   <language namespace="2693fc71-9b0e-4b05-ab13-f57227d675f2(com.mbeddr.core.util)" />
   <language namespace="d4615e3b-d671-4ba9-af01-2b78369b0ba7(jetbrains.mps.lang.pattern)" />
@@ -85,6 +81,9 @@
     <node type="tpd4.NonTypesystemRule" typeId="tpd4.1195214364922" id="374287044672327494">
       <property name="name" nameId="tpck.1169194664001" value="check_DecTab" />
       <property name="virtualPackage" nameId="tpck.1193676396447" value="dectab" />
+    </node>
+    <node type="tpd4.NonTypesystemRule" typeId="tpd4.1195214364922" id="9107732955310738484">
+      <property name="name" nameId="tpck.1169194664001" value="check_ErrorTypeNotFound" />
     </node>
   </roots>
   <root id="5686538669182300976">
@@ -1279,6 +1278,32 @@
     <node role="applicableNode" roleId="tpd4.1174648101952" type="tpd4.ConceptReference" typeId="tpd4.1174642788531" id="374287044672327496">
       <property name="name" nameId="tpck.1169194664001" value="dectab" />
       <link role="concept" roleId="tpd4.1174642800329" targetNodeId="k146.6209595569797584861" resolveInfo="DecTab" />
+    </node>
+  </root>
+  <root id="9107732955310738484">
+    <node role="body" roleId="tpd4.1195213635060" type="tpee.StatementList" typeId="tpee.1068580123136" id="9107732955310738485">
+      <node role="statement" roleId="tpee.1068581517665" type="tpd4.ReportErrorStatement" typeId="tpd4.1175517767210" id="9107732955310738487">
+        <node role="nodeToReport" roleId="tpd4.1227096802790" type="tpd4.ApplicableNodeReference" typeId="tpd4.1174650418652" id="9107732955310738506">
+          <link role="applicableNode" roleId="tpd4.1174650432090" targetNodeId="9107732955310738486" resolveInfo="etnf" />
+        </node>
+        <node role="errorString" roleId="tpd4.1175517851849" type="tpee.PlusExpression" typeId="tpee.1068581242875" id="9107732955310738493">
+          <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.DotExpression" typeId="tpee.1197027756228" id="9107732955310738499">
+            <node role="operand" roleId="tpee.1197027771414" type="tpd4.ApplicableNodeReference" typeId="tpd4.1174650418652" id="9107732955310738496">
+              <link role="applicableNode" roleId="tpd4.1174650432090" targetNodeId="9107732955310738486" resolveInfo="etnf" />
+            </node>
+            <node role="operation" roleId="tpee.1197027833540" type="tp25.SPropertyAccess" typeId="tp25.1138056022639" id="9107732955310738505">
+              <link role="property" roleId="tp25.1138056395725" targetNodeId="k146.777213082402129269" resolveInfo="rawType" />
+            </node>
+          </node>
+          <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="9107732955310738490">
+            <property name="value" nameId="tpee.1070475926801" value="Type not found: " />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node role="applicableNode" roleId="tpd4.1174648101952" type="tpd4.ConceptReference" typeId="tpd4.1174642788531" id="9107732955310738486">
+      <property name="name" nameId="tpck.1169194664001" value="etnf" />
+      <link role="concept" roleId="tpd4.1174642800329" targetNodeId="k146.777213082402126069" resolveInfo="ErrorTypeNotFound" />
     </node>
   </root>
 </model>
