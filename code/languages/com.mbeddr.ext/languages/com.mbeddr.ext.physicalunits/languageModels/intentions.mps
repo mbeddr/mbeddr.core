@@ -120,7 +120,7 @@
       <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="9108052991586048233">
         <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="9108052991586048234">
           <node role="expression" roleId="tpee.1068580123156" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="9108052991586048235">
-            <property name="value" nameId="tpee.1070475926801" value="negative Square" />
+            <property name="value" nameId="tpee.1070475926801" value="Negative Square" />
           </node>
         </node>
       </node>

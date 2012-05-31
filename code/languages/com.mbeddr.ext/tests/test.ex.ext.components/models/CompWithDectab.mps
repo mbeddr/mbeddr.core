@@ -124,8 +124,6 @@
     <node role="contents" roleId="x27k.6437088627575722833" type="v7ag.PortAdapter" typeId="v7ag.4491876417845704581" id="1817139875676347080">
       <property name="name" nameId="tpck.1169194664001" value="ac" />
       <link role="configuration" roleId="v7ag.5172178961827877444" targetNodeId="1817139875676347077" resolveInfo="instances" />
-      <link role="instance" roleId="v7ag.4491876417845704583" targetNodeId="1817139875676347078" resolveInfo="ac" />
-      <link role="port" roleId="v7ag.5172178961828017559" targetNodeId="1817139875676347074" resolveInfo="decider" />
       <node role="portRef" roleId="v7ag.6616025724454701213" type="v7ag.AdapterInstancePortRef" typeId="v7ag.6616025724454668918" id="4458342957759599887">
         <link role="instance" roleId="v7ag.6616025724454668919" targetNodeId="1817139875676347078" resolveInfo="ac" />
         <link role="port" roleId="v7ag.6616025724454668920" targetNodeId="1817139875676347074" resolveInfo="decider" />
