@@ -1034,16 +1034,28 @@
       <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Vertical" typeId="tpc2.1106270571710" id="6708182213627622723" />
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Component" typeId="tpc2.1078939183254" id="6708182213627622724">
         <link role="editorComponent" roleId="tpc2.1078939183255" targetNodeId="6708182213627106151" resolveInfo="preventNameManglingFlag" />
+        <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.SelectableStyleSheetItem" typeId="tpc2.1186414928363" id="3779779187805491770">
+          <property name="flag" nameId="tpc2.1186414551515" value="false" />
+        </node>
       </node>
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="6610873504380339023">
         <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Component" typeId="tpc2.1078939183254" id="605413736672283297">
           <link role="editorComponent" roleId="tpc2.1078939183255" targetNodeId="j4gk.605413736672002882" resolveInfo="IHasPrefixesComponent" />
+          <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.SelectableStyleSheetItem" typeId="tpc2.1186414928363" id="3779779187805480222">
+            <property name="flag" nameId="tpc2.1186414551515" value="false" />
+          </node>
         </node>
         <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Component" typeId="tpc2.1078939183254" id="6708182213627106038">
           <link role="editorComponent" roleId="tpc2.1078939183255" targetNodeId="6708182213627045682" resolveInfo="externFlag" />
+          <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.SelectableStyleSheetItem" typeId="tpc2.1186414928363" id="3779779187805480223">
+            <property name="flag" nameId="tpc2.1186414551515" value="false" />
+          </node>
         </node>
         <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Component" typeId="tpc2.1078939183254" id="6610873504380339110">
           <link role="editorComponent" roleId="tpc2.1078939183255" targetNodeId="9066372830132703724" resolveInfo="exportedFlag" />
+          <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.SelectableStyleSheetItem" typeId="tpc2.1186414928363" id="3779779187805480224">
+            <property name="flag" nameId="tpc2.1186414551515" value="false" />
+          </node>
         </node>
         <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="7825285260294008972">
           <property name="text" nameId="tpc2.1073389577007" value="volatile" />
@@ -1062,6 +1074,9 @@
         </node>
         <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Component" typeId="tpc2.1078939183254" id="5095889050033673109">
           <link role="editorComponent" roleId="tpc2.1078939183255" targetNodeId="j4gk.5095889050033671949" resolveInfo="constFlag" />
+          <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.SelectableStyleSheetItem" typeId="tpc2.1186414928363" id="3779779187805480225">
+            <property name="flag" nameId="tpc2.1186414551515" value="false" />
+          </node>
         </node>
         <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_RefNode" typeId="tpc2.1073389882823" id="6610873504380339028">
           <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="mj1l.318113533128716676" />
