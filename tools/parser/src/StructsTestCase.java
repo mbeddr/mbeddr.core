@@ -43,10 +43,10 @@ public class StructsTestCase extends TestCase {
 //			char forename[20];
 //			char surname[20];
 //		};
-		content.append("struct fullname	{");
-		content.append("char forename, test;");
-		content.append("int surname;");
-		content.append("} fullnameStruct;");
+//		content.append("struct fullname	{");
+//		content.append("char forename, test;");
+//		content.append("int surname;");
+//		content.append("} fullnameStruct;");
 		
 		
 //		content.append("struct s1 { 	\n");
@@ -54,6 +54,11 @@ public class StructsTestCase extends TestCase {
 //		content.append("int (*funName2) (void); \n");
 //		content.append("}; \n");
 		
+		
+		content.append("struct BITFIELD { 	\n");
+		content.append("unsigned A:1; \n");
+		content.append("unsigned B:3; \n");
+		content.append("}; \n");
 			  
 			 
 		
