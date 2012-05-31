@@ -39,13 +39,8 @@ public class GlobalVariableTestCase extends TestCase {
 		StringBuilder content = new StringBuilder();
 
 
-		content.append("typedef struct tagSRBITS {\n");
-		content.append("	  union {\n");
-		content.append("	    struct {\n");
-		content.append("	      unsigned C:1;\n");
-		content.append("	    };\n");
-		content.append("	  };\n");
-		content.append("	} SRBITS;\n");
+		content.append("int i; \n");
+		content.append("unsigned i2; \n");
 
 
 		HashMap<String, String> options = new HashMap<String, String>();
@@ -93,6 +88,7 @@ public class GlobalVariableTestCase extends TestCase {
 
 			public int visit(IASTDeclSpecifier x) {
 				System.err.println(x.toString());
+				System.err.println(  ((IASTSimpleDeclSpecifier) x).getType());
 				return PROCESS_CONTINUE;
 			}
 
