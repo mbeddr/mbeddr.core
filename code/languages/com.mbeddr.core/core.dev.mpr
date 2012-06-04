@@ -56,7 +56,7 @@
           <value>
             <Library>
               <option name="name" value="mpsutil" />
-              <option name="path" value="${mbeddr.github.core.home.bak}/code/languages/com.mbeddr.mpsutil" />
+              <option name="path" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.mpsutil" />
             </Library>
           </value>
         </entry>
@@ -71,7 +71,7 @@
     <option name="version" value="2.0" />
   </component>
   <component name="VcsDirectoryMappings">
-    <mapping directory="$mbeddr.github.core.home.bak$" vcs="Git" />
+    <mapping directory="$mbeddr.github.core.home$" vcs="Git" />
   </component>
 </project>
 
