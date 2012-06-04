@@ -1,6 +1,6 @@
 <project name="SpawnerPlugin-default" default="main">
   <property file="${ant.file}/../SpawnerPlugin.properties" />
-  <import file="${ant.file}/../SpawnerPlugin-compile.xml" />
+  <import file="${ant.file.SpawnerPlugin-default}/../SpawnerPlugin-compile.xml" />
   <target name="main" depends="compile,clean.before,folders.create,do.the.job,clean.after" />
   <target name="compile">
     <antcall target="compile.all" />

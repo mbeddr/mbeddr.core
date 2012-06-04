@@ -158,12 +158,6 @@
         </node>
       </node>
     </node>
-    <node role="baseDirectory" roleId="tps4.1226493152214" type="tps4.BaseDirPath" typeId="tps4.1226494304686" id="5100386946044466558">
-      <node role="macro" roleId="tps4.1220976095387" type="tps4.MacroReference" typeId="tps4.1220976052975" id="5100386946044466559">
-        <property name="name" nameId="tps4.1220976068141" value="mbeddr.home" />
-      </node>
-      <node role="compositePathComponent" roleId="tps4.1220974249696" type="tps4.CompositePathComponent" typeId="tps4.1220973992845" id="5100386946044466560" />
-    </node>
     <node role="scriptsDirectory" roleId="tps4.462257719548209896" type="tps4.Path" typeId="tps4.1220973916698" id="5100386946044466561">
       <node role="macro" roleId="tps4.1220976095387" type="tps4.MacroReference" typeId="tps4.1220976052975" id="5100386946044466562">
         <property name="name" nameId="tps4.1220976068141" value="base_dir" />
@@ -188,6 +182,12 @@
           <property name="path" nameId="tps4.1220974398640" value="build" />
         </node>
       </node>
+    </node>
+    <node role="baseDirectory" roleId="tps4.1226493152214" type="tps4.BaseDirPath" typeId="tps4.1226494304686" id="6427034550450898127">
+      <node role="macro" roleId="tps4.1220976095387" type="tps4.MacroReference" typeId="tps4.1220976052975" id="6427034550450898128">
+        <property name="name" nameId="tps4.1220976068141" value="mbeddr.github.core.home" />
+      </node>
+      <node role="compositePathComponent" roleId="tps4.1220974249696" type="tps4.CompositePathComponent" typeId="tps4.1220973992845" id="6427034550450898129" />
     </node>
   </root>
 </model>
