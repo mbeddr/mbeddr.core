@@ -6,7 +6,7 @@
   <devkit namespace="24565007-e59f-42fc-ac10-da3836deec1c(com.mbeddr.components)" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="v7ag" modelUID="r:9596407c-f27a-49d3-abde-3a66293c5b61(com.mbeddr.ext.components.structure)" version="3" implicit="yes" />
-  <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="10" implicit="yes" />
+  <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="11" implicit="yes" />
   <import index="mxvz" modelUID="r:b92c0a08-d42f-4c78-a3f4-d5f989493286(com.mbeddr.ext.components.mock.structure)" version="-1" implicit="yes" />
   <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="-1" implicit="yes" />
   <import index="k146" modelUID="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" version="1" implicit="yes" />
@@ -205,8 +205,6 @@
     <node role="contents" roleId="x27k.6437088627575722833" type="v7ag.PortAdapter" typeId="v7ag.4491876417845704581" id="4157464901390188220">
       <property name="name" nameId="tpck.1169194664001" value="sensor" />
       <link role="configuration" roleId="v7ag.5172178961827877444" targetNodeId="4157464901390188222" resolveInfo="instances" />
-      <link role="instance" roleId="v7ag.4491876417845704583" targetNodeId="4157464901390188223" resolveInfo="s" />
-      <link role="port" roleId="v7ag.5172178961828017559" targetNodeId="6307143892175816628" resolveInfo="sensor" />
       <node role="portRef" roleId="v7ag.6616025724454701213" type="v7ag.AdapterInstancePortRef" typeId="v7ag.6616025724454668918" id="7537522850027796963">
         <link role="instance" roleId="v7ag.6616025724454668919" targetNodeId="4157464901390188223" resolveInfo="s" />
         <link role="port" roleId="v7ag.6616025724454668920" targetNodeId="6307143892175816628" resolveInfo="sensor" />
@@ -215,8 +213,6 @@
     <node role="contents" roleId="x27k.6437088627575722833" type="v7ag.PortAdapter" typeId="v7ag.4491876417845704581" id="8729447926330607726">
       <property name="name" nameId="tpck.1169194664001" value="manager" />
       <link role="configuration" roleId="v7ag.5172178961827877444" targetNodeId="4157464901390188222" resolveInfo="instances" />
-      <link role="instance" roleId="v7ag.4491876417845704583" targetNodeId="8729447926330607721" resolveInfo="m" />
-      <link role="port" roleId="v7ag.5172178961828017559" targetNodeId="8729447926330476744" resolveInfo="acq" />
       <node role="portRef" roleId="v7ag.6616025724454701213" type="v7ag.AdapterInstancePortRef" typeId="v7ag.6616025724454668918" id="7537522850027796962">
         <link role="instance" roleId="v7ag.6616025724454668919" targetNodeId="8729447926330607721" resolveInfo="m" />
         <link role="port" roleId="v7ag.6616025724454668920" targetNodeId="8729447926330476744" resolveInfo="acq" />

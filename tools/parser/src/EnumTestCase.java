@@ -27,6 +27,7 @@ import org.eclipse.cdt.core.parser.DefaultLogService;
 import org.eclipse.cdt.core.parser.FileContent;
 import org.eclipse.cdt.core.parser.IncludeFileContentProvider;
 import org.eclipse.cdt.core.parser.ScannerInfo;
+import org.eclipse.cdt.internal.core.parser.scanner.FileCharArray;
 import org.eclipse.core.runtime.CoreException;
 
 public class EnumTestCase extends TestCase {
@@ -37,9 +38,16 @@ public class EnumTestCase extends TestCase {
 //		content.append("enum simpleMonths {Apr, May, Jun}; \n");
 //		content.append("enum simpleMonths refSimpleMonths; \n");
 //		content.append("typedef enum just3Month {Jan} typeJust3Month; \n");
-		content.append("enum simpleMonths {Apr, May, Jun}; \n");
+		content.append("int add(int i, int i2){ \n");
+		content.append(" int result = i + i2;\n");
+		content.append(" i--;\n");
+		content.append(" return result;\n");
+		content.append("}; \n");
 //		content.append("enum monthsWithValues {Dec=12, Nov=11, Oct=10, Sep=3+1, Aug=someNumber} monthValue;\n");
 
+		
+		
+		
 		HashMap<String, String> options = new HashMap<String, String>();
 
 		ScannerInfo scannerInfo = new ScannerInfo(options);
@@ -47,9 +55,9 @@ public class EnumTestCase extends TestCase {
 				.getASTTranslationUnit(
 						FileContent.create("someFile.h", content.toString()
 								.toCharArray()), scannerInfo,
-						IncludeFileContentProvider.getEmptyFilesProvider(),
+								FileContent.createForExternalFileLocation(""),
 						null, 0, new DefaultLogService());
-
+		
 //		astTranslationUnit.accept(new ASTVisitor(true) {
 //
 //			public int visit(IASTDeclaration x) {

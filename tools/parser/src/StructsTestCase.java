@@ -43,21 +43,35 @@ public class StructsTestCase extends TestCase {
 //			char forename[20];
 //			char surname[20];
 //		};
-		content.append("struct fullname	{");
-		content.append("char forename[20];");
-		content.append("char surname[20];");
-		content.append("} fullnameStruct;");
+//		content.append("struct fullname	{");
+//		content.append("char forename, test;");
+//		content.append("int surname;");
+//		content.append("} fullnameStruct;");
+		
+		
+//		content.append("struct s1 { 	\n");
+//		content.append("char (*funName) (const void* param1); \n");
+//		content.append("int (*funName2) (void); \n");
+//		content.append("}; \n");
+		
+		
+		content.append("struct BITFIELD { 	\n");
+		content.append("unsigned A:1; \n");
+		content.append("unsigned B:3; \n");
+		content.append("}; \n");
+			  
+			 
 		
 //		struct person {
 //			struct fullname name;
 //			int age;
 //		};
-		content.append("struct person {");
-		content.append("struct fullname name;");
-		content.append("int age;");
-		content.append("};");
-
-		content.append("struct person p, *pp;");
+//		content.append("struct person {");
+//		content.append("struct fullname name;");
+//		content.append("int age;");
+//		content.append("};");
+//
+//		content.append("struct person p, *pp;");
 		
 		
 //		content.append("int aaa1, bbb2, ccc3;");

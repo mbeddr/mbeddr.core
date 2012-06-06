@@ -5,7 +5,7 @@
   <devkit namespace="24565007-e59f-42fc-ac10-da3836deec1c(com.mbeddr.components)" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="v7ag" modelUID="r:9596407c-f27a-49d3-abde-3a66293c5b61(com.mbeddr.ext.components.structure)" version="3" implicit="yes" />
-  <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="10" implicit="yes" />
+  <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="11" implicit="yes" />
   <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="-1" implicit="yes" />
   <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="1" implicit="yes" />
   <import index="k146" modelUID="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" version="1" implicit="yes" />
@@ -192,8 +192,6 @@
     <node role="contents" roleId="x27k.6437088627575722833" type="v7ag.PortAdapter" typeId="v7ag.4491876417845704581" id="6591434695301277918">
       <property name="name" nameId="tpck.1169194664001" value="computer" />
       <link role="configuration" roleId="v7ag.5172178961827877444" targetNodeId="6591434695301277915" resolveInfo="instances" />
-      <link role="instance" roleId="v7ag.4491876417845704583" targetNodeId="6591434695301277916" resolveInfo="computer" />
-      <link role="port" roleId="v7ag.5172178961828017559" targetNodeId="6591434695301142807" resolveInfo="calc" />
       <node role="portRef" roleId="v7ag.6616025724454701213" type="v7ag.AdapterInstancePortRef" typeId="v7ag.6616025724454668918" id="4458342957759743025">
         <link role="instance" roleId="v7ag.6616025724454668919" targetNodeId="6591434695301277916" resolveInfo="computer" />
         <link role="port" roleId="v7ag.6616025724454668920" targetNodeId="6591434695301142807" resolveInfo="calc" />
@@ -202,8 +200,6 @@
     <node role="contents" roleId="x27k.6437088627575722833" type="v7ag.PortAdapter" typeId="v7ag.4491876417845704581" id="6209278014151173806">
       <property name="name" nameId="tpck.1169194664001" value="broken" />
       <link role="configuration" roleId="v7ag.5172178961827877444" targetNodeId="6591434695301277915" resolveInfo="instances" />
-      <link role="instance" roleId="v7ag.4491876417845704583" targetNodeId="6209278014151173805" resolveInfo="broken" />
-      <link role="port" roleId="v7ag.5172178961828017559" targetNodeId="6209278014151173789" resolveInfo="calc" />
       <node role="portRef" roleId="v7ag.6616025724454701213" type="v7ag.AdapterInstancePortRef" typeId="v7ag.6616025724454668918" id="4458342957759743024">
         <link role="instance" roleId="v7ag.6616025724454668919" targetNodeId="6209278014151173805" resolveInfo="broken" />
         <link role="port" roleId="v7ag.6616025724454668920" targetNodeId="6209278014151173789" resolveInfo="calc" />
@@ -595,8 +591,6 @@
     <node role="contents" roleId="x27k.6437088627575722833" type="v7ag.PortAdapter" typeId="v7ag.4491876417845704581" id="6209278014151173701">
       <property name="name" nameId="tpck.1169194664001" value="fc" />
       <link role="configuration" roleId="v7ag.5172178961827877444" targetNodeId="6209278014151173698" resolveInfo="instances" />
-      <link role="port" roleId="v7ag.5172178961828017559" targetNodeId="6209278014151173661" resolveInfo="counter" />
-      <link role="instance" roleId="v7ag.4491876417845704583" targetNodeId="6209278014151173699" resolveInfo="fc" />
       <node role="portRef" roleId="v7ag.6616025724454701213" type="v7ag.AdapterInstancePortRef" typeId="v7ag.6616025724454668918" id="4458342957759743027">
         <link role="instance" roleId="v7ag.6616025724454668919" targetNodeId="6209278014151173699" resolveInfo="fc" />
         <link role="port" roleId="v7ag.6616025724454668920" targetNodeId="6209278014151173661" resolveInfo="counter" />
@@ -605,8 +599,6 @@
     <node role="contents" roleId="x27k.6437088627575722833" type="v7ag.PortAdapter" typeId="v7ag.4491876417845704581" id="6209278014151448724">
       <property name="name" nameId="tpck.1169194664001" value="bc" />
       <link role="configuration" roleId="v7ag.5172178961827877444" targetNodeId="6209278014151173698" resolveInfo="instances" />
-      <link role="instance" roleId="v7ag.4491876417845704583" targetNodeId="6209278014151448723" resolveInfo="bc" />
-      <link role="port" roleId="v7ag.5172178961828017559" targetNodeId="6209278014151448700" resolveInfo="counter" />
       <node role="portRef" roleId="v7ag.6616025724454701213" type="v7ag.AdapterInstancePortRef" typeId="v7ag.6616025724454668918" id="4458342957759743026">
         <link role="instance" roleId="v7ag.6616025724454668919" targetNodeId="6209278014151448723" resolveInfo="bc" />
         <link role="port" roleId="v7ag.6616025724454668920" targetNodeId="6209278014151448700" resolveInfo="counter" />
@@ -905,8 +897,6 @@
     <node role="contents" roleId="x27k.6437088627575722833" type="v7ag.PortAdapter" typeId="v7ag.4491876417845704581" id="6209278014151673290">
       <property name="name" nameId="tpck.1169194664001" value="fs" />
       <link role="configuration" roleId="v7ag.5172178961827877444" targetNodeId="6209278014151673287" resolveInfo="instances" />
-      <link role="instance" roleId="v7ag.4491876417845704583" targetNodeId="6209278014151673288" resolveInfo="fs" />
-      <link role="port" roleId="v7ag.5172178961828017559" targetNodeId="6209278014151673260" resolveInfo="fs" />
       <node role="portRef" roleId="v7ag.6616025724454701213" type="v7ag.AdapterInstancePortRef" typeId="v7ag.6616025724454668918" id="4458342957759743028">
         <link role="instance" roleId="v7ag.6616025724454668919" targetNodeId="6209278014151673288" resolveInfo="fs" />
         <link role="port" roleId="v7ag.6616025724454668920" targetNodeId="6209278014151673260" resolveInfo="fs" />
