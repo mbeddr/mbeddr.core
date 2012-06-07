@@ -87,7 +87,7 @@
     </node>
     <node type="2omo.ConceptTextGenDeclaration" typeId="2omo.1233670071145" id="3976803464656556888">
       <property name="virtualPackage" nameId="tpck.1193676396447" value="expr.arith.unary" />
-      <link role="conceptDeclaration" roleId="2omo.1233670257997" targetNodeId="mj1l.3976803464656556878" resolveInfo="UnaryArithmeticNotExpression" />
+      <link role="conceptDeclaration" roleId="2omo.1233670257997" targetNodeId="mj1l.3976803464656556878" resolveInfo="BitwiseNotExpression" />
     </node>
     <node type="2omo.ConceptTextGenDeclaration" typeId="2omo.1233670071145" id="1054289341113476318">
       <property name="virtualPackage" nameId="tpck.1193676396447" value="literals" />
