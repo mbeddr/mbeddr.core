@@ -21,6 +21,7 @@
     <dependency reexport="false">783af01f-87a7-412c-be99-293a162652b5(com.mbeddr.core.embedded)</dependency>
     <dependency reexport="false">5ce2e6a6-053e-4914-9e21-b9b7b61f3666(com.mbeddr.core.cstubs)</dependency>
     <dependency reexport="false">daacf807-0832-4338-866d-0f91b590ef56(Eclipse.Debugger)</dependency>
+    <dependency reexport="false">2693fc71-9b0e-4b05-ab13-f57227d675f2(com.mbeddr.core.util)</dependency>
   </dependencies>
   <usedLanguages>
     <usedLanguage>2d7fadf5-33f6-4e80-a78f-0f739add2bde(com.mbeddr.core.buildconfig)</usedLanguage>

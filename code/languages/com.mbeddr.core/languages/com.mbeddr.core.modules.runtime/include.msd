@@ -21,11 +21,13 @@
     <dependency reexport="false">783af01f-87a7-412c-be99-293a162652b5(com.mbeddr.core.embedded)</dependency>
     <dependency reexport="false">5ce2e6a6-053e-4914-9e21-b9b7b61f3666(com.mbeddr.core.cstubs)</dependency>
     <dependency reexport="false">ad5e9db1-9600-47c7-86ef-614165b281b8(com.mbeddr.core.legacy)</dependency>
+    <dependency reexport="false">2693fc71-9b0e-4b05-ab13-f57227d675f2(com.mbeddr.core.util)</dependency>
   </dependencies>
   <usedLanguages>
     <usedLanguage>63e0e566-5131-447e-90e3-12ea330e1a00(com.mbeddr.mpsutil.blutil)</usedLanguage>
     <usedLanguage>a5bc1797-410b-4ce1-8c4d-9cff6020fae7(com.mbeddr.core.eclipse)</usedLanguage>
     <usedLanguage>a5bc1797-410b-4ce1-8c4d-9cff6020fae7(com.mbeddr.core.eclipse)</usedLanguage>
+    <usedLanguage>28f9e497-3b42-4291-aeba-0a1039153ab1(jetbrains.mps.lang.plugin)</usedLanguage>
   </usedLanguages>
   <usedDevKits>
     <usedDevKit>d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)</usedDevKit>
