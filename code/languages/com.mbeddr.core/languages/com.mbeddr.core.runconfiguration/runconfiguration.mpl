@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <language namespace="com.mbeddr.core.runconfiguration" uuid="6ba563df-3f75-4e84-8c14-6626bdd5f00d" compileInMPS="true" doNotGenerateAdapters="false">
   <models>
-    <modelRoot path="${mbeddr.github.core.home}/code/languages/com.mbeddr.core/languages/com.mbeddr.core.runconfiguration/languageModels" namespacePrefix="" />
+    <modelRoot path="${language_descriptor}/languageModels" namespacePrefix="com.mbeddr.core.runconfiguration" />
   </models>
   <accessoryModels />
   <generators />
