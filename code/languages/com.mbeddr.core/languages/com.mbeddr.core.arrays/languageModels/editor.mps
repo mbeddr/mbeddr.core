@@ -249,6 +249,12 @@
           </node>
         </node>
       </node>
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="1452920870317474615">
+        <property name="text" nameId="tpc2.1073389577007" value="||||" />
+      </node>
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_RefNode" typeId="tpc2.1073389882823" id="1452920870317474613">
+        <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="yq40.1452920870317474611" />
+      </node>
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="5679441017214012571">
         <property name="text" nameId="tpc2.1073389577007" value="]" />
         <link role="actionMap" roleId="tpc2.1139959269582" targetNodeId="5095889050031027316" resolveInfo="deleteArrayType" />
