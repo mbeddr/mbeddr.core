@@ -151,7 +151,7 @@
     </node>
     <node type="tpc2.CellActionMapDeclaration" typeId="tpc2.1139535219966" id="5095889050032295398">
       <property name="name" nameId="tpck.1169194664001" value="deleteDotOrArrow" />
-      <link role="applicableConcept" roleId="tpc2.1139535219968" targetNodeId="mj1l.5856418980158945545" resolveInfo="IDotExpression" />
+      <link role="applicableConcept" roleId="tpc2.1139535219968" targetNodeId="mj1l.1452920870317533092" resolveInfo="AbstractDotExpression" />
     </node>
     <node type="tpc2.CellMenuComponent" typeId="tpc2.1166040637528" id="2771264470559089685">
       <property name="virtualPackage" nameId="tpck.1193676396447" value="expr" />
@@ -1498,8 +1498,8 @@
               <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_ReplaceWithAnotherOperation" typeId="tp25.1140131837776" id="5095889050032295412">
                 <node role="replacementNode" roleId="tp25.1140131861877" type="tpee.DotExpression" typeId="tpee.1197027756228" id="5095889050032379690">
                   <node role="operand" roleId="tpee.1197027771414" type="tpc2.CellActionMap_FunctionParm_selectedNode" typeId="tpc2.1139535439112" id="5095889050032379691" />
-                  <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_ConceptMethodCall" typeId="tp25.1179409122411" id="5095889050032379692">
-                    <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="ywuz.5095889050032295426" resolveInfo="getContextExpression" />
+                  <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="1452920870317550653">
+                    <link role="link" roleId="tp25.1138056516764" targetNodeId="mj1l.7254843406768839760" />
                   </node>
                 </node>
               </node>

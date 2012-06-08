@@ -7,7 +7,7 @@
   <language namespace="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1(jetbrains.mps.lang.constraints)" />
   <language namespace="daafa647-f1f7-4b0b-b096-69cd7c8408c0(jetbrains.mps.baseLanguage.regexp)" />
   <devkit namespace="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
-  <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="10" />
+  <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="11" />
   <import index="lkfb" modelUID="f:java_stub#37a3367b-1fb2-44d8-aa6b-18075e74e003#jetbrains.mps.smodel(MPS.Classpath/jetbrains.mps.smodel@java_stub)" version="-1" />
   <import index="ywuz" modelUID="r:c6ce92e7-5a98-4a6f-866a-ec8b9e945dd8(com.mbeddr.core.expressions.behavior)" version="-1" />
   <import index="tpcu" modelUID="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" version="-1" />
@@ -49,7 +49,7 @@
       <property name="virtualPackage" nameId="tpck.1193676396447" value="types.ieee754" />
     </node>
     <node type="tpd4.InferenceRule" typeId="tpd4.1174643105530" id="6603034309021755294">
-      <property name="name" nameId="tpck.1169194664001" value="typeof_IDotExpression" />
+      <property name="name" nameId="tpck.1169194664001" value="typeof_AbstractDotExpression" />
       <property name="virtualPackage" nameId="tpck.1193676396447" value="memberaccess" />
     </node>
     <node type="tpd4.OverloadedOpRulesContainer" typeId="tpd4.1236165709895" id="8399455261460730076">
@@ -1643,10 +1643,10 @@
           <node role="normalType" roleId="tpd4.1185788644032" type="tpd4.TypeOfExpression" typeId="tpd4.1174657487114" id="6603034309021755310">
             <node role="term" roleId="tpd4.1174657509053" type="tpee.DotExpression" typeId="tpee.1197027756228" id="6603034309021755313">
               <node role="operand" roleId="tpee.1197027771414" type="tpd4.ApplicableNodeReference" typeId="tpd4.1174650418652" id="6603034309021755312">
-                <link role="applicableNode" roleId="tpd4.1174650432090" targetNodeId="6603034309021755296" resolveInfo="de" />
+                <link role="applicableNode" roleId="tpd4.1174650432090" targetNodeId="6603034309021755296" resolveInfo="abstractDotExpression" />
               </node>
-              <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="6603034309021755317">
-                <link role="link" roleId="tp25.1138056516764" targetNodeId="mj1l.6603034309021722828" />
+              <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="1452920870317550655">
+                <link role="link" roleId="tp25.1138056516764" targetNodeId="mj1l.1452920870317550651" />
               </node>
             </node>
           </node>
@@ -1654,15 +1654,15 @@
         <node role="leftExpression" roleId="tpd4.1174660783413" type="tpd4.NormalTypeClause" typeId="tpd4.1185788614172" id="6603034309021755308">
           <node role="normalType" roleId="tpd4.1185788644032" type="tpd4.TypeOfExpression" typeId="tpd4.1174657487114" id="6603034309021755298">
             <node role="term" roleId="tpd4.1174657509053" type="tpd4.ApplicableNodeReference" typeId="tpd4.1174650418652" id="6603034309021755300">
-              <link role="applicableNode" roleId="tpd4.1174650432090" targetNodeId="6603034309021755296" resolveInfo="de" />
+              <link role="applicableNode" roleId="tpd4.1174650432090" targetNodeId="6603034309021755296" resolveInfo="abstractDotExpression" />
             </node>
           </node>
         </node>
       </node>
     </node>
     <node role="applicableNode" roleId="tpd4.1174648101952" type="tpd4.ConceptReference" typeId="tpd4.1174642788531" id="6603034309021755296">
-      <property name="name" nameId="tpck.1169194664001" value="de" />
-      <link role="concept" roleId="tpd4.1174642800329" targetNodeId="mj1l.5856418980158945545" resolveInfo="IDotExpression" />
+      <property name="name" nameId="tpck.1169194664001" value="abstractDotExpression" />
+      <link role="concept" roleId="tpd4.1174642800329" targetNodeId="mj1l.1452920870317533092" resolveInfo="AbstractDotExpression" />
     </node>
   </root>
   <root id="8399455261460730076">
