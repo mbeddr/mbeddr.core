@@ -123,27 +123,27 @@
     </node>
     <node type="tpee.ClassConcept" typeId="tpee.1068390468198" id="2760129706098851356">
       <property name="name" nameId="tpck.1169194664001" value="MStackFrame" />
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="mapper.impl.state.impl.datatypes" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="mapper.state.impl.datatypes" />
     </node>
     <node type="tpee.ClassConcept" typeId="tpee.1068390468198" id="2760129706098851398">
       <property name="name" nameId="tpck.1169194664001" value="MThread" />
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="mapper.impl.state.impl.datatypes" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="mapper.state.impl.datatypes" />
     </node>
     <node type="tpee.ClassConcept" typeId="tpee.1068390468198" id="2760129706098853477">
       <property name="name" nameId="tpck.1169194664001" value="MLocation" />
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="mapper.impl.state.impl.datatypes" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="mapper.state.impl.datatypes" />
     </node>
     <node type="tpee.ClassConcept" typeId="tpee.1068390468198" id="7740671760072524594">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="mapper.impl.session" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="mapper.session.impl" />
       <property name="name" nameId="tpck.1169194664001" value="BridgeControlService" />
     </node>
     <node type="tpee.ClassConcept" typeId="tpee.1068390468198" id="7740671760072525181">
       <property name="name" nameId="tpck.1169194664001" value="BridgeBreakpointService" />
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="mapper.impl.breakpoint" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="mapper.breakpoint.impl" />
     </node>
     <node type="tpee.ClassConcept" typeId="tpee.1068390468198" id="7740671760072525596">
       <property name="name" nameId="tpck.1169194664001" value="MLocationAndBreakpointMapper" />
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="mapper.impl.breakpoint.mapper.impl" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="mapper.breakpoint.impl.mapper.impl" />
     </node>
     <node type="tpee.ClassConcept" typeId="tpee.1068390468198" id="7740671760072528754">
       <property name="virtualPackage" nameId="tpck.1193676396447" value="mps-integration.breakpoints.impl.categories" />
@@ -168,7 +168,7 @@
       <property name="abstractClass" nameId="tpee.1075300953594" value="false" />
     </node>
     <node type="tpee.ClassConcept" typeId="tpee.1068390468198" id="5423932613203051179">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="mapper.impl.breakpoint.mappings.impl" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="mapper.breakpoint.impl.mappings.impl" />
       <property name="name" nameId="tpck.1169194664001" value="BreakpointMapping" />
     </node>
     <node type="tpee.Interface" typeId="tpee.1107796713796" id="7740671760072529184">
@@ -196,11 +196,11 @@
       <property name="name" nameId="tpck.1169194664001" value="CStackFrame" />
     </node>
     <node type="tpee.Interface" typeId="tpee.1107796713796" id="3096053326356090385">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="mapper.interface.stepping" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="mapper.stepping" />
       <property name="name" nameId="tpck.1169194664001" value="IMSteppingController" />
     </node>
     <node type="tpee.ClassConcept" typeId="tpee.1068390468198" id="3096053326356212975">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="mapper.impl.program-state" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="mapper.program-state.impl" />
       <property name="name" nameId="tpck.1169194664001" value="StackMapper" />
     </node>
     <node type="tpee.Interface" typeId="tpee.1107796713796" id="8899419320705473986">
@@ -216,7 +216,7 @@
       <property name="name" nameId="tpck.1169194664001" value="CBreakpointManager" />
     </node>
     <node type="tpee.ClassConcept" typeId="tpee.1068390468198" id="3882615200713393632">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="mapper.impl.breakpoint.mappings.impl" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="mapper.breakpoint.impl.mappings.impl" />
       <property name="name" nameId="tpck.1169194664001" value="BreakpointMappingManager" />
     </node>
     <node type="tpee.Interface" typeId="tpee.1107796713796" id="3882615200713472052">
@@ -296,7 +296,7 @@
       <property name="name" nameId="tpck.1169194664001" value="MpsSessionServices" />
     </node>
     <node type="tpee.Interface" typeId="tpee.1107796713796" id="6653707071776299366">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="mapper.interface.breakpoints" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="mapper.breakpoint" />
       <property name="name" nameId="tpck.1169194664001" value="ITemporalBreakpointCreator" />
     </node>
     <node type="tpee.Interface" typeId="tpee.1107796713796" id="6576295153437175042">
@@ -308,7 +308,7 @@
       <property name="virtualPackage" nameId="tpck.1193676396447" value="language-api.strategies.impl" />
     </node>
     <node type="tpee.ClassConcept" typeId="tpee.1068390468198" id="7136645803916906828">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="mapper.impl.state.impl.datatypes" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="mapper.state.impl.datatypes" />
       <property name="name" nameId="tpck.1169194664001" value="MWatchableCategories" />
     </node>
     <node type="tpee.ClassConcept" typeId="tpee.1068390468198" id="8843487766123656472">
@@ -340,11 +340,11 @@
       <property name="virtualPackage" nameId="tpck.1193676396447" value="wrapper.legacy.variable-resolver.resolved" />
     </node>
     <node type="tpee.ClassConcept" typeId="tpee.1068390468198" id="4474148880361315167">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="mapper.impl.state.impl" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="mapper.state.impl" />
       <property name="name" nameId="tpck.1169194664001" value="MWatchablesCreator" />
     </node>
     <node type="tpee.ClassConcept" typeId="tpee.1068390468198" id="6482571323861344536">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="mapper.impl.state.impl" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="mapper.state.impl" />
       <property name="name" nameId="tpck.1169194664001" value="ModelRebuildChecker" />
     </node>
     <node type="tpee.ClassConcept" typeId="tpee.1068390468198" id="8973067500929635632">
@@ -407,11 +407,11 @@
     </node>
     <node type="tpee.Interface" typeId="tpee.1107796713796" id="2344630019804080468">
       <property name="name" nameId="tpck.1169194664001" value="IFrameMapping" />
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="mapper.impl.state.impl.frame-mapping" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="mapper.state.impl.frame-mapping" />
     </node>
     <node type="tpee.ClassConcept" typeId="tpee.1068390468198" id="2344630019804085995">
       <property name="name" nameId="tpck.1169194664001" value="FrameMapping" />
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="mapper.impl.state.impl.frame-mapping" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="mapper.state.impl.frame-mapping" />
     </node>
     <node type="tpee.ClassConcept" typeId="tpee.1068390468198" id="6315255573134581356">
       <property name="virtualPackage" nameId="tpck.1193676396447" value="language-api.strategies.impl" />
@@ -426,7 +426,7 @@
       <property name="name" nameId="tpck.1169194664001" value="IStrategyConfiguration" />
     </node>
     <node type="tpee.ClassConcept" typeId="tpee.1068390468198" id="1054128357871665168">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="mapper.impl.stepping" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="mapper.stepping.impl" />
       <property name="name" nameId="tpck.1169194664001" value="StrategyConfiguration" />
     </node>
     <node type="tpee.ClassConcept" typeId="tpee.1068390468198" id="964800392900901328">
@@ -491,11 +491,11 @@
       <property name="name" nameId="tpck.1169194664001" value="DebuggerException" />
     </node>
     <node type="tpee.ClassConcept" typeId="tpee.1068390468198" id="3272673247068615393">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="mapper.impl.stepping.exception" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="mapper.stepping.impl.exception" />
       <property name="name" nameId="tpck.1169194664001" value="InvalidDebugImplementation" />
     </node>
     <node type="tpee.ClassConcept" typeId="tpee.1068390468198" id="3272673247068750939">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="mapper.impl.breakpoint.exception" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="mapper.breakpoint.impl.exception" />
       <property name="name" nameId="tpck.1169194664001" value="MissingTracesException" />
     </node>
     <node type="tpee.ClassConcept" typeId="tpee.1068390468198" id="3602773346128575429">
@@ -614,27 +614,27 @@
       <property name="name" nameId="tpck.1169194664001" value="NCPointerVariable" />
     </node>
     <node type="tpee.Interface" typeId="tpee.1107796713796" id="2581466085545768016">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="mapper.impl.program-state.new" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="mapper.program-state.impl.new" />
       <property name="name" nameId="tpck.1169194664001" value="IStackFrame" />
     </node>
     <node type="tpee.Interface" typeId="tpee.1107796713796" id="2581466085545768018">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="mapper.impl.program-state.new" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="mapper.program-state.impl.new" />
       <property name="name" nameId="tpck.1169194664001" value="IMUnmappedVariable" />
     </node>
     <node type="tpee.EnumClass" typeId="tpee.1083245097125" id="2581466085545905490">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="mapper.impl.program-state.new" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="mapper.program-state.impl.new" />
       <property name="name" nameId="tpck.1169194664001" value="CWatchableKind" />
     </node>
     <node type="tpee.Interface" typeId="tpee.1107796713796" id="2581466085545905500">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="mapper.impl.program-state.new" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="mapper.program-state.impl.new" />
       <property name="name" nameId="tpck.1169194664001" value="IMMappingState" />
     </node>
     <node type="tpee.ClassConcept" typeId="tpee.1068390468198" id="2581466085545905658">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="mapper.impl.program-state.new" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="mapper.program-state.impl.new" />
       <property name="name" nameId="tpck.1169194664001" value="MUnmappedVariable" />
     </node>
     <node type="tpee.ClassConcept" typeId="tpee.1068390468198" id="2581466085545906683">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="mapper.impl.program-state.new" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="mapper.program-state.impl.new" />
       <property name="name" nameId="tpck.1169194664001" value="CastingWatchableFailedException" />
     </node>
     <node type="tpee.ClassConcept" typeId="tpee.1068390468198" id="2581466085545909228">
@@ -658,47 +658,47 @@
       <property name="name" nameId="tpck.1169194664001" value="CreatingBreakpointFailedException" />
     </node>
     <node type="tpee.Interface" typeId="tpee.1107796713796" id="2581466085546042417">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="mapper.interface.session" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="mapper.session" />
       <property name="name" nameId="tpck.1169194664001" value="IMSessionController" />
     </node>
     <node type="tpee.ClassConcept" typeId="tpee.1068390468198" id="2581466085546042599">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="mapper.impl.session" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="mapper.session.impl" />
       <property name="name" nameId="tpck.1169194664001" value="MSessionController" />
     </node>
     <node type="tpee.ClassConcept" typeId="tpee.1068390468198" id="2581466085546042792">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="mapper.impl.stepping.exception" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="mapper.stepping.impl.exception" />
       <property name="name" nameId="tpck.1169194664001" value="ControllingSessionFailedException" />
     </node>
     <node type="tpee.ClassConcept" typeId="tpee.1068390468198" id="2581466085546042879">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="mapper.impl.stepping" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="mapper.stepping.impl" />
       <property name="name" nameId="tpck.1169194664001" value="MSteppingController" />
     </node>
     <node type="tpee.Interface" typeId="tpee.1107796713796" id="2581466085546043137">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="mapper.impl.program-state" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="mapper.program-state.impl" />
       <property name="name" nameId="tpck.1169194664001" value="IUnmappedCallStack" />
     </node>
     <node type="tpee.Interface" typeId="tpee.1107796713796" id="2581466085546043247">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="mapper.impl.program-state" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="mapper.program-state.impl" />
       <property name="name" nameId="tpck.1169194664001" value="IMappedCallStack" />
     </node>
     <node type="tpee.ClassConcept" typeId="tpee.1068390468198" id="2581466085546043729">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="mapper.impl.state.impl" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="mapper.state.impl" />
       <property name="name" nameId="tpck.1169194664001" value="MProgramStateManager" />
     </node>
     <node type="tpee.Interface" typeId="tpee.1107796713796" id="2581466085546043778">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="mapper.interface.breakpoints" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="mapper.breakpoint" />
       <property name="name" nameId="tpck.1169194664001" value="IPermanentBreakpointCreator" />
     </node>
     <node type="tpee.Interface" typeId="tpee.1107796713796" id="2581466085546043937">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="mapper.impl.breakpoint.mapper" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="mapper.breakpoint.impl.mapper" />
       <property name="name" nameId="tpck.1169194664001" value="IMBreakpointMapper" />
     </node>
     <node type="tpee.ClassConcept" typeId="tpee.1068390468198" id="2581466085546044211">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="mapper.impl.breakpoint.exception" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="mapper.breakpoint.impl.exception" />
       <property name="name" nameId="tpck.1169194664001" value="TryingToRemoveUnknownBreakpoint" />
     </node>
     <node type="tpee.ClassConcept" typeId="tpee.1068390468198" id="2581466085546044777">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="mapper.impl.breakpoint" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="mapper.breakpoint.impl" />
       <property name="name" nameId="tpck.1169194664001" value="MBreakpointManager" />
     </node>
     <node type="tpee.ClassConcept" typeId="tpee.1068390468198" id="2581466085546045010">
@@ -706,19 +706,19 @@
       <property name="name" nameId="tpck.1169194664001" value="CDebugWrapperListenerAdapter" />
     </node>
     <node type="tpee.Interface" typeId="tpee.1107796713796" id="2581466085546045399">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="mapper.impl.breakpoint.mappings" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="mapper.breakpoint.impl.mappings" />
       <property name="name" nameId="tpck.1169194664001" value="IBreakpointMappingManager" />
     </node>
     <node type="tpee.Interface" typeId="tpee.1107796713796" id="6741789984639911757">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="mapper.impl.breakpoint.mapper" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="mapper.breakpoint.impl.mapper" />
       <property name="name" nameId="tpck.1169194664001" value="IMLocationMapper" />
     </node>
     <node type="tpee.ClassConcept" typeId="tpee.1068390468198" id="6741789984639923997">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="mapper.impl.cross" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="mapper.cross" />
       <property name="name" nameId="tpck.1169194664001" value="MDebugApiWrapper" />
     </node>
     <node type="tpee.Interface" typeId="tpee.1107796713796" id="6741789984639924003">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="mapper.impl.cross" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="mapper.cross" />
       <property name="name" nameId="tpck.1169194664001" value="IMDebugApiWrapper" />
     </node>
     <node type="tpee.ClassConcept" typeId="tpee.1068390468198" id="6884284114861259357">
@@ -730,11 +730,11 @@
       <property name="name" nameId="tpck.1169194664001" value="CWrapperListenerAdapter" />
     </node>
     <node type="tpee.Interface" typeId="tpee.1107796713796" id="6884284114861563137">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="mapper.impl.state.impl" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="mapper.state" />
       <property name="name" nameId="tpck.1169194664001" value="IMProgramStateManager" />
     </node>
     <node type="tpee.ClassConcept" typeId="tpee.1068390468198" id="6884284114861570720">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="mapper.impl.state.exceptions" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="mapper.state.impl.exceptions" />
       <property name="name" nameId="tpck.1169194664001" value="RebuildRequiredException" />
     </node>
     <node type="tpee.Interface" typeId="tpee.1107796713796" id="3306617059423022448">
@@ -742,19 +742,19 @@
       <property name="name" nameId="tpck.1169194664001" value="ICVariable" />
     </node>
     <node type="tpee.EnumClass" typeId="tpee.1083245097125" id="3306617059423022733">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="mapper.impl.program-state.new" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="mapper.program-state.impl.new" />
       <property name="name" nameId="tpck.1169194664001" value="MMappingState" />
     </node>
     <node type="tpee.ClassConcept" typeId="tpee.1068390468198" id="3306617059423216877">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="mapper.impl.program-state" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="mapper.program-state.impl" />
       <property name="name" nameId="tpck.1169194664001" value="MUnmappedWatchablesCreator" />
     </node>
     <node type="tpee.Interface" typeId="tpee.1107796713796" id="3306617059423216918">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="mapper.impl.program-state" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="mapper.program-state.impl" />
       <property name="name" nameId="tpck.1169194664001" value="IMWatchablesAccesor" />
     </node>
     <node type="tpee.Interface" typeId="tpee.1107796713796" id="3306617059423216968">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="mapper.impl.program-state" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="mapper.program-state.impl" />
       <property name="name" nameId="tpck.1169194664001" value="IUnmappedStackFrame" />
     </node>
     <node type="tpee.ClassConcept" typeId="tpee.1068390468198" id="3306617059423506995">
@@ -762,55 +762,55 @@
       <property name="name" nameId="tpck.1169194664001" value="ResolvingChildrenFailedExcepton" />
     </node>
     <node type="tpee.ClassConcept" typeId="tpee.1068390468198" id="3306617059423512080">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="mapper.impl.program-state" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="mapper.program-state.impl" />
       <property name="name" nameId="tpck.1169194664001" value="UnsupportedTypeException" />
     </node>
     <node type="tpee.Interface" typeId="tpee.1107796713796" id="3306617059423512953">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="mapper.impl.state.impl" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="mapper.state.impl" />
       <property name="name" nameId="tpck.1169194664001" value="IMCallStackConstructor" />
     </node>
     <node type="tpee.ClassConcept" typeId="tpee.1068390468198" id="5898337263723203941">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="mapper.impl.state.exceptions" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="mapper.state.impl.exceptions" />
       <property name="name" nameId="tpck.1169194664001" value="InvalidASTException" />
     </node>
     <node type="tpee.ClassConcept" typeId="tpee.1068390468198" id="5898337263723574251">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="mapper.impl.cross" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="mapper.cross" />
       <property name="name" nameId="tpck.1169194664001" value="SNodeProxy" />
     </node>
     <node type="tpee.ClassConcept" typeId="tpee.1068390468198" id="8055308335025299645">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="mapper.impl.state.impl.frame-mapping" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="mapper.state.impl.frame-mapping" />
       <property name="name" nameId="tpck.1169194664001" value="MFrameMapper" />
     </node>
     <node type="tpee.Interface" typeId="tpee.1107796713796" id="8055308335025300130">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="mapper.impl.state" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="mapper.state.impl" />
       <property name="name" nameId="tpck.1169194664001" value="IMFrameMapper" />
     </node>
     <node type="tpee.ClassConcept" typeId="tpee.1068390468198" id="8055308335025346413">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="mapper.impl.state.impl" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="mapper.state.impl" />
       <property name="name" nameId="tpck.1169194664001" value="MCallStackConstructor" />
     </node>
     <node type="tpee.Interface" typeId="tpee.1107796713796" id="8055308335025368605">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="mapper.impl.state.impl" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="mapper.state.impl" />
       <property name="name" nameId="tpck.1169194664001" value="IMWatchablesCreator" />
     </node>
     <node type="tpee.ClassConcept" typeId="tpee.1068390468198" id="1352215636566233332">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="mapper.impl.state.impl.datatypes.values" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="mapper.state.impl.datatypes.values" />
       <property name="name" nameId="tpck.1169194664001" value="MComplexValue" />
     </node>
     <node type="tpee.ClassConcept" typeId="tpee.1068390468198" id="1352215636566233245">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="mapper.impl.state.impl.datatypes.values" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="mapper.state.impl.datatypes.values" />
       <property name="name" nameId="tpck.1169194664001" value="MPrimitiveValue" />
     </node>
     <node type="tpee.ClassConcept" typeId="tpee.1068390468198" id="7691049327859156764">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="mapper.impl.state.impl.datatypes" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="mapper.state.impl.datatypes" />
       <property name="name" nameId="tpck.1169194664001" value="ProgramState" />
     </node>
     <node type="tpee.ClassConcept" typeId="tpee.1068390468198" id="7691049327859156830">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="mapper.impl.state.impl.datatypes" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="mapper.state.impl.datatypes" />
       <property name="name" nameId="tpck.1169194664001" value="MWatchable" />
     </node>
     <node type="tpee.Interface" typeId="tpee.1107796713796" id="7691049327860102616">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="mapper.impl.state.impl" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="mapper.state.impl" />
       <property name="name" nameId="tpck.1169194664001" value="IMUnmappedWatchablesCreator" />
     </node>
     <node type="tpee.Interface" typeId="tpee.1107796713796" id="1510854183334523651">
