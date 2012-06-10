@@ -119,7 +119,7 @@
     </node>
     <node type="tpee.Interface" typeId="tpee.1107796713796" id="8486736576086538464">
       <property name="name" nameId="tpck.1169194664001" value="ICSteppingController" />
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="wrapper.interfaces.stepping" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="wrapper.stepping" />
     </node>
     <node type="tpee.ClassConcept" typeId="tpee.1068390468198" id="2760129706098851356">
       <property name="name" nameId="tpck.1169194664001" value="MStackFrame" />
@@ -151,19 +151,19 @@
       <property name="abstractClass" nameId="tpee.1075300953594" value="true" />
     </node>
     <node type="tpee.ClassConcept" typeId="tpee.1068390468198" id="7740671760072529069">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="wrapper.impl.breakpoints.locations" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="wrapper.breakpoints.impl.locations" />
       <property name="name" nameId="tpck.1169194664001" value="CFunctionLocation" />
     </node>
     <node type="tpee.ClassConcept" typeId="tpee.1068390468198" id="7740671760072529201">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="wrapper.impl.breakpoints.locations" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="wrapper.breakpoints.impl.locations" />
       <property name="name" nameId="tpck.1169194664001" value="CBreakpointLocationFactory" />
     </node>
     <node type="tpee.ClassConcept" typeId="tpee.1068390468198" id="7740671760072529332">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="wrapper.impl.breakpoints.locations" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="wrapper.breakpoints.impl.locations" />
       <property name="name" nameId="tpck.1169194664001" value="CLineLocation" />
     </node>
     <node type="tpee.ClassConcept" typeId="tpee.1068390468198" id="7740671760072532178">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="wrapper.impl.breakpoints" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="wrapper.breakpoints.impl" />
       <property name="name" nameId="tpck.1169194664001" value="CBreakpoint" />
       <property name="abstractClass" nameId="tpee.1075300953594" value="false" />
     </node>
@@ -172,7 +172,7 @@
       <property name="name" nameId="tpck.1169194664001" value="BreakpointMapping" />
     </node>
     <node type="tpee.Interface" typeId="tpee.1107796713796" id="7740671760072529184">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="wrapper.interfaces.breakpoints" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="wrapper.breakpoints" />
       <property name="name" nameId="tpck.1169194664001" value="ICBreakpointLocationFactory" />
     </node>
     <node type="tpee.Interface" typeId="tpee.1107796713796" id="3860130368034670265">
@@ -180,19 +180,19 @@
       <property name="name" nameId="tpck.1169194664001" value="IMpsDebugSession" />
     </node>
     <node type="tpee.Interface" typeId="tpee.1107796713796" id="3860130368034672397">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="wrapper.interfaces.program-state" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="wrapper.state" />
       <property name="name" nameId="tpck.1169194664001" value="INewCCallStack" />
     </node>
     <node type="tpee.Interface" typeId="tpee.1107796713796" id="3860130368034672424">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="wrapper.interfaces.program-state" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="wrapper.state" />
       <property name="name" nameId="tpck.1169194664001" value="ICStackFrame" />
     </node>
     <node type="tpee.ClassConcept" typeId="tpee.1068390468198" id="3860130368034717469">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="wrapper.impl.legacy.program-state" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="wrapper.legacy.program-state" />
       <property name="name" nameId="tpck.1169194664001" value="CCallStack" />
     </node>
     <node type="tpee.ClassConcept" typeId="tpee.1068390468198" id="3860130368034717486">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="wrapper.impl.legacy.program-state" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="wrapper.legacy.program-state" />
       <property name="name" nameId="tpck.1169194664001" value="CStackFrame" />
     </node>
     <node type="tpee.Interface" typeId="tpee.1107796713796" id="3096053326356090385">
@@ -204,15 +204,15 @@
       <property name="name" nameId="tpck.1169194664001" value="StackMapper" />
     </node>
     <node type="tpee.Interface" typeId="tpee.1107796713796" id="8899419320705473986">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="wrapper.interfaces.breakpoints" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="wrapper.breakpoints" />
       <property name="name" nameId="tpck.1169194664001" value="ICBreakpoint" />
     </node>
     <node type="tpee.Interface" typeId="tpee.1107796713796" id="3882615200713306241">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="wrapper.interfaces.breakpoints" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="wrapper.breakpoints" />
       <property name="name" nameId="tpck.1169194664001" value="ICBreakpointManager" />
     </node>
     <node type="tpee.ClassConcept" typeId="tpee.1068390468198" id="3882615200713353411">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="wrapper.impl.breakpoints" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="wrapper.breakpoints.impl" />
       <property name="name" nameId="tpck.1169194664001" value="CBreakpointManager" />
     </node>
     <node type="tpee.ClassConcept" typeId="tpee.1068390468198" id="3882615200713393632">
@@ -320,7 +320,7 @@
       <property name="name" nameId="tpck.1169194664001" value="ResumeWithoutBreakpointStrategy" />
     </node>
     <node type="tpee.ClassConcept" typeId="tpee.1068390468198" id="4297450106842178817">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="wrapper.impl.breakpoints.locations" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="wrapper.breakpoints.impl.locations" />
       <property name="name" nameId="tpck.1169194664001" value="CAddressLocation" />
     </node>
     <node type="tpee.ClassConcept" typeId="tpee.1068390468198" id="4297450106842272243">
@@ -333,11 +333,11 @@
     </node>
     <node type="tpee.EnumClass" typeId="tpee.1083245097125" id="4474148880361301161">
       <property name="name" nameId="tpck.1169194664001" value="VariableType" />
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="wrapper.impl.legacy.variable-resolver.resolved" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="wrapper.legacy.variable-resolver.resolved" />
     </node>
     <node type="tpee.EnumClass" typeId="tpee.1083245097125" id="4474148880361315154">
       <property name="name" nameId="tpck.1169194664001" value="VariableVisibility" />
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="wrapper.impl.legacy.variable-resolver.resolved" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="wrapper.legacy.variable-resolver.resolved" />
     </node>
     <node type="tpee.ClassConcept" typeId="tpee.1068390468198" id="4474148880361315167">
       <property name="virtualPackage" nameId="tpck.1193676396447" value="mapper.impl.state.impl" />
@@ -349,48 +349,48 @@
     </node>
     <node type="tpee.ClassConcept" typeId="tpee.1068390468198" id="8973067500929635632">
       <property name="name" nameId="tpck.1169194664001" value="AbstractMappedVariable" />
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="wrapper.impl.legacy.variable-resolver.resolved" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="wrapper.legacy.variable-resolver.resolved" />
       <property name="abstractClass" nameId="tpee.1075300953594" value="true" />
     </node>
     <node type="tpee.ClassConcept" typeId="tpee.1068390468198" id="8973067500929666627">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="wrapper.impl.legacy.variable-resolver.resolved" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="wrapper.legacy.variable-resolver.resolved" />
       <property name="name" nameId="tpck.1169194664001" value="ComplexMappedVariable" />
     </node>
     <node type="tpee.ClassConcept" typeId="tpee.1068390468198" id="8973067500929668012">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="wrapper.impl.legacy.variable-resolver.resolved" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="wrapper.legacy.variable-resolver.resolved" />
       <property name="name" nameId="tpck.1169194664001" value="SimpleMappedVariable" />
     </node>
     <node type="tpee.ClassConcept" typeId="tpee.1068390468198" id="8973067500929668110">
       <property name="name" nameId="tpck.1169194664001" value="CVariable" />
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="wrapper.impl.legacy.variable-resolver.unresolved" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="wrapper.legacy.variable-resolver.unresolved" />
       <property name="abstractClass" nameId="tpee.1075300953594" value="true" />
     </node>
     <node type="tpee.ClassConcept" typeId="tpee.1068390468198" id="8973067500929668130">
       <property name="name" nameId="tpck.1169194664001" value="CArrayVariable" />
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="wrapper.impl.legacy.variable-resolver.unresolved" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="wrapper.legacy.variable-resolver.unresolved" />
     </node>
     <node type="tpee.ClassConcept" typeId="tpee.1068390468198" id="8973067500929668169">
       <property name="name" nameId="tpck.1169194664001" value="CSimplePointerVariable" />
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="wrapper.impl.legacy.variable-resolver.unresolved" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="wrapper.legacy.variable-resolver.unresolved" />
     </node>
     <node type="tpee.ClassConcept" typeId="tpee.1068390468198" id="8973067500929668202">
       <property name="name" nameId="tpck.1169194664001" value="CStructVariable" />
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="wrapper.impl.legacy.variable-resolver.unresolved" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="wrapper.legacy.variable-resolver.unresolved" />
     </node>
     <node type="tpee.ClassConcept" typeId="tpee.1068390468198" id="8973067500929668226">
       <property name="name" nameId="tpck.1169194664001" value="CPrimitiveVariable" />
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="wrapper.impl.legacy.variable-resolver.unresolved" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="wrapper.legacy.variable-resolver.unresolved" />
     </node>
     <node type="tpee.ClassConcept" typeId="tpee.1068390468198" id="8973067500929675445">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="wrapper.impl.legacy.variable-resolver.resolved" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="wrapper.legacy.variable-resolver.resolved" />
       <property name="name" nameId="tpck.1169194664001" value="UnmappedVariable" />
     </node>
     <node type="tpee.ClassConcept" typeId="tpee.1068390468198" id="1059333383204661595">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="wrapper.impl.legacy.variable-resolver.unresolved" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="wrapper.legacy.variable-resolver.unresolved" />
       <property name="name" nameId="tpck.1169194664001" value="SimpleValue" />
     </node>
     <node type="tpee.ClassConcept" typeId="tpee.1068390468198" id="1059333383204661679">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="wrapper.impl.legacy.variable-resolver.unresolved" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="wrapper.legacy.variable-resolver.unresolved" />
       <property name="name" nameId="tpck.1169194664001" value="ComplexValue" />
     </node>
     <node type="tpee.ClassConcept" typeId="tpee.1068390468198" id="7745443518658807005">
@@ -443,11 +443,11 @@
     </node>
     <node type="tpee.ClassConcept" typeId="tpee.1068390468198" id="2984658204180563387">
       <property name="name" nameId="tpck.1169194664001" value="CComplexPointerVariable" />
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="wrapper.impl.legacy.variable-resolver.unresolved" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="wrapper.legacy.variable-resolver.unresolved" />
     </node>
     <node type="tpee.ClassConcept" typeId="tpee.1068390468198" id="8446926885106638093">
       <property name="name" nameId="tpck.1169194664001" value="CVoidPointerVariable" />
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="wrapper.impl.legacy.variable-resolver.unresolved" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="wrapper.legacy.variable-resolver.unresolved" />
     </node>
     <node type="tpee.ClassConcept" typeId="tpee.1068390468198" id="7332567930525641333">
       <property name="virtualPackage" nameId="tpck.1193676396447" value="language-api.util" />
@@ -462,27 +462,27 @@
       <property name="virtualPackage" nameId="tpck.1193676396447" value="language-api.strategies.impl" />
     </node>
     <node type="tpee.ClassConcept" typeId="tpee.1068390468198" id="2963181894159136688">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="wrapper.impl.breakpoints.exceptions" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="wrapper.breakpoints.impl.impl.exceptions" />
       <property name="name" nameId="tpck.1169194664001" value="FailedToCreateBreakpointException" />
     </node>
     <node type="tpee.ClassConcept" typeId="tpee.1068390468198" id="2963181894158976434">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="wrapper.impl.breakpoints.exceptions" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="wrapper.breakpoints.impl.impl.exceptions" />
       <property name="name" nameId="tpck.1169194664001" value="FailedToRemoveBreakpointException" />
     </node>
     <node type="tpee.ClassConcept" typeId="tpee.1068390468198" id="2963181894158976359">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="wrapper.impl.breakpoints.exceptions" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="wrapper.breakpoints.impl.impl.exceptions" />
       <property name="name" nameId="tpck.1169194664001" value="UnknownBreakpointException" />
     </node>
     <node type="tpee.ClassConcept" typeId="tpee.1068390468198" id="2963181894159136599">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="wrapper.impl.breakpoints.exceptions" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="wrapper.breakpoints.impl.impl.exceptions" />
       <property name="name" nameId="tpck.1169194664001" value="UnsupportedBreakpointLocation" />
     </node>
     <node type="tpee.ClassConcept" typeId="tpee.1068390468198" id="4107645333934243084">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="wrapper.impl.stepping.exceptions" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="wrapper.stepping.impl.exceptions" />
       <property name="name" nameId="tpck.1169194664001" value="SteppingFailedException" />
     </node>
     <node type="tpee.Interface" typeId="tpee.1107796713796" id="6753074648162653093">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="wrapper.interfaces.breakpoints" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="wrapper.breakpoints" />
       <property name="name" nameId="tpck.1169194664001" value="ICBreakpointLocation" />
     </node>
     <node type="tpee.ClassConcept" typeId="tpee.1068390468198" id="3272673247068615366">
@@ -516,100 +516,101 @@
       <property name="name" nameId="tpck.1169194664001" value="TypeMappingException" />
     </node>
     <node type="tpee.Interface" typeId="tpee.1107796713796" id="6595112540538979810">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="wrapper.interfaces.session" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="wrapper.session" />
       <property name="name" nameId="tpck.1169194664001" value="ICSessionController" />
     </node>
     <node type="tpee.Interface" typeId="tpee.1107796713796" id="6595112540538979837">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="wrapper.interfaces.program-state" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="wrapper.state" />
       <property name="name" nameId="tpck.1169194664001" value="ICVariablesManager" />
     </node>
     <node type="tpee.ClassConcept" typeId="tpee.1068390468198" id="6595112540539044491">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="wrapper.impl.session.access" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="wrapper.session.impl.access" />
       <property name="name" nameId="tpck.1169194664001" value="CSessionController" />
     </node>
     <node type="tpee.ClassConcept" typeId="tpee.1068390468198" id="6595112540539044586">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="wrapper.impl.session.access.exceptions" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="wrapper.session.impl.access.exceptions" />
       <property name="name" nameId="tpck.1169194664001" value="SessionCommandFailedException" />
     </node>
     <node type="tpee.ClassConcept" typeId="tpee.1068390468198" id="6595112540539333555">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="wrapper.impl.program-state" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="wrapper.state.impl" />
       <property name="name" nameId="tpck.1169194664001" value="CVariablesManager" />
     </node>
     <node type="tpee.ClassConcept" typeId="tpee.1068390468198" id="6595112540539338301">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="wrapper.impl.program-state.exceptions" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="wrapper.state.impl.exceptions" />
       <property name="name" nameId="tpck.1169194664001" value="FetchingVariablesFailedException" />
     </node>
     <node type="tpee.ClassConcept" typeId="tpee.1068390468198" id="6595112540539338349">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="wrapper.impl.cross" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="wrapper.cross" />
       <property name="name" nameId="tpck.1169194664001" value="CLocationValidator" />
     </node>
     <node type="tpee.ClassConcept" typeId="tpee.1068390468198" id="4124807742910308937">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="wrapper.impl.program-state.exceptions" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="wrapper.state.impl.exceptions" />
       <property name="name" nameId="tpck.1169194664001" value="CallStackConstructionFailedException" />
     </node>
     <node type="tpee.ClassConcept" typeId="tpee.1068390468198" id="4124807742910309017">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="wrapper.impl.cross" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="wrapper.cross" />
       <property name="name" nameId="tpck.1169194664001" value="PlatformUtil" />
     </node>
     <node type="tpee.ClassConcept" typeId="tpee.1068390468198" id="2125372784453325410">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="wrapper.impl.program-state.exceptions" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="wrapper.state.impl.exceptions" />
       <property name="name" nameId="tpck.1169194664001" value="UnsupportedCTypeException" />
     </node>
     <node type="tpee.ClassConcept" typeId="tpee.1068390468198" id="2125372784453421966">
       <property name="name" nameId="tpck.1169194664001" value="CastingFailedException" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="wrapper.state.impl.exceptions" />
     </node>
     <node type="tpee.ClassConcept" typeId="tpee.1068390468198" id="1692226010329789667">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="wrapper.impl.events" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="wrapper.events.impl" />
       <property name="name" nameId="tpck.1169194664001" value="CEventManager" />
     </node>
     <node type="tpee.ClassConcept" typeId="tpee.1068390468198" id="4587703365297484904">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="wrapper.impl.session.create.exceptions" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="wrapper.session.impl.create.exceptions" />
       <property name="name" nameId="tpck.1169194664001" value="CreatingSessionFailedException" />
     </node>
     <node type="tpee.Interface" typeId="tpee.1107796713796" id="4587703365297996187">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="wrapper.impl.events" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="wrapper.events.impl" />
       <property name="name" nameId="tpck.1169194664001" value="ICInternalEventListener" />
     </node>
     <node type="tpee.Interface" typeId="tpee.1107796713796" id="4587703365297996225">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="wrapper.impl.session.create" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="wrapper.session.impl.create" />
       <property name="name" nameId="tpck.1169194664001" value="ICSessionCreator" />
     </node>
     <node type="tpee.ClassConcept" typeId="tpee.1068390468198" id="4587703365298003795">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="wrapper.impl.session.create" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="wrapper.session.impl.create" />
       <property name="name" nameId="tpck.1169194664001" value="CSessionCreator" />
     </node>
     <node type="tpee.Interface" typeId="tpee.1107796713796" id="4587703365298003872">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="wrapper.impl.session.access" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="wrapper.session.impl.access" />
       <property name="name" nameId="tpck.1169194664001" value="ICSessionAccessor" />
     </node>
     <node type="tpee.Interface" typeId="tpee.1107796713796" id="3559983554277656186">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="wrapper.impl.events" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="wrapper.events.impl" />
       <property name="name" nameId="tpck.1169194664001" value="ICEventManager" />
     </node>
     <node type="tpee.ClassConcept" typeId="tpee.1068390468198" id="3559983554277771709">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="wrapper.impl.program-state.variables" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="wrapper.state.impl.variables" />
       <property name="name" nameId="tpck.1169194664001" value="NCVariable" />
       <property name="abstractClass" nameId="tpee.1075300953594" value="true" />
     </node>
     <node type="tpee.ClassConcept" typeId="tpee.1068390468198" id="3559983554277771790">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="wrapper.impl.program-state.variables" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="wrapper.state.impl.variables" />
       <property name="name" nameId="tpck.1169194664001" value="NCPrimitiveVariable" />
     </node>
     <node type="tpee.ClassConcept" typeId="tpee.1068390468198" id="3559983554277771929">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="wrapper.impl.program-state.variables" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="wrapper.state.impl.variables" />
       <property name="name" nameId="tpck.1169194664001" value="NCComplexVariable" />
       <property name="abstractClass" nameId="tpee.1075300953594" value="true" />
     </node>
     <node type="tpee.ClassConcept" typeId="tpee.1068390468198" id="3559983554277772077">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="wrapper.impl.program-state.variables" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="wrapper.state.impl.variables" />
       <property name="name" nameId="tpck.1169194664001" value="NCArrayVariable" />
     </node>
     <node type="tpee.ClassConcept" typeId="tpee.1068390468198" id="3559983554277774400">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="wrapper.impl.program-state.variables" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="wrapper.state.impl.variables" />
       <property name="name" nameId="tpck.1169194664001" value="NCStructVariable" />
     </node>
     <node type="tpee.ClassConcept" typeId="tpee.1068390468198" id="3559983554277774421">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="wrapper.impl.program-state.variables" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="wrapper.state.impl.variables" />
       <property name="name" nameId="tpck.1169194664001" value="NCPointerVariable" />
     </node>
     <node type="tpee.Interface" typeId="tpee.1107796713796" id="2581466085545768016">
@@ -641,15 +642,15 @@
       <property name="name" nameId="tpck.1169194664001" value="ConfigurationFailedException" />
     </node>
     <node type="tpee.ClassConcept" typeId="tpee.1068390468198" id="2581466085545914870">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="wrapper.impl.stepping" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="wrapper.stepping.impl" />
       <property name="name" nameId="tpck.1169194664001" value="CSteppingController" />
     </node>
     <node type="tpee.ClassConcept" typeId="tpee.1068390468198" id="2581466085545919219">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="wrapper.impl.events" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="wrapper.events.impl" />
       <property name="name" nameId="tpck.1169194664001" value="CInternalListenerAdapter" />
     </node>
     <node type="tpee.Interface" typeId="tpee.1107796713796" id="2581466085545919554">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="wrapper.interfaces.listener" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="wrapper.events" />
       <property name="name" nameId="tpck.1169194664001" value="ICWrapperEventListener" />
     </node>
     <node type="tpee.ClassConcept" typeId="tpee.1068390468198" id="2581466085546042182">
@@ -701,7 +702,7 @@
       <property name="name" nameId="tpck.1169194664001" value="MBreakpointManager" />
     </node>
     <node type="tpee.ClassConcept" typeId="tpee.1068390468198" id="2581466085546045010">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="wrapper.interfaces.listener" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="wrapper.events" />
       <property name="name" nameId="tpck.1169194664001" value="CDebugWrapperListenerAdapter" />
     </node>
     <node type="tpee.Interface" typeId="tpee.1107796713796" id="2581466085546045399">
@@ -725,7 +726,7 @@
       <property name="name" nameId="tpck.1169194664001" value="Util" />
     </node>
     <node type="tpee.ClassConcept" typeId="tpee.1068390468198" id="6884284114861443631">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="wrapper.impl.events" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="wrapper.events.impl" />
       <property name="name" nameId="tpck.1169194664001" value="CWrapperListenerAdapter" />
     </node>
     <node type="tpee.Interface" typeId="tpee.1107796713796" id="6884284114861563137">
@@ -737,7 +738,7 @@
       <property name="name" nameId="tpck.1169194664001" value="RebuildRequiredException" />
     </node>
     <node type="tpee.Interface" typeId="tpee.1107796713796" id="3306617059423022448">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="wrapper.impl.program-state.variables" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="wrapper.state" />
       <property name="name" nameId="tpck.1169194664001" value="ICVariable" />
     </node>
     <node type="tpee.EnumClass" typeId="tpee.1083245097125" id="3306617059423022733">
@@ -757,7 +758,7 @@
       <property name="name" nameId="tpck.1169194664001" value="IUnmappedStackFrame" />
     </node>
     <node type="tpee.ClassConcept" typeId="tpee.1068390468198" id="3306617059423506995">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="wrapper.impl.program-state.exceptions" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="wrapper.state.impl.exceptions" />
       <property name="name" nameId="tpck.1169194664001" value="ResolvingChildrenFailedExcepton" />
     </node>
     <node type="tpee.ClassConcept" typeId="tpee.1068390468198" id="3306617059423512080">
@@ -813,19 +814,19 @@
       <property name="name" nameId="tpck.1169194664001" value="IMUnmappedWatchablesCreator" />
     </node>
     <node type="tpee.Interface" typeId="tpee.1107796713796" id="1510854183334523651">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="wrapper.impl.program-state" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="wrapper.state.impl" />
       <property name="name" nameId="tpck.1169194664001" value="ICVariablesCaster" />
     </node>
     <node type="tpee.Interface" typeId="tpee.1107796713796" id="1510854183334712759">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="wrapper.impl.program-state" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="wrapper.state.impl" />
       <property name="name" nameId="tpck.1169194664001" value="ICChildrenResolver" />
     </node>
     <node type="tpee.ClassConcept" typeId="tpee.1068390468198" id="5087919360980143156">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="wrapper.impl.program-state.exceptions" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="wrapper.state.impl.exceptions" />
       <property name="name" nameId="tpck.1169194664001" value="ResolvingTypeFailedException" />
     </node>
     <node type="tpee.ClassConcept" typeId="tpee.1068390468198" id="5087919360980271570">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="wrapper.impl.program-state.exceptions" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="wrapper.state.impl.exceptions" />
       <property name="name" nameId="tpck.1169194664001" value="ResolvingValueFailedException" />
     </node>
   </roots>
@@ -25834,28 +25835,6 @@
         </node>
       </node>
     </node>
-    <node role="method" roleId="tpee.1107880067339" type="tpee.InstanceMethodDeclaration" typeId="tpee.1068580123165" id="4124807742910088445">
-      <property name="isAbstract" nameId="tpee.1178608670077" value="true" />
-      <property name="name" nameId="tpck.1169194664001" value="cast" />
-      <node role="returnType" roleId="tpee.1068580123133" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="3559983554277775542">
-        <link role="classifier" roleId="tpee.1107535924139" targetNodeId="3559983554277771709" resolveInfo="NCVariable" />
-      </node>
-      <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="4124807742910088447" />
-      <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="4124807742910088448" />
-      <node role="parameter" roleId="tpee.1068580123134" type="tpee.ParameterDeclaration" typeId="tpee.1068498886292" id="4124807742910088450">
-        <property name="name" nameId="tpck.1169194664001" value="newType" />
-        <node role="type" roleId="tpee.5680397130376446158" type="tpee.StringType" typeId="tpee.1225271177708" id="4124807742910088451" />
-      </node>
-      <node role="parameter" roleId="tpee.1068580123134" type="tpee.ParameterDeclaration" typeId="tpee.1068498886292" id="4124807742910088452">
-        <property name="name" nameId="tpck.1169194664001" value="variable" />
-        <node role="type" roleId="tpee.5680397130376446158" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="3559983554277775543">
-          <link role="classifier" roleId="tpee.1107535924139" targetNodeId="3559983554277771709" resolveInfo="NCVariable" />
-        </node>
-      </node>
-      <node role="throwsItem" roleId="tpee.1164879685961" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="2125372784453524280">
-        <link role="classifier" roleId="tpee.1107535924139" targetNodeId="2125372784453421966" resolveInfo="CastingFailedException" />
-      </node>
-    </node>
     <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="6595112540538979838" />
   </root>
   <root id="6595112540539044491">
@@ -32488,26 +32467,18 @@
       <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="2581466085545906285">
         <node role="statement" roleId="tpee.1068581517665" type="tpee.TryCatchStatement" typeId="tpee.1164879751025" id="2581466085545906720">
           <node role="body" roleId="tpee.1164879758292" type="tpee.StatementList" typeId="tpee.1068580123136" id="2581466085545906721">
-            <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="2581466085545906501">
-              <node role="expression" roleId="tpee.1068580123156" type="tpee.AssignmentExpression" typeId="tpee.1068498886294" id="2581466085545906517">
-                <node role="lValue" roleId="tpee.1068498886295" type="tpee.DotExpression" typeId="tpee.1197027756228" id="2581466085545906505">
-                  <node role="operand" roleId="tpee.1197027771414" type="tpee.ThisExpression" typeId="tpee.1070475354124" id="2581466085545906502" />
-                  <node role="operation" roleId="tpee.1197027833540" type="tpee.FieldReferenceOperation" typeId="tpee.1197029447546" id="2581466085545906513">
+            <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="3756274814450276712">
+              <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="3756274814450276726">
+                <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="3756274814450276716">
+                  <node role="operand" roleId="tpee.1197027771414" type="tpee.ThisExpression" typeId="tpee.1070475354124" id="3756274814450276713" />
+                  <node role="operation" roleId="tpee.1197027833540" type="tpee.FieldReferenceOperation" typeId="tpee.1197029447546" id="3756274814450276722">
                     <link role="fieldDeclaration" roleId="tpee.1197029500499" targetNodeId="2581466085545906340" resolveInfo="variable" />
                   </node>
                 </node>
-                <node role="rValue" roleId="tpee.1068498886297" type="tpee.DotExpression" typeId="tpee.1197027756228" id="2581466085545906334">
-                  <node role="operand" roleId="tpee.1197027771414" type="tpee.LocalInstanceFieldReference" typeId="tpee.7785501532031639928" id="2581466085545906331">
-                    <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="2581466085545906298" resolveInfo="variablesManager" />
-                  </node>
-                  <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="2581466085545906339">
-                    <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="4124807742910088445" resolveInfo="cast" />
-                    <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.ParameterReference" typeId="tpee.1068581242874" id="2581466085545906368">
-                      <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="2581466085545906283" resolveInfo="newType" />
-                    </node>
-                    <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.LocalInstanceFieldReference" typeId="tpee.7785501532031639928" id="2581466085545906372">
-                      <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="2581466085545906340" resolveInfo="variable" />
-                    </node>
+                <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="3756274814450276732">
+                  <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="1510854183334605818" resolveInfo="cast" />
+                  <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.ParameterReference" typeId="tpee.1068581242874" id="3756274814450276734">
+                    <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="2581466085545906283" resolveInfo="newType" />
                   </node>
                 </node>
               </node>
