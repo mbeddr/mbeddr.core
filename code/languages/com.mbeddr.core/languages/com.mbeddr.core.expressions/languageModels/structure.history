@@ -27,8 +27,8 @@
   <StructureModification>
     <dependencies>
       <model index="wayc" modelUID="r:8ccd67a3-3ed6-472a-aeac-67e00cb6b91d(com.mbeddr.core.expressions.constraints)" version="-1" />
-      <model index="5c5e" modelUID="r:7a2f88d6-4108-4d29-b499-cc4de14ea970(com.mbeddr.core.base.constraints)" version="-1" />
       <model index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="7" />
+      <model index="5c5e" modelUID="r:7a2f88d6-4108-4d29-b499-cc4de14ea970(com.mbeddr.core.base.constraints)" version="-1" />
       <model index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="-1" />
     </dependencies>
     <move id="mj1l.995988627238200005" to="vs0r.7024921229555594291" />
@@ -85,6 +85,22 @@
     <move id="vrqd.6183845377104662852" to="arsz.6183845377104662884" />
     <move id="vrqd.6183845377104662321" to="arsz.6183845377104662879" />
     <move id="vrqd.6183845377104651989" to="arsz.6183845377104662875" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="11" />
+      <model index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="1" />
+    </dependencies>
+    <move id="c4fa.1782955756756899613" to="mj1l.2941277002445651368" />
+    <move id="c4fa.1782955756756899612" to="mj1l.2941277002445651367" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="12" />
+      <model index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="2" />
+    </dependencies>
+    <move id="c4fa.1782955756756899612" to="mj1l.2941277002446976968" />
+    <move id="c4fa.1782955756756899613" to="mj1l.2941277002446976969" />
   </StructureModification>
 </history>
 
