@@ -19546,13 +19546,18 @@
                         <node role="rValue" roleId="tpee.1068498886297" type="hba4.BuilderExpression" typeId="hba4.4481811096720536877" id="638966541988531528">
                           <node role="root" roleId="hba4.4481811096720536927" type="hba4.ChildStep" typeId="hba4.4481811096720537459" id="638966541988531529">
                             <link role="childLink" roleId="hba4.4481811096720607067" targetNodeId="tpck.5169995583184591170" />
-                            <node role="value" roleId="hba4.6308171743671982944" type="hba4.ConceptRef" typeId="hba4.4481811096720976618" id="638966541988531530">
-                              <link role="concept" roleId="hba4.4481811096720976619" targetNodeId="yq40.5679441017214053340" resolveInfo="IntLitArraySizeSpec" />
+                            <node role="value" roleId="hba4.6308171743671982944" type="hba4.ConceptRef" typeId="hba4.4481811096720976618" id="2941277002443953958">
+                              <link role="concept" roleId="hba4.4481811096720976619" targetNodeId="mj1l.8860443239512128103" resolveInfo="NumberLiteral" />
                             </node>
                             <node role="children" roleId="hba4.4481811096720537463" type="hba4.SimplePropertyStep" typeId="hba4.4481811096720581223" id="638966541988531531">
-                              <link role="property" roleId="hba4.4481811096720581232" targetNodeId="yq40.5679441017214053341" resolveInfo="size" />
-                              <node role="value" roleId="hba4.4481811096720588312" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="638966541988531532">
-                                <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="638966541988531519" resolveInfo="value" />
+                              <link role="property" roleId="hba4.4481811096720581232" targetNodeId="mj1l.8860443239512128104" resolveInfo="value" />
+                              <node role="value" roleId="hba4.4481811096720588312" type="tpee.PlusExpression" typeId="tpee.1068581242875" id="2941277002443953960">
+                                <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="2941277002443953963">
+                                  <property name="value" nameId="tpee.1070475926801" value="" />
+                                </node>
+                                <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="638966541988531532">
+                                  <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="638966541988531519" resolveInfo="value" />
+                                </node>
                               </node>
                             </node>
                           </node>
@@ -19561,8 +19566,8 @@
                           <node role="operand" roleId="tpee.1197027771414" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="638966541988531534">
                             <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="638966541988531497" resolveInfo="arrayType" />
                           </node>
-                          <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="638966541988531535">
-                            <link role="link" roleId="tp25.1138056516764" targetNodeId="yq40.5679441017214043897" />
+                          <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="2941277002443954827">
+                            <link role="link" roleId="tp25.1138056516764" targetNodeId="yq40.1452920870317474611" />
                           </node>
                         </node>
                       </node>

@@ -98,10 +98,6 @@
       <property name="virtualPackage" nameId="tpck.1193676396447" value="global" />
       <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="x27k.6610873504380335822" resolveInfo="GlobalVariableDeclaration" />
     </node>
-    <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="7248713732034269904">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="global" />
-      <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="x27k.7248713732034269902" resolveInfo="GlobalConstantArraySizeSpec" />
-    </node>
     <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="8551646674110395550">
       <property name="virtualPackage" nameId="tpck.1193676396447" value="functionrefs" />
       <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="x27k.8551646674110395547" resolveInfo="FunctionRefType" />
@@ -1150,11 +1146,6 @@
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Property" typeId="tpc2.1073389658414" id="8467969691234629684">
         <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="x27k.1317894735999272944" resolveInfo="exported" />
       </node>
-    </node>
-  </root>
-  <root id="7248713732034269904">
-    <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_RefNode" typeId="tpc2.1073389882823" id="7248713732034269906">
-      <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="x27k.7248713732034269903" />
     </node>
   </root>
   <root id="8551646674110395550">

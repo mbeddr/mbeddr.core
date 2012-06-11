@@ -339,10 +339,8 @@
           </node>
           <node role="type" roleId="mj1l.318113533128716676" type="yq40.ArrayType" typeId="yq40.5679441017214012545" id="5083029923012081293">
             <node role="baseType" roleId="yq40.5679441017214012546" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="5083029923012081294" />
-            <node role="size" roleId="yq40.5679441017214043897" type="x27k.GlobalConstantArraySizeSpec" typeId="x27k.7248713732034269902" id="5083029923012081295">
-              <node role="constantref" roleId="x27k.7248713732034269903" type="x27k.GlobalConstantRef" typeId="x27k.3788988821852026523" id="5083029923012081296">
-                <link role="constant" roleId="x27k.3788988821852026524" targetNodeId="7248713732034362486" resolveInfo="arrSize" />
-              </node>
+            <node role="sizeExpr" roleId="yq40.1452920870317474611" type="x27k.GlobalConstantRef" typeId="x27k.3788988821852026523" id="5083029923012081296">
+              <link role="constant" roleId="x27k.3788988821852026524" targetNodeId="7248713732034362486" resolveInfo="arrSize" />
             </node>
           </node>
         </node>
@@ -436,12 +434,12 @@
           <node role="type" roleId="mj1l.318113533128716676" type="yq40.ArrayType" typeId="yq40.5679441017214012545" id="8599220535762603980">
             <node role="baseType" roleId="yq40.5679441017214012546" type="yq40.ArrayType" typeId="yq40.5679441017214012545" id="8599220535762603982">
               <node role="baseType" roleId="yq40.5679441017214012546" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="8599220535762603979" />
-              <node role="size" roleId="yq40.5679441017214043897" type="yq40.IntLitArraySizeSpec" typeId="yq40.5679441017214053340" id="8599220535762603983">
-                <property name="size" nameId="yq40.5679441017214053341" value="2" />
+              <node role="sizeExpr" roleId="yq40.1452920870317474611" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2941277002443884905">
+                <property name="value" nameId="mj1l.8860443239512128104" value="2" />
               </node>
             </node>
-            <node role="size" roleId="yq40.5679441017214043897" type="yq40.IntLitArraySizeSpec" typeId="yq40.5679441017214053340" id="8599220535762603981">
-              <property name="size" nameId="yq40.5679441017214053341" value="4" />
+            <node role="sizeExpr" roleId="yq40.1452920870317474611" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2941277002443884862">
+              <property name="value" nameId="mj1l.8860443239512128104" value="4" />
             </node>
           </node>
         </node>
