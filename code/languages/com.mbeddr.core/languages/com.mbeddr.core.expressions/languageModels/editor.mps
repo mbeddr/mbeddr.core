@@ -170,11 +170,11 @@
     </node>
     <node type="tpc2.EditorComponentDeclaration" typeId="tpc2.1078938745671" id="2941277002446854216">
       <property name="name" nameId="tpck.1169194664001" value="constFlag" />
-      <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="mj1l.2941277002445651367" resolveInfo="IConstable" />
+      <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="mj1l.8860443239512128054" resolveInfo="Type" />
     </node>
     <node type="tpc2.CellActionMapDeclaration" typeId="tpc2.1139535219966" id="2941277002446956947">
       <property name="name" nameId="tpck.1169194664001" value="deleteConst" />
-      <link role="applicableConcept" roleId="tpc2.1139535219968" targetNodeId="mj1l.2941277002445651367" resolveInfo="IConstable" />
+      <link role="applicableConcept" roleId="tpc2.1139535219968" targetNodeId="mj1l.8860443239512128054" resolveInfo="Type" />
     </node>
   </roots>
   <root id="8860443239512128087">
@@ -1752,7 +1752,7 @@
           <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="2941277002446854220">
             <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="2941277002446854221">
               <node role="operand" roleId="tpee.1197027771414" type="tpc2.ConceptFunctionParameter_node" typeId="tpc2.1142886811589" id="2941277002446854222" />
-              <node role="operation" roleId="tpee.1197027833540" type="tp25.SPropertyAccess" typeId="tp25.1138056022639" id="2941277002446854223">
+              <node role="operation" roleId="tpee.1197027833540" type="tp25.SPropertyAccess" typeId="tp25.1138056022639" id="2941277002448464805">
                 <link role="property" roleId="tp25.1138056395725" targetNodeId="mj1l.2941277002445651368" resolveInfo="const" />
               </node>
             </node>
@@ -1773,7 +1773,7 @@
               </node>
               <node role="lValue" roleId="tpee.1068498886295" type="tpee.DotExpression" typeId="tpee.1197027756228" id="2941277002446956954">
                 <node role="operand" roleId="tpee.1197027771414" type="tpc2.CellActionMap_FunctionParm_selectedNode" typeId="tpc2.1139535439112" id="2941277002446956955" />
-                <node role="operation" roleId="tpee.1197027833540" type="tp25.SPropertyAccess" typeId="tp25.1138056022639" id="2941277002446956956">
+                <node role="operation" roleId="tpee.1197027833540" type="tp25.SPropertyAccess" typeId="tp25.1138056022639" id="2941277002448464808">
                   <link role="property" roleId="tp25.1138056395725" targetNodeId="mj1l.2941277002445651368" resolveInfo="const" />
                 </node>
               </node>
