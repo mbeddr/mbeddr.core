@@ -341,7 +341,7 @@
       <property name="virtualPackage" nameId="tpck.1193676396447" value="wrapper.legacy.variable-resolver.resolved" />
     </node>
     <node type="tpee.ClassConcept" typeId="tpee.1068390468198" id="4474148880361315167">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="mapper.state.impl" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="mapper.state.impl.watchables-creator.impl" />
       <property name="name" nameId="tpck.1169194664001" value="MWatchablesCreator" />
     </node>
     <node type="tpee.ClassConcept" typeId="tpee.1068390468198" id="6482571323861344536">
@@ -408,11 +408,11 @@
     </node>
     <node type="tpee.Interface" typeId="tpee.1107796713796" id="2344630019804080468">
       <property name="name" nameId="tpck.1169194664001" value="IFrameMapping" />
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="mapper.state.impl.frame-mapping" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="mapper.state.impl.frame-mappper" />
     </node>
     <node type="tpee.ClassConcept" typeId="tpee.1068390468198" id="2344630019804085995">
       <property name="name" nameId="tpck.1169194664001" value="FrameMapping" />
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="mapper.state.impl.frame-mapping" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="mapper.state.impl.frame-mappper.impl" />
     </node>
     <node type="tpee.ClassConcept" typeId="tpee.1068390468198" id="6315255573134581356">
       <property name="virtualPackage" nameId="tpck.1193676396447" value="language-api.strategies.impl" />
@@ -614,10 +614,6 @@
       <property name="virtualPackage" nameId="tpck.1193676396447" value="wrapper.state.impl.variables" />
       <property name="name" nameId="tpck.1169194664001" value="NCPointerVariable" />
     </node>
-    <node type="tpee.EnumClass" typeId="tpee.1083245097125" id="2581466085545905490">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="mapper.program-state-legacy.impl.new" />
-      <property name="name" nameId="tpck.1169194664001" value="CWatchableKind" />
-    </node>
     <node type="tpee.ClassConcept" typeId="tpee.1068390468198" id="2581466085545909228">
       <property name="virtualPackage" nameId="tpck.1193676396447" value="cross.component.exceptions" />
       <property name="name" nameId="tpck.1169194664001" value="ConfigurationFailedException" />
@@ -718,12 +714,8 @@
       <property name="virtualPackage" nameId="tpck.1193676396447" value="wrapper.state.impl.exceptions" />
       <property name="name" nameId="tpck.1169194664001" value="ResolvingChildrenFailedExcepton" />
     </node>
-    <node type="tpee.ClassConcept" typeId="tpee.1068390468198" id="3306617059423512080">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="mapper.program-state-legacy.impl" />
-      <property name="name" nameId="tpck.1169194664001" value="UnsupportedTypeException" />
-    </node>
     <node type="tpee.Interface" typeId="tpee.1107796713796" id="3306617059423512953">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="mapper.state.impl" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="mapper.state.impl.callstackconstructor" />
       <property name="name" nameId="tpck.1169194664001" value="IMCallStackConstructor" />
     </node>
     <node type="tpee.ClassConcept" typeId="tpee.1068390468198" id="5898337263723203941">
@@ -735,19 +727,19 @@
       <property name="name" nameId="tpck.1169194664001" value="SNodeProxy" />
     </node>
     <node type="tpee.ClassConcept" typeId="tpee.1068390468198" id="8055308335025299645">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="mapper.state.impl.frame-mapping" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="mapper.state.impl.frame-mappper.impl" />
       <property name="name" nameId="tpck.1169194664001" value="MFrameMapper" />
     </node>
     <node type="tpee.Interface" typeId="tpee.1107796713796" id="8055308335025300130">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="mapper.state.impl" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="mapper.state.impl.frame-mappper" />
       <property name="name" nameId="tpck.1169194664001" value="IMFrameMapper" />
     </node>
     <node type="tpee.ClassConcept" typeId="tpee.1068390468198" id="8055308335025346413">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="mapper.state.impl" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="mapper.state.impl.callstackconstructor.impl" />
       <property name="name" nameId="tpck.1169194664001" value="MCallStackConstructor" />
     </node>
     <node type="tpee.Interface" typeId="tpee.1107796713796" id="8055308335025368605">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="mapper.state.impl" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="mapper.state.impl.watchables-creator" />
       <property name="name" nameId="tpck.1169194664001" value="IMWatchablesCreator" />
     </node>
     <node type="tpee.ClassConcept" typeId="tpee.1068390468198" id="1352215636566233332">
@@ -783,56 +775,56 @@
       <property name="name" nameId="tpck.1169194664001" value="ResolvingValueFailedException" />
     </node>
     <node type="tpee.Interface" typeId="tpee.1107796713796" id="3756274814450371284">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="mapper.state.impl.variables.unmapped" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="mapper.state.impl.unmapped-variables" />
       <property name="name" nameId="tpck.1169194664001" value="IMUnmappedVariable" />
     </node>
     <node type="tpee.ClassConcept" typeId="tpee.1068390468198" id="3756274814450495571">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="mapper.state.impl.variables.unmapped.impl.states.impl" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="mapper.state.impl.unmapped-variables.impl.states.impl" />
       <property name="name" nameId="tpck.1169194664001" value="MMappedStateVariable" />
     </node>
     <node type="tpee.ClassConcept" typeId="tpee.1068390468198" id="3756274814450495577">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="mapper.state.impl.variables.unmapped.impl.states.impl" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="mapper.state.impl.unmapped-variables.impl.states.impl" />
       <property name="name" nameId="tpck.1169194664001" value="MUsedStateVariable" />
     </node>
     <node type="tpee.ClassConcept" typeId="tpee.1068390468198" id="3756274814450495609">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="mapper.state.impl.variables.unmapped.impl" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="mapper.state.impl.unmapped-variables.impl" />
       <property name="name" nameId="tpck.1169194664001" value="MUnmappedVariable" />
     </node>
     <node type="tpee.Interface" typeId="tpee.1107796713796" id="3756274814450495699">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="mapper.state.impl.variables.unmapped.impl.states.impl" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="mapper.state.impl.unmapped-variables.impl.states.impl" />
       <property name="name" nameId="tpck.1169194664001" value="IMUnmappedVaraibleState" />
     </node>
     <node type="tpee.Interface" typeId="tpee.1107796713796" id="3756274814450495705">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="mapper.state.impl.variables.unmapped.impl.states.impl" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="mapper.state.impl.unmapped-variables.impl.states.impl" />
       <property name="name" nameId="tpck.1169194664001" value="IMUnmappedVariableStateContext" />
     </node>
     <node type="tpee.ClassConcept" typeId="tpee.1068390468198" id="3756274814450495837">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="mapper.state.impl.variables.unmapped.impl.states.impl" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="mapper.state.impl.unmapped-variables.impl.states.impl" />
       <property name="name" nameId="tpck.1169194664001" value="MHiddenStateVariable" />
     </node>
     <node type="tpee.ClassConcept" typeId="tpee.1068390468198" id="3756274814450551978">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="mapper.state.impl.variables.unmapped.impl.states.impl" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="mapper.state.impl.unmapped-variables.impl.states.impl" />
       <property name="name" nameId="tpck.1169194664001" value="AbstractVariableState" />
       <property name="abstractClass" nameId="tpee.1075300953594" value="true" />
     </node>
     <node type="tpee.ClassConcept" typeId="tpee.1068390468198" id="3756274814450591200">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="mapper.state.impl.variables.unmapped.impl.states.impl" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="mapper.state.impl.unmapped-variables.impl.states.impl" />
       <property name="name" nameId="tpck.1169194664001" value="MUnusedStateVariable" />
     </node>
     <node type="tpee.Interface" typeId="tpee.1107796713796" id="3756274814450665681">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="mapper.state.impl.variables.unmapped" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="mapper.state.impl.unmapped-variables" />
       <property name="name" nameId="tpck.1169194664001" value="IMCVariableAccess" />
     </node>
     <node type="tpee.EnumClass" typeId="tpee.1083245097125" id="3756274814450665709">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="mapper.state.impl.variables.unmapped" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="mapper.state.impl.unmapped-variables" />
       <property name="name" nameId="tpck.1169194664001" value="MUnmappedVariableState" />
     </node>
     <node type="tpee.Interface" typeId="tpee.1107796713796" id="3756274814450898699">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="mapper.state.impl" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="mapper.state.impl.unusedwatchablecreator" />
       <property name="name" nameId="tpck.1169194664001" value="IUnusedVariablesWatchablesCreator" />
     </node>
     <node type="tpee.ClassConcept" typeId="tpee.1068390468198" id="3756274814450898709">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="mapper.state.impl" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="mapper.state.impl.unusedwatchablecreator.impl" />
       <property name="name" nameId="tpck.1169194664001" value="UnusedVariablesWatchablesCreator" />
     </node>
     <node type="tpee.ClassConcept" typeId="tpee.1068390468198" id="3756274814452325259">
@@ -32062,47 +32054,6 @@
       <link role="classifier" roleId="tpee.1107535924139" targetNodeId="3559983554277771929" resolveInfo="NCComplexVariable" />
     </node>
   </root>
-  <root id="2581466085545905490">
-    <node role="enumConstant" roleId="tpee.1083245396908" type="tpee.EnumConstantDeclaration" typeId="tpee.1083245299891" id="2581466085545905496">
-      <property name="name" nameId="tpck.1169194664001" value="GLOBAL_VARIABLE" />
-      <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="2581466085545905492" resolveInfo="CWatchableKind" />
-    </node>
-    <node role="enumConstant" roleId="tpee.1083245396908" type="tpee.EnumConstantDeclaration" typeId="tpee.1083245299891" id="2581466085545905497">
-      <property name="name" nameId="tpck.1169194664001" value="LOCAL_VARIABLE" />
-      <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="2581466085545905492" resolveInfo="CWatchableKind" />
-    </node>
-    <node role="enumConstant" roleId="tpee.1083245396908" type="tpee.EnumConstantDeclaration" typeId="tpee.1083245299891" id="2581466085545905498">
-      <property name="name" nameId="tpck.1169194664001" value="ARGUMENT" />
-      <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="2581466085545905492" resolveInfo="CWatchableKind" />
-    </node>
-    <node role="staticInnerClassifiers" roleId="tpee.1178616825527" type="tpee.EnumClass" typeId="tpee.1083245097125" id="2581466085545905476">
-      <property name="name" nameId="tpck.1169194664001" value="WatchableKind" />
-      <node role="enumConstant" roleId="tpee.1083245396908" type="tpee.EnumConstantDeclaration" typeId="tpee.1083245299891" id="2581466085545905482">
-        <property name="name" nameId="tpck.1169194664001" value="ARGUMENT" />
-        <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="2581466085545905478" resolveInfo="CWatchableKind.WatchableKind" />
-      </node>
-      <node role="enumConstant" roleId="tpee.1083245396908" type="tpee.EnumConstantDeclaration" typeId="tpee.1083245299891" id="2581466085545905484">
-        <property name="name" nameId="tpck.1169194664001" value="LOCAL_VARIABLE" />
-        <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="2581466085545905478" resolveInfo="CWatchableKind.WatchableKind" />
-      </node>
-      <node role="enumConstant" roleId="tpee.1083245396908" type="tpee.EnumConstantDeclaration" typeId="tpee.1083245299891" id="2581466085545905485">
-        <property name="name" nameId="tpck.1169194664001" value="GLOBAL_VARIABLE" />
-        <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="2581466085545905478" resolveInfo="CWatchableKind.WatchableKind" />
-      </node>
-      <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="2581466085545905477" />
-      <node role="constructor" roleId="tpee.1068390468201" type="tpee.ConstructorDeclaration" typeId="tpee.1068580123140" id="2581466085545905478">
-        <node role="returnType" roleId="tpee.1068580123133" type="tpee.VoidType" typeId="tpee.1068581517677" id="2581466085545905479" />
-        <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="2581466085545905480" />
-        <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="2581466085545905481" />
-      </node>
-    </node>
-    <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="2581466085545905491" />
-    <node role="constructor" roleId="tpee.1068390468201" type="tpee.ConstructorDeclaration" typeId="tpee.1068580123140" id="2581466085545905492">
-      <node role="returnType" roleId="tpee.1068580123133" type="tpee.VoidType" typeId="tpee.1068581517677" id="2581466085545905493" />
-      <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="2581466085545905494" />
-      <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="2581466085545905495" />
-    </node>
-  </root>
   <root id="2581466085545909228">
     <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="2581466085545909229" />
     <node role="constructor" roleId="tpee.1068390468201" type="tpee.ConstructorDeclaration" typeId="tpee.1068580123140" id="2581466085545909230">
@@ -35788,38 +35739,6 @@
       </node>
     </node>
     <node role="superclass" roleId="tpee.1165602531693" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="3306617059423507001">
-      <link role="classifier" roleId="tpee.1107535924139" targetNodeId="3272673247068615366" resolveInfo="DebuggerException" />
-    </node>
-  </root>
-  <root id="3306617059423512080">
-    <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="3306617059423512081" />
-    <node role="constructor" roleId="tpee.1068390468201" type="tpee.ConstructorDeclaration" typeId="tpee.1068580123140" id="3306617059423512082">
-      <node role="returnType" roleId="tpee.1068580123133" type="tpee.VoidType" typeId="tpee.1068581517677" id="3306617059423512083" />
-      <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="3306617059423512084" />
-      <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="3306617059423512085">
-        <node role="statement" roleId="tpee.1068581517665" type="tpee.SuperConstructorInvocation" typeId="tpee.1070475587102" id="3306617059423512089">
-          <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="3272673247068615368" resolveInfo="DebuggerException" />
-          <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.PlusExpression" typeId="tpee.1068581242875" id="3306617059423512107">
-            <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3306617059423512110">
-              <property name="value" nameId="tpee.1070475926801" value=" is not supported" />
-            </node>
-            <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.PlusExpression" typeId="tpee.1068581242875" id="3306617059423512096">
-              <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3306617059423512090">
-                <property name="value" nameId="tpee.1070475926801" value="Type " />
-              </node>
-              <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.ParameterReference" typeId="tpee.1068581242874" id="3306617059423512102">
-                <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="3306617059423512087" resolveInfo="type" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-      <node role="parameter" roleId="tpee.1068580123134" type="tpee.ParameterDeclaration" typeId="tpee.1068498886292" id="3306617059423512087">
-        <property name="name" nameId="tpck.1169194664001" value="type" />
-        <node role="type" roleId="tpee.5680397130376446158" type="tpee.StringType" typeId="tpee.1225271177708" id="3306617059423512088" />
-      </node>
-    </node>
-    <node role="superclass" roleId="tpee.1165602531693" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="3306617059423512086">
       <link role="classifier" roleId="tpee.1107535924139" targetNodeId="3272673247068615366" resolveInfo="DebuggerException" />
     </node>
   </root>
