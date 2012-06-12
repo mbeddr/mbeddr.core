@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dev-kit name="com.mbeddr.cc.reqtrace" uuid="a4dac888-0788-4852-b4c0-f386bf6f2c0b">
-  <exported-language name="e865cad2-7cc8-437a-951a-665bcbcb8b1a(com.mbeddr.cc.requirements)" />
   <exported-language name="53bab999-e9c3-428a-80be-fef5bed08f55(com.mbeddr.cc.trace)" />
+  <exported-language name="e865cad2-7cc8-437a-951a-665bcbcb8b1a(com.mbeddr.cc.requirements)" />
 </dev-kit>
 
