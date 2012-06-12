@@ -2,8 +2,6 @@
 <model modelUID="r:c954303d-26fb-46ac-bfc4-969d1fd2b921(callgraph.editor)">
   <persistence version="7" />
   <language namespace="18bc6592-03a6-4e29-a83a-7ff23bde13ba(jetbrains.mps.lang.editor)" />
-  <language namespace="c7a71f54-c501-43f6-b9df-4d99d93797e7(callgraph)" />
-  <devkit namespace="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   <import index="ctu7" modelUID="r:09b31aec-198d-432f-9199-5ca8b26c4264(callgraph.structure)" version="-1" />
   <import index="tpc2" modelUID="r:00000000-0000-4000-0000-011c8959029e(jetbrains.mps.lang.editor.structure)" version="32" implicit="yes" />
   <roots>
