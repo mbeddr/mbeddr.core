@@ -527,6 +527,11 @@
       <property name="name" nameId="tpck.1169194664001" value="AbstractDotExpression" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="3005510381523579442" resolveInfo="UnaryExpression" />
     </node>
+    <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="22102029902365709">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="expr" />
+      <property name="name" nameId="tpck.1169194664001" value="AssignmentExpr" />
+      <link role="extends" roleId="tpce.1071489389519" targetNodeId="8860443239512128052" resolveInfo="BinaryExpression" />
+    </node>
   </roots>
   <root id="8860443239512128050">
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="356284525549555981">
@@ -1904,6 +1909,20 @@
     </node>
     <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.BooleanConceptProperty" typeId="tpce.1105725574259" id="1452920870317533093">
       <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473854053" resolveInfo="abstract" />
+    </node>
+  </root>
+  <root id="22102029902365709">
+    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="22102029902365710">
+      <property name="value" nameId="tpce.1105725733873" value="=" />
+      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473891462" resolveInfo="alias" />
+    </node>
+    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="22102029902365712">
+      <property name="value" nameId="tpce.1105725733873" value="assignment" />
+      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473914776" resolveInfo="shortDescription" />
+    </node>
+    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.IntegerConceptProperty" typeId="tpce.1105725498741" id="22102029902365716">
+      <property name="value" nameId="tpce.1105725713309" value="1000" />
+      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="5763383285156530264" resolveInfo="priolevel" />
     </node>
   </root>
 </model>

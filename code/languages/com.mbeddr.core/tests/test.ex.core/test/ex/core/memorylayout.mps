@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <model modelUID="r:2234c69a-bcf9-475a-8036-7d8a47dffbe3(test.ex.core.memorylayout)">
   <persistence version="7" />
-  <language namespace="783af01f-87a7-412c-be99-293a162652b5(com.mbeddr.ext.embedded)" />
+  <language namespace="783af01f-87a7-412c-be99-293a162652b5(com.mbeddr.core.embedded)" />
   <devkit namespace="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="14" implicit="yes" />
@@ -84,20 +84,24 @@
       <property name="name" nameId="tpck.1169194664001" value="testFunktion" />
       <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="1730914748330862767" />
       <node role="body" roleId="yz9a.6275792049641586525" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="1730914748330839734">
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.AssignmentStatement" typeId="c4fa.6275792049641552210" id="1730914748330874194">
-          <node role="lvalue" roleId="c4fa.6275792049641552218" type="nbyu.MemberMLERef" typeId="nbyu.1730914748330889912" id="1730914748330888244">
-            <link role="mle" roleId="nbyu.1730914748330889913" targetNodeId="1730914748330808330" resolveInfo="WDTCTL_L" />
-          </node>
-          <node role="rvalue" roleId="c4fa.6275792049641552219" type="mj1l.HexNumberLiteral" typeId="mj1l.1054289341113450444" id="1730914748330888239">
-            <property name="value" nameId="mj1l.1054289341113450445" value="02" />
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="22102029902643282">
+          <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.AssignmentExpr" typeId="mj1l.22102029902365709" id="22102029902643283">
+            <node role="left" roleId="mj1l.8860443239512128064" type="nbyu.MemberMLERef" typeId="nbyu.1730914748330889912" id="1730914748330888244">
+              <link role="mle" roleId="nbyu.1730914748330889913" targetNodeId="1730914748330808330" resolveInfo="WDTCTL_L" />
+            </node>
+            <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.HexNumberLiteral" typeId="mj1l.1054289341113450444" id="1730914748330888239">
+              <property name="value" nameId="mj1l.1054289341113450445" value="02" />
+            </node>
           </node>
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.AssignmentStatement" typeId="c4fa.6275792049641552210" id="1730914748330888247">
-          <node role="rvalue" roleId="c4fa.6275792049641552219" type="mj1l.HexNumberLiteral" typeId="mj1l.1054289341113450444" id="1730914748330888249">
-            <property name="value" nameId="mj1l.1054289341113450445" value="04" />
-          </node>
-          <node role="lvalue" roleId="c4fa.6275792049641552218" type="nbyu.MemberMLERef" typeId="nbyu.1730914748330889912" id="1730914748330888243">
-            <link role="mle" roleId="nbyu.1730914748330889913" targetNodeId="1730914748330808333" resolveInfo="WDTCTL_H" />
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="22102029902643212">
+          <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.AssignmentExpr" typeId="mj1l.22102029902365709" id="22102029902643213">
+            <node role="left" roleId="mj1l.8860443239512128064" type="nbyu.MemberMLERef" typeId="nbyu.1730914748330889912" id="1730914748330888243">
+              <link role="mle" roleId="nbyu.1730914748330889913" targetNodeId="1730914748330808333" resolveInfo="WDTCTL_H" />
+            </node>
+            <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.HexNumberLiteral" typeId="mj1l.1054289341113450444" id="1730914748330888249">
+              <property name="value" nameId="mj1l.1054289341113450445" value="04" />
+            </node>
           </node>
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="1730914748330888250">

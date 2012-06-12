@@ -521,25 +521,27 @@
                   </node>
                 </node>
                 <node role="elsePart" roleId="c4fa.3134547887598486571" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="4618139321488928405">
-                  <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.AssignmentStatement" typeId="c4fa.6275792049641552210" id="4618139321488928406">
-                    <node role="rvalue" roleId="c4fa.6275792049641552219" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="4618139321488928407">
-                      <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="4618139321488928349" resolveInfo="__r" />
-                    </node>
-                    <node role="lvalue" roleId="c4fa.6275792049641552218" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="4618139321488928408">
-                      <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="4618139321488928345" resolveInfo="x" />
-                      <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.CopySrcNodeMacro" typeId="tpf8.1114706874351" id="4618139321488928409">
-                        <node role="sourceNodeQuery" roleId="tpf8.1168024447342" type="tpf8.SourceSubstituteMacro_SourceNodeQuery" typeId="tpf8.1168024337012" id="4618139321488928410">
-                          <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="4618139321488928411">
-                            <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="4618139321488928412">
-                              <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="4618139321488928413">
-                                <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="4618139321488928414">
-                                  <link role="link" roleId="tp25.1138056516764" targetNodeId="c4fa.6275792049641552218" />
+                  <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="22102029902643234">
+                    <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.AssignmentExpr" typeId="mj1l.22102029902365709" id="22102029902643235">
+                      <node role="left" roleId="mj1l.8860443239512128064" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="4618139321488928408">
+                        <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="4618139321488928345" resolveInfo="x" />
+                        <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.CopySrcNodeMacro" typeId="tpf8.1114706874351" id="4618139321488928409">
+                          <node role="sourceNodeQuery" roleId="tpf8.1168024447342" type="tpf8.SourceSubstituteMacro_SourceNodeQuery" typeId="tpf8.1168024337012" id="4618139321488928410">
+                            <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="4618139321488928411">
+                              <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="4618139321488928412">
+                                <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="4618139321488928413">
+                                  <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="4618139321488928414">
+                                    <link role="link" roleId="tp25.1138056516764" targetNodeId="c4fa.6275792049641552218" />
+                                  </node>
+                                  <node role="operand" roleId="tpee.1197027771414" type="tpf8.TemplateFunctionParameter_sourceNode" typeId="tpf8.1167169188348" id="4618139321488928415" />
                                 </node>
-                                <node role="operand" roleId="tpee.1197027771414" type="tpf8.TemplateFunctionParameter_sourceNode" typeId="tpf8.1167169188348" id="4618139321488928415" />
                               </node>
                             </node>
                           </node>
                         </node>
+                      </node>
+                      <node role="right" roleId="mj1l.8860443239512128065" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="4618139321488928407">
+                        <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="4618139321488928349" resolveInfo="__r" />
                       </node>
                     </node>
                   </node>

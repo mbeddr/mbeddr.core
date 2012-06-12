@@ -238,16 +238,18 @@
                   </node>
                 </node>
               </node>
-              <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.AssignmentStatement" typeId="c4fa.6275792049641552210" id="7646082028326283207">
-                <node role="lvalue" roleId="c4fa.6275792049641552218" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="7646082028326283208">
-                  <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="7646082028326283198" resolveInfo="x" />
-                </node>
-                <node role="rvalue" roleId="c4fa.6275792049641552219" type="mj1l.PlusExpression" typeId="mj1l.5763383285156373013" id="7646082028326283209">
-                  <node role="left" roleId="mj1l.8860443239512128064" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="7646082028326283210">
+              <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="22102029902643834">
+                <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.AssignmentExpr" typeId="mj1l.22102029902365709" id="22102029902643835">
+                  <node role="left" roleId="mj1l.8860443239512128064" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="7646082028326283208">
                     <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="7646082028326283198" resolveInfo="x" />
                   </node>
-                  <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="7646082028326283211">
-                    <property name="value" nameId="mj1l.8860443239512128104" value="1" />
+                  <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.PlusExpression" typeId="mj1l.5763383285156373013" id="7646082028326283209">
+                    <node role="left" roleId="mj1l.8860443239512128064" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="7646082028326283210">
+                      <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="7646082028326283198" resolveInfo="x" />
+                    </node>
+                    <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="7646082028326283211">
+                      <property name="value" nameId="mj1l.8860443239512128104" value="1" />
+                    </node>
                   </node>
                 </node>
               </node>

@@ -476,12 +476,14 @@
       <node role="contents" roleId="v7ag.4491876417845641672" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="6209278014151173664">
         <property name="name" nameId="tpck.1169194664001" value="counter_reset" />
         <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="6209278014151173665">
-          <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.AssignmentStatement" typeId="c4fa.6275792049641552210" id="6209278014151173666">
-            <node role="lvalue" roleId="c4fa.6275792049641552218" type="v7ag.FieldRef" typeId="v7ag.5308710777891565561" id="6209278014151173667">
-              <link role="field" roleId="v7ag.5308710777891565562" targetNodeId="6209278014151173662" resolveInfo="value" />
-            </node>
-            <node role="rvalue" roleId="c4fa.6275792049641552219" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6209278014151173668">
-              <property name="value" nameId="mj1l.8860443239512128104" value="0" />
+          <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="22102029902643342">
+            <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.AssignmentExpr" typeId="mj1l.22102029902365709" id="22102029902643343">
+              <node role="left" roleId="mj1l.8860443239512128064" type="v7ag.FieldRef" typeId="v7ag.5308710777891565561" id="6209278014151173667">
+                <link role="field" roleId="v7ag.5308710777891565562" targetNodeId="6209278014151173662" resolveInfo="value" />
+              </node>
+              <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6209278014151173668">
+                <property name="value" nameId="mj1l.8860443239512128104" value="0" />
+              </node>
             </node>
           </node>
         </node>
@@ -537,12 +539,14 @@
       <node role="contents" roleId="v7ag.4491876417845641672" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="6209278014151448703">
         <property name="name" nameId="tpck.1169194664001" value="counter_reset" />
         <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="6209278014151448704">
-          <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.AssignmentStatement" typeId="c4fa.6275792049641552210" id="6209278014151448705">
-            <node role="lvalue" roleId="c4fa.6275792049641552218" type="v7ag.FieldRef" typeId="v7ag.5308710777891565561" id="6209278014151448706">
-              <link role="field" roleId="v7ag.5308710777891565562" targetNodeId="6209278014151448701" resolveInfo="value" />
-            </node>
-            <node role="rvalue" roleId="c4fa.6275792049641552219" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6209278014151448707">
-              <property name="value" nameId="mj1l.8860443239512128104" value="10" />
+          <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="22102029902643256">
+            <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.AssignmentExpr" typeId="mj1l.22102029902365709" id="22102029902643257">
+              <node role="left" roleId="mj1l.8860443239512128064" type="v7ag.FieldRef" typeId="v7ag.5308710777891565561" id="6209278014151448706">
+                <link role="field" roleId="v7ag.5308710777891565562" targetNodeId="6209278014151448701" resolveInfo="value" />
+              </node>
+              <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6209278014151448707">
+                <property name="value" nameId="mj1l.8860443239512128104" value="10" />
+              </node>
             </node>
           </node>
         </node>

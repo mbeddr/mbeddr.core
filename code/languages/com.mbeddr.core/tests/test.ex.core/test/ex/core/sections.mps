@@ -36,12 +36,14 @@
         <property name="name" nameId="tpck.1169194664001" value="TestAccessX" />
         <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="5947739078127622608" />
         <node role="body" roleId="yz9a.6275792049641586525" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="5947739078127622609">
-          <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.AssignmentStatement" typeId="c4fa.6275792049641552210" id="5947739078127622613">
-            <node role="rvalue" roleId="c4fa.6275792049641552219" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="5947739078127622615">
-              <property name="value" nameId="mj1l.8860443239512128104" value="10" />
-            </node>
-            <node role="lvalue" roleId="c4fa.6275792049641552218" type="x27k.GlobalVarRef" typeId="x27k.6610873504380357354" id="5947739078127622612">
-              <link role="var" roleId="x27k.6610873504380357355" targetNodeId="5947739078127622592" resolveInfo="x" />
+          <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="22102029902643372">
+            <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.AssignmentExpr" typeId="mj1l.22102029902365709" id="22102029902643373">
+              <node role="left" roleId="mj1l.8860443239512128064" type="x27k.GlobalVarRef" typeId="x27k.6610873504380357354" id="5947739078127622612">
+                <link role="var" roleId="x27k.6610873504380357355" targetNodeId="5947739078127622592" resolveInfo="x" />
+              </node>
+              <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="5947739078127622615">
+                <property name="value" nameId="mj1l.8860443239512128104" value="10" />
+              </node>
             </node>
           </node>
           <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="5947739078127622617">

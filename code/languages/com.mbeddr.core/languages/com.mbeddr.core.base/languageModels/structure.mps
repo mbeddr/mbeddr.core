@@ -59,6 +59,9 @@
     <node type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="6616025724454843605">
       <property name="name" nameId="tpck.1169194664001" value="IMustBeMigratedAutomatically" />
     </node>
+    <node type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="8051977711588518781">
+      <property name="name" nameId="tpck.1169194664001" value="IDeprecatedLangConcept" />
+    </node>
   </roots>
   <root id="7024921229555594291">
     <node role="extends" roleId="tpce.1169127546356" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7024921229555594292">
@@ -148,5 +151,11 @@
     </node>
   </root>
   <root id="6616025724454843605" />
+  <root id="8051977711588518781">
+    <node role="conceptPropertyDeclaration" roleId="tpce.1137467167200" type="tpce.StringConceptPropertyDeclaration" typeId="tpce.1105725281956" id="8051977711588637301">
+      <property name="name" nameId="tpck.1169194664001" value="deprecationMessage" />
+      <property name="inheritable" nameId="tpce.1218571350029" value="true" />
+    </node>
+  </root>
 </model>
 

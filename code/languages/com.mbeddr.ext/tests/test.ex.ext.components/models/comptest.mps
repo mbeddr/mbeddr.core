@@ -299,16 +299,18 @@
             </node>
             <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="5083029923012080986" />
           </node>
-          <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.AssignmentStatement" typeId="c4fa.6275792049641552210" id="1302968767135054248">
-            <node role="lvalue" roleId="c4fa.6275792049641552218" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="1302968767135054247">
-              <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="1302968767135054237" resolveInfo="i" />
-            </node>
-            <node role="rvalue" roleId="c4fa.6275792049641552219" type="mj1l.PlusExpression" typeId="mj1l.5763383285156373013" id="1302968767135054250">
-              <node role="right" roleId="mj1l.8860443239512128065" type="v7ag.InternalRunnableCall" typeId="v7ag.1302968767135003933" id="1302968767135054253">
-                <link role="runnable" roleId="v7ag.1302968767135003934" targetNodeId="1302968767135003906" resolveInfo="helper" />
-              </node>
-              <node role="left" roleId="mj1l.8860443239512128064" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="1302968767135054249">
+          <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="22102029902643690">
+            <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.AssignmentExpr" typeId="mj1l.22102029902365709" id="22102029902643691">
+              <node role="left" roleId="mj1l.8860443239512128064" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="1302968767135054247">
                 <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="1302968767135054237" resolveInfo="i" />
+              </node>
+              <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.PlusExpression" typeId="mj1l.5763383285156373013" id="1302968767135054250">
+                <node role="right" roleId="mj1l.8860443239512128065" type="v7ag.InternalRunnableCall" typeId="v7ag.1302968767135003933" id="1302968767135054253">
+                  <link role="runnable" roleId="v7ag.1302968767135003934" targetNodeId="1302968767135003906" resolveInfo="helper" />
+                </node>
+                <node role="left" roleId="mj1l.8860443239512128064" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="1302968767135054249">
+                  <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="1302968767135054237" resolveInfo="i" />
+                </node>
               </node>
             </node>
           </node>

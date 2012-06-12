@@ -35,6 +35,10 @@
             </node>
           </node>
         </node>
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="8051977711588658880">
+          <property name="name" nameId="tpck.1169194664001" value="a" />
+          <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="8051977711588658881" />
+        </node>
       </node>
       <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int32tType" typeId="mj1l.8463282783691618440" id="5708867820622277851" />
     </node>

@@ -62,11 +62,13 @@
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.IfStatement" typeId="c4fa.6275792049641600983" id="5301960176566505286">
           <node role="thenPart" roleId="c4fa.6275792049641600985" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="5301960176566505288">
-            <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.AssignmentStatement" typeId="c4fa.6275792049641552210" id="5301960176566505298">
-              <node role="lvalue" roleId="c4fa.6275792049641552218" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="5301960176566505297">
-                <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="6693167602755050483" resolveInfo="b" />
+            <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="22102029902643868">
+              <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.AssignmentExpr" typeId="mj1l.22102029902365709" id="22102029902643869">
+                <node role="left" roleId="mj1l.8860443239512128064" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="5301960176566505297">
+                  <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="6693167602755050483" resolveInfo="b" />
+                </node>
+                <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.TrueLiteral" typeId="mj1l.8860443239512128094" id="5301960176566505299" />
               </node>
-              <node role="rvalue" roleId="c4fa.6275792049641552219" type="mj1l.TrueLiteral" typeId="mj1l.8860443239512128094" id="5301960176566505299" />
             </node>
           </node>
           <node role="condition" roleId="c4fa.6275792049641600984" type="mj1l.NotExpression" typeId="mj1l.3830958861296781575" id="5301960176566505295">

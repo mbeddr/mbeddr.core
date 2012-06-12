@@ -83,12 +83,14 @@
               </node>
             </node>
             <node role="entryAction" roleId="clqz.8541896189836157442" type="clqz.ActionList" typeId="clqz.1957198122968598264" id="7825285260293843114">
-              <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.AssignmentStatement" typeId="c4fa.6275792049641552210" id="7825285260293843117">
-                <node role="rvalue" roleId="c4fa.6275792049641552219" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="7825285260293843119">
-                  <property name="value" nameId="mj1l.8860443239512128104" value="0" />
-                </node>
-                <node role="lvalue" roleId="c4fa.6275792049641552218" type="clqz.StatemachineVarRef" typeId="clqz.1786180596061383227" id="7825285260293843116">
-                  <link role="var" roleId="clqz.1786180596061383228" targetNodeId="4643433264761154531" resolveInfo="value" />
+              <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="22102029902643312">
+                <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.AssignmentExpr" typeId="mj1l.22102029902365709" id="22102029902643313">
+                  <node role="left" roleId="mj1l.8860443239512128064" type="clqz.StatemachineVarRef" typeId="clqz.1786180596061383227" id="7825285260293843116">
+                    <link role="var" roleId="clqz.1786180596061383228" targetNodeId="4643433264761154531" resolveInfo="value" />
+                  </node>
+                  <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="7825285260293843119">
+                    <property name="value" nameId="mj1l.8860443239512128104" value="0" />
+                  </node>
                 </node>
               </node>
             </node>
@@ -183,12 +185,14 @@
       <node role="contents" roleId="v7ag.4491876417845641672" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="1598382569875778968">
         <property name="name" nameId="tpck.1169194664001" value="reportValue" />
         <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="1598382569875778969">
-          <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.AssignmentStatement" typeId="c4fa.6275792049641552210" id="1598382569875779412">
-            <node role="lvalue" roleId="c4fa.6275792049641552218" type="v7ag.FieldRef" typeId="v7ag.5308710777891565561" id="1598382569875779411">
-              <link role="field" roleId="v7ag.5308710777891565562" targetNodeId="1598382569875779407" resolveInfo="reportedValue" />
-            </node>
-            <node role="rvalue" roleId="c4fa.6275792049641552219" type="x27k.ArgumentRef" typeId="x27k.2093108837558505658" id="1598382569875783320">
-              <link role="arg" roleId="x27k.2093108837558505659" targetNodeId="1598382569875783318" resolveInfo="val" />
+          <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="22102029902643694">
+            <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.AssignmentExpr" typeId="mj1l.22102029902365709" id="22102029902643695">
+              <node role="left" roleId="mj1l.8860443239512128064" type="v7ag.FieldRef" typeId="v7ag.5308710777891565561" id="1598382569875779411">
+                <link role="field" roleId="v7ag.5308710777891565562" targetNodeId="1598382569875779407" resolveInfo="reportedValue" />
+              </node>
+              <node role="right" roleId="mj1l.8860443239512128065" type="x27k.ArgumentRef" typeId="x27k.2093108837558505658" id="1598382569875783320">
+                <link role="arg" roleId="x27k.2093108837558505659" targetNodeId="1598382569875783318" resolveInfo="val" />
+              </node>
             </node>
           </node>
         </node>

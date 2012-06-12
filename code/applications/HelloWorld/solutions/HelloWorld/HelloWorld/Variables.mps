@@ -145,12 +145,14 @@
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="2400719862222052647">
       <property name="name" nameId="tpck.1169194664001" value="setGlobalVar" />
       <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="2400719862222052648">
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.AssignmentStatement" typeId="c4fa.6275792049641552210" id="2400719862222052657">
-          <node role="lvalue" roleId="c4fa.6275792049641552218" type="x27k.GlobalVarRef" typeId="x27k.6610873504380357354" id="2400719862222052656">
-            <link role="var" roleId="x27k.6610873504380357355" targetNodeId="2400719862222052643" resolveInfo="globalInt32" />
-          </node>
-          <node role="rvalue" roleId="c4fa.6275792049641552219" type="x27k.ArgumentRef" typeId="x27k.2093108837558505658" id="2400719862222052658">
-            <link role="arg" roleId="x27k.2093108837558505659" targetNodeId="2400719862222052651" resolveInfo="globalVarValue" />
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="22102029902643804">
+          <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.AssignmentExpr" typeId="mj1l.22102029902365709" id="22102029902643805">
+            <node role="left" roleId="mj1l.8860443239512128064" type="x27k.GlobalVarRef" typeId="x27k.6610873504380357354" id="2400719862222052656">
+              <link role="var" roleId="x27k.6610873504380357355" targetNodeId="2400719862222052643" resolveInfo="globalInt32" />
+            </node>
+            <node role="right" roleId="mj1l.8860443239512128065" type="x27k.ArgumentRef" typeId="x27k.2093108837558505658" id="2400719862222052658">
+              <link role="arg" roleId="x27k.2093108837558505659" targetNodeId="2400719862222052651" resolveInfo="globalVarValue" />
+            </node>
           </node>
         </node>
       </node>
