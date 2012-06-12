@@ -2,8 +2,15 @@
 
   <property file="build.properties"/>
 
-  <taskdef resource="jetbrains/mps/build/ant/antlib.xml"
-           classpath="${mps.home}/languages/generate.ant.task.jar"/>
+  <path id="mps.ant.path">
+   <pathelement location="${mps.home}/lib/mps-backend.jar"/>
+   <pathelement location="${mps.home}/lib/jdom.jar"/>
+   <pathelement location="${mps.home}/lib/log4j.jar"/>
+   <pathelement location="${mps.home}/lib/mps-core.jar"/>
+ </path>
+
+ <taskdef resource="jetbrains/mps/build/ant/antlib.xml"
+          classpathref="mps.ant.path"/>
 
   <property name="projectDir" value="code/applications/DebuggerTutorial"/>
 		   
