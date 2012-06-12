@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DependencyValidationManager">
+    <option name="SKIP_IMPORT_STATEMENTS" value="false" />
+  </component>
+  <component name="Encoding" useUTFGuessing="true" native2AsciiForPropertiesFiles="false" />
+  <component name="MPSProject">
+    <projectModules>
+      <modulePath path="${project}/languages/StandaloneTemplateSampleLanguage/StandaloneTemplateSampleLanguage.mpl" />
+      <modulePath path="${project}/solutions/StandaloneTemplate.build/build.msd" />
+      <modulePath path="${project}/solutions/StandaloneTemplateSampleLanguage.sandbox/StandaloneTemplateSampleLanguage.sandbox.msd" />
+    </projectModules>
+    <genConfs />
+  </component>
+  <component name="ProjectRootManager" version="2" />
+  <component name="ProjectVersion">
+    <option name="version" value="2.5" />
+  </component>
+  <component name="VcsDirectoryMappings">
+    <mapping directory="" vcs="" />
+    <mapping directory="$PROJECT_DIR$" vcs="Git" />
+  </component>
+</project>
+
