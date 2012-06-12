@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="com.mbeddr.mpsutil.tables.rt" uuid="8d7b1bfe-840c-4cd6-8f09-3545baa18419" compileInMPS="true">
+<solution name="com.mbeddr.mpsutil.tables.rt" uuid="8d7b1bfe-840c-4cd6-8f09-3545baa18419" pluginKind="PLUGIN_EDITOR" compileInMPS="true">
   <models>
     <modelRoot path="${solution_descriptor}/" />
   </models>

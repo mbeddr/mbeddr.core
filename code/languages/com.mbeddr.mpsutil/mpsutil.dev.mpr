@@ -10,6 +10,7 @@
       <modulePath path="${project}/languages/com.mbeddr.mpsutil.blutil/blutil.mpl" folder="" />
       <modulePath path="${project}/languages/com.mbeddr.mpsutil.graph/graph.mpl" />
       <modulePath path="${project}/languages/com.mbeddr.mpsutil.graphview/graphview.mpl" folder="" />
+      <modulePath path="${project}/languages/com.mbeddr.mpsutil.graphview/solutions/pluginSolution/pluginSolution.msd" folder="" />
       <modulePath path="${project}/languages/com.mbeddr.mpsutil.langdepdiag/langdepdiag.mpl" folder="" />
       <modulePath path="${project}/languages/com.mbeddr.mpsutil.langstats/langstats.mpl" folder="" />
       <modulePath path="${project}/languages/com.mbeddr.mpsutil.tables.rt/tables.rt.msd" />
