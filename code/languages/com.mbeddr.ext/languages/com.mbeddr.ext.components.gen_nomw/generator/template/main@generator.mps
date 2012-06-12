@@ -32,11 +32,11 @@
   <import index="tpee" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="3" implicit="yes" />
   <import index="tp25" modelUID="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" version="-1" implicit="yes" />
   <import index="tpf3" modelUID="r:00000000-0000-4000-0000-011c895902f3(jetbrains.mps.lang.generator.generationContext.structure)" version="0" implicit="yes" />
-  <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="11" implicit="yes" />
-  <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="1" implicit="yes" />
+  <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="13" implicit="yes" />
+  <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="3" implicit="yes" />
   <import index="tp2c" modelUID="r:00000000-0000-4000-0000-011c89590338(jetbrains.mps.baseLanguage.closures.structure)" version="3" implicit="yes" />
   <import index="yq40" modelUID="r:152b3fc0-83a1-4bab-a8cd-565eb8483785(com.mbeddr.core.pointers.structure)" version="1" implicit="yes" />
-  <import index="clbe" modelUID="r:61d840b4-12c1-49ea-b142-b2a1550a9b15(com.mbeddr.core.udt.structure)" version="3" implicit="yes" />
+  <import index="clbe" modelUID="r:61d840b4-12c1-49ea-b142-b2a1550a9b15(com.mbeddr.core.udt.structure)" version="5" implicit="yes" />
   <import index="tp2q" modelUID="r:00000000-0000-4000-0000-011c8959032e(jetbrains.mps.baseLanguage.collections.structure)" version="7" implicit="yes" />
   <import index="k146" modelUID="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" version="1" implicit="yes" />
   <import index="tpd4" modelUID="r:00000000-0000-4000-0000-011c895902b4(jetbrains.mps.lang.typesystem.structure)" version="3" implicit="yes" />
@@ -189,7 +189,7 @@
                 <property name="isInvisible" nameId="c4fa.4643433264760041409" value="true" />
                 <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.AssignmentStatement" typeId="c4fa.6275792049641552210" id="6209278014151740552">
                   <node role="lvalue" roleId="c4fa.6275792049641552218" type="clbe.StructDotExpression" typeId="clbe.6394819151180597804" id="6209278014151740409">
-                    <node role="member" roleId="mj1l.6603034309021722828" type="clbe.StructMemberRef" typeId="clbe.6394819151180597813" id="6209278014151740483">
+                    <node role="member" roleId="mj1l.1452920870317550651" type="clbe.StructMemberRef" typeId="clbe.6394819151180597813" id="6209278014151740483">
                       <link role="member" roleId="clbe.6394819151180597814" targetNodeId="6209278014151740446" resolveInfo="protocolState" />
                       <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.ReferenceMacro" typeId="tpf8.1088761943574" id="6209278014151740874">
                         <property name="linkRole" nameId="tpck.1757699476691236116" value="member" />
@@ -458,7 +458,7 @@
                         </node>
                       </node>
                     </node>
-                    <node role="member" roleId="mj1l.6603034309021722828" type="clbe.StructMemberRef" typeId="clbe.6394819151180597813" id="5308710777891628376">
+                    <node role="member" roleId="mj1l.1452920870317550651" type="clbe.StructMemberRef" typeId="clbe.6394819151180597813" id="5308710777891628376">
                       <link role="member" roleId="clbe.6394819151180597814" targetNodeId="5308710777891628311" resolveInfo="instanceFieldMember" />
                       <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.ReferenceMacro" typeId="tpf8.1088761943574" id="5308710777891628576">
                         <property name="linkRole" nameId="tpck.1757699476691236116" value="member" />
@@ -732,7 +732,7 @@
                 </node>
                 <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.AssignmentStatement" typeId="c4fa.6275792049641552210" id="785275130115155643">
                   <node role="lvalue" roleId="c4fa.6275792049641552218" type="clbe.StructDotExpression" typeId="clbe.6394819151180597804" id="785275130115155515">
-                    <node role="member" roleId="mj1l.6603034309021722828" type="clbe.StructMemberRef" typeId="clbe.6394819151180597813" id="785275130115155558">
+                    <node role="member" roleId="mj1l.1452920870317550651" type="clbe.StructMemberRef" typeId="clbe.6394819151180597813" id="785275130115155558">
                       <link role="member" roleId="clbe.6394819151180597814" targetNodeId="5308710777891628311" resolveInfo="instanceFieldMember" />
                       <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.ReferenceMacro" typeId="tpf8.1088761943574" id="785275130115155971">
                         <property name="linkRole" nameId="tpck.1757699476691236116" value="member" />
@@ -1104,7 +1104,7 @@
                         </node>
                       </node>
                     </node>
-                    <node role="member" roleId="mj1l.6603034309021722828" type="clbe.StructMemberRef" typeId="clbe.6394819151180597813" id="591155063063674930">
+                    <node role="member" roleId="mj1l.1452920870317550651" type="clbe.StructMemberRef" typeId="clbe.6394819151180597813" id="591155063063674930">
                       <link role="member" roleId="clbe.6394819151180597814" targetNodeId="591155063063591443" resolveInfo="portMember" />
                       <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.ReferenceMacro" typeId="tpf8.1088761943574" id="591155063063675358">
                         <property name="linkRole" nameId="tpck.1757699476691236116" value="member" />
@@ -1522,7 +1522,7 @@
                         </node>
                       </node>
                     </node>
-                    <node role="member" roleId="mj1l.6603034309021722828" type="clbe.StructMemberRef" typeId="clbe.6394819151180597813" id="5308710777891659584">
+                    <node role="member" roleId="mj1l.1452920870317550651" type="clbe.StructMemberRef" typeId="clbe.6394819151180597813" id="5308710777891659584">
                       <link role="member" roleId="clbe.6394819151180597814" targetNodeId="591155063063591443" resolveInfo="portMember" />
                       <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.ReferenceMacro" typeId="tpf8.1088761943574" id="5308710777891659585">
                         <property name="linkRole" nameId="tpck.1757699476691236116" value="member" />
@@ -1796,7 +1796,7 @@
                         </node>
                       </node>
                     </node>
-                    <node role="member" roleId="mj1l.6603034309021722828" type="clbe.StructMemberRef" typeId="clbe.6394819151180597813" id="591155063063704922">
+                    <node role="member" roleId="mj1l.1452920870317550651" type="clbe.StructMemberRef" typeId="clbe.6394819151180597813" id="591155063063704922">
                       <link role="member" roleId="clbe.6394819151180597814" targetNodeId="591155063063640449" resolveInfo="operationPointer" />
                       <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.ReferenceMacro" typeId="tpf8.1088761943574" id="591155063063705148">
                         <property name="linkRole" nameId="tpck.1757699476691236116" value="member" />
@@ -2396,7 +2396,7 @@
                         </node>
                       </node>
                     </node>
-                    <node role="member" roleId="mj1l.6603034309021722828" type="clbe.StructMemberRef" typeId="clbe.6394819151180597813" id="5308710777891694433">
+                    <node role="member" roleId="mj1l.1452920870317550651" type="clbe.StructMemberRef" typeId="clbe.6394819151180597813" id="5308710777891694433">
                       <link role="member" roleId="clbe.6394819151180597814" targetNodeId="591155063063640449" resolveInfo="operationPointer" />
                       <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.ReferenceMacro" typeId="tpf8.1088761943574" id="5308710777891694434">
                         <property name="linkRole" nameId="tpck.1757699476691236116" value="member" />
@@ -3129,7 +3129,7 @@
                     <node role="expression" roleId="mj1l.7254843406768839760" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="5308710777891705452">
                       <node role="right" roleId="mj1l.8860443239512128065" type="yq40.NullExpression" typeId="yq40.5308710777891643206" id="5308710777891705456" />
                       <node role="left" roleId="mj1l.8860443239512128064" type="clbe.StructArrowExpression" typeId="clbe.6631303246402173901" id="5308710777891705406">
-                        <node role="member" roleId="mj1l.6603034309021722828" type="clbe.StructMemberRef" typeId="clbe.6394819151180597813" id="5308710777891705407">
+                        <node role="member" roleId="mj1l.1452920870317550651" type="clbe.StructMemberRef" typeId="clbe.6394819151180597813" id="5308710777891705407">
                           <link role="member" roleId="clbe.6394819151180597814" targetNodeId="5308710777891705296" resolveInfo="reqPortInstance" />
                           <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.ReferenceMacro" typeId="tpf8.1088761943574" id="5308710777891705408">
                             <property name="linkRole" nameId="tpck.1757699476691236116" value="member" />
@@ -3272,7 +3272,7 @@
                         </node>
                       </node>
                     </node>
-                    <node role="member" roleId="mj1l.6603034309021722828" type="clbe.StructMemberRef" typeId="clbe.6394819151180597813" id="9146329806094298135">
+                    <node role="member" roleId="mj1l.1452920870317550651" type="clbe.StructMemberRef" typeId="clbe.6394819151180597813" id="9146329806094298135">
                       <link role="member" roleId="clbe.6394819151180597814" targetNodeId="9146329806094294630" resolveInfo="funField" />
                       <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.ReferenceMacro" typeId="tpf8.1088761943574" id="9146329806094298184">
                         <property name="linkRole" nameId="tpck.1757699476691236116" value="member" />
@@ -3359,7 +3359,7 @@
                         </node>
                       </node>
                     </node>
-                    <node role="member" roleId="mj1l.6603034309021722828" type="clbe.StructMemberRef" typeId="clbe.6394819151180597813" id="9146329806094298145">
+                    <node role="member" roleId="mj1l.1452920870317550651" type="clbe.StructMemberRef" typeId="clbe.6394819151180597813" id="9146329806094298145">
                       <link role="member" roleId="clbe.6394819151180597814" targetNodeId="9146329806094296922" resolveInfo="reqPortInstance" />
                       <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.ReferenceMacro" typeId="tpf8.1088761943574" id="9146329806094298228">
                         <property name="linkRole" nameId="tpck.1757699476691236116" value="member" />
@@ -3570,7 +3570,7 @@
                         </node>
                       </node>
                     </node>
-                    <node role="member" roleId="mj1l.6603034309021722828" type="clbe.StructMemberRef" typeId="clbe.6394819151180597813" id="8922663937488672475">
+                    <node role="member" roleId="mj1l.1452920870317550651" type="clbe.StructMemberRef" typeId="clbe.6394819151180597813" id="8922663937488672475">
                       <link role="member" roleId="clbe.6394819151180597814" targetNodeId="8922663937488672101" resolveInfo="reqPortInstance" />
                       <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.ReferenceMacro" typeId="tpf8.1088761943574" id="8922663937488672476">
                         <property name="linkRole" nameId="tpck.1757699476691236116" value="member" />
@@ -3882,7 +3882,7 @@
                         </node>
                       </node>
                     </node>
-                    <node role="member" roleId="mj1l.6603034309021722828" type="clbe.StructMemberRef" typeId="clbe.6394819151180597813" id="8933128519013973406">
+                    <node role="member" roleId="mj1l.1452920870317550651" type="clbe.StructMemberRef" typeId="clbe.6394819151180597813" id="8933128519013973406">
                       <link role="member" roleId="clbe.6394819151180597814" targetNodeId="8933128519013973366" resolveInfo="reqPortInstance" />
                       <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.ReferenceMacro" typeId="tpf8.1088761943574" id="8933128519013973407">
                         <property name="linkRole" nameId="tpck.1757699476691236116" value="member" />
@@ -4228,7 +4228,7 @@
                       </node>
                     </node>
                   </node>
-                  <node role="member" roleId="mj1l.6603034309021722828" type="clbe.StructMemberRef" typeId="clbe.6394819151180597813" id="5308710777891634343">
+                  <node role="member" roleId="mj1l.1452920870317550651" type="clbe.StructMemberRef" typeId="clbe.6394819151180597813" id="5308710777891634343">
                     <link role="member" roleId="clbe.6394819151180597814" targetNodeId="5308710777891634339" resolveInfo="field" />
                     <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.ReferenceMacro" typeId="tpf8.1088761943574" id="5308710777891634415">
                       <property name="linkRole" nameId="tpck.1757699476691236116" value="member" />
@@ -5132,7 +5132,7 @@
               </node>
             </node>
             <node role="expression" roleId="c4fa.3134547887598524925" type="clbe.StructArrowExpression" typeId="clbe.6631303246402173901" id="6209278014151768660">
-              <node role="member" roleId="mj1l.6603034309021722828" type="clbe.StructMemberRef" typeId="clbe.6394819151180597813" id="6209278014151768686">
+              <node role="member" roleId="mj1l.1452920870317550651" type="clbe.StructMemberRef" typeId="clbe.6394819151180597813" id="6209278014151768686">
                 <link role="member" roleId="clbe.6394819151180597814" targetNodeId="6209278014151768670" resolveInfo="protocolState" />
                 <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.ReferenceMacro" typeId="tpf8.1088761943574" id="6209278014151768693">
                   <property name="linkRole" nameId="tpck.1757699476691236116" value="member" />
@@ -5230,7 +5230,7 @@
               <node role="body" roleId="c4fa.3134547887598524931" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="6209278014151768752">
                 <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.AssignmentStatement" typeId="c4fa.6275792049641552210" id="4058325937810462878">
                   <node role="lvalue" roleId="c4fa.6275792049641552218" type="clbe.StructArrowExpression" typeId="clbe.6631303246402173901" id="4058325937810462823">
-                    <node role="member" roleId="mj1l.6603034309021722828" type="clbe.StructMemberRef" typeId="clbe.6394819151180597813" id="4058325937810462824">
+                    <node role="member" roleId="mj1l.1452920870317550651" type="clbe.StructMemberRef" typeId="clbe.6394819151180597813" id="4058325937810462824">
                       <link role="member" roleId="clbe.6394819151180597814" targetNodeId="6209278014151768670" resolveInfo="protocolState" />
                       <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.ReferenceMacro" typeId="tpf8.1088761943574" id="4058325937810462825">
                         <property name="linkRole" nameId="tpck.1757699476691236116" value="member" />
@@ -5528,7 +5528,7 @@
                   <property name="isInvisible" nameId="c4fa.4643433264760041409" value="true" />
                   <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.AssignmentStatement" typeId="c4fa.6275792049641552210" id="4058325937810463507">
                     <node role="lvalue" roleId="c4fa.6275792049641552218" type="clbe.StructArrowExpression" typeId="clbe.6631303246402173901" id="4058325937810463452">
-                      <node role="member" roleId="mj1l.6603034309021722828" type="clbe.StructMemberRef" typeId="clbe.6394819151180597813" id="4058325937810463453">
+                      <node role="member" roleId="mj1l.1452920870317550651" type="clbe.StructMemberRef" typeId="clbe.6394819151180597813" id="4058325937810463453">
                         <link role="member" roleId="clbe.6394819151180597814" targetNodeId="6209278014151768670" resolveInfo="protocolState" />
                         <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.ReferenceMacro" typeId="tpf8.1088761943574" id="4058325937810463454">
                           <property name="linkRole" nameId="tpck.1757699476691236116" value="member" />
@@ -5766,7 +5766,7 @@
                       </node>
                     </node>
                     <node role="propVals" roleId="k146.767515563077221084" type="clbe.StructArrowExpression" typeId="clbe.6631303246402173901" id="4058325937810509086">
-                      <node role="member" roleId="mj1l.6603034309021722828" type="clbe.StructMemberRef" typeId="clbe.6394819151180597813" id="4058325937810509087">
+                      <node role="member" roleId="mj1l.1452920870317550651" type="clbe.StructMemberRef" typeId="clbe.6394819151180597813" id="4058325937810509087">
                         <link role="member" roleId="clbe.6394819151180597814" targetNodeId="6209278014151768670" resolveInfo="protocolState" />
                         <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.ReferenceMacro" typeId="tpf8.1088761943574" id="4058325937810509088">
                           <property name="linkRole" nameId="tpck.1757699476691236116" value="member" />
