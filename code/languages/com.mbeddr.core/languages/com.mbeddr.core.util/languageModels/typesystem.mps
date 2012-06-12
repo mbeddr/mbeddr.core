@@ -6,7 +6,6 @@
   <devkit namespace="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   <import index="k146" modelUID="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" version="7" />
   <import index="ywuz" modelUID="r:c6ce92e7-5a98-4a6f-866a-ec8b9e945dd8(com.mbeddr.core.expressions.behavior)" version="-1" />
-  <import index="c9jm" modelUID="r:167d778b-bddc-4b3f-a776-89718ce72b97(com.mbeddr.core.util.typesystem)" version="-1" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="tp25" modelUID="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" version="-1" implicit="yes" />
   <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="14" implicit="yes" />
@@ -19,6 +18,7 @@
   <import index="tp2c" modelUID="r:00000000-0000-4000-0000-011c89590338(jetbrains.mps.baseLanguage.closures.structure)" version="3" implicit="yes" />
   <import index="e2lb" modelUID="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" version="-1" implicit="yes" />
   <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="0" implicit="yes" />
+  <import index="hba4" modelUID="r:f5bd2ad9-cd54-4408-b815-07f9f306f074(com.mbeddr.mpsutil.blutil.structure)" version="5" implicit="yes" />
   <roots>
     <node type="tpd4.NonTypesystemRule" typeId="tpd4.1195214364922" id="5686538669182300976">
       <property name="name" nameId="tpck.1169194664001" value="check_BlockExpression" />
@@ -1049,34 +1049,34 @@
       <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="374287044672200015" />
       <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="374287044672200016">
         <node role="statement" roleId="tpee.1068581517665" type="tpee.ReturnStatement" typeId="tpee.1068581242878" id="374287044672200020">
-          <node role="expression" roleId="tpee.1068581517676" type=".com.mbeddr.mpsutil.blutil.structure.DispatchExpression" id="374287044672200022">
-            <node role="type" type="tpee.BooleanType" typeId="tpee.1070534644030" id="374287044672200024" />
-            <node role="candidate" type="tpee.ParameterReference" typeId="tpee.1068581242874" id="374287044672200025">
+          <node role="expression" roleId="tpee.1068581517676" type="hba4.DispatchExpression" typeId="hba4.374287044672141846" id="374287044672200022">
+            <node role="type" roleId="hba4.374287044672144227" type="tpee.BooleanType" typeId="tpee.1070534644030" id="374287044672200024" />
+            <node role="candidate" roleId="hba4.374287044672141847" type="tpee.ParameterReference" typeId="tpee.1068581242874" id="374287044672200025">
               <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="374287044672200018" resolveInfo="expr" />
             </node>
-            <node role="defaultResult" type="tpee.BooleanConstant" typeId="tpee.1068580123137" id="374287044672200026">
+            <node role="defaultResult" roleId="hba4.374287044672141869" type="tpee.BooleanConstant" typeId="tpee.1068580123137" id="374287044672200026">
               <property name="value" nameId="tpee.1068580123138" value="false" />
             </node>
-            <node role="matches" type=".com.mbeddr.mpsutil.blutil.structure.DisptachMatch" id="374287044672200027">
-              <link role="concept" targetNodeId="mj1l.8860443239512128103" resolveInfo="NumberLiteral" />
-              <node role="result" type="tpee.BooleanConstant" typeId="tpee.1068580123137" id="374287044672200029">
+            <node role="matches" roleId="hba4.374287044672141868" type="hba4.DisptachMatch" typeId="hba4.374287044672141848" id="374287044672200027">
+              <link role="concept" roleId="hba4.374287044672141849" targetNodeId="mj1l.8860443239512128103" resolveInfo="NumberLiteral" />
+              <node role="result" roleId="hba4.374287044672141865" type="tpee.BooleanConstant" typeId="tpee.1068580123137" id="374287044672200029">
                 <property name="value" nameId="tpee.1068580123138" value="true" />
               </node>
             </node>
-            <node role="matches" type=".com.mbeddr.mpsutil.blutil.structure.DisptachMatch" id="374287044672200030">
-              <link role="concept" targetNodeId="mj1l.8860443239512128063" resolveInfo="BinaryComparisonExpression" />
-              <node role="result" type="tpee.AndExpression" typeId="tpee.1080120340718" id="374287044672359646">
-                <node role="rightExpression" roleId="tpee.1081773367579" type=".com.mbeddr.mpsutil.blutil.structure.CallRecursivelyExpression" id="374287044672359649">
-                  <node role="expr" type="tpee.DotExpression" typeId="tpee.1197027756228" id="374287044672359652">
-                    <node role="operand" roleId="tpee.1197027771414" type=".com.mbeddr.mpsutil.blutil.structure.CastedCandidateExpr" id="374287044672359651" />
+            <node role="matches" roleId="hba4.374287044672141868" type="hba4.DisptachMatch" typeId="hba4.374287044672141848" id="374287044672200030">
+              <link role="concept" roleId="hba4.374287044672141849" targetNodeId="mj1l.8860443239512128063" resolveInfo="BinaryComparisonExpression" />
+              <node role="result" roleId="hba4.374287044672141865" type="tpee.AndExpression" typeId="tpee.1080120340718" id="374287044672359646">
+                <node role="rightExpression" roleId="tpee.1081773367579" type="hba4.CallRecursivelyExpression" typeId="hba4.374287044672161344" id="374287044672359649">
+                  <node role="expr" roleId="hba4.374287044672161345" type="tpee.DotExpression" typeId="tpee.1197027756228" id="374287044672359652">
+                    <node role="operand" roleId="tpee.1197027771414" type="hba4.CastedCandidateExpr" typeId="hba4.374287044672146034" id="374287044672359651" />
                     <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="374287044672359656">
                       <link role="link" roleId="tp25.1138056516764" targetNodeId="mj1l.8860443239512128065" />
                     </node>
                   </node>
                 </node>
-                <node role="leftExpression" roleId="tpee.1081773367580" type=".com.mbeddr.mpsutil.blutil.structure.CallRecursivelyExpression" id="374287044672359638">
-                  <node role="expr" type="tpee.DotExpression" typeId="tpee.1197027756228" id="374287044672359641">
-                    <node role="operand" roleId="tpee.1197027771414" type=".com.mbeddr.mpsutil.blutil.structure.CastedCandidateExpr" id="374287044672359640" />
+                <node role="leftExpression" roleId="tpee.1081773367580" type="hba4.CallRecursivelyExpression" typeId="hba4.374287044672161344" id="374287044672359638">
+                  <node role="expr" roleId="hba4.374287044672161345" type="tpee.DotExpression" typeId="tpee.1197027756228" id="374287044672359641">
+                    <node role="operand" roleId="tpee.1197027771414" type="hba4.CastedCandidateExpr" typeId="hba4.374287044672146034" id="374287044672359640" />
                     <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="374287044672359645">
                       <link role="link" roleId="tp25.1138056516764" targetNodeId="mj1l.8860443239512128064" />
                     </node>
@@ -1084,47 +1084,47 @@
                 </node>
               </node>
             </node>
-            <node role="matches" type=".com.mbeddr.mpsutil.blutil.structure.DisptachMatch" id="374287044672200033">
-              <link role="concept" targetNodeId="mj1l.5763383285156373013" resolveInfo="PlusExpression" />
-              <node role="result" type="tpee.BooleanConstant" typeId="tpee.1068580123137" id="374287044672200035">
+            <node role="matches" roleId="hba4.374287044672141868" type="hba4.DisptachMatch" typeId="hba4.374287044672141848" id="374287044672200033">
+              <link role="concept" roleId="hba4.374287044672141849" targetNodeId="mj1l.5763383285156373013" resolveInfo="PlusExpression" />
+              <node role="result" roleId="hba4.374287044672141865" type="tpee.BooleanConstant" typeId="tpee.1068580123137" id="374287044672200035">
                 <property name="value" nameId="tpee.1068580123138" value="true" />
               </node>
             </node>
-            <node role="matches" type=".com.mbeddr.mpsutil.blutil.structure.DisptachMatch" id="374287044672362599">
-              <link role="concept" targetNodeId="c4fa.2093108837558113914" resolveInfo="LocalVarRef" />
-              <node role="result" type="tpee.BooleanConstant" typeId="tpee.1068580123137" id="374287044672362601">
+            <node role="matches" roleId="hba4.374287044672141868" type="hba4.DisptachMatch" typeId="hba4.374287044672141848" id="374287044672362599">
+              <link role="concept" roleId="hba4.374287044672141849" targetNodeId="c4fa.2093108837558113914" resolveInfo="LocalVarRef" />
+              <node role="result" roleId="hba4.374287044672141865" type="tpee.BooleanConstant" typeId="tpee.1068580123137" id="374287044672362601">
                 <property name="value" nameId="tpee.1068580123138" value="true" />
               </node>
             </node>
-            <node role="matches" type=".com.mbeddr.mpsutil.blutil.structure.DisptachMatch" id="374287044672362602">
-              <link role="concept" targetNodeId="x27k.2093108837558505658" resolveInfo="ArgumentRef" />
-              <node role="result" type="tpee.BooleanConstant" typeId="tpee.1068580123137" id="374287044672362604">
+            <node role="matches" roleId="hba4.374287044672141868" type="hba4.DisptachMatch" typeId="hba4.374287044672141848" id="374287044672362602">
+              <link role="concept" roleId="hba4.374287044672141849" targetNodeId="x27k.2093108837558505658" resolveInfo="ArgumentRef" />
+              <node role="result" roleId="hba4.374287044672141865" type="tpee.BooleanConstant" typeId="tpee.1068580123137" id="374287044672362604">
                 <property name="value" nameId="tpee.1068580123138" value="true" />
               </node>
             </node>
-            <node role="matches" type=".com.mbeddr.mpsutil.blutil.structure.DisptachMatch" id="2241124099364340921">
-              <link role="concept" targetNodeId="mj1l.3830958861296781575" resolveInfo="NotExpression" />
-              <node role="result" type=".com.mbeddr.mpsutil.blutil.structure.CallRecursivelyExpression" id="2241124099364414389">
-                <node role="expr" type="tpee.DotExpression" typeId="tpee.1197027756228" id="2241124099364414392">
-                  <node role="operand" roleId="tpee.1197027771414" type=".com.mbeddr.mpsutil.blutil.structure.CastedCandidateExpr" id="2241124099364414391" />
+            <node role="matches" roleId="hba4.374287044672141868" type="hba4.DisptachMatch" typeId="hba4.374287044672141848" id="2241124099364340921">
+              <link role="concept" roleId="hba4.374287044672141849" targetNodeId="mj1l.3830958861296781575" resolveInfo="NotExpression" />
+              <node role="result" roleId="hba4.374287044672141865" type="hba4.CallRecursivelyExpression" typeId="hba4.374287044672161344" id="2241124099364414389">
+                <node role="expr" roleId="hba4.374287044672161345" type="tpee.DotExpression" typeId="tpee.1197027756228" id="2241124099364414392">
+                  <node role="operand" roleId="tpee.1197027771414" type="hba4.CastedCandidateExpr" typeId="hba4.374287044672146034" id="2241124099364414391" />
                   <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="2241124099364446052">
                     <link role="link" roleId="tp25.1138056516764" targetNodeId="mj1l.7254843406768839760" />
                   </node>
                 </node>
               </node>
             </node>
-            <node role="matches" type=".com.mbeddr.mpsutil.blutil.structure.DisptachMatch" id="374287044672362605">
-              <link role="concept" targetNodeId="x27k.6610873504380357354" resolveInfo="GlobalVarRef" />
-              <node role="result" type="tpee.BooleanConstant" typeId="tpee.1068580123137" id="374287044672362607">
+            <node role="matches" roleId="hba4.374287044672141868" type="hba4.DisptachMatch" typeId="hba4.374287044672141848" id="374287044672362605">
+              <link role="concept" roleId="hba4.374287044672141849" targetNodeId="x27k.6610873504380357354" resolveInfo="GlobalVarRef" />
+              <node role="result" roleId="hba4.374287044672141865" type="tpee.BooleanConstant" typeId="tpee.1068580123137" id="374287044672362607">
                 <property name="value" nameId="tpee.1068580123138" value="true" />
               </node>
             </node>
-            <node role="matches" type=".com.mbeddr.mpsutil.blutil.structure.DisptachMatch" id="374287044672200036">
-              <link role="concept" targetNodeId="mj1l.5763383285156373020" resolveInfo="MultiExpression" />
-              <node role="result" type="tpee.OrExpression" typeId="tpee.1080223426719" id="374287044672225527">
+            <node role="matches" roleId="hba4.374287044672141868" type="hba4.DisptachMatch" typeId="hba4.374287044672141848" id="374287044672200036">
+              <link role="concept" roleId="hba4.374287044672141849" targetNodeId="mj1l.5763383285156373020" resolveInfo="MultiExpression" />
+              <node role="result" roleId="hba4.374287044672141865" type="tpee.OrExpression" typeId="tpee.1080223426719" id="374287044672225527">
                 <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.DotExpression" typeId="tpee.1197027756228" id="374287044672225536">
                   <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="374287044672225531">
-                    <node role="operand" roleId="tpee.1197027771414" type=".com.mbeddr.mpsutil.blutil.structure.CastedCandidateExpr" id="374287044672225530" />
+                    <node role="operand" roleId="tpee.1197027771414" type="hba4.CastedCandidateExpr" typeId="hba4.374287044672146034" id="374287044672225530" />
                     <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="374287044672225535">
                       <link role="link" roleId="tp25.1138056516764" targetNodeId="mj1l.8860443239512128065" />
                     </node>
@@ -1135,7 +1135,7 @@
                 </node>
                 <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.DotExpression" typeId="tpee.1197027756228" id="374287044672225522">
                   <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="374287044672225511">
-                    <node role="operand" roleId="tpee.1197027771414" type=".com.mbeddr.mpsutil.blutil.structure.CastedCandidateExpr" id="374287044672225510" />
+                    <node role="operand" roleId="tpee.1197027771414" type="hba4.CastedCandidateExpr" typeId="hba4.374287044672146034" id="374287044672225510" />
                     <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="374287044672225515">
                       <link role="link" roleId="tp25.1138056516764" targetNodeId="mj1l.8860443239512128064" />
                     </node>
@@ -1146,12 +1146,12 @@
                 </node>
               </node>
             </node>
-            <node role="matches" type=".com.mbeddr.mpsutil.blutil.structure.DisptachMatch" id="374287044672225541">
-              <link role="concept" targetNodeId="mj1l.5763383285156373022" resolveInfo="DivExpression" />
-              <node role="result" type="tpee.OrExpression" typeId="tpee.1080223426719" id="374287044672225542">
+            <node role="matches" roleId="hba4.374287044672141868" type="hba4.DisptachMatch" typeId="hba4.374287044672141848" id="374287044672225541">
+              <link role="concept" roleId="hba4.374287044672141849" targetNodeId="mj1l.5763383285156373022" resolveInfo="DivExpression" />
+              <node role="result" roleId="hba4.374287044672141865" type="tpee.OrExpression" typeId="tpee.1080223426719" id="374287044672225542">
                 <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.DotExpression" typeId="tpee.1197027756228" id="374287044672225543">
                   <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="374287044672225544">
-                    <node role="operand" roleId="tpee.1197027771414" type=".com.mbeddr.mpsutil.blutil.structure.CastedCandidateExpr" id="374287044672225545" />
+                    <node role="operand" roleId="tpee.1197027771414" type="hba4.CastedCandidateExpr" typeId="hba4.374287044672146034" id="374287044672225545" />
                     <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="374287044672225546">
                       <link role="link" roleId="tp25.1138056516764" targetNodeId="mj1l.8860443239512128065" />
                     </node>
@@ -1162,7 +1162,7 @@
                 </node>
                 <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.DotExpression" typeId="tpee.1197027756228" id="374287044672225548">
                   <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="374287044672225549">
-                    <node role="operand" roleId="tpee.1197027771414" type=".com.mbeddr.mpsutil.blutil.structure.CastedCandidateExpr" id="374287044672225550" />
+                    <node role="operand" roleId="tpee.1197027771414" type="hba4.CastedCandidateExpr" typeId="hba4.374287044672146034" id="374287044672225550" />
                     <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="374287044672225551">
                       <link role="link" roleId="tp25.1138056516764" targetNodeId="mj1l.8860443239512128064" />
                     </node>
