@@ -31,6 +31,15 @@
       <link role="template" roleId="tpf8.1167514355421" targetNodeId="2232906979338141607" resolveInfo="map_ConceptDeclaration" />
       <link role="applicableConcept" roleId="tpf8.1167169349424" targetNodeId="whj4.6943634275203301921" resolveInfo="Diagram" />
     </node>
+    <node role="condition" roleId="tpf8.7830515785164764091" type="tpf8.MappingConfiguration_Condition" typeId="tpf8.7830515785164762753" id="7835318095693772550">
+      <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="7835318095693772551">
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="7835318095693772552">
+          <node role="expression" roleId="tpee.1068580123156" type="tpee.BooleanConstant" typeId="tpee.1068580123137" id="7835318095693772553">
+            <property name="value" nameId="tpee.1068580123138" value="false" />
+          </node>
+        </node>
+      </node>
+    </node>
   </root>
   <root id="2232906979338141607">
     <node role="nodes" roleId="fu4.5104882350373547322" type="fu4.Node" typeId="fu4.5104882350373546414" id="2232906979338141610">

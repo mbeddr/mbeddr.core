@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dev-kit name="com.mbeddr.cc.variability" uuid="b31efd26-898e-4b0e-b5dc-2d7ced06e7f7">
-  <exported-language name="e401b447-8019-4ccd-a72c-bfb0230f5782(com.mbeddr.cc.var.fm)" />
   <exported-language name="3e8a5813-64ae-4b14-9e62-3ced1ced6f42(com.mbeddr.cc.var.buildconfig)" />
+  <exported-language name="e401b447-8019-4ccd-a72c-bfb0230f5782(com.mbeddr.cc.var.fm)" />
   <exported-language name="017fba0e-af15-4a23-b0a8-02b5c1141e75(com.mbeddr.cc.var.annotations)" />
 </dev-kit>
 

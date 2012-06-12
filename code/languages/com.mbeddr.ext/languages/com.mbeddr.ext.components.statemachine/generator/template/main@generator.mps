@@ -16,6 +16,12 @@
   <import index="clqz" modelUID="r:5ebcdb77-81e9-4964-beae-35bd9a2f28b5(com.mbeddr.ext.statemachines.structure)" version="7" implicit="yes" />
   <import index="tpd4" modelUID="r:00000000-0000-4000-0000-011c895902b4(jetbrains.mps.lang.typesystem.structure)" version="3" implicit="yes" />
   <import index="tp2q" modelUID="r:00000000-0000-4000-0000-011c8959032e(jetbrains.mps.baseLanguage.collections.structure)" version="7" implicit="yes" />
+  <import index="yq40" modelUID="r:152b3fc0-83a1-4bab-a8cd-565eb8483785(com.mbeddr.core.pointers.structure)" version="1" implicit="yes" />
+  <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="0" implicit="yes" />
+  <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="4" implicit="yes" />
+  <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="14" implicit="yes" />
+  <import index="7aka" modelUID="r:02a5dde5-8560-4c26-8875-8f2a79444bd3(com.mbeddr.mpsutil.bldoc.structure)" version="-1" implicit="yes" />
+  <import index="clbe" modelUID="r:61d840b4-12c1-49ea-b142-b2a1550a9b15(com.mbeddr.core.udt.structure)" version="5" implicit="yes" />
   <roots>
     <node type="tpf8.MappingConfiguration" typeId="tpf8.1095416546421" id="8663730687027723091">
       <property name="name" nameId="tpck.1169194664001" value="main" />
@@ -24,64 +30,64 @@
       <property name="name" nameId="tpck.1169194664001" value="reduce_Statemachine" />
       <link role="applicableConcept" roleId="tpf8.1168285871518" targetNodeId="8yj6.8663730687027689188" resolveInfo="StatemachineComponentAdapter" />
     </node>
-    <node type=".com.mbeddr.core.expressions.structure.TypeSizeConfiguration" id="5569318043967164875" />
+    <node type="mj1l.TypeSizeConfiguration" typeId="mj1l.3335993110369795380" id="5569318043967164875" />
   </roots>
   <root id="8663730687027723091">
     <node role="reductionMappingRule" roleId="tpf8.1167328349397" type="tpf8.Reduction_MappingRule" typeId="tpf8.1167327847730" id="1786180596061183271">
       <link role="applicableConcept" roleId="tpf8.1167169349424" targetNodeId="clqz.7851711690674279259" resolveInfo="TriggerSMStatement" />
       <node role="ruleConsequence" roleId="tpf8.1169672767469" type="tpf8.InlineTemplateWithContext_RuleConsequence" typeId="tpf8.8900764248744213868" id="2558982571829026905">
-        <node role="contentNode" roleId="tpf8.8900764248744213871" type=".com.mbeddr.core.modules.structure.ImplementationModule" id="2558982571829026907">
-          <property name="name" value="dummy" />
-          <node role="contents" type=".com.mbeddr.core.udt.structure.EnumDeclaration" id="2558982571829027120">
-            <property name="name" value="eventEnum" />
-            <node role="literals" type=".com.mbeddr.core.udt.structure.EnumLiteral" id="2558982571829027121">
-              <property name="name" value="e1" />
+        <node role="contentNode" roleId="tpf8.8900764248744213871" type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="2558982571829026907">
+          <property name="name" nameId="tpck.1169194664001" value="dummy" />
+          <node role="contents" roleId="x27k.6437088627575722833" type="clbe.EnumDeclaration" typeId="clbe.8811614583515725851" id="2558982571829027120">
+            <property name="name" nameId="tpck.1169194664001" value="eventEnum" />
+            <node role="literals" roleId="clbe.8811614583515725857" type="clbe.EnumLiteral" typeId="clbe.8811614583515725853" id="2558982571829027121">
+              <property name="name" nameId="tpck.1169194664001" value="e1" />
             </node>
-            <node role="literals" type=".com.mbeddr.core.udt.structure.EnumLiteral" id="2558982571829027122">
-              <property name="name" value="e2" />
+            <node role="literals" roleId="clbe.8811614583515725857" type="clbe.EnumLiteral" typeId="clbe.8811614583515725853" id="2558982571829027122">
+              <property name="name" nameId="tpck.1169194664001" value="e2" />
             </node>
           </node>
-          <node role="contents" type=".com.mbeddr.core.udt.structure.StructDeclaration" id="2558982571829026918">
-            <property name="name" value="instanceData" />
+          <node role="contents" roleId="x27k.6437088627575722833" type="clbe.StructDeclaration" typeId="clbe.6394819151180597807" id="2558982571829026918">
+            <property name="name" nameId="tpck.1169194664001" value="instanceData" />
           </node>
-          <node role="contents" type=".com.mbeddr.core.modules.structure.Function" id="2558982571829026913">
-            <property name="name" value="smExecutionFunction" />
-            <node role="body" type=".com.mbeddr.core.statements.structure.StatementList" id="2558982571829026914">
-              <node role="statements" type=".com.mbeddr.core.statements.structure.Statement" id="2558982571829026915" />
+          <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="2558982571829026913">
+            <property name="name" nameId="tpck.1169194664001" value="smExecutionFunction" />
+            <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="2558982571829026914">
+              <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="2558982571829026915" />
             </node>
-            <node role="type" type=".com.mbeddr.core.expressions.structure.VoidType" id="5708867820622277868" />
-            <node role="arguments" type=".com.mbeddr.core.modules.structure.Argument" id="2558982571829026919">
-              <property name="name" value="instance" />
-              <node role="type" type=".com.mbeddr.core.pointers.structure.PointerType" id="5708867820621171245">
-                <node role="baseType" type=".com.mbeddr.core.udt.structure.StructType" id="5708867820621171246">
-                  <link role="struct" targetNodeId="2558982571829026918" resolveInfo="instanceData" />
+            <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="5708867820622277868" />
+            <node role="arguments" roleId="x27k.5708867820623310661" type="x27k.Argument" typeId="x27k.7892328519581704407" id="2558982571829026919">
+              <property name="name" nameId="tpck.1169194664001" value="instance" />
+              <node role="type" roleId="mj1l.318113533128716676" type="yq40.PointerType" typeId="yq40.279446265608459824" id="5708867820621171245">
+                <node role="baseType" roleId="yq40.279446265608459825" type="clbe.StructType" typeId="clbe.6394819151180597816" id="5708867820621171246">
+                  <link role="struct" roleId="clbe.6394819151180597817" targetNodeId="2558982571829026918" resolveInfo="instanceData" />
                 </node>
               </node>
             </node>
-            <node role="arguments" type=".com.mbeddr.core.modules.structure.Argument" id="2558982571829026921">
-              <property name="name" value="event" />
-              <node role="type" type=".com.mbeddr.core.udt.structure.EnumType" id="5708867820621171441">
-                <link role="enum" targetNodeId="2558982571829027120" resolveInfo="eventEnum" />
+            <node role="arguments" roleId="x27k.5708867820623310661" type="x27k.Argument" typeId="x27k.7892328519581704407" id="2558982571829026921">
+              <property name="name" nameId="tpck.1169194664001" value="event" />
+              <node role="type" roleId="mj1l.318113533128716676" type="clbe.EnumType" typeId="clbe.8811614583515725893" id="5708867820621171441">
+                <link role="enum" roleId="clbe.8811614583515725894" targetNodeId="2558982571829027120" resolveInfo="eventEnum" />
               </node>
             </node>
-            <node role="arguments" type=".com.mbeddr.core.modules.structure.Argument" id="2558982571829027125">
-              <property name="name" value="data" />
-              <node role="type" type=".com.mbeddr.core.pointers.structure.PointerType" id="5708867820621171225">
-                <node role="baseType" type=".com.mbeddr.core.expressions.structure.VoidType" id="5708867820621171226" />
+            <node role="arguments" roleId="x27k.5708867820623310661" type="x27k.Argument" typeId="x27k.7892328519581704407" id="2558982571829027125">
+              <property name="name" nameId="tpck.1169194664001" value="data" />
+              <node role="type" roleId="mj1l.318113533128716676" type="yq40.PointerType" typeId="yq40.279446265608459824" id="5708867820621171225">
+                <node role="baseType" roleId="yq40.279446265608459825" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="5708867820621171226" />
               </node>
             </node>
           </node>
-          <node role="contents" type="v7ag.AtomicComponent" typeId="v7ag.4491876417845649011" id="1598382569875755786">
-            <property name="name" value="DUmmy" />
+          <node role="contents" roleId="x27k.6437088627575722833" type="v7ag.AtomicComponent" typeId="v7ag.4491876417845649011" id="1598382569875755786">
+            <property name="name" nameId="tpck.1169194664001" value="DUmmy" />
             <node role="contents" roleId="v7ag.4491876417845641672" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="1598382569875755790">
-              <property name="name" value="statemachineFunction" />
-              <node role="body" roleId="v7ag.4491876417845689763" type=".com.mbeddr.core.statements.structure.StatementList" id="1598382569875755791">
-                <node role="statements" type=".com.mbeddr.core.statements.structure.StatementList" id="1598382569875755794">
-                  <node role="statements" type=".com.mbeddr.core.statements.structure.LocalVariableDeclaration" id="1598382569875755795">
-                    <property name="name" value="x" />
-                    <node role="init" type=".com.mbeddr.core.expressions.structure.NumberLiteral" id="1598382569875755797">
-                      <property name="value" value="10" />
-                      <node role="smodelAttribute" type="tpf8.CopySrcNodeMacro" typeId="tpf8.1114706874351" id="1598382569875755798">
+              <property name="name" nameId="tpck.1169194664001" value="statemachineFunction" />
+              <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="1598382569875755791">
+                <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="1598382569875755794">
+                  <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="1598382569875755795">
+                    <property name="name" nameId="tpck.1169194664001" value="x" />
+                    <node role="init" roleId="c4fa.4185783222026502647" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="1598382569875755797">
+                      <property name="value" nameId="mj1l.8860443239512128104" value="10" />
+                      <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.CopySrcNodeMacro" typeId="tpf8.1114706874351" id="1598382569875755798">
                         <node role="sourceNodeQuery" roleId="tpf8.1168024447342" type="tpf8.SourceSubstituteMacro_SourceNodeQuery" typeId="tpf8.1168024337012" id="1598382569875755799">
                           <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="1598382569875755800">
                             <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="1598382569875755801">
@@ -91,7 +97,7 @@
                         </node>
                       </node>
                     </node>
-                    <node role="smodelAttribute" type="tpf8.LoopMacro" typeId="tpf8.1118786554307" id="1598382569875755803">
+                    <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.LoopMacro" typeId="tpf8.1118786554307" id="1598382569875755803">
                       <node role="sourceNodesQuery" roleId="tpf8.1167952069335" type="tpf8.SourceSubstituteMacro_SourceNodesQuery" typeId="tpf8.1167951910403" id="1598382569875755804">
                         <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="1598382569875755805">
                           <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="1598382569875755806">
@@ -105,7 +111,7 @@
                         </node>
                       </node>
                     </node>
-                    <node role="smodelAttribute" type="tpf8.PropertyMacro" typeId="tpf8.1087833241328" id="1598382569875755810">
+                    <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.PropertyMacro" typeId="tpf8.1087833241328" id="1598382569875755810">
                       <property name="propertyName" nameId="tpck.1757699476691236117" value="name" />
                       <node role="propertyValueFunction" roleId="tpf8.1167756362303" type="tpf8.PropertyMacro_GetPropertyValue" typeId="tpf8.1167756080639" id="1598382569875755811">
                         <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="1598382569875755812">
@@ -152,8 +158,8 @@
                         </node>
                       </node>
                     </node>
-                    <node role="type" type=".com.mbeddr.core.expressions.structure.Int8tType" id="5083029923012081056">
-                      <node role="smodelAttribute" type="tpf8.CopySrcNodeMacro" typeId="tpf8.1114706874351" id="5083029923012081057">
+                    <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="5083029923012081056">
+                      <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.CopySrcNodeMacro" typeId="tpf8.1114706874351" id="5083029923012081057">
                         <node role="sourceNodeQuery" roleId="tpf8.1168024447342" type="tpf8.SourceSubstituteMacro_SourceNodeQuery" typeId="tpf8.1168024337012" id="5083029923012081058">
                           <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="5083029923012081059">
                             <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="5083029923012081060">
@@ -167,9 +173,9 @@
                       </node>
                     </node>
                   </node>
-                  <node role="statements" type=".com.mbeddr.core.statements.structure.LocalVariableDeclaration" id="1598382569875755832">
-                    <property name="name" value="___args" />
-                    <node role="smodelAttribute" type="tpf8.IfMacro" typeId="tpf8.1118773211870" id="2930946946121452135">
+                  <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="1598382569875755832">
+                    <property name="name" nameId="tpck.1169194664001" value="___args" />
+                    <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.IfMacro" typeId="tpf8.1118773211870" id="2930946946121452135">
                       <node role="conditionFunction" roleId="tpf8.1167945861827" type="tpf8.IfMacro_Condition" typeId="tpf8.1167945743726" id="2930946946121452136">
                         <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="2930946946121452137">
                           <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="2930946946121452142">
@@ -186,9 +192,9 @@
                         </node>
                       </node>
                     </node>
-                    <node role="init" type=".com.mbeddr.core.statements.structure.ArrayInitExpression" id="1598382569875755836">
-                      <node role="exprs" type=".com.mbeddr.core.pointers.structure.ReferenceExpr" id="1598382569875755837">
-                        <node role="smodelAttribute" type="tpf8.LoopMacro" typeId="tpf8.1118786554307" id="1598382569875755838">
+                    <node role="init" roleId="c4fa.4185783222026502647" type="c4fa.ArrayInitExpression" typeId="c4fa.5095889050031622570" id="1598382569875755836">
+                      <node role="exprs" roleId="c4fa.5095889050031622571" type="yq40.ReferenceExpr" typeId="yq40.1595838349830846141" id="1598382569875755837">
+                        <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.LoopMacro" typeId="tpf8.1118786554307" id="1598382569875755838">
                           <node role="sourceNodesQuery" roleId="tpf8.1167952069335" type="tpf8.SourceSubstituteMacro_SourceNodesQuery" typeId="tpf8.1167951910403" id="1598382569875755839">
                             <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="1598382569875755840">
                               <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="1598382569875755841">
@@ -202,24 +208,24 @@
                             </node>
                           </node>
                         </node>
-                        <node role="expression" type=".com.mbeddr.core.statements.structure.LocalVarRef" id="1598382569875755845">
-                          <link role="var" targetNodeId="1598382569875755795" resolveInfo="x" />
+                        <node role="expression" roleId="mj1l.7254843406768839760" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="1598382569875755845">
+                          <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="1598382569875755795" resolveInfo="x" />
                         </node>
                       </node>
                     </node>
-                    <node role="type" type=".com.mbeddr.core.pointers.structure.ArrayType" id="5083029923012080820">
-                      <node role="baseType" type=".com.mbeddr.core.pointers.structure.PointerType" id="5083029923012080821">
-                        <node role="baseType" type=".com.mbeddr.core.expressions.structure.VoidType" id="5083029923012080822" />
+                    <node role="type" roleId="mj1l.318113533128716676" type="yq40.ArrayType" typeId="yq40.5679441017214012545" id="5083029923012080820">
+                      <node role="baseType" roleId="yq40.5679441017214012546" type="yq40.PointerType" typeId="yq40.279446265608459824" id="5083029923012080821">
+                        <node role="baseType" roleId="yq40.279446265608459825" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="5083029923012080822" />
                       </node>
                     </node>
                   </node>
-                  <node role="statements" type=".com.mbeddr.core.statements.structure.ExpressionStatement" id="1598382569875755895">
-                    <node role="expr" type="v7ag.InternalRunnableCall" typeId="v7ag.1302968767135003933" id="1598382569875755896">
+                  <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="1598382569875755895">
+                    <node role="expr" roleId="c4fa.7254843406768833939" type="v7ag.InternalRunnableCall" typeId="v7ag.1302968767135003933" id="1598382569875755896">
                       <link role="runnable" roleId="v7ag.1302968767135003934" targetNodeId="1598382569875755790" resolveInfo="statemachineFunction" />
-                      <node role="actuals" roleId="v7ag.5950410542643524495" type=".com.mbeddr.core.pointers.structure.ReferenceExpr" id="1598382569875755939">
-                        <node role="expression" type=".com.mbeddr.core.modules.structure.GlobalVarRef" id="1598382569875755940">
-                          <link role="var" targetNodeId="2558982571829030246" resolveInfo="theStatemachine" />
-                          <node role="smodelAttribute" type="tpf8.CopySrcNodeMacro" typeId="tpf8.1114706874351" id="1598382569875755941">
+                      <node role="actuals" roleId="v7ag.5950410542643524495" type="yq40.ReferenceExpr" typeId="yq40.1595838349830846141" id="1598382569875755939">
+                        <node role="expression" roleId="mj1l.7254843406768839760" type="x27k.GlobalVarRef" typeId="x27k.6610873504380357354" id="1598382569875755940">
+                          <link role="var" roleId="x27k.6610873504380357355" targetNodeId="2558982571829030246" resolveInfo="theStatemachine" />
+                          <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.CopySrcNodeMacro" typeId="tpf8.1114706874351" id="1598382569875755941">
                             <node role="sourceNodeQuery" roleId="tpf8.1168024447342" type="tpf8.SourceSubstituteMacro_SourceNodeQuery" typeId="tpf8.1168024337012" id="1598382569875755942">
                               <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="1598382569875755943">
                                 <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="1598382569875755944">
@@ -235,9 +241,9 @@
                           </node>
                         </node>
                       </node>
-                      <node role="actuals" roleId="v7ag.5950410542643524495" type=".com.mbeddr.core.udt.structure.EnumLiteralRef" id="1598382569875755991">
-                        <link role="literal" targetNodeId="2558982571829027121" resolveInfo="e1" />
-                        <node role="smodelAttribute" type="tpf8.ReferenceMacro" typeId="tpf8.1088761943574" id="1598382569875755992">
+                      <node role="actuals" roleId="v7ag.5950410542643524495" type="clbe.EnumLiteralRef" typeId="clbe.8811614583515726007" id="1598382569875755991">
+                        <link role="literal" roleId="clbe.8811614583515726008" targetNodeId="2558982571829027121" resolveInfo="e1" />
+                        <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.ReferenceMacro" typeId="tpf8.1088761943574" id="1598382569875755992">
                           <property name="linkRole" nameId="tpck.1757699476691236116" value="literal" />
                           <node role="referentFunction" roleId="tpf8.1167770376702" type="tpf8.ReferenceMacro_GetReferent" typeId="tpf8.1167770111131" id="1598382569875755993">
                             <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="1598382569875755994">
@@ -258,9 +264,9 @@
                           </node>
                         </node>
                       </node>
-                      <node role="actuals" roleId="v7ag.5950410542643524495" type=".com.mbeddr.core.statements.structure.LocalVarRef" id="1598382569875756017">
-                        <link role="var" targetNodeId="1598382569875755832" resolveInfo="___args" />
-                        <node role="smodelAttribute" type="tpf8.IfMacro" typeId="tpf8.1118773211870" id="2930946946121452159">
+                      <node role="actuals" roleId="v7ag.5950410542643524495" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="1598382569875756017">
+                        <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="1598382569875755832" resolveInfo="___args" />
+                        <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.IfMacro" typeId="tpf8.1118773211870" id="2930946946121452159">
                           <node role="conditionFunction" roleId="tpf8.1167945861827" type="tpf8.IfMacro_Condition" typeId="tpf8.1167945743726" id="2930946946121452160">
                             <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="2930946946121452161">
                               <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="2930946946121452166">
@@ -277,11 +283,11 @@
                             </node>
                           </node>
                           <node role="alternativeConsequence" roleId="tpf8.1194989344771" type="tpf8.InlineTemplate_RuleConsequence" typeId="tpf8.1177093525992" id="2930946946121452179">
-                            <node role="templateNode" roleId="tpf8.1177093586806" type=".com.mbeddr.core.expressions.structure.CastExpression" id="2930946946121452180">
-                              <node role="expr" type=".com.mbeddr.core.statements.structure.ArrayInitExpression" id="2930946946121452181" />
-                              <node role="targetType" type=".com.mbeddr.core.pointers.structure.ArrayType" id="2930946946121452182">
-                                <node role="baseType" type=".com.mbeddr.core.pointers.structure.PointerType" id="2930946946121452183">
-                                  <node role="baseType" type=".com.mbeddr.core.expressions.structure.VoidType" id="2930946946121452184" />
+                            <node role="templateNode" roleId="tpf8.1177093586806" type="mj1l.CastExpression" typeId="mj1l.6610873504380029780" id="2930946946121452180">
+                              <node role="expr" roleId="mj1l.6610873504380029782" type="c4fa.ArrayInitExpression" typeId="c4fa.5095889050031622570" id="2930946946121452181" />
+                              <node role="targetType" roleId="mj1l.6610873504380029790" type="yq40.ArrayType" typeId="yq40.5679441017214012545" id="2930946946121452182">
+                                <node role="baseType" roleId="yq40.5679441017214012546" type="yq40.PointerType" typeId="yq40.279446265608459824" id="2930946946121452183">
+                                  <node role="baseType" roleId="yq40.279446265608459825" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="2930946946121452184" />
                                 </node>
                               </node>
                             </node>
@@ -321,39 +327,39 @@
                       </node>
                     </node>
                   </node>
-                  <node role="smodelAttribute" type="tpf8.TemplateFragment" typeId="tpf8.1095672379244" id="1598382569875755846" />
+                  <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.TemplateFragment" typeId="tpf8.1095672379244" id="1598382569875755846" />
                 </node>
-                <node role="statements" type=".com.mbeddr.core.statements.structure.Statement" id="1598382569875755792" />
+                <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="1598382569875755792" />
               </node>
-              <node role="type" type=".com.mbeddr.core.expressions.structure.VoidType" id="5708867820622277814" />
-              <node role="arguments" type="v7ag.RunnableArgument" typeId="v7ag.8105003328814724891" id="1598382569875755950">
-                <property name="name" value="d" />
-                <node role="type" type=".com.mbeddr.core.pointers.structure.PointerType" id="5708867820621171294">
-                  <node role="baseType" type=".com.mbeddr.core.udt.structure.StructType" id="5708867820621171295">
-                    <link role="struct" targetNodeId="2558982571829026918" resolveInfo="instanceData" />
+              <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="5708867820622277814" />
+              <node role="arguments" roleId="x27k.5708867820623310661" type="v7ag.RunnableArgument" typeId="v7ag.8105003328814724891" id="1598382569875755950">
+                <property name="name" nameId="tpck.1169194664001" value="d" />
+                <node role="type" roleId="mj1l.318113533128716676" type="yq40.PointerType" typeId="yq40.279446265608459824" id="5708867820621171294">
+                  <node role="baseType" roleId="yq40.279446265608459825" type="clbe.StructType" typeId="clbe.6394819151180597816" id="5708867820621171295">
+                    <link role="struct" roleId="clbe.6394819151180597817" targetNodeId="2558982571829026918" resolveInfo="instanceData" />
                   </node>
                 </node>
               </node>
-              <node role="arguments" type="v7ag.RunnableArgument" typeId="v7ag.8105003328814724891" id="1598382569875755962">
-                <property name="name" value="e" />
-                <node role="type" type=".com.mbeddr.core.udt.structure.EnumType" id="5708867820621171224">
-                  <link role="enum" targetNodeId="2558982571829027120" resolveInfo="eventEnum" />
+              <node role="arguments" roleId="x27k.5708867820623310661" type="v7ag.RunnableArgument" typeId="v7ag.8105003328814724891" id="1598382569875755962">
+                <property name="name" nameId="tpck.1169194664001" value="e" />
+                <node role="type" roleId="mj1l.318113533128716676" type="clbe.EnumType" typeId="clbe.8811614583515725893" id="5708867820621171224">
+                  <link role="enum" roleId="clbe.8811614583515725894" targetNodeId="2558982571829027120" resolveInfo="eventEnum" />
                 </node>
               </node>
-              <node role="arguments" type="v7ag.RunnableArgument" typeId="v7ag.8105003328814724891" id="1598382569875755969">
-                <property name="name" value="args" />
-                <node role="type" type=".com.mbeddr.core.pointers.structure.ArrayType" id="5708867820621171210">
-                  <node role="baseType" type=".com.mbeddr.core.pointers.structure.PointerType" id="5708867820621171211">
-                    <node role="baseType" type=".com.mbeddr.core.expressions.structure.VoidType" id="5708867820621171212" />
+              <node role="arguments" roleId="x27k.5708867820623310661" type="v7ag.RunnableArgument" typeId="v7ag.8105003328814724891" id="1598382569875755969">
+                <property name="name" nameId="tpck.1169194664001" value="args" />
+                <node role="type" roleId="mj1l.318113533128716676" type="yq40.ArrayType" typeId="yq40.5679441017214012545" id="5708867820621171210">
+                  <node role="baseType" roleId="yq40.5679441017214012546" type="yq40.PointerType" typeId="yq40.279446265608459824" id="5708867820621171211">
+                    <node role="baseType" roleId="yq40.279446265608459825" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="5708867820621171212" />
                   </node>
                 </node>
               </node>
             </node>
           </node>
-          <node role="contents" type=".com.mbeddr.core.modules.structure.GlobalVariableDeclaration" id="2558982571829030246">
-            <property name="name" value="theStatemachine" />
-            <node role="type" type=".com.mbeddr.core.udt.structure.StructType" id="3912676515585629814">
-              <link role="struct" targetNodeId="2558982571829026918" resolveInfo="instanceData" />
+          <node role="contents" roleId="x27k.6437088627575722833" type="x27k.GlobalVariableDeclaration" typeId="x27k.6610873504380335822" id="2558982571829030246">
+            <property name="name" nameId="tpck.1169194664001" value="theStatemachine" />
+            <node role="type" roleId="mj1l.318113533128716676" type="clbe.StructType" typeId="clbe.6394819151180597816" id="3912676515585629814">
+              <link role="struct" roleId="clbe.6394819151180597817" targetNodeId="2558982571829026918" resolveInfo="instanceData" />
             </node>
           </node>
         </node>
@@ -395,37 +401,37 @@
     <node role="reductionMappingRule" roleId="tpf8.1167328349397" type="tpf8.Reduction_MappingRule" typeId="tpf8.1167327847730" id="1582169519238040091">
       <link role="applicableConcept" roleId="tpf8.1167169349424" targetNodeId="clqz.1582169519237884298" resolveInfo="TriggerSelfStatement" />
       <node role="ruleConsequence" roleId="tpf8.1169672767469" type="tpf8.InlineTemplateWithContext_RuleConsequence" typeId="tpf8.8900764248744213868" id="1582169519238040093">
-        <node role="contentNode" roleId="tpf8.8900764248744213871" type=".com.mbeddr.core.modules.structure.ImplementationModule" id="1582169519238040095">
-          <property name="name" value="Dumy" />
-          <node role="contents" type=".com.mbeddr.core.udt.structure.EnumDeclaration" id="1582169519238040096">
-            <property name="name" value="statemachineInEvents" />
-            <property name="exported" value="true" />
-            <node role="literals" type=".com.mbeddr.core.udt.structure.EnumLiteral" id="1582169519238040097">
-              <property name="name" value="anEvent" />
+        <node role="contentNode" roleId="tpf8.8900764248744213871" type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="1582169519238040095">
+          <property name="name" nameId="tpck.1169194664001" value="Dumy" />
+          <node role="contents" roleId="x27k.6437088627575722833" type="clbe.EnumDeclaration" typeId="clbe.8811614583515725851" id="1582169519238040096">
+            <property name="name" nameId="tpck.1169194664001" value="statemachineInEvents" />
+            <property name="exported" nameId="x27k.1317894735999272944" value="true" />
+            <node role="literals" roleId="clbe.8811614583515725857" type="clbe.EnumLiteral" typeId="clbe.8811614583515725853" id="1582169519238040097">
+              <property name="name" nameId="tpck.1169194664001" value="anEvent" />
             </node>
           </node>
-          <node role="contents" type=".com.mbeddr.core.udt.structure.EnumDeclaration" id="1582169519238040098">
-            <property name="name" value="statemachineStates" />
-            <property name="exported" value="true" />
-            <node role="literals" type=".com.mbeddr.core.udt.structure.EnumLiteral" id="1582169519238040099">
-              <property name="name" value="aState" />
+          <node role="contents" roleId="x27k.6437088627575722833" type="clbe.EnumDeclaration" typeId="clbe.8811614583515725851" id="1582169519238040098">
+            <property name="name" nameId="tpck.1169194664001" value="statemachineStates" />
+            <property name="exported" nameId="x27k.1317894735999272944" value="true" />
+            <node role="literals" roleId="clbe.8811614583515725857" type="clbe.EnumLiteral" typeId="clbe.8811614583515725853" id="1582169519238040099">
+              <property name="name" nameId="tpck.1169194664001" value="aState" />
             </node>
           </node>
-          <node role="contents" type=".com.mbeddr.core.udt.structure.StructDeclaration" id="1582169519238040100">
-            <property name="name" value="statemachineData" />
-            <property name="exported" value="true" />
+          <node role="contents" roleId="x27k.6437088627575722833" type="clbe.StructDeclaration" typeId="clbe.6394819151180597807" id="1582169519238040100">
+            <property name="name" nameId="tpck.1169194664001" value="statemachineData" />
+            <property name="exported" nameId="x27k.1317894735999272944" value="true" />
           </node>
-          <node role="contents" type="v7ag.AtomicComponent" typeId="v7ag.4491876417845649011" id="1582169519238040101">
-            <property name="name" value="Dummy" />
+          <node role="contents" roleId="x27k.6437088627575722833" type="v7ag.AtomicComponent" typeId="v7ag.4491876417845649011" id="1582169519238040101">
+            <property name="name" nameId="tpck.1169194664001" value="Dummy" />
             <node role="contents" roleId="v7ag.4491876417845641672" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="1582169519238040102">
-              <property name="name" value="statemachineFunction" />
-              <node role="body" roleId="v7ag.4491876417845689763" type=".com.mbeddr.core.statements.structure.StatementList" id="1582169519238040103">
-                <node role="statements" type=".com.mbeddr.core.statements.structure.StatementList" id="1582169519238040183">
-                  <node role="statements" type=".com.mbeddr.core.statements.structure.LocalVariableDeclaration" id="1582169519238040184">
-                    <property name="name" value="x" />
-                    <node role="init" type=".com.mbeddr.core.expressions.structure.NumberLiteral" id="1582169519238040185">
-                      <property name="value" value="10" />
-                      <node role="smodelAttribute" type="tpf8.CopySrcNodeMacro" typeId="tpf8.1114706874351" id="1582169519238040186">
+              <property name="name" nameId="tpck.1169194664001" value="statemachineFunction" />
+              <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="1582169519238040103">
+                <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="1582169519238040183">
+                  <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="1582169519238040184">
+                    <property name="name" nameId="tpck.1169194664001" value="x" />
+                    <node role="init" roleId="c4fa.4185783222026502647" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="1582169519238040185">
+                      <property name="value" nameId="mj1l.8860443239512128104" value="10" />
+                      <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.CopySrcNodeMacro" typeId="tpf8.1114706874351" id="1582169519238040186">
                         <node role="sourceNodeQuery" roleId="tpf8.1168024447342" type="tpf8.SourceSubstituteMacro_SourceNodeQuery" typeId="tpf8.1168024337012" id="1582169519238040187">
                           <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="1582169519238040188">
                             <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="1582169519238040189">
@@ -435,7 +441,7 @@
                         </node>
                       </node>
                     </node>
-                    <node role="smodelAttribute" type="tpf8.LoopMacro" typeId="tpf8.1118786554307" id="1582169519238040191">
+                    <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.LoopMacro" typeId="tpf8.1118786554307" id="1582169519238040191">
                       <node role="sourceNodesQuery" roleId="tpf8.1167952069335" type="tpf8.SourceSubstituteMacro_SourceNodesQuery" typeId="tpf8.1167951910403" id="1582169519238040192">
                         <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="1582169519238040193">
                           <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="1582169519238040194">
@@ -449,7 +455,7 @@
                         </node>
                       </node>
                     </node>
-                    <node role="smodelAttribute" type="tpf8.PropertyMacro" typeId="tpf8.1087833241328" id="1582169519238040198">
+                    <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.PropertyMacro" typeId="tpf8.1087833241328" id="1582169519238040198">
                       <property name="propertyName" nameId="tpck.1757699476691236117" value="name" />
                       <node role="propertyValueFunction" roleId="tpf8.1167756362303" type="tpf8.PropertyMacro_GetPropertyValue" typeId="tpf8.1167756080639" id="1582169519238040199">
                         <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="1582169519238040200">
@@ -496,8 +502,8 @@
                         </node>
                       </node>
                     </node>
-                    <node role="type" type=".com.mbeddr.core.expressions.structure.Int8tType" id="1582169519238040220">
-                      <node role="smodelAttribute" type="tpf8.CopySrcNodeMacro" typeId="tpf8.1114706874351" id="1582169519238040221">
+                    <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="1582169519238040220">
+                      <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.CopySrcNodeMacro" typeId="tpf8.1114706874351" id="1582169519238040221">
                         <node role="sourceNodeQuery" roleId="tpf8.1168024447342" type="tpf8.SourceSubstituteMacro_SourceNodeQuery" typeId="tpf8.1168024337012" id="1582169519238040222">
                           <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="1582169519238040223">
                             <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="1582169519238040224">
@@ -511,11 +517,11 @@
                       </node>
                     </node>
                   </node>
-                  <node role="statements" type=".com.mbeddr.core.statements.structure.LocalVariableDeclaration" id="1582169519238040241">
-                    <property name="name" value="___args" />
-                    <node role="init" type=".com.mbeddr.core.statements.structure.ArrayInitExpression" id="1582169519238040242">
-                      <node role="exprs" type=".com.mbeddr.core.pointers.structure.ReferenceExpr" id="1582169519238040243">
-                        <node role="smodelAttribute" type="tpf8.LoopMacro" typeId="tpf8.1118786554307" id="1582169519238040244">
+                  <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="1582169519238040241">
+                    <property name="name" nameId="tpck.1169194664001" value="___args" />
+                    <node role="init" roleId="c4fa.4185783222026502647" type="c4fa.ArrayInitExpression" typeId="c4fa.5095889050031622570" id="1582169519238040242">
+                      <node role="exprs" roleId="c4fa.5095889050031622571" type="yq40.ReferenceExpr" typeId="yq40.1595838349830846141" id="1582169519238040243">
+                        <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.LoopMacro" typeId="tpf8.1118786554307" id="1582169519238040244">
                           <node role="sourceNodesQuery" roleId="tpf8.1167952069335" type="tpf8.SourceSubstituteMacro_SourceNodesQuery" typeId="tpf8.1167951910403" id="1582169519238040245">
                             <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="1582169519238040246">
                               <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="1582169519238040247">
@@ -529,17 +535,17 @@
                             </node>
                           </node>
                         </node>
-                        <node role="expression" type=".com.mbeddr.core.statements.structure.LocalVarRef" id="1582169519238040251">
-                          <link role="var" targetNodeId="1582169519238040184" resolveInfo="x" />
+                        <node role="expression" roleId="mj1l.7254843406768839760" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="1582169519238040251">
+                          <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="1582169519238040184" resolveInfo="x" />
                         </node>
                       </node>
                     </node>
-                    <node role="type" type=".com.mbeddr.core.pointers.structure.ArrayType" id="1582169519238040252">
-                      <node role="baseType" type=".com.mbeddr.core.pointers.structure.PointerType" id="1582169519238040253">
-                        <node role="baseType" type=".com.mbeddr.core.expressions.structure.VoidType" id="1582169519238040254" />
+                    <node role="type" roleId="mj1l.318113533128716676" type="yq40.ArrayType" typeId="yq40.5679441017214012545" id="1582169519238040252">
+                      <node role="baseType" roleId="yq40.5679441017214012546" type="yq40.PointerType" typeId="yq40.279446265608459824" id="1582169519238040253">
+                        <node role="baseType" roleId="yq40.279446265608459825" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="1582169519238040254" />
                       </node>
                     </node>
-                    <node role="smodelAttribute" type="tpf8.IfMacro" typeId="tpf8.1118773211870" id="2930946946121432227">
+                    <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.IfMacro" typeId="tpf8.1118773211870" id="2930946946121432227">
                       <node role="conditionFunction" roleId="tpf8.1167945861827" type="tpf8.IfMacro_Condition" typeId="tpf8.1167945743726" id="2930946946121432228">
                         <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="2930946946121432229">
                           <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="2930946946121432234">
@@ -557,15 +563,15 @@
                       </node>
                     </node>
                   </node>
-                  <node role="statements" type=".com.mbeddr.core.statements.structure.ExpressionStatement" id="1582169519238040177">
-                    <node role="expr" type="v7ag.InternalRunnableCall" typeId="v7ag.1302968767135003933" id="1582169519238040178">
+                  <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="1582169519238040177">
+                    <node role="expr" roleId="c4fa.7254843406768833939" type="v7ag.InternalRunnableCall" typeId="v7ag.1302968767135003933" id="1582169519238040178">
                       <link role="runnable" roleId="v7ag.1302968767135003934" targetNodeId="1582169519238040102" resolveInfo="statemachineFunction" />
-                      <node role="actuals" roleId="v7ag.5950410542643524495" type=".com.mbeddr.core.modules.structure.ArgumentRef" id="1582169519238040179">
-                        <link role="arg" targetNodeId="1582169519238040125" resolveInfo="instance" />
+                      <node role="actuals" roleId="v7ag.5950410542643524495" type="x27k.ArgumentRef" typeId="x27k.2093108837558505658" id="1582169519238040179">
+                        <link role="arg" roleId="x27k.2093108837558505659" targetNodeId="1582169519238040125" resolveInfo="instance" />
                       </node>
-                      <node role="actuals" roleId="v7ag.5950410542643524495" type=".com.mbeddr.core.udt.structure.EnumLiteralRef" id="1582169519238040181">
-                        <link role="literal" targetNodeId="1582169519238040097" resolveInfo="anEvent" />
-                        <node role="smodelAttribute" type="tpf8.ReferenceMacro" typeId="tpf8.1088761943574" id="1582169519238040325">
+                      <node role="actuals" roleId="v7ag.5950410542643524495" type="clbe.EnumLiteralRef" typeId="clbe.8811614583515726007" id="1582169519238040181">
+                        <link role="literal" roleId="clbe.8811614583515726008" targetNodeId="1582169519238040097" resolveInfo="anEvent" />
+                        <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.ReferenceMacro" typeId="tpf8.1088761943574" id="1582169519238040325">
                           <property name="linkRole" nameId="tpck.1757699476691236116" value="literal" />
                           <node role="referentFunction" roleId="tpf8.1167770376702" type="tpf8.ReferenceMacro_GetReferent" typeId="tpf8.1167770111131" id="1582169519238040326">
                             <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="1582169519238040327">
@@ -586,9 +592,9 @@
                           </node>
                         </node>
                       </node>
-                      <node role="actuals" roleId="v7ag.5950410542643524495" type=".com.mbeddr.core.statements.structure.LocalVarRef" id="1582169519238040275">
-                        <link role="var" targetNodeId="1582169519238040241" resolveInfo="___args" />
-                        <node role="smodelAttribute" type="tpf8.IfMacro" typeId="tpf8.1118773211870" id="2930946946121432251">
+                      <node role="actuals" roleId="v7ag.5950410542643524495" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="1582169519238040275">
+                        <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="1582169519238040241" resolveInfo="___args" />
+                        <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.IfMacro" typeId="tpf8.1118773211870" id="2930946946121432251">
                           <node role="conditionFunction" roleId="tpf8.1167945861827" type="tpf8.IfMacro_Condition" typeId="tpf8.1167945743726" id="2930946946121432252">
                             <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="2930946946121432253">
                               <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="2930946946121432263">
@@ -605,11 +611,11 @@
                             </node>
                           </node>
                           <node role="alternativeConsequence" roleId="tpf8.1194989344771" type="tpf8.InlineTemplate_RuleConsequence" typeId="tpf8.1177093525992" id="2930946946121442582">
-                            <node role="templateNode" roleId="tpf8.1177093586806" type=".com.mbeddr.core.expressions.structure.CastExpression" id="2930946946121442584">
-                              <node role="expr" type=".com.mbeddr.core.statements.structure.ArrayInitExpression" id="2930946946121442591" />
-                              <node role="targetType" type=".com.mbeddr.core.pointers.structure.ArrayType" id="2930946946121442590">
-                                <node role="baseType" type=".com.mbeddr.core.pointers.structure.PointerType" id="2930946946121442589">
-                                  <node role="baseType" type=".com.mbeddr.core.expressions.structure.VoidType" id="2930946946121442588" />
+                            <node role="templateNode" roleId="tpf8.1177093586806" type="mj1l.CastExpression" typeId="mj1l.6610873504380029780" id="2930946946121442584">
+                              <node role="expr" roleId="mj1l.6610873504380029782" type="c4fa.ArrayInitExpression" typeId="c4fa.5095889050031622570" id="2930946946121442591" />
+                              <node role="targetType" roleId="mj1l.6610873504380029790" type="yq40.ArrayType" typeId="yq40.5679441017214012545" id="2930946946121442590">
+                                <node role="baseType" roleId="yq40.5679441017214012546" type="yq40.PointerType" typeId="yq40.279446265608459824" id="2930946946121442589">
+                                  <node role="baseType" roleId="yq40.279446265608459825" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="2930946946121442588" />
                                 </node>
                               </node>
                             </node>
@@ -642,29 +648,29 @@
                       </node>
                     </node>
                   </node>
-                  <node role="smodelAttribute" type="tpf8.TemplateFragment" typeId="tpf8.1095672379244" id="1582169519238040280" />
+                  <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.TemplateFragment" typeId="tpf8.1095672379244" id="1582169519238040280" />
                 </node>
               </node>
-              <node role="type" type=".com.mbeddr.core.expressions.structure.VoidType" id="1582169519238040124" />
-              <node role="arguments" type="v7ag.RunnableArgument" typeId="v7ag.8105003328814724891" id="1582169519238040125">
-                <property name="name" value="instance" />
-                <node role="type" type=".com.mbeddr.core.pointers.structure.PointerType" id="1582169519238040126">
-                  <node role="baseType" type=".com.mbeddr.core.udt.structure.StructType" id="1582169519238040127">
-                    <link role="struct" targetNodeId="1582169519238040100" resolveInfo="statemachineData" />
+              <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="1582169519238040124" />
+              <node role="arguments" roleId="x27k.5708867820623310661" type="v7ag.RunnableArgument" typeId="v7ag.8105003328814724891" id="1582169519238040125">
+                <property name="name" nameId="tpck.1169194664001" value="instance" />
+                <node role="type" roleId="mj1l.318113533128716676" type="yq40.PointerType" typeId="yq40.279446265608459824" id="1582169519238040126">
+                  <node role="baseType" roleId="yq40.279446265608459825" type="clbe.StructType" typeId="clbe.6394819151180597816" id="1582169519238040127">
+                    <link role="struct" roleId="clbe.6394819151180597817" targetNodeId="1582169519238040100" resolveInfo="statemachineData" />
                   </node>
                 </node>
               </node>
-              <node role="arguments" type="v7ag.RunnableArgument" typeId="v7ag.8105003328814724891" id="1582169519238040137">
-                <property name="name" value="event" />
-                <node role="type" type=".com.mbeddr.core.udt.structure.EnumType" id="1582169519238040138">
-                  <link role="enum" targetNodeId="1582169519238040096" resolveInfo="statemachineInEvents" />
+              <node role="arguments" roleId="x27k.5708867820623310661" type="v7ag.RunnableArgument" typeId="v7ag.8105003328814724891" id="1582169519238040137">
+                <property name="name" nameId="tpck.1169194664001" value="event" />
+                <node role="type" roleId="mj1l.318113533128716676" type="clbe.EnumType" typeId="clbe.8811614583515725893" id="1582169519238040138">
+                  <link role="enum" roleId="clbe.8811614583515725894" targetNodeId="1582169519238040096" resolveInfo="statemachineInEvents" />
                 </node>
               </node>
-              <node role="arguments" type="v7ag.RunnableArgument" typeId="v7ag.8105003328814724891" id="1582169519238040148">
-                <property name="name" value="arguments" />
-                <node role="type" type=".com.mbeddr.core.pointers.structure.ArrayType" id="1582169519238040149">
-                  <node role="baseType" type=".com.mbeddr.core.pointers.structure.PointerType" id="1582169519238040150">
-                    <node role="baseType" type=".com.mbeddr.core.expressions.structure.VoidType" id="1582169519238040151" />
+              <node role="arguments" roleId="x27k.5708867820623310661" type="v7ag.RunnableArgument" typeId="v7ag.8105003328814724891" id="1582169519238040148">
+                <property name="name" nameId="tpck.1169194664001" value="arguments" />
+                <node role="type" roleId="mj1l.318113533128716676" type="yq40.ArrayType" typeId="yq40.5679441017214012545" id="1582169519238040149">
+                  <node role="baseType" roleId="yq40.5679441017214012546" type="yq40.PointerType" typeId="yq40.279446265608459824" id="1582169519238040150">
+                    <node role="baseType" roleId="yq40.279446265608459825" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="1582169519238040151" />
                   </node>
                 </node>
               </node>
@@ -710,16 +716,16 @@
       </node>
       <node role="ruleConsequence" roleId="tpf8.1169672767469" type="tpf8.InlineTemplateWithContext_RuleConsequence" typeId="tpf8.8900764248744213868" id="567269909073854615">
         <node role="contentNode" roleId="tpf8.8900764248744213871" type="v7ag.AtomicComponent" typeId="v7ag.4491876417845649011" id="1598382569875777223">
-          <property name="name" value="Dummy" />
+          <property name="name" nameId="tpck.1169194664001" value="Dummy" />
           <node role="contents" roleId="v7ag.4491876417845641672" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="1598382569875777224">
-            <property name="name" value="someRunnable" />
-            <node role="arguments" type="v7ag.RunnableArgument" typeId="v7ag.8105003328814724891" id="5708867820623825166">
-              <property name="name" value="arg" />
-              <node role="type" type=".com.mbeddr.core.expressions.structure.IntType" id="5708867820623825167" />
+            <property name="name" nameId="tpck.1169194664001" value="someRunnable" />
+            <node role="arguments" roleId="x27k.5708867820623310661" type="v7ag.RunnableArgument" typeId="v7ag.8105003328814724891" id="5708867820623825166">
+              <property name="name" nameId="tpck.1169194664001" value="arg" />
+              <node role="type" roleId="mj1l.318113533128716676" type="mj1l.IntType" typeId="mj1l.8860443239512128108" id="5708867820623825167" />
             </node>
-            <node role="body" roleId="v7ag.4491876417845689763" type=".com.mbeddr.core.statements.structure.StatementList" id="1598382569875777225">
-              <node role="statements" type=".com.mbeddr.core.statements.structure.ExpressionStatement" id="1598382569875777228">
-                <node role="expr" type="v7ag.InternalRunnableCall" typeId="v7ag.1302968767135003933" id="1598382569875777229">
+            <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="1598382569875777225">
+              <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="1598382569875777228">
+                <node role="expr" roleId="c4fa.7254843406768833939" type="v7ag.InternalRunnableCall" typeId="v7ag.1302968767135003933" id="1598382569875777229">
                   <link role="runnable" roleId="v7ag.1302968767135003934" targetNodeId="1598382569875777224" resolveInfo="someRunnable" />
                   <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.ReferenceMacro" typeId="tpf8.1088761943574" id="1598382569875777231">
                     <property name="linkRole" nameId="tpck.1757699476691236116" value="runnable" />
@@ -757,9 +763,9 @@
                       </node>
                     </node>
                   </node>
-                  <node role="actuals" roleId="v7ag.5950410542643524495" type=".com.mbeddr.core.expressions.structure.NumberLiteral" id="1598382569875780229">
-                    <property name="value" value="10" />
-                    <node role="smodelAttribute" type="tpf8.CopySrcListMacro" typeId="tpf8.1114729360583" id="1598382569875780231">
+                  <node role="actuals" roleId="v7ag.5950410542643524495" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="1598382569875780229">
+                    <property name="value" nameId="mj1l.8860443239512128104" value="10" />
+                    <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.CopySrcListMacro" typeId="tpf8.1114729360583" id="1598382569875780231">
                       <node role="sourceNodesQuery" roleId="tpf8.1168278589236" type="tpf8.SourceSubstituteMacro_SourceNodesQuery" typeId="tpf8.1167951910403" id="1598382569875780234">
                         <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="1598382569875780235">
                           <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="1598382569875780236">
@@ -775,48 +781,48 @@
                     </node>
                   </node>
                 </node>
-                <node role="smodelAttribute" type="tpf8.TemplateFragment" typeId="tpf8.1095672379244" id="1598382569875777230" />
+                <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.TemplateFragment" typeId="tpf8.1095672379244" id="1598382569875777230" />
               </node>
             </node>
-            <node role="type" type=".com.mbeddr.core.expressions.structure.VoidType" id="5708867820622277818" />
+            <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="5708867820622277818" />
           </node>
         </node>
       </node>
     </node>
   </root>
   <root id="3825316005689014357">
-    <node role="contentNode" roleId="tpf8.1092060348987" type=".com.mbeddr.core.modules.structure.ImplementationModule" id="3825316005689014362">
-      <property name="name" value="Dumy" />
-      <node role="contents" type=".com.mbeddr.core.udt.structure.EnumDeclaration" id="1786180596061285023">
-        <property name="name" value="statemachineInEvents" />
-        <property name="exported" value="true" />
-        <node role="literals" type=".com.mbeddr.core.udt.structure.EnumLiteral" id="8444296659257928637">
-          <property name="name" value="anEvent" />
+    <node role="contentNode" roleId="tpf8.1092060348987" type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="3825316005689014362">
+      <property name="name" nameId="tpck.1169194664001" value="Dumy" />
+      <node role="contents" roleId="x27k.6437088627575722833" type="clbe.EnumDeclaration" typeId="clbe.8811614583515725851" id="1786180596061285023">
+        <property name="name" nameId="tpck.1169194664001" value="statemachineInEvents" />
+        <property name="exported" nameId="x27k.1317894735999272944" value="true" />
+        <node role="literals" roleId="clbe.8811614583515725857" type="clbe.EnumLiteral" typeId="clbe.8811614583515725853" id="8444296659257928637">
+          <property name="name" nameId="tpck.1169194664001" value="anEvent" />
         </node>
       </node>
-      <node role="contents" type=".com.mbeddr.core.udt.structure.EnumDeclaration" id="1786180596061208468">
-        <property name="name" value="statemachineStates" />
-        <property name="exported" value="true" />
-        <node role="literals" type=".com.mbeddr.core.udt.structure.EnumLiteral" id="8444296659257928639">
-          <property name="name" value="aState" />
+      <node role="contents" roleId="x27k.6437088627575722833" type="clbe.EnumDeclaration" typeId="clbe.8811614583515725851" id="1786180596061208468">
+        <property name="name" nameId="tpck.1169194664001" value="statemachineStates" />
+        <property name="exported" nameId="x27k.1317894735999272944" value="true" />
+        <node role="literals" roleId="clbe.8811614583515725857" type="clbe.EnumLiteral" typeId="clbe.8811614583515725853" id="8444296659257928639">
+          <property name="name" nameId="tpck.1169194664001" value="aState" />
         </node>
       </node>
-      <node role="contents" type=".com.mbeddr.core.udt.structure.StructDeclaration" id="1786180596061185503">
-        <property name="name" value="statemachineData" />
-        <property name="exported" value="true" />
+      <node role="contents" roleId="x27k.6437088627575722833" type="clbe.StructDeclaration" typeId="clbe.6394819151180597807" id="1786180596061185503">
+        <property name="name" nameId="tpck.1169194664001" value="statemachineData" />
+        <property name="exported" nameId="x27k.1317894735999272944" value="true" />
       </node>
-      <node role="contents" type="v7ag.AtomicComponent" typeId="v7ag.4491876417845649011" id="1598382569875111027">
-        <property name="name" value="Dummy" />
+      <node role="contents" roleId="x27k.6437088627575722833" type="v7ag.AtomicComponent" typeId="v7ag.4491876417845649011" id="1598382569875111027">
+        <property name="name" nameId="tpck.1169194664001" value="Dummy" />
         <node role="contents" roleId="v7ag.4491876417845641672" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="1598382569875111028">
-          <property name="name" value="statemachineFunction" />
-          <node role="body" roleId="v7ag.4491876417845689763" type=".com.mbeddr.core.statements.structure.StatementList" id="1598382569875111029">
-            <node role="statements" type=".com.mbeddr.core.statements.structure.LocalVariableDeclaration" id="1598382569875714269">
-              <property name="name" value="i" />
-              <node role="smodelAttribute" type="tpf8.TemplateCallMacro" typeId="tpf8.1510949579266781519" id="1598382569875714272">
+          <property name="name" nameId="tpck.1169194664001" value="statemachineFunction" />
+          <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="1598382569875111029">
+            <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="1598382569875714269">
+              <property name="name" nameId="tpck.1169194664001" value="i" />
+              <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.TemplateCallMacro" typeId="tpf8.1510949579266781519" id="1598382569875714272">
                 <link role="template" roleId="tpf8.1722980698497626483" targetNodeId="ol92.8444296659257853875" resolveInfo="generateSwitchCase" />
-                <node role="smodelAttribute" roleId="tpck.5169995583184591170" type=".com.mbeddr.mpsutil.bldoc.structure.KnownBug" id="14270488321611186">
-                  <property name="text" value="Should be fixed by now" />
-                  <property name="isMPSBug" value="true" />
+                <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="7aka.KnownBug" typeId="7aka.14270488321463783" id="14270488321611186">
+                  <property name="text" nameId="7aka.14270488321463784" value="Should be fixed by now" />
+                  <property name="isMPSBug" nameId="7aka.14270488321463787" value="true" />
                 </node>
                 <node role="sourceNodeQuery" roleId="tpf8.1510949579266801461" type="tpf8.SourceSubstituteMacro_SourceNodeQuery" typeId="tpf8.1168024337012" id="1598382569875714457">
                   <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="1598382569875714458">
@@ -831,7 +837,7 @@
                   </node>
                 </node>
               </node>
-              <node role="type" type=".com.mbeddr.core.expressions.structure.Int8tType" id="5083029923012081412" />
+              <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="5083029923012081412" />
             </node>
           </node>
           <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.TemplateFragment" typeId="tpf8.1095672379244" id="1598382569875111033" />
@@ -855,13 +861,13 @@
               </node>
             </node>
           </node>
-          <node role="type" type=".com.mbeddr.core.expressions.structure.VoidType" id="5708867820622277874" />
-          <node role="arguments" type="v7ag.RunnableArgument" typeId="v7ag.8105003328814724891" id="1598382569875111035">
-            <property name="name" value="instance" />
-            <node role="type" type=".com.mbeddr.core.pointers.structure.PointerType" id="5708867820621171353">
-              <node role="baseType" type=".com.mbeddr.core.udt.structure.StructType" id="5708867820621171354">
-                <link role="struct" targetNodeId="1786180596061185503" resolveInfo="statemachineData" />
-                <node role="smodelAttribute" type="tpf8.ReferenceMacro" typeId="tpf8.1088761943574" id="5708867820621171355">
+          <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="5708867820622277874" />
+          <node role="arguments" roleId="x27k.5708867820623310661" type="v7ag.RunnableArgument" typeId="v7ag.8105003328814724891" id="1598382569875111035">
+            <property name="name" nameId="tpck.1169194664001" value="instance" />
+            <node role="type" roleId="mj1l.318113533128716676" type="yq40.PointerType" typeId="yq40.279446265608459824" id="5708867820621171353">
+              <node role="baseType" roleId="yq40.279446265608459825" type="clbe.StructType" typeId="clbe.6394819151180597816" id="5708867820621171354">
+                <link role="struct" roleId="clbe.6394819151180597817" targetNodeId="1786180596061185503" resolveInfo="statemachineData" />
+                <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.ReferenceMacro" typeId="tpf8.1088761943574" id="5708867820621171355">
                   <property name="linkRole" nameId="tpck.1757699476691236116" value="struct" />
                   <node role="referentFunction" roleId="tpf8.1167770376702" type="tpf8.ReferenceMacro_GetReferent" typeId="tpf8.1167770111131" id="5708867820621171356">
                     <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="5708867820621171357">
@@ -884,11 +890,11 @@
               </node>
             </node>
           </node>
-          <node role="arguments" type="v7ag.RunnableArgument" typeId="v7ag.8105003328814724891" id="1598382569875111039">
-            <property name="name" value="event" />
-            <node role="type" type=".com.mbeddr.core.udt.structure.EnumType" id="5708867820621171189">
-              <link role="enum" targetNodeId="1786180596061285023" resolveInfo="statemachineInEvents" />
-              <node role="smodelAttribute" type="tpf8.ReferenceMacro" typeId="tpf8.1088761943574" id="5708867820621171190">
+          <node role="arguments" roleId="x27k.5708867820623310661" type="v7ag.RunnableArgument" typeId="v7ag.8105003328814724891" id="1598382569875111039">
+            <property name="name" nameId="tpck.1169194664001" value="event" />
+            <node role="type" roleId="mj1l.318113533128716676" type="clbe.EnumType" typeId="clbe.8811614583515725893" id="5708867820621171189">
+              <link role="enum" roleId="clbe.8811614583515725894" targetNodeId="1786180596061285023" resolveInfo="statemachineInEvents" />
+              <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.ReferenceMacro" typeId="tpf8.1088761943574" id="5708867820621171190">
                 <property name="linkRole" nameId="tpck.1757699476691236116" value="enum" />
                 <node role="referentFunction" roleId="tpf8.1167770376702" type="tpf8.ReferenceMacro_GetReferent" typeId="tpf8.1167770111131" id="5708867820621171191">
                   <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="5708867820621171192">
@@ -910,11 +916,11 @@
               </node>
             </node>
           </node>
-          <node role="arguments" type="v7ag.RunnableArgument" typeId="v7ag.8105003328814724891" id="1598382569875111042">
-            <property name="name" value="arguments" />
-            <node role="type" type=".com.mbeddr.core.pointers.structure.ArrayType" id="5708867820621171303">
-              <node role="baseType" type=".com.mbeddr.core.pointers.structure.PointerType" id="5708867820621171304">
-                <node role="baseType" type=".com.mbeddr.core.expressions.structure.VoidType" id="5708867820621171305" />
+          <node role="arguments" roleId="x27k.5708867820623310661" type="v7ag.RunnableArgument" typeId="v7ag.8105003328814724891" id="1598382569875111042">
+            <property name="name" nameId="tpck.1169194664001" value="arguments" />
+            <node role="type" roleId="mj1l.318113533128716676" type="yq40.ArrayType" typeId="yq40.5679441017214012545" id="5708867820621171303">
+              <node role="baseType" roleId="yq40.5679441017214012546" type="yq40.PointerType" typeId="yq40.279446265608459824" id="5708867820621171304">
+                <node role="baseType" roleId="yq40.279446265608459825" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="5708867820621171305" />
               </node>
             </node>
           </node>
@@ -923,57 +929,57 @@
     </node>
   </root>
   <root id="5569318043967164875">
-    <node role="pointerDiffType" type=".com.mbeddr.core.expressions.structure.Int32tType" id="8863019357864489041" />
-    <node role="sizeTType" type=".com.mbeddr.core.expressions.structure.Int32tType" id="8863019357864489042" />
-    <node role="specifications" type=".com.mbeddr.core.expressions.structure.TypeSizeSpecification" id="8863019357864489043">
-      <property name="exists" value="true" />
-      <node role="basicType" type=".com.mbeddr.core.expressions.structure.CharType" id="8863019357864489044" />
-      <node role="c99Type" type=".com.mbeddr.core.expressions.structure.Int8tType" id="8863019357864489045" />
+    <node role="pointerDiffType" roleId="mj1l.3813668170744198630" type="mj1l.Int32tType" typeId="mj1l.8463282783691618440" id="8863019357864489041" />
+    <node role="sizeTType" roleId="mj1l.8863019357864392147" type="mj1l.Int32tType" typeId="mj1l.8463282783691618440" id="8863019357864489042" />
+    <node role="specifications" roleId="mj1l.3335993110369805710" type="mj1l.TypeSizeSpecification" typeId="mj1l.3335993110369795381" id="8863019357864489043">
+      <property name="exists" nameId="mj1l.3335993110370236888" value="true" />
+      <node role="basicType" roleId="mj1l.7496733358578231498" type="mj1l.CharType" typeId="mj1l.1664480272136207708" id="8863019357864489044" />
+      <node role="c99Type" roleId="mj1l.7496733358578231499" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="8863019357864489045" />
     </node>
-    <node role="specifications" type=".com.mbeddr.core.expressions.structure.TypeSizeSpecification" id="8863019357864489046">
-      <property name="exists" value="true" />
-      <node role="basicType" type=".com.mbeddr.core.expressions.structure.ShortType" id="8863019357864489047" />
-      <node role="c99Type" type=".com.mbeddr.core.expressions.structure.Int16tType" id="8863019357864489048" />
+    <node role="specifications" roleId="mj1l.3335993110369805710" type="mj1l.TypeSizeSpecification" typeId="mj1l.3335993110369795381" id="8863019357864489046">
+      <property name="exists" nameId="mj1l.3335993110370236888" value="true" />
+      <node role="basicType" roleId="mj1l.7496733358578231498" type="mj1l.ShortType" typeId="mj1l.3335993110369949928" id="8863019357864489047" />
+      <node role="c99Type" roleId="mj1l.7496733358578231499" type="mj1l.Int16tType" typeId="mj1l.8463282783691618435" id="8863019357864489048" />
     </node>
-    <node role="specifications" type=".com.mbeddr.core.expressions.structure.TypeSizeSpecification" id="8863019357864489049">
-      <property name="exists" value="true" />
-      <node role="basicType" type=".com.mbeddr.core.expressions.structure.IntType" id="8863019357864489050" />
-      <node role="c99Type" type=".com.mbeddr.core.expressions.structure.Int32tType" id="8863019357864489051" />
+    <node role="specifications" roleId="mj1l.3335993110369805710" type="mj1l.TypeSizeSpecification" typeId="mj1l.3335993110369795381" id="8863019357864489049">
+      <property name="exists" nameId="mj1l.3335993110370236888" value="true" />
+      <node role="basicType" roleId="mj1l.7496733358578231498" type="mj1l.IntType" typeId="mj1l.8860443239512128108" id="8863019357864489050" />
+      <node role="c99Type" roleId="mj1l.7496733358578231499" type="mj1l.Int32tType" typeId="mj1l.8463282783691618440" id="8863019357864489051" />
     </node>
-    <node role="specifications" type=".com.mbeddr.core.expressions.structure.TypeSizeSpecification" id="8863019357864489052">
-      <property name="exists" value="true" />
-      <node role="basicType" type=".com.mbeddr.core.expressions.structure.LongType" id="8863019357864489053" />
-      <node role="c99Type" type=".com.mbeddr.core.expressions.structure.Int32tType" id="8863019357864489054" />
+    <node role="specifications" roleId="mj1l.3335993110369805710" type="mj1l.TypeSizeSpecification" typeId="mj1l.3335993110369795381" id="8863019357864489052">
+      <property name="exists" nameId="mj1l.3335993110370236888" value="true" />
+      <node role="basicType" roleId="mj1l.7496733358578231498" type="mj1l.LongType" typeId="mj1l.86532984527104137" id="8863019357864489053" />
+      <node role="c99Type" roleId="mj1l.7496733358578231499" type="mj1l.Int32tType" typeId="mj1l.8463282783691618440" id="8863019357864489054" />
     </node>
-    <node role="specifications" type=".com.mbeddr.core.expressions.structure.TypeSizeSpecification" id="8863019357864489055">
-      <property name="exists" value="true" />
-      <node role="basicType" type=".com.mbeddr.core.expressions.structure.LongLongType" id="8863019357864489056" />
-      <node role="c99Type" type=".com.mbeddr.core.expressions.structure.Int64tType" id="8863019357864489057" />
+    <node role="specifications" roleId="mj1l.3335993110369805710" type="mj1l.TypeSizeSpecification" typeId="mj1l.3335993110369795381" id="8863019357864489055">
+      <property name="exists" nameId="mj1l.3335993110370236888" value="true" />
+      <node role="basicType" roleId="mj1l.7496733358578231498" type="mj1l.LongLongType" typeId="mj1l.8463282783691596316" id="8863019357864489056" />
+      <node role="c99Type" roleId="mj1l.7496733358578231499" type="mj1l.Int64tType" typeId="mj1l.8463282783691618445" id="8863019357864489057" />
     </node>
-    <node role="specifications" type=".com.mbeddr.core.expressions.structure.TypeSizeSpecification" id="8863019357864489058">
-      <property name="exists" value="true" />
-      <node role="basicType" type=".com.mbeddr.core.expressions.structure.UnsignedCharType" id="8863019357864489059" />
-      <node role="c99Type" type=".com.mbeddr.core.expressions.structure.UnsignedInt8tType" id="8863019357864489060" />
+    <node role="specifications" roleId="mj1l.3335993110369805710" type="mj1l.TypeSizeSpecification" typeId="mj1l.3335993110369795381" id="8863019357864489058">
+      <property name="exists" nameId="mj1l.3335993110370236888" value="true" />
+      <node role="basicType" roleId="mj1l.7496733358578231498" type="mj1l.UnsignedCharType" typeId="mj1l.8463282783691492716" id="8863019357864489059" />
+      <node role="c99Type" roleId="mj1l.7496733358578231499" type="mj1l.UnsignedInt8tType" typeId="mj1l.8463282783691618461" id="8863019357864489060" />
     </node>
-    <node role="specifications" type=".com.mbeddr.core.expressions.structure.TypeSizeSpecification" id="8863019357864489061">
-      <property name="exists" value="true" />
-      <node role="basicType" type=".com.mbeddr.core.expressions.structure.UnsignedShortType" id="8863019357864489062" />
-      <node role="c99Type" type=".com.mbeddr.core.expressions.structure.UnsignedInt8tType" id="8863019357864489063" />
+    <node role="specifications" roleId="mj1l.3335993110369805710" type="mj1l.TypeSizeSpecification" typeId="mj1l.3335993110369795381" id="8863019357864489061">
+      <property name="exists" nameId="mj1l.3335993110370236888" value="true" />
+      <node role="basicType" roleId="mj1l.7496733358578231498" type="mj1l.UnsignedShortType" typeId="mj1l.595416243537320771" id="8863019357864489062" />
+      <node role="c99Type" roleId="mj1l.7496733358578231499" type="mj1l.UnsignedInt8tType" typeId="mj1l.8463282783691618461" id="8863019357864489063" />
     </node>
-    <node role="specifications" type=".com.mbeddr.core.expressions.structure.TypeSizeSpecification" id="8863019357864489064">
-      <property name="exists" value="true" />
-      <node role="basicType" type=".com.mbeddr.core.expressions.structure.UnsignedIntType" id="8863019357864489065" />
-      <node role="c99Type" type=".com.mbeddr.core.expressions.structure.UnsignedInt32tType" id="8863019357864489066" />
+    <node role="specifications" roleId="mj1l.3335993110369805710" type="mj1l.TypeSizeSpecification" typeId="mj1l.3335993110369795381" id="8863019357864489064">
+      <property name="exists" nameId="mj1l.3335993110370236888" value="true" />
+      <node role="basicType" roleId="mj1l.7496733358578231498" type="mj1l.UnsignedIntType" typeId="mj1l.8463282783691492730" id="8863019357864489065" />
+      <node role="c99Type" roleId="mj1l.7496733358578231499" type="mj1l.UnsignedInt32tType" typeId="mj1l.8463282783691618450" id="8863019357864489066" />
     </node>
-    <node role="specifications" type=".com.mbeddr.core.expressions.structure.TypeSizeSpecification" id="8863019357864489067">
-      <property name="exists" value="true" />
-      <node role="basicType" type=".com.mbeddr.core.expressions.structure.UnsignedLongType" id="8863019357864489068" />
-      <node role="c99Type" type=".com.mbeddr.core.expressions.structure.UnsignedInt32tType" id="8863019357864489069" />
+    <node role="specifications" roleId="mj1l.3335993110369805710" type="mj1l.TypeSizeSpecification" typeId="mj1l.3335993110369795381" id="8863019357864489067">
+      <property name="exists" nameId="mj1l.3335993110370236888" value="true" />
+      <node role="basicType" roleId="mj1l.7496733358578231498" type="mj1l.UnsignedLongType" typeId="mj1l.8463282783691596310" id="8863019357864489068" />
+      <node role="c99Type" roleId="mj1l.7496733358578231499" type="mj1l.UnsignedInt32tType" typeId="mj1l.8463282783691618450" id="8863019357864489069" />
     </node>
-    <node role="specifications" type=".com.mbeddr.core.expressions.structure.TypeSizeSpecification" id="8863019357864489070">
-      <property name="exists" value="true" />
-      <node role="basicType" type=".com.mbeddr.core.expressions.structure.UnsignedLongLongType" id="8863019357864489071" />
-      <node role="c99Type" type=".com.mbeddr.core.expressions.structure.UnsignedInt64tType" id="8863019357864489072" />
+    <node role="specifications" roleId="mj1l.3335993110369805710" type="mj1l.TypeSizeSpecification" typeId="mj1l.3335993110369795381" id="8863019357864489070">
+      <property name="exists" nameId="mj1l.3335993110370236888" value="true" />
+      <node role="basicType" roleId="mj1l.7496733358578231498" type="mj1l.UnsignedLongLongType" typeId="mj1l.8463282783691618471" id="8863019357864489071" />
+      <node role="c99Type" roleId="mj1l.7496733358578231499" type="mj1l.UnsignedInt64tType" typeId="mj1l.8463282783691618456" id="8863019357864489072" />
     </node>
   </root>
 </model>

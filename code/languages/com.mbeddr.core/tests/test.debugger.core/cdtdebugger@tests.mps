@@ -15,6 +15,7 @@
   <import index="unp9" modelUID="f:java_stub#223dd778-c44f-4ef3-9535-7aa7d12244a6#org.eclipse.cdt.debug.mi.core.cdi(com.mbeddr.core.debug/org.eclipse.cdt.debug.mi.core.cdi@java_stub)" version="-1" />
   <import index="qe27" modelUID="f:java_stub#223dd778-c44f-4ef3-9535-7aa7d12244a6#org.eclipse.cdt.debug.mi.core.event(com.mbeddr.core.debug/org.eclipse.cdt.debug.mi.core.event@java_stub)" version="-1" />
   <import index="wi0f" modelUID="f:java_stub#223dd778-c44f-4ef3-9535-7aa7d12244a6#org.eclipse.cdt.debug.mi.customization(com.mbeddr.core.debug/org.eclipse.cdt.debug.mi.customization@java_stub)" version="-1" />
+  <import index="5y0r" modelUID="r:2f4483b5-f8ec-40d1-83bf-462cb7821a33(cdtdebugger@tests)" version="-1" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="tpee" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="3" implicit="yes" />
   <import index="tp5g" modelUID="r:00000000-0000-4000-0000-011c89590388(jetbrains.mps.lang.test.structure)" version="4" implicit="yes" />

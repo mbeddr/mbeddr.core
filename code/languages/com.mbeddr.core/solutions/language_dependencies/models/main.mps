@@ -2,7 +2,6 @@
 <model modelUID="r:0f3ca455-41dd-4801-8b47-4a67397bf344(language_dependencies.main)">
   <persistence version="7" />
   <language namespace="5550bbcf-81f8-460f-b7db-a7a6efc1e286(com.mbeddr.mpsutil.langdepdiag)" />
-  <language namespace="6d11763d-483d-4b2b-8efc-09336c1b0001(com.mbeddr.core.modules)" />
   <import index="whj4" modelUID="r:6dd80dee-488f-4a60-abcc-a68d4fa3cdc3(com.mbeddr.mpsutil.langdepdiag.structure)" version="-1" implicit="yes" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <roots>

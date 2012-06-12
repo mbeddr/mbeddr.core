@@ -7,6 +7,7 @@
   <sourcePath />
   <usedLanguages>
     <usedLanguage>17e4a96f-f2a0-4ccc-badd-b73f1fe7a7a6(com.mbeddr.mpsutil.graph)</usedLanguage>
+    <usedLanguage>ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)</usedLanguage>
   </usedLanguages>
 </solution>
 

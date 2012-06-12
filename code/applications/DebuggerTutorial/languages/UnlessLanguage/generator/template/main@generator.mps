@@ -9,6 +9,8 @@
   <import index="tp25" modelUID="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" version="-1" implicit="yes" />
   <import index="tpee" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="3" implicit="yes" />
   <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="4" implicit="yes" />
+  <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="14" implicit="yes" />
+  <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="0" implicit="yes" />
   <roots>
     <node type="tpf8.MappingConfiguration" typeId="tpf8.1095416546421" id="1734689175229103141">
       <property name="name" nameId="tpck.1169194664001" value="main" />
@@ -18,16 +20,16 @@
     <node role="reductionMappingRule" roleId="tpf8.1167328349397" type="tpf8.Reduction_MappingRule" typeId="tpf8.1167327847730" id="1734689175229103142">
       <link role="applicableConcept" roleId="tpf8.1167169349424" targetNodeId="x205.1734689175229070918" resolveInfo="UnlessStatement" />
       <node role="ruleConsequence" roleId="tpf8.1169672767469" type="tpf8.InlineTemplateWithContext_RuleConsequence" typeId="tpf8.8900764248744213868" id="1734689175229106684">
-        <node role="contentNode" roleId="tpf8.8900764248744213871" type=".com.mbeddr.core.modules.structure.Function" id="1734689175229106686">
-          <property name="name" value="dummy" />
-          <node role="type" type=".com.mbeddr.core.expressions.structure.VoidType" id="1734689175229106687" />
-          <node role="body" type=".com.mbeddr.core.statements.structure.StatementList" id="1734689175229106688">
-            <node role="statements" type=".com.mbeddr.core.statements.structure.IfStatement" id="1734689175229106690">
-              <node role="thenPart" type=".com.mbeddr.core.statements.structure.StatementList" id="1734689175229106691">
-                <node role="statements" type=".com.mbeddr.core.statements.structure.LocalVariableDeclaration" id="1734689175229106697">
-                  <property name="name" value="x" />
-                  <node role="type" type=".com.mbeddr.core.expressions.structure.Int8tType" id="1734689175229106698" />
-                  <node role="smodelAttribute" type="tpf8.CopySrcListMacro" typeId="tpf8.1114729360583" id="1734689175229106712">
+        <node role="contentNode" roleId="tpf8.8900764248744213871" type="x27k.Function" typeId="x27k.6437088627575724001" id="1734689175229106686">
+          <property name="name" nameId="tpck.1169194664001" value="dummy" />
+          <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="1734689175229106687" />
+          <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="1734689175229106688">
+            <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.IfStatement" typeId="c4fa.6275792049641600983" id="1734689175229106690">
+              <node role="thenPart" roleId="c4fa.6275792049641600985" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="1734689175229106691">
+                <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="1734689175229106697">
+                  <property name="name" nameId="tpck.1169194664001" value="x" />
+                  <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="1734689175229106698" />
+                  <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.CopySrcListMacro" typeId="tpf8.1114729360583" id="1734689175229106712">
                     <node role="sourceNodesQuery" roleId="tpf8.1168278589236" type="tpf8.SourceSubstituteMacro_SourceNodesQuery" typeId="tpf8.1167951910403" id="1734689175229106713">
                       <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="1734689175229106714">
                         <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="1734689175229106715">
@@ -48,9 +50,9 @@
                   </node>
                 </node>
               </node>
-              <node role="condition" type=".com.mbeddr.core.expressions.structure.NotExpression" id="1734689175229106693">
-                <node role="expression" type=".com.mbeddr.core.expressions.structure.TrueLiteral" id="1734689175229106695">
-                  <node role="smodelAttribute" type="tpf8.CopySrcNodeMacro" typeId="tpf8.1114706874351" id="1734689175229106701">
+              <node role="condition" roleId="c4fa.6275792049641600984" type="mj1l.NotExpression" typeId="mj1l.3830958861296781575" id="1734689175229106693">
+                <node role="expression" roleId="mj1l.7254843406768839760" type="mj1l.TrueLiteral" typeId="mj1l.8860443239512128094" id="1734689175229106695">
+                  <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.CopySrcNodeMacro" typeId="tpf8.1114706874351" id="1734689175229106701">
                     <node role="sourceNodeQuery" roleId="tpf8.1168024447342" type="tpf8.SourceSubstituteMacro_SourceNodeQuery" typeId="tpf8.1168024337012" id="1734689175229106704">
                       <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="1734689175229106705">
                         <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="1734689175229106706">
@@ -66,7 +68,7 @@
                   </node>
                 </node>
               </node>
-              <node role="smodelAttribute" type="tpf8.TemplateFragment" typeId="tpf8.1095672379244" id="1734689175229106710" />
+              <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.TemplateFragment" typeId="tpf8.1095672379244" id="1734689175229106710" />
             </node>
           </node>
         </node>
