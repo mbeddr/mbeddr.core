@@ -2,7 +2,6 @@
 <model modelUID="r:751f3830-35b1-4cc0-abf7-dea6fdf9197d(com.mbeddr.ext.exceptionhandling.behavior)" version="1">
   <persistence version="7" />
   <language namespace="af65afd8-f0dd-4942-87d9-63a55f2a9db1(jetbrains.mps.lang.behavior)" />
-  <language namespace="7bb2fde4-1dd3-4cc6-b8d6-6755853dd5fd(exceptionhandling2)" />
   <devkit namespace="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   <import index="skt0" modelUID="r:cd7772f1-c9fe-4c4a-93ce-2a11779f34fe(com.mbeddr.ext.exceptionhandling.structure)" version="5" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
