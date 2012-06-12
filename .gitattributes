@@ -3,3 +3,7 @@ trace.info merge=mps
 .dependencies merge=mps
 dependencies merge=mps
 generated merge=mps
+*.mpl merge=mps
+*.msd merge=mps
+*.devkit merge=mps
+*.mpr merge=mps

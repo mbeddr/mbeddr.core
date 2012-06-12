@@ -1,17 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<language namespace="com.mbeddr.mpsutil.graph" uuid="17e4a96f-f2a0-4ccc-badd-b73f1fe7a7a6" compileInMPS="true" doNotGenerateAdapters="false">
+<language namespace="com.mbeddr.mpsutil.graph" uuid="17e4a96f-f2a0-4ccc-badd-b73f1fe7a7a6" doNotGenerateAdapters="false">
   <models>
-    <modelRoot path="${language_descriptor}/languageModels" namespacePrefix="com.mbeddr.mpsutil.graph" />
+    <modelRoot path="${language_descriptor}/languageModels" />
   </models>
   <accessoryModels />
   <generators>
     <generator name="main" generatorUID="com.mbeddr.mpsutil.graph#5124107871587855524" uuid="e02c040b-dd12-4a66-b1d2-02ede01c9251">
       <models>
-        <modelRoot path="${language_descriptor}/generator/template" namespacePrefix="com.mbeddr.mpsutil.graph.generator.template" />
+        <modelRoot path="${language_descriptor}/generator/template" />
       </models>
       <external-templates />
       <usedLanguages>
         <usedLanguage>17e4a96f-f2a0-4ccc-badd-b73f1fe7a7a6(com.mbeddr.mpsutil.graph)</usedLanguage>
+        <usedLanguage>b401a680-8325-4110-8fd3-84331ff25bef(jetbrains.mps.lang.generator)</usedLanguage>
       </usedLanguages>
       <usedDevKits>
         <usedDevKit>fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)</usedDevKit>
@@ -27,7 +28,7 @@
     <usedDevKit>2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)</usedDevKit>
   </usedDevKits>
   <runtime>
-    <dependency reexport="false">83f155ff-422c-4b5a-a2f2-b459302dd215(jetbrains.mps.baseLanguage.unitTest.lib)</dependency>
+    <dependency reexport="false">83f155ff-422c-4b5a-a2f2-b459302dd215(jetbrains.mps.baseLanguage.unitTest.libs)</dependency>
   </runtime>
   <extendedLanguages />
 </language>
