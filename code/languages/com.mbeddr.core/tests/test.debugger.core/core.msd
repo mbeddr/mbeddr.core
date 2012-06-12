@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <solution name="test.debugger.core" uuid="fa1d9f5d-d5ce-44c5-94ac-ba5f1a1fba8e" compileInMPS="true">
   <models>
-    <modelRoot path="${solution_descriptor}/" namespacePrefix="" />
+    <modelRoot path="${solution_descriptor}/" />
+    <modelRoot path="${solution_descriptor}/libs/mockito-all-1.9.0.jar">
+      <manager moduleId="f3061a53-9226-4cc5-a443-f952ceaf5816" className="jetbrains.mps.baseLanguage.stubs.JavaStubs" />
+    </modelRoot>
   </models>
   <stubModelEntries>
     <stubModelEntry path="${solution_descriptor}/libs/mockito-all-1.9.0.jar">
@@ -10,11 +13,10 @@
   </stubModelEntries>
   <sourcePath />
   <dependencies>
-    <dependency reexport="false">daacf807-0832-4338-866d-0f91b590ef56(Eclipse.Debugger)</dependency>
+    <dependency reexport="false">742f6602-5a2f-4313-aa6e-ae1cd4ffdc61(MPS.Platform)</dependency>
     <dependency reexport="false">223dd778-c44f-4ef3-9535-7aa7d12244a6(com.mbeddr.core.debug)</dependency>
+    <dependency reexport="false">cc7da2f6-419f-4133-a811-31fcd3295a85(jetbrains.mps.debugger.api.api)</dependency>
     <dependency reexport="false">9b67baf0-e986-49af-b77c-998667f458cb(jetbrains.mps.traceInfo)</dependency>
-    <dependency reexport="false">a9d69647-0840-491e-bf39-2eb0805d2011(com.mbeddr.core.statements)</dependency>
-    <dependency reexport="false">9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)</dependency>
   </dependencies>
   <usedLanguages>
     <usedLanguage>2d7fadf5-33f6-4e80-a78f-0f739add2bde(com.mbeddr.core.buildconfig)</usedLanguage>

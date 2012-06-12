@@ -2,7 +2,6 @@
 <model modelUID="r:58da145a-b160-4754-a2e7-7dfa1451f846(com.mbeddr.core.base.refactorings)">
   <persistence version="7" />
   <language namespace="3ecd7c84-cde3-45de-886c-135ecc69b742(jetbrains.mps.lang.refactoring)" />
-  <language namespace="28f9e497-3b42-4291-aeba-0a1039153ab1(jetbrains.mps.lang.plugin)" />
   <language namespace="aee9cad2-acd4-4608-aef2-0004f6a1cdbd(jetbrains.mps.lang.actions)" />
   <devkit namespace="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="4" />
@@ -11,7 +10,6 @@
   <import index="tp25" modelUID="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" version="-1" implicit="yes" />
   <import index="tpee" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="3" implicit="yes" />
   <import index="tp1h" modelUID="r:00000000-0000-4000-0000-011c89590319(jetbrains.mps.lang.refactoring.structure)" version="1" implicit="yes" />
-  <import index="tp4k" modelUID="r:00000000-0000-4000-0000-011c89590368(jetbrains.mps.lang.plugin.structure)" version="23" implicit="yes" />
   <import index="tp2q" modelUID="r:00000000-0000-4000-0000-011c8959032e(jetbrains.mps.baseLanguage.collections.structure)" version="7" implicit="yes" />
   <import index="hwgx" modelUID="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)" version="1" implicit="yes" />
   <import index="tpdg" modelUID="r:00000000-0000-4000-0000-011c895902a8(jetbrains.mps.lang.actions.structure)" version="23" implicit="yes" />
@@ -212,10 +210,6 @@
         </node>
       </node>
     </node>
-    <node role="keystroke" roleId="tp1h.6895093993902236375" type="tp4k.KeyMapKeystroke" typeId="tp4k.1207318242772" id="7024921229556144741">
-      <property name="modifiers" nameId="tp4k.1207318242773" value="ctrl+alt" />
-      <property name="keycode" nameId="tp4k.1207318242774" value="VK_C" />
-    </node>
   </root>
   <root id="7024921229556320747">
     <node role="target" roleId="tp1h.6895093993902310998" type="tp1h.NodeTarget" typeId="tp1h.6895093993902310764" id="7024921229556320751">
@@ -260,10 +254,6 @@
           </node>
         </node>
       </node>
-    </node>
-    <node role="keystroke" roleId="tp1h.6895093993902236375" type="tp4k.KeyMapKeystroke" typeId="tp4k.1207318242772" id="7024921229556320752">
-      <property name="modifiers" nameId="tp4k.1207318242773" value="ctrl+alt" />
-      <property name="keycode" nameId="tp4k.1207318242774" value="VK_C" />
     </node>
   </root>
   <root id="3857533489766801296">
@@ -343,10 +333,6 @@
         </node>
       </node>
     </node>
-    <node role="keystroke" roleId="tp1h.6895093993902236375" type="tp4k.KeyMapKeystroke" typeId="tp4k.1207318242772" id="3857533489766809780">
-      <property name="modifiers" nameId="tp4k.1207318242773" value="ctrl+alt" />
-      <property name="keycode" nameId="tp4k.1207318242774" value="VK_D" />
-    </node>
   </root>
   <root id="14270488321353214">
     <node role="target" roleId="tp1h.6895093993902310998" type="tp1h.NodeTarget" typeId="tp1h.6895093993902310764" id="14270488321353215">
@@ -389,10 +375,6 @@
           </node>
         </node>
       </node>
-    </node>
-    <node role="keystroke" roleId="tp1h.6895093993902236375" type="tp4k.KeyMapKeystroke" typeId="tp4k.1207318242772" id="14270488321353234">
-      <property name="modifiers" nameId="tp4k.1207318242773" value="ctrl+alt" />
-      <property name="keycode" nameId="tp4k.1207318242774" value="VK_C" />
     </node>
   </root>
 </model>
