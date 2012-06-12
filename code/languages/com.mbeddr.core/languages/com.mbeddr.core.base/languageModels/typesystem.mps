@@ -39,6 +39,9 @@
     <node type="tpd4.TypesystemQuickFix" typeId="tpd4.1216383170661" id="4458342957759924280">
       <property name="name" nameId="tpck.1169194664001" value="fixMustBeMigratedAutomatically" />
     </node>
+    <node type="tpd4.NonTypesystemRule" typeId="tpd4.1195214364922" id="8051977711588518783">
+      <property name="name" nameId="tpck.1169194664001" value="check_IDeprecatedLangConcept" />
+    </node>
   </roots>
   <root id="4459718605982014131">
     <node role="body" roleId="tpd4.1195213635060" type="tpee.StatementList" typeId="tpee.1068580123136" id="4459718605982014132">
@@ -672,6 +675,32 @@
           </node>
         </node>
       </node>
+    </node>
+  </root>
+  <root id="8051977711588518783">
+    <node role="body" roleId="tpd4.1195213635060" type="tpee.StatementList" typeId="tpee.1068580123136" id="8051977711588518784">
+      <node role="statement" roleId="tpee.1068581517665" type="tpd4.WarningStatement" typeId="tpd4.1207055528241" id="8051977711588518786">
+        <node role="warningText" roleId="tpd4.1207055552304" type="tpee.PlusExpression" typeId="tpee.1068581242875" id="8051977711588646366">
+          <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="8051977711588646369">
+            <property name="value" nameId="tpee.1070475926801" value=" Deprecated: " />
+          </node>
+          <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.DotExpression" typeId="tpee.1197027756228" id="8051977711588518792">
+            <node role="operand" roleId="tpee.1197027771414" type="tpd4.ApplicableNodeReference" typeId="tpd4.1174650418652" id="8051977711588518789">
+              <link role="applicableNode" roleId="tpd4.1174650432090" targetNodeId="8051977711588518785" resolveInfo="iDep" />
+            </node>
+            <node role="operation" roleId="tpee.1197027833540" type="tp25.SConceptPropertyAccess" typeId="tp25.1145994841052" id="8051977711588646363">
+              <link role="conceptProperty" roleId="tp25.1145994841055" targetNodeId="vs0r.8051977711588637301" resolveInfo="deprecationMessage" />
+            </node>
+          </node>
+        </node>
+        <node role="nodeToReport" roleId="tpd4.1227096802790" type="tpd4.ApplicableNodeReference" typeId="tpd4.1174650418652" id="8051977711588550480">
+          <link role="applicableNode" roleId="tpd4.1174650432090" targetNodeId="8051977711588518785" resolveInfo="iDep" />
+        </node>
+      </node>
+    </node>
+    <node role="applicableNode" roleId="tpd4.1174648101952" type="tpd4.ConceptReference" typeId="tpd4.1174642788531" id="8051977711588518785">
+      <property name="name" nameId="tpck.1169194664001" value="iDep" />
+      <link role="concept" roleId="tpd4.1174642800329" targetNodeId="vs0r.8051977711588518781" resolveInfo="IDeprecatedLangConcept" />
     </node>
   </root>
 </model>

@@ -7,11 +7,11 @@
       <model index="yvc7" modelUID="r:7a3b06b4-e496-46c1-a58f-c1aedae1c5fc(com.mbeddr.core.statements.textGen)" version="-1" />
       <model index="3ho" modelUID="r:5464eee6-9739-45c3-be18-bcd3e5d07f5a(com.mbeddr.core.base.textGen)" version="-1" />
       <model index="rj8d" modelUID="r:da9fd96f-5c71-45ab-b2da-1aa6232ec67f(com.mbeddr.core.statements.behavior)" version="-1" />
-      <model index="r4b4" modelUID="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" version="-1" />
       <model index="j4gk" modelUID="r:44b6f9b4-bfdb-4b99-b104-960ec485d777(com.mbeddr.core.statements.editor)" version="-1" />
+      <model index="r4b4" modelUID="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" version="-1" />
       <model index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="0" />
-      <model index="7kf" modelUID="r:52560947-b3d4-4502-82de-09a64d1cf1ac(com.mbeddr.core.statements.intentions)" version="0" />
       <model index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="0" />
+      <model index="7kf" modelUID="r:52560947-b3d4-4502-82de-09a64d1cf1ac(com.mbeddr.core.statements.intentions)" version="0" />
     </dependencies>
     <move id="c4fa.1679452829930469420" to="vs0r.3857533489766146432" />
     <move id="c4fa.1679452829930469425" to="vs0r.3857533489766146431" />
@@ -156,6 +156,39 @@
     <move id="yvc7.1679452829930918080" to="3ho.3857533489766146547" />
     <move id="yvc7.1679452829930918146" to="3ho.3857533489766146560" />
     <move id="yvc7.1679452829930918089" to="3ho.3857533489766146569" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="sv09" modelUID="r:4c06b4f2-6394-4780-a8ca-e242a7dc5ec9(com.mbeddr.core.expressions.intentions)" version="-1" />
+      <model index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="13" />
+      <model index="7kf" modelUID="r:52560947-b3d4-4502-82de-09a64d1cf1ac(com.mbeddr.core.statements.intentions)" version="1" />
+      <model index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="3" />
+    </dependencies>
+    <move id="c4fa.7825285260294008966" to="mj1l.2941277002448691204" />
+    <move id="c4fa.7825285260294008965" to="mj1l.2941277002448691203" />
+    <move id="7kf.7825285260294008948" to="sv09.2941277002448691211" />
+    <move id="7kf.7825285260294008953" to="sv09.2941277002448691216" />
+    <move id="7kf.7825285260294008962" to="sv09.2941277002448691225" />
+    <move id="7kf.7825285260294008959" to="sv09.2941277002448691222" />
+    <move id="7kf.7825285260294008949" to="sv09.2941277002448691212" />
+    <move id="7kf.7825285260294008950" to="sv09.2941277002448691213" />
+    <move id="7kf.7825285260294008943" to="sv09.2941277002448691206" />
+    <move id="7kf.7825285260294008963" to="sv09.2941277002448691226" />
+    <move id="7kf.7825285260294008960" to="sv09.2941277002448691223" />
+    <move id="7kf.7825285260294008947" to="sv09.2941277002448691210" />
+    <move id="7kf.7825285260294008964" to="sv09.2941277002448691227" />
+    <move id="7kf.7825285260294008961" to="sv09.2941277002448691224" />
+    <move id="7kf.7825285260294008952" to="sv09.2941277002448691215" />
+    <move id="7kf.7825285260294008956" to="sv09.2941277002448691219" />
+    <move id="7kf.7825285260294008945" to="sv09.2941277002448691208" />
+    <move id="7kf.7825285260294008958" to="sv09.2941277002448691221" />
+    <move id="7kf.7825285260294008967" to="sv09.2941277002448691220" />
+    <move id="7kf.7825285260294008955" to="sv09.2941277002448691218" />
+    <move id="7kf.7825285260294008951" to="sv09.2941277002448691214" />
+    <move id="7kf.7825285260294008944" to="sv09.2941277002448691207" />
+    <move id="7kf.7825285260294008942" to="sv09.2941277002448691205" />
+    <move id="7kf.7825285260294008968" to="sv09.2941277002448691217" />
+    <move id="7kf.7825285260294008946" to="sv09.2941277002448691209" />
   </StructureModification>
 </history>
 
