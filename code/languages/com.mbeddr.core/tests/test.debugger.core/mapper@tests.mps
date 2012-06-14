@@ -2930,7 +2930,6 @@
               </node>
               <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="6741789984640185386">
                 <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="x30c.2581466085546079151" resolveInfo="attached" />
-                <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.NullLiteral" typeId="tpee.1070534058343" id="6741789984640185388" />
               </node>
             </node>
           </node>
@@ -5903,7 +5902,7 @@
                 <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="6884284114861431643" resolveInfo="sessionController" />
               </node>
               <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="6884284114861431667">
-                <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="x30c.2581466085546042419" resolveInfo="stop" />
+                <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="x30c.2581466085546042419" resolveInfo="detach" />
               </node>
             </node>
           </node>
@@ -6003,7 +6002,7 @@
                 </node>
               </node>
               <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="6884284114861432171">
-                <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="x30c.6595112540538979812" resolveInfo="stop" />
+                <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="x30c.6595112540538979812" resolveInfo="detach" />
               </node>
             </node>
           </node>
@@ -6064,7 +6063,7 @@
                   <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="6884284114861431672" resolveInfo="mSessionController" />
                 </node>
                 <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="6884284114861431708">
-                  <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="x30c.2581466085546042419" resolveInfo="stop" />
+                  <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="x30c.2581466085546042419" resolveInfo="detach" />
                 </node>
               </node>
             </node>
@@ -6145,7 +6144,6 @@
               </node>
               <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="6884284114861438867">
                 <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="x30c.2581466085546042722" resolveInfo="attached" />
-                <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.NullLiteral" typeId="tpee.1070534058343" id="6884284114861438869" />
               </node>
             </node>
           </node>
@@ -6429,7 +6427,6 @@
               </node>
               <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="3306617059422829344">
                 <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="x30c.2581466085545919562" resolveInfo="attached" />
-                <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.NullLiteral" typeId="tpee.1070534058343" id="3306617059422829349" />
               </node>
             </node>
           </node>
