@@ -7,7 +7,7 @@
     <format property="date" pattern="20120601" />
   </tstamp>
   <property name="build.number" value="1.0" />
-  <property name="mps_home" location="${basedir}/../../../tools/MPS2.5.app" />
+  <property name="mps_home" location="${basedir}/../../../../tools/MPS2.5.app" />
   <property name="mbeddr.core.home" location="${basedir}/../languages/com.mbeddr.core" />
   <property name="mbeddr.mpsutil.home" location="${basedir}/../languages/com.mbeddr.mpsutil" />
   <property name="artifacts.buildStandalone" location="${mps_home}" />
@@ -78,6 +78,7 @@
     <copy todir="${build.layout}/plugins/mps-debugger-api">
       <fileset dir="${artifacts.buildDebuggerPlugin}/plugins/mps-debugger-api" />
     </copy>
+    <copy file="${artifacts.buildDebuggerPlugin}/plugins/mps-debugger-api/lib/debugger-api.jar" todir="${build.layout}/plugins" />
     <mkdir dir="${build.layout}/plugins/mbeddr" />
     <mkdir dir="${build.layout}/plugins/mbeddr/META-INF" />
     <echoxml file="${build.layout}/plugins/mbeddr/META-INF/plugin.xml">

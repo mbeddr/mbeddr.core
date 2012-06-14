@@ -238,6 +238,52 @@ In addition to languages, you can also reference solutions with the
 
 \subsubsection{Default Layout}
 
+The layout constructs the directory and file structure of the RCP distribution.
+It copies in files from various sources, and in particular from the project
+structure discussed in the previous section. It can also refer to artifacts
+defined in other build scripts on which this script depends. We start out with
+the following code:
+
+\begin{code}
+default layout: 
+  import buildStandalone::languages 
+  import buildStandalone::license 
+\end{code}
+
+Those two imported are \ic{folder} elements in the referenced
+\ic{buildStandalone} build script. By importing them, the contents of these
+folders are imported (i.e. copied into) our RCP distribution. 
+
+Next up, we create a new folder \ic{lib} into which we import all the stuff from 
+\ic{from buildStandalone::lib} except the MPS sources and the existing
+\ic{branding.jar} (which contains the default MPS splash screen etc.). We then
+create a new jar file \ic{branding.jar}\footnote{It has to have this name to
+work; the IDEA platform expects it this way.} into which we put all the files
+defined in the \ic{branding} section of the project structure defined above. 
+
+\begin{code}
+folder lib 
+  import files from buildStandalone::lib 
+    exclude MPS-src.zip 
+    exclude branding.jar 
+  jar branding.jar 
+    files of idea branding MBEDDR 
+\end{code}
+
+We then create a folder \ic{plugins}. 
+
+\begin{code} 
+folder plugins 
+  import buildStandalone::plugins/cvsIntegration 
+  import buildStandalone::plugins/git4idea 
+  import buildStandalone::plugins/svn4idea 
+  import buildStandalone::plugins/mps-core 
+  import buildDebuggerPlugin::plugins/mps-debugger-api 
+\end{code}
+
+      
+
+
 
 
 
