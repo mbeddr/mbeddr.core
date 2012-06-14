@@ -103,13 +103,154 @@ Let us look at the various sections of a build script:
 \end{description}
 
 
-\section{Building the script for mbeddr}
+\subsection{Building the script for mbeddr}
+
+\subsubsection{Macros}
+
+We start by defining a couple of macros. The first two represent string
+variables we will use in the build, the set of folders represent the directory
+for MPS itself as well as the two root directories where mbeddr languages are
+stored. These languages will become part of the RCP distribution. Note how all
+of these folders are relative to the base directory.
 
 \begin{code}
-her is
-some code
- 
+macros:
+  var date = date 20120601 
+  var build.number = 1.0 
+  folder mps_home = ./../../../tools/MPS2.5.app 
+  folder mbeddr.core.home = ./../languages/com.mbeddr.core 
+  folder mbeddr.mpsutil.home = ./../languages/com.mbeddr.mpsutil 
 \end{code}
 
 
+
+\subsubsection{Dependencies}
+
+Next, we define the dependencies. We need dependencies to \ic{buildStandalone}
+(it represents the minimal set of a standalone MPS installation),
+\ic{buildDebuggerPlugin} (because mbeddr requires debugger integration) and
+\ic{buildExecutionPlugin} (because one the mbeddr languages uses the execution
+framework to run an external executable). Most RCPs will likely just use
+\ic{buildStandalone}.
+
+\begin{code}
+dependencies:
+  buildStandalone (artifacts location $mps_home) 
+  buildDebuggerPlugin (artifacts location $mps_home) 
+  buildExecutionPlugin (artifacts location $mps_home) 
+\end{code}\ignore{$}
+
+The \ic{artifacts location} specifies from where the artifacts will be copied.
+The build scripts work by copying code from an existing MPS installation, so you
+don't have to check out the MPS sources. The \ic{artifacts location} should
+hence be pointing to the MPS home directory.
+
+
+\subsubsection{Project Structure}
+
+In the project structure we start with the branding. The \ic{idea branding}
+section supports the definition of all kinds of icons, splash screens and the
+like. It is a good idea to take those from the MPS distribution and modify the
+pictures to suit your needs, while retaining the sizes and transparency values.
+You can also specify a help file and an update website.
+
+\todo{Explain how to hook in a help file; not clear what the three arguments
+mean}
+
+\begin{code}
+idea branding MBEDDR 
+  codename MBEDDR 
+  version 1.0, eap false 
+  full name mbeddr-IDE 
+  build number ${build.number}, date ${date} 
+  icons 
+    16x16 ./icons/MPS_16.png 
+    32x32 ./icons/MPS_32.png 
+    32x32 opaque ./icons/MPS_32.png 
+  splash screen ./icons/splash.png textcolor 002387 
+  about screen ./icons/mpsAbout.png 
+  dialog image ./icons/mpsNewProject.png 
+  welcome screen 
+    caption ./icons/mpsWelcomeCaption.png 
+    slogan ./icons/mpsSlogan.png 
+  <no updateWebsite> 
+  <no help>  
+\end{code}
+
+In the mbeddr case we have copied the MPS icons into the \ic{./icons} folder and
+changed them accordingly without changing the names --- this is why most of them
+start with \ic{mps}.
+
+
+Next we define an \ic{idea plugin} that contains the mbeddr languages. An
+\ic{idea plugin} is a plugin to the IDEA platform on which MPS is built. 
+
+\begin{code}
+idea plugin MBEDDRStuff 
+  name mbeddr 
+  short (folder) name mbeddr 
+  version 1.0 
+  content: 
+    mbeddr.core 
+    mpsutil 
+  dependencies: 
+    jetbrains.mps.core  
+\end{code}
+
+You can define a name and a version, dependencies to other plugins \todo{why do
+we need the mps.core thing here?} as well as the actual contents. The
+\ic{mbeddr.core} and \ic{mpsutil} entries in the contents are referneces to
+\ic{mps groups} defined below. An \ic{mps groups} is a group of MPS artifacts.
+Since we have included the \ic{mps} plugin (at the very top of the build script)
+we can use MPS-specific language constructs. \ic{mps groups} are an example.
+
+Let us look at the \ic{mpsutil} group. It references a set of languages. A
+\ic{language} reference points to a language defined in an MPS project. A
+language reference in a group consists of the name (which must be the same as
+the name of the actual language) and a pointer to the respective \ic{mpl} file.
+The simplest way to enter it is to start with the path to the \ic{mpl} file and
+then use the \ic{load required information from file} intention to adjust the
+name of the reference.
+
+\begin{code}
+mps group mpsutil 
+  language com.mbeddr.mpsutil.bldoc 
+    load from $mbeddr.mpsutil.home/languages/com.mbeddr.mpsutil.bldoc/bldoc.mpl 
+   
+  language com.mbeddr.mpsutil.blutil 
+    load from $mbeddr.mpsutil.home/languages/com.mbeddr.mpsutil.blutil/blutil.mpl 
+  
+  ... 
+\end{code}
+
+Note that a group has to contain the transitive closure of all languages. For
+example, if you have references a language A which references another language
+B, then B must also be included in the group. This makes sense, because
+otherwise the resulting RCP application would not run because dependencies could
+not be resolved. If a language is missing, then an error will be reported in the
+build script (red squiggly line)\footnote{After adding the required languages you may
+have to rerun the \ic{load required information from file} intention on the
+language with the error to make it "notice" that something has changed.}.
+
+In addition to languages, you can also reference solutions with the
+\ic{solution} construct and devkits with the \ic{devkit} construct.
+
+
+\subsubsection{Default Layout}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
 
