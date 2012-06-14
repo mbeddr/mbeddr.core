@@ -1,0 +1,76 @@
+\documentclass{llncs}
+
+\usepackage{amssymb}
+\usepackage{soul}  
+\usepackage[pdftex]{graphicx}
+\usepackage[utf8]{inputenc} 
+\usepackage{comment}
+\usepackage{wrapfig}
+\usepackage{color}
+
+\usepackage[T1]{fontenc} 
+
+\usepackage{framed}
+\definecolor{shadecolor}{rgb}{.8,.8,.8}
+
+\newcommand{\greyboxnote}[1]{\begin{shaded}
+\noindent\textbf{Note: }{#1}\end{shaded}}
+
+\usepackage{verbatim}
+	 
+\newenvironment{code} 
+    {\vspace{0.5cm}\noindent\rule{\textwidth}{0.7pt}
+     \vspace{-0.55cm}
+     \scriptsize \verbatim}
+    {\endverbatim \normalsize
+	 \vspace{-0.5cm}
+	 \rule{\textwidth}{0.7pt}
+	 \vspace{0.25cm}
+	 }
+
+
+\newcommand{\changefont}[3]{\fontfamily{#1}\fontseries{#2}\fontshape{#3}\selectfont}
+
+     
+
+\newcommand{\mynote}[2]{\textbf{{#1}(}\textit{{#2}}\textbf{)}}
+\newcommand\todo[1]{{\color{red}\mynote{TODO}{#1}}} 
+\newcommand\dan[1]{\mynote{DAN}{#1}} 
+\newcommand\markus[1]{\mynote{MARKUS}{#1}} 
+\newcommand\bernd[1]{\mynote{BERND}{#1}} 
+\newcommand\bernhard[1]{\mynote{BERNHARD}{#1}} 
+\newcommand\eelco[1]{\mynote{EELCO}{#1}} 
+
+\newcommand{\fig}[1]{Fig.~\ref{#1}}
+\newcommand{\sect}[1]{Section~\ref{#1}}
+
+\newcommand{\ic}[1]{\changefont{cmtt}{m}{n}{#1}\normalfont}  % inline code
+\newcommand{\lcr}[1]{\changefont{cmtt}{m}{n}{#1}\normalfont} % language
+\newcommand{\keystroke}[1]{\changefont{cmtt}{m}{n}{#1}\normalfont} % language
+\newcommand{\intention}[1]{\emph{#1}} % language
+
+  
+
+\title{Building RCP Apps with MPS}
+
+\author{Markus Voelter}
+
+\institute{independent/itemis}
+
+ 
+ 
+\begin{document}
+
+\maketitle
+
+
+\begin{abstract}
+\end{abstract} 
+
+
+\input{body.ltx}
+
+%\nocite{*}
+%\bibliographystyle{abbrv} 
+%\bibliography{fromResearchr_langComposition,visser}
+\end{document}
