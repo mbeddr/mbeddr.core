@@ -13,6 +13,10 @@
       <property name="internalBaseDirectory" nameId="3ior.5204048710541015587" value="../.." />
       <property name="fileName" nameId="3ior.4915877860348071612" value="mbeddr.xml" />
     </node>
+    <node type="3ior.BuildProject" typeId="3ior.5617550519002745363" id="7074560188272385935">
+      <property name="internalBaseDirectory" nameId="3ior.5204048710541015587" value="." />
+      <property name="name" nameId="tpck.1169194664001" value="SomeRCPBuild" />
+    </node>
   </roots>
   <root id="7473128195640076592">
     <node role="parts" roleId="3ior.7389400916848080626" type="kdzh.BuildMps_Branding" typeId="kdzh.7753544965996377997" id="7753544965996546378">
@@ -1767,6 +1771,10 @@
         </node>
       </node>
     </node>
+  </root>
+  <root id="7074560188272385935">
+    <node role="scriptsDir" roleId="3ior.4796668409958418110" type="3ior.BuildSourceProjectRelativePath" typeId="3ior.5481553824944787378" id="7074560188272385936" />
+    <node role="layout" roleId="3ior.5617550519002745372" type="3ior.BuildLayout" typeId="3ior.5617550519002745364" id="7074560188272385937" />
   </root>
 </model>
 
