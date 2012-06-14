@@ -18,7 +18,6 @@
     <node type="tpee.ClassConcept" typeId="tpee.1068390468198" id="2835791011697435013">
       <property name="name" nameId="tpck.1169194664001" value="VarTrafoHelper" />
     </node>
-    <node type="tgbt.StandalonePluginDescriptor" typeId="tgbt.7520713872864775836" id="5503769820674476360" />
     <node type="tgbt.StandalonePluginDescriptor" typeId="tgbt.7520713872864775836" id="1611636138416032949" />
   </roots>
   <root id="2835791011697435013">
@@ -442,7 +441,6 @@
       <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="2835791011697435018" />
     </node>
   </root>
-  <root id="5503769820674476360" />
   <root id="1611636138416032949" />
 </model>
 
