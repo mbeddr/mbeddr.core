@@ -1,0 +1,115 @@
+\section{Introduction}
+
+The term RCP is borrowed from the Eclipse ecosystem and stands for Rich Client
+Application. It refers to a stripped down version of the IDE that only contains
+those artifacts that are necessary for a given business purpose. In the MPS
+world it refers to a stripped down version of MPS that only contains those
+artifacts that are necessary to use a small domain-specific set of languages.
+Various aspects of MPS can be removed or customized to deliver a custom user
+experience for a given group of users. This article describes how. In
+particular, the following aspects of MPS can be customized:
+
+\begin{itemize}
+  \item various icons, slogans, splash screens and images
+  \item the help URL
+  \item the set of languages available to the users
+  \item the set of plugins available in MPS 
+\end{itemize}
+
+
+
+\section{Process Overview}
+
+To build a custom RCP version of MPS, you have to create a solution that
+contains a so-called \emph{build script}. A build script is written in MPS'
+build language which is optimized for building RCP applications (as well as
+IntelliJ plugins and in the future, Eclipse plugins). When running the generator
+for this build script, MPS generates an \ic{ant} file that creates the actual
+RCP distribution. 
+
+\section{Building an example RCP build}
+
+In this document we describe the development of an RCP build script for the
+mbeddr project. mbeddr is a set of languages for embedded software development
+based on MPS. The project is available at \ic{http://mbeddr.com}. It is Open
+Source, so all the code, including the RCP build script is available from the
+respository at \ic{https://github.com/mbeddr/mbeddr.core/}. The project that
+contains the build script can be found in \ic{/code/rcp-build/MPSIDE-build.mpr}.
+
+
+\subsection{Creating the Solution and the Build Script}
+
+In an arbitrary project create a new solution with a new model inside. In the
+model, configure as used languages 
+
+\begin{itemize}
+  \item \ic{jetbrains.mps.build} 
+  \item \ic{jetbrains.mps.build.mps} 
+\end{itemize}
+
+Also import the \ic{jetbrains.mps.ide.build} model. You can now create a new
+\ic{build project} in the model (the name is confusing: it is not actually a new
+build \emph{project}, just a build script). \fig{newbuildscript} shows the
+resulting, empty build script.
+
+ 
+\begin{figure}[h]
+\rule{\textwidth}{0.7pt}
+\begin{center} 
+  \includegraphics[width=120mm]{figures/newbuildscript.png}
+\end{center}
+\vspace{-0.6cm}
+\rule{\textwidth}{0.7pt}
+\caption{An empty build script after directly after creation.}
+\label{newbuildscript}  
+\end{figure}
+
+Let us look at the various sections of a build script:
+
+\begin{description}
+  \item[base directory] The base directory defines an absolute path relative to
+  which all other paths are specified. By default, this is the directory in
+  which the resulting \ic{ant} file will be generated, and in which it will be
+  executed.
+
+  \item[use plugins] The build language itself can be extended via
+  plugins\footnote{Note that these are \emph{not} the plugins that make up MPS
+  itself; those will be configured later.}. These plugins contribute additional
+  build language syntax. Typically, the \ic{java} and \ic{mps} plugins are required. 
+  We will use syntax contributed by these plugins below.
+   
+  \item[macros] Macros are essentially name-value pairs (similar to
+  \ic{\$\{something\} in \ic{ant}}). In the Macros section, these names
+  are defined and values are assigned. In the remainder of the build script these macro
+  variables will be used. MPS supports two kinds of Macros: \ic{var} macros are
+  strings and can be assigned any value. \ic{folder} represents paths, relative
+  to the base directory defined above. Note that MPS provides code completion
+  for the path components in \ic{folder} macros.
+  
+  \item[dependencies] This section defines dependencies to other build scripts.
+  MPS bundles a set of build scripts (e.g. \ic{buildStandalone},
+  \ic{buildWorkbench} or \ic{buildMPS}). By establishing a dependency to any one
+  of them, the structures defined in that references build script can be used in
+  the referencing build script. For example, the macros defined in the
+  referenced build scripts can be used.
+  
+  \item[project structure] This section defines the actual contents of the
+  to-be-built RCP application. Such contents may be JAR files, plugins, branding
+  or MPS languages.
+  
+  \item[default layout] This section creates the directory, file and JAR
+  structure of the new RCP distribution. It references and includes the
+  artifacts defined in the project structure section.
+\end{description}
+
+
+\section{Building the script for mbeddr}
+
+\begin{code}
+her is
+some code
+ 
+\end{code}
+
+
+

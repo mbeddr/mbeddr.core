@@ -13,6 +13,10 @@
       <property name="internalBaseDirectory" nameId="3ior.5204048710541015587" value="../.." />
       <property name="fileName" nameId="3ior.4915877860348071612" value="mbeddr.xml" />
     </node>
+    <node type="3ior.BuildProject" typeId="3ior.5617550519002745363" id="7074560188272385935">
+      <property name="internalBaseDirectory" nameId="3ior.5204048710541015587" value="." />
+      <property name="name" nameId="tpck.1169194664001" value="SomeRCPBuild" />
+    </node>
   </roots>
   <root id="7473128195640076592">
     <node role="parts" roleId="3ior.7389400916848080626" type="kdzh.BuildMps_Branding" typeId="kdzh.7753544965996377997" id="7753544965996546378">
@@ -663,24 +667,6 @@
               <property name="head" nameId="3ior.8618885170173601779" value="com.mbeddr.core.runconfiguration" />
               <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="7734145634063248038">
                 <property name="head" nameId="3ior.8618885170173601779" value="runconfiguration.mpl" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-      <node role="modules" roleId="kdzh.1500819558095907806" type="kdzh.BuildMps_Language" typeId="kdzh.3189788309731840248" id="7734145634063248025">
-        <property name="compact" nameId="kdzh.8369506495128725901" value="true" />
-        <property name="name" nameId="tpck.1169194664001" value="com.mbeddr.core.eclipse" />
-        <property name="uuid" nameId="kdzh.322010710375892619" value="a5bc1797-410b-4ce1-8c4d-9cff6020fae7" />
-        <property name="doNotCompile" nameId="kdzh.1500819558096356884" value="false" />
-        <node role="path" roleId="kdzh.322010710375956261" type="3ior.BuildSourceMacroRelativePath" typeId="3ior.7389400916848153117" id="7734145634063248027">
-          <link role="macro" roleId="3ior.7389400916848153130" targetNodeId="40698371035789303" resolveInfo="mbeddr.core.home" />
-          <node role="compositePart" roleId="3ior.7321017245477039051" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="7734145634063248028">
-            <property name="head" nameId="3ior.8618885170173601779" value="languages" />
-            <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="7734145634063248029">
-              <property name="head" nameId="3ior.8618885170173601779" value="com.mbeddr.core.eclipse" />
-              <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="7734145634063248030">
-                <property name="head" nameId="3ior.8618885170173601779" value="eclipse.mpl" />
               </node>
             </node>
           </node>
@@ -1785,6 +1771,10 @@
         </node>
       </node>
     </node>
+  </root>
+  <root id="7074560188272385935">
+    <node role="scriptsDir" roleId="3ior.4796668409958418110" type="3ior.BuildSourceProjectRelativePath" typeId="3ior.5481553824944787378" id="7074560188272385936" />
+    <node role="layout" roleId="3ior.5617550519002745372" type="3ior.BuildLayout" typeId="3ior.5617550519002745364" id="7074560188272385937" />
   </root>
 </model>
 
