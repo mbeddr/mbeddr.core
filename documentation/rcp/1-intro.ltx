@@ -84,7 +84,9 @@ Let us look at the various sections of a build script:
   variables will be used. MPS supports two kinds of Macros: \ic{var} macros are
   strings and can be assigned any value. \ic{folder} represents paths, relative
   to the base directory defined above. Note that MPS provides code completion
-  for the path components in \ic{folder} macros.
+  for the path components in \ic{folder} macros. Unfortunately it does not
+  \emph{check} a path for correctness once it is entered! \todo{I think this is
+  a bug}
   
   \item[dependencies] This section defines dependencies to other build scripts.
   MPS bundles a set of build scripts (e.g. \ic{buildStandalone},
@@ -100,6 +102,9 @@ Let us look at the various sections of a build script:
   \item[default layout] This section creates the directory, file and JAR
   structure of the new RCP distribution. It references and includes the
   artifacts defined in the project structure section.
+  
+  \item[properties file] In this section (there can actually be several of them)
+  we can create property files.
 \end{description}
 
 
@@ -270,33 +275,126 @@ folder lib
     files of idea branding MBEDDR 
 \end{code}
 
-We then create a folder \ic{plugins}. 
+We then create a folder \ic{plugins}. The \ic{mps-core} plugin is required in
+any RCP app, so it needs to be imported in any case. We then import various
+version control plugins (CVS, SVN anf git) defined in the \ic{buildStandalone}
+build script. For obvious reasons, a standalone mbeddr IDE needs version control
+support, so it makes sense to import those plugins. Finally we include the
+debugger plugin, since mbeddr also integrates with the MPS debugger.
 
 \begin{code} 
 folder plugins 
+  import buildStandalone::plugins/mps-core 
   import buildStandalone::plugins/cvsIntegration 
   import buildStandalone::plugins/git4idea 
   import buildStandalone::plugins/svn4idea 
-  import buildStandalone::plugins/mps-core 
-  import buildDebuggerPlugin::plugins/mps-debugger-api 
+  import buildDebuggerPlugin::plugins/mps-debugger-api
+  import buildDebuggerPlugin::plugins/mps-debugger-api/lib/debugger-api.jar 
 \end{code}
 
+\todo{Why do we have to have the last line? It is necessary to not run into an
+exception, but AFAIU, we shouldn't need it.}
+
+We then integrate the MBEDDR plugin defined in the project structure earlier.
+Using the \ic{plugin} construct we can import the complete definition of the
+plugin defined earlier.
+
+\begin{code} 
+plugin MBEDDRStuff 
+\end{code}
+
+Inside the plugin we define further subdirectories that contain various library
+jars. These jar files are automatically made visible to the plugin classpath
+\todo{How?}. Using the \ic{file} construct we copy various files into the plugin
+directory, using the macros defined earlier.
+
+\begin{code}
+plugin MBEDDRStuff 
+  folder runtime-libraries 
+    file $mbeddr.core.home/languages/com.mbeddr.core.modules.runtime/lib/commons-io-2.1.jar 
+     
+  folder zvtm-libraries 
+    file $mbeddr.mpsutil.home/languages/com.mbeddr.mpsutil.graphview/lib/antlr-2.7.7.jar 
+    file $mbeddr.mpsutil.home/languages/com.mbeddr.mpsutil.graphview/lib/commons-io-2.1.jar
+    ... 
+     
+  folder debugger-libraries 
+    file $mbeddr.core.home/languages/com.mbeddr.core.debug/lib/mi/cdt.jar 
+    file $mbeddr.core.home/languages/com.mbeddr.core.debug/lib/mi/cdt2.jar
+    .. 
+\end{code}\ignore{$}
+    
+Note how this plugin does not just contain the jars we copied in, but also all
+the language artifacts necessary. That has been accomplished by defining these
+\ic{mps groups} and referencing them from the plugin. The fact that we can use
+these \ic{mps groups} is thanks to the \ic{mps} build language plugin. It
+provides direct support for MPS artifacts, and all the necessary files and
+metadata are handled automatically.
       
 
+\subsubsection{Property Files}
+
+Finally we create a property file called \ic{build.number} that contains a bunch
+of meta data used in the running RCP application.
+
+\begin{code}
+properties file build.number 
+  build.number = ${build.number} 
+  date = ${date} 
+  version = 1.0  
+\end{code}
+
+
+\subsection{Generating and running the Build Script}
+
+Assuming your build script is free of errors, you can generate it (\ic{Rebuild
+Model} or \keystroke{Ctrl-F9}). This creates an \ic{ant} file that has the name
+that is mentioned at the top of the build script:
+
+\begin{code} 
+build MBEDDR-IDE generates mbeddr.xml 
+\end{code}
+
+This \ic{mbeddr.xml} (in this case) resides directly in your project directory.
+You can either run the file from the command line (using \ic{ant -buildfile
+mbeddr.xml}) or directly from within MPS (via the context menu on the build
+script in the project explorer). 
+
+Note that the build script compiles and packages all your languages, but it does
+\emph{not} regenerate them! So you have to make sure by other means that your
+language definitions are fully generated and up to date.
+
+
+\subsection{Insepcting the Generated Directory Structure}
+
+\fig{resultingstructure} shows the project structure after running the build
+script. In particular, inside the \ic{build/artifacts} directory, the 
+structure defined in the \ic{default layout} section of the build script has
+been created.
+
+\begin{figure}[h]
+\begin{center} 
+  \includegraphics[scale=0.7]{figures/resultingstructure.png}
+\end{center}
+\vspace{-0.6cm}
+\caption{The directory structure generated from running the genertated \ic{ant}
+file.}
+\label{resultingstructure}  
+\end{figure}
+
+We suggest you browse through the directory and file structure to connect what
+you see to the definitions in the build script.
+
+\subsection{Creating the Platform-Specific Distributions}
+
+At this point, the generated directory structure consitutes the platform
+indepenent core of a stripped down MPS distribution that contains all the
+artifacts you've configured into it, including your custom branding. However,
+you cannot run it, since the platform specific aspects are still missing.
 
 
 
+\todo{Here I am still waiting on the improved build scripts from Evgeny that
+handle the platform-specific part.}
 
-
-
-
-
-
-
-
-
-
-
-
- 
-
+\todo{also, the mps-make plugin still has to be manually copied - bug?}
