@@ -1184,10 +1184,13 @@
             <property name="head" nameId="3ior.8618885170173601779" value=".." />
             <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="40698371035789248">
               <property name="head" nameId="3ior.8618885170173601779" value=".." />
-              <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="40698371035789249">
-                <property name="head" nameId="3ior.8618885170173601779" value="tools" />
-                <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="40698371035789250">
-                  <property name="head" nameId="3ior.8618885170173601779" value="MPS2.5.app" />
+              <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="6195953089418232826">
+                <property name="head" nameId="3ior.8618885170173601779" value=".." />
+                <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="6195953089418232827">
+                  <property name="head" nameId="3ior.8618885170173601779" value="tools" />
+                  <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="6195953089418232828">
+                    <property name="head" nameId="3ior.8618885170173601779" value="MPS2.5.app" />
+                  </node>
                 </node>
               </node>
             </node>
@@ -1294,6 +1297,9 @@
         </node>
         <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_Import" typeId="3ior.841011766565753074" id="5403868867419461219">
           <link role="target" roleId="3ior.841011766565753076" targetNodeId="ffeo.6164334420696870840" resolveInfo="mps-debugger-api" />
+        </node>
+        <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_Import" typeId="3ior.841011766565753074" id="3685130210634902343">
+          <link role="target" roleId="3ior.841011766565753076" targetNodeId="ffeo.6164334420696871018" resolveInfo="debugger-api.jar" />
         </node>
         <node role="children" roleId="3ior.7389400916848037006" type="kdzh.BuildMpsLayout_Plugin" typeId="kdzh.6592112598314498926" id="7473128195640076617">
           <link role="plugin" roleId="kdzh.6592112598314801433" targetNodeId="7473128195640076593" />

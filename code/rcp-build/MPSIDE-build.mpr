@@ -16,7 +16,7 @@
   </component>
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="" />
-    <mapping directory="$PROJECT_DIR$/../../" vcs="Git" />
+    <mapping directory="$mbeddr.github.core.home$/" vcs="Git" />
   </component>
 </project>
 
