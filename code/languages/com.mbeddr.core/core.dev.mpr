@@ -62,7 +62,7 @@
           <value>
             <Library>
               <option name="name" value="mpsutil" />
-              <option name="path" value="$USER_HOME$/mbeddr.core/code/languages/com.mbeddr.mpsutil" />
+              <option name="path" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.mpsutil" />
             </Library>
           </value>
         </entry>
