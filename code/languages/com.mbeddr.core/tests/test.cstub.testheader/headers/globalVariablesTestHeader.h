@@ -24,5 +24,8 @@ enum simpleMonths enumV2;
 extern int externInt;
 const int constInt;
 
+const int * constIntWithPointer;
+int * const intWithConstPointer;
+const int * const constIntWithConstPointer;
 
 typeIsNotDefined notDefined;
