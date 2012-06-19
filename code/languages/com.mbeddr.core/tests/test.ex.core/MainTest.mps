@@ -19,12 +19,6 @@
     <node type="mj1l.TypeSizeConfiguration" typeId="mj1l.3335993110369795380" id="7496733358578280435" />
   </roots>
   <root id="55677248263828545">
-    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="679530008587493544">
-      <property name="name" nameId="tpck.1169194664001" value="empty_1338536555062_3" />
-    </node>
-    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="7518061998923756596">
-      <property name="name" nameId="tpck.1169194664001" value="empty_1340055114786_1" />
-    </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.GlobalVariableDeclaration" typeId="x27k.6610873504380335822" id="7518061998923756599">
       <property name="name" nameId="tpck.1169194664001" value="xyxy" />
       <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="7518061998923756600" />

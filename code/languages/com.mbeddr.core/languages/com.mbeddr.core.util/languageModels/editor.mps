@@ -115,6 +115,10 @@
       <property name="virtualPackage" nameId="tpck.1193676396447" value="reporting.config" />
       <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="k146.4459718605982051985" resolveInfo="DoNothingReportingStrategy" />
     </node>
+    <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="7297559910934293474">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="range" />
+      <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="k146.7297559910934293472" resolveInfo="ForRangeRef" />
+    </node>
   </roots>
   <root id="5686538669182273030">
     <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="5686538669182273032">
@@ -1070,9 +1074,8 @@
           <property name="flag" nameId="tpc2.1186414551515" value="true" />
         </node>
       </node>
-      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_RefNode" typeId="tpc2.1073389882823" id="7254843406768606785">
-        <property name="attractsFocus" nameId="tpc2.1130859485024" value="2" />
-        <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="k146.8729447926330198397" />
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Property" typeId="tpc2.1073389658414" id="7297559910934149812">
+        <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="tpck.1169194664001" resolveInfo="name" />
       </node>
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="8729447926330241141">
         <property name="text" nameId="tpc2.1073389577007" value="in" />
@@ -1221,6 +1224,17 @@
   <root id="4459718605982051987">
     <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="4459718605982051989">
       <property name="text" nameId="tpc2.1073389577007" value="nothing" />
+    </node>
+  </root>
+  <root id="7297559910934293474">
+    <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_RefCell" typeId="tpc2.1088013125922" id="7297559910934293476">
+      <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="k146.7297559910934293473" />
+      <node role="editorComponent" roleId="tpc2.1088186146602" type="tpc2.InlineEditorComponent" typeId="tpc2.1088185857835" id="7297559910934293477">
+        <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Property" typeId="tpc2.1073389658414" id="7297559910934293479">
+          <property name="readOnly" nameId="tpc2.1140017977771" value="true" />
+          <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="tpck.1169194664001" resolveInfo="name" />
+        </node>
+      </node>
     </node>
   </root>
 </model>
