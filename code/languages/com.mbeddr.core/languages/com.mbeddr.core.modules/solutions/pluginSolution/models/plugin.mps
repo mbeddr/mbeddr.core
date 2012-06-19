@@ -24,6 +24,7 @@
   <import index="7aka" modelUID="r:02a5dde5-8560-4c26-8875-8f2a79444bd3(com.mbeddr.mpsutil.bldoc.structure)" version="-1" implicit="yes" />
   <import index="qff7" modelUID="r:2ba2e307-a81d-4a21-9e0b-de3624e2fb83(jetbrains.mps.lang.access.structure)" version="0" implicit="yes" />
   <import index="tp2q" modelUID="r:00000000-0000-4000-0000-011c8959032e(jetbrains.mps.baseLanguage.collections.structure)" version="7" implicit="yes" />
+  <import index="tgbt" modelUID="r:c70ee934-afb1-4c02-b6a9-1c4d1908a792(jetbrains.mps.lang.plugin.standalone.structure)" version="1" implicit="yes" />
   <roots>
     <node type="4w5v.RefactoringAction" typeId="4w5v.7518061998923573137" id="7518061998923661565">
       <property name="name" nameId="tpck.1169194664001" value="Extract into New Module" />
@@ -45,6 +46,7 @@
       <property name="name" nameId="tpck.1169194664001" value="Replicate" />
       <link role="refactoring" roleId="4w5v.7518061998923573138" targetNodeId="e4fp.380699267178693507" resolveInfo="replicate" />
     </node>
+    <node type="tgbt.StandalonePluginDescriptor" typeId="tgbt.7520713872864775836" id="7990137026351650149" />
   </roots>
   <root id="7518061998923661565">
     <node role="shortcut" roleId="4w5v.7518061998923573139" type="tp4k.KeyMapKeystroke" typeId="tp4k.1207318242772" id="7518061998923661598">
@@ -224,5 +226,6 @@
       </node>
     </node>
   </root>
+  <root id="7990137026351650149" />
 </model>
 
