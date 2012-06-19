@@ -54,6 +54,7 @@
       <macro name="mbeddr.github.core.home" path="${mbeddr.github.core.home}"/>
 	  <project file="${mbeddr.github.core.home}/${projectDir}/DebuggerTutorial.mpr"/>
 	  <library name="core" dir="${mbeddr.github.core.home}/code/languages/"/>
+	  <library name="debuggerTutorial" dir="${mbeddr.github.core.home}/${projectDir}/languages"/>
       <modules dir="${mbeddr.github.core.home}/${projectDir}/solutions"/>
     </mps.generate>
   </target>
