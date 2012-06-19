@@ -78,7 +78,7 @@
         <link role="module" roleId="51wr.7717755763392524108" targetNodeId="2671893947946267858" resolveInfo="MainModule" />
       </node>
       <node role="referencedLibs" roleId="51wr.2671893947946267988" type="51wr.LibraryRef" typeId="51wr.2671893947946267774" id="5048824311957548815">
-        <link role="lib" roleId="51wr.2671893947946267775" targetNodeId="53qa.2671893947946166812" resolveInfo="MathLib" />
+        <link role="lib" roleId="51wr.2671893947946267775" targetNodeId="53qa.2671893947946166812" resolveInfo="MathLibLib" />
       </node>
     </node>
     <node role="target" roleId="51wr.5323740605968447026" type="51wr.DesktopPlatform" typeId="51wr.5323740605968447022" id="4459718605982731593">
