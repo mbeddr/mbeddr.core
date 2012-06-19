@@ -38,31 +38,35 @@ public class CImplementationFileTestCase extends TestCase {
 
 		
 		content.append("#include <stdio.h> \n");
-		content.append(" \n");
-		content.append("int a10=10; \n");
-		content.append(" \n");
-		content.append("int b20=20; \n");
-		content.append(" \n");
-		content.append("int c30=30; \n");
-		content.append(" \n");
-		content.append("int add(int a, int b){ \n");
+//		content.append(" \n");
+//		content.append("int a10=10; \n");
+//		content.append(" \n");
+//		content.append("int b20=20; \n");
+//		content.append(" \n");
+//		content.append("int c30=30; \n");
+//		content.append(" \n");
 		
+		//fuction prototype
+		content.append("int add(int a, int b); \n");
+		
+		/*
+		content.append("int add(int a, int b){ \n");
 		content.append("int ret; \n");
 		content.append("ret = a+b; \n");
 		content.append("return ret; \n");
-		
-		
 		content.append("} \n");
-		content.append(" \n");
-		content.append("int main(void) { \n");
-		content.append("int result=add(a10, b20); \n");
-		content.append("if(result==c30){ \n");
-		content.append("printf(\"sum=30\"); \n");
-		content.append("} else { \n");
-		content.append("printf(\"sum not 30: %i\", add(a10,b20)); \n");
-		content.append("} \n");
-		content.append("return 0; \n");
-		content.append("		} \n");
+		*/
+		
+//		content.append(" \n");
+//		content.append("int main(void) { \n");
+//		content.append("int result=add(a10, b20); \n");
+//		content.append("if(result==c30){ \n");
+//		content.append("printf(\"sum=30\"); \n");
+//		content.append("} else { \n");
+//		content.append("printf(\"sum not 30: %i\", add(a10,b20)); \n");
+//		content.append("} \n");
+//		content.append("return 0; \n");
+//		content.append("		} \n");
 	
 		
 		HashMap<String, String> options = new HashMap<String, String>();

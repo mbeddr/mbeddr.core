@@ -1167,11 +1167,6 @@
               <node role="operation" roleId="tpee.1197027833540" type="tp2q.IsNotEmptyOperation" typeId="tp2q.1176501494711" id="2231107713270995457" />
             </node>
           </node>
-          <node role="statement" roleId="tpee.1068581517665" type="tpee.ReturnStatement" typeId="tpee.1068581242878" id="2228164773580838558">
-            <node role="expression" roleId="tpee.1068581517676" type="tpee.BooleanConstant" typeId="tpee.1068580123137" id="2228164773580838560">
-              <property name="value" nameId="tpee.1068580123138" value="false" />
-            </node>
-          </node>
         </node>
       </node>
     </node>

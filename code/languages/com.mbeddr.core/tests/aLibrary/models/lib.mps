@@ -117,7 +117,7 @@
   </root>
   <root id="2671893947946166811">
     <node role="binaries" roleId="51wr.5046689135694070731" type="51wr.StaticLibrary" typeId="51wr.2671893947946158498" id="2671893947946166812">
-      <property name="name" nameId="tpck.1169194664001" value="MathLib" />
+      <property name="name" nameId="tpck.1169194664001" value="MathLibLib" />
       <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="2671893947946166813">
         <link role="module" roleId="51wr.7717755763392524108" targetNodeId="1579201292659807720" resolveInfo="MathLib" />
       </node>

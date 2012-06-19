@@ -6,7 +6,10 @@
   <devkit namespace="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   <import index="rbly" modelUID="r:a38003d5-3cc2-4cc7-bfed-041d3d2d1289(com.mbeddr.cc.var.buildconfig.structure)" version="1" />
   <import index="51wr" modelUID="r:b31f1c3c-99aa-4f1e-a329-cba27efb1a6b(com.mbeddr.core.buildconfig.structure)" version="1" />
-  <import index="6jzq" modelUID="r:b34a99b5-15cb-4dbe-ba4c-638edf0da733(com.mbeddr.cc.var.annotations.plugin)" version="1" />
+  <import index="rpdm" modelUID="r:91453863-abdf-432d-a851-57f349774287(com.mbeddr.cc.var.annotations.behavior)" version="1" />
+  <import index="qqyh" modelUID="r:a74300b8-76a8-461e-befa-fc86b0ad5dd9(com.mbeddr.cc.var.fm.structure)" version="-1" />
+  <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="14" />
+  <import index="91eq" modelUID="r:994c81cf-cab3-4a49-9a23-6e6df9bd9789(com.mbeddr.cc.var.buildconfig.generator.main.util)" version="-1" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="tpf8" modelUID="r:00000000-0000-4000-0000-011c895902e8(jetbrains.mps.lang.generator.structure)" version="2" implicit="yes" />
   <import index="tp25" modelUID="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" version="-1" implicit="yes" />
@@ -153,8 +156,8 @@
         </node>
         <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="2785540331872357288">
           <node role="expression" roleId="tpee.1068580123156" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="2785540331872357290">
-            <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="6jzq.2835791011697435019" resolveInfo="handleTransformation" />
-            <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="6jzq.2835791011697435013" resolveInfo="VarTrafoHelper" />
+            <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="91eq.7518061998923318057" resolveInfo="handleTransformation" />
+            <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="91eq.7518061998923318056" resolveInfo="VarTrafoHelper" />
             <node role="actualArgument" roleId="tpee.1068499141038" type="tpcw.ConceptFunctionParameter_model" typeId="tpcw.1161622665029" id="2785540331872357291" />
             <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="2785540331872357293">
               <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="6617704999132130913" resolveInfo="trafoConfig" />
