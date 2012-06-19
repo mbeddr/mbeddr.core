@@ -15,8 +15,9 @@ int (addFun2)(int,int); //result?
 
 extern int externFunction();
 
-const int *(*pGetIntConst)();
 const int *getIntConst();
+
+const int *(*pGetConstInt)();
 
 typedef const int *(*pGetIntConstAsATypeDef)();
 
