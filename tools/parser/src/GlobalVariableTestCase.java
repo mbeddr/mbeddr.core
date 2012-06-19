@@ -39,8 +39,8 @@ public class GlobalVariableTestCase extends TestCase {
 		StringBuilder content = new StringBuilder();
 
 
-		content.append("int i; \n");
-		content.append("unsigned i2; \n");
+		content.append("const int * constIntWithPointer; \n");
+
 
 
 		HashMap<String, String> options = new HashMap<String, String>();
