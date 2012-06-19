@@ -789,10 +789,6 @@
       <zipfileset file="${mbeddr.mpsutil.home}/languages/com.mbeddr.mpsutil.tables.rt/tables.rt.msd" prefix="module" />
       <zipfileset dir="${mbeddr.mpsutil.home}/languages/com.mbeddr.mpsutil.tables.rt" includes="**/*.mps, **/*.metadata, **/*.history" prefix="module/" />
     </jar>
-    <mkdir dir="${build.layout}/plugins/mbeddr/runtime-libraries" />
-    <copy todir="${build.layout}/plugins/mbeddr/runtime-libraries">
-      <fileset file="${mbeddr.core.home}/languages/com.mbeddr.core.modules.runtime/lib/commons-io-2.1.jar" />
-    </copy>
     <mkdir dir="${build.layout}/plugins/mbeddr/zvtm-libraries" />
     <copy todir="${build.layout}/plugins/mbeddr/zvtm-libraries">
       <fileset file="${mbeddr.mpsutil.home}/languages/com.mbeddr.mpsutil.graphview/lib/antlr-2.7.7.jar" />
