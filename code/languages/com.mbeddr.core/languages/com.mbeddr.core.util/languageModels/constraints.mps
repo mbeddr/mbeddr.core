@@ -50,6 +50,10 @@
       <property name="virtualPackage" nameId="tpck.1193676396447" value="reporting" />
       <link role="concept" roleId="tp1t.1213093996982" targetNodeId="k146.767515563077204464" resolveInfo="MessageProperty" />
     </node>
+    <node type="tp1t.ConceptConstraints" typeId="tp1t.1213093968558" id="7297559910934423213">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="range" />
+      <link role="concept" roleId="tp1t.1213093996982" targetNodeId="k146.7297559910934293472" resolveInfo="ForRangeRef" />
+    </node>
   </roots>
   <root id="5686538669182296675">
     <node role="canBeChild" roleId="tp1t.1213106463729" type="tp1t.ConstraintFunction_CanBeAChild" typeId="tp1t.1202989531578" id="5686538669182296676">
@@ -308,6 +312,28 @@
                 <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="hwgx.5470497459578304992" resolveInfo="shortDescriptionForCCMenu" />
               </node>
             </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </root>
+  <root id="7297559910934423213">
+    <node role="canBeChild" roleId="tp1t.1213106463729" type="tp1t.ConstraintFunction_CanBeAChild" typeId="tp1t.1202989531578" id="7297559910934423214">
+      <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="7297559910934423215">
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="7297559910934423216">
+          <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="7297559910934423271">
+            <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="7297559910934423238">
+              <node role="operand" roleId="tpee.1197027771414" type="tp1t.ConstraintFunctionParameter_parentNode" typeId="tp1t.1202989658459" id="7297559910934423217" />
+              <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_GetAncestorOperation" typeId="tp25.1171407110247" id="7297559910934423244">
+                <node role="parameter" roleId="tp25.1144104376918" type="tp25.OperationParm_Concept" typeId="tp25.1144101972840" id="7297559910934423245">
+                  <node role="conceptArgument" roleId="tp25.1207343664468" type="tp25.RefConcept_Reference" typeId="tp25.1177026924588" id="7297559910934423248">
+                    <link role="conceptDeclaration" roleId="tp25.1177026940964" targetNodeId="k146.8729447926330198396" resolveInfo="ForRangeStatement" />
+                  </node>
+                </node>
+                <node role="parameter" roleId="tp25.1144104376918" type="tp25.OperationParm_Inclusion" typeId="tp25.1144100932627" id="7297559910934423250" />
+              </node>
+            </node>
+            <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_IsNotNullOperation" typeId="tp25.1172008320231" id="7297559910934423277" />
           </node>
         </node>
       </node>
