@@ -13,6 +13,7 @@
       <modulePath path="${project}/languages/com.mbeddr.mpsutil.graphview/solutions/pluginSolution/pluginSolution.msd" folder="" />
       <modulePath path="${project}/languages/com.mbeddr.mpsutil.langdepdiag/langdepdiag.mpl" folder="" />
       <modulePath path="${project}/languages/com.mbeddr.mpsutil.langstats/langstats.mpl" folder="" />
+      <modulePath path="${project}/languages/com.mbeddr.mpsutil.refactoring/refactoring.mpl" folder="" />
       <modulePath path="${project}/languages/com.mbeddr.mpsutil.tables.rt/tables.rt.msd" />
       <modulePath path="${project}/solutions/com.mbeddr.mpsutil.graph.demo/demo.msd" folder="" />
     </projectModules>
@@ -30,7 +31,6 @@
   </component>
   <component name="VcsDirectoryMappings">
     <mapping directory="$mbeddr.github.core.home$" vcs="Git" />
-    <mapping directory="$mbeddr.github.core.home$/" vcs="Git" />
   </component>
 </project>
 

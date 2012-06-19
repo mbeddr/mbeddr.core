@@ -9,8 +9,11 @@
       <modulePath path="${project}/devkits/com.mbeddr.cc.reqtrace/reqtrace.devkit" folder="requirements" />
       <modulePath path="${project}/devkits/com.mbeddr.cc.variability/variability.devkit" folder="ple_var" />
       <modulePath path="${project}/languages/com.mbeddr.cc.requirements/requirements.mpl" folder="requirements" />
+      <modulePath path="${project}/languages/com.mbeddr.cc.requirements/solutions/pluginSolution/pluginSolution.msd" folder="requirements" />
+      <modulePath path="${project}/languages/com.mbeddr.cc.trace/solutions/pluginSolution/pluginSolution.msd" folder="requirements" />
       <modulePath path="${project}/languages/com.mbeddr.cc.trace/trace.mpl" folder="requirements" />
       <modulePath path="${project}/languages/com.mbeddr.cc.var.annotations/fm.mpl" folder="ple_var" />
+      <modulePath path="${project}/languages/com.mbeddr.cc.var.annotations/solutions/pluginSolution/pluginSolution.msd" folder="ple_var" />
       <modulePath path="${project}/languages/com.mbeddr.cc.var.buildconfig/buildconfig.mpl" folder="ple_var" />
       <modulePath path="${project}/languages/com.mbeddr.cc.var.fm/fm.mpl" folder="ple_var" />
       <modulePath path="${project}/tests/test.ex.cc.fm/fm.msd" folder="tests" />
