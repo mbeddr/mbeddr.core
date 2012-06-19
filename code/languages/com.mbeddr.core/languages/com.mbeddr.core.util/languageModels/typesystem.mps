@@ -89,6 +89,10 @@
       <property name="name" nameId="tpck.1169194664001" value="typeof_ForRangeRef" />
       <property name="virtualPackage" nameId="tpck.1193676396447" value="range" />
     </node>
+    <node type="tpd4.SubtypingRule" typeId="tpd4.1175147670730" id="7566588517317865559">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="range" />
+      <property name="name" nameId="tpck.1169194664001" value="supertypeOf_RangeType" />
+    </node>
   </roots>
   <root id="5686538669182300976">
     <node role="body" roleId="tpd4.1195213635060" type="tpee.StatementList" typeId="tpee.1068580123136" id="5686538669182300977">
@@ -914,7 +918,7 @@
       <node role="leftOperandType" roleId="tpd4.1236083115043" type="tpee.GenericNewExpression" typeId="tpee.1145552977093" id="4157464901390021913">
         <node role="creator" roleId="tpee.1145553007750" type="tp25.SNodeCreator" typeId="tp25.1180636770613" id="4157464901390021915">
           <node role="createdType" roleId="tp25.1180636770616" type="tp25.SNodeType" typeId="tp25.1138055754698" id="4157464901390021916">
-            <link role="concept" roleId="tp25.1138405853777" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
+            <link role="concept" roleId="tp25.1138405853777" targetNodeId="mj1l.8860443239512128056" resolveInfo="PrimitiveType" />
           </node>
         </node>
       </node>
@@ -927,13 +931,6 @@
             <node role="expression" roleId="tpee.1068580123156" type="tp3r.Quotation" typeId="tp3r.1196350785113" id="4157464901390021931">
               <node role="quotedNode" roleId="tp3r.1196350785114" type="mj1l.BooleanType" typeId="mj1l.8860443239512128058" id="4157464901390021933" />
             </node>
-          </node>
-        </node>
-      </node>
-      <node role="rightOperandType" roleId="tpd4.1236083115200" type="tpee.GenericNewExpression" typeId="tpee.1145552977093" id="4157464901390021917">
-        <node role="creator" roleId="tpee.1145553007750" type="tp25.SNodeCreator" typeId="tp25.1180636770613" id="4157464901390021918">
-          <node role="createdType" roleId="tp25.1180636770616" type="tp25.SNodeType" typeId="tp25.1138055754698" id="4157464901390021919">
-            <link role="concept" roleId="tp25.1138405853777" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
           </node>
         </node>
       </node>
@@ -985,6 +982,21 @@
           <node role="statement" roleId="tpee.1068581517665" type="tpee.ReturnStatement" typeId="tpee.1068581242878" id="4157464901390050145">
             <node role="expression" roleId="tpee.1068581517676" type="tpee.BooleanConstant" typeId="tpee.1068580123137" id="4157464901390050147">
               <property name="value" nameId="tpee.1068580123138" value="false" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node role="rightOperandType" roleId="tpd4.1236083115200" type="tp3r.Quotation" typeId="tp3r.1196350785113" id="7566588517317866678">
+        <node role="quotedNode" roleId="tp3r.1196350785114" type="k146.RangeType" typeId="k146.6307143892175911084" id="7566588517317866684">
+          <node role="elementType" roleId="k146.6307143892175911115" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="7566588517317866686">
+            <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp3r.Antiquotation" typeId="tp3r.1196350785112" id="7566588517317866687">
+              <node role="expression" roleId="tp3r.1196350785111" type="tpee.GenericNewExpression" typeId="tpee.1145552977093" id="7566588517317866689">
+                <node role="creator" roleId="tpee.1145553007750" type="tp25.SNodeCreator" typeId="tp25.1180636770613" id="7566588517317866691">
+                  <node role="createdType" roleId="tp25.1180636770616" type="tp25.SNodeType" typeId="tp25.1138055754698" id="7566588517317866692">
+                    <link role="concept" roleId="tp25.1138405853777" targetNodeId="mj1l.8860443239512128056" resolveInfo="PrimitiveType" />
+                  </node>
+                </node>
+              </node>
             </node>
           </node>
         </node>
@@ -1385,6 +1397,17 @@
     <node role="applicableNode" roleId="tpd4.1174648101952" type="tpd4.ConceptReference" typeId="tpd4.1174642788531" id="7297559910934351642">
       <property name="name" nameId="tpck.1169194664001" value="frr" />
       <link role="concept" roleId="tpd4.1174642800329" targetNodeId="k146.7297559910934293472" resolveInfo="ForRangeRef" />
+    </node>
+  </root>
+  <root id="7566588517317865559">
+    <node role="body" roleId="tpd4.1175147624276" type="tpee.StatementList" typeId="tpee.1068580123136" id="7566588517317865560">
+      <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="7566588517317865638">
+        <node role="expression" roleId="tpee.1068580123156" type="tpee.NullLiteral" typeId="tpee.1070534058343" id="7566588517317865639" />
+      </node>
+    </node>
+    <node role="applicableNode" roleId="tpd4.1174648101952" type="tpd4.ConceptReference" typeId="tpd4.1174642788531" id="7566588517317865565">
+      <property name="name" nameId="tpck.1169194664001" value="rt" />
+      <link role="concept" roleId="tpd4.1174642800329" targetNodeId="k146.6307143892175911084" resolveInfo="RangeType" />
     </node>
   </root>
 </model>
