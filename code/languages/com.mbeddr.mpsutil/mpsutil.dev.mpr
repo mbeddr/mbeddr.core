@@ -30,6 +30,7 @@
   </component>
   <component name="VcsDirectoryMappings">
     <mapping directory="$mbeddr.github.core.home$" vcs="Git" />
+    <mapping directory="$mbeddr.github.core.home$/" vcs="Git" />
   </component>
 </project>
 
