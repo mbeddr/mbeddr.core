@@ -83,10 +83,8 @@ Let us look at the various sections of a build script:
   are defined and values are assigned. In the remainder of the build script these macro
   variables will be used. MPS supports two kinds of Macros: \ic{var} macros are
   strings and can be assigned any value. \ic{folder} represents paths, relative
-  to the base directory defined above. Note that MPS provides code completion
-  for the path components in \ic{folder} macros. Unfortunately it does not
-  \emph{check} a path for correctness once it is entered! \todo{I think this is
-  a bug}
+  to the base directory defined above and/or based on other Macros. Note that
+  MPS provides code completion for the path components in \ic{folder} macros.
   
   \item[dependencies] This section defines dependencies to other build scripts.
   MPS bundles a set of build scripts (e.g. \ic{buildStandalone},
@@ -96,15 +94,13 @@ Let us look at the various sections of a build script:
   referenced build scripts can be used.
   
   \item[project structure] This section defines the actual contents of the
-  to-be-built RCP application. Such contents may be JAR files, plugins, branding
-  or MPS languages.
+  to-be-built RCP application. Such contents may be MPS modules (languages,
+  solutions, devkits), Java libraries, IDEA branding and plugins.
   
-  \item[default layout] This section creates the directory, file and JAR
-  structure of the new RCP distribution. It references and includes the
-  artifacts defined in the project structure section.
-  
-  \item[properties file] In this section (there can actually be several of them)
-  we can create property files.
+  \item[default layout] This section defines the files that are output,
+  it creates the directory, file and JAR structure of the new RCP distribution.
+  It references and includes the artifacts defined in the project structure 
+  section and in other build scripts this one depends on.
 \end{description}
 
 
@@ -127,7 +123,12 @@ macros:
   folder mbeddr.mpsutil.home = ./../languages/com.mbeddr.mpsutil 
 \end{code}
 
+Note that you can leave a macro undefined (i.e. just specify the name) and then
+define it when you call \ic{ant} by using a property definition: 
 
+\begin{code}
+ant -Dsome.variable=a.value
+\end{code}
 
 \subsubsection{Dependencies}
 
@@ -203,8 +204,10 @@ idea plugin MBEDDRStuff
 \end{code}
 
 You can define a name and a version, dependencies to other plugins \todo{why do
-we need the mps.core thing here?} as well as the actual contents. The
-\ic{mbeddr.core} and \ic{mpsutil} entries in the contents are referneces to
+we need the mps.core thing here?} as well as the actual contents. Whenever your
+RCP contains languages, you will need \ic{jetbrains.mps.core} because it
+provides things like \ic{BaseConcept} or the \ic{INamedConcept} interface.
+The \ic{mbeddr.core} and \ic{mpsutil} entries in the contents are references to
 \ic{mps groups} defined below. An \ic{mps groups} is a group of MPS artifacts.
 Since we have included the \ic{mps} plugin (at the very top of the build script)
 we can use MPS-specific language constructs. \ic{mps groups} are an example.
@@ -245,9 +248,10 @@ In addition to languages, you can also reference solutions with the
 
 The layout constructs the directory and file structure of the RCP distribution.
 It copies in files from various sources, and in particular from the project
-structure discussed in the previous section. It can also refer to artifacts
-defined in other build scripts on which this script depends. We start out with
-the following code:
+structure discussed in the previous section. It also also compiles, builds and
+packages these files if necessary. It can also refer to artifacts defined in
+other build scripts on which this script depends. We start out with the
+following code:
 
 \begin{code}
 default layout: 
@@ -335,7 +339,8 @@ metadata are handled automatically.
 \subsubsection{Property Files}
 
 Finally we create a property file called \ic{build.number} that contains a bunch
-of meta data used in the running RCP application.
+of meta data used in the running RCP application. It is required by the
+underlying IntelliJ platform. 
 
 \begin{code}
 properties file build.number 
@@ -355,14 +360,17 @@ that is mentioned at the top of the build script:
 build MBEDDR-IDE generates mbeddr.xml 
 \end{code}
 
-This \ic{mbeddr.xml} (in this case) resides directly in your project directory.
-You can either run the file from the command line (using \ic{ant -buildfile
-mbeddr.xml}) or directly from within MPS (via the context menu on the build
-script in the project explorer). 
+This \ic{mbeddr.xml} (in this case) resides directly in your project
+directory\footnote{If you do not specify a file name it defaults to
+\ic{build.xml} so it can be run by ant without using the \ic{-buildfile}
+option.}. You can either run the file from the command line (using \ic{ant
+-buildfile mbeddr.xml}) or directly from within MPS (via the context menu on the
+build script in the project explorer).
 
 Note that the build script compiles and packages all your languages, but it does
-\emph{not} regenerate them! So you have to make sure by other means that your
-language definitions are fully generated and up to date.
+\emph{not} regenerate them\footnote{this will change in an upcoming release}! So
+you have to make sure by other means that your language definitions are fully
+generated and up to date.
 
 
 \subsection{Insepcting the Generated Directory Structure}
