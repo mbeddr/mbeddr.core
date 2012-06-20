@@ -245,10 +245,6 @@
       <property name="virtualPackage" nameId="tpck.1193676396447" value="types.ieee754" />
       <property name="name" nameId="tpck.1169194664001" value="supertypeof_LongDoubleType" />
     </node>
-    <node type="tpd4.InequationReplacementRule" typeId="tpd4.1201607707634" id="6762565859341065203">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="types" />
-      <property name="name" nameId="tpck.1169194664001" value="int8ToUInt8TypeReplacement" />
-    </node>
     <node type="tpd4.SubtypingRule" typeId="tpd4.1175147670730" id="6762565859341128423">
       <property name="virtualPackage" nameId="tpck.1193676396447" value="types" />
       <property name="name" nameId="tpck.1169194664001" value="MeetTypeSupertypes" />
@@ -4718,46 +4714,6 @@
     <node role="applicableNode" roleId="tpd4.1174648101952" type="tpd4.ConceptReference" typeId="tpd4.1174642788531" id="7566588517317772550">
       <property name="name" nameId="tpck.1169194664001" value="longDoubleType" />
       <link role="concept" roleId="tpd4.1174642800329" targetNodeId="mj1l.9149785691754701072" resolveInfo="LongDoubleType" />
-    </node>
-  </root>
-  <root id="6762565859341065203">
-    <node role="supertypeNode" roleId="tpd4.1201607798918" type="tpd4.ConceptReference" typeId="tpd4.1174642788531" id="6762565859341065232">
-      <property name="name" nameId="tpck.1169194664001" value="int8tType" />
-      <link role="concept" roleId="tpd4.1174642800329" targetNodeId="mj1l.8463282783691618461" resolveInfo="UnsignedInt8tType" />
-    </node>
-    <node role="body" roleId="tpd4.1175147624276" type="tpee.StatementList" typeId="tpee.1068580123136" id="6762565859341065205" />
-    <node role="applicableNode" roleId="tpd4.1174648101952" type="tpd4.ConceptReference" typeId="tpd4.1174642788531" id="6762565859341065231">
-      <property name="name" nameId="tpck.1169194664001" value="uint8tType" />
-      <link role="concept" roleId="tpd4.1174642800329" targetNodeId="mj1l.8463282783691618426" resolveInfo="Int8tType" />
-    </node>
-    <node role="isApplicableClause" roleId="tpd4.3592071576955708909" type="tpd4.IsReplacementRuleApplicable_ConceptFunction" typeId="tpd4.3592071576955708904" id="6762565859341065233">
-      <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="6762565859341065234">
-        <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="6762565859341065235">
-          <node role="expression" roleId="tpee.1068580123156" type="tpee.AndExpression" typeId="tpee.1080120340718" id="6762565859341065236">
-            <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.GreaterThanOrEqualsExpression" typeId="tpee.1153417849900" id="6762565859341065237">
-              <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.DotExpression" typeId="tpee.1197027756228" id="6762565859341065238">
-                <node role="operand" roleId="tpee.1197027771414" type="tpd4.ApplicableNodeReference" typeId="tpd4.1174650418652" id="6762565859341065239">
-                  <link role="applicableNode" roleId="tpd4.1174650432090" targetNodeId="6762565859341065232" resolveInfo="int8tType" />
-                </node>
-                <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_ConceptMethodCall" typeId="tp25.1179409122411" id="6762565859341065240">
-                  <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="ywuz.7496733358577706900" resolveInfo="getValue" />
-                </node>
-              </node>
-              <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="6762565859341065241">
-                <property name="value" nameId="tpee.1068580320021" value="0" />
-              </node>
-            </node>
-            <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.DotExpression" typeId="tpee.1197027756228" id="6762565859341065242">
-              <node role="operand" roleId="tpee.1197027771414" type="tpd4.ApplicableNodeReference" typeId="tpd4.1174650418652" id="6762565859341065243">
-                <link role="applicableNode" roleId="tpd4.1174650432090" targetNodeId="6762565859341065232" resolveInfo="int8tType" />
-              </node>
-              <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_ConceptMethodCall" typeId="tp25.1179409122411" id="6762565859341065244">
-                <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="ywuz.366831539918640480" resolveInfo="isLiteral" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
     </node>
   </root>
   <root id="6762565859341128423">
