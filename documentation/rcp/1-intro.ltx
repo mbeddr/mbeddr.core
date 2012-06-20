@@ -203,10 +203,10 @@ idea plugin MBEDDRStuff
     jetbrains.mps.core  
 \end{code}
 
-You can define a name and a version, dependencies to other plugins \todo{why do
-we need the mps.core thing here?} as well as the actual contents. Whenever your
-RCP contains languages, you will need \ic{jetbrains.mps.core} because it
-provides things like \ic{BaseConcept} or the \ic{INamedConcept} interface.
+You can define a name and a version, dependencies to other plugins as well as
+the actual contents. Whenever your RCP contains languages, you will need
+\ic{jetbrains.mps.core} because it provides things like \ic{BaseConcept} or the
+\ic{INamedConcept} interface.
 The \ic{mbeddr.core} and \ic{mpsutil} entries in the contents are references to
 \ic{mps groups} defined below. An \ic{mps groups} is a group of MPS artifacts.
 Since we have included the \ic{mps} plugin (at the very top of the build script)
@@ -293,11 +293,7 @@ folder plugins
   import buildStandalone::plugins/git4idea 
   import buildStandalone::plugins/svn4idea 
   import buildDebuggerPlugin::plugins/mps-debugger-api
-  import buildDebuggerPlugin::plugins/mps-debugger-api/lib/debugger-api.jar 
 \end{code}
-
-\todo{Why do we have to have the last line? It is necessary to not run into an
-exception, but AFAIU, we shouldn't need it.}
 
 We then integrate the MBEDDR plugin defined in the project structure earlier.
 Using the \ic{plugin} construct we can import the complete definition of the
