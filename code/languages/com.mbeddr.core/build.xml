@@ -99,6 +99,7 @@
       <sysproperty key="idea.config.path" value="${mps.platform.caches}/config"/>
       <sysproperty key="idea.plugins.path" value="${mps.platform.caches}/plugins"/>
  	  
+      <sysproperty key="mps.junit.pathmacro.mbeddr.assembla.ext.home" value="${mbeddr.github.core.home}"/>
       <sysproperty key="mps.junit.pathmacro.mbeddr.github.core.home" value="${mbeddr.github.core.home}"/>
 	  <sysproperty key="mps.junit.project" value="${mbeddr.github.core.home}/${mbeddr.core.project.mpr}"/>
 
