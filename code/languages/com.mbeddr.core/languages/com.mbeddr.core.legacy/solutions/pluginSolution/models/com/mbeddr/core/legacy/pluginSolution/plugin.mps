@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model modelUID="r:1bf60a94-da24-4c2e-b5b2-3d0917de8e3f(plugin)">
+<model modelUID="r:1bf60a94-da24-4c2e-b5b2-3d0917de8e3f(com.mbeddr.core.legacy.pluginSolution.plugin)">
   <persistence version="7" />
   <language namespace="ef7bf5ac-d06c-4342-b11d-e42104eb9343(jetbrains.mps.lang.plugin.standalone)" />
   <language namespace="28f9e497-3b42-4291-aeba-0a1039153ab1(jetbrains.mps.lang.plugin)" />
