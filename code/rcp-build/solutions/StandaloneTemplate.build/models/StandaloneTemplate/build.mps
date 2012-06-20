@@ -13,10 +13,6 @@
       <property name="internalBaseDirectory" nameId="3ior.5204048710541015587" value="../.." />
       <property name="fileName" nameId="3ior.4915877860348071612" value="mbeddr.xml" />
     </node>
-    <node type="3ior.BuildProject" typeId="3ior.5617550519002745363" id="7074560188272385935">
-      <property name="internalBaseDirectory" nameId="3ior.5204048710541015587" value="." />
-      <property name="name" nameId="tpck.1169194664001" value="SomeRCPBuild" />
-    </node>
   </roots>
   <root id="7473128195640076592">
     <node role="parts" roleId="3ior.7389400916848080626" type="kdzh.BuildMps_Branding" typeId="kdzh.7753544965996377997" id="7753544965996546378">
@@ -1303,32 +1299,6 @@
         </node>
         <node role="children" roleId="3ior.7389400916848037006" type="kdzh.BuildMpsLayout_Plugin" typeId="kdzh.6592112598314498926" id="7473128195640076617">
           <link role="plugin" roleId="kdzh.6592112598314801433" targetNodeId="7473128195640076593" />
-          <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_Folder" typeId="3ior.7389400916848036984" id="8614244082381107344">
-            <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_Copy" typeId="3ior.5248329904287857081" id="8614244082381107347">
-              <node role="fileset" roleId="3ior.5248329904287857082" type="3ior.BuildInputSingleFile" typeId="3ior.5248329904287794582" id="8614244082381107348">
-                <node role="path" roleId="3ior.5248329904287794586" type="3ior.BuildSourceMacroRelativePath" typeId="3ior.7389400916848153117" id="8614244082381107349">
-                  <link role="macro" roleId="3ior.7389400916848153130" targetNodeId="40698371035789303" resolveInfo="mbeddr.core.home" />
-                  <node role="compositePart" roleId="3ior.7321017245477039051" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="8614244082381107350">
-                    <property name="head" nameId="3ior.8618885170173601779" value="languages" />
-                    <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="8614244082381107351">
-                      <property name="head" nameId="3ior.8618885170173601779" value="com.mbeddr.core.modules.runtime" />
-                      <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="8614244082381107352">
-                        <property name="head" nameId="3ior.8618885170173601779" value="lib" />
-                        <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="8614244082381107353">
-                          <property name="head" nameId="3ior.8618885170173601779" value="commons-io-2.1.jar" />
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node role="containerName" roleId="3ior.4380385936562148502" type="3ior.BuildStringNotEmpty" typeId="3ior.841011766566059607" id="8614244082381107345">
-              <node role="parts" roleId="3ior.4903714810883783243" type="3ior.BuildTextStringPart" typeId="3ior.4903714810883702019" id="8614244082381107346">
-                <property name="text" nameId="3ior.4903714810883755350" value="runtime-libraries" />
-              </node>
-            </node>
-          </node>
           <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_Folder" typeId="3ior.7389400916848036984" id="40698371035977621">
             <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_Copy" typeId="3ior.5248329904287857081" id="40698371035977624">
               <node role="fileset" roleId="3ior.5248329904287857082" type="3ior.BuildInputSingleFile" typeId="3ior.5248329904287794582" id="40698371035977625">
@@ -1777,10 +1747,6 @@
         </node>
       </node>
     </node>
-  </root>
-  <root id="7074560188272385935">
-    <node role="scriptsDir" roleId="3ior.4796668409958418110" type="3ior.BuildSourceProjectRelativePath" typeId="3ior.5481553824944787378" id="7074560188272385936" />
-    <node role="layout" roleId="3ior.5617550519002745372" type="3ior.BuildLayout" typeId="3ior.5617550519002745364" id="7074560188272385937" />
   </root>
 </model>
 
