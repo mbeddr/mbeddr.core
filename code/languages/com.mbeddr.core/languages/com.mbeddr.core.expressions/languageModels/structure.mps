@@ -367,10 +367,6 @@
       <property name="name" nameId="tpck.1169194664001" value="PrimitiveC99IntegralType" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="8860443239512128056" resolveInfo="PrimitiveType" />
     </node>
-    <node type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="8463282783691492713">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="types" />
-      <property name="name" nameId="tpck.1169194664001" value="IUnsignedNumber" />
-    </node>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="8463282783691492716">
       <property name="virtualPackage" nameId="tpck.1193676396447" value="types.basic" />
       <property name="name" nameId="tpck.1169194664001" value="UnsignedCharType" />
@@ -1447,11 +1443,6 @@
     </node>
     <node role="conceptPropertyDeclaration" roleId="tpce.1137467167200" type="tpce.IntegerConceptPropertyDeclaration" typeId="tpce.1105725141344" id="3678395359193847342">
       <property name="name" nameId="tpck.1169194664001" value="size" />
-    </node>
-  </root>
-  <root id="8463282783691492713">
-    <node role="extends" roleId="tpce.1169127546356" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="8463282783691492714">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="5763383285156372998" resolveInfo="INumber" />
     </node>
   </root>
   <root id="8463282783691492716">
