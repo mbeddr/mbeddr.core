@@ -27,8 +27,8 @@
   <StructureModification>
     <dependencies>
       <model index="wayc" modelUID="r:8ccd67a3-3ed6-472a-aeac-67e00cb6b91d(com.mbeddr.core.expressions.constraints)" version="-1" />
-      <model index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="7" />
       <model index="5c5e" modelUID="r:7a2f88d6-4108-4d29-b499-cc4de14ea970(com.mbeddr.core.base.constraints)" version="-1" />
+      <model index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="7" />
       <model index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="-1" />
     </dependencies>
     <move id="mj1l.995988627238200005" to="vs0r.7024921229555594291" />
@@ -106,8 +106,8 @@
     <dependencies>
       <model index="sv09" modelUID="r:4c06b4f2-6394-4780-a8ca-e242a7dc5ec9(com.mbeddr.core.expressions.intentions)" version="-1" />
       <model index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="13" />
-      <model index="7kf" modelUID="r:52560947-b3d4-4502-82de-09a64d1cf1ac(com.mbeddr.core.statements.intentions)" version="1" />
       <model index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="3" />
+      <model index="7kf" modelUID="r:52560947-b3d4-4502-82de-09a64d1cf1ac(com.mbeddr.core.statements.intentions)" version="1" />
     </dependencies>
     <move id="c4fa.7825285260294008966" to="mj1l.2941277002448691204" />
     <move id="c4fa.7825285260294008965" to="mj1l.2941277002448691203" />
@@ -134,6 +134,12 @@
     <move id="7kf.7825285260294008942" to="sv09.2941277002448691205" />
     <move id="7kf.7825285260294008968" to="sv09.2941277002448691217" />
     <move id="7kf.7825285260294008946" to="sv09.2941277002448691209" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="14" />
+    </dependencies>
+    <rename id="mj1l.6762565859341128407" type="CONCEPT" from="MeetType" to="IntegerMeetType" />
   </StructureModification>
 </history>
 
