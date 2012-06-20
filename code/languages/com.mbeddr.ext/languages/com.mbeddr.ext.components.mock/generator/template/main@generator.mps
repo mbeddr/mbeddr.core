@@ -2475,7 +2475,7 @@
               </node>
             </node>
             <node role="statements" roleId="c4fa.4185783222026475862" type="k146.ForRangeStatement" typeId="k146.8729447926330198396" id="8729447926330285294">
-              <node role="iterator" roleId="k146.8729447926330198397" type="c4fa.ForVarDecl" typeId="c4fa.7254843406768606755" id="8729447926330285295">
+              <node role="iterator" type="c4fa.ForVarDecl" typeId="c4fa.7254843406768606755" id="8729447926330285295">
                 <property name="name" nameId="tpck.1169194664001" value="portIdx" />
                 <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="8729447926330285301" />
               </node>
@@ -2536,7 +2536,7 @@
               </node>
             </node>
             <node role="statements" roleId="c4fa.4185783222026475862" type="k146.ForRangeStatement" typeId="k146.8729447926330198396" id="8729447926330305245">
-              <node role="iterator" roleId="k146.8729447926330198397" type="c4fa.ForVarDecl" typeId="c4fa.7254843406768606755" id="8729447926330305246">
+              <node role="iterator" type="c4fa.ForVarDecl" typeId="c4fa.7254843406768606755" id="8729447926330305246">
                 <property name="name" nameId="tpck.1169194664001" value="opIdx" />
                 <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="8729447926330305247" />
               </node>
