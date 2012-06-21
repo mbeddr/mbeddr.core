@@ -19,6 +19,27 @@
     <node type="mj1l.TypeSizeConfiguration" typeId="mj1l.3335993110369795380" id="7496733358578280435" />
   </roots>
   <root id="55677248263828545">
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="4014172070413039355">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1340273239658_1" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Section" typeId="x27k.6512473996287153137" id="4014172070413039358">
+      <property name="name" nameId="tpck.1169194664001" value="aSect" />
+      <node role="contents" roleId="x27k.6512473996287153139" type="x27k.Section" typeId="x27k.6512473996287153137" id="4014172070413039359">
+        <property name="name" nameId="tpck.1169194664001" value="aaSect" />
+        <node role="contents" roleId="x27k.6512473996287153139" type="x27k.Section" typeId="x27k.6512473996287153137" id="4014172070413039363">
+          <property name="name" nameId="tpck.1169194664001" value="aaaSect" />
+        </node>
+      </node>
+      <node role="contents" roleId="x27k.6512473996287153139" type="x27k.Section" typeId="x27k.6512473996287153137" id="4014172070413039362">
+        <property name="name" nameId="tpck.1169194664001" value="abSect" />
+      </node>
+      <node role="contents" roleId="x27k.6512473996287153139" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="4014172070413039360">
+        <property name="name" nameId="tpck.1169194664001" value="empty_1340273258261_4" />
+      </node>
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="4014172070413039357">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1340273239915_3" />
+    </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.GlobalVariableDeclaration" typeId="x27k.6610873504380335822" id="7518061998923756599">
       <property name="name" nameId="tpck.1169194664001" value="xyxy" />
       <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="7518061998923756600" />
