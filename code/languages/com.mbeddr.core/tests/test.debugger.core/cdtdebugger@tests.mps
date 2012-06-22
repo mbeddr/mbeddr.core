@@ -27,7 +27,7 @@
       <property name="virtualPackage" nameId="tpck.1193676396447" value="util" />
     </node>
     <node type="tp5g.NodesTestCase" typeId="tp5g.1216913645126" id="7469932353719617445">
-      <property name="name" nameId="tpck.1169194664001" value="Breakpoints" />
+      <property name="name" nameId="tpck.1169194664001" value="3Breakpoints" />
     </node>
     <node type="tp5g.NodesTestCase" typeId="tp5g.1216913645126" id="2477204873927036288">
       <property name="name" nameId="tpck.1169194664001" value="Control" />
