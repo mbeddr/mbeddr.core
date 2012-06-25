@@ -47,15 +47,19 @@ public class CImplementationFileTestCase extends TestCase {
 //		content.append(" \n");
 		
 		//fuction prototype
-		content.append("int add(int a, int b); \n");
+//		content.append("int add(int a, int b); \n");
 		
-		/*
+		
 		content.append("int add(int a, int b){ \n");
-		content.append("int ret; \n");
-		content.append("ret = a+b; \n");
-		content.append("return ret; \n");
+//		content.append("int ret; \n");
+//		content.append("ret = a+b; \n");
+//		content.append("return ret; \n");
+		content.append("{ \n");
 		content.append("} \n");
-		*/
+		content.append("{ \n");
+		content.append("} \n");
+		content.append("} \n");
+		
 		
 //		content.append(" \n");
 //		content.append("int main(void) { \n");
