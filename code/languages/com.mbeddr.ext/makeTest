@@ -72,10 +72,14 @@ PROC_RET=$(($?+$PROC_RET))
 
 echo -------------------------------------
 echo Exception Handling
-cd ../../../../../../../../lib/com.mbeddr.ext.exceptionhandling.lib/source_gen/com/mbeddr/ext/exceptionhandling/lib/rt/
-make
-cd ../../../../../../../../../tests/test.ex.ext.exceptionhandling/source_gen/test/ex/ext/exceptionhandling/test/defaultimpl/
+cd ../../../../../../../../
+cd lib/com.mbeddr.ext.exceptionhandling.lib/source_gen/com/mbeddr/ext/exceptionhandling/lib/rt/
+make clean all
+cd ../../../../../../../../../
+cd tests/test.ex.ext.exceptionhandling/source_gen/test/ex/ext/exceptionhandling/test/defaultimpl/
 make test
+
+
 PROC_RET=$(($?+$PROC_RET))
 
 
