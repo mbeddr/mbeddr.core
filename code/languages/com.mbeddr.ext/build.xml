@@ -51,6 +51,7 @@
       <library name="mbeddr.project" dir="${mbeddr.github.core.home}/${mbeddr.core.project.dir}/languages"/>
       <library name="util.languages" dir="${mbeddr.github.core.home}/${util.project.dir}/languages"/>
       <modules dir="${mbeddr.github.core.home}/${mbeddr.ext.project.dir}/languages"/>
+      <modules dir="${mbeddr.github.core.home}/${mbeddr.ext.project.dir}/lib"/>
     </mps.generate>
   </target>
 
