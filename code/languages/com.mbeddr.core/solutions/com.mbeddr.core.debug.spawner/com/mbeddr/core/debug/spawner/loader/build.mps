@@ -54,6 +54,36 @@
               </node>
             </node>
           </node>
+          <node role="entry" roleId="tps4.1203617897549" type="tps4.Folder" typeId="tps4.1203598512427" id="7601167375144260635">
+            <node role="sourcePath" roleId="tps4.1220982054961" type="tps4.Path" typeId="tps4.1220973916698" id="7601167375144260636">
+              <node role="macro" roleId="tps4.1220976095387" type="tps4.MacroReference" typeId="tps4.1220976052975" id="7601167375144260637">
+                <property name="name" nameId="tps4.1220976068141" value="base_dir" />
+              </node>
+              <node role="compositePathComponent" roleId="tps4.1220974249696" type="tps4.CompositePathComponent" typeId="tps4.1220973992845" id="7601167375144260638">
+                <node role="pathComponent" roleId="tps4.1220978161990" type="tps4.PathComponent" typeId="tps4.1220973955905" id="7601167375144260639">
+                  <property name="path" nameId="tps4.1220974398640" value="code" />
+                </node>
+                <node role="pathComponent" roleId="tps4.1220978161990" type="tps4.PathComponent" typeId="tps4.1220973955905" id="7601167375144260640">
+                  <property name="path" nameId="tps4.1220974398640" value="languages" />
+                </node>
+                <node role="pathComponent" roleId="tps4.1220978161990" type="tps4.PathComponent" typeId="tps4.1220973955905" id="7601167375144260641">
+                  <property name="path" nameId="tps4.1220974398640" value="com.mbeddr.core" />
+                </node>
+                <node role="pathComponent" roleId="tps4.1220978161990" type="tps4.PathComponent" typeId="tps4.1220973955905" id="7601167375144260642">
+                  <property name="path" nameId="tps4.1220974398640" value="solutions" />
+                </node>
+                <node role="pathComponent" roleId="tps4.1220978161990" type="tps4.PathComponent" typeId="tps4.1220973955905" id="7601167375144260643">
+                  <property name="path" nameId="tps4.1220974398640" value="com.mbeddr.core.debug.spawner" />
+                </node>
+                <node role="pathComponent" roleId="tps4.1220978161990" type="tps4.PathComponent" typeId="tps4.1220973955905" id="7601167375144260644">
+                  <property name="path" nameId="tps4.1220974398640" value="data" />
+                </node>
+                <node role="pathComponent" roleId="tps4.1220978161990" type="tps4.PathComponent" typeId="tps4.1220973955905" id="7601167375144260646">
+                  <property name="path" nameId="tps4.1220974398640" value="spawner" />
+                </node>
+              </node>
+            </node>
+          </node>
         </node>
         <node role="entry" roleId="tps4.1203617897549" type="tps4.Folder" typeId="tps4.1203598512427" id="5100386946044466524">
           <node role="title" roleId="tps4.1205340441197" type="tps4.SimpleString" typeId="tps4.1205339044029" id="5100386946044466525">
@@ -106,6 +136,41 @@
                 </node>
               </node>
             </node>
+          </node>
+        </node>
+        <node role="entry" roleId="tps4.1203617897549" type="tps4.Folder" typeId="tps4.1203598512427" id="7601167375144260630">
+          <node role="entry" roleId="tps4.1203617897549" type="tps4.Folder" typeId="tps4.1203598512427" id="7601167375144260612">
+            <node role="sourcePath" roleId="tps4.1220982054961" type="tps4.Path" typeId="tps4.1220973916698" id="7601167375144260613">
+              <node role="macro" roleId="tps4.1220976095387" type="tps4.MacroReference" typeId="tps4.1220976052975" id="7601167375144260614">
+                <property name="name" nameId="tps4.1220976068141" value="base_dir" />
+              </node>
+              <node role="compositePathComponent" roleId="tps4.1220974249696" type="tps4.CompositePathComponent" typeId="tps4.1220973992845" id="7601167375144260615">
+                <node role="pathComponent" roleId="tps4.1220978161990" type="tps4.PathComponent" typeId="tps4.1220973955905" id="7601167375144260616">
+                  <property name="path" nameId="tps4.1220974398640" value="code" />
+                </node>
+                <node role="pathComponent" roleId="tps4.1220978161990" type="tps4.PathComponent" typeId="tps4.1220973955905" id="7601167375144260618">
+                  <property name="path" nameId="tps4.1220974398640" value="languages" />
+                </node>
+                <node role="pathComponent" roleId="tps4.1220978161990" type="tps4.PathComponent" typeId="tps4.1220973955905" id="7601167375144260620">
+                  <property name="path" nameId="tps4.1220974398640" value="com.mbeddr.core" />
+                </node>
+                <node role="pathComponent" roleId="tps4.1220978161990" type="tps4.PathComponent" typeId="tps4.1220973955905" id="7601167375144260622">
+                  <property name="path" nameId="tps4.1220974398640" value="solutions" />
+                </node>
+                <node role="pathComponent" roleId="tps4.1220978161990" type="tps4.PathComponent" typeId="tps4.1220973955905" id="7601167375144260624">
+                  <property name="path" nameId="tps4.1220974398640" value="com.mbeddr.core.debug.spawner" />
+                </node>
+                <node role="pathComponent" roleId="tps4.1220978161990" type="tps4.PathComponent" typeId="tps4.1220973955905" id="7601167375144260626">
+                  <property name="path" nameId="tps4.1220974398640" value="data" />
+                </node>
+                <node role="pathComponent" roleId="tps4.1220978161990" type="tps4.PathComponent" typeId="tps4.1220973955905" id="7601167375144260628">
+                  <property name="path" nameId="tps4.1220974398640" value="Eclipse.Debugger" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node role="title" roleId="tps4.1205340441197" type="tps4.SimpleString" typeId="tps4.1205339044029" id="7601167375144260633">
+            <property name="name" nameId="tps4.1223641503366" value="languages" />
           </node>
         </node>
       </node>
