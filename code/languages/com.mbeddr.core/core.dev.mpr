@@ -47,6 +47,7 @@
       <modulePath path="${project}/tests/test.cstub.core/core.msd" folder="tests" />
       <modulePath path="${project}/tests/test.cstub.testheader.expressions/expressions.msd" folder="tests" />
       <modulePath path="${project}/tests/test.cstub.testheader/testheader.msd" folder="tests" />
+      <modulePath path="${project}/tests/test.debugger.cdt/cdt.msd" folder="tests" />
       <modulePath path="${project}/tests/test.debugger.core/core.msd" folder="tests" />
       <modulePath path="${project}/tests/test.ex.core.libs/libs.msd" folder="tests" />
       <modulePath path="${project}/tests/test.ex.core/core.msd" folder="tests" />
