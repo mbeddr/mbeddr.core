@@ -27,14 +27,15 @@
       <modulePath path="${project}/languages/com.mbeddr.core.embedded/embedded.mpl" folder="core-extended" />
       <modulePath path="${project}/languages/com.mbeddr.core.expressions/expressions.mpl" folder="core" />
       <modulePath path="${project}/languages/com.mbeddr.core.legacy/legacy.mpl" folder="core" />
-      <modulePath path="${project}/languages/com.mbeddr.core.legacy/solutions/pluginSolution/pluginSolution.msd" />
+      <modulePath path="${project}/languages/com.mbeddr.core.legacy/solutions/pluginSolution/pluginSolution.msd" folder="core" />
       <modulePath path="${project}/languages/com.mbeddr.core.make/make.mpl" folder="core" />
       <modulePath path="${project}/languages/com.mbeddr.core.modules.gen/gen.mpl" folder="core" />
       <modulePath path="${project}/languages/com.mbeddr.core.modules.runtime/include.msd" folder="core" />
       <modulePath path="${project}/languages/com.mbeddr.core.modules/modules.mpl" folder="core" />
-      <modulePath path="${project}/languages/com.mbeddr.core.modules/solutions/pluginSolution/pluginSolution.msd" />
+      <modulePath path="${project}/languages/com.mbeddr.core.modules/solutions/pluginSolution/pluginSolution.msd" folder="core" />
       <modulePath path="${project}/languages/com.mbeddr.core.runconfiguration/runconfiguration.mpl" folder="core" />
       <modulePath path="${project}/languages/com.mbeddr.core.runconfiguration/solutions/pluginSolution/pluginSolution.msd" folder="core" />
+      <modulePath path="${project}/languages/com.mbeddr.core.statements/solutions/pluginSolution/pluginSolution.msd" folder="core" />
       <modulePath path="${project}/languages/com.mbeddr.core.statements/statements.mpl" folder="core" />
       <modulePath path="${project}/languages/com.mbeddr.core.udt/udt.mpl" folder="core" />
       <modulePath path="${project}/languages/com.mbeddr.core.unittest/unittest.mpl" folder="core-extended" />
