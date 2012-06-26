@@ -213,7 +213,7 @@
     </node>
     <node type="tpd4.SubtypingRule" typeId="tpd4.1175147670730" id="6762565859341128423">
       <property name="virtualPackage" nameId="tpck.1193676396447" value="types" />
-      <property name="name" nameId="tpck.1169194664001" value="MeetTypeSupertypes" />
+      <property name="name" nameId="tpck.1169194664001" value="supertypeOf_IntegerMeetType" />
     </node>
     <node type="tpd4.SubtypingRule" typeId="tpd4.1175147670730" id="468045725833399434">
       <property name="virtualPackage" nameId="tpck.1193676396447" value="types.c99" />
