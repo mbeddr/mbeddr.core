@@ -1,10 +1,11 @@
 #include <stdio.h>
 
 
+/*
 void add(int a, int b){
 //just some comments
 };
-
+*/
 
 
 void compountStatments(int a, int b){
