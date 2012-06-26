@@ -7,7 +7,7 @@
   <import index="3c6d" modelUID="r:d6d71b6a-f5ea-4b72-bd01-9d5b19792726(com.mbeddr.ext.physicalunits.c.structure)" version="0" implicit="yes" />
   <import index="ym4j" modelUID="r:cf0df747-2506-460f-a33d-eb236a605ee8(com.mbeddr.ext.physicalunits.structure)" version="10" implicit="yes" />
   <import index="tp5g" modelUID="r:00000000-0000-4000-0000-011c89590388(jetbrains.mps.lang.test.structure)" version="4" implicit="yes" />
-  <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="14" implicit="yes" />
+  <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="15" implicit="yes" />
   <import index="yq40" modelUID="r:152b3fc0-83a1-4bab-a8cd-565eb8483785(com.mbeddr.core.pointers.structure)" version="1" implicit="yes" />
   <import index="clbe" modelUID="r:61d840b4-12c1-49ea-b142-b2a1550a9b15(com.mbeddr.core.udt.structure)" version="5" implicit="yes" />
   <import index="51wr" modelUID="r:b31f1c3c-99aa-4f1e-a329-cba27efb1a6b(com.mbeddr.core.buildconfig.structure)" version="1" implicit="yes" />
@@ -19,6 +19,12 @@
     <node type="51wr.BuildConfiguration" typeId="51wr.7717755763392524104" id="7720784317543461390" />
     <node type="tp5g.NodesTestCase" typeId="tp5g.1216913645126" id="9108052991585889625">
       <property name="name" nameId="tpck.1169194664001" value="testUnits" />
+    </node>
+    <node type="tp5g.NodesTestCase" typeId="tp5g.1216913645126" id="8027210066655571473">
+      <property name="name" nameId="tpck.1169194664001" value="testUnitsForBug123" />
+    </node>
+    <node type="tp5g.NodesTestCase" typeId="tp5g.1216913645126" id="8027210066655589908">
+      <property name="name" nameId="tpck.1169194664001" value="testUnitsForBug122" />
     </node>
   </roots>
   <root id="5513256947824560741">
@@ -871,6 +877,113 @@
         </node>
       </node>
     </node>
+  </root>
+  <root id="8027210066655571473">
+    <node role="nodesToCheck" roleId="tp5g.1217501822150" type="tp5g.TestNode" typeId="tp5g.1216989428737" id="8027210066655589249">
+      <node role="nodeToCheck" roleId="tp5g.1216989461394" type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="8027210066655589250">
+        <property name="name" nameId="tpck.1169194664001" value="TestOverloadedOperator" />
+        <node role="contents" roleId="x27k.6437088627575722833" type="clbe.TypeDef" typeId="clbe.6116558314501347857" id="8027210066655590434">
+          <property name="name" nameId="tpck.1169194664001" value="length" />
+          <node role="original" roleId="clbe.6116558314501347862" type="3c6d.TypeWithUnit" typeId="3c6d.5513256947824492703" id="8027210066655590435">
+            <node role="valueType" roleId="3c6d.5513256947824503029" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="8027210066655590436" />
+            <node role="unit" roleId="3c6d.5513256947824503030" type="ym4j.SIMetre" typeId="ym4j.3801772042669047305" id="8027210066655590437" />
+          </node>
+        </node>
+        <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="8027210066655590438">
+          <property name="name" nameId="tpck.1169194664001" value="empty_1332324842933_3" />
+        </node>
+        <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="8027210066655590439">
+          <property name="name" nameId="tpck.1169194664001" value="testBasicUnits" />
+          <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="8027210066655590440">
+            <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="8027210066655590506">
+              <property name="name" nameId="tpck.1169194664001" value="length" />
+              <node role="type" roleId="mj1l.318113533128716676" type="3c6d.TypeWithUnit" typeId="3c6d.5513256947824492703" id="8027210066655590507">
+                <node role="valueType" roleId="3c6d.5513256947824503029" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="8027210066655590508" />
+                <node role="unit" roleId="3c6d.5513256947824503030" type="ym4j.SIMetre" typeId="ym4j.3801772042669047305" id="8027210066655590509" />
+              </node>
+            </node>
+            <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="8027210066655590510">
+              <property name="name" nameId="tpck.1169194664001" value="time" />
+              <node role="type" roleId="mj1l.318113533128716676" type="3c6d.TypeWithUnit" typeId="3c6d.5513256947824492703" id="8027210066655590511">
+                <node role="valueType" roleId="3c6d.5513256947824503029" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="8027210066655590512" />
+                <node role="unit" roleId="3c6d.5513256947824503030" type="ym4j.SISecond" typeId="ym4j.3801772042669047312" id="8027210066655590513" />
+              </node>
+            </node>
+            <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="8027210066655590514">
+              <property name="name" nameId="tpck.1169194664001" value="speed" />
+              <node role="type" roleId="mj1l.318113533128716676" type="3c6d.TypeWithUnit" typeId="3c6d.5513256947824492703" id="8027210066655590515">
+                <node role="valueType" roleId="3c6d.5513256947824503029" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="8027210066655590516" />
+                <node role="unit" roleId="3c6d.5513256947824503030" type="ym4j.CompositeUnitDeclaration" typeId="ym4j.3801772042669047863" id="8027210066655590517">
+                  <node role="components" roleId="ym4j.3801772042669047864" type="ym4j.UnitWithExponent" typeId="ym4j.3801772042669047322" id="8027210066655590518">
+                    <property name="exponent" nameId="ym4j.3801772042669047325" value="1" />
+                    <node role="unit" roleId="ym4j.3801772042669047323" type="ym4j.SIMetre" typeId="ym4j.3801772042669047305" id="8027210066655590519" />
+                  </node>
+                  <node role="components" roleId="ym4j.3801772042669047864" type="ym4j.UnitWithExponent" typeId="ym4j.3801772042669047322" id="8027210066655590520">
+                    <property name="exponent" nameId="ym4j.3801772042669047325" value="-1" />
+                    <node role="unit" roleId="ym4j.3801772042669047323" type="ym4j.SISecond" typeId="ym4j.3801772042669047312" id="8027210066655590521" />
+                  </node>
+                </node>
+              </node>
+              <node role="init" roleId="c4fa.4185783222026502647" type="mj1l.DivExpression" typeId="mj1l.5763383285156373022" id="8027210066655590522">
+                <node role="left" roleId="mj1l.8860443239512128064" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="8027210066655590523">
+                  <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="8027210066655590506" resolveInfo="length" />
+                </node>
+                <node role="right" roleId="mj1l.8860443239512128065" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="8027210066655590524">
+                  <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="8027210066655590510" resolveInfo="time" />
+                </node>
+              </node>
+            </node>
+            <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="8027210066655590588" />
+          </node>
+          <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="8027210066655590589" />
+        </node>
+        <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodeOperationsContainer" typeId="tp5g.1215603922101" id="8027210066655589269">
+          <node role="operations" roleId="tp5g.1215604436604" type="tp5g.TypesCheckOperation" typeId="tp5g.1215607067978" id="8027210066655589270" />
+        </node>
+      </node>
+    </node>
+  </root>
+  <root id="8027210066655589908">
+    <node role="nodesToCheck" roleId="tp5g.1217501822150" type="tp5g.TestNode" typeId="tp5g.1216989428737" id="8027210066655589909">
+      <node role="nodeToCheck" roleId="tp5g.1216989461394" type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="8027210066655589910">
+        <property name="name" nameId="tpck.1169194664001" value="TestWrongType" />
+        <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="8027210066655589911">
+          <property name="name" nameId="tpck.1169194664001" value="empty_1332324842933_3" />
+        </node>
+        <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="8027210066655589912">
+          <property name="name" nameId="tpck.1169194664001" value="testBasicUnits" />
+          <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="8027210066655589913">
+            <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="8027210066655589914">
+              <property name="name" nameId="tpck.1169194664001" value="n" />
+              <node role="type" roleId="mj1l.318113533128716676" type="3c6d.TypeWithUnit" typeId="3c6d.5513256947824492703" id="8027210066655589915">
+                <node role="valueType" roleId="3c6d.5513256947824503029" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="8027210066655589916" />
+                <node role="unit" roleId="3c6d.5513256947824503030" type="ym4j.UnitDeclarationRef" typeId="ym4j.8099136929591173606" id="8027210066655589917">
+                  <link role="ref" roleId="ym4j.8099136929591173608" targetNodeId="5513256947824585484" resolveInfo="N" />
+                </node>
+              </node>
+              <node role="init" roleId="c4fa.4185783222026502647" type="3c6d.LiteralWithUnit" typeId="3c6d.5513256947824592491" id="8027210066655589918">
+                <node role="unit" roleId="3c6d.5513256947824592493" type="ym4j.UnitDeclarationRef" typeId="ym4j.8099136929591173606" id="8027210066655589919">
+                  <link role="ref" roleId="ym4j.8099136929591173608" targetNodeId="5513256947824585484" resolveInfo="N" />
+                </node>
+                <node role="value" roleId="3c6d.5513256947824592492" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="8027210066655589920">
+                  <property name="value" nameId="mj1l.8860443239512128104" value="3" />
+                </node>
+              </node>
+            </node>
+            <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="8027210066655589921" />
+            <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="8027210066655589922" />
+          </node>
+          <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="8027210066655589923" />
+        </node>
+        <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="8027210066655589924">
+          <property name="name" nameId="tpck.1169194664001" value="empty_1332530740564_1" />
+        </node>
+        <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodeOperationsContainer" typeId="tp5g.1215603922101" id="8027210066655589925">
+          <node role="operations" roleId="tp5g.1215604436604" type="tp5g.TypesCheckOperation" typeId="tp5g.1215607067978" id="8027210066655589926" />
+        </node>
+      </node>
+    </node>
+    <node role="nodesToCheck" roleId="tp5g.1217501822150" type="tp5g.TestNode" typeId="tp5g.1216989428737" id="8027210066655589927" />
   </root>
 </model>
 
