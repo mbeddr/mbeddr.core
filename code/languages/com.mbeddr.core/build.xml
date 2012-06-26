@@ -66,16 +66,8 @@
       <library name="mbeddr.project" dir="${mbeddr.github.core.home}/${mbeddr.core.project.dir}"/>
       <library name="util.languages" dir="${mbeddr.github.core.home}/${util.project.dir}/languages"/>
 
-	  <!-- executable tests -->
-      <modules dir="${mbeddr.github.core.home}/${mbeddr.core.project.dir}/tests/test.ex.core"/>
-	  <modules dir="${mbeddr.github.core.home}/${mbeddr.core.project.dir}/tests/test.ex.errorreporting"/>
-	  
-	  <!-- type system tests -->
-      <modules dir="${mbeddr.github.core.home}/${mbeddr.core.project.dir}/tests/test.ts.core"/>
-	  
-	  <!-- stub tests -->
-	  <modules dir="${mbeddr.github.core.home}/${mbeddr.core.project.dir}/tests/test.cstub.core"/>  
-	  
+      <modules dir="${mbeddr.github.core.home}/${mbeddr.core.project.dir}/tests"/>
+
 	  </mps.generate>
   </target>
 
