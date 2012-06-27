@@ -8,3 +8,6 @@ float add2(float a, float b){
 	//return a + b;
 };
 
+float funWithoutParameter(){
+	//return a + b;
+};
