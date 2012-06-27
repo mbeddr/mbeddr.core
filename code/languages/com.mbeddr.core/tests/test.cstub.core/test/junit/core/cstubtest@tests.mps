@@ -80,6 +80,9 @@
     <node type="tp5g.NodesTestCase" typeId="tp5g.1216913645126" id="2637921206393044075">
       <property name="name" nameId="tpck.1169194664001" value="BitFieldTest" />
     </node>
+    <node type="tp5g.TestInfo" typeId="tp5g.5097124989038916362" id="1423209693057696534">
+      <property name="projectPath" nameId="tp5g.5097124989038916363" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.core/core.dev.mpr" />
+    </node>
   </roots>
   <root id="2497083023867865020">
     <node role="methods" roleId="tp5g.1216993439383" type="tp4f.DefaultClassifierMethodDeclaration" typeId="tp4f.1205769003971" id="8767988336305488791">
@@ -16539,5 +16542,6 @@
       </node>
     </node>
   </root>
+  <root id="1423209693057696534" />
 </model>
 
