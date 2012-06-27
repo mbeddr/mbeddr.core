@@ -36,6 +36,9 @@
     <node type="tpee.ClassConcept" typeId="tpee.1068390468198" id="7469932353719611498">
       <property name="name" nameId="tpck.1169194664001" value="CustomObserver" />
     </node>
+    <node type="tp5g.TestInfo" typeId="tp5g.5097124989038916362" id="1423209693057696534">
+      <property name="projectPath" nameId="tp5g.5097124989038916363" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.core/core.dev.mpr" />
+    </node>
   </roots>
   <root id="7469932353719617445">
     <node role="testMethods" roleId="tp5g.1217501895093" type="tp5g.SimpleNodeTest" typeId="tp5g.1225978065297" id="7469932353719617452">
@@ -4416,5 +4419,6 @@
       </node>
     </node>
   </root>
+  <root id="1423209693057696534" />
 </model>
 
