@@ -26,6 +26,9 @@
     <node type="tp5g.NodesTestCase" typeId="tp5g.1216913645126" id="8027210066655589908">
       <property name="name" nameId="tpck.1169194664001" value="testUnitsForBug122" />
     </node>
+    <node type="tp5g.TestInfo" typeId="tp5g.5097124989038916362" id="1423209693056975518">
+      <property name="projectPath" nameId="tp5g.5097124989038916363" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.core/core.dev.mpr" />
+    </node>
   </roots>
   <root id="5513256947824560741">
     <node role="ieee754Specifications" roleId="mj1l.9149785691755067704" type="mj1l.IEEE754TypeSizeSpecification" typeId="mj1l.9149785691755093694" id="5513256947824560742">
@@ -985,5 +988,6 @@
     </node>
     <node role="nodesToCheck" roleId="tp5g.1217501822150" type="tp5g.TestNode" typeId="tp5g.1216989428737" id="8027210066655589927" />
   </root>
+  <root id="1423209693056975518" />
 </model>
 
