@@ -61,10 +61,12 @@ public class CImplementationFileTestCase extends TestCase {
 //		content.append("} \n");
 		
 		
-		content.append("void compountStatments(int a, int b){\n");
+		
+		content.append("void compountStatments(){\n");
 		content.append("	{ //1 \n");
+		content.append("float localVariable; \n");
 		content.append("	} //1 Ende \n");
-		content.append("	{ //2 \n");
+//		content.append("	{ //2 \n");
 //		content.append("		{ //2.1 \n");
 //		content.append("		} //2.1 Ende \n");
 //		content.append("		{ //2.2 \n");
@@ -74,7 +76,7 @@ public class CImplementationFileTestCase extends TestCase {
 //		content.append("		{ //2.3 \n");
 //		content.append(" \n");
 //		content.append("		} //2.3 Ende \n");
-		content.append("	}//2 Ende \n");
+//		content.append("	}//2 Ende \n");
 		content.append("}; \n");
 		HashMap<String, String> options = new HashMap<String, String>();
 
