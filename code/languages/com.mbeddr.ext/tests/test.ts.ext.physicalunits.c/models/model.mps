@@ -438,6 +438,22 @@
                 <node role="unit" roleId="3c6d.5513256947824503030" type="ym4j.SISecond" typeId="ym4j.3801772042669047312" id="9108052991585889664" />
               </node>
             </node>
+            <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="9109976750177178332" />
+            <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="9109976750177178334">
+              <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.PlusExpression" typeId="mj1l.5763383285156373013" id="9109976750177178344">
+                <node role="right" roleId="mj1l.8860443239512128065" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="9109976750177178347">
+                  <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="9108052991585889657" resolveInfo="length" />
+                </node>
+                <node role="left" roleId="mj1l.8860443239512128064" type="mj1l.AssignmentExpr" typeId="mj1l.22102029902365709" id="9109976750177178338">
+                  <node role="left" roleId="mj1l.8860443239512128064" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="9109976750177178335">
+                    <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="9108052991585889657" resolveInfo="length" />
+                  </node>
+                  <node role="right" roleId="mj1l.8860443239512128065" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="9109976750177178341">
+                    <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="9108052991585889657" resolveInfo="length" />
+                  </node>
+                </node>
+              </node>
+            </node>
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="9108052991585889665">
               <property name="name" nameId="tpck.1169194664001" value="speed" />
               <node role="type" roleId="mj1l.318113533128716676" type="3c6d.TypeWithUnit" typeId="3c6d.5513256947824492703" id="9108052991585889666">
