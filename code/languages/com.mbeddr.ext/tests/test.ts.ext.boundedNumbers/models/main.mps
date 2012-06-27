@@ -19,6 +19,9 @@
     </node>
     <node type="mj1l.TypeSizeConfiguration" typeId="mj1l.3335993110369795380" id="4618139321488934002" />
     <node type="51wr.BuildConfiguration" typeId="51wr.7717755763392524104" id="1798411515023801831" />
+    <node type="tp5g.TestInfo" typeId="tp5g.5097124989038916362" id="1423209693056975518">
+      <property name="projectPath" nameId="tp5g.5097124989038916363" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.core/core.dev.mpr" />
+    </node>
   </roots>
   <root id="4618139321488934000">
     <node role="nodesToCheck" roleId="tp5g.1217501822150" type="tp5g.TestNode" typeId="tp5g.1216989428737" id="4618139321488934001">
@@ -305,5 +308,6 @@
       <node role="strategy" roleId="k146.4459718605982051999" type="k146.PrintfReportingStrategy" typeId="k146.4459718605982051980" id="1798411515023801854" />
     </node>
   </root>
+  <root id="1423209693056975518" />
 </model>
 
