@@ -65,16 +65,16 @@ public class CImplementationFileTestCase extends TestCase {
 		content.append("	{ //1 \n");
 		content.append("	} //1 Ende \n");
 		content.append("	{ //2 \n");
-		content.append("		{ //2.1 \n");
-		content.append("		} //2.1 Ende \n");
-		content.append("		{ //2.2 \n");
-		content.append("			{ //2.2.1 \n");
-		content.append("			} //2.2.1 Ende \n");
-		content.append("		} //2.2 Ende \n");
-		content.append("		{ //2.3 \n");
-		content.append(" \n");
-		content.append("		} //2.3 Ende \n");
-		content.append("}//2 Ende \n");
+//		content.append("		{ //2.1 \n");
+//		content.append("		} //2.1 Ende \n");
+//		content.append("		{ //2.2 \n");
+//		content.append("			{ //2.2.1 \n");
+//		content.append("			} //2.2.1 Ende \n");
+//		content.append("		} //2.2 Ende \n");
+//		content.append("		{ //2.3 \n");
+//		content.append(" \n");
+//		content.append("		} //2.3 Ende \n");
+		content.append("	}//2 Ende \n");
 		content.append("}; \n");
 		HashMap<String, String> options = new HashMap<String, String>();
 
