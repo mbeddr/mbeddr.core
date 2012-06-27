@@ -3,7 +3,7 @@
   <persistence version="7" />
   <devkit namespace="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
-  <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="15" implicit="yes" />
+  <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="16" implicit="yes" />
   <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="4" implicit="yes" />
   <import index="yz9a" modelUID="r:734c02dd-cc16-4184-99eb-5fd9f43aa37e(com.mbeddr.core.unittest.structure)" version="-1" implicit="yes" />
   <import index="51wr" modelUID="r:b31f1c3c-99aa-4f1e-a329-cba27efb1a6b(com.mbeddr.core.buildconfig.structure)" version="1" implicit="yes" />
@@ -11,6 +11,7 @@
   <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="-1" implicit="yes" />
   <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="4" implicit="yes" />
   <import index="clbe" modelUID="r:61d840b4-12c1-49ea-b142-b2a1550a9b15(com.mbeddr.core.udt.structure)" version="5" implicit="yes" />
+  <import index="yq40" modelUID="r:152b3fc0-83a1-4bab-a8cd-565eb8483785(com.mbeddr.core.pointers.structure)" version="2" implicit="yes" />
   <roots>
     <node type="x27k.ExternalModule" typeId="x27k.6116558314501417921" id="9066372830132809598">
       <property name="name" nameId="tpck.1169194664001" value="std" />
@@ -55,11 +56,11 @@
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="9066372830132895481">
           <node role="expr" roleId="c4fa.7254843406768833939" type="x27k.FunctionCall" typeId="x27k.5950410542643524492" id="9066372830132895482">
             <link role="function" roleId="x27k.5950410542643524493" targetNodeId="9066372830132809603" resolveInfo="printf" />
-            <node role="actuals" roleId="x27k.5950410542643524495" type="mj1l.StringLiteral" typeId="mj1l.2088909457728253268" id="9066372830132895483">
-              <property name="value" nameId="mj1l.2088909457728253269" value="Dies ist ein stdout.printf Text: %s" />
+            <node role="actuals" roleId="x27k.5950410542643524495" type="yq40.StringLiteral" typeId="yq40.6113173064526131575" id="9066372830132895483">
+              <property name="value" nameId="yq40.6113173064526131578" value="Dies ist ein stdout.printf Text: %s" />
             </node>
-            <node role="actuals" roleId="x27k.5950410542643524495" type="mj1l.StringLiteral" typeId="mj1l.2088909457728253268" id="9066372830132897435">
-              <property name="value" nameId="mj1l.2088909457728253269" value="Noch einer" />
+            <node role="actuals" roleId="x27k.5950410542643524495" type="yq40.StringLiteral" typeId="yq40.6113173064526131575" id="9066372830132897435">
+              <property name="value" nameId="yq40.6113173064526131578" value="Noch einer" />
             </node>
           </node>
         </node>
