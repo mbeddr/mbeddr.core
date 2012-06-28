@@ -26,7 +26,7 @@
     <node type="mj1l.TypeSizeConfiguration" typeId="mj1l.3335993110369795380" id="4618139321488934002" />
     <node type="51wr.BuildConfiguration" typeId="51wr.7717755763392524104" id="1798411515023801831" />
     <node type="tp5g.TestInfo" typeId="tp5g.5097124989038916362" id="1423209693056975518">
-      <property name="projectPath" nameId="tp5g.5097124989038916363" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.core/core.dev.mpr" />
+      <property name="projectPath" nameId="tp5g.5097124989038916363" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.ext/ext.dev.mpr" />
     </node>
   </roots>
   <root id="4618139321488934000">

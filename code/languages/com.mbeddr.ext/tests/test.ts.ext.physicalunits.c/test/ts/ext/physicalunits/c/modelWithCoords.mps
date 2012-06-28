@@ -28,7 +28,7 @@
     <node type="ym4j.UnitContainer" typeId="ym4j.3801772042669047872" id="4497436839299135003" />
     <node type="51wr.BuildConfiguration" typeId="51wr.7717755763392524104" id="1798411515023801994" />
     <node type="tp5g.TestInfo" typeId="tp5g.5097124989038916362" id="1423209693056975518">
-      <property name="projectPath" nameId="tp5g.5097124989038916363" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.core/core.dev.mpr" />
+      <property name="projectPath" nameId="tp5g.5097124989038916363" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.ext/ext.dev.mpr" />
     </node>
   </roots>
   <root id="4497436839299134881">

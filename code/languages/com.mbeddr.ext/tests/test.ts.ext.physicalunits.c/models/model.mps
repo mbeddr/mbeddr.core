@@ -33,7 +33,7 @@
       <property name="name" nameId="tpck.1169194664001" value="testUnitsForBug122" />
     </node>
     <node type="tp5g.TestInfo" typeId="tp5g.5097124989038916362" id="1423209693056975518">
-      <property name="projectPath" nameId="tp5g.5097124989038916363" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.core/core.dev.mpr" />
+      <property name="projectPath" nameId="tp5g.5097124989038916363" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.ext/ext.dev.mpr" />
     </node>
   </roots>
   <root id="5513256947824560741">
