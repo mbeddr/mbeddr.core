@@ -110,20 +110,24 @@
       <property name="name" nameId="tpck.1169194664001" value="virtualfolderA2_virtualFolderFileA" />
       <property name="virtualPackage" nameId="tpck.1193676396447" value="virtualfolderA2." />
     </node>
-    <node type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="2604304000476741585">
+    <node type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="2604304000476808866">
       <property name="name" nameId="tpck.1169194664001" value="implementation_CompoundStatementTest" />
       <property name="virtualPackage" nameId="tpck.1193676396447" value="implementation." />
     </node>
-    <node type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="2604304000476741608">
+    <node type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="2604304000476808889">
       <property name="name" nameId="tpck.1169194664001" value="implementation_IfStatementTest" />
       <property name="virtualPackage" nameId="tpck.1193676396447" value="implementation." />
     </node>
-    <node type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="2604304000476741702">
+    <node type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="2604304000476808984">
       <property name="name" nameId="tpck.1169194664001" value="implementation_LocalVariablesTest" />
       <property name="virtualPackage" nameId="tpck.1193676396447" value="implementation." />
     </node>
-    <node type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="2604304000476741727">
+    <node type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="2604304000476809009">
       <property name="name" nameId="tpck.1169194664001" value="implementation_SimpleImplementationFile" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="implementation." />
+    </node>
+    <node type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="2604304000476809027">
+      <property name="name" nameId="tpck.1169194664001" value="implementation_SwitchTest" />
       <property name="virtualPackage" nameId="tpck.1193676396447" value="implementation." />
     </node>
   </roots>
@@ -2413,90 +2417,90 @@
       </node>
     </node>
   </root>
-  <root id="2604304000476741585">
-    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="2604304000476741586">
+  <root id="2604304000476808866">
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="2604304000476808867">
       <property name="name" nameId="tpck.1169194664001" value="compountStatments1" />
       <property name="hasEllipsis" nameId="x27k.9066372830132870213" value="false" />
-      <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="2604304000476741587">
+      <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="2604304000476808868">
         <property name="const" nameId="mj1l.2941277002445651368" value="false" />
         <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
       </node>
-      <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="2604304000476741588">
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="2604304000476741593" />
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="2604304000476741594" />
+      <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="2604304000476808869">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="2604304000476808874" />
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="2604304000476808875" />
       </node>
-      <node role="arguments" roleId="x27k.5708867820623310661" type="x27k.Argument" typeId="x27k.7892328519581704407" id="2604304000476741589">
+      <node role="arguments" roleId="x27k.5708867820623310661" type="x27k.Argument" typeId="x27k.7892328519581704407" id="2604304000476808870">
         <property name="name" nameId="tpck.1169194664001" value="a" />
-        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.IntType" typeId="mj1l.8860443239512128108" id="2604304000476741590">
+        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.IntType" typeId="mj1l.8860443239512128108" id="2604304000476808871">
           <property name="const" nameId="mj1l.2941277002445651368" value="false" />
           <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
         </node>
       </node>
-      <node role="arguments" roleId="x27k.5708867820623310661" type="x27k.Argument" typeId="x27k.7892328519581704407" id="2604304000476741591">
+      <node role="arguments" roleId="x27k.5708867820623310661" type="x27k.Argument" typeId="x27k.7892328519581704407" id="2604304000476808872">
         <property name="name" nameId="tpck.1169194664001" value="b" />
-        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.IntType" typeId="mj1l.8860443239512128108" id="2604304000476741592">
+        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.IntType" typeId="mj1l.8860443239512128108" id="2604304000476808873">
           <property name="const" nameId="mj1l.2941277002445651368" value="false" />
           <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
         </node>
       </node>
     </node>
-    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="2604304000476741595">
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="2604304000476808876">
       <property name="name" nameId="tpck.1169194664001" value="compountStatments2" />
       <property name="hasEllipsis" nameId="x27k.9066372830132870213" value="false" />
-      <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="2604304000476741596">
+      <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="2604304000476808877">
         <property name="const" nameId="mj1l.2941277002445651368" value="false" />
         <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
       </node>
-      <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="2604304000476741597">
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="2604304000476741602" />
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="2604304000476741603">
-          <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="2604304000476741604">
-            <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="2604304000476741605" />
+      <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="2604304000476808878">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="2604304000476808883" />
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="2604304000476808884">
+          <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="2604304000476808885">
+            <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="2604304000476808886" />
           </node>
-          <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="2604304000476741606" />
+          <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="2604304000476808887" />
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="2604304000476741607" />
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="2604304000476808888" />
       </node>
-      <node role="arguments" roleId="x27k.5708867820623310661" type="x27k.Argument" typeId="x27k.7892328519581704407" id="2604304000476741598">
+      <node role="arguments" roleId="x27k.5708867820623310661" type="x27k.Argument" typeId="x27k.7892328519581704407" id="2604304000476808879">
         <property name="name" nameId="tpck.1169194664001" value="a" />
-        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.IntType" typeId="mj1l.8860443239512128108" id="2604304000476741599">
+        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.IntType" typeId="mj1l.8860443239512128108" id="2604304000476808880">
           <property name="const" nameId="mj1l.2941277002445651368" value="false" />
           <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
         </node>
       </node>
-      <node role="arguments" roleId="x27k.5708867820623310661" type="x27k.Argument" typeId="x27k.7892328519581704407" id="2604304000476741600">
+      <node role="arguments" roleId="x27k.5708867820623310661" type="x27k.Argument" typeId="x27k.7892328519581704407" id="2604304000476808881">
         <property name="name" nameId="tpck.1169194664001" value="b" />
-        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.IntType" typeId="mj1l.8860443239512128108" id="2604304000476741601">
+        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.IntType" typeId="mj1l.8860443239512128108" id="2604304000476808882">
           <property name="const" nameId="mj1l.2941277002445651368" value="false" />
           <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
         </node>
       </node>
     </node>
   </root>
-  <root id="2604304000476741608">
-    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="2604304000476741609">
+  <root id="2604304000476808889">
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="2604304000476808890">
       <property name="name" nameId="tpck.1169194664001" value="funWithIfStatement" />
       <property name="hasEllipsis" nameId="x27k.9066372830132870213" value="false" />
-      <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="2604304000476741610">
+      <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="2604304000476808891">
         <property name="const" nameId="mj1l.2941277002445651368" value="false" />
         <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
       </node>
-      <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="2604304000476741611">
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.IfStatement" typeId="c4fa.6275792049641600983" id="2604304000476741612">
-          <node role="condition" roleId="c4fa.6275792049641600984" type="mj1l.TrueLiteral" typeId="mj1l.8860443239512128094" id="2604304000476741613" />
-          <node role="thenPart" roleId="c4fa.6275792049641600985" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="2604304000476741614">
-            <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="2604304000476741615">
+      <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="2604304000476808892">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.IfStatement" typeId="c4fa.6275792049641600983" id="2604304000476808893">
+          <node role="condition" roleId="c4fa.6275792049641600984" type="mj1l.TrueLiteral" typeId="mj1l.8860443239512128094" id="2604304000476808894" />
+          <node role="thenPart" roleId="c4fa.6275792049641600985" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="2604304000476808895">
+            <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="2604304000476808896">
               <property name="name" nameId="tpck.1169194664001" value="var1" />
-              <node role="type" roleId="mj1l.318113533128716676" type="mj1l.FloatType" typeId="mj1l.4739982148980385695" id="2604304000476741616">
+              <node role="type" roleId="mj1l.318113533128716676" type="mj1l.FloatType" typeId="mj1l.4739982148980385695" id="2604304000476808897">
                 <property name="const" nameId="mj1l.2941277002445651368" value="false" />
                 <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
               </node>
             </node>
           </node>
-          <node role="elsePart" roleId="c4fa.3134547887598486571" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="2604304000476741617">
-            <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="2604304000476741618">
+          <node role="elsePart" roleId="c4fa.3134547887598486571" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="2604304000476808898">
+            <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="2604304000476808899">
               <property name="name" nameId="tpck.1169194664001" value="var2" />
-              <node role="type" roleId="mj1l.318113533128716676" type="mj1l.FloatType" typeId="mj1l.4739982148980385695" id="2604304000476741619">
+              <node role="type" roleId="mj1l.318113533128716676" type="mj1l.FloatType" typeId="mj1l.4739982148980385695" id="2604304000476808900">
                 <property name="const" nameId="mj1l.2941277002445651368" value="false" />
                 <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
               </node>
@@ -2505,152 +2509,155 @@
         </node>
       </node>
     </node>
-    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="2604304000476741620">
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="2604304000476808901">
       <property name="name" nameId="tpck.1169194664001" value="funWithIfStatementAndElseIf" />
       <property name="hasEllipsis" nameId="x27k.9066372830132870213" value="false" />
-      <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="2604304000476741621">
+      <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="2604304000476808902">
         <property name="const" nameId="mj1l.2941277002445651368" value="false" />
         <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
       </node>
-      <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="2604304000476741622">
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.IfStatement" typeId="c4fa.6275792049641600983" id="2604304000476741623">
-          <node role="condition" roleId="c4fa.6275792049641600984" type="mj1l.TrueLiteral" typeId="mj1l.8860443239512128094" id="2604304000476741624" />
-          <node role="thenPart" roleId="c4fa.6275792049641600985" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="2604304000476741625">
-            <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="2604304000476741626">
+      <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="2604304000476808903">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.NotParsedStatement" typeId="c4fa.2604304000476764367" id="2604304000476808904">
+          <property name="raw_signature" nameId="c4fa.2604304000476764369" value="break;" />
+        </node>
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.IfStatement" typeId="c4fa.6275792049641600983" id="2604304000476808905">
+          <node role="condition" roleId="c4fa.6275792049641600984" type="mj1l.TrueLiteral" typeId="mj1l.8860443239512128094" id="2604304000476808906" />
+          <node role="thenPart" roleId="c4fa.6275792049641600985" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="2604304000476808907">
+            <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="2604304000476808908">
               <property name="name" nameId="tpck.1169194664001" value="var1" />
-              <node role="type" roleId="mj1l.318113533128716676" type="mj1l.FloatType" typeId="mj1l.4739982148980385695" id="2604304000476741627">
+              <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="2604304000476808909">
                 <property name="const" nameId="mj1l.2941277002445651368" value="false" />
                 <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
               </node>
             </node>
           </node>
-          <node role="elseIfs" roleId="c4fa.3134547887598498723" type="c4fa.ElseIfPart" typeId="c4fa.3134547887598498470" id="2604304000476741628">
-            <node role="body" roleId="c4fa.3134547887598498471" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="2604304000476741629">
-              <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="2604304000476741630">
+          <node role="elseIfs" roleId="c4fa.3134547887598498723" type="c4fa.ElseIfPart" typeId="c4fa.3134547887598498470" id="2604304000476808910">
+            <node role="body" roleId="c4fa.3134547887598498471" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="2604304000476808911">
+              <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="2604304000476808912">
                 <property name="name" nameId="tpck.1169194664001" value="var2" />
-                <node role="type" roleId="mj1l.318113533128716676" type="mj1l.FloatType" typeId="mj1l.4739982148980385695" id="2604304000476741631">
+                <node role="type" roleId="mj1l.318113533128716676" type="mj1l.FloatType" typeId="mj1l.4739982148980385695" id="2604304000476808913">
                   <property name="const" nameId="mj1l.2941277002445651368" value="false" />
                   <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
                 </node>
               </node>
             </node>
-            <node role="condition" roleId="c4fa.3134547887598498479" type="mj1l.TrueLiteral" typeId="mj1l.8860443239512128094" id="2604304000476741632" />
+            <node role="condition" roleId="c4fa.3134547887598498479" type="mj1l.TrueLiteral" typeId="mj1l.8860443239512128094" id="2604304000476808914" />
           </node>
-          <node role="elseIfs" roleId="c4fa.3134547887598498723" type="c4fa.ElseIfPart" typeId="c4fa.3134547887598498470" id="2604304000476741633">
-            <node role="body" roleId="c4fa.3134547887598498471" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="2604304000476741634">
-              <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="2604304000476741635">
+          <node role="elseIfs" roleId="c4fa.3134547887598498723" type="c4fa.ElseIfPart" typeId="c4fa.3134547887598498470" id="2604304000476808915">
+            <node role="body" roleId="c4fa.3134547887598498471" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="2604304000476808916">
+              <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="2604304000476808917">
                 <property name="name" nameId="tpck.1169194664001" value="var3" />
-                <node role="type" roleId="mj1l.318113533128716676" type="mj1l.FloatType" typeId="mj1l.4739982148980385695" id="2604304000476741636">
+                <node role="type" roleId="mj1l.318113533128716676" type="mj1l.FloatType" typeId="mj1l.4739982148980385695" id="2604304000476808918">
                   <property name="const" nameId="mj1l.2941277002445651368" value="false" />
                   <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
                 </node>
               </node>
             </node>
-            <node role="condition" roleId="c4fa.3134547887598498479" type="mj1l.TrueLiteral" typeId="mj1l.8860443239512128094" id="2604304000476741637" />
+            <node role="condition" roleId="c4fa.3134547887598498479" type="mj1l.TrueLiteral" typeId="mj1l.8860443239512128094" id="2604304000476808919" />
           </node>
         </node>
       </node>
     </node>
-    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="2604304000476741638">
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="2604304000476808920">
       <property name="name" nameId="tpck.1169194664001" value="funWithIfStatementAndElseIfNested" />
       <property name="hasEllipsis" nameId="x27k.9066372830132870213" value="false" />
-      <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="2604304000476741639">
+      <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="2604304000476808921">
         <property name="const" nameId="mj1l.2941277002445651368" value="false" />
         <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
       </node>
-      <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="2604304000476741640">
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.IfStatement" typeId="c4fa.6275792049641600983" id="2604304000476741641">
-          <node role="condition" roleId="c4fa.6275792049641600984" type="mj1l.TrueLiteral" typeId="mj1l.8860443239512128094" id="2604304000476741642" />
-          <node role="thenPart" roleId="c4fa.6275792049641600985" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="2604304000476741643">
-            <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="2604304000476741644">
+      <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="2604304000476808922">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.IfStatement" typeId="c4fa.6275792049641600983" id="2604304000476808923">
+          <node role="condition" roleId="c4fa.6275792049641600984" type="mj1l.TrueLiteral" typeId="mj1l.8860443239512128094" id="2604304000476808924" />
+          <node role="thenPart" roleId="c4fa.6275792049641600985" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="2604304000476808925">
+            <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="2604304000476808926">
               <property name="name" nameId="tpck.1169194664001" value="var1" />
-              <node role="type" roleId="mj1l.318113533128716676" type="mj1l.FloatType" typeId="mj1l.4739982148980385695" id="2604304000476741645">
+              <node role="type" roleId="mj1l.318113533128716676" type="mj1l.FloatType" typeId="mj1l.4739982148980385695" id="2604304000476808927">
                 <property name="const" nameId="mj1l.2941277002445651368" value="false" />
                 <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
               </node>
             </node>
           </node>
-          <node role="elseIfs" roleId="c4fa.3134547887598498723" type="c4fa.ElseIfPart" typeId="c4fa.3134547887598498470" id="2604304000476741646">
-            <node role="body" roleId="c4fa.3134547887598498471" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="2604304000476741647">
-              <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="2604304000476741648">
+          <node role="elseIfs" roleId="c4fa.3134547887598498723" type="c4fa.ElseIfPart" typeId="c4fa.3134547887598498470" id="2604304000476808928">
+            <node role="body" roleId="c4fa.3134547887598498471" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="2604304000476808929">
+              <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="2604304000476808930">
                 <property name="name" nameId="tpck.1169194664001" value="var2" />
-                <node role="type" roleId="mj1l.318113533128716676" type="mj1l.FloatType" typeId="mj1l.4739982148980385695" id="2604304000476741649">
+                <node role="type" roleId="mj1l.318113533128716676" type="mj1l.FloatType" typeId="mj1l.4739982148980385695" id="2604304000476808931">
                   <property name="const" nameId="mj1l.2941277002445651368" value="false" />
                   <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
                 </node>
               </node>
             </node>
-            <node role="condition" roleId="c4fa.3134547887598498479" type="mj1l.TrueLiteral" typeId="mj1l.8860443239512128094" id="2604304000476741650" />
+            <node role="condition" roleId="c4fa.3134547887598498479" type="mj1l.TrueLiteral" typeId="mj1l.8860443239512128094" id="2604304000476808932" />
           </node>
-          <node role="elseIfs" roleId="c4fa.3134547887598498723" type="c4fa.ElseIfPart" typeId="c4fa.3134547887598498470" id="2604304000476741651">
-            <node role="body" roleId="c4fa.3134547887598498471" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="2604304000476741652">
-              <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.IfStatement" typeId="c4fa.6275792049641600983" id="2604304000476741653">
-                <node role="condition" roleId="c4fa.6275792049641600984" type="mj1l.TrueLiteral" typeId="mj1l.8860443239512128094" id="2604304000476741654" />
-                <node role="thenPart" roleId="c4fa.6275792049641600985" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="2604304000476741655">
-                  <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="2604304000476741656">
+          <node role="elseIfs" roleId="c4fa.3134547887598498723" type="c4fa.ElseIfPart" typeId="c4fa.3134547887598498470" id="2604304000476808933">
+            <node role="body" roleId="c4fa.3134547887598498471" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="2604304000476808934">
+              <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.IfStatement" typeId="c4fa.6275792049641600983" id="2604304000476808935">
+                <node role="condition" roleId="c4fa.6275792049641600984" type="mj1l.TrueLiteral" typeId="mj1l.8860443239512128094" id="2604304000476808936" />
+                <node role="thenPart" roleId="c4fa.6275792049641600985" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="2604304000476808937">
+                  <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="2604304000476808938">
                     <property name="name" nameId="tpck.1169194664001" value="var3" />
-                    <node role="type" roleId="mj1l.318113533128716676" type="mj1l.FloatType" typeId="mj1l.4739982148980385695" id="2604304000476741657">
+                    <node role="type" roleId="mj1l.318113533128716676" type="mj1l.FloatType" typeId="mj1l.4739982148980385695" id="2604304000476808939">
                       <property name="const" nameId="mj1l.2941277002445651368" value="false" />
                       <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
                     </node>
                   </node>
                 </node>
-                <node role="elseIfs" roleId="c4fa.3134547887598498723" type="c4fa.ElseIfPart" typeId="c4fa.3134547887598498470" id="2604304000476741658">
-                  <node role="body" roleId="c4fa.3134547887598498471" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="2604304000476741659" />
-                  <node role="condition" roleId="c4fa.3134547887598498479" type="mj1l.TrueLiteral" typeId="mj1l.8860443239512128094" id="2604304000476741660" />
+                <node role="elseIfs" roleId="c4fa.3134547887598498723" type="c4fa.ElseIfPart" typeId="c4fa.3134547887598498470" id="2604304000476808940">
+                  <node role="body" roleId="c4fa.3134547887598498471" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="2604304000476808941" />
+                  <node role="condition" roleId="c4fa.3134547887598498479" type="mj1l.TrueLiteral" typeId="mj1l.8860443239512128094" id="2604304000476808942" />
                 </node>
-                <node role="elseIfs" roleId="c4fa.3134547887598498723" type="c4fa.ElseIfPart" typeId="c4fa.3134547887598498470" id="2604304000476741661">
-                  <node role="body" roleId="c4fa.3134547887598498471" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="2604304000476741662">
-                    <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="2604304000476741663">
+                <node role="elseIfs" roleId="c4fa.3134547887598498723" type="c4fa.ElseIfPart" typeId="c4fa.3134547887598498470" id="2604304000476808943">
+                  <node role="body" roleId="c4fa.3134547887598498471" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="2604304000476808944">
+                    <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="2604304000476808945">
                       <property name="name" nameId="tpck.1169194664001" value="var3" />
-                      <node role="type" roleId="mj1l.318113533128716676" type="mj1l.FloatType" typeId="mj1l.4739982148980385695" id="2604304000476741664">
+                      <node role="type" roleId="mj1l.318113533128716676" type="mj1l.FloatType" typeId="mj1l.4739982148980385695" id="2604304000476808946">
                         <property name="const" nameId="mj1l.2941277002445651368" value="false" />
                         <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
                       </node>
                     </node>
-                    <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="2604304000476741665">
+                    <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="2604304000476808947">
                       <property name="name" nameId="tpck.1169194664001" value="var4" />
-                      <node role="type" roleId="mj1l.318113533128716676" type="mj1l.FloatType" typeId="mj1l.4739982148980385695" id="2604304000476741666">
+                      <node role="type" roleId="mj1l.318113533128716676" type="mj1l.FloatType" typeId="mj1l.4739982148980385695" id="2604304000476808948">
                         <property name="const" nameId="mj1l.2941277002445651368" value="false" />
                         <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
                       </node>
                     </node>
                   </node>
-                  <node role="condition" roleId="c4fa.3134547887598498479" type="mj1l.TrueLiteral" typeId="mj1l.8860443239512128094" id="2604304000476741667" />
+                  <node role="condition" roleId="c4fa.3134547887598498479" type="mj1l.TrueLiteral" typeId="mj1l.8860443239512128094" id="2604304000476808949" />
                 </node>
               </node>
             </node>
-            <node role="condition" roleId="c4fa.3134547887598498479" type="mj1l.TrueLiteral" typeId="mj1l.8860443239512128094" id="2604304000476741668" />
+            <node role="condition" roleId="c4fa.3134547887598498479" type="mj1l.TrueLiteral" typeId="mj1l.8860443239512128094" id="2604304000476808950" />
           </node>
         </node>
       </node>
     </node>
-    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="2604304000476741669">
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="2604304000476808951">
       <property name="name" nameId="tpck.1169194664001" value="funWithNestedIfStatement" />
       <property name="hasEllipsis" nameId="x27k.9066372830132870213" value="false" />
-      <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="2604304000476741670">
+      <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="2604304000476808952">
         <property name="const" nameId="mj1l.2941277002445651368" value="false" />
         <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
       </node>
-      <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="2604304000476741671">
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.IfStatement" typeId="c4fa.6275792049641600983" id="2604304000476741672">
-          <node role="condition" roleId="c4fa.6275792049641600984" type="mj1l.TrueLiteral" typeId="mj1l.8860443239512128094" id="2604304000476741673" />
-          <node role="thenPart" roleId="c4fa.6275792049641600985" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="2604304000476741674">
-            <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.IfStatement" typeId="c4fa.6275792049641600983" id="2604304000476741675">
-              <node role="condition" roleId="c4fa.6275792049641600984" type="mj1l.TrueLiteral" typeId="mj1l.8860443239512128094" id="2604304000476741676" />
-              <node role="thenPart" roleId="c4fa.6275792049641600985" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="2604304000476741677">
-                <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="2604304000476741678">
+      <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="2604304000476808953">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.IfStatement" typeId="c4fa.6275792049641600983" id="2604304000476808954">
+          <node role="condition" roleId="c4fa.6275792049641600984" type="mj1l.TrueLiteral" typeId="mj1l.8860443239512128094" id="2604304000476808955" />
+          <node role="thenPart" roleId="c4fa.6275792049641600985" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="2604304000476808956">
+            <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.IfStatement" typeId="c4fa.6275792049641600983" id="2604304000476808957">
+              <node role="condition" roleId="c4fa.6275792049641600984" type="mj1l.TrueLiteral" typeId="mj1l.8860443239512128094" id="2604304000476808958" />
+              <node role="thenPart" roleId="c4fa.6275792049641600985" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="2604304000476808959">
+                <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="2604304000476808960">
                   <property name="name" nameId="tpck.1169194664001" value="var1" />
-                  <node role="type" roleId="mj1l.318113533128716676" type="mj1l.FloatType" typeId="mj1l.4739982148980385695" id="2604304000476741679">
+                  <node role="type" roleId="mj1l.318113533128716676" type="mj1l.FloatType" typeId="mj1l.4739982148980385695" id="2604304000476808961">
                     <property name="const" nameId="mj1l.2941277002445651368" value="false" />
                     <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
                   </node>
                 </node>
               </node>
-              <node role="elsePart" roleId="c4fa.3134547887598486571" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="2604304000476741680">
-                <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="2604304000476741681">
+              <node role="elsePart" roleId="c4fa.3134547887598486571" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="2604304000476808962">
+                <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="2604304000476808963">
                   <property name="name" nameId="tpck.1169194664001" value="var2" />
-                  <node role="type" roleId="mj1l.318113533128716676" type="mj1l.FloatType" typeId="mj1l.4739982148980385695" id="2604304000476741682">
+                  <node role="type" roleId="mj1l.318113533128716676" type="mj1l.FloatType" typeId="mj1l.4739982148980385695" id="2604304000476808964">
                     <property name="const" nameId="mj1l.2941277002445651368" value="false" />
                     <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
                   </node>
@@ -2658,51 +2665,51 @@
               </node>
             </node>
           </node>
-          <node role="elsePart" roleId="c4fa.3134547887598486571" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="2604304000476741683">
-            <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.IfStatement" typeId="c4fa.6275792049641600983" id="2604304000476741684">
-              <node role="condition" roleId="c4fa.6275792049641600984" type="mj1l.TrueLiteral" typeId="mj1l.8860443239512128094" id="2604304000476741685" />
-              <node role="thenPart" roleId="c4fa.6275792049641600985" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="2604304000476741686">
-                <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="2604304000476741687">
+          <node role="elsePart" roleId="c4fa.3134547887598486571" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="2604304000476808965">
+            <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.IfStatement" typeId="c4fa.6275792049641600983" id="2604304000476808966">
+              <node role="condition" roleId="c4fa.6275792049641600984" type="mj1l.TrueLiteral" typeId="mj1l.8860443239512128094" id="2604304000476808967" />
+              <node role="thenPart" roleId="c4fa.6275792049641600985" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="2604304000476808968">
+                <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="2604304000476808969">
                   <property name="name" nameId="tpck.1169194664001" value="var3" />
-                  <node role="type" roleId="mj1l.318113533128716676" type="mj1l.FloatType" typeId="mj1l.4739982148980385695" id="2604304000476741688">
+                  <node role="type" roleId="mj1l.318113533128716676" type="mj1l.FloatType" typeId="mj1l.4739982148980385695" id="2604304000476808970">
                     <property name="const" nameId="mj1l.2941277002445651368" value="false" />
                     <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
                   </node>
                 </node>
               </node>
-              <node role="elsePart" roleId="c4fa.3134547887598486571" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="2604304000476741689">
-                <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="2604304000476741690">
+              <node role="elsePart" roleId="c4fa.3134547887598486571" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="2604304000476808971">
+                <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="2604304000476808972">
                   <property name="name" nameId="tpck.1169194664001" value="var4" />
-                  <node role="type" roleId="mj1l.318113533128716676" type="mj1l.FloatType" typeId="mj1l.4739982148980385695" id="2604304000476741691">
+                  <node role="type" roleId="mj1l.318113533128716676" type="mj1l.FloatType" typeId="mj1l.4739982148980385695" id="2604304000476808973">
                     <property name="const" nameId="mj1l.2941277002445651368" value="false" />
                     <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
                   </node>
                 </node>
               </node>
             </node>
-            <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.IfStatement" typeId="c4fa.6275792049641600983" id="2604304000476741692">
-              <node role="condition" roleId="c4fa.6275792049641600984" type="mj1l.TrueLiteral" typeId="mj1l.8860443239512128094" id="2604304000476741693" />
-              <node role="thenPart" roleId="c4fa.6275792049641600985" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="2604304000476741694" />
-              <node role="elsePart" roleId="c4fa.3134547887598486571" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="2604304000476741695">
-                <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="2604304000476741696">
+            <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.IfStatement" typeId="c4fa.6275792049641600983" id="2604304000476808974">
+              <node role="condition" roleId="c4fa.6275792049641600984" type="mj1l.TrueLiteral" typeId="mj1l.8860443239512128094" id="2604304000476808975" />
+              <node role="thenPart" roleId="c4fa.6275792049641600985" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="2604304000476808976" />
+              <node role="elsePart" roleId="c4fa.3134547887598486571" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="2604304000476808977">
+                <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="2604304000476808978">
                   <property name="name" nameId="tpck.1169194664001" value="var5" />
-                  <node role="type" roleId="mj1l.318113533128716676" type="mj1l.FloatType" typeId="mj1l.4739982148980385695" id="2604304000476741697">
+                  <node role="type" roleId="mj1l.318113533128716676" type="mj1l.FloatType" typeId="mj1l.4739982148980385695" id="2604304000476808979">
                     <property name="const" nameId="mj1l.2941277002445651368" value="false" />
                     <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
                   </node>
                 </node>
-                <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="2604304000476741698">
+                <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="2604304000476808980">
                   <property name="name" nameId="tpck.1169194664001" value="var6" />
-                  <node role="type" roleId="mj1l.318113533128716676" type="mj1l.FloatType" typeId="mj1l.4739982148980385695" id="2604304000476741699">
+                  <node role="type" roleId="mj1l.318113533128716676" type="mj1l.FloatType" typeId="mj1l.4739982148980385695" id="2604304000476808981">
                     <property name="const" nameId="mj1l.2941277002445651368" value="false" />
                     <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
                   </node>
                 </node>
               </node>
             </node>
-            <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="2604304000476741700">
+            <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="2604304000476808982">
               <property name="name" nameId="tpck.1169194664001" value="var7" />
-              <node role="type" roleId="mj1l.318113533128716676" type="mj1l.FloatType" typeId="mj1l.4739982148980385695" id="2604304000476741701">
+              <node role="type" roleId="mj1l.318113533128716676" type="mj1l.FloatType" typeId="mj1l.4739982148980385695" id="2604304000476808983">
                 <property name="const" nameId="mj1l.2941277002445651368" value="false" />
                 <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
               </node>
@@ -2712,76 +2719,77 @@
       </node>
     </node>
   </root>
-  <root id="2604304000476741702">
-    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="2604304000476741703">
+  <root id="2604304000476808984">
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="2604304000476808985">
       <property name="name" nameId="tpck.1169194664001" value="funWithLocalVariable" />
       <property name="hasEllipsis" nameId="x27k.9066372830132870213" value="false" />
-      <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="2604304000476741704">
+      <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="2604304000476808986">
         <property name="const" nameId="mj1l.2941277002445651368" value="false" />
         <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
       </node>
-      <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="2604304000476741705">
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="2604304000476741706">
+      <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="2604304000476808987">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="2604304000476808988">
           <property name="name" nameId="tpck.1169194664001" value="localVar" />
-          <node role="type" roleId="mj1l.318113533128716676" type="mj1l.FloatType" typeId="mj1l.4739982148980385695" id="2604304000476741707">
+          <node role="type" roleId="mj1l.318113533128716676" type="mj1l.FloatType" typeId="mj1l.4739982148980385695" id="2604304000476808989">
             <property name="const" nameId="mj1l.2941277002445651368" value="false" />
             <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
           </node>
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="2604304000476741708">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="2604304000476808990">
           <property name="name" nameId="tpck.1169194664001" value="localVar2" />
-          <node role="type" roleId="mj1l.318113533128716676" type="mj1l.FloatType" typeId="mj1l.4739982148980385695" id="2604304000476741709">
+          <node role="type" roleId="mj1l.318113533128716676" type="mj1l.FloatType" typeId="mj1l.4739982148980385695" id="2604304000476808991">
             <property name="const" nameId="mj1l.2941277002445651368" value="false" />
             <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
           </node>
         </node>
       </node>
     </node>
-    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="2604304000476741710">
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="2604304000476808992">
       <property name="name" nameId="tpck.1169194664001" value="funWithLocalVariableInCompoundStatement" />
       <property name="hasEllipsis" nameId="x27k.9066372830132870213" value="false" />
-      <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="2604304000476741711">
+      <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="2604304000476808993">
         <property name="const" nameId="mj1l.2941277002445651368" value="false" />
         <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
       </node>
-      <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="2604304000476741712">
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="2604304000476741713">
-          <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="2604304000476741714">
+      <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="2604304000476808994">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.NotParsedStatement" typeId="c4fa.2604304000476764367" id="2604304000476809046" />
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="2604304000476808995">
+          <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="2604304000476808996">
             <property name="name" nameId="tpck.1169194664001" value="localVar1" />
-            <node role="type" roleId="mj1l.318113533128716676" type="mj1l.FloatType" typeId="mj1l.4739982148980385695" id="2604304000476741715">
+            <node role="type" roleId="mj1l.318113533128716676" type="mj1l.FloatType" typeId="mj1l.4739982148980385695" id="2604304000476808997">
               <property name="const" nameId="mj1l.2941277002445651368" value="false" />
               <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
             </node>
           </node>
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="2604304000476741716">
-          <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="2604304000476741717">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="2604304000476808998">
+          <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="2604304000476808999">
             <property name="name" nameId="tpck.1169194664001" value="localVar2" />
-            <node role="type" roleId="mj1l.318113533128716676" type="mj1l.FloatType" typeId="mj1l.4739982148980385695" id="2604304000476741718">
+            <node role="type" roleId="mj1l.318113533128716676" type="mj1l.FloatType" typeId="mj1l.4739982148980385695" id="2604304000476809000">
               <property name="const" nameId="mj1l.2941277002445651368" value="false" />
               <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
             </node>
           </node>
-          <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="2604304000476741719">
-            <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="2604304000476741720">
+          <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="2604304000476809001">
+            <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="2604304000476809002">
               <property name="name" nameId="tpck.1169194664001" value="localVar3" />
-              <node role="type" roleId="mj1l.318113533128716676" type="mj1l.FloatType" typeId="mj1l.4739982148980385695" id="2604304000476741721">
+              <node role="type" roleId="mj1l.318113533128716676" type="mj1l.FloatType" typeId="mj1l.4739982148980385695" id="2604304000476809003">
                 <property name="const" nameId="mj1l.2941277002445651368" value="false" />
                 <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
               </node>
             </node>
           </node>
-          <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="2604304000476741722">
-            <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="2604304000476741723">
+          <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="2604304000476809004">
+            <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="2604304000476809005">
               <property name="name" nameId="tpck.1169194664001" value="localVar4" />
-              <node role="type" roleId="mj1l.318113533128716676" type="mj1l.FloatType" typeId="mj1l.4739982148980385695" id="2604304000476741724">
+              <node role="type" roleId="mj1l.318113533128716676" type="mj1l.FloatType" typeId="mj1l.4739982148980385695" id="2604304000476809006">
                 <property name="const" nameId="mj1l.2941277002445651368" value="false" />
                 <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
               </node>
             </node>
-            <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="2604304000476741725">
+            <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="2604304000476809007">
               <property name="name" nameId="tpck.1169194664001" value="localVar5" />
-              <node role="type" roleId="mj1l.318113533128716676" type="mj1l.FloatType" typeId="mj1l.4739982148980385695" id="2604304000476741726">
+              <node role="type" roleId="mj1l.318113533128716676" type="mj1l.FloatType" typeId="mj1l.4739982148980385695" id="2604304000476809008">
                 <property name="const" nameId="mj1l.2941277002445651368" value="false" />
                 <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
               </node>
@@ -2791,61 +2799,119 @@
       </node>
     </node>
   </root>
-  <root id="2604304000476741727">
-    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="2604304000476741728">
+  <root id="2604304000476809009">
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="2604304000476809010">
       <property name="name" nameId="tpck.1169194664001" value="add" />
       <property name="hasEllipsis" nameId="x27k.9066372830132870213" value="false" />
-      <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="2604304000476741729">
+      <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="2604304000476809011">
         <property name="const" nameId="mj1l.2941277002445651368" value="false" />
         <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
       </node>
-      <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="2604304000476741730" />
-      <node role="arguments" roleId="x27k.5708867820623310661" type="x27k.Argument" typeId="x27k.7892328519581704407" id="2604304000476741731">
+      <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="2604304000476809012" />
+      <node role="arguments" roleId="x27k.5708867820623310661" type="x27k.Argument" typeId="x27k.7892328519581704407" id="2604304000476809013">
         <property name="name" nameId="tpck.1169194664001" value="a" />
-        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.FloatType" typeId="mj1l.4739982148980385695" id="2604304000476741732">
+        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.FloatType" typeId="mj1l.4739982148980385695" id="2604304000476809014">
           <property name="const" nameId="mj1l.2941277002445651368" value="false" />
           <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
         </node>
       </node>
-      <node role="arguments" roleId="x27k.5708867820623310661" type="x27k.Argument" typeId="x27k.7892328519581704407" id="2604304000476741733">
+      <node role="arguments" roleId="x27k.5708867820623310661" type="x27k.Argument" typeId="x27k.7892328519581704407" id="2604304000476809015">
         <property name="name" nameId="tpck.1169194664001" value="b" />
-        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.FloatType" typeId="mj1l.4739982148980385695" id="2604304000476741734">
+        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.FloatType" typeId="mj1l.4739982148980385695" id="2604304000476809016">
           <property name="const" nameId="mj1l.2941277002445651368" value="false" />
           <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
         </node>
       </node>
     </node>
-    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="2604304000476741735">
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="2604304000476809017">
       <property name="name" nameId="tpck.1169194664001" value="add2" />
       <property name="hasEllipsis" nameId="x27k.9066372830132870213" value="false" />
-      <node role="type" roleId="mj1l.318113533128716676" type="mj1l.FloatType" typeId="mj1l.4739982148980385695" id="2604304000476741736">
+      <node role="type" roleId="mj1l.318113533128716676" type="mj1l.FloatType" typeId="mj1l.4739982148980385695" id="2604304000476809018">
         <property name="const" nameId="mj1l.2941277002445651368" value="false" />
         <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
       </node>
-      <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="2604304000476741737" />
-      <node role="arguments" roleId="x27k.5708867820623310661" type="x27k.Argument" typeId="x27k.7892328519581704407" id="2604304000476741738">
+      <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="2604304000476809019" />
+      <node role="arguments" roleId="x27k.5708867820623310661" type="x27k.Argument" typeId="x27k.7892328519581704407" id="2604304000476809020">
         <property name="name" nameId="tpck.1169194664001" value="a" />
-        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.FloatType" typeId="mj1l.4739982148980385695" id="2604304000476741739">
+        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.FloatType" typeId="mj1l.4739982148980385695" id="2604304000476809021">
           <property name="const" nameId="mj1l.2941277002445651368" value="false" />
           <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
         </node>
       </node>
-      <node role="arguments" roleId="x27k.5708867820623310661" type="x27k.Argument" typeId="x27k.7892328519581704407" id="2604304000476741740">
+      <node role="arguments" roleId="x27k.5708867820623310661" type="x27k.Argument" typeId="x27k.7892328519581704407" id="2604304000476809022">
         <property name="name" nameId="tpck.1169194664001" value="b" />
-        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.FloatType" typeId="mj1l.4739982148980385695" id="2604304000476741741">
+        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.FloatType" typeId="mj1l.4739982148980385695" id="2604304000476809023">
           <property name="const" nameId="mj1l.2941277002445651368" value="false" />
           <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
         </node>
       </node>
     </node>
-    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="2604304000476741742">
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="2604304000476809024">
       <property name="name" nameId="tpck.1169194664001" value="funWithoutParameter" />
       <property name="hasEllipsis" nameId="x27k.9066372830132870213" value="false" />
-      <node role="type" roleId="mj1l.318113533128716676" type="mj1l.FloatType" typeId="mj1l.4739982148980385695" id="2604304000476741743">
+      <node role="type" roleId="mj1l.318113533128716676" type="mj1l.FloatType" typeId="mj1l.4739982148980385695" id="2604304000476809025">
         <property name="const" nameId="mj1l.2941277002445651368" value="false" />
         <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
       </node>
-      <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="2604304000476741744" />
+      <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="2604304000476809026" />
+    </node>
+  </root>
+  <root id="2604304000476809027">
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="2604304000476809028">
+      <property name="name" nameId="tpck.1169194664001" value="funWithSwitch" />
+      <property name="hasEllipsis" nameId="x27k.9066372830132870213" value="false" />
+      <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="2604304000476809029">
+        <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+        <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+      </node>
+      <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="2604304000476809030">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="2604304000476809031">
+          <property name="name" nameId="tpck.1169194664001" value="value" />
+          <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="2604304000476809032">
+            <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+            <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+          </node>
+        </node>
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.NotParsedStatement" typeId="c4fa.2604304000476764367" id="2604304000476809033">
+          <property name="raw_signature" nameId="c4fa.2604304000476764369" value="switch(value){&#10;&#9;&#9;case 1:&#10;       &#9;&#9;&#9;float var1;&#10;&#9;&#9;   &#9;break;&#10;&#9;&#9;case 2:&#10;       &#9;&#9;&#9;float var2;&#10;&#9;&#9;&#9;break;&#10;&#9;&#9;default:&#10;&#9;&#9;&#9;float var3;&#10;&#9;}" />
+        </node>
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.NotParsedStatement" typeId="c4fa.2604304000476764367" id="2604304000476809034">
+          <property name="raw_signature" nameId="c4fa.2604304000476764369" value="case 1:" />
+        </node>
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="2604304000476809035">
+          <property name="name" nameId="tpck.1169194664001" value="var1" />
+          <node role="type" roleId="mj1l.318113533128716676" type="mj1l.FloatType" typeId="mj1l.4739982148980385695" id="2604304000476809036">
+            <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+            <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+          </node>
+        </node>
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.NotParsedStatement" typeId="c4fa.2604304000476764367" id="2604304000476809037">
+          <property name="raw_signature" nameId="c4fa.2604304000476764369" value="break;" />
+        </node>
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.NotParsedStatement" typeId="c4fa.2604304000476764367" id="2604304000476809038">
+          <property name="raw_signature" nameId="c4fa.2604304000476764369" value="case 2:" />
+        </node>
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="2604304000476809039">
+          <property name="name" nameId="tpck.1169194664001" value="var2" />
+          <node role="type" roleId="mj1l.318113533128716676" type="mj1l.FloatType" typeId="mj1l.4739982148980385695" id="2604304000476809040">
+            <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+            <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+          </node>
+        </node>
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.NotParsedStatement" typeId="c4fa.2604304000476764367" id="2604304000476809041">
+          <property name="raw_signature" nameId="c4fa.2604304000476764369" value="break;" />
+        </node>
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.NotParsedStatement" typeId="c4fa.2604304000476764367" id="2604304000476809042">
+          <property name="raw_signature" nameId="c4fa.2604304000476764369" value="default:" />
+        </node>
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="2604304000476809043">
+          <property name="name" nameId="tpck.1169194664001" value="var3" />
+          <node role="type" roleId="mj1l.318113533128716676" type="mj1l.FloatType" typeId="mj1l.4739982148980385695" id="2604304000476809044">
+            <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+            <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+          </node>
+        </node>
+      </node>
     </node>
   </root>
 </model>

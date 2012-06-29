@@ -10,7 +10,7 @@ void funWithIfStatement(){
 
 void funWithIfStatementAndElseIf(){
 	if(true) {
-		float var1;
+		int8_t var1;
 	} else if(false) {
 		float var2;
 	} else if(false) {

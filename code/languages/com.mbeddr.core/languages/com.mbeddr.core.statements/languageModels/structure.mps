@@ -161,6 +161,10 @@
       <property name="name" nameId="tpck.1169194664001" value="ForVarRef" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
     </node>
+    <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="2604304000476764367">
+      <property name="name" nameId="tpck.1169194664001" value="NotParsedStatement" />
+      <link role="extends" roleId="tpce.1071489389519" targetNodeId="4185783222026464515" resolveInfo="Statement" />
+    </node>
   </roots>
   <root id="4185783222026464515">
     <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="4058325937810995945">
@@ -708,6 +712,12 @@
     </node>
     <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.BooleanConceptProperty" typeId="tpce.1105725574259" id="3779779187805946288">
       <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473994950" resolveInfo="dontSubstituteByDefault" />
+    </node>
+  </root>
+  <root id="2604304000476764367">
+    <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="2604304000476764369">
+      <property name="name" nameId="tpck.1169194664001" value="raw_signature" />
+      <link role="dataType" roleId="tpce.1082985295845" targetNodeId="tpck.1082983041843" resolveInfo="string" />
     </node>
   </root>
 </model>
