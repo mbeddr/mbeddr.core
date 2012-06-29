@@ -1,6 +1,5 @@
 #include <stdio.h>
 
-
 void funWithIfStatement(){
 	if(true) {
 		float var1;
@@ -8,6 +7,31 @@ void funWithIfStatement(){
 		float var2;
 	}
 };
+
+void funWithIfStatementAndElseIf(){
+	if(true) {
+		float var1;
+	} else if(false) {
+		float var2;
+	} else if(false) {
+		float var3;
+	}
+};
+
+void funWithIfStatementAndElseIfNested(){
+	if(true) {
+		float var1;
+	} else if(false) {
+		float var2;
+	} else if(true) {
+		if(true) {
+			float var3;
+		} else if (true) {
+			float var4;
+		}
+	}
+};
+
 
 
 void funWithNestedIfStatement(){

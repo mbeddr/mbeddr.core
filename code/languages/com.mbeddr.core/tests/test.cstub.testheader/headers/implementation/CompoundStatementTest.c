@@ -10,6 +10,9 @@ void compountStatments1(int a, int b){
 
 void compountStatments2(int a, int b){
 	{ //1
+
+
+
 	} //1 Ende
 
 	{ //2
