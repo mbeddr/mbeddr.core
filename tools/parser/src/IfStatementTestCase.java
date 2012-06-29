@@ -48,6 +48,9 @@ public class IfStatementTestCase extends TestCase {
 		content.append("				float var3;\n");
 		content.append("			}\n");
 		content.append("		};\n");
+
+		
+
 		
 		HashMap<String, String> options = new HashMap<String, String>();
 
