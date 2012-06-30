@@ -7,15 +7,14 @@
   <import index="8fsl" modelUID="r:20cee3e2-df96-404a-be3a-836206054a3f(com.mbeddr.cc.requirements.csv.structure)" version="0" />
   <import index="dbrf" modelUID="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#javax.swing(JDK/javax.swing@java_stub)" version="-1" />
   <import index="8q6x" modelUID="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.awt.event(JDK/java.awt.event@java_stub)" version="-1" />
-  <import index="m3el" modelUID="r:058e61ff-372d-4894-9ccf-973c7c85a9ea(com.itemis.smartmeter.reqimp.editor)" version="0" />
   <import index="75wo" modelUID="r:eaa205a4-f15c-47d3-99e2-e648881b5997(com.mbeddr.cc.requirements.structure)" version="3" />
   <import index="1t7x" modelUID="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.awt(JDK/java.awt@java_stub)" version="-1" />
-  <import index="xd2t" modelUID="f:java_stub#7047e581-fff3-4841-b6de-e7633123ff59#au.com.bytecode.opencsv(com.itemis.smartmeter.reqimp/au.com.bytecode.opencsv@java_stub)" version="-1" />
   <import index="fxg7" modelUID="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.io(JDK/java.io@java_stub)" version="-1" />
   <import index="j9pa" modelUID="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.text(JDK/java.text@java_stub)" version="-1" />
   <import index="k7g3" modelUID="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.util(JDK/java.util@java_stub)" version="-1" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" />
   <import index="e2lb" modelUID="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" version="-1" />
+  <import index="md4e" modelUID="f:java_stub#698eb129-303c-4c1c-b397-9e30753d40b2#au.com.bytecode.opencsv(com.mbeddr.cc.requirements.csv/au.com.bytecode.opencsv@java_stub)" version="-1" />
   <import index="tpee" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="4" implicit="yes" />
   <import index="tp2c" modelUID="r:00000000-0000-4000-0000-011c89590338(jetbrains.mps.baseLanguage.closures.structure)" version="3" implicit="yes" />
   <import index="tp25" modelUID="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" version="16" implicit="yes" />
@@ -295,12 +294,12 @@
             <node role="statement" roleId="tpee.1068581517665" type="tpee.LocalVariableDeclarationStatement" typeId="tpee.1068581242864" id="561942466025368784">
               <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="561942466025368785">
                 <property name="name" nameId="tpck.1169194664001" value="r" />
-                <node role="type" roleId="tpee.5680397130376446158" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="561942466025368786">
-                  <link role="classifier" roleId="tpee.1107535924139" targetNodeId="xd2t.~CSVReader" resolveInfo="CSVReader" />
+                <node role="type" roleId="tpee.5680397130376446158" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="8843295508325801427">
+                  <link role="classifier" roleId="tpee.1107535924139" targetNodeId="md4e.~CSVReader" resolveInfo="CSVReader" />
                 </node>
                 <node role="initializer" roleId="tpee.1068431790190" type="tpee.GenericNewExpression" typeId="tpee.1145552977093" id="561942466025368787">
                   <node role="creator" roleId="tpee.1145553007750" type="tpee.ClassCreator" typeId="tpee.1212685548494" id="561942466025368788">
-                    <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="xd2t.~CSVReader%d&lt;init&gt;(java%dio%dReader)" resolveInfo="CSVReader" />
+                    <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="md4e.~CSVReader%d&lt;init&gt;(java%dio%dReader)" resolveInfo="CSVReader" />
                     <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.GenericNewExpression" typeId="tpee.1145552977093" id="561942466025368789">
                       <node role="creator" roleId="tpee.1145553007750" type="tpee.ClassCreator" typeId="tpee.1212685548494" id="561942466025368790">
                         <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="fxg7.~FileReader%d&lt;init&gt;(java%dlang%dString)" resolveInfo="FileReader" />
@@ -336,7 +335,7 @@
                         <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="561942466025368785" resolveInfo="r" />
                       </node>
                       <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="561942466025368805">
-                        <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="xd2t.~CSVReader%dreadNext()%cjava%dlang%dString[]" resolveInfo="readNext" />
+                        <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="md4e.~CSVReader%dreadNext()%cjava%dlang%dString[]" resolveInfo="readNext" />
                       </node>
                     </node>
                     <node role="lValue" roleId="tpee.1068498886295" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="561942466025368806">
