@@ -1,18 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <solution name="test.debugger.core" uuid="fa1d9f5d-d5ce-44c5-94ac-ba5f1a1fba8e" pluginKind="PLUGIN_OTHER" compileInMPS="true">
   <models>
-    <modelRoot path="${mbeddr.github.core.home}/code/languages/com.mbeddr.core/languages/com.mbeddr.core.debug/lib/mi/cdt2.jar">
-      <manager moduleId="f3061a53-9226-4cc5-a443-f952ceaf5816" className="jetbrains.mps.baseLanguage.stubs.JavaStubs" />
-    </modelRoot>
-    <modelRoot path="${mbeddr.github.core.home}/code/languages/com.mbeddr.core/languages/com.mbeddr.core.debug/lib/mi/org.eclipse.core.runtime_3.7.0.v20110110.jar">
-      <manager moduleId="f3061a53-9226-4cc5-a443-f952ceaf5816" className="jetbrains.mps.baseLanguage.stubs.JavaStubs" />
-    </modelRoot>
-    <modelRoot path="${mbeddr.github.core.home}/code/languages/com.mbeddr.core/languages/com.mbeddr.core.debug/lib/mi/org.eclipse.equinox.common_3.6.0.v20110523.jar">
-      <manager moduleId="f3061a53-9226-4cc5-a443-f952ceaf5816" className="jetbrains.mps.baseLanguage.stubs.JavaStubs" />
-    </modelRoot>
-    <modelRoot path="${mbeddr.github.core.home}/code/languages/com.mbeddr.core/languages/com.mbeddr.core.debug/lib/mi/org.eclipse.osgi_3.7.1.R37x_v20110808-1106.jar">
-      <manager moduleId="f3061a53-9226-4cc5-a443-f952ceaf5816" className="jetbrains.mps.baseLanguage.stubs.JavaStubs" />
-    </modelRoot>
     <modelRoot path="${solution_descriptor}/" />
     <modelRoot path="${solution_descriptor}/libs/mockito-all-1.9.0.jar">
       <manager moduleId="f3061a53-9226-4cc5-a443-f952ceaf5816" className="jetbrains.mps.baseLanguage.stubs.JavaStubs" />
