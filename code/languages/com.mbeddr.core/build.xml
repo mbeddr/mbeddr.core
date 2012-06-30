@@ -102,6 +102,7 @@
         <fileset dir="${mps.home}/plugins">
           <include name="**/*.jar"/>
         </fileset>
+        <pathelement location="${mps.home}/plugins/spawner/lib/classes/"/>
       </classpath>
 
       <test name="jetbrains.mps.testbench.junit.suites.DefaultTestSuite"/>
