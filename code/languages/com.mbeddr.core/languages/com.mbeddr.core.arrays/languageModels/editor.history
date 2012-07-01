@@ -5,8 +5,8 @@
       <model index="yvc7" modelUID="r:7a3b06b4-e496-46c1-a58f-c1aedae1c5fc(com.mbeddr.core.statements.textGen)" version="0" />
       <model index="h99f" modelUID="r:31fa710b-b3ef-4cb0-bfde-11f20f2ce96a(com.mbeddr.core.pointers.textGen)" version="-1" />
       <model index="j4gk" modelUID="r:44b6f9b4-bfdb-4b99-b104-960ec485d777(com.mbeddr.core.statements.editor)" version="0" />
-      <model index="j807" modelUID="r:54210dde-4071-421e-b973-a22bb864eeac(com.mbeddr.core.pointers.typesystem)" version="-1" />
       <model index="yq40" modelUID="r:152b3fc0-83a1-4bab-a8cd-565eb8483785(com.mbeddr.core.pointers.structure)" version="0" />
+      <model index="j807" modelUID="r:54210dde-4071-421e-b973-a22bb864eeac(com.mbeddr.core.pointers.typesystem)" version="-1" />
       <model index="go54" modelUID="r:a7e7800a-15b6-4c02-ae4d-6b40a48c7370(com.mbeddr.core.statements.typesystem)" version="-1" />
       <model index="g6jk" modelUID="r:9a326681-7a8d-435d-989e-2781eecc297d(com.mbeddr.core.pointers.editor)" version="-1" />
       <model index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="0" />
@@ -146,6 +146,71 @@
     <move id="h99f.5728674636024913648" to="yvc7.5095889050031622696" />
     <move id="h99f.5728674636024913647" to="yvc7.5095889050031622695" />
     <move id="h99f.5728674636024913649" to="yvc7.5095889050031622697" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="dylp" modelUID="r:9840bc62-cb31-4ef3-9c9b-2de91c97cc15(com.mbeddr.core.expressions.textGen)" version="-1" />
+      <model index="ywuz" modelUID="r:c6ce92e7-5a98-4a6f-866a-ec8b9e945dd8(com.mbeddr.core.expressions.behavior)" version="-1" />
+      <model index="n7pc" modelUID="r:1f4b6c73-0d50-4599-bc8a-9f6948adf243(com.mbeddr.core.expressions.typesystem)" version="-1" />
+      <model index="vrqd" modelUID="r:53e59391-150a-45ff-930e-2b4fdafb0904(com.mbeddr.core.expressions.editor)" version="0" />
+      <model index="h99f" modelUID="r:31fa710b-b3ef-4cb0-bfde-11f20f2ce96a(com.mbeddr.core.pointers.textGen)" version="0" />
+      <model index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="15" />
+      <model index="j807" modelUID="r:54210dde-4071-421e-b973-a22bb864eeac(com.mbeddr.core.pointers.typesystem)" version="0" />
+      <model index="yq40" modelUID="r:152b3fc0-83a1-4bab-a8cd-565eb8483785(com.mbeddr.core.pointers.structure)" version="1" />
+      <model index="g6jk" modelUID="r:9a326681-7a8d-435d-989e-2781eecc297d(com.mbeddr.core.pointers.editor)" version="0" />
+      <model index="1s42" modelUID="r:d482a2e6-b3ef-4c45-883b-cf624a56b653(com.mbeddr.core.pointers.behavior)" version="-1" />
+    </dependencies>
+    <move id="mj1l.2088909457728253269" to="yq40.6113173064526131578" />
+    <move id="mj1l.2088909457728253268" to="yq40.6113173064526131575" />
+    <move id="mj1l.2088909457728253271" to="yq40.6113173064526131576" />
+    <move id="mj1l.4058325937810995795" to="yq40.6113173064526131577" />
+    <move id="ywuz.1444839136044659645" to="1s42.6113173064526131581" />
+    <move id="ywuz.1444839136044659648" to="1s42.6113173064526131584" />
+    <move id="ywuz.1444839136044659652" to="1s42.6113173064526131588" />
+    <move id="ywuz.1444839136044659654" to="1s42.6113173064526131590" />
+    <move id="ywuz.1444839136044659651" to="1s42.6113173064526131587" />
+    <move id="ywuz.5815279313395677698" to="1s42.6113173064526131592" />
+    <move id="ywuz.1444839136044659649" to="1s42.6113173064526131585" />
+    <move id="ywuz.1444839136044659650" to="1s42.6113173064526131586" />
+    <move id="ywuz.1444839136044659644" to="1s42.6113173064526131580" />
+    <move id="ywuz.1444839136044659647" to="1s42.6113173064526131583" />
+    <move id="ywuz.1444839136044659655" to="1s42.6113173064526131591" />
+    <move id="ywuz.1444839136044659653" to="1s42.6113173064526131589" />
+    <move id="ywuz.5815279313395677699" to="1s42.6113173064526131593" />
+    <move id="ywuz.5815279313395677697" to="1s42.6113173064526131579" />
+    <move id="ywuz.1444839136044659646" to="1s42.6113173064526131582" />
+    <move id="dylp.8118534740657855698" to="h99f.6113173064526131601" />
+    <move id="dylp.8118534740657855689" to="h99f.6113173064526131598" />
+    <move id="dylp.8118534740657855697" to="h99f.6113173064526131602" />
+    <move id="dylp.8118534740657855685" to="h99f.6113173064526131595" />
+    <move id="dylp.5444603835251424500" to="h99f.6113173064526131605" />
+    <move id="dylp.5444603835251424499" to="h99f.6113173064526131604" />
+    <move id="dylp.8118534740657855686" to="h99f.6113173064526131596" />
+    <move id="dylp.8118534740657855687" to="h99f.6113173064526131597" />
+    <move id="dylp.8118534740657855695" to="h99f.6113173064526131600" />
+    <move id="dylp.8118534740657855684" to="h99f.6113173064526131594" />
+    <move id="dylp.8118534740657855690" to="h99f.6113173064526131599" />
+    <move id="dylp.8118534740657855702" to="h99f.6113173064526131603" />
+    <move id="vrqd.2088909457728253283" to="g6jk.6113173064526131613" />
+    <move id="vrqd.2088909457728253277" to="g6jk.6113173064526131608" />
+    <move id="vrqd.2088909457728253276" to="g6jk.6113173064526131614" />
+    <move id="vrqd.2088909457728253279" to="g6jk.6113173064526131612" />
+    <move id="vrqd.2088909457728253272" to="g6jk.6113173064526131606" />
+    <move id="vrqd.2088909457728253287" to="g6jk.6113173064526131610" />
+    <move id="vrqd.2088909457728253282" to="g6jk.6113173064526131609" />
+    <move id="vrqd.2088909457728253281" to="g6jk.6113173064526131611" />
+    <move id="vrqd.2088909457728253274" to="g6jk.6113173064526131607" />
+    <move id="n7pc.2088909457728257429" to="j807.6113173064526131624" />
+    <move id="n7pc.2088909457728257438" to="j807.6113173064526131621" />
+    <move id="n7pc.2088909457728257433" to="j807.6113173064526131622" />
+    <move id="n7pc.2088909457728257437" to="j807.6113173064526131620" />
+    <move id="n7pc.2088909457728257423" to="j807.6113173064526131615" />
+    <move id="n7pc.2088909457728257425" to="j807.6113173064526131625" />
+    <move id="n7pc.2088909457728257427" to="j807.6113173064526131623" />
+    <move id="n7pc.2088909457728257434" to="j807.6113173064526131618" />
+    <move id="n7pc.2088909457728257424" to="j807.6113173064526131616" />
+    <move id="n7pc.2088909457728257430" to="j807.6113173064526131617" />
+    <move id="n7pc.2088909457728257435" to="j807.6113173064526131619" />
   </StructureModification>
 </history>
 

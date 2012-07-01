@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="test.debugger.core" uuid="fa1d9f5d-d5ce-44c5-94ac-ba5f1a1fba8e" compileInMPS="true">
+<solution name="test.debugger.core" uuid="fa1d9f5d-d5ce-44c5-94ac-ba5f1a1fba8e" pluginKind="PLUGIN_OTHER" compileInMPS="true">
   <models>
     <modelRoot path="${solution_descriptor}/" />
     <modelRoot path="${solution_descriptor}/libs/mockito-all-1.9.0.jar">
