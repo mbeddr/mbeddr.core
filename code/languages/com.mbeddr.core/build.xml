@@ -85,7 +85,8 @@
       <jvmarg value="-XX:MaxPermSize=256m"/>
       <jvmarg value="-XX:+HeapDumpOnOutOfMemoryError"/>
       <jvmarg value="-XX:-UseGCOverheadLimit"/>
-	  
+
+      <sysproperty key="idea.load.plugins" value="true"/>
       <sysproperty key="idea.system.path" value="${mps.platform.caches}/system"/>
       <sysproperty key="idea.config.path" value="${mps.platform.caches}/config"/>
       <sysproperty key="idea.plugins.path" value="${mps.platform.caches}/plugins"/>
@@ -101,6 +102,7 @@
         <fileset dir="${mps.home}/plugins">
           <include name="**/*.jar"/>
         </fileset>
+        <pathelement location="${mps.home}/plugins/spawner/lib/classes/"/>
       </classpath>
 
       <test name="jetbrains.mps.testbench.junit.suites.DefaultTestSuite"/>
