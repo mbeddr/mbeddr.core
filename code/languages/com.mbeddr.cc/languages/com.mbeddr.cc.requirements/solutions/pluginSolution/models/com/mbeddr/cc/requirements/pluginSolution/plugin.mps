@@ -7,6 +7,7 @@
   <import index="tgbt" modelUID="r:c70ee934-afb1-4c02-b6a9-1c4d1908a792(jetbrains.mps.lang.plugin.standalone.structure)" version="1" implicit="yes" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="4w5v" modelUID="r:18d75373-a465-46d0-9749-aacc22a947bc(com.mbeddr.mpsutil.refactoring.structure)" version="-1" implicit="yes" />
+  <import index="tp4k" modelUID="r:00000000-0000-4000-0000-011c89590368(jetbrains.mps.lang.plugin.structure)" version="35" implicit="yes" />
   <roots>
     <node type="tgbt.StandalonePluginDescriptor" typeId="tgbt.7520713872864775836" id="7518061998923366991" />
     <node type="4w5v.RefactoringAction" typeId="4w5v.7518061998923573137" id="7518061998923645690">
@@ -15,6 +16,11 @@
     </node>
   </roots>
   <root id="7518061998923366991" />
-  <root id="7518061998923645690" />
+  <root id="7518061998923645690">
+    <node role="shortcut" roleId="4w5v.7518061998923573139" type="tp4k.KeyMapKeystroke" typeId="tp4k.1207318242772" id="4909396153295837486">
+      <property name="keycode" nameId="tp4k.1207318242774" value="VK_R" />
+      <property name="modifiers" nameId="tp4k.1207318242773" value="ctrl+shift" />
+    </node>
+  </root>
 </model>
 
