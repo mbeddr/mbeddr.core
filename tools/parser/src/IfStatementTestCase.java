@@ -15,6 +15,7 @@ import org.eclipse.cdt.core.dom.ast.IASTInitializer;
 import org.eclipse.cdt.core.dom.ast.IASTName;
 import org.eclipse.cdt.core.dom.ast.IASTParameterDeclaration;
 import org.eclipse.cdt.core.dom.ast.IASTPointerOperator;
+import org.eclipse.cdt.core.dom.ast.IASTPreprocessorIncludeStatement;
 import org.eclipse.cdt.core.dom.ast.IASTProblem;
 import org.eclipse.cdt.core.dom.ast.IASTStatement;
 import org.eclipse.cdt.core.dom.ast.IASTTranslationUnit;
@@ -37,7 +38,7 @@ public class IfStatementTestCase extends TestCase {
 		StringBuilder content = new StringBuilder();
 
 		
-
+/*
 		
 		content.append("	void funWithIfStatementAndElseIf(){\n");
 		content.append("			if(true) {\n");
@@ -48,8 +49,16 @@ public class IfStatementTestCase extends TestCase {
 		content.append("				float var3;\n");
 		content.append("			}\n");
 		content.append("		};\n");
+		*/
 
 		
+
+		content.append("#ifdef\n");
+		content.append("#include \"test.h\"\n");
+//		content.append("#elif\n");
+		
+		content.append("#endif\n");
+		content.append("#include \"test2.h\"\n");
 
 		
 		HashMap<String, String> options = new HashMap<String, String>();
@@ -67,6 +76,10 @@ public class IfStatementTestCase extends TestCase {
 
 		
 
+		for (IASTPreprocessorIncludeStatement in : astTranslationUnit.getIncludeDirectives()) {
+			System.out.println("...... " + in.isActive());
+			
+		}
 
 		astTranslationUnit.accept(new ASTVisitor(true) {
 			
