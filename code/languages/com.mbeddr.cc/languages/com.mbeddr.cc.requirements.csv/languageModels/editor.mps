@@ -76,6 +76,12 @@
           <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_RefNode" typeId="tpc2.1073389882823" id="6148254807184744756">
             <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="8fsl.561942466025370307" />
           </node>
+          <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="6148254807184846953">
+            <property name="text" nameId="tpc2.1073389577007" value="clear before import:" />
+          </node>
+          <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Property" typeId="tpc2.1073389658414" id="6148254807184846955">
+            <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="8fsl.6148254807184846950" resolveInfo="clearOnImport" />
+          </node>
         </node>
         <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="561942466025368090">
           <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Horizontal" typeId="tpc2.1106270549637" id="561942466025368091" />
@@ -193,6 +199,9 @@
             </node>
           </node>
         </node>
+      </node>
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="6148254807184959171">
+        <property name="text" nameId="tpc2.1073389577007" value="" />
       </node>
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_AttributedNodeCell" typeId="tpc2.1149850725784" id="561942466025368177" />
       <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Vertical" typeId="tpc2.1106270571710" id="561942466025368178" />
@@ -479,6 +488,9 @@
                                   </node>
                                   <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="6148254807184830216">
                                     <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="561942466025368810" resolveInfo="req" />
+                                  </node>
+                                  <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="6148254807184868120">
+                                    <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="561942466025368793" resolveInfo="line" />
                                   </node>
                                 </node>
                               </node>
