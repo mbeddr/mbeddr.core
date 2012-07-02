@@ -30,6 +30,7 @@
       <modulePath path="${project}/languages/com.mbeddr.core.legacy/solutions/pluginSolution/pluginSolution.msd" folder="core" />
       <modulePath path="${project}/languages/com.mbeddr.core.make/make.mpl" folder="core" />
       <modulePath path="${project}/languages/com.mbeddr.core.modules.gen/gen.mpl" folder="core" />
+      <modulePath path="${project}/languages/com.mbeddr.core.modules.runtime.c/c.msd" folder="core" />
       <modulePath path="${project}/languages/com.mbeddr.core.modules.runtime/include.msd" folder="core" />
       <modulePath path="${project}/languages/com.mbeddr.core.modules/modules.mpl" folder="core" />
       <modulePath path="${project}/languages/com.mbeddr.core.modules/solutions/pluginSolution/pluginSolution.msd" folder="core" />
