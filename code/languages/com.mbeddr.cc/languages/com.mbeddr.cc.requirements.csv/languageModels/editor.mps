@@ -333,8 +333,16 @@
                       <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="561942466025373219">
                         <property name="name" nameId="tpck.1169194664001" value="id" />
                         <node role="type" roleId="tpee.5680397130376446158" type="tpee.StringType" typeId="tpee.1225271177708" id="561942466025373220" />
-                        <node role="initializer" roleId="tpee.1068431790190" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="6148254807184846777">
-                          <property name="value" nameId="tpee.1070475926801" value="" />
+                        <node role="initializer" roleId="tpee.1068431790190" type="tpee.DotExpression" typeId="tpee.1197027756228" id="4909396153295918977">
+                          <node role="operand" roleId="tpee.1197027771414" type="tpee.LocalInstanceFieldReference" typeId="tpee.7785501532031639928" id="4909396153295918956">
+                            <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="561942466025370400" resolveInfo="mapper" />
+                          </node>
+                          <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_ConceptMethodCall" typeId="tp25.1179409122411" id="4909396153295918982">
+                            <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="lduv.5168147777591819973" resolveInfo="extractID" />
+                            <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="4909396153295918983">
+                              <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="561942466025368793" resolveInfo="line" />
+                            </node>
+                          </node>
                         </node>
                       </node>
                     </node>
