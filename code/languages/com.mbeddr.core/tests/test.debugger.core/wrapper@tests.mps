@@ -33,27 +33,35 @@
   <roots>
     <node type="tpe3.BTestCase" typeId="tpe3.1171931851043" id="5907171901546245658">
       <property name="testCaseName" nameId="tpe3.1171931851045" value="BreakpointFactory" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="unit" />
     </node>
     <node type="tpe3.BTestCase" typeId="tpe3.1171931851043" id="2963181894158971853">
       <property name="testCaseName" nameId="tpe3.1171931851045" value="BreakpointManager" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="unit" />
     </node>
     <node type="tpe3.BTestCase" typeId="tpe3.1171931851043" id="1692226010329789651">
       <property name="testCaseName" nameId="tpe3.1171931851045" value="Events" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="unit" />
     </node>
     <node type="tpe3.BTestCase" typeId="tpe3.1171931851043" id="6595112540539339348">
       <property name="testCaseName" nameId="tpe3.1171931851045" value="VariablesManager" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="unit" />
     </node>
     <node type="tpe3.BTestCase" typeId="tpe3.1171931851043" id="2125372784453228397">
       <property name="testCaseName" nameId="tpe3.1171931851045" value="Variables" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="unit" />
     </node>
     <node type="tpe3.BTestCase" typeId="tpe3.1171931851043" id="5907171901546247781">
       <property name="testCaseName" nameId="tpe3.1171931851045" value="SessionCreation" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="unit" />
     </node>
     <node type="tpe3.BTestCase" typeId="tpe3.1171931851043" id="4107645333934170254">
       <property name="testCaseName" nameId="tpe3.1171931851045" value="SteppingControl" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="unit" />
     </node>
     <node type="tpe3.BTestCase" typeId="tpe3.1171931851043" id="1330121617427286500">
       <property name="testCaseName" nameId="tpe3.1171931851045" value="SessionStates" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="unit" />
     </node>
     <node type="tp5g.TestInfo" typeId="tp5g.5097124989038916362" id="1423209693057696534">
       <property name="projectPath" nameId="tp5g.5097124989038916363" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.core/core.dev.mpr" />
@@ -4091,7 +4099,7 @@
                   <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="4124807742910352504" resolveInfo="topMiFrame" />
                 </node>
                 <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="4124807742910352531">
-                  <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="lu0u.~MIFrame%dgetFile()%cjava%dlang%dString" resolveInfo="getFile" />
+                  <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="lu0u.~MIFrame%dgetFullname()%cjava%dlang%dString" resolveInfo="getFullname" />
                 </node>
               </node>
             </node>
@@ -4210,7 +4218,7 @@
                   <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="4124807742910352620" resolveInfo="secondMiFrame" />
                 </node>
                 <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="4124807742910352629">
-                  <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="lu0u.~MIFrame%dgetFile()%cjava%dlang%dString" resolveInfo="getFile" />
+                  <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="lu0u.~MIFrame%dgetFullname()%cjava%dlang%dString" resolveInfo="getFullname" />
                 </node>
               </node>
             </node>
@@ -4329,7 +4337,7 @@
                   <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="4124807742910381535" resolveInfo="thirdMiFrame" />
                 </node>
                 <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="4124807742910381544">
-                  <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="lu0u.~MIFrame%dgetFile()%cjava%dlang%dString" resolveInfo="getFile" />
+                  <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="lu0u.~MIFrame%dgetFullname()%cjava%dlang%dString" resolveInfo="getFullname" />
                 </node>
               </node>
             </node>
@@ -6949,7 +6957,7 @@
               <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="4124807742910355091">
                 <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="e2lb.~String%dequals(java%dlang%dObject)%cboolean" resolveInfo="equals" />
                 <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="4124807742910355093">
-                  <property name="value" nameId="tpee.1070475926801" value="Main.c" />
+                  <property name="value" nameId="tpee.1070475926801" value="local/Main.c" />
                 </node>
               </node>
             </node>
@@ -6979,7 +6987,7 @@
               <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="4124807742910355103">
                 <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="e2lb.~String%dequals(java%dlang%dObject)%cboolean" resolveInfo="equals" />
                 <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="4124807742910355104">
-                  <property name="value" nameId="tpee.1070475926801" value="Main.c" />
+                  <property name="value" nameId="tpee.1070475926801" value="user\\Main.c" />
                 </node>
               </node>
             </node>

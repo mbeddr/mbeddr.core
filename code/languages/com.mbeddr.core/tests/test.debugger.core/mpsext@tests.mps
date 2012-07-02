@@ -26,21 +26,27 @@
   <roots>
     <node type="tpe3.BTestCase" typeId="tpe3.1171931851043" id="3756274814452983230">
       <property name="testCaseName" nameId="tpe3.1171931851045" value="MEDebugSessionCreator" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="unit" />
     </node>
     <node type="tpe3.BTestCase" typeId="tpe3.1171931851043" id="1147732502244290718">
       <property name="testCaseName" nameId="tpe3.1171931851045" value="MEDebugSession" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="unit" />
     </node>
     <node type="tpe3.BTestCase" typeId="tpe3.1171931851043" id="6611782822601229827">
       <property name="testCaseName" nameId="tpe3.1171931851045" value="MEComponent" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="unit" />
     </node>
     <node type="tpe3.BTestCase" typeId="tpe3.1171931851043" id="326298196336920998">
       <property name="testCaseName" nameId="tpe3.1171931851045" value="MEBreakpointRegistry" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="unit" />
     </node>
     <node type="tpe3.BTestCase" typeId="tpe3.1171931851043" id="326298196337576629">
       <property name="testCaseName" nameId="tpe3.1171931851045" value="MEDebuggerSettings" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="unit" />
     </node>
     <node type="tpe3.BTestCase" typeId="tpe3.1171931851043" id="747378299991678137">
       <property name="testCaseName" nameId="tpe3.1171931851045" value="MEUiState" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="unit" />
     </node>
     <node type="tp5g.TestInfo" typeId="tp5g.5097124989038916362" id="1423209693057696534">
       <property name="projectPath" nameId="tp5g.5097124989038916363" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.core/core.dev.mpr" />
