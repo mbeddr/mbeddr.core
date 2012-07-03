@@ -15,8 +15,12 @@
   <roots>
     <node type="tp33.MigrationScript" typeId="tp33.1177457067821" id="8051977711588518727">
       <property name="name" nameId="tpck.1169194664001" value="assignmentStatement2Expr" />
-      <property name="title" nameId="tp33.1177457669450" value="Convert Assignment Statement to Assignment Expression" />
+      <property name="title" nameId="tp33.1177457669450" value="MBEDDR: Convert Assignment Statement to Assignment Expression" />
       <property name="type" nameId="tp33.5299416737274925395" value="enhancement" />
+    </node>
+    <node type="tp33.MigrationScript" typeId="tp33.1177457067821" id="154287305788322836">
+      <property name="name" nameId="tpck.1169194664001" value="migrateSwitchCaseStatemetns" />
+      <property name="title" nameId="tp33.1177457669450" value="MBEDDR: Migrate Switch Case (add explicit breaks)" />
     </node>
   </roots>
   <root id="8051977711588518727">
@@ -132,6 +136,41 @@
               <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_ReplaceWithAnotherOperation" typeId="tp25.1140131837776" id="8051977711588518779">
                 <node role="replacementNode" roleId="tp25.1140131861877" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="8051977711588518780">
                   <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="8051977711588518732" resolveInfo="statement" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </root>
+  <root id="154287305788322836">
+    <node role="part" roleId="tp33.1177458178889" type="tp33.MigrationScriptPart_Instance" typeId="tp33.1177457850499" id="154287305788322837">
+      <property name="description" nameId="tp33.1177457972041" value="add Break to case" />
+      <property name="showAsIntention" nameId="tp33.1225457189692" value="true" />
+      <link role="affectedInstanceConcept" roleId="tp33.1177457957477" targetNodeId="c4fa.3134547887598524928" resolveInfo="SwitchCase" />
+      <node role="affectedInstanceUpdater" roleId="tp33.1177458005323" type="tp33.MigrationScriptPart_Instance_Updater" typeId="tp33.1177458491964" id="154287305788322838">
+        <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="154287305788322839">
+          <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="154287305788322840">
+            <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="154287305788322906">
+              <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="154287305788322882">
+                <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="154287305788322858">
+                  <node role="operand" roleId="tpee.1197027771414" type="tp33.MigrationScriptPart_node" typeId="tp33.1177458237937" id="154287305788322841" />
+                  <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="154287305788322864">
+                    <link role="link" roleId="tp25.1138056516764" targetNodeId="c4fa.3134547887598524931" />
+                  </node>
+                </node>
+                <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkListAccess" typeId="tp25.1138056282393" id="154287305788322888">
+                  <link role="link" roleId="tp25.1138056546658" targetNodeId="c4fa.4185783222026475862" />
+                </node>
+              </node>
+              <node role="operation" roleId="tpee.1197027833540" type="tp2q.AddLastElementOperation" typeId="tp2q.1227022179634" id="154287305788322912">
+                <node role="argument" roleId="tp2q.1227022698412" type="tpee.GenericNewExpression" typeId="tpee.1145552977093" id="154287305788322914">
+                  <node role="creator" roleId="tpee.1145553007750" type="tp25.SNodeCreator" typeId="tp25.1180636770613" id="154287305788322916">
+                    <node role="createdType" roleId="tp25.1180636770616" type="tp25.SNodeType" typeId="tp25.1138055754698" id="154287305788322917">
+                      <link role="concept" roleId="tp25.1138405853777" targetNodeId="c4fa.8441331188640862326" resolveInfo="BreakStatement" />
+                    </node>
+                  </node>
                 </node>
               </node>
             </node>
