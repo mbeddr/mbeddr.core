@@ -1879,7 +1879,7 @@
       <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473914776" resolveInfo="shortDescription" />
     </node>
     <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.IntegerConceptProperty" typeId="tpce.1105725498741" id="22102029902365716">
-      <property name="value" nameId="tpce.1105725713309" value="1000" />
+      <property name="value" nameId="tpce.1105725713309" value="100" />
       <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="5763383285156530264" resolveInfo="priolevel" />
     </node>
   </root>
