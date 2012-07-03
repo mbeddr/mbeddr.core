@@ -98,6 +98,10 @@
       <property name="virtualPackage" nameId="tpck.1193676396447" value="loopsNStuff" />
       <link role="conceptDeclaration" roleId="2omo.1233670257997" targetNodeId="c4fa.3779779187805893258" resolveInfo="ForVarRef" />
     </node>
+    <node type="2omo.ConceptTextGenDeclaration" typeId="2omo.1233670071145" id="8132151755547103902">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="loopsNStuff" />
+      <link role="conceptDeclaration" roleId="2omo.1233670257997" targetNodeId="c4fa.8132151755547066635" resolveInfo="ContinueStatement" />
+    </node>
   </roots>
   <root id="2093108837558498915">
     <node role="textGenBlock" roleId="2omo.1233749296504" type="2omo.GenerateTextDeclaration" typeId="2omo.1233749247888" id="2093108837558498916">
@@ -1087,6 +1091,17 @@
           </node>
           <node role="part" roleId="2omo.1237306115446" type="2omo.ConstantStringAppendPart" typeId="2omo.1237305557638" id="3779779187805957370">
             <property name="value" nameId="2omo.1237305576108" value=";" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </root>
+  <root id="8132151755547103902">
+    <node role="textGenBlock" roleId="2omo.1233749296504" type="2omo.GenerateTextDeclaration" typeId="2omo.1233749247888" id="8132151755547103903">
+      <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="8132151755547103904">
+        <node role="statement" roleId="tpee.1068581517665" type="2omo.AppendOperation" typeId="2omo.1237306079178" id="8132151755547103905">
+          <node role="part" roleId="2omo.1237306115446" type="2omo.ConstantStringAppendPart" typeId="2omo.1237305557638" id="8132151755547103907">
+            <property name="value" nameId="2omo.1237305576108" value="continue;" />
           </node>
         </node>
       </node>
