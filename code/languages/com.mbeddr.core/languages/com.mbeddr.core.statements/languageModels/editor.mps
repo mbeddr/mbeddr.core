@@ -141,6 +141,10 @@
       <property name="virtualPackage" nameId="tpck.1193676396447" value="loopsNStuff" />
       <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="c4fa.8132151755547066635" resolveInfo="ContinueStatement" />
     </node>
+    <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="7565145259447112964">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="comment" />
+      <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="c4fa.7565145259447112915" resolveInfo="MultiLineCommentStatement" />
+    </node>
   </roots>
   <root id="4185783222026475242">
     <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="4185783222026475244">
@@ -1629,6 +1633,11 @@
   <root id="8132151755547066637">
     <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="8132151755547066639">
       <property name="text" nameId="tpc2.1073389577007" value="continue;" />
+    </node>
+  </root>
+  <root id="7565145259447112964">
+    <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Component" typeId="tpc2.1078939183254" id="5750171280003851639">
+      <link role="editorComponent" roleId="tpc2.1078939183255" targetNodeId="r4b4.7565145259447112918" resolveInfo="listOfDocParts" />
     </node>
   </root>
 </model>

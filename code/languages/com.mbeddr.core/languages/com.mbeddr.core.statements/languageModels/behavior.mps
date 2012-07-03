@@ -22,6 +22,7 @@
   <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="17" implicit="yes" />
   <import index="tpib" modelUID="r:00000000-0000-4000-0000-011c8959057f(jetbrains.mps.baseLanguage.logging.structure)" version="0" implicit="yes" />
   <import index="yq40" modelUID="r:152b3fc0-83a1-4bab-a8cd-565eb8483785(com.mbeddr.core.pointers.structure)" version="3" implicit="yes" />
+  <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="4" implicit="yes" />
   <roots>
     <node type="1i04.ConceptBehavior" typeId="1i04.1225194240794" id="2093108837558184181">
       <link role="concept" roleId="1i04.1225194240799" targetNodeId="c4fa.4185783222026475861" resolveInfo="StatementList" />
@@ -99,6 +100,10 @@
     <node type="1i04.ConceptBehavior" typeId="1i04.1225194240794" id="50688722356906877">
       <property name="virtualPackage" nameId="tpck.1193676396447" value="switch" />
       <link role="concept" roleId="1i04.1225194240799" targetNodeId="c4fa.3134547887598524928" resolveInfo="SwitchCase" />
+    </node>
+    <node type="1i04.ConceptBehavior" typeId="1i04.1225194240794" id="5750171280004390303">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="comment" />
+      <link role="concept" roleId="1i04.1225194240799" targetNodeId="c4fa.7565145259447112915" resolveInfo="MultiLineCommentStatement" />
     </node>
   </roots>
   <root id="2093108837558184181">
@@ -4656,6 +4661,23 @@
             <node role="operation" roleId="tpee.1197027833540" type="tp25.LinkList_AddNewChildOperation" typeId="tp25.1139184414036" id="154287305788316735">
               <link role="concept" roleId="tp25.1139877738879" targetNodeId="c4fa.8441331188640862326" resolveInfo="BreakStatement" />
             </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </root>
+  <root id="5750171280004390303">
+    <node role="constructor" roleId="1i04.1225194240801" type="1i04.ConceptConstructorDeclaration" typeId="1i04.1225194413805" id="5750171280004390304">
+      <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="5750171280004390305">
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="5750171280004390306">
+          <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="5750171280004390356">
+            <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="5750171280004390328">
+              <node role="operand" roleId="tpee.1197027771414" type="1i04.ThisNodeExpression" typeId="1i04.1225194691553" id="5750171280004390307" />
+              <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkListAccess" typeId="tp25.1138056282393" id="5750171280004390334">
+                <link role="link" roleId="tp25.1138056546658" targetNodeId="vs0r.3857533489766836837" />
+              </node>
+            </node>
+            <node role="operation" roleId="tpee.1197027833540" type="tp25.LinkList_AddNewChildOperation" typeId="tp25.1139184414036" id="5750171280004390362" />
           </node>
         </node>
       </node>
