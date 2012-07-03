@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="com.mbeddr.core.modules.runtime.c" uuid="46c26718-de4d-4805-8fc8-89796ed92f96" compileInMPS="true">
+<solution name="com.mbeddr.core.modules.runtime.c" uuid="46c26718-de4d-4805-8fc8-89796ed92f96" pluginKind="PLUGIN_OTHER" compileInMPS="true">
   <models>
     <modelRoot path="${solution_descriptor}/models" />
   </models>
@@ -8,6 +8,7 @@
     <dependency reexport="false">85d9f97b-1654-4692-b61c-fcc40db03653(Eclipse.Debugger)</dependency>
     <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
     <dependency reexport="false">6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)</dependency>
+    <dependency reexport="false">5ce2e6a6-053e-4914-9e21-b9b7b61f3666(com.mbeddr.core.cstubs)</dependency>
     <dependency reexport="false">61c69711-ed61-4850-81d9-7714ff227fb0(com.mbeddr.core.expressions)</dependency>
     <dependency reexport="false">ad5e9db1-9600-47c7-86ef-614165b281b8(com.mbeddr.core.legacy)</dependency>
     <dependency reexport="false">6d11763d-483d-4b2b-8efc-09336c1b0001(com.mbeddr.core.modules)</dependency>

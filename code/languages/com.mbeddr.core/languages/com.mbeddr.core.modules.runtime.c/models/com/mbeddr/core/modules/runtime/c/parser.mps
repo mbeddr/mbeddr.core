@@ -17,6 +17,7 @@
   <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="0" />
   <import index="fxg7" modelUID="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.io(JDK/java.io@java_stub)" version="-1" />
   <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="4" />
+  <import index="punb" modelUID="r:401d5aa1-f59d-49c0-833e-cf94fb548e92(com.mbeddr.core.cstubs.structure)" version="1" />
   <import index="tpee" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="4" implicit="yes" />
   <import index="tp25" modelUID="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" version="16" implicit="yes" />
   <import index="hba4" modelUID="r:f5bd2ad9-cd54-4408-b815-07f9f306f074(com.mbeddr.mpsutil.blutil.structure)" version="5" implicit="yes" />
@@ -40,6 +41,11 @@
     <node type="tpee.ClassConcept" typeId="tpee.1068390468198" id="2604304000476840087">
       <property name="name" nameId="tpck.1169194664001" value="SwitchStatementDelegate" />
       <property name="virtualPackage" nameId="tpck.1193676396447" value="delegates" />
+    </node>
+    <node type="tpee.ClassConcept" typeId="tpee.1068390468198" id="7979240492616342519">
+      <property name="name" nameId="tpck.1169194664001" value="CFileAcceptorFactory" />
+      <property name="abstractClass" nameId="tpee.1075300953594" value="false" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="" />
     </node>
   </roots>
   <root id="4647128390259212474">
@@ -4121,6 +4127,52 @@
     </node>
     <node role="superclass" roleId="tpee.1165602531693" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="2604304000476840664">
       <link role="classifier" roleId="tpee.1107535924139" targetNodeId="7lmn.2497083023867910368" resolveInfo="AbstractParserDelegate" />
+    </node>
+  </root>
+  <root id="7979240492616342519">
+    <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="7979240492616342528" />
+    <node role="constructor" roleId="tpee.1068390468201" type="tpee.ConstructorDeclaration" typeId="tpee.1068580123140" id="7979240492616342529">
+      <node role="returnType" roleId="tpee.1068580123133" type="tpee.VoidType" typeId="tpee.1068581517677" id="7979240492616342530" />
+      <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="7979240492616342531" />
+      <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="7979240492616342532" />
+    </node>
+    <node role="superclass" roleId="tpee.1165602531693" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="7979240492616342533">
+      <link role="classifier" roleId="tpee.1107535924139" targetNodeId="7lmn.7979240492616336718" resolveInfo="AcceptorFactory" />
+    </node>
+    <node role="method" roleId="tpee.1107880067339" type="tpee.InstanceMethodDeclaration" typeId="tpee.1068580123165" id="7979240492616343448">
+      <property name="isAbstract" nameId="tpee.1178608670077" value="false" />
+      <property name="name" nameId="tpck.1169194664001" value="getAcceptor" />
+      <node role="returnType" roleId="tpee.1068580123133" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="7979240492616343465">
+        <link role="classifier" roleId="tpee.1107535924139" targetNodeId="7lmn.5255370464256848475" resolveInfo="Acceptor" />
+      </node>
+      <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="7979240492616343450" />
+      <node role="parameter" roleId="tpee.1068580123134" type="tpee.ParameterDeclaration" typeId="tpee.1068498886292" id="7979240492616343451">
+        <property name="name" nameId="tpck.1169194664001" value="module" />
+        <node role="type" roleId="tpee.5680397130376446158" type="tp25.SNodeType" typeId="tp25.1138055754698" id="7979240492616343452">
+          <link role="concept" roleId="tp25.1138405853777" targetNodeId="x27k.6437088627575722813" resolveInfo="Module" />
+        </node>
+      </node>
+      <node role="parameter" roleId="tpee.1068580123134" type="tpee.ParameterDeclaration" typeId="tpee.1068498886292" id="7979240492616343453">
+        <property name="name" nameId="tpck.1169194664001" value="parser" />
+        <node role="type" roleId="tpee.5680397130376446158" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="7979240492616343454">
+          <link role="classifier" roleId="tpee.1107535924139" targetNodeId="7lmn.7396242228575754305" resolveInfo="CFileParser" />
+        </node>
+      </node>
+      <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="7979240492616343455">
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.ReturnStatement" typeId="tpee.1068581242878" id="7979240492616343456">
+          <node role="expression" roleId="tpee.1068581517676" type="tpee.GenericNewExpression" typeId="tpee.1145552977093" id="7979240492616343458">
+            <node role="creator" roleId="tpee.1145553007750" type="tpee.ClassCreator" typeId="tpee.1212685548494" id="7979240492616343460">
+              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="719533080082252661" resolveInfo="CFileAcceptor" />
+              <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.ParameterReference" typeId="tpee.1068581242874" id="7979240492616343461">
+                <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="7979240492616343451" resolveInfo="module" />
+              </node>
+              <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.ParameterReference" typeId="tpee.1068581242874" id="7979240492616343463">
+                <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="7979240492616343453" resolveInfo="parser" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
   </root>
 </model>
