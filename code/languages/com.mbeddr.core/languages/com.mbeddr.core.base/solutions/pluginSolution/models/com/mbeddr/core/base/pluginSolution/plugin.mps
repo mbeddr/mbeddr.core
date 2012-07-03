@@ -477,7 +477,7 @@
       </node>
     </node>
     <node role="toolIcon" roleId="tp4k.6791676465872004185" type="1oap.IconResource" typeId="1oap.8974276187400029883" id="5022036173483013708">
-      <property name="path" nameId="1oap.8974276187400029899" value="${solution_descriptor}/icons/argument.jpg" />
+      <property name="path" nameId="1oap.8974276187400029899" value="${solution_descriptor}/icons/todo.jpg" />
     </node>
   </root>
   <root id="5426495936043638617">
@@ -1298,7 +1298,7 @@
       </node>
     </node>
     <node role="icon" roleId="tp4k.8976425910813834639" type="1oap.IconResource" typeId="1oap.8974276187400029883" id="5022036173483013710">
-      <property name="path" nameId="1oap.8974276187400029899" value="${solution_descriptor}/icons/argument.jpg" />
+      <property name="path" nameId="1oap.8974276187400029899" value="${solution_descriptor}/icons/todo.jpg" />
     </node>
   </root>
   <root id="5022036173482689519">
