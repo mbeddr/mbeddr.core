@@ -138,6 +138,10 @@
     <node type="tpc2.CellMenuComponent" typeId="tpc2.1166040637528" id="3779779187806009265">
       <property name="name" nameId="tpck.1169194664001" value="theVariousAssignments" />
     </node>
+    <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="8132151755547066637">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="loopsNStuff" />
+      <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="c4fa.8132151755547066635" resolveInfo="ContinueStatement" />
+    </node>
   </roots>
   <root id="4185783222026475242">
     <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="4185783222026475244">
@@ -1702,6 +1706,11 @@
           </node>
         </node>
       </node>
+    </node>
+  </root>
+  <root id="8132151755547066637">
+    <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="8132151755547066639">
+      <property name="text" nameId="tpc2.1073389577007" value="continue;" />
     </node>
   </root>
 </model>
