@@ -1228,6 +1228,7 @@
                   <property name="value" nameId="mj1l.8860443239512128104" value="2" />
                 </node>
               </node>
+              <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="vs0r.ElementDocumentation" typeId="vs0r.3857533489766146428" id="154287305787832193" />
             </node>
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="36486875645774095">
               <property name="name" nameId="tpck.1169194664001" value="ia" />
@@ -1409,6 +1410,11 @@
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="8599220535762600225" />
           </node>
           <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="5708867820622277813" />
+          <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="vs0r.ElementDocumentation" typeId="vs0r.3857533489766146428" id="154287305787827071">
+            <node role="parts" roleId="vs0r.3857533489766836837" type="vs0r.DocPart" typeId="vs0r.3857533489766836826" id="154287305787827072">
+              <property name="text" nameId="vs0r.3857533489766836827" value="TODO here is some text" />
+            </node>
+          </node>
         </node>
         <node role="contents" roleId="x27k.6437088627575722833" type="yz9a.TestCase" typeId="yz9a.6275792049641586523" id="2821664486315254715">
           <property name="exported" nameId="x27k.1317894735999272944" value="true" />
