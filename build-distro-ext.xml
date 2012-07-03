@@ -13,6 +13,7 @@
       
 	  <zip destfile="${path}/mbeddr.ext-${version}.zip">
 	  	  <!-- EXT -->
+          <zipfileset dir="code/languages/com.mbeddr.ext/languages" prefix="${prefix.ext}/lib"/>
           <zipfileset dir="code/languages/com.mbeddr.ext/languages" prefix="${prefix.ext}/languages"/>
           <zipfileset dir="code/languages/com.mbeddr.ext/devkits" prefix="${prefix.ext}/devkits"/>
           

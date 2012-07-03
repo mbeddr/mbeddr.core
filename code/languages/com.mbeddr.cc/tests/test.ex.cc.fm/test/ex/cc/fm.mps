@@ -389,7 +389,7 @@
       <node role="arguments" type=".com.mbeddr.core.modules.structure.Argument" id="6617704999132174999">
         <property name="name" value="args" />
         <node role="type" type=".com.mbeddr.core.pointers.structure.ArrayType" id="6617704999132175000">
-          <node role="baseType" type=".com.mbeddr.core.expressions.structure.StringType" id="6617704999132175001" />
+          <node role="baseType" type=".com.mbeddr.core.pointers.structure.StringType" id="6617704999132175001" />
         </node>
       </node>
     </node>

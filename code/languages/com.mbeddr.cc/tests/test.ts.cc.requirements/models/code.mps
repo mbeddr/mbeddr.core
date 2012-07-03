@@ -134,7 +134,7 @@
       <node role="arguments" type=".com.mbeddr.core.modules.structure.Argument" id="8745401669463194252">
         <property name="name" value="args" />
         <node role="type" type=".com.mbeddr.core.pointers.structure.ArrayType" id="5708867820621171166">
-          <node role="baseType" type=".com.mbeddr.core.expressions.structure.StringType" id="5708867820621171167" />
+          <node role="baseType" type=".com.mbeddr.core.pointers.structure.StringType" id="5708867820621171167" />
         </node>
       </node>
       <node role="arguments" type=".com.mbeddr.core.modules.structure.Argument" id="8745401669463194255">
@@ -225,7 +225,7 @@
       <node role="type" type=".com.mbeddr.core.expressions.structure.Int8tType" id="1209423092481298551" />
       <node role="arguments" type=".com.mbeddr.core.modules.structure.Argument" id="1209423092481298552">
         <property name="name" value="str" />
-        <node role="type" type=".com.mbeddr.core.expressions.structure.StringType" id="1209423092481298553" />
+        <node role="type" type=".com.mbeddr.core.pointers.structure.StringType" id="1209423092481298553" />
       </node>
     </node>
   </root>

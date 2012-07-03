@@ -7,9 +7,9 @@
   <language namespace="7866978e-a0f0-4cc7-81bc-4d213d9375e1(jetbrains.mps.lang.smodel)" />
   <language namespace="83888646-71ce-4f1c-9c53-c54016f6ad4f(jetbrains.mps.baseLanguage.collections)" />
   <devkit namespace="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
-  <import index="ywuz" modelUID="r:c6ce92e7-5a98-4a6f-866a-ec8b9e945dd8(com.mbeddr.core.expressions.behavior)" version="-1" />
-  <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="15" />
-  <import index="yq40" modelUID="r:152b3fc0-83a1-4bab-a8cd-565eb8483785(com.mbeddr.core.pointers.structure)" version="1" />
+  <import index="ywuz" modelUID="r:c6ce92e7-5a98-4a6f-866a-ec8b9e945dd8(com.mbeddr.core.expressions.behavior)" version="1" />
+  <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="17" />
+  <import index="yq40" modelUID="r:152b3fc0-83a1-4bab-a8cd-565eb8483785(com.mbeddr.core.pointers.structure)" version="3" />
   <import index="clbe" modelUID="r:61d840b4-12c1-49ea-b142-b2a1550a9b15(com.mbeddr.core.udt.structure)" version="5" />
   <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="1" />
   <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="4" />
@@ -41,9 +41,6 @@
     </node>
     <node type="tp5g.NodesTestCase" typeId="tp5g.1216913645126" id="8811614583515786196">
       <property name="name" nameId="tpck.1169194664001" value="testBasicTypedAndOperators" />
-    </node>
-    <node type="tp5g.TestInfo" typeId="tp5g.5097124989038916362" id="8334814120023210456">
-      <property name="projectPath" nameId="tp5g.5097124989038916363" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.core/core.dev.mpr" />
     </node>
     <node type="tp5g.NodesTestCase" typeId="tp5g.1216913645126" id="8607471592849978428">
       <property name="name" nameId="tpck.1169194664001" value="StructArrow" />
@@ -109,6 +106,9 @@
     </node>
     <node type="tp5g.NodesTestCase" typeId="tp5g.1216913645126" id="4306897540476477772">
       <property name="name" nameId="tpck.1169194664001" value="C99Types_64Bit" />
+    </node>
+    <node type="tp5g.TestInfo" typeId="tp5g.5097124989038916362" id="1423209693057696534">
+      <property name="projectPath" nameId="tp5g.5097124989038916363" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.core/core.dev.mpr" />
     </node>
   </roots>
   <root id="7345411391537044518">
@@ -1289,8 +1289,8 @@
                 <node role="exprs" roleId="c4fa.5095889050031622571" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="36486875645949618">
                   <property name="value" nameId="mj1l.8860443239512128104" value="2.1" />
                 </node>
-                <node role="exprs" roleId="c4fa.5095889050031622571" type="mj1l.StringLiteral" typeId="mj1l.2088909457728253268" id="36486875645949620">
-                  <property name="value" nameId="mj1l.2088909457728253269" value="Hello" />
+                <node role="exprs" roleId="c4fa.5095889050031622571" type="yq40.StringLiteral" typeId="yq40.6113173064526131575" id="36486875645949620">
+                  <property name="value" nameId="yq40.6113173064526131578" value="Hello" />
                 </node>
                 <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodePropertiesContainer" typeId="tp5g.1215507532627" id="5728674636024843109">
                   <node role="properties" roleId="tp5g.1215507909023" type="tp5g.NodeErrorPropety" typeId="tp5g.1215507671101" id="5728674636024843110" />
@@ -2015,7 +2015,6 @@
       </node>
     </node>
   </root>
-  <root id="8334814120023210456" />
   <root id="8607471592849978428">
     <node role="nodesToCheck" roleId="tp5g.1217501822150" type="tp5g.TestNode" typeId="tp5g.1216989428737" id="8607471592849978429">
       <node role="nodeToCheck" roleId="tp5g.1216989461394" type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="8607471592849978430">
@@ -4126,6 +4125,9 @@
     <node role="nodesToCheck" roleId="tp5g.1217501822150" type="tp5g.TestNode" typeId="tp5g.1216989428737" id="2872621037081794529">
       <node role="nodeToCheck" roleId="tp5g.1216989461394" type="x27k.ExternalModule" typeId="x27k.6116558314501417921" id="2872621037081794668">
         <property name="name" nameId="tpck.1169194664001" value="extModule" />
+        <node role="descriptors" roleId="x27k.6116558314501417978" type="x27k.HeaderDescriptor" typeId="x27k.6116558314501417952" id="3768538153689413364">
+          <property name="path" nameId="x27k.6116558314501417936" value="extMod.h" />
+        </node>
       </node>
     </node>
     <node role="nodesToCheck" roleId="tp5g.1217501822150" type="tp5g.TestNode" typeId="tp5g.1216989428737" id="8230986965007782005">
@@ -9951,11 +9953,11 @@
           <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="2494656796337790953">
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="2494656796337790956">
               <property name="name" nameId="tpck.1169194664001" value="s1" />
-              <node role="type" roleId="mj1l.318113533128716676" type="mj1l.StringType" typeId="mj1l.2088909457728253264" id="2494656796337790957" />
+              <node role="type" roleId="mj1l.318113533128716676" type="yq40.StringType" typeId="yq40.6113173064528067332" id="2494656796337790957" />
             </node>
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="2494656796337790959">
               <property name="name" nameId="tpck.1169194664001" value="s2" />
-              <node role="type" roleId="mj1l.318113533128716676" type="mj1l.StringType" typeId="mj1l.2088909457728253264" id="2494656796337790960" />
+              <node role="type" roleId="mj1l.318113533128716676" type="yq40.StringType" typeId="yq40.6113173064528067332" id="2494656796337790960" />
             </node>
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="2494656796337791003" />
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="2494656796337791005">
@@ -9986,6 +9988,9 @@
                 <node role="left" roleId="mj1l.8860443239512128064" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="2494656796337791020">
                   <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="2494656796337790956" resolveInfo="s1" />
                 </node>
+                <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodePropertiesContainer" typeId="tp5g.1215507532627" id="3768538153689413222">
+                  <node role="properties" roleId="tp5g.1215507909023" type="tp5g.NodeErrorPropety" typeId="tp5g.1215507671101" id="3768538153689413223" />
+                </node>
               </node>
             </node>
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="2494656796337791026">
@@ -9995,6 +10000,9 @@
                 </node>
                 <node role="left" roleId="mj1l.8860443239512128064" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="2494656796337791027">
                   <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="2494656796337790956" resolveInfo="s1" />
+                </node>
+                <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodePropertiesContainer" typeId="tp5g.1215507532627" id="3768538153689413224">
+                  <node role="properties" roleId="tp5g.1215507909023" type="tp5g.NodeErrorPropety" typeId="tp5g.1215507671101" id="3768538153689413225" />
                 </node>
               </node>
             </node>
@@ -10006,6 +10014,9 @@
                 <node role="left" roleId="mj1l.8860443239512128064" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="2494656796337791034">
                   <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="2494656796337790956" resolveInfo="s1" />
                 </node>
+                <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodePropertiesContainer" typeId="tp5g.1215507532627" id="3768538153689413226">
+                  <node role="properties" roleId="tp5g.1215507909023" type="tp5g.NodeErrorPropety" typeId="tp5g.1215507671101" id="3768538153689413227" />
+                </node>
               </node>
             </node>
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="2494656796337791040">
@@ -10015,6 +10026,9 @@
                 </node>
                 <node role="left" roleId="mj1l.8860443239512128064" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="2494656796337791041">
                   <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="2494656796337790956" resolveInfo="s1" />
+                </node>
+                <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodePropertiesContainer" typeId="tp5g.1215507532627" id="3768538153689413228">
+                  <node role="properties" roleId="tp5g.1215507909023" type="tp5g.NodeErrorPropety" typeId="tp5g.1215507671101" id="3768538153689413229" />
                 </node>
               </node>
             </node>
@@ -10033,8 +10047,8 @@
             </node>
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="2494656796337790971">
               <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.PlusExpression" typeId="mj1l.5763383285156373013" id="2494656796337790973">
-                <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.StringLiteral" typeId="mj1l.2088909457728253268" id="2494656796337790976">
-                  <property name="value" nameId="mj1l.2088909457728253269" value="test" />
+                <node role="right" roleId="mj1l.8860443239512128065" type="yq40.StringLiteral" typeId="yq40.6113173064526131575" id="2494656796337790976">
+                  <property name="value" nameId="yq40.6113173064526131578" value="test" />
                 </node>
                 <node role="left" roleId="mj1l.8860443239512128064" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="2494656796337790972">
                   <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="2494656796337790956" resolveInfo="s1" />
@@ -10049,8 +10063,8 @@
                 <node role="right" roleId="mj1l.8860443239512128065" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="2494656796337790990">
                   <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="2494656796337790959" resolveInfo="s2" />
                 </node>
-                <node role="left" roleId="mj1l.8860443239512128064" type="mj1l.StringLiteral" typeId="mj1l.2088909457728253268" id="2494656796337790986">
-                  <property name="value" nameId="mj1l.2088909457728253269" value="test" />
+                <node role="left" roleId="mj1l.8860443239512128064" type="yq40.StringLiteral" typeId="yq40.6113173064526131575" id="2494656796337790986">
+                  <property name="value" nameId="yq40.6113173064526131578" value="test" />
                 </node>
                 <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodePropertiesContainer" typeId="tp5g.1215507532627" id="2494656796337790991">
                   <node role="properties" roleId="tp5g.1215507909023" type="tp5g.NodeErrorPropety" typeId="tp5g.1215507671101" id="2494656796337790992" />
@@ -10059,11 +10073,11 @@
             </node>
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="2494656796337790994">
               <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.PlusExpression" typeId="mj1l.5763383285156373013" id="2494656796337790996">
-                <node role="left" roleId="mj1l.8860443239512128064" type="mj1l.StringLiteral" typeId="mj1l.2088909457728253268" id="2494656796337790995">
-                  <property name="value" nameId="mj1l.2088909457728253269" value="test" />
+                <node role="left" roleId="mj1l.8860443239512128064" type="yq40.StringLiteral" typeId="yq40.6113173064526131575" id="2494656796337790995">
+                  <property name="value" nameId="yq40.6113173064526131578" value="test" />
                 </node>
-                <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.StringLiteral" typeId="mj1l.2088909457728253268" id="2494656796337791000">
-                  <property name="value" nameId="mj1l.2088909457728253269" value="test" />
+                <node role="right" roleId="mj1l.8860443239512128065" type="yq40.StringLiteral" typeId="yq40.6113173064526131575" id="2494656796337791000">
+                  <property name="value" nameId="yq40.6113173064526131578" value="test" />
                 </node>
                 <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodePropertiesContainer" typeId="tp5g.1215507532627" id="2494656796337791001">
                   <node role="properties" roleId="tp5g.1215507909023" type="tp5g.NodeErrorPropety" typeId="tp5g.1215507671101" id="2494656796337791002" />
@@ -10717,5 +10731,6 @@
       </node>
     </node>
   </root>
+  <root id="1423209693057696534" />
 </model>
 

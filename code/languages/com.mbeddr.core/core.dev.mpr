@@ -24,6 +24,7 @@
       <modulePath path="${project}/languages/com.mbeddr.core.cstubs.c/c.mpl" folder="core" />
       <modulePath path="${project}/languages/com.mbeddr.core.cstubs/cstubs.mpl" folder="core" />
       <modulePath path="${project}/languages/com.mbeddr.core.debug.blext/blext.mpl" folder="core" />
+      <modulePath path="${project}/languages/com.mbeddr.core.debug.spawner/spawner.msd" folder="core" />
       <modulePath path="${project}/languages/com.mbeddr.core.debug/debug.mpl" folder="core" />
       <modulePath path="${project}/languages/com.mbeddr.core.embedded/embedded.mpl" folder="core-extended" />
       <modulePath path="${project}/languages/com.mbeddr.core.expressions/expressions.mpl" folder="core" />
@@ -43,7 +44,6 @@
       <modulePath path="${project}/languages/com.mbeddr.core.unittest/unittest.mpl" folder="core-extended" />
       <modulePath path="${project}/languages/com.mbeddr.core.util/solutions/pluginSolution/pluginSolution.msd" folder="core-extended" />
       <modulePath path="${project}/languages/com.mbeddr.core.util/util.mpl" folder="core-extended" />
-      <modulePath path="${project}/solutions/com.mbeddr.core.debug.spawner/spawner.msd" folder="core" />
       <modulePath path="${project}/solutions/com.mbeddr.core.statistics/statistics.msd" folder="core" />
       <modulePath path="${project}/tests/aLibrary/aLibrary.msd" folder="tests" />
       <modulePath path="${project}/tests/test.cstub.core.c/c.msd" folder="tests" />
