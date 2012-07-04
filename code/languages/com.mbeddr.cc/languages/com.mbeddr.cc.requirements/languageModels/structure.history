@@ -387,5 +387,11 @@
     </dependencies>
     <rename id="75wo.3314758227758936230" type="CONCEPT" from="SummaryContainsStringFilter" to="PriorityFilter" />
   </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="75wo" modelUID="r:eaa205a4-f15c-47d3-99e2-e648881b5997(com.mbeddr.cc.requirements.structure)" version="4" />
+    </dependencies>
+    <rename id="75wo.6148254807184908145" type="CONCEPT" from="ReqProjFilter" to="RequirementsFilter" />
+  </StructureModification>
 </history>
 
