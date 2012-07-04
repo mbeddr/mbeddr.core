@@ -19,36 +19,36 @@
       <modulePath path="${project}/devkits/com.mbeddr.core/core.devkit" />
       <modulePath path="${project}/languages/com.mbeddr.core.arrays/arrays.mpl" folder="core" />
       <modulePath path="${project}/languages/com.mbeddr.core.base/base.mpl" folder="core" />
-      <modulePath path="${project}/languages/com.mbeddr.core.base/solutions/pluginSolution/pluginSolution.msd" folder="core" />
+      <modulePath path="${project}/languages/com.mbeddr.core.base/solutions/pluginSolution/pluginSolution.msd" folder="core.solutions" />
       <modulePath path="${project}/languages/com.mbeddr.core.buildconfig/buildconfig.mpl" folder="core-extended" />
       <modulePath path="${project}/languages/com.mbeddr.core.cstubs/cstubs.mpl" folder="core" />
       <modulePath path="${project}/languages/com.mbeddr.core.debug.blext/blext.mpl" folder="core" />
-      <modulePath path="${project}/languages/com.mbeddr.core.debug.spawner/spawner.msd" folder="core" />
+      <modulePath path="${project}/languages/com.mbeddr.core.debug.spawner/spawner.msd" folder="core.solutions" />
       <modulePath path="${project}/languages/com.mbeddr.core.debug/debug.mpl" folder="core" />
       <modulePath path="${project}/languages/com.mbeddr.core.embedded/embedded.mpl" folder="core-extended" />
       <modulePath path="${project}/languages/com.mbeddr.core.expressions/expressions.mpl" folder="core" />
       <modulePath path="${project}/languages/com.mbeddr.core.legacy/legacy.mpl" folder="core" />
-      <modulePath path="${project}/languages/com.mbeddr.core.legacy/solutions/pluginSolution/pluginSolution.msd" folder="core" />
+      <modulePath path="${project}/languages/com.mbeddr.core.legacy/solutions/pluginSolution/pluginSolution.msd" folder="core.solutions" />
       <modulePath path="${project}/languages/com.mbeddr.core.make/make.mpl" folder="core" />
       <modulePath path="${project}/languages/com.mbeddr.core.modules.gen/gen.mpl" folder="core" />
-      <modulePath path="${project}/languages/com.mbeddr.core.modules.runtime/include.msd" folder="core" />
+      <modulePath path="${project}/languages/com.mbeddr.core.modules.runtime/include.msd" folder="core.solutions" />
       <modulePath path="${project}/languages/com.mbeddr.core.modules/modules.mpl" folder="core" />
-      <modulePath path="${project}/languages/com.mbeddr.core.modules/solutions/pluginSolution/pluginSolution.msd" folder="core" />
+      <modulePath path="${project}/languages/com.mbeddr.core.modules/solutions/pluginSolution/pluginSolution.msd" folder="core.solutions" />
       <modulePath path="${project}/languages/com.mbeddr.core.runconfiguration/runconfiguration.mpl" folder="core" />
-      <modulePath path="${project}/languages/com.mbeddr.core.runconfiguration/solutions/pluginSolution/pluginSolution.msd" folder="core" />
-      <modulePath path="${project}/languages/com.mbeddr.core.statements/solutions/pluginSolution/pluginSolution.msd" folder="core" />
+      <modulePath path="${project}/languages/com.mbeddr.core.runconfiguration/solutions/pluginSolution/pluginSolution.msd" folder="core.solutions" />
+      <modulePath path="${project}/languages/com.mbeddr.core.statements/solutions/pluginSolution/pluginSolution.msd" folder="core.solutions" />
       <modulePath path="${project}/languages/com.mbeddr.core.statements/statements.mpl" folder="core" />
       <modulePath path="${project}/languages/com.mbeddr.core.udt/udt.mpl" folder="core" />
       <modulePath path="${project}/languages/com.mbeddr.core.unittest/unittest.mpl" folder="core-extended" />
       <modulePath path="${project}/languages/com.mbeddr.core.util/solutions/pluginSolution/pluginSolution.msd" folder="core-extended" />
       <modulePath path="${project}/languages/com.mbeddr.core.util/util.mpl" folder="core-extended" />
-      <modulePath path="${project}/solutions/com.mbeddr.core.statistics/statistics.msd" folder="core" />
+      <modulePath path="${project}/solutions/com.mbeddr.core.statistics/statistics.msd" folder="core.solutions" />
       <modulePath path="${project}/tests/aLibrary/aLibrary.msd" folder="tests" />
-      <modulePath path="${project}/tests/test.cstub.core/core.msd" folder="tests" />
-      <modulePath path="${project}/tests/test.cstub.testheader.expressions/expressions.msd" folder="tests" />
-      <modulePath path="${project}/tests/test.cstub.testheader/testheader.msd" folder="tests" />
-      <modulePath path="${project}/tests/test.debugger.cdt/cdt.msd" folder="tests" />
-      <modulePath path="${project}/tests/test.debugger.core/core.msd" folder="tests" />
+      <modulePath path="${project}/tests/test.cstub.core/core.msd" folder="tests.cstub" />
+      <modulePath path="${project}/tests/test.cstub.testheader.expressions/expressions.msd" folder="tests.cstub" />
+      <modulePath path="${project}/tests/test.cstub.testheader/testheader.msd" folder="tests.cstub" />
+      <modulePath path="${project}/tests/test.debugger.cdt/cdt.msd" folder="tests.debugger" />
+      <modulePath path="${project}/tests/test.debugger.core/core.msd" folder="tests.debugger" />
       <modulePath path="${project}/tests/test.ex.core.libs/libs.msd" folder="tests" />
       <modulePath path="${project}/tests/test.ex.core/core.msd" folder="tests" />
       <modulePath path="${project}/tests/test.ex.errorreporting/errorreporting.msd" folder="tests" />

@@ -55,7 +55,7 @@
     </node>
     <node type="tp4k.ActionDeclaration" typeId="tp4k.1203071646776" id="5503769820672231064">
       <property name="name" nameId="tpck.1169194664001" value="OpenGraphViewerAction" />
-      <property name="caption" nameId="tp4k.1205250923097" value="Open Graph Viewer" />
+      <property name="caption" nameId="tp4k.1205250923097" value="Graph Viewer" />
     </node>
     <node type="tp4k.ActionGroupDeclaration" typeId="tp4k.1203087890642" id="5503769820672231118">
       <property name="name" nameId="tpck.1169194664001" value="GraphViewerGroup" />
