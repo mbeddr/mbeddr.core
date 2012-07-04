@@ -96,7 +96,7 @@
     </node>
     <node type="tp4k.ToolDeclaration" typeId="tp4k.1203071677434" id="5426495936043631345">
       <property name="name" nameId="tpck.1169194664001" value="MbeddrTodoViewer" />
-      <property name="caption" nameId="tp4k.6547237850567462620" value="Mbeddr TODO" />
+      <property name="caption" nameId="tp4k.6547237850567462620" value="mbeddr TODO" />
       <property name="virtualPackage" nameId="tpck.1193676396447" value="todo" />
     </node>
     <node type="tpee.ClassConcept" typeId="tpee.1068390468198" id="5426495936043638617">
@@ -106,7 +106,7 @@
     <node type="tp4k.ActionDeclaration" typeId="tp4k.1203071646776" id="5022036173482689504">
       <property name="virtualPackage" nameId="tpck.1193676396447" value="todo" />
       <property name="name" nameId="tpck.1169194664001" value="OpenMbeddrTodoAction" />
-      <property name="caption" nameId="tp4k.1205250923097" value="Mbeddr TODO" />
+      <property name="caption" nameId="tp4k.1205250923097" value="mbeddr TODO" />
     </node>
     <node type="tp4k.ActionGroupDeclaration" typeId="tp4k.1203087890642" id="5022036173482689519">
       <property name="virtualPackage" nameId="tpck.1193676396447" value="todo" />
@@ -1318,6 +1318,7 @@
   </root>
   <root id="5022036173482689519">
     <node role="contents" roleId="tp4k.1207145245948" type="tp4k.ElementListContents" typeId="tp4k.1207145163717" id="5022036173482689521">
+      <node role="reference" roleId="tp4k.1207145201301" type="tp4k.Separator" typeId="tp4k.1204908117386" id="2492142479326138916" />
       <node role="reference" roleId="tp4k.1207145201301" type="tp4k.ActionInstance" typeId="tp4k.1203088046679" id="5022036173482689522">
         <link role="action" roleId="tp4k.1203088061055" targetNodeId="5022036173482689504" resolveInfo="OpenMbeddrTodoAction" />
       </node>
