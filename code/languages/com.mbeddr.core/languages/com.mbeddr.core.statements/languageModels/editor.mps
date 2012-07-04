@@ -145,6 +145,10 @@
       <property name="virtualPackage" nameId="tpck.1193676396447" value="comment" />
       <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="c4fa.7565145259447112915" resolveInfo="MultiLineCommentStatement" />
     </node>
+    <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="8670550972713474110">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="prefixes" />
+      <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="c4fa.8670550972713474109" resolveInfo="SimplePrefix" />
+    </node>
   </roots>
   <root id="4185783222026475242">
     <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="4185783222026475244">
@@ -1638,6 +1642,11 @@
   <root id="7565145259447112964">
     <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Component" typeId="tpc2.1078939183254" id="5750171280003851639">
       <link role="editorComponent" roleId="tpc2.1078939183255" targetNodeId="r4b4.7565145259447112918" resolveInfo="listOfDocParts" />
+    </node>
+  </root>
+  <root id="8670550972713474110">
+    <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_ConceptProperty" typeId="tpc2.1137553248617" id="8670550972713474112">
+      <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="tpck.1137473891462" resolveInfo="alias" />
     </node>
   </root>
 </model>

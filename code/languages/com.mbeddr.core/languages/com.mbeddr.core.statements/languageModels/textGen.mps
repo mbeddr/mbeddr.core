@@ -107,6 +107,10 @@
       <property name="virtualPackage" nameId="tpck.1193676396447" value="comment" />
       <link role="conceptDeclaration" roleId="2omo.1233670257997" targetNodeId="c4fa.7565145259447112915" resolveInfo="MultiLineCommentStatement" />
     </node>
+    <node type="2omo.ConceptTextGenDeclaration" typeId="2omo.1233670071145" id="8670550972713474113">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="prefixes" />
+      <link role="conceptDeclaration" roleId="2omo.1233670257997" targetNodeId="c4fa.8670550972713474109" resolveInfo="SimplePrefix" />
+    </node>
   </roots>
   <root id="2093108837558498915">
     <node role="textGenBlock" roleId="2omo.1233749296504" type="2omo.GenerateTextDeclaration" typeId="2omo.1233749247888" id="2093108837558498916">
@@ -1157,6 +1161,22 @@
               </node>
             </node>
             <node role="operation" roleId="tpee.1197027833540" type="tp2q.IsNotEmptyOperation" typeId="tp2q.1176501494711" id="3175563411366743003" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </root>
+  <root id="8670550972713474113">
+    <node role="textGenBlock" roleId="2omo.1233749296504" type="2omo.GenerateTextDeclaration" typeId="2omo.1233749247888" id="8670550972713474114">
+      <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="8670550972713474115">
+        <node role="statement" roleId="tpee.1068581517665" type="2omo.AppendOperation" typeId="2omo.1237306079178" id="8670550972713474116">
+          <node role="part" roleId="2omo.1237306115446" type="2omo.NodeAppendPart" typeId="2omo.1237305334312" id="8670550972713474118">
+            <node role="value" roleId="2omo.1237305790512" type="tpee.DotExpression" typeId="tpee.1197027756228" id="8670550972713474141">
+              <node role="operand" roleId="tpee.1197027771414" type="2omo.NodeParameter" typeId="2omo.1233748055915" id="8670550972713474120" />
+              <node role="operation" roleId="tpee.1197027833540" type="tp25.SConceptPropertyAccess" typeId="tp25.1145994841052" id="8670550972713474147">
+                <link role="conceptProperty" roleId="tp25.1145994841055" targetNodeId="tpck.1137473891462" resolveInfo="alias" />
+              </node>
+            </node>
           </node>
         </node>
       </node>
