@@ -4892,12 +4892,17 @@
                   <node role="expression" roleId="mj1l.7254843406768839760" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="8018080331221661176">
                     <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="8018080331221618807" resolveInfo="i16P" />
                   </node>
-                  <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodePropertiesContainer" typeId="tp5g.1215507532627" id="8018080331221668995">
-                    <node role="properties" roleId="tp5g.1215507909023" type="tp5g.NodeErrorPropety" typeId="tp5g.1215507671101" id="8018080331221668996" />
-                  </node>
                 </node>
                 <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="8018080331221661181">
                   <property name="value" nameId="mj1l.8860443239512128104" value="20" />
+                </node>
+              </node>
+              <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="vs0r.ElementDocumentation" typeId="vs0r.3857533489766146428" id="8230733038424810068">
+                <node role="parts" roleId="vs0r.3857533489766836837" type="vs0r.DocPart" typeId="vs0r.3857533489766836826" id="8230733038424810074">
+                  <property name="text" nameId="vs0r.3857533489766836827" value="Note that currently we cannot find out that the underlying i8p is constant" />
+                </node>
+                <node role="parts" roleId="vs0r.3857533489766836837" type="vs0r.DocPart" typeId="vs0r.3857533489766836826" id="8230733038424810075">
+                  <property name="text" nameId="vs0r.3857533489766836827" value="because the TS rules does not capture this. So we have made all *x an lvaue." />
                 </node>
               </node>
             </node>
@@ -4955,12 +4960,17 @@
                       <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="8018080331221669003" resolveInfo="st" />
                     </node>
                   </node>
-                  <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodePropertiesContainer" typeId="tp5g.1215507532627" id="7632778644139104008">
-                    <node role="properties" roleId="tp5g.1215507909023" type="tp5g.NodeErrorPropety" typeId="tp5g.1215507671101" id="7632778644139104009" />
-                  </node>
                 </node>
                 <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="7632778644139104006">
                   <property name="value" nameId="mj1l.8860443239512128104" value="10" />
+                </node>
+              </node>
+              <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="vs0r.ElementDocumentation" typeId="vs0r.3857533489766146428" id="8230733038424821308">
+                <node role="parts" roleId="vs0r.3857533489766836837" type="vs0r.DocPart" typeId="vs0r.3857533489766836826" id="8230733038424821314">
+                  <property name="text" nameId="vs0r.3857533489766836827" value="Note that currently we cannot find out that the underlying i8p is constant" />
+                </node>
+                <node role="parts" roleId="vs0r.3857533489766836837" type="vs0r.DocPart" typeId="vs0r.3857533489766836826" id="8230733038424821315">
+                  <property name="text" nameId="vs0r.3857533489766836827" value="because the TS rules does not capture this. So we have made all *x an lvaue." />
                 </node>
               </node>
             </node>
@@ -5012,12 +5022,17 @@
                   <node role="expression" roleId="mj1l.7254843406768839760" type="x27k.GlobalVarRef" typeId="x27k.6610873504380357354" id="4861891518412267351">
                     <link role="var" roleId="x27k.6610873504380357355" targetNodeId="4861891518412267318" resolveInfo="i8p" />
                   </node>
-                  <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodePropertiesContainer" typeId="tp5g.1215507532627" id="4861891518412267360">
-                    <node role="properties" roleId="tp5g.1215507909023" type="tp5g.NodeErrorPropety" typeId="tp5g.1215507671101" id="4861891518412267361" />
-                  </node>
                 </node>
                 <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="4861891518412267359">
                   <property name="value" nameId="mj1l.8860443239512128104" value="20" />
+                </node>
+              </node>
+              <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="vs0r.ElementDocumentation" typeId="vs0r.3857533489766146428" id="8230733038424804441">
+                <node role="parts" roleId="vs0r.3857533489766836837" type="vs0r.DocPart" typeId="vs0r.3857533489766836826" id="8230733038424804449">
+                  <property name="text" nameId="vs0r.3857533489766836827" value="Note that currently we cannot find out that the underlying i8p is constant" />
+                </node>
+                <node role="parts" roleId="vs0r.3857533489766836837" type="vs0r.DocPart" typeId="vs0r.3857533489766836826" id="8230733038424804450">
+                  <property name="text" nameId="vs0r.3857533489766836827" value="because the TS rules does not capture this. So we have made all *x an lvaue." />
                 </node>
               </node>
             </node>
