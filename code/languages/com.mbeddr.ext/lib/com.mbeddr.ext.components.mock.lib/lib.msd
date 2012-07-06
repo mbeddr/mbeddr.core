@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="com.mbeddr.ext.components.mock.lib" uuid="f5b15bf9-2463-45a5-90f4-06322655d1d6" pluginKind="PLUGIN_OTHER" compileInMPS="true">
+<solution name="com.mbeddr.ext.components.mock.lib" uuid="f5b15bf9-2463-45a5-90f4-06322655d1d6" compileInMPS="true">
   <models>
     <modelRoot path="${solution_descriptor}/" />
     <modelRoot path="${solution_descriptor}/models" />

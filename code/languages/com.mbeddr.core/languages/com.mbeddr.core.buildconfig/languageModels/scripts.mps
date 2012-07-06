@@ -11,7 +11,7 @@
   <roots>
     <node type="tp33.MigrationScript" typeId="tp33.1177457067821" id="2736179788492057715">
       <property name="name" nameId="tpck.1169194664001" value="addDebugOptionToAllDesktopBuildSystems" />
-      <property name="title" nameId="tp33.1177457669450" value="Add -g as debug option to all desktop build systems" />
+      <property name="title" nameId="tp33.1177457669450" value="MBEDDR: Add -g as debug option to all desktop build systems" />
     </node>
   </roots>
   <root id="2736179788492057715">

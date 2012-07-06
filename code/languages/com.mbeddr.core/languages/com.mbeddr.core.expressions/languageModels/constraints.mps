@@ -511,7 +511,7 @@
                 <node role="operation" roleId="tpee.1197027833540" type="tp25.Model_GetLongNameOperation" typeId="tp25.1212008292747" id="6685915374443549952" />
               </node>
               <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="1423209693057343623">
-                <property name="value" nameId="tpee.1070475926801" value="TypeSizeConfiguration For " />
+                <property name="value" nameId="tpee.1070475926801" value="TypeSizeConfiguration for " />
               </node>
             </node>
           </node>

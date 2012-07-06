@@ -47,6 +47,10 @@
       <link role="refactoring" roleId="4w5v.7518061998923573138" targetNodeId="e4fp.380699267178693507" resolveInfo="replicate" />
     </node>
     <node type="tgbt.StandalonePluginDescriptor" typeId="tgbt.7520713872864775836" id="7990137026351650149" />
+    <node type="4w5v.RefactoringAction" typeId="4w5v.7518061998923573137" id="2400440333612945069">
+      <property name="name" nameId="tpck.1169194664001" value="Convert into Implementation Module" />
+      <link role="refactoring" roleId="4w5v.7518061998923573138" targetNodeId="e4fp.2400440333612944625" resolveInfo="convertExternalModuleIntoImplModule" />
+    </node>
   </roots>
   <root id="7518061998923661565">
     <node role="shortcut" roleId="4w5v.7518061998923573139" type="tp4k.KeyMapKeystroke" typeId="tp4k.1207318242772" id="7518061998923661598">
@@ -280,5 +284,6 @@
     </node>
   </root>
   <root id="7990137026351650149" />
+  <root id="2400440333612945069" />
 </model>
 

@@ -13,6 +13,7 @@
       <modulePath path="${project}/languages/com.mbeddr.ext.components.gen_nomw/gen_nomw.mpl" folder="components" />
       <modulePath path="${project}/languages/com.mbeddr.ext.components.mock/mock.mpl" folder="components" />
       <modulePath path="${project}/languages/com.mbeddr.ext.components.statemachine/sm_comp.mpl" folder="statemachine" />
+      <modulePath path="${project}/languages/com.mbeddr.ext.components.test/test.mpl" folder="components" />
       <modulePath path="${project}/languages/com.mbeddr.ext.components/components.mpl" folder="components" />
       <modulePath path="${project}/languages/com.mbeddr.ext.coords/coords.mpl" folder="units" />
       <modulePath path="${project}/languages/com.mbeddr.ext.exceptionhandling/exceptionhandling.mpl" folder="exceptionhandling" />

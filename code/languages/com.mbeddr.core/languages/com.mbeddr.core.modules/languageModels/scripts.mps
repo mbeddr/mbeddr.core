@@ -14,7 +14,7 @@
   <import index="tp2q" modelUID="r:00000000-0000-4000-0000-011c8959032e(jetbrains.mps.baseLanguage.collections.structure)" version="7" implicit="yes" />
   <roots>
     <node type="tp33.MigrationScript" typeId="tp33.1177457067821" id="7825285260293689234">
-      <property name="title" nameId="tp33.1177457669450" value="Remove the type from a global constant" />
+      <property name="title" nameId="tp33.1177457669450" value="MBEDDR: Remove the type from a global constant" />
       <property name="name" nameId="tpck.1169194664001" value="RemoveTypeFromGlobalConstant" />
     </node>
   </roots>
