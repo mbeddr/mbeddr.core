@@ -473,9 +473,19 @@
           <property name="active" nameId="k146.2688792604367947988" value="true" />
           <property name="name" nameId="tpck.1169194664001" value="stepAssertionFailed" />
           <property name="text" nameId="k146.2688792604367903089" value="step assertion failed" />
+          <node role="properties" roleId="k146.767515563077204474" type="k146.MessageProperty" typeId="k146.767515563077204464" id="9125142491355913788">
+            <property name="name" nameId="tpck.1169194664001" value="stepID" />
+            <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="9125142491355913789">
+              <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+              <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+            </node>
+          </node>
           <node role="properties" roleId="k146.767515563077204474" type="k146.MessageProperty" typeId="k146.767515563077204464" id="4331139697889855854">
-            <property name="name" nameId="tpck.1169194664001" value="assertionNo" />
-            <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="4331139697889855855" />
+            <property name="name" nameId="tpck.1169194664001" value="assertionID" />
+            <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="9125142491355913733">
+              <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+              <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+            </node>
           </node>
           <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.PropertyMacro" typeId="tpf8.1087833241328" id="4331139697889888834">
             <property name="propertyName" nameId="tpck.1757699476691236117" value="active" />
@@ -498,7 +508,7 @@
           <property name="name" nameId="tpck.1169194664001" value="stepFailed" />
           <property name="text" nameId="k146.2688792604367903089" value="step failed" />
           <node role="properties" roleId="k146.767515563077204474" type="k146.MessageProperty" typeId="k146.767515563077204464" id="4331139697889841559">
-            <property name="name" nameId="tpck.1169194664001" value="stepNo" />
+            <property name="name" nameId="tpck.1169194664001" value="stepID" />
             <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="4331139697889841561" />
           </node>
           <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.PropertyMacro" typeId="tpf8.1087833241328" id="4331139697889888845">
@@ -1291,7 +1301,7 @@
                                         <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.DotExpression" typeId="tpee.1197027756228" id="4331139697889517715">
                                           <node role="operand" roleId="tpee.1197027771414" type="tpf8.TemplateFunctionParameter_sourceNode" typeId="tpf8.1167169188348" id="4331139697889517712" />
                                           <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_ConceptMethodCall" typeId="tp25.1179409122411" id="4331139697889517722">
-                                            <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="3s60.4331139697889499333" resolveInfo="stepIndex" />
+                                            <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="3s60.4331139697889499333" resolveInfo="assertionID" />
                                           </node>
                                         </node>
                                       </node>
@@ -1308,6 +1318,38 @@
                         <node role="msgref" roleId="k146.2688792604367973273" type="k146.MessageRef" typeId="k146.2688792604367964823" id="4331139697889856211">
                           <link role="table" roleId="k146.2688792604367964824" targetNodeId="4331139697889841508" resolveInfo="MockMessages" />
                           <link role="msg" roleId="k146.2688792604367964825" targetNodeId="4331139697889855853" resolveInfo="stepAssertionFailed" />
+                          <node role="propVals" roleId="k146.767515563077221084" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="9125142491355913811">
+                            <property name="value" nameId="mj1l.8860443239512128104" value="10" />
+                            <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.PropertyMacro" typeId="tpf8.1087833241328" id="9125142491355913813">
+                              <property name="propertyName" nameId="tpck.1757699476691236117" value="value" />
+                              <node role="propertyValueFunction" roleId="tpf8.1167756362303" type="tpf8.PropertyMacro_GetPropertyValue" typeId="tpf8.1167756080639" id="9125142491355913814">
+                                <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="9125142491355913815">
+                                  <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="9125142491355913817">
+                                    <node role="expression" roleId="tpee.1068580123156" type="tpee.PlusExpression" typeId="tpee.1068581242875" id="9125142491355913921">
+                                      <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="9125142491355913924">
+                                        <property name="value" nameId="tpee.1070475926801" value="" />
+                                      </node>
+                                      <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.DotExpression" typeId="tpee.1197027756228" id="9125142491355913893">
+                                        <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="9125142491355913859">
+                                          <node role="operand" roleId="tpee.1197027771414" type="tpf8.TemplateFunctionParameter_sourceNode" typeId="tpf8.1167169188348" id="9125142491355913818" />
+                                          <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_GetAncestorOperation" typeId="tp25.1171407110247" id="9125142491355913868">
+                                            <node role="parameter" roleId="tp25.1144104376918" type="tp25.OperationParm_Concept" typeId="tp25.1144101972840" id="9125142491355913869">
+                                              <node role="conceptArgument" roleId="tp25.1207343664468" type="tp25.RefConcept_Reference" typeId="tp25.1177026924588" id="9125142491355913872">
+                                                <link role="conceptDeclaration" roleId="tp25.1177026940964" targetNodeId="mxvz.4957503999940784581" resolveInfo="Step" />
+                                              </node>
+                                            </node>
+                                          </node>
+                                        </node>
+                                        <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_ConceptMethodCall" typeId="tp25.1179409122411" id="9125142491355913900">
+                                          <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="3s60.9125142491355913455" resolveInfo="stepID" />
+                                        </node>
+                                      </node>
+                                    </node>
+                                  </node>
+                                </node>
+                              </node>
+                            </node>
+                          </node>
                           <node role="propVals" roleId="k146.767515563077221084" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="4331139697889856213">
                             <property name="value" nameId="mj1l.8860443239512128104" value="12" />
                             <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.PropertyMacro" typeId="tpf8.1087833241328" id="4331139697889856214">
@@ -1322,7 +1364,7 @@
                                       <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.DotExpression" typeId="tpee.1197027756228" id="4331139697889856221">
                                         <node role="operand" roleId="tpee.1197027771414" type="tpf8.TemplateFunctionParameter_sourceNode" typeId="tpf8.1167169188348" id="4331139697889856218" />
                                         <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_ConceptMethodCall" typeId="tp25.1179409122411" id="4331139697889856228">
-                                          <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="3s60.4331139697889499333" resolveInfo="stepIndex" />
+                                          <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="3s60.4331139697889499333" resolveInfo="assertionID" />
                                         </node>
                                       </node>
                                     </node>
@@ -1393,7 +1435,7 @@
                                         <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.DotExpression" typeId="tpee.1197027756228" id="4331139697889861007">
                                           <node role="operand" roleId="tpee.1197027771414" type="tpf8.TemplateFunctionParameter_sourceNode" typeId="tpf8.1167169188348" id="4331139697889861008" />
                                           <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_ConceptMethodCall" typeId="tp25.1179409122411" id="4331139697889861009">
-                                            <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="3s60.4331139697889499333" resolveInfo="stepIndex" />
+                                            <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="3s60.4331139697889499333" resolveInfo="assertionID" />
                                           </node>
                                         </node>
                                       </node>
