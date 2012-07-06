@@ -1,10 +1,11 @@
 \section{Differences to regular C}
 
-This section describes the differences between \emph{mbeddr C} and regular C99.
+This section describes the differences between mbeddr C and regular C99.
 All examples shown in this chapter can be found in the \emph{HelloWorld} project
 that is available for download together with the \emph{mbeddr.core}
 distribution.
 
+\todo{Use noindent consistently} 
  
 \subsection{Preprocessor}
 
@@ -797,3 +798,61 @@ runtime. This will be added in the future.}
 
 At this point we are not able to write inline assembler. We will enable this
 feature in the future.
+
+
+
+
+
+\paragraph{Documentation} Many program elements can be documented. Examples
+include statements, functions, global variables or structs. A
+documentation is basically free text associated with a program element. 
+
+We distinguish documentation from commenting out code (explained below \todo). A
+documentation is shown as a grey comment above the commented element (the
+documentation is really attached to the element, and not just written into a
+line above it --- a subtle but important difference!)
+
+
+\begin{center} 
+  \includegraphics[width=9cm]{figures/core/documentation.jpg}
+\end{center}
+
+Documentation can be added using the \emph{Add Documentation} intention, or by
+using \keystroke{Ctrl-Alt-D} on the respective element.
+
+Note that comments are only shown if they are turned on. You can use the context
+menu on any program element and select $Toggle Docs$ to enable/disable display
+of comments. As soon as a comment is added, comment display is automatically
+turned on.
+
+
+\paragraph{Commenting out Code} Code that is commented out retains its syntax
+highlighting, but is shaded with a grey background. 
+
+\begin{center} 
+  \includegraphics[width=9cm]{figures/core/commenting.jpg}
+\end{center}
+
+Code can be commented out by pressing \keystroke{Ctrl-Alt-C} (this is
+technically a refactoring, so this feature is also availale from the
+refactorings context menu). This also works for lists of elements. Commented out
+code can be commented back in by pressing \keystroke{Ctrl-Alt-C} on the comment
+itself (the \ic{//}) or the commented element. 
+
+Commenting out code is a bit different than in regular, textual systems because
+code that is commented out is still "live": it is still stored as a tree, code
+completion still works in it, it may still be shown in $Find References$, and
+refactorings may affect the code. We are not sure if this is a desirable feature
+and we are looking for your feedback. Of course, the code is not executed. All
+commented program elements are removed during code generation.
+
+\greyboxnote{The current implementation of comments is still a little bit of a
+hack since we are waiting for some direct support by MPS. For example, errors
+should not be shown in commented code, and we are sure other quirks will arise
+as we continue using mbeddr.}
+
+Not all program elements can be commented out (since special support by the
+language is necessary to make something commentable), only concepts that
+implement \ic{ICommentable} can be commented. At this time, this is all
+statements and module contents.
+
