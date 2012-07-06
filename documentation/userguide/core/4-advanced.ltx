@@ -303,4 +303,28 @@ comment such as "initial version of myFeature finished".
 
 
 
+\subsection{The Graph Viewer}
+
+The graph viewer allows to render all graphviz files in the current solution. It
+simply scans the \ic{source\_gen} directory recursively for \ic{.gv} files and
+shows them in the tree. Underscores in the file name are used as hierarchies in
+the tree. Users can create their own transformation to graphviz graphs, and they
+will be shown in the tree. A special \ic{graph} language is available for this
+transformation (will be explained later).
+
+By default, each build configuration results in a diagram that shows the
+dependencies between the modules. To see it in the graph viewer, 
+
+\begin{itemize}
+  \item Open an implementation module in the editor
+  \item select $Tools -> Open Graph Viewer$ from the menu
+  \item in the graph viewer, click through the tree until you find a leaf node
+  representing a diagram
+\end{itemize}
+
+The diagram should open in the lower pane of the graph viewer. You can zoom
+(mouse wheel) and move around (press mouse button and move). More interestingly,
+you can also click on a node, and the MPS editor selects the respective node. 
+
+
 

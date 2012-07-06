@@ -15,49 +15,47 @@ the chaos that can be created by misusing the preprocessor and provides much
 better analyzability. We will provide examples later.
 
 The major consequence of not having a preprocessor is that the separation
-between header and implementation file does not work anymore. mbeddr provides
-\ic{modules} instead.
+between header and implementation file is not exposed to the programmer. mbeddr
+provides \ic{modules} instead.
 
 
 \subsection{Modules}
 
-While we \emph{generate} header files, we don't \emph{expose} them to the
-user in MPS. Instead, we have defined modules as the top-level concept.
-Modules also act as a kind of namespace. Module contents can be exported, in
-which case, if a module is imported by another module, the exported contents
-can be used by the importing module.
+While we \emph{generate} header files, we don't \emph{expose} them to the user
+in MPS. Instead, we have defined modules as the top-level concept. Modules also
+act as a kind of namespace. Module contents can be exported, in which case, if a
+module is imported by another module, the exported contents can be used by the
+importing module.
 
 
 We distinguish between \emph{implementation modules} which contain actual
 implementation code, and \emph{external modules} which act as proxies for
-pre-existing header files that we want to be able to use from within mbeddr C
+existing, non-mbeddr header files that should be accessible from within mbeddr C
 programs.
 
 
 \paragraph{Implementation Modules} The following example shows an implementation
 module (\ic{ImplementationModule}) with an exported function. You can toggle the
 \emph{exported} flag with the intention \intention{Toggle Export}. The second
-module (\ic{ModuleUsingTheExportedFunction}) imports the
-\ic{ImplementationModule} with the \ic{imports} keyword in the module header. An
-importing module can access all exported contents defined in imported modules.
+module (\ic{Module- UsingTheExportedFunction}) imports the
+\ic{ImplementationModule} with the \ic{im- ports} keyword in the module header.
+An importing module can access all exported contents defined in imported modules.
 
 
 \begin{code}
-module ImplementationModule from HelloWorld.ImplementationModules 
-  imports nothing { 
+module ImplementationModule imports nothing { 
    
   exported int32_t add(int32_t i, int32_t j) { 
     return i + j; 
-  } add (function) 
+  } 
 }
 
-module ModuleUsingTheExportedFunction from HelloWorld.ImplementationModules
-  imports ImplementationModule {
+module ModuleUsingTheExportedFunction imports ImplementationModule {
 
   int32_t main(int8_t argc, string[ ] args) { 
     int32_t result = add(10, 15); 
     return 0; 
-  } main (function) 
+  } 
 }
 \end{code}
 
@@ -80,38 +78,11 @@ code and existing C libraries. So to call existing functions or instantiate
   corresponding build configuration.
 \end{itemize}
 
-\greyboxnote{In the future we will provide a mechanism to automatically import
-existing header files into an external module. As of now, the relevant
-signatures etc. have to be typed in manually.}
 
-The following code shows the external module \ic{STDIO}. In the
-\ic{resources} section, you have to provide the path to the resources
-associated with this external module. You can add \ic{header}s and
-\ic{linkable}s (\ic{.o} or \ic{.a} files) here. Since \ic{gcc} knows what to
-link when \ic{<stdio.h>} is included, we don't have to specify a linkable here. 
-
-\begin{code}
-external module STDIO resources header : <stdio.h> 
-  // external module contents are exported by default 
-{ 
-  void printf(string format, ...); 
-}
-\end{code}
-
-To call methods from external modules, you have to import the external module
-into your implementation module with \ic{imports STDIO}. You can add now call
-the \ic{printf} function defined in the external module. 
-
-\begin{code}
-module MainApp from HelloWorld.ExternalModules imports STDIO { 
-   
-  int32_t main() { 
-    printf("Dies ist ein stdout.printf Text: %s\n", "Noch einer"); 
-    return 0; 
-  } main (function) 
-}
-\end{code}
-
+Manually entering the contents of the header file into an external module is
+tedious and error-prone. mbeddr comes with an automatic import for external
+header files. Since this process is not as trivial as it may seem, we discuss it
+extensively in \sect{headerimport}.
 
 
 \subsection{Build configuration}
@@ -129,39 +100,25 @@ Binaries are either executables or libraries.
 compiles them into an executable. Exactly one module in a executable shall have
 a main function.
 
-The build configuration, if it uses the \ic{desktop} target, results in a
-\ic{make} file which is automatically invoked as part of the MPS build,
-resulting in the corresponding executable binaries. The generated code, the make
+The build configuration, if it uses the \ic{desktop} target, is generated into
+a \ic{make} file which is automatically run as part of the MPS build,
+resulting in the corresponding executables. The generated code, the \ic{make}
 file and the executables can be found in the \ic{source\_gen} folder of the
-respective solution.
+respective solution (this directory can be changed via the \ic{Generator Output
+Path} property in the solution properties).
 
 \greyboxnote{The build language is designed to be extended for integration with
 other build infrastructures. In that case, other targets (than \ic{desktop})
 would be provided by the language that provides integration with a particular
 build infrastructure.}
 
-Below is the build configuration of the \ic{ExternalModules} example. It defines
-one executable \ic{Application}. It consist of the modules \ic{MainApp} and
-\ic{STDIO}.
-
-
-\begin{code}
-executable Application isTest: false { 
-  used libraries 
-    << ... >> 
-  included modules 
-    MainApp 
-    STDIO 
-}
-\end{code}
 
  
 \paragraph{Libraries} Libraries are binaries that are not executable.
-Specifically, they are \ic{libXXXX.a} files. They can be linked into
-executables. A library will typically reside in its own MPS model (and
-hence in its own \ic{source\_gen} directory).
-
-To create a library, create a build configuration with a \ic{static library}:
+Specifically, they are \ic{libXXXX.a} files which can be linked into
+executables. A library will typically reside in its own MPS model (and hence in
+its own \ic{source\_gen} directory). To create a library, create a build
+configuration with a \ic{static library}:
 
 \begin{code}
 static library MathLib { 
@@ -170,25 +127,28 @@ static library MathLib {
 }
 \end{code}
 
-Running the resulting make file will create a \ic{libMathLib.a}.
-
-Using the library for inclusion in an executable (which \emph{has} to be in a
-different MPS model!) requires the following three steps:
+Running the resulting make file will create a \ic{libMathLib.a}. Using the
+library for inclusion in an executable (which \emph{must} be in a different
+MPS model!) requires the following three steps:
 
 \begin{itemize}
   \item You have to import the model. Open the properties of the model that
   contains the code that \emph{uses} the library, and add the model that
-  \emph{contains} the library to the \ic{Imported Models} (\fig{modelImport}).
+  \emph{contains} the library to the \ic{Imported Models}.
   This is necessary so that MPS can see the nodes defined in that model.
-  \item In the implementation module that wants to use the functionality defined
+  
+\begin{center} 
+  \includegraphics[width=10cm]{figures/core/modelimport.png}
+\end{center}
+
+  \item In the implementation module that wants to \emph{use} the functionality defined
   in the library, import the corresponding module(s) from the library. The
   importing module will see all the exported contents in the imported module 
   (this is just like any other inter-module dependency).
   \item finally, in the build configuration of the executable that \emph{uses}
   the library, the used library has to be specified in the \ic{used libraries}
-  section. 
-\end{itemize}
-
+  section:
+  
 \begin{code}
 executable AnExe isTest: true { 
   used libraries 
@@ -196,19 +156,12 @@ executable AnExe isTest: true {
   included modules 
     MainModule 
 }
-\end{code}
+\end{code}  
+  
+\end{itemize}
 
-\begin{figure}
-	\vspace{0.2cm}
-	\rule{\textwidth}{0.7pt}
-	\begin{center} 
-	  \includegraphics[width=12cm]{figures/core/modelimport.png}
-	\end{center}
-	\vspace{-0.3cm}
-	\rule{\textwidth}{0.7pt}
-	\caption{Importing a model that contains a library}
-	\label{modelImport}  
-\end{figure}
+
+
 
 
 \subsubsection{Extending the Build Process}
@@ -218,11 +171,12 @@ discuss details in the extension guide, but here are a couple of hints:
 
 \begin{itemize}
   \item New configuration items can be contributed by implementing the
-  \ic{IConfigurationItem} interface. They are expected to be used from
+  \ic{IConfigu- rationItem} interface. They are expected to be used from
   transformation code. It can find the relevant items by querying the current
-  model for a root of type \ic{IConfigurationContainer}.
+  model for a root of type \ic{IConfigurationContainer} and by using the
+  \ic{BCHelper} helper class.
   \item New platforms can be contributed by extending the \ic{Platform} concept.
-  Users then also have to provide a generator for \ic{BuildConfigurations}.
+  Users then also have to provide a generator for \ic{BuildConfiguration}s.
 \end{itemize} 
 
 
@@ -232,45 +186,47 @@ discuss details in the extension guide, but here are a couple of hints:
 Unit Tests are supported as first class citizens by mbeddr C. A \ic{TestCase}
 implements \ic{IModuleContent}, so it can be used in implementation modules
 alongside with functions, \ic{struct}s or global variables. To assert the
-correctness of a result you have to use the \ic{assert} statement followed by an
-Boolean expression (note that \ic{assert} can just be used \emph{only }inside
+correctness of a result you have to use the \ic{assert} statement followed by a
+Boolean expression (note that \ic{assert} can just be used \emph{only} inside
 test cases). A \ic{fail} statement is also available --- it fails the test
 unconditionally.
 
 \begin{code}
-module AddTest from HelloWorld.UnitTests imports nothing { 
+module AddTest imports nothing { 
    
   exported test case testAddInt { 
     assert(0) 1 + 2 == 3; 
     assert(1) -1 + 1 == 1; 
-  } testAddInt(test case) 
+  }  
   
  
   exported test case testAddFloat { 
     float f1 = 5.0; 
     float f2 = 10.5; 
     assert(0) f1 + f2 == 15.5; 
-  } testAddFloat(test case) 
+  }  
 }
 \end{code}
 
 
 The next piece of code shows a main function that executes the test cases
-imported from the \ic{AddTest} module. The \ic{test} expression supports invocations of test
-cases; it also evaluates to the number of failed assertions. By returning this
-value from \ic{main}, we get an exit code != 0 in the case a test failed.
+imported from the \ic{AddTest} module. The \ic{test} expression supports
+invocations of test cases; it also evaluates to the number of failed assertions.
+By returning this value from \ic{main}, we get an exit code != 0 in the case a
+test failed.
 
 \begin{code}
 module TestSuite from HelloWorld.UnitTests imports AddTest { 
   int32_t main() { 
     return test testAddInt, testAddFloat; 
-  } main (function) 
+  } 
 }
 \end{code}
 
-In the build configuration, the \ic{isTest: true} flag can be set to true; this
-adds a \ic{test} target to the make file, so you can call \ic{make test} on the
-command line in the \ic{source\_gen} folder to run the tests. 
+For executables that contain tests, in the build configuration, the \ic{isTest}
+flag can be set to \ic{true}; this adds a \ic{test} target to the \ic{make} file, so
+you can call \ic{make test} on the command line in the \ic{source\_gen} folder
+to run the tests.
 
 The example above contains a failing assertion \ic{assert(1) -1 + 1 == 1;}.
 Below is the console output after running \ic{make test} in the generated source
@@ -294,6 +250,28 @@ runningTest: running test @AddTest:test_testAddFloat:0
 \end{code}
 
  
+Test cases can of course call arbitrary functions. However, as we have stated
+earlier, \ic{assert} and \ic{fail} statements must reside in test cases, not in
+arbitrary functions (this is related to the way the failures are
+implicitly counted and returned back from a test case). However, functions can
+be marked as a \ic{test helper} using an intention. \ic{assert} and \ic{fail}
+can be used within test helper functions. Test helpers must be called \emph{directly}
+from test cases!
+
+\begin{code}
+exported test case testAddFloat { 
+  assert(0) 1 + 2 == 3; 
+  moreStuff(10, 20, 30); 
+} 
+
+test helper
+void moreStuff(int8_t x, int8_t y, int8_t z) { 
+  assert(0) x + y == z; 
+} 
+\end{code}
+ 
+
+\todo{HERE}
 
 \subsection{Primitive Numeric Datatypes}
 \label{PrimitiveNumericDatatypes}
