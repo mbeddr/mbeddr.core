@@ -39,6 +39,7 @@
       <modulePath path="${project}/languages/com.mbeddr.core.statements/solutions/pluginSolution/pluginSolution.msd" folder="core.solutions" />
       <modulePath path="${project}/languages/com.mbeddr.core.statements/statements.mpl" folder="core" />
       <modulePath path="${project}/languages/com.mbeddr.core.udt/udt.mpl" folder="core" />
+      <modulePath path="${project}/languages/com.mbeddr.core.unittest/solutions/pluginSolution/pluginSolution.msd" folder="core-extended" />
       <modulePath path="${project}/languages/com.mbeddr.core.unittest/unittest.mpl" folder="core-extended" />
       <modulePath path="${project}/languages/com.mbeddr.core.util/solutions/pluginSolution/pluginSolution.msd" folder="core-extended" />
       <modulePath path="${project}/languages/com.mbeddr.core.util/util.mpl" folder="core-extended" />
