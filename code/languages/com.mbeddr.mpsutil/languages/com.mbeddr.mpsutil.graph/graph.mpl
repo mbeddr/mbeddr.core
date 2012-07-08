@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<language namespace="com.mbeddr.mpsutil.graph" uuid="17e4a96f-f2a0-4ccc-badd-b73f1fe7a7a6" doNotGenerateAdapters="false">
+<language namespace="com.mbeddr.mpsutil.graph" uuid="17e4a96f-f2a0-4ccc-badd-b73f1fe7a7a6" doNotGenerateAdapters="true">
   <models>
     <modelRoot path="${language_descriptor}/languageModels" />
   </models>
