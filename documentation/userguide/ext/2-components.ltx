@@ -374,3 +374,34 @@ exported test case runTest {
 Notice the \ic{validate mock} statement. If the \ic{mock} instance of
 \ic{PersistenceMock} has seen anything else but the expected behavior, the
 \ic{validate mock} statement will fail --- and hence the test case will fail.
+
+
+\subsection{More Test Support}
+
+In the context of testing, it makes sense to call runnables of
+component instance directly, without going through their respective triggers
+(polymorphic interface calls or interrupts, etc.). This is also useful for
+calling internal (i.e. "private") runnables that do not have any trigger.  
+
+This is why inside test cases, you can use the direct runnable call expression:
+
+\begin{code}
+exported component C extends nothing { 
+  contents: 
+    int8_t count = 0 
+    internal int8_t getStuff(int8_t x) <= no trigger { 
+      count++; 
+      return count; 
+    }  
+} 
+ 
+instance configuration instances extends nothing { 
+  instances: 
+    instance C c1 
+    instance C c2 
+} 
+ 
+exported test case testCall { 
+  assert(0) $instances:c1.getStuff(10) == 1; 
+}
+\end{code} 
