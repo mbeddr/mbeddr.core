@@ -106,8 +106,8 @@ exported component OrienterImpl extends nothing {
   ports:
     ... 
   contents: 
-    field int16\_t[5] headingBuffer 
-    field int8\_t headingIndex 
+    int16\_t[5] headingBuffer 
+    int8\_t headingIndex 
     
     void orienter\_orientTowards(int16\_t heading, uint8\_t speed, DIRECTION dir) <- ... { 
       headingIndex = heading;

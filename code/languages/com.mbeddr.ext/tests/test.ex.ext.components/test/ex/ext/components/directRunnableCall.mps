@@ -23,6 +23,9 @@
     <node type="51wr.BuildConfiguration" typeId="51wr.7717755763392524104" id="8230733038425037985" />
   </roots>
   <root id="8230733038425037930">
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="3387987015204952918">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1341755705137_3" />
+    </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="v7ag.AtomicComponent" typeId="v7ag.4491876417845649011" id="8230733038425038007">
       <property name="exported" nameId="x27k.1317894735999272944" value="true" />
       <property name="name" nameId="tpck.1169194664001" value="C" />
