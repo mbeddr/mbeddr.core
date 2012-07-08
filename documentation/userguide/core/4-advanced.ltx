@@ -36,9 +36,13 @@ boilerplate, except these two lines:
 The first line specifies the project whose contents should be generated. We
 point to the \ic{HelloWorld.mpr} project in our case. If you only want to
 generate parts of a project (only some solutions or models), take a look at this
-article: \ic{http://confluence.jetbrains.net/display/MPSD2/HowTo+--+MPS+and+ant}
-The second line points to the directory that contains all the languages used by
-the to-be-generated project. 
+article:
+
+\begin{code}
+http://confluence.jetbrains.net/display/MPSD2/HowTo+--+MPS+and+ant 
+\end{code}
+
+The second line points to the directory that contains all the languages used by the to-be-generated project. 
 
 To make it work, you also have to provide a \ic{build.properties} file to
 define two path variables: 
@@ -57,7 +61,7 @@ like this:
 
 \begin{code}
 ~/Documents/mbeddr/mbeddr.core/code/applications/HelloWorld (master)$ ant 
-Buildfile: /Users/markusvoelter/Documents/mbeddr/mbeddr.core/code/applications/HelloWorld/build.xml
+Buildfile: mbeddr.core/code/applications/HelloWorld/build.xml
 
 init:
    [delete] Deleting directory /Users/markusvoelter/temp/mpscache
@@ -159,24 +163,19 @@ the remote repository.
 
 
 
-\begin{figure}[h]
-\begin{center} 
-  \includegraphics[width=9cm]{figures/core/green.jpg}
-\end{center}
-\caption{A new variable has been added to the program and the gutter shows the
-green markup}
-\label{green}  
-\end{figure}
 
 
 \subsection{Committing Your Work}
 
 In git you can always commit locally. Typically, commits will happen quite
-often, on a fine grained level. I like to do these from within MPS. \fig{green}
-shows a program where I have just added a new variable. This is highlighted with
-the green bar in the gutter. Right-Clicking on the green bar allows you to rever
+often, on a fine grained level. I like to do these from within MPS. The
+screenshot below shows a program where I have just added a new variable. This is
+highlighted with the green bar in the gutter. Right-Clicking on the green bar allows you to rever
 this change to the latest checked in state.
 
+\begin{center} 
+  \includegraphics[width=9cm]{figures/core/green.jpg}
+\end{center}
 
 
 In addition you can use the \lcr{Changes} view (from the \lcr{Window -> Tool
@@ -185,14 +184,9 @@ Windows} menu) to look at the set of changed files. In my case
 to writing this document :-)). This \lcr{.mps} file contains the test case to
 which I have added the new variable.
 
-\begin{figure}[h]
 \begin{center} 
   \includegraphics[width=12cm]{figures/core/changesview.jpg}
 \end{center}
-\caption{A new variable has been added to the program and the gutter shows the
-green markup}
-\label{changesview}  
-\end{figure}
 
 To commit your work, you can now select \lcr{Version Control -> Commit Changes}.
 The resulting dialog, again, shows you all the changes you have made and you can
@@ -321,7 +315,9 @@ dependencies between the modules. To see it in the graph viewer,
 
 \begin{itemize}
   \item Open an implementation module in the editor
+  \vspace{-4mm}
   \item select $Tools -> Open Graph Viewer$ from the menu
+  \vspace{-4mm}
   \item in the graph viewer, click through the tree until you find a leaf node
   representing a diagram
 \end{itemize}

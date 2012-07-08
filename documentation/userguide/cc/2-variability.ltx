@@ -34,26 +34,14 @@ three languages:
 \subsubsection{Defining a Feature Model}
 
 Feature models express configuration options and the constraints between them.
-They are usually represented with a graphical notation as shown in
-\fig{examplefm}.
+They are usually represented with a graphical notation. An example is below.
 
 
-\begin{figure}[h]
 \begin{center} 
-  \includegraphics[width=8cm]{figures/cc/examplefm.png}
+  \includegraphics[width=100mm]{figures/cc/examplefm.png}
 \end{center}
-\label{examplefm}
-\caption{An example feature model}
-\end{figure}
 
 
-\begin{figure}[h]
-\begin{center} 
-  \includegraphics[width=10cm]{figures/cc/fminmbeddr.png}
-\end{center}
-\label{fminmbeddr}
-\caption{An example feature model in mbeddr}
-\end{figure}
 
 
 The following four kinds of constraints are supported between the features in a
@@ -75,12 +63,17 @@ feature model:
   must either \ic{int}, \ic{float}, or \ic{String}.
 \end{itemize} 
 
-\fig{fminmbeddr} shows the textual notation for feature models used in mbeddr. Note how the constraint affects all children! We had to introduce the
+\fig{fminmbeddr} shows the textual notation for feature models used in mbeddr.
+Note how the constraint affects all children! We had to introduce the
 intermediate feature \ic{options} to separate the mandatory stuff from the
 optional stuff. Features can have configuration attributes (of any type!).
 Children and attributes can be added to a feature via an intention. You can also
 use a surround intention to wrap a new feature around an existing one.
 
+
+\begin{center} 
+  \includegraphics[width=130mm]{figures/cc/fminmbeddr.png}
+\end{center}
 
 
 
@@ -95,17 +88,11 @@ limits the space explosion and allows interesting analyses that will be provided
 in later releases.
 
 Let us now look at how to define a product variant as a set of selected
-features. \fig{twoconfigs} shows two examples:
+features. Below are two examples:
 
-\begin{figure}[h]
-\vspace{-3mm}
 \begin{center} 
-  \includegraphics[width=10cm]{figures/cc/twoconfigs.png}
+  \includegraphics[width=130mm]{figures/cc/twoconfigs.png}
 \end{center}
-\label{twoconfigs}
-\vspace{-8mm}
-\caption{Two valid configurations of the feature model}
-\end{figure}
 
 
 Note that, if you create invalid configurations by selecting feature
@@ -121,19 +108,13 @@ A presence condition is an annotation on a program element that specifies, under
 which conditions the program element is part of a product variant. To do so, the
 presence condition contains a boolean expression over the configuration
 features. For example the two \ic{report} statements and the message list in
-\fig{examplecode1} are only in the program, if the \ic{logging} feature is
+the screenshot below are only in the program, if the \ic{logging} feature is
 selected. \ic{logging} is a feature defined in the feature model \ic{FM} that is
 referenced by this root node. 
 
-\begin{figure}[h]
-\vspace{-5mm}
 \begin{center} 
   \includegraphics[width=8cm]{figures/cc/examplecode1.png}
 \end{center}
-\label{examplecode1}
-\vspace{-5mm}
-\caption{C program code with presence conditions}
-\end{figure}
 
 To use presence conditions, the root note (here: an implementation module) as to
 have a \ic{FeatureModelConfiguration} annotation. It can be added via an
@@ -155,17 +136,11 @@ A presence condition is basically like an \ic{\#ifdef}: the node to which it is
 attached will \emph{not} be in the resulting system if the presence condition is
 \emph{false}. But sometimes you want to \emph{replace} something with something
 else if a certain feature condition is met. You can use replacements for that.
-\fig{examplecode2} shows an example.
 
-\begin{figure}[h]
-\vspace{-5mm}
+
 \begin{center} 
   \includegraphics[width=8cm]{figures/cc/examplecode2.png}
 \end{center}
-\vspace{-5mm}
-\label{examplecode2}
-\caption{C program code with a conditional replacement}
-\end{figure}
 
 A replacement replaces the node to which it is attached with an alternative node
 if the condition is \emph{true}. In the example in \fig{examplecode2} the
@@ -181,40 +156,27 @@ of those features that are used in ancestors of the current node are in scope
 and can be used. A type check is performed and errors are reported if the type
 is not compatible.
 
-\greyboxnote{At this time, this can only be done for expressions. This may be
-generalized later.}
-
-\begin{figure}[h]
-\vspace{-5mm}
 \begin{center} 
   \includegraphics[width=8cm]{figures/cc/examplecode3.png}
 \end{center}
-\label{examplecode3}
-\vspace{-5mm}
-\caption{C program code with an attribute injection (\ic{value} is the name of
-an attribute of the \ic{valueTest} feature)}
-\end{figure}
 
-\vspace{-10mm}
+\greyboxnote{At this time, this can only be done for expressions. This may be
+generalized later.}
+
+
 \subsection{Projection Magic}
 
 It is possible to show and edit the program as a product line (with the
 annotations), undecorated (with no annotations) as well as in a given variant.
-\fig{projection} shows an example. Note that due to a limitation in MPS, it is
+The figure below shows an example. Note that due to a limitation in MPS, it is
 currently not possible to show the values of attributes directly in the program
 in variant mode. The projection mode can be changed in the configuration annotation on the root
 node.
 
 
-\begin{figure}[h]
-\vspace{-5mm}
 \begin{center} 
   \includegraphics[width=15cm]{figures/cc/projection.png}
 \end{center}
-\label{projection}
-\vspace{-5mm}
-\caption{C program rendered in product line mode and in two variants}
-\end{figure}
 
 
 
@@ -236,19 +198,12 @@ following setup:
   built.
 \end{itemize}
 
-Figure \fig{build} shows an example of such as setup with one product line model
-(\ic{fm}) and two variant models \ic{v\_debug} and \ic{v\_production}. 
+The screenshot below shows an example of such as setup with one
+product line model (\ic{fm}) and two variant models \ic{v\_debug} and \ic{v\_production}. 
 
-\begin{figure}[h]
-\vspace{-5mm}
 \begin{center} 
   \includegraphics[width=15cm]{figures/cc/build.png}
 \end{center}
-\label{build}
-\vspace{-5mm}
-\caption{Model setup and transformation configuration for generating several
-variants at the same time.}
-\end{figure}
 
 Each of the product models contains a \ic{BuildConfiguration} that specifies the
 structure of the binary. In addition, the \ic{BuildConfiguration} has an

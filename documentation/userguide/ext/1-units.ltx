@@ -10,23 +10,14 @@ include the physical unit. The typing rules for the existing operators (\ic{+},
 with units. The type system also performs unit computations to, for example,
 handle an \ic{speed = length/time} correctly.
 
+The \emph{units} extension comes with the sevel SI units predefined and
+lets users define arbitrary derived units (such as the \ic{mps} in the example).
+It is also possible to defined convertible units that require a numeric
+conversion factor to get back to SI units. 
 
-\begin{figure}[h]
 \begin{center} 
 \includegraphics[width=110mm]{figures/ext/units.png}
 \end{center} 
-\vspace{-2mm}
-\caption{The \emph{units} extension comes with the sevel SI units predefined and
-lets users define arbitrary derived units (such as the \ic{mps} in the example).
-It is also possible to defined convertible units that require a numeric
-conversion factor to get back to SI units. Type checks ensure that the values
-associated with unit literals use the correct unit and perform unit computations
-(as in speed equals length divided by time). Errors are recorded if
-incompatible are used together (e.g. if we were to add length and time). To
-support this feature, the typing rules for the existing operators (such as
-\ic{+} or \ic{/}) have to be overridden.} 
-\label{unitsexample}
-\end{figure}
 
 \noindent To use physical units use the \ic{com.mbeddr.physicalunits} devkit in
 your model.
@@ -97,16 +88,11 @@ int8_t/m/ someLength = introduceunit[justSomeValue -> m];
 the units extension as well.
 
 To define derived units, create a \ic{UnitContainer} in your model. There you
-can define derived units (\fig{unitcontainer}).
+can define derived units:
 
-\begin{figure}[h]
 \begin{center} 
-\includegraphics[width=70mm]{figures/ext/unitcontainer.png}
+\includegraphics[width=60mm]{figures/ext/unitcontainer.png}
 \end{center} 
-\vspace{-2mm}
-\caption{Derived units are combinations of other units.} 
-\label{unitcontainer}
-\end{figure}
 
 Unit computations in C programs work as expected; compatibility is checked by
 reducing both to-be-compared units to their SI base units.
@@ -117,17 +103,12 @@ reducing both to-be-compared units to their SI base units.
 The derived units discussed in the previous section are still within the SI
 system and require no value conversions. For convertible units, this is
 different. They can be declared in the unit container as well; but they need
-conversion rules to be usable (\fig{convertible}).
+conversion rules to be usable:
 
 
-\begin{figure}[h]
 \begin{center} 
 \includegraphics[width=70mm]{figures/ext/convertible.png}
 \end{center} 
-\vspace{-2mm}
-\caption{Convertible units require the definition of conversion rules.} 
-\label{convertible}
-\end{figure}
 
 \noindent Typically, a convertible unit is a non-SI unit, and the conversion
 rules map it back to the SI world. Notice how in the conversion rule the \ic{val} keyword
