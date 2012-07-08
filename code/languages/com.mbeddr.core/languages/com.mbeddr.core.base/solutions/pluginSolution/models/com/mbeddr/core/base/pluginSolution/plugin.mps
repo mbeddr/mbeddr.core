@@ -57,16 +57,6 @@
   <import index="tp2q" modelUID="r:00000000-0000-4000-0000-011c8959032e(jetbrains.mps.baseLanguage.collections.structure)" version="7" implicit="yes" />
   <import index="e2lb" modelUID="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" version="-1" implicit="yes" />
   <roots>
-    <node type="tp4k.ActionGroupDeclaration" typeId="tp4k.1203087890642" id="1611636138415080805">
-      <property name="name" nameId="tpck.1169194664001" value="documentActionGroup" />
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="documentationStuff" />
-    </node>
-    <node type="tp4k.ActionDeclaration" typeId="tp4k.1203071646776" id="1611636138415080811">
-      <property name="name" nameId="tpck.1169194664001" value="documentToggleAction" />
-      <property name="caption" nameId="tp4k.1205250923097" value="Toggle Docs" />
-      <property name="isAlwaysVisible" nameId="tp4k.1207149998849" value="true" />
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="documentationStuff" />
-    </node>
     <node type="tgbt.StandalonePluginDescriptor" typeId="tgbt.7520713872864775836" id="1611636138415080827">
       <property name="virtualPackage" nameId="tpck.1193676396447" value="documentationStuff" />
     </node>
@@ -113,63 +103,11 @@
       <property name="name" nameId="tpck.1169194664001" value="MbeddrTODOGroup" />
     </node>
   </roots>
-  <root id="1611636138415080805">
-    <node role="contents" roleId="tp4k.1207145245948" type="tp4k.ElementListContents" typeId="tp4k.1207145163717" id="1611636138415080806">
-      <node role="reference" roleId="tp4k.1207145201301" type="tp4k.Separator" typeId="tp4k.1204908117386" id="1611636138415080807" />
-      <node role="reference" roleId="tp4k.1207145201301" type="tp4k.ActionInstance" typeId="tp4k.1203088046679" id="1611636138415080808">
-        <link role="action" roleId="tp4k.1203088061055" targetNodeId="1611636138415080811" resolveInfo="documentToggleAction" />
-      </node>
-    </node>
-    <node role="modifier" roleId="tp4k.1204991552650" type="tp4k.ModificationStatement" typeId="tp4k.1203092361741" id="1611636138415080809">
-      <link role="modifiedGroup" roleId="tp4k.1203092736097" targetNodeId="tprs.1215011911267" resolveInfo="IDEAView" />
-    </node>
-    <node role="modifier" roleId="tp4k.1204991552650" type="tp4k.ModificationStatement" typeId="tp4k.1203092361741" id="1611636138415080810">
-      <link role="modifiedGroup" roleId="tp4k.1203092736097" targetNodeId="ekwn.1755502566255660782" resolveInfo="EditorPopup" />
-    </node>
-  </root>
-  <root id="1611636138415080811">
-    <node role="parameter" roleId="tp4k.1217413222820" type="tp4k.ActionDataParameterDeclaration" typeId="tp4k.1217252042208" id="1611636138415080812">
-      <property name="name" nameId="tpck.1169194664001" value="e" />
-      <link role="key" roleId="tp4k.1217252646389" targetNodeId="1d7m.~MPSEditorDataKeys%dEDITOR_CONTEXT" resolveInfo="EDITOR_CONTEXT" />
-    </node>
-    <node role="executeFunction" roleId="tp4k.1203083461638" type="tp4k.ExecuteBlock" typeId="tp4k.1203083511112" id="1611636138415080813">
-      <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="1611636138415080814">
-        <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="1611636138415080815">
-          <node role="expression" roleId="tpee.1068580123156" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="1611636138415080816">
-            <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="gfi.1611636138415092320" resolveInfo="toggleDocsVisible" />
-            <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="gfi.1611636138415092319" resolveInfo="DocumentationConfiguration" />
-          </node>
-        </node>
-        <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="1611636138415080817">
-          <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="1611636138415080818">
-            <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="1611636138415080819">
-              <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="1611636138415080820">
-                <node role="operand" roleId="tpee.1197027771414" type="tp4f.ThisClassifierExpression" typeId="tp4f.1205752633985" id="1611636138415080821" />
-                <node role="operation" roleId="tpee.1197027833540" type="tp4k.ActionDataParameterReferenceOperation" typeId="tp4k.1217252428768" id="1611636138415080822">
-                  <link role="member" roleId="tp4f.1205756909548" targetNodeId="1611636138415080812" resolveInfo="e" />
-                </node>
-              </node>
-              <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="1611636138415080823">
-                <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="9a8.~EditorContext%dgetNodeEditorComponent()%cjetbrains%dmps%dnodeEditor%dEditorComponent" resolveInfo="getNodeEditorComponent" />
-              </node>
-            </node>
-            <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="1611636138415080824">
-              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="9a8.~EditorComponent%drebuildEditorContent()%cvoid" resolveInfo="rebuildEditorContent" />
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-    <node role="places" roleId="tp4k.394857668356997869" type="tp4k.EverywhereActionPlace" typeId="tp4k.394857668357342104" id="1611636138415080825" />
-    <node role="icon" roleId="tp4k.8976425910813834639" type="1oap.IconResource" typeId="1oap.8974276187400029883" id="1611636138415080826">
-      <property name="path" nameId="1oap.8974276187400029899" value="${solution_descriptor}/icons/showDocs.gif" />
-    </node>
-  </root>
   <root id="1611636138415080827" />
   <root id="7518061998923645758">
     <node role="shortcut" roleId="4w5v.7518061998923573139" type="tp4k.KeyMapKeystroke" typeId="tp4k.1207318242772" id="7518061998923645760">
-      <property name="modifiers" nameId="tp4k.1207318242773" value="ctrl+shift" />
-      <property name="keycode" nameId="tp4k.1207318242774" value="VK_D" />
+      <property name="modifiers" nameId="tp4k.1207318242773" value="ctrl" />
+      <property name="keycode" nameId="tp4k.1207318242774" value="VK_A" />
     </node>
   </root>
   <root id="7518061998923645761">
@@ -856,12 +794,6 @@
             <node role="rValue" roleId="tpee.1068498886297" type="tpee.ParameterReference" typeId="tpee.1068581242874" id="5426495936043638776">
               <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="5426495936043638762" resolveInfo="project" />
             </node>
-          </node>
-        </node>
-        <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="154287305787842655">
-          <node role="expression" roleId="tpee.1068580123156" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="154287305787842657">
-            <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="gfi.1611636138415092329" resolveInfo="makeDocsVisible" />
-            <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="gfi.1611636138415092319" resolveInfo="DocumentationConfiguration" />
           </node>
         </node>
         <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="5426495936043638777">

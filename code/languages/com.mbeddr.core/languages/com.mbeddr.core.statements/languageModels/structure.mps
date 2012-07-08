@@ -671,6 +671,9 @@
       <property name="name" nameId="tpck.1169194664001" value="comment" />
       <link role="dataType" roleId="tpce.1082985295845" targetNodeId="tpck.1082983041843" resolveInfo="string" />
     </node>
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7534202261664852653">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="vs0r.7534202261664852649" resolveInfo="IIsDocumentationComment" />
+    </node>
   </root>
   <root id="7024921229556134722">
     <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="4058325937810995932">

@@ -280,29 +280,19 @@ The standard C data types (\ic{int}, \ic{long}, etc.) have different sizes on
 different platforms. This makes them non-portable. C99 provides another set of
 primitive data types with clearly defined sizes (\ic{int8\_t}, \ic{int16\_t}).
 In mbeddr C you \emph{have} to use the C99 types, resulting in more portable
-programs. To be able to work with existing header files, the system has to know
-how the C99 types relate to the standard primitive types. This is the purpose of
-the \ic{TypeSizeConfiguration}. It establishes a mapping between the C99 types
-and the standard primitive types. 
+programs. However, to be able to work with existing header files, the system has
+to know how the C99 types relate to the standard primitive types. This is the
+purpose of the \ic{TypeSizeConfiguration}. It establishes a size-mapping between
+the C99 types and the standard primitive types. The \ic{TypeSizeConfiguration}
+mentioned above can be added with the \intention{Create default type size
+configuration} (see screenshot below) on modules, or by creating one through the
+$New$ menu on models. Every model has to contain exactly one type size
+configuration. To fill an existing empty type size configuration with the
+default values, you can use an intention on the \ic{TypeSizeConfiguration}.
 
-The \ic{TypeSizeConfiguration} mentioned above can be added with the
-\intention{Create default type size configuration} (\fig{addDefaultTSC}) on
-modules, or by creating one through the $New$ menu on models. Every model has to
-contain exactly one type size configuration. To fill an existing empty
-type size configuration with the default values, you can use
-an intention on the \ic{TypeSizeConfiguration}.
-
-\begin{figure}
-	\vspace{0.2cm}
-	\rule{\textwidth}{0.7pt}
-	\begin{center} 
-	  \includegraphics[width=7cm]{figures/core/AddDefaultTSC.png}
-	\end{center}
-	\vspace{-0.3cm}
-	\rule{\textwidth}{0.7pt}
-	\caption{Create default \ic{TypeSizeConfiguration}}
-	\label{addDefaultTSC}  
-\end{figure}
+\begin{center} 
+  \includegraphics[width=7cm]{figures/core/AddDefaultTSC.png}
+\end{center}
 
 \paragraph{Integral Types} The following integral types are not allowed in
 implementation modules, and can only be used in external modules for
@@ -330,16 +320,17 @@ can alsoi be speficied, e.g. if they differ from the IEEE754 sizes.
 \end{itemize}
 
 
-
+The type size configuration also requires the specification of the size of
+\ic{size\_t} and pointers.
 
 
 \subsection{Booleans}
 
 We have introduced a specific \ic{boolean} datatype, including the \ic{true} and
 \ic{false} literals. Integers cannot be used interchangably with Boolean values.
-We do provide a (red, ugly) cast operator between integers and booleans for reasons of
+We do provide a (red, ugly) cast operator between integers and booleans for
 interop with legacy code. The following example shows the usage of the Boolean
-data type. 
+data type.
 
 \begin{code}
 module BooleanDatatype from HelloWorld.BooleanDatatype imports nothing { 
@@ -349,7 +340,7 @@ module BooleanDatatype from HelloWorld.BooleanDatatype imports nothing {
     if ( !b ) { b = true; } if 
     assert(1) b == true; 
     assert(2) int2bool<1> == true;
-  } booleanTest(test case) 
+  }  
 }
 \end{code}
 
@@ -358,11 +349,11 @@ module BooleanDatatype from HelloWorld.BooleanDatatype imports nothing {
 
 mbeddr C supports special literals for hex, octal and binary
 numbers. The type of the literal is the smallest possible signed integer type
-(int8\_t, \ldots, int64\_t) that can represent the number.
+(\ic{int8\_t}, \ldots, \ic{int64\_t}) that can represent the number.
 
 
 \begin{code}
-module LiteralsApp from HelloWorld.Literals imports nothing { 
+module LiteralsApp imports nothing { 
    
   exported test case testLiterals { 
     int32_t intFromHex = hex<aff12>; 
@@ -373,11 +364,12 @@ module LiteralsApp from HelloWorld.Literals imports nothing {
      
     int32_t intFromBin = bin<100110011>; 
     assert(2) intFromBin == 307; 
-  } testLiterals(test case) 
+  }  
 }
 \end{code}
 
-
+All number literals, including decimal literals are signed by default. A suffix
+\ic{u} can be added to make them unsigned.
 
 \subsection{Pointers}
 
@@ -388,13 +380,13 @@ is a characteristic of a type, not of a variable.
 
 
 \paragraph{Pointer Arithmetics} For pointer arithmetics you have to use an
-explicit type conversion \ic{pointer2int} and \ic{int2pointer}. For more
-details, look at the following example. You also see the usage of pointer
-dereference (\ic{*xp}) and assigning an address with \ic{\&}.
+explicit type conversion \ic{pointer2int} and \ic{int2pointer}, as illustrated
+in the following code. You can also see the usage of pointer dereference
+(\ic{*xp}) and assigning an address with \ic{\&}.
 
 
 \begin{code}
-module BasicPointer from HelloWorld.Pointer imports stdlib {  
+module BasicPointer imports stdlib {  
   
   exported test case testBasicPointer { 
      
@@ -410,7 +402,7 @@ module BasicPointer from HelloWorld.Pointer imports stdlib {
     ap = int2pointer<pointer2int<ap> + 1>; 
     assert(2) *ap == 5; 
 
-  } testBasicPointer(test case)   
+  }   
   ...
 }
 \end{code}
@@ -418,8 +410,8 @@ module BasicPointer from HelloWorld.Pointer imports stdlib {
 
 Memory allocation works the same way as in regular C except that you need an
 external module to call functions such as \ic{malloc} from \ic{stdlib}. The next
-example shows how to do this. Note that \ic{size\_t} is a primitive type, built
-into mbeddr. It's size is also defined in a \ic{TypeSizeConfiguration}.
+example illustrates how to do this. Note that \ic{size\_t} is a primitive type,
+built into mbeddr. It's size is also defined in a \ic{TypeSizeConfiguration}.
 
 \begin{code}
 external module stdlib resources header : <stdlib.h> 
@@ -429,19 +421,19 @@ external module stdlib resources header : <stdlib.h>
 }
 \end{code}
 
-You have to include the external module \ic{stdlib} in your implementation module
-with \ic{imports stdlib}. You can then call \ic{malloc} or \ic{free}:
+You have to include the external module \ic{stdlib} in your implementation
+module with \ic{imports stdlib}. You can then call \ic{malloc} or \ic{free}:
 
 
 \begin{code}
-module BasicPointer from HelloWorld.Pointer imports stdlib {    
+module BasicPointer imports stdlib {    
   ...
   exported test case mallocTest { 
     int8_t* mem = ((int8_t*) malloc(sizeof int8_t)); 
     *mem = 10; 
     assert(0) *mem == 10; 
     free(mem); 
-  } mallocTest(test case) 
+  } 
 }
 \end{code}
 
@@ -449,56 +441,43 @@ module BasicPointer from HelloWorld.Pointer imports stdlib {
 \paragraph{Function Pointers} In regular C, you define a function pointer type
 like this: \ic{int (*pt2Function) (int, int)}. The first part is the return
 type, followed by the name und a comma separated argument type list. The pointer
-asterisk is added before the name. This is a rather ugly notation; we've cleaned
-it up in mbeddr C.
-
-
-In mbeddr, we have introduced the notion of function types and function
-references. These are syntactically different from pointers (of course they are
-mapped to function pointers in the generated C code). We have also introduced
-lambdas (i.e. closures without their own state).
+asterisk is added before the name. This is a rather ugly notation. In mbeddr, we
+have introduced the notion of function types and function references. These are
+syntactically different from pointers (of course they are mapped to function
+pointers in the generated C code). We have also introduced lambdas (i.e.
+closures without their own state).
 
 
 For function types you first define the argument list and then the return type,
 separeted by \ic{=>} (a little bit like Scala). Here is an example:
 \ic{(int32\_t, int32\_t)=>(int32\_t)} You can enter a fuction type by using the
-\ic{funtype} alias (see \fig{addFunctionPointer}). Function types are types, so
-they can be used in function signatures, local variables or \ic{typedef}s, just
-like any other type (see example \em{HelloWorld.Pointer.FunctionPointerAsTypes}).
+\ic{funtype} alias,  (see figure below). Function types are types, so they can
+be used in function signatures, local variables or \ic{typedef}s, just like any
+other type (see example \em{HelloWorld.Pointer.FunctionPointerAsTypes}).
 
-
-\begin{figure}
-	\vspace{0.2cm}
-	\rule{\textwidth}{0.7pt}
-	\begin{center} 
-	  \includegraphics[width=7cm]{figures/core/AddFunctionPointer.png}
-	\end{center}
-	\vspace{-0.3cm}
-	\rule{\textwidth}{0.7pt}
-	\caption{Add a function pointer with code completion}
-	\label{addFunctionPointer}  
-\end{figure}
+\begin{center} 
+  \includegraphics[width=7cm]{figures/core/AddFunctionPointer.png}
+\end{center}
 
 Values of type \ic{funtype} are either references to functions or lambdas. In
 regular C, you have use the address operator to obtain a function pointer
 (\ic{\&function}). In mbeddr C, you use the \ic{:} operator (as in
-\ic{:someFunction}) do distinguish function referneces from regular pointer
+\ic{:someFunction}) to distinguish function references from regular pointer
 stuff. Of course the type and values have to be compatible; for function types
 this means that the signature must be the same. The following example shows the
 use of function references:
 
 
 \begin{code}
-module FunctionPointer from HelloWorld.Pointer imports nothing { 
+module FunctionPointer imports nothing { 
    
   int32_t add(int32_t a, int32_t b) { 
     return a + b; 
-  } add (function) 
-  
+  } 
  
   int32_t minus(int32_t a, int32_t b) { 
     return a - b; 
-  } minus (function) 
+  } 
   
   exported test case testFunctionPointer { 
     // function pointer signature 
@@ -511,7 +490,7 @@ module FunctionPointer from HelloWorld.Pointer imports nothing {
     // assign "minus" 
     pt2Function = :minus; 
     assert(1) pt2Function(20, 10) == 10; 
-  } testFunctionPointer(test case) 
+  } 
 }
 \end{code}
 
@@ -527,22 +506,22 @@ first parameter.
 
 
 \begin{code}
-module FunctionPointerAsTypes from HelloWorld.Pointer imports nothing { 
+module FunctionPointerAsTypes imports nothing { 
    
   typedef (int32_t, int32_t)=>(int32_t) as ftype; 
  
   int32_t add(int32_t a, int32_t b) { 
     return a + b; 
-  } add (function) 
+  }  
  
   exported test case testFunctionPointer { 
     // call "add" 
     assert(0) doOperation(:add, 20, 10) == 30; 
-  } testFunctionPointer(test case) 
+  } 
   
   int32_t doOperation(ftype operation, int32_t firstOp, int32_t secondOp) { 
     return operation(firstOp, secondOp); 
-  } doOperation (function) 
+  } 
 }
 \end{code}
 
@@ -552,17 +531,17 @@ function. The syntax for a lambda is \ic{[arg1, arg2,
 \ldots|an-expression-using-args]}. The following is an example:
 
 \begin{code}
-module Lambdas from HelloWorld.Pointer imports nothing { 
+module Lambdas imports nothing { 
    
   typedef (int32_t, int32_t)=>(int32_t) as ftype; 
 
   exported test case testFunctionPointer { 
     assert(0) doOperation([a, b|a + b;], 20, 10) == 30; 
-  } testFunctionPointer(test case) 
+  } 
  
   int32_t doOperation(ftype operation, int32_t firstOp, int32_t secondOp) { 
     return operation(firstOp, secondOp); 
-  } doOperation (function) 
+  } 
 }
 \end{code}
 
@@ -576,9 +555,10 @@ enumerations.
 
 \greyboxnote{We may add a way to cast enums to ints later if it turns out that
 "enum arithmetics" are necessary}.
+\todo{What is the current state?}
 
 \begin{code}
-module EnumerationApp from HelloWorld.Enumerations imports nothing { 
+module EnumerationApp imports nothing { 
    
   enum SEASON { SPRING; SUMMER; AUTUMN; WINTER; } 
  
@@ -587,125 +567,37 @@ module EnumerationApp from HelloWorld.Enumerations imports nothing {
     assert(0) season != WINTER; 
     season = WINTER; 
     assert(1) season == WINTER; 
-  } testEnumeration(test case) 
+  } 
 }
 \end{code}
 
 
 \subsection{Goto}
 
-There is no \ic{goto} in mbeddr C.
-
-\greyboxnote{This may change :-)}
-
-
-\subsection{Switch statement}
-
-In the \ic{switch} statement, we don't use the annoying fall through semantics. Only
-one \ic{case} within the \ic{switch} will ever be executed, since we automatically
-generate a break statement into the generated C code. You can also add an
-\ic{default} statement which will be executed if no other case match.
-
-The next example shows a \ic{switch} statement with integers and enumeration as 
-the switched expression. 
-
-\begin{code}
-module SwitchStatement from HelloWorld.SwitchStatement imports nothing { 
-   
-  var int32_t globalState; 
-
-  enum DAY { MONDAY; THUESDAY; WEDNESDAY; } 
-  
-  exported test case testSwitchCase { 
-    globalState = -1; 
-     
-    // Switch with int 
-    callSwitch(0); 
-    assert(0) globalState == 20; 
-     
-    callSwitch(1); 
-    assert(1) globalState == 0; 
-     
-    callSwitch(2); 
-    assert(2) globalState == 10; 
-     
-     
-    // Switch with day 
-    callSwitchWithEnumeration(MONDAY); 
-    assert(3) globalState == 1; 
-     
-    callSwitchWithEnumeration(WEDNESDAY); 
-    assert(4) globalState == 3; 
-     
-    callSwitchWithEnumeration(THUESDAY); 
-    assert(5) globalState == 2; 
-  } testSwitchCase(test case) 
-  
- 
-  void callSwitch(int32_t state) { 
-    switch ( state ) { 
-      case 1: { globalState = 0; break; } 
-      case 2: { globalState = 10; break; } 
-      default: { globalState = 20; break; } 
-    } switch 
-  } callSwtich (function) 
-  
- 
-  void callSwitchWithEnumeration(DAY day) { 
-    switch ( day ) { 
-      case MONDAY: { globalState = 1; break; } 
-      case THUESDAY: { globalState = 2; break; } 
-      case WEDNESDAY: { globalState = 3; break; } 
-    } switch 
-  } callSwitchWithEnumeration (function) 
-}
-\end{code}
-
-
+mbeddr C supports the definition of labels and the \ic{goto} statement. We
+discourage its use. However, \ic{goto}s are useful for implementing
+code generators for domain-specific abstractions. This is why they are
+available.
 
 \subsection{Variables}
 
-\subsubsection{Global variables}
 
-Global variables start with the keyword \ic{var}. In every other respect they
-are identical to regular C. Like all other module contents, it can be
-\ic{exported}.
-
-\begin{code}
-module GlobalVariables from HelloWorld.Variables imports nothing { 
-   
-  var int32_t globalInt32; 
- 
-  exported test case testGlobalVariables { 
-    setGlobalVar(10); 
-    assert(0) globalInt32 == 10; 
-    setGlobalVar(20); 
-    assert(1) globalInt32 == 20; 
-    return; 
-  } testGlobalVariables(test case) 
-  
-  void setGlobalVar(int32_t globalVarValue) { 
-    globalInt32 = globalVarValue; 
-  } setGlobalVar (function) 
-}
-\end{code}
-
-
-\subsubsection{Local variables}
-At this point a local variable declaration can only declare one variable at a
-time; otherwise is it is just like in C (so you cannot write \ic{int a,b;}).
+Global variables are identical to regular C. Like all other module contents,
+they can be \ic{exported}. A local variable declaration can only declare one
+variable at a time; otherwise is it is just like in C (so you cannot write
+\ic{int a,b;}).
 
 
 
 \subsection{Arrays}
 
-Array brackets must show up after the type, not the variable name. The
-following example shows the usage of arrays in mbeddr C, which also supports
-multi-dimensional arrays. Their usage is equivalent to regular C.
+Array brackets must show up after the type, not the variable name. The following
+example shows the usage of arrays in mbeddr C, incl. multi-dimensional arrays.
+Their usage is equivalent to regular C.
 
 
 \begin{code}
-module ArrayApplication from HelloWorld.Arrays imports nothing { 
+module ArrayApplication imports nothing { 
    
   exported test case arrayTest { 
     int32_t[3] array = {1, 2, 3}; 
@@ -714,7 +606,7 @@ module ArrayApplication from HelloWorld.Arrays imports nothing {
      
     int8_t[2][2] array2 = {{1, 2}, {3, 4}}; 
     assert(1) array2[1][1] == 4; 
-  } arrayTest(test case) 
+  }  
 }
 \end{code}
 
@@ -722,16 +614,15 @@ module ArrayApplication from HelloWorld.Arrays imports nothing {
 
 \subsection{Reporting}
 
-Reporting or logging is provided as a special concept. It's designed as a
+Reporting (or logging) is provided as a special concept. It's designed as a
 platform-independent reporting system. With the current generator and the
 \ic{desktop} setting in the build configuration, \ic{report} statements are
 generated into a \ic{printf}. For other target platforms, other translations
 will be supported in the future, for example, by storing the message into some
 kind of error memory.
 
-
 If you want to use reporting in your module, you first have to define a
-\ic{message list } in a module. Inside, you can add \ic{MessageDefinition}s with
+\ic{message list} in a module. Inside, you can add \ic{MessageDefinition}s with
 three different severities: \ic{ERROR} (default), \ic{INFO} and \ic{WARN}. 
 
 Every message definition has a name (acts as an identifier to reference a
@@ -745,7 +636,7 @@ disabled; use the corresponding intentions on the messages to enable/disable
 each message).
 
 \begin{code}
-module Reporting from HelloWorld.Reporting imports nothing { 
+module Reporting imports nothing { 
    
   message list demo { 
     INFO programStarted() active: Program has just started running 
@@ -757,7 +648,7 @@ module Reporting from HelloWorld.Reporting imports nothing {
     report(0) demo.programStarted();
     report(1) demo.noArgumentPassedIn(argc) on argc == 0; 
     return 0; 
-  } main (function) 
+  } 
 }
 \end{code}
  
@@ -778,30 +669,11 @@ At this point we are not able to write inline assembler. We will enable this
 feature in the future.
 
 
+\subsection{Comments}
 
-
-
-\paragraph{Documentation} Many program elements can be documented. Examples
-include statements, functions, global variables or structs. A
-documentation is basically free text associated with a program element. 
-
-We distinguish documentation from commenting out code (explained below \todo). A
-documentation is shown as a grey comment above the commented element (the
-documentation is really attached to the element, and not just written into a
-line above it --- a subtle but important difference!)
-
-
-\begin{center} 
-  \includegraphics[width=9cm]{figures/core/documentation.jpg}
-\end{center}
-
-Documentation can be added using the \emph{Add Documentation} intention, or by
-using \keystroke{Ctrl-Alt-D} on the respective element.
-
-Note that comments are only shown if they are turned on. You can use the context
-menu on any program element and select $Toggle Docs$ to enable/disable display
-of comments. As soon as a comment is added, comment display is automatically
-turned on.
+In mbeddr we distinguish between commenting out code and adding documentation.
+The former retains the AST structure of code, but wraps it in a comment. The
+latter supports adding prose text to program elements.
 
 
 \paragraph{Commenting out Code} Code that is commented out retains its syntax
@@ -824,13 +696,64 @@ refactorings may affect the code. We are not sure if this is a desirable feature
 and we are looking for your feedback. Of course, the code is not executed. All
 commented program elements are removed during code generation.
 
-\greyboxnote{The current implementation of comments is still a little bit of a
-hack since we are waiting for some direct support by MPS. For example, errors
-should not be shown in commented code, and we are sure other quirks will arise
-as we continue using mbeddr.}
-
 Not all program elements can be commented out (since special support by the
 language is necessary to make something commentable), only concepts that
 implement \ic{ICommentable} can be commented. At this time, this is all
 statements and module contents.
+
+
+
+\paragraph{Documentation} mbeddr supports comments. There are several kinds of
+comments that can be used: single line statement comments, multi-line statement
+comments and element documentations.
+
+Single line statement comments are comments that can be used in statement
+context. For example, in a function body, you can type \ic{//} and fill in
+arbitrary text behind. One line only! The following shows as simple comment.
+
+\begin{center} 
+  \includegraphics[scale=0.5]{figures/core/onelinecomment.png}
+\end{center}
+
+A multi-line comment statement can be created by typing \ic{/*} in statement
+context. It supports multiple lines. However, since there is no wrapping over
+into the next line, editing can be cumbersome. To solve this problem you can 
+press \ic{Ctrl-A} anywhere in the multi-line comment to open a dialog with a
+regular text area. You can edit the text in this text area and when you close it
+with \ic{OK} the text is transferred back into the actual comment.
+
+\begin{center} 
+  \includegraphics[scale=0.5]{figures/core/multilinecomment.png}
+\end{center}
+
+You can also press \ic{Ctrl-Y} on a multi-line comment to automatically
+rearrange the line contents.
+
+The two statement comments discussed above 
+
+
+
+
+Many program elements can be documented. Examples
+include statements, functions, global variables or structs. A
+documentation is basically free text associated with a program element. 
+
+We distinguish documentation from commenting out code (explained below \todo). A
+documentation is shown as a grey comment above the commented element (the
+documentation is really attached to the element, and not just written into a
+line above it --- a subtle but important difference!)
+
+
+\begin{center} 
+  \includegraphics[width=9cm]{figures/core/documentation.jpg}
+\end{center}
+
+Documentation can be added using the \emph{Add Documentation} intention, or by
+using \keystroke{Ctrl-Alt-D} on the respective element.
+
+Note that comments are only shown if they are turned on. You can use the context
+menu on any program element and select $Toggle Docs$ to enable/disable display
+of comments. As soon as a comment is added, comment display is automatically
+turned on.
+
 
