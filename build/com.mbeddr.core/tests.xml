@@ -112,31 +112,6 @@
       <zipfileset dir="${mbeddr.core}/tests/aLibrary/models" includes="**/*.mps, **/*.metadata, **/*.history" prefix="module/models" />
       <zipfileset dir="${mbeddr.core}/tests/aLibrary" includes="**/*.mps, **/*.metadata, **/*.history" prefix="module/" />
     </jar>
-    <mkdir dir="${build.tmp}/default/test.debugger.cdt.jar" />
-    <mkdir dir="${build.tmp}/default/test.debugger.cdt.jar/META-INF" />
-    <echoxml file="${build.tmp}/default/test.debugger.cdt.jar/META-INF/module.xml">
-      <module namespace="test.debugger.cdt" type="solution" uuid="1c78eae5-6fae-4ae8-a6f2-8a34ea9ab06f">
-        <dependencies>
-          <module ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" />
-          <module ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" />
-          <module ref="4c6a28d1-2c60-478d-b36e-db9b3cbb21fb(closures.runtime)" />
-          <module ref="9b80526e-f0bf-4992-bdf5-cee39c1833f3(collections.runtime)" />
-          <module ref="83f155ff-422c-4b5a-a2f2-b459302dd215(jetbrains.mps.baseLanguage.unitTest.libs)" />
-          <module ref="707c4fde-f79a-44b5-b3d7-b5cef8844ccf(jetbrains.mps.lang.test.runtime)" />
-        </dependencies>
-        <sources jar="test.debugger.cdt-src.jar" descriptor="cdt.msd" />
-      </module>
-    </echoxml>
-    <jar destfile="${build.tmp}/default/core.dev.zip/mbeddr.core.tests/languages/core.tests/test.debugger.cdt.jar">
-      <fileset dir="${build.tmp}/java/out/test.debugger.cdt" />
-      <fileset dir="${mbeddr.core}/tests/test.debugger.cdt" includes="icons/**, resources/**" />
-      <fileset dir="${build.tmp}/default/test.debugger.cdt.jar" />
-    </jar>
-    <jar destfile="${build.tmp}/default/core.dev.zip/mbeddr.core.tests/languages/core.tests/test.debugger.cdt-src.jar">
-      <fileset dir="${mbeddr.core}/tests/test.debugger.cdt/source_gen" includes="**/*.java" />
-      <zipfileset file="${mbeddr.core}/tests/test.debugger.cdt/cdt.msd" prefix="module" />
-      <zipfileset dir="${mbeddr.core}/tests/test.debugger.cdt/models" includes="**/*.mps, **/*.metadata, **/*.history" prefix="module/models" />
-    </jar>
     <mkdir dir="${build.tmp}/default/test.ex.core.jar" />
     <mkdir dir="${build.tmp}/default/test.ex.core.jar/META-INF" />
     <echoxml file="${build.tmp}/default/test.ex.core.jar/META-INF/module.xml">
@@ -159,32 +134,6 @@
       <fileset dir="${mbeddr.core}/tests/test.ex.core/source_gen" includes="**/*.java" />
       <zipfileset file="${mbeddr.core}/tests/test.ex.core/core.msd" prefix="module" />
       <zipfileset dir="${mbeddr.core}/tests/test.ex.core" includes="**/*.mps, **/*.metadata, **/*.history" prefix="module/" />
-    </jar>
-    <mkdir dir="${build.tmp}/default/test.cstub.core.jar" />
-    <mkdir dir="${build.tmp}/default/test.cstub.core.jar/META-INF" />
-    <echoxml file="${build.tmp}/default/test.cstub.core.jar/META-INF/module.xml">
-      <module namespace="test.cstub.core" type="solution" uuid="28b0fb17-21d9-440a-bb1c-b10da1784dee">
-        <dependencies>
-          <module ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" />
-          <module ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" />
-          <module ref="4c6a28d1-2c60-478d-b36e-db9b3cbb21fb(closures.runtime)" />
-          <module ref="9b80526e-f0bf-4992-bdf5-cee39c1833f3(collections.runtime)" />
-          <module ref="83f155ff-422c-4b5a-a2f2-b459302dd215(jetbrains.mps.baseLanguage.unitTest.libs)" />
-          <module ref="707c4fde-f79a-44b5-b3d7-b5cef8844ccf(jetbrains.mps.lang.test.runtime)" />
-        </dependencies>
-        <sources jar="test.cstub.core-src.jar" descriptor="core.msd" />
-      </module>
-    </echoxml>
-    <jar destfile="${build.tmp}/default/core.dev.zip/mbeddr.core.tests/languages/core.tests/test.cstub.core.jar">
-      <fileset dir="${build.tmp}/java/out/test.cstub.core" />
-      <fileset dir="${mbeddr.core}/tests/test.cstub.core" includes="icons/**, resources/**" />
-      <fileset dir="${build.tmp}/default/test.cstub.core.jar" />
-    </jar>
-    <jar destfile="${build.tmp}/default/core.dev.zip/mbeddr.core.tests/languages/core.tests/test.cstub.core-src.jar">
-      <fileset dir="${mbeddr.core}/tests/test.cstub.core/source_gen" includes="**/*.java" />
-      <zipfileset file="${mbeddr.core}/tests/test.cstub.core/core.msd" prefix="module" />
-      <zipfileset dir="${mbeddr.core}/tests/test.cstub.core" includes="**/*.mps, **/*.metadata, **/*.history" prefix="module/" />
-      <zipfileset dir="${mbeddr.core}/tests/test.cstub.core/models" includes="**/*.mps, **/*.metadata, **/*.history" prefix="module/models" />
     </jar>
     <mkdir dir="${build.tmp}/default/test.debugger.core.jar" />
     <mkdir dir="${build.tmp}/default/test.debugger.core.jar/META-INF" />
@@ -286,7 +235,7 @@
     <delete dir="${build.layout}" />
   </target>
   
-  <target name="compileJava" depends="java.compile.test.ts.core, java.compile.test.cstub.testheader, java.compile.aLibrary, java.compile.test.debugger.cdt, java.compile.test.ex.core, java.compile.test.cstub.core, java.compile.test.debugger.core, java.compile.test.ex.errorreporting, java.compile.test.ex.core.libs" />
+  <target name="compileJava" depends="java.compile.test.ts.core, java.compile.test.cstub.testheader, java.compile.aLibrary, java.compile.test.ex.core, java.compile.test.debugger.core, java.compile.test.ex.errorreporting, java.compile.test.ex.core.libs" />
   
   <target name="processResources" />
   
@@ -405,60 +354,6 @@
     </javac>
   </target>
   
-  <target name="java.compile.test.debugger.cdt" depends="java.compile.test.debugger.core, fetchDependencies">
-    <mkdir dir="${build.tmp}/java/out/test.debugger.cdt" />
-    <javac destdir="${build.tmp}/java/out/test.debugger.cdt" fork="true" includeantruntime="false">
-      <compilerarg value="-Xlint:none" />
-      <src>
-        <path location="${mbeddr.core}/tests/test.debugger.cdt/source_gen" />
-      </src>
-      <classpath>
-        <fileset file="${artifacts.buildMPS}/lib/mps-closures.jar" />
-        <fileset file="${artifacts.buildMPS}/lib/mps-collections.jar" />
-        <fileset file="${artifacts.buildMPS}/lib/mps-tuples.jar" />
-        <fileset file="${artifacts.buildMPS}/lib/mps-core.jar" />
-        <fileset file="${artifacts.buildMPS}/lib/mps-platform.jar" />
-        <fileset file="${artifacts.buildMPS}/lib/mps-editor-api.jar" />
-        <fileset file="${artifacts.buildMPS}/lib/mps-editor.jar" />
-        <fileset file="${artifacts.buildMPS}/lib/mps-workbench.jar" />
-        <fileset file="${artifacts.buildMPS}/plugins/mps-debugger-api/lib/debugger-api.jar" />
-        <fileset file="${artifacts.buildMPS}/lib/mps-test.jar" />
-        <fileset file="${artifacts.buildMPS}/lib/mps-backend.jar" />
-        <pathelement path="${build.tmp}/java/out/test.debugger.core" />
-        <fileset file="${mbeddr.core}/tests/test.debugger.core/libs/mockito-all-1.9.0.jar" />
-        <fileset file="${build.tmp}/deps/core.dev/core.dev.zip/lib/cdt2.jar" />
-        <fileset file="${build.tmp}/deps/core.dev/core.dev.zip/lib/org.eclipse.core.runtime_3.7.0.v20110110.jar" />
-        <fileset file="${build.tmp}/deps/core.dev/core.dev.zip/lib/org.eclipse.equinox.common_3.6.0.v20110523.jar" />
-        <fileset file="${build.tmp}/deps/core.dev/core.dev.zip/lib/org.eclipse.osgi_3.7.1.R37x_v20110808-1106.jar" />
-        <fileset file="${build.tmp}/deps/core.dev/core.dev.zip/lib/org.hamcrest.core_1.1.0.v20090501071000.jar" />
-        <fileset file="${artifacts.buildMPS}/languages/baseLanguage/jetbrains.mps.baseLanguage.unitTest.libs/bsh-core-2.0b4.jar" />
-        <fileset file="${artifacts.buildMPS}/languages/baseLanguage/jetbrains.mps.baseLanguage.unitTest.libs/cglib-nodep-2.1_3.jar" />
-        <fileset file="${artifacts.buildMPS}/languages/baseLanguage/jetbrains.mps.baseLanguage.unitTest.libs/hamcrest-core-1.1.jar" />
-        <fileset file="${artifacts.buildMPS}/languages/baseLanguage/jetbrains.mps.baseLanguage.unitTest.libs/hamcrest-library-1.1.jar" />
-        <fileset file="${artifacts.buildMPS}/languages/baseLanguage/jetbrains.mps.baseLanguage.unitTest.libs/jmock-2.5.1.jar" />
-        <fileset file="${artifacts.buildMPS}/languages/baseLanguage/jetbrains.mps.baseLanguage.unitTest.libs/jmock-junit3-2.5.1.jar" />
-        <fileset file="${artifacts.buildMPS}/languages/baseLanguage/jetbrains.mps.baseLanguage.unitTest.libs/jmock-junit4-2.5.1.jar" />
-        <fileset file="${artifacts.buildMPS}/languages/baseLanguage/jetbrains.mps.baseLanguage.unitTest.libs/objenesis-1.0.jar" />
-        <fileset file="${artifacts.buildMPS}/lib/ant/lib/ant.jar" />
-        <fileset file="${artifacts.buildMPS}/lib/junit-4.10.jar" />
-        <fileset file="${artifacts.buildMPS}/lib/org.eclipse.jdt.core_3.5.2.v_981_R35x.jar" />
-        <fileset file="${artifacts.buildMPS}/lib/guava-11.0.1.jar" />
-        <fileset file="${artifacts.buildMPS}/lib/jdom.jar" />
-        <fileset file="${artifacts.buildMPS}/lib/log4j.jar" />
-        <fileset file="${artifacts.buildMPS}/lib/trove4j.jar" />
-        <fileset file="${artifacts.buildMPS}/lib/xstream.jar" />
-        <fileset file="${artifacts.buildMPS}/lib/annotations.jar" />
-        <fileset file="${artifacts.buildMPS}/lib/commons-lang-2.4.jar" />
-        <fileset file="${artifacts.buildMPS}/lib/commons-logging-1.1.1.jar" />
-        <fileset file="${artifacts.buildMPS}/lib/asm.jar" />
-        <fileset file="${artifacts.buildMPS}/lib/diffutils-1.2.1.jar" />
-        <fileset dir="${artifacts.buildMPS}/lib" includes="*.jar" />
-        <fileset dir="${artifacts.buildMPS}/lib/ant/lib" includes="*.jar" />
-        <fileset file="${artifacts.buildMPS}/languages/languageDesign/jetbrains.mps.lang.test.runtime.jar" />
-      </classpath>
-    </javac>
-  </target>
-  
   <target name="java.compile.test.ex.core" depends="fetchDependencies">
     <mkdir dir="${build.tmp}/java/out/test.ex.core" />
     <javac destdir="${build.tmp}/java/out/test.ex.core" fork="true" includeantruntime="false">
@@ -480,82 +375,6 @@
         <fileset file="${artifacts.buildMPS}/lib/junit-4.10.jar" />
         <fileset file="${build.tmp}/deps/core.dev/core.dev.zip/mbeddr.core/languages/core.dev/com.mbeddr.core.debug.spawner.jar" />
         <fileset file="${build.tmp}/deps/core.dev/core.dev.zip/mbeddr.core/languages/core.dev/com.mbeddr.core.modules.runtime.jar" />
-      </classpath>
-    </javac>
-  </target>
-  
-  <target name="java.compile.test.cstub.core" depends="fetchDependencies">
-    <mkdir dir="${build.tmp}/java/out/test.cstub.core" />
-    <javac destdir="${build.tmp}/java/out/test.cstub.core" fork="true" includeantruntime="false">
-      <compilerarg value="-Xlint:none" />
-      <src>
-        <path location="${mbeddr.core}/tests/test.cstub.core/source_gen" />
-      </src>
-      <classpath>
-        <fileset file="${artifacts.buildMPS}/lib/mps-closures.jar" />
-        <fileset file="${artifacts.buildMPS}/lib/mps-collections.jar" />
-        <fileset file="${artifacts.buildMPS}/lib/mps-tuples.jar" />
-        <fileset file="${artifacts.buildMPS}/lib/mps-core.jar" />
-        <fileset file="${artifacts.buildMPS}/lib/mps-platform.jar" />
-        <fileset file="${artifacts.buildMPS}/lib/mps-editor-api.jar" />
-        <fileset file="${artifacts.buildMPS}/lib/mps-editor.jar" />
-        <fileset file="${artifacts.buildMPS}/lib/mps-test.jar" />
-        <fileset file="${artifacts.buildMPS}/lib/mps-backend.jar" />
-        <fileset file="${build.tmp}/deps/core.dev/core.dev.zip/lib/cdt2.jar" />
-        <fileset file="${build.tmp}/deps/core.dev/core.dev.zip/lib/org.eclipse.core.runtime_3.7.0.v20110110.jar" />
-        <fileset file="${build.tmp}/deps/core.dev/core.dev.zip/lib/org.eclipse.equinox.common_3.6.0.v20110523.jar" />
-        <fileset file="${build.tmp}/deps/core.dev/core.dev.zip/lib/org.eclipse.osgi_3.7.1.R37x_v20110808-1106.jar" />
-        <fileset file="${build.tmp}/deps/core.dev/core.dev.zip/lib/org.hamcrest.core_1.1.0.v20090501071000.jar" />
-        <fileset file="${build.tmp}/deps/mpsutil/mpsutil.zip/lib/antlr-2.7.7.jar" />
-        <fileset file="${build.tmp}/deps/mpsutil/mpsutil.zip/lib/commons-io-2.1.jar" />
-        <fileset file="${build.tmp}/deps/mpsutil/mpsutil.zip/lib/timingframework-1.0.jar" />
-        <fileset file="${build.tmp}/deps/mpsutil/mpsutil.zip/lib/zgrviewer-formps-1.0.0-SNAPSHOT.jar" />
-        <fileset file="${build.tmp}/deps/mpsutil/mpsutil.zip/lib/zvtm-core-formps-1.0.0-SNAPSHOT.jar" />
-        <fileset file="${build.tmp}/deps/mpsutil/mpsutil.zip/lib/zvtm-svg-0.2.1-SNAPSHOT.jar" />
-        <fileset file="${artifacts.buildMPS}/languages/baseLanguage/jetbrains.mps.baseLanguage.unitTest.libs/bsh-core-2.0b4.jar" />
-        <fileset file="${artifacts.buildMPS}/languages/baseLanguage/jetbrains.mps.baseLanguage.unitTest.libs/cglib-nodep-2.1_3.jar" />
-        <fileset file="${artifacts.buildMPS}/languages/baseLanguage/jetbrains.mps.baseLanguage.unitTest.libs/hamcrest-core-1.1.jar" />
-        <fileset file="${artifacts.buildMPS}/languages/baseLanguage/jetbrains.mps.baseLanguage.unitTest.libs/hamcrest-library-1.1.jar" />
-        <fileset file="${artifacts.buildMPS}/languages/baseLanguage/jetbrains.mps.baseLanguage.unitTest.libs/jmock-2.5.1.jar" />
-        <fileset file="${artifacts.buildMPS}/languages/baseLanguage/jetbrains.mps.baseLanguage.unitTest.libs/jmock-junit3-2.5.1.jar" />
-        <fileset file="${artifacts.buildMPS}/languages/baseLanguage/jetbrains.mps.baseLanguage.unitTest.libs/jmock-junit4-2.5.1.jar" />
-        <fileset file="${artifacts.buildMPS}/languages/baseLanguage/jetbrains.mps.baseLanguage.unitTest.libs/objenesis-1.0.jar" />
-        <fileset file="${artifacts.buildMPS}/lib/ant/lib/ant.jar" />
-        <fileset file="${artifacts.buildMPS}/lib/junit-4.10.jar" />
-        <fileset file="${artifacts.buildMPS}/lib/org.eclipse.jdt.core_3.5.2.v_981_R35x.jar" />
-        <fileset file="${artifacts.buildMPS}/lib/guava-11.0.1.jar" />
-        <fileset file="${artifacts.buildMPS}/lib/jdom.jar" />
-        <fileset file="${artifacts.buildMPS}/lib/log4j.jar" />
-        <fileset file="${artifacts.buildMPS}/lib/trove4j.jar" />
-        <fileset file="${artifacts.buildMPS}/lib/xstream.jar" />
-        <fileset file="${artifacts.buildMPS}/lib/annotations.jar" />
-        <fileset file="${artifacts.buildMPS}/lib/commons-lang-2.4.jar" />
-        <fileset file="${artifacts.buildMPS}/lib/commons-logging-1.1.1.jar" />
-        <fileset file="${artifacts.buildMPS}/lib/asm.jar" />
-        <fileset file="${artifacts.buildMPS}/lib/diffutils-1.2.1.jar" />
-        <fileset dir="${artifacts.buildMPS}/lib" includes="*.jar" />
-        <fileset dir="${artifacts.buildMPS}/lib/ant/lib" includes="*.jar" />
-        <fileset file="${build.tmp}/deps/core.dev/core.dev.zip/mbeddr.core/languages/core.dev/com.mbeddr.core.base.jar" />
-        <fileset file="${build.tmp}/deps/core.dev/core.dev.zip/mbeddr.core/languages/core.dev/com.mbeddr.core.buildconfig.jar" />
-        <fileset file="${build.tmp}/deps/core.dev/core.dev.zip/mbeddr.core/languages/core.dev/com.mbeddr.core.cstubs.jar" />
-        <fileset file="${build.tmp}/deps/core.dev/core.dev.zip/mbeddr.core/languages/core.dev/com.mbeddr.core.debug.jar" />
-        <fileset file="${build.tmp}/deps/core.dev/core.dev.zip/mbeddr.core/languages/core.dev/com.mbeddr.core.debug.spawner.jar" />
-        <fileset file="${build.tmp}/deps/core.dev/core.dev.zip/mbeddr.core/languages/core.dev/com.mbeddr.core.embedded.jar" />
-        <fileset file="${build.tmp}/deps/core.dev/core.dev.zip/mbeddr.core/languages/core.dev/com.mbeddr.core.expressions.jar" />
-        <fileset file="${build.tmp}/deps/core.dev/core.dev.zip/mbeddr.core/languages/core.dev/com.mbeddr.core.make.jar" />
-        <fileset file="${build.tmp}/deps/core.dev/core.dev.zip/mbeddr.core/languages/core.dev/com.mbeddr.core.modules.jar" />
-        <fileset file="${build.tmp}/deps/core.dev/core.dev.zip/mbeddr.core/languages/core.dev/com.mbeddr.core.modules.runtime.jar" />
-        <fileset file="${build.tmp}/deps/core.dev/core.dev.zip/mbeddr.core/languages/core.dev/com.mbeddr.core.pointers.jar" />
-        <fileset file="${build.tmp}/deps/core.dev/core.dev.zip/mbeddr.core/languages/core.dev/com.mbeddr.core.statements.jar" />
-        <fileset file="${build.tmp}/deps/core.dev/core.dev.zip/mbeddr.core/languages/core.dev/com.mbeddr.core.udt.jar" />
-        <fileset file="${build.tmp}/deps/core.dev/core.dev.zip/mbeddr.core/languages/core.dev/com.mbeddr.core.util.jar" />
-        <fileset file="${build.tmp}/deps/mpsutil/mpsutil.zip/mpsutil/languages/mpsutil/com.mbeddr.mpsutil.bldoc.jar" />
-        <fileset file="${build.tmp}/deps/mpsutil/mpsutil.zip/mpsutil/languages/mpsutil/com.mbeddr.mpsutil.graph.jar" />
-        <fileset file="${build.tmp}/deps/mpsutil/mpsutil.zip/mpsutil/languages/mpsutil/com.mbeddr.mpsutil.graphview.jar" />
-        <fileset file="${build.tmp}/deps/mpsutil/mpsutil.zip/mpsutil/languages/mpsutil/com.mbeddr.mpsutil.langdepdiag.jar" />
-        <fileset file="${artifacts.buildMPS}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
-        <fileset file="${artifacts.buildMPS}/languages/languageDesign/jetbrains.mps.lang.test.runtime.jar" />
-        <fileset file="${artifacts.buildMPS}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
       </classpath>
     </javac>
   </target>
