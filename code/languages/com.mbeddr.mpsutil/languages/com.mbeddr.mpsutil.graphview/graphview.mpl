@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<language namespace="com.mbeddr.mpsutil.graphview" uuid="ac3c3af3-071f-47d4-8ed9-dd9e752fdfdf" doNotGenerateAdapters="false">
+<language namespace="com.mbeddr.mpsutil.graphview" uuid="ac3c3af3-071f-47d4-8ed9-dd9e752fdfdf" doNotGenerateAdapters="true">
   <models>
     <modelRoot path="${language_descriptor}/languageModels" />
     <modelRoot path="${language_descriptor}/lib/antlr-2.7.7.jar">
