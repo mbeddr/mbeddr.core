@@ -766,7 +766,16 @@ what has been specified by \ic{category} in the \ic{TODO(category)} format.
 
 
 
+\subsection{Function Modifiers}
 
+In C, functions and variables often have modifiers that are either "processed
+away" by macros or can be understood by some proprietary compiler. In any case,
+one has to be able to mark up functions and variables with such modifiers. In
+mbeddr this is possible by by selecting the \ic{Add Modifier} intention on
+functions and global variables.
+
+To create a new kind of modifier, you have to create a concept that extends
+\ic{Prefix}.
 
 
 
