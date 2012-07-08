@@ -37,7 +37,6 @@ The first line specifies the project whose contents should be generated. We
 point to the \ic{HelloWorld.mpr} project in our case. If you only want to
 generate parts of a project (only some solutions or models), take a look at this
 article: \ic{http://confluence.jetbrains.net/display/MPSD2/HowTo+--+MPS+and+ant}
-
 The second line points to the directory that contains all the languages used by
 the to-be-generated project. 
 
@@ -45,7 +44,7 @@ To make it work, you also have to provide a \ic{build.properties} file to
 define two path variables: 
 
 \begin{code}
-mps.home=/some/path/to/MPS2.0/
+mps.home=/some/path/to/MPS2.5/
 mbeddr.home=/the/path/to/mbeddr/
 \end{code}
 
@@ -57,19 +56,22 @@ having a bigger program won't make much of a difference. The output should look
 like this:
 
 \begin{code}
-L:\lwes-assembla\mbeddr\code\applications\HelloWorld>ant
-Buildfile: build.xml
+~/Documents/mbeddr/mbeddr.core/code/applications/HelloWorld (master)$ ant 
+Buildfile: /Users/markusvoelter/Documents/mbeddr/mbeddr.core/code/applications/HelloWorld/build.xml
+
+init:
+   [delete] Deleting directory /Users/markusvoelter/temp/mpscache
+    [mkdir] Created dir: /Users/markusvoelter/temp/mpscache
 
 build:
-[mps.generate] Build number MPS Build.MPS-20.7460
-[mps.generate] Loaded project MPSProject file: L:\lwes-assembla\mbeddr\code\applications\HelloWorld\HelloWorld.mpr
-[mps.generate] Per-root generation set to false
+[mps.generate] Loaded project MPS Project [file=.../HelloWorld/HelloWorld.mpr]
+[mps.generate] Generating in strict mode, parallel generation = on
 [mps.generate] Generating:
-[mps.generate]     MPSProject file: L:\lwes-assembla\mbeddr\code\applications\HelloWorld\HelloWorld.mpr
+[mps.generate]     MPS Project [file=.../HelloWorld/HelloWorld.mpr]
 
 BUILD SUCCESSFUL
-Total time: 57 seconds
-\end{code}
+Total time: 41 seconds
+\end{code}\ignore{$}
 
 You can now run \ic{make} to build the executable. 
 
@@ -108,7 +110,7 @@ an entry such as this one:
 \begin{code}
 [merge "mps"]
 	name = MPS merge driver
-	driver = "\"/Users/markus/.MPS20/config/mps-merger.sh\" %O %A %B %L"
+	driver = "\"/Users/markus/.MPS25/config/mps-merger.sh\" %O %A %B %L"
 \end{code}
 
 
@@ -303,14 +305,16 @@ comment such as "initial version of myFeature finished".
 
 
 
-\subsection{The Graph Viewer}
+\section{The Graph Viewer}
 
-The graph viewer allows to render all graphviz files in the current solution. It
-simply scans the \ic{source\_gen} directory recursively for \ic{.gv} files and
-shows them in the tree. Underscores in the file name are used as hierarchies in
-the tree. Users can create their own transformation to graphviz graphs, and they
-will be shown in the tree. A special \ic{graph} language is available for this
-transformation (will be explained later).
+mbeddr ships with a graph viewer embedded into MPS. It can be used to visualize
+graphviz files. The graph viewer allows to render all graphviz files in the
+current solution. It simply scans the \ic{source\_gen} directory recursively for
+\ic{.gv} files and shows them in the tree. Underscores in the file name are used
+as hierarchies in the tree. Users can create their own transformation to
+graphviz graphs, and they will be shown in the tree. A special \ic{graph}
+language is available for this transformation (explained in
+\sect{generatinggraphs}).
 
 By default, each build configuration results in a diagram that shows the
 dependencies between the modules. To see it in the graph viewer, 
