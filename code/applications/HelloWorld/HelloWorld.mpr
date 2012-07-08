@@ -7,6 +7,7 @@
   <component name="MPSProject">
     <projectModules>
       <modulePath path="${project}/solutions/Debugger/Debugger.msd" folder="" />
+      <modulePath path="${project}/solutions/HeaderImport/HeaderImport.msd" folder="" />
       <modulePath path="${project}/solutions/HelloWorld/HelloWorld.msd" folder="" />
     </projectModules>
     <genConfs />
