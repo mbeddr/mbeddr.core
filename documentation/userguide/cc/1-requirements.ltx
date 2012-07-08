@@ -95,6 +95,33 @@ example.
 \caption{Code with requirements traces}
 \end{figure}
 
+
+
+\subsection{Filtering and Summarizing Requirements}
+
+It is possible to filter requirements when viewing them in a requirements
+module. At the top right of a requirements module you can select from a set of
+filters, including filtering by \ic{summary}, \ic{name}, or \ic{trace status}.
+Filters are and'ed together by default. However, explicit \ic{and} and \ic{or}
+filters are available as well. New filters (which may filter on project
+specific additional data) can be created by extending the
+\ic{RequirementsFilter} concept and implementing its \ic{matches} behavior
+method. As an example, here is the code for the \ic{name contains substring}
+filter:
+
+\begin{code}
+public boolean matches(node<Requirement> r) 
+  overrides RequirementsFilter.matches { 
+  if (this.substring == null || this.substring.equals("")) { return true; } 
+  r.name.contains(this.substring); 
+}                                                                                                                                                                                                        
+\end{code}
+
+
+
+
+
+
 \subsection{Tracing}
 
 Tracing establishes links between implementation artifacts (i.e. arbitrary MPS
