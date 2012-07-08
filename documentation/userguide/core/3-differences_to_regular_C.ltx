@@ -723,37 +723,57 @@ regular text area. You can edit the text in this text area and when you close it
 with \ic{OK} the text is transferred back into the actual comment.
 
 \begin{center} 
-  \includegraphics[scale=0.5]{figures/core/multilinecomment.png}
+  \includegraphics[scale=0.35]{figures/core/multilinecomment.png}
 \end{center}
 
 You can also press \ic{Ctrl-Y} on a multi-line comment to automatically
 rearrange the line contents.
 
-The two statement comments discussed above 
+The two statement comments discussed above have two important limitations.
+The first one is that they are standalone statements and not connected to any
+program element (other than through their position in the code). Second, they
+can only be used in statement context. A better solution in many cases is to use
+the element documentation. It is semantically attached to a program element. To
+create one, either press \ic{Ctrl-A} or use the \ic{Add Documentation}
+intention. It looks just like a multi-line comment (and has the same edit
+dialog for convenient editing), but it is attached to (and hence moves around
+with) a program element. Currently, all statements and module contents can be
+annotated with an element documentation.
 
-
-
-
-Many program elements can be documented. Examples
-include statements, functions, global variables or structs. A
-documentation is basically free text associated with a program element. 
-
-We distinguish documentation from commenting out code (explained below \todo). A
-documentation is shown as a grey comment above the commented element (the
-documentation is really attached to the element, and not just written into a
-line above it --- a subtle but important difference!)
+\paragraph{TODOs} mbeddr comes with a special view for collecting and showing
+TODOs in comments. Anywhere within the comments discussed above, you can write
+\ic{TODO and then some text} or \ic{TODO(category) and then some text} (see
+next screenshot):
 
 
 \begin{center} 
-  \includegraphics[width=9cm]{figures/core/documentation.jpg}
+  \includegraphics[scale=0.35]{figures/core/todoexamplecode.png}
 \end{center}
 
-Documentation can be added using the \emph{Add Documentation} intention, or by
-using \keystroke{Ctrl-Alt-D} on the respective element.
+To find the TODOs anywhere in your project, use the $Tools -> mbeddr TODO$. It
+shows the TODOs in the form of a Find Usages dialog.
 
-Note that comments are only shown if they are turned on. You can use the context
-menu on any program element and select $Toggle Docs$ to enable/disable display
-of comments. As soon as a comment is added, comment display is automatically
-turned on.
+\begin{center} 
+  \includegraphics[scale=0.35]{figures/core/todoview.png}
+\end{center}
+
+The view has many view options (try them!). The most important one is the top
+left one. Pressing it enables categories. In this case the TODOs are grouped by
+what has been specified by \ic{category} in the \ic{TODO(category)} format.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
