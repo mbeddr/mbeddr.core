@@ -1,4 +1,4 @@
-\section{Differences to regular C}
+\section{mbeddr core: Differences to regular C}
 
 This section describes the differences between mbeddr C and regular C99.
 All examples shown in this chapter can be found in the \emph{HelloWorld} project
@@ -272,8 +272,6 @@ void moreStuff(int8_t x, int8_t y, int8_t z) {
 \end{code}
  
 
-\todo{HERE}
-
 \subsection{Primitive Numeric Datatypes}
 \label{PrimitiveNumericDatatypes}
 
@@ -303,12 +301,19 @@ types:
 
 \begin{itemize}
 	\item \lcr{int8\_t} $\rightarrow$ \lcr{char}
+	\vspace{-4mm}
 	\item \lcr{int16\_t} $\rightarrow$ \lcr{short}
+	\vspace{-4mm}
 	\item \lcr{int32\_t} $\rightarrow$ \lcr{int}
+	\vspace{-4mm}
 	\item \lcr{int64\_t} $\rightarrow$ \lcr{long long}
+	\vspace{-4mm}
 	\item \lcr{uint8\_t} $\rightarrow$ \lcr{unsigned char}
+	\vspace{-4mm}
 	\item \lcr{uint16\_t} $\rightarrow$ \lcr{unsigned short}
+	\vspace{-4mm}
 	\item \lcr{uint32\_t} $\rightarrow$ \lcr{unsigned int}
+	\vspace{-4mm}
 	\item \lcr{uint64\_t} $\rightarrow$ \lcr{unsigned long long}
 \end{itemize}
 
@@ -316,7 +321,9 @@ types:
 can alsoi be speficied, e.g. if they differ from the IEEE754 sizes.
 \begin{itemize}
 	\item \lcr{float} $\rightarrow$ \lcr{32}
+	\vspace{-4mm}
 	\item \lcr{double} $\rightarrow$ \lcr{64}
+	\vspace{-4mm}
 	\item \lcr{long double} $\rightarrow$ \lcr{128}
 \end{itemize}
 
@@ -713,7 +720,7 @@ context. For example, in a function body, you can type \ic{//} and fill in
 arbitrary text behind. One line only! The following shows as simple comment.
 
 \begin{center} 
-  \includegraphics[scale=0.5]{figures/core/onelinecomment.png}
+  \includegraphics[scale=0.6]{figures/core/onelinecomment.png}
 \end{center}
 
 A multi-line comment statement can be created by typing \ic{/*} in statement
@@ -724,7 +731,7 @@ regular text area. You can edit the text in this text area and when you close it
 with \ic{OK} the text is transferred back into the actual comment.
 
 \begin{center} 
-  \includegraphics[scale=0.35]{figures/core/multilinecomment.png}
+  \includegraphics[scale=0.4]{figures/core/multilinecomment.png}
 \end{center}
 
 You can also press \ic{Ctrl-Y} on a multi-line comment to automatically
@@ -748,7 +755,7 @@ next screenshot):
 
 
 \begin{center} 
-  \includegraphics[scale=0.35]{figures/core/todoexamplecode.png}
+  \includegraphics[scale=0.4]{figures/core/todoexamplecode.png}
 \end{center}
 
 To find the TODOs anywhere in your project, use the $Tools -> mbeddr TODO$. It
