@@ -127,12 +127,46 @@ paragraph, except that the a regular expression can be used.
 
 \paragraph{Header Files}
 
-\todo{somebody explain please what this means.}
+\todo{somebody explain please what this does.}
 
 
 \subsection{Limitations}
 
 Importing header files is not as simple as it may seem (heard that before :-)?),
 and our current importer still has some limitations.
+
+\paragraph{\#ifdef Variability} At this point we cannot yet map product line
+variability expressed with \ic{\#ifdef}s onto the product line variability
+mechanism of mbeddr. Hence, as discussed above, \emph{only a particular variant}
+can be imported, which is why we have the \emph{Defined \#defines} section
+above.
+
+\greyboxnote{Note that we will be working on improving this situation.}
+
+\paragraph{Complex Expressions} We cannot parse complex expressions used in
+\ic{\#defines} at this point. Assume the following example:
+
+\begin{code} 
+#define SOMETHING 10 + SOME_OTHER_DEFINE + 3
+\end{code}
+
+Since we cannot parse such expressions, we represent them as an opaque string in
+the external module, like this:
+
+\begin{code}
+exported #define SOMETHING = (void) 10 + SOME_OTHER_DEFINE + 3 
+\end{code}
+
+Since we cannot parse the expression, MPS cannot calculate the type, so
+\ic{SOMETHING} is typed to be \ic{void}. Of course, if you reference 
+\ic{SOMETHING} from application code, the type check will fail (e.g. if you
+write \ic{SOMETHING + 3} it won't work since you cannot add \ic{void} to an
+integer). To solve this problem, you have to change the type manually in the
+imported external module:
+
+\begin{code}
+exported #define SOMETHING = (int8_t) 10 + SOME_OTHER_DEFINE + 3 
+\end{code}
+
 
 
