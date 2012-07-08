@@ -202,16 +202,16 @@
         </node>
         <node role="containerName" roleId="3ior.4380385936562148502" type="3ior.BuildStringNotEmpty" typeId="3ior.841011766566059607" id="8628756186118380503">
           <node role="parts" roleId="3ior.4903714810883783243" type="3ior.BuildTextStringPart" typeId="3ior.4903714810883702019" id="8628756186118380504">
-            <property name="text" nameId="3ior.4903714810883755350" value="mpsutil.zip" />
+            <property name="text" nameId="3ior.4903714810883755350" value="mbeddr.mpsutil.zip" />
           </node>
         </node>
       </node>
     </node>
     <node role="parts" roleId="3ior.7389400916848080626" type="kdzh.BuildMps_IdeaPlugin" typeId="kdzh.6592112598314498932" id="8628756186118380506">
-      <property name="id" nameId="kdzh.6592112598314498927" value="mpsutil" />
+      <property name="id" nameId="kdzh.6592112598314498927" value="mbeddr.mpsutil" />
       <node role="name" roleId="kdzh.6592112598314499021" type="3ior.BuildStringNotEmpty" typeId="3ior.841011766566059607" id="8628756186118380507">
         <node role="parts" roleId="3ior.4903714810883783243" type="3ior.BuildTextStringPart" typeId="3ior.4903714810883702019" id="8628756186118380508">
-          <property name="text" nameId="3ior.4903714810883755350" value="mpsutil" />
+          <property name="text" nameId="3ior.4903714810883755350" value="mbeddr.mpsutil" />
         </node>
       </node>
       <node role="version" roleId="kdzh.6592112598314498931" type="3ior.BuildStringNotEmpty" typeId="3ior.841011766566059607" id="8628756186118380509">
@@ -220,14 +220,14 @@
         </node>
       </node>
       <node role="content" roleId="kdzh.6592112598314499050" type="kdzh.BuildMps_IdeaPluginGroup" typeId="kdzh.6592112598314586625" id="8628756186118380511">
-        <link role="group" roleId="kdzh.6592112598314586626" targetNodeId="8628756186118380515" resolveInfo="mpsutil" />
+        <link role="group" roleId="kdzh.6592112598314586626" targetNodeId="8628756186118380515" resolveInfo="mbeddr.mpsutil" />
       </node>
       <node role="dependencies" roleId="kdzh.6592112598314499028" type="kdzh.BuildMps_IdeaPluginDependency" typeId="kdzh.6592112598314499027" id="8628756186118380512">
         <link role="target" roleId="kdzh.6592112598314499066" targetNodeId="ffeo.4973949960459588488" />
       </node>
       <node role="containerName" roleId="kdzh.6592112598314855574" type="3ior.BuildStringNotEmpty" typeId="3ior.841011766566059607" id="8628756186118380513">
         <node role="parts" roleId="3ior.4903714810883783243" type="3ior.BuildTextStringPart" typeId="3ior.4903714810883702019" id="8628756186118380514">
-          <property name="text" nameId="3ior.4903714810883755350" value="mpsutil" />
+          <property name="text" nameId="3ior.4903714810883755350" value="mbeddr.mpsutil" />
         </node>
       </node>
       <node role="vendor" roleId="kdzh.7832771629084912518" type="kdzh.BuildMps_IdeaPluginVendor" typeId="kdzh.7832771629084799699" id="8628756186118757183">
@@ -236,7 +236,7 @@
       </node>
     </node>
     <node role="parts" roleId="3ior.7389400916848080626" type="kdzh.BuildMps_Group" typeId="kdzh.1500819558095907805" id="8628756186118380515">
-      <property name="name" nameId="tpck.1169194664001" value="mpsutil" />
+      <property name="name" nameId="tpck.1169194664001" value="mbeddr.mpsutil" />
       <node role="modules" roleId="kdzh.1500819558095907806" type="kdzh.BuildMps_Solution" typeId="kdzh.3189788309731840247" id="8628756186118380516">
         <property name="compact" nameId="kdzh.8369506495128725901" value="true" />
         <property name="uuid" nameId="kdzh.322010710375892619" value="0f6d068f-2002-46b3-ba3b-8ad6bd39ae6e" />

@@ -222,10 +222,10 @@
   </target>
   
   <target name="fetchDependencies">
-    <mkdir dir="${build.tmp}/deps/core.dev/core.dev.zip" />
-    <unzip src="${artifacts.core.dev}/core.dev.zip" dest="${build.tmp}/deps/core.dev/core.dev.zip" />
-    <mkdir dir="${build.tmp}/deps/mpsutil/mpsutil.zip" />
-    <unzip src="${artifacts.mpsutil}/mpsutil.zip" dest="${build.tmp}/deps/mpsutil/mpsutil.zip" />
+    <mkdir dir="${build.tmp}/deps/core.dev/mbeddr.core.zip" />
+    <unzip src="${artifacts.core.dev}/mbeddr.core.zip" dest="${build.tmp}/deps/core.dev/mbeddr.core.zip" />
+    <mkdir dir="${build.tmp}/deps/mpsutil/mbeddr.mpsutil.zip" />
+    <unzip src="${artifacts.mpsutil}/mbeddr.mpsutil.zip" dest="${build.tmp}/deps/mpsutil/mbeddr.mpsutil.zip" />
   </target>
   
   <target name="build" depends="assemble, check" />
@@ -285,18 +285,18 @@
         <fileset file="${artifacts.buildMPS}/lib/diffutils-1.2.1.jar" />
         <fileset dir="${artifacts.buildMPS}/lib" includes="*.jar" />
         <fileset dir="${artifacts.buildMPS}/lib/ant/lib" includes="*.jar" />
-        <fileset file="${build.tmp}/deps/core.dev/core.dev.zip/mbeddr.core/languages/core.dev/com.mbeddr.core.base.jar" />
-        <fileset file="${build.tmp}/deps/core.dev/core.dev.zip/mbeddr.core/languages/core.dev/com.mbeddr.core.debug.jar" />
-        <fileset file="${build.tmp}/deps/core.dev/core.dev.zip/mbeddr.core/languages/core.dev/com.mbeddr.core.debug.spawner.jar" />
-        <fileset file="${build.tmp}/deps/core.dev/core.dev.zip/mbeddr.core/languages/core.dev/com.mbeddr.core.expressions.jar" />
-        <fileset file="${build.tmp}/deps/core.dev/core.dev.zip/mbeddr.core/languages/core.dev/com.mbeddr.core.modules.jar" />
-        <fileset file="${build.tmp}/deps/core.dev/core.dev.zip/mbeddr.core/languages/core.dev/com.mbeddr.core.modules.runtime.jar" />
-        <fileset file="${build.tmp}/deps/core.dev/core.dev.zip/mbeddr.core/languages/core.dev/com.mbeddr.core.pointers.jar" />
-        <fileset file="${build.tmp}/deps/core.dev/core.dev.zip/mbeddr.core/languages/core.dev/com.mbeddr.core.statements.jar" />
-        <fileset file="${build.tmp}/deps/core.dev/core.dev.zip/mbeddr.core/languages/core.dev/com.mbeddr.core.udt.jar" />
-        <fileset file="${build.tmp}/deps/mpsutil/mpsutil.zip/mpsutil/languages/mpsutil/com.mbeddr.mpsutil.bldoc.jar" />
-        <fileset file="${build.tmp}/deps/mpsutil/mpsutil.zip/mpsutil/languages/mpsutil/com.mbeddr.mpsutil.graph.jar" />
-        <fileset file="${build.tmp}/deps/mpsutil/mpsutil.zip/mpsutil/languages/mpsutil/com.mbeddr.mpsutil.langdepdiag.jar" />
+        <fileset file="${build.tmp}/deps/core.dev/mbeddr.core.zip/mbeddr.core/languages/mbeddr.core/com.mbeddr.core.base.jar" />
+        <fileset file="${build.tmp}/deps/core.dev/mbeddr.core.zip/mbeddr.core/languages/mbeddr.core/com.mbeddr.core.debug.jar" />
+        <fileset file="${build.tmp}/deps/core.dev/mbeddr.core.zip/mbeddr.core/languages/mbeddr.core/com.mbeddr.core.debug.spawner.jar" />
+        <fileset file="${build.tmp}/deps/core.dev/mbeddr.core.zip/mbeddr.core/languages/mbeddr.core/com.mbeddr.core.expressions.jar" />
+        <fileset file="${build.tmp}/deps/core.dev/mbeddr.core.zip/mbeddr.core/languages/mbeddr.core/com.mbeddr.core.modules.jar" />
+        <fileset file="${build.tmp}/deps/core.dev/mbeddr.core.zip/mbeddr.core/languages/mbeddr.core/com.mbeddr.core.modules.runtime.jar" />
+        <fileset file="${build.tmp}/deps/core.dev/mbeddr.core.zip/mbeddr.core/languages/mbeddr.core/com.mbeddr.core.pointers.jar" />
+        <fileset file="${build.tmp}/deps/core.dev/mbeddr.core.zip/mbeddr.core/languages/mbeddr.core/com.mbeddr.core.statements.jar" />
+        <fileset file="${build.tmp}/deps/core.dev/mbeddr.core.zip/mbeddr.core/languages/mbeddr.core/com.mbeddr.core.udt.jar" />
+        <fileset file="${build.tmp}/deps/mpsutil/mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/mbeddr.mpsutil/com.mbeddr.mpsutil.bldoc.jar" />
+        <fileset file="${build.tmp}/deps/mpsutil/mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/mbeddr.mpsutil/com.mbeddr.mpsutil.graph.jar" />
+        <fileset file="${build.tmp}/deps/mpsutil/mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/mbeddr.mpsutil/com.mbeddr.mpsutil.langdepdiag.jar" />
         <fileset file="${artifacts.buildMPS}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
         <fileset file="${artifacts.buildMPS}/languages/languageDesign/jetbrains.mps.lang.test.runtime.jar" />
         <fileset file="${artifacts.buildMPS}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
@@ -323,8 +323,8 @@
         <fileset file="${artifacts.buildMPS}/languages/baseLanguage/jetbrains.mps.baseLanguage.unitTest.libs/jmock-junit4-2.5.1.jar" />
         <fileset file="${artifacts.buildMPS}/languages/baseLanguage/jetbrains.mps.baseLanguage.unitTest.libs/objenesis-1.0.jar" />
         <fileset file="${artifacts.buildMPS}/lib/junit-4.10.jar" />
-        <fileset file="${build.tmp}/deps/core.dev/core.dev.zip/mbeddr.core/languages/core.dev/com.mbeddr.core.debug.spawner.jar" />
-        <fileset file="${build.tmp}/deps/core.dev/core.dev.zip/mbeddr.core/languages/core.dev/com.mbeddr.core.modules.runtime.jar" />
+        <fileset file="${build.tmp}/deps/core.dev/mbeddr.core.zip/mbeddr.core/languages/mbeddr.core/com.mbeddr.core.debug.spawner.jar" />
+        <fileset file="${build.tmp}/deps/core.dev/mbeddr.core.zip/mbeddr.core/languages/mbeddr.core/com.mbeddr.core.modules.runtime.jar" />
       </classpath>
     </javac>
   </target>
@@ -348,8 +348,8 @@
         <fileset file="${artifacts.buildMPS}/languages/baseLanguage/jetbrains.mps.baseLanguage.unitTest.libs/jmock-junit4-2.5.1.jar" />
         <fileset file="${artifacts.buildMPS}/languages/baseLanguage/jetbrains.mps.baseLanguage.unitTest.libs/objenesis-1.0.jar" />
         <fileset file="${artifacts.buildMPS}/lib/junit-4.10.jar" />
-        <fileset file="${build.tmp}/deps/core.dev/core.dev.zip/mbeddr.core/languages/core.dev/com.mbeddr.core.debug.spawner.jar" />
-        <fileset file="${build.tmp}/deps/core.dev/core.dev.zip/mbeddr.core/languages/core.dev/com.mbeddr.core.modules.runtime.jar" />
+        <fileset file="${build.tmp}/deps/core.dev/mbeddr.core.zip/mbeddr.core/languages/mbeddr.core/com.mbeddr.core.debug.spawner.jar" />
+        <fileset file="${build.tmp}/deps/core.dev/mbeddr.core.zip/mbeddr.core/languages/mbeddr.core/com.mbeddr.core.modules.runtime.jar" />
       </classpath>
     </javac>
   </target>
@@ -373,8 +373,8 @@
         <fileset file="${artifacts.buildMPS}/languages/baseLanguage/jetbrains.mps.baseLanguage.unitTest.libs/jmock-junit4-2.5.1.jar" />
         <fileset file="${artifacts.buildMPS}/languages/baseLanguage/jetbrains.mps.baseLanguage.unitTest.libs/objenesis-1.0.jar" />
         <fileset file="${artifacts.buildMPS}/lib/junit-4.10.jar" />
-        <fileset file="${build.tmp}/deps/core.dev/core.dev.zip/mbeddr.core/languages/core.dev/com.mbeddr.core.debug.spawner.jar" />
-        <fileset file="${build.tmp}/deps/core.dev/core.dev.zip/mbeddr.core/languages/core.dev/com.mbeddr.core.modules.runtime.jar" />
+        <fileset file="${build.tmp}/deps/core.dev/mbeddr.core.zip/mbeddr.core/languages/mbeddr.core/com.mbeddr.core.debug.spawner.jar" />
+        <fileset file="${build.tmp}/deps/core.dev/mbeddr.core.zip/mbeddr.core/languages/mbeddr.core/com.mbeddr.core.modules.runtime.jar" />
       </classpath>
     </javac>
   </target>
@@ -399,11 +399,11 @@
         <fileset file="${artifacts.buildMPS}/lib/mps-test.jar" />
         <fileset file="${artifacts.buildMPS}/lib/mps-backend.jar" />
         <fileset file="${mbeddr.core}/tests/test.debugger.core/libs/mockito-all-1.9.0.jar" />
-        <fileset file="${build.tmp}/deps/core.dev/core.dev.zip/lib/cdt2.jar" />
-        <fileset file="${build.tmp}/deps/core.dev/core.dev.zip/lib/org.eclipse.core.runtime_3.7.0.v20110110.jar" />
-        <fileset file="${build.tmp}/deps/core.dev/core.dev.zip/lib/org.eclipse.equinox.common_3.6.0.v20110523.jar" />
-        <fileset file="${build.tmp}/deps/core.dev/core.dev.zip/lib/org.eclipse.osgi_3.7.1.R37x_v20110808-1106.jar" />
-        <fileset file="${build.tmp}/deps/core.dev/core.dev.zip/lib/org.hamcrest.core_1.1.0.v20090501071000.jar" />
+        <fileset file="${build.tmp}/deps/core.dev/mbeddr.core.zip/lib/cdt2.jar" />
+        <fileset file="${build.tmp}/deps/core.dev/mbeddr.core.zip/lib/org.eclipse.core.runtime_3.7.0.v20110110.jar" />
+        <fileset file="${build.tmp}/deps/core.dev/mbeddr.core.zip/lib/org.eclipse.equinox.common_3.6.0.v20110523.jar" />
+        <fileset file="${build.tmp}/deps/core.dev/mbeddr.core.zip/lib/org.eclipse.osgi_3.7.1.R37x_v20110808-1106.jar" />
+        <fileset file="${build.tmp}/deps/core.dev/mbeddr.core.zip/lib/org.hamcrest.core_1.1.0.v20090501071000.jar" />
         <fileset file="${artifacts.buildMPS}/languages/baseLanguage/jetbrains.mps.baseLanguage.unitTest.libs/bsh-core-2.0b4.jar" />
         <fileset file="${artifacts.buildMPS}/languages/baseLanguage/jetbrains.mps.baseLanguage.unitTest.libs/cglib-nodep-2.1_3.jar" />
         <fileset file="${artifacts.buildMPS}/languages/baseLanguage/jetbrains.mps.baseLanguage.unitTest.libs/hamcrest-core-1.1.jar" />
@@ -427,7 +427,7 @@
         <fileset file="${artifacts.buildMPS}/lib/diffutils-1.2.1.jar" />
         <fileset dir="${artifacts.buildMPS}/lib" includes="*.jar" />
         <fileset dir="${artifacts.buildMPS}/lib/ant/lib" includes="*.jar" />
-        <fileset file="${build.tmp}/deps/core.dev/core.dev.zip/mbeddr.core/languages/core.dev/com.mbeddr.core.debug.jar" />
+        <fileset file="${build.tmp}/deps/core.dev/mbeddr.core.zip/mbeddr.core/languages/mbeddr.core/com.mbeddr.core.debug.jar" />
         <fileset file="${artifacts.buildMPS}/languages/languageDesign/jetbrains.mps.lang.test.runtime.jar" />
       </classpath>
     </javac>
@@ -452,8 +452,8 @@
         <fileset file="${artifacts.buildMPS}/languages/baseLanguage/jetbrains.mps.baseLanguage.unitTest.libs/jmock-junit4-2.5.1.jar" />
         <fileset file="${artifacts.buildMPS}/languages/baseLanguage/jetbrains.mps.baseLanguage.unitTest.libs/objenesis-1.0.jar" />
         <fileset file="${artifacts.buildMPS}/lib/junit-4.10.jar" />
-        <fileset file="${build.tmp}/deps/core.dev/core.dev.zip/mbeddr.core/languages/core.dev/com.mbeddr.core.debug.spawner.jar" />
-        <fileset file="${build.tmp}/deps/core.dev/core.dev.zip/mbeddr.core/languages/core.dev/com.mbeddr.core.modules.runtime.jar" />
+        <fileset file="${build.tmp}/deps/core.dev/mbeddr.core.zip/mbeddr.core/languages/mbeddr.core/com.mbeddr.core.debug.spawner.jar" />
+        <fileset file="${build.tmp}/deps/core.dev/mbeddr.core.zip/mbeddr.core/languages/mbeddr.core/com.mbeddr.core.modules.runtime.jar" />
       </classpath>
     </javac>
   </target>
@@ -478,8 +478,8 @@
         <fileset file="${artifacts.buildMPS}/languages/baseLanguage/jetbrains.mps.baseLanguage.unitTest.libs/jmock-junit4-2.5.1.jar" />
         <fileset file="${artifacts.buildMPS}/languages/baseLanguage/jetbrains.mps.baseLanguage.unitTest.libs/objenesis-1.0.jar" />
         <fileset file="${artifacts.buildMPS}/lib/junit-4.10.jar" />
-        <fileset file="${build.tmp}/deps/core.dev/core.dev.zip/mbeddr.core/languages/core.dev/com.mbeddr.core.debug.spawner.jar" />
-        <fileset file="${build.tmp}/deps/core.dev/core.dev.zip/mbeddr.core/languages/core.dev/com.mbeddr.core.modules.runtime.jar" />
+        <fileset file="${build.tmp}/deps/core.dev/mbeddr.core.zip/mbeddr.core/languages/mbeddr.core/com.mbeddr.core.debug.spawner.jar" />
+        <fileset file="${build.tmp}/deps/core.dev/mbeddr.core.zip/mbeddr.core/languages/mbeddr.core/com.mbeddr.core.modules.runtime.jar" />
       </classpath>
     </javac>
   </target>

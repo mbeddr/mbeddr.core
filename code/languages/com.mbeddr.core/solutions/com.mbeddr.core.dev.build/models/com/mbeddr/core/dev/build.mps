@@ -241,7 +241,7 @@
         </node>
         <node role="containerName" roleId="3ior.4380385936562148502" type="3ior.BuildStringNotEmpty" typeId="3ior.841011766566059607" id="8628756186118765536">
           <node role="parts" roleId="3ior.4903714810883783243" type="3ior.BuildTextStringPart" typeId="3ior.4903714810883702019" id="8628756186118765537">
-            <property name="text" nameId="3ior.4903714810883755350" value="core.dev.zip" />
+            <property name="text" nameId="3ior.4903714810883755350" value="mbeddr.core.zip" />
           </node>
         </node>
         <node role="children" roleId="3ior.7389400916848037006" type="kdzh.BuildMpsLayout_Plugin" typeId="kdzh.6592112598314498926" id="8628756186118765538">
@@ -262,7 +262,7 @@
         </node>
       </node>
       <node role="content" roleId="kdzh.6592112598314499050" type="kdzh.BuildMps_IdeaPluginGroup" typeId="kdzh.6592112598314586625" id="8628756186118765544">
-        <link role="group" roleId="kdzh.6592112598314586626" targetNodeId="8628756186118765548" resolveInfo="core.dev" />
+        <link role="group" roleId="kdzh.6592112598314586626" targetNodeId="8628756186118765548" resolveInfo="mbeddr.core" />
       </node>
       <node role="dependencies" roleId="kdzh.6592112598314499028" type="kdzh.BuildMps_IdeaPluginDependency" typeId="kdzh.6592112598314499027" id="8628756186118765545">
         <link role="target" roleId="kdzh.6592112598314499066" targetNodeId="ffeo.4973949960459588488" />
@@ -281,7 +281,7 @@
       </node>
     </node>
     <node role="parts" roleId="3ior.7389400916848080626" type="kdzh.BuildMps_Group" typeId="kdzh.1500819558095907805" id="8628756186118765548">
-      <property name="name" nameId="tpck.1169194664001" value="core.dev" />
+      <property name="name" nameId="tpck.1169194664001" value="mbeddr.core" />
       <node role="modules" roleId="kdzh.1500819558095907806" type="kdzh.BuildMps_Solution" typeId="kdzh.3189788309731840247" id="8628756186118796374">
         <property name="compact" nameId="kdzh.8369506495128725901" value="true" />
         <property name="uuid" nameId="kdzh.322010710375892619" value="85d9f97b-1654-4692-b61c-fcc40db03653" />

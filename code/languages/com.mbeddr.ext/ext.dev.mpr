@@ -22,6 +22,7 @@
       <modulePath path="${project}/languages/com.mbeddr.ext.statemachines/statemachines.mpl" folder="statemachine" />
       <modulePath path="${project}/lib/com.mbeddr.ext.components.mock.lib/lib.msd" folder="components" />
       <modulePath path="${project}/lib/com.mbeddr.ext.exceptionhandling.lib/lib.msd" folder="exceptionhandling" />
+      <modulePath path="${project}/solutions/com.mbeddr.ext.dev.build/build.msd" />
       <modulePath path="${project}/tests/test.ex.ext.boundedNumbers/boundedNumbers.msd" folder="tests.units" />
       <modulePath path="${project}/tests/test.ex.ext.comp_mocking/comp_mocking.msd" folder="tests.comp" />
       <modulePath path="${project}/tests/test.ex.ext.components/components.msd" folder="tests.comp" />
@@ -37,11 +38,19 @@
   <component name="ProjectLibraryManager">
     <option name="libraries">
       <map>
-        <entry key="coreAndUtil">
+        <entry key="mbeddr.core">
           <value>
             <Library>
-              <option name="name" value="coreAndUtil" />
-              <option name="path" value="${mbeddr.github.core.home}/" />
+              <option name="name" value="mbeddr.core" />
+              <option name="path" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.core" />
+            </Library>
+          </value>
+        </entry>
+        <entry key="mps.util">
+          <value>
+            <Library>
+              <option name="name" value="mps.util" />
+              <option name="path" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.mpsutil" />
             </Library>
           </value>
         </entry>
