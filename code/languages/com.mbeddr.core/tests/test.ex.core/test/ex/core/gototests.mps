@@ -19,6 +19,9 @@
     <node type="51wr.BuildConfiguration" typeId="51wr.7717755763392524104" id="6591434695301521517" />
   </roots>
   <root id="6591434695301521451">
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="5550109098754582256">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1341855216227_3" />
+    </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="yz9a.TestCase" typeId="yz9a.6275792049641586523" id="6591434695301521452">
       <property name="exported" nameId="x27k.1317894735999272944" value="true" />
       <property name="name" nameId="tpck.1169194664001" value="gotoTest" />
