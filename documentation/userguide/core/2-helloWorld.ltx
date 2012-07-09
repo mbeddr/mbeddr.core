@@ -1,7 +1,9 @@
+\chapter{mbeddr.core --- C in MPS}
+
 \section{Hello World Example}
 
 For this tutorial we assume that you know how to use the C programming language.
-We also assume that you have have installed MPS, gcc/make, graphviz and the
+We also assume that you have have installed MPS, \ic{gcc}/\ic{make}, \ic{graphviz} and the
 mbeddr.core distribution. This has been disussed in the previous section. 
 
 \subsection{Create new project}
@@ -27,7 +29,7 @@ that all languages are below it, including \emph{core} and \emph{mpsutil}.}
   \includegraphics[width=10cm]{figures/core/SettingsGlobalLibraries.png}
 \end{center}
 
-Notice that this is a settings and have to be performed only once
+Notice that this is a global settings and have to be performed only once
 before your first application project.
 
 
@@ -38,12 +40,12 @@ An MPS project is a collection of solutions\footnote{A project can also contain
 discuss this aspect of mbeddr in the \emph{Extension Guide}}. A \emph{solution}
 is an application project that \emph{uses} existing languages. Solutions contain
 any number of models; models contain root nodes. Physically, models are XML
-files that store MPS programs. They are the relevant version control unit, and
+files that store MPS code. They are the relevant version control unit, and
 the fundamental unit of configuration.
 
 
 \begin{center} 
-  \includegraphics[width=8cm]{figures/core/workspacecontents.png}
+  \includegraphics[width=100mm]{figures/core/workspacecontents.png}
 \end{center}
 
 In the solution, create a new model with the name \ic{main}, prefixed with the
@@ -60,7 +62,6 @@ model properties dialog should open automatically. In the \emph{Used Devkits}
 section, select the \ic{+} button and add the \ic{com.mbeddr.core} devkit.
 
 
-
 \begin{center} 
   \includegraphics[width=10cm]{figures/core/AddDependencies.png}
 \end{center}
@@ -72,15 +73,25 @@ writing C code.
 
 \subsection{Create an empty Module}
 
-The top level concept in mbeddr C programs are \emph{modules}. Modules act as
-namespaces and as the unit of encapsulation.  So the first step is to create an
-empty module. The mbeddr.core C language does not use the artificial separation
-between \ic{.h} and \ic{.c} files you know it from classical C. Instead
-mbeddr C uses the aforementioned module concept. During code generation we then
-create the corresponding \ic{.h} and \ic{.c} files.
+\greyboxnote{In this tutorial we create the basic building blocks manually.
+However, there are also a couple of Wizards in the Code menu that create these
+things manually. See the following figure.}
 
-A module can import other modules. The importing module can then
-access the \emph{exported} contents of imported modules. 
+\begin{center} 
+  \includegraphics[width=6cm]{figures/core/wizards.png}
+\end{center} 
+
+The top level concept in mbeddr C programs are \emph{modules}. Modules act as
+namespaces and as the unit of encapsulation. So the first step is to create an
+empty module. The \ic{mbeddr.core} C language does not use the artificial
+separation between \ic{.h} and \ic{.c} files you know it from classical C.
+Instead mbeddr C uses the aforementioned module concept. During code generation
+we create the corresponding \ic{.h} and \ic{.c} files.
+
+A module can import other modules. The importing module can then access the
+\emph{exported} contents of imported modules. Module contents can be exported
+using the \ic{export} intention (available via \ic{Alt-Enter} like any other
+intention).
 
 So to get started, we create a new \ic{implementation module} using the model's
 context menu as shown in the following screenshot:
@@ -120,10 +131,9 @@ configuration. The \ic{TypeSizeConfiguration} specifies the sizes of the
 primitive types (such as \ic{int} or \ic{long}) for the particular target
 platform. mbeddr C provides a \emph{default} type size configuration, which can
 be added to a module via an intention \intention{Create default type size
-configuration} on the module in the editor. To invoke intentions please use
-\keystroke{Alt-Enter}.
-You may have to press \keystroke{F5} to make the red underline go away. For more
-details on type size configurations see chapter \ref{PrimitiveNumericDatatypes}.
+configuration} on the module in the editor. You may have to press \keystroke{F5}
+to make the red underline go away. For more details on type size configurations
+see chapter \ref{PrimitiveNumericDatatypes}.
 \begin{center} 
   \includegraphics[width=8cm]{figures/core/AddDefaultTSC.png}
 \end{center}
@@ -140,11 +150,13 @@ enter a \ic{main} function in one of the the following ways:
 \begin{itemize}
 	\item create a new function instance by typing \keystroke{function} at the
 	placeholder in the module, and then specify the name and arguments. 
-	\item simply start typing the return type of the function e.g. \ic{int32\_t}
-	\\in this case, and then entering the name.
+	\item start typing the return type of the function (e.g. \ic{int32\_t}) and
+	then enter a name and the opening parentheses\footnote{Entering a type and a name
+	makes it a global variable. As soon as you enter the \ic{(} on the right side
+	of the name, the variable is transformed into a function. This process is
+	called a \emph{right-transformation}.}.
 	\item specifically for the main function, you can also just type
-	\keystroke{main} 
-	\\(it will set up the correct signature automatically)
+	\keystroke{main} (it will set up the correct signature automatically)
 \end{itemize} 
 
 
@@ -171,7 +183,7 @@ our main function we create a new \ic{message list} (just type
 \keystroke{message} followed by return) and give it the name \ic{log}.
 
 
-Within the message list, hit \keystroke{return} or type \keystroke{message} to
+Within the message list, hit \keystroke{Return} or type \keystroke{message} to
 create a new message. Change the type from \ic{ERROR} to \ic{INFO} with the help
 of code completion. Specify the name \ic{hello}. Add a message property by 
 hitting \keystroke{return} between the parentheses. The type should be a
@@ -206,17 +218,6 @@ module HelloWorld from HelloWorld.main imports nothing {
 
 
 
-\begin{figure}
-	\vspace{0.2cm}
-	\rule{\textwidth}{0.7pt}
-	\begin{center} 
-	  \includegraphics[width=12cm]{figures/core/AddBuildConfiguration.png}
-	\end{center}
-	\vspace{-0.3cm}
-	\rule{\textwidth}{0.7pt}
-	\caption{Add a BuildConfiguration Model}
-	\label{addBuildConfiguraitonModel}  
-\end{figure}
 
 
 \subsection{Build Configuration}	
@@ -226,10 +227,15 @@ We have to create one additional element, the \ic{BuildConfiguration}. This
 specifies which modules should be compiled into an executable or library, as
 well as other aspects related to creating an executable. Depending on the
 selected target platform, a \ic{BuildConfiguration} will automatically generate
-a corresponding \ic{make} file. In the main model, create a new instance of
+a corresponding \ic{make} file. In the \ic{main} model, create a new instance of
 \lcr{BuildConfiguration} (via the model's context menu, see
-\fig{addBuildConfiguraitonModel}). Initially, it will look as follows:
+figure below). 
 
+\begin{center} 
+  \includegraphics[width=12cm]{figures/core/AddBuildConfiguration.png}
+\end{center}
+
+Initially, it will look as follows:
 
 \begin{code}
 Target Platform: 
@@ -242,11 +248,11 @@ Binaries
   << ... >>
 \end{code}
 
-You will have to specify three aspects. First you have to select the target
+You will have to specify three things. First you have to select the target
 platform. For our tests, we use the \ic{desktop} platform that generates a
-\ic{make} file that can be compiled with the normal \ic{gcc} compiler. Other
-target platforms may generate build scripts for other build systems. The
-\ic{desktop} target contains some useful defaults, e.g. the \ic{gcc}
+\ic{make} file that can be compiled with the normal \ic{gcc} compiler\footnote{Other
+target platforms may generate build scripts for other build systems.}.
+The \ic{desktop} target contains some useful defaults, e.g. the \ic{gcc}
 compiler and its options. 
 
 \begin{code}
@@ -258,11 +264,11 @@ Target Platform:
 \end{code}
 
 Next, we have to address the configuration items. These are additional
-configuration data that define how various program elements are translated. In
-our case we have to specify the reporting configuration. Select the placeholder
-and type \keystroke{reporting}. It determines how log messages are output. The
-\ic{printf} strategy simply prints them to the console, which is fine for our
-purposes here.
+configuration data that define how various language concepts elements are
+translated. In our case we have to specify the \ic{reporting} configuration. It
+determines how log messages are output. The \ic{printf} strategy simply prints
+them to the console, which is fine for our purposes here. Select
+the placeholder and type \keystroke{reporting}. 
 
 \begin{code}
 Configuration Items 
@@ -287,10 +293,10 @@ executable main isTest: false {
 \subsection{Building and Executing the Program}
 
 Press \keystroke{Ctrl-F9} (or \keystroke{Cmd-F9} on the Mac) to rebuild the
-solution. In the
-\\ \ic{HelloWorld/solutions/HelloWorld/source\_gen/HelloWorld/main} directory
-you should now have at least the following files (there may be others, but
-those are not important now):
+solution. In the \ic{HelloWorld/
+solutions/HelloWorld/source\_gen/HelloWorld/main} directory you should now have
+at least the following files (there may be others, but those are not important
+now):
 
 
 \begin{code}
@@ -326,29 +332,9 @@ Note the output of the log statement in the program (report statement number
 source code: the index of the statement (here: \ic{0}) is also output in the
 program source). 
 
+\greyboxnote{That same Hello World example can be created using the $Code
+\rightarrow Make Hello World$ menu. }
 
-\subsection{The Graph Viewer}
-
-The graph viewer allows to render all graphviz files in the current solution. It
-simply scans the \ic{source\_gen} directory recursively for \ic{.gv} files and
-shows them in the tree. Underscores in the file name are used as hierarchies in
-the tree. Users can create their own transformation to graphviz graphs, and they
-will be shown in the tree. A special \ic{graph} language is available for this
-transformation (will be explained later).
-
-By default, each build configuration results in a diagram that shows the
-dependencies between the modules. To see it in the graph viewer, 
-
-\begin{itemize}
-  \item Open an implementation module in the editor
-  \item select $Tools -> Open Graph Viewer$ from the menu
-  \item in the graph viewer, click through the tree until you find a leaf node
-  representing a diagram
-\end{itemize}
-
-The diagram should open in the lower pane of the graph viewer. You can zoom
-(mouse wheel) and move around (press mouse button and move). More interestingly,
-you can also click on a node, and the MPS editor selects the respective node. 
 
 
 \vspace{10mm}

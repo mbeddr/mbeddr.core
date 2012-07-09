@@ -74,6 +74,10 @@
       <property name="virtualPackage" nameId="tpck.1193676396447" value="documentation" />
       <property name="name" nameId="tpck.1169194664001" value="TextHelper" />
     </node>
+    <node type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="7534202261664852649">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="documentation" />
+      <property name="name" nameId="tpck.1169194664001" value="IIsDocumentationComment" />
+    </node>
   </roots>
   <root id="7024921229555594291">
     <node role="extends" roleId="tpce.1169127546356" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7024921229555594292">
@@ -115,6 +119,9 @@
     </node>
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="154287305789211529">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="154287305789211528" resolveInfo="IHasDocParts" />
+    </node>
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7534202261664852651">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="7534202261664852649" resolveInfo="IIsDocumentationComment" />
     </node>
   </root>
   <root id="3857533489766146432" />
@@ -175,6 +182,9 @@
       <property name="role" nameId="tpce.1071599776563" value="parts" />
       <property name="sourceCardinality" nameId="tpce.1071599893252" value="0..n" />
       <link role="target" roleId="tpce.1071599976176" targetNodeId="3857533489766836826" resolveInfo="DocPart" />
+    </node>
+    <node role="extends" roleId="tpce.1169127546356" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7534202261664852655">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="7534202261664852649" resolveInfo="IIsDocumentationComment" />
     </node>
   </root>
   <root id="154287305790262846">
@@ -411,5 +421,6 @@
       <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="154287305790262851" />
     </node>
   </root>
+  <root id="7534202261664852649" />
 </model>
 

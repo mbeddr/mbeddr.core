@@ -86,6 +86,14 @@ make test
 PROC_RET=$(($?+$PROC_RET))
 
 echo -------------------------------------
+echo testHelpers
+echo !!!! The failures reported below are intended
+echo !!!! and do not really count as failures!
+cd ../testHelpers
+make test
+PROC_RET=$(($?+$PROC_RET))
+
+echo -------------------------------------
 echo structsAndEnums
 cd ../structsAndEnums
 make test
