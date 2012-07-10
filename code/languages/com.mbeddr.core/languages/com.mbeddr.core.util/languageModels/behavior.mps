@@ -18,6 +18,7 @@
   <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="4" implicit="yes" />
   <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="17" implicit="yes" />
   <import index="ywuz" modelUID="r:c6ce92e7-5a98-4a6f-866a-ec8b9e945dd8(com.mbeddr.core.expressions.behavior)" version="1" implicit="yes" />
+  <import index="qd6m" modelUID="r:c4c3f7d3-0acf-4671-a134-5fab66c4e637(com.mbeddr.core.modules.behavior)" version="-1" implicit="yes" />
   <roots>
     <node type="1i04.ConceptBehavior" typeId="1i04.1225194240794" id="5686538669182294937">
       <property name="virtualPackage" nameId="tpck.1193676396447" value="blockexpr" />
@@ -53,6 +54,10 @@
     </node>
     <node type="1i04.ConceptBehavior" typeId="1i04.1225194240794" id="2941277002449781685">
       <link role="concept" roleId="1i04.1225194240799" targetNodeId="k146.777213082402126069" resolveInfo="ErrorTypeNotFound" />
+    </node>
+    <node type="1i04.ConceptBehavior" typeId="1i04.1225194240794" id="5114214484368231535">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="reporting" />
+      <link role="concept" roleId="1i04.1225194240799" targetNodeId="k146.2688792604367964821" resolveInfo="ReportStatement" />
     </node>
   </roots>
   <root id="5686538669182294937">
@@ -1350,6 +1355,20 @@
     </node>
     <node role="constructor" roleId="1i04.1225194240801" type="1i04.ConceptConstructorDeclaration" typeId="1i04.1225194413805" id="2941277002449781686">
       <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="2941277002449781687" />
+    </node>
+  </root>
+  <root id="5114214484368231535">
+    <node role="constructor" roleId="1i04.1225194240801" type="1i04.ConceptConstructorDeclaration" typeId="1i04.1225194413805" id="5114214484368231536">
+      <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="5114214484368231537">
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="5114214484368231538">
+          <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="5114214484368231560">
+            <node role="operand" roleId="tpee.1197027771414" type="1i04.ThisNodeExpression" typeId="1i04.1225194691553" id="5114214484368231539" />
+            <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_ConceptMethodCall" typeId="tp25.1179409122411" id="5114214484368231566">
+              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="qd6m.5114214484368231284" resolveInfo="initNodeID" />
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
   </root>
 </model>

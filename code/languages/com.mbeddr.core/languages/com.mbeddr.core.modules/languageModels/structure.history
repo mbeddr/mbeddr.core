@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<history>
+  <StructureModification>
+    <dependencies>
+      <model index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="0" />
+    </dependencies>
+    <rename id="x27k.5114214484368231289" type="PROPERTY" from="contextNodeID" to="contextNodeIdD" />
+  </StructureModification>
+</history>
+
