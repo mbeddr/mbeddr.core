@@ -20,3 +20,5 @@ union unionWithConst {
 union {
 	int i;
 } refToAnonym;
+
+union emptyUnion;

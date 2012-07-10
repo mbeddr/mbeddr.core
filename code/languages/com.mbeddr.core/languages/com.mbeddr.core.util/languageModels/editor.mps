@@ -119,6 +119,9 @@
       <property name="virtualPackage" nameId="tpck.1193676396447" value="range" />
       <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="k146.7297559910934293472" resolveInfo="ForRangeRef" />
     </node>
+    <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="3284580646979351618">
+      <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="k146.777213082402126069" resolveInfo="ErrorTypeNotFound" />
+    </node>
   </roots>
   <root id="5686538669182273030">
     <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="5686538669182273032">
@@ -1218,6 +1221,28 @@
         <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Property" typeId="tpc2.1073389658414" id="7297559910934293479">
           <property name="readOnly" nameId="tpc2.1140017977771" value="true" />
           <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="tpck.1169194664001" resolveInfo="name" />
+        </node>
+      </node>
+    </node>
+  </root>
+  <root id="3284580646979351618">
+    <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="3284580646979351624">
+      <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Indent" typeId="tpc2.1237303669825" id="3284580646979351625" />
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="3284580646979351626">
+        <property name="text" nameId="tpc2.1073389577007" value="Type not found:" />
+        <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.BackgroundColorStyleClassItem" typeId="tpc2.1186404574412" id="3284580646979351629">
+          <node role="query" roleId="tpc2.1186403803051" type="tpc2.RGBColor" typeId="tpc2.1225456267680" id="3284580646979351630">
+            <property name="value" nameId="tpc2.1225456424731" value="FF9797" />
+          </node>
+        </node>
+      </node>
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Property" typeId="tpc2.1073389658414" id="3284580646979351628">
+        <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="k146.777213082402129269" resolveInfo="rawType" />
+        <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.BackgroundColorStyleClassItem" typeId="tpc2.1186404574412" id="3284580646979351834">
+          <property name="color" nameId="tpc2.1186403713874" value="lightGray" />
+        </node>
+        <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.FontStyleStyleClassItem" typeId="tpc2.1186403751766" id="3284580646979351836">
+          <property name="style" nameId="tpc2.1186403771423" value="ITALIC" />
         </node>
       </node>
     </node>

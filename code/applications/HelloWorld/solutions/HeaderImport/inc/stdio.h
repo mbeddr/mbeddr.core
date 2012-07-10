@@ -160,11 +160,11 @@ typedef	struct __sFILE {
 	fpos_t	_offset;	/* current lseek offset (see WARNING) */
 } FILE;
 
-__BEGIN_DECLS
+
 extern FILE *__stdinp;
 extern FILE *__stdoutp;
 extern FILE *__stderrp;
-__END_DECLS
+
 
 #define	__SLBF	0x0001		/* line buffered */
 #define	__SNBF	0x0002		/* unbuffered */
@@ -235,7 +235,7 @@ __END_DECLS
 
 /* ANSI-C */
 
-__BEGIN_DECLS
+
 void	 clearerr(FILE *);
 int	 fclose(FILE *);
 int	 feof(FILE *);
@@ -244,22 +244,15 @@ int	 fflush(FILE *);
 int	 fgetc(FILE *);
 int	 fgetpos(FILE * __restrict, fpos_t *);
 char	*fgets(char * __restrict, int, FILE *);
-#if defined(_DARWIN_UNLIMITED_STREAMS) || defined(_DARWIN_C_SOURCE)
-FILE	*fopen(const char * __restrict, const char * __restrict) __DARWIN_ALIAS_STARTING(__MAC_10_6, __IPHONE_3_2, __DARWIN_EXTSN(fopen));
-#else /* !_DARWIN_UNLIMITED_STREAMS && !_DARWIN_C_SOURCE */
-FILE	*fopen(const char * __restrict, const char * __restrict) __DARWIN_ALIAS_STARTING(__MAC_10_6, __IPHONE_2_0, __DARWIN_ALIAS(fopen));
-#endif /* (DARWIN_UNLIMITED_STREAMS || _DARWIN_C_SOURCE) */
 int	 fprintf(FILE * __restrict, const char * __restrict, ...) __DARWIN_LDBL_COMPAT(fprintf) __printflike(2, 3);
 int	 fputc(int, FILE *);
-int	 fputs(const char * __restrict, FILE * __restrict) __DARWIN_ALIAS(fputs);
+
 size_t	 fread(void * __restrict, size_t, size_t, FILE * __restrict);
-FILE	*freopen(const char * __restrict, const char * __restrict,
-                 FILE * __restrict) __DARWIN_ALIAS(freopen);
 int	 fscanf(FILE * __restrict, const char * __restrict, ...) __DARWIN_LDBL_COMPAT(fscanf) __scanflike(2, 3);
 int	 fseek(FILE *, long, int);
 int	 fsetpos(FILE *, const fpos_t *);
 long	 ftell(FILE *);
-size_t	 fwrite(const void * __restrict, size_t, size_t, FILE * __restrict) __DARWIN_ALIAS(fwrite);
+
 int	 getc(FILE *);
 int	 getchar(void);
 char	*gets(char *);
@@ -282,7 +275,7 @@ int	 ungetc(int, FILE *);
 int	 vfprintf(FILE * __restrict, const char * __restrict, va_list) __DARWIN_LDBL_COMPAT(vfprintf) __printflike(2, 0);
 int	 vprintf(const char * __restrict, va_list) __DARWIN_LDBL_COMPAT(vprintf) __printflike(1, 0);
 int	 vsprintf(char * __restrict, const char * __restrict, va_list) __DARWIN_LDBL_COMPAT(vsprintf) __printflike(2, 0);
-__END_DECLS
+
 
 
 
@@ -293,7 +286,7 @@ __END_DECLS
 #if __DARWIN_C_LEVEL >= 198808L
 #define	L_ctermid	1024	/* size for ctermid(); PATH_MAX */
 
-__BEGIN_DECLS
+
 #ifndef __CTERMID_DEFINED
 /* Multiply defined in stdio.h and unistd.h by SUS */
 #define __CTERMID_DEFINED 1
@@ -306,7 +299,7 @@ FILE	*fdopen(int, const char *) __DARWIN_ALIAS_STARTING(__MAC_10_6, __IPHONE_3_2
 FILE	*fdopen(int, const char *) __DARWIN_ALIAS_STARTING(__MAC_10_6, __IPHONE_2_0, __DARWIN_ALIAS(fdopen));
 #endif /* (DARWIN_UNLIMITED_STREAMS || _DARWIN_C_SOURCE) */
 int	 fileno(FILE *);
-__END_DECLS
+
 #endif /* __DARWIN_C_LEVEL >= 198808L */
 
 
@@ -315,14 +308,14 @@ __END_DECLS
  */
 
 #if __DARWIN_C_LEVEL >= 199209L
-__BEGIN_DECLS
+
 int	 pclose(FILE *);
 #if defined(_DARWIN_UNLIMITED_STREAMS) || defined(_DARWIN_C_SOURCE)
 FILE	*popen(const char *, const char *) __DARWIN_ALIAS_STARTING(__MAC_10_6, __IPHONE_3_2, __DARWIN_EXTSN(popen));
 #else /* !_DARWIN_UNLIMITED_STREAMS && !_DARWIN_C_SOURCE */
 FILE	*popen(const char *, const char *) __DARWIN_ALIAS_STARTING(__MAC_10_6, __IPHONE_2_0, __DARWIN_ALIAS(popen));
 #endif /* (DARWIN_UNLIMITED_STREAMS || _DARWIN_C_SOURCE) */
-__END_DECLS
+
 #endif /* __DARWIN_C_LEVEL >= 199209L */
 
 
@@ -337,11 +330,11 @@ __END_DECLS
 #if __DARWIN_C_LEVEL >= 199506L
 
 /* Functions internal to the implementation. */
-__BEGIN_DECLS
+
 int	__srget(FILE *);
 int	__svfscanf(FILE *, const char *, va_list) __DARWIN_LDBL_COMPAT(__svfscanf) __scanflike(2, 0);
 int	__swbuf(int, FILE *);
-__END_DECLS
+
 
 /*
  * The __sfoo macros are here so that we can
@@ -374,7 +367,7 @@ static __inline int __sputc(int _c, FILE *_p) {
 #define	__sclearerr(p)	((void)((p)->_flags &= ~(__SERR|__SEOF)))
 #define	__sfileno(p)	((p)->_file)
 
-__BEGIN_DECLS
+
 void	 flockfile(FILE *);
 int	 ftrylockfile(FILE *);
 void	 funlockfile(FILE *);
@@ -390,7 +383,7 @@ int	 putw(int, FILE *);
 #endif
 
 char	*tempnam(const char *, const char *) __DARWIN_ALIAS(tempnam);
-__END_DECLS
+
 
 #ifndef lint
 #define	getc_unlocked(fp)	__sgetc(fp)
@@ -414,20 +407,20 @@ __END_DECLS
 typedef	__darwin_off_t		off_t;
 #endif
 
-__BEGIN_DECLS
+
 int	 fseeko(FILE *, off_t, int);
 off_t	 ftello(FILE *);
-__END_DECLS
+
 #endif /* __DARWIN_C_LEVEL >= 200112L */
 
 #if __DARWIN_C_LEVEL >= 200112L || defined(_C99_SOURCE) || defined(__cplusplus)
-__BEGIN_DECLS
+
 int	 snprintf(char * __restrict, size_t, const char * __restrict, ...) __DARWIN_LDBL_COMPAT(snprintf) __printflike(3, 4);
 int	 vfscanf(FILE * __restrict, const char * __restrict, va_list) __DARWIN_LDBL_COMPAT(vfscanf) __scanflike(2, 0);
 int	 vscanf(const char * __restrict, va_list) __DARWIN_LDBL_COMPAT(vscanf) __scanflike(1, 0);
 int	 vsnprintf(char * __restrict, size_t, const char * __restrict, va_list) __DARWIN_LDBL_COMPAT(vsnprintf) __printflike(3, 0);
 int	 vsscanf(const char * __restrict, const char * __restrict, va_list) __DARWIN_LDBL_COMPAT(vsscanf) __scanflike(2, 0);
-__END_DECLS
+
 #endif /* __DARWIN_C_LEVEL >= 200112L || defined(_C99_SOURCE) || defined(__cplusplus) */
 
 
@@ -442,12 +435,12 @@ __END_DECLS
 typedef __darwin_ssize_t        ssize_t;
 #endif
 
-__BEGIN_DECLS
+
 int	dprintf(int, const char * __restrict, ...) __DARWIN_LDBL_COMPAT(dprintf) __printflike(2, 3) __OSX_AVAILABLE_STARTING(__MAC_10_7, __IPHONE_4_3);
 int	vdprintf(int, const char * __restrict, va_list) __DARWIN_LDBL_COMPAT(vdprintf) __printflike(2, 0) __OSX_AVAILABLE_STARTING(__MAC_10_7, __IPHONE_4_3);
 ssize_t getdelim(char ** __restrict, size_t * __restrict, int, FILE * __restrict) __OSX_AVAILABLE_STARTING(__MAC_10_7, __IPHONE_4_3);
 ssize_t getline(char ** __restrict, size_t * __restrict, FILE * __restrict) __OSX_AVAILABLE_STARTING(__MAC_10_7, __IPHONE_4_3);
-__END_DECLS
+
 #endif /* __DARWIN_C_LEVEL >= 200809L */
 
 
@@ -455,7 +448,7 @@ __END_DECLS
 /* Darwin extensions */
 
 #if __DARWIN_C_LEVEL >= __DARWIN_C_FULL
-__BEGIN_DECLS
+
 extern __const int sys_nerr;		/* perror(3) external variables */
 extern __const char *__const sys_errlist[];
 
@@ -478,7 +471,7 @@ FILE	*funopen(const void *,
                  int (*)(void *, const char *, int),
                  fpos_t (*)(void *, fpos_t, int),
                  int (*)(void *));
-__END_DECLS
+
 #define	fropen(cookie, fn) funopen(cookie, fn, 0, 0, 0)
 #define	fwopen(cookie, fn) funopen(cookie, 0, fn, 0, 0)
 
