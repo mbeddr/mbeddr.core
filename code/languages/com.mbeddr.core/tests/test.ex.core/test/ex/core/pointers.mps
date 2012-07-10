@@ -91,6 +91,7 @@
           <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="5083029923012081331" />
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="6610873504380018297">
+          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="6610873504380018297" />
           <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6610873504380018300">
             <node role="left" roleId="mj1l.8860443239512128064" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="6610873504380018299">
               <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="6610873504380016739" resolveInfo="y" />
@@ -110,6 +111,7 @@
           <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="5083029923012081299" />
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="6610873504380018313">
+          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="6610873504380018313" />
           <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6610873504380018316">
             <node role="left" roleId="mj1l.8860443239512128064" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="6610873504380018315">
               <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="6610873504380018302" resolveInfo="a" />
@@ -144,6 +146,7 @@
           <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="5083029923012081065" />
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="6610873504380018333">
+          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="6610873504380018333" />
           <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6610873504380018336">
             <node role="left" roleId="mj1l.8860443239512128064" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="6610873504380018335">
               <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="6610873504380018324" resolveInfo="r" />
@@ -214,6 +217,7 @@
           </node>
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="6610873504380058191">
+          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="6610873504380058191" />
           <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6610873504380058204">
             <node role="left" roleId="mj1l.8860443239512128064" type="yq40.DerefExpr" typeId="yq40.279446265608463015" id="6610873504380058205">
               <node role="expression" roleId="mj1l.7254843406768839760" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="7996914629314980018">
@@ -267,6 +271,7 @@
           </node>
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="7863679314024361281">
+          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="7863679314024361281" />
           <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="7863679314024361287">
             <node role="left" roleId="mj1l.8860443239512128064" type="yq40.DerefExpr" typeId="yq40.279446265608463015" id="7863679314024361288">
               <node role="expression" roleId="mj1l.7254843406768839760" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="7062990249306948706">
@@ -307,6 +312,7 @@
           <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="5083029923012080997" />
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="7863679314024372708">
+          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="7863679314024372708" />
           <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="7863679314024372715">
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="7863679314024372720">
               <property name="value" nameId="mj1l.8860443239512128104" value="5" />
@@ -361,6 +367,7 @@
           </node>
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="5728674636024843212">
+          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="5728674636024843212" />
           <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="5728674636024843217">
             <node role="left" roleId="mj1l.8860443239512128064" type="yq40.ArrayAccessExpr" typeId="yq40.6282313788306893057" id="5728674636024843215">
               <node role="expression" roleId="mj1l.7254843406768839760" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="7996914629314979999">
@@ -376,6 +383,7 @@
           </node>
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="8607471592849978379">
+          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="8607471592849978379" />
           <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="8607471592849978388">
             <node role="left" roleId="mj1l.8860443239512128064" type="mj1l.PlusExpression" typeId="mj1l.5763383285156373013" id="8607471592849978384">
               <node role="left" roleId="mj1l.8860443239512128064" type="yq40.ArrayAccessExpr" typeId="yq40.6282313788306893057" id="8607471592849978382">
@@ -401,6 +409,7 @@
           </node>
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="8607471592849978396">
+          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="8607471592849978396" />
           <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="8607471592849978405">
             <node role="right" roleId="mj1l.8860443239512128065" type="yq40.ArrayAccessExpr" typeId="yq40.6282313788306893057" id="8607471592849978409">
               <node role="expression" roleId="mj1l.7254843406768839760" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="8607471592849978408">
@@ -426,6 +435,7 @@
           </node>
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="5728674636024843253">
+          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="5728674636024843253" />
           <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="5728674636024843257">
             <node role="left" roleId="mj1l.8860443239512128064" type="x27k.FunctionCall" typeId="x27k.5950410542643524492" id="5728674636024843255">
               <link role="function" roleId="x27k.5950410542643524493" targetNodeId="5728674636024843241" resolveInfo="getSthFromArray" />
@@ -788,6 +798,7 @@
           <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="5083029923012080904" />
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="8551646674110577701">
+          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="8551646674110577701" />
           <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="8551646674110577704">
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="8551646674110577707">
               <property name="value" nameId="mj1l.8860443239512128104" value="3" />
@@ -848,6 +859,7 @@
           <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="5083029923012081387" />
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="1633557431899990528">
+          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="1633557431899990528" />
           <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="1633557431899990531">
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="1633557431899990534">
               <property name="value" nameId="mj1l.8860443239512128104" value="32" />
@@ -858,6 +870,7 @@
           </node>
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="8607471592849978411">
+          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="8607471592849978411" />
           <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="8607471592849978416">
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.UnaryMinusExpression" typeId="mj1l.3976803464656531170" id="8607471592849978422">
               <node role="expression" roleId="mj1l.7254843406768839760" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="8607471592849978425">
@@ -875,6 +888,7 @@
           </node>
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="8551646674110580414">
+          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="8551646674110580414" />
           <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="vs0r.ElementDocumentation" typeId="vs0r.3857533489766146428" id="2749618433534965689">
             <node role="parts" roleId="vs0r.3857533489766836837" type="vs0r.DocPart" typeId="vs0r.3857533489766836826" id="3526734305768051961">
               <property name="text" nameId="vs0r.3857533489766836827" value="calling the HOF function with a function reference" />
@@ -896,6 +910,7 @@
           </node>
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="2749618433534771419">
+          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="2749618433534771419" />
           <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="2749618433534771423">
             <node role="left" roleId="mj1l.8860443239512128064" type="x27k.FunctionCall" typeId="x27k.5950410542643524492" id="2749618433534771421">
               <link role="function" roleId="x27k.5950410542643524493" targetNodeId="8551646674110505739" resolveInfo="higherOrderFunction" />
@@ -917,6 +932,7 @@
           </node>
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="6528677780846894603">
+          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="6528677780846894603" />
           <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6528677780846894607">
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6528677780846894610">
               <property name="value" nameId="mj1l.8860443239512128104" value="9" />
@@ -952,6 +968,7 @@
           </node>
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="2020194812908836364">
+          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="2020194812908836364" />
           <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="2020194812908841172">
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2020194812908841175">
               <property name="value" nameId="mj1l.8860443239512128104" value="25" />
@@ -1119,12 +1136,14 @@
       <property name="name" nameId="tpck.1169194664001" value="testClosures" />
       <node role="body" roleId="yz9a.6275792049641586525" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="8257817273847094242">
         <node role="statements" roleId="c4fa.4185783222026475862" type="k146.ReportStatement" typeId="k146.2688792604367964821" id="5227367412125642187">
+          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="5227367412125642187" />
           <node role="msgref" roleId="k146.2688792604367973273" type="k146.MessageRef" typeId="k146.2688792604367964823" id="5227367412125642188">
             <link role="table" roleId="k146.2688792604367964824" targetNodeId="2688792604368035951" resolveInfo="messages" />
             <link role="msg" roleId="k146.2688792604367964825" targetNodeId="2688792604368035956" resolveInfo="HelloMessage" />
           </node>
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="8257817273847121513">
+          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="8257817273847121513" />
           <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="8257817273847122546">
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="8257817273847122549">
               <property name="value" nameId="mj1l.8860443239512128104" value="7" />
@@ -1183,6 +1202,7 @@
           <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="5083029923012080862" />
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="8257817273847122935">
+          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="8257817273847122935" />
           <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="8257817273847122947">
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="8257817273847122950">
               <property name="value" nameId="mj1l.8860443239512128104" value="8" />
@@ -1197,6 +1217,7 @@
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="8257817273847124186" />
         <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="8257817273847124184">
+          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="8257817273847124184" />
           <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="8257817273847124201">
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="8257817273847124204">
               <property name="value" nameId="mj1l.8860443239512128104" value="64" />
@@ -1243,6 +1264,7 @@
           </node>
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="8257817273847124651">
+          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="8257817273847124651" />
           <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="8257817273847124652">
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="8257817273847124653">
               <property name="value" nameId="mj1l.8860443239512128104" value="80" />
@@ -1279,6 +1301,7 @@
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="8257817273847125129" />
         <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="8257817273847138132">
+          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="8257817273847138132" />
           <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="8257817273847138149">
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="8257817273847138152">
               <property name="value" nameId="mj1l.8860443239512128104" value="16" />
@@ -1312,6 +1335,7 @@
           </node>
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="8257817273847138650">
+          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="8257817273847138650" />
           <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="8257817273847138653">
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="8257817273847138656">
               <property name="value" nameId="mj1l.8860443239512128104" value="20" />
@@ -1378,6 +1402,7 @@
           </node>
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="8257817273847139237">
+          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="8257817273847139237" />
           <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="8257817273847139242">
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="8257817273847139245">
               <property name="value" nameId="mj1l.8860443239512128104" value="6" />
@@ -1447,6 +1472,7 @@
           </node>
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="2179155938639636992">
+          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="2179155938639636992" />
           <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="2179155938639636997">
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2179155938639637000">
               <property name="value" nameId="mj1l.8860443239512128104" value="4" />
@@ -1462,6 +1488,7 @@
           </node>
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="2179155938639637001">
+          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="2179155938639637001" />
           <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="2179155938639637002">
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2179155938639637003">
               <property name="value" nameId="mj1l.8860443239512128104" value="6" />
@@ -1502,6 +1529,7 @@
           </node>
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="2688792604368189576">
+          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="2688792604368189576" />
           <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="2688792604368189579">
             <node role="left" roleId="mj1l.8860443239512128064" type="x27k.GlobalVarRef" typeId="x27k.6610873504380357354" id="2688792604368189578">
               <link role="var" roleId="x27k.6610873504380357355" targetNodeId="2688792604368189567" resolveInfo="sum" />
@@ -2029,6 +2057,7 @@
       <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="3926162927329444473" />
       <node role="body" roleId="yz9a.6275792049641586525" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="3926162927329444474">
         <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="3926162927329448648">
+          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="3926162927329448648" />
           <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="3926162927329448657">
             <node role="left" roleId="mj1l.8860443239512128064" type="x27k.FunctionCall" typeId="x27k.5950410542643524492" id="3926162927329448650">
               <link role="function" roleId="x27k.5950410542643524493" targetNodeId="3926162927329448629" resolveInfo="add" />
@@ -2045,6 +2074,7 @@
           </node>
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="3926162927329452944">
+          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="3926162927329452944" />
           <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="3926162927329452952">
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3926162927329452955">
               <property name="value" nameId="mj1l.8860443239512128104" value="8" />
@@ -2061,6 +2091,7 @@
           </node>
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="3926162927329454409">
+          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="3926162927329454409" />
           <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="3926162927329454410">
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3926162927329454411">
               <property name="value" nameId="mj1l.8860443239512128104" value="13" />
@@ -2093,6 +2124,7 @@
       <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="3926162927329458876" />
       <node role="body" roleId="yz9a.6275792049641586525" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="3926162927329458877">
         <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="3926162927329460457">
+          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="3926162927329460457" />
           <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="3926162927329460467">
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3926162927329460470">
               <property name="value" nameId="mj1l.8860443239512128104" value="60" />

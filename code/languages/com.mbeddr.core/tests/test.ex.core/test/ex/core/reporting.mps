@@ -34,17 +34,15 @@
       <property name="name" nameId="tpck.1169194664001" value="testReporting" />
       <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="6209278014151035905" />
       <node role="body" roleId="yz9a.6275792049641586525" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="6209278014151035906">
-        <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.FailStatement" typeId="yz9a.1937609356306123790" id="5114214484368929185">
-          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="5114214484368929185" />
-        </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type="k146.ReportStatement" typeId="k146.2688792604367964821" id="5114214484368685995">
-          <property name="nodeID" value="5114214484368685995" />
-          <node role="msgref" roleId="k146.2688792604367973273" type="k146.MessageRef" typeId="k146.2688792604367964823" id="5114214484368685996">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="k146.ReportStatement" typeId="k146.2688792604367964821" id="4094831577251207314">
+          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="4094831577251207314" />
+          <node role="msgref" roleId="k146.2688792604367973273" type="k146.MessageRef" typeId="k146.2688792604367964823" id="4094831577251207315">
             <link role="table" roleId="k146.2688792604367964824" targetNodeId="6209278014151030888" resolveInfo="Messages" />
             <link role="msg" roleId="k146.2688792604367964825" targetNodeId="6209278014151030889" resolveInfo="aMessage" />
           </node>
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="6209278014151047338">
+          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="6209278014151047338" />
           <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6209278014151047341">
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6209278014151047344">
               <property name="value" nameId="mj1l.8860443239512128104" value="1" />

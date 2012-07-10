@@ -1035,7 +1035,7 @@
                 <property name="isInvisible" nameId="c4fa.4643433264760041409" value="true" />
                 <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ArbitraryTextStatement" typeId="c4fa.3830958861296871078" id="2688792604368142823">
                   <node role="items" roleId="c4fa.3830958861296879115" type="c4fa.AbritraryTextItem" typeId="c4fa.3830958861296879113" id="2688792604368142827">
-                    <property name="text" nameId="c4fa.3830958861296879114" value="printf(&quot;" />
+                    <property name="text" nameId="c4fa.3830958861296879114" value="printf(&quot;$$" />
                   </node>
                   <node role="items" roleId="c4fa.3830958861296879115" type="c4fa.AbritraryTextItem" typeId="c4fa.3830958861296879113" id="2688792604368142829">
                     <property name="text" nameId="c4fa.3830958861296879114" value="theMessage" />
@@ -1089,7 +1089,7 @@
                     </node>
                   </node>
                   <node role="items" roleId="c4fa.3830958861296879115" type="c4fa.AbritraryTextItem" typeId="c4fa.3830958861296879113" id="2688792604368142832">
-                    <property name="text" nameId="c4fa.3830958861296879114" value="  (&quot;);" />
+                    <property name="text" nameId="c4fa.3830958861296879114" value=" (&quot;);" />
                   </node>
                 </node>
                 <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ArbitraryTextStatement" typeId="c4fa.3830958861296871078" id="767515563077244231">
@@ -1308,7 +1308,7 @@
                 </node>
                 <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ArbitraryTextStatement" typeId="c4fa.3830958861296871078" id="4331139697889919204">
                   <node role="items" roleId="c4fa.3830958861296879115" type="c4fa.AbritraryTextItem" typeId="c4fa.3830958861296879113" id="4331139697889919205">
-                    <property name="text" nameId="c4fa.3830958861296879114" value="printf(&quot;) @ " />
+                    <property name="text" nameId="c4fa.3830958861296879114" value="printf(&quot;) @" />
                   </node>
                   <node role="items" roleId="c4fa.3830958861296879115" type="c4fa.AbritraryTextItem" typeId="c4fa.3830958861296879113" id="4331139697889919248">
                     <property name="text" nameId="c4fa.3830958861296879114" value="loc" />
@@ -1481,7 +1481,7 @@
                 <node role="thenPart" roleId="c4fa.6275792049641600985" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="2688792604368169634">
                   <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ArbitraryTextStatement" typeId="c4fa.3830958861296871078" id="4331139697889919271">
                     <node role="items" roleId="c4fa.3830958861296879115" type="c4fa.AbritraryTextItem" typeId="c4fa.3830958861296879113" id="4331139697889919272">
-                      <property name="text" nameId="c4fa.3830958861296879114" value="printf(&quot;" />
+                      <property name="text" nameId="c4fa.3830958861296879114" value="printf(&quot;$$" />
                     </node>
                     <node role="items" roleId="c4fa.3830958861296879115" type="c4fa.AbritraryTextItem" typeId="c4fa.3830958861296879113" id="4331139697889919273">
                       <property name="text" nameId="c4fa.3830958861296879114" value="theMessage" />
@@ -1535,7 +1535,7 @@
                       </node>
                     </node>
                     <node role="items" roleId="c4fa.3830958861296879115" type="c4fa.AbritraryTextItem" typeId="c4fa.3830958861296879113" id="4331139697889919295">
-                      <property name="text" nameId="c4fa.3830958861296879114" value="  (&quot;);" />
+                      <property name="text" nameId="c4fa.3830958861296879114" value=" (&quot;);" />
                     </node>
                   </node>
                   <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ArbitraryTextStatement" typeId="c4fa.3830958861296871078" id="4331139697889919296">
@@ -1754,7 +1754,7 @@
                   </node>
                   <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ArbitraryTextStatement" typeId="c4fa.3830958861296871078" id="4331139697889919391">
                     <node role="items" roleId="c4fa.3830958861296879115" type="c4fa.AbritraryTextItem" typeId="c4fa.3830958861296879113" id="4331139697889919392">
-                      <property name="text" nameId="c4fa.3830958861296879114" value="printf(&quot;) @ " />
+                      <property name="text" nameId="c4fa.3830958861296879114" value="printf(&quot;) @" />
                     </node>
                     <node role="items" roleId="c4fa.3830958861296879115" type="c4fa.AbritraryTextItem" typeId="c4fa.3830958861296879113" id="4331139697889919393">
                       <property name="text" nameId="c4fa.3830958861296879114" value="loc" />
@@ -1956,7 +1956,7 @@
                 <property name="isInvisible" nameId="c4fa.4643433264760041409" value="true" />
                 <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ArbitraryTextStatement" typeId="c4fa.3830958861296871078" id="4331139697889919582">
                   <node role="items" roleId="c4fa.3830958861296879115" type="c4fa.AbritraryTextItem" typeId="c4fa.3830958861296879113" id="4331139697889919583">
-                    <property name="text" nameId="c4fa.3830958861296879114" value="printf(&quot;" />
+                    <property name="text" nameId="c4fa.3830958861296879114" value="printf(&quot;$$" />
                   </node>
                   <node role="items" roleId="c4fa.3830958861296879115" type="c4fa.AbritraryTextItem" typeId="c4fa.3830958861296879113" id="4331139697889919584">
                     <property name="text" nameId="c4fa.3830958861296879114" value="theMessage" />
@@ -2032,7 +2032,7 @@
                     </node>
                   </node>
                   <node role="items" roleId="c4fa.3830958861296879115" type="c4fa.AbritraryTextItem" typeId="c4fa.3830958861296879113" id="4331139697889919606">
-                    <property name="text" nameId="c4fa.3830958861296879114" value="  (&quot;);" />
+                    <property name="text" nameId="c4fa.3830958861296879114" value=" (&quot;);" />
                   </node>
                 </node>
                 <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ArbitraryTextStatement" typeId="c4fa.3830958861296871078" id="4331139697889919607">
@@ -2275,7 +2275,7 @@
                 </node>
                 <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ArbitraryTextStatement" typeId="c4fa.3830958861296871078" id="4331139697889919702">
                   <node role="items" roleId="c4fa.3830958861296879115" type="c4fa.AbritraryTextItem" typeId="c4fa.3830958861296879113" id="4331139697889919703">
-                    <property name="text" nameId="c4fa.3830958861296879114" value="printf(&quot;) @ " />
+                    <property name="text" nameId="c4fa.3830958861296879114" value="printf(&quot;) @" />
                   </node>
                   <node role="items" roleId="c4fa.3830958861296879115" type="c4fa.AbritraryTextItem" typeId="c4fa.3830958861296879113" id="4331139697889919704">
                     <property name="text" nameId="c4fa.3830958861296879114" value="loc" />
