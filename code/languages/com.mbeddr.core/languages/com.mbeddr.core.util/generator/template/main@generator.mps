@@ -28,7 +28,7 @@
   <import index="tpee" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="3" implicit="yes" />
   <import index="tp2c" modelUID="r:00000000-0000-4000-0000-011c89590338(jetbrains.mps.baseLanguage.closures.structure)" version="3" implicit="yes" />
   <import index="tp2q" modelUID="r:00000000-0000-4000-0000-011c8959032e(jetbrains.mps.baseLanguage.collections.structure)" version="7" implicit="yes" />
-  <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="0" implicit="yes" />
+  <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="1" implicit="yes" />
   <import index="tpd4" modelUID="r:00000000-0000-4000-0000-011c895902b4(jetbrains.mps.lang.typesystem.structure)" version="3" implicit="yes" />
   <import index="tpf3" modelUID="r:00000000-0000-4000-0000-011c895902f3(jetbrains.mps.lang.generator.generationContext.structure)" version="0" implicit="yes" />
   <import index="tpcw" modelUID="r:00000000-0000-4000-0000-011c895902bc(jetbrains.mps.lang.sharedConcepts.structure)" version="0" implicit="yes" />
@@ -1035,7 +1035,7 @@
                 <property name="isInvisible" nameId="c4fa.4643433264760041409" value="true" />
                 <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ArbitraryTextStatement" typeId="c4fa.3830958861296871078" id="2688792604368142823">
                   <node role="items" roleId="c4fa.3830958861296879115" type="c4fa.AbritraryTextItem" typeId="c4fa.3830958861296879113" id="2688792604368142827">
-                    <property name="text" nameId="c4fa.3830958861296879114" value="printf(&quot;" />
+                    <property name="text" nameId="c4fa.3830958861296879114" value="printf(&quot;$$" />
                   </node>
                   <node role="items" roleId="c4fa.3830958861296879115" type="c4fa.AbritraryTextItem" typeId="c4fa.3830958861296879113" id="2688792604368142829">
                     <property name="text" nameId="c4fa.3830958861296879114" value="theMessage" />
@@ -1089,12 +1089,49 @@
                     </node>
                   </node>
                   <node role="items" roleId="c4fa.3830958861296879115" type="c4fa.AbritraryTextItem" typeId="c4fa.3830958861296879113" id="2688792604368142832">
-                    <property name="text" nameId="c4fa.3830958861296879114" value="  (&quot;);" />
+                    <property name="text" nameId="c4fa.3830958861296879114" value=" (&quot;);" />
                   </node>
                 </node>
                 <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ArbitraryTextStatement" typeId="c4fa.3830958861296871078" id="767515563077244231">
                   <node role="items" roleId="c4fa.3830958861296879115" type="c4fa.AbritraryTextItem" typeId="c4fa.3830958861296879113" id="767515563077244238">
-                    <property name="text" nameId="c4fa.3830958861296879114" value="printf(&quot; " />
+                    <property name="text" nameId="c4fa.3830958861296879114" value="printf(&quot;" />
+                  </node>
+                  <node role="items" roleId="c4fa.3830958861296879115" type="c4fa.AbritraryTextItem" typeId="c4fa.3830958861296879113" id="2604827788718587241">
+                    <property name="text" nameId="c4fa.3830958861296879114" value="commaspace" />
+                    <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.PropertyMacro" typeId="tpf8.1087833241328" id="2604827788718587248">
+                      <property name="propertyName" nameId="tpck.1757699476691236117" value="text" />
+                      <node role="propertyValueFunction" roleId="tpf8.1167756362303" type="tpf8.PropertyMacro_GetPropertyValue" typeId="tpf8.1167756080639" id="2604827788718587249">
+                        <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="2604827788718587250">
+                          <node role="statement" roleId="tpee.1068581517665" type="tpee.IfStatement" typeId="tpee.1068580123159" id="2604827788718587304">
+                            <node role="ifTrue" roleId="tpee.1068580123161" type="tpee.StatementList" typeId="tpee.1068580123136" id="2604827788718587305">
+                              <node role="statement" roleId="tpee.1068581517665" type="tpee.ReturnStatement" typeId="tpee.1068581242878" id="2604827788718587386">
+                                <node role="expression" roleId="tpee.1068581517676" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="2604827788718587412">
+                                  <property name="value" nameId="tpee.1070475926801" value="" />
+                                </node>
+                              </node>
+                            </node>
+                            <node role="condition" roleId="tpee.1068580123160" type="tpee.EqualsExpression" typeId="tpee.1068580123152" id="2604827788718587381">
+                              <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="2604827788718587385">
+                                <property name="value" nameId="tpee.1068580320021" value="0" />
+                              </node>
+                              <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.DotExpression" typeId="tpee.1197027756228" id="2604827788718587349">
+                                <node role="operand" roleId="tpee.1197027771414" type="tpf8.TemplateFunctionParameter_sourceNode" typeId="tpf8.1167169188348" id="2604827788718587308" />
+                                <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_GetIndexInParentOperation" typeId="tp25.1179168000618" id="2604827788718587358" />
+                              </node>
+                            </node>
+                            <node role="ifFalseStatement" roleId="tpee.1082485599094" type="tpee.BlockStatement" typeId="tpee.1082485599095" id="2604827788718587413">
+                              <node role="statements" roleId="tpee.1082485599096" type="tpee.StatementList" typeId="tpee.1068580123136" id="2604827788718587414">
+                                <node role="statement" roleId="tpee.1068581517665" type="tpee.ReturnStatement" typeId="tpee.1068581242878" id="2604827788718587415">
+                                  <node role="expression" roleId="tpee.1068581517676" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="2604827788718587417">
+                                    <property name="value" nameId="tpee.1070475926801" value=", " />
+                                  </node>
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
                   </node>
                   <node role="items" roleId="c4fa.3830958861296879115" type="c4fa.AbritraryTextItem" typeId="c4fa.3830958861296879113" id="767515563077244272">
                     <property name="text" nameId="c4fa.3830958861296879114" value="propName" />
@@ -1177,7 +1214,7 @@
                     </node>
                   </node>
                   <node role="items" roleId="c4fa.3830958861296879115" type="c4fa.AbritraryTextItem" typeId="c4fa.3830958861296879113" id="767515563077244240">
-                    <property name="text" nameId="c4fa.3830958861296879114" value=" &quot;," />
+                    <property name="text" nameId="c4fa.3830958861296879114" value="&quot;," />
                   </node>
                   <node role="items" roleId="c4fa.3830958861296879115" type="c4fa.AnyNodeItem" typeId="c4fa.745648737914844472" id="767515563077249504">
                     <node role="theNode" roleId="c4fa.745648737914844473" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="767515563077249508">
@@ -1308,7 +1345,7 @@
                 </node>
                 <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ArbitraryTextStatement" typeId="c4fa.3830958861296871078" id="4331139697889919204">
                   <node role="items" roleId="c4fa.3830958861296879115" type="c4fa.AbritraryTextItem" typeId="c4fa.3830958861296879113" id="4331139697889919205">
-                    <property name="text" nameId="c4fa.3830958861296879114" value="printf(&quot;) @ " />
+                    <property name="text" nameId="c4fa.3830958861296879114" value="printf(&quot;) @" />
                   </node>
                   <node role="items" roleId="c4fa.3830958861296879115" type="c4fa.AbritraryTextItem" typeId="c4fa.3830958861296879113" id="4331139697889919248">
                     <property name="text" nameId="c4fa.3830958861296879114" value="loc" />
@@ -1320,7 +1357,7 @@
                             <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="4331139697889919253">
                               <node role="operand" roleId="tpee.1197027771414" type="tpf8.TemplateFunctionParameter_sourceNode" typeId="tpf8.1167169188348" id="4331139697889919254" />
                               <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_ConceptMethodCall" typeId="tp25.1179409122411" id="4331139697889919255">
-                                <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="qd6m.2688792604368201710" resolveInfo="codeLocation" />
+                                <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="qd6m.2688792604368201710" resolveInfo="effectiveCodeLocation" />
                               </node>
                             </node>
                           </node>
@@ -1481,7 +1518,7 @@
                 <node role="thenPart" roleId="c4fa.6275792049641600985" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="2688792604368169634">
                   <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ArbitraryTextStatement" typeId="c4fa.3830958861296871078" id="4331139697889919271">
                     <node role="items" roleId="c4fa.3830958861296879115" type="c4fa.AbritraryTextItem" typeId="c4fa.3830958861296879113" id="4331139697889919272">
-                      <property name="text" nameId="c4fa.3830958861296879114" value="printf(&quot;" />
+                      <property name="text" nameId="c4fa.3830958861296879114" value="printf(&quot;$$" />
                     </node>
                     <node role="items" roleId="c4fa.3830958861296879115" type="c4fa.AbritraryTextItem" typeId="c4fa.3830958861296879113" id="4331139697889919273">
                       <property name="text" nameId="c4fa.3830958861296879114" value="theMessage" />
@@ -1535,12 +1572,49 @@
                       </node>
                     </node>
                     <node role="items" roleId="c4fa.3830958861296879115" type="c4fa.AbritraryTextItem" typeId="c4fa.3830958861296879113" id="4331139697889919295">
-                      <property name="text" nameId="c4fa.3830958861296879114" value="  (&quot;);" />
+                      <property name="text" nameId="c4fa.3830958861296879114" value=" (&quot;);" />
                     </node>
                   </node>
                   <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ArbitraryTextStatement" typeId="c4fa.3830958861296871078" id="4331139697889919296">
                     <node role="items" roleId="c4fa.3830958861296879115" type="c4fa.AbritraryTextItem" typeId="c4fa.3830958861296879113" id="4331139697889919297">
-                      <property name="text" nameId="c4fa.3830958861296879114" value="printf(&quot; " />
+                      <property name="text" nameId="c4fa.3830958861296879114" value="printf(&quot;" />
+                    </node>
+                    <node role="items" roleId="c4fa.3830958861296879115" type="c4fa.AbritraryTextItem" typeId="c4fa.3830958861296879113" id="2604827788718592707">
+                      <property name="text" nameId="c4fa.3830958861296879114" value="commaspace" />
+                      <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.PropertyMacro" typeId="tpf8.1087833241328" id="2604827788718592708">
+                        <property name="propertyName" nameId="tpck.1757699476691236117" value="text" />
+                        <node role="propertyValueFunction" roleId="tpf8.1167756362303" type="tpf8.PropertyMacro_GetPropertyValue" typeId="tpf8.1167756080639" id="2604827788718592709">
+                          <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="2604827788718592710">
+                            <node role="statement" roleId="tpee.1068581517665" type="tpee.IfStatement" typeId="tpee.1068580123159" id="2604827788718592711">
+                              <node role="ifTrue" roleId="tpee.1068580123161" type="tpee.StatementList" typeId="tpee.1068580123136" id="2604827788718592712">
+                                <node role="statement" roleId="tpee.1068581517665" type="tpee.ReturnStatement" typeId="tpee.1068581242878" id="2604827788718592713">
+                                  <node role="expression" roleId="tpee.1068581517676" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="2604827788718592714">
+                                    <property name="value" nameId="tpee.1070475926801" value="" />
+                                  </node>
+                                </node>
+                              </node>
+                              <node role="condition" roleId="tpee.1068580123160" type="tpee.EqualsExpression" typeId="tpee.1068580123152" id="2604827788718592715">
+                                <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="2604827788718592716">
+                                  <property name="value" nameId="tpee.1068580320021" value="0" />
+                                </node>
+                                <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.DotExpression" typeId="tpee.1197027756228" id="2604827788718592717">
+                                  <node role="operand" roleId="tpee.1197027771414" type="tpf8.TemplateFunctionParameter_sourceNode" typeId="tpf8.1167169188348" id="2604827788718592718" />
+                                  <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_GetIndexInParentOperation" typeId="tp25.1179168000618" id="2604827788718592719" />
+                                </node>
+                              </node>
+                              <node role="ifFalseStatement" roleId="tpee.1082485599094" type="tpee.BlockStatement" typeId="tpee.1082485599095" id="2604827788718592720">
+                                <node role="statements" roleId="tpee.1082485599096" type="tpee.StatementList" typeId="tpee.1068580123136" id="2604827788718592721">
+                                  <node role="statement" roleId="tpee.1068581517665" type="tpee.ReturnStatement" typeId="tpee.1068581242878" id="2604827788718592722">
+                                    <node role="expression" roleId="tpee.1068581517676" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="2604827788718592723">
+                                      <property name="value" nameId="tpee.1070475926801" value=", " />
+                                    </node>
+                                  </node>
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
                     </node>
                     <node role="items" roleId="c4fa.3830958861296879115" type="c4fa.AbritraryTextItem" typeId="c4fa.3830958861296879113" id="4331139697889919298">
                       <property name="text" nameId="c4fa.3830958861296879114" value="propName" />
@@ -1623,7 +1697,7 @@
                       </node>
                     </node>
                     <node role="items" roleId="c4fa.3830958861296879115" type="c4fa.AbritraryTextItem" typeId="c4fa.3830958861296879113" id="4331139697889919333">
-                      <property name="text" nameId="c4fa.3830958861296879114" value=" &quot;," />
+                      <property name="text" nameId="c4fa.3830958861296879114" value="&quot;," />
                     </node>
                     <node role="items" roleId="c4fa.3830958861296879115" type="c4fa.AnyNodeItem" typeId="c4fa.745648737914844472" id="4331139697889919334">
                       <node role="theNode" roleId="c4fa.745648737914844473" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="4331139697889919335">
@@ -1754,7 +1828,7 @@
                   </node>
                   <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ArbitraryTextStatement" typeId="c4fa.3830958861296871078" id="4331139697889919391">
                     <node role="items" roleId="c4fa.3830958861296879115" type="c4fa.AbritraryTextItem" typeId="c4fa.3830958861296879113" id="4331139697889919392">
-                      <property name="text" nameId="c4fa.3830958861296879114" value="printf(&quot;) @ " />
+                      <property name="text" nameId="c4fa.3830958861296879114" value="printf(&quot;) @" />
                     </node>
                     <node role="items" roleId="c4fa.3830958861296879115" type="c4fa.AbritraryTextItem" typeId="c4fa.3830958861296879113" id="4331139697889919393">
                       <property name="text" nameId="c4fa.3830958861296879114" value="loc" />
@@ -1766,7 +1840,7 @@
                               <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="4331139697889919398">
                                 <node role="operand" roleId="tpee.1197027771414" type="tpf8.TemplateFunctionParameter_sourceNode" typeId="tpf8.1167169188348" id="4331139697889919399" />
                                 <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_ConceptMethodCall" typeId="tp25.1179409122411" id="4331139697889919400">
-                                  <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="qd6m.2688792604368201710" resolveInfo="codeLocation" />
+                                  <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="qd6m.2688792604368201710" resolveInfo="effectiveCodeLocation" />
                                 </node>
                               </node>
                             </node>
@@ -1956,7 +2030,7 @@
                 <property name="isInvisible" nameId="c4fa.4643433264760041409" value="true" />
                 <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ArbitraryTextStatement" typeId="c4fa.3830958861296871078" id="4331139697889919582">
                   <node role="items" roleId="c4fa.3830958861296879115" type="c4fa.AbritraryTextItem" typeId="c4fa.3830958861296879113" id="4331139697889919583">
-                    <property name="text" nameId="c4fa.3830958861296879114" value="printf(&quot;" />
+                    <property name="text" nameId="c4fa.3830958861296879114" value="printf(&quot;$$" />
                   </node>
                   <node role="items" roleId="c4fa.3830958861296879115" type="c4fa.AbritraryTextItem" typeId="c4fa.3830958861296879113" id="4331139697889919584">
                     <property name="text" nameId="c4fa.3830958861296879114" value="theMessage" />
@@ -2032,12 +2106,49 @@
                     </node>
                   </node>
                   <node role="items" roleId="c4fa.3830958861296879115" type="c4fa.AbritraryTextItem" typeId="c4fa.3830958861296879113" id="4331139697889919606">
-                    <property name="text" nameId="c4fa.3830958861296879114" value="  (&quot;);" />
+                    <property name="text" nameId="c4fa.3830958861296879114" value=" (&quot;);" />
                   </node>
                 </node>
                 <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ArbitraryTextStatement" typeId="c4fa.3830958861296871078" id="4331139697889919607">
                   <node role="items" roleId="c4fa.3830958861296879115" type="c4fa.AbritraryTextItem" typeId="c4fa.3830958861296879113" id="4331139697889919608">
-                    <property name="text" nameId="c4fa.3830958861296879114" value="printf(&quot; " />
+                    <property name="text" nameId="c4fa.3830958861296879114" value="printf(&quot;" />
+                  </node>
+                  <node role="items" roleId="c4fa.3830958861296879115" type="c4fa.AbritraryTextItem" typeId="c4fa.3830958861296879113" id="2604827788718592738">
+                    <property name="text" nameId="c4fa.3830958861296879114" value="commaspace" />
+                    <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.PropertyMacro" typeId="tpf8.1087833241328" id="2604827788718592739">
+                      <property name="propertyName" nameId="tpck.1757699476691236117" value="text" />
+                      <node role="propertyValueFunction" roleId="tpf8.1167756362303" type="tpf8.PropertyMacro_GetPropertyValue" typeId="tpf8.1167756080639" id="2604827788718592740">
+                        <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="2604827788718592741">
+                          <node role="statement" roleId="tpee.1068581517665" type="tpee.IfStatement" typeId="tpee.1068580123159" id="2604827788718592742">
+                            <node role="ifTrue" roleId="tpee.1068580123161" type="tpee.StatementList" typeId="tpee.1068580123136" id="2604827788718592743">
+                              <node role="statement" roleId="tpee.1068581517665" type="tpee.ReturnStatement" typeId="tpee.1068581242878" id="2604827788718592744">
+                                <node role="expression" roleId="tpee.1068581517676" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="2604827788718592745">
+                                  <property name="value" nameId="tpee.1070475926801" value="" />
+                                </node>
+                              </node>
+                            </node>
+                            <node role="condition" roleId="tpee.1068580123160" type="tpee.EqualsExpression" typeId="tpee.1068580123152" id="2604827788718592746">
+                              <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="2604827788718592747">
+                                <property name="value" nameId="tpee.1068580320021" value="0" />
+                              </node>
+                              <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.DotExpression" typeId="tpee.1197027756228" id="2604827788718592748">
+                                <node role="operand" roleId="tpee.1197027771414" type="tpf8.TemplateFunctionParameter_sourceNode" typeId="tpf8.1167169188348" id="2604827788718592749" />
+                                <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_GetIndexInParentOperation" typeId="tp25.1179168000618" id="2604827788718592750" />
+                              </node>
+                            </node>
+                            <node role="ifFalseStatement" roleId="tpee.1082485599094" type="tpee.BlockStatement" typeId="tpee.1082485599095" id="2604827788718592751">
+                              <node role="statements" roleId="tpee.1082485599096" type="tpee.StatementList" typeId="tpee.1068580123136" id="2604827788718592752">
+                                <node role="statement" roleId="tpee.1068581517665" type="tpee.ReturnStatement" typeId="tpee.1068581242878" id="2604827788718592753">
+                                  <node role="expression" roleId="tpee.1068581517676" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="2604827788718592754">
+                                    <property name="value" nameId="tpee.1070475926801" value=", " />
+                                  </node>
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
                   </node>
                   <node role="items" roleId="c4fa.3830958861296879115" type="c4fa.AbritraryTextItem" typeId="c4fa.3830958861296879113" id="4331139697889919609">
                     <property name="text" nameId="c4fa.3830958861296879114" value="propName" />
@@ -2120,7 +2231,7 @@
                     </node>
                   </node>
                   <node role="items" roleId="c4fa.3830958861296879115" type="c4fa.AbritraryTextItem" typeId="c4fa.3830958861296879113" id="4331139697889919644">
-                    <property name="text" nameId="c4fa.3830958861296879114" value=" &quot;," />
+                    <property name="text" nameId="c4fa.3830958861296879114" value="&quot;," />
                   </node>
                   <node role="items" roleId="c4fa.3830958861296879115" type="c4fa.AnyNodeItem" typeId="c4fa.745648737914844472" id="4331139697889919645">
                     <node role="theNode" roleId="c4fa.745648737914844473" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="4331139697889919646">
@@ -2275,7 +2386,7 @@
                 </node>
                 <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ArbitraryTextStatement" typeId="c4fa.3830958861296871078" id="4331139697889919702">
                   <node role="items" roleId="c4fa.3830958861296879115" type="c4fa.AbritraryTextItem" typeId="c4fa.3830958861296879113" id="4331139697889919703">
-                    <property name="text" nameId="c4fa.3830958861296879114" value="printf(&quot;) @ " />
+                    <property name="text" nameId="c4fa.3830958861296879114" value="printf(&quot;) @" />
                   </node>
                   <node role="items" roleId="c4fa.3830958861296879115" type="c4fa.AbritraryTextItem" typeId="c4fa.3830958861296879113" id="4331139697889919704">
                     <property name="text" nameId="c4fa.3830958861296879114" value="loc" />
@@ -2307,7 +2418,7 @@
                                 <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="4331139697889919793" resolveInfo="rs" />
                               </node>
                               <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_ConceptMethodCall" typeId="tp25.1179409122411" id="4331139697889919711">
-                                <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="qd6m.2688792604368201710" resolveInfo="codeLocation" />
+                                <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="qd6m.2688792604368201710" resolveInfo="effectiveCodeLocation" />
                               </node>
                             </node>
                           </node>

@@ -6,5 +6,11 @@
     </dependencies>
     <rename id="punb.3907424226054658970" type="PROPERTY" from="value" to="name" />
   </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="punb" modelUID="r:401d5aa1-f59d-49c0-833e-cf94fb548e92(com.mbeddr.core.cstubs.structure)" version="0" />
+    </dependencies>
+    <rename id="punb.7097640331099443677" type="CONCEPT" from="HeaderImportSpec" to="HeaderImportSpecHFile" />
+  </StructureModification>
 </history>
 
