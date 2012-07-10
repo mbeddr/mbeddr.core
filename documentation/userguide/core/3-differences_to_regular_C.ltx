@@ -671,11 +671,72 @@ messages by using intentions on the message list.
 \greyboxnote{At this time there is no way of enabling/disabling messages at
 runtime. This will be added in the future.}
 
+\paragraph{Counting Message Calls} Sometimes it is useful to be able to find out
+if and how often a message was actually reported. This is particularly useful
+in testing when you want to find out whether a message (which is supposed to
+report some kind of error) was actually called (and hence the error actually
+occured). To count message calles, you have to mark the particular message as
+\ic{count}ed via an intention:
 
-\todo{Discuss counting of message calls:
-test.ex.ext.components.ppc.CalculatorExample}
+\begin{code}
+message list CalcMessages { 
+  WARN ppcfailed(int8_t operation, int8_t ppc) active (count): ppc failed 
+} 
+\end{code}
 
-\todo{Update the message output and discuss the Error Analysis Tool View}
+You can then use the \ic{messagecount} expression to retrieve the count:
+
+\begin{code}
+exported test case testComputer { 
+  computer.add(1, 1); 
+  assert(0) messagecount(CalcMessages.ppcfailed) == 0; 
+} 
+\end{code}
+
+
+\paragraph{Finding the Node that reported a Message} Reporting is used to report
+failed assertions in tests and other problems with program execution.
+Efficiently finding the node that reported a message (eg. a failed assertion) is
+important. There are two ways to do this. The first one includes the location
+string. Here is the default output of a report message:
+
+\begin{code}
+./TestHelperTest
+$$runningTest: running test () @TestHelperTest:test_testCase1:0#767515563077315487
+$$FAILED: ***FAILED*** (testID=0) @TestHelperTest:f:0#9125142491355884683
+$$FAILED: ***FAILED*** (testID=1) @TestHelperTest:f:1#9125142491355901742 
+\end{code}\ignore{$$}
+
+Each message starts of with the \ic{\$\$}. Next is the error message and the
+list of message parameters. After the @ sign we the message shows the message
+location. The format is \ic{module:content:index}, where the \ic{index} is also
+shown in the respective \ic{report} or \ic{assert} statement (the number in
+parentheses). Based on this information, the location can be found manually.
+
+However, mbeddr also comes with a tool that simplifies finding the message
+source. Using $Analyze \rightarrow mbeddr Analyze Error Output$, arbitrary test
+program output can be analyzed. After selecting the menu item, the following
+view opens:
+
+\begin{center} 
+  \includegraphics[width=11cm]{figures/core/analyzeErrorOutput1.png}
+\end{center}
+
+You can then paste arbitrary text that contains report messages into the text
+area (for example the example above). Pressing the \ic{Analyze} button will find
+the nodes that created the messages (using the Node ID; this is the long number
+that follows the \ic{\#} in the message location).
+
+\begin{center} 
+  \includegraphics[width=11cm]{figures/core/analyzeErrorOutput2.png}
+\end{center}
+
+You can then click on the node to select it in the editor (you should play a
+bit with the options buttons on the left; in particular the one with the grey
+folder (top right) is useful, since it shows the actual error message).
+
+You can update the error output text in the text area at any time; press the
+button with the two green arrows to refresh the found nodes on the right.
 
 
 \subsection{Assembly Code}
