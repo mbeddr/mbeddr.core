@@ -1118,8 +1118,8 @@
                         <node role="errorString" roleId="tpd4.1175517851849" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="6634804589736169189">
                           <property name="value" nameId="tpee.1070475926801" value="duplicate name" />
                         </node>
-                        <node role="nodeToReport" roleId="tpd4.1227096802790" type="tp2q.ForEachVariableReference" typeId="tp2q.1153944233411" id="6634804589736169190">
-                          <link role="variable" roleId="tp2q.1153944258490" targetNodeId="6634804589736167596" resolveInfo="mc" />
+                        <node role="nodeToReport" roleId="tpd4.1227096802790" type="tp2q.ForEachVariableReference" typeId="tp2q.1153944233411" id="5550109098754582263">
+                          <link role="variable" roleId="tp2q.1153944258490" targetNodeId="6634804589736169163" resolveInfo="sc" />
                         </node>
                         <node role="messageTarget" roleId="tpd4.1227096836496" type="tpd4.PropertyMessageTarget" typeId="tpd4.1227096498176" id="6634804589736169191">
                           <link role="propertyDeclaration" roleId="tpd4.1227096521710" targetNodeId="tpck.1169194664001" resolveInfo="name" />

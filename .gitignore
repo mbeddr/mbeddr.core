@@ -22,6 +22,10 @@ TEST-*.xml
 junit*.properties
 
 # -----------------------------------------------------------
+# * build
+build/*/build
+
+# -----------------------------------------------------------
 # * diagrams
 code/languages/com.mbeddr.core/diagrams/*.dot
 code/languages/com.mbeddr.core/diagrams/*.gv

@@ -4,7 +4,6 @@
   <language namespace="c72da2b9-7cce-4447-8389-f407dc1158b7(jetbrains.mps.lang.structure)" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="tpce" modelUID="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" version="0" implicit="yes" />
-  <import index="punb" modelUID="r:401d5aa1-f59d-49c0-833e-cf94fb548e92(com.mbeddr.core.cstubs.structure)" version="1" implicit="yes" />
   <roots>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7097640331099443677">
       <property name="name" nameId="tpck.1169194664001" value="HeaderImportSpecHFile" />
@@ -28,6 +27,9 @@
     </node>
   </roots>
   <root id="7097640331099443677">
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7979240492616395082">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="7979240492616395071" resolveInfo="HeaderImportSpec" />
+    </node>
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="7097640331099443690">
       <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
       <property name="role" nameId="tpce.1071599776563" value="defines" />
@@ -55,9 +57,6 @@
     <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="7097640331099443678">
       <property name="name" nameId="tpck.1169194664001" value="includeDir" />
       <link role="dataType" roleId="tpce.1082985295845" targetNodeId="tpck.1082983041843" resolveInfo="string" />
-    </node>
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7979240492616395082">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="7979240492616395071" resolveInfo="HeaderImportSpec" />
     </node>
   </root>
   <root id="7097640331099443679">
@@ -95,7 +94,7 @@
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="tpck.1169194658468" resolveInfo="INamedConcept" />
     </node>
     <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="3907424226054658972">
-      <property name="value" nameId="tpce.1105725733873" value="#define" />
+      <property name="value" nameId="tpce.1105725733873" value="header" />
       <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473891462" resolveInfo="alias" />
     </node>
   </root>

@@ -1,11 +1,13 @@
 \section{Debugging}
 
+\todo{Domenik, can you please check this for accuracy?}
+
 mbeddr comes with a Debugger for core C. The debugger can also debug the
 standard extensions and is extensible for user-defined extensions. In this
 section we describe how to debug C programs.
 
 \greyboxnote{We assume the default configuration, where we use \ic{gdb} as the
-debug backed. Debugging on some target device is currently not yet supported.}
+debug backed. Debugging on some target device is not yet supported.}
 
 The Hello World project contains a model called \ic{Debugger.Example} that
 contains a simple program that makes use of a number of C extensions. We will
@@ -50,7 +52,7 @@ The launch configurations drop down at the top of the MPS screen should now
 show this new configuration:
 
 \begin{center} 
-  \includegraphics[width=5cm]{figures/core/debugger4.png}
+  \includegraphics[width=6cm]{figures/core/debugger4.png}
 \end{center}
 
 
@@ -72,7 +74,7 @@ Next, run the previously created debug configuration by pressing
 (see next figure).
 
 \begin{center} 
-  \includegraphics[width=5cm]{figures/core/debugger5.png}
+  \includegraphics[width=6cm]{figures/core/debugger5.png}
 \end{center}
 
 The debugger should start up and stop at the breakpoint we had set before.

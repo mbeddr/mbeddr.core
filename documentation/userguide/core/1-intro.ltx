@@ -1,54 +1,4 @@
-
-\vspace{50mm}
-
-
-\begin{center} 
-  \includegraphics{logoWithSlogan.png}
-
-\vspace{5mm}
-This document is part of the \\ 
-mbeddr project at \ic{http://mbeddr.com}. 
-
-\vspace{5mm}
-This document is licensed under the \\ 
-Eclipse Public License 1.0 (EPL).
-\end{center}
-
-
-
-\newpage
-
-
-\setcounter{tocdepth}{2}
-\tableofcontents
- 
-\newpage
-
-
-\section{Language Use vs. Language Development}
-
-This document focuses on the C programmer who wants to exploit the benefits of
-the extensions to C provided by mbeddr. We assume that you have some knowledge
-of regular C (such asK\&R C, ANSI C or C99). We also assume that you realize
-some of the shortfalls of C and are "open" to the improvements in mbeddr C. The
-main point of mbeddr C is the ability to extend it with domain-specific
-concepts such as state machines, components, or whatever you deem useful in your
-domain. We have also removed some of the "dangerous" features of C that are
-often prohibited from use in real world projects. 
-
-This document covers mbeddr \emph{core}, which is mainly a subset of the C
-language for MPS. We do not discuss any extensions of the C language for
-development in the embedded area, such as e.g. support for statemachines, type
-safe units etc. These will be discussed in separate documents once they become
-available.
-
-\greyboxnote{As of now, these extension modules are not yet released. They have
-to be polished further. They will become available in 2012.}
-  
-This document does not discuss how to develop new languages or extend existing
-languages. We refer to the \emph{Extension Guide} instead. It is available from
-\ic{http://mbeddr.com}.
-
+\chapter{Installing and Setup}
 
  
 \section{Installation}
@@ -69,15 +19,15 @@ Development Kit version 1.6 or greater (JDK 1.6). You can get it from here \\
 
 The mbeddr system is based on JetBrains MPS, an open source language workbench
 available from \ic{http://www.jetbrains.com/mps/}. MPS is available for Windows,
-Mac and Linux, and we require the use of the 2.0.4 version. Please make sure you
+Mac and Linux, and we require the use of the 2.5.x version. Please make sure you
 install MPS in a path that does not contains blanks in any of its directory or
-file names (not even in the \ic{MPS 2.0} folder). This will simplify some of the
+file names (not even in the \ic{MPS 2.5} folder). This will simplify some of the
 command line work you may want to do.
 
 After installing MPS using the platform-specific installer, please open the
 \ic{bin} folder and edit the \ic{mps.vmoptions}  or \ic{mps.exe.vmoptions} file
 (depending on your platform). To make MPS run smoothly, the \ic{MaxPermSize}
-setting should be increased to \ic{512m}. It should look like this
+setting should be increased to at least \ic{512m}. It should look like this
 after the change:
 
 \begin{code}
@@ -100,12 +50,13 @@ The mbeddr toolkit relies on \ic{gcc} and \ic{make} for compilation (unless you
 use a different, target-specific build process). 
 
 \begin{itemize}
-  \item On Mac you should install XCode to get gcc, make and the associated tools.
+  \item On Mac you should install XCode to get \ic{gcc}, \ic{gdb}, \ic{make} and the
+  associated tools.
   \item On Linux, these tools should be installed by default.
   \item On Windows we recommend installing cygwin
      (\ic{http://www.cygwin.com/}), a Unix-like environment for Windows. When
-selecting the packages to be installed, make sure \ic{gcc-core} and \ic{make}
-are included (both of them are in the \ic{Devel} subtree in the selection
+selecting the packages to be installed, make sure \ic{gcc-core}, \ic{gdb} and
+\ic{make} are included (both of them are in the \ic{Devel} subtree in the selection
 dialog). The \ic{bin} directory of your cygwin installation has to be added to the system
 \ic{PATH} variable; either globally, or in the script that starts up MPS (MPS
 runs \ic{make}, so it has to be visible to MPS). On Windows, the \ic{mps.bat}
@@ -163,9 +114,9 @@ for loading the native code. This plugin is packaged into a zip file named
 In order to use the debugger, please unzip this plugin into the \ic{plugins}
 directory of your MPS installation.
 
-\section{Important keyboard shortcuts in MPS and mbeddr}
+\todo{How do people get it if they use the downloaded ZIP file? Is it in there?}
 
-\subsection{MPS in general}
+\section{Important keyboard shortcuts in MPS}
 
 MPS is a projectional editor. It does not parse text and build an Abstract
 Syntax Tree (AST). Instead the AST is created directly by user editing actions,
@@ -271,58 +222,8 @@ refactorings in the user's guide. Unlike intentions, which cannot have a
 specific keyboard shortcut assigned, refactorings can, and we make use of this
 feature heavily. The next section introduces some of these.
 
-
-\subsection{mbeddr specific shortcuts}
-
-\paragraph{Documentation} Many program elements can be documented. Examples
-include statements, functions, global variables or structs. A
-documentation is basically free text associated with a program element. 
-
-We distinguish documentation from commenting out code (explained below). A
-documentation is shown as a grey comment above the commented element (the
-documentation is really attached to the element, and not just written into a
-line above it --- a subtle but important difference!)
+\greyboxnote{Since MPS 2.5, MPS comes with a productivity guide and actually useful hints and
+tips at startup. The productivity guide tracks the commands you use and
+recommends more productive ones. Find it in the \ic{Help} menu.}
 
 
-\begin{center} 
-  \includegraphics[width=9cm]{figures/core/documentation.jpg}
-\end{center}
-
-Documentation can be added using the \emph{Add Documentation} intention, or by
-using \keystroke{Ctrl-Alt-D} on the respective element.
-
-Note that comments are only shown if they are turned on. You can use the context
-menu on any program element and select $Toggle Docs$ to enable/disable display
-of comments. As soon as a comment is added, comment display is automatically
-turned on.
-
-
-\paragraph{Commenting out Code} Code that is commented out retains its syntax
-highlighting, but is shaded with a grey background. 
-
-\begin{center} 
-  \includegraphics[width=9cm]{figures/core/commenting.jpg}
-\end{center}
-
-Code can be commented out by pressing \keystroke{Ctrl-Alt-C} (this is
-technically a refactoring, so this feature is also availale from the
-refactorings context menu). This also works for lists of elements. Commented out
-code can be commented back in by pressing \keystroke{Ctrl-Alt-C} on the comment
-itself (the \ic{//}) or the commented element. 
-
-Commenting out code is a bit different than in regular, textual systems because
-code that is commented out is still "live": it is still stored as a tree, code
-completion still works in it, it may still be shown in $Find References$, and
-refactorings may affect the code. We are not sure if this is a desirable feature
-and we are looking for your feedback. Of course, the code is not executed. All
-commented program elements are removed during code generation.
-
-\greyboxnote{The current implementation of comments is still a little bit of a
-hack since we are waiting for some direct support by MPS. For example, errors
-should not be shown in commented code, and we are sure other quirks will arise
-as we continue using mbeddr.}
-
-Not all program elements can be commented out (since special support by the
-language is necessary to make something commentable), only concepts that
-implement \ic{ICommentable} can be commented. At this time, this is all
-statements and module contents.

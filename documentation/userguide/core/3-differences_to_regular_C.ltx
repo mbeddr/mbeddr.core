@@ -1,10 +1,11 @@
-\section{Differences to regular C}
+\section{mbeddr core: Differences to regular C}
 
-This section describes the differences between \emph{mbeddr C} and regular C99.
+This section describes the differences between mbeddr C and regular C99.
 All examples shown in this chapter can be found in the \emph{HelloWorld} project
 that is available for download together with the \emph{mbeddr.core}
 distribution.
 
+\todo{Use noindent consistently} 
  
 \subsection{Preprocessor}
 
@@ -14,49 +15,48 @@ the chaos that can be created by misusing the preprocessor and provides much
 better analyzability. We will provide examples later.
 
 The major consequence of not having a preprocessor is that the separation
-between header and implementation file does not work anymore. mbeddr provides
-\ic{modules} instead.
+between header and implementation file is not exposed to the programmer. mbeddr
+provides \ic{modules} instead.
 
 
 \subsection{Modules}
+\label{modules}
 
-While we \emph{generate} header files, we don't \emph{expose} them to the
-user in MPS. Instead, we have defined modules as the top-level concept.
-Modules also act as a kind of namespace. Module contents can be exported, in
-which case, if a module is imported by another module, the exported contents
-can be used by the importing module.
+While we \emph{generate} header files, we don't \emph{expose} them to the user
+in MPS. Instead, we have defined modules as the top-level concept. Modules also
+act as a kind of namespace. Module contents can be exported, in which case, if a
+module is imported by another module, the exported contents can be used by the
+importing module.
 
 
 We distinguish between \emph{implementation modules} which contain actual
 implementation code, and \emph{external modules} which act as proxies for
-pre-existing header files that we want to be able to use from within mbeddr C
+existing, non-mbeddr header files that should be accessible from within mbeddr C
 programs.
 
 
 \paragraph{Implementation Modules} The following example shows an implementation
 module (\ic{ImplementationModule}) with an exported function. You can toggle the
 \emph{exported} flag with the intention \intention{Toggle Export}. The second
-module (\ic{ModuleUsingTheExportedFunction}) imports the
-\ic{ImplementationModule} with the \ic{imports} keyword in the module header. An
-importing module can access all exported contents defined in imported modules.
+module (\ic{Module- UsingTheExportedFunction}) imports the
+\ic{ImplementationModule} with the \ic{im- ports} keyword in the module header.
+An importing module can access all exported contents defined in imported modules.
 
 
 \begin{code}
-module ImplementationModule from HelloWorld.ImplementationModules 
-  imports nothing { 
+module ImplementationModule imports nothing { 
    
   exported int32_t add(int32_t i, int32_t j) { 
     return i + j; 
-  } add (function) 
+  } 
 }
 
-module ModuleUsingTheExportedFunction from HelloWorld.ImplementationModules
-  imports ImplementationModule {
+module ModuleUsingTheExportedFunction imports ImplementationModule {
 
   int32_t main(int8_t argc, string[ ] args) { 
     int32_t result = add(10, 15); 
     return 0; 
-  } main (function) 
+  } 
 }
 \end{code}
 
@@ -79,38 +79,11 @@ code and existing C libraries. So to call existing functions or instantiate
   corresponding build configuration.
 \end{itemize}
 
-\greyboxnote{In the future we will provide a mechanism to automatically import
-existing header files into an external module. As of now, the relevant
-signatures etc. have to be typed in manually.}
 
-The following code shows the external module \ic{STDIO}. In the
-\ic{resources} section, you have to provide the path to the resources
-associated with this external module. You can add \ic{header}s and
-\ic{linkable}s (\ic{.o} or \ic{.a} files) here. Since \ic{gcc} knows what to
-link when \ic{<stdio.h>} is included, we don't have to specify a linkable here. 
-
-\begin{code}
-external module STDIO resources header : <stdio.h> 
-  // external module contents are exported by default 
-{ 
-  void printf(string format, ...); 
-}
-\end{code}
-
-To call methods from external modules, you have to import the external module
-into your implementation module with \ic{imports STDIO}. You can add now call
-the \ic{printf} function defined in the external module. 
-
-\begin{code}
-module MainApp from HelloWorld.ExternalModules imports STDIO { 
-   
-  int32_t main() { 
-    printf("Dies ist ein stdout.printf Text: %s\n", "Noch einer"); 
-    return 0; 
-  } main (function) 
-}
-\end{code}
-
+Manually entering the contents of the header file into an external module is
+tedious and error-prone. mbeddr comes with an automatic import for external
+header files. Since this process is not as trivial as it may seem, we discuss it
+extensively in \sect{headerimport}.
 
 
 \subsection{Build configuration}
@@ -128,39 +101,25 @@ Binaries are either executables or libraries.
 compiles them into an executable. Exactly one module in a executable shall have
 a main function.
 
-The build configuration, if it uses the \ic{desktop} target, results in a
-\ic{make} file which is automatically invoked as part of the MPS build,
-resulting in the corresponding executable binaries. The generated code, the make
+The build configuration, if it uses the \ic{desktop} target, is generated into
+a \ic{make} file which is automatically run as part of the MPS build,
+resulting in the corresponding executables. The generated code, the \ic{make}
 file and the executables can be found in the \ic{source\_gen} folder of the
-respective solution.
+respective solution (this directory can be changed via the \ic{Generator Output
+Path} property in the solution properties).
 
 \greyboxnote{The build language is designed to be extended for integration with
 other build infrastructures. In that case, other targets (than \ic{desktop})
 would be provided by the language that provides integration with a particular
 build infrastructure.}
 
-Below is the build configuration of the \ic{ExternalModules} example. It defines
-one executable \ic{Application}. It consist of the modules \ic{MainApp} and
-\ic{STDIO}.
-
-
-\begin{code}
-executable Application isTest: false { 
-  used libraries 
-    << ... >> 
-  included modules 
-    MainApp 
-    STDIO 
-}
-\end{code}
 
  
 \paragraph{Libraries} Libraries are binaries that are not executable.
-Specifically, they are \ic{libXXXX.a} files. They can be linked into
-executables. A library will typically reside in its own MPS model (and
-hence in its own \ic{source\_gen} directory).
-
-To create a library, create a build configuration with a \ic{static library}:
+Specifically, they are \ic{libXXXX.a} files which can be linked into
+executables. A library will typically reside in its own MPS model (and hence in
+its own \ic{source\_gen} directory). To create a library, create a build
+configuration with a \ic{static library}:
 
 \begin{code}
 static library MathLib { 
@@ -169,25 +128,28 @@ static library MathLib {
 }
 \end{code}
 
-Running the resulting make file will create a \ic{libMathLib.a}.
-
-Using the library for inclusion in an executable (which \emph{has} to be in a
-different MPS model!) requires the following three steps:
+Running the resulting make file will create a \ic{libMathLib.a}. Using the
+library for inclusion in an executable (which \emph{must} be in a different
+MPS model!) requires the following three steps:
 
 \begin{itemize}
   \item You have to import the model. Open the properties of the model that
   contains the code that \emph{uses} the library, and add the model that
-  \emph{contains} the library to the \ic{Imported Models} (\fig{modelImport}).
+  \emph{contains} the library to the \ic{Imported Models}.
   This is necessary so that MPS can see the nodes defined in that model.
-  \item In the implementation module that wants to use the functionality defined
+  
+\begin{center} 
+  \includegraphics[width=10cm]{figures/core/modelimport.png}
+\end{center}
+
+  \item In the implementation module that wants to \emph{use} the functionality defined
   in the library, import the corresponding module(s) from the library. The
   importing module will see all the exported contents in the imported module 
   (this is just like any other inter-module dependency).
   \item finally, in the build configuration of the executable that \emph{uses}
   the library, the used library has to be specified in the \ic{used libraries}
-  section. 
-\end{itemize}
-
+  section:
+  
 \begin{code}
 executable AnExe isTest: true { 
   used libraries 
@@ -195,19 +157,12 @@ executable AnExe isTest: true {
   included modules 
     MainModule 
 }
-\end{code}
+\end{code}  
+  
+\end{itemize}
 
-\begin{figure}
-	\vspace{0.2cm}
-	\rule{\textwidth}{0.7pt}
-	\begin{center} 
-	  \includegraphics[width=12cm]{figures/core/modelimport.png}
-	\end{center}
-	\vspace{-0.3cm}
-	\rule{\textwidth}{0.7pt}
-	\caption{Importing a model that contains a library}
-	\label{modelImport}  
-\end{figure}
+
+
 
 
 \subsubsection{Extending the Build Process}
@@ -217,11 +172,12 @@ discuss details in the extension guide, but here are a couple of hints:
 
 \begin{itemize}
   \item New configuration items can be contributed by implementing the
-  \ic{IConfigurationItem} interface. They are expected to be used from
+  \ic{IConfigu- rationItem} interface. They are expected to be used from
   transformation code. It can find the relevant items by querying the current
-  model for a root of type \ic{IConfigurationContainer}.
+  model for a root of type \ic{IConfigurationContainer} and by using the
+  \ic{BCHelper} helper class.
   \item New platforms can be contributed by extending the \ic{Platform} concept.
-  Users then also have to provide a generator for \ic{BuildConfigurations}.
+  Users then also have to provide a generator for \ic{BuildConfiguration}s.
 \end{itemize} 
 
 
@@ -231,45 +187,47 @@ discuss details in the extension guide, but here are a couple of hints:
 Unit Tests are supported as first class citizens by mbeddr C. A \ic{TestCase}
 implements \ic{IModuleContent}, so it can be used in implementation modules
 alongside with functions, \ic{struct}s or global variables. To assert the
-correctness of a result you have to use the \ic{assert} statement followed by an
-Boolean expression (note that \ic{assert} can just be used \emph{only }inside
+correctness of a result you have to use the \ic{assert} statement followed by a
+Boolean expression (note that \ic{assert} can just be used \emph{only} inside
 test cases). A \ic{fail} statement is also available --- it fails the test
 unconditionally.
 
 \begin{code}
-module AddTest from HelloWorld.UnitTests imports nothing { 
+module AddTest imports nothing { 
    
   exported test case testAddInt { 
     assert(0) 1 + 2 == 3; 
     assert(1) -1 + 1 == 1; 
-  } testAddInt(test case) 
+  }  
   
  
   exported test case testAddFloat { 
     float f1 = 5.0; 
     float f2 = 10.5; 
     assert(0) f1 + f2 == 15.5; 
-  } testAddFloat(test case) 
+  }  
 }
 \end{code}
 
 
 The next piece of code shows a main function that executes the test cases
-imported from the \ic{AddTest} module. The \ic{test} expression supports invocations of test
-cases; it also evaluates to the number of failed assertions. By returning this
-value from \ic{main}, we get an exit code != 0 in the case a test failed.
+imported from the \ic{AddTest} module. The \ic{test} expression supports
+invocations of test cases; it also evaluates to the number of failed assertions.
+By returning this value from \ic{main}, we get an exit code != 0 in the case a
+test failed.
 
 \begin{code}
 module TestSuite from HelloWorld.UnitTests imports AddTest { 
   int32_t main() { 
     return test testAddInt, testAddFloat; 
-  } main (function) 
+  } 
 }
 \end{code}
 
-In the build configuration, the \ic{isTest: true} flag can be set to true; this
-adds a \ic{test} target to the make file, so you can call \ic{make test} on the
-command line in the \ic{source\_gen} folder to run the tests. 
+For executables that contain tests, in the build configuration, the \ic{isTest}
+flag can be set to \ic{true}; this adds a \ic{test} target to the \ic{make} file, so
+you can call \ic{make test} on the command line in the \ic{source\_gen} folder
+to run the tests.
 
 The example above contains a failing assertion \ic{assert(1) -1 + 1 == 1;}.
 Below is the console output after running \ic{make test} in the generated source
@@ -293,6 +251,26 @@ runningTest: running test @AddTest:test_testAddFloat:0
 \end{code}
 
  
+Test cases can of course call arbitrary functions. However, as we have stated
+earlier, \ic{assert} and \ic{fail} statements must reside in test cases, not in
+arbitrary functions (this is related to the way the failures are
+implicitly counted and returned back from a test case). However, functions can
+be marked as a \ic{test helper} using an intention. \ic{assert} and \ic{fail}
+can be used within test helper functions. Test helpers must be called \emph{directly}
+from test cases!
+
+\begin{code}
+exported test case testAddFloat { 
+  assert(0) 1 + 2 == 3; 
+  moreStuff(10, 20, 30); 
+} 
+
+test helper
+void moreStuff(int8_t x, int8_t y, int8_t z) { 
+  assert(0) x + y == z; 
+} 
+\end{code}
+ 
 
 \subsection{Primitive Numeric Datatypes}
 \label{PrimitiveNumericDatatypes}
@@ -301,29 +279,19 @@ The standard C data types (\ic{int}, \ic{long}, etc.) have different sizes on
 different platforms. This makes them non-portable. C99 provides another set of
 primitive data types with clearly defined sizes (\ic{int8\_t}, \ic{int16\_t}).
 In mbeddr C you \emph{have} to use the C99 types, resulting in more portable
-programs. To be able to work with existing header files, the system has to know
-how the C99 types relate to the standard primitive types. This is the purpose of
-the \ic{TypeSizeConfiguration}. It establishes a mapping between the C99 types
-and the standard primitive types. 
+programs. However, to be able to work with existing header files, the system has
+to know how the C99 types relate to the standard primitive types. This is the
+purpose of the \ic{TypeSizeConfiguration}. It establishes a size-mapping between
+the C99 types and the standard primitive types. The \ic{TypeSizeConfiguration}
+mentioned above can be added with the \intention{Create default type size
+configuration} (see screenshot below) on modules, or by creating one through the
+$New$ menu on models. Every model has to contain exactly one type size
+configuration. To fill an existing empty type size configuration with the
+default values, you can use an intention on the \ic{TypeSizeConfiguration}.
 
-The \ic{TypeSizeConfiguration} mentioned above can be added with the
-\intention{Create default type size configuration} (\fig{addDefaultTSC}) on
-modules, or by creating one through the $New$ menu on models. Every model has to
-contain exactly one type size configuration. To fill an existing empty
-type size configuration with the default values, you can use
-an intention on the \ic{TypeSizeConfiguration}.
-
-\begin{figure}
-	\vspace{0.2cm}
-	\rule{\textwidth}{0.7pt}
-	\begin{center} 
-	  \includegraphics[width=7cm]{figures/core/AddDefaultTSC.png}
-	\end{center}
-	\vspace{-0.3cm}
-	\rule{\textwidth}{0.7pt}
-	\caption{Create default \ic{TypeSizeConfiguration}}
-	\label{addDefaultTSC}  
-\end{figure}
+\begin{center} 
+  \includegraphics[width=7cm]{figures/core/AddDefaultTSC.png}
+\end{center}
 
 \paragraph{Integral Types} The following integral types are not allowed in
 implementation modules, and can only be used in external modules for
@@ -333,12 +301,19 @@ types:
 
 \begin{itemize}
 	\item \lcr{int8\_t} $\rightarrow$ \lcr{char}
+	\vspace{-4mm}
 	\item \lcr{int16\_t} $\rightarrow$ \lcr{short}
+	\vspace{-4mm}
 	\item \lcr{int32\_t} $\rightarrow$ \lcr{int}
+	\vspace{-4mm}
 	\item \lcr{int64\_t} $\rightarrow$ \lcr{long long}
+	\vspace{-4mm}
 	\item \lcr{uint8\_t} $\rightarrow$ \lcr{unsigned char}
+	\vspace{-4mm}
 	\item \lcr{uint16\_t} $\rightarrow$ \lcr{unsigned short}
+	\vspace{-4mm}
 	\item \lcr{uint32\_t} $\rightarrow$ \lcr{unsigned int}
+	\vspace{-4mm}
 	\item \lcr{uint64\_t} $\rightarrow$ \lcr{unsigned long long}
 \end{itemize}
 
@@ -346,21 +321,24 @@ types:
 can alsoi be speficied, e.g. if they differ from the IEEE754 sizes.
 \begin{itemize}
 	\item \lcr{float} $\rightarrow$ \lcr{32}
+	\vspace{-4mm}
 	\item \lcr{double} $\rightarrow$ \lcr{64}
+	\vspace{-4mm}
 	\item \lcr{long double} $\rightarrow$ \lcr{128}
 \end{itemize}
 
 
-
+The type size configuration also requires the specification of the size of
+\ic{size\_t} and pointers.
 
 
 \subsection{Booleans}
 
 We have introduced a specific \ic{boolean} datatype, including the \ic{true} and
 \ic{false} literals. Integers cannot be used interchangably with Boolean values.
-We do provide a (red, ugly) cast operator between integers and booleans for reasons of
+We do provide a (red, ugly) cast operator between integers and booleans for
 interop with legacy code. The following example shows the usage of the Boolean
-data type. 
+data type.
 
 \begin{code}
 module BooleanDatatype from HelloWorld.BooleanDatatype imports nothing { 
@@ -370,7 +348,7 @@ module BooleanDatatype from HelloWorld.BooleanDatatype imports nothing {
     if ( !b ) { b = true; } if 
     assert(1) b == true; 
     assert(2) int2bool<1> == true;
-  } booleanTest(test case) 
+  }  
 }
 \end{code}
 
@@ -379,11 +357,11 @@ module BooleanDatatype from HelloWorld.BooleanDatatype imports nothing {
 
 mbeddr C supports special literals for hex, octal and binary
 numbers. The type of the literal is the smallest possible signed integer type
-(int8\_t, \ldots, int64\_t) that can represent the number.
+(\ic{int8\_t}, \ldots, \ic{int64\_t}) that can represent the number.
 
 
 \begin{code}
-module LiteralsApp from HelloWorld.Literals imports nothing { 
+module LiteralsApp imports nothing { 
    
   exported test case testLiterals { 
     int32_t intFromHex = hex<aff12>; 
@@ -394,11 +372,12 @@ module LiteralsApp from HelloWorld.Literals imports nothing {
      
     int32_t intFromBin = bin<100110011>; 
     assert(2) intFromBin == 307; 
-  } testLiterals(test case) 
+  }  
 }
 \end{code}
 
-
+All number literals, including decimal literals are signed by default. A suffix
+\ic{u} can be added to make them unsigned.
 
 \subsection{Pointers}
 
@@ -409,13 +388,13 @@ is a characteristic of a type, not of a variable.
 
 
 \paragraph{Pointer Arithmetics} For pointer arithmetics you have to use an
-explicit type conversion \ic{pointer2int} and \ic{int2pointer}. For more
-details, look at the following example. You also see the usage of pointer
-dereference (\ic{*xp}) and assigning an address with \ic{\&}.
+explicit type conversion \ic{pointer2int} and \ic{int2pointer}, as illustrated
+in the following code. You can also see the usage of pointer dereference
+(\ic{*xp}) and assigning an address with \ic{\&}.
 
 
 \begin{code}
-module BasicPointer from HelloWorld.Pointer imports stdlib {  
+module BasicPointer imports stdlib {  
   
   exported test case testBasicPointer { 
      
@@ -431,7 +410,7 @@ module BasicPointer from HelloWorld.Pointer imports stdlib {
     ap = int2pointer<pointer2int<ap> + 1>; 
     assert(2) *ap == 5; 
 
-  } testBasicPointer(test case)   
+  }   
   ...
 }
 \end{code}
@@ -439,8 +418,8 @@ module BasicPointer from HelloWorld.Pointer imports stdlib {
 
 Memory allocation works the same way as in regular C except that you need an
 external module to call functions such as \ic{malloc} from \ic{stdlib}. The next
-example shows how to do this. Note that \ic{size\_t} is a primitive type, built
-into mbeddr. It's size is also defined in a \ic{TypeSizeConfiguration}.
+example illustrates how to do this. Note that \ic{size\_t} is a primitive type,
+built into mbeddr. It's size is also defined in a \ic{TypeSizeConfiguration}.
 
 \begin{code}
 external module stdlib resources header : <stdlib.h> 
@@ -450,19 +429,19 @@ external module stdlib resources header : <stdlib.h>
 }
 \end{code}
 
-You have to include the external module \ic{stdlib} in your implementation module
-with \ic{imports stdlib}. You can then call \ic{malloc} or \ic{free}:
+You have to include the external module \ic{stdlib} in your implementation
+module with \ic{imports stdlib}. You can then call \ic{malloc} or \ic{free}:
 
 
 \begin{code}
-module BasicPointer from HelloWorld.Pointer imports stdlib {    
+module BasicPointer imports stdlib {    
   ...
   exported test case mallocTest { 
     int8_t* mem = ((int8_t*) malloc(sizeof int8_t)); 
     *mem = 10; 
     assert(0) *mem == 10; 
     free(mem); 
-  } mallocTest(test case) 
+  } 
 }
 \end{code}
 
@@ -470,56 +449,43 @@ module BasicPointer from HelloWorld.Pointer imports stdlib {
 \paragraph{Function Pointers} In regular C, you define a function pointer type
 like this: \ic{int (*pt2Function) (int, int)}. The first part is the return
 type, followed by the name und a comma separated argument type list. The pointer
-asterisk is added before the name. This is a rather ugly notation; we've cleaned
-it up in mbeddr C.
-
-
-In mbeddr, we have introduced the notion of function types and function
-references. These are syntactically different from pointers (of course they are
-mapped to function pointers in the generated C code). We have also introduced
-lambdas (i.e. closures without their own state).
+asterisk is added before the name. This is a rather ugly notation. In mbeddr, we
+have introduced the notion of function types and function references. These are
+syntactically different from pointers (of course they are mapped to function
+pointers in the generated C code). We have also introduced lambdas (i.e.
+closures without their own state).
 
 
 For function types you first define the argument list and then the return type,
 separeted by \ic{=>} (a little bit like Scala). Here is an example:
 \ic{(int32\_t, int32\_t)=>(int32\_t)} You can enter a fuction type by using the
-\ic{funtype} alias (see \fig{addFunctionPointer}). Function types are types, so
-they can be used in function signatures, local variables or \ic{typedef}s, just
-like any other type (see example \em{HelloWorld.Pointer.FunctionPointerAsTypes}).
+\ic{funtype} alias,  (see figure below). Function types are types, so they can
+be used in function signatures, local variables or \ic{typedef}s, just like any
+other type (see example \em{HelloWorld.Pointer.FunctionPointerAsTypes}).
 
-
-\begin{figure}
-	\vspace{0.2cm}
-	\rule{\textwidth}{0.7pt}
-	\begin{center} 
-	  \includegraphics[width=7cm]{figures/core/AddFunctionPointer.png}
-	\end{center}
-	\vspace{-0.3cm}
-	\rule{\textwidth}{0.7pt}
-	\caption{Add a function pointer with code completion}
-	\label{addFunctionPointer}  
-\end{figure}
+\begin{center} 
+  \includegraphics[width=7cm]{figures/core/AddFunctionPointer.png}
+\end{center}
 
 Values of type \ic{funtype} are either references to functions or lambdas. In
 regular C, you have use the address operator to obtain a function pointer
 (\ic{\&function}). In mbeddr C, you use the \ic{:} operator (as in
-\ic{:someFunction}) do distinguish function referneces from regular pointer
+\ic{:someFunction}) to distinguish function references from regular pointer
 stuff. Of course the type and values have to be compatible; for function types
 this means that the signature must be the same. The following example shows the
 use of function references:
 
 
 \begin{code}
-module FunctionPointer from HelloWorld.Pointer imports nothing { 
+module FunctionPointer imports nothing { 
    
   int32_t add(int32_t a, int32_t b) { 
     return a + b; 
-  } add (function) 
-  
+  } 
  
   int32_t minus(int32_t a, int32_t b) { 
     return a - b; 
-  } minus (function) 
+  } 
   
   exported test case testFunctionPointer { 
     // function pointer signature 
@@ -532,7 +498,7 @@ module FunctionPointer from HelloWorld.Pointer imports nothing {
     // assign "minus" 
     pt2Function = :minus; 
     assert(1) pt2Function(20, 10) == 10; 
-  } testFunctionPointer(test case) 
+  } 
 }
 \end{code}
 
@@ -548,22 +514,22 @@ first parameter.
 
 
 \begin{code}
-module FunctionPointerAsTypes from HelloWorld.Pointer imports nothing { 
+module FunctionPointerAsTypes imports nothing { 
    
   typedef (int32_t, int32_t)=>(int32_t) as ftype; 
  
   int32_t add(int32_t a, int32_t b) { 
     return a + b; 
-  } add (function) 
+  }  
  
   exported test case testFunctionPointer { 
     // call "add" 
     assert(0) doOperation(:add, 20, 10) == 30; 
-  } testFunctionPointer(test case) 
+  } 
   
   int32_t doOperation(ftype operation, int32_t firstOp, int32_t secondOp) { 
     return operation(firstOp, secondOp); 
-  } doOperation (function) 
+  } 
 }
 \end{code}
 
@@ -573,17 +539,17 @@ function. The syntax for a lambda is \ic{[arg1, arg2,
 \ldots|an-expression-using-args]}. The following is an example:
 
 \begin{code}
-module Lambdas from HelloWorld.Pointer imports nothing { 
+module Lambdas imports nothing { 
    
   typedef (int32_t, int32_t)=>(int32_t) as ftype; 
 
   exported test case testFunctionPointer { 
     assert(0) doOperation([a, b|a + b;], 20, 10) == 30; 
-  } testFunctionPointer(test case) 
+  } 
  
   int32_t doOperation(ftype operation, int32_t firstOp, int32_t secondOp) { 
     return operation(firstOp, secondOp); 
-  } doOperation (function) 
+  } 
 }
 \end{code}
 
@@ -597,9 +563,10 @@ enumerations.
 
 \greyboxnote{We may add a way to cast enums to ints later if it turns out that
 "enum arithmetics" are necessary}.
+\todo{What is the current state?}
 
 \begin{code}
-module EnumerationApp from HelloWorld.Enumerations imports nothing { 
+module EnumerationApp imports nothing { 
    
   enum SEASON { SPRING; SUMMER; AUTUMN; WINTER; } 
  
@@ -608,125 +575,37 @@ module EnumerationApp from HelloWorld.Enumerations imports nothing {
     assert(0) season != WINTER; 
     season = WINTER; 
     assert(1) season == WINTER; 
-  } testEnumeration(test case) 
+  } 
 }
 \end{code}
 
 
 \subsection{Goto}
 
-There is no \ic{goto} in mbeddr C.
-
-\greyboxnote{This may change :-)}
-
-
-\subsection{Switch statement}
-
-In the \ic{switch} statement, we don't use the annoying fall through semantics. Only
-one \ic{case} within the \ic{switch} will ever be executed, since we automatically
-generate a break statement into the generated C code. You can also add an
-\ic{default} statement which will be executed if no other case match.
-
-The next example shows a \ic{switch} statement with integers and enumeration as 
-the switched expression. 
-
-\begin{code}
-module SwitchStatement from HelloWorld.SwitchStatement imports nothing { 
-   
-  var int32_t globalState; 
-
-  enum DAY { MONDAY; THUESDAY; WEDNESDAY; } 
-  
-  exported test case testSwitchCase { 
-    globalState = -1; 
-     
-    // Switch with int 
-    callSwitch(0); 
-    assert(0) globalState == 20; 
-     
-    callSwitch(1); 
-    assert(1) globalState == 0; 
-     
-    callSwitch(2); 
-    assert(2) globalState == 10; 
-     
-     
-    // Switch with day 
-    callSwitchWithEnumeration(MONDAY); 
-    assert(3) globalState == 1; 
-     
-    callSwitchWithEnumeration(WEDNESDAY); 
-    assert(4) globalState == 3; 
-     
-    callSwitchWithEnumeration(THUESDAY); 
-    assert(5) globalState == 2; 
-  } testSwitchCase(test case) 
-  
- 
-  void callSwitch(int32_t state) { 
-    switch ( state ) { 
-      case 1: { globalState = 0; break; } 
-      case 2: { globalState = 10; break; } 
-      default: { globalState = 20; break; } 
-    } switch 
-  } callSwtich (function) 
-  
- 
-  void callSwitchWithEnumeration(DAY day) { 
-    switch ( day ) { 
-      case MONDAY: { globalState = 1; break; } 
-      case THUESDAY: { globalState = 2; break; } 
-      case WEDNESDAY: { globalState = 3; break; } 
-    } switch 
-  } callSwitchWithEnumeration (function) 
-}
-\end{code}
-
-
+mbeddr C supports the definition of labels and the \ic{goto} statement. We
+discourage its use. However, \ic{goto}s are useful for implementing
+code generators for domain-specific abstractions. This is why they are
+available.
 
 \subsection{Variables}
 
-\subsubsection{Global variables}
 
-Global variables start with the keyword \ic{var}. In every other respect they
-are identical to regular C. Like all other module contents, it can be
-\ic{exported}.
-
-\begin{code}
-module GlobalVariables from HelloWorld.Variables imports nothing { 
-   
-  var int32_t globalInt32; 
- 
-  exported test case testGlobalVariables { 
-    setGlobalVar(10); 
-    assert(0) globalInt32 == 10; 
-    setGlobalVar(20); 
-    assert(1) globalInt32 == 20; 
-    return; 
-  } testGlobalVariables(test case) 
-  
-  void setGlobalVar(int32_t globalVarValue) { 
-    globalInt32 = globalVarValue; 
-  } setGlobalVar (function) 
-}
-\end{code}
-
-
-\subsubsection{Local variables}
-At this point a local variable declaration can only declare one variable at a
-time; otherwise is it is just like in C (so you cannot write \ic{int a,b;}).
+Global variables are identical to regular C. Like all other module contents,
+they can be \ic{exported}. A local variable declaration can only declare one
+variable at a time; otherwise is it is just like in C (so you cannot write
+\ic{int a,b;}).
 
 
 
 \subsection{Arrays}
 
-Array brackets must show up after the type, not the variable name. The
-following example shows the usage of arrays in mbeddr C, which also supports
-multi-dimensional arrays. Their usage is equivalent to regular C.
+Array brackets must show up after the type, not the variable name. The following
+example shows the usage of arrays in mbeddr C, incl. multi-dimensional arrays.
+Their usage is equivalent to regular C.
 
 
 \begin{code}
-module ArrayApplication from HelloWorld.Arrays imports nothing { 
+module ArrayApplication imports nothing { 
    
   exported test case arrayTest { 
     int32_t[3] array = {1, 2, 3}; 
@@ -735,7 +614,7 @@ module ArrayApplication from HelloWorld.Arrays imports nothing {
      
     int8_t[2][2] array2 = {{1, 2}, {3, 4}}; 
     assert(1) array2[1][1] == 4; 
-  } arrayTest(test case) 
+  }  
 }
 \end{code}
 
@@ -743,16 +622,15 @@ module ArrayApplication from HelloWorld.Arrays imports nothing {
 
 \subsection{Reporting}
 
-Reporting or logging is provided as a special concept. It's designed as a
+Reporting (or logging) is provided as a special concept. It's designed as a
 platform-independent reporting system. With the current generator and the
 \ic{desktop} setting in the build configuration, \ic{report} statements are
 generated into a \ic{printf}. For other target platforms, other translations
 will be supported in the future, for example, by storing the message into some
 kind of error memory.
 
-
 If you want to use reporting in your module, you first have to define a
-\ic{message list } in a module. Inside, you can add \ic{MessageDefinition}s with
+\ic{message list} in a module. Inside, you can add \ic{MessageDefinition}s with
 three different severities: \ic{ERROR} (default), \ic{INFO} and \ic{WARN}. 
 
 Every message definition has a name (acts as an identifier to reference a
@@ -766,7 +644,7 @@ disabled; use the corresponding intentions on the messages to enable/disable
 each message).
 
 \begin{code}
-module Reporting from HelloWorld.Reporting imports nothing { 
+module Reporting imports nothing { 
    
   message list demo { 
     INFO programStarted() active: Program has just started running 
@@ -778,7 +656,7 @@ module Reporting from HelloWorld.Reporting imports nothing {
     report(0) demo.programStarted();
     report(1) demo.noArgumentPassedIn(argc) on argc == 0; 
     return 0; 
-  } main (function) 
+  } 
 }
 \end{code}
  
@@ -793,7 +671,131 @@ messages by using intentions on the message list.
 \greyboxnote{At this time there is no way of enabling/disabling messages at
 runtime. This will be added in the future.}
 
+
+\todo{Discuss counting of message calls:
+test.ex.ext.components.ppc.CalculatorExample}
+
+
 \subsection{Assembly Code}
 
 At this point we are not able to write inline assembler. We will enable this
 feature in the future.
+
+
+\subsection{Comments}
+
+In mbeddr we distinguish between commenting out code and adding documentation.
+The former retains the AST structure of code, but wraps it in a comment. The
+latter supports adding prose text to program elements.
+
+
+\paragraph{Commenting out Code} Code that is commented out retains its syntax
+highlighting, but is shaded with a grey background. 
+
+\begin{center} 
+  \includegraphics[width=9cm]{figures/core/commenting.jpg}
+\end{center}
+
+Code can be commented out by pressing \keystroke{Ctrl-Alt-C} (this is
+technically a refactoring, so this feature is also availale from the
+refactorings context menu). This also works for lists of elements. Commented out
+code can be commented back in by pressing \keystroke{Ctrl-Alt-C} on the comment
+itself (the \ic{//}) or the commented element. 
+
+Commenting out code is a bit different than in regular, textual systems because
+code that is commented out is still "live": it is still stored as a tree, code
+completion still works in it, it may still be shown in $Find References$, and
+refactorings may affect the code. We are not sure if this is a desirable feature
+and we are looking for your feedback. Of course, the code is not executed. All
+commented program elements are removed during code generation.
+
+Not all program elements can be commented out (since special support by the
+language is necessary to make something commentable), only concepts that
+implement \ic{ICommentable} can be commented. At this time, this is all
+statements and module contents.
+
+
+
+\paragraph{Documentation} mbeddr supports comments. There are several kinds of
+comments that can be used: single line statement comments, multi-line statement
+comments and element documentations.
+
+Single line statement comments are comments that can be used in statement
+context. For example, in a function body, you can type \ic{//} and fill in
+arbitrary text behind. One line only! The following shows as simple comment.
+
+\begin{center} 
+  \includegraphics[scale=0.6]{figures/core/onelinecomment.png}
+\end{center}
+
+A multi-line comment statement can be created by typing \ic{/*} in statement
+context. It supports multiple lines. However, since there is no wrapping over
+into the next line, editing can be cumbersome. To solve this problem you can 
+press \ic{Ctrl-A} anywhere in the multi-line comment to open a dialog with a
+regular text area. You can edit the text in this text area and when you close it
+with \ic{OK} the text is transferred back into the actual comment.
+
+\begin{center} 
+  \includegraphics[scale=0.4]{figures/core/multilinecomment.png}
+\end{center}
+
+You can also press \ic{Ctrl-Y} on a multi-line comment to automatically
+rearrange the line contents.
+
+The two statement comments discussed above have two important limitations.
+The first one is that they are standalone statements and not connected to any
+program element (other than through their position in the code). Second, they
+can only be used in statement context. A better solution in many cases is to use
+the element documentation. It is semantically attached to a program element. To
+create one, either press \ic{Ctrl-A} or use the \ic{Add Documentation}
+intention. It looks just like a multi-line comment (and has the same edit
+dialog for convenient editing), but it is attached to (and hence moves around
+with) a program element. Currently, all statements and module contents can be
+annotated with an element documentation.
+
+\paragraph{TODOs} mbeddr comes with a special view for collecting and showing
+TODOs in comments. Anywhere within the comments discussed above, you can write
+\ic{TODO and then some text} or \ic{TODO(category) and then some text} (see
+next screenshot):
+
+
+\begin{center} 
+  \includegraphics[scale=0.4]{figures/core/todoexamplecode.png}
+\end{center}
+
+To find the TODOs anywhere in your project, use the $Tools -> mbeddr TODO$. It
+shows the TODOs in the form of a Find Usages dialog.
+
+\begin{center} 
+  \includegraphics[scale=0.35]{figures/core/todoview.png}
+\end{center}
+
+The view has many view options (try them!). The most important one is the top
+left one. Pressing it enables categories. In this case the TODOs are grouped by
+what has been specified by \ic{category} in the \ic{TODO(category)} format.
+
+
+
+
+
+\subsection{Function Modifiers}
+
+In C, functions and variables often have modifiers that are either "processed
+away" by macros or can be understood by some proprietary compiler. In any case,
+one has to be able to mark up functions and variables with such modifiers. In
+mbeddr this is possible by by selecting the \ic{Add Modifier} intention on
+functions and global variables.
+
+To create a new kind of modifier, you have to create a concept that extends
+\ic{Prefix}.
+
+
+
+
+
+
+
+
+
+
+
