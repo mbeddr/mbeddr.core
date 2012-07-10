@@ -4,7 +4,7 @@
   <language namespace="18bc6592-03a6-4e29-a83a-7ff23bde13ba(jetbrains.mps.lang.editor)" />
   <devkit namespace="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="4" />
-  <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="1" />
+  <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="-1" />
   <import index="ywuz" modelUID="r:c6ce92e7-5a98-4a6f-866a-ec8b9e945dd8(com.mbeddr.core.expressions.behavior)" version="1" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="tp25" modelUID="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" version="16" implicit="yes" />
@@ -154,6 +154,9 @@
       <property name="virtualPackage" nameId="tpck.1193676396447" value="comment" />
       <property name="name" nameId="tpck.1169194664001" value="openDocumentationEditorForCommentStatement" />
       <link role="applicableConcept" roleId="tpc2.1139445935125" targetNodeId="c4fa.1679452829930336984" resolveInfo="CommentStatement" />
+    </node>
+    <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="2604304000476772563">
+      <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="c4fa.2604304000476764367" resolveInfo="NotParsedStatement" />
     </node>
   </roots>
   <root id="4185783222026475242">
@@ -1770,6 +1773,21 @@
             </node>
           </node>
         </node>
+      </node>
+    </node>
+  </root>
+  <root id="2604304000476772563">
+    <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="2604304000476772565">
+      <link role="styleClass" roleId="tpc2.1186406756722" targetNodeId="r4b4.3857533489766382276" resolveInfo="comment" />
+      <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Horizontal" typeId="tpc2.1106270549637" id="2604304000476772566" />
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="2604304000476772567">
+        <property name="text" nameId="tpc2.1073389577007" value="Not Parsed:" />
+        <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.BackgroundColorStyleClassItem" typeId="tpc2.1186404574412" id="2604304000476772569">
+          <property name="color" nameId="tpc2.1186403713874" value="yellow" />
+        </node>
+      </node>
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Property" typeId="tpc2.1073389658414" id="2604304000476772568">
+        <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="c4fa.2604304000476764369" resolveInfo="raw_signature" />
       </node>
     </node>
   </root>
