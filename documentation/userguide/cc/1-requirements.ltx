@@ -93,12 +93,67 @@ public boolean matches(node<Requirement> r)
 }                                                                                                                                                                                                        
 \end{code}
 
+A similar facility exists for summarizing requirements. The only currently
+implemented summarizer counts the requirements (taking the filters into
+account). Custom summarizers may be used, for example, to sum up efforts.
 
 
 
 \subsection{CSV Import}
 
-\todo{}
+Requirements can be imported from a CSV file. To do this, use the
+\ic{requirements.csv} language in your program and use the respective intention
+to attache a \ic{CsvImportAnnotation} to your requirements module:
+
+\begin{center} 
+  \includegraphics[width=10cm]{figures/cc/csvImport.png}
+\end{center}
+
+There, you can specify the CSV file from which to import (you can use MPS path
+variables there!), as well as the element separator (defaults to \ic{;}) and the
+quotation character (defaults to \ic{"}). To run the actual import, use the
+\ic{(Re-)Import} intention. 
+
+The mapping from the CSV file fields to the contents of a \ic{Requirement} node
+is of course project specific. Hence this mapping is modularized by an
+\ic{IRequirementsMapper}. You have to create an implementing concept for your
+project. In the respective behavior you have to implement the following method:
+
+\begin{code}
+public virtual abstract boolean map(string[] elements, node<Requirement> req);                                                                           
+\end{code}
+
+The framework passes in a CSV line (as an string array) as well as a new
+\ic{Requirement}. The implementation of the method has to fill the requirement
+with the data from the \ic{elements} array. Two additional optional methods are
+available. \ic{extractID} returns the identifying string from the \ic{elements}
+array (this is what will become the requirement ID). It defaults to the first
+element\footnote{The ID is important because when you reimport a CSV file, the
+\ic{Requirement} nodes for existing requirements are kept the same so references
+to it do not break.}:
+
+\begin{code}
+public virtual string extractID(string[] elements, boolean dummy) { 
+  elements[0]; 
+}
+\end{code}
+
+The second optional method \ic{getParentRequirement} returns the requirement
+under which the newly created one should be attached. This is the way to
+construct requirement trees. It defaults to \ic{null} which means that the new
+requirement has no parent --- it is added to the requirements module on top
+level.
+
+\begin{code}
+public virtual node<Requirement> getParentRequirement(
+     node<RequirementsModule> rm, node<Requirement> req, string[] elements) { 
+  return null; 
+}
+\end{code}
+
+
+
+
 
 \subsection{Tracing}
 
