@@ -1113,7 +1113,10 @@
     <node role="styleClass" roleId="tpc2.1186402402630" type="tpc2.StyleSheetClass" typeId="tpc2.1186402373407" id="6631303246401958074">
       <property name="name" nameId="tpck.1169194664001" value="cast" />
       <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.ForegroundColorStyleClassItem" typeId="tpc2.1186404549998" id="6631303246401958076">
-        <property name="color" nameId="tpc2.1186403713874" value="red" />
+        <property name="color" nameId="tpc2.1186403713874" value="orange" />
+        <node role="query" roleId="tpc2.1186403803051" type="tpc2.RGBColor" typeId="tpc2.1225456267680" id="1049346859912908075">
+          <property name="value" nameId="tpc2.1225456424731" value="FA5700" />
+        </node>
       </node>
     </node>
   </root>
