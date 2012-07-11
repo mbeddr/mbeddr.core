@@ -522,6 +522,10 @@
     <node type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="3073566081776926439">
       <property name="name" nameId="tpck.1169194664001" value="IContextTypeProvider" />
     </node>
+    <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7265792597306864412">
+      <property name="name" nameId="tpck.1169194664001" value="NotParsedExpression" />
+      <link role="extends" roleId="tpce.1071489389519" targetNodeId="8860443239512128050" resolveInfo="Expression" />
+    </node>
   </roots>
   <root id="8860443239512128050">
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="356284525549555981">
@@ -1907,5 +1911,14 @@
     </node>
   </root>
   <root id="3073566081776926439" />
+  <root id="7265792597306864412">
+    <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="2604304000476764369">
+      <property name="name" nameId="tpck.1169194664001" value="raw_signature" />
+      <link role="dataType" roleId="tpce.1082985295845" targetNodeId="tpck.1082983041843" resolveInfo="string" />
+    </node>
+    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.BooleanConceptProperty" typeId="tpce.1105725574259" id="7265792597306864463">
+      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473994950" resolveInfo="dontSubstituteByDefault" />
+    </node>
+  </root>
 </model>
 
