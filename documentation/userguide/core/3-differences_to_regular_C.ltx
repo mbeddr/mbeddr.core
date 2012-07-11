@@ -621,7 +621,42 @@ module ArrayApplication imports nothing {
 
 \subsection{Structs and Unions}
 
-\todo{the init expressions for both}
+\paragraph{Initialization} We support initialization expressions for
+\ic{struct}s and \ic{union}s. Both are quite close to regular C. Here is the one
+for \ic{struct}s:
+
+\begin{code} 
+struct Point { 
+  int8_t x; 
+  int8_t y; 
+}; 
+
+Point p = {
+  10, 
+  20 
+}; 
+\end{code}
+
+The one for \ic{union}s is a bit different from regular C, since it does mot
+require the leading dot before the referenced member:
+
+\begin{code}
+union U { 
+  int8_t m1; 
+  boolean m2; 
+}; 
+ 
+U u1 = {m1 = 10}; 
+U u3 = {m2 = true}; 
+\end{code}
+
+\paragraph{The \ic{with} Statement} Just like Pascal, mbeddr C supports a
+\ic{with} statement for \ic{struct}s that avoids repeating the context
+expression\footnote{Note that the generated code evaluates the context
+expression for each member assignment. So if it has side effects, they will be
+executed $n$ times, with $n$ being the number of }.
+
+
 \todo{the "with" statement}
 
 

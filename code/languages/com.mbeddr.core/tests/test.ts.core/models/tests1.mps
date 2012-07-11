@@ -114,7 +114,7 @@
       <property name="projectPath" nameId="tp5g.5097124989038916363" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.core/core.dev.mpr" />
     </node>
     <node type="tp5g.NodesTestCase" typeId="tp5g.1216913645126" id="3073566081777350308">
-      <property name="name" nameId="tpck.1169194664001" value="unionInit" />
+      <property name="name" nameId="tpck.1169194664001" value="unionAndStructInitInit" />
     </node>
     <node type="tp5g.NodesTestCase" typeId="tp5g.1216913645126" id="3073566081777447056">
       <property name="name" nameId="tpck.1169194664001" value="withStatement" />
@@ -11568,6 +11568,23 @@
             </node>
           </node>
         </node>
+        <node role="contents" roleId="x27k.6437088627575722833" type="clbe.StructDeclaration" typeId="clbe.6394819151180597807" id="1049346859913105253">
+          <property name="name" nameId="tpck.1169194664001" value="Point" />
+          <node role="members" roleId="clbe.7099329415459888018" type="clbe.Member" typeId="clbe.5882395403881875736" id="1049346859913105254">
+            <property name="name" nameId="tpck.1169194664001" value="x" />
+            <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="1049346859913105255">
+              <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+              <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+            </node>
+          </node>
+          <node role="members" roleId="clbe.7099329415459888018" type="clbe.Member" typeId="clbe.5882395403881875736" id="1049346859913105256">
+            <property name="name" nameId="tpck.1169194664001" value="y" />
+            <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="1049346859913105258">
+              <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+              <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+            </node>
+          </node>
+        </node>
         <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="3073566081777350311">
           <property name="name" nameId="tpck.1169194664001" value="empty_1333553333464_2" />
         </node>
@@ -11608,6 +11625,21 @@
               <node role="init" roleId="c4fa.4185783222026502647" type="clbe.UnionInitExpression" typeId="clbe.3073566081777327818" id="3073566081777350828">
                 <link role="member" roleId="clbe.3073566081777327822" targetNodeId="3073566081777350392" resolveInfo="m2" />
                 <node role="value" roleId="clbe.3073566081777327823" type="mj1l.TrueLiteral" typeId="mj1l.8860443239512128094" id="3073566081777350832" />
+              </node>
+            </node>
+            <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="1049346859913105259" />
+            <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="1049346859913105261">
+              <property name="name" nameId="tpck.1169194664001" value="p" />
+              <node role="type" roleId="mj1l.318113533128716676" type="clbe.StructType" typeId="clbe.6394819151180597816" id="1049346859913105262">
+                <link role="struct" roleId="clbe.6394819151180597817" targetNodeId="1049346859913105253" resolveInfo="Point" />
+              </node>
+              <node role="init" roleId="c4fa.4185783222026502647" type="clbe.StructInitExpression" typeId="clbe.5095889050031607156" id="1049346859913105265">
+                <node role="elements" roleId="clbe.5095889050031607158" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="1049346859913105266">
+                  <property name="value" nameId="mj1l.8860443239512128104" value="10" />
+                </node>
+                <node role="elements" roleId="clbe.5095889050031607158" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="1049346859913105268">
+                  <property name="value" nameId="mj1l.8860443239512128104" value="20" />
+                </node>
               </node>
             </node>
           </node>
