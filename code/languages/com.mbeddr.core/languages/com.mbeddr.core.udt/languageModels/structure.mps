@@ -20,11 +20,6 @@
       <property name="iconPath" nameId="tpce.1160488491229" value="${language_descriptor}/icons/struct.jpg" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="7099329415459817973" resolveInfo="SUDeclaration" />
     </node>
-    <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="6394819151180597810">
-      <property name="name" nameId="tpck.1169194664001" value="StructMember" />
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="struct" />
-      <link role="extends" roleId="tpce.1071489389519" targetNodeId="5882395403881875736" resolveInfo="Member" />
-    </node>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="6394819151180597813">
       <property name="name" nameId="tpck.1169194664001" value="StructMemberRef" />
       <property name="virtualPackage" nameId="tpck.1193676396447" value="struct" />
@@ -87,11 +82,6 @@
       <property name="virtualPackage" nameId="tpck.1193676396447" value="union" />
       <property name="iconPath" nameId="tpce.1160488491229" value="${language_descriptor}/icons/struct.jpg" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="7099329415459817973" resolveInfo="SUDeclaration" />
-    </node>
-    <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="5882395403881907074">
-      <property name="name" nameId="tpck.1169194664001" value="UnionMember" />
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="union" />
-      <link role="extends" roleId="tpce.1071489389519" targetNodeId="5882395403881875736" resolveInfo="Member" />
     </node>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="5882395403881907205">
       <property name="name" nameId="tpck.1169194664001" value="UnionType" />
@@ -160,12 +150,6 @@
     </node>
     <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="4058325937810995958">
       <property name="value" nameId="tpce.1105725733873" value="a struct declaration" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473914776" resolveInfo="shortDescription" />
-    </node>
-  </root>
-  <root id="6394819151180597810">
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="4058325937810995960">
-      <property name="value" nameId="tpce.1105725733873" value="--" />
       <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473914776" resolveInfo="shortDescription" />
     </node>
   </root>
@@ -343,12 +327,6 @@
     </node>
     <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="5882395403881907071">
       <property name="value" nameId="tpce.1105725733873" value="a union declaration" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473914776" resolveInfo="shortDescription" />
-    </node>
-  </root>
-  <root id="5882395403881907074">
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="5882395403881907075">
-      <property name="value" nameId="tpce.1105725733873" value="--" />
       <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473914776" resolveInfo="shortDescription" />
     </node>
   </root>
