@@ -1670,10 +1670,6 @@
         <property name="name" nameId="tpck.1169194664001" value="ERROR_OCCURED" />
         <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="3559983554277703291" resolveInfo="CDTUtilClass.ListenerEvents" />
       </node>
-      <node role="enumConstant" roleId="tpee.1083245396908" type="tpee.EnumConstantDeclaration" typeId="tpee.1083245299891" id="3559983554277703299">
-        <property name="name" nameId="tpck.1169194664001" value="BREAKPOINT_HIT" />
-        <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="3559983554277703291" resolveInfo="CDTUtilClass.ListenerEvents" />
-      </node>
       <node role="enumConstant" roleId="tpee.1083245396908" type="tpee.EnumConstantDeclaration" typeId="tpee.1083245299891" id="2811499348040838000">
         <property name="name" nameId="tpck.1169194664001" value="RESUMED" />
         <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="3559983554277703291" resolveInfo="CDTUtilClass.ListenerEvents" />
