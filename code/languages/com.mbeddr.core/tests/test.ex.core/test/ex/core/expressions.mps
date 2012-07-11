@@ -4456,12 +4456,12 @@
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="22102029902643244">
           <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.AssignmentExpr" typeId="mj1l.22102029902365709" id="22102029902643245">
-            <node role="left" roleId="mj1l.8860443239512128064" type="clbe.StructDotExpression" typeId="clbe.6394819151180597804" id="61358920859994038">
-              <node role="member" roleId="mj1l.1452920870317550651" type="clbe.MemberRef" typeId="clbe.7099329415460395995" id="1694414027524545554">
-                <link role="member" roleId="clbe.7099329415460397525" targetNodeId="1694414027524183403" resolveInfo="x" />
-              </node>
+            <node role="left" roleId="mj1l.8860443239512128064" type="clbe.SUDotExpression" typeId="clbe.7063398228162529566" id="3073566081776767396">
               <node role="expression" roleId="mj1l.7254843406768839760" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="61358920859994037">
                 <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="61358920859994032" resolveInfo="p" />
+              </node>
+              <node role="member" roleId="mj1l.1452920870317550651" type="clbe.MemberRef" typeId="clbe.7099329415460395995" id="1694414027524545554">
+                <link role="member" roleId="clbe.7099329415460397525" targetNodeId="1694414027524183403" resolveInfo="x" />
               </node>
             </node>
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="61358920859994043">
@@ -4476,12 +4476,12 @@
               <property name="value" nameId="mj1l.8860443239512128104" value="-10" />
             </node>
             <node role="left" roleId="mj1l.8860443239512128064" type="mj1l.UnaryMinusExpression" typeId="mj1l.3976803464656531170" id="61358920859994052">
-              <node role="expression" roleId="mj1l.7254843406768839760" type="clbe.StructDotExpression" typeId="clbe.6394819151180597804" id="61358920859994048">
-                <node role="member" roleId="mj1l.1452920870317550651" type="clbe.MemberRef" typeId="clbe.7099329415460395995" id="1694414027524545615">
-                  <link role="member" roleId="clbe.7099329415460397525" targetNodeId="1694414027524183403" resolveInfo="x" />
-                </node>
+              <node role="expression" roleId="mj1l.7254843406768839760" type="clbe.SUDotExpression" typeId="clbe.7063398228162529566" id="3073566081776767606">
                 <node role="expression" roleId="mj1l.7254843406768839760" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="61358920859994047">
                   <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="61358920859994032" resolveInfo="p" />
+                </node>
+                <node role="member" roleId="mj1l.1452920870317550651" type="clbe.MemberRef" typeId="clbe.7099329415460395995" id="1694414027524545615">
+                  <link role="member" roleId="clbe.7099329415460397525" targetNodeId="1694414027524183403" resolveInfo="x" />
                 </node>
               </node>
             </node>
@@ -4494,12 +4494,12 @@
               <property name="value" nameId="mj1l.8860443239512128104" value="10" />
             </node>
             <node role="left" roleId="mj1l.8860443239512128064" type="mj1l.PostIncrementExpression" typeId="mj1l.4375898003726285486" id="61358920859999526">
-              <node role="expression" roleId="mj1l.7254843406768839760" type="clbe.StructDotExpression" typeId="clbe.6394819151180597804" id="61358920859999520">
-                <node role="member" roleId="mj1l.1452920870317550651" type="clbe.MemberRef" typeId="clbe.7099329415460395995" id="1694414027524545782">
-                  <link role="member" roleId="clbe.7099329415460397525" targetNodeId="1694414027524183403" resolveInfo="x" />
-                </node>
+              <node role="expression" roleId="mj1l.7254843406768839760" type="clbe.SUDotExpression" typeId="clbe.7063398228162529566" id="3073566081776767677">
                 <node role="expression" roleId="mj1l.7254843406768839760" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="61358920859999519">
                   <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="61358920859994032" resolveInfo="p" />
+                </node>
+                <node role="member" roleId="mj1l.1452920870317550651" type="clbe.MemberRef" typeId="clbe.7099329415460395995" id="1694414027524545782">
+                  <link role="member" roleId="clbe.7099329415460397525" targetNodeId="1694414027524183403" resolveInfo="x" />
                 </node>
               </node>
             </node>
@@ -4511,12 +4511,12 @@
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="61358920859999543">
               <property name="value" nameId="mj1l.8860443239512128104" value="11" />
             </node>
-            <node role="left" roleId="mj1l.8860443239512128064" type="clbe.StructDotExpression" typeId="clbe.6394819151180597804" id="61358920859999536">
-              <node role="member" roleId="mj1l.1452920870317550651" type="clbe.MemberRef" typeId="clbe.7099329415460395995" id="1694414027524546023">
-                <link role="member" roleId="clbe.7099329415460397525" targetNodeId="1694414027524183403" resolveInfo="x" />
-              </node>
+            <node role="left" roleId="mj1l.8860443239512128064" type="clbe.SUDotExpression" typeId="clbe.7063398228162529566" id="3073566081776767419">
               <node role="expression" roleId="mj1l.7254843406768839760" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="61358920859999535">
                 <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="61358920859994032" resolveInfo="p" />
+              </node>
+              <node role="member" roleId="mj1l.1452920870317550651" type="clbe.MemberRef" typeId="clbe.7099329415460395995" id="1694414027524546023">
+                <link role="member" roleId="clbe.7099329415460397525" targetNodeId="1694414027524183403" resolveInfo="x" />
               </node>
             </node>
           </node>
