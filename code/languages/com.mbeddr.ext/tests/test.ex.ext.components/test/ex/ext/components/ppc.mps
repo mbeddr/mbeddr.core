@@ -2,15 +2,16 @@
 <model modelUID="r:35de66b1-be7a-4998-8c0f-ba9b0b1214b1(test.ex.ext.components.ppc)">
   <persistence version="7" />
   <devkit namespace="24565007-e59f-42fc-ac10-da3836deec1c(com.mbeddr.components)" />
+  <devkit namespace="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
   <import index="v7ag" modelUID="r:9596407c-f27a-49d3-abde-3a66293c5b61(com.mbeddr.ext.components.structure)" version="3" implicit="yes" />
   <import index="p7vm" modelUID="r:28fa862e-f94d-4c39-bdf7-a4bdbc773888(com.mbeddr.ext.components.gen_nomw.structure)" version="0" implicit="yes" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
-  <import index="k146" modelUID="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" version="1" implicit="yes" />
+  <import index="k146" modelUID="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" version="2" implicit="yes" />
   <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="17" implicit="yes" />
   <import index="yq40" modelUID="r:152b3fc0-83a1-4bab-a8cd-565eb8483785(com.mbeddr.core.pointers.structure)" version="3" implicit="yes" />
   <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="4" implicit="yes" />
   <import index="51wr" modelUID="r:b31f1c3c-99aa-4f1e-a329-cba27efb1a6b(com.mbeddr.core.buildconfig.structure)" version="1" implicit="yes" />
-  <import index="yz9a" modelUID="r:734c02dd-cc16-4184-99eb-5fd9f43aa37e(com.mbeddr.core.unittest.structure)" version="-1" implicit="yes" />
+  <import index="yz9a" modelUID="r:734c02dd-cc16-4184-99eb-5fd9f43aa37e(com.mbeddr.core.unittest.structure)" version="0" implicit="yes" />
   <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="4" implicit="yes" />
   <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="1" implicit="yes" />
   <roots>
@@ -212,7 +213,10 @@
         <node role="statements" roleId="c4fa.4185783222026475862" type="v7ag.InitializeConfiguration" typeId="v7ag.591155063063570513" id="6209278014151750300">
           <link role="config" roleId="v7ag.591155063063570514" targetNodeId="6591434695301277915" resolveInfo="instances" />
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="6209278014151750301" />
+        <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.MessageCountReset" typeId="yz9a.2604827788718788807" id="2604827788718884052">
+          <link role="msgTable" roleId="yz9a.2604827788718788808" targetNodeId="6591434695301152732" resolveInfo="CalcMessages" />
+          <link role="msgDef" roleId="yz9a.2604827788718788809" targetNodeId="6591434695301152733" resolveInfo="ppcfailed" />
+        </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="6591434695301277920">
           <node role="expr" roleId="c4fa.7254843406768833939" type="v7ag.PortAdapterOpCallExpr" typeId="v7ag.466603768608410221" id="6591434695301277922">
             <link role="operation" roleId="v7ag.8105003328815071752" targetNodeId="6591434695300767056" resolveInfo="add" />
@@ -232,9 +236,9 @@
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6209278014151173777">
               <property name="value" nameId="mj1l.8860443239512128104" value="0" />
             </node>
-            <node role="left" roleId="mj1l.8860443239512128064" type="k146.MessageCountExpr" typeId="k146.6209278014151108441" id="6209278014151173773">
-              <link role="msgTable" roleId="k146.6209278014151108442" targetNodeId="6591434695301152732" resolveInfo="CalcMessages" />
-              <link role="msgDef" roleId="k146.6209278014151108443" targetNodeId="6591434695301152733" resolveInfo="ppcfailed" />
+            <node role="left" roleId="mj1l.8860443239512128064" type="yz9a.MessageCountExpr" typeId="yz9a.2604827788718788801" id="2604827788718884045">
+              <link role="msgTable" roleId="yz9a.2604827788718788802" targetNodeId="6591434695301152732" resolveInfo="CalcMessages" />
+              <link role="msgDef" roleId="yz9a.2604827788718788803" targetNodeId="6591434695301152733" resolveInfo="ppcfailed" />
             </node>
           </node>
         </node>
@@ -254,12 +258,12 @@
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="6209278014151173778">
           <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6209278014151173779">
-            <node role="left" roleId="mj1l.8860443239512128064" type="k146.MessageCountExpr" typeId="k146.6209278014151108441" id="6209278014151173781">
-              <link role="msgTable" roleId="k146.6209278014151108442" targetNodeId="6591434695301152732" resolveInfo="CalcMessages" />
-              <link role="msgDef" roleId="k146.6209278014151108443" targetNodeId="6591434695301152733" resolveInfo="ppcfailed" />
-            </node>
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6209278014151173787">
               <property name="value" nameId="mj1l.8860443239512128104" value="2" />
+            </node>
+            <node role="left" roleId="mj1l.8860443239512128064" type="yz9a.MessageCountExpr" typeId="yz9a.2604827788718788801" id="2604827788718884049">
+              <link role="msgTable" roleId="yz9a.2604827788718788802" targetNodeId="6591434695301152732" resolveInfo="CalcMessages" />
+              <link role="msgDef" roleId="yz9a.2604827788718788803" targetNodeId="6591434695301152733" resolveInfo="ppcfailed" />
             </node>
           </node>
         </node>
@@ -282,9 +286,9 @@
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6209278014151173824">
               <property name="value" nameId="mj1l.8860443239512128104" value="4" />
             </node>
-            <node role="left" roleId="mj1l.8860443239512128064" type="k146.MessageCountExpr" typeId="k146.6209278014151108441" id="6209278014151173820">
-              <link role="msgTable" roleId="k146.6209278014151108442" targetNodeId="6591434695301152732" resolveInfo="CalcMessages" />
-              <link role="msgDef" roleId="k146.6209278014151108443" targetNodeId="6591434695301152733" resolveInfo="ppcfailed" />
+            <node role="left" roleId="mj1l.8860443239512128064" type="yz9a.MessageCountExpr" typeId="yz9a.2604827788718788801" id="2604827788718884050">
+              <link role="msgDef" roleId="yz9a.2604827788718788803" targetNodeId="6591434695301152733" resolveInfo="ppcfailed" />
+              <link role="msgTable" roleId="yz9a.2604827788718788802" targetNodeId="6591434695301152732" resolveInfo="CalcMessages" />
             </node>
           </node>
         </node>
@@ -663,9 +667,9 @@
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6209278014151448736">
               <property name="value" nameId="mj1l.8860443239512128104" value="0" />
             </node>
-            <node role="left" roleId="mj1l.8860443239512128064" type="k146.MessageCountExpr" typeId="k146.6209278014151108441" id="6209278014151448732">
-              <link role="msgTable" roleId="k146.6209278014151108442" targetNodeId="6209278014151173612" resolveInfo="CalcMessages" />
-              <link role="msgDef" roleId="k146.6209278014151108443" targetNodeId="6209278014151173613" resolveInfo="ppcfailed" />
+            <node role="left" roleId="mj1l.8860443239512128064" type="yz9a.MessageCountExpr" typeId="yz9a.2604827788718788801" id="2604827788719204809">
+              <link role="msgTable" roleId="yz9a.2604827788718788802" targetNodeId="6209278014151173612" resolveInfo="CalcMessages" />
+              <link role="msgDef" roleId="yz9a.2604827788718788803" targetNodeId="6209278014151173613" resolveInfo="ppcfailed" />
             </node>
           </node>
         </node>
@@ -680,12 +684,12 @@
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="6209278014151448738">
           <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6209278014151448739">
-            <node role="left" roleId="mj1l.8860443239512128064" type="k146.MessageCountExpr" typeId="k146.6209278014151108441" id="6209278014151448741">
-              <link role="msgTable" roleId="k146.6209278014151108442" targetNodeId="6209278014151173612" resolveInfo="CalcMessages" />
-              <link role="msgDef" roleId="k146.6209278014151108443" targetNodeId="6209278014151173613" resolveInfo="ppcfailed" />
-            </node>
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6209278014151448742">
               <property name="value" nameId="mj1l.8860443239512128104" value="1" />
+            </node>
+            <node role="left" roleId="mj1l.8860443239512128064" type="yz9a.MessageCountExpr" typeId="yz9a.2604827788718788801" id="2604827788719204810">
+              <link role="msgDef" roleId="yz9a.2604827788718788803" targetNodeId="6209278014151173613" resolveInfo="ppcfailed" />
+              <link role="msgTable" roleId="yz9a.2604827788718788802" targetNodeId="6209278014151173612" resolveInfo="CalcMessages" />
             </node>
           </node>
         </node>
@@ -699,12 +703,12 @@
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="6209278014151448747">
           <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6209278014151448748">
-            <node role="left" roleId="mj1l.8860443239512128064" type="k146.MessageCountExpr" typeId="k146.6209278014151108441" id="6209278014151448749">
-              <link role="msgTable" roleId="k146.6209278014151108442" targetNodeId="6209278014151173612" resolveInfo="CalcMessages" />
-              <link role="msgDef" roleId="k146.6209278014151108443" targetNodeId="6209278014151173613" resolveInfo="ppcfailed" />
-            </node>
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6209278014151448750">
               <property name="value" nameId="mj1l.8860443239512128104" value="2" />
+            </node>
+            <node role="left" roleId="mj1l.8860443239512128064" type="yz9a.MessageCountExpr" typeId="yz9a.2604827788718788801" id="2604827788719204811">
+              <link role="msgDef" roleId="yz9a.2604827788718788803" targetNodeId="6209278014151173613" resolveInfo="ppcfailed" />
+              <link role="msgTable" roleId="yz9a.2604827788718788802" targetNodeId="6209278014151173612" resolveInfo="CalcMessages" />
             </node>
           </node>
         </node>
@@ -952,9 +956,9 @@
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6209278014151673314">
               <property name="value" nameId="mj1l.8860443239512128104" value="0" />
             </node>
-            <node role="left" roleId="mj1l.8860443239512128064" type="k146.MessageCountExpr" typeId="k146.6209278014151108441" id="6209278014151673310">
-              <link role="msgTable" roleId="k146.6209278014151108442" targetNodeId="6209278014151498287" resolveInfo="Messages" />
-              <link role="msgDef" roleId="k146.6209278014151108443" targetNodeId="6209278014151498288" resolveInfo="protocolError" />
+            <node role="left" roleId="mj1l.8860443239512128064" type="yz9a.MessageCountExpr" typeId="yz9a.2604827788718788801" id="2604827788719204812">
+              <link role="msgTable" roleId="yz9a.2604827788718788802" targetNodeId="6209278014151498287" resolveInfo="Messages" />
+              <link role="msgDef" roleId="yz9a.2604827788718788803" targetNodeId="6209278014151498288" resolveInfo="protocolError" />
             </node>
           </node>
         </node>
@@ -985,12 +989,12 @@
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="6209278014151673329">
           <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6209278014151673332">
-            <node role="left" roleId="mj1l.8860443239512128064" type="k146.MessageCountExpr" typeId="k146.6209278014151108441" id="6209278014151673331">
-              <link role="msgTable" roleId="k146.6209278014151108442" targetNodeId="6209278014151498287" resolveInfo="Messages" />
-              <link role="msgDef" roleId="k146.6209278014151108443" targetNodeId="6209278014151498288" resolveInfo="protocolError" />
-            </node>
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="4058325937810757466">
               <property name="value" nameId="mj1l.8860443239512128104" value="2" />
+            </node>
+            <node role="left" roleId="mj1l.8860443239512128064" type="yz9a.MessageCountExpr" typeId="yz9a.2604827788718788801" id="2604827788719204813">
+              <link role="msgTable" roleId="yz9a.2604827788718788802" targetNodeId="6209278014151498287" resolveInfo="Messages" />
+              <link role="msgDef" roleId="yz9a.2604827788718788803" targetNodeId="6209278014151498288" resolveInfo="protocolError" />
             </node>
           </node>
         </node>
