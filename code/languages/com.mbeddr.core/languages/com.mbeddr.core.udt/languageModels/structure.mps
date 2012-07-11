@@ -49,7 +49,7 @@
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="6631303246402173901">
       <property name="virtualPackage" nameId="tpck.1193676396447" value="struct" />
       <property name="name" nameId="tpck.1169194664001" value="StructArrowExpression" />
-      <link role="extends" roleId="tpce.1071489389519" targetNodeId="mj1l.1452920870317533092" resolveInfo="AbstractDotExpression" />
+      <link role="extends" roleId="tpce.1071489389519" targetNodeId="7063398228162571833" resolveInfo="SUArrowExpression" />
     </node>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="8811614583515725851">
       <property name="name" nameId="tpck.1169194664001" value="EnumDeclaration" />
@@ -111,7 +111,7 @@
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="227598611278060792">
       <property name="virtualPackage" nameId="tpck.1193676396447" value="union" />
       <property name="name" nameId="tpck.1169194664001" value="UnionArrowExpression" />
-      <link role="extends" roleId="tpce.1071489389519" targetNodeId="mj1l.1452920870317533092" resolveInfo="AbstractDotExpression" />
+      <link role="extends" roleId="tpce.1071489389519" targetNodeId="7063398228162571833" resolveInfo="SUArrowExpression" />
     </node>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="5095889050031607156">
       <property name="virtualPackage" nameId="tpck.1193676396447" value="struct" />
@@ -136,6 +136,11 @@
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7063398228162529566">
       <property name="virtualPackage" nameId="tpck.1193676396447" value="su" />
       <property name="name" nameId="tpck.1169194664001" value="SUDotExpression" />
+      <link role="extends" roleId="tpce.1071489389519" targetNodeId="mj1l.1452920870317533092" resolveInfo="AbstractDotExpression" />
+    </node>
+    <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7063398228162571833">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="su" />
+      <property name="name" nameId="tpck.1169194664001" value="SUArrowExpression" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="mj1l.1452920870317533092" resolveInfo="AbstractDotExpression" />
     </node>
   </roots>
@@ -370,16 +375,7 @@
     </node>
   </root>
   <root id="5882395403881957147" />
-  <root id="227598611278060792">
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.IntegerConceptProperty" typeId="tpce.1105725498741" id="8793291511880171520">
-      <property name="value" nameId="tpce.1105725713309" value="4000" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="mj1l.5763383285156530264" resolveInfo="priolevel" />
-    </node>
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="227598611278060793">
-      <property name="value" nameId="tpce.1105725733873" value="union member access (pointer)" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473914776" resolveInfo="shortDescription" />
-    </node>
-  </root>
+  <root id="227598611278060792" />
   <root id="5095889050031607156">
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="5095889050031607158">
       <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
@@ -452,6 +448,16 @@
     <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="7063398228162529569">
       <property name="value" nameId="tpce.1105725733873" value="." />
       <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473891462" resolveInfo="alias" />
+    </node>
+  </root>
+  <root id="7063398228162571833">
+    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.IntegerConceptProperty" typeId="tpce.1105725498741" id="7063398228162571834">
+      <property name="value" nameId="tpce.1105725713309" value="4000" />
+      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="mj1l.5763383285156530264" resolveInfo="priolevel" />
+    </node>
+    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="7063398228162571835">
+      <property name="value" nameId="tpce.1105725733873" value="struct member access (pointer)" />
+      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473914776" resolveInfo="shortDescription" />
     </node>
   </root>
 </model>
