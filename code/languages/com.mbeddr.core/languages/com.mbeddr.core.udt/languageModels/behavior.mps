@@ -32,7 +32,7 @@
       <link role="concept" roleId="1i04.1225194240799" targetNodeId="clbe.8811614583515725893" resolveInfo="EnumType" />
     </node>
     <node type="1i04.ConceptBehavior" typeId="1i04.1225194240794" id="55677248263847598">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="struct" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="su.struct" />
       <link role="concept" roleId="1i04.1225194240799" targetNodeId="clbe.6394819151180597816" resolveInfo="StructType" />
     </node>
     <node type="1i04.ConceptBehavior" typeId="1i04.1225194240794" id="212802193547284666">
@@ -48,7 +48,7 @@
       <link role="concept" roleId="1i04.1225194240799" targetNodeId="clbe.6116558314501347863" resolveInfo="TypeDefType" />
     </node>
     <node type="1i04.ConceptBehavior" typeId="1i04.1225194240794" id="5882395403881907253">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="union" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="su.union" />
       <link role="concept" roleId="1i04.1225194240799" targetNodeId="clbe.5882395403881907205" resolveInfo="UnionType" />
     </node>
     <node type="1i04.ConceptBehavior" typeId="1i04.1225194240794" id="6183845377105174909">
