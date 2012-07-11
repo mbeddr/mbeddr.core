@@ -20,10 +20,6 @@
   <import index="tp2q" modelUID="r:00000000-0000-4000-0000-011c8959032e(jetbrains.mps.baseLanguage.collections.structure)" version="7" implicit="yes" />
   <import index="2rho" modelUID="r:4e770e63-2ef5-4a0d-b2e8-c5c1a1565703(com.mbeddr.core.udt.behavior)" version="0" implicit="yes" />
   <roots>
-    <node type="tp1t.ConceptConstraints" typeId="tp1t.1213093968558" id="6394819151180597855">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="struct" />
-      <link role="concept" roleId="tp1t.1213093996982" targetNodeId="clbe.6394819151180597813" resolveInfo="StructMemberRef" />
-    </node>
     <node type="tp1t.ConceptConstraints" typeId="tp1t.1213093968558" id="745648737914683337">
       <property name="virtualPackage" nameId="tpck.1193676396447" value="struct" />
       <link role="concept" roleId="tp1t.1213093996982" targetNodeId="clbe.6394819151180597816" resolveInfo="StructType" />
@@ -60,10 +56,6 @@
       <property name="virtualPackage" nameId="tpck.1193676396447" value="union" />
       <link role="concept" roleId="tp1t.1213093996982" targetNodeId="clbe.5882395403881907205" resolveInfo="UnionType" />
     </node>
-    <node type="tp1t.ConceptConstraints" typeId="tp1t.1213093968558" id="227598611278055241">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="union" />
-      <link role="concept" roleId="tp1t.1213093996982" targetNodeId="clbe.5882395403881908167" resolveInfo="UnionMemberRef" />
-    </node>
     <node type="tp1t.ConceptConstraints" typeId="tp1t.1213093968558" id="5095889050031607172">
       <property name="virtualPackage" nameId="tpck.1193676396447" value="struct" />
       <link role="concept" roleId="tp1t.1213093996982" targetNodeId="clbe.5095889050031607156" resolveInfo="StructInitExpression" />
@@ -81,7 +73,6 @@
       <link role="concept" roleId="tp1t.1213093996982" targetNodeId="clbe.7099329415460395995" resolveInfo="MemberRef" />
     </node>
   </roots>
-  <root id="6394819151180597855" />
   <root id="745648737914683337">
     <node role="referent" roleId="tp1t.1213100494875" type="tp1t.NodeReferentConstraint" typeId="tp1t.1148687176410" id="745648737914683338">
       <link role="applicableLink" roleId="tp1t.1148687202698" targetNodeId="clbe.6394819151180597817" />
@@ -470,11 +461,6 @@
           </node>
         </node>
       </node>
-    </node>
-  </root>
-  <root id="227598611278055241">
-    <node role="referent" roleId="tp1t.1213100494875" type="tp1t.NodeReferentConstraint" typeId="tp1t.1148687176410" id="2919373971480602604">
-      <link role="applicableLink" roleId="tp1t.1148687202698" targetNodeId="clbe.7099329415460397525" />
     </node>
   </root>
   <root id="5095889050031607172">
