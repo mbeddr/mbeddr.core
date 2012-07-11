@@ -116,6 +116,9 @@
     <node type="tp5g.NodesTestCase" typeId="tp5g.1216913645126" id="3073566081777350308">
       <property name="name" nameId="tpck.1169194664001" value="unionInit" />
     </node>
+    <node type="tp5g.NodesTestCase" typeId="tp5g.1216913645126" id="3073566081777447056">
+      <property name="name" nameId="tpck.1169194664001" value="withStatement" />
+    </node>
   </roots>
   <root id="7345411391537044518">
     <node role="testMethods" roleId="tp5g.1217501895093" type="tp5g.SimpleNodeTest" typeId="tp5g.1225978065297" id="3134547887598577647">
@@ -11532,6 +11535,87 @@
         </node>
         <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodeOperationsContainer" typeId="tp5g.1215603922101" id="3073566081777350374">
           <node role="operations" roleId="tp5g.1215604436604" type="tp5g.TypesCheckOperation" typeId="tp5g.1215607067978" id="3073566081777350375" />
+        </node>
+      </node>
+    </node>
+  </root>
+  <root id="3073566081777447056">
+    <node role="nodesToCheck" roleId="tp5g.1217501822150" type="tp5g.TestNode" typeId="tp5g.1216989428737" id="3073566081777447057">
+      <node role="nodeToCheck" roleId="tp5g.1216989461394" type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="3073566081777447058">
+        <property name="name" nameId="tpck.1169194664001" value="withStatement" />
+        <node role="contents" roleId="x27k.6437088627575722833" type="clbe.StructDeclaration" typeId="clbe.6394819151180597807" id="3073566081777447091">
+          <property name="name" nameId="tpck.1169194664001" value="Point" />
+          <node role="members" roleId="clbe.7099329415459888018" type="clbe.Member" typeId="clbe.5882395403881875736" id="3073566081777447092">
+            <property name="name" nameId="tpck.1169194664001" value="x" />
+            <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="3073566081777447093">
+              <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+              <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+            </node>
+          </node>
+          <node role="members" roleId="clbe.7099329415459888018" type="clbe.Member" typeId="clbe.5882395403881875736" id="3073566081777447094">
+            <property name="name" nameId="tpck.1169194664001" value="y" />
+            <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="3073566081777447096">
+              <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+              <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+            </node>
+          </node>
+        </node>
+        <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="3073566081777447090">
+          <property name="name" nameId="tpck.1169194664001" value="empty_1342018487203_2" />
+        </node>
+        <node role="contents" roleId="x27k.6437088627575722833" type="yz9a.TestCase" typeId="yz9a.6275792049641586523" id="3073566081777391244">
+          <property name="exported" nameId="x27k.1317894735999272944" value="true" />
+          <property name="name" nameId="tpck.1169194664001" value="testWithStatement" />
+          <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="3073566081777391245">
+            <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+            <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+          </node>
+          <node role="body" roleId="yz9a.6275792049641586525" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="3073566081777391246">
+            <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="3073566081777447110">
+              <property name="name" nameId="tpck.1169194664001" value="p" />
+              <node role="type" roleId="mj1l.318113533128716676" type="clbe.StructType" typeId="clbe.6394819151180597816" id="3073566081777447111">
+                <link role="struct" roleId="clbe.6394819151180597817" targetNodeId="3073566081777447091" resolveInfo="Point" />
+              </node>
+            </node>
+            <node role="statements" roleId="c4fa.4185783222026475862" type="k146.WithStatement" typeId="k146.3073566081777363796" id="3073566081777428132">
+              <node role="expr" roleId="k146.3073566081777363799" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="3073566081777428134">
+                <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="3073566081777447110" resolveInfo="p" />
+              </node>
+              <node role="memberAssigns" roleId="k146.3073566081777411306" type="k146.WithMemberAssignment" typeId="k146.3073566081777391256" id="3073566081777428137">
+                <link role="member" roleId="k146.3073566081777391258" targetNodeId="3073566081777447092" resolveInfo="x" />
+                <node role="value" roleId="k146.3073566081777391257" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3073566081777428139">
+                  <property name="value" nameId="mj1l.8860443239512128104" value="10" />
+                </node>
+              </node>
+              <node role="memberAssigns" roleId="k146.3073566081777411306" type="k146.WithMemberAssignment" typeId="k146.3073566081777391256" id="3073566081777429647">
+                <link role="member" roleId="k146.3073566081777391258" targetNodeId="3073566081777447094" resolveInfo="y" />
+                <node role="value" roleId="k146.3073566081777391257" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3073566081777429648">
+                  <property name="value" nameId="mj1l.8860443239512128104" value="20.3" />
+                  <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodePropertiesContainer" typeId="tp5g.1215507532627" id="3073566081777447100">
+                    <node role="properties" roleId="tp5g.1215507909023" type="tp5g.NodeErrorPropety" typeId="tp5g.1215507671101" id="3073566081777447101" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="3073566081777447102" />
+            <node role="statements" roleId="c4fa.4185783222026475862" type="k146.WithStatement" typeId="k146.3073566081777363796" id="3073566081777447104">
+              <node role="expr" roleId="k146.3073566081777363799" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3073566081777447106">
+                <property name="value" nameId="mj1l.8860443239512128104" value="12" />
+                <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodePropertiesContainer" typeId="tp5g.1215507532627" id="3073566081777447107">
+                  <node role="properties" roleId="tp5g.1215507909023" type="tp5g.NodeErrorPropety" typeId="tp5g.1215507671101" id="3073566081777447108" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="3073566081777447064">
+          <property name="name" nameId="tpck.1169194664001" value="empty_1333553333464_2" />
+        </node>
+        <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="3073566081777447082">
+          <property name="name" nameId="tpck.1169194664001" value="empty_1333553352410_3" />
+        </node>
+        <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodeOperationsContainer" typeId="tp5g.1215603922101" id="3073566081777447083">
+          <node role="operations" roleId="tp5g.1215604436604" type="tp5g.TypesCheckOperation" typeId="tp5g.1215607067978" id="3073566081777447084" />
         </node>
       </node>
     </node>
