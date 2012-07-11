@@ -80,6 +80,10 @@
       <property name="virtualPackage" nameId="tpck.1193676396447" value="su.union" />
       <link role="conceptDeclaration" roleId="2omo.1233670257997" targetNodeId="clbe.3073566081777327818" resolveInfo="UnionInitExpression" />
     </node>
+    <node type="2omo.ConceptTextGenDeclaration" typeId="2omo.1233670071145" id="1049346859912885119">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="su.struct" />
+      <link role="conceptDeclaration" roleId="2omo.1233670257997" targetNodeId="clbe.1049346859912632490" resolveInfo="StructCastExpression" />
+    </node>
   </roots>
   <root id="745648737914688519">
     <node role="textGenBlock" roleId="2omo.1233749296504" type="2omo.GenerateTextDeclaration" typeId="2omo.1233749247888" id="745648737914688520">
@@ -1079,6 +1083,22 @@
           </node>
           <node role="part" roleId="2omo.1237306115446" type="2omo.ConstantStringAppendPart" typeId="2omo.1237305557638" id="3073566081777328188">
             <property name="value" nameId="2omo.1237305576108" value="}" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </root>
+  <root id="1049346859912885119">
+    <node role="textGenBlock" roleId="2omo.1233749296504" type="2omo.GenerateTextDeclaration" typeId="2omo.1233749247888" id="1049346859912885120">
+      <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="1049346859912885121">
+        <node role="statement" roleId="tpee.1068581517665" type="2omo.AppendOperation" typeId="2omo.1237306079178" id="1049346859912885122">
+          <node role="part" roleId="2omo.1237306115446" type="2omo.NodeAppendPart" typeId="2omo.1237305334312" id="1049346859912885124">
+            <node role="value" roleId="2omo.1237305790512" type="tpee.DotExpression" typeId="tpee.1197027756228" id="1049346859912885147">
+              <node role="operand" roleId="tpee.1197027771414" type="2omo.NodeParameter" typeId="2omo.1233748055915" id="1049346859912885126" />
+              <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="1049346859912885153">
+                <link role="link" roleId="tp25.1138056516764" targetNodeId="clbe.1049346859912643850" />
+              </node>
+            </node>
           </node>
         </node>
       </node>

@@ -77,6 +77,10 @@
       <property name="virtualPackage" nameId="tpck.1193676396447" value="su.union" />
       <link role="concept" roleId="tp1t.1213093996982" targetNodeId="clbe.3073566081777327818" resolveInfo="UnionInitExpression" />
     </node>
+    <node type="tp1t.ConceptConstraints" typeId="tp1t.1213093968558" id="1049346859912887604">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="su.struct" />
+      <link role="concept" roleId="tp1t.1213093996982" targetNodeId="clbe.1049346859912632490" resolveInfo="StructCastExpression" />
+    </node>
   </roots>
   <root id="745648737914683337">
     <node role="referent" roleId="tp1t.1213100494875" type="tp1t.NodeReferentConstraint" typeId="tp1t.1148687176410" id="745648737914683338">
@@ -812,5 +816,6 @@
       </node>
     </node>
   </root>
+  <root id="1049346859912887604" />
 </model>
 

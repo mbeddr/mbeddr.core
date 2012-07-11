@@ -52,7 +52,7 @@
       <property name="virtualPackage" nameId="tpck.1193676396447" value="main" />
     </node>
     <node type="tpf8.MappingConfiguration" typeId="tpf8.1095416546421" id="55677248263557370">
-      <property name="name" nameId="tpck.1169194664001" value="removeCommentedCode" />
+      <property name="name" nameId="tpck.1169194664001" value="removeCommentedAndEmptyCode" />
       <property name="topPriorityGroup" nameId="tpf8.1184950341882" value="true" />
       <property name="virtualPackage" nameId="tpck.1193676396447" value="topPrioStuff" />
     </node>
@@ -1233,6 +1233,11 @@
       <property name="applyToConceptInheritors" nameId="tpf8.1167272244852" value="true" />
       <link role="applicableConcept" roleId="tpf8.1167169349424" targetNodeId="vs0r.7024921229556133803" resolveInfo="ICommentedCode" />
       <node role="ruleConsequence" roleId="tpf8.1169672767469" type="tpf8.AbandonInput_RuleConsequence" typeId="tpf8.1202776937179" id="7024921229556171690" />
+    </node>
+    <node role="reductionMappingRule" roleId="tpf8.1167328349397" type="tpf8.Reduction_MappingRule" typeId="tpf8.1167327847730" id="1049346859913082926">
+      <property name="applyToConceptInheritors" nameId="tpf8.1167272244852" value="true" />
+      <link role="applicableConcept" roleId="tpf8.1167169349424" targetNodeId="vs0r.1049346859912912067" resolveInfo="IEmpty" />
+      <node role="ruleConsequence" roleId="tpf8.1169672767469" type="tpf8.AbandonInput_RuleConsequence" typeId="tpf8.1202776937179" id="1049346859913082927" />
     </node>
   </root>
   <root id="55677248263557371">
