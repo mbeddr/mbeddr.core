@@ -52,7 +52,7 @@
       <link role="concept" roleId="tp1t.1213093996982" targetNodeId="clbe.6116558314501347857" resolveInfo="TypeDef" />
     </node>
     <node type="tp1t.ConceptConstraints" typeId="tp1t.1213093968558" id="5882395403881875759">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="struct" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="su" />
       <link role="concept" roleId="tp1t.1213093996982" targetNodeId="clbe.5882395403881875736" resolveInfo="Member" />
     </node>
     <node type="tp1t.ConceptConstraints" typeId="tp1t.1213093968558" id="5882395403881907230">

@@ -27,8 +27,8 @@
     </node>
     <node type="tp3j.IntentionDeclaration" typeId="tp3j.1192794744107" id="6769054173340250306">
       <property name="virtualPackage" nameId="tpck.1193676396447" value="struct" />
-      <property name="name" nameId="tpck.1169194664001" value="ReferenceForStructMemberRef" />
-      <link role="forConcept" roleId="tp3j.2522969319638198290" targetNodeId="clbe.6394819151180597813" resolveInfo="StructMemberRef" />
+      <property name="name" nameId="tpck.1169194664001" value="ReferenceForMemberRef" />
+      <link role="forConcept" roleId="tp3j.2522969319638198290" targetNodeId="clbe.7099329415460395995" resolveInfo="MemberRef" />
     </node>
     <node type="tp3j.IntentionDeclaration" typeId="tp3j.1192794744107" id="8230733038424826929">
       <property name="virtualPackage" nameId="tpck.1193676396447" value="struct" />
