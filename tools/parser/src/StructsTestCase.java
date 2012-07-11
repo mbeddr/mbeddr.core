@@ -3,34 +3,33 @@ import java.util.HashMap;
 import junit.framework.TestCase;
 
 import org.eclipse.cdt.core.dom.ast.ASTVisitor;
+import org.eclipse.cdt.core.dom.ast.ExpansionOverlapsBoundaryException;
 import org.eclipse.cdt.core.dom.ast.IASTArrayModifier;
 import org.eclipse.cdt.core.dom.ast.IASTDeclSpecifier;
 import org.eclipse.cdt.core.dom.ast.IASTDeclaration;
 import org.eclipse.cdt.core.dom.ast.IASTDeclarator;
+import org.eclipse.cdt.core.dom.ast.IASTEnumerationSpecifier.IASTEnumerator;
 import org.eclipse.cdt.core.dom.ast.IASTExpression;
 import org.eclipse.cdt.core.dom.ast.IASTInitializer;
 import org.eclipse.cdt.core.dom.ast.IASTName;
 import org.eclipse.cdt.core.dom.ast.IASTParameterDeclaration;
 import org.eclipse.cdt.core.dom.ast.IASTPointerOperator;
-import org.eclipse.cdt.core.dom.ast.IASTPreprocessorMacroDefinition;
 import org.eclipse.cdt.core.dom.ast.IASTProblem;
-import org.eclipse.cdt.core.dom.ast.IASTSimpleDeclSpecifier;
 import org.eclipse.cdt.core.dom.ast.IASTStatement;
 import org.eclipse.cdt.core.dom.ast.IASTTranslationUnit;
 import org.eclipse.cdt.core.dom.ast.IASTTypeId;
-import org.eclipse.cdt.core.dom.ast.IASTEnumerationSpecifier.IASTEnumerator;
 import org.eclipse.cdt.core.dom.ast.c.ICASTDesignator;
 import org.eclipse.cdt.core.dom.ast.cpp.ICPPASTCapture;
+import org.eclipse.cdt.core.dom.ast.cpp.ICPPASTCompositeTypeSpecifier.ICPPASTBaseSpecifier;
 import org.eclipse.cdt.core.dom.ast.cpp.ICPPASTNamespaceDefinition;
 import org.eclipse.cdt.core.dom.ast.cpp.ICPPASTTemplateParameter;
-import org.eclipse.cdt.core.dom.ast.cpp.ICPPASTCompositeTypeSpecifier.ICPPASTBaseSpecifier;
 import org.eclipse.cdt.core.dom.ast.gnu.c.GCCLanguage;
 import org.eclipse.cdt.core.parser.DefaultLogService;
 import org.eclipse.cdt.core.parser.FileContent;
 import org.eclipse.cdt.core.parser.IncludeFileContentProvider;
 import org.eclipse.cdt.core.parser.ScannerInfo;
-import org.eclipse.cdt.internal.core.dom.parser.c.CASTFunctionDeclarator;
-import org.eclipse.cdt.internal.core.dom.parser.c.CASTParameterDeclaration;
+import org.eclipse.cdt.internal.core.dom.parser.c.CASTElaboratedTypeSpecifier;
+import org.eclipse.cdt.internal.core.dom.parser.c.CASTSimpleDeclaration;
 import org.eclipse.core.runtime.CoreException;
 
 public class StructsTestCase extends TestCase {
@@ -54,11 +53,13 @@ public class StructsTestCase extends TestCase {
 //		content.append("int (*funName2) (void); \n");
 //		content.append("}; \n");
 		
+//		content.append("struct s1 { 	\n");
+//		content.append("int i; \n");
+//		
+//		content.append("}; \n");
 		
-		content.append("struct BITFIELD { 	\n");
-		content.append("unsigned A:1; \n");
-		content.append("unsigned B:3; \n");
-		content.append("}; \n");
+		content.append("union emptyU;");
+		content.append("struct emptyS;");
 			  
 			 
 		
@@ -116,6 +117,16 @@ public class StructsTestCase extends TestCase {
 
 			public int visit(IASTDeclaration x) {
 				System.err.println(x.toString());
+				
+				
+				CASTSimpleDeclaration sd= (CASTSimpleDeclaration) x;
+				try {
+					System.out.println(sd.getSyntax().toString());
+				} catch (ExpansionOverlapsBoundaryException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+				
 				return PROCESS_CONTINUE;
 			}
 
@@ -135,6 +146,12 @@ public class StructsTestCase extends TestCase {
 			}
 
 			public int visit(IASTDeclSpecifier x) {
+				
+				CASTElaboratedTypeSpecifier specifier = (CASTElaboratedTypeSpecifier) x;
+				
+			
+				
+				
 				System.err.println(x.toString());
 				return PROCESS_CONTINUE;
 			}

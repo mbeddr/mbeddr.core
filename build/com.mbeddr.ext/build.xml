@@ -679,7 +679,7 @@
   
   <target name="check" depends="test" />
   
-  <target name="java.compile.java.modules.cycle.1" depends="fetchDependencies">
+  <target name="java.compile.java.modules.cycle.1">
     <mkdir dir="${build.tmp}/java.modules.cycle.1" />
     <javac destdir="${build.tmp}/java.modules.cycle.1" fork="true" nowarn="true" includeantruntime="false">
       <compilerarg value="-Xlint:none" />

@@ -24,7 +24,7 @@
       <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="3387987015204871559">
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="3387987015204871623">
           <node role="expr" roleId="c4fa.7254843406768833939" type="x27k.FunctionCall" typeId="x27k.5950410542643524492" id="3387987015204871624">
-            <link role="function" roleId="x27k.5950410542643524493" targetNodeId="944p.3387987015204928895" resolveInfo="printf" />
+            <link role="function" roleId="x27k.5950410542643524493" targetNodeId="944p.3284580646979879053" resolveInfo="printf" />
             <node role="actuals" roleId="x27k.5950410542643524495" type="yq40.StringLiteral" typeId="yq40.6113173064526131575" id="3387987015204871625">
               <property name="value" nameId="yq40.6113173064526131578" value="Hello World" />
             </node>
@@ -37,8 +37,8 @@
             <property name="const" nameId="mj1l.2941277002445651368" value="false" />
           </node>
           <node role="init" roleId="c4fa.4185783222026502647" type="mj1l.PlusExpression" typeId="mj1l.5763383285156373013" id="3387987015204929130">
-            <node role="right" roleId="mj1l.8860443239512128065" type="x27k.GlobalConstantRef" typeId="x27k.3788988821852026523" id="3387987015204929133">
-              <link role="constant" roleId="x27k.3788988821852026524" targetNodeId="944p.3387987015204928566" resolveInfo="_IOFBF" />
+            <node role="right" roleId="mj1l.8860443239512128065" type="x27k.GlobalConstantRef" typeId="x27k.3788988821852026523" id="3284580646979879273">
+              <link role="constant" roleId="x27k.3788988821852026524" targetNodeId="944p.3284580646979878787" resolveInfo="_IOFBF" />
             </node>
             <node role="left" roleId="mj1l.8860443239512128064" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3387987015204929127">
               <property name="value" nameId="mj1l.8860443239512128104" value="4" />
@@ -79,7 +79,7 @@
       </node>
     </node>
     <node role="imports" roleId="x27k.1317894735999304826" type="x27k.ModuleImport" typeId="x27k.1317894735999299713" id="3387987015204871622">
-      <link role="module" roleId="x27k.1317894735999299714" targetNodeId="944p.3387987015204928529" resolveInfo="stdio" />
+      <link role="module" roleId="x27k.1317894735999299714" targetNodeId="944p.3284580646979878749" resolveInfo="stdio" />
     </node>
   </root>
   <root id="3387987015204871570">
@@ -249,8 +249,11 @@
       <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="3387987015204871617">
         <link role="module" roleId="51wr.7717755763392524108" targetNodeId="3387987015204871557" resolveInfo="UsingIO" />
       </node>
+      <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="3284580646979879276">
+        <link role="module" roleId="51wr.7717755763392524108" targetNodeId="944p.3284580646979878740" resolveInfo="_types" />
+      </node>
       <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="3387987015204878298">
-        <link role="module" roleId="51wr.7717755763392524108" targetNodeId="944p.3387987015204928529" resolveInfo="stdio" />
+        <link role="module" roleId="51wr.7717755763392524108" targetNodeId="944p.3284580646979878749" resolveInfo="stdio" />
       </node>
     </node>
   </root>

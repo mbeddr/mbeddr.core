@@ -12,3 +12,5 @@ enum {ANONYM3};
 struct {
 	int i;
 } refToAnonym;
+
+enum emptyEnum;

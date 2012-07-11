@@ -31,7 +31,8 @@ notation\footnote{Note that the example application ships with \ic{stdio.h} in
 the solution's \ic{inc} directory.}.
 
 Once you have specified the path, you can press the \ic{(Re-)import Headers}
-button. This will import the headers in the specified directory. 
+button. This will import the headers in the specified directory. A result dialog
+will report any problems with the import.
 
 If you then open the resulting external module in MPS, you will see a number of
 errors. They result from the fact that no type size configuration is in you
@@ -125,9 +126,13 @@ stuff) will see these things unchanged.}.
 \paragraph{Regular Expression Mappings} This is the same as in the previous
 paragraph, except that the a regular expression can be used.
 
-\paragraph{Header Files}
+\paragraph{Header Files} This sections shows all header files located in the
+directory defined in the \ic{Include Path} property. Sometimes a header file
+does not include some other header file explicitly, although it should. The
+compiler seems to not care ... mbeddr, does care, however. By marking a header
+file as \ic{default include}, this header will be added to the \ic{import}
+section of all other headers. 
 
-\todo{somebody explain please what this does.}
 
 
 \subsection{Limitations}

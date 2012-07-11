@@ -1,3 +1,4 @@
+
 struct fullname	{
 	char forename[20];
 	char surname[20];
@@ -20,3 +21,6 @@ struct structWithConst {
 struct {
 	int i;
 } refToAnonym;
+
+
+struct emptyStruct;

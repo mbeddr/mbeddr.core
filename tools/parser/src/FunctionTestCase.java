@@ -1,4 +1,4 @@
-import java.util.HashMap;
+ 	import java.util.HashMap;
 
 import junit.framework.TestCase;
 
@@ -27,7 +27,6 @@ import org.eclipse.cdt.core.index.IIndexFileLocation;
 import org.eclipse.cdt.core.parser.DefaultLogService;
 import org.eclipse.cdt.core.parser.FileContent;
 import org.eclipse.cdt.core.parser.ScannerInfo;
-import org.eclipse.cdt.internal.core.parser.scanner.AbstractCharArray;
 import org.eclipse.cdt.internal.core.parser.scanner.CharArray;
 import org.eclipse.cdt.internal.core.parser.scanner.InternalFileContent;
 import org.eclipse.cdt.internal.core.parser.scanner.InternalFileContentProvider;
@@ -42,12 +41,17 @@ public class FunctionTestCase extends TestCase {
 		
 		conentWithInclude.append("");
 
+		conentWithInclude.append("#ifdef\n");
+				conentWithInclude.append("#include \"test.h\"\n");
+						conentWithInclude.append("#elif\n");
+								conentWithInclude.append("#include \"test2.h\"\n");
+										conentWithInclude.append("#endif\n");
 		
-		conentWithInclude.append("#ifndef CONSTSEGMENT\n");
-		conentWithInclude.append("#define CONSTSEGMENT\n");
-		conentWithInclude.append("#endif \n");
-		
-		conentWithInclude.append("int someInt; \n");
+//		conentWithInclude.append("#ifndef CONSTSEGMENT\n");
+//		conentWithInclude.append("#define CONSTSEGMENT\n");
+//		conentWithInclude.append("#endif \n");
+//		
+//		conentWithInclude.append("int someInt; \n");
 		
 		StringBuilder content2 = new StringBuilder();
 

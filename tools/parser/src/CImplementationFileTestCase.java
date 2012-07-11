@@ -47,28 +47,35 @@ public class CImplementationFileTestCase extends TestCase {
 //		content.append(" \n");
 		
 		//fuction prototype
-		content.append("int add(int a, int b); \n");
+//		content.append("int add(int a, int b); \n");
 		
-		/*
-		content.append("int add(int a, int b){ \n");
-		content.append("int ret; \n");
-		content.append("ret = a+b; \n");
-		content.append("return ret; \n");
-		content.append("} \n");
-		*/
 		
-//		content.append(" \n");
-//		content.append("int main(void) { \n");
-//		content.append("int result=add(a10, b20); \n");
-//		content.append("if(result==c30){ \n");
-//		content.append("printf(\"sum=30\"); \n");
-//		content.append("} else { \n");
-//		content.append("printf(\"sum not 30: %i\", add(a10,b20)); \n");
+//		content.append("int add(int a, int b){ \n");
+//		content.append("int ret; \n");
+//		content.append("ret = a+b; \n");
+//		content.append("return ret; \n");
+//		content.append("{ \n");
 //		content.append("} \n");
-//		content.append("return 0; \n");
-//		content.append("		} \n");
-	
+//		content.append("{ \n");
+//		content.append("} \n");
+//		content.append("} \n");
 		
+		
+		content.append("void compountStatments(int a, int b){\n");
+		content.append("	{ //1 \n");
+		content.append("	} //1 Ende \n");
+		content.append("	{ //2 \n");
+		content.append("		{ //2.1 \n");
+		content.append("		} //2.1 Ende \n");
+		content.append("		{ //2.2 \n");
+		content.append("			{ //2.2.1 \n");
+		content.append("			} //2.2.1 Ende \n");
+		content.append("		} //2.2 Ende \n");
+		content.append("		{ //2.3 \n");
+		content.append(" \n");
+		content.append("		} //2.3 Ende \n");
+		content.append("}//2 Ende \n");
+		content.append("}; \n");
 		HashMap<String, String> options = new HashMap<String, String>();
 
 		//__no_init
@@ -118,6 +125,11 @@ public class CImplementationFileTestCase extends TestCase {
 				System.err.println(x.toString());
 				return PROCESS_CONTINUE;
 			}
+			
+			public int leave(IASTDeclarator x) {
+				System.err.println("leave" + x.toString());
+				return PROCESS_CONTINUE;
+			}
 
 			public int visit(IASTDeclSpecifier x) {
 				System.err.println(x.toString());
@@ -148,7 +160,7 @@ public class CImplementationFileTestCase extends TestCase {
 				System.err.println(x.toString());
 				return PROCESS_CONTINUE;
 			}
-
+			
 			public int visit(IASTEnumerator x) {
 				System.err.println(x.toString());
 				return PROCESS_CONTINUE;
