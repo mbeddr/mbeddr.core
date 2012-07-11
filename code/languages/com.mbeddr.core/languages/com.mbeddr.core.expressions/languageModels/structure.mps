@@ -519,6 +519,9 @@
       <property name="name" nameId="tpck.1169194664001" value="IntegerMeetType" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="8860443239512128054" resolveInfo="Type" />
     </node>
+    <node type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="3073566081776926439">
+      <property name="name" nameId="tpck.1169194664001" value="IContextTypeProvider" />
+    </node>
   </roots>
   <root id="8860443239512128050">
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="356284525549555981">
@@ -1747,6 +1750,9 @@
       <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
       <link role="target" roleId="tpce.1071599976176" targetNodeId="8860443239512128054" resolveInfo="Type" />
     </node>
+    <node role="extends" roleId="tpce.1169127546356" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="3073566081776926448">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="3073566081776926439" resolveInfo="IContextTypeProvider" />
+    </node>
   </root>
   <root id="9149785691755093694">
     <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="4058325937810995735">
@@ -1900,5 +1906,6 @@
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="5763383285156300897" resolveInfo="IOrdered" />
     </node>
   </root>
+  <root id="3073566081776926439" />
 </model>
 

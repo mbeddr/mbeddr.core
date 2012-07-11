@@ -9057,11 +9057,11 @@
           <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="9093904621248588730">
             <property name="name" nameId="tpck.1169194664001" value="structMember" />
             <node role="type" roleId="tpee.5680397130376446158" type="tp25.SNodeType" typeId="tp25.1138055754698" id="9093904621248588731">
-              <link role="concept" roleId="tp25.1138405853777" targetNodeId="clbe.6394819151180597810" resolveInfo="StructMember" />
+              <link role="concept" roleId="tp25.1138405853777" targetNodeId="clbe.5882395403881875736" resolveInfo="Member" />
             </node>
             <node role="initializer" roleId="tpee.1068431790190" type="tpee.CastExpression" typeId="tpee.1070534934090" id="9093904621248588732">
-              <node role="type" roleId="tpee.1070534934091" type="tp25.SNodeType" typeId="tp25.1138055754698" id="9093904621248588733">
-                <link role="concept" roleId="tp25.1138405853777" targetNodeId="clbe.6394819151180597810" resolveInfo="StructMember" />
+              <node role="type" roleId="tpee.1070534934091" type="tp25.SNodeType" typeId="tp25.1138055754698" id="1694414027524464426">
+                <link role="concept" roleId="tp25.1138405853777" targetNodeId="clbe.5882395403881875736" resolveInfo="Member" />
               </node>
               <node role="expression" roleId="tpee.1070534934092" type="tpee.ParameterReference" typeId="tpee.1068581242874" id="9093904621248588734">
                 <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="2274997040902808608" resolveInfo="node" />
@@ -9125,11 +9125,11 @@
             </node>
             <node role="operation" roleId="tpee.1197027833540" type="tp2q.AddElementOperation" typeId="tp2q.1160612413312" id="2274997040902836123">
               <node role="argument" roleId="tp2q.1160612519549" type="tpee.CastExpression" typeId="tpee.1070534934090" id="2274997040902836125">
+                <node role="type" roleId="tpee.1070534934091" type="tp25.SNodeType" typeId="tp25.1138055754698" id="1694414027524464430">
+                  <link role="concept" roleId="tp25.1138405853777" targetNodeId="clbe.5882395403881875736" resolveInfo="Member" />
+                </node>
                 <node role="expression" roleId="tpee.1070534934092" type="tpee.ParameterReference" typeId="tpee.1068581242874" id="2274997040902836128">
                   <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="2274997040902808608" resolveInfo="node" />
-                </node>
-                <node role="type" roleId="tpee.1070534934091" type="tp25.SNodeType" typeId="tp25.1138055754698" id="2274997040902836127">
-                  <link role="concept" roleId="tp25.1138405853777" targetNodeId="clbe.6394819151180597810" resolveInfo="StructMember" />
                 </node>
               </node>
             </node>
@@ -9645,14 +9645,14 @@
         <node role="statement" roleId="tpee.1068581517665" type="tpee.LocalVariableDeclarationStatement" typeId="tpee.1068581242864" id="2274997040902836081">
           <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="2274997040902836082">
             <property name="name" nameId="tpck.1169194664001" value="member" />
-            <node role="type" roleId="tpee.5680397130376446158" type="tp25.SNodeType" typeId="tp25.1138055754698" id="2274997040902836083">
-              <link role="concept" roleId="tp25.1138405853777" targetNodeId="clbe.6394819151180597810" resolveInfo="StructMember" />
+            <node role="type" roleId="tpee.5680397130376446158" type="tp25.SNodeType" typeId="tp25.1138055754698" id="1694414027524464435">
+              <link role="concept" roleId="tp25.1138405853777" targetNodeId="clbe.5882395403881875736" resolveInfo="Member" />
             </node>
             <node role="initializer" roleId="tpee.1068431790190" type="hba4.BuilderExpression" typeId="hba4.4481811096720536877" id="2274997040902836085">
               <node role="root" roleId="hba4.4481811096720536927" type="hba4.ChildStep" typeId="hba4.4481811096720537459" id="2274997040902836086">
                 <link role="childLink" roleId="hba4.4481811096720607067" targetNodeId="tpck.5169995583184591170" />
-                <node role="value" roleId="hba4.6308171743671982944" type="hba4.ConceptRef" typeId="hba4.4481811096720976618" id="2274997040902836088">
-                  <link role="concept" roleId="hba4.4481811096720976619" targetNodeId="clbe.6394819151180597810" resolveInfo="StructMember" />
+                <node role="value" roleId="hba4.6308171743671982944" type="hba4.ConceptRef" typeId="hba4.4481811096720976618" id="1694414027524464436">
+                  <link role="concept" roleId="hba4.4481811096720976619" targetNodeId="clbe.5882395403881875736" resolveInfo="Member" />
                 </node>
                 <node role="children" roleId="hba4.4481811096720537463" type="hba4.SimplePropertyStep" typeId="hba4.4481811096720581223" id="2274997040902836090">
                   <link role="property" roleId="hba4.4481811096720581232" targetNodeId="tpck.1169194664001" resolveInfo="name" />
@@ -12373,11 +12373,11 @@
           <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="9093904621248556975">
             <property name="name" nameId="tpck.1169194664001" value="unionMember" />
             <node role="type" roleId="tpee.5680397130376446158" type="tp25.SNodeType" typeId="tp25.1138055754698" id="9093904621248556976">
-              <link role="concept" roleId="tp25.1138405853777" targetNodeId="clbe.5882395403881907074" resolveInfo="UnionMember" />
+              <link role="concept" roleId="tp25.1138405853777" targetNodeId="clbe.5882395403881875736" resolveInfo="Member" />
             </node>
             <node role="initializer" roleId="tpee.1068431790190" type="tpee.CastExpression" typeId="tpee.1070534934090" id="9093904621248556978">
               <node role="type" roleId="tpee.1070534934091" type="tp25.SNodeType" typeId="tp25.1138055754698" id="9093904621248556979">
-                <link role="concept" roleId="tp25.1138405853777" targetNodeId="clbe.5882395403881907074" resolveInfo="UnionMember" />
+                <link role="concept" roleId="tp25.1138405853777" targetNodeId="clbe.5882395403881875736" resolveInfo="Member" />
               </node>
               <node role="expression" roleId="tpee.1070534934092" type="tpee.ParameterReference" typeId="tpee.1068581242874" id="9093904621248556981">
                 <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="6574255070746243709" resolveInfo="node" />
@@ -12808,13 +12808,13 @@
           <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="2443081246093285918">
             <property name="name" nameId="tpck.1169194664001" value="member" />
             <node role="type" roleId="tpee.5680397130376446158" type="tp25.SNodeType" typeId="tp25.1138055754698" id="2443081246093285919">
-              <link role="concept" roleId="tp25.1138405853777" targetNodeId="clbe.5882395403881907074" resolveInfo="UnionMember" />
+              <link role="concept" roleId="tp25.1138405853777" targetNodeId="clbe.5882395403881875736" resolveInfo="Member" />
             </node>
             <node role="initializer" roleId="tpee.1068431790190" type="hba4.BuilderExpression" typeId="hba4.4481811096720536877" id="2443081246093285921">
               <node role="root" roleId="hba4.4481811096720536927" type="hba4.ChildStep" typeId="hba4.4481811096720537459" id="2443081246093285922">
                 <link role="childLink" roleId="hba4.4481811096720607067" targetNodeId="tpck.5169995583184591170" />
-                <node role="value" roleId="hba4.6308171743671982944" type="hba4.ConceptRef" typeId="hba4.4481811096720976618" id="2443081246093285924">
-                  <link role="concept" roleId="hba4.4481811096720976619" targetNodeId="clbe.5882395403881907074" resolveInfo="UnionMember" />
+                <node role="value" roleId="hba4.6308171743671982944" type="hba4.ConceptRef" typeId="hba4.4481811096720976618" id="1694414027524464453">
+                  <link role="concept" roleId="hba4.4481811096720976619" targetNodeId="clbe.5882395403881875736" resolveInfo="Member" />
                 </node>
                 <node role="children" roleId="hba4.4481811096720537463" type="hba4.SimplePropertyStep" typeId="hba4.4481811096720581223" id="2443081246093285928">
                   <link role="property" roleId="hba4.4481811096720581232" targetNodeId="tpck.1169194664001" resolveInfo="name" />
