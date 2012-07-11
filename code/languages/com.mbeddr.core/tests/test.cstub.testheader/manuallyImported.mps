@@ -13,7 +13,7 @@
   <import index="nbyu" modelUID="r:5104a07c-c91d-412c-8374-26edb13383eb(com.mbeddr.core.embedded.structure)" version="2" implicit="yes" />
   <import index="s5bn" modelUID="r:a92dafc6-eacf-4328-984c-d7620d951c7f(com.mbeddr.core.legacy.structure)" version="1" implicit="yes" />
   <import index="yq40" modelUID="r:152b3fc0-83a1-4bab-a8cd-565eb8483785(com.mbeddr.core.pointers.structure)" version="3" implicit="yes" />
-  <import index="clbe" modelUID="r:61d840b4-12c1-49ea-b142-b2a1550a9b15(com.mbeddr.core.udt.structure)" version="6" implicit="yes" />
+  <import index="clbe" modelUID="r:61d840b4-12c1-49ea-b142-b2a1550a9b15(com.mbeddr.core.udt.structure)" version="7" implicit="yes" />
   <roots>
     <node type="punb.HeaderImportSpecHFile" typeId="punb.7097640331099443677" id="3029574721709407579">
       <property name="includeDir" nameId="punb.7097640331099443678" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.core/tests/test.cstub.testheader/headers" />
@@ -384,7 +384,7 @@
     <node role="contents" roleId="x27k.6437088627575722833" type="clbe.UnionDeclaration" typeId="clbe.5882395403881907066" id="3284580646979589218">
       <property name="name" nameId="tpck.1169194664001" value="u1" />
       <property name="preventNameMangling" nameId="x27k.6708182213627106114" value="true" />
-      <node role="members" roleId="clbe.5882395403881907067" type="clbe.UnionMember" typeId="clbe.5882395403881907074" id="3284580646979589219">
+      <node role="members" roleId="clbe.7099329415459888018" type="clbe.UnionMember" typeId="clbe.5882395403881907074" id="3284580646979589219">
         <property name="name" nameId="tpck.1169194664001" value="funName" />
         <node role="type" roleId="mj1l.318113533128716676" type="x27k.FunctionRefType" typeId="x27k.8551646674110395547" id="3284580646979589220">
           <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
@@ -403,7 +403,7 @@
           </node>
         </node>
       </node>
-      <node role="members" roleId="clbe.5882395403881907067" type="clbe.UnionMember" typeId="clbe.5882395403881907074" id="3284580646979589224">
+      <node role="members" roleId="clbe.7099329415459888018" type="clbe.UnionMember" typeId="clbe.5882395403881907074" id="3284580646979589224">
         <property name="name" nameId="tpck.1169194664001" value="funName2" />
         <node role="type" roleId="mj1l.318113533128716676" type="x27k.FunctionRefType" typeId="x27k.8551646674110395547" id="3284580646979589225">
           <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
@@ -422,7 +422,7 @@
           </node>
         </node>
       </node>
-      <node role="members" roleId="clbe.5882395403881907067" type="clbe.UnionMember" typeId="clbe.5882395403881907074" id="3284580646979589229">
+      <node role="members" roleId="clbe.7099329415459888018" type="clbe.UnionMember" typeId="clbe.5882395403881907074" id="3284580646979589229">
         <property name="name" nameId="tpck.1169194664001" value="l" />
         <node role="type" roleId="mj1l.318113533128716676" type="mj1l.LongType" typeId="mj1l.86532984527104137" id="3284580646979589230">
           <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
@@ -2120,7 +2120,7 @@
     <node role="contents" roleId="x27k.6437088627575722833" type="clbe.UnionDeclaration" typeId="clbe.5882395403881907066" id="3284580646979589263">
       <property name="name" nameId="tpck.1169194664001" value="simpleUnion" />
       <property name="preventNameMangling" nameId="x27k.6708182213627106114" value="true" />
-      <node role="members" roleId="clbe.5882395403881907067" type="clbe.UnionMember" typeId="clbe.5882395403881907074" id="3284580646979589264">
+      <node role="members" roleId="clbe.7099329415459888018" type="clbe.UnionMember" typeId="clbe.5882395403881907074" id="3284580646979589264">
         <property name="name" nameId="tpck.1169194664001" value="i" />
         <node role="type" roleId="mj1l.318113533128716676" type="yq40.ArrayType" typeId="yq40.5679441017214012545" id="3284580646979589265">
           <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
@@ -2134,7 +2134,7 @@
           </node>
         </node>
       </node>
-      <node role="members" roleId="clbe.5882395403881907067" type="clbe.UnionMember" typeId="clbe.5882395403881907074" id="3284580646979589268">
+      <node role="members" roleId="clbe.7099329415459888018" type="clbe.UnionMember" typeId="clbe.5882395403881907074" id="3284580646979589268">
         <property name="name" nameId="tpck.1169194664001" value="f" />
         <node role="type" roleId="mj1l.318113533128716676" type="mj1l.FloatType" typeId="mj1l.4739982148980385695" id="3284580646979589269">
           <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
@@ -2187,7 +2187,7 @@
     <node role="contents" roleId="x27k.6437088627575722833" type="clbe.UnionDeclaration" typeId="clbe.5882395403881907066" id="3284580646979589280">
       <property name="name" nameId="tpck.1169194664001" value="unionWithNestedUnion" />
       <property name="preventNameMangling" nameId="x27k.6708182213627106114" value="true" />
-      <node role="members" roleId="clbe.5882395403881907067" type="clbe.UnionMember" typeId="clbe.5882395403881907074" id="3284580646979589281">
+      <node role="members" roleId="clbe.7099329415459888018" type="clbe.UnionMember" typeId="clbe.5882395403881907074" id="3284580646979589281">
         <property name="name" nameId="tpck.1169194664001" value="su" />
         <node role="type" roleId="mj1l.318113533128716676" type="clbe.UnionType" typeId="clbe.5882395403881907205" id="3284580646979589282">
           <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
@@ -2195,7 +2195,7 @@
           <link role="union" roleId="clbe.5882395403881907207" targetNodeId="3284580646979589263" resolveInfo="simpleUnion" />
         </node>
       </node>
-      <node role="members" roleId="clbe.5882395403881907067" type="clbe.UnionMember" typeId="clbe.5882395403881907074" id="3284580646979589283">
+      <node role="members" roleId="clbe.7099329415459888018" type="clbe.UnionMember" typeId="clbe.5882395403881907074" id="3284580646979589283">
         <property name="name" nameId="tpck.1169194664001" value="i2" />
         <node role="type" roleId="mj1l.318113533128716676" type="mj1l.IntType" typeId="mj1l.8860443239512128108" id="3284580646979589284">
           <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
@@ -2206,7 +2206,7 @@
     <node role="contents" roleId="x27k.6437088627575722833" type="clbe.UnionDeclaration" typeId="clbe.5882395403881907066" id="3284580646979589285">
       <property name="name" nameId="tpck.1169194664001" value="inTypeDef" />
       <property name="preventNameMangling" nameId="x27k.6708182213627106114" value="true" />
-      <node role="members" roleId="clbe.5882395403881907067" type="clbe.UnionMember" typeId="clbe.5882395403881907074" id="3284580646979589286">
+      <node role="members" roleId="clbe.7099329415459888018" type="clbe.UnionMember" typeId="clbe.5882395403881907074" id="3284580646979589286">
         <property name="name" nameId="tpck.1169194664001" value="i" />
         <node role="type" roleId="mj1l.318113533128716676" type="mj1l.IntType" typeId="mj1l.8860443239512128108" id="3284580646979589287">
           <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
@@ -2226,7 +2226,7 @@
     <node role="contents" roleId="x27k.6437088627575722833" type="clbe.UnionDeclaration" typeId="clbe.5882395403881907066" id="3284580646979589290">
       <property name="name" nameId="tpck.1169194664001" value="unionWithConst" />
       <property name="preventNameMangling" nameId="x27k.6708182213627106114" value="true" />
-      <node role="members" roleId="clbe.5882395403881907067" type="clbe.UnionMember" typeId="clbe.5882395403881907074" id="3284580646979589291">
+      <node role="members" roleId="clbe.7099329415459888018" type="clbe.UnionMember" typeId="clbe.5882395403881907074" id="3284580646979589291">
         <property name="name" nameId="tpck.1169194664001" value="i" />
         <node role="type" roleId="mj1l.318113533128716676" type="mj1l.IntType" typeId="mj1l.8860443239512128108" id="3284580646979589292">
           <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
@@ -2237,7 +2237,7 @@
     <node role="contents" roleId="x27k.6437088627575722833" type="clbe.UnionDeclaration" typeId="clbe.5882395403881907066" id="3284580646979589293">
       <property name="name" nameId="tpck.1169194664001" value="__manuallyImported__unionTestHeader___union_1" />
       <property name="preventNameMangling" nameId="x27k.6708182213627106114" value="true" />
-      <node role="members" roleId="clbe.5882395403881907067" type="clbe.UnionMember" typeId="clbe.5882395403881907074" id="3284580646979589294">
+      <node role="members" roleId="clbe.7099329415459888018" type="clbe.UnionMember" typeId="clbe.5882395403881907074" id="3284580646979589294">
         <property name="name" nameId="tpck.1169194664001" value="i" />
         <node role="type" roleId="mj1l.318113533128716676" type="mj1l.IntType" typeId="mj1l.8860443239512128108" id="3284580646979589295">
           <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
@@ -2265,7 +2265,7 @@
     <node role="contents" roleId="x27k.6437088627575722833" type="clbe.UnionDeclaration" typeId="clbe.5882395403881907066" id="3284580646979588805">
       <property name="name" nameId="tpck.1169194664001" value="BITFIELD" />
       <property name="preventNameMangling" nameId="x27k.6708182213627106114" value="true" />
-      <node role="members" roleId="clbe.5882395403881907067" type="clbe.UnionMember" typeId="clbe.5882395403881907074" id="3284580646979588806">
+      <node role="members" roleId="clbe.7099329415459888018" type="clbe.UnionMember" typeId="clbe.5882395403881907074" id="3284580646979588806">
         <property name="name" nameId="tpck.1169194664001" value="A" />
         <node role="type" roleId="mj1l.318113533128716676" type="clbe.UnsignedBitType" typeId="clbe.6183845377104662871" id="3284580646979588807">
           <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
@@ -2273,7 +2273,7 @@
           <property name="width" nameId="clbe.6183845377104662872" value="1" />
         </node>
       </node>
-      <node role="members" roleId="clbe.5882395403881907067" type="clbe.UnionMember" typeId="clbe.5882395403881907074" id="3284580646979588808">
+      <node role="members" roleId="clbe.7099329415459888018" type="clbe.UnionMember" typeId="clbe.5882395403881907074" id="3284580646979588808">
         <property name="name" nameId="tpck.1169194664001" value="__1" />
         <node role="type" roleId="mj1l.318113533128716676" type="clbe.UnsignedBitType" typeId="clbe.6183845377104662871" id="3284580646979588809">
           <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
@@ -2281,7 +2281,7 @@
           <property name="width" nameId="clbe.6183845377104662872" value="3" />
         </node>
       </node>
-      <node role="members" roleId="clbe.5882395403881907067" type="clbe.UnionMember" typeId="clbe.5882395403881907074" id="3284580646979588810">
+      <node role="members" roleId="clbe.7099329415459888018" type="clbe.UnionMember" typeId="clbe.5882395403881907074" id="3284580646979588810">
         <property name="name" nameId="tpck.1169194664001" value="__2" />
         <node role="type" roleId="mj1l.318113533128716676" type="clbe.UnsignedBitType" typeId="clbe.6183845377104662871" id="3284580646979588811">
           <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
@@ -2289,7 +2289,7 @@
           <property name="width" nameId="clbe.6183845377104662872" value="2" />
         </node>
       </node>
-      <node role="members" roleId="clbe.5882395403881907067" type="clbe.UnionMember" typeId="clbe.5882395403881907074" id="3284580646979588812">
+      <node role="members" roleId="clbe.7099329415459888018" type="clbe.UnionMember" typeId="clbe.5882395403881907074" id="3284580646979588812">
         <property name="name" nameId="tpck.1169194664001" value="D" />
         <node role="type" roleId="mj1l.318113533128716676" type="clbe.UnsignedBitType" typeId="clbe.6183845377104662871" id="3284580646979588813">
           <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />

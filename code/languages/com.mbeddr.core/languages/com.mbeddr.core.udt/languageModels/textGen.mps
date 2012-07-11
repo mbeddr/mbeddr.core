@@ -3,7 +3,7 @@
   <persistence version="7" />
   <language namespace="b83431fe-5c8f-40bc-8a36-65e25f4dd253(jetbrains.mps.lang.textGen)" />
   <devkit namespace="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
-  <import index="clbe" modelUID="r:61d840b4-12c1-49ea-b142-b2a1550a9b15(com.mbeddr.core.udt.structure)" version="6" />
+  <import index="clbe" modelUID="r:61d840b4-12c1-49ea-b142-b2a1550a9b15(com.mbeddr.core.udt.structure)" version="7" />
   <import index="qd6m" modelUID="r:c4c3f7d3-0acf-4671-a134-5fab66c4e637(com.mbeddr.core.modules.behavior)" version="-1" />
   <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="4" />
   <import index="yq40" modelUID="r:152b3fc0-83a1-4bab-a8cd-565eb8483785(com.mbeddr.core.pointers.structure)" version="3" />
@@ -85,6 +85,7 @@
       <link role="conceptDeclaration" roleId="2omo.1233670257997" targetNodeId="clbe.5095889050031607156" resolveInfo="StructInitExpression" />
     </node>
     <node type="2omo.ConceptTextGenDeclaration" typeId="2omo.1233670071145" id="7099329415460336521">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="su" />
       <link role="conceptDeclaration" roleId="2omo.1233670257997" targetNodeId="clbe.7099329415459817973" resolveInfo="SUDeclaration" />
     </node>
   </roots>
@@ -124,7 +125,7 @@
               <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="745648737914688509">
                 <node role="operand" roleId="tpee.1197027771414" type="2omo.NodeParameter" typeId="2omo.1233748055915" id="745648737914688508" />
                 <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="745648737914688513">
-                  <link role="link" roleId="tp25.1138056516764" targetNodeId="clbe.6394819151180597814" />
+                  <link role="link" roleId="tp25.1138056516764" targetNodeId="clbe.7099329415460397525" />
                 </node>
               </node>
               <node role="operation" roleId="tpee.1197027833540" type="tp25.SPropertyAccess" typeId="tp25.1138056022639" id="745648737914688518">
@@ -934,8 +935,8 @@
             <node role="value" roleId="2omo.1237305790512" type="tpee.DotExpression" typeId="tpee.1197027756228" id="1730914748330560524">
               <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="1730914748330560525">
                 <node role="operand" roleId="tpee.1197027771414" type="2omo.NodeParameter" typeId="2omo.1233748055915" id="1730914748330560526" />
-                <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="1730914748330592212">
-                  <link role="link" roleId="tp25.1138056516764" targetNodeId="clbe.5882395403881908169" />
+                <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="7099329415460554167">
+                  <link role="link" roleId="tp25.1138056516764" targetNodeId="clbe.7099329415460397525" />
                 </node>
               </node>
               <node role="operation" roleId="tpee.1197027833540" type="tp25.SPropertyAccess" typeId="tp25.1138056022639" id="1730914748330560528">

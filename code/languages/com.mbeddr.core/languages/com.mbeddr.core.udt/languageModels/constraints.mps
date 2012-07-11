@@ -4,7 +4,7 @@
   <language namespace="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1(jetbrains.mps.lang.constraints)" />
   <language namespace="7a5dda62-9140-4668-ab76-d5ed1746f2b2(jetbrains.mps.lang.typesystem)" />
   <devkit namespace="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
-  <import index="clbe" modelUID="r:61d840b4-12c1-49ea-b142-b2a1550a9b15(com.mbeddr.core.udt.structure)" version="6" />
+  <import index="clbe" modelUID="r:61d840b4-12c1-49ea-b142-b2a1550a9b15(com.mbeddr.core.udt.structure)" version="7" />
   <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="17" />
   <import index="qd6m" modelUID="r:c4c3f7d3-0acf-4671-a134-5fab66c4e637(com.mbeddr.core.modules.behavior)" version="-1" />
   <import index="yq40" modelUID="r:152b3fc0-83a1-4bab-a8cd-565eb8483785(com.mbeddr.core.pointers.structure)" version="3" />
@@ -72,12 +72,13 @@
       <link role="concept" roleId="tp1t.1213093996982" targetNodeId="clbe.6183845377104662871" resolveInfo="UnsignedBitType" />
     </node>
     <node type="tp1t.ConceptConstraints" typeId="tp1t.1213093968558" id="7099329415460249472">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="su" />
       <link role="concept" roleId="tp1t.1213093996982" targetNodeId="clbe.7099329415459817973" resolveInfo="SUDeclaration" />
     </node>
   </roots>
   <root id="6394819151180597855">
     <node role="referent" roleId="tp1t.1213100494875" type="tp1t.NodeReferentConstraint" typeId="tp1t.1148687176410" id="6394819151180597856">
-      <link role="applicableLink" roleId="tp1t.1148687202698" targetNodeId="clbe.6394819151180597814" />
+      <link role="applicableLink" roleId="tp1t.1148687202698" targetNodeId="clbe.7099329415460397525" />
       <node role="searchScopeFactory" roleId="tp1t.1148687345559" type="tp1t.ConstraintFunction_ReferentSearchScope_Factory" typeId="tp1t.1148684180339" id="6394819151180597857">
         <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="6394819151180597858">
           <node role="statement" roleId="tpee.1068581517665" type="tpee.IfStatement" typeId="tpee.1068580123159" id="6631303246402183996">
@@ -677,7 +678,7 @@
   </root>
   <root id="227598611278055241">
     <node role="referent" roleId="tp1t.1213100494875" type="tp1t.NodeReferentConstraint" typeId="tp1t.1148687176410" id="2919373971480602604">
-      <link role="applicableLink" roleId="tp1t.1148687202698" targetNodeId="clbe.5882395403881908169" />
+      <link role="applicableLink" roleId="tp1t.1148687202698" targetNodeId="clbe.7099329415460397525" />
       <node role="searchScopeFactory" roleId="tp1t.1148687345559" type="tp1t.ConstraintFunction_ReferentSearchScope_Factory" typeId="tp1t.1148684180339" id="2919373971480602605">
         <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="2919373971480602606">
           <node role="statement" roleId="tpee.1068581517665" type="tpee.IfStatement" typeId="tpee.1068580123159" id="2919373971480602607">
