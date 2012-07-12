@@ -575,7 +575,7 @@
       </node>
       <node role="contents" roleId="x27k.6437088627575722833" type="clbe.StructDeclaration" typeId="clbe.6394819151180597807" id="7841826218425767116">
         <property name="name" nameId="tpck.1169194664001" value="MockData" />
-        <property name="exported" nameId="x27k.1317894735999272944" value="false" />
+        <property name="exported" nameId="x27k.1317894735999272944" value="true" />
         <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.TemplateFragment" typeId="tpf8.1095672379244" id="1252295221377310624" />
         <node role="members" roleId="clbe.7099329415459888018" type="clbe.Member" typeId="clbe.5882395403881875736" id="1694414027524183984">
           <property name="name" nameId="tpck.1169194664001" value="callCount" />
