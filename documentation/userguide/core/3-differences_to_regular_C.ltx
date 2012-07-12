@@ -650,11 +650,11 @@ U u1 = {m1 = 10};
 U u3 = {m2 = true}; 
 \end{code}
 
-\paragraph{The \ic{with} Statement} Just like Pascal, mbeddr C supports a
-\ic{with} statement for \ic{struct}s that avoids repeating the context
-expression. Note that since the generator generates code that evaluates the
+\paragraph{The \ic{with} \textbf{Statement}} Just like Pascal, mbeddr C supports
+a \ic{with} statement for \ic{struct}s that avoids repeating the context
+expression\footnote{Note that since the generator generates code that evaluates the
 context expression several times, the context expression must be idempotent. An
-error is reported if that is not the case. Here is an example:
+error is reported if that is not the case.}. Here is an example:
 
 \begin{code}
 struct Point { 
