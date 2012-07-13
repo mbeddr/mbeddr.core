@@ -1001,6 +1001,9 @@
   <root id="7024921229556158155">
     <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Component" typeId="tpc2.1078939183254" id="7024921229556158157">
       <link role="editorComponent" roleId="tpc2.1078939183255" targetNodeId="r4b4.7024921229556157914" resolveInfo="commentedCodeDefault" />
+      <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.SelectableStyleSheetItem" typeId="tpc2.1186414928363" id="7603351357795616724">
+        <property name="flag" nameId="tpc2.1186414551515" value="false" />
+      </node>
     </node>
   </root>
   <root id="8048707981757876106">
@@ -1672,6 +1675,9 @@
   <root id="7565145259447112964">
     <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Component" typeId="tpc2.1078939183254" id="5750171280003851639">
       <link role="editorComponent" roleId="tpc2.1078939183255" targetNodeId="r4b4.7565145259447112918" resolveInfo="listOfDocParts" />
+      <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.SelectableStyleSheetItem" typeId="tpc2.1186414928363" id="7603351357795616734">
+        <property name="flag" nameId="tpc2.1186414551515" value="false" />
+      </node>
     </node>
   </root>
   <root id="8670550972713474110">
