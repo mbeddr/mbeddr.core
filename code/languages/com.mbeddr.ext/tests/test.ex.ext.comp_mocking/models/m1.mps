@@ -181,6 +181,18 @@
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="k146.MessageDefinitionTable" typeId="k146.2688792604367903085" id="4331139697889836041">
       <property name="name" nameId="tpck.1169194664001" value="messages" />
+      <node role="messages" roleId="k146.2688792604367903095" type="k146.MessageDefinition" typeId="k146.2688792604367903087" id="7603351357795252228">
+        <property name="active" nameId="k146.2688792604367947988" value="true" />
+        <property name="name" nameId="tpck.1169194664001" value="point" />
+        <property name="text" nameId="k146.2688792604367903089" value="Point" />
+        <node role="properties" roleId="k146.767515563077204474" type="k146.MessageProperty" typeId="k146.767515563077204464" id="7603351357795252229">
+          <property name="name" nameId="tpck.1169194664001" value="p" />
+          <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="7603351357795252230">
+            <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+            <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+          </node>
+        </node>
+      </node>
       <node role="messages" roleId="k146.2688792604367903095" type="k146.MessageDefinition" typeId="k146.2688792604367903087" id="4331139697889836042">
         <property name="active" nameId="k146.2688792604367947988" value="true" />
         <property name="name" nameId="tpck.1169194664001" value="mockDidntValidate" />
@@ -195,11 +207,31 @@
       <property name="name" nameId="tpck.1169194664001" value="runTest" />
       <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="2151335435833422651" />
       <node role="body" roleId="yz9a.6275792049641586525" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="2151335435833422652">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="k146.ReportStatement" typeId="k146.2688792604367964821" id="7603351357795252232">
+          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="7603351357795252232" />
+          <node role="msgref" roleId="k146.2688792604367973273" type="k146.MessageRef" typeId="k146.2688792604367964823" id="7603351357795252233">
+            <link role="table" roleId="k146.2688792604367964824" targetNodeId="4331139697889836041" resolveInfo="messages" />
+            <link role="msg" roleId="k146.2688792604367964825" targetNodeId="7603351357795252228" resolveInfo="point" />
+            <node role="propVals" roleId="k146.767515563077221084" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="7603351357795252234">
+              <property name="value" nameId="mj1l.8860443239512128104" value="1" />
+            </node>
+          </node>
+        </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="4957503999941136204">
           <node role="expr" roleId="c4fa.7254843406768833939" type="v7ag.PortAdapterOpCallExpr" typeId="v7ag.466603768608410221" id="4957503999941136205">
             <link role="operation" roleId="v7ag.8105003328815071752" targetNodeId="2151335435833422616" resolveInfo="run" />
             <node role="expr" roleId="v7ag.8105003328815071750" type="v7ag.PortAdapterRefExpr" typeId="v7ag.8105003328815039001" id="4957503999941136206">
               <link role="portAdater" roleId="v7ag.8105003328815039002" targetNodeId="2151335435833422648" resolveInfo="client" />
+            </node>
+          </node>
+        </node>
+        <node role="statements" roleId="c4fa.4185783222026475862" type="k146.ReportStatement" typeId="k146.2688792604367964821" id="7603351357795252236">
+          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="7603351357795252232" />
+          <node role="msgref" roleId="k146.2688792604367973273" type="k146.MessageRef" typeId="k146.2688792604367964823" id="7603351357795252237">
+            <link role="msg" roleId="k146.2688792604367964825" targetNodeId="7603351357795252228" resolveInfo="point" />
+            <link role="table" roleId="k146.2688792604367964824" targetNodeId="4331139697889836041" resolveInfo="messages" />
+            <node role="propVals" roleId="k146.767515563077221084" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="7603351357795252239">
+              <property name="value" nameId="mj1l.8860443239512128104" value="2" />
             </node>
           </node>
         </node>
@@ -318,6 +350,24 @@
     </node>
   </root>
   <root id="2151335435833422610">
+    <node role="contents" roleId="x27k.6437088627575722833" type="k146.MessageDefinitionTable" typeId="k146.2688792604367903085" id="7603351357795253056">
+      <property name="name" nameId="tpck.1169194664001" value="messages" />
+      <node role="messages" roleId="k146.2688792604367903095" type="k146.MessageDefinition" typeId="k146.2688792604367903087" id="7603351357795253057">
+        <property name="active" nameId="k146.2688792604367947988" value="true" />
+        <property name="name" nameId="tpck.1169194664001" value="point" />
+        <property name="text" nameId="k146.2688792604367903089" value="Point" />
+        <node role="properties" roleId="k146.767515563077204474" type="k146.MessageProperty" typeId="k146.767515563077204464" id="7603351357795253058">
+          <property name="name" nameId="tpck.1169194664001" value="p" />
+          <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="7603351357795253059">
+            <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+            <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="7603351357795253055">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1342165772830_1" />
+    </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="v7ag.ClientServerInterface" typeId="v7ag.4491876417845484922" id="2151335435833422615">
       <property name="exported" nameId="x27k.1317894735999272944" value="true" />
       <property name="name" nameId="tpck.1169194664001" value="Driver" />
@@ -346,8 +396,28 @@
               <link role="struct" roleId="clbe.6394819151180597817" targetNodeId="2151335435833415470" resolveInfo="DataPacket" />
             </node>
           </node>
+          <node role="statements" roleId="c4fa.4185783222026475862" type="k146.ReportStatement" typeId="k146.2688792604367964821" id="7603351357795253062">
+            <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="7603351357795253062" />
+            <node role="msgref" roleId="k146.2688792604367973273" type="k146.MessageRef" typeId="k146.2688792604367964823" id="7603351357795253063">
+              <link role="table" roleId="k146.2688792604367964824" targetNodeId="7603351357795253056" resolveInfo="messages" />
+              <link role="msg" roleId="k146.2688792604367964825" targetNodeId="7603351357795253057" resolveInfo="point" />
+              <node role="propVals" roleId="k146.767515563077221084" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="7603351357795253064">
+                <property name="value" nameId="mj1l.8860443239512128104" value="3" />
+              </node>
+            </node>
+          </node>
           <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.IfStatement" typeId="c4fa.6275792049641600983" id="4957503999941136193">
             <node role="thenPart" roleId="c4fa.6275792049641600985" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="4957503999941136194">
+              <node role="statements" roleId="c4fa.4185783222026475862" type="k146.ReportStatement" typeId="k146.2688792604367964821" id="7603351357795253065">
+                <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="7603351357795253062" />
+                <node role="msgref" roleId="k146.2688792604367973273" type="k146.MessageRef" typeId="k146.2688792604367964823" id="7603351357795253066">
+                  <link role="msg" roleId="k146.2688792604367964825" targetNodeId="7603351357795253057" resolveInfo="point" />
+                  <link role="table" roleId="k146.2688792604367964824" targetNodeId="7603351357795253056" resolveInfo="messages" />
+                  <node role="propVals" roleId="k146.767515563077221084" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="7603351357795253069">
+                    <property name="value" nameId="mj1l.8860443239512128104" value="4" />
+                  </node>
+                </node>
+              </node>
               <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="4957503999940758207">
                 <node role="expr" roleId="c4fa.7254843406768833939" type="v7ag.RequiredPortOpCallExpr" typeId="v7ag.466603768608442377" id="4957503999940758209">
                   <link role="operation" roleId="v7ag.8105003328815071752" targetNodeId="2151335435833415467" resolveInfo="store" />
@@ -358,6 +428,16 @@
                     <node role="expression" roleId="mj1l.7254843406768839760" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="4957503999940758210">
                       <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="4957503999940757265" resolveInfo="p" />
                     </node>
+                  </node>
+                </node>
+              </node>
+              <node role="statements" roleId="c4fa.4185783222026475862" type="k146.ReportStatement" typeId="k146.2688792604367964821" id="7603351357795253071">
+                <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="7603351357795253062" />
+                <node role="msgref" roleId="k146.2688792604367973273" type="k146.MessageRef" typeId="k146.2688792604367964823" id="7603351357795253072">
+                  <link role="table" roleId="k146.2688792604367964824" targetNodeId="7603351357795253056" resolveInfo="messages" />
+                  <link role="msg" roleId="k146.2688792604367964825" targetNodeId="7603351357795253057" resolveInfo="point" />
+                  <node role="propVals" roleId="k146.767515563077221084" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="7603351357795253073">
+                    <property name="value" nameId="mj1l.8860443239512128104" value="5" />
                   </node>
                 </node>
               </node>
