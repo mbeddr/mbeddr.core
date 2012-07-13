@@ -17,6 +17,14 @@ cd ppc
 make test
 PROC_RET=$(($?+$PROC_RET))
 
+
+echo -------------------------------------
+echo componentWithCallback
+cd ..
+cd componentWithCallback
+make test
+PROC_RET=$(($?+$PROC_RET))
+
 echo -------------------------------------
 echo directRunnableCall
 cd ..
