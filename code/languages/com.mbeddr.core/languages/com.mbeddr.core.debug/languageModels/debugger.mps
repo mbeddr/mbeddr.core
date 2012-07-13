@@ -12172,28 +12172,6 @@
         <link role="classifier" roleId="tpee.1107535924139" targetNodeId="2581466085546042182" resolveInfo="CreatingBreakpointFailedException" />
       </node>
       <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="6735543362812314562">
-        <node role="statement" roleId="tpee.1068581517665" type="tpee.IfStatement" typeId="tpee.1068580123159" id="7903505343515810017">
-          <node role="ifTrue" roleId="tpee.1068580123161" type="tpee.StatementList" typeId="tpee.1068580123136" id="7903505343515810018">
-            <node role="statement" roleId="tpee.1068581517665" type="tpee.ThrowStatement" typeId="tpee.1164991038168" id="7903505343515810046">
-              <node role="throwable" roleId="tpee.1164991057263" type="tpee.GenericNewExpression" typeId="tpee.1145552977093" id="7903505343515810048">
-                <node role="creator" roleId="tpee.1145553007750" type="tpee.ClassCreator" typeId="tpee.1212685548494" id="7903505343515810050">
-                  <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="e2lb.~RuntimeException%d&lt;init&gt;(java%dlang%dString)" resolveInfo="RuntimeException" />
-                  <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="7903505343515810051">
-                    <property name="value" nameId="tpee.1070475926801" value="&lt;html&gt;&lt;table border=\&quot;1\&quot;&gt;\n&lt;tr&gt;&lt;td&gt;Label&lt;/td&gt;&lt;td&gt;mit&lt;/td&gt;&lt;/tr&gt;\n&lt;tr&gt;&lt;td&gt;HTML-&lt;/td&gt;&lt;td&gt;Text&lt;/td&gt;&lt;/tr&gt;\n&lt;/table&gt;&lt;/html&gt;" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-          <node role="condition" roleId="tpee.1068580123160" type="tpee.EqualsExpression" typeId="tpee.1068580123152" id="7903505343515810042">
-            <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="7903505343515810045">
-              <property name="value" nameId="tpee.1068580320021" value="1" />
-            </node>
-            <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="7903505343515810021">
-              <property name="value" nameId="tpee.1068580320021" value="1" />
-            </node>
-          </node>
-        </node>
         <node role="statement" roleId="tpee.1068581517665" type="tpee.LocalVariableDeclarationStatement" typeId="tpee.1068581242864" id="6735543362812314574">
           <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="6735543362812314575">
             <property name="name" nameId="tpck.1169194664001" value="tmp" />
