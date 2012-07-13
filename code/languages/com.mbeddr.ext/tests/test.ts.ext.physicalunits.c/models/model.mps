@@ -15,7 +15,7 @@
   <import index="tp5g" modelUID="r:00000000-0000-4000-0000-011c89590388(jetbrains.mps.lang.test.structure)" version="4" implicit="yes" />
   <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="17" implicit="yes" />
   <import index="yq40" modelUID="r:152b3fc0-83a1-4bab-a8cd-565eb8483785(com.mbeddr.core.pointers.structure)" version="3" implicit="yes" />
-  <import index="clbe" modelUID="r:61d840b4-12c1-49ea-b142-b2a1550a9b15(com.mbeddr.core.udt.structure)" version="5" implicit="yes" />
+  <import index="clbe" modelUID="r:61d840b4-12c1-49ea-b142-b2a1550a9b15(com.mbeddr.core.udt.structure)" version="7" implicit="yes" />
   <import index="51wr" modelUID="r:b31f1c3c-99aa-4f1e-a329-cba27efb1a6b(com.mbeddr.core.buildconfig.structure)" version="1" implicit="yes" />
   <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="4" implicit="yes" />
   <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="1" implicit="yes" />
@@ -34,6 +34,9 @@
     </node>
     <node type="tp5g.TestInfo" typeId="tp5g.5097124989038916362" id="1423209693056975518">
       <property name="projectPath" nameId="tp5g.5097124989038916363" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.ext/ext.dev.mpr" />
+    </node>
+    <node type="tp5g.NodesTestCase" typeId="tp5g.1216913645126" id="8874129026042498960">
+      <property name="name" nameId="tpck.1169194664001" value="testUnitsBugDemo" />
     </node>
   </roots>
   <root id="5513256947824560741">
@@ -1012,5 +1015,52 @@
     <node role="nodesToCheck" roleId="tp5g.1217501822150" type="tp5g.TestNode" typeId="tp5g.1216989428737" id="8027210066655589927" />
   </root>
   <root id="1423209693056975518" />
+  <root id="8874129026042498960">
+    <node role="nodesToCheck" roleId="tp5g.1217501822150" type="tp5g.TestNode" typeId="tp5g.1216989428737" id="8874129026042498961">
+      <node role="nodeToCheck" roleId="tp5g.1216989461394" type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="8874129026042498962">
+        <property name="name" nameId="tpck.1169194664001" value="HelloWorld" />
+        <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="8874129026042498967">
+          <property name="name" nameId="tpck.1169194664001" value="empty_1332324842933_3" />
+        </node>
+        <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="8874129026042498968">
+          <property name="name" nameId="tpck.1169194664001" value="testBasicUnits" />
+          <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="8874129026042498969">
+            <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="8874129026042499001">
+              <property name="name" nameId="tpck.1169194664001" value="n4" />
+              <node role="type" roleId="mj1l.318113533128716676" type="3c6d.TypeWithUnit" typeId="3c6d.5513256947824492703" id="8874129026042499002">
+                <node role="valueType" roleId="3c6d.5513256947824503029" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="8874129026042499003" />
+                <node role="unit" roleId="3c6d.5513256947824503030" type="ym4j.UnitDeclarationRef" typeId="ym4j.8099136929591173606" id="8874129026042504946">
+                  <link role="ref" roleId="ym4j.8099136929591173608" targetNodeId="5513256947824585484" resolveInfo="N" />
+                </node>
+              </node>
+              <node role="init" roleId="c4fa.4185783222026502647" type="mj1l.MultiExpression" typeId="mj1l.5763383285156373020" id="8874129026042499009">
+                <node role="left" roleId="mj1l.8860443239512128064" type="3c6d.LiteralWithUnit" typeId="3c6d.5513256947824592491" id="8874129026042499010">
+                  <node role="unit" roleId="3c6d.5513256947824592493" type="ym4j.UnitDeclarationRef" typeId="ym4j.8099136929591173606" id="8874129026042499011">
+                    <link role="ref" roleId="ym4j.8099136929591173608" targetNodeId="5513256947824585484" resolveInfo="N" />
+                  </node>
+                  <node role="value" roleId="3c6d.5513256947824592492" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="8874129026042499012">
+                    <property name="value" nameId="mj1l.8860443239512128104" value="3" />
+                  </node>
+                </node>
+                <node role="right" roleId="mj1l.8860443239512128065" type="3c6d.LiteralWithUnit" typeId="3c6d.5513256947824592491" id="8874129026042499013">
+                  <node role="unit" roleId="3c6d.5513256947824592493" type="ym4j.SISecond" typeId="ym4j.3801772042669047312" id="8874129026042499014" />
+                  <node role="value" roleId="3c6d.5513256947824592492" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="8874129026042499015">
+                    <property name="value" nameId="mj1l.8860443239512128104" value="4" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="8874129026042499129" />
+        </node>
+        <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="8874129026042499130">
+          <property name="name" nameId="tpck.1169194664001" value="empty_1332530740564_1" />
+        </node>
+        <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodeOperationsContainer" typeId="tp5g.1215603922101" id="8874129026042499252">
+          <node role="operations" roleId="tp5g.1215604436604" type="tp5g.TypesCheckOperation" typeId="tp5g.1215607067978" id="8874129026042499253" />
+        </node>
+      </node>
+    </node>
+  </root>
 </model>
 
