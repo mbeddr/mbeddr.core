@@ -44,8 +44,8 @@ public class FunctionCallExpressionTestCase extends TestCase {
 		content.append("};\n");
 
 		content.append("void funThatCallFun(){\n");
-		
-		content.append("	funToCall(12);\n");
+		content.append(" int z;\n");
+		content.append("	funToCall(z);\n");
 		content.append("};\n");
 
 
