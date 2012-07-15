@@ -127,7 +127,7 @@
             </node>
           </node>
           <node role="matchingText" roleId="tpdg.1177498166690" type="tpdg.SideTransform_SimpleString" typeId="tpdg.1196433923911" id="5724839270942479808">
-            <property name="text" nameId="tpdg.1196433942569" value="$$" />
+            <property name="text" nameId="tpdg.1196433942569" value="log" />
           </node>
         </node>
       </node>
