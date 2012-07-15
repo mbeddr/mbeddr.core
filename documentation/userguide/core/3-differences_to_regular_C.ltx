@@ -691,7 +691,8 @@ three different severities: \ic{ERROR} (default), \ic{INFO} and \ic{WARN}.
 
 Every message definition has a name (acts as an identifier to reference a
 message in a report statement), a severity, a string message and any number of
-additional arguments. Currently, only integer values and strings are allowed. 
+additional arguments. Currently, only the primitive types are supported (an
+error message is flagged in the editor if you use an unsupported type).
 
 A \ic{report} statement references a message from a message list and supplies
 values for all arguments defined by the message. The following example shows an
