@@ -872,7 +872,7 @@
             </node>
           </node>
           <node role="part" roleId="2omo.1237306115446" type="2omo.ConstantStringAppendPart" typeId="2omo.1237305557638" id="3134547887598555778">
-            <property name="value" nameId="2omo.1237305576108" value=":" />
+            <property name="value" nameId="2omo.1237305576108" value=": {" />
           </node>
           <node role="part" roleId="2omo.1237306115446" type="2omo.NewLineAppendPart" typeId="2omo.1237305208784" id="3134547887598556402" />
         </node>
@@ -909,6 +909,9 @@
         </node>
         <node role="statement" roleId="tpee.1068581517665" type="2omo.IndentBufferOperation" typeId="2omo.1233920501193" id="3134547887598558158" />
         <node role="statement" roleId="tpee.1068581517665" type="2omo.AppendOperation" typeId="2omo.1237306079178" id="3134547887598557698">
+          <node role="part" roleId="2omo.1237306115446" type="2omo.ConstantStringAppendPart" typeId="2omo.1237305557638" id="8471538423048619027">
+            <property name="value" nameId="2omo.1237305576108" value="}" />
+          </node>
           <node role="part" roleId="2omo.1237306115446" type="2omo.NewLineAppendPart" typeId="2omo.1237305208784" id="3134547887598557703" />
         </node>
       </node>
