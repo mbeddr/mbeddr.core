@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<language namespace="com.mbeddr.core.debug.blext" uuid="ebb5e132-d298-4649-b320-b3f4d7f3acff" doNotGenerateAdapters="true">
+<language namespace="com.mbeddr.core.debug.blext" uuid="ebb5e132-d298-4649-b320-b3f4d7f3acff" doNotGenerateAdapters="false">
   <models>
     <modelRoot path="${language_descriptor}/languageModels" />
   </models>

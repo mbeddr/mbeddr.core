@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<language namespace="com.mbeddr.cc.requirements.csv" uuid="698eb129-303c-4c1c-b397-9e30753d40b2" doNotGenerateAdapters="true">
+<language namespace="com.mbeddr.cc.requirements.csv" uuid="698eb129-303c-4c1c-b397-9e30753d40b2" doNotGenerateAdapters="false">
   <models>
     <modelRoot path="${language_descriptor}/languageModels" />
     <modelRoot path="${language_descriptor}/lib/opencsv-2.3.jar">
