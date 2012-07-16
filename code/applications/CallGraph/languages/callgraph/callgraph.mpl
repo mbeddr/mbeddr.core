@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<language namespace="callgraph" uuid="c7a71f54-c501-43f6-b9df-4d99d93797e7" doNotGenerateAdapters="true">
+<language namespace="callgraph" uuid="c7a71f54-c501-43f6-b9df-4d99d93797e7" doNotGenerateAdapters="false">
   <models>
     <modelRoot path="${language_descriptor}/languageModels" />
   </models>

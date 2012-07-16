@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<language namespace="ForeachLanguage" uuid="7d4ba9e3-806c-4231-b91a-ad3be59d389b" doNotGenerateAdapters="true">
+<language namespace="ForeachLanguage" uuid="7d4ba9e3-806c-4231-b91a-ad3be59d389b" doNotGenerateAdapters="false">
   <models>
     <modelRoot path="${language_descriptor}/languageModels" />
   </models>

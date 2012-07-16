@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<language namespace="UnlessLanguage" uuid="9e4ae83b-f14a-4186-b0a7-a63117b566ef" doNotGenerateAdapters="true">
+<language namespace="UnlessLanguage" uuid="9e4ae83b-f14a-4186-b0a7-a63117b566ef" doNotGenerateAdapters="false">
   <models>
     <modelRoot path="${language_descriptor}/languageModels" />
   </models>
