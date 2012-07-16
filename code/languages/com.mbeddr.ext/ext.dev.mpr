@@ -20,7 +20,6 @@
       <modulePath path="${project}/languages/com.mbeddr.ext.physicalunits.c/c.mpl" folder="units" />
       <modulePath path="${project}/languages/com.mbeddr.ext.physicalunits/physicalunits.mpl" folder="units" />
       <modulePath path="${project}/languages/com.mbeddr.ext.statemachines/statemachines.mpl" folder="statemachine" />
-      <modulePath path="${project}/lib/com.mbeddr.ext.components.mock.lib/lib.msd" folder="components" />
       <modulePath path="${project}/lib/com.mbeddr.ext.exceptionhandling.lib/lib.msd" folder="exceptionhandling" />
       <modulePath path="${project}/solutions/com.mbeddr.ext.dev.build/build.msd" />
       <modulePath path="${project}/tests/test.ex.ext.boundedNumbers/boundedNumbers.msd" folder="tests.units" />
