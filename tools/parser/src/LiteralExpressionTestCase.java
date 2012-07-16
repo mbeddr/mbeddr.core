@@ -39,7 +39,7 @@ public class LiteralExpressionTestCase extends TestCase {
 
 		
 		
-		content.append("void funToCall(int a){\n");
+		content.append("void funToCall(int a, int b, int c){\n");
 		content.append("	\"\"st\"\";\n");
 		content.append("};\n");
 

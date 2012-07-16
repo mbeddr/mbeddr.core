@@ -1,0 +1,55 @@
+<project name="com.mbeddr.core dsitribution" default="build-distro">
+ 
+  <property name="prefix.core" value="mbeddr/code/languages/com.mbeddr.core"/>
+  <property name="prefix.util" value="mbeddr/code/languages/com.mbeddr.mpsutil"/>
+  <property name="prefix.plugins" value="mbeddr/tools"/>
+  <property name="prefix.cc" value="mbeddr/code/languages/com.mbeddr.cc"/>  
+  <property name="prefix.ext" value="mbeddr/code/languages/com.mbeddr.ext"/>  
+  <property name="prefix.apps" value="mbeddr/code/applications"/>
+	
+  <target name="build-distro">
+
+ 	  <property name="path" value="distros/core-cc-ext/"/>
+	  <mkdir dir="${path}"/>
+	  <delete includeemptydirs="true">
+          <fileset dir="${path}" includes="**/*"/>
+      </delete>
+      
+	  <zip destfile="${path}/mbeddr.core-cc-ext-${version}.zip">
+	  	  <!-- UTIL -->
+          <zipfileset dir="code/languages/com.mbeddr.mpsutil/languages" prefix="${prefix.util}/languages"/>
+
+	  	  <!-- PLUGINS -->
+          <zipfileset dir="tools/spawner" prefix="${prefix.plugins}/spawner"/>
+          <zipfileset dir="tools/zgrviewer" prefix="${prefix.plugins}/zgrviewer"/>
+
+	  	  <!-- CORE -->
+          <zipfileset dir="code/languages/com.mbeddr.core/languages" prefix="${prefix.core}/languages"/>
+          <zipfileset dir="code/languages/com.mbeddr.core/devkits" prefix="${prefix.core}/devkits"/>
+
+	  	  <!-- CC -->
+          <zipfileset dir="code/languages/com.mbeddr.cc/languages/" prefix="${prefix.cc}/languages"/>
+          <zipfileset dir="code/languages/com.mbeddr.cc/devkits/"	prefix="${prefix.cc}/devkits"/>
+
+	  	  <!-- EXT -->
+          <zipfileset dir="code/languages/com.mbeddr.ext/languages/" prefix="${prefix.ext}/languages"/>
+          <zipfileset dir="code/languages/com.mbeddr.ext/devkits/"	prefix="${prefix.ext}/devkits"/>
+          <zipfileset dir="code/languages/com.mbeddr.ext/lib/"	prefix="${prefix.ext}/lib"/>
+          
+          <!-- LICENSE -->
+		  <zipfileset dir="." includes="license.html"/> 
+	  </zip>
+	  
+	  <zip destfile="${path}/mbeddr.core-examples-${version}.zip">
+          <zipfileset dir="code/applications/HelloWorld" prefix="${prefix.apps}/HelloWorld"/>
+          <zipfileset dir="code/applications/DebuggerTutorial" prefix="${prefix.apps}/DebuggerTutorial"/>
+          <zipfileset dir="code/applications/CallGraph" prefix="${prefix.apps}/CallGraph"/>
+		  <zipfileset dir="." includes="license.html"/> 
+	  </zip>
+	  
+	  <copy file="documentation/userguide/mbeddr-userguide.pdf" tofile="${path}/mbeddr-userguide.pdf"/>
+	  <copy file="documentation/extensionguide/mbeddr-extensionguide.pdf" tofile="${path}/mbeddr-extensionguide.pdf"/>
+
+  </target>
+  
+</project>

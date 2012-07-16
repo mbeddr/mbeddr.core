@@ -1,6 +1,7 @@
 \chapter{mbeddr.core --- C in MPS}
 
 \section{Hello World Example}
+\label{helloworld}
 
 For this tutorial we assume that you know how to use the C programming language.
 We also assume that you have have installed MPS, \ic{gcc}/\ic{make}, \ic{graphviz} and the
@@ -17,10 +18,10 @@ solution, but no language.
 \end{center}
 
 We now have to make the project aware of the \emph{mbeddr.core} languages
-installed via the distribution. Go to the $File \rightarrow Settings$ and select
-the $Global Libraries$ in the IDE settings. Create a library called
-\ic{mbeddr.core} that points to the root directory of the unzipped mbeddr
-installation.
+installed via the distribution. Go to the $File \rightarrow Settings$ (on the
+Mac it is under $MPS \rightarrow Preferences$) and select the $Global Libraries$
+in the IDE settings. Create a library called \ic{mbeddr.core} that points to
+the root directory of the unzipped mbeddr installation.
 
 \textbf{Note: This library must point to the root directory of the checkout so
 that all languages are below it, including \emph{core} and \emph{mpsutil}.}
@@ -94,7 +95,11 @@ using the \ic{export} intention (available via \ic{Alt-Enter} like any other
 intention).
 
 So to get started, we create a new \ic{implementation module} using the model's
-context menu as shown in the following screenshot:
+context menu as shown in the following screenshot (note that MPS may shorten
+package names; so instead of \ic{com.mbeddr.core.modules} it may read
+\ic{c.m.core.modules}):
+
+
 \begin{center} 
   \includegraphics[width=12cm]{figures/core/ContextMenuNewModule.png}
 \end{center}

@@ -1,7 +1,7 @@
-\chapter{Installing and Setup}
+\chapter{Introduction}
 
  
-\section{Installation}
+\section{Installation and Setup}
 
 At this point we don't yet provide an all-in-one download package. This is
 because (a) we didn't get around to building one yet, and (b) as a consequence
@@ -43,6 +43,24 @@ after the change:
 On some 32bit Windows XP systems we had to reduce the \ic{-Xmx1200m} setting to
 \ic{768m} to get it to work.
 
+\subsection{mbeddr}
+
+You can get the mbeddr code either via distributions or via the public github
+repository.
+
+\begin{description}
+  \item[Distribution] You can get the mbeddr system via a zip file download
+from \\\ic{http://mbeddr.wordpress.com/getit/} Save the zip file into a folder
+on your hard disk and unzip it. Once again, please make sure the path to the
+unzipped folder contains no blanks. Also, the directory structure is relatively
+deep, which means that Windows might complain about too long directory names if
+you unzip it deep inside existing directories.
+  \item[github] The github repo ist a
+\ic{https://github.com/mbeddr/mbeddr.core}. You can clone it for your own use,
+or you can fork it to your own github account so you can make changes. Contact
+us if you want to become a committer.
+\end{description}
+
 
 \subsection{GCC and make}
 
@@ -83,38 +101,40 @@ in the same way as above:
 set PATH=C:\ide\graphviz2.28\bin;%PATH%
 \end{code}
 
-\subsection{mbeddr}
+To make the graphviz viewer work, you also have to install a custom plugin into
+MPS. To do so, please move (not just copy!) the \ic{zgrviewer} folder from the
+\ic{tools} directory of mbeddr into the \ic{plugins} directory of MPS (note that there
+\ic{plugin} and \ic{plugins} directories in MPS; make sure you copy it into the
+\ic{plugins} directory).
 
-You can get the mbeddr code either via distributions or via the public github
-repository.
-
-\begin{description}
-  \item[Distribution] You can get the mbeddr system via a zip file download
-from \\\ic{http://mbeddr.wordpress.com/getit/} Save the zip file into a folder
-on your hard disk and unzip it. Once again, please make sure the path to the
-unzipped folder contains no blanks!
-  \item[github] The github repo ist a
-\ic{https://github.com/mbeddr/mbeddr.core}. You can clone it for your own use,
-or you can fork it to your own github account so you can make changes. Contact
-us if you want to become a committer.
-\end{description}
 
 
 \subsection{Debugger}
 
 The mbeddr debugger is based on \ic{gdb}, which has been installed as part of
 the Cygwin install. However, we don't use \ic{gdb} directly; rather we use the
-Eclipse CDT debug bridge. This contains native code, and Java has to be able
-to find this native code. 
+Eclipse CDT debug bridge. This contains native code, and Java has to be able to
+find this native code. The Eclipse code is packaged into a special MPS plugin
+which you have to install into MPS. To do so, please move (not just copy!) the
+\ic{spawner} folder from the \ic{tools} directory of mbeddr into the
+\ic{plugins} directory of MPS (again, make sure it ends up the \ic{plugins}
+directory, not in \ic{plugin}).
 
 
-We provide a special plugin which is responsible
-for loading the native code. This plugin is packaged into a zip file named
-\emph{spawner} and stored it in the directory \ic{mbeddr.core/tools/spawner}.
-In order to use the debugger, please unzip this plugin into the \ic{plugins}
-directory of your MPS installation.
 
-\todo{How do people get it if they use the downloaded ZIP file? Is it in there?}
+
+
+\subsection{Writing Code}
+
+You can now start writing mbeddr code. \sect{helloworld} contains a tutorial
+that shows how to write the simplest possible program, the ubiquitous Hello,
+World. We suggest to take a look at this section.
+
+In terms of finishing the configuration, you have to define a library that
+points to the mbeddr languages. The Hello, World tutorial starts out by
+explaining how to do this.
+
+
 
 \section{Important keyboard shortcuts in MPS}
 

@@ -691,7 +691,8 @@ three different severities: \ic{ERROR} (default), \ic{INFO} and \ic{WARN}.
 
 Every message definition has a name (acts as an identifier to reference a
 message in a report statement), a severity, a string message and any number of
-additional arguments. Currently, only integer values and strings are allowed. 
+additional arguments. Currently, only the primitive types are supported (an
+error message is flagged in the editor if you use an unsupported type).
 
 A \ic{report} statement references a message from a message list and supplies
 values for all arguments defined by the message. The following example shows an
@@ -726,6 +727,8 @@ messages by using intentions on the message list.
 
 \greyboxnote{At this time there is no way of enabling/disabling messages at
 runtime. This will be added in the future.}
+
+
 
 \paragraph{Counting Message Calls} Sometimes it is useful to be able to find out
 if and how often a message was actually reported. This is particularly useful
@@ -793,6 +796,24 @@ folder (top right) is useful, since it shows the actual error message).
 
 You can update the error output text in the text area at any time; press the
 button with the two green arrows to refresh the found nodes on the right.
+
+
+\paragraph{Logging Expressions} For debugging purposes it is often useful to log
+expressions without manually creating a message and a report statement. To this
+end, the log expression can be used. Here is some example code:
+
+\begin{code}
+exported test case testLogExpressions { 
+  int8_t x = 3; 
+  int8_t y = log:0<x>; 
+  int8_t z = log:1<3 + log:2<x>>; 
+  int8_t zz = 3 * log:3<x>; 
+} 
+\end{code}
+
+The log expression \ic{log:n<...>}, where \ic{n} is the index of the log
+expression reported in the output, can be attached to any expression \emph{except
+literals} via an intention or a \ic{log} left transformation.
 
 
 \subsection{Assembly Code}
