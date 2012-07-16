@@ -2,6 +2,7 @@
  
   <property name="prefix.core" value="mbeddr/code/languages/com.mbeddr.core"/>
   <property name="prefix.util" value="mbeddr/code/languages/com.mbeddr.mpsutil"/>
+  <property name="prefix.plugins" value="mbeddr/tools"/>
   <property name="prefix.cc" value="mbeddr/code/languages/com.mbeddr.cc"/>  
   <property name="prefix.ext" value="mbeddr/code/languages/com.mbeddr.ext"/>  
   <property name="prefix.apps" value="mbeddr/code/applications"/>
@@ -17,6 +18,10 @@
 	  <zip destfile="${path}/mbeddr.core-cc-ext-${version}.zip">
 	  	  <!-- UTIL -->
           <zipfileset dir="code/languages/com.mbeddr.mpsutil/languages" prefix="${prefix.util}/languages"/>
+
+	  	  <!-- PLUGINS -->
+          <zipfileset dir="tools/spawner" prefix="${prefix.plugins}/spawner"/>
+          <zipfileset dir="tools/zgrviewer" prefix="${prefix.plugins}/zgrviewer"/>
 
 	  	  <!-- CORE -->
           <zipfileset dir="code/languages/com.mbeddr.core/languages" prefix="${prefix.core}/languages"/>
