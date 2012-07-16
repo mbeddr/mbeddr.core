@@ -30,5 +30,23 @@
     </dependencies>
     <rename id="talm.6138262745240628530" type="CONCEPT" from="ContributeWatchables" to="ContributeWatchablesMethod" />
   </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="talm" modelUID="r:98c60105-1d91-4aab-8dfe-5ef258ec8eb6(com.mbeddr.core.debug.blext.structure)" version="4" />
+    </dependencies>
+    <rename id="talm.8483575004407084862" type="CONCEPT" from="MapStatement" to="MapByNameStatement" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="talm" modelUID="r:98c60105-1d91-4aab-8dfe-5ef258ec8eb6(com.mbeddr.core.debug.blext.structure)" version="5" />
+    </dependencies>
+    <rename id="talm.8483575004407084868" type="CHILD" from="contextNode" to="highlightedNode" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="talm" modelUID="r:98c60105-1d91-4aab-8dfe-5ef258ec8eb6(com.mbeddr.core.debug.blext.structure)" version="6" />
+    </dependencies>
+    <rename id="talm.8236113172499363383" type="CHILD" from="name" to="varName" />
+  </StructureModification>
 </history>
 

@@ -925,7 +925,7 @@
     </node>
     <node type="tpee.ClassConcept" typeId="tpee.1068390468198" id="6138262745241045629">
       <property name="virtualPackage" nameId="tpck.1193676396447" value="mapper.state.exceptions.watchables" />
-      <property name="name" nameId="tpck.1169194664001" value="AlreadyHiddendException" />
+      <property name="name" nameId="tpck.1169194664001" value="AlreadyHiddenOrMappedException" />
     </node>
     <node type="tpee.ClassConcept" typeId="tpee.1068390468198" id="6138262745242635991">
       <property name="virtualPackage" nameId="tpck.1193676396447" value="mapper.state.exceptions.watchables" />
@@ -943,6 +943,10 @@
     <node type="tpee.ClassConcept" typeId="tpee.1068390468198" id="2582513348686573209">
       <property name="virtualPackage" nameId="tpck.1193676396447" value="c-debugger-wrapper.events.impl" />
       <property name="name" nameId="tpck.1169194664001" value="TimeoutDuringAttachEvent" />
+    </node>
+    <node type="tpee.ClassConcept" typeId="tpee.1068390468198" id="8236113172499167292">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="mapper.state.exceptions.watchables" />
+      <property name="name" nameId="tpck.1169194664001" value="MappingVariableFailedException" />
     </node>
   </roots>
   <root id="8002895867716940783">
@@ -40954,7 +40958,7 @@
               </node>
             </node>
             <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="6138262745241045644">
-              <property name="value" nameId="tpee.1070475926801" value="\&quot; are already hidden" />
+              <property name="value" nameId="tpee.1070475926801" value="\&quot; are either mapped or hidden" />
             </node>
           </node>
         </node>
@@ -41146,6 +41150,52 @@
           <node role="expression" roleId="tpee.1068580123156" type="tpee.NullLiteral" typeId="tpee.1070534058343" id="2582513348686573226" />
         </node>
       </node>
+    </node>
+  </root>
+  <root id="8236113172499167292">
+    <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="8236113172499167293" />
+    <node role="constructor" roleId="tpee.1068390468201" type="tpee.ConstructorDeclaration" typeId="tpee.1068580123140" id="8236113172499167294">
+      <node role="returnType" roleId="tpee.1068580123133" type="tpee.VoidType" typeId="tpee.1068581517677" id="8236113172499167295" />
+      <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="8236113172499167296" />
+      <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="8236113172499167297">
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.SuperConstructorInvocation" typeId="tpee.1070475587102" id="8236113172499167298">
+          <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="6138262745242674665" resolveInfo="WatchablesException" />
+          <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.PlusExpression" typeId="tpee.1068581242875" id="8236113172499167299">
+            <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.PlusExpression" typeId="tpee.1068581242875" id="8236113172499167300">
+              <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.PlusExpression" typeId="tpee.1068581242875" id="8236113172499167301">
+                <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.PlusExpression" typeId="tpee.1068581242875" id="8236113172499167302">
+                  <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="8236113172499167303">
+                    <property name="value" nameId="tpee.1070475926801" value="Could not map C varaible " />
+                  </node>
+                  <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.ParameterReference" typeId="tpee.1068581242874" id="8236113172499167304">
+                    <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="8236113172499167310" resolveInfo="cVariableIdentifier" />
+                  </node>
+                </node>
+                <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="8236113172499167305">
+                  <property name="value" nameId="tpee.1070475926801" value=" for concept " />
+                </node>
+              </node>
+              <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.ParameterReference" typeId="tpee.1068581242874" id="8236113172499167306">
+                <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="8236113172499167308" resolveInfo="conceptName" />
+              </node>
+            </node>
+            <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="8236113172499167307">
+              <property name="value" nameId="tpee.1070475926801" value=" because there is none." />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node role="parameter" roleId="tpee.1068580123134" type="tpee.ParameterDeclaration" typeId="tpee.1068498886292" id="8236113172499167308">
+        <property name="name" nameId="tpck.1169194664001" value="conceptName" />
+        <node role="type" roleId="tpee.5680397130376446158" type="tpee.StringType" typeId="tpee.1225271177708" id="8236113172499167309" />
+      </node>
+      <node role="parameter" roleId="tpee.1068580123134" type="tpee.ParameterDeclaration" typeId="tpee.1068498886292" id="8236113172499167310">
+        <property name="name" nameId="tpck.1169194664001" value="cVariableIdentifier" />
+        <node role="type" roleId="tpee.5680397130376446158" type="tpee.StringType" typeId="tpee.1225271177708" id="8236113172499167311" />
+      </node>
+    </node>
+    <node role="superclass" roleId="tpee.1165602531693" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="8236113172499167312">
+      <link role="classifier" roleId="tpee.1107535924139" targetNodeId="6138262745242635991" resolveInfo="WatchablesException" />
     </node>
   </root>
 </model>
