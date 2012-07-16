@@ -3,7 +3,7 @@
   <persistence version="7" />
   <language namespace="18bc6592-03a6-4e29-a83a-7ff23bde13ba(jetbrains.mps.lang.editor)" />
   <devkit namespace="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
-  <import index="v0r9" modelUID="r:277b15fc-1383-4213-8385-5a16481fa36c(com.mbeddr.ext.components.test.structure)" version="-1" />
+  <import index="v0r9" modelUID="r:277b15fc-1383-4213-8385-5a16481fa36c(com.mbeddr.ext.components.test.structure)" version="3" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="tp25" modelUID="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" version="16" implicit="yes" />
   <import index="tpc2" modelUID="r:00000000-0000-4000-0000-011c8959029e(jetbrains.mps.lang.editor.structure)" version="32" implicit="yes" />
@@ -22,7 +22,7 @@
         </node>
       </node>
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_RefCell" typeId="tpc2.1088013125922" id="8230733038424928791">
-        <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="v0r9.8230733038424928788" />
+        <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="v0r9.6105672464780937238" />
         <node role="editorComponent" roleId="tpc2.1088186146602" type="tpc2.InlineEditorComponent" typeId="tpc2.1088185857835" id="8230733038424928792">
           <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Property" typeId="tpc2.1073389658414" id="8230733038424928794">
             <property name="readOnly" nameId="tpc2.1140017977771" value="true" />
@@ -41,7 +41,7 @@
       </node>
       <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Indent" typeId="tpc2.1237303669825" id="8105003328815071757" />
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_RefCell" typeId="tpc2.1088013125922" id="8230733038424928801">
-        <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="v0r9.8230733038424928787" />
+        <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="v0r9.6105672464780971357" />
         <node role="editorComponent" roleId="tpc2.1088186146602" type="tpc2.InlineEditorComponent" typeId="tpc2.1088185857835" id="8230733038424928802">
           <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Property" typeId="tpc2.1073389658414" id="8230733038424928804">
             <property name="readOnly" nameId="tpc2.1140017977771" value="true" />
@@ -59,7 +59,7 @@
         </node>
       </node>
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_RefCell" typeId="tpc2.1088013125922" id="8105003328815071763">
-        <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="v0r9.8230733038424928678" />
+        <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="v0r9.6105672464781003798" />
         <node role="editorComponent" roleId="tpc2.1088186146602" type="tpc2.InlineEditorComponent" typeId="tpc2.1088185857835" id="8105003328815071764">
           <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Property" typeId="tpc2.1073389658414" id="8105003328815071766">
             <property name="readOnly" nameId="tpc2.1140017977771" value="true" />
@@ -102,7 +102,7 @@
                 <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.DotExpression" typeId="tpee.1197027756228" id="4957503999940757276">
                   <node role="operand" roleId="tpee.1197027771414" type="tpc2.ConceptFunctionParameter_node" typeId="tpc2.1142886811589" id="4957503999940757275" />
                   <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="8230733038424928682">
-                    <link role="link" roleId="tp25.1138056516764" targetNodeId="v0r9.8230733038424928678" />
+                    <link role="link" roleId="tp25.1138056516764" targetNodeId="v0r9.6105672464781003798" />
                   </node>
                 </node>
               </node>

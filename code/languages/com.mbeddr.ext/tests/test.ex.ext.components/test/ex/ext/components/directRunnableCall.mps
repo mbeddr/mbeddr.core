@@ -4,17 +4,17 @@
   <devkit namespace="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
   <devkit namespace="24565007-e59f-42fc-ac10-da3836deec1c(com.mbeddr.components)" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
-  <import index="k146" modelUID="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" version="1" implicit="yes" />
+  <import index="k146" modelUID="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" version="2" implicit="yes" />
   <import index="v7ag" modelUID="r:9596407c-f27a-49d3-abde-3a66293c5b61(com.mbeddr.ext.components.structure)" version="3" implicit="yes" />
   <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="17" implicit="yes" />
   <import index="yq40" modelUID="r:152b3fc0-83a1-4bab-a8cd-565eb8483785(com.mbeddr.core.pointers.structure)" version="3" implicit="yes" />
   <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="4" implicit="yes" />
   <import index="51wr" modelUID="r:b31f1c3c-99aa-4f1e-a329-cba27efb1a6b(com.mbeddr.core.buildconfig.structure)" version="1" implicit="yes" />
-  <import index="yz9a" modelUID="r:734c02dd-cc16-4184-99eb-5fd9f43aa37e(com.mbeddr.core.unittest.structure)" version="-1" implicit="yes" />
+  <import index="yz9a" modelUID="r:734c02dd-cc16-4184-99eb-5fd9f43aa37e(com.mbeddr.core.unittest.structure)" version="0" implicit="yes" />
   <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="4" implicit="yes" />
   <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="1" implicit="yes" />
   <import index="p7vm" modelUID="r:28fa862e-f94d-4c39-bdf7-a4bdbc773888(com.mbeddr.ext.components.gen_nomw.structure)" version="0" implicit="yes" />
-  <import index="v0r9" modelUID="r:277b15fc-1383-4213-8385-5a16481fa36c(com.mbeddr.ext.components.test.structure)" version="-1" implicit="yes" />
+  <import index="v0r9" modelUID="r:277b15fc-1383-4213-8385-5a16481fa36c(com.mbeddr.ext.components.test.structure)" version="3" implicit="yes" />
   <roots>
     <node type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="8230733038425037930">
       <property name="name" nameId="tpck.1169194664001" value="DirectRunnableCall" />
@@ -105,9 +105,9 @@
       <node role="body" roleId="yz9a.6275792049641586525" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="8230733038425038031">
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="8230733038425038034">
           <node role="expr" roleId="c4fa.7254843406768833939" type="v0r9.DirectRunnableCall" typeId="v0r9.8230733038424928674" id="8230733038425038035">
-            <link role="config" roleId="v0r9.8230733038424928788" targetNodeId="8230733038425038025" resolveInfo="instances" />
-            <link role="instance" roleId="v0r9.8230733038424928787" targetNodeId="8230733038425038026" resolveInfo="c1" />
-            <link role="runnable" roleId="v0r9.8230733038424928678" targetNodeId="8230733038425038008" resolveInfo="doStuff" />
+            <link role="config" roleId="v0r9.6105672464780937238" targetNodeId="8230733038425038025" resolveInfo="instances" />
+            <link role="instance" roleId="v0r9.6105672464780971357" targetNodeId="8230733038425038026" resolveInfo="c1" />
+            <link role="runnable" roleId="v0r9.6105672464781003798" targetNodeId="8230733038425038008" resolveInfo="doStuff" />
           </node>
           <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="vs0r.ElementDocumentation" typeId="vs0r.3857533489766146428" id="8230733038425050613">
             <node role="parts" roleId="vs0r.3857533489766836837" type="vs0r.DocPart" typeId="vs0r.3857533489766836826" id="8230733038425050617">
@@ -121,9 +121,9 @@
               <property name="value" nameId="mj1l.8860443239512128104" value="1" />
             </node>
             <node role="left" roleId="mj1l.8860443239512128064" type="v0r9.DirectRunnableCall" typeId="v0r9.8230733038424928674" id="8230733038425038040">
-              <link role="runnable" roleId="v0r9.8230733038424928678" targetNodeId="8230733038425038014" resolveInfo="getStuff" />
-              <link role="instance" roleId="v0r9.8230733038424928787" targetNodeId="8230733038425038026" resolveInfo="c1" />
-              <link role="config" roleId="v0r9.8230733038424928788" targetNodeId="8230733038425038025" resolveInfo="instances" />
+              <link role="runnable" roleId="v0r9.6105672464781003798" targetNodeId="8230733038425038014" resolveInfo="getStuff" />
+              <link role="instance" roleId="v0r9.6105672464780971357" targetNodeId="8230733038425038026" resolveInfo="c1" />
+              <link role="config" roleId="v0r9.6105672464780937238" targetNodeId="8230733038425038025" resolveInfo="instances" />
               <node role="actuals" roleId="v0r9.8230733038424928677" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="8230733038425039552">
                 <property name="value" nameId="mj1l.8860443239512128104" value="10" />
               </node>
@@ -136,9 +136,9 @@
               <property name="value" nameId="mj1l.8860443239512128104" value="2" />
             </node>
             <node role="left" roleId="mj1l.8860443239512128064" type="v0r9.DirectRunnableCall" typeId="v0r9.8230733038424928674" id="8230733038425718568">
-              <link role="runnable" roleId="v0r9.8230733038424928678" targetNodeId="8230733038425038014" resolveInfo="getStuff" />
-              <link role="instance" roleId="v0r9.8230733038424928787" targetNodeId="8230733038425038026" resolveInfo="c1" />
-              <link role="config" roleId="v0r9.8230733038424928788" targetNodeId="8230733038425038025" resolveInfo="instances" />
+              <link role="runnable" roleId="v0r9.6105672464781003798" targetNodeId="8230733038425038014" resolveInfo="getStuff" />
+              <link role="instance" roleId="v0r9.6105672464780971357" targetNodeId="8230733038425038026" resolveInfo="c1" />
+              <link role="config" roleId="v0r9.6105672464780937238" targetNodeId="8230733038425038025" resolveInfo="instances" />
               <node role="actuals" roleId="v0r9.8230733038424928677" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="8230733038425718569">
                 <property name="value" nameId="mj1l.8860443239512128104" value="10" />
               </node>
@@ -151,9 +151,9 @@
               <property name="value" nameId="mj1l.8860443239512128104" value="1" />
             </node>
             <node role="left" roleId="mj1l.8860443239512128064" type="v0r9.DirectRunnableCall" typeId="v0r9.8230733038424928674" id="8230733038425718586">
-              <link role="runnable" roleId="v0r9.8230733038424928678" targetNodeId="8230733038425038014" resolveInfo="getStuff" />
-              <link role="config" roleId="v0r9.8230733038424928788" targetNodeId="8230733038425038025" resolveInfo="instances" />
-              <link role="instance" roleId="v0r9.8230733038424928787" targetNodeId="8230733038425718552" resolveInfo="c2" />
+              <link role="runnable" roleId="v0r9.6105672464781003798" targetNodeId="8230733038425038014" resolveInfo="getStuff" />
+              <link role="config" roleId="v0r9.6105672464780937238" targetNodeId="8230733038425038025" resolveInfo="instances" />
+              <link role="instance" roleId="v0r9.6105672464780971357" targetNodeId="8230733038425718552" resolveInfo="c2" />
               <node role="actuals" roleId="v0r9.8230733038424928677" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="8230733038425718587">
                 <property name="value" nameId="mj1l.8860443239512128104" value="10" />
               </node>
