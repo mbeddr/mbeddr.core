@@ -2280,7 +2280,7 @@
           </node>
           <node role="highlightedNode" roleId="talm.8483575004407084868" type="1i04.ThisNodeExpression" typeId="1i04.1225194691553" id="4703960063092263021" />
           <node role="categoryName" roleId="talm.8236113172499118431" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="4703960063092263022">
-            <property name="value" nameId="tpee.1070475926801" value="argument" />
+            <property name="value" nameId="tpee.1070475926801" value="arguments" />
           </node>
           <node role="iconProvider" roleId="talm.8236113172499130991" type="1i04.ThisNodeExpression" typeId="1i04.1225194691553" id="4703960063092263023" />
           <node role="mappedName" roleId="talm.8483575004407084865" type="tpee.DotExpression" typeId="tpee.1197027756228" id="4703960063092263024">
@@ -3917,7 +3917,7 @@
           </node>
           <node role="highlightedNode" roleId="talm.8483575004407084868" type="1i04.ThisNodeExpression" typeId="1i04.1225194691553" id="2505811547181287156" />
           <node role="categoryName" roleId="talm.8236113172499118431" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="8236113172499167090">
-            <property name="value" nameId="tpee.1070475926801" value="global variable" />
+            <property name="value" nameId="tpee.1070475926801" value="global variables" />
           </node>
           <node role="iconProvider" roleId="talm.8236113172499130991" type="1i04.ThisNodeExpression" typeId="1i04.1225194691553" id="8236113172499167089" />
           <node role="mappedName" roleId="talm.8483575004407084865" type="tpee.DotExpression" typeId="tpee.1197027756228" id="8236113172499167057">

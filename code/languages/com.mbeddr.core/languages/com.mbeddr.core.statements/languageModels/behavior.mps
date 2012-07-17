@@ -4367,7 +4367,7 @@
           </node>
           <node role="highlightedNode" roleId="talm.8483575004407084868" type="1i04.ThisNodeExpression" typeId="1i04.1225194691553" id="2505811547181311859" />
           <node role="categoryName" roleId="talm.8236113172499118431" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="2505811547181311858">
-            <property name="value" nameId="tpee.1070475926801" value="local variable" />
+            <property name="value" nameId="tpee.1070475926801" value="local variables" />
           </node>
           <node role="iconProvider" roleId="talm.8236113172499130991" type="1i04.ThisNodeExpression" typeId="1i04.1225194691553" id="2505811547181311857" />
         </node>
