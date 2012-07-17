@@ -23,11 +23,11 @@
   <import index="tpd4" modelUID="r:00000000-0000-4000-0000-011c895902b4(jetbrains.mps.lang.typesystem.structure)" version="3" implicit="yes" />
   <import index="tp2q" modelUID="r:00000000-0000-4000-0000-011c8959032e(jetbrains.mps.baseLanguage.collections.structure)" version="7" implicit="yes" />
   <import index="yq40" modelUID="r:152b3fc0-83a1-4bab-a8cd-565eb8483785(com.mbeddr.core.pointers.structure)" version="3" implicit="yes" />
-  <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="0" implicit="yes" />
+  <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="1" implicit="yes" />
   <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="4" implicit="yes" />
   <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="17" implicit="yes" />
   <import index="7aka" modelUID="r:02a5dde5-8560-4c26-8875-8f2a79444bd3(com.mbeddr.mpsutil.bldoc.structure)" version="-1" implicit="yes" />
-  <import index="clbe" modelUID="r:61d840b4-12c1-49ea-b142-b2a1550a9b15(com.mbeddr.core.udt.structure)" version="5" implicit="yes" />
+  <import index="clbe" modelUID="r:61d840b4-12c1-49ea-b142-b2a1550a9b15(com.mbeddr.core.udt.structure)" version="7" implicit="yes" />
   <roots>
     <node type="tpf8.MappingConfiguration" typeId="tpf8.1095416546421" id="8663730687027723091">
       <property name="name" nameId="tpck.1169194664001" value="main" />
@@ -289,14 +289,7 @@
                             </node>
                           </node>
                           <node role="alternativeConsequence" roleId="tpf8.1194989344771" type="tpf8.InlineTemplate_RuleConsequence" typeId="tpf8.1177093525992" id="2930946946121452179">
-                            <node role="templateNode" roleId="tpf8.1177093586806" type="mj1l.CastExpression" typeId="mj1l.6610873504380029780" id="2930946946121452180">
-                              <node role="expr" roleId="mj1l.6610873504380029782" type="c4fa.ArrayInitExpression" typeId="c4fa.5095889050031622570" id="2930946946121452181" />
-                              <node role="targetType" roleId="mj1l.6610873504380029790" type="yq40.ArrayType" typeId="yq40.5679441017214012545" id="2930946946121452182">
-                                <node role="baseType" roleId="yq40.5679441017214012546" type="yq40.PointerType" typeId="yq40.279446265608459824" id="2930946946121452183">
-                                  <node role="baseType" roleId="yq40.279446265608459825" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="2930946946121452184" />
-                                </node>
-                              </node>
-                            </node>
+                            <node role="templateNode" roleId="tpf8.1177093586806" type="yq40.NullExpression" typeId="yq40.5308710777891643206" id="9200379251403115227" />
                           </node>
                         </node>
                       </node>
@@ -617,14 +610,7 @@
                             </node>
                           </node>
                           <node role="alternativeConsequence" roleId="tpf8.1194989344771" type="tpf8.InlineTemplate_RuleConsequence" typeId="tpf8.1177093525992" id="2930946946121442582">
-                            <node role="templateNode" roleId="tpf8.1177093586806" type="mj1l.CastExpression" typeId="mj1l.6610873504380029780" id="2930946946121442584">
-                              <node role="expr" roleId="mj1l.6610873504380029782" type="c4fa.ArrayInitExpression" typeId="c4fa.5095889050031622570" id="2930946946121442591" />
-                              <node role="targetType" roleId="mj1l.6610873504380029790" type="yq40.ArrayType" typeId="yq40.5679441017214012545" id="2930946946121442590">
-                                <node role="baseType" roleId="yq40.5679441017214012546" type="yq40.PointerType" typeId="yq40.279446265608459824" id="2930946946121442589">
-                                  <node role="baseType" roleId="yq40.279446265608459825" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="2930946946121442588" />
-                                </node>
-                              </node>
-                            </node>
+                            <node role="templateNode" roleId="tpf8.1177093586806" type="yq40.NullExpression" typeId="yq40.5308710777891643206" id="9200379251403115942" />
                           </node>
                         </node>
                       </node>
