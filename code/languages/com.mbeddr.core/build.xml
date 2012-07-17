@@ -71,6 +71,16 @@
 	  </mps.generate>
   </target>
 
+  <target name="delete-mps-generated-code" >
+  	<delete includeemptydirs="true">
+      <fileset dir="${mbeddr.github.core.home}/${mbeddr.core.project.dir}" defaultexcludes="false">
+         <include name="**/source_gen/**" />
+         <include name="**/source_gen.caches/**" />
+         <include name="**/classes_gen/**" />
+      </fileset>
+    </delete>
+  </target>
+  
   
   
   <target name="run-ts-tests" >
