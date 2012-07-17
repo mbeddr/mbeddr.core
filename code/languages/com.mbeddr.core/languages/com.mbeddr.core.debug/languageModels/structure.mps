@@ -50,6 +50,14 @@
       <property name="name" nameId="tpck.1169194664001" value="IMappableType" />
       <property name="virtualPackage" nameId="tpck.1193676396447" value="watches" />
     </node>
+    <node type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="8519572659617616593">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="watches" />
+      <property name="name" nameId="tpck.1169194664001" value="IPrimitiveMappableType" />
+    </node>
+    <node type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="8519572659617616594">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="watches" />
+      <property name="name" nameId="tpck.1169194664001" value="IComplexMappableType" />
+    </node>
   </roots>
   <root id="568116135000816591" />
   <root id="3205769394890863066" />
@@ -70,5 +78,11 @@
     </node>
   </root>
   <root id="2513598210665148633" />
+  <root id="8519572659617616593" />
+  <root id="8519572659617616594">
+    <node role="extends" roleId="tpce.1169127546356" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="8519572659617616595">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="8519572659617616593" resolveInfo="IPrimitiveMappableType" />
+    </node>
+  </root>
 </model>
 
