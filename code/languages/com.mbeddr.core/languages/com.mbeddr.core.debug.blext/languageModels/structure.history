@@ -60,5 +60,41 @@
     </dependencies>
     <rename id="talm.8236113172499118431" type="CHILD" from="variableKind" to="categoryName" />
   </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="talm" modelUID="r:98c60105-1d91-4aab-8dfe-5ef258ec8eb6(com.mbeddr.core.debug.blext.structure)" version="9" />
+    </dependencies>
+    <rename id="talm.2011139961867340775" type="CONCEPT" from="MapToSimpleVariable" to="ResolveChildToWatchablesStatement" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="talm" modelUID="r:98c60105-1d91-4aab-8dfe-5ef258ec8eb6(com.mbeddr.core.debug.blext.structure)" version="10" />
+    </dependencies>
+    <rename id="talm.2011139961867340776" type="CHILD" from="varName" to="type" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="talm" modelUID="r:98c60105-1d91-4aab-8dfe-5ef258ec8eb6(com.mbeddr.core.debug.blext.structure)" version="11" />
+    </dependencies>
+    <rename id="talm.2011139961867340777" type="CHILD" from="value" to="iconProvider" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="talm" modelUID="r:98c60105-1d91-4aab-8dfe-5ef258ec8eb6(com.mbeddr.core.debug.blext.structure)" version="12" />
+    </dependencies>
+    <rename id="talm.2011139961867340776" type="CHILD" from="type" to="typeMapper" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="talm" modelUID="r:98c60105-1d91-4aab-8dfe-5ef258ec8eb6(com.mbeddr.core.debug.blext.structure)" version="13" />
+    </dependencies>
+    <rename id="talm.2011139961867406242" type="CONCEPT" from="IndexExpresion" to="IndexExpression" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="talm" modelUID="r:98c60105-1d91-4aab-8dfe-5ef258ec8eb6(com.mbeddr.core.debug.blext.structure)" version="14" />
+    </dependencies>
+    <rename id="talm.2011139961867340775" type="CONCEPT" from="ResolveChildToWatchablesStatement" to="ChildrenToWatchablesStatement" />
+  </StructureModification>
 </history>
 
