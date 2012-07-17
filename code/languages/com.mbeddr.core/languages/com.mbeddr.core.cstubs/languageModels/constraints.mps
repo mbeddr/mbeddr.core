@@ -8,8 +8,6 @@
       <link role="concept" roleId="tp1t.1213093996982" targetNodeId="punb.7979240492616395071" resolveInfo="HeaderImportSpec" />
     </node>
   </roots>
-  <root id="464642980655366754">
-    <node role="property" roleId="tp1t.1213098023997" type="tp1t.NodePropertyConstraint" typeId="tp1t.1147467115080" id="464642980655366755" />
-  </root>
+  <root id="464642980655366754" />
 </model>
 
