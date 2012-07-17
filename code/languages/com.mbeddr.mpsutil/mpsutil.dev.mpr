@@ -8,6 +8,7 @@
     <projectModules>
       <modulePath path="${project}/languages/com.mbeddr.mpsutil.bldoc/bldoc.mpl" />
       <modulePath path="${project}/languages/com.mbeddr.mpsutil.blutil/blutil.mpl" folder="" />
+      <modulePath path="${project}/languages/com.mbeddr.mpsutil.genutil/genutil.mpl" folder="" />
       <modulePath path="${project}/languages/com.mbeddr.mpsutil.graph/graph.mpl" />
       <modulePath path="${project}/languages/com.mbeddr.mpsutil.graphview/graphview.mpl" folder="" />
       <modulePath path="${project}/languages/com.mbeddr.mpsutil.graphview/solutions/pluginSolution/pluginSolution.msd" folder="" />
