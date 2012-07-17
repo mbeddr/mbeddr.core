@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model modelUID="r:055bac8c-a50b-42ec-a317-e20a256152b4(com.mbeddr.core.debug.structure)" version="8">
+<model modelUID="r:055bac8c-a50b-42ec-a317-e20a256152b4(com.mbeddr.core.debug.structure)" version="9">
   <persistence version="7" />
   <language namespace="c72da2b9-7cce-4447-8389-f407dc1158b7(jetbrains.mps.lang.structure)" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="tpce" modelUID="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" version="0" implicit="yes" />
-  <import index="2gv2" modelUID="r:055bac8c-a50b-42ec-a317-e20a256152b4(com.mbeddr.core.debug.structure)" version="8" implicit="yes" />
+  <import index="2gv2" modelUID="r:055bac8c-a50b-42ec-a317-e20a256152b4(com.mbeddr.core.debug.structure)" version="9" implicit="yes" />
   <roots>
     <node type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="568116135000816591">
       <property name="name" nameId="tpck.1169194664001" value="ISteppable" />
@@ -50,13 +50,9 @@
       <property name="name" nameId="tpck.1169194664001" value="IMappableType" />
       <property name="virtualPackage" nameId="tpck.1193676396447" value="watches" />
     </node>
-    <node type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="8519572659617616593">
+    <node type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="8519572659617671153">
       <property name="virtualPackage" nameId="tpck.1193676396447" value="watches" />
-      <property name="name" nameId="tpck.1169194664001" value="IPrimitiveMappableType" />
-    </node>
-    <node type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="8519572659617616594">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="watches" />
-      <property name="name" nameId="tpck.1169194664001" value="IComplexMappableType" />
+      <property name="name" nameId="tpck.1169194664001" value="IChildrenResolver" />
     </node>
   </roots>
   <root id="568116135000816591" />
@@ -78,11 +74,6 @@
     </node>
   </root>
   <root id="2513598210665148633" />
-  <root id="8519572659617616593" />
-  <root id="8519572659617616594">
-    <node role="extends" roleId="tpce.1169127546356" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="8519572659617616595">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="8519572659617616593" resolveInfo="IPrimitiveMappableType" />
-    </node>
-  </root>
+  <root id="8519572659617671153" />
 </model>
 
