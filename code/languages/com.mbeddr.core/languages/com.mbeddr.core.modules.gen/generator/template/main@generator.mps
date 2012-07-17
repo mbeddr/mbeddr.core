@@ -923,6 +923,7 @@
     <node role="contents" roleId="d0vh.1758019824472688223" type="x27k.GlobalVariableDeclaration" typeId="x27k.6610873504380335822" id="4097784605144104753">
       <property name="name" nameId="tpck.1169194664001" value="aVar" />
       <property name="extern" nameId="x27k.6708182213627045681" value="true" />
+      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
       <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="4097784605144104754" />
       <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.LoopMacro" typeId="tpf8.1118786554307" id="4097784605144104759">
         <property name="comment" nameId="tpf8.3265704088513289864" value="exportedVariables" />
@@ -1763,6 +1764,7 @@
     <node role="contentNode" roleId="tpf8.1092060348987" type="x27k.GlobalVariableDeclaration" typeId="x27k.6610873504380335822" id="4097784605144104728">
       <property name="name" nameId="tpck.1169194664001" value="aVar" />
       <property name="extern" nameId="x27k.6708182213627045681" value="true" />
+      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
       <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="4097784605144104730">
         <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.CopySrcNodeMacro" typeId="tpf8.1114706874351" id="4097784605144104733">
           <node role="sourceNodeQuery" roleId="tpf8.1168024447342" type="tpf8.SourceSubstituteMacro_SourceNodeQuery" typeId="tpf8.1168024337012" id="4097784605144104736">
