@@ -48,5 +48,17 @@
     </dependencies>
     <rename id="talm.8236113172499363383" type="CHILD" from="name" to="varName" />
   </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="talm" modelUID="r:98c60105-1d91-4aab-8dfe-5ef258ec8eb6(com.mbeddr.core.debug.blext.structure)" version="7" />
+    </dependencies>
+    <rename id="talm.8236113172499161521" type="PROPERTY" from="category" to="variableKind" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="talm" modelUID="r:98c60105-1d91-4aab-8dfe-5ef258ec8eb6(com.mbeddr.core.debug.blext.structure)" version="8" />
+    </dependencies>
+    <rename id="talm.8236113172499118431" type="CHILD" from="variableKind" to="categoryName" />
+  </StructureModification>
 </history>
 
