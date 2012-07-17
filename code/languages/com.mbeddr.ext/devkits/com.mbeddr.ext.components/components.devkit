@@ -4,8 +4,5 @@
   <exported-language name="36a565f1-3fa0-42d6-baac-f87e209c9789(com.mbeddr.ext.components.mock)" />
   <exported-language name="41911c23-eb23-4ee6-872f-bc7f7ebce290(com.mbeddr.ext.components.test)" />
   <exported-language name="97d24244-51db-4e2e-97fc-7bd73b1f5f40(com.mbeddr.ext.components)" />
-  <exported-solutions>
-    <exported-solution>f5b15bf9-2463-45a5-90f4-06322655d1d6(com.mbeddr.ext.components.mock.lib)</exported-solution>
-  </exported-solutions>
 </dev-kit>
 

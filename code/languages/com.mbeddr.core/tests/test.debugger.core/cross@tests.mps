@@ -1586,7 +1586,7 @@
                 <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="e2lb.~Thread%dsleep(long)%cvoid" resolveInfo="sleep" />
                 <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="e2lb.~Thread" resolveInfo="Thread" />
                 <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="5544962897743656676">
-                  <property name="value" nameId="tpee.1068580320021" value="250" />
+                  <property name="value" nameId="tpee.1068580320021" value="500" />
                 </node>
               </node>
             </node>
