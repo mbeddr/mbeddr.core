@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<language namespace="com.mbeddr.ext.boundedNumbers" uuid="4008fdce-01b1-4cfb-a53e-86c065ed19ac" doNotGenerateAdapters="false">
+<language namespace="com.mbeddr.ext.boundedNumbers" uuid="4008fdce-01b1-4cfb-a53e-86c065ed19ac" doNotGenerateAdapters="true">
   <models>
     <modelRoot path="${language_descriptor}/languageModels" />
   </models>
