@@ -194,6 +194,7 @@
     <node role="nodesToCheck" roleId="tp5g.1217501822150" type="tp5g.TestNode" typeId="tp5g.1216989428737" id="7603351357795625289">
       <node role="nodeToCheck" roleId="tp5g.1216989461394" type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="7603351357795625290">
         <property name="name" nameId="tpck.1169194664001" value="dummy" />
+        <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="7603351357795625290" />
         <node role="contents" roleId="x27k.6437088627575722833" type="v7ag.ClientServerInterface" typeId="v7ag.4491876417845484922" id="7603351357795625291">
           <property name="exported" nameId="x27k.1317894735999272944" value="true" />
           <property name="name" nameId="tpck.1169194664001" value="I" />
@@ -234,6 +235,7 @@
           </node>
           <node role="contents" roleId="v7ag.4491876417845641672" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="7603351357795625298">
             <property name="name" nameId="tpck.1169194664001" value="i_op" />
+            <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="7603351357795625298" />
             <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="7603351357795625299">
               <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="7603351357795625300" />
             </node>
@@ -248,6 +250,7 @@
           </node>
           <node role="contents" roleId="v7ag.4491876417845641672" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="7603351357795625303">
             <property name="name" nameId="tpck.1169194664001" value="i_op" />
+            <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="7603351357795625303" />
             <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="7603351357795625304">
               <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="7603351357795625305" />
             </node>

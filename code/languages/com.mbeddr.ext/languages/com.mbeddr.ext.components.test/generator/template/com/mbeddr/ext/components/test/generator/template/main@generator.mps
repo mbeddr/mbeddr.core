@@ -33,6 +33,7 @@
       <node role="ruleConsequence" roleId="tpf8.1169672767469" type="tpf8.InlineTemplateWithContext_RuleConsequence" typeId="tpf8.8900764248744213868" id="8230733038425694025">
         <node role="contentNode" roleId="tpf8.8900764248744213871" type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="8230733038425694032">
           <property name="name" nameId="tpck.1169194664001" value="dummy" />
+          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="8230733038425694032" />
           <node role="contents" roleId="x27k.6437088627575722833" type="x27k.GlobalVariableDeclaration" typeId="x27k.6610873504380335822" id="8230733038425694268">
             <property name="name" nameId="tpck.1169194664001" value="instanceData" />
             <node role="type" roleId="mj1l.318113533128716676" type="yq40.PointerType" typeId="yq40.279446265608459824" id="8230733038425694272">
@@ -49,6 +50,7 @@
           </node>
           <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="8230733038425694035">
             <property name="name" nameId="tpck.1169194664001" value="aFunction" />
+            <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="8230733038425694035" />
             <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="8230733038425694037">
               <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="8230733038425694117">
                 <node role="expr" roleId="c4fa.7254843406768833939" type="x27k.FunctionCall" typeId="x27k.5950410542643524492" id="8230733038425694118">
