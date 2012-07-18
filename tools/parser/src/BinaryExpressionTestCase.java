@@ -32,22 +32,19 @@ import org.eclipse.cdt.internal.core.dom.parser.c.CASTFunctionCallExpression;
 import org.eclipse.core.runtime.CoreException;
 
 
-public class FunctionCallExpressionTestCase extends TestCase {
+public class BinaryExpressionTestCase extends TestCase {
 
 	public void testBasicTest() throws CoreException {
 	StringBuilder content = new StringBuilder();
 
-	void withBinaryExpressions(int a){
-
 		
-		content.append("void funToCall(int a){\n");
-		content.append("	int8_t localVar;\n");
-		content.append("};\n");
+		
+	content.append("void withTwoBinary(int a){\n");
+	content.append("	12 + 10;\n");
+	content.append("	10 > 10;\n");
+	content.append("};\n");
 
-		content.append("void funThatCallFun(){\n");
-		content.append(" int z;\n");
-		content.append("	funToCall(z);\n");
-		content.append("};\n");
+
 
 
 	
@@ -121,6 +118,8 @@ public class FunctionCallExpressionTestCase extends TestCase {
 //				
 //			}
 //			System.err.println("ExpType:" +x.getExpressionType());
+			
+			
 			return PROCESS_CONTINUE;
 		}
 

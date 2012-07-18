@@ -28,29 +28,49 @@ import org.eclipse.cdt.core.parser.DefaultLogService;
 import org.eclipse.cdt.core.parser.FileContent;
 import org.eclipse.cdt.core.parser.IncludeFileContentProvider;
 import org.eclipse.cdt.core.parser.ScannerInfo;
-import org.eclipse.cdt.internal.core.dom.parser.c.CASTFunctionCallExpression;
 import org.eclipse.core.runtime.CoreException;
 
 
-public class FunctionCallExpressionTestCase extends TestCase {
+public class InitializerTestCase extends TestCase {
 
 	public void testBasicTest() throws CoreException {
 	StringBuilder content = new StringBuilder();
 
-	void withBinaryExpressions(int a){
+	// CASTEqualsInitializer
+	content.append("int a = 10;\n");
 
-		
-		content.append("void funToCall(int a){\n");
-		content.append("	int8_t localVar;\n");
-		content.append("};\n");
-
-		content.append("void funThatCallFun(){\n");
-		content.append(" int z;\n");
-		content.append("	funToCall(z);\n");
-		content.append("};\n");
-
-
+//	content.append("int intValue = 20;\n");
+//	content.append("int *pointer = &intValue;\n");
 	
+//	content.append("enum week { Mon=1, Tue, Wed, Thu, Fri, Sat, Sun} days = Wed;\n");
+
+	// CASTInitializerList
+//	content.append("int b[]= {1,2,3};\n");
+
+	// CASTInitializerList with nested
+//	content.append("int b[3][2]= {{1,2},{3,4},{5,6}};\n");
+
+	// CASTDesignatedInitializer
+//	content.append("struct Person {\n");
+//	content.append("	int age;\n");
+//	content.append("	int size;\n");
+//	content.append("} p1 = { .age = 10, .size= 100};\n");
+
+//	content.append("union u {\n");
+//	content.append("	char c;\n");
+//	content.append("	int i;\n");
+//	content.append("} u1 = { .c='A'};\n");
+
+//	content.append("struct Person {\n");
+//	content.append("	int age;\n");
+//	content.append("	float size;\n");
+//	content.append("} p2[4][2] = {\n");
+//	content.append("		[0][0] = { .age = 10, .size= 100.1},\n");
+//	content.append("		[1][0] = { .age = 20, .size= 100.2},\n");
+//	content.append("		[2][0] = { .age = 30, .size= 100.3},\n");
+//	content.append("		[3][1] = { .age = 40, .size= 100.4}\n");
+//	content.append("};\n");
+
 	HashMap<String, String> options = new HashMap<String, String>();
 
 	ScannerInfo scannerInfo = new ScannerInfo(options);
@@ -69,7 +89,19 @@ public class FunctionCallExpressionTestCase extends TestCase {
 
 	astTranslationUnit.accept(new ASTVisitor(true) {
 		
-		  public int visit(IASTTranslationUnit x) {
+		  public int visist(IASTTranslationUnit x) {
+			    System.out.println("Visit IASTPreprocessorMacroDefinition");
+			    for (IASTPreprocessorMacroDefinition m : x.getMacroDefinitions()) {
+			      String name = m.getName().toString();
+			      String valueAsString = m.getExpansion();
+//			      if (StringUtils.isNotEmpty(valueAsString)) {
+//			        ListSequence.fromList(SLinkOperations.getTargets(externalModule, "contents", true)).addElement(createGlobalConstantDeclaration(name, valueAsString));
+//			      }
+			    }
+			    return PROCESS_CONTINUE;
+			  }
+		
+		public int visit(IASTTranslationUnit x) {
 			System.err.println(x.toString());
 			return PROCESS_CONTINUE;
 		}
@@ -116,11 +148,6 @@ public class FunctionCallExpressionTestCase extends TestCase {
 
 		public int visit(IASTExpression x) {
 			System.err.println(x.toString());
-//			if(CASTFunctionCallExpression.class.isInstance(x)){
-//				CASTFunctionCallExpression fce=(CASTFunctionCallExpression) x;
-//				
-//			}
-//			System.err.println("ExpType:" +x.getExpressionType());
 			return PROCESS_CONTINUE;
 		}
 
