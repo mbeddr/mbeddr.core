@@ -167,10 +167,8 @@
       <node role="ruleConsequence" roleId="tpf8.1169672767469" type="tpf8.InlineTemplateWithContext_RuleConsequence" typeId="tpf8.8900764248744213868" id="186853311768098320">
         <node role="contentNode" roleId="tpf8.8900764248744213871" type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="186853311768098322">
           <property name="name" nameId="tpck.1169194664001" value="dummy" />
-          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="186853311768098322" />
           <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="186853311768098324">
             <property name="name" nameId="tpck.1169194664001" value="f" />
-            <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="186853311768098324" />
             <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="186853311768098326">
               <node role="statements" roleId="c4fa.4185783222026475862" type="x27k.ReturnStatement" typeId="x27k.8967919205527146149" id="5686538669182343423">
                 <node role="expression" roleId="x27k.8967919205527146150" type="k146.BlockExpression" typeId="k146.5686538669182273028" id="5686538669182343454">
@@ -252,7 +250,6 @@
       <node role="ruleConsequence" roleId="tpf8.1169672767469" type="tpf8.InlineTemplateWithContext_RuleConsequence" typeId="tpf8.8900764248744213868" id="3830958861296781567">
         <node role="contentNode" roleId="tpf8.8900764248744213871" type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="767515563077275962">
           <property name="name" nameId="tpck.1169194664001" value="dummy" />
-          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="767515563077275962" />
           <node role="contents" roleId="x27k.6437088627575722833" type="k146.MessageDefinitionTable" typeId="k146.2688792604367903085" id="767515563077275965">
             <property name="name" nameId="tpck.1169194664001" value="___testing" />
             <node role="messages" roleId="k146.2688792604367903095" type="k146.MessageDefinition" typeId="k146.2688792604367903087" id="767515563077275966">
@@ -267,7 +264,6 @@
           </node>
           <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="3830958861296781569">
             <property name="name" nameId="tpck.1169194664001" value="dummy" />
-            <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="3830958861296781569" />
             <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="3830958861296781571">
               <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.IfStatement" typeId="c4fa.6275792049641600983" id="3830958861296781572">
                 <node role="thenPart" roleId="c4fa.6275792049641600985" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="3830958861296781574">
@@ -450,7 +446,6 @@
       <node role="ruleConsequence" roleId="tpf8.1169672767469" type="tpf8.InlineTemplateWithContext_RuleConsequence" typeId="tpf8.8900764248744213868" id="1937609356306125849">
         <node role="contentNode" roleId="tpf8.8900764248744213871" type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="767515563077289176">
           <property name="name" nameId="tpck.1169194664001" value="dummy" />
-          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="767515563077289176" />
           <node role="contents" roleId="x27k.6437088627575722833" type="k146.MessageDefinitionTable" typeId="k146.2688792604367903085" id="767515563077289177">
             <property name="name" nameId="tpck.1169194664001" value="___testing" />
             <node role="messages" roleId="k146.2688792604367903095" type="k146.MessageDefinition" typeId="k146.2688792604367903087" id="767515563077289178">
@@ -465,7 +460,6 @@
           </node>
           <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="1937609356306125851">
             <property name="name" nameId="tpck.1169194664001" value="dummy" />
-            <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="1937609356306125851" />
             <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="1937609356306125853">
               <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="1937609356306125933">
                 <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="1937609356306125855">
@@ -658,10 +652,8 @@
       <node role="ruleConsequence" roleId="tpf8.1169672767469" type="tpf8.InlineTemplateWithContext_RuleConsequence" typeId="tpf8.8900764248744213868" id="9125142491355336540">
         <node role="contentNode" roleId="tpf8.8900764248744213871" type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="9125142491355336542">
           <property name="name" nameId="tpck.1169194664001" value="dummy" />
-          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="9125142491355336542" />
           <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="9125142491355336545">
             <property name="name" nameId="tpck.1169194664001" value="function" />
-            <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="9125142491355336545" />
             <node role="arguments" roleId="x27k.5708867820623310661" type="x27k.Argument" typeId="x27k.7892328519581704407" id="9125142491355336560">
               <property name="name" nameId="tpck.1169194664001" value="x" />
               <node role="type" roleId="mj1l.318113533128716676" type="mj1l.UnsignedInt8tType" typeId="mj1l.8463282783691618461" id="9125142491355336561">
@@ -783,10 +775,8 @@
       <node role="ruleConsequence" roleId="tpf8.1169672767469" type="tpf8.InlineTemplateWithContext_RuleConsequence" typeId="tpf8.8900764248744213868" id="9125142491355336462">
         <node role="contentNode" roleId="tpf8.8900764248744213871" type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="9125142491355336464">
           <property name="name" nameId="tpck.1169194664001" value="dummy" />
-          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="9125142491355336464" />
           <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="9125142491355336467">
             <property name="name" nameId="tpck.1169194664001" value="f" />
-            <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="9125142491355336467" />
             <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="9125142491355336469">
               <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="9125142491355336817">
                 <property name="name" nameId="tpck.1169194664001" value="__failures" />
@@ -904,14 +894,12 @@
       <node role="ruleConsequence" roleId="tpf8.1169672767469" type="tpf8.InlineTemplateWithContext_RuleConsequence" typeId="tpf8.8900764248744213868" id="6209278014151152055">
         <node role="contentNode" roleId="tpf8.8900764248744213871" type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="6209278014151152057">
           <property name="name" nameId="tpck.1169194664001" value="Dummy" />
-          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="6209278014151152057" />
           <node role="contents" roleId="x27k.6437088627575722833" type="x27k.GlobalVariableDeclaration" typeId="x27k.6610873504380335822" id="6209278014151152058">
             <property name="name" nameId="tpck.1169194664001" value="messageCount" />
             <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="6209278014151152060" />
           </node>
           <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="6209278014151152062">
             <property name="name" nameId="tpck.1169194664001" value="dummy" />
-            <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="6209278014151152062" />
             <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="6209278014151152063" />
             <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="6209278014151152064">
               <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="6209278014151152066">
@@ -950,14 +938,12 @@
       <node role="ruleConsequence" roleId="tpf8.1169672767469" type="tpf8.InlineTemplateWithContext_RuleConsequence" typeId="tpf8.8900764248744213868" id="2604827788718788771">
         <node role="contentNode" roleId="tpf8.8900764248744213871" type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="2604827788718788772">
           <property name="name" nameId="tpck.1169194664001" value="Dummy" />
-          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="2604827788718788772" />
           <node role="contents" roleId="x27k.6437088627575722833" type="x27k.GlobalVariableDeclaration" typeId="x27k.6610873504380335822" id="2604827788718788773">
             <property name="name" nameId="tpck.1169194664001" value="messageCount" />
             <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="2604827788718788774" />
           </node>
           <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="2604827788718788775">
             <property name="name" nameId="tpck.1169194664001" value="dummy" />
-            <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="2604827788718788775" />
             <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="2604827788718788776" />
             <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="2604827788718788777">
               <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="2604827788718788790" />
@@ -1004,7 +990,6 @@
   <root id="6275792049641599030">
     <node role="contentNode" roleId="tpf8.1092060348987" type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="6275792049641599033">
       <property name="name" nameId="tpck.1169194664001" value="m" />
-      <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="6275792049641599033" />
       <node role="contents" roleId="x27k.6437088627575722833" type="k146.MessageDefinitionTable" typeId="k146.2688792604367903085" id="767515563077315481">
         <property name="name" nameId="tpck.1169194664001" value="___testing" />
         <node role="messages" roleId="k146.2688792604367903095" type="k146.MessageDefinition" typeId="k146.2688792604367903087" id="767515563077315482">
@@ -1017,8 +1002,6 @@
       <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="6275792049641599034">
         <property name="name" nameId="tpck.1169194664001" value="testName" />
         <property name="exported" nameId="x27k.1317894735999272944" value="true" />
-        <property name="overriddenCodeLocation" nameId="x27k.2688792604368329410" value="123" />
-        <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="6275792049641599034" />
         <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="6275792049641599036">
           <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="5232867887045275779">
             <property name="name" nameId="tpck.1169194664001" value="__failuresVal" />
@@ -1045,25 +1028,9 @@
           </node>
           <node role="statements" roleId="c4fa.4185783222026475862" type="k146.ReportStatement" typeId="k146.2688792604367964821" id="767515563077315487">
             <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="767515563077315487" />
-            <property name="overriddenCodeLocation" nameId="x27k.2688792604368329410" value="123" />
             <node role="msgref" roleId="k146.2688792604367973273" type="k146.MessageRef" typeId="k146.2688792604367964823" id="767515563077315488">
               <link role="table" roleId="k146.2688792604367964824" targetNodeId="767515563077315481" resolveInfo="___testing" />
               <link role="msg" roleId="k146.2688792604367964825" targetNodeId="767515563077315482" resolveInfo="runningTest" />
-            </node>
-            <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.PropertyMacro" typeId="tpf8.1087833241328" id="5894767189292673377">
-              <property name="propertyName" nameId="tpck.1757699476691236117" value="overriddenCodeLocation" />
-              <node role="propertyValueFunction" roleId="tpf8.1167756362303" type="tpf8.PropertyMacro_GetPropertyValue" typeId="tpf8.1167756080639" id="5894767189292673378">
-                <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="5894767189292673379">
-                  <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="5894767189292673382">
-                    <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="5894767189292673404">
-                      <node role="operand" roleId="tpee.1197027771414" type="tpf8.TemplateFunctionParameter_sourceNode" typeId="tpf8.1167169188348" id="5894767189292673383" />
-                      <node role="operation" roleId="tpee.1197027833540" type="tp25.SPropertyAccess" typeId="tp25.1138056022639" id="5894767189292673410">
-                        <link role="property" roleId="tp25.1138056395725" targetNodeId="x27k.2688792604368329410" resolveInfo="overriddenCodeLocation" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
             </node>
           </node>
           <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="6275792049641599070">
@@ -1152,21 +1119,6 @@
           </node>
         </node>
         <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="5708867820622277834" />
-        <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.PropertyMacro" typeId="tpf8.1087833241328" id="5894767189292658992">
-          <property name="propertyName" nameId="tpck.1757699476691236117" value="overriddenCodeLocation" />
-          <node role="propertyValueFunction" roleId="tpf8.1167756362303" type="tpf8.PropertyMacro_GetPropertyValue" typeId="tpf8.1167756080639" id="5894767189292658993">
-            <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="5894767189292658994">
-              <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="5894767189292658997">
-                <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="5894767189292659019">
-                  <node role="operand" roleId="tpee.1197027771414" type="tpf8.TemplateFunctionParameter_sourceNode" typeId="tpf8.1167169188348" id="5894767189292658998" />
-                  <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_ConceptMethodCall" typeId="tp25.1179409122411" id="5894767189292659025">
-                    <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="qd6m.2688792604368201710" resolveInfo="effectiveCodeLocation" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
       </node>
     </node>
   </root>
@@ -1301,7 +1253,6 @@
   <root id="767515563077273156">
     <node role="contentNode" roleId="tpf8.1092060348987" type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="767515563077268974">
       <property name="name" nameId="tpck.1169194664001" value="dummy" />
-      <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="767515563077268974" />
       <node role="contents" roleId="x27k.6437088627575722833" type="k146.MessageDefinitionTable" typeId="k146.2688792604367903085" id="767515563077268975">
         <property name="name" nameId="tpck.1169194664001" value="___testing" />
         <node role="messages" roleId="k146.2688792604367903095" type="k146.MessageDefinition" typeId="k146.2688792604367903087" id="767515563077323256">

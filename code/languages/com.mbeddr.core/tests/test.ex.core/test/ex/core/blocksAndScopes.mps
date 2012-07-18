@@ -12,12 +12,10 @@
   <roots>
     <node type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="7646082028326283112">
       <property name="name" nameId="tpck.1169194664001" value="AnotherModule" />
-      <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="7646082028326283112" />
     </node>
     <node type="51wr.BuildConfiguration" typeId="51wr.7717755763392524104" id="7646082028326283145" />
     <node type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="7646082028326283148">
       <property name="name" nameId="tpck.1169194664001" value="TestModule" />
-      <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="7646082028326283148" />
     </node>
     <node type="mj1l.TypeSizeConfiguration" typeId="mj1l.3335993110369795380" id="7496733358578266352" />
   </roots>
@@ -27,7 +25,6 @@
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="7646082028326283114">
       <property name="name" nameId="tpck.1169194664001" value="test" />
-      <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="7646082028326283114" />
       <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="7646082028326283116">
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="7646082028326283117">
           <node role="expr" roleId="c4fa.7254843406768833939" type="x27k.FunctionCall" typeId="x27k.5950410542643524492" id="7646082028326283118">
@@ -119,7 +116,6 @@
   <root id="7646082028326283148">
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="8257817273846925643">
       <property name="name" nameId="tpck.1169194664001" value="someFunction" />
-      <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="8257817273846925643" />
       <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="8257817273846925644">
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="7646082028326283152">
           <property name="name" nameId="tpck.1169194664001" value="x" />
@@ -310,7 +306,6 @@
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="7646082028326283235">
       <property name="name" nameId="tpck.1169194664001" value="add" />
       <property name="exported" nameId="x27k.1317894735999272944" value="true" />
-      <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="7646082028326283235" />
       <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="7646082028326283237">
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="7646082028326283238">
           <property name="name" nameId="tpck.1169194664001" value="c" />
@@ -348,7 +343,6 @@
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="7646082028326283251">
       <property name="name" nameId="tpck.1169194664001" value="main" />
       <property name="exported" nameId="x27k.1317894735999272944" value="true" />
-      <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="7646082028326283251" />
       <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="7646082028326283253">
         <node role="statements" roleId="c4fa.4185783222026475862" type="x27k.ReturnStatement" typeId="x27k.8967919205527146149" id="7646082028326283254">
           <node role="expression" roleId="x27k.8967919205527146150" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="7646082028326283255">

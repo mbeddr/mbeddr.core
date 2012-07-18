@@ -17,7 +17,6 @@
   <roots>
     <node type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="1817139875676347012">
       <property name="name" nameId="tpck.1169194664001" value="CompWithDectab" />
-      <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="1817139875676347012" />
     </node>
     <node type="51wr.BuildConfiguration" typeId="51wr.7717755763392524104" id="1817139875676481246" />
     <node type="mj1l.TypeSizeConfiguration" typeId="mj1l.3335993110369795380" id="7496733358578266352" />
@@ -42,7 +41,6 @@
       <property name="name" nameId="tpck.1169194664001" value="AComp" />
       <node role="contents" roleId="v7ag.4491876417845641672" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="1817139875676347014">
         <property name="name" nameId="tpck.1169194664001" value="decide" />
-        <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="1817139875676347014" />
         <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="1817139875676347015">
           <node role="statements" roleId="c4fa.4185783222026475862" type="x27k.ReturnStatement" typeId="x27k.8967919205527146149" id="1817139875676347024">
             <node role="expression" roleId="x27k.8967919205527146150" type="k146.DecTab" typeId="k146.6209595569797584861" id="1817139875676347025">
@@ -134,10 +132,8 @@
     <node role="contents" roleId="x27k.6437088627575722833" type="yz9a.TestCase" typeId="yz9a.6275792049641586523" id="1817139875676347082">
       <property name="exported" nameId="x27k.1317894735999272944" value="true" />
       <property name="name" nameId="tpck.1169194664001" value="testDecider" />
-      <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="1817139875676347082" />
       <node role="body" roleId="yz9a.6275792049641586525" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="1817139875676347083">
         <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="1817139875676347084">
-          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="1817139875676347084" />
           <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="1817139875676347091">
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="1817139875676347094">
               <property name="value" nameId="mj1l.8860443239512128104" value="0" />
@@ -157,7 +153,6 @@
           </node>
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="1817139875676347096">
-          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="1817139875676347096" />
           <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="1817139875676347104">
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="1817139875676347107">
               <property name="value" nameId="mj1l.8860443239512128104" value="2" />
@@ -182,7 +177,6 @@
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="1817139875676347109">
       <property name="name" nameId="tpck.1169194664001" value="main" />
       <property name="exported" nameId="x27k.1317894735999272944" value="true" />
-      <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="1817139875676347109" />
       <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="1817139875676347114">
         <node role="statements" roleId="c4fa.4185783222026475862" type="x27k.ReturnStatement" typeId="x27k.8967919205527146149" id="1817139875676347117">
           <node role="expression" roleId="x27k.8967919205527146150" type="yz9a.ExecuteTestExpression" typeId="yz9a.186853311768094629" id="1817139875676347118">

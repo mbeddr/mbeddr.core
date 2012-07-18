@@ -39,7 +39,7 @@ public class GlobalVariableTestCase extends TestCase {
 		StringBuilder content = new StringBuilder();
 
 
-		content.append("int localVariable = 10;");
+		content.append("int localVariable;");
 
 
 

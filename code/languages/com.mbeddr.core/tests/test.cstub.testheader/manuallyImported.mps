@@ -23,117 +23,94 @@
     <node type="x27k.ExternalModule" typeId="x27k.6116558314501417921" id="3284580646979589298">
       <property name="name" nameId="tpck.1169194664001" value="utilsTest" />
       <property name="virtualPackage" nameId="tpck.1193676396447" value="" />
-      <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="3284580646979589298" />
     </node>
     <node type="x27k.ExternalModule" typeId="x27k.6116558314501417921" id="3284580646979589202">
       <property name="name" nameId="tpck.1169194664001" value="structUnionWithFunctionPointerTest" />
       <property name="virtualPackage" nameId="tpck.1193676396447" value="" />
-      <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="3284580646979589202" />
     </node>
     <node type="x27k.ExternalModule" typeId="x27k.6116558314501417921" id="3284580646979588823">
       <property name="name" nameId="tpck.1169194664001" value="commentsTestHeader" />
       <property name="virtualPackage" nameId="tpck.1193676396447" value="" />
-      <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="3284580646979588823" />
     </node>
     <node type="x27k.ExternalModule" typeId="x27k.6116558314501417921" id="3284580646979589143">
       <property name="name" nameId="tpck.1169194664001" value="ModuleUsesTypeDef2" />
       <property name="virtualPackage" nameId="tpck.1193676396447" value="" />
-      <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="3284580646979589143" />
     </node>
     <node type="x27k.ExternalModule" typeId="x27k.6116558314501417921" id="3284580646979589310">
       <property name="name" nameId="tpck.1169194664001" value="virtualfolderA1_virtualfolderB_virtualFolderFileB" />
       <property name="virtualPackage" nameId="tpck.1193676396447" value="virtualfolderA1.virtualfolderB." />
-      <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="3284580646979589310" />
     </node>
     <node type="x27k.ExternalModule" typeId="x27k.6116558314501417921" id="3284580646979589138">
       <property name="name" nameId="tpck.1169194664001" value="ModuleUsesTypeDef" />
       <property name="virtualPackage" nameId="tpck.1193676396447" value="" />
-      <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="3284580646979589138" />
     </node>
     <node type="x27k.ExternalModule" typeId="x27k.6116558314501417921" id="3284580646979589304">
       <property name="name" nameId="tpck.1169194664001" value="virtualfolderA1_virtualFolderFileA" />
       <property name="virtualPackage" nameId="tpck.1193676396447" value="virtualfolderA1." />
-      <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="3284580646979589304" />
     </node>
     <node type="x27k.ExternalModule" typeId="x27k.6116558314501417921" id="3284580646979589057">
       <property name="name" nameId="tpck.1169194664001" value="globalVariablesTestHeader" />
       <property name="virtualPackage" nameId="tpck.1193676396447" value="" />
-      <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="3284580646979589057" />
     </node>
     <node type="x27k.ExternalModule" typeId="x27k.6116558314501417921" id="3284580646979588878">
       <property name="name" nameId="tpck.1169194664001" value="testforinclude_testforinclude" />
       <property name="virtualPackage" nameId="tpck.1193676396447" value="testforinclude." />
-      <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="3284580646979588878" />
     </node>
     <node type="x27k.ExternalModule" typeId="x27k.6116558314501417921" id="3284580646979589135">
       <property name="name" nameId="tpck.1169194664001" value="IncludeNotFoundTest" />
       <property name="virtualPackage" nameId="tpck.1193676396447" value="" />
-      <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="3284580646979589135" />
     </node>
     <node type="x27k.ExternalModule" typeId="x27k.6116558314501417921" id="3284580646979588884">
       <property name="name" nameId="tpck.1169194664001" value="defineTestHeader" />
       <property name="virtualPackage" nameId="tpck.1193676396447" value="" />
-      <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="3284580646979588884" />
     </node>
     <node type="x27k.ExternalModule" typeId="x27k.6116558314501417921" id="3284580646979683598">
       <property name="name" nameId="tpck.1169194664001" value="enumTestHeader" />
       <property name="virtualPackage" nameId="tpck.1193676396447" value="" />
-      <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="3284580646979683598" />
     </node>
     <node type="x27k.ExternalModule" typeId="x27k.6116558314501417921" id="3284580646979589231">
       <property name="name" nameId="tpck.1169194664001" value="typesTestHeader" />
       <property name="virtualPackage" nameId="tpck.1193676396447" value="" />
-      <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="3284580646979589231" />
     </node>
     <node type="x27k.ExternalModule" typeId="x27k.6116558314501417921" id="3284580646979589316">
       <property name="name" nameId="tpck.1169194664001" value="virtualfolderA1_virtualfolderB_virtualfolderC_virtualFolderFileC" />
       <property name="virtualPackage" nameId="tpck.1193676396447" value="virtualfolderA1.virtualfolderB.virtualfolderC." />
-      <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="3284580646979589316" />
     </node>
     <node type="x27k.ExternalModule" typeId="x27k.6116558314501417921" id="3284580646979589162">
       <property name="name" nameId="tpck.1169194664001" value="structTestHeader" />
       <property name="virtualPackage" nameId="tpck.1193676396447" value="" />
-      <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="3284580646979589162" />
     </node>
     <node type="x27k.ExternalModule" typeId="x27k.6116558314501417921" id="3284580646979588749">
       <property name="name" nameId="tpck.1169194664001" value="annonymTypes" />
       <property name="virtualPackage" nameId="tpck.1193676396447" value="" />
-      <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="3284580646979588749" />
     </node>
     <node type="x27k.ExternalModule" typeId="x27k.6116558314501417921" id="3284580646979589157">
       <property name="name" nameId="tpck.1169194664001" value="ModuleUsesTypeDefOnlyDefaultImport" />
       <property name="virtualPackage" nameId="tpck.1193676396447" value="" />
-      <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="3284580646979589157" />
     </node>
     <node type="x27k.ExternalModule" typeId="x27k.6116558314501417921" id="3284580646979589322">
       <property name="name" nameId="tpck.1169194664001" value="virtualfolderA2_virtualFolderFileA" />
       <property name="virtualPackage" nameId="tpck.1193676396447" value="virtualfolderA2." />
-      <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="3284580646979589322" />
     </node>
     <node type="x27k.ExternalModule" typeId="x27k.6116558314501417921" id="3284580646979588957">
       <property name="name" nameId="tpck.1169194664001" value="functionTestHeader" />
       <property name="virtualPackage" nameId="tpck.1193676396447" value="" />
-      <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="3284580646979588957" />
     </node>
     <node type="x27k.ExternalModule" typeId="x27k.6116558314501417921" id="3284580646979589260">
       <property name="name" nameId="tpck.1169194664001" value="unionTestHeader" />
       <property name="virtualPackage" nameId="tpck.1193676396447" value="" />
-      <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="3284580646979589260" />
     </node>
     <node type="x27k.ExternalModule" typeId="x27k.6116558314501417921" id="3284580646979588802">
       <property name="name" nameId="tpck.1169194664001" value="bitFieldsTestHeader" />
       <property name="virtualPackage" nameId="tpck.1193676396447" value="" />
-      <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="3284580646979588802" />
     </node>
     <node type="x27k.ExternalModule" typeId="x27k.6116558314501417921" id="3284580646979588743">
       <property name="name" nameId="tpck.1169194664001" value="ModuleWithTypeDef" />
       <property name="virtualPackage" nameId="tpck.1193676396447" value="" />
-      <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="3284580646979588743" />
     </node>
     <node type="x27k.ExternalModule" typeId="x27k.6116558314501417921" id="3284580646979588835">
       <property name="name" nameId="tpck.1169194664001" value="typeDefTestHeader" />
       <property name="virtualPackage" nameId="tpck.1193676396447" value="" />
-      <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="3284580646979588835" />
     </node>
   </roots>
   <root id="3029574721709407579">
@@ -533,7 +510,6 @@
       <property name="hasEllipsis" nameId="x27k.9066372830132870213" value="false" />
       <property name="extern" nameId="x27k.6708182213627045681" value="false" />
       <property name="preventNameMangling" nameId="x27k.6708182213627106114" value="true" />
-      <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="3284580646979589151" />
       <node role="type" roleId="mj1l.318113533128716676" type="mj1l.IntType" typeId="mj1l.8860443239512128108" id="3284580646979589152">
         <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
         <property name="const" nameId="mj1l.2941277002445651368" value="false" />
@@ -1746,7 +1722,6 @@
       <property name="hasEllipsis" nameId="x27k.9066372830132870213" value="false" />
       <property name="extern" nameId="x27k.6708182213627045681" value="false" />
       <property name="preventNameMangling" nameId="x27k.6708182213627106114" value="true" />
-      <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="3284580646979588962" />
       <node role="type" roleId="mj1l.318113533128716676" type="mj1l.IntType" typeId="mj1l.8860443239512128108" id="3284580646979588963">
         <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
         <property name="const" nameId="mj1l.2941277002445651368" value="false" />
@@ -1778,7 +1753,6 @@
       <property name="hasEllipsis" nameId="x27k.9066372830132870213" value="false" />
       <property name="extern" nameId="x27k.6708182213627045681" value="false" />
       <property name="preventNameMangling" nameId="x27k.6708182213627106114" value="true" />
-      <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="3284580646979588970" />
       <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="3284580646979588971">
         <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
         <property name="const" nameId="mj1l.2941277002445651368" value="false" />
@@ -1789,7 +1763,6 @@
       <property name="hasEllipsis" nameId="x27k.9066372830132870213" value="false" />
       <property name="extern" nameId="x27k.6708182213627045681" value="false" />
       <property name="preventNameMangling" nameId="x27k.6708182213627106114" value="true" />
-      <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="3284580646979588972" />
       <node role="type" roleId="mj1l.318113533128716676" type="mj1l.IntType" typeId="mj1l.8860443239512128108" id="3284580646979588973">
         <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
         <property name="const" nameId="mj1l.2941277002445651368" value="false" />
@@ -1860,7 +1833,6 @@
       <property name="hasEllipsis" nameId="x27k.9066372830132870213" value="false" />
       <property name="extern" nameId="x27k.6708182213627045681" value="false" />
       <property name="preventNameMangling" nameId="x27k.6708182213627106114" value="true" />
-      <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="3284580646979588990" />
       <node role="type" roleId="mj1l.318113533128716676" type="mj1l.IntType" typeId="mj1l.8860443239512128108" id="3284580646979588991">
         <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
         <property name="const" nameId="mj1l.2941277002445651368" value="false" />
@@ -1898,7 +1870,6 @@
       <property name="hasEllipsis" nameId="x27k.9066372830132870213" value="false" />
       <property name="extern" nameId="x27k.6708182213627045681" value="false" />
       <property name="preventNameMangling" nameId="x27k.6708182213627106114" value="true" />
-      <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="3284580646979588999" />
       <node role="type" roleId="mj1l.318113533128716676" type="yq40.PointerType" typeId="yq40.279446265608459824" id="3284580646979589000">
         <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
         <property name="const" nameId="mj1l.2941277002445651368" value="false" />
@@ -1913,7 +1884,6 @@
       <property name="hasEllipsis" nameId="x27k.9066372830132870213" value="true" />
       <property name="extern" nameId="x27k.6708182213627045681" value="false" />
       <property name="preventNameMangling" nameId="x27k.6708182213627106114" value="true" />
-      <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="3284580646979589002" />
       <node role="type" roleId="mj1l.318113533128716676" type="mj1l.IntType" typeId="mj1l.8860443239512128108" id="3284580646979589003">
         <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
         <property name="const" nameId="mj1l.2941277002445651368" value="false" />
@@ -1963,7 +1933,6 @@
       <property name="hasEllipsis" nameId="x27k.9066372830132870213" value="false" />
       <property name="extern" nameId="x27k.6708182213627045681" value="false" />
       <property name="preventNameMangling" nameId="x27k.6708182213627106114" value="true" />
-      <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="3284580646979589014" />
       <node role="type" roleId="mj1l.318113533128716676" type="yq40.PointerType" typeId="yq40.279446265608459824" id="3284580646979589015">
         <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
         <property name="const" nameId="mj1l.2941277002445651368" value="false" />
@@ -1998,7 +1967,6 @@
       <property name="hasEllipsis" nameId="x27k.9066372830132870213" value="false" />
       <property name="extern" nameId="x27k.6708182213627045681" value="true" />
       <property name="preventNameMangling" nameId="x27k.6708182213627106114" value="true" />
-      <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="3284580646979589022" />
       <node role="type" roleId="mj1l.318113533128716676" type="mj1l.IntType" typeId="mj1l.8860443239512128108" id="3284580646979589023">
         <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
         <property name="const" nameId="mj1l.2941277002445651368" value="false" />
@@ -2009,7 +1977,6 @@
       <property name="hasEllipsis" nameId="x27k.9066372830132870213" value="false" />
       <property name="extern" nameId="x27k.6708182213627045681" value="false" />
       <property name="preventNameMangling" nameId="x27k.6708182213627106114" value="true" />
-      <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="3284580646979589024" />
       <node role="type" roleId="mj1l.318113533128716676" type="yq40.PointerType" typeId="yq40.279446265608459824" id="3284580646979589025">
         <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
         <property name="const" nameId="mj1l.2941277002445651368" value="false" />
@@ -2024,7 +1991,6 @@
       <property name="hasEllipsis" nameId="x27k.9066372830132870213" value="false" />
       <property name="extern" nameId="x27k.6708182213627045681" value="false" />
       <property name="preventNameMangling" nameId="x27k.6708182213627106114" value="true" />
-      <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="3284580646979589027" />
       <node role="type" roleId="mj1l.318113533128716676" type="x27k.FunctionRefType" typeId="x27k.8551646674110395547" id="3284580646979589028">
         <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
         <property name="const" nameId="mj1l.2941277002445651368" value="false" />
@@ -2059,7 +2025,6 @@
       <property name="hasEllipsis" nameId="x27k.9066372830132870213" value="false" />
       <property name="extern" nameId="x27k.6708182213627045681" value="false" />
       <property name="preventNameMangling" nameId="x27k.6708182213627106114" value="true" />
-      <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="3284580646979589035" />
       <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="3284580646979589036">
         <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
         <property name="const" nameId="mj1l.2941277002445651368" value="false" />
@@ -2070,7 +2035,6 @@
       <property name="hasEllipsis" nameId="x27k.9066372830132870213" value="false" />
       <property name="extern" nameId="x27k.6708182213627045681" value="false" />
       <property name="preventNameMangling" nameId="x27k.6708182213627106114" value="true" />
-      <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="3284580646979589037" />
       <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="3284580646979589038">
         <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
         <property name="const" nameId="mj1l.2941277002445651368" value="false" />
@@ -2102,7 +2066,6 @@
       <property name="hasEllipsis" nameId="x27k.9066372830132870213" value="false" />
       <property name="extern" nameId="x27k.6708182213627045681" value="false" />
       <property name="preventNameMangling" nameId="x27k.6708182213627106114" value="true" />
-      <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="3284580646979589045" />
       <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="3284580646979589046">
         <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
         <property name="const" nameId="mj1l.2941277002445651368" value="false" />
@@ -2127,7 +2090,6 @@
       <property name="hasEllipsis" nameId="x27k.9066372830132870213" value="false" />
       <property name="extern" nameId="x27k.6708182213627045681" value="false" />
       <property name="preventNameMangling" nameId="x27k.6708182213627106114" value="true" />
-      <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="3284580646979589051" />
       <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="3284580646979589052">
         <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
         <property name="const" nameId="mj1l.2941277002445651368" value="false" />

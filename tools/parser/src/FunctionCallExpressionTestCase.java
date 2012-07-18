@@ -37,8 +37,7 @@ public class FunctionCallExpressionTestCase extends TestCase {
 	public void testBasicTest() throws CoreException {
 	StringBuilder content = new StringBuilder();
 
-	void withBinaryExpressions(int a){
-
+		
 		
 		content.append("void funToCall(int a){\n");
 		content.append("	int8_t localVar;\n");

@@ -43,7 +43,6 @@
     </node>
     <node type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="7798021607625479932">
       <property name="name" nameId="tpck.1169194664001" value="CompMappingDebugHelperUtil" />
-      <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="7798021607625479932" />
     </node>
     <node type="mj1l.TypeSizeConfiguration" typeId="mj1l.3335993110369795380" id="7798021607625479934" />
   </roots>

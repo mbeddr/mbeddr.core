@@ -310,16 +310,6 @@
           <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="x27k.6708182213627106114" resolveInfo="preventNameMangling" />
         </node>
       </node>
-      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="5114214484368691240">
-        <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Indent" typeId="tpc2.1237303669825" id="5114214484368691241" />
-        <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="5114214484368691242">
-          <property name="text" nameId="tpc2.1073389577007" value="overridden code location" />
-        </node>
-        <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Property" typeId="tpc2.1073389658414" id="5114214484368691244">
-          <property name="allowEmptyText" nameId="tpc2.1140114345053" value="true" />
-          <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="x27k.2688792604368329410" resolveInfo="overriddenCodeLocation" />
-        </node>
-      </node>
     </node>
     <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="7739070532041093236">
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Component" typeId="tpc2.1078939183254" id="6708182213627622733">
