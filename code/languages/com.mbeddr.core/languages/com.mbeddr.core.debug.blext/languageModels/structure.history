@@ -96,5 +96,11 @@
     </dependencies>
     <rename id="talm.2011139961867340775" type="CONCEPT" from="ResolveChildToWatchablesStatement" to="ChildrenToWatchablesStatement" />
   </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="talm" modelUID="r:98c60105-1d91-4aab-8dfe-5ef258ec8eb6(com.mbeddr.core.debug.blext.structure)" version="15" />
+    </dependencies>
+    <rename id="talm.2011139961867340809" type="CHILD" from="nameGenerator" to="namePattern" />
+  </StructureModification>
 </history>
 
