@@ -67,7 +67,6 @@
   <root id="1786180596061180882">
     <node role="contentNode" roleId="tpf8.1092060348987" type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="1786180596061180885">
       <property name="name" nameId="tpck.1169194664001" value="dummy" />
-      <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="1786180596061180885" />
       <node role="contents" roleId="x27k.6437088627575722833" type="clbe.EnumDeclaration" typeId="clbe.8811614583515725851" id="1786180596061285023">
         <property name="name" nameId="tpck.1169194664001" value="statemachineInEvents" />
         <property name="exported" nameId="x27k.1317894735999272944" value="true" />
@@ -89,7 +88,6 @@
       <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="1786180596061180886">
         <property name="name" nameId="tpck.1169194664001" value="executeStatemachine" />
         <property name="exported" nameId="x27k.1317894735999272944" value="true" />
-        <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="1786180596061180886" />
         <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="1786180596061180888">
           <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="8444296659257854434">
             <property name="name" nameId="tpck.1169194664001" value="x" />
@@ -202,7 +200,6 @@
       <node role="ruleConsequence" roleId="tpf8.1169672767469" type="tpf8.InlineTemplateWithContext_RuleConsequence" typeId="tpf8.8900764248744213868" id="4643433264760041254">
         <node role="contentNode" roleId="tpf8.8900764248744213871" type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="4643433264760041279">
           <property name="name" nameId="tpck.1169194664001" value="dummy" />
-          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="4643433264760041279" />
           <node role="contents" roleId="x27k.6437088627575722833" type="clqz.Statemachine" typeId="clqz.5778488248013533809" id="4643433264760856313">
             <property name="name" nameId="tpck.1169194664001" value="DummySM" />
             <link role="initial" roleId="clqz.5778488248013533842" targetNodeId="4643433264760856327" resolveInfo="s1" />
@@ -229,7 +226,6 @@
           <node role="contents" roleId="x27k.6437088627575722833" type="yz9a.TestCase" typeId="yz9a.6275792049641586523" id="4643433264760041362">
             <property name="exported" nameId="x27k.1317894735999272944" value="true" />
             <property name="name" nameId="tpck.1169194664001" value="dummy" />
-            <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="4643433264760041362" />
             <node role="body" roleId="yz9a.6275792049641586525" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="4643433264760041258">
               <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="4643433264760041260">
                 <property name="isInvisible" nameId="c4fa.4643433264760041409" value="true" />
@@ -294,7 +290,6 @@
                     </node>
                   </node>
                   <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="4643433264760041373">
-                    <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="4643433264760041373" />
                     <node role="expr" roleId="yz9a.6275792049641587288" type="clqz.IsInStateExpression" typeId="clqz.2558982571829189197" id="4643433264760041378">
                       <link role="state" roleId="clqz.2558982571829202228" targetNodeId="4643433264760856327" resolveInfo="s1" />
                       <node role="expr" roleId="clqz.2558982571829189198" type="x27k.GlobalVarRef" typeId="x27k.6610873504380357354" id="4643433264760041385">
@@ -364,7 +359,6 @@
   <root id="8444296659257853875">
     <node role="contentNode" roleId="tpf8.1092060348987" type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="8444296659257853877">
       <property name="name" nameId="tpck.1169194664001" value="dummy" />
-      <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="8444296659257853877" />
       <node role="contents" roleId="x27k.6437088627575722833" type="clbe.EnumDeclaration" typeId="clbe.8811614583515725851" id="8444296659257854256">
         <property name="name" nameId="tpck.1169194664001" value="events" />
         <node role="literals" roleId="clbe.8811614583515725857" type="clbe.EnumLiteral" typeId="clbe.8811614583515725853" id="8444296659257854257">
@@ -388,7 +382,6 @@
       </node>
       <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="8444296659257853878">
         <property name="name" nameId="tpck.1169194664001" value="statemachineFunction" />
-        <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="8444296659257853878" />
         <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="8444296659257853879">
           <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.SwitchStatement" typeId="c4fa.3134547887598524924" id="1786180596061285079">
             <node role="expression" roleId="c4fa.3134547887598524925" type="clbe.SUArrowExpression" typeId="clbe.7063398228162571833" id="3073566081776767928">
@@ -967,7 +960,6 @@
   <root id="8444296659257928479">
     <node role="contentNode" roleId="tpf8.1092060348987" type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="8444296659257928480">
       <property name="name" nameId="tpck.1169194664001" value="dummy" />
-      <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="8444296659257928480" />
       <node role="contents" roleId="x27k.6437088627575722833" type="clbe.EnumDeclaration" typeId="clbe.8811614583515725851" id="8444296659257928481">
         <property name="name" nameId="tpck.1169194664001" value="statemachineInEvents" />
         <property name="exported" nameId="x27k.1317894735999272944" value="true" />
@@ -1350,10 +1342,8 @@
       <node role="ruleConsequence" roleId="tpf8.1169672767469" type="tpf8.InlineTemplateWithContext_RuleConsequence" typeId="tpf8.8900764248744213868" id="567269909073854615">
         <node role="contentNode" roleId="tpf8.8900764248744213871" type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="567269909073854617">
           <property name="name" nameId="tpck.1169194664001" value="dummy" />
-          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="567269909073854617" />
           <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="567269909073854619">
             <property name="name" nameId="tpck.1169194664001" value="function" />
-            <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="567269909073854619" />
             <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="567269909073854620">
               <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="567269909073854627">
                 <node role="expr" roleId="c4fa.7254843406768833939" type="x27k.FunctionCall" typeId="x27k.5950410542643524492" id="567269909073854628">
@@ -1424,7 +1414,6 @@
       <node role="ruleConsequence" roleId="tpf8.1169672767469" type="tpf8.InlineTemplateWithContext_RuleConsequence" typeId="tpf8.8900764248744213868" id="2558982571829268618">
         <node role="contentNode" roleId="tpf8.8900764248744213871" type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="2558982571829268620">
           <property name="name" nameId="tpck.1169194664001" value="dummy" />
-          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="2558982571829268620" />
           <node role="contents" roleId="x27k.6437088627575722833" type="clbe.EnumDeclaration" typeId="clbe.8811614583515725851" id="2558982571829268628">
             <property name="name" nameId="tpck.1169194664001" value="stateEnum" />
             <node role="literals" roleId="clbe.8811614583515725857" type="clbe.EnumLiteral" typeId="clbe.8811614583515725853" id="2558982571829268632">
@@ -1452,7 +1441,6 @@
           </node>
           <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="2558982571829268621">
             <property name="name" nameId="tpck.1169194664001" value="dummy" />
-            <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="2558982571829268621" />
             <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="2558982571829268622">
               <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="2558982571829268625">
                 <property name="isInvisible" nameId="c4fa.4643433264760041409" value="true" />
@@ -1782,7 +1770,6 @@
       <node role="ruleConsequence" roleId="tpf8.1169672767469" type="tpf8.InlineTemplateWithContext_RuleConsequence" typeId="tpf8.8900764248744213868" id="7999989049973017149">
         <node role="contentNode" roleId="tpf8.8900764248744213871" type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="7999989049973017150">
           <property name="name" nameId="tpck.1169194664001" value="dummy" />
-          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="7999989049973017150" />
           <node role="contents" roleId="x27k.6437088627575722833" type="clbe.EnumDeclaration" typeId="clbe.8811614583515725851" id="7999989049973017151">
             <property name="name" nameId="tpck.1169194664001" value="eventEnum" />
             <node role="literals" roleId="clbe.8811614583515725857" type="clbe.EnumLiteral" typeId="clbe.8811614583515725853" id="7999989049973017152">
@@ -1797,7 +1784,6 @@
           </node>
           <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="7999989049973017155">
             <property name="name" nameId="tpck.1169194664001" value="smExecutionFunction" />
-            <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="7999989049973017155" />
             <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="7999989049973017156">
               <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="7999989049973017157" />
             </node>
@@ -1831,7 +1817,6 @@
           </node>
           <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="7999989049973017169">
             <property name="name" nameId="tpck.1169194664001" value="someMethod" />
-            <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="7999989049973017169" />
             <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="7999989049973017170">
               <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="7999989049973017171">
                 <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="7999989049973017172">
@@ -2081,7 +2066,6 @@
       <node role="ruleConsequence" roleId="tpf8.1169672767469" type="tpf8.InlineTemplateWithContext_RuleConsequence" typeId="tpf8.8900764248744213868" id="1582169519237884511">
         <node role="contentNode" roleId="tpf8.8900764248744213871" type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="1582169519237884512">
           <property name="name" nameId="tpck.1169194664001" value="dummy" />
-          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="1582169519237884512" />
           <node role="contents" roleId="x27k.6437088627575722833" type="clbe.EnumDeclaration" typeId="clbe.8811614583515725851" id="1582169519237968848">
             <property name="name" nameId="tpck.1169194664001" value="events" />
             <node role="literals" roleId="clbe.8811614583515725857" type="clbe.EnumLiteral" typeId="clbe.8811614583515725853" id="1582169519237968849">
@@ -2105,7 +2089,6 @@
           </node>
           <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="1582169519237968855">
             <property name="name" nameId="tpck.1169194664001" value="statemachineFunction" />
-            <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="1582169519237968855" />
             <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="1582169519237968856">
               <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="1582169519237969115">
                 <node role="expr" roleId="c4fa.7254843406768833939" type="x27k.FunctionCall" typeId="x27k.5950410542643524492" id="1582169519237969116">
@@ -2188,7 +2171,6 @@
       <node role="ruleConsequence" roleId="tpf8.1169672767469" type="tpf8.InlineTemplateWithContext_RuleConsequence" typeId="tpf8.8900764248744213868" id="1582169519237969152">
         <node role="contentNode" roleId="tpf8.8900764248744213871" type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="1582169519237969153">
           <property name="name" nameId="tpck.1169194664001" value="dummy" />
-          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="1582169519237969153" />
           <node role="contents" roleId="x27k.6437088627575722833" type="clbe.EnumDeclaration" typeId="clbe.8811614583515725851" id="1582169519237969154">
             <property name="name" nameId="tpck.1169194664001" value="events" />
             <node role="literals" roleId="clbe.8811614583515725857" type="clbe.EnumLiteral" typeId="clbe.8811614583515725853" id="1582169519237969155">
@@ -2212,7 +2194,6 @@
           </node>
           <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="1582169519237969161">
             <property name="name" nameId="tpck.1169194664001" value="statemachineFunction" />
-            <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="1582169519237969161" />
             <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="1582169519237969162">
               <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="1582169519237969163">
                 <node role="expr" roleId="c4fa.7254843406768833939" type="x27k.FunctionCall" typeId="x27k.5950410542643524492" id="1582169519237969164">
@@ -2314,7 +2295,6 @@
       <node role="ruleConsequence" roleId="tpf8.1169672767469" type="tpf8.InlineTemplateWithContext_RuleConsequence" typeId="tpf8.8900764248744213868" id="7999989049973017015">
         <node role="contentNode" roleId="tpf8.8900764248744213871" type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="7999989049973017016">
           <property name="name" nameId="tpck.1169194664001" value="dummy" />
-          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="7999989049973017016" />
           <node role="contents" roleId="x27k.6437088627575722833" type="clbe.StructDeclaration" typeId="clbe.6394819151180597807" id="7999989049973017020">
             <property name="name" nameId="tpck.1169194664001" value="instanceData2" />
             <node role="members" roleId="clbe.7099329415459888018" type="clbe.Member" typeId="clbe.5882395403881875736" id="1694414027524184107">
@@ -2330,7 +2310,6 @@
           </node>
           <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="7999989049973017035">
             <property name="name" nameId="tpck.1169194664001" value="someMethod" />
-            <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="7999989049973017035" />
             <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="7999989049973017036">
               <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="7999989049973017345">
                 <node role="expr" roleId="c4fa.7254843406768833939" type="clbe.SUDotExpression" typeId="clbe.7063398228162529566" id="3073566081776767627">
@@ -2388,7 +2367,6 @@
       <node role="ruleConsequence" roleId="tpf8.1169672767469" type="tpf8.InlineTemplateWithContext_RuleConsequence" typeId="tpf8.8900764248744213868" id="1786180596061192272">
         <node role="contentNode" roleId="tpf8.8900764248744213871" type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="1786180596061190562">
           <property name="name" nameId="tpck.1169194664001" value="dummy" />
-          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="1786180596061190562" />
           <node role="contents" roleId="x27k.6437088627575722833" type="clbe.StructDeclaration" typeId="clbe.6394819151180597807" id="1786180596061190563">
             <property name="name" nameId="tpck.1169194664001" value="aStruct" />
           </node>
@@ -2427,7 +2405,6 @@
       <node role="ruleConsequence" roleId="tpf8.1169672767469" type="tpf8.InlineTemplateWithContext_RuleConsequence" typeId="tpf8.8900764248744213868" id="1786180596061398445">
         <node role="contentNode" roleId="tpf8.8900764248744213871" type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="1786180596061398447">
           <property name="name" nameId="tpck.1169194664001" value="dummy" />
-          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="1786180596061398447" />
           <node role="contents" roleId="x27k.6437088627575722833" type="clbe.StructDeclaration" typeId="clbe.6394819151180597807" id="1786180596061398448">
             <property name="name" nameId="tpck.1169194664001" value="smData" />
             <node role="members" roleId="clbe.7099329415459888018" type="clbe.Member" typeId="clbe.5882395403881875736" id="1694414027524183463">
@@ -2437,7 +2414,6 @@
           </node>
           <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="1786180596061398454">
             <property name="name" nameId="tpck.1169194664001" value="dummy" />
-            <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="1786180596061398454" />
             <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="1786180596061398455">
               <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="1786180596061398461">
                 <node role="expr" roleId="c4fa.7254843406768833939" type="clbe.SUArrowExpression" typeId="clbe.7063398228162571833" id="3073566081776767919">
@@ -2489,7 +2465,6 @@
       <node role="ruleConsequence" roleId="tpf8.1169672767469" type="tpf8.InlineTemplateWithContext_RuleConsequence" typeId="tpf8.8900764248744213868" id="2558982571829250851">
         <node role="contentNode" roleId="tpf8.8900764248744213871" type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="2558982571829250853">
           <property name="name" nameId="tpck.1169194664001" value="dummy" />
-          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="2558982571829250853" />
           <node role="contents" roleId="x27k.6437088627575722833" type="clbe.EnumDeclaration" typeId="clbe.8811614583515725851" id="2558982571829250881">
             <property name="name" nameId="tpck.1169194664001" value="states" />
             <node role="literals" roleId="clbe.8811614583515725857" type="clbe.EnumLiteral" typeId="clbe.8811614583515725853" id="2558982571829250882">
@@ -2513,7 +2488,6 @@
           </node>
           <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="2558982571829250860">
             <property name="name" nameId="tpck.1169194664001" value="dummy" />
-            <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="2558982571829250860" />
             <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="2558982571829250861">
               <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.IfStatement" typeId="c4fa.6275792049641600983" id="2558982571829250865">
                 <node role="condition" roleId="c4fa.6275792049641600984" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="2558982571829253145">
@@ -2577,10 +2551,8 @@
       <node role="ruleConsequence" roleId="tpf8.1169672767469" type="tpf8.InlineTemplateWithContext_RuleConsequence" typeId="tpf8.8900764248744213868" id="2558982571829266444">
         <node role="contentNode" roleId="tpf8.8900764248744213871" type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="2558982571829266446">
           <property name="name" nameId="tpck.1169194664001" value="dummy" />
-          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="2558982571829266446" />
           <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="2558982571829266447">
             <property name="name" nameId="tpck.1169194664001" value="dummy2" />
-            <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="2558982571829266447" />
             <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="2558982571829266448">
               <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="4721521648558248416">
                 <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.ParensExpression" typeId="mj1l.5763383285156533447" id="4721521648558250796">

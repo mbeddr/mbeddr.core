@@ -12,7 +12,6 @@
   <roots>
     <node type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="1302968767135057298">
       <property name="name" nameId="tpck.1169194664001" value="Components" />
-      <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="1302968767135057298" />
     </node>
     <node type="mj1l.TypeSizeConfiguration" typeId="mj1l.3335993110369795380" id="7496733358578266352" />
   </roots>
@@ -51,7 +50,6 @@
       </node>
       <node role="contents" roleId="v7ag.4491876417845641672" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="1302968767135058849">
         <property name="name" nameId="tpck.1169194664001" value="receive_licht_init" />
-        <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="1302968767135058849" />
         <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="1302968767135058850">
           <node role="statements" roleId="c4fa.4185783222026475862" type="v7ag.WithPortStatement" typeId="v7ag.5308710777891663531" id="1302968767135217973">
             <link role="port" roleId="v7ag.5308710777891663532" targetNodeId="1302968767135217970" resolveInfo="demo" />
@@ -77,7 +75,6 @@
       </node>
       <node role="contents" roleId="v7ag.4491876417845641672" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="5104882350373539414">
         <property name="name" nameId="tpck.1169194664001" value="receive_licht_somebodyWalkedThrough" />
-        <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="5104882350373539414" />
         <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="5104882350373539415">
           <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="5104882350373539416" />
         </node>
@@ -89,7 +86,6 @@
       </node>
       <node role="contents" roleId="v7ag.4491876417845641672" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="5104882350373539421">
         <property name="name" nameId="tpck.1169194664001" value="receive_licht_newDayResetCounter" />
-        <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="5104882350373539421" />
         <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="5104882350373539422">
           <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="5104882350373539423" />
         </node>

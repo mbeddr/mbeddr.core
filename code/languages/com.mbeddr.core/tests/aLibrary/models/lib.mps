@@ -12,20 +12,17 @@
   <roots>
     <node type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="1579201292659807720">
       <property name="name" nameId="tpck.1169194664001" value="MathLib" />
-      <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="1579201292659807720" />
     </node>
     <node type="mj1l.TypeSizeConfiguration" typeId="mj1l.3335993110369795380" id="1579201292659807730" />
     <node type="51wr.BuildConfiguration" typeId="51wr.7717755763392524104" id="2671893947946166811" />
     <node type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="2671893947946267782">
       <property name="name" nameId="tpck.1169194664001" value="AnotherOne" />
-      <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="2671893947946267782" />
     </node>
   </roots>
   <root id="1579201292659807720">
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="1579201292659807721">
       <property name="name" nameId="tpck.1169194664001" value="add" />
       <property name="exported" nameId="x27k.1317894735999272944" value="true" />
-      <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="1579201292659807721" />
       <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="1579201292659807722">
         <node role="statements" roleId="c4fa.4185783222026475862" type="x27k.ReturnStatement" typeId="x27k.8967919205527146149" id="1579201292659807763">
           <node role="expression" roleId="x27k.8967919205527146150" type="mj1l.PlusExpression" typeId="mj1l.5763383285156373013" id="1579201292659807765">
@@ -140,7 +137,6 @@
   <root id="2671893947946267782">
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="2671893947946267783">
       <property name="name" nameId="tpck.1169194664001" value="dosSomething" />
-      <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="2671893947946267783" />
       <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="2671893947946267784">
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="2671893947946267785" />
       </node>

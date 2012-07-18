@@ -13,15 +13,12 @@
   <roots>
     <node type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="6610873504380353744">
       <property name="name" nameId="tpck.1169194664001" value="GlobalModule1" />
-      <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="6610873504380353744" />
     </node>
     <node type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="6610873504380377800">
       <property name="name" nameId="tpck.1169194664001" value="GlobalModule2" />
-      <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="6610873504380377800" />
     </node>
     <node type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="6610873504380381185">
       <property name="name" nameId="tpck.1169194664001" value="Driver" />
-      <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="6610873504380381185" />
     </node>
     <node type="51wr.BuildConfiguration" typeId="51wr.7717755763392524104" id="6610873504380384110" />
     <node type="mj1l.TypeSizeConfiguration" typeId="mj1l.3335993110369795380" id="7496733358578280435" />
@@ -43,7 +40,6 @@
     <node role="contents" roleId="x27k.6437088627575722833" type="yz9a.TestCase" typeId="yz9a.6275792049641586523" id="6610873504380357353">
       <property name="exported" nameId="x27k.1317894735999272944" value="true" />
       <property name="name" nameId="tpck.1169194664001" value="testglobalvar" />
-      <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="6610873504380357353" />
       <node role="body" roleId="yz9a.6275792049641586525" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="6610873504380357351">
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="919907841933045770">
           <node role="expr" roleId="c4fa.7254843406768833939" type="x27k.FunctionCall" typeId="x27k.5950410542643524492" id="919907841933045771">
@@ -130,7 +126,6 @@
     <node role="contents" roleId="x27k.6437088627575722833" type="yz9a.TestCase" typeId="yz9a.6275792049641586523" id="3788988821852189007">
       <property name="exported" nameId="x27k.1317894735999272944" value="true" />
       <property name="name" nameId="tpck.1169194664001" value="testglobalconst" />
-      <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="3788988821852189007" />
       <node role="body" roleId="yz9a.6275792049641586525" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="3788988821852189008">
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="3788988821852189009">
           <property name="name" nameId="tpck.1169194664001" value="x1" />
@@ -196,7 +191,6 @@
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="919907841932882857">
       <property name="name" nameId="tpck.1169194664001" value="initGlobal" />
       <property name="exported" nameId="x27k.1317894735999272944" value="true" />
-      <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="919907841932882857" />
       <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="919907841932882858">
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="22102029902643350">
           <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.AssignmentExpr" typeId="mj1l.22102029902365709" id="22102029902643351">
@@ -216,7 +210,6 @@
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="6610873504380384101">
       <property name="name" nameId="tpck.1169194664001" value="main" />
       <property name="exported" nameId="x27k.1317894735999272944" value="true" />
-      <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="6610873504380384101" />
       <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="6610873504380384102">
         <node role="statements" roleId="c4fa.4185783222026475862" type="x27k.ReturnStatement" typeId="x27k.8967919205527146149" id="4803851085316453346">
           <node role="expression" roleId="x27k.8967919205527146150" type="yz9a.ExecuteTestExpression" typeId="yz9a.186853311768094629" id="6610873504380384108">
