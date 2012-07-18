@@ -525,6 +525,12 @@
       <property name="virtualPackage" nameId="tpck.1193676396447" value="types" />
       <property name="name" nameId="tpck.1169194664001" value="IUnsigned" />
     </node>
+    <node type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="8515777736166427325">
+      <property name="name" nameId="tpck.1169194664001" value="IOnlyInInitialization" />
+    </node>
+    <node type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="8515777736166452576">
+      <property name="name" nameId="tpck.1169194664001" value="IInitializationContext" />
+    </node>
   </roots>
   <root id="8860443239512128050">
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="356284525549555981">
@@ -1936,5 +1942,7 @@
     </node>
   </root>
   <root id="7058269619789050743" />
+  <root id="8515777736166427325" />
+  <root id="8515777736166452576" />
 </model>
 

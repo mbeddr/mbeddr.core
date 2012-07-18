@@ -232,6 +232,9 @@
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="8628579007224197660">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="vs0r.8628579007224192794" resolveInfo="INameFirstCharLowerCase" />
     </node>
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="8515777736166452810">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="mj1l.8515777736166452576" resolveInfo="IInitializationContext" />
+    </node>
   </root>
   <root id="4185783222026475861">
     <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="4643433264760041409">
@@ -717,6 +720,9 @@
   <root id="5095889050031622570">
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="2400440333613554307">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="vs0r.3857533489766146432" resolveInfo="IDocumentable" />
+    </node>
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="8515777736166452816">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="mj1l.8515777736166427325" resolveInfo="IOnlyInInitialization" />
     </node>
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="5095889050031622571">
       <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
