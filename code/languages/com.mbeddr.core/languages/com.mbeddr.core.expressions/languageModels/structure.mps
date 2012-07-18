@@ -1921,6 +1921,9 @@
       <property name="value" nameId="tpce.1105725713309" value="100" />
       <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="5763383285156530264" resolveInfo="priolevel" />
     </node>
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="8515777736165918204">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="3073566081776926439" resolveInfo="IContextTypeProvider" />
+    </node>
   </root>
   <root id="3073566081776926439" />
   <root id="7265792597306864412">

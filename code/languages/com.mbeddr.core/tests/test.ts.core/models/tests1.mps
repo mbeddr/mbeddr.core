@@ -1924,7 +1924,7 @@
           <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="5708867820622277813" />
           <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="vs0r.ElementDocumentation" typeId="vs0r.3857533489766146428" id="154287305787827071">
             <node role="parts" roleId="vs0r.3857533489766836837" type="vs0r.DocPart" typeId="vs0r.3857533489766836826" id="154287305787827072">
-              <property name="text" nameId="vs0r.3857533489766836827" value="TODO(XY) here is some text" />
+              <property name="text" nameId="vs0r.3857533489766836827" value="TODO(XY) here is some textsldkfjsödjflsdj lsdkjf lsdkfj " />
             </node>
           </node>
         </node>
