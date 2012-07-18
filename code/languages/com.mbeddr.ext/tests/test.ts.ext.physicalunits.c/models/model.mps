@@ -289,11 +289,11 @@
                   <link role="ref" roleId="ym4j.8099136929591173608" targetNodeId="5513256947824585484" resolveInfo="N" />
                 </node>
               </node>
-              <node role="init" roleId="c4fa.4185783222026502647" type="3c6d.LiteralWithUnit" typeId="3c6d.5513256947824592491" id="9108052991585889639">
-                <node role="unit" roleId="3c6d.5513256947824592493" type="ym4j.UnitDeclarationRef" typeId="ym4j.8099136929591173606" id="9108052991585889640">
+              <node role="init" roleId="c4fa.4185783222026502647" type="3c6d.LiteralWithUnit" typeId="3c6d.5513256947824592491" id="5894767189291971012">
+                <node role="unit" roleId="3c6d.5513256947824592493" type="ym4j.UnitDeclarationRef" typeId="ym4j.8099136929591173606" id="5894767189291971013">
                   <link role="ref" roleId="ym4j.8099136929591173608" targetNodeId="5513256947824585484" resolveInfo="N" />
                 </node>
-                <node role="value" roleId="3c6d.5513256947824592492" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="9108052991585889641">
+                <node role="value" roleId="3c6d.5513256947824592492" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="5894767189291971011">
                   <property name="value" nameId="mj1l.8860443239512128104" value="3" />
                 </node>
               </node>
@@ -394,14 +394,9 @@
                 </node>
               </node>
               <node role="init" roleId="c4fa.4185783222026502647" type="mj1l.MultiExpression" typeId="mj1l.5763383285156373020" id="9108052991586046643">
-                <node role="right" roleId="mj1l.8860443239512128065" type="3c6d.LiteralWithUnit" typeId="3c6d.5513256947824592491" id="9108052991586046649">
-                  <node role="unit" roleId="3c6d.5513256947824592493" type="ym4j.CompositeUnitDeclaration" typeId="ym4j.3801772042669047863" id="9108052991586046651">
-                    <node role="components" roleId="ym4j.3801772042669047864" type="ym4j.UnitWithExponent" typeId="ym4j.3801772042669047322" id="9108052991586046652">
-                      <property name="exponent" nameId="ym4j.3801772042669047325" value="1" />
-                      <node role="unit" roleId="ym4j.3801772042669047323" type="ym4j.SIMetre" typeId="ym4j.3801772042669047305" id="9108052991586046654" />
-                    </node>
-                  </node>
-                  <node role="value" roleId="3c6d.5513256947824592492" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="9108052991586046646">
+                <node role="right" roleId="mj1l.8860443239512128065" type="3c6d.LiteralWithUnit" typeId="3c6d.5513256947824592491" id="5894767189291971321">
+                  <node role="unit" roleId="3c6d.5513256947824592493" type="ym4j.SIMetre" typeId="ym4j.3801772042669047305" id="5894767189291971322" />
+                  <node role="value" roleId="3c6d.5513256947824592492" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="5894767189291971318">
                     <property name="value" nameId="mj1l.8860443239512128104" value="3" />
                   </node>
                 </node>
@@ -417,9 +412,9 @@
                 <node role="valueType" roleId="3c6d.5513256947824503029" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="9108052991585889652" />
                 <node role="unit" roleId="3c6d.5513256947824503030" type="ym4j.SICandela" typeId="ym4j.3801772042669047316" id="9108052991585889653" />
               </node>
-              <node role="init" roleId="c4fa.4185783222026502647" type="3c6d.LiteralWithUnit" typeId="3c6d.5513256947824592491" id="9108052991585889654">
-                <node role="unit" roleId="3c6d.5513256947824592493" type="ym4j.SICandela" typeId="ym4j.3801772042669047316" id="9108052991585889655" />
-                <node role="value" roleId="3c6d.5513256947824592492" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="9108052991585889656">
+              <node role="init" roleId="c4fa.4185783222026502647" type="3c6d.LiteralWithUnit" typeId="3c6d.5513256947824592491" id="5894767189292013633">
+                <node role="unit" roleId="3c6d.5513256947824592493" type="ym4j.SICandela" typeId="ym4j.3801772042669047316" id="5894767189292013634" />
+                <node role="value" roleId="3c6d.5513256947824592492" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="5894767189292013630">
                   <property name="value" nameId="mj1l.8860443239512128104" value="0" />
                 </node>
               </node>
