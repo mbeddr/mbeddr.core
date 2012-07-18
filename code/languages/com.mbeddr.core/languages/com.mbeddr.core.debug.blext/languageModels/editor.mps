@@ -46,6 +46,10 @@
       <property name="virtualPackage" nameId="tpck.1193676396447" value="watches.types" />
       <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="talm.2011139961867522368" resolveInfo="IdentifierExpression" />
     </node>
+    <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="6804989120607243651">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="watches.mapping" />
+      <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="talm.6804989120607243650" resolveInfo="VariableKindExpression" />
+    </node>
   </roots>
   <root id="8344177855845759729">
     <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="8344177855845759733">
@@ -168,8 +172,8 @@
         <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="8236113172499118462">
           <property name="text" nameId="tpc2.1073389577007" value="C variable kind" />
         </node>
-        <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Property" typeId="tpc2.1073389658414" id="8519572659617442844">
-          <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="talm.8236113172499161521" resolveInfo="variableKind" />
+        <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Property" typeId="tpc2.1073389658414" id="6804989120607256931">
+          <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="talm.6804989120607256930" resolveInfo="variableKind" />
         </node>
         <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.IndentLayoutNewLineStyleClassItem" typeId="tpc2.1237308012275" id="8236113172499118464">
           <property name="flag" nameId="tpc2.1186414551515" value="true" />
@@ -321,6 +325,11 @@
   <root id="2011139961867522369">
     <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="2011139961867522371">
       <property name="text" nameId="tpc2.1073389577007" value="child-identifier" />
+    </node>
+  </root>
+  <root id="6804989120607243651">
+    <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Property" typeId="tpc2.1073389658414" id="6804989120607243655">
+      <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="talm.6804989120607243654" resolveInfo="kind" />
     </node>
   </root>
 </model>

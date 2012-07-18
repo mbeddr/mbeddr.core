@@ -44,11 +44,6 @@
       <property name="name" nameId="tpck.1169194664001" value="MapByNameStatement" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpee.1068580123157" resolveInfo="Statement" />
     </node>
-    <node type="tpce.EnumerationDataTypeDeclaration" typeId="tpce.1082978164219" id="8236113172499140973">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="watches.mapping" />
-      <property name="name" nameId="tpck.1169194664001" value="VariableKind" />
-      <link role="memberDataType" roleId="tpce.1083171729157" targetNodeId="tpck.1082983041843" resolveInfo="string" />
-    </node>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="8236113172499363381">
       <property name="virtualPackage" nameId="tpck.1193676396447" value="watches.mapping" />
       <property name="name" nameId="tpck.1169194664001" value="MapToSimpleVariable" />
@@ -68,6 +63,16 @@
       <property name="virtualPackage" nameId="tpck.1193676396447" value="watches.types" />
       <property name="name" nameId="tpck.1169194664001" value="IdentifierExpression" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpee.1068431790191" resolveInfo="Expression" />
+    </node>
+    <node type="tpce.EnumerationDataTypeDeclaration" typeId="tpce.1082978164219" id="8236113172499140973">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="watches.mapping" />
+      <property name="name" nameId="tpck.1169194664001" value="VariableKind" />
+      <link role="memberDataType" roleId="tpce.1083171729157" targetNodeId="tpck.1082983041843" resolveInfo="string" />
+    </node>
+    <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="6804989120607243650">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="watches.mapping" />
+      <property name="name" nameId="tpck.1169194664001" value="VariableKindExpression" />
+      <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
     </node>
   </roots>
   <root id="8344177855845759727">
@@ -126,7 +131,7 @@
     </node>
   </root>
   <root id="8483575004407084862">
-    <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="8236113172499161521">
+    <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="6804989120607256930">
       <property name="name" nameId="tpck.1169194664001" value="variableKind" />
       <link role="dataType" roleId="tpce.1082985295845" targetNodeId="8236113172499140973" resolveInfo="VariableKind" />
     </node>
@@ -172,20 +177,6 @@
     </node>
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="8483575004407121864">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="2513598210665128822" resolveInfo="IWatchStuff" />
-    </node>
-  </root>
-  <root id="8236113172499140973">
-    <node role="member" roleId="tpce.1083172003582" type="tpce.EnumerationMemberDeclaration" typeId="tpce.1083171877298" id="8236113172499140974">
-      <property name="externalValue" nameId="tpce.1083923523172" value="local variable" />
-      <property name="internalValue" nameId="tpce.1083923523171" value="VariableType.GLOBAL" />
-    </node>
-    <node role="member" roleId="tpce.1083172003582" type="tpce.EnumerationMemberDeclaration" typeId="tpce.1083171877298" id="8236113172499152760">
-      <property name="externalValue" nameId="tpce.1083923523172" value="global variable" />
-      <property name="internalValue" nameId="tpce.1083923523171" value="VariableType.LOCAL" />
-    </node>
-    <node role="member" roleId="tpce.1083172003582" type="tpce.EnumerationMemberDeclaration" typeId="tpce.1083171877298" id="8236113172499152762">
-      <property name="externalValue" nameId="tpce.1083923523172" value="argument" />
-      <property name="internalValue" nameId="tpce.1083923523171" value="VariableType.ARGUMENT" />
     </node>
   </root>
   <root id="8236113172499363381">
@@ -252,6 +243,26 @@
     <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="2011139961867537032">
       <property name="value" nameId="tpce.1105725733873" value="identifier" />
       <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473891462" resolveInfo="alias" />
+    </node>
+  </root>
+  <root id="8236113172499140973">
+    <node role="member" roleId="tpce.1083172003582" type="tpce.EnumerationMemberDeclaration" typeId="tpce.1083171877298" id="8236113172499140974">
+      <property name="externalValue" nameId="tpce.1083923523172" value="local variable" />
+      <property name="internalValue" nameId="tpce.1083923523171" value="local" />
+    </node>
+    <node role="member" roleId="tpce.1083172003582" type="tpce.EnumerationMemberDeclaration" typeId="tpce.1083171877298" id="8236113172499152760">
+      <property name="externalValue" nameId="tpce.1083923523172" value="global variable" />
+      <property name="internalValue" nameId="tpce.1083923523171" value="global" />
+    </node>
+    <node role="member" roleId="tpce.1083172003582" type="tpce.EnumerationMemberDeclaration" typeId="tpce.1083171877298" id="8236113172499152762">
+      <property name="externalValue" nameId="tpce.1083923523172" value="argument" />
+      <property name="internalValue" nameId="tpce.1083923523171" value="argument" />
+    </node>
+  </root>
+  <root id="6804989120607243650">
+    <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="6804989120607243654">
+      <property name="name" nameId="tpck.1169194664001" value="kind" />
+      <link role="dataType" roleId="tpce.1082985295845" targetNodeId="8236113172499140973" resolveInfo="VariableKind" />
     </node>
   </root>
 </model>
