@@ -13,9 +13,11 @@
   <roots>
     <node type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="2688792604367947977">
       <property name="name" nameId="tpck.1169194664001" value="Test" />
+      <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="2688792604367947977" />
     </node>
     <node type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="3769661359949396982">
       <property name="name" nameId="tpck.1169194664001" value="M1" />
+      <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="3769661359949396982" />
     </node>
     <node type="51wr.BuildConfiguration" typeId="51wr.7717755763392524104" id="767515563077267831" />
     <node type="mj1l.TypeSizeConfiguration" typeId="mj1l.3335993110369795380" id="7496733358578266352" />
@@ -24,6 +26,7 @@
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="2688792604368027920">
       <property name="name" nameId="tpck.1169194664001" value="main" />
       <property name="exported" nameId="x27k.1317894735999272944" value="true" />
+      <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="2688792604368027920" />
       <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="2688792604368027921">
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="3769661359949400149">
           <property name="name" nameId="tpck.1169194664001" value="y" />
@@ -129,6 +132,7 @@
       <property name="name" nameId="tpck.1169194664001" value="aFunction" />
       <property name="hasEllipsis" nameId="x27k.9066372830132870213" value="false" />
       <property name="exported" nameId="x27k.1317894735999272944" value="true" />
+      <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="2688792604367964817" />
       <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="2688792604367964818">
         <node role="statements" roleId="c4fa.4185783222026475862" type="k146.ReportStatement" typeId="k146.2688792604367964821" id="2688792604368121160">
           <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="2688792604368121160" />

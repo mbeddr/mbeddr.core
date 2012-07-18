@@ -30,6 +30,7 @@
     <node type="x27k.ExternalModule" typeId="x27k.6116558314501417921" id="2793628427657880591">
       <property name="name" nameId="tpck.1169194664001" value="p24HJ64GP204" />
       <property name="virtualPackage" nameId="tpck.1193676396447" value="" />
+      <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="2793628427657880591" />
     </node>
   </roots>
   <root id="9057797376940055024">

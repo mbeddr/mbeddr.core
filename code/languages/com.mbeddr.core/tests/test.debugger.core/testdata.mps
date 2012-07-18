@@ -19,6 +19,7 @@
     <node type="51wr.BuildConfiguration" typeId="51wr.7717755763392524104" id="7469932353719541919" />
     <node type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="7469932353719541946">
       <property name="name" nameId="tpck.1169194664001" value="Main" />
+      <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="7469932353719541946" />
     </node>
     <node type="mj1l.TypeSizeConfiguration" typeId="mj1l.3335993110369795380" id="7469932353719541920" />
   </roots>
@@ -46,6 +47,7 @@
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="7469932353719541957">
       <property name="name" nameId="tpck.1169194664001" value="main" />
       <property name="exported" nameId="x27k.1317894735999272944" value="true" />
+      <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="7469932353719541957" />
       <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="7469932353719541958">
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="7469932353719541969">
           <property name="name" nameId="tpck.1169194664001" value="aVariable" />
@@ -85,6 +87,7 @@
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="3306844000091386445">
       <property name="name" nameId="tpck.1169194664001" value="sum" />
+      <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="3306844000091386445" />
       <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="3306844000091386446">
         <node role="statements" roleId="c4fa.4185783222026475862" type="x27k.ReturnStatement" typeId="x27k.8967919205527146149" id="3306844000091386454">
           <node role="expression" roleId="x27k.8967919205527146150" type="mj1l.PlusExpression" typeId="mj1l.5763383285156373013" id="3306844000091386458">

@@ -6,7 +6,7 @@
   <language namespace="13744753-c81f-424a-9c1b-cf8943bf4e86(jetbrains.mps.lang.sharedConcepts)" />
   <devkit namespace="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   <import index="skt0" modelUID="r:cd7772f1-c9fe-4c4a-93ce-2a11779f34fe(com.mbeddr.ext.exceptionhandling.structure)" version="5" />
-  <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="0" />
+  <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="1" />
   <import index="ujda" modelUID="r:80b4c780-9553-4c4a-bae4-115a5444171e(com.mbeddr.ext.exceptionhandling.lib.rt)" version="-1" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="tpf8" modelUID="r:00000000-0000-4000-0000-011c895902e8(jetbrains.mps.lang.generator.structure)" version="2" implicit="yes" />
@@ -19,7 +19,7 @@
   <import index="tpcw" modelUID="r:00000000-0000-4000-0000-011c895902bc(jetbrains.mps.lang.sharedConcepts.structure)" version="0" implicit="yes" />
   <import index="yq40" modelUID="r:152b3fc0-83a1-4bab-a8cd-565eb8483785(com.mbeddr.core.pointers.structure)" version="3" implicit="yes" />
   <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="17" implicit="yes" />
-  <import index="clbe" modelUID="r:61d840b4-12c1-49ea-b142-b2a1550a9b15(com.mbeddr.core.udt.structure)" version="5" implicit="yes" />
+  <import index="clbe" modelUID="r:61d840b4-12c1-49ea-b142-b2a1550a9b15(com.mbeddr.core.udt.structure)" version="7" implicit="yes" />
   <roots>
     <node type="tpf8.MappingConfiguration" typeId="tpf8.1095416546421" id="3809480042719653956">
       <property name="name" nameId="tpck.1169194664001" value="main" />
@@ -132,8 +132,10 @@
   <root id="3809480042719654424">
     <node role="contentNode" roleId="tpf8.1092060348987" type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="3682516440041620533">
       <property name="name" nameId="tpck.1169194664001" value="dummy" />
+      <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="3682516440041620533" />
       <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="3809480042719655508">
         <property name="name" nameId="tpck.1169194664001" value="dummy" />
+        <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="3809480042719655508" />
         <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="3809480042719655509">
           <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="3809480042719655516">
             <property name="name" nameId="tpck.1169194664001" value="switchValue" />
@@ -588,6 +590,7 @@
   <root id="5392117418000503244">
     <node role="contentNode" roleId="tpf8.1092060348987" type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="5392117418000503246">
       <property name="name" nameId="tpck.1169194664001" value="dummy" />
+      <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="5392117418000503246" />
       <node role="imports" roleId="x27k.1317894735999304826" type="x27k.ModuleImport" typeId="x27k.1317894735999299713" id="3809480042719656815">
         <link role="module" roleId="x27k.1317894735999299714" targetNodeId="ujda.3682516440041620488" resolveInfo="setjmp" />
         <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.TemplateFragment" typeId="tpf8.1095672379244" id="3809480042719656816" />
@@ -739,8 +742,10 @@
   <root id="6569126290829141943">
     <node role="contentNode" roleId="tpf8.1092060348987" type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="6569126290829142083">
       <property name="name" nameId="tpck.1169194664001" value="dummy" />
+      <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="6569126290829142083" />
       <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="6569126290829142084">
         <property name="name" nameId="tpck.1169194664001" value="dummy" />
+        <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="6569126290829142084" />
         <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="6569126290829142085">
           <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="6569126290829142086">
             <property name="name" nameId="tpck.1169194664001" value="switchValue" />
@@ -817,8 +822,10 @@
   <root id="8552312757272381472">
     <node role="contentNode" roleId="tpf8.1092060348987" type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="8552312757272381475">
       <property name="name" nameId="tpck.1169194664001" value="dummy" />
+      <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="8552312757272381475" />
       <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="8552312757272381476">
         <property name="name" nameId="tpck.1169194664001" value="dummy" />
+        <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="8552312757272381476" />
         <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="8552312757272381477">
           <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="7020824145854523060">
             <node role="expr" roleId="c4fa.7254843406768833939" type="x27k.GlobalVarRef" typeId="x27k.6610873504380357354" id="7020824145854523061">

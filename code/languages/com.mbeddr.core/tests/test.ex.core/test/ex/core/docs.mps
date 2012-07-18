@@ -12,6 +12,7 @@
   <roots>
     <node type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="1679452829930635049">
       <property name="name" nameId="tpck.1169194664001" value="ADocumentedModule" />
+      <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="1679452829930635049" />
     </node>
     <node type="mj1l.TypeSizeConfiguration" typeId="mj1l.3335993110369795380" id="7496733358578266352" />
   </roots>
@@ -33,6 +34,7 @@
     <node role="contents" roleId="x27k.6437088627575722833" type="yz9a.TestCase" typeId="yz9a.6275792049641586523" id="1679452829930635057">
       <property name="exported" nameId="x27k.1317894735999272944" value="true" />
       <property name="name" nameId="tpck.1169194664001" value="TestCase" />
+      <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="1679452829930635057" />
       <node role="body" roleId="yz9a.6275792049641586525" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="1679452829930635058">
         <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="1679452829930635061">
           <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="1679452829930635061" />
