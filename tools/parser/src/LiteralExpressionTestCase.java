@@ -39,8 +39,8 @@ public class LiteralExpressionTestCase extends TestCase {
 
 		
 		
-		content.append("void funToCall(int a, int b, int c){\n");
-		content.append("	\"\"st\"\";\n");
+		content.append("int funToCall(int a, int b, int c){\n");
+		content.append("	return 30;\n");
 		content.append("};\n");
 
 
