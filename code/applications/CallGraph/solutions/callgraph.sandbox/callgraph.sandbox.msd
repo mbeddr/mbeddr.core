@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <solution name="callgraph.sandbox" uuid="9f9801d6-a290-423f-b9c4-c7f68af87a32" compileInMPS="true">
   <models>
-    <modelRoot path="${solution_descriptor}/models" />
     <modelRoot path="${solution_descriptor}/" />
+    <modelRoot path="${solution_descriptor}/models" />
   </models>
   <sourcePath />
   <usedLanguages>
