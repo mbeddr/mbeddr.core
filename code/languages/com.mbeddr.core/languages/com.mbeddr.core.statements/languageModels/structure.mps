@@ -180,6 +180,11 @@
       <property name="name" nameId="tpck.1169194664001" value="NotParsedStatement" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="4185783222026464515" resolveInfo="Statement" />
     </node>
+    <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="1656687801206406078">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="switch" />
+      <property name="name" nameId="tpck.1169194664001" value="CommentedSwitchMember" />
+      <link role="extends" roleId="tpce.1071489389519" targetNodeId="3134547887598524926" resolveInfo="SwitchMember" />
+    </node>
   </roots>
   <root id="4185783222026464515">
     <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="4058325937810995945">
@@ -596,6 +601,13 @@
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="50688722356906599">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="2gv2.568116135000816591" resolveInfo="ISteppable" />
     </node>
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="1656687801206406077">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="vs0r.7024921229556133800" resolveInfo="ICommentable" />
+    </node>
+    <node role="conceptLink" roleId="tpce.1105736949336" type="tpce.ReferenceConceptLink" typeId="tpce.1105736778597" id="1656687801206422585">
+      <link role="conceptLinkDeclaration" roleId="tpce.1105736734721" targetNodeId="vs0r.7024921229556133802" resolveInfo="commentConcept" />
+      <link role="target" roleId="tpce.1105736807942" targetNodeId="1656687801206406078" resolveInfo="CommentedSwitchMember" />
+    </node>
   </root>
   <root id="3134547887598524928">
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="2400440333613121660">
@@ -788,6 +800,11 @@
     <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="2604304000476764369">
       <property name="name" nameId="tpck.1169194664001" value="raw_signature" />
       <link role="dataType" roleId="tpce.1082985295845" targetNodeId="tpck.1082983041843" resolveInfo="string" />
+    </node>
+  </root>
+  <root id="1656687801206406078">
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="1656687801206406079">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="vs0r.7024921229556133803" resolveInfo="ICommentedCode" />
     </node>
   </root>
 </model>
