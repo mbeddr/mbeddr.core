@@ -579,7 +579,7 @@
         </node>
       </node>
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="7851711690674374956">
-        <property name="text" nameId="tpc2.1073389577007" value="int" />
+        <property name="text" nameId="tpc2.1073389577007" value="bounded_int" />
       </node>
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="7851711690674374960">
         <property name="text" nameId="tpc2.1073389577007" value="[" />
