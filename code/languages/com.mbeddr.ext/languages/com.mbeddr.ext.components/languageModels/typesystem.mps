@@ -3,7 +3,7 @@
   <persistence version="7" />
   <language namespace="7a5dda62-9140-4668-ab76-d5ed1746f2b2(jetbrains.mps.lang.typesystem)" />
   <devkit namespace="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
-  <import index="v7ag" modelUID="r:9596407c-f27a-49d3-abde-3a66293c5b61(com.mbeddr.ext.components.structure)" version="3" />
+  <import index="v7ag" modelUID="r:9596407c-f27a-49d3-abde-3a66293c5b61(com.mbeddr.ext.components.structure)" version="4" />
   <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="17" />
   <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="1" />
   <import index="qd6m" modelUID="r:c4c3f7d3-0acf-4671-a134-5fab66c4e637(com.mbeddr.core.modules.behavior)" version="-1" />
@@ -1880,7 +1880,7 @@
             <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="7895713609198607872">
               <property name="name" nameId="tpck.1169194664001" value="wps" />
               <node role="type" roleId="tpee.5680397130376446158" type="tp25.SNodeType" typeId="tp25.1138055754698" id="7895713609198607873">
-                <link role="concept" roleId="tp25.1138405853777" targetNodeId="v7ag.5308710777891663531" resolveInfo="WithPortStatement" />
+                <link role="concept" roleId="tp25.1138405853777" targetNodeId="v7ag.5308710777891663531" resolveInfo="WhenPortConnectedStatement" />
               </node>
               <node role="initializer" roleId="tpee.1068431790190" type="tpee.DotExpression" typeId="tpee.1197027756228" id="5308710777891663649">
                 <node role="operand" roleId="tpee.1197027771414" type="tpd4.ApplicableNodeReference" typeId="tpd4.1174650418652" id="5308710777891663648">
@@ -1889,7 +1889,7 @@
                 <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_GetAncestorOperation" typeId="tp25.1171407110247" id="5308710777891663653">
                   <node role="parameter" roleId="tp25.1144104376918" type="tp25.OperationParm_Concept" typeId="tp25.1144101972840" id="5308710777891663654">
                     <node role="conceptArgument" roleId="tp25.1207343664468" type="tp25.RefConcept_Reference" typeId="tp25.1177026924588" id="5308710777891663657">
-                      <link role="conceptDeclaration" roleId="tp25.1177026940964" targetNodeId="v7ag.5308710777891663531" resolveInfo="WithPortStatement" />
+                      <link role="conceptDeclaration" roleId="tp25.1177026940964" targetNodeId="v7ag.5308710777891663531" resolveInfo="WhenPortConnectedStatement" />
                     </node>
                   </node>
                   <node role="parameter" roleId="tp25.1144104376918" type="tp25.OperationParm_Inclusion" typeId="tp25.1144100932627" id="5308710777891663659" />
@@ -2463,7 +2463,7 @@
                 <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_GetAncestorOperation" typeId="tp25.1171407110247" id="2002654497536685525">
                   <node role="parameter" roleId="tp25.1144104376918" type="tp25.OperationParm_Concept" typeId="tp25.1144101972840" id="2002654497536685526">
                     <node role="conceptArgument" roleId="tp25.1207343664468" type="tp25.RefConcept_Reference" typeId="tp25.1177026924588" id="2002654497536685527">
-                      <link role="conceptDeclaration" roleId="tp25.1177026940964" targetNodeId="v7ag.5308710777891663531" resolveInfo="WithPortStatement" />
+                      <link role="conceptDeclaration" roleId="tp25.1177026940964" targetNodeId="v7ag.5308710777891663531" resolveInfo="WhenPortConnectedStatement" />
                     </node>
                   </node>
                   <node role="parameter" roleId="tp25.1144104376918" type="tp25.OperationParm_Inclusion" typeId="tp25.1144100932627" id="2002654497536685528" />

@@ -12,6 +12,9 @@
     <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="1598382569875775235">
       <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="8yj6.1598382569875775232" resolveInfo="InternalRunnableBinding" />
     </node>
+    <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="1656687801206464453">
+      <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="8yj6.1656687801206464316" resolveInfo="StatemachineInCompsConfigItem" />
+    </node>
   </roots>
   <root id="8663730687027689239">
     <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="8663730687027689241">
@@ -36,6 +39,11 @@
         </node>
       </node>
       <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Indent" typeId="tpc2.1237303669825" id="1598382569875775239" />
+    </node>
+  </root>
+  <root id="1656687801206464453">
+    <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="1656687801206464455">
+      <property name="text" nameId="tpc2.1073389577007" value="statemachines in components" />
     </node>
   </root>
 </model>
