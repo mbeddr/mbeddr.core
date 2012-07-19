@@ -210,6 +210,12 @@
                 <node role="type" roleId="mj1l.318113533128716676" type="clqz.BoundedIntType" typeId="clqz.7851711690674374947" id="5708867820620254076">
                   <property name="min" nameId="clqz.7851711690674374948" value="-100" />
                   <property name="max" nameId="clqz.7851711690674374949" value="100" />
+                  <node role="min" roleId="clqz.1656687801206292530" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="1656687801206329629">
+                    <property name="value" nameId="mj1l.8860443239512128104" value="-100" />
+                  </node>
+                  <node role="max" roleId="clqz.1656687801206292531" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="1656687801206329630">
+                    <property name="value" nameId="mj1l.8860443239512128104" value="100" />
+                  </node>
                 </node>
               </node>
             </node>
