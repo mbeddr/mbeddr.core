@@ -102,5 +102,17 @@
     </dependencies>
     <rename id="talm.2011139961867340809" type="CHILD" from="nameGenerator" to="namePattern" />
   </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="talm" modelUID="r:98c60105-1d91-4aab-8dfe-5ef258ec8eb6(com.mbeddr.core.debug.blext.structure)" version="16" />
+    </dependencies>
+    <rename id="talm.7634928937261243268" type="CONCEPT" from="ValueMappingRule" to="DefaultValueMappingRule" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="talm" modelUID="r:98c60105-1d91-4aab-8dfe-5ef258ec8eb6(com.mbeddr.core.debug.blext.structure)" version="17" />
+    </dependencies>
+    <rename id="talm.7634928937261243268" type="CONCEPT" from="DefaultValueMappingRule" to="ValueMappingRule" />
+  </StructureModification>
 </history>
 
