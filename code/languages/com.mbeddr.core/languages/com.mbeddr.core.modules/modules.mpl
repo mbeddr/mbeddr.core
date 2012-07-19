@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<language namespace="com.mbeddr.core.modules" uuid="6d11763d-483d-4b2b-8efc-09336c1b0001" doNotGenerateAdapters="false">
+<language namespace="com.mbeddr.core.modules" uuid="6d11763d-483d-4b2b-8efc-09336c1b0001" doNotGenerateAdapters="true">
   <models>
     <modelRoot path="${language_descriptor}/languageModels" />
   </models>
@@ -23,6 +23,7 @@
       </usedLanguages>
       <usedDevKits>
         <usedDevKit>fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)</usedDevKit>
+        <usedDevKit>2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)</usedDevKit>
       </usedDevKits>
       <mapping-priorities>
         <mapping-priority-rule kind="strictly_before">

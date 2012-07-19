@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<language namespace="com.mbeddr.ext.components.mock" uuid="36a565f1-3fa0-42d6-baac-f87e209c9789" doNotGenerateAdapters="false">
+<language namespace="com.mbeddr.ext.components.mock" uuid="36a565f1-3fa0-42d6-baac-f87e209c9789" doNotGenerateAdapters="true">
   <models>
     <modelRoot path="${language_descriptor}/languageModels" />
   </models>

@@ -670,9 +670,6 @@
     </node>
   </root>
   <root id="3073566081777391256">
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="3059865549680533484">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="mj1l.3073566081776926439" resolveInfo="IContextTypeProvider" />
-    </node>
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="3073566081777391258">
       <property name="metaClass" nameId="tpce.1071599937831" value="reference" />
       <property name="role" nameId="tpce.1071599776563" value="member" />
@@ -685,6 +682,9 @@
       <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
       <link role="target" roleId="tpce.1071599976176" targetNodeId="mj1l.8860443239512128050" resolveInfo="Expression" />
     </node>
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="3059865549680533484">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="mj1l.3073566081776926439" resolveInfo="IContextTypeProvider" />
+    </node>
   </root>
   <root id="5724839270942479572">
     <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="5724839270942479573">
@@ -696,6 +696,9 @@
     </node>
   </root>
   <root id="3059865549680361316">
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="8515777736166452821">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="mj1l.8515777736166452576" resolveInfo="IInitializationContext" />
+    </node>
     <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="5095889050031607157">
       <property name="value" nameId="tpce.1105725733873" value="{" />
       <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473891462" resolveInfo="alias" />
