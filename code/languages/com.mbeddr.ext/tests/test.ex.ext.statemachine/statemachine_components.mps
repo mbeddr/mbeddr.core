@@ -43,6 +43,10 @@
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="v7ag.AtomicComponent" typeId="v7ag.4491876417845649011" id="4643433264761154525">
       <property name="name" nameId="tpck.1169194664001" value="Comp" />
+      <node role="contents" roleId="v7ag.4491876417845641672" type="v7ag.EmptyComponentContent" typeId="v7ag.8515777736166878876" id="1656687801205828654" />
+      <node role="contents" roleId="v7ag.4491876417845641672" type="v7ag.EmptyComponentContent" typeId="v7ag.8515777736166878876" id="1656687801205828655" />
+      <node role="contents" roleId="v7ag.4491876417845641672" type="v7ag.EmptyComponentContent" typeId="v7ag.8515777736166878876" id="1656687801206010085" />
+      <node role="contents" roleId="v7ag.4491876417845641672" type="v7ag.EmptyComponentContent" typeId="v7ag.8515777736166878876" id="1656687801206010086" />
       <node role="contents" roleId="v7ag.4491876417845641672" type="8yj6.StatemachineComponentAdapter" typeId="8yj6.8663730687027689188" id="4643433264761154528">
         <node role="machine" roleId="8yj6.8663730687027689238" type="clqz.Statemachine" typeId="clqz.5778488248013533809" id="4643433264761154529">
           <property name="name" nameId="tpck.1169194664001" value="Counter" />
@@ -54,6 +58,12 @@
               <node role="type" roleId="mj1l.318113533128716676" type="clqz.BoundedIntType" typeId="clqz.7851711690674374947" id="5708867820620254068">
                 <property name="min" nameId="clqz.7851711690674374948" value="0" />
                 <property name="max" nameId="clqz.7851711690674374949" value="10" />
+                <node role="min" roleId="clqz.1656687801206292530" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="1656687801206329609">
+                  <property name="value" nameId="mj1l.8860443239512128104" value="0" />
+                </node>
+                <node role="max" roleId="clqz.1656687801206292531" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="1656687801206329610">
+                  <property name="value" nameId="mj1l.8860443239512128104" value="10" />
+                </node>
               </node>
             </node>
             <node role="binding" roleId="clqz.4643433264760985275" type="8yj6.InternalRunnableBinding" typeId="8yj6.1598382569875775232" id="1598382569875779405">
@@ -151,6 +161,12 @@
             <node role="type" roleId="mj1l.318113533128716676" type="clqz.BoundedIntType" typeId="clqz.7851711690674374947" id="5708867820620657209">
               <property name="min" nameId="clqz.7851711690674374948" value="0" />
               <property name="max" nameId="clqz.7851711690674374949" value="10" />
+              <node role="min" roleId="clqz.1656687801206292530" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="1656687801206329633">
+                <property name="value" nameId="mj1l.8860443239512128104" value="0" />
+              </node>
+              <node role="max" roleId="clqz.1656687801206292531" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="1656687801206329634">
+                <property name="value" nameId="mj1l.8860443239512128104" value="10" />
+              </node>
             </node>
           </node>
           <node role="inEvents" roleId="clqz.5633981208992632670" type="clqz.InEvent" typeId="clqz.4643433264760980253" id="4643433264761154530">
@@ -164,6 +180,7 @@
           <link role="machine" roleId="clqz.7851711690674263346" targetNodeId="4643433264761154529" resolveInfo="Counter" />
         </node>
       </node>
+      <node role="contents" roleId="v7ag.4491876417845641672" type="v7ag.EmptyComponentContent" typeId="v7ag.8515777736166878876" id="700175690754696024" />
       <node role="contents" roleId="v7ag.4491876417845641672" type="v7ag.Field" typeId="v7ag.5308710777891512019" id="1598382569875779407">
         <property name="name" nameId="tpck.1169194664001" value="reportedValue" />
         <node role="init" roleId="v7ag.5308710777891512022" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="1598382569875779415">
