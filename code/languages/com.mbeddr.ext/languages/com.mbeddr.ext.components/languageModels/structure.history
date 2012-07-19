@@ -31,5 +31,11 @@
     </dependencies>
     <rename id="v7ag.2924520848052679302" type="PROPERTY" from="componentID" to="componentNodeID" />
   </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="v7ag" modelUID="r:9596407c-f27a-49d3-abde-3a66293c5b61(com.mbeddr.ext.components.structure)" version="3" />
+    </dependencies>
+    <rename id="v7ag.5308710777891663531" type="CONCEPT" from="WithPortStatement" to="WhenPortConnectedStatement" />
+  </StructureModification>
 </history>
 
