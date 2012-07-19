@@ -3,7 +3,6 @@
   <persistence version="7" />
   <language namespace="c7a71f54-c501-43f6-b9df-4d99d93797e7(callgraph)" />
   <devkit namespace="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
-  <import index="ctu7" modelUID="r:09b31aec-198d-432f-9199-5ca8b26c4264(callgraph.structure)" version="-1" implicit="yes" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="k146" modelUID="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" version="2" implicit="yes" />
   <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="17" implicit="yes" />
@@ -12,6 +11,7 @@
   <import index="51wr" modelUID="r:b31f1c3c-99aa-4f1e-a329-cba27efb1a6b(com.mbeddr.core.buildconfig.structure)" version="1" implicit="yes" />
   <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="4" implicit="yes" />
   <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="1" implicit="yes" />
+  <import index="ctu7" modelUID="r:09b31aec-198d-432f-9199-5ca8b26c4264(callgraph.structure)" version="-1" implicit="yes" />
   <roots>
     <node type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="8126786480655276272">
       <property name="name" nameId="tpck.1169194664001" value="Module1" />
@@ -95,6 +95,16 @@
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="3603411676145646194">
       <property name="name" nameId="tpck.1169194664001" value="empty_1342677113650_1" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="3603411676145664839">
+      <property name="name" nameId="tpck.1169194664001" value="fun5" />
+      <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="3603411676145664840">
+        <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+        <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+      </node>
+      <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="3603411676145664841">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="3603411676145664842" />
+      </node>
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="8126786480655276307">
       <property name="name" nameId="tpck.1169194664001" value="empty_1330196995028_3" />
@@ -219,7 +229,7 @@
     <node role="configurationItems" roleId="vs0r.4459718605982007338" type="k146.ReportingConfiguration" typeId="k146.4459718605982051949" id="8126786480655276359">
       <node role="strategy" roleId="k146.4459718605982051999" type="k146.PrintfReportingStrategy" typeId="k146.4459718605982051980" id="8126786480655276360" />
     </node>
-    <node role="configurationItems" roleId="vs0r.4459718605982007338" type="ctu7.CallGraphConfigItem" typeId="ctu7.8126786480655274900" id="8126786480655276362" />
+    <node role="configurationItems" roleId="vs0r.4459718605982007338" type="ctu7.CallGraphConfigItem" typeId="ctu7.8126786480655274900" id="3603411676145670664" />
     <node role="binaries" roleId="51wr.5046689135694070731" type="51wr.Executable" typeId="51wr.5046689135693761554" id="8126786480655276363">
       <property name="name" nameId="tpck.1169194664001" value="Dummy" />
       <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="8126786480655276369">
