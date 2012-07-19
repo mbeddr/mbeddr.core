@@ -12,7 +12,7 @@
   <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="1" implicit="yes" />
   <roots>
     <node type="tpee.ClassConcept" typeId="tpee.1068390468198" id="3603411676145589067">
-      <property name="name" nameId="tpck.1169194664001" value="SortHelper" />
+      <property name="name" nameId="tpck.1169194664001" value="DiGraphTopSortHelper" />
     </node>
   </roots>
   <root id="3603411676145589067">
@@ -25,7 +25,7 @@
           <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="3603411676145589073">
             <property name="name" nameId="tpck.1169194664001" value="fromNode" />
             <node role="type" roleId="tpee.5680397130376446158" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="3603411676145589074">
-              <link role="classifier" roleId="tpee.1107535924139" targetNodeId="3603411676145589306" resolveInfo="SortHelper.Node" />
+              <link role="classifier" roleId="tpee.1107535924139" targetNodeId="3603411676145589306" resolveInfo="DiGraphTopSortHelper.Node" />
             </node>
             <node role="initializer" roleId="tpee.1068431790190" type="tp2q.MapElement" typeId="tp2q.1197932370469" id="3603411676145589076">
               <node role="key" roleId="tp2q.1197932525128" type="tpee.ParameterReference" typeId="tpee.1068581242874" id="3603411676145589077">
@@ -43,7 +43,7 @@
               <node role="expression" roleId="tpee.1068580123156" type="tpee.AssignmentExpression" typeId="tpee.1068498886294" id="3603411676145589082">
                 <node role="rValue" roleId="tpee.1068498886297" type="tpee.GenericNewExpression" typeId="tpee.1145552977093" id="3603411676145589083">
                   <node role="creator" roleId="tpee.1145553007750" type="tpee.ClassCreator" typeId="tpee.1212685548494" id="3603411676145589084">
-                    <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="3603411676145589344" resolveInfo="SortHelper.Node" />
+                    <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="3603411676145589344" resolveInfo="DiGraphTopSortHelper.Node" />
                     <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.ParameterReference" typeId="tpee.1068581242874" id="3603411676145589085">
                       <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="3603411676145589125" resolveInfo="from" />
                     </node>
@@ -81,7 +81,7 @@
           <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="3603411676145589097">
             <property name="name" nameId="tpck.1169194664001" value="toNode" />
             <node role="type" roleId="tpee.5680397130376446158" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="3603411676145589098">
-              <link role="classifier" roleId="tpee.1107535924139" targetNodeId="3603411676145589306" resolveInfo="SortHelper.Node" />
+              <link role="classifier" roleId="tpee.1107535924139" targetNodeId="3603411676145589306" resolveInfo="DiGraphTopSortHelper.Node" />
             </node>
             <node role="initializer" roleId="tpee.1068431790190" type="tp2q.MapElement" typeId="tp2q.1197932370469" id="3603411676145589100">
               <node role="key" roleId="tp2q.1197932525128" type="tpee.ParameterReference" typeId="tpee.1068581242874" id="3603411676145589101">
@@ -99,7 +99,7 @@
               <node role="expression" roleId="tpee.1068580123156" type="tpee.AssignmentExpression" typeId="tpee.1068498886294" id="3603411676145589106">
                 <node role="rValue" roleId="tpee.1068498886297" type="tpee.GenericNewExpression" typeId="tpee.1145552977093" id="3603411676145589107">
                   <node role="creator" roleId="tpee.1145553007750" type="tpee.ClassCreator" typeId="tpee.1212685548494" id="3603411676145589108">
-                    <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="3603411676145589344" resolveInfo="SortHelper.Node" />
+                    <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="3603411676145589344" resolveInfo="DiGraphTopSortHelper.Node" />
                     <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.ParameterReference" typeId="tpee.1068581242874" id="3603411676145589109">
                       <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="3603411676145589127" resolveInfo="to" />
                     </node>
@@ -188,7 +188,7 @@
             <property name="name" nameId="tpck.1169194664001" value="nodesToSort" />
             <node role="type" roleId="tpee.5680397130376446158" type="tp2q.SequenceType" typeId="tp2q.1151689724996" id="3603411676145589144">
               <node role="elementType" roleId="tp2q.1151689745422" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="3603411676145589145">
-                <link role="classifier" roleId="tpee.1107535924139" targetNodeId="3603411676145589306" resolveInfo="SortHelper.Node" />
+                <link role="classifier" roleId="tpee.1107535924139" targetNodeId="3603411676145589306" resolveInfo="DiGraphTopSortHelper.Node" />
               </node>
             </node>
             <node role="initializer" roleId="tpee.1068431790190" type="tpee.DotExpression" typeId="tpee.1197027756228" id="3603411676145589146">
@@ -205,13 +205,13 @@
             <property name="name" nameId="tpck.1169194664001" value="nodesWithoutIncomingEdges" />
             <node role="type" roleId="tpee.5680397130376446158" type="tp2q.SetType" typeId="tp2q.1226511727824" id="3603411676145589152">
               <node role="elementType" roleId="tp2q.1226511765987" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="3603411676145589153">
-                <link role="classifier" roleId="tpee.1107535924139" targetNodeId="3603411676145589306" resolveInfo="SortHelper.Node" />
+                <link role="classifier" roleId="tpee.1107535924139" targetNodeId="3603411676145589306" resolveInfo="DiGraphTopSortHelper.Node" />
               </node>
             </node>
             <node role="initializer" roleId="tpee.1068431790190" type="tpee.GenericNewExpression" typeId="tpee.1145552977093" id="3603411676145589154">
               <node role="creator" roleId="tpee.1145553007750" type="tp2q.HashSetCreator" typeId="tp2q.1226516258405" id="3603411676145589155">
                 <node role="elementType" roleId="tp2q.1237721435807" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="3603411676145589156">
-                  <link role="classifier" roleId="tpee.1107535924139" targetNodeId="3603411676145589306" resolveInfo="SortHelper.Node" />
+                  <link role="classifier" roleId="tpee.1107535924139" targetNodeId="3603411676145589306" resolveInfo="DiGraphTopSortHelper.Node" />
                 </node>
               </node>
             </node>
@@ -274,7 +274,7 @@
               <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="3603411676145589183">
                 <property name="name" nameId="tpck.1169194664001" value="n" />
                 <node role="type" roleId="tpee.5680397130376446158" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="3603411676145589184">
-                  <link role="classifier" roleId="tpee.1107535924139" targetNodeId="3603411676145589306" resolveInfo="SortHelper.Node" />
+                  <link role="classifier" roleId="tpee.1107535924139" targetNodeId="3603411676145589306" resolveInfo="DiGraphTopSortHelper.Node" />
                 </node>
                 <node role="initializer" roleId="tpee.1068431790190" type="tpee.DotExpression" typeId="tpee.1197027756228" id="3603411676145589186">
                   <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="3603411676145589187">
@@ -335,7 +335,7 @@
                   <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="3603411676145589212">
                     <property name="name" nameId="tpck.1169194664001" value="e" />
                     <node role="type" roleId="tpee.5680397130376446158" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="3603411676145589213">
-                      <link role="classifier" roleId="tpee.1107535924139" targetNodeId="3603411676145589369" resolveInfo="SortHelper.Edge" />
+                      <link role="classifier" roleId="tpee.1107535924139" targetNodeId="3603411676145589369" resolveInfo="DiGraphTopSortHelper.Edge" />
                     </node>
                     <node role="initializer" roleId="tpee.1068431790190" type="tpee.DotExpression" typeId="tpee.1197027756228" id="3603411676145589214">
                       <node role="operand" roleId="tpee.1197027771414" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="3603411676145589215">
@@ -351,7 +351,7 @@
                   <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="3603411676145589218">
                     <property name="name" nameId="tpck.1169194664001" value="m" />
                     <node role="type" roleId="tpee.5680397130376446158" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="3603411676145589219">
-                      <link role="classifier" roleId="tpee.1107535924139" targetNodeId="3603411676145589306" resolveInfo="SortHelper.Node" />
+                      <link role="classifier" roleId="tpee.1107535924139" targetNodeId="3603411676145589306" resolveInfo="DiGraphTopSortHelper.Node" />
                     </node>
                     <node role="initializer" roleId="tpee.1068431790190" type="tpee.DotExpression" typeId="tpee.1197027756228" id="3603411676145589220">
                       <node role="operand" roleId="tpee.1197027771414" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="3603411676145589221">
@@ -439,7 +439,7 @@
                 <node role="type" roleId="tpee.5680397130376446158" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="3603411676145589254">
                   <link role="classifier" roleId="tpee.1107535924139" targetNodeId="k7g3.~Iterator" resolveInfo="Iterator" />
                   <node role="parameter" roleId="tpee.1109201940907" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="3603411676145589255">
-                    <link role="classifier" roleId="tpee.1107535924139" targetNodeId="3603411676145589369" resolveInfo="SortHelper.Edge" />
+                    <link role="classifier" roleId="tpee.1107535924139" targetNodeId="3603411676145589369" resolveInfo="DiGraphTopSortHelper.Edge" />
                   </node>
                 </node>
                 <node role="initializer" roleId="tpee.1068431790190" type="tpee.DotExpression" typeId="tpee.1197027756228" id="3603411676145589256">
@@ -542,7 +542,7 @@
       <node role="initializer" roleId="tpee.1068431790190" type="tpee.GenericNewExpression" typeId="tpee.1145552977093" id="3603411676145589299">
         <node role="creator" roleId="tpee.1145553007750" type="tp2q.HashMapCreator" typeId="tp2q.1197686869805" id="3603411676145589300">
           <node role="valueType" roleId="tp2q.1197687035757" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="3603411676145589302">
-            <link role="classifier" roleId="tpee.1107535924139" targetNodeId="3603411676145589306" resolveInfo="SortHelper.Node" />
+            <link role="classifier" roleId="tpee.1107535924139" targetNodeId="3603411676145589306" resolveInfo="DiGraphTopSortHelper.Node" />
           </node>
           <node role="keyType" roleId="tp2q.1197687026896" type="tp25.SNodeType" typeId="tp25.1138055754698" id="3603411676145590788">
             <link role="concept" roleId="tp25.1138405853777" targetNodeId="x27k.6437088627575722831" resolveInfo="IModuleContent" />
@@ -554,7 +554,7 @@
           <link role="concept" roleId="tp25.1138405853777" targetNodeId="x27k.6437088627575722831" resolveInfo="IModuleContent" />
         </node>
         <node role="valueType" roleId="tp2q.1197683475734" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="3603411676145589305">
-          <link role="classifier" roleId="tpee.1107535924139" targetNodeId="3603411676145589306" resolveInfo="SortHelper.Node" />
+          <link role="classifier" roleId="tpee.1107535924139" targetNodeId="3603411676145589306" resolveInfo="DiGraphTopSortHelper.Node" />
         </node>
       </node>
     </node>
@@ -570,11 +570,11 @@
             <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="3603411676145589312">
               <property name="name" nameId="tpck.1169194664001" value="e" />
               <node role="type" roleId="tpee.5680397130376446158" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="3603411676145589313">
-                <link role="classifier" roleId="tpee.1107535924139" targetNodeId="3603411676145589369" resolveInfo="SortHelper.Edge" />
+                <link role="classifier" roleId="tpee.1107535924139" targetNodeId="3603411676145589369" resolveInfo="DiGraphTopSortHelper.Edge" />
               </node>
               <node role="initializer" roleId="tpee.1068431790190" type="tpee.GenericNewExpression" typeId="tpee.1145552977093" id="3603411676145589314">
                 <node role="creator" roleId="tpee.1145553007750" type="tpee.ClassCreator" typeId="tpee.1212685548494" id="3603411676145589315">
-                  <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="3603411676145589377" resolveInfo="SortHelper.Edge" />
+                  <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="3603411676145589377" resolveInfo="DiGraphTopSortHelper.Edge" />
                   <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.ThisExpression" typeId="tpee.1070475354124" id="3603411676145589316" />
                   <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.ParameterReference" typeId="tpee.1068581242874" id="3603411676145589317">
                     <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="3603411676145589330" resolveInfo="node" />
@@ -616,7 +616,7 @@
         <node role="parameter" roleId="tpee.1068580123134" type="tpee.ParameterDeclaration" typeId="tpee.1068498886292" id="3603411676145589330">
           <property name="name" nameId="tpck.1169194664001" value="node" />
           <node role="type" roleId="tpee.5680397130376446158" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="3603411676145589331">
-            <link role="classifier" roleId="tpee.1107535924139" targetNodeId="3603411676145589306" resolveInfo="SortHelper.Node" />
+            <link role="classifier" roleId="tpee.1107535924139" targetNodeId="3603411676145589306" resolveInfo="DiGraphTopSortHelper.Node" />
           </node>
         </node>
       </node>
@@ -632,7 +632,7 @@
         <node role="visibility" roleId="tpee.1178549979242" type="tpee.PrivateVisibility" typeId="tpee.1146644623116" id="3603411676145589336" />
         <node role="type" roleId="tpee.5680397130376446158" type="tp2q.SetType" typeId="tp2q.1226511727824" id="3603411676145589337">
           <node role="elementType" roleId="tp2q.1226511765987" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="3603411676145589338">
-            <link role="classifier" roleId="tpee.1107535924139" targetNodeId="3603411676145589369" resolveInfo="SortHelper.Edge" />
+            <link role="classifier" roleId="tpee.1107535924139" targetNodeId="3603411676145589369" resolveInfo="DiGraphTopSortHelper.Edge" />
           </node>
         </node>
       </node>
@@ -641,7 +641,7 @@
         <node role="visibility" roleId="tpee.1178549979242" type="tpee.PrivateVisibility" typeId="tpee.1146644623116" id="3603411676145589340" />
         <node role="type" roleId="tpee.5680397130376446158" type="tp2q.SetType" typeId="tp2q.1226511727824" id="3603411676145589341">
           <node role="elementType" roleId="tp2q.1226511765987" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="3603411676145589342">
-            <link role="classifier" roleId="tpee.1107535924139" targetNodeId="3603411676145589369" resolveInfo="SortHelper.Edge" />
+            <link role="classifier" roleId="tpee.1107535924139" targetNodeId="3603411676145589369" resolveInfo="DiGraphTopSortHelper.Edge" />
           </node>
         </node>
       </node>
@@ -668,7 +668,7 @@
               <node role="rValue" roleId="tpee.1068498886297" type="tpee.GenericNewExpression" typeId="tpee.1145552977093" id="3603411676145589356">
                 <node role="creator" roleId="tpee.1145553007750" type="tp2q.HashSetCreator" typeId="tp2q.1226516258405" id="3603411676145589357">
                   <node role="elementType" roleId="tp2q.1237721435807" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="3603411676145589358">
-                    <link role="classifier" roleId="tpee.1107535924139" targetNodeId="3603411676145589369" resolveInfo="SortHelper.Edge" />
+                    <link role="classifier" roleId="tpee.1107535924139" targetNodeId="3603411676145589369" resolveInfo="DiGraphTopSortHelper.Edge" />
                   </node>
                 </node>
               </node>
@@ -682,7 +682,7 @@
               <node role="rValue" roleId="tpee.1068498886297" type="tpee.GenericNewExpression" typeId="tpee.1145552977093" id="3603411676145589362">
                 <node role="creator" roleId="tpee.1145553007750" type="tp2q.HashSetCreator" typeId="tp2q.1226516258405" id="3603411676145589363">
                   <node role="elementType" roleId="tp2q.1237721435807" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="3603411676145589364">
-                    <link role="classifier" roleId="tpee.1107535924139" targetNodeId="3603411676145589369" resolveInfo="SortHelper.Edge" />
+                    <link role="classifier" roleId="tpee.1107535924139" targetNodeId="3603411676145589369" resolveInfo="DiGraphTopSortHelper.Edge" />
                   </node>
                 </node>
               </node>
@@ -707,14 +707,14 @@
         <property name="name" nameId="tpck.1169194664001" value="from" />
         <node role="visibility" roleId="tpee.1178549979242" type="tpee.PrivateVisibility" typeId="tpee.1146644623116" id="3603411676145589371" />
         <node role="type" roleId="tpee.5680397130376446158" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="3603411676145589372">
-          <link role="classifier" roleId="tpee.1107535924139" targetNodeId="3603411676145589306" resolveInfo="SortHelper.Node" />
+          <link role="classifier" roleId="tpee.1107535924139" targetNodeId="3603411676145589306" resolveInfo="DiGraphTopSortHelper.Node" />
         </node>
       </node>
       <node role="field" roleId="tpee.1068390468199" type="tpee.FieldDeclaration" typeId="tpee.1068390468200" id="3603411676145589373">
         <property name="name" nameId="tpck.1169194664001" value="to" />
         <node role="visibility" roleId="tpee.1178549979242" type="tpee.PrivateVisibility" typeId="tpee.1146644623116" id="3603411676145589374" />
         <node role="type" roleId="tpee.5680397130376446158" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="3603411676145589375">
-          <link role="classifier" roleId="tpee.1107535924139" targetNodeId="3603411676145589306" resolveInfo="SortHelper.Node" />
+          <link role="classifier" roleId="tpee.1107535924139" targetNodeId="3603411676145589306" resolveInfo="DiGraphTopSortHelper.Node" />
         </node>
       </node>
       <node role="visibility" roleId="tpee.1178549979242" type="tpee.PrivateVisibility" typeId="tpee.1146644623116" id="3603411676145589376" />
@@ -752,13 +752,13 @@
         <node role="parameter" roleId="tpee.1068580123134" type="tpee.ParameterDeclaration" typeId="tpee.1068498886292" id="3603411676145589393">
           <property name="name" nameId="tpck.1169194664001" value="from" />
           <node role="type" roleId="tpee.5680397130376446158" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="3603411676145589394">
-            <link role="classifier" roleId="tpee.1107535924139" targetNodeId="3603411676145589306" resolveInfo="SortHelper.Node" />
+            <link role="classifier" roleId="tpee.1107535924139" targetNodeId="3603411676145589306" resolveInfo="DiGraphTopSortHelper.Node" />
           </node>
         </node>
         <node role="parameter" roleId="tpee.1068580123134" type="tpee.ParameterDeclaration" typeId="tpee.1068498886292" id="3603411676145589395">
           <property name="name" nameId="tpck.1169194664001" value="to" />
           <node role="type" roleId="tpee.5680397130376446158" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="3603411676145589396">
-            <link role="classifier" roleId="tpee.1107535924139" targetNodeId="3603411676145589306" resolveInfo="SortHelper.Node" />
+            <link role="classifier" roleId="tpee.1107535924139" targetNodeId="3603411676145589306" resolveInfo="DiGraphTopSortHelper.Node" />
           </node>
         </node>
       </node>
@@ -780,7 +780,7 @@
             <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="3603411676145589404">
               <property name="name" nameId="tpck.1169194664001" value="e" />
               <node role="type" roleId="tpee.5680397130376446158" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="3603411676145589405">
-                <link role="classifier" roleId="tpee.1107535924139" targetNodeId="3603411676145589369" resolveInfo="SortHelper.Edge" />
+                <link role="classifier" roleId="tpee.1107535924139" targetNodeId="3603411676145589369" resolveInfo="DiGraphTopSortHelper.Edge" />
               </node>
               <node role="initializer" roleId="tpee.1068431790190" type="tpee.ParenthesizedExpression" typeId="tpee.1079359253375" id="3603411676145589406">
                 <node role="expression" roleId="tpee.1079359253376" type="tpee.CastExpression" typeId="tpee.1070534934090" id="3603411676145589407">
@@ -788,7 +788,7 @@
                     <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="3603411676145589400" resolveInfo="object" />
                   </node>
                   <node role="type" roleId="tpee.1070534934091" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="3603411676145589409">
-                    <link role="classifier" roleId="tpee.1107535924139" targetNodeId="3603411676145589369" resolveInfo="SortHelper.Edge" />
+                    <link role="classifier" roleId="tpee.1107535924139" targetNodeId="3603411676145589369" resolveInfo="DiGraphTopSortHelper.Edge" />
                   </node>
                 </node>
               </node>
