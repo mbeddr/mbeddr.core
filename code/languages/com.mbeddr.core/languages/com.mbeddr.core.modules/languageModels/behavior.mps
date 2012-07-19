@@ -3059,7 +3059,7 @@
       <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="3017602783212580388">
         <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="3017602783212580391">
           <node role="expression" roleId="tpee.1068580123156" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="3017602783212580392">
-            <property name="value" nameId="tpee.1068580320021" value="0" />
+            <property name="value" nameId="tpee.1068580320021" value="1000" />
           </node>
         </node>
       </node>
@@ -4358,7 +4358,7 @@
       <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="6021475212426147363">
         <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="6021475212426147364">
           <node role="expression" roleId="tpee.1068580123156" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="6021475212426147365">
-            <property name="value" nameId="tpee.1068580320021" value="0" />
+            <property name="value" nameId="tpee.1068580320021" value="1000" />
           </node>
         </node>
       </node>
