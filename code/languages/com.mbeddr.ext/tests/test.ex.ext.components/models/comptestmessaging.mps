@@ -40,13 +40,13 @@
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="v7ag.AtomicComponent" typeId="v7ag.4491876417845649011" id="1302968767135058846">
       <property name="name" nameId="tpck.1169194664001" value="LichtschrankenTreiber" />
-      <node role="ports" roleId="v7ag.4491876417845639958" type="v7ag.ProvidedPort" typeId="v7ag.4491876417845628840" id="1302968767135058848">
-        <property name="name" nameId="tpck.1169194664001" value="licht" />
-        <link role="intf" roleId="v7ag.4491876417845484932" targetNodeId="1302968767135057299" resolveInfo="ILichtschranke" />
-      </node>
-      <node role="ports" roleId="v7ag.4491876417845639958" type="v7ag.RequiredPort" typeId="v7ag.4491876417845628841" id="1302968767135217970">
+      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.RequiredPort" typeId="v7ag.4491876417845628841" id="1302968767135217970">
         <property name="name" nameId="tpck.1169194664001" value="demo" />
         <link role="intf" roleId="v7ag.4491876417845484932" targetNodeId="1302968767135217964" resolveInfo="IDemo" />
+      </node>
+      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.ProvidedPort" typeId="v7ag.4491876417845628840" id="1302968767135058848">
+        <property name="name" nameId="tpck.1169194664001" value="licht" />
+        <link role="intf" roleId="v7ag.4491876417845484932" targetNodeId="1302968767135057299" resolveInfo="ILichtschranke" />
       </node>
       <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="1302968767135058849">
         <property name="name" nameId="tpck.1169194664001" value="receive_licht_init" />

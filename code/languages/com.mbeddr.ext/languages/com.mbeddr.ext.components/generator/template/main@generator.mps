@@ -1568,12 +1568,12 @@
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="v7ag.AtomicComponent" typeId="v7ag.4491876417845649011" id="7798021607625479985">
       <property name="name" nameId="tpck.1169194664001" value="AComp" />
-      <node role="ports" roleId="v7ag.4491876417845639958" type="v7ag.ProvidedPort" typeId="v7ag.4491876417845628840" id="7798021607625479989">
-        <property name="name" nameId="tpck.1169194664001" value="ifProv" />
+      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.RequiredPort" typeId="v7ag.4491876417845628841" id="7798021607625479987">
+        <property name="name" nameId="tpck.1169194664001" value="if" />
         <link role="intf" roleId="v7ag.4491876417845484932" targetNodeId="7798021607625479983" resolveInfo="ifaceXXX" />
       </node>
-      <node role="ports" roleId="v7ag.4491876417845639958" type="v7ag.RequiredPort" typeId="v7ag.4491876417845628841" id="7798021607625479987">
-        <property name="name" nameId="tpck.1169194664001" value="if" />
+      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.ProvidedPort" typeId="v7ag.4491876417845628840" id="7798021607625479989">
+        <property name="name" nameId="tpck.1169194664001" value="ifProv" />
         <link role="intf" roleId="v7ag.4491876417845484932" targetNodeId="7798021607625479983" resolveInfo="ifaceXXX" />
       </node>
     </node>

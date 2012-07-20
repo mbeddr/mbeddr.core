@@ -54,7 +54,7 @@
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="v7ag.AtomicComponent" typeId="v7ag.4491876417845649011" id="9016194309503490022">
       <property name="name" nameId="tpck.1169194664001" value="ServerA" />
-      <node role="ports" roleId="v7ag.4491876417845639958" type="v7ag.ProvidedPort" typeId="v7ag.4491876417845628840" id="9016194309503490023">
+      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.ProvidedPort" typeId="v7ag.4491876417845628840" id="9016194309503490023">
         <property name="name" nameId="tpck.1169194664001" value="i" />
         <link role="intf" roleId="v7ag.4491876417845484932" targetNodeId="9016194309503490021" resolveInfo="Interface" />
       </node>
@@ -100,13 +100,13 @@
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="v7ag.AtomicComponent" typeId="v7ag.4491876417845649011" id="9016194309503490027">
       <property name="name" nameId="tpck.1169194664001" value="Client" />
-      <node role="ports" roleId="v7ag.4491876417845639958" type="v7ag.RequiredPort" typeId="v7ag.4491876417845628841" id="9016194309503490028">
-        <property name="name" nameId="tpck.1169194664001" value="i" />
-        <link role="intf" roleId="v7ag.4491876417845484932" targetNodeId="9016194309503490021" resolveInfo="Interface" />
-      </node>
-      <node role="ports" roleId="v7ag.4491876417845639958" type="v7ag.ProvidedPort" typeId="v7ag.4491876417845628840" id="8933128519014038680">
+      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.ProvidedPort" typeId="v7ag.4491876417845628840" id="8933128519014038680">
         <property name="name" nameId="tpck.1169194664001" value="ci" />
         <link role="intf" roleId="v7ag.4491876417845484932" targetNodeId="8933128519014038676" resolveInfo="ClientInterface" />
+      </node>
+      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.RequiredPort" typeId="v7ag.4491876417845628841" id="9016194309503490028">
+        <property name="name" nameId="tpck.1169194664001" value="i" />
+        <link role="intf" roleId="v7ag.4491876417845484932" targetNodeId="9016194309503490021" resolveInfo="Interface" />
       </node>
       <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="8933128519013965130">
         <property name="name" nameId="tpck.1169194664001" value="someRunnable" />

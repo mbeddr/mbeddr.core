@@ -46,7 +46,7 @@
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="v7ag.AtomicComponent" typeId="v7ag.4491876417845649011" id="1553713790141703366">
       <property name="name" nameId="tpck.1169194664001" value="Server" />
-      <node role="ports" roleId="v7ag.4491876417845639958" type="v7ag.ProvidedPort" typeId="v7ag.4491876417845628840" id="1553713790141703367">
+      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.ProvidedPort" typeId="v7ag.4491876417845628840" id="1553713790141703367">
         <property name="name" nameId="tpck.1169194664001" value="i" />
         <link role="intf" roleId="v7ag.4491876417845484932" targetNodeId="1553713790141703363" resolveInfo="Intf" />
       </node>
@@ -68,7 +68,7 @@
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="v7ag.AtomicComponent" typeId="v7ag.4491876417845649011" id="1553713790141733906">
       <property name="name" nameId="tpck.1169194664001" value="BigServer" />
-      <node role="ports" roleId="v7ag.4491876417845639958" type="v7ag.ProvidedPort" typeId="v7ag.4491876417845628840" id="1553713790141733907">
+      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.ProvidedPort" typeId="v7ag.4491876417845628840" id="1553713790141733907">
         <property name="name" nameId="tpck.1169194664001" value="i" />
         <link role="intf" roleId="v7ag.4491876417845484932" targetNodeId="1553713790141703363" resolveInfo="Intf" />
       </node>
@@ -90,13 +90,13 @@
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="v7ag.AtomicComponent" typeId="v7ag.4491876417845649011" id="1553713790141617701">
       <property name="name" nameId="tpck.1169194664001" value="AComp" />
-      <node role="ports" roleId="v7ag.4491876417845639958" type="v7ag.RequiredPort" typeId="v7ag.4491876417845628841" id="1553713790141703364">
-        <property name="name" nameId="tpck.1169194664001" value="i" />
-        <link role="intf" roleId="v7ag.4491876417845484932" targetNodeId="1553713790141703363" resolveInfo="Intf" />
-      </node>
-      <node role="ports" roleId="v7ag.4491876417845639958" type="v7ag.ProvidedPort" typeId="v7ag.4491876417845628840" id="1553713790141714890">
+      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.ProvidedPort" typeId="v7ag.4491876417845628840" id="1553713790141714890">
         <property name="name" nameId="tpck.1169194664001" value="d" />
         <link role="intf" roleId="v7ag.4491876417845484932" targetNodeId="1553713790141714885" resolveInfo="Demo" />
+      </node>
+      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.RequiredPort" typeId="v7ag.4491876417845628841" id="1553713790141703364">
+        <property name="name" nameId="tpck.1169194664001" value="i" />
+        <link role="intf" roleId="v7ag.4491876417845484932" targetNodeId="1553713790141703363" resolveInfo="Intf" />
       </node>
       <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="1553713790141714891">
         <property name="name" nameId="tpck.1169194664001" value="d_alsoGetAValue" />

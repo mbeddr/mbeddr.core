@@ -272,6 +272,10 @@
       <property name="name" nameId="tpck.1169194664001" value="PersistenceMock" />
       <property name="exported" nameId="x27k.1317894735999272944" value="true" />
       <property name="reportMessages" nameId="mxvz.4331139697889880620" value="true" />
+      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.ProvidedPort" typeId="v7ag.4491876417845628840" id="2151335435833416552">
+        <property name="name" nameId="tpck.1169194664001" value="pp" />
+        <link role="intf" roleId="v7ag.4491876417845484932" targetNodeId="2151335435833415466" resolveInfo="PersistenceProvider" />
+      </node>
       <node role="expectations" roleId="mxvz.2151335435833308543" type="mxvz.SequenceExpectation" typeId="mxvz.4957503999940784579" id="4957503999940788092">
         <node role="steps" roleId="mxvz.4957503999940784582" type="mxvz.Step" typeId="mxvz.4957503999940784581" id="4957503999941136198">
           <link role="port" roleId="mxvz.4957503999940788277" targetNodeId="2151335435833416552" resolveInfo="pp" />
@@ -303,10 +307,6 @@
       </node>
       <node role="expectations" roleId="mxvz.2151335435833308543" type="mxvz.ExpectTotalNoOfCalls" typeId="mxvz.4957503999940758571" id="4957503999940767183">
         <property name="noOfCalls" nameId="mxvz.4957503999940761153" value="4" />
-      </node>
-      <node role="ports" roleId="v7ag.4491876417845639958" type="v7ag.ProvidedPort" typeId="v7ag.4491876417845628840" id="2151335435833416552">
-        <property name="name" nameId="tpck.1169194664001" value="pp" />
-        <link role="intf" roleId="v7ag.4491876417845484932" targetNodeId="2151335435833415466" resolveInfo="PersistenceProvider" />
       </node>
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="5361708786694714971">
@@ -384,11 +384,11 @@
     <node role="contents" roleId="x27k.6437088627575722833" type="v7ag.AtomicComponent" typeId="v7ag.4491876417845649011" id="2151335435833422611">
       <property name="name" nameId="tpck.1169194664001" value="Client" />
       <property name="exported" nameId="x27k.1317894735999272944" value="true" />
-      <node role="ports" roleId="v7ag.4491876417845639958" type="v7ag.RequiredPort" typeId="v7ag.4491876417845628841" id="2151335435833422612">
+      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.RequiredPort" typeId="v7ag.4491876417845628841" id="2151335435833422612">
         <property name="name" nameId="tpck.1169194664001" value="pers" />
         <link role="intf" roleId="v7ag.4491876417845484932" targetNodeId="2151335435833415466" resolveInfo="PersistenceProvider" />
       </node>
-      <node role="ports" roleId="v7ag.4491876417845639958" type="v7ag.ProvidedPort" typeId="v7ag.4491876417845628840" id="2151335435833422619">
+      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.ProvidedPort" typeId="v7ag.4491876417845628840" id="2151335435833422619">
         <property name="name" nameId="tpck.1169194664001" value="d" />
         <link role="intf" roleId="v7ag.4491876417845484932" targetNodeId="2151335435833422615" resolveInfo="Driver" />
       </node>

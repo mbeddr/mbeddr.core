@@ -37,7 +37,7 @@
     <node role="contents" roleId="x27k.6437088627575722833" type="v7ag.AtomicComponent" typeId="v7ag.4491876417845649011" id="8132151755547402517">
       <property name="exported" nameId="x27k.1317894735999272944" value="true" />
       <property name="name" nameId="tpck.1169194664001" value="A" />
-      <node role="ports" roleId="v7ag.4491876417845639958" type="v7ag.ProvidedPort" typeId="v7ag.4491876417845628840" id="8132151755547402524">
+      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.ProvidedPort" typeId="v7ag.4491876417845628840" id="8132151755547402524">
         <property name="name" nameId="tpck.1169194664001" value="i" />
         <link role="intf" roleId="v7ag.4491876417845484932" targetNodeId="8132151755547402523" resolveInfo="Intf" />
       </node>
@@ -48,7 +48,7 @@
     <node role="contents" roleId="x27k.6437088627575722833" type="v7ag.AtomicComponent" typeId="v7ag.4491876417845649011" id="8132151755547402520">
       <property name="exported" nameId="x27k.1317894735999272944" value="true" />
       <property name="name" nameId="tpck.1169194664001" value="B" />
-      <node role="ports" roleId="v7ag.4491876417845639958" type="v7ag.RequiredPort" typeId="v7ag.4491876417845628841" id="8132151755547402525">
+      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.RequiredPort" typeId="v7ag.4491876417845628841" id="8132151755547402525">
         <property name="name" nameId="tpck.1169194664001" value="i" />
         <link role="intf" roleId="v7ag.4491876417845484932" targetNodeId="8132151755547402523" resolveInfo="Intf" />
       </node>

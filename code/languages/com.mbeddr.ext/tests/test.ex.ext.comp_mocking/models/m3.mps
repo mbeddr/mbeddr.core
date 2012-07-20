@@ -50,11 +50,11 @@
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="v7ag.AtomicComponent" typeId="v7ag.4491876417845649011" id="8729447926330476743">
       <property name="name" nameId="tpck.1169194664001" value="DataManager" />
-      <node role="ports" roleId="v7ag.4491876417845639958" type="v7ag.ProvidedPort" typeId="v7ag.4491876417845628840" id="8729447926330476744">
+      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.ProvidedPort" typeId="v7ag.4491876417845628840" id="8729447926330476744">
         <property name="name" nameId="tpck.1169194664001" value="acq" />
         <link role="intf" roleId="v7ag.4491876417845484932" targetNodeId="8729447926330476739" resolveInfo="DataAcquisition" />
       </node>
-      <node role="ports" roleId="v7ag.4491876417845639958" type="v7ag.RequiredPort" typeId="v7ag.4491876417845628841" id="8729447926330476746">
+      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.RequiredPort" typeId="v7ag.4491876417845628841" id="8729447926330476746">
         <property name="name" nameId="tpck.1169194664001" value="sensor" />
         <link role="intf" roleId="v7ag.4491876417845484932" targetNodeId="6307143892175816575" resolveInfo="Sensor" />
       </node>
@@ -96,7 +96,7 @@
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="mxvz.StubComponent" typeId="mxvz.6307143892175591011" id="6307143892175816627">
       <property name="name" nameId="tpck.1169194664001" value="SensorStub" />
-      <node role="ports" roleId="v7ag.4491876417845639958" type="v7ag.ProvidedPort" typeId="v7ag.4491876417845628840" id="6307143892175816628">
+      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.ProvidedPort" typeId="v7ag.4491876417845628840" id="6307143892175816628">
         <property name="name" nameId="tpck.1169194664001" value="sensor" />
         <link role="intf" roleId="v7ag.4491876417845484932" targetNodeId="6307143892175816575" resolveInfo="Sensor" />
       </node>

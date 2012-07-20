@@ -110,7 +110,7 @@
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="v7ag.AtomicComponent" typeId="v7ag.4491876417845649011" id="6591434695301142806">
       <property name="name" nameId="tpck.1169194664001" value="Computer" />
-      <node role="ports" roleId="v7ag.4491876417845639958" type="v7ag.ProvidedPort" typeId="v7ag.4491876417845628840" id="6591434695301142807">
+      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.ProvidedPort" typeId="v7ag.4491876417845628840" id="6591434695301142807">
         <property name="name" nameId="tpck.1169194664001" value="calc" />
         <link role="intf" roleId="v7ag.4491876417845484932" targetNodeId="6591434695300767055" resolveInfo="Calculator" />
       </node>
@@ -145,7 +145,7 @@
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="v7ag.AtomicComponent" typeId="v7ag.4491876417845649011" id="6209278014151173788">
       <property name="name" nameId="tpck.1169194664001" value="BrokenComputer" />
-      <node role="ports" roleId="v7ag.4491876417845639958" type="v7ag.ProvidedPort" typeId="v7ag.4491876417845628840" id="6209278014151173789">
+      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.ProvidedPort" typeId="v7ag.4491876417845628840" id="6209278014151173789">
         <property name="name" nameId="tpck.1169194664001" value="calc" />
         <link role="intf" roleId="v7ag.4491876417845484932" targetNodeId="6591434695300767055" resolveInfo="Calculator" />
       </node>
@@ -468,7 +468,7 @@
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="v7ag.AtomicComponent" typeId="v7ag.4491876417845649011" id="6209278014151173660">
       <property name="name" nameId="tpck.1169194664001" value="FastCounter" />
-      <node role="ports" roleId="v7ag.4491876417845639958" type="v7ag.ProvidedPort" typeId="v7ag.4491876417845628840" id="6209278014151173661">
+      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.ProvidedPort" typeId="v7ag.4491876417845628840" id="6209278014151173661">
         <property name="name" nameId="tpck.1169194664001" value="counter" />
         <link role="intf" roleId="v7ag.4491876417845484932" targetNodeId="6209278014151173618" resolveInfo="Counter" />
       </node>
@@ -531,7 +531,7 @@
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="v7ag.AtomicComponent" typeId="v7ag.4491876417845649011" id="6209278014151448699">
       <property name="name" nameId="tpck.1169194664001" value="BrokenCounter" />
-      <node role="ports" roleId="v7ag.4491876417845639958" type="v7ag.ProvidedPort" typeId="v7ag.4491876417845628840" id="6209278014151448700">
+      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.ProvidedPort" typeId="v7ag.4491876417845628840" id="6209278014151448700">
         <property name="name" nameId="tpck.1169194664001" value="counter" />
         <link role="intf" roleId="v7ag.4491876417845484932" targetNodeId="6209278014151173618" resolveInfo="Counter" />
       </node>
@@ -835,7 +835,7 @@
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="v7ag.AtomicComponent" typeId="v7ag.4491876417845649011" id="6209278014151673259">
       <property name="name" nameId="tpck.1169194664001" value="DefaultFS" />
-      <node role="ports" roleId="v7ag.4491876417845639958" type="v7ag.ProvidedPort" typeId="v7ag.4491876417845628840" id="6209278014151673260">
+      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.ProvidedPort" typeId="v7ag.4491876417845628840" id="6209278014151673260">
         <property name="name" nameId="tpck.1169194664001" value="fs" />
         <link role="intf" roleId="v7ag.4491876417845484932" targetNodeId="6209278014151496959" resolveInfo="FileSystem" />
       </node>

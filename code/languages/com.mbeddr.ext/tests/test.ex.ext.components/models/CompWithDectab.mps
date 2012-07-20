@@ -39,6 +39,10 @@
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="v7ag.AtomicComponent" typeId="v7ag.4491876417845649011" id="1817139875676347013">
       <property name="name" nameId="tpck.1169194664001" value="AComp" />
+      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.ProvidedPort" typeId="v7ag.4491876417845628840" id="1817139875676347074">
+        <property name="name" nameId="tpck.1169194664001" value="decider" />
+        <link role="intf" roleId="v7ag.4491876417845484932" targetNodeId="1817139875676347066" resolveInfo="Decider" />
+      </node>
       <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="1817139875676347014">
         <property name="name" nameId="tpck.1169194664001" value="decide" />
         <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="1817139875676347015">
@@ -108,10 +112,6 @@
           <property name="name" nameId="tpck.1169194664001" value="y" />
           <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="5708867820621171344" />
         </node>
-      </node>
-      <node role="ports" roleId="v7ag.4491876417845639958" type="v7ag.ProvidedPort" typeId="v7ag.4491876417845628840" id="1817139875676347074">
-        <property name="name" nameId="tpck.1169194664001" value="decider" />
-        <link role="intf" roleId="v7ag.4491876417845484932" targetNodeId="1817139875676347066" resolveInfo="Decider" />
       </node>
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="v7ag.InstanceConfiguration" typeId="v7ag.4491876417845649024" id="1817139875676347077">
