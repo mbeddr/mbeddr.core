@@ -22,7 +22,7 @@
       <modulePath path="${project}/languages/com.mbeddr.core.base/solutions/pluginSolution/pluginSolution.msd" folder="core.solutions" />
       <modulePath path="${project}/languages/com.mbeddr.core.buildconfig/buildconfig.mpl" folder="core-extended" />
       <modulePath path="${project}/languages/com.mbeddr.core.cstubs/cstubs.mpl" folder="core" />
-      <modulePath path="${project}/languages/com.mbeddr.core.debug.blext/blext.mpl" />
+      <modulePath path="${project}/languages/com.mbeddr.core.debug.blext/blext.mpl" folder="core" />
       <modulePath path="${project}/languages/com.mbeddr.core.debug.spawner/spawner.msd" folder="core.solutions" />
       <modulePath path="${project}/languages/com.mbeddr.core.debug/debug.mpl" folder="core" />
       <modulePath path="${project}/languages/com.mbeddr.core.embedded/embedded.mpl" folder="core-extended" />
