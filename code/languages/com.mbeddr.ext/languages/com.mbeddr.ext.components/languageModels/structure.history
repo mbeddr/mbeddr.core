@@ -37,5 +37,11 @@
     </dependencies>
     <rename id="v7ag.5308710777891663531" type="CONCEPT" from="WithPortStatement" to="WhenPortConnectedStatement" />
   </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="v7ag" modelUID="r:9596407c-f27a-49d3-abde-3a66293c5b61(com.mbeddr.ext.components.structure)" version="4" />
+    </dependencies>
+    <move id="v7ag.4491876417845641672" to="v7ag.6041318036221669720" />
+  </StructureModification>
 </history>
 
