@@ -158,15 +158,15 @@
     <node role="contents" roleId="x27k.6437088627575722833" type="v7ag.InstanceConfiguration" typeId="v7ag.4491876417845649024" id="2151335435833422634">
       <property name="name" nameId="tpck.1169194664001" value="config" />
       <property name="exported" nameId="x27k.1317894735999272944" value="false" />
-      <node role="instances" roleId="v7ag.4491876417845649026" type="v7ag.ComponentInstance" typeId="v7ag.4491876417845649014" id="2151335435833422638">
+      <node role="contents" roleId="v7ag.6041318036222235020" type="v7ag.ComponentInstance" typeId="v7ag.4491876417845649014" id="2151335435833422638">
         <property name="name" nameId="tpck.1169194664001" value="client" />
         <link role="component" roleId="v7ag.4491876417845649015" targetNodeId="2151335435833422611" resolveInfo="Client" />
       </node>
-      <node role="instances" roleId="v7ag.4491876417845649026" type="v7ag.ComponentInstance" typeId="v7ag.4491876417845649014" id="2151335435833422635">
+      <node role="contents" roleId="v7ag.6041318036222235020" type="v7ag.ComponentInstance" typeId="v7ag.4491876417845649014" id="2151335435833422635">
         <property name="name" nameId="tpck.1169194664001" value="mock" />
         <link role="component" roleId="v7ag.4491876417845649015" targetNodeId="2151335435833415530" resolveInfo="PersistenceMock" />
       </node>
-      <node role="connectors" roleId="v7ag.4491876417845649027" type="v7ag.Connector" typeId="v7ag.4491876417845649016" id="2151335435833422641">
+      <node role="contents" roleId="v7ag.6041318036222235020" type="v7ag.Connector" typeId="v7ag.4491876417845649016" id="2151335435833422641">
         <node role="source" roleId="v7ag.4491876417845649020" type="v7ag.InstancePortRef" typeId="v7ag.4491876417845649017" id="2151335435833422642">
           <link role="instance" roleId="v7ag.4491876417845649018" targetNodeId="2151335435833422638" resolveInfo="client" />
           <link role="port" roleId="v7ag.4491876417845649019" targetNodeId="2151335435833422612" resolveInfo="pers" />

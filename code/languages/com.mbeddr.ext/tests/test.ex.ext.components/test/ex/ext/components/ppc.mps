@@ -180,11 +180,11 @@
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="v7ag.InstanceConfiguration" typeId="v7ag.4491876417845649024" id="6591434695301277915">
       <property name="name" nameId="tpck.1169194664001" value="instances" />
-      <node role="instances" roleId="v7ag.4491876417845649026" type="v7ag.ComponentInstance" typeId="v7ag.4491876417845649014" id="6591434695301277916">
+      <node role="contents" roleId="v7ag.6041318036222235020" type="v7ag.ComponentInstance" typeId="v7ag.4491876417845649014" id="6591434695301277916">
         <property name="name" nameId="tpck.1169194664001" value="computer" />
         <link role="component" roleId="v7ag.4491876417845649015" targetNodeId="6591434695301142806" resolveInfo="Computer" />
       </node>
-      <node role="instances" roleId="v7ag.4491876417845649026" type="v7ag.ComponentInstance" typeId="v7ag.4491876417845649014" id="6209278014151173805">
+      <node role="contents" roleId="v7ag.6041318036222235020" type="v7ag.ComponentInstance" typeId="v7ag.4491876417845649014" id="6209278014151173805">
         <property name="name" nameId="tpck.1169194664001" value="broken" />
         <link role="component" roleId="v7ag.4491876417845649015" targetNodeId="6209278014151173788" resolveInfo="BrokenComputer" />
       </node>
@@ -586,11 +586,11 @@
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="v7ag.InstanceConfiguration" typeId="v7ag.4491876417845649024" id="6209278014151173698">
       <property name="name" nameId="tpck.1169194664001" value="instances" />
-      <node role="instances" roleId="v7ag.4491876417845649026" type="v7ag.ComponentInstance" typeId="v7ag.4491876417845649014" id="6209278014151173699">
+      <node role="contents" roleId="v7ag.6041318036222235020" type="v7ag.ComponentInstance" typeId="v7ag.4491876417845649014" id="6209278014151173699">
         <property name="name" nameId="tpck.1169194664001" value="fc" />
         <link role="component" roleId="v7ag.4491876417845649015" targetNodeId="6209278014151173660" resolveInfo="FastCounter" />
       </node>
-      <node role="instances" roleId="v7ag.4491876417845649026" type="v7ag.ComponentInstance" typeId="v7ag.4491876417845649014" id="6209278014151448723">
+      <node role="contents" roleId="v7ag.6041318036222235020" type="v7ag.ComponentInstance" typeId="v7ag.4491876417845649014" id="6209278014151448723">
         <property name="name" nameId="tpck.1169194664001" value="bc" />
         <link role="component" roleId="v7ag.4491876417845649015" targetNodeId="6209278014151448699" resolveInfo="BrokenCounter" />
       </node>
@@ -897,7 +897,7 @@
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="v7ag.InstanceConfiguration" typeId="v7ag.4491876417845649024" id="6209278014151673287">
       <property name="name" nameId="tpck.1169194664001" value="instances" />
-      <node role="instances" roleId="v7ag.4491876417845649026" type="v7ag.ComponentInstance" typeId="v7ag.4491876417845649014" id="6209278014151673288">
+      <node role="contents" roleId="v7ag.6041318036222235020" type="v7ag.ComponentInstance" typeId="v7ag.4491876417845649014" id="6209278014151673288">
         <property name="name" nameId="tpck.1169194664001" value="fs" />
         <link role="component" roleId="v7ag.4491876417845649015" targetNodeId="6209278014151673259" resolveInfo="DefaultFS" />
       </node>

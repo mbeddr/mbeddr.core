@@ -1579,11 +1579,11 @@
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="v7ag.InstanceConfiguration" typeId="v7ag.4491876417845649024" id="7798021607625479991">
       <property name="name" nameId="tpck.1169194664001" value="aConfig" />
-      <node role="instances" roleId="v7ag.4491876417845649026" type="v7ag.ComponentInstance" typeId="v7ag.4491876417845649014" id="7798021607625479992">
+      <node role="contents" roleId="v7ag.6041318036222235020" type="v7ag.ComponentInstance" typeId="v7ag.4491876417845649014" id="7798021607625479992">
         <property name="name" nameId="tpck.1169194664001" value="comp" />
         <link role="component" roleId="v7ag.4491876417845649015" targetNodeId="7798021607625479985" resolveInfo="AComp" />
       </node>
-      <node role="connectors" roleId="v7ag.4491876417845649027" type="v7ag.Connector" typeId="v7ag.4491876417845649016" id="7798021607625479993">
+      <node role="contents" roleId="v7ag.6041318036222235020" type="v7ag.Connector" typeId="v7ag.4491876417845649016" id="7798021607625479993">
         <node role="source" roleId="v7ag.4491876417845649020" type="v7ag.InstancePortRef" typeId="v7ag.4491876417845649017" id="7798021607625479994">
           <link role="instance" roleId="v7ag.4491876417845649018" targetNodeId="7798021607625479992" resolveInfo="comp" />
           <link role="port" roleId="v7ag.4491876417845649019" targetNodeId="7798021607625479987" resolveInfo="if" />
