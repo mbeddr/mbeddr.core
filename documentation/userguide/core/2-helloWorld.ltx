@@ -21,10 +21,10 @@ We now have to make the project aware of the \emph{mbeddr.core} languages
 installed via the distribution. Go to the $File \rightarrow Settings$ (on the
 Mac it is under $MPS \rightarrow Preferences$) and select the $Global Libraries$
 in the IDE settings. Create a library called \ic{mbeddr.core} that points to
-the root directory of the unzipped mbeddr installation.
+the \ic{code} directory of the unzipped mbeddr installation.
 
-\textbf{Note: This library must point to the root directory of the checkout so
-that all languages are below it, including \emph{core} and \emph{mpsutil}.}
+\textbf{Note: This library must point to the \ic{code} directory of the checkout
+so that all languages are below it, including \emph{core} and \emph{mpsutil}.}
 
 \begin{center} 
   \includegraphics[width=10cm]{figures/core/SettingsGlobalLibraries.png}
@@ -126,7 +126,7 @@ be added later.
 module.
 
 \begin{code}
-module HelloWorld from HelloWorld.main imports nothing {                                
+module HelloWorld imports nothing {                                
   << ... >>                      
 } 
 \end{code}

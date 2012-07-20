@@ -9858,9 +9858,6 @@
                 </node>
                 <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="5420066315456437960">
                   <property name="value" nameId="mj1l.8860443239512128104" value="10" />
-                  <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodePropertiesContainer" typeId="tp5g.1215507532627" id="5420066315456437961">
-                    <node role="properties" roleId="tp5g.1215507909023" type="tp5g.NodeErrorPropety" typeId="tp5g.1215507671101" id="5420066315456437962" />
-                  </node>
                 </node>
               </node>
             </node>

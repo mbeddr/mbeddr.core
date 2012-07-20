@@ -174,6 +174,45 @@
             </node>
           </node>
         </node>
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="1656687801206570379" />
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="1656687801206570381">
+          <property name="name" nameId="tpck.1169194664001" value="x" />
+          <node role="type" roleId="mj1l.318113533128716676" type="3c6d.TypeWithUnit" typeId="3c6d.5513256947824492703" id="1656687801206570383">
+            <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+            <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+            <node role="valueType" roleId="3c6d.5513256947824503029" type="mj1l.FloatType" typeId="mj1l.4739982148980385695" id="1656687801206570382">
+              <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+              <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+            </node>
+            <node role="unit" roleId="3c6d.5513256947824503030" type="ym4j.UnitDeclarationRef" typeId="ym4j.8099136929591173606" id="1656687801206570384">
+              <link role="ref" roleId="ym4j.8099136929591173608" targetNodeId="1656687801206568657" resolveInfo="kWH" />
+            </node>
+          </node>
+          <node role="init" roleId="c4fa.4185783222026502647" type="3c6d.LiteralWithUnit" typeId="3c6d.5513256947824592491" id="1656687801206570395">
+            <node role="unit" roleId="3c6d.5513256947824592493" type="ym4j.UnitDeclarationRef" typeId="ym4j.8099136929591173606" id="1656687801206570396">
+              <link role="ref" roleId="ym4j.8099136929591173608" targetNodeId="1656687801206568657" resolveInfo="kWH" />
+            </node>
+            <node role="value" roleId="3c6d.5513256947824592492" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="1656687801206570386">
+              <property name="value" nameId="mj1l.8860443239512128104" value="10" />
+            </node>
+          </node>
+        </node>
+        <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="1656687801206570398">
+          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="1656687801206570398" />
+          <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="1656687801206570403">
+            <node role="right" roleId="mj1l.8860443239512128065" type="3c6d.LiteralWithUnit" typeId="3c6d.5513256947824592491" id="1656687801206570415">
+              <node role="unit" roleId="3c6d.5513256947824592493" type="ym4j.UnitDeclarationRef" typeId="ym4j.8099136929591173606" id="1656687801206570416">
+                <link role="ref" roleId="ym4j.8099136929591173608" targetNodeId="1656687801206568657" resolveInfo="kWH" />
+              </node>
+              <node role="value" roleId="3c6d.5513256947824592492" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="1656687801206570406">
+                <property name="value" nameId="mj1l.8860443239512128104" value="10" />
+              </node>
+            </node>
+            <node role="left" roleId="mj1l.8860443239512128064" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="1656687801206570400">
+              <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="1656687801206570381" resolveInfo="x" />
+            </node>
+          </node>
+        </node>
       </node>
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="5185104661801336691">
@@ -340,6 +379,10 @@
     <node role="declarations" roleId="ym4j.3801772042669047873" type="ym4j.NamedConvertibleUnitDeclaration" typeId="ym4j.2078797996880580463" id="2078797996880601373">
       <property name="name" nameId="tpck.1169194664001" value="C" />
       <property name="physicalMeaning" nameId="ym4j.2078797996880543461" value="temperature" />
+    </node>
+    <node role="declarations" roleId="ym4j.3801772042669047873" type="ym4j.NamedOpaqueUnitDeclaration" typeId="ym4j.1656687801206561197" id="1656687801206568657">
+      <property name="name" nameId="tpck.1169194664001" value="kWH" />
+      <property name="physicalMeaning" nameId="ym4j.2078797996880543461" value="energy" />
     </node>
   </root>
 </model>

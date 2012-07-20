@@ -159,6 +159,10 @@
     <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="2604304000476772563">
       <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="c4fa.2604304000476764367" resolveInfo="NotParsedStatement" />
     </node>
+    <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="1656687801206406080">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="switch" />
+      <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="c4fa.1656687801206406078" resolveInfo="CommentedSwitchMember" />
+    </node>
   </roots>
   <root id="4185783222026475242">
     <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="4185783222026475244">
@@ -1009,7 +1013,7 @@
   </root>
   <root id="1679452829930336987">
     <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="1679452829930336990">
-      <link role="styleClass" roleId="tpc2.1186406756722" targetNodeId="r4b4.3857533489766382276" resolveInfo="comment" />
+      <link role="styleClass" roleId="tpc2.1186406756722" targetNodeId="r4b4.3857533489766382276" resolveInfo="wcomment" />
       <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Horizontal" typeId="tpc2.1106270549637" id="1679452829930336991" />
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="1679452829930336989">
         <property name="text" nameId="tpc2.1073389577007" value="//" />
@@ -1912,7 +1916,7 @@
   </root>
   <root id="2604304000476772563">
     <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="2604304000476772565">
-      <link role="styleClass" roleId="tpc2.1186406756722" targetNodeId="r4b4.3857533489766382276" resolveInfo="comment" />
+      <link role="styleClass" roleId="tpc2.1186406756722" targetNodeId="r4b4.3857533489766382276" resolveInfo="wcomment" />
       <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Horizontal" typeId="tpc2.1106270549637" id="2604304000476772566" />
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="7265792597306861691">
         <property name="text" nameId="tpc2.1073389577007" value="{" />
@@ -1941,6 +1945,11 @@
           <property name="flag" nameId="tpc2.1186414551515" value="true" />
         </node>
       </node>
+    </node>
+  </root>
+  <root id="1656687801206406080">
+    <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Component" typeId="tpc2.1078939183254" id="1656687801206422584">
+      <link role="editorComponent" roleId="tpc2.1078939183255" targetNodeId="r4b4.7024921229556157914" resolveInfo="commentedCodeDefault" />
     </node>
   </root>
 </model>
