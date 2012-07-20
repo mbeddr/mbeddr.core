@@ -88,7 +88,6 @@
     <node type="tp1t.ConceptConstraints" typeId="tp1t.1213093968558" id="2151335435833416553">
       <property name="virtualPackage" nameId="tpck.1193676396447" value="comp.ports" />
       <link role="concept" roleId="tp1t.1213093996982" targetNodeId="v7ag.4491876417845484930" resolveInfo="Port" />
-      <link role="defaultConcreteConcept" roleId="tp1t.1213106917431" targetNodeId="v7ag.1049346859912912068" resolveInfo="EmptyPort" />
     </node>
     <node type="tp1t.ConceptConstraints" typeId="tp1t.1213093968558" id="1039994726062047986">
       <link role="concept" roleId="tp1t.1213093996982" targetNodeId="v7ag.591155063063570513" resolveInfo="InitializeConfiguration" />

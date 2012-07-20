@@ -198,10 +198,6 @@
       <property name="virtualPackage" nameId="tpck.1193676396447" value="adapter" />
       <link role="concept" roleId="1i04.1225194240799" targetNodeId="v7ag.8105003328815054492" resolveInfo="InterfaceType" />
     </node>
-    <node type="1i04.ConceptBehavior" typeId="1i04.1225194240794" id="1049346859913012471">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="comp.ports" />
-      <link role="concept" roleId="1i04.1225194240799" targetNodeId="v7ag.1049346859912912068" resolveInfo="EmptyPort" />
-    </node>
   </roots>
   <root id="4491876417845484936">
     <node role="method" roleId="1i04.1225194240805" type="1i04.ConceptMethodDeclaration" typeId="1i04.1225194472830" id="6209278014151673617">
@@ -6715,11 +6711,6 @@
     </node>
     <node role="constructor" roleId="1i04.1225194240801" type="1i04.ConceptConstructorDeclaration" typeId="1i04.1225194413805" id="2941277002447374652">
       <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="2941277002447374653" />
-    </node>
-  </root>
-  <root id="1049346859913012471">
-    <node role="constructor" roleId="1i04.1225194240801" type="1i04.ConceptConstructorDeclaration" typeId="1i04.1225194413805" id="1049346859913012472">
-      <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="1049346859913012473" />
     </node>
   </root>
 </model>
