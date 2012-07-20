@@ -41805,8 +41805,8 @@
         <node role="statement" roleId="tpee.1068581517665" type="tpee.AssertStatement" typeId="tpee.1160998861373" id="862133296698438806">
           <node role="condition" roleId="tpee.1160998896846" type="tpee.NotEqualsExpression" typeId="tpee.1073239437375" id="862133296698438807">
             <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.NullLiteral" typeId="tpee.1070534058343" id="862133296698438808" />
-            <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.LocalInstanceFieldReference" typeId="tpee.7785501532031639928" id="862133296698438809">
-              <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="862133296698438658" resolveInfo="value" />
+            <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.ParameterReference" typeId="tpee.1068581242874" id="7464816247801751521">
+              <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="862133296698438723" resolveInfo="newValue" />
             </node>
           </node>
         </node>
