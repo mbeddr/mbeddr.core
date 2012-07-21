@@ -20,13 +20,13 @@
     </node>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="5778488248013533839">
       <property name="name" nameId="tpck.1169194664001" value="State" />
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="machine" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="machine.states" />
       <property name="iconPath" nameId="tpce.1160488491229" value="${language_descriptor}/icons/state.jpg" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
     </node>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="5778488248013533883">
       <property name="name" nameId="tpck.1169194664001" value="Transition" />
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="machine" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="machine.states" />
       <property name="iconPath" nameId="tpce.1160488491229" value="${language_descriptor}/icons/transition.jpg" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
     </node>
@@ -67,17 +67,17 @@
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
     </node>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="1786180596061233739">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="machine" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="machine.states" />
       <property name="name" nameId="tpck.1169194664001" value="Trigger" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
     </node>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="1786180596061248885">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="machine" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="machine.states" />
       <property name="name" nameId="tpck.1169194664001" value="EventArg" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
     </node>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="1786180596061258962">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="machine" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="machine.states" />
       <property name="name" nameId="tpck.1169194664001" value="EventArgRef" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="mj1l.8860443239512128050" resolveInfo="Expression" />
     </node>
@@ -146,7 +146,7 @@
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="c4fa.4185783222026464515" resolveInfo="Statement" />
     </node>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="1957198122968598264">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="machine" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="machine.states" />
       <property name="name" nameId="tpck.1169194664001" value="ActionList" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="c4fa.4185783222026475861" resolveInfo="StatementList" />
     </node>
@@ -164,13 +164,23 @@
       <property name="name" nameId="tpck.1169194664001" value="IStateContents" />
     </node>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4753668641245534592">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="machine" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="machine.states" />
       <property name="name" nameId="tpck.1169194664001" value="EntryAction" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
     </node>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4753668641245545020">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="machine" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="machine.states" />
       <property name="name" nameId="tpck.1169194664001" value="ExitAction" />
+      <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
+    </node>
+    <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4753668641245811355">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="machine.states" />
+      <property name="name" nameId="tpck.1169194664001" value="EmptyStateContents" />
+      <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
+    </node>
+    <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4753668641245875079">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="machine.states" />
+      <property name="name" nameId="tpck.1169194664001" value="CommentedStateContent" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
     </node>
   </roots>
@@ -749,7 +759,15 @@
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="7835233251114737446" resolveInfo="IStatemachineContents" />
     </node>
   </root>
-  <root id="4753668641245534589" />
+  <root id="4753668641245534589">
+    <node role="extends" roleId="tpce.1169127546356" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="4753668641245875078">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="vs0r.7024921229556133800" resolveInfo="ICommentable" />
+    </node>
+    <node role="conceptLink" roleId="tpce.1105736949336" type="tpce.ReferenceConceptLink" typeId="tpce.1105736778597" id="4753668641245876053">
+      <link role="conceptLinkDeclaration" roleId="tpce.1105736734721" targetNodeId="vs0r.7024921229556133802" resolveInfo="commentConcept" />
+      <link role="target" roleId="tpce.1105736807942" targetNodeId="4753668641245875079" resolveInfo="CommentedStateContent" />
+    </node>
+  </root>
   <root id="4753668641245534592">
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="4753668641245545015">
       <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
@@ -778,6 +796,22 @@
     <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="4753668641245545023">
       <property name="value" nameId="tpce.1105725733873" value="exit" />
       <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473891462" resolveInfo="alias" />
+    </node>
+  </root>
+  <root id="4753668641245811355">
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="4753668641245811356">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="4753668641245534589" resolveInfo="IStateContents" />
+    </node>
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="4753668641245811358">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="vs0r.1049346859912912067" resolveInfo="IEmpty" />
+    </node>
+  </root>
+  <root id="4753668641245875079">
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="4753668641245875081">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="vs0r.7024921229556133803" resolveInfo="ICommentedCode" />
+    </node>
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="4753668641245875083">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="4753668641245534589" resolveInfo="IStateContents" />
     </node>
   </root>
 </model>

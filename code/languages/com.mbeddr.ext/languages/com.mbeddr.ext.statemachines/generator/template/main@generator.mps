@@ -58,6 +58,7 @@
     </node>
     <node type="tpf8.MappingConfiguration" typeId="tpf8.1095416546421" id="8444296659257853342">
       <property name="name" nameId="tpck.1169194664001" value="statemachine2CFunction" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="machine.states" />
     </node>
     <node type="mj1l.TypeSizeConfiguration" typeId="mj1l.3335993110369795380" id="5569318043967161076" />
     <node type="fu4.Graph" typeId="fu4.5104882350373546412" id="2231107713270995458">

@@ -32,11 +32,11 @@
       <link role="concept" roleId="tp1t.1213093996982" targetNodeId="clqz.7851711690674279259" resolveInfo="TriggerSMStatement" />
     </node>
     <node type="tp1t.ConceptConstraints" typeId="tp1t.1213093968558" id="1786180596061258970">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="machine" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="machine.states" />
       <link role="concept" roleId="tp1t.1213093996982" targetNodeId="clqz.1786180596061258962" resolveInfo="EventArgRef" />
     </node>
     <node type="tp1t.ConceptConstraints" typeId="tp1t.1213093968558" id="1786180596061324201">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="machine" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="machine.states" />
       <link role="concept" roleId="tp1t.1213093996982" targetNodeId="clqz.1786180596061233739" resolveInfo="Trigger" />
     </node>
     <node type="tp1t.ConceptConstraints" typeId="tp1t.1213093968558" id="1786180596061383247">
@@ -68,7 +68,7 @@
       <link role="concept" roleId="tp1t.1213093996982" targetNodeId="clqz.4643433264759945881" resolveInfo="StatemachineTestStatement" />
     </node>
     <node type="tp1t.ConceptConstraints" typeId="tp1t.1213093968558" id="4643433264760116243">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="machine" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="machine.states" />
       <link role="concept" roleId="tp1t.1213093996982" targetNodeId="clqz.5778488248013533883" resolveInfo="Transition" />
     </node>
     <node type="tp1t.ConceptConstraints" typeId="tp1t.1213093968558" id="7999989049972994645">
@@ -88,16 +88,24 @@
       <link role="concept" roleId="tp1t.1213093996982" targetNodeId="clqz.1786180596061219795" resolveInfo="Event" />
     </node>
     <node type="tp1t.ConceptConstraints" typeId="tp1t.1213093968558" id="5470497459579185789">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="machine" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="machine.states" />
       <link role="concept" roleId="tp1t.1213093996982" targetNodeId="clqz.1786180596061248885" resolveInfo="EventArg" />
     </node>
     <node type="tp1t.ConceptConstraints" typeId="tp1t.1213093968558" id="5470497459579431152">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="machine" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="machine.states" />
       <link role="concept" roleId="tp1t.1213093996982" targetNodeId="clqz.5778488248013533839" resolveInfo="State" />
     </node>
     <node type="tp1t.ConceptConstraints" typeId="tp1t.1213093968558" id="5470497459579431160">
       <property name="virtualPackage" nameId="tpck.1193676396447" value="machine" />
       <link role="concept" roleId="tp1t.1213093996982" targetNodeId="clqz.5633981208992643165" resolveInfo="StatemachineVariableDeclaration" />
+    </node>
+    <node type="tp1t.ConceptConstraints" typeId="tp1t.1213093968558" id="4753668641245839934">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="machine.states" />
+      <link role="concept" roleId="tp1t.1213093996982" targetNodeId="clqz.4753668641245534592" resolveInfo="EntryAction" />
+    </node>
+    <node type="tp1t.ConceptConstraints" typeId="tp1t.1213093968558" id="4753668641245840120">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="machine.states" />
+      <link role="concept" roleId="tp1t.1213093996982" targetNodeId="clqz.4753668641245545020" resolveInfo="ExitAction" />
     </node>
   </roots>
   <root id="7851711690674268458">
@@ -948,5 +956,7 @@
       </node>
     </node>
   </root>
+  <root id="4753668641245839934" />
+  <root id="4753668641245840120" />
 </model>
 

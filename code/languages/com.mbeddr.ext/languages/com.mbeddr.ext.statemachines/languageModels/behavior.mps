@@ -32,7 +32,7 @@
       <link role="concept" roleId="1i04.1225194240799" targetNodeId="clqz.5778488248013533809" resolveInfo="Statemachine" />
     </node>
     <node type="1i04.ConceptBehavior" typeId="1i04.1225194240794" id="8754531460196531200">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="machine" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="machine.states" />
       <link role="concept" roleId="1i04.1225194240799" targetNodeId="clqz.5778488248013533883" resolveInfo="Transition" />
     </node>
     <node type="1i04.ConceptBehavior" typeId="1i04.1225194240794" id="8786207748510028098">
@@ -44,7 +44,7 @@
       <link role="concept" roleId="1i04.1225194240799" targetNodeId="clqz.1786180596061383227" resolveInfo="StatemachineVarRef" />
     </node>
     <node type="1i04.ConceptBehavior" typeId="1i04.1225194240794" id="1598382569875230373">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="machine" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="machine.states" />
       <link role="concept" roleId="1i04.1225194240799" targetNodeId="clqz.5778488248013533839" resolveInfo="State" />
     </node>
     <node type="1i04.ConceptBehavior" typeId="1i04.1225194240794" id="1598382569875342198">
@@ -56,15 +56,15 @@
       <link role="concept" roleId="1i04.1225194240799" targetNodeId="clqz.7851711690674263345" resolveInfo="StatemachineType" />
     </node>
     <node type="1i04.ConceptBehavior" typeId="1i04.1225194240794" id="1957198122968598268">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="machine" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="machine.states" />
       <link role="concept" roleId="1i04.1225194240799" targetNodeId="clqz.1957198122968598264" resolveInfo="ActionList" />
     </node>
     <node type="1i04.ConceptBehavior" typeId="1i04.1225194240794" id="5428497045049158894">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="machine" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="machine.states" />
       <link role="concept" roleId="1i04.1225194240799" targetNodeId="clqz.1786180596061233739" resolveInfo="Trigger" />
     </node>
     <node type="1i04.ConceptBehavior" typeId="1i04.1225194240794" id="2231107713271403981">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="machine" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="machine.states" />
       <link role="concept" roleId="1i04.1225194240799" targetNodeId="clqz.1786180596061258962" resolveInfo="EventArgRef" />
     </node>
     <node type="1i04.ConceptBehavior" typeId="1i04.1225194240794" id="5428497045049158280">
@@ -94,6 +94,14 @@
     <node type="1i04.ConceptBehavior" typeId="1i04.1225194240794" id="1656687801206384744">
       <property name="virtualPackage" nameId="tpck.1193676396447" value="machine" />
       <link role="concept" roleId="1i04.1225194240799" targetNodeId="clqz.7851711690674374947" resolveInfo="BoundedIntType" />
+    </node>
+    <node type="1i04.ConceptBehavior" typeId="1i04.1225194240794" id="4753668641245839873">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="machine.states" />
+      <link role="concept" roleId="1i04.1225194240799" targetNodeId="clqz.4753668641245534592" resolveInfo="EntryAction" />
+    </node>
+    <node type="1i04.ConceptBehavior" typeId="1i04.1225194240794" id="4753668641245840144">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="machine.states" />
+      <link role="concept" roleId="1i04.1225194240799" targetNodeId="clqz.4753668641245545020" resolveInfo="ExitAction" />
     </node>
   </roots>
   <root id="5633981208992655224">
@@ -3556,6 +3564,40 @@
   <root id="1656687801206384744">
     <node role="constructor" roleId="1i04.1225194240801" type="1i04.ConceptConstructorDeclaration" typeId="1i04.1225194413805" id="1656687801206384745">
       <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="1656687801206384746" />
+    </node>
+  </root>
+  <root id="4753668641245839873">
+    <node role="constructor" roleId="1i04.1225194240801" type="1i04.ConceptConstructorDeclaration" typeId="1i04.1225194413805" id="4753668641245839874">
+      <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="4753668641245839875">
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="4753668641245839876">
+          <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="4753668641245839926">
+            <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="4753668641245839898">
+              <node role="operand" roleId="tpee.1197027771414" type="1i04.ThisNodeExpression" typeId="1i04.1225194691553" id="4753668641245839877" />
+              <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="4753668641245839904">
+                <link role="link" roleId="tp25.1138056516764" targetNodeId="clqz.4753668641245545015" />
+              </node>
+            </node>
+            <node role="operation" roleId="tpee.1197027833540" type="tp25.Link_SetNewChildOperation" typeId="tp25.1138757581985" id="4753668641245839932" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </root>
+  <root id="4753668641245840144">
+    <node role="constructor" roleId="1i04.1225194240801" type="1i04.ConceptConstructorDeclaration" typeId="1i04.1225194413805" id="4753668641245840145">
+      <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="4753668641245840146">
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="4753668641245840147">
+          <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="4753668641245840197">
+            <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="4753668641245840169">
+              <node role="operand" roleId="tpee.1197027771414" type="1i04.ThisNodeExpression" typeId="1i04.1225194691553" id="4753668641245840148" />
+              <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="4753668641245840175">
+                <link role="link" roleId="tp25.1138056516764" targetNodeId="clqz.4753668641245545022" />
+              </node>
+            </node>
+            <node role="operation" roleId="tpee.1197027833540" type="tp25.Link_SetNewChildOperation" typeId="tp25.1138757581985" id="4753668641245840203" />
+          </node>
+        </node>
+      </node>
     </node>
   </root>
 </model>
