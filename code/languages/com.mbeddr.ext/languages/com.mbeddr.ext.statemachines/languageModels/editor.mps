@@ -105,6 +105,10 @@
       <property name="virtualPackage" nameId="tpck.1193676396447" value="c-integration" />
       <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="clqz.1582169519237884298" resolveInfo="TriggerSelfStatement" />
     </node>
+    <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="8927638623067326792">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="machine" />
+      <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="clqz.8927638623067326788" resolveInfo="EmptyStatemachineContent" />
+    </node>
   </roots>
   <root id="5778488248013533843">
     <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="51326808951959425">
@@ -144,6 +148,19 @@
         </node>
         <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.IndentLayoutIndentStyleClassItem" typeId="tpc2.1237307900041" id="7835233251114737460">
           <property name="flag" nameId="tpc2.1186414551515" value="true" />
+        </node>
+        <node role="nodeFactory" roleId="tpc2.1176897874615" type="tpc2.QueryFunction_NodeFactory" typeId="tpc2.1176897764478" id="8927638623067326796">
+          <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="8927638623067326797">
+            <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="8927638623067326798">
+              <node role="expression" roleId="tpee.1068580123156" type="tpee.GenericNewExpression" typeId="tpee.1145552977093" id="8927638623067326799">
+                <node role="creator" roleId="tpee.1145553007750" type="tp25.SNodeCreator" typeId="tp25.1180636770613" id="8927638623067326801">
+                  <node role="createdType" roleId="tp25.1180636770616" type="tp25.SNodeType" typeId="tp25.1138055754698" id="8927638623067326802">
+                    <link role="concept" roleId="tp25.1138405853777" targetNodeId="clqz.8927638623067326788" resolveInfo="EmptyStatemachineContent" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
         </node>
       </node>
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="7835233251114915494">
@@ -1102,6 +1119,14 @@
         <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.PunctuationLeftStyleClassItem" typeId="tpc2.1233758997495" id="1582169519237884351">
           <property name="flag" nameId="tpc2.1186414551515" value="true" />
         </node>
+      </node>
+    </node>
+  </root>
+  <root id="8927638623067326792">
+    <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="8927638623067326794">
+      <property name="text" nameId="tpc2.1073389577007" value="" />
+      <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.EditableStyleClassItem" typeId="tpc2.1186414860679" id="8927638623067326795">
+        <property name="flag" nameId="tpc2.1186414551515" value="true" />
       </node>
     </node>
   </root>
