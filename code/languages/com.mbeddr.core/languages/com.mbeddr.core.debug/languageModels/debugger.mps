@@ -17229,6 +17229,7 @@
     <node role="superclass" roleId="tpee.1165602531693" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="8973067500929668018">
       <link role="classifier" roleId="tpee.1107535924139" targetNodeId="8973067500929635632" resolveInfo="AbstractMappedVariable" />
     </node>
+    <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="8927638623066671761" />
   </root>
   <root id="8973067500929668110">
     <node role="method" roleId="tpee.1107880067339" type="tpee.InstanceMethodDeclaration" typeId="tpee.1068580123165" id="7005568785959188533">

@@ -18,6 +18,7 @@
   <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="4" implicit="yes" />
   <import index="tpib" modelUID="r:00000000-0000-4000-0000-011c8959057f(jetbrains.mps.baseLanguage.logging.structure)" version="0" implicit="yes" />
   <import index="e2lb" modelUID="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" version="-1" implicit="yes" />
+  <import index="ktif" modelUID="r:7581afdf-2eec-4ad5-b583-8a9ab51847f7(com.mbeddr.ext.statemachines.behavior)" version="0" implicit="yes" />
   <roots>
     <node type="tpd4.InferenceRule" typeId="tpd4.1174643105530" id="7851711690674269005">
       <property name="name" nameId="tpck.1169194664001" value="typeof_StatemachineType" />
@@ -1435,8 +1436,8 @@
           <node role="operand" roleId="tpee.1197027771414" type="tpd4.ApplicableNodeReference" typeId="tpd4.1174650418652" id="4420643699735391409">
             <link role="applicableNode" roleId="tpd4.1174650432090" targetNodeId="4420643699735391406" resolveInfo="sm" />
           </node>
-          <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkListAccess" typeId="tp25.1138056282393" id="4420643699735391411">
-            <link role="link" roleId="tp25.1138056546658" targetNodeId="clqz.5633981208992632670" />
+          <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_ConceptMethodCall" typeId="tp25.1179409122411" id="7835233251114915105">
+            <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="ktif.7835233251114903453" resolveInfo="inEvents" />
           </node>
         </node>
       </node>
@@ -1509,8 +1510,8 @@
           <node role="operand" roleId="tpee.1197027771414" type="tpd4.ApplicableNodeReference" typeId="tpd4.1174650418652" id="4420643699735391449">
             <link role="applicableNode" roleId="tpd4.1174650432090" targetNodeId="4420643699735391406" resolveInfo="sm" />
           </node>
-          <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkListAccess" typeId="tp25.1138056282393" id="4420643699735391454">
-            <link role="link" roleId="tp25.1138056546658" targetNodeId="clqz.5633981208992643187" />
+          <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_ConceptMethodCall" typeId="tp25.1179409122411" id="7835233251114915496">
+            <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="ktif.7835233251114903305" resolveInfo="localVariables" />
           </node>
         </node>
       </node>
@@ -1583,8 +1584,8 @@
           <node role="operand" roleId="tpee.1197027771414" type="tpd4.ApplicableNodeReference" typeId="tpd4.1174650418652" id="4420643699735391484">
             <link role="applicableNode" roleId="tpd4.1174650432090" targetNodeId="4420643699735391406" resolveInfo="sm" />
           </node>
-          <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkListAccess" typeId="tp25.1138056282393" id="4420643699735391489">
-            <link role="link" roleId="tp25.1138056546658" targetNodeId="clqz.567269909073788502" />
+          <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_ConceptMethodCall" typeId="tp25.1179409122411" id="7835233251114915301">
+            <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="ktif.7835233251114903476" resolveInfo="outEvents" />
           </node>
         </node>
       </node>
@@ -1657,8 +1658,8 @@
           <node role="operand" roleId="tpee.1197027771414" type="tpd4.ApplicableNodeReference" typeId="tpd4.1174650418652" id="4420643699735391519">
             <link role="applicableNode" roleId="tpd4.1174650432090" targetNodeId="4420643699735391406" resolveInfo="sm" />
           </node>
-          <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkListAccess" typeId="tp25.1138056282393" id="4420643699735391524">
-            <link role="link" roleId="tp25.1138056546658" targetNodeId="clqz.5778488248013533841" />
+          <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_ConceptMethodCall" typeId="tp25.1179409122411" id="7835233251114914987">
+            <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="ktif.7835233251114903501" resolveInfo="states" />
           </node>
         </node>
       </node>

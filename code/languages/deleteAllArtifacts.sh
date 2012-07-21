@@ -11,5 +11,6 @@ ant delete-mps-generated-code
 cd ..
 
 cd com.mbeddr.ext
+ant delete-mps-generated-code
 
 cd ..
