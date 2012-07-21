@@ -203,7 +203,7 @@
           <node role="contents" roleId="x27k.6437088627575722833" type="clqz.Statemachine" typeId="clqz.5778488248013533809" id="4643433264760856313">
             <property name="name" nameId="tpck.1169194664001" value="DummySM" />
             <link role="initial" roleId="clqz.5778488248013533842" targetNodeId="4643433264760856327" resolveInfo="s1" />
-            <node role="inEvents" roleId="clqz.5633981208992632670" type="clqz.InEvent" typeId="clqz.4643433264760980253" id="4643433264761020672">
+            <node role="contents" roleId="clqz.7835233251114737454" type="clqz.InEvent" typeId="clqz.4643433264760980253" id="4643433264761020672">
               <property name="name" nameId="tpck.1169194664001" value="e1" />
               <node role="args" roleId="clqz.1786180596061248896" type="clqz.EventArg" typeId="clqz.1786180596061248885" id="4643433264761063140">
                 <property name="name" nameId="tpck.1169194664001" value="arg" />
@@ -219,7 +219,7 @@
                 </node>
               </node>
             </node>
-            <node role="states" roleId="clqz.5778488248013533841" type="clqz.State" typeId="clqz.5778488248013533839" id="4643433264760856327">
+            <node role="contents" roleId="clqz.7835233251114737454" type="clqz.State" typeId="clqz.5778488248013533839" id="4643433264760856327">
               <property name="name" nameId="tpck.1169194664001" value="s1" />
             </node>
           </node>
