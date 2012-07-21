@@ -5,7 +5,7 @@
   <devkit namespace="24565007-e59f-42fc-ac10-da3836deec1c(com.mbeddr.components)" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="k146" modelUID="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" version="2" implicit="yes" />
-  <import index="v7ag" modelUID="r:9596407c-f27a-49d3-abde-3a66293c5b61(com.mbeddr.ext.components.structure)" version="4" implicit="yes" />
+  <import index="v7ag" modelUID="r:9596407c-f27a-49d3-abde-3a66293c5b61(com.mbeddr.ext.components.structure)" version="5" implicit="yes" />
   <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="17" implicit="yes" />
   <import index="yq40" modelUID="r:152b3fc0-83a1-4bab-a8cd-565eb8483785(com.mbeddr.core.pointers.structure)" version="3" implicit="yes" />
   <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="4" implicit="yes" />
@@ -29,7 +29,7 @@
     <node role="contents" roleId="x27k.6437088627575722833" type="v7ag.AtomicComponent" typeId="v7ag.4491876417845649011" id="8230733038425038007">
       <property name="exported" nameId="x27k.1317894735999272944" value="true" />
       <property name="name" nameId="tpck.1169194664001" value="C" />
-      <node role="contents" roleId="v7ag.4491876417845641672" type="v7ag.Field" typeId="v7ag.5308710777891512019" id="8230733038425718554">
+      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Field" typeId="v7ag.5308710777891512019" id="8230733038425718554">
         <property name="name" nameId="tpck.1169194664001" value="count" />
         <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="8230733038425718555">
           <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
@@ -39,7 +39,7 @@
           <property name="value" nameId="mj1l.8860443239512128104" value="0" />
         </node>
       </node>
-      <node role="contents" roleId="v7ag.4491876417845641672" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="8230733038425038008">
+      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="8230733038425038008">
         <property name="name" nameId="tpck.1169194664001" value="doStuff" />
         <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="8230733038425038009">
           <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="8230733038425038010" />
@@ -49,7 +49,7 @@
           <property name="const" nameId="mj1l.2941277002445651368" value="false" />
         </node>
       </node>
-      <node role="contents" roleId="v7ag.4491876417845641672" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="8230733038425038014">
+      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="8230733038425038014">
         <property name="name" nameId="tpck.1169194664001" value="getStuff" />
         <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="8230733038425038015">
           <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="8230733038425718575">
@@ -83,11 +83,11 @@
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="v7ag.InstanceConfiguration" typeId="v7ag.4491876417845649024" id="8230733038425038025">
       <property name="name" nameId="tpck.1169194664001" value="instances" />
-      <node role="instances" roleId="v7ag.4491876417845649026" type="v7ag.ComponentInstance" typeId="v7ag.4491876417845649014" id="8230733038425038026">
+      <node role="contents" roleId="v7ag.6041318036222235020" type="v7ag.ComponentInstance" typeId="v7ag.4491876417845649014" id="8230733038425038026">
         <property name="name" nameId="tpck.1169194664001" value="c1" />
         <link role="component" roleId="v7ag.4491876417845649015" targetNodeId="8230733038425038007" resolveInfo="C" />
       </node>
-      <node role="instances" roleId="v7ag.4491876417845649026" type="v7ag.ComponentInstance" typeId="v7ag.4491876417845649014" id="8230733038425718552">
+      <node role="contents" roleId="v7ag.6041318036222235020" type="v7ag.ComponentInstance" typeId="v7ag.4491876417845649014" id="8230733038425718552">
         <property name="name" nameId="tpck.1169194664001" value="c2" />
         <link role="component" roleId="v7ag.4491876417845649015" targetNodeId="8230733038425038007" resolveInfo="C" />
       </node>

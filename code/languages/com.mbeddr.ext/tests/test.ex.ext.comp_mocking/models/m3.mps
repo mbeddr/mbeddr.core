@@ -10,7 +10,7 @@
   <language namespace="3bf5377a-e904-4ded-9754-5a516023bfaa(com.mbeddr.core.pointers)" />
   <language namespace="2d7fadf5-33f6-4e80-a78f-0f739add2bde(com.mbeddr.core.buildconfig)" />
   <devkit namespace="24565007-e59f-42fc-ac10-da3836deec1c(com.mbeddr.components)" />
-  <import index="v7ag" modelUID="r:9596407c-f27a-49d3-abde-3a66293c5b61(com.mbeddr.ext.components.structure)" version="4" implicit="yes" />
+  <import index="v7ag" modelUID="r:9596407c-f27a-49d3-abde-3a66293c5b61(com.mbeddr.ext.components.structure)" version="5" implicit="yes" />
   <import index="mxvz" modelUID="r:b92c0a08-d42f-4c78-a3f4-d5f989493286(com.mbeddr.ext.components.mock.structure)" version="-1" implicit="yes" />
   <import index="p7vm" modelUID="r:28fa862e-f94d-4c39-bdf7-a4bdbc773888(com.mbeddr.ext.components.gen_nomw.structure)" version="0" implicit="yes" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
@@ -50,15 +50,15 @@
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="v7ag.AtomicComponent" typeId="v7ag.4491876417845649011" id="8729447926330476743">
       <property name="name" nameId="tpck.1169194664001" value="DataManager" />
-      <node role="ports" roleId="v7ag.4491876417845639958" type="v7ag.ProvidedPort" typeId="v7ag.4491876417845628840" id="8729447926330476744">
+      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.ProvidedPort" typeId="v7ag.4491876417845628840" id="8729447926330476744">
         <property name="name" nameId="tpck.1169194664001" value="acq" />
         <link role="intf" roleId="v7ag.4491876417845484932" targetNodeId="8729447926330476739" resolveInfo="DataAcquisition" />
       </node>
-      <node role="ports" roleId="v7ag.4491876417845639958" type="v7ag.RequiredPort" typeId="v7ag.4491876417845628841" id="8729447926330476746">
+      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.RequiredPort" typeId="v7ag.4491876417845628841" id="8729447926330476746">
         <property name="name" nameId="tpck.1169194664001" value="sensor" />
         <link role="intf" roleId="v7ag.4491876417845484932" targetNodeId="6307143892175816575" resolveInfo="Sensor" />
       </node>
-      <node role="contents" roleId="v7ag.4491876417845641672" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="8729447926330476747">
+      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="8729447926330476747">
         <property name="name" nameId="tpck.1169194664001" value="acq_run" />
         <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="8729447926330476748">
           <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.IfStatement" typeId="c4fa.6275792049641600983" id="8729447926330607729">
@@ -96,11 +96,11 @@
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="mxvz.StubComponent" typeId="mxvz.6307143892175591011" id="6307143892175816627">
       <property name="name" nameId="tpck.1169194664001" value="SensorStub" />
-      <node role="ports" roleId="v7ag.4491876417845639958" type="v7ag.ProvidedPort" typeId="v7ag.4491876417845628840" id="6307143892175816628">
+      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.ProvidedPort" typeId="v7ag.4491876417845628840" id="6307143892175816628">
         <property name="name" nameId="tpck.1169194664001" value="sensor" />
         <link role="intf" roleId="v7ag.4491876417845484932" targetNodeId="6307143892175816575" resolveInfo="Sensor" />
       </node>
-      <node role="contents" roleId="v7ag.4491876417845641672" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="6307143892175909958">
+      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="6307143892175909958">
         <property name="name" nameId="tpck.1169194664001" value="sensor_getValue" />
         <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="6307143892175909959">
           <node role="statements" roleId="c4fa.4185783222026475862" type="x27k.ReturnStatement" typeId="x27k.8967919205527146149" id="6307143892175830875">
@@ -134,7 +134,7 @@
         </node>
         <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int32tType" typeId="mj1l.8463282783691618440" id="6307143892175909962" />
       </node>
-      <node role="contents" roleId="v7ag.4491876417845641672" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="8729447926330523871">
+      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="8729447926330523871">
         <property name="name" nameId="tpck.1169194664001" value="sensor_isReady" />
         <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="8729447926330523872">
           <node role="statements" roleId="c4fa.4185783222026475862" type="x27k.ReturnStatement" typeId="x27k.8967919205527146149" id="8729447926330523876">
@@ -189,15 +189,15 @@
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="v7ag.InstanceConfiguration" typeId="v7ag.4491876417845649024" id="4157464901390188222">
       <property name="name" nameId="tpck.1169194664001" value="instances" />
-      <node role="instances" roleId="v7ag.4491876417845649026" type="v7ag.ComponentInstance" typeId="v7ag.4491876417845649014" id="4157464901390188223">
+      <node role="contents" roleId="v7ag.6041318036222235020" type="v7ag.ComponentInstance" typeId="v7ag.4491876417845649014" id="4157464901390188223">
         <property name="name" nameId="tpck.1169194664001" value="s" />
         <link role="component" roleId="v7ag.4491876417845649015" targetNodeId="6307143892175816627" resolveInfo="SensorStub" />
       </node>
-      <node role="instances" roleId="v7ag.4491876417845649026" type="v7ag.ComponentInstance" typeId="v7ag.4491876417845649014" id="8729447926330607721">
+      <node role="contents" roleId="v7ag.6041318036222235020" type="v7ag.ComponentInstance" typeId="v7ag.4491876417845649014" id="8729447926330607721">
         <property name="name" nameId="tpck.1169194664001" value="m" />
         <link role="component" roleId="v7ag.4491876417845649015" targetNodeId="8729447926330476743" resolveInfo="DataManager" />
       </node>
-      <node role="connectors" roleId="v7ag.4491876417845649027" type="v7ag.Connector" typeId="v7ag.4491876417845649016" id="8729447926330607722">
+      <node role="contents" roleId="v7ag.6041318036222235020" type="v7ag.Connector" typeId="v7ag.4491876417845649016" id="8729447926330607722">
         <node role="source" roleId="v7ag.4491876417845649020" type="v7ag.InstancePortRef" typeId="v7ag.4491876417845649017" id="8729447926330607723">
           <link role="instance" roleId="v7ag.4491876417845649018" targetNodeId="8729447926330607721" resolveInfo="m" />
           <link role="port" roleId="v7ag.4491876417845649019" targetNodeId="8729447926330476746" resolveInfo="sensor" />

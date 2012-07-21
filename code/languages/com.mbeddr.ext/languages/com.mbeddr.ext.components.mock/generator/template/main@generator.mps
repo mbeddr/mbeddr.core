@@ -17,7 +17,7 @@
   <language namespace="b67a6ca0-735e-4903-b238-4b525bddf96a(com.mbeddr.mpsutil.genutil)" />
   <devkit namespace="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   <import index="mxvz" modelUID="r:b92c0a08-d42f-4c78-a3f4-d5f989493286(com.mbeddr.ext.components.mock.structure)" version="-1" />
-  <import index="v7ag" modelUID="r:9596407c-f27a-49d3-abde-3a66293c5b61(com.mbeddr.ext.components.structure)" version="4" />
+  <import index="v7ag" modelUID="r:9596407c-f27a-49d3-abde-3a66293c5b61(com.mbeddr.ext.components.structure)" version="5" />
   <import index="51wr" modelUID="r:b31f1c3c-99aa-4f1e-a329-cba27efb1a6b(com.mbeddr.core.buildconfig.structure)" version="1" />
   <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="1" />
   <import index="3s60" modelUID="r:500efa65-8ecd-4074-9bcc-6e14384fa05d(com.mbeddr.ext.components.mock.behavior)" version="-1" />
@@ -73,7 +73,7 @@
       <node role="ruleConsequence" roleId="tpf8.1169672767469" type="tpf8.InlineTemplateWithContext_RuleConsequence" typeId="tpf8.8900764248744213868" id="4331139697889536483">
         <node role="contentNode" roleId="tpf8.8900764248744213871" type="v7ag.AtomicComponent" typeId="v7ag.4491876417845649011" id="4331139697889536489">
           <property name="name" nameId="tpck.1169194664001" value="Dummy" />
-          <node role="contents" roleId="v7ag.4491876417845641672" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="4331139697889536490">
+          <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="4331139697889536490">
             <property name="name" nameId="tpck.1169194664001" value="dummy" />
             <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="4331139697889536491">
               <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="4331139697889536496">
@@ -129,7 +129,7 @@
           <node role="contents" roleId="x27k.6437088627575722833" type="v7ag.AtomicComponent" typeId="v7ag.4491876417845649011" id="6105672464780927485">
             <property name="exported" nameId="x27k.1317894735999272944" value="true" />
             <property name="name" nameId="tpck.1169194664001" value="ReducedMock" />
-            <node role="contents" roleId="v7ag.4491876417845641672" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="6105672464780927488">
+            <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="6105672464780927488">
               <property name="name" nameId="tpck.1169194664001" value="__validate" />
               <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="6105672464780927489">
                 <node role="statements" roleId="c4fa.4185783222026475862" type="x27k.ReturnStatement" typeId="x27k.8967919205527146149" id="6105672464780927491">
@@ -144,7 +144,7 @@
           </node>
           <node role="contents" roleId="x27k.6437088627575722833" type="v7ag.InstanceConfiguration" typeId="v7ag.4491876417845649024" id="1854993706183439991">
             <property name="name" nameId="tpck.1169194664001" value="C" />
-            <node role="instances" roleId="v7ag.4491876417845649026" type="v7ag.ComponentInstance" typeId="v7ag.4491876417845649014" id="1854993706183439992">
+            <node role="contents" roleId="v7ag.6041318036222235020" type="v7ag.ComponentInstance" typeId="v7ag.4491876417845649014" id="1854993706183439992">
               <property name="name" nameId="tpck.1169194664001" value="m" />
               <link role="component" roleId="v7ag.4491876417845649015" targetNodeId="6105672464780927485" resolveInfo="ReducedMock" />
             </node>
@@ -241,7 +241,7 @@
           </node>
           <node role="contents" roleId="x27k.6437088627575722833" type="v7ag.InstanceConfiguration" typeId="v7ag.4491876417845649024" id="1252295221377553224">
             <property name="name" nameId="tpck.1169194664001" value="config" />
-            <node role="instances" roleId="v7ag.4491876417845649026" type="v7ag.ComponentInstance" typeId="v7ag.4491876417845649014" id="1252295221377553225">
+            <node role="contents" roleId="v7ag.6041318036222235020" type="v7ag.ComponentInstance" typeId="v7ag.4491876417845649014" id="1252295221377553225">
               <property name="name" nameId="tpck.1169194664001" value="c" />
               <link role="component" roleId="v7ag.4491876417845649015" targetNodeId="1252295221377553222" resolveInfo="Comp" />
               <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.TemplateFragment" typeId="tpf8.1095672379244" id="1252295221377553226" />
@@ -592,6 +592,24 @@
       </node>
       <node role="contents" roleId="x27k.6437088627575722833" type="v7ag.AtomicComponent" typeId="v7ag.4491876417845649011" id="2151335435833470679">
         <property name="name" nameId="tpck.1169194664001" value="MockReduction" />
+        <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.ProvidedPort" typeId="v7ag.4491876417845628840" id="2151335435833470691">
+          <property name="name" nameId="tpck.1169194664001" value="proport" />
+          <link role="intf" roleId="v7ag.4491876417845484932" targetNodeId="2151335435833470743" resolveInfo="DummyInterface" />
+          <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.CopySrcListMacro" typeId="tpf8.1114729360583" id="2151335435833470745">
+            <node role="sourceNodesQuery" roleId="tpf8.1168278589236" type="tpf8.SourceSubstituteMacro_SourceNodesQuery" typeId="tpf8.1167951910403" id="2151335435833470748">
+              <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="2151335435833470749">
+                <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="2151335435833470750">
+                  <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="2151335435833470751">
+                    <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_ConceptMethodCall" typeId="tp25.1179409122411" id="6041318036221952983">
+                      <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="eup9.6041318036221943116" resolveInfo="ports" />
+                    </node>
+                    <node role="operand" roleId="tpee.1197027771414" type="tpf8.TemplateFunctionParameter_sourceNode" typeId="tpf8.1167169188348" id="2151335435833470753" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
         <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.TemplateFragment" typeId="tpf8.1095672379244" id="2151335435833470680" />
         <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.PropertyMacro" typeId="tpf8.1087833241328" id="2151335435833470681">
           <property name="propertyName" nameId="tpck.1757699476691236117" value="name" />
@@ -608,31 +626,13 @@
             </node>
           </node>
         </node>
-        <node role="ports" roleId="v7ag.4491876417845639958" type="v7ag.ProvidedPort" typeId="v7ag.4491876417845628840" id="2151335435833470691">
-          <property name="name" nameId="tpck.1169194664001" value="proport" />
-          <link role="intf" roleId="v7ag.4491876417845484932" targetNodeId="2151335435833470743" resolveInfo="DummyInterface" />
-          <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.CopySrcListMacro" typeId="tpf8.1114729360583" id="2151335435833470745">
-            <node role="sourceNodesQuery" roleId="tpf8.1168278589236" type="tpf8.SourceSubstituteMacro_SourceNodesQuery" typeId="tpf8.1167951910403" id="2151335435833470748">
-              <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="2151335435833470749">
-                <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="2151335435833470750">
-                  <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="2151335435833470751">
-                    <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkListAccess" typeId="tp25.1138056282393" id="2151335435833470752">
-                      <link role="link" roleId="tp25.1138056546658" targetNodeId="v7ag.4491876417845639958" />
-                    </node>
-                    <node role="operand" roleId="tpee.1197027771414" type="tpf8.TemplateFunctionParameter_sourceNode" typeId="tpf8.1167169188348" id="2151335435833470753" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node role="contents" roleId="v7ag.4491876417845641672" type="v7ag.Field" typeId="v7ag.5308710777891512019" id="7841826218425767092">
+        <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Field" typeId="v7ag.5308710777891512019" id="7841826218425767092">
           <property name="name" nameId="tpck.1169194664001" value="___data" />
           <node role="type" roleId="mj1l.318113533128716676" type="clbe.StructType" typeId="clbe.6394819151180597816" id="1252295221377473968">
             <link role="struct" roleId="clbe.6394819151180597817" targetNodeId="7841826218425767116" resolveInfo="MockData" />
           </node>
         </node>
-        <node role="contents" roleId="v7ag.4491876417845641672" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="1252295221377549529">
+        <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="1252295221377549529">
           <property name="name" nameId="tpck.1169194664001" value="__validate" />
           <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="1252295221377549530">
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="4957503999940769668">
@@ -810,8 +810,8 @@
                     <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="1854993706183602435">
                       <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="1854993706183602437">
                         <node role="operand" roleId="tpee.1197027771414" type="tpf8.TemplateFunctionParameter_sourceNode" typeId="tpf8.1167169188348" id="1854993706183602436" />
-                        <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkListAccess" typeId="tp25.1138056282393" id="1854993706183602441">
-                          <link role="link" roleId="tp25.1138056546658" targetNodeId="mxvz.2151335435833308543" />
+                        <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_ConceptMethodCall" typeId="tp25.1179409122411" id="6041318036222176292">
+                          <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="3s60.6041318036222176107" resolveInfo="expectations" />
                         </node>
                       </node>
                     </node>
@@ -1046,7 +1046,7 @@
           </node>
           <node role="type" roleId="mj1l.318113533128716676" type="mj1l.BooleanType" typeId="mj1l.8860443239512128058" id="1252295221377549539" />
         </node>
-        <node role="contents" roleId="v7ag.4491876417845641672" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="4957503999940715097">
+        <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="4957503999940715097">
           <property name="name" nameId="tpck.1169194664001" value="init" />
           <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="4957503999940715098">
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="22102029902643392">
@@ -1068,7 +1068,7 @@
           <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="4957503999940715100" />
           <node role="trigger" roleId="v7ag.4491876417845643892" type="v7ag.OnInitTrigger" typeId="v7ag.4643433264761566506" id="4957503999940715109" />
         </node>
-        <node role="contents" roleId="v7ag.4491876417845641672" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="2151335435833470756">
+        <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="2151335435833470756">
           <property name="name" nameId="tpck.1169194664001" value="dummy" />
           <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="2151335435833470757">
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="4957503999941137039">
@@ -1684,16 +1684,18 @@
                     </node>
                   </node>
                 </node>
-                <node role="statement" roleId="tpee.1068581517665" type="tpee.LocalVariableDeclarationStatement" typeId="tpee.1068581242864" id="2151335435833470907">
-                  <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="2151335435833470908">
+                <node role="statement" roleId="tpee.1068581517665" type="tpee.LocalVariableDeclarationStatement" typeId="tpee.1068581242864" id="6041318036222090037">
+                  <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="6041318036222090038">
                     <property name="name" nameId="tpck.1169194664001" value="ports" />
-                    <node role="type" roleId="tpee.5680397130376446158" type="tp25.SNodeListType" typeId="tp25.1145383075378" id="2151335435833470909">
-                      <link role="elementConcept" roleId="tp25.1145383142433" targetNodeId="v7ag.4491876417845484930" resolveInfo="Port" />
+                    <node role="type" roleId="tpee.5680397130376446158" type="tp2q.SequenceType" typeId="tp2q.1151689724996" id="6041318036222090039">
+                      <node role="elementType" roleId="tp2q.1151689745422" type="tp25.SNodeType" typeId="tp25.1138055754698" id="6041318036222090040">
+                        <link role="concept" roleId="tp25.1138405853777" targetNodeId="v7ag.4491876417845484930" resolveInfo="Port" />
+                      </node>
                     </node>
-                    <node role="initializer" roleId="tpee.1068431790190" type="tpee.DotExpression" typeId="tpee.1197027756228" id="2151335435833470910">
-                      <node role="operand" roleId="tpee.1197027771414" type="tpf8.TemplateFunctionParameter_sourceNode" typeId="tpf8.1167169188348" id="2151335435833470911" />
-                      <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkListAccess" typeId="tp25.1138056282393" id="2151335435833470912">
-                        <link role="link" roleId="tp25.1138056546658" targetNodeId="v7ag.4491876417845639958" />
+                    <node role="initializer" roleId="tpee.1068431790190" type="tpee.DotExpression" typeId="tpee.1197027756228" id="6041318036222090041">
+                      <node role="operand" roleId="tpee.1197027771414" type="tpf8.TemplateFunctionParameter_sourceNode" typeId="tpf8.1167169188348" id="6041318036222090042" />
+                      <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_ConceptMethodCall" typeId="tp25.1179409122411" id="6041318036222090043">
+                        <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="eup9.6041318036221943116" resolveInfo="ports" />
                       </node>
                     </node>
                   </node>
@@ -1704,7 +1706,7 @@
                   </node>
                   <node role="inputSequence" roleId="tp2q.1153944424730" type="tpee.DotExpression" typeId="tpee.1197027756228" id="2151335435833470985">
                     <node role="operand" roleId="tpee.1197027771414" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="2151335435833470928">
-                      <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="2151335435833470908" resolveInfo="ports" />
+                      <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="6041318036222090038" resolveInfo="ports" />
                     </node>
                     <node role="operation" roleId="tpee.1197027833540" type="tp2q.WhereOperation" typeId="tp2q.1202120902084" id="2151335435833470992">
                       <node role="closure" roleId="tp2q.1204796294226" type="tp2c.ClosureLiteral" typeId="tp2c.1199569711397" id="2151335435833470993">
@@ -2143,6 +2145,24 @@
       </node>
       <node role="contents" roleId="x27k.6437088627575722833" type="v7ag.AtomicComponent" typeId="v7ag.4491876417845649011" id="6307143892175886595">
         <property name="name" nameId="tpck.1169194664001" value="Component" />
+        <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.ProvidedPort" typeId="v7ag.4491876417845628840" id="6307143892175886618">
+          <property name="name" nameId="tpck.1169194664001" value="pp" />
+          <link role="intf" roleId="v7ag.4491876417845484932" targetNodeId="6307143892175886620" resolveInfo="Intf" />
+          <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.CopySrcListMacro" typeId="tpf8.1114729360583" id="6307143892175886622">
+            <node role="sourceNodesQuery" roleId="tpf8.1168278589236" type="tpf8.SourceSubstituteMacro_SourceNodesQuery" typeId="tpf8.1167951910403" id="6307143892175886625">
+              <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="6307143892175886626">
+                <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="6307143892175886627">
+                  <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="6307143892175886628">
+                    <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_ConceptMethodCall" typeId="tp25.1179409122411" id="6041318036221953024">
+                      <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="eup9.6041318036221943116" resolveInfo="ports" />
+                    </node>
+                    <node role="operand" roleId="tpee.1197027771414" type="tpf8.TemplateFunctionParameter_sourceNode" typeId="tpf8.1167169188348" id="6307143892175886630" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
         <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.TemplateFragment" typeId="tpf8.1095672379244" id="6307143892175886596" />
         <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.PropertyMacro" typeId="tpf8.1087833241328" id="6307143892175886608">
           <property name="propertyName" nameId="tpck.1757699476691236117" value="name" />
@@ -2159,29 +2179,11 @@
             </node>
           </node>
         </node>
-        <node role="ports" roleId="v7ag.4491876417845639958" type="v7ag.ProvidedPort" typeId="v7ag.4491876417845628840" id="6307143892175886618">
-          <property name="name" nameId="tpck.1169194664001" value="pp" />
-          <link role="intf" roleId="v7ag.4491876417845484932" targetNodeId="6307143892175886620" resolveInfo="Intf" />
-          <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.CopySrcListMacro" typeId="tpf8.1114729360583" id="6307143892175886622">
-            <node role="sourceNodesQuery" roleId="tpf8.1168278589236" type="tpf8.SourceSubstituteMacro_SourceNodesQuery" typeId="tpf8.1167951910403" id="6307143892175886625">
-              <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="6307143892175886626">
-                <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="6307143892175886627">
-                  <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="6307143892175886628">
-                    <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkListAccess" typeId="tp25.1138056282393" id="6307143892175886629">
-                      <link role="link" roleId="tp25.1138056546658" targetNodeId="v7ag.4491876417845639958" />
-                    </node>
-                    <node role="operand" roleId="tpee.1197027771414" type="tpf8.TemplateFunctionParameter_sourceNode" typeId="tpf8.1167169188348" id="6307143892175886630" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node role="contents" roleId="v7ag.4491876417845641672" type="v7ag.Field" typeId="v7ag.5308710777891512019" id="6307143892175905399">
+        <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Field" typeId="v7ag.5308710777891512019" id="6307143892175905399">
           <property name="name" nameId="tpck.1169194664001" value="___totalCallCount" />
           <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int16tType" typeId="mj1l.8463282783691618435" id="6307143892175905401" />
         </node>
-        <node role="contents" roleId="v7ag.4491876417845641672" type="v7ag.Field" typeId="v7ag.5308710777891512019" id="6307143892175905403">
+        <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Field" typeId="v7ag.5308710777891512019" id="6307143892175905403">
           <property name="name" nameId="tpck.1169194664001" value="___portCallCount" />
           <node role="type" roleId="mj1l.318113533128716676" type="yq40.ArrayType" typeId="yq40.5679441017214012545" id="6307143892175905406">
             <node role="baseType" roleId="yq40.5679441017214012546" type="mj1l.Int16tType" typeId="mj1l.8463282783691618435" id="6307143892175905405" />
@@ -2190,7 +2192,7 @@
             </node>
           </node>
         </node>
-        <node role="contents" roleId="v7ag.4491876417845641672" type="v7ag.Field" typeId="v7ag.5308710777891512019" id="6307143892175905838">
+        <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Field" typeId="v7ag.5308710777891512019" id="6307143892175905838">
           <property name="name" nameId="tpck.1169194664001" value="___opCallCount" />
           <node role="type" roleId="mj1l.318113533128716676" type="yq40.ArrayType" typeId="yq40.5679441017214012545" id="6307143892175905903">
             <node role="baseType" roleId="yq40.5679441017214012546" type="mj1l.Int16tType" typeId="mj1l.8463282783691618435" id="6307143892175905902" />
@@ -2199,7 +2201,7 @@
             </node>
           </node>
         </node>
-        <node role="contents" roleId="v7ag.4491876417845641672" type="v7ag.Field" typeId="v7ag.5308710777891512019" id="2319970887606709420">
+        <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Field" typeId="v7ag.5308710777891512019" id="2319970887606709420">
           <property name="name" nameId="tpck.1169194664001" value="___phase" />
           <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int16tType" typeId="mj1l.8463282783691618435" id="2319970887606709434" />
           <node role="init" roleId="v7ag.5308710777891512022" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2319970887606709436">
@@ -2223,7 +2225,7 @@
             </node>
           </node>
         </node>
-        <node role="contents" roleId="v7ag.4491876417845641672" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="6307143892175911051">
+        <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="6307143892175911051">
           <property name="name" nameId="tpck.1169194664001" value="___initCounters" />
           <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="6307143892175911052">
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="22102029902643194">
@@ -2356,7 +2358,7 @@
           <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="6307143892175911054" />
           <node role="trigger" roleId="v7ag.4491876417845643892" type="v7ag.OnInitTrigger" typeId="v7ag.4643433264761566506" id="6307143892175911055" />
         </node>
-        <node role="contents" roleId="v7ag.4491876417845641672" type="v7ag.Field" typeId="v7ag.5308710777891512019" id="785275130114785330">
+        <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Field" typeId="v7ag.5308710777891512019" id="785275130114785330">
           <property name="name" nameId="tpck.1169194664001" value="x" />
           <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="785275130114785340" />
           <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.CopySrcListMacro" typeId="tpf8.1114729360583" id="785275130114785342">
@@ -2367,7 +2369,7 @@
                     <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="785275130114785348">
                       <node role="operand" roleId="tpee.1197027771414" type="tpf8.TemplateFunctionParameter_sourceNode" typeId="tpf8.1167169188348" id="785275130114785346" />
                       <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkListAccess" typeId="tp25.1138056282393" id="785275130114785352">
-                        <link role="link" roleId="tp25.1138056546658" targetNodeId="v7ag.4491876417845641672" />
+                        <link role="link" roleId="tp25.1138056546658" targetNodeId="v7ag.6041318036221669720" />
                       </node>
                     </node>
                     <node role="operation" roleId="tpee.1197027833540" type="tp2q.DisjunctOperation" typeId="tp2q.1205598340672" id="785275130114785359">
@@ -2384,7 +2386,7 @@
             </node>
           </node>
         </node>
-        <node role="contents" roleId="v7ag.4491876417845641672" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="6307143892175886631">
+        <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="6307143892175886631">
           <property name="name" nameId="tpck.1169194664001" value="dummy" />
           <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="6307143892175886632">
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="8729447926330428135">
@@ -2794,11 +2796,11 @@
       <node role="ruleConsequence" roleId="tpf8.1169672767469" type="tpf8.InlineTemplateWithContext_RuleConsequence" typeId="tpf8.8900764248744213868" id="6307143892175910626">
         <node role="contentNode" roleId="tpf8.8900764248744213871" type="v7ag.AtomicComponent" typeId="v7ag.4491876417845649011" id="6307143892175910628">
           <property name="name" nameId="tpck.1169194664001" value="Component" />
-          <node role="contents" roleId="v7ag.4491876417845641672" type="v7ag.Field" typeId="v7ag.5308710777891512019" id="6307143892175910645">
+          <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Field" typeId="v7ag.5308710777891512019" id="6307143892175910645">
             <property name="name" nameId="tpck.1169194664001" value="___totalCallCount" />
             <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int16tType" typeId="mj1l.8463282783691618435" id="6307143892175910646" />
           </node>
-          <node role="contents" roleId="v7ag.4491876417845641672" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="6307143892175910715">
+          <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="6307143892175910715">
             <property name="name" nameId="tpck.1169194664001" value="dummy" />
             <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="6307143892175910716">
               <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="6307143892175910983">
@@ -2820,7 +2822,7 @@
       <node role="ruleConsequence" roleId="tpf8.1169672767469" type="tpf8.InlineTemplateWithContext_RuleConsequence" typeId="tpf8.8900764248744213868" id="4157464901390183130">
         <node role="contentNode" roleId="tpf8.8900764248744213871" type="v7ag.AtomicComponent" typeId="v7ag.4491876417845649011" id="4157464901390183131">
           <property name="name" nameId="tpck.1169194664001" value="Component" />
-          <node role="contents" roleId="v7ag.4491876417845641672" type="v7ag.Field" typeId="v7ag.5308710777891512019" id="4157464901390183142">
+          <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Field" typeId="v7ag.5308710777891512019" id="4157464901390183142">
             <property name="name" nameId="tpck.1169194664001" value="___portCallCount" />
             <node role="type" roleId="mj1l.318113533128716676" type="yq40.ArrayType" typeId="yq40.5679441017214012545" id="4157464901390183143">
               <node role="baseType" roleId="yq40.5679441017214012546" type="mj1l.Int16tType" typeId="mj1l.8463282783691618435" id="4157464901390183144" />
@@ -2829,7 +2831,7 @@
               </node>
             </node>
           </node>
-          <node role="contents" roleId="v7ag.4491876417845641672" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="4157464901390183134">
+          <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="4157464901390183134">
             <property name="name" nameId="tpck.1169194664001" value="dummy" />
             <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="4157464901390183135">
               <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="4157464901390183136">
@@ -2936,7 +2938,7 @@
       <node role="ruleConsequence" roleId="tpf8.1169672767469" type="tpf8.InlineTemplateWithContext_RuleConsequence" typeId="tpf8.8900764248744213868" id="4157464901390185253">
         <node role="contentNode" roleId="tpf8.8900764248744213871" type="v7ag.AtomicComponent" typeId="v7ag.4491876417845649011" id="4157464901390185254">
           <property name="name" nameId="tpck.1169194664001" value="Component" />
-          <node role="contents" roleId="v7ag.4491876417845641672" type="v7ag.Field" typeId="v7ag.5308710777891512019" id="4157464901390185255">
+          <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Field" typeId="v7ag.5308710777891512019" id="4157464901390185255">
             <property name="name" nameId="tpck.1169194664001" value="___opCallCount" />
             <node role="type" roleId="mj1l.318113533128716676" type="yq40.ArrayType" typeId="yq40.5679441017214012545" id="4157464901390185256">
               <node role="baseType" roleId="yq40.5679441017214012546" type="mj1l.Int16tType" typeId="mj1l.8463282783691618435" id="4157464901390185257" />
@@ -2945,7 +2947,7 @@
               </node>
             </node>
           </node>
-          <node role="contents" roleId="v7ag.4491876417845641672" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="4157464901390185259">
+          <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="4157464901390185259">
             <property name="name" nameId="tpck.1169194664001" value="dummy" />
             <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="4157464901390185260">
               <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="4157464901390185261">
@@ -3140,14 +3142,14 @@
           <property name="name" nameId="tpck.1169194664001" value="Dummy" />
           <node role="contents" roleId="x27k.6437088627575722833" type="v7ag.AtomicComponent" typeId="v7ag.4491876417845649011" id="2319970887606709458">
             <property name="name" nameId="tpck.1169194664001" value="Dummy" />
-            <node role="contents" roleId="v7ag.4491876417845641672" type="v7ag.Field" typeId="v7ag.5308710777891512019" id="2319970887606709459">
+            <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Field" typeId="v7ag.5308710777891512019" id="2319970887606709459">
               <property name="name" nameId="tpck.1169194664001" value="___phase" />
               <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int16tType" typeId="mj1l.8463282783691618435" id="2319970887606709461" />
               <node role="init" roleId="v7ag.5308710777891512022" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2319970887606709463">
                 <property name="value" nameId="mj1l.8860443239512128104" value="0" />
               </node>
             </node>
-            <node role="contents" roleId="v7ag.4491876417845641672" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="2319970887606709465">
+            <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="2319970887606709465">
               <property name="name" nameId="tpck.1169194664001" value="dummy" />
               <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="2319970887606709466">
                 <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="2319970887606709469">

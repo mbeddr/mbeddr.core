@@ -10,7 +10,7 @@
   <language namespace="2d7fadf5-33f6-4e80-a78f-0f739add2bde(com.mbeddr.core.buildconfig)" />
   <language namespace="2693fc71-9b0e-4b05-ab13-f57227d675f2(com.mbeddr.core.util)" />
   <devkit namespace="24565007-e59f-42fc-ac10-da3836deec1c(com.mbeddr.components)" />
-  <import index="v7ag" modelUID="r:9596407c-f27a-49d3-abde-3a66293c5b61(com.mbeddr.ext.components.structure)" version="4" implicit="yes" />
+  <import index="v7ag" modelUID="r:9596407c-f27a-49d3-abde-3a66293c5b61(com.mbeddr.ext.components.structure)" version="5" implicit="yes" />
   <import index="p7vm" modelUID="r:28fa862e-f94d-4c39-bdf7-a4bdbc773888(com.mbeddr.ext.components.gen_nomw.structure)" version="0" implicit="yes" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="yq40" modelUID="r:152b3fc0-83a1-4bab-a8cd-565eb8483785(com.mbeddr.core.pointers.structure)" version="3" implicit="yes" />
@@ -123,11 +123,11 @@
     <node role="contents" roleId="x27k.6437088627575722833" type="v7ag.AtomicComponent" typeId="v7ag.4491876417845649011" id="8922663937488690190">
       <property name="name" nameId="tpck.1169194664001" value="LowLevelCode" />
       <property name="exported" nameId="x27k.1317894735999272944" value="true" />
-      <node role="ports" roleId="v7ag.4491876417845639958" type="v7ag.ProvidedPort" typeId="v7ag.4491876417845628840" id="8922663937488690191">
+      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.ProvidedPort" typeId="v7ag.4491876417845628840" id="8922663937488690191">
         <property name="name" nameId="tpck.1169194664001" value="ll" />
         <link role="intf" roleId="v7ag.4491876417845484932" targetNodeId="8922663937488690183" resolveInfo="ILowLevel" />
       </node>
-      <node role="contents" roleId="v7ag.4491876417845641672" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="8922663937488690193">
+      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="8922663937488690193">
         <property name="name" nameId="tpck.1169194664001" value="ll_doSomeLowlevelStuff" />
         <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="8922663937488690194">
           <node role="statements" roleId="c4fa.4185783222026475862" type="x27k.ReturnStatement" typeId="x27k.8967919205527146149" id="4458342957759743017">
@@ -151,11 +151,11 @@
       <property name="name" nameId="tpck.1169194664001" value="Driver" />
       <property name="abstract" nameId="v7ag.4491876417845695003" value="true" />
       <property name="exported" nameId="x27k.1317894735999272944" value="true" />
-      <node role="ports" roleId="v7ag.4491876417845639958" type="v7ag.ProvidedPort" typeId="v7ag.4491876417845628840" id="8105003328815233157">
+      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.ProvidedPort" typeId="v7ag.4491876417845628840" id="8105003328815233157">
         <property name="name" nameId="tpck.1169194664001" value="cmd" />
         <link role="intf" roleId="v7ag.4491876417845484932" targetNodeId="8105003328815194793" resolveInfo="IDriver" />
       </node>
-      <node role="contents" roleId="v7ag.4491876417845641672" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="8105003328815412009">
+      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="8105003328815412009">
         <property name="name" nameId="tpck.1169194664001" value="setDriverValue" />
         <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="8105003328815412010">
           <node role="statements" roleId="c4fa.4185783222026475862" type="x27k.ReturnStatement" typeId="x27k.8967919205527146149" id="899185318197565585">
@@ -184,14 +184,31 @@
       <property name="abstract" nameId="v7ag.4491876417845695003" value="false" />
       <property name="exported" nameId="x27k.1317894735999272944" value="true" />
       <link role="baseComponent" roleId="v7ag.4491876417845678669" targetNodeId="8105003328815233156" resolveInfo="Driver" />
-      <node role="contents" roleId="v7ag.4491876417845641672" type="v7ag.Field" typeId="v7ag.5308710777891512019" id="5308710777891565555">
+      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.ProvidedPort" typeId="v7ag.4491876417845628840" id="5308710777891623520">
+        <property name="name" nameId="tpck.1169194664001" value="diag" />
+        <link role="intf" roleId="v7ag.4491876417845484932" targetNodeId="5308710777891623522" resolveInfo="IDiagnostic" />
+      </node>
+      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.RequiredPort" typeId="v7ag.4491876417845628841" id="5308710777891692710">
+        <property name="name" nameId="tpck.1169194664001" value="logger" />
+        <property name="optional" nameId="v7ag.349917904115138509" value="true" />
+        <link role="intf" roleId="v7ag.4491876417845484932" targetNodeId="5308710777891692706" resolveInfo="ILogger" />
+      </node>
+      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.RequiredPort" typeId="v7ag.4491876417845628841" id="8922663937488690187">
+        <property name="name" nameId="tpck.1169194664001" value="lowlevel" />
+        <link role="intf" roleId="v7ag.4491876417845484932" targetNodeId="8922663937488690183" resolveInfo="ILowLevel" />
+        <node role="restriction" roleId="v7ag.8922663937488545449" type="v7ag.RequiredPortRestriction" typeId="v7ag.8922663937488423832" id="8922663937488690188">
+          <link role="component" roleId="v7ag.8922663937488423833" targetNodeId="8922663937488690190" resolveInfo="LowLevelCode" />
+          <link role="providedPort" roleId="v7ag.3151699502282407541" targetNodeId="8922663937488690191" resolveInfo="ll" />
+        </node>
+      </node>
+      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Field" typeId="v7ag.5308710777891512019" id="5308710777891565555">
         <property name="name" nameId="tpck.1169194664001" value="count" />
         <node role="init" roleId="v7ag.5308710777891512022" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="5308710777891565559">
           <property name="value" nameId="mj1l.8860443239512128104" value="0" />
         </node>
         <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="5708867820618978828" />
       </node>
-      <node role="contents" roleId="v7ag.4491876417845641672" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="9146329806094299627">
+      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="9146329806094299627">
         <property name="name" nameId="tpck.1169194664001" value="setDriverValue" />
         <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="9146329806094299628">
           <node role="statements" roleId="c4fa.4185783222026475862" type="v7ag.WhenPortConnectedStatement" typeId="v7ag.5308710777891663531" id="349917904115236316">
@@ -248,7 +265,7 @@
           <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="5708867820621171368" />
         </node>
       </node>
-      <node role="contents" roleId="v7ag.4491876417845641672" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="5104882350373546065">
+      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="5104882350373546065">
         <property name="name" nameId="tpck.1169194664001" value="diag_getCount" />
         <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="5104882350373546066">
           <node role="statements" roleId="c4fa.4185783222026475862" type="x27k.ReturnStatement" typeId="x27k.8967919205527146149" id="5104882350373546070">
@@ -263,36 +280,19 @@
         </node>
         <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="5708867820622277907" />
       </node>
-      <node role="ports" roleId="v7ag.4491876417845639958" type="v7ag.ProvidedPort" typeId="v7ag.4491876417845628840" id="5308710777891623520">
-        <property name="name" nameId="tpck.1169194664001" value="diag" />
-        <link role="intf" roleId="v7ag.4491876417845484932" targetNodeId="5308710777891623522" resolveInfo="IDiagnostic" />
-      </node>
-      <node role="ports" roleId="v7ag.4491876417845639958" type="v7ag.RequiredPort" typeId="v7ag.4491876417845628841" id="5308710777891692710">
-        <property name="name" nameId="tpck.1169194664001" value="logger" />
-        <property name="optional" nameId="v7ag.349917904115138509" value="true" />
-        <link role="intf" roleId="v7ag.4491876417845484932" targetNodeId="5308710777891692706" resolveInfo="ILogger" />
-      </node>
-      <node role="ports" roleId="v7ag.4491876417845639958" type="v7ag.RequiredPort" typeId="v7ag.4491876417845628841" id="8922663937488690187">
-        <property name="name" nameId="tpck.1169194664001" value="lowlevel" />
-        <link role="intf" roleId="v7ag.4491876417845484932" targetNodeId="8922663937488690183" resolveInfo="ILowLevel" />
-        <node role="restriction" roleId="v7ag.8922663937488545449" type="v7ag.RequiredPortRestriction" typeId="v7ag.8922663937488423832" id="8922663937488690188">
-          <link role="component" roleId="v7ag.8922663937488423833" targetNodeId="8922663937488690190" resolveInfo="LowLevelCode" />
-          <link role="providedPort" roleId="v7ag.3151699502282407541" targetNodeId="8922663937488690191" resolveInfo="ll" />
-        </node>
-      </node>
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="v7ag.AtomicComponent" typeId="v7ag.4491876417845649011" id="8105003328814702535">
       <property name="name" nameId="tpck.1169194664001" value="TrafficLights" />
       <property name="exported" nameId="x27k.1317894735999272944" value="true" />
-      <node role="ports" roleId="v7ag.4491876417845639958" type="v7ag.RequiredPort" typeId="v7ag.4491876417845628841" id="8105003328815208360">
-        <property name="name" nameId="tpck.1169194664001" value="driver" />
-        <link role="intf" roleId="v7ag.4491876417845484932" targetNodeId="8105003328815194793" resolveInfo="IDriver" />
-      </node>
-      <node role="ports" roleId="v7ag.4491876417845639958" type="v7ag.ProvidedPort" typeId="v7ag.4491876417845628840" id="8105003328814646287">
+      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.ProvidedPort" typeId="v7ag.4491876417845628840" id="8105003328814646287">
         <property name="name" nameId="tpck.1169194664001" value="tl" />
         <link role="intf" roleId="v7ag.4491876417845484932" targetNodeId="8105003328814646289" resolveInfo="ITrafficLights" />
       </node>
-      <node role="contents" roleId="v7ag.4491876417845641672" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="1302968767135003906">
+      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.RequiredPort" typeId="v7ag.4491876417845628841" id="8105003328815208360">
+        <property name="name" nameId="tpck.1169194664001" value="driver" />
+        <link role="intf" roleId="v7ag.4491876417845484932" targetNodeId="8105003328815194793" resolveInfo="IDriver" />
+      </node>
+      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="1302968767135003906">
         <property name="name" nameId="tpck.1169194664001" value="helper" />
         <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="1302968767135003907">
           <node role="statements" roleId="c4fa.4185783222026475862" type="x27k.ReturnStatement" typeId="x27k.8967919205527146149" id="1302968767135054242">
@@ -303,7 +303,7 @@
         </node>
         <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="5708867820622277904" />
       </node>
-      <node role="contents" roleId="v7ag.4491876417845641672" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="8105003328814679423">
+      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="8105003328814679423">
         <property name="name" nameId="tpck.1169194664001" value="setColor" />
         <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="8105003328814679424">
           <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="1302968767135054237">
@@ -397,11 +397,11 @@
     <node role="contents" roleId="x27k.6437088627575722833" type="v7ag.AtomicComponent" typeId="v7ag.4491876417845649011" id="7265387141425485014">
       <property name="exported" nameId="x27k.1317894735999272944" value="true" />
       <property name="name" nameId="tpck.1169194664001" value="Logger" />
-      <node role="ports" roleId="v7ag.4491876417845639958" type="v7ag.ProvidedPort" typeId="v7ag.4491876417845628840" id="7265387141425485015">
+      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.ProvidedPort" typeId="v7ag.4491876417845628840" id="7265387141425485015">
         <property name="name" nameId="tpck.1169194664001" value="logger" />
         <link role="intf" roleId="v7ag.4491876417845484932" targetNodeId="5308710777891692706" resolveInfo="ILogger" />
       </node>
-      <node role="contents" roleId="v7ag.4491876417845641672" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="7265387141425485016">
+      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="7265387141425485016">
         <property name="name" nameId="tpck.1169194664001" value="logger_log" />
         <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="7265387141425485017">
           <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="7265387141425485026">
@@ -427,31 +427,31 @@
   <root id="8105003328815229428">
     <node role="contents" roleId="x27k.6437088627575722833" type="v7ag.InstanceConfiguration" typeId="v7ag.4491876417845649024" id="8105003328815035752">
       <property name="name" nameId="tpck.1169194664001" value="default" />
-      <node role="instances" roleId="v7ag.4491876417845649026" type="v7ag.ComponentInstance" typeId="v7ag.4491876417845649014" id="9146329806094299637">
+      <node role="contents" roleId="v7ag.6041318036222235020" type="v7ag.ComponentInstance" typeId="v7ag.4491876417845649014" id="9146329806094299637">
         <property name="name" nameId="tpck.1169194664001" value="lights" />
         <link role="component" roleId="v7ag.4491876417845649015" targetNodeId="8105003328814702535" resolveInfo="TrafficLights" />
       </node>
-      <node role="instances" roleId="v7ag.4491876417845649026" type="v7ag.ComponentInstance" typeId="v7ag.4491876417845649014" id="591155063063651674">
+      <node role="contents" roleId="v7ag.6041318036222235020" type="v7ag.ComponentInstance" typeId="v7ag.4491876417845649014" id="591155063063651674">
         <property name="name" nameId="tpck.1169194664001" value="lights2" />
         <link role="component" roleId="v7ag.4491876417845649015" targetNodeId="8105003328814702535" resolveInfo="TrafficLights" />
       </node>
-      <node role="instances" roleId="v7ag.4491876417845649026" type="v7ag.ComponentInstance" typeId="v7ag.4491876417845649014" id="8922663937488698561">
+      <node role="contents" roleId="v7ag.6041318036222235020" type="v7ag.ComponentInstance" typeId="v7ag.4491876417845649014" id="8922663937488698561">
         <property name="name" nameId="tpck.1169194664001" value="ll" />
         <link role="component" roleId="v7ag.4491876417845649015" targetNodeId="8922663937488690190" resolveInfo="LowLevelCode" />
       </node>
-      <node role="instances" roleId="v7ag.4491876417845649026" type="v7ag.ComponentInstance" typeId="v7ag.4491876417845649014" id="8105003328815233154">
+      <node role="contents" roleId="v7ag.6041318036222235020" type="v7ag.ComponentInstance" typeId="v7ag.4491876417845649014" id="8105003328815233154">
         <property name="name" nameId="tpck.1169194664001" value="driver" />
         <link role="component" roleId="v7ag.4491876417845649015" targetNodeId="8105003328815233156" resolveInfo="Driver" />
       </node>
-      <node role="instances" roleId="v7ag.4491876417845649026" type="v7ag.ComponentInstance" typeId="v7ag.4491876417845649014" id="591155063063651673">
+      <node role="contents" roleId="v7ag.6041318036222235020" type="v7ag.ComponentInstance" typeId="v7ag.4491876417845649014" id="591155063063651673">
         <property name="name" nameId="tpck.1169194664001" value="driver2" />
         <link role="component" roleId="v7ag.4491876417845649015" targetNodeId="9146329806094299625" resolveInfo="AnotherDriver" />
       </node>
-      <node role="instances" roleId="v7ag.4491876417845649026" type="v7ag.ComponentInstance" typeId="v7ag.4491876417845649014" id="7265387141425485030">
+      <node role="contents" roleId="v7ag.6041318036222235020" type="v7ag.ComponentInstance" typeId="v7ag.4491876417845649014" id="7265387141425485030">
         <property name="name" nameId="tpck.1169194664001" value="logger" />
         <link role="component" roleId="v7ag.4491876417845649015" targetNodeId="7265387141425485014" resolveInfo="Logger" />
       </node>
-      <node role="connectors" roleId="v7ag.4491876417845649027" type="v7ag.Connector" typeId="v7ag.4491876417845649016" id="591155063063632488">
+      <node role="contents" roleId="v7ag.6041318036222235020" type="v7ag.Connector" typeId="v7ag.4491876417845649016" id="591155063063632488">
         <node role="source" roleId="v7ag.4491876417845649020" type="v7ag.InstancePortRef" typeId="v7ag.4491876417845649017" id="591155063063632489">
           <link role="port" roleId="v7ag.4491876417845649019" targetNodeId="8105003328815208360" resolveInfo="driver" />
           <link role="instance" roleId="v7ag.4491876417845649018" targetNodeId="9146329806094299637" resolveInfo="lights" />
@@ -461,7 +461,7 @@
           <link role="port" roleId="v7ag.4491876417845649019" targetNodeId="8105003328815233157" resolveInfo="cmd" />
         </node>
       </node>
-      <node role="connectors" roleId="v7ag.4491876417845649027" type="v7ag.Connector" typeId="v7ag.4491876417845649016" id="591155063063651675">
+      <node role="contents" roleId="v7ag.6041318036222235020" type="v7ag.Connector" typeId="v7ag.4491876417845649016" id="591155063063651675">
         <node role="source" roleId="v7ag.4491876417845649020" type="v7ag.InstancePortRef" typeId="v7ag.4491876417845649017" id="591155063063651676">
           <link role="instance" roleId="v7ag.4491876417845649018" targetNodeId="591155063063651674" resolveInfo="lights2" />
           <link role="port" roleId="v7ag.4491876417845649019" targetNodeId="8105003328815208360" resolveInfo="driver" />
@@ -471,7 +471,7 @@
           <link role="port" roleId="v7ag.4491876417845649019" targetNodeId="8105003328815233157" resolveInfo="cmd" />
         </node>
       </node>
-      <node role="connectors" roleId="v7ag.4491876417845649027" type="v7ag.Connector" typeId="v7ag.4491876417845649016" id="8922663937488698558">
+      <node role="contents" roleId="v7ag.6041318036222235020" type="v7ag.Connector" typeId="v7ag.4491876417845649016" id="8922663937488698558">
         <node role="source" roleId="v7ag.4491876417845649020" type="v7ag.InstancePortRef" typeId="v7ag.4491876417845649017" id="8922663937488698559">
           <link role="instance" roleId="v7ag.4491876417845649018" targetNodeId="591155063063651673" resolveInfo="driver2" />
           <link role="port" roleId="v7ag.4491876417845649019" targetNodeId="8922663937488690187" resolveInfo="lowlevel" />
@@ -481,7 +481,7 @@
           <link role="instance" roleId="v7ag.4491876417845649018" targetNodeId="8922663937488698561" resolveInfo="ll" />
         </node>
       </node>
-      <node role="connectors" roleId="v7ag.4491876417845649027" type="v7ag.Connector" typeId="v7ag.4491876417845649016" id="7265387141425485031">
+      <node role="contents" roleId="v7ag.6041318036222235020" type="v7ag.Connector" typeId="v7ag.4491876417845649016" id="7265387141425485031">
         <node role="source" roleId="v7ag.4491876417845649020" type="v7ag.InstancePortRef" typeId="v7ag.4491876417845649017" id="7265387141425485032">
           <link role="instance" roleId="v7ag.4491876417845649018" targetNodeId="591155063063651673" resolveInfo="driver2" />
           <link role="port" roleId="v7ag.4491876417845649019" targetNodeId="5308710777891692710" resolveInfo="logger" />
