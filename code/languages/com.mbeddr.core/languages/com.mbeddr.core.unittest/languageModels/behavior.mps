@@ -590,6 +590,11 @@
             <property name="value" nameId="tpee.1070475926801" value="__failures" />
           </node>
         </node>
+        <node role="statement" roleId="tpee.1068581517665" type="talm.HideById" typeId="talm.8483575004407054697" id="1245513274742100688">
+          <node role="varName" roleId="talm.8483575004407054700" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="1245513274742100690">
+            <property name="value" nameId="tpee.1070475926801" value="__failuresVal" />
+          </node>
+        </node>
       </node>
       <node role="parameter" roleId="tpee.1068580123134" type="tpee.ParameterDeclaration" typeId="tpee.1068498886292" id="5388496118034170216">
         <property name="name" nameId="tpck.1169194664001" value="categoryRegistry" />
