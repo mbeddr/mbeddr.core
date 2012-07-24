@@ -12,7 +12,7 @@
   <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="4" />
   <import index="x30c" modelUID="r:04a32be8-7074-4c9c-b2f8-77d4a01a19dc(com.mbeddr.core.debug.debugger)" version="-1" />
   <import index="pry4" modelUID="r:0a0d7eec-6e5a-412b-8e16-e3ee5ed7fb95(jetbrains.mps.debug.api.programState)" version="-1" />
-  <import index="talm" modelUID="r:98c60105-1d91-4aab-8dfe-5ef258ec8eb6(com.mbeddr.core.debug.blext.structure)" version="18" />
+  <import index="talm" modelUID="r:98c60105-1d91-4aab-8dfe-5ef258ec8eb6(com.mbeddr.core.debug.blext.structure)" version="21" />
   <import index="ai1m" modelUID="f:java_stub#742f6602-5a2f-4313-aa6e-ae1cd4ffdc61#jetbrains.mps.ide.icons(MPS.Platform/jetbrains.mps.ide.icons@java_stub)" version="-1" />
   <import index="exl8" modelUID="r:9058158e-0926-42f8-8d00-d1d86f1ff722(com.mbeddr.core.debug.behavior)" version="-1" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
@@ -1153,25 +1153,27 @@
       <link role="overriddenMethod" roleId="1i04.1225194472831" targetNodeId="exl8.8519572659617671165" resolveInfo="resolveChildren" />
       <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="8519572659617671435" />
       <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="8519572659617671436">
-        <node role="statement" roleId="tpee.1068581517665" type="talm.ChildrenToWatchablesStatement" typeId="talm.2011139961867340775" id="4996624930072737473">
-          <node role="typeMapper" roleId="talm.2011139961867340776" type="tpee.DotExpression" typeId="tpee.1197027756228" id="4996624930072737498">
-            <node role="operand" roleId="tpee.1197027771414" type="1i04.ThisNodeExpression" typeId="1i04.1225194691553" id="4996624930072737477" />
-            <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="4996624930072737504">
-              <link role="link" roleId="tp25.1138056516764" targetNodeId="yq40.5679441017214012546" />
-            </node>
-          </node>
-          <node role="highlightedNode" roleId="talm.2011139961867340802" type="1i04.ThisNodeExpression" typeId="1i04.1225194691553" id="4996624930072737505" />
-          <node role="namePattern" roleId="talm.2011139961867340809" type="tpee.PlusExpression" typeId="tpee.1068581242875" id="4996624930072737506">
-            <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.PlusExpression" typeId="tpee.1068581242875" id="4996624930072737507">
-              <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="4996624930072737508">
-                <property name="value" nameId="tpee.1070475926801" value="[" />
+        <node role="statement" roleId="tpee.1068581517665" type="talm.ChildrenToWatchablesStatement" typeId="talm.2011139961867340775" id="7593887520504443301">
+          <node role="typeMapper" roleId="talm.2011139961867340776" type="talm.SingleTypeMapper" typeId="talm.7593887520504267026" id="7593887520504443304">
+            <node role="typeMapper" roleId="talm.7593887520504267036" type="tpee.DotExpression" typeId="tpee.1197027756228" id="7593887520504443378">
+              <node role="operand" roleId="tpee.1197027771414" type="1i04.ThisNodeExpression" typeId="1i04.1225194691553" id="7593887520504443357" />
+              <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="7593887520504443383">
+                <link role="link" roleId="tp25.1138056516764" targetNodeId="yq40.5679441017214012546" />
               </node>
-              <node role="rightExpression" roleId="tpee.1081773367579" type="talm.IndexExpression" typeId="talm.2011139961867406242" id="4996624930072737509" />
             </node>
-            <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="4996624930072737510">
-              <property name="value" nameId="tpee.1070475926801" value="]" />
+            <node role="namePattern" roleId="talm.7593887520504413459" type="tpee.PlusExpression" typeId="tpee.1068581242875" id="7593887520504443353">
+              <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="7593887520504443356">
+                <property name="value" nameId="tpee.1070475926801" value="]" />
+              </node>
+              <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.PlusExpression" typeId="tpee.1068581242875" id="7593887520504443329">
+                <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="7593887520504443308">
+                  <property name="value" nameId="tpee.1070475926801" value="[" />
+                </node>
+                <node role="rightExpression" roleId="tpee.1081773367579" type="talm.IndexExpression" typeId="talm.2011139961867406242" id="7593887520504443332" />
+              </node>
             </node>
           </node>
+          <node role="highlightedNode" roleId="talm.2011139961867340802" type="1i04.ThisNodeExpression" typeId="1i04.1225194691553" id="7593887520504443307" />
         </node>
       </node>
       <node role="parameter" roleId="tpee.1068580123134" type="tpee.ParameterDeclaration" typeId="tpee.1068498886292" id="8519572659617671437">
