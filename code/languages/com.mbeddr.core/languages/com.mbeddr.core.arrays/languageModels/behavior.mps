@@ -565,13 +565,8 @@
                         <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.ParameterReference" typeId="tpee.1068581242874" id="3557252397244048218">
                           <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="3557252397243960474" resolveInfo="cVariable" />
                         </node>
-                        <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.PlusExpression" typeId="tpee.1068581242875" id="3557252397244048219">
-                          <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3557252397244048220">
-                            <property name="value" nameId="tpee.1070475926801" value=" (address)" />
-                          </node>
-                          <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="3557252397244048225">
-                            <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="3557252397244048044" resolveInfo="addressRepresentation" />
-                          </node>
+                        <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="3557252397244048225">
+                          <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="3557252397244048044" resolveInfo="addressRepresentation" />
                         </node>
                       </node>
                     </node>
