@@ -116,7 +116,7 @@
             <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="8933128519014038684" />
             <node role="init" roleId="c4fa.4185783222026502647" type="v7ag.RequiredPortOpCallExpr" typeId="v7ag.466603768608442377" id="8933128519014038685">
               <link role="operation" roleId="v7ag.8105003328815071752" targetNodeId="8933128519013964948" resolveInfo="get42" />
-              <node role="expression" roleId="v7ag.8105003328815071750" type="v7ag.RequiredPortRefExpr" typeId="v7ag.8105003328815208362" id="8933128519014038686">
+              <node role="expression" roleId="mj1l.7254843406768839760" type="v7ag.RequiredPortRefExpr" typeId="v7ag.8105003328815208362" id="8933128519014038686">
                 <link role="port" roleId="v7ag.8105003328815208363" targetNodeId="9016194309503490028" resolveInfo="i" />
               </node>
             </node>
@@ -124,7 +124,7 @@
           <node role="statements" roleId="c4fa.4185783222026475862" type="x27k.ReturnStatement" typeId="x27k.8967919205527146149" id="8933128519014040086">
             <node role="expression" roleId="x27k.8967919205527146150" type="v7ag.RequiredPortOpCallExpr" typeId="v7ag.466603768608442377" id="8933128519013965140">
               <link role="operation" roleId="v7ag.8105003328815071752" targetNodeId="8933128519013964955" resolveInfo="mal2" />
-              <node role="expression" roleId="v7ag.8105003328815071750" type="v7ag.RequiredPortRefExpr" typeId="v7ag.8105003328815208362" id="8933128519013965139">
+              <node role="expression" roleId="mj1l.7254843406768839760" type="v7ag.RequiredPortRefExpr" typeId="v7ag.8105003328815208362" id="8933128519013965139">
                 <link role="port" roleId="v7ag.8105003328815208363" targetNodeId="9016194309503490028" resolveInfo="i" />
               </node>
               <node role="actuals" roleId="v7ag.8105003328815091213" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="8933128519014040087">
@@ -199,26 +199,28 @@
           <link role="config" roleId="v7ag.591155063063570514" targetNodeId="9016194309503490029" resolveInfo="instances" />
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="8933128519014040095">
+          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="8933128519014040095" />
           <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="8933128519014040101">
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="8933128519014040104">
               <property name="value" nameId="mj1l.8860443239512128104" value="84" />
             </node>
             <node role="left" roleId="mj1l.8860443239512128064" type="v7ag.PortAdapterOpCallExpr" typeId="v7ag.466603768608410221" id="8933128519014040100">
               <link role="operation" roleId="v7ag.8105003328815071752" targetNodeId="8933128519014038677" resolveInfo="getTheValue" />
-              <node role="expression" roleId="v7ag.8105003328815071750" type="v7ag.PortAdapterRefExpr" typeId="v7ag.8105003328815039001" id="8933128519014040099">
+              <node role="expression" roleId="mj1l.7254843406768839760" type="v7ag.PortAdapterRefExpr" typeId="v7ag.8105003328815039001" id="8933128519014040099">
                 <link role="portAdater" roleId="v7ag.8105003328815039002" targetNodeId="8933128519014040097" resolveInfo="ci1" />
               </node>
             </node>
           </node>
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="8933128519014040105">
+          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="8933128519014040105" />
           <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="8933128519014040106">
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="8933128519014040107">
               <property name="value" nameId="mj1l.8860443239512128104" value="84" />
             </node>
             <node role="left" roleId="mj1l.8860443239512128064" type="v7ag.PortAdapterOpCallExpr" typeId="v7ag.466603768608410221" id="8933128519014040108">
               <link role="operation" roleId="v7ag.8105003328815071752" targetNodeId="8933128519014038677" resolveInfo="getTheValue" />
-              <node role="expression" roleId="v7ag.8105003328815071750" type="v7ag.PortAdapterRefExpr" typeId="v7ag.8105003328815039001" id="8933128519014040110">
+              <node role="expression" roleId="mj1l.7254843406768839760" type="v7ag.PortAdapterRefExpr" typeId="v7ag.8105003328815039001" id="8933128519014040110">
                 <link role="portAdater" roleId="v7ag.8105003328815039002" targetNodeId="8933128519014040098" resolveInfo="ci2" />
               </node>
             </node>
