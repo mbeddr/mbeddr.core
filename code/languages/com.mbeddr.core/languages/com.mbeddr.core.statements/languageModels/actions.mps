@@ -585,6 +585,22 @@
         </node>
       </node>
     </node>
+    <node role="wrapper" roleId="tpdg.1221135321084" type="tpdg.PasteWrapper" typeId="tpdg.1221135315536" id="5235595745885085875">
+      <link role="sourceConcept" roleId="tpdg.1221135563864" targetNodeId="c4fa.7254843406768833938" resolveInfo="ExpressionStatement" />
+      <link role="targetConcept" roleId="tpdg.1221137152191" targetNodeId="mj1l.8860443239512128050" resolveInfo="Expression" />
+      <node role="wrapperFunction" roleId="tpdg.1221137217490" type="tpdg.QueryFunction_PasteWrapper" typeId="tpdg.1221137293320" id="5235595745885085876">
+        <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="5235595745885085877">
+          <node role="statement" roleId="tpee.1068581517665" type="tpee.ReturnStatement" typeId="tpee.1068581242878" id="5235595745885085878">
+            <node role="expression" roleId="tpee.1068581517676" type="tpee.DotExpression" typeId="tpee.1197027756228" id="5235595745885085901">
+              <node role="operand" roleId="tpee.1197027771414" type="tpdg.ConceptFunctionParameter_nodeToPasteWrap" typeId="tpdg.1221137268788" id="5235595745885085880" />
+              <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="5235595745885085906">
+                <link role="link" roleId="tp25.1138056516764" targetNodeId="c4fa.7254843406768833939" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
   </root>
   <root id="3779779187805943501">
     <node role="actionsBuilder" roleId="tpdg.1112058057696" type="tpdg.NodeSubstituteActionsBuilder" typeId="tpdg.1112058030570" id="3779779187805943502">
