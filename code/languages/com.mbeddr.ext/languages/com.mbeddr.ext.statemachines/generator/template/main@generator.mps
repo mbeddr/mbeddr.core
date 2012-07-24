@@ -297,6 +297,7 @@
                     </node>
                   </node>
                   <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="4643433264760041373">
+                    <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="4643433264760041373" />
                     <node role="expr" roleId="yz9a.6275792049641587288" type="clqz.IsInStateExpression" typeId="clqz.2558982571829189197" id="4643433264760041378">
                       <link role="state" roleId="clqz.2558982571829202228" targetNodeId="4643433264760856327" resolveInfo="s1" />
                       <node role="expr" roleId="clqz.2558982571829189198" type="x27k.GlobalVarRef" typeId="x27k.6610873504380357354" id="4643433264760041385">

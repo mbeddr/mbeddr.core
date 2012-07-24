@@ -193,16 +193,6 @@
                 </node>
               </node>
             </node>
-            <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="8326627235132717888">
-              <node role="expression" roleId="tpee.1068580123156" type="tpee.AssignmentExpression" typeId="tpee.1068498886294" id="8326627235132717936">
-                <node role="rValue" roleId="tpee.1068498886297" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="8326627235132717939">
-                  <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="8326627235132717869" resolveInfo="x" />
-                </node>
-                <node role="lValue" roleId="tpee.1068498886295" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="8326627235132717915">
-                  <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="8326627235132716214" resolveInfo="n" />
-                </node>
-              </node>
-            </node>
           </node>
         </node>
       </node>

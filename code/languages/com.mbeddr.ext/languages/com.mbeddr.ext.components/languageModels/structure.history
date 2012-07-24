@@ -43,5 +43,11 @@
     </dependencies>
     <move id="v7ag.4491876417845641672" to="v7ag.6041318036221669720" />
   </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="v7ag" modelUID="r:9596407c-f27a-49d3-abde-3a66293c5b61(com.mbeddr.ext.components.structure)" version="5" />
+    </dependencies>
+    <rename id="v7ag.8105003328815071750" type="CHILD" from="expr" to="expression" />
+  </StructureModification>
 </history>
 
