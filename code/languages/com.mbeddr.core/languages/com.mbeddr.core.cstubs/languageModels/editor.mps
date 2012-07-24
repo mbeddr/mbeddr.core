@@ -1311,7 +1311,7 @@
                                 <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="7471838330613180714">
                                   <property name="name" nameId="tpck.1169194664001" value="acceptorFactory" />
                                   <node role="type" roleId="tpee.5680397130376446158" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="7471838330613180715">
-                                    <link role="classifier" roleId="tpee.1107535924139" targetNodeId="7lmn.7979240492616336718" resolveInfo="AcceptorFactory" />
+                                    <link role="classifier" roleId="tpee.1107535924139" targetNodeId="7lmn.7979240492616336718" resolveInfo="ParserFactory" />
                                   </node>
                                   <node role="initializer" roleId="tpee.1068431790190" type="tpee.NullLiteral" typeId="tpee.1070534058343" id="7471838330613180717" />
                                 </node>
@@ -1361,9 +1361,6 @@
                                   <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="3414980176519792267">
                                     <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="3414980176519791384" resolveInfo="currentModel" />
                                   </node>
-                                  <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="7471838330613180759">
-                                    <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="7471838330613180714" resolveInfo="acceptorFactory" />
-                                  </node>
                                   <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="3414980176519788882">
                                     <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="6068664427596393945" resolveInfo="options" />
                                   </node>
@@ -1379,6 +1376,9 @@
                                   <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.GenericNewExpression" typeId="tpee.1145552977093" id="892668588210517334">
                                     <node role="creator" roleId="tpee.1145553007750" type="tpee.ClassCreator" typeId="tpee.1212685548494" id="892668588210517335">
                                       <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="7lmn.7396242228575754307" resolveInfo="CFileParser" />
+                                      <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="2567691893339866682">
+                                        <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="7471838330613180714" resolveInfo="acceptorFactory" />
+                                      </node>
                                     </node>
                                   </node>
                                 </node>
