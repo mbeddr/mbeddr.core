@@ -624,7 +624,7 @@
       </node>
       <node role="commands" roleId="i2y7.5950410542643587172" type="i2y7.Command" typeId="i2y7.5950410542643587169" id="7717755763392611763">
         <node role="items" roleId="i2y7.3373914745211590943" type="i2y7.TextCommandItem" typeId="i2y7.3373914745211590947" id="5048824311957549378">
-          <property name="text" nameId="i2y7.3373914745211590948" value="$(CC) " />
+          <property name="text" nameId="i2y7.3373914745211590948" value="$(CC) $(CFLAGS)" />
         </node>
         <node role="items" roleId="i2y7.3373914745211590943" type="i2y7.TextCommandItem" typeId="i2y7.3373914745211590947" id="5048824311957549380">
           <property name="text" nameId="i2y7.3373914745211590948" value="includes" />
@@ -775,7 +775,7 @@
           </node>
         </node>
         <node role="items" roleId="i2y7.3373914745211590943" type="i2y7.TextCommandItem" typeId="i2y7.3373914745211590947" id="7717755763392622476">
-          <property name="text" nameId="i2y7.3373914745211590948" value=" -c -o $@ $&lt; $(CFLAGS)" />
+          <property name="text" nameId="i2y7.3373914745211590948" value=" -c -o $@ $&lt; " />
         </node>
       </node>
       <node role="dependencies" roleId="i2y7.5950410542643587171" type="i2y7.TextDependency" typeId="i2y7.5950410542643589987" id="7717755763392622472">
