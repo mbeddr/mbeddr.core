@@ -656,7 +656,7 @@
           <node role="body" roleId="tpee.1154032183016" type="tpee.StatementList" typeId="tpee.1068580123136" id="4175257101869380717">
             <node role="statement" roleId="tpee.1068581517665" type="2omo.AppendOperation" typeId="2omo.1237306079178" id="4175257101869380774">
               <node role="part" roleId="2omo.1237306115446" type="2omo.ConstantStringAppendPart" typeId="2omo.1237305557638" id="4175257101869380775">
-                <property name="value" nameId="2omo.1237305576108" value="#include &quot;" />
+                <property name="value" nameId="2omo.1237305576108" value="#include " />
               </node>
               <node role="part" roleId="2omo.1237306115446" type="2omo.NodeAppendPart" typeId="2omo.1237305334312" id="4175257101869380776">
                 <node role="value" roleId="2omo.1237305790512" type="tpee.DotExpression" typeId="tpee.1197027756228" id="4175257101869380806">
@@ -667,9 +667,6 @@
                     <link role="property" roleId="tp25.1138056395725" targetNodeId="x27k.6116558314501417936" resolveInfo="path" />
                   </node>
                 </node>
-              </node>
-              <node role="part" roleId="2omo.1237306115446" type="2omo.ConstantStringAppendPart" typeId="2omo.1237305557638" id="1195383328911638458">
-                <property name="value" nameId="2omo.1237305576108" value="&quot;" />
               </node>
               <node role="part" roleId="2omo.1237306115446" type="2omo.NewLineAppendPart" typeId="2omo.1237305208784" id="4175257101869380783" />
             </node>
