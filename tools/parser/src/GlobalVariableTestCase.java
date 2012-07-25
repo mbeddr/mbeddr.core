@@ -39,7 +39,9 @@ public class GlobalVariableTestCase extends TestCase {
 		StringBuilder content = new StringBuilder();
 
 
-		content.append("int localVariable;");
+		content.append("typedef int **i2[5][2];");
+		
+//		content.append("int add(const short a, char b, float c);");
 
 
 
