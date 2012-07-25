@@ -235,7 +235,7 @@
           </node>
           <node role="commands" roleId="i2y7.5950410542643587172" type="i2y7.Command" typeId="i2y7.5950410542643587169" id="7717755763392622483">
             <node role="items" roleId="i2y7.3373914745211590943" type="i2y7.TextCommandItem" typeId="i2y7.3373914745211590947" id="7717755763392622485">
-              <property name="text" nameId="i2y7.3373914745211590948" value="$(CC) -o $@ $^ " />
+              <property name="text" nameId="i2y7.3373914745211590948" value="$(CC) $(CFLAGS) -o $@ $^ " />
             </node>
             <node role="items" roleId="i2y7.3373914745211590943" type="i2y7.TextCommandItem" typeId="i2y7.3373914745211590947" id="5275554368891504897">
               <property name="text" nameId="i2y7.3373914745211590948" value="otherOFiles" />
@@ -402,9 +402,6 @@
                   </node>
                 </node>
               </node>
-            </node>
-            <node role="items" roleId="i2y7.3373914745211590943" type="i2y7.TextCommandItem" typeId="i2y7.3373914745211590947" id="5275554368891504905">
-              <property name="text" nameId="i2y7.3373914745211590948" value="$(CFLAGS)" />
             </node>
           </node>
           <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.PropertyMacro" typeId="tpf8.1087833241328" id="7717755763392622501">
@@ -619,7 +616,7 @@
       <property name="label" nameId="i2y7.5950410542643587166" value="$(ODIR)/%.o" />
       <node role="commands" roleId="i2y7.5950410542643587172" type="i2y7.Command" typeId="i2y7.5950410542643587169" id="6610873504380252155">
         <node role="items" roleId="i2y7.3373914745211590943" type="i2y7.TextCommandItem" typeId="i2y7.3373914745211590947" id="6610873504380252157">
-          <property name="text" nameId="i2y7.3373914745211590948" value="&#9;mkdir -p $(ODIR) &#10;" />
+          <property name="text" nameId="i2y7.3373914745211590948" value="&#9;mkdir -p $(ODIR)" />
         </node>
       </node>
       <node role="commands" roleId="i2y7.5950410542643587172" type="i2y7.Command" typeId="i2y7.5950410542643587169" id="7717755763392611763">
