@@ -58,8 +58,16 @@ public class StructsTestCase extends TestCase {
 //		
 //		content.append("}; \n");
 		
-		content.append("union emptyU;");
-		content.append("struct emptyS;");
+		content.append("void funWithLocalVariable(){");
+		content.append("	struct fullname	{");
+		content.append("		char forename[20];");
+		content.append("		char surname[20];");
+		content.append("	} fullNameStruct, *fullNameStructP, *fullNameStructAP[5];");
+		content.append("};");
+
+		
+
+
 			  
 			 
 		
@@ -100,10 +108,7 @@ public class StructsTestCase extends TestCase {
 
 		astTranslationUnit.accept(new ASTVisitor(true) {
 			
-			  public int visist(IASTTranslationUnit x) {
-				  System.err.println(x.toString());
-				    return PROCESS_CONTINUE;
-				  }
+
 			
 			public int visit(IASTTranslationUnit x) {
 				System.err.println(x.toString());
@@ -118,15 +123,7 @@ public class StructsTestCase extends TestCase {
 			public int visit(IASTDeclaration x) {
 				System.err.println(x.toString());
 				
-				
-				CASTSimpleDeclaration sd= (CASTSimpleDeclaration) x;
-				try {
-					System.out.println(sd.getSyntax().toString());
-				} catch (ExpansionOverlapsBoundaryException e) {
-					// TODO Auto-generated catch block
-					e.printStackTrace();
-				}
-				
+		
 				return PROCESS_CONTINUE;
 			}
 
@@ -147,7 +144,6 @@ public class StructsTestCase extends TestCase {
 
 			public int visit(IASTDeclSpecifier x) {
 				
-				CASTElaboratedTypeSpecifier specifier = (CASTElaboratedTypeSpecifier) x;
 				
 			
 				
