@@ -85,6 +85,10 @@
       <property name="virtualPackage" nameId="tpck.1193676396447" value="config" />
       <property name="name" nameId="tpck.1169194664001" value="IRequiresConfigItem" />
     </node>
+    <node type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="9035511730050139084">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="config" />
+      <property name="name" nameId="tpck.1169194664001" value="IConfigurationItemWithImport" />
+    </node>
   </roots>
   <root id="7024921229555594291">
     <node role="extends" roleId="tpce.1169127546356" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7024921229555594292">
@@ -503,6 +507,11 @@
     <node role="conceptLinkDeclaration" roleId="tpce.1137532086877" type="tpce.ReferenceConceptLinkDeclaration" typeId="tpce.1105741578420" id="1656687801206572013">
       <property name="name" nameId="tpck.1169194664001" value="configItem" />
       <link role="targetType" roleId="tpce.1105736621938" targetNodeId="tpce.1071489090640" resolveInfo="ConceptDeclaration" />
+    </node>
+  </root>
+  <root id="9035511730050139084">
+    <node role="extends" roleId="tpce.1169127546356" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="9035511730050139085">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="4459718605982007336" resolveInfo="IConfigurationItem" />
     </node>
   </root>
 </model>
