@@ -362,6 +362,11 @@
       <property name="virtualPackage" nameId="tpck.1193676396447" value="intf.cs" />
       <property name="name" nameId="tpck.1169194664001" value="ICSInterfaceContents" />
     </node>
+    <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="6870096341748053862">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="intf.cs" />
+      <property name="name" nameId="tpck.1169194664001" value="EmptyInterfaceContents" />
+      <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
+    </node>
   </roots>
   <root id="4491876417845474761">
     <node role="conceptLink" roleId="tpce.1105736949336" type="tpce.ReferenceConceptLink" typeId="tpce.1105736778597" id="1656687801207008596">
@@ -1549,5 +1554,13 @@
     </node>
   </root>
   <root id="6870096341747799289" />
+  <root id="6870096341748053862">
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="6870096341748053863">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="vs0r.1049346859912912067" resolveInfo="IEmpty" />
+    </node>
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="6870096341748053865">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="6870096341747799289" resolveInfo="ICSInterfaceContents" />
+    </node>
+  </root>
 </model>
 
