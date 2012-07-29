@@ -10,7 +10,7 @@
   <language namespace="3bf5377a-e904-4ded-9754-5a516023bfaa(com.mbeddr.core.pointers)" />
   <language namespace="2d7fadf5-33f6-4e80-a78f-0f739add2bde(com.mbeddr.core.buildconfig)" />
   <devkit namespace="24565007-e59f-42fc-ac10-da3836deec1c(com.mbeddr.components)" />
-  <import index="v7ag" modelUID="r:9596407c-f27a-49d3-abde-3a66293c5b61(com.mbeddr.ext.components.structure)" version="6" implicit="yes" />
+  <import index="v7ag" modelUID="r:9596407c-f27a-49d3-abde-3a66293c5b61(com.mbeddr.ext.components.structure)" version="7" implicit="yes" />
   <import index="mxvz" modelUID="r:b92c0a08-d42f-4c78-a3f4-d5f989493286(com.mbeddr.ext.components.mock.structure)" version="-1" implicit="yes" />
   <import index="p7vm" modelUID="r:28fa862e-f94d-4c39-bdf7-a4bdbc773888(com.mbeddr.ext.components.gen_nomw.structure)" version="0" implicit="yes" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
@@ -32,18 +32,18 @@
   <root id="6307143892175816574">
     <node role="contents" roleId="x27k.6437088627575722833" type="v7ag.ClientServerInterface" typeId="v7ag.4491876417845484922" id="8729447926330476739">
       <property name="name" nameId="tpck.1169194664001" value="DataAcquisition" />
-      <node role="operations" roleId="v7ag.4491876417845484926" type="v7ag.Operation" typeId="v7ag.4491876417845484924" id="8729447926330476740">
+      <node role="contents" roleId="v7ag.4491876417845484926" type="v7ag.Operation" typeId="v7ag.4491876417845484924" id="8729447926330476740">
         <property name="name" nameId="tpck.1169194664001" value="measure" />
         <node role="returnType" roleId="v7ag.4491876417845683831" type="mj1l.Int32tType" typeId="mj1l.8463282783691618440" id="8729447926330614293" />
       </node>
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="v7ag.ClientServerInterface" typeId="v7ag.4491876417845484922" id="6307143892175816575">
       <property name="name" nameId="tpck.1169194664001" value="Sensor" />
-      <node role="operations" roleId="v7ag.4491876417845484926" type="v7ag.Operation" typeId="v7ag.4491876417845484924" id="8729447926330476752">
+      <node role="contents" roleId="v7ag.4491876417845484926" type="v7ag.Operation" typeId="v7ag.4491876417845484924" id="8729447926330476752">
         <property name="name" nameId="tpck.1169194664001" value="isReady" />
         <node role="returnType" roleId="v7ag.4491876417845683831" type="mj1l.BooleanType" typeId="mj1l.8860443239512128058" id="8729447926330476754" />
       </node>
-      <node role="operations" roleId="v7ag.4491876417845484926" type="v7ag.Operation" typeId="v7ag.4491876417845484924" id="6307143892175816576">
+      <node role="contents" roleId="v7ag.4491876417845484926" type="v7ag.Operation" typeId="v7ag.4491876417845484924" id="6307143892175816576">
         <property name="name" nameId="tpck.1169194664001" value="getValue" />
         <node role="returnType" roleId="v7ag.4491876417845683831" type="mj1l.Int32tType" typeId="mj1l.8463282783691618440" id="6307143892175816577" />
       </node>
