@@ -75,8 +75,8 @@
                             <node role="operand" roleId="tpee.1197027771414" type="tpee.ParameterReference" typeId="tpee.1068581242874" id="5513256947824580683">
                               <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="5513256947824580680" resolveInfo="it" />
                             </node>
-                            <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkListAccess" typeId="tp25.1138056282393" id="5513256947824580692">
-                              <link role="link" roleId="tp25.1138056546658" targetNodeId="ym4j.3801772042669047873" />
+                            <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_ConceptMethodCall" typeId="tp25.1179409122411" id="6870096341748308340">
+                              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="aige.6870096341748304322" resolveInfo="declarations" />
                             </node>
                           </node>
                         </node>
