@@ -47,8 +47,6 @@ cd ../ranges
 make test
 PROC_RET=$(($?+$PROC_RET))
 
-
-
 echo -------------------------------------
 echo strangenumbers
 cd ../strangenumbers
@@ -66,6 +64,7 @@ echo pointers
 cd ../pointers
 make test
 PROC_RET=$(($?+$PROC_RET))
+
 
 echo -------------------------------------
 echo externalOFile
@@ -107,7 +106,7 @@ PROC_RET=$(($?+$PROC_RET))
 
 echo -------------------------------------
 echo typedef
-cd ../typedef
+cd ../typedefsAndTypes
 make test
 PROC_RET=$(($?+$PROC_RET))
 
@@ -126,7 +125,6 @@ PROC_RET=$(($?+$PROC_RET))
 cd ../../../../test.ex.core.libs/source_gen/test/ex/core/libs/app
 make test
 PROC_RET=$(($?+$PROC_RET))
-
 
 
 
