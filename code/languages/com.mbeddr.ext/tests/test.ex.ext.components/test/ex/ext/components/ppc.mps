@@ -3,7 +3,7 @@
   <persistence version="7" />
   <devkit namespace="24565007-e59f-42fc-ac10-da3836deec1c(com.mbeddr.components)" />
   <devkit namespace="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
-  <import index="v7ag" modelUID="r:9596407c-f27a-49d3-abde-3a66293c5b61(com.mbeddr.ext.components.structure)" version="6" implicit="yes" />
+  <import index="v7ag" modelUID="r:9596407c-f27a-49d3-abde-3a66293c5b61(com.mbeddr.ext.components.structure)" version="7" implicit="yes" />
   <import index="p7vm" modelUID="r:28fa862e-f94d-4c39-bdf7-a4bdbc773888(com.mbeddr.ext.components.gen_nomw.structure)" version="0" implicit="yes" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="k146" modelUID="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" version="2" implicit="yes" />
@@ -53,7 +53,7 @@
       <property name="name" nameId="tpck.1169194664001" value="Calculator" />
       <link role="ppcErrorMsgTable" roleId="v7ag.2546541902879119266" targetNodeId="6591434695301152732" resolveInfo="CalcMessages" />
       <link role="ppcErrorMsgDef" roleId="v7ag.2546541902879119265" targetNodeId="6591434695301152733" resolveInfo="ppcfailed" />
-      <node role="operations" roleId="v7ag.4491876417845484926" type="v7ag.Operation" typeId="v7ag.4491876417845484924" id="6591434695300767056">
+      <node role="contents" roleId="v7ag.4491876417845484926" type="v7ag.Operation" typeId="v7ag.4491876417845484924" id="6591434695300767056">
         <property name="name" nameId="tpck.1169194664001" value="add" />
         <property name="isQuery" nameId="v7ag.6591434695301777601" value="false" />
         <node role="returnType" roleId="v7ag.4491876417845683831" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="6591434695301142799" />
@@ -430,7 +430,7 @@
       <property name="name" nameId="tpck.1169194664001" value="Counter" />
       <link role="ppcErrorMsgTable" roleId="v7ag.2546541902879119266" targetNodeId="6209278014151173612" resolveInfo="CalcMessages" />
       <link role="ppcErrorMsgDef" roleId="v7ag.2546541902879119265" targetNodeId="6209278014151173613" resolveInfo="ppcfailed" />
-      <node role="operations" roleId="v7ag.4491876417845484926" type="v7ag.Operation" typeId="v7ag.4491876417845484924" id="6209278014151173619">
+      <node role="contents" roleId="v7ag.4491876417845484926" type="v7ag.Operation" typeId="v7ag.4491876417845484924" id="6209278014151173619">
         <property name="name" nameId="tpck.1169194664001" value="reset" />
         <node role="returnType" roleId="v7ag.4491876417845683831" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="6209278014151173620" />
         <node role="conditions" roleId="v7ag.6591434695300694134" type="v7ag.PostCondition" typeId="v7ag.6591434695300950445" id="6209278014151173621">
@@ -444,12 +444,12 @@
           </node>
         </node>
       </node>
-      <node role="operations" roleId="v7ag.4491876417845484926" type="v7ag.Operation" typeId="v7ag.4491876417845484924" id="6209278014151173625">
+      <node role="contents" roleId="v7ag.4491876417845484926" type="v7ag.Operation" typeId="v7ag.4491876417845484924" id="6209278014151173625">
         <property name="name" nameId="tpck.1169194664001" value="value" />
         <property name="isQuery" nameId="v7ag.6591434695301777601" value="true" />
         <node role="returnType" roleId="v7ag.4491876417845683831" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="6209278014151173626" />
       </node>
-      <node role="operations" roleId="v7ag.4491876417845484926" type="v7ag.Operation" typeId="v7ag.4491876417845484924" id="6209278014151173627">
+      <node role="contents" roleId="v7ag.4491876417845484926" type="v7ag.Operation" typeId="v7ag.4491876417845484924" id="6209278014151173627">
         <property name="name" nameId="tpck.1169194664001" value="inc" />
         <node role="returnType" roleId="v7ag.4491876417845683831" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="6209278014151173628" />
         <node role="conditions" roleId="v7ag.6591434695300694134" type="v7ag.PostCondition" typeId="v7ag.6591434695300950445" id="6209278014151173629">
@@ -788,7 +788,7 @@
       <property name="name" nameId="tpck.1169194664001" value="FileSystem" />
       <link role="protocolErrorMsgTable" roleId="v7ag.6209278014151498295" targetNodeId="6209278014151498287" resolveInfo="Messages" />
       <link role="protocolErrorMsgDef" roleId="v7ag.6209278014151498296" targetNodeId="6209278014151498288" resolveInfo="protocolError" />
-      <node role="operations" roleId="v7ag.4491876417845484926" type="v7ag.Operation" typeId="v7ag.4491876417845484924" id="6209278014151496960">
+      <node role="contents" roleId="v7ag.4491876417845484926" type="v7ag.Operation" typeId="v7ag.4491876417845484924" id="6209278014151496960">
         <property name="name" nameId="tpck.1169194664001" value="openForWrite" />
         <node role="returnType" roleId="v7ag.4491876417845683831" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="6209278014151496961" />
         <node role="protocols" roleId="v7ag.6209278014151449991" type="v7ag.ProtocolSpec" typeId="v7ag.6209278014151449940" id="6209278014151496976">
@@ -798,7 +798,7 @@
           </node>
         </node>
       </node>
-      <node role="operations" roleId="v7ag.4491876417845484926" type="v7ag.Operation" typeId="v7ag.4491876417845484924" id="6209278014151496964">
+      <node role="contents" roleId="v7ag.4491876417845484926" type="v7ag.Operation" typeId="v7ag.4491876417845484924" id="6209278014151496964">
         <property name="name" nameId="tpck.1169194664001" value="write" />
         <node role="returnType" roleId="v7ag.4491876417845683831" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="6209278014151496966" />
         <node role="protocols" roleId="v7ag.6209278014151449991" type="v7ag.ProtocolSpec" typeId="v7ag.6209278014151449940" id="6209278014151498265">
@@ -810,7 +810,7 @@
           </node>
         </node>
       </node>
-      <node role="operations" roleId="v7ag.4491876417845484926" type="v7ag.Operation" typeId="v7ag.4491876417845484924" id="6209278014151496973">
+      <node role="contents" roleId="v7ag.4491876417845484926" type="v7ag.Operation" typeId="v7ag.4491876417845484924" id="6209278014151496973">
         <property name="name" nameId="tpck.1169194664001" value="openForRead" />
         <node role="returnType" roleId="v7ag.4491876417845683831" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="6209278014151496975" />
         <node role="protocols" roleId="v7ag.6209278014151449991" type="v7ag.ProtocolSpec" typeId="v7ag.6209278014151449940" id="6209278014151498278">
@@ -820,7 +820,7 @@
           </node>
         </node>
       </node>
-      <node role="operations" roleId="v7ag.4491876417845484926" type="v7ag.Operation" typeId="v7ag.4491876417845484924" id="6209278014151496967">
+      <node role="contents" roleId="v7ag.4491876417845484926" type="v7ag.Operation" typeId="v7ag.4491876417845484924" id="6209278014151496967">
         <property name="name" nameId="tpck.1169194664001" value="read" />
         <node role="returnType" roleId="v7ag.4491876417845683831" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="6209278014151496969" />
         <node role="protocols" roleId="v7ag.6209278014151449991" type="v7ag.ProtocolSpec" typeId="v7ag.6209278014151449940" id="6209278014151498281">
@@ -832,7 +832,7 @@
           </node>
         </node>
       </node>
-      <node role="operations" roleId="v7ag.4491876417845484926" type="v7ag.Operation" typeId="v7ag.4491876417845484924" id="6209278014151496970">
+      <node role="contents" roleId="v7ag.4491876417845484926" type="v7ag.Operation" typeId="v7ag.4491876417845484924" id="6209278014151496970">
         <property name="name" nameId="tpck.1169194664001" value="close" />
         <node role="returnType" roleId="v7ag.4491876417845683831" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="6209278014151496972" />
         <node role="protocols" roleId="v7ag.6209278014151449991" type="v7ag.ProtocolSpec" typeId="v7ag.6209278014151449940" id="6209278014151498275">
