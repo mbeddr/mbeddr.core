@@ -350,7 +350,19 @@
     </node>
   </root>
   <root id="5513256947824581019">
-    <node role="conversions" roleId="ym4j.2078797996880467436" type="3c6d.CBasedConversionRule" typeId="3c6d.2078797996880475936" id="2078797996880515333">
+    <node role="contents" roleId="ym4j.6870096341748240402" type="ym4j.NamedConvertibleUnitDeclaration" typeId="ym4j.2078797996880580463" id="2078797996880601371">
+      <property name="name" nameId="tpck.1169194664001" value="F" />
+      <property name="physicalMeaning" nameId="ym4j.2078797996880543461" value="temperature" />
+    </node>
+    <node role="contents" roleId="ym4j.6870096341748240402" type="ym4j.NamedConvertibleUnitDeclaration" typeId="ym4j.2078797996880580463" id="2078797996880601373">
+      <property name="name" nameId="tpck.1169194664001" value="C" />
+      <property name="physicalMeaning" nameId="ym4j.2078797996880543461" value="temperature" />
+    </node>
+    <node role="contents" roleId="ym4j.6870096341748240402" type="ym4j.NamedOpaqueUnitDeclaration" typeId="ym4j.1656687801206561197" id="1656687801206568657">
+      <property name="name" nameId="tpck.1169194664001" value="kWH" />
+      <property name="physicalMeaning" nameId="ym4j.2078797996880543461" value="energy" />
+    </node>
+    <node role="contents" roleId="ym4j.6870096341748240402" type="3c6d.CBasedConversionRule" typeId="3c6d.2078797996880475936" id="2078797996880515333">
       <node role="conversion" roleId="3c6d.2078797996880475939" type="mj1l.MultiExpression" typeId="mj1l.5763383285156373020" id="2078797996880659703">
         <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2078797996880659706">
           <property name="value" nameId="mj1l.8860443239512128104" value="2" />
@@ -364,7 +376,7 @@
         <link role="ref" roleId="ym4j.8099136929591173608" targetNodeId="2078797996880601373" resolveInfo="C" />
       </node>
     </node>
-    <node role="conversions" roleId="ym4j.2078797996880467436" type="3c6d.CBasedConversionRule" typeId="3c6d.2078797996880475936" id="2078797996880515995">
+    <node role="contents" roleId="ym4j.6870096341748240402" type="3c6d.CBasedConversionRule" typeId="3c6d.2078797996880475936" id="2078797996880515995">
       <node role="from" roleId="ym4j.2078797996880475937" type="ym4j.UnitDeclarationRef" typeId="ym4j.8099136929591173606" id="2078797996880515999">
         <link role="ref" roleId="ym4j.8099136929591173608" targetNodeId="2078797996880601373" resolveInfo="C" />
       </node>
@@ -377,18 +389,6 @@
         </node>
         <node role="left" roleId="mj1l.8860443239512128064" type="3c6d.ValExpression" typeId="3c6d.5185104661801317038" id="2078797996880659708" />
       </node>
-    </node>
-    <node role="declarations" roleId="ym4j.3801772042669047873" type="ym4j.NamedConvertibleUnitDeclaration" typeId="ym4j.2078797996880580463" id="2078797996880601371">
-      <property name="name" nameId="tpck.1169194664001" value="F" />
-      <property name="physicalMeaning" nameId="ym4j.2078797996880543461" value="temperature" />
-    </node>
-    <node role="declarations" roleId="ym4j.3801772042669047873" type="ym4j.NamedConvertibleUnitDeclaration" typeId="ym4j.2078797996880580463" id="2078797996880601373">
-      <property name="name" nameId="tpck.1169194664001" value="C" />
-      <property name="physicalMeaning" nameId="ym4j.2078797996880543461" value="temperature" />
-    </node>
-    <node role="declarations" roleId="ym4j.3801772042669047873" type="ym4j.NamedOpaqueUnitDeclaration" typeId="ym4j.1656687801206561197" id="1656687801206568657">
-      <property name="name" nameId="tpck.1169194664001" value="kWH" />
-      <property name="physicalMeaning" nameId="ym4j.2078797996880543461" value="energy" />
     </node>
   </root>
 </model>
