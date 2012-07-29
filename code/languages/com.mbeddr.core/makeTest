@@ -107,7 +107,7 @@ PROC_RET=$(($?+$PROC_RET))
 
 echo -------------------------------------
 echo typedef
-cd ../typedef
+cd ../typedefsAndTypes
 make test
 PROC_RET=$(($?+$PROC_RET))
 
