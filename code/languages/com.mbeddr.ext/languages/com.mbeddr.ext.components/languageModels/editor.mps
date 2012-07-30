@@ -2576,7 +2576,7 @@
     <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="4429602430543939819">
       <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Indent" typeId="tpc2.1237303669825" id="4429602430543939820" />
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="4429602430543939818">
-        <property name="text" nameId="tpc2.1073389577007" value="overrides" />
+        <property name="text" nameId="tpc2.1073389577007" value="implements" />
       </node>
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_RefCell" typeId="tpc2.1088013125922" id="4429602430543939822">
         <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="v7ag.4429602430543939815" />
