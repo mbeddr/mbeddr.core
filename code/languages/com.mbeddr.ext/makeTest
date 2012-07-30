@@ -33,6 +33,13 @@ make test
 PROC_RET=$(($?+$PROC_RET))
 
 echo -------------------------------------
+echo componentInheritance
+cd ..
+cd componentInheritance
+make test
+PROC_RET=$(($?+$PROC_RET))
+
+echo -------------------------------------
 echo staticWiring
 cd ..
 cd staticWiring
