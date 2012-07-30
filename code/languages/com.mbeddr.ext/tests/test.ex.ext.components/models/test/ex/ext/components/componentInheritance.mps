@@ -212,9 +212,6 @@
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="4429602430543651530">
       <property name="name" nameId="tpck.1169194664001" value="empty_1343658590232_4" />
     </node>
-    <node role="imports" roleId="x27k.1317894735999304826" type="x27k.ModuleImport" typeId="x27k.1317894735999299713" id="4429602430543920868">
-      <link role="module" roleId="x27k.1317894735999299714" targetNodeId="4429602430543920867" resolveInfo="Main" />
-    </node>
   </root>
   <root id="4429602430543651475">
     <node role="pointerDiffType" roleId="mj1l.3813668170744198630" type="mj1l.Int32tType" typeId="mj1l.8463282783691618440" id="4429602430543651476">
@@ -421,7 +418,7 @@
         <link role="intf" roleId="v7ag.4491876417845484932" targetNodeId="4429602430543920792" resolveInfo="Intf2" />
       </node>
       <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="4429602430543920801">
-        <property name="name" nameId="tpck.1169194664001" value="getNumber" />
+        <property name="name" nameId="tpck.1169194664001" value="getNumberBase" />
         <property name="abstract" nameId="v7ag.4491876417845678667" value="true" />
         <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="4429602430543920802">
           <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
@@ -440,7 +437,7 @@
         <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="4429602430543921984">
           <node role="statements" roleId="c4fa.4185783222026475862" type="x27k.ReturnStatement" typeId="x27k.8967919205527146149" id="4429602430543921988">
             <node role="expression" roleId="x27k.8967919205527146150" type="v7ag.InternalRunnableCall" typeId="v7ag.1302968767135003933" id="4429602430543921990">
-              <link role="runnable" roleId="v7ag.1302968767135003934" targetNodeId="4429602430543920801" resolveInfo="getNumber" />
+              <link role="runnable" roleId="v7ag.1302968767135003934" targetNodeId="4429602430543920801" resolveInfo="getNumberBase" />
               <node role="actuals" roleId="v7ag.5950410542643524495" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="4429602430543939807">
                 <property name="value" nameId="mj1l.8860443239512128104" value="10" />
               </node>
@@ -483,7 +480,7 @@
           <property name="const" nameId="mj1l.2941277002445651368" value="false" />
         </node>
         <node role="implements" roleId="v7ag.4429602430543939826" type="v7ag.ImplementRunnableRef" typeId="v7ag.4429602430543939814" id="4429602430544035866">
-          <link role="runnable" roleId="v7ag.4429602430543939815" targetNodeId="4429602430543920801" resolveInfo="getNumber" />
+          <link role="runnable" roleId="v7ag.4429602430543939815" targetNodeId="4429602430543920801" resolveInfo="getNumberBase" />
         </node>
         <node role="arguments" roleId="x27k.5708867820623310661" type="v7ag.RunnableArgument" typeId="v7ag.8105003328814724891" id="4429602430544163739">
           <property name="name" nameId="tpck.1169194664001" value="x" />
@@ -527,7 +524,7 @@
           <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="4429602430544163745" />
           <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="4429602430544163753">
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="4429602430544163756">
-              <property name="value" nameId="mj1l.8860443239512128104" value="30" />
+              <property name="value" nameId="mj1l.8860443239512128104" value="20" />
             </node>
             <node role="left" roleId="mj1l.8860443239512128064" type="v7ag.PortAdapterOpCallExpr" typeId="v7ag.466603768608410221" id="4429602430544163750">
               <link role="operation" roleId="v7ag.8105003328815071752" targetNodeId="4429602430543920793" resolveInfo="op1" />
