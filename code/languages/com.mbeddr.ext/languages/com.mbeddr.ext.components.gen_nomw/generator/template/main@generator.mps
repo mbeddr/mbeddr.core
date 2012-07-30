@@ -33,7 +33,6 @@
   <import index="yq40" modelUID="r:152b3fc0-83a1-4bab-a8cd-565eb8483785(com.mbeddr.core.pointers.structure)" version="3" implicit="yes" />
   <import index="k146" modelUID="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" version="2" implicit="yes" />
   <import index="clbe" modelUID="r:61d840b4-12c1-49ea-b142-b2a1550a9b15(com.mbeddr.core.udt.structure)" version="7" implicit="yes" />
-  <import index="jphc" modelUID="r:f5e22059-6c2f-430a-9e46-6dae72a4d73d(com.mbeddr.mpsutil.genutil.structure)" version="-1" implicit="yes" />
   <roots>
     <node type="tpf8.MappingConfiguration" typeId="tpf8.1095416546421" id="8105003328815413561">
       <property name="name" nameId="tpck.1169194664001" value="main" />
@@ -2359,10 +2358,10 @@
                             <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="5022036173480826064">
                               <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="2728035328384349908">
                                 <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="2728035328384349909">
-                                  <node role="operand" roleId="tpee.1197027771414" type="jphc.GetRefExpression" typeId="jphc.8326627235132606243" id="2728035328384349910">
-                                    <property name="key" nameId="jphc.8326627235132606245" value="instance" />
-                                    <node role="ctxNode" roleId="jphc.8326627235132606244" type="tpf8.TemplateFunctionParameter_sourceNode" typeId="tpf8.1167169188348" id="2728035328384349911" />
-                                    <node role="conc" roleId="jphc.1177027386292" type="tp25.RefConcept_Reference" typeId="tp25.1177026924588" id="2728035328384349912">
+                                  <node role="operand" roleId="tpee.1197027771414" type=".com.mbeddr.mpsutil.genutil.structure.GetRefExpression" id="2728035328384349910">
+                                    <property name="key" value="instance" />
+                                    <node role="ctxNode" type="tpf8.TemplateFunctionParameter_sourceNode" typeId="tpf8.1167169188348" id="2728035328384349911" />
+                                    <node role="conc" type="tp25.RefConcept_Reference" typeId="tp25.1177026924588" id="2728035328384349912">
                                       <link role="conceptDeclaration" roleId="tp25.1177026940964" targetNodeId="v7ag.4491876417845649014" resolveInfo="ComponentInstance" />
                                     </node>
                                   </node>
@@ -2383,10 +2382,10 @@
                             <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="5022036173480826083">
                               <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="2728035328384349915">
                                 <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="2728035328384349916">
-                                  <node role="operand" roleId="tpee.1197027771414" type="jphc.GetRefExpression" typeId="jphc.8326627235132606243" id="2728035328384349917">
-                                    <property name="key" nameId="jphc.8326627235132606245" value="requiredPort" />
-                                    <node role="ctxNode" roleId="jphc.8326627235132606244" type="tpf8.TemplateFunctionParameter_sourceNode" typeId="tpf8.1167169188348" id="2728035328384349918" />
-                                    <node role="conc" roleId="jphc.1177027386292" type="tp25.RefConcept_Reference" typeId="tp25.1177026924588" id="2728035328384349919">
+                                  <node role="operand" roleId="tpee.1197027771414" type=".com.mbeddr.mpsutil.genutil.structure.GetRefExpression" id="2728035328384349917">
+                                    <property name="key" value="requiredPort" />
+                                    <node role="ctxNode" type="tpf8.TemplateFunctionParameter_sourceNode" typeId="tpf8.1167169188348" id="2728035328384349918" />
+                                    <node role="conc" type="tp25.RefConcept_Reference" typeId="tp25.1177026924588" id="2728035328384349919">
                                       <link role="conceptDeclaration" roleId="tp25.1177026940964" targetNodeId="v7ag.4491876417845628841" resolveInfo="RequiredPort" />
                                     </node>
                                   </node>
@@ -2415,10 +2414,10 @@
                                   <node role="type" roleId="tpee.5680397130376446158" type="tp25.SNodeType" typeId="tp25.1138055754698" id="5022036173480826106">
                                     <link role="concept" roleId="tp25.1138405853777" targetNodeId="v7ag.4491876417845649014" resolveInfo="ComponentInstance" />
                                   </node>
-                                  <node role="initializer" roleId="tpee.1068431790190" type="jphc.GetRefExpression" typeId="jphc.8326627235132606243" id="2728035328384349950">
-                                    <property name="key" nameId="jphc.8326627235132606245" value="instance" />
-                                    <node role="ctxNode" roleId="jphc.8326627235132606244" type="tpf8.TemplateFunctionParameter_sourceNode" typeId="tpf8.1167169188348" id="2728035328384349951" />
-                                    <node role="conc" roleId="jphc.1177027386292" type="tp25.RefConcept_Reference" typeId="tp25.1177026924588" id="2728035328384349954">
+                                  <node role="initializer" roleId="tpee.1068431790190" type=".com.mbeddr.mpsutil.genutil.structure.GetRefExpression" id="2728035328384349950">
+                                    <property name="key" value="instance" />
+                                    <node role="ctxNode" type="tpf8.TemplateFunctionParameter_sourceNode" typeId="tpf8.1167169188348" id="2728035328384349951" />
+                                    <node role="conc" type="tp25.RefConcept_Reference" typeId="tp25.1177026924588" id="2728035328384349954">
                                       <link role="conceptDeclaration" roleId="tp25.1177026940964" targetNodeId="v7ag.4491876417845649014" resolveInfo="ComponentInstance" />
                                     </node>
                                   </node>
@@ -2430,10 +2429,10 @@
                                   <node role="type" roleId="tpee.5680397130376446158" type="tp25.SNodeType" typeId="tp25.1138055754698" id="5022036173480826117">
                                     <link role="concept" roleId="tp25.1138405853777" targetNodeId="v7ag.4491876417845628841" resolveInfo="RequiredPort" />
                                   </node>
-                                  <node role="initializer" roleId="tpee.1068431790190" type="jphc.GetRefExpression" typeId="jphc.8326627235132606243" id="2728035328384349926">
-                                    <property name="key" nameId="jphc.8326627235132606245" value="requiredPort" />
-                                    <node role="ctxNode" roleId="jphc.8326627235132606244" type="tpf8.TemplateFunctionParameter_sourceNode" typeId="tpf8.1167169188348" id="2728035328384349927" />
-                                    <node role="conc" roleId="jphc.1177027386292" type="tp25.RefConcept_Reference" typeId="tp25.1177026924588" id="2728035328384349928">
+                                  <node role="initializer" roleId="tpee.1068431790190" type=".com.mbeddr.mpsutil.genutil.structure.GetRefExpression" id="2728035328384349926">
+                                    <property name="key" value="requiredPort" />
+                                    <node role="ctxNode" type="tpf8.TemplateFunctionParameter_sourceNode" typeId="tpf8.1167169188348" id="2728035328384349927" />
+                                    <node role="conc" type="tp25.RefConcept_Reference" typeId="tp25.1177026924588" id="2728035328384349928">
                                       <link role="conceptDeclaration" roleId="tp25.1177026940964" targetNodeId="v7ag.4491876417845628841" resolveInfo="RequiredPort" />
                                     </node>
                                   </node>
@@ -2445,10 +2444,10 @@
                                   <node role="type" roleId="tpee.5680397130376446158" type="tp25.SNodeType" typeId="tp25.1138055754698" id="5022036173480826128">
                                     <link role="concept" roleId="tp25.1138405853777" targetNodeId="v7ag.4491876417845649024" resolveInfo="InstanceConfiguration" />
                                   </node>
-                                  <node role="initializer" roleId="tpee.1068431790190" type="jphc.GetRefExpression" typeId="jphc.8326627235132606243" id="2728035328384349957">
-                                    <property name="key" nameId="jphc.8326627235132606245" value="instanceConfig" />
-                                    <node role="ctxNode" roleId="jphc.8326627235132606244" type="tpf8.TemplateFunctionParameter_sourceNode" typeId="tpf8.1167169188348" id="2728035328384349958" />
-                                    <node role="conc" roleId="jphc.1177027386292" type="tp25.RefConcept_Reference" typeId="tp25.1177026924588" id="2728035328384349961">
+                                  <node role="initializer" roleId="tpee.1068431790190" type=".com.mbeddr.mpsutil.genutil.structure.GetRefExpression" id="2728035328384349957">
+                                    <property name="key" value="instanceConfig" />
+                                    <node role="ctxNode" type="tpf8.TemplateFunctionParameter_sourceNode" typeId="tpf8.1167169188348" id="2728035328384349958" />
+                                    <node role="conc" type="tp25.RefConcept_Reference" typeId="tp25.1177026924588" id="2728035328384349961">
                                       <link role="conceptDeclaration" roleId="tp25.1177026940964" targetNodeId="v7ag.4491876417845649024" resolveInfo="InstanceConfiguration" />
                                     </node>
                                   </node>
@@ -2552,28 +2551,28 @@
                                         </node>
                                       </node>
                                     </node>
-                                    <node role="statement" roleId="tpee.1068581517665" type="jphc.SetRefStatement" typeId="jphc.8326627235132566911" id="2728035328384349793">
-                                      <property name="key" nameId="jphc.8326627235132566925" value="instance" />
-                                      <node role="target" roleId="jphc.8326627235132566926" type="tp2q.ForEachVariableReference" typeId="tp2q.1153944233411" id="2728035328384349794">
+                                    <node role="statement" roleId="tpee.1068581517665" type=".com.mbeddr.mpsutil.genutil.structure.SetRefStatement" id="2728035328384349793">
+                                      <property name="key" value="instance" />
+                                      <node role="target" type="tp2q.ForEachVariableReference" typeId="tp2q.1153944233411" id="2728035328384349794">
                                         <link role="variable" roleId="tp2q.1153944258490" targetNodeId="5022036173480826161" resolveInfo="i" />
                                       </node>
-                                      <node role="ctxNode" roleId="jphc.8326627235132566924" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="2728035328384349795">
+                                      <node role="ctxNode" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="2728035328384349795">
                                         <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="2728035328384349786" resolveInfo="instancePortPair" />
                                       </node>
                                     </node>
-                                    <node role="statement" roleId="tpee.1068581517665" type="jphc.SetRefStatement" typeId="jphc.8326627235132566911" id="2728035328384349796">
-                                      <property name="key" nameId="jphc.8326627235132566925" value="requiredPort" />
-                                      <node role="target" roleId="jphc.8326627235132566926" type="tp2q.ForEachVariableReference" typeId="tp2q.1153944233411" id="2728035328384349839">
+                                    <node role="statement" roleId="tpee.1068581517665" type=".com.mbeddr.mpsutil.genutil.structure.SetRefStatement" id="2728035328384349796">
+                                      <property name="key" value="requiredPort" />
+                                      <node role="target" type="tp2q.ForEachVariableReference" typeId="tp2q.1153944233411" id="2728035328384349839">
                                         <link role="variable" roleId="tp2q.1153944258490" targetNodeId="5022036173480826164" resolveInfo="rp" />
                                       </node>
-                                      <node role="ctxNode" roleId="jphc.8326627235132566924" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="2728035328384349798">
+                                      <node role="ctxNode" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="2728035328384349798">
                                         <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="2728035328384349786" resolveInfo="instancePortPair" />
                                       </node>
                                     </node>
-                                    <node role="statement" roleId="tpee.1068581517665" type="jphc.SetRefStatement" typeId="jphc.8326627235132566911" id="2728035328384349802">
-                                      <property name="key" nameId="jphc.8326627235132566925" value="instanceConfig" />
-                                      <node role="target" roleId="jphc.8326627235132566926" type="tpf8.TemplateFunctionParameter_sourceNode" typeId="tpf8.1167169188348" id="2728035328384349803" />
-                                      <node role="ctxNode" roleId="jphc.8326627235132566924" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="2728035328384349804">
+                                    <node role="statement" roleId="tpee.1068581517665" type=".com.mbeddr.mpsutil.genutil.structure.SetRefStatement" id="2728035328384349802">
+                                      <property name="key" value="instanceConfig" />
+                                      <node role="target" type="tpf8.TemplateFunctionParameter_sourceNode" typeId="tpf8.1167169188348" id="2728035328384349803" />
+                                      <node role="ctxNode" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="2728035328384349804">
                                         <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="2728035328384349786" resolveInfo="instancePortPair" />
                                       </node>
                                     </node>
@@ -2667,10 +2666,10 @@
                             <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="5022036173480826246">
                               <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="2728035328384349615">
                                 <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="2728035328384349616">
-                                  <node role="operand" roleId="tpee.1197027771414" type="jphc.GetRefExpression" typeId="jphc.8326627235132606243" id="2728035328384349617">
-                                    <property name="key" nameId="jphc.8326627235132606245" value="instance" />
-                                    <node role="ctxNode" roleId="jphc.8326627235132606244" type="tpf8.TemplateFunctionParameter_sourceNode" typeId="tpf8.1167169188348" id="2728035328384349618" />
-                                    <node role="conc" roleId="jphc.1177027386292" type="tp25.RefConcept_Reference" typeId="tp25.1177026924588" id="2728035328384349619">
+                                  <node role="operand" roleId="tpee.1197027771414" type=".com.mbeddr.mpsutil.genutil.structure.GetRefExpression" id="2728035328384349617">
+                                    <property name="key" value="instance" />
+                                    <node role="ctxNode" type="tpf8.TemplateFunctionParameter_sourceNode" typeId="tpf8.1167169188348" id="2728035328384349618" />
+                                    <node role="conc" type="tp25.RefConcept_Reference" typeId="tp25.1177026924588" id="2728035328384349619">
                                       <link role="conceptDeclaration" roleId="tp25.1177026940964" targetNodeId="v7ag.4491876417845649014" resolveInfo="ComponentInstance" />
                                     </node>
                                   </node>
@@ -2691,10 +2690,10 @@
                             <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="5022036173480826265">
                               <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="2728035328384349658">
                                 <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="2728035328384349651">
-                                  <node role="operand" roleId="tpee.1197027771414" type="jphc.GetRefExpression" typeId="jphc.8326627235132606243" id="2728035328384349626">
-                                    <property name="key" nameId="jphc.8326627235132606245" value="requiredPort" />
-                                    <node role="ctxNode" roleId="jphc.8326627235132606244" type="tpf8.TemplateFunctionParameter_sourceNode" typeId="tpf8.1167169188348" id="2728035328384349627" />
-                                    <node role="conc" roleId="jphc.1177027386292" type="tp25.RefConcept_Reference" typeId="tp25.1177026924588" id="2728035328384349630">
+                                  <node role="operand" roleId="tpee.1197027771414" type=".com.mbeddr.mpsutil.genutil.structure.GetRefExpression" id="2728035328384349626">
+                                    <property name="key" value="requiredPort" />
+                                    <node role="ctxNode" type="tpf8.TemplateFunctionParameter_sourceNode" typeId="tpf8.1167169188348" id="2728035328384349627" />
+                                    <node role="conc" type="tp25.RefConcept_Reference" typeId="tp25.1177026924588" id="2728035328384349630">
                                       <link role="conceptDeclaration" roleId="tp25.1177026940964" targetNodeId="v7ag.4491876417845628841" resolveInfo="RequiredPort" />
                                     </node>
                                   </node>
@@ -2764,21 +2763,21 @@
                                   </node>
                                 </node>
                                 <node role="statement" roleId="tpee.1068581517665" type="tpee.Statement" typeId="tpee.1068580123157" id="2728035328384349525" />
-                                <node role="statement" roleId="tpee.1068581517665" type="jphc.SetRefStatement" typeId="jphc.8326627235132566911" id="2728035328384349517">
-                                  <property name="key" nameId="jphc.8326627235132566925" value="instance" />
-                                  <node role="target" roleId="jphc.8326627235132566926" type="tp2q.ForEachVariableReference" typeId="tp2q.1153944233411" id="2728035328384349518">
+                                <node role="statement" roleId="tpee.1068581517665" type=".com.mbeddr.mpsutil.genutil.structure.SetRefStatement" id="2728035328384349517">
+                                  <property name="key" value="instance" />
+                                  <node role="target" type="tp2q.ForEachVariableReference" typeId="tp2q.1153944233411" id="2728035328384349518">
                                     <link role="variable" roleId="tp2q.1153944258490" targetNodeId="5022036173480826292" resolveInfo="i" />
                                   </node>
-                                  <node role="ctxNode" roleId="jphc.8326627235132566924" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="2728035328384349574">
+                                  <node role="ctxNode" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="2728035328384349574">
                                     <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="2728035328384349529" resolveInfo="instancePortPair" />
                                   </node>
                                 </node>
-                                <node role="statement" roleId="tpee.1068581517665" type="jphc.SetRefStatement" typeId="jphc.8326627235132566911" id="2728035328384349520">
-                                  <property name="key" nameId="jphc.8326627235132566925" value="requiredPort" />
-                                  <node role="target" roleId="jphc.8326627235132566926" type="tp2q.ForEachVariableReference" typeId="tp2q.1153944233411" id="2728035328384349580">
+                                <node role="statement" roleId="tpee.1068581517665" type=".com.mbeddr.mpsutil.genutil.structure.SetRefStatement" id="2728035328384349520">
+                                  <property name="key" value="requiredPort" />
+                                  <node role="target" type="tp2q.ForEachVariableReference" typeId="tp2q.1153944233411" id="2728035328384349580">
                                     <link role="variable" roleId="tp2q.1153944258490" targetNodeId="5022036173480826295" resolveInfo="rp" />
                                   </node>
-                                  <node role="ctxNode" roleId="jphc.8326627235132566924" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="2728035328384349577">
+                                  <node role="ctxNode" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="2728035328384349577">
                                     <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="2728035328384349529" resolveInfo="instancePortPair" />
                                   </node>
                                 </node>
@@ -2874,10 +2873,10 @@
                             <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="5022036173480826368">
                               <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="2728035328384349027">
                                 <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="2728035328384349028">
-                                  <node role="operand" roleId="tpee.1197027771414" type="jphc.GetRefExpression" typeId="jphc.8326627235132606243" id="2728035328384349029">
-                                    <property name="key" nameId="jphc.8326627235132606245" value="instance" />
-                                    <node role="ctxNode" roleId="jphc.8326627235132606244" type="tpf8.TemplateFunctionParameter_sourceNode" typeId="tpf8.1167169188348" id="2728035328384349030" />
-                                    <node role="conc" roleId="jphc.1177027386292" type="tp25.RefConcept_Reference" typeId="tp25.1177026924588" id="2728035328384349031">
+                                  <node role="operand" roleId="tpee.1197027771414" type=".com.mbeddr.mpsutil.genutil.structure.GetRefExpression" id="2728035328384349029">
+                                    <property name="key" value="instance" />
+                                    <node role="ctxNode" type="tpf8.TemplateFunctionParameter_sourceNode" typeId="tpf8.1167169188348" id="2728035328384349030" />
+                                    <node role="conc" type="tp25.RefConcept_Reference" typeId="tp25.1177026924588" id="2728035328384349031">
                                       <link role="conceptDeclaration" roleId="tp25.1177026940964" targetNodeId="v7ag.4491876417845649014" resolveInfo="ComponentInstance" />
                                     </node>
                                   </node>
@@ -2902,10 +2901,10 @@
                                   <node role="type" roleId="tpee.5680397130376446158" type="tp25.SNodeType" typeId="tp25.1138055754698" id="2728035328384349071">
                                     <link role="concept" roleId="tp25.1138405853777" targetNodeId="v7ag.4491876417845484924" resolveInfo="Operation" />
                                   </node>
-                                  <node role="initializer" roleId="tpee.1068431790190" type="jphc.GetRefExpression" typeId="jphc.8326627235132606243" id="2728035328384349072">
-                                    <property name="key" nameId="jphc.8326627235132606245" value="operation" />
-                                    <node role="ctxNode" roleId="jphc.8326627235132606244" type="tpf8.TemplateFunctionParameter_sourceNode" typeId="tpf8.1167169188348" id="2728035328384349073" />
-                                    <node role="conc" roleId="jphc.1177027386292" type="tp25.RefConcept_Reference" typeId="tp25.1177026924588" id="2728035328384349074">
+                                  <node role="initializer" roleId="tpee.1068431790190" type=".com.mbeddr.mpsutil.genutil.structure.GetRefExpression" id="2728035328384349072">
+                                    <property name="key" value="operation" />
+                                    <node role="ctxNode" type="tpf8.TemplateFunctionParameter_sourceNode" typeId="tpf8.1167169188348" id="2728035328384349073" />
+                                    <node role="conc" type="tp25.RefConcept_Reference" typeId="tp25.1177026924588" id="2728035328384349074">
                                       <link role="conceptDeclaration" roleId="tp25.1177026940964" targetNodeId="v7ag.4491876417845484924" resolveInfo="Operation" />
                                     </node>
                                   </node>
@@ -2917,10 +2916,10 @@
                                   <node role="type" roleId="tpee.5680397130376446158" type="tp25.SNodeType" typeId="tp25.1138055754698" id="2728035328384349077">
                                     <link role="concept" roleId="tp25.1138405853777" targetNodeId="v7ag.4491876417845484930" resolveInfo="Port" />
                                   </node>
-                                  <node role="initializer" roleId="tpee.1068431790190" type="jphc.GetRefExpression" typeId="jphc.8326627235132606243" id="2728035328384349078">
-                                    <property name="key" nameId="jphc.8326627235132606245" value="requiredPort" />
-                                    <node role="ctxNode" roleId="jphc.8326627235132606244" type="tpf8.TemplateFunctionParameter_sourceNode" typeId="tpf8.1167169188348" id="2728035328384349079" />
-                                    <node role="conc" roleId="jphc.1177027386292" type="tp25.RefConcept_Reference" typeId="tp25.1177026924588" id="2728035328384349080">
+                                  <node role="initializer" roleId="tpee.1068431790190" type=".com.mbeddr.mpsutil.genutil.structure.GetRefExpression" id="2728035328384349078">
+                                    <property name="key" value="requiredPort" />
+                                    <node role="ctxNode" type="tpf8.TemplateFunctionParameter_sourceNode" typeId="tpf8.1167169188348" id="2728035328384349079" />
+                                    <node role="conc" type="tp25.RefConcept_Reference" typeId="tp25.1177026924588" id="2728035328384349080">
                                       <link role="conceptDeclaration" roleId="tp25.1177026940964" targetNodeId="v7ag.4491876417845484930" resolveInfo="Port" />
                                     </node>
                                   </node>
@@ -2957,10 +2956,10 @@
                                 <node role="type" roleId="tpee.5680397130376446158" type="tp25.SNodeType" typeId="tp25.1138055754698" id="5022036173480826421">
                                   <link role="concept" roleId="tp25.1138405853777" targetNodeId="v7ag.4491876417845649014" resolveInfo="ComponentInstance" />
                                 </node>
-                                <node role="initializer" roleId="tpee.1068431790190" type="jphc.GetRefExpression" typeId="jphc.8326627235132606243" id="2728035328384349134">
-                                  <property name="key" nameId="jphc.8326627235132606245" value="instance" />
-                                  <node role="ctxNode" roleId="jphc.8326627235132606244" type="tpf8.TemplateFunctionParameter_sourceNode" typeId="tpf8.1167169188348" id="2728035328384349135" />
-                                  <node role="conc" roleId="jphc.1177027386292" type="tp25.RefConcept_Reference" typeId="tp25.1177026924588" id="2728035328384349136">
+                                <node role="initializer" roleId="tpee.1068431790190" type=".com.mbeddr.mpsutil.genutil.structure.GetRefExpression" id="2728035328384349134">
+                                  <property name="key" value="instance" />
+                                  <node role="ctxNode" type="tpf8.TemplateFunctionParameter_sourceNode" typeId="tpf8.1167169188348" id="2728035328384349135" />
+                                  <node role="conc" type="tp25.RefConcept_Reference" typeId="tp25.1177026924588" id="2728035328384349136">
                                     <link role="conceptDeclaration" roleId="tp25.1177026940964" targetNodeId="v7ag.4491876417845649014" resolveInfo="ComponentInstance" />
                                   </node>
                                 </node>
@@ -2972,10 +2971,10 @@
                                 <node role="type" roleId="tpee.5680397130376446158" type="tp25.SNodeType" typeId="tp25.1138055754698" id="2728035328384349087">
                                   <link role="concept" roleId="tp25.1138405853777" targetNodeId="v7ag.4491876417845484924" resolveInfo="Operation" />
                                 </node>
-                                <node role="initializer" roleId="tpee.1068431790190" type="jphc.GetRefExpression" typeId="jphc.8326627235132606243" id="2728035328384349088">
-                                  <property name="key" nameId="jphc.8326627235132606245" value="operation" />
-                                  <node role="ctxNode" roleId="jphc.8326627235132606244" type="tpf8.TemplateFunctionParameter_sourceNode" typeId="tpf8.1167169188348" id="2728035328384349089" />
-                                  <node role="conc" roleId="jphc.1177027386292" type="tp25.RefConcept_Reference" typeId="tp25.1177026924588" id="2728035328384349090">
+                                <node role="initializer" roleId="tpee.1068431790190" type=".com.mbeddr.mpsutil.genutil.structure.GetRefExpression" id="2728035328384349088">
+                                  <property name="key" value="operation" />
+                                  <node role="ctxNode" type="tpf8.TemplateFunctionParameter_sourceNode" typeId="tpf8.1167169188348" id="2728035328384349089" />
+                                  <node role="conc" type="tp25.RefConcept_Reference" typeId="tp25.1177026924588" id="2728035328384349090">
                                     <link role="conceptDeclaration" roleId="tp25.1177026940964" targetNodeId="v7ag.4491876417845484924" resolveInfo="Operation" />
                                   </node>
                                 </node>
@@ -2987,10 +2986,10 @@
                                 <node role="type" roleId="tpee.5680397130376446158" type="tp25.SNodeType" typeId="tp25.1138055754698" id="2728035328384349093">
                                   <link role="concept" roleId="tp25.1138405853777" targetNodeId="v7ag.4491876417845628841" resolveInfo="RequiredPort" />
                                 </node>
-                                <node role="initializer" roleId="tpee.1068431790190" type="jphc.GetRefExpression" typeId="jphc.8326627235132606243" id="2728035328384349094">
-                                  <property name="key" nameId="jphc.8326627235132606245" value="requiredPort" />
-                                  <node role="ctxNode" roleId="jphc.8326627235132606244" type="tpf8.TemplateFunctionParameter_sourceNode" typeId="tpf8.1167169188348" id="2728035328384349095" />
-                                  <node role="conc" roleId="jphc.1177027386292" type="tp25.RefConcept_Reference" typeId="tp25.1177026924588" id="2728035328384349496">
+                                <node role="initializer" roleId="tpee.1068431790190" type=".com.mbeddr.mpsutil.genutil.structure.GetRefExpression" id="2728035328384349094">
+                                  <property name="key" value="requiredPort" />
+                                  <node role="ctxNode" type="tpf8.TemplateFunctionParameter_sourceNode" typeId="tpf8.1167169188348" id="2728035328384349095" />
+                                  <node role="conc" type="tp25.RefConcept_Reference" typeId="tp25.1177026924588" id="2728035328384349496">
                                     <link role="conceptDeclaration" roleId="tp25.1177026940964" targetNodeId="v7ag.4491876417845628841" resolveInfo="RequiredPort" />
                                   </node>
                                 </node>
@@ -3002,10 +3001,10 @@
                                 <node role="type" roleId="tpee.5680397130376446158" type="tp25.SNodeType" typeId="tp25.1138055754698" id="2728035328384349208">
                                   <link role="concept" roleId="tp25.1138405853777" targetNodeId="v7ag.4491876417845649024" resolveInfo="InstanceConfiguration" />
                                 </node>
-                                <node role="initializer" roleId="tpee.1068431790190" type="jphc.GetRefExpression" typeId="jphc.8326627235132606243" id="2728035328384349209">
-                                  <property name="key" nameId="jphc.8326627235132606245" value="instanceConfig" />
-                                  <node role="ctxNode" roleId="jphc.8326627235132606244" type="tpf8.TemplateFunctionParameter_sourceNode" typeId="tpf8.1167169188348" id="2728035328384349210" />
-                                  <node role="conc" roleId="jphc.1177027386292" type="tp25.RefConcept_Reference" typeId="tp25.1177026924588" id="2728035328384349248">
+                                <node role="initializer" roleId="tpee.1068431790190" type=".com.mbeddr.mpsutil.genutil.structure.GetRefExpression" id="2728035328384349209">
+                                  <property name="key" value="instanceConfig" />
+                                  <node role="ctxNode" type="tpf8.TemplateFunctionParameter_sourceNode" typeId="tpf8.1167169188348" id="2728035328384349210" />
+                                  <node role="conc" type="tp25.RefConcept_Reference" typeId="tp25.1177026924588" id="2728035328384349248">
                                     <link role="conceptDeclaration" roleId="tp25.1177026940964" targetNodeId="v7ag.4491876417845649024" resolveInfo="InstanceConfiguration" />
                                   </node>
                                 </node>
@@ -3220,37 +3219,37 @@
                                             </node>
                                           </node>
                                         </node>
-                                        <node role="statement" roleId="tpee.1068581517665" type="jphc.SetRefStatement" typeId="jphc.8326627235132566911" id="2728035328384348911">
-                                          <property name="key" nameId="jphc.8326627235132566925" value="instance" />
-                                          <node role="target" roleId="jphc.8326627235132566926" type="tp2q.ForEachVariableReference" typeId="tp2q.1153944233411" id="2728035328384348912">
+                                        <node role="statement" roleId="tpee.1068581517665" type=".com.mbeddr.mpsutil.genutil.structure.SetRefStatement" id="2728035328384348911">
+                                          <property name="key" value="instance" />
+                                          <node role="target" type="tp2q.ForEachVariableReference" typeId="tp2q.1153944233411" id="2728035328384348912">
                                             <link role="variable" roleId="tp2q.1153944258490" targetNodeId="5022036173480826523" resolveInfo="i" />
                                           </node>
-                                          <node role="ctxNode" roleId="jphc.8326627235132566924" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="2728035328384348913">
+                                          <node role="ctxNode" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="2728035328384348913">
                                             <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="2728035328384348904" resolveInfo="triple" />
                                           </node>
                                         </node>
-                                        <node role="statement" roleId="tpee.1068581517665" type="jphc.SetRefStatement" typeId="jphc.8326627235132566911" id="2728035328384348914">
-                                          <property name="key" nameId="jphc.8326627235132566925" value="requiredPort" />
-                                          <node role="target" roleId="jphc.8326627235132566926" type="tp2q.ForEachVariableReference" typeId="tp2q.1153944233411" id="2728035328384348915">
+                                        <node role="statement" roleId="tpee.1068581517665" type=".com.mbeddr.mpsutil.genutil.structure.SetRefStatement" id="2728035328384348914">
+                                          <property name="key" value="requiredPort" />
+                                          <node role="target" type="tp2q.ForEachVariableReference" typeId="tp2q.1153944233411" id="2728035328384348915">
                                             <link role="variable" roleId="tp2q.1153944258490" targetNodeId="5022036173480826526" resolveInfo="p" />
                                           </node>
-                                          <node role="ctxNode" roleId="jphc.8326627235132566924" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="2728035328384348916">
+                                          <node role="ctxNode" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="2728035328384348916">
                                             <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="2728035328384348904" resolveInfo="triple" />
                                           </node>
                                         </node>
-                                        <node role="statement" roleId="tpee.1068581517665" type="jphc.SetRefStatement" typeId="jphc.8326627235132566911" id="2728035328384348917">
-                                          <property name="key" nameId="jphc.8326627235132566925" value="operation" />
-                                          <node role="target" roleId="jphc.8326627235132566926" type="tp2q.ForEachVariableReference" typeId="tp2q.1153944233411" id="2728035328384348918">
+                                        <node role="statement" roleId="tpee.1068581517665" type=".com.mbeddr.mpsutil.genutil.structure.SetRefStatement" id="2728035328384348917">
+                                          <property name="key" value="operation" />
+                                          <node role="target" type="tp2q.ForEachVariableReference" typeId="tp2q.1153944233411" id="2728035328384348918">
                                             <link role="variable" roleId="tp2q.1153944258490" targetNodeId="5022036173480826534" resolveInfo="o" />
                                           </node>
-                                          <node role="ctxNode" roleId="jphc.8326627235132566924" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="2728035328384348919">
+                                          <node role="ctxNode" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="2728035328384348919">
                                             <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="2728035328384348904" resolveInfo="triple" />
                                           </node>
                                         </node>
-                                        <node role="statement" roleId="tpee.1068581517665" type="jphc.SetRefStatement" typeId="jphc.8326627235132566911" id="2728035328384348955">
-                                          <property name="key" nameId="jphc.8326627235132566925" value="instanceConfig" />
-                                          <node role="target" roleId="jphc.8326627235132566926" type="tpf8.TemplateFunctionParameter_sourceNode" typeId="tpf8.1167169188348" id="2728035328384348992" />
-                                          <node role="ctxNode" roleId="jphc.8326627235132566924" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="2728035328384348957">
+                                        <node role="statement" roleId="tpee.1068581517665" type=".com.mbeddr.mpsutil.genutil.structure.SetRefStatement" id="2728035328384348955">
+                                          <property name="key" value="instanceConfig" />
+                                          <node role="target" type="tpf8.TemplateFunctionParameter_sourceNode" typeId="tpf8.1167169188348" id="2728035328384348992" />
+                                          <node role="ctxNode" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="2728035328384348957">
                                             <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="2728035328384348904" resolveInfo="triple" />
                                           </node>
                                         </node>
@@ -3347,10 +3346,10 @@
                             <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="5022036173480826625">
                               <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="2728035328384312518">
                                 <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="2728035328384312545">
-                                  <node role="operand" roleId="tpee.1197027771414" type="jphc.GetRefExpression" typeId="jphc.8326627235132606243" id="2728035328384312519">
-                                    <property name="key" nameId="jphc.8326627235132606245" value="instance" />
-                                    <node role="ctxNode" roleId="jphc.8326627235132606244" type="tpf8.TemplateFunctionParameter_sourceNode" typeId="tpf8.1167169188348" id="2728035328384312522" />
-                                    <node role="conc" roleId="jphc.1177027386292" type="tp25.RefConcept_Reference" typeId="tp25.1177026924588" id="2728035328384312524">
+                                  <node role="operand" roleId="tpee.1197027771414" type=".com.mbeddr.mpsutil.genutil.structure.GetRefExpression" id="2728035328384312519">
+                                    <property name="key" value="instance" />
+                                    <node role="ctxNode" type="tpf8.TemplateFunctionParameter_sourceNode" typeId="tpf8.1167169188348" id="2728035328384312522" />
+                                    <node role="conc" type="tp25.RefConcept_Reference" typeId="tp25.1177026924588" id="2728035328384312524">
                                       <link role="conceptDeclaration" roleId="tp25.1177026940964" targetNodeId="v7ag.4491876417845649014" resolveInfo="ComponentInstance" />
                                     </node>
                                   </node>
@@ -3375,10 +3374,10 @@
                                   <node role="type" roleId="tpee.5680397130376446158" type="tp25.SNodeType" typeId="tp25.1138055754698" id="5022036173480826647">
                                     <link role="concept" roleId="tp25.1138405853777" targetNodeId="v7ag.4491876417845484924" resolveInfo="Operation" />
                                   </node>
-                                  <node role="initializer" roleId="tpee.1068431790190" type="jphc.GetRefExpression" typeId="jphc.8326627235132606243" id="2728035328384312555">
-                                    <property name="key" nameId="jphc.8326627235132606245" value="operation" />
-                                    <node role="ctxNode" roleId="jphc.8326627235132606244" type="tpf8.TemplateFunctionParameter_sourceNode" typeId="tpf8.1167169188348" id="2728035328384312558" />
-                                    <node role="conc" roleId="jphc.1177027386292" type="tp25.RefConcept_Reference" typeId="tp25.1177026924588" id="2728035328384312560">
+                                  <node role="initializer" roleId="tpee.1068431790190" type=".com.mbeddr.mpsutil.genutil.structure.GetRefExpression" id="2728035328384312555">
+                                    <property name="key" value="operation" />
+                                    <node role="ctxNode" type="tpf8.TemplateFunctionParameter_sourceNode" typeId="tpf8.1167169188348" id="2728035328384312558" />
+                                    <node role="conc" type="tp25.RefConcept_Reference" typeId="tp25.1177026924588" id="2728035328384312560">
                                       <link role="conceptDeclaration" roleId="tp25.1177026940964" targetNodeId="v7ag.4491876417845484924" resolveInfo="Operation" />
                                     </node>
                                   </node>
@@ -3390,10 +3389,10 @@
                                   <node role="type" roleId="tpee.5680397130376446158" type="tp25.SNodeType" typeId="tp25.1138055754698" id="5022036173480826658">
                                     <link role="concept" roleId="tp25.1138405853777" targetNodeId="v7ag.4491876417845484930" resolveInfo="Port" />
                                   </node>
-                                  <node role="initializer" roleId="tpee.1068431790190" type="jphc.GetRefExpression" typeId="jphc.8326627235132606243" id="2728035328384312569">
-                                    <property name="key" nameId="jphc.8326627235132606245" value="requiredPort" />
-                                    <node role="ctxNode" roleId="jphc.8326627235132606244" type="tpf8.TemplateFunctionParameter_sourceNode" typeId="tpf8.1167169188348" id="2728035328384312570" />
-                                    <node role="conc" roleId="jphc.1177027386292" type="tp25.RefConcept_Reference" typeId="tp25.1177026924588" id="2728035328384312573">
+                                  <node role="initializer" roleId="tpee.1068431790190" type=".com.mbeddr.mpsutil.genutil.structure.GetRefExpression" id="2728035328384312569">
+                                    <property name="key" value="requiredPort" />
+                                    <node role="ctxNode" type="tpf8.TemplateFunctionParameter_sourceNode" typeId="tpf8.1167169188348" id="2728035328384312570" />
+                                    <node role="conc" type="tp25.RefConcept_Reference" typeId="tp25.1177026924588" id="2728035328384312573">
                                       <link role="conceptDeclaration" roleId="tp25.1177026940964" targetNodeId="v7ag.4491876417845484930" resolveInfo="Port" />
                                     </node>
                                   </node>
@@ -3541,30 +3540,30 @@
                                             </node>
                                           </node>
                                         </node>
-                                        <node role="statement" roleId="tpee.1068581517665" type="jphc.SetRefStatement" typeId="jphc.8326627235132566911" id="2728035328384312362">
-                                          <property name="key" nameId="jphc.8326627235132566925" value="instance" />
-                                          <node role="target" roleId="jphc.8326627235132566926" type="tp2q.ForEachVariableReference" typeId="tp2q.1153944233411" id="2728035328384312384">
+                                        <node role="statement" roleId="tpee.1068581517665" type=".com.mbeddr.mpsutil.genutil.structure.SetRefStatement" id="2728035328384312362">
+                                          <property name="key" value="instance" />
+                                          <node role="target" type="tp2q.ForEachVariableReference" typeId="tp2q.1153944233411" id="2728035328384312384">
                                             <link role="variable" roleId="tp2q.1153944258490" targetNodeId="5022036173480826703" resolveInfo="i" />
                                           </node>
-                                          <node role="ctxNode" roleId="jphc.8326627235132566924" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="2728035328384312371">
+                                          <node role="ctxNode" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="2728035328384312371">
                                             <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="5022036173480826723" resolveInfo="triple" />
                                           </node>
                                         </node>
-                                        <node role="statement" roleId="tpee.1068581517665" type="jphc.SetRefStatement" typeId="jphc.8326627235132566911" id="2728035328384312388">
-                                          <property name="key" nameId="jphc.8326627235132566925" value="requiredPort" />
-                                          <node role="target" roleId="jphc.8326627235132566926" type="tp2q.ForEachVariableReference" typeId="tp2q.1153944233411" id="2728035328384312406">
+                                        <node role="statement" roleId="tpee.1068581517665" type=".com.mbeddr.mpsutil.genutil.structure.SetRefStatement" id="2728035328384312388">
+                                          <property name="key" value="requiredPort" />
+                                          <node role="target" type="tp2q.ForEachVariableReference" typeId="tp2q.1153944233411" id="2728035328384312406">
                                             <link role="variable" roleId="tp2q.1153944258490" targetNodeId="5022036173480826706" resolveInfo="p" />
                                           </node>
-                                          <node role="ctxNode" roleId="jphc.8326627235132566924" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="2728035328384312390">
+                                          <node role="ctxNode" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="2728035328384312390">
                                             <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="5022036173480826723" resolveInfo="triple" />
                                           </node>
                                         </node>
-                                        <node role="statement" roleId="tpee.1068581517665" type="jphc.SetRefStatement" typeId="jphc.8326627235132566911" id="2728035328384312394">
-                                          <property name="key" nameId="jphc.8326627235132566925" value="operation" />
-                                          <node role="target" roleId="jphc.8326627235132566926" type="tp2q.ForEachVariableReference" typeId="tp2q.1153944233411" id="2728035328384312410">
+                                        <node role="statement" roleId="tpee.1068581517665" type=".com.mbeddr.mpsutil.genutil.structure.SetRefStatement" id="2728035328384312394">
+                                          <property name="key" value="operation" />
+                                          <node role="target" type="tp2q.ForEachVariableReference" typeId="tp2q.1153944233411" id="2728035328384312410">
                                             <link role="variable" roleId="tp2q.1153944258490" targetNodeId="5022036173480826714" resolveInfo="o" />
                                           </node>
-                                          <node role="ctxNode" roleId="jphc.8326627235132566924" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="2728035328384312396">
+                                          <node role="ctxNode" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="2728035328384312396">
                                             <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="5022036173480826723" resolveInfo="triple" />
                                           </node>
                                         </node>
@@ -4570,6 +4569,20 @@
       </node>
       <node role="ruleConsequence" roleId="tpf8.1169570368028" type="tpf8.TemplateDeclarationReference" typeId="tpf8.1168559333462" id="8105003328815416366">
         <link role="template" roleId="tpf8.1722980698497626483" targetNodeId="8105003328815416363" resolveInfo="weave_Runnable" />
+      </node>
+      <node role="conditionFunction" roleId="tpf8.1167169362365" type="tpf8.BaseMappingRule_Condition" typeId="tpf8.1167168920554" id="4429602430543926954">
+        <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="4429602430543926955">
+          <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="4429602430543926956">
+            <node role="expression" roleId="tpee.1068580123156" type="tpee.NotExpression" typeId="tpee.1081516740877" id="4429602430543926957">
+              <node role="expression" roleId="tpee.1081516765348" type="tpee.DotExpression" typeId="tpee.1197027756228" id="4429602430543926980">
+                <node role="operand" roleId="tpee.1197027771414" type="tpf8.TemplateFunctionParameter_sourceNode" typeId="tpf8.1167169188348" id="4429602430543926959" />
+                <node role="operation" roleId="tpee.1197027833540" type="tp25.SConceptPropertyAccess" typeId="tp25.1145994841052" id="4429602430543926986">
+                  <link role="conceptProperty" roleId="tp25.1145994841055" targetNodeId="tpck.1137473854053" resolveInfo="abstract" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
     </node>
     <node role="dropRootRule" roleId="tpf8.1219952894531" type="tpf8.DropRootRule" typeId="tpf8.1219952072943" id="8105003328815416554">
