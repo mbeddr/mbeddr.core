@@ -49,6 +49,10 @@
       <property name="virtualPackage" nameId="tpck.1193676396447" value="documentation" />
       <link role="concept" roleId="1i04.1225194240799" targetNodeId="vs0r.154287305789211528" resolveInfo="IHasDocParts" />
     </node>
+    <node type="1i04.ConceptBehavior" typeId="1i04.1225194240794" id="9035511730050143250">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="config" />
+      <link role="concept" roleId="1i04.1225194240799" targetNodeId="vs0r.9035511730050139084" resolveInfo="IConfigurationItemWithImport" />
+    </node>
   </roots>
   <root id="7024921229556320113">
     <node role="method" roleId="1i04.1225194240805" type="1i04.ConceptMethodDeclaration" typeId="1i04.1225194472830" id="7024921229556731763">
@@ -863,6 +867,29 @@
     </node>
     <node role="constructor" roleId="1i04.1225194240801" type="1i04.ConceptConstructorDeclaration" typeId="1i04.1225194413805" id="154287305790255830">
       <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="154287305790255831" />
+    </node>
+  </root>
+  <root id="9035511730050143250">
+    <node role="method" roleId="1i04.1225194240805" type="1i04.ConceptMethodDeclaration" typeId="1i04.1225194472830" id="9035511730050143253">
+      <property name="isAbstract" nameId="1i04.1225194472834" value="true" />
+      <property name="isVirtual" nameId="1i04.1225194472832" value="true" />
+      <property name="name" nameId="tpck.1169194664001" value="importNodes" />
+      <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="9035511730050143254" />
+      <node role="returnType" roleId="tpee.1068580123133" type="tpee.VoidType" typeId="tpee.1068581517677" id="9035511730050143257" />
+      <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="9035511730050143256" />
+      <node role="parameter" roleId="tpee.1068580123134" type="tpee.ParameterDeclaration" typeId="tpee.1068498886292" id="9035511730050143258">
+        <property name="name" nameId="tpck.1169194664001" value="m" />
+        <node role="type" roleId="tpee.5680397130376446158" type="tp25.SModelType" typeId="tp25.1143226024141" id="9035511730050143259" />
+      </node>
+      <node role="parameter" roleId="tpee.1068580123134" type="tpee.ParameterDeclaration" typeId="tpee.1068498886292" id="9035511730050143355">
+        <property name="name" nameId="tpck.1169194664001" value="configContainer" />
+        <node role="type" roleId="tpee.5680397130376446158" type="tp25.SNodeType" typeId="tp25.1138055754698" id="9035511730050143357">
+          <link role="concept" roleId="tp25.1138405853777" targetNodeId="vs0r.4459718605982007337" resolveInfo="IConfigurationContainer" />
+        </node>
+      </node>
+    </node>
+    <node role="constructor" roleId="1i04.1225194240801" type="1i04.ConceptConstructorDeclaration" typeId="1i04.1225194413805" id="9035511730050143251">
+      <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="9035511730050143252" />
     </node>
   </root>
 </model>

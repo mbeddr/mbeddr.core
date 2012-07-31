@@ -14,12 +14,12 @@
   <import index="sfuj" modelUID="r:05191be5-2070-4bfb-a3fe-8fe927520ecc(com.mbeddr.ext.coords.structure)" version="-1" implicit="yes" />
   <import index="3c6d" modelUID="r:d6d71b6a-f5ea-4b72-bd01-9d5b19792726(com.mbeddr.ext.physicalunits.c.structure)" version="0" implicit="yes" />
   <import index="ym4j" modelUID="r:cf0df747-2506-460f-a33d-eb236a605ee8(com.mbeddr.ext.physicalunits.structure)" version="10" implicit="yes" />
-  <import index="k146" modelUID="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" version="1" implicit="yes" />
+  <import index="k146" modelUID="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" version="2" implicit="yes" />
   <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="17" implicit="yes" />
   <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="4" implicit="yes" />
   <import index="51wr" modelUID="r:b31f1c3c-99aa-4f1e-a329-cba27efb1a6b(com.mbeddr.core.buildconfig.structure)" version="1" implicit="yes" />
   <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="4" implicit="yes" />
-  <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="0" implicit="yes" />
+  <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="1" implicit="yes" />
   <roots>
     <node type="tp5g.NodesTestCase" typeId="tp5g.1216913645126" id="4497436839299134881">
       <property name="name" nameId="tpck.1169194664001" value="testCoords" />
@@ -257,7 +257,7 @@
     </node>
   </root>
   <root id="4497436839299135003">
-    <node role="conversions" roleId="ym4j.2078797996880467436" type="3c6d.CBasedConversionRule" typeId="3c6d.2078797996880475936" id="4497436839299135004">
+    <node role="contents" roleId="ym4j.6870096341748240402" type="3c6d.CBasedConversionRule" typeId="3c6d.2078797996880475936" id="4497436839299135004">
       <node role="conversion" roleId="3c6d.2078797996880475939" type="mj1l.PlusExpression" typeId="mj1l.5763383285156373013" id="4497436839299135016">
         <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="4497436839299135019">
           <property name="value" nameId="mj1l.8860443239512128104" value="20" />
@@ -267,7 +267,7 @@
       <node role="from" roleId="ym4j.2078797996880475937" type="sfuj.GlobalCoords" typeId="sfuj.4497436839299102624" id="4497436839299135008" />
       <node role="to" roleId="ym4j.2078797996880475938" type="sfuj.LocalCoords" typeId="sfuj.4497436839299102577" id="4497436839299135009" />
     </node>
-    <node role="conversions" roleId="ym4j.2078797996880467436" type="3c6d.CBasedConversionRule" typeId="3c6d.2078797996880475936" id="4497436839299135020">
+    <node role="contents" roleId="ym4j.6870096341748240402" type="3c6d.CBasedConversionRule" typeId="3c6d.2078797996880475936" id="4497436839299135020">
       <node role="conversion" roleId="3c6d.2078797996880475939" type="mj1l.MinusExpression" typeId="mj1l.5763383285156373018" id="4497436839299135028">
         <node role="left" roleId="mj1l.8860443239512128064" type="3c6d.ValExpression" typeId="3c6d.5185104661801317038" id="4497436839299135029" />
         <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="4497436839299135030">
@@ -286,6 +286,9 @@
     </node>
     <node role="configurationItems" roleId="vs0r.4459718605982007338" type="k146.ReportingConfiguration" typeId="k146.4459718605982051949" id="1798411515023801996">
       <node role="strategy" roleId="k146.4459718605982051999" type="k146.PrintfReportingStrategy" typeId="k146.4459718605982051980" id="1798411515023801997" />
+    </node>
+    <node role="configurationItems" roleId="vs0r.4459718605982007338" type="3c6d.PhysicalUnitsConfigItem" typeId="3c6d.9035511730050139082" id="9035511730050477869">
+      <link role="container" roleId="3c6d.9035511730050143261" targetNodeId="4497436839299135003" resolveInfo="test.ts.ext.physicalunits.c.modelWithCoords" />
     </node>
   </root>
   <root id="1423209693056975518" />

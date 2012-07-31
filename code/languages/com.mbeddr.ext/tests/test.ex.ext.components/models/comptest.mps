@@ -10,7 +10,7 @@
   <language namespace="2d7fadf5-33f6-4e80-a78f-0f739add2bde(com.mbeddr.core.buildconfig)" />
   <language namespace="2693fc71-9b0e-4b05-ab13-f57227d675f2(com.mbeddr.core.util)" />
   <devkit namespace="24565007-e59f-42fc-ac10-da3836deec1c(com.mbeddr.components)" />
-  <import index="v7ag" modelUID="r:9596407c-f27a-49d3-abde-3a66293c5b61(com.mbeddr.ext.components.structure)" version="6" implicit="yes" />
+  <import index="v7ag" modelUID="r:9596407c-f27a-49d3-abde-3a66293c5b61(com.mbeddr.ext.components.structure)" version="7" implicit="yes" />
   <import index="p7vm" modelUID="r:28fa862e-f94d-4c39-bdf7-a4bdbc773888(com.mbeddr.ext.components.gen_nomw.structure)" version="0" implicit="yes" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="yq40" modelUID="r:152b3fc0-83a1-4bab-a8cd-565eb8483785(com.mbeddr.core.pointers.structure)" version="3" implicit="yes" />
@@ -61,7 +61,7 @@
     <node role="contents" roleId="x27k.6437088627575722833" type="v7ag.ClientServerInterface" typeId="v7ag.4491876417845484922" id="8105003328814646289">
       <property name="name" nameId="tpck.1169194664001" value="ITrafficLights" />
       <property name="exported" nameId="x27k.1317894735999272944" value="true" />
-      <node role="operations" roleId="v7ag.4491876417845484926" type="v7ag.Operation" typeId="v7ag.4491876417845484924" id="8105003328814695907">
+      <node role="contents" roleId="v7ag.4491876417845484926" type="v7ag.Operation" typeId="v7ag.4491876417845484924" id="8105003328814695907">
         <property name="name" nameId="tpck.1169194664001" value="setColor" />
         <node role="returnType" roleId="v7ag.4491876417845683831" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="5569318043967892080" />
         <node role="parameters" roleId="v7ag.4491876417845683832" type="v7ag.OperationParameter" typeId="v7ag.4491876417845683828" id="8105003328814695910">
@@ -75,7 +75,7 @@
     <node role="contents" roleId="x27k.6437088627575722833" type="v7ag.ClientServerInterface" typeId="v7ag.4491876417845484922" id="8105003328815194793">
       <property name="name" nameId="tpck.1169194664001" value="IDriver" />
       <property name="exported" nameId="x27k.1317894735999272944" value="true" />
-      <node role="operations" roleId="v7ag.4491876417845484926" type="v7ag.Operation" typeId="v7ag.4491876417845484924" id="8105003328815197165">
+      <node role="contents" roleId="v7ag.4491876417845484926" type="v7ag.Operation" typeId="v7ag.4491876417845484924" id="8105003328815197165">
         <property name="name" nameId="tpck.1169194664001" value="setDriverValue" />
         <node role="parameters" roleId="v7ag.4491876417845683832" type="v7ag.OperationParameter" typeId="v7ag.4491876417845683828" id="8105003328815197167">
           <property name="name" nameId="tpck.1169194664001" value="addr" />
@@ -91,7 +91,7 @@
     <node role="contents" roleId="x27k.6437088627575722833" type="v7ag.ClientServerInterface" typeId="v7ag.4491876417845484922" id="5308710777891623522">
       <property name="name" nameId="tpck.1169194664001" value="IDiagnostic" />
       <property name="exported" nameId="x27k.1317894735999272944" value="true" />
-      <node role="operations" roleId="v7ag.4491876417845484926" type="v7ag.Operation" typeId="v7ag.4491876417845484924" id="5308710777891623525">
+      <node role="contents" roleId="v7ag.4491876417845484926" type="v7ag.Operation" typeId="v7ag.4491876417845484924" id="5308710777891623525">
         <property name="name" nameId="tpck.1169194664001" value="getCount" />
         <node role="returnType" roleId="v7ag.4491876417845683831" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="5569318043967892084" />
       </node>
@@ -99,7 +99,7 @@
     <node role="contents" roleId="x27k.6437088627575722833" type="v7ag.ClientServerInterface" typeId="v7ag.4491876417845484922" id="5308710777891692706">
       <property name="name" nameId="tpck.1169194664001" value="ILogger" />
       <property name="exported" nameId="x27k.1317894735999272944" value="true" />
-      <node role="operations" roleId="v7ag.4491876417845484926" type="v7ag.Operation" typeId="v7ag.4491876417845484924" id="5308710777891692707">
+      <node role="contents" roleId="v7ag.4491876417845484926" type="v7ag.Operation" typeId="v7ag.4491876417845484924" id="5308710777891692707">
         <property name="name" nameId="tpck.1169194664001" value="log" />
         <node role="parameters" roleId="v7ag.4491876417845683832" type="v7ag.OperationParameter" typeId="v7ag.4491876417845683828" id="5308710777891692717">
           <property name="name" nameId="tpck.1169194664001" value="message" />
@@ -111,7 +111,7 @@
     <node role="contents" roleId="x27k.6437088627575722833" type="v7ag.ClientServerInterface" typeId="v7ag.4491876417845484922" id="8922663937488690183">
       <property name="name" nameId="tpck.1169194664001" value="ILowLevel" />
       <property name="exported" nameId="x27k.1317894735999272944" value="true" />
-      <node role="operations" roleId="v7ag.4491876417845484926" type="v7ag.Operation" typeId="v7ag.4491876417845484924" id="8922663937488690184">
+      <node role="contents" roleId="v7ag.4491876417845484926" type="v7ag.Operation" typeId="v7ag.4491876417845484924" id="8922663937488690184">
         <property name="name" nameId="tpck.1169194664001" value="doSomeLowlevelStuff" />
         <node role="returnType" roleId="v7ag.4491876417845683831" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="3989465615018332506" />
         <node role="parameters" roleId="v7ag.4491876417845683832" type="v7ag.OperationParameter" typeId="v7ag.4491876417845683828" id="3402431285978276301">
@@ -425,6 +425,9 @@
     </node>
   </root>
   <root id="8105003328815229428">
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="4429602430542714237">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1343636669135_5" />
+    </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="v7ag.InstanceConfiguration" typeId="v7ag.4491876417845649024" id="8105003328815035752">
       <property name="name" nameId="tpck.1169194664001" value="default" />
       <node role="contents" roleId="v7ag.6041318036222235020" type="v7ag.ComponentInstance" typeId="v7ag.4491876417845649014" id="9146329806094299637">
@@ -451,6 +454,7 @@
         <property name="name" nameId="tpck.1169194664001" value="logger" />
         <link role="component" roleId="v7ag.4491876417845649015" targetNodeId="7265387141425485014" resolveInfo="Logger" />
       </node>
+      <node role="contents" roleId="v7ag.6041318036222235020" type="v7ag.EmptyInstanceConfigContent" typeId="v7ag.1089269900847289701" id="4429602430542714238" />
       <node role="contents" roleId="v7ag.6041318036222235020" type="v7ag.Connector" typeId="v7ag.4491876417845649016" id="591155063063632488">
         <node role="source" roleId="v7ag.4491876417845649020" type="v7ag.InstancePortRef" typeId="v7ag.4491876417845649017" id="591155063063632489">
           <link role="port" roleId="v7ag.4491876417845649019" targetNodeId="8105003328815208360" resolveInfo="driver" />
@@ -491,6 +495,22 @@
           <link role="port" roleId="v7ag.4491876417845649019" targetNodeId="7265387141425485015" resolveInfo="logger" />
         </node>
       </node>
+      <node role="contents" roleId="v7ag.6041318036222235020" type="v7ag.Connector" typeId="v7ag.4491876417845649016" id="4429602430543051304">
+        <node role="source" roleId="v7ag.4491876417845649020" type="v7ag.InstancePortRef" typeId="v7ag.4491876417845649017" id="4429602430543051305">
+          <link role="instance" roleId="v7ag.4491876417845649018" targetNodeId="591155063063651673" resolveInfo="driver2" />
+          <link role="port" roleId="v7ag.4491876417845649019" targetNodeId="5308710777891692710" resolveInfo="logger" />
+        </node>
+        <node role="target" roleId="v7ag.4491876417845649021" type="v7ag.InstancePortRef" typeId="v7ag.4491876417845649017" id="4429602430543051306">
+          <link role="instance" roleId="v7ag.4491876417845649018" targetNodeId="7265387141425485030" resolveInfo="logger" />
+          <link role="port" roleId="v7ag.4491876417845649019" targetNodeId="7265387141425485015" resolveInfo="logger" />
+        </node>
+      </node>
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="4429602430542714233">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1343636663964_1" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="4429602430542714236">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1343636667221_4" />
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="v7ag.PortAdapter" typeId="v7ag.4491876417845704581" id="8105003328815037939">
       <property name="name" nameId="tpck.1169194664001" value="t1" />
@@ -515,6 +535,12 @@
         <link role="instance" roleId="v7ag.6616025724454668919" targetNodeId="591155063063651673" resolveInfo="driver2" />
         <link role="port" roleId="v7ag.6616025724454668920" targetNodeId="5308710777891623520" resolveInfo="diag" />
       </node>
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="4429602430542714234">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1343636665268_2" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="4429602430542714235">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1343636665435_3" />
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="yz9a.TestCase" typeId="yz9a.6275792049641586523" id="899185318197565591">
       <property name="exported" nameId="x27k.1317894735999272944" value="true" />

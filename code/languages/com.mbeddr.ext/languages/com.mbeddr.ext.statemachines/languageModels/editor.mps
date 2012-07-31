@@ -457,24 +457,6 @@
         </node>
       </node>
     </node>
-    <node role="inspectedCellModel" roleId="tpc2.1078153129734" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="1656687801206302916">
-      <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Indent" typeId="tpc2.1237303669825" id="1656687801206302925" />
-      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="1656687801206302934">
-        <property name="text" nameId="tpc2.1073389577007" value="old min" />
-      </node>
-      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Property" typeId="tpc2.1073389658414" id="1656687801206302926">
-        <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="clqz.7851711690674374948" resolveInfo="min" />
-      </node>
-      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="1656687801206302936">
-        <property name="text" nameId="tpc2.1073389577007" value="old max" />
-        <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.IndentLayoutOnNewLineStyleClassItem" typeId="tpc2.1237385578942" id="1656687801206302938">
-          <property name="flag" nameId="tpc2.1186414551515" value="true" />
-        </node>
-      </node>
-      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Property" typeId="tpc2.1073389658414" id="1656687801206302930">
-        <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="clqz.7851711690674374949" resolveInfo="max" />
-      </node>
-    </node>
   </root>
   <root id="1786180596061208523">
     <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="1786180596061208525">

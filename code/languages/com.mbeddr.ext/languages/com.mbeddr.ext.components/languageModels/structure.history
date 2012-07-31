@@ -49,5 +49,11 @@
     </dependencies>
     <rename id="v7ag.8105003328815071750" type="CHILD" from="expr" to="expression" />
   </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="v7ag" modelUID="r:9596407c-f27a-49d3-abde-3a66293c5b61(com.mbeddr.ext.components.structure)" version="6" />
+    </dependencies>
+    <rename id="v7ag.4491876417845484926" type="CHILD" from="operations" to="contents" />
+  </StructureModification>
 </history>
 

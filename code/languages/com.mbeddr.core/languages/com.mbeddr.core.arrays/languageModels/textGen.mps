@@ -57,6 +57,9 @@
       <property name="virtualPackage" nameId="tpck.1193676396447" value="types" />
       <link role="conceptDeclaration" roleId="2omo.1233670257997" targetNodeId="yq40.6113173064528067332" resolveInfo="StringType" />
     </node>
+    <node type="2omo.ConceptTextGenDeclaration" typeId="2omo.1233670071145" id="864143337943400036">
+      <link role="conceptDeclaration" roleId="2omo.1233670257997" targetNodeId="yq40.6883925235272353061" resolveInfo="SizeOfExprForExpressions" />
+    </node>
   </roots>
   <root id="279446265608410853">
     <node role="textGenBlock" roleId="2omo.1233749296504" type="2omo.GenerateTextDeclaration" typeId="2omo.1233749247888" id="279446265608410854">
@@ -355,6 +358,25 @@
         <node role="statement" roleId="tpee.1068581517665" type="2omo.AppendOperation" typeId="2omo.1237306079178" id="6113173064528067387">
           <node role="part" roleId="2omo.1237306115446" type="2omo.ConstantStringAppendPart" typeId="2omo.1237305557638" id="6113173064528067388">
             <property name="value" nameId="2omo.1237305576108" value="char*" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </root>
+  <root id="864143337943400036">
+    <node role="textGenBlock" roleId="2omo.1233749296504" type="2omo.GenerateTextDeclaration" typeId="2omo.1233749247888" id="864143337943400037">
+      <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="864143337943400038">
+        <node role="statement" roleId="tpee.1068581517665" type="2omo.AppendOperation" typeId="2omo.1237306079178" id="864143337943400039">
+          <node role="part" roleId="2omo.1237306115446" type="2omo.ConstantStringAppendPart" typeId="2omo.1237305557638" id="864143337943400041">
+            <property name="value" nameId="2omo.1237305576108" value="sizeof " />
+          </node>
+          <node role="part" roleId="2omo.1237306115446" type="2omo.NodeAppendPart" typeId="2omo.1237305334312" id="864143337943400043">
+            <node role="value" roleId="2omo.1237305790512" type="tpee.DotExpression" typeId="tpee.1197027756228" id="864143337943456044">
+              <node role="operand" roleId="tpee.1197027771414" type="2omo.NodeParameter" typeId="2omo.1233748055915" id="864143337943400045" />
+              <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="864143337943487578">
+                <link role="link" roleId="tp25.1138056516764" targetNodeId="mj1l.7254843406768839760" />
+              </node>
+            </node>
           </node>
         </node>
       </node>

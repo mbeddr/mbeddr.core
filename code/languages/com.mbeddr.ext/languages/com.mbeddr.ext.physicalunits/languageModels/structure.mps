@@ -5,6 +5,7 @@
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="tpce" modelUID="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" version="0" implicit="yes" />
   <import index="ym4j" modelUID="r:cf0df747-2506-460f-a33d-eb236a605ee8(com.mbeddr.ext.physicalunits.structure)" version="10" implicit="yes" />
+  <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="4" implicit="yes" />
   <roots>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="3801772042669047301">
       <property name="name" nameId="tpck.1169194664001" value="UnitDeclaration" />
@@ -91,6 +92,13 @@
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="1656687801206561197">
       <property name="name" nameId="tpck.1169194664001" value="NamedOpaqueUnitDeclaration" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="2078797996880543459" resolveInfo="NamedUnitDeclaration" />
+    </node>
+    <node type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="6870096341748240401">
+      <property name="name" nameId="tpck.1169194664001" value="IUnitContainerContents" />
+    </node>
+    <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="6870096341748575352">
+      <property name="name" nameId="tpck.1169194664001" value="EmptyUnitContainerContents" />
+      <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
     </node>
   </roots>
   <root id="3801772042669047301">
@@ -202,17 +210,14 @@
     </node>
   </root>
   <root id="3801772042669047872">
-    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="3801772042669047873">
+    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="6870096341748240402">
       <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
-      <property name="role" nameId="tpce.1071599776563" value="declarations" />
+      <property name="role" nameId="tpce.1071599776563" value="contents" />
       <property name="sourceCardinality" nameId="tpce.1071599893252" value="0..n" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="2078797996880543459" resolveInfo="NamedUnitDeclaration" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="6870096341748240401" resolveInfo="IUnitContainerContents" />
     </node>
-    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="2078797996880467436">
-      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
-      <property name="role" nameId="tpce.1071599776563" value="conversions" />
-      <property name="sourceCardinality" nameId="tpce.1071599893252" value="0..n" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="2078797996880467434" resolveInfo="ConversionRule" />
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="9035511730050143284">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="tpck.1169194658468" resolveInfo="INamedConcept" />
     </node>
   </root>
   <root id="8099136929591129785">
@@ -251,10 +256,16 @@
     <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.BooleanConceptProperty" typeId="tpce.1105725574259" id="2078797996880467435">
       <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473854053" resolveInfo="abstract" />
     </node>
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="6870096341748240405">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="6870096341748240401" resolveInfo="IUnitContainerContents" />
+    </node>
   </root>
   <root id="2078797996880543459">
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="2078797996880543460">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="tpck.1169194658468" resolveInfo="INamedConcept" />
+    </node>
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="6870096341748240404">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="6870096341748240401" resolveInfo="IUnitContainerContents" />
     </node>
     <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="2078797996880543461">
       <property name="name" nameId="tpck.1169194664001" value="physicalMeaning" />
@@ -279,6 +290,15 @@
     <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="1656687801206561198">
       <property name="value" nameId="tpce.1105725733873" value="opaque" />
       <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473891462" resolveInfo="alias" />
+    </node>
+  </root>
+  <root id="6870096341748240401" />
+  <root id="6870096341748575352">
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="6870096341748575354">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="6870096341748240401" resolveInfo="IUnitContainerContents" />
+    </node>
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="6870096341748575356">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="vs0r.1049346859912912067" resolveInfo="IEmpty" />
     </node>
   </root>
 </model>

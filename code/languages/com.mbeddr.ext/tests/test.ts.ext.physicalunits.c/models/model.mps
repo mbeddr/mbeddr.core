@@ -19,6 +19,7 @@
   <import index="51wr" modelUID="r:b31f1c3c-99aa-4f1e-a329-cba27efb1a6b(com.mbeddr.core.buildconfig.structure)" version="1" implicit="yes" />
   <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="4" implicit="yes" />
   <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="1" implicit="yes" />
+  <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="4" implicit="yes" />
   <roots>
     <node type="mj1l.TypeSizeConfiguration" typeId="mj1l.3335993110369795380" id="5513256947824560741" />
     <node type="ym4j.UnitContainer" typeId="ym4j.3801772042669047872" id="5513256947824581019" />
@@ -118,7 +119,7 @@
     </node>
   </root>
   <root id="5513256947824581019">
-    <node role="declarations" roleId="ym4j.3801772042669047873" type="ym4j.NamedDerivedUnitDeclaration" typeId="ym4j.8099136929591129785" id="5513256947824585484">
+    <node role="contents" roleId="ym4j.6870096341748240402" type="ym4j.NamedDerivedUnitDeclaration" typeId="ym4j.8099136929591129785" id="5513256947824585484">
       <property name="name" nameId="tpck.1169194664001" value="N" />
       <property name="physicalMeaning" nameId="ym4j.2078797996880543461" value="force" />
       <node role="decl" roleId="ym4j.8099136929591129798" type="ym4j.CompositeUnitDeclaration" typeId="ym4j.3801772042669047863" id="5513256947824585485">
@@ -136,7 +137,7 @@
         </node>
       </node>
     </node>
-    <node role="declarations" roleId="ym4j.3801772042669047873" type="ym4j.NamedDerivedUnitDeclaration" typeId="ym4j.8099136929591129785" id="5513256947824585502">
+    <node role="contents" roleId="ym4j.6870096341748240402" type="ym4j.NamedDerivedUnitDeclaration" typeId="ym4j.8099136929591129785" id="5513256947824585502">
       <property name="name" nameId="tpck.1169194664001" value="Pa" />
       <property name="physicalMeaning" nameId="ym4j.2078797996880543461" value="pressure" />
       <node role="decl" roleId="ym4j.8099136929591129798" type="ym4j.CompositeUnitDeclaration" typeId="ym4j.3801772042669047863" id="5513256947824585503">
@@ -152,7 +153,7 @@
         </node>
       </node>
     </node>
-    <node role="declarations" roleId="ym4j.3801772042669047873" type="ym4j.NamedDerivedUnitDeclaration" typeId="ym4j.8099136929591129785" id="2090513530788227364">
+    <node role="contents" roleId="ym4j.6870096341748240402" type="ym4j.NamedDerivedUnitDeclaration" typeId="ym4j.8099136929591129785" id="2090513530788227364">
       <property name="name" nameId="tpck.1169194664001" value="N2" />
       <property name="physicalMeaning" nameId="ym4j.2078797996880543461" value="anotherForce" />
       <node role="decl" roleId="ym4j.8099136929591129798" type="ym4j.CompositeUnitDeclaration" typeId="ym4j.3801772042669047863" id="2090513530788227365">
@@ -170,7 +171,7 @@
         </node>
       </node>
     </node>
-    <node role="declarations" roleId="ym4j.3801772042669047873" type="ym4j.NamedDerivedUnitDeclaration" typeId="ym4j.8099136929591129785" id="5513256947824586431">
+    <node role="contents" roleId="ym4j.6870096341748240402" type="ym4j.NamedDerivedUnitDeclaration" typeId="ym4j.8099136929591129785" id="5513256947824586431">
       <property name="name" nameId="tpck.1169194664001" value="v" />
       <property name="physicalMeaning" nameId="ym4j.2078797996880543461" value="velocity" />
       <node role="decl" roleId="ym4j.8099136929591129798" type="ym4j.CompositeUnitDeclaration" typeId="ym4j.3801772042669047863" id="5513256947824586432">
@@ -184,7 +185,7 @@
         </node>
       </node>
     </node>
-    <node role="declarations" roleId="ym4j.3801772042669047873" type="ym4j.NamedDerivedUnitDeclaration" typeId="ym4j.8099136929591129785" id="5513256947824592071">
+    <node role="contents" roleId="ym4j.6870096341748240402" type="ym4j.NamedDerivedUnitDeclaration" typeId="ym4j.8099136929591129785" id="5513256947824592071">
       <property name="name" nameId="tpck.1169194664001" value="a" />
       <property name="physicalMeaning" nameId="ym4j.2078797996880543461" value="accelearation" />
       <node role="decl" roleId="ym4j.8099136929591129798" type="ym4j.CompositeUnitDeclaration" typeId="ym4j.3801772042669047863" id="5513256947824592072">
@@ -198,15 +199,15 @@
         </node>
       </node>
     </node>
-    <node role="declarations" roleId="ym4j.3801772042669047873" type="ym4j.NamedConvertibleUnitDeclaration" typeId="ym4j.2078797996880580463" id="2078797996880601371">
+    <node role="contents" roleId="ym4j.6870096341748240402" type="ym4j.NamedConvertibleUnitDeclaration" typeId="ym4j.2078797996880580463" id="2078797996880601371">
       <property name="name" nameId="tpck.1169194664001" value="F" />
       <property name="physicalMeaning" nameId="ym4j.2078797996880543461" value="temperature" />
     </node>
-    <node role="declarations" roleId="ym4j.3801772042669047873" type="ym4j.NamedConvertibleUnitDeclaration" typeId="ym4j.2078797996880580463" id="2078797996880601373">
+    <node role="contents" roleId="ym4j.6870096341748240402" type="ym4j.NamedConvertibleUnitDeclaration" typeId="ym4j.2078797996880580463" id="2078797996880601373">
       <property name="name" nameId="tpck.1169194664001" value="C" />
       <property name="physicalMeaning" nameId="ym4j.2078797996880543461" value="temperature" />
     </node>
-    <node role="conversions" roleId="ym4j.2078797996880467436" type="3c6d.CBasedConversionRule" typeId="3c6d.2078797996880475936" id="2078797996880515333">
+    <node role="contents" roleId="ym4j.6870096341748240402" type="3c6d.CBasedConversionRule" typeId="3c6d.2078797996880475936" id="2078797996880515333">
       <node role="conversion" roleId="3c6d.2078797996880475939" type="mj1l.PlusExpression" typeId="mj1l.5763383285156373013" id="2078797996880515526">
         <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2078797996880515529">
           <property name="value" nameId="mj1l.8860443239512128104" value="32" />
@@ -230,7 +231,7 @@
         <link role="ref" roleId="ym4j.8099136929591173608" targetNodeId="2078797996880601373" resolveInfo="C" />
       </node>
     </node>
-    <node role="conversions" roleId="ym4j.2078797996880467436" type="3c6d.CBasedConversionRule" typeId="3c6d.2078797996880475936" id="2078797996880515995">
+    <node role="contents" roleId="ym4j.6870096341748240402" type="3c6d.CBasedConversionRule" typeId="3c6d.2078797996880475936" id="2078797996880515995">
       <node role="from" roleId="ym4j.2078797996880475937" type="ym4j.UnitDeclarationRef" typeId="ym4j.8099136929591173606" id="2078797996880515999">
         <link role="ref" roleId="ym4j.8099136929591173608" targetNodeId="2078797996880601373" resolveInfo="C" />
       </node>
@@ -262,6 +263,9 @@
       <property name="compiler" nameId="51wr.5323740605968447024" value="gcc" />
       <property name="compilerOptions" nameId="51wr.5323740605968447025" value="-std=c99" />
       <property name="debugOptions" nameId="51wr.2736179788492003937" value="-g" />
+    </node>
+    <node role="configurationItems" roleId="vs0r.4459718605982007338" type="3c6d.PhysicalUnitsConfigItem" typeId="3c6d.9035511730050139082" id="9035511730050477867">
+      <link role="container" roleId="3c6d.9035511730050143261" targetNodeId="5513256947824581019" resolveInfo="test.ts.ext.physicalunits.c.model" />
     </node>
   </root>
   <root id="9108052991585889625">
