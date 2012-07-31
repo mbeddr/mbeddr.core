@@ -425,6 +425,9 @@
     </node>
   </root>
   <root id="8105003328815229428">
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="4429602430542714237">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1343636669135_5" />
+    </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="v7ag.InstanceConfiguration" typeId="v7ag.4491876417845649024" id="8105003328815035752">
       <property name="name" nameId="tpck.1169194664001" value="default" />
       <node role="contents" roleId="v7ag.6041318036222235020" type="v7ag.ComponentInstance" typeId="v7ag.4491876417845649014" id="9146329806094299637">
@@ -451,6 +454,7 @@
         <property name="name" nameId="tpck.1169194664001" value="logger" />
         <link role="component" roleId="v7ag.4491876417845649015" targetNodeId="7265387141425485014" resolveInfo="Logger" />
       </node>
+      <node role="contents" roleId="v7ag.6041318036222235020" type="v7ag.EmptyInstanceConfigContent" typeId="v7ag.1089269900847289701" id="4429602430542714238" />
       <node role="contents" roleId="v7ag.6041318036222235020" type="v7ag.Connector" typeId="v7ag.4491876417845649016" id="591155063063632488">
         <node role="source" roleId="v7ag.4491876417845649020" type="v7ag.InstancePortRef" typeId="v7ag.4491876417845649017" id="591155063063632489">
           <link role="port" roleId="v7ag.4491876417845649019" targetNodeId="8105003328815208360" resolveInfo="driver" />
@@ -491,6 +495,22 @@
           <link role="port" roleId="v7ag.4491876417845649019" targetNodeId="7265387141425485015" resolveInfo="logger" />
         </node>
       </node>
+      <node role="contents" roleId="v7ag.6041318036222235020" type="v7ag.Connector" typeId="v7ag.4491876417845649016" id="4429602430543051304">
+        <node role="source" roleId="v7ag.4491876417845649020" type="v7ag.InstancePortRef" typeId="v7ag.4491876417845649017" id="4429602430543051305">
+          <link role="instance" roleId="v7ag.4491876417845649018" targetNodeId="591155063063651673" resolveInfo="driver2" />
+          <link role="port" roleId="v7ag.4491876417845649019" targetNodeId="5308710777891692710" resolveInfo="logger" />
+        </node>
+        <node role="target" roleId="v7ag.4491876417845649021" type="v7ag.InstancePortRef" typeId="v7ag.4491876417845649017" id="4429602430543051306">
+          <link role="instance" roleId="v7ag.4491876417845649018" targetNodeId="7265387141425485030" resolveInfo="logger" />
+          <link role="port" roleId="v7ag.4491876417845649019" targetNodeId="7265387141425485015" resolveInfo="logger" />
+        </node>
+      </node>
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="4429602430542714233">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1343636663964_1" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="4429602430542714236">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1343636667221_4" />
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="v7ag.PortAdapter" typeId="v7ag.4491876417845704581" id="8105003328815037939">
       <property name="name" nameId="tpck.1169194664001" value="t1" />
@@ -515,6 +535,12 @@
         <link role="instance" roleId="v7ag.6616025724454668919" targetNodeId="591155063063651673" resolveInfo="driver2" />
         <link role="port" roleId="v7ag.6616025724454668920" targetNodeId="5308710777891623520" resolveInfo="diag" />
       </node>
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="4429602430542714234">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1343636665268_2" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="4429602430542714235">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1343636665435_3" />
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="yz9a.TestCase" typeId="yz9a.6275792049641586523" id="899185318197565591">
       <property name="exported" nameId="x27k.1317894735999272944" value="true" />
