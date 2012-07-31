@@ -6,5 +6,11 @@
     </dependencies>
     <rename id="x27k.5114214484368231289" type="PROPERTY" from="contextNodeID" to="contextNodeIdD" />
   </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="1" />
+    </dependencies>
+    <rename id="x27k.5420368450507972520" type="PROPERTY" from="implementationOnly" to="addToHeader" />
+  </StructureModification>
 </history>
 
