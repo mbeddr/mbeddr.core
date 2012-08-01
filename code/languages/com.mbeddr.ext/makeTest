@@ -40,6 +40,13 @@ make test
 PROC_RET=$(($?+$PROC_RET))
 
 echo -------------------------------------
+echo inline
+cd ..
+cd inline
+make 
+PROC_RET=$(($?+$PROC_RET))
+
+echo -------------------------------------
 echo staticWiring
 cd ..
 cd staticWiring

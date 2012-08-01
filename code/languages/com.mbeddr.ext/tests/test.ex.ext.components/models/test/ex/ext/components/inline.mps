@@ -34,7 +34,7 @@
       <property name="exported" nameId="x27k.1317894735999272944" value="true" />
       <property name="name" nameId="tpck.1169194664001" value="Intf" />
       <node role="contents" roleId="v7ag.4491876417845484926" type="v7ag.Operation" typeId="v7ag.4491876417845484924" id="3378779091584449168">
-        <property name="name" nameId="tpck.1169194664001" value="do" />
+        <property name="name" nameId="tpck.1169194664001" value="doStuff" />
         <node role="returnType" roleId="v7ag.4491876417845683831" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="3378779091584449169">
           <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
           <property name="const" nameId="mj1l.2941277002445651368" value="false" />
@@ -117,7 +117,7 @@
         </node>
         <node role="trigger" roleId="v7ag.4491876417845643892" type="v7ag.OperationTrigger" typeId="v7ag.4491876417845641677" id="3378779091584449174">
           <link role="providedPort" roleId="v7ag.4491876417845673829" targetNodeId="3378779091584449170" resolveInfo="i" />
-          <link role="calledOperation" roleId="v7ag.4491876417845641678" targetNodeId="3378779091584449168" resolveInfo="do" />
+          <link role="calledOperation" roleId="v7ag.4491876417845641678" targetNodeId="3378779091584449168" resolveInfo="doStuff" />
         </node>
         <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="3378779091584449175">
           <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
