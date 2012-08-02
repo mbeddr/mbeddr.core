@@ -47,6 +47,13 @@ make
 PROC_RET=$(($?+$PROC_RET))
 
 echo -------------------------------------
+echo helloComponents
+cd ..
+cd helloComponents
+make 
+PROC_RET=$(($?+$PROC_RET))
+
+echo -------------------------------------
 echo staticWiring
 cd ..
 cd staticWiring
