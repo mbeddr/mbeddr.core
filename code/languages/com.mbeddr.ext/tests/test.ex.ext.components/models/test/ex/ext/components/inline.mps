@@ -385,6 +385,18 @@
         <property name="name" nameId="tpck.1169194664001" value="logger" />
         <link role="intf" roleId="v7ag.4491876417845484932" targetNodeId="3378779091584478346" resolveInfo="Logger" />
       </node>
+      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.EmptyComponentContent" typeId="v7ag.8515777736166878876" id="1539255704408499660" />
+      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Field" typeId="v7ag.5308710777891512019" id="1539255704408499663">
+        <property name="name" nameId="tpck.1169194664001" value="fff" />
+        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="1539255704408499665">
+          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+        </node>
+        <node role="init" roleId="v7ag.5308710777891512022" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="1539255704408499669">
+          <property name="value" nameId="mj1l.8860443239512128104" value="20" />
+        </node>
+      </node>
+      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.EmptyComponentContent" typeId="v7ag.8515777736166878876" id="1539255704408499662" />
       <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="3378779091584486306">
         <property name="name" nameId="tpck.1169194664001" value="doStuff" />
         <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="3378779091584486307">
@@ -415,8 +427,8 @@
               <node role="expression" roleId="mj1l.7254843406768839760" type="v7ag.RequiredPortRefExpr" typeId="v7ag.8105003328815208362" id="3378779091584487059">
                 <link role="port" roleId="v7ag.8105003328815208363" targetNodeId="3378779091584486302" resolveInfo="logger" />
               </node>
-              <node role="actuals" roleId="v7ag.8105003328815091213" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3378779091584487063">
-                <property name="value" nameId="mj1l.8860443239512128104" value="20" />
+              <node role="actuals" roleId="v7ag.8105003328815091213" type="v7ag.FieldRef" typeId="v7ag.5308710777891565561" id="1539255704408499670">
+                <link role="field" roleId="v7ag.5308710777891565562" targetNodeId="1539255704408499663" resolveInfo="fff" />
               </node>
             </node>
           </node>
