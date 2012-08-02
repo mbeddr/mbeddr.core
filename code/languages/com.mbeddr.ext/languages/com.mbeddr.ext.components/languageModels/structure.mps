@@ -372,6 +372,11 @@
       <property name="name" nameId="tpck.1169194664001" value="ImplementRunnableRef" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
     </node>
+    <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4075471389393865483">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="comp" />
+      <property name="name" nameId="tpck.1169194664001" value="PortRefExpression" />
+      <link role="extends" roleId="tpce.1071489389519" targetNodeId="mj1l.8860443239512128050" resolveInfo="Expression" />
+    </node>
   </roots>
   <root id="4491876417845474761">
     <node role="conceptLink" roleId="tpce.1105736949336" type="tpce.ReferenceConceptLink" typeId="tpce.1105736778597" id="1656687801207008596">
@@ -972,8 +977,12 @@
     </node>
   </root>
   <root id="8105003328815054492">
+    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="4075471389393811688">
+      <property name="value" nameId="tpce.1105725733873" value="interface" />
+      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473891462" resolveInfo="alias" />
+    </node>
     <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="4058325937811252124">
-      <property name="value" nameId="tpce.1105725733873" value="--" />
+      <property name="value" nameId="tpce.1105725733873" value="a type that represents interfaces" />
       <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473914776" resolveInfo="shortDescription" />
     </node>
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="8105003328815054493">
@@ -1583,6 +1592,18 @@
       <property name="role" nameId="tpce.1071599776563" value="runnable" />
       <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
       <link role="target" roleId="tpce.1071599976176" targetNodeId="4491876417845641670" resolveInfo="Runnable" />
+    </node>
+  </root>
+  <root id="4075471389393865483">
+    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="4075471389393865550">
+      <property name="metaClass" nameId="tpce.1071599937831" value="reference" />
+      <property name="role" nameId="tpce.1071599776563" value="providedPort" />
+      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="4491876417845628840" resolveInfo="ProvidedPort" />
+    </node>
+    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="4075471389393865484">
+      <property name="value" nameId="tpce.1105725733873" value="port" />
+      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473891462" resolveInfo="alias" />
     </node>
   </root>
 </model>

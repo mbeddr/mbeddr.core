@@ -58,6 +58,19 @@
     </node>
   </roots>
   <root id="8105003328815413561">
+    <node role="reductionMappingRule" roleId="tpf8.1167328349397" type="tpf8.Reduction_MappingRule" typeId="tpf8.1167327847730" id="4075471389393811702">
+      <link role="applicableConcept" roleId="tpf8.1167169349424" targetNodeId="v7ag.8105003328815054492" resolveInfo="InterfaceType" />
+      <node role="ruleConsequence" roleId="tpf8.1169672767469" type="tpf8.InlineTemplate_RuleConsequence" typeId="tpf8.1177093525992" id="4075471389393811728">
+        <node role="templateNode" roleId="tpf8.1177093586806" type="yq40.PointerType" typeId="yq40.279446265608459824" id="4075471389393811731">
+          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+          <node role="baseType" roleId="yq40.279446265608459825" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="4075471389393811730">
+            <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+            <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+          </node>
+        </node>
+      </node>
+    </node>
     <node role="reductionMappingRule" roleId="tpf8.1167328349397" type="tpf8.Reduction_MappingRule" typeId="tpf8.1167327847730" id="1302968767135042319">
       <link role="applicableConcept" roleId="tpf8.1167169349424" targetNodeId="v7ag.1302968767135003933" resolveInfo="InternalRunnableCall" />
       <node role="ruleConsequence" roleId="tpf8.1169672767469" type="tpf8.InlineTemplateWithContext_RuleConsequence" typeId="tpf8.8900764248744213868" id="1302968767135042321">
