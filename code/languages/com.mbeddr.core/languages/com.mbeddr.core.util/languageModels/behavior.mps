@@ -63,6 +63,10 @@
       <property name="virtualPackage" nameId="tpck.1193676396447" value="with" />
       <link role="concept" roleId="1i04.1225194240799" targetNodeId="k146.3073566081777391256" resolveInfo="WithMemberAssignment" />
     </node>
+    <node type="1i04.ConceptBehavior" typeId="1i04.1225194240794" id="7493549023104120736">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="range" />
+      <link role="concept" roleId="1i04.1225194240799" targetNodeId="k146.6307143892175911066" resolveInfo="RangeExpression" />
+    </node>
   </roots>
   <root id="5686538669182294937">
     <node role="constructor" roleId="1i04.1225194240801" type="1i04.ConceptConstructorDeclaration" typeId="1i04.1225194413805" id="5686538669182294938">
@@ -1415,6 +1419,25 @@
       </node>
       <node role="returnType" roleId="tpee.1068580123133" type="tp25.SNodeType" typeId="tp25.1138055754698" id="3059865549680533491">
         <link role="concept" roleId="tp25.1138405853777" targetNodeId="mj1l.8860443239512128054" resolveInfo="Type" />
+      </node>
+    </node>
+  </root>
+  <root id="7493549023104120736">
+    <node role="constructor" roleId="1i04.1225194240801" type="1i04.ConceptConstructorDeclaration" typeId="1i04.1225194413805" id="7493549023104120737">
+      <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="7493549023104120738">
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="7493549023104120739">
+          <node role="expression" roleId="tpee.1068580123156" type="tpee.AssignmentExpression" typeId="tpee.1068498886294" id="7493549023104120789">
+            <node role="lValue" roleId="tpee.1068498886295" type="tpee.DotExpression" typeId="tpee.1197027756228" id="7493549023104120761">
+              <node role="operand" roleId="tpee.1197027771414" type="1i04.ThisNodeExpression" typeId="1i04.1225194691553" id="7493549023104120740" />
+              <node role="operation" roleId="tpee.1197027833540" type="tp25.SPropertyAccess" typeId="tp25.1138056022639" id="7493549023104120767">
+                <link role="property" roleId="tp25.1138056395725" targetNodeId="k146.8729447926330623085" resolveInfo="maxExclude" />
+              </node>
+            </node>
+            <node role="rValue" roleId="tpee.1068498886297" type="tpee.BooleanConstant" typeId="tpee.1068580123137" id="7493549023104120793">
+              <property name="value" nameId="tpee.1068580123138" value="true" />
+            </node>
+          </node>
+        </node>
       </node>
     </node>
   </root>
