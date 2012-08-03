@@ -61,5 +61,11 @@
     </dependencies>
     <rename id="v7ag.4075471389393865483" type="CONCEPT" from="PortRefExpression" to="PortAsValueExpression" />
   </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="v7ag" modelUID="r:9596407c-f27a-49d3-abde-3a66293c5b61(com.mbeddr.ext.components.structure)" version="8" />
+    </dependencies>
+    <move id="v7ag.1539255704408544918" to="v7ag.1539255704408883009" />
+  </StructureModification>
 </history>
 
