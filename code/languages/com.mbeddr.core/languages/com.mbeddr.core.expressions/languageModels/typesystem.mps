@@ -6559,14 +6559,14 @@
         <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="4067226041188144667">
           <property name="name" nameId="tpck.1169194664001" value="leftIsUnsigned" />
           <node role="type" roleId="tpee.5680397130376446158" type="tpee.BooleanType" typeId="tpee.1070534644030" id="4067226041188144668" />
-          <node role="initializer" roleId="tpee.1068431790190" type="tpee.DotExpression" typeId="tpee.1197027756228" id="4067226041188314507">
-            <node role="operand" roleId="tpee.1197027771414" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="4067226041188314486">
+          <node role="initializer" roleId="tpee.1068431790190" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="674555550178459922">
+            <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="9200379251403085002" resolveInfo="isInstanceOf" />
+            <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="9200379251403084996" resolveInfo="TypeHelper" />
+            <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="674555550178459923">
               <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="4067226041188144612" resolveInfo="lt" />
             </node>
-            <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_IsInstanceOfOperation" typeId="tp25.1139621453865" id="4067226041188314512">
-              <node role="conceptArgument" roleId="tp25.1177027386292" type="tp25.RefConcept_Reference" typeId="tp25.1177026924588" id="4067226041188314514">
-                <link role="conceptDeclaration" roleId="tp25.1177026940964" targetNodeId="mj1l.7058269619789050743" resolveInfo="IUnsigned" />
-              </node>
+            <node role="actualArgument" roleId="tpee.1068499141038" type="tp25.ConceptRefExpression" typeId="tp25.1172424058054" id="674555550178459925">
+              <link role="conceptDeclaration" roleId="tp25.1172424100906" targetNodeId="mj1l.7058269619789050743" resolveInfo="IUnsigned" />
             </node>
           </node>
         </node>
@@ -6575,14 +6575,14 @@
         <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="4067226041188144750">
           <property name="name" nameId="tpck.1169194664001" value="rightIsUnsigned" />
           <node role="type" roleId="tpee.5680397130376446158" type="tpee.BooleanType" typeId="tpee.1070534644030" id="4067226041188144751" />
-          <node role="initializer" roleId="tpee.1068431790190" type="tpee.DotExpression" typeId="tpee.1197027756228" id="4067226041188314537">
-            <node role="operand" roleId="tpee.1197027771414" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="4067226041188314516">
+          <node role="initializer" roleId="tpee.1068431790190" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="674555550178459926">
+            <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="9200379251403084996" resolveInfo="TypeHelper" />
+            <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="9200379251403085002" resolveInfo="isInstanceOf" />
+            <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="674555550178459929">
               <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="4067226041188144621" resolveInfo="rt" />
             </node>
-            <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_IsInstanceOfOperation" typeId="tp25.1139621453865" id="4067226041188314542">
-              <node role="conceptArgument" roleId="tp25.1177027386292" type="tp25.RefConcept_Reference" typeId="tp25.1177026924588" id="4067226041188314544">
-                <link role="conceptDeclaration" roleId="tp25.1177026940964" targetNodeId="mj1l.7058269619789050743" resolveInfo="IUnsigned" />
-              </node>
+            <node role="actualArgument" roleId="tpee.1068499141038" type="tp25.ConceptRefExpression" typeId="tp25.1172424058054" id="674555550178459928">
+              <link role="conceptDeclaration" roleId="tp25.1172424100906" targetNodeId="mj1l.7058269619789050743" resolveInfo="IUnsigned" />
             </node>
           </node>
         </node>
