@@ -26,6 +26,27 @@ make test
 PROC_RET=$(($?+$PROC_RET))
 
 echo -------------------------------------
+echo interfaceTypes
+cd ..
+cd interfaceTypes
+make test
+PROC_RET=$(($?+$PROC_RET))
+
+echo -------------------------------------
+echo multiPorts
+cd ..
+cd multiPorts
+make test
+PROC_RET=$(($?+$PROC_RET))
+
+echo -------------------------------------
+echo multiPortsStaticallyWired
+cd ..
+cd multiPortsStaticallyWired
+make test
+PROC_RET=$(($?+$PROC_RET))
+
+echo -------------------------------------
 echo directRunnableCall
 cd ..
 cd directRunnableCall
