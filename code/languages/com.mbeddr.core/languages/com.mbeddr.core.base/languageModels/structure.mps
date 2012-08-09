@@ -89,6 +89,9 @@
       <property name="virtualPackage" nameId="tpck.1193676396447" value="config" />
       <property name="name" nameId="tpck.1169194664001" value="IConfigurationItemWithImport" />
     </node>
+    <node type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="7123462210702867708">
+      <property name="name" nameId="tpck.1169194664001" value="ILOCCountProvider" />
+    </node>
   </roots>
   <root id="7024921229555594291">
     <node role="extends" roleId="tpce.1169127546356" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7024921229555594292">
@@ -514,5 +517,6 @@
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="4459718605982007336" resolveInfo="IConfigurationItem" />
     </node>
   </root>
+  <root id="7123462210702867708" />
 </model>
 
