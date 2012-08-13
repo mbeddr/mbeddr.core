@@ -103,6 +103,9 @@
       <property name="virtualPackage" nameId="tpck.1193676396447" value="machine.states" />
       <link role="concept" roleId="1i04.1225194240799" targetNodeId="clqz.4753668641245545020" resolveInfo="ExitAction" />
     </node>
+    <node type="1i04.ConceptBehavior" typeId="1i04.1225194240794" id="4709703140582114946">
+      <link role="concept" roleId="1i04.1225194240799" targetNodeId="clqz.4709703140582114943" resolveInfo="TriggerAsConstConfigItem" />
+    </node>
   </roots>
   <root id="5633981208992655224">
     <node role="constructor" roleId="1i04.1225194240801" type="1i04.ConceptConstructorDeclaration" typeId="1i04.1225194413805" id="5633981208992655225">
@@ -3608,6 +3611,25 @@
               </node>
             </node>
             <node role="operation" roleId="tpee.1197027833540" type="tp25.Link_SetNewChildOperation" typeId="tp25.1138757581985" id="4753668641245840203" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </root>
+  <root id="4709703140582114946">
+    <node role="constructor" roleId="1i04.1225194240801" type="1i04.ConceptConstructorDeclaration" typeId="1i04.1225194413805" id="4709703140582114947">
+      <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="4709703140582114948">
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="4709703140582115129">
+          <node role="expression" roleId="tpee.1068580123156" type="tpee.AssignmentExpression" typeId="tpee.1068498886294" id="4709703140582146707">
+            <node role="rValue" roleId="tpee.1068498886297" type="tpee.BooleanConstant" typeId="tpee.1068580123137" id="4709703140582146710">
+              <property name="value" nameId="tpee.1068580123138" value="true" />
+            </node>
+            <node role="lValue" roleId="tpee.1068498886295" type="tpee.DotExpression" typeId="tpee.1197027756228" id="4709703140582115151">
+              <node role="operand" roleId="tpee.1197027771414" type="1i04.ThisNodeExpression" typeId="1i04.1225194691553" id="4709703140582115130" />
+              <node role="operation" roleId="tpee.1197027833540" type="tp25.SPropertyAccess" typeId="tp25.1138056022639" id="4709703140582146685">
+                <link role="property" roleId="tp25.1138056395725" targetNodeId="clqz.4709703140582114945" resolveInfo="asConst" />
+              </node>
+            </node>
           </node>
         </node>
       </node>

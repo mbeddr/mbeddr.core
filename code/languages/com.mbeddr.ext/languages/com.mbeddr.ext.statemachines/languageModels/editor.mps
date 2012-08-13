@@ -126,6 +126,9 @@
       <property name="virtualPackage" nameId="tpck.1193676396447" value="machine.states" />
       <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="clqz.4753668641245875079" resolveInfo="CommentedStateContent" />
     </node>
+    <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="4709703140582146711">
+      <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="clqz.4709703140582114943" resolveInfo="StatemachineConfigItem" />
+    </node>
   </roots>
   <root id="5778488248013533843">
     <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="51326808951959425">
@@ -1090,6 +1093,20 @@
   <root id="4753668641245876050">
     <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Component" typeId="tpc2.1078939183254" id="4753668641245876052">
       <link role="editorComponent" roleId="tpc2.1078939183255" targetNodeId="r4b4.7024921229556157914" resolveInfo="commentedCodeDefault" />
+    </node>
+  </root>
+  <root id="4709703140582146711">
+    <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="4709703140582156523">
+      <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Indent" typeId="tpc2.1237303669825" id="4709703140582156525" />
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="4709703140582156526">
+        <property name="text" nameId="tpc2.1073389577007" value="state machines:" />
+      </node>
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="4709703140582156528">
+        <property name="text" nameId="tpc2.1073389577007" value="trigger as const:" />
+      </node>
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Property" typeId="tpc2.1073389658414" id="4709703140582156530">
+        <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="clqz.4709703140582114945" resolveInfo="triggerAsConst" />
+      </node>
     </node>
   </root>
 </model>
