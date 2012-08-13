@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CodeStyleSettings">
+    <option name="fieldPrefix" value="" />
+    <option name="fieldSuffix" value="" />
+    <option name="localVariablePrefix" value="" />
+    <option name="localVariableSuffix" value="" />
+    <option name="parameterPrefix" value="" />
+    <option name="parameterSuffix" value="" />
+    <option name="staticFieldPrefix" value="" />
+    <option name="staticFieldSuffix" value="" />
+  </component>
+  <component name="DependencyValidationManager">
+    <option name="SKIP_IMPORT_STATEMENTS" value="false" />
+  </component>
+  <component name="Encoding" useUTFGuessing="true" native2AsciiForPropertiesFiles="false" />
+  <component name="MPSProject">
+    <projectModules>
+      <modulePath path="${project}/solutions/Pacemaker.main/Pacemaker.main.msd" />
+    </projectModules>
+    <genConfs />
+  </component>
+  <component name="ProjectLibraryManager">
+    <option name="libraries">
+      <map>
+        <entry key="mbeddr.cc">
+          <value>
+            <Library>
+              <option name="name" value="mbeddr.cc" />
+              <option name="path" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.cc" />
+            </Library>
+          </value>
+        </entry>
+        <entry key="mbeddr.core">
+          <value>
+            <Library>
+              <option name="name" value="mbeddr.core" />
+              <option name="path" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.core" />
+            </Library>
+          </value>
+        </entry>
+        <entry key="mbeddr.ext">
+          <value>
+            <Library>
+              <option name="name" value="mbeddr.ext" />
+              <option name="path" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.ext" />
+            </Library>
+          </value>
+        </entry>
+        <entry key="mbeddr.mpsutil">
+          <value>
+            <Library>
+              <option name="name" value="mbeddr.mpsutil" />
+              <option name="path" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.mpsutil" />
+            </Library>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" />
+  <component name="ProjectVersion">
+    <option name="version" value="2.5" />
+  </component>
+  <component name="VcsDirectoryMappings">
+    <mapping directory="" vcs="" />
+    <mapping directory="$mbeddr.github.core.home$" vcs="Git" />
+  </component>
+</project>
+
