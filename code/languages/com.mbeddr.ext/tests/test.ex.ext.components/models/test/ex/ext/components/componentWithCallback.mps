@@ -131,6 +131,14 @@
           <link role="typeDef" roleId="clbe.6116558314501347864" targetNodeId="1563119717886468704" resolveInfo="adderFun" />
         </node>
       </node>
+      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Field" typeId="v7ag.5308710777891512019" id="7235337523397490144">
+        <property name="name" nameId="tpck.1169194664001" value="x" />
+        <property name="initField" nameId="v7ag.785275130114861516" value="true" />
+        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="7235337523397490145">
+          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+        </node>
+      </node>
       <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="1563119717886558951">
         <property name="name" nameId="tpck.1169194664001" value="testAdding" />
         <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="1563119717886558952">
@@ -211,6 +219,12 @@
           <link role="field" roleId="v7ag.785275130114861598" targetNodeId="1563119717886468712" resolveInfo="adder" />
           <node role="value" roleId="v7ag.785275130114861599" type="x27k.FunctionRefExpr" typeId="x27k.8551646674110484035" id="1563119717886558947">
             <link role="function" roleId="x27k.8551646674110484037" targetNodeId="1563119717886558930" resolveInfo="simpleAdder" />
+          </node>
+        </node>
+        <node role="initFieldInitializers" roleId="v7ag.785275130114861567" type="v7ag.InitFieldInitializer" typeId="v7ag.785275130114861597" id="7235337523397508071">
+          <link role="field" roleId="v7ag.785275130114861598" targetNodeId="7235337523397490144" resolveInfo="x" />
+          <node role="value" roleId="v7ag.785275130114861599" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="7235337523397508072">
+            <property name="value" nameId="mj1l.8860443239512128104" value="10" />
           </node>
         </node>
       </node>
