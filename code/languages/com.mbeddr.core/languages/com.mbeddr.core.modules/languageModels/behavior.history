@@ -2,18 +2,6 @@
 <history>
   <StructureModification>
     <dependencies>
-      <model index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="0" />
-    </dependencies>
-    <rename id="x27k.5114214484368231289" type="PROPERTY" from="contextNodeID" to="contextNodeIdD" />
-  </StructureModification>
-  <StructureModification>
-    <dependencies>
-      <model index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="1" />
-    </dependencies>
-    <rename id="x27k.5420368450507972520" type="PROPERTY" from="implementationOnly" to="addToHeader" />
-  </StructureModification>
-  <StructureModification>
-    <dependencies>
       <model index="hwgx" modelUID="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)" version="1" />
       <model index="qd6m" modelUID="r:c4c3f7d3-0acf-4671-a134-5fab66c4e637(com.mbeddr.core.modules.behavior)" version="-1" />
       <model index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="4" />
