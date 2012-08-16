@@ -38,13 +38,21 @@ public class LiteralExpressionTestCase extends TestCase {
 	StringBuilder content = new StringBuilder();
 
 		
-		
-		content.append("int funToCall(int a, int b, int c){\n");
-		content.append("	return 30;\n");
-		content.append("};\n");
+/*		
+	content.append("int funToCall(int a, int b, int c){\n");
+	content.append("	return 30;\n");
+	content.append("};\n");
+*/
+//	content.append("2 + 3\n");
+	
+	content.append("	#define DEFINE_WITHERROR 2 + (\n");
 
+			content.append("int i = DEFINE_WITHERROR;\n");
 
+	
+	
 
+	
 	
 	HashMap<String, String> options = new HashMap<String, String>();
 
@@ -56,7 +64,7 @@ public class LiteralExpressionTestCase extends TestCase {
 					IncludeFileContentProvider.getEmptyFilesProvider(),
 					null, 0, new DefaultLogService());
 
-
+System.out.println(astTranslationUnit.getPreprocessorProblemsCount());
 	
 	astTranslationUnit.accept(new ASTVisitor(true) {
 
