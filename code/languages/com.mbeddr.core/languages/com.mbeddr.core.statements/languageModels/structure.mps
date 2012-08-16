@@ -10,7 +10,6 @@
   <import index="356a" modelUID="r:3b7ed80f-6cfd-45bc-b051-2f66c620dd27(jetbrains.mps.lang.traceable.structure)" version="0" implicit="yes" />
   <import index="2gv2" modelUID="r:055bac8c-a50b-42ec-a317-e20a256152b4(com.mbeddr.core.debug.structure)" version="10" implicit="yes" />
   <import index="hba4" modelUID="r:f5bd2ad9-cd54-4408-b815-07f9f306f074(com.mbeddr.mpsutil.blutil.structure)" version="5" implicit="yes" />
-  <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="4" implicit="yes" />
   <roots>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4185783222026464515">
       <property name="name" nameId="tpck.1169194664001" value="Statement" />
@@ -205,6 +204,9 @@
     </node>
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="8811944678849085926">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="2gv2.8811944678849085924" resolveInfo="IBreakpointSupport" />
+    </node>
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7123462210703020346">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="vs0r.7123462210702867708" resolveInfo="ILOCCountProvider" />
     </node>
     <node role="conceptLink" roleId="tpce.1105736949336" type="tpce.ReferenceConceptLink" typeId="tpce.1105736778597" id="7024921229556134721">
       <link role="conceptLinkDeclaration" roleId="tpce.1105736734721" targetNodeId="vs0r.7024921229556133802" resolveInfo="commentConcept" />
@@ -591,10 +593,6 @@
     </node>
   </root>
   <root id="3134547887598524926">
-    <node role="conceptLink" roleId="tpce.1105736949336" type="tpce.ReferenceConceptLink" typeId="tpce.1105736778597" id="1656687801206422585">
-      <link role="conceptLinkDeclaration" roleId="tpce.1105736734721" targetNodeId="vs0r.7024921229556133802" resolveInfo="commentConcept" />
-      <link role="target" roleId="tpce.1105736807942" targetNodeId="1656687801206406078" resolveInfo="CommentedSwitchMember" />
-    </node>
     <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.BooleanConceptProperty" typeId="tpce.1105725574259" id="3134547887598524927">
       <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473854053" resolveInfo="abstract" />
     </node>
@@ -610,6 +608,10 @@
     </node>
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="1656687801206406077">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="vs0r.7024921229556133800" resolveInfo="ICommentable" />
+    </node>
+    <node role="conceptLink" roleId="tpce.1105736949336" type="tpce.ReferenceConceptLink" typeId="tpce.1105736778597" id="1656687801206422585">
+      <link role="conceptLinkDeclaration" roleId="tpce.1105736734721" targetNodeId="vs0r.7024921229556133802" resolveInfo="commentConcept" />
+      <link role="target" roleId="tpce.1105736807942" targetNodeId="1656687801206406078" resolveInfo="CommentedSwitchMember" />
     </node>
   </root>
   <root id="3134547887598524928">

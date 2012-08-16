@@ -76,6 +76,7 @@
       <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="mj1l.8860443239512128050" resolveInfo="Expression" />
     </node>
     <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="6610873504380029783">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="types.cast" />
       <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="mj1l.6610873504380029780" resolveInfo="CastExpression" />
     </node>
     <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="6631303246401933801">
@@ -199,11 +200,16 @@
       <link role="applicableConcept" roleId="tpc2.1139535219968" targetNodeId="mj1l.7615572890648780049" resolveInfo="UnaryLogicalExpression" />
     </node>
     <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="7664133259366168732">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="types.cast" />
       <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="mj1l.7664133259366168728" resolveInfo="UnsafeCastExpression" />
     </node>
     <node type="tpc2.CellActionMapDeclaration" typeId="tpc2.1139535219966" id="3378779091584595514">
       <property name="name" nameId="tpck.1169194664001" value="deleteCast" />
       <link role="applicableConcept" roleId="tpc2.1139535219968" targetNodeId="mj1l.6610873504380029780" resolveInfo="CastExpression" />
+    </node>
+    <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="8428744930541292314">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="types.cast" />
+      <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="mj1l.8428744930541292309" resolveInfo="ConstCast" />
     </node>
   </roots>
   <root id="8860443239512128087">
@@ -2381,6 +2387,32 @@
           </node>
         </node>
       </node>
+    </node>
+  </root>
+  <root id="8428744930541292314">
+    <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="8428744930541292316">
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_ConceptProperty" typeId="tpc2.1137553248617" id="8428744930541292319">
+        <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="tpck.1137473891462" resolveInfo="alias" />
+      </node>
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="8428744930541292321">
+        <property name="text" nameId="tpc2.1073389577007" value="(" />
+        <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.PunctuationLeftStyleClassItem" typeId="tpc2.1233758997495" id="8428744930541292326">
+          <property name="flag" nameId="tpc2.1186414551515" value="true" />
+        </node>
+        <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.PunctuationRightStyleClassItem" typeId="tpc2.1233759184865" id="8428744930541292328">
+          <property name="flag" nameId="tpc2.1186414551515" value="true" />
+        </node>
+      </node>
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_RefNode" typeId="tpc2.1073389882823" id="8428744930541292325">
+        <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="mj1l.7254843406768839760" />
+      </node>
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="8428744930541292324">
+        <property name="text" nameId="tpc2.1073389577007" value=")" />
+        <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.PunctuationLeftStyleClassItem" typeId="tpc2.1233758997495" id="8428744930541292329">
+          <property name="flag" nameId="tpc2.1186414551515" value="true" />
+        </node>
+      </node>
+      <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Indent" typeId="tpc2.1237303669825" id="8428744930541292318" />
     </node>
   </root>
 </model>

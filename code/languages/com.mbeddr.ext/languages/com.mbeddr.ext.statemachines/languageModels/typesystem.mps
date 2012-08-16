@@ -13,7 +13,7 @@
   <import index="tpd4" modelUID="r:00000000-0000-4000-0000-011c895902b4(jetbrains.mps.lang.typesystem.structure)" version="3" implicit="yes" />
   <import index="tp3r" modelUID="r:00000000-0000-4000-0000-011c8959034b(jetbrains.mps.lang.quotation.structure)" version="0" implicit="yes" />
   <import index="tp2q" modelUID="r:00000000-0000-4000-0000-011c8959032e(jetbrains.mps.baseLanguage.collections.structure)" version="7" implicit="yes" />
-  <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="1" implicit="yes" />
+  <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="2" implicit="yes" />
   <import index="tp2c" modelUID="r:00000000-0000-4000-0000-011c89590338(jetbrains.mps.baseLanguage.closures.structure)" version="3" implicit="yes" />
   <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="4" implicit="yes" />
   <import index="tpib" modelUID="r:00000000-0000-4000-0000-011c8959057f(jetbrains.mps.baseLanguage.logging.structure)" version="0" implicit="yes" />
@@ -108,6 +108,10 @@
     <node type="tpd4.NonTypesystemRule" typeId="tpd4.1195214364922" id="4753668641245869314">
       <property name="name" nameId="tpck.1169194664001" value="check_State" />
       <property name="virtualPackage" nameId="tpck.1193676396447" value="machine.states" />
+    </node>
+    <node type="tpd4.NonTypesystemRule" typeId="tpd4.1195214364922" id="7235337523397638201">
+      <property name="name" nameId="tpck.1169194664001" value="check_StatemachineVarRef" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="machine" />
     </node>
   </roots>
   <root id="7851711690674269005">
@@ -1908,6 +1912,41 @@
     <node role="applicableNode" roleId="tpd4.1174648101952" type="tpd4.ConceptReference" typeId="tpd4.1174642788531" id="4753668641245869316">
       <property name="name" nameId="tpck.1169194664001" value="s" />
       <link role="concept" roleId="tpd4.1174642800329" targetNodeId="clqz.5778488248013533839" resolveInfo="State" />
+    </node>
+  </root>
+  <root id="7235337523397638201">
+    <node role="body" roleId="tpd4.1195213635060" type="tpee.StatementList" typeId="tpee.1068580123136" id="7235337523397638202">
+      <node role="statement" roleId="tpee.1068581517665" type="tpee.IfStatement" typeId="tpee.1068580123159" id="7235337523397638204">
+        <node role="condition" roleId="tpee.1068580123160" type="tpee.DotExpression" typeId="tpee.1197027756228" id="7235337523397638259">
+          <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="7235337523397638228">
+            <node role="operand" roleId="tpee.1197027771414" type="tpd4.ApplicableNodeReference" typeId="tpd4.1174650418652" id="7235337523397638207">
+              <link role="applicableNode" roleId="tpd4.1174650432090" targetNodeId="7235337523397638203" resolveInfo="vr" />
+            </node>
+            <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_GetAncestorOperation" typeId="tp25.1171407110247" id="7235337523397638234">
+              <node role="parameter" roleId="tp25.1144104376918" type="tp25.OperationParm_Concept" typeId="tp25.1144101972840" id="7235337523397638235">
+                <node role="conceptArgument" roleId="tp25.1207343664468" type="tp25.RefConcept_Reference" typeId="tp25.1177026924588" id="7235337523397638238">
+                  <link role="conceptDeclaration" roleId="tp25.1177026940964" targetNodeId="clqz.5633981208992643165" resolveInfo="StatemachineVariableDeclaration" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_IsNotNullOperation" typeId="tp25.1172008320231" id="7235337523397638264" />
+        </node>
+        <node role="ifTrue" roleId="tpee.1068580123161" type="tpee.StatementList" typeId="tpee.1068580123136" id="7235337523397638206">
+          <node role="statement" roleId="tpee.1068581517665" type="tpd4.ReportErrorStatement" typeId="tpd4.1175517767210" id="7235337523397638265">
+            <node role="errorString" roleId="tpd4.1175517851849" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="7235337523397638268">
+              <property name="value" nameId="tpee.1070475926801" value="references to state machine variables cannot be used in variable initializers" />
+            </node>
+            <node role="nodeToReport" roleId="tpd4.1227096802790" type="tpd4.ApplicableNodeReference" typeId="tpd4.1174650418652" id="7235337523397638269">
+              <link role="applicableNode" roleId="tpd4.1174650432090" targetNodeId="7235337523397638203" resolveInfo="vr" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node role="applicableNode" roleId="tpd4.1174648101952" type="tpd4.ConceptReference" typeId="tpd4.1174642788531" id="7235337523397638203">
+      <property name="name" nameId="tpck.1169194664001" value="vr" />
+      <link role="concept" roleId="tpd4.1174642800329" targetNodeId="clqz.1786180596061383227" resolveInfo="StatemachineVarRef" />
     </node>
   </root>
 </model>
