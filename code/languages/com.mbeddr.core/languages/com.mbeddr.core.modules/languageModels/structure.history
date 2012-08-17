@@ -12,5 +12,27 @@
     </dependencies>
     <rename id="x27k.5420368450507972520" type="PROPERTY" from="implementationOnly" to="addToHeader" />
   </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="hwgx" modelUID="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)" version="1" />
+      <model index="qd6m" modelUID="r:c4c3f7d3-0acf-4671-a134-5fab66c4e637(com.mbeddr.core.modules.behavior)" version="-1" />
+      <model index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="4" />
+      <model index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="2" />
+    </dependencies>
+    <move id="x27k.55677248263838609" to="vs0r.8428744930541856329" />
+    <move id="qd6m.55677248263845659" to="hwgx.8428744930541856333" />
+    <move id="qd6m.55677248263845660" to="hwgx.8428744930541856335" />
+    <move id="qd6m.55677248263849519" to="hwgx.8428744930541856337" />
+    <move id="qd6m.55677248263845661" to="hwgx.8428744930541856336" />
+    <move id="qd6m.55677248263845656" to="hwgx.8428744930541856332" />
+    <move id="qd6m.55677248263849523" to="hwgx.8428744930541856339" />
+    <move id="qd6m.55677248263849520" to="hwgx.8428744930541856338" />
+    <move id="qd6m.55677248263845652" to="hwgx.8428744930541856330" />
+    <move id="qd6m.55677248263845654" to="hwgx.8428744930541856342" />
+    <move id="qd6m.55677248263845655" to="hwgx.8428744930541856331" />
+    <move id="qd6m.55677248263849522" to="hwgx.8428744930541856340" />
+    <move id="qd6m.55677248263845658" to="hwgx.8428744930541856334" />
+    <move id="qd6m.55677248263845653" to="hwgx.8428744930541856341" />
+  </StructureModification>
 </history>
 

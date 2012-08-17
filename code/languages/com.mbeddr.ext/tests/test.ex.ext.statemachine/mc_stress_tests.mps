@@ -14,11 +14,11 @@
   <import index="k146" modelUID="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" version="2" implicit="yes" />
   <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="17" implicit="yes" />
   <import index="yq40" modelUID="r:152b3fc0-83a1-4bab-a8cd-565eb8483785(com.mbeddr.core.pointers.structure)" version="3" implicit="yes" />
-  <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="4" implicit="yes" />
+  <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="5" implicit="yes" />
   <import index="51wr" modelUID="r:b31f1c3c-99aa-4f1e-a329-cba27efb1a6b(com.mbeddr.core.buildconfig.structure)" version="1" implicit="yes" />
   <import index="yz9a" modelUID="r:734c02dd-cc16-4184-99eb-5fd9f43aa37e(com.mbeddr.core.unittest.structure)" version="0" implicit="yes" />
   <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="4" implicit="yes" />
-  <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="1" implicit="yes" />
+  <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="3" implicit="yes" />
   <roots>
     <node type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="8444296659257885032">
       <property name="name" nameId="tpck.1169194664001" value="HelloSMWorld" />
@@ -39,8 +39,8 @@
           <property name="value" nameId="mj1l.8860443239512128104" value="3" />
         </node>
         <node role="type" roleId="mj1l.318113533128716676" type="clqz.BoundedIntType" typeId="clqz.7851711690674374947" id="4663449261074423775">
-          <property name="min" nameId="clqz.7851711690674374948" value="0" />
-          <property name="max" nameId="clqz.7851711690674374949" value="5" />
+          <property name="min" value="0" />
+          <property name="max" value="5" />
           <node role="min" roleId="clqz.1656687801206292530" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="1656687801206329607">
             <property name="value" nameId="mj1l.8860443239512128104" value="0" />
           </node>
@@ -140,8 +140,8 @@
         <property name="readable" nameId="clqz.4497436839299253152" value="true" />
         <property name="writable" nameId="clqz.4497436839299253153" value="false" />
         <node role="type" roleId="mj1l.318113533128716676" type="clqz.BoundedIntType" typeId="clqz.7851711690674374947" id="4497436839299247207">
-          <property name="min" nameId="clqz.7851711690674374948" value="0" />
-          <property name="max" nameId="clqz.7851711690674374949" value="100" />
+          <property name="min" value="0" />
+          <property name="max" value="100" />
           <node role="min" roleId="clqz.1656687801206292530" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="1656687801206329675">
             <property name="value" nameId="mj1l.8860443239512128104" value="0" />
           </node>
@@ -159,8 +159,8 @@
           <property name="value" nameId="mj1l.8860443239512128104" value="100" />
         </node>
         <node role="type" roleId="mj1l.318113533128716676" type="clqz.BoundedIntType" typeId="clqz.7851711690674374947" id="4497436839299247212">
-          <property name="min" nameId="clqz.7851711690674374948" value="0" />
-          <property name="max" nameId="clqz.7851711690674374949" value="100" />
+          <property name="min" value="0" />
+          <property name="max" value="100" />
           <node role="min" roleId="clqz.1656687801206292530" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="1656687801206329631">
             <property name="value" nameId="mj1l.8860443239512128104" value="0" />
           </node>
@@ -177,8 +177,8 @@
           <property name="value" nameId="mj1l.8860443239512128104" value="0" />
         </node>
         <node role="type" roleId="mj1l.318113533128716676" type="clqz.BoundedIntType" typeId="clqz.7851711690674374947" id="4497436839299251317">
-          <property name="min" nameId="clqz.7851711690674374948" value="0" />
-          <property name="max" nameId="clqz.7851711690674374949" value="100" />
+          <property name="min" value="0" />
+          <property name="max" value="100" />
           <node role="min" roleId="clqz.1656687801206292530" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="1656687801206329601">
             <property name="value" nameId="mj1l.8860443239512128104" value="0" />
           </node>
@@ -193,8 +193,8 @@
         <node role="args" roleId="clqz.1786180596061248896" type="clqz.EventArg" typeId="clqz.1786180596061248885" id="4497436839299246572">
           <property name="name" nameId="tpck.1169194664001" value="delta" />
           <node role="type" roleId="mj1l.318113533128716676" type="clqz.BoundedIntType" typeId="clqz.7851711690674374947" id="4497436839299246574">
-            <property name="min" nameId="clqz.7851711690674374948" value="0" />
-            <property name="max" nameId="clqz.7851711690674374949" value="10" />
+            <property name="min" value="0" />
+            <property name="max" value="10" />
             <node role="min" roleId="clqz.1656687801206292530" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="1656687801206329605">
               <property name="value" nameId="mj1l.8860443239512128104" value="0" />
             </node>
@@ -216,8 +216,8 @@
         <node role="args" roleId="clqz.1786180596061248896" type="clqz.EventArg" typeId="clqz.1786180596061248885" id="4497436839299251337">
           <property name="name" nameId="tpck.1169194664001" value="steps" />
           <node role="type" roleId="mj1l.318113533128716676" type="clqz.BoundedIntType" typeId="clqz.7851711690674374947" id="4497436839299251338">
-            <property name="min" nameId="clqz.7851711690674374948" value="0" />
-            <property name="max" nameId="clqz.7851711690674374949" value="100" />
+            <property name="min" value="0" />
+            <property name="max" value="100" />
             <node role="min" roleId="clqz.1656687801206292530" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="1656687801206329673">
               <property name="value" nameId="mj1l.8860443239512128104" value="0" />
             </node>
