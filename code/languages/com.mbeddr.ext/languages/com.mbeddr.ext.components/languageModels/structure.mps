@@ -117,6 +117,7 @@
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4491876417845649024">
       <property name="virtualPackage" nameId="tpck.1193676396447" value="comp.instances" />
       <property name="name" nameId="tpck.1169194664001" value="InstanceConfiguration" />
+      <property name="iconPath" nameId="tpce.1160488491229" value="${language_descriptor}/icons/instanceConfiguration.jpg" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
     </node>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4491876417845683824">
@@ -847,6 +848,9 @@
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="6041318036222235017">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="6041318036222235015" resolveInfo="InstanceConfigContents" />
     </node>
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="8080020694574611753">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="2gv2.9057217260024409663" resolveInfo="IWatchablesProvider" />
+    </node>
     <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="8105003328815013325">
       <property name="value" nameId="tpce.1105725733873" value="instance" />
       <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473891462" resolveInfo="alias" />
@@ -944,6 +948,9 @@
     </node>
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7123462210703644461">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="vs0r.7123462210702867708" resolveInfo="ILOCCountProvider" />
+    </node>
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="8080020694574615852">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="2gv2.9057217260024409663" resolveInfo="IWatchablesProvider" />
     </node>
   </root>
   <root id="4491876417845683824">
