@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dev-kit name="com.mbeddr.statemachinesInComponents" uuid="2f7ba914-eed9-41bf-b0ae-6633a04a3894">
+  <exported-language name="13a36f90-83c5-4bf6-9dd6-70e455f1ef36(com.mbeddr.ext.components.statemachine)" />
+  <extendedDevKits>
+    <extendedDevKit>24565007-e59f-42fc-ac10-da3836deec1c(com.mbeddr.components)</extendedDevKit>
+    <extendedDevKit>43d889ae-8e6a-4f6e-a649-d59342d8728d(com.mbeddr.statemachines)</extendedDevKit>
+  </extendedDevKits>
+</dev-kit>
+
