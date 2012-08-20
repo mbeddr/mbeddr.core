@@ -128,12 +128,6 @@ PROC_RET=$(($?+$PROC_RET))
 
 
 
-echo -------------------------------------
-echo MainTest
-cd ../../../../MainTest
-make test
-PROC_RET=$(($?+$PROC_RET))
-
 
 if [ "$PROC_RET" -ne "0" ]; 
  then
