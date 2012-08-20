@@ -1,24 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <model modelUID="r:1ef0eb27-29cf-4b16-b1c8-5d6962b7dd45(Pacemaker.main.Heart)">
   <persistence version="7" />
+  <language namespace="97d24244-51db-4e2e-97fc-7bd73b1f5f40(com.mbeddr.ext.components)" />
+  <language namespace="13a36f90-83c5-4bf6-9dd6-70e455f1ef36(com.mbeddr.ext.components.statemachine)" />
   <devkit namespace="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
   <devkit namespace="43d889ae-8e6a-4f6e-a649-d59342d8728d(com.mbeddr.statemachines)" />
   <devkit namespace="a4dac888-0788-4852-b4c0-f386bf6f2c0b(com.mbeddr.cc.reqtrace)" />
+  <devkit namespace="24565007-e59f-42fc-ac10-da3836deec1c(com.mbeddr.components)" />
   <import index="h1mu" modelUID="r:5d14202d-f0c5-4d54-91b8-53d48ec1c32b(Pacemaker.main.Requirements)" version="-1" />
   <import index="eji2" modelUID="r:1ecc2b4a-a062-4a3e-81d8-a5227e6be06c(Pacemaker.main.Gizmo)" version="-1" />
   <import index="fetz" modelUID="r:b6c3222a-7be8-4ec7-a7b3-e89b39f75da1(Pacemaker.main.Hardware)" version="-1" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
-  <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="2" implicit="yes" />
+  <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="3" implicit="yes" />
   <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="17" implicit="yes" />
   <import index="51wr" modelUID="r:b31f1c3c-99aa-4f1e-a329-cba27efb1a6b(com.mbeddr.core.buildconfig.structure)" version="1" implicit="yes" />
   <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="4" implicit="yes" />
-  <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="4" implicit="yes" />
+  <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="5" implicit="yes" />
   <import index="clqz" modelUID="r:5ebcdb77-81e9-4964-beae-35bd9a2f28b5(com.mbeddr.ext.statemachines.structure)" version="8" implicit="yes" />
   <import index="k146" modelUID="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" version="2" implicit="yes" />
   <import index="clbe" modelUID="r:61d840b4-12c1-49ea-b142-b2a1550a9b15(com.mbeddr.core.udt.structure)" version="7" implicit="yes" />
   <import index="yq40" modelUID="r:152b3fc0-83a1-4bab-a8cd-565eb8483785(com.mbeddr.core.pointers.structure)" version="3" implicit="yes" />
   <import index="26ao" modelUID="r:7c15925b-a4a5-4da3-88aa-931a5a9ed982(com.mbeddr.cc.trace.structure)" version="3" implicit="yes" />
   <import index="75wo" modelUID="r:eaa205a4-f15c-47d3-99e2-e648881b5997(com.mbeddr.cc.requirements.structure)" version="5" implicit="yes" />
+  <import index="p7vm" modelUID="r:28fa862e-f94d-4c39-bdf7-a4bdbc773888(com.mbeddr.ext.components.gen_nomw.structure)" version="0" implicit="yes" />
+  <import index="v7ag" modelUID="r:9596407c-f27a-49d3-abde-3a66293c5b61(com.mbeddr.ext.components.structure)" version="9" implicit="yes" />
+  <import index="8yj6" modelUID="r:b5ef41ef-8594-459c-bc08-a7e214c6fb43(com.mbeddr.ext.components.statemachine.structure)" version="0" implicit="yes" />
   <roots>
     <node type="mj1l.TypeSizeConfiguration" typeId="mj1l.3335993110369795380" id="4600281520962881347" />
     <node type="51wr.BuildConfiguration" typeId="51wr.7717755763392524104" id="4600281520962881414" />
@@ -238,9 +244,19 @@
       <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="4600281520963330241">
         <link role="module" roleId="51wr.7717755763392524108" targetNodeId="4600281520963330225" resolveInfo="Entry" />
       </node>
+      <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="5688055005366722292">
+        <link role="module" roleId="51wr.7717755763392524108" targetNodeId="eji2.4967856996714701067" resolveInfo="Interfaces" />
+      </node>
+      <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="5688055005366722293">
+        <link role="module" roleId="51wr.7717755763392524108" targetNodeId="eji2.5688055005366700759" resolveInfo="Loggers" />
+      </node>
     </node>
     <node role="configurationItems" roleId="vs0r.4459718605982007338" type="k146.ReportingConfiguration" typeId="k146.4459718605982051949" id="4600281520963331988">
       <node role="strategy" roleId="k146.4459718605982051999" type="k146.PrintfReportingStrategy" typeId="k146.4459718605982051980" id="6067460337372926482" />
+    </node>
+    <node role="configurationItems" roleId="vs0r.4459718605982007338" type="8yj6.StatemachineInCompsConfigItem" typeId="8yj6.1656687801206464316" id="5688055005366730817" />
+    <node role="configurationItems" roleId="vs0r.4459718605982007338" type="v7ag.ComponentsConfigItem" typeId="v7ag.2103658896110121032" id="5688055005366728684">
+      <node role="genStrategy" roleId="v7ag.2103658896110238743" type="p7vm.NoMwComponentsGenStrategy" typeId="p7vm.2103658896110278831" id="5688055005366728686" />
     </node>
   </root>
   <root id="4600281520963330225">
@@ -311,11 +327,11 @@
           </node>
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="9016946137851912046" />
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="9016946137851903216">
-          <node role="expr" roleId="c4fa.7254843406768833939" type="x27k.FunctionCall" typeId="x27k.5950410542643524492" id="9016946137851903217">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="5688055005366712147">
+          <node role="expr" roleId="c4fa.7254843406768833939" type="x27k.FunctionCall" typeId="x27k.5950410542643524492" id="5688055005366712148">
             <link role="function" roleId="x27k.5950410542643524493" targetNodeId="eji2.1559571946845220487" resolveInfo="SetPacerType" />
-            <node role="actuals" roleId="x27k.5950410542643524495" type="clbe.EnumLiteralRef" typeId="clbe.8811614583515726007" id="6047040665414279753">
-              <link role="literal" roleId="clbe.8811614583515726008" targetNodeId="eji2.1559571946845220476" resolveInfo="AOO" />
+            <node role="actuals" roleId="x27k.5950410542643524495" type="clbe.EnumLiteralRef" typeId="clbe.8811614583515726007" id="5688055005366712150">
+              <link role="literal" roleId="clbe.8811614583515726008" targetNodeId="eji2.1559571946845220476" resolveInfo="AOOType" />
             </node>
           </node>
         </node>
@@ -362,8 +378,8 @@
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="9016946137851907182">
       <property name="name" nameId="tpck.1169194664001" value="empty_1344429147353_46" />
     </node>
-    <node role="imports" roleId="x27k.1317894735999304826" type="x27k.ModuleImport" typeId="x27k.1317894735999299713" id="6047040665414279744">
-      <link role="module" roleId="x27k.1317894735999299714" targetNodeId="eji2.6047040665414172482" resolveInfo="Pacer" />
+    <node role="imports" roleId="x27k.1317894735999304826" type="x27k.ModuleImport" typeId="x27k.1317894735999299713" id="5688055005366712149">
+      <link role="module" roleId="x27k.1317894735999299714" targetNodeId="eji2.4967856996714701067" resolveInfo="Interfaces" />
     </node>
     <node role="imports" roleId="x27k.1317894735999304826" type="x27k.ModuleImport" typeId="x27k.1317894735999299713" id="9016946137851912244">
       <link role="module" roleId="x27k.1317894735999299714" targetNodeId="9016946137851912047" resolveInfo="SerialProcessor" />
@@ -472,19 +488,16 @@
       </node>
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.GlobalConstantDeclaration" typeId="x27k.3788988821851860886" id="7059795523744258870">
-      <property name="name" nameId="tpck.1169194664001" value="AOOType" />
+      <property name="name" nameId="tpck.1169194664001" value="AOOPaceType" />
       <node role="value" roleId="x27k.3788988821851871048" type="mj1l.HexNumberLiteral" typeId="mj1l.1054289341113450444" id="7059795523744258872">
         <property name="value" nameId="mj1l.1054289341113450445" value="01" />
       </node>
     </node>
-    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.GlobalConstantDeclaration" typeId="x27k.3788988821851860886" id="7059795523744258873">
-      <property name="name" nameId="tpck.1169194664001" value="VOOType" />
-      <node role="value" roleId="x27k.3788988821851871048" type="mj1l.HexNumberLiteral" typeId="mj1l.1054289341113450444" id="7059795523744258875">
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.GlobalConstantDeclaration" typeId="x27k.3788988821851860886" id="5688055005366712165">
+      <property name="name" nameId="tpck.1169194664001" value="VOOPaceType" />
+      <node role="value" roleId="x27k.3788988821851871048" type="mj1l.HexNumberLiteral" typeId="mj1l.1054289341113450444" id="5688055005366712166">
         <property name="value" nameId="mj1l.1054289341113450445" value="02" />
       </node>
-    </node>
-    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="7059795523744258876">
-      <property name="name" nameId="tpck.1169194664001" value="empty_1344604479369_16" />
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.GlobalConstantDeclaration" typeId="x27k.3788988821851860886" id="7059795523744264819">
       <property name="name" nameId="tpck.1169194664001" value="ChangePulseWidth" />
@@ -1091,8 +1104,8 @@
                     <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="8028557988791054998">
                       <node role="expr" roleId="c4fa.7254843406768833939" type="x27k.FunctionCall" typeId="x27k.5950410542643524492" id="8028557988791054999">
                         <link role="function" roleId="x27k.5950410542643524493" targetNodeId="eji2.1559571946845220487" resolveInfo="SetPacerType" />
-                        <node role="actuals" roleId="x27k.5950410542643524495" type="clbe.EnumLiteralRef" typeId="clbe.8811614583515726007" id="6047040665414279761">
-                          <link role="literal" roleId="clbe.8811614583515726008" targetNodeId="eji2.1559571946845220476" resolveInfo="AOO" />
+                        <node role="actuals" roleId="x27k.5950410542643524495" type="clbe.EnumLiteralRef" typeId="clbe.8811614583515726007" id="5688055005366712175">
+                          <link role="literal" roleId="clbe.8811614583515726008" targetNodeId="eji2.1559571946845220476" resolveInfo="AOOType" />
                         </node>
                       </node>
                     </node>
@@ -1107,7 +1120,7 @@
                     <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.BreakStatement" typeId="c4fa.8441331188640862326" id="8028557988791054976" />
                   </node>
                   <node role="expression" roleId="c4fa.3134547887598524929" type="x27k.GlobalConstantRef" typeId="x27k.3788988821852026523" id="8028557988791054978">
-                    <link role="constant" roleId="x27k.3788988821852026524" targetNodeId="7059795523744258870" resolveInfo="AOOType" />
+                    <link role="constant" roleId="x27k.3788988821852026524" targetNodeId="7059795523744258870" resolveInfo="AOOPaceType" />
                   </node>
                 </node>
                 <node role="cases" roleId="c4fa.3134547887598524959" type="c4fa.SwitchCase" typeId="c4fa.3134547887598524928" id="8028557988791054985">
@@ -1115,8 +1128,8 @@
                     <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="8028557988791055001">
                       <node role="expr" roleId="c4fa.7254843406768833939" type="x27k.FunctionCall" typeId="x27k.5950410542643524492" id="8028557988791055002">
                         <link role="function" roleId="x27k.5950410542643524493" targetNodeId="eji2.1559571946845220487" resolveInfo="SetPacerType" />
-                        <node role="actuals" roleId="x27k.5950410542643524495" type="clbe.EnumLiteralRef" typeId="clbe.8811614583515726007" id="6047040665414279762">
-                          <link role="literal" roleId="clbe.8811614583515726008" targetNodeId="eji2.1559571946845220477" resolveInfo="VOO" />
+                        <node role="actuals" roleId="x27k.5950410542643524495" type="clbe.EnumLiteralRef" typeId="clbe.8811614583515726007" id="5688055005366712177">
+                          <link role="literal" roleId="clbe.8811614583515726008" targetNodeId="eji2.1559571946845220477" resolveInfo="VOOType" />
                         </node>
                       </node>
                     </node>
@@ -1130,8 +1143,8 @@
                     </node>
                     <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.BreakStatement" typeId="c4fa.8441331188640862326" id="8028557988791054988" />
                   </node>
-                  <node role="expression" roleId="c4fa.3134547887598524929" type="x27k.GlobalConstantRef" typeId="x27k.3788988821852026523" id="8028557988791054992">
-                    <link role="constant" roleId="x27k.3788988821852026524" targetNodeId="7059795523744258873" resolveInfo="VOOType" />
+                  <node role="expression" roleId="c4fa.3134547887598524929" type="x27k.GlobalConstantRef" typeId="x27k.3788988821852026523" id="5688055005366712173">
+                    <link role="constant" roleId="x27k.3788988821852026524" targetNodeId="5688055005366712165" resolveInfo="VOOPaceType" />
                   </node>
                 </node>
                 <node role="cases" roleId="c4fa.3134547887598524959" type="c4fa.SwitchDefault" typeId="c4fa.3134547887598524930" id="8028557988791055007">
@@ -1220,6 +1233,9 @@
           </node>
         </node>
       </node>
+    </node>
+    <node role="imports" roleId="x27k.1317894735999304826" type="x27k.ModuleImport" typeId="x27k.1317894735999299713" id="5688055005366712171">
+      <link role="module" roleId="x27k.1317894735999299714" targetNodeId="eji2.4967856996714701067" resolveInfo="Interfaces" />
     </node>
     <node role="imports" roleId="x27k.1317894735999304826" type="x27k.ModuleImport" typeId="x27k.1317894735999299713" id="6047040665414279756">
       <link role="module" roleId="x27k.1317894735999299714" targetNodeId="fetz.6047040665414172550" resolveInfo="Usart" />
