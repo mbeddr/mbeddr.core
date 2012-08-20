@@ -2004,8 +2004,12 @@
   <root id="8515777736166452576" />
   <root id="2384034043170171910" />
   <root id="7664133259366168728">
+    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="6035922876555101587">
+      <property name="value" nameId="tpce.1105725733873" value="unsafe" />
+      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473891462" resolveInfo="alias" />
+    </node>
     <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="7664133259366168731">
-      <property name="value" nameId="tpce.1105725733873" value="downcast an expression" />
+      <property name="value" nameId="tpce.1105725733873" value="downcast an (incompatible) expression" />
       <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473914776" resolveInfo="shortDescription" />
     </node>
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="7664133259366168729">
