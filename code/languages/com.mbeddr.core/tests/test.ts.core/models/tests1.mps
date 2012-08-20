@@ -1946,6 +1946,19 @@
                 </node>
               </node>
             </node>
+            <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="8011039602902379660">
+              <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.AssignmentExpr" typeId="mj1l.22102029902365709" id="8011039602902379664">
+                <node role="right" roleId="mj1l.8860443239512128065" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="8011039602902379667">
+                  <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="36486875645774071" resolveInfo="two" />
+                  <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodePropertiesContainer" typeId="tp5g.1215507532627" id="8011039602902652552">
+                    <node role="properties" roleId="tp5g.1215507909023" type="tp5g.NodeErrorPropety" typeId="tp5g.1215507671101" id="8011039602902652553" />
+                  </node>
+                </node>
+                <node role="left" roleId="mj1l.8860443239512128064" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="8011039602902379661">
+                  <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="6261694371278167870" resolveInfo="arrSize2" />
+                </node>
+              </node>
+            </node>
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="8599220535762600225" />
           </node>
           <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="5708867820622277813" />
@@ -2255,6 +2268,126 @@
             </node>
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="1071471145938802228" />
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="1071471145938802229" />
+          </node>
+        </node>
+        <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="1071471145938896729">
+          <property name="name" nameId="tpck.1169194664001" value="empty_1345461564010_3" />
+        </node>
+        <node role="contents" roleId="x27k.6437088627575722833" type="yz9a.TestCase" typeId="yz9a.6275792049641586523" id="1071471145938896731">
+          <property name="exported" nameId="x27k.1317894735999272944" value="true" />
+          <property name="name" nameId="tpck.1169194664001" value="covariantArrays" />
+          <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="1071471145938896732">
+            <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+            <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+          </node>
+          <node role="body" roleId="yz9a.6275792049641586525" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="1071471145938896733">
+            <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="1071471145938896734">
+              <property name="name" nameId="tpck.1169194664001" value="ui16_2" />
+              <node role="type" roleId="mj1l.318113533128716676" type="yq40.ArrayType" typeId="yq40.5679441017214012545" id="1071471145938896736">
+                <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+                <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+                <node role="baseType" roleId="yq40.5679441017214012546" type="mj1l.UnsignedInt16tType" typeId="mj1l.8463282783691618466" id="1071471145938896735">
+                  <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+                  <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+                </node>
+                <node role="sizeExpr" roleId="yq40.1452920870317474611" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="1071471145938896737">
+                  <property name="value" nameId="mj1l.8860443239512128104" value="2" />
+                </node>
+              </node>
+            </node>
+            <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="1071471145938896740">
+              <property name="name" nameId="tpck.1169194664001" value="ui8_4" />
+              <node role="type" roleId="mj1l.318113533128716676" type="yq40.ArrayType" typeId="yq40.5679441017214012545" id="1071471145938896742">
+                <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+                <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+                <node role="baseType" roleId="yq40.5679441017214012546" type="mj1l.UnsignedInt8tType" typeId="mj1l.8463282783691618461" id="1071471145938896741">
+                  <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+                  <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+                </node>
+                <node role="sizeExpr" roleId="yq40.1452920870317474611" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="1071471145938896743">
+                  <property name="value" nameId="mj1l.8860443239512128104" value="4" />
+                </node>
+              </node>
+            </node>
+            <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="1071471145938896763">
+              <property name="name" nameId="tpck.1169194664001" value="ui8_2" />
+              <node role="type" roleId="mj1l.318113533128716676" type="yq40.ArrayType" typeId="yq40.5679441017214012545" id="1071471145938896764">
+                <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+                <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+                <node role="baseType" roleId="yq40.5679441017214012546" type="mj1l.UnsignedInt8tType" typeId="mj1l.8463282783691618461" id="1071471145938896765">
+                  <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+                  <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+                </node>
+                <node role="sizeExpr" roleId="yq40.1452920870317474611" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="1071471145938896766">
+                  <property name="value" nameId="mj1l.8860443239512128104" value="2" />
+                </node>
+              </node>
+            </node>
+            <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="1071471145938896744" />
+            <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="1071471145938896746">
+              <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.AssignmentExpr" typeId="mj1l.22102029902365709" id="1071471145938896750">
+                <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.UnsafeCastExpression" typeId="mj1l.7664133259366168728" id="1071471145938901379">
+                  <node role="expr" roleId="mj1l.7664133259366168729" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="1071471145938896753">
+                    <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="1071471145938896740" resolveInfo="ui8_4" />
+                  </node>
+                  <node role="targetType" roleId="mj1l.7664133259366168730" type="yq40.ArrayType" typeId="yq40.5679441017214012545" id="1071471145938901382">
+                    <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+                    <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+                    <node role="baseType" roleId="yq40.5679441017214012546" type="mj1l.UnsignedInt16tType" typeId="mj1l.8463282783691618466" id="1071471145938901380">
+                      <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+                      <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+                    </node>
+                    <node role="sizeExpr" roleId="yq40.1452920870317474611" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="1071471145938901383">
+                      <property name="value" nameId="mj1l.8860443239512128104" value="2" />
+                    </node>
+                  </node>
+                </node>
+                <node role="left" roleId="mj1l.8860443239512128064" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="1071471145938896747">
+                  <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="1071471145938896734" resolveInfo="ui16_2" />
+                </node>
+              </node>
+            </node>
+            <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="1071471145938896755">
+              <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.AssignmentExpr" typeId="mj1l.22102029902365709" id="1071471145938896759">
+                <node role="right" roleId="mj1l.8860443239512128065" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="1071471145938896762">
+                  <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="1071471145938896734" resolveInfo="ui16_2" />
+                  <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodePropertiesContainer" typeId="tp5g.1215507532627" id="1071471145938901388">
+                    <node role="properties" roleId="tp5g.1215507909023" type="tp5g.NodeErrorPropety" typeId="tp5g.1215507671101" id="1071471145938901389" />
+                  </node>
+                </node>
+                <node role="left" roleId="mj1l.8860443239512128064" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="1071471145938896756">
+                  <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="1071471145938896740" resolveInfo="ui8_4" />
+                </node>
+              </node>
+            </node>
+            <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="1071471145938896767" />
+            <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="1071471145938896770">
+              <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.AssignmentExpr" typeId="mj1l.22102029902365709" id="1071471145938896774">
+                <node role="right" roleId="mj1l.8860443239512128065" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="1071471145938896777">
+                  <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="1071471145938896763" resolveInfo="ui8_2" />
+                  <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodePropertiesContainer" typeId="tp5g.1215507532627" id="1071471145938901390">
+                    <node role="properties" roleId="tp5g.1215507909023" type="tp5g.NodeErrorPropety" typeId="tp5g.1215507671101" id="1071471145938901391" />
+                  </node>
+                </node>
+                <node role="left" roleId="mj1l.8860443239512128064" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="1071471145938896771">
+                  <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="1071471145938896734" resolveInfo="ui16_2" />
+                </node>
+              </node>
+            </node>
+            <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="1071471145938896779">
+              <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.AssignmentExpr" typeId="mj1l.22102029902365709" id="1071471145938896781">
+                <node role="right" roleId="mj1l.8860443239512128065" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="1071471145938896784">
+                  <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="1071471145938896734" resolveInfo="ui16_2" />
+                  <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodePropertiesContainer" typeId="tp5g.1215507532627" id="1071471145938901392">
+                    <node role="properties" roleId="tp5g.1215507909023" type="tp5g.NodeErrorPropety" typeId="tp5g.1215507671101" id="1071471145938901393" />
+                  </node>
+                </node>
+                <node role="left" roleId="mj1l.8860443239512128064" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="1071471145938896780">
+                  <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="1071471145938896763" resolveInfo="ui8_2" />
+                </node>
+              </node>
+            </node>
+            <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="1071471145938896739" />
           </node>
         </node>
         <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="1302285975003907925">
