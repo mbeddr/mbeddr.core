@@ -9,6 +9,7 @@
       <modulePath path="${project}/devkits/com.mbeddr.ext.components/components.devkit" />
       <modulePath path="${project}/devkits/com.mbeddr.ext.statemachines/statemachines.devkit" />
       <modulePath path="${project}/devkits/com.mbeddr.physicalunits/physicalunits.devkit" />
+      <modulePath path="${project}/devkits/com.mbeddr.statemachinesInComponents/statemachinesInComponents.devkit" folder="" />
       <modulePath path="${project}/languages/com.mbeddr.ext.boundedNumbers/boundedNumbers.mpl" folder="units" />
       <modulePath path="${project}/languages/com.mbeddr.ext.components.gen_nomw/gen_nomw.mpl" folder="components" />
       <modulePath path="${project}/languages/com.mbeddr.ext.components.mock/mock.mpl" folder="components" />

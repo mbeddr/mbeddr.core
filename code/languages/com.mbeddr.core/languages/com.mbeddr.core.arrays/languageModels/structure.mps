@@ -76,6 +76,10 @@
       <property name="virtualPackage" nameId="tpck.1193676396447" value="types" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="mj1l.8860443239512128056" resolveInfo="PrimitiveType" />
     </node>
+    <node type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="1071471145938784281">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="arrays" />
+      <property name="name" nameId="tpck.1169194664001" value="IAllowsUnsizedArrays" />
+    </node>
   </roots>
   <root id="279446265608352903">
     <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="279446265608352904">
@@ -297,5 +301,6 @@
       <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473914776" resolveInfo="shortDescription" />
     </node>
   </root>
+  <root id="1071471145938784281" />
 </model>
 
