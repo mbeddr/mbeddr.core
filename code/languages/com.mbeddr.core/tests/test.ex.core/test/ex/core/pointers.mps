@@ -370,6 +370,15 @@
             <node role="exprs" roleId="c4fa.5095889050031622571" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="36486875645774056">
               <property name="value" nameId="mj1l.8860443239512128104" value="20" />
             </node>
+            <node role="exprs" roleId="c4fa.5095889050031622571" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="1071471145938675415">
+              <property name="value" nameId="mj1l.8860443239512128104" value="30" />
+            </node>
+            <node role="exprs" roleId="c4fa.5095889050031622571" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="1071471145938675417">
+              <property name="value" nameId="mj1l.8860443239512128104" value="40" />
+            </node>
+            <node role="exprs" roleId="c4fa.5095889050031622571" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="1071471145938675419">
+              <property name="value" nameId="mj1l.8860443239512128104" value="50" />
+            </node>
           </node>
           <node role="type" roleId="mj1l.318113533128716676" type="yq40.ArrayType" typeId="yq40.5679441017214012545" id="5083029923012081293">
             <node role="baseType" roleId="yq40.5679441017214012546" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="5083029923012081294" />
@@ -509,6 +518,9 @@
         <property name="name" nameId="tpck.1169194664001" value="arr" />
         <node role="type" roleId="mj1l.318113533128716676" type="yq40.ArrayType" typeId="yq40.5679441017214012545" id="5708867820621171371">
           <node role="baseType" roleId="yq40.5679441017214012546" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="5708867820621171372" />
+          <node role="sizeExpr" roleId="yq40.1452920870317474611" type="x27k.GlobalConstantRef" typeId="x27k.3788988821852026523" id="1071471145938718896">
+            <link role="constant" roleId="x27k.3788988821852026524" targetNodeId="7248713732034362486" resolveInfo="arrSize" />
+          </node>
         </node>
       </node>
     </node>
