@@ -2341,6 +2341,9 @@
                       <property name="value" nameId="mj1l.8860443239512128104" value="2" />
                     </node>
                   </node>
+                  <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodePropertiesContainer" typeId="tp5g.1215507532627" id="8729127847822667467">
+                    <node role="properties" roleId="tp5g.1215507909023" type="tp5g.NodeErrorPropety" typeId="tp5g.1215507671101" id="8729127847822667468" />
+                  </node>
                 </node>
                 <node role="left" roleId="mj1l.8860443239512128064" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="1071471145938896747">
                   <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="1071471145938896734" resolveInfo="ui16_2" />
