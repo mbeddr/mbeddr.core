@@ -1,7 +1,7 @@
 #! /bin/sh
 
 # info region
-SPATH="src/mps/solutions/Pacemaker.main/source_gen/Pacemaker/main" 
+SPATH="src/mps/solutions/Pacemaker.main/source_gen/Pacemaker/main"
 DPATH="src/mplab"
 
 # fix the mplab incompatibilities from the mbedder generated code and move the code into the mplab source directory

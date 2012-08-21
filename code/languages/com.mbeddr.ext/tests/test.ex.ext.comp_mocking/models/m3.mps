@@ -37,7 +37,7 @@
       <property name="name" nameId="tpck.1169194664001" value="DataAcquisition" />
       <node role="contents" roleId="v7ag.4491876417845484926" type="v7ag.Operation" typeId="v7ag.4491876417845484924" id="8729447926330476740">
         <property name="name" nameId="tpck.1169194664001" value="measure" />
-        <node role="returnType" roleId="v7ag.4491876417845683831" type="mj1l.Int32tType" typeId="mj1l.8463282783691618440" id="8729447926330614293" />
+        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int32tType" typeId="mj1l.8463282783691618440" id="8729127847821556806" />
       </node>
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="4075471389393094662">
@@ -47,11 +47,11 @@
       <property name="name" nameId="tpck.1169194664001" value="Sensor" />
       <node role="contents" roleId="v7ag.4491876417845484926" type="v7ag.Operation" typeId="v7ag.4491876417845484924" id="8729447926330476752">
         <property name="name" nameId="tpck.1169194664001" value="isReady" />
-        <node role="returnType" roleId="v7ag.4491876417845683831" type="mj1l.BooleanType" typeId="mj1l.8860443239512128058" id="8729447926330476754" />
+        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.BooleanType" typeId="mj1l.8860443239512128058" id="8729127847821556897" />
       </node>
       <node role="contents" roleId="v7ag.4491876417845484926" type="v7ag.Operation" typeId="v7ag.4491876417845484924" id="6307143892175816576">
         <property name="name" nameId="tpck.1169194664001" value="getValue" />
-        <node role="returnType" roleId="v7ag.4491876417845683831" type="mj1l.Int32tType" typeId="mj1l.8463282783691618440" id="6307143892175816577" />
+        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int32tType" typeId="mj1l.8463282783691618440" id="8729127847821556805" />
       </node>
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="4075471389393094663">
