@@ -5,7 +5,7 @@
   <devkit namespace="24565007-e59f-42fc-ac10-da3836deec1c(com.mbeddr.components)" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="k146" modelUID="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" version="2" implicit="yes" />
-  <import index="v7ag" modelUID="r:9596407c-f27a-49d3-abde-3a66293c5b61(com.mbeddr.ext.components.structure)" version="9" implicit="yes" />
+  <import index="v7ag" modelUID="r:9596407c-f27a-49d3-abde-3a66293c5b61(com.mbeddr.ext.components.structure)" version="10" implicit="yes" />
   <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="17" implicit="yes" />
   <import index="yq40" modelUID="r:152b3fc0-83a1-4bab-a8cd-565eb8483785(com.mbeddr.core.pointers.structure)" version="3" implicit="yes" />
   <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="5" implicit="yes" />
@@ -13,7 +13,7 @@
   <import index="clbe" modelUID="r:61d840b4-12c1-49ea-b142-b2a1550a9b15(com.mbeddr.core.udt.structure)" version="7" implicit="yes" />
   <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="4" implicit="yes" />
   <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="3" implicit="yes" />
-  <import index="v0r9" modelUID="r:277b15fc-1383-4213-8385-5a16481fa36c(com.mbeddr.ext.components.test.structure)" version="3" implicit="yes" />
+  <import index="v0r9" modelUID="r:277b15fc-1383-4213-8385-5a16481fa36c(com.mbeddr.ext.components.test.structure)" version="4" implicit="yes" />
   <import index="yz9a" modelUID="r:734c02dd-cc16-4184-99eb-5fd9f43aa37e(com.mbeddr.core.unittest.structure)" version="0" implicit="yes" />
   <import index="p7vm" modelUID="r:28fa862e-f94d-4c39-bdf7-a4bdbc773888(com.mbeddr.ext.components.gen_nomw.structure)" version="0" implicit="yes" />
   <roots>
@@ -231,8 +231,8 @@
           <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="1563119717886559007">
             <node role="left" roleId="mj1l.8860443239512128064" type="v0r9.DirectRunnableCall" typeId="v0r9.8230733038424928674" id="1563119717886558986">
               <link role="runnable" roleId="v0r9.6105672464781003798" targetNodeId="1563119717886558951" resolveInfo="testAdding" />
-              <link role="instance" roleId="v0r9.6105672464780971357" targetNodeId="1563119717886468718" resolveInfo="c" />
-              <link role="config" roleId="v0r9.6105672464780937238" targetNodeId="1563119717886468717" resolveInfo="instances" />
+              <link role="instance" roleId="v7ag.1482737808881210674" targetNodeId="1563119717886468718" resolveInfo="c" />
+              <link role="config" roleId="v7ag.1482737808881210673" targetNodeId="1563119717886468717" resolveInfo="instances" />
               <node role="actuals" roleId="v0r9.8230733038424928677" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="1563119717886558987">
                 <property name="value" nameId="mj1l.8860443239512128104" value="2" />
               </node>
@@ -247,8 +247,8 @@
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="7603351357795526633">
           <node role="expr" roleId="c4fa.7254843406768833939" type="v0r9.DirectRunnableCall" typeId="v0r9.8230733038424928674" id="7603351357795526634">
-            <link role="config" roleId="v0r9.6105672464780937238" targetNodeId="1563119717886468717" resolveInfo="instances" />
-            <link role="instance" roleId="v0r9.6105672464780971357" targetNodeId="1563119717886468718" resolveInfo="c" />
+            <link role="config" roleId="v7ag.1482737808881210673" targetNodeId="1563119717886468717" resolveInfo="instances" />
+            <link role="instance" roleId="v7ag.1482737808881210674" targetNodeId="1563119717886468718" resolveInfo="c" />
             <link role="runnable" roleId="v0r9.6105672464781003798" targetNodeId="7603351357795526605" resolveInfo="compManager_changeAdder" />
             <node role="actuals" roleId="v0r9.8230733038424928677" type="x27k.FunctionRefExpr" typeId="x27k.8551646674110484035" id="7603351357795526635">
               <link role="function" roleId="x27k.8551646674110484037" targetNodeId="1250922156896623843" resolveInfo="badAdder" />
@@ -260,8 +260,8 @@
           <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="7603351357795526641">
             <node role="left" roleId="mj1l.8860443239512128064" type="v0r9.DirectRunnableCall" typeId="v0r9.8230733038424928674" id="7603351357795526642">
               <link role="runnable" roleId="v0r9.6105672464781003798" targetNodeId="1563119717886558951" resolveInfo="testAdding" />
-              <link role="instance" roleId="v0r9.6105672464780971357" targetNodeId="1563119717886468718" resolveInfo="c" />
-              <link role="config" roleId="v0r9.6105672464780937238" targetNodeId="1563119717886468717" resolveInfo="instances" />
+              <link role="instance" roleId="v7ag.1482737808881210674" targetNodeId="1563119717886468718" resolveInfo="c" />
+              <link role="config" roleId="v7ag.1482737808881210673" targetNodeId="1563119717886468717" resolveInfo="instances" />
               <node role="actuals" roleId="v0r9.8230733038424928677" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="7603351357795526643">
                 <property name="value" nameId="mj1l.8860443239512128104" value="2" />
               </node>

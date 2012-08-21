@@ -6,7 +6,7 @@
   <language namespace="3bf5377a-e904-4ded-9754-5a516023bfaa(com.mbeddr.core.pointers)" />
   <devkit namespace="24565007-e59f-42fc-ac10-da3836deec1c(com.mbeddr.components)" />
   <devkit namespace="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
-  <import index="v7ag" modelUID="r:9596407c-f27a-49d3-abde-3a66293c5b61(com.mbeddr.ext.components.structure)" version="9" implicit="yes" />
+  <import index="v7ag" modelUID="r:9596407c-f27a-49d3-abde-3a66293c5b61(com.mbeddr.ext.components.structure)" version="10" implicit="yes" />
   <import index="8yj6" modelUID="r:b5ef41ef-8594-459c-bc08-a7e214c6fb43(com.mbeddr.ext.components.statemachine.structure)" version="0" implicit="yes" />
   <import index="clqz" modelUID="r:5ebcdb77-81e9-4964-beae-35bd9a2f28b5(com.mbeddr.ext.statemachines.structure)" version="8" implicit="yes" />
   <import index="p7vm" modelUID="r:28fa862e-f94d-4c39-bdf7-a4bdbc773888(com.mbeddr.ext.components.gen_nomw.structure)" version="0" implicit="yes" />
@@ -266,17 +266,16 @@
         <property name="name" nameId="tpck.1169194664001" value="aC" />
         <link role="component" roleId="v7ag.4491876417845649015" targetNodeId="4643433264761154525" resolveInfo="Comp" />
       </node>
+      <node role="contents" roleId="v7ag.6041318036222235020" type="v7ag.PortAdapterInInstanceConfig" typeId="v7ag.5172178961828157634" id="5413996595771867984">
+        <property name="name" nameId="tpck.1169194664001" value="theComponent" />
+        <node role="portRef" roleId="v7ag.6616025724454701213" type="v7ag.AdapterInstancePortRef" typeId="v7ag.6616025724454668918" id="5413996595771867985">
+          <link role="instance" roleId="v7ag.6616025724454668919" targetNodeId="4643433264761447271" resolveInfo="aC" />
+          <link role="port" roleId="v7ag.6616025724454668920" targetNodeId="4643433264761446994" resolveInfo="ctrl" />
+        </node>
+      </node>
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="3606837211743284098">
       <property name="name" nameId="tpck.1169194664001" value="empty_1327307106566_7" />
-    </node>
-    <node role="contents" roleId="x27k.6437088627575722833" type="v7ag.PortAdapter" typeId="v7ag.4491876417845704581" id="4643433264761447273">
-      <property name="name" nameId="tpck.1169194664001" value="theComponent" />
-      <link role="configuration" roleId="v7ag.5172178961827877444" targetNodeId="4643433264761447270" resolveInfo="instances" />
-      <node role="portRef" roleId="v7ag.6616025724454701213" type="v7ag.AdapterInstancePortRef" typeId="v7ag.6616025724454668918" id="7537522850027796964">
-        <link role="instance" roleId="v7ag.6616025724454668919" targetNodeId="4643433264761447271" resolveInfo="aC" />
-        <link role="port" roleId="v7ag.6616025724454668920" targetNodeId="4643433264761446994" resolveInfo="ctrl" />
-      </node>
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="3606837211743284099">
       <property name="name" nameId="tpck.1169194664001" value="empty_1327307108296_8" />
@@ -289,7 +288,7 @@
           <node role="expr" roleId="c4fa.7254843406768833939" type="v7ag.PortAdapterOpCallExpr" typeId="v7ag.466603768608410221" id="4643433264761447284">
             <link role="operation" roleId="v7ag.8105003328815071752" targetNodeId="4643433264761446992" resolveInfo="run" />
             <node role="expression" roleId="mj1l.7254843406768839760" type="v7ag.PortAdapterRefExpr" typeId="v7ag.8105003328815039001" id="4643433264761447283">
-              <link role="portAdater" roleId="v7ag.8105003328815039002" targetNodeId="4643433264761447273" resolveInfo="theComponent" />
+              <link role="portAdater" roleId="v7ag.8105003328815039002" targetNodeId="5413996595771867984" resolveInfo="theComponent" />
             </node>
           </node>
         </node>
@@ -302,7 +301,7 @@
             <node role="left" roleId="mj1l.8860443239512128064" type="v7ag.PortAdapterOpCallExpr" typeId="v7ag.466603768608410221" id="1598382569875779438">
               <link role="operation" roleId="v7ag.8105003328815071752" targetNodeId="1598382569875779416" resolveInfo="getValue" />
               <node role="expression" roleId="mj1l.7254843406768839760" type="v7ag.PortAdapterRefExpr" typeId="v7ag.8105003328815039001" id="1598382569875779437">
-                <link role="portAdater" roleId="v7ag.8105003328815039002" targetNodeId="4643433264761447273" resolveInfo="theComponent" />
+                <link role="portAdater" roleId="v7ag.8105003328815039002" targetNodeId="5413996595771867984" resolveInfo="theComponent" />
               </node>
             </node>
           </node>
@@ -311,7 +310,7 @@
           <node role="expr" roleId="c4fa.7254843406768833939" type="v7ag.PortAdapterOpCallExpr" typeId="v7ag.466603768608410221" id="1598382569875783328">
             <link role="operation" roleId="v7ag.8105003328815071752" targetNodeId="4643433264761446992" resolveInfo="run" />
             <node role="expression" roleId="mj1l.7254843406768839760" type="v7ag.PortAdapterRefExpr" typeId="v7ag.8105003328815039001" id="1598382569875783329">
-              <link role="portAdater" roleId="v7ag.8105003328815039002" targetNodeId="4643433264761447273" resolveInfo="theComponent" />
+              <link role="portAdater" roleId="v7ag.8105003328815039002" targetNodeId="5413996595771867984" resolveInfo="theComponent" />
             </node>
           </node>
         </node>
@@ -324,7 +323,7 @@
             <node role="left" roleId="mj1l.8860443239512128064" type="v7ag.PortAdapterOpCallExpr" typeId="v7ag.466603768608410221" id="1598382569875783325">
               <link role="operation" roleId="v7ag.8105003328815071752" targetNodeId="1598382569875779416" resolveInfo="getValue" />
               <node role="expression" roleId="mj1l.7254843406768839760" type="v7ag.PortAdapterRefExpr" typeId="v7ag.8105003328815039001" id="1598382569875783326">
-                <link role="portAdater" roleId="v7ag.8105003328815039002" targetNodeId="4643433264761447273" resolveInfo="theComponent" />
+                <link role="portAdater" roleId="v7ag.8105003328815039002" targetNodeId="5413996595771867984" resolveInfo="theComponent" />
               </node>
             </node>
           </node>
@@ -358,6 +357,7 @@
         </node>
       </node>
     </node>
+    <node role="imports" roleId="x27k.1317894735999304826" type="x27k.ModuleImport" typeId="x27k.1317894735999299713" id="5413996595771867986" />
   </root>
   <root id="4643433264761468121">
     <node role="binaries" roleId="51wr.5046689135694070731" type="51wr.Executable" typeId="51wr.5046689135693761554" id="4643433264761468122">
