@@ -22,7 +22,7 @@
     </node>
     <node role="requirements" roleId="75wo.8745401669462963171" type="75wo.Requirement" typeId="75wo.8745401669462952101" id="8028557988791054210">
       <property name="priority" nameId="75wo.3314758227758879688" value="0" />
-      <property name="open" nameId="75wo.1165432222361744926" value="false" />
+      <property name="open" nameId="75wo.1165432222361744926" value="true" />
       <property name="name" nameId="tpck.1169194664001" value="OperatingModes" />
       <property name="summmary" nameId="75wo.3402431285977818823" value="The operating modes the pacemaker has to support" />
       <property name="proseText" nameId="75wo.8745401669463252438" value="The following bradycardia operating modes shall be programable:&#10;Off, DDDR, VDDR, DDIR, DOOR, VOOR, AOOR, VVIR, AAIR, DDD, VDD, DDI,&#10;DOO, VOO, AOO, VVI, AAI, VVT, AAT.&#10;&#10;OVO, OAO, ODO and OOO shall be available in temporary operation. " />
