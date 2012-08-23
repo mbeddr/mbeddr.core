@@ -250,6 +250,9 @@
       <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="5688055005366722293">
         <link role="module" roleId="51wr.7717755763392524108" targetNodeId="eji2.5688055005366700759" resolveInfo="Loggers" />
       </node>
+      <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="4712415786988365430">
+        <link role="module" roleId="51wr.7717755763392524108" targetNodeId="fetz.4712415786988364476" resolveInfo="DigitalResistors" />
+      </node>
     </node>
     <node role="configurationItems" roleId="vs0r.4459718605982007338" type="k146.ReportingConfiguration" typeId="k146.4459718605982051949" id="4600281520963331988">
       <node role="strategy" roleId="k146.4459718605982051999" type="k146.PrintfReportingStrategy" typeId="k146.4459718605982051980" id="6067460337372926482" />
@@ -305,6 +308,14 @@
             </node>
           </node>
         </node>
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="1026677032748711593">
+          <node role="expr" roleId="c4fa.7254843406768833939" type="x27k.FunctionCall" typeId="x27k.5950410542643524492" id="1026677032748711594">
+            <link role="function" roleId="x27k.5950410542643524493" targetNodeId="fetz.1026677032748711575" resolveInfo="RegisterAtrialISRHandler" />
+            <node role="actuals" roleId="x27k.5950410542643524495" type="x27k.FunctionRefExpr" typeId="x27k.8551646674110484035" id="1026677032748711595">
+              <link role="function" roleId="x27k.8551646674110484037" targetNodeId="eji2.8028557988791059242" resolveInfo="OnSenseAtrialActivity" />
+            </node>
+          </node>
+        </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="298572849313100538">
           <node role="expr" roleId="c4fa.7254843406768833939" type="x27k.FunctionCall" typeId="x27k.5950410542643524492" id="298572849313100539">
             <link role="function" roleId="x27k.5950410542643524493" targetNodeId="fetz.298572849313100532" resolveInfo="RegisterTimer0ISRHandler" />
@@ -330,8 +341,8 @@
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="5688055005366712147">
           <node role="expr" roleId="c4fa.7254843406768833939" type="x27k.FunctionCall" typeId="x27k.5950410542643524492" id="5688055005366712148">
             <link role="function" roleId="x27k.5950410542643524493" targetNodeId="eji2.1559571946845220487" resolveInfo="SetPacerType" />
-            <node role="actuals" roleId="x27k.5950410542643524495" type="clbe.EnumLiteralRef" typeId="clbe.8811614583515726007" id="5688055005366712150">
-              <link role="literal" roleId="clbe.8811614583515726008" targetNodeId="eji2.1559571946845220476" resolveInfo="AOOType" />
+            <node role="actuals" roleId="x27k.5950410542643524495" type="clbe.EnumLiteralRef" typeId="clbe.8811614583515726007" id="1026677032748711697">
+              <link role="literal" roleId="clbe.8811614583515726008" targetNodeId="eji2.8028557988791059263" resolveInfo="VVIType" />
             </node>
           </node>
         </node>

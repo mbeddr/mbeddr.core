@@ -27,5 +27,6 @@
   
   extern inline void RegisterTimer0ISRHandler(void (*)(void));
   extern inline void RegisterVentricleISRHandler(void (*)(void));
+  extern inline void RegisterAtrialISRHandler(void (*)(void));
   extern inline void RegisterUSARTRXISRHandler(void (*)(void));
 #endif
