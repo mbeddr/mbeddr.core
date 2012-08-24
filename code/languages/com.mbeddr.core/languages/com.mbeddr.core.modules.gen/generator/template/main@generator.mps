@@ -2158,7 +2158,7 @@
                     <node role="operation" roleId="tpee.1197027833540" type="tpf3.GenerationContextOp_ShowErrorMessage" typeId="tpf3.1217960179967" id="5845931900082277519">
                       <node role="messageText" roleId="tpf3.1217960314448" type="tpee.PlusExpression" typeId="tpee.1068581242875" id="5845931900082277520">
                         <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="5845931900082277521">
-                          <property name="value" nameId="tpee.1070475926801" value="is inconsistent. Please go back and run the quick fix to correct the problem before generating code." />
+                          <property name="value" nameId="tpee.1070475926801" value=" is inconsistent. Please go back and run the quick fix to correct the problem before generating code." />
                         </node>
                         <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.PlusExpression" typeId="tpee.1068581242875" id="5845931900082277522">
                           <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="5845931900082277523">
