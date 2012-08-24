@@ -46,9 +46,19 @@
     <node role="target" roleId="51wr.5323740605968447026" type="51wr.DesktopPlatform" typeId="51wr.5323740605968447022" id="4459718605983077524">
       <property name="compiler" nameId="51wr.5323740605968447024" value="gcc" />
       <property name="compilerOptions" nameId="51wr.5323740605968447025" value="-std=c99" />
+      <property name="debugOptions" nameId="51wr.2736179788492003937" value="-g" />
     </node>
     <node role="configurationItems" roleId="vs0r.4459718605982007338" type="k146.ReportingConfiguration" typeId="k146.4459718605982051949" id="4459718605983077525">
       <node role="strategy" roleId="k146.4459718605982051999" type="k146.PrintfReportingStrategy" typeId="k146.4459718605982051980" id="4459718605983077526" />
+    </node>
+    <node role="binaries" roleId="51wr.5046689135694070731" type="51wr.Executable" typeId="51wr.5046689135693761554" id="4998503984087076213">
+      <property name="name" nameId="tpck.1169194664001" value="ExampleApp" />
+      <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="4998503984087076214">
+        <link role="module" roleId="51wr.7717755763392524108" targetNodeId="2468758874671101222" resolveInfo="ExampleAppWithMain" />
+      </node>
+      <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="4998503984087076215">
+        <link role="module" roleId="51wr.7717755763392524108" targetNodeId="6693167602755061574" resolveInfo="ExampleApp" />
+      </node>
     </node>
   </root>
   <root id="2468758874671101237">
