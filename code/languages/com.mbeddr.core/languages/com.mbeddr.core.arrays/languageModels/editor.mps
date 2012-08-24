@@ -220,6 +220,12 @@
   </root>
   <root id="5679441017214012547">
     <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="5679441017214012564">
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Component" typeId="tpc2.1078939183254" id="333705943706778951">
+        <link role="editorComponent" roleId="tpc2.1078939183255" targetNodeId="vrqd.2941277002449715228" resolveInfo="volatileFlag" />
+      </node>
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Component" typeId="tpc2.1078939183254" id="333705943706778953">
+        <link role="editorComponent" roleId="tpc2.1078939183255" targetNodeId="vrqd.2941277002446854216" resolveInfo="constFlag" />
+      </node>
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_RefNode" typeId="tpc2.1073389882823" id="5679441017214012567">
         <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="yq40.5679441017214012546" />
       </node>
