@@ -8,13 +8,29 @@
     <node type="qk4j.GameStructure" typeId="qk4j.1694060945597180898" id="1694060945597187291">
       <property name="name" nameId="tpck.1169194664001" value="simpleGame" />
     </node>
+    <node type="qk4j.RoomLayout" typeId="qk4j.1694060945597187295" id="1694060945597401033">
+      <property name="name" nameId="tpck.1169194664001" value="defaultLayout" />
+      <link role="structure" roleId="qk4j.1694060945597187308" targetNodeId="1694060945597187291" resolveInfo="simpleGame" />
+    </node>
   </roots>
   <root id="1694060945597187291">
     <node role="contents" roleId="qk4j.1694060945597180901" type="qk4j.Room" typeId="qk4j.1694060945597180899" id="1694060945597187292">
       <property name="name" nameId="tpck.1169194664001" value="R1" />
+      <node role="westDoor" roleId="qk4j.1694060945597180905" type="qk4j.Door" typeId="qk4j.1694060945597180902" id="1694060945597410690" />
     </node>
     <node role="contents" roleId="qk4j.1694060945597180901" type="qk4j.Room" typeId="qk4j.1694060945597180899" id="1694060945597187294">
       <property name="name" nameId="tpck.1169194664001" value="R2" />
+    </node>
+  </root>
+  <root id="1694060945597401033">
+    <node role="roomInstances" roleId="qk4j.1694060945597396975" type="qk4j.RoomInstance" typeId="qk4j.1694060945597393748" id="1694060945597409660">
+      <link role="room" roleId="qk4j.1694060945597393749" targetNodeId="1694060945597187294" resolveInfo="R2" />
+    </node>
+    <node role="roomInstances" roleId="qk4j.1694060945597396975" type="qk4j.RoomInstance" typeId="qk4j.1694060945597393748" id="1694060945597409659">
+      <link role="room" roleId="qk4j.1694060945597393749" targetNodeId="1694060945597187292" resolveInfo="R1" />
+    </node>
+    <node role="roomInstances" roleId="qk4j.1694060945597396975" type="qk4j.RoomInstance" typeId="qk4j.1694060945597393748" id="1694060945597411562">
+      <link role="room" roleId="qk4j.1694060945597393749" targetNodeId="1694060945597187292" resolveInfo="R1" />
     </node>
   </root>
 </model>
