@@ -75,7 +75,7 @@
       <link role="forConcept" roleId="tp3j.2522969319638198290" targetNodeId="mj1l.8860443239512128050" resolveInfo="Expression" />
     </node>
     <node type="tp3j.IntentionDeclaration" typeId="tp3j.1192794744107" id="3059865549680567706">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="with" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="namedStructInit" />
       <property name="name" nameId="tpck.1169194664001" value="synchronizeAllMembersForInit" />
       <link role="forConcept" roleId="tp3j.2522969319638198290" targetNodeId="k146.3059865549680361316" resolveInfo="NamedArgStructInitExpression" />
     </node>

@@ -138,8 +138,12 @@
       <link role="applicableConcept" roleId="tpc2.1139535219968" targetNodeId="k146.5724839270942479572" resolveInfo="LogExpression" />
     </node>
     <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="3059865549680413568">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="with" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="namedStructInit" />
       <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="k146.3059865549680361316" resolveInfo="NamedArgStructInitExpression" />
+    </node>
+    <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="4137387759417369758">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="namedStructInit" />
+      <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="k146.4137387759417349282" resolveInfo="ConvertNamedToPositionalStructInit" />
     </node>
   </roots>
   <root id="5686538669182273030">
@@ -1414,6 +1418,11 @@
         <property name="text" nameId="tpc2.1073389577007" value="}" />
         <link role="actionMap" roleId="tpc2.1139959269582" targetNodeId="8257817273847483821" resolveInfo="deleteStatement" />
       </node>
+    </node>
+  </root>
+  <root id="4137387759417369758">
+    <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="4137387759417369760">
+      <property name="text" nameId="tpc2.1073389577007" value="convert named struct init to positional stuct init" />
     </node>
   </root>
 </model>

@@ -97,7 +97,7 @@
     </node>
     <node type="tpd4.InferenceRule" typeId="tpd4.1174643105530" id="3059865549680537583">
       <property name="name" nameId="tpck.1169194664001" value="typeof_NamedArgStructInitExpression" />
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="with" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="namedStructInit" />
     </node>
     <node type="tpd4.InferenceRule" typeId="tpd4.1174643105530" id="3457272138385189068">
       <property name="name" nameId="tpck.1169194664001" value="typeof_FlagSet" />

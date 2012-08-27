@@ -66,7 +66,7 @@
       <link role="concept" roleId="tp1t.1213093996982" targetNodeId="k146.5724839270942479572" resolveInfo="LogExpression" />
     </node>
     <node type="tp1t.ConceptConstraints" typeId="tp1t.1213093968558" id="3059865549680537566">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="with" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="namedStructInit" />
       <link role="concept" roleId="tp1t.1213093996982" targetNodeId="k146.3059865549680361316" resolveInfo="NamedArgStructInitExpression" />
     </node>
   </roots>
