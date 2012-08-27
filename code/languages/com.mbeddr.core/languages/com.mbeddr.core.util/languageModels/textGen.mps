@@ -15,7 +15,7 @@
       <link role="conceptDeclaration" roleId="2omo.1233670257997" targetNodeId="k146.5724839270942479572" resolveInfo="LogExpression" />
     </node>
     <node type="2omo.ConceptTextGenDeclaration" typeId="2omo.1233670071145" id="3059865549680544998">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="with" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="namedStructInit" />
       <link role="conceptDeclaration" roleId="2omo.1233670257997" targetNodeId="k146.3059865549680361316" resolveInfo="NamedArgStructInitExpression" />
     </node>
     <node type="2omo.ConceptTextGenDeclaration" typeId="2omo.1233670071145" id="3059865549680550001">
