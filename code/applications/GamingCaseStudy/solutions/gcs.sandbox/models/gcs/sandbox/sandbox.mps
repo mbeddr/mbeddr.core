@@ -2,12 +2,14 @@
 <model modelUID="r:99e72aaa-9fb1-4334-abad-97454fbcc6e6(gcs.sandbox.sandbox)">
   <persistence version="7" />
   <language namespace="0cdeceaa-07b6-4d76-8b6f-d3cb061360da(gcs.layout)" />
+  <language namespace="fb87ad6d-e866-4cc0-a2d1-f2f4d0462b60(gcs.behavior)" />
   <devkit namespace="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
-  <import index="qk4j" modelUID="r:fbdf0175-1168-4524-a12c-ced1c3a691e3(gcs.layout.structure)" version="-1" implicit="yes" />
+  <import index="qk4j" modelUID="r:fbdf0175-1168-4524-a12c-ced1c3a691e3(gcs.layout.structure)" version="1" implicit="yes" />
   <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="17" implicit="yes" />
   <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="4" implicit="yes" />
   <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="3" implicit="yes" />
+  <import index="vtna" modelUID="r:672282b8-ae8e-4bae-8e68-f641c0c97181(gcs.behavior.structure)" version="1" implicit="yes" />
   <roots>
     <node type="qk4j.GameStructure" typeId="qk4j.1694060945597180898" id="1694060945597187291">
       <property name="name" nameId="tpck.1169194664001" value="simpleGame" />
@@ -22,8 +24,8 @@
     <node type="mj1l.TypeSizeConfiguration" typeId="mj1l.3335993110369795380" id="2790106256484064807" />
   </roots>
   <root id="1694060945597187291">
-    <node role="contents" roleId="qk4j.1694060945597180901" type="qk4j.ModuleImport" typeId="qk4j.2790106256484055601" id="2790106256484064805">
-      <link role="module" roleId="qk4j.2790106256484055603" targetNodeId="2790106256484064806" resolveInfo="HelperStuff" />
+    <node role="contents" roleId="qk4j.1694060945597180901" type="vtna.ModuleImport" typeId="vtna.2790106256484084887" id="2790106256484064805">
+      <link role="module" roleId="vtna.2790106256484084889" targetNodeId="2790106256484064806" resolveInfo="HelperStuff" />
     </node>
     <node role="contents" roleId="qk4j.1694060945597180901" type="qk4j.EmptyGSC" typeId="qk4j.2790106256484048721" id="2790106256484064804" />
     <node role="contents" roleId="qk4j.1694060945597180901" type="qk4j.Room" typeId="qk4j.1694060945597180899" id="1694060945597187292">
@@ -39,45 +41,22 @@
     <node role="contents" roleId="qk4j.1694060945597180901" type="qk4j.EmptyGSC" typeId="qk4j.2790106256484048721" id="2790106256484055598" />
     <node role="contents" roleId="qk4j.1694060945597180901" type="qk4j.Item" typeId="qk4j.2790106256483794285" id="2790106256483985349">
       <property name="name" nameId="tpck.1169194664001" value="Gun" />
-      <node role="items" roleId="qk4j.2790106256483804722" type="qk4j.Action" typeId="qk4j.2790106256483804706" id="2790106256484000490">
+      <node role="items" roleId="qk4j.2790106256483804722" type="qk4j.Action" typeId="qk4j.2790106256483804706" id="2790106256484135181">
         <property name="name" nameId="tpck.1169194664001" value="shoot" />
-        <node role="reactOnActionCode" roleId="qk4j.2790106256483992960" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="2790106256484000491">
-          <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.IfStatement" typeId="c4fa.6275792049641600983" id="2790106256484048711">
-            <node role="thenPart" roleId="c4fa.6275792049641600985" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="2790106256484048712">
-              <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="2790106256484048708">
-                <node role="expr" roleId="c4fa.7254843406768833939" type="qk4j.RoomExpr" typeId="qk4j.2790106256484040582" id="2790106256484048709" />
-              </node>
-              <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="2790106256484040573">
-                <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.AssignmentExpr" typeId="mj1l.22102029902365709" id="2790106256484067124">
-                  <node role="right" roleId="mj1l.8860443239512128065" type="x27k.FunctionCall" typeId="x27k.5950410542643524492" id="2790106256484067127">
-                    <link role="function" roleId="x27k.5950410542643524493" targetNodeId="2790106256484067103" resolveInfo="add" />
-                    <node role="actuals" roleId="x27k.5950410542643524495" type="qk4j.PropertyRefExpr" typeId="qk4j.2790106256484000495" id="2790106256484067128">
-                      <link role="property" roleId="qk4j.2790106256484000496" targetNodeId="2790106256483992913" resolveInfo="numberOfShots" />
-                    </node>
-                    <node role="actuals" roleId="x27k.5950410542643524495" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2790106256484067130">
-                      <property name="value" nameId="mj1l.8860443239512128104" value="-1" />
-                    </node>
-                  </node>
-                  <node role="left" roleId="mj1l.8860443239512128064" type="qk4j.PropertyRefExpr" typeId="qk4j.2790106256484000495" id="2790106256484067121">
-                    <link role="property" roleId="qk4j.2790106256484000496" targetNodeId="2790106256483992913" resolveInfo="numberOfShots" />
-                  </node>
+        <node role="behavior" roleId="qk4j.2790106256484074606" type="vtna.ItemBehaviourC" typeId="vtna.2790106256484105453" id="2790106256484135468">
+          <node role="body" roleId="vtna.2790106256484107451" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="2790106256484135469">
+            <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="2790106256484135703">
+              <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.AssignmentExpr" typeId="mj1l.22102029902365709" id="2790106256484135707">
+                <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2790106256484135710">
+                  <property name="value" nameId="mj1l.8860443239512128104" value="0" />
                 </node>
-              </node>
-            </node>
-            <node role="condition" roleId="c4fa.6275792049641600984" type="mj1l.GreaterExpression" typeId="mj1l.8860443239512147445" id="2790106256484048717">
-              <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2790106256484048720">
-                <property name="value" nameId="mj1l.8860443239512128104" value="0" />
-              </node>
-              <node role="left" roleId="mj1l.8860443239512128064" type="qk4j.PropertyRefExpr" typeId="qk4j.2790106256484000495" id="2790106256484048714">
-                <link role="property" roleId="qk4j.2790106256484000496" targetNodeId="2790106256483992913" resolveInfo="numberOfShots" />
+                <node role="left" roleId="mj1l.8860443239512128064" type="vtna.PropertyRefExpr" typeId="vtna.2790106256484094545" id="2790106256484135704">
+                  <link role="property" roleId="vtna.2790106256484094546" targetNodeId="2790106256483992913" resolveInfo="numberOfShots" />
+                </node>
               </node>
             </node>
           </node>
         </node>
-      </node>
-      <node role="items" roleId="qk4j.2790106256483804722" type="qk4j.Event" typeId="qk4j.2790106256483804704" id="2790106256484040580">
-        <property name="name" nameId="tpck.1169194664001" value="shot" />
-        <node role="onFireCode" roleId="qk4j.2790106256483992918" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="2790106256484040581" />
       </node>
       <node role="items" roleId="qk4j.2790106256483804722" type="qk4j.Property" typeId="qk4j.2790106256483804708" id="2790106256483992913">
         <property name="name" nameId="tpck.1169194664001" value="numberOfShots" />
