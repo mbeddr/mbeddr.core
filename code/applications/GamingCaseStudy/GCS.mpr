@@ -6,6 +6,7 @@
   <component name="Encoding" useUTFGuessing="true" native2AsciiForPropertiesFiles="false" />
   <component name="MPSProject">
     <projectModules>
+      <modulePath path="${project}/languages/behavior/behavior.mpl" folder="" />
       <modulePath path="${project}/languages/gcs.layout/layout.mpl" />
       <modulePath path="${project}/solutions/gcs.sandbox/gcs.sandbox.msd" />
     </projectModules>
