@@ -66,5 +66,11 @@
     <move id="if52.2790106256484000504" to="2p3s.2790106256484094566" />
     <move id="if52.2790106256484000509" to="2p3s.2790106256484094572" />
   </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="qk4j" modelUID="r:fbdf0175-1168-4524-a12c-ced1c3a691e3(gcs.layout.structure)" version="1" />
+    </dependencies>
+    <rename id="qk4j.2790106256483804722" type="CHILD" from="items" to="characteristics" />
+  </StructureModification>
 </history>
 
