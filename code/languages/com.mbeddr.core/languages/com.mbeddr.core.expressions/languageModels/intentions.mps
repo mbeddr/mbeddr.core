@@ -33,6 +33,7 @@
     </node>
     <node type="tp3j.IntentionDeclaration" typeId="tp3j.1192794744107" id="5569318043967063210">
       <property name="name" nameId="tpck.1169194664001" value="populateWithDefault" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="typeSizeSpec" />
       <link role="forConcept" roleId="tp3j.2522969319638198290" targetNodeId="mj1l.3335993110369795380" resolveInfo="TypeSizeConfiguration" />
     </node>
     <node type="tp3j.SurroundWithIntentionDeclaration" typeId="tp3j.2522969319638198293" id="8729447926330528656">

@@ -90,6 +90,7 @@
       <link role="concept" roleId="1i04.1225194240799" targetNodeId="mj1l.5763383285156533447" resolveInfo="ParensExpression" />
     </node>
     <node type="1i04.ConceptBehavior" typeId="1i04.1225194240794" id="3335993110369805721">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="typeSizeSpec" />
       <link role="concept" roleId="1i04.1225194240799" targetNodeId="mj1l.3335993110369795380" resolveInfo="TypeSizeConfiguration" />
     </node>
     <node type="1i04.ConceptBehavior" typeId="1i04.1225194240794" id="3335993110370259618">
