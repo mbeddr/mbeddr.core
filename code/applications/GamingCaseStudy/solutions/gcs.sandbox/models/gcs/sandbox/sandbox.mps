@@ -59,6 +59,9 @@
     <node role="contents" roleId="qk4j.1694060945597180901" type="qk4j.EmptyGSC" typeId="qk4j.2790106256484048721" id="2790106256484055598" />
     <node role="contents" roleId="qk4j.1694060945597180901" type="qk4j.Item" typeId="qk4j.2790106256483794285" id="9181329841236207388">
       <property name="name" nameId="tpck.1169194664001" value="Monster" />
+      <node role="characteristics" roleId="qk4j.2790106256483804722" type="qk4j.Action" typeId="qk4j.2790106256483804706" id="7554903109719433375">
+        <property name="name" nameId="tpck.1169194664001" value="die" />
+      </node>
     </node>
     <node role="contents" roleId="qk4j.1694060945597180901" type="qk4j.EmptyGSC" typeId="qk4j.2790106256484048721" id="9181329841236207387" />
     <node role="contents" roleId="qk4j.1694060945597180901" type="qk4j.Item" typeId="qk4j.2790106256483794285" id="2790106256483985349">
@@ -79,6 +82,16 @@
               <node role="expr" roleId="c4fa.7254843406768833939" type="x27k.FunctionCall" typeId="x27k.5950410542643524492" id="9181329841236186403">
                 <link role="function" roleId="x27k.5950410542643524493" targetNodeId="9181329841236125693" resolveInfo="shootGun" />
                 <node role="actuals" roleId="x27k.5950410542643524495" type="vtna.ThisItemExpr" typeId="vtna.9181329841236125699" id="9181329841236186404" />
+              </node>
+            </node>
+            <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="7554903109719433366">
+              <node role="expr" roleId="c4fa.7254843406768833939" type="vtna.CharAccessExpr" typeId="vtna.9181329841236133154" id="7554903109719433372">
+                <link role="char" roleId="vtna.9181329841236133155" targetNodeId="7554903109719433375" resolveInfo="die" />
+                <node role="expression" roleId="mj1l.7254843406768839760" type="vtna.RoomItemsExpr" typeId="vtna.2790106256484094543" id="7554903109719433367">
+                  <node role="item" roleId="vtna.7554903109719430266" type="vtna.ItemType" typeId="vtna.9181329841236112015" id="7554903109719433369">
+                    <link role="item" roleId="vtna.9181329841236112016" targetNodeId="9181329841236207388" resolveInfo="Monster" />
+                  </node>
+                </node>
               </node>
             </node>
           </node>

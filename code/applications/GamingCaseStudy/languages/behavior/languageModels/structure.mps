@@ -18,7 +18,7 @@
     </node>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="2790106256484094543">
       <property name="virtualPackage" nameId="tpck.1193676396447" value="items" />
-      <property name="name" nameId="tpck.1169194664001" value="RoomExpr" />
+      <property name="name" nameId="tpck.1169194664001" value="RoomItemsExpr" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="mj1l.8860443239512128050" resolveInfo="Expression" />
     </node>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="2790106256484105453">
@@ -55,8 +55,14 @@
   </root>
   <root id="2790106256484094543">
     <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="2790106256484094544">
-      <property name="value" nameId="tpce.1105725733873" value="room" />
+      <property name="value" nameId="tpce.1105725733873" value="roomitems" />
       <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473891462" resolveInfo="alias" />
+    </node>
+    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="7554903109719430266">
+      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
+      <property name="role" nameId="tpce.1071599776563" value="item" />
+      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="9181329841236112015" resolveInfo="ItemType" />
     </node>
   </root>
   <root id="2790106256484105453">
