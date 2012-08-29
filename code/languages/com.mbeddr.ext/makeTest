@@ -112,6 +112,13 @@ cd statemachine_components
 make test
 PROC_RET=$(($?+$PROC_RET))
 
+echo -------------------------------------
+echo Comp-Statemachines with Static Wiring
+cd ../
+cd staticWiringSMInComps
+make test
+PROC_RET=$(($?+$PROC_RET))
+
 
 cd ../../../../
 cd tests/test.ex.ext.comp_mocking/source_gen/test/ex/ext/comp_mocking/m1
