@@ -66,5 +66,19 @@
     <move id="if52.2790106256484000504" to="2p3s.2790106256484094566" />
     <move id="if52.2790106256484000509" to="2p3s.2790106256484094572" />
   </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="qk4j" modelUID="r:fbdf0175-1168-4524-a12c-ced1c3a691e3(gcs.layout.structure)" version="2" />
+      <model index="p2fr" modelUID="r:612fb3ec-81ec-44af-90c8-e8c1dd98bf15(gcs.behavior.editor)" version="1" />
+      <model index="vtna" modelUID="r:672282b8-ae8e-4bae-8e68-f641c0c97181(gcs.behavior.structure)" version="1" />
+      <model index="jll4" modelUID="r:3b6ad7c4-742c-4895-9760-5f6cbfe34035(gcs.layout.editor)" version="1" />
+    </dependencies>
+    <move id="vtna.9181329841236112015" to="qk4j.9051107737456989805" />
+    <move id="vtna.9181329841236112016" to="qk4j.9051107737456989806" />
+    <move id="p2fr.9181329841236112020" to="jll4.9051107737456989809" />
+    <move id="p2fr.9181329841236112019" to="jll4.9051107737456989808" />
+    <move id="p2fr.9181329841236112017" to="jll4.9051107737456989807" />
+    <move id="p2fr.9181329841236112022" to="jll4.9051107737456989810" />
+  </StructureModification>
 </history>
 

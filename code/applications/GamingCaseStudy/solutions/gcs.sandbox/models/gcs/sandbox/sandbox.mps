@@ -5,11 +5,11 @@
   <language namespace="fb87ad6d-e866-4cc0-a2d1-f2f4d0462b60(gcs.behavior)" />
   <devkit namespace="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
-  <import index="qk4j" modelUID="r:fbdf0175-1168-4524-a12c-ced1c3a691e3(gcs.layout.structure)" version="2" implicit="yes" />
+  <import index="qk4j" modelUID="r:fbdf0175-1168-4524-a12c-ced1c3a691e3(gcs.layout.structure)" version="3" implicit="yes" />
   <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="17" implicit="yes" />
   <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="4" implicit="yes" />
   <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="3" implicit="yes" />
-  <import index="vtna" modelUID="r:672282b8-ae8e-4bae-8e68-f641c0c97181(gcs.behavior.structure)" version="1" implicit="yes" />
+  <import index="vtna" modelUID="r:672282b8-ae8e-4bae-8e68-f641c0c97181(gcs.behavior.structure)" version="2" implicit="yes" />
   <roots>
     <node type="qk4j.GameStructure" typeId="qk4j.1694060945597180898" id="1694060945597187291">
       <property name="name" nameId="tpck.1169194664001" value="simpleGame" />
@@ -66,8 +66,8 @@
               <node role="expr" roleId="c4fa.7254843406768833939" type="vtna.CharAccessExpr" typeId="vtna.9181329841236133154" id="7554903109719433372">
                 <link role="char" roleId="vtna.9181329841236133155" targetNodeId="7554903109719433375" resolveInfo="die" />
                 <node role="expression" roleId="mj1l.7254843406768839760" type="vtna.RoomItemsExpr" typeId="vtna.2790106256484094543" id="7554903109719433367">
-                  <node role="item" roleId="vtna.7554903109719430266" type="vtna.ItemType" typeId="vtna.9181329841236112015" id="7554903109719433369">
-                    <link role="item" roleId="vtna.9181329841236112016" targetNodeId="9181329841236207388" resolveInfo="Monster" />
+                  <node role="item" roleId="vtna.7554903109719430266" type="qk4j.ItemType" typeId="qk4j.9051107737456989805" id="7554903109719433369">
+                    <link role="item" roleId="qk4j.9051107737456989806" targetNodeId="9181329841236207388" resolveInfo="Monster" />
                   </node>
                 </node>
               </node>
@@ -377,8 +377,8 @@
       </node>
       <node role="arguments" roleId="x27k.5708867820623310661" type="x27k.Argument" typeId="x27k.7892328519581704407" id="9181329841236125697">
         <property name="name" nameId="tpck.1169194664001" value="g" />
-        <node role="type" roleId="mj1l.318113533128716676" type="vtna.ItemType" typeId="vtna.9181329841236112015" id="9181329841236125698">
-          <link role="item" roleId="vtna.9181329841236112016" targetNodeId="2790106256483985349" resolveInfo="Gun" />
+        <node role="type" roleId="mj1l.318113533128716676" type="qk4j.ItemType" typeId="qk4j.9051107737456989805" id="9181329841236125698">
+          <link role="item" roleId="qk4j.9051107737456989806" targetNodeId="2790106256483985349" resolveInfo="Gun" />
         </node>
       </node>
     </node>

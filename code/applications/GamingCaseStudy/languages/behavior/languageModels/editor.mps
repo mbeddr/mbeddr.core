@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model modelUID="r:612fb3ec-81ec-44af-90c8-e8c1dd98bf15(gcs.behavior.editor)" version="1">
+<model modelUID="r:612fb3ec-81ec-44af-90c8-e8c1dd98bf15(gcs.behavior.editor)" version="2">
   <persistence version="7" />
   <language namespace="18bc6592-03a6-4e29-a83a-7ff23bde13ba(jetbrains.mps.lang.editor)" />
   <devkit namespace="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
-  <import index="vtna" modelUID="r:672282b8-ae8e-4bae-8e68-f641c0c97181(gcs.behavior.structure)" version="1" />
+  <import index="vtna" modelUID="r:672282b8-ae8e-4bae-8e68-f641c0c97181(gcs.behavior.structure)" version="2" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="tpc2" modelUID="r:00000000-0000-4000-0000-011c8959029e(jetbrains.mps.lang.editor.structure)" version="32" implicit="yes" />
   <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="17" implicit="yes" />
@@ -18,9 +18,6 @@
     </node>
     <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="2790106256484107449">
       <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="vtna.2790106256484105453" resolveInfo="ItemBehaviourC" />
-    </node>
-    <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="9181329841236112017">
-      <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="vtna.9181329841236112015" resolveInfo="ItemType" />
     </node>
     <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="9181329841236125701">
       <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="vtna.9181329841236125699" resolveInfo="ThisItemExpr" />
@@ -72,17 +69,6 @@
   <root id="2790106256484107449">
     <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_RefNode" typeId="tpc2.1073389882823" id="2790106256484107452">
       <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="vtna.2790106256484107451" />
-    </node>
-  </root>
-  <root id="9181329841236112017">
-    <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_RefCell" typeId="tpc2.1088013125922" id="9181329841236112019">
-      <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="vtna.9181329841236112016" />
-      <node role="editorComponent" roleId="tpc2.1088186146602" type="tpc2.InlineEditorComponent" typeId="tpc2.1088185857835" id="9181329841236112020">
-        <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Property" typeId="tpc2.1073389658414" id="9181329841236112022">
-          <property name="readOnly" nameId="tpc2.1140017977771" value="true" />
-          <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="tpck.1169194664001" resolveInfo="name" />
-        </node>
-      </node>
     </node>
   </root>
   <root id="9181329841236125701">
