@@ -6,9 +6,9 @@
   <component name="Encoding" useUTFGuessing="true" native2AsciiForPropertiesFiles="false" />
   <component name="MPSProject">
     <projectModules>
-      <modulePath path="${project}/languages/behavior/behavior.mpl" folder="languages" />
+      <modulePath path="${project}/languages/gcs.behavior.c/behavior.c.mpl" folder="languages" />
       <modulePath path="${project}/languages/gcs.layout/layout.mpl" folder="languages" />
-      <modulePath path="${project}/solutions/gcs.sandbox/gcs.sandbox.msd" folder="exampleGames" />
+      <modulePath path="${project}/solutions/gcs.structureAndCCode/structureAndCCode.msd" folder="exampleGames" />
       <modulePath path="${project}/solutions/gcs.structureOnly/structureOnly.msd" folder="exampleGames" />
     </projectModules>
     <genConfs />
