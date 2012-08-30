@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<language namespace="gcs.layout" uuid="0cdeceaa-07b6-4d76-8b6f-d3cb061360da" doNotGenerateAdapters="true">
+<language namespace="gcs.structureAndLayout" uuid="0cdeceaa-07b6-4d76-8b6f-d3cb061360da" doNotGenerateAdapters="true">
   <models>
     <modelRoot path="${language_descriptor}/languageModels" />
   </models>
