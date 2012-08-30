@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="gcs.sandbox" uuid="d2b75fd9-02f9-40c2-9514-3c1ad21ab6ef" compileInMPS="true">
+<solution name="gcs.structureAndCCode" uuid="d2b75fd9-02f9-40c2-9514-3c1ad21ab6ef" compileInMPS="true">
   <models>
     <modelRoot path="${solution_descriptor}/models" />
   </models>

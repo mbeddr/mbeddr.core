@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model modelUID="r:99e72aaa-9fb1-4334-abad-97454fbcc6e6(gcs.sandbox.sandbox)">
+<model modelUID="r:99e72aaa-9fb1-4334-abad-97454fbcc6e6(main)">
   <persistence version="7" />
   <language namespace="0cdeceaa-07b6-4d76-8b6f-d3cb061360da(gcs.layout)" />
   <language namespace="fb87ad6d-e866-4cc0-a2d1-f2f4d0462b60(gcs.behavior)" />
@@ -12,18 +12,22 @@
   <import index="vtna" modelUID="r:672282b8-ae8e-4bae-8e68-f641c0c97181(gcs.behavior.c.structure)" version="3" implicit="yes" />
   <roots>
     <node type="qk4j.GameStructure" typeId="qk4j.1694060945597180898" id="1694060945597187291">
-      <property name="name" nameId="tpck.1169194664001" value="simpleGame" />
+      <property name="name" nameId="tpck.1169194664001" value="CGameStructure" />
     </node>
     <node type="qk4j.RoomLayout" typeId="qk4j.1694060945597187295" id="1694060945597428207">
-      <property name="name" nameId="tpck.1169194664001" value="L1" />
-      <link role="structure" roleId="qk4j.1694060945597187308" targetNodeId="1694060945597187291" resolveInfo="simpleGame" />
+      <property name="name" nameId="tpck.1169194664001" value="CGameLayout" />
+      <link role="structure" roleId="qk4j.1694060945597187308" targetNodeId="1694060945597187291" resolveInfo="CGameStructure" />
     </node>
     <node type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="2790106256484064806">
       <property name="name" nameId="tpck.1169194664001" value="HelperStuff" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="cstuff" />
     </node>
-    <node type="mj1l.TypeSizeConfiguration" typeId="mj1l.3335993110369795380" id="2790106256484064807" />
+    <node type="mj1l.TypeSizeConfiguration" typeId="mj1l.3335993110369795380" id="2790106256484064807">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="cstuff" />
+    </node>
     <node type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="9181329841236125687">
       <property name="name" nameId="tpck.1169194664001" value="SpecificHelperStuff" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="cstuff" />
     </node>
   </roots>
   <root id="1694060945597187291">
