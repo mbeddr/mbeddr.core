@@ -9,11 +9,9 @@
   <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="17" implicit="yes" />
   <roots>
     <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="2790106256484084891">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="structure" />
       <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="vtna.2790106256484084887" resolveInfo="ModuleImport" />
     </node>
     <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="2790106256484094551">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="items" />
       <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="vtna.2790106256484094543" resolveInfo="RoomItemsExpr" />
     </node>
     <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="2790106256484107449">

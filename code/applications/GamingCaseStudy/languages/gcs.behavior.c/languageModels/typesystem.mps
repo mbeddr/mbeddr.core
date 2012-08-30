@@ -20,7 +20,6 @@
     </node>
     <node type="tpd4.InferenceRule" typeId="tpd4.1174643105530" id="7554903109719398656">
       <property name="name" nameId="tpck.1169194664001" value="typeof_RoomItemsExpr" />
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="items" />
     </node>
     <node type="tpd4.InferenceRule" typeId="tpd4.1174643105530" id="9051107737456948763">
       <property name="name" nameId="tpck.1169194664001" value="typeof_CurrentRoomExpr" />

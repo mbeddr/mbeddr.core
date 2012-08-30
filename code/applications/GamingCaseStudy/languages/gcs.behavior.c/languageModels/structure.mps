@@ -12,12 +12,10 @@
   <import index="tpce" modelUID="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" version="0" implicit="yes" />
   <roots>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="2790106256484084887">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="structure" />
       <property name="name" nameId="tpck.1169194664001" value="ModuleImport" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
     </node>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="2790106256484094543">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="items" />
       <property name="name" nameId="tpck.1169194664001" value="RoomItemsExpr" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="mj1l.8860443239512128050" resolveInfo="Expression" />
     </node>

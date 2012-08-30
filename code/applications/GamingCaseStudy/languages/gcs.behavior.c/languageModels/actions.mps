@@ -23,7 +23,7 @@
       <property name="name" nameId="tpck.1169194664001" value="wrapExpressionIntoExprValue" />
     </node>
     <node type="tpdg.NodeSubstituteActions" typeId="tpdg.1112056943463" id="9051107737457034078">
-      <property name="name" nameId="tpck.1169194664001" value="wrapITypeIntoType" />
+      <property name="name" nameId="tpck.1169194664001" value="wrapIGCSTypeIntoType" />
     </node>
   </roots>
   <root id="2790106256484135470">
