@@ -31,7 +31,7 @@
         <node role="condition" roleId="tpee.1068580123160" type="tpee.DotExpression" typeId="tpee.1197027756228" id="1694060945597449523">
           <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="1694060945597449496">
             <node role="operand" roleId="tpee.1197027771414" type="tpd4.ApplicableNodeReference" typeId="tpd4.1174650418652" id="1694060945597449475">
-              <link role="applicableNode" roleId="tpd4.1174650432090" targetNodeId="1694060945597449471" resolveInfo="ri" />
+              <link role="applicableNode" roleId="tpd4.1174650432090" targetNodeId="1694060945597449471" resolveInfo="room" />
             </node>
             <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_ConceptMethodCall" typeId="tp25.1179409122411" id="1694060945597461202">
               <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="hiey.1694060945597461072" resolveInfo="neighborRooms" />
@@ -45,18 +45,15 @@
               <property name="value" nameId="tpee.1070475926801" value="room is not reachable - no neighbors" />
             </node>
             <node role="nodeToReport" roleId="tpd4.1227096802790" type="tpd4.ApplicableNodeReference" typeId="tpd4.1174650418652" id="1694060945597450209">
-              <link role="applicableNode" roleId="tpd4.1174650432090" targetNodeId="1694060945597449471" resolveInfo="ri" />
-            </node>
-            <node role="messageTarget" roleId="tpd4.1227096836496" type="tpd4.ReferenceMessageTarget" typeId="tpd4.1227096620180" id="1694060945597450212">
-              <link role="linkDeclaration" roleId="tpd4.1227096645744" targetNodeId="qk4j.1694060945597393749" />
+              <link role="applicableNode" roleId="tpd4.1174650432090" targetNodeId="1694060945597449471" resolveInfo="room" />
             </node>
           </node>
         </node>
       </node>
     </node>
     <node role="applicableNode" roleId="tpd4.1174648101952" type="tpd4.ConceptReference" typeId="tpd4.1174642788531" id="1694060945597449471">
-      <property name="name" nameId="tpck.1169194664001" value="ri" />
-      <link role="concept" roleId="tpd4.1174642800329" targetNodeId="qk4j.1694060945597393748" resolveInfo="RoomInstance" />
+      <property name="name" nameId="tpck.1169194664001" value="room" />
+      <link role="concept" roleId="tpd4.1174642800329" targetNodeId="qk4j.1694060945597180899" resolveInfo="Room" />
     </node>
   </root>
   <root id="9181329841236206441">
@@ -180,13 +177,8 @@
         <node role="condition" roleId="tpee.1068580123160" type="tpee.NotEqualsExpression" typeId="tpee.1073239437375" id="9181329841236209836">
           <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.NullLiteral" typeId="tpee.1070534058343" id="9181329841236209839" />
           <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.DotExpression" typeId="tpee.1197027756228" id="9181329841236209808">
-            <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="9181329841236209780">
-              <node role="operand" roleId="tpee.1197027771414" type="tpd4.ApplicableNodeReference" typeId="tpd4.1174650418652" id="9181329841236209759">
-                <link role="applicableNode" roleId="tpd4.1174650432090" targetNodeId="9181329841236209755" resolveInfo="ri" />
-              </node>
-              <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="9181329841236209786">
-                <link role="link" roleId="tp25.1138056516764" targetNodeId="qk4j.1694060945597393749" />
-              </node>
+            <node role="operand" roleId="tpee.1197027771414" type="tpd4.ApplicableNodeReference" typeId="tpd4.1174650418652" id="9181329841236209759">
+              <link role="applicableNode" roleId="tpd4.1174650432090" targetNodeId="9181329841236209755" resolveInfo="room" />
             </node>
             <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="9181329841236209814">
               <link role="link" roleId="tp25.1138056516764" targetNodeId="qk4j.1694060945597180905" />
@@ -202,7 +194,7 @@
               </node>
               <node role="initializer" roleId="tpee.1068431790190" type="tpee.DotExpression" typeId="tpee.1197027756228" id="9181329841236209873">
                 <node role="operand" roleId="tpee.1197027771414" type="tpd4.ApplicableNodeReference" typeId="tpd4.1174650418652" id="9181329841236209874">
-                  <link role="applicableNode" roleId="tpd4.1174650432090" targetNodeId="9181329841236209755" resolveInfo="ri" />
+                  <link role="applicableNode" roleId="tpd4.1174650432090" targetNodeId="9181329841236209755" resolveInfo="room" />
                 </node>
                 <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_ConceptMethodCall" typeId="tp25.1179409122411" id="9181329841236209875">
                   <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="hiey.9181329841236209148" resolveInfo="westNeighbor" />
@@ -227,7 +219,7 @@
                   <property name="value" nameId="tpee.1070475926801" value="west door: cannot have door running into a block" />
                 </node>
                 <node role="nodeToReport" roleId="tpd4.1227096802790" type="tpd4.ApplicableNodeReference" typeId="tpd4.1174650418652" id="9181329841236209914">
-                  <link role="applicableNode" roleId="tpd4.1174650432090" targetNodeId="9181329841236209755" resolveInfo="ri" />
+                  <link role="applicableNode" roleId="tpd4.1174650432090" targetNodeId="9181329841236209755" resolveInfo="room" />
                 </node>
               </node>
             </node>
@@ -237,15 +229,10 @@
               <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.EqualsExpression" typeId="tpee.1068580123152" id="9181329841236210068">
                 <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.NullLiteral" typeId="tpee.1070534058343" id="9181329841236210071" />
                 <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.DotExpression" typeId="tpee.1197027756228" id="9181329841236210019">
-                  <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="9181329841236209991">
-                    <node role="operand" roleId="tpee.1197027771414" type="tp25.SNodeTypeCastExpression" typeId="tp25.1140137987495" id="9181329841236209969">
-                      <link role="concept" roleId="tp25.1140138128738" targetNodeId="qk4j.1694060945597393748" resolveInfo="RoomInstance" />
-                      <node role="leftExpression" roleId="tp25.1140138123956" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="9181329841236209948">
-                        <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="9181329841236209871" resolveInfo="westNeighbor" />
-                      </node>
-                    </node>
-                    <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="9181329841236209997">
-                      <link role="link" roleId="tp25.1138056516764" targetNodeId="qk4j.1694060945597393749" />
+                  <node role="operand" roleId="tpee.1197027771414" type="tp25.SNodeTypeCastExpression" typeId="tp25.1140137987495" id="9181329841236209969">
+                    <link role="concept" roleId="tp25.1140138128738" targetNodeId="qk4j.1694060945597180899" resolveInfo="Room" />
+                    <node role="leftExpression" roleId="tp25.1140138123956" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="9181329841236209948">
+                      <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="9181329841236209871" resolveInfo="westNeighbor" />
                     </node>
                   </node>
                   <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="9181329841236210025">
@@ -258,8 +245,8 @@
                   <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="9181329841236209871" resolveInfo="westNeighbor" />
                 </node>
                 <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_IsInstanceOfOperation" typeId="tp25.1139621453865" id="9181329841236209918">
-                  <node role="conceptArgument" roleId="tp25.1177027386292" type="tp25.RefConcept_Reference" typeId="tp25.1177026924588" id="9181329841236209924">
-                    <link role="conceptDeclaration" roleId="tp25.1177026940964" targetNodeId="qk4j.1694060945597393748" resolveInfo="RoomInstance" />
+                  <node role="conceptArgument" roleId="tp25.1177027386292" type="tp25.RefConcept_Reference" typeId="tp25.1177026924588" id="9051107737456855163">
+                    <link role="conceptDeclaration" roleId="tp25.1177026940964" targetNodeId="qk4j.1694060945597180899" resolveInfo="Room" />
                   </node>
                 </node>
               </node>
@@ -270,7 +257,7 @@
                   <property name="value" nameId="tpee.1070475926801" value="west door: root on the west has no east door" />
                 </node>
                 <node role="nodeToReport" roleId="tpd4.1227096802790" type="tpd4.ApplicableNodeReference" typeId="tpd4.1174650418652" id="9181329841236209923">
-                  <link role="applicableNode" roleId="tpd4.1174650432090" targetNodeId="9181329841236209755" resolveInfo="ri" />
+                  <link role="applicableNode" roleId="tpd4.1174650432090" targetNodeId="9181329841236209755" resolveInfo="room" />
                 </node>
               </node>
             </node>
@@ -282,13 +269,8 @@
         <node role="condition" roleId="tpee.1068580123160" type="tpee.NotEqualsExpression" typeId="tpee.1073239437375" id="9181329841236220160">
           <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.NullLiteral" typeId="tpee.1070534058343" id="9181329841236220161" />
           <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.DotExpression" typeId="tpee.1197027756228" id="9181329841236220162">
-            <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="9181329841236220163">
-              <node role="operand" roleId="tpee.1197027771414" type="tpd4.ApplicableNodeReference" typeId="tpd4.1174650418652" id="9181329841236220164">
-                <link role="applicableNode" roleId="tpd4.1174650432090" targetNodeId="9181329841236209755" resolveInfo="ri" />
-              </node>
-              <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="9181329841236220165">
-                <link role="link" roleId="tp25.1138056516764" targetNodeId="qk4j.1694060945597393749" />
-              </node>
+            <node role="operand" roleId="tpee.1197027771414" type="tpd4.ApplicableNodeReference" typeId="tpd4.1174650418652" id="9181329841236220164">
+              <link role="applicableNode" roleId="tpd4.1174650432090" targetNodeId="9181329841236209755" resolveInfo="room" />
             </node>
             <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="9181329841236220202">
               <link role="link" roleId="tp25.1138056516764" targetNodeId="qk4j.1694060945597180906" />
@@ -304,7 +286,7 @@
               </node>
               <node role="initializer" roleId="tpee.1068431790190" type="tpee.DotExpression" typeId="tpee.1197027756228" id="9181329841236220171">
                 <node role="operand" roleId="tpee.1197027771414" type="tpd4.ApplicableNodeReference" typeId="tpd4.1174650418652" id="9181329841236220172">
-                  <link role="applicableNode" roleId="tpd4.1174650432090" targetNodeId="9181329841236209755" resolveInfo="ri" />
+                  <link role="applicableNode" roleId="tpd4.1174650432090" targetNodeId="9181329841236209755" resolveInfo="room" />
                 </node>
                 <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_ConceptMethodCall" typeId="tp25.1179409122411" id="9181329841236220204">
                   <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="hiey.9181329841236209243" resolveInfo="eastNeighbor" />
@@ -329,7 +311,7 @@
                   <property name="value" nameId="tpee.1070475926801" value="east door: cannot have door running into a block" />
                 </node>
                 <node role="nodeToReport" roleId="tpd4.1227096802790" type="tpd4.ApplicableNodeReference" typeId="tpd4.1174650418652" id="9181329841236220182">
-                  <link role="applicableNode" roleId="tpd4.1174650432090" targetNodeId="9181329841236209755" resolveInfo="ri" />
+                  <link role="applicableNode" roleId="tpd4.1174650432090" targetNodeId="9181329841236209755" resolveInfo="room" />
                 </node>
               </node>
             </node>
@@ -339,15 +321,10 @@
               <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.EqualsExpression" typeId="tpee.1068580123152" id="9181329841236220185">
                 <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.NullLiteral" typeId="tpee.1070534058343" id="9181329841236220186" />
                 <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.DotExpression" typeId="tpee.1197027756228" id="9181329841236220187">
-                  <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="9181329841236220188">
-                    <node role="operand" roleId="tpee.1197027771414" type="tp25.SNodeTypeCastExpression" typeId="tp25.1140137987495" id="9181329841236220189">
-                      <link role="concept" roleId="tp25.1140138128738" targetNodeId="qk4j.1694060945597393748" resolveInfo="RoomInstance" />
-                      <node role="leftExpression" roleId="tp25.1140138123956" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="9181329841236220190">
-                        <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="9181329841236220169" resolveInfo="eastNeighbor" />
-                      </node>
-                    </node>
-                    <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="9181329841236220191">
-                      <link role="link" roleId="tp25.1138056516764" targetNodeId="qk4j.1694060945597393749" />
+                  <node role="operand" roleId="tpee.1197027771414" type="tp25.SNodeTypeCastExpression" typeId="tp25.1140137987495" id="9181329841236220189">
+                    <link role="concept" roleId="tp25.1140138128738" targetNodeId="qk4j.1694060945597180899" resolveInfo="Room" />
+                    <node role="leftExpression" roleId="tp25.1140138123956" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="9181329841236220190">
+                      <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="9181329841236220169" resolveInfo="eastNeighbor" />
                     </node>
                   </node>
                   <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="9181329841236220206">
@@ -360,8 +337,8 @@
                   <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="9181329841236220169" resolveInfo="eastNeighbor" />
                 </node>
                 <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_IsInstanceOfOperation" typeId="tp25.1139621453865" id="9181329841236220195">
-                  <node role="conceptArgument" roleId="tp25.1177027386292" type="tp25.RefConcept_Reference" typeId="tp25.1177026924588" id="9181329841236220196">
-                    <link role="conceptDeclaration" roleId="tp25.1177026940964" targetNodeId="qk4j.1694060945597393748" resolveInfo="RoomInstance" />
+                  <node role="conceptArgument" roleId="tp25.1177027386292" type="tp25.RefConcept_Reference" typeId="tp25.1177026924588" id="9051107737456855164">
+                    <link role="conceptDeclaration" roleId="tp25.1177026940964" targetNodeId="qk4j.1694060945597180899" resolveInfo="Room" />
                   </node>
                 </node>
               </node>
@@ -372,7 +349,7 @@
                   <property name="value" nameId="tpee.1070475926801" value="east door: root on the east has no west door" />
                 </node>
                 <node role="nodeToReport" roleId="tpd4.1227096802790" type="tpd4.ApplicableNodeReference" typeId="tpd4.1174650418652" id="9181329841236220200">
-                  <link role="applicableNode" roleId="tpd4.1174650432090" targetNodeId="9181329841236209755" resolveInfo="ri" />
+                  <link role="applicableNode" roleId="tpd4.1174650432090" targetNodeId="9181329841236209755" resolveInfo="room" />
                 </node>
               </node>
             </node>
@@ -384,13 +361,8 @@
         <node role="condition" roleId="tpee.1068580123160" type="tpee.NotEqualsExpression" typeId="tpee.1073239437375" id="9181329841236220502">
           <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.NullLiteral" typeId="tpee.1070534058343" id="9181329841236220503" />
           <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.DotExpression" typeId="tpee.1197027756228" id="9181329841236220504">
-            <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="9181329841236220505">
-              <node role="operand" roleId="tpee.1197027771414" type="tpd4.ApplicableNodeReference" typeId="tpd4.1174650418652" id="9181329841236220506">
-                <link role="applicableNode" roleId="tpd4.1174650432090" targetNodeId="9181329841236209755" resolveInfo="ri" />
-              </node>
-              <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="9181329841236220507">
-                <link role="link" roleId="tp25.1138056516764" targetNodeId="qk4j.1694060945597393749" />
-              </node>
+            <node role="operand" roleId="tpee.1197027771414" type="tpd4.ApplicableNodeReference" typeId="tpd4.1174650418652" id="9181329841236220506">
+              <link role="applicableNode" roleId="tpd4.1174650432090" targetNodeId="9181329841236209755" resolveInfo="room" />
             </node>
             <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="9181329841236220545">
               <link role="link" roleId="tp25.1138056516764" targetNodeId="qk4j.1694060945597180903" />
@@ -406,7 +378,7 @@
               </node>
               <node role="initializer" roleId="tpee.1068431790190" type="tpee.DotExpression" typeId="tpee.1197027756228" id="9181329841236220513">
                 <node role="operand" roleId="tpee.1197027771414" type="tpd4.ApplicableNodeReference" typeId="tpd4.1174650418652" id="9181329841236220514">
-                  <link role="applicableNode" roleId="tpd4.1174650432090" targetNodeId="9181329841236209755" resolveInfo="ri" />
+                  <link role="applicableNode" roleId="tpd4.1174650432090" targetNodeId="9181329841236209755" resolveInfo="room" />
                 </node>
                 <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_ConceptMethodCall" typeId="tp25.1179409122411" id="9181329841236220547">
                   <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="hiey.9181329841236209381" resolveInfo="northNeighbor" />
@@ -431,7 +403,7 @@
                   <property name="value" nameId="tpee.1070475926801" value="north door: cannot have door running into a block" />
                 </node>
                 <node role="nodeToReport" roleId="tpd4.1227096802790" type="tpd4.ApplicableNodeReference" typeId="tpd4.1174650418652" id="9181329841236220524">
-                  <link role="applicableNode" roleId="tpd4.1174650432090" targetNodeId="9181329841236209755" resolveInfo="ri" />
+                  <link role="applicableNode" roleId="tpd4.1174650432090" targetNodeId="9181329841236209755" resolveInfo="room" />
                 </node>
               </node>
             </node>
@@ -441,15 +413,10 @@
               <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.EqualsExpression" typeId="tpee.1068580123152" id="9181329841236220527">
                 <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.NullLiteral" typeId="tpee.1070534058343" id="9181329841236220528" />
                 <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.DotExpression" typeId="tpee.1197027756228" id="9181329841236220529">
-                  <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="9181329841236220530">
-                    <node role="operand" roleId="tpee.1197027771414" type="tp25.SNodeTypeCastExpression" typeId="tp25.1140137987495" id="9181329841236220531">
-                      <link role="concept" roleId="tp25.1140138128738" targetNodeId="qk4j.1694060945597393748" resolveInfo="RoomInstance" />
-                      <node role="leftExpression" roleId="tp25.1140138123956" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="9181329841236220532">
-                        <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="9181329841236220511" resolveInfo="northNeighbor" />
-                      </node>
-                    </node>
-                    <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="9181329841236220533">
-                      <link role="link" roleId="tp25.1138056516764" targetNodeId="qk4j.1694060945597393749" />
+                  <node role="operand" roleId="tpee.1197027771414" type="tp25.SNodeTypeCastExpression" typeId="tp25.1140137987495" id="9181329841236220531">
+                    <link role="concept" roleId="tp25.1140138128738" targetNodeId="qk4j.1694060945597180899" resolveInfo="Room" />
+                    <node role="leftExpression" roleId="tp25.1140138123956" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="9181329841236220532">
+                      <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="9181329841236220511" resolveInfo="northNeighbor" />
                     </node>
                   </node>
                   <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="9181329841236220549">
@@ -462,8 +429,8 @@
                   <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="9181329841236220511" resolveInfo="northNeighbor" />
                 </node>
                 <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_IsInstanceOfOperation" typeId="tp25.1139621453865" id="9181329841236220537">
-                  <node role="conceptArgument" roleId="tp25.1177027386292" type="tp25.RefConcept_Reference" typeId="tp25.1177026924588" id="9181329841236220538">
-                    <link role="conceptDeclaration" roleId="tp25.1177026940964" targetNodeId="qk4j.1694060945597393748" resolveInfo="RoomInstance" />
+                  <node role="conceptArgument" roleId="tp25.1177027386292" type="tp25.RefConcept_Reference" typeId="tp25.1177026924588" id="9051107737456855165">
+                    <link role="conceptDeclaration" roleId="tp25.1177026940964" targetNodeId="qk4j.1694060945597180899" resolveInfo="Room" />
                   </node>
                 </node>
               </node>
@@ -474,7 +441,7 @@
                   <property name="value" nameId="tpee.1070475926801" value="north door: root on the north has no south door" />
                 </node>
                 <node role="nodeToReport" roleId="tpd4.1227096802790" type="tpd4.ApplicableNodeReference" typeId="tpd4.1174650418652" id="9181329841236220542">
-                  <link role="applicableNode" roleId="tpd4.1174650432090" targetNodeId="9181329841236209755" resolveInfo="ri" />
+                  <link role="applicableNode" roleId="tpd4.1174650432090" targetNodeId="9181329841236209755" resolveInfo="room" />
                 </node>
               </node>
             </node>
@@ -486,13 +453,8 @@
         <node role="condition" roleId="tpee.1068580123160" type="tpee.NotEqualsExpression" typeId="tpee.1073239437375" id="9181329841236220551">
           <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.NullLiteral" typeId="tpee.1070534058343" id="9181329841236220552" />
           <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.DotExpression" typeId="tpee.1197027756228" id="9181329841236220553">
-            <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="9181329841236220554">
-              <node role="operand" roleId="tpee.1197027771414" type="tpd4.ApplicableNodeReference" typeId="tpd4.1174650418652" id="9181329841236220555">
-                <link role="applicableNode" roleId="tpd4.1174650432090" targetNodeId="9181329841236209755" resolveInfo="ri" />
-              </node>
-              <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="9181329841236220556">
-                <link role="link" roleId="tp25.1138056516764" targetNodeId="qk4j.1694060945597393749" />
-              </node>
+            <node role="operand" roleId="tpee.1197027771414" type="tpd4.ApplicableNodeReference" typeId="tpd4.1174650418652" id="9181329841236220555">
+              <link role="applicableNode" roleId="tpd4.1174650432090" targetNodeId="9181329841236209755" resolveInfo="room" />
             </node>
             <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="9181329841236220594">
               <link role="link" roleId="tp25.1138056516764" targetNodeId="qk4j.1694060945597180904" />
@@ -508,7 +470,7 @@
               </node>
               <node role="initializer" roleId="tpee.1068431790190" type="tpee.DotExpression" typeId="tpee.1197027756228" id="9181329841236220562">
                 <node role="operand" roleId="tpee.1197027771414" type="tpd4.ApplicableNodeReference" typeId="tpd4.1174650418652" id="9181329841236220563">
-                  <link role="applicableNode" roleId="tpd4.1174650432090" targetNodeId="9181329841236209755" resolveInfo="ri" />
+                  <link role="applicableNode" roleId="tpd4.1174650432090" targetNodeId="9181329841236209755" resolveInfo="room" />
                 </node>
                 <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_ConceptMethodCall" typeId="tp25.1179409122411" id="9181329841236220596">
                   <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="hiey.9181329841236209565" resolveInfo="southNeighbor" />
@@ -533,7 +495,7 @@
                   <property name="value" nameId="tpee.1070475926801" value="south door: cannot have door running into a block" />
                 </node>
                 <node role="nodeToReport" roleId="tpd4.1227096802790" type="tpd4.ApplicableNodeReference" typeId="tpd4.1174650418652" id="9181329841236220573">
-                  <link role="applicableNode" roleId="tpd4.1174650432090" targetNodeId="9181329841236209755" resolveInfo="ri" />
+                  <link role="applicableNode" roleId="tpd4.1174650432090" targetNodeId="9181329841236209755" resolveInfo="room" />
                 </node>
               </node>
             </node>
@@ -543,15 +505,10 @@
               <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.EqualsExpression" typeId="tpee.1068580123152" id="9181329841236220576">
                 <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.NullLiteral" typeId="tpee.1070534058343" id="9181329841236220577" />
                 <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.DotExpression" typeId="tpee.1197027756228" id="9181329841236220578">
-                  <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="9181329841236220579">
-                    <node role="operand" roleId="tpee.1197027771414" type="tp25.SNodeTypeCastExpression" typeId="tp25.1140137987495" id="9181329841236220580">
-                      <link role="concept" roleId="tp25.1140138128738" targetNodeId="qk4j.1694060945597393748" resolveInfo="RoomInstance" />
-                      <node role="leftExpression" roleId="tp25.1140138123956" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="9181329841236220581">
-                        <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="9181329841236220560" resolveInfo="southNeighbor" />
-                      </node>
-                    </node>
-                    <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="9181329841236220600">
-                      <link role="link" roleId="tp25.1138056516764" targetNodeId="qk4j.1694060945597393749" />
+                  <node role="operand" roleId="tpee.1197027771414" type="tp25.SNodeTypeCastExpression" typeId="tp25.1140137987495" id="9181329841236220580">
+                    <link role="concept" roleId="tp25.1140138128738" targetNodeId="qk4j.1694060945597180899" resolveInfo="Room" />
+                    <node role="leftExpression" roleId="tp25.1140138123956" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="9181329841236220581">
+                      <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="9181329841236220560" resolveInfo="southNeighbor" />
                     </node>
                   </node>
                   <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="9181329841236220602">
@@ -564,8 +521,8 @@
                   <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="9181329841236220560" resolveInfo="southNeighbor" />
                 </node>
                 <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_IsInstanceOfOperation" typeId="tp25.1139621453865" id="9181329841236220586">
-                  <node role="conceptArgument" roleId="tp25.1177027386292" type="tp25.RefConcept_Reference" typeId="tp25.1177026924588" id="9181329841236220587">
-                    <link role="conceptDeclaration" roleId="tp25.1177026940964" targetNodeId="qk4j.1694060945597393748" resolveInfo="RoomInstance" />
+                  <node role="conceptArgument" roleId="tp25.1177027386292" type="tp25.RefConcept_Reference" typeId="tp25.1177026924588" id="9051107737456855166">
+                    <link role="conceptDeclaration" roleId="tp25.1177026940964" targetNodeId="qk4j.1694060945597180899" resolveInfo="Room" />
                   </node>
                 </node>
               </node>
@@ -576,7 +533,7 @@
                   <property name="value" nameId="tpee.1070475926801" value="south door: root on the south has no north door" />
                 </node>
                 <node role="nodeToReport" roleId="tpd4.1227096802790" type="tpd4.ApplicableNodeReference" typeId="tpd4.1174650418652" id="9181329841236220591">
-                  <link role="applicableNode" roleId="tpd4.1174650432090" targetNodeId="9181329841236209755" resolveInfo="ri" />
+                  <link role="applicableNode" roleId="tpd4.1174650432090" targetNodeId="9181329841236209755" resolveInfo="room" />
                 </node>
               </node>
             </node>
@@ -585,8 +542,8 @@
       </node>
     </node>
     <node role="applicableNode" roleId="tpd4.1174648101952" type="tpd4.ConceptReference" typeId="tpd4.1174642788531" id="9181329841236209755">
-      <property name="name" nameId="tpck.1169194664001" value="ri" />
-      <link role="concept" roleId="tpd4.1174642800329" targetNodeId="qk4j.1694060945597393748" resolveInfo="RoomInstance" />
+      <property name="name" nameId="tpck.1169194664001" value="room" />
+      <link role="concept" roleId="tpd4.1174642800329" targetNodeId="qk4j.1694060945597180899" resolveInfo="Room" />
     </node>
   </root>
 </model>

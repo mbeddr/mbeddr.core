@@ -591,7 +591,7 @@
       <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="1694060945597461073" />
       <node role="returnType" roleId="tpee.1068580123133" type="tp2q.SequenceType" typeId="tp2q.1151689724996" id="1694060945597461076">
         <node role="elementType" roleId="tp2q.1151689745422" type="tp25.SNodeType" typeId="tp25.1138055754698" id="1694060945597461078">
-          <link role="concept" roleId="tp25.1138405853777" targetNodeId="qk4j.1694060945597393748" resolveInfo="RoomInstance" />
+          <link role="concept" roleId="tp25.1138405853777" targetNodeId="qk4j.1694060945597180899" resolveInfo="Room" />
         </node>
       </node>
       <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="1694060945597461075">
@@ -613,8 +613,8 @@
                           <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="1694060945597461138" resolveInfo="it" />
                         </node>
                         <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_IsInstanceOfOperation" typeId="tp25.1139621453865" id="1694060945597461168">
-                          <node role="conceptArgument" roleId="tp25.1177027386292" type="tp25.RefConcept_Reference" typeId="tp25.1177026924588" id="1694060945597461200">
-                            <link role="conceptDeclaration" roleId="tp25.1177026940964" targetNodeId="qk4j.1694060945597393748" resolveInfo="RoomInstance" />
+                          <node role="conceptArgument" roleId="tp25.1177027386292" type="tp25.RefConcept_Reference" typeId="tp25.1177026924588" id="9051107737456855114">
+                            <link role="conceptDeclaration" roleId="tp25.1177026940964" targetNodeId="qk4j.1694060945597180899" resolveInfo="Room" />
                           </node>
                         </node>
                       </node>
@@ -629,7 +629,7 @@
             </node>
             <node role="operation" roleId="tpee.1197027833540" type="tp2q.OfTypeOperation" typeId="tp2q.4611582986551314327" id="1694060945597461197">
               <node role="requestedType" roleId="tp2q.4611582986551314344" type="tp25.SNodeType" typeId="tp25.1138055754698" id="1694060945597461199">
-                <link role="concept" roleId="tp25.1138405853777" targetNodeId="qk4j.1694060945597393748" resolveInfo="RoomInstance" />
+                <link role="concept" roleId="tp25.1138405853777" targetNodeId="qk4j.1694060945597180899" resolveInfo="Room" />
               </node>
             </node>
           </node>
