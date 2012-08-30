@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<language namespace="gcs.behavior" uuid="fb87ad6d-e866-4cc0-a2d1-f2f4d0462b60" doNotGenerateAdapters="true">
+<language namespace="gcs.behavior.c" uuid="fb87ad6d-e866-4cc0-a2d1-f2f4d0462b60" doNotGenerateAdapters="true">
   <models>
     <modelRoot path="${language_descriptor}/languageModels" />
   </models>
@@ -15,8 +15,8 @@
   </usedDevKits>
   <extendedLanguages>
     <extendedLanguage>0cdeceaa-07b6-4d76-8b6f-d3cb061360da(gcs.layout)</extendedLanguage>
-    <extendedLanguage>ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)</extendedLanguage>
     <extendedLanguage>61c69711-ed61-4850-81d9-7714ff227fb0(com.mbeddr.core.expressions)</extendedLanguage>
+    <extendedLanguage>ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)</extendedLanguage>
     <extendedLanguage>6d11763d-483d-4b2b-8efc-09336c1b0001(com.mbeddr.core.modules)</extendedLanguage>
   </extendedLanguages>
 </language>

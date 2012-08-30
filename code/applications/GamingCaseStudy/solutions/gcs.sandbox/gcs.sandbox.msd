@@ -5,7 +5,7 @@
   </models>
   <sourcePath />
   <usedLanguages>
-    <usedLanguage>fb87ad6d-e866-4cc0-a2d1-f2f4d0462b60(gcs.behavior)</usedLanguage>
+    <usedLanguage>fb87ad6d-e866-4cc0-a2d1-f2f4d0462b60(gcs.behavior.c)</usedLanguage>
     <usedLanguage>0cdeceaa-07b6-4d76-8b6f-d3cb061360da(gcs.layout)</usedLanguage>
   </usedLanguages>
   <usedDevKits>
