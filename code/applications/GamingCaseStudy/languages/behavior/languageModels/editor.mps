@@ -28,6 +28,9 @@
     <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="9181329841236133156">
       <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="vtna.9181329841236133154" resolveInfo="CharAccessExpr" />
     </node>
+    <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="9051107737456950194">
+      <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="vtna.9051107737456950192" resolveInfo="ExpressionValue" />
+    </node>
   </roots>
   <root id="2790106256484084891">
     <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="2790106256484084892">
@@ -111,6 +114,11 @@
           </node>
         </node>
       </node>
+    </node>
+  </root>
+  <root id="9051107737456950194">
+    <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_RefNode" typeId="tpc2.1073389882823" id="9051107737456950196">
+      <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="vtna.9051107737456950193" />
     </node>
   </root>
 </model>

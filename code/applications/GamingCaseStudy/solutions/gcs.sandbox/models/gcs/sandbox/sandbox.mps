@@ -83,6 +83,38 @@
         </node>
       </node>
     </node>
+    <node role="contents" roleId="qk4j.1694060945597180901" type="qk4j.Item" typeId="qk4j.2790106256483794285" id="9051107737456882692">
+      <property name="name" nameId="tpck.1169194664001" value="Transporter" />
+      <node role="characteristics" roleId="qk4j.2790106256483804722" type="qk4j.Action" typeId="qk4j.2790106256483804706" id="9051107737456882693">
+        <property name="name" nameId="tpck.1169194664001" value="transport" />
+        <node role="behavior" roleId="qk4j.2790106256484074606" type="vtna.ItemBehaviourC" typeId="vtna.2790106256484105453" id="9051107737456882698">
+          <node role="body" roleId="vtna.2790106256484107451" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="9051107737456882699">
+            <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="9051107737456950179">
+              <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.AssignmentExpr" typeId="mj1l.22102029902365709" id="9051107737456950184">
+                <node role="right" roleId="mj1l.8860443239512128065" type="vtna.CharAccessExpr" typeId="vtna.9181329841236133154" id="9051107737456950190">
+                  <link role="char" roleId="vtna.9181329841236133155" targetNodeId="9051107737456882695" resolveInfo="targetRoom" />
+                  <node role="expression" roleId="mj1l.7254843406768839760" type="vtna.ThisItemExpr" typeId="vtna.9181329841236125699" id="9051107737456950187" />
+                </node>
+                <node role="left" roleId="mj1l.8860443239512128064" type="vtna.CurrentRoomExpr" typeId="vtna.9051107737456948761" id="9051107737456950180" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node role="characteristics" roleId="qk4j.2790106256483804722" type="qk4j.Property" typeId="qk4j.2790106256483804708" id="9051107737456882695">
+        <property name="name" nameId="tpck.1169194664001" value="targetRoom" />
+        <property name="init" nameId="qk4j.9051107737456892694" value="true" />
+        <node role="type" roleId="qk4j.9051107737456855160" type="qk4j.RoomType" typeId="qk4j.9051107737456882700" id="9051107737456892693" />
+      </node>
+      <node role="characteristics" roleId="qk4j.2790106256483804722" type="qk4j.Property" typeId="qk4j.2790106256483804708" id="9051107737456953559">
+        <property name="name" nameId="tpck.1169194664001" value="speed" />
+        <property name="init" nameId="qk4j.9051107737456892694" value="true" />
+        <node role="type" roleId="qk4j.9051107737456855160" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="9051107737456953561">
+          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+        </node>
+      </node>
+    </node>
     <node role="contents" roleId="qk4j.1694060945597180901" type="qk4j.EmptyGSC" typeId="qk4j.2790106256484048721" id="9181329841236221823" />
   </root>
   <root id="1694060945597428207">
@@ -91,6 +123,35 @@
         <node role="eastDour" roleId="qk4j.1694060945597180906" type="qk4j.Door" typeId="qk4j.1694060945597180902" id="9051107737456878182" />
       </node>
       <node role="elements" roleId="qk4j.1694060945597423566" type="qk4j.Room" typeId="qk4j.1694060945597180899" id="9051107737456867215">
+        <property name="name" nameId="tpck.1169194664001" value="aRoom" />
+        <node role="items" roleId="qk4j.9181329841236194940" type="qk4j.ItemInstance" typeId="qk4j.9181329841236186414" id="9051107737456882686">
+          <property name="optionalName" nameId="qk4j.9181329841236186422" value="gun1" />
+          <link role="item" roleId="qk4j.9181329841236186415" targetNodeId="2790106256483985349" resolveInfo="Gun" />
+        </node>
+        <node role="items" roleId="qk4j.9181329841236194940" type="qk4j.ItemInstance" typeId="qk4j.9181329841236186414" id="9051107737456882690">
+          <property name="optionalName" nameId="qk4j.9181329841236186422" value="gun2" />
+          <link role="item" roleId="qk4j.9181329841236186415" targetNodeId="2790106256483985349" resolveInfo="Gun" />
+        </node>
+        <node role="items" roleId="qk4j.9181329841236194940" type="qk4j.ItemInstance" typeId="qk4j.9181329841236186414" id="9051107737456882688">
+          <link role="item" roleId="qk4j.9181329841236186415" targetNodeId="9181329841236207388" resolveInfo="Monster" />
+        </node>
+        <node role="items" roleId="qk4j.9181329841236194940" type="qk4j.ItemInstance" typeId="qk4j.9181329841236186414" id="9051107737456911933">
+          <link role="item" roleId="qk4j.9181329841236186415" targetNodeId="9051107737456882692" resolveInfo="Transporter" />
+          <node role="inits" roleId="qk4j.9051107737456901663" type="qk4j.PropertyInit" typeId="qk4j.9051107737456901638" id="9051107737456920026">
+            <link role="property" roleId="qk4j.9051107737456901639" targetNodeId="9051107737456882695" resolveInfo="targetRoom" />
+            <node role="value" roleId="qk4j.9051107737456901659" type="qk4j.RoomRefValue" typeId="qk4j.9051107737456929070" id="9051107737456943421">
+              <link role="room" roleId="qk4j.9051107737456929071" targetNodeId="9051107737456867215" resolveInfo="aRoom" />
+            </node>
+          </node>
+          <node role="inits" roleId="qk4j.9051107737456901663" type="qk4j.PropertyInit" typeId="qk4j.9051107737456901638" id="9051107737456962521">
+            <link role="property" roleId="qk4j.9051107737456901639" targetNodeId="9051107737456953559" resolveInfo="speed" />
+            <node role="value" roleId="qk4j.9051107737456901659" type="vtna.ExpressionValue" typeId="vtna.9051107737456950192" id="9051107737456979226">
+              <node role="expr" roleId="vtna.9051107737456950193" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="9051107737456979227">
+                <property name="value" nameId="mj1l.8860443239512128104" value="17" />
+              </node>
+            </node>
+          </node>
+        </node>
         <node role="northDoor" roleId="qk4j.1694060945597180903" type="qk4j.Door" typeId="qk4j.1694060945597180902" id="9051107737456870742" />
         <node role="westDoor" roleId="qk4j.1694060945597180905" type="qk4j.Door" typeId="qk4j.1694060945597180902" id="9051107737456871937" />
       </node>

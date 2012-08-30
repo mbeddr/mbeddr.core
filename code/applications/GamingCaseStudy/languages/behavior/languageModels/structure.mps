@@ -37,6 +37,14 @@
       <property name="name" nameId="tpck.1169194664001" value="CharAccessExpr" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="mj1l.3005510381523579442" resolveInfo="UnaryExpression" />
     </node>
+    <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="9051107737456948761">
+      <property name="name" nameId="tpck.1169194664001" value="CurrentRoomExpr" />
+      <link role="extends" roleId="tpce.1071489389519" targetNodeId="mj1l.8860443239512128050" resolveInfo="Expression" />
+    </node>
+    <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="9051107737456950192">
+      <property name="name" nameId="tpck.1169194664001" value="ExpressionValue" />
+      <link role="extends" roleId="tpce.1071489389519" targetNodeId="qk4j.9051107737456901641" resolveInfo="Value" />
+    </node>
   </roots>
   <root id="2790106256484084887">
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="2790106256484084888">
@@ -100,6 +108,23 @@
       <property name="role" nameId="tpce.1071599776563" value="char" />
       <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
       <link role="target" roleId="tpce.1071599976176" targetNodeId="qk4j.2790106256483804710" resolveInfo="ItemCharacteristic" />
+    </node>
+  </root>
+  <root id="9051107737456948761">
+    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="9051107737456948762">
+      <property name="value" nameId="tpce.1105725733873" value="currentroom" />
+      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473891462" resolveInfo="alias" />
+    </node>
+  </root>
+  <root id="9051107737456950192">
+    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="9051107737456950193">
+      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
+      <property name="role" nameId="tpce.1071599776563" value="expr" />
+      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="mj1l.8860443239512128050" resolveInfo="Expression" />
+    </node>
+    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.BooleanConceptProperty" typeId="tpce.1105725574259" id="9051107737456962786">
+      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473994950" resolveInfo="dontSubstituteByDefault" />
     </node>
   </root>
 </model>

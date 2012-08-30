@@ -22,6 +22,12 @@
       <property name="name" nameId="tpck.1169194664001" value="typeof_RoomItemsExpr" />
       <property name="virtualPackage" nameId="tpck.1193676396447" value="items" />
     </node>
+    <node type="tpd4.InferenceRule" typeId="tpd4.1174643105530" id="9051107737456948763">
+      <property name="name" nameId="tpck.1169194664001" value="typeof_CurrentRoomExpr" />
+    </node>
+    <node type="tpd4.InferenceRule" typeId="tpd4.1174643105530" id="9051107737456950197">
+      <property name="name" nameId="tpck.1169194664001" value="typeof_ExpressionValue" />
+    </node>
   </roots>
   <root id="9181329841236125704">
     <node role="body" roleId="tpd4.1195213635060" type="tpee.StatementList" typeId="tpee.1068580123136" id="9181329841236125705">
@@ -215,6 +221,61 @@
     <node role="applicableNode" roleId="tpd4.1174648101952" type="tpd4.ConceptReference" typeId="tpd4.1174642788531" id="7554903109719398658">
       <property name="name" nameId="tpck.1169194664001" value="rie" />
       <link role="concept" roleId="tpd4.1174642800329" targetNodeId="vtna.2790106256484094543" resolveInfo="RoomItemsExpr" />
+    </node>
+  </root>
+  <root id="9051107737456948763">
+    <node role="body" roleId="tpd4.1195213635060" type="tpee.StatementList" typeId="tpee.1068580123136" id="9051107737456948764">
+      <node role="statement" roleId="tpee.1068581517665" type="tpd4.CreateEquationStatement" typeId="tpd4.1174658326157" id="9051107737456948790">
+        <node role="rightExpression" roleId="tpd4.1174660783414" type="tpd4.NormalTypeClause" typeId="tpd4.1185788614172" id="9051107737456948794">
+          <node role="normalType" roleId="tpd4.1185788644032" type="tpee.GenericNewExpression" typeId="tpee.1145552977093" id="9051107737456948795">
+            <node role="creator" roleId="tpee.1145553007750" type="tp25.SNodeCreator" typeId="tp25.1180636770613" id="9051107737456948817">
+              <node role="createdType" roleId="tp25.1180636770616" type="tp25.SNodeType" typeId="tp25.1138055754698" id="9051107737456948818">
+                <link role="concept" roleId="tp25.1138405853777" targetNodeId="qk4j.9051107737456882700" resolveInfo="RoomType" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node role="leftExpression" roleId="tpd4.1174660783413" type="tpd4.NormalTypeClause" typeId="tpd4.1185788614172" id="9051107737456948793">
+          <node role="normalType" roleId="tpd4.1185788644032" type="tpd4.TypeOfExpression" typeId="tpd4.1174657487114" id="9051107737456948767">
+            <node role="term" roleId="tpd4.1174657509053" type="tpd4.ApplicableNodeReference" typeId="tpd4.1174650418652" id="9051107737456948769">
+              <link role="applicableNode" roleId="tpd4.1174650432090" targetNodeId="9051107737456948765" resolveInfo="cr" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node role="applicableNode" roleId="tpd4.1174648101952" type="tpd4.ConceptReference" typeId="tpd4.1174642788531" id="9051107737456948765">
+      <property name="name" nameId="tpck.1169194664001" value="cr" />
+      <link role="concept" roleId="tpd4.1174642800329" targetNodeId="vtna.9051107737456948761" resolveInfo="CurrentRoomExpr" />
+    </node>
+  </root>
+  <root id="9051107737456950197">
+    <node role="body" roleId="tpd4.1195213635060" type="tpee.StatementList" typeId="tpee.1068580123136" id="9051107737456950198">
+      <node role="statement" roleId="tpee.1068581517665" type="tpd4.CreateEquationStatement" typeId="tpd4.1174658326157" id="9051107737456950224">
+        <node role="rightExpression" roleId="tpd4.1174660783414" type="tpd4.NormalTypeClause" typeId="tpd4.1185788614172" id="9051107737456950228">
+          <node role="normalType" roleId="tpd4.1185788644032" type="tpd4.TypeOfExpression" typeId="tpd4.1174657487114" id="9051107737456950229">
+            <node role="term" roleId="tpd4.1174657509053" type="tpee.DotExpression" typeId="tpee.1197027756228" id="9051107737456950292">
+              <node role="operand" roleId="tpee.1197027771414" type="tpd4.ApplicableNodeReference" typeId="tpd4.1174650418652" id="9051107737456950271">
+                <link role="applicableNode" roleId="tpd4.1174650432090" targetNodeId="9051107737456950199" resolveInfo="ev" />
+              </node>
+              <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="9051107737456950298">
+                <link role="link" roleId="tp25.1138056516764" targetNodeId="vtna.9051107737456950193" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node role="leftExpression" roleId="tpd4.1174660783413" type="tpd4.NormalTypeClause" typeId="tpd4.1185788614172" id="9051107737456950227">
+          <node role="normalType" roleId="tpd4.1185788644032" type="tpd4.TypeOfExpression" typeId="tpd4.1174657487114" id="9051107737456950201">
+            <node role="term" roleId="tpd4.1174657509053" type="tpd4.ApplicableNodeReference" typeId="tpd4.1174650418652" id="9051107737456950203">
+              <link role="applicableNode" roleId="tpd4.1174650432090" targetNodeId="9051107737456950199" resolveInfo="ev" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node role="applicableNode" roleId="tpd4.1174648101952" type="tpd4.ConceptReference" typeId="tpd4.1174642788531" id="9051107737456950199">
+      <property name="name" nameId="tpck.1169194664001" value="ev" />
+      <link role="concept" roleId="tpd4.1174642800329" targetNodeId="vtna.9051107737456950192" resolveInfo="ExpressionValue" />
     </node>
   </root>
 </model>
