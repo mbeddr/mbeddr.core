@@ -28,6 +28,10 @@
     <node type="tpd4.InferenceRule" typeId="tpd4.1174643105530" id="9051107737456950197">
       <property name="name" nameId="tpck.1169194664001" value="typeof_ExpressionValue" />
     </node>
+    <node type="tpd4.InferenceRule" typeId="tpd4.1174643105530" id="9051107737457101940">
+      <property name="name" nameId="tpck.1169194664001" value="typeof_IGCSTypeWrapper" />
+      <property name="overrides" nameId="tpd4.1195213689297" value="true" />
+    </node>
   </roots>
   <root id="9181329841236125704">
     <node role="body" roleId="tpd4.1195213635060" type="tpee.StatementList" typeId="tpee.1068580123136" id="9181329841236125705">
@@ -276,6 +280,35 @@
     <node role="applicableNode" roleId="tpd4.1174648101952" type="tpd4.ConceptReference" typeId="tpd4.1174642788531" id="9051107737456950199">
       <property name="name" nameId="tpck.1169194664001" value="ev" />
       <link role="concept" roleId="tpd4.1174642800329" targetNodeId="vtna.9051107737456950192" resolveInfo="ExpressionValue" />
+    </node>
+  </root>
+  <root id="9051107737457101940">
+    <node role="body" roleId="tpd4.1195213635060" type="tpee.StatementList" typeId="tpee.1068580123136" id="9051107737457101941">
+      <node role="statement" roleId="tpee.1068581517665" type="tpd4.CreateEquationStatement" typeId="tpd4.1174658326157" id="9051107737457101967">
+        <node role="rightExpression" roleId="tpd4.1174660783414" type="tpd4.NormalTypeClause" typeId="tpd4.1185788614172" id="9051107737457101971">
+          <node role="normalType" roleId="tpd4.1185788644032" type="tpd4.TypeOfExpression" typeId="tpd4.1174657487114" id="9051107737457101972">
+            <node role="term" roleId="tpd4.1174657509053" type="tpee.DotExpression" typeId="tpee.1197027756228" id="9051107737457101995">
+              <node role="operand" roleId="tpee.1197027771414" type="tpd4.ApplicableNodeReference" typeId="tpd4.1174650418652" id="9051107737457101974">
+                <link role="applicableNode" roleId="tpd4.1174650432090" targetNodeId="9051107737457101942" resolveInfo="tw" />
+              </node>
+              <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="9051107737457102001">
+                <link role="link" roleId="tp25.1138056516764" targetNodeId="vtna.9051107737457034127" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node role="leftExpression" roleId="tpd4.1174660783413" type="tpd4.NormalTypeClause" typeId="tpd4.1185788614172" id="9051107737457101970">
+          <node role="normalType" roleId="tpd4.1185788644032" type="tpd4.TypeOfExpression" typeId="tpd4.1174657487114" id="9051107737457101944">
+            <node role="term" roleId="tpd4.1174657509053" type="tpd4.ApplicableNodeReference" typeId="tpd4.1174650418652" id="9051107737457101946">
+              <link role="applicableNode" roleId="tpd4.1174650432090" targetNodeId="9051107737457101942" resolveInfo="tw" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node role="applicableNode" roleId="tpd4.1174648101952" type="tpd4.ConceptReference" typeId="tpd4.1174642788531" id="9051107737457101942">
+      <property name="name" nameId="tpck.1169194664001" value="tw" />
+      <link role="concept" roleId="tpd4.1174642800329" targetNodeId="vtna.9051107737457034126" resolveInfo="IGCSTypeWrapper" />
     </node>
   </root>
 </model>
