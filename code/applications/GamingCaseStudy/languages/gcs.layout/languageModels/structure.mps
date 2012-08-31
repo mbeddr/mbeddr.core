@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model modelUID="r:fbdf0175-1168-4524-a12c-ced1c3a691e3(gcs.structureAndLayout.structure)" version="5">
+<model modelUID="r:fbdf0175-1168-4524-a12c-ced1c3a691e3(gcs.structureAndLayout.structure)" version="6">
   <persistence version="7" />
   <language namespace="c72da2b9-7cce-4447-8389-f407dc1158b7(jetbrains.mps.lang.structure)" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="tpce" modelUID="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" version="0" implicit="yes" />
-  <import index="qk4j" modelUID="r:fbdf0175-1168-4524-a12c-ced1c3a691e3(gcs.structureAndLayout.structure)" version="5" implicit="yes" />
+  <import index="qk4j" modelUID="r:fbdf0175-1168-4524-a12c-ced1c3a691e3(gcs.structureAndLayout.structure)" version="6" implicit="yes" />
   <roots>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="1694060945597180898">
       <property name="name" nameId="tpck.1169194664001" value="GameStructure" />
@@ -103,6 +103,7 @@
     </node>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="9051107737456989805">
       <property name="name" nameId="tpck.1169194664001" value="ItemType" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="items" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
     </node>
     <node type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="9051107737457043753">
@@ -115,10 +116,12 @@
     </node>
     <node type="tpce.EnumerationDataTypeDeclaration" typeId="tpce.1082978164219" id="2782839353310589508">
       <property name="name" nameId="tpck.1169194664001" value="Direction" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="layout" />
       <link role="memberDataType" roleId="tpce.1083171729157" targetNodeId="tpck.1082983041843" resolveInfo="string" />
     </node>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="2782839353310615544">
-      <property name="name" nameId="tpck.1169194664001" value="DoorOfExpr" />
+      <property name="name" nameId="tpck.1169194664001" value="DoorOfValue" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="layout" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="9051107737456901641" resolveInfo="Value" />
     </node>
   </roots>

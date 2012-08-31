@@ -3,7 +3,7 @@
   <persistence version="7" />
   <language namespace="18bc6592-03a6-4e29-a83a-7ff23bde13ba(jetbrains.mps.lang.editor)" />
   <devkit namespace="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
-  <import index="qk4j" modelUID="r:fbdf0175-1168-4524-a12c-ced1c3a691e3(gcs.structureAndLayout.structure)" version="5" />
+  <import index="qk4j" modelUID="r:fbdf0175-1168-4524-a12c-ced1c3a691e3(gcs.structureAndLayout.structure)" version="6" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="tpc2" modelUID="r:00000000-0000-4000-0000-011c8959029e(jetbrains.mps.lang.editor.structure)" version="32" implicit="yes" />
   <import index="tp25" modelUID="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" version="16" implicit="yes" />
@@ -73,6 +73,7 @@
       <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="qk4j.9051107737456929070" resolveInfo="RoomRefValue" />
     </node>
     <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="9051107737456989807">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="items" />
       <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="qk4j.9051107737456989805" resolveInfo="ItemType" />
     </node>
     <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="2782839353310412427">
@@ -80,7 +81,8 @@
       <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="qk4j.2782839353310402008" resolveInfo="DoorType" />
     </node>
     <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="2782839353310615548">
-      <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="qk4j.2782839353310615544" resolveInfo="DoorOfExpr" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="layout" />
+      <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="qk4j.2782839353310615544" resolveInfo="DoorOfValue" />
     </node>
   </roots>
   <root id="1694060945597180907">

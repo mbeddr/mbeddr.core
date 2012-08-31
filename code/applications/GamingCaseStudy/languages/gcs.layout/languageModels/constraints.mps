@@ -3,7 +3,7 @@
   <persistence version="7" />
   <language namespace="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1(jetbrains.mps.lang.constraints)" />
   <devkit namespace="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
-  <import index="qk4j" modelUID="r:fbdf0175-1168-4524-a12c-ced1c3a691e3(gcs.structureAndLayout.structure)" version="5" />
+  <import index="qk4j" modelUID="r:fbdf0175-1168-4524-a12c-ced1c3a691e3(gcs.structureAndLayout.structure)" version="6" />
   <import index="hiey" modelUID="r:89a76686-d90d-482e-8dcb-46c2f087e910(gcs.structureAndLayout.behavior)" version="0" />
   <import index="tp25" modelUID="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" version="16" implicit="yes" />
   <import index="tpee" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="4" implicit="yes" />
@@ -33,10 +33,12 @@
       <link role="concept" roleId="tp1t.1213093996982" targetNodeId="qk4j.9051107737456929070" resolveInfo="RoomRefValue" />
     </node>
     <node type="tp1t.ConceptConstraints" typeId="tp1t.1213093968558" id="2782839353310402006">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="items" />
       <link role="concept" roleId="tp1t.1213093996982" targetNodeId="qk4j.9051107737456989805" resolveInfo="ItemType" />
     </node>
     <node type="tp1t.ConceptConstraints" typeId="tp1t.1213093968558" id="2782839353310745589">
-      <link role="concept" roleId="tp1t.1213093996982" targetNodeId="qk4j.2782839353310615544" resolveInfo="DoorOfExpr" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="layout" />
+      <link role="concept" roleId="tp1t.1213093996982" targetNodeId="qk4j.2782839353310615544" resolveInfo="DoorOfValue" />
     </node>
   </roots>
   <root id="2790106256484134493">

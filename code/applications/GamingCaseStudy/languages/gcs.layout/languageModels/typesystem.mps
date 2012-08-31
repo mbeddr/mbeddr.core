@@ -3,7 +3,7 @@
   <persistence version="7" />
   <language namespace="7a5dda62-9140-4668-ab76-d5ed1746f2b2(jetbrains.mps.lang.typesystem)" />
   <devkit namespace="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
-  <import index="qk4j" modelUID="r:fbdf0175-1168-4524-a12c-ced1c3a691e3(gcs.structureAndLayout.structure)" version="5" />
+  <import index="qk4j" modelUID="r:fbdf0175-1168-4524-a12c-ced1c3a691e3(gcs.structureAndLayout.structure)" version="6" />
   <import index="hiey" modelUID="r:89a76686-d90d-482e-8dcb-46c2f087e910(gcs.structureAndLayout.behavior)" version="0" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="tp25" modelUID="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" version="16" implicit="yes" />
@@ -41,6 +41,7 @@
     </node>
     <node type="tpd4.InferenceRule" typeId="tpd4.1174643105530" id="2782839353310615557">
       <property name="name" nameId="tpck.1169194664001" value="typeof_DoorOfExpr" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="layout" />
     </node>
     <node type="tpd4.NonTypesystemRule" typeId="tpd4.1195214364922" id="2782839353310658035">
       <property name="name" nameId="tpck.1169194664001" value="check_DoorOfExpr" />
@@ -803,7 +804,7 @@
     </node>
     <node role="applicableNode" roleId="tpd4.1174648101952" type="tpd4.ConceptReference" typeId="tpd4.1174642788531" id="2782839353310615567">
       <property name="name" nameId="tpck.1169194664001" value="doe" />
-      <link role="concept" roleId="tpd4.1174642800329" targetNodeId="qk4j.2782839353310615544" resolveInfo="DoorOfExpr" />
+      <link role="concept" roleId="tpd4.1174642800329" targetNodeId="qk4j.2782839353310615544" resolveInfo="DoorOfValue" />
     </node>
   </root>
   <root id="2782839353310658035">
@@ -991,7 +992,7 @@
     </node>
     <node role="applicableNode" roleId="tpd4.1174648101952" type="tpd4.ConceptReference" typeId="tpd4.1174642788531" id="2782839353310658037">
       <property name="name" nameId="tpck.1169194664001" value="doe" />
-      <link role="concept" roleId="tpd4.1174642800329" targetNodeId="qk4j.2782839353310615544" resolveInfo="DoorOfExpr" />
+      <link role="concept" roleId="tpd4.1174642800329" targetNodeId="qk4j.2782839353310615544" resolveInfo="DoorOfValue" />
     </node>
   </root>
   <root id="2782839353310717191">

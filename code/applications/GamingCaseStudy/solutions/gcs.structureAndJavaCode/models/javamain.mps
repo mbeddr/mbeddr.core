@@ -5,7 +5,7 @@
   <language namespace="0ffa79e2-4db6-483d-83f2-a1bee045a4ae(gcs.behavior.java)" />
   <language namespace="f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
-  <import index="qk4j" modelUID="r:fbdf0175-1168-4524-a12c-ced1c3a691e3(gcs.structureAndLayout.structure)" version="5" implicit="yes" />
+  <import index="qk4j" modelUID="r:fbdf0175-1168-4524-a12c-ced1c3a691e3(gcs.structureAndLayout.structure)" version="6" implicit="yes" />
   <import index="tpee" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="4" implicit="yes" />
   <import index="o2lk" modelUID="r:4b2464a9-1b16-4c64-ba8a-e0e91611090c(gcs.behavior.java.structure)" version="0" implicit="yes" />
   <roots>
@@ -99,7 +99,7 @@
           <link role="item" roleId="qk4j.9181329841236186415" targetNodeId="2782839353310745569" resolveInfo="Lock" />
           <node role="inits" roleId="qk4j.9051107737456901663" type="qk4j.PropertyInit" typeId="qk4j.9051107737456901638" id="2782839353310745586">
             <link role="property" roleId="qk4j.9051107737456901639" targetNodeId="2782839353310745570" resolveInfo="locksDoor" />
-            <node role="value" roleId="qk4j.9051107737456901659" type="qk4j.DoorOfExpr" typeId="qk4j.2782839353310615544" id="2782839353310745588">
+            <node role="value" roleId="qk4j.9051107737456901659" type="qk4j.DoorOfValue" typeId="qk4j.2782839353310615544" id="2782839353310745588">
               <property name="where" nameId="qk4j.2782839353310615547" value="south" />
               <link role="room" roleId="qk4j.2782839353310615545" targetNodeId="2782839353310715572" resolveInfo="r1" />
             </node>
