@@ -10,7 +10,7 @@
   <import index="o2lk" modelUID="r:4b2464a9-1b16-4c64-ba8a-e0e91611090c(gcs.behavior.java.structure)" version="0" implicit="yes" />
   <roots>
     <node type="qk4j.RoomLayout" typeId="qk4j.1694060945597187295" id="1694060945597428207">
-      <property name="name" nameId="tpck.1169194664001" value="SimpleGameLayout" />
+      <property name="name" nameId="tpck.1169194664001" value="JavaGameLayout" />
       <link role="structure" roleId="qk4j.1694060945597187308" targetNodeId="1694060945597187291" resolveInfo="JavaGameStructure" />
     </node>
     <node type="qk4j.GameStructure" typeId="qk4j.1694060945597180898" id="1694060945597187291">
