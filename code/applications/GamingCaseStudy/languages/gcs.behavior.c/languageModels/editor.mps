@@ -74,7 +74,7 @@
   </root>
   <root id="9181329841236125701">
     <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="9181329841236125703">
-      <property name="text" nameId="tpc2.1073389577007" value="this" />
+      <property name="text" nameId="tpc2.1073389577007" value="thisItem" />
     </node>
   </root>
   <root id="9181329841236133156">

@@ -14,6 +14,7 @@
   <roots>
     <node type="tpd4.InferenceRule" typeId="tpd4.1174643105530" id="9181329841236125704">
       <property name="name" nameId="tpck.1169194664001" value="typeof_ThisItemExpr" />
+      <property name="overrides" nameId="tpd4.1195213689297" value="true" />
     </node>
     <node type="tpd4.InferenceRule" typeId="tpd4.1174643105530" id="9181329841236182266">
       <property name="name" nameId="tpck.1169194664001" value="typeof_CharAccessExpr" />
@@ -50,6 +51,7 @@
                   <link role="conceptDeclaration" roleId="tp25.1177026940964" targetNodeId="qk4j.2790106256483794285" resolveInfo="Item" />
                 </node>
               </node>
+              <node role="parameter" roleId="tp25.1144104376918" type="tp25.OperationParm_Inclusion" typeId="tp25.1144100932627" id="2782839353310841097" />
             </node>
           </node>
         </node>

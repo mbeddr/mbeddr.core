@@ -10,6 +10,7 @@
   <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="4" implicit="yes" />
   <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="3" implicit="yes" />
   <import index="vtna" modelUID="r:672282b8-ae8e-4bae-8e68-f641c0c97181(gcs.behavior.c.structure)" version="3" implicit="yes" />
+  <import index="yq40" modelUID="r:152b3fc0-83a1-4bab-a8cd-565eb8483785(com.mbeddr.core.pointers.structure)" version="3" implicit="yes" />
   <roots>
     <node type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="2790106256484064806">
       <property name="name" nameId="tpck.1169194664001" value="HelperStuff" />
@@ -19,7 +20,7 @@
       <property name="virtualPackage" nameId="tpck.1193676396447" value="cstuff" />
     </node>
     <node type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="9181329841236125687">
-      <property name="name" nameId="tpck.1169194664001" value="SpecificHelperStuff" />
+      <property name="name" nameId="tpck.1169194664001" value="ForceFeedback" />
       <property name="virtualPackage" nameId="tpck.1193676396447" value="cstuff" />
     </node>
     <node type="qk4j.RoomLayout" typeId="qk4j.1694060945597187295" id="1694060945597428207">
@@ -35,36 +36,34 @@
       <property name="name" nameId="tpck.1169194664001" value="empty_1345927282116_1" />
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="2790106256484067103">
-      <property name="name" nameId="tpck.1169194664001" value="add" />
+      <property name="name" nameId="tpck.1169194664001" value="minusOne" />
       <property name="exported" nameId="x27k.1317894735999272944" value="true" />
       <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="2790106256484067105">
-        <node role="statements" roleId="c4fa.4185783222026475862" type="x27k.ReturnStatement" typeId="x27k.8967919205527146149" id="2790106256484067112">
-          <node role="expression" roleId="x27k.8967919205527146150" type="mj1l.PlusExpression" typeId="mj1l.5763383285156373013" id="2790106256484067116">
-            <node role="right" roleId="mj1l.8860443239512128065" type="x27k.ArgumentRef" typeId="x27k.2093108837558505658" id="2790106256484067119">
-              <link role="arg" roleId="x27k.2093108837558505659" targetNodeId="2790106256484067110" resolveInfo="y" />
-            </node>
-            <node role="left" roleId="mj1l.8860443239512128064" type="x27k.ArgumentRef" typeId="x27k.2093108837558505658" id="2790106256484067113">
-              <link role="arg" roleId="x27k.2093108837558505659" targetNodeId="2790106256484067107" resolveInfo="x" />
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="8712087438806612614">
+          <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.PostDecrementExpression" typeId="mj1l.3976803464656498416" id="8712087438806612635">
+            <node role="expression" roleId="mj1l.7254843406768839760" type="mj1l.ParensExpression" typeId="mj1l.5763383285156533447" id="8712087438806612628">
+              <node role="expression" roleId="mj1l.7254843406768839760" type="yq40.DerefExpr" typeId="yq40.279446265608463015" id="8712087438806612624">
+                <node role="expression" roleId="mj1l.7254843406768839760" type="x27k.ArgumentRef" typeId="x27k.2093108837558505658" id="8712087438806612626">
+                  <link role="arg" roleId="x27k.2093108837558505659" targetNodeId="2790106256484067107" resolveInfo="x" />
+                </node>
+              </node>
             </node>
           </node>
         </node>
       </node>
-      <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="2790106256484067102">
+      <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="8712087438806612637">
         <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
         <property name="const" nameId="mj1l.2941277002445651368" value="false" />
       </node>
       <node role="arguments" roleId="x27k.5708867820623310661" type="x27k.Argument" typeId="x27k.7892328519581704407" id="2790106256484067107">
         <property name="name" nameId="tpck.1169194664001" value="x" />
-        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="2790106256484067108">
+        <node role="type" roleId="mj1l.318113533128716676" type="yq40.PointerType" typeId="yq40.279446265608459824" id="8712087438806612609">
           <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
           <property name="const" nameId="mj1l.2941277002445651368" value="false" />
-        </node>
-      </node>
-      <node role="arguments" roleId="x27k.5708867820623310661" type="x27k.Argument" typeId="x27k.7892328519581704407" id="2790106256484067110">
-        <property name="name" nameId="tpck.1169194664001" value="y" />
-        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="2790106256484067111">
-          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
-          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+          <node role="baseType" roleId="yq40.279446265608459825" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="2790106256484067108">
+            <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+            <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+          </node>
         </node>
       </node>
     </node>
@@ -241,7 +240,6 @@
             </node>
           </node>
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="9181329841236186412" />
       </node>
       <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="9181329841236125692">
         <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
@@ -373,6 +371,13 @@
     </node>
   </root>
   <root id="1694060945597187291">
+    <node role="contents" roleId="qk4j.1694060945597180901" type="vtna.ModuleImport" typeId="vtna.2790106256484084887" id="8712087438806612608">
+      <link role="module" roleId="vtna.2790106256484084889" targetNodeId="2790106256484064806" resolveInfo="HelperStuff" />
+    </node>
+    <node role="contents" roleId="qk4j.1694060945597180901" type="vtna.ModuleImport" typeId="vtna.2790106256484084887" id="8712087438806612664">
+      <link role="module" roleId="vtna.2790106256484084889" targetNodeId="9181329841236125687" resolveInfo="ForceFeedback" />
+    </node>
+    <node role="contents" roleId="qk4j.1694060945597180901" type="qk4j.EmptyGSC" typeId="qk4j.2790106256484048721" id="8712087438806612661" />
     <node role="contents" roleId="qk4j.1694060945597180901" type="qk4j.Item" typeId="qk4j.2790106256483794285" id="9181329841236207388">
       <property name="name" nameId="tpck.1169194664001" value="Monster" />
       <node role="characteristics" roleId="qk4j.2790106256483804722" type="qk4j.Action" typeId="qk4j.2790106256483804706" id="7554903109719433375">
@@ -384,6 +389,34 @@
       <property name="name" nameId="tpck.1169194664001" value="Gun" />
       <node role="characteristics" roleId="qk4j.2790106256483804722" type="qk4j.Action" typeId="qk4j.2790106256483804706" id="2790106256484135181">
         <property name="name" nameId="tpck.1169194664001" value="shoot" />
+        <node role="behavior" roleId="qk4j.2790106256484074606" type="vtna.ItemBehaviourC" typeId="vtna.2790106256484105453" id="2782839353310841068">
+          <node role="body" roleId="vtna.2790106256484107451" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="2782839353310841069">
+            <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="8712087438806612638">
+              <node role="expr" roleId="c4fa.7254843406768833939" type="x27k.FunctionCall" typeId="x27k.5950410542643524492" id="8712087438806612639">
+                <link role="function" roleId="x27k.5950410542643524493" targetNodeId="2790106256484067103" resolveInfo="minusOne" />
+                <node role="actuals" roleId="x27k.5950410542643524495" type="yq40.ReferenceExpr" typeId="yq40.1595838349830846141" id="8712087438806612647">
+                  <node role="expression" roleId="mj1l.7254843406768839760" type="vtna.CharAccessExpr" typeId="vtna.9181329841236133154" id="8712087438806612653">
+                    <link role="char" roleId="vtna.9181329841236133155" targetNodeId="2782839353310841072" resolveInfo="shots" />
+                    <node role="expression" roleId="mj1l.7254843406768839760" type="vtna.ThisItemExpr" typeId="vtna.9181329841236125699" id="8712087438806612649" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="8712087438806612667">
+              <node role="expr" roleId="c4fa.7254843406768833939" type="x27k.FunctionCall" typeId="x27k.5950410542643524492" id="8712087438806612668">
+                <link role="function" roleId="x27k.5950410542643524493" targetNodeId="9181329841236125693" resolveInfo="shootGun" />
+                <node role="actuals" roleId="x27k.5950410542643524495" type="vtna.ThisItemExpr" typeId="vtna.9181329841236125699" id="8712087438806612671" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node role="characteristics" roleId="qk4j.2790106256483804722" type="qk4j.Property" typeId="qk4j.2790106256483804708" id="2782839353310841072">
+        <property name="name" nameId="tpck.1169194664001" value="shots" />
+        <node role="type" roleId="qk4j.9051107737456855160" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="2782839353310841074">
+          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+        </node>
       </node>
     </node>
     <node role="contents" roleId="qk4j.1694060945597180901" type="qk4j.EmptyGSC" typeId="qk4j.2790106256484048721" id="6463712245475845381" />
@@ -409,6 +442,19 @@
       <property name="name" nameId="tpck.1169194664001" value="Transporter" />
       <node role="characteristics" roleId="qk4j.2790106256483804722" type="qk4j.Action" typeId="qk4j.2790106256483804706" id="9051107737456882693">
         <property name="name" nameId="tpck.1169194664001" value="transport" />
+        <node role="behavior" roleId="qk4j.2790106256484074606" type="vtna.ItemBehaviourC" typeId="vtna.2790106256484105453" id="8712087438806612672">
+          <node role="body" roleId="vtna.2790106256484107451" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="8712087438806612673">
+            <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="8712087438806612674">
+              <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.AssignmentExpr" typeId="mj1l.22102029902365709" id="8712087438806612678">
+                <node role="right" roleId="mj1l.8860443239512128065" type="vtna.CharAccessExpr" typeId="vtna.9181329841236133154" id="8712087438806612684">
+                  <link role="char" roleId="vtna.9181329841236133155" targetNodeId="9051107737456882695" resolveInfo="targetRoom" />
+                  <node role="expression" roleId="mj1l.7254843406768839760" type="vtna.ThisItemExpr" typeId="vtna.9181329841236125699" id="8712087438806612681" />
+                </node>
+                <node role="left" roleId="mj1l.8860443239512128064" type="vtna.CurrentRoomExpr" typeId="vtna.9051107737456948761" id="8712087438806612675" />
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
       <node role="characteristics" roleId="qk4j.2790106256483804722" type="qk4j.Property" typeId="qk4j.2790106256483804708" id="9051107737456882695">
         <property name="name" nameId="tpck.1169194664001" value="targetRoom" />
