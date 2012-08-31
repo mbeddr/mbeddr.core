@@ -51,11 +51,6 @@
       <property name="name" nameId="tpck.1169194664001" value="Item" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
     </node>
-    <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="2790106256483804704">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="items" />
-      <property name="name" nameId="tpck.1169194664001" value="Event" />
-      <link role="extends" roleId="tpce.1071489389519" targetNodeId="2790106256483804710" resolveInfo="ItemCharacteristic" />
-    </node>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="2790106256483804706">
       <property name="virtualPackage" nameId="tpck.1193676396447" value="items" />
       <property name="name" nameId="tpck.1169194664001" value="Action" />
@@ -234,17 +229,6 @@
     </node>
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="2790106256483804724">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="1694060945597185407" resolveInfo="IGameStructureContent" />
-    </node>
-  </root>
-  <root id="2790106256483804704">
-    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="2790106256484074607">
-      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
-      <property name="role" nameId="tpce.1071599776563" value="behavior" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="2790106256484074604" resolveInfo="ItemBehavior" />
-    </node>
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="2790106256483805270">
-      <property name="value" nameId="tpce.1105725733873" value="event" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473891462" resolveInfo="alias" />
     </node>
   </root>
   <root id="2790106256483804706">

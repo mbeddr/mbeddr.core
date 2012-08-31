@@ -44,10 +44,6 @@
       <property name="virtualPackage" nameId="tpck.1193676396447" value="items" />
       <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="qk4j.2790106256483804708" resolveInfo="Property" />
     </node>
-    <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="2790106256483992941">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="items" />
-      <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="qk4j.2790106256483804704" resolveInfo="Event" />
-    </node>
     <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="2790106256483992953">
       <property name="virtualPackage" nameId="tpck.1193676396447" value="items" />
       <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="qk4j.2790106256483804706" resolveInfo="Action" />
@@ -523,21 +519,6 @@
       </node>
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_RefNode" typeId="tpc2.1073389882823" id="2790106256483971771">
         <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="qk4j.9051107737456855160" />
-      </node>
-    </node>
-  </root>
-  <root id="2790106256483992941">
-    <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="2790106256483992944">
-      <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Indent" typeId="tpc2.1237303669825" id="2790106256483992945" />
-      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="2790106256483992950">
-        <property name="text" nameId="tpc2.1073389577007" value="event" />
-      </node>
-      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Property" typeId="tpc2.1073389658414" id="2790106256483992943">
-        <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="tpck.1169194664001" resolveInfo="name" />
-      </node>
-      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_RefNode" typeId="tpc2.1073389882823" id="2790106256483992952">
-        <property name="noTargetText" nameId="tpc2.1139852716018" value=" " />
-        <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="qk4j.2790106256484074607" />
       </node>
     </node>
   </root>

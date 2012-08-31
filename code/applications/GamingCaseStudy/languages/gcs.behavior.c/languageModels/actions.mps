@@ -55,34 +55,6 @@
         </node>
       </node>
     </node>
-    <node role="actionsBuilder" roleId="tpdg.1138079416599" type="tpdg.SideTransformHintSubstituteActionsBuilder" typeId="tpdg.1138079221458" id="2790106256484135484">
-      <link role="applicableConcept" roleId="tpdg.1138079221462" targetNodeId="qk4j.2790106256483804704" resolveInfo="Event" />
-      <node role="part" roleId="tpdg.1177442283389" type="tpdg.AddMenuPart" typeId="tpdg.1177323996388" id="2790106256484135485">
-        <link role="concept" roleId="tpdg.1177333551023" targetNodeId="qk4j.2790106256483804704" resolveInfo="Event" />
-        <node role="part" roleId="tpdg.1177333559040" type="tpdg.SimpleSideTransformMenuPart" typeId="tpdg.1177498013932" id="2790106256484135486">
-          <node role="handler" roleId="tpdg.1177498207384" type="tpdg.QueryFunction_SideTransform_Handler" typeId="tpdg.1177498227294" id="2790106256484135487">
-            <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="2790106256484135488">
-              <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="2790106256484135489">
-                <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="2790106256484135490">
-                  <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="2790106256484135491">
-                    <node role="operand" roleId="tpee.1197027771414" type="tpdg.ConceptFunctionParameter_sourceNode" typeId="tpdg.1177497140107" id="2790106256484135492" />
-                    <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="2790106256484135499">
-                      <link role="link" roleId="tp25.1138056516764" targetNodeId="qk4j.2790106256484074607" />
-                    </node>
-                  </node>
-                  <node role="operation" roleId="tpee.1197027833540" type="tpdg.NF_Link_SetNewChildOperation" typeId="tpdg.767145758118872830" id="2790106256484135494">
-                    <link role="concept" roleId="tp25.1139880128956" targetNodeId="vtna.2790106256484105453" resolveInfo="ItemBehaviourC" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-          <node role="matchingText" roleId="tpdg.1177498166690" type="tpdg.SideTransform_SimpleString" typeId="tpdg.1196433923911" id="2790106256484135495">
-            <property name="text" nameId="tpdg.1196433942569" value="{" />
-          </node>
-        </node>
-      </node>
-    </node>
   </root>
   <root id="9181329841236133688">
     <node role="actionsBuilder" roleId="tpdg.1138079416599" type="tpdg.SideTransformHintSubstituteActionsBuilder" typeId="tpdg.1138079221458" id="9181329841236133689">
