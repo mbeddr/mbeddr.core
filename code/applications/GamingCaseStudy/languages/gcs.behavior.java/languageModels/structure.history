@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<history>
+  <StructureModification>
+    <dependencies>
+      <model index="ajkx" modelUID="r:1891c053-7149-4c9e-b491-339d222404f1(gcs.behavior.java.typesystem)" version="-1" />
+      <model index="o2lk" modelUID="r:4b2464a9-1b16-4c64-ba8a-e0e91611090c(gcs.behavior.java.structure)" version="-1" />
+      <model index="qk4j" modelUID="r:fbdf0175-1168-4524-a12c-ced1c3a691e3(gcs.structureAndLayout.structure)" version="4" />
+      <model index="jll4" modelUID="r:3b6ad7c4-742c-4895-9760-5f6cbfe34035(gcs.structureAndLayout.editor)" version="3" />
+      <model index="gdg9" modelUID="r:8406339c-b257-44d7-9f5a-c50be50c4d59(gcs.behavior.java.editor)" version="-1" />
+      <model index="7pbj" modelUID="r:5691a480-de6d-40b2-b2ca-4aba89631367(gcs.structureAndLayout.typesystem)" version="1" />
+    </dependencies>
+    <move id="o2lk.2782839353310589506" to="qk4j.2782839353310615544" />
+    <move id="o2lk.2782839353310589524" to="qk4j.2782839353310615545" />
+    <move id="o2lk.2782839353310589507" to="qk4j.2782839353310615546" />
+    <move id="o2lk.2782839353310589513" to="qk4j.2782839353310615547" />
+    <move id="gdg9.2782839353310589518" to="jll4.2782839353310615550" />
+    <move id="gdg9.2782839353310589522" to="jll4.2782839353310615553" />
+    <move id="gdg9.2782839353310589526" to="jll4.2782839353310615555" />
+    <move id="gdg9.2782839353310589517" to="jll4.2782839353310615549" />
+    <move id="gdg9.2782839353310589528" to="jll4.2782839353310615556" />
+    <move id="gdg9.2782839353310589525" to="jll4.2782839353310615554" />
+    <move id="gdg9.2782839353310589520" to="jll4.2782839353310615552" />
+    <move id="gdg9.2782839353310589516" to="jll4.2782839353310615551" />
+    <move id="gdg9.2782839353310589514" to="jll4.2782839353310615548" />
+    <move id="ajkx.2782839353310589530" to="7pbj.2782839353310615558" />
+    <move id="ajkx.2782839353310589533" to="7pbj.2782839353310615565" />
+    <move id="ajkx.2782839353310589561" to="7pbj.2782839353310615561" />
+    <move id="ajkx.2782839353310589535" to="7pbj.2782839353310615566" />
+    <move id="ajkx.2782839353310589529" to="7pbj.2782839353310615557" />
+    <move id="ajkx.2782839353310589559" to="7pbj.2782839353310615564" />
+    <move id="ajkx.2782839353310589531" to="7pbj.2782839353310615567" />
+    <move id="ajkx.2782839353310589556" to="7pbj.2782839353310615559" />
+    <move id="ajkx.2782839353310589574" to="7pbj.2782839353310615563" />
+    <move id="ajkx.2782839353310589573" to="7pbj.2782839353310615562" />
+    <move id="ajkx.2782839353310589560" to="7pbj.2782839353310615560" />
+  </StructureModification>
+</history>
+
