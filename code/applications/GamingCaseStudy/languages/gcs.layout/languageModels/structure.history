@@ -142,5 +142,11 @@
     </dependencies>
     <rename id="qk4j.2782839353310615544" type="CONCEPT" from="DoorOfExpr" to="DoorOfValue" />
   </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="qk4j" modelUID="r:fbdf0175-1168-4524-a12c-ced1c3a691e3(gcs.structureAndLayout.structure)" version="6" />
+    </dependencies>
+    <rename id="qk4j.2790106256484074604" type="CONCEPT" from="ItemBehavior" to="AbstractBehavior" />
+  </StructureModification>
 </history>
 

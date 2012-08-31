@@ -5,7 +5,7 @@
   <language namespace="0ffa79e2-4db6-483d-83f2-a1bee045a4ae(gcs.behavior.java)" />
   <language namespace="f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
-  <import index="qk4j" modelUID="r:fbdf0175-1168-4524-a12c-ced1c3a691e3(gcs.structureAndLayout.structure)" version="6" implicit="yes" />
+  <import index="qk4j" modelUID="r:fbdf0175-1168-4524-a12c-ced1c3a691e3(gcs.structureAndLayout.structure)" version="7" implicit="yes" />
   <import index="tpee" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="4" implicit="yes" />
   <import index="o2lk" modelUID="r:4b2464a9-1b16-4c64-ba8a-e0e91611090c(gcs.behavior.java.structure)" version="0" implicit="yes" />
   <roots>
@@ -169,6 +169,49 @@
       </node>
     </node>
     <node role="contents" roleId="qk4j.1694060945597180901" type="qk4j.EmptyGSC" typeId="qk4j.2790106256484048721" id="9181329841236207387" />
+    <node role="contents" roleId="qk4j.1694060945597180901" type="qk4j.Actor" typeId="qk4j.5710945123077554685" id="5710945123077575708">
+      <property name="name" nameId="tpck.1169194664001" value="Player" />
+      <node role="contents" roleId="qk4j.5710945123077563413" type="qk4j.Capability" typeId="qk4j.5710945123077563408" id="5710945123077575709">
+        <property name="name" nameId="tpck.1169194664001" value="shootAGun" />
+        <link role="action" roleId="qk4j.5710945123077563411" targetNodeId="2790106256484135181" resolveInfo="shoot" />
+        <node role="item" roleId="qk4j.5710945123077563410" type="qk4j.ItemType" typeId="qk4j.9051107737456989805" id="5710945123077575711">
+          <link role="item" roleId="qk4j.9051107737456989806" targetNodeId="2790106256483985349" resolveInfo="Gun" />
+        </node>
+      </node>
+    </node>
+    <node role="contents" roleId="qk4j.1694060945597180901" type="qk4j.EmptyGSC" typeId="qk4j.2790106256484048721" id="5710945123077618066" />
+    <node role="contents" roleId="qk4j.1694060945597180901" type="qk4j.AIActor" typeId="qk4j.5710945123077607578" id="5710945123077632252">
+      <property name="name" nameId="tpck.1169194664001" value="Monster" />
+      <node role="contents" roleId="qk4j.5710945123077563413" type="qk4j.Capability" typeId="qk4j.5710945123077563408" id="5710945123077656010">
+        <property name="name" nameId="tpck.1169194664001" value="annoyPlayer" />
+        <link role="action" roleId="qk4j.5710945123077563411" targetNodeId="5710945123077656008" resolveInfo="throwFire" />
+        <node role="item" roleId="qk4j.5710945123077563410" type="qk4j.ItemType" typeId="qk4j.9051107737456989805" id="5710945123077656012">
+          <link role="item" roleId="qk4j.9051107737456989806" targetNodeId="5710945123077656007" resolveInfo="FireThrower" />
+        </node>
+      </node>
+      <node role="contents" roleId="qk4j.5710945123077563413" type="qk4j.Reaction" typeId="qk4j.5710945123077618075" id="5710945123077632253">
+        <node role="event" roleId="qk4j.5710945123077618077" type="qk4j.RoomEnteredEvent" typeId="qk4j.5710945123077618096" id="5710945123077632256">
+          <link role="actor" roleId="qk4j.5710945123077618097" targetNodeId="5710945123077575708" resolveInfo="Player" />
+        </node>
+        <node role="behavior" roleId="qk4j.5710945123077618078" type="o2lk.ItemBehaviorJava" typeId="o2lk.6463712245475941919" id="5710945123077632257">
+          <node role="body" roleId="o2lk.6463712245475941920" type="tpee.BlockStatement" typeId="tpee.1082485599095" id="5710945123077632258">
+            <node role="statements" roleId="tpee.1082485599096" type="tpee.StatementList" typeId="tpee.1068580123136" id="5710945123077632259">
+              <node role="statement" roleId="tpee.1068581517665" type="o2lk.PerformCapabilityStatement" typeId="o2lk.5710945123077656013" id="5710945123077659314">
+                <link role="cap" roleId="o2lk.5710945123077656014" targetNodeId="5710945123077656010" resolveInfo="annoyPlayer" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node role="contents" roleId="qk4j.1694060945597180901" type="qk4j.EmptyGSC" typeId="qk4j.2790106256484048721" id="5710945123077618070" />
+    <node role="contents" roleId="qk4j.1694060945597180901" type="qk4j.Item" typeId="qk4j.2790106256483794285" id="5710945123077656007">
+      <property name="name" nameId="tpck.1169194664001" value="FireThrower" />
+      <node role="characteristics" roleId="qk4j.2790106256483804722" type="qk4j.Action" typeId="qk4j.2790106256483804706" id="5710945123077656008">
+        <property name="name" nameId="tpck.1169194664001" value="throwFire" />
+      </node>
+    </node>
+    <node role="contents" roleId="qk4j.1694060945597180901" type="qk4j.EmptyGSC" typeId="qk4j.2790106256484048721" id="5710945123077618071" />
     <node role="contents" roleId="qk4j.1694060945597180901" type="qk4j.Item" typeId="qk4j.2790106256483794285" id="2790106256483985349">
       <property name="name" nameId="tpck.1169194664001" value="Gun" />
       <node role="characteristics" roleId="qk4j.2790106256483804722" type="qk4j.Action" typeId="qk4j.2790106256483804706" id="2790106256484135181">

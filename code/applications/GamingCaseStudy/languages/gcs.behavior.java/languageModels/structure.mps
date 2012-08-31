@@ -7,7 +7,7 @@
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="tpee" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="4" implicit="yes" />
   <import index="tpce" modelUID="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" version="0" implicit="yes" />
-  <import index="qk4j" modelUID="r:fbdf0175-1168-4524-a12c-ced1c3a691e3(gcs.structureAndLayout.structure)" version="6" implicit="yes" />
+  <import index="qk4j" modelUID="r:fbdf0175-1168-4524-a12c-ced1c3a691e3(gcs.structureAndLayout.structure)" version="7" implicit="yes" />
   <roots>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="9181329841236125699">
       <property name="name" nameId="tpck.1169194664001" value="ThisItemExpr" />
@@ -15,7 +15,7 @@
     </node>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="6463712245475941919">
       <property name="name" nameId="tpck.1169194664001" value="ItemBehaviorJava" />
-      <link role="extends" roleId="tpce.1071489389519" targetNodeId="qk4j.2790106256484074604" resolveInfo="ItemBehavior" />
+      <link role="extends" roleId="tpce.1071489389519" targetNodeId="qk4j.2790106256484074604" resolveInfo="AbstractBehavior" />
     </node>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="6463712245475949578">
       <property name="name" nameId="tpck.1169194664001" value="CurrentRoomExpr" />
@@ -35,6 +35,10 @@
     </node>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="5710945123077323188">
       <property name="name" nameId="tpck.1169194664001" value="RunGameStatement" />
+      <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpee.1068580123157" resolveInfo="Statement" />
+    </node>
+    <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="5710945123077656013">
+      <property name="name" nameId="tpck.1169194664001" value="PerformCapabilityStatement" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpee.1068580123157" resolveInfo="Statement" />
     </node>
   </roots>
@@ -105,6 +109,18 @@
     </node>
     <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="5710945123077323190">
       <property name="value" nameId="tpce.1105725733873" value="run game" />
+      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473891462" resolveInfo="alias" />
+    </node>
+  </root>
+  <root id="5710945123077656013">
+    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="5710945123077656014">
+      <property name="metaClass" nameId="tpce.1071599937831" value="reference" />
+      <property name="role" nameId="tpce.1071599776563" value="cap" />
+      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="qk4j.5710945123077563408" resolveInfo="Capability" />
+    </node>
+    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="5710945123077656015">
+      <property name="value" nameId="tpce.1105725733873" value="perform" />
       <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473891462" resolveInfo="alias" />
     </node>
   </root>
