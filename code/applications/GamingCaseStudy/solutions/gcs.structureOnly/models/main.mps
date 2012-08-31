@@ -32,8 +32,8 @@
       <node role="elements" roleId="qk4j.1694060945597423566" type="qk4j.Room" typeId="qk4j.1694060945597180899" id="2782839353310704426">
         <node role="southDoor" roleId="qk4j.1694060945597180904" type="qk4j.Door" typeId="qk4j.1694060945597180902" id="2782839353310717155" />
         <node role="eastDour" roleId="qk4j.1694060945597180906" type="qk4j.Door" typeId="qk4j.1694060945597180902" id="2782839353310717156" />
-        <node role="items" roleId="qk4j.9181329841236194940" type="qk4j.ItemInstance" typeId="qk4j.9181329841236186414" id="2782839353310745566">
-          <link role="item" roleId="qk4j.9181329841236186415" targetNodeId="2790106256483985349" resolveInfo="Gun" />
+        <node role="items" roleId="qk4j.9181329841236194940" type="qk4j.ItemInstance" typeId="qk4j.9181329841236186414" id="5710945123077855456">
+          <link role="item" roleId="qk4j.9181329841236186415" targetNodeId="5710945123077715467" resolveInfo="Gun" />
         </node>
       </node>
       <node role="elements" roleId="qk4j.1694060945597423566" type="qk4j.Room" typeId="qk4j.1694060945597180899" id="2782839353310705104">
@@ -43,8 +43,8 @@
       <node role="elements" roleId="qk4j.1694060945597423566" type="qk4j.Room" typeId="qk4j.1694060945597180899" id="2782839353310705106">
         <node role="westDoor" roleId="qk4j.1694060945597180905" type="qk4j.Door" typeId="qk4j.1694060945597180902" id="2782839353310717159" />
         <node role="eastDour" roleId="qk4j.1694060945597180906" type="qk4j.Door" typeId="qk4j.1694060945597180902" id="2782839353310717160" />
-        <node role="items" roleId="qk4j.9181329841236194940" type="qk4j.ItemInstance" typeId="qk4j.9181329841236186414" id="2782839353310744553">
-          <link role="item" roleId="qk4j.9181329841236186415" targetNodeId="9181329841236207388" resolveInfo="Monster" />
+        <node role="items" roleId="qk4j.9181329841236194940" type="qk4j.ItemInstance" typeId="qk4j.9181329841236186414" id="5710945123077855457">
+          <link role="item" roleId="qk4j.9181329841236186415" targetNodeId="5710945123077715480" resolveInfo="Monster" />
         </node>
       </node>
       <node role="elements" roleId="qk4j.1694060945597423566" type="qk4j.Room" typeId="qk4j.1694060945597180899" id="2782839353310715547">
@@ -98,8 +98,8 @@
       <node role="elements" roleId="qk4j.1694060945597423566" type="qk4j.Block" typeId="qk4j.1694060945597414339" id="2782839353310715595" />
       <node role="elements" roleId="qk4j.1694060945597423566" type="qk4j.Room" typeId="qk4j.1694060945597180899" id="2782839353310717174">
         <node role="northDoor" roleId="qk4j.1694060945597180903" type="qk4j.Door" typeId="qk4j.1694060945597180902" id="2782839353310717175" />
-        <node role="items" roleId="qk4j.9181329841236194940" type="qk4j.ItemInstance" typeId="qk4j.9181329841236186414" id="2782839353310744555">
-          <link role="item" roleId="qk4j.9181329841236186415" targetNodeId="9181329841236207388" resolveInfo="Monster" />
+        <node role="items" roleId="qk4j.9181329841236194940" type="qk4j.ItemInstance" typeId="qk4j.9181329841236186414" id="5710945123077855458">
+          <link role="item" roleId="qk4j.9181329841236186415" targetNodeId="5710945123077715480" resolveInfo="Monster" />
         </node>
       </node>
       <node role="elements" roleId="qk4j.1694060945597423566" type="qk4j.Block" typeId="qk4j.1694060945597414339" id="2782839353310715599" />
@@ -124,7 +124,7 @@
     </node>
   </root>
   <root id="1694060945597187291">
-    <node role="contents" roleId="qk4j.1694060945597180901" type="qk4j.Item" typeId="qk4j.2790106256483794285" id="9181329841236207388">
+    <node role="contents" roleId="qk4j.1694060945597180901" type="qk4j.Object" typeId="qk4j.5710945123077685992" id="5710945123077715480">
       <property name="name" nameId="tpck.1169194664001" value="Monster" />
       <node role="characteristics" roleId="qk4j.2790106256483804722" type="qk4j.Action" typeId="qk4j.2790106256483804706" id="7554903109719433375">
         <property name="name" nameId="tpck.1169194664001" value="die" />
@@ -132,14 +132,14 @@
     </node>
     <node role="contents" roleId="qk4j.1694060945597180901" type="qk4j.EmptyGSC" typeId="qk4j.2790106256484048721" id="9181329841236207387" />
     <node role="contents" roleId="qk4j.1694060945597180901" type="qk4j.EmptyGSC" typeId="qk4j.2790106256484048721" id="5710945123077575707" />
-    <node role="contents" roleId="qk4j.1694060945597180901" type="qk4j.Item" typeId="qk4j.2790106256483794285" id="2790106256483985349">
+    <node role="contents" roleId="qk4j.1694060945597180901" type="qk4j.Object" typeId="qk4j.5710945123077685992" id="5710945123077715467">
       <property name="name" nameId="tpck.1169194664001" value="Gun" />
       <node role="characteristics" roleId="qk4j.2790106256483804722" type="qk4j.Action" typeId="qk4j.2790106256483804706" id="2790106256484135181">
         <property name="name" nameId="tpck.1169194664001" value="shoot" />
       </node>
     </node>
     <node role="contents" roleId="qk4j.1694060945597180901" type="qk4j.EmptyGSC" typeId="qk4j.2790106256484048721" id="6463712245475845381" />
-    <node role="contents" roleId="qk4j.1694060945597180901" type="qk4j.Item" typeId="qk4j.2790106256483794285" id="2782839353310584550">
+    <node role="contents" roleId="qk4j.1694060945597180901" type="qk4j.Object" typeId="qk4j.5710945123077685992" id="5710945123077715469">
       <property name="name" nameId="tpck.1169194664001" value="Key" />
       <node role="characteristics" roleId="qk4j.2790106256483804722" type="qk4j.Property" typeId="qk4j.2790106256483804708" id="2782839353310584551">
         <property name="name" nameId="tpck.1169194664001" value="compatibleDoor" />
@@ -148,7 +148,7 @@
       </node>
     </node>
     <node role="contents" roleId="qk4j.1694060945597180901" type="qk4j.EmptyGSC" typeId="qk4j.2790106256484048721" id="2782839353310745567" />
-    <node role="contents" roleId="qk4j.1694060945597180901" type="qk4j.Item" typeId="qk4j.2790106256483794285" id="2782839353310745569">
+    <node role="contents" roleId="qk4j.1694060945597180901" type="qk4j.Object" typeId="qk4j.5710945123077685992" id="5710945123077715474">
       <property name="name" nameId="tpck.1169194664001" value="Lock" />
       <node role="characteristics" roleId="qk4j.2790106256483804722" type="qk4j.Property" typeId="qk4j.2790106256483804708" id="2782839353310745570">
         <property name="name" nameId="tpck.1169194664001" value="locksDoor" />
@@ -157,7 +157,7 @@
       </node>
     </node>
     <node role="contents" roleId="qk4j.1694060945597180901" type="qk4j.EmptyGSC" typeId="qk4j.2790106256484048721" id="2782839353310584549" />
-    <node role="contents" roleId="qk4j.1694060945597180901" type="qk4j.Item" typeId="qk4j.2790106256483794285" id="9051107737456882692">
+    <node role="contents" roleId="qk4j.1694060945597180901" type="qk4j.Object" typeId="qk4j.5710945123077685992" id="5710945123077715477">
       <property name="name" nameId="tpck.1169194664001" value="Transporter" />
       <node role="characteristics" roleId="qk4j.2790106256483804722" type="qk4j.Action" typeId="qk4j.2790106256483804706" id="9051107737456882693">
         <property name="name" nameId="tpck.1169194664001" value="transport" />
