@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model modelUID="r:fbdf0175-1168-4524-a12c-ced1c3a691e3(gcs.structureAndLayout.structure)" version="4">
+<model modelUID="r:fbdf0175-1168-4524-a12c-ced1c3a691e3(gcs.structureAndLayout.structure)" version="5">
   <persistence version="7" />
   <language namespace="c72da2b9-7cce-4447-8389-f407dc1158b7(jetbrains.mps.lang.structure)" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="tpce" modelUID="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" version="0" implicit="yes" />
-  <import index="qk4j" modelUID="r:fbdf0175-1168-4524-a12c-ced1c3a691e3(gcs.structureAndLayout.structure)" version="4" implicit="yes" />
+  <import index="qk4j" modelUID="r:fbdf0175-1168-4524-a12c-ced1c3a691e3(gcs.structureAndLayout.structure)" version="5" implicit="yes" />
   <roots>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="1694060945597180898">
       <property name="name" nameId="tpck.1169194664001" value="GameStructure" />
@@ -113,6 +113,19 @@
     <node type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="9051107737457043753">
       <property name="name" nameId="tpck.1169194664001" value="IGCSType" />
     </node>
+    <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="2782839353310402008">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="layout" />
+      <property name="name" nameId="tpck.1169194664001" value="DoorType" />
+      <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
+    </node>
+    <node type="tpce.EnumerationDataTypeDeclaration" typeId="tpce.1082978164219" id="2782839353310589508">
+      <property name="name" nameId="tpck.1169194664001" value="Direction" />
+      <link role="memberDataType" roleId="tpce.1083171729157" targetNodeId="tpck.1082983041843" resolveInfo="string" />
+    </node>
+    <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="2782839353310615544">
+      <property name="name" nameId="tpck.1169194664001" value="DoorOfExpr" />
+      <link role="extends" roleId="tpce.1071489389519" targetNodeId="9051107737456901641" resolveInfo="Value" />
+    </node>
   </roots>
   <root id="1694060945597180898">
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="1694060945597180901">
@@ -159,7 +172,7 @@
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="1694060945597414337" resolveInfo="ILayoutElement" />
     </node>
     <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="1694060945597183267">
-      <property name="value" nameId="tpce.1105725733873" value="room" />
+      <property name="value" nameId="tpce.1105725733873" value="r" />
       <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473891462" resolveInfo="alias" />
     </node>
   </root>
@@ -347,6 +360,49 @@
   <root id="9051107737457043753">
     <node role="extends" roleId="tpce.1169127546356" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="9051107737457101939">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="tpck.1234971358450" resolveInfo="IType" />
+    </node>
+  </root>
+  <root id="2782839353310402008">
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="2782839353310402009">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="9051107737457043753" resolveInfo="IGCSType" />
+    </node>
+    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="2782839353310402010">
+      <property name="value" nameId="tpce.1105725733873" value="door" />
+      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473891462" resolveInfo="alias" />
+    </node>
+  </root>
+  <root id="2782839353310589508">
+    <node role="member" roleId="tpce.1083172003582" type="tpce.EnumerationMemberDeclaration" typeId="tpce.1083171877298" id="2782839353310589509">
+      <property name="externalValue" nameId="tpce.1083923523172" value="north" />
+      <property name="internalValue" nameId="tpce.1083923523171" value="north" />
+    </node>
+    <node role="member" roleId="tpce.1083172003582" type="tpce.EnumerationMemberDeclaration" typeId="tpce.1083171877298" id="2782839353310589510">
+      <property name="externalValue" nameId="tpce.1083923523172" value="east" />
+      <property name="internalValue" nameId="tpce.1083923523171" value="east" />
+    </node>
+    <node role="member" roleId="tpce.1083172003582" type="tpce.EnumerationMemberDeclaration" typeId="tpce.1083171877298" id="2782839353310589511">
+      <property name="externalValue" nameId="tpce.1083923523172" value="south" />
+      <property name="internalValue" nameId="tpce.1083923523171" value="south" />
+    </node>
+    <node role="member" roleId="tpce.1083172003582" type="tpce.EnumerationMemberDeclaration" typeId="tpce.1083171877298" id="2782839353310589512">
+      <property name="externalValue" nameId="tpce.1083923523172" value="west" />
+      <property name="internalValue" nameId="tpce.1083923523171" value="west" />
+    </node>
+  </root>
+  <root id="2782839353310615544">
+    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="2782839353310615545">
+      <property name="metaClass" nameId="tpce.1071599937831" value="reference" />
+      <property name="role" nameId="tpce.1071599776563" value="room" />
+      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="1694060945597180899" resolveInfo="Room" />
+    </node>
+    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="2782839353310615546">
+      <property name="value" nameId="tpce.1105725733873" value="door of" />
+      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473891462" resolveInfo="alias" />
+    </node>
+    <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="2782839353310615547">
+      <property name="name" nameId="tpck.1169194664001" value="where" />
+      <link role="dataType" roleId="tpce.1082985295845" targetNodeId="2782839353310589508" resolveInfo="Direction" />
     </node>
   </root>
 </model>
