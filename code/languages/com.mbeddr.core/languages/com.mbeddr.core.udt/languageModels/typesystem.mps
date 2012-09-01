@@ -136,6 +136,10 @@
     <node type="tpd4.InequationReplacementRule" typeId="tpd4.1201607707634" id="700175690754673627">
       <property name="name" nameId="tpck.1169194664001" value="ubit64AsUInt16" />
     </node>
+    <node type="tpd4.NonTypesystemRule" typeId="tpd4.1195214364922" id="841971064028740">
+      <property name="name" nameId="tpck.1169194664001" value="check_OpaqueType" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="opaque" />
+    </node>
   </roots>
   <root id="745648737914686723">
     <node role="body" roleId="tpd4.1195213635060" type="tpee.StatementList" typeId="tpee.1068580123136" id="745648737914686724">
@@ -2432,6 +2436,41 @@
           </node>
         </node>
       </node>
+    </node>
+  </root>
+  <root id="841971064028740">
+    <node role="body" roleId="tpd4.1195213635060" type="tpee.StatementList" typeId="tpee.1068580123136" id="841971064028741">
+      <node role="statement" roleId="tpee.1068581517665" type="tpee.IfStatement" typeId="tpee.1068580123159" id="841971064028743">
+        <node role="ifTrue" roleId="tpee.1068580123161" type="tpee.StatementList" typeId="tpee.1068580123136" id="841971064028745">
+          <node role="statement" roleId="tpee.1068581517665" type="tpd4.ReportErrorStatement" typeId="tpd4.1175517767210" id="841971064060345">
+            <node role="errorString" roleId="tpd4.1175517851849" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="841971064060348">
+              <property name="value" nameId="tpee.1070475926801" value="an opaque type can only be used as a pointer" />
+            </node>
+            <node role="nodeToReport" roleId="tpd4.1227096802790" type="tpd4.ApplicableNodeReference" typeId="tpd4.1174650418652" id="841971064060349">
+              <link role="applicableNode" roleId="tpd4.1174650432090" targetNodeId="841971064028742" resolveInfo="ot" />
+            </node>
+          </node>
+        </node>
+        <node role="condition" roleId="tpee.1068580123160" type="tpee.NotExpression" typeId="tpee.1081516740877" id="841971064060334">
+          <node role="expression" roleId="tpee.1081516765348" type="tpee.DotExpression" typeId="tpee.1197027756228" id="841971064060335">
+            <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="841971064060336">
+              <node role="operand" roleId="tpee.1197027771414" type="tpd4.ApplicableNodeReference" typeId="tpd4.1174650418652" id="841971064060337">
+                <link role="applicableNode" roleId="tpd4.1174650432090" targetNodeId="841971064028742" resolveInfo="ot" />
+              </node>
+              <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_GetParentOperation" typeId="tp25.1139613262185" id="841971064060338" />
+            </node>
+            <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_IsInstanceOfOperation" typeId="tp25.1139621453865" id="841971064060339">
+              <node role="conceptArgument" roleId="tp25.1177027386292" type="tp25.RefConcept_Reference" typeId="tp25.1177026924588" id="841971064060340">
+                <link role="conceptDeclaration" roleId="tp25.1177026940964" targetNodeId="yq40.279446265608459824" resolveInfo="PointerType" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node role="applicableNode" roleId="tpd4.1174648101952" type="tpd4.ConceptReference" typeId="tpd4.1174642788531" id="841971064028742">
+      <property name="name" nameId="tpck.1169194664001" value="ot" />
+      <link role="concept" roleId="tpd4.1174642800329" targetNodeId="clbe.841971064023564" resolveInfo="OpaqueType" />
     </node>
   </root>
 </model>
