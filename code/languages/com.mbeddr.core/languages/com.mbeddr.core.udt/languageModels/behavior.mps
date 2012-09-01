@@ -78,6 +78,14 @@
       <property name="virtualPackage" nameId="tpck.1193676396447" value="su.union" />
       <link role="concept" roleId="1i04.1225194240799" targetNodeId="clbe.3073566081777327818" resolveInfo="UnionInitExpression" />
     </node>
+    <node type="1i04.ConceptBehavior" typeId="1i04.1225194240794" id="841971064114622">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="opaque" />
+      <link role="concept" roleId="1i04.1225194240799" targetNodeId="clbe.841971064023554" resolveInfo="OpaqueTypeDecl" />
+    </node>
+    <node type="1i04.ConceptBehavior" typeId="1i04.1225194240794" id="841971064114660">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="opaque" />
+      <link role="concept" roleId="1i04.1225194240799" targetNodeId="clbe.841971064023564" resolveInfo="OpaqueType" />
+    </node>
   </roots>
   <root id="8811614583515751351">
     <node role="method" roleId="1i04.1225194240805" type="1i04.ConceptMethodDeclaration" typeId="1i04.1225194472830" id="899185318197618554">
@@ -1425,6 +1433,37 @@
       <node role="returnType" roleId="tpee.1068580123133" type="tp25.SNodeType" typeId="tp25.1138055754698" id="6702952168899885012">
         <link role="concept" roleId="tp25.1138405853777" targetNodeId="mj1l.8860443239512128050" resolveInfo="Expression" />
       </node>
+    </node>
+  </root>
+  <root id="841971064114622">
+    <node role="constructor" roleId="1i04.1225194240801" type="1i04.ConceptConstructorDeclaration" typeId="1i04.1225194413805" id="841971064114623">
+      <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="841971064114624" />
+    </node>
+  </root>
+  <root id="841971064114660">
+    <node role="method" roleId="1i04.1225194240805" type="1i04.ConceptMethodDeclaration" typeId="1i04.1225194472830" id="841971064114663">
+      <property name="name" nameId="tpck.1169194664001" value="getPresentation" />
+      <link role="overriddenMethod" roleId="1i04.1225194472831" targetNodeId="tpcu.1213877396640" resolveInfo="getPresentation" />
+      <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="841971064114666">
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.ReturnStatement" typeId="tpee.1068581242878" id="841971064114669">
+          <node role="expression" roleId="tpee.1068581517676" type="tpee.DotExpression" typeId="tpee.1197027756228" id="841971064114720">
+            <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="841971064114692">
+              <node role="operand" roleId="tpee.1197027771414" type="1i04.ThisNodeExpression" typeId="1i04.1225194691553" id="841971064114671" />
+              <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="841971064114698">
+                <link role="link" roleId="tp25.1138056516764" targetNodeId="clbe.841971064023567" />
+              </node>
+            </node>
+            <node role="operation" roleId="tpee.1197027833540" type="tp25.SPropertyAccess" typeId="tp25.1138056022639" id="841971064114726">
+              <link role="property" roleId="tp25.1138056395725" targetNodeId="tpck.1169194664001" resolveInfo="name" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node role="returnType" roleId="tpee.1068580123133" type="tpee.StringType" typeId="tpee.1225271177708" id="841971064114667" />
+      <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="841971064114668" />
+    </node>
+    <node role="constructor" roleId="1i04.1225194240801" type="1i04.ConceptConstructorDeclaration" typeId="1i04.1225194413805" id="841971064114661">
+      <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="841971064114662" />
     </node>
   </root>
 </model>
