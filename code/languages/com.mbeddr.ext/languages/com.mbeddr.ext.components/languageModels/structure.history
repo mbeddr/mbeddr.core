@@ -67,5 +67,62 @@
     </dependencies>
     <move id="v7ag.1539255704408544918" to="v7ag.1539255704408883009" />
   </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="v0r9" modelUID="r:277b15fc-1383-4213-8385-5a16481fa36c(com.mbeddr.ext.components.test.structure)" version="3" />
+      <model index="v7ag" modelUID="r:9596407c-f27a-49d3-abde-3a66293c5b61(com.mbeddr.ext.components.structure)" version="9" />
+      <model index="eup9" modelUID="r:ab391014-3e08-4918-9cc5-1c93e3a55c72(com.mbeddr.ext.components.behavior)" version="-1" />
+      <model index="yozf" modelUID="r:99178742-1e76-457e-87e3-952969b55bee(com.mbeddr.ext.components.test.constraints)" version="-1" />
+      <model index="bt4i" modelUID="r:4b72363d-e94a-4383-b5ad-ba453d6efac9(com.mbeddr.ext.components.constraints)" version="-1" />
+      <model index="rz13" modelUID="r:3248c70c-b5fb-4fa0-8906-0c970f187e2c(com.mbeddr.ext.components.test.behavior)" version="-1" />
+    </dependencies>
+    <move id="v0r9.6105672464780971357" to="v7ag.1482737808881210674" />
+    <move id="v0r9.6105672464780937238" to="v7ag.1482737808881210673" />
+    <move id="v0r9.6105672464780927496" to="v7ag.1482737808881210672" />
+    <move id="rz13.4211101037769641156" to="eup9.1482737808881210675" />
+    <move id="rz13.4211101037769641158" to="eup9.1482737808881210677" />
+    <move id="rz13.4211101037769641157" to="eup9.1482737808881210676" />
+    <move id="yozf.8230733038424929023" to="bt4i.1482737808881210709" />
+    <move id="yozf.8230733038424928941" to="bt4i.1482737808881210701" />
+    <move id="yozf.8230733038424928842" to="bt4i.1482737808881210689" />
+    <move id="yozf.8230733038424928865" to="bt4i.1482737808881210684" />
+    <move id="yozf.8230733038424928920" to="bt4i.1482737808881210702" />
+    <move id="yozf.8230733038424929002" to="bt4i.1482737808881210710" />
+    <move id="yozf.8230733038424928996" to="bt4i.1482737808881210705" />
+    <move id="yozf.8230733038424928972" to="bt4i.1482737808881210699" />
+    <move id="yozf.8230733038424928844" to="bt4i.1482737808881210690" />
+    <move id="yozf.8230733038424928975" to="bt4i.1482737808881210700" />
+    <move id="yozf.8230733038424929060" to="bt4i.1482737808881210712" />
+    <move id="yozf.8230733038424928807" to="bt4i.1482737808881210681" />
+    <move id="yozf.8230733038424928806" to="bt4i.1482737808881210680" />
+    <move id="yozf.8230733038424929051" to="bt4i.1482737808881210708" />
+    <move id="yozf.8230733038424929000" to="bt4i.1482737808881210707" />
+    <move id="yozf.8230733038424928830" to="bt4i.1482737808881210685" />
+    <move id="yozf.8230733038424928902" to="bt4i.1482737808881210696" />
+    <move id="yozf.8230733038424928898" to="bt4i.1482737808881210693" />
+    <move id="yozf.8230733038424928950" to="bt4i.1482737808881210703" />
+    <move id="yozf.8230733038424928900" to="bt4i.1482737808881210694" />
+    <move id="yozf.8230733038424928917" to="bt4i.1482737808881210698" />
+    <move id="yozf.8230733038424928836" to="bt4i.1482737808881210687" />
+    <move id="yozf.8230733038424928805" to="bt4i.1482737808881210679" />
+    <move id="yozf.8230733038424928809" to="bt4i.1482737808881210686" />
+    <move id="yozf.8230733038424929029" to="bt4i.1482737808881210711" />
+    <move id="yozf.8230733038424928901" to="bt4i.1482737808881210695" />
+    <move id="yozf.8230733038424928871" to="bt4i.1482737808881210691" />
+    <move id="yozf.8230733038424928919" to="bt4i.1482737808881210704" />
+    <move id="yozf.8230733038424928837" to="bt4i.1482737808881210688" />
+    <move id="yozf.8230733038424928872" to="bt4i.1482737808881210692" />
+    <move id="yozf.8230733038424928808" to="bt4i.1482737808881210682" />
+    <move id="yozf.8230733038424928903" to="bt4i.1482737808881210697" />
+    <move id="yozf.8230733038424928998" to="bt4i.1482737808881210706" />
+    <move id="yozf.8230733038424928893" to="bt4i.1482737808881210683" />
+    <move id="yozf.6105672464781036239" to="bt4i.1482737808881210678" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="v7ag" modelUID="r:9596407c-f27a-49d3-abde-3a66293c5b61(com.mbeddr.ext.components.structure)" version="10" />
+    </dependencies>
+    <rename id="v7ag.5172178961828157634" type="CONCEPT" from="PortAdapterInInstanceConfig" to="PortAdapter" />
+  </StructureModification>
 </history>
 

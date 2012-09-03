@@ -159,14 +159,14 @@
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="mj1l.3005510381523579442" resolveInfo="UnaryExpression" />
     </node>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="3059865549680361316">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="with" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="namedStructInit" />
       <property name="name" nameId="tpck.1169194664001" value="NamedArgStructInitExpression" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="mj1l.8860443239512128050" resolveInfo="Expression" />
     </node>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="3457272138385168029">
       <property name="name" nameId="tpck.1169194664001" value="FlagOp" />
       <property name="virtualPackage" nameId="tpck.1193676396447" value="flags" />
-      <link role="extends" roleId="tpce.1071489389519" targetNodeId="mj1l.3005510381523579442" resolveInfo="UnaryExpression" />
+      <link role="extends" roleId="tpce.1071489389519" targetNodeId="mj1l.8860443239512128052" resolveInfo="BinaryExpression" />
     </node>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="3457272138385189066">
       <property name="virtualPackage" nameId="tpck.1193676396447" value="flags" />
@@ -182,6 +182,16 @@
       <property name="virtualPackage" nameId="tpck.1193676396447" value="flags" />
       <property name="name" nameId="tpck.1169194664001" value="FlagTest" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="3457272138385168029" resolveInfo="FlagOp" />
+    </node>
+    <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="912616408885912373">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="flags" />
+      <property name="name" nameId="tpck.1169194664001" value="FlagTestNot" />
+      <link role="extends" roleId="tpce.1071489389519" targetNodeId="3457272138385168029" resolveInfo="FlagOp" />
+    </node>
+    <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4137387759417349282">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="namedStructInit" />
+      <property name="name" nameId="tpck.1169194664001" value="ConvertNamedToPositionalStructInit" />
+      <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
     </node>
   </roots>
   <root id="5686538669182273028">
@@ -764,31 +774,44 @@
     </node>
   </root>
   <root id="3457272138385168029">
-    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="3457272138385168060">
-      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
-      <property name="role" nameId="tpce.1071599776563" value="flag" />
-      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="mj1l.8860443239512128050" resolveInfo="Expression" />
-    </node>
     <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.BooleanConceptProperty" typeId="tpce.1105725574259" id="3457272138385168061">
       <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473854053" resolveInfo="abstract" />
+    </node>
+    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.IntegerConceptProperty" typeId="tpce.1105725498741" id="912616408885766750">
+      <property name="value" nameId="tpce.1105725713309" value="4000" />
+      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="mj1l.5763383285156530264" resolveInfo="priolevel" />
     </node>
   </root>
   <root id="3457272138385189066">
     <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="3457272138385189067">
-      <property name="value" nameId="tpce.1105725733873" value="fset" />
+      <property name="value" nameId="tpce.1105725733873" value="setflag" />
       <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473891462" resolveInfo="alias" />
     </node>
   </root>
   <root id="3457272138385220657">
     <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="3457272138385220658">
-      <property name="value" nameId="tpce.1105725733873" value="funset" />
+      <property name="value" nameId="tpce.1105725733873" value="unsetflag" />
       <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473891462" resolveInfo="alias" />
     </node>
   </root>
   <root id="3457272138385220720">
     <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="3457272138385220721">
-      <property name="value" nameId="tpce.1105725733873" value="ftest" />
+      <property name="value" nameId="tpce.1105725733873" value="hasflag" />
+      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473891462" resolveInfo="alias" />
+    </node>
+  </root>
+  <root id="912616408885912373">
+    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="912616408885912374">
+      <property name="value" nameId="tpce.1105725733873" value="nothasflag" />
+      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473891462" resolveInfo="alias" />
+    </node>
+  </root>
+  <root id="4137387759417349282">
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="4137387759417349283">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="vs0r.4459718605982007336" resolveInfo="IConfigurationItem" />
+    </node>
+    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="4137387759417349284">
+      <property name="value" nameId="tpce.1105725733873" value="convert named struct init to positional stuct init" />
       <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473891462" resolveInfo="alias" />
     </node>
   </root>

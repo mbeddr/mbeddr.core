@@ -17,7 +17,7 @@
   <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="3" implicit="yes" />
   <import index="k146" modelUID="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" version="2" implicit="yes" />
   <import index="51wr" modelUID="r:b31f1c3c-99aa-4f1e-a329-cba27efb1a6b(com.mbeddr.core.buildconfig.structure)" version="1" implicit="yes" />
-  <import index="v7ag" modelUID="r:9596407c-f27a-49d3-abde-3a66293c5b61(com.mbeddr.ext.components.structure)" version="9" implicit="yes" />
+  <import index="v7ag" modelUID="r:9596407c-f27a-49d3-abde-3a66293c5b61(com.mbeddr.ext.components.structure)" version="11" implicit="yes" />
   <import index="8yj6" modelUID="r:b5ef41ef-8594-459c-bc08-a7e214c6fb43(com.mbeddr.ext.components.statemachine.structure)" version="0" implicit="yes" />
   <import index="p7vm" modelUID="r:28fa862e-f94d-4c39-bdf7-a4bdbc773888(com.mbeddr.ext.components.gen_nomw.structure)" version="0" implicit="yes" />
   <roots>
@@ -2042,14 +2042,14 @@
           <link role="port" roleId="v7ag.4491876417845649019" targetNodeId="4338322735134934008" resolveInfo="pLoggerInterface" />
         </node>
       </node>
-      <node role="contents" roleId="v7ag.6041318036222235020" type="v7ag.PortAdapterInInstanceConfig" typeId="v7ag.5172178961828157634" id="5688055005366701426">
+      <node role="contents" roleId="v7ag.6041318036222235020" type="v7ag.PortAdapter" typeId="v7ag.5172178961828157634" id="5688055005366701426">
         <property name="name" nameId="tpck.1169194664001" value="_aoomc" />
         <node role="portRef" roleId="v7ag.6616025724454701213" type="v7ag.AdapterInstancePortRef" typeId="v7ag.6616025724454668918" id="5688055005366701427">
           <link role="instance" roleId="v7ag.6616025724454668919" targetNodeId="4338322735134934005" resolveInfo="nolog" />
           <link role="port" roleId="v7ag.6616025724454668920" targetNodeId="4338322735134934008" resolveInfo="pLoggerInterface" />
         </node>
       </node>
-      <node role="contents" roleId="v7ag.6041318036222235020" type="v7ag.PortAdapterInInstanceConfig" typeId="v7ag.5172178961828157634" id="5688055005366701074">
+      <node role="contents" roleId="v7ag.6041318036222235020" type="v7ag.PortAdapter" typeId="v7ag.5172178961828157634" id="5688055005366701074">
         <property name="name" nameId="tpck.1169194664001" value="_aoopc" />
         <node role="portRef" roleId="v7ag.6616025724454701213" type="v7ag.AdapterInstancePortRef" typeId="v7ag.6616025724454668918" id="5688055005366701075">
           <link role="instance" roleId="v7ag.6616025724454668919" targetNodeId="5688055005366700755" resolveInfo="aooComp" />
@@ -2081,14 +2081,14 @@
           <link role="port" roleId="v7ag.4491876417845649019" targetNodeId="4338322735134934008" resolveInfo="pLoggerInterface" />
         </node>
       </node>
-      <node role="contents" roleId="v7ag.6041318036222235020" type="v7ag.PortAdapterInInstanceConfig" typeId="v7ag.5172178961828157634" id="5688055005366701729">
+      <node role="contents" roleId="v7ag.6041318036222235020" type="v7ag.PortAdapter" typeId="v7ag.5172178961828157634" id="5688055005366701729">
         <property name="name" nameId="tpck.1169194664001" value="_voomc" />
         <node role="portRef" roleId="v7ag.6616025724454701213" type="v7ag.AdapterInstancePortRef" typeId="v7ag.6616025724454668918" id="5688055005366701730">
           <link role="instance" roleId="v7ag.6616025724454668919" targetNodeId="5688055005366701725" resolveInfo="nolog" />
           <link role="port" roleId="v7ag.6616025724454668920" targetNodeId="4338322735134934008" resolveInfo="pLoggerInterface" />
         </node>
       </node>
-      <node role="contents" roleId="v7ag.6041318036222235020" type="v7ag.PortAdapterInInstanceConfig" typeId="v7ag.5172178961828157634" id="5688055005366701731">
+      <node role="contents" roleId="v7ag.6041318036222235020" type="v7ag.PortAdapter" typeId="v7ag.5172178961828157634" id="5688055005366701731">
         <property name="name" nameId="tpck.1169194664001" value="_voopc" />
         <node role="portRef" roleId="v7ag.6616025724454701213" type="v7ag.AdapterInstancePortRef" typeId="v7ag.6616025724454668918" id="5688055005366701732">
           <link role="instance" roleId="v7ag.6616025724454668919" targetNodeId="5688055005366701724" resolveInfo="vooComp" />
