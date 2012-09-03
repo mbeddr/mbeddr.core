@@ -428,10 +428,12 @@
       <property name="name" nameId="tpck.1169194664001" value="TypeSizeConfiguration" />
       <property name="rootable" nameId="tpce.1096454100552" value="true" />
       <property name="iconPath" nameId="tpce.1160488491229" value="${language_descriptor}/icons/typesizeconfig.jpg" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="typeSizeSpec" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
     </node>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="3335993110369795381">
       <property name="name" nameId="tpck.1169194664001" value="TypeSizeSpecification" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="typeSizeSpec" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
     </node>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="3335993110369949928">
@@ -551,6 +553,11 @@
       <property name="virtualPackage" nameId="tpck.1193676396447" value="types" />
       <property name="name" nameId="tpck.1169194664001" value="PtrDiffT" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="8860443239512128056" resolveInfo="PrimitiveType" />
+    </node>
+    <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="333705943706599770">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="types.cast" />
+      <property name="name" nameId="tpck.1169194664001" value="VolatileCast" />
+      <link role="extends" roleId="tpce.1071489389519" targetNodeId="3005510381523579442" resolveInfo="UnaryExpression" />
     </node>
   </roots>
   <root id="8860443239512128050">
@@ -2044,6 +2051,12 @@
     <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="6035922876555486168">
       <property name="value" nameId="tpce.1105725733873" value="represents the size of a pointer" />
       <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473914776" resolveInfo="shortDescription" />
+    </node>
+  </root>
+  <root id="333705943706599770">
+    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="333705943706599771">
+      <property name="value" nameId="tpce.1105725733873" value="volatilecast" />
+      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473891462" resolveInfo="alias" />
     </node>
   </root>
 </model>

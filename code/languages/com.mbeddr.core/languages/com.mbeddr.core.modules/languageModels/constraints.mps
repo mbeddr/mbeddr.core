@@ -127,6 +127,13 @@
       <property name="virtualPackage" nameId="tpck.1193676396447" value="external" />
       <link role="concept" roleId="tp1t.1213093996982" targetNodeId="x27k.6116558314501417934" resolveInfo="ExternalResourceDescriptor" />
     </node>
+    <node type="tp1t.ConceptConstraints" typeId="tp1t.1213093968558" id="4998503984087164855">
+      <link role="concept" roleId="tp1t.1213093996982" targetNodeId="x27k.6116558314501417950" resolveInfo="ObjResourceDescriptor" />
+    </node>
+    <node type="tp1t.ConceptConstraints" typeId="tp1t.1213093968558" id="4998503984087164857">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="external" />
+      <link role="concept" roleId="tp1t.1213093996982" targetNodeId="x27k.6116558314501417952" resolveInfo="HeaderDescriptor" />
+    </node>
   </roots>
   <root id="6437088627575725682">
     <node role="canBeChild" roleId="tp1t.1213106463729" type="tp1t.ConstraintFunction_CanBeAChild" typeId="tp1t.1202989531578" id="6437088627575725683">
@@ -912,7 +919,9 @@
       </node>
     </node>
   </root>
-  <root id="1195383328911860500">
+  <root id="1195383328911860500" />
+  <root id="4998503984087164855" />
+  <root id="4998503984087164857">
     <node role="property" roleId="tp1t.1213098023997" type="tp1t.NodePropertyConstraint" typeId="tp1t.1147467115080" id="1195383328911860501">
       <link role="applicableProperty" roleId="tp1t.1147467295099" targetNodeId="x27k.6116558314501417936" resolveInfo="path" />
       <node role="propertyValidator" roleId="tp1t.1212097481299" type="tp1t.ConstraintFunction_PropertyValidator" typeId="tp1t.1212096972063" id="1195383328911860502">

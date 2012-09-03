@@ -74,15 +74,6 @@
     <node role="binaries" roleId="51wr.5046689135694070731" type="51wr.Executable" typeId="51wr.5046689135693761554" id="6402250878332521849">
       <property name="name" nameId="tpck.1169194664001" value="ExpressionsTest" />
       <property name="isTest" nameId="51wr.3431613015799084476" value="true" />
-      <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="6402250878332521853">
-        <link role="module" roleId="51wr.7717755763392524108" targetNodeId="7646082028326282928" resolveInfo="ExpressionTests1" />
-      </node>
-      <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="3134547887598562219">
-        <link role="module" roleId="51wr.7717755763392524108" targetNodeId="7422744074721184775" resolveInfo="ExpressionTests2" />
-      </node>
-      <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="1136530067488119065">
-        <link role="module" roleId="51wr.7717755763392524108" targetNodeId="7646082028326282913" resolveInfo="HelperFunctions" />
-      </node>
       <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="1873217430999136355">
         <link role="module" roleId="51wr.7717755763392524108" targetNodeId="3134547887598558629" resolveInfo="Driver" />
       </node>
@@ -91,6 +82,15 @@
       </node>
       <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="61358920859970339">
         <link role="module" roleId="51wr.7717755763392524108" targetNodeId="61358920859968943" resolveInfo="UnaryOperatorsTest" />
+      </node>
+      <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="5845931900082279461">
+        <link role="module" roleId="51wr.7717755763392524108" targetNodeId="7646082028326282928" resolveInfo="ExpressionTests1" />
+      </node>
+      <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="5845931900082279462">
+        <link role="module" roleId="51wr.7717755763392524108" targetNodeId="7422744074721184775" resolveInfo="ExpressionTests2" />
+      </node>
+      <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="5845931900082279463">
+        <link role="module" roleId="51wr.7717755763392524108" targetNodeId="7646082028326282913" resolveInfo="HelperFunctions" />
       </node>
     </node>
     <node role="target" roleId="51wr.5323740605968447026" type="51wr.DesktopPlatform" typeId="51wr.5323740605968447022" id="4459718605982728853">

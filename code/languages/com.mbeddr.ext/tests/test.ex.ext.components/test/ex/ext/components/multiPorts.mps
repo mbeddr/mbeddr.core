@@ -12,8 +12,8 @@
   <import index="yz9a" modelUID="r:734c02dd-cc16-4184-99eb-5fd9f43aa37e(com.mbeddr.core.unittest.structure)" version="0" implicit="yes" />
   <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="4" implicit="yes" />
   <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="3" implicit="yes" />
-  <import index="v7ag" modelUID="r:9596407c-f27a-49d3-abde-3a66293c5b61(com.mbeddr.ext.components.structure)" version="9" implicit="yes" />
-  <import index="v0r9" modelUID="r:277b15fc-1383-4213-8385-5a16481fa36c(com.mbeddr.ext.components.test.structure)" version="3" implicit="yes" />
+  <import index="v7ag" modelUID="r:9596407c-f27a-49d3-abde-3a66293c5b61(com.mbeddr.ext.components.structure)" version="11" implicit="yes" />
+  <import index="v0r9" modelUID="r:277b15fc-1383-4213-8385-5a16481fa36c(com.mbeddr.ext.components.test.structure)" version="4" implicit="yes" />
   <import index="p7vm" modelUID="r:28fa862e-f94d-4c39-bdf7-a4bdbc773888(com.mbeddr.ext.components.gen_nomw.structure)" version="0" implicit="yes" />
   <roots>
     <node type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="3457272138385410091">
@@ -181,8 +181,8 @@
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="6165117700225769301" />
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="3457272138385410207">
           <node role="expr" roleId="c4fa.7254843406768833939" type="v0r9.DirectRunnableCall" typeId="v0r9.8230733038424928674" id="3457272138385410208">
-            <link role="config" roleId="v0r9.6105672464780937238" targetNodeId="3457272138385408515" resolveInfo="instances" />
-            <link role="instance" roleId="v0r9.6105672464780971357" targetNodeId="3457272138385408532" resolveInfo="s" />
+            <link role="config" roleId="v7ag.1482737808881210673" targetNodeId="3457272138385408515" resolveInfo="instances" />
+            <link role="instance" roleId="v7ag.1482737808881210674" targetNodeId="3457272138385408532" resolveInfo="s" />
             <link role="runnable" roleId="v0r9.6105672464781003798" targetNodeId="3457272138385410199" resolveInfo="run" />
           </node>
         </node>
@@ -193,8 +193,8 @@
               <property name="value" nameId="mj1l.8860443239512128104" value="1" />
             </node>
             <node role="left" roleId="mj1l.8860443239512128064" type="v0r9.DirectRunnableCall" typeId="v0r9.8230733038424928674" id="3457272138385410214">
-              <link role="config" roleId="v0r9.6105672464780937238" targetNodeId="3457272138385408515" resolveInfo="instances" />
-              <link role="instance" roleId="v0r9.6105672464780971357" targetNodeId="3457272138385408534" resolveInfo="o1" />
+              <link role="config" roleId="v7ag.1482737808881210673" targetNodeId="3457272138385408515" resolveInfo="instances" />
+              <link role="instance" roleId="v7ag.1482737808881210674" targetNodeId="3457272138385408534" resolveInfo="o1" />
               <link role="runnable" roleId="v0r9.6105672464781003798" targetNodeId="3457272138385410189" resolveInfo="getNotificationCount" />
             </node>
           </node>
@@ -206,17 +206,17 @@
               <property name="value" nameId="mj1l.8860443239512128104" value="1" />
             </node>
             <node role="left" roleId="mj1l.8860443239512128064" type="v0r9.DirectRunnableCall" typeId="v0r9.8230733038424928674" id="3457272138385410228">
-              <link role="config" roleId="v0r9.6105672464780937238" targetNodeId="3457272138385408515" resolveInfo="instances" />
+              <link role="config" roleId="v7ag.1482737808881210673" targetNodeId="3457272138385408515" resolveInfo="instances" />
               <link role="runnable" roleId="v0r9.6105672464781003798" targetNodeId="3457272138385410189" resolveInfo="getNotificationCount" />
-              <link role="instance" roleId="v0r9.6105672464780971357" targetNodeId="3457272138385408542" resolveInfo="o2" />
+              <link role="instance" roleId="v7ag.1482737808881210674" targetNodeId="3457272138385408542" resolveInfo="o2" />
             </node>
           </node>
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="6165117700225769300" />
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="6165117700225768728">
           <node role="expr" roleId="c4fa.7254843406768833939" type="v0r9.DirectRunnableCall" typeId="v0r9.8230733038424928674" id="6165117700225768729">
-            <link role="config" roleId="v0r9.6105672464780937238" targetNodeId="3457272138385408515" resolveInfo="instances" />
-            <link role="instance" roleId="v0r9.6105672464780971357" targetNodeId="3457272138385408532" resolveInfo="s" />
+            <link role="config" roleId="v7ag.1482737808881210673" targetNodeId="3457272138385408515" resolveInfo="instances" />
+            <link role="instance" roleId="v7ag.1482737808881210674" targetNodeId="3457272138385408532" resolveInfo="s" />
             <link role="runnable" roleId="v0r9.6105672464781003798" targetNodeId="3457272138385410199" resolveInfo="run" />
           </node>
         </node>
@@ -227,8 +227,8 @@
               <property name="value" nameId="mj1l.8860443239512128104" value="2" />
             </node>
             <node role="left" roleId="mj1l.8860443239512128064" type="v0r9.DirectRunnableCall" typeId="v0r9.8230733038424928674" id="6165117700225768727">
-              <link role="config" roleId="v0r9.6105672464780937238" targetNodeId="3457272138385408515" resolveInfo="instances" />
-              <link role="instance" roleId="v0r9.6105672464780971357" targetNodeId="3457272138385408534" resolveInfo="o1" />
+              <link role="config" roleId="v7ag.1482737808881210673" targetNodeId="3457272138385408515" resolveInfo="instances" />
+              <link role="instance" roleId="v7ag.1482737808881210674" targetNodeId="3457272138385408534" resolveInfo="o1" />
               <link role="runnable" roleId="v0r9.6105672464781003798" targetNodeId="3457272138385410189" resolveInfo="getNotificationCount" />
             </node>
           </node>
@@ -240,9 +240,9 @@
               <property name="value" nameId="mj1l.8860443239512128104" value="2" />
             </node>
             <node role="left" roleId="mj1l.8860443239512128064" type="v0r9.DirectRunnableCall" typeId="v0r9.8230733038424928674" id="6165117700225768723">
-              <link role="config" roleId="v0r9.6105672464780937238" targetNodeId="3457272138385408515" resolveInfo="instances" />
+              <link role="config" roleId="v7ag.1482737808881210673" targetNodeId="3457272138385408515" resolveInfo="instances" />
               <link role="runnable" roleId="v0r9.6105672464781003798" targetNodeId="3457272138385410189" resolveInfo="getNotificationCount" />
-              <link role="instance" roleId="v0r9.6105672464780971357" targetNodeId="3457272138385408542" resolveInfo="o2" />
+              <link role="instance" roleId="v7ag.1482737808881210674" targetNodeId="3457272138385408542" resolveInfo="o2" />
             </node>
           </node>
         </node>

@@ -39,6 +39,7 @@
       <link role="concept" roleId="tp1t.1213093996982" targetNodeId="mj1l.938100142480245061" resolveInfo="OctalNumberLiteral" />
     </node>
     <node type="tp1t.ConceptConstraints" typeId="tp1t.1213093968558" id="3335993110370442127">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="typeSizeSpec" />
       <link role="concept" roleId="tp1t.1213093996982" targetNodeId="mj1l.3335993110369795381" resolveInfo="TypeSizeSpecification" />
     </node>
     <node type="tp1t.ConceptConstraints" typeId="tp1t.1213093968558" id="3989465615018333148">
@@ -50,6 +51,7 @@
       <link role="concept" roleId="tp1t.1213093996982" targetNodeId="mj1l.7892328519581699353" resolveInfo="VoidType" />
     </node>
     <node type="tp1t.ConceptConstraints" typeId="tp1t.1213093968558" id="1423209693057343618">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="typeSizeSpec" />
       <link role="concept" roleId="tp1t.1213093996982" targetNodeId="mj1l.3335993110369795380" resolveInfo="TypeSizeConfiguration" />
     </node>
     <node type="tp1t.ConceptConstraints" typeId="tp1t.1213093968558" id="7265792597306893610">

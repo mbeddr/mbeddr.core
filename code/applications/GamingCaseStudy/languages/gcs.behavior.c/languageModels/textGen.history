@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<history>
+  <StructureModification>
+    <dependencies>
+      <model index="2p3s" modelUID="r:2e6c12b9-986f-4446-8110-70085e7e0e6f(gcs.behavior.constraints)" version="0" />
+      <model index="tyvn" modelUID="r:cd19cb6a-1089-409e-bc4e-8cd71e8dabf0(gcs.behavior.behavior)" version="-1" />
+      <model index="9fod" modelUID="r:a70cf712-dea7-4e2d-9915-a92544ecb387(gcs.behavior.typesystem)" version="0" />
+      <model index="p2fr" modelUID="r:612fb3ec-81ec-44af-90c8-e8c1dd98bf15(gcs.behavior.editor)" version="2" />
+      <model index="f5tg" modelUID="r:679af671-9d47-43e8-92d0-96776a3382da(gcs.behavior.textGen)" version="-1" />
+      <model index="vtna" modelUID="r:672282b8-ae8e-4bae-8e68-f641c0c97181(gcs.behavior.structure)" version="2" />
+      <model index="83m4" modelUID="r:92e4e08a-15e6-4443-85f0-c9e2ce31a967(gcs.behavior.actions)" version="-1" />
+    </dependencies>
+    <RenameModel oldModel="r:2e6c12b9-986f-4446-8110-70085e7e0e6f(gcs.behavior.constraints)" newModel="r:2e6c12b9-986f-4446-8110-70085e7e0e6f(gcs.behavior.c.constraints)" />
+    <RenameModel oldModel="r:a70cf712-dea7-4e2d-9915-a92544ecb387(gcs.behavior.typesystem)" newModel="r:a70cf712-dea7-4e2d-9915-a92544ecb387(gcs.behavior.c.typesystem)" />
+    <RenameModel oldModel="r:679af671-9d47-43e8-92d0-96776a3382da(gcs.behavior.textGen)" newModel="r:679af671-9d47-43e8-92d0-96776a3382da(gcs.behavior.c.textGen)" />
+    <RenameModel oldModel="r:cd19cb6a-1089-409e-bc4e-8cd71e8dabf0(gcs.behavior.behavior)" newModel="r:cd19cb6a-1089-409e-bc4e-8cd71e8dabf0(gcs.behavior.c.behavior)" />
+    <RenameModel oldModel="r:612fb3ec-81ec-44af-90c8-e8c1dd98bf15(gcs.behavior.editor)" newModel="r:612fb3ec-81ec-44af-90c8-e8c1dd98bf15(gcs.behavior.c.editor)" />
+    <RenameModel oldModel="r:92e4e08a-15e6-4443-85f0-c9e2ce31a967(gcs.behavior.actions)" newModel="r:92e4e08a-15e6-4443-85f0-c9e2ce31a967(gcs.behavior.c.actions)" />
+    <RenameModel oldModel="r:672282b8-ae8e-4bae-8e68-f641c0c97181(gcs.behavior.structure)" newModel="r:672282b8-ae8e-4bae-8e68-f641c0c97181(gcs.behavior.c.structure)" />
+  </StructureModification>
+</history>
+

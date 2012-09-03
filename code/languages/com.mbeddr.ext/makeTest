@@ -40,6 +40,13 @@ make test
 PROC_RET=$(($?+$PROC_RET))
 
 echo -------------------------------------
+echo reconnect
+cd ..
+cd reconnect
+make test
+PROC_RET=$(($?+$PROC_RET))
+
+echo -------------------------------------
 echo multiPortsStaticallyWired
 cd ..
 cd multiPortsStaticallyWired
@@ -102,6 +109,13 @@ echo -------------------------------------
 echo Comp-Statemachines
 cd ../
 cd statemachine_components
+make test
+PROC_RET=$(($?+$PROC_RET))
+
+echo -------------------------------------
+echo Comp-Statemachines with Static Wiring
+cd ../
+cd staticWiringSMInComps
 make test
 PROC_RET=$(($?+$PROC_RET))
 
