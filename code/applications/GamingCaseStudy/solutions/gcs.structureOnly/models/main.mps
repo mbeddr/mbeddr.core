@@ -3,7 +3,7 @@
   <persistence version="7" />
   <language namespace="0cdeceaa-07b6-4d76-8b6f-d3cb061360da(gcs.layout)" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
-  <import index="qk4j" modelUID="r:fbdf0175-1168-4524-a12c-ced1c3a691e3(gcs.structureAndLayout.structure)" version="7" implicit="yes" />
+  <import index="qk4j" modelUID="r:fbdf0175-1168-4524-a12c-ced1c3a691e3(gcs.structureAndLayout.structure)" version="8" implicit="yes" />
   <roots>
     <node type="qk4j.RoomLayout" typeId="qk4j.1694060945597187295" id="1694060945597428207">
       <property name="name" nameId="tpck.1169194664001" value="SimpleLayout" />
