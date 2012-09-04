@@ -17,6 +17,7 @@
       <usedLanguages>
         <usedLanguage>0ffa79e2-4db6-483d-83f2-a1bee045a4ae(gcs.behavior.java)</usedLanguage>
         <usedLanguage>0cdeceaa-07b6-4d76-8b6f-d3cb061360da(gcs.structureAndLayout)</usedLanguage>
+        <usedLanguage>ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)</usedLanguage>
         <usedLanguage>b401a680-8325-4110-8fd3-84331ff25bef(jetbrains.mps.lang.generator)</usedLanguage>
         <usedLanguage>d7706f63-9be2-479c-a3da-ae92af1e64d5(jetbrains.mps.lang.generator.generationContext)</usedLanguage>
         <usedLanguage>d4615e3b-d671-4ba9-af01-2b78369b0ba7(jetbrains.mps.lang.pattern)</usedLanguage>
@@ -70,8 +71,8 @@
   </usedDevKits>
   <extendedLanguages>
     <extendedLanguage>0cdeceaa-07b6-4d76-8b6f-d3cb061360da(gcs.structureAndLayout)</extendedLanguage>
-    <extendedLanguage>f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)</extendedLanguage>
     <extendedLanguage>fd392034-7849-419d-9071-12563d152375(jetbrains.mps.baseLanguage.closures)</extendedLanguage>
+    <extendedLanguage>f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)</extendedLanguage>
     <extendedLanguage>83888646-71ce-4f1c-9c53-c54016f6ad4f(jetbrains.mps.baseLanguage.collections)</extendedLanguage>
   </extendedLanguages>
 </language>

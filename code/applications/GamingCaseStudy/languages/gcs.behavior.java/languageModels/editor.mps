@@ -34,6 +34,9 @@
     <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="5710945123077852361">
       <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="o2lk.5710945123077852358" resolveInfo="GameOverStatement" />
     </node>
+    <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="6252690454507665895">
+      <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="o2lk.6252690454507665893" resolveInfo="ExpressionValue" />
+    </node>
   </roots>
   <root id="9181329841236125701">
     <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="9181329841236125703">
@@ -129,6 +132,11 @@
           <property name="flag" nameId="tpc2.1186414551515" value="true" />
         </node>
       </node>
+    </node>
+  </root>
+  <root id="6252690454507665895">
+    <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_RefNode" typeId="tpc2.1073389882823" id="6252690454507665897">
+      <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="o2lk.6252690454507665894" />
     </node>
   </root>
 </model>

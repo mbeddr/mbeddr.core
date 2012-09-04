@@ -88,8 +88,8 @@
   </StructureModification>
   <StructureModification>
     <dependencies>
-      <model index="if52" modelUID="r:09229dfa-dae7-4f02-8edd-dff251c5902c(gcs.layout.constraints)" version="0" />
       <model index="af2w" modelUID="r:35c808e7-fd00-4d01-af64-b4ceb56bd7f0(gcs.layout.intentions)" version="-1" />
+      <model index="if52" modelUID="r:09229dfa-dae7-4f02-8edd-dff251c5902c(gcs.layout.constraints)" version="0" />
       <model index="qk4j" modelUID="r:fbdf0175-1168-4524-a12c-ced1c3a691e3(gcs.layout.structure)" version="3" />
       <model index="jll4" modelUID="r:3b6ad7c4-742c-4895-9760-5f6cbfe34035(gcs.layout.editor)" version="2" />
       <model index="hiey" modelUID="r:89a76686-d90d-482e-8dcb-46c2f087e910(gcs.layout.behavior)" version="-1" />
@@ -104,8 +104,8 @@
   </StructureModification>
   <StructureModification>
     <dependencies>
-      <model index="o2lk" modelUID="r:4b2464a9-1b16-4c64-ba8a-e0e91611090c(gcs.behavior.java.structure)" version="-1" />
       <model index="ajkx" modelUID="r:1891c053-7149-4c9e-b491-339d222404f1(gcs.behavior.java.typesystem)" version="-1" />
+      <model index="o2lk" modelUID="r:4b2464a9-1b16-4c64-ba8a-e0e91611090c(gcs.behavior.java.structure)" version="-1" />
       <model index="qk4j" modelUID="r:fbdf0175-1168-4524-a12c-ced1c3a691e3(gcs.structureAndLayout.structure)" version="4" />
       <model index="jll4" modelUID="r:3b6ad7c4-742c-4895-9760-5f6cbfe34035(gcs.structureAndLayout.editor)" version="3" />
       <model index="gdg9" modelUID="r:8406339c-b257-44d7-9f5a-c50be50c4d59(gcs.behavior.java.editor)" version="-1" />
@@ -147,6 +147,12 @@
       <model index="qk4j" modelUID="r:fbdf0175-1168-4524-a12c-ced1c3a691e3(gcs.structureAndLayout.structure)" version="6" />
     </dependencies>
     <rename id="qk4j.2790106256484074604" type="CONCEPT" from="ItemBehavior" to="AbstractBehavior" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="qk4j" modelUID="r:fbdf0175-1168-4524-a12c-ced1c3a691e3(gcs.structureAndLayout.structure)" version="7" />
+    </dependencies>
+    <rename id="qk4j.6252690454507574874" type="CHILD" from="initExpr" to="initval" />
   </StructureModification>
 </history>
 
