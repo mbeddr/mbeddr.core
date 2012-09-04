@@ -14,6 +14,9 @@
         <generator generatorUID="985c8c6a-64b4-486d-a91e-7d4112742556(jetbrains.mps.baseLanguage#1129914002933)" />
         <generator generatorUID="857d0a79-6f44-4f46-84ed-9c5b42632011(jetbrains.mps.baseLanguage.closures#1199623535494)" />
       </external-templates>
+      <dependencies>
+        <dependency reexport="false">e27cd9b1-875f-4be2-b9c8-023966664e46(gcs.java.rt)</dependency>
+      </dependencies>
       <usedLanguages>
         <usedLanguage>0ffa79e2-4db6-483d-83f2-a1bee045a4ae(gcs.behavior.java)</usedLanguage>
         <usedLanguage>0cdeceaa-07b6-4d76-8b6f-d3cb061360da(gcs.structureAndLayout)</usedLanguage>
@@ -69,6 +72,9 @@
   <usedDevKits>
     <usedDevKit>2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)</usedDevKit>
   </usedDevKits>
+  <runtime>
+    <dependency reexport="false">e27cd9b1-875f-4be2-b9c8-023966664e46(gcs.java.rt)</dependency>
+  </runtime>
   <extendedLanguages>
     <extendedLanguage>0cdeceaa-07b6-4d76-8b6f-d3cb061360da(gcs.structureAndLayout)</extendedLanguage>
     <extendedLanguage>fd392034-7849-419d-9071-12563d152375(jetbrains.mps.baseLanguage.closures)</extendedLanguage>
