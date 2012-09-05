@@ -77,6 +77,11 @@ EnableTimer0Interrupt(unsigned char newState) {
 }
 
 inline void 
+RegisterAtrialISRHandler(void (*newH)(void)) {
+  atrialISRHandler = newH;
+}
+
+inline void 
 RegisterVentricleISRHandler(void (*newH)(void)) {
   ventricleISRHandler = newH;
 }
@@ -167,6 +172,12 @@ void interrupt HighVecISR(void) {
 		Timer0InterruptTripped = OFF;
 		ChangeVentricleInterruptEnabled(ON);
 	} else if (AtrialInterruptTripped) {
+		ChangeAtrialInterruptEnabled(OFF);
+		if(NULL != atrialISRHandler) atrialISRHandler();
 		
+		/* clear interrupt */
+		AtrialInterruptTripped = OFF;
+		Timer0InterruptTripped = OFF;
+		ChangeAtrialInterruptEnabled(ON);
 	}
 }

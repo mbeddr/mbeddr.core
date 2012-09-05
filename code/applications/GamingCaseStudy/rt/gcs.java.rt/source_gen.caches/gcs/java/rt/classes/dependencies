@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dependenciesRoot>
+  <dependency className="gcs.java.rt.classes.Door" file="Door.java" />
+  <dependency className="gcs.java.rt.classes.GameEngine" file="GameEngine.java">
+    <classNode dependClassName="gcs.java.rt.classes.Room" />
+  </dependency>
+  <dependency className="gcs.java.rt.classes.Item" file="Item.java" />
+  <dependency className="gcs.java.rt.classes.Room" file="Room.java">
+    <classNode dependClassName="gcs.java.rt.classes.Item" />
+    <classNode dependClassName="java.util.ArrayList" />
+    <classNode dependClassName="java.util.List" />
+    <classNode dependClassName="jetbrains.mps.internal.collections.runtime.ListSequence" />
+  </dependency>
+</dependenciesRoot>
+
