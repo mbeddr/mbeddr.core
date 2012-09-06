@@ -120,6 +120,10 @@
       <property name="virtualPackage" nameId="tpck.1193676396447" value="types.cast" />
       <link role="conceptDeclaration" roleId="2omo.1233670257997" targetNodeId="mj1l.333705943706599770" resolveInfo="VolatileCast" />
     </node>
+    <node type="2omo.ConceptTextGenDeclaration" typeId="2omo.1233670071145" id="5806551411806856616">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="types" />
+      <link role="conceptDeclaration" roleId="2omo.1233670257997" targetNodeId="mj1l.6035922876555486166" resolveInfo="PtrDiffT" />
+    </node>
   </roots>
   <root id="8118534740657855653">
     <node role="textGenBlock" roleId="2omo.1233749296504" type="2omo.GenerateTextDeclaration" typeId="2omo.1233749247888" id="8118534740657855654">
@@ -883,6 +887,17 @@
           </node>
           <node role="part" roleId="2omo.1237306115446" type="2omo.ConstantStringAppendPart" typeId="2omo.1237305557638" id="333705943706599889">
             <property name="value" nameId="2omo.1237305576108" value=")" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </root>
+  <root id="5806551411806856616">
+    <node role="textGenBlock" roleId="2omo.1233749296504" type="2omo.GenerateTextDeclaration" typeId="2omo.1233749247888" id="5806551411806856617">
+      <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="5806551411806856618">
+        <node role="statement" roleId="tpee.1068581517665" type="2omo.AppendOperation" typeId="2omo.1237306079178" id="5806551411806856619">
+          <node role="part" roleId="2omo.1237306115446" type="2omo.ConstantStringAppendPart" typeId="2omo.1237305557638" id="5806551411806856621">
+            <property name="value" nameId="2omo.1237305576108" value="ptrdiff_t" />
           </node>
         </node>
       </node>
