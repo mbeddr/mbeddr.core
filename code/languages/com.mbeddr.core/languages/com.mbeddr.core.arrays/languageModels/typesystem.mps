@@ -3603,23 +3603,6 @@
                 <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.NullLiteral" typeId="tpee.1070534058343" id="1071471145938679200" />
               </node>
             </node>
-            <node role="ifFalseStatement" roleId="tpee.1082485599094" type="tpee.BlockStatement" typeId="tpee.1082485599095" id="1071471145938709133">
-              <node role="statements" roleId="tpee.1082485599096" type="tpee.StatementList" typeId="tpee.1068580123136" id="1071471145938709134">
-                <node role="statement" roleId="tpee.1068581517665" type="tpd4.WarningStatement" typeId="tpd4.1207055528241" id="1071471145938709135">
-                  <node role="nodeToReport" roleId="tpd4.1227096802790" type="tpee.DotExpression" typeId="tpee.1197027756228" id="1071471145938709159">
-                    <node role="operand" roleId="tpee.1197027771414" type="tpd4.ApplicableNodeReference" typeId="tpd4.1174650418652" id="1071471145938709138">
-                      <link role="applicableNode" roleId="tpd4.1174650432090" targetNodeId="1071471145938677148" resolveInfo="aae" />
-                    </node>
-                    <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="1071471145938709165">
-                      <link role="link" roleId="tp25.1138056516764" targetNodeId="yq40.6282313788306893059" />
-                    </node>
-                  </node>
-                  <node role="warningText" roleId="tpd4.1207055552304" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="1071471145938709166">
-                    <property name="value" nameId="tpee.1070475926801" value="index and/or array size could not be evaluated statically" />
-                  </node>
-                </node>
-              </node>
-            </node>
           </node>
         </node>
       </node>
