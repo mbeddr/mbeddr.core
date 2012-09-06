@@ -132,5 +132,41 @@
     </dependencies>
     <rename id="talm.7593887520504267040" type="CHILD" from="mappableTypes" to="statements" />
   </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="talm" modelUID="r:98c60105-1d91-4aab-8dfe-5ef258ec8eb6(com.mbeddr.core.debug.blext.structure)" version="21" />
+    </dependencies>
+    <rename id="talm.1049567283247346616" type="CONCEPT" from="ContributeStackMappingStatement" to="ContributeSingleStackMappingStatement" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="talm" modelUID="r:98c60105-1d91-4aab-8dfe-5ef258ec8eb6(com.mbeddr.core.debug.blext.structure)" version="22" />
+    </dependencies>
+    <rename id="talm.1049567283247574619" type="CHILD" from="children" to="child" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="talm" modelUID="r:98c60105-1d91-4aab-8dfe-5ef258ec8eb6(com.mbeddr.core.debug.blext.structure)" version="23" />
+    </dependencies>
+    <rename id="talm.1049567283247574619" type="CHILD" from="child" to="children" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="talm" modelUID="r:98c60105-1d91-4aab-8dfe-5ef258ec8eb6(com.mbeddr.core.debug.blext.structure)" version="24" />
+    </dependencies>
+    <rename id="talm.1049567283247634039" type="CHILD" from="watchproviders" to="watchProviders" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="talm" modelUID="r:98c60105-1d91-4aab-8dfe-5ef258ec8eb6(com.mbeddr.core.debug.blext.structure)" version="25" />
+    </dependencies>
+    <rename id="talm.1049567283247768543" type="CHILD" from="steppingIm" to="steppingImplementations" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="talm" modelUID="r:98c60105-1d91-4aab-8dfe-5ef258ec8eb6(com.mbeddr.core.debug.blext.structure)" version="26" />
+    </dependencies>
+    <rename id="talm.1049567283247799777" type="CONCEPT" from="WatchProvider" to="WatchAspect" />
+  </StructureModification>
 </history>
 

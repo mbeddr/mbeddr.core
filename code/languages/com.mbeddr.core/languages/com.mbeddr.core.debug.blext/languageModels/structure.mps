@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model modelUID="r:98c60105-1d91-4aab-8dfe-5ef258ec8eb6(com.mbeddr.core.debug.blext.structure)" version="21">
+<model modelUID="r:98c60105-1d91-4aab-8dfe-5ef258ec8eb6(com.mbeddr.core.debug.blext.structure)" version="27">
   <persistence version="7" />
   <language namespace="c72da2b9-7cce-4447-8389-f407dc1158b7(jetbrains.mps.lang.structure)" />
   <language namespace="af65afd8-f0dd-4942-87d9-63a55f2a9db1(jetbrains.mps.lang.behavior)" />
@@ -8,7 +8,7 @@
   <import index="tpce" modelUID="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" version="0" />
   <import index="cu2c" modelUID="f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.smodel(MPS.Core/jetbrains.mps.smodel@java_stub)" version="-1" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
-  <import index="talm" modelUID="r:98c60105-1d91-4aab-8dfe-5ef258ec8eb6(com.mbeddr.core.debug.blext.structure)" version="21" implicit="yes" />
+  <import index="talm" modelUID="r:98c60105-1d91-4aab-8dfe-5ef258ec8eb6(com.mbeddr.core.debug.blext.structure)" version="27" implicit="yes" />
   <roots>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="8344177855845759727">
       <property name="name" nameId="tpck.1169194664001" value="AddAncestorStrategy" />
@@ -120,6 +120,62 @@
       <property name="virtualPackage" nameId="tpck.1193676396447" value="watches.types.mapper" />
       <property name="name" nameId="tpck.1169194664001" value="AddTypeStatement" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpee.1068580123157" resolveInfo="Statement" />
+    </node>
+    <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="1049567283247346616">
+      <property name="name" nameId="tpck.1169194664001" value="ContributeSingleStackMappingStatement" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="callstack" />
+      <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpee.1068580123157" resolveInfo="Statement" />
+    </node>
+    <node type="tpce.EnumerationDataTypeDeclaration" typeId="tpce.1082978164219" id="1049567283247348318">
+      <property name="name" nameId="tpck.1169194664001" value="FrameMappingState" />
+      <property name="memberIdentifierPolicy" nameId="tpce.1197591154882" value="derive_from_presentation" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="callstack" />
+      <link role="memberDataType" roleId="tpce.1083171729157" targetNodeId="tpck.1082983041843" resolveInfo="string" />
+    </node>
+    <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="1049567283247574597">
+      <property name="name" nameId="tpck.1169194664001" value="InspectChildrenForIStepIntoableStatement" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="stepping" />
+      <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpee.1068580123157" resolveInfo="Statement" />
+    </node>
+    <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="1049567283247634029">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="watches" />
+      <property name="name" nameId="tpck.1169194664001" value="AddWatchProviderStatement" />
+      <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpee.1068580123157" resolveInfo="Statement" />
+    </node>
+    <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="1049567283247668459">
+      <property name="name" nameId="tpck.1169194664001" value="DebuggerExtension" />
+      <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpee.1068580123157" resolveInfo="Statement" />
+    </node>
+    <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="1049567283247679775">
+      <property name="name" nameId="tpck.1169194664001" value="DebuggerAsepct" />
+      <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
+    </node>
+    <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="1049567283247756975">
+      <property name="name" nameId="tpck.1169194664001" value="SteppingAspect" />
+      <link role="extends" roleId="tpce.1071489389519" targetNodeId="1049567283247679775" resolveInfo="DebuggerAsepct" />
+    </node>
+    <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="1049567283247768536">
+      <property name="name" nameId="tpck.1169194664001" value="SteppingImplemenation" />
+      <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
+    </node>
+    <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="1049567283247768540">
+      <property name="name" nameId="tpck.1169194664001" value="StepOverImplementation" />
+      <link role="extends" roleId="tpce.1071489389519" targetNodeId="1049567283247768536" resolveInfo="SteppingImplemenation" />
+    </node>
+    <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="1049567283247799777">
+      <property name="name" nameId="tpck.1169194664001" value="WatchAspect" />
+      <link role="extends" roleId="tpce.1071489389519" targetNodeId="1049567283247679775" resolveInfo="DebuggerAsepct" />
+    </node>
+    <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="1049567283247799793">
+      <property name="name" nameId="tpck.1169194664001" value="WatchProviderImplementation" />
+      <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
+    </node>
+    <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="1049567283247838054">
+      <property name="name" nameId="tpck.1169194664001" value="Bla" />
+      <link role="extends" roleId="tpce.1071489389519" targetNodeId="1i04.1225194472830" resolveInfo="ConceptMethodDeclaration" />
+    </node>
+    <node type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="1049567283247851487">
+      <property name="name" nameId="tpck.1169194664001" value="IDebuggable" />
     </node>
   </roots>
   <root id="8344177855845759727">
@@ -396,5 +452,102 @@
       <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473891462" resolveInfo="alias" />
     </node>
   </root>
+  <root id="1049567283247346616">
+    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="1049567283247372196">
+      <property name="value" nameId="tpce.1105725733873" value="contribute frame" />
+      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473891462" resolveInfo="alias" />
+    </node>
+    <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="1049567283247348322">
+      <property name="name" nameId="tpck.1169194664001" value="mappingState" />
+      <link role="dataType" roleId="tpce.1082985295845" targetNodeId="1049567283247348318" resolveInfo="FrameMappingState" />
+    </node>
+    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="1049567283247346619">
+      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
+      <property name="role" nameId="tpce.1071599776563" value="routineName" />
+      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="tpee.1068431790191" resolveInfo="Expression" />
+    </node>
+  </root>
+  <root id="1049567283247348318">
+    <node role="member" roleId="tpce.1083172003582" type="tpce.EnumerationMemberDeclaration" typeId="tpce.1083171877298" id="1049567283247348319">
+      <property name="externalValue" nameId="tpce.1083923523172" value="hide" />
+      <property name="internalValue" nameId="tpce.1083923523171" value="hide" />
+    </node>
+    <node role="member" roleId="tpce.1083172003582" type="tpce.EnumerationMemberDeclaration" typeId="tpce.1083171877298" id="1049567283247348320">
+      <property name="externalValue" nameId="tpce.1083923523172" value="map" />
+      <property name="internalValue" nameId="tpce.1083923523171" value="map" />
+    </node>
+  </root>
+  <root id="1049567283247574597">
+    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="1049567283247574619">
+      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
+      <property name="role" nameId="tpce.1071599776563" value="children" />
+      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1..n" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="tpee.1068431790191" resolveInfo="Expression" />
+    </node>
+    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="1049567283247621206">
+      <property name="value" nameId="tpce.1105725733873" value="contribute stepintoables" />
+      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473891462" resolveInfo="alias" />
+    </node>
+  </root>
+  <root id="1049567283247634029">
+    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="1049567283247634039">
+      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
+      <property name="role" nameId="tpce.1071599776563" value="watchProviders" />
+      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1..n" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="tpee.1068431790191" resolveInfo="Expression" />
+    </node>
+  </root>
+  <root id="1049567283247668459">
+    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="1049567283247668461">
+      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
+      <property name="role" nameId="tpce.1071599776563" value="aspects" />
+      <property name="sourceCardinality" nameId="tpce.1071599893252" value="0..n" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="1049567283247679775" resolveInfo="DebuggerAsepct" />
+    </node>
+  </root>
+  <root id="1049567283247679775" />
+  <root id="1049567283247756975">
+    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="1049567283247768543">
+      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
+      <property name="role" nameId="tpce.1071599776563" value="steppingImplementations" />
+      <property name="sourceCardinality" nameId="tpce.1071599893252" value="0..n" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="1049567283247768536" resolveInfo="SteppingImplemenation" />
+    </node>
+  </root>
+  <root id="1049567283247768536" />
+  <root id="1049567283247768540">
+    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="1049567283247781169">
+      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
+      <property name="role" nameId="tpce.1071599776563" value="si" />
+      <property name="sourceCardinality" nameId="tpce.1071599893252" value="0..n" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="1049567283247768536" resolveInfo="SteppingImplemenation" />
+    </node>
+  </root>
+  <root id="1049567283247799777">
+    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="1049567283247818918">
+      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
+      <property name="role" nameId="tpce.1071599776563" value="wpi" />
+      <property name="sourceCardinality" nameId="tpce.1071599893252" value="0..n" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="1049567283247799793" resolveInfo="WatchProviderImplementation" />
+    </node>
+  </root>
+  <root id="1049567283247799793">
+    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="1049567283247799809">
+      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
+      <property name="role" nameId="tpce.1071599776563" value="expr" />
+      <property name="sourceCardinality" nameId="tpce.1071599893252" value="0..n" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="tpee.1068431790191" resolveInfo="Expression" />
+    </node>
+  </root>
+  <root id="1049567283247838054">
+    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="1049567283247975206">
+      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
+      <property name="role" nameId="tpce.1071599776563" value="aspects" />
+      <property name="sourceCardinality" nameId="tpce.1071599893252" value="0..n" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="1049567283247679775" resolveInfo="DebuggerAsepct" />
+    </node>
+  </root>
+  <root id="1049567283247851487" />
 </model>
 
