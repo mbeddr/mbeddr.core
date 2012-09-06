@@ -9,6 +9,7 @@
       <modulePath path="${project}/languages/gcs.behavior.c/behavior.c.mpl" folder="languages" />
       <modulePath path="${project}/languages/gcs.behavior.java/java.mpl" folder="languages" />
       <modulePath path="${project}/languages/gcs.layout/layout.mpl" folder="languages" />
+      <modulePath path="${project}/rt/gcs.java.rt/rt.msd" folder="languages" />
       <modulePath path="${project}/solutions/gcs.structureAndCCode/structureAndCCode.msd" folder="exampleGames" />
       <modulePath path="${project}/solutions/gcs.structureAndJavaCode/structureAndJavaCode.msd" folder="exampleGames" />
       <modulePath path="${project}/solutions/gcs.structureOnly/structureOnly.msd" folder="exampleGames" />
