@@ -186,6 +186,9 @@
       <property name="name" nameId="tpck.1169194664001" value="CommentedSwitchMember" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="3134547887598524926" resolveInfo="SwitchMember" />
     </node>
+    <node type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="5806551411806985509">
+      <property name="name" nameId="tpck.1169194664001" value="ICanBeStoredInRegister" />
+    </node>
   </roots>
   <root id="4185783222026464515">
     <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="4058325937810995945">
@@ -246,6 +249,9 @@
     </node>
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="4137387759418316506">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="yq40.1071471145938784281" resolveInfo="IAllowsUnsizedArrays" />
+    </node>
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="5806551411807009216">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="5806551411806985509" resolveInfo="ICanBeStoredInRegister" />
     </node>
   </root>
   <root id="4185783222026475861">
@@ -815,6 +821,12 @@
   <root id="1656687801206406078">
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="1656687801206406079">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="vs0r.7024921229556133803" resolveInfo="ICommentedCode" />
+    </node>
+  </root>
+  <root id="5806551411806985509">
+    <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="5806551411806985511">
+      <property name="name" nameId="tpck.1169194664001" value="storeInRegister" />
+      <link role="dataType" roleId="tpce.1082985295845" targetNodeId="tpck.1082983657063" resolveInfo="boolean" />
     </node>
   </root>
 </model>

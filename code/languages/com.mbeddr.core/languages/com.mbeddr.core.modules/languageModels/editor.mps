@@ -471,6 +471,9 @@
   </root>
   <root id="7892328519581704410">
     <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="7892328519581704412">
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Component" typeId="tpc2.1078939183254" id="5806551411807137144">
+        <link role="editorComponent" roleId="tpc2.1078939183255" targetNodeId="j4gk.5806551411806995803" resolveInfo="IStoreInRegisterComponent" />
+      </node>
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_RefNode" typeId="tpc2.1073389882823" id="7892328519581704418">
         <property name="attractsFocus" nameId="tpc2.1130859485024" value="1" />
         <property name="emptyNoTargetText" nameId="tpc2.1214560368769" value="true" />
@@ -540,6 +543,15 @@
         </node>
       </node>
       <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Indent" typeId="tpc2.1237303669825" id="8257817273846903824" />
+    </node>
+    <node role="inspectedCellModel" roleId="tpc2.1078153129734" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="5806551411807172108">
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="5806551411807172111">
+        <property name="text" nameId="tpc2.1073389577007" value="register:" />
+      </node>
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Property" typeId="tpc2.1073389658414" id="5806551411807172113">
+        <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="c4fa.5806551411806985511" resolveInfo="storeInRegister" />
+      </node>
+      <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Indent" typeId="tpc2.1237303669825" id="5806551411807172110" />
     </node>
   </root>
   <root id="7892328519581768557">
@@ -1058,6 +1070,9 @@
           <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.SelectableStyleSheetItem" typeId="tpc2.1186414928363" id="3779779187805480224">
             <property name="flag" nameId="tpc2.1186414551515" value="false" />
           </node>
+        </node>
+        <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Component" typeId="tpc2.1078939183254" id="5806551411807060973">
+          <link role="editorComponent" roleId="tpc2.1078939183255" targetNodeId="j4gk.5806551411806995803" resolveInfo="IStoreInRegisterComponent" />
         </node>
         <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_RefNode" typeId="tpc2.1073389882823" id="6610873504380339028">
           <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="mj1l.318113533128716676" />
