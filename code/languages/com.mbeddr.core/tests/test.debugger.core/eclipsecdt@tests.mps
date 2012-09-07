@@ -129,10 +129,6 @@
                   <link role="classifier" roleId="tpee.1107535924139" targetNodeId="e2lb.~IllegalArgumentException" resolveInfo="IllegalArgumentException" />
                 </node>
               </node>
-              <node role="statement" roleId="tpee.1068581517665" type="tpe3.AssertSame" typeId="tpe3.1171985735491" id="1049567283247289794">
-                <node role="expected" roleId="tpe3.8427750732757990724" type="tpee.Expression" typeId="tpee.1068431790191" id="1049567283247289795" />
-                <node role="actual" roleId="tpe3.8427750732757990725" type="tpee.Expression" typeId="tpee.1068431790191" id="1049567283247289796" />
-              </node>
             </node>
             <node role="catchClause" roleId="tpee.1164903496223" type="tpee.CatchClause" typeId="tpee.1164903280175" id="4114632847307434902">
               <node role="throwable" roleId="tpee.1164903359217" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="4114632847307434903">
