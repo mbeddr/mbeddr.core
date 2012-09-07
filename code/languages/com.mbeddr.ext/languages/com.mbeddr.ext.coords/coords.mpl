@@ -6,6 +6,9 @@
   <accessoryModels />
   <generators />
   <sourcePath />
+  <dependencies>
+    <dependency reexport="false">cc7da2f6-419f-4133-a811-31fcd3295a85(jetbrains.mps.debugger.api.api)</dependency>
+  </dependencies>
   <usedLanguages>
     <usedLanguage>61c69711-ed61-4850-81d9-7714ff227fb0(com.mbeddr.core.expressions)</usedLanguage>
   </usedLanguages>

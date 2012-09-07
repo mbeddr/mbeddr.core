@@ -167,6 +167,10 @@
       <property name="name" nameId="tpck.1169194664001" value="makeAssignmentFromLVD" />
       <link role="applicableConcept" roleId="tpc2.1139535219968" targetNodeId="c4fa.4185783222026475238" resolveInfo="LocalVariableDeclaration" />
     </node>
+    <node type="tpc2.EditorComponentDeclaration" typeId="tpc2.1078938745671" id="5806551411806995803">
+      <property name="name" nameId="tpck.1169194664001" value="IStoreInRegisterComponent" />
+      <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="c4fa.5806551411806985509" resolveInfo="ICanBeStoredInRegister" />
+    </node>
   </roots>
   <root id="4185783222026475242">
     <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="4185783222026475244">
@@ -185,6 +189,9 @@
             </node>
           </node>
         </node>
+      </node>
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Component" typeId="tpc2.1078939183254" id="5806551411807042852">
+        <link role="editorComponent" roleId="tpc2.1078939183255" targetNodeId="5806551411806995803" resolveInfo="IStoreInRegisterComponent" />
       </node>
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_RefNode" typeId="tpc2.1073389882823" id="4185783222026475247">
         <property name="attractsFocus" nameId="tpc2.1130859485024" value="2" />
@@ -2132,6 +2139,23 @@
                     <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_DeleteOperation" typeId="tp25.1140133623887" id="3378779091585218290" />
                   </node>
                 </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </root>
+  <root id="5806551411806995803">
+    <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="5806551411806995805">
+      <property name="text" nameId="tpc2.1073389577007" value="register" />
+      <node role="renderingCondition" roleId="tpc2.1142887637401" type="tpc2.QueryFunction_NodeCondition" typeId="tpc2.1142886221719" id="5806551411806995806">
+        <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="5806551411806995807">
+          <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="5806551411806995808">
+            <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="5806551411806995830">
+              <node role="operand" roleId="tpee.1197027771414" type="tpc2.ConceptFunctionParameter_node" typeId="tpc2.1142886811589" id="5806551411806995809" />
+              <node role="operation" roleId="tpee.1197027833540" type="tp25.SPropertyAccess" typeId="tp25.1138056022639" id="5806551411806995839">
+                <link role="property" roleId="tp25.1138056395725" targetNodeId="c4fa.5806551411806985511" resolveInfo="storeInRegister" />
               </node>
             </node>
           </node>

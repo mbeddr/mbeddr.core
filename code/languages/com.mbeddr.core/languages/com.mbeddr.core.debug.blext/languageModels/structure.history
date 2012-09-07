@@ -6,5 +6,167 @@
     </dependencies>
     <rename id="talm.8483575004407084862" type="CONCEPT" from="MapExpression" to="MapStatement" />
   </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="talm" modelUID="r:98c60105-1d91-4aab-8dfe-5ef258ec8eb6(com.mbeddr.core.debug.blext.structure)" version="0" />
+    </dependencies>
+    <rename id="talm.6138262745240303521" type="CHILD" from="list" to="body" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="talm" modelUID="r:98c60105-1d91-4aab-8dfe-5ef258ec8eb6(com.mbeddr.core.debug.blext.structure)" version="1" />
+    </dependencies>
+    <rename id="talm.6138262745240199982" type="CONCEPT" from="DebuggerApiMethod" to="DebuggerMethod" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="talm" modelUID="r:98c60105-1d91-4aab-8dfe-5ef258ec8eb6(com.mbeddr.core.debug.blext.structure)" version="2" />
+    </dependencies>
+    <rename id="talm.6138262745240628530" type="CONCEPT" from="contributeWatchables" to="ContributeWatchables" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="talm" modelUID="r:98c60105-1d91-4aab-8dfe-5ef258ec8eb6(com.mbeddr.core.debug.blext.structure)" version="3" />
+    </dependencies>
+    <rename id="talm.6138262745240628530" type="CONCEPT" from="ContributeWatchables" to="ContributeWatchablesMethod" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="talm" modelUID="r:98c60105-1d91-4aab-8dfe-5ef258ec8eb6(com.mbeddr.core.debug.blext.structure)" version="4" />
+    </dependencies>
+    <rename id="talm.8483575004407084862" type="CONCEPT" from="MapStatement" to="MapByNameStatement" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="talm" modelUID="r:98c60105-1d91-4aab-8dfe-5ef258ec8eb6(com.mbeddr.core.debug.blext.structure)" version="5" />
+    </dependencies>
+    <rename id="talm.8483575004407084868" type="CHILD" from="contextNode" to="highlightedNode" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="talm" modelUID="r:98c60105-1d91-4aab-8dfe-5ef258ec8eb6(com.mbeddr.core.debug.blext.structure)" version="6" />
+    </dependencies>
+    <rename id="talm.8236113172499363383" type="CHILD" from="name" to="varName" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="talm" modelUID="r:98c60105-1d91-4aab-8dfe-5ef258ec8eb6(com.mbeddr.core.debug.blext.structure)" version="7" />
+    </dependencies>
+    <rename id="talm.8236113172499161521" type="PROPERTY" from="category" to="variableKind" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="talm" modelUID="r:98c60105-1d91-4aab-8dfe-5ef258ec8eb6(com.mbeddr.core.debug.blext.structure)" version="8" />
+    </dependencies>
+    <rename id="talm.8236113172499118431" type="CHILD" from="variableKind" to="categoryName" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="talm" modelUID="r:98c60105-1d91-4aab-8dfe-5ef258ec8eb6(com.mbeddr.core.debug.blext.structure)" version="9" />
+    </dependencies>
+    <rename id="talm.2011139961867340775" type="CONCEPT" from="MapToSimpleVariable" to="ResolveChildToWatchablesStatement" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="talm" modelUID="r:98c60105-1d91-4aab-8dfe-5ef258ec8eb6(com.mbeddr.core.debug.blext.structure)" version="10" />
+    </dependencies>
+    <rename id="talm.2011139961867340776" type="CHILD" from="varName" to="type" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="talm" modelUID="r:98c60105-1d91-4aab-8dfe-5ef258ec8eb6(com.mbeddr.core.debug.blext.structure)" version="11" />
+    </dependencies>
+    <rename id="talm.2011139961867340777" type="CHILD" from="value" to="iconProvider" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="talm" modelUID="r:98c60105-1d91-4aab-8dfe-5ef258ec8eb6(com.mbeddr.core.debug.blext.structure)" version="12" />
+    </dependencies>
+    <rename id="talm.2011139961867340776" type="CHILD" from="type" to="typeMapper" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="talm" modelUID="r:98c60105-1d91-4aab-8dfe-5ef258ec8eb6(com.mbeddr.core.debug.blext.structure)" version="13" />
+    </dependencies>
+    <rename id="talm.2011139961867406242" type="CONCEPT" from="IndexExpresion" to="IndexExpression" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="talm" modelUID="r:98c60105-1d91-4aab-8dfe-5ef258ec8eb6(com.mbeddr.core.debug.blext.structure)" version="14" />
+    </dependencies>
+    <rename id="talm.2011139961867340775" type="CONCEPT" from="ResolveChildToWatchablesStatement" to="ChildrenToWatchablesStatement" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="talm" modelUID="r:98c60105-1d91-4aab-8dfe-5ef258ec8eb6(com.mbeddr.core.debug.blext.structure)" version="15" />
+    </dependencies>
+    <rename id="talm.2011139961867340809" type="CHILD" from="nameGenerator" to="namePattern" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="talm" modelUID="r:98c60105-1d91-4aab-8dfe-5ef258ec8eb6(com.mbeddr.core.debug.blext.structure)" version="16" />
+    </dependencies>
+    <rename id="talm.7634928937261243268" type="CONCEPT" from="ValueMappingRule" to="DefaultValueMappingRule" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="talm" modelUID="r:98c60105-1d91-4aab-8dfe-5ef258ec8eb6(com.mbeddr.core.debug.blext.structure)" version="17" />
+    </dependencies>
+    <rename id="talm.7634928937261243268" type="CONCEPT" from="DefaultValueMappingRule" to="ValueMappingRule" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="talm" modelUID="r:98c60105-1d91-4aab-8dfe-5ef258ec8eb6(com.mbeddr.core.debug.blext.structure)" version="18" />
+    </dependencies>
+    <rename id="talm.7593887520504267040" type="CHILD" from="types" to="mappableTypes" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="talm" modelUID="r:98c60105-1d91-4aab-8dfe-5ef258ec8eb6(com.mbeddr.core.debug.blext.structure)" version="19" />
+    </dependencies>
+    <rename id="talm.7593887520504276238" type="CONCEPT" from="IMappableType" to="ITypeMapper" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="talm" modelUID="r:98c60105-1d91-4aab-8dfe-5ef258ec8eb6(com.mbeddr.core.debug.blext.structure)" version="20" />
+    </dependencies>
+    <rename id="talm.7593887520504267040" type="CHILD" from="mappableTypes" to="statements" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="talm" modelUID="r:98c60105-1d91-4aab-8dfe-5ef258ec8eb6(com.mbeddr.core.debug.blext.structure)" version="21" />
+    </dependencies>
+    <rename id="talm.1049567283247346616" type="CONCEPT" from="ContributeStackMappingStatement" to="ContributeSingleStackMappingStatement" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="talm" modelUID="r:98c60105-1d91-4aab-8dfe-5ef258ec8eb6(com.mbeddr.core.debug.blext.structure)" version="22" />
+    </dependencies>
+    <rename id="talm.1049567283247574619" type="CHILD" from="children" to="child" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="talm" modelUID="r:98c60105-1d91-4aab-8dfe-5ef258ec8eb6(com.mbeddr.core.debug.blext.structure)" version="23" />
+    </dependencies>
+    <rename id="talm.1049567283247574619" type="CHILD" from="child" to="children" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="talm" modelUID="r:98c60105-1d91-4aab-8dfe-5ef258ec8eb6(com.mbeddr.core.debug.blext.structure)" version="24" />
+    </dependencies>
+    <rename id="talm.1049567283247634039" type="CHILD" from="watchproviders" to="watchProviders" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="talm" modelUID="r:98c60105-1d91-4aab-8dfe-5ef258ec8eb6(com.mbeddr.core.debug.blext.structure)" version="25" />
+    </dependencies>
+    <rename id="talm.1049567283247768543" type="CHILD" from="steppingIm" to="steppingImplementations" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="talm" modelUID="r:98c60105-1d91-4aab-8dfe-5ef258ec8eb6(com.mbeddr.core.debug.blext.structure)" version="26" />
+    </dependencies>
+    <rename id="talm.1049567283247799777" type="CONCEPT" from="WatchProvider" to="WatchAspect" />
+  </StructureModification>
 </history>
 
