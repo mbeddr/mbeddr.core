@@ -168,5 +168,29 @@
     </dependencies>
     <rename id="talm.1049567283247799777" type="CONCEPT" from="WatchProvider" to="WatchAspect" />
   </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="talm" modelUID="r:98c60105-1d91-4aab-8dfe-5ef258ec8eb6(com.mbeddr.core.debug.blext.structure)" version="27" />
+    </dependencies>
+    <rename id="talm.8293148416550841472" type="CONCEPT" from="StepOverResult" to="BreakpointAnnotation" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="talm" modelUID="r:98c60105-1d91-4aab-8dfe-5ef258ec8eb6(com.mbeddr.core.debug.blext.structure)" version="28" />
+    </dependencies>
+    <rename id="talm.4315555120115507035" type="CONCEPT" from="TestCallsTack" to="TestCallStack" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="talm" modelUID="r:98c60105-1d91-4aab-8dfe-5ef258ec8eb6(com.mbeddr.core.debug.blext.structure)" version="29" />
+    </dependencies>
+    <rename id="talm.4315555120115507035" type="CONCEPT" from="TestCallStack" to="TestCallStackAnnotation" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="talm" modelUID="r:98c60105-1d91-4aab-8dfe-5ef258ec8eb6(com.mbeddr.core.debug.blext.structure)" version="30" />
+    </dependencies>
+    <rename id="talm.4315555120115517870" type="CONCEPT" from="CallStackDeclaratio" to="DebuggerTestModule" />
+  </StructureModification>
 </history>
 
