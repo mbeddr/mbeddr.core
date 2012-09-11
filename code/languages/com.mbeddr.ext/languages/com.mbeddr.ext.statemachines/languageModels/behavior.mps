@@ -3783,6 +3783,7 @@
           </node>
           <node role="body" roleId="tpee.1154032183016" type="tpee.StatementList" typeId="tpee.1068580123136" id="8855353581012878717">
             <node role="statement" roleId="tpee.1068581517665" type="talm.HideById" typeId="talm.8483575004407054697" id="396290619978115641">
+              <property name="policy" nameId="talm.396290619978151859" value="1" />
               <node role="varName" roleId="talm.8483575004407054700" type="tpee.PlusExpression" typeId="tpee.1068581242875" id="396290619978115645">
                 <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="396290619978115648">
                   <property name="value" nameId="tpee.1070475926801" value="___" />
@@ -3808,6 +3809,12 @@
             <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkListAccess" typeId="tp25.1138056282393" id="8855353581012878712">
               <link role="link" roleId="tp25.1138056546658" targetNodeId="clqz.1786180596061248896" />
             </node>
+          </node>
+        </node>
+        <node role="statement" roleId="tpee.1068581517665" type="talm.HideById" typeId="talm.8483575004407054697" id="396290619978126940">
+          <property name="policy" nameId="talm.396290619978151859" value="1" />
+          <node role="varName" roleId="talm.8483575004407054700" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="396290619978126942">
+            <property name="value" nameId="tpee.1070475926801" value="___args" />
           </node>
         </node>
       </node>

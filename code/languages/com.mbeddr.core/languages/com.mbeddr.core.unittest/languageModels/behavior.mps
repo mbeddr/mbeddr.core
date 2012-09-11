@@ -869,11 +869,13 @@
       <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="5404382561657279787" />
       <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="5404382561657279788">
         <node role="statement" roleId="tpee.1068581517665" type="talm.HideById" typeId="talm.8483575004407054697" id="6541377460051510246">
+          <property name="policy" nameId="talm.396290619978151859" value="0" />
           <node role="varName" roleId="talm.8483575004407054700" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="6541377460051510247">
             <property name="value" nameId="tpee.1070475926801" value="__failures" />
           </node>
         </node>
         <node role="statement" roleId="tpee.1068581517665" type="talm.HideById" typeId="talm.8483575004407054697" id="1245513274742100688">
+          <property name="policy" nameId="talm.396290619978151859" value="0" />
           <node role="varName" roleId="talm.8483575004407054700" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="1245513274742100690">
             <property name="value" nameId="tpee.1070475926801" value="__failuresVal" />
           </node>
@@ -1691,6 +1693,7 @@
       <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="8237788667541741076">
         <node role="statement" roleId="tpee.1068581517665" type="talm.HideById" typeId="talm.8483575004407054697" id="8237788667541741103">
           <property name="variableKind" nameId="talm.8237788667541741106" value="argument" />
+          <property name="policy" nameId="talm.396290619978151859" value="0" />
           <node role="varName" roleId="talm.8483575004407054700" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="8237788667541741105">
             <property name="value" nameId="tpee.1070475926801" value="__failures" />
           </node>
