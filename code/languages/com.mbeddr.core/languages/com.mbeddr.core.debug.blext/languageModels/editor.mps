@@ -160,6 +160,9 @@
   </root>
   <root id="8483575004407054701">
     <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="8483575004407054703">
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Property" typeId="tpc2.1073389658414" id="396290619978151861">
+        <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="talm.396290619978151859" resolveInfo="policy" />
+      </node>
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="8483575004407054706">
         <property name="text" nameId="tpc2.1073389577007" value="hide" />
         <link role="styleClass" roleId="tpc2.1186406756722" targetNodeId="tpen.1186415544875" resolveInfo="KeyWord" />
