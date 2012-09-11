@@ -201,7 +201,7 @@
       <link role="concept" roleId="1i04.1225194240799" targetNodeId="v7ag.8105003328815054492" resolveInfo="InterfaceType" />
     </node>
     <node type="1i04.ConceptBehavior" typeId="1i04.1225194240794" id="4429602430542866019">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="comp.instances" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="comp.instances.portref" />
       <link role="concept" roleId="1i04.1225194240799" targetNodeId="v7ag.4491876417845649017" resolveInfo="InstancePortRef" />
     </node>
     <node type="1i04.ConceptBehavior" typeId="1i04.1225194240794" id="4075471389393921686">
@@ -222,6 +222,10 @@
     </node>
     <node type="1i04.ConceptBehavior" typeId="1i04.1225194240794" id="1482737808881210675">
       <link role="concept" roleId="1i04.1225194240799" targetNodeId="v7ag.1482737808881210672" resolveInfo="IReferencesInstance" />
+    </node>
+    <node type="1i04.ConceptBehavior" typeId="1i04.1225194240794" id="3444913373458849541">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="comp.instances.portref" />
+      <link role="concept" roleId="1i04.1225194240799" targetNodeId="v7ag.3444913373458562837" resolveInfo="PortRef" />
     </node>
   </roots>
   <root id="4491876417845484936">
@@ -10182,6 +10186,11 @@
   <root id="1482737808881210675">
     <node role="constructor" roleId="1i04.1225194240801" type="1i04.ConceptConstructorDeclaration" typeId="1i04.1225194413805" id="1482737808881210676">
       <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="1482737808881210677" />
+    </node>
+  </root>
+  <root id="3444913373458849541">
+    <node role="constructor" roleId="1i04.1225194240801" type="1i04.ConceptConstructorDeclaration" typeId="1i04.1225194413805" id="3444913373458849542">
+      <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="3444913373458849543" />
     </node>
   </root>
 </model>
