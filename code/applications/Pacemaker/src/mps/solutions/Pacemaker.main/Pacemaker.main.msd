@@ -5,6 +5,7 @@
   </models>
   <sourcePath />
   <usedLanguages>
+    <usedLanguage>d62d6e81-9ae0-456b-b2c3-d71c0f373ded(com.mbeddr.analyses.nusmv.statemachine)</usedLanguage>
     <usedLanguage>13a36f90-83c5-4bf6-9dd6-70e455f1ef36(com.mbeddr.ext.components.statemachine)</usedLanguage>
   </usedLanguages>
   <usedDevKits>
