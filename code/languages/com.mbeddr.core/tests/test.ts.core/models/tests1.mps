@@ -1808,15 +1808,15 @@
                 </node>
                 <node role="exprs" roleId="c4fa.5095889050031622571" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="36486875645949618">
                   <property name="value" nameId="mj1l.8860443239512128104" value="2.1" />
-                  <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodePropertiesContainer" typeId="tp5g.1215507532627" id="8515777736166784014">
-                    <node role="properties" roleId="tp5g.1215507909023" type="tp5g.NodeErrorPropety" typeId="tp5g.1215507671101" id="8515777736166784015" />
-                  </node>
                 </node>
                 <node role="exprs" roleId="c4fa.5095889050031622571" type="yq40.StringLiteral" typeId="yq40.6113173064526131575" id="36486875645949620">
                   <property name="value" nameId="yq40.6113173064526131578" value="Hello" />
-                  <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodePropertiesContainer" typeId="tp5g.1215507532627" id="8515777736166784016">
-                    <node role="properties" roleId="tp5g.1215507909023" type="tp5g.NodeErrorPropety" typeId="tp5g.1215507671101" id="8515777736166784017" />
+                  <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodePropertiesContainer" typeId="tp5g.1215507532627" id="8860528120401621999">
+                    <node role="properties" roleId="tp5g.1215507909023" type="tp5g.NodeErrorPropety" typeId="tp5g.1215507671101" id="8860528120401622000" />
                   </node>
+                </node>
+                <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodePropertiesContainer" typeId="tp5g.1215507532627" id="8860528120401608752">
+                  <node role="properties" roleId="tp5g.1215507909023" type="tp5g.NodeErrorPropety" typeId="tp5g.1215507671101" id="8860528120401608753" />
                 </node>
               </node>
               <node role="type" roleId="mj1l.318113533128716676" type="yq40.ArrayType" typeId="yq40.5679441017214012545" id="5083029923012080745">
@@ -6593,21 +6593,21 @@
                 <property name="name" nameId="tpck.1169194664001" value="u8Hex" />
                 <node role="type" roleId="mj1l.318113533128716676" type="mj1l.UnsignedInt8tType" typeId="mj1l.8463282783691618461" id="7351208613149391825" />
                 <node role="init" roleId="c4fa.4185783222026502647" type="mj1l.HexNumberLiteral" typeId="mj1l.1054289341113450444" id="7351208613149391827">
-                  <property name="value" nameId="mj1l.1054289341113450445" value="20u" />
+                  <property name="value" nameId="mj1l.1054289341113450445" value="20" />
                 </node>
               </node>
               <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="7351208613149397742">
                 <property name="name" nameId="tpck.1169194664001" value="u8Hex2" />
                 <node role="type" roleId="mj1l.318113533128716676" type="mj1l.UnsignedInt8tType" typeId="mj1l.8463282783691618461" id="7351208613149397743" />
                 <node role="init" roleId="c4fa.4185783222026502647" type="mj1l.HexNumberLiteral" typeId="mj1l.1054289341113450444" id="7351208613149422821">
-                  <property name="value" nameId="mj1l.1054289341113450445" value="FFu" />
+                  <property name="value" nameId="mj1l.1054289341113450445" value="FF" />
                 </node>
               </node>
               <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="7351208613149423476">
                 <property name="name" nameId="tpck.1169194664001" value="u8Hex3" />
                 <node role="type" roleId="mj1l.318113533128716676" type="mj1l.UnsignedInt8tType" typeId="mj1l.8463282783691618461" id="7351208613149423477" />
                 <node role="init" roleId="c4fa.4185783222026502647" type="mj1l.HexNumberLiteral" typeId="mj1l.1054289341113450444" id="7351208613149423478">
-                  <property name="value" nameId="mj1l.1054289341113450445" value="Ffu" />
+                  <property name="value" nameId="mj1l.1054289341113450445" value="Ff" />
                 </node>
               </node>
               <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="468045725833553793" />
@@ -6615,7 +6615,7 @@
                 <property name="name" nameId="tpck.1169194664001" value="u8Hex4" />
                 <node role="type" roleId="mj1l.318113533128716676" type="mj1l.UnsignedInt8tType" typeId="mj1l.8463282783691618461" id="7351208613149423480" />
                 <node role="init" roleId="c4fa.4185783222026502647" type="mj1l.HexNumberLiteral" typeId="mj1l.1054289341113450444" id="7351208613149423481">
-                  <property name="value" nameId="mj1l.1054289341113450445" value="01FFu" />
+                  <property name="value" nameId="mj1l.1054289341113450445" value="01FF" />
                   <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodePropertiesContainer" typeId="tp5g.1215507532627" id="7351208613149429130">
                     <node role="properties" roleId="tp5g.1215507909023" type="tp5g.NodeErrorPropety" typeId="tp5g.1215507671101" id="7351208613149429131" />
                   </node>
