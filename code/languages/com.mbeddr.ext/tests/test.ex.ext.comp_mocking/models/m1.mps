@@ -192,6 +192,7 @@
         <property name="active" nameId="k146.2688792604367947988" value="true" />
         <property name="name" nameId="tpck.1169194664001" value="point" />
         <property name="text" nameId="k146.2688792604367903089" value="Point" />
+        <property name="kind" nameId="k146.2688792604367903094" value="1" />
         <node role="properties" roleId="k146.767515563077204474" type="k146.MessageProperty" typeId="k146.767515563077204464" id="7603351357795252229">
           <property name="name" nameId="tpck.1169194664001" value="p" />
           <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="7603351357795252230">
@@ -357,6 +358,7 @@
         <property name="active" nameId="k146.2688792604367947988" value="true" />
         <property name="name" nameId="tpck.1169194664001" value="point" />
         <property name="text" nameId="k146.2688792604367903089" value="Point" />
+        <property name="kind" nameId="k146.2688792604367903094" value="1" />
         <node role="properties" roleId="k146.767515563077204474" type="k146.MessageProperty" typeId="k146.767515563077204464" id="7603351357795253058">
           <property name="name" nameId="tpck.1169194664001" value="p" />
           <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="7603351357795253059">
