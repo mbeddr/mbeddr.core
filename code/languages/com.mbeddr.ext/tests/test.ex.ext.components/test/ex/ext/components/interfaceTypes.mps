@@ -503,7 +503,7 @@
       <property name="exported" nameId="x27k.1317894735999272944" value="false" />
       <property name="name" nameId="tpck.1169194664001" value="Computer" />
       <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.ProvidedPort" typeId="v7ag.4491876417845628840" id="1139274356257150863">
-        <property name="name" nameId="tpck.1169194664001" value="tweaker" />
+        <property name="name" nameId="tpck.1169194664001" value="square" />
         <property name="asValue" value="true" />
         <link role="intf" roleId="v7ag.4491876417845484932" targetNodeId="1139274356257150855" resolveInfo="ISquare" />
       </node>
@@ -517,7 +517,7 @@
       </node>
       <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.EmptyComponentContent" typeId="v7ag.8515777736166878876" id="1139274356257150867" />
       <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="1139274356257150885">
-        <property name="name" nameId="tpck.1169194664001" value="adder_setErrorValue" />
+        <property name="name" nameId="tpck.1169194664001" value="square_square" />
         <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="1139274356257150886">
           <node role="statements" roleId="c4fa.4185783222026475862" type="x27k.ReturnStatement" typeId="x27k.8967919205527146149" id="1139274356257158962">
             <node role="expression" roleId="x27k.8967919205527146150" type="mj1l.MultiExpression" typeId="mj1l.5763383285156373020" id="1139274356257158966">
@@ -532,7 +532,7 @@
         </node>
         <node role="trigger" roleId="v7ag.4491876417845643892" type="v7ag.OperationTrigger" typeId="v7ag.4491876417845641677" id="1139274356257150894">
           <link role="calledOperation" roleId="v7ag.4491876417845641678" targetNodeId="1139274356257150856" resolveInfo="square" />
-          <link role="providedPort" roleId="v7ag.4491876417845673829" targetNodeId="1139274356257150863" resolveInfo="tweaker" />
+          <link role="providedPort" roleId="v7ag.4491876417845673829" targetNodeId="1139274356257150863" resolveInfo="square" />
         </node>
         <node role="type" roleId="mj1l.318113533128716676" type="mj1l.UnsignedInt16tType" typeId="mj1l.8463282783691618466" id="1139274356257158957">
           <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
@@ -578,6 +578,27 @@
         </node>
         <node role="trigger" roleId="v7ag.4491876417845643892" type="v7ag.OnInitTrigger" typeId="v7ag.4643433264761566506" id="1139274356257158983" />
       </node>
+      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.EmptyComponentContent" typeId="v7ag.8515777736166878876" id="6941595764869891572" />
+      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="6941595764869891576">
+        <property name="name" nameId="tpck.1169194664001" value="callViaInterface" />
+        <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="6941595764869891577">
+          <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="6941595764869891579">
+            <node role="expr" roleId="c4fa.7254843406768833939" type="v7ag.RequiredPortOpCallExpr" typeId="v7ag.466603768608442377" id="6941595764869891583">
+              <link role="operation" roleId="v7ag.8105003328815071752" targetNodeId="1139274356257150856" resolveInfo="square" />
+              <node role="expression" roleId="mj1l.7254843406768839760" type="v7ag.RequiredPortRefExpr" typeId="v7ag.8105003328815208362" id="6941595764869891580">
+                <link role="port" roleId="v7ag.8105003328815208363" targetNodeId="1139274356257158975" resolveInfo="iSquare" />
+              </node>
+              <node role="actuals" roleId="v7ag.8105003328815091213" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6941595764869891584">
+                <property name="value" nameId="mj1l.8860443239512128104" value="2" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="6941595764869891575">
+          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+        </node>
+      </node>
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="1139274356257150895">
       <property name="name" nameId="tpck.1169194664001" value="empty_1343896962396_3" />
@@ -600,7 +621,7 @@
         </node>
         <node role="target" roleId="v7ag.4491876417845649021" type="v7ag.InstancePortRef" typeId="v7ag.4491876417845649017" id="1139274356257158997">
           <link role="instance" roleId="v7ag.4491876417845649018" targetNodeId="1139274356257150897" resolveInfo="computer" />
-          <link role="port" roleId="v7ag.3444913373458569211" targetNodeId="1139274356257150863" resolveInfo="tweaker" />
+          <link role="port" roleId="v7ag.3444913373458569211" targetNodeId="1139274356257150863" resolveInfo="square" />
         </node>
       </node>
     </node>
