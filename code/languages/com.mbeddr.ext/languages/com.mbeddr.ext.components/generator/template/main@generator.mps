@@ -8,7 +8,7 @@
   <language namespace="6d11763d-483d-4b2b-8efc-09336c1b0001(com.mbeddr.core.modules)" />
   <language namespace="61c69711-ed61-4850-81d9-7714ff227fb0(com.mbeddr.core.expressions)" />
   <devkit namespace="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
-  <import index="v7ag" modelUID="r:9596407c-f27a-49d3-abde-3a66293c5b61(com.mbeddr.ext.components.structure)" version="11" />
+  <import index="v7ag" modelUID="r:9596407c-f27a-49d3-abde-3a66293c5b61(com.mbeddr.ext.components.structure)" version="12" />
   <import index="e2lb" modelUID="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" version="-1" />
   <import index="eup9" modelUID="r:ab391014-3e08-4918-9cc5-1c93e3a55c72(com.mbeddr.ext.components.behavior)" version="0" />
   <import index="jmu5" modelUID="r:d36b57a1-0d5c-4bdc-85a8-b1496d753369(com.mbeddr.mpsutil.graph.behavior)" version="0" />
@@ -1245,7 +1245,7 @@
                                   </node>
                                 </node>
                                 <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="5430501777206510048">
-                                  <link role="link" roleId="tp25.1138056516764" targetNodeId="v7ag.4491876417845649019" />
+                                  <link role="link" roleId="tp25.1138056516764" targetNodeId="v7ag.3444913373458569211" />
                                 </node>
                               </node>
                               <node role="operation" roleId="tpee.1197027833540" type="tp25.SPropertyAccess" typeId="tp25.1138056022639" id="5430501777206510054">
@@ -1330,7 +1330,7 @@
                                   </node>
                                 </node>
                                 <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="5430501777206510086">
-                                  <link role="link" roleId="tp25.1138056516764" targetNodeId="v7ag.4491876417845649019" />
+                                  <link role="link" roleId="tp25.1138056516764" targetNodeId="v7ag.3444913373458569211" />
                                 </node>
                               </node>
                               <node role="operation" roleId="tpee.1197027833540" type="tp25.SPropertyAccess" typeId="tp25.1138056022639" id="5430501777206510087">
@@ -1412,7 +1412,7 @@
                         </node>
                       </node>
                       <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="5430501777206574711">
-                        <link role="link" roleId="tp25.1138056516764" targetNodeId="v7ag.4491876417845649019" />
+                        <link role="link" roleId="tp25.1138056516764" targetNodeId="v7ag.3444913373458569211" />
                       </node>
                     </node>
                     <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="5430501777206574717">
@@ -1464,7 +1464,7 @@
                       </node>
                     </node>
                     <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="2924520848052729271">
-                      <link role="link" roleId="tp25.1138056516764" targetNodeId="v7ag.4491876417845649019" />
+                      <link role="link" roleId="tp25.1138056516764" targetNodeId="v7ag.3444913373458569211" />
                     </node>
                   </node>
                   <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="2924520848052729277">
@@ -1586,11 +1586,11 @@
       <node role="contents" roleId="v7ag.6041318036222235020" type="v7ag.Connector" typeId="v7ag.4491876417845649016" id="7798021607625479993">
         <node role="source" roleId="v7ag.4491876417845649020" type="v7ag.InstancePortRef" typeId="v7ag.4491876417845649017" id="7798021607625479994">
           <link role="instance" roleId="v7ag.4491876417845649018" targetNodeId="7798021607625479992" resolveInfo="comp" />
-          <link role="port" roleId="v7ag.4491876417845649019" targetNodeId="7798021607625479987" resolveInfo="intf" />
+          <link role="port" roleId="v7ag.3444913373458569211" targetNodeId="7798021607625479987" resolveInfo="intf" />
         </node>
         <node role="target" roleId="v7ag.4491876417845649021" type="v7ag.InstancePortRef" typeId="v7ag.4491876417845649017" id="7798021607625479995">
           <link role="instance" roleId="v7ag.4491876417845649018" targetNodeId="7798021607625479992" resolveInfo="comp" />
-          <link role="port" roleId="v7ag.4491876417845649019" targetNodeId="7798021607625479989" resolveInfo="ifProv" />
+          <link role="port" roleId="v7ag.3444913373458569211" targetNodeId="7798021607625479989" resolveInfo="ifProv" />
         </node>
       </node>
     </node>

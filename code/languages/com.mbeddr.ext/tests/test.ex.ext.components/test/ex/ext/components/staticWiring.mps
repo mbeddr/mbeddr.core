@@ -10,7 +10,7 @@
   <language namespace="2693fc71-9b0e-4b05-ab13-f57227d675f2(com.mbeddr.core.util)" />
   <devkit namespace="24565007-e59f-42fc-ac10-da3836deec1c(com.mbeddr.components)" />
   <import index="p7vm" modelUID="r:28fa862e-f94d-4c39-bdf7-a4bdbc773888(com.mbeddr.ext.components.gen_nomw.structure)" version="0" implicit="yes" />
-  <import index="v7ag" modelUID="r:9596407c-f27a-49d3-abde-3a66293c5b61(com.mbeddr.ext.components.structure)" version="11" implicit="yes" />
+  <import index="v7ag" modelUID="r:9596407c-f27a-49d3-abde-3a66293c5b61(com.mbeddr.ext.components.structure)" version="12" implicit="yes" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="k146" modelUID="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" version="2" implicit="yes" />
   <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="17" implicit="yes" />
@@ -158,21 +158,21 @@
       <node role="contents" roleId="v7ag.6041318036222235020" type="v7ag.Connector" typeId="v7ag.4491876417845649016" id="9016194309503490034">
         <node role="source" roleId="v7ag.4491876417845649020" type="v7ag.InstancePortRef" typeId="v7ag.4491876417845649017" id="9016194309503490035">
           <link role="instance" roleId="v7ag.4491876417845649018" targetNodeId="9016194309503490032" resolveInfo="client1" />
-          <link role="port" roleId="v7ag.4491876417845649019" targetNodeId="9016194309503490028" resolveInfo="i" />
+          <link role="port" roleId="v7ag.3444913373458569211" targetNodeId="9016194309503490028" resolveInfo="i" />
         </node>
         <node role="target" roleId="v7ag.4491876417845649021" type="v7ag.InstancePortRef" typeId="v7ag.4491876417845649017" id="9016194309503490036">
-          <link role="port" roleId="v7ag.4491876417845649019" targetNodeId="9016194309503490023" resolveInfo="i" />
+          <link role="port" roleId="v7ag.3444913373458569211" targetNodeId="9016194309503490023" resolveInfo="i" />
           <link role="instance" roleId="v7ag.4491876417845649018" targetNodeId="9016194309503490030" resolveInfo="servera" />
         </node>
       </node>
       <node role="contents" roleId="v7ag.6041318036222235020" type="v7ag.Connector" typeId="v7ag.4491876417845649016" id="9016194309503490037">
         <node role="source" roleId="v7ag.4491876417845649020" type="v7ag.InstancePortRef" typeId="v7ag.4491876417845649017" id="9016194309503490038">
           <link role="instance" roleId="v7ag.4491876417845649018" targetNodeId="9016194309503490033" resolveInfo="client2" />
-          <link role="port" roleId="v7ag.4491876417845649019" targetNodeId="9016194309503490028" resolveInfo="i" />
+          <link role="port" roleId="v7ag.3444913373458569211" targetNodeId="9016194309503490028" resolveInfo="i" />
         </node>
         <node role="target" roleId="v7ag.4491876417845649021" type="v7ag.InstancePortRef" typeId="v7ag.4491876417845649017" id="9016194309503490039">
           <link role="instance" roleId="v7ag.4491876417845649018" targetNodeId="9016194309503490030" resolveInfo="servera" />
-          <link role="port" roleId="v7ag.4491876417845649019" targetNodeId="9016194309503490023" resolveInfo="i" />
+          <link role="port" roleId="v7ag.3444913373458569211" targetNodeId="9016194309503490023" resolveInfo="i" />
         </node>
       </node>
       <node role="contents" roleId="v7ag.6041318036222235020" type="v7ag.PortAdapter" typeId="v7ag.5172178961828157634" id="8933128519014040097">

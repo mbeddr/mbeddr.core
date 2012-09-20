@@ -26,16 +26,16 @@
   </target>
   <target name="do.the.job" depends="folders.create">
     <copy todir="${deploy.dir}/spawner.zip.tmp/spawner/lib/classes">
-      <fileset dir="${base_dir}/code/languages/com.mbeddr.core/solutions/com.mbeddr.core.debug.spawner/classes_gen" />
+      <fileset dir="${base_dir}/code/languages/com.mbeddr.core/languages/com.mbeddr.core.debug.spawner/classes_gen" />
     </copy>
     <copy todir="${deploy.dir}/spawner.zip.tmp/spawner/lib/spawner">
-      <fileset dir="${base_dir}/code/languages/com.mbeddr.core/solutions/com.mbeddr.core.debug.spawner/data/spawner" />
+      <fileset dir="${base_dir}/code/languages/com.mbeddr.core/languages/com.mbeddr.core.debug.spawner/data/spawner" />
     </copy>
     <mkdir dir="${deploy.dir}/spawner.zip.tmp/spawner/lib" />
-    <copy file="${base_dir}/code/languages/com.mbeddr.core/solutions/com.mbeddr.core.debug.spawner/source_gen/com/mbeddr/core/debug/spawner/loader/plugin.xml" tofile="${deploy.dir}/spawner.zip.tmp/spawner/META-INF/plugin.xml" />
+    <copy file="${base_dir}/code/languages/com.mbeddr.core/languages/com.mbeddr.core.debug.spawner/source_gen/com/mbeddr/core/debug/spawner/loader/plugin.xml" tofile="${deploy.dir}/spawner.zip.tmp/spawner/META-INF/plugin.xml" />
     <mkdir dir="${deploy.dir}/spawner.zip.tmp/spawner/META-INF" />
     <copy todir="${deploy.dir}/spawner.zip.tmp/spawner/languages/Eclipse.Debugger">
-      <fileset dir="${base_dir}/code/languages/com.mbeddr.core/solutions/com.mbeddr.core.debug.spawner/data/Eclipse.Debugger" />
+      <fileset dir="${base_dir}/code/languages/com.mbeddr.core/languages/com.mbeddr.core.debug.spawner/data/Eclipse.Debugger" />
     </copy>
     <mkdir dir="${deploy.dir}/spawner.zip.tmp/spawner/languages" />
     <mkdir dir="${deploy.dir}/spawner.zip.tmp/spawner" />

@@ -23,7 +23,7 @@
   <import index="26ao" modelUID="r:7c15925b-a4a5-4da3-88aa-931a5a9ed982(com.mbeddr.cc.trace.structure)" version="3" implicit="yes" />
   <import index="75wo" modelUID="r:eaa205a4-f15c-47d3-99e2-e648881b5997(com.mbeddr.cc.requirements.structure)" version="5" implicit="yes" />
   <import index="p7vm" modelUID="r:28fa862e-f94d-4c39-bdf7-a4bdbc773888(com.mbeddr.ext.components.gen_nomw.structure)" version="0" implicit="yes" />
-  <import index="v7ag" modelUID="r:9596407c-f27a-49d3-abde-3a66293c5b61(com.mbeddr.ext.components.structure)" version="11" implicit="yes" />
+  <import index="v7ag" modelUID="r:9596407c-f27a-49d3-abde-3a66293c5b61(com.mbeddr.ext.components.structure)" version="12" implicit="yes" />
   <import index="8yj6" modelUID="r:b5ef41ef-8594-459c-bc08-a7e214c6fb43(com.mbeddr.ext.components.statemachine.structure)" version="0" implicit="yes" />
   <roots>
     <node type="mj1l.TypeSizeConfiguration" typeId="mj1l.3335993110369795380" id="4600281520962881347" />
@@ -1328,7 +1328,7 @@
                         <link role="arg" roleId="x27k.2093108837558505659" targetNodeId="8028557988791054864" resolveInfo="psc" />
                       </node>
                     </node>
-                    <node role="targetType" roleId="mj1l.6610873504380029790" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="8028557988791055123">
+                    <node role="targetType" roleId="mj1l.6610873504380029790" type="mj1l.UnsignedInt8tType" typeId="mj1l.8463282783691618461" id="2816018262273338029">
                       <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
                       <property name="const" nameId="mj1l.2941277002445651368" value="false" />
                     </node>
@@ -1399,8 +1399,14 @@
                     <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="4338322735134910982">
                       <node role="expr" roleId="c4fa.7254843406768833939" type="x27k.FunctionCall" typeId="x27k.5950410542643524492" id="4338322735134910983">
                         <link role="function" roleId="x27k.5950410542643524493" targetNodeId="fetz.298572849313103914" resolveInfo="SendByteToSerial" />
-                        <node role="actuals" roleId="x27k.5950410542643524495" type="x27k.FunctionCall" typeId="x27k.5950410542643524492" id="4338322735134910984">
-                          <link role="function" roleId="x27k.5950410542643524493" targetNodeId="eji2.4338322735134910970" resolveInfo="GetPacerPacingTimeSpan" />
+                        <node role="actuals" roleId="x27k.5950410542643524495" type="mj1l.CastExpression" typeId="mj1l.6610873504380029780" id="2816018262273338033">
+                          <node role="expr" roleId="mj1l.6610873504380029782" type="x27k.FunctionCall" typeId="x27k.5950410542643524492" id="4338322735134910984">
+                            <link role="function" roleId="x27k.5950410542643524493" targetNodeId="eji2.4338322735134910970" resolveInfo="GetPacerPacingTimeSpan" />
+                          </node>
+                          <node role="targetType" roleId="mj1l.6610873504380029790" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="2816018262273338037">
+                            <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+                            <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+                          </node>
                         </node>
                       </node>
                     </node>
