@@ -2991,7 +2991,7 @@
       </node>
       <node role="arguments" roleId="x27k.5708867820623310661" type="x27k.Argument" typeId="x27k.7892328519581704407" id="7059795523744244954">
         <property name="name" nameId="tpck.1169194664001" value="ticksCount" />
-        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.UnsignedInt16tType" typeId="mj1l.8463282783691618466" id="7059795523744244955">
+        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.UnsignedInt8tType" typeId="mj1l.8463282783691618461" id="7828586699788408244">
           <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
           <property name="const" nameId="mj1l.2941277002445651368" value="false" />
         </node>
@@ -3650,7 +3650,47 @@
     <node role="configurationItems" roleId="vs0r.4459718605982007338" type="k146.ReportingConfiguration" typeId="k146.4459718605982051949" id="6047040665414172630">
       <node role="strategy" roleId="k146.4459718605982051999" type="k146.PrintfReportingStrategy" typeId="k146.4459718605982051980" id="6047040665414172631" />
     </node>
-    <node role="target" roleId="51wr.5323740605968447026" type="51wr.NothingPlatform" typeId="51wr.440773076688628186" id="6047040665414172634" />
+    <node role="binaries" roleId="51wr.5046689135694070731" type="51wr.StaticLibrary" typeId="51wr.2671893947946158498" id="2816018262273423551">
+      <property name="name" nameId="tpck.1169194664001" value="hardware" />
+      <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="2816018262273423555">
+        <link role="module" roleId="51wr.7717755763392524108" targetNodeId="4712415786988364476" resolveInfo="DigitalResistors" />
+      </node>
+      <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="2816018262273423557">
+        <link role="module" roleId="51wr.7717755763392524108" targetNodeId="6047040665414172492" resolveInfo="Interrupts" />
+      </node>
+      <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="2816018262273423559">
+        <link role="module" roleId="51wr.7717755763392524108" targetNodeId="6047040665414172603" resolveInfo="MinnBoard" />
+      </node>
+      <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="2816018262273423561">
+        <link role="module" roleId="51wr.7717755763392524108" targetNodeId="6047040665414172498" resolveInfo="PIC18StdExt" />
+      </node>
+      <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="2816018262273423563">
+        <link role="module" roleId="51wr.7717755763392524108" targetNodeId="6047040665414172576" resolveInfo="Timers" />
+      </node>
+      <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="2816018262273423565">
+        <link role="module" roleId="51wr.7717755763392524108" targetNodeId="6047040665414172550" resolveInfo="Usart" />
+      </node>
+      <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="2816018262273423566">
+        <link role="module" roleId="51wr.7717755763392524108" targetNodeId="6047040665414172577" resolveInfo="TimersAdapter" />
+      </node>
+      <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="2816018262273423567">
+        <link role="module" roleId="51wr.7717755763392524108" targetNodeId="6047040665414172548" resolveInfo="UsartAdapter" />
+      </node>
+      <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="2816018262273423568">
+        <link role="module" roleId="51wr.7717755763392524108" targetNodeId="6047040665414172604" resolveInfo="MinnBoardAdapter" />
+      </node>
+      <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="2816018262273423569">
+        <link role="module" roleId="51wr.7717755763392524108" targetNodeId="6047040665414172499" resolveInfo="PIC18StdFunctions" />
+      </node>
+      <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="2816018262273423570">
+        <link role="module" roleId="51wr.7717755763392524108" targetNodeId="6047040665414172560" resolveInfo="InterruptsAdapter" />
+      </node>
+    </node>
+    <node role="target" roleId="51wr.5323740605968447026" type="51wr.DesktopPlatform" typeId="51wr.5323740605968447022" id="2816018262273423554">
+      <property name="compiler" nameId="51wr.5323740605968447024" value="gcc" />
+      <property name="compilerOptions" nameId="51wr.5323740605968447025" value="-std=c99" />
+      <property name="debugOptions" nameId="51wr.2736179788492003937" value="-g" />
+    </node>
   </root>
   <root id="4712415786988364476">
     <node role="imports" roleId="x27k.1317894735999304826" type="x27k.ModuleImport" typeId="x27k.1317894735999299713" id="4712415786988364477">
