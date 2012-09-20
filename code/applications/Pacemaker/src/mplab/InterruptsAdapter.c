@@ -43,10 +43,15 @@
 #define AccelYInterruptTripped PIR1bits.CCP1IF
 #define AccelYInterruptPriority IPR1bits.CCP1IP
 
-static void (*tmr0ISRHandler)(void);
-static void (*ventricleISRHandler)(void);
-static void (*atrialISRHandler)(void);
-static void (*usartRXISRHandler)(void);
+#define MAX_TMR0ISRH_FPTRS 5
+
+typedef void (*VoidRetNoParamsFuncPointer)(void);
+
+static int tmr0ISRHCount = 0;
+static VoidRetNoParamsFuncPointer tmr0ISRHandler[MAX_TMR0ISRH_FPTRS];
+static VoidRetNoParamsFuncPointer ventricleISRHandler;
+static VoidRetNoParamsFuncPointer atrialISRHandler;
+static VoidRetNoParamsFuncPointer usartRXISRHandler;
 
 static void InitializeTimers(void);
 
@@ -88,7 +93,9 @@ RegisterVentricleISRHandler(void (*newH)(void)) {
 
 inline void 
 RegisterTimer0ISRHandler(void (*newH)(void)) {
-  tmr0ISRHandler = newH;
+  if(tmr0ISRHCount >= MAX_TMR0ISRH_FPTRS) return;
+  
+  tmr0ISRHandler[tmr0ISRHCount++] = newH;
 }
 
 inline void 
@@ -157,10 +164,13 @@ void interrupt low_priority LowISR(void) {
 
 void interrupt HighVecISR(void) {
 	if (Timer0InterruptTripped) {
-		if(NULL != tmr0ISRHandler) tmr0ISRHandler();
+	    int i;
+		for(i = 0; i < tmr0ISRHCount; ++i) {
+		  tmr0ISRHandler[i]();
 		
-		/* clear interrupt */
-		Timer0InterruptTripped = OFF;
+		  /* clear interrupt */
+		  Timer0InterruptTripped = OFF;
+		}
 	} else if (Timer3InterruptTripped) {
 		
 	} else if (VentricleInterruptTripped) {

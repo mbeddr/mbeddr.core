@@ -18,6 +18,12 @@
 #define AtrialImpedenceCircuitConnection    PORTDbits.RD1
 #define VentricleImpedenceCircuitConnection PORTDbits.RD0
 
+/* digital resistors defines */
+#define DR_SCL 		 PORTDbits.RD3
+#define DR_SCL_TRIS  TRISDbits.TRISD3
+#define DR_SDA 		 PORTDbits.RD2
+#define DR_SDA_TRIS  TRISDbits.TRISD2
+
 #pragma config OSC = HS /* Sets the oscillator mode to HS */
 #pragma config WDT = OFF /* Turns the watchdog timer off */
 
@@ -150,4 +156,28 @@ inline void
 ChangeVentricleImpedenceCircuitConnectionState(unsigned char newState) {
   VentricleImpedenceCircuitConnection = newState;
 }
-  
+ 
+inline unsigned char 
+ReadDigitalResistorSDAPinState() {
+  return ((unsigned char)DR_SDA);
+}
+
+inline void 
+ChangeDigitalResistorsSDAPinState(unsigned char newState) {
+  DR_SDA = newState;
+}
+
+inline void 
+ChangeDigitalResistorsSCLPinState(unsigned char newState) {
+  DR_SCL = newState;
+}
+
+inline void 
+ChangeDigitalResistorsSDAPinDirection(unsigned char newDir) {
+  DR_SDA_TRIS = newDir;
+}
+
+inline void 
+ChangeDigitalResistorsSCLPinDirection(unsigned char newDir) {
+  DR_SCL_TRIS = newDir;
+}
