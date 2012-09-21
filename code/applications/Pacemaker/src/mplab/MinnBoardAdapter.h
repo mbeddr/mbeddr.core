@@ -44,4 +44,11 @@
   extern inline void ChangeAtrialImpedenceCircuitConnectionState(unsigned char);
   extern inline void ChangeVentricleImpedenceCircuitConnectionState(unsigned char);
   
+  /* Functions for comunicating with the digital resistors via I2C */
+  extern inline unsigned char ReadDigitalResistorSDAPinState();
+  extern inline void ChangeDigitalResistorsSDAPinState(unsigned char);
+  extern inline void ChangeDigitalResistorsSCLPinState(unsigned char);
+  extern inline void ChangeDigitalResistorsSDAPinDirection(unsigned char);
+  extern inline void ChangeDigitalResistorsSCLPinDirection(unsigned char);
+  
 #endif
