@@ -19,9 +19,10 @@
   <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="3" implicit="yes" />
   <import index="k146" modelUID="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" version="2" implicit="yes" />
   <import index="51wr" modelUID="r:b31f1c3c-99aa-4f1e-a329-cba27efb1a6b(com.mbeddr.core.buildconfig.structure)" version="1" implicit="yes" />
-  <import index="v7ag" modelUID="r:9596407c-f27a-49d3-abde-3a66293c5b61(com.mbeddr.ext.components.structure)" version="11" implicit="yes" />
+  <import index="v7ag" modelUID="r:9596407c-f27a-49d3-abde-3a66293c5b61(com.mbeddr.ext.components.structure)" version="12" implicit="yes" />
   <import index="8yj6" modelUID="r:b5ef41ef-8594-459c-bc08-a7e214c6fb43(com.mbeddr.ext.components.statemachine.structure)" version="0" implicit="yes" />
   <import index="p7vm" modelUID="r:28fa862e-f94d-4c39-bdf7-a4bdbc773888(com.mbeddr.ext.components.gen_nomw.structure)" version="0" implicit="yes" />
+  <import index="hba4" modelUID="r:f5bd2ad9-cd54-4408-b815-07f9f306f074(com.mbeddr.mpsutil.blutil.structure)" version="5" implicit="yes" />
   <roots>
     <node type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="6047040665414172414">
       <property name="name" nameId="tpck.1169194664001" value="AOO" />
@@ -315,6 +316,9 @@
           <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
           <property name="const" nameId="mj1l.2941277002445651368" value="false" />
         </node>
+        <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="hba4.MustBeCleanedUp" typeId="hba4.1793958740514623182" id="8412574337284617403">
+          <property name="comment" nameId="hba4.1793958740514623185" value="a better name: PaceAction_handler?" />
+        </node>
       </node>
       <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.EmptyComponentContent" typeId="v7ag.8515777736166878876" id="7828586699788408212" />
       <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="5688055005366700237">
@@ -577,6 +581,9 @@
                   </node>
                 </node>
               </node>
+            </node>
+            <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="hba4.MustBeCleanedUp" typeId="hba4.1793958740514623182" id="8412574337284617404">
+              <property name="comment" nameId="hba4.1793958740514623185" value="can we make here a gswitch with better explanations and verification?" />
             </node>
           </node>
           <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="5688055005366700516" />
@@ -2152,6 +2159,9 @@
     </node>
   </root>
   <root id="6047040665414172482">
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="8412574337284617405">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1348230285693_6" />
+    </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="v7ag.InstanceConfiguration" typeId="v7ag.4491876417845649024" id="5688055005366700754">
       <property name="exported" nameId="x27k.1317894735999272944" value="true" />
       <property name="name" nameId="tpck.1169194664001" value="AOOConfig" />
@@ -2166,11 +2176,11 @@
       <node role="contents" roleId="v7ag.6041318036222235020" type="v7ag.Connector" typeId="v7ag.4491876417845649016" id="5688055005366700910">
         <node role="source" roleId="v7ag.4491876417845649020" type="v7ag.InstancePortRef" typeId="v7ag.4491876417845649017" id="5688055005366700911">
           <link role="instance" roleId="v7ag.4491876417845649018" targetNodeId="5688055005366700755" resolveInfo="aooComp" />
-          <link role="port" roleId="v7ag.4491876417845649019" targetNodeId="5688055005366700418" resolveInfo="pLoggerInterface" />
+          <link role="port" roleId="v7ag.3444913373458569211" targetNodeId="5688055005366700418" resolveInfo="pLoggerInterface" />
         </node>
         <node role="target" roleId="v7ag.4491876417845649021" type="v7ag.InstancePortRef" typeId="v7ag.4491876417845649017" id="5688055005366700912">
           <link role="instance" roleId="v7ag.4491876417845649018" targetNodeId="4338322735134934005" resolveInfo="nolog" />
-          <link role="port" roleId="v7ag.4491876417845649019" targetNodeId="4338322735134934008" resolveInfo="pLoggerInterface" />
+          <link role="port" roleId="v7ag.3444913373458569211" targetNodeId="4338322735134934008" resolveInfo="pLoggerInterface" />
         </node>
       </node>
       <node role="contents" roleId="v7ag.6041318036222235020" type="v7ag.PortAdapter" typeId="v7ag.5172178961828157634" id="5688055005366701426">
@@ -2205,11 +2215,11 @@
       <node role="contents" roleId="v7ag.6041318036222235020" type="v7ag.Connector" typeId="v7ag.4491876417845649016" id="5688055005366701726">
         <node role="source" roleId="v7ag.4491876417845649020" type="v7ag.InstancePortRef" typeId="v7ag.4491876417845649017" id="5688055005366701727">
           <link role="instance" roleId="v7ag.4491876417845649018" targetNodeId="5688055005366701724" resolveInfo="vooComp" />
-          <link role="port" roleId="v7ag.4491876417845649019" targetNodeId="5688055005366701504" resolveInfo="pLoggerInterface" />
+          <link role="port" roleId="v7ag.3444913373458569211" targetNodeId="5688055005366701504" resolveInfo="pLoggerInterface" />
         </node>
         <node role="target" roleId="v7ag.4491876417845649021" type="v7ag.InstancePortRef" typeId="v7ag.4491876417845649017" id="5688055005366701728">
           <link role="instance" roleId="v7ag.4491876417845649018" targetNodeId="5688055005366701725" resolveInfo="nolog" />
-          <link role="port" roleId="v7ag.4491876417845649019" targetNodeId="4338322735134934008" resolveInfo="pLoggerInterface" />
+          <link role="port" roleId="v7ag.3444913373458569211" targetNodeId="4338322735134934008" resolveInfo="pLoggerInterface" />
         </node>
       </node>
       <node role="contents" roleId="v7ag.6041318036222235020" type="v7ag.PortAdapter" typeId="v7ag.5172178961828157634" id="5688055005366701729">
@@ -2243,11 +2253,11 @@
       <node role="contents" roleId="v7ag.6041318036222235020" type="v7ag.Connector" typeId="v7ag.4491876417845649016" id="1026677032748721427">
         <node role="source" roleId="v7ag.4491876417845649020" type="v7ag.InstancePortRef" typeId="v7ag.4491876417845649017" id="1026677032748721428">
           <link role="instance" roleId="v7ag.4491876417845649018" targetNodeId="1026677032748721423" resolveInfo="vviComp" />
-          <link role="port" roleId="v7ag.4491876417845649019" targetNodeId="1026677032748711608" resolveInfo="pLoggerInterface" />
+          <link role="port" roleId="v7ag.3444913373458569211" targetNodeId="1026677032748711608" resolveInfo="pLoggerInterface" />
         </node>
         <node role="target" roleId="v7ag.4491876417845649021" type="v7ag.InstancePortRef" typeId="v7ag.4491876417845649017" id="1026677032748721429">
           <link role="instance" roleId="v7ag.4491876417845649018" targetNodeId="1026677032748721425" resolveInfo="nolog" />
-          <link role="port" roleId="v7ag.4491876417845649019" targetNodeId="5688055005366700762" resolveInfo="pLoggerInterface" />
+          <link role="port" roleId="v7ag.3444913373458569211" targetNodeId="5688055005366700762" resolveInfo="pLoggerInterface" />
         </node>
       </node>
       <node role="contents" roleId="v7ag.6041318036222235020" type="v7ag.PortAdapter" typeId="v7ag.5172178961828157634" id="7042279386170255568">
@@ -2731,6 +2741,9 @@
     </node>
   </root>
   <root id="4967856996714701067">
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="8412574337284617394">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1348213898651_1" />
+    </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="clbe.EnumDeclaration" typeId="clbe.8811614583515725851" id="1559571946845220475">
       <property name="name" nameId="tpck.1169194664001" value="PacerType" />
       <property name="exported" nameId="x27k.1317894735999272944" value="true" />
@@ -2941,6 +2954,9 @@
     </node>
   </root>
   <root id="5688055005366700759">
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="8412574337284617395">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1348213923926_2" />
+    </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="v7ag.AtomicComponent" typeId="v7ag.4491876417845649011" id="4338322735134934007">
       <property name="exported" nameId="x27k.1317894735999272944" value="true" />
       <property name="name" nameId="tpck.1169194664001" value="NoLogger" />
@@ -3019,6 +3035,12 @@
         </node>
       </node>
     </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="8412574337284617396">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1348213953394_3" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="8412574337284617397">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1348213953579_4" />
+    </node>
     <node role="imports" roleId="x27k.1317894735999304826" type="x27k.ModuleImport" typeId="x27k.1317894735999299713" id="5688055005366760051">
       <link role="module" roleId="x27k.1317894735999299714" targetNodeId="fetz.6047040665414172499" resolveInfo="PIC18StdFunctions" />
     </node>
@@ -3031,13 +3053,22 @@
     <node role="contents" roleId="x27k.6437088627575722833" type="v7ag.AtomicComponent" typeId="v7ag.4491876417845649011" id="5688055005366701072">
       <property name="exported" nameId="x27k.1317894735999272944" value="true" />
       <property name="name" nameId="tpck.1169194664001" value="StackLogger" />
+      <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="hba4.MustBeCleanedUp" typeId="hba4.1793958740514623182" id="8412574337284617398">
+        <property name="comment" nameId="hba4.1793958740514623185" value="Do we need this?" />
+      </node>
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="5688055005366701071">
       <property name="name" nameId="tpck.1169194664001" value="empty_1345455487241_20" />
     </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="8412574337284617399">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1348213967904_5" />
+    </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="v7ag.AtomicComponent" typeId="v7ag.4491876417845649011" id="5688055005366701068">
       <property name="exported" nameId="x27k.1317894735999272944" value="true" />
       <property name="name" nameId="tpck.1169194664001" value="EEPROMLogger" />
+      <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="hba4.MustBeCleanedUp" typeId="hba4.1793958740514623182" id="8412574337284617402">
+        <property name="comment" nameId="hba4.1793958740514623185" value="Do we need this?" />
+      </node>
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="5688055005366701069">
       <property name="name" nameId="tpck.1169194664001" value="empty_1345455484859_18" />
