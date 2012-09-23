@@ -5,6 +5,7 @@
   <import index="75wo" modelUID="r:eaa205a4-f15c-47d3-99e2-e648881b5997(com.mbeddr.cc.requirements.structure)" version="5" implicit="yes" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="26ao" modelUID="r:7c15925b-a4a5-4da3-88aa-931a5a9ed982(com.mbeddr.cc.trace.structure)" version="3" implicit="yes" />
+  <import index="hba4" modelUID="r:f5bd2ad9-cd54-4408-b815-07f9f306f074(com.mbeddr.mpsutil.blutil.structure)" version="5" implicit="yes" />
   <roots>
     <node type="75wo.RequirementsModule" typeId="75wo.8745401669462963169" id="8028557988791054195">
       <property name="name" nameId="tpck.1169194664001" value="System" />
@@ -139,6 +140,9 @@
       <property name="summmary" nameId="75wo.3402431285977818823" value="Other infos stored on the device itself" />
       <property name="proseText" nameId="75wo.8745401669463252438" value="3.8: The device shall be capable of storing the following information in device memory:&#10;- The device shall be capable of storing the device model and serial number, and implant date information.&#10;- The device shall be capable of storing the lead implant date and polarity information.&#10;- The device shall be capable of storing pacing thresholds and P and R-wave amplitude information.&#10;- The device shall be capable of storing the pacing lead impedance information.&#10;- The device shall be capable of storing the patient's indications for pacing." />
       <node role="kind" roleId="75wo.8921256082857728256" type="75wo.FunctionalRequirementKind" typeId="75wo.8921256082857728250" id="6021234015572537084" />
+    </node>
+    <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="hba4.MustBeCleanedUp" typeId="hba4.1793958740514623182" id="8412574337284617393">
+      <property name="comment" nameId="hba4.1793958740514623185" value="Better name" />
     </node>
   </root>
 </model>
