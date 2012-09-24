@@ -12,7 +12,6 @@
   <import index="clbe" modelUID="r:61d840b4-12c1-49ea-b142-b2a1550a9b15(com.mbeddr.core.udt.structure)" version="7" implicit="yes" />
   <import index="k146" modelUID="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" version="2" implicit="yes" />
   <import index="51wr" modelUID="r:b31f1c3c-99aa-4f1e-a329-cba27efb1a6b(com.mbeddr.core.buildconfig.structure)" version="1" implicit="yes" />
-  <import index="hba4" modelUID="r:f5bd2ad9-cd54-4408-b815-07f9f306f074(com.mbeddr.mpsutil.blutil.structure)" version="5" implicit="yes" />
   <roots>
     <node type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="6047040665414172492">
       <property name="name" nameId="tpck.1169194664001" value="Interrupts" />
@@ -2632,16 +2631,13 @@
       <property name="name" nameId="tpck.1169194664001" value="EventType" />
       <property name="exported" nameId="x27k.1317894735999272944" value="true" />
       <node role="literals" roleId="clbe.8811614583515725857" type="clbe.EnumLiteral" typeId="clbe.8811614583515725853" id="8028557988792011820">
-        <property name="name" nameId="tpck.1169194664001" value="TimerTick" />
+        <property name="name" nameId="tpck.1169194664001" value="TIMERTICK" />
       </node>
       <node role="literals" roleId="clbe.8811614583515725857" type="clbe.EnumLiteral" typeId="clbe.8811614583515725853" id="8028557988792011822">
-        <property name="name" nameId="tpck.1169194664001" value="AtrialSense" />
+        <property name="name" nameId="tpck.1169194664001" value="ATRIALSENSE" />
       </node>
       <node role="literals" roleId="clbe.8811614583515725857" type="clbe.EnumLiteral" typeId="clbe.8811614583515725853" id="8028557988792011823">
-        <property name="name" nameId="tpck.1169194664001" value="VentricleSense" />
-      </node>
-      <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="hba4.MustBeCleanedUp" typeId="hba4.1793958740514623182" id="8412574337284617406">
-        <property name="comment" nameId="hba4.1793958740514623185" value="TIMER_TICK, ATRIAL_SENSE, ...?" />
+        <property name="name" nameId="tpck.1169194664001" value="VENTRICLESENSE" />
       </node>
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="8028557988792011821">
