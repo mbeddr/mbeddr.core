@@ -3,13 +3,6 @@
 
 #include <unistd.h>
 
-#define PACER_TYPE_AOO 0x01
-#define PACER_TYPE_VOO 0x02
-#define PACER_TYPE_VVI 0x03
-
-#define PACER_PARAM_PACER_TYPE      0x01
-#define PACER_PARAM_PULSE_TIME_SPAN 0x02
-
 extern int initSerial();
 extern void dinitSerial();
 

@@ -11,7 +11,6 @@ In simple terms, the project utilizes [**mbeddr**](http://mbeddr.wordpress.com/)
 # Project directory structure
 - - -
 There are only 2 directories that are present in the project :
-
  *  The '**doc**' folder - which contains further documentation regarding the project
  *  _and_ the '**src**' folder - in which the project sources (3 subdirectories for each environment : 2 for PIC and 1 for BeagleBone) reside.
 

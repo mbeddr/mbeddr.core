@@ -1,16 +1,13 @@
 #include "serial.h"
 #include "rs232.h"
+#include "consts.h"
+
 #include <fcntl.h>
 #include <unistd.h>
 
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-
-#define ttyUSB0 16
-
-#define SERIAL_PORT ttyUSB0
-#define SERIAL_BAUD 19200
 
 #define SOF                      0x55
 
