@@ -95,6 +95,18 @@
     <node type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="8428744930541856329">
       <property name="name" nameId="tpck.1169194664001" value="IModuleContentRef" />
     </node>
+    <node type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="1908346841499857570">
+      <property name="name" nameId="tpck.1169194664001" value="IShowUpInOutline" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="outline" />
+    </node>
+    <node type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="1908346841499892479">
+      <property name="name" nameId="tpck.1169194664001" value="IOutlineRoot" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="outline" />
+    </node>
+    <node type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="1908346841499937386">
+      <property name="name" nameId="tpck.1169194664001" value="IHideFromOutline" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="outline" />
+    </node>
   </roots>
   <root id="7024921229555594291">
     <node role="extends" roleId="tpce.1169127546356" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7024921229555594292">
@@ -526,5 +538,8 @@
   </root>
   <root id="7123462210702867708" />
   <root id="8428744930541856329" />
+  <root id="1908346841499857570" />
+  <root id="1908346841499892479" />
+  <root id="1908346841499937386" />
 </model>
 
