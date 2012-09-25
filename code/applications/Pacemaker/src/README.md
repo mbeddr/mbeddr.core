@@ -4,7 +4,6 @@
 # Some details
 - - -
 This '**src**' directory contains 3 subdirectories naming:
-
 * '**mps**' which hosts the *mbeddr*'s MPS sources. They, naturally, can be edited through the MPS editor.
 * '**mplab**' in which the *mbeddr*'s generated code can be found along with some adaptor code (code that is not *ISO C compatible* but which is required by the *PIC C Compiler*). The resulting code can be compiled using **HI-TECH**'s **PIC18 C Compiler** and, if required, further burned onto a **PIC18** MCU.
 * '**bbone**' which contains the simulator sources for the **BeagleBone**'s **Angstrom distribution** platform.
