@@ -8,7 +8,7 @@
   <devkit namespace="a4dac888-0788-4852-b4c0-f386bf6f2c0b(com.mbeddr.cc.reqtrace)" />
   <devkit namespace="24565007-e59f-42fc-ac10-da3836deec1c(com.mbeddr.components)" />
   <import index="h1mu" modelUID="r:5d14202d-f0c5-4d54-91b8-53d48ec1c32b(Pacemaker.main.Requirements)" version="-1" />
-  <import index="eji2" modelUID="r:1ecc2b4a-a062-4a3e-81d8-a5227e6be06c(Pacemaker.main.Gizmo)" version="-1" />
+  <import index="eji2" modelUID="r:1ecc2b4a-a062-4a3e-81d8-a5227e6be06c(Pacemaker.main.Pacer)" version="-1" />
   <import index="fetz" modelUID="r:b6c3222a-7be8-4ec7-a7b3-e89b39f75da1(Pacemaker.main.Hardware)" version="-1" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="3" implicit="yes" />
@@ -23,7 +23,7 @@
   <import index="26ao" modelUID="r:7c15925b-a4a5-4da3-88aa-931a5a9ed982(com.mbeddr.cc.trace.structure)" version="3" implicit="yes" />
   <import index="75wo" modelUID="r:eaa205a4-f15c-47d3-99e2-e648881b5997(com.mbeddr.cc.requirements.structure)" version="5" implicit="yes" />
   <import index="p7vm" modelUID="r:28fa862e-f94d-4c39-bdf7-a4bdbc773888(com.mbeddr.ext.components.gen_nomw.structure)" version="0" implicit="yes" />
-  <import index="v7ag" modelUID="r:9596407c-f27a-49d3-abde-3a66293c5b61(com.mbeddr.ext.components.structure)" version="11" implicit="yes" />
+  <import index="v7ag" modelUID="r:9596407c-f27a-49d3-abde-3a66293c5b61(com.mbeddr.ext.components.structure)" version="12" implicit="yes" />
   <import index="8yj6" modelUID="r:b5ef41ef-8594-459c-bc08-a7e214c6fb43(com.mbeddr.ext.components.statemachine.structure)" version="0" implicit="yes" />
   <roots>
     <node type="mj1l.TypeSizeConfiguration" typeId="mj1l.3335993110369795380" id="4600281520962881347" />
@@ -645,8 +645,14 @@
             </node>
           </node>
           <node role="guard" roleId="clqz.5778488248013533903" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="9016946137851912084">
-            <node role="left" roleId="mj1l.8860443239512128064" type="clqz.EventArgRef" typeId="clqz.1786180596061258962" id="9016946137851912081">
-              <link role="arg" roleId="clqz.1786180596061258963" targetNodeId="9016946137851912050" resolveInfo="rb" />
+            <node role="left" roleId="mj1l.8860443239512128064" type="mj1l.CastExpression" typeId="mj1l.6610873504380029780" id="7257665771723258094">
+              <node role="expr" roleId="mj1l.6610873504380029782" type="clqz.EventArgRef" typeId="clqz.1786180596061258962" id="7257665771723258103">
+                <link role="arg" roleId="clqz.1786180596061258963" targetNodeId="9016946137851912050" resolveInfo="rb" />
+              </node>
+              <node role="targetType" roleId="mj1l.6610873504380029790" type="mj1l.UnsignedInt8tType" typeId="mj1l.8463282783691618461" id="7257665771723258100">
+                <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+                <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+              </node>
             </node>
             <node role="right" roleId="mj1l.8860443239512128065" type="x27k.GlobalConstantRef" typeId="x27k.3788988821852026523" id="8028557988791054249">
               <link role="constant" roleId="x27k.3788988821852026524" targetNodeId="8028557988791054237" resolveInfo="StartOfCommand" />
@@ -669,8 +675,14 @@
             </node>
           </node>
           <node role="guard" roleId="clqz.5778488248013533903" type="mj1l.NotEqualsExpression" typeId="mj1l.7615572890648529894" id="8028557988791054314">
-            <node role="left" roleId="mj1l.8860443239512128064" type="clqz.EventArgRef" typeId="clqz.1786180596061258962" id="8028557988791054315">
-              <link role="arg" roleId="clqz.1786180596061258963" targetNodeId="9016946137851912050" resolveInfo="rb" />
+            <node role="left" roleId="mj1l.8860443239512128064" type="mj1l.CastExpression" typeId="mj1l.6610873504380029780" id="7257665771723258106">
+              <node role="expr" roleId="mj1l.6610873504380029782" type="clqz.EventArgRef" typeId="clqz.1786180596061258962" id="7257665771723258117">
+                <link role="arg" roleId="clqz.1786180596061258963" targetNodeId="9016946137851912050" resolveInfo="rb" />
+              </node>
+              <node role="targetType" roleId="mj1l.6610873504380029790" type="mj1l.UnsignedInt8tType" typeId="mj1l.8463282783691618461" id="7257665771723258114">
+                <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+                <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+              </node>
             </node>
             <node role="right" roleId="mj1l.8860443239512128065" type="x27k.GlobalConstantRef" typeId="x27k.3788988821852026523" id="8028557988791054319">
               <link role="constant" roleId="x27k.3788988821852026524" targetNodeId="8028557988791054237" resolveInfo="StartOfCommand" />
@@ -1328,7 +1340,7 @@
                         <link role="arg" roleId="x27k.2093108837558505659" targetNodeId="8028557988791054864" resolveInfo="psc" />
                       </node>
                     </node>
-                    <node role="targetType" roleId="mj1l.6610873504380029790" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="8028557988791055123">
+                    <node role="targetType" roleId="mj1l.6610873504380029790" type="mj1l.UnsignedInt8tType" typeId="mj1l.8463282783691618461" id="2816018262273338029">
                       <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
                       <property name="const" nameId="mj1l.2941277002445651368" value="false" />
                     </node>
@@ -1359,7 +1371,7 @@
                       <link role="arg" roleId="x27k.2093108837558505659" targetNodeId="8028557988791054864" resolveInfo="psc" />
                     </node>
                   </node>
-                  <node role="targetType" roleId="mj1l.6610873504380029790" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="4484627551496179708">
+                  <node role="targetType" roleId="mj1l.6610873504380029790" type="mj1l.UnsignedInt8tType" typeId="mj1l.8463282783691618461" id="7257665771723258090">
                     <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
                     <property name="const" nameId="mj1l.2941277002445651368" value="false" />
                   </node>
@@ -1399,8 +1411,14 @@
                     <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="4338322735134910982">
                       <node role="expr" roleId="c4fa.7254843406768833939" type="x27k.FunctionCall" typeId="x27k.5950410542643524492" id="4338322735134910983">
                         <link role="function" roleId="x27k.5950410542643524493" targetNodeId="fetz.298572849313103914" resolveInfo="SendByteToSerial" />
-                        <node role="actuals" roleId="x27k.5950410542643524495" type="x27k.FunctionCall" typeId="x27k.5950410542643524492" id="4338322735134910984">
-                          <link role="function" roleId="x27k.5950410542643524493" targetNodeId="eji2.4338322735134910970" resolveInfo="GetPacerPacingTimeSpan" />
+                        <node role="actuals" roleId="x27k.5950410542643524495" type="mj1l.CastExpression" typeId="mj1l.6610873504380029780" id="2816018262273338033">
+                          <node role="expr" roleId="mj1l.6610873504380029782" type="x27k.FunctionCall" typeId="x27k.5950410542643524492" id="4338322735134910984">
+                            <link role="function" roleId="x27k.5950410542643524493" targetNodeId="eji2.4338322735134910970" resolveInfo="GetPacerPacingTimeSpan" />
+                          </node>
+                          <node role="targetType" roleId="mj1l.6610873504380029790" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="2816018262273338037">
+                            <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+                            <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+                          </node>
                         </node>
                       </node>
                     </node>
@@ -1477,7 +1495,7 @@
     </node>
     <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="75wo.ReqModuleRefAttribute" typeId="75wo.3402431285977874460" id="8028557988791054222">
       <node role="refs" roleId="26ao.439567521322959424" type="26ao.TraceTargetProviderRef" typeId="26ao.439567521322959422" id="8028557988791054223">
-        <link role="provider" roleId="26ao.439567521322959423" targetNodeId="h1mu.8028557988791054195" resolveInfo="System" />
+        <link role="provider" roleId="26ao.439567521322959423" targetNodeId="h1mu.8028557988791054195" resolveInfo="Section_3_System_Requirements" />
       </node>
     </node>
   </root>

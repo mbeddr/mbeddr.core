@@ -7,7 +7,7 @@
   <import index="26ao" modelUID="r:7c15925b-a4a5-4da3-88aa-931a5a9ed982(com.mbeddr.cc.trace.structure)" version="3" implicit="yes" />
   <roots>
     <node type="75wo.RequirementsModule" typeId="75wo.8745401669462963169" id="8028557988791054195">
-      <property name="name" nameId="tpck.1169194664001" value="System" />
+      <property name="name" nameId="tpck.1169194664001" value="Section_3_System_Requirements" />
       <property name="showTraces" nameId="26ao.3291018189726920316" value="true" />
     </node>
   </roots>
