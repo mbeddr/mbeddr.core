@@ -1,8 +1,7 @@
 #include "heart.h"
 #include "adc.h"
 #include "dac.h"
-
-#include <gtk/gtk.h>
+#include "buzzer.h"
 
 #define VSEN VENTRICLE_SENSE_PIN
 #define ASEN ATRIAL_SENSE_PIN

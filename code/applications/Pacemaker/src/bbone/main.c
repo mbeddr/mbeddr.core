@@ -28,9 +28,9 @@ int main(int argc, char *argv[]) {
   MainFrm *win = NULL;
 
   initSerial();
-  initHeartHw();
+  initHHeart();
   initHeartModel();
-  
+
   #ifdef LUA_HEART_MODEL
     loadLuaHeart(argv[1]);
   #endif
@@ -49,7 +49,7 @@ int main(int argc, char *argv[]) {
   gtk_main();
 
   dinitHeartModel();
-  dinitHeartHw();
+  dinitHHeart();
   dinitSerial();
 
   dinitMainForm(&win);

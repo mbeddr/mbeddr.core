@@ -11,8 +11,10 @@ OBJS    := angstrom.o    \
            dac.o         \
            heart.o       \
            heartlogger.o \
+           hookedheart.o \
            rs232.o       \
            serial.o      \
+           buzzer.o      \
            graphs.o      \
            mainform.o
 

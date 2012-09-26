@@ -53,8 +53,11 @@ setPinMode(unsigned int pin, unsigned int mode) {
   case GPIO1_5:
     sprintf(fullPath, "/sys/kernel/debug/omap_mux/gpmc_ad5");
     break;
+  case GPIO1_13:
+    sprintf(fullPath, "/sys/kernel/debug/omap_mux/gpmc_ad13");
+    break;
   default:
-    fprintf(stderr, "Pin not recognized!\n");
+    fprintf(stderr, "Pin not recognized! Please inspect the 'angstrom/setPinMode' function.\n");
     return -1;
     break;
   }

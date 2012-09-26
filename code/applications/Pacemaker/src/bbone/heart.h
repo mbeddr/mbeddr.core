@@ -3,10 +3,10 @@
 
 #include <sys/types.h>
 #include <unistd.h>
+#include <gtk/gtk.h>
+
 #include "heartlogger.h"
 #include "consts.h"
-
-#define CHAMBER_SENSE_IMPORTANT_VOLTAGE_STEP 0.8
 
 extern int initHeartHw();
 extern void dinitHeartHw();

@@ -13,6 +13,14 @@
 #define GPIO1_3 35
 #define GPIO1_4 36
 #define GPIO1_5 37
+#define GPIO1_6 38
+#define GPIO1_7 39
+#define GPIO1_8 40
+#define GPIO1_9 41
+#define GPIO1_10 42
+#define GPIO1_11 43
+#define GPIO1_12 44
+#define GPIO1_13 45
 
 #define PIN_DIR_OUT "out"
 #define PIN_DIR_IN  "in"

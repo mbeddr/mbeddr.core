@@ -3,7 +3,6 @@
 #include <assert.h>
 
 #include "dac.h"
-
 #include "angstrom.h"
 
 /* defined from table 2, page 9 of LTC1661 datasheet */

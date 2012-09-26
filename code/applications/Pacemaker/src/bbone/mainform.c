@@ -1,6 +1,7 @@
 #include "mainform.h" 
 #include "serial.h"
-#include "heart.h"
+#include "buzzer.h"
+#include "hookedheart.h"
 #include "heartlogger.h"
 #include "graphs.h"
 
@@ -22,16 +23,21 @@
 #define BTEN_START_PACER_TEXT "Start Pacer"
 #define BTEN_STOP_PACER_TEXT  "Stop Pacer"
 
+#define BTEN_START_BUZZER_TEXT "Start Buzzer"
+#define BTEN_STOP_BUZZER_TEXT  "Stop Buzzer"
+
 static void changeWidgetBGColor(GtkWidget *widget, const gchar *clrName);
-static void bt_enable_heart_clicked(GtkButton *widget, gpointer user_data); 
-static void bt_enable_pacer_clicked(GtkButton *widget, gpointer user_data); 
 static void bt_read_pacer_clicked(GtkButton *widget, gpointer user_data); 
 static void bt_update_pacer_clicked(GtkButton *widget, gpointer user_data); 
+static void bt_enable_heart_clicked(GtkButton *widget, gpointer user_data); 
+static void bt_enable_pacer_clicked(GtkButton *widget, gpointer user_data); 
+static void bt_enable_buzzer_clicked(GtkButton *widget, gpointer user_data); 
 static void bt_exit_clicked(GtkButton *widget, gpointer user_data);
 static void updateStatusLabel(MainFrm *win, StatusType st, const gchar *str); 
 static gboolean onEvaluateHeartTick(gpointer user_data);
 static gboolean aquireEvaluateAndUpdatePlots(MainFrm *win);
 
+static gint msElapsedSinceLastHActivity = 0;
 static gboolean firstAqFire = TRUE;
 static gboolean isHeartModelRunning = TRUE;
 static PlotSample psPrevGImportant = {
@@ -55,10 +61,11 @@ MainFrm * initMainForm() {
   GtkWidget *ctrlsLayout = NULL;
   GtkWidget *lblPacerType = NULL;
   GtkWidget *lblPulseWidth = NULL;
-  GtkWidget *btEnableHeart = NULL;
-  GtkWidget *btEnablePacer = NULL;
   GtkWidget *btReadPacer = NULL;
   GtkWidget *btUpdatePacer = NULL;
+  GtkWidget *btEnableHeart = NULL;
+  GtkWidget *btEnablePacer = NULL;
+  GtkWidget *btEnableBuzzer = NULL;
   GtkWidget *btExit = NULL;
 
   win = g_new0(MainFrm, 1);
@@ -118,6 +125,11 @@ MainFrm * initMainForm() {
   gtk_widget_set_size_request(btEnablePacer, -1, CTRLS_SIZE_REQUEST_HEIGHT);
   gtk_box_pack_start(GTK_BOX(ctrlsLayout), btEnablePacer, FALSE, FALSE, 0);
 
+  btEnableBuzzer = gtk_button_new_with_label(BTEN_STOP_BUZZER_TEXT);
+  changeWidgetBGColor(GTK_WIDGET(btEnableBuzzer), "red");
+  gtk_widget_set_size_request(btEnableBuzzer, -1, CTRLS_SIZE_REQUEST_HEIGHT);
+  gtk_box_pack_start(GTK_BOX(ctrlsLayout), btEnableBuzzer, FALSE, FALSE, 0);
+
   btExit = gtk_button_new_with_label("Exit");
   gtk_widget_set_size_request(btExit, -1, CTRLS_SIZE_REQUEST_HEIGHT);
   gtk_box_pack_start(GTK_BOX(ctrlsLayout), btExit, FALSE, FALSE, 0);
@@ -145,6 +157,7 @@ MainFrm * initMainForm() {
   /* tie widget events to handlers */
   g_signal_connect(G_OBJECT(btEnableHeart), "clicked", G_CALLBACK(bt_enable_heart_clicked), win);
   g_signal_connect(G_OBJECT(btEnablePacer), "clicked", G_CALLBACK(bt_enable_pacer_clicked), win);
+  g_signal_connect(G_OBJECT(btEnableBuzzer), "clicked", G_CALLBACK(bt_enable_buzzer_clicked), win);
   g_signal_connect(G_OBJECT(btUpdatePacer), "clicked", G_CALLBACK(bt_update_pacer_clicked), win);
   g_signal_connect(G_OBJECT(btReadPacer), "clicked", G_CALLBACK(bt_read_pacer_clicked), win);
   g_signal_connect(G_OBJECT(btExit), "clicked", G_CALLBACK(bt_exit_clicked), NULL);
@@ -255,6 +268,27 @@ bt_enable_pacer_clicked(GtkButton *widget, gpointer user_data) {
 }
 
 static void 
+bt_enable_buzzer_clicked(GtkButton *widget, gpointer user_data) {
+  const gchar *btLabelText = gtk_button_get_label(widget);
+
+  if(g_strcmp0(BTEN_START_BUZZER_TEXT, btLabelText) == 0) {
+    /* start buzzer */
+   updateBuzzerUsage(TRUE);
+
+    gtk_button_set_label(widget, BTEN_STOP_BUZZER_TEXT);
+    changeWidgetBGColor(GTK_WIDGET(widget), "red");
+  } else if(g_strcmp0(BTEN_STOP_BUZZER_TEXT, btLabelText) == 0) {
+    /* stop buzzer */
+    updateBuzzerUsage(FALSE);
+
+    gtk_button_set_label(widget, BTEN_START_BUZZER_TEXT);
+    changeWidgetBGColor(GTK_WIDGET(widget), "green");
+  } else {
+    /* it shouldn't reach this point */
+  }
+}
+
+static void 
 bt_update_pacer_clicked(GtkButton *widget, gpointer user_data) {
   int currentPacerType = 0;
   int currentPacerPulseTimeSpan = 0;
@@ -345,8 +379,8 @@ aquireEvaluateAndUpdatePlots(MainFrm *win) {
       drawPlotLegend(crs, win->hrtSPlot, VentricleSense);
     } else {
       /* we still have some graph pixel space available. On with the next values */
-      gdouble asValue = readPacerAtrial();
-      gdouble vsValue = readPacerVentricle();
+      gdouble asValue = readHHPacerAtrial();
+      gdouble vsValue = readHHPacerVentricle();
       gdouble scaledASValue = (asValue * plotHeight)/(PLOT_SENSE_MAX_VALUE * 2.0);
       gdouble scaledVSValue = (vsValue * plotHeight)/(PLOT_SENSE_MAX_VALUE * 2.0);
 
