@@ -1,4 +1,4 @@
-#include "../../heart.h"
+#include "../../hookedheart.h"
 #include "inc/io.h"
 
 static void set_atrial_sensed();
@@ -31,7 +31,7 @@ void write_atrial_actuator(unsigned int time) {
   if(time != 0) {
     if(!atrialPulsing) {
       atrialPulsing = true;
-      generatePulseOnAtrial(time);
+      generateHHPulseOnAtrial(time);
     }
   } else {
     atrialPulsing = false;
@@ -42,7 +42,7 @@ void write_ventricle_actuator(unsigned int time) {
   if(time != 0) {
     if(!ventriclePulsing) {
       ventriclePulsing = true;
-      generatePulseOnVentricle(time);
+      generateHHPulseOnVentricle(time);
     }
   } else {
     ventriclePulsing = false;
@@ -50,7 +50,7 @@ void write_ventricle_actuator(unsigned int time) {
 }
 
 GEN_TYPE_boolean is_noval_atrial_signal_sensor() {
-  if(readPacerAtrial() > CHAMBER_SENSE_IMPORTANT_VOLTAGE_STEP) {
+  if(readHHPacerAtrial() > CHAMBER_SENSE_IMPORTANT_VOLTAGE_STEP) {
     set_atrial_sensed();
     return false;
   }
@@ -59,7 +59,7 @@ GEN_TYPE_boolean is_noval_atrial_signal_sensor() {
 }
 
 GEN_TYPE_boolean is_noval_ventricle_signal_sensor() {
-  if(readPacerVentricle() > CHAMBER_SENSE_IMPORTANT_VOLTAGE_STEP) {
+  if(readHHPacerVentricle() > CHAMBER_SENSE_IMPORTANT_VOLTAGE_STEP) {
     set_ventricle_sensed();
     return false;
   }

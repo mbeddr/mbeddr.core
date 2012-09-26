@@ -1,5 +1,5 @@
+#include "hookedheart.h"
 #include "lua_heart.h"
-#include "heart.h"
 
 #include <stdio.h>
 #include <lua.h>
@@ -171,10 +171,10 @@ static void
 luaPulseActionWrapper(ChamberType ct, useconds_t us) {
   switch(ct) {
   case Atrial:
-    generatePulseOnAtrial(us);
+    generateHHPulseOnAtrial(us);
     break;
   case Ventricle:
-    generatePulseOnVentricle(us);
+    generateHHPulseOnVentricle(us);
     break;
   default:
     /* it should not reach this point */
