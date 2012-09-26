@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <solution name="test.ts.requirements" uuid="7466d292-a28b-4345-a8e6-6b8b334ce6ca" compileInMPS="true">
   <models>
-    <modelRoot path="${solution_descriptor}/models" />
     <modelRoot path="${solution_descriptor}/" />
+    <modelRoot path="${solution_descriptor}/models" />
   </models>
   <sourcePath />
   <usedLanguages>
