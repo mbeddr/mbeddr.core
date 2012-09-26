@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<history>
+  <StructureModification>
+    <dependencies>
+      <model index="8aqa" modelUID="r:566c3417-ad82-456e-bd2d-4f4c15a9f767(com.mbeddr.core.debug.test.editor)" version="1" />
+      <model index="shlb" modelUID="r:4ddc8171-05b1-4bb9-bcff-7de814b61e2f(com.mbeddr.core.cstubs.test.editor)" version="0" />
+      <model index="bq87" modelUID="r:9f9fa6cb-0005-48c2-8479-31a27b345f2c(com.mbeddr.core.debug.test.constraints)" version="0" />
+      <model index="zamn" modelUID="r:70e9b01a-750c-4924-9991-314a95f6f6fb(com.mbeddr.core.cstubs.test.constraints)" version="-1" />
+      <model index="7kwv" modelUID="r:f46fa28c-4971-413a-ba69-1bc7f643a9ee(com.mbeddr.core.cstubs.test.structure)" version="0" />
+      <model index="rpmx" modelUID="r:64720d49-3cb5-4469-81c5-0c62eda0a2cb(com.mbeddr.core.debug.test.structure)" version="25" />
+    </dependencies>
+    <move id="rpmx.3355994504310887304" to="7kwv.3355994504310902327" />
+    <move id="rpmx.3355994504310887305" to="7kwv.3355994504310902328" />
+    <move id="bq87.3355994504310897252" to="zamn.3355994504310902335" />
+    <move id="bq87.3355994504310897100" to="zamn.3355994504310902331" />
+    <move id="bq87.3355994504310897279" to="zamn.3355994504310902336" />
+    <move id="bq87.3355994504310897097" to="zamn.3355994504310902329" />
+    <move id="bq87.3355994504310897098" to="zamn.3355994504310902330" />
+    <move id="bq87.3355994504310897101" to="zamn.3355994504310902332" />
+    <move id="bq87.3355994504310897273" to="zamn.3355994504310902334" />
+    <move id="bq87.3355994504310897183" to="zamn.3355994504310902333" />
+    <move id="8aqa.3355994504310887313" to="shlb.3355994504310902340" />
+    <move id="8aqa.3355994504310887311" to="shlb.3355994504310902339" />
+    <move id="8aqa.3355994504310887310" to="shlb.3355994504310902338" />
+    <move id="8aqa.3355994504310887308" to="shlb.3355994504310902337" />
+  </StructureModification>
+</history>
+
