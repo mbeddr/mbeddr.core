@@ -1,0 +1,47 @@
+# The default application name.
+ifndef APPL
+    APPL=my_app
+endif
+
+# The default build path.
+ifndef BPATH
+    BPATH=build
+endif
+
+# The compiler.
+ifndef CROSSCC
+    CROSSCC=gcc
+endif
+
+# The linker.
+ifndef CROSSLD
+    CROSSLD=gcc
+endif
+
+# The flags which are passed to the compiler and the linker.
+CCFLAGS+=-std=c99 -Wall -pedantic -c ${patsubst %,-I%,${subst :, ,${IPATH}}} `pkg-config --cflags gtk+-2.0`
+LDFLAGS+=-std=c99 -Wall -pedantic
+
+# The default rules, i.e. the entry point.
+all: ${BPATH}
+all: ${BPATH}/${APPL}.run
+
+# The target to clean the build directory.
+clean:
+	@echo "cleaning up path '${BPATH}' ..."
+	@rm -rf ${BPATH}
+
+# The rule for creating the build directory.
+${BPATH}:
+	@echo "creating path '${BPATH}' ..."
+	@mkdir ${BPATH}
+
+# The rule for building an object file from the corresponding C source file.
+${BPATH}/%.o: %.c
+	@echo "compiling file '${<}' ..."
+	@${CROSSCC} ${CCFLAGS} -o ${@} ${<}
+
+# The rule for linking an application.
+${BPATH}/%.run:
+	@echo "linking application '${@}' ..."
+#	@${CROSSLD} ${LDFLAGS} -o ${@} $(filter %.o %.a, ${^})

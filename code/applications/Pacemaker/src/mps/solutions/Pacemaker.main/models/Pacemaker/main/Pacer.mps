@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model modelUID="r:1ecc2b4a-a062-4a3e-81d8-a5227e6be06c(Pacemaker.main.Gizmo)">
+<model modelUID="r:1ecc2b4a-a062-4a3e-81d8-a5227e6be06c(Pacemaker.main.Pacer)">
   <persistence version="7" />
   <language namespace="13a36f90-83c5-4bf6-9dd6-70e455f1ef36(com.mbeddr.ext.components.statemachine)" />
   <language namespace="d62d6e81-9ae0-456b-b2c3-d71c0f373ded(com.mbeddr.analyses.nusmv.statemachine)" />
@@ -151,13 +151,13 @@
             </node>
             <node role="args" roleId="clqz.1786180596061248896" type="clqz.EventArg" typeId="clqz.1786180596061248885" id="7828586699788408199">
               <property name="name" nameId="tpck.1169194664001" value="ticks" />
-              <node role="type" roleId="mj1l.318113533128716676" type="mj1l.UnsignedInt8tType" typeId="mj1l.8463282783691618461" id="2816018262273333381">
+              <node role="type" roleId="mj1l.318113533128716676" type="mj1l.UnsignedInt8tType" typeId="mj1l.8463282783691618461" id="5135246153436909494">
                 <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
                 <property name="const" nameId="mj1l.2941277002445651368" value="false" />
               </node>
             </node>
             <node role="binding" roleId="clqz.4643433264760985275" type="8yj6.InternalRunnableBinding" typeId="8yj6.1598382569875775232" id="7828586699788408235">
-              <link role="runnable" roleId="8yj6.1598382569875775234" targetNodeId="7828586699788408223" resolveInfo="LocalPaceAction" />
+              <link role="runnable" roleId="8yj6.1598382569875775234" targetNodeId="7828586699788408223" resolveInfo="LocalPaceAction_handler" />
             </node>
           </node>
           <node role="contents" roleId="clqz.7835233251114737454" type="clqz.EmptyStatemachineContent" typeId="clqz.8927638623067326788" id="7828586699788408193" />
@@ -285,7 +285,7 @@
       </node>
       <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.EmptyComponentContent" typeId="v7ag.8515777736166878876" id="7828586699788408227" />
       <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="7828586699788408223">
-        <property name="name" nameId="tpck.1169194664001" value="LocalPaceAction" />
+        <property name="name" nameId="tpck.1169194664001" value="LocalPaceAction_handler" />
         <node role="arguments" roleId="x27k.5708867820623310661" type="x27k.Argument" typeId="x27k.7892328519581704407" id="4600281520963332407">
           <property name="name" nameId="tpck.1169194664001" value="c" />
           <node role="type" roleId="mj1l.318113533128716676" type="clbe.EnumType" typeId="clbe.8811614583515725893" id="298572849313095856">
@@ -315,9 +315,6 @@
         <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="7828586699788408228">
           <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
           <property name="const" nameId="mj1l.2941277002445651368" value="false" />
-        </node>
-        <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="hba4.MustBeCleanedUp" typeId="hba4.1793958740514623182" id="8412574337284617403">
-          <property name="comment" nameId="hba4.1793958740514623185" value="a better name: PaceAction_handler?" />
         </node>
       </node>
       <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.EmptyComponentContent" typeId="v7ag.8515777736166878876" id="7828586699788408212" />
@@ -537,7 +534,7 @@
                         </node>
                       </node>
                     </node>
-                    <node role="targetType" roleId="mj1l.6610873504380029790" type="mj1l.UnsignedInt16tType" typeId="mj1l.8463282783691618466" id="240546128289785022">
+                    <node role="targetType" roleId="mj1l.6610873504380029790" type="mj1l.UnsignedInt16tType" typeId="mj1l.8463282783691618466" id="5135246153436905375">
                       <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
                       <property name="const" nameId="mj1l.2941277002445651368" value="false" />
                     </node>
@@ -559,7 +556,7 @@
                 <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.BreakStatement" typeId="c4fa.8441331188640862326" id="5688055005366700524" />
               </node>
               <node role="expression" roleId="c4fa.3134547887598524929" type="clbe.EnumLiteralRef" typeId="clbe.8811614583515726007" id="5688055005366700526">
-                <link role="literal" roleId="clbe.8811614583515726008" targetNodeId="fetz.8028557988792011820" resolveInfo="TimerTick" />
+                <link role="literal" roleId="clbe.8811614583515726008" targetNodeId="fetz.8028557988792011820" resolveInfo="TIMERTICK" />
               </node>
             </node>
             <node role="cases" roleId="c4fa.3134547887598524959" type="c4fa.SwitchDefault" typeId="c4fa.3134547887598524930" id="5688055005366700538">
@@ -1026,7 +1023,7 @@
       <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.EmptyComponentContent" typeId="v7ag.8515777736166878876" id="5688055005366701542" />
       <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Field" typeId="v7ag.5308710777891512019" id="5688055005366701543">
         <property name="name" nameId="tpck.1169194664001" value="_vooPacer" />
-        <node role="type" roleId="mj1l.318113533128716676" type="clqz.StatemachineType" typeId="clqz.7851711690674263345" id="5688055005366701544">
+        <node role="type" roleId="mj1l.318113533128716676" type="clqz.StatemachineType" typeId="clqz.7851711690674263345" id="7257665771723258141">
           <link role="machine" roleId="clqz.7851711690674263346" targetNodeId="5688055005366701507" resolveInfo="VOOPacer" />
         </node>
       </node>
@@ -1035,7 +1032,7 @@
         <property name="name" nameId="tpck.1169194664001" value="init" />
         <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="5688055005366701547">
           <node role="statements" roleId="c4fa.4185783222026475862" type="clqz.InitializeSMStatement" typeId="clqz.1786180596061208520" id="5688055005366701548">
-            <node role="statemachine" roleId="clqz.1786180596061208522" type="v7ag.FieldRef" typeId="v7ag.5308710777891565561" id="5688055005366701549">
+            <node role="statemachine" roleId="clqz.1786180596061208522" type="v7ag.FieldRef" typeId="v7ag.5308710777891565561" id="7257665771723258143">
               <link role="field" roleId="v7ag.5308710777891565562" targetNodeId="5688055005366701543" resolveInfo="_vooPacer" />
             </node>
           </node>
@@ -1269,7 +1266,7 @@
                 <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.BreakStatement" typeId="c4fa.8441331188640862326" id="5688055005366701687" />
               </node>
               <node role="expression" roleId="c4fa.3134547887598524929" type="clbe.EnumLiteralRef" typeId="clbe.8811614583515726007" id="5688055005366701688">
-                <link role="literal" roleId="clbe.8811614583515726008" targetNodeId="fetz.8028557988792011820" resolveInfo="TimerTick" />
+                <link role="literal" roleId="clbe.8811614583515726008" targetNodeId="fetz.8028557988792011820" resolveInfo="TIMERTICK" />
               </node>
             </node>
             <node role="cases" roleId="c4fa.3134547887598524959" type="c4fa.SwitchDefault" typeId="c4fa.3134547887598524930" id="5688055005366701689">
@@ -1939,7 +1936,7 @@
                 <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.BreakStatement" typeId="c4fa.8441331188640862326" id="8028557988792012112" />
               </node>
               <node role="expression" roleId="c4fa.3134547887598524929" type="clbe.EnumLiteralRef" typeId="clbe.8811614583515726007" id="6047040665414172821">
-                <link role="literal" roleId="clbe.8811614583515726008" targetNodeId="fetz.8028557988792011820" resolveInfo="TimerTick" />
+                <link role="literal" roleId="clbe.8811614583515726008" targetNodeId="fetz.8028557988792011820" resolveInfo="TIMERTICK" />
               </node>
             </node>
             <node role="cases" roleId="c4fa.3134547887598524959" type="c4fa.SwitchCase" typeId="c4fa.3134547887598524928" id="6047040665414286448">
@@ -1972,7 +1969,7 @@
                 <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.BreakStatement" typeId="c4fa.8441331188640862326" id="6047040665414286451" />
               </node>
               <node role="expression" roleId="c4fa.3134547887598524929" type="clbe.EnumLiteralRef" typeId="clbe.8811614583515726007" id="6047040665414286453">
-                <link role="literal" roleId="clbe.8811614583515726008" targetNodeId="fetz.8028557988792011823" resolveInfo="VentricleSense" />
+                <link role="literal" roleId="clbe.8811614583515726008" targetNodeId="fetz.8028557988792011823" resolveInfo="VENTRICLESENSE" />
               </node>
             </node>
             <node role="cases" roleId="c4fa.3134547887598524959" type="c4fa.SwitchDefault" typeId="c4fa.3134547887598524930" id="8028557988792012792">
@@ -2011,14 +2008,19 @@
         <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="1026677032748711641">
           <node role="statements" roleId="c4fa.4185783222026475862" type="x27k.ReturnStatement" typeId="x27k.8967919205527146149" id="1026677032748711645">
             <node role="expression" roleId="x27k.8967919205527146150" type="mj1l.CastExpression" typeId="mj1l.6610873504380029780" id="4712415786988365361">
-              <node role="targetType" roleId="mj1l.6610873504380029790" type="mj1l.UnsignedInt8tType" typeId="mj1l.8463282783691618461" id="2816018262273338065">
+              <node role="targetType" roleId="mj1l.6610873504380029790" type="mj1l.UnsignedInt8tType" typeId="mj1l.8463282783691618461" id="8663119428052337227">
                 <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
                 <property name="const" nameId="mj1l.2941277002445651368" value="false" />
               </node>
-              <node role="expr" roleId="mj1l.6610873504380029782" type="clqz.StatemachineExtVarRef" typeId="clqz.7999989049972989533" id="4712415786988365359">
-                <link role="var" roleId="clqz.7999989049972989534" targetNodeId="8028557988791059127" resolveInfo="LRI" />
-                <node role="statemachine" roleId="clqz.7999989049972989535" type="v7ag.FieldRef" typeId="v7ag.5308710777891565561" id="4712415786988365356">
-                  <link role="field" roleId="v7ag.5308710777891565562" targetNodeId="4712415786988365299" resolveInfo="_vviPacer" />
+              <node role="expr" roleId="mj1l.6610873504380029782" type="mj1l.DivExpression" typeId="mj1l.5763383285156373022" id="8663119428052337234">
+                <node role="right" roleId="mj1l.8860443239512128065" type="clqz.StatemachineExtVarRef" typeId="clqz.7999989049972989533" id="8663119428052337240">
+                  <link role="var" roleId="clqz.7999989049972989534" targetNodeId="8028557988791059127" resolveInfo="LRI" />
+                  <node role="statemachine" roleId="clqz.7999989049972989535" type="v7ag.FieldRef" typeId="v7ag.5308710777891565561" id="8663119428052337237">
+                    <link role="field" roleId="v7ag.5308710777891565562" targetNodeId="4712415786988365299" resolveInfo="_vviPacer" />
+                  </node>
+                </node>
+                <node role="left" roleId="mj1l.8860443239512128064" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="8663119428052337231">
+                  <property name="value" nameId="mj1l.8860443239512128104" value="60000" />
                 </node>
               </node>
             </node>
@@ -2275,8 +2277,8 @@
         </node>
       </node>
     </node>
-    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="1026677032748721419">
-      <property name="name" nameId="tpck.1169194664001" value="empty_1345637215897_12" />
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="5135246153436847255">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1348236478208_1" />
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.GlobalVariableDeclaration" typeId="x27k.6610873504380335822" id="5688055005366712015">
       <property name="name" nameId="tpck.1169194664001" value="_ci" />
@@ -2294,8 +2296,8 @@
         <link role="intf" roleId="v7ag.8105003328815054493" targetNodeId="5688055005366700405" resolveInfo="PLoggerInterface" />
       </node>
     </node>
-    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="5688055005366797330">
-      <property name="name" nameId="tpck.1169194664001" value="empty_1345471061278_4" />
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="5835760477217864213">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1348493660900_2" />
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="1559571946845220487">
       <property name="name" nameId="tpck.1169194664001" value="SetPacerType" />
@@ -2508,7 +2510,7 @@
               <link role="var" roleId="x27k.6610873504380357355" targetNodeId="5688055005366712015" resolveInfo="_ci" />
             </node>
             <node role="actuals" roleId="v7ag.8105003328815091213" type="clbe.EnumLiteralRef" typeId="clbe.8811614583515726007" id="5688055005366712047">
-              <link role="literal" roleId="clbe.8811614583515726008" targetNodeId="fetz.8028557988792011820" resolveInfo="TimerTick" />
+              <link role="literal" roleId="clbe.8811614583515726008" targetNodeId="fetz.8028557988792011820" resolveInfo="TIMERTICK" />
             </node>
           </node>
         </node>
@@ -2528,7 +2530,7 @@
               <link role="var" roleId="x27k.6610873504380357355" targetNodeId="5688055005366712015" resolveInfo="_ci" />
             </node>
             <node role="actuals" roleId="v7ag.8105003328815091213" type="clbe.EnumLiteralRef" typeId="clbe.8811614583515726007" id="5688055005366712057">
-              <link role="literal" roleId="clbe.8811614583515726008" targetNodeId="fetz.8028557988792011823" resolveInfo="VentricleSense" />
+              <link role="literal" roleId="clbe.8811614583515726008" targetNodeId="fetz.8028557988792011823" resolveInfo="VENTRICLESENSE" />
             </node>
           </node>
         </node>
@@ -2556,7 +2558,7 @@
               <link role="var" roleId="x27k.6610873504380357355" targetNodeId="5688055005366712015" resolveInfo="_ci" />
             </node>
             <node role="actuals" roleId="v7ag.8105003328815091213" type="clbe.EnumLiteralRef" typeId="clbe.8811614583515726007" id="5688055005366712066">
-              <link role="literal" roleId="clbe.8811614583515726008" targetNodeId="fetz.8028557988792011822" resolveInfo="AtrialSense" />
+              <link role="literal" roleId="clbe.8811614583515726008" targetNodeId="fetz.8028557988792011822" resolveInfo="ATRIALSENSE" />
             </node>
           </node>
         </node>
@@ -3035,12 +3037,6 @@
         </node>
       </node>
     </node>
-    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="8412574337284617396">
-      <property name="name" nameId="tpck.1169194664001" value="empty_1348213953394_3" />
-    </node>
-    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="8412574337284617397">
-      <property name="name" nameId="tpck.1169194664001" value="empty_1348213953579_4" />
-    </node>
     <node role="imports" roleId="x27k.1317894735999304826" type="x27k.ModuleImport" typeId="x27k.1317894735999299713" id="5688055005366760051">
       <link role="module" roleId="x27k.1317894735999299714" targetNodeId="fetz.6047040665414172499" resolveInfo="PIC18StdFunctions" />
     </node>
@@ -3049,26 +3045,6 @@
     </node>
     <node role="imports" roleId="x27k.1317894735999304826" type="x27k.ModuleImport" typeId="x27k.1317894735999299713" id="5688055005366700782">
       <link role="module" roleId="x27k.1317894735999299714" targetNodeId="fetz.6047040665414172550" resolveInfo="Usart" />
-    </node>
-    <node role="contents" roleId="x27k.6437088627575722833" type="v7ag.AtomicComponent" typeId="v7ag.4491876417845649011" id="5688055005366701072">
-      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
-      <property name="name" nameId="tpck.1169194664001" value="StackLogger" />
-      <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="hba4.MustBeCleanedUp" typeId="hba4.1793958740514623182" id="8412574337284617398">
-        <property name="comment" nameId="hba4.1793958740514623185" value="Do we need this?" />
-      </node>
-    </node>
-    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="5688055005366701071">
-      <property name="name" nameId="tpck.1169194664001" value="empty_1345455487241_20" />
-    </node>
-    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="8412574337284617399">
-      <property name="name" nameId="tpck.1169194664001" value="empty_1348213967904_5" />
-    </node>
-    <node role="contents" roleId="x27k.6437088627575722833" type="v7ag.AtomicComponent" typeId="v7ag.4491876417845649011" id="5688055005366701068">
-      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
-      <property name="name" nameId="tpck.1169194664001" value="EEPROMLogger" />
-      <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="hba4.MustBeCleanedUp" typeId="hba4.1793958740514623182" id="8412574337284617402">
-        <property name="comment" nameId="hba4.1793958740514623185" value="Do we need this?" />
-      </node>
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="5688055005366701069">
       <property name="name" nameId="tpck.1169194664001" value="empty_1345455484859_18" />
