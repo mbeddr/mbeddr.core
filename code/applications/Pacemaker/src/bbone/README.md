@@ -70,4 +70,4 @@ The following list contains important macro definitions in the **bbone**'s sourc
 
 # Further readings
 - - -
-Since the hardware platform also includes [the Minnesota Pacemaker board](http://wiki.cas.mcmaster.ca/index.php/Pacemaker_Hardware_Reference_Platform_Details) along with a physical link consisting of a board build to adapt the logic levels between the 2 platforms, further readings in this regards can be found in the '**doc**' folder.
+Since the hardware platform also includes [the Minnesota Pacemaker board](http://wiki.cas.mcmaster.ca/index.php/Pacemaker_Hardware_Reference_Platform_Details) along with a physical link consisting of a board build to adapt the logic levels between the 2 platforms, further readings in this regards can be found in the project's root README.

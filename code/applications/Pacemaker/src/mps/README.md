@@ -12,4 +12,4 @@ The MPS's **mbeddr** subproject contains 4 modules :
 
 # And now ...
 - - -
-See the '**doc**'_'s_ folder for details of how to generate the sources and port them to the '**mplab**' subproject.
+See the project's root entry and the **mplab**_'s_ README for details of how to generate the sources and port them to the '**mplab**' subproject.
