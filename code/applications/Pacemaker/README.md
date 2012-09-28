@@ -16,8 +16,8 @@ There are only 2 directories that are present in the project :
 
 # Whereto now ![?](http://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Question_Circle.svg/18px-Question_Circle.svg.png)
 - - -
-Before continuing, we invite you to have a look at a short clip portraying the full project in action:
-# !!! Add YouTube link once it's available!!!
+Before continuing, we invite you to [have a look at a short clip](http://youtu.be/bWNPnE4cnIQ) portraying the full project in action.
+
 Now, let's tackle our section's question. You can go further and read the specific documentation present in each subproject or, if you'll read further, we assume that you want to reproduce our **Pacemaker project**. In this regards, you might find the following topics useful:
 
 ## How to couple the Minnesota board to the BeagleBone board?
