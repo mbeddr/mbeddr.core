@@ -44,6 +44,10 @@ Having this said, the interface board connects to the BeagleBone LCD Cape throug
 - - -
 If **mplab** complains about the generated code, you might want to [read this](https://github.com/mbeddr/mbeddr.core/issues/331) and [this](https://github.com/mbeddr/mbeddr.core/issues/360). It will help!
 Please keep in mind that **mbeddr** is a continuously evolving project so that other generating problems might emerge. They are usually small localized problems which can be quickly fixed by a regular inserting/removing. Some of them are automatically applied by the ``` ./export_mpstomplab.sh ``` script.
+
 If you don't want to go into exporting the generated sources yourself then feel free to burn the 'src/mplab' binary to the MCU since it's basically the same thing. You can say that we've done it for you :-) !
+
+## Angstrom OS auto-shutting down when powering up ?
+We had the same problem. It turns out that it has to do with the usb-to-serial converter attached to the usb-hub (maybe driver incompatibility?). A quick fix is to boot up BeagleBone **without the usb-to-serial converter attached to the hub**. After logging in, you can reattach the device and it will work as expected.
 
 # We thank you for your patience and wish you good luck!
