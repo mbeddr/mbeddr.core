@@ -17,4 +17,4 @@ To copy mbeddr's generated files into this folder one only needs to open a shell
 
 # Having incompatibility issues ?
 - - - 
-Check the '**doc**' folder for frequently asked questions.
+Check the general project README for general guidance.
