@@ -31,6 +31,7 @@
   <import index="51wr" modelUID="r:b31f1c3c-99aa-4f1e-a329-cba27efb1a6b(com.mbeddr.core.buildconfig.structure)" version="1" />
   <import index="clbe" modelUID="r:61d840b4-12c1-49ea-b142-b2a1550a9b15(com.mbeddr.core.udt.structure)" version="7" />
   <import index="n7pc" modelUID="r:1f4b6c73-0d50-4599-bc8a-9f6948adf243(com.mbeddr.core.expressions.typesystem)" version="0" />
+  <import index="199h" modelUID="r:30d7c11c-d7f2-4f2f-8bd3-716dc9ef267b(com.mbeddr.core.util.generator.template.utils)" version="-1" />
   <import index="tpf8" modelUID="r:00000000-0000-4000-0000-011c895902e8(jetbrains.mps.lang.generator.structure)" version="2" implicit="yes" />
   <import index="tp25" modelUID="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" version="-1" implicit="yes" />
   <import index="tpee" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="3" implicit="yes" />
@@ -1111,6 +1112,19 @@
                       </node>
                     </node>
                   </node>
+                  <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.IfMacro" typeId="tpf8.1118773211870" id="836404361044148009">
+                    <node role="conditionFunction" roleId="tpf8.1167945861827" type="tpf8.IfMacro_Condition" typeId="tpf8.1167945743726" id="836404361044148010">
+                      <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="836404361044148011">
+                        <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="836404361044148012">
+                          <node role="expression" roleId="tpee.1068580123156" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="836404361044148014">
+                            <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="199h.836404361044191000" resolveInfo="needsLabel" />
+                            <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="199h.836404361044190999" resolveInfo="ReportingUtil" />
+                            <node role="actualArgument" roleId="tpee.1068499141038" type="tpf3.TemplateFunctionParameter_generationContext" typeId="tpf3.1216860049635" id="836404361044148015" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
                 </node>
                 <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ArbitraryTextStatement" typeId="c4fa.3830958861296871078" id="2688792604368142823">
                   <node role="items" roleId="c4fa.3830958861296879115" type="c4fa.AbritraryTextItem" typeId="c4fa.3830958861296879113" id="2688792604368142827">
@@ -1542,6 +1556,19 @@
                                   <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="qd6m.836404361043035411" resolveInfo="effectiveCodeLocationIDOnly" />
                                 </node>
                               </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.IfMacro" typeId="tpf8.1118773211870" id="836404361044148017">
+                      <node role="conditionFunction" roleId="tpf8.1167945861827" type="tpf8.IfMacro_Condition" typeId="tpf8.1167945743726" id="836404361044148018">
+                        <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="836404361044148019">
+                          <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="836404361044148020">
+                            <node role="expression" roleId="tpee.1068580123156" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="836404361044148023">
+                              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="199h.836404361044191000" resolveInfo="needsLabel" />
+                              <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="199h.836404361044190999" resolveInfo="ReportingUtil" />
+                              <node role="actualArgument" roleId="tpee.1068499141038" type="tpf3.TemplateFunctionParameter_generationContext" typeId="tpf3.1216860049635" id="836404361044148024" />
                             </node>
                           </node>
                         </node>
@@ -2016,6 +2043,19 @@
                                 <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="qd6m.836404361043035411" resolveInfo="effectiveCodeLocationIDOnly" />
                               </node>
                             </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.IfMacro" typeId="tpf8.1118773211870" id="836404361044148026">
+                    <node role="conditionFunction" roleId="tpf8.1167945861827" type="tpf8.IfMacro_Condition" typeId="tpf8.1167945743726" id="836404361044148027">
+                      <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="836404361044148028">
+                        <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="836404361044148029">
+                          <node role="expression" roleId="tpee.1068580123156" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="836404361044148030">
+                            <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="199h.836404361044190999" resolveInfo="ReportingUtil" />
+                            <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="199h.836404361044191000" resolveInfo="needsLabel" />
+                            <node role="actualArgument" roleId="tpee.1068499141038" type="tpf3.TemplateFunctionParameter_generationContext" typeId="tpf3.1216860049635" id="836404361044148031" />
                           </node>
                         </node>
                       </node>
