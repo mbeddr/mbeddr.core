@@ -211,6 +211,9 @@
       <property name="name" nameId="tpck.1169194664001" value="removePreventNameMangling" />
       <link role="applicableConcept" roleId="tpc2.1139535219968" targetNodeId="x27k.6437088627575722831" resolveInfo="IModuleContent" />
     </node>
+    <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="836404361042829362">
+      <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="x27k.836404361042829358" resolveInfo="PragmaModelContent" />
+    </node>
   </roots>
   <root id="6437088627575722855">
     <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="6437088627575722857">
@@ -2191,6 +2194,23 @@
               </node>
             </node>
           </node>
+        </node>
+      </node>
+    </node>
+  </root>
+  <root id="836404361042829362">
+    <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="836404361042793699">
+      <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Indent" typeId="tpc2.1237303669825" id="836404361042793701" />
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="836404361042793703">
+        <property name="text" nameId="tpc2.1073389577007" value="#pragma" />
+        <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.ForegroundColorStyleClassItem" typeId="tpc2.1186404549998" id="836404361042793707">
+          <property name="color" nameId="tpc2.1186403713874" value="darkGray" />
+        </node>
+      </node>
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Property" typeId="tpc2.1073389658414" id="836404361042793705">
+        <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="x27k.836404361042829361" resolveInfo="pragmaString" />
+        <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.ForegroundColorStyleClassItem" typeId="tpc2.1186404549998" id="836404361042793706">
+          <property name="color" nameId="tpc2.1186403713874" value="darkGray" />
         </node>
       </node>
     </node>
