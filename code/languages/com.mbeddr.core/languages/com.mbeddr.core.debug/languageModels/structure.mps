@@ -54,6 +54,10 @@
       <property name="virtualPackage" nameId="tpck.1193676396447" value="watches" />
       <property name="name" nameId="tpck.1169194664001" value="IChildrenResolver" />
     </node>
+    <node type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="8047260781568394650">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="state" />
+      <property name="name" nameId="tpck.1169194664001" value="ICallableInformationProvider" />
+    </node>
   </roots>
   <root id="568116135000816591" />
   <root id="3205769394890863066" />
@@ -75,5 +79,6 @@
   </root>
   <root id="2513598210665148633" />
   <root id="8519572659617671153" />
+  <root id="8047260781568394650" />
 </model>
 
