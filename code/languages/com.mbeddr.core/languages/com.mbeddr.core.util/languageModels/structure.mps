@@ -824,19 +824,19 @@
   </root>
   <root id="3457272138385189066">
     <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="3457272138385189067">
-      <property name="value" nameId="tpce.1105725733873" value="setflag" />
+      <property name="value" nameId="tpce.1105725733873" value="setmask" />
       <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473891462" resolveInfo="alias" />
     </node>
   </root>
   <root id="3457272138385220657">
     <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="3457272138385220658">
-      <property name="value" nameId="tpce.1105725733873" value="unsetflag" />
+      <property name="value" nameId="tpce.1105725733873" value="clearmask" />
       <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473891462" resolveInfo="alias" />
     </node>
   </root>
   <root id="3457272138385220720">
     <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="3457272138385220721">
-      <property name="value" nameId="tpce.1105725733873" value="hasflag" />
+      <property name="value" nameId="tpce.1105725733873" value="hasmask" />
       <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473891462" resolveInfo="alias" />
     </node>
   </root>
@@ -851,7 +851,7 @@
   </root>
   <root id="912616408885912373">
     <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="912616408885912374">
-      <property name="value" nameId="tpce.1105725733873" value="nothasflag" />
+      <property name="value" nameId="tpce.1105725733873" value="nothasmask" />
       <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473891462" resolveInfo="alias" />
     </node>
   </root>
