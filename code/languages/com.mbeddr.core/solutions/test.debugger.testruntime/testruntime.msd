@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="test.debugger.testruntime" uuid="2c7b1490-d104-4499-b285-2c3e32b4e50d" compileInMPS="true">
+<solution name="test.debugger.testruntime" uuid="2c7b1490-d104-4499-b285-2c3e32b4e50d" pluginKind="PLUGIN_OTHER" compileInMPS="true">
   <models>
     <modelRoot path="${solution_descriptor}/models" />
   </models>
