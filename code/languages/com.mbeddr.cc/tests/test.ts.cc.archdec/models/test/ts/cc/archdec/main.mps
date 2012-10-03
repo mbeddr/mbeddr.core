@@ -13,46 +13,59 @@
     </node>
   </roots>
   <root id="8433683602660500435">
-    <node role="contents" roleId="n80h.8433683602660444257" type="n80h.ArchitectureDecision" typeId="n80h.8433683602660442732" id="8433683602660551307">
-      <property name="name" nameId="tpck.1169194664001" value="AnotherOne" />
-      <node role="versions" roleId="n80h.8433683602660512004" type="n80h.ADVersion" typeId="n80h.8433683602660512002" id="8433683602660551308">
-        <node role="groups" roleId="n80h.8433683602660557700" type="n80h.GroupRef" typeId="n80h.8433683602660557692" id="8433683602660582973">
-          <link role="group" roleId="n80h.8433683602660557693" targetNodeId="8433683602660589768" resolveInfo="Whatever Group" />
-        </node>
-        <node role="groups" roleId="n80h.8433683602660557700" type="n80h.GroupRef" typeId="n80h.8433683602660557692" id="8433683602660582975">
-          <link role="group" roleId="n80h.8433683602660557693" targetNodeId="8433683602660589768" resolveInfo="Whatever Group" />
-        </node>
-        <node role="decision" roleId="n80h.8433683602660520084" type="n80h.MLText" typeId="n80h.8433683602660520066" id="8433683602660551309" />
-        <node role="arguments" roleId="n80h.8433683602660536523" type="n80h.MLText" typeId="n80h.8433683602660520066" id="8433683602660551311" />
-        <node role="state" roleId="n80h.8433683602660536534" type="n80h.ADStateTentative" typeId="n80h.8433683602660394400" id="8433683602660551312" />
-        <node role="problem" roleId="n80h.8433683602660520072" type="n80h.MLText" typeId="n80h.8433683602660520066" id="8433683602660575124">
-          <property name="text" nameId="n80h.8433683602660520067" value="ölkölsdkgöldk" />
-        </node>
-        <node role="relationships" roleId="n80h.8433683602660542408" type="n80h.ADRelFollowedBy" typeId="n80h.8433683602660442759" id="8433683602660582976">
-          <link role="target" roleId="n80h.8433683602660442733" targetNodeId="8433683602660535656" resolveInfo="A decision" />
-        </node>
+    <node role="contents" roleId="n80h.8433683602660444257" type="n80h.ArchitectureDecision" typeId="n80h.8433683602660442732" id="8433683602661351431">
+      <property name="name" nameId="tpck.1169194664001" value="SomeDecision" />
+      <node role="versions" roleId="n80h.8433683602660512004" type="n80h.ADVersion" typeId="n80h.8433683602660512002" id="8433683602661380128">
+        <property name="created" nameId="n80h.8433683602661337527" value="Oct 3, 2012 7:40:05 AM" />
+        <node role="decision" roleId="n80h.8433683602660520084" type="n80h.MLText" typeId="n80h.8433683602660520066" id="8433683602661380129" />
+        <node role="problem" roleId="n80h.8433683602660520072" type="n80h.MLText" typeId="n80h.8433683602660520066" id="8433683602661380130" />
+        <node role="arguments" roleId="n80h.8433683602660536523" type="n80h.MLText" typeId="n80h.8433683602660520066" id="8433683602661380131" />
+        <node role="state" roleId="n80h.8433683602660536534" type="n80h.ADStateApproved" typeId="n80h.8433683602660442724" id="8433683602661380134" />
       </node>
-    </node>
-    <node role="contents" roleId="n80h.8433683602660444257" type="n80h.EmptyArchDecContent" typeId="n80h.8433683602660501008" id="8433683602660551305" />
-    <node role="contents" roleId="n80h.8433683602660444257" type="n80h.ArchitectureDecision" typeId="n80h.8433683602660442732" id="8433683602660535656">
-      <property name="name" nameId="tpck.1169194664001" value="A decision" />
-      <node role="versions" roleId="n80h.8433683602660512004" type="n80h.ADVersion" typeId="n80h.8433683602660512002" id="8433683602660542403">
-        <node role="decision" roleId="n80h.8433683602660520084" type="n80h.MLText" typeId="n80h.8433683602660520066" id="8433683602660542404" />
-        <node role="problem" roleId="n80h.8433683602660520072" type="n80h.MLText" typeId="n80h.8433683602660520066" id="8433683602660542405" />
-        <node role="arguments" roleId="n80h.8433683602660536523" type="n80h.MLText" typeId="n80h.8433683602660520066" id="8433683602660542406" />
-        <node role="state" roleId="n80h.8433683602660536534" type="n80h.ADStateTentative" typeId="n80h.8433683602660394400" id="8433683602660542407" />
-        <node role="relationships" roleId="n80h.8433683602660542408" type="n80h.ADRelCausedBy" typeId="n80h.8433683602660442751" id="8433683602660551294">
-          <link role="target" roleId="n80h.8433683602660442733" targetNodeId="8433683602660551307" resolveInfo="AnotherOne" />
-        </node>
-        <node role="groups" roleId="n80h.8433683602660557700" type="n80h.GroupRef" typeId="n80h.8433683602660557692" id="8433683602660572981">
-          <link role="group" roleId="n80h.8433683602660557693" targetNodeId="8433683602660589768" resolveInfo="Whatever Group" />
-        </node>
-        <node role="groups" roleId="n80h.8433683602660557700" type="n80h.GroupRef" typeId="n80h.8433683602660557692" id="8433683602660572983">
-          <link role="group" roleId="n80h.8433683602660557693" targetNodeId="8433683602660589768" resolveInfo="Whatever Group" />
-        </node>
+      <node role="versions" roleId="n80h.8433683602660512004" type="n80h.ADVersion" typeId="n80h.8433683602660512002" id="8433683602661385745">
+        <property name="created" nameId="n80h.8433683602661337527" value="Oct 3, 2012 7:41:32 AM" />
+        <node role="decision" roleId="n80h.8433683602660520084" type="n80h.MLText" typeId="n80h.8433683602660520066" id="8433683602661385746" />
+        <node role="problem" roleId="n80h.8433683602660520072" type="n80h.MLText" typeId="n80h.8433683602660520066" id="8433683602661385747" />
+        <node role="arguments" roleId="n80h.8433683602660536523" type="n80h.MLText" typeId="n80h.8433683602660520066" id="8433683602661385748" />
+        <node role="state" roleId="n80h.8433683602660536534" type="n80h.ADStateTentative" typeId="n80h.8433683602660394400" id="8433683602661385749" />
       </node>
     </node>
     <node role="contents" roleId="n80h.8433683602660444257" type="n80h.EmptyArchDecContent" typeId="n80h.8433683602660501008" id="8433683602660557675" />
+    <node role="contents" roleId="n80h.8433683602660444257" type="n80h.ArchitectureDecision" typeId="n80h.8433683602660442732" id="8433683602661387991">
+      <property name="name" nameId="tpck.1169194664001" value="I don't know" />
+      <node role="versions" roleId="n80h.8433683602660512004" type="n80h.ADVersion" typeId="n80h.8433683602660512002" id="8433683602661400020">
+        <property name="created" nameId="n80h.8433683602661337527" value="Oct 3, 2012 7:52:50 AM" />
+        <node role="decision" roleId="n80h.8433683602660520084" type="n80h.MLText" typeId="n80h.8433683602660520066" id="8433683602661400021">
+          <property name="text" nameId="n80h.8433683602660520067" value="Dec" />
+        </node>
+        <node role="problem" roleId="n80h.8433683602660520072" type="n80h.MLText" typeId="n80h.8433683602660520066" id="8433683602661400022">
+          <property name="text" nameId="n80h.8433683602660520067" value="Probl" />
+        </node>
+        <node role="arguments" roleId="n80h.8433683602660536523" type="n80h.MLText" typeId="n80h.8433683602660520066" id="8433683602661400023">
+          <property name="text" nameId="n80h.8433683602660520067" value="Args" />
+        </node>
+        <node role="state" roleId="n80h.8433683602660536534" type="n80h.ADStateTentative" typeId="n80h.8433683602660394400" id="8433683602661400024" />
+        <node role="relationships" roleId="n80h.8433683602660542408" type="n80h.ADRelAlternative" typeId="n80h.8433683602660442757" id="8433683602661400025">
+          <link role="target" roleId="n80h.8433683602660442733" targetNodeId="8433683602661387991" resolveInfo="I don't know" />
+        </node>
+      </node>
+      <node role="versions" roleId="n80h.8433683602660512004" type="n80h.ADVersion" typeId="n80h.8433683602660512002" id="8433683602661400026">
+        <property name="created" nameId="n80h.8433683602661337527" value="Oct 3, 2012 7:53:01 AM" />
+        <node role="arguments" roleId="n80h.8433683602660536523" type="n80h.MLText" typeId="n80h.8433683602660520066" id="8433683602661400027">
+          <property name="text" nameId="n80h.8433683602660520067" value="Args" />
+        </node>
+        <node role="decision" roleId="n80h.8433683602660520084" type="n80h.MLText" typeId="n80h.8433683602660520066" id="8433683602661400028">
+          <property name="text" nameId="n80h.8433683602660520067" value="Dec" />
+        </node>
+        <node role="problem" roleId="n80h.8433683602660520072" type="n80h.MLText" typeId="n80h.8433683602660520066" id="8433683602661400029">
+          <property name="text" nameId="n80h.8433683602660520067" value="Probl" />
+        </node>
+        <node role="state" roleId="n80h.8433683602660536534" type="n80h.ADStateTentative" typeId="n80h.8433683602660394400" id="8433683602661400030" />
+        <node role="relationships" roleId="n80h.8433683602660542408" type="n80h.ADRelAlternative" typeId="n80h.8433683602660442757" id="8433683602661400031">
+          <link role="target" roleId="n80h.8433683602660442733" targetNodeId="8433683602661387991" resolveInfo="I don't know" />
+        </node>
+      </node>
+    </node>
     <node role="contents" roleId="n80h.8433683602660444257" type="n80h.EmptyArchDecContent" typeId="n80h.8433683602660501008" id="8433683602660510159" />
   </root>
   <root id="8433683602660589745">
