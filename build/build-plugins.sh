@@ -39,33 +39,13 @@ ant -f build-req.xml clean fetchDependencies
 ant -f build-req.xml
 
 cd ..
+cd com.mbeddr.allInOne
+ant clean 
+ant
+
+
+cd ..
 rm -rf allInOne
 mkdir allInOne
 
-cp ./com.mbeddr.mpsutil/build/artifacts/com.mbeddr.mpsutil.build/com.mbeddr.mpsutil.zip allInOne
-
-cp ./com.mbeddr.debugger/build/artifacts/com.mbeddr.debugger.build/com.mbeddr.debugger.zip allInOne
-
-cp ./com.mbeddr.core/build/artifacts/com.mbeddr.core.build/com.mbeddr.core.zip allInOne
-
-cp ./com.mbeddr.ext/build/artifacts/com.mbeddr.ext.components/com.mbeddr.ext.components.zip allInOne
-cp ./com.mbeddr.ext/build/artifacts/com.mbeddr.ext.exceptionhandling/com.mbeddr.ext.exceptionhandling.zip allInOne
-cp ./com.mbeddr.ext/build/artifacts/com.mbeddr.ext.statemachine/com.mbeddr.ext.statemachine.zip allInOne
-cp ./com.mbeddr.ext/build/artifacts/com.mbeddr.ext.statemachinesInComponents/com.mbeddr.ext.statemachineInComponents.zip allInOne
-cp ./com.mbeddr.ext/build/artifacts/com.mbeddr.ext.units/com.mbeddr.ext.units.zip allInOne
-
-
-cp ./com.mbeddr.cc/build/artifacts/com.mbeddr.cc.ple.build/com.mbeddr.cc.ple.zip allInOne
-cp ./com.mbeddr.cc/build/artifacts/com.mbeddr.cc.req.build/com.mbeddr.cc.req.zip allInOne
-
-cd allInOne
-unzip -d mbeddr com.mbeddr.mpsutil.zip
-unzip -d mbeddr com.mbeddr.debugger.zip
-unzip -d mbeddr com.mbeddr.core.zip
-unzip -d mbeddr com.mbeddr.ext.components.zip
-unzip -d mbeddr com.mbeddr.ext.exceptionhandling.zip
-unzip -d mbeddr com.mbeddr.ext.statemachine.zip
-unzip -d mbeddr com.mbeddr.ext.statemachineInComponents.zip
-unzip -d mbeddr com.mbeddr.ext.units.zip
-unzip -d mbeddr com.mbeddr.cc.ple.zip
-unzip -d mbeddr com.mbeddr.cc.req.zip
+cp ./com.mbeddr.allInOne/build/artifacts/com.mbeddr.allInOne/com.mbeddr.allInOne.zip allInOne
