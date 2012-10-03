@@ -24,6 +24,7 @@ junit*.properties
 # -----------------------------------------------------------
 # * build
 build/*/build
+build/allInOne
 
 # -----------------------------------------------------------
 # * diagrams
@@ -76,7 +77,7 @@ code/languages/*/solutions/*/source_gen.caches
 
 # -----------------------------------------------------------
 # * project settings
-code/languages/*/*.dev.iws
+code/languages/*/*.iws
 code/languages/*/build.properties
 code/languages/*/TEST*.xml
 
