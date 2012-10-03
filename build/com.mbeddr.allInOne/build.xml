@@ -32,16 +32,16 @@
   <target name="assemble" depends="classes, fetchDependencies">
     <mkdir dir="${build.layout}" />
     <zip destfile="${build.layout}/com.mbeddr.allInOne.zip">
-      <fileset dir="${build.tmp}/deps/com.mbeddr.cc.ple.build/com.mbeddr.cc.ple.zip" />
-      <fileset dir="${build.tmp}/deps/com.mbeddr.cc.req.build/com.mbeddr.cc.req.zip" />
-      <fileset dir="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip" />
-      <fileset dir="${build.tmp}/deps/com.mbeddr.debugger.build/com.mbeddr.debugger.zip" />
-      <fileset dir="${build.tmp}/deps/com.mbeddr.ext.components/com.mbeddr.ext.components.zip" />
-      <fileset dir="${build.tmp}/deps/com.mbeddr.ext.exceptionhandling/com.mbeddr.ext.exceptionhandling.zip" />
-      <fileset dir="${build.tmp}/deps/com.mbeddr.ext.statemachine/com.mbeddr.ext.statemachine.zip" />
-      <fileset dir="${build.tmp}/deps/com.mbeddr.ext.statemachinesInComponents/com.mbeddr.ext.statemachineInComponents.zip" />
-      <fileset dir="${build.tmp}/deps/com.mbeddr.ext.units/com.mbeddr.ext.units.zip" />
-      <fileset dir="${build.tmp}/deps/com.mbeddr.mpsutil.build/com.mbeddr.mpsutil.zip" />
+      <zipfileset dir="${build.tmp}/deps/com.mbeddr.cc.ple.build/com.mbeddr.cc.ple.zip" prefix="plugins" />
+      <zipfileset dir="${build.tmp}/deps/com.mbeddr.cc.req.build/com.mbeddr.cc.req.zip" prefix="plugins" />
+      <zipfileset dir="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip" prefix="plugins" />
+      <zipfileset dir="${build.tmp}/deps/com.mbeddr.debugger.build/com.mbeddr.debugger.zip" prefix="plugins" />
+      <zipfileset dir="${build.tmp}/deps/com.mbeddr.ext.components/com.mbeddr.ext.components.zip" prefix="plugins" />
+      <zipfileset dir="${build.tmp}/deps/com.mbeddr.ext.exceptionhandling/com.mbeddr.ext.exceptionhandling.zip" prefix="plugins" />
+      <zipfileset dir="${build.tmp}/deps/com.mbeddr.ext.statemachine/com.mbeddr.ext.statemachine.zip" prefix="plugins" />
+      <zipfileset dir="${build.tmp}/deps/com.mbeddr.ext.statemachinesInComponents/com.mbeddr.ext.statemachineInComponents.zip" prefix="plugins" />
+      <zipfileset dir="${build.tmp}/deps/com.mbeddr.ext.units/com.mbeddr.ext.units.zip" prefix="plugins" />
+      <zipfileset dir="${build.tmp}/deps/com.mbeddr.mpsutil.build/com.mbeddr.mpsutil.zip" prefix="plugins" />
     </zip>
     <echo file="${build.layout}/build.properties">buildMPS.build.number=${buildMPS.build.number}${line.separator}buildMPS.date=${buildMPS.date}${line.separator}buildMPS.build.vcs.number=${buildMPS.build.vcs.number}${line.separator}buildMPS.teamcity.buildConfName=${buildMPS.teamcity.buildConfName}${line.separator}buildMPS.idea.platform.build.number=${buildMPS.idea.platform.build.number}${line.separator}buildCore.version=${buildCore.version}${line.separator}com.mbeddr.mpsutil.build.build.number=${com.mbeddr.mpsutil.build.build.number}</echo>
   </target>
@@ -51,7 +51,7 @@
     <ant antfile="../com.mbeddr.debugger/build.xml" inheritAll="false" useNativeBasedir="true" />
     <ant antfile="../com.mbeddr.core/build.xml" inheritAll="false" useNativeBasedir="true" />
     <ant antfile="../com.mbeddr.ext/build-components.xml" inheritAll="false" useNativeBasedir="true" />
-    <ant antfile="../com.mbeddr.ext/build-excetionhandling.xml" inheritAll="false" useNativeBasedir="true" />
+    <ant antfile="../com.mbeddr.ext/build-exceptionhandling.xml" inheritAll="false" useNativeBasedir="true" />
     <ant antfile="../com.mbeddr.ext/build-statemachine.xml" inheritAll="false" useNativeBasedir="true" />
     <ant antfile="../com.mbeddr.ext/build-SmInComp.xml" inheritAll="false" useNativeBasedir="true" />
     <ant antfile="../com.mbeddr.ext/build-units.xml" inheritAll="false" useNativeBasedir="true" />
