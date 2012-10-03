@@ -48,6 +48,15 @@
           <link role="target" roleId="n80h.8433683602660442733" targetNodeId="8433683602661351431" resolveInfo="SomeDecision" />
         </node>
       </node>
+      <node role="actions" roleId="n80h.4941245409091172107" type="n80h.ActionChallenge" typeId="n80h.4941245409091160641" id="4941245409091188714">
+        <link role="stakeholder" roleId="n80h.4941245409091131065" targetNodeId="8433683602660589771" resolveInfo="Peter" />
+      </node>
+      <node role="actions" roleId="n80h.4941245409091172107" type="n80h.ActionDiscard" typeId="n80h.4941245409091160635" id="4941245409091204422">
+        <link role="stakeholder" roleId="n80h.4941245409091131065" targetNodeId="8433683602660589771" resolveInfo="Peter" />
+      </node>
+      <node role="actions" roleId="n80h.4941245409091172107" type="n80h.ActionPropose" typeId="n80h.4941245409091131061" id="4941245409091189001">
+        <link role="stakeholder" roleId="n80h.4941245409091131065" targetNodeId="8433683602660589771" resolveInfo="Peter" />
+      </node>
     </node>
     <node role="contents" roleId="n80h.8433683602660444257" type="n80h.EmptyArchDecContent" typeId="n80h.8433683602660501008" id="8433683602660557675" />
     <node role="contents" roleId="n80h.8433683602660444257" type="n80h.ArchitectureDecision" typeId="n80h.8433683602660442732" id="8433683602661387991">
