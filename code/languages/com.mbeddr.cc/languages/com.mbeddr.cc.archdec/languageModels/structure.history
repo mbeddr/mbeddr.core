@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<history>
+  <StructureModification>
+    <dependencies>
+      <model index="n80h" modelUID="r:7d46a182-8703-4db2-b9ab-f79dbf9bfffc(com.mbeddr.cc.archdec.structure)" version="-1" />
+    </dependencies>
+    <rename id="n80h.8433683602660394400" type="CONCEPT" from="ADStateIdea" to="ADStateTentative" />
+  </StructureModification>
+</history>
+
