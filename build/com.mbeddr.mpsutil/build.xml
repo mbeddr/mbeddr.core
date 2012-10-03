@@ -233,12 +233,12 @@
           <module ref="2d3c70e9-aab2-4870-8d8d-6036800e4103(jetbrains.mps.kernel)" />
           <module ref="8fe4c62a-2020-4ff4-8eda-f322a55bdc9f(jetbrains.mps.refactoring.runtime)" />
         </dependencies>
-        <library jar="../../../lib/antlr-2.7.7.jar" />
-        <library jar="../../../lib/commons-io-2.1.jar" />
-        <library jar="../../../lib/timingframework-1.0.jar" />
-        <library jar="../../../lib/zgrviewer-formps-1.0.0-SNAPSHOT.jar" />
-        <library jar="../../../lib/zvtm-core-formps-1.0.0-SNAPSHOT.jar" />
-        <library jar="../../../lib/zvtm-svg-0.2.1-SNAPSHOT.jar" />
+        <library jar="../../lib/antlr-2.7.7.jar" />
+        <library jar="../../lib/commons-io-2.1.jar" />
+        <library jar="../../lib/timingframework-1.0.jar" />
+        <library jar="../../lib/zgrviewer-formps-1.0.0-SNAPSHOT.jar" />
+        <library jar="../../lib/zvtm-core-formps-1.0.0-SNAPSHOT.jar" />
+        <library jar="../../lib/zvtm-svg-0.2.1-SNAPSHOT.jar" />
         <sources jar="com.mbeddr.mpsutil.graphview-src.jar" descriptor="graphview.mpl" />
       </module>
     </echoxml>
@@ -339,12 +339,12 @@
       <zipfileset dir="${mpsutil}/languages/com.mbeddr.mpsutil.refactoring/generator/template" includes="**/*.mps, **/*.metadata, **/*.history" prefix="module/generator/template" />
     </jar>
     <zip destfile="${build.layout}/com.mbeddr.mpsutil.zip">
-      <zipfileset file="${mpsutil}/languages/com.mbeddr.mpsutil.graphview/lib/antlr-2.7.7.jar" prefix="lib" />
-      <zipfileset file="${mpsutil}/languages/com.mbeddr.mpsutil.graphview/lib/commons-io-2.1.jar" prefix="lib" />
-      <zipfileset file="${mpsutil}/languages/com.mbeddr.mpsutil.graphview/lib/timingframework-1.0.jar" prefix="lib" />
-      <zipfileset file="${mpsutil}/languages/com.mbeddr.mpsutil.graphview/lib/zgrviewer-formps-1.0.0-SNAPSHOT.jar" prefix="lib" />
-      <zipfileset file="${mpsutil}/languages/com.mbeddr.mpsutil.graphview/lib/zvtm-core-formps-1.0.0-SNAPSHOT.jar" prefix="lib" />
-      <zipfileset file="${mpsutil}/languages/com.mbeddr.mpsutil.graphview/lib/zvtm-svg-0.2.1-SNAPSHOT.jar" prefix="lib" />
+      <zipfileset file="${mpsutil}/languages/com.mbeddr.mpsutil.graphview/lib/antlr-2.7.7.jar" prefix="mbeddr.mpsutil/lib" />
+      <zipfileset file="${mpsutil}/languages/com.mbeddr.mpsutil.graphview/lib/commons-io-2.1.jar" prefix="mbeddr.mpsutil/lib" />
+      <zipfileset file="${mpsutil}/languages/com.mbeddr.mpsutil.graphview/lib/timingframework-1.0.jar" prefix="mbeddr.mpsutil/lib" />
+      <zipfileset file="${mpsutil}/languages/com.mbeddr.mpsutil.graphview/lib/zgrviewer-formps-1.0.0-SNAPSHOT.jar" prefix="mbeddr.mpsutil/lib" />
+      <zipfileset file="${mpsutil}/languages/com.mbeddr.mpsutil.graphview/lib/zvtm-core-formps-1.0.0-SNAPSHOT.jar" prefix="mbeddr.mpsutil/lib" />
+      <zipfileset file="${mpsutil}/languages/com.mbeddr.mpsutil.graphview/lib/zvtm-svg-0.2.1-SNAPSHOT.jar" prefix="mbeddr.mpsutil/lib" />
       <fileset dir="${build.tmp}/default/com.mbeddr.mpsutil.zip" />
     </zip>
     <echo file="${build.layout}/build.properties">com.mbeddr.mpsutil.build.build.number=${build.number}${line.separator}buildMPS.build.number=${buildMPS.build.number}${line.separator}buildMPS.date=${buildMPS.date}${line.separator}buildMPS.build.vcs.number=${buildMPS.build.vcs.number}${line.separator}buildMPS.teamcity.buildConfName=${buildMPS.teamcity.buildConfName}${line.separator}buildMPS.idea.platform.build.number=${buildMPS.idea.platform.build.number}${line.separator}buildCore.version=${buildCore.version}</echo>
