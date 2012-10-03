@@ -24,10 +24,29 @@
       </node>
       <node role="versions" roleId="n80h.8433683602660512004" type="n80h.ADVersion" typeId="n80h.8433683602660512002" id="8433683602661385745">
         <property name="created" nameId="n80h.8433683602661337527" value="Oct 3, 2012 7:41:32 AM" />
+        <node role="relationships" roleId="n80h.8433683602660542408" type="n80h.ADRelCausedBy" typeId="n80h.8433683602660442751" id="4941245409091069536">
+          <link role="target" roleId="n80h.8433683602660442733" targetNodeId="8433683602661387991" resolveInfo="I don't know" />
+        </node>
+        <node role="relationships" roleId="n80h.8433683602660542408" type="n80h.ADRelExcludedBy" typeId="n80h.8433683602660442753" id="4941245409091079804">
+          <link role="target" roleId="n80h.8433683602660442733" targetNodeId="8433683602661351431" resolveInfo="SomeDecision" />
+        </node>
         <node role="decision" roleId="n80h.8433683602660520084" type="n80h.MLText" typeId="n80h.8433683602660520066" id="8433683602661385746" />
         <node role="problem" roleId="n80h.8433683602660520072" type="n80h.MLText" typeId="n80h.8433683602660520066" id="8433683602661385747" />
         <node role="arguments" roleId="n80h.8433683602660536523" type="n80h.MLText" typeId="n80h.8433683602660520066" id="8433683602661385748" />
         <node role="state" roleId="n80h.8433683602660536534" type="n80h.ADStateTentative" typeId="n80h.8433683602660394400" id="8433683602661385749" />
+      </node>
+      <node role="versions" roleId="n80h.8433683602660512004" type="n80h.ADVersion" typeId="n80h.8433683602660512002" id="4941245409091079808">
+        <property name="created" nameId="n80h.8433683602661337527" value="Oct 3, 2012 10:41:00 AM" />
+        <node role="arguments" roleId="n80h.8433683602660536523" type="n80h.MLText" typeId="n80h.8433683602660520066" id="4941245409091079809" />
+        <node role="decision" roleId="n80h.8433683602660520084" type="n80h.MLText" typeId="n80h.8433683602660520066" id="4941245409091079810" />
+        <node role="problem" roleId="n80h.8433683602660520072" type="n80h.MLText" typeId="n80h.8433683602660520066" id="4941245409091079811" />
+        <node role="state" roleId="n80h.8433683602660536534" type="n80h.ADStateTentative" typeId="n80h.8433683602660394400" id="4941245409091079812" />
+        <node role="relationships" roleId="n80h.8433683602660542408" type="n80h.ADRelCausedBy" typeId="n80h.8433683602660442751" id="4941245409091079813">
+          <link role="target" roleId="n80h.8433683602660442733" targetNodeId="8433683602661387991" resolveInfo="I don't know" />
+        </node>
+        <node role="relationships" roleId="n80h.8433683602660542408" type="n80h.ADRelExcludedBy" typeId="n80h.8433683602660442753" id="4941245409091079814">
+          <link role="target" roleId="n80h.8433683602660442733" targetNodeId="8433683602661351431" resolveInfo="SomeDecision" />
+        </node>
       </node>
     </node>
     <node role="contents" roleId="n80h.8433683602660444257" type="n80h.EmptyArchDecContent" typeId="n80h.8433683602660501008" id="8433683602660557675" />
@@ -64,7 +83,6 @@
         <node role="relationships" roleId="n80h.8433683602660542408" type="n80h.ADRelAlternative" typeId="n80h.8433683602660442757" id="8433683602661405524">
           <link role="target" roleId="n80h.8433683602660442733" targetNodeId="8433683602661387991" resolveInfo="I don't know" />
         </node>
-        <node role="relationships" roleId="n80h.8433683602660542408" type="n80h.ADRel" typeId="n80h.8433683602660442730" id="8433683602661405525" />
       </node>
     </node>
     <node role="contents" roleId="n80h.8433683602660444257" type="n80h.EmptyArchDecContent" typeId="n80h.8433683602660501008" id="8433683602660510159" />
