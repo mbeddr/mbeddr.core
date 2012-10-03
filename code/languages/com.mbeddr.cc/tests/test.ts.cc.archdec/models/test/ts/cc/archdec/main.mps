@@ -48,17 +48,44 @@
           <link role="target" roleId="n80h.8433683602660442733" targetNodeId="8433683602661351431" resolveInfo="SomeDecision" />
         </node>
       </node>
-      <node role="actions" roleId="n80h.4941245409091172107" type="n80h.ActionChallenge" typeId="n80h.4941245409091160641" id="4941245409091188714">
+      <node role="actions" roleId="n80h.4941245409091172107" type="n80h.ActionChallenge" typeId="n80h.4941245409091160641" id="4941245409091216643">
+        <property name="timestamp" nameId="n80h.4941245409091204424" value="Oct 3, 2012 12:22:27 PM" />
         <link role="stakeholder" roleId="n80h.4941245409091131065" targetNodeId="8433683602660589771" resolveInfo="Peter" />
       </node>
-      <node role="actions" roleId="n80h.4941245409091172107" type="n80h.ActionDiscard" typeId="n80h.4941245409091160635" id="4941245409091204422">
+      <node role="actions" roleId="n80h.4941245409091172107" type="n80h.ActionFormulate" typeId="n80h.4941245409091160633" id="4941245409091216645">
+        <property name="timestamp" nameId="n80h.4941245409091204424" value="Oct 3, 2012 12:22:36 PM" />
         <link role="stakeholder" roleId="n80h.4941245409091131065" targetNodeId="8433683602660589771" resolveInfo="Peter" />
       </node>
-      <node role="actions" roleId="n80h.4941245409091172107" type="n80h.ActionPropose" typeId="n80h.4941245409091131061" id="4941245409091189001">
-        <link role="stakeholder" roleId="n80h.4941245409091131065" targetNodeId="8433683602660589771" resolveInfo="Peter" />
+      <node role="actions" roleId="n80h.4941245409091172107" type="n80h.ActionReject" typeId="n80h.4941245409091160643" id="4941245409091250487">
+        <property name="timestamp" nameId="n80h.4941245409091204424" value="Oct 3, 2012 3:14:11 PM" />
+        <link role="stakeholder" roleId="n80h.4941245409091131065" targetNodeId="4941245409091250488" resolveInfo="Markus" />
+      </node>
+      <node role="influences" roleId="n80h.4941245409091229947" type="n80h.Influence" typeId="n80h.4941245409091229927" id="4941245409091249684">
+        <link role="force" roleId="n80h.4941245409091229928" targetNodeId="4941245409091229922" resolveInfo="SomeForce" />
+        <node role="description" roleId="n80h.4941245409091229929" type="n80h.MLText" typeId="n80h.8433683602660520066" id="4941245409091249685">
+          <property name="text" nameId="n80h.8433683602660520067" value="Hiere is the thing." />
+        </node>
+      </node>
+      <node role="influences" roleId="n80h.4941245409091229947" type="n80h.Influence" typeId="n80h.4941245409091229927" id="4941245409091244028">
+        <link role="force" roleId="n80h.4941245409091229928" targetNodeId="4941245409091254872" resolveInfo="AnotherForce" />
+        <node role="description" roleId="n80h.4941245409091229929" type="n80h.MLText" typeId="n80h.8433683602660520066" id="4941245409091244029">
+          <property name="text" nameId="n80h.8433683602660520067" value="Here is what happened" />
+        </node>
+      </node>
+      <node role="versions" roleId="n80h.8433683602660512004" type="n80h.ADVersion" typeId="n80h.8433683602660512002" id="4941245409091256561">
+        <property name="created" nameId="n80h.8433683602661337527" value="Oct 3, 2012 3:23:34 PM" />
+        <node role="arguments" roleId="n80h.8433683602660536523" type="n80h.MLText" typeId="n80h.8433683602660520066" id="4941245409091256562" />
+        <node role="decision" roleId="n80h.8433683602660520084" type="n80h.MLText" typeId="n80h.8433683602660520066" id="4941245409091256563" />
+        <node role="problem" roleId="n80h.8433683602660520072" type="n80h.MLText" typeId="n80h.8433683602660520066" id="4941245409091256564" />
+        <node role="state" roleId="n80h.8433683602660536534" type="n80h.ADStateTentative" typeId="n80h.8433683602660394400" id="4941245409091256565" />
+        <node role="relationships" roleId="n80h.8433683602660542408" type="n80h.ADRelCausedBy" typeId="n80h.8433683602660442751" id="4941245409091256566">
+          <link role="target" roleId="n80h.8433683602660442733" targetNodeId="8433683602661387991" resolveInfo="I don't know" />
+        </node>
+        <node role="relationships" roleId="n80h.8433683602660542408" type="n80h.ADRelExcludedBy" typeId="n80h.8433683602660442753" id="4941245409091256567">
+          <link role="target" roleId="n80h.8433683602660442733" targetNodeId="8433683602661351431" resolveInfo="SomeDecision" />
+        </node>
       </node>
     </node>
-    <node role="contents" roleId="n80h.8433683602660444257" type="n80h.EmptyArchDecContent" typeId="n80h.8433683602660501008" id="8433683602660557675" />
     <node role="contents" roleId="n80h.8433683602660444257" type="n80h.ArchitectureDecision" typeId="n80h.8433683602660442732" id="8433683602661387991">
       <property name="name" nameId="tpck.1169194664001" value="I don't know" />
       <node role="versions" roleId="n80h.8433683602660512004" type="n80h.ADVersion" typeId="n80h.8433683602660512002" id="8433683602661400020">
@@ -101,6 +128,10 @@
       <property name="name" nameId="tpck.1169194664001" value="Deployment" />
       <property name="description" nameId="n80h.8433683602660444224" value="Deployment Concern" />
     </node>
+    <node role="contents" roleId="n80h.8433683602660444257" type="n80h.Concern" typeId="n80h.8433683602660444222" id="4941245409091250494">
+      <property name="name" nameId="tpck.1169194664001" value="Development" />
+      <property name="description" nameId="n80h.8433683602660444224" value="Development Concern" />
+    </node>
     <node role="contents" roleId="n80h.8433683602660444257" type="n80h.EmptyArchDecContent" typeId="n80h.8433683602660501008" id="8433683602660589767" />
     <node role="contents" roleId="n80h.8433683602660444257" type="n80h.Group" typeId="n80h.8433683602660551739" id="8433683602660589768">
       <property name="name" nameId="tpck.1169194664001" value="Whatever Group" />
@@ -109,12 +140,44 @@
       </node>
     </node>
     <node role="contents" roleId="n80h.8433683602660444257" type="n80h.EmptyArchDecContent" typeId="n80h.8433683602660501008" id="8433683602660589770" />
+    <node role="contents" roleId="n80h.8433683602660444257" type="n80h.DecisionForce" typeId="n80h.4941245409091217842" id="4941245409091229922">
+      <property name="name" nameId="tpck.1169194664001" value="SomeForce" />
+      <node role="description" roleId="n80h.4941245409091217845" type="n80h.MLText" typeId="n80h.8433683602660520066" id="4941245409091229923" />
+      <node role="concerns" roleId="n80h.4941245409091217846" type="n80h.ConcernRef" typeId="n80h.8433683602660444237" id="4941245409091229924">
+        <link role="concern" roleId="n80h.8433683602660444238" targetNodeId="8433683602660589746" resolveInfo="Deployment" />
+      </node>
+      <node role="concerns" roleId="n80h.4941245409091217846" type="n80h.ConcernRef" typeId="n80h.8433683602660444237" id="4941245409091229926">
+        <link role="concern" roleId="n80h.8433683602660444238" targetNodeId="8433683602660589746" resolveInfo="Deployment" />
+      </node>
+    </node>
+    <node role="contents" roleId="n80h.8433683602660444257" type="n80h.DecisionForce" typeId="n80h.4941245409091217842" id="4941245409091254872">
+      <property name="name" nameId="tpck.1169194664001" value="AnotherForce" />
+      <node role="description" roleId="n80h.4941245409091217845" type="n80h.MLText" typeId="n80h.8433683602660520066" id="4941245409091254873" />
+      <node role="concerns" roleId="n80h.4941245409091217846" type="n80h.ConcernRef" typeId="n80h.8433683602660444237" id="4941245409091254874">
+        <link role="concern" roleId="n80h.8433683602660444238" targetNodeId="8433683602660589746" resolveInfo="Deployment" />
+      </node>
+      <node role="concerns" roleId="n80h.4941245409091217846" type="n80h.ConcernRef" typeId="n80h.8433683602660444237" id="4941245409091254875">
+        <link role="concern" roleId="n80h.8433683602660444238" targetNodeId="8433683602660589746" resolveInfo="Deployment" />
+      </node>
+    </node>
+    <node role="contents" roleId="n80h.8433683602660444257" type="n80h.EmptyArchDecContent" typeId="n80h.8433683602660501008" id="4941245409091229920" />
     <node role="contents" roleId="n80h.8433683602660444257" type="n80h.Stakeholder" typeId="n80h.8433683602660444200" id="8433683602660589771">
       <property name="name" nameId="tpck.1169194664001" value="Peter" />
       <property name="role" nameId="n80h.8433683602660444203" value="End User" />
       <property name="email" nameId="n80h.8433683602660444202" value="peter@company.de" />
       <node role="caresAbout" roleId="n80h.8433683602660444245" type="n80h.ConcernRef" typeId="n80h.8433683602660444237" id="8433683602660589772">
         <link role="concern" roleId="n80h.8433683602660444238" targetNodeId="8433683602660589746" resolveInfo="Deployment" />
+      </node>
+    </node>
+    <node role="contents" roleId="n80h.8433683602660444257" type="n80h.Stakeholder" typeId="n80h.8433683602660444200" id="4941245409091250488">
+      <property name="name" nameId="tpck.1169194664001" value="Markus" />
+      <property name="role" nameId="n80h.8433683602660444203" value="End User" />
+      <property name="email" nameId="n80h.8433683602660444202" value="peter@company.de" />
+      <node role="caresAbout" roleId="n80h.8433683602660444245" type="n80h.ConcernRef" typeId="n80h.8433683602660444237" id="4941245409091250489">
+        <link role="concern" roleId="n80h.8433683602660444238" targetNodeId="8433683602660589746" resolveInfo="Deployment" />
+      </node>
+      <node role="caresAbout" roleId="n80h.8433683602660444245" type="n80h.ConcernRef" typeId="n80h.8433683602660444237" id="4941245409091250497">
+        <link role="concern" roleId="n80h.8433683602660444238" targetNodeId="4941245409091250494" resolveInfo="Development" />
       </node>
     </node>
     <node role="contents" roleId="n80h.8433683602660444257" type="n80h.EmptyArchDecContent" typeId="n80h.8433683602660501008" id="8433683602660589773" />
