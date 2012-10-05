@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DependencyValidationManager">
+    <option name="SKIP_IMPORT_STATEMENTS" value="false" />
+  </component>
+  <component name="Encoding" useUTFGuessing="true" native2AsciiForPropertiesFiles="false" />
+  <component name="MPSProject">
+    <projectModules>
+      <modulePath path="${mbeddr.github.core.home}/tools/spawner/languages/Eclipse.Debugger/Debugger.msd" />
+      <modulePath path="${project}/solutions/com.mbeddr.allInOne/allInOne.msd" />
+      <modulePath path="${project}/solutions/com.mbeddr.cc.dev.build/build.msd" />
+      <modulePath path="${project}/solutions/com.mbeddr.core.dev.build/build.msd" />
+      <modulePath path="${project}/solutions/com.mbeddr.debugger/debugger.msd" />
+      <modulePath path="${project}/solutions/com.mbeddr.ext.build/build.msd" />
+      <modulePath path="${project}/solutions/com.mbeddr.mpsutil.dev.build/build.msd" />
+    </projectModules>
+    <genConfs />
+  </component>
+  <component name="ProjectRootManager" version="2" />
+  <component name="ProjectVersion">
+    <option name="version" value="2.5" />
+  </component>
+  <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false">
+    <option name="USER" value="" />
+    <option name="PASSWORD" value="" />
+    <option name="mySSHConnectionTimeout" value="30000" />
+    <option name="mySSHReadTimeout" value="30000" />
+    <option name="LAST_MERGED_REVISION" />
+    <option name="MERGE_DRY_RUN" value="false" />
+    <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
+    <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
+    <option name="IGNORE_SPACES_IN_MERGE" value="false" />
+    <option name="DETECT_NESTED_COPIES" value="true" />
+    <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="false" />
+    <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
+    <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
+    <option name="FORCE_UPDATE" value="false" />
+    <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
+  </component>
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$mbeddr.github.core.home$" vcs="Git" />
+  </component>
+</project>
+
