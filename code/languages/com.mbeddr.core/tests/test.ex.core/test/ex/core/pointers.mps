@@ -9,8 +9,8 @@
   <import index="51wr" modelUID="r:b31f1c3c-99aa-4f1e-a329-cba27efb1a6b(com.mbeddr.core.buildconfig.structure)" version="1" implicit="yes" />
   <import index="clbe" modelUID="r:61d840b4-12c1-49ea-b142-b2a1550a9b15(com.mbeddr.core.udt.structure)" version="7" implicit="yes" />
   <import index="k146" modelUID="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" version="2" implicit="yes" />
-  <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="4" implicit="yes" />
-  <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="2" implicit="yes" />
+  <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="5" implicit="yes" />
+  <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="3" implicit="yes" />
   <import index="yz9a" modelUID="r:734c02dd-cc16-4184-99eb-5fd9f43aa37e(com.mbeddr.core.unittest.structure)" version="0" implicit="yes" />
   <roots>
     <node type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="279446265608457321">
@@ -259,6 +259,9 @@
           </node>
           <node role="type" roleId="mj1l.318113533128716676" type="yq40.ArrayType" typeId="yq40.5679441017214012545" id="5083029923012080764">
             <node role="baseType" roleId="yq40.5679441017214012546" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="5083029923012080765" />
+            <node role="sizeExpr" roleId="yq40.1452920870317474611" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6035922876555474365">
+              <property name="value" nameId="mj1l.8860443239512128104" value="3" />
+            </node>
           </node>
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="7863679314024361274">
@@ -294,7 +297,7 @@
                   <node role="expr" roleId="yq40.7863679314024295460" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="7863679314024361298">
                     <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="7863679314024361274" resolveInfo="ap" />
                   </node>
-                  <node role="type" roleId="yq40.4415315037677926511" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="7664133259366900481">
+                  <node role="type" roleId="yq40.4415315037677926511" type="mj1l.PtrDiffT" typeId="mj1l.6035922876555486166" id="6035922876555545190">
                     <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
                     <property name="const" nameId="mj1l.2941277002445651368" value="false" />
                   </node>
@@ -369,6 +372,15 @@
             </node>
             <node role="exprs" roleId="c4fa.5095889050031622571" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="36486875645774056">
               <property name="value" nameId="mj1l.8860443239512128104" value="20" />
+            </node>
+            <node role="exprs" roleId="c4fa.5095889050031622571" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="1071471145938675415">
+              <property name="value" nameId="mj1l.8860443239512128104" value="30" />
+            </node>
+            <node role="exprs" roleId="c4fa.5095889050031622571" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="1071471145938675417">
+              <property name="value" nameId="mj1l.8860443239512128104" value="40" />
+            </node>
+            <node role="exprs" roleId="c4fa.5095889050031622571" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="1071471145938675419">
+              <property name="value" nameId="mj1l.8860443239512128104" value="50" />
             </node>
           </node>
           <node role="type" roleId="mj1l.318113533128716676" type="yq40.ArrayType" typeId="yq40.5679441017214012545" id="5083029923012081293">
@@ -463,6 +475,9 @@
       </node>
       <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="5708867820622915219" />
     </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="6702952168899848326">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1345477610463_1" />
+    </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="8670550972713537971">
       <property name="name" nameId="tpck.1169194664001" value="empty_1341388654114_1" />
     </node>
@@ -509,6 +524,9 @@
         <property name="name" nameId="tpck.1169194664001" value="arr" />
         <node role="type" roleId="mj1l.318113533128716676" type="yq40.ArrayType" typeId="yq40.5679441017214012545" id="5708867820621171371">
           <node role="baseType" roleId="yq40.5679441017214012546" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="5708867820621171372" />
+          <node role="sizeExpr" roleId="yq40.1452920870317474611" type="x27k.GlobalConstantRef" typeId="x27k.3788988821852026523" id="1071471145938718896">
+            <link role="constant" roleId="x27k.3788988821852026524" targetNodeId="7248713732034362486" resolveInfo="arrSize" />
+          </node>
         </node>
       </node>
     </node>
@@ -682,6 +700,9 @@
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="2020194812908828630">
       <property name="name" nameId="tpck.1169194664001" value="empty_1333549189962_5" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="912616408885321649">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1345559561059_2" />
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="2020194812908828631">
       <property name="name" nameId="tpck.1169194664001" value="empty_1333549190402_6" />
@@ -1380,6 +1401,9 @@
           </node>
           <node role="type" roleId="mj1l.318113533128716676" type="yq40.ArrayType" typeId="yq40.5679441017214012545" id="5083029923012081326">
             <node role="baseType" roleId="yq40.5679441017214012546" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="5083029923012081327" />
+            <node role="sizeExpr" roleId="yq40.1452920870317474611" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6035922876555479874">
+              <property name="value" nameId="mj1l.8860443239512128104" value="5" />
+            </node>
           </node>
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="8257817273847139222">

@@ -26,6 +26,41 @@ make test
 PROC_RET=$(($?+$PROC_RET))
 
 echo -------------------------------------
+echo interfaceTypes
+cd ..
+cd interfaceTypes
+make test
+PROC_RET=$(($?+$PROC_RET))
+
+echo -------------------------------------
+echo interfaceTypesStaticallyWired
+cd ..
+cd interfaceTypesStaticallyWired
+make test
+PROC_RET=$(($?+$PROC_RET))
+
+echo -------------------------------------
+echo multiPorts
+cd ..
+cd multiPorts
+make test
+PROC_RET=$(($?+$PROC_RET))
+
+echo -------------------------------------
+echo reconnect
+cd ..
+cd reconnect
+make test
+PROC_RET=$(($?+$PROC_RET))
+
+echo -------------------------------------
+echo multiPortsStaticallyWired
+cd ..
+cd multiPortsStaticallyWired
+make test
+PROC_RET=$(($?+$PROC_RET))
+
+echo -------------------------------------
 echo directRunnableCall
 cd ..
 cd directRunnableCall
@@ -37,6 +72,20 @@ echo componentInheritance
 cd ..
 cd componentInheritance
 make test
+PROC_RET=$(($?+$PROC_RET))
+
+echo -------------------------------------
+echo inline
+cd ..
+cd inline
+make 
+PROC_RET=$(($?+$PROC_RET))
+
+echo -------------------------------------
+echo helloComponents
+cd ..
+cd helloComponents
+make 
 PROC_RET=$(($?+$PROC_RET))
 
 echo -------------------------------------
@@ -67,6 +116,13 @@ echo -------------------------------------
 echo Comp-Statemachines
 cd ../
 cd statemachine_components
+make test
+PROC_RET=$(($?+$PROC_RET))
+
+echo -------------------------------------
+echo Comp-Statemachines with Static Wiring
+cd ../
+cd staticWiringSMInComps
 make test
 PROC_RET=$(($?+$PROC_RET))
 

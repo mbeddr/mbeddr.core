@@ -1265,30 +1265,28 @@
   </root>
   <root id="6617704999132114006">
     <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="6617704999132114007">
-      <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.SelectableStyleSheetItem" typeId="tpc2.1186414928363" id="6617704999132114008">
-        <property name="flag" nameId="tpc2.1186414551515" value="false" />
+      <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Indent" typeId="tpc2.1237303669825" id="836404361042860180" />
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="6617704999132114016">
+        <property name="text" nameId="tpc2.1073389577007" value="variability mappings" />
       </node>
-      <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.DrawBracketsStyleClassItem" typeId="tpc2.1219226236603" id="6617704999132114009">
-        <property name="flag" nameId="tpc2.1186414551515" value="true" />
-      </node>
-      <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.BracketColorStyleClassItem" typeId="tpc2.1186413799158" id="6617704999132114010">
-        <property name="color" nameId="tpc2.1186403713874" value="darkGray" />
-      </node>
-      <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.BackgroundColorStyleClassItem" typeId="tpc2.1186404574412" id="6617704999132114011">
-        <property name="color" nameId="tpc2.1186403713874" value="lightGray" />
-      </node>
-      <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Vertical" typeId="tpc2.1106270571710" id="6617704999132114013" />
-      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="6617704999132114014">
-        <link role="styleClass" roleId="tpc2.1186406756722" targetNodeId="661141253149231556" resolveInfo="presenceCondition" />
-        <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Indent" typeId="tpc2.1237303669825" id="6617704999132114015" />
-        <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="6617704999132114016">
-          <property name="text" nameId="tpc2.1073389577007" value="Variability Transformation Configuration" />
-          <link role="styleClass" roleId="tpc2.1186406756722" targetNodeId="661141253149231556" resolveInfo="presenceCondition" />
-        </node>
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="836404361042870846">
+        <property name="text" nameId="tpc2.1073389577007" value="{" />
       </node>
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_RefNodeList" typeId="tpc2.1073390211982" id="6617704999132114017">
         <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="qdv7.6617704999132114005" />
         <node role="cellLayout" roleId="tpc2.1140524464360" type="tpc2.CellLayout_Vertical" typeId="tpc2.1106270571710" id="6617704999132114018" />
+        <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.IndentLayoutOnNewLineStyleClassItem" typeId="tpc2.1237385578942" id="836404361042870842">
+          <property name="flag" nameId="tpc2.1186414551515" value="true" />
+        </node>
+        <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.IndentLayoutIndentStyleClassItem" typeId="tpc2.1237307900041" id="836404361042870844">
+          <property name="flag" nameId="tpc2.1186414551515" value="true" />
+        </node>
+      </node>
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="836404361042870850">
+        <property name="text" nameId="tpc2.1073389577007" value="}" />
+        <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.IndentLayoutOnNewLineStyleClassItem" typeId="tpc2.1237385578942" id="836404361042870851">
+          <property name="flag" nameId="tpc2.1186414551515" value="true" />
+        </node>
       </node>
     </node>
   </root>

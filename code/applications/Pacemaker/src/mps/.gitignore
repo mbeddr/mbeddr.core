@@ -1,0 +1,7 @@
+solutions/*/classes_gen
+solutions/*/source_gen
+solutions/*/source_gen.caches
+*.iws
+
+
+

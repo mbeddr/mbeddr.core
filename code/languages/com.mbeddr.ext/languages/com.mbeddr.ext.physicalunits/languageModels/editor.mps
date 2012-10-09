@@ -102,6 +102,9 @@
             </node>
           </node>
         </node>
+        <node role="emptyCellModel" roleId="tpc2.1140524464359" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="8428744930541228918">
+          <property name="text" nameId="tpc2.1073389577007" value="" />
+        </node>
       </node>
       <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Indent" typeId="tpc2.1237303669825" id="3801772042669047869" />
     </node>

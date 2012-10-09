@@ -14,7 +14,6 @@
     <dependency reexport="false">6d11763d-483d-4b2b-8efc-09336c1b0001(com.mbeddr.core.modules)</dependency>
     <dependency reexport="false">fda566a8-0df7-442b-b355-ba0f7b3d1cbd(com.mbeddr.core.modules.runtime)</dependency>
     <dependency reexport="false">ef7bf5ac-d06c-4342-b11d-e42104eb9343(jetbrains.mps.lang.plugin.standalone)</dependency>
-    <dependency reexport="false">642f71f8-327a-425b-84f9-44ad58786d27(jetbrains.mps.lang.project.modules)</dependency>
     <dependency reexport="false">b02ae39f-4c16-4545-8dfa-88df16804e7e(jetbrains.mps.lang.smodelTests)</dependency>
     <dependency reexport="false">b55d8dfc-0d9d-43d5-886d-c644e7083bff(stubUtils)</dependency>
   </dependencies>

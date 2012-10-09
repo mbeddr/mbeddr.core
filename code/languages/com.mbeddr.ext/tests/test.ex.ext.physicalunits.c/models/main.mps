@@ -9,11 +9,11 @@
   <import index="k146" modelUID="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" version="2" implicit="yes" />
   <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="17" implicit="yes" />
   <import index="yq40" modelUID="r:152b3fc0-83a1-4bab-a8cd-565eb8483785(com.mbeddr.core.pointers.structure)" version="3" implicit="yes" />
-  <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="4" implicit="yes" />
+  <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="5" implicit="yes" />
   <import index="51wr" modelUID="r:b31f1c3c-99aa-4f1e-a329-cba27efb1a6b(com.mbeddr.core.buildconfig.structure)" version="1" implicit="yes" />
   <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="4" implicit="yes" />
   <import index="yz9a" modelUID="r:734c02dd-cc16-4184-99eb-5fd9f43aa37e(com.mbeddr.core.unittest.structure)" version="0" implicit="yes" />
-  <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="1" implicit="yes" />
+  <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="3" implicit="yes" />
   <import index="clbe" modelUID="r:61d840b4-12c1-49ea-b142-b2a1550a9b15(com.mbeddr.core.udt.structure)" version="7" implicit="yes" />
   <roots>
     <node type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="5185104661801336617">
@@ -49,6 +49,10 @@
       <property name="name" nameId="tpck.1169194664001" value="toBaseUnit" />
       <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="5185104661801336693" />
       <node role="body" roleId="yz9a.6275792049641586525" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="5185104661801336694">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="6702952168899840791" />
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="6702952168899840804" />
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="6702952168899840793" />
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="6702952168899840794" />
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="5185104661801336698">
           <property name="name" nameId="tpck.1169194664001" value="temp" />
           <node role="type" roleId="mj1l.318113533128716676" type="3c6d.TypeWithUnit" typeId="3c6d.5513256947824492703" id="5185104661801336700">
@@ -359,12 +363,12 @@
       <property name="name" nameId="tpck.1169194664001" value="C" />
       <property name="physicalMeaning" nameId="ym4j.2078797996880543461" value="temperature" />
     </node>
-    <node role="contents" roleId="ym4j.6870096341748240402" type="ym4j.EmptyUnitContainerContents" typeId="ym4j.6870096341748575352" id="6870096341748581574" />
+    <node role="contents" roleId="ym4j.6870096341748240402" type="ym4j.EmptyUnitContainerContents" typeId="ym4j.6870096341748575352" id="6702952168899792329" />
     <node role="contents" roleId="ym4j.6870096341748240402" type="ym4j.NamedOpaqueUnitDeclaration" typeId="ym4j.1656687801206561197" id="1656687801206568657">
       <property name="name" nameId="tpck.1169194664001" value="kWH" />
       <property name="physicalMeaning" nameId="ym4j.2078797996880543461" value="energy" />
     </node>
-    <node role="contents" roleId="ym4j.6870096341748240402" type="ym4j.EmptyUnitContainerContents" typeId="ym4j.6870096341748575352" id="6870096341748581573" />
+    <node role="contents" roleId="ym4j.6870096341748240402" type="ym4j.EmptyUnitContainerContents" typeId="ym4j.6870096341748575352" id="6702952168899837909" />
     <node role="contents" roleId="ym4j.6870096341748240402" type="3c6d.CBasedConversionRule" typeId="3c6d.2078797996880475936" id="2078797996880515333">
       <node role="conversion" roleId="3c6d.2078797996880475939" type="mj1l.MultiExpression" typeId="mj1l.5763383285156373020" id="2078797996880659703">
         <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2078797996880659706">

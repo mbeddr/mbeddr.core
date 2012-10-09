@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debugInfo>
+  <root nodeId="2782839353310817031">
+    <nodeInfo nodeId="2782839353310817033" fileName="Door.java" startLine="6" startPosition="19" endLine="8" endPosition="3" conceptFqName="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" propertyString="Door#()V" />
+    <scopeInfo nodeId="2782839353310817036" fileName="Door.java" startLine="7" startPosition="17" endLine="7" endPosition="17" />
+    <scopeInfo nodeId="2782839353310817033" fileName="Door.java" startLine="6" startPosition="19" endLine="8" endPosition="3" />
+    <unitInfo nodeId="2782839353310817031" fileName="Door.java" startLine="6" startPosition="0" endLine="10" endPosition="0" unitName="gcs.java.rt.classes.Door" />
+  </root>
+  <root nodeId="4241290777137584133">
+    <nodeInfo nodeId="4241290777137584142" fileName="GameEngine.java" startLine="6" startPosition="25" endLine="7" endPosition="33" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="currentRoom" />
+    <nodeInfo nodeId="4241290777137584135" fileName="GameEngine.java" startLine="8" startPosition="0" endLine="10" endPosition="3" conceptFqName="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" propertyString="GameEngine#()V" />
+    <nodeInfo nodeId="5710945123077405388" fileName="GameEngine.java" startLine="11" startPosition="0" endLine="14" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="run#()V" />
+    <scopeInfo nodeId="4241290777137584138" fileName="GameEngine.java" startLine="9" startPosition="23" endLine="9" endPosition="23" />
+    <scopeInfo nodeId="5710945123077405391" fileName="GameEngine.java" startLine="12" startPosition="21" endLine="12" endPosition="21" />
+    <scopeInfo nodeId="4241290777137584135" fileName="GameEngine.java" startLine="8" startPosition="0" endLine="10" endPosition="3" />
+    <scopeInfo nodeId="5710945123077405388" fileName="GameEngine.java" startLine="11" startPosition="0" endLine="14" endPosition="0" />
+    <unitInfo nodeId="4241290777137584133" fileName="GameEngine.java" startLine="6" startPosition="0" endLine="15" endPosition="0" unitName="gcs.java.rt.classes.GameEngine" />
+  </root>
+  <root nodeId="4241290777137584150">
+    <nodeInfo nodeId="4241290777137585945" fileName="Room.java" startLine="9" startPosition="19" endLine="10" endPosition="73" conceptFqName="jetbrains.mps.baseLanguage.structure.FieldDeclaration" propertyString="items" />
+    <nodeInfo nodeId="4241290777137584152" fileName="Room.java" startLine="11" startPosition="0" endLine="13" endPosition="3" conceptFqName="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" propertyString="Room#()V" />
+    <scopeInfo nodeId="4241290777137584155" fileName="Room.java" startLine="12" startPosition="17" endLine="12" endPosition="17" />
+    <scopeInfo nodeId="4241290777137584152" fileName="Room.java" startLine="11" startPosition="0" endLine="13" endPosition="3" />
+    <unitInfo nodeId="4241290777137584150" fileName="Room.java" startLine="9" startPosition="0" endLine="15" endPosition="0" unitName="gcs.java.rt.classes.Room" />
+  </root>
+  <root nodeId="4241290777137585929">
+    <nodeInfo nodeId="4241290777137585931" fileName="Item.java" startLine="6" startPosition="28" endLine="8" endPosition="3" conceptFqName="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" propertyString="Item#()V" />
+    <scopeInfo nodeId="4241290777137585934" fileName="Item.java" startLine="7" startPosition="17" endLine="7" endPosition="17" />
+    <scopeInfo nodeId="4241290777137585931" fileName="Item.java" startLine="6" startPosition="28" endLine="8" endPosition="3" />
+    <unitInfo nodeId="4241290777137585929" fileName="Item.java" startLine="6" startPosition="0" endLine="10" endPosition="0" unitName="gcs.java.rt.classes.Item" />
+  </root>
+</debugInfo>
+

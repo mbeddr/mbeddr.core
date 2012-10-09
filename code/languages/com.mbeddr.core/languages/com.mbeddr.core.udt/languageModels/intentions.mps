@@ -295,7 +295,7 @@
       <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="6769054173340250308">
         <node role="statement" roleId="tpee.1068581517665" type="tpee.ReturnStatement" typeId="tpee.1068581242878" id="6769054173340257691">
           <node role="expression" roleId="tpee.1068581517676" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="6769054173340257692">
-            <property name="value" nameId="tpee.1070475926801" value="Address Of/Reference (&amp;x)" />
+            <property name="value" nameId="tpee.1070475926801" value="Address Of/Reference (&amp;&amp;x)" />
           </node>
         </node>
       </node>

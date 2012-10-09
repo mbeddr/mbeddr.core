@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="4">
+<model modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="5">
   <persistence version="7" />
   <language namespace="c72da2b9-7cce-4447-8389-f407dc1158b7(jetbrains.mps.lang.structure)" />
   <language namespace="aee9cad2-acd4-4608-aef2-0004f6a1cdbd(jetbrains.mps.lang.actions)" />
@@ -7,7 +7,7 @@
   <import index="e2lb" modelUID="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" version="-1" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="tpce" modelUID="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" version="0" implicit="yes" />
-  <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="4" implicit="yes" />
+  <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="5" implicit="yes" />
   <import index="tpee" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="4" implicit="yes" />
   <import index="tp2q" modelUID="r:00000000-0000-4000-0000-011c8959032e(jetbrains.mps.baseLanguage.collections.structure)" version="7" implicit="yes" />
   <roots>
@@ -89,6 +89,27 @@
       <property name="virtualPackage" nameId="tpck.1193676396447" value="config" />
       <property name="name" nameId="tpck.1169194664001" value="IConfigurationItemWithImport" />
     </node>
+    <node type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="7123462210702867708">
+      <property name="name" nameId="tpck.1169194664001" value="ILOCCountProvider" />
+    </node>
+    <node type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="8428744930541856329">
+      <property name="name" nameId="tpck.1169194664001" value="IModuleContentRef" />
+    </node>
+    <node type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="1908346841499857570">
+      <property name="name" nameId="tpck.1169194664001" value="IShowUpInOutline" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="outline" />
+    </node>
+    <node type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="1908346841499892479">
+      <property name="name" nameId="tpck.1169194664001" value="IOutlineRoot" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="outline" />
+    </node>
+    <node type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="1908346841499937386">
+      <property name="name" nameId="tpck.1169194664001" value="IHideFromOutline" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="outline" />
+    </node>
+    <node type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="3578942323568389911">
+      <property name="name" nameId="tpck.1169194664001" value="IGeneratesCodeForIDE" />
+    </node>
   </roots>
   <root id="7024921229555594291">
     <node role="extends" roleId="tpce.1169127546356" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7024921229555594292">
@@ -150,7 +171,11 @@
       <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473914776" resolveInfo="shortDescription" />
     </node>
   </root>
-  <root id="4459718605982007336" />
+  <root id="4459718605982007336">
+    <node role="extends" roleId="tpce.1169127546356" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="8202952451359188147">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="7123462210702867708" resolveInfo="ILOCCountProvider" />
+    </node>
+  </root>
   <root id="4459718605982007337">
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="4459718605982007338">
       <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
@@ -499,6 +524,9 @@
     <node role="extends" roleId="tpce.1169127546356" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="1049346859913011962">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="tpck.3393165121846091587" resolveInfo="ISuppressErrors" />
     </node>
+    <node role="extends" roleId="tpce.1169127546356" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="8433683602660589777">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="1908346841499937386" resolveInfo="IHideFromOutline" />
+    </node>
     <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.BooleanConceptProperty" typeId="tpce.1105725574259" id="4753668641245874513">
       <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473994950" resolveInfo="dontSubstituteByDefault" />
     </node>
@@ -514,5 +542,11 @@
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="4459718605982007336" resolveInfo="IConfigurationItem" />
     </node>
   </root>
+  <root id="7123462210702867708" />
+  <root id="8428744930541856329" />
+  <root id="1908346841499857570" />
+  <root id="1908346841499892479" />
+  <root id="1908346841499937386" />
+  <root id="3578942323568389911" />
 </model>
 

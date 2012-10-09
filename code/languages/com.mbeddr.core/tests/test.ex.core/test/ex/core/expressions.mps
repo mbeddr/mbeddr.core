@@ -9,9 +9,9 @@
   <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="4" implicit="yes" />
   <import index="yq40" modelUID="r:152b3fc0-83a1-4bab-a8cd-565eb8483785(com.mbeddr.core.pointers.structure)" version="3" implicit="yes" />
   <import index="clbe" modelUID="r:61d840b4-12c1-49ea-b142-b2a1550a9b15(com.mbeddr.core.udt.structure)" version="7" implicit="yes" />
-  <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="2" implicit="yes" />
+  <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="3" implicit="yes" />
   <import index="k146" modelUID="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" version="2" implicit="yes" />
-  <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="4" implicit="yes" />
+  <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="5" implicit="yes" />
   <roots>
     <node type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="7646082028326282913">
       <property name="name" nameId="tpck.1169194664001" value="HelperFunctions" />
@@ -74,15 +74,6 @@
     <node role="binaries" roleId="51wr.5046689135694070731" type="51wr.Executable" typeId="51wr.5046689135693761554" id="6402250878332521849">
       <property name="name" nameId="tpck.1169194664001" value="ExpressionsTest" />
       <property name="isTest" nameId="51wr.3431613015799084476" value="true" />
-      <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="6402250878332521853">
-        <link role="module" roleId="51wr.7717755763392524108" targetNodeId="7646082028326282928" resolveInfo="ExpressionTests1" />
-      </node>
-      <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="3134547887598562219">
-        <link role="module" roleId="51wr.7717755763392524108" targetNodeId="7422744074721184775" resolveInfo="ExpressionTests2" />
-      </node>
-      <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="1136530067488119065">
-        <link role="module" roleId="51wr.7717755763392524108" targetNodeId="7646082028326282913" resolveInfo="HelperFunctions" />
-      </node>
       <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="1873217430999136355">
         <link role="module" roleId="51wr.7717755763392524108" targetNodeId="3134547887598558629" resolveInfo="Driver" />
       </node>
@@ -91,6 +82,15 @@
       </node>
       <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="61358920859970339">
         <link role="module" roleId="51wr.7717755763392524108" targetNodeId="61358920859968943" resolveInfo="UnaryOperatorsTest" />
+      </node>
+      <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="5845931900082279461">
+        <link role="module" roleId="51wr.7717755763392524108" targetNodeId="7646082028326282928" resolveInfo="ExpressionTests1" />
+      </node>
+      <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="5845931900082279462">
+        <link role="module" roleId="51wr.7717755763392524108" targetNodeId="7422744074721184775" resolveInfo="ExpressionTests2" />
+      </node>
+      <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="5845931900082279463">
+        <link role="module" roleId="51wr.7717755763392524108" targetNodeId="7646082028326282913" resolveInfo="HelperFunctions" />
       </node>
     </node>
     <node role="target" roleId="51wr.5323740605968447026" type="51wr.DesktopPlatform" typeId="51wr.5323740605968447022" id="4459718605982728853">

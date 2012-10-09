@@ -7,11 +7,11 @@
   <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="17" implicit="yes" />
   <import index="yq40" modelUID="r:152b3fc0-83a1-4bab-a8cd-565eb8483785(com.mbeddr.core.pointers.structure)" version="3" implicit="yes" />
   <import index="clbe" modelUID="r:61d840b4-12c1-49ea-b142-b2a1550a9b15(com.mbeddr.core.udt.structure)" version="7" implicit="yes" />
-  <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="4" implicit="yes" />
+  <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="5" implicit="yes" />
   <import index="51wr" modelUID="r:b31f1c3c-99aa-4f1e-a329-cba27efb1a6b(com.mbeddr.core.buildconfig.structure)" version="1" implicit="yes" />
   <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="4" implicit="yes" />
   <import index="yz9a" modelUID="r:734c02dd-cc16-4184-99eb-5fd9f43aa37e(com.mbeddr.core.unittest.structure)" version="0" implicit="yes" />
-  <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="1" implicit="yes" />
+  <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="3" implicit="yes" />
   <roots>
     <node type="51wr.BuildConfiguration" typeId="51wr.7717755763392524104" id="6693167602755062501" />
     <node type="mj1l.TypeSizeConfiguration" typeId="mj1l.3335993110369795380" id="6693167602755062505" />
@@ -176,6 +176,9 @@
           </node>
           <node role="type" roleId="mj1l.318113533128716676" type="yq40.ArrayType" typeId="yq40.5679441017214012545" id="6693167602755062582">
             <node role="baseType" roleId="yq40.5679441017214012546" type="mj1l.Int32tType" typeId="mj1l.8463282783691618440" id="6693167602755062588" />
+            <node role="sizeExpr" roleId="yq40.1452920870317474611" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="4998503984087071529">
+              <property name="value" nameId="mj1l.8860443239512128104" value="2" />
+            </node>
           </node>
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="6693167602755062584">
@@ -215,9 +218,21 @@
                   <node role="expr" roleId="yq40.7863679314024295460" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="7863679314024361298">
                     <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="6693167602755062584" resolveInfo="ap" />
                   </node>
+                  <node role="type" roleId="yq40.4415315037677926511" type="mj1l.Int32tType" typeId="mj1l.8463282783691618440" id="4998503984087071530">
+                    <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+                    <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+                  </node>
                 </node>
                 <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="7863679314024388148">
                   <property name="value" nameId="mj1l.8860443239512128104" value="1" />
+                </node>
+              </node>
+              <node role="type" roleId="yq40.4415315037677889398" type="yq40.PointerType" typeId="yq40.279446265608459824" id="4998503984087071532">
+                <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+                <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+                <node role="baseType" roleId="yq40.279446265608459825" type="mj1l.Int32tType" typeId="mj1l.8463282783691618440" id="4998503984087071531">
+                  <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+                  <property name="const" nameId="mj1l.2941277002445651368" value="false" />
                 </node>
               </node>
             </node>

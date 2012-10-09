@@ -12,6 +12,7 @@
   <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="17" implicit="yes" />
   <import index="r4b4" modelUID="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" version="1" implicit="yes" />
   <import index="vrqd" modelUID="r:53e59391-150a-45ff-930e-2b4fdafb0904(com.mbeddr.core.expressions.editor)" version="1" implicit="yes" />
+  <import index="cl6c" modelUID="r:890ea833-37c9-445e-a04d-3b69ce24aa30(com.mbeddr.core.modules.editor)" version="-1" implicit="yes" />
   <roots>
     <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="5778488248013533843">
       <property name="virtualPackage" nameId="tpck.1193676396447" value="machine" />
@@ -125,10 +126,16 @@
       <property name="virtualPackage" nameId="tpck.1193676396447" value="machine.states" />
       <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="clqz.4753668641245875079" resolveInfo="CommentedStateContent" />
     </node>
+    <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="4709703140582146711">
+      <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="clqz.4709703140582114943" resolveInfo="StatemachineConfigItem" />
+    </node>
   </roots>
   <root id="5778488248013533843">
     <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="51326808951959425">
       <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Indent" typeId="tpc2.1237303669825" id="51326808951959426" />
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Component" typeId="tpc2.1078939183254" id="870322246279222887">
+        <link role="editorComponent" roleId="tpc2.1078939183255" targetNodeId="cl6c.9066372830132703724" resolveInfo="exportedFlag" />
+      </node>
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="51326808951959424">
         <property name="text" nameId="tpc2.1073389577007" value="statemachine" />
       </node>
@@ -172,6 +179,19 @@
                 <node role="creator" roleId="tpee.1145553007750" type="tp25.SNodeCreator" typeId="tp25.1180636770613" id="8927638623067326801">
                   <node role="createdType" roleId="tp25.1180636770616" type="tp25.SNodeType" typeId="tp25.1138055754698" id="8927638623067326802">
                     <link role="concept" roleId="tp25.1138405853777" targetNodeId="clqz.8927638623067326788" resolveInfo="EmptyStatemachineContent" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node role="emptyCellModel" roleId="tpc2.1140524464359" type="tpc2.CellModel_ReadOnlyModelAccessor" typeId="tpc2.1225900081164" id="1209608028661992768">
+          <node role="modelAccessor" roleId="tpc2.1225900141900" type="tpc2.ReadOnlyModelAccessor" typeId="tpc2.1225898583838" id="1209608028661992769">
+            <node role="getter" roleId="tpc2.1225898971709" type="tpc2.QueryFunction_ModelAccess_Getter" typeId="tpc2.1176717841777" id="1209608028661992770">
+              <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="1209608028661992771">
+                <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="1209608028661992772">
+                  <node role="expression" roleId="tpee.1068580123156" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="1209608028661992773">
+                    <property name="value" nameId="tpee.1070475926801" value="" />
                   </node>
                 </node>
               </node>
@@ -290,7 +310,7 @@
     <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="7851711690674286776">
       <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Indent" typeId="tpc2.1237303669825" id="7851711690674286778" />
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="7851711690674286779">
-        <property name="text" nameId="tpc2.1073389577007" value="trigger" />
+        <property name="text" nameId="tpc2.1073389577007" value="smtrigger" />
       </node>
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="4721521648558271221">
         <property name="text" nameId="tpc2.1073389577007" value="(" />
@@ -462,7 +482,7 @@
     <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="1786180596061208525">
       <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Indent" typeId="tpc2.1237303669825" id="1786180596061208527" />
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="1786180596061208529">
-        <property name="text" nameId="tpc2.1073389577007" value="initsm" />
+        <property name="text" nameId="tpc2.1073389577007" value="sminit" />
       </node>
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="4721521648558271213">
         <property name="text" nameId="tpc2.1073389577007" value="(" />
@@ -527,7 +547,7 @@
     <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="2558982571829189202">
       <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Indent" typeId="tpc2.1237303669825" id="2558982571829189203" />
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="2558982571829189204">
-        <property name="text" nameId="tpc2.1073389577007" value="isInState(" />
+        <property name="text" nameId="tpc2.1073389577007" value="smIsInState(" />
         <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.PunctuationRightStyleClassItem" typeId="tpc2.1233759184865" id="2558982571829189209">
           <property name="flag" nameId="tpc2.1186414551515" value="true" />
         </node>
@@ -1086,6 +1106,20 @@
   <root id="4753668641245876050">
     <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Component" typeId="tpc2.1078939183254" id="4753668641245876052">
       <link role="editorComponent" roleId="tpc2.1078939183255" targetNodeId="r4b4.7024921229556157914" resolveInfo="commentedCodeDefault" />
+    </node>
+  </root>
+  <root id="4709703140582146711">
+    <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="4709703140582156523">
+      <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Indent" typeId="tpc2.1237303669825" id="4709703140582156525" />
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="4709703140582156526">
+        <property name="text" nameId="tpc2.1073389577007" value="state machines:" />
+      </node>
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="4709703140582156528">
+        <property name="text" nameId="tpc2.1073389577007" value="trigger as const:" />
+      </node>
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Property" typeId="tpc2.1073389658414" id="4709703140582156530">
+        <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="clqz.4709703140582114945" resolveInfo="triggerAsConst" />
+      </node>
     </node>
   </root>
 </model>

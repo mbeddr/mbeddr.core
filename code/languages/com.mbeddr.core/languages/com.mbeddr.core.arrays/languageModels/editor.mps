@@ -220,6 +220,12 @@
   </root>
   <root id="5679441017214012547">
     <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="5679441017214012564">
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Component" typeId="tpc2.1078939183254" id="333705943706778951">
+        <link role="editorComponent" roleId="tpc2.1078939183255" targetNodeId="vrqd.2941277002449715228" resolveInfo="volatileFlag" />
+      </node>
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Component" typeId="tpc2.1078939183254" id="333705943706778953">
+        <link role="editorComponent" roleId="tpc2.1078939183255" targetNodeId="vrqd.2941277002446854216" resolveInfo="constFlag" />
+      </node>
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_RefNode" typeId="tpc2.1073389882823" id="5679441017214012567">
         <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="yq40.5679441017214012546" />
       </node>
@@ -278,7 +284,7 @@
   <root id="7863679314024367650">
     <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="7863679314024367652">
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="7863679314024367653">
-        <property name="text" nameId="tpc2.1073389577007" value="int2pointer" />
+        <property name="text" nameId="tpc2.1073389577007" value="i2p" />
         <link role="styleClass" roleId="tpc2.1186406756722" targetNodeId="vrqd.6631303246401958074" resolveInfo="cast" />
       </node>
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="4415315037677889400">
@@ -330,7 +336,7 @@
   <root id="7863679314024295443">
     <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="7863679314024295445">
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="7863679314024295448">
-        <property name="text" nameId="tpc2.1073389577007" value="pointer2int" />
+        <property name="text" nameId="tpc2.1073389577007" value="p2i" />
         <link role="styleClass" roleId="tpc2.1186406756722" targetNodeId="vrqd.6631303246401958074" resolveInfo="cast" />
       </node>
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="4415315037677926513">

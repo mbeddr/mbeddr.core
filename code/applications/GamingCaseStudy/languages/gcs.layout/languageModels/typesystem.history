@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<history>
+  <StructureModification>
+    <dependencies>
+      <model index="2p3s" modelUID="r:2e6c12b9-986f-4446-8110-70085e7e0e6f(gcs.behavior.constraints)" version="-1" />
+      <model index="if52" modelUID="r:09229dfa-dae7-4f02-8edd-dff251c5902c(gcs.layout.constraints)" version="-1" />
+      <model index="qk4j" modelUID="r:fbdf0175-1168-4524-a12c-ced1c3a691e3(gcs.layout.structure)" version="0" />
+      <model index="9fod" modelUID="r:a70cf712-dea7-4e2d-9915-a92544ecb387(gcs.behavior.typesystem)" version="-1" />
+      <model index="p2fr" modelUID="r:612fb3ec-81ec-44af-90c8-e8c1dd98bf15(gcs.behavior.editor)" version="0" />
+      <model index="vtna" modelUID="r:672282b8-ae8e-4bae-8e68-f641c0c97181(gcs.behavior.structure)" version="0" />
+      <model index="jll4" modelUID="r:3b6ad7c4-742c-4895-9760-5f6cbfe34035(gcs.layout.editor)" version="0" />
+      <model index="7pbj" modelUID="r:5691a480-de6d-40b2-b2ca-4aba89631367(gcs.layout.typesystem)" version="-1" />
+    </dependencies>
+    <move id="qk4j.2790106256484040582" to="vtna.2790106256484094543" />
+    <move id="qk4j.2790106256484000496" to="vtna.2790106256484094546" />
+    <move id="qk4j.2790106256484000495" to="vtna.2790106256484094545" />
+    <move id="qk4j.2790106256484040583" to="vtna.2790106256484094544" />
+    <move id="jll4.2790106256484040586" to="p2fr.2790106256484094552" />
+    <move id="jll4.2790106256484000502" to="p2fr.2790106256484094550" />
+    <move id="jll4.2790106256484000497" to="p2fr.2790106256484094547" />
+    <move id="jll4.2790106256484040584" to="p2fr.2790106256484094551" />
+    <move id="jll4.2790106256484000499" to="p2fr.2790106256484094548" />
+    <move id="jll4.2790106256484000500" to="p2fr.2790106256484094549" />
+    <move id="7pbj.2790106256484032288" to="9fod.2790106256484094564" />
+    <move id="7pbj.2790106256484032367" to="9fod.2790106256484094560" />
+    <move id="7pbj.2790106256484032330" to="9fod.2790106256484094559" />
+    <move id="7pbj.2790106256484032327" to="9fod.2790106256484094556" />
+    <move id="7pbj.2790106256484032323" to="9fod.2790106256484094555" />
+    <move id="7pbj.2790106256484032292" to="9fod.2790106256484094563" />
+    <move id="7pbj.2790106256484032328" to="9fod.2790106256484094557" />
+    <move id="7pbj.2790106256484032286" to="9fod.2790106256484094553" />
+    <move id="7pbj.2790106256484032287" to="9fod.2790106256484094554" />
+    <move id="7pbj.2790106256484032290" to="9fod.2790106256484094562" />
+    <move id="7pbj.2790106256484032326" to="9fod.2790106256484094561" />
+    <move id="7pbj.2790106256484032361" to="9fod.2790106256484094558" />
+    <move id="if52.2790106256484000507" to="2p3s.2790106256484094568" />
+    <move id="if52.2790106256484000530" to="2p3s.2790106256484094571" />
+    <move id="if52.2790106256484000508" to="2p3s.2790106256484094569" />
+    <move id="if52.2790106256484000540" to="2p3s.2790106256484094575" />
+    <move id="if52.2790106256484000537" to="2p3s.2790106256484094574" />
+    <move id="if52.2790106256484032285" to="2p3s.2790106256484094577" />
+    <move id="if52.2790106256484000506" to="2p3s.2790106256484094567" />
+    <move id="if52.2790106256484000536" to="2p3s.2790106256484094573" />
+    <move id="if52.2790106256484000503" to="2p3s.2790106256484094565" />
+    <move id="if52.2790106256484000542" to="2p3s.2790106256484094576" />
+    <move id="if52.2790106256484000563" to="2p3s.2790106256484094570" />
+    <move id="if52.2790106256484000504" to="2p3s.2790106256484094566" />
+    <move id="if52.2790106256484000509" to="2p3s.2790106256484094572" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="af2w" modelUID="r:35c808e7-fd00-4d01-af64-b4ceb56bd7f0(gcs.layout.intentions)" version="-1" />
+      <model index="if52" modelUID="r:09229dfa-dae7-4f02-8edd-dff251c5902c(gcs.layout.constraints)" version="0" />
+      <model index="qk4j" modelUID="r:fbdf0175-1168-4524-a12c-ced1c3a691e3(gcs.layout.structure)" version="3" />
+      <model index="jll4" modelUID="r:3b6ad7c4-742c-4895-9760-5f6cbfe34035(gcs.layout.editor)" version="2" />
+      <model index="hiey" modelUID="r:89a76686-d90d-482e-8dcb-46c2f087e910(gcs.layout.behavior)" version="-1" />
+      <model index="7pbj" modelUID="r:5691a480-de6d-40b2-b2ca-4aba89631367(gcs.layout.typesystem)" version="0" />
+    </dependencies>
+    <RenameModel oldModel="r:35c808e7-fd00-4d01-af64-b4ceb56bd7f0(gcs.layout.intentions)" newModel="r:35c808e7-fd00-4d01-af64-b4ceb56bd7f0(gcs.structureAndLayout.intentions)" />
+    <RenameModel oldModel="r:5691a480-de6d-40b2-b2ca-4aba89631367(gcs.layout.typesystem)" newModel="r:5691a480-de6d-40b2-b2ca-4aba89631367(gcs.structureAndLayout.typesystem)" />
+    <RenameModel oldModel="r:fbdf0175-1168-4524-a12c-ced1c3a691e3(gcs.layout.structure)" newModel="r:fbdf0175-1168-4524-a12c-ced1c3a691e3(gcs.structureAndLayout.structure)" />
+    <RenameModel oldModel="r:89a76686-d90d-482e-8dcb-46c2f087e910(gcs.layout.behavior)" newModel="r:89a76686-d90d-482e-8dcb-46c2f087e910(gcs.structureAndLayout.behavior)" />
+    <RenameModel oldModel="r:09229dfa-dae7-4f02-8edd-dff251c5902c(gcs.layout.constraints)" newModel="r:09229dfa-dae7-4f02-8edd-dff251c5902c(gcs.structureAndLayout.constraints)" />
+    <RenameModel oldModel="r:3b6ad7c4-742c-4895-9760-5f6cbfe34035(gcs.layout.editor)" newModel="r:3b6ad7c4-742c-4895-9760-5f6cbfe34035(gcs.structureAndLayout.editor)" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="ajkx" modelUID="r:1891c053-7149-4c9e-b491-339d222404f1(gcs.behavior.java.typesystem)" version="-1" />
+      <model index="o2lk" modelUID="r:4b2464a9-1b16-4c64-ba8a-e0e91611090c(gcs.behavior.java.structure)" version="-1" />
+      <model index="qk4j" modelUID="r:fbdf0175-1168-4524-a12c-ced1c3a691e3(gcs.structureAndLayout.structure)" version="4" />
+      <model index="jll4" modelUID="r:3b6ad7c4-742c-4895-9760-5f6cbfe34035(gcs.structureAndLayout.editor)" version="3" />
+      <model index="gdg9" modelUID="r:8406339c-b257-44d7-9f5a-c50be50c4d59(gcs.behavior.java.editor)" version="-1" />
+      <model index="7pbj" modelUID="r:5691a480-de6d-40b2-b2ca-4aba89631367(gcs.structureAndLayout.typesystem)" version="1" />
+    </dependencies>
+    <move id="o2lk.2782839353310589506" to="qk4j.2782839353310615544" />
+    <move id="o2lk.2782839353310589524" to="qk4j.2782839353310615545" />
+    <move id="o2lk.2782839353310589507" to="qk4j.2782839353310615546" />
+    <move id="o2lk.2782839353310589513" to="qk4j.2782839353310615547" />
+    <move id="gdg9.2782839353310589518" to="jll4.2782839353310615550" />
+    <move id="gdg9.2782839353310589522" to="jll4.2782839353310615553" />
+    <move id="gdg9.2782839353310589526" to="jll4.2782839353310615555" />
+    <move id="gdg9.2782839353310589517" to="jll4.2782839353310615549" />
+    <move id="gdg9.2782839353310589528" to="jll4.2782839353310615556" />
+    <move id="gdg9.2782839353310589525" to="jll4.2782839353310615554" />
+    <move id="gdg9.2782839353310589520" to="jll4.2782839353310615552" />
+    <move id="gdg9.2782839353310589516" to="jll4.2782839353310615551" />
+    <move id="gdg9.2782839353310589514" to="jll4.2782839353310615548" />
+    <move id="ajkx.2782839353310589530" to="7pbj.2782839353310615558" />
+    <move id="ajkx.2782839353310589533" to="7pbj.2782839353310615565" />
+    <move id="ajkx.2782839353310589561" to="7pbj.2782839353310615561" />
+    <move id="ajkx.2782839353310589535" to="7pbj.2782839353310615566" />
+    <move id="ajkx.2782839353310589529" to="7pbj.2782839353310615557" />
+    <move id="ajkx.2782839353310589559" to="7pbj.2782839353310615564" />
+    <move id="ajkx.2782839353310589531" to="7pbj.2782839353310615567" />
+    <move id="ajkx.2782839353310589556" to="7pbj.2782839353310615559" />
+    <move id="ajkx.2782839353310589574" to="7pbj.2782839353310615563" />
+    <move id="ajkx.2782839353310589573" to="7pbj.2782839353310615562" />
+    <move id="ajkx.2782839353310589560" to="7pbj.2782839353310615560" />
+  </StructureModification>
+</history>
+
