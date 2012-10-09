@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dev-kit name="com.mbeddr.archdec" uuid="f2792d40-14b9-4136-b555-a71460eb1873">
+  <exported-language name="c7a24b14-c49f-4195-8fb9-145983b1162c(com.mbeddr.cc.archdec)" />
+</dev-kit>
+

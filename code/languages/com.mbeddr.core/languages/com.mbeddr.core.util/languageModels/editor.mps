@@ -1112,6 +1112,10 @@
       </node>
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Property" typeId="tpc2.1073389658414" id="7297559910934149812">
         <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="tpck.1169194664001" resolveInfo="name" />
+        <link role="actionMap" roleId="tpc2.1139959269582" targetNodeId="5724839270942479910" resolveInfo="deleteLogExpression" />
+      </node>
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Property" typeId="tpc2.1073389658414" id="3136162014989109323">
+        <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="k146.3136162014989109318" resolveInfo="countBackwards" />
       </node>
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="8729447926330241141">
         <property name="text" nameId="tpc2.1073389577007" value="in" />
