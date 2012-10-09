@@ -2670,6 +2670,14 @@
                         </node>
                         <node role="ifFalseStatement" roleId="tpee.1082485599094" type="tpee.BlockStatement" typeId="tpee.1082485599095" id="3657295727191883364">
                           <node role="statements" roleId="tpee.1082485599096" type="tpee.StatementList" typeId="tpee.1068580123136" id="3657295727191883365">
+                            <node role="statement" roleId="tpee.1068581517665" type="tpee.SingleLineComment" typeId="tpee.6329021646629104954" id="3657295727191888761">
+                              <node role="commentPart" roleId="tpee.6329021646629175155" type="tpee.TextCommentPart" typeId="tpee.6329021646629104957" id="3657295727191888762">
+                                <property name="text" nameId="tpee.6329021646629104958" value="We only want to check and not infer. Otherwise we sometimes " />
+                              </node>
+                              <node role="commentPart" roleId="tpee.6329021646629175155" type="tpee.TextCommentPart" typeId="tpee.6329021646629104957" id="3657295727191888773">
+                                <property name="text" nameId="tpee.6329021646629104958" value="get ##primitiveType## in the error messages" />
+                              </node>
+                            </node>
                             <node role="statement" roleId="tpee.1068581517665" type="tpd4.CreateLessThanInequationStatement" typeId="tpd4.1174663118805" id="8729127847822637589">
                               <property name="checkOnly" nameId="tpd4.1206359757216" value="true" />
                               <node role="leftExpression" roleId="tpd4.1174660783413" type="tpd4.NormalTypeClause" typeId="tpd4.1185788614172" id="8729127847822637590">
