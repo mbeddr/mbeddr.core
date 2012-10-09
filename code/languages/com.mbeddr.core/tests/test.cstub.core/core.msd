@@ -2,7 +2,6 @@
 <solution name="test.cstub.core" uuid="28b0fb17-21d9-440a-bb1c-b10da1784dee" compileInMPS="true">
   <models>
     <modelRoot path="${solution_descriptor}/" />
-    <modelRoot path="${solution_descriptor}/models" />
   </models>
   <sourcePath />
   <dependencies>

@@ -21,11 +21,11 @@
       <modulePath path="${project}/languages/com.mbeddr.core.base/base.mpl" folder="core" />
       <modulePath path="${project}/languages/com.mbeddr.core.base/solutions/pluginSolution/pluginSolution.msd" folder="core.solutions" />
       <modulePath path="${project}/languages/com.mbeddr.core.buildconfig/buildconfig.mpl" folder="core-extended" />
-      <modulePath path="${project}/languages/com.mbeddr.core.cstubs.test/test.mpl" folder="core" />
+      <modulePath path="${project}/languages/com.mbeddr.core.cstubs.test/test.mpl" folder="tests.cstub" />
       <modulePath path="${project}/languages/com.mbeddr.core.cstubs/cstubs.mpl" folder="core" />
       <modulePath path="${project}/languages/com.mbeddr.core.debug.blext/blext.mpl" folder="core" />
       <modulePath path="${project}/languages/com.mbeddr.core.debug.spawner/spawner.msd" folder="core.solutions" />
-      <modulePath path="${project}/languages/com.mbeddr.core.debug.test/test.mpl" folder="core" />
+      <modulePath path="${project}/languages/com.mbeddr.core.debug.test/test.mpl" folder="tests.debugger" />
       <modulePath path="${project}/languages/com.mbeddr.core.debug/debug.mpl" folder="core" />
       <modulePath path="${project}/languages/com.mbeddr.core.embedded/embedded.mpl" folder="core-extended" />
       <modulePath path="${project}/languages/com.mbeddr.core.expressions/expressions.mpl" folder="core" />
