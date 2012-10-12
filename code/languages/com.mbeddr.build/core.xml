@@ -32,21 +32,24 @@
   </target>
   
   <target name="build">
-	<antcall target="build-mpsutil"/>
+	<antcall target="build-core"/>
   </target>
    
   
-  <target name="build-mpsutil" depends="init">
+  <target name="build-core" depends="init">
     <mps.generate parallelMode="true" fork="true" >
       <jvmargs id="myargs"/>
 
       <macro name="mbeddr.github.core.home" path="${mbeddr.github.core.home}"/>
 
-      <modules dir="${mbeddr.github.core.home}/${mbeddr.core.project.dir}/solutions/com.mbeddr.mpsutil.dev.build/"/>
+      <modules dir="${mbeddr.github.core.home}/${mbeddr.core.project.dir}/solutions/com.mbeddr.core.dev.build/"/>
     </mps.generate>
     <copy 
-    	file="${mbeddr.github.core.home}/${mbeddr.core.project.dir}/solutions/com.mbeddr.mpsutil.dev.build/source_gen/com/mbeddr/mpsutil/dev/build/com.mbeddr.mpsutil.build.xml" 
-    	tofile="${mbeddr.github.core.home}/build/com.mbeddr.mpsutil/build.xml"/>
+    	file="${mbeddr.github.core.home}/${mbeddr.core.project.dir}/solutions/com.mbeddr.mpsutil.dev.build/source_gen/com/mbeddr/core/dev/build/com.mbeddr.core.build.xml" 
+    	tofile="${mbeddr.github.core.home}/build/com.mbeddr.core/build.xml"/>
+    <copy 
+    	file="${mbeddr.github.core.home}/${mbeddr.core.project.dir}/solutions/com.mbeddr.mpsutil.dev.build/source_gen/com/mbeddr/core/dev/build/com.mbeddr.core.tests.build.xml" 
+    	tofile="${mbeddr.github.core.home}/build/com.mbeddr.core/build-tests.xml"/>
   </target>
 
 
