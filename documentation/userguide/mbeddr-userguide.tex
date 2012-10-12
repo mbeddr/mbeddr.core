@@ -33,7 +33,7 @@
 {
   \fbox{ 
     \begin{minipage}{0.97\columnwidth}
-    \small{\textbf{Note: }{#1}\blacktriangleleft}
+    \small{\textbf{Note: }{#1}}
     \end{minipage}
   }
 }
@@ -108,12 +108,10 @@ behavior, public, private, protected, typevar, instance, connect, to, this
 \usepackage[T1]{fontenc}
 \newcommand{\changefont}[3]{\fontfamily{#1}\fontseries{#2}\fontshape{#3}\selectfont}
 
-\newcommand{\inlinecodesize}{\fontsize{10}{0}\selectfont}
-\newcommand{\inlinecodesizesn}{\fontsize{8.4}{0}\selectfont}
+\newcommand{\inlinecodesize}{\fontsize{9.8}{0}\selectfont}
 \definecolor{inlinecodecolor}{gray}{0.3} 
 
 \newcommand{\ic}[1]{\textbf{\inlinecodesize{\textcolor{inlinecodecolor}{\texttt{{#1}}}}}} 
-\newcommand{\icsn}[1]{\textbf{\inlinecodesizesn{\textcolor{inlinecodecolor}{\texttt{{#1}}}}}} 
 
 \newcommand{\keystroke}[1]{\ic{{#1}}}  
 \newcommand{\intention}[1]{\ic{{#1}}}  
@@ -127,7 +125,7 @@ behavior, public, private, protected, typevar, instance, connect, to, this
 \newcommand{\fig}[1]{Fig.~\ref{#1}}
 \newcommand{\sect}[1]{Section~\ref{#1}}
 \newcommand{\parhead}[1]{
-\changefont{phv}{bc}{n}\vspace{4mm}\noindent$\blacksquare$\hspace{2mm}\small{\textbf{{#1}}}\hspace{2mm}\normalfont
+\changefont{phv}{bc}{n}\vspace{4mm}\noindent$\blacksquare$\hspace{2mm}\textbf{{#1}}\hspace{2mm}\normalfont
 }
   
 \begin{document}

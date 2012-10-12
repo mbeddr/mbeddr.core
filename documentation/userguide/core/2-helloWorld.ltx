@@ -221,8 +221,8 @@ module HelloWorld from HelloWorld.main imports nothing {
 
 \label{buildconfigHelloWorld}		
 \parhead{Build Configuration} We have to create one additional element, the
-\ic{BuildConfiguration}. This specifies which modules should be compiled into an
-executable or library, as well as other aspects related to creating an
+\ic{BuildConfigu- ration}. This specifies which modules should be compiled into
+an executable or library, as well as other aspects related to creating an
 executable. Depending on the selected target platform, a \ic{BuildConfiguration}
 will automatically generate a corresponding \ic{make} file. In the \ic{main}
 model, create a new instance of \ic{BuildConfiguration} (via the model's context
@@ -289,10 +289,9 @@ executable main isTest: false {
 
 
 \parhead{Building and Executing the Program} Press \keystroke{Ctrl-F9} (or
-\keystroke{Cmd-F9} on the Mac) to rebuild the solution. In the \ic{HelloWorld/
-solutions/HelloWorld/source\_gen/HelloWorld/main} directory you should now have
-at least the following files (there may be others, but those are not important
-now):
+\keystroke{Cmd-F9} on the Mac) to rebuild the solution. In the
+\ic{HelloWorld/solutions/HelloWorld/source\_gen/HelloWorld/ main} directory you
+should now have at least the following files (there may be others, but those are not important now):
 
 
 \begin{lstlisting}[language=mbeddr, morekeywords={}]

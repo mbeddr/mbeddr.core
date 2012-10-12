@@ -119,7 +119,7 @@ public virtual node<Requirement> getParentRequirement(
 \subsection{Extending the Requirements Language}
 
 To extend the requirements framework, create a new language that extends
-\ic{com.mbeddr.cc.requirements}. Then, use this language in the project that
+\ic{com.mbeddr. cc.requirements}. Then, use this language in the project that
 manages your requirements.
 
 \parhead{A new Link} To create a new link, create a concept that extends
@@ -195,7 +195,7 @@ facilities.
   \item Concepts that should act as a trace target must implement the
   \ic{ITraceTarget} interface (e.g. \ic{Requirement})
   \item The root concept that contains the \ic{ITraceTarget}s must implement the
-  \ic{ITraceTargetProvider} and implement the method \ic{allTraceTargets}.
+  \ic{ITrace- TargetProvider} and implement the method \ic{allTraceTargets}.
   \item In addition, you have to create a concept that extends
   \ic{TraceTargetProvider-\\RefAttr}. It references \ic{ITraceTargetProvider}s.
   \item Finally you have to implement a subconcept of \ic{TraceTargetRef} that
