@@ -19,11 +19,11 @@
   <property name="mbeddr.cc.project.mpr" value="code/languages/com.mbeddr.cc/cc.dev.mpr"/> <!-- for the time being in core project... -->
   
   
-  <jvmargs id="myargs">
+    <jvmargs id="myargs">
       <arg value="-ea"/>
       <arg value="-Xss1024k"/>
-      <arg value="-Xmx1024m"/>
-      <arg value="-XX:MaxPermSize=384m"/>
+      <arg value="-Xmx2048m"/>
+      <arg value="-XX:MaxPermSize=128m"/>
       <arg value="-XX:+HeapDumpOnOutOfMemoryError"/>
 	  <arg value="-Didea.system.path=${mps.platform.caches}/system"/>
 	  <arg value="-Didea.config.path=${mps.platform.caches}/config"/>
