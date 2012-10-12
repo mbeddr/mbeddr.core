@@ -278,7 +278,7 @@ void moreStuff(int8 x, int8 y, int8 z) {
 
 The standard C data types (\ic{int}, \ic{long}, etc.) have different sizes on
 different platforms. This makes them non-portable. C99 provides another set of
-primitive data types with clearly defined sizes (\ic{int8\_t}, \ic{int16\_t}).
+primitive data types with clearly defined sizes (\ic{int8}, \ic{int16}).
 In mbeddr C you \emph{have} to use the C99 types, resulting in more portable
 programs. However, to be able to work with existing header files, the system has
 to know how the C99 types relate to the standard primitive types. This is the
@@ -301,21 +301,21 @@ unsigned counterparts. The following list shows the default mapping of the C99
 types:
 
 \begin{itemize}
-	\item \ic{int8\_t} $\rightarrow$ \ic{char}
+	\item \ic{int8} $\rightarrow$ \ic{char}
 	\vspace{-4mm}
-	\item \ic{int16\_t} $\rightarrow$ \ic{short}
+	\item \ic{int16} $\rightarrow$ \ic{short}
 	\vspace{-4mm}
-	\item \ic{int32\_t} $\rightarrow$ \ic{int}
+	\item \ic{int32} $\rightarrow$ \ic{int}
 	\vspace{-4mm}
-	\item \ic{int64\_t} $\rightarrow$ \ic{long long}
+	\item \ic{int64} $\rightarrow$ \ic{long long}
 	\vspace{-4mm}
-	\item \ic{uint8\_t} $\rightarrow$ \ic{unsigned char}
+	\item \ic{uint8} $\rightarrow$ \ic{unsigned char}
 	\vspace{-4mm}
-	\item \ic{uint16\_t} $\rightarrow$ \ic{unsigned short}
+	\item \ic{uint16} $\rightarrow$ \ic{unsigned short}
 	\vspace{-4mm}
-	\item \ic{uint32\_t} $\rightarrow$ \ic{unsigned int}
+	\item \ic{uint32} $\rightarrow$ \ic{unsigned int}
 	\vspace{-4mm}
-	\item \ic{uint64\_t} $\rightarrow$ \ic{unsigned long long}
+	\item \ic{uint64} $\rightarrow$ \ic{unsigned long long}
 \end{itemize}
 
 \parhead{Floating Point Types} The size of floating point types
@@ -358,7 +358,7 @@ module BooleanDatatype from HelloWorld.BooleanDatatype imports nothing {
 
 mbeddr C supports special literals for hex, octal and binary
 numbers. The type of the literal is the smallest possible signed integer type
-(\ic{int8\_t}, \ldots, \ic{int64\_t}) that can represent the number.
+(\ic{int8}, \ldots, \ic{int64}) that can represent the number.
 
 
 \begin{lstlisting}[language=mbeddr, morekeywords={}]
@@ -459,7 +459,7 @@ closures without their own state).
 
 For function types you first define the argument list and then the return type,
 separeted by \ic{=>} (a little bit like Scala). Here is an example:
-\ic{(int32\_t, int32\_t)=>(int32\_t)} You can enter a fuction type by using the
+\ic{(int32, int32)=>(int32)} You can enter a fuction type by using the
 \ic{funtype} alias,  (see figure below). Function types are types, so they can
 be used in function signatures, local variables or \ic{typedef}s, just like any
 other type (see example \ic{HelloWorld.Pointer.FunctionPointerAsTypes}).
@@ -508,7 +508,7 @@ expression.
 
 
 Function types can be used like any other type. This is illustrated in the next
-example. The typedef \ic{typedef (int3\_t, int32\_t)=>(int32\_t) as ftype;}
+example. The typedef \ic{typedef (int3\_t, int32)=>(int32) as ftype;}
 defines a new function type. The type \ic{ftype} is the first parameter in the
 \ic{doOperation} function. You can easily call the function
 \ic{doOperation(:add, 20, 10)} and put any suitable function reference as the
