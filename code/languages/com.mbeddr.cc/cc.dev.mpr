@@ -19,8 +19,6 @@
       <modulePath path="${project}/languages/com.mbeddr.cc.var.buildconfig/buildconfig.mpl" folder="ple_var" />
       <modulePath path="${project}/languages/com.mbeddr.cc.var.fm/fm.mpl" folder="ple_var" />
       <modulePath path="${project}/solutions/com.mbeddr.cc.dev.build/build.msd" />
-      <modulePath path="${project}/solutions/com.mbeddr.cc.var.cimporter/cimporter.msd" folder="ple_var" />
-      <modulePath path="${project}/solutions/test.variability_importing/variability_importing.msd" folder="tests" />
       <modulePath path="${project}/tests/test.ex.cc.fm/fm.msd" folder="tests" />
       <modulePath path="${project}/tests/test.ts.cc.archdec/archdec.msd" folder="tests" />
       <modulePath path="${project}/tests/test.ts.cc.requirements/requirements.msd" folder="tests" />
