@@ -847,15 +847,18 @@ itself (the \ic{//}) or the commented element.
 
 Commenting out code is a bit different than in regular, textual systems because
 code that is commented out is still "live": it is still stored as a tree, code
-completion still works in it, it may still be shown in $Find References$, and
-refactorings may affect the code. We are not sure if this is a desirable feature
-and we are looking for your feedback. Of course, the code is not executed. All
-commented program elements are removed during code generation.
+completion still works in it, it may still be shown in Find References, and
+refactorings may affect the code. However, type system errors are not reported
+inside commnted code. Also, commented program elements cannot be refernced
+(existing references are marked as invalid). Of course, the code is not
+executed. All commented program elements are removed during code generation.
 
 Not all program elements can be commented out (since special support by the
 language is necessary to make something commentable), only concepts that
 implement \ic{ICommentable} can be commented. At this time, this is all
-statements and module contents.
+statements and module contents, as well as many other useful
+things\footnote{However, let us know if we have to support more commentable
+things.}.
 
 
 
@@ -863,9 +866,10 @@ statements and module contents.
 comments that can be used: single line statement comments, multi-line statement
 comments and element documentations.
 
-Single line statement comments are comments that can be used in statement
-context. For example, in a function body, you can type \ic{//} and fill in
-arbitrary text behind. One line only! The following shows as simple comment.
+Single line statement comments are comments that can be used \emph{only} in
+statement context. For example, in a function body, you can type \ic{//} and
+enter arbitrary text. One line only! The following shows as simple
+comment.
 
 \begin{center} 
   \includegraphics[scale=0.6]{figures/core/onelinecomment.png}
@@ -873,7 +877,8 @@ arbitrary text behind. One line only! The following shows as simple comment.
 
 A multi-line comment statement can be created by typing \ic{/*} in statement
 context. It supports multiple lines. However, since there is no wrapping over
-into the next line, editing can be cumbersome. To solve this problem you can 
+into the next line\footnote{This is a problem with MPS' editor and will be fixed
+in future release.}, editing can be cumbersome. To solve this problem you can
 press \ic{Ctrl-A} anywhere in the multi-line comment to open a dialog with a
 regular text area. You can edit the text in this text area and when you close it
 with \ic{OK} the text is transferred back into the actual comment.
@@ -887,14 +892,16 @@ rearrange the line contents.
 
 The two statement comments discussed above have two important limitations.
 The first one is that they are standalone statements and not connected to any
-program element (other than through their position in the code). Second, they
-can only be used in statement context. A better solution in many cases is to use
-the element documentation. It is semantically attached to a program element. To
-create one, either press \ic{Ctrl-A} or use the \ic{Add Documentation}
-intention. It looks just like a multi-line comment (and has the same edit
-dialog for convenient editing), but it is attached to (and hence moves around
-with) a program element. Currently, all statements and module contents can be
-annotated with an element documentation.
+program element (other than through their position in the code, just like in
+normal textual programming). Second, as mentioned above, they can only be used
+in statement context. A better solution in many cases is to use the element
+documentation. It is structurally attached to a program element. To create one,
+either press \ic{Ctrl-A} or use the \ic{Add Documentation} intention. It looks
+just like a multi-line comment (and has the same edit dialog for convenient
+editing), but it is attached to (and hence moves around with) a program element.
+Currently, all statements and module contents can be annotated with an element
+documentation, as well as many other concepts such as states in state machines
+or ports in components.
 
 \parhead{TODOs} mbeddr comes with a special view for collecting and showing
 TODOs in comments. Anywhere within the comments discussed above, you can write

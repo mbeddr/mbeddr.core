@@ -65,6 +65,23 @@ Note how the \ic{dt\_driveForwardFor} runnable implements the operation
 automatically synchronized. Inside components, the operations on required ports
 can be invoked in the familiar dot notation.
 
+Runnables can be marked as \ic{inline}. In this case, an invocation of such a
+runnable will be inline, no method invocation (in the generated code) will
+occur. At this point, inline runnables cannot return any values; in other words,
+they must return \ic{void}.
+
+A required port can be marked (via an intention) as \ic{multiple} which means
+that a single required port can be connected to \emph{several} provided ports.
+The number of provided ports in can be connected to must be specified in the
+port:
+
+\begin{lstlisting}[language=mbeddr]
+exported component Subject { 
+  requires ObserverIf i1 [2] 
+}
+\end{lstlisting}
+
+
 Components can be instantiated. Each component instance generally must get all
 its required ports connected to provided ports provided by other instances.
 However, a required port may be marked as \ic{optional} (this is toggled via an
@@ -171,6 +188,15 @@ int32 main(int32 argc, int8*[ ] argv) {
   ... 
 } 
 \end{lstlisting}
+
+An instance configuration can contain several connectors for the same required
+port of a given instance. If the required port is a multi port, the connector
+shows the \ic{multi} modifier. If the required port is a regular to-one required
+port, the the later connector \emph{overrides} the former ones,
+so in effect each required is connected only once. The overriding connector is
+marked as \ic{override}. You can \keystroke{Ctrl-Click} onto the \emph{override}
+keyword to navigate to the connector that is overridden by the current
+\ic{override} connector.
 
 
 To be able to call "into" component instances from regular, non-component C
