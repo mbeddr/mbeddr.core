@@ -1,0 +1,21 @@
+Outline for Implementation modules
+#pragma
+debugger dokumentieren!!
+opaque types
+neue syntax fŸr kompinenten und statemachines
+flagset etc.
+interface types
+additional port constraints
+to-n-ports
+Quickfix for wrap with when port connected statement
+automatically change -> to . oder anderstum
+"else" in when connected
+build config
+multi-line comments
+inline runnables
+initsm (hei§en jetzt alle sm ... konsistent machen)
+adapter nur noch in den isntance config
+break in switches
+testing: internal runnable call
+field keyword bei fields weg
+refactoring struct <-> union
