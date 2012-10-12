@@ -1,0 +1,80 @@
+\section{Architecture Decisions}
+
+\greyboxnote{The implementation of this language is very new and not much
+tested yet. Expect bugs and improvements.}
+
+This extension supports the systematic documentation of (architectural)
+decisions. It is based on the approach by van Heesch, Avgeriou and Hillard: 
+
+\begin{quote}
+U. van Heesch, P. Avgeriou, R. Hilliard, A documentation framework for
+architecture decisions, Journal of Systems and Software, Volume 85, Issue 4, April 2012, Pages 795-820, Elsevier. 
+\end{quote}
+
+The following figure provides an overview over the meta model.
+
+\begin{center} 
+  \includegraphics[width=\columnwidth]{figures/cc/archdecmm.png}
+\end{center}
+
+To use the architecture decisions, include the \ic{com.mbeddr.archdec} devkit in
+your project.
+
+\subsection{Base Data}
+
+As can be seen in the above meta model, various base data are required to
+document architecture decisions in a meaningful way. These includes
+concerns, stakeholders, decision groups, and forces. These can be captured in
+\ic{Architecture Decision} modules. The following figure shows an example.
+
+\begin{center} 
+  \includegraphics[width=0.7\columnwidth]{figures/cc/archdecEx1.png}
+\end{center}
+
+\subsection{Achitecture Decisions}
+
+The decisions themselves can be captured in \ic{Architecture Decision} modules
+as well. Note that the decisions are versioned. Only the most recent version can
+actually be edited. Older versions are grey and read-only.
+
+\begin{center} 
+  \includegraphics[width=0.7\columnwidth]{figures/cc/archdecEx2.png}
+\end{center}
+
+For architecture decisions (not for their versions!) the inspector contains
+information about which stakeholder interacted with the decision and which
+forces influence it. Each influence points to a decision and can contain a short
+rationale.
+
+\begin{center} 
+  \includegraphics[width=0.7\columnwidth]{figures/cc/archdecEx3.png}
+\end{center}
+
+
+\subsection{Connection to Requirements}
+
+In principle, every program element can be connected to requirements by the
+generic tracing framework (see \sect{reqtrace}). However, since the connections
+between architecture and requirements are especially typical, first class
+support is provided.
+
+To connect a decision to a requirement, you first have to import a requirements
+module into the architecture decision module using the \ic{import requirements}
+construct. You can then add requirements to the influences section of a
+decision using the \ic{req} keyword in a decision's influences.
+
+\subsection{Tracing to Architecture Decisions}
+
+As discussed in \sect{otherTraceables}, other trace targets can be plugged into
+the existing trace mechanism. Architecture decisions are such an alternative
+trace target. Hence, program elements can be connected to architecture decisions
+via traces.
+
+
+
+
+
+
+
+
+
