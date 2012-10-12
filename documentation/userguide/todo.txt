@@ -1,14 +1,6 @@
-neue syntax für kompinenten und statemachines
-flagset etc.
 interface types
 additional port constraints
 to-n-ports
 build config
 multi-line comments
 inline runnables
-initsm (heißen jetzt alle sm ... konsistent machen)
-adapter nur noch in den isntance config
-break in switches
-testing: internal runnable call
-field keyword bei fields weg
-refactoring struct <-> union

@@ -12,10 +12,8 @@ in event. Whenever it receives the \ic{reset} event, it goes back to its single
 state \ic{start}. In other words, it does nothing.
 
 \begin{lstlisting}[language=mbeddr, morekeywords={}]
-statemachine WrappingCounter { 
-  in events 
-    reset() 
-  states ( initial = start ) 
+statemachine WrappingCounter initial = start { 
+  	in reset() 
     state start { 
       on reset [ ] -> start {  } 
     } 
@@ -35,19 +33,17 @@ the \ic{int} type requires the specification of bounds. This is to simplify
 model checking.
 
 \begin{lstlisting}[language=mbeddr, morekeywords={}]
-in events: 
-  reset()
-  increment(int[0..10] delta) 
+  in reset()
+  in increment(int[0..10] delta) 
 \end{lstlisting}
 
 A state machine can also have local variables. While these could in principle be
 handled via separate states, local variables are more scalable.
 
 \begin{lstlisting}[language=mbeddr, morekeywords={}]
-local variables
-  int[0..100] current = 0 
-  int[0..100] LIMIT = 100 
-  int[0..100] steps = 0 
+  var int[0..100] current = 0 
+  var int[0..100] LIMIT = 100 
+  var int[0..100] steps = 0 
 \end{lstlisting}
 
 We are now ready to write a somewhat more sensible \ic{WrappingCounter} state
@@ -129,17 +125,15 @@ exit { send wrapped(steps); }
 \begin{lstlisting}[language=mbeddr, morekeywords={}]
 module WrappingCounterModule imports nothing { 
    
-  statemachine WrappingCounter { 
-    in events 
-      increment(int[0..10] delta) 
-      reset() 
-    out events 
-      wrapped(int[0..100] steps) -> wrapped 
-    local variables 
-      int[0..100] current = 0 
-      int[0..100] LIMIT = 100 
-      int[0..100] steps = 0 
-    states ( initial = start ) 
+  statemachine WrappingCounter initial = start { 
+      in increment(int[0..10] delta) 
+      in reset() 
+      out wrapped(int[0..100] steps) -> wrapped 
+
+      var int[0..100] current = 0 
+      var int[0..100] LIMIT = 100 
+      var int[0..100] steps = 0 
+
       state start { 
         entry { 
           current = 0; 
@@ -148,6 +142,7 @@ module WrappingCounterModule imports nothing {
         on increment [ ] -> increasing { current = current + delta; } 
         on reset [ ] -> start {  } 
       } 
+
       state increasing { 
         entry { steps++; } 
         on increment [current + delta <= LIMIT] -> increasing { current = current + delta; } 

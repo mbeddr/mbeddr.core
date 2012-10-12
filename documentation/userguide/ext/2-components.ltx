@@ -109,9 +109,6 @@ created:
 
 \begin{lstlisting}[language=mbeddr, morekeywords={}]
 exported component OrienterImpl extends nothing { 
-  ports:
-    ... 
-  contents: 
     int16[5] headingBuffer 
     int8 headingIndex 
     
@@ -132,7 +129,6 @@ instantiation. This effectively supports constructors:
 
 \begin{lstlisting}[language=mbeddr, morekeywords={}]
 exported component OrienterImpl extends nothing { 
-  contents: 
     void init() <- on init { 
       compass.initAbsolute(); 
       compass.heading(); 
@@ -178,16 +174,12 @@ int32 main(int32 argc, int8*[ ] argv) {
 
 
 To be able to call "into" component instances from regular, non-component C
-code, adapters can be used. They can be defined inside of instance
-configurations as well as outside of them. Here is an example:
+code, adapters can be used. They are defined inside instance
+configurations. Here is an example:
 
 \begin{lstlisting}[language=mbeddr, morekeywords={}]
 exported instance configuration instances extends nothing { 
-  instances: 
     instance EcRobot_Display_Impl i_display 
-  connectors:
-    ... 
-  adapter: 
     adapt i_display.displayPort as disp 
 }
 
@@ -324,10 +316,9 @@ specific \emph{client} behaves correctly. Here is an example client:
   } 
 
   exported component Client extends nothing { 
-    ports: 
       requires PersistenceProvider pers 
       provides Driver d 
-    contents: 
+
       void Driver_run() <- op d.run { 
         DataPacket p; 
         if ( pers.isReady() ) { 
@@ -393,8 +384,9 @@ This is why inside test cases, you can use the direct runnable call expression:
 
 \begin{lstlisting}[language=mbeddr, morekeywords={}]
 exported component C extends nothing { 
-  contents: 
+
     int8 count = 0 
+
     internal int8 getStuff(int8 x) <= no trigger { 
       count++; 
       return count; 
@@ -402,7 +394,6 @@ exported component C extends nothing {
 } 
  
 instance configuration instances extends nothing { 
-  instances: 
     instance C c1 
 } 
  
