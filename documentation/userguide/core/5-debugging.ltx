@@ -13,7 +13,8 @@ The Hello World project contains a model called \ic{Debugger.Example} that
 contains a simple program that makes use of a number of C extensions. We will
 use this program to illustrate debugging.
 
-\begin{code}
+\begin{lstlisting}[language=mbeddr, morekeywords={}]
+
 module DebuggerExample from Debugger.Example imports nothing { 
    
   int8_t add(int8_t x, int8_t y) { 
@@ -29,7 +30,7 @@ module DebuggerExample from Debugger.Example imports nothing {
     return test testAdding; 
   } 
 }
-\end{code}
+\end{lstlisting}
 
 \subsection{Creating a Debug Configuration}
 

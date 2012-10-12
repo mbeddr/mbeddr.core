@@ -52,7 +52,8 @@ the \emph{importing} model. In the \ic{imports} section of the resulting
 implementation module you can now add \ic{stdio}. In the main function you can
 now use, for example, \ic{printf}:
 
-\begin{code}
+\begin{lstlisting}[language=mbeddr, morekeywords={}]
+
 module UsingIO imports stdio { 
    
   int32_t main(int32_t argc, int8_t*[] argv) { 
@@ -60,12 +61,13 @@ module UsingIO imports stdio {
     return 0; 
   } main (function) 
 } 
-\end{code}
+\end{lstlisting}
 
 To make the program run, you also have to add the \ic{stdio} external module to
 the build configuration:
 
-\begin{code}
+\begin{lstlisting}[language=mbeddr, morekeywords={}]
+
 
 executable UsingIO isTest: false { 
   used libraries 
@@ -74,18 +76,19 @@ executable UsingIO isTest: false {
     UsingIO (HeaderImport/HeaderImport.main) 
     stdio (HeaderImport/HeaderImport.imported) 
 } 
-\end{code}
+\end{lstlisting}
 
 You can now rebuild the solution and run the generated \ic{make} file from the
 command line:
 
-\begin{code}
+\begin{lstlisting}
+
 HelloWorld/solutions/HeaderImport/source_gen/HeaderImport/main (master)$ make
 rm -rf ./bin 
 mkdir -p ./bin 
 gcc    -c -o bin/UsingIO.o UsingIO.c -std=c99 
 gcc -o UsingIO bin/UsingIO.o   -std=c99  
-\end{code}\ignore{$}
+\end{lstlisting}
 
 Finally, you can run \ic{UsingIO}. It should print \ic{Hello World} onto the
 command line.
@@ -104,16 +107,16 @@ Importing header files is not as simple as it may seem initially. In this
 section we discuss some of the things you can do when importing headers that
 "don't look right".
 
-\paragraph{Defined \#defines}: Header files can express product line variability
-using \ic{#ifdef}s. These use preprocessor constants as in \ic{\#ifdef
-SOMETHING}. To import a header file correctly you may have to define a number of
-these constants. This can be done in this section:
+\parhead{Defined \#defines} Header files can express product line variability
+using \ic{\#ifdef}s. These use preprocessor constants as in 
+\ic{\#ifdef SOMETHING}. To import a header file correctly you may have to define
+a number of these constants. This can be done in this section:
 
 \begin{center}  
   \includegraphics[scale=0.6]{figures/core/defineddefines.png}
 \end{center}
 
-\paragraph{Mappings} Some header files use platform-specific directives that
+\parhead{Mappings} Some header files use platform-specific directives that
 cannot be parsed by the Eclipse CDT parser that underlies the header file
 import. These must be removed (or changed) before parsing the file. The header
 file importer comes with a preprocessor that can remove or change such
@@ -123,10 +126,10 @@ not a generated version of the external module. So the final system (which is
 assumed to be processed by a compiler that understands the platform-specific
 stuff) will see these things unchanged.}.
 
-\paragraph{Regular Expression Mappings} This is the same as in the previous
+\parhead{Regular Expression Mappings} This is the same as in the previous
 paragraph, except that the a regular expression can be used.
 
-\paragraph{Header Files} This sections shows all header files located in the
+\parhead{Header Files} This sections shows all header files located in the
 directory defined in the \ic{Include Path} property. Sometimes a header file
 does not include some other header file explicitly, although it should. The
 compiler seems to not care ... mbeddr, does care, however. By marking a header
@@ -140,7 +143,7 @@ section of all other headers.
 Importing header files is not as simple as it may seem (heard that before :-)?),
 and our current importer still has some limitations.
 
-\paragraph{\#ifdef Variability} At this point we cannot yet map product line
+\parhead{\#ifdef Variability} At this point we cannot yet map product line
 variability expressed with \ic{\#ifdef}s onto the product line variability
 mechanism of mbeddr. Hence, as discussed above, \emph{only a particular variant}
 can be imported, which is why we have the \emph{Defined \#defines} section
@@ -148,19 +151,21 @@ above.
 
 \greyboxnote{Note that we will be working on improving this situation.}
 
-\paragraph{Complex Expressions} We cannot parse complex expressions used in
+\parhead{Complex Expressions} We cannot parse complex expressions used in
 \ic{\#defines} at this point. Assume the following example:
 
-\begin{code} 
+\begin{lstlisting}[language=mbeddr, morekeywords={}]
+ 
 #define SOMETHING 10 + SOME_OTHER_DEFINE + 3
-\end{code}
+\end{lstlisting}
 
 Since we cannot parse such expressions, we represent them as an opaque string in
 the external module, like this:
 
-\begin{code}
+\begin{lstlisting}[language=mbeddr, morekeywords={}]
+
 exported #define SOMETHING = (void) 10 + SOME_OTHER_DEFINE + 3 
-\end{code}
+\end{lstlisting}
 
 Since we cannot parse the expression, MPS cannot calculate the type, so
 \ic{SOMETHING} is typed to be \ic{void}. Of course, if you reference 
@@ -169,9 +174,10 @@ write \ic{SOMETHING + 3} it won't work since you cannot add \ic{void} to an
 integer). To solve this problem, you have to change the type manually in the
 imported external module:
 
-\begin{code}
+\begin{lstlisting}[language=mbeddr, morekeywords={}]
+
 exported #define SOMETHING = (int8_t) 10 + SOME_OTHER_DEFINE + 3 
-\end{code}
+\end{lstlisting}
 
 
 

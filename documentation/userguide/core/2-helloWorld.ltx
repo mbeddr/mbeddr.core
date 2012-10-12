@@ -9,7 +9,7 @@ mbeddr.core distribution. This has been disussed in the previous section.
 
 \subsection{Create new project}
 
-Start up MPS and create a new project. Call the project \lcr{HelloWorld} and
+Start up MPS and create a new project. Call the project \ic{HelloWorld} and
 store it in a directory without blanks in the path. Let the wizard create a
 solution, but no language.
  
@@ -125,11 +125,11 @@ be added later.
 \noindent Next, specify \ic{HelloWorld} as the name for the implementation
 module.
 
-\begin{code}
+\begin{lstlisting}[language=mbeddr]
 module HelloWorld imports nothing {                                
-  << ... >>                      
+
 } 
-\end{code}
+\end{lstlisting}
 
 The module name is still underlined in red because of a missing type size
 configuration. The \ic{TypeSizeConfiguration} specifies the sizes of the
@@ -170,13 +170,13 @@ simply output a log message and return \ic{0}. To add a return value, move the
 cursor into the function body and type \keystroke{return 0}.
 
 
-\begin{code}
+\begin{lstlisting}[language=mbeddr]
 module HelloWorld from HelloWorld.main imports nothing {                                            
   int32_t main() { 
     return 0; 
   } 
 }
-\end{code}
+\end{lstlisting}
 
 To print the message we could use \ic{printf} or some other \ic{stdio} function.
 However, in embedded systems there is often no \ic{printf} or the target
@@ -195,32 +195,30 @@ hitting \keystroke{return} between the parentheses. The type should be a
 \ic{string} and the name should be \ic{who}. Specify \ic{Hello} as the value
 of the \ic{message text} property. The resulting message should look like this:
 
-\begin{code}
+\begin{lstlisting}[language=mbeddr, morekeywords={message, list}]
   message list log { 
     INFO hello(string who) active: Hello 
   } 
-\end{code}
+\end{lstlisting}
 
 Now you are ready to use the message list and its messages from your
 main function. Insert a \ic{report()} statement in the main function, specify
 the message list \ic{log} and select the message \ic{hello}. Pass the string
 \ic{"World"} as parameter.
 
-\begin{code}
+\begin{lstlisting}[language=mbeddr, morekeywords={message, list}]
 module HelloWorld from HelloWorld.main imports nothing { 
    
   int32_t main(int8_t argc, string[ ] args) { 
     report(0) log.hello("World") on/if; 
     return 0; 
-  } main (function) 
+  } 
   
- 
   message list log { 
     INFO hello(string who) active: Hello 
   } 
 }
-\end{code}
-
+\end{lstlisting}
 
 
 
@@ -233,7 +231,7 @@ specifies which modules should be compiled into an executable or library, as
 well as other aspects related to creating an executable. Depending on the
 selected target platform, a \ic{BuildConfiguration} will automatically generate
 a corresponding \ic{make} file. In the \ic{main} model, create a new instance of
-\lcr{BuildConfiguration} (via the model's context menu, see
+\ic{BuildConfiguration} (via the model's context menu, see
 figure below). 
 
 \begin{center} 
@@ -242,7 +240,7 @@ figure below).
 
 Initially, it will look as follows:
 
-\begin{code}
+\begin{lstlisting}[language=mbeddr, morekeywords={}]
 Target Platform: 
   <no target> 
  
@@ -251,7 +249,7 @@ Configuration Items
  
 Binaries 
   << ... >>
-\end{code}
+\end{lstlisting}
 
 You will have to specify three things. First you have to select the target
 platform. For our tests, we use the \ic{desktop} platform that generates a
@@ -260,13 +258,14 @@ target platforms may generate build scripts for other build systems.}.
 The \ic{desktop} target contains some useful defaults, e.g. the \ic{gcc}
 compiler and its options. 
 
-\begin{code}
+\begin{lstlisting}[language=mbeddr, morekeywords={}]
+
 Target Platform: 
   desktop 
     compiler: gcc 
     compiler options: -std=c99 
     debug options: <no debug options>
-\end{code}
+\end{lstlisting}
 
 Next, we have to address the configuration items. These are additional
 configuration data that define how various language concepts elements are
@@ -275,23 +274,25 @@ determines how log messages are output. The \ic{printf} strategy simply prints
 them to the console, which is fine for our purposes here. Select
 the placeholder and type \keystroke{reporting}. 
 
-\begin{code}
+\begin{lstlisting}[language=mbeddr, morekeywords={}]
+
 Configuration Items 
   reporting: printf 
-\end{code}
+\end{lstlisting}
 
-Finally, in the \ic{Binaries} section, we create a new \lcr{exectuable} and
-call it \lcr{HelloWorld}. In the program's body, add a reference to the \lcr{HelloWorld}
+Finally, in the \ic{Binaries} section, we create a new \ic{exectuable} and
+call it \ic{HelloWorld}. In the program's body, add a reference to the \ic{HelloWorld}
 implementation module we've created before. The code should look like this:
 
-\begin{code}
+\begin{lstlisting}[language=mbeddr, morekeywords={}]
+
 executable main isTest: false { 
   used libraries 
     << ... >> 
   included modules 
     HelloWorld 
 }
-\end{code}
+\end{lstlisting}
  
 
 
@@ -304,11 +305,12 @@ at least the following files (there may be others, but those are not important
 now):
 
 
-\begin{code}
+\begin{lstlisting}[language=mbeddr, morekeywords={}]
+
 Makefile
 HelloWorld.c
 HelloWorld.h
-\end{code}
+\end{lstlisting}
 
 The files should be already compiled as part of the mbeddr C build facet (i.e.
 \ic{make} is run by MPS automatically). Alternatively, to compile the files
@@ -316,21 +318,23 @@ manually, open a command prompt (must be a cygwin prompt on Windows!) in this
 directory and type \keystroke{make}. The output should look like the following:
 
 
-\begin{code}
+\begin{lstlisting}[language=mbeddr, morekeywords={}]
+
 \$ make
 rm -rf ./bin
 mkdir -p ./bin
 gcc -c -o bin/HelloWorld.o HelloWorld.c -std=c99
-\end{code}
+\end{lstlisting}
 
 This builds the executable file \ic{HelloWorld.exe} or \ic{HelloWorld} (depending on your
 platform), and running it should show the following output:
 
-\begin{code}
+\begin{lstlisting}[language=mbeddr, morekeywords={}]
+
 \$ ./HelloWorld.exe
 hello: Hello @HelloWorld:main:0
   world = World
-\end{code}
+\end{lstlisting}
 
 Note the output of the log statement in the program (report statement number
 \ic{0} in function \ic{main} in module \ic{HelloWorld}; take a look back at the

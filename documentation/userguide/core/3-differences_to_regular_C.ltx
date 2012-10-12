@@ -35,7 +35,7 @@ existing, non-mbeddr header files that should be accessible from within mbeddr C
 programs.
 
 
-\paragraph{Implementation Modules} The following example shows an implementation
+\parhead{Implementation Modules} The following example shows an implementation
 module (\ic{ImplementationModule}) with an exported function. You can toggle the
 \emph{exported} flag with the intention \intention{Toggle Export}. The second
 module (\ic{Module- UsingTheExportedFunction}) imports the
@@ -43,7 +43,8 @@ module (\ic{Module- UsingTheExportedFunction}) imports the
 An importing module can access all exported contents defined in imported modules.
 
 
-\begin{code}
+\begin{lstlisting}[language=mbeddr, morekeywords={}]
+
 module ImplementationModule imports nothing { 
    
   exported int32_t add(int32_t i, int32_t j) { 
@@ -58,10 +59,10 @@ module ModuleUsingTheExportedFunction imports ImplementationModule {
     return 0; 
   } 
 }
-\end{code}
+\end{lstlisting}
 
 	
-\paragraph{External modules} mbeddr C code must be able to work with existing
+\parhead{External modules} mbeddr C code must be able to work with existing
 code and existing C libraries. So to call existing functions or instantiate
 \ic{struct}s, we use the following approach:
 
@@ -97,7 +98,7 @@ repeat the basics here.
 The main part of the build configuration supports the definition of binaries.
 Binaries are either executables or libraries. 
 
-\paragraph{Executables} An executable binds together a set of modules and
+\parhead{Executables} An executable binds together a set of modules and
 compiles them into an executable. Exactly one module in a executable shall have
 a main function.
 
@@ -115,18 +116,19 @@ build infrastructure.}
 
 
  
-\paragraph{Libraries} Libraries are binaries that are not executable.
+\parhead{Libraries} Libraries are binaries that are not executable.
 Specifically, they are \ic{libXXXX.a} files which can be linked into
 executables. A library will typically reside in its own MPS model (and hence in
 its own \ic{source\_gen} directory). To create a library, create a build
 configuration with a \ic{static library}:
 
-\begin{code}
+\begin{lstlisting}[language=mbeddr, morekeywords={}]
+
 static library MathLib { 
   MyFirstModule 
   MyOtherModule
 }
-\end{code}
+\end{lstlisting}
 
 Running the resulting make file will create a \ic{libMathLib.a}. Using the
 library for inclusion in an executable (which \emph{must} be in a different
@@ -150,14 +152,15 @@ MPS model!) requires the following three steps:
   the library, the used library has to be specified in the \ic{used libraries}
   section:
   
-\begin{code}
+\begin{lstlisting}[language=mbeddr, morekeywords={}]
+
 executable AnExe isTest: true { 
   used libraries 
     MathLib  
   included modules 
     MainModule 
 }
-\end{code}  
+\end{lstlisting}  
   
 \end{itemize}
 
@@ -192,7 +195,8 @@ Boolean expression (note that \ic{assert} can just be used \emph{only} inside
 test cases). A \ic{fail} statement is also available --- it fails the test
 unconditionally.
 
-\begin{code}
+\begin{lstlisting}[language=mbeddr, morekeywords={}]
+
 module AddTest imports nothing { 
    
   exported test case testAddInt { 
@@ -207,7 +211,7 @@ module AddTest imports nothing {
     assert(0) f1 + f2 == 15.5; 
   }  
 }
-\end{code}
+\end{lstlisting}
 
 
 The next piece of code shows a main function that executes the test cases
@@ -216,13 +220,14 @@ invocations of test cases; it also evaluates to the number of failed assertions.
 By returning this value from \ic{main}, we get an exit code != 0 in the case a
 test failed.
 
-\begin{code}
+\begin{lstlisting}[language=mbeddr, morekeywords={}]
+
 module TestSuite from HelloWorld.UnitTests imports AddTest { 
   int32_t main() { 
     return test testAddInt, testAddFloat; 
   } 
 }
-\end{code}
+\end{lstlisting}
 
 For executables that contain tests, in the build configuration, the \ic{isTest}
 flag can be set to \ic{true}; this adds a \ic{test} target to the \ic{make} file, so
@@ -233,22 +238,24 @@ The example above contains a failing assertion \ic{assert(1) -1 + 1 == 1;}.
 Below is the console output after running \ic{make test} in the generated source
 folder for the solution:
 
-\begin{code}
+\begin{lstlisting}[language=mbeddr, morekeywords={}]
+
 runningTest: running test @AddTest:test_testAddInt:0
 FAILED: ***FAILED*** @AddTest:test_testAddInt:2
   testID = 1
 runningTest: running test @AddTest:test_testAddFloat:0
 make: *** [test] Error 1
-\end{code}
+\end{lstlisting}
 
 If you change the assertion to \ic{assert(1) -1 + 1 == 0;}, rebuild with
 \keystroke{Ctrl-F9} and rerun \keystroke{make test} you will get the following
 output, which has no errors:
 
-\begin{code}
+\begin{lstlisting}[language=mbeddr, morekeywords={}]
+
 runningTest: running test @AddTest:test_testAddInt:0
 runningTest: running test @AddTest:test_testAddFloat:0
-\end{code}
+\end{lstlisting}
 
  
 Test cases can of course call arbitrary functions. However, as we have stated
@@ -259,7 +266,8 @@ be marked as a \ic{test helper} using an intention. \ic{assert} and \ic{fail}
 can be used within test helper functions. Test helpers must be called \emph{directly}
 from test cases!
 
-\begin{code}
+\begin{lstlisting}[language=mbeddr, morekeywords={}]
+
 exported test case testAddFloat { 
   assert(0) 1 + 2 == 3; 
   moreStuff(10, 20, 30); 
@@ -269,7 +277,7 @@ test helper
 void moreStuff(int8_t x, int8_t y, int8_t z) { 
   assert(0) x + y == z; 
 } 
-\end{code}
+\end{lstlisting}
  
 
 \subsection{Primitive Numeric Datatypes}
@@ -293,38 +301,38 @@ default values, you can use an intention on the \ic{TypeSizeConfiguration}.
   \includegraphics[width=7cm]{figures/core/AddDefaultTSC.png}
 \end{center}
 
-\paragraph{Integral Types} The following integral types are not allowed in
+\parhead{Integral Types} The following integral types are not allowed in
 implementation modules, and can only be used in external modules for
-compatibility: \lcr{char, short, int, long, long long}, as well as their
+compatibility: \ic{char, short, int, long, long long}, as well as their
 unsigned counterparts. The following list shows the default mapping of the C99
 types:
 
 \begin{itemize}
-	\item \lcr{int8\_t} $\rightarrow$ \lcr{char}
+	\item \ic{int8\_t} $\rightarrow$ \ic{char}
 	\vspace{-4mm}
-	\item \lcr{int16\_t} $\rightarrow$ \lcr{short}
+	\item \ic{int16\_t} $\rightarrow$ \ic{short}
 	\vspace{-4mm}
-	\item \lcr{int32\_t} $\rightarrow$ \lcr{int}
+	\item \ic{int32\_t} $\rightarrow$ \ic{int}
 	\vspace{-4mm}
-	\item \lcr{int64\_t} $\rightarrow$ \lcr{long long}
+	\item \ic{int64\_t} $\rightarrow$ \ic{long long}
 	\vspace{-4mm}
-	\item \lcr{uint8\_t} $\rightarrow$ \lcr{unsigned char}
+	\item \ic{uint8\_t} $\rightarrow$ \ic{unsigned char}
 	\vspace{-4mm}
-	\item \lcr{uint16\_t} $\rightarrow$ \lcr{unsigned short}
+	\item \ic{uint16\_t} $\rightarrow$ \ic{unsigned short}
 	\vspace{-4mm}
-	\item \lcr{uint32\_t} $\rightarrow$ \lcr{unsigned int}
+	\item \ic{uint32\_t} $\rightarrow$ \ic{unsigned int}
 	\vspace{-4mm}
-	\item \lcr{uint64\_t} $\rightarrow$ \lcr{unsigned long long}
+	\item \ic{uint64\_t} $\rightarrow$ \ic{unsigned long long}
 \end{itemize}
 
-\paragraph{Floating Point Types} The size of floating point types
+\parhead{Floating Point Types} The size of floating point types
 can alsoi be speficied, e.g. if they differ from the IEEE754 sizes.
 \begin{itemize}
-	\item \lcr{float} $\rightarrow$ \lcr{32}
+	\item \ic{float} $\rightarrow$ \ic{32}
 	\vspace{-4mm}
-	\item \lcr{double} $\rightarrow$ \lcr{64}
+	\item \ic{double} $\rightarrow$ \ic{64}
 	\vspace{-4mm}
-	\item \lcr{long double} $\rightarrow$ \lcr{128}
+	\item \ic{long double} $\rightarrow$ \ic{128}
 \end{itemize}
 
 
@@ -340,7 +348,8 @@ We do provide a (red, ugly) cast operator between integers and booleans for
 interop with legacy code. The following example shows the usage of the Boolean
 data type.
 
-\begin{code}
+\begin{lstlisting}[language=mbeddr, morekeywords={}]
+
 module BooleanDatatype from HelloWorld.BooleanDatatype imports nothing { 
   exported test case booleanTest { 
     boolean b = false; 
@@ -350,7 +359,7 @@ module BooleanDatatype from HelloWorld.BooleanDatatype imports nothing {
     assert(2) int2bool<1> == true;
   }  
 }
-\end{code}
+\end{lstlisting}
 
 
 \subsection{Literals}
@@ -360,7 +369,8 @@ numbers. The type of the literal is the smallest possible signed integer type
 (\ic{int8\_t}, \ldots, \ic{int64\_t}) that can represent the number.
 
 
-\begin{code}
+\begin{lstlisting}[language=mbeddr, morekeywords={}]
+
 module LiteralsApp imports nothing { 
    
   exported test case testLiterals { 
@@ -374,7 +384,7 @@ module LiteralsApp imports nothing {
     assert(2) intFromBin == 307; 
   }  
 }
-\end{code}
+\end{lstlisting}
 
 All number literals, including decimal literals are signed by default. A suffix
 \ic{u} can be added to make them unsigned.
@@ -387,13 +397,14 @@ is a characteristic of a type, not of a variable.
 
 
 
-\paragraph{Pointer Arithmetics} For pointer arithmetics you have to use an
+\parhead{Pointer Arithmetics} For pointer arithmetics you have to use an
 explicit type conversion \ic{pointer2int} and \ic{int2pointer}, as illustrated
 in the following code. You can also see the usage of pointer dereference
 (\ic{*xp}) and assigning an address with \ic{\&}.
 
 
-\begin{code}
+\begin{lstlisting}[language=mbeddr, morekeywords={}]
+
 module BasicPointer imports stdlib {  
   
   exported test case testBasicPointer { 
@@ -413,7 +424,7 @@ module BasicPointer imports stdlib {
   }   
   ...
 }
-\end{code}
+\end{lstlisting}
 
 
 Memory allocation works the same way as in regular C except that you need an
@@ -421,19 +432,21 @@ external module to call functions such as \ic{malloc} from \ic{stdlib}. The next
 example illustrates how to do this. Note that \ic{size\_t} is a primitive type,
 built into mbeddr. It's size is also defined in a \ic{TypeSizeConfiguration}.
 
-\begin{code}
+\begin{lstlisting}[language=mbeddr, morekeywords={}]
+
 external module stdlib resources header : <stdlib.h> 
 { 
   void* malloc(size_t size); 
   void free(void* pointer); 
 }
-\end{code}
+\end{lstlisting}
 
 You have to include the external module \ic{stdlib} in your implementation
 module with \ic{imports stdlib}. You can then call \ic{malloc} or \ic{free}:
 
 
-\begin{code}
+\begin{lstlisting}[language=mbeddr, morekeywords={}]
+
 module BasicPointer imports stdlib {    
   ...
   exported test case mallocTest { 
@@ -443,10 +456,10 @@ module BasicPointer imports stdlib {
     free(mem); 
   } 
 }
-\end{code}
+\end{lstlisting}
 
 
-\paragraph{Function Pointers} In regular C, you define a function pointer type
+\parhead{Function Pointers} In regular C, you define a function pointer type
 like this: \ic{int (*pt2Function) (int, int)}. The first part is the return
 type, followed by the name und a comma separated argument type list. The pointer
 asterisk is added before the name. This is a rather ugly notation. In mbeddr, we
@@ -461,7 +474,7 @@ separeted by \ic{=>} (a little bit like Scala). Here is an example:
 \ic{(int32\_t, int32\_t)=>(int32\_t)} You can enter a fuction type by using the
 \ic{funtype} alias,  (see figure below). Function types are types, so they can
 be used in function signatures, local variables or \ic{typedef}s, just like any
-other type (see example \em{HelloWorld.Pointer.FunctionPointerAsTypes}).
+other type (see example \ic{HelloWorld.Pointer.FunctionPointerAsTypes}).
 
 \begin{center} 
   \includegraphics[width=7cm]{figures/core/AddFunctionPointer.png}
@@ -476,7 +489,8 @@ this means that the signature must be the same. The following example shows the
 use of function references:
 
 
-\begin{code}
+\begin{lstlisting}[language=mbeddr, morekeywords={}]
+
 module FunctionPointer imports nothing { 
    
   int32_t add(int32_t a, int32_t b) { 
@@ -500,7 +514,7 @@ module FunctionPointer imports nothing {
     assert(1) pt2Function(20, 10) == 10; 
   } 
 }
-\end{code}
+\end{lstlisting}
 
 To initialize a function reference to "nothing", please use the \ic{noop}
 expression.
@@ -515,7 +529,8 @@ first parameter.
 
 
 
-\begin{code}
+\begin{lstlisting}[language=mbeddr, morekeywords={}]
+
 module FunctionPointerAsTypes imports nothing { 
    
   typedef (int32_t, int32_t)=>(int32_t) as ftype; 
@@ -533,14 +548,15 @@ module FunctionPointerAsTypes imports nothing {
     return operation(firstOp, secondOp); 
   } 
 }
-\end{code}
+\end{lstlisting}
 
 Lambdas are also supported. Lambdas are essentially functions without a name.
 They are defined as a value and can be assigned to variables or passed to a
 function. The syntax for a lambda is \ic{[arg1, arg2,
 \ldots|an-expression-using-args]}. The following is an example:
 
-\begin{code}
+\begin{lstlisting}[language=mbeddr, morekeywords={}]
+
 module Lambdas imports nothing { 
    
   typedef (int32_t, int32_t)=>(int32_t) as ftype; 
@@ -553,7 +569,7 @@ module Lambdas imports nothing {
     return operation(firstOp, secondOp); 
   } 
 }
-\end{code}
+\end{lstlisting}
 
 There are also two helpful intentions: one extracts a \ic{typedef} with the
 respective function type from an existing \ic{Function}. The other one, when
@@ -571,7 +587,8 @@ enumerations.
 "enum arithmetics" are necessary}.
 \todo{What is the current state?}
 
-\begin{code}
+\begin{lstlisting}[language=mbeddr, morekeywords={}]
+
 module EnumerationApp imports nothing { 
    
   enum SEASON { SPRING; SUMMER; AUTUMN; WINTER; } 
@@ -583,7 +600,7 @@ module EnumerationApp imports nothing {
     assert(1) season == WINTER; 
   } 
 }
-\end{code}
+\end{lstlisting}
 
 
 \subsection{Goto}
@@ -610,7 +627,8 @@ example shows the usage of arrays in mbeddr C, incl. multi-dimensional arrays.
 Their usage is equivalent to regular C.
 
 
-\begin{code}
+\begin{lstlisting}[language=mbeddr, morekeywords={}]
+
 module ArrayApplication imports nothing { 
    
   exported test case arrayTest { 
@@ -622,16 +640,17 @@ module ArrayApplication imports nothing {
     assert(1) array2[1][1] == 4; 
   }  
 }
-\end{code}
+\end{lstlisting}
 
 
 \subsection{Structs and Unions}
 
-\paragraph{Initialization} We support initialization expressions for
+\parhead{Initialization} We support initialization expressions for
 \ic{struct}s and \ic{union}s. Both are quite close to regular C. Here is the one
 for \ic{struct}s:
 
-\begin{code} 
+\begin{lstlisting}[language=mbeddr, morekeywords={}]
+ 
 struct Point { 
   int8_t x; 
   int8_t y; 
@@ -641,12 +660,13 @@ Point p = {
   10, 
   20 
 }; 
-\end{code}
+\end{lstlisting}
 
 The one for \ic{union}s is a bit different from regular C, since it does mot
 require the leading dot before the referenced member:
 
-\begin{code}
+\begin{lstlisting}[language=mbeddr, morekeywords={}]
+
 union U { 
   int8_t m1; 
   boolean m2; 
@@ -654,15 +674,16 @@ union U {
  
 U u1 = {m1 = 10}; 
 U u3 = {m2 = true}; 
-\end{code}
+\end{lstlisting}
 
-\paragraph{The \ic{with} \textbf{Statement}} Just like Pascal, mbeddr C supports
+\parhead{The \ic{with} \textbf{Statement}} Just like Pascal, mbeddr C supports
 a \ic{with} statement for \ic{struct}s that avoids repeating the context
 expression\footnote{Note that since the generator generates code that evaluates the
 context expression several times, the context expression must be idempotent. An
 error is reported if that is not the case.}. Here is an example:
 
-\begin{code}
+\begin{lstlisting}[language=mbeddr, morekeywords={}]
+
 struct Point { 
   int8_t x; 
   int8_t y; 
@@ -672,7 +693,7 @@ with (aPoint) {
   x = 10 
   y = 20 
 }; 
-\end{code}
+\end{lstlisting}
 
 The \ic{with} statement resides in the \ic{core.util} language. 
 
@@ -702,7 +723,8 @@ example (\ic{active} refers to the fact that these messages have not been
 disabled; use the corresponding intentions on the messages to enable/disable
 each message).
 
-\begin{code}
+\begin{lstlisting}[language=mbeddr, morekeywords={}]
+
 module Reporting imports nothing { 
    
   message list demo { 
@@ -717,7 +739,7 @@ module Reporting imports nothing {
     return 0; 
   } 
 }
-\end{code}
+\end{lstlisting}
  
 Note how the first report statement outputs the message in all cases. The second
 one only outputs the message if a condition is met.
@@ -732,41 +754,44 @@ runtime. This will be added in the future.}
 
 
 
-\paragraph{Counting Message Calls} Sometimes it is useful to be able to find out
+\parhead{Counting Message Calls} Sometimes it is useful to be able to find out
 if and how often a message was actually reported. This is particularly useful
 in testing when you want to find out whether a message (which is supposed to
 report some kind of error) was actually called (and hence the error actually
 occured). To count message calles, you have to mark the particular message as
 \ic{count}ed via an intention:
 
-\begin{code}
+\begin{lstlisting}[language=mbeddr, morekeywords={}]
+
 message list CalcMessages { 
   WARN ppcfailed(int8_t operation, int8_t ppc) active (count): ppc failed 
 } 
-\end{code}
+\end{lstlisting}
 
 You can then use the \ic{messagecount} expression to retrieve the count:
 
-\begin{code}
+\begin{lstlisting}[language=mbeddr, morekeywords={}]
+
 exported test case testComputer { 
   computer.add(1, 1); 
   assert(0) messagecount(CalcMessages.ppcfailed) == 0; 
 } 
-\end{code}
+\end{lstlisting}
 
 
-\paragraph{Finding the Node that reported a Message} Reporting is used to report
+\parhead{Finding the Node that reported a Message} Reporting is used to report
 failed assertions in tests and other problems with program execution.
 Efficiently finding the node that reported a message (eg. a failed assertion) is
 important. There are two ways to do this. The first one includes the location
 string. Here is the default output of a report message:
 
-\begin{code}
+\begin{lstlisting}[]
+
 ./TestHelperTest
 $$runningTest: running test () @TestHelperTest:test_testCase1:0#767515563077315487
 $$FAILED: ***FAILED*** (testID=0) @TestHelperTest:f:0#9125142491355884683
 $$FAILED: ***FAILED*** (testID=1) @TestHelperTest:f:1#9125142491355901742 
-\end{code}\ignore{$$}
+\end{lstlisting}
 
 Each message starts of with the \ic{\$\$}. Next is the error message and the
 list of message parameters. After the @ sign we the message shows the message
@@ -800,18 +825,19 @@ You can update the error output text in the text area at any time; press the
 button with the two green arrows to refresh the found nodes on the right.
 
 
-\paragraph{Logging Expressions} For debugging purposes it is often useful to log
+\parhead{Logging Expressions} For debugging purposes it is often useful to log
 expressions without manually creating a message and a report statement. To this
 end, the log expression can be used. Here is some example code:
 
-\begin{code}
+\begin{lstlisting}[language=mbeddr, morekeywords={}]
+
 exported test case testLogExpressions { 
   int8_t x = 3; 
   int8_t y = log:0<x>; 
   int8_t z = log:1<3 + log:2<x>>; 
   int8_t zz = 3 * log:3<x>; 
 } 
-\end{code}
+\end{lstlisting}
 
 The log expression \ic{log:n<...>}, where \ic{n} is the index of the log
 expression reported in the output, can be attached to any expression \emph{except
@@ -831,7 +857,7 @@ The former retains the AST structure of code, but wraps it in a comment. The
 latter supports adding prose text to program elements.
 
 
-\paragraph{Commenting out Code} Code that is commented out retains its syntax
+\parhead{Commenting out Code} Code that is commented out retains its syntax
 highlighting, but is shaded with a grey background. 
 
 \begin{center} 
@@ -858,7 +884,7 @@ statements and module contents.
 
 
 
-\paragraph{Documentation} mbeddr supports comments. There are several kinds of
+\parhead{Documentation} mbeddr supports comments. There are several kinds of
 comments that can be used: single line statement comments, multi-line statement
 comments and element documentations.
 
@@ -895,7 +921,7 @@ dialog for convenient editing), but it is attached to (and hence moves around
 with) a program element. Currently, all statements and module contents can be
 annotated with an element documentation.
 
-\paragraph{TODOs} mbeddr comes with a special view for collecting and showing
+\parhead{TODOs} mbeddr comes with a special view for collecting and showing
 TODOs in comments. Anywhere within the comments discussed above, you can write
 \ic{TODO and then some text} or \ic{TODO(category) and then some text} (see
 next screenshot):

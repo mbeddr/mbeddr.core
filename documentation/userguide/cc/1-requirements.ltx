@@ -51,18 +51,18 @@ To extend the requirements framework, create a new language that extends
 \ic{com.mbeddr.cc.requirements}. Then, use this language in the project that
 manages your requirements.
 
-\paragraph{A new Link} To create a new link, create a concept that extends
+\parhead{A new Link} To create a new link, create a concept that extends
 \ic{RequirementsLink}. It base class already comes with a pointer to the target
 requirement. Just define the concept and an alias.
 
-\paragraph{A new Kind} To create a new requirements kind, extend
+\parhead{A new Kind} To create a new requirements kind, extend
 \ic{RequirementsKind} and define an alias. 
 
 \begin{center} 
   \includegraphics[width=12cm]{figures/cc/reqkind.png}
 \end{center}
 
-\paragraph{A new Additional Specification} Defining new additional
+\parhead{A new Additional Specification} Defining new additional
 specifications (such as the \ic{timing} specification mentioned above) happens
 in two steps. First you have to create a new concept that extends
 \ic{RequirementsData}. It should contain any additional structure you need
@@ -85,13 +85,13 @@ specific additional data) can be created by extending the
 method. As an example, here is the code for the \ic{name contains substring}
 filter:
 
-\begin{code}
+\begin{lstlisting}[language=mps]
 public boolean matches(node<Requirement> r) 
   overrides RequirementsFilter.matches { 
   if (this.substring == null || this.substring.equals("")) { return true; } 
   r.name.contains(this.substring); 
 }                                                                                                                                                                                                        
-\end{code}
+\end{lstlisting}
 
 A similar facility exists for summarizing requirements. The only currently
 implemented summarizer counts the requirements (taking the filters into
@@ -119,9 +119,9 @@ is of course project specific. Hence this mapping is modularized by an
 \ic{IRequirementsMapper}. You have to create an implementing concept for your
 project. In the respective behavior you have to implement the following method:
 
-\begin{code}
+\begin{lstlisting}[language=mps]
 public virtual abstract boolean map(string[] elements, node<Requirement> req);                                                                           
-\end{code}
+\end{lstlisting}
 
 The framework passes in a CSV line (as an string array) as well as a new
 \ic{Requirement}. The implementation of the method has to fill the requirement
@@ -132,11 +132,11 @@ element\footnote{The ID is important because when you reimport a CSV file, the
 \ic{Requirement} nodes for existing requirements are kept the same so references
 to it do not break.}:
 
-\begin{code}
+\begin{lstlisting}[language=mps]
 public virtual string extractID(string[] elements, boolean dummy) { 
   elements[0]; 
 }
-\end{code}
+\end{lstlisting}
 
 The second optional method \ic{getParentRequirement} returns the requirement
 under which the newly created one should be attached. This is the way to
@@ -144,12 +144,12 @@ construct requirement trees. It defaults to \ic{null} which means that the new
 requirement has no parent --- it is added to the requirements module on top
 level.
 
-\begin{code}
+\begin{lstlisting}[language=mps]
 public virtual node<Requirement> getParentRequirement(
      node<RequirementsModule> rm, node<Requirement> req, string[] elements) { 
   return null; 
 }
-\end{code}
+\end{lstlisting}
 
 
 

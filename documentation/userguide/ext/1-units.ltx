@@ -30,57 +30,64 @@ your model.
 Once the devkit is included, types can be annotated with physical units. We have
 defined the seven SI units in mbeddr:
 
-\begin{code}
+\begin{lstlisting}[language=mbeddr, morekeywords={}]
+
 int8_t/m/ length; 
 int8_t/s/ time; 
-\end{code}
+\end{lstlisting}
 
 \noindent It is also possible to define composite units. To add additional
 components press enter after the first one (the \ic{m} in the example below):
 
-\begin{code}
+\begin{lstlisting}[language=mbeddr, morekeywords={}]
+
           -1
 int8_t/m s  / speed; 
-\end{code}
+\end{lstlisting}
 
 \noindent To change the exponent, use intentions on the unit. Types with units
 can also be \ic{typedef}'ed to make using them more convenient:
 
-\begin{code}
+\begin{lstlisting}[language=mbeddr, morekeywords={}]
+
                   -1
 typedef int8_t/m s  / as speed_t; 
-\end{code}
+\end{lstlisting}
 
 \noindent If you want to assign a value to the variable, you have to use
 literals with units, otherwise you will get compile errors:
 
-\begin{code} 
+\begin{lstlisting}[language=mbeddr, morekeywords={}]
+ 
 int8_t/m/ length = 3 m; 
-\end{code}
+\end{lstlisting}
 
 \noindent Note that units are computed correctly:
 
-\begin{code}
+\begin{lstlisting}[language=mbeddr, morekeywords={}]
+
 speed_t aSpeed = 10 m / 5 s;
 speed_t anotherSpeed = 10 m + 5 s; // error; adding apples and oranges 
-\end{code}
+\end{lstlisting}
 
 \noindent Of course, the type system is fully aware of the types and ``pulls
 them through'':
 
-\begin{code}
+\begin{lstlisting}[language=mbeddr, morekeywords={}]
+
 int8_t/m/ someLength;
 int8_t/m/ result = 10 m + someLength;
-\end{code}
+\end{lstlisting}
 
 \noindent To get values ``into'' and out of the units world, you can use the
 \ic{stripunit} and \ic{introduceunit} expressions:
 
-\begin{code}
+\begin{lstlisting}[language=mbeddr, morekeywords={}]
+
 int8_t/m/ someLength = 10 m;
 int8_t justSomeValue = stripunit[someLength];
 int8_t/m/ someLength = introduceunit[justSomeValue -> m];
-\end{code}
+\end{lstlisting}
 
 
 \subsection{Derived Units}
@@ -121,10 +128,11 @@ conversion produced runtime overhead. Instead, an explicit conversion has to be
 used which relies on the conversion rule defined in the units container. A
 conversion can be added with an intention.
 
-\begin{code}
+\begin{lstlisting}[language=mbeddr, morekeywords={}]
+
 int8_t/F/ tempInF = 10 F; 
 int8_t/C/ tempInC = [tempInF -> C]; 
-\end{code}
+\end{lstlisting}
 
 
 \subsection{Extension with new Units}
@@ -134,43 +142,48 @@ such as money, time or coordinate systems. To achieve this, you have to define
 new elementary unit declarations in a languge extension. Here is some example
 code with coordinate systems:
 
-\begin{code}
+\begin{lstlisting}[language=mbeddr, morekeywords={}]
+
 int8_t/#global/ aGlobalVariable = 10#global; 
 int8_t/K/ aTemp = aGlobalVariable; // error; #global != K 
 aGlobalVariable = 10K; // error; #global != K 
 aGlobalVariable = 230#local; // error; #global != #local 
-\end{code}
+\end{lstlisting}
 
 \noindent In the example above, \ic{\#global} and \ic{\#local} are two different
 coordinate systems; technically, both are subtypes of \ic{ElementaryUnitDeclaration}:
 
-\begin{code}
+\begin{lstlisting}[language=mbeddr, morekeywords={}]
+
 concept GlobalCoords extends ElementaryUnitDeclaration
                      implements <none>                
   concept properties:                                 
     alias = #global                                     
-\end{code}
+\end{lstlisting}
 
 \noindent Even though these are not technically \emph{convertible} units, we can
 still define conversion rules:
 
-\begin{code}
+\begin{lstlisting}[language=mbeddr, morekeywords={}]
+
 Conversion Rules 
   conversion #global -> #local = val + 20 
   conversion #local -> #global = val - 20 
-\end{code}
+\end{lstlisting}
 
 \noindent The C code can then use conversions as shown above:
 
-\begin{code}
+\begin{lstlisting}[language=mbeddr, morekeywords={}]
+
 int8_t/#local/ aLocalVariable = 20#local; 
 aGlobalVariable = [aLocalVariable -> #global]; 
-\end{code}
+\end{lstlisting}
 
 \noindent The coordinate systems extension is especially useful if combined with a
 new type and literal, for example, for vectors:
 
-\begin{code}
+\begin{lstlisting}[language=mbeddr, morekeywords={}]
+
 intvec/#global/ globalVector = (10,20)#global; 
 intvec/#local/ localVector = (20,20)#global; 
-\end{code} 
+\end{lstlisting} 

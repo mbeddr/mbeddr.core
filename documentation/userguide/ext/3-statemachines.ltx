@@ -11,7 +11,8 @@ The following is the simplest possible state machine. It has one state and one
 in event. Whenever it receives the \ic{reset} event, it goes back to its single
 state \ic{start}. In other words, it does nothing.
 
-\begin{code}
+\begin{lstlisting}[language=mbeddr, morekeywords={}]
+
 statemachine WrappingCounter { 
   in events 
     reset() 
@@ -20,7 +21,7 @@ statemachine WrappingCounter {
       on reset [ ] -> start {  } 
     } 
 }                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
-\end{code}
+\end{lstlisting}
 
 \todo{Can use all types; bounded only when verifiable}
 
@@ -34,21 +35,23 @@ Events can have arguments; they are declared along with the event. Notice how
 the \ic{int} type requires the specification of bounds. This is to simplify
 model checking.
 
-\begin{code}
+\begin{lstlisting}[language=mbeddr, morekeywords={}]
+
 in events: 
   reset()
   increment(int[0..10] delta) 
-\end{code}
+\end{lstlisting}
 
 A state machine can also have local variables. While these could in principle be
 handled via separate states, local variables are more scalable.
 
-\begin{code}
+\begin{lstlisting}[language=mbeddr, morekeywords={}]
+
 local variables
   int[0..100] current = 0 
   int[0..100] LIMIT = 100 
   int[0..100] steps = 0 
-\end{code}
+\end{lstlisting}
 
 We are now ready to write a somewhat more sensible \ic{WrappingCounter} state
 machine. Whenever we enter the \ic{start} state, we set the \ic{current}
@@ -59,7 +62,8 @@ the \ic{current} value by the \ic{delta}, passed in via the event. Notice how in
 transition actions we can access the arguments of the event that triggered the
 respective transition.
 
-\begin{code}
+\begin{lstlisting}[language=mbeddr, morekeywords={}]
+
 state start { 
   entry { 
     current = 0; 
@@ -68,20 +72,21 @@ state start {
   on increment [ ] -> increasing { current = current + delta; } 
   on reset [ ] -> start {  } 
 } 
-\end{code}
+\end{lstlisting}
 
 Let us look at the \ic{increasing} state. There we also react to the
 \ic{increment} event. But we use guard conditions to determine which transition
 fires. We can also access event arguments in the guard condition.
 
-\begin{code}
+\begin{lstlisting}[language=mbeddr, morekeywords={}]
+
 state increasing { 
   entry { steps++; } 
   on increment [current + delta <= LIMIT] -> increasing { current = current + delta; } 
   on increment [current + delta > LIMIT] -> start { current = 0; } 
   on reset [ ] -> start {  } 
 } 
-\end{code}
+\end{lstlisting}
 
 
 
@@ -90,38 +95,43 @@ state increasing {
 State machines can be instantiated. They act as a type, so they can be used in
 local variables, arguments or in global variables:
 
-\begin{code}
+\begin{lstlisting}[language=mbeddr, morekeywords={}]
+
 var WrappingCounter wc; 
-\end{code}
+\end{lstlisting}
 
 The \ic{trigger} statement is used to ``inject'' events from regular C code.
 Notice how we pass in the argument to the \ic{increment} event. 
 
-\begin{code}
+\begin{lstlisting}[language=mbeddr, morekeywords={}]
+
 void someFunctionCalledByADriver(int8_t ticks) { 
   trigger(wc, increment(ticks)); 
 }  
-\end{code}
+\end{lstlisting}
 
 State machines can also have out events. These are a means to define abstractly
 some kind of interaction with the environment. Currently, they can be bound to a
 C function:
 
-\begin{code}
+\begin{lstlisting}[language=mbeddr, morekeywords={}]
+
 out events
   wrapped(int[0..100] steps) -> wrapped 
-\end{code}
+\end{lstlisting}
 
 These out events can then be fired from an action in the state machine, for
 example, in the exit action of the \ic{increasing} state:
 
-\begin{code}
+\begin{lstlisting}[language=mbeddr, morekeywords={}]
+
 exit { send wrapped(steps); }
-\end{code}
+\end{lstlisting}
 
 \subsection{The complete WrappingCounter state machine}
 
-\begin{code}
+\begin{lstlisting}[language=mbeddr, morekeywords={}]
+
 module WrappingCounterModule imports nothing { 
    
   statemachine WrappingCounter { 
@@ -162,7 +172,7 @@ module WrappingCounterModule imports nothing {
     trigger(wc, increment(ticks)); 
   } 
 }
-\end{code}
+\end{lstlisting}
 
 
 \subsection{Testing State Machines}
@@ -171,7 +181,8 @@ In addition to model checking (discussed in the chapter on analyses) state
 machines can also be checked regularly. The following piece of test code checks
 if the state machine works correctly:
 
-\begin{code}
+\begin{lstlisting}[language=mbeddr, morekeywords={}]
+
 exported test case testTheWrapper { 
   trigger(wc, reset); 
   assert(0) isInState(wc, start); 
@@ -180,7 +191,7 @@ exported test case testTheWrapper {
   assert(2) wc.current == 5; 
   assert(3) wc.steps == 1;
 }  
-\end{code}
+\end{lstlisting}
 
 Notice that in order to be able to access the variables \ic{current} and
 \ic{steps} from outside the state machine, these variables have to be marked as
@@ -189,7 +200,8 @@ Notice that in order to be able to access the variables \ic{current} and
 There is also a shorthand for checking if a state machine reacts correctly to
 events in terms of the new current state:
 
-\begin{code}
+\begin{lstlisting}[language=mbeddr, morekeywords={}]
+
 exported test case testTheWrapper { 
   ... 
   test statemachine wc { 
@@ -199,4 +211,4 @@ exported test case testTheWrapper {
     increment(10) -> start 
   } 
 }  
-\end{code}
+\end{lstlisting}

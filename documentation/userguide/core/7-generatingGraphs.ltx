@@ -15,7 +15,8 @@ generators.}
 A call graph shows the \emph{call} relationships between functions. Here is an
 example program:
 
-\begin{code}
+\begin{lstlisting}[language=mbeddr, morekeywords={}]
+
 module Module1 { 
    
   void function1() { 
@@ -43,7 +44,7 @@ module Module1 {
     return 0; 
   } 
 }
-\end{code}
+\end{lstlisting}
 
 Here is the resulting call graph diagram we are going to create in this chapter:
 
@@ -87,37 +88,41 @@ to create a new \ic{Node} for each function in each module in the executable
 created by the build configuration from which we generate the graph. So we first
 create a \ic{node} object (that's a \ic{node} from the \ic{graph} language):
 
-\begin{code}
+\begin{lstlisting}[language=mbeddr, morekeywords={}]
+
 node function id someID (shape: rect t:"function") style normal
-\end{code}
+\end{lstlisting}
 
 We specify an arbitrary name (\ic{function}), an arbitrary ID (\ic{someID}), we
 use a \ic{rect} as the shape, a \ic{normal} style and a label that is also
 arbitrary (\ic{"function"}). Then we attach a \ic{LOOP} macro. It is used to
 iterate over all relevant functions using the following \ic{LOOP} code:
 
-\begin{code}
+\begin{lstlisting}[language=mbeddr, morekeywords={}]
+
 sequence<node<Binary>> allExecutables = 
   node.binaries.where({~it => it.isInstanceOf(Executable);}).
   ofType<node<Executable>>; sequence<node<Module>> 
 allModules = allExecutables.
   selectMany({~it => it.referencedModules.module; }); 
 allModules.selectMany({~it => it.descendants<concept = Function>; });
-\end{code}
+\end{lstlisting}
 
 We then use a property macro on the function name that uses the qualified name
 of the function as the name of the node:
 
-\begin{code}
+\begin{lstlisting}[language=mbeddr, morekeywords={}]
+
 node.qualifiedName().replaceAll("\\.", "_");
-\end{code}
+\end{lstlisting}
 
 We put the function's internal node ID as the ID of the created graph node using
 another property macro:
 
-\begin{code}
+\begin{lstlisting}[language=mbeddr, morekeywords={}]
+
 node.adapter.getId();
-\end{code}
+\end{lstlisting}
 
 We use another property macro for the label of the node that also contains the
 qualified name of the function. Next up, we have to create an out edge for each
@@ -141,9 +146,10 @@ specify the target; we use the same \ic{function} node defined above as the
 target, and then use a reference macro (\ic{->}) to "rewire" the edge to its
 actual target node. Here is the expression in the reference macro:
 
-\begin{code}
+\begin{lstlisting}[language=mbeddr, morekeywords={}]
+
 node.function.qualifiedName().replaceAll("\\.", "_");
-\end{code}
+\end{lstlisting}
 
 That's all we need to do in the generator template.
 

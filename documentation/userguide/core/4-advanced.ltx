@@ -4,7 +4,8 @@ mbeddr C models can be generated to C code from the command line using \ic{ant}.
 The \ic{HelloWorld} project comes with an example ant file: in the project
 root directory, you can find a \ic{build.xml} ant file:
 
-\begin{code}
+\begin{lstlisting}[language=mbeddr, morekeywords={}]
+
 <project name="HelloWorld" default="build">
 
   <property file="build.properties"/>
@@ -23,34 +24,37 @@ root directory, you can find a \ic{build.xml} ant file:
   </target>
 
 </project>  
-\end{code}
+\end{lstlisting}
 
 It uses the \ic{mps.generate} task provided with MPS. All the code is
 boilerplate, except these two lines:
 
-\begin{code}
+\begin{lstlisting}[language=mbeddr, morekeywords={}]
+
 <project file="\${mbeddr.home}/code/applications/HelloWorld/HelloWorld.mpr"/>
 <library name="mbeddr" dir="\${mbeddr.home}/code/languages"/> 
-\end{code}
+\end{lstlisting}
 
 The first line specifies the project whose contents should be generated. We
 point to the \ic{HelloWorld.mpr} project in our case. If you only want to
 generate parts of a project (only some solutions or models), take a look at this
 article:
 
-\begin{code}
+\begin{lstlisting}[language=mbeddr, morekeywords={}]
+
 http://confluence.jetbrains.net/display/MPSD2/HowTo+--+MPS+and+ant 
-\end{code}
+\end{lstlisting}
 
 The second line points to the directory that contains all the languages used by the to-be-generated project. 
 
 To make it work, you also have to provide a \ic{build.properties} file to
 define two path variables: 
 
-\begin{code}
+\begin{lstlisting}[language=mbeddr, morekeywords={}]
+
 mps.home=/some/path/to/MPS2.5/
 mbeddr.home=/the/path/to/mbeddr/
-\end{code}
+\end{lstlisting}
 
 Assuming you have installed \ic{ant}, you can simply type \ic{ant} at the
 command prompt in the directory that contains the \ic{build.xml} file.
@@ -59,7 +63,8 @@ machine). However, most of the time is startup and loading all the languages, so
 having a bigger program won't make much of a difference. The output should look
 like this:
 
-\begin{code}
+\begin{lstlisting}[]
+
 ~/Documents/mbeddr/mbeddr.core/code/applications/HelloWorld (master)$ ant 
 Buildfile: mbeddr.core/code/applications/HelloWorld/build.xml
 
@@ -75,7 +80,7 @@ build:
 
 BUILD SUCCESSFUL
 Total time: 41 seconds
-\end{code}\ignore{$}
+\end{lstlisting}
 
 You can now run \ic{make} to build the executable. 
 
@@ -89,7 +94,7 @@ MPS-specific.
 
 We assume the following setup: you work on your local machine with a clone of an
 existing git repository. It is connected to one upstream repository by the name
-of \lcr{origin}.
+of \ic{origin}.
 
 \subsection{Preliminaries}
 
@@ -108,19 +113,20 @@ MPS comes with a special merge driver for git (as well as for SVN) that makes
 sure MPS models are merged correctly. This merge driver has to be configured in
 the local git settings. In the MPS version control menu there is an entry
 \emph{Install Version Control AddOn}. Make sure you execute this menu entry
-before proceeding any further. As a result, your \lcr{.gitconfig} should contain
+before proceeding any further. As a result, your \ic{.gitconfig} should contain
 an entry such as this one:
 
-\begin{code}
+\begin{lstlisting}[language=mbeddr, morekeywords={}]
+
 [merge "mps"]
 	name = MPS merge driver
 	driver = "\"/Users/markus/.MPS25/config/mps-merger.sh\" %O %A %B %L"
-\end{code}
+\end{lstlisting}
 
 
 \subsubsection{The .gitignore}
 
-For all projects, the \lcr{.iws} file should be added to \lcr{.gitignore}, since
+For all projects, the \ic{.iws} file should be added to \ic{.gitignore}, since
 this contains the local configuration of your project and should not be shared
 with others.
 
@@ -132,20 +138,20 @@ is necessary after updating your code from the VCS, so this results in a
 faster workflow. 
 
 If you decide \emph{not} to check in temporary Java source files, the following
-directories and files should be added to the \lcr{.gitignore} in your local
+directories and files should be added to the \ic{.gitignore} in your local
 repo:
 
 \begin{itemize}
-  \item For languages: \lcr{source\_gen}, \lcr{source\_gen.caches} and 
-  \lcr{classes\_gen}
+  \item For languages: \ic{source\_gen}, \ic{source\_gen.caches} and 
+  \ic{classes\_gen}
   \item For solutions, if those are Java/BaseLanguage solutions, then the same
   applies as for languages. If these are other solutions to which the
-  MPS-integrated Java build does not apply, then \lcr{source\_gen} and
-  \lcr{source\_gen.caches} should be added, plus whatever else your own build
+  MPS-integrated Java build does not apply, then \ic{source\_gen} and
+  \ic{source\_gen.caches} should be added, plus whatever else your own build
   process creates in terms of temporary files.
 \end{itemize}
 
-Make sure the \lcr{.history} files are \emph{not} added to the \lcr{gitignore}!
+Make sure the \ic{.history} files are \emph{not} added to the \ic{gitignore}!
 These are important for MPS-internal refactorings.
 
 \subsubsection{MPS' caches and Branching}
@@ -156,7 +162,7 @@ good. But it has one problem: If you change the branch, your source files
 change, while the caches are still in the \emph{old} state. This leads to all
 kinds of problems. So, as a rule, whenever you change a branch (that is not
 just trivially different from the one you have used so far), make sure you
-select \lcr{File -> Invalidate Caches}, restart and rebuild your project.
+select \ic{File -> Invalidate Caches}, restart and rebuild your project.
 
 Depending on the degree of change, this may also be advisable after pulling from
 the remote repository.
@@ -178,37 +184,38 @@ this change to the latest checked in state.
 \end{center}
 
 
-In addition you can use the \lcr{Changes} view (from the \lcr{Window -> Tool
+In addition you can use the \ic{Changes} view (from the \ic{Window -> Tool
 Windows} menu) to look at the set of changed files. In my case
-(\fig{changesview}) it is basically one \lcr{.mps} file (plus two files realted
-to writing this document :-)). This \lcr{.mps} file contains the test case to
+(\fig{changesview}) it is basically one \ic{.mps} file (plus two files realted
+to writing this document :-)). This \ic{.mps} file contains the test case to
 which I have added the new variable.
 
 \begin{center} 
   \includegraphics[width=12cm]{figures/core/changesview.jpg}
 \end{center}
 
-To commit your work, you can now select \lcr{Version Control -> Commit Changes}.
+To commit your work, you can now select \ic{Version Control -> Commit Changes}.
 The resulting dialog, again, shows you all the changes you have made and you can
-choose which one to include in your commit. After committing, your \lcr{git
+choose which one to include in your commit. After committing, your \ic{git
 status} will look something like this and you are ready to push:
 
-\begin{code}
+\begin{lstlisting}[language=mbeddr, morekeywords={}]
+
 Markus-Voelters-MacBook:lwes-assembla markus$ git status
 # On branch demo
 # Your branch is ahead of 'assembla/demo' by 1 commit.
 #
 nothing to commit (working directory clean)
 Markus-Voelters-MacBook-Air:lwes-assembla markus$ 
-\end{code}
+\end{lstlisting}
 
 \subsection{Pulling and Merging}
 
 Pulling (or merging) from a remote repository or another branch is when you
 potentially get merge conflicts. I usually perform all these operations from the
 command line. If you run into merge conflicts, they should be resolved from
-within MPS. After the pull or merge, the \lcr{Changes} view will highlight
-conflicting files in red. You can right-click onto it and select the \lcr{Git
+within MPS. After the pull or merge, the \ic{Changes} view will highlight
+conflicting files in red. You can right-click onto it and select the \ic{Git
 -> Merge Tool} option. This will bring up a merge tool on the level of the
 projectional editor to resolve the conflict. Please take a look at the
 screencast at \\ 
@@ -218,8 +225,8 @@ screencast at \\
 The process described above and in the video works well for MPS model files.
 However, you may also get conflicts in project, language or solution files.
 These are XML files, but cannot be edited with the projectional editor. Also,
-if one of these files has conflicts and contains the \lcr{< < < <} and
-\lcr{> > > >} merge markers, then MPS cannot open these files anymore because
+if one of these files has conflicts and contains the \ic{< < < <} and
+\ic{> > > >} merge markers, then MPS cannot open these files anymore because
 the XML parser stumbles over these merge markers.
 
 I have found the following two approaches to work:
@@ -231,7 +238,7 @@ I have found the following two approaches to work:
   to open the project again in MPS.
   \item Alternatively you can merge or pull while the project is open (so the
   XML files are already parsed). You can then identify those conflicing files
-  via the \lcr{Changes} view and merge them on XML-level with the MPS merge
+  via the \ic{Changes} view and merge them on XML-level with the MPS merge
   tool. After merging a project file, MPS prompts you that the file has been
   changed on disk and suggests to reload it. You should do this.
 \end{itemize}
@@ -246,52 +253,53 @@ account what has been discussed above. Here is the process I use.
 
 To develop a feature, I create a feature branch with 
 
-\begin{code}
+\begin{lstlisting}[language=mbeddr, morekeywords={}]
 git branch newFeature
 git checkout newFeature
-\end{code}
+\end{lstlisting}
 
 I then immediately push this new branch to the remote repository as a backup,
 and to allow other people to contribute to the branch. I use
 
-\begin{code}
+\begin{lstlisting}[language=mbeddr, morekeywords={}]
 git push -u origin newFeature
-\end{code}
+\end{lstlisting}
 
-Using the \lcr{-u} parameter sets up the branch for remote tracking.
+Using the \ic{-u} parameter sets up the branch for remote tracking.
 
 I then work locally on the branch, committing changes in a fine-grained way.
 I regularly push the branch to the remote repo. In less regular intervals I pull
 in the changes from the master branch to make sure I don't diverge too far from
 what happens on the master. I use merge for this:
 
-\begin{code}
+\begin{lstlisting}[language=mbeddr, morekeywords={}]
 git checkout master
 git pull                   // this makes sure the master is current
 git checkout myFeature
 git merge master    
-\end{code}
+\end{lstlisting}
 
 Alternatively you can also use
 
-\begin{code}
+\begin{lstlisting}[language=mbeddr, morekeywords={}]
 git fetch
 git checkout myFeature
 git merge origin/master    
-\end{code}
+\end{lstlisting}
 
 
 This is the time when conflicts occur and have to be handled. In repeat this
 process until my feature is finished. I then merge my changes back on the
 master:
 
-\begin{code}
+\begin{lstlisting}[language=mbeddr, morekeywords={}]
+
 git checkout master
 git pull                   // this makes sure the master is current
 git merge --squash myFeature    
-\end{code}
+\end{lstlisting}
 
-Notice the \lcr{--squash} option. This allows me to "package" all of the commits
+Notice the \ic{--squash} option. This allows me to "package" all of the commits
 that I have created on my local branch into a single commit with a meaningful
 comment such as "initial version of myFeature finished".
 
