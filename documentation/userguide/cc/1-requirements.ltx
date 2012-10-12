@@ -197,7 +197,9 @@ facilities.
   \item The root concept that contains the \ic{ITraceTarget}s must implement the
   \ic{ITraceTargetProvider} and implement the method \ic{allTraceTargets}.
   \item In addition, you have to create a concept that extends
-  \ic{TraceTargetProvider-\\RefAttr}. It references \ic{ITraceTargetProvider}s. 
+  \ic{TraceTargetProvider-\\RefAttr}. It references \ic{ITraceTargetProvider}s.
+  \item Finally you have to implement a subconcept of \ic{TraceTargetRef} that
+  represents the actual reference to the new kind of target. 
 \end{itemize}
 
 Here is how the whole system works: You attach a \ic{TraceAnnotation} to a

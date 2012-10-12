@@ -4,7 +4,7 @@
   <devkit namespace="f2792d40-14b9-4136-b555-a71460eb1873(com.mbeddr.archdec)" />
   <devkit namespace="a4dac888-0788-4852-b4c0-f386bf6f2c0b(com.mbeddr.cc.reqtrace)" />
   <import index="hc9b" modelUID="r:d0a310b8-925a-4261-9525-2bc0aabfc556(test.ts.cc.archdec.requirements)" version="-1" />
-  <import index="n80h" modelUID="r:7d46a182-8703-4db2-b9ab-f79dbf9bfffc(com.mbeddr.cc.archdec.structure)" version="2" implicit="yes" />
+  <import index="n80h" modelUID="r:7d46a182-8703-4db2-b9ab-f79dbf9bfffc(com.mbeddr.cc.archdec.structure)" version="3" implicit="yes" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="26ao" modelUID="r:7c15925b-a4a5-4da3-88aa-931a5a9ed982(com.mbeddr.cc.trace.structure)" version="3" implicit="yes" />
   <roots>
@@ -29,6 +29,9 @@
         <node role="problem" roleId="n80h.8433683602660520072" type="n80h.MLText" typeId="n80h.8433683602660520066" id="8433683602661380130" />
         <node role="arguments" roleId="n80h.8433683602660536523" type="n80h.MLText" typeId="n80h.8433683602660520066" id="8433683602661380131" />
         <node role="state" roleId="n80h.8433683602660536534" type="n80h.ADStateApproved" typeId="n80h.8433683602660442724" id="8433683602661380134" />
+        <node role="groups" roleId="n80h.8433683602660557700" type="n80h.GroupRef" typeId="n80h.8433683602660557692" id="4837632670852890520">
+          <link role="group" roleId="n80h.8433683602660557693" targetNodeId="8433683602660589768" resolveInfo="Whatever Group" />
+        </node>
       </node>
       <node role="versions" roleId="n80h.8433683602660512004" type="n80h.ADVersion" typeId="n80h.8433683602660512002" id="8433683602661385745">
         <property name="created" nameId="n80h.8433683602661337527" value="Oct 3, 2012 7:41:32 AM" />
@@ -91,13 +94,13 @@
         </node>
       </node>
       <node role="influences" roleId="n80h.4941245409091229947" type="n80h.RequirementsInfluene" typeId="n80h.4837632670852826015" id="4837632670852871922">
-        <link role="req" roleId="n80h.4837632670852826016" targetNodeId="hc9b.4837632670852810465" resolveInfo="HDiesIstEinReq" />
+        <link role="req" roleId="n80h.4837632670852826016" targetNodeId="hc9b.4837632670852945016" resolveInfo="F1" />
         <node role="description" roleId="n80h.4837632670852826028" type="n80h.MLText" typeId="n80h.8433683602660520066" id="4837632670852871923">
           <property name="text" nameId="n80h.8433683602660520067" value="Hier ist ein Kommentar" />
         </node>
       </node>
       <node role="influences" roleId="n80h.4941245409091229947" type="n80h.RequirementsInfluene" typeId="n80h.4837632670852826015" id="4837632670852890518">
-        <link role="req" roleId="n80h.4837632670852826016" targetNodeId="hc9b.4837632670852890514" resolveInfo="ANotherReq" />
+        <link role="req" roleId="n80h.4837632670852826016" targetNodeId="hc9b.4837632670852945018" resolveInfo="F2" />
         <node role="description" roleId="n80h.4837632670852826028" type="n80h.MLText" typeId="n80h.8433683602660520066" id="4837632670852890519">
           <property name="text" nameId="n80h.8433683602660520067" value="Mit Kommentar" />
         </node>
@@ -121,6 +124,14 @@
       <node role="influences" roleId="n80h.4941245409091229947" type="n80h.ForceInfluence" typeId="n80h.4941245409091229927" id="4837632670852810471">
         <link role="force" roleId="n80h.4941245409091229928" targetNodeId="4941245409091229922" resolveInfo="SomeForce" />
         <node role="description" roleId="n80h.4837632670852826028" type="n80h.MLText" typeId="n80h.8433683602660520066" id="4837632670852810472" />
+      </node>
+      <node role="influences" roleId="n80h.4941245409091229947" type="n80h.RequirementsInfluene" typeId="n80h.4837632670852826015" id="4837632670852890523">
+        <link role="req" roleId="n80h.4837632670852826016" targetNodeId="hc9b.4837632670852945016" resolveInfo="F1" />
+        <node role="description" roleId="n80h.4837632670852826028" type="n80h.MLText" typeId="n80h.8433683602660520066" id="4837632670852890524" />
+      </node>
+      <node role="influences" roleId="n80h.4941245409091229947" type="n80h.RequirementsInfluene" typeId="n80h.4837632670852826015" id="4837632670852890527">
+        <link role="req" roleId="n80h.4837632670852826016" targetNodeId="hc9b.4837632670852945018" resolveInfo="F2" />
+        <node role="description" roleId="n80h.4837632670852826028" type="n80h.MLText" typeId="n80h.8433683602660520066" id="4837632670852890528" />
       </node>
       <node role="versions" roleId="n80h.8433683602660512004" type="n80h.ADVersion" typeId="n80h.8433683602660512002" id="8433683602661400020">
         <property name="created" nameId="n80h.8433683602661337527" value="Oct 3, 2012 7:52:50 AM" />
