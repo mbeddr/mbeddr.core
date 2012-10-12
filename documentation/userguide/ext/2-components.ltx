@@ -18,7 +18,7 @@ sets of functions, \ic{enum}s, \ic{typedef}s etc. into different \ic{.c} and
 To use the components in your C programs, please include the
 \ic{com.mbeddr.components} devkit.
 
-\subsubsection{Interfaces} An interface is essentially a set of operation
+\parhead{Interfaces} An interface is essentially a set of operation
 signatures, similar to function prototypes in C.
 \ic{query} marks functions as not performing any state changes; they are assumed
 to be invokable any number of times without side effects (something we do not
@@ -72,8 +72,8 @@ they must return \ic{void}.
 
 A required port can be marked (via an intention) as \ic{multiple} which means
 that a single required port can be connected to \emph{several} provided ports.
-The number of provided ports in can be connected to must be specified in the
-port:
+We call such a port a \emph{multi-port}. The number of provided ports in can be
+connected to must be specified in the port:
 
 \begin{lstlisting}[language=mbeddr]
 exported component Subject { 
@@ -81,6 +81,9 @@ exported component Subject {
 }
 \end{lstlisting}
 
+\greyboxnote{Currently multi ports can only be used with interfaces that have
+\emph{only} \ic{void} operations (it is not clear what to do with a collection
+of retuen values).}
 
 Components can be instantiated. Each component instance generally must get all
 its required ports connected to provided ports provided by other instances.

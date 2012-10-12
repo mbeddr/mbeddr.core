@@ -45,7 +45,7 @@ section. This way, large sets of requirements can be modularized.
 
 
 
-\subsubsection{Extending the Requirements Language}
+\parhead{Extending the Requirements Language}
 
 To extend the requirements framework, create a new language that extends
 \ic{com.mbeddr.cc.requirements}. Then, use this language in the project that
@@ -180,11 +180,12 @@ these elements to the copied requirement.
 A trace can have a kind. By default, the kind is \ic{trace}. However, the kind
 can be changed (\keystroke{Ctrl-Space} on the \ic{trace} keyword.)
  
-\subsubsection{Extending the Trace Facilities}
+\subsubsection{Extending the Trace Facilities} 
 
-New trace kinds can be added by creating a new language that extends
-\ic{com.mbeddr.cc.trace}, using that language from your application code, 
-and defining a new concept that extends \ic{TraceKind}.
+New trace kinds can be added by
+creating a new language that extends \ic{com.mbeddr.cc.trace}, using that
+language from your application code, and defining a new concept that extends
+\ic{TraceKind}.
 
 
 \subsection{Other Traceables}
