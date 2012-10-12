@@ -9,11 +9,9 @@ a \ic{.gv} file, which is then picked up by the graphview for rendering.
 \greyboxnote{This section assumes that you have a basic understanding of MPS
 generators.}
 
-\noindent The example code for this chapter can be found in
-\ic{code/applications/Callgraph}.
-
-A call graph shows the \emph{call} relationships between functions. Here is an
-example program:
+The example code for this chapter can be found in
+\ic{code/applications/Callgraph}. A call graph shows the \emph{call}
+relationships between functions. Here is an example program:
 
 \begin{lstlisting}[language=mbeddr, morekeywords={}]
 module Module1 { 
@@ -147,15 +145,13 @@ node.function.qualifiedName().replaceAll("\\.", "_");
 
 That's all we need to do in the generator template.
 
-\subsection{Generator Priorities}
-
-We have to make sure that our generator runs at the right time during the
-overall, multistep transformation process. To make our lives simple, we simple
-have it run at the same time as the generator that create the module
-dependencies. It runs as part of every transformation by default. So we open the
-generator properties of the generator we just wrote and specify a dependency to
-the \ic{com.mbeddr.core.buildconfig} generator (it is the one creating the
-module dependency graph). 
+\parhead{Generator Priorities} We have to make sure that our generator runs at
+the right time during the overall, multistep transformation process. To make our
+lives simple, we simple have it run at the same time as the generator that
+create the module dependencies. It runs as part of every transformation by
+default. So we open the generator properties of the generator we just wrote and
+specify a dependency to the \ic{com.mbeddr.core.buildconfig} generator (it is
+the one creating the module dependency graph).
 
 \begin{center} 
   \includegraphics[width=9cm]{figures/core/graph6.png}

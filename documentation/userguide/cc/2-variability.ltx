@@ -1,7 +1,5 @@
 \section{Variability}
 
-\subsection{Overview}
-
 Product line engineering involves the coordinated construction of several
 related, but different products. Each product is typically referred to as a
 \emph{variant}. The product variants within a product line have a lot in common,
@@ -31,10 +29,9 @@ three languages:
 
 \subsection{Feature Models and Configurations}
 
-\subsubsection{Defining a Feature Model}
-
-Feature models express configuration options and the constraints between them.
-They are usually represented with a graphical notation. An example is below.
+\parhead{Defining a Feature Model} Feature models express configuration options
+and the constraints between them. They are usually represented with a graphical
+notation. An example is below.
 
 
 \begin{center} 
@@ -77,15 +74,13 @@ use a surround intention to wrap a new feature around an existing one.
 
 
 
-\subsubsection{Defining Configurations}
-
-The point of a feature model is to define and constrain the configuration space
-of a product. If a product configuration would just be expressed by a bunch of
-boolean variables, the configuration space would grow quickly, with $2^n$, where
-$n$ is the number of boolean config switches. With feature models, constraints
-are expressed over the features, defining what are valid configurations. This
-limits the space explosion and allows interesting analyses that will be provided
-in later releases.
+\parhead{Defining Configurations} The point of a feature model is to define and
+constrain the configuration space of a product. If a product configuration would
+just be expressed by a bunch of boolean variables, the configuration space would
+grow quickly, with $2^n$, where $n$ is the number of boolean config switches.
+With feature models, constraints are expressed over the features, defining what
+are valid configurations. This limits the space explosion and allows interesting
+analyses that will be provided in later releases.
 
 Let us now look at how to define a product variant as a set of selected
 features. Below are two examples:
@@ -102,15 +97,15 @@ model, errors will be shown.
 Feature models and configurations can be defined in a root concept called
 \ic{VariabilitySupport}. It lives in the \ic{com.mbeddr.cc.var.fm} language.
 
-\subsection{Presence Conditions}
+\subsection{Connecting implementation Artifacts}
 
-A presence condition is an annotation on a program element that specifies, under
-which conditions the program element is part of a product variant. To do so, the
-presence condition contains a boolean expression over the configuration
-features. For example the two \ic{report} statements and the message list in
-the screenshot below are only in the program, if the \ic{logging} feature is
-selected. \ic{logging} is a feature defined in the feature model \ic{FM} that is
-referenced by this root node. 
+\parhad{Presence Conditions} A presence condition is an annotation on a program
+element that specifies, under which conditions the program element is part of a
+product variant. To do so, the presence condition contains a boolean expression
+over the configuration features. For example the two \ic{report} statements and
+the message list in the screenshot below are only in the program, if the
+\ic{logging} feature is selected. \ic{logging} is a feature defined in the
+feature model \ic{FM} that is referenced by this root node.
 
 \begin{center} 
   \includegraphics[width=8cm]{figures/cc/examplecode1.png}
@@ -130,12 +125,11 @@ The background color of an annotated note is computed from the expression.
 Several annotated nodes that use the same expression will have the same color
 (an idea borrowed from Christian Kaestner's CIDE).
 
-\subsection{Replacements}
-
-A presence condition is basically like an \ic{\#ifdef}: the node to which it is
-attached will \emph{not} be in the resulting system if the presence condition is
-\emph{false}. But sometimes you want to \emph{replace} something with something
-else if a certain feature condition is met. You can use replacements for that.
+\parhead{Replacements} A presence condition is basically like an \ic{\#ifdef}:
+the node to which it is attached will \emph{not} be in the resulting system if
+the presence condition is \emph{false}. But sometimes you want to \emph{replace}
+something with something else if a certain feature condition is met. You can use
+replacements for that.
 
 
 \begin{center} 
@@ -148,13 +142,11 @@ function call and the \ic{10} are both replaced with a \ic{42}. Note that you'll
 get an error if you try to replace a node with something that is not
 structurally compatible, or has the wrong type.
 
-\subsection{Attribute Injection}
-
-We have seen that features can have attributes and configurations specify values
-for these attributes. These values can be injected into programs. The attributes
-of those features that are used in ancestors of the current node are in scope
-and can be used. A type check is performed and errors are reported if the type
-is not compatible.
+\parhead{Attribute Injection} We have seen that features can have attributes and
+configurations specify values for these attributes. These values can be injected
+into programs. The attributes of those features that are used in ancestors of
+the current node are in scope and can be used. A type check is performed and
+errors are reported if the type is not compatible.
 
 \begin{center} 
   \includegraphics[width=8cm]{figures/cc/examplecode3.png}
@@ -185,30 +177,35 @@ node.
 
 Building variable systems is a little bit tricky. The problem is that you will
 want to build different variants at the same time. To make the C build simple,
-each variant should live in its own directory. If you want to generate into
-different directories with MPS, you need different models. This results in the
+each variant should live in its own moel. This results in the
 following setup:
 
-\begin{itemize}
-  \item You create one or more models that contains your product line artifacts,
-  i.e. the program code, the feature models and the configurations.
-  \item Then, for each variant you want to build, you create yet another model.
-  This model imports the product line model (the one above). In this model you
-  will have a build configuration that determines the variant that will be
-  built.
-\end{itemize}
+You create one or more models that contains your product line artifacts, i.e.
+the program code, the feature models and the configurations. Then, for each
+variant you want to build, you create yet another model. This model imports the
+models that contain the product line artifacts. 
 
-The screenshot below shows an example of such as setup with one
-product line model (\ic{fm}) and two variant models \ic{v\_debug} and \ic{v\_production}. 
 
-\begin{center} 
-  \includegraphics[width=15cm]{figures/cc/build.png}
-\end{center}
+In each variant model you will have a build configuration that determines the
+variant that will be built. It does so by including a configuration item:
 
-Each of the product models contains a \ic{BuildConfiguration} that specifies the
-structure of the binary. In addition, the \ic{BuildConfiguration} has an
-\ic{VariabilityTransformationConfiguration} attached to it. It determines which
-configuration should be used for each feature model (\ic{Debug} in the
-example). You can attach on of these to a build config using an intention, but
-you need the \ic{com.mbeddr.cc.var.buildconfig} language for that.
+\begin{lstlisting}[language=mbeddr]
+Build System: 
+  ... 
+
+Configuration Items 
+  variability mappings { 
+    fm DeploymentConfiguration -> Debug 
+  } 
+ 
+Binaries 
+  executable App isTest: true { 
+    ... 
+  }
+\end{lstlisting} 
+                                                                                                                                                                                                                                                                                                                                          << ... >>                                                                                                                                                                  
+
+This configuration item determines which configuration should be used for each
+feature model (\ic{Debug} in the example). To add thit item, you need to use
+the \ic{com.mbeddr.cc.var.buildconfig} language in your model.
 

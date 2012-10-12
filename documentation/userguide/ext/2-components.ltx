@@ -36,7 +36,7 @@ exported interface DriveTrain  {
 }
 \end{lstlisting}
 
-\subsubsection{Components} Components can provide and require interfaces via
+\parhead{Components} Components can provide and require interfaces via
 \emph{ports}. A \emph{provided} port means that the component implements the
 provided interface's operations, and clients can invoke them. These invocations
 happen via required ports. A \emph{required} port expresses an expectation of a
@@ -85,16 +85,17 @@ exported component Subject {
 \emph{only} \ic{void} operations (it is not clear what to do with a collection
 of retuen values).}
 
-Components can be instantiated. Each component instance generally must get all
-its required ports connected to provided ports provided by other instances.
-However, a required port may be marked as \ic{optional} (this is toggled via an
-intention), in which case, for a given instance, the required port may
-\emph{not} be connected. Invocations on this required port make no sense in this
-case, which is why code invoking operations on an optional port must be wrapped
-in a \ic{when connected (optionalReqPort) \{ .. \}} statement. The body of the
-\ic{when connected} is not executed if the port is not connected. The IDE
-reports an error at editing time if an invocation on an optional port is \emph{not} wrapped
-this way.
+
+Components can be instantiated. Each component instance
+generally must get all its required ports connected to provided ports provided
+by other instances. However, a required port may be marked as \ic{optional}
+(this is toggled via an intention), in which case, for a given instance, the
+required port may \emph{not} be connected. Invocations on this required port
+make no sense in this case, which is why code invoking operations on an optional
+port must be wrapped in a \ic{when connected (optionalReqPort) \{ .. \}}
+statement. The body of the \ic{when connected} is not executed if the port is
+not connected. The IDE reports an error at editing time if an invocation on an
+optional port is \emph{not} wrapped this way.
 
 
 
@@ -157,7 +158,7 @@ exported component OrienterImpl extends nothing {
 \end{lstlisting}
 
 
-\subsubsection{Instantiation} A key difference of mbeddr components compared to C++
+\parhead{Instantiation} A key difference of mbeddr components compared to C++
 classes is that mbeddr component instances are assumed to be allocated and
 connected during program startup (embedded software typically allocates all
 memory at program startup to avoid failing during execution), not at arbitrary
@@ -220,7 +221,9 @@ void main() {
 
 
 
-\subsubsection{Transformation Configuration} Components must be able to work
+\subsection{Transformation Configuration} 
+
+Components must be able to work
 potentially with various off-the-shelf middleware solutions such as AUTOSAR.
 In this case, components will have to be translated differently. Consequently,
 the transformation for components has to be configured. This happens --- like

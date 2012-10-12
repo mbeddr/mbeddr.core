@@ -19,6 +19,7 @@
 \usepackage{verbatim}
 \usepackage{beramono}
 \usepackage{color}
+\usepackage{framed}
 
 \definecolor{gray}{rgb}{0.3,0.3,0.3}
 \definecolor{lightlightgray}{gray}{0.9}
@@ -26,7 +27,20 @@
 \definecolor{javadocblue}{rgb}{0,0,0.8} % javadoc
 \definecolor{blackblack}{rgb}{0,0,0}
 
-\newcommand{\greyboxnote}[1]{\textbf{Note: }{#1}\blacktriangleleft}
+\definecolor{shadecolor}{gray}{0.9}
+
+\newcommand{\greyboxnote}[1]
+{
+  \fbox{ 
+    \begin{minipage}{0.97\columnwidth}
+    \small{\textbf{Note: }{#1}\blacktriangleleft}
+    \end{minipage}
+  }
+}
+
+
+
+
 
  
 \lstset{
