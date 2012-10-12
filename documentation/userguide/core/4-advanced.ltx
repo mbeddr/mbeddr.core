@@ -5,7 +5,6 @@ The \ic{HelloWorld} project comes with an example ant file: in the project
 root directory, you can find a \ic{build.xml} ant file:
 
 \begin{lstlisting}[language=mbeddr, morekeywords={}]
-
 <project name="HelloWorld" default="build">
 
   <property file="build.properties"/>
@@ -30,7 +29,6 @@ It uses the \ic{mps.generate} task provided with MPS. All the code is
 boilerplate, except these two lines:
 
 \begin{lstlisting}[language=mbeddr, morekeywords={}]
-
 <project file="\${mbeddr.home}/code/applications/HelloWorld/HelloWorld.mpr"/>
 <library name="mbeddr" dir="\${mbeddr.home}/code/languages"/> 
 \end{lstlisting}
@@ -41,7 +39,6 @@ generate parts of a project (only some solutions or models), take a look at this
 article:
 
 \begin{lstlisting}[language=mbeddr, morekeywords={}]
-
 http://confluence.jetbrains.net/display/MPSD2/HowTo+--+MPS+and+ant 
 \end{lstlisting}
 
@@ -51,7 +48,6 @@ To make it work, you also have to provide a \ic{build.properties} file to
 define two path variables: 
 
 \begin{lstlisting}[language=mbeddr, morekeywords={}]
-
 mps.home=/some/path/to/MPS2.5/
 mbeddr.home=/the/path/to/mbeddr/
 \end{lstlisting}
@@ -64,7 +60,6 @@ having a bigger program won't make much of a difference. The output should look
 like this:
 
 \begin{lstlisting}[]
-
 ~/Documents/mbeddr/mbeddr.core/code/applications/HelloWorld (master)$ ant 
 Buildfile: mbeddr.core/code/applications/HelloWorld/build.xml
 
@@ -117,7 +112,6 @@ before proceeding any further. As a result, your \ic{.gitconfig} should contain
 an entry such as this one:
 
 \begin{lstlisting}[language=mbeddr, morekeywords={}]
-
 [merge "mps"]
 	name = MPS merge driver
 	driver = "\"/Users/markus/.MPS25/config/mps-merger.sh\" %O %A %B %L"
@@ -200,7 +194,6 @@ choose which one to include in your commit. After committing, your \ic{git
 status} will look something like this and you are ready to push:
 
 \begin{lstlisting}[language=mbeddr, morekeywords={}]
-
 Markus-Voelters-MacBook:lwes-assembla markus$ git status
 # On branch demo
 # Your branch is ahead of 'assembla/demo' by 1 commit.
@@ -293,7 +286,6 @@ process until my feature is finished. I then merge my changes back on the
 master:
 
 \begin{lstlisting}[language=mbeddr, morekeywords={}]
-
 git checkout master
 git pull                   // this makes sure the master is current
 git merge --squash myFeature    

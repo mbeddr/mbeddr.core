@@ -31,7 +31,6 @@ Once the devkit is included, types can be annotated with physical units. We have
 defined the seven SI units in mbeddr:
 
 \begin{lstlisting}[language=mbeddr, morekeywords={}]
-
 int8/m/ length; 
 int8/s/ time; 
 \end{lstlisting}
@@ -40,7 +39,6 @@ int8/s/ time;
 components press enter after the first one (the \ic{m} in the example below):
 
 \begin{lstlisting}[language=mbeddr, morekeywords={}]
-
           -1
 int8/m s  / speed; 
 \end{lstlisting}
@@ -49,7 +47,6 @@ int8/m s  / speed;
 can also be \ic{typedef}'ed to make using them more convenient:
 
 \begin{lstlisting}[language=mbeddr, morekeywords={}]
-
                   -1
 typedef int8/m s  / as speed_t; 
 \end{lstlisting}
@@ -58,14 +55,12 @@ typedef int8/m s  / as speed_t;
 literals with units, otherwise you will get compile errors:
 
 \begin{lstlisting}[language=mbeddr, morekeywords={}]
- 
 int8/m/ length = 3 m; 
 \end{lstlisting}
 
 \noindent Note that units are computed correctly:
 
 \begin{lstlisting}[language=mbeddr, morekeywords={}]
-
 speed_t aSpeed = 10 m / 5 s;
 speed_t anotherSpeed = 10 m + 5 s; // error; adding apples and oranges 
 \end{lstlisting}
@@ -74,7 +69,6 @@ speed_t anotherSpeed = 10 m + 5 s; // error; adding apples and oranges
 them through'':
 
 \begin{lstlisting}[language=mbeddr, morekeywords={}]
-
 int8/m/ someLength;
 int8/m/ result = 10 m + someLength;
 \end{lstlisting}
@@ -83,7 +77,6 @@ int8/m/ result = 10 m + someLength;
 \ic{stripunit} and \ic{introduceunit} expressions:
 
 \begin{lstlisting}[language=mbeddr, morekeywords={}]
-
 int8/m/ someLength = 10 m;
 int8 justSomeValue = stripunit[someLength];
 int8/m/ someLength = introduceunit[justSomeValue -> m];
@@ -129,7 +122,6 @@ used which relies on the conversion rule defined in the units container. A
 conversion can be added with an intention.
 
 \begin{lstlisting}[language=mbeddr, morekeywords={}]
-
 int8/F/ tempInF = 10 F; 
 int8/C/ tempInC = [tempInF -> C]; 
 \end{lstlisting}
@@ -143,7 +135,6 @@ new elementary unit declarations in a languge extension. Here is some example
 code with coordinate systems:
 
 \begin{lstlisting}[language=mbeddr, morekeywords={}]
-
 int8/#global/ aGlobalVariable = 10#global; 
 int8/K/ aTemp = aGlobalVariable; // error; #global != K 
 aGlobalVariable = 10K; // error; #global != K 
@@ -154,7 +145,6 @@ aGlobalVariable = 230#local; // error; #global != #local
 coordinate systems; technically, both are subtypes of \ic{ElementaryUnitDeclaration}:
 
 \begin{lstlisting}[language=mbeddr, morekeywords={}]
-
 concept GlobalCoords extends ElementaryUnitDeclaration
                      implements <none>                
   concept properties:                                 
@@ -165,7 +155,6 @@ concept GlobalCoords extends ElementaryUnitDeclaration
 still define conversion rules:
 
 \begin{lstlisting}[language=mbeddr, morekeywords={}]
-
 Conversion Rules 
   conversion #global -> #local = val + 20 
   conversion #local -> #global = val - 20 
@@ -174,7 +163,6 @@ Conversion Rules
 \noindent The C code can then use conversions as shown above:
 
 \begin{lstlisting}[language=mbeddr, morekeywords={}]
-
 int8/#local/ aLocalVariable = 20#local; 
 aGlobalVariable = [aLocalVariable -> #global]; 
 \end{lstlisting}
@@ -183,7 +171,6 @@ aGlobalVariable = [aLocalVariable -> #global];
 new type and literal, for example, for vectors:
 
 \begin{lstlisting}[language=mbeddr, morekeywords={}]
-
 intvec/#global/ globalVector = (10,20)#global; 
 intvec/#local/ localVector = (20,20)#global; 
 \end{lstlisting} 

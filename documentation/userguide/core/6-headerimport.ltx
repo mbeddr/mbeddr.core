@@ -53,7 +53,6 @@ implementation module you can now add \ic{stdio}. In the main function you can
 now use, for example, \ic{printf}:
 
 \begin{lstlisting}[language=mbeddr, morekeywords={}]
-
 module UsingIO imports stdio { 
    
   int32 main(int32 argc, int8*[] argv) { 
@@ -67,8 +66,6 @@ To make the program run, you also have to add the \ic{stdio} external module to
 the build configuration:
 
 \begin{lstlisting}[language=mbeddr, morekeywords={}]
-
-
 executable UsingIO isTest: false { 
   used libraries 
     << ... >> 
@@ -82,7 +79,6 @@ You can now rebuild the solution and run the generated \ic{make} file from the
 command line:
 
 \begin{lstlisting}
-
 HelloWorld/solutions/HeaderImport/source_gen/HeaderImport/main (master)$ make
 rm -rf ./bin 
 mkdir -p ./bin 
@@ -155,7 +151,6 @@ above.
 \ic{\#defines} at this point. Assume the following example:
 
 \begin{lstlisting}[language=mbeddr, morekeywords={}]
- 
 #define SOMETHING 10 + SOME_OTHER_DEFINE + 3
 \end{lstlisting}
 
@@ -163,7 +158,6 @@ Since we cannot parse such expressions, we represent them as an opaque string in
 the external module, like this:
 
 \begin{lstlisting}[language=mbeddr, morekeywords={}]
-
 exported #define SOMETHING = (void) 10 + SOME_OTHER_DEFINE + 3 
 \end{lstlisting}
 
@@ -175,7 +169,6 @@ integer). To solve this problem, you have to change the type manually in the
 imported external module:
 
 \begin{lstlisting}[language=mbeddr, morekeywords={}]
-
 exported #define SOMETHING = (int8) 10 + SOME_OTHER_DEFINE + 3 
 \end{lstlisting}
 

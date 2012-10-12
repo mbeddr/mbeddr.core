@@ -26,7 +26,6 @@ verify automatically at this time).
 
  
 \begin{lstlisting}[language=mbeddr, morekeywords={}]
-
 exported interface DriveTrain  { 
   void driveForwardFor(uint8 speed, uint32 ms) 
   void driveBackwardFor(uint8 speed, uint32 ms) 
@@ -46,7 +45,6 @@ below shows a component \ic{RobotChassis} that provides the \ic{DriveTrain}
 interface shown above, and requires two instances of \ic{EcRobot\_Motor}.
 
 \begin{lstlisting}[language=mbeddr, morekeywords={}]
-
 exported component RobotChassis { 
 
     provides DriveTrain dt 
@@ -73,15 +71,14 @@ However, a required port may be marked as \ic{optional} (this is toggled via an
 intention), in which case, for a given instance, the required port may
 \emph{not} be connected. Invocations on this required port make no sense in this
 case, which is why code invoking operations on an optional port must be wrapped
-in a \ic{with port (optionalReqPort) \{ .. \}} statement. The body of the
-\ic{with port} is not executed if the port is not connected. The IDE reports an
-error at editing time if an invocation on an optional port is \emph{not} wrapped
+in a \ic{when connected (optionalReqPort) \{ .. \}} statement. The body of the
+\ic{when connected} is not executed if the port is not connected. The IDE
+reports an error at editing time if an invocation on an optional port is \emph{not} wrapped
 this way.
 
 
 
 \begin{lstlisting}[language=mbeddr, morekeywords={}]
-
 exported component RobotChassis { 
 
     provides DriveTrain dt 
@@ -90,7 +87,7 @@ exported component RobotChassis {
     requires optional ILogging log
 
     void dt_driveForwardFor(uint8 speed, uint32 ms) <- op dt.driveForwardFor { 
-      with port(log) {
+      when connected(log) {
         // other stuff
         log.error(...)
         // more other stuff
@@ -100,12 +97,17 @@ exported component RobotChassis {
 }
 \end{lstlisting}
 
+Note that if an invocation is tried on a optional port without wrapping it in a 
+\ic{when connected} statement, mbeddr reports and error. A quick fix is
+available to add the \ic{when connected} statement. \ic{when connected}
+statements can also have an \ic{else} part (using the
+expected syntax).
+
 
 Components can have fields. These get values for each of the component instances
 created:
 
 \begin{lstlisting}[language=mbeddr, morekeywords={}]
-
 exported component OrienterImpl extends nothing { 
   ports:
     ... 
@@ -129,7 +131,6 @@ mechanism can also be used for other events, for example, to react to component
 instantiation. This effectively supports constructors:
 
 \begin{lstlisting}[language=mbeddr, morekeywords={}]
-
 exported component OrienterImpl extends nothing { 
   contents: 
     void init() <- on init { 
@@ -148,7 +149,6 @@ points in the execution of a program (as in C++ classes). The following piece of
 code shows an instance configuration:
 
 \begin{lstlisting}[language=mbeddr, morekeywords={}]
-
 exported instance configuration defaultInstances extends nothing { 
   instance RobotChassis chassis 
   instance EcRobot_Motor_Impl motorLeft(motorAddress = NXT_PORT_B) 
@@ -170,7 +170,6 @@ separately in the startup code of the application, for example, in a \ic{main}
 function:
 
 \begin{lstlisting}[language=mbeddr, morekeywords={}]
-
 int32 main(int32 argc, int8*[ ] argv) { 
   initialize defaultInstances; 
   ... 
@@ -183,7 +182,6 @@ code, adapters can be used. They can be defined inside of instance
 configurations as well as outside of them. Here is an example:
 
 \begin{lstlisting}[language=mbeddr, morekeywords={}]
-
 exported instance configuration instances extends nothing { 
   instances: 
     instance EcRobot_Display_Impl i_display 
@@ -208,7 +206,6 @@ the transformation for components has to be configured. This happens --- like
 any other configuration --- in the \ic{BuildConfiguration}:
 
 \begin{lstlisting}[language=mbeddr, morekeywords={}]
-
 Configuration Items 
   components: no middleware
               wire statically: false          
@@ -229,7 +226,6 @@ performance. To do this, select \ic{wire statically: true}. You then have to
 reference the instance configuration you intend to use:
 
 \begin{lstlisting}[language=mbeddr, morekeywords={}]
-
 components: no middleware                                   
             wire statically: true instance config: instances
 \end{lstlisting}
@@ -241,7 +237,6 @@ You can also make the decision to wire statically (without polymorphism) on a
 port-by-port basis, directly in the component (via an intention):
 
 \begin{lstlisting}[language=mbeddr, morekeywords={}]
-
 requires EcRobot_Compass compass restricted to OrienterImpl.orienter
 \end{lstlisting}
 
@@ -257,7 +252,6 @@ contracts. Operations can specify pre and post conditions, as well as sequencing
 constraints. Here is the interface from above, but with contract specifications:
 
 \begin{lstlisting}[language=mbeddr, morekeywords={}]
-
 exported interface DriveTrain { 
   void driveForwardFor(uint8 speed, uint32 ms) 
     pre(0) speed < 100 
@@ -307,7 +301,6 @@ only. Let us look at an example. Here is an interface and a \ic{struct} used by
 that interface:
 
 \begin{lstlisting}[language=mbeddr, morekeywords={}]
-
   exported struct DataPacket { 
     int8 size; 
     int8* data; 
@@ -326,7 +319,6 @@ behavior via contracts shown above. However, we may also want to test that a
 specific \emph{client} behaves correctly. Here is an example client:
 
 \begin{lstlisting}[language=mbeddr, morekeywords={}]
-
   exported c/s interface Driver { 
     void run() 
   } 
@@ -352,7 +344,6 @@ mock implememtation for the \ic{PersistenceProvider} interface that verifies
 this behavior:
 
 \begin{lstlisting}[language=mbeddr, morekeywords={}]
-
 mock component PersistenceMock { 
   report messages: true 
   ports: 
@@ -379,7 +370,6 @@ Here is a test case that uses an instance of the \ic{Client} shown above. It
 also uses an instance of the \ic{PersistenceMock}:
 
 \begin{lstlisting}[language=mbeddr, morekeywords={}]
-
 exported test case runTest { 
   client.run(); 
   client.run(); 
@@ -402,7 +392,6 @@ calling internal (i.e. "private") runnables that do not have any trigger.
 This is why inside test cases, you can use the direct runnable call expression:
 
 \begin{lstlisting}[language=mbeddr, morekeywords={}]
-
 exported component C extends nothing { 
   contents: 
     int8 count = 0 

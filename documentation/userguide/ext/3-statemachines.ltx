@@ -12,7 +12,6 @@ in event. Whenever it receives the \ic{reset} event, it goes back to its single
 state \ic{start}. In other words, it does nothing.
 
 \begin{lstlisting}[language=mbeddr, morekeywords={}]
-
 statemachine WrappingCounter { 
   in events 
     reset() 
@@ -36,7 +35,6 @@ the \ic{int} type requires the specification of bounds. This is to simplify
 model checking.
 
 \begin{lstlisting}[language=mbeddr, morekeywords={}]
-
 in events: 
   reset()
   increment(int[0..10] delta) 
@@ -46,7 +44,6 @@ A state machine can also have local variables. While these could in principle be
 handled via separate states, local variables are more scalable.
 
 \begin{lstlisting}[language=mbeddr, morekeywords={}]
-
 local variables
   int[0..100] current = 0 
   int[0..100] LIMIT = 100 
@@ -63,7 +60,6 @@ transition actions we can access the arguments of the event that triggered the
 respective transition.
 
 \begin{lstlisting}[language=mbeddr, morekeywords={}]
-
 state start { 
   entry { 
     current = 0; 
@@ -79,7 +75,6 @@ Let us look at the \ic{increasing} state. There we also react to the
 fires. We can also access event arguments in the guard condition.
 
 \begin{lstlisting}[language=mbeddr, morekeywords={}]
-
 state increasing { 
   entry { steps++; } 
   on increment [current + delta <= LIMIT] -> increasing { current = current + delta; } 
@@ -93,20 +88,23 @@ state increasing {
 \subsection{Integrating with C code}
 
 State machines can be instantiated. They act as a type, so they can be used in
-local variables, arguments or in global variables:
+local variables, arguments or in global variables. State machines also have to
+be initialized explictly using the \ic{sminit} statement.
 
 \begin{lstlisting}[language=mbeddr, morekeywords={}]
+WrappingCounter wc; 
 
-var WrappingCounter wc; 
+void someFunction() {
+  sminit(wc);
+}
 \end{lstlisting}
 
-The \ic{trigger} statement is used to ``inject'' events from regular C code.
+The \ic{smtrigger} statement is used to ``inject'' events from regular C code.
 Notice how we pass in the argument to the \ic{increment} event. 
 
 \begin{lstlisting}[language=mbeddr, morekeywords={}]
-
 void someFunctionCalledByADriver(int8 ticks) { 
-  trigger(wc, increment(ticks)); 
+  smtrigger(wc, increment(ticks)); 
 }  
 \end{lstlisting}
 
@@ -115,7 +113,6 @@ some kind of interaction with the environment. Currently, they can be bound to a
 C function:
 
 \begin{lstlisting}[language=mbeddr, morekeywords={}]
-
 out events
   wrapped(int[0..100] steps) -> wrapped 
 \end{lstlisting}
@@ -124,14 +121,12 @@ These out events can then be fired from an action in the state machine, for
 example, in the exit action of the \ic{increasing} state:
 
 \begin{lstlisting}[language=mbeddr, morekeywords={}]
-
 exit { send wrapped(steps); }
 \end{lstlisting}
 
 \subsection{The complete WrappingCounter state machine}
 
 \begin{lstlisting}[language=mbeddr, morekeywords={}]
-
 module WrappingCounterModule imports nothing { 
    
   statemachine WrappingCounter { 
@@ -169,7 +164,7 @@ module WrappingCounterModule imports nothing {
   var WrappingCounter wc; 
    
   void someFunctionCalledByADriver(int8 ticks) { 
-    trigger(wc, increment(ticks)); 
+    smtrigger(wc, increment(ticks)); 
   } 
 }
 \end{lstlisting}
@@ -182,11 +177,10 @@ machines can also be checked regularly. The following piece of test code checks
 if the state machine works correctly:
 
 \begin{lstlisting}[language=mbeddr, morekeywords={}]
-
 exported test case testTheWrapper { 
-  trigger(wc, reset); 
+  smtrigger(wc, reset); 
   assert(0) isInState(wc, start); 
-  trigger(wc, increment(5)); 
+  smtrigger(wc, increment(5)); 
   assert(1) isInState(wc, increasing); 
   assert(2) wc.current == 5; 
   assert(3) wc.steps == 1;
@@ -201,7 +195,6 @@ There is also a shorthand for checking if a state machine reacts correctly to
 events in terms of the new current state:
 
 \begin{lstlisting}[language=mbeddr, morekeywords={}]
-
 exported test case testTheWrapper { 
   ... 
   test statemachine wc { 

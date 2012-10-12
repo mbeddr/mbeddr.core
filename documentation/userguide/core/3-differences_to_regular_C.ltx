@@ -19,6 +19,7 @@ between header and implementation file is not exposed to the programmer. mbeddr
 provides \ic{modules} instead.
 
 
+
 \subsection{Modules}
 \label{modules}
 
@@ -44,7 +45,6 @@ An importing module can access all exported contents defined in imported modules
 
 
 \begin{lstlisting}[language=mbeddr, morekeywords={}]
-
 module ImplementationModule imports nothing { 
    
   exported int32 add(int32 i, int32 j) { 
@@ -123,7 +123,6 @@ its own \ic{source\_gen} directory). To create a library, create a build
 configuration with a \ic{static library}:
 
 \begin{lstlisting}[language=mbeddr, morekeywords={}]
-
 static library MathLib { 
   MyFirstModule 
   MyOtherModule
@@ -153,7 +152,6 @@ MPS model!) requires the following three steps:
   section:
   
 \begin{lstlisting}[language=mbeddr, morekeywords={}]
-
 executable AnExe isTest: true { 
   used libraries 
     MathLib  
@@ -196,7 +194,6 @@ test cases). A \ic{fail} statement is also available --- it fails the test
 unconditionally.
 
 \begin{lstlisting}[language=mbeddr, morekeywords={}]
-
 module AddTest imports nothing { 
    
   exported test case testAddInt { 
@@ -221,7 +218,6 @@ By returning this value from \ic{main}, we get an exit code != 0 in the case a
 test failed.
 
 \begin{lstlisting}[language=mbeddr, morekeywords={}]
-
 module TestSuite from HelloWorld.UnitTests imports AddTest { 
   int32 main() { 
     return test testAddInt, testAddFloat; 
@@ -239,7 +235,6 @@ Below is the console output after running \ic{make test} in the generated source
 folder for the solution:
 
 \begin{lstlisting}[language=mbeddr, morekeywords={}]
-
 runningTest: running test @AddTest:test_testAddInt:0
 FAILED: ***FAILED*** @AddTest:test_testAddInt:2
   testID = 1
@@ -252,7 +247,6 @@ If you change the assertion to \ic{assert(1) -1 + 1 == 0;}, rebuild with
 output, which has no errors:
 
 \begin{lstlisting}[language=mbeddr, morekeywords={}]
-
 runningTest: running test @AddTest:test_testAddInt:0
 runningTest: running test @AddTest:test_testAddFloat:0
 \end{lstlisting}
@@ -267,7 +261,6 @@ can be used within test helper functions. Test helpers must be called \emph{dire
 from test cases!
 
 \begin{lstlisting}[language=mbeddr, morekeywords={}]
-
 exported test case testAddFloat { 
   assert(0) 1 + 2 == 3; 
   moreStuff(10, 20, 30); 
@@ -349,7 +342,6 @@ interop with legacy code. The following example shows the usage of the Boolean
 data type.
 
 \begin{lstlisting}[language=mbeddr, morekeywords={}]
-
 module BooleanDatatype from HelloWorld.BooleanDatatype imports nothing { 
   exported test case booleanTest { 
     boolean b = false; 
@@ -370,7 +362,6 @@ numbers. The type of the literal is the smallest possible signed integer type
 
 
 \begin{lstlisting}[language=mbeddr, morekeywords={}]
-
 module LiteralsApp imports nothing { 
    
   exported test case testLiterals { 
@@ -404,7 +395,6 @@ in the following code. You can also see the usage of pointer dereference
 
 
 \begin{lstlisting}[language=mbeddr, morekeywords={}]
-
 module BasicPointer imports stdlib {  
   
   exported test case testBasicPointer { 
@@ -433,7 +423,6 @@ example illustrates how to do this. Note that \ic{size\_t} is a primitive type,
 built into mbeddr. It's size is also defined in a \ic{TypeSizeConfiguration}.
 
 \begin{lstlisting}[language=mbeddr, morekeywords={}]
-
 external module stdlib resources header : <stdlib.h> 
 { 
   void* malloc(size_t size); 
@@ -446,7 +435,6 @@ module with \ic{imports stdlib}. You can then call \ic{malloc} or \ic{free}:
 
 
 \begin{lstlisting}[language=mbeddr, morekeywords={}]
-
 module BasicPointer imports stdlib {    
   ...
   exported test case mallocTest { 
@@ -490,7 +478,6 @@ use of function references:
 
 
 \begin{lstlisting}[language=mbeddr, morekeywords={}]
-
 module FunctionPointer imports nothing { 
    
   int32 add(int32 a, int32 b) { 
@@ -530,7 +517,6 @@ first parameter.
 
 
 \begin{lstlisting}[language=mbeddr, morekeywords={}]
-
 module FunctionPointerAsTypes imports nothing { 
    
   typedef (int32, int32)=>(int32) as ftype; 
@@ -556,7 +542,6 @@ function. The syntax for a lambda is \ic{[arg1, arg2,
 \ldots|an-expression-using-args]}. The following is an example:
 
 \begin{lstlisting}[language=mbeddr, morekeywords={}]
-
 module Lambdas imports nothing { 
    
   typedef (int32, int32)=>(int32) as ftype; 
@@ -588,7 +573,6 @@ enumerations.
 \todo{What is the current state?}
 
 \begin{lstlisting}[language=mbeddr, morekeywords={}]
-
 module EnumerationApp imports nothing { 
    
   enum SEASON { SPRING; SUMMER; AUTUMN; WINTER; } 
@@ -628,7 +612,6 @@ Their usage is equivalent to regular C.
 
 
 \begin{lstlisting}[language=mbeddr, morekeywords={}]
-
 module ArrayApplication imports nothing { 
    
   exported test case arrayTest { 
@@ -650,7 +633,6 @@ module ArrayApplication imports nothing {
 for \ic{struct}s:
 
 \begin{lstlisting}[language=mbeddr, morekeywords={}]
- 
 struct Point { 
   int8 x; 
   int8 y; 
@@ -666,7 +648,6 @@ The one for \ic{union}s is a bit different from regular C, since it does mot
 require the leading dot before the referenced member:
 
 \begin{lstlisting}[language=mbeddr, morekeywords={}]
-
 union U { 
   int8 m1; 
   boolean m2; 
@@ -683,7 +664,6 @@ context expression several times, the context expression must be idempotent. An
 error is reported if that is not the case.}. Here is an example:
 
 \begin{lstlisting}[language=mbeddr, morekeywords={}]
-
 struct Point { 
   int8 x; 
   int8 y; 
@@ -724,7 +704,6 @@ disabled; use the corresponding intentions on the messages to enable/disable
 each message).
 
 \begin{lstlisting}[language=mbeddr, morekeywords={}]
-
 module Reporting imports nothing { 
    
   message list demo { 
@@ -762,7 +741,6 @@ occured). To count message calles, you have to mark the particular message as
 \ic{count}ed via an intention:
 
 \begin{lstlisting}[language=mbeddr, morekeywords={}]
-
 message list CalcMessages { 
   WARN ppcfailed(int8 operation, int8 ppc) active (count): ppc failed 
 } 
@@ -771,7 +749,6 @@ message list CalcMessages {
 You can then use the \ic{messagecount} expression to retrieve the count:
 
 \begin{lstlisting}[language=mbeddr, morekeywords={}]
-
 exported test case testComputer { 
   computer.add(1, 1); 
   assert(0) messagecount(CalcMessages.ppcfailed) == 0; 
@@ -786,7 +763,6 @@ important. There are two ways to do this. The first one includes the location
 string. Here is the default output of a report message:
 
 \begin{lstlisting}[]
-
 ./TestHelperTest
 $$runningTest: running test () @TestHelperTest:test_testCase1:0#767515563077315487
 $$FAILED: ***FAILED*** (testID=0) @TestHelperTest:f:0#9125142491355884683
@@ -830,7 +806,6 @@ expressions without manually creating a message and a report statement. To this
 end, the log expression can be used. Here is some example code:
 
 \begin{lstlisting}[language=mbeddr, morekeywords={}]
-
 exported test case testLogExpressions { 
   int8 x = 3; 
   int8 y = log:0<x>; 
@@ -946,7 +921,7 @@ what has been specified by \ic{category} in the \ic{TODO(category)} format.
 
 
 
-\subsection{Function Modifiers}
+\subsection{Function Modifiers and pragmas}
 
 In C, functions and variables often have modifiers that are either "processed
 away" by macros or can be understood by some proprietary compiler. In any case,
@@ -956,6 +931,18 @@ functions and global variables.
 
 To create a new kind of modifier, you have to create a concept that extends
 \ic{Prefix}.
+
+While the preprocessor is not supported in general, \ic{\#pragma}s are supported
+top level and in function bodies with the usual syntax.
+
+
+\subsection{Opaque Types}
+
+In C it is possible to define an empty \ic{struct} (as in \ic{struct o;}) and
+then use this type \emph{only as a pointer}, even though it is not really
+defined. mbeddr supports this via a first class concept \ic{opaque o;}, which
+can also just be used as a pointer.
+
 
 
 

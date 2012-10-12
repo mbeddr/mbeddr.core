@@ -259,7 +259,6 @@ The \ic{desktop} target contains some useful defaults, e.g. the \ic{gcc}
 compiler and its options. 
 
 \begin{lstlisting}[language=mbeddr, morekeywords={}]
-
 Target Platform: 
   desktop 
     compiler: gcc 
@@ -275,7 +274,6 @@ them to the console, which is fine for our purposes here. Select
 the placeholder and type \keystroke{reporting}. 
 
 \begin{lstlisting}[language=mbeddr, morekeywords={}]
-
 Configuration Items 
   reporting: printf 
 \end{lstlisting}
@@ -306,7 +304,6 @@ now):
 
 
 \begin{lstlisting}[language=mbeddr, morekeywords={}]
-
 Makefile
 HelloWorld.c
 HelloWorld.h
@@ -319,7 +316,6 @@ directory and type \keystroke{make}. The output should look like the following:
 
 
 \begin{lstlisting}[language=mbeddr, morekeywords={}]
-
 \$ make
 rm -rf ./bin
 mkdir -p ./bin
@@ -330,7 +326,6 @@ This builds the executable file \ic{HelloWorld.exe} or \ic{HelloWorld} (dependin
 platform), and running it should show the following output:
 
 \begin{lstlisting}[language=mbeddr, morekeywords={}]
-
 \$ ./HelloWorld.exe
 hello: Hello @HelloWorld:main:0
   world = World

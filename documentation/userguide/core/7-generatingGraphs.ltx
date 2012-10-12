@@ -16,7 +16,6 @@ A call graph shows the \emph{call} relationships between functions. Here is an
 example program:
 
 \begin{lstlisting}[language=mbeddr, morekeywords={}]
-
 module Module1 { 
    
   void function1() { 
@@ -89,7 +88,6 @@ created by the build configuration from which we generate the graph. So we first
 create a \ic{node} object (that's a \ic{node} from the \ic{graph} language):
 
 \begin{lstlisting}[language=mbeddr, morekeywords={}]
-
 node function id someID (shape: rect t:"function") style normal
 \end{lstlisting}
 
@@ -99,7 +97,6 @@ arbitrary (\ic{"function"}). Then we attach a \ic{LOOP} macro. It is used to
 iterate over all relevant functions using the following \ic{LOOP} code:
 
 \begin{lstlisting}[language=mbeddr, morekeywords={}]
-
 sequence<node<Binary>> allExecutables = 
   node.binaries.where({~it => it.isInstanceOf(Executable);}).
   ofType<node<Executable>>; sequence<node<Module>> 
@@ -112,7 +109,6 @@ We then use a property macro on the function name that uses the qualified name
 of the function as the name of the node:
 
 \begin{lstlisting}[language=mbeddr, morekeywords={}]
-
 node.qualifiedName().replaceAll("\\.", "_");
 \end{lstlisting}
 
@@ -120,7 +116,6 @@ We put the function's internal node ID as the ID of the created graph node using
 another property macro:
 
 \begin{lstlisting}[language=mbeddr, morekeywords={}]
-
 node.adapter.getId();
 \end{lstlisting}
 
@@ -147,7 +142,6 @@ target, and then use a reference macro (\ic{->}) to "rewire" the edge to its
 actual target node. Here is the expression in the reference macro:
 
 \begin{lstlisting}[language=mbeddr, morekeywords={}]
-
 node.function.qualifiedName().replaceAll("\\.", "_");
 \end{lstlisting}
 
