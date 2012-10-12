@@ -32,8 +32,8 @@ defined the seven SI units in mbeddr:
 
 \begin{lstlisting}[language=mbeddr, morekeywords={}]
 
-int8_t/m/ length; 
-int8_t/s/ time; 
+int8/m/ length; 
+int8/s/ time; 
 \end{lstlisting}
 
 \noindent It is also possible to define composite units. To add additional
@@ -42,7 +42,7 @@ components press enter after the first one (the \ic{m} in the example below):
 \begin{lstlisting}[language=mbeddr, morekeywords={}]
 
           -1
-int8_t/m s  / speed; 
+int8/m s  / speed; 
 \end{lstlisting}
 
 \noindent To change the exponent, use intentions on the unit. Types with units
@@ -51,7 +51,7 @@ can also be \ic{typedef}'ed to make using them more convenient:
 \begin{lstlisting}[language=mbeddr, morekeywords={}]
 
                   -1
-typedef int8_t/m s  / as speed_t; 
+typedef int8/m s  / as speed_t; 
 \end{lstlisting}
 
 \noindent If you want to assign a value to the variable, you have to use
@@ -59,7 +59,7 @@ literals with units, otherwise you will get compile errors:
 
 \begin{lstlisting}[language=mbeddr, morekeywords={}]
  
-int8_t/m/ length = 3 m; 
+int8/m/ length = 3 m; 
 \end{lstlisting}
 
 \noindent Note that units are computed correctly:
@@ -75,8 +75,8 @@ them through'':
 
 \begin{lstlisting}[language=mbeddr, morekeywords={}]
 
-int8_t/m/ someLength;
-int8_t/m/ result = 10 m + someLength;
+int8/m/ someLength;
+int8/m/ result = 10 m + someLength;
 \end{lstlisting}
 
 \noindent To get values ``into'' and out of the units world, you can use the
@@ -84,9 +84,9 @@ int8_t/m/ result = 10 m + someLength;
 
 \begin{lstlisting}[language=mbeddr, morekeywords={}]
 
-int8_t/m/ someLength = 10 m;
-int8_t justSomeValue = stripunit[someLength];
-int8_t/m/ someLength = introduceunit[justSomeValue -> m];
+int8/m/ someLength = 10 m;
+int8 justSomeValue = stripunit[someLength];
+int8/m/ someLength = introduceunit[justSomeValue -> m];
 \end{lstlisting}
 
 
@@ -130,8 +130,8 @@ conversion can be added with an intention.
 
 \begin{lstlisting}[language=mbeddr, morekeywords={}]
 
-int8_t/F/ tempInF = 10 F; 
-int8_t/C/ tempInC = [tempInF -> C]; 
+int8/F/ tempInF = 10 F; 
+int8/C/ tempInC = [tempInF -> C]; 
 \end{lstlisting}
 
 
@@ -144,8 +144,8 @@ code with coordinate systems:
 
 \begin{lstlisting}[language=mbeddr, morekeywords={}]
 
-int8_t/#global/ aGlobalVariable = 10#global; 
-int8_t/K/ aTemp = aGlobalVariable; // error; #global != K 
+int8/#global/ aGlobalVariable = 10#global; 
+int8/K/ aTemp = aGlobalVariable; // error; #global != K 
 aGlobalVariable = 10K; // error; #global != K 
 aGlobalVariable = 230#local; // error; #global != #local 
 \end{lstlisting}
@@ -175,7 +175,7 @@ Conversion Rules
 
 \begin{lstlisting}[language=mbeddr, morekeywords={}]
 
-int8_t/#local/ aLocalVariable = 20#local; 
+int8/#local/ aLocalVariable = 20#local; 
 aGlobalVariable = [aLocalVariable -> #global]; 
 \end{lstlisting}
 

@@ -47,15 +47,15 @@ An importing module can access all exported contents defined in imported modules
 
 module ImplementationModule imports nothing { 
    
-  exported int32_t add(int32_t i, int32_t j) { 
+  exported int32 add(int32 i, int32 j) { 
     return i + j; 
   } 
 }
 
 module ModuleUsingTheExportedFunction imports ImplementationModule {
 
-  int32_t main(int8_t argc, string[ ] args) { 
-    int32_t result = add(10, 15); 
+  int32 main(int8 argc, string[ ] args) { 
+    int32 result = add(10, 15); 
     return 0; 
   } 
 }
@@ -223,7 +223,7 @@ test failed.
 \begin{lstlisting}[language=mbeddr, morekeywords={}]
 
 module TestSuite from HelloWorld.UnitTests imports AddTest { 
-  int32_t main() { 
+  int32 main() { 
     return test testAddInt, testAddFloat; 
   } 
 }
@@ -274,7 +274,7 @@ exported test case testAddFloat {
 } 
 
 test helper
-void moreStuff(int8_t x, int8_t y, int8_t z) { 
+void moreStuff(int8 x, int8 y, int8 z) { 
   assert(0) x + y == z; 
 } 
 \end{lstlisting}
@@ -374,13 +374,13 @@ numbers. The type of the literal is the smallest possible signed integer type
 module LiteralsApp imports nothing { 
    
   exported test case testLiterals { 
-    int32_t intFromHex = hex<aff12>; 
+    int32 intFromHex = hex<aff12>; 
     assert(0) intFromHex == 720658; 
      
-    int32_t intFromOct = oct<334477>; 
+    int32 intFromOct = oct<334477>; 
     assert(1) intFromOct == 112959; 
      
-    int32_t intFromBin = bin<100110011>; 
+    int32 intFromBin = bin<100110011>; 
     assert(2) intFromBin == 307; 
   }  
 }
@@ -409,12 +409,12 @@ module BasicPointer imports stdlib {
   
   exported test case testBasicPointer { 
      
-    int32_t x = 10; 
-    int32_t* xp = &x; 
+    int32 x = 10; 
+    int32* xp = &x; 
     assert(0) *xp == 10; 
      
-    int32_t[ ] anArray = {4, 5}; 
-    int32_t* ap = anArray; 
+    int32[ ] anArray = {4, 5}; 
+    int32* ap = anArray; 
     assert(1) *ap == 4; 
      
     // pointer arithmetic 
@@ -450,7 +450,7 @@ module with \ic{imports stdlib}. You can then call \ic{malloc} or \ic{free}:
 module BasicPointer imports stdlib {    
   ...
   exported test case mallocTest { 
-    int8_t* mem = ((int8_t*) malloc(sizeof int8_t)); 
+    int8* mem = ((int8*) malloc(sizeof int8)); 
     *mem = 10; 
     assert(0) *mem == 10; 
     free(mem); 
@@ -493,17 +493,17 @@ use of function references:
 
 module FunctionPointer imports nothing { 
    
-  int32_t add(int32_t a, int32_t b) { 
+  int32 add(int32 a, int32 b) { 
     return a + b; 
   } 
  
-  int32_t minus(int32_t a, int32_t b) { 
+  int32 minus(int32 a, int32 b) { 
     return a - b; 
   } 
   
   exported test case testFunctionPointer { 
     // function pointer signature 
-    (int32_t, int32_t)=>(int32_t) pt2Function; 
+    (int32, int32)=>(int32) pt2Function; 
      
     // assign "add" 
     pt2Function = :add; 
@@ -533,9 +533,9 @@ first parameter.
 
 module FunctionPointerAsTypes imports nothing { 
    
-  typedef (int32_t, int32_t)=>(int32_t) as ftype; 
+  typedef (int32, int32)=>(int32) as ftype; 
  
-  int32_t add(int32_t a, int32_t b) { 
+  int32 add(int32 a, int32 b) { 
     return a + b; 
   }  
  
@@ -544,7 +544,7 @@ module FunctionPointerAsTypes imports nothing {
     assert(0) doOperation(:add, 20, 10) == 30; 
   } 
   
-  int32_t doOperation(ftype operation, int32_t firstOp, int32_t secondOp) { 
+  int32 doOperation(ftype operation, int32 firstOp, int32 secondOp) { 
     return operation(firstOp, secondOp); 
   } 
 }
@@ -559,13 +559,13 @@ function. The syntax for a lambda is \ic{[arg1, arg2,
 
 module Lambdas imports nothing { 
    
-  typedef (int32_t, int32_t)=>(int32_t) as ftype; 
+  typedef (int32, int32)=>(int32) as ftype; 
 
   exported test case testFunctionPointer { 
     assert(0) doOperation([a, b|a + b;], 20, 10) == 30; 
   } 
  
-  int32_t doOperation(ftype operation, int32_t firstOp, int32_t secondOp) { 
+  int32 doOperation(ftype operation, int32 firstOp, int32 secondOp) { 
     return operation(firstOp, secondOp); 
   } 
 }
@@ -632,11 +632,11 @@ Their usage is equivalent to regular C.
 module ArrayApplication imports nothing { 
    
   exported test case arrayTest { 
-    int32_t[3] array = {1, 2, 3}; 
+    int32[3] array = {1, 2, 3}; 
      
     assert(0) array[0] == 1; 
      
-    int8_t[2][2] array2 = {{1, 2}, {3, 4}}; 
+    int8[2][2] array2 = {{1, 2}, {3, 4}}; 
     assert(1) array2[1][1] == 4; 
   }  
 }
@@ -652,8 +652,8 @@ for \ic{struct}s:
 \begin{lstlisting}[language=mbeddr, morekeywords={}]
  
 struct Point { 
-  int8_t x; 
-  int8_t y; 
+  int8 x; 
+  int8 y; 
 }; 
 
 Point p = {
@@ -668,7 +668,7 @@ require the leading dot before the referenced member:
 \begin{lstlisting}[language=mbeddr, morekeywords={}]
 
 union U { 
-  int8_t m1; 
+  int8 m1; 
   boolean m2; 
 }; 
  
@@ -685,8 +685,8 @@ error is reported if that is not the case.}. Here is an example:
 \begin{lstlisting}[language=mbeddr, morekeywords={}]
 
 struct Point { 
-  int8_t x; 
-  int8_t y; 
+  int8 x; 
+  int8 y; 
 }; 
  
 with (aPoint) { 
@@ -729,11 +729,11 @@ module Reporting imports nothing {
    
   message list demo { 
     INFO programStarted() active: Program has just started running 
-    ERROR noArgumentPassedIn(int16_t actualArgCount) active: 
+    ERROR noArgumentPassedIn(int16 actualArgCount) active: 
         No argument has been passed in, although an arg is expected 
   } 
  
-  int32_t main(int8_t argc, string[ ] args) { 
+  int32 main(int8 argc, string[ ] args) { 
     report(0) demo.programStarted();
     report(1) demo.noArgumentPassedIn(argc) on argc == 0; 
     return 0; 
@@ -764,7 +764,7 @@ occured). To count message calles, you have to mark the particular message as
 \begin{lstlisting}[language=mbeddr, morekeywords={}]
 
 message list CalcMessages { 
-  WARN ppcfailed(int8_t operation, int8_t ppc) active (count): ppc failed 
+  WARN ppcfailed(int8 operation, int8 ppc) active (count): ppc failed 
 } 
 \end{lstlisting}
 
@@ -832,10 +832,10 @@ end, the log expression can be used. Here is some example code:
 \begin{lstlisting}[language=mbeddr, morekeywords={}]
 
 exported test case testLogExpressions { 
-  int8_t x = 3; 
-  int8_t y = log:0<x>; 
-  int8_t z = log:1<3 + log:2<x>>; 
-  int8_t zz = 3 * log:3<x>; 
+  int8 x = 3; 
+  int8 y = log:0<x>; 
+  int8 z = log:1<3 + log:2<x>>; 
+  int8 zz = 3 * log:3<x>; 
 } 
 \end{lstlisting}
 

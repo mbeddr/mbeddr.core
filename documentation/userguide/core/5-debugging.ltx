@@ -17,7 +17,7 @@ use this program to illustrate debugging.
 
 module DebuggerExample from Debugger.Example imports nothing { 
    
-  int8_t add(int8_t x, int8_t y) { 
+  int8 add(int8 x, int8 y) { 
     return x + y; 
   } 
    
@@ -26,7 +26,7 @@ module DebuggerExample from Debugger.Example imports nothing {
     assert(1) add(2, 4) == 6; 
   } 
    
-  int32_t main(int32_t argc, int8_t*[ ] argv) { 
+  int32 main(int32 argc, int8*[ ] argv) { 
     return test testAdding; 
   } 
 }

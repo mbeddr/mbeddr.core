@@ -105,7 +105,7 @@ Notice how we pass in the argument to the \ic{increment} event.
 
 \begin{lstlisting}[language=mbeddr, morekeywords={}]
 
-void someFunctionCalledByADriver(int8_t ticks) { 
+void someFunctionCalledByADriver(int8 ticks) { 
   trigger(wc, increment(ticks)); 
 }  
 \end{lstlisting}
@@ -168,7 +168,7 @@ module WrappingCounterModule imports nothing {
    
   var WrappingCounter wc; 
    
-  void someFunctionCalledByADriver(int8_t ticks) { 
+  void someFunctionCalledByADriver(int8 ticks) { 
     trigger(wc, increment(ticks)); 
   } 
 }

@@ -56,7 +56,7 @@ now use, for example, \ic{printf}:
 
 module UsingIO imports stdio { 
    
-  int32_t main(int32_t argc, int8_t*[] argv) { 
+  int32 main(int32 argc, int8*[] argv) { 
     printf("Hello World"); 
     return 0; 
   } main (function) 
@@ -176,7 +176,7 @@ imported external module:
 
 \begin{lstlisting}[language=mbeddr, morekeywords={}]
 
-exported #define SOMETHING = (int8_t) 10 + SOME_OTHER_DEFINE + 3 
+exported #define SOMETHING = (int8) 10 + SOME_OTHER_DEFINE + 3 
 \end{lstlisting}
 
 

@@ -172,7 +172,7 @@ cursor into the function body and type \keystroke{return 0}.
 
 \begin{lstlisting}[language=mbeddr]
 module HelloWorld from HelloWorld.main imports nothing {                                            
-  int32_t main() { 
+  int32 main() { 
     return 0; 
   } 
 }
@@ -209,7 +209,7 @@ the message list \ic{log} and select the message \ic{hello}. Pass the string
 \begin{lstlisting}[language=mbeddr, morekeywords={message, list}]
 module HelloWorld from HelloWorld.main imports nothing { 
    
-  int32_t main(int8_t argc, string[ ] args) { 
+  int32 main(int8 argc, string[ ] args) { 
     report(0) log.hello("World") on/if; 
     return 0; 
   } 

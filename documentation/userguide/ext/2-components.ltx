@@ -28,12 +28,12 @@ verify automatically at this time).
 \begin{lstlisting}[language=mbeddr, morekeywords={}]
 
 exported interface DriveTrain  { 
-  void driveForwardFor(uint8_t speed, uint32_t ms) 
-  void driveBackwardFor(uint8_t speed, uint32_t ms) 
-  void driveContinouslyForward(uint8_t speed) 
-  void driveContinouslyBackward(uint8_t speed) 
+  void driveForwardFor(uint8 speed, uint32 ms) 
+  void driveBackwardFor(uint8 speed, uint32 ms) 
+  void driveContinouslyForward(uint8 speed) 
+  void driveContinouslyBackward(uint8 speed) 
   void stop() 
-  query uint8_t currentSpeed() 
+  query uint8 currentSpeed() 
 }
 \end{lstlisting}
 
@@ -53,9 +53,9 @@ exported component RobotChassis {
     requires EcRobot_Motor motorLeft 
     requires EcRobot_Motor motorRight 
 
-    void dt_driveForwardFor(uint8_t speed, uint32_t ms) <- op dt.driveForwardFor { 
-      motorLeft.set_speed(((int8_t) speed)); 
-      motorRight.set_speed(((int8_t) speed));
+    void dt_driveForwardFor(uint8 speed, uint32 ms) <- op dt.driveForwardFor { 
+      motorLeft.set_speed(((int8) speed)); 
+      motorRight.set_speed(((int8) speed));
       ... 
     } 
     ...
@@ -89,7 +89,7 @@ exported component RobotChassis {
     requires EcRobot_Motor motorRight 
     requires optional ILogging log
 
-    void dt_driveForwardFor(uint8_t speed, uint32_t ms) <- op dt.driveForwardFor { 
+    void dt_driveForwardFor(uint8 speed, uint32 ms) <- op dt.driveForwardFor { 
       with port(log) {
         // other stuff
         log.error(...)
@@ -171,7 +171,7 @@ function:
 
 \begin{lstlisting}[language=mbeddr, morekeywords={}]
 
-int32_t main(int32_t argc, int8_t*[ ] argv) { 
+int32 main(int32 argc, int8*[ ] argv) { 
   initialize defaultInstances; 
   ... 
 } 
@@ -259,18 +259,18 @@ constraints. Here is the interface from above, but with contract specifications:
 \begin{lstlisting}[language=mbeddr, morekeywords={}]
 
 exported interface DriveTrain { 
-  void driveForwardFor(uint8_t speed, uint32_t ms) 
+  void driveForwardFor(uint8 speed, uint32 ms) 
     pre(0) speed < 100 
     post(1) currentSpeed() == 0 
     protocol init -> init 
-  void driveContinouslyForward(uint8_t speed) 
+  void driveContinouslyForward(uint8 speed) 
     pre(0) speed <= 100 
     post(1) currentSpeed() == speed 
     protocol init -> forward 
-  void accelerateBy(uint8_t speed) 
+  void accelerateBy(uint8 speed) 
     post(1) currentSpeed() == old(currentSpeed()) + speed 
     protocol forward -> forward 
-  query uint8_t currentSpeed() 
+  query uint8 currentSpeed() 
 }
 \end{lstlisting}
 
@@ -309,8 +309,8 @@ that interface:
 \begin{lstlisting}[language=mbeddr, morekeywords={}]
 
   exported struct DataPacket { 
-    int8_t size; 
-    int8_t* data; 
+    int8 size; 
+    int8* data; 
   }; 
    
   exported c/s interface PersistenceProvider { 
@@ -405,8 +405,8 @@ This is why inside test cases, you can use the direct runnable call expression:
 
 exported component C extends nothing { 
   contents: 
-    int8_t count = 0 
-    internal int8_t getStuff(int8_t x) <= no trigger { 
+    int8 count = 0 
+    internal int8 getStuff(int8 x) <= no trigger { 
       count++; 
       return count; 
     }  
