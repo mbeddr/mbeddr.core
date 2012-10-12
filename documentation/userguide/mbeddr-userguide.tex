@@ -126,8 +126,9 @@ behavior, public, private, protected, typevar, instance, connect, to, this
 
 \newcommand{\fig}[1]{Fig.~\ref{#1}}
 \newcommand{\sect}[1]{Section~\ref{#1}}
-\newcommand{\parhead}[1]{\vspace{4mm}\noindent$\blacksquare$\hspace{1mm}\textbf{{#1}}\hspace{4mm}}
-\newcommand{\seppar}{\vspace{7mm}\noindent}
+\newcommand{\parhead}[1]{
+\changefont{phv}{bc}{n}\vspace{4mm}\noindent$\blacksquare$\hspace{2mm}\small{\textbf{{#1}}}\hspace{2mm}\normalfont
+}
   
 \begin{document}
 

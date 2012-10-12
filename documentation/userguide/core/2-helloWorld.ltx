@@ -2,7 +2,7 @@
 
 \section{Hello World Example}
 \label{helloworld}
-
+ 
 For this tutorial we assume that you know how to use the C programming language.
 We also assume that you have have installed MPS, \ic{gcc}/\ic{make}, \ic{graphviz} and the
 mbeddr.core distribution. This has been disussed in the previous section. 
@@ -21,8 +21,8 @@ Mac it is under $MPS \rightarrow Preferences$) and select the $Global Libraries$
 in the IDE settings. Create a library called \ic{mbeddr.core} that points to
 the \ic{code} directory of the unzipped mbeddr installation.
 
-\textbf{Note: This library must point to the \ic{code} directory of the checkout
-so that all languages are below it, including \emph{core} and \emph{mpsutil}.}
+\greyboxnote{Note: This library must point to the \ic{code} directory of the
+checkout so that all languages are below it, including \emph{core} and \emph{mpsutil}.}
 
 \begin{center} 
   \includegraphics[width=10cm]{figures/core/SettingsGlobalLibraries.png}
@@ -32,15 +32,14 @@ Notice that this is a global settings and have to be performed only once
 before your first application project.
 
 
-\parhead{Project Structure and Settings}
-
-An MPS project is a collection of solutions\footnote{A project can also contain
-\emph{languages}, but these are only relevant to language implementors. We
-discuss this aspect of mbeddr in the \emph{Extension Guide}}. A \emph{solution}
-is an application project that \emph{uses} existing languages. Solutions contain
-any number of models; models contain root nodes. Physically, models are XML
-files that store MPS code. They are the relevant version control unit, and
-the fundamental unit of configuration.
+\parhead{Project Structure and Settings} An MPS project is a collection of
+solutions\footnote{A project can also contain \emph{languages}, but these are
+only relevant to language implementors. We discuss this aspect of mbeddr in the
+\emph{Extension Guide}}. A \emph{solution} is an application project that
+\emph{uses} existing languages. Solutions contain any number of models; models
+contain root nodes. Physically, models are XML files that store MPS code. They
+are the relevant version control unit, and the fundamental unit of
+configuration.
 
 
 \begin{center} 
