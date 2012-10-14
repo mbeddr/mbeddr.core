@@ -109,11 +109,11 @@
           <property name="editMode" nameId="n80h.6457621161786431130" value="false" />
         </node>
         <node role="decision" roleId="n80h.8433683602660520084" type="n80h.MLText" typeId="n80h.8433683602660520066" id="5751862410216140476">
-          <property name="text" nameId="n80h.8433683602660520067" value="We will geographically distribute the system over several states." />
+          <property name="text" nameId="n80h.8433683602660520067" value="We will geographically distribute the system over several states. Studd." />
           <property name="editMode" nameId="n80h.6457621161786431130" value="false" />
         </node>
         <node role="problem" roleId="n80h.8433683602660520072" type="n80h.MLText" typeId="n80h.8433683602660520066" id="5751862410216140477">
-          <property name="text" nameId="n80h.8433683602660520067" value="How can we guarantee up time in the face of catastrophic failures.&#10;These things don't make much sense in fact!&#9;" />
+          <property name="text" nameId="n80h.8433683602660520067" value="How can we guarantee up time in the face of catastrophic failures.&#10;These things don't make much sense in fact!&#9;aaaa" />
           <property name="editMode" nameId="n80h.6457621161786431130" value="false" />
         </node>
         <node role="state" roleId="n80h.8433683602660536534" type="n80h.ADStateDecided" typeId="n80h.8433683602660406234" id="5751862410216140481" />
@@ -204,7 +204,8 @@
           <property name="text" nameId="n80h.8433683602660520067" value="Dec" />
         </node>
         <node role="problem" roleId="n80h.8433683602660520072" type="n80h.MLText" typeId="n80h.8433683602660520066" id="4837632670852810445">
-          <property name="text" nameId="n80h.8433683602660520067" value="hallo" />
+          <property name="text" nameId="n80h.8433683602660520067" value="hallo.&#10;Hier ist mehr Text" />
+          <property name="editMode" nameId="n80h.6457621161786431130" value="false" />
         </node>
         <node role="state" roleId="n80h.8433683602660536534" type="n80h.ADStateIdea" typeId="n80h.8433683602660394395" id="4837632670852810449" />
         <node role="relationships" roleId="n80h.8433683602660542408" type="n80h.ADRelAlternative" typeId="n80h.8433683602660442757" id="4837632670852810447">
