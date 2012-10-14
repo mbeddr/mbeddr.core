@@ -79,9 +79,7 @@
       </node>
       <node role="influences" roleId="n80h.4941245409091229947" type="n80h.ForceInfluence" typeId="n80h.4941245409091229927" id="4941245409091249684">
         <link role="force" roleId="n80h.4941245409091229928" targetNodeId="4941245409091229922" resolveInfo="Performance" />
-        <node role="description" roleId="n80h.4837632670852826028" type="n80h.MLText" typeId="n80h.8433683602660520066" id="4941245409091249685">
-          <property name="text" nameId="n80h.8433683602660520067" value="Hiere is the thing." />
-        </node>
+        <node role="description" roleId="n80h.4837632670852826028" type="n80h.MLText" typeId="n80h.8433683602660520066" id="6457621161786587917" />
       </node>
       <node role="versions" roleId="n80h.8433683602660512004" type="n80h.ADVersion" typeId="n80h.8433683602660512002" id="4941245409091256561">
         <property name="created" nameId="n80h.8433683602661337527" value="Oct 3, 2012 3:23:34 PM" />
@@ -90,9 +88,11 @@
         </node>
         <node role="decision" roleId="n80h.8433683602660520084" type="n80h.MLText" typeId="n80h.8433683602660520066" id="4941245409091256563">
           <property name="text" nameId="n80h.8433683602660520067" value="We will geographically distribute the system." />
+          <property name="editMode" nameId="n80h.6457621161786431130" value="false" />
         </node>
         <node role="problem" roleId="n80h.8433683602660520072" type="n80h.MLText" typeId="n80h.8433683602660520066" id="4941245409091256564">
           <property name="text" nameId="n80h.8433683602660520067" value="How can we guarantee up time in the face of catastrophic failures" />
+          <property name="editMode" nameId="n80h.6457621161786431130" value="false" />
         </node>
         <node role="state" roleId="n80h.8433683602660536534" type="n80h.ADStateTentative" typeId="n80h.8433683602660394400" id="4941245409091256565" />
         <node role="relationships" roleId="n80h.8433683602660542408" type="n80h.ADRelDependsOn" typeId="n80h.8433683602660442746" id="5751862410216140472">
@@ -106,12 +106,15 @@
         <property name="created" nameId="n80h.8433683602661337527" value="Oct 12, 2012 7:40:51 PM" />
         <node role="arguments" roleId="n80h.8433683602660536523" type="n80h.MLText" typeId="n80h.8433683602660520066" id="5751862410216140475">
           <property name="text" nameId="n80h.8433683602660520067" value="We could have hardened the building, but distribution is more robust." />
+          <property name="editMode" nameId="n80h.6457621161786431130" value="false" />
         </node>
         <node role="decision" roleId="n80h.8433683602660520084" type="n80h.MLText" typeId="n80h.8433683602660520066" id="5751862410216140476">
           <property name="text" nameId="n80h.8433683602660520067" value="We will geographically distribute the system over several states." />
+          <property name="editMode" nameId="n80h.6457621161786431130" value="false" />
         </node>
         <node role="problem" roleId="n80h.8433683602660520072" type="n80h.MLText" typeId="n80h.8433683602660520066" id="5751862410216140477">
-          <property name="text" nameId="n80h.8433683602660520067" value="How can we guarantee up time in the face of catastrophic failures" />
+          <property name="text" nameId="n80h.8433683602660520067" value="How can we guarantee up time in the face of catastrophic failures.&#10;These things don't make much sense in fact!&#9;" />
+          <property name="editMode" nameId="n80h.6457621161786431130" value="false" />
         </node>
         <node role="state" roleId="n80h.8433683602660536534" type="n80h.ADStateDecided" typeId="n80h.8433683602660406234" id="5751862410216140481" />
         <node role="groups" roleId="n80h.8433683602660557700" type="n80h.GroupRef" typeId="n80h.8433683602660557692" id="5751862410216140479">
@@ -127,9 +130,18 @@
       <property name="name" nameId="tpck.1169194664001" value="HighPerformanceToEndUser" />
       <node role="versions" roleId="n80h.8433683602660512004" type="n80h.ADVersion" typeId="n80h.8433683602660512002" id="5751862410216140467">
         <property name="created" nameId="n80h.8433683602661337527" value="Oct 12, 2012 7:40:08 PM" />
-        <node role="decision" roleId="n80h.8433683602660520084" type="n80h.MLText" typeId="n80h.8433683602660520066" id="5751862410216140468" />
-        <node role="problem" roleId="n80h.8433683602660520072" type="n80h.MLText" typeId="n80h.8433683602660520066" id="5751862410216140469" />
-        <node role="arguments" roleId="n80h.8433683602660536523" type="n80h.MLText" typeId="n80h.8433683602660520066" id="5751862410216140470" />
+        <node role="decision" roleId="n80h.8433683602660520084" type="n80h.MLText" typeId="n80h.8433683602660520066" id="5751862410216140468">
+          <property name="editMode" nameId="n80h.6457621161786431130" value="false" />
+          <property name="text" nameId="n80h.8433683602660520067" value="Editor ist toll und mehr. Hier ist mehr Text&#10;&#10;Zeug.&#10;&#10;Mehr.&#10;&#10;&#10;" />
+        </node>
+        <node role="problem" roleId="n80h.8433683602660520072" type="n80h.MLText" typeId="n80h.8433683602660520066" id="5751862410216140469">
+          <property name="editMode" nameId="n80h.6457621161786431130" value="false" />
+          <property name="text" nameId="n80h.8433683602660520067" value="Hier ist was. Ganz toll" />
+        </node>
+        <node role="arguments" roleId="n80h.8433683602660536523" type="n80h.MLText" typeId="n80h.8433683602660520066" id="5751862410216140470">
+          <property name="editMode" nameId="n80h.6457621161786431130" value="false" />
+          <property name="text" nameId="n80h.8433683602660520067" value="Die Argumente sind folgendermaßen." />
+        </node>
         <node role="state" roleId="n80h.8433683602660536534" type="n80h.ADStateTentative" typeId="n80h.8433683602660394400" id="5751862410216140471" />
       </node>
     </node>
@@ -186,6 +198,7 @@
         <property name="created" nameId="n80h.8433683602661337527" value="Oct 12, 2012 4:05:29 PM" />
         <node role="arguments" roleId="n80h.8433683602660536523" type="n80h.MLText" typeId="n80h.8433683602660520066" id="4837632670852810443">
           <property name="text" nameId="n80h.8433683602660520067" value="Args" />
+          <property name="editMode" nameId="n80h.6457621161786431130" value="false" />
         </node>
         <node role="decision" roleId="n80h.8433683602660520084" type="n80h.MLText" typeId="n80h.8433683602660520066" id="4837632670852810444">
           <property name="text" nameId="n80h.8433683602660520067" value="Dec" />
