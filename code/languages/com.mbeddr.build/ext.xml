@@ -66,15 +66,4 @@
     	file="${mbeddr.github.core.home}/${mbeddr.core.project.dir}/solutions/com.mbeddr.ext.build/source_gen/com/mbeddr/ext/build/com.mbeddr.ext.tests.xml" 
     	tofile="${mbeddr.github.core.home}/build/com.mbeddr.ext/build-tests.xml"/>
   </target>
-
-
-  <target name="delete-mps-generated-code" >
-  	<delete includeemptydirs="true">
-      <fileset dir="${mbeddr.github.core.home}/${mbeddr.core.project.dir}" defaultexcludes="false">
-         <include name="**/source_gen/**" />
-         <include name="**/source_gen.caches/**" />
-         <include name="**/classes_gen/**" />
-      </fileset>
-    </delete>
-  </target>
 </project>

@@ -44,17 +44,12 @@
       <library name="debugger" dir="${buildSolutions.dir}/com.mbeddr.debugger"/>
       <library name="mpsutil" dir="${buildSolutions.dir}/com.mbeddr.mpsutil.dev.build"/>
 	  <library name="core" dir="${buildSolutions.dir}/com.mbeddr.core.dev.build"/>
-
-      <modules dir="${buildSolutions.dir}/com.mbeddr.cc.dev.build/"/>
+	  <library name="cc" dir="${buildSolutions.dir}/com.mbeddr.cc.dev.build"/>
+	  <library name="ext" dir="${buildSolutions.dir}/com.mbeddr.ext.build"/>
+      <modules dir="${buildSolutions.dir}/com.mbeddr.allInOne/"/>
     </mps.generate>
     <copy 
-    	file="${mbeddr.github.core.home}/${mbeddr.core.project.dir}/solutions/com.mbeddr.cc.dev.build/source_gen/com/mbeddr/cc/dev/build/com.mbeddr.cc.ple.build.xml" 
-    	tofile="${mbeddr.github.core.home}/build/com.mbeddr.cc/build-ple.xml"/>
-    <copy 
-    	file="${mbeddr.github.core.home}/${mbeddr.core.project.dir}/solutions/com.mbeddr.cc.dev.build/source_gen/com/mbeddr/cc/dev/build/com.mbeddr.cc.req.build.xml" 
-    	tofile="${mbeddr.github.core.home}/build/com.mbeddr.cc/build-req.xml"/>
-    <copy 
-    	file="${mbeddr.github.core.home}/${mbeddr.core.project.dir}/solutions/com.mbeddr.cc.dev.build/source_gen/com/mbeddr/cc/dev/build/com.mbeddr.cc.tests.build.xml" 
-    	tofile="${mbeddr.github.core.home}/build/com.mbeddr.cc/build-tests.xml"/>
+    	file="${mbeddr.github.core.home}/${mbeddr.core.project.dir}/solutions/com.mbeddr.allInOne/source_gen/com/mbeddr/allInOne/com.mbeddr.allInOne.xml" 
+    	tofile="${mbeddr.github.core.home}/build/com.mbeddr.allInOne/build.xml"/>
   </target>
 </project>
