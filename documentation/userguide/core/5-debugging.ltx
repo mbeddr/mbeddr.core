@@ -35,19 +35,27 @@ module DebuggerExample from Debugger.Example imports nothing {
 
 We start out by creating a new debug configuration as shown in the figure below:
 
+\vspace{-4mm}
+
 \begin{center} 
   \includegraphics[width=11cm]{figures/core/debugger2.png}
 \end{center}
 
+\vspace{-4mm}
+
 In the resulting dialog, name the new configuration \ic{DebuggerExampleConfig}
 and select the \ic{Debugger.Example.DebuggerExample} executable via the \ic{...}
 button (this executable is defined in the build configuration of the debugger
-example).
+example). \ic{Timeout} controls in \emph{ms} how long the debugger should
+wait for a connection setup to the underlying C debugger (increase this value,
+if your experience problems) and \ic{run Make} creates a executable
+with debug symbols in it (necessary for the debugger).
 
-\begin{center}  
+\vspace{-4mm}
+\begin{center} 
   \includegraphics[width=11cm]{figures/core/debugger3.png}
 \end{center}
-
+\vspace{-4mm}
 The launch configurations drop down at the top of the MPS screen should now
 show this new configuration:
 
