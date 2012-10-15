@@ -43,8 +43,6 @@
    
   
   <target name="build-languages" depends="init">
-  	<echo message="${utilLanguageDir}"/>
-  
     <mps.generate parallelMode="true" fork="true" >
       <jvmargs id="myargs"/>
 
@@ -55,6 +53,7 @@
       <macro name="mbeddr.github.core.home" path="${mbeddr.github.core.home}"/>
 
       <modules dir="${mbeddr.github.core.home}/${mbeddr.core.project.dir}/languages"/>
+      <modules dir="${mbeddr.github.core.home}/${mbeddr.core.project.dir}/solutions"/>
     </mps.generate>
   </target>
 
