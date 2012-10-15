@@ -33,11 +33,11 @@
   </target>
   
   <target name="build">
-	<antcall target="build-cc"/>
+	<antcall target="build-allInOne"/>
   </target>
    
   
-  <target name="build-cc" depends="init">
+  <target name="build-allInOne" depends="init">
     <mps.generate parallelMode="true" fork="true" >
       <jvmargs id="myargs"/>
 
