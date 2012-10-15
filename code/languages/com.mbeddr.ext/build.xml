@@ -20,6 +20,9 @@
   
   <property name="util.project.dir" value="code/languages/com.mbeddr.mpsutil"/>
   <property name="util.project.mpr" value="code/languages/com.mbeddr.mpsutil/mpsutil.dev.mpr"/>
+  
+  <property name="utilLanguageDir" value="${mbeddr.github.core.home}/${util.project.dir}/languages"/>
+  <property name="coreLanguageDir" value="${mbeddr.github.core.home}/${mbeddr.core.project.dir}/languages"/>
 
     <jvmargs id="myargs">
       <arg value="-ea"/>
@@ -48,8 +51,8 @@
     <mps.generate parallelMode="true" fork="true" failonerror="true">
       <jvmargs id="myargs"/>
       <macro name="mbeddr.github.core.home" path="${mbeddr.github.core.home}"/>
-      <library name="mbeddr.project" dir="${mbeddr.github.core.home}/${mbeddr.core.project.dir}/languages"/>
-      <library name="util.languages" dir="${mbeddr.github.core.home}/${util.project.dir}/languages"/>
+      <library name="mbeddr.project" dir="${coreLanguageDir}"/>
+      <library name="util.languages" dir="${utilLanguageDir}"/>
       <modules dir="${mbeddr.github.core.home}/${mbeddr.ext.project.dir}/languages"/>
       <modules dir="${mbeddr.github.core.home}/${mbeddr.ext.project.dir}/lib"/>
     </mps.generate>
@@ -70,11 +73,9 @@
     <mps.generate parallelMode="true" fork="true" failonerror="true">
       <jvmargs id="myargs"/>
       <macro name="mbeddr.github.core.home" path="${mbeddr.github.core.home}"/>
-      <library name="project" dir="${mbeddr.github.core.home}/${mbeddr.ext.project.dir}"/>
-      <library name="mbeddr.core.project" dir="${mbeddr.github.core.home}/${mbeddr.core.project.dir}"/>
       <library name="mbeddr.ext.project" dir="${mbeddr.github.core.home}/${mbeddr.ext.project.dir}"/>
-      <library name="util.languages" dir="${mbeddr.github.core.home}/${util.project.dir}/languages"/>
-
+      <library name="mbeddr.project" dir="${coreLanguageDir}"/>
+      <library name="util.languages" dir="${utilLanguageDir}"/>
 	  <!-- executable tests -->
       <modules dir="${mbeddr.github.core.home}/${mbeddr.ext.project.dir}/tests/"/>
   
