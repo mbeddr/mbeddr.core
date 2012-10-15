@@ -33,11 +33,11 @@
   </target>
   
   <target name="build">
-	<antcall target="build-cc"/>
+	<antcall target="build-ext"/>
   </target>
    
   
-  <target name="build-cc" depends="init">
+  <target name="build-ext" depends="init">
     <mps.generate parallelMode="true" fork="true" >
       <jvmargs id="myargs"/>
 
@@ -45,16 +45,25 @@
       <library name="mpsutil" dir="${buildSolutions.dir}/com.mbeddr.mpsutil.dev.build"/>
 	  <library name="core" dir="${buildSolutions.dir}/com.mbeddr.core.dev.build"/>
 
-      <modules dir="${buildSolutions.dir}/com.mbeddr.cc.dev.build/"/>
+      <modules dir="${buildSolutions.dir}/com.mbeddr.ext.build/"/>
     </mps.generate>
     <copy 
-    	file="${mbeddr.github.core.home}/${mbeddr.core.project.dir}/solutions/com.mbeddr.cc.dev.build/source_gen/com/mbeddr/cc/dev/build/com.mbeddr.cc.ple.build.xml" 
-    	tofile="${mbeddr.github.core.home}/build/com.mbeddr.cc/build-ple.xml"/>
+    	file="${mbeddr.github.core.home}/${mbeddr.core.project.dir}/solutions/com.mbeddr.ext.build/source_gen/com/mbeddr/ext/build/com.mbeddr.ext.exceptionhandling.xml" 
+    	tofile="${mbeddr.github.core.home}/build/com.mbeddr.cc/build-exceptionhandling.xml"/>
     <copy 
-    	file="${mbeddr.github.core.home}/${mbeddr.core.project.dir}/solutions/com.mbeddr.cc.dev.build/source_gen/com/mbeddr/cc/dev/build/com.mbeddr.cc.req.build.xml" 
-    	tofile="${mbeddr.github.core.home}/build/com.mbeddr.cc/build-req.xml"/>
+    	file="${mbeddr.github.core.home}/${mbeddr.core.project.dir}/solutions/com.mbeddr.ext.build/source_gen/com/mbeddr/ext/build/com.mbeddr.ext.components.xml" 
+    	tofile="${mbeddr.github.core.home}/build/com.mbeddr.cc/build-components.xml"/>
     <copy 
-    	file="${mbeddr.github.core.home}/${mbeddr.core.project.dir}/solutions/com.mbeddr.cc.dev.build/source_gen/com/mbeddr/cc/dev/build/com.mbeddr.cc.tests.build.xml" 
+    	file="${mbeddr.github.core.home}/${mbeddr.core.project.dir}/solutions/com.mbeddr.ext.build/source_gen/com/mbeddr/ext/build/com.mbeddr.ext.statemachine.xml" 
+    	tofile="${mbeddr.github.core.home}/build/com.mbeddr.cc/build-statemachine.xml"/>    	
+    <copy 
+    	file="${mbeddr.github.core.home}/${mbeddr.core.project.dir}/solutions/com.mbeddr.ext.build/source_gen/com/mbeddr/ext/build/com.mbeddr.ext.statemachinesInComponents.xml" 
+    	tofile="${mbeddr.github.core.home}/build/com.mbeddr.cc/build-SmInComp.xml"/>
+    <copy 
+    	file="${mbeddr.github.core.home}/${mbeddr.core.project.dir}/solutions/com.mbeddr.ext.build/source_gen/com/mbeddr/ext/build/com.mbeddr.ext.units.xml" 
+    	tofile="${mbeddr.github.core.home}/build/com.mbeddr.cc/build-units.xml"/>
+    <copy 
+    	file="${mbeddr.github.core.home}/${mbeddr.core.project.dir}/solutions/com.mbeddr.ext.build/source_gen/com/mbeddr/ext/build/com.mbeddr.ext.tests.xml" 
     	tofile="${mbeddr.github.core.home}/build/com.mbeddr.cc/build-tests.xml"/>
   </target>
 
