@@ -14,6 +14,7 @@
 
   <property name="mbeddr.core.project.dir" value="code/languages/com.mbeddr.build"/>
  
+  <property name="buildSolutions.dir" value="${mbeddr.github.core.home}/${mbeddr.core.project.dir}/solutions/"/>
  
   <jvmargs id="myargs">
       <arg value="-ea"/>
@@ -40,15 +41,16 @@
     <mps.generate parallelMode="true" fork="true" >
       <jvmargs id="myargs"/>
 
-      <macro name="mbeddr.github.core.home" path="${mbeddr.github.core.home}"/>
+      <library name="debugger" dir="${buildSolutions.dir}/com.mbeddr.debugger"/>
+      <library name="mpsutil" dir="${buildSolutions.dir}/com.mbeddr.mpsutil.dev.build"/>
 
-      <modules dir="${mbeddr.github.core.home}/${mbeddr.core.project.dir}/solutions/com.mbeddr.core.dev.build/"/>
+      <modules dir="${buildSolutions.dir}/com.mbeddr.core.dev.build/"/>
     </mps.generate>
     <copy 
-    	file="${mbeddr.github.core.home}/${mbeddr.core.project.dir}/solutions/com.mbeddr.mpsutil.dev.build/source_gen/com/mbeddr/core/dev/build/com.mbeddr.core.build.xml" 
+    	file="${mbeddr.github.core.home}/${mbeddr.core.project.dir}/solutions/com.mbeddr.core.dev.build/source_gen/com/mbeddr/core/dev/build/com.mbeddr.core.build.xml" 
     	tofile="${mbeddr.github.core.home}/build/com.mbeddr.core/build.xml"/>
     <copy 
-    	file="${mbeddr.github.core.home}/${mbeddr.core.project.dir}/solutions/com.mbeddr.mpsutil.dev.build/source_gen/com/mbeddr/core/dev/build/com.mbeddr.core.tests.build.xml" 
+    	file="${mbeddr.github.core.home}/${mbeddr.core.project.dir}/solutions/com.mbeddr.core.dev.build/source_gen/com/mbeddr/core/dev/build/com.mbeddr.core.tests.build.xml" 
     	tofile="${mbeddr.github.core.home}/build/com.mbeddr.core/build-tests.xml"/>
   </target>
 
