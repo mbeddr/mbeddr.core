@@ -4,7 +4,7 @@
   <language namespace="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1(jetbrains.mps.lang.constraints)" />
   <language namespace="7a5dda62-9140-4668-ab76-d5ed1746f2b2(jetbrains.mps.lang.typesystem)" />
   <devkit namespace="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
-  <import index="v7ag" modelUID="r:9596407c-f27a-49d3-abde-3a66293c5b61(com.mbeddr.ext.components.structure)" version="13" />
+  <import index="v7ag" modelUID="r:9596407c-f27a-49d3-abde-3a66293c5b61(com.mbeddr.ext.components.structure)" version="14" />
   <import index="qd6m" modelUID="r:c4c3f7d3-0acf-4671-a134-5fab66c4e637(com.mbeddr.core.modules.behavior)" version="0" />
   <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="3" />
   <import index="hwgx" modelUID="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)" version="2" />
@@ -125,7 +125,7 @@
     </node>
     <node type="tp1t.ConceptConstraints" typeId="tp1t.1213093968558" id="3540137500592825843">
       <property name="virtualPackage" nameId="tpck.1193676396447" value="comp.instances" />
-      <link role="concept" roleId="tp1t.1213093996982" targetNodeId="v7ag.4491876417845649016" resolveInfo="Connector" />
+      <link role="concept" roleId="tp1t.1213093996982" targetNodeId="v7ag.4491876417845649016" resolveInfo="AssemblyConnector" />
     </node>
     <node type="tp1t.ConceptConstraints" typeId="tp1t.1213093968558" id="5172178961827560482">
       <property name="virtualPackage" nameId="tpck.1193676396447" value="comp.instances" />
@@ -615,7 +615,7 @@
               <node role="operand" roleId="tpee.1197027771414" type="tp1t.ConstraintFunctionParameter_referenceNode" typeId="tp1t.1163200647017" id="3444913373458769581" />
               <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_IsRoleOperation" typeId="tp25.1144195091934" id="3444913373458769608">
                 <link role="linkInParent" roleId="tp25.1144195396777" targetNodeId="v7ag.4491876417845649020" />
-                <link role="conceptOfParent" roleId="tp25.1144195362400" targetNodeId="v7ag.4491876417845649016" resolveInfo="Connector" />
+                <link role="conceptOfParent" roleId="tp25.1144195362400" targetNodeId="v7ag.4491876417845649016" resolveInfo="AssemblyConnector" />
               </node>
             </node>
             <node role="elsifClauses" roleId="tpee.1206060520071" type="tpee.ElsifClause" typeId="tpee.1206060495898" id="3444913373458769614">
@@ -649,7 +649,7 @@
               <node role="condition" roleId="tpee.1206060619838" type="tpee.DotExpression" typeId="tpee.1197027756228" id="3444913373458769617">
                 <node role="operand" roleId="tpee.1197027771414" type="tp1t.ConstraintFunctionParameter_referenceNode" typeId="tp1t.1163200647017" id="3444913373458769618" />
                 <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_IsRoleOperation" typeId="tp25.1144195091934" id="3444913373458769619">
-                  <link role="conceptOfParent" roleId="tp25.1144195362400" targetNodeId="v7ag.4491876417845649016" resolveInfo="Connector" />
+                  <link role="conceptOfParent" roleId="tp25.1144195362400" targetNodeId="v7ag.4491876417845649016" resolveInfo="AssemblyConnector" />
                   <link role="linkInParent" roleId="tp25.1144195396777" targetNodeId="v7ag.4491876417845649021" />
                 </node>
               </node>
@@ -3102,7 +3102,7 @@
         <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="3444913373458849558">
           <node role="expression" roleId="tpee.1068580123156" type="tpee.EqualsExpression" typeId="tpee.1068580123152" id="3444913373458849580">
             <node role="rightExpression" roleId="tpee.1081773367579" type="tp25.LinkRefExpression" typeId="tp25.1226359078165" id="3444913373458849583">
-              <link role="conceptDeclaration" roleId="tp25.1226359078166" targetNodeId="v7ag.4491876417845649016" resolveInfo="Connector" />
+              <link role="conceptDeclaration" roleId="tp25.1226359078166" targetNodeId="v7ag.4491876417845649016" resolveInfo="AssemblyConnector" />
               <link role="linkDeclaration" roleId="tp25.1226359192215" targetNodeId="v7ag.4491876417845649021" />
             </node>
             <node role="leftExpression" roleId="tpee.1081773367580" type="tp1t.ConstraintFunctionParameter_link" typeId="tp1t.1203009604308" id="3444913373458849559" />
