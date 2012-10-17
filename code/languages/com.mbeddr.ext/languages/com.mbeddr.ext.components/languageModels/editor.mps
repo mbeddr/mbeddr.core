@@ -262,10 +262,6 @@
       <property name="virtualPackage" nameId="tpck.1193676396447" value="adapter" />
       <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="v7ag.1482737808881166716" resolveInfo="ReconnectAdapterStatement" />
     </node>
-    <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="3444913373458849544">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="comp.instances.portref" />
-      <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="v7ag.3444913373458849538" resolveInfo="AdapterPortRef" />
-    </node>
     <node type="tpc2.CellActionMapDeclaration" typeId="tpc2.1139535219966" id="3657295727191615475">
       <property name="virtualPackage" nameId="tpck.1193676396447" value="comp.runnable" />
       <property name="name" nameId="tpck.1169194664001" value="deleteRunnable" />
@@ -2776,23 +2772,6 @@
           <property name="flag" nameId="tpc2.1186414551515" value="true" />
         </node>
       </node>
-    </node>
-  </root>
-  <root id="3444913373458849544">
-    <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="3444913373458849546">
-      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="3444913373458849549">
-        <property name="text" nameId="tpc2.1073389577007" value="adapter" />
-      </node>
-      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_RefCell" typeId="tpc2.1088013125922" id="3444913373458849551">
-        <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="v7ag.3444913373458849539" />
-        <node role="editorComponent" roleId="tpc2.1088186146602" type="tpc2.InlineEditorComponent" typeId="tpc2.1088185857835" id="3444913373458849552">
-          <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Property" typeId="tpc2.1073389658414" id="3444913373458849554">
-            <property name="readOnly" nameId="tpc2.1140017977771" value="true" />
-            <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="tpck.1169194664001" resolveInfo="name" />
-          </node>
-        </node>
-      </node>
-      <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Indent" typeId="tpc2.1237303669825" id="3444913373458849548" />
     </node>
   </root>
   <root id="3657295727191615475">

@@ -399,15 +399,14 @@
       <property name="name" nameId="tpck.1169194664001" value="PortRef" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
     </node>
-    <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="3444913373458849538">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="comp.instances.portref" />
-      <property name="name" nameId="tpck.1169194664001" value="AdapterPortRef" />
-      <link role="extends" roleId="tpce.1071489389519" targetNodeId="3444913373458562837" resolveInfo="PortRef" />
-    </node>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7780999115923942144">
       <property name="virtualPackage" nameId="tpck.1193676396447" value="comp.instances" />
       <property name="name" nameId="tpck.1169194664001" value="AbstractInstanceConfiguration" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
+    </node>
+    <node type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="7780999115924276745">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="comp.instances" />
+      <property name="name" nameId="tpck.1169194664001" value="ISatisfiesPort" />
     </node>
   </roots>
   <root id="4491876417845474761">
@@ -892,6 +891,9 @@
     </node>
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="6041318036222235018">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="6041318036222235015" resolveInfo="InstanceConfigContents" />
+    </node>
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7780999115924276760">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="7780999115924276745" resolveInfo="ISatisfiesPort" />
     </node>
   </root>
   <root id="4491876417845649017">
@@ -1750,14 +1752,6 @@
       <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473854053" resolveInfo="abstract" />
     </node>
   </root>
-  <root id="3444913373458849538">
-    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="3444913373458849539">
-      <property name="metaClass" nameId="tpce.1071599937831" value="reference" />
-      <property name="role" nameId="tpce.1071599776563" value="adpter" />
-      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="5172178961828157634" resolveInfo="PortAdapter" />
-    </node>
-  </root>
   <root id="7780999115923942144">
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7780999115923942145">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="vs0r.1656687801206572012" resolveInfo="IRequiresConfigItem" />
@@ -1772,5 +1766,6 @@
       <link role="target" roleId="tpce.1071599976176" targetNodeId="6041318036222235015" resolveInfo="InstanceConfigContents" />
     </node>
   </root>
+  <root id="7780999115924276745" />
 </model>
 

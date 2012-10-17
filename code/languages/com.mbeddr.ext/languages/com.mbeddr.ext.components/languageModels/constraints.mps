@@ -218,10 +218,6 @@
       <property name="virtualPackage" nameId="tpck.1193676396447" value="adapter" />
       <link role="concept" roleId="tp1t.1213093996982" targetNodeId="v7ag.5172178961828157634" resolveInfo="PortAdapter" />
     </node>
-    <node type="tp1t.ConceptConstraints" typeId="tp1t.1213093968558" id="3444913373458849555">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="comp.instances.portref" />
-      <link role="concept" roleId="tp1t.1213093996982" targetNodeId="v7ag.3444913373458849538" resolveInfo="AdapterPortRef" />
-    </node>
     <node type="tp1t.ConceptConstraints" typeId="tp1t.1213093968558" id="1139274356257150945">
       <property name="virtualPackage" nameId="tpck.1193676396447" value="intf" />
       <link role="concept" roleId="tp1t.1213093996982" targetNodeId="v7ag.8105003328815054492" resolveInfo="InterfaceType" />
@@ -658,6 +654,20 @@
           <node role="statement" roleId="tpee.1068581517665" type="tpee.ReturnStatement" typeId="tpee.1068581242878" id="3444913373458769661">
             <node role="expression" roleId="tpee.1068581517676" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="3444913373458769663">
               <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="3444913373458769653" resolveInfo="result" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node role="canBeChild" roleId="tp1t.1213106463729" type="tp1t.ConstraintFunction_CanBeAChild" typeId="tp1t.1202989531578" id="7780999115924220819">
+      <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="7780999115924220820">
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="7780999115924220821">
+          <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="7780999115924220843">
+            <node role="operand" roleId="tpee.1197027771414" type="tp1t.ConstraintFunctionParameter_parentNode" typeId="tp1t.1202989658459" id="7780999115924220822" />
+            <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_IsInstanceOfOperation" typeId="tp25.1139621453865" id="7780999115924220849">
+              <node role="conceptArgument" roleId="tp25.1177027386292" type="tp25.RefConcept_Reference" typeId="tp25.1177026924588" id="7780999115924220882">
+                <link role="conceptDeclaration" roleId="tp25.1177026940964" targetNodeId="v7ag.4491876417845649016" resolveInfo="AssemblyConnector" />
+              </node>
             </node>
           </node>
         </node>
@@ -3091,21 +3101,6 @@
                 <link role="conceptDeclaration" roleId="tp25.1177026940964" targetNodeId="v7ag.4491876417845649024" resolveInfo="InstanceConfiguration" />
               </node>
             </node>
-          </node>
-        </node>
-      </node>
-    </node>
-  </root>
-  <root id="3444913373458849555">
-    <node role="canBeChild" roleId="tp1t.1213106463729" type="tp1t.ConstraintFunction_CanBeAChild" typeId="tp1t.1202989531578" id="3444913373458849556">
-      <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="3444913373458849557">
-        <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="3444913373458849558">
-          <node role="expression" roleId="tpee.1068580123156" type="tpee.EqualsExpression" typeId="tpee.1068580123152" id="3444913373458849580">
-            <node role="rightExpression" roleId="tpee.1081773367579" type="tp25.LinkRefExpression" typeId="tp25.1226359078165" id="3444913373458849583">
-              <link role="conceptDeclaration" roleId="tp25.1226359078166" targetNodeId="v7ag.4491876417845649016" resolveInfo="AssemblyConnector" />
-              <link role="linkDeclaration" roleId="tp25.1226359192215" targetNodeId="v7ag.4491876417845649021" />
-            </node>
-            <node role="leftExpression" roleId="tpee.1081773367580" type="tp1t.ConstraintFunctionParameter_link" typeId="tp1t.1203009604308" id="3444913373458849559" />
           </node>
         </node>
       </node>
