@@ -6,7 +6,6 @@
   <component name="Encoding" useUTFGuessing="true" native2AsciiForPropertiesFiles="false" />
   <component name="MPSProject">
     <projectModules>
-      <modulePath path="${mbeddr.github.core.home}/tools/spawner/languages/Eclipse.Debugger/Debugger.msd" />
       <modulePath path="${project}/solutions/com.mbeddr.allInOne/allInOne.msd" />
       <modulePath path="${project}/solutions/com.mbeddr.cc.dev.build/build.msd" />
       <modulePath path="${project}/solutions/com.mbeddr.core.dev.build/build.msd" />
