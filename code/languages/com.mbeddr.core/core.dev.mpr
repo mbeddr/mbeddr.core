@@ -44,6 +44,7 @@
       <modulePath path="${project}/languages/com.mbeddr.core.util/solutions/pluginSolution/pluginSolution.msd" folder="core-extended.solutions" />
       <modulePath path="${project}/languages/com.mbeddr.core.util/util.mpl" folder="core-extended" />
       <modulePath path="${project}/solutions/com.mbeddr.core.statistics/statistics.msd" folder="core.solutions" />
+      <modulePath path="${project}/solutions/test.dataflow/dataflow.msd" folder="tests" />
       <modulePath path="${project}/tests/aLibrary/aLibrary.msd" folder="tests" />
       <modulePath path="${project}/tests/test.cstub.core/core.msd" folder="tests.cstub" />
       <modulePath path="${project}/tests/test.cstub.testheader.expressions/expressions.msd" folder="tests.cstub" />
@@ -67,7 +68,7 @@
           <value>
             <Library>
               <option name="name" value="mpsutil" />
-              <option name="path" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.mpsutil" />
+              <option name="path" value="$PROJECT_DIR$/../com.mbeddr.mpsutil" />
             </Library>
           </value>
         </entry>
@@ -82,7 +83,7 @@
     <option name="version" value="2.5" />
   </component>
   <component name="VcsDirectoryMappings">
-    <mapping directory="$mbeddr.github.core.home$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../.." vcs="Git" />
   </component>
 </project>
 
