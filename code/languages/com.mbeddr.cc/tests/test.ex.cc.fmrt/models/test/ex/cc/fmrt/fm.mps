@@ -2,7 +2,7 @@
 <model modelUID="r:c7a75ede-0579-49be-9d57-8ae1523544a4(test.ex.cc.fmrt.fm)">
   <persistence version="7" />
   <language namespace="b8eeb935-038d-48d8-ae7f-0c6768b8d4fc(com.mbeddr.cc.var.rt)" />
-  <devkit namespace="b31efd26-898e-4b0e-b5dc-2d7ced06e7f7(com.mbeddr.cc.variability)" />
+  <language namespace="e401b447-8019-4ccd-a72c-bfb0230f5782(com.mbeddr.cc.var.fm)" />
   <devkit namespace="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="qqyh" modelUID="r:a74300b8-76a8-461e-befa-fc86b0ad5dd9(com.mbeddr.cc.var.fm.structure)" version="-1" implicit="yes" />
@@ -63,15 +63,6 @@
     <node role="contents" roleId="x27k.6437088627575722833" type="yvrq.RtFeatureModel" typeId="yvrq.8882953773355574483" id="8882953773355744171">
       <link role="featureModel" roleId="yvrq.8882953773355584900" targetNodeId="8882953773355744100" resolveInfo="someFM" />
     </node>
-    <node role="contents" roleId="x27k.6437088627575722833" type="yvrq.RtConfigModels" typeId="yvrq.8882953773355780217" id="8882953773355782615">
-      <link role="rtFeatureModel" roleId="yvrq.8882953773355780223" targetNodeId="8882953773355744171" resolveInfo="__rtfm_someFM_1" />
-      <node role="configs" roleId="yvrq.8882953773355780308" type="yvrq.ConfigRef" typeId="yvrq.8882953773355780300" id="8882953773355783259">
-        <link role="config" roleId="yvrq.8882953773355780301" targetNodeId="8882953773355744176" resolveInfo="Cfg1" />
-      </node>
-      <node role="configs" roleId="yvrq.8882953773355780308" type="yvrq.ConfigRef" typeId="yvrq.8882953773355780300" id="8882953773355793966">
-        <link role="config" roleId="yvrq.8882953773355780301" targetNodeId="8882953773355793962" resolveInfo="Cfg2" />
-      </node>
-    </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="8882953773355744172">
       <property name="name" nameId="tpck.1169194664001" value="empty_1350766688685_6" />
     </node>
@@ -130,7 +121,20 @@
         <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
         <property name="const" nameId="mj1l.2941277002445651368" value="false" />
       </node>
-      <node role="body" roleId="yz9a.6275792049641586525" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="8882953773355744117" />
+      <node role="body" roleId="yz9a.6275792049641586525" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="8882953773355744117">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="8882953773355828961">
+          <property name="name" nameId="tpck.1169194664001" value="cfg1" />
+          <node role="type" roleId="mj1l.318113533128716676" type="yvrq.RtFeatureModelType" typeId="yvrq.8882953773355826085" id="8882953773355828962">
+            <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+            <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+            <link role="featureModel" roleId="yvrq.8882953773355826086" targetNodeId="8882953773355744171" resolveInfo="someFM" />
+          </node>
+          <node role="init" roleId="c4fa.4185783222026502647" type="yvrq.CreateRtConfigExpr" typeId="yvrq.8882953773355830195" id="8882953773355835427">
+            <link role="rtFeatureModel" roleId="yvrq.8882953773355830456" targetNodeId="8882953773355744171" resolveInfo="someFM" />
+            <link role="configModel" roleId="yvrq.8882953773355830282" targetNodeId="8882953773355744176" resolveInfo="Cfg1" />
+          </node>
+        </node>
+      </node>
     </node>
   </root>
   <root id="8882953773355744118">
@@ -295,6 +299,7 @@
     <node role="configurationItems" roleId="vs0r.4459718605982007338" type="k146.ReportingConfiguration" typeId="k146.4459718605982051949" id="8882953773355744162">
       <node role="strategy" roleId="k146.4459718605982051999" type="k146.PrintfReportingStrategy" typeId="k146.4459718605982051980" id="8882953773355744163" />
     </node>
+    <node role="configurationItems" roleId="vs0r.4459718605982007338" type="yvrq.VarRTConfigItem" typeId="yvrq.8882953773355809617" id="8882953773355812646" />
     <node role="binaries" roleId="51wr.5046689135694070731" type="51wr.Executable" typeId="51wr.5046689135693761554" id="8882953773355744164">
       <property name="isTest" nameId="51wr.3431613015799084476" value="true" />
       <property name="name" nameId="tpck.1169194664001" value="FmRtTest" />
