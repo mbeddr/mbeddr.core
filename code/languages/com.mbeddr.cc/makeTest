@@ -5,7 +5,6 @@ PROC_RET=0
 
 cd tests/test.ex.cc.fm/source_gen/test/ex/cc
 
-
 echo -------------------------------------
 echo comptest
 cd v_debug
@@ -17,6 +16,16 @@ echo CompWithDectab
 cd ../v_production
 make test
 PROC_RET=$(($?+$PROC_RET))
+
+cd ../../../../../..
+cd test.ex.cc.fmrt/source_gen/test/ex/cc/fmrt/fm
+
+echo -------------------------------------
+echo test.ex.cc.fm
+make test
+PROC_RET=$(($?+$PROC_RET))
+
+
 
 
 
