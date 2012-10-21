@@ -20,11 +20,17 @@
       <property name="name" nameId="tpck.1169194664001" value="FeatureModels" />
     </node>
     <node type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="8882953773355744102">
-      <property name="name" nameId="tpck.1169194664001" value="FmRtTest" />
+      <property name="name" nameId="tpck.1169194664001" value="TestFeaturesOnly" />
     </node>
     <node type="mj1l.TypeSizeConfiguration" typeId="mj1l.3335993110369795380" id="8882953773355744118" />
     <node type="51wr.BuildConfiguration" typeId="51wr.7717755763392524104" id="8882953773355744160">
       <property name="name" nameId="tpck.1169194664001" value="dummy" />
+    </node>
+    <node type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="3716885538279497746">
+      <property name="name" nameId="tpck.1169194664001" value="Main" />
+    </node>
+    <node type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="8000796061689805817">
+      <property name="name" nameId="tpck.1169194664001" value="TestFeatureAttributes" />
     </node>
   </roots>
   <root id="8882953773355744099">
@@ -41,6 +47,13 @@
         </node>
         <node role="children" roleId="qqyh.6825476687691297428" type="qqyh.Feature" typeId="qqyh.6825476687691297426" id="3716885538279443113">
           <property name="name" nameId="tpck.1169194664001" value="f3" />
+          <node role="attributes" roleId="qqyh.6825476687691297429" type="qqyh.FeatureAttribute" typeId="qqyh.6825476687691297431" id="3716885538279497738">
+            <property name="name" nameId="tpck.1169194664001" value="attr" />
+            <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="3716885538279497739">
+              <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+              <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+            </node>
+          </node>
         </node>
       </node>
     </node>
@@ -61,12 +74,29 @@
         </node>
       </node>
     </node>
+    <node role="contents" roleId="qqyh.6825476687691337713" type="qqyh.ConfigurationModel" typeId="qqyh.6825476687691297416" id="3716885538279497740">
+      <property name="name" nameId="tpck.1169194664001" value="Cfg3" />
+      <link role="configures" roleId="qqyh.6825476687691297418" targetNodeId="8882953773355744100" resolveInfo="someFM" />
+      <node role="rootFeature" roleId="qqyh.6825476687691297417" type="qqyh.SelectedFeature" typeId="qqyh.6825476687691297422" id="3716885538279497741">
+        <link role="feature" roleId="qqyh.6825476687691297425" targetNodeId="8882953773355744101" resolveInfo="root" />
+        <node role="children" roleId="qqyh.6825476687691297423" type="qqyh.SelectedFeature" typeId="qqyh.6825476687691297422" id="3716885538279497743">
+          <link role="feature" roleId="qqyh.6825476687691297425" targetNodeId="3716885538279443113" resolveInfo="f3" />
+          <node role="values" roleId="qqyh.6825476687691297424" type="qqyh.AttributeValue" typeId="qqyh.6825476687691297413" id="3716885538279497744">
+            <link role="attribute" roleId="qqyh.6825476687691297415" targetNodeId="3716885538279497738" resolveInfo="attr" />
+            <node role="value" roleId="qqyh.6825476687691297414" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3716885538279497745">
+              <property name="value" nameId="mj1l.8860443239512128104" value="42" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
   </root>
   <root id="8882953773355744102">
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="8882953773355744166">
       <property name="name" nameId="tpck.1169194664001" value="empty_1350766592440_1" />
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="yvrq.RtFeatureModel" typeId="yvrq.8882953773355574483" id="8882953773355744171">
+      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
       <link role="featureModel" roleId="yvrq.8882953773355584900" targetNodeId="8882953773355744100" resolveInfo="someFM" />
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.GlobalVariableDeclaration" typeId="x27k.6610873504380335822" id="8882953773355858245">
@@ -77,59 +107,24 @@
         <link role="featureModel" roleId="yvrq.8882953773355826086" targetNodeId="8882953773355744171" resolveInfo="someFM" />
       </node>
     </node>
-    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="8882953773355858244">
-      <property name="name" nameId="tpck.1169194664001" value="empty_1350778037388_2" />
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="3716885538279497857">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1350820160345_3" />
     </node>
-    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="8882953773355744103">
-      <property name="name" nameId="tpck.1169194664001" value="main" />
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="3716885538279497861">
+      <property name="name" nameId="tpck.1169194664001" value="setupTestFeaturesOnly" />
       <property name="exported" nameId="x27k.1317894735999272944" value="true" />
-      <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="8882953773355744104">
-        <node role="statements" roleId="c4fa.4185783222026475862" type="yvrq.CreateRtConfigStatement" typeId="yvrq.8882953773355830195" id="8882953773355855931">
+      <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="3716885538279497863">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="yvrq.CreateRtConfigStatement" typeId="yvrq.8882953773355830195" id="3716885538279497865">
           <link role="rtFeatureModel" roleId="yvrq.8882953773355830456" targetNodeId="8882953773355744171" resolveInfo="someFM" />
           <link role="configModel" roleId="yvrq.8882953773355830282" targetNodeId="8882953773355793962" resolveInfo="Cfg2" />
-          <node role="target" roleId="yvrq.8882953773355838792" type="x27k.GlobalVarRef" typeId="x27k.6610873504380357354" id="8882953773355880647">
+          <node role="target" roleId="yvrq.8882953773355838792" type="x27k.GlobalVarRef" typeId="x27k.6610873504380357354" id="3716885538279497867">
             <link role="var" roleId="x27k.6610873504380357355" targetNodeId="8882953773355858245" resolveInfo="cfg" />
           </node>
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type="x27k.ReturnStatement" typeId="x27k.8967919205527146149" id="8882953773355744105">
-          <node role="expression" roleId="x27k.8967919205527146150" type="yz9a.ExecuteTestExpression" typeId="yz9a.186853311768094629" id="8882953773355744106">
-            <node role="tests" roleId="yz9a.5686538669182341016" type="yz9a.TestCaseRef" typeId="yz9a.5686538669182340985" id="8882953773355744107">
-              <link role="testcase" roleId="yz9a.5686538669182340986" targetNodeId="8882953773355744115" resolveInfo="testSingleCase" />
-            </node>
-            <node role="tests" roleId="yz9a.5686538669182341016" type="yz9a.TestCaseRef" typeId="yz9a.5686538669182340985" id="3716885538279496993">
-              <link role="testcase" roleId="yz9a.5686538669182340986" targetNodeId="3716885538279496836" resolveInfo="testIfSecondCaseGetsSelected" />
-            </node>
-            <node role="tests" roleId="yz9a.5686538669182341016" type="yz9a.TestCaseRef" typeId="yz9a.5686538669182340985" id="3716885538279496995">
-              <link role="testcase" roleId="yz9a.5686538669182340986" targetNodeId="3716885538279496914" resolveInfo="testIfDefaultGetsSelected" />
-            </node>
-          </node>
-        </node>
       </node>
-      <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int32tType" typeId="mj1l.8463282783691618440" id="8882953773355744108">
+      <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="3716885538279497860">
         <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
         <property name="const" nameId="mj1l.2941277002445651368" value="false" />
-      </node>
-      <node role="arguments" roleId="x27k.5708867820623310661" type="x27k.Argument" typeId="x27k.7892328519581704407" id="8882953773355744109">
-        <property name="name" nameId="tpck.1169194664001" value="argc" />
-        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int32tType" typeId="mj1l.8463282783691618440" id="8882953773355744110">
-          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
-          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
-        </node>
-      </node>
-      <node role="arguments" roleId="x27k.5708867820623310661" type="x27k.Argument" typeId="x27k.7892328519581704407" id="8882953773355744111">
-        <property name="name" nameId="tpck.1169194664001" value="argv" />
-        <node role="type" roleId="mj1l.318113533128716676" type="yq40.ArrayType" typeId="yq40.5679441017214012545" id="8882953773355744112">
-          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
-          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
-          <node role="baseType" roleId="yq40.5679441017214012546" type="yq40.PointerType" typeId="yq40.279446265608459824" id="8882953773355744113">
-            <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
-            <property name="const" nameId="mj1l.2941277002445651368" value="false" />
-            <node role="baseType" roleId="yq40.279446265608459825" type="yq40.StringType" typeId="yq40.6113173064528067332" id="8882953773355744114">
-              <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
-              <property name="const" nameId="mj1l.2941277002445651368" value="false" />
-            </node>
-          </node>
-        </node>
       </node>
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="8882953773355744167">
@@ -536,8 +531,173 @@
       <property name="isTest" nameId="51wr.3431613015799084476" value="true" />
       <property name="name" nameId="tpck.1169194664001" value="FmRtTest" />
       <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="8882953773355744165">
-        <link role="module" roleId="51wr.7717755763392524108" targetNodeId="8882953773355744102" resolveInfo="FmRtTest" />
+        <link role="module" roleId="51wr.7717755763392524108" targetNodeId="8882953773355744102" resolveInfo="TestFeaturesOnly" />
       </node>
+      <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="3716885538279497869">
+        <link role="module" roleId="51wr.7717755763392524108" targetNodeId="3716885538279497746" resolveInfo="Main" />
+      </node>
+      <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="8000796061690015145">
+        <link role="module" roleId="51wr.7717755763392524108" targetNodeId="8000796061689805817" resolveInfo="TestFeatureAttributes" />
+      </node>
+    </node>
+  </root>
+  <root id="3716885538279497746">
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="3716885538279497747">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1350766592440_1" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="3716885538279497751">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1350778037388_2" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="3716885538279497752">
+      <property name="name" nameId="tpck.1169194664001" value="main" />
+      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
+      <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="3716885538279497753">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="3716885538279498483">
+          <node role="expr" roleId="c4fa.7254843406768833939" type="x27k.FunctionCall" typeId="x27k.5950410542643524492" id="3716885538279498484">
+            <link role="function" roleId="x27k.5950410542643524493" targetNodeId="3716885538279497861" resolveInfo="setupTestFeaturesOnly" />
+          </node>
+        </node>
+        <node role="statements" roleId="c4fa.4185783222026475862" type="x27k.ReturnStatement" typeId="x27k.8967919205527146149" id="3716885538279497756">
+          <node role="expression" roleId="x27k.8967919205527146150" type="yz9a.ExecuteTestExpression" typeId="yz9a.186853311768094629" id="3716885538279497757">
+            <node role="tests" roleId="yz9a.5686538669182341016" type="yz9a.TestCaseRef" typeId="yz9a.5686538669182340985" id="3716885538279497758">
+              <link role="testcase" roleId="yz9a.5686538669182340986" targetNodeId="8882953773355744115" resolveInfo="testSingleCase" />
+            </node>
+            <node role="tests" roleId="yz9a.5686538669182341016" type="yz9a.TestCaseRef" typeId="yz9a.5686538669182340985" id="3716885538279497759">
+              <link role="testcase" roleId="yz9a.5686538669182340986" targetNodeId="3716885538279496836" resolveInfo="testIfSecondCaseGetsSelected" />
+            </node>
+            <node role="tests" roleId="yz9a.5686538669182341016" type="yz9a.TestCaseRef" typeId="yz9a.5686538669182340985" id="3716885538279497760">
+              <link role="testcase" roleId="yz9a.5686538669182340986" targetNodeId="3716885538279496914" resolveInfo="testIfDefaultGetsSelected" />
+            </node>
+            <node role="tests" roleId="yz9a.5686538669182341016" type="yz9a.TestCaseRef" typeId="yz9a.5686538669182340985" id="8000796061690015144">
+              <link role="testcase" roleId="yz9a.5686538669182340986" targetNodeId="8000796061689805829" resolveInfo="testAttribute" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int32tType" typeId="mj1l.8463282783691618440" id="3716885538279497761">
+        <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+        <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+      </node>
+      <node role="arguments" roleId="x27k.5708867820623310661" type="x27k.Argument" typeId="x27k.7892328519581704407" id="3716885538279497762">
+        <property name="name" nameId="tpck.1169194664001" value="argc" />
+        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int32tType" typeId="mj1l.8463282783691618440" id="3716885538279497763">
+          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+        </node>
+      </node>
+      <node role="arguments" roleId="x27k.5708867820623310661" type="x27k.Argument" typeId="x27k.7892328519581704407" id="3716885538279497764">
+        <property name="name" nameId="tpck.1169194664001" value="argv" />
+        <node role="type" roleId="mj1l.318113533128716676" type="yq40.ArrayType" typeId="yq40.5679441017214012545" id="3716885538279497765">
+          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+          <node role="baseType" roleId="yq40.5679441017214012546" type="yq40.PointerType" typeId="yq40.279446265608459824" id="3716885538279497766">
+            <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+            <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+            <node role="baseType" roleId="yq40.279446265608459825" type="yq40.StringType" typeId="yq40.6113173064528067332" id="3716885538279497767">
+              <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+              <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="3716885538279497768">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1350766593744_2" />
+    </node>
+    <node role="imports" roleId="x27k.1317894735999304826" type="x27k.ModuleImport" typeId="x27k.1317894735999299713" id="3716885538279497856">
+      <link role="module" roleId="x27k.1317894735999299714" targetNodeId="8882953773355744102" resolveInfo="TestFeaturesOnly" />
+    </node>
+    <node role="imports" roleId="x27k.1317894735999304826" type="x27k.ModuleImport" typeId="x27k.1317894735999299713" id="8000796061690015142">
+      <link role="module" roleId="x27k.1317894735999299714" targetNodeId="8000796061689805817" resolveInfo="TestFeatureAttributes" />
+    </node>
+  </root>
+  <root id="8000796061689805817">
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="8000796061689805818">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1350766592440_1" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="8000796061689805822">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1350820160345_3" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="8000796061689805828">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1350766593744_2" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="yz9a.TestCase" typeId="yz9a.6275792049641586523" id="8000796061689805829">
+      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
+      <property name="name" nameId="tpck.1169194664001" value="testAttribute" />
+      <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="8000796061689805830">
+        <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+        <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+      </node>
+      <node role="body" roleId="yz9a.6275792049641586525" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="8000796061689805831">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="8000796061689805917">
+          <property name="name" nameId="tpck.1169194664001" value="cfg" />
+          <node role="type" roleId="mj1l.318113533128716676" type="yvrq.RtFeatureModelType" typeId="yvrq.8882953773355826085" id="8000796061689805918">
+            <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+            <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+            <link role="featureModel" roleId="yvrq.8882953773355826086" targetNodeId="8882953773355744171" resolveInfo="someFM" />
+          </node>
+        </node>
+        <node role="statements" roleId="c4fa.4185783222026475862" type="yvrq.CreateRtConfigStatement" typeId="yvrq.8882953773355830195" id="8000796061689805920">
+          <link role="rtFeatureModel" roleId="yvrq.8882953773355830456" targetNodeId="8882953773355744171" resolveInfo="someFM" />
+          <link role="configModel" roleId="yvrq.8882953773355830282" targetNodeId="3716885538279497740" resolveInfo="Cfg3" />
+          <node role="target" roleId="yvrq.8882953773355838792" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="8000796061689805922">
+            <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="8000796061689805917" resolveInfo="cfg" />
+          </node>
+        </node>
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="8000796061689805923" />
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="8000796061689805938">
+          <property name="name" nameId="tpck.1169194664001" value="x" />
+          <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="8000796061689805939">
+            <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+            <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+          </node>
+          <node role="init" roleId="c4fa.4185783222026502647" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="8000796061689805941">
+            <property name="value" nameId="mj1l.8860443239512128104" value="0" />
+          </node>
+        </node>
+        <node role="statements" roleId="c4fa.4185783222026475862" type="yvrq.VariantSwitch" typeId="yvrq.8882953773355868305" id="8000796061689805926">
+          <node role="options" roleId="yvrq.8882953773355868310" type="yvrq.VariantCase" typeId="yvrq.8882953773355868306" id="8000796061689805927">
+            <node role="body" roleId="yvrq.8882953773355868344" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="8000796061689805928">
+              <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="8000796061689805943">
+                <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.AssignmentExpr" typeId="mj1l.22102029902365709" id="8000796061689805948">
+                  <node role="right" roleId="mj1l.8860443239512128065" type="yvrq.FeatureAttrRefExpr" typeId="yvrq.8000796061689964156" id="8000796061690013909">
+                    <link role="attr" roleId="yvrq.8000796061689964158" targetNodeId="3716885538279497738" resolveInfo="attr" />
+                    <node role="context" roleId="yvrq.8000796061689964157" type="yvrq.FeatureRef" typeId="yvrq.8882953773355884814" id="8000796061689805952">
+                      <link role="feature" roleId="yvrq.8882953773355884815" targetNodeId="3716885538279443113" resolveInfo="f3" />
+                    </node>
+                  </node>
+                  <node role="left" roleId="mj1l.8860443239512128064" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="8000796061689805944">
+                    <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="8000796061689805938" resolveInfo="x" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node role="featureExpression" roleId="yvrq.8882953773355868337" type="yvrq.FeatureRef" typeId="yvrq.8882953773355884814" id="8000796061689805936">
+              <link role="feature" roleId="yvrq.8882953773355884815" targetNodeId="3716885538279443113" resolveInfo="f3" />
+            </node>
+          </node>
+          <node role="fmconfig" roleId="yvrq.8882953773355868317" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="8000796061689805934">
+            <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="8000796061689805917" resolveInfo="cfg" />
+          </node>
+        </node>
+        <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="8000796061690013912">
+          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="8000796061690013912" />
+          <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="8000796061690013917">
+            <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="8000796061690013920">
+              <property name="value" nameId="mj1l.8860443239512128104" value="42" />
+            </node>
+            <node role="left" roleId="mj1l.8860443239512128064" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="8000796061690013914">
+              <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="8000796061689805938" resolveInfo="x" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="8000796061689805848">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1350819524829_1" />
+    </node>
+    <node role="imports" roleId="x27k.1317894735999304826" type="x27k.ModuleImport" typeId="x27k.1317894735999299713" id="8000796061689805916">
+      <link role="module" roleId="x27k.1317894735999299714" targetNodeId="8882953773355744102" resolveInfo="TestFeaturesOnly" />
     </node>
   </root>
 </model>
