@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<history>
+  <StructureModification>
+    <dependencies>
+      <model index="yvrq" modelUID="r:2217bb25-9695-4af2-948e-8d9b31dd5a1a(com.mbeddr.cc.var.rt.structure)" version="-1" />
+    </dependencies>
+    <rename id="yvrq.8882953773355830195" type="CONCEPT" from="CreateRtConfigStatement" to="StoreRtConfigStatement" />
+  </StructureModification>
+</history>
+

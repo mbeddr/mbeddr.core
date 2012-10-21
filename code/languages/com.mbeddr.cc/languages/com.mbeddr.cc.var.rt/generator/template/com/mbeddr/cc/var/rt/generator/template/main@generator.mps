@@ -7,18 +7,22 @@
   <language namespace="3bf5377a-e904-4ded-9754-5a516023bfaa(com.mbeddr.core.pointers)" />
   <language namespace="b67a6ca0-735e-4903-b238-4b525bddf96a(com.mbeddr.mpsutil.genutil)" />
   <language namespace="7a5dda62-9140-4668-ab76-d5ed1746f2b2(jetbrains.mps.lang.typesystem)" />
+  <language namespace="6d11763d-483d-4b2b-8efc-09336c1b0001(com.mbeddr.core.modules)" />
+  <language namespace="efda956e-491e-4f00-ba14-36af2f213ecf(com.mbeddr.core.udt)" />
+  <language namespace="61c69711-ed61-4850-81d9-7714ff227fb0(com.mbeddr.core.expressions)" />
+  <language namespace="d4280a54-f6df-4383-aa41-d1b2bffa7eb1(com.mbeddr.core.base)" />
   <devkit namespace="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
-  <import index="yvrq" modelUID="r:2217bb25-9695-4af2-948e-8d9b31dd5a1a(com.mbeddr.cc.var.rt.structure)" version="-1" />
+  <import index="yvrq" modelUID="r:2217bb25-9695-4af2-948e-8d9b31dd5a1a(com.mbeddr.cc.var.rt.structure)" version="0" />
   <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="17" />
+  <import index="k7f5" modelUID="r:663fc33a-b682-4927-800b-ea7c66e720f0(com.mbeddr.cc.var.rt.behavior)" version="-1" />
+  <import index="g0zr" modelUID="r:0a669ac3-8469-4820-883d-73721ea0df96(com.mbeddr.cc.var.fm.behavior)" version="-1" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="tpf8" modelUID="r:00000000-0000-4000-0000-011c895902e8(jetbrains.mps.lang.generator.structure)" version="2" implicit="yes" />
   <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="3" implicit="yes" />
   <import index="tp25" modelUID="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" version="16" implicit="yes" />
   <import index="tpee" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="4" implicit="yes" />
   <import index="clbe" modelUID="r:61d840b4-12c1-49ea-b142-b2a1550a9b15(com.mbeddr.core.udt.structure)" version="7" implicit="yes" />
-  <import index="g0zr" modelUID="r:0a669ac3-8469-4820-883d-73721ea0df96(com.mbeddr.cc.var.fm.behavior)" version="-1" implicit="yes" />
   <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="4" implicit="yes" />
-  <import index="k7f5" modelUID="r:663fc33a-b682-4927-800b-ea7c66e720f0(com.mbeddr.cc.var.rt.behavior)" version="-1" implicit="yes" />
   <import index="tp2c" modelUID="r:00000000-0000-4000-0000-011c89590338(jetbrains.mps.baseLanguage.closures.structure)" version="3" implicit="yes" />
   <import index="jphc" modelUID="r:f5e22059-6c2f-430a-9e46-6dae72a4d73d(com.mbeddr.mpsutil.genutil.structure)" version="-1" implicit="yes" />
   <import index="qqyh" modelUID="r:a74300b8-76a8-461e-befa-fc86b0ad5dd9(com.mbeddr.cc.var.fm.structure)" version="-1" implicit="yes" />
@@ -243,7 +247,7 @@
       </node>
     </node>
     <node role="reductionMappingRule" roleId="tpf8.1167328349397" type="tpf8.Reduction_MappingRule" typeId="tpf8.1167327847730" id="8882953773355838717">
-      <link role="applicableConcept" roleId="tpf8.1167169349424" targetNodeId="yvrq.8882953773355830195" resolveInfo="CreateRtConfigStatement" />
+      <link role="applicableConcept" roleId="tpf8.1167169349424" targetNodeId="yvrq.8882953773355830195" resolveInfo="StoreRtConfigStatement" />
       <node role="ruleConsequence" roleId="tpf8.1169672767469" type="tpf8.InlineTemplateWithContext_RuleConsequence" typeId="tpf8.8900764248744213868" id="8882953773355841682">
         <node role="contentNode" roleId="tpf8.8900764248744213871" type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="8882953773355841684">
           <property name="name" nameId="tpck.1169194664001" value="Dummy" />
@@ -329,13 +333,13 @@
                               <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="8882953773355842099">
                                 <property name="name" nameId="tpck.1169194664001" value="ccs" />
                                 <node role="type" roleId="tpee.5680397130376446158" type="tp25.SNodeType" typeId="tp25.1138055754698" id="8882953773355842100">
-                                  <link role="concept" roleId="tp25.1138405853777" targetNodeId="yvrq.8882953773355830195" resolveInfo="CreateRtConfigStatement" />
+                                  <link role="concept" roleId="tp25.1138405853777" targetNodeId="yvrq.8882953773355830195" resolveInfo="StoreRtConfigStatement" />
                                 </node>
                                 <node role="initializer" roleId="tpee.1068431790190" type="jphc.GetRefExpression" typeId="jphc.8326627235132606243" id="8882953773355842101">
                                   <property name="key" nameId="jphc.8326627235132606245" value="ccs" />
                                   <node role="ctxNode" roleId="jphc.8326627235132606244" type="tpf8.TemplateFunctionParameter_sourceNode" typeId="tpf8.1167169188348" id="8882953773355842102" />
                                   <node role="conc" roleId="jphc.1177027386292" type="tp25.RefConcept_Reference" typeId="tp25.1177026924588" id="8882953773355842103">
-                                    <link role="conceptDeclaration" roleId="tp25.1177026940964" targetNodeId="yvrq.8882953773355830195" resolveInfo="CreateRtConfigStatement" />
+                                    <link role="conceptDeclaration" roleId="tp25.1177026940964" targetNodeId="yvrq.8882953773355830195" resolveInfo="StoreRtConfigStatement" />
                                   </node>
                                 </node>
                               </node>
@@ -528,13 +532,13 @@
                               <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="8000796061690046079">
                                 <property name="name" nameId="tpck.1169194664001" value="ccs" />
                                 <node role="type" roleId="tpee.5680397130376446158" type="tp25.SNodeType" typeId="tp25.1138055754698" id="8000796061690046080">
-                                  <link role="concept" roleId="tp25.1138405853777" targetNodeId="yvrq.8882953773355830195" resolveInfo="CreateRtConfigStatement" />
+                                  <link role="concept" roleId="tp25.1138405853777" targetNodeId="yvrq.8882953773355830195" resolveInfo="StoreRtConfigStatement" />
                                 </node>
                                 <node role="initializer" roleId="tpee.1068431790190" type="jphc.GetRefExpression" typeId="jphc.8326627235132606243" id="8000796061690046081">
                                   <property name="key" nameId="jphc.8326627235132606245" value="ccs" />
                                   <node role="ctxNode" roleId="jphc.8326627235132606244" type="tpf8.TemplateFunctionParameter_sourceNode" typeId="tpf8.1167169188348" id="8000796061690046082" />
                                   <node role="conc" roleId="jphc.1177027386292" type="tp25.RefConcept_Reference" typeId="tp25.1177026924588" id="8000796061690046083">
-                                    <link role="conceptDeclaration" roleId="tp25.1177026940964" targetNodeId="yvrq.8882953773355830195" resolveInfo="CreateRtConfigStatement" />
+                                    <link role="conceptDeclaration" roleId="tp25.1177026940964" targetNodeId="yvrq.8882953773355830195" resolveInfo="StoreRtConfigStatement" />
                                   </node>
                                 </node>
                               </node>
