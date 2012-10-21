@@ -6,7 +6,6 @@
   <devkit namespace="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="qqyh" modelUID="r:a74300b8-76a8-461e-befa-fc86b0ad5dd9(com.mbeddr.cc.var.fm.structure)" version="-1" implicit="yes" />
-  <import index="k146" modelUID="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" version="2" implicit="yes" />
   <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="17" implicit="yes" />
   <import index="yq40" modelUID="r:152b3fc0-83a1-4bab-a8cd-565eb8483785(com.mbeddr.core.pointers.structure)" version="3" implicit="yes" />
   <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="5" implicit="yes" />
@@ -15,6 +14,7 @@
   <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="4" implicit="yes" />
   <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="3" implicit="yes" />
   <import index="yvrq" modelUID="r:2217bb25-9695-4af2-948e-8d9b31dd5a1a(com.mbeddr.cc.var.rt.structure)" version="-1" implicit="yes" />
+  <import index="k146" modelUID="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" version="2" implicit="yes" />
   <roots>
     <node type="qqyh.VariabilitySupport" typeId="qqyh.6825476687691337712" id="8882953773355744099">
       <property name="name" nameId="tpck.1169194664001" value="FeatureModels" />
@@ -65,6 +65,17 @@
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="8882953773355744170">
       <property name="name" nameId="tpck.1169194664001" value="empty_1350766595816_5" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.GlobalVariableDeclaration" typeId="x27k.6610873504380335822" id="8882953773355858245">
+      <property name="name" nameId="tpck.1169194664001" value="cfg2" />
+      <node role="type" roleId="mj1l.318113533128716676" type="yvrq.RtFeatureModelType" typeId="yvrq.8882953773355826085" id="8882953773355858246">
+        <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+        <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+        <link role="featureModel" roleId="yvrq.8882953773355826086" targetNodeId="8882953773355744171" resolveInfo="someFM" />
+      </node>
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="8882953773355858244">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1350778037388_2" />
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="8882953773355744103">
       <property name="name" nameId="tpck.1169194664001" value="main" />
@@ -124,14 +135,6 @@
             <link role="featureModel" roleId="yvrq.8882953773355826086" targetNodeId="8882953773355744171" resolveInfo="someFM" />
           </node>
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="8882953773355857977">
-          <property name="name" nameId="tpck.1169194664001" value="cfg2" />
-          <node role="type" roleId="mj1l.318113533128716676" type="yvrq.RtFeatureModelType" typeId="yvrq.8882953773355826085" id="8882953773355857978">
-            <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
-            <property name="const" nameId="mj1l.2941277002445651368" value="false" />
-            <link role="featureModel" roleId="yvrq.8882953773355826086" targetNodeId="8882953773355744171" resolveInfo="someFM" />
-          </node>
-        </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="yvrq.CreateRtConfigStatement" typeId="yvrq.8882953773355830195" id="8882953773355855931">
           <link role="rtFeatureModel" roleId="yvrq.8882953773355830456" targetNodeId="8882953773355744171" resolveInfo="someFM" />
           <link role="configModel" roleId="yvrq.8882953773355830282" targetNodeId="8882953773355744176" resolveInfo="Cfg1" />
@@ -142,10 +145,14 @@
         <node role="statements" roleId="c4fa.4185783222026475862" type="yvrq.CreateRtConfigStatement" typeId="yvrq.8882953773355830195" id="8882953773355857975">
           <link role="rtFeatureModel" roleId="yvrq.8882953773355830456" targetNodeId="8882953773355744171" resolveInfo="someFM" />
           <link role="configModel" roleId="yvrq.8882953773355830282" targetNodeId="8882953773355793962" resolveInfo="Cfg2" />
-          <node role="target" roleId="yvrq.8882953773355838792" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="8882953773355857979">
-            <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="8882953773355857977" resolveInfo="cfg2" />
+          <node role="target" roleId="yvrq.8882953773355838792" type="x27k.GlobalVarRef" typeId="x27k.6610873504380357354" id="8882953773355860157">
+            <link role="var" roleId="x27k.6610873504380357355" targetNodeId="8882953773355858245" resolveInfo="cfg2" />
           </node>
         </node>
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="8882953773355858239" />
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="8882953773355858240" />
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="8882953773355858241" />
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="8882953773355858242" />
       </node>
     </node>
   </root>
@@ -311,7 +318,6 @@
     <node role="configurationItems" roleId="vs0r.4459718605982007338" type="k146.ReportingConfiguration" typeId="k146.4459718605982051949" id="8882953773355744162">
       <node role="strategy" roleId="k146.4459718605982051999" type="k146.PrintfReportingStrategy" typeId="k146.4459718605982051980" id="8882953773355744163" />
     </node>
-    <node role="configurationItems" roleId="vs0r.4459718605982007338" type="yvrq.VarRTConfigItem" typeId="yvrq.8882953773355809617" id="8882953773355812646" />
     <node role="binaries" roleId="51wr.5046689135694070731" type="51wr.Executable" typeId="51wr.5046689135693761554" id="8882953773355744164">
       <property name="isTest" nameId="51wr.3431613015799084476" value="true" />
       <property name="name" nameId="tpck.1169194664001" value="FmRtTest" />
