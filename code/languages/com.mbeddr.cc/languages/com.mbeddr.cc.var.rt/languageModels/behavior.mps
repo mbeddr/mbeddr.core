@@ -12,6 +12,10 @@
     <node type="1i04.ConceptBehavior" typeId="1i04.1225194240794" id="8882953773355826101">
       <link role="concept" roleId="1i04.1225194240799" targetNodeId="yvrq.8882953773355574483" resolveInfo="RtFeatureModel" />
     </node>
+    <node type="1i04.ConceptBehavior" typeId="1i04.1225194240794" id="8882953773355884898">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="switch" />
+      <link role="concept" roleId="1i04.1225194240799" targetNodeId="yvrq.8882953773355868306" resolveInfo="VariantCase" />
+    </node>
   </roots>
   <root id="8882953773355826101">
     <node role="method" roleId="1i04.1225194240805" type="1i04.ConceptMethodDeclaration" typeId="1i04.1225194472830" id="8882953773355837733">
@@ -41,6 +45,11 @@
     </node>
     <node role="constructor" roleId="1i04.1225194240801" type="1i04.ConceptConstructorDeclaration" typeId="1i04.1225194413805" id="8882953773355826102">
       <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="8882953773355826103" />
+    </node>
+  </root>
+  <root id="8882953773355884898">
+    <node role="constructor" roleId="1i04.1225194240801" type="1i04.ConceptConstructorDeclaration" typeId="1i04.1225194413805" id="8882953773355884899">
+      <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="8882953773355884900" />
     </node>
   </root>
 </model>

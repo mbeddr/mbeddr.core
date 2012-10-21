@@ -380,6 +380,10 @@
         </node>
       </node>
     </node>
+    <node role="reductionMappingRule" roleId="tpf8.1167328349397" type="tpf8.Reduction_MappingRule" typeId="tpf8.1167327847730" id="8882953773355980727">
+      <link role="applicableConcept" roleId="tpf8.1167169349424" targetNodeId="yvrq.8882953773355868306" resolveInfo="VariantCase" />
+      <node role="ruleConsequence" roleId="tpf8.1169672767469" type="tpf8.AbandonInput_RuleConsequence" typeId="tpf8.1202776937179" id="8882953773355980729" />
+    </node>
   </root>
   <root id="8882953773355815603">
     <node role="pointerDiffType" roleId="mj1l.3813668170744198630" type="mj1l.Int32tType" typeId="mj1l.8463282783691618440" id="8882953773355815604">
