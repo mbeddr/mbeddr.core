@@ -21,7 +21,7 @@
       <property name="name" nameId="tpck.1169194664001" value="var" />
     </node>
     <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="8882953773355830284">
-      <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="yvrq.8882953773355830195" resolveInfo="CreateRtConfigExpr" />
+      <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="yvrq.8882953773355830195" resolveInfo="CreateRtConfigStatement" />
     </node>
   </roots>
   <root id="8882953773355584903">
@@ -96,7 +96,7 @@
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="8882953773355830286">
         <property name="text" nameId="tpc2.1073389577007" value="createconfig&lt;" />
         <link role="styleClass" roleId="tpc2.1186406756722" targetNodeId="8882953773355828967" resolveInfo="rt" />
-        <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.PunctuationRightStyleClassItem" typeId="tpc2.1233759184865" id="8882953773355830296">
+        <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.PunctuationRightStyleClassItem" typeId="tpc2.1233759184865" id="8882953773355855933">
           <property name="flag" nameId="tpc2.1186414551515" value="true" />
         </node>
       </node>
@@ -110,13 +110,10 @@
           </node>
         </node>
       </node>
-      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="8882953773355830295">
-        <property name="text" nameId="tpc2.1073389577007" value="&gt;(" />
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="8882953773355856806">
+        <property name="text" nameId="tpc2.1073389577007" value="," />
         <link role="styleClass" roleId="tpc2.1186406756722" targetNodeId="8882953773355828967" resolveInfo="rt" />
-        <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.PunctuationLeftStyleClassItem" typeId="tpc2.1233758997495" id="8882953773355830297">
-          <property name="flag" nameId="tpc2.1186414551515" value="true" />
-        </node>
-        <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.PunctuationRightStyleClassItem" typeId="tpc2.1233759184865" id="8882953773355830452">
+        <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.PunctuationLeftStyleClassItem" typeId="tpc2.1233758997495" id="8882953773355856807">
           <property name="flag" nameId="tpc2.1186414551515" value="true" />
         </node>
       </node>
@@ -130,10 +127,23 @@
           </node>
         </node>
       </node>
-      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="8882953773355830450">
-        <property name="text" nameId="tpc2.1073389577007" value=")" />
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="8882953773355830295">
+        <property name="text" nameId="tpc2.1073389577007" value="&gt;" />
         <link role="styleClass" roleId="tpc2.1186406756722" targetNodeId="8882953773355828967" resolveInfo="rt" />
-        <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.PunctuationLeftStyleClassItem" typeId="tpc2.1233758997495" id="8882953773355830453">
+        <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.PunctuationLeftStyleClassItem" typeId="tpc2.1233758997495" id="8882953773355830297">
+          <property name="flag" nameId="tpc2.1186414551515" value="true" />
+        </node>
+      </node>
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="8882953773355838801">
+        <property name="text" nameId="tpc2.1073389577007" value="-&gt;" />
+        <link role="styleClass" roleId="tpc2.1186406756722" targetNodeId="8882953773355828967" resolveInfo="rt" />
+      </node>
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_RefNode" typeId="tpc2.1073389882823" id="8882953773355838795">
+        <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="yvrq.8882953773355838792" />
+      </node>
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="8882953773355856803">
+        <property name="text" nameId="tpc2.1073389577007" value=";" />
+        <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.PunctuationLeftStyleClassItem" typeId="tpc2.1233758997495" id="8882953773355856804">
           <property name="flag" nameId="tpc2.1186414551515" value="true" />
         </node>
       </node>

@@ -63,12 +63,6 @@
     <node role="contents" roleId="x27k.6437088627575722833" type="yvrq.RtFeatureModel" typeId="yvrq.8882953773355574483" id="8882953773355744171">
       <link role="featureModel" roleId="yvrq.8882953773355584900" targetNodeId="8882953773355744100" resolveInfo="someFM" />
     </node>
-    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="8882953773355744172">
-      <property name="name" nameId="tpck.1169194664001" value="empty_1350766688685_6" />
-    </node>
-    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="8882953773355744173">
-      <property name="name" nameId="tpck.1169194664001" value="empty_1350766689301_7" />
-    </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="8882953773355744170">
       <property name="name" nameId="tpck.1169194664001" value="empty_1350766595816_5" />
     </node>
@@ -122,16 +116,34 @@
         <property name="const" nameId="mj1l.2941277002445651368" value="false" />
       </node>
       <node role="body" roleId="yz9a.6275792049641586525" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="8882953773355744117">
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="8882953773355828961">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="8882953773355856797">
           <property name="name" nameId="tpck.1169194664001" value="cfg1" />
-          <node role="type" roleId="mj1l.318113533128716676" type="yvrq.RtFeatureModelType" typeId="yvrq.8882953773355826085" id="8882953773355828962">
+          <node role="type" roleId="mj1l.318113533128716676" type="yvrq.RtFeatureModelType" typeId="yvrq.8882953773355826085" id="8882953773355856798">
             <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
             <property name="const" nameId="mj1l.2941277002445651368" value="false" />
             <link role="featureModel" roleId="yvrq.8882953773355826086" targetNodeId="8882953773355744171" resolveInfo="someFM" />
           </node>
-          <node role="init" roleId="c4fa.4185783222026502647" type="yvrq.CreateRtConfigExpr" typeId="yvrq.8882953773355830195" id="8882953773355835427">
-            <link role="rtFeatureModel" roleId="yvrq.8882953773355830456" targetNodeId="8882953773355744171" resolveInfo="someFM" />
-            <link role="configModel" roleId="yvrq.8882953773355830282" targetNodeId="8882953773355744176" resolveInfo="Cfg1" />
+        </node>
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="8882953773355857977">
+          <property name="name" nameId="tpck.1169194664001" value="cfg2" />
+          <node role="type" roleId="mj1l.318113533128716676" type="yvrq.RtFeatureModelType" typeId="yvrq.8882953773355826085" id="8882953773355857978">
+            <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+            <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+            <link role="featureModel" roleId="yvrq.8882953773355826086" targetNodeId="8882953773355744171" resolveInfo="someFM" />
+          </node>
+        </node>
+        <node role="statements" roleId="c4fa.4185783222026475862" type="yvrq.CreateRtConfigStatement" typeId="yvrq.8882953773355830195" id="8882953773355855931">
+          <link role="rtFeatureModel" roleId="yvrq.8882953773355830456" targetNodeId="8882953773355744171" resolveInfo="someFM" />
+          <link role="configModel" roleId="yvrq.8882953773355830282" targetNodeId="8882953773355744176" resolveInfo="Cfg1" />
+          <node role="target" roleId="yvrq.8882953773355838792" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="8882953773355856799">
+            <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="8882953773355856797" resolveInfo="cfg1" />
+          </node>
+        </node>
+        <node role="statements" roleId="c4fa.4185783222026475862" type="yvrq.CreateRtConfigStatement" typeId="yvrq.8882953773355830195" id="8882953773355857975">
+          <link role="rtFeatureModel" roleId="yvrq.8882953773355830456" targetNodeId="8882953773355744171" resolveInfo="someFM" />
+          <link role="configModel" roleId="yvrq.8882953773355830282" targetNodeId="8882953773355793962" resolveInfo="Cfg2" />
+          <node role="target" roleId="yvrq.8882953773355838792" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="8882953773355857979">
+            <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="8882953773355857977" resolveInfo="cfg2" />
           </node>
         </node>
       </node>
