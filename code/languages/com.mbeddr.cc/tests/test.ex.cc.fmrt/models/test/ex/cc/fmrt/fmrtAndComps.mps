@@ -18,8 +18,8 @@
   <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="3" implicit="yes" />
   <import index="yvrq" modelUID="r:2217bb25-9695-4af2-948e-8d9b31dd5a1a(com.mbeddr.cc.var.rt.structure)" version="2" implicit="yes" />
   <import index="p7vm" modelUID="r:28fa862e-f94d-4c39-bdf7-a4bdbc773888(com.mbeddr.ext.components.gen_nomw.structure)" version="0" implicit="yes" />
-  <import index="7pum" modelUID="r:18f5097e-f68a-4ea7-9bcf-c691e28486d6(com.mbeddr.cc.var.rt.comp.structure)" version="-1" implicit="yes" />
   <import index="v0r9" modelUID="r:277b15fc-1383-4213-8385-5a16481fa36c(com.mbeddr.ext.components.test.structure)" version="4" implicit="yes" />
+  <import index="7pum" modelUID="r:18f5097e-f68a-4ea7-9bcf-c691e28486d6(com.mbeddr.cc.var.rt.comp.structure)" version="-1" implicit="yes" />
   <roots>
     <node type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="8000796061690129290">
       <property name="name" nameId="tpck.1169194664001" value="FmRtAndComps" />
@@ -110,11 +110,10 @@
       <node role="contents" roleId="v7ag.6041318036222235020" type="v7ag.ComponentInstance" typeId="v7ag.4491876417845649014" id="8000796061690132559">
         <property name="name" nameId="tpck.1169194664001" value="cbig" />
         <link role="component" roleId="v7ag.4491876417845649015" targetNodeId="8000796061690129358" resolveInfo="C" />
-        <node role="initFieldInitializers" roleId="v7ag.785275130114861567" type="v7ag.InitFieldInitializer" typeId="v7ag.785275130114861597" id="8000796061690132560">
+        <node role="initFieldInitializers" roleId="v7ag.785275130114861567" type="v7ag.InitFieldInitializer" typeId="v7ag.785275130114861597" id="8000796061690176384">
           <link role="field" roleId="v7ag.785275130114861598" targetNodeId="8000796061690132531" resolveInfo="config" />
-          <node role="value" roleId="v7ag.785275130114861599" type="7pum.CreateConfigExpr" typeId="7pum.8000796061690145833" id="8000796061690146303">
-            <link role="rtFeatureModel" roleId="yvrq.8000796061690159789" targetNodeId="8000796061690132530" resolveInfo="CompFeatures" />
-            <link role="configModel" roleId="yvrq.8000796061690159814" targetNodeId="8000796061690169848" resolveInfo="CfgBig" />
+          <node role="value" roleId="v7ag.785275130114861599" type="7pum.CreateConfigExpr" typeId="7pum.8000796061690145833" id="8000796061690179861">
+            <link role="configModel" roleId="7pum.8000796061690159814" targetNodeId="8000796061690169848" resolveInfo="CfgBig" />
           </node>
         </node>
       </node>
@@ -123,9 +122,8 @@
         <link role="component" roleId="v7ag.4491876417845649015" targetNodeId="8000796061690129358" resolveInfo="C" />
         <node role="initFieldInitializers" roleId="v7ag.785275130114861567" type="v7ag.InitFieldInitializer" typeId="v7ag.785275130114861597" id="8000796061690170749">
           <link role="field" roleId="v7ag.785275130114861598" targetNodeId="8000796061690132531" resolveInfo="config" />
-          <node role="value" roleId="v7ag.785275130114861599" type="7pum.CreateConfigExpr" typeId="7pum.8000796061690145833" id="8000796061690170750">
-            <link role="rtFeatureModel" roleId="yvrq.8000796061690159789" targetNodeId="8000796061690132530" resolveInfo="CompFeatures" />
-            <link role="configModel" roleId="yvrq.8000796061690159814" targetNodeId="8000796061690170745" resolveInfo="CfgSmall" />
+          <node role="value" roleId="v7ag.785275130114861599" type="7pum.CreateConfigExpr" typeId="7pum.8000796061690145833" id="8000796061690180206">
+            <link role="configModel" roleId="7pum.8000796061690159814" targetNodeId="8000796061690170745" resolveInfo="CfgSmall" />
           </node>
         </node>
       </node>
