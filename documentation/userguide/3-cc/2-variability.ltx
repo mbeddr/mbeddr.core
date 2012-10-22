@@ -380,9 +380,8 @@ cannot be used where instances are created. Instead, we have created special
 support (\ic{CfgBig} and \ic{CfgSmall} are two configuration models for the
 \ic{CompFeatures} feature model):
 
-\begin{lstlisting}[language=mbeddr, morekeywords={feature, model, @, runtime,
-for, fmconfig, store, config, into, variant, default, init, internal}]
-instances instances extends nothing { 
+\begin{lstlisting}[language=mbeddr, morekeywords={instances, instance}]
+instances exampleInstances { 
   instance C cbig(config = CfgBig) 
   instance C csmall(config = CfgSmall) 
 }
