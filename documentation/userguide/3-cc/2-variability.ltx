@@ -319,7 +319,7 @@ the statement:
 for, fmconfig, store, config, into, variant}]
 variant<currentConfig>(f1 || f2 && !f3) { 
   x = 1;
-  int8 morestuff = x;
+  int8 morestuff = x; 
   callAFunction(x); 
 }  
 \end{lstlisting}
@@ -348,6 +348,48 @@ variant<currentConfig>(f3) { x = f3.attr; }
 
 Note that using the \ic{feature.attr} notation is only possible inside a
 \ic{variant} statement.
+
+\parhead{Configuring Components} A particularly useful case for runtime
+variability is the configuration of component instances. In this case you define
+a feature model for a component, and each instance has its own configuration
+model that determines the instance's configuration. Here is an example of a
+component:
+
+\begin{lstlisting}[language=mbeddr, morekeywords={feature, model, @, runtime,
+for, fmconfig, store, config, into, variant, default, init, internal}]
+exported component C extends nothing { 
+  
+  init fmconfig<CompFeatures> cfg; 
+  
+  internal int8 getNumber() <- no trigger { 
+    int8 x = 0; 
+    variant<cfg>(returnTheBigNumber) { x = 10; } 
+    return x; 
+  }  
+}
+\end{lstlisting}
+ 
+We have defined an init field for the component that is typed with an
+\ic{fmconfig<..>} type that references a feature model. We can then use the
+well-known \ic{variant} statement to make the code depend on features. 
+
+So far this is very similar to what we have described for non-component code
+earlier. The next step would be to use the \ic{store config} to assign an
+instance configuration. However, \ic{store config} is a \ic{Statement}, and it
+cannot be used where instances are created. Instead, we have created special
+support (\ic{CfgBig} and \ic{CfgSmall} are two configuration models for the
+\ic{CompFeatures} feature model):
+
+\begin{lstlisting}[language=mbeddr, morekeywords={feature, model, @, runtime,
+for, fmconfig, store, config, into, variant, default, init, internal}]
+instances instances extends nothing { 
+  instance C cbig(config = CfgBig) 
+  instance C csmall(config = CfgSmall) 
+}
+\end{lstlisting}
+
+
+
 
 \parhead{Verifying the Code} As of now, no verification for the code is
 available. However, in the future, the following verification will be supported:
