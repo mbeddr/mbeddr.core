@@ -71,3 +71,19 @@ instantiate a pattern.
 \begin{center} 
   \includegraphics[width=0.6\columnwidth]{figures/analyses/smDefiningCustomVC.png}
 \end{center}
+
+To start the verification, right-click on the state-machine node and select the 
+'Verify the state machine' menu.
+\begin{center} 
+  \includegraphics[width=0.6\columnwidth]{figures/analyses/smVerifyAction.png}
+\end{center}
+
+After starting the verify action, NuSMV code will be generated, then NuSMV will run
+(depending on the complexity of the state-machine, this might take a long time) and 
+the results will be lifted back and displayed in MPS. By clicking on the custom verification
+conditions, the counterexample will be displayed in the lower part of the window. By clicking 
+on a "state" in the counterexample table, the corresponding node will be highlighted 
+in the editor.
+\begin{center} 
+  \includegraphics[width=0.6\columnwidth]{figures/analyses/smVerificationResult.png}
+\end{center}
