@@ -1,3 +1,73 @@
 \section{Model-Checking State Machines}
 
 
+\subsection{Installation}
+
+State machines checking is based on the NuSMV symbolic model checker:\\
+\ic{http://nusmv.fbk.eu/}.
+To be able to use these analyses, NuSMV has to be installed on your machine
+and available in the search path.
+
+\subsection{Available Analyses}
+We support the following automatic analyses on state-machines:
+
+\begin{itemize}
+\item {\bf Unreachable states} checks whether all states can be reached.  Non-reachable 
+states represent dead-code.
+\item {\bf Not-fireable transitions} checks whether all transitions can be fired. Transitions 
+that cannot be fired represent as well dead code.
+\item {\bf Nondeterministic transitions} checks whether there are cases when 
+more transitions can be fired simultaneously. 
+\item {\bf Variable bounds} checks whether all integer variables remain inside 
+their defined bounds. 
+\end{itemize}
+
+In addition to the above analyses, users can define other, business-domain oriented 
+verification conditions by instantiating a well-known set of temporal logic patterns
+\footnote{A comprehensive catalogue of patters can be found here \url{http://patterns.projects.cis.ksu.edu/}}. 
+
+\subsection{Performing Analyses}
+The first step for analyzing decision tables is to add the devkit
+\ic{com.mbeddr.analyses.statemachine} to the model that contains the decision table.
+
+\begin{center} 
+  \includegraphics[width=0.6\columnwidth]{figures/analyses/smDevKitConfig.png}
+\end{center}
+
+Once the devkit is added to the model, you can mark a state machine as
+\ic{verifiable} by using an intention on the left-upper corner of the decision
+table. Once the \ic{verifiable} flag is set it will be displayed on the top of
+the state-machine. We support the analysis of only a subset of the 
+state-machines language provided by mbeddr. More precisely, we allow 
+only the following features:
+
+\begin{itemize}
+\item {\bf Data types:} all local variables, arguments of input or output events
+should have as type one of the following types: \ic{enumeration}, \ic{boolean}, 
+\ic{int8}, \ic{int16}, \ic{int32} and \ic{bounded\_int}. In particular, we do not 
+support \ic{floats} or \ic{structs}.
+\item {\bf No access to the global state:} we forbid accessing global variables 
+or calling global functions.
+\item {\bf Single assignment actions:} in each action of a statemachine a 
+variable can occur at most once on the left-hand-side.
+\end{itemize}
+
+Custom defined verification conditions are defined by instantiating patterns
+in the Inspector view of the node \ic{verifiable}. Each
+of these patterns has a temporal scope (\ie Global, Before, After, Between Q and R, 
+After Q Until R) that restricts a certain basic property (\ie P, not P, S Responds to P).
+In the figure below we illustrate the temporal scope of the patterns.
+
+\begin{center} 
+  \includegraphics[width=0.8\columnwidth]{figures/analyses/smPropertyPatterns.png}
+\end{center}
+
+To define a new verification condition, click on the \ic{verifiable} node and in Inspector view 
+instantiate a pattern.
+\begin{center} 
+  \includegraphics[width=0.6\columnwidth]{figures/analyses/smCustomVCDefinition.png}
+\end{center}
+
+\begin{center} 
+  \includegraphics[width=0.6\columnwidth]{figures/analyses/smDefiningCustomVC.png}
+\end{center}
