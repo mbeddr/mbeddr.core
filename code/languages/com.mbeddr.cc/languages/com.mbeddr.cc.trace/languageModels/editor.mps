@@ -59,8 +59,22 @@
           </node>
         </node>
         <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.BracketColorStyleClassItem" typeId="tpc2.1186413799158" id="439567521322929303">
-          <node role="query" roleId="tpc2.1186403803051" type="tpc2.RGBColor" typeId="tpc2.1225456267680" id="439567521322929304">
-            <property name="value" nameId="tpc2.1225456424731" value="A3F0B1" />
+          <node role="query" roleId="tpc2.1186403803051" type="tpc2.QueryFunction_Color" typeId="tpc2.1176809959526" id="4837632670852786612">
+            <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="4837632670852786613">
+              <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="4837632670852786614">
+                <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="4837632670852786664">
+                  <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="4837632670852786636">
+                    <node role="operand" roleId="tpee.1197027771414" type="tpc2.ConceptFunctionParameter_node" typeId="tpc2.1142886811589" id="4837632670852786615" />
+                    <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="4837632670852786642">
+                      <link role="link" roleId="tp25.1138056516764" targetNodeId="26ao.439567521322928995" />
+                    </node>
+                  </node>
+                  <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_ConceptMethodCall" typeId="tp25.1179409122411" id="4837632670852786670">
+                    <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="y6af.4837632670852786571" resolveInfo="getTraceColor" />
+                  </node>
+                </node>
+              </node>
+            </node>
           </node>
         </node>
       </node>
@@ -80,9 +94,8 @@
           <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.DefaultCaretPositionStyleClassItem" typeId="tpc2.1214472762472" id="439567521322929310">
             <property name="position" nameId="tpc2.1214472762473" value="FIRST" />
           </node>
-          <node role="emptyCellModel" roleId="tpc2.1140524464359" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="439567521322929311">
-            <property name="text" nameId="tpc2.1073389577007" value="..." />
-            <link role="styleClass" roleId="tpc2.1186406756722" targetNodeId="vrqd.3134547887598403854" resolveInfo="nothing" />
+          <node role="emptyCellModel" roleId="tpc2.1140524464359" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="4837632670852781412">
+            <property name="text" nameId="tpc2.1073389577007" value="" />
           </node>
         </node>
         <node role="renderingCondition" roleId="tpc2.1142887637401" type="tpc2.QueryFunction_NodeCondition" typeId="tpc2.1142886221719" id="439567521322929312">
@@ -92,6 +105,25 @@
                 <node role="operand" roleId="tpee.1197027771414" type="tpc2.ConceptFunctionParameter_node" typeId="tpc2.1142886811589" id="439567521322929316" />
                 <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_ConceptMethodCall" typeId="tp25.1179409122411" id="439567521322929317">
                   <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="y6af.439567521322929156" resolveInfo="shouldBeShown" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.BackgroundColorStyleClassItem" typeId="tpc2.1186404574412" id="4837632670852781413">
+          <node role="query" roleId="tpc2.1186403803051" type="tpc2.QueryFunction_Color" typeId="tpc2.1176809959526" id="4837632670852786671">
+            <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="4837632670852786672">
+              <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="4837632670852786673">
+                <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="4837632670852786674">
+                  <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="4837632670852786675">
+                    <node role="operand" roleId="tpee.1197027771414" type="tpc2.ConceptFunctionParameter_node" typeId="tpc2.1142886811589" id="4837632670852786676" />
+                    <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="4837632670852786677">
+                      <link role="link" roleId="tp25.1138056516764" targetNodeId="26ao.439567521322928995" />
+                    </node>
+                  </node>
+                  <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_ConceptMethodCall" typeId="tp25.1179409122411" id="4837632670852786678">
+                    <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="y6af.4837632670852786571" resolveInfo="getTraceColor" />
+                  </node>
                 </node>
               </node>
             </node>
@@ -160,11 +192,6 @@
     </node>
     <node role="styleClass" roleId="tpc2.1186402402630" type="tpc2.StyleSheetClass" typeId="tpc2.1186402373407" id="439567521322965058">
       <property name="name" nameId="tpck.1169194664001" value="trace" />
-      <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.BackgroundColorStyleClassItem" typeId="tpc2.1186404574412" id="439567521322965059">
-        <node role="query" roleId="tpc2.1186403803051" type="tpc2.RGBColor" typeId="tpc2.1225456267680" id="439567521322965060">
-          <property name="value" nameId="tpc2.1225456424731" value="A3F0B1" />
-        </node>
-      </node>
       <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.FontSizeStyleClassItem" typeId="tpc2.1186415722038" id="439567521322965061">
         <property name="value" nameId="tpc2.1221209241505" value="11" />
       </node>
