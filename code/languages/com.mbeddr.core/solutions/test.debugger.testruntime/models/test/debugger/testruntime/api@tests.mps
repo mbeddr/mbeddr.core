@@ -15,7 +15,7 @@
   <import index="e2lb" modelUID="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" version="-1" />
   <import index="f655" modelUID="f:java_stub#85d9f97b-1654-4692-b61c-fcc40db03653#com.google.inject.name(Eclipse.Debugger/com.google.inject.name@java_stub)" version="-1" />
   <import index="ph2v" modelUID="f:java_stub#742f6602-5a2f-4313-aa6e-ae1cd4ffdc61#com.intellij.openapi.project(MPS.Platform/com.intellij.openapi.project@java_stub)" version="-1" />
-  <import index="f4q1" modelUID="f:java_stub#4fc172ca-eba3-43f9-a91d-0e1e886544ed#org.easymock(bla/org.easymock@java_stub)" version="-1" />
+  <import index="s0qc" modelUID="f:java_stub#fa1d9f5d-d5ce-44c5-94ac-ba5f1a1fba8e#org.easymock(test.debugger.core/org.easymock@java_stub)" version="-1" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="tpee" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="4" implicit="yes" />
   <import index="tpe3" modelUID="r:00000000-0000-4000-0000-011c895902d7(jetbrains.mps.baseLanguage.unitTest.structure)" version="-1" implicit="yes" />
@@ -69,7 +69,7 @@
                           </node>
                           <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="58136174828502956">
                             <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="nybc.~LinkedBindingBuilder%dto(java%dlang%dClass)%ccom%dgoogle%dinject%dbinder%dScopedBindingBuilder" resolveInfo="to" />
-                            <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.ClassifierClassExpression" typeId="tpee.1116615150612" id="58136174828166171">
+                            <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.ClassifierClassExpression" typeId="tpee.1116615150612" id="7890665228155812955">
                               <link role="classifier" roleId="tpee.1116615189566" targetNodeId="nety.6344267290061051677" resolveInfo="TRSessionImpl" />
                             </node>
                           </node>
@@ -85,10 +85,10 @@
                           </node>
                           <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="58136174828502961">
                             <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="nybc.~LinkedBindingBuilder%dtoInstance(java%dlang%dObject)%cvoid" resolveInfo="toInstance" />
-                            <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="58136174828499012">
-                              <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="f4q1.~EasyMock" resolveInfo="EasyMock" />
-                              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="f4q1.~EasyMock%dcreateMock(java%dlang%dClass)%cjava%dlang%dObject" resolveInfo="createMock" />
-                              <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.ClassifierClassExpression" typeId="tpee.1116615150612" id="58136174828499013">
+                            <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="7890665228155812939">
+                              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="s0qc.~EasyMock%dcreateMock(java%dlang%dClass)%cjava%dlang%dObject" resolveInfo="createMock" />
+                              <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="s0qc.~EasyMock" resolveInfo="EasyMock" />
+                              <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.ClassifierClassExpression" typeId="tpee.1116615150612" id="7890665228155812940">
                                 <link role="classifier" roleId="tpee.1116615189566" targetNodeId="x30c.2581466085546042417" resolveInfo="IMSession" />
                               </node>
                             </node>
@@ -105,10 +105,10 @@
                           </node>
                           <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="58136174828502966">
                             <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="nybc.~LinkedBindingBuilder%dtoInstance(java%dlang%dObject)%cvoid" resolveInfo="toInstance" />
-                            <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="58136174828499015">
-                              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="f4q1.~EasyMock%dcreateMock(java%dlang%dClass)%cjava%dlang%dObject" resolveInfo="createMock" />
-                              <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="f4q1.~EasyMock" resolveInfo="EasyMock" />
-                              <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.ClassifierClassExpression" typeId="tpee.1116615150612" id="58136174828499016">
+                            <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="7890665228155812945">
+                              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="s0qc.~EasyMock%dcreateMock(java%dlang%dClass)%cjava%dlang%dObject" resolveInfo="createMock" />
+                              <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="s0qc.~EasyMock" resolveInfo="EasyMock" />
+                              <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.ClassifierClassExpression" typeId="tpee.1116615150612" id="7890665228155812946">
                                 <link role="classifier" roleId="tpee.1116615189566" targetNodeId="nety.6344267290060870157" resolveInfo="ITRProgramState" />
                               </node>
                             </node>
@@ -125,10 +125,10 @@
                           </node>
                           <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="58136174828502971">
                             <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="nybc.~LinkedBindingBuilder%dtoInstance(java%dlang%dObject)%cvoid" resolveInfo="toInstance" />
-                            <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="58136174828499024">
-                              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="f4q1.~EasyMock%dcreateMock(java%dlang%dClass)%cjava%dlang%dObject" resolveInfo="createMock" />
-                              <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="f4q1.~EasyMock" resolveInfo="EasyMock" />
-                              <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.ClassifierClassExpression" typeId="tpee.1116615150612" id="58136174828499025">
+                            <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="7890665228155812942">
+                              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="s0qc.~EasyMock%dcreateMock(java%dlang%dClass)%cjava%dlang%dObject" resolveInfo="createMock" />
+                              <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="s0qc.~EasyMock" resolveInfo="EasyMock" />
+                              <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.ClassifierClassExpression" typeId="tpee.1116615150612" id="7890665228155812943">
                                 <link role="classifier" roleId="tpee.1116615189566" targetNodeId="nety.2548616506917899970" resolveInfo="ITRBreakpointRegistry" />
                               </node>
                             </node>
@@ -145,10 +145,10 @@
                           </node>
                           <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="58136174828502976">
                             <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="nybc.~LinkedBindingBuilder%dtoInstance(java%dlang%dObject)%cvoid" resolveInfo="toInstance" />
-                            <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="58136174828499021">
-                              <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="f4q1.~EasyMock" resolveInfo="EasyMock" />
-                              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="f4q1.~EasyMock%dcreateMock(java%dlang%dClass)%cjava%dlang%dObject" resolveInfo="createMock" />
-                              <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.ClassifierClassExpression" typeId="tpee.1116615150612" id="58136174828499022">
+                            <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="7890665228155812948">
+                              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="s0qc.~EasyMock%dcreateMock(java%dlang%dClass)%cjava%dlang%dObject" resolveInfo="createMock" />
+                              <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="s0qc.~EasyMock" resolveInfo="EasyMock" />
+                              <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.ClassifierClassExpression" typeId="tpee.1116615150612" id="7890665228155812949">
                                 <link role="classifier" roleId="tpee.1116615189566" targetNodeId="nety.2548616506917899963" resolveInfo="ITRStepper" />
                               </node>
                             </node>
@@ -165,10 +165,10 @@
                           </node>
                           <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="58136174828502981">
                             <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="nybc.~LinkedBindingBuilder%dtoInstance(java%dlang%dObject)%cvoid" resolveInfo="toInstance" />
-                            <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="58136174828499018">
-                              <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="f4q1.~EasyMock" resolveInfo="EasyMock" />
-                              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="f4q1.~EasyMock%dcreateMock(java%dlang%dClass)%cjava%dlang%dObject" resolveInfo="createMock" />
-                              <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.ClassifierClassExpression" typeId="tpee.1116615150612" id="58136174828499019">
+                            <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="7890665228155812951">
+                              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="s0qc.~EasyMock%dcreateMock(java%dlang%dClass)%cjava%dlang%dObject" resolveInfo="createMock" />
+                              <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="s0qc.~EasyMock" resolveInfo="EasyMock" />
+                              <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.ClassifierClassExpression" typeId="tpee.1116615150612" id="7890665228155812952">
                                 <link role="classifier" roleId="tpee.1116615189566" targetNodeId="cu2c.~SModel" resolveInfo="SModel" />
                               </node>
                             </node>
