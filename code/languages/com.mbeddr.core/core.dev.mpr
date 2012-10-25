@@ -46,7 +46,6 @@
       <modulePath path="${project}/languages/com.mbeddr.core.util/solutions/pluginSolution/pluginSolution.msd" folder="core-extended.solutions" />
       <modulePath path="${project}/languages/com.mbeddr.core.util/util.mpl" folder="core-extended" />
       <modulePath path="${project}/solutions/com.mbeddr.core.statistics/statistics.msd" folder="core.solutions" />
-      <modulePath path="${project}/solutions/test.debugger.testruntime/testruntime.msd" folder="tests.debugger" />
       <modulePath path="${project}/tests/aLibrary/aLibrary.msd" folder="tests" />
       <modulePath path="${project}/tests/test.cstub.core/core.msd" folder="tests.cstub" />
       <modulePath path="${project}/tests/test.cstub.testheader.expressions/expressions.msd" folder="tests.cstub" />
