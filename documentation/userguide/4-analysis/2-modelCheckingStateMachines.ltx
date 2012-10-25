@@ -1,0 +1,121 @@
+\section{Model-Checking State Machines}
+
+
+\subsection{Installation}
+
+State machines checking is based on the NuSMV symbolic model checker:\\
+\ic{http://nusmv.fbk.eu/}.
+To be able to use these analyses, NuSMV has to be installed on your machine
+and available in the search path.
+
+\subsection{Available Analyses}
+
+mbeddr supports two kinds of model checking: automatic and custom. The automatic
+analyses are executed whenever any state machine is verified. The custom
+analyses have to be contributed manually by the user. mbeddr supports the
+following automatic analyses on state-machines:
+ 
+\begin{description}
+  \item[Unreachable States] checks whether all states can be reached somehow. 
+  Non-reachable states represent "dead-code" and are reported as errors.
+  \item[Not-fireable Transitions] checks whether all transitions can be fired. 
+  Transitions that cannot be fired represent dead code as well and are flagged.
+  \item[Nondeterministic Transitions] checks whether there are cases when 
+  more transitions can be fired simultaneously. Specifically, this means that
+  several transitions react on the same event and have overlapping guard
+  conditions.
+  \item[Variable Bounds] Integral variables in state machines are bounded
+  explicitly. This verification checks whether all variables remain
+  inside their defined bounds.
+\end{description}
+
+In addition to the above analyses, users can define other, application
+domain-oriented verification conditions by instantiating a well-known set of 
+temporal logic patterns\footnote{A comprehensive catalogue of patters can be found here
+\url{http://patterns.projects.cis.ksu.edu/}}. A special DSL that is easier to
+use than the underlying CTL specifications is available.
+
+\subsection{Performing Analyses}
+
+\parhead{Restrictions} We support the analysis of only a subset of the
+state-machines language provided by mbeddr. More precisely, we allow only the
+following features:
+
+\begin{itemize}
+\item {\bf Data types:} all local variables, arguments of input or output events
+should have as type one of the following types: \ic{enumeration}, \ic{boolean}, 
+\ic{int8}, \ic{int16}, \ic{int32} and \ic{bounded\_int}. In particular, we do not 
+support \ic{floats} or \ic{structs}.
+\item {\bf No access to global state:} accessing global variables 
+or calling global functions is not allowed. Mapping out-events to arbitrary
+functions is legal, though.
+\item {\bf Single assignment actions:} in each effective action executed as a
+consequence of an event (i.e. exit action of the current state + transition
+action + entry action of the target state), a variable can be assigned only
+once.
+\end{itemize}
+
+If a particular state machine does not conform to these restrictions and error
+is reported. No verification is possible in this case.
+
+
+\parhead{Running the Verification} The first step for analyzing decision tables
+is to add the devkit \ic{com.mbeddr.analyses.statemachine} to the model that
+contains the state machine that should be verified.
+
+\begin{center} 
+  \includegraphics[width=0.6\columnwidth]{figures/analyses/smDevKitConfig.png}
+\end{center}
+
+Once the devkit is added to the model, you can mark a state machine as
+\ic{verifiable} by using an intention on the state machine. Once the
+\ic{verifiable} flag is set it will be displayed on the top of the
+state-machine. 
+
+To start the verification, right-click on the state-machine node and select the
+\ic{Verify State Machine} menu item. By default, only the automatic
+verifications will be executed. Adding custom conditions is described below.
+\begin{center} 
+  \includegraphics[width=0.6\columnwidth]{figures/analyses/smVerifyAction.png}
+\end{center}
+
+
+After starting the verify action, NuSMV code will be generated, then NuSMV will
+run (depending on the complexity of the state-machine, this might take a long
+time) and the results will be lifted back and displayed in a table in a separate
+window. 
+
+\begin{center} 
+  \includegraphics[width=\columnwidth]{figures/analyses/smVerificationResult.png}
+\end{center}
+
+Successful verifications are marked with \ic{Success}. Failed verifications are
+marked with \ic{FAIL}. Clicking on a failed verification shows the counter
+example in the table below. The counter example represents an example execution
+of the state machine (i.e. sequence of steps) that leads to a violation of that
+particular verification condition. By clicking on a state in the
+counterexample table, the corresponding node will be highlighted in the editor.
+
+
+\parhead{Custom Conditions} Custom defined verification conditions are defined
+by instantiating patterns in the Inspector view of the node \ic{verifiable}.
+Each of these patterns has a temporal scope (\ie \ic{Global}, \ic{Before}, 
+\ic{After}, \ic{Between Q and R}, \ic{After Q Until R}) that restricts a certain
+basic property (\ie \ic{P}, \ic{not P}, \ic{S Responds to P}).
+In the figure below we illustrate the temporal scope of the patterns.
+
+\begin{center} 
+  \includegraphics[width=0.8\columnwidth]{figures/analyses/smPropertyPatterns.png}
+\end{center}
+
+To define a new verification condition, click on the \ic{verifiable} node and in
+Inspector view instantiate a pattern.
+\begin{center} 
+  \includegraphics[width=0.6\columnwidth]{figures/analyses/smCustomVCDefinition.png}
+\end{center}
+
+\begin{center} 
+  \includegraphics[width=0.6\columnwidth]{figures/analyses/smDefiningCustomVC.png}
+\end{center}
+
+

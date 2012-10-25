@@ -1,0 +1,105 @@
+\chapter{mbeddr.analyses --- Default Formal Analyses}
+
+Besides improvements in productivity, the higher level extensions of C allow the
+definition of automatic and usable formal analyses. In this chapter we describe
+the use of these analyses.
+
+
+% \begin{itemize}
+% \item {\bf NuSMV} - \url{http://nusmv.fbk.eu/}
+% \item {\bf Yices} - \url{http://yices.csl.sri.com/download.shtml}
+% \item {\bf CBMC} - \url{http://www.cprover.org/cbmc/}
+% \end{itemize}
+
+
+\section{Checking Decision Tables}
+
+
+\subsection{Installation}
+
+Decision tables checking is based on the Yices SMT solver:\\
+\ic{http://yices.csl.sri.com/download.shtml}
+
+To be able to use these analyses, the solver has to be installed on your machine
+and available in the search path.
+
+
+\subsection{Available Analyses}
+
+A decision table is a more elegant and explicit way of coding two dimensional
+choices. Internally they are represented as nested \ic{if}-statements. For
+decision tables we define two analyses:
+
+\begin{enumerate}
+\item {\bf Completeness} checks if the decision table covers all possible cases.
+\item {\bf Consistency} checks if there are cases for which two cells of the decision table can 
+be active at the same time.
+\end{enumerate}
+
+As long as the expressions used as conditions are "simple", the above analyses
+can be automatically performed by using an SMT (satisfiability modulo theories)
+solve.\markus{We should explain what simple means (we have described it in
+some paper from which we can copy it)}
+
+% \begin{center} 
+%   \includegraphics[width=0.6\columnwidth]{figures/analyses/decTabExample.png}
+% \end{center}
+
+
+\subsection{Performing the Analyses}
+
+The first step for analyzing decision tables is to add the devkit
+\ic{com.mbeddr.analyses.dectab} to the model that contains the decision table.
+
+\begin{center} 
+  \includegraphics[width=0.6\columnwidth]{figures/analyses/decTabDevKitConfig.png}
+\end{center}
+
+Once the devkit is added to the model, you can mark a decision table as
+\ic{verifiable} by using an intention on the left-upper corner of the decision
+table. Once the \ic{verifiable} flag is set it will be displayed on the
+right-hand-side of the table (underlined with red in the figure below).
+
+\begin{center} 
+  \includegraphics[width=0.8\columnwidth]{figures/analyses/decTabMarkAsVerifiable.png}
+\end{center}
+
+On a decision table marked as verifiable, the verification can be run with the
+help of a context menu entry. 
+\begin{center} 
+  \includegraphics[width=0.6\columnwidth]{figures/analyses/decTabVerifyAction.png}
+\end{center}
+
+Once the action is started, the corresponding Yices code is generated, Yices is
+started in the background and the results of the verification results will be
+lifted (i.e. interpreted in the context of the decision table) and presented in
+a separate window:
+
+\begin{center} 
+  \includegraphics[width=0.6\columnwidth]{figures/analyses/decTabResult.png}
+\end{center}
+
+Above we had mentioned that the expressions in the decision table have to be
+"simple". More specifically, the expressions have to \emph{linear}. If they are
+not, the table cannot be analyzed. A set of automatic checks are performed by
+MPS to assure that the conditions used in the top line and left column of the
+decision table meet the linearity limitations. If they are not, an error message
+is displayed with an explanation about the cause. In this case the completeness
+and consistency analyses cannot be run.
+\begin{center} 
+  \includegraphics[width=0.8\columnwidth]{figures/analyses/decTabLinearArithmetics.png}
+\end{center}
+
+Similar to the analysis of decision tables is also the analysis of \ic{gswitch} constructs: after 
+marking a gswitch as verifiable (through an intention) the verification can be started and 
+the verification results concerning the completeness of the gswitch are shown in a window.
+The conditions used in the gswitch should have "the same form" as those used in the decision 
+tables.
+
+\begin{center} 
+  \includegraphics[width=0.8\columnwidth]{figures/analyses/gswitchVerifyAction.png}
+\end{center}
+
+\begin{center} 
+  \includegraphics[width=0.6\columnwidth]{figures/analyses/gswitchResult.png}
+\end{center}
