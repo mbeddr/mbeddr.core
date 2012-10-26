@@ -7,6 +7,7 @@
   <component name="MPSProject">
     <projectModules>
       <modulePath path="${project}/languages/com.mbeddr.core.debug.blext/blext.mpl" />
+      <modulePath path="${project}/languages/com.mbeddr.core.debug.spawner/data/Eclipse.Debugger/Debugger.msd" />
       <modulePath path="${project}/languages/com.mbeddr.core.debug.spawner/spawner.msd" />
       <modulePath path="${project}/languages/com.mbeddr.core.debug/debug.mpl" />
     </projectModules>
