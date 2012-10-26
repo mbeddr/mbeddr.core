@@ -2,7 +2,15 @@
 <solution name="test.debugger.testruntime" uuid="2c7b1490-d104-4499-b285-2c3e32b4e50d" pluginKind="PLUGIN_OTHER" compileInMPS="true">
   <models>
     <modelRoot path="${solution_descriptor}/models" />
+    <modelRoot path="${mbeddr.github.core.home}/code/languages/com.mbeddr.core/tests/test.debugger.core/libs/easymock-3.1.jar">
+      <manager moduleId="f3061a53-9226-4cc5-a443-f952ceaf5816" className="jetbrains.mps.baseLanguage.stubs.JavaStubs" />
+    </modelRoot>
   </models>
+  <stubModelEntries>
+    <stubModelEntry path="${mbeddr.github.core.home}/code/languages/com.mbeddr.core/tests/test.debugger.core/libs/easymock-3.1.jar">
+      <manager moduleId="f3061a53-9226-4cc5-a443-f952ceaf5816" className="jetbrains.mps.baseLanguage.stubs.JavaStubs" />
+    </stubModelEntry>
+  </stubModelEntries>
   <sourcePath />
   <dependencies>
     <dependency reexport="false">85d9f97b-1654-4692-b61c-fcc40db03653(Eclipse.Debugger)</dependency>
