@@ -90,15 +90,19 @@ and consistency analyses cannot be run.
   \includegraphics[width=0.8\columnwidth]{figures/analyses/decTabLinearArithmetics.png}
 \end{center}
 
-Similar to the analysis of decision tables is also the analysis of \ic{gswitch} constructs: after 
-marking a gswitch as verifiable (through an intention) the verification can be started and 
-the verification results concerning the completeness of the gswitch are shown in a window.
-The conditions used in the gswitch should have "the same form" as those used in the decision 
-tables.
+\parhead{gswitch} A \ic{gswitch} (which is short for generic switch) is
+essentially a set of \ic{if}-statements expressed with a more concise syntax. It
+can also be seen as a one-dimensional decision table. Consequently, the same
+analyses are available: after marking a \ic{gswitch} as \ic{verifiable}
+(using an intention) the verification can be started: 
 
 \begin{center} 
   \includegraphics[width=0.8\columnwidth]{figures/analyses/gswitchVerifyAction.png}
 \end{center}
+
+The verification results concerning the completeness of the gswitch are shown in
+a window. The conditions used in the gswitch should have "the same form" as
+those used in the decision tables.
 
 \begin{center} 
   \includegraphics[width=0.6\columnwidth]{figures/analyses/gswitchResult.png}
