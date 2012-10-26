@@ -87,7 +87,7 @@
           <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="8628756186118765771">
             <property name="head" nameId="3ior.8618885170173601779" value="languages" />
             <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="8628756186118765772">
-              <property name="head" nameId="3ior.8618885170173601779" value="com.mbeddr.core" />
+              <property name="head" nameId="3ior.8618885170173601779" value="com.mbeddr.debugger" />
             </node>
           </node>
         </node>
