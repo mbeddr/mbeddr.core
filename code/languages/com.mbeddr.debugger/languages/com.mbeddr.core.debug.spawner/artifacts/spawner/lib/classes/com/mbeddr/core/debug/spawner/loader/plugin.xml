@@ -1,0 +1,15 @@
+<!DOCTYPE idea-plugin
+  PUBLIC
+    "Plugin/DTD"
+    "http://plugins.intellij.net/plugin.dtd"
+>
+<idea-plugin>
+  <name>Spawner Loader</name>
+  <id>com.mbeddr.core.spawnerLoader</id>
+  <version>1.0</version>
+  <application-components>
+    <component>
+      <implementation-class>com.mbeddr.core.debug.spawner.loader.SpawnerLoader25</implementation-class>
+    </component>
+  </application-components>
+</idea-plugin>

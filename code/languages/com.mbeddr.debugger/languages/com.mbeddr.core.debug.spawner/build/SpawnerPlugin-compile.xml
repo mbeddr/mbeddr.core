@@ -1,0 +1,34 @@
+<project name="SpawnerPlugin-compile" default="compile.all">
+  <property file="${ant.file}/../SpawnerPlugin.properties" />
+  <path id="common.classpath">
+    <path path="${mps_home}/lib/annotations.jar" />
+    <path path="${mps_home}/lib/asm.jar" />
+    <path path="${mps_home}/lib/beansbinding-1.2.1.jar" />
+    <path path="${mps_home}/lib/commons-lang-2.4.jar" />
+    <path path="${mps_home}/lib/commons-logging-1.1.1.jar" />
+    <path path="${mps_home}/lib/diffutils-1.2.1.jar" />
+    <path path="${mps_home}/lib/extensions.jar" />
+    <path path="${mps_home}/lib/guava-11.0.1.jar" />
+    <path path="${mps_home}/lib/jdom.jar" />
+    <path path="${mps_home}/lib/log4j.jar" />
+    <path path="${mps_home}/lib/mps-closures.jar" />
+    <path path="${mps_home}/lib/mps-collections.jar" />
+    <path path="${mps_home}/lib/mps-core.jar" />
+    <path path="${mps_home}/lib/mps-editor-api.jar" />
+    <path path="${mps_home}/lib/mps-editor.jar" />
+    <path path="${mps_home}/lib/mps-platform.jar" />
+    <path path="${mps_home}/lib/mps-tuples.jar" />
+    <path path="${mps_home}/lib/mps-workbench.jar" />
+    <path path="${mps_home}/lib/org.eclipse.jdt.core_3.5.2.v_981_R35x.jar" />
+    <path path="${mps_home}/lib/picocontainer.jar" />
+    <path path="${mps_home}/lib/platform-api.jar" />
+    <path path="${mps_home}/lib/platform.jar" />
+    <path path="${mps_home}/lib/sanselan-0.98-snapshot.jar" />
+    <path path="${mps_home}/lib/tools.jar" />
+    <path path="${mps_home}/lib/trove4j.jar" />
+    <path path="${mps_home}/lib/util.jar" />
+    <path path="${mps_home}/lib/xstream.jar" />
+  </path>
+  <target name="compile.all" />
+  <target name="clean.classes" />
+</project>
