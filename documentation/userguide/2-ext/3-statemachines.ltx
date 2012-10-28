@@ -122,7 +122,7 @@ exit { send wrapped(steps); }
 
 \subsection{The complete WrappingCounter state machine}
 
-\begin{lstlisting}[language=mbeddr, morekeywords={}]
+\begin{lstlisting}[language=mbeddr, morekeywords={smtrigger, var, entry, exit}]
 module WrappingCounterModule imports nothing { 
    
   statemachine WrappingCounter initial = start { 
@@ -130,23 +130,23 @@ module WrappingCounterModule imports nothing {
       in reset() 
       out wrapped(int[0..100] steps) -> wrapped 
 
-      var int[0..100] current = 0 
+      var int[0..100] curr = 0 
       var int[0..100] LIMIT = 100 
       var int[0..100] steps = 0 
 
       state start { 
         entry { 
-          current = 0; 
+          curr = 0; 
           steps = 0; 
         } 
-        on increment [ ] -> increasing { current = current + delta; } 
+        on increment [ ] -> increasing { curr = curr + delta; } 
         on reset [ ] -> start {  } 
       } 
 
       state increasing { 
         entry { steps++; } 
-        on increment [current + delta <= LIMIT] -> increasing { current = current + delta; } 
-        on increment [current + delta > LIMIT] -> start { current = 0; } 
+        on increment [curr + delta <= LIMIT] -> increasing { curr = curr + delta; } 
+        on increment [curr + delta > LIMIT] -> start { curr = 0; } 
         on reset [ ] -> start {  } 
         exit { send wrapped(steps); } 
       } 
@@ -156,7 +156,7 @@ module WrappingCounterModule imports nothing {
     // do something
   }  
    
-  var WrappingCounter wc; 
+  WrappingCounter wc; 
    
   void someFunctionCalledByADriver(int8 ticks) { 
     smtrigger(wc, increment(ticks)); 
