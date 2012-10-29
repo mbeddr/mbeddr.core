@@ -15,6 +15,9 @@
   <property name="mbeddr.core.project.dir" value="code/languages/com.mbeddr.core"/>
   <property name="mbeddr.core.project.mpr" value="code/languages/com.mbeddr.core/core.dev.mpr"/>
   
+  <property name="debugger.project.dir" value="code/languages/com.mbeddr.debugger/"/>
+  <property name="debugger.project.mpr" value="code/languages/com.mbeddr.debugger/debugger.dev.mpr"/>
+  
   <property name="mbeddr.ext.project.dir" value="code/languages/com.mbeddr.ext"/>
   <property name="mbeddr.ext.project.mpr" value="code/languages/com.mbeddr.ext/ext.dev.mpr"/> <!-- for the time being in core project... -->
   
@@ -24,7 +27,7 @@
   <property name="utilLanguageDir" value="${mbeddr.github.core.home}/${util.project.dir}/languages"/>  
   <property name="coreLanguageDir" value="${mbeddr.github.core.home}/${mbeddr.core.project.dir}/languages"/>  
   <property name="extLanguageDir" value="${mbeddr.github.core.home}/${mbeddr.ext.project.dir}/languages"/>  
-  
+  <property name="debuggerLanguageDir" value="${mbeddr.github.core.home}/${debugger.project.dir}/languages"/>
 
     <jvmargs id="myargs">
       <arg value="-ea"/>
@@ -55,6 +58,8 @@
       <macro name="mbeddr.github.core.home" path="${mbeddr.github.core.home}"/>
       <library name="mbeddr.project" dir="${coreLanguageDir}"/>
       <library name="util.languages" dir="${utilLanguageDir}"/>
+      <library name="debugger.languages" dir="${debuggerLanguageDir}"/>
+      
       <modules dir="${mbeddr.github.core.home}/${mbeddr.ext.project.dir}/languages"/>
       <modules dir="${mbeddr.github.core.home}/${mbeddr.ext.project.dir}/lib"/>
     </mps.generate>
@@ -79,6 +84,8 @@
       <library name="mbeddr.ext" dir="${extLanguageDir}"/>
       <library name="mbeddr.core" dir="${coreLanguageDir}"/>
       <library name="util.languages" dir="${utilLanguageDir}"/>
+      <library name="debugger.languages" dir="${debuggerLanguageDir}"/>
+      
 	  <!-- executable tests -->
       <modules dir="${mbeddr.github.core.home}/${mbeddr.ext.project.dir}/tests/"/>
   
