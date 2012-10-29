@@ -81,8 +81,9 @@
       <jvmargs id="myargs"/>
       <macro name="mbeddr.github.core.home" path="${mbeddr.github.core.home}"/>
 
-      <library name="mbeddr.project" dir="${extLanguageDir}"/>
-      <library name="mbeddr.project" dir="${coreLanguageDir}"/>
+      <library name="mbeddr.ext" dir="${extLanguageDir}"/>
+      <library name="mbeddr.ext.lib" dir="${extLanguageDir}/../lib"/>
+      <library name="mbeddr.core" dir="${coreLanguageDir}"/>
       <library name="util.languages" dir="${utilLanguageDir}"/>
       <library name="debugger.languages" dir="${debuggerLanguageDir}"/>
       
