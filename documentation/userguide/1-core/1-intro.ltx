@@ -119,7 +119,13 @@ things running:
   \item Clone the repository onto your local machine.
   \item Rebuild all the languages. We provide a shell script for this purpose 
   (\ic{.bat} and \ic{.sh}) called \ic{rebuildLanguagesAfterCheckout}. 
-  It is in the \ic{code/languages} directory.
+  It is in the \ic{code/languages} directory. For this to work, you have to
+  configure all \ic{build.properties} files to point to your MPS install dir and
+  the mbeddr root dir. The easiest way to find all the places where this has to
+  be adapted is to search for all \ic{build.properties.example} under the mbeddr
+  root mbeddr directory; remove the \ic{.example} and fill in the respective
+  directories.
+
   \item We now have to make the project aware of the \ic{mbeddr.core} languages
   in the github checkout. Go to the $File \rightarrow Settings$ (on the
   Mac it is under $MPS \rightarrow Preferences$) and select the $Global
