@@ -181,7 +181,7 @@
       </node>
       <node role="containerName" roleId="kdzh.6592112598314855574" type="3ior.BuildStringNotEmpty" typeId="3ior.841011766566059607" id="8628756186118983451">
         <node role="parts" roleId="3ior.4903714810883783243" type="3ior.BuildTextStringPart" typeId="3ior.4903714810883702019" id="8628756186118983452">
-          <property name="text" nameId="3ior.4903714810883755350" value="com.mbeddr.cc.ple" />
+          <property name="text" nameId="3ior.4903714810883755350" value="mbeddr.ple" />
         </node>
       </node>
       <node role="vendor" roleId="kdzh.7832771629084912518" type="kdzh.BuildMps_IdeaPluginVendor" typeId="kdzh.7832771629084799699" id="8628756186118765773">
@@ -564,7 +564,7 @@
       </node>
       <node role="containerName" roleId="kdzh.6592112598314855574" type="3ior.BuildStringNotEmpty" typeId="3ior.841011766566059607" id="6247780594427537479">
         <node role="parts" roleId="3ior.4903714810883783243" type="3ior.BuildTextStringPart" typeId="3ior.4903714810883702019" id="6247780594427537480">
-          <property name="text" nameId="3ior.4903714810883755350" value="com.mbeddr.cc.test.dev" />
+          <property name="text" nameId="3ior.4903714810883755350" value="mbeddr.cc.test" />
         </node>
       </node>
       <node role="vendor" roleId="kdzh.7832771629084912518" type="kdzh.BuildMps_IdeaPluginVendor" typeId="kdzh.7832771629084799699" id="6247780594427537481">
@@ -741,7 +741,7 @@
       <property name="id" nameId="kdzh.6592112598314498927" value="com.mbeddr.cc.req" />
       <node role="name" roleId="kdzh.6592112598314499021" type="3ior.BuildStringNotEmpty" typeId="3ior.841011766566059607" id="6247780594427548304">
         <node role="parts" roleId="3ior.4903714810883783243" type="3ior.BuildTextStringPart" typeId="3ior.4903714810883702019" id="6247780594427548305">
-          <property name="text" nameId="3ior.4903714810883755350" value="com.mbeddr.cc.test.req" />
+          <property name="text" nameId="3ior.4903714810883755350" value="com.mbeddr.cc.req" />
         </node>
       </node>
       <node role="version" roleId="kdzh.6592112598314498931" type="3ior.BuildStringNotEmpty" typeId="3ior.841011766566059607" id="6247780594427548306">
@@ -766,7 +766,7 @@
       </node>
       <node role="containerName" roleId="kdzh.6592112598314855574" type="3ior.BuildStringNotEmpty" typeId="3ior.841011766566059607" id="6247780594427548312">
         <node role="parts" roleId="3ior.4903714810883783243" type="3ior.BuildTextStringPart" typeId="3ior.4903714810883702019" id="6247780594427548313">
-          <property name="text" nameId="3ior.4903714810883755350" value="com.mbeddr.cc.req" />
+          <property name="text" nameId="3ior.4903714810883755350" value="mbeddr.req" />
         </node>
       </node>
       <node role="vendor" roleId="kdzh.7832771629084912518" type="kdzh.BuildMps_IdeaPluginVendor" typeId="kdzh.7832771629084799699" id="6247780594427548314">

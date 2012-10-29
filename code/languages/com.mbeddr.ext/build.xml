@@ -21,8 +21,10 @@
   <property name="util.project.dir" value="code/languages/com.mbeddr.mpsutil"/>
   <property name="util.project.mpr" value="code/languages/com.mbeddr.mpsutil/mpsutil.dev.mpr"/>
   
-  <property name="utilLanguageDir" value="${mbeddr.github.core.home}/${util.project.dir}/languages"/>
-  <property name="coreLanguageDir" value="${mbeddr.github.core.home}/${mbeddr.core.project.dir}/languages"/>
+  <property name="utilLanguageDir" value="${mbeddr.github.core.home}/${util.project.dir}/languages"/>  
+  <property name="coreLanguageDir" value="${mbeddr.github.core.home}/${mbeddr.core.project.dir}/languages"/>  
+  <property name="extLanguageDir" value="${mbeddr.github.core.home}/${mbeddr.ext.project.dir}/languages"/>  
+  
 
     <jvmargs id="myargs">
       <arg value="-ea"/>
@@ -73,7 +75,8 @@
     <mps.generate parallelMode="true" fork="true" failonerror="true">
       <jvmargs id="myargs"/>
       <macro name="mbeddr.github.core.home" path="${mbeddr.github.core.home}"/>
-      <library name="mbeddr.ext.project" dir="${mbeddr.github.core.home}/${mbeddr.ext.project.dir}"/>
+
+      <library name="mbeddr.project" dir="${extLanguageDir}"/>
       <library name="mbeddr.project" dir="${coreLanguageDir}"/>
       <library name="util.languages" dir="${utilLanguageDir}"/>
 	  <!-- executable tests -->

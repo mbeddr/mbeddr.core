@@ -102,13 +102,20 @@
       </node>
     </node>
     <node role="layout" roleId="3ior.5617550519002745372" type="3ior.BuildLayout" typeId="3ior.5617550519002745364" id="6247780594427434821">
-      <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_Zip" typeId="3ior.7389400916848050071" id="6247780594427434822">
+      <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_Zip" typeId="3ior.7389400916848050071" id="8628756186118765535">
+        <node role="containerName" roleId="3ior.4380385936562148502" type="3ior.BuildStringNotEmpty" typeId="3ior.841011766566059607" id="8628756186118765536">
+          <node role="parts" roleId="3ior.4903714810883783243" type="3ior.BuildTextStringPart" typeId="3ior.4903714810883702019" id="8628756186118765537">
+            <property name="text" nameId="3ior.4903714810883755350" value="com.mbeddr.core.debugger.zip" />
+          </node>
+        </node>
         <node role="children" roleId="3ior.7389400916848037006" type="kdzh.BuildMpsLayout_Plugin" typeId="kdzh.6592112598314498926" id="467084113680845533">
           <link role="plugin" roleId="kdzh.6592112598314801433" targetNodeId="6247780594427434826" resolveInfo="com.mbeddr.core.spawnerLoader" />
         </node>
+      </node>
+      <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_Zip" typeId="3ior.7389400916848050071" id="6247780594427434822">
         <node role="containerName" roleId="3ior.4380385936562148502" type="3ior.BuildStringNotEmpty" typeId="3ior.841011766566059607" id="6247780594427434823">
           <node role="parts" roleId="3ior.4903714810883783243" type="3ior.BuildTextStringPart" typeId="3ior.4903714810883702019" id="6247780594427434824">
-            <property name="text" nameId="3ior.4903714810883755350" value="com.mbeddr.debugger.zip" />
+            <property name="text" nameId="3ior.4903714810883755350" value="com.mbeddr.code.debugger.spawner.zip" />
           </node>
         </node>
         <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_Folder" typeId="3ior.7389400916848036984" id="5621334030472304102">
@@ -409,7 +416,7 @@
           </node>
           <node role="containerName" roleId="3ior.4380385936562148502" type="3ior.BuildStringNotEmpty" typeId="3ior.841011766566059607" id="5621334030472304103">
             <node role="parts" roleId="3ior.4903714810883783243" type="3ior.BuildTextStringPart" typeId="3ior.4903714810883702019" id="5621334030472304104">
-              <property name="text" nameId="3ior.4903714810883755350" value="spawner" />
+              <property name="text" nameId="3ior.4903714810883755350" value="mbeddr.spawner" />
             </node>
           </node>
         </node>
@@ -419,7 +426,7 @@
       <property name="id" nameId="kdzh.6592112598314498927" value="com.mbeddr.core.debugger" />
       <node role="name" roleId="kdzh.6592112598314499021" type="3ior.BuildStringNotEmpty" typeId="3ior.841011766566059607" id="6247780594427434827">
         <node role="parts" roleId="3ior.4903714810883783243" type="3ior.BuildTextStringPart" typeId="3ior.4903714810883702019" id="6247780594427434828">
-          <property name="text" nameId="3ior.4903714810883755350" value="Spawner Loader" />
+          <property name="text" nameId="3ior.4903714810883755350" value="com.mbeddr.core.debugger" />
         </node>
       </node>
       <node role="version" roleId="kdzh.6592112598314498931" type="3ior.BuildStringNotEmpty" typeId="3ior.841011766566059607" id="6247780594427434829">
@@ -432,7 +439,7 @@
       </node>
       <node role="containerName" roleId="kdzh.6592112598314855574" type="3ior.BuildStringNotEmpty" typeId="3ior.841011766566059607" id="6247780594427434833">
         <node role="parts" roleId="3ior.4903714810883783243" type="3ior.BuildTextStringPart" typeId="3ior.4903714810883702019" id="6247780594427434834">
-          <property name="text" nameId="3ior.4903714810883755350" value="spawner" />
+          <property name="text" nameId="3ior.4903714810883755350" value="mbeddr.debugger" />
         </node>
       </node>
       <node role="content" roleId="kdzh.6592112598314499050" type="kdzh.BuildMps_IdeaPluginGroup" typeId="kdzh.6592112598314586625" id="467084113680845531">
