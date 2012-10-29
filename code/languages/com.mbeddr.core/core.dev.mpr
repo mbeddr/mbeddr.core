@@ -65,6 +65,14 @@
   <component name="ProjectLibraryManager">
     <option name="libraries">
       <map>
+        <entry key="debugger">
+          <value>
+            <Library>
+              <option name="name" value="debugger" />
+              <option name="path" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.debugger" />
+            </Library>
+          </value>
+        </entry>
         <entry key="mpsutil">
           <value>
             <Library>
