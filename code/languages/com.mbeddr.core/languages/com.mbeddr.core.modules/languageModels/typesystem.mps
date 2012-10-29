@@ -2636,23 +2636,69 @@
                           </node>
                         </node>
                       </node>
-                      <node role="statement" roleId="tpee.1068581517665" type="tpd4.CreateLessThanInequationStatement" typeId="tpd4.1174663118805" id="8729127847822637589">
-                        <node role="leftExpression" roleId="tpd4.1174660783413" type="tpd4.NormalTypeClause" typeId="tpd4.1185788614172" id="8729127847822637590">
-                          <node role="normalType" roleId="tpd4.1185788644032" type="tpd4.TypeOfExpression" typeId="tpd4.1174657487114" id="8729127847822637591">
-                            <node role="term" roleId="tpd4.1174657509053" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="1694060945596762851">
+                      <node role="statement" roleId="tpee.1068581517665" type="tpee.IfStatement" typeId="tpee.1068580123159" id="3657295727191883330">
+                        <node role="ifTrue" roleId="tpee.1068580123161" type="tpee.StatementList" typeId="tpee.1068580123136" id="3657295727191883331">
+                          <node role="statement" roleId="tpee.1068581517665" type="tpd4.CreateLessThanInequationStatement" typeId="tpd4.1174663118805" id="3657295727191883366">
+                            <node role="leftExpression" roleId="tpd4.1174660783413" type="tpd4.NormalTypeClause" typeId="tpd4.1185788614172" id="3657295727191883367">
+                              <node role="normalType" roleId="tpd4.1185788644032" type="tpd4.TypeOfExpression" typeId="tpd4.1174657487114" id="3657295727191883368">
+                                <node role="term" roleId="tpd4.1174657509053" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="3657295727191883369">
+                                  <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="1694060945596762843" resolveInfo="ithActual" />
+                                </node>
+                              </node>
+                            </node>
+                            <node role="rightExpression" roleId="tpd4.1174660783414" type="tpd4.NormalTypeClause" typeId="tpd4.1185788614172" id="3657295727191883370">
+                              <node role="normalType" roleId="tpd4.1185788644032" type="tpd4.TypeOfExpression" typeId="tpd4.1174657487114" id="3657295727191883371">
+                                <node role="term" roleId="tpd4.1174657509053" type="tp2q.ForEachVariableReference" typeId="tp2q.1153944233411" id="3657295727191883372">
+                                  <link role="variable" roleId="tp2q.1153944258490" targetNodeId="8729127847821610944" resolveInfo="f" />
+                                </node>
+                              </node>
+                            </node>
+                            <node role="nodeToCheck" roleId="tpd4.1174662598553" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="3657295727191883373">
                               <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="1694060945596762843" resolveInfo="ithActual" />
                             </node>
                           </node>
                         </node>
-                        <node role="rightExpression" roleId="tpd4.1174660783414" type="tpd4.NormalTypeClause" typeId="tpd4.1185788614172" id="8729127847822637598">
-                          <node role="normalType" roleId="tpd4.1185788644032" type="tpd4.TypeOfExpression" typeId="tpd4.1174657487114" id="8729127847822637599">
-                            <node role="term" roleId="tpd4.1174657509053" type="tp2q.ForEachVariableReference" typeId="tp2q.1153944233411" id="8729127847822637600">
-                              <link role="variable" roleId="tp2q.1153944258490" targetNodeId="8729127847821610944" resolveInfo="f" />
+                        <node role="condition" roleId="tpee.1068580123160" type="tpee.DotExpression" typeId="tpee.1197027756228" id="3657295727191883355">
+                          <node role="operand" roleId="tpee.1197027771414" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="3657295727191883334">
+                            <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="1694060945596762843" resolveInfo="ithActual" />
+                          </node>
+                          <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_IsInstanceOfOperation" typeId="tp25.1139621453865" id="3657295727191883361">
+                            <node role="conceptArgument" roleId="tp25.1177027386292" type="tp25.RefConcept_Reference" typeId="tp25.1177026924588" id="3657295727191883363">
+                              <link role="conceptDeclaration" roleId="tp25.1177026940964" targetNodeId="x27k.8257817273846948841" resolveInfo="Closure" />
                             </node>
                           </node>
                         </node>
-                        <node role="nodeToCheck" roleId="tpd4.1174662598553" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="1694060945596767799">
-                          <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="1694060945596762843" resolveInfo="ithActual" />
+                        <node role="ifFalseStatement" roleId="tpee.1082485599094" type="tpee.BlockStatement" typeId="tpee.1082485599095" id="3657295727191883364">
+                          <node role="statements" roleId="tpee.1082485599096" type="tpee.StatementList" typeId="tpee.1068580123136" id="3657295727191883365">
+                            <node role="statement" roleId="tpee.1068581517665" type="tpee.SingleLineComment" typeId="tpee.6329021646629104954" id="3657295727191888761">
+                              <node role="commentPart" roleId="tpee.6329021646629175155" type="tpee.TextCommentPart" typeId="tpee.6329021646629104957" id="3657295727191888762">
+                                <property name="text" nameId="tpee.6329021646629104958" value="We only want to check and not infer. Otherwise we sometimes " />
+                              </node>
+                              <node role="commentPart" roleId="tpee.6329021646629175155" type="tpee.TextCommentPart" typeId="tpee.6329021646629104957" id="3657295727191888773">
+                                <property name="text" nameId="tpee.6329021646629104958" value="get ##primitiveType## in the error messages" />
+                              </node>
+                            </node>
+                            <node role="statement" roleId="tpee.1068581517665" type="tpd4.CreateLessThanInequationStatement" typeId="tpd4.1174663118805" id="8729127847822637589">
+                              <property name="checkOnly" nameId="tpd4.1206359757216" value="true" />
+                              <node role="leftExpression" roleId="tpd4.1174660783413" type="tpd4.NormalTypeClause" typeId="tpd4.1185788614172" id="8729127847822637590">
+                                <node role="normalType" roleId="tpd4.1185788644032" type="tpd4.TypeOfExpression" typeId="tpd4.1174657487114" id="8729127847822637591">
+                                  <node role="term" roleId="tpd4.1174657509053" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="1694060945596762851">
+                                    <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="1694060945596762843" resolveInfo="ithActual" />
+                                  </node>
+                                </node>
+                              </node>
+                              <node role="rightExpression" roleId="tpd4.1174660783414" type="tpd4.NormalTypeClause" typeId="tpd4.1185788614172" id="8729127847822637598">
+                                <node role="normalType" roleId="tpd4.1185788644032" type="tpd4.TypeOfExpression" typeId="tpd4.1174657487114" id="8729127847822637599">
+                                  <node role="term" roleId="tpd4.1174657509053" type="tp2q.ForEachVariableReference" typeId="tp2q.1153944233411" id="8729127847822637600">
+                                    <link role="variable" roleId="tp2q.1153944258490" targetNodeId="8729127847821610944" resolveInfo="f" />
+                                  </node>
+                                </node>
+                              </node>
+                              <node role="nodeToCheck" roleId="tpd4.1174662598553" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="1694060945596767799">
+                                <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="1694060945596762843" resolveInfo="ithActual" />
+                              </node>
+                            </node>
+                          </node>
                         </node>
                       </node>
                     </node>

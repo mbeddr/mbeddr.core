@@ -247,24 +247,6 @@
     </node>
     <node role="parts" roleId="3ior.7389400916848080626" type="kdzh.BuildMps_Group" typeId="kdzh.1500819558095907805" id="8628756186118380515">
       <property name="name" nameId="tpck.1169194664001" value="com.mbeddr.mpsutil" />
-      <node role="modules" roleId="kdzh.1500819558095907806" type="kdzh.BuildMps_Solution" typeId="kdzh.3189788309731840247" id="8628756186118380553">
-        <property name="compact" nameId="kdzh.8369506495128725901" value="true" />
-        <property name="uuid" nameId="kdzh.322010710375892619" value="37b0fb6d-0f0f-4a21-b0c4-5774c689cc13" />
-        <property name="name" nameId="tpck.1169194664001" value="com.mbeddr.mpsutil.graph.demo" />
-        <property name="doNotCompile" nameId="kdzh.1500819558096356884" value="false" />
-        <node role="path" roleId="kdzh.322010710375956261" type="3ior.BuildSourceMacroRelativePath" typeId="3ior.7389400916848153117" id="8628756186118380690">
-          <link role="macro" roleId="3ior.7389400916848153130" targetNodeId="8628756186118380627" resolveInfo="mpsutil" />
-          <node role="compositePart" roleId="3ior.7321017245477039051" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="8628756186118380691">
-            <property name="head" nameId="3ior.8618885170173601779" value="solutions" />
-            <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="8628756186118380692">
-              <property name="head" nameId="3ior.8618885170173601779" value="com.mbeddr.mpsutil.graph.demo" />
-              <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="8628756186118380693">
-                <property name="head" nameId="3ior.8618885170173601779" value="demo.msd" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
       <node role="modules" roleId="kdzh.1500819558095907806" type="kdzh.BuildMps_Solution" typeId="kdzh.3189788309731840247" id="8628756186118380516">
         <property name="compact" nameId="kdzh.8369506495128725901" value="true" />
         <property name="uuid" nameId="kdzh.322010710375892619" value="0f6d068f-2002-46b3-ba3b-8ad6bd39ae6e" />

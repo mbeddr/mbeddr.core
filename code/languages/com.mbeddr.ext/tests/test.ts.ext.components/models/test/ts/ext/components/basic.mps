@@ -10,7 +10,7 @@
   <import index="k146" modelUID="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" version="2" implicit="yes" />
   <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="5" implicit="yes" />
   <import index="51wr" modelUID="r:b31f1c3c-99aa-4f1e-a329-cba27efb1a6b(com.mbeddr.core.buildconfig.structure)" version="1" implicit="yes" />
-  <import index="v7ag" modelUID="r:9596407c-f27a-49d3-abde-3a66293c5b61(com.mbeddr.ext.components.structure)" version="11" implicit="yes" />
+  <import index="v7ag" modelUID="r:9596407c-f27a-49d3-abde-3a66293c5b61(com.mbeddr.ext.components.structure)" version="12" implicit="yes" />
   <import index="tp5g" modelUID="r:00000000-0000-4000-0000-011c89590388(jetbrains.mps.lang.test.structure)" version="4" implicit="yes" />
   <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="4" implicit="yes" />
   <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="3" implicit="yes" />
@@ -745,11 +745,11 @@
           <node role="contents" roleId="v7ag.6041318036222235020" type="v7ag.Connector" typeId="v7ag.4491876417845649016" id="1539255704409388596">
             <node role="source" roleId="v7ag.4491876417845649020" type="v7ag.InstancePortRef" typeId="v7ag.4491876417845649017" id="1539255704409388597">
               <link role="instance" roleId="v7ag.4491876417845649018" targetNodeId="1539255704409388595" resolveInfo="client" />
-              <link role="port" roleId="v7ag.4491876417845649019" targetNodeId="1539255704409345316" resolveInfo="intf1" />
+              <link role="port" roleId="v7ag.3444913373458569211" targetNodeId="1539255704409345316" resolveInfo="intf1" />
             </node>
             <node role="target" roleId="v7ag.4491876417845649021" type="v7ag.InstancePortRef" typeId="v7ag.4491876417845649017" id="1539255704409388599">
               <link role="instance" roleId="v7ag.4491876417845649018" targetNodeId="1539255704409388593" resolveInfo="server" />
-              <link role="port" roleId="v7ag.4491876417845649019" targetNodeId="1539255704409345312" resolveInfo="intf1" />
+              <link role="port" roleId="v7ag.3444913373458569211" targetNodeId="1539255704409345312" resolveInfo="intf1" />
             </node>
             <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodePropertiesContainer" typeId="tp5g.1215507532627" id="1539255704409467249">
               <node role="properties" roleId="tp5g.1215507909023" type="tp5g.NodeErrorPropety" typeId="tp5g.1215507671101" id="1539255704409467250" />
@@ -758,11 +758,11 @@
           <node role="contents" roleId="v7ag.6041318036222235020" type="v7ag.Connector" typeId="v7ag.4491876417845649016" id="1539255704409467254">
             <node role="source" roleId="v7ag.4491876417845649020" type="v7ag.InstancePortRef" typeId="v7ag.4491876417845649017" id="1539255704409467255">
               <link role="instance" roleId="v7ag.4491876417845649018" targetNodeId="1539255704409388595" resolveInfo="client" />
-              <link role="port" roleId="v7ag.4491876417845649019" targetNodeId="1539255704409467259" resolveInfo="intf2" />
+              <link role="port" roleId="v7ag.3444913373458569211" targetNodeId="1539255704409467259" resolveInfo="intf2" />
             </node>
             <node role="target" roleId="v7ag.4491876417845649021" type="v7ag.InstancePortRef" typeId="v7ag.4491876417845649017" id="1539255704409467256">
               <link role="instance" roleId="v7ag.4491876417845649018" targetNodeId="1539255704409388593" resolveInfo="server" />
-              <link role="port" roleId="v7ag.4491876417845649019" targetNodeId="1539255704409467251" resolveInfo="intf2" />
+              <link role="port" roleId="v7ag.3444913373458569211" targetNodeId="1539255704409467251" resolveInfo="intf2" />
             </node>
           </node>
         </node>
@@ -944,6 +944,10 @@
         <node role="contents" roleId="x27k.6437088627575722833" type="v7ag.AtomicComponent" typeId="v7ag.4491876417845649011" id="3457272138385408503">
           <property name="exported" nameId="x27k.1317894735999272944" value="true" />
           <property name="name" nameId="tpck.1169194664001" value="Subject" />
+          <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.RequiredPort" typeId="v7ag.4491876417845628841" id="3295443900649984707">
+            <property name="name" nameId="tpck.1169194664001" value="interface2" />
+            <link role="intf" roleId="v7ag.4491876417845484932" targetNodeId="3457272138385338543" resolveInfo="Interface2" />
+          </node>
           <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.RequiredPort" typeId="v7ag.4491876417845628841" id="3457272138385408504">
             <property name="name" nameId="tpck.1169194664001" value="i1" />
             <property name="multiple" value="true" />
@@ -1057,6 +1061,9 @@
           <node role="contents" roleId="v7ag.6041318036222235020" type="v7ag.ComponentInstance" typeId="v7ag.4491876417845649014" id="3457272138385408532">
             <property name="name" nameId="tpck.1169194664001" value="s" />
             <link role="component" roleId="v7ag.4491876417845649015" targetNodeId="3457272138385408503" resolveInfo="Subject" />
+            <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodePropertiesContainer" typeId="tp5g.1215507532627" id="6195521251877013250">
+              <node role="properties" roleId="tp5g.1215507909023" type="tp5g.NodeErrorPropety" typeId="tp5g.1215507671101" id="6195521251877013251" />
+            </node>
           </node>
           <node role="contents" roleId="v7ag.6041318036222235020" type="v7ag.EmptyInstanceConfigContent" typeId="v7ag.1089269900847289701" id="6165117700225830719" />
           <node role="contents" roleId="v7ag.6041318036222235020" type="v7ag.ComponentInstance" typeId="v7ag.4491876417845649014" id="3457272138385408534">
@@ -1074,39 +1081,39 @@
           <node role="contents" roleId="v7ag.6041318036222235020" type="v7ag.Connector" typeId="v7ag.4491876417845649016" id="3457272138385408536">
             <node role="source" roleId="v7ag.4491876417845649020" type="v7ag.InstancePortRef" typeId="v7ag.4491876417845649017" id="3457272138385408537">
               <link role="instance" roleId="v7ag.4491876417845649018" targetNodeId="3457272138385408532" resolveInfo="s" />
-              <link role="port" roleId="v7ag.4491876417845649019" targetNodeId="3457272138385408504" resolveInfo="i1" />
+              <link role="port" roleId="v7ag.3444913373458569211" targetNodeId="3457272138385408504" resolveInfo="i1" />
               <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodePropertiesContainer" typeId="tp5g.1215507532627" id="3457272138385558970">
                 <node role="properties" roleId="tp5g.1215507909023" type="tp5g.NodeErrorPropety" typeId="tp5g.1215507671101" id="3457272138385558971" />
               </node>
             </node>
             <node role="target" roleId="v7ag.4491876417845649021" type="v7ag.InstancePortRef" typeId="v7ag.4491876417845649017" id="3457272138385408538">
               <link role="instance" roleId="v7ag.4491876417845649018" targetNodeId="3457272138385408534" resolveInfo="o1" />
-              <link role="port" roleId="v7ag.4491876417845649019" targetNodeId="3457272138385408519" resolveInfo="notification" />
+              <link role="port" roleId="v7ag.3444913373458569211" targetNodeId="3457272138385408519" resolveInfo="notification" />
             </node>
           </node>
           <node role="contents" roleId="v7ag.6041318036222235020" type="v7ag.Connector" typeId="v7ag.4491876417845649016" id="3457272138385408539">
             <node role="source" roleId="v7ag.4491876417845649020" type="v7ag.InstancePortRef" typeId="v7ag.4491876417845649017" id="3457272138385408540">
               <link role="instance" roleId="v7ag.4491876417845649018" targetNodeId="3457272138385408532" resolveInfo="s" />
-              <link role="port" roleId="v7ag.4491876417845649019" targetNodeId="3457272138385408504" resolveInfo="i1" />
+              <link role="port" roleId="v7ag.3444913373458569211" targetNodeId="3457272138385408504" resolveInfo="i1" />
               <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodePropertiesContainer" typeId="tp5g.1215507532627" id="3457272138385558968">
                 <node role="properties" roleId="tp5g.1215507909023" type="tp5g.NodeErrorPropety" typeId="tp5g.1215507671101" id="3457272138385558969" />
               </node>
             </node>
             <node role="target" roleId="v7ag.4491876417845649021" type="v7ag.InstancePortRef" typeId="v7ag.4491876417845649017" id="3457272138385408541">
-              <link role="port" roleId="v7ag.4491876417845649019" targetNodeId="3457272138385408519" resolveInfo="notification" />
+              <link role="port" roleId="v7ag.3444913373458569211" targetNodeId="3457272138385408519" resolveInfo="notification" />
               <link role="instance" roleId="v7ag.4491876417845649018" targetNodeId="3457272138385408542" resolveInfo="o2" />
             </node>
           </node>
           <node role="contents" roleId="v7ag.6041318036222235020" type="v7ag.Connector" typeId="v7ag.4491876417845649016" id="3457272138385558963">
             <node role="source" roleId="v7ag.4491876417845649020" type="v7ag.InstancePortRef" typeId="v7ag.4491876417845649017" id="3457272138385558964">
               <link role="instance" roleId="v7ag.4491876417845649018" targetNodeId="3457272138385408532" resolveInfo="s" />
-              <link role="port" roleId="v7ag.4491876417845649019" targetNodeId="3457272138385408504" resolveInfo="i1" />
+              <link role="port" roleId="v7ag.3444913373458569211" targetNodeId="3457272138385408504" resolveInfo="i1" />
               <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodePropertiesContainer" typeId="tp5g.1215507532627" id="3457272138385558966">
                 <node role="properties" roleId="tp5g.1215507909023" type="tp5g.NodeErrorPropety" typeId="tp5g.1215507671101" id="3457272138385558967" />
               </node>
             </node>
             <node role="target" roleId="v7ag.4491876417845649021" type="v7ag.InstancePortRef" typeId="v7ag.4491876417845649017" id="3457272138385558965">
-              <link role="port" roleId="v7ag.4491876417845649019" targetNodeId="3457272138385408519" resolveInfo="notification" />
+              <link role="port" roleId="v7ag.3444913373458569211" targetNodeId="3457272138385408519" resolveInfo="notification" />
               <link role="instance" roleId="v7ag.4491876417845649018" targetNodeId="3457272138385558962" resolveInfo="o3" />
             </node>
           </node>
@@ -1118,11 +1125,11 @@
           <node role="contents" roleId="v7ag.6041318036222235020" type="v7ag.Connector" typeId="v7ag.4491876417845649016" id="6165117700225830724">
             <node role="source" roleId="v7ag.4491876417845649020" type="v7ag.InstancePortRef" typeId="v7ag.4491876417845649017" id="6165117700225830725">
               <link role="instance" roleId="v7ag.4491876417845649018" targetNodeId="3457272138385408534" resolveInfo="o1" />
-              <link role="port" roleId="v7ag.4491876417845649019" targetNodeId="6165117700225830728" resolveInfo="c" />
+              <link role="port" roleId="v7ag.3444913373458569211" targetNodeId="6165117700225830728" resolveInfo="c" />
             </node>
             <node role="target" roleId="v7ag.4491876417845649021" type="v7ag.InstancePortRef" typeId="v7ag.4491876417845649017" id="6165117700225830726">
               <link role="instance" roleId="v7ag.4491876417845649018" targetNodeId="6165117700225830723" resolveInfo="c" />
-              <link role="port" roleId="v7ag.4491876417845649019" targetNodeId="6165117700225830713" resolveInfo="csc" />
+              <link role="port" roleId="v7ag.3444913373458569211" targetNodeId="6165117700225830713" resolveInfo="csc" />
               <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodePropertiesContainer" typeId="tp5g.1215507532627" id="6165117700225868596">
                 <node role="properties" roleId="tp5g.1215507909023" type="tp5g.NodeErrorPropety" typeId="tp5g.1215507671101" id="6165117700225868597" />
               </node>
@@ -1130,12 +1137,12 @@
           </node>
           <node role="contents" roleId="v7ag.6041318036222235020" type="v7ag.Connector" typeId="v7ag.4491876417845649016" id="6165117700225830729">
             <node role="source" roleId="v7ag.4491876417845649020" type="v7ag.InstancePortRef" typeId="v7ag.4491876417845649017" id="6165117700225830730">
-              <link role="port" roleId="v7ag.4491876417845649019" targetNodeId="6165117700225830728" resolveInfo="c" />
+              <link role="port" roleId="v7ag.3444913373458569211" targetNodeId="6165117700225830728" resolveInfo="c" />
               <link role="instance" roleId="v7ag.4491876417845649018" targetNodeId="3457272138385408542" resolveInfo="o2" />
             </node>
             <node role="target" roleId="v7ag.4491876417845649021" type="v7ag.InstancePortRef" typeId="v7ag.4491876417845649017" id="6165117700225830731">
               <link role="instance" roleId="v7ag.4491876417845649018" targetNodeId="6165117700225830723" resolveInfo="c" />
-              <link role="port" roleId="v7ag.4491876417845649019" targetNodeId="6165117700225830713" resolveInfo="csc" />
+              <link role="port" roleId="v7ag.3444913373458569211" targetNodeId="6165117700225830713" resolveInfo="csc" />
               <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodePropertiesContainer" typeId="tp5g.1215507532627" id="6165117700225868598">
                 <node role="properties" roleId="tp5g.1215507909023" type="tp5g.NodeErrorPropety" typeId="tp5g.1215507671101" id="6165117700225868599" />
               </node>

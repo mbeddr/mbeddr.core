@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DependencyValidationManager">
+    <option name="SKIP_IMPORT_STATEMENTS" value="false" />
+  </component>
+  <component name="Encoding" useUTFGuessing="true" native2AsciiForPropertiesFiles="false" />
+  <component name="MPSProject">
+    <projectModules>
+      <modulePath path="${project}/languages/com.mbeddr.core.debug.blext/blext.mpl" />
+      <modulePath path="${project}/languages/com.mbeddr.core.debug.spawner/data/Eclipse.Debugger/Debugger.msd" />
+      <modulePath path="${project}/languages/com.mbeddr.core.debug.spawner/spawner.msd" />
+      <modulePath path="${project}/languages/com.mbeddr.core.debug/debug.mpl" />
+    </projectModules>
+    <genConfs />
+  </component>
+  <component name="MigrationState">
+    <option name="myState" value="DONE" />
+  </component>
+  <component name="ProjectModuleManager">
+    <modules />
+  </component>
+  <component name="ProjectRootManager" version="2" />
+  <component name="ProjectVersion">
+    <option name="version" value="2.5" />
+  </component>
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$mbeddr.github.core.home$" vcs="Git" />
+  </component>
+</project>
+

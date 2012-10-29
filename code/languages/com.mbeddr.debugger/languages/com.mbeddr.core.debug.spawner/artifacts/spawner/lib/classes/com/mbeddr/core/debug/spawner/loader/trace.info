@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debugInfo>
+  <root nodeId="126868286647769260" modelId="r:6522897c-3500-48e0-b54e-2bb1e978c4d7(com.mbeddr.core.debug.spawner.loader)">
+    <nodeInfo nodeId="126868286647769270" fileName="plugin.xml" startLine="1" startPosition="0" endLine="1" endPosition="0" conceptFqName="jetbrains.mps.gtext.structure.GIndent" />
+    <nodeInfo nodeId="126868286647769270" fileName="plugin.xml" startLine="1" startPosition="0" endLine="1" endPosition="10" conceptFqName="jetbrains.mps.gtext.structure.GText" />
+    <nodeInfo nodeId="126868286647769270" fileName="plugin.xml" startLine="1" startPosition="10" endLine="1" endPosition="21" conceptFqName="jetbrains.mps.gtext.structure.GText" />
+    <nodeInfo nodeId="126868286647769272" fileName="plugin.xml" startLine="2" startPosition="0" endLine="2" endPosition="2" conceptFqName="jetbrains.mps.gtext.structure.GIndent" />
+    <nodeInfo nodeId="126868286647769272" fileName="plugin.xml" startLine="2" startPosition="2" endLine="2" endPosition="8" conceptFqName="jetbrains.mps.gtext.structure.GText" />
+    <nodeInfo nodeId="126868286647769272" fileName="plugin.xml" startLine="3" startPosition="0" endLine="3" endPosition="4" conceptFqName="jetbrains.mps.gtext.structure.GIndent" />
+    <nodeInfo nodeId="126868286647769273" fileName="plugin.xml" startLine="3" startPosition="4" endLine="3" endPosition="16" conceptFqName="jetbrains.mps.gtext.structure.GItemList" />
+    <nodeInfo nodeId="126868286647769273" fileName="plugin.xml" startLine="3" startPosition="4" endLine="3" endPosition="5" conceptFqName="jetbrains.mps.gtext.structure.GText" />
+    <nodeInfo nodeId="126868286647769273" fileName="plugin.xml" startLine="3" startPosition="5" endLine="3" endPosition="15" conceptFqName="jetbrains.mps.gtext.structure.GText" />
+    <nodeInfo nodeId="126868286647769273" fileName="plugin.xml" startLine="3" startPosition="15" endLine="3" endPosition="16" conceptFqName="jetbrains.mps.gtext.structure.GText" />
+    <nodeInfo nodeId="126868286647769272" fileName="plugin.xml" startLine="4" startPosition="0" endLine="4" endPosition="4" conceptFqName="jetbrains.mps.gtext.structure.GIndent" />
+    <nodeInfo nodeId="126868286647769274" fileName="plugin.xml" startLine="4" startPosition="4" endLine="4" endPosition="44" conceptFqName="jetbrains.mps.gtext.structure.GItemList" />
+    <nodeInfo nodeId="126868286647769274" fileName="plugin.xml" startLine="4" startPosition="4" endLine="4" endPosition="5" conceptFqName="jetbrains.mps.gtext.structure.GText" />
+    <nodeInfo nodeId="126868286647769274" fileName="plugin.xml" startLine="4" startPosition="5" endLine="4" endPosition="43" conceptFqName="jetbrains.mps.gtext.structure.GText" />
+    <nodeInfo nodeId="126868286647769274" fileName="plugin.xml" startLine="4" startPosition="43" endLine="4" endPosition="44" conceptFqName="jetbrains.mps.gtext.structure.GText" />
+    <nodeInfo nodeId="126868286647769270" fileName="plugin.xml" startLine="5" startPosition="0" endLine="5" endPosition="0" conceptFqName="jetbrains.mps.gtext.structure.GIndent" />
+    <nodeInfo nodeId="126868286647769270" fileName="plugin.xml" startLine="5" startPosition="0" endLine="5" endPosition="1" conceptFqName="jetbrains.mps.gtext.structure.GText" />
+    <nodeInfo nodeId="126868286647769264" fileName="plugin.xml" startLine="6" startPosition="0" endLine="6" endPosition="0" conceptFqName="jetbrains.mps.gtext.structure.GIndent" />
+    <nodeInfo nodeId="126868286647769264" fileName="plugin.xml" startLine="6" startPosition="0" endLine="6" endPosition="1" conceptFqName="jetbrains.mps.gtext.structure.GText" />
+    <nodeInfo nodeId="126868286647769265" fileName="plugin.xml" startLine="6" startPosition="1" endLine="6" endPosition="12" conceptFqName="jetbrains.mps.gtext.structure.GItemList" />
+    <nodeInfo nodeId="126868286647769265" fileName="plugin.xml" startLine="6" startPosition="1" endLine="6" endPosition="12" conceptFqName="jetbrains.mps.gtext.structure.GText" />
+    <nodeInfo nodeId="126868286647769264" fileName="plugin.xml" startLine="6" startPosition="12" endLine="6" endPosition="13" conceptFqName="jetbrains.mps.gtext.structure.GText" />
+    <nodeInfo nodeId="126868286647769281" fileName="plugin.xml" startLine="7" startPosition="0" endLine="7" endPosition="2" conceptFqName="jetbrains.mps.gtext.structure.GIndent" />
+    <nodeInfo nodeId="126868286647769281" fileName="plugin.xml" startLine="7" startPosition="2" endLine="7" endPosition="3" conceptFqName="jetbrains.mps.gtext.structure.GText" />
+    <nodeInfo nodeId="126868286647769282" fileName="plugin.xml" startLine="7" startPosition="3" endLine="7" endPosition="7" conceptFqName="jetbrains.mps.gtext.structure.GItemList" />
+    <nodeInfo nodeId="126868286647769282" fileName="plugin.xml" startLine="7" startPosition="3" endLine="7" endPosition="7" conceptFqName="jetbrains.mps.gtext.structure.GText" />
+    <nodeInfo nodeId="126868286647769281" fileName="plugin.xml" startLine="7" startPosition="7" endLine="7" endPosition="8" conceptFqName="jetbrains.mps.gtext.structure.GText" />
+    <nodeInfo nodeId="126868286647769283" fileName="plugin.xml" startLine="7" startPosition="8" endLine="7" endPosition="22" conceptFqName="jetbrains.mps.gtext.structure.GItemList" />
+    <nodeInfo nodeId="126868286647769284" fileName="plugin.xml" startLine="7" startPosition="8" endLine="7" endPosition="22" conceptFqName="jetbrains.mps.gtext.structure.GItemList" />
+    <nodeInfo nodeId="126868286647769284" fileName="plugin.xml" startLine="7" startPosition="8" endLine="7" endPosition="22" conceptFqName="jetbrains.mps.gtext.structure.GText" />
+    <nodeInfo nodeId="126868286647769281" fileName="plugin.xml" startLine="7" startPosition="22" endLine="7" endPosition="24" conceptFqName="jetbrains.mps.gtext.structure.GText" />
+    <nodeInfo nodeId="126868286647769282" fileName="plugin.xml" startLine="7" startPosition="24" endLine="7" endPosition="28" conceptFqName="jetbrains.mps.gtext.structure.GItemList" />
+    <nodeInfo nodeId="126868286647769282" fileName="plugin.xml" startLine="7" startPosition="24" endLine="7" endPosition="28" conceptFqName="jetbrains.mps.gtext.structure.GText" />
+    <nodeInfo nodeId="126868286647769281" fileName="plugin.xml" startLine="7" startPosition="28" endLine="7" endPosition="29" conceptFqName="jetbrains.mps.gtext.structure.GText" />
+    <nodeInfo nodeId="126868286647769287" fileName="plugin.xml" startLine="8" startPosition="0" endLine="8" endPosition="2" conceptFqName="jetbrains.mps.gtext.structure.GIndent" />
+    <nodeInfo nodeId="126868286647769287" fileName="plugin.xml" startLine="8" startPosition="2" endLine="8" endPosition="3" conceptFqName="jetbrains.mps.gtext.structure.GText" />
+    <nodeInfo nodeId="126868286647769288" fileName="plugin.xml" startLine="8" startPosition="3" endLine="8" endPosition="5" conceptFqName="jetbrains.mps.gtext.structure.GItemList" />
+    <nodeInfo nodeId="126868286647769288" fileName="plugin.xml" startLine="8" startPosition="3" endLine="8" endPosition="5" conceptFqName="jetbrains.mps.gtext.structure.GText" />
+    <nodeInfo nodeId="126868286647769287" fileName="plugin.xml" startLine="8" startPosition="5" endLine="8" endPosition="6" conceptFqName="jetbrains.mps.gtext.structure.GText" />
+    <nodeInfo nodeId="126868286647769289" fileName="plugin.xml" startLine="8" startPosition="6" endLine="8" endPosition="35" conceptFqName="jetbrains.mps.gtext.structure.GItemList" />
+    <nodeInfo nodeId="126868286647769290" fileName="plugin.xml" startLine="8" startPosition="6" endLine="8" endPosition="35" conceptFqName="jetbrains.mps.gtext.structure.GItemList" />
+    <nodeInfo nodeId="126868286647769290" fileName="plugin.xml" startLine="8" startPosition="6" endLine="8" endPosition="35" conceptFqName="jetbrains.mps.gtext.structure.GText" />
+    <nodeInfo nodeId="126868286647769287" fileName="plugin.xml" startLine="8" startPosition="35" endLine="8" endPosition="37" conceptFqName="jetbrains.mps.gtext.structure.GText" />
+    <nodeInfo nodeId="126868286647769288" fileName="plugin.xml" startLine="8" startPosition="37" endLine="8" endPosition="39" conceptFqName="jetbrains.mps.gtext.structure.GItemList" />
+    <nodeInfo nodeId="126868286647769288" fileName="plugin.xml" startLine="8" startPosition="37" endLine="8" endPosition="39" conceptFqName="jetbrains.mps.gtext.structure.GText" />
+    <nodeInfo nodeId="126868286647769287" fileName="plugin.xml" startLine="8" startPosition="39" endLine="8" endPosition="40" conceptFqName="jetbrains.mps.gtext.structure.GText" />
+    <nodeInfo nodeId="126868286647853697" fileName="plugin.xml" startLine="9" startPosition="0" endLine="9" endPosition="2" conceptFqName="jetbrains.mps.gtext.structure.GIndent" />
+    <nodeInfo nodeId="126868286647853697" fileName="plugin.xml" startLine="9" startPosition="2" endLine="9" endPosition="3" conceptFqName="jetbrains.mps.gtext.structure.GText" />
+    <nodeInfo nodeId="126868286647853698" fileName="plugin.xml" startLine="9" startPosition="3" endLine="9" endPosition="10" conceptFqName="jetbrains.mps.gtext.structure.GItemList" />
+    <nodeInfo nodeId="126868286647853698" fileName="plugin.xml" startLine="9" startPosition="3" endLine="9" endPosition="10" conceptFqName="jetbrains.mps.gtext.structure.GText" />
+    <nodeInfo nodeId="126868286647853697" fileName="plugin.xml" startLine="9" startPosition="10" endLine="9" endPosition="11" conceptFqName="jetbrains.mps.gtext.structure.GText" />
+    <nodeInfo nodeId="126868286647853699" fileName="plugin.xml" startLine="9" startPosition="11" endLine="9" endPosition="14" conceptFqName="jetbrains.mps.gtext.structure.GItemList" />
+    <nodeInfo nodeId="126868286647853700" fileName="plugin.xml" startLine="9" startPosition="11" endLine="9" endPosition="14" conceptFqName="jetbrains.mps.gtext.structure.GItemList" />
+    <nodeInfo nodeId="126868286647853700" fileName="plugin.xml" startLine="9" startPosition="11" endLine="9" endPosition="14" conceptFqName="jetbrains.mps.gtext.structure.GText" />
+    <nodeInfo nodeId="126868286647853697" fileName="plugin.xml" startLine="9" startPosition="14" endLine="9" endPosition="16" conceptFqName="jetbrains.mps.gtext.structure.GText" />
+    <nodeInfo nodeId="126868286647853698" fileName="plugin.xml" startLine="9" startPosition="16" endLine="9" endPosition="23" conceptFqName="jetbrains.mps.gtext.structure.GItemList" />
+    <nodeInfo nodeId="126868286647853698" fileName="plugin.xml" startLine="9" startPosition="16" endLine="9" endPosition="23" conceptFqName="jetbrains.mps.gtext.structure.GText" />
+    <nodeInfo nodeId="126868286647853697" fileName="plugin.xml" startLine="9" startPosition="23" endLine="9" endPosition="24" conceptFqName="jetbrains.mps.gtext.structure.GText" />
+    <nodeInfo nodeId="126868286647853705" fileName="plugin.xml" startLine="10" startPosition="0" endLine="10" endPosition="2" conceptFqName="jetbrains.mps.gtext.structure.GIndent" />
+    <nodeInfo nodeId="126868286647853705" fileName="plugin.xml" startLine="10" startPosition="2" endLine="10" endPosition="3" conceptFqName="jetbrains.mps.gtext.structure.GText" />
+    <nodeInfo nodeId="126868286647853706" fileName="plugin.xml" startLine="10" startPosition="3" endLine="10" endPosition="25" conceptFqName="jetbrains.mps.gtext.structure.GItemList" />
+    <nodeInfo nodeId="126868286647853706" fileName="plugin.xml" startLine="10" startPosition="3" endLine="10" endPosition="25" conceptFqName="jetbrains.mps.gtext.structure.GText" />
+    <nodeInfo nodeId="126868286647853705" fileName="plugin.xml" startLine="10" startPosition="25" endLine="10" endPosition="26" conceptFqName="jetbrains.mps.gtext.structure.GText" />
+    <nodeInfo nodeId="126868286647853711" fileName="plugin.xml" startLine="11" startPosition="0" endLine="11" endPosition="4" conceptFqName="jetbrains.mps.gtext.structure.GIndent" />
+    <nodeInfo nodeId="126868286647853711" fileName="plugin.xml" startLine="11" startPosition="4" endLine="11" endPosition="5" conceptFqName="jetbrains.mps.gtext.structure.GText" />
+    <nodeInfo nodeId="126868286647853712" fileName="plugin.xml" startLine="11" startPosition="5" endLine="11" endPosition="14" conceptFqName="jetbrains.mps.gtext.structure.GItemList" />
+    <nodeInfo nodeId="126868286647853712" fileName="plugin.xml" startLine="11" startPosition="5" endLine="11" endPosition="14" conceptFqName="jetbrains.mps.gtext.structure.GText" />
+    <nodeInfo nodeId="126868286647853711" fileName="plugin.xml" startLine="11" startPosition="14" endLine="11" endPosition="15" conceptFqName="jetbrains.mps.gtext.structure.GText" />
+    <nodeInfo nodeId="126868286647853715" fileName="plugin.xml" startLine="12" startPosition="0" endLine="12" endPosition="6" conceptFqName="jetbrains.mps.gtext.structure.GIndent" />
+    <nodeInfo nodeId="126868286647853715" fileName="plugin.xml" startLine="12" startPosition="6" endLine="12" endPosition="7" conceptFqName="jetbrains.mps.gtext.structure.GText" />
+    <nodeInfo nodeId="126868286647853716" fileName="plugin.xml" startLine="12" startPosition="7" endLine="12" endPosition="27" conceptFqName="jetbrains.mps.gtext.structure.GItemList" />
+    <nodeInfo nodeId="126868286647853716" fileName="plugin.xml" startLine="12" startPosition="7" endLine="12" endPosition="27" conceptFqName="jetbrains.mps.gtext.structure.GText" />
+    <nodeInfo nodeId="126868286647853715" fileName="plugin.xml" startLine="12" startPosition="27" endLine="12" endPosition="28" conceptFqName="jetbrains.mps.gtext.structure.GText" />
+    <nodeInfo nodeId="126868286647853717" fileName="plugin.xml" startLine="12" startPosition="28" endLine="12" endPosition="80" conceptFqName="jetbrains.mps.gtext.structure.GItemList" />
+    <nodeInfo nodeId="126868286647853718" fileName="plugin.xml" startLine="12" startPosition="28" endLine="12" endPosition="80" conceptFqName="jetbrains.mps.gtext.structure.GItemList" />
+    <nodeInfo nodeId="126868286647853718" fileName="plugin.xml" startLine="12" startPosition="28" endLine="12" endPosition="80" conceptFqName="jetbrains.mps.gtext.structure.GText" />
+    <nodeInfo nodeId="126868286647853715" fileName="plugin.xml" startLine="12" startPosition="80" endLine="12" endPosition="82" conceptFqName="jetbrains.mps.gtext.structure.GText" />
+    <nodeInfo nodeId="126868286647853716" fileName="plugin.xml" startLine="12" startPosition="82" endLine="12" endPosition="102" conceptFqName="jetbrains.mps.gtext.structure.GItemList" />
+    <nodeInfo nodeId="126868286647853716" fileName="plugin.xml" startLine="12" startPosition="82" endLine="12" endPosition="102" conceptFqName="jetbrains.mps.gtext.structure.GText" />
+    <nodeInfo nodeId="126868286647853715" fileName="plugin.xml" startLine="12" startPosition="102" endLine="12" endPosition="103" conceptFqName="jetbrains.mps.gtext.structure.GText" />
+    <nodeInfo nodeId="126868286647853711" fileName="plugin.xml" startLine="13" startPosition="0" endLine="13" endPosition="4" conceptFqName="jetbrains.mps.gtext.structure.GIndent" />
+    <nodeInfo nodeId="126868286647853711" fileName="plugin.xml" startLine="13" startPosition="4" endLine="13" endPosition="6" conceptFqName="jetbrains.mps.gtext.structure.GText" />
+    <nodeInfo nodeId="126868286647853712" fileName="plugin.xml" startLine="13" startPosition="6" endLine="13" endPosition="15" conceptFqName="jetbrains.mps.gtext.structure.GItemList" />
+    <nodeInfo nodeId="126868286647853712" fileName="plugin.xml" startLine="13" startPosition="6" endLine="13" endPosition="15" conceptFqName="jetbrains.mps.gtext.structure.GText" />
+    <nodeInfo nodeId="126868286647853711" fileName="plugin.xml" startLine="13" startPosition="15" endLine="13" endPosition="16" conceptFqName="jetbrains.mps.gtext.structure.GText" />
+    <nodeInfo nodeId="126868286647853705" fileName="plugin.xml" startLine="14" startPosition="0" endLine="14" endPosition="2" conceptFqName="jetbrains.mps.gtext.structure.GIndent" />
+    <nodeInfo nodeId="126868286647853705" fileName="plugin.xml" startLine="14" startPosition="2" endLine="14" endPosition="4" conceptFqName="jetbrains.mps.gtext.structure.GText" />
+    <nodeInfo nodeId="126868286647853706" fileName="plugin.xml" startLine="14" startPosition="4" endLine="14" endPosition="26" conceptFqName="jetbrains.mps.gtext.structure.GItemList" />
+    <nodeInfo nodeId="126868286647853706" fileName="plugin.xml" startLine="14" startPosition="4" endLine="14" endPosition="26" conceptFqName="jetbrains.mps.gtext.structure.GText" />
+    <nodeInfo nodeId="126868286647853705" fileName="plugin.xml" startLine="14" startPosition="26" endLine="14" endPosition="27" conceptFqName="jetbrains.mps.gtext.structure.GText" />
+    <nodeInfo nodeId="126868286647769264" fileName="plugin.xml" startLine="15" startPosition="0" endLine="15" endPosition="0" conceptFqName="jetbrains.mps.gtext.structure.GIndent" />
+    <nodeInfo nodeId="126868286647769264" fileName="plugin.xml" startLine="15" startPosition="0" endLine="15" endPosition="2" conceptFqName="jetbrains.mps.gtext.structure.GText" />
+    <nodeInfo nodeId="126868286647769265" fileName="plugin.xml" startLine="15" startPosition="2" endLine="15" endPosition="13" conceptFqName="jetbrains.mps.gtext.structure.GItemList" />
+    <nodeInfo nodeId="126868286647769265" fileName="plugin.xml" startLine="15" startPosition="2" endLine="15" endPosition="13" conceptFqName="jetbrains.mps.gtext.structure.GText" />
+    <nodeInfo nodeId="126868286647769264" fileName="plugin.xml" startLine="15" startPosition="13" endLine="15" endPosition="14" conceptFqName="jetbrains.mps.gtext.structure.GText" />
+    <nodeInfo nodeId="126868286647769270" fileName="plugin.xml" startLine="1" startPosition="0" endLine="2" endPosition="0" conceptFqName="jetbrains.mps.gtext.structure.GItemList" />
+    <nodeInfo nodeId="126868286647769270" fileName="plugin.xml" startLine="1" startPosition="21" endLine="2" endPosition="0" conceptFqName="jetbrains.mps.gtext.structure.GNewLine" />
+    <nodeInfo nodeId="126868286647769272" fileName="plugin.xml" startLine="2" startPosition="0" endLine="3" endPosition="0" conceptFqName="jetbrains.mps.gtext.structure.GItemList" />
+    <nodeInfo nodeId="126868286647769272" fileName="plugin.xml" startLine="2" startPosition="8" endLine="3" endPosition="0" conceptFqName="jetbrains.mps.gtext.structure.GNewLine" />
+    <nodeInfo nodeId="126868286647769272" fileName="plugin.xml" startLine="3" startPosition="0" endLine="4" endPosition="0" conceptFqName="jetbrains.mps.gtext.structure.GItemList" />
+    <nodeInfo nodeId="126868286647769272" fileName="plugin.xml" startLine="3" startPosition="16" endLine="4" endPosition="0" conceptFqName="jetbrains.mps.gtext.structure.GNewLine" />
+    <nodeInfo nodeId="126868286647769272" fileName="plugin.xml" startLine="4" startPosition="0" endLine="5" endPosition="0" conceptFqName="jetbrains.mps.gtext.structure.GItemList" />
+    <nodeInfo nodeId="126868286647769272" fileName="plugin.xml" startLine="4" startPosition="44" endLine="5" endPosition="0" conceptFqName="jetbrains.mps.gtext.structure.GNewLine" />
+    <nodeInfo nodeId="126868286647769270" fileName="plugin.xml" startLine="5" startPosition="0" endLine="6" endPosition="0" conceptFqName="jetbrains.mps.gtext.structure.GItemList" />
+    <nodeInfo nodeId="126868286647769270" fileName="plugin.xml" startLine="5" startPosition="1" endLine="6" endPosition="0" conceptFqName="jetbrains.mps.gtext.structure.GNewLine" />
+    <nodeInfo nodeId="126868286647769264" fileName="plugin.xml" startLine="6" startPosition="13" endLine="7" endPosition="0" conceptFqName="jetbrains.mps.gtext.structure.GNewLine" />
+    <nodeInfo nodeId="126868286647769281" fileName="plugin.xml" startLine="7" startPosition="0" endLine="8" endPosition="0" conceptFqName="jetbrains.mps.gtext.structure.GItemList" />
+    <nodeInfo nodeId="126868286647769281" fileName="plugin.xml" startLine="7" startPosition="29" endLine="8" endPosition="0" conceptFqName="jetbrains.mps.gtext.structure.GNewLine" />
+    <nodeInfo nodeId="126868286647769287" fileName="plugin.xml" startLine="8" startPosition="0" endLine="9" endPosition="0" conceptFqName="jetbrains.mps.gtext.structure.GItemList" />
+    <nodeInfo nodeId="126868286647769287" fileName="plugin.xml" startLine="8" startPosition="40" endLine="9" endPosition="0" conceptFqName="jetbrains.mps.gtext.structure.GNewLine" />
+    <nodeInfo nodeId="126868286647853697" fileName="plugin.xml" startLine="9" startPosition="0" endLine="10" endPosition="0" conceptFqName="jetbrains.mps.gtext.structure.GItemList" />
+    <nodeInfo nodeId="126868286647853697" fileName="plugin.xml" startLine="9" startPosition="24" endLine="10" endPosition="0" conceptFqName="jetbrains.mps.gtext.structure.GNewLine" />
+    <nodeInfo nodeId="126868286647853705" fileName="plugin.xml" startLine="10" startPosition="26" endLine="11" endPosition="0" conceptFqName="jetbrains.mps.gtext.structure.GNewLine" />
+    <nodeInfo nodeId="126868286647853711" fileName="plugin.xml" startLine="11" startPosition="15" endLine="12" endPosition="0" conceptFqName="jetbrains.mps.gtext.structure.GNewLine" />
+    <nodeInfo nodeId="126868286647853711" fileName="plugin.xml" startLine="12" startPosition="0" endLine="13" endPosition="0" conceptFqName="jetbrains.mps.gtext.structure.GIndentBlock" />
+    <nodeInfo nodeId="126868286647853711" fileName="plugin.xml" startLine="12" startPosition="0" endLine="13" endPosition="0" conceptFqName="jetbrains.mps.gtext.structure.GItemList" />
+    <nodeInfo nodeId="126868286647853713" fileName="plugin.xml" startLine="12" startPosition="0" endLine="13" endPosition="0" conceptFqName="jetbrains.mps.gtext.structure.GItemList" />
+    <nodeInfo nodeId="126868286647853713" fileName="plugin.xml" startLine="12" startPosition="0" endLine="13" endPosition="0" conceptFqName="jetbrains.mps.gtext.structure.GItemList" />
+    <nodeInfo nodeId="126868286647853715" fileName="plugin.xml" startLine="12" startPosition="0" endLine="13" endPosition="0" conceptFqName="jetbrains.mps.gtext.structure.GItemList" />
+    <nodeInfo nodeId="126868286647853715" fileName="plugin.xml" startLine="12" startPosition="103" endLine="13" endPosition="0" conceptFqName="jetbrains.mps.gtext.structure.GNewLine" />
+    <nodeInfo nodeId="126868286647853711" fileName="plugin.xml" startLine="13" startPosition="16" endLine="14" endPosition="0" conceptFqName="jetbrains.mps.gtext.structure.GNewLine" />
+    <nodeInfo nodeId="126868286647853705" fileName="plugin.xml" startLine="14" startPosition="27" endLine="15" endPosition="0" conceptFqName="jetbrains.mps.gtext.structure.GNewLine" />
+    <nodeInfo nodeId="126868286647769264" fileName="plugin.xml" startLine="15" startPosition="14" endLine="16" endPosition="0" conceptFqName="jetbrains.mps.gtext.structure.GNewLine" />
+    <nodeInfo nodeId="126868286647769272" fileName="plugin.xml" startLine="3" startPosition="0" endLine="5" endPosition="0" conceptFqName="jetbrains.mps.gtext.structure.GIndentBlock" />
+    <nodeInfo nodeId="126868286647769272" fileName="plugin.xml" startLine="3" startPosition="0" endLine="5" endPosition="0" conceptFqName="jetbrains.mps.gtext.structure.GItemList" />
+    <nodeInfo nodeId="126868286647769270" fileName="plugin.xml" startLine="2" startPosition="0" endLine="5" endPosition="0" conceptFqName="jetbrains.mps.gtext.structure.GIndentBlock" />
+    <nodeInfo nodeId="126868286647769270" fileName="plugin.xml" startLine="2" startPosition="0" endLine="5" endPosition="0" conceptFqName="jetbrains.mps.gtext.structure.GItemList" />
+    <nodeInfo nodeId="126868286647769272" fileName="plugin.xml" startLine="2" startPosition="0" endLine="5" endPosition="0" conceptFqName="jetbrains.mps.gtext.structure.GItemList" />
+    <nodeInfo nodeId="126868286647853705" fileName="plugin.xml" startLine="11" startPosition="0" endLine="14" endPosition="0" conceptFqName="jetbrains.mps.gtext.structure.GIndentBlock" />
+    <nodeInfo nodeId="126868286647853705" fileName="plugin.xml" startLine="11" startPosition="0" endLine="14" endPosition="0" conceptFqName="jetbrains.mps.gtext.structure.GItemList" />
+    <nodeInfo nodeId="126868286647853707" fileName="plugin.xml" startLine="11" startPosition="0" endLine="14" endPosition="0" conceptFqName="jetbrains.mps.gtext.structure.GItemList" />
+    <nodeInfo nodeId="126868286647853707" fileName="plugin.xml" startLine="11" startPosition="0" endLine="14" endPosition="0" conceptFqName="jetbrains.mps.gtext.structure.GItemList" />
+    <nodeInfo nodeId="126868286647853711" fileName="plugin.xml" startLine="11" startPosition="0" endLine="14" endPosition="0" conceptFqName="jetbrains.mps.gtext.structure.GItemList" />
+    <nodeInfo nodeId="126868286647769269" fileName="plugin.xml" startLine="1" startPosition="0" endLine="6" endPosition="0" conceptFqName="jetbrains.mps.gtext.structure.GItemList" />
+    <nodeInfo nodeId="126868286647769270" fileName="plugin.xml" startLine="1" startPosition="0" endLine="6" endPosition="0" conceptFqName="jetbrains.mps.gtext.structure.GItemList" />
+    <nodeInfo nodeId="126868286647853705" fileName="plugin.xml" startLine="10" startPosition="0" endLine="15" endPosition="0" conceptFqName="jetbrains.mps.gtext.structure.GItemList" />
+    <nodeInfo nodeId="126868286647769264" fileName="plugin.xml" startLine="7" startPosition="0" endLine="15" endPosition="0" conceptFqName="jetbrains.mps.gtext.structure.GIndentBlock" />
+    <nodeInfo nodeId="126868286647769264" fileName="plugin.xml" startLine="7" startPosition="0" endLine="15" endPosition="0" conceptFqName="jetbrains.mps.gtext.structure.GItemList" />
+    <nodeInfo nodeId="126868286647769280" fileName="plugin.xml" startLine="7" startPosition="0" endLine="15" endPosition="0" conceptFqName="jetbrains.mps.gtext.structure.GItemList" />
+    <nodeInfo nodeId="126868286647769280" fileName="plugin.xml" startLine="7" startPosition="0" endLine="15" endPosition="0" conceptFqName="jetbrains.mps.gtext.structure.GItemList" />
+    <nodeInfo nodeId="126868286647769264" fileName="plugin.xml" startLine="6" startPosition="0" endLine="16" endPosition="0" conceptFqName="jetbrains.mps.gtext.structure.GItemList" />
+    <nodeInfo nodeId="126868286647769261" fileName="plugin.xml" startLine="1" startPosition="0" endLine="16" endPosition="0" conceptFqName="jetbrains.mps.gtext.structure.GItemList" />
+    <unitInfo nodeId="126868286647769260" fileName="plugin.xml" startLine="1" startPosition="0" endLine="16" endPosition="0" unitName="plugin.xml" />
+  </root>
+  <root nodeId="4047228196713674561" modelId="r:6522897c-3500-48e0-b54e-2bb1e978c4d7(com.mbeddr.core.debug.spawner.loader)">
+    <nodeInfo nodeId="4047228196713677545" fileName="SpawnerLoader25.java" startLine="28" startPosition="62" endLine="29" endPosition="50" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="SPAWNER" />
+    <nodeInfo nodeId="6852227642762634705" fileName="SpawnerLoader25.java" startLine="29" startPosition="50" endLine="30" endPosition="74" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="PLUGIN_ID" />
+    <nodeInfo nodeId="4047228196713674561" fileName="SpawnerLoader25.java" startLine="30" startPosition="74" endLine="31" endPosition="70" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="log" />
+    <nodeInfo nodeId="4047228196713728352" fileName="SpawnerLoader25.java" startLine="32" startPosition="0" endLine="33" endPosition="122" conceptFqName="jetbrains.mps.baseLanguage.structure.FieldDeclaration" propertyString="myClassloader" />
+    <nodeInfo nodeId="4047228196713809283" fileName="SpawnerLoader25.java" startLine="33" startPosition="122" endLine="34" endPosition="122" conceptFqName="jetbrains.mps.baseLanguage.structure.FieldDeclaration" propertyString="myContributor" />
+    <nodeInfo nodeId="4047228196713809245" fileName="SpawnerLoader25.java" startLine="39" startPosition="31" endLine="40" endPosition="67" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="4047228196713809294" fileName="SpawnerLoader25.java" startLine="43" startPosition="34" endLine="44" endPosition="70" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="4047228196713674587" fileName="SpawnerLoader25.java" startLine="49" startPosition="36" endLine="50" endPosition="32" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="6852227642762969253" fileName="SpawnerLoader25.java" startLine="53" startPosition="40" endLine="54" endPosition="37" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="4047228196713723023" fileName="SpawnerLoader25.java" startLine="57" startPosition="60" endLine="58" endPosition="50" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="6238051727131291179" fileName="SpawnerLoader25.java" startLine="61" startPosition="43" endLine="62" endPosition="76" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="4047228196713721063" fileName="SpawnerLoader25.java" startLine="77" startPosition="11" endLine="78" endPosition="77" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="4047228196713728480" fileName="SpawnerLoader25.java" startLine="78" startPosition="77" endLine="79" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.Statement" />
+    <nodeInfo nodeId="4047228196713721102" fileName="SpawnerLoader25.java" startLine="79" startPosition="0" endLine="80" endPosition="214" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="4047228196713728376" fileName="SpawnerLoader25.java" startLine="82" startPosition="35" endLine="83" endPosition="83" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="4047228196713728422" fileName="SpawnerLoader25.java" startLine="84" startPosition="9" endLine="85" endPosition="84" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="4047228196713721000" fileName="SpawnerLoader25.java" startLine="89" startPosition="38" endLine="90" endPosition="19" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="4047228196713810436" fileName="SpawnerLoader25.java" startLine="95" startPosition="40" endLine="96" endPosition="64" conceptFqName="jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+    <nodeInfo nodeId="4047228196713808923" fileName="SpawnerLoader25.java" startLine="96" startPosition="64" endLine="97" endPosition="138" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="6560272647750858101" fileName="SpawnerLoader25.java" startLine="100" startPosition="15" endLine="101" endPosition="81" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="4047228196713809133" fileName="SpawnerLoader25.java" startLine="103" startPosition="39" endLine="104" endPosition="78" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="4047228196713677368" fileName="SpawnerLoader25.java" startLine="113" startPosition="61" endLine="114" endPosition="20" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="4047228196713677373" fileName="SpawnerLoader25.java" startLine="115" startPosition="7" endLine="116" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.Statement" />
+    <nodeInfo nodeId="4047228196713720877" fileName="SpawnerLoader25.java" startLine="116" startPosition="0" endLine="117" endPosition="58" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="4047228196713720912" fileName="SpawnerLoader25.java" startLine="118" startPosition="27" endLine="119" endPosition="20" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="4047228196713677385" fileName="SpawnerLoader25.java" startLine="120" startPosition="7" endLine="121" endPosition="100" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="4047228196713677393" fileName="SpawnerLoader25.java" startLine="122" startPosition="31" endLine="123" endPosition="20" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="4047228196713677398" fileName="SpawnerLoader25.java" startLine="124" startPosition="7" endLine="125" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.Statement" />
+    <nodeInfo nodeId="4047228196713677399" fileName="SpawnerLoader25.java" startLine="125" startPosition="0" endLine="126" endPosition="96" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="4047228196713677409" fileName="SpawnerLoader25.java" startLine="126" startPosition="96" endLine="127" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.Statement" />
+    <nodeInfo nodeId="4047228196713677410" fileName="SpawnerLoader25.java" startLine="127" startPosition="0" endLine="128" endPosition="18" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="4047228196713677417" fileName="SpawnerLoader25.java" startLine="130" startPosition="33" endLine="131" endPosition="59" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="4047228196713677427" fileName="SpawnerLoader25.java" startLine="132" startPosition="16" endLine="133" endPosition="56" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="4047228196713677443" fileName="SpawnerLoader25.java" startLine="135" startPosition="36" endLine="136" endPosition="52" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="4047228196713677450" fileName="SpawnerLoader25.java" startLine="137" startPosition="48" endLine="138" endPosition="61" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="4047228196713677465" fileName="SpawnerLoader25.java" startLine="139" startPosition="56" endLine="140" endPosition="57" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="4047228196713677480" fileName="SpawnerLoader25.java" startLine="141" startPosition="16" endLine="142" endPosition="57" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="4047228196713677492" fileName="SpawnerLoader25.java" startLine="145" startPosition="33" endLine="146" endPosition="59" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="4047228196713677502" fileName="SpawnerLoader25.java" startLine="147" startPosition="16" endLine="148" endPosition="56" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="4047228196713677511" fileName="SpawnerLoader25.java" startLine="150" startPosition="14" endLine="151" endPosition="20" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="4047228196713677513" fileName="SpawnerLoader25.java" startLine="152" startPosition="7" endLine="153" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.Statement" />
+    <nodeInfo nodeId="4047228196713677514" fileName="SpawnerLoader25.java" startLine="153" startPosition="0" endLine="154" endPosition="75" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="4047228196713677524" fileName="SpawnerLoader25.java" startLine="155" startPosition="33" endLine="156" endPosition="66" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="4047228196713677535" fileName="SpawnerLoader25.java" startLine="157" startPosition="7" endLine="158" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.Statement" />
+    <nodeInfo nodeId="4047228196713677536" fileName="SpawnerLoader25.java" startLine="158" startPosition="0" endLine="159" endPosition="18" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="6560272647750905194" fileName="SpawnerLoader25.java" startLine="163" startPosition="94" endLine="164" endPosition="36" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="6560272647750905232" fileName="SpawnerLoader25.java" startLine="166" startPosition="22" endLine="167" endPosition="26" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="6560272647750905186" fileName="SpawnerLoader25.java" startLine="168" startPosition="9" endLine="169" endPosition="17" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="6560272647750905237" fileName="SpawnerLoader25.java" startLine="170" startPosition="7" endLine="171" endPosition="98" conceptFqName="jetbrains.mps.baseLanguage.structure.ThrowStatement" />
+    <nodeInfo nodeId="6560272647750905143" fileName="SpawnerLoader25.java" startLine="174" startPosition="94" endLine="175" endPosition="38" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="6560272647750905152" fileName="SpawnerLoader25.java" startLine="176" startPosition="22" endLine="177" endPosition="17" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="6560272647750905163" fileName="SpawnerLoader25.java" startLine="179" startPosition="11" endLine="180" endPosition="29" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="6560272647750905157" fileName="SpawnerLoader25.java" startLine="181" startPosition="48" endLine="182" endPosition="38" conceptFqName="jetbrains.mps.baseLanguage.structure.ThrowStatement" />
+    <nodeInfo nodeId="6560272647750905173" fileName="SpawnerLoader25.java" startLine="184" startPosition="22" endLine="185" endPosition="17" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="6560272647750905182" fileName="SpawnerLoader25.java" startLine="186" startPosition="7" endLine="187" endPosition="41" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="4047228196713674563" fileName="SpawnerLoader25.java" startLine="35" startPosition="0" endLine="37" endPosition="3" conceptFqName="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" propertyString="SpawnerLoader25#()V" />
+    <nodeInfo nodeId="4047228196713720961" fileName="SpawnerLoader25.java" startLine="72" startPosition="73" endLine="74" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" propertyString="LibraryLoadingContributor#()V" />
+    <nodeInfo nodeId="4047228196713677425" fileName="SpawnerLoader25.java" startLine="132" startPosition="14" endLine="134" endPosition="9" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
+    <nodeInfo nodeId="4047228196713677478" fileName="SpawnerLoader25.java" startLine="141" startPosition="14" endLine="143" endPosition="9" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
+    <nodeInfo nodeId="4047228196713677500" fileName="SpawnerLoader25.java" startLine="147" startPosition="14" endLine="149" endPosition="9" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
+    <nodeInfo nodeId="4047228196713677509" fileName="SpawnerLoader25.java" startLine="150" startPosition="12" endLine="152" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
+    <nodeInfo nodeId="4047228196713728376" fileName="SpawnerLoader25.java" startLine="81" startPosition="31" endLine="84" endPosition="9" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
+    <nodeInfo nodeId="4047228196713728376" fileName="SpawnerLoader25.java" startLine="81" startPosition="31" endLine="84" endPosition="9" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="4047228196713809133" fileName="SpawnerLoader25.java" startLine="102" startPosition="35" endLine="105" endPosition="13" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
+    <nodeInfo nodeId="4047228196713809133" fileName="SpawnerLoader25.java" startLine="102" startPosition="35" endLine="105" endPosition="13" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="4047228196713677366" fileName="SpawnerLoader25.java" startLine="112" startPosition="47" endLine="115" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="4047228196713720893" fileName="SpawnerLoader25.java" startLine="117" startPosition="58" endLine="120" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="4047228196713677391" fileName="SpawnerLoader25.java" startLine="121" startPosition="100" endLine="124" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="4047228196713677522" fileName="SpawnerLoader25.java" startLine="154" startPosition="75" endLine="157" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="6560272647750905227" fileName="SpawnerLoader25.java" startLine="165" startPosition="22" endLine="168" endPosition="9" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="6560272647750905147" fileName="SpawnerLoader25.java" startLine="175" startPosition="38" endLine="178" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="6560272647750905168" fileName="SpawnerLoader25.java" startLine="183" startPosition="7" endLine="186" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="4047228196713674569" fileName="SpawnerLoader25.java" startLine="38" startPosition="0" endLine="42" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="initComponent#()V" />
+    <nodeInfo nodeId="4047228196713674573" fileName="SpawnerLoader25.java" startLine="42" startPosition="0" endLine="46" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="disposeComponent#()V" />
+    <nodeInfo nodeId="4047228196713723001" fileName="SpawnerLoader25.java" startLine="52" startPosition="0" endLine="56" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="getPluginId#()Lcom/intellij/openapi/extensions/PluginId;" />
+    <nodeInfo nodeId="4047228196713723007" fileName="SpawnerLoader25.java" startLine="56" startPosition="0" endLine="60" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="getPluginDescriptor#()Lcom/intellij/ide/plugins/IdeaPluginDescriptor;" />
+    <nodeInfo nodeId="6238051727131291172" fileName="SpawnerLoader25.java" startLine="60" startPosition="0" endLine="64" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="getLanguagesPath#()Ljava/lang/String;" />
+    <nodeInfo nodeId="4047228196713677370" fileName="SpawnerLoader25.java" startLine="65" startPosition="64" endLine="69" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="4047228196713720996" fileName="SpawnerLoader25.java" startLine="88" startPosition="0" endLine="92" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="hiddenLanguages#()Z" />
+    <nodeInfo nodeId="4047228196713677415" fileName="SpawnerLoader25.java" startLine="129" startPosition="33" endLine="134" endPosition="9" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="4047228196713677490" fileName="SpawnerLoader25.java" startLine="144" startPosition="38" endLine="149" endPosition="9" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="6560272647750905154" fileName="SpawnerLoader25.java" startLine="178" startPosition="7" endLine="183" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.TryCatchStatement" />
+    <nodeInfo nodeId="4047228196713674577" fileName="SpawnerLoader25.java" startLine="46" startPosition="0" endLine="52" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getComponentName#()Ljava/lang/String;" />
+    <nodeInfo nodeId="6560272647750905202" fileName="SpawnerLoader25.java" startLine="164" startPosition="36" endLine="170" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="4047228196713677370" fileName="SpawnerLoader25.java" startLine="64" startPosition="0" endLine="71" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="neq_psyrgf_a0a0a1#(Ljava/lang/Object;Ljava/lang/Object;)Z" />
+    <nodeInfo nodeId="4047228196713809093" fileName="SpawnerLoader25.java" startLine="99" startPosition="47" endLine="106" endPosition="11" conceptFqName="jetbrains.mps.baseLanguage.structure.TryCatchStatement" />
+    <nodeInfo nodeId="4047228196713677448" fileName="SpawnerLoader25.java" startLine="136" startPosition="52" endLine="143" endPosition="9" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="4047228196713808988" fileName="SpawnerLoader25.java" startLine="98" startPosition="74" endLine="107" endPosition="9" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="4047228196713728368" fileName="SpawnerLoader25.java" startLine="76" startPosition="65" endLine="86" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.TryCatchStatement" />
+    <nodeInfo nodeId="4047228196713808960" fileName="SpawnerLoader25.java" startLine="97" startPosition="138" endLine="108" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.ForeachStatement" />
+    <nodeInfo nodeId="4047228196713723114" fileName="SpawnerLoader25.java" startLine="161" startPosition="0" endLine="173" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="loadClass#(Ljava/lang/String;Z)Ljava/lang/Class;" />
+    <nodeInfo nodeId="4047228196713720989" fileName="SpawnerLoader25.java" startLine="75" startPosition="0" endLine="88" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getLibraries#()Ljava/util/Set;" />
+    <nodeInfo nodeId="4047228196713723059" fileName="SpawnerLoader25.java" startLine="94" startPosition="66" endLine="109" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" propertyString="LibraryLoadingClassloader#()V" />
+    <nodeInfo nodeId="6560272647750905137" fileName="SpawnerLoader25.java" startLine="173" startPosition="0" endLine="189" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="_loadClass#(Ljava/lang/String;)Ljava/lang/Class;" />
+    <nodeInfo nodeId="4047228196713677413" fileName="SpawnerLoader25.java" startLine="128" startPosition="18" endLine="152" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="4047228196713723064" fileName="SpawnerLoader25.java" startLine="110" startPosition="0" endLine="161" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="findLibrary#(Ljava/lang/String;)Ljava/lang/String;" />
+    <scopeInfo nodeId="4047228196713674566" fileName="SpawnerLoader25.java" startLine="36" startPosition="28" endLine="36" endPosition="28" />
+    <scopeInfo nodeId="4047228196713720964" fileName="SpawnerLoader25.java" startLine="73" startPosition="40" endLine="73" endPosition="40" />
+    <scopeInfo nodeId="4047228196713674572" fileName="SpawnerLoader25.java" startLine="39" startPosition="31" endLine="40" endPosition="67" />
+    <scopeInfo nodeId="4047228196713674576" fileName="SpawnerLoader25.java" startLine="43" startPosition="34" endLine="44" endPosition="70" />
+    <scopeInfo nodeId="4047228196713674582" fileName="SpawnerLoader25.java" startLine="49" startPosition="36" endLine="50" endPosition="32" />
+    <scopeInfo nodeId="4047228196713723004" fileName="SpawnerLoader25.java" startLine="53" startPosition="40" endLine="54" endPosition="37" />
+    <scopeInfo nodeId="4047228196713723009" fileName="SpawnerLoader25.java" startLine="57" startPosition="60" endLine="58" endPosition="50" />
+    <scopeInfo nodeId="6238051727131291175" fileName="SpawnerLoader25.java" startLine="61" startPosition="43" endLine="62" endPosition="76" />
+    <scopeInfo nodeId="4047228196713728376" fileName="SpawnerLoader25.java" startLine="82" startPosition="35" endLine="83" endPosition="83" />
+    <scopeInfo nodeId="4047228196713720999" fileName="SpawnerLoader25.java" startLine="89" startPosition="38" endLine="90" endPosition="19" />
+    <scopeInfo nodeId="4047228196713809094" fileName="SpawnerLoader25.java" startLine="100" startPosition="15" endLine="101" endPosition="81" />
+    <scopeInfo nodeId="4047228196713809133" fileName="SpawnerLoader25.java" startLine="103" startPosition="39" endLine="104" endPosition="78" />
+    <scopeInfo nodeId="4047228196713677367" fileName="SpawnerLoader25.java" startLine="113" startPosition="61" endLine="114" endPosition="20" />
+    <scopeInfo nodeId="4047228196713720894" fileName="SpawnerLoader25.java" startLine="118" startPosition="27" endLine="119" endPosition="20" />
+    <scopeInfo nodeId="4047228196713677392" fileName="SpawnerLoader25.java" startLine="122" startPosition="31" endLine="123" endPosition="20" />
+    <scopeInfo nodeId="4047228196713677416" fileName="SpawnerLoader25.java" startLine="130" startPosition="33" endLine="131" endPosition="59" />
+    <scopeInfo nodeId="4047228196713677426" fileName="SpawnerLoader25.java" startLine="132" startPosition="16" endLine="133" endPosition="56" />
+    <scopeInfo nodeId="4047228196713677449" fileName="SpawnerLoader25.java" startLine="137" startPosition="48" endLine="138" endPosition="61" />
+    <scopeInfo nodeId="4047228196713677464" fileName="SpawnerLoader25.java" startLine="139" startPosition="56" endLine="140" endPosition="57" />
+    <scopeInfo nodeId="4047228196713677479" fileName="SpawnerLoader25.java" startLine="141" startPosition="16" endLine="142" endPosition="57" />
+    <scopeInfo nodeId="4047228196713677491" fileName="SpawnerLoader25.java" startLine="145" startPosition="33" endLine="146" endPosition="59" />
+    <scopeInfo nodeId="4047228196713677501" fileName="SpawnerLoader25.java" startLine="147" startPosition="16" endLine="148" endPosition="56" />
+    <scopeInfo nodeId="4047228196713677510" fileName="SpawnerLoader25.java" startLine="150" startPosition="14" endLine="151" endPosition="20" />
+    <scopeInfo nodeId="4047228196713677523" fileName="SpawnerLoader25.java" startLine="155" startPosition="33" endLine="156" endPosition="66" />
+    <scopeInfo nodeId="6560272647750905228" fileName="SpawnerLoader25.java" startLine="166" startPosition="22" endLine="167" endPosition="26" />
+    <scopeInfo nodeId="6560272647750905151" fileName="SpawnerLoader25.java" startLine="176" startPosition="22" endLine="177" endPosition="17" />
+    <scopeInfo nodeId="6560272647750905162" fileName="SpawnerLoader25.java" startLine="179" startPosition="11" endLine="180" endPosition="29" />
+    <scopeInfo nodeId="6560272647750905155" fileName="SpawnerLoader25.java" startLine="181" startPosition="0" endLine="182" endPosition="38">
+      <varInfo nodeId="6560272647750905135" varName="e" />
+    </scopeInfo>
+    <scopeInfo nodeId="6560272647750905156" fileName="SpawnerLoader25.java" startLine="181" startPosition="48" endLine="182" endPosition="38" />
+    <scopeInfo nodeId="6560272647750905172" fileName="SpawnerLoader25.java" startLine="184" startPosition="22" endLine="185" endPosition="17" />
+    <scopeInfo nodeId="4047228196713674563" fileName="SpawnerLoader25.java" startLine="35" startPosition="0" endLine="37" endPosition="3" />
+    <scopeInfo nodeId="4047228196713720961" fileName="SpawnerLoader25.java" startLine="72" startPosition="73" endLine="74" endPosition="5" />
+    <scopeInfo nodeId="4047228196713728369" fileName="SpawnerLoader25.java" startLine="77" startPosition="11" endLine="80" endPosition="214">
+      <varInfo nodeId="4047228196713721064" varName="libraryPath" />
+    </scopeInfo>
+    <scopeInfo nodeId="4047228196713728376" fileName="SpawnerLoader25.java" startLine="81" startPosition="31" endLine="84" endPosition="9" />
+    <scopeInfo nodeId="4047228196713809096" fileName="SpawnerLoader25.java" startLine="102" startPosition="0" endLine="105" endPosition="13">
+      <varInfo nodeId="4047228196713809097" varName="e" />
+    </scopeInfo>
+    <scopeInfo nodeId="4047228196713809099" fileName="SpawnerLoader25.java" startLine="102" startPosition="35" endLine="105" endPosition="13" />
+    <scopeInfo nodeId="4047228196713674569" fileName="SpawnerLoader25.java" startLine="38" startPosition="0" endLine="42" endPosition="0" />
+    <scopeInfo nodeId="4047228196713674573" fileName="SpawnerLoader25.java" startLine="42" startPosition="0" endLine="46" endPosition="0" />
+    <scopeInfo nodeId="4047228196713723001" fileName="SpawnerLoader25.java" startLine="52" startPosition="0" endLine="56" endPosition="0" />
+    <scopeInfo nodeId="4047228196713723007" fileName="SpawnerLoader25.java" startLine="56" startPosition="0" endLine="60" endPosition="0" />
+    <scopeInfo nodeId="6238051727131291172" fileName="SpawnerLoader25.java" startLine="60" startPosition="0" endLine="64" endPosition="0" />
+    <scopeInfo nodeId="4047228196713677370" fileName="SpawnerLoader25.java" startLine="65" startPosition="64" endLine="69" endPosition="7" />
+    <scopeInfo nodeId="4047228196713728371" fileName="SpawnerLoader25.java" startLine="81" startPosition="0" endLine="85" endPosition="84">
+      <varInfo nodeId="4047228196713728372" varName="e" />
+    </scopeInfo>
+    <scopeInfo nodeId="4047228196713728374" fileName="SpawnerLoader25.java" startLine="81" startPosition="31" endLine="85" endPosition="84" />
+    <scopeInfo nodeId="4047228196713720996" fileName="SpawnerLoader25.java" startLine="88" startPosition="0" endLine="92" endPosition="0" />
+    <scopeInfo nodeId="6560272647750905203" fileName="SpawnerLoader25.java" startLine="165" startPosition="22" endLine="169" endPosition="17" />
+    <scopeInfo nodeId="4047228196713677414" fileName="SpawnerLoader25.java" startLine="129" startPosition="33" endLine="134" endPosition="9" />
+    <scopeInfo nodeId="4047228196713677489" fileName="SpawnerLoader25.java" startLine="144" startPosition="38" endLine="149" endPosition="9" />
+    <scopeInfo nodeId="4047228196713674577" fileName="SpawnerLoader25.java" startLine="46" startPosition="0" endLine="52" endPosition="0" />
+    <scopeInfo nodeId="4047228196713677370" fileName="SpawnerLoader25.java" startLine="64" startPosition="0" endLine="71" endPosition="0">
+      <varInfo nodeId="4047228196713677370" varName="a" />
+      <varInfo nodeId="4047228196713677370" varName="b" />
+    </scopeInfo>
+    <scopeInfo nodeId="4047228196713808990" fileName="SpawnerLoader25.java" startLine="99" startPosition="47" endLine="106" endPosition="11" />
+    <scopeInfo nodeId="4047228196713677437" fileName="SpawnerLoader25.java" startLine="135" startPosition="36" endLine="143" endPosition="9">
+      <varInfo nodeId="4047228196713677444" varName="arch" />
+    </scopeInfo>
+    <scopeInfo nodeId="4047228196713723123" fileName="SpawnerLoader25.java" startLine="163" startPosition="94" endLine="171" endPosition="98">
+      <varInfo nodeId="6560272647750905195" varName="c" />
+    </scopeInfo>
+    <scopeInfo nodeId="4047228196713808963" fileName="SpawnerLoader25.java" startLine="98" startPosition="74" endLine="107" endPosition="9" />
+    <scopeInfo nodeId="4047228196713720993" fileName="SpawnerLoader25.java" startLine="76" startPosition="65" endLine="86" endPosition="7" />
+    <scopeInfo nodeId="4047228196713808960" fileName="SpawnerLoader25.java" startLine="97" startPosition="138" endLine="108" endPosition="7">
+      <varInfo nodeId="4047228196713808960" varName="child" />
+    </scopeInfo>
+    <scopeInfo nodeId="4047228196713723114" fileName="SpawnerLoader25.java" startLine="161" startPosition="0" endLine="173" endPosition="0">
+      <varInfo nodeId="4047228196713723118" varName="name" />
+      <varInfo nodeId="4047228196713723120" varName="resolve" />
+    </scopeInfo>
+    <scopeInfo nodeId="4047228196713720989" fileName="SpawnerLoader25.java" startLine="75" startPosition="0" endLine="88" endPosition="0" />
+    <scopeInfo nodeId="4047228196713723062" fileName="SpawnerLoader25.java" startLine="95" startPosition="40" endLine="108" endPosition="7">
+      <varInfo nodeId="4047228196713808924" varName="pluginLib" />
+    </scopeInfo>
+    <scopeInfo nodeId="6560272647750905142" fileName="SpawnerLoader25.java" startLine="174" startPosition="94" endLine="187" endPosition="41">
+      <varInfo nodeId="6560272647750905134" varName="c" />
+    </scopeInfo>
+    <scopeInfo nodeId="4047228196713723059" fileName="SpawnerLoader25.java" startLine="94" startPosition="66" endLine="109" endPosition="5" />
+    <scopeInfo nodeId="6560272647750905137" fileName="SpawnerLoader25.java" startLine="173" startPosition="0" endLine="189" endPosition="0">
+      <varInfo nodeId="6560272647750905136" varName="name" />
+    </scopeInfo>
+    <scopeInfo nodeId="4047228196713723069" fileName="SpawnerLoader25.java" startLine="112" startPosition="47" endLine="159" endPosition="18">
+      <varInfo nodeId="4047228196713677386" varName="bundleHome" />
+      <varInfo nodeId="4047228196713677515" varName="libraryFile" />
+      <varInfo nodeId="4047228196713677411" varName="osDir" />
+      <varInfo nodeId="4047228196713720878" varName="plugin" />
+      <varInfo nodeId="4047228196713677400" varName="spawnerDir" />
+    </scopeInfo>
+    <scopeInfo nodeId="4047228196713723064" fileName="SpawnerLoader25.java" startLine="110" startPosition="0" endLine="161" endPosition="0">
+      <varInfo nodeId="4047228196713723067" varName="name" />
+    </scopeInfo>
+    <unitInfo nodeId="4047228196713674561" fileName="SpawnerLoader25.java" startLine="28" startPosition="0" endLine="191" endPosition="0" unitName="com.mbeddr.core.debug.spawner.loader.SpawnerLoader25" />
+    <unitInfo nodeId="4047228196713723057" fileName="SpawnerLoader25.java" startLine="94" startPosition="0" endLine="190" endPosition="0" unitName="com.mbeddr.core.debug.spawner.loader.SpawnerLoader25$LibraryLoadingClassloader" />
+    <unitInfo nodeId="4047228196713720959" fileName="SpawnerLoader25.java" startLine="72" startPosition="0" endLine="93" endPosition="0" unitName="com.mbeddr.core.debug.spawner.loader.SpawnerLoader25$LibraryLoadingContributor" />
+  </root>
+</debugInfo>
+

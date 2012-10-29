@@ -9,11 +9,9 @@
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="qdv7" modelUID="r:1ff3d952-eae5-4d94-b89e-ea3060b11545(com.mbeddr.cc.var.annotations.structure)" version="2" implicit="yes" />
   <import index="qqyh" modelUID="r:a74300b8-76a8-461e-befa-fc86b0ad5dd9(com.mbeddr.cc.var.fm.structure)" version="-1" implicit="yes" />
-  <import index="75wo" modelUID="r:eaa205a4-f15c-47d3-99e2-e648881b5997(com.mbeddr.cc.requirements.structure)" version="5" implicit="yes" />
+  <import index="75wo" modelUID="r:eaa205a4-f15c-47d3-99e2-e648881b5997(com.mbeddr.cc.requirements.structure)" version="6" implicit="yes" />
   <import index="26ao" modelUID="r:7c15925b-a4a5-4da3-88aa-931a5a9ed982(com.mbeddr.cc.trace.structure)" version="3" implicit="yes" />
   <import index="yq40" modelUID="r:152b3fc0-83a1-4bab-a8cd-565eb8483785(com.mbeddr.core.pointers.structure)" version="3" implicit="yes" />
-  <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="5" implicit="yes" />
-  <import index="51wr" modelUID="r:b31f1c3c-99aa-4f1e-a329-cba27efb1a6b(com.mbeddr.core.buildconfig.structure)" version="1" implicit="yes" />
   <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="3" implicit="yes" />
   <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="4" implicit="yes" />
   <import index="k146" modelUID="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" version="2" implicit="yes" />
@@ -32,7 +30,6 @@
       <property name="name" nameId="tpck.1169194664001" value="ApplicationModule" />
       <property name="virtualPackage" nameId="tpck.1193676396447" value="" />
     </node>
-    <node type="51wr.BuildConfiguration" typeId="51wr.7717755763392524104" id="3320624468180816143" />
     <node type="75wo.RequirementsModule" typeId="75wo.8745401669462963169" id="1165432222362156712">
       <property name="name" nameId="tpck.1169194664001" value="TestModule" />
       <property name="showTraces" nameId="26ao.3291018189726920316" value="true" />
@@ -123,21 +120,9 @@
         <node role="constraint" roleId="qqyh.6825476687691297427" type="qqyh.OptionalConstraint" typeId="qqyh.6825476687691317627" id="6617704999132170932" />
         <node role="children" roleId="qqyh.6825476687691297428" type="qqyh.Feature" typeId="qqyh.6825476687691297426" id="1165432222362213005">
           <property name="name" nameId="tpck.1169194664001" value="logging" />
-          <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="26ao.TraceAnnotation" typeId="26ao.439567521322928994" id="1165432222362213007">
-            <node role="tracekind" roleId="26ao.439567521322928995" type="26ao.ImplementsTraceKind" typeId="26ao.439567521322929003" id="1165432222362213008" />
-            <node role="refs" roleId="26ao.439567521322928996" type="75wo.RequirementRef" typeId="75wo.439567521322984797" id="439567521323030487">
-              <link role="target" roleId="26ao.439567521322959431" targetNodeId="1165432222362212512" resolveInfo="D2" />
-            </node>
-          </node>
         </node>
         <node role="children" roleId="qqyh.6825476687691297428" type="qqyh.Feature" typeId="qqyh.6825476687691297426" id="6617704999132170934">
           <property name="name" nameId="tpck.1169194664001" value="test" />
-          <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="26ao.TraceAnnotation" typeId="26ao.439567521322928994" id="1165432222362213010">
-            <node role="tracekind" roleId="26ao.439567521322928995" type="26ao.ImplementsTraceKind" typeId="26ao.439567521322929003" id="439567521323030488" />
-            <node role="refs" roleId="26ao.439567521322928996" type="75wo.RequirementRef" typeId="75wo.439567521322984797" id="439567521323030489">
-              <link role="target" roleId="26ao.439567521322959431" targetNodeId="1165432222362156713" resolveInfo="Dummy" />
-            </node>
-          </node>
         </node>
         <node role="children" roleId="qqyh.6825476687691297428" type="qqyh.Feature" typeId="qqyh.6825476687691297426" id="2785540331872317140">
           <property name="name" nameId="tpck.1169194664001" value="valueTest" />
@@ -175,11 +160,6 @@
       <link role="configures" roleId="qqyh.6825476687691297418" targetNodeId="6617704999132170930" resolveInfo="DeploymentConfiguration" />
       <node role="rootFeature" roleId="qqyh.6825476687691297417" type="qqyh.SelectedFeature" typeId="qqyh.6825476687691297422" id="6617704999132170940">
         <link role="feature" roleId="qqyh.6825476687691297425" targetNodeId="6617704999132170931" resolveInfo="root" />
-      </node>
-    </node>
-    <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="75wo.ReqModuleRefAttribute" typeId="75wo.3402431285977874460" id="1165432222362156715">
-      <node role="refs" roleId="26ao.439567521322959424" type="26ao.TraceTargetProviderRef" typeId="26ao.439567521322959422" id="439567521323030486">
-        <link role="provider" roleId="26ao.439567521322959423" targetNodeId="1165432222362156712" resolveInfo="TestModule" />
       </node>
     </node>
   </root>
@@ -423,16 +403,6 @@
           </node>
         </node>
       </node>
-    </node>
-  </root>
-  <root id="3320624468180816143">
-    <node role="configurationItems" roleId="vs0r.4459718605982007338" type="k146.ReportingConfiguration" typeId="k146.4459718605982051949" id="3320624468180816213">
-      <node role="strategy" roleId="k146.4459718605982051999" type="k146.PrintfReportingStrategy" typeId="k146.4459718605982051980" id="3320624468180816214" />
-    </node>
-    <node role="target" roleId="51wr.5323740605968447026" type="51wr.DesktopPlatform" typeId="51wr.5323740605968447022" id="3320624468180816411">
-      <property name="compiler" nameId="51wr.5323740605968447024" value="gcc" />
-      <property name="compilerOptions" nameId="51wr.5323740605968447025" value="-std=c99" />
-      <property name="debugOptions" nameId="51wr.2736179788492003937" value="-g" />
     </node>
   </root>
   <root id="1165432222362156712">
