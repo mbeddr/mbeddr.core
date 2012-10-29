@@ -15,21 +15,6 @@ Let the wizard create a solution, but no language.
   \includegraphics[width=12cm]{figures/core/NewProject.png}
 \end{center}
 
-We now have to make the project aware of the \emph{mbeddr.core} languages
-installed via the distribution. Go to the $File \rightarrow Settings$ (on the
-Mac it is under $MPS \rightarrow Preferences$) and select the $Global Libraries$
-in the IDE settings. Create a library called \ic{mbeddr.core} that points to
-the \ic{code} directory of the unzipped mbeddr installation.
-
-\greyboxnote{Note: This library must point to the \ic{code} directory of the
-checkout so that all languages are below it, including \emph{core} and \emph{mpsutil}.}
-
-\begin{center} 
-  \includegraphics[width=10cm]{figures/core/SettingsGlobalLibraries.png}
-\end{center}
-
-Notice that this is a global settings and have to be performed only once
-before your first application project.
 
 
 \parhead{Project Structure and Settings} An MPS project is a collection of

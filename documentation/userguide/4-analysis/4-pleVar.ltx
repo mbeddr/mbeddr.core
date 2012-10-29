@@ -1,3 +1,67 @@
 \section{Checking Product Line Variability}
 
+\subsection{Installation}
 
+Checking the consistency of feature models and configurations is based on the
+Yices SMT solver\footnote{This is the same tool that is also used for
+checking decision tables.}:\\
+\ic{http://yices.csl.sri.com/download.shtml}
+
+To be able to use these analyses, the solver has to be installed on your machine
+and available in the search path.
+
+\subsection{Available Analyses}
+
+For feature models we can check if the cross-cutting constraints (\ic{conflicts
+with}, \ic{requires also}) are consistent or not.
+If they are not consistent, then the feature model cannot be instantiated (\ie
+no valid configuration is possible). For configuration models we check if they
+conform to the defined feature model.
+
+\greyboxnote{A number of additional verifications for feature models seem
+useful, such as: checking whether a presence condition is possible, checking
+whether an artifact remains consistent for every defined configuration, etc.
+Over time, we will add more verifications. }
+
+\subsection{Performing the Analyses}
+
+The first step for analyzing feature models is to add the devkit
+\ic{com.mbeddr.analyses.fm} to the model that contains the to-be-verified
+feature model:
+
+\begin{center} 
+  \includegraphics[width=0.6\columnwidth]{figures/analyses/fmDevKitConfig.png}
+\end{center}
+
+\parhead{Feature Models} Once the devkit is added to the model, you can mark a
+feature model or a configuration model as \ic{verifiable} by using an intention. Once the
+\ic{verifiable} flag is set it will be displayed on the top of the feature model
+or configuration model.
+
+To start the verification, right-click on the feature model node and select the 
+\ic{Verify Feature Model} menu item.
+\begin{center} 
+  \includegraphics[width=0.6\columnwidth]{figures/analyses/fmVerifyAction.png}
+\end{center} 
+
+The verification result will be displayed in a window as shown below.
+In case the feature model is inconsistent (since it contains conflicting
+constraints), those conflicting constraints are listed.
+
+\begin{center} 
+  \includegraphics[width=0.6\columnwidth]{figures/analyses/fmVerificationResult.png}
+\end{center} 
+
+\parhead{Configuration Models} To start the verification, right-click on the
+configuration model node and select the \ic{Verify Configuration Model} menu
+item.
+\begin{center} 
+  \includegraphics[width=0.6\columnwidth]{figures/analyses/cmVerifyAction.png}
+\end{center}
+
+The result of the verification is displayed in a window as a debug information about 
+which of the features selected in the configuration are conflicting with the constraints 
+defined in the  feature model.
+\begin{center} 
+  \includegraphics[width=0.6\columnwidth]{figures/analyses/cmVerificationResult.png}
+\end{center} 

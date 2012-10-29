@@ -92,6 +92,9 @@
           <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_ImportContent" typeId="3ior.5610619299013057363" id="6247780594427982568">
             <link role="target" roleId="3ior.5610619299013057365" targetNodeId="og8s.6247780594427434822" resolveInfo="com.mbeddr.debugger.zip" />
           </node>
+          <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_ImportContent" typeId="3ior.5610619299013057363" id="8468178734857295013">
+            <link role="target" roleId="3ior.5610619299013057365" targetNodeId="og8s.8628756186118765535" resolveInfo="com.mbeddr.core.debugger.zip" />
+          </node>
           <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_ImportContent" typeId="3ior.5610619299013057363" id="6247780594427982570">
             <link role="target" roleId="3ior.5610619299013057365" targetNodeId="pyq9.6247780594427554262" resolveInfo="com.mbeddr.ext.components.zip" />
           </node>

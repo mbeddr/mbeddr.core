@@ -15,17 +15,25 @@
   <property name="mbeddr.core.project.dir" value="code/languages/com.mbeddr.core"/>
   <property name="mbeddr.core.project.mpr" value="code/languages/com.mbeddr.core/core.dev.mpr"/>
   
+  <property name="debugger.project.dir" value="code/languages/com.mbeddr.debugger/"/>
+  <property name="debugger.project.mpr" value="code/languages/com.mbeddr.debugger/debugger.dev.mpr"/>
+  
   <property name="mbeddr.ext.project.dir" value="code/languages/com.mbeddr.ext"/>
   <property name="mbeddr.ext.project.mpr" value="code/languages/com.mbeddr.ext/ext.dev.mpr"/> <!-- for the time being in core project... -->
   
   <property name="util.project.dir" value="code/languages/com.mbeddr.mpsutil"/>
   <property name="util.project.mpr" value="code/languages/com.mbeddr.mpsutil/mpsutil.dev.mpr"/>
+  
+  <property name="utilLanguageDir" value="${mbeddr.github.core.home}/${util.project.dir}/languages"/>  
+  <property name="coreLanguageDir" value="${mbeddr.github.core.home}/${mbeddr.core.project.dir}/languages"/>  
+  <property name="extLanguageDir" value="${mbeddr.github.core.home}/${mbeddr.ext.project.dir}/languages"/>  
+  <property name="debuggerLanguageDir" value="${mbeddr.github.core.home}/${debugger.project.dir}/languages"/>
 
-  <jvmargs id="myargs">
+    <jvmargs id="myargs">
       <arg value="-ea"/>
       <arg value="-Xss1024k"/>
-      <arg value="-Xmx1024m"/>
-      <arg value="-XX:MaxPermSize=384m"/>
+      <arg value="-Xmx2048m"/>
+      <arg value="-XX:MaxPermSize=128m"/>
       <arg value="-XX:+HeapDumpOnOutOfMemoryError"/>
 	  <arg value="-Didea.system.path=${mps.platform.caches}/system"/>
 	  <arg value="-Didea.config.path=${mps.platform.caches}/config"/>
@@ -48,8 +56,10 @@
     <mps.generate parallelMode="true" fork="true" failonerror="true">
       <jvmargs id="myargs"/>
       <macro name="mbeddr.github.core.home" path="${mbeddr.github.core.home}"/>
-      <library name="mbeddr.project" dir="${mbeddr.github.core.home}/${mbeddr.core.project.dir}/languages"/>
-      <library name="util.languages" dir="${mbeddr.github.core.home}/${util.project.dir}/languages"/>
+      <library name="mbeddr.project" dir="${coreLanguageDir}"/>
+      <library name="util.languages" dir="${utilLanguageDir}"/>
+      <library name="debugger.languages" dir="${debuggerLanguageDir}"/>
+      
       <modules dir="${mbeddr.github.core.home}/${mbeddr.ext.project.dir}/languages"/>
       <modules dir="${mbeddr.github.core.home}/${mbeddr.ext.project.dir}/lib"/>
     </mps.generate>
@@ -70,11 +80,13 @@
     <mps.generate parallelMode="true" fork="true" failonerror="true">
       <jvmargs id="myargs"/>
       <macro name="mbeddr.github.core.home" path="${mbeddr.github.core.home}"/>
-      <library name="project" dir="${mbeddr.github.core.home}/${mbeddr.ext.project.dir}"/>
-      <library name="mbeddr.core.project" dir="${mbeddr.github.core.home}/${mbeddr.core.project.dir}"/>
-      <library name="mbeddr.ext.project" dir="${mbeddr.github.core.home}/${mbeddr.ext.project.dir}"/>
-      <library name="util.languages" dir="${mbeddr.github.core.home}/${util.project.dir}/languages"/>
 
+      <library name="mbeddr.ext" dir="${extLanguageDir}"/>
+      <library name="mbeddr.ext.lib" dir="${extLanguageDir}/../lib"/>
+      <library name="mbeddr.core" dir="${coreLanguageDir}"/>
+      <library name="util.languages" dir="${utilLanguageDir}"/>
+      <library name="debugger.languages" dir="${debuggerLanguageDir}"/>
+      
 	  <!-- executable tests -->
       <modules dir="${mbeddr.github.core.home}/${mbeddr.ext.project.dir}/tests/"/>
   

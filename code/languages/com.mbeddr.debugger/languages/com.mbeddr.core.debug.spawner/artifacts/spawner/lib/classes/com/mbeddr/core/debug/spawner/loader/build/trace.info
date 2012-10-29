@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debugInfo>
+  <root nodeId="5100386946044466505" modelId="r:b590361c-ca69-43ff-8ac6-1e9a41dff2d3(com.mbeddr.core.debug.spawner.loader.build)">
+    <nodeInfo nodeId="5100386946044466505" fileName="SpawnerPlugin.properties" startLine="1" startPosition="0" endLine="1" endPosition="0" conceptFqName="jetbrains.mps.gtext.structure.GIndent" />
+    <nodeInfo nodeId="5100386946044466505" fileName="SpawnerPlugin.properties" startLine="1" startPosition="0" endLine="1" endPosition="8" conceptFqName="jetbrains.mps.gtext.structure.GText" />
+    <nodeInfo nodeId="5100386946044466505" fileName="SpawnerPlugin.properties" startLine="1" startPosition="8" endLine="1" endPosition="9" conceptFqName="jetbrains.mps.gtext.structure.GText" />
+    <nodeInfo nodeId="5100386946044466505" fileName="SpawnerPlugin.properties" startLine="1" startPosition="9" endLine="1" endPosition="35" conceptFqName="jetbrains.mps.gtext.structure.GText" />
+    <nodeInfo nodeId="5100386946044466505" fileName="SpawnerPlugin.properties" startLine="2" startPosition="0" endLine="2" endPosition="0" conceptFqName="jetbrains.mps.gtext.structure.GIndent" />
+    <nodeInfo nodeId="5100386946044466505" fileName="SpawnerPlugin.properties" startLine="2" startPosition="0" endLine="2" endPosition="10" conceptFqName="jetbrains.mps.gtext.structure.GText" />
+    <nodeInfo nodeId="5100386946044466505" fileName="SpawnerPlugin.properties" startLine="2" startPosition="10" endLine="2" endPosition="11" conceptFqName="jetbrains.mps.gtext.structure.GText" />
+    <nodeInfo nodeId="5100386946044466505" fileName="SpawnerPlugin.properties" startLine="2" startPosition="11" endLine="2" endPosition="103" conceptFqName="jetbrains.mps.gtext.structure.GText" />
+    <nodeInfo nodeId="5100386946044466505" fileName="SpawnerPlugin.properties" startLine="3" startPosition="0" endLine="3" endPosition="0" conceptFqName="jetbrains.mps.gtext.structure.GIndent" />
+    <nodeInfo nodeId="5100386946044466505" fileName="SpawnerPlugin.properties" startLine="3" startPosition="0" endLine="3" endPosition="11" conceptFqName="jetbrains.mps.gtext.structure.GText" />
+    <nodeInfo nodeId="5100386946044466505" fileName="SpawnerPlugin.properties" startLine="3" startPosition="11" endLine="3" endPosition="12" conceptFqName="jetbrains.mps.gtext.structure.GText" />
+    <nodeInfo nodeId="5100386946044466505" fileName="SpawnerPlugin.properties" startLine="3" startPosition="12" endLine="3" endPosition="100" conceptFqName="jetbrains.mps.gtext.structure.GText" />
+    <nodeInfo nodeId="5100386946044466505" fileName="SpawnerPlugin.properties" startLine="1" startPosition="0" endLine="2" endPosition="0" conceptFqName="jetbrains.mps.gtext.structure.GItemList" />
+    <nodeInfo nodeId="5100386946044466505" fileName="SpawnerPlugin.properties" startLine="1" startPosition="35" endLine="2" endPosition="0" conceptFqName="jetbrains.mps.gtext.structure.GNewLine" />
+    <nodeInfo nodeId="5100386946044466505" fileName="SpawnerPlugin.properties" startLine="2" startPosition="0" endLine="3" endPosition="0" conceptFqName="jetbrains.mps.gtext.structure.GItemList" />
+    <nodeInfo nodeId="5100386946044466505" fileName="SpawnerPlugin.properties" startLine="2" startPosition="103" endLine="3" endPosition="0" conceptFqName="jetbrains.mps.gtext.structure.GNewLine" />
+    <nodeInfo nodeId="5100386946044466505" fileName="SpawnerPlugin.properties" startLine="3" startPosition="0" endLine="4" endPosition="0" conceptFqName="jetbrains.mps.gtext.structure.GItemList" />
+    <nodeInfo nodeId="5100386946044466505" fileName="SpawnerPlugin.properties" startLine="3" startPosition="100" endLine="4" endPosition="0" conceptFqName="jetbrains.mps.gtext.structure.GNewLine" />
+    <unitInfo nodeId="5100386946044466505" fileName="SpawnerPlugin.properties" startLine="1" startPosition="0" endLine="4" endPosition="0" unitName="SpawnerPlugin.properties" />
+  </root>
+</debugInfo>
+

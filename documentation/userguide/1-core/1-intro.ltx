@@ -3,11 +3,11 @@
   
 \section{Installation and Setup}
 
-At this point we don't yet provide an all-in-one download package. This is
-because (a) we didn't get around to building one yet, and (b) as a consequence
-of a number of open legal issues regarding re-packaging some of the third-party
-tools used by mbeddr. However, this documentation describes the installation
-process in detail.
+However, this section describes the installation of mbeddr in detail, including
+Java and MPS itself. 
+
+\greyboxnote{We are working on a all-in-one distribution that includes MPS and
+mbeddr. Stay tuned.}
 
 \subsection{Java} 
 
@@ -43,23 +43,6 @@ after the change:
 On some 32bit Windows XP systems we had to reduce the \ic{-Xmx1200m} setting to
 \ic{768m} to get it to work.
 
-\subsection{mbeddr}
-
-You can get the mbeddr code either via distributions or via the public github
-repository.
-
-\begin{description}
-  \item[Distribution] You can get the mbeddr system via a zip file download
-from \\\ic{http://mbeddr.wordpress.com/getit/} Save the zip file into a folder
-on your hard disk and unzip it. Once again, please make sure the path to the
-unzipped folder contains no blanks. Also, the directory structure is relatively
-deep, which means that Windows might complain about too long directory names if
-you unzip it deep inside existing directories.
-  \item[github] The github repo ist a
-\ic{https://github.com/mbeddr/mbeddr.core}. You can clone it for your own use,
-or you can fork it to your own github account so you can make changes. Contact
-us if you want to become a committer.
-\end{description}
 
 
 \subsection{GCC and make}
@@ -108,18 +91,70 @@ MPS. To do so, please move (not just copy!) the \ic{zgrviewer} folder from the
 \ic{plugins} directory).
 
 
+\subsection{mbeddr}
 
-\subsection{Debugger}
+You can get the mbeddr code either via distributions or via the public github
+repository.
 
-The mbeddr debugger is based on \ic{gdb}, which has been installed as part of
-the Cygwin install. However, we don't use \ic{gdb} directly; rather we use the
-Eclipse CDT debug bridge. This contains native code, and Java has to be able to
-find this native code. The Eclipse code is packaged into a special MPS plugin
-which you have to install into MPS. To do so, please move (not just copy!) the
-\ic{spawner} folder from the \ic{tools} directory of mbeddr into the
-\ic{plugins} directory of MPS (again, make sure it ends up the \ic{plugins}
-directory, not in \ic{plugin}).
+\parhead{Installing the Distribution} We recommend installing the distribution,
+because this is a much simpler process than working from the github sources. The
+distribution can be downloaded from the \ic{mbeddr.com} website:
 
+\vspace{-3mm}
+\hspace{10mm} \ic{http://mbeddr.wordpress.com/getit/}
+\vspace{-3mm}
+
+The ZIP file you can get there contains this user guide, an early version of the
+extension guide as well as a set of plugins for MPS. Please take all the folders
+inside the \ic{plugins} directory in the ZIP file and copy them into the
+\ic{plugins} directory under MPS\footnote{Note that there is also a
+\ic{plugin} (without the \ic{s}) directory under MPS!}. So, for example, after
+copying, there should be a \ic{\$MPS\_DIR\$/plugins/mbeddr.core} directory.
+
+\parhead{Installing From github} The github repo ist a
+\ic{https://github.com/mbeddr/mbeddr.core}. Here are the steps to get
+things running:
+
+\begin{itemize}
+  \item Clone the repository onto your local machine.
+  \item Rebuild all the languages. We provide a shell script for this purpose 
+  (\ic{.bat} and \ic{.sh}) called \ic{rebuildLanguagesAfterCheckout}. 
+  It is in the \ic{code/languages} directory. For this to work, you have to
+  configure all \ic{build.properties} files to point to your MPS install dir and
+  the mbeddr root dir. The easiest way to find all the places where this has to
+  be adapted is to search for all \ic{build.properties.example} under the mbeddr
+  root mbeddr directory; remove the \ic{.example} and fill in the respective
+  directories.
+
+  \item We now have to make the project aware of the \ic{mbeddr.core} languages
+  in the github checkout. Go to the $File \rightarrow Settings$ (on the
+  Mac it is under $MPS \rightarrow Preferences$) and select the $Global
+  Libraries$ in the IDE settings. Create a library called \ic{mbeddr.core} that
+  points to the \ic{code} directory of the unzipped mbeddr
+  installation. The library must point to the \ic{code}
+  directory of the checkout so that all languages are below it, 
+  including \emph{core} and \emph{mpsutil}.
+
+\begin{center} 
+  \includegraphics[width=10cm]{figures/core/SettingsGlobalLibraries.png}
+\end{center}
+
+Notice that this is a global settings and have to be performed only once
+before your first application project.
+
+  \item The mbeddr debugger is based on \ic{gdb}, which has been installed as
+  part of the Cygwin install. However, we don't use \ic{gdb} directly; rather
+  we use the Eclipse CDT debug bridge. This contains native code, and Java has to be able to
+  find this native code. The Eclipse code is packaged into a special MPS plugin
+  which you have to install into MPS. To do so, please move (not just copy!) the
+  \ic{spawner} folder from the \ic{tools} directory of mbeddr into the
+  \ic{plugins} directory of MPS (again, make sure it ends up the \ic{plugins}
+  directory, not in \ic{plugin}).
+  
+\end{itemize}
+
+You are now ready to build your first project with mbeddr.
+ 
 
 
 
@@ -129,10 +164,6 @@ directory, not in \ic{plugin}).
 You can now start writing mbeddr code. \sect{helloworld} contains a tutorial
 that shows how to write the simplest possible program, the ubiquitous Hello,
 World. We suggest to take a look at this section.
-
-In terms of finishing the configuration, you have to define a library that
-points to the mbeddr languages. The Hello, World tutorial starts out by
-explaining how to do this.
 
 
 
