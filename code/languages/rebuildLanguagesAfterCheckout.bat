@@ -3,7 +3,7 @@ call ant build-languages
 cd ..
 
 cd com.mbeddr.debugger
-ant build-languages
+call ant build-languages
 cd ..
 
 cd com.mbeddr.core
