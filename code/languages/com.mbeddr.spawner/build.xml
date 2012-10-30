@@ -13,7 +13,7 @@
           classpathref="mps.ant.path"/>
 
   <property name="spawner.project.dir" value="code/languages/com.mbeddr.spawner"/>
-  <property name="spawner.project.mpr" value="code/languages/com.mbeddr.spawner/spawner.dev.mpr"/>
+  <property name="spawner.project.mpr" value="code/languages/com.mbeddr.spawner/spawner.mpr"/>
 
     <jvmargs id="myargs">
       <arg value="-ea"/>
