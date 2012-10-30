@@ -1,4 +1,4 @@
-<project name="com.mbeddr.build debugger" default="build">
+<project name="com.mbeddr.build spawner" default="build">
 
   <property file="build.properties"/>
 
@@ -32,21 +32,21 @@
   </target>
   
   <target name="build">
-	<antcall target="build-debugger"/>
+	<antcall target="build-spawner"/>
   </target>
    
   
-  <target name="build-debugger" depends="init">
+  <target name="build-spawner" depends="init">
     <mps.generate parallelMode="true" fork="true" >
       <jvmargs refid="myargs"/>
 
       <macro name="mbeddr.github.core.home" path="${mbeddr.github.core.home}"/>
 
-      <modules dir="${mbeddr.github.core.home}/${mbeddr.core.project.dir}/solutions/com.mbeddr.debugger/"/>
+      <modules dir="${mbeddr.github.core.home}/${mbeddr.core.project.dir}/solutions/com.mbeddr.spawner/"/>
     </mps.generate>
     <copy 
-    	file="${mbeddr.github.core.home}/${mbeddr.core.project.dir}/solutions/com.mbeddr.debugger/source_gen/com/mbeddr/debugger/dev/build/com.mbeddr.debugger.build.xml" 
-    	tofile="${mbeddr.github.core.home}/build/com.mbeddr.debugger/build.xml"/>
+    	file="${mbeddr.github.core.home}/${mbeddr.core.project.dir}/solutions/com.mbeddr.spawner/source_gen/com/mbeddr/spawner/dev/build/com.mbeddr.spawner.build.xml" 
+    	tofile="${mbeddr.github.core.home}/build/com.mbeddr.spawner/build.xml"/>
   </target>
 
 
