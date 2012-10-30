@@ -96,13 +96,6 @@ make test
 PROC_RET=$(($?+$PROC_RET))
 
 echo -------------------------------------
-echo insconextension
-cd ..
-cd insconextension
-make test
-PROC_RET=$(($?+$PROC_RET))
-
-echo -------------------------------------
 echo CompWithDectab
 cd ../
 cd CompWithDectab
