@@ -17,8 +17,8 @@
   <jvmargs id="myargs">
       <arg value="-ea"/>
       <arg value="-Xss1024k"/>
-      <arg value="-Xmx1024m"/>
-      <arg value="-XX:MaxPermSize=92m"/>
+      <arg value="-Xmx2048m"/>
+      <arg value="-XX:MaxPermSize=128m"/>
       <arg value="-XX:+HeapDumpOnOutOfMemoryError"/>
 	  <arg value="-Didea.system.path=${mps.platform.caches}/system"/>
 	  <arg value="-Didea.config.path=${mps.platform.caches}/config"/>
@@ -39,7 +39,7 @@
   
   <target name="build-languages" depends="init">
     <mps.generate parallelMode="true" fork="true">
-      <jvmargs id="myargs"/>
+      <jvmargs refid="myargs"/>
       <macro name="mbeddr.github.core.home" path="${mbeddr.github.core.home}"/>
 	  <project file="${mbeddr.github.core.home}/${projectDir}/DebuggerTutorial.mpr"/>
 	  <library name="core" dir="${mbeddr.github.core.home}/code/languages/"/>
@@ -50,7 +50,7 @@
   
   <target name="build-solutions" depends="init">
     <mps.generate parallelMode="true" fork="true">
-      <jvmargs id="myargs"/>
+      <jvmargs refid="myargs"/>
       <macro name="mbeddr.github.core.home" path="${mbeddr.github.core.home}"/>
 	  <project file="${mbeddr.github.core.home}/${projectDir}/DebuggerTutorial.mpr"/>
 	  <library name="core" dir="${mbeddr.github.core.home}/code/languages/"/>
