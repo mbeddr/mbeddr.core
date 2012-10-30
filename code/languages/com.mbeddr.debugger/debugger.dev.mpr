@@ -6,9 +6,7 @@
   <component name="Encoding" useUTFGuessing="true" native2AsciiForPropertiesFiles="false" />
   <component name="MPSProject">
     <projectModules>
-      <modulePath path="${project}/languages/com.mbeddr.core.debug.blext/blext.mpl" />
       <modulePath path="${project}/languages/com.mbeddr.core.debug.spawner/spawner.msd" />
-      <modulePath path="${project}/languages/com.mbeddr.core.debug/debug.mpl" />
     </projectModules>
     <genConfs />
   </component>
