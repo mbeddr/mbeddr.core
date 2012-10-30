@@ -398,7 +398,7 @@
         </node>
         <node role="dependencies" roleId="kdzh.5253498789149547704" type="kdzh.BuildMps_ExtractedModuleDependency" typeId="kdzh.7259033139236285166" id="467084113680844236">
           <node role="dependency" roleId="kdzh.7259033139236285167" type="kdzh.BuildMps_ModuleDependencyExtendLanguage" typeId="kdzh.4278635856200794926" id="467084113680844237">
-            <link role="language" roleId="kdzh.4278635856200794928" targetNodeId="og8s.8628756186118765569" resolveInfo="com.mbeddr.core.debug" />
+            <link role="language" roleId="kdzh.4278635856200794928" targetNodeId="8628756186118765569" resolveInfo="com.mbeddr.core.debug" />
           </node>
         </node>
       </node>
@@ -507,7 +507,7 @@
         </node>
         <node role="dependencies" roleId="kdzh.5253498789149547704" type="kdzh.BuildMps_ExtractedModuleDependency" typeId="kdzh.7259033139236285166" id="467084113680844250">
           <node role="dependency" roleId="kdzh.7259033139236285167" type="kdzh.BuildMps_ModuleDependencyExtendLanguage" typeId="kdzh.4278635856200794926" id="467084113680844251">
-            <link role="language" roleId="kdzh.4278635856200794928" targetNodeId="og8s.8628756186118765569" resolveInfo="com.mbeddr.core.debug" />
+            <link role="language" roleId="kdzh.4278635856200794928" targetNodeId="8628756186118765569" resolveInfo="com.mbeddr.core.debug" />
           </node>
         </node>
       </node>
@@ -649,7 +649,7 @@
         </node>
         <node role="dependencies" roleId="kdzh.5253498789149547704" type="kdzh.BuildMps_ExtractedModuleDependency" typeId="kdzh.7259033139236285166" id="467084113680844260">
           <node role="dependency" roleId="kdzh.7259033139236285167" type="kdzh.BuildMps_ModuleDependencyExtendLanguage" typeId="kdzh.4278635856200794926" id="467084113680844261">
-            <link role="language" roleId="kdzh.4278635856200794928" targetNodeId="og8s.8628756186118765569" resolveInfo="com.mbeddr.core.debug" />
+            <link role="language" roleId="kdzh.4278635856200794928" targetNodeId="8628756186118765569" resolveInfo="com.mbeddr.core.debug" />
           </node>
         </node>
       </node>
@@ -960,7 +960,7 @@
           <link role="language" roleId="kdzh.322010710375832947" targetNodeId="8628756186118765656" resolveInfo="com.mbeddr.core.pointers" />
         </node>
         <node role="exports" roleId="kdzh.322010710375832962" type="kdzh.BuildMps_DevKitExportLanguage" typeId="kdzh.322010710375832938" id="467084113680844266">
-          <link role="language" roleId="kdzh.322010710375832947" targetNodeId="og8s.8628756186118765579" resolveInfo="com.mbeddr.core.debug.blext" />
+          <link role="language" roleId="kdzh.322010710375832947" targetNodeId="8628756186118765579" resolveInfo="com.mbeddr.core.debug.blext" />
         </node>
         <node role="exports" roleId="kdzh.322010710375832962" type="kdzh.BuildMps_DevKitExportLanguage" typeId="kdzh.322010710375832938" id="467084113680844267">
           <link role="language" roleId="kdzh.322010710375832947" targetNodeId="8628756186118765554" resolveInfo="com.mbeddr.core.statements" />
@@ -996,13 +996,74 @@
           <link role="language" roleId="kdzh.322010710375832947" targetNodeId="8628756186118765636" resolveInfo="com.mbeddr.core.make" />
         </node>
         <node role="exports" roleId="kdzh.322010710375832962" type="kdzh.BuildMps_DevKitExportLanguage" typeId="kdzh.322010710375832938" id="467084113680844278">
-          <link role="language" roleId="kdzh.322010710375832947" targetNodeId="og8s.8628756186118765569" resolveInfo="com.mbeddr.core.debug" />
+          <link role="language" roleId="kdzh.322010710375832947" targetNodeId="8628756186118765569" resolveInfo="com.mbeddr.core.debug" />
         </node>
         <node role="exports" roleId="kdzh.322010710375832962" type="kdzh.BuildMps_DevKitExportSolution" typeId="kdzh.322010710375832954" id="467084113680844279">
           <link role="solution" roleId="kdzh.322010710375832955" targetNodeId="8628756186118765621" resolveInfo="com.mbeddr.core.modules.runtime" />
         </node>
         <node role="exports" roleId="kdzh.322010710375832962" type="kdzh.BuildMps_DevKitExportSolution" typeId="kdzh.322010710375832954" id="467084113680844280">
           <link role="solution" roleId="kdzh.322010710375832955" targetNodeId="og8s.8628756186118765626" resolveInfo="com.mbeddr.core.debug.spawner" />
+        </node>
+      </node>
+      <node role="modules" roleId="kdzh.1500819558095907806" type="kdzh.BuildMps_Language" typeId="kdzh.3189788309731840248" id="8628756186118765569">
+        <property name="compact" nameId="kdzh.8369506495128725901" value="true" />
+        <property name="uuid" nameId="kdzh.322010710375892619" value="223dd778-c44f-4ef3-9535-7aa7d12244a6" />
+        <property name="name" nameId="tpck.1169194664001" value="com.mbeddr.core.debug" />
+        <property name="doNotCompile" nameId="kdzh.1500819558096356884" value="false" />
+        <node role="path" roleId="kdzh.322010710375956261" type="3ior.BuildSourceMacroRelativePath" typeId="3ior.7389400916848153117" id="8628756186118765794">
+          <link role="macro" roleId="3ior.7389400916848153130" targetNodeId="8628756186118765768" resolveInfo="mbeddr.core" />
+          <node role="compositePart" roleId="3ior.7321017245477039051" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="8628756186118765795">
+            <property name="head" nameId="3ior.8618885170173601779" value="languages" />
+            <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="8628756186118765796">
+              <property name="head" nameId="3ior.8618885170173601779" value="com.mbeddr.core.debug" />
+              <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="8628756186118765797">
+                <property name="head" nameId="3ior.8618885170173601779" value="debug.mpl" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node role="modules" roleId="kdzh.1500819558095907806" type="kdzh.BuildMps_Language" typeId="kdzh.3189788309731840248" id="8628756186118765579">
+        <property name="compact" nameId="kdzh.8369506495128725901" value="true" />
+        <property name="uuid" nameId="kdzh.322010710375892619" value="ebb5e132-d298-4649-b320-b3f4d7f3acff" />
+        <property name="name" nameId="tpck.1169194664001" value="com.mbeddr.core.debug.blext" />
+        <property name="doNotCompile" nameId="kdzh.1500819558096356884" value="false" />
+        <node role="path" roleId="kdzh.322010710375956261" type="3ior.BuildSourceMacroRelativePath" typeId="3ior.7389400916848153117" id="8628756186118765802">
+          <link role="macro" roleId="3ior.7389400916848153130" targetNodeId="8628756186118765768" resolveInfo="mbeddr.core" />
+          <node role="compositePart" roleId="3ior.7321017245477039051" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="8628756186118765803">
+            <property name="head" nameId="3ior.8618885170173601779" value="languages" />
+            <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="8628756186118765804">
+              <property name="head" nameId="3ior.8618885170173601779" value="com.mbeddr.core.debug.blext" />
+              <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="8628756186118765805">
+                <property name="head" nameId="3ior.8618885170173601779" value="blext.mpl" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node role="dependencies" roleId="kdzh.5253498789149547704" type="kdzh.BuildMps_ExtractedModuleDependency" typeId="kdzh.7259033139236285166" id="467084113680844220">
+          <node role="dependency" roleId="kdzh.7259033139236285167" type="kdzh.BuildMps_ModuleDependencyExtendLanguage" typeId="kdzh.4278635856200794926" id="467084113680844221">
+            <link role="language" roleId="kdzh.4278635856200794928" targetNodeId="ffeo.8939513996048535762" resolveInfo="jetbrains.mps.baseLanguage.unitTest" />
+          </node>
+        </node>
+        <node role="dependencies" roleId="kdzh.5253498789149547704" type="kdzh.BuildMps_ExtractedModuleDependency" typeId="kdzh.7259033139236285166" id="467084113680844222">
+          <node role="dependency" roleId="kdzh.7259033139236285167" type="kdzh.BuildMps_ModuleDependencyExtendLanguage" typeId="kdzh.4278635856200794926" id="467084113680844223">
+            <link role="language" roleId="kdzh.4278635856200794928" targetNodeId="ffeo.8939513996048535833" resolveInfo="jetbrains.mps.lang.behavior" />
+          </node>
+        </node>
+        <node role="dependencies" roleId="kdzh.5253498789149547704" type="kdzh.BuildMps_ExtractedModuleDependency" typeId="kdzh.7259033139236285166" id="467084113680844224">
+          <node role="dependency" roleId="kdzh.7259033139236285167" type="kdzh.BuildMps_ModuleDependencyExtendLanguage" typeId="kdzh.4278635856200794926" id="467084113680844225">
+            <link role="language" roleId="kdzh.4278635856200794928" targetNodeId="ffeo.8939513996048535435" resolveInfo="jetbrains.mps.baseLanguage" />
+          </node>
+        </node>
+        <node role="dependencies" roleId="kdzh.5253498789149547704" type="kdzh.BuildMps_ExtractedModuleDependency" typeId="kdzh.7259033139236285166" id="467084113680844226">
+          <node role="dependency" roleId="kdzh.7259033139236285167" type="kdzh.BuildMps_ModuleDependencyExtendLanguage" typeId="kdzh.4278635856200794926" id="467084113680844227">
+            <link role="language" roleId="kdzh.4278635856200794928" targetNodeId="8628756186118765569" resolveInfo="com.mbeddr.core.debug" />
+          </node>
+        </node>
+        <node role="dependencies" roleId="kdzh.5253498789149547704" type="kdzh.BuildMps_ExtractedModuleDependency" typeId="kdzh.7259033139236285166" id="467084113680844228">
+          <node role="dependency" roleId="kdzh.7259033139236285167" type="kdzh.BuildMps_ModuleDependencyExtendLanguage" typeId="kdzh.4278635856200794926" id="467084113680844229">
+            <link role="language" roleId="kdzh.4278635856200794928" targetNodeId="ffeo.8939513996048535569" resolveInfo="jetbrains.mps.baseLanguage.collections" />
+          </node>
         </node>
       </node>
     </node>
