@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model modelUID="r:6a3757e1-3dbd-4a12-9bbe-b9bb1cb70974(com.mbeddr.debugger.dev.build)">
+<model modelUID="r:6a3757e1-3dbd-4a12-9bbe-b9bb1cb70974(com.mbeddr.spawner.dev.build)">
   <persistence version="7" />
   <language namespace="798100da-4f0a-421a-b991-71f8c50ce5d2(jetbrains.mps.build)" />
   <language namespace="0cf935df-4699-4e9c-a132-fa109541cba3(jetbrains.mps.build.mps)" />
@@ -9,7 +9,7 @@
   <import index="kdzh" modelUID="r:0353b795-df17-4050-9687-ee47eeb7094f(jetbrains.mps.build.mps.structure)" version="1" implicit="yes" />
   <roots>
     <node type="3ior.BuildProject" typeId="3ior.5617550519002745363" id="6247780594427434811">
-      <property name="name" nameId="tpck.1169194664001" value="com.mbeddr.debugger.build" />
+      <property name="name" nameId="tpck.1169194664001" value="com.mbeddr.spawner.build" />
       <property name="internalBaseDirectory" nameId="3ior.5204048710541015587" value="../../../../../build/com.mbeddr.debugger" />
     </node>
   </roots>
@@ -87,7 +87,7 @@
           <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="8628756186118765771">
             <property name="head" nameId="3ior.8618885170173601779" value="languages" />
             <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="8628756186118765772">
-              <property name="head" nameId="3ior.8618885170173601779" value="com.mbeddr.debugger" />
+              <property name="head" nameId="3ior.8618885170173601779" value="com.mbeddr.spawner" />
             </node>
           </node>
         </node>
@@ -105,7 +105,7 @@
       <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_Zip" typeId="3ior.7389400916848050071" id="6247780594427434822">
         <node role="containerName" roleId="3ior.4380385936562148502" type="3ior.BuildStringNotEmpty" typeId="3ior.841011766566059607" id="6247780594427434823">
           <node role="parts" roleId="3ior.4903714810883783243" type="3ior.BuildTextStringPart" typeId="3ior.4903714810883702019" id="6247780594427434824">
-            <property name="text" nameId="3ior.4903714810883755350" value="com.mbeddr.code.debugger.spawner.zip" />
+            <property name="text" nameId="3ior.4903714810883755350" value="com.mbeddr.spawner.zip" />
           </node>
         </node>
         <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_Folder" typeId="3ior.7389400916848036984" id="5621334030472304102">
@@ -121,7 +121,7 @@
                 <node role="compositePart" roleId="3ior.7321017245477039051" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="3736697914103121457">
                   <property name="head" nameId="3ior.8618885170173601779" value="languages" />
                   <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="3736697914103121458">
-                    <property name="head" nameId="3ior.8618885170173601779" value="com.mbeddr.core.debug.spawner" />
+                    <property name="head" nameId="3ior.8618885170173601779" value="com.mbeddr.core.spawner" />
                     <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="3736697914103121463">
                       <property name="head" nameId="3ior.8618885170173601779" value="source_gen" />
                       <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="3736697914103121464">
@@ -131,14 +131,11 @@
                           <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="3736697914103121466">
                             <property name="head" nameId="3ior.8618885170173601779" value="core" />
                             <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="3736697914103121467">
-                              <property name="head" nameId="3ior.8618885170173601779" value="debug" />
+                              <property name="head" nameId="3ior.8618885170173601779" value="spawner" />
                               <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="3736697914103121468">
-                                <property name="head" nameId="3ior.8618885170173601779" value="spawner" />
+                                <property name="head" nameId="3ior.8618885170173601779" value="loader" />
                                 <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="3736697914103121469">
-                                  <property name="head" nameId="3ior.8618885170173601779" value="loader" />
-                                  <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="3736697914103121470">
-                                    <property name="head" nameId="3ior.8618885170173601779" value="plugin.xml" />
-                                  </node>
+                                  <property name="head" nameId="3ior.8618885170173601779" value="plugin.xml" />
                                 </node>
                               </node>
                             </node>
@@ -169,7 +166,7 @@
               </node>
             </node>
             <node role="children" roleId="3ior.7389400916848037006" type="kdzh.BuildMpsLayout_ModuleJars" typeId="kdzh.1265949165890536423" id="2067439475997558020">
-              <link role="module" roleId="kdzh.1265949165890536425" targetNodeId="8628756186118765626" resolveInfo="com.mbeddr.core.debug.spawner" />
+              <link role="module" roleId="kdzh.1265949165890536425" targetNodeId="8628756186118765626" resolveInfo="com.mbeddr.core.spawner" />
             </node>
             <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_File" typeId="3ior.9126048691955220717" id="5497188532610193060">
               <node role="path" roleId="3ior.9126048691955220762" type="3ior.BuildSourceMacroRelativePath" typeId="3ior.7389400916848153117" id="5497188532610193062">
@@ -359,7 +356,7 @@
                   <node role="compositePart" roleId="3ior.7321017245477039051" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="2067439475997469536">
                     <property name="head" nameId="3ior.8618885170173601779" value="languages" />
                     <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="2067439475997469537">
-                      <property name="head" nameId="3ior.8618885170173601779" value="com.mbeddr.core.debug.spawner" />
+                      <property name="head" nameId="3ior.8618885170173601779" value="com.mbeddr.core.spawner" />
                       <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="2067439475997469538">
                         <property name="head" nameId="3ior.8618885170173601779" value="data" />
                         <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="2067439475997469539">
@@ -387,10 +384,10 @@
       </node>
     </node>
     <node role="parts" roleId="3ior.7389400916848080626" type="kdzh.BuildMps_IdeaPlugin" typeId="kdzh.6592112598314498932" id="6247780594427434826">
-      <property name="id" nameId="kdzh.6592112598314498927" value="com.mbeddr.core.debugger" />
+      <property name="id" nameId="kdzh.6592112598314498927" value="com.mbeddr.spawner" />
       <node role="name" roleId="kdzh.6592112598314499021" type="3ior.BuildStringNotEmpty" typeId="3ior.841011766566059607" id="6247780594427434827">
         <node role="parts" roleId="3ior.4903714810883783243" type="3ior.BuildTextStringPart" typeId="3ior.4903714810883702019" id="6247780594427434828">
-          <property name="text" nameId="3ior.4903714810883755350" value="com.mbeddr.core.debugger" />
+          <property name="text" nameId="3ior.4903714810883755350" value="com.mbeddr.spawner" />
         </node>
       </node>
       <node role="version" roleId="kdzh.6592112598314498931" type="3ior.BuildStringNotEmpty" typeId="3ior.841011766566059607" id="6247780594427434829">
@@ -403,7 +400,7 @@
       </node>
       <node role="containerName" roleId="kdzh.6592112598314855574" type="3ior.BuildStringNotEmpty" typeId="3ior.841011766566059607" id="6247780594427434833">
         <node role="parts" roleId="3ior.4903714810883783243" type="3ior.BuildTextStringPart" typeId="3ior.4903714810883702019" id="6247780594427434834">
-          <property name="text" nameId="3ior.4903714810883755350" value="mbeddr.debugger" />
+          <property name="text" nameId="3ior.4903714810883755350" value="spawner" />
         </node>
       </node>
     </node>
@@ -601,15 +598,15 @@
       <node role="modules" roleId="kdzh.1500819558095907806" type="kdzh.BuildMps_Solution" typeId="kdzh.3189788309731840247" id="8628756186118765626">
         <property name="compact" nameId="kdzh.8369506495128725901" value="true" />
         <property name="uuid" nameId="kdzh.322010710375892619" value="ebe1768e-261a-4c37-a061-412b0853e506" />
-        <property name="name" nameId="tpck.1169194664001" value="com.mbeddr.core.debug.spawner" />
+        <property name="name" nameId="tpck.1169194664001" value="com.mbeddr.core.spawner" />
         <property name="doNotCompile" nameId="kdzh.1500819558096356884" value="false" />
         <node role="path" roleId="kdzh.322010710375956261" type="3ior.BuildSourceMacroRelativePath" typeId="3ior.7389400916848153117" id="8628756186118765840">
           <link role="macro" roleId="3ior.7389400916848153130" targetNodeId="8628756186118765768" resolveInfo="mbeddr.core" />
           <node role="compositePart" roleId="3ior.7321017245477039051" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="8628756186118765841">
             <property name="head" nameId="3ior.8618885170173601779" value="languages" />
             <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="8628756186118765842">
-              <property name="head" nameId="3ior.8618885170173601779" value="com.mbeddr.core.debug.spawner" />
-              <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="8628756186118765843">
+              <property name="head" nameId="3ior.8618885170173601779" value="com.mbeddr.core.spawner" />
+              <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="4421697574773088370">
                 <property name="head" nameId="3ior.8618885170173601779" value="spawner.msd" />
               </node>
             </node>

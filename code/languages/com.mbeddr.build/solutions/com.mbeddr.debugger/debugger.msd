@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="com.mbeddr.debugger.dev.build" uuid="ba19fd84-07a8-4c0c-b27a-83b037421bea" compileInMPS="true">
+<solution name="com.mbeddr.spawner.dev.build" uuid="ba19fd84-07a8-4c0c-b27a-83b037421bea" compileInMPS="true">
   <models>
     <modelRoot path="${solution_descriptor}/models" />
   </models>
