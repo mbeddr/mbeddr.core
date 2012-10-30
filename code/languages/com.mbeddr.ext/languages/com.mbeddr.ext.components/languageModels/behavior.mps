@@ -4625,7 +4625,7 @@
                       <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="8433683602661432286" resolveInfo="ic" />
                     </node>
                     <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_ConceptMethodCall" typeId="tp25.1179409122411" id="4139652462543214480">
-                      <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="7780999115923947707" resolveInfo="connectors" />
+                      <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="7780999115923947707" resolveInfo="assemblyConnectors" />
                     </node>
                   </node>
                 </node>
@@ -5200,7 +5200,7 @@
               <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="1553713790141739738" resolveInfo="rootInstanceConfig" />
             </node>
             <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_ConceptMethodCall" typeId="tp25.1179409122411" id="4139652462543214488">
-              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="7780999115923947707" resolveInfo="connectors" />
+              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="7780999115923947707" resolveInfo="assemblyConnectors" />
             </node>
           </node>
           <node role="body" roleId="tpee.1154032183016" type="tpee.StatementList" typeId="tpee.1068580123136" id="591155063063598392">
@@ -5347,7 +5347,7 @@
               <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="3457272138385692674" resolveInfo="rootInstanceConfig" />
             </node>
             <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_ConceptMethodCall" typeId="tp25.1179409122411" id="4139652462543214491">
-              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="7780999115923947707" resolveInfo="connectors" />
+              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="7780999115923947707" resolveInfo="assemblyConnectors" />
             </node>
           </node>
           <node role="body" roleId="tpee.1154032183016" type="tpee.StatementList" typeId="tpee.1068580123136" id="3457272138385692636">
@@ -6132,7 +6132,7 @@
                 <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="4139652462543308039" resolveInfo="ic" />
               </node>
               <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_ConceptMethodCall" typeId="tp25.1179409122411" id="4139652462543308244">
-                <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="7780999115923947707" resolveInfo="connectors" />
+                <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="7780999115923947707" resolveInfo="assemblyConnectors" />
               </node>
             </node>
             <node role="operation" roleId="tpee.1197027833540" type="tp2q.WhereOperation" typeId="tp2q.1202120902084" id="4139652462543308245">
@@ -9834,7 +9834,7 @@
       </node>
     </node>
     <node role="method" roleId="1i04.1225194240805" type="1i04.ConceptMethodDeclaration" typeId="1i04.1225194472830" id="7780999115923947707">
-      <property name="name" nameId="tpck.1169194664001" value="connectors" />
+      <property name="name" nameId="tpck.1169194664001" value="assemblyConnectors" />
       <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="7780999115923947708" />
       <node role="returnType" roleId="tpee.1068580123133" type="tp2q.SequenceType" typeId="tp2q.1151689724996" id="7780999115923947709">
         <node role="elementType" roleId="tp2q.1151689745422" type="tp25.SNodeType" typeId="tp25.1138055754698" id="7780999115923947710">
