@@ -98,7 +98,7 @@
                     </node>
                     <node role="contentList" roleId="tpjo.1179114219774" type="tpjo.ContentList" typeId="tpjo.1163629230879" id="126868286647853717">
                       <node role="content" roleId="tpjo.1163629255661" type="tpjo.Text" typeId="tpjo.1161373262136" id="126868286647853718">
-                        <property name="text" nameId="tpjo.1161373273669" value="com.mbeddr.core.debug.spawner.loader.SpawnerLoader25" />
+                        <property name="text" nameId="tpjo.1161373273669" value="com.mbeddr.core.spawner.loader.SpawnerLoader25" />
                       </node>
                     </node>
                   </node>
