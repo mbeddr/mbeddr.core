@@ -38,7 +38,7 @@
   
   <target name="build-debugger" depends="init">
     <mps.generate parallelMode="true" fork="true" >
-      <jvmargs id="myargs"/>
+      <jvmargs refid="myargs"/>
 
       <macro name="mbeddr.github.core.home" path="${mbeddr.github.core.home}"/>
 

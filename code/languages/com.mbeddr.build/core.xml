@@ -39,7 +39,7 @@
   
   <target name="build-core" depends="init">
     <mps.generate parallelMode="true" fork="true" >
-      <jvmargs id="myargs"/>
+      <jvmargs refid="myargs"/>
 
       <library name="debugger" dir="${buildSolutions.dir}/com.mbeddr.debugger"/>
       <library name="mpsutil" dir="${buildSolutions.dir}/com.mbeddr.mpsutil.dev.build"/>
