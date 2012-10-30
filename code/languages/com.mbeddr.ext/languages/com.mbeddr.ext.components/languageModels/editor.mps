@@ -271,6 +271,10 @@
       <property name="name" nameId="tpck.1169194664001" value="deleteRunnable" />
       <link role="applicableConcept" roleId="tpc2.1139535219968" targetNodeId="v7ag.4491876417845641670" resolveInfo="Runnable" />
     </node>
+    <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="9141254329931900476">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="comp.instances" />
+      <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="v7ag.9141254329931900474" resolveInfo="DummyCompRef" />
+    </node>
   </roots>
   <root id="8105003328814595359">
     <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="8105003328814595361">
@@ -2806,6 +2810,17 @@
               <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_DeleteOperation" typeId="tp25.1140133623887" id="3657295727191615507" />
             </node>
           </node>
+        </node>
+      </node>
+    </node>
+  </root>
+  <root id="9141254329931900476">
+    <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_RefCell" typeId="tpc2.1088013125922" id="9141254329931900478">
+      <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="v7ag.9141254329931900475" />
+      <node role="editorComponent" roleId="tpc2.1088186146602" type="tpc2.InlineEditorComponent" typeId="tpc2.1088185857835" id="9141254329931900479">
+        <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Property" typeId="tpc2.1073389658414" id="9141254329931900481">
+          <property name="readOnly" nameId="tpc2.1140017977771" value="true" />
+          <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="tpck.1169194664001" resolveInfo="name" />
         </node>
       </node>
     </node>
