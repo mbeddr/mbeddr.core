@@ -41,8 +41,8 @@
     <mps.generate parallelMode="true" fork="true" >
       <jvmargs refid="myargs"/>
 
-      <library name="debugger" dir="${buildSolutions.dir}/com.mbeddr.debugger"/>
       <library name="mpsutil" dir="${buildSolutions.dir}/com.mbeddr.mpsutil.dev.build"/>
+      <library name="spawner" dir="${buildSolutions.dir}/com.mbeddr.spawner.dev.build"/>
 
       <modules dir="${buildSolutions.dir}/com.mbeddr.core.dev.build/"/>
     </mps.generate>

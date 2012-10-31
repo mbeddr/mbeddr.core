@@ -1,4 +1,4 @@
-<project name="com.mbeddr.build mpsutil" default="build">
+<project name="com.mbeddr.build spawner" default="build">
 
   <property file="build.properties"/>
 
@@ -14,7 +14,6 @@
 
   <property name="mbeddr.core.project.dir" value="code/languages/com.mbeddr.build"/>
  
-  <property name="buildSolutions.dir" value="${mbeddr.github.core.home}/${mbeddr.core.project.dir}/solutions/"/>
  
   <jvmargs id="myargs">
       <arg value="-ea"/>
@@ -33,23 +32,31 @@
   </target>
   
   <target name="build">
-	<antcall target="build-allInOne"/>
+	<antcall target="build-spawner"/>
   </target>
    
   
-  <target name="build-allInOne" depends="init">
+  <target name="build-spawner" depends="init">
     <mps.generate parallelMode="true" fork="true" >
       <jvmargs refid="myargs"/>
-        
-      <library name="spawner" dir="${buildSolutions.dir}/com.mbeddr.spawner.dev.build"/>  
-      <library name="mpsutil" dir="${buildSolutions.dir}/com.mbeddr.mpsutil.dev.build"/>
-	  <library name="core" dir="${buildSolutions.dir}/com.mbeddr.core.dev.build"/>
-	  <library name="cc" dir="${buildSolutions.dir}/com.mbeddr.cc.dev.build"/>
-	  <library name="ext" dir="${buildSolutions.dir}/com.mbeddr.ext.build"/>
-      <modules dir="${buildSolutions.dir}/com.mbeddr.allInOne/"/>
+
+      <macro name="mbeddr.github.core.home" path="${mbeddr.github.core.home}"/>
+
+      <modules dir="${mbeddr.github.core.home}/${mbeddr.core.project.dir}/solutions/com.mbeddr.spawner.dev.build/"/>
     </mps.generate>
     <copy 
-    	file="${mbeddr.github.core.home}/${mbeddr.core.project.dir}/solutions/com.mbeddr.allInOne/source_gen/com/mbeddr/allInOne/com.mbeddr.allInOne.xml" 
-    	tofile="${mbeddr.github.core.home}/build/com.mbeddr.allInOne/build.xml"/>
+    	file="${mbeddr.github.core.home}/${mbeddr.core.project.dir}/solutions/com.mbeddr.spawner.dev.build/source_gen/com/mbeddr/spawner/dev/build/com.mbeddr.spawner.build.xml" 
+    	tofile="${mbeddr.github.core.home}/build/com.mbeddr.spawner/build.xml"/>
+  </target>
+
+
+  <target name="delete-mps-generated-code" >
+  	<delete includeemptydirs="true">
+      <fileset dir="${mbeddr.github.core.home}/${mbeddr.core.project.dir}" defaultexcludes="false">
+         <include name="**/source_gen/**" />
+         <include name="**/source_gen.caches/**" />
+         <include name="**/classes_gen/**" />
+      </fileset>
+    </delete>
   </target>
 </project>
