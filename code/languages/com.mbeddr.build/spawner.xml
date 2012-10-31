@@ -42,10 +42,10 @@
 
       <macro name="mbeddr.github.core.home" path="${mbeddr.github.core.home}"/>
 
-      <modules dir="${mbeddr.github.core.home}/${mbeddr.core.project.dir}/solutions/com.mbeddr.spawner/"/>
+      <modules dir="${mbeddr.github.core.home}/${mbeddr.core.project.dir}/solutions/com.mbeddr.spawner.dev.build/"/>
     </mps.generate>
     <copy 
-    	file="${mbeddr.github.core.home}/${mbeddr.core.project.dir}/solutions/com.mbeddr.spawner/source_gen/com/mbeddr/spawner/dev/build/com.mbeddr.spawner.build.xml" 
+    	file="${mbeddr.github.core.home}/${mbeddr.core.project.dir}/solutions/com.mbeddr.spawner.dev.build/source_gen/com/mbeddr/spawner/dev/build/com.mbeddr.spawner.build.xml" 
     	tofile="${mbeddr.github.core.home}/build/com.mbeddr.spawner/build.xml"/>
   </target>
 
