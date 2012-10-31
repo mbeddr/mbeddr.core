@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model modelUID="r:6522897c-3500-48e0-b54e-2bb1e978c4d7(com.mbeddr.core.spawner.loader)">
+<model modelUID="r:6522897c-3500-48e0-b54e-2bb1e978c4d7(com.mbeddr.spawner.loader)">
   <persistence version="7" />
   <language namespace="f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)" />
   <language namespace="7866978e-a0f0-4cc7-81bc-4d213d9375e1(jetbrains.mps.lang.smodel)" />
@@ -58,7 +58,7 @@
             </node>
             <node role="contentList" roleId="tpjo.1179114219774" type="tpjo.ContentList" typeId="tpjo.1163629230879" id="126868286647769283">
               <node role="content" roleId="tpjo.1163629255661" type="tpjo.Text" typeId="tpjo.1161373262136" id="126868286647769284">
-                <property name="text" nameId="tpjo.1161373273669" value="Spawner Loader" />
+                <property name="text" nameId="tpjo.1161373273669" value="com.mbeddr.spawner" />
               </node>
             </node>
           </node>
@@ -68,7 +68,7 @@
             </node>
             <node role="contentList" roleId="tpjo.1179114219774" type="tpjo.ContentList" typeId="tpjo.1163629230879" id="126868286647769289">
               <node role="content" roleId="tpjo.1163629255661" type="tpjo.Text" typeId="tpjo.1161373262136" id="126868286647769290">
-                <property name="text" nameId="tpjo.1161373273669" value="com.mbeddr.core.spawnerLoader" />
+                <property name="text" nameId="tpjo.1161373273669" value="com.mbeddr.spawner" />
               </node>
             </node>
           </node>
@@ -98,7 +98,7 @@
                     </node>
                     <node role="contentList" roleId="tpjo.1179114219774" type="tpjo.ContentList" typeId="tpjo.1163629230879" id="126868286647853717">
                       <node role="content" roleId="tpjo.1163629255661" type="tpjo.Text" typeId="tpjo.1161373262136" id="126868286647853718">
-                        <property name="text" nameId="tpjo.1161373273669" value="com.mbeddr.core.spawner.loader.SpawnerLoader25" />
+                        <property name="text" nameId="tpjo.1161373273669" value="com.mbeddr.spawner.loader.SpawnerLoader25" />
                       </node>
                     </node>
                   </node>
@@ -223,8 +223,8 @@
       <property name="name" nameId="tpck.1169194664001" value="PLUGIN_ID" />
       <node role="visibility" roleId="tpee.1178549979242" type="tpee.PrivateVisibility" typeId="tpee.1146644623116" id="6852227642762634706" />
       <node role="type" roleId="tpee.5680397130376446158" type="tpee.StringType" typeId="tpee.1225271177708" id="6852227642762968601" />
-      <node role="initializer" roleId="tpee.1068431790190" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="6852227642762634718">
-        <property name="value" nameId="tpee.1070475926801" value="com.mbeddr.core.spawnerLoader" />
+      <node role="initializer" roleId="tpee.1068431790190" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="2002594043806112637">
+        <property name="value" nameId="tpee.1070475926801" value="com.mbeddr.spawner" />
       </node>
     </node>
     <node role="staticInnerClassifiers" roleId="tpee.1178616825527" type="tpee.ClassConcept" typeId="tpee.1068390468198" id="4047228196713720959">

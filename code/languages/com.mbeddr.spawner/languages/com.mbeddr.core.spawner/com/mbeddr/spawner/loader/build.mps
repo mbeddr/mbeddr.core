@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model modelUID="r:b590361c-ca69-43ff-8ac6-1e9a41dff2d3(com.mbeddr.core.spawner.loader.build)">
+<model modelUID="r:b590361c-ca69-43ff-8ac6-1e9a41dff2d3(com.mbeddr.spawner.loader.build)">
   <persistence version="7" />
   <language namespace="4e6c5313-7662-4c44-9bc7-b488cec17508(jetbrains.mps.build.packaging)" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
