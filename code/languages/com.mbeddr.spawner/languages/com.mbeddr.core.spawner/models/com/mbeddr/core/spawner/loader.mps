@@ -202,10 +202,19 @@
     </node>
     <node role="staticField" roleId="tpee.1128555889557" type="tpee.StaticFieldDeclaration" typeId="tpee.1070462154015" id="4047228196713677545">
       <property name="isFinal" nameId="tpee.1176718929932" value="true" />
-      <property name="name" nameId="tpck.1169194664001" value="SPAWNER" />
+      <property name="name" nameId="tpck.1169194664001" value="NATIVE_LIBRARY_NAME" />
       <node role="visibility" roleId="tpee.1178549979242" type="tpee.PrivateVisibility" typeId="tpee.1146644623116" id="4047228196713677546" />
       <node role="type" roleId="tpee.5680397130376446158" type="tpee.StringType" typeId="tpee.1225271177708" id="4047228196713677547" />
       <node role="initializer" roleId="tpee.1068431790190" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="4047228196713677548">
+        <property name="value" nameId="tpee.1070475926801" value="spawner" />
+      </node>
+    </node>
+    <node role="staticField" roleId="tpee.1128555889557" type="tpee.StaticFieldDeclaration" typeId="tpee.1070462154015" id="2002594043806104725">
+      <property name="isFinal" nameId="tpee.1176718929932" value="true" />
+      <property name="name" nameId="tpck.1169194664001" value="PLUGIN_FOLDER_NAME" />
+      <node role="visibility" roleId="tpee.1178549979242" type="tpee.PrivateVisibility" typeId="tpee.1146644623116" id="2002594043806104726" />
+      <node role="type" roleId="tpee.5680397130376446158" type="tpee.StringType" typeId="tpee.1225271177708" id="2002594043806104727" />
+      <node role="initializer" roleId="tpee.1068431790190" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="2002594043806104728">
         <property name="value" nameId="tpee.1070475926801" value="mbeddr.spawner" />
       </node>
     </node>
@@ -545,7 +554,7 @@
             <node role="condition" roleId="tpee.1068580123160" type="tpee.NPENotEqualsExpression" typeId="tpee.1225271221393" id="4047228196713677370">
               <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.StaticFieldReference" typeId="tpee.1070533707846" id="4047228196713677371">
                 <link role="classifier" roleId="tpee.1144433057691" targetNodeId="4047228196713674561" resolveInfo="SpawnerLoader25" />
-                <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="4047228196713677545" resolveInfo="SPAWNER" />
+                <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="4047228196713677545" resolveInfo="NATIVE_LIBRARY_NAME" />
               </node>
               <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.ParameterReference" typeId="tpee.1068581242874" id="4047228196713723093">
                 <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="4047228196713723067" resolveInfo="name" />
@@ -643,7 +652,7 @@
                   <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="59et.~IFile%dgetDescendant(java%dlang%dString)%cjetbrains%dmps%dvfs%dIFile" resolveInfo="getDescendant" />
                   <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StaticFieldReference" typeId="tpee.1070533707846" id="4047228196713677408">
                     <link role="classifier" roleId="tpee.1144433057691" targetNodeId="4047228196713674561" resolveInfo="SpawnerLoader25" />
-                    <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="4047228196713677545" resolveInfo="SPAWNER" />
+                    <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="2002594043806104725" resolveInfo="PLUGIN_FOLDER_NAME" />
                   </node>
                 </node>
               </node>
