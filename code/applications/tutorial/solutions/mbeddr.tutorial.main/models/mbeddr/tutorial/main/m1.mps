@@ -373,6 +373,15 @@
                 <property name="value" nameId="mj1l.8860443239512128104" value="1" />
               </node>
             </node>
+            <node role="memberAssigns" roleId="k146.3059865549680413567" type="k146.WithMemberAssignment" typeId="k146.3073566081777391256" id="8135882712510806670">
+              <link role="member" roleId="k146.3073566081777391258" targetNodeId="9141254329931952544" resolveInfo="timestamp" />
+              <node role="value" roleId="k146.3073566081777391257" type="3c6d.LiteralWithUnit" typeId="3c6d.5513256947824592491" id="8135882712510806706">
+                <node role="unit" roleId="3c6d.5513256947824592493" type="ym4j.SISecond" typeId="ym4j.3801772042669047312" id="8135882712510806707" />
+                <node role="value" roleId="3c6d.5513256947824592492" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="8135882712510806676">
+                  <property name="value" nameId="mj1l.8860443239512128104" value="0" />
+                </node>
+              </node>
+            </node>
             <node role="memberAssigns" roleId="k146.3059865549680413567" type="k146.WithMemberAssignment" typeId="k146.3073566081777391256" id="9141254329931952640">
               <link role="member" roleId="k146.3073566081777391258" targetNodeId="9141254329931952559" resolveInfo="x" />
               <node role="value" roleId="k146.3073566081777391257" type="3c6d.LiteralWithUnit" typeId="3c6d.5513256947824592491" id="8135882712510800820">
@@ -531,6 +540,15 @@
               <link role="member" roleId="k146.3073566081777391258" targetNodeId="9141254329931945859" resolveInfo="id" />
               <node role="value" roleId="k146.3073566081777391257" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="8135882712510806189">
                 <property name="value" nameId="mj1l.8860443239512128104" value="1" />
+              </node>
+            </node>
+            <node role="memberAssigns" roleId="k146.3059865549680413567" type="k146.WithMemberAssignment" typeId="k146.3073566081777391256" id="8135882712510806681">
+              <link role="member" roleId="k146.3073566081777391258" targetNodeId="9141254329931952544" resolveInfo="timestamp" />
+              <node role="value" roleId="k146.3073566081777391257" type="3c6d.LiteralWithUnit" typeId="3c6d.5513256947824592491" id="8135882712510806692">
+                <node role="unit" roleId="3c6d.5513256947824592493" type="ym4j.SISecond" typeId="ym4j.3801772042669047312" id="8135882712510806693" />
+                <node role="value" roleId="3c6d.5513256947824592492" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="8135882712510806687">
+                  <property name="value" nameId="mj1l.8860443239512128104" value="10" />
+                </node>
               </node>
             </node>
             <node role="memberAssigns" roleId="k146.3059865549680413567" type="k146.WithMemberAssignment" typeId="k146.3073566081777391256" id="8135882712510806190">
