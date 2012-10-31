@@ -22,6 +22,14 @@
     </node>
   </roots>
   <root id="3378779091584469583">
+    <node role="staticField" roleId="tpee.1128555889557" type="tpee.StaticFieldDeclaration" typeId="tpee.1070462154015" id="8972050657255459795">
+      <property name="name" nameId="tpck.1169194664001" value="PREVENT_CONSTRUCTOR_CALL" />
+      <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="8972050657255460701" />
+      <node role="type" roleId="tpee.5680397130376446158" type="tpee.StringType" typeId="tpee.1225271177708" id="8972050657255459798" />
+      <node role="initializer" roleId="tpee.1068431790190" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="8972050657255698944">
+        <property name="value" nameId="tpee.1070475926801" value="PREVENT_CONSTRUCTOR_CALL" />
+      </node>
+    </node>
     <node role="staticMethod" roleId="tpee.1070462273904" type="tpee.StaticMethodDeclaration" typeId="tpee.1081236700938" id="3378779091584469589">
       <property name="name" nameId="tpck.1169194664001" value="getInlinedStatements" />
       <node role="returnType" roleId="tpee.1068580123133" type="tp2q.SequenceType" typeId="tp2q.1151689724996" id="3378779091584469595">
@@ -328,7 +336,7 @@
                     <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="8933128519013973587" resolveInfo="instanceConfig" />
                   </node>
                   <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_ConceptMethodCall" typeId="tp25.1179409122411" id="4139652462543214502">
-                    <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="eup9.7780999115923947707" resolveInfo="connectors" />
+                    <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="eup9.7780999115923947707" resolveInfo="assemblyConnectors" />
                   </node>
                 </node>
                 <node role="operation" roleId="tpee.1197027833540" type="tp2q.FindFirstOperation" typeId="tp2q.1225727723840" id="8933128519013973754">
@@ -526,7 +534,7 @@
                     <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="9131699884702546189" resolveInfo="instanceConfig" />
                   </node>
                   <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_ConceptMethodCall" typeId="tp25.1179409122411" id="4139652462543214504">
-                    <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="eup9.7780999115923947707" resolveInfo="connectors" />
+                    <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="eup9.7780999115923947707" resolveInfo="assemblyConnectors" />
                   </node>
                 </node>
                 <node role="operation" roleId="tpee.1197027833540" type="tp2q.FindFirstOperation" typeId="tp2q.1225727723840" id="9131699884702546216">
