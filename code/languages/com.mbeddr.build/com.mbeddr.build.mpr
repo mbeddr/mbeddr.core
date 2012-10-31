@@ -11,7 +11,7 @@
       <modulePath path="${project}/solutions/com.mbeddr.core.dev.build/build.msd" />
       <modulePath path="${project}/solutions/com.mbeddr.ext.build/build.msd" />
       <modulePath path="${project}/solutions/com.mbeddr.mpsutil.dev.build/build.msd" />
-      <modulePath path="${project}/solutions/com.mbeddr.spawner/debugger.msd" />
+      <modulePath path="${project}/solutions/com.mbeddr.spawner.dev.build/debugger.msd" />
     </projectModules>
     <genConfs />
   </component>
