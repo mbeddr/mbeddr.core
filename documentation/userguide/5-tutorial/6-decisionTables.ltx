@@ -1,0 +1,65 @@
+\section{Decision Tables}
+
+Let us implement another interface, one that lets us judge flights (we do this
+in a new section in the \ic{Components} module). The idea is that clients
+add trackpoints, and the \ic{FlightJudger} computes some kind of score from it
+(consider some kind of biking/flying competition as a context):
+
+\begin{lstlisting}[language=mbeddr]
+exported cs interface FlightJudger { 
+  void reset() 
+  void addTrackpoint(Trackpoint* tp) 
+  int16 getResult() 
+}
+\end{lstlisting}
+
+Here is the basic implementation of a component that provides this interface.
+
+\begin{lstlisting}[language=mbeddr]
+exported component Judge extends nothing { 
+  provides FlightJudger judger 
+  int16 points = 0; 
+  void judger_reset() <- op judger.reset { 
+    points = 0; 
+  }  
+  void judger_addTrackpoint(Trackpoint* tp) <- op judger.addTrackpoint { 
+    points += 0; // to be changed
+  }  
+  int16 judger_getResult() <- op judger.getResult { 
+    return points; 
+  }  
+}
+\end{lstlisting}
+
+Of course the implementation of \ic{addTrackpoint} that just adds \ic{0} to the
+\ic{points} doesn't make much sense yet. The amount of points added should
+depend on how fast and how high the plane (or whatever) was going. The following
+screenshot shows an embedded decision table that computes points:
+
+\begin{center} 
+  \includegraphics[width=0.8\columnwidth]{figures/tutorial/dectab.png}
+\end{center}
+
+Notice h
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
