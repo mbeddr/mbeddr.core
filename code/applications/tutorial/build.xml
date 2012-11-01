@@ -1,6 +1,8 @@
 <project name="HelloWorld" default="build">
 
   <property file="build.properties"/>
+  
+  <property name="languagesDir" value="${mbeddr.github.core.home}/code/languages/"/>
 
   <path id="mps.ant.path">
    <pathelement location="${mps.home}/lib/mps-backend.jar"/>
@@ -34,7 +36,7 @@
       <jvmargs refid="myargs"/>
       <macro name="mbeddr.github.core.home" path="${mbeddr.github.core.home}"/>
 	  <project file="${mbeddr.github.core.home}/code/applications/tutorial/mbeddr.tutorial.mpr"/>
-	  <library name="core" dir="${mbeddr.github.core.home}/code/languages/"/>
+	  <library name="languages" dir="${languagesDir}"/>
     </mps.generate>
   </target>
 
