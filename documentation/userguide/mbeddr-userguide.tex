@@ -90,8 +90,24 @@ applicable,concept,overrides,do,typeof,if,applicable,error,
 concepts,constraints,can,be,child,ancestor,isNotNull,node,executeTests,
 module, statemachine, events, states, initial, state, on, assert, imports, in,
 event, int, out, local, variables, interface, boolean, component, true, false,
-provides, requires, struct
-},
+provides, requires, struct, typedef, assert, cs, pre, post, protocol,
+messagelist, active, extends, null, op, instances, instance, adapt, connect,
+initialize, query, new, init, section
+}, 
+comment=[l]{//}
+}
+
+\lstdefinelanguage{mbeddr-buildconfig}
+{morekeywords={
+executable, isTest, true, false, used, external, libraries, mbeddr, included,
+modules, Configuration, Items, reporting, printf, add, labels, physical, units,
+config, components, wire, statically, no, middleware
+}, comment=[l]{//}
+}
+
+\lstdefinelanguage{mbeddr-units}
+{morekeywords={
+Unit, Configuration, derived, unit, for},
 comment=[l]{//}
 }
 

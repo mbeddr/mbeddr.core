@@ -30,7 +30,7 @@ can just press \ic{*} on the right side of \ic{Trackpoint} to make it a
 \begin{lstlisting}[language=mbeddr]
 module Components imports DataStructures { 
    
-  exported c/s interface TrackpointProcessor { 
+  exported cs interface TrackpointProcessor { 
     Trackpoint* process(Trackpoint* p); 
   } 
    
@@ -57,7 +57,7 @@ want any reporting). However, for the program to work you have to specify a
 message on the interface. We create a new message list and a messge:
 
 \begin{lstlisting}[language=mbeddr]
-message list ContractMessages { 
+messagelist ContractMessages { 
   ERROR contractFailed() active: contract failed 
 }
 \end{lstlisting}
@@ -76,7 +76,7 @@ integer arguments to represent the operation and the pre- or postcondition. We
 change it thusly:
 
 \begin{lstlisting}[language=mbeddr]
-exported message list ContractMessages { 
+exported messagelist ContractMessages { 
   ERROR contractFailed(int8 op, int8 pc) active: contract failed
 }
 \end{lstlisting}
@@ -127,7 +127,7 @@ An adapter makes a provided port of a component instance
 name \ic{n}:
 
 \begin{lstlisting}[language=mbeddr]
-instances instances extends nothing { 
+instances nullerInstances extends nothing { 
   instance Nuller nuller
   adapt n -> nuller.processor 
 }
@@ -169,7 +169,7 @@ have to add the missing modules to the executable (using the quick fix).
 Finally, also in the build configuration, you have to add the \ic{components}
 configuration item:
 
-\begin{lstlisting}[language=mbeddr]
+\begin{lstlisting}[language=mbeddr-buildconfig, deletekeywords={mbeddr}]
 Configuration Items:
   reporting: printf (add labels false) 
   physical units (config = Units Declarations (mbeddr.tutorial.main.m1)) 
@@ -189,7 +189,7 @@ $$contractFailed: contract failed (op=0, pc=2) @Components:null:-1#1731059994647
 
 We can fix these problems by changing the test data to conform to the contract:
 
-\begin{lstlisting}
+\begin{lstlisting}[language=mbeddr]
 Trackpoint tp = { 
   id = 10 
   timestamp = 10 s 
@@ -202,7 +202,7 @@ assert(0) tp.alt == 0 m;
 Let us provoke another contract violation by returning from the implementation
 in the \ic{Nuller} component a \ic{Trackpoint} whose \ic{id} is 0:
 
-\begin{lstlisting}
+\begin{lstlisting}[language=mbeddr]
 Trackpoint* processor_process(Trackpoint* p) <- op processor.process { 
   p->alt = 0 m; 
   p->id = 0; 
@@ -216,6 +216,215 @@ specified on the \emph{interface}, but they are checked for each
 implementation can violate the interface contract without the respective error
 being reported!
 
+\subsection{Collaborating and Stateful Components}
+
+Let us look at interactions between components. We create a new interface, the
+\ic{TrackpointStore}. It can store and return trackpoints\footnote{Sure, it is
+completely overdone to separate this out into a separate interface/component, but for the sake of the tutorial it
+makes sense.}. Here is the basic interface: 
+
+\begin{lstlisting}[language=mbeddr]
+exported cs interface TrackpointStore1 { 
+  void store(Trackpoint* tp) 
+  Trackpoint* get() 
+  Trackpoint* take() 
+  boolean isEmpty() 
+}
+\end{lstlisting}
+
+Let us again think about the semantics: you shouldn't be able to get or take
+stuff from the store if it is empty, you should not put stuff into it when it is
+full, etc. These things can be expressed as pre- and postconditions. The
+following should be pretty self-explaining. The only new thing is the \ic{query}
+operation. Queries can be used from inside pre- and postconditions, but cannot
+modify state\footnote{Currently this is not yet checked. But it will be.}
+
+\begin{lstlisting}[language=mbeddr]
+exported cs interface TrackpointStore1 { 
+  void store(Trackpoint* tp) 
+    pre(0) isEmpty() 
+    pre(1) tp != null 
+    post(2) !isEmpty() 
+  Trackpoint* get() 
+    pre(0) !isEmpty() 
+  Trackpoint* take() 
+    pre(0) !isEmpty() 
+    post(1) result != null 
+    post(2) isEmpty() 
+  query boolean isEmpty() 
+}
+\end{lstlisting}
+
+These pre- and postconditions mostly express a valid sequence of the operation
+calls: you have to call \ic{store} before you can call \ic{get}, etc. This can
+be expressed directly with protocols:
+
+\begin{lstlisting}[language=mbeddr]
+exported cs interface TrackpointStore2 {
+ 
+  // store goes from the initial state to a new state full
+  void store(Trackpoint* tp) 
+    protocol init(0) -> new full(1) 
+
+  // get expects the state to be full, and remains there
+  Trackpoint* get() 
+    protocol full -> full 
+
+  // take expects to be full and then becomes empty (i.e. init)
+  Trackpoint* take() 
+    post(0) result != null 
+    protocol full -> init(0) 
+
+  // and isEmpty has no effect on the protocol state
+  query boolean isEmpty() 
+}
+\end{lstlisting}
+
+The two interfaces are essentially equivalent, and both are checked at runtime
+and lead to errors if the contract is violated.
+
+We can now implement a component that provides this interface. Most of the
+following code should be easy to understand based on what we have discussed so
+far. There are two new things. There is a field \ic{Trackpoint*
+storedTP;} that represents component state. Second there is an \ic{on-init}
+runnable: this is essentially a constructor that is executed as an instance is
+created.
+
+\begin{lstlisting}[language=mbeddr]
+exported component InMemoryStorage extends nothing { 
+  provides TrackpointStore1 store 
+  Trackpoint* storedTP; 
+  
+  void init() <- on init { 
+    storedTP = null; 
+  }
+
+  void trackpointStore_store(Trackpoint* tp) <- op store.store { 
+    storedTP = tp; 
+  } 
+  Trackpoint* trackpointStore_get() <- op store.get { 
+    return storedTP; 
+  } 
+  Trackpoint* trackpointStore_take() <- op store.take { 
+    Trackpoint* temp = storedTP; 
+    storedTP = null; 
+    return temp; 
+  } 
+  boolean trackpointStore_isEmpty() <- op store.isEmpty { 
+    return storedTP == null; 
+  } 
+}
+\end{lstlisting}
+
+To keep our implementation module \ic{Components} well structured we can use
+sectios. A \ic{section} is a named part of the implementation module that has no
+semantic effect beyond that. Sections can be collapsed.
+
+\begin{lstlisting}[language=mbeddr]
+module Components imports DataStructures { 
+   
+  exported messagelist ContractMessages {...}
+   
+  section processor {...} 
+ 
+  section store { 
+  	exported cs interface TrackpointStore1 { 
+    	... 
+  	} 
+  	exported cs interface TrackpointStore2 { 
+    	... 
+  	} 
+    exported component InMemoryStorage extends nothing { 
+	    ... 	
+  	} 
+  }
+    
+  instances nullerInstances {...} 
+  test case testNuller {...} 
+  instances interpolatorInstances {...} 
+  exported test case testInterpolator { ... } 
+}
+\end{lstlisting}
+
+We can now implement a second processor. For subsequent calls of \ic{process},
+it computes the average of the two last speeds of the passed trackpoints. Let us
+start with the test case. Note how \ic{p2} has its speed changed to the average
+of the \ic{p1} and \ic{p2} originally.
+
+\begin{lstlisting}[language=mbeddr]
+exported test case testInterpolator { 
+  initialize interpolatorInstances; 
+  Trackpoint p1 = {
+    id = 1 
+    timestamp = 1 s 
+    speed = 10 mps 
+  }; 
+  Trackpoint p2 = { 
+    id = 1 
+    timestamp = 1 s 
+    speed = 20 mps 
+  }; 
+  
+  ip.process(&p1); 
+  assert(0) p1.speed == 10 mps; 
+
+  ip.process(&p2); 
+  assert(1) p2.speed == 15 mps; 
+}
+\end{lstlisting}
+
+Let us look at the implementation of the \ic{Interpolator}. Here it is.
+
+\begin{lstlisting}[language=mbeddr]
+exported component Interpolator extends nothing { 
+  provides TrackpointProcessor processor 
+  requires TrackpointStore1 store 
+  init int8 divident; 
+  Trackpoint* processor_process(Trackpoint* p) <- op processor.process { 
+    if (store.isEmpty()) { 
+      store.store(p); 
+      return p; 
+    } else { 
+      Trackpoint* old = store.take(); 
+      p->speed = (p->speed + old->speed) / divident; 
+      store.store(p); 
+      return p; 
+    } 
+  }  
+}
+\end{lstlisting}
+
+A few things are worth mentioning. First, the component \ic{requires} another
+one. More specifically it only expresses a requirement towards an interface,
+\ic{TrackpointStore1} in our case. Any component that implements this interface
+can be used to fulfil this requirement (we'll discuss how below). Second, we use
+an \ic{init} field. This is a regular field from the perspective of the
+component (i.e. it can be accessed from within the implementation), but it is
+special in that a value for it has to be supplied when the component is
+instantiated. Third, this example shows how to call operations on required
+interfaces (\ic{store.store(p);}).
+
+The only remaining step before running the test is to define the instances. Here
+is the code:
+
+\begin{lstlisting}[language=mbeddr]
+instances interpolatorInstances extends nothing { 
+  instance InMemoryStorage store 
+  instance Interpolator ip(divident = 2) 
+  connect ip.store to store.store 
+  adapt ip -> ip.processor 
+}
+\end{lstlisting}
+
+Two interesting things. First, notice how we pass in a value for the init field
+\ic{divident} as we define an instance of \ic{Interpolator}. Second, we use
+\ic{connect} to connect the required port \ic{store} of the \ic{ip} instance to
+the \ic{store} provided port of the \ic{store} instance. If you don't do this
+you will get an error on the \ic{ip} instance since it \emph{requires} this
+thing to be connected (there are also \ic{optional} required ports which may
+remain unconnected). 
+
+You can run the test case now. On my machine here it works successfully :-)
 
 
 

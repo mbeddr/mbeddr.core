@@ -59,7 +59,7 @@ now: press \ic{m} for the meters, press \ic{Enter}, press \ic{s} for the seconds
 and then type \ic{-1} directly on the right side of the \ic{s} to enter the
 exponent:
 
-\begin{lstlisting}[language=mbeddr]
+\begin{lstlisting}[language=mbeddr-units]
 Unit Configuration
                       -1 
 derived unit mps = m s   for speed
@@ -90,14 +90,14 @@ assert(1) i3.id == 1 && i3.alt == 0 m;
 
 If you try to rebuild now you will run into build errors:
 
-\begin{lstlisting}[language=mbeddr]
+\begin{lstlisting}
 no configuration item "physical units" found in this model. Please add a configuration item in your Build Configuration.
 \end{lstlisting}
 
 To fix this we have to go to the build configuration and add the respective
 configuration item:
 
-\begin{lstlisting}[language=mbeddr]
+\begin{lstlisting}[language=mbeddr-buildconfig, deletekeywords={mbeddr}]
 Configuration Items 
   reporting: printf (add labels false) 
   physical units (config = Units Declarations (mbeddr.tutorial.main.m1)) 

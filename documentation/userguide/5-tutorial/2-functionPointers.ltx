@@ -81,7 +81,7 @@ included. We can fix this with a quick fix. This results in the following
 binary:
 
 
-\begin{lstlisting}[language=mbeddr]
+\begin{lstlisting}[language=mbeddr-buildconfig]
 executable MbeddrTutorial isTest: true { 
   used external libraries 
   used mbeddr libraries 
@@ -160,7 +160,7 @@ $$runningTest: running test () @FunctionPointers:test_testProcessing:0#767515563
 So the test succeeded, everything seems fine. Let us try to introduce an error
 by somehow breaking the assertion.
 
-\begin{lstlisting}
+\begin{lstlisting}[language=mbeddr]
 assert(0) i2.id == 0;
 \end{lstlisting}
 
