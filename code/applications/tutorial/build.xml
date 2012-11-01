@@ -43,7 +43,7 @@
 
   <target name="zipit">
     <zip 
-    	destfile="${mbeddr.github.core.home}/build/apps/mbeddr.tutorial/mbeddr.tutorial.zip"
+    	destfile="${mbeddr.github.core.home}/build/apps/mbeddr.tutorial/com.mbeddr.tutorial.zip"
     	basedir="${mbeddr.github.core.home}/code/applications/tutorial"
     	excludes="solutions/**/source_gen/, solutions/**/source_gen.caches/, solutions/**/classes_gen/"
     	/>
