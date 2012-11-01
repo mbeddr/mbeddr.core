@@ -38,4 +38,14 @@
     </mps.generate>
   </target>
 
+
+  <target name="zipit">
+    <zip 
+    	destfile="${mbeddr.github.core.home}/build/apps/mbeddr.tutorial.zip"
+    	basedir="${mbeddr.github.core.home}/code/applications/tutorial"
+    	excludes="solutions/**/source_gen/, solutions/**/source_gen.caches/, solutions/**/classes_gen/"
+    	/>
+  </target>
+
+
 </project>
