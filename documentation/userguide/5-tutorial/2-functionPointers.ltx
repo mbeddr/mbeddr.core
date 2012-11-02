@@ -228,15 +228,14 @@ several statements are required (as in the example above), they are layouted
 vertically. If only an expression is required, it is shown in line:
 
 \begin{lstlisting}[language=mbeddr]
-  Trackpoint i1 = {
-    ... 
-    alt = 100 m 
-  }; 
+Trackpoint i1 = {
+  ... 
+  alt = 100 m 
+}; 
 
-  processor = [tp|tp;]; 
+processor = [tp|tp;]; 
 
-  assert(0) processor(i1).alt == 100 m;  
-} 
+assert(0) processor(i1).alt == 100 m;  
 \end{lstlisting}
 
 

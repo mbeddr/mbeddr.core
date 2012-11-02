@@ -23,19 +23,34 @@
     <node type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="9141254329931944222">
       <property name="name" nameId="tpck.1169194664001" value="Main" />
     </node>
-    <node type="mj1l.TypeSizeConfiguration" typeId="mj1l.3335993110369795380" id="9141254329931944238" />
+    <node type="mj1l.TypeSizeConfiguration" typeId="mj1l.3335993110369795380" id="9141254329931944238">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="config" />
+    </node>
     <node type="51wr.BuildConfiguration" typeId="51wr.7717755763392524104" id="9141254329931944280">
       <property name="name" nameId="tpck.1169194664001" value="dummy" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="config" />
     </node>
     <node type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="9141254329931944290">
       <property name="name" nameId="tpck.1169194664001" value="FunctionPointers" />
     </node>
-    <node type="ym4j.UnitContainer" typeId="ym4j.3801772042669047872" id="8135882712510776073" />
+    <node type="ym4j.UnitContainer" typeId="ym4j.3801772042669047872" id="8135882712510776073">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="config" />
+    </node>
     <node type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="1731059994647587993">
       <property name="name" nameId="tpck.1169194664001" value="DataStructures" />
     </node>
     <node type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="1731059994647588211">
       <property name="name" nameId="tpck.1169194664001" value="Components" />
+    </node>
+    <node type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="5160057464295358354">
+      <property name="name" nameId="tpck.1169194664001" value="StateMachines" />
+    </node>
+    <node type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="5160057464295359491">
+      <property name="name" nameId="tpck.1169194664001" value="LibraryAccess" />
+    </node>
+    <node type="x27k.ExternalModule" typeId="x27k.6116558314501417921" id="7727566415687366376">
+      <property name="name" nameId="tpck.1169194664001" value="stdio_stub" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="external" />
     </node>
   </roots>
   <root id="9141254329931944222">
@@ -62,6 +77,9 @@
             </node>
             <node role="tests" roleId="yz9a.5686538669182341016" type="yz9a.TestCaseRef" typeId="yz9a.5686538669182340985" id="5160057464294711547">
               <link role="testcase" roleId="yz9a.5686538669182340986" targetNodeId="5160057464294670930" resolveInfo="testInterpolatorWithMock" />
+            </node>
+            <node role="tests" roleId="yz9a.5686538669182341016" type="yz9a.TestCaseRef" typeId="yz9a.5686538669182340985" id="7727566415687366375">
+              <link role="testcase" roleId="yz9a.5686538669182340986" targetNodeId="7727566415687366369" resolveInfo="testPrintf" />
             </node>
           </node>
         </node>
@@ -98,6 +116,9 @@
     </node>
     <node role="imports" roleId="x27k.1317894735999304826" type="x27k.ModuleImport" typeId="x27k.1317894735999299713" id="1731059994647798029">
       <link role="module" roleId="x27k.1317894735999299714" targetNodeId="1731059994647588211" resolveInfo="Components" />
+    </node>
+    <node role="imports" roleId="x27k.1317894735999304826" type="x27k.ModuleImport" typeId="x27k.1317894735999299713" id="7727566415687366374">
+      <link role="module" roleId="x27k.1317894735999299714" targetNodeId="5160057464295359491" resolveInfo="LibraryAccess" />
     </node>
   </root>
   <root id="9141254329931944238">
@@ -284,6 +305,12 @@
         <link role="module" roleId="51wr.7717755763392524108" targetNodeId="1731059994647587993" resolveInfo="DataStructures" />
       </node>
       <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="5160057464294662031" />
+      <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="7727566415687456699">
+        <link role="module" roleId="51wr.7717755763392524108" targetNodeId="5160057464295359491" resolveInfo="LibraryAccess" />
+      </node>
+      <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="7727566415687456707">
+        <link role="module" roleId="51wr.7717755763392524108" targetNodeId="7727566415687366376" resolveInfo="stdio_stub" />
+      </node>
     </node>
   </root>
   <root id="9141254329931944290">
@@ -2560,6 +2587,81 @@
     </node>
     <node role="imports" roleId="x27k.1317894735999304826" type="x27k.ModuleImport" typeId="x27k.1317894735999299713" id="1731059994647588212">
       <link role="module" roleId="x27k.1317894735999299714" targetNodeId="1731059994647587993" resolveInfo="DataStructures" />
+    </node>
+  </root>
+  <root id="5160057464295358354" />
+  <root id="5160057464295359491">
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="7727566415687366366">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1351848179676_1" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="yz9a.TestCase" typeId="yz9a.6275792049641586523" id="7727566415687366369">
+      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
+      <property name="name" nameId="tpck.1169194664001" value="testPrintf" />
+      <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="7727566415687366370">
+        <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+        <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+      </node>
+      <node role="body" roleId="yz9a.6275792049641586525" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="7727566415687366371">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="7727566415687460554">
+          <node role="expr" roleId="c4fa.7254843406768833939" type="x27k.FunctionCall" typeId="x27k.5950410542643524492" id="7727566415687460555">
+            <link role="function" roleId="x27k.5950410542643524493" targetNodeId="7727566415687456695" resolveInfo="printf" />
+            <node role="actuals" roleId="x27k.5950410542643524495" type="yq40.StringLiteral" typeId="yq40.6113173064526131575" id="7727566415687460556">
+              <property name="value" nameId="yq40.6113173064526131578" value="Hello, World\n" />
+            </node>
+          </node>
+        </node>
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="7727566415687684035">
+          <property name="name" nameId="tpck.1169194664001" value="i" />
+          <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="7727566415687684036">
+            <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+            <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+          </node>
+          <node role="init" roleId="c4fa.4185783222026502647" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="7727566415687684038">
+            <property name="value" nameId="mj1l.8860443239512128104" value="10" />
+          </node>
+        </node>
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="7727566415687684040">
+          <node role="expr" roleId="c4fa.7254843406768833939" type="x27k.FunctionCall" typeId="x27k.5950410542643524492" id="7727566415687684041">
+            <link role="function" roleId="x27k.5950410542643524493" targetNodeId="7727566415687456695" resolveInfo="printf" />
+            <node role="actuals" roleId="x27k.5950410542643524495" type="yq40.StringLiteral" typeId="yq40.6113173064526131575" id="7727566415687684042">
+              <property name="value" nameId="yq40.6113173064526131578" value="i = %i\n" />
+            </node>
+            <node role="actuals" roleId="x27k.5950410542643524495" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="7727566415687684046">
+              <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="7727566415687684035" resolveInfo="i" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="7727566415687366368">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1351848180604_3" />
+    </node>
+    <node role="imports" roleId="x27k.1317894735999304826" type="x27k.ModuleImport" typeId="x27k.1317894735999299713" id="7727566415687456706">
+      <link role="module" roleId="x27k.1317894735999299714" targetNodeId="7727566415687366376" resolveInfo="stdio_stub" />
+    </node>
+  </root>
+  <root id="7727566415687366376">
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.FunctionPrototype" typeId="x27k.6437088627575724000" id="7727566415687456695">
+      <property name="name" nameId="tpck.1169194664001" value="printf" />
+      <property name="hasEllipsis" nameId="x27k.9066372830132870213" value="true" />
+      <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="7727566415687456694">
+        <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+        <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+      </node>
+      <node role="arguments" roleId="x27k.5708867820623310661" type="x27k.Argument" typeId="x27k.7892328519581704407" id="7727566415687456696">
+        <property name="name" nameId="tpck.1169194664001" value="format" />
+        <node role="type" roleId="mj1l.318113533128716676" type="yq40.PointerType" typeId="yq40.279446265608459824" id="7727566415687456698">
+          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+          <node role="baseType" roleId="yq40.279446265608459825" type="mj1l.CharType" typeId="mj1l.1664480272136207708" id="7727566415687456697">
+            <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+            <property name="const" nameId="mj1l.2941277002445651368" value="true" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node role="descriptors" roleId="x27k.6116558314501417978" type="x27k.HeaderDescriptor" typeId="x27k.6116558314501417952" id="7727566415687694086">
+      <property name="path" nameId="x27k.6116558314501417936" value="&lt;stdio.h&gt;" />
     </node>
   </root>
 </model>
