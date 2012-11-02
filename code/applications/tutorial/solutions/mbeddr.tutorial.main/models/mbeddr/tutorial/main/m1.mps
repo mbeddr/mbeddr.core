@@ -4,6 +4,7 @@
   <devkit namespace="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
   <devkit namespace="1a986be1-0ef0-4f9f-9d8a-81c3ea7227ae(com.mbeddr.physicalunits)" />
   <devkit namespace="24565007-e59f-42fc-ac10-da3836deec1c(com.mbeddr.components)" />
+  <devkit namespace="43d889ae-8e6a-4f6e-a649-d59342d8728d(com.mbeddr.statemachines)" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="k146" modelUID="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" version="2" implicit="yes" />
   <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="17" implicit="yes" />
@@ -78,8 +79,11 @@
             <node role="tests" roleId="yz9a.5686538669182341016" type="yz9a.TestCaseRef" typeId="yz9a.5686538669182340985" id="5160057464294711547">
               <link role="testcase" roleId="yz9a.5686538669182340986" targetNodeId="5160057464294670930" resolveInfo="testInterpolatorWithMock" />
             </node>
-            <node role="tests" roleId="yz9a.5686538669182341016" type="yz9a.TestCaseRef" typeId="yz9a.5686538669182340985" id="7727566415687366375">
+            <node role="tests" roleId="yz9a.5686538669182341016" type="yz9a.TestCaseRef" typeId="yz9a.5686538669182340985" id="7727566415687714829">
               <link role="testcase" roleId="yz9a.5686538669182340986" targetNodeId="7727566415687366369" resolveInfo="testPrintf" />
+            </node>
+            <node role="tests" roleId="yz9a.5686538669182341016" type="yz9a.TestCaseRef" typeId="yz9a.5686538669182340985" id="7727566415687714830">
+              <link role="testcase" roleId="yz9a.5686538669182340986" targetNodeId="7727566415687697331" resolveInfo="testSM1" />
             </node>
           </node>
         </node>
@@ -119,6 +123,9 @@
     </node>
     <node role="imports" roleId="x27k.1317894735999304826" type="x27k.ModuleImport" typeId="x27k.1317894735999299713" id="7727566415687366374">
       <link role="module" roleId="x27k.1317894735999299714" targetNodeId="5160057464295359491" resolveInfo="LibraryAccess" />
+    </node>
+    <node role="imports" roleId="x27k.1317894735999304826" type="x27k.ModuleImport" typeId="x27k.1317894735999299713" id="7727566415687697335">
+      <link role="module" roleId="x27k.1317894735999299714" targetNodeId="5160057464295358354" resolveInfo="StateMachines" />
     </node>
   </root>
   <root id="9141254329931944238">
@@ -304,7 +311,9 @@
       <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="1731059994647804135">
         <link role="module" roleId="51wr.7717755763392524108" targetNodeId="1731059994647587993" resolveInfo="DataStructures" />
       </node>
-      <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="5160057464294662031" />
+      <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="7727566415687714831">
+        <link role="module" roleId="51wr.7717755763392524108" targetNodeId="5160057464295358354" resolveInfo="StateMachines" />
+      </node>
       <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="7727566415687456699">
         <link role="module" roleId="51wr.7717755763392524108" targetNodeId="5160057464295359491" resolveInfo="LibraryAccess" />
       </node>
@@ -2589,7 +2598,32 @@
       <link role="module" roleId="x27k.1317894735999299714" targetNodeId="1731059994647587993" resolveInfo="DataStructures" />
     </node>
   </root>
-  <root id="5160057464295358354" />
+  <root id="5160057464295358354">
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="7727566415687697324">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1351855962111_1" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="7727566415687697326">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1351855962566_3" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="7727566415687697327">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1351855962599_4" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="yz9a.TestCase" typeId="yz9a.6275792049641586523" id="7727566415687697331">
+      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
+      <property name="name" nameId="tpck.1169194664001" value="testSM1" />
+      <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="7727566415687697332">
+        <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+        <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+      </node>
+      <node role="body" roleId="yz9a.6275792049641586525" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="7727566415687697333" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="7727566415687697329">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1351856035141_2" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="7727566415687697330">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1351856035301_3" />
+    </node>
+  </root>
   <root id="5160057464295359491">
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="7727566415687366366">
       <property name="name" nameId="tpck.1169194664001" value="empty_1351848179676_1" />

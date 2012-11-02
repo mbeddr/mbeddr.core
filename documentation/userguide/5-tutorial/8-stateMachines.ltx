@@ -1,4 +1,18 @@
-\section{Accessing Libraries}
+\section{State Machines}
+
+Next to components and units, state machines are one of the main C extensions
+available in mbeddr. They can be used directly in C programs, or alternatively,
+embedded into components. To keep the overall complexity of the example
+manageable, we will show state machine use directly in C.
+
+To use state machines, the respective model has to use the
+\ic{com.mbeddr.statemachines} devkit. We then create a new module
+\ic{StateMachines} and add it to the build configuration. We can also create a
+test case and call it from \ic{Main} (there is an intention on the \ic{test}
+expression that automatically adds all test cases that are visible).
+
+Our example state machine 
+
 
 
 
