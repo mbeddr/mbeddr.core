@@ -53,6 +53,10 @@ section, select the \ic{+} button and add the \ic{com.mbeddr.core} devkit.
 This concludes the configuration and setup of your project. You can now start
 writing C code.
 
+\greyboxnote{In this tutorial we create the basic building blocks manually.
+However, there are also a couple of Wizards in the Code menu that create these
+things automatically. }
+
  
 \parhead{Create an empty Module} The top level concept in mbeddr C programs are
 \emph{modules}. Modules act as namespaces and as the unit of encapsulation. So
@@ -61,11 +65,6 @@ does not use the artificial separation between \ic{.h} and \ic{.c} files you
 know it from classical C. Instead mbeddr C uses the aforementioned module
 concept. During code generation we create the corresponding \ic{.h} and \ic{.c}
 files.
-
-\begin{center} 
-  \includegraphics[width=6cm]{figures/core/wizards.png}
-\end{center} 
-
 
 A module can import other modules. The importing module can then access the
 \emph{exported} contents of imported modules. Module contents can be exported
@@ -77,9 +76,6 @@ context menu as shown in the following screenshot (note that MPS may shorten
 package names; so instead of \ic{com.mbeddr.core.modules} it may read
 \ic{c.m.core.modules}):
 
-\greyboxnote{In this tutorial we create the basic building blocks manually.
-However, there are also a couple of Wizards in the Code menu that create these
-things manually. See the following figure.}
 
 
 \begin{center} 
@@ -146,7 +142,7 @@ the following ways:
 \end{itemize}
 
 
-At this point, we are ready to implement the Hello World program. Our aim is to
+At this point, we are ready to implement the \ic{Hello World} program. Our aim is to
 simply output a log message and return \ic{0}. To add a return value, move the
 cursor into the function body and type \keystroke{return 0}.
 
@@ -183,15 +179,15 @@ of the \ic{message text} property. The resulting message should look like this:
 \end{lstlisting}
 
 Now you are ready to use the message list and its messages from your
-main function. Insert a \ic{report()} statement in the main function, specify
+main function. Insert a \ic{report} statement in the main function, specify
 the message list \ic{log} and select the message \ic{hello}. Pass the string
 \ic{"World"} as parameter.
 
-\begin{lstlisting}[language=mbeddr, morekeywords={message, list}]
+\begin{lstlisting}[language=mbeddr, morekeywords={message, list, report}]
 module HelloWorld from HelloWorld.main imports nothing { 
    
   int32 main(int8 argc, string[ ] args) { 
-    report(0) log.hello("World") on/if; 
+    report(0) log.hello("World"); 
     return 0; 
   } 
   
@@ -214,12 +210,13 @@ model, create a new instance of \ic{BuildConfiguration} (via the model's context
 menu, see figure below).
 
 \begin{center} 
-  \includegraphics[width=12cm]{figures/core/AddBuildConfiguration.png}
+  \includegraphics[width=\columnwidth]{figures/core/AddBuildConfiguration.png}
 \end{center}
 
 Initially, it will look as follows:
 
-\begin{lstlisting}[language=mbeddr, morekeywords={}]
+\begin{lstlisting}[language=mbeddr, morekeywords={Target, Platform,
+Configuration, Items, Binaries}] 
 Target Platform: 
   <no target> 
  
@@ -237,12 +234,13 @@ target platforms may generate build scripts for other build systems.}.
 The \ic{desktop} target contains some useful defaults, e.g. the \ic{gcc}
 compiler and its options. 
 
-\begin{lstlisting}[language=mbeddr, morekeywords={}]
+\begin{lstlisting}[language=mbeddr, morekeywords={Target, Platform,
+Configuration, Items, Binaries, desktop, compiler, options, debug}]
 Target Platform: 
   desktop 
     compiler: gcc 
     compiler options: -std=c99 
-    debug options: <no debug options>
+    debug options: <none>
 \end{lstlisting}
 
 Next, we have to address the configuration items. These are additional
@@ -252,7 +250,8 @@ determines how log messages are output. The \ic{printf} strategy simply prints
 them to the console, which is fine for our purposes here. Select
 the placeholder and type \keystroke{reporting}. 
 
-\begin{lstlisting}[language=mbeddr, morekeywords={}]
+\begin{lstlisting}[language=mbeddr, morekeywords={Target, Platform,
+Configuration, Items, Binaries, desktop, compiler, options, debug, reporting}]
 Configuration Items 
   reporting: printf 
 \end{lstlisting}
@@ -261,8 +260,9 @@ Finally, in the \ic{Binaries} section, we create a new \ic{exectuable} and
 call it \ic{HelloWorld}. In the program's body, add a reference to the \ic{HelloWorld}
 implementation module we've created before. The code should look like this:
 
-\begin{lstlisting}[language=mbeddr, morekeywords={}]
-
+\begin{lstlisting}[language=mbeddr, morekeywords={Target, Platform,
+Configuration, Items, Binaries, desktop, compiler, options, debug, executable,
+isTest, used, libraries, included, modules}]
 executable main isTest: false { 
   used libraries 
     << ... >> 
@@ -271,6 +271,14 @@ executable main isTest: false {
 }
 \end{lstlisting}
  
+\greyboxnote{Note that the whole process shown so far can be performed via a
+Wizard. Once you have a model that uses the \ic{mbeddr.core} devkit, you can
+select select the \ic{Make Hello World} wizard from the \ic{Code} menu. It
+creates the same program. Also, the \ic{Make Minimal System} creates a module
+with a main function, a type size configuration and a build configuration.
+\ic{Make Minimal Test} creates a similar thing, but with a \ic{test case} in
+it.}
+
 
 
 \parhead{Building and Executing the Program} Press \keystroke{Ctrl-F9} (or
@@ -319,4 +327,6 @@ program source).
 
 \vspace{10mm}
 \noindent This concludes our hello world example. In the next section we will
-examine important differences between mbeddr C and regular C. 
+examine important differences between mbeddr C and regular C. Section
+\sect{tutorial} contains a more extensive tutorial that integrates several of
+the mbeddr extensions.

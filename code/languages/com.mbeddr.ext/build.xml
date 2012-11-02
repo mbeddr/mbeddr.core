@@ -54,7 +54,7 @@
   
   <target name="build-languages" depends="init">
     <mps.generate parallelMode="true" fork="true" failonerror="true">
-      <jvmargs id="myargs"/>
+      <jvmargs refid="myargs"/>
       <macro name="mbeddr.github.core.home" path="${mbeddr.github.core.home}"/>
       <library name="mbeddr.project" dir="${coreLanguageDir}"/>
       <library name="util.languages" dir="${utilLanguageDir}"/>
@@ -78,7 +78,7 @@
   
   <target name="build-tests" depends="init">
     <mps.generate parallelMode="true" fork="true" failonerror="true">
-      <jvmargs id="myargs"/>
+      <jvmargs refid="myargs"/>
       <macro name="mbeddr.github.core.home" path="${mbeddr.github.core.home}"/>
 
       <library name="mbeddr.ext" dir="${extLanguageDir}"/>

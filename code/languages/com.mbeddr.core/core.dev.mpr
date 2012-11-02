@@ -23,7 +23,9 @@
       <modulePath path="${project}/languages/com.mbeddr.core.buildconfig/buildconfig.mpl" folder="core-extended" />
       <modulePath path="${project}/languages/com.mbeddr.core.cstubs.test/test.mpl" folder="tests.cstub" />
       <modulePath path="${project}/languages/com.mbeddr.core.cstubs/cstubs.mpl" folder="core" />
+      <modulePath path="${project}/languages/com.mbeddr.core.debug.blext/blext.mpl" />
       <modulePath path="${project}/languages/com.mbeddr.core.debug.test/test.mpl" folder="tests.debugger" />
+      <modulePath path="${project}/languages/com.mbeddr.core.debug/debug.mpl" />
       <modulePath path="${project}/languages/com.mbeddr.core.embedded/embedded.mpl" folder="core-extended" />
       <modulePath path="${project}/languages/com.mbeddr.core.expressions/expressions.mpl" folder="core" />
       <modulePath path="${project}/languages/com.mbeddr.core.legacy/legacy.mpl" folder="core" />
@@ -62,14 +64,6 @@
   <component name="ProjectLibraryManager">
     <option name="libraries">
       <map>
-        <entry key="debugger">
-          <value>
-            <Library>
-              <option name="name" value="debugger" />
-              <option name="path" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.debugger" />
-            </Library>
-          </value>
-        </entry>
         <entry key="mpsutil">
           <value>
             <Library>

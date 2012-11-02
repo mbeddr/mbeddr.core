@@ -2,7 +2,7 @@ cd com.mbeddr.mpsutil
 call ant build-languages
 cd ..
 
-cd com.mbeddr.debugger
+cd com.mbeddr.spawner
 call ant build-languages
 cd ..
 

@@ -47,7 +47,7 @@
   
   <target name="build-languages" depends="init">
     <mps.generate parallelMode="true" fork="true" >
-      <jvmargs id="myargs"/>
+      <jvmargs refid="myargs"/>
 
       <macro name="mbeddr.github.core.home" path="${mbeddr.github.core.home}"/>
 
@@ -64,7 +64,7 @@
   <target name="build-tests" depends="init">
     <mps.generate parallelMode="false" fork="true">
       <macro name="mbeddr.github.core.home" path="${mbeddr.github.core.home}"/>
-      <jvmargs id="myargs"/>
+      <jvmargs refid="myargs"/>
       
       <macro name="mbeddr.github.core.home" path="${mbeddr.github.core.home}"/>
       
@@ -119,7 +119,7 @@
         <fileset dir="${mps.home}/plugins">
           <include name="**/*.jar"/>
         </fileset>
-        <pathelement location="${mps.home}/plugins/spawner/lib/classes/"/>
+        <pathelement location="${mps.home}/plugins/mbeddr.spawner/lib/classes/"/>
       </classpath>
 
       <test name="jetbrains.mps.testbench.junit.suites.DefaultTestSuite"/>
