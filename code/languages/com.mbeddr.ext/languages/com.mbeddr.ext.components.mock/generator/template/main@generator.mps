@@ -1076,6 +1076,7 @@
         </node>
         <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="2151335435833470756">
           <property name="name" nameId="tpck.1169194664001" value="dummy" />
+          <property name="comesFromMock" nameId="v7ag.5160057464294856626" value="true" />
           <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="2151335435833470757">
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="4957503999941137039">
               <property name="name" nameId="tpck.1169194664001" value="retVal" />

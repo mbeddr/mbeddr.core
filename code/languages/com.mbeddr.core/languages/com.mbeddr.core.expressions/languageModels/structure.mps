@@ -565,6 +565,10 @@
       <property name="name" nameId="tpck.1169194664001" value="PC99MeetType" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpd4.1188473524530" resolveInfo="MeetType" />
     </node>
+    <node type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="5160057464295077059">
+      <property name="name" nameId="tpck.1169194664001" value="IRequiresTypeToBeInferred" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="expr" />
+    </node>
   </roots>
   <root id="8860443239512128050">
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="356284525549555981">
@@ -2074,5 +2078,6 @@
     </node>
   </root>
   <root id="3795266832289055347" />
+  <root id="5160057464295077059" />
 </model>
 
