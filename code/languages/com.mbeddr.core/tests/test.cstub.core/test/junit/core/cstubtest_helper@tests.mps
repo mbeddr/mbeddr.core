@@ -675,7 +675,7 @@
       </node>
     </node>
     <node role="staticMethod" roleId="tpee.1070462273904" type="tpee.StaticMethodDeclaration" typeId="tpee.1081236700938" id="719533080082602648">
-      <property name="name" nameId="tpck.1169194664001" value="parseCFile" />
+      <property name="name" nameId="tpck.1169194664001" value="parseCFileWithoutVariability" />
       <node role="returnType" roleId="tpee.1068580123133" type="tp25.SNodeType" typeId="tp25.1138055754698" id="719533080082602649">
         <link role="concept" roleId="tp25.1138405853777" targetNodeId="x27k.6437088627575722830" resolveInfo="ImplementationModule" />
       </node>
