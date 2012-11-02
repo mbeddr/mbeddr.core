@@ -67,7 +67,7 @@
   
   
   
-  <target name="run-debugger-tests" >
+  <target name="run-ts-tests" >
     
     <echo message="mbeddr.github.core.home = ${mbeddr.github.core.home}"/>
     <echo message="path.macro.mbeddr.github.core.home := ${mbeddr.github.core.home}"/>
