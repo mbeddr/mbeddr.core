@@ -1893,6 +1893,16 @@
           <property name="name" nameId="tpck.1169194664001" value="store" />
           <link role="intf" roleId="v7ag.4491876417845484932" targetNodeId="1731059994647814010" resolveInfo="TrackpointStore1" />
         </node>
+        <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Field" typeId="v7ag.5308710777891512019" id="5160057464295273794">
+          <property name="name" nameId="tpck.1169194664001" value="lastTP" />
+          <node role="type" roleId="mj1l.318113533128716676" type="yq40.PointerType" typeId="yq40.279446265608459824" id="5160057464295273796">
+            <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+            <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+            <node role="baseType" roleId="yq40.279446265608459825" type="clbe.StructType" typeId="clbe.6394819151180597816" id="5160057464295273795">
+              <link role="struct" roleId="clbe.6394819151180597817" targetNodeId="1731059994647587994" resolveInfo="Trackpoint" />
+            </node>
+          </node>
+        </node>
         <node role="contents" roleId="v7ag.6041318036221669720" type="mxvz.ExpectTotalNoOfCalls" typeId="mxvz.4957503999940758571" id="5160057464294671020">
           <property name="noOfCalls" nameId="mxvz.4957503999940761153" value="5" />
         </node>
@@ -1914,6 +1924,18 @@
                 </node>
               </node>
             </node>
+            <node role="body" roleId="mxvz.5160057464295244586" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="5160057464295273797">
+              <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="5160057464295310750">
+                <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.AssignmentExpr" typeId="mj1l.22102029902365709" id="5160057464295310777">
+                  <node role="right" roleId="mj1l.8860443239512128065" type="mxvz.ParamRefExpression" typeId="mxvz.4331139697889290796" id="5160057464295310786">
+                    <link role="param" roleId="mxvz.4331139697889301323" targetNodeId="1731059994647814015" resolveInfo="tp" />
+                  </node>
+                  <node role="left" roleId="mj1l.8860443239512128064" type="v7ag.FieldRef" typeId="v7ag.5308710777891565561" id="5160057464295310751">
+                    <link role="field" roleId="v7ag.5308710777891565562" targetNodeId="5160057464295273794" resolveInfo="lastTP" />
+                  </node>
+                </node>
+              </node>
+            </node>
           </node>
           <node role="steps" roleId="mxvz.4957503999940784582" type="mxvz.Step" typeId="mxvz.4957503999940784581" id="5160057464294711310">
             <link role="port" roleId="mxvz.4957503999940788277" targetNodeId="5160057464294671017" resolveInfo="store" />
@@ -1923,7 +1945,9 @@
           <node role="steps" roleId="mxvz.4957503999940784582" type="mxvz.Step" typeId="mxvz.4957503999940784581" id="5160057464294711340">
             <link role="port" roleId="mxvz.4957503999940788277" targetNodeId="5160057464294671017" resolveInfo="store" />
             <link role="op" roleId="mxvz.4957503999940788278" targetNodeId="1731059994647814026" resolveInfo="take" />
-            <node role="returnValue" roleId="mxvz.4957503999941129330" type="yq40.NullExpression" typeId="yq40.5308710777891643206" id="5160057464294822189" />
+            <node role="returnValue" roleId="mxvz.4957503999941129330" type="v7ag.FieldRef" typeId="v7ag.5308710777891565561" id="5160057464295301772">
+              <link role="field" roleId="v7ag.5308710777891565562" targetNodeId="5160057464295273794" resolveInfo="lastTP" />
+            </node>
           </node>
           <node role="steps" roleId="mxvz.4957503999940784582" type="mxvz.Step" typeId="mxvz.4957503999940784581" id="5160057464294711406">
             <link role="port" roleId="mxvz.4957503999940788277" targetNodeId="5160057464294671017" resolveInfo="store" />
@@ -2028,7 +2052,7 @@
               <node role="memberAssigns" roleId="k146.3059865549680413567" type="k146.WithMemberAssignment" typeId="k146.3073566081777391256" id="5160057464294670950">
                 <link role="member" roleId="k146.3073566081777391258" targetNodeId="1731059994647587995" resolveInfo="id" />
                 <node role="value" roleId="k146.3073566081777391257" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="5160057464294670951">
-                  <property name="value" nameId="mj1l.8860443239512128104" value="1" />
+                  <property name="value" nameId="mj1l.8860443239512128104" value="2" />
                 </node>
               </node>
               <node role="memberAssigns" roleId="k146.3059865549680413567" type="k146.WithMemberAssignment" typeId="k146.3073566081777391256" id="5160057464294670952">
@@ -2036,7 +2060,7 @@
                 <node role="value" roleId="k146.3073566081777391257" type="3c6d.LiteralWithUnit" typeId="3c6d.5513256947824592491" id="5160057464294670953">
                   <node role="unit" roleId="3c6d.5513256947824592493" type="ym4j.SISecond" typeId="ym4j.3801772042669047312" id="5160057464294670954" />
                   <node role="value" roleId="3c6d.5513256947824592492" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="5160057464294670955">
-                    <property name="value" nameId="mj1l.8860443239512128104" value="1" />
+                    <property name="value" nameId="mj1l.8860443239512128104" value="2" />
                   </node>
                 </node>
               </node>
