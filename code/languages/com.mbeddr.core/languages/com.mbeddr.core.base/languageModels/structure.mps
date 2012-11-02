@@ -107,6 +107,9 @@
       <property name="name" nameId="tpck.1169194664001" value="IHideFromOutline" />
       <property name="virtualPackage" nameId="tpck.1193676396447" value="outline" />
     </node>
+    <node type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="3578942323568389911">
+      <property name="name" nameId="tpck.1169194664001" value="IGeneratesCodeForIDE" />
+    </node>
   </roots>
   <root id="7024921229555594291">
     <node role="extends" roleId="tpce.1169127546356" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7024921229555594292">
@@ -521,6 +524,9 @@
     <node role="extends" roleId="tpce.1169127546356" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="1049346859913011962">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="tpck.3393165121846091587" resolveInfo="ISuppressErrors" />
     </node>
+    <node role="extends" roleId="tpce.1169127546356" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="8433683602660589777">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="1908346841499937386" resolveInfo="IHideFromOutline" />
+    </node>
     <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.BooleanConceptProperty" typeId="tpce.1105725574259" id="4753668641245874513">
       <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473994950" resolveInfo="dontSubstituteByDefault" />
     </node>
@@ -541,5 +547,6 @@
   <root id="1908346841499857570" />
   <root id="1908346841499892479" />
   <root id="1908346841499937386" />
+  <root id="3578942323568389911" />
 </model>
 

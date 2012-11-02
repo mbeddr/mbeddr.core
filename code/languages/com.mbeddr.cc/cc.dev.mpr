@@ -6,8 +6,10 @@
   <component name="Encoding" useUTFGuessing="true" native2AsciiForPropertiesFiles="false" />
   <component name="MPSProject">
     <projectModules>
+      <modulePath path="${project}/devkits/com.mbeddr.archdec/archdec.devkit" folder="archdec" />
       <modulePath path="${project}/devkits/com.mbeddr.cc.reqtrace/reqtrace.devkit" folder="requirements" />
       <modulePath path="${project}/devkits/com.mbeddr.cc.variability/variability.devkit" folder="ple_var" />
+      <modulePath path="${project}/languages/com.mbeddr.cc.archdec/archdec.mpl" folder="archdec" />
       <modulePath path="${project}/languages/com.mbeddr.cc.requirements/requirements.mpl" folder="requirements" />
       <modulePath path="${project}/languages/com.mbeddr.cc.requirements/solutions/pluginSolution/pluginSolution.msd" folder="requirements" />
       <modulePath path="${project}/languages/com.mbeddr.cc.trace/solutions/pluginSolution/pluginSolution.msd" folder="requirements" />
@@ -16,9 +18,12 @@
       <modulePath path="${project}/languages/com.mbeddr.cc.var.annotations/solutions/pluginSolution/pluginSolution.msd" folder="ple_var" />
       <modulePath path="${project}/languages/com.mbeddr.cc.var.buildconfig/buildconfig.mpl" folder="ple_var" />
       <modulePath path="${project}/languages/com.mbeddr.cc.var.fm/fm.mpl" folder="ple_var" />
+      <modulePath path="${project}/languages/com.mbeddr.cc.var.rt.comp/comp.mpl" folder="ple_var" />
+      <modulePath path="${project}/languages/com.mbeddr.cc.var.rt/rt.mpl" folder="ple_var" />
       <modulePath path="${project}/solutions/com.mbeddr.cc.dev.build/build.msd" />
       <modulePath path="${project}/tests/test.ex.cc.fm/fm.msd" folder="tests" />
-      <modulePath path="${project}/tests/test.ts.cc.fm/fm.msd" folder="tests" />
+      <modulePath path="${project}/tests/test.ex.cc.fmrt/fmrt.msd" folder="tests" />
+      <modulePath path="${project}/tests/test.ts.cc.archdec/archdec.msd" folder="tests" />
       <modulePath path="${project}/tests/test.ts.cc.requirements/requirements.msd" folder="tests" />
     </projectModules>
     <genConfs />
@@ -31,6 +36,14 @@
             <Library>
               <option name="name" value="mbeddr.core" />
               <option name="path" value="${mbeddr.github.core.home}/code/languages" />
+            </Library>
+          </value>
+        </entry>
+        <entry key="mbeddr.debugger">
+          <value>
+            <Library>
+              <option name="name" value="mbeddr.debugger" />
+              <option name="path" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.debugger" />
             </Library>
           </value>
         </entry>

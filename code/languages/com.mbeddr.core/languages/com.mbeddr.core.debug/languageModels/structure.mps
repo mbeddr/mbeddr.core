@@ -54,6 +54,22 @@
       <property name="virtualPackage" nameId="tpck.1193676396447" value="watches" />
       <property name="name" nameId="tpck.1169194664001" value="IChildrenResolver" />
     </node>
+    <node type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="8047260781568394650">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="state" />
+      <property name="name" nameId="tpck.1169194664001" value="ICallableInformationProvider" />
+    </node>
+    <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4198270288895892750">
+      <property name="name" nameId="tpck.1169194664001" value="MPrimitiveValue" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="icon-provider" />
+      <property name="iconPath" nameId="tpce.1160488491229" value="${language_descriptor}/icons/primitiveValue.png" />
+      <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
+    </node>
+    <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4198270288895892752">
+      <property name="name" nameId="tpck.1169194664001" value="MComplexValue" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="icon-provider" />
+      <property name="iconPath" nameId="tpce.1160488491229" value="${language_descriptor}/icons/complexValue.png" />
+      <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
+    </node>
   </roots>
   <root id="568116135000816591" />
   <root id="3205769394890863066" />
@@ -75,5 +91,16 @@
   </root>
   <root id="2513598210665148633" />
   <root id="8519572659617671153" />
+  <root id="8047260781568394650" />
+  <root id="4198270288895892750">
+    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.BooleanConceptProperty" typeId="tpce.1105725574259" id="4198270288895892751">
+      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473854053" resolveInfo="abstract" />
+    </node>
+  </root>
+  <root id="4198270288895892752">
+    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.BooleanConceptProperty" typeId="tpce.1105725574259" id="4198270288895892753">
+      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473854053" resolveInfo="abstract" />
+    </node>
+  </root>
 </model>
 

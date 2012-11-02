@@ -16,7 +16,6 @@
       <modulePath path="${project}/languages/com.mbeddr.mpsutil.langstats/langstats.mpl" folder="" />
       <modulePath path="${project}/languages/com.mbeddr.mpsutil.refactoring/refactoring.mpl" folder="" />
       <modulePath path="${project}/languages/com.mbeddr.mpsutil.tables.rt/tables.rt.msd" />
-      <modulePath path="${project}/solutions/com.mbeddr.mpsutil.dev.build/build.msd" />
       <modulePath path="${project}/solutions/com.mbeddr.mpsutil.graph.demo/demo.msd" folder="" />
     </projectModules>
     <genConfs />

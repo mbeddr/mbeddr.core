@@ -43,6 +43,14 @@
             </Library>
           </value>
         </entry>
+        <entry key="mbeddr.debugger">
+          <value>
+            <Library>
+              <option name="name" value="mbeddr.debugger" />
+              <option name="path" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.debugger" />
+            </Library>
+          </value>
+        </entry>
         <entry key="mps.util">
           <value>
             <Library>

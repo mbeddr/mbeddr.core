@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<history>
+  <StructureModification>
+    <dependencies>
+      <model index="n80h" modelUID="r:7d46a182-8703-4db2-b9ab-f79dbf9bfffc(com.mbeddr.cc.archdec.structure)" version="-1" />
+    </dependencies>
+    <rename id="n80h.8433683602660394400" type="CONCEPT" from="ADStateIdea" to="ADStateTentative" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="n80h" modelUID="r:7d46a182-8703-4db2-b9ab-f79dbf9bfffc(com.mbeddr.cc.archdec.structure)" version="0" />
+    </dependencies>
+    <rename id="n80h.4941245409091229927" type="CONCEPT" from="Influence" to="ForceInfluence" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="n80h" modelUID="r:7d46a182-8703-4db2-b9ab-f79dbf9bfffc(com.mbeddr.cc.archdec.structure)" version="1" />
+    </dependencies>
+    <move id="n80h.4941245409091229929" to="n80h.4837632670852826028" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="n80h" modelUID="r:7d46a182-8703-4db2-b9ab-f79dbf9bfffc(com.mbeddr.cc.archdec.structure)" version="2" />
+    </dependencies>
+    <rename id="n80h.8433683602660442732" type="CONCEPT" from="ArchitecRtureDecision" to="ArchitectureDecision" />
+  </StructureModification>
+</history>
+

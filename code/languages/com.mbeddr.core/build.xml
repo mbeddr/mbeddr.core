@@ -13,17 +13,21 @@
           classpathref="mps.ant.path"/>
 
   <property name="mbeddr.core.project.dir" value="code/languages/com.mbeddr.core"/>
-  <property name="mbeddr.core.project.mpr" value="code/languages/com.mbeddr.core/core.dev.mpr"/>
+  <property name="mbeddr.core.project.mpr" value="code/languages/com.mbeddr.core/core.dev.mpr"/>  
   
   <property name="util.project.dir" value="code/languages/com.mbeddr.mpsutil"/>
   <property name="util.project.mpr" value="code/languages/com.mbeddr.mpsutil/mpsutil.dev.mpr"/>
+  <property name="debugger.project.dir" value="code/languages/com.mbeddr.debugger/"/>
+  <property name="debugger.project.mpr" value="code/languages/com.mbeddr.debugger/debugger.dev.mpr"/>
  
+  <property name="utilLanguageDir" value="${mbeddr.github.core.home}/${util.project.dir}/languages"/>
+  <property name="debuggerLanguageDir" value="${mbeddr.github.core.home}/${debugger.project.dir}/languages"/>
  
   <jvmargs id="myargs">
       <arg value="-ea"/>
       <arg value="-Xss1024k"/>
-      <arg value="-Xmx1024m"/>
-      <arg value="-XX:MaxPermSize=92m"/>
+      <arg value="-Xmx2048m"/>
+      <arg value="-XX:MaxPermSize=128m"/>
       <arg value="-XX:+HeapDumpOnOutOfMemoryError"/>
 	  <arg value="-Didea.system.path=${mps.platform.caches}/system"/>
 	  <arg value="-Didea.config.path=${mps.platform.caches}/config"/>
@@ -43,15 +47,16 @@
   
   <target name="build-languages" depends="init">
     <mps.generate parallelMode="true" fork="true" >
-      <jvmargs id="myargs"/>
+      <jvmargs refid="myargs"/>
 
       <macro name="mbeddr.github.core.home" path="${mbeddr.github.core.home}"/>
 
-      <library name="mbeddr.project" dir="${mbeddr.github.core.home}/${mbeddr.core.project.dir}"/>
-      <library name="util.languages" dir="${mbeddr.github.core.home}/${util.project.dir}/languages"/>
+      <library name="util.languages" dir="${utilLanguageDir}"/>
+      <library name="debugger.languages" dir="${debuggerLanguageDir}"/>
       <macro name="mbeddr.github.core.home" path="${mbeddr.github.core.home}"/>
 
       <modules dir="${mbeddr.github.core.home}/${mbeddr.core.project.dir}/languages"/>
+      <modules dir="${mbeddr.github.core.home}/${mbeddr.core.project.dir}/solutions"/>
     </mps.generate>
   </target>
 
@@ -59,13 +64,14 @@
   <target name="build-tests" depends="init">
     <mps.generate parallelMode="false" fork="true">
       <macro name="mbeddr.github.core.home" path="${mbeddr.github.core.home}"/>
-      <jvmargs id="myargs"/>
+      <jvmargs refid="myargs"/>
       
       <macro name="mbeddr.github.core.home" path="${mbeddr.github.core.home}"/>
       
       <library name="mbeddr.project" dir="${mbeddr.github.core.home}/${mbeddr.core.project.dir}"/>
-      <library name="util.languages" dir="${mbeddr.github.core.home}/${util.project.dir}/languages"/>
-
+      <library name="util.languages" dir="${utilLanguageDir}"/>
+      <library name="debugger.languages" dir="${debuggerLanguageDir}"/>
+      
       <modules dir="${mbeddr.github.core.home}/${mbeddr.core.project.dir}/tests"/>
 
 	  </mps.generate>
@@ -95,6 +101,7 @@
       <jvmarg value="-XX:MaxPermSize=256m"/>
       <jvmarg value="-XX:+HeapDumpOnOutOfMemoryError"/>
       <jvmarg value="-XX:-UseGCOverheadLimit"/>
+        
 
       <sysproperty key="idea.load.plugins" value="true"/>
       <sysproperty key="idea.system.path" value="${mps.platform.caches}/system"/>
@@ -112,7 +119,7 @@
         <fileset dir="${mps.home}/plugins">
           <include name="**/*.jar"/>
         </fileset>
-        <pathelement location="${mps.home}/plugins/spawner/lib/classes/"/>
+        <pathelement location="${mps.home}/plugins/mbeddr.spawner/lib/classes/"/>
       </classpath>
 
       <test name="jetbrains.mps.testbench.junit.suites.DefaultTestSuite"/>

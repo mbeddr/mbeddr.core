@@ -565,6 +565,10 @@
       <property name="name" nameId="tpck.1169194664001" value="PC99MeetType" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpd4.1188473524530" resolveInfo="MeetType" />
     </node>
+    <node type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="5160057464295077059">
+      <property name="name" nameId="tpck.1169194664001" value="IRequiresTypeToBeInferred" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="expr" />
+    </node>
   </roots>
   <root id="8860443239512128050">
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="356284525549555981">
@@ -991,6 +995,10 @@
     </node>
   </root>
   <root id="6610873504380029780">
+    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="8000796061690176390">
+      <property name="value" nameId="tpce.1105725733873" value="((..)..)" />
+      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473891462" resolveInfo="alias" />
+    </node>
     <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="4058325937810995700">
       <property name="value" nameId="tpce.1105725733873" value="downcast an expression" />
       <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473914776" resolveInfo="shortDescription" />
@@ -2070,5 +2078,6 @@
     </node>
   </root>
   <root id="3795266832289055347" />
+  <root id="5160057464295077059" />
 </model>
 
