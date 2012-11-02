@@ -139,7 +139,10 @@ state airborne {
 }
 \end{lstlisting}
 
-The landing process is essentially similar:
+Note that the transitions are checked in the order of their appearance in the
+state machine; if several of them are ready to fire, the first one is picked. So
+be careful to put the "tighter cases" first. The landing process is essentially
+similar:
 
 \begin{lstlisting}[language=mbeddr]
 state landing { 
@@ -208,6 +211,102 @@ implementation from the intent.
 
 
 \subsection{Interacting with Other Code --- Inbound}
+
+Let us write some test code that interacts with a state machine. To do a
+meaningful test, we will have to create a whole lot of trackpoints. So to do
+this we create helper functions. These in turn need \ic{malloc} and \ic{free},
+so we first create an additional external module that represents \ic{stdlib.h}:
+
+\begin{lstlisting}[language=mbeddr]
+// external module contents are exported by default 
+external module stdlib_stub imports nothing resources header: <stdlib.h>{ 
+  void* malloc(size_t size); 
+  void free(void* ptr);
+}
+\end{lstlisting}
+
+We can now create a helper function that creates a new trackpoint based on an
+altitude and speed passed in as arguments:
+
+\begin{lstlisting}[language=mbeddr]
+Trackpoint* makeTP(uint16 alt, int16 speed) { 
+  static int8 trackpointCounter = 0; 
+  trackpointCounter++; 
+  Trackpoint* tp = ((Trackpoint*) malloc(sizeof Trackpoint)); 
+  tp->id = trackpointCounter; 
+  tp->timestamp = introduceunit[trackpointCounter -> s]; 
+  tp->alt = introduceunit[alt -> m]; 
+  tp->speed = introduceunit[speed -> mps]; 
+  return tp; 
+}
+\end{lstlisting}
+
+We can now start writing (and running!) the test. We first create an instance of
+the state machine (state machines act as types and can be instantiated). We then
+initialize the state machine by using the \ic{sminit} statement:
+
+\begin{lstlisting}[language=mbeddr]
+exported test case testSM1 { 
+  FlightAnalyzer f; 
+  sminit(f); 
+}
+\end{lstlisting}
+
+Initially we should be in the \ic{beforeFlight} state. We can chech this with an
+assertion:
+
+\begin{lstlisting}[language=mbeddr]
+assert(0) smIsInState(f, beforeFlight);
+\end{lstlisting}
+
+We also want to make sure that the \ic{points} are zero initially. To be able to
+write a constraint that checks this we first have to make the \ic{points}
+variable \ic{readable} from the outside. An intention on the variable achieves
+this. We can then write:
+
+\begin{lstlisting}[language=mbeddr]
+assert(1) f.points == 0;
+\end{lstlisting}
+
+Let us now create the first trackpoint and pass it in. This one has speed, but
+no altitude, so we are in the take-off run. We assume that we remain in the
+\ic{beforeFlight} state and that we still have 0 points:
+
+\begin{lstlisting}[language=mbeddr]
+smtrigger(f, next(makeTP(0, 20))); 
+assert(2) smIsInState(f, beforeFlight) && f.points == 0;
+\end{lstlisting}
+
+Now we lift off by setting the alt to 100 meters:
+
+\begin{lstlisting}[language=mbeddr]
+smtrigger(f, next(makeTP(100, 100))); 
+assert(3) smIsInState(f, airborne) && f.points == 100;
+\end{lstlisting}
+
+So as you can see it is easy to interact from regular C code with a state
+machine. For testing, we have special support that checks if the state machine
+transitions to the desired state if a specific event is triggered. Here is some
+example code (note that you can use the \ic{test statemachine} construct only
+within test cases):
+
+\begin{lstlisting}[language=mbeddr]
+test statemachine f { 
+  next(makeTP(200, 100)) -> airborne 
+  next(makeTP(300, 150)) -> airborne 
+  next(makeTP(0, 90)) -> landing 
+  next(makeTP(0, 0)) -> landed 
+}
+\end{lstlisting}
+
+
+This concludes our discussion of state machines. If you are a C buff, you may
+have noticed that our application contains a memory leak. We allocate all kinds
+of heap data (in the \ic{makeTP} function), but we never free it again. Read the
+next chapter to do something about that.
+
+
+
 
 
 
