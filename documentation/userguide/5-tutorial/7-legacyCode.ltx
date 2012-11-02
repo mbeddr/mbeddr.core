@@ -57,9 +57,9 @@ external module stdio_stub imports nothing resources header: <stdio.h> {
 }
 \end{lstlisting}
 
-To be able write the test case, we have to import the \ic{stdio_stub} into our
+To be able write the test case, we have to import the \ic{stdio\_stub} into our
 \ic{LibraryAccess} implementation module. And in the build configuration we
-have to add the \ic{LibraryAccess} and the \ic{stdio_stub} to the binary. We
+have to add the \ic{LibraryAccess} and the \ic{stdio\_stub} to the binary. We
 should also call the \ic{testPrintf} test case from \ic{Main}.
 
 
