@@ -40,6 +40,13 @@ make test
 PROC_RET=$(($?+$PROC_RET))
 
 echo -------------------------------------
+echo componentTypes
+cd ..
+cd componentTypes
+make test
+PROC_RET=$(($?+$PROC_RET))
+
+echo -------------------------------------
 echo multiPorts
 cd ..
 cd multiPorts

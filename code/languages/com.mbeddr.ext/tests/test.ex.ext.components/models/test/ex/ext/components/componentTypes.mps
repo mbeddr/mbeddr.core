@@ -361,6 +361,7 @@
     </node>
     <node role="binaries" roleId="51wr.5046689135694070731" type="51wr.Executable" typeId="51wr.5046689135693761554" id="9184727592626069865">
       <property name="name" nameId="tpck.1169194664001" value="ComponentTypes" />
+      <property name="isTest" nameId="51wr.3431613015799084476" value="true" />
       <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="9184727592626069866">
         <link role="module" roleId="51wr.7717755763392524108" targetNodeId="9184727592626069806" resolveInfo="ComponentTypes" />
       </node>
