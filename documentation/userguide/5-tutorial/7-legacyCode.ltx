@@ -20,6 +20,8 @@ Alternatively, if you only need a few API functions from some library, it is
 simpler to just write the necessary proxies manually. Let's use the second
 approach first. 
 
+\subsection{Manual Library Import}
+
 External functions are represented in a so-called \ic{external module}. After
 you create one and give it a name, it looks like this:
 
@@ -64,7 +66,35 @@ should also call the \ic{testPrintf} test case from \ic{Main}.
 
 
 
+\subsection{Automatic Header Import}
 
+Later we will need \ic{malloc} and \ic{free} so we can work with dynamic memory.
+We could create a \ic{stdlib\_stub} external module with these two functions
+manually, like we did it for \ic{stdio} above. However, for the sake of example,
+we use the automatic import here.
+
+First make sure the \ic{com.mbeddr.core.cstub} language is configured for your
+model. Then create a new \ic{HeaderImportSpecHFile} in your model. Once created,
+you can specify an import path. This directly should contain all header files
+that need to be imported. Note that you should \emph{not} just point it to
+\ic{use/include}, because importing all of these headers can take a long time!
+Instead copy the headers you need into a separate directly and specify that one
+in the import spec. This tutorial comes with a directly \ic{headers} that
+contains only \ic{stdlib.h}. You can now press the \ic{(Re-)Import Headers}
+button. 
+
+Two things will happen. First, a dialog will open up that reports problems with
+the import. You can ignore the errors for now. Second, a new external module
+named \ic{stdlib} is added to the model. Double-click it to open, and rename it
+to \ic{stdlib\_stub}. Once open, you will notice that there are a lof or errors
+in the file. This is for two reasons. The first one is that this header imports
+other headers that are not accessible --- they were not in the \ic{headers}
+directory. Consequently all kinds of symbols referred to from the \ic{stdlib}
+headers are not defined. The second reason is that parsing and importing header
+files is generally a delicate operation, and for reasons that are beyond this
+tutorial, it is very likely that some things cannot be parsed. We discuss
+details \todo{ref}. However, for our purposes the import is successful ---
+\ic{malloc} and \ic{free} are correctly imported.
 
 
 
