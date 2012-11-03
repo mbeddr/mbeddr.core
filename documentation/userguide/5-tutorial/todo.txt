@@ -1,0 +1,3 @@
+Req fuer die bepinktung State masc
+Dyn var fuer functions ptts
+Stat var fuer komp wiring
