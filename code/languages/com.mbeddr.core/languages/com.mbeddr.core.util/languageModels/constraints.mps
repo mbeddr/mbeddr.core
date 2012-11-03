@@ -69,6 +69,10 @@
       <property name="virtualPackage" nameId="tpck.1193676396447" value="namedStructInit" />
       <link role="concept" roleId="tp1t.1213093996982" targetNodeId="k146.3059865549680361316" resolveInfo="NamedArgStructInitExpression" />
     </node>
+    <node type="tp1t.ConceptConstraints" typeId="tp1t.1213093968558" id="1433966787983944961">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="genutil" />
+      <link role="concept" roleId="tp1t.1213093996982" targetNodeId="k146.1433966787983924365" resolveInfo="SingleArgDummyExpr" />
+    </node>
   </roots>
   <root id="5686538669182296675">
     <node role="canBeChild" roleId="tp1t.1213106463729" type="tp1t.ConstraintFunction_CanBeAChild" typeId="tp1t.1202989531578" id="5686538669182296676">
@@ -453,5 +457,6 @@
     </node>
   </root>
   <root id="3059865549680537566" />
+  <root id="1433966787983944961" />
 </model>
 

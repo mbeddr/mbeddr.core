@@ -367,18 +367,15 @@ mock implememtation for the \ic{PersistenceProvider} interface that verifies
 this behavior:
 
 \begin{lstlisting}[language=mbeddr, morekeywords={}]
-mock component PersistenceMock { 
-  report messages: true 
-  ports: 
+mock component PersistenceMock report messages: true { 
     provides PersistenceProvider pp 
-  expectations: 
     sequence { 
-      0: pp.isReady return false; 
-      1: pp.isReady return true; 
-      2: pp.store { 
+      step 0: pp.isReady return false; 
+      step 1: pp.isReady return true; 
+      step 2: pp.store { 
           0: parameter data: data != null 
         } 
-      3: pp.flush 
+      step 3: pp.flush 
     } 
     total no. of calls is 4 
 } 
@@ -387,7 +384,9 @@ mock component PersistenceMock {
 It specifies that it expects four invocations in total; the first one should be
 \ic{isReady} and the mock returns \ic{false}. We then expect \ic{isReady} to be
 called again, then we expect \ic{store} to be called with a \ic{data} argument
-not being \ic{null}, and then we expect \ic{flush} to be called. 
+not being \ic{null}, and then we expect \ic{flush} to be called. Note that
+optionally, a \ic{step} can also have a body that contains arbitrary procedural
+code. Mocks can also have fields, just like any other component.
 
 Here is a test case that uses an instance of the \ic{Client} shown above. It
 also uses an instance of the \ic{PersistenceMock}:

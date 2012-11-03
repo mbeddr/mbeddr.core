@@ -431,8 +431,113 @@ You can run the test case now. On my machine here it works successfully :-)
 
 \subsection{Mocks}
 
-This will be added soon. \todo{}
+Let us assume we wanted to test if the \ic{Interpolator} works correctly with
+the \ic{TrackpointStore} interface. Of course, since we have already described
+the interface contract semantically we would find out quickly if the
+\ic{Interpolator} would behave badly. However, we can make such a test more
+explicit. Let us revisit the test from above:
 
+\begin{lstlisting}[language=mbeddr]
+exported test case testInterpolator { 
+  initialize interpolatorInstances; 
+  Trackpoint p1 = {...}; 
+  Trackpoint p2 = {...}; 
+  
+  ip.process(&p1); 
+  assert(0) p1.speed == 10 mps; 
+
+  ip.process(&p2); 
+  assert(1) p2.speed == 15 mps; 
+}
+\end{lstlisting}
+
+In this test, we expect the following: when we call \ic{process} first, the store is
+still empty, so the interpolator stores a new trackpoint. When we call
+\ic{process} again, we expect the interpolator to call \ic{take} and then
+\ic{store}. In both cases we expect \ic{isEmpty} to be called first. We can test
+for this behavior explicitly via a mock. A mock is a component that specifies
+the behavior it expects to see on a provided port during a specific test case.
+
+The crucial point about mocks is that a mock implements each operation
+\emph{invocation} separately (the \ic{step}s below), whereas a regular component
+or even a stub just describe each operation with \emph{one} implementation. This
+makes a mock implementation much simpler --- it doesn't have to replicate the
+algorithmic implementation of the real component. Let us look at the
+implementation:
+
+\begin{lstlisting}[language=mbeddr]
+mock component StorageMock report messages: true { 
+  provides TrackpointStore1 store 
+  Trackpoint* lastTP; 
+  total no. of calls is 5 
+  sequence { 
+    step 0: store.isEmpty return true; 
+    step 1: store.store { 
+        assert 0: parameter tp: tp != null 
+      } 
+      do { lastTP = tp; } 
+    step 2: store.isEmpty return false; 
+    step 3: store.take return lastTP; 
+    step 4: store.store 
+  } 
+}
+\end{lstlisting}
+
+This mock component expresses that we expect 5 calls in total. Then we describe
+the sequence of calls we expect. The first one must be a call to \ic{isEmpty}
+and we return \ic{true}. Then we expect a \ic{store}, and for the sake of the
+example, we check that \ic{tp} is not \ic{null}. We also store the \ic{tp}
+parameter in a field \ic{lastTP} so we can return it later (you can add the
+parameter assertions and the \ic{do} body with intentions). We then expect another
+\ic{isEmpty} query, which we now answer with \ic{false}. At this point we expect
+a call to \ic{take}, and another call to \ic{store}. Notice how we return
+\ic{null} from \ic{take}: this violates the postcondition! However, pre- and
+postconditions are \emph{not} checked in mock components because their checking
+may interfere with the expectations! Also, we have slightly changed the test
+case so we don't stumble over the \ic{null}. We don't \ic{assert} anything about
+the result of the \ic{process} calls:
+
+\begin{lstlisting}[language=mbeddr]
+ipMock.process(&p1); 
+ipMock.process(&p2); 
+\end{lstlisting}
+
+Two more steps are required for this thing to work. The first one is the
+instances and the wiring. Notice how we now connect the interpolator with the
+mock:
+
+\begin{lstlisting}[language=mbeddr]
+instances interpolatorInstancesWithMock extends nothing { 
+  instance StorageMock storeMock 
+  instance Interpolator ip(divident = 2) 
+  connect ip.store to storeMock.store 
+  adapt ipMock -> ip.processor 
+}
+\end{lstlisting}
+
+The second thing is the test case itself. Obviously, we want the test case to
+fail if the mock saw something other than what it expects on its port.
+We can achieve this by using the \ic{validate mock} statement in the test. Here
+is the complete test case (notice the \ic{validate mock} in the last line):
+
+\begin{lstlisting}[language=mbeddr]
+exported test case testInterpolatorWithMock { 
+  initialize interpolatorInstancesWithMock; 
+  Trackpoint p1 = { 
+    id = 1 
+    timestamp = 1 s 
+    speed = 10 mps 
+  }; 
+  Trackpoint p2 = { 
+    id = 1 
+    timestamp = 1 s 
+    speed = 20 mps 
+  }; 
+  ipMock.process(&p1); 
+  ipMock.process(&p2); 
+  validatemock (0) interpolatorInstancesWithMock:storeMock; 
+}
+\end{lstlisting}
 
 
 

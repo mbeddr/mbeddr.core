@@ -1,4 +1,340 @@
-\section{Accessing Libraries}
+\section{State Machines}
+
+Next to components and units, state machines are one of the main C extensions
+available in mbeddr. They can be used directly in C programs, or alternatively,
+embedded into components. To keep the overall complexity of the example
+manageable, we will show state machine use directly in C.
+
+\subsection{Implementing a State Machine}
+
+To use state machines, the respective model has to use the
+\ic{com.mbeddr.statemachines} devkit. We then create a new module
+\ic{StateMachines} and add it to the build configuration. We can also create a
+test case and call it from \ic{Main} (there is an intention on the \ic{test}
+expression that automatically adds all test cases that are visible).
+
+Our example state machine once again deals with judging a flight. Here are the
+rules:
+
+\begin{itemize}
+  \item Once a flight lifts off, you get 100 points
+  \item For each trackpoint where you go more than 100 mps, you get 10 points
+  \item For each trackpoint where you go more than 200 mps, you get 20 points
+  \item You should land as short as possible; for each trackpoint where you are
+  on the ground, rolling, you get 1 point deducted.
+  \item Once you land successfully, you get another 100 points.
+\end{itemize}
+
+This may not be the best example for a state machine, but it does show all of
+the state machine's features while staying with our example so far :-)
+So let's get started with a state machine.
+
+\begin{lstlisting}[language=mbeddr]
+statemachine analyzeFlight initial = <no initial> { 
+}
+\end{lstlisting}
+
+We know that the airplane will be in various states: on the ground, flying,
+landing (and still rolling), landed, and crashed. So let's add the states. Once
+you add the first of these states, the \ic{initial} state will be set; of course it can
+be changed later:
+
+\begin{lstlisting}[language=mbeddr]
+statemachine analyzeFlight initial = beforeFlight { 
+  state beforeFlight { 
+  } 
+  state airborne { 
+  } 
+  state landing { 
+  } 
+  state landed { 
+  } 
+  state crashed { 
+  } 
+}
+\end{lstlisting}
+
+Our state machine is also a little bit untypical in that it only takes one
+event \ic{next}, which represents the next trackpoint submitted for evaluation.
+Note how an event can have arguments of arbitrary C types, \ic{Trackpoint} in
+the example. There is one more event that resets the analyzer:
+
+\begin{lstlisting}[language=mbeddr]
+statemachine analyzeFlight initial = beforeFlight { 
+  in next(Trackpoint* tp) 
+  in reset() 
+  state beforeFlight ... 
+}
+\end{lstlisting}
+
+We also need a variable \ic{points} that keeps track of the points as they
+accumulate over the flight analysis:
+
+\begin{lstlisting}[language=mbeddr]
+statemachine analyzeFlight initial = beforeFlight { 
+  in next(Trackpoint* tp)
+  in reset() 
+  var int16 points = 0 
+  state beforeFlight ... 
+}
+\end{lstlisting}
+
+We can now implement the rules outlined above using transitions and actions. Let
+us start with some simple ones. Whenever we enter \ic{beforeFlight} we reset the
+points to 0. We can achieve this with an entry action in \ic{beforeFlight}:
+
+\begin{lstlisting}[language=mbeddr]
+state beforeFlight { 
+  entry { points = 0; } 
+}
+\end{lstlisting}
+
+We also understand that all states other than \ic{beforeFlight}, the \ic{reset}
+event must transition back to the \ic{beforeFlight}. Note that as a consequence
+of the entry action in the \ic{beforeFlight} state, the points get resetted in
+all three cases:
+
+\begin{lstlisting}[language=mbeddr]
+state airborne { 
+  on reset [ ] -> beforeFlight 
+} 
+state landing { 
+  on reset [ ] -> beforeFlight 
+} 
+state landed { 
+  on reset [ ] -> beforeFlight 
+}
+\end{lstlisting}
+
+We can now implement the rules. As soon as we submit a trackpoint where the
+altitude is greater than zero we can transition to the airborne state. This
+means we have successfully taken off, and we should get 100 points in bonus.
+\ic{TAKEOFF} is a global constant representing 100 (\ic{\#define TAKEOFF =
+100;}):
+
+\begin{lstlisting}[language=mbeddr]
+state beforeFlight { 
+  entry { points = 0; }  
+  on next [tp->alt > 0 m] -> airborne 
+  exit { points += TAKEOFF; }  
+} 
+\end{lstlisting}
+
+Let us look at what can happen while we are in the air. First of all, if when we
+are airborne we receive a trackpoint with zero altitude and zero speed
+(without going through an orderly landing process), we have crashed. If we are
+at altitute zero with a speed greater than zero, we are in the process of
+landing. The other two cases deal with flying at over 200 and over 100 mps. In
+this case we stay in the \ic{airborne} state (by transitioning to itself) but we
+increase the points:
+
+
+\begin{lstlisting}[language=mbeddr]
+state airborne { 
+  on next [tp->alt == 0 m && tp->speed == 0 mps] -> crashed 
+  on next [tp->alt == 0 m && tp->speed > 0 mps] -> landing 
+  on next [tp->speed > 200 mps] -> airborne { points += VERY_HIGH_SPEED; } 
+  on next [tp->speed > 100 mps] -> airborne { points += HIGH_SPEED; }
+  on reset [ ] -> beforeFlight 
+}
+\end{lstlisting}
+
+Note that the transitions are checked in the order of their appearance in the
+state machine; if several of them are ready to fire, the first one is picked. So
+be careful to put the "tighter cases" first. The landing process is essentially
+similar:
+
+\begin{lstlisting}[language=mbeddr]
+state landing { 
+  on next [tp->speed == 0 mps] -> landed 
+  on next [ ] -> landing { points--; } 
+  on reset [ ] -> beforeFlight 
+} 
+state landed { 
+  entry { points += LANDING; } 
+  on reset [ ] -> beforeFlight 
+} 
+\end{lstlisting}
+
+
+\subsection{Interacting with Other Code --- Outbound}
+
+So how do we deal with the \ic{crashed} state? Assume this flight analyzer is
+running on some kind of server, analyzing flights that are submitted via the web
+(a bit like \ic{http://onlinecontest.org}). If we detect a crash, we want to
+notify a bunch of people of the event, so they can call the the BFU or whatever.
+In any case, assume we want to call external code. You can do this in two ways.
+The first one is probably obvious. We simply create a function which we call
+from an entry or exit action:
+
+\begin{lstlisting}[language=mbeddr]
+statemachine FlightAnalyzer initial = beforeFlight {
+  ... 
+  state crashed { 
+    entry { raiseAlarm(); }
+  } 
+}
+...
+void raiseAlarm() { 
+  // send emails or whatever
+}
+\end{lstlisting}
+
+Another alternative, which is more suitable for formal analysis (as we will see
+later) involves out events. From the entry action we \ic{send} an out event,
+which we define earlier. 
+
+\begin{lstlisting}[language=mbeddr]
+statemachine FlightAnalyzer initial = beforeFlight {
+  out crashNotification()
+  ...
+  state crashed { 
+    entry { send crashNotification(); }  
+  }
+}
+\end{lstlisting}
+
+Sending an event this way has no effect (yet), but we express from within the
+state machine that something that corresponds semantically to a crash
+notification will happen at this point (as we will see, this allows us to write
+model checkers that verify that a crash notification will go out). What remains
+to be done is to bind this event to application code. We can do this by adding a
+binding to the out event declaration:
+
+\begin{lstlisting}[language=mbeddr]
+out crashNotification() => raiseAlarm
+\end{lstlisting}
+
+The effect is the best of both worlds: in the generated code we do call the
+\ic{raiseAlarm} function, but on the state machine level we have abstracted the
+implementation from the intent. 
+
+
+\subsection{Interacting with Other Code --- Inbound}
+
+Let us write some test code that interacts with a state machine. To do a
+meaningful test, we will have to create a whole lot of trackpoints. So to do
+this we create helper functions. These in turn need \ic{malloc} and \ic{free},
+so we first create an additional external module that represents \ic{stdlib.h}:
+
+\begin{lstlisting}[language=mbeddr]
+// external module contents are exported by default 
+external module stdlib_stub imports nothing resources header: <stdlib.h>{ 
+  void* malloc(size_t size); 
+  void free(void* ptr);
+}
+\end{lstlisting}
+
+We can now create a helper function that creates a new trackpoint based on an
+altitude and speed passed in as arguments:
+
+\begin{lstlisting}[language=mbeddr]
+Trackpoint* makeTP(uint16 alt, int16 speed) { 
+  static int8 trackpointCounter = 0; 
+  trackpointCounter++; 
+  Trackpoint* tp = ((Trackpoint*) malloc(sizeof Trackpoint)); 
+  tp->id = trackpointCounter; 
+  tp->timestamp = introduceunit[trackpointCounter -> s]; 
+  tp->alt = introduceunit[alt -> m]; 
+  tp->speed = introduceunit[speed -> mps]; 
+  return tp; 
+}
+\end{lstlisting}
+
+We can now start writing (and running!) the test. We first create an instance of
+the state machine (state machines act as types and can be instantiated). We then
+initialize the state machine by using the \ic{sminit} statement:
+
+\begin{lstlisting}[language=mbeddr]
+exported test case testSM1 { 
+  FlightAnalyzer f; 
+  sminit(f); 
+}
+\end{lstlisting}
+
+Initially we should be in the \ic{beforeFlight} state. We can chech this with an
+assertion:
+
+\begin{lstlisting}[language=mbeddr]
+assert(0) smIsInState(f, beforeFlight);
+\end{lstlisting}
+
+We also want to make sure that the \ic{points} are zero initially. To be able to
+write a constraint that checks this we first have to make the \ic{points}
+variable \ic{readable} from the outside. An intention on the variable achieves
+this. We can then write:
+
+\begin{lstlisting}[language=mbeddr]
+assert(1) f.points == 0;
+\end{lstlisting}
+
+Let us now create the first trackpoint and pass it in. This one has speed, but
+no altitude, so we are in the take-off run. We assume that we remain in the
+\ic{beforeFlight} state and that we still have 0 points:
+
+\begin{lstlisting}[language=mbeddr]
+smtrigger(f, next(makeTP(0, 20))); 
+assert(2) smIsInState(f, beforeFlight) && f.points == 0;
+\end{lstlisting}
+
+Now we lift off by setting the alt to 100 meters:
+
+\begin{lstlisting}[language=mbeddr]
+smtrigger(f, next(makeTP(100, 100))); 
+assert(3) smIsInState(f, airborne) && f.points == 100;
+\end{lstlisting}
+
+So as you can see it is easy to interact from regular C code with a state
+machine. For testing, we have special support that checks if the state machine
+transitions to the desired state if a specific event is triggered. Here is some
+example code (note that you can use the \ic{test statemachine} construct only
+within test cases):
+
+\begin{lstlisting}[language=mbeddr]
+test statemachine f { 
+  next(makeTP(200, 100)) -> airborne 
+  next(makeTP(300, 150)) -> airborne 
+  next(makeTP(0, 90)) -> landing 
+  next(makeTP(0, 0)) -> landed 
+}
+\end{lstlisting}
+
+
+This concludes our discussion of state machines. If you are a C buff, you may
+have noticed that our application contains a memory leak. We allocate all kinds
+of heap data (in the \ic{makeTP} function), but we never free it again. Read the
+chapter \todo{ref} to do something about that.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
