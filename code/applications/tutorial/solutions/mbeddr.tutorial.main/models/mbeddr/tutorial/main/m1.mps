@@ -6,6 +6,8 @@
   <devkit namespace="1a986be1-0ef0-4f9f-9d8a-81c3ea7227ae(com.mbeddr.physicalunits)" />
   <devkit namespace="24565007-e59f-42fc-ac10-da3836deec1c(com.mbeddr.components)" />
   <devkit namespace="43d889ae-8e6a-4f6e-a649-d59342d8728d(com.mbeddr.statemachines)" />
+  <devkit namespace="a4dac888-0788-4852-b4c0-f386bf6f2c0b(com.mbeddr.cc.reqtrace)" />
+  <import index="iwll" modelUID="r:79ed4c17-66fc-4c5a-bff7-46990b4e0c5d(mbeddr.tutorial.main.req)" version="-1" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="k146" modelUID="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" version="2" implicit="yes" />
   <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="17" implicit="yes" />
@@ -25,6 +27,8 @@
   <import index="rijl" modelUID="r:a56eacaf-7e31-441b-a2cd-6d0aa7af811f(mbeddr.tutorial.heap.structure)" version="-1" implicit="yes" />
   <import index="punb" modelUID="r:401d5aa1-f59d-49c0-833e-cf94fb548e92(com.mbeddr.core.cstubs.structure)" version="1" implicit="yes" />
   <import index="s5bn" modelUID="r:a92dafc6-eacf-4328-984c-d7620d951c7f(com.mbeddr.core.legacy.structure)" version="1" implicit="yes" />
+  <import index="26ao" modelUID="r:7c15925b-a4a5-4da3-88aa-931a5a9ed982(com.mbeddr.cc.trace.structure)" version="3" implicit="yes" />
+  <import index="75wo" modelUID="r:eaa205a4-f15c-47d3-99e2-e648881b5997(com.mbeddr.cc.requirements.structure)" version="6" implicit="yes" />
   <roots>
     <node type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="9141254329931944222">
       <property name="name" nameId="tpck.1169194664001" value="Main" />
@@ -2635,11 +2639,23 @@
       <node role="value" roleId="x27k.3788988821851871048" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="7727566415687762964">
         <property name="value" nameId="mj1l.8860443239512128104" value="100" />
       </node>
+      <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="26ao.TraceAnnotation" typeId="26ao.439567521322928994" id="1433966787984163456">
+        <node role="tracekind" roleId="26ao.439567521322928995" type="26ao.ImplementsTraceKind" typeId="26ao.439567521322929003" id="1433966787984163457" />
+        <node role="refs" roleId="26ao.439567521322928996" type="75wo.RequirementRef" typeId="75wo.439567521322984797" id="1433966787984163458">
+          <link role="target" roleId="26ao.439567521322959431" targetNodeId="iwll.1433966787984154172" resolveInfo="PointsForTakeoff" />
+        </node>
+      </node>
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.GlobalConstantDeclaration" typeId="x27k.3788988821851860886" id="7727566415687763044">
       <property name="name" nameId="tpck.1169194664001" value="HIGH_SPEED" />
       <node role="value" roleId="x27k.3788988821851871048" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="7727566415687763045">
         <property name="value" nameId="mj1l.8860443239512128104" value="10" />
+      </node>
+      <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="26ao.TraceAnnotation" typeId="26ao.439567521322928994" id="1433966787984163459">
+        <node role="tracekind" roleId="26ao.439567521322928995" type="26ao.ImplementsTraceKind" typeId="26ao.439567521322929003" id="1433966787984163460" />
+        <node role="refs" roleId="26ao.439567521322928996" type="75wo.RequirementRef" typeId="75wo.439567521322984797" id="1433966787984163461">
+          <link role="target" roleId="26ao.439567521322959431" targetNodeId="iwll.1433966787984154176" resolveInfo="FasterThan100" />
+        </node>
       </node>
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.GlobalConstantDeclaration" typeId="x27k.3788988821851860886" id="7727566415687763046">
@@ -2647,11 +2663,23 @@
       <node role="value" roleId="x27k.3788988821851871048" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="7727566415687763047">
         <property name="value" nameId="mj1l.8860443239512128104" value="20" />
       </node>
+      <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="26ao.TraceAnnotation" typeId="26ao.439567521322928994" id="1433966787984163462">
+        <node role="tracekind" roleId="26ao.439567521322928995" type="26ao.ImplementsTraceKind" typeId="26ao.439567521322929003" id="1433966787984163463" />
+        <node role="refs" roleId="26ao.439567521322928996" type="75wo.RequirementRef" typeId="75wo.439567521322984797" id="1433966787984163464">
+          <link role="target" roleId="26ao.439567521322959431" targetNodeId="iwll.1433966787984154178" resolveInfo="FasterThan200" />
+        </node>
+      </node>
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.GlobalConstantDeclaration" typeId="x27k.3788988821851860886" id="7727566415687763120">
       <property name="name" nameId="tpck.1169194664001" value="LANDING" />
       <node role="value" roleId="x27k.3788988821851871048" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="7727566415687763121">
         <property name="value" nameId="mj1l.8860443239512128104" value="100" />
+      </node>
+      <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="26ao.TraceAnnotation" typeId="26ao.439567521322928994" id="1433966787984163465">
+        <node role="tracekind" roleId="26ao.439567521322928995" type="26ao.ImplementsTraceKind" typeId="26ao.439567521322929003" id="1433966787984163466" />
+        <node role="refs" roleId="26ao.439567521322928996" type="75wo.RequirementRef" typeId="75wo.439567521322984797" id="1433966787984165185">
+          <link role="target" roleId="26ao.439567521322959431" targetNodeId="iwll.1433966787984154184" resolveInfo="FullStop" />
+        </node>
       </node>
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="7727566415687762961">
@@ -2743,6 +2771,12 @@
                   <link role="var" roleId="clqz.1786180596061383228" targetNodeId="7727566415687762913" resolveInfo="points" />
                 </node>
               </node>
+            </node>
+          </node>
+          <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="26ao.TraceAnnotation" typeId="26ao.439567521322928994" id="1433966787984154188">
+            <node role="tracekind" roleId="26ao.439567521322928995" type="26ao.ImplementsTraceKind" typeId="26ao.439567521322929003" id="1433966787984154189" />
+            <node role="refs" roleId="26ao.439567521322928996" type="75wo.RequirementRef" typeId="75wo.439567521322984797" id="1433966787984154190">
+              <link role="target" roleId="26ao.439567521322959431" targetNodeId="iwll.1433966787984154172" resolveInfo="PointsForTakeoff" />
             </node>
           </node>
         </node>
@@ -2868,6 +2902,12 @@
               </node>
             </node>
           </node>
+          <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="26ao.TraceAnnotation" typeId="26ao.439567521322928994" id="1433966787984154194">
+            <node role="tracekind" roleId="26ao.439567521322928995" type="26ao.ImplementsTraceKind" typeId="26ao.439567521322929003" id="1433966787984154195" />
+            <node role="refs" roleId="26ao.439567521322928996" type="75wo.RequirementRef" typeId="75wo.439567521322984797" id="1433966787984154196">
+              <link role="target" roleId="26ao.439567521322959431" targetNodeId="iwll.1433966787984154178" resolveInfo="FasterThan200" />
+            </node>
+          </node>
         </node>
         <node role="contents" roleId="clqz.4753668641245750663" type="clqz.Transition" typeId="clqz.5778488248013533883" id="7727566415687763096">
           <link role="targetState" roleId="clqz.5778488248013533913" targetNodeId="7727566415687762902" resolveInfo="airborne" />
@@ -2902,6 +2942,12 @@
                   <link role="var" roleId="clqz.1786180596061383228" targetNodeId="7727566415687762913" resolveInfo="points" />
                 </node>
               </node>
+            </node>
+          </node>
+          <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="26ao.TraceAnnotation" typeId="26ao.439567521322928994" id="1433966787984154191">
+            <node role="tracekind" roleId="26ao.439567521322928995" type="26ao.ImplementsTraceKind" typeId="26ao.439567521322929003" id="1433966787984154192" />
+            <node role="refs" roleId="26ao.439567521322928996" type="75wo.RequirementRef" typeId="75wo.439567521322984797" id="1433966787984154193">
+              <link role="target" roleId="26ao.439567521322959431" targetNodeId="iwll.1433966787984154176" resolveInfo="FasterThan100" />
             </node>
           </node>
         </node>
@@ -2952,6 +2998,12 @@
               </node>
             </node>
           </node>
+          <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="26ao.TraceAnnotation" typeId="26ao.439567521322928994" id="1433966787984154197">
+            <node role="tracekind" roleId="26ao.439567521322928995" type="26ao.ImplementsTraceKind" typeId="26ao.439567521322929003" id="1433966787984154198" />
+            <node role="refs" roleId="26ao.439567521322928996" type="75wo.RequirementRef" typeId="75wo.439567521322984797" id="1433966787984154199">
+              <link role="target" roleId="26ao.439567521322959431" targetNodeId="iwll.1433966787984154182" resolveInfo="ShortLandingRoll" />
+            </node>
+          </node>
         </node>
         <node role="contents" roleId="clqz.4753668641245750663" type="clqz.Transition" typeId="clqz.5778488248013533883" id="7727566415687762956">
           <link role="targetState" roleId="clqz.5778488248013533913" targetNodeId="7727566415687762901" resolveInfo="beforeFlight" />
@@ -2973,6 +3025,12 @@
                   <link role="var" roleId="clqz.1786180596061383228" targetNodeId="7727566415687762913" resolveInfo="points" />
                 </node>
               </node>
+            </node>
+          </node>
+          <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="26ao.TraceAnnotation" typeId="26ao.439567521322928994" id="1433966787984154200">
+            <node role="tracekind" roleId="26ao.439567521322928995" type="26ao.ImplementsTraceKind" typeId="26ao.439567521322929003" id="1433966787984154201" />
+            <node role="refs" roleId="26ao.439567521322928996" type="75wo.RequirementRef" typeId="75wo.439567521322984797" id="1433966787984165184">
+              <link role="target" roleId="26ao.439567521322959431" targetNodeId="iwll.1433966787984154184" resolveInfo="FullStop" />
             </node>
           </node>
         </node>
@@ -3372,6 +3430,11 @@
     </node>
     <node role="imports" roleId="x27k.1317894735999304826" type="x27k.ModuleImport" typeId="x27k.1317894735999299713" id="7727566415687839348">
       <link role="module" roleId="x27k.1317894735999299714" targetNodeId="7727566415687366376" resolveInfo="stdio_stub" />
+    </node>
+    <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="75wo.ReqModuleRefAttribute" typeId="75wo.3402431285977874460" id="1433966787984154186">
+      <node role="refs" roleId="26ao.439567521322959424" type="26ao.TraceTargetProviderRef" typeId="26ao.439567521322959422" id="1433966787984154187">
+        <link role="provider" roleId="26ao.439567521322959423" targetNodeId="iwll.1433966787984154171" resolveInfo="FlightJudgementRules" />
+      </node>
     </node>
   </root>
   <root id="5160057464295359491">
