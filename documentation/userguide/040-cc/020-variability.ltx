@@ -1,5 +1,7 @@
 \section{Variability}
 
+\label{details_ple}
+
 Product line engineering involves the coordinated construction of several
 related, but different products. Each product is typically referred to as a
 \emph{variant}. The product variants within a product line have a lot in common,
@@ -60,7 +62,7 @@ feature model:
   must either \ic{int}, \ic{float}, or \ic{String}.
 \end{itemize} 
 
-\fig{fminmbeddr} shows the textual notation for feature models used in mbeddr.
+The figure below shows the textual notation for feature models used in mbeddr.
 Note how the constraint affects all children! We had to introduce the
 intermediate feature \ic{options} to separate the mandatory stuff from the
 optional stuff. Features can have configuration attributes (of any type!).
@@ -143,7 +145,7 @@ replacements for that.
 \end{center}
 
 A replacement replaces the node to which it is attached with an alternative node
-if the condition is \emph{true}. In the example in \fig{examplecode2} the
+if the condition is \emph{true}. In the example in the figure below the
 function call and the \ic{10} are both replaced with a \ic{42}. Note that you'll
 get an error if you try to replace a node with something that is not
 structurally compatible, or has the wrong type.

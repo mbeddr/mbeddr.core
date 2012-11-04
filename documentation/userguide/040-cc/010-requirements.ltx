@@ -1,6 +1,7 @@
 \chapter{mbeddr.cc --- Cross-Cutting Concerns} 
 
 \section{Requirements}
+\label{details_reqs}
 
 The requirements package supports the collection of requirements and
 traceability from arbitrary code back to the requirements.
@@ -35,8 +36,8 @@ In the details, a requirement can be described with additional prose, with the
 kind-specific formal descriptions as well as with additional constraints among
 requirements. The default hierarchical structure represents refinement: child
 requirements refine the parent requirements. In addition, each requirement can
-have typed links relative to other requirement, such as the \ic{conflicts with}
-shown in \fig{requirements1}.
+have typed links relative to other requirement, such as \ic{conflicts with} or
+\ic{requires also}.
 
 
 Requirements modules can import other reqirements modules using the \ic{import}
@@ -217,8 +218,8 @@ the candidate \ic{ITraceTarget}.
 
 \subsection{Evaluating the Traces in Reverse}
 
-The traces can be evaluated in reverse order. For example, \fig{traceReverse}
-(left) shows how requirements can be color-coded to reflect their state. Traced
+The traces can be evaluated in reverse order. For example, as shown in the
+figure below, requirements can be color-coded to reflect their state. Traced
 requirements are grey, implemented ones are blue, and tested ones are green and
 untraced requirements are red. The color codes must be updated explicitly (may
 take a while) by the \ic{Update Trace Stats} intention on the requirement
