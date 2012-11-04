@@ -1,4 +1,4 @@
-\chapter{mbeddr.core --- C in MPS}
+\chapter{Using mbeddr}
 
 \section{Hello World Example}
 \label{helloworld}
@@ -6,6 +6,17 @@
 For this tutorial we assume that you know how to use the C programming language.
 We also assume that you have have installed MPS, \ic{gcc}/\ic{make}, \ic{graphviz} and the
 mbeddr.core distribution. This has been disussed in the previous section. 
+
+This tutorial showcases many of the features of mbeddr in an integrated example.
+The sources ZIP \ic{com.mbeddr.tutorial.zip} is available from the download
+page at \ic{mbeddr.com}. It is also part of the complete distro package. In the
+git repository the sources can be found in the \ic{code/applications/tutorial}
+folder. Simply open the \ic{.mpr} file to play with the example.
+
+Notice that the tutorial does not discuss every aspect of every mbeddr extension
+--- please refer to the respective chapters in the user guide.
+
+
 
 \parhead{Create new project} Start up MPS and create a new project. Call the
 project \ic{HelloWorld} and store it in a directory without blanks in the path.
@@ -324,9 +335,3 @@ program source).
 \rightarrow Make Hello World$ menu. }
 
 
-
-\vspace{10mm}
-\noindent This concludes our hello world example. In the next section we will
-examine important differences between mbeddr C and regular C. Section
-\sect{tutorial} contains a more extensive tutorial that integrates several of
-the mbeddr extensions.

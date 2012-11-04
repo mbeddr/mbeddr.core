@@ -1,8 +1,6 @@
-\part{Reference Documentation}
+\part{Tutorials}
 
-\chapter{Introduction}
-  
-\section{Installation and Setup}
+\chapter{Installation and Setup}
 
 However, this section describes the installation of mbeddr in detail, including
 Java and MPS itself. 
@@ -10,13 +8,13 @@ Java and MPS itself.
 \greyboxnote{We are working on a all-in-one distribution that includes MPS and
 mbeddr. Stay tuned.}
 
-\subsection{Java} 
+\section{Java} 
 
 MPS is a Java application. So as the first step, you have to install a Java
 Development Kit version 1.6 or greater (JDK 1.6). You can get it from here \\
 \hspace*{5mm}\ic{http://www.oracle.com/technetwork/java/javase/downloads/index.html}
 
-\subsection{JetBrains Meta Programming System (MPS)} 
+\section{JetBrains Meta Programming System (MPS)} 
 
 The mbeddr system is based on JetBrains MPS, an open source language workbench
 available from \ic{http://www.jetbrains.com/mps/}. MPS is available for Windows,
@@ -46,7 +44,7 @@ On some 32bit Windows XP systems we had to reduce the \ic{-Xmx1200m} setting to
 
 
 
-\subsection{GCC and make}
+\section{GCC and make}
 
 The mbeddr toolkit relies on \ic{gcc} and \ic{make} for compilation (unless you
 use a different, target-specific build process). 
@@ -71,7 +69,7 @@ file in the MPS installation folder would have to be adapted like this:
 set PATH=C:\ide\Cygwin\bin;%PATH%
 \end{lstlisting}
 
-\subsection{Graphviz}
+\section{Graphviz}
 
 MPS supports visualization of models via graphviz, directly embedded in MPS. To
 use it, you have to install graphviz from \ic{http://graphviz.org}. We use
@@ -92,7 +90,7 @@ MPS. To do so, please move (not just copy!) the \ic{zgrviewer} folder from the
 \ic{plugins} directory).
 
 
-\subsection{mbeddr}
+\section{mbeddr}
 
 You can get the mbeddr code either via distributions or via the public github
 repository.
@@ -160,15 +158,12 @@ You are now ready to build your first project with mbeddr.
 
 
 
-\subsection{Writing Code}
+\chapter{Writing Code in MPS}
 
 You can now start writing mbeddr code. \sect{helloworld} contains a tutorial
 that shows how to write the simplest possible program, the ubiquitous Hello,
 World. We suggest to take a look at this section.
 
-
-
-\section{Important keyboard shortcuts in MPS}
 
 MPS is a projectional editor. It does not parse text and build an Abstract
 Syntax Tree (AST). Instead the AST is created directly by user editing actions,
