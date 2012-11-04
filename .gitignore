@@ -125,6 +125,9 @@ documentation/*/*.out
 documentation/*/*.toc
 documentation/*/*.synctex.gz
 
+documentation/userguide/*.pdf
+
+
 # ----------------------------------------------------
 # result files from the NuSMV unit tests
 code/languages/com.mbeddr.ext/result.txt
