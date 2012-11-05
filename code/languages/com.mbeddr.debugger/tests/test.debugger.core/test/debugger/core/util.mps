@@ -364,6 +364,38 @@
       <property name="isFinal" nameId="tpee.1181808852946" value="false" />
       <node role="returnType" roleId="tpee.1068580123133" type="tpee.VoidType" typeId="tpee.1068581517677" id="6879846215835240894" />
       <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="6879846215835240895">
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.LocalVariableDeclarationStatement" typeId="tpee.1068581242864" id="6879846215835397880">
+          <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="6879846215835397881">
+            <property name="name" nameId="tpck.1169194664001" value="mpsPath" />
+            <node role="type" roleId="tpee.5680397130376446158" type="tpee.StringType" typeId="tpee.1225271177708" id="6879846215835397882" />
+            <node role="initializer" roleId="tpee.1068431790190" type="tpee.DotExpression" typeId="tpee.1197027756228" id="6879846215835397884">
+              <node role="operand" roleId="tpee.1197027771414" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="6879846215835397885">
+                <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="vsqj.~PathMacros%dgetInstance()%cjetbrains%dmps%dproject%dPathMacros" resolveInfo="getInstance" />
+                <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="vsqj.~PathMacros" resolveInfo="PathMacros" />
+              </node>
+              <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="6879846215835397886">
+                <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="vsqj.~PathMacros%dgetValue(java%dlang%dString)%cjava%dlang%dString" resolveInfo="getValue" />
+                <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="6879846215835397888">
+                  <property name="value" nameId="tpee.1070475926801" value="mps.home" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.LocalVariableDeclarationStatement" typeId="tpee.1068581242864" id="6879846215835397894">
+          <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="6879846215835397895">
+            <property name="name" nameId="tpck.1169194664001" value="librariesPath" />
+            <node role="type" roleId="tpee.5680397130376446158" type="tpee.StringType" typeId="tpee.1225271177708" id="6879846215835397896" />
+            <node role="initializer" roleId="tpee.1068431790190" type="tpee.PlusExpression" typeId="tpee.1068581242875" id="6879846215835397900">
+              <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="6879846215835397903">
+                <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="6879846215835397881" resolveInfo="mpsPath" />
+              </node>
+              <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="6879846215835397898">
+                <property name="value" nameId="tpee.1070475926801" value="/plugins/mbeddr.spawner/lib/spawner/" />
+              </node>
+            </node>
+          </node>
+        </node>
         <node role="statement" roleId="tpee.1068581517665" type="tpee.IfStatement" typeId="tpee.1068580123159" id="6879846215835240896">
           <node role="ifTrue" roleId="tpee.1068580123161" type="tpee.StatementList" typeId="tpee.1068580123136" id="6879846215835240897">
             <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="6879846215835240898">
@@ -405,7 +437,7 @@
             </node>
             <node role="statement" roleId="tpee.1068581517665" type="tpee.LocalVariableDeclarationStatement" typeId="tpee.1068581242864" id="6879846215835240912">
               <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="6879846215835240913">
-                <property name="name" nameId="tpck.1169194664001" value="librarayPath" />
+                <property name="name" nameId="tpck.1169194664001" value="librarayFolder" />
                 <node role="type" roleId="tpee.5680397130376446158" type="tpee.StringType" typeId="tpee.1225271177708" id="6879846215835240914" />
                 <node role="initializer" roleId="tpee.1068431790190" type="tpee.NullLiteral" typeId="tpee.1070534058343" id="6879846215835240915" />
               </node>
@@ -417,21 +449,10 @@
                     <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="6879846215835240920">
                       <node role="expression" roleId="tpee.1068580123156" type="tpee.AssignmentExpression" typeId="tpee.1068498886294" id="6879846215835240921">
                         <node role="lValue" roleId="tpee.1068498886295" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="6879846215835240922">
-                          <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="6879846215835240913" resolveInfo="librarayPath" />
+                          <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="6879846215835240913" resolveInfo="librarayFolder" />
                         </node>
-                        <node role="rValue" roleId="tpee.1068498886297" type="tpee.PlusExpression" typeId="tpee.1068581242875" id="6879846215835240923">
-                          <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="6879846215835240924">
-                            <property name="value" nameId="tpee.1070475926801" value="win32.x86_64" />
-                          </node>
-                          <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.PlusExpression" typeId="tpee.1068581242875" id="6879846215835240925">
-                            <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.StaticFieldReference" typeId="tpee.1070533707846" id="6879846215835240926">
-                              <link role="classifier" roleId="tpee.1144433057691" targetNodeId="6879846215835240745" resolveInfo="CDTUtilClass" />
-                              <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="6879846215835240754" resolveInfo="SPAWNER_BASE" />
-                            </node>
-                            <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.LocalStaticMethodCall" typeId="tpee.1172058436953" id="6879846215835240927">
-                              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="6879846215835241079" resolveInfo="getHomeVarPath" />
-                            </node>
-                          </node>
+                        <node role="rValue" roleId="tpee.1068498886297" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="6879846215835240924">
+                          <property name="value" nameId="tpee.1070475926801" value="win32.x86_64" />
                         </node>
                       </node>
                     </node>
@@ -457,21 +478,10 @@
                       <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="6879846215835240936">
                         <node role="expression" roleId="tpee.1068580123156" type="tpee.AssignmentExpression" typeId="tpee.1068498886294" id="6879846215835240937">
                           <node role="lValue" roleId="tpee.1068498886295" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="6879846215835240938">
-                            <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="6879846215835240913" resolveInfo="librarayPath" />
+                            <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="6879846215835240913" resolveInfo="librarayFolder" />
                           </node>
-                          <node role="rValue" roleId="tpee.1068498886297" type="tpee.PlusExpression" typeId="tpee.1068581242875" id="6879846215835240939">
-                            <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="6879846215835240940">
-                              <property name="value" nameId="tpee.1070475926801" value="win32.x86" />
-                            </node>
-                            <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.PlusExpression" typeId="tpee.1068581242875" id="6879846215835240941">
-                              <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.StaticFieldReference" typeId="tpee.1070533707846" id="6879846215835240942">
-                                <link role="classifier" roleId="tpee.1144433057691" targetNodeId="6879846215835240745" resolveInfo="CDTUtilClass" />
-                                <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="6879846215835240754" resolveInfo="SPAWNER_BASE" />
-                              </node>
-                              <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.LocalStaticMethodCall" typeId="tpee.1172058436953" id="6879846215835240943">
-                                <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="6879846215835241079" resolveInfo="getHomeVarPath" />
-                              </node>
-                            </node>
+                          <node role="rValue" roleId="tpee.1068498886297" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="6879846215835240940">
+                            <property name="value" nameId="tpee.1070475926801" value="win32.x86" />
                           </node>
                         </node>
                       </node>
@@ -509,21 +519,10 @@
                       <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="6879846215835240956">
                         <node role="expression" roleId="tpee.1068580123156" type="tpee.AssignmentExpression" typeId="tpee.1068498886294" id="6879846215835240957">
                           <node role="lValue" roleId="tpee.1068498886295" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="6879846215835240958">
-                            <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="6879846215835240913" resolveInfo="librarayPath" />
+                            <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="6879846215835240913" resolveInfo="librarayFolder" />
                           </node>
-                          <node role="rValue" roleId="tpee.1068498886297" type="tpee.PlusExpression" typeId="tpee.1068581242875" id="6879846215835240959">
-                            <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="6879846215835240960">
-                              <property name="value" nameId="tpee.1070475926801" value="linux.x86_64" />
-                            </node>
-                            <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.PlusExpression" typeId="tpee.1068581242875" id="6879846215835240961">
-                              <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.StaticFieldReference" typeId="tpee.1070533707846" id="6879846215835240962">
-                                <link role="classifier" roleId="tpee.1144433057691" targetNodeId="6879846215835240745" resolveInfo="CDTUtilClass" />
-                                <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="6879846215835240754" resolveInfo="SPAWNER_BASE" />
-                              </node>
-                              <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.LocalStaticMethodCall" typeId="tpee.1172058436953" id="6879846215835240963">
-                                <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="6879846215835241079" resolveInfo="getHomeVarPath" />
-                              </node>
-                            </node>
+                          <node role="rValue" roleId="tpee.1068498886297" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="6879846215835240960">
+                            <property name="value" nameId="tpee.1070475926801" value="linux.x86_64" />
                           </node>
                         </node>
                       </node>
@@ -549,21 +548,10 @@
                         <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="6879846215835240972">
                           <node role="expression" roleId="tpee.1068580123156" type="tpee.AssignmentExpression" typeId="tpee.1068498886294" id="6879846215835240973">
                             <node role="lValue" roleId="tpee.1068498886295" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="6879846215835240974">
-                              <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="6879846215835240913" resolveInfo="librarayPath" />
+                              <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="6879846215835240913" resolveInfo="librarayFolder" />
                             </node>
-                            <node role="rValue" roleId="tpee.1068498886297" type="tpee.PlusExpression" typeId="tpee.1068581242875" id="6879846215835240975">
-                              <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="6879846215835240976">
-                                <property name="value" nameId="tpee.1070475926801" value="linux.x86" />
-                              </node>
-                              <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.PlusExpression" typeId="tpee.1068581242875" id="6879846215835240977">
-                                <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.StaticFieldReference" typeId="tpee.1070533707846" id="6879846215835240978">
-                                  <link role="classifier" roleId="tpee.1144433057691" targetNodeId="6879846215835240745" resolveInfo="CDTUtilClass" />
-                                  <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="6879846215835240754" resolveInfo="SPAWNER_BASE" />
-                                </node>
-                                <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.LocalStaticMethodCall" typeId="tpee.1172058436953" id="6879846215835240979">
-                                  <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="6879846215835241079" resolveInfo="getHomeVarPath" />
-                                </node>
-                              </node>
+                            <node role="rValue" roleId="tpee.1068498886297" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="6879846215835240976">
+                              <property name="value" nameId="tpee.1070475926801" value="linux.x86" />
                             </node>
                           </node>
                         </node>
@@ -602,21 +590,10 @@
                       <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="6879846215835240992">
                         <node role="expression" roleId="tpee.1068580123156" type="tpee.AssignmentExpression" typeId="tpee.1068498886294" id="6879846215835240993">
                           <node role="lValue" roleId="tpee.1068498886295" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="6879846215835240994">
-                            <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="6879846215835240913" resolveInfo="librarayPath" />
+                            <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="6879846215835240913" resolveInfo="librarayFolder" />
                           </node>
-                          <node role="rValue" roleId="tpee.1068498886297" type="tpee.PlusExpression" typeId="tpee.1068581242875" id="6879846215835240995">
-                            <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="6879846215835240996">
-                              <property name="value" nameId="tpee.1070475926801" value="macosx..x86_64" />
-                            </node>
-                            <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.PlusExpression" typeId="tpee.1068581242875" id="6879846215835240997">
-                              <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.StaticFieldReference" typeId="tpee.1070533707846" id="6879846215835240998">
-                                <link role="classifier" roleId="tpee.1144433057691" targetNodeId="6879846215835240745" resolveInfo="CDTUtilClass" />
-                                <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="6879846215835240754" resolveInfo="SPAWNER_BASE" />
-                              </node>
-                              <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.LocalStaticMethodCall" typeId="tpee.1172058436953" id="6879846215835240999">
-                                <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="6879846215835241079" resolveInfo="getHomeVarPath" />
-                              </node>
-                            </node>
+                          <node role="rValue" roleId="tpee.1068498886297" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="6879846215835240996">
+                            <property name="value" nameId="tpee.1070475926801" value="macosx..x86_64" />
                           </node>
                         </node>
                       </node>
@@ -642,21 +619,10 @@
                         <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="6879846215835241008">
                           <node role="expression" roleId="tpee.1068580123156" type="tpee.AssignmentExpression" typeId="tpee.1068498886294" id="6879846215835241009">
                             <node role="lValue" roleId="tpee.1068498886295" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="6879846215835241010">
-                              <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="6879846215835240913" resolveInfo="librarayPath" />
+                              <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="6879846215835240913" resolveInfo="librarayFolder" />
                             </node>
-                            <node role="rValue" roleId="tpee.1068498886297" type="tpee.PlusExpression" typeId="tpee.1068581242875" id="6879846215835241011">
-                              <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="6879846215835241012">
-                                <property name="value" nameId="tpee.1070475926801" value="macosx.x86" />
-                              </node>
-                              <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.PlusExpression" typeId="tpee.1068581242875" id="6879846215835241013">
-                                <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.StaticFieldReference" typeId="tpee.1070533707846" id="6879846215835241014">
-                                  <link role="classifier" roleId="tpee.1144433057691" targetNodeId="6879846215835240745" resolveInfo="CDTUtilClass" />
-                                  <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="6879846215835240754" resolveInfo="SPAWNER_BASE" />
-                                </node>
-                                <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.LocalStaticMethodCall" typeId="tpee.1172058436953" id="6879846215835241015">
-                                  <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="6879846215835241079" resolveInfo="getHomeVarPath" />
-                                </node>
-                              </node>
+                            <node role="rValue" roleId="tpee.1068498886297" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="6879846215835241012">
+                              <property name="value" nameId="tpee.1070475926801" value="macosx.x86" />
                             </node>
                           </node>
                         </node>
@@ -674,21 +640,10 @@
                         <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="6879846215835241020">
                           <node role="expression" roleId="tpee.1068580123156" type="tpee.AssignmentExpression" typeId="tpee.1068498886294" id="6879846215835241021">
                             <node role="lValue" roleId="tpee.1068498886295" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="6879846215835241022">
-                              <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="6879846215835240913" resolveInfo="librarayPath" />
+                              <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="6879846215835240913" resolveInfo="librarayFolder" />
                             </node>
-                            <node role="rValue" roleId="tpee.1068498886297" type="tpee.PlusExpression" typeId="tpee.1068581242875" id="6879846215835241023">
-                              <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="6879846215835241024">
-                                <property name="value" nameId="tpee.1070475926801" value="macosx.ppc" />
-                              </node>
-                              <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.PlusExpression" typeId="tpee.1068581242875" id="6879846215835241025">
-                                <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.StaticFieldReference" typeId="tpee.1070533707846" id="6879846215835241026">
-                                  <link role="classifier" roleId="tpee.1144433057691" targetNodeId="6879846215835240745" resolveInfo="CDTUtilClass" />
-                                  <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="6879846215835240754" resolveInfo="SPAWNER_BASE" />
-                                </node>
-                                <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.LocalStaticMethodCall" typeId="tpee.1172058436953" id="6879846215835241027">
-                                  <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="6879846215835241079" resolveInfo="getHomeVarPath" />
-                                </node>
-                              </node>
+                            <node role="rValue" roleId="tpee.1068498886297" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="6879846215835241024">
+                              <property name="value" nameId="tpee.1070475926801" value="macosx.ppc" />
                             </node>
                           </node>
                         </node>
@@ -735,8 +690,13 @@
                 <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="6879846215835241042">
                   <node role="expression" roleId="tpee.1068580123156" type="tpee.LocalStaticMethodCall" typeId="tpee.1172058436953" id="6879846215835241043">
                     <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="6879846215835240806" resolveInfo="modifyJNIPath" />
-                    <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="6879846215835241044">
-                      <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="6879846215835240913" resolveInfo="librarayPath" />
+                    <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.PlusExpression" typeId="tpee.1068581242875" id="6879846215835397913">
+                      <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="6879846215835397916">
+                        <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="6879846215835397895" resolveInfo="librariesPath" />
+                      </node>
+                      <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="6879846215835241044">
+                        <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="6879846215835240913" resolveInfo="librarayFolder" />
+                      </node>
                     </node>
                   </node>
                 </node>

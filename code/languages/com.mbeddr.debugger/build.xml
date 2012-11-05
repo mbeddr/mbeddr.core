@@ -85,7 +85,8 @@
       <sysproperty key="idea.system.path" value="${mps.platform.caches}/system"/>
       <sysproperty key="idea.config.path" value="${mps.platform.caches}/config"/>
       <sysproperty key="idea.plugins.path" value="${mps.platform.caches}/plugins"/>
- 	  
+      
+      <sysproperty key="mps.junit.pathmacro.mps.home" value="${mps.home}"/>	  
       <sysproperty key="mps.junit.pathmacro.mbeddr.assembla.ext.home" value="${mbeddr.github.core.home}"/>
       <sysproperty key="mps.junit.pathmacro.mbeddr.github.core.home" value="${mbeddr.github.core.home}"/>
       <sysproperty key="mps.junit.project" value="${mbeddr.github.core.home}/${mbeddr.debugger.project.mpr}"/>
@@ -97,7 +98,6 @@
         <fileset dir="${mps.home}/plugins">
           <include name="**/*.jar"/>
         </fileset>
-        <pathelement location="${mps.home}/plugins/mbeddr.spawner/lib/classes/"/>
       </classpath>
 
       <test name="jetbrains.mps.testbench.junit.suites.DefaultTestSuite"/>
