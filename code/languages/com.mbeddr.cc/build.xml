@@ -18,7 +18,7 @@
   <property name="mbeddr.cc.project.dir" value="code/languages/com.mbeddr.cc"/>
   <property name="mbeddr.cc.project.mpr" value="code/languages/com.mbeddr.cc/cc.dev.mpr"/>
   <property name="debugger.project.dir" value="code/languages/com.mbeddr.debugger/"/>
-  <property name="debugger.project.mpr" value="code/languages/com.mbeddr.debugger/debugger.dev.mpr"/>
+  <property name="debugger.project.mpr" value="code/languages/com.mbeddr.debugger/debugger.mpr"/>
 
   <property name="utilLanguageDir" value="${mbeddr.github.core.home}/${util.project.dir}/languages"/>  
   <property name="coreLanguageDir" value="${mbeddr.github.core.home}/${mbeddr.core.project.dir}/languages"/>  
@@ -79,7 +79,7 @@
 
       <library name="core.languages" dir="${coreLanguageDir}"/>
       <library name="util.languages" dir="${utilLanguageDir}"/>
-      <library name="util.languages" dir="${extLanguageDir}"/>
+      <library name="ext.languages" dir="${extLanguageDir}"/>
       <library name="debugger.languages" dir="${debuggerLanguageDir}"/>
       
 	  <!-- executable tests -->
