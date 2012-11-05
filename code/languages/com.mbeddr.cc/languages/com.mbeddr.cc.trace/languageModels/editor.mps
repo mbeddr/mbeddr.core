@@ -86,12 +86,17 @@
           <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.PunctuationLeftStyleClassItem" typeId="tpc2.1233758997495" id="6270183391559245150">
             <property name="flag" nameId="tpc2.1186414551515" value="true" />
           </node>
+          <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.FontSizeStyleClassItem" typeId="tpc2.1186415722038" id="1433966787984162597">
+            <property name="value" nameId="tpc2.1221209241505" value="11" />
+          </node>
         </node>
         <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Horizontal" typeId="tpc2.1106270549637" id="439567521322929306" />
         <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_RefNode" typeId="tpc2.1073389882823" id="439567521322929307">
           <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="26ao.439567521322928995" />
-          <link role="styleClass" roleId="tpc2.1186406756722" targetNodeId="439567521322965058" resolveInfo="trace" />
           <link role="actionMap" roleId="tpc2.1139959269582" targetNodeId="439567521322929318" resolveInfo="deleteTrace" />
+          <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.FontSizeStyleClassItem" typeId="tpc2.1186415722038" id="439567521322965061">
+            <property name="value" nameId="tpc2.1221209241505" value="11" />
+          </node>
         </node>
         <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_RefNodeList" typeId="tpc2.1073390211982" id="439567521322929308">
           <property name="separatorText" nameId="tpc2.1140524450557" value="," />
@@ -101,6 +106,9 @@
           <node role="cellLayout" roleId="tpc2.1140524464360" type="tpc2.CellLayout_Horizontal" typeId="tpc2.1106270549637" id="439567521322929309" />
           <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.DefaultCaretPositionStyleClassItem" typeId="tpc2.1214472762472" id="439567521322929310">
             <property name="position" nameId="tpc2.1214472762473" value="FIRST" />
+          </node>
+          <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.FontSizeStyleClassItem" typeId="tpc2.1186415722038" id="1433966787984161743">
+            <property name="value" nameId="tpc2.1221209241505" value="11" />
           </node>
           <node role="emptyCellModel" roleId="tpc2.1140524464359" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="4837632670852781412">
             <property name="text" nameId="tpc2.1073389577007" value="" />
@@ -203,9 +211,6 @@
     </node>
     <node role="styleClass" roleId="tpc2.1186402402630" type="tpc2.StyleSheetClass" typeId="tpc2.1186402373407" id="439567521322965058">
       <property name="name" nameId="tpck.1169194664001" value="trace" />
-      <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.FontSizeStyleClassItem" typeId="tpc2.1186415722038" id="439567521322965061">
-        <property name="value" nameId="tpc2.1221209241505" value="11" />
-      </node>
     </node>
   </root>
 </model>

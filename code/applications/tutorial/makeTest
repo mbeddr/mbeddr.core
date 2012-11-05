@@ -1,0 +1,36 @@
+#!/bin/sh
+#set +v
+
+PROC_RET=0
+
+cd solutions/mbeddr.tutorial.main/source_gen/mbeddr/tutorial/main/m1/
+
+echo -------------------------------------
+echo mbeddr tutorial
+make test
+PROC_RET=$(($?+$PROC_RET))
+
+
+
+if [ "$PROC_RET" -ne "0" ]; 
+ then
+    echo ""
+    echo "" 
+    echo "================================================"
+    echo "================================================" 
+    echo "               $PROC_RET test(s) failed"
+    echo "================================================"
+    echo "================================================"
+    echo ""
+    echo ""
+ else
+  echo ""
+    echo "" 
+    echo "================================================"
+    echo "              OK - All tests green"
+    echo "================================================"
+    echo ""
+    echo ""
+fi
+
+exit $PROC_RET
