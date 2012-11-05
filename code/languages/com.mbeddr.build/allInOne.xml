@@ -43,9 +43,11 @@
         
       <library name="spawner" dir="${buildSolutions.dir}/com.mbeddr.spawner.dev.build"/>  
       <library name="mpsutil" dir="${buildSolutions.dir}/com.mbeddr.mpsutil.dev.build"/>
-	  <library name="core" dir="${buildSolutions.dir}/com.mbeddr.core.dev.build"/>
-	  <library name="cc" dir="${buildSolutions.dir}/com.mbeddr.cc.dev.build"/>
-	  <library name="ext" dir="${buildSolutions.dir}/com.mbeddr.ext.build"/>
+      <library name="core" dir="${buildSolutions.dir}/com.mbeddr.core.dev.build"/>
+      <library name="cc" dir="${buildSolutions.dir}/com.mbeddr.cc.dev.build"/>
+      <library name="ext" dir="${buildSolutions.dir}/com.mbeddr.ext.build"/>
+      <library name="debugger" dir="${buildSolutions.dir}/com.mbeddr.debugger.dev.build"/>
+          
       <modules dir="${buildSolutions.dir}/com.mbeddr.allInOne/"/>
     </mps.generate>
     <copy 
