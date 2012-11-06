@@ -4049,7 +4049,7 @@
       <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="6879846215835171030" />
       <node role="type" roleId="tpee.5680397130376446158" type="tpee.StringType" typeId="tpee.1225271177708" id="6879846215835171031" />
       <node role="initializer" roleId="tpee.1068431790190" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="6879846215835171032">
-        <property name="value" nameId="tpee.1070475926801" value="a.out" />
+        <property name="value" nameId="tpee.1070475926801" value="debuggableTest" />
       </node>
     </node>
     <node role="staticField" roleId="tpee.1128555889557" type="tpee.StaticFieldDeclaration" typeId="tpee.1070462154015" id="6879846215835171033">
@@ -4057,7 +4057,7 @@
       <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="6879846215835171034" />
       <node role="type" roleId="tpee.5680397130376446158" type="tpee.StringType" typeId="tpee.1225271177708" id="6879846215835171035" />
       <node role="initializer" roleId="tpee.1068431790190" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="6879846215835171036">
-        <property name="value" nameId="tpee.1070475926801" value="a.exe" />
+        <property name="value" nameId="tpee.1070475926801" value="debuggableTest" />
       </node>
     </node>
     <node role="staticField" roleId="tpee.1128555889557" type="tpee.StaticFieldDeclaration" typeId="tpee.1070462154015" id="6879846215835171037">
@@ -4163,6 +4163,12 @@
                         <node role="initValue" roleId="tpee.1154542803372" type="tpee.ParameterReference" typeId="tpee.1068581242874" id="6879846215835171090">
                           <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="6879846215835171137" resolveInfo="cFilePath" />
                         </node>
+                        <node role="initValue" roleId="tpee.1154542803372" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="5100083648679017925">
+                          <property name="value" nameId="tpee.1070475926801" value="-o" />
+                        </node>
+                        <node role="initValue" roleId="tpee.1154542803372" type="tpee.LocalStaticFieldReference" typeId="tpee.1172008963197" id="5100083648679017933">
+                          <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="6879846215835171033" resolveInfo="WINDOWS_BINARY_NAME" />
+                        </node>
                         <node role="componentType" roleId="tpee.1154542793668" type="tpee.StringType" typeId="tpee.1225271177708" id="6879846215835171091" />
                       </node>
                     </node>
@@ -4206,6 +4212,12 @@
                           </node>
                           <node role="initValue" roleId="tpee.1154542803372" type="tpee.ParameterReference" typeId="tpee.1068581242874" id="6879846215835171108">
                             <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="6879846215835171137" resolveInfo="cFilePath" />
+                          </node>
+                          <node role="initValue" roleId="tpee.1154542803372" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="5100083648679017891">
+                            <property name="value" nameId="tpee.1070475926801" value="-o" />
+                          </node>
+                          <node role="initValue" roleId="tpee.1154542803372" type="tpee.LocalStaticFieldReference" typeId="tpee.1172008963197" id="5100083648679017903">
+                            <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="6879846215835171029" resolveInfo="UNIX_BINARY_NAME" />
                           </node>
                           <node role="componentType" roleId="tpee.1154542793668" type="tpee.StringType" typeId="tpee.1225271177708" id="6879846215835171109" />
                         </node>
