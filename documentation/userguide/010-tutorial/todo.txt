@@ -1,0 +1,2 @@
+Dyn var fuer functions ptts
+Stat var fuer komp wiring

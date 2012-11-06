@@ -145,6 +145,10 @@
       <property name="virtualPackage" nameId="tpck.1193676396447" value="namedStructInit" />
       <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="k146.4137387759417349282" resolveInfo="ConvertNamedToPositionalStructInit" />
     </node>
+    <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="1433966787983924368">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="genutil" />
+      <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="k146.1433966787983924365" resolveInfo="SingleArgDummyExpr" />
+    </node>
   </roots>
   <root id="5686538669182273030">
     <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="5686538669182273032">
@@ -1454,6 +1458,48 @@
   <root id="4137387759417369758">
     <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="4137387759417369760">
       <property name="text" nameId="tpc2.1073389577007" value="convert named struct init to positional stuct init" />
+    </node>
+  </root>
+  <root id="1433966787983924368">
+    <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="1433966787983944847">
+      <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Indent" typeId="tpc2.1237303669825" id="1433966787983944849" />
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="1433966787983944851">
+        <property name="text" nameId="tpc2.1073389577007" value="[textual 1 arg function call" />
+      </node>
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Property" typeId="tpc2.1073389658414" id="1433966787983944853">
+        <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="tpck.1169194664001" resolveInfo="name" />
+      </node>
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="1433966787983944855">
+        <property name="text" nameId="tpc2.1073389577007" value="(" />
+        <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.PunctuationLeftStyleClassItem" typeId="tpc2.1233758997495" id="1433966787984050399">
+          <property name="flag" nameId="tpc2.1186414551515" value="true" />
+        </node>
+        <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.PunctuationRightStyleClassItem" typeId="tpc2.1233759184865" id="1433966787984050401">
+          <property name="flag" nameId="tpc2.1186414551515" value="true" />
+        </node>
+      </node>
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_RefNode" typeId="tpc2.1073389882823" id="1433966787983944859">
+        <property name="noTargetText" nameId="tpc2.1139852716018" value=" " />
+        <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="k146.1433966787983924367" />
+      </node>
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="1433966787983944857">
+        <property name="text" nameId="tpc2.1073389577007" value="):" />
+        <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.PunctuationLeftStyleClassItem" typeId="tpc2.1233758997495" id="1433966787984050402">
+          <property name="flag" nameId="tpc2.1186414551515" value="true" />
+        </node>
+      </node>
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_RefNode" typeId="tpc2.1073389882823" id="1433966787983944997">
+        <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="mj1l.318113533128716676" />
+      </node>
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="1433966787983945001">
+        <property name="text" nameId="tpc2.1073389577007" value="]" />
+      </node>
+      <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.BackgroundColorStyleClassItem" typeId="tpc2.1186404574412" id="1433966787984067994">
+        <property name="color" nameId="tpc2.1186403713874" value="LIGHT_BLUE" />
+        <node role="query" roleId="tpc2.1186403803051" type="tpc2.RGBColor" typeId="tpc2.1225456267680" id="1433966787984068606">
+          <property name="value" nameId="tpc2.1225456424731" value="FADED4" />
+        </node>
+      </node>
     </node>
   </root>
 </model>

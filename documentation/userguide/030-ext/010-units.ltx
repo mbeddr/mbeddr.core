@@ -1,0 +1,177 @@
+\chapter{mbeddr.ext --- Default Extensions}
+
+\section{Physical Units}
+\label{details_units}
+
+\noindent Physical Units are new types that, in addition to specifying their
+actual data type, also specify a physical unit (see figure below). New
+literals are introduced to support specifying values for these types that
+include the physical unit. The typing rules for the existing operators (\ic{+},
+\ic{*} or \ic{>}) are overridden to perform the correct type checks for types
+with units. The type system also performs unit computations to, for example,
+handle an \ic{speed = length/time} correctly.
+
+The \emph{units} extension comes with the sevel SI units predefined and
+lets users define arbitrary derived units (such as the \ic{mps} in the example).
+It is also possible to defined convertible units that require a numeric
+conversion factor to get back to SI units. 
+
+\begin{center} 
+\includegraphics[width=110mm]{figures/ext/units.png}
+\end{center} 
+
+\noindent To use physical units use the \ic{com.mbeddr.physicalunits} devkit in
+your model.
+
+\todo{Discuss Opaque Units}
+
+
+\subsection{Basic SI Units in C programs}
+
+Once the devkit is included, types can be annotated with physical units. We have
+defined the seven SI units in mbeddr:
+
+\begin{lstlisting}[language=mbeddr, morekeywords={}]
+int8/m/ length; 
+int8/s/ time; 
+\end{lstlisting}
+
+\noindent It is also possible to define composite units. To add additional
+components press enter after the first one (the \ic{m} in the example below):
+
+\begin{lstlisting}[language=mbeddr, morekeywords={}]
+          -1
+int8/m s  / speed; 
+\end{lstlisting}
+
+\noindent To change the exponent, use intentions on the unit. Types with units
+can also be \ic{typedef}'ed to make using them more convenient:
+
+\begin{lstlisting}[language=mbeddr, morekeywords={}]
+                  -1
+typedef int8/m s  / as speed_t; 
+\end{lstlisting}
+
+\noindent If you want to assign a value to the variable, you have to use
+literals with units, otherwise you will get compile errors:
+
+\begin{lstlisting}[language=mbeddr, morekeywords={}]
+int8/m/ length = 3 m; 
+\end{lstlisting}
+
+\noindent Note that units are computed correctly:
+
+\begin{lstlisting}[language=mbeddr, morekeywords={}]
+speed_t aSpeed = 10 m / 5 s;
+speed_t anotherSpeed = 10 m + 5 s; // error; adding apples and oranges 
+\end{lstlisting}
+
+\noindent Of course, the type system is fully aware of the types and ``pulls
+them through'':
+
+\begin{lstlisting}[language=mbeddr, morekeywords={}]
+int8/m/ someLength;
+int8/m/ result = 10 m + someLength;
+\end{lstlisting}
+
+\noindent To get values ``into'' and out of the units world, you can use the
+\ic{stripunit} and \ic{introduceunit} expressions:
+
+\begin{lstlisting}[language=mbeddr, morekeywords={}]
+int8/m/ someLength = 10 m;
+int8 justSomeValue = stripunit[someLength];
+int8/m/ someLength = introduceunit[justSomeValue -> m];
+\end{lstlisting}
+
+
+\subsection{Derived Units}
+
+\noindent A derived unit is one that combines several SI units. For example, $N
+= kg \frac{m}{s^{2}}$ or $mps = \frac{m}{s}$. Such derived units can be defined with
+the units extension as well.
+
+To define derived units, create a \ic{UnitContainer} in your model. There you
+can define derived units:
+
+\begin{center} 
+\includegraphics[width=60mm]{figures/ext/unitcontainer.png}
+\end{center} 
+
+Unit computations in C programs work as expected; compatibility is checked by
+reducing both to-be-compared units to their SI base units.
+
+
+\subsection{Convertible Units}
+
+The derived units discussed in the previous section are still within the SI
+system and require no value conversions. For convertible units, this is
+different. They can be declared in the unit container as well; but they need
+conversion rules to be usable:
+
+
+\begin{center} 
+\includegraphics[width=70mm]{figures/ext/convertible.png}
+\end{center} 
+
+\noindent Typically, a convertible unit is a non-SI unit, and the conversion
+rules map it back to the SI world. Notice how in the conversion rule the \ic{val} keyword
+represents the value in the original unit. 
+
+Conversions in the C programs do not happen automatically, since such a
+conversion produced runtime overhead. Instead, an explicit conversion has to be
+used which relies on the conversion rule defined in the units container. A
+conversion can be added with an intention.
+
+\begin{lstlisting}[language=mbeddr, morekeywords={}]
+int8/F/ tempInF = 10 F; 
+int8/C/ tempInC = [tempInF -> C]; 
+\end{lstlisting}
+
+
+\subsection{Extension with new Units}
+
+The units extension can also be ``misused'' to work with other type annotations
+such as money, time or coordinate systems. To achieve this, you have to define
+new elementary unit declarations in a languge extension. Here is some example
+code with coordinate systems:
+
+\begin{lstlisting}[language=mbeddr, morekeywords={}]
+int8/#global/ aGlobalVariable = 10#global; 
+int8/K/ aTemp = aGlobalVariable; // error; #global != K 
+aGlobalVariable = 10K; // error; #global != K 
+aGlobalVariable = 230#local; // error; #global != #local 
+\end{lstlisting}
+
+\noindent In the example above, \ic{\#global} and \ic{\#local} are two different
+coordinate systems; technically, both are subtypes of \ic{ElementaryUnitDeclaration}:
+
+\begin{lstlisting}[language=mbeddr, morekeywords={}]
+concept GlobalCoords extends ElementaryUnitDeclaration
+                     implements <none>                
+  concept properties:                                 
+    alias = #global                                     
+\end{lstlisting}
+
+\noindent Even though these are not technically \emph{convertible} units, we can
+still define conversion rules:
+
+\begin{lstlisting}[language=mbeddr, morekeywords={}]
+Conversion Rules 
+  conversion #global -> #local = val + 20 
+  conversion #local -> #global = val - 20 
+\end{lstlisting}
+
+\noindent The C code can then use conversions as shown above:
+
+\begin{lstlisting}[language=mbeddr, morekeywords={}]
+int8/#local/ aLocalVariable = 20#local; 
+aGlobalVariable = [aLocalVariable -> #global]; 
+\end{lstlisting}
+
+\noindent The coordinate systems extension is especially useful if combined with a
+new type and literal, for example, for vectors:
+
+\begin{lstlisting}[language=mbeddr, morekeywords={}]
+intvec/#global/ globalVector = (10,20)#global; 
+intvec/#local/ localVector = (20,20)#global; 
+\end{lstlisting} 
