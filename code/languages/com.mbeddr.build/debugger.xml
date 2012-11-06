@@ -49,6 +49,9 @@
     <copy 
     	file="${mbeddr.github.core.home}/${mbeddr.build.project.dir}/solutions/com.mbeddr.debugger.dev.build/source_gen/com/mbeddr/debugger/dev/build/com.mbeddr.debugger.build.xml" 
     	tofile="${mbeddr.github.core.home}/build/com.mbeddr.debugger/build.xml"/>
+    <copy 
+    	file="${mbeddr.github.core.home}/${mbeddr.build.project.dir}/solutions/com.mbeddr.debugger.dev.build/source_gen/com/mbeddr/debugger/dev/build/com.mbeddr.debugger.tests.build.xml" 
+    	tofile="${mbeddr.github.core.home}/build/com.mbeddr.debugger/build-tests.xml"/>
   </target>
 
 
