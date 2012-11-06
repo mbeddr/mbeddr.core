@@ -4566,8 +4566,8 @@
               </node>
               <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.LocalStaticMethodCall" typeId="tpee.1172058436953" id="5100083648679083260">
                 <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="6879846215835171140" resolveInfo="getRelativePath" />
-                <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.LocalStaticMethodCall" typeId="tpee.1172058436953" id="5100083648679083261">
-                  <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="5100083648679083249" resolveInfo="getPlatformDependendBinaryName" />
+                <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.LocalStaticFieldReference" typeId="tpee.1172008963197" id="5100083648679149899">
+                  <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="6879846215835171029" resolveInfo="BINARY_NAME" />
                 </node>
               </node>
             </node>
