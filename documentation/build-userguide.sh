@@ -6,4 +6,8 @@ bibtex mbeddr-userguide
 pdflatex -output-directory=../build/user mbeddr-userguide.tex
 bibtex mbeddr-userguide
 pdflatex -output-directory=../build/user mbeddr-userguide.tex
+bibtex mbeddr-userguide
+pdflatex -output-directory=../build/user mbeddr-userguide.tex
+bibtex mbeddr-userguide
+pdflatex -output-directory=../build/user mbeddr-userguide.tex
 
