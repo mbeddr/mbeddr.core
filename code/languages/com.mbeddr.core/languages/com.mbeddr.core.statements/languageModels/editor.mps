@@ -710,10 +710,28 @@
         <link role="actionMap" roleId="tpc2.1139959269582" targetNodeId="8257817273847193674" resolveInfo="deleteStatement" />
       </node>
     </node>
+    <node role="inspectedCellModel" roleId="tpc2.1078153129734" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="6275956088645951338">
+      <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Indent" typeId="tpc2.1237303669825" id="6275956088645951339" />
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="6275956088645951340">
+        <property name="text" nameId="tpc2.1073389577007" value="required header" />
+      </node>
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Property" typeId="tpc2.1073389658414" id="6275956088645951342">
+        <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="c4fa.6275956088645591175" resolveInfo="requiredStdHeader" />
+      </node>
+    </node>
   </root>
   <root id="3830958861296885942">
     <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Property" typeId="tpc2.1073389658414" id="3830958861296885944">
       <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="c4fa.3830958861296879114" resolveInfo="text" />
+    </node>
+    <node role="inspectedCellModel" roleId="tpc2.1078153129734" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="6275956088645601593">
+      <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Indent" typeId="tpc2.1237303669825" id="6275956088645601594" />
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="6275956088645601592">
+        <property name="text" nameId="tpc2.1073389577007" value="required standard header" />
+      </node>
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Property" typeId="tpc2.1073389658414" id="6275956088645601596">
+        <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="c4fa.6275956088645591175" resolveInfo="requiredStdHeader" />
+      </node>
     </node>
   </root>
   <root id="8441331188640771829">

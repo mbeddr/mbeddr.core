@@ -59,12 +59,6 @@
       <property name="name" nameId="tpck.1169194664001" value="reportingPrintf" />
       <property name="virtualPackage" nameId="tpck.1193676396447" value="reporting" />
     </node>
-    <node type="tpf8.MappingScript" typeId="tpf8.1195499912406" id="2688792604368120225">
-      <property name="name" nameId="tpck.1169194664001" value="addImportsForErrorReporting" />
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="reporting" />
-      <property name="scriptKind" nameId="tpf8.1195595592106" value="pre_processing" />
-      <property name="modifiesModel" nameId="tpf8.1195595611951" value="true" />
-    </node>
     <node type="mj1l.TypeSizeConfiguration" typeId="mj1l.3335993110369795380" id="5569318043967068873" />
     <node type="tpf8.MappingConfiguration" typeId="tpf8.1095416546421" id="6591434695300502820">
       <property name="name" nameId="tpck.1169194664001" value="rangeFor" />
@@ -1127,6 +1121,7 @@
                   </node>
                 </node>
                 <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ArbitraryTextStatement" typeId="c4fa.3830958861296871078" id="2688792604368142823">
+                  <property name="requiredStdHeader" nameId="c4fa.6275956088645591175" value="stdlib.h" />
                   <node role="items" roleId="c4fa.3830958861296879115" type="c4fa.AbritraryTextItem" typeId="c4fa.3830958861296879113" id="2688792604368142827">
                     <property name="text" nameId="c4fa.3830958861296879114" value="printf(&quot;$$" />
                   </node>
@@ -1186,6 +1181,7 @@
                   </node>
                 </node>
                 <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ArbitraryTextStatement" typeId="c4fa.3830958861296871078" id="767515563077244231">
+                  <property name="requiredStdHeader" nameId="c4fa.6275956088645591175" value="stdlib.h" />
                   <node role="items" roleId="c4fa.3830958861296879115" type="c4fa.AbritraryTextItem" typeId="c4fa.3830958861296879113" id="767515563077244238">
                     <property name="text" nameId="c4fa.3830958861296879114" value="printf(&quot;" />
                   </node>
@@ -1367,6 +1363,7 @@
                   </node>
                 </node>
                 <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ArbitraryTextStatement" typeId="c4fa.3830958861296871078" id="4331139697889919204">
+                  <property name="requiredStdHeader" nameId="c4fa.6275956088645591175" value="stdlib.h" />
                   <node role="items" roleId="c4fa.3830958861296879115" type="c4fa.AbritraryTextItem" typeId="c4fa.3830958861296879113" id="4331139697889919205">
                     <property name="text" nameId="c4fa.3830958861296879114" value="printf(&quot;) @" />
                   </node>
@@ -1576,6 +1573,7 @@
                     </node>
                   </node>
                   <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ArbitraryTextStatement" typeId="c4fa.3830958861296871078" id="4331139697889919271">
+                    <property name="requiredStdHeader" nameId="c4fa.6275956088645591175" value="stdlib.h" />
                     <node role="items" roleId="c4fa.3830958861296879115" type="c4fa.AbritraryTextItem" typeId="c4fa.3830958861296879113" id="4331139697889919272">
                       <property name="text" nameId="c4fa.3830958861296879114" value="printf(&quot;$$" />
                     </node>
@@ -1635,6 +1633,7 @@
                     </node>
                   </node>
                   <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ArbitraryTextStatement" typeId="c4fa.3830958861296871078" id="8855005633244060597">
+                    <property name="requiredStdHeader" nameId="c4fa.6275956088645591175" value="stdlib.h" />
                     <node role="items" roleId="c4fa.3830958861296879115" type="c4fa.AbritraryTextItem" typeId="c4fa.3830958861296879113" id="8855005633244060598">
                       <property name="text" nameId="c4fa.3830958861296879114" value="printf(&quot;" />
                     </node>
@@ -1816,6 +1815,7 @@
                     </node>
                   </node>
                   <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ArbitraryTextStatement" typeId="c4fa.3830958861296871078" id="4331139697889919391">
+                    <property name="requiredStdHeader" nameId="c4fa.6275956088645591175" value="stdlib.h" />
                     <node role="items" roleId="c4fa.3830958861296879115" type="c4fa.AbritraryTextItem" typeId="c4fa.3830958861296879113" id="4331139697889919392">
                       <property name="text" nameId="c4fa.3830958861296879114" value="printf(&quot;) @" />
                     </node>
@@ -2063,6 +2063,7 @@
                   </node>
                 </node>
                 <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ArbitraryTextStatement" typeId="c4fa.3830958861296871078" id="4331139697889919582">
+                  <property name="requiredStdHeader" nameId="c4fa.6275956088645591175" value="stdlib.h" />
                   <node role="items" roleId="c4fa.3830958861296879115" type="c4fa.AbritraryTextItem" typeId="c4fa.3830958861296879113" id="4331139697889919583">
                     <property name="text" nameId="c4fa.3830958861296879114" value="printf(&quot;$$" />
                   </node>
@@ -2144,6 +2145,7 @@
                   </node>
                 </node>
                 <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ArbitraryTextStatement" typeId="c4fa.3830958861296871078" id="8855005633244060796">
+                  <property name="requiredStdHeader" nameId="c4fa.6275956088645591175" value="stdlib.h" />
                   <node role="items" roleId="c4fa.3830958861296879115" type="c4fa.AbritraryTextItem" typeId="c4fa.3830958861296879113" id="8855005633244060797">
                     <property name="text" nameId="c4fa.3830958861296879114" value="printf(&quot;" />
                   </node>
@@ -2365,6 +2367,7 @@
                   </node>
                 </node>
                 <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ArbitraryTextStatement" typeId="c4fa.3830958861296871078" id="4331139697889919702">
+                  <property name="requiredStdHeader" nameId="c4fa.6275956088645591175" value="stdlib.h" />
                   <node role="items" roleId="c4fa.3830958861296879115" type="c4fa.AbritraryTextItem" typeId="c4fa.3830958861296879113" id="4331139697889919703">
                     <property name="text" nameId="c4fa.3830958861296879114" value="printf(&quot;) @" />
                   </node>
@@ -2689,6 +2692,7 @@
                   </node>
                 </node>
                 <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ArbitraryTextStatement" typeId="c4fa.3830958861296871078" id="2187572410167363891">
+                  <property name="requiredStdHeader" nameId="c4fa.6275956088645591175" value="stdlib.h" />
                   <node role="items" roleId="c4fa.3830958861296879115" type="c4fa.AbritraryTextItem" typeId="c4fa.3830958861296879113" id="2187572410167363892">
                     <property name="text" nameId="c4fa.3830958861296879114" value="printf(&quot;" />
                   </node>
@@ -2870,114 +2874,8 @@
         </node>
       </node>
     </node>
-    <node role="preMappingScript" roleId="tpf8.1195502100749" type="tpf8.MappingScriptReference" typeId="tpf8.1195502151594" id="8515777736168365182">
-      <link role="mappingScript" roleId="tpf8.1195502167610" targetNodeId="2688792604368120225" resolveInfo="addImportsForErrorReporting" />
-    </node>
     <node role="preMappingScript" roleId="tpf8.1195502100749" type="tpf8.MappingScriptReference" typeId="tpf8.1195502151594" id="2510219178311653664">
       <link role="mappingScript" roleId="tpf8.1195502167610" targetNodeId="2510219178311653665" resolveInfo="addColors" />
-    </node>
-  </root>
-  <root id="2688792604368120225">
-    <node role="codeBlock" roleId="tpf8.1195501105008" type="tpf8.MappingScript_CodeBlock" typeId="tpf8.1195500722856" id="2688792604368120226">
-      <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="2688792604368120227">
-        <node role="statement" roleId="tpee.1068581517665" type="tpee.LocalVariableDeclarationStatement" typeId="tpee.1068581242864" id="8515777736167892335">
-          <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="8515777736167892336">
-            <property name="name" nameId="tpck.1169194664001" value="allModules" />
-            <node role="type" roleId="tpee.5680397130376446158" type="tp25.SNodeListType" typeId="tp25.1145383075378" id="8515777736167892337">
-              <link role="elementConcept" roleId="tp25.1145383142433" targetNodeId="x27k.6437088627575722830" resolveInfo="ImplementationModule" />
-            </node>
-            <node role="initializer" roleId="tpee.1068431790190" type="tpee.DotExpression" typeId="tpee.1197027756228" id="8515777736168274091">
-              <node role="operand" roleId="tpee.1197027771414" type="tpcw.ConceptFunctionParameter_model" typeId="tpcw.1161622665029" id="8515777736167892339" />
-              <node role="operation" roleId="tpee.1197027833540" type="tp25.Model_RootsOperation" typeId="tp25.1171315804604" id="8515777736168274098">
-                <link role="concept" roleId="tp25.1171315804605" targetNodeId="x27k.6437088627575722830" resolveInfo="ImplementationModule" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node role="statement" roleId="tpee.1068581517665" type="tpee.LocalVariableDeclarationStatement" typeId="tpee.1068581242864" id="3830958861296798434">
-          <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="3830958861296798435">
-            <property name="name" nameId="tpck.1169194664001" value="modulesWithReporting" />
-            <node role="type" roleId="tpee.5680397130376446158" type="tp2q.SequenceType" typeId="tp2q.1151689724996" id="3830958861296798436">
-              <node role="elementType" roleId="tp2q.1151689745422" type="tp25.SNodeType" typeId="tp25.1138055754698" id="3830958861296798437">
-                <link role="concept" roleId="tp25.1138405853777" targetNodeId="x27k.6437088627575722830" resolveInfo="ImplementationModule" />
-              </node>
-            </node>
-            <node role="initializer" roleId="tpee.1068431790190" type="tpee.DotExpression" typeId="tpee.1197027756228" id="3830958861296798438">
-              <node role="operand" roleId="tpee.1197027771414" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="8515777736167892344">
-                <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="8515777736167892336" resolveInfo="allModules" />
-              </node>
-              <node role="operation" roleId="tpee.1197027833540" type="tp2q.WhereOperation" typeId="tp2q.1202120902084" id="3830958861296798442">
-                <node role="closure" roleId="tp2q.1204796294226" type="tp2c.ClosureLiteral" typeId="tp2c.1199569711397" id="3830958861296798443">
-                  <node role="body" roleId="tp2c.1199569916463" type="tpee.StatementList" typeId="tpee.1068580123136" id="3830958861296798444">
-                    <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="3830958861296798445">
-                      <node role="expression" roleId="tpee.1068580123156" type="tpee.OrExpression" typeId="tpee.1080223426719" id="2187572410167381362">
-                        <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.DotExpression" typeId="tpee.1197027756228" id="3830958861296798446">
-                          <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="3830958861296798448">
-                            <node role="operand" roleId="tpee.1197027771414" type="tpee.ParameterReference" typeId="tpee.1068581242874" id="3830958861296798449">
-                              <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="3830958861296798462" resolveInfo="it" />
-                            </node>
-                            <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_GetDescendantsOperation" typeId="tp25.1171305280644" id="745648737914842906">
-                              <node role="parameter" roleId="tp25.1144104376918" type="tp25.OperationParm_Concept" typeId="tp25.1144101972840" id="745648737914842907">
-                                <node role="conceptArgument" roleId="tp25.1207343664468" type="tp25.RefConcept_Reference" typeId="tp25.1177026924588" id="2688792604368120228">
-                                  <link role="conceptDeclaration" roleId="tp25.1177026940964" targetNodeId="k146.2688792604367964821" resolveInfo="ReportStatement" />
-                                </node>
-                              </node>
-                            </node>
-                          </node>
-                          <node role="operation" roleId="tpee.1197027833540" type="tp2q.IsNotEmptyOperation" typeId="tp2q.1176501494711" id="3830958861296798461" />
-                        </node>
-                        <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.DotExpression" typeId="tpee.1197027756228" id="2187572410167381391">
-                          <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="2187572410167381365">
-                            <node role="operand" roleId="tpee.1197027771414" type="tpee.ParameterReference" typeId="tpee.1068581242874" id="2187572410167381366">
-                              <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="3830958861296798462" resolveInfo="it" />
-                            </node>
-                            <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_GetDescendantsOperation" typeId="tp25.1171305280644" id="2187572410167381367">
-                              <node role="parameter" roleId="tp25.1144104376918" type="tp25.OperationParm_Concept" typeId="tp25.1144101972840" id="2187572410167381368">
-                                <node role="conceptArgument" roleId="tp25.1207343664468" type="tp25.RefConcept_Reference" typeId="tp25.1177026924588" id="2187572410167381370">
-                                  <link role="conceptDeclaration" roleId="tp25.1177026940964" targetNodeId="k146.5724839270942479572" resolveInfo="LogExpression" />
-                                </node>
-                              </node>
-                            </node>
-                          </node>
-                          <node role="operation" roleId="tpee.1197027833540" type="tp2q.IsNotEmptyOperation" typeId="tp2q.1176501494711" id="2187572410167381396" />
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                  <node role="parameter" roleId="tp2c.1199569906740" type="tp2q.SmartClosureParameterDeclaration" typeId="tp2q.1203518072036" id="3830958861296798462">
-                    <property name="name" nameId="tpck.1169194664001" value="it" />
-                    <node role="type" roleId="tpee.5680397130376446158" type="tpee.UndefinedType" typeId="tpee.4836112446988635817" id="3830958861296798463" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node role="statement" roleId="tpee.1068581517665" type="tp2q.ForEachStatement" typeId="tp2q.1153943597977" id="3830958861296798466">
-          <node role="variable" roleId="tp2q.1153944400369" type="tp2q.ForEachVariable" typeId="tp2q.1153944193378" id="3830958861296798467">
-            <property name="name" nameId="tpck.1169194664001" value="m" />
-          </node>
-          <node role="inputSequence" roleId="tp2q.1153944424730" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="3830958861296798470">
-            <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="3830958861296798435" resolveInfo="modulesWithReporting" />
-          </node>
-          <node role="body" roleId="tpee.1154032183016" type="tpee.StatementList" typeId="tpee.1068580123136" id="3830958861296798469">
-            <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="5420368450507676554">
-              <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="5420368450507676576">
-                <node role="operand" roleId="tpee.1197027771414" type="tp2q.ForEachVariableReference" typeId="tp2q.1153944233411" id="5420368450507676555">
-                  <link role="variable" roleId="tp2q.1153944258490" targetNodeId="3830958861296798467" resolveInfo="m" />
-                </node>
-                <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_ConceptMethodCall" typeId="tp25.1179409122411" id="5420368450507708110">
-                  <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="qd6m.5420368450507676546" resolveInfo="addUniqueStdHeaderImport" />
-                  <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="5420368450507708111">
-                    <property name="value" nameId="tpee.1070475926801" value="&lt;stdio.h&gt;" />
-                  </node>
-                  <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.BooleanConstant" typeId="tpee.1068580123137" id="5420368450508004585" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
     </node>
   </root>
   <root id="5569318043967068873">
