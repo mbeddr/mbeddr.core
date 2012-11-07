@@ -2,39 +2,6 @@
 <history>
   <StructureModification>
     <dependencies>
-      <model index="dm5s" modelUID="r:cc63f437-a3eb-4092-9c7c-2b5860f74f8d(com.mbeddr.core.debug.test.behavior)" version="-1" />
-      <model index="sx0d" modelUID="r:85f69b22-581b-4fe4-b388-15b66b99706d(com.mbeddr.core.debug.blext.behavior)" version="-1" />
-    </dependencies>
-    <move id="sx0d.3310779261129403141" to="dm5s.4193597469137492806" />
-    <move id="sx0d.2435942464030742062" to="dm5s.4193597469137492802" />
-    <move id="sx0d.3310779261129403142" to="dm5s.4193597469137492807" />
-    <move id="sx0d.2435942464030742056" to="dm5s.4193597469137492788" />
-    <move id="sx0d.2435942464030742070" to="dm5s.4193597469137492799" />
-    <move id="sx0d.3383190694725833282" to="dm5s.4193597469137492809" />
-    <move id="sx0d.2435942464030742073" to="dm5s.4193597469137492800" />
-    <move id="sx0d.2435942464030742065" to="dm5s.4193597469137492796" />
-    <move id="sx0d.2435942464030742060" to="dm5s.4193597469137492792" />
-    <move id="sx0d.2435942464030742063" to="dm5s.4193597469137492794" />
-    <move id="sx0d.2435942464030742069" to="dm5s.4193597469137492798" />
-    <move id="sx0d.3310779261129403133" to="dm5s.4193597469137492803" />
-    <move id="sx0d.2435942464030742064" to="dm5s.4193597469137492795" />
-    <move id="sx0d.3383190694726021208" to="dm5s.4193597469137492813" />
-    <move id="sx0d.2435942464030742058" to="dm5s.4193597469137492790" />
-    <move id="sx0d.3383190694726021209" to="dm5s.4193597469137492814" />
-    <move id="sx0d.3383190694725833283" to="dm5s.4193597469137492810" />
-    <move id="sx0d.3383190694725833284" to="dm5s.4193597469137492811" />
-    <move id="sx0d.2435942464030742059" to="dm5s.4193597469137492791" />
-    <move id="sx0d.2435942464030742075" to="dm5s.4193597469137492801" />
-    <move id="sx0d.2435942464030742061" to="dm5s.4193597469137492793" />
-    <move id="sx0d.3310779261129403135" to="dm5s.4193597469137492805" />
-    <move id="sx0d.3310779261129403136" to="dm5s.4193597469137492808" />
-    <move id="sx0d.2435942464030742067" to="dm5s.4193597469137492797" />
-    <move id="sx0d.2435942464030742057" to="dm5s.4193597469137492789" />
-    <move id="sx0d.3310779261129403134" to="dm5s.4193597469137492804" />
-    <move id="sx0d.3383190694726021207" to="dm5s.4193597469137492812" />
-  </StructureModification>
-  <StructureModification>
-    <dependencies>
       <model index="l0wz" modelUID="r:0f65fa18-de0b-4b5d-8744-46c3a95fc665(com.mbeddr.core.debug.test.generator.template.main@generator)" version="0" />
       <model index="8aqa" modelUID="r:566c3417-ad82-456e-bd2d-4f4c15a9f767(com.mbeddr.core.debug.test.editor)" version="2" />
       <model index="nety" modelUID="r:a3a6c212-5dd4-42f5-a8df-ac09efb8e938(com.mbeddr.core.debug.test.plugin)" version="-1" />
