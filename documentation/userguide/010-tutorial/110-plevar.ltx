@@ -236,6 +236,81 @@ assert(3) res3.speed == 200 mps;
 
 \subsection{Static Variability}
 
+Let us now look at static variability. As mentioned, it relies on the same
+variability specification (using feature models) as the dynamic variability.
+However, in case of static variability the variant is created during the
+transformation process in MPS. Let's build a simple example.
+
+We first create a new implementation module with a test case in it (and we call
+the test from \ic{Main}). We also add a simple function that nullifies the
+altitude of the trackpoint (as usual...):
+
+\begin{lstlisting}[language=mbeddr, morekeywords={}]
+module StaticVariability imports DataStructures { 
+   
+  Trackpoint* process_trackpoint(Trackpoint* t) { 
+    t->alt = 0 m; 
+    return t; 
+  }    
+   
+  exported test case testStaticVariability { 
+    Trackpoint tp = { 
+      id = 1 
+      alt = 2000 m 
+      speed = 150 mps 
+    };
+    assert(1) process_trackpoint(&tp)->alt == 0 m; 
+  } 
+}
+\end{lstlisting}
+
+Let's now assume that we only want to do the nullification in the function if
+the \ic{nullify} feature is selected in a particular configuration. To achive
+this we have to do two things. First we have to attach a dependency to a feature
+model to the implementation module. An intention achieves this. Second we have
+to annotate the \ic{t->alt = 0 m;} statement with a presence condition. A
+presence condition is essentially a Boolean expression over feature in a feature
+model. If that expression is \ic{false} for a given configuration, the annotated
+element will be removed. So let's add a presence condition to the \ic{t->alt = 0
+m;} with an intention, and make it depend on the \ic{nullify} feature. We do the
+same on the assertion in the test case, and we add another assertion with the
+\ic{!nullify} presence condition. Here is the resulting code:
+
+
+\begin{center} 
+  \includegraphics[width=0.65\columnwidth]{figures/tutorial/staticvar.png}
+\end{center}
+
+The color of the annotated code depends on the presence condition expression.
+All parts with the same expression have the same color. You can now play with
+the settings. By selecting \ic{rendering mode: variant} and selecting a
+particular configuration model you can see and edit the program "cut down" to
+the respective configuration.
+
+If you rebuild you model, nothing happens. While thre is product line
+variability expressed in the model, we don't yet consider it during generation.
+To do this we have to add a new configuration item in the build configuration.
+
+\begin{lstlisting}[morekeywords={variability, mappings, fm}]
+variability mappings { 
+  fm FlightProcessor -> cfgNullifyOnly 
+}
+\end{lstlisting}
+
+This specifies that during build, the \ic{cfgNullifyOnly} configuration should
+be used. By changing this mapping, you can build the system for several
+configurations (\sect{details_ple} discusses how you can build several
+variants at the same time).
+
+Note that the effect in terms of succeeding test cases is the same in both
+examples :-)  It is hence hard to see if it works. We can inspect the generated
+source code to see what's going on. You can either open the file from the file
+system, or you can use the \ic{Preview Generated Files} item in the context menu
+of the model.
+
+
+
+
 
 \fordetails{Product Line Variability}{\sect{details_ple}}
    
