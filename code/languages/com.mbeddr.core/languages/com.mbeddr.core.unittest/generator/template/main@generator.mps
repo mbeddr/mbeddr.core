@@ -266,9 +266,11 @@
             <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="3830958861296781571">
               <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.IfStatement" typeId="c4fa.6275792049641600983" id="3830958861296781572">
                 <node role="thenPart" roleId="c4fa.6275792049641600985" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="3830958861296781574">
-                  <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ArbitraryTextStatement" typeId="c4fa.3830958861296871078" id="5232867887045275790">
-                    <node role="items" roleId="c4fa.3830958861296879115" type="c4fa.AbritraryTextItem" typeId="c4fa.3830958861296879113" id="5232867887045275791">
-                      <property name="text" nameId="c4fa.3830958861296879114" value="(*__failures)++;" />
+                  <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="6275956088646348344">
+                    <node role="expr" roleId="c4fa.7254843406768833939" type="c4fa.ArbitraryTextStatement" typeId="c4fa.3830958861296871078" id="5232867887045275790">
+                      <node role="items" roleId="c4fa.3830958861296879115" type="c4fa.AbritraryTextItem" typeId="c4fa.3830958861296879113" id="5232867887045275791">
+                        <property name="text" nameId="c4fa.3830958861296879114" value="(*__failures)++;" />
+                      </node>
                     </node>
                   </node>
                   <node role="statements" roleId="c4fa.4185783222026475862" type="k146.ReportStatement" typeId="k146.2688792604367964821" id="767515563077275960">
@@ -462,9 +464,11 @@
             <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="1937609356306125853">
               <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="1937609356306125933">
                 <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="1937609356306125855">
-                  <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ArbitraryTextStatement" typeId="c4fa.3830958861296871078" id="1937609356306125856">
-                    <node role="items" roleId="c4fa.3830958861296879115" type="c4fa.AbritraryTextItem" typeId="c4fa.3830958861296879113" id="1937609356306125857">
-                      <property name="text" nameId="c4fa.3830958861296879114" value="(*__failures)++;" />
+                  <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="6275956088646348345">
+                    <node role="expr" roleId="c4fa.7254843406768833939" type="c4fa.ArbitraryTextStatement" typeId="c4fa.3830958861296871078" id="1937609356306125856">
+                      <node role="items" roleId="c4fa.3830958861296879115" type="c4fa.AbritraryTextItem" typeId="c4fa.3830958861296879113" id="1937609356306125857">
+                        <property name="text" nameId="c4fa.3830958861296879114" value="(*__failures)++;" />
+                      </node>
                     </node>
                   </node>
                   <node role="statements" roleId="c4fa.4185783222026475862" type="k146.ReportStatement" typeId="k146.2688792604367964821" id="767515563077286834">
