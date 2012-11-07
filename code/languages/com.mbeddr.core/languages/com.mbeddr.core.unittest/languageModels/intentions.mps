@@ -37,6 +37,7 @@
     </node>
     <node type="tp3j.IntentionDeclaration" typeId="tp3j.1192794744107" id="7727566415687713869">
       <property name="name" nameId="tpck.1169194664001" value="addAllVisibleTests" />
+      <property name="isAvailableInChildNodes" nameId="tp3j.2522969319638091386" value="true" />
       <link role="forConcept" roleId="tp3j.2522969319638198290" targetNodeId="yz9a.186853311768094629" resolveInfo="ExecuteTestExpression" />
     </node>
   </roots>
