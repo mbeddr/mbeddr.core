@@ -17,7 +17,7 @@
   <import index="yi43" modelUID="r:1e8a195e-9746-45e6-a347-a6bdffae3936(com.mbeddr.core.util.behavior)" version="-1" />
   <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="17" />
   <import index="qd6m" modelUID="r:c4c3f7d3-0acf-4671-a134-5fab66c4e637(com.mbeddr.core.modules.behavior)" version="0" />
-  <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="4" />
+  <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="5" />
   <import index="cu2c" modelUID="f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.smodel(MPS.Core/jetbrains.mps.smodel@java_stub)" version="-1" />
   <import index="ahli" modelUID="r:44ccebce-f3a6-4238-afbf-c4a18f6348c1(com.mbeddr.core.buildconfig.behavior)" version="-1" />
   <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="5" />
@@ -1121,7 +1121,7 @@
                   </node>
                 </node>
                 <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="6275956088646348362">
-                  <node role="expr" roleId="c4fa.7254843406768833939" type="c4fa.ArbitraryTextStatement" typeId="c4fa.3830958861296871078" id="2688792604368142823">
+                  <node role="expr" roleId="c4fa.7254843406768833939" type="c4fa.ArbitraryTextExpression" typeId="c4fa.3830958861296871078" id="2688792604368142823">
                     <property name="requiredStdHeader" nameId="c4fa.6275956088645591175" value="stdlib.h" />
                     <node role="items" roleId="c4fa.3830958861296879115" type="c4fa.AbritraryTextItem" typeId="c4fa.3830958861296879113" id="2688792604368142827">
                       <property name="text" nameId="c4fa.3830958861296879114" value="printf(&quot;$$" />
@@ -1222,7 +1222,7 @@
                       </node>
                     </node>
                   </node>
-                  <node role="expr" roleId="c4fa.7254843406768833939" type="c4fa.ArbitraryTextStatement" typeId="c4fa.3830958861296871078" id="767515563077244231">
+                  <node role="expr" roleId="c4fa.7254843406768833939" type="c4fa.ArbitraryTextExpression" typeId="c4fa.3830958861296871078" id="767515563077244231">
                     <property name="requiredStdHeader" nameId="c4fa.6275956088645591175" value="stdlib.h" />
                     <node role="items" roleId="c4fa.3830958861296879115" type="c4fa.AbritraryTextItem" typeId="c4fa.3830958861296879113" id="767515563077244238">
                       <property name="text" nameId="c4fa.3830958861296879114" value="printf(&quot;" />
@@ -1367,7 +1367,7 @@
                   </node>
                 </node>
                 <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="6275956088646348372">
-                  <node role="expr" roleId="c4fa.7254843406768833939" type="c4fa.ArbitraryTextStatement" typeId="c4fa.3830958861296871078" id="4331139697889919204">
+                  <node role="expr" roleId="c4fa.7254843406768833939" type="c4fa.ArbitraryTextExpression" typeId="c4fa.3830958861296871078" id="4331139697889919204">
                     <property name="requiredStdHeader" nameId="c4fa.6275956088645591175" value="stdlib.h" />
                     <node role="items" roleId="c4fa.3830958861296879115" type="c4fa.AbritraryTextItem" typeId="c4fa.3830958861296879113" id="4331139697889919205">
                       <property name="text" nameId="c4fa.3830958861296879114" value="printf(&quot;) @" />
@@ -1579,7 +1579,7 @@
                     </node>
                   </node>
                   <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="6275956088646348377">
-                    <node role="expr" roleId="c4fa.7254843406768833939" type="c4fa.ArbitraryTextStatement" typeId="c4fa.3830958861296871078" id="4331139697889919271">
+                    <node role="expr" roleId="c4fa.7254843406768833939" type="c4fa.ArbitraryTextExpression" typeId="c4fa.3830958861296871078" id="4331139697889919271">
                       <property name="requiredStdHeader" nameId="c4fa.6275956088645591175" value="stdlib.h" />
                       <node role="items" roleId="c4fa.3830958861296879115" type="c4fa.AbritraryTextItem" typeId="c4fa.3830958861296879113" id="4331139697889919272">
                         <property name="text" nameId="c4fa.3830958861296879114" value="printf(&quot;$$" />
@@ -1680,7 +1680,7 @@
                         </node>
                       </node>
                     </node>
-                    <node role="expr" roleId="c4fa.7254843406768833939" type="c4fa.ArbitraryTextStatement" typeId="c4fa.3830958861296871078" id="8855005633244060597">
+                    <node role="expr" roleId="c4fa.7254843406768833939" type="c4fa.ArbitraryTextExpression" typeId="c4fa.3830958861296871078" id="8855005633244060597">
                       <property name="requiredStdHeader" nameId="c4fa.6275956088645591175" value="stdlib.h" />
                       <node role="items" roleId="c4fa.3830958861296879115" type="c4fa.AbritraryTextItem" typeId="c4fa.3830958861296879113" id="8855005633244060598">
                         <property name="text" nameId="c4fa.3830958861296879114" value="printf(&quot;" />
@@ -1825,7 +1825,7 @@
                     </node>
                   </node>
                   <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="6275956088646348388">
-                    <node role="expr" roleId="c4fa.7254843406768833939" type="c4fa.ArbitraryTextStatement" typeId="c4fa.3830958861296871078" id="4331139697889919391">
+                    <node role="expr" roleId="c4fa.7254843406768833939" type="c4fa.ArbitraryTextExpression" typeId="c4fa.3830958861296871078" id="4331139697889919391">
                       <property name="requiredStdHeader" nameId="c4fa.6275956088645591175" value="stdlib.h" />
                       <node role="items" roleId="c4fa.3830958861296879115" type="c4fa.AbritraryTextItem" typeId="c4fa.3830958861296879113" id="4331139697889919392">
                         <property name="text" nameId="c4fa.3830958861296879114" value="printf(&quot;) @" />
@@ -2075,7 +2075,7 @@
                   </node>
                 </node>
                 <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="6275956088646348393">
-                  <node role="expr" roleId="c4fa.7254843406768833939" type="c4fa.ArbitraryTextStatement" typeId="c4fa.3830958861296871078" id="4331139697889919582">
+                  <node role="expr" roleId="c4fa.7254843406768833939" type="c4fa.ArbitraryTextExpression" typeId="c4fa.3830958861296871078" id="4331139697889919582">
                     <property name="requiredStdHeader" nameId="c4fa.6275956088645591175" value="stdlib.h" />
                     <node role="items" roleId="c4fa.3830958861296879115" type="c4fa.AbritraryTextItem" typeId="c4fa.3830958861296879113" id="4331139697889919583">
                       <property name="text" nameId="c4fa.3830958861296879114" value="printf(&quot;$$" />
@@ -2238,7 +2238,7 @@
                       </node>
                     </node>
                   </node>
-                  <node role="expr" roleId="c4fa.7254843406768833939" type="c4fa.ArbitraryTextStatement" typeId="c4fa.3830958861296871078" id="8855005633244060796">
+                  <node role="expr" roleId="c4fa.7254843406768833939" type="c4fa.ArbitraryTextExpression" typeId="c4fa.3830958861296871078" id="8855005633244060796">
                     <property name="requiredStdHeader" nameId="c4fa.6275956088645591175" value="stdlib.h" />
                     <node role="items" roleId="c4fa.3830958861296879115" type="c4fa.AbritraryTextItem" typeId="c4fa.3830958861296879113" id="8855005633244060797">
                       <property name="text" nameId="c4fa.3830958861296879114" value="printf(&quot;" />
@@ -2383,7 +2383,7 @@
                   </node>
                 </node>
                 <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="6275956088646348403">
-                  <node role="expr" roleId="c4fa.7254843406768833939" type="c4fa.ArbitraryTextStatement" typeId="c4fa.3830958861296871078" id="4331139697889919702">
+                  <node role="expr" roleId="c4fa.7254843406768833939" type="c4fa.ArbitraryTextExpression" typeId="c4fa.3830958861296871078" id="4331139697889919702">
                     <property name="requiredStdHeader" nameId="c4fa.6275956088645591175" value="stdlib.h" />
                     <node role="items" roleId="c4fa.3830958861296879115" type="c4fa.AbritraryTextItem" typeId="c4fa.3830958861296879113" id="4331139697889919703">
                       <property name="text" nameId="c4fa.3830958861296879114" value="printf(&quot;) @" />
@@ -2728,7 +2728,7 @@
                       </node>
                     </node>
                   </node>
-                  <node role="expr" roleId="c4fa.7254843406768833939" type="c4fa.ArbitraryTextStatement" typeId="c4fa.3830958861296871078" id="2187572410167363891">
+                  <node role="expr" roleId="c4fa.7254843406768833939" type="c4fa.ArbitraryTextExpression" typeId="c4fa.3830958861296871078" id="2187572410167363891">
                     <property name="requiredStdHeader" nameId="c4fa.6275956088645591175" value="stdlib.h" />
                     <node role="items" roleId="c4fa.3830958861296879115" type="c4fa.AbritraryTextItem" typeId="c4fa.3830958861296879113" id="2187572410167363892">
                       <property name="text" nameId="c4fa.3830958861296879114" value="printf(&quot;" />
