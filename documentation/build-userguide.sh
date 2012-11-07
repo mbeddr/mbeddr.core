@@ -3,11 +3,9 @@ mkdir build
 mkdir build/user
 cd userguide
 bibtex mbeddr-userguide
-pdflatex -output-directory=../build/user mbeddr-userguide.tex
+pdflatex mbeddr-userguide.tex
 bibtex mbeddr-userguide
-pdflatex -output-directory=../build/user mbeddr-userguide.tex
+pdflatex mbeddr-userguide.tex
 bibtex mbeddr-userguide
-pdflatex -output-directory=../build/user mbeddr-userguide.tex
-bibtex mbeddr-userguide
-pdflatex -output-directory=../build/user mbeddr-userguide.tex
-
+pdflatex mbeddr-userguide.tex
+cp mbeddr-userguide.pdf ../build/user
