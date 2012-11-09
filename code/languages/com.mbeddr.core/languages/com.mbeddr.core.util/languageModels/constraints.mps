@@ -19,7 +19,7 @@
   <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="3" implicit="yes" />
   <import index="clbe" modelUID="r:61d840b4-12c1-49ea-b142-b2a1550a9b15(com.mbeddr.core.udt.structure)" version="7" implicit="yes" />
   <import index="tpd4" modelUID="r:00000000-0000-4000-0000-011c895902b4(jetbrains.mps.lang.typesystem.structure)" version="3" implicit="yes" />
-  <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="4" implicit="yes" />
+  <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="5" implicit="yes" />
   <roots>
     <node type="tp1t.ConceptConstraints" typeId="tp1t.1213093968558" id="5686538669182296675">
       <property name="virtualPackage" nameId="tpck.1193676396447" value="blockexpr" />
@@ -68,6 +68,10 @@
     <node type="tp1t.ConceptConstraints" typeId="tp1t.1213093968558" id="3059865549680537566">
       <property name="virtualPackage" nameId="tpck.1193676396447" value="namedStructInit" />
       <link role="concept" roleId="tp1t.1213093996982" targetNodeId="k146.3059865549680361316" resolveInfo="NamedArgStructInitExpression" />
+    </node>
+    <node type="tp1t.ConceptConstraints" typeId="tp1t.1213093968558" id="1433966787983944961">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="genutil" />
+      <link role="concept" roleId="tp1t.1213093996982" targetNodeId="k146.1433966787983924365" resolveInfo="SingleArgDummyExpr" />
     </node>
   </roots>
   <root id="5686538669182296675">
@@ -453,5 +457,6 @@
     </node>
   </root>
   <root id="3059865549680537566" />
+  <root id="1433966787983944961" />
 </model>
 

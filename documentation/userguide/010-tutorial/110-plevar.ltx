@@ -1,0 +1,337 @@
+\section{Product Line Variability}
+
+mbeddr supports two kinds of variability: runtime and static. \emph{Runtime
+variability} makes the decision about which variant to run as the program
+executes. The binary contains the code for all options. Since the code must be
+aware of the variability, the underlying language must know about variability.
+\emph{Static variability} makes the decision before program execution. In
+particular, the MPS generators remove all the program code that is not part of a
+particular variant. The binary is tailored, and the mechanism is generic --- the
+target language does not have to be aware of the variability. We discuss both
+approaches in this chapter.
+
+Both approaches have in common that in mbeddr, you first describe the available
+variability on an abstract level that is unrelated to the implementation
+artifacts that realize the variability. We use feature models for this aspect. A
+feature model describes the available variability (aka the configuration space)
+in a software system. Let us start by creating a feature model that describes
+variability for processing flights. To do so, add the
+\ic{com.mbeddr.variability} devkit to your model and add a
+\ic{VariabilitySupport} node into your program. After giving it a name, it looks
+as follows:
+ 
+\begin{lstlisting}[language=mbeddr, morekeywords={Variability, Support}]
+Variability Support FlightVariability
+\end{lstlisting}
+
+In this node you can now create a feature model. It has a name, and we specify
+the root feature \ic{processing}.
+
+\begin{lstlisting}[language=mbeddr, morekeywords={Variability, Support,
+feature, model}] 
+feature model FlightProcessor { 
+  processing
+\end{lstlisting}
+
+We now add two sub-features \ic{nullify} and \ic{normalizeSpeed}. You can add
+children via an intention. By default, children are or-features (marked by the
+\ic{?} in the parent), which means that each of the children can be in the
+system or not.
+
+\begin{lstlisting}[language=mbeddr, morekeywords={Variability, Support,
+feature, model}] 
+feature model FlightProcessor 
+  processing ? { 
+    nullify                                                    
+    normalizeSpeed  
+  }
+\end{lstlisting}
+
+Let us add children to \ic{normalizeSpeed}: \ic{maxCustom} and \ic{max100}. They
+are xor, so only one of them can be in a configuration. \ic{maxCustom} has an
+attribute \ic{maxSpeed}:
+
+\begin{lstlisting}[language=mbeddr, morekeywords={Variability, Support,
+feature, model}] 
+feature model FlightProcessor 
+  processing ? { 
+    nullify                                                    
+    normalizeSpeed xor { 
+      maxCustom [int16/mps/ maxSpeed]
+      max100
+    }
+  }
+\end{lstlisting}
+
+So here is what this all means: this feature model describes the variability of
+a flight processor (as usual...). If \ic{nullify} is selected, the processor
+sets the altitude to 0 --- we had seen this before. \ic{normalizeSpeed} changes
+the speed. If the speed is over 100 (\ic{max100}), it is set to 100. If
+\ic{maxCustom} is selected and the speed is over \ic{maxSpeed}, it is set to
+\ic{maxSpeed}\footnote{I do realize that the example is getting more and more
+hairbrained, but what the heck ... it does illustrate mbeddr :-)}. Notice how
+this is purely conceptual variability, and we haven't connected it to
+implementation code.
+
+We can now go ahead and define configurations. These are instances of feature
+models, i.e. some of the features are selected, other aren't. A configuration
+has to be valid wrt. to its feature model: for example, a configuration cannot
+have \ic{maxCustom} and \ic{max100} selected at the same time, since those
+two features are mutually exclusive (\ic{xor}). Here is the simplest possible
+configuration. It has no feature except the mandatory root feature:
+
+\begin{lstlisting}[language=mbeddr, morekeywords={Variability, Support,
+feature, configuration, model, configures}] 
+configuration model cfgDoNothing configures FlightProcessor 
+  processing { 
+  }
+\end{lstlisting}
+
+Let us create another one by copying this one and then selecting features
+(press \ic{Ctrl-Space} between \ic{processing}'s curlies):
+
+\begin{lstlisting}[language=mbeddr, morekeywords={Variability, Support,
+feature, configuration, model, configures}] 
+configuration model cfgNullifyOnly configures FlightProcessor 
+  processing { 
+    nullify 
+  }
+\end{lstlisting}
+
+A third configuration includes the \ic{maxCustom} feature. You can add the the
+value of \ic{maxSpeed} with an intention. Note that if you tried to add
+\ic{max100} as well you'd get an error --- the two are mutually exclusive.
+
+\begin{lstlisting}[language=mbeddr, morekeywords={Variability, Support,
+feature, configuration, model, configures}] 
+configuration model cfgNullifyMaxAt200 configures FlightProcessor 
+  processing { 
+    nullify 
+    normalizeSpeed { 
+      maxCustom [maxSpeed = 200 mps] 
+    } 
+  } 
+\end{lstlisting}
+
+
+
+\subsection{Runtime Variability}
+
+As mentioned above, runtime variability means that we will evaluate a
+configuration \emph{at runtime} and based on the evaluation, make decisions
+about program execution. To try this out, let us create a new module with the
+beginnings of a test case in it. Make sure you call the test case from
+\ic{Main}. 
+ 
+\begin{lstlisting}[language=mbeddr, morekeywords={}] 
+module RuntimeVariability imports FunctionPointers { 
+   
+  exported test case testRuntimeVar { 
+    Trackpoint tp = { 
+      id = 1 
+      timestamp = 0 s 
+      x = 0 m 
+      y = 0 m 
+      alt = 50 m 
+      speed = 220 mps 
+    };
+  } 
+}
+\end{lstlisting}
+
+Now let's add variability support. It involves several steps. First we have to
+create a representation of the feature model in the program (we generate a
+\ic{struct} that holds configurations). We do that by adding the following
+construct:
+
+\begin{lstlisting}[language=mbeddr, morekeywords={feature, model, @, runtime}] 
+module RuntimeVariability imports FunctionPointers { 
+   
+  feature model @ runtime for FlightProcessor; 
+   
+  exported test case testRuntimeVar {...} 
+\end{lstlisting}
+
+We can now create a function that processes trackpoints depending on the
+configuration. There are two noteworthy things. First, we pass values of type 
+\ic{fmconfig<FlightProcessor>} to the function, representing configurations for
+the \ic{FlightProcessor} feature model (\ic{cfgDoNothing}, \ic{cfgNullifyOnly},
+and \ic{cfgNullifyMaxAt200} are valid values for this type). Second we use the
+\ic{variant} statement to make parts of the procedural code depent on the set of
+selected features:
+
+\begin{lstlisting}[language=mbeddr, morekeywords={fmconfig, variant},
+deletekeywords={result}] 
+Trackpoint processTrackpoint(fmconfig<FlightProcessor> cfg, Trackpoint tp) { 
+  Trackpoint result; 
+  variant<cfg> { 
+    case (nullify && maxCustom) { 
+      result = process_nullifyAlt(tp); 
+      if (tp.speed > maxCustom.maxSpeed) { 
+        result.speed = maxCustom.maxSpeed; 
+      } 
+    } 
+    case (nullify && max100) { 
+      result = process_nullifyAlt(tp); 
+      if (tp.speed > 100 mps) { 
+        result.speed = 100 mps; 
+      }  
+    } 
+    case (nullify) { result = process_nullifyAlt(tp); } 
+    default { result = process_doNothing(tp); } 
+  } 
+  return result; 
+} 
+\end{lstlisting}
+
+Note that the \ic{case}s are evaluated top-to-bottom, so more specialized cases
+must be higher in the list. Also, only one \ic{case} will ever be executed ---
+no \ic{break} needed! Notice how the \ic{variant} construct is a new statement,
+so this does depend on C. Currently we support only this statement, but
+expressions or feature-dependent states (in state machines) would also be
+feasible, of course.
+
+We can now go back to our test case and write assertions, calling the
+\ic{processTrackpoint} function with several configuration models. Below is the
+first one. We first create a variable of type \ic{fmconfig<FlightProcessor>}
+that holds a configuration (same type as in the argument to
+\ic{processTrackpoint}). We then use the \ic{store config} construct to store a
+configuration (\ic{cfgDoNothing}) into the \ic{cfg} variable\footnote{This
+construct is a bit awkward, it would be nicer if this were an expression.
+However, because of limitations in how C deals with structs this is not possible
+without a performance hit. We didn't want to take that performance hit and have
+opted to go with the uglier syntax.}. Then we call \ic{processTrackpoint} with
+the configuration and the trackpoint and assert the result:
+
+\begin{lstlisting}[language=mbeddr, morekeywords={fmconfig, variant, store,
+config, into}, deletekeywords={result}] 
+exported test case testRuntimeVar { 
+  Trackpoint tp = {...}; 
+   
+  fmconfig<FlightProcessor> cfg; 
+   
+  store config<FlightProcessor, cfgDoNothing> into cfg; 
+  Trackpoint res1 = processTrackpoint(cfg, tp); 
+  assert(0) res1.alt == 50 m; 
+  assert(1) res1.speed == 220 mps; 
+}
+\end{lstlisting}
+
+We can store other configurations into \ic{cfg} and reuse the variable:
+
+\begin{lstlisting}[language=mbeddr, morekeywords={fmconfig, variant, store,
+config, into}, deletekeywords={result}] 
+store config<FlightProcessor, cfgNullifyOnly> into cfg; 
+Trackpoint res2 = processTrackpoint(cfg, tp); 
+assert(2) res2.alt == 0 m; 
+assert(3) res2.speed == 220 mps; 
+ 
+store config<FlightProcessor, cfgNullifyMaxAt200> into cfg; 
+Trackpoint res3 = processTrackpoint(cfg, tp); 
+assert(2) res3.alt == 0 m; 
+assert(3) res3.speed == 200 mps;
+\end{lstlisting}
+
+\fordetails{Product Line Variability}{\sect{details_ple}}
+
+\subsection{Static Variability}
+
+Let us now look at static variability. As mentioned, it relies on the same
+variability specification (using feature models) as the dynamic variability.
+However, in case of static variability the variant is created during the
+transformation process in MPS. Let's build a simple example.
+
+We first create a new implementation module with a test case in it (and we call
+the test from \ic{Main}). We also add a simple function that nullifies the
+altitude of the trackpoint (as usual...):
+
+\begin{lstlisting}[language=mbeddr, morekeywords={}]
+module StaticVariability imports DataStructures { 
+   
+  Trackpoint* process_trackpoint(Trackpoint* t) { 
+    t->alt = 0 m; 
+    return t; 
+  }    
+   
+  exported test case testStaticVariability { 
+    Trackpoint tp = { 
+      id = 1 
+      alt = 2000 m 
+      speed = 150 mps 
+    };
+    assert(1) process_trackpoint(&tp)->alt == 0 m; 
+  } 
+}
+\end{lstlisting}
+
+Let's now assume that we only want to do the nullification in the function if
+the \ic{nullify} feature is selected in a particular configuration. To achive
+this we have to do two things. First we have to attach a dependency to a feature
+model to the implementation module. An intention achieves this. Second we have
+to annotate the \ic{t->alt = 0 m;} statement with a presence condition. A
+presence condition is essentially a Boolean expression over feature in a feature
+model. If that expression is \ic{false} for a given configuration, the annotated
+element will be removed. So let's add a presence condition to the \ic{t->alt = 0
+m;} with an intention, and make it depend on the \ic{nullify} feature. We do the
+same on the assertion in the test case, and we add another assertion with the
+\ic{!nullify} presence condition. Here is the resulting code:
+
+
+\begin{center} 
+  \includegraphics[width=0.65\columnwidth]{figures/tutorial/staticvar.png}
+\end{center}
+
+The color of the annotated code depends on the presence condition expression.
+All parts with the same expression have the same color. You can now play with
+the settings. By selecting \ic{rendering mode: variant} and selecting a
+particular configuration model you can see and edit the program "cut down" to
+the respective configuration.
+
+If you rebuild you model, nothing happens. While thre is product line
+variability expressed in the model, we don't yet consider it during generation.
+To do this we have to add a new configuration item in the build configuration.
+
+\begin{lstlisting}[morekeywords={variability, mappings, fm}]
+variability mappings { 
+  fm FlightProcessor -> cfgNullifyOnly 
+}
+\end{lstlisting}
+
+This specifies that during build, the \ic{cfgNullifyOnly} configuration should
+be used. By changing this mapping, you can build the system for several
+configurations (\sect{details_ple} discusses how you can build several
+variants at the same time).
+
+Note that the effect in terms of succeeding test cases is the same in both
+examples :-)  It is hence hard to see if it works. We can inspect the generated
+source code to see what's going on. You can either open the file from the file
+system, or you can use the \ic{Preview Generated Files} item in the context menu
+of the model.
+
+
+
+
+
+\fordetails{Product Line Variability}{\sect{details_ple}}
+   
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

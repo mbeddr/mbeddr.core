@@ -1,0 +1,73 @@
+% \section{Debugging}
+% 
+% Let us go back to the definition of \ic{DataItem} and make it more useful. Our
+% application is supposed to work with tracking data (captured from a bike
+% computer or a flight logger). We change the \ic{struct} as follows (note that
+% renaming the thing is trivial --- you just change the name!):
+% 
+% \begin{lstlisting}[language=mbeddr]
+% struct Trackpoint { 
+%   int8 id;        // sequence ID of the track point
+%   int8 timestamp; // timestamp as taken from GPS time
+%   int8 x;         // longtitude, simplified as a number
+%   int8 y;         // latitude, simplified as a number
+%   int8 alt;       // altitude as of the GPS
+%   int8 speed;     // current speed, if available
+% };
+% \end{lstlisting}
+% 
+% We also create a second processing function that nulls the \ic{alt} member (as
+% a means of getting the "ground track" as projected on a map):
+% 
+% \begin{lstlisting}[language=mbeddr]
+% Trackpoint process_nullifyAlt(Trackpoint e) { 
+%   e.alt = 0; 
+%   return e; 
+% }
+% \end{lstlisting}
+% 
+% We can now enhance our test case the following way. Notice how this nicely tests
+% the "redirection" of function pointers; we invoke the same \ic{processor}, but
+% since it has been assigned another function reference, it now does something
+% different.
+% 
+% \begin{lstlisting}[language=mbeddr]
+% exported test case testProcessing { 
+%   Trackpoint i1 = { 
+%     id = 1 
+%     x = 0 
+%     y = 0 
+%     alt = 100 
+%   }; 
+% 
+%   processor = :process_doNothing; 
+%   Trackpoint i2 = processor(i1); 
+%   assert(0) i2.id == 1 && i2.alt == 100; 
+%    
+%   processor = :process_nullifyAlt; 
+%   Trackpoint i3 = processor(i1); 
+%   assert(1) i3.id == 1 && i3.alt == 0; 
+% }
+% \end{lstlisting}
+% 
+% 
+% This is an interesting example for debugging. We start by setting a breakpoint
+% on the \ic{Trackpoint i2 = processor(i1);} line. You can set a breakpoint by
+% clicking into the gutter (see below). 
+% 
+% \begin{center} 
+%   \includegraphics[width=0.6\columnwidth]{figures/tutorial/breakpoint.png}
+% \end{center}
+% 
+% To run the debugger we first have to create a run configuration (this has been
+% explained in some detail in the chapter on debugging, \sect{debugging}).
+% \fordetails{Debugging}{\sect{details_debugging}}
+
+
+
+
+
+
+
+
+
