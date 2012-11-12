@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dependenciesRoot>
+  <dependency className="com.mbeddr.core.debug.test.runtime.m1.ITRBreakpoint" file="ITRBreakpoint.java">
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="jetbrains.mps.smodel.SNode" />
+  </dependency>
+  <dependency className="com.mbeddr.core.debug.test.runtime.m1.ITRBreakpointLocation" file="ITRBreakpointLocation.java">
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="jetbrains.mps.smodel.SNode" />
+  </dependency>
+  <dependency className="com.mbeddr.core.debug.test.runtime.m1.ITRBreakpointRegistry" file="ITRBreakpointRegistry.java">
+    <classNode dependClassName="com.mbeddr.core.debug.test.runtime.m1.ITRBreakpoint" />
+    <classNode dependClassName="com.mbeddr.core.debug.test.runtime.m1.ITRBreakpointLocation" />
+    <classNode dependClassName="com.mbeddr.core.debug.test.runtime.m1.TRExecutingDebugCommandFailedException" />
+    <classNode dependClassName="java.util.List" />
+  </dependency>
+  <dependency className="com.mbeddr.core.debug.test.runtime.m1.ITRProgramState" file="ITRProgramState.java" />
+  <dependency className="com.mbeddr.core.debug.test.runtime.m1.ITRSession" file="ITRSession.java">
+    <classNode dependClassName="com.mbeddr.core.debug.test.runtime.m1.ITRBreakpointRegistry" />
+    <classNode dependClassName="com.mbeddr.core.debug.test.runtime.m1.ITRProgramState" />
+    <classNode dependClassName="com.mbeddr.core.debug.test.runtime.m1.ITRStepper" />
+    <classNode dependClassName="com.mbeddr.core.debug.test.runtime.m1.TRExecutingDebugCommandFailedException" />
+    <classNode dependClassName="com.mbeddr.core.debug.test.runtime.m1.TRSessionFailedException" />
+    <classNode dependClassName="com.mbeddr.core.debug.test.runtime.m1.TRSessionNotAttachedException" />
+  </dependency>
+  <dependency className="com.mbeddr.core.debug.test.runtime.m1.ITRStepper" file="ITRStepper.java">
+    <classNode dependClassName="com.mbeddr.core.debug.test.runtime.m1.TRExecutingDebugCommandFailedException" />
+  </dependency>
+  <dependency className="com.mbeddr.core.debug.test.runtime.m1.TBBreakpointRegistry" file="TBBreakpointRegistry.java">
+    <classNode dependClassName="com.google.inject.Singleton" />
+    <classNode dependClassName="com.mbeddr.core.debug.debugger.AbstractMIBreakpoint" />
+    <classNode dependClassName="com.mbeddr.core.debug.debugger.IMIBreakpointListener" />
+    <classNode dependClassName="java.util.List" />
+    <classNode extendsClassName="com.mbeddr.core.debug.debugger.IMIBreakpointRegistry" />
+  </dependency>
+  <dependency className="com.mbeddr.core.debug.test.runtime.m1.TBMapperListener" file="TBMapperListener.java">
+    <classNode dependClassName="com.google.inject.Singleton" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="jetbrains.mps.debug.api.programState.IThread" />
+    <classNode extendsClassName="com.mbeddr.core.debug.debugger.IMListener" />
+  </dependency>
+  <dependency className="com.mbeddr.core.debug.test.runtime.m1.TRBreakpointImpl" file="TRBreakpointImpl.java">
+    <classNode dependClassName="com.intellij.openapi.project.Project" />
+    <classNode dependClassName="com.mbeddr.core.debug.debugger.MIBreakpointKind" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="jetbrains.mps.debug.api.breakpoints.BreakpointLocation" />
+    <classNode dependClassName="jetbrains.mps.debug.api.breakpoints.IBreakpointKind" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations" />
+    <classNode dependClassName="jetbrains.mps.smodel.SNode" />
+    <classNode dependClassName="jetbrains.mps.smodel.SNodePointer" />
+    <classNode dependClassName="org.jetbrains.annotations.NonNls" />
+    <classNode dependClassName="org.jetbrains.annotations.NotNull" />
+    <classNode extendsClassName="com.mbeddr.core.debug.debugger.AbstractMIBreakpoint" />
+    <classNode extendsClassName="com.mbeddr.core.debug.test.runtime.m1.ITRBreakpoint" />
+  </dependency>
+  <dependency className="com.mbeddr.core.debug.test.runtime.m1.TRBreakpointLocationImpl" file="TRBreakpointLocationImpl.java">
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="jetbrains.mps.smodel.SNode" />
+    <classNode extendsClassName="com.mbeddr.core.debug.test.runtime.m1.ITRBreakpointLocation" />
+  </dependency>
+  <dependency className="com.mbeddr.core.debug.test.runtime.m1.TRBreakpointRegistryImpl" file="TRBreakpointRegistryImpl.java">
+    <classNode dependClassName="com.google.inject.Singleton" />
+    <classNode dependClassName="com.intellij.openapi.project.Project" />
+    <classNode dependClassName="com.mbeddr.core.debug.debugger.AbstractMIBreakpoint" />
+    <classNode dependClassName="com.mbeddr.core.debug.debugger.DebuggerException" />
+    <classNode dependClassName="com.mbeddr.core.debug.debugger.IMIBreakpointListener" />
+    <classNode dependClassName="com.mbeddr.core.debug.test.runtime.m1.ITRBreakpoint" />
+    <classNode dependClassName="com.mbeddr.core.debug.test.runtime.m1.ITRBreakpointLocation" />
+    <classNode dependClassName="com.mbeddr.core.debug.test.runtime.m1.TRBreakpointImpl" />
+    <classNode dependClassName="com.mbeddr.core.debug.test.runtime.m1.TRExecutingDebugCommandFailedException" />
+    <classNode dependClassName="java.lang.IllegalArgumentException" />
+    <classNode dependClassName="java.lang.UnsupportedOperationException" />
+    <classNode dependClassName="java.util.ArrayList" />
+    <classNode dependClassName="java.util.List" />
+    <classNode dependClassName="jetbrains.mps.internal.collections.runtime.ListSequence" />
+    <classNode extendsClassName="com.mbeddr.core.debug.debugger.IMIBreakpointRegistry" />
+    <classNode extendsClassName="com.mbeddr.core.debug.debugger.IMIMpsBreakpointListener" />
+    <classNode extendsClassName="com.mbeddr.core.debug.test.runtime.m1.ITRBreakpointRegistry" />
+  </dependency>
+  <dependency className="com.mbeddr.core.debug.test.runtime.m1.TRExecutingDebugCommandFailedException" file="TRExecutingDebugCommandFailedException.java">
+    <classNode dependClassName="java.lang.String" />
+    <classNode extendsClassName="com.mbeddr.core.debug.test.runtime.m1.TestRuntimeException" />
+  </dependency>
+  <dependency className="com.mbeddr.core.debug.test.runtime.m1.TRSessionFailedException" file="TRSessionFailedException.java">
+    <classNode dependClassName="java.lang.String" />
+    <classNode extendsClassName="com.mbeddr.core.debug.test.runtime.m1.TestRuntimeException" />
+  </dependency>
+  <dependency className="com.mbeddr.core.debug.test.runtime.m1.TRSessionImpl" file="TRSessionImpl.java">
+    <classNode dependClassName="com.google.inject.Inject" />
+    <classNode dependClassName="com.google.inject.Singleton" />
+    <classNode dependClassName="com.google.inject.name.Named" />
+    <classNode dependClassName="com.mbeddr.core.debug.debugger.DebuggerException" />
+    <classNode dependClassName="com.mbeddr.core.debug.debugger.IMSession" />
+    <classNode dependClassName="com.mbeddr.core.debug.test.runtime.m1.ITRBreakpointRegistry" />
+    <classNode dependClassName="com.mbeddr.core.debug.test.runtime.m1.ITRProgramState" />
+    <classNode dependClassName="com.mbeddr.core.debug.test.runtime.m1.ITRStepper" />
+    <classNode dependClassName="com.mbeddr.core.debug.test.runtime.m1.TRExecutingDebugCommandFailedException" />
+    <classNode dependClassName="com.mbeddr.core.debug.test.runtime.m1.TRSessionFailedException" />
+    <classNode dependClassName="com.mbeddr.core.debug.test.runtime.m1.TRSessionNotAttachedException" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="jetbrains.mps.smodel.SModel" />
+    <classNode extendsClassName="com.mbeddr.core.debug.test.runtime.m1.ITRSession" />
+  </dependency>
+  <dependency className="com.mbeddr.core.debug.test.runtime.m1.TRSessionNotAttachedException" file="TRSessionNotAttachedException.java">
+    <classNode extendsClassName="com.mbeddr.core.debug.test.runtime.m1.TestRuntimeException" />
+  </dependency>
+  <dependency className="com.mbeddr.core.debug.test.runtime.m1.TRStepperImpl" file="TRStepperImpl.java">
+    <classNode dependClassName="com.google.inject.Singleton" />
+    <classNode dependClassName="com.mbeddr.core.debug.test.runtime.m1.TRExecutingDebugCommandFailedException" />
+    <classNode extendsClassName="com.mbeddr.core.debug.test.runtime.m1.ITRStepper" />
+  </dependency>
+  <dependency className="com.mbeddr.core.debug.test.runtime.m1.TestRuntime" file="TestRuntime.java">
+    <classNode dependClassName="com.google.inject.AbstractModule" />
+    <classNode dependClassName="com.google.inject.Guice" />
+    <classNode dependClassName="com.google.inject.Injector" />
+    <classNode dependClassName="com.google.inject.name.Names" />
+    <classNode dependClassName="com.intellij.openapi.project.Project" />
+    <classNode dependClassName="com.mbeddr.core.debug.debugger.CDebuggerWrapperModule" />
+    <classNode dependClassName="com.mbeddr.core.debug.debugger.EclipseCdtWrapperModule" />
+    <classNode dependClassName="com.mbeddr.core.debug.debugger.MapperModule" />
+    <classNode dependClassName="com.mbeddr.core.debug.debugger.TracingWrapperModule" />
+    <classNode dependClassName="com.mbeddr.core.debug.test.runtime.m1.ITRSession" />
+    <classNode dependClassName="com.mbeddr.core.debug.test.runtime.m1.TestRuntimeModule" />
+    <classNode dependClassName="java.lang.IllegalArgumentException" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="jetbrains.mps.smodel.SModel" />
+  </dependency>
+  <dependency className="com.mbeddr.core.debug.test.runtime.m1.TestRuntimeException" file="TestRuntimeException.java">
+    <classNode dependClassName="java.lang.String" />
+    <classNode extendsClassName="java.lang.Exception" />
+  </dependency>
+  <dependency className="com.mbeddr.core.debug.test.runtime.m1.TestRuntimeModule" file="TestRuntimeModule.java">
+    <classNode dependClassName="com.mbeddr.core.debug.test.runtime.m1.ITRSession" />
+    <classNode dependClassName="com.mbeddr.core.debug.test.runtime.m1.TRSessionImpl" />
+    <classNode extendsClassName="com.google.inject.AbstractModule" />
+  </dependency>
+</dependenciesRoot>
+
