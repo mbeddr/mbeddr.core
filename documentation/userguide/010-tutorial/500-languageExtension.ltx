@@ -107,11 +107,11 @@ first step at providing comprehensive support for testing. mbeddr also provides
 support for platform-independent logging as well as for specifying stubs and
 mocks. We do not discuss this in this paper.
 
- 
+  
 
-\begin{figure}[h]  
+\begin{figure}[h]   
 \begin{center}
-\includegraphics[scale=1]{figures/tutorial/unittest.png}
+\includegraphics[width=\columnwidth]{figures/tutorial/unittest.png}
 \end{center}
 \caption{The \emph{unittest} language introduces test cases as well as
 \ic{assert} and \ic{fail} statements which can only be used inside of a test
@@ -125,6 +125,72 @@ exit value.}
 \end{figure} 
 
 
+\parhead{Components} are new top level constructs that support modularization,
+encapsulation and the separation between specification and implementation
+(\fig{components}). In contrast to modules, a component uses interfaces and
+ports to declare the contract it obeys. Interfaces define operation signatures
+and optional pre and post conditions (not shown in the example). Provided ports
+declare the interfaces offered by a component, required ports specify the
+interfaces a component expects to use. Different components can implement the
+same interface differently. Components can be instantiated (also in contrast to
+modules), and each instance's required ports have to be connected to compatible
+provided ports provided by other component instances. Polymorhphic invocations
+(different components "behind" the same interface) are supported.
+
+
+  
+  
+\begin{figure}
+\begin{center} 
+\includegraphics[width=\columnwidth]{figures/tutorial/components.png}
+\end{center}
+\caption{Two components providing the same interface. The arrow
+maps operations from provided ports to implementations.
+An indirection through function pointers enables different implementations
+for a single interface, enabling OO-like polymorphic invocations.}
+\label{components}  
+\end{figure}  
+
+
+\parhead{State Machines} State machines provide a
+new top level construct (the state machine itself) as well as a \ic{trigger}
+statement to send events into state machines (see \fig{statemachines}). State
+machines are transformed into a \ic{switch/case}-based implementation in the C
+program. Entry, exit and transition actions may only access variables defined
+locally in state machines and fire out events. Out events may optionally be
+mapped to functions in the surrounding C program, where arbitrary behaviour can
+be implemented. This way, state machines are semantically isolated from the rest
+of the code, enabling them to be model checked: if a state machine is marked
+as \ic{verifiable}, we also generate a representation of the state machine in
+the input language of the NuSMV model checker\footnote{http://nusmv.fbk.eu},
+including a set of property specifications that are verified by default.
+Examples include dead state detection, dead transition detection,
+non-determinism and variable bounds checks. In addition, users can specify
+additional high-level properties based on the well-established catalog 
+of temporal logic properties patterns in \cite{DwyerAC99}. We discuss the
+integration of formal verification into mbeddr in more detail in
+\cite{Formsera2012}.
+
+
+  
+\begin{figure}
+\begin{center}
+\includegraphics[width=\columnwidth]{figures/tutorial/statemachine.png}
+\end{center}
+\caption{A state machine is embedded in a C module as a top level construct. It
+declares \ic{in} and \ic{out} \ic{events} as well as local variables, states and transitions.
+Transitions react to \ic{in event}s, and \ic{out event}s can be fired in actions. Through
+bindings (e.g. \ic{tickHandler}), state machines interact with C code. State
+machines can be instantiated. They are transformed to \ic{enum}s for states and
+events, and a function that executed the state machine using \ic{switch}
+statements. The \ic{trigger} statement injects events into a state machine
+instance by calling the state machine function.}
+\label{statemachines}  
+\end{figure} 
+
+
+ 
+
 
 \parhead{Decision Tables} Decision Tables are an example of extending
 expressions. An example is shown in \fig{dectab}. A decision table represents
@@ -134,10 +200,10 @@ to bottom). A default value (\ic{FAIL}) is specified to handle the case where
 none of the column/row header combinations is \ic{true}. Since the compiler and
 IDE have to compute a type for expressions, the decision table specifies the
 type of its result values explicitly (\ic{int8}).
-
+ 
 \begin{figure}[h]
 \begin{center}
-\includegraphics[scale=1]{figures/tutorial/dectabexample.png} 
+\includegraphics[width=\columnwidth]{figures/tutorial/dectabexample.png} 
 \end{center}
 \caption{A decision
 table evaluates to the value in the cell for which the row and column headers are
@@ -149,7 +215,54 @@ This case is optimized to not use the indirection of an extra function.}
 \end{figure} 
 
 
+\parhead{Physical Units} are new types that
+also specify a physical unit in addition to their actual data type (see
+\fig{unitsexample}). New literals are introduced to support specifying values for these types that include the physical unit. The typing rules for the
+existing operators (\ic{+}, \ic{*} or \ic{>}) are overridden to perform the
+correct type checks for types with units. The type system also performs unit
+computations to deal correctly with \ic{speed = length/time}, for example.
 
+\begin{figure}[h]
+\begin{center}
+\includegraphics[scale=0.75]{figures/tutorial/units.png}
+\end{center}
+\caption{The \emph{units} extension ships with the SI base units. Users
+can define derived units (such as the \ic{mps} in the example) as well as
+convertible units that require a numeric conversion for
+mapping back to SI units. Type checks ensure that the values associated with
+unit literals use the correct unit and perform unit computations (as in speed
+equals length divided by time). Errors are reported if incompatible units are
+used together (e.g. if we were to add length and time). To support this feature,
+the typing rules for the existing operators (such as
+\ic{+} or \ic{/}) have to be overridden.} 
+\label{unitsexample}
+\end{figure}
+
+\parhead{Requirements Traces} Traces are meta data
+annotations that link a program element to requirements, essentially elements in
+other models imported from requirements management tools. Requirements traces
+can be attached to any program element without that element's definition having
+to be aware of this (see green highlights in \fig{screenshot} and in
+\fig{traces} ).
+
+
+\parhead{Safe Modules} Safe modules restrict C to help prevent writing risky
+code. For example, runtime range checking is performed for arithmetic
+expressions and assignments. To enable this, arithmetic expressions are replaced
+by function calls that perform range checking and report errors if an overflow
+is detected. As another example, safe modules also provide the \ic{safeheap}
+statement that automatically frees dynamic variables allocated inside its body
+(see \fig{safeheap}).
+
+\begin{figure}  
+\begin{center}
+\includegraphics[width=85mm]{figures/tutorial/safeheap.png}
+\end{center}
+\caption{A \ic{safeheap} statement declares heap variables which can only be
+used inside the body of the statement. When the body is left, the memory is
+automatically freed. }
+\label{safeheap}  
+\end{figure}
 
 
 
@@ -166,6 +279,9 @@ This case is optimized to not use the indirection of an extra function.}
 
 
 \section{An Annotation for Misra Checks}
+
+
+\section{Data Flow Blocks}
 
 
 
