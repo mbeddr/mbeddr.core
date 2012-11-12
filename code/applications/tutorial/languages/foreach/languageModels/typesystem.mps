@@ -59,8 +59,13 @@
         <node role="condition" roleId="tpee.1068580123160" type="tpee.NotExpression" typeId="tpee.1081516740877" id="646457496850739801">
           <node role="expression" roleId="tpee.1081516765348" type="tpee.DotExpression" typeId="tpee.1197027756228" id="646457496850739852">
             <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="646457496850739824">
-              <node role="operand" roleId="tpee.1197027771414" type="tpd4.ApplicableNodeReference" typeId="tpd4.1174650418652" id="646457496850739803">
-                <link role="applicableNode" roleId="tpd4.1174650432090" targetNodeId="646457496850739797" resolveInfo="fs" />
+              <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="7977993180520092140">
+                <node role="operand" roleId="tpee.1197027771414" type="tpd4.ApplicableNodeReference" typeId="tpd4.1174650418652" id="646457496850739803">
+                  <link role="applicableNode" roleId="tpd4.1174650432090" targetNodeId="646457496850739797" resolveInfo="fs" />
+                </node>
+                <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="7977993180520123673">
+                  <link role="link" roleId="tp25.1138056516764" targetNodeId="f8ij.646457496850739612" />
+                </node>
               </node>
               <node role="operation" roleId="tpee.1197027833540" type="tpd4.Node_TypeOperation" typeId="tpd4.1176544042499" id="646457496850739830" />
             </node>
