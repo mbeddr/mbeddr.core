@@ -13,8 +13,11 @@ shows a test case that uses a \ic{foreach} statement.
   
 \begin{lstlisting}[language=mbeddr]
 test case testForEach { 
-  int8 sum = 0;  int8[] array = {1, 2, 3, 4, 5}; 
-  foreach (array sized 5) { sum += it; } 
+  int8 sum = 0;  
+  int8[] array = {1, 2, 3, 4, 5}; 
+  foreach (array sized 5) { 
+    sum += it; 
+  } 
   assert(0) sum == 15; 
 }
 \end{lstlisting}

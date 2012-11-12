@@ -6,6 +6,7 @@
   <component name="Encoding" useUTFGuessing="true" native2AsciiForPropertiesFiles="false" />
   <component name="MPSProject">
     <projectModules>
+      <modulePath path="${project}/languages/foreach/foreach.mpl" folder="" />
       <modulePath path="${project}/languages/heap/heap.mpl" folder="" />
       <modulePath path="${project}/solutions/mbeddr.tutorial.main/mbeddr.tutorial.main.msd" />
     </projectModules>
