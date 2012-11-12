@@ -26,13 +26,6 @@
   <dependency className="com.mbeddr.core.debug.test.runtime.m1.ITRStepper" file="ITRStepper.java">
     <classNode dependClassName="com.mbeddr.core.debug.test.runtime.m1.TRExecutingDebugCommandFailedException" />
   </dependency>
-  <dependency className="com.mbeddr.core.debug.test.runtime.m1.TBBreakpointRegistry" file="TBBreakpointRegistry.java">
-    <classNode dependClassName="com.google.inject.Singleton" />
-    <classNode dependClassName="com.mbeddr.core.debug.debugger.AbstractMIBreakpoint" />
-    <classNode dependClassName="com.mbeddr.core.debug.debugger.IMIBreakpointListener" />
-    <classNode dependClassName="java.util.List" />
-    <classNode extendsClassName="com.mbeddr.core.debug.debugger.IMIBreakpointRegistry" />
-  </dependency>
   <dependency className="com.mbeddr.core.debug.test.runtime.m1.TBMapperListener" file="TBMapperListener.java">
     <classNode dependClassName="com.google.inject.Singleton" />
     <classNode dependClassName="java.lang.String" />
@@ -80,6 +73,9 @@
   <dependency className="com.mbeddr.core.debug.test.runtime.m1.TRExecutingDebugCommandFailedException" file="TRExecutingDebugCommandFailedException.java">
     <classNode dependClassName="java.lang.String" />
     <classNode extendsClassName="com.mbeddr.core.debug.test.runtime.m1.TestRuntimeException" />
+  </dependency>
+  <dependency className="com.mbeddr.core.debug.test.runtime.m1.TRPogramStateImpl" file="TRPogramStateImpl.java">
+    <classNode extendsClassName="com.mbeddr.core.debug.test.runtime.m1.ITRProgramState" />
   </dependency>
   <dependency className="com.mbeddr.core.debug.test.runtime.m1.TRSessionFailedException" file="TRSessionFailedException.java">
     <classNode dependClassName="java.lang.String" />
@@ -130,8 +126,18 @@
     <classNode extendsClassName="java.lang.Exception" />
   </dependency>
   <dependency className="com.mbeddr.core.debug.test.runtime.m1.TestRuntimeModule" file="TestRuntimeModule.java">
+    <classNode dependClassName="com.mbeddr.core.debug.debugger.IMIBreakpointRegistry" />
+    <classNode dependClassName="com.mbeddr.core.debug.debugger.IMIMpsBreakpointListener" />
+    <classNode dependClassName="com.mbeddr.core.debug.debugger.IMListener" />
+    <classNode dependClassName="com.mbeddr.core.debug.test.runtime.m1.ITRBreakpointRegistry" />
+    <classNode dependClassName="com.mbeddr.core.debug.test.runtime.m1.ITRProgramState" />
     <classNode dependClassName="com.mbeddr.core.debug.test.runtime.m1.ITRSession" />
+    <classNode dependClassName="com.mbeddr.core.debug.test.runtime.m1.ITRStepper" />
+    <classNode dependClassName="com.mbeddr.core.debug.test.runtime.m1.TBMapperListener" />
+    <classNode dependClassName="com.mbeddr.core.debug.test.runtime.m1.TRBreakpointRegistryImpl" />
+    <classNode dependClassName="com.mbeddr.core.debug.test.runtime.m1.TRPogramStateImpl" />
     <classNode dependClassName="com.mbeddr.core.debug.test.runtime.m1.TRSessionImpl" />
+    <classNode dependClassName="com.mbeddr.core.debug.test.runtime.m1.TRStepperImpl" />
     <classNode extendsClassName="com.google.inject.AbstractModule" />
   </dependency>
 </dependenciesRoot>

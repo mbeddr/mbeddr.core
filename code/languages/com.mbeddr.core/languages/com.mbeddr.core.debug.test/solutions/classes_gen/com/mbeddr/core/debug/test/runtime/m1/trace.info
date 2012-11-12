@@ -47,26 +47,6 @@
     <scopeInfo nodeId="3463450091878657204" fileName="ITRStepper.java" startLine="8" startPosition="71" endLine="9" endPosition="70" />
     <unitInfo nodeId="3463450091878657192" fileName="ITRStepper.java" startLine="6" startPosition="0" endLine="11" endPosition="0" unitName="com.mbeddr.core.debug.test.runtime.m1.ITRStepper" />
   </root>
-  <root nodeId="3463450091878657209" modelId="r:d7313444-c0c4-49ce-a33f-924d6b925b1b(com.mbeddr.core.debug.test.runtime.m1)">
-    <nodeInfo nodeId="3463450091878657234" fileName="TBBreakpointRegistry.java" startLine="16" startPosition="54" endLine="17" endPosition="16" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="3463450091878657211" fileName="TBBreakpointRegistry.java" startLine="12" startPosition="68" endLine="14" endPosition="3" conceptFqName="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" propertyString="TBBreakpointRegistry#()V" />
-    <nodeInfo nodeId="3463450091878657222" fileName="TBBreakpointRegistry.java" startLine="19" startPosition="0" endLine="22" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="register#(Lcom/mbeddr/core/debug/debugger/IMIBreakpointListener;)V" />
-    <nodeInfo nodeId="3463450091878657228" fileName="TBBreakpointRegistry.java" startLine="22" startPosition="0" endLine="25" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="deregister#(Lcom/mbeddr/core/debug/debugger/IMIBreakpointListener;)V" />
-    <nodeInfo nodeId="3463450091878657217" fileName="TBBreakpointRegistry.java" startLine="15" startPosition="0" endLine="19" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getBreakpoints#()Ljava/util/List;" />
-    <scopeInfo nodeId="3463450091878657214" fileName="TBBreakpointRegistry.java" startLine="13" startPosition="33" endLine="13" endPosition="33" />
-    <scopeInfo nodeId="3463450091878657227" fileName="TBBreakpointRegistry.java" startLine="20" startPosition="56" endLine="20" endPosition="56" />
-    <scopeInfo nodeId="3463450091878657233" fileName="TBBreakpointRegistry.java" startLine="23" startPosition="58" endLine="23" endPosition="58" />
-    <scopeInfo nodeId="3463450091878657221" fileName="TBBreakpointRegistry.java" startLine="16" startPosition="54" endLine="17" endPosition="16" />
-    <scopeInfo nodeId="3463450091878657211" fileName="TBBreakpointRegistry.java" startLine="12" startPosition="68" endLine="14" endPosition="3" />
-    <scopeInfo nodeId="3463450091878657222" fileName="TBBreakpointRegistry.java" startLine="19" startPosition="0" endLine="22" endPosition="0">
-      <varInfo nodeId="3463450091878657225" varName="listener" />
-    </scopeInfo>
-    <scopeInfo nodeId="3463450091878657228" fileName="TBBreakpointRegistry.java" startLine="22" startPosition="0" endLine="25" endPosition="0">
-      <varInfo nodeId="3463450091878657231" varName="listener" />
-    </scopeInfo>
-    <scopeInfo nodeId="3463450091878657217" fileName="TBBreakpointRegistry.java" startLine="15" startPosition="0" endLine="19" endPosition="0" />
-    <unitInfo nodeId="3463450091878657209" fileName="TBBreakpointRegistry.java" startLine="11" startPosition="0" endLine="26" endPosition="0" unitName="com.mbeddr.core.debug.test.runtime.m1.TBBreakpointRegistry" />
-  </root>
   <root nodeId="3463450091878657236" modelId="r:d7313444-c0c4-49ce-a33f-924d6b925b1b(com.mbeddr.core.debug.test.runtime.m1)">
     <nodeInfo nodeId="3463450091878657238" fileName="TBMapperListener.java" startLine="10" startPosition="53" endLine="12" endPosition="3" conceptFqName="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" propertyString="TBMapperListener#()V" />
     <nodeInfo nodeId="3463450091878657244" fileName="TBMapperListener.java" startLine="13" startPosition="0" endLine="16" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="debuggerDetached#()V" />
@@ -160,14 +140,20 @@
     <unitInfo nodeId="3463450091878657397" fileName="TRBreakpointLocationImpl.java" startLine="7" startPosition="0" endLine="24" endPosition="0" unitName="com.mbeddr.core.debug.test.runtime.m1.TRBreakpointLocationImpl" />
   </root>
   <root nodeId="3463450091878660042" modelId="r:d7313444-c0c4-49ce-a33f-924d6b925b1b(com.mbeddr.core.debug.test.runtime.m1)">
-    <nodeInfo nodeId="3463450091878660077" fileName="TestRuntimeModule.java" startLine="11" startPosition="30" endLine="12" endPosition="51" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="3463450091878660044" fileName="TestRuntimeModule.java" startLine="7" startPosition="55" endLine="9" endPosition="3" conceptFqName="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" propertyString="TestRuntimeModule#()V" />
-    <nodeInfo nodeId="3463450091878660073" fileName="TestRuntimeModule.java" startLine="10" startPosition="0" endLine="14" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="configure#()V" />
-    <scopeInfo nodeId="3463450091878660047" fileName="TestRuntimeModule.java" startLine="8" startPosition="30" endLine="8" endPosition="30" />
-    <scopeInfo nodeId="3463450091878660076" fileName="TestRuntimeModule.java" startLine="11" startPosition="30" endLine="12" endPosition="51" />
-    <scopeInfo nodeId="3463450091878660044" fileName="TestRuntimeModule.java" startLine="7" startPosition="55" endLine="9" endPosition="3" />
-    <scopeInfo nodeId="3463450091878660073" fileName="TestRuntimeModule.java" startLine="10" startPosition="0" endLine="14" endPosition="0" />
-    <unitInfo nodeId="3463450091878660042" fileName="TestRuntimeModule.java" startLine="7" startPosition="0" endLine="15" endPosition="0" unitName="com.mbeddr.core.debug.test.runtime.m1.TestRuntimeModule" />
+    <nodeInfo nodeId="3463450091878660077" fileName="TestRuntimeModule.java" startLine="14" startPosition="30" endLine="15" endPosition="51" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="3463450091879767153" fileName="TestRuntimeModule.java" startLine="15" startPosition="51" endLine="16" endPosition="73" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="3463450091879767254" fileName="TestRuntimeModule.java" startLine="16" startPosition="73" endLine="17" endPosition="73" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="3463450091879767264" fileName="TestRuntimeModule.java" startLine="17" startPosition="73" endLine="18" endPosition="76" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="3463450091879767343" fileName="TestRuntimeModule.java" startLine="18" startPosition="76" endLine="19" endPosition="54" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="3463450091879767190" fileName="TestRuntimeModule.java" startLine="19" startPosition="54" endLine="20" endPosition="60" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="3463450091879767393" fileName="TestRuntimeModule.java" startLine="20" startPosition="60" endLine="21" endPosition="51" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="3463450091878660044" fileName="TestRuntimeModule.java" startLine="10" startPosition="55" endLine="12" endPosition="3" conceptFqName="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" propertyString="TestRuntimeModule#()V" />
+    <nodeInfo nodeId="3463450091878660073" fileName="TestRuntimeModule.java" startLine="13" startPosition="0" endLine="23" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="configure#()V" />
+    <scopeInfo nodeId="3463450091878660047" fileName="TestRuntimeModule.java" startLine="11" startPosition="30" endLine="11" endPosition="30" />
+    <scopeInfo nodeId="3463450091878660044" fileName="TestRuntimeModule.java" startLine="10" startPosition="55" endLine="12" endPosition="3" />
+    <scopeInfo nodeId="3463450091878660076" fileName="TestRuntimeModule.java" startLine="14" startPosition="30" endLine="21" endPosition="51" />
+    <scopeInfo nodeId="3463450091878660073" fileName="TestRuntimeModule.java" startLine="13" startPosition="0" endLine="23" endPosition="0" />
+    <unitInfo nodeId="3463450091878660042" fileName="TestRuntimeModule.java" startLine="10" startPosition="0" endLine="24" endPosition="0" unitName="com.mbeddr.core.debug.test.runtime.m1.TestRuntimeModule" />
   </root>
   <root nodeId="3463450091878660165" modelId="r:d7313444-c0c4-49ce-a33f-924d6b925b1b(com.mbeddr.core.debug.test.runtime.m1)">
     <nodeInfo nodeId="3463450091878660179" fileName="TestRuntimeException.java" startLine="7" startPosition="47" endLine="8" endPosition="19" conceptFqName="jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
@@ -448,6 +434,12 @@
       <varInfo nodeId="3463450091878697569" varName="tracePath" />
     </scopeInfo>
     <unitInfo nodeId="3463450091878697521" fileName="TRSessionImpl.java" startLine="12" startPosition="0" endLine="84" endPosition="0" unitName="com.mbeddr.core.debug.test.runtime.m1.TRSessionImpl" />
+  </root>
+  <root nodeId="3463450091879767192" modelId="r:d7313444-c0c4-49ce-a33f-924d6b925b1b(com.mbeddr.core.debug.test.runtime.m1)">
+    <nodeInfo nodeId="3463450091879767194" fileName="TRPogramStateImpl.java" startLine="6" startPosition="59" endLine="8" endPosition="3" conceptFqName="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" propertyString="TRPogramStateImpl#()V" />
+    <scopeInfo nodeId="3463450091879767197" fileName="TRPogramStateImpl.java" startLine="7" startPosition="30" endLine="7" endPosition="30" />
+    <scopeInfo nodeId="3463450091879767194" fileName="TRPogramStateImpl.java" startLine="6" startPosition="59" endLine="8" endPosition="3" />
+    <unitInfo nodeId="3463450091879767192" fileName="TRPogramStateImpl.java" startLine="6" startPosition="0" endLine="10" endPosition="0" unitName="com.mbeddr.core.debug.test.runtime.m1.TRPogramStateImpl" />
   </root>
 </debugInfo>
 

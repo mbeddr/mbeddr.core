@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<language namespace="com.mbeddr.core.debug.test.lang" uuid="89c70b13-7f9c-47c3-b3c2-c218b52ed82c" doNotGenerateAdapters="true">
+<language namespace="com.mbeddr.core.debug.test" uuid="89c70b13-7f9c-47c3-b3c2-c218b52ed82c" doNotGenerateAdapters="true">
   <models>
     <modelRoot path="${language_descriptor}/languageModels" />
   </models>
   <accessoryModels />
   <generators>
-    <generator name="main" generatorUID="com.mbeddr.core.debug.test.lang#4193597469137492863" uuid="1b881fe2-dedf-490a-bc16-7cf24e5d1226">
+    <generator name="main" generatorUID="com.mbeddr.core.debug.test#4193597469137492863" uuid="1b881fe2-dedf-490a-bc16-7cf24e5d1226">
       <models>
         <modelRoot path="${language_descriptor}/generator/template" />
       </models>
@@ -29,6 +29,7 @@
         <dependency reexport="false">707c4fde-f79a-44b5-b3d7-b5cef8844ccf(jetbrains.mps.lang.test.runtime)</dependency>
       </dependencies>
       <usedLanguages>
+        <usedLanguage>89c70b13-7f9c-47c3-b3c2-c218b52ed82c(com.mbeddr.core.debug.test)</usedLanguage>
         <usedLanguage>ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)</usedLanguage>
         <usedLanguage>b401a680-8325-4110-8fd3-84331ff25bef(jetbrains.mps.lang.generator)</usedLanguage>
         <usedLanguage>d7706f63-9be2-479c-a3da-ae92af1e64d5(jetbrains.mps.lang.generator.generationContext)</usedLanguage>
