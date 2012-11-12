@@ -103,7 +103,7 @@ Importing header files is not as simple as it may seem initially. In this
 section we discuss some of the things you can do when importing headers that
 "don't look right".
 
-\parhead{Defined \#defines} Header files can express product line variability
+\paragraph{Defined \#defines} Header files can express product line variability
 using \ic{\#ifdef}s. These use preprocessor constants as in 
 \ic{\#ifdef SOMETHING}. To import a header file correctly you may have to define
 a number of these constants. This can be done in this section:
@@ -112,7 +112,7 @@ a number of these constants. This can be done in this section:
   \includegraphics[scale=0.6]{figures/core/defineddefines.png}
 \end{center}
 
-\parhead{Mappings} Some header files use platform-specific directives that
+\paragraph{Mappings} Some header files use platform-specific directives that
 cannot be parsed by the Eclipse CDT parser that underlies the header file
 import. These must be removed (or changed) before parsing the file. The header
 file importer comes with a preprocessor that can remove or change such
@@ -122,10 +122,10 @@ not a generated version of the external module. So the final system (which is
 assumed to be processed by a compiler that understands the platform-specific
 stuff) will see these things unchanged.}.
 
-\parhead{Regular Expression Mappings} This is the same as in the previous
+\paragraph{Regular Expression Mappings} This is the same as in the previous
 paragraph, except that the a regular expression can be used.
 
-\parhead{Header Files} This sections shows all header files located in the
+\paragraph{Header Files} This sections shows all header files located in the
 directory defined in the \ic{Include Path} property. Sometimes a header file
 does not include some other header file explicitly, although it should. The
 compiler seems to not care ... mbeddr, does care, however. By marking a header
@@ -139,7 +139,7 @@ section of all other headers.
 Importing header files is not as simple as it may seem (heard that before :-)?),
 and our current importer still has some limitations.
 
-\parhead{\#ifdef Variability} At this point we cannot yet map product line
+\paragraph{\#ifdef Variability} At this point we cannot yet map product line
 variability expressed with \ic{\#ifdef}s onto the product line variability
 mechanism of mbeddr. Hence, as discussed above, \emph{only a particular variant}
 can be imported, which is why we have the \emph{Defined \#defines} section
@@ -147,7 +147,7 @@ above.
 
 \greyboxnote{Note that we will be working on improving this situation.}
 
-\parhead{Complex Expressions} We cannot parse complex expressions used in
+\paragraph{Complex Expressions} We cannot parse complex expressions used in
 \ic{\#defines} at this point. Assume the following example:
 
 \begin{lstlisting}[language=mbeddr, morekeywords={}]

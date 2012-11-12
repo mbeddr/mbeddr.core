@@ -43,7 +43,7 @@ have typed links relative to other requirement, such as \ic{conflicts with} or
 Requirements modules can import other reqirements modules using the \ic{import}
 section. This way, large sets of requirements can be modularized.
 
-\parhead{Filtering and Summarizing} It is possible to filter requirements when
+\paragraph{Filtering and Summarizing} It is possible to filter requirements when
 viewing them in a requirements module. At the top right of a requirements module you can select from a set of
 filters, including filtering by \ic{summary}, \ic{name}, or \ic{trace status}.
 Filters are and'ed together by default. However, explicit \ic{and} and \ic{or}
@@ -65,7 +65,7 @@ A similar facility exists for summarizing requirements. The only currently
 implemented summarizer counts the requirements (taking the filters into
 account). Custom summarizers may be used, for example, to sum up efforts.
 
-\parhead{CSV Import} Requirements can be imported from a CSV file. To do this,
+\paragraph{CSV Import} Requirements can be imported from a CSV file. To do this,
 use the \ic{requirements.csv} language in your program and use the respective
 intention to attache a \ic{CsvImportAnnotation} to your requirements module:
 
@@ -123,18 +123,18 @@ To extend the requirements framework, create a new language that extends
 \ic{com.mbeddr. cc.requirements}. Then, use this language in the project that
 manages your requirements.
 
-\parhead{A new Link} To create a new link, create a concept that extends
+\paragraph{A new Link} To create a new link, create a concept that extends
 \ic{RequirementsLink}. It base class already comes with a pointer to the target
 requirement. Just define the concept and an alias.
 
-\parhead{A new Kind} To create a new requirements kind, extend
+\paragraph{A new Kind} To create a new requirements kind, extend
 \ic{RequirementsKind} and define an alias. 
 
 \begin{center} 
   \includegraphics[width=12cm]{figures/cc/reqkind.png}
 \end{center}
 
-\parhead{A new Additional Specification} Defining new additional
+\paragraph{A new Additional Specification} Defining new additional
 specifications (such as the \ic{timing} specification mentioned above) happens
 in two steps. First you have to create a new concept that extends
 \ic{RequirementsData}. It should contain any additional structure you need
@@ -178,7 +178,7 @@ these elements to the copied requirement.
 A trace can have a kind. By default, the kind is \ic{trace}. However, the kind
 can be changed (\keystroke{Ctrl-Space} on the \ic{trace} keyword.)
  
-\parhead{Extending the Trace Facilities} New trace kinds can be added by
+\paragraph{Extending the Trace Facilities} New trace kinds can be added by
 creating a new language that extends \ic{com.mbeddr.cc.trace}, using that
 language from your application code, and defining a new concept that extends
 \ic{TraceKind}.

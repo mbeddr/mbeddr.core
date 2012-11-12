@@ -95,7 +95,7 @@ MPS. To do so, please move (not just copy!) the \ic{zgrviewer} folder from the
 You can get the mbeddr code either via distributions or via the public github
 repository.
 
-\parhead{Installing the Distribution} We recommend installing the distribution,
+\paragraph{Installing the Distribution} We recommend installing the distribution,
 because this is a much simpler process than working from the github sources. The
 distribution can be downloaded from the \ic{mbeddr.com} website:
 
@@ -110,7 +110,7 @@ inside the \ic{plugins} directory in the ZIP file and copy them into the
 \ic{plugin} (without the \ic{s}) directory under MPS!}. So, for example, after
 copying, there should be a \ic{\$MPS\_DIR\$/plugins/mbeddr.core} directory.
 
-\parhead{Installing From github} The github repo ist a
+\paragraph{Installing From github} The github repo ist a
 \ic{https://github.com/mbeddr/mbeddr.core}. Here are the steps to get
 things running:
 
@@ -178,7 +178,7 @@ you watch the following screencast:\\
 \hspace*{10mm} \ic{http://www.youtube.com/watch?v=wgsY3-ZX\_fs}  
 
 
-\parhead{Entering Code} In MPS you can only enter code that is
+\paragraph{Entering Code} In MPS you can only enter code that is
 available from the code completion menu. Using aliases and other "tricks", MPS
 manages to make this feel \emph{almost} like text editing. Here are some hints
 though:
@@ -204,7 +204,7 @@ though:
 \end{itemize}
 
 
-\parhead{Navigation} Navigation in the source works as usual using the cursor
+\paragraph{Navigation} Navigation in the source works as usual using the cursor
 keys or the mouse. References can be followed ("go to definition") either by
 \keystroke{Ctrl-Click} or by using \keystroke{Ctrl-B}. The reverse is also
 supported. The context menu on a program element supports Find Useages. This can
@@ -215,7 +215,7 @@ outline view that lists all top level or important elements in that particular
 program so you can navigate to it easily.
 
 
-\parhead{Selection} Selection is different. \keystroke{Ctrl-Up/Down} can be
+\paragraph{Selection} Selection is different. \keystroke{Ctrl-Up/Down} can be
 used to select along the tree. For example consider a local variable declaration
 \ic{int x = 2 + 3 * 4;} with the cursor at the \ic{3}. If you now press
 \keystroke{Ctrl-Up}, the \ic{3 * 4} will be selected because the \ic{*} is the
@@ -238,14 +238,14 @@ to select the whole \ic{int x;} and then you can use \keystroke{Shift-Down} to
 select the \ic{y} and \ic{z} siblings. Note that the screencast mentioned above
 illustrates these things much clearer.
 
-\parhead{Deleting Things} The safest way to delete something is to mark it
+\paragraph{Deleting Things} The safest way to delete something is to mark it
 (using the strategies discussed in the previous paragraph) and the press
 \keystroke{Backspace} or \keystroke{Delete}. In many places you can also simply
 press \keystroke{Backspace} behind or \keystroke{Delete} before the thing you
 want to delete.
 
 
-\parhead{Intentions} Some editing functionalities are not available via
+\paragraph{Intentions} Some editing functionalities are not available via
 "regular typing", but have to be performed via what's traditionally known as a
 quick fix. In MPS, those are called intentions. The intentions menu can be shown
 by pressing \keystroke{Alt-Enter} while the cursor is on the program element for
@@ -259,7 +259,7 @@ don't have to use the cursor keys to select from the list. So, for example, to
 export a module content (function, struct), you type 
 \keystroke{Alt-Enter}, \keystroke{ex}, \keystroke{Enter}. 
 
-\parhead{Surround-With Intentions} Surround-With intentions are used to
+\paragraph{Surround-With Intentions} Surround-With intentions are used to
 surround a selection with another construct. For example, if you select a couple
 of lines (i.e. a list of statements) in a C program, you can then surround these
 statements with an \ic{if} or with a \ic{while}. Press \keystroke{Ctrl-Alt-T}
@@ -267,7 +267,7 @@ to show the possible surround options at any time. To reemphasize: in contrast
 to regular intentions which are opened by \keystroke{Alt-Enter}, surround-with
 intentions can work on a selection that contains several nodes!
 
-\parhead{Refactorings} For many language constructs, refactorings are
+\paragraph{Refactorings} For many language constructs, refactorings are
 provided. Refactorings are more important in MPS than in "normal" text editors,
 because some (actually quite few) editing operations are hard to do manually.
 Please explore the refactorings context menu, and take note when we explain

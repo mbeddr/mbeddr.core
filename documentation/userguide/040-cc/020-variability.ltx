@@ -31,7 +31,7 @@ three languages:
 
 \subsection{Feature Models and Configurations}
 
-\parhead{Defining a Feature Model} Feature models express configuration options
+\paragraph{Defining a Feature Model} Feature models express configuration options
 and the constraints between them. They are usually represented with a graphical
 notation. An example is below.
 
@@ -76,7 +76,7 @@ use a surround intention to wrap a new feature around an existing one.
 
 
 
-\parhead{Defining Configurations} The point of a feature model is to define and
+\paragraph{Defining Configurations} The point of a feature model is to define and
 constrain the configuration space of a product. If a product configuration would
 just be expressed by a bunch of boolean variables, the configuration space would
 grow quickly, with $2^n$, where $n$ is the number of boolean config switches.
@@ -107,7 +107,7 @@ generation process}. The mechanism provided by mbeddr is generic in that it can
 be used with arbitrary artifacts expressed in arbitraray (MPS-based) languages.
 
 
-\parhead{Presence Conditions} A presence condition is an annotation on a program
+\paragraph{Presence Conditions} A presence condition is an annotation on a program
 element that specifies, under which conditions the program element is part of a
 product variant. To do so, the presence condition contains a boolean expression
 over the configuration features. For example the two \ic{report} statements and
@@ -133,7 +133,7 @@ The background color of an annotated note is computed from the expression.
 Several annotated nodes that use the same expression will have the same color
 (an idea borrowed from Christian Kaestner's CIDE).
 
-\parhead{Replacements} A presence condition is basically like an \ic{\#ifdef}:
+\paragraph{Replacements} A presence condition is basically like an \ic{\#ifdef}:
 the node to which it is attached will \emph{not} be in the resulting system if
 the presence condition is \emph{false}. But sometimes you want to \emph{replace}
 something with something else if a certain feature condition is met. You can use
@@ -150,7 +150,7 @@ function call and the \ic{10} are both replaced with a \ic{42}. Note that you'll
 get an error if you try to replace a node with something that is not
 structurally compatible, or has the wrong type.
 
-\parhead{Attribute Injection} We have seen that features can have attributes and
+\paragraph{Attribute Injection} We have seen that features can have attributes and
 configurations specify values for these attributes. These values can be injected
 into programs. The attributes of those features that are used in ancestors of
 the current node are in scope and can be used. A type check is performed and
@@ -164,7 +164,7 @@ errors are reported if the type is not compatible.
 generalized later.}
 
 
-\parhead{Projection Magic} It is possible to show and edit the program as a
+\paragraph{Projection Magic} It is possible to show and edit the program as a
 product line (with the annotations), undecorated (with no annotations) as well
 as in a given variant. The figure below shows an example. Note that due to a
 limitation in MPS, it is currently not possible to show the values of attributes
@@ -179,7 +179,7 @@ the configuration annotation on the root node.
 
 
 
-\parhead{Building Variable Systems} Building variable systems is a little bit
+\paragraph{Building Variable Systems} Building variable systems is a little bit
 tricky. The problem is that you will want to build different variants at the
 same time. To make the C build simple, each variant should live in its own
 module. This results in the following setup:
@@ -228,7 +228,7 @@ feature models.
 \greyboxnote{Currently, support is provided for C statements. Support for
 additional languages will be provided later.}
 
-\parhead{Representing Feature Models and Configurations at runtime} To be able
+\paragraph{Representing Feature Models and Configurations at runtime} To be able
 to make a variability decision at runtime, the information about the feature
 model and the configurations must be made available at runtime. A C data
 structure is used to represent the feature models. As of now, this data
@@ -296,7 +296,7 @@ module TestFeaturesOnly {
 The \ic{currentConfig} variable holds this configuration now; it can be
 passed around like any other data using the \ic{fmconfig<someFM>} type.
 
-\parhead{Writing Variant-Aware Code} As of now, variant-aware code relies on
+\paragraph{Writing Variant-Aware Code} As of now, variant-aware code relies on
 using a \ic{switch}-like statement that switches over variants. In its simplest
 form it looks like this:
 
@@ -351,7 +351,7 @@ variant<currentConfig>(f3) { x = f3.attr; }
 Note that using the \ic{feature.attr} notation is only possible inside a
 \ic{variant} statement.
 
-\parhead{Configuring Components} A particularly useful case for runtime
+\paragraph{Configuring Components} A particularly useful case for runtime
 variability is the configuration of component instances. In this case you define
 a feature model for a component, and each instance has its own configuration
 model that determines the instance's configuration. Here is an example of a
@@ -393,7 +393,7 @@ To use this additional construct, you have to use the
 \ic{com.mbeddr.cc.var.rt.comp} language in your model.
 
 
-\parhead{Verifying the Code} As of now, no verification for the code is
+\paragraph{Verifying the Code} As of now, no verification for the code is
 available. However, in the future, the following verification will be supported:
 
 \begin{itemize}

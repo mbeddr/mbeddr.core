@@ -18,7 +18,7 @@ Notice that the tutorial does not discuss every aspect of every mbeddr extension
 
 
 
-\parhead{Create new project} Start up MPS and create a new project. Call the
+\paragraph{Create new project} Start up MPS and create a new project. Call the
 project \ic{HelloWorld} and store it in a directory without blanks in the path.
 Let the wizard create a solution, but no language.
  
@@ -28,7 +28,7 @@ Let the wizard create a solution, but no language.
 
 
 
-\parhead{Project Structure and Settings} An MPS project is a collection of
+\paragraph{Project Structure and Settings} An MPS project is a collection of
 solutions\footnote{A project can also contain \emph{languages}, but these are
 only relevant to language implementors. We discuss this aspect of mbeddr in the
 \emph{Extension Guide}}. A \emph{solution} is an application project that
@@ -69,7 +69,7 @@ However, there are also a couple of Wizards in the Code menu that create these
 things automatically. }
 
  
-\parhead{Create an empty Module} The top level concept in mbeddr C programs are
+\paragraph{Create an empty Module} The top level concept in mbeddr C programs are
 \emph{modules}. Modules act as namespaces and as the unit of encapsulation. So
 the first step is to create an empty module. The \ic{mbeddr.core} C language
 does not use the artificial separation between \ic{.h} and \ic{.c} files you
@@ -136,7 +136,7 @@ see chapter \ref{PrimitiveNumericDatatypes}.
 
 
 
-\parhead{Writing the Program} Within the module you can now add contents such as
+\paragraph{Writing the Program} Within the module you can now add contents such as
 functions, \ic{struct}s or global variables. Let's enter a \ic{main} function so
 we can run the program later. You can enter a \ic{main} function in one of the
 the following ways:
@@ -212,7 +212,7 @@ module HelloWorld from HelloWorld.main imports nothing {
 
 
 \label{buildconfigHelloWorld}		
-\parhead{Build Configuration} We have to create one additional element, the
+\paragraph{Build Configuration} We have to create one additional element, the
 \ic{BuildConfigu- ration}. This specifies which modules should be compiled into
 an executable or library, as well as other aspects related to creating an
 executable. Depending on the selected target platform, a \ic{BuildConfiguration}
@@ -292,7 +292,7 @@ it.}
 
 
 
-\parhead{Building and Executing the Program} Press \keystroke{Ctrl-F9} (or
+\paragraph{Building and Executing the Program} Press \keystroke{Ctrl-F9} (or
 \keystroke{Cmd-F9} on the Mac) to rebuild the solution. In the
 \ic{HelloWorld/solutions/HelloWorld/source\_gen/HelloWorld/ main} directory you
 should now have at least the following files (there may be others, but those are not important now):

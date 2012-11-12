@@ -40,7 +40,7 @@ existing, non-mbeddr header files that should be accessible from within mbeddr C
 programs.
 
 
-\parhead{Implementation Modules} The following example shows an implementation
+\paragraph{Implementation Modules} The following example shows an implementation
 module (\ic{Im- plementationModule}) with an exported function. You can toggle
 the \emph{exported} flag with the intention \intention{Toggle Export}. The second
 module (\ic{ModuleUsingTheExportedFun- ction}) imports the
@@ -66,7 +66,7 @@ module ModuleUsingTheExportedFunction imports ImplementationModule {
 \end{lstlisting}
 
 	
-\parhead{External modules} mbeddr C code must be able to work with existing
+\paragraph{External modules} mbeddr C code must be able to work with existing
 code and existing C libraries. So to call existing functions or instantiate
 \ic{struct}s, we use the following approach:
 
@@ -102,7 +102,7 @@ repeat the basics here.
 The main part of the build configuration supports the definition of binaries.
 Binaries are either executables or libraries. 
 
-\parhead{Executables} An executable binds together a set of modules and
+\paragraph{Executables} An executable binds together a set of modules and
 compiles them into an executable. Exactly one module in a executable shall have
 a main function.
 
@@ -120,7 +120,7 @@ build infrastructure.}
 
 
  
-\parhead{Libraries} Libraries are binaries that are not executable.
+\paragraph{Libraries} Libraries are binaries that are not executable.
 Specifically, they are \ic{libXXXX.a} files which can be linked into
 executables. A library will typically reside in its own MPS model (and hence in
 its own \ic{source\_gen} directory). To create a library, create a build
@@ -170,7 +170,7 @@ executable AnExe isTest: true {
 
 
 
-\parhead{Extending the Build Process} The build configuration is built in a way
+\paragraph{Extending the Build Process} The build configuration is built in a way
 it is easily extensible. We will discuss details in the extension guide, but
 here are a couple of hints:
 
@@ -297,7 +297,7 @@ default values, you can use an intention on the \ic{TypeSizeConfiguration}.
   \includegraphics[width=7cm]{figures/core/AddDefaultTSC.png}
 \end{center}
 
-\parhead{Integral Types} The following integral types are not allowed in
+\paragraph{Integral Types} The following integral types are not allowed in
 implementation modules, and can only be used in external modules for
 compatibility: \ic{char, short, int, long, long long}, as well as their
 unsigned counterparts. The following list shows the default mapping of the C99
@@ -321,7 +321,7 @@ types:
 	\item \ic{uint64} $\rightarrow$ \ic{unsigned long long}
 \end{itemize}
 
-\parhead{Floating Point Types} The size of floating point types
+\paragraph{Floating Point Types} The size of floating point types
 can alsoi be speficied, e.g. if they differ from the IEEE754 sizes.
 \begin{itemize}
 	\item \ic{float} $\rightarrow$ \ic{32}
@@ -392,7 +392,7 @@ is a characteristic of a type, not of a variable.
 
 
 
-\parhead{Pointer Arithmetics} For pointer arithmetics you have to use an
+\paragraph{Pointer Arithmetics} For pointer arithmetics you have to use an
 explicit type conversion \ic{pointer2int} and \ic{int2pointer}, as illustrated
 in the following code. You can also see the usage of pointer dereference
 (\ic{*xp}) and assigning an address with \ic{\&}.
@@ -451,7 +451,7 @@ module BasicPointer imports stdlib {
 \end{lstlisting}
 
 
-\parhead{Function Pointers} In regular C, you define a function pointer type
+\paragraph{Function Pointers} In regular C, you define a function pointer type
 like this: \ic{int (*pt2Fun) (int, int)}. The first part is the
 return type, followed by the name und a comma separated argument type list. The pointer
 asterisk is added before the name. This is a rather ugly notation. In mbeddr, we
@@ -632,7 +632,7 @@ module ArrayApplication imports nothing {
 
 \subsection{Structs and Unions}
 
-\parhead{Initialization} We support initialization expressions for
+\paragraph{Initialization} We support initialization expressions for
 \ic{struct}s and \ic{union}s. Both are quite close to regular C. Here is the one
 for \ic{struct}s:
 
@@ -661,7 +661,7 @@ U u1 = {m1 = 10};
 U u3 = {m2 = true}; 
 \end{lstlisting}
 
-\parhead{The with \textbf{Statement}} Just like Pascal, mbeddr C supports
+\paragraph{The with \textbf{Statement}} Just like Pascal, mbeddr C supports
 a \ic{with} statement for \ic{struct}s that avoids repeating the context
 expression\footnote{Note that since the generator generates code that evaluates the
 context expression several times, the context expression must be idempotent. An
@@ -737,7 +737,7 @@ runtime. This will be added in the future.}
 
 
 
-\parhead{Counting Message Calls} Sometimes it is useful to be able to find out
+\paragraph{Counting Message Calls} Sometimes it is useful to be able to find out
 if and how often a message was actually reported. This is particularly useful
 in testing when you want to find out whether a message (which is supposed to
 report some kind of error) was actually called (and hence the error actually
@@ -760,7 +760,7 @@ exported test case testComputer {
 \end{lstlisting}
 
 
-\parhead{Finding the Node that reported a Message} Reporting is used to report
+\paragraph{Finding the Node that reported a Message} Reporting is used to report
 failed assertions in tests and other problems with program execution.
 Efficiently finding the node that reported a message (eg. a failed assertion) is
 important. There are two ways to do this. The first one includes the location
@@ -805,7 +805,7 @@ You can update the error output text in the text area at any time; press the
 button with the two green arrows to refresh the found nodes on the right.
 
 
-\parhead{Logging Expressions} For debugging purposes it is often useful to log
+\paragraph{Logging Expressions} For debugging purposes it is often useful to log
 expressions without manually creating a message and a report statement. To this
 end, the log expression can be used. Here is some example code:
 
@@ -836,7 +836,7 @@ The former retains the AST structure of code, but wraps it in a comment. The
 latter supports adding prose text to program elements.
 
 
-\parhead{Commenting out Code} Code that is commented out retains its syntax
+\paragraph{Commenting out Code} Code that is commented out retains its syntax
 highlighting, but is shaded with a grey background. 
 
 \begin{center} 
@@ -866,7 +866,7 @@ things.}.
 
 
 
-\parhead{Documentation} mbeddr supports comments. There are several kinds of
+\paragraph{Documentation} mbeddr supports comments. There are several kinds of
 comments that can be used: single line statement comments, multi-line statement
 comments and element documentations.
 
@@ -907,7 +907,7 @@ Currently, all statements and module contents can be annotated with an element
 documentation, as well as many other concepts such as states in state machines
 or ports in components.
 
-\parhead{TODOs} mbeddr comes with a special view for collecting and showing
+\paragraph{TODOs} mbeddr comes with a special view for collecting and showing
 TODOs in comments. Anywhere within the comments discussed above, you can write
 \ic{TODO and then some text} or \ic{TODO(category) and then some text} (see
 next screenshot):

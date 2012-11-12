@@ -37,7 +37,7 @@ use than the underlying CTL specifications is available.
 
 \subsection{Performing Analyses}
 
-\parhead{Restrictions} We support the analysis of only a subset of the
+\paragraph{Restrictions} We support the analysis of only a subset of the
 state-machines language provided by mbeddr. More precisely, we allow only the
 following features:
 
@@ -59,7 +59,7 @@ If a particular state machine does not conform to these restrictions and error
 is reported. No verification is possible in this case.
 
 
-\parhead{Running the Verification} The first step for analyzing decision tables
+\paragraph{Running the Verification} The first step for analyzing decision tables
 is to add the devkit \ic{com.mbeddr.analyses.statemachine} to the model that
 contains the state machine that should be verified.
 
@@ -97,7 +97,7 @@ particular verification condition. By clicking on a state in the
 counterexample table, the corresponding node will be highlighted in the editor.
 
 
-\parhead{Custom Conditions} Custom defined verification conditions are defined
+\paragraph{Custom Conditions} Custom defined verification conditions are defined
 by instantiating patterns in the Inspector view of the node \ic{verifiable}.
 Each of these patterns has a temporal scope (\ie \ic{Global}, \ic{Before}, 
 \ic{After}, \ic{Between Q and R}, \ic{After Q Until R}) that restricts a certain
