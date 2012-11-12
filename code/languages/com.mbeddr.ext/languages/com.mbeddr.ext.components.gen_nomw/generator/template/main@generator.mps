@@ -7880,9 +7880,9 @@
                                         </node>
                                         <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="8972050657255741538">
                                           <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="cu2c.~SNode%dhasProperty(java%dlang%dString)%cboolean" resolveInfo="hasProperty" />
-                                          <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StaticFieldReference" typeId="tpee.1070533707846" id="8972050657255741539">
-                                            <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="qh2w.8972050657255459795" resolveInfo="PREVENT_CONSTRUCTOR_CALL" />
-                                            <link role="classifier" roleId="tpee.1144433057691" targetNodeId="qh2w.3378779091584469583" resolveInfo="GeneratorHelper" />
+                                          <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StaticFieldReference" typeId="tpee.1070533707846" id="437987614769627621">
+                                            <link role="classifier" roleId="tpee.1144433057691" targetNodeId="eup9.437987614769616869" resolveInfo="ComponentsConstants" />
+                                            <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="eup9.437987614769627616" resolveInfo="PREVENT_CONSTRUCTOR_CALL" />
                                           </node>
                                         </node>
                                       </node>

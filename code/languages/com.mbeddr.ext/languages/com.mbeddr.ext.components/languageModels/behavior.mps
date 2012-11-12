@@ -247,6 +247,9 @@
       <property name="virtualPackage" nameId="tpck.1193676396447" value="comp.compType" />
       <link role="concept" roleId="1i04.1225194240799" targetNodeId="v7ag.9184727592626304283" resolveInfo="ComponentFieldRef" />
     </node>
+    <node type="tpee.ClassConcept" typeId="tpee.1068390468198" id="437987614769616869">
+      <property name="name" nameId="tpck.1169194664001" value="ComponentsConstants" />
+    </node>
   </roots>
   <root id="4491876417845484936">
     <node role="method" roleId="1i04.1225194240805" type="1i04.ConceptMethodDeclaration" typeId="1i04.1225194472830" id="6209278014151673617">
@@ -10374,6 +10377,22 @@
       </node>
       <node role="returnType" roleId="tpee.1068580123133" type="tpee.BooleanType" typeId="tpee.1070534644030" id="9184727592626487294" />
       <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="9184727592626487295" />
+    </node>
+  </root>
+  <root id="437987614769616869">
+    <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="437987614769616870" />
+    <node role="constructor" roleId="tpee.1068390468201" type="tpee.ConstructorDeclaration" typeId="tpee.1068580123140" id="437987614769616871">
+      <node role="returnType" roleId="tpee.1068580123133" type="tpee.VoidType" typeId="tpee.1068581517677" id="437987614769616872" />
+      <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="437987614769616873" />
+      <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="437987614769616874" />
+    </node>
+    <node role="staticField" roleId="tpee.1128555889557" type="tpee.StaticFieldDeclaration" typeId="tpee.1070462154015" id="437987614769627616">
+      <property name="name" nameId="tpck.1169194664001" value="PREVENT_CONSTRUCTOR_CALL" />
+      <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="437987614769627617" />
+      <node role="type" roleId="tpee.5680397130376446158" type="tpee.StringType" typeId="tpee.1225271177708" id="437987614769627618" />
+      <node role="initializer" roleId="tpee.1068431790190" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="437987614769627619">
+        <property name="value" nameId="tpee.1070475926801" value="PREVENT_CONSTRUCTOR_CALL" />
+      </node>
     </node>
   </root>
 </model>
