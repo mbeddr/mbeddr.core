@@ -145,6 +145,25 @@ content in the \ic{foreach}'s \ic{array} child.}
 \label{foreachGenerator}
 \end{figure}
  
+To make this generator work well with the C-to-text generator, we have to make
+sure that this one runs before the C-to-text generator. To do this we specify a
+dependency on the \ic{modules.gen} generator:
+
+\begin{center} 
+  \includegraphics[width=0.6\columnwidth]{figures/tutorial/gendep.png}
+\end{center} 
+
+We then add a \ic{runs strictly before} priority from our generator to the
+\ic{modules.gen} generator. This ensures that ours runs before the C-to-text
+generator.
+
+\begin{center} 
+  \includegraphics[width=0.6\columnwidth]{figures/tutorial/genprio.png}
+\end{center} 
+
+
+
+
 
 
 \paragraph{The \ic{it} \textbf{Expression}} In terms of abstract syntax, the
