@@ -93,14 +93,14 @@ of \ic{origin}.
 
 \subsection{Preliminaries}
 
-\paragraph{VCS Granularity} MPS reuses the version control integration from the
+\parhead{VCS Granularity} MPS reuses the version control integration from the
 IDEA platform. Consequently, the granularity of version control is the file.
 This is quite natural for project files and the like, but for MPS models it can
 be confusing at the beginning. Keep in mind that each \emph{model}, living in
 solutions or languages, is represented as an XML file, so it is these files that
 are handled by the version control system.
 
-\paragraph{The MPS Merge Driver} MPS comes with a special merge driver for git (as
+\parhead{The MPS Merge Driver} MPS comes with a special merge driver for git (as
 well as for SVN) that makes sure MPS models are merged correctly. This merge
 driver has to be configured in the local git settings. In the MPS version
 control menu there is an entry \emph{Install Version Control AddOn}. Make sure
@@ -114,7 +114,7 @@ you execute this menu entry before proceeding any further. As a result, your
 \end{lstlisting}
 
 
-\paragraph{The .gitignore} For all projects, the \ic{.iws} file should be added to
+\parhead{The .gitignore} For all projects, the \ic{.iws} file should be added to
 \ic{.gitignore}, since this contains the local configuration of your project and
 should not be shared with others.
 
@@ -142,7 +142,7 @@ repo:
 Make sure the \ic{.history} files are \emph{not} added to the \ic{gitignore}!
 These are important for MPS-internal refactorings.
 
-\paragraph{MPS' caches and Branching} MPS keeps all kinds of project-related data
+\parhead{MPS' caches and Branching} MPS keeps all kinds of project-related data
 in various caches. These caches are outside the project directory and are hence
 not checked into the VCS. This is good. But it has one problem: If you change
 the branch, your source files change, while the caches are still in the

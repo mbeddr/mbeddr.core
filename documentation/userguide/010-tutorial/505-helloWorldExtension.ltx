@@ -32,7 +32,7 @@ In the following we first describe the definition of the \ic{foreach} itself; we
 look at the definition of its assciated \ic{it} expression in a separate
 paragraph at the end of this subsection.
 
-\paragraph{Structure/Abstract Syntax}  In the new language, we define the
+\parhead{Structure/Abstract Syntax}  In the new language, we define the
 \ic{ForeachStatement} concept. It should be usable wherever C expects
 \ic{Statement}s (i.e. in functions), so \ic{ForeachStatement} extends the
 \ic{Statement} concept defined in the C core. \ic{ForeachState- ment}s have
@@ -75,7 +75,7 @@ defined in the C core: it extends \ic{Statement} and it owns two
 to instantiate a \ic{ForeachStatement}.
 
 
-\paragraph{Editor/Concrete Syntax} An editor defines the concrete syntax of a
+\parhead{Editor/Concrete Syntax} An editor defines the concrete syntax of a
 concept. The \ic{foreach} editor (\fig{foreachEditorImage}) consists of a
 horizontal list of editor cells containing: the \ic{foreach} keyword, the
 opening parenthesis, the embedded editor of the \ic{array}, the \ic{sized}
@@ -95,7 +95,7 @@ how the editor definition relates to it.}
 \end{figure}
 
 
-\paragraph{Type System} Two type checks must be enforced.
+\parhead{Type System} Two type checks must be enforced.
 The type of the \ic{array} must be \ic{ArrayType}, and the type of \ic{len} must
 be \ic{int64} (or any of its shorter subtypes). The code below shows the
 necessary code using MPS' rule-based type system engine.
@@ -116,7 +116,7 @@ rule typeof_ForeachStatement applicable for ForeachStatement as fes
  
 
 
-\paragraph{Generator} The generator reduces a \ic{ForeachStatement} to a regular
+\parhead{Generator} The generator reduces a \ic{ForeachStatement} to a regular
 \ic{for} statement that iterates over the elements with a counter variable
 \ic{\_\_c} (\fig{foreachGenerator}). Inside the \ic{for} body, we create a
 variable \ic{\_\_it} that refers to the array element at position \ic{\_\_c}.
@@ -166,7 +166,7 @@ generator.
 
 
 
-\paragraph{The \ic{it} \textbf{Expression}} In terms of abstract syntax, the
+\parhead{The \ic{it} \textbf{Expression}} In terms of abstract syntax, the
 \ic{ItExpression} must inherit from the C's \ic{Expression} concept to make it
 usable in an expression context. We define an alias \ic{it}. The editor is
 trivial, it consists of one cell with the keyword \ic{it}. The type of \ic{it}

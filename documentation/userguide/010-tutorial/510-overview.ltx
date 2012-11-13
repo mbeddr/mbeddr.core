@@ -118,7 +118,7 @@ exit value.}
 
 
 
-\paragraph{Structure} \ic{Module}s own a collection of \ic{IModuleContent}s,
+\parhead{Structure} \ic{Module}s own a collection of \ic{IModuleContent}s,
 an interface that defines the properties of everything that can reside directly in
 a module. All top-level constructs such as \ic{Function}s implement
 \ic{IModuleContent}. \ic{IModuleContent} extends 
@@ -135,7 +135,7 @@ shows some of the relevant concepts and languages.
 
 
 
-\paragraph{Constraints} A test case contains a \ic{StatementList}, so any C
+\parhead{Constraints} A test case contains a \ic{StatementList}, so any C
 statement can be used in a test case. \ic{StatementList} becomes available to
 the unit test language through its dependency on the \ic{statements} language.
 \ic{unittest} also defines new statements: \ic{assert} and \ic{fail}. They
@@ -160,7 +160,7 @@ least one of its ancestors is a \ic{TestCase}:
 
 
 
-\paragraph{Transformation} The new language concepts in \ic{unittest} are reduced
+\parhead{Transformation} The new language concepts in \ic{unittest} are reduced
 to C concepts: the \ic{TestCase} is transformed to a \ic{void} function without
 arguments and the \ic{assert} statement is transformed into a \ic{report}
 statement defined in the \ic{util} language. The \ic{report} statement, in turn,
@@ -219,7 +219,7 @@ statement must only be visible inside its body and they have to shadow
 variables of the same name declared in outer scopes (such as the \ic{a} declared
 in the second line of the \ic{measure} function in \fig{safeheap}).
 
-\paragraph{Structure} The \ic{safeheap} statement extends \ic{Statement}. It
+\parhead{Structure} The \ic{safeheap} statement extends \ic{Statement}. It
 contains a \ic{StatementList} as its body, as well as a list of
 \ic{SafeHeapVar}s. These extend \ic{LocalVarDecl}, so they fit with the
 existing mechanism for handling variable shadowing (explained below).
@@ -236,7 +236,7 @@ tries to escape.}
 \end{figure}
 
 
-\paragraph{Behaviour} \ic{LocalVarRef}s are expressions that reference
+\parhead{Behaviour} \ic{LocalVarRef}s are expressions that reference
 \ic{LocalVarDecl}. A scope constraint, a mechanism provided by MPS, determines
 the set of visible variables for a given \ic{LocalVarRef}. We implement this
 constraint by plugging into mbeddr's generic local variable scoping mechanism
@@ -278,7 +278,7 @@ public sequence<node<LocalVariableDecl>> getContainedLocalVars() {
 \end{lstlisting} 
 
 
-\paragraph{Type System} To make the \ic{safeheap} statement work correctly, we
+\parhead{Type System} To make the \ic{safeheap} statement work correctly, we
 have to ensure that the variables declared and allocated in the \emph{safeheap}
 statement do not escape from its scope. To prevent this, an error is reported if
 a reference to a \ic{safeheap} variable is passed to a function.
@@ -343,7 +343,7 @@ type system rules as well.
 
 
 
-\paragraph{Structure} The decision table extends the \ic{Expression} concept
+\parhead{Structure} The decision table extends the \ic{Expression} concept
 defined in the \ic{expres- sions} language. Decision tables contain a list of
 expressions for the column headers, one for the row headers and
 another one for the result values. It also contains a child of type \ic{Type} 
@@ -355,7 +355,7 @@ textual notations, the alias is typically made to be the same as the "leading
 keyword", e.g. \ic{assert}).
 
 
-\paragraph{Editor} Defining a tabular editor is straight forward: the editor
+\parhead{Editor} Defining a tabular editor is straight forward: the editor
 definition contains a \ic{table} cell, which delegates to a Java class that
 implements \ic{ITableModel}. This is similar to the approach to the approach
 used by Java Swing. It provides methods such as \ic{getValueAt(int row, int
@@ -364,7 +364,7 @@ table-based editor. To embed another node in a table cell (such as the
 expression in the decision table), the implementation of \ic{getValueAt} simply returns this node.
 
 
-\paragraph{Type System} As mentioned above, MPS uses unification in the type
+\parhead{Type System} As mentioned above, MPS uses unification in the type
 system. Language concepts specify type equations that contain type literals
 (such as \ic{boolean}) as well as type variables (such as
 \ic{typeof(dectab)}). The unification engine then tries to assign values to the
@@ -460,7 +460,7 @@ the typing rules for the existing operators (such as
 % \end{figure}
  
 
-\paragraph{Structure} Derived and convertible \ic{UnitDeclaration}s are
+\parhead{Structure} Derived and convertible \ic{UnitDeclaration}s are
 \ic{IModuleContents}. Derived unit declarations specify a name (\ic{mps},
 \ic{kmh}) and the corresponding SI base units (\ic{m}, \ic{s}) plus an
 exponent; a convertible unit declaration specifies a name and a conversion
@@ -473,7 +473,7 @@ represented in programs as \ic{baseType/unit/}. We also provide
 \ic{100 kmh}).
 
 
-\paragraph{Scoping} \ic{LiteralWithUnit}s and \ic{UnitType}s refer to a
+\parhead{Scoping} \ic{LiteralWithUnit}s and \ic{UnitType}s refer to a
 \ic{UnitDeclaration}, which is a module content. According to the visibility
 rules, valid targets for the reference are the \ic{UnitDeclaration}s in the
 same module, and the \emph{exported} ones in all imported modules. This rule
@@ -500,7 +500,7 @@ link {unit} search scope:
 
 
 
-\paragraph{Type System} We have seen how MPS uses equations and unification to
+\parhead{Type System} We have seen how MPS uses equations and unification to
 specify type system rules. However, there is special support for binary
 operators that makes overloading for new types easy:
 overloaded operations containers essentially specify 3-tuples of
@@ -592,7 +592,7 @@ can be attached. We use annotations in several places: the \ic{safe} annotation 
 previous section, the requirements traces and the product line variability
 presence conditions.
 
-\paragraph{Structure} We illustrate the annotation mechanism based on the
+\parhead{Structure} We illustrate the annotation mechanism based on the
 requirements traces. The code below shows the structure. Notice how it
 extends the MPS-predefined concept \ic{NodeAttribute} (it sould be named
 \ic{Node- Annotation}). It also specifies a \ic{role}, which is the name of the
@@ -616,7 +616,7 @@ concept TraceAnnotation extends NodeAttribute implements <none>
     attributed = BaseConcept                    
 \end{lstlisting} 
 
-\paragraph{Editor} As mentioned above, in the editor, annotations look as if they
+\parhead{Editor} As mentioned above, in the editor, annotations look as if they
 \emph{surrounded} their parent node (although they are in fact children). 
 \fig{traces} shows the definition of the editor of the requirements trace
 annotation (and an example is shown in \fig{screenshot}): it puts the trace to
@@ -671,7 +671,7 @@ intention addTrace for BaseConcept {
 \subsection{Alternative Transformations: Range Checking}
 
 
-\paragraph{Safe Modules} Safe modules restrict C to help prevent writing risky
+\parhead{Safe Modules} Safe modules restrict C to help prevent writing risky
 code. For example, runtime range checking is performed for arithmetic
 expressions and assignments. The \ic{safemodules} language defines an
 \emph{annotation} to mark \ic{Modules} as safe (we will discuss annotations in
@@ -679,7 +679,7 @@ the next subsection). If a module is safe, the binary operators such as \ic{+}
 or \ic{*} are replaced with calls to functions that, in addition to performing
 the addition or multiplication, perform a range check.
 
-\paragraph{Transformation}  The transformation that replaces the binary operators
+\parhead{Transformation}  The transformation that replaces the binary operators
 with function calls is triggered by the presence of this annotation on the
 \ic{Module} which contains the operator. \fig{safetransformation} shows the code. The
 \ic{@safeAnnotation != null} checks for the presence of the annotation. MPS 

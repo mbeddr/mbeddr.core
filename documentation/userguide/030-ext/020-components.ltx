@@ -19,7 +19,7 @@ sets of functions, \ic{enum}s, \ic{typedef}s etc. into different \ic{.c} and
 To use the components in your C programs, please include the
 \ic{com.mbeddr.components} devkit.
 
-\paragraph{Interfaces} An interface is essentially a set of operation
+\parhead{Interfaces} An interface is essentially a set of operation
 signatures, similar to function prototypes in C.
 \ic{query} marks functions as not performing any state changes; they are assumed
 to be invokable any number of times without side effects (something we do not
@@ -37,7 +37,7 @@ exported interface DriveTrain  {
 }
 \end{lstlisting}
 
-\paragraph{Components} Components can provide and require interfaces via
+\parhead{Components} Components can provide and require interfaces via
 \emph{ports}. A \emph{provided} port means that the component implements the
 provided interface's operations, and clients can invoke them. These invocations
 happen via required ports. A \emph{required} port expresses an expectation of a
@@ -159,7 +159,7 @@ exported component OrienterImpl extends nothing {
 \end{lstlisting}
 
 
-\paragraph{Instantiation} A key difference of mbeddr components compared to C++
+\parhead{Instantiation} A key difference of mbeddr components compared to C++
 classes is that mbeddr component instances are assumed to be allocated and
 connected during program startup (embedded software typically allocates all
 memory at program startup to avoid failing during execution), not at arbitrary
