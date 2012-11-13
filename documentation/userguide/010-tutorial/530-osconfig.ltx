@@ -1,0 +1,107 @@
+\section{OS Configuration}
+
+In this section we discuss the development of external DSLs (i.e. new languages
+that are not directly related to C). In the chapter we also discuss the
+integration of such a language with mbeddr C after the fact. As an example we
+use operating system configuration, something that is necessary in many
+scenarios, among them the Lego Mindstorms/OSEK case study discussed from the
+website:
+
+\ \ \ \ic{http://mbeddr.wordpress.com/further-reading/}
+
+In this case study we have built an implementation of the OIL language used for
+configuring the OSEK operating system. Here is an screenshot with an example OIL
+file. It configures all kinds of aspects of the OS, including tasks, events,
+various flags and the threadng model.
+
+\begin{center} 
+  \includegraphics[scale=0.5]{figures/tutorial/oil0.png}
+\end{center}
+
+
+
+\subsection{A DSL for OS Configuration}
+
+In this example we build a simplified version of such a language. For now,
+the operating system configuration DSL essentially defines a set of tasks:
+
+
+\begin{lstlisting}[morekeywords={OS, Config, task, prio}]
+OS Config                           
+------------------------------------
+                                    
+task mainTask prio = 1              
+task eventHandler prio = 2          
+task emergencyHandler prio = 3      
+\end{lstlisting}
+
+
+
+\parhead{A New Language} We create a new language \ic{mbeddr.tutorial.osconfig}
+using the $New \rightarrow Language$ menu item on the project. Note that this
+language does \emph{not} extend any other language. It is completely standaline,
+a completely separate DSL developed with MPS -- no relationship to mbeddr.
+
+\parhead{Structure} In the language we create a new concept \ic{OSConfig}. This
+is the concept that contains a complete OS configuration and should be useable
+as a root node inside models. This is why we set its \ic{instance can be root}
+property to \ic{true}:
+
+\begin{lstlisting}[language=mps]
+concept OSConfig extends BaseConcept
+  instance can be root: true        
+\end{lstlisting}
+
+We also create a new concept interface \ic{IOSConfigContents}. We make it extend
+from \ic{INamedConcept} to give each instance a name:
+
+\begin{lstlisting}[language=mps]
+interface concept IOSConfigContents extends INamedConcept
+\end{lstlisting}
+
+We can now go back to the \ic{OSConfig} and add child collection \ic{contents}
+of type \ic{IOSConfigContents}:
+
+\begin{lstlisting}[language=mps]
+concept OSConfig extends BaseConcept
+  instance can be root: true
+  children        
+    IOSConfigContents contents 0..n
+\end{lstlisting}
+                                    
+Let us now create a concrete concept that represents some kind of configuration
+content: the task definition:
+
+\begin{lstlisting}[language=mps]
+concept TaskDef extends BaseConcept         
+                implements IOSConfigContents
+  properties:                               
+    prio : integer                            
+\end{lstlisting}
+
+\parhead{Editors} The interface gets no editor, of course. For the task
+definition we simply define an indent collection with the \ic{task} keyword, the
+name and the priority:
+
+\begin{center} 
+  \includegraphics[scale=0.5]{figures/tutorial/taskdefEditor.png}
+\end{center}
+
+Finally, the editor for the \ic{OSConfig} itself we define a vertical list that
+holds the title, a line, a blank line (a constant with a space in it) and the
+vertical list of the \ic{contents} child collection.
+
+\begin{center} 
+  \includegraphics[scale=0.5]{figures/tutorial/osconfigEditor.png}
+\end{center}
+
+
+
+
+
+
+
+
+
+
+

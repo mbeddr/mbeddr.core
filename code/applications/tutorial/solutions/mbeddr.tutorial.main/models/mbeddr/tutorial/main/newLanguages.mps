@@ -6,6 +6,7 @@
   <language namespace="d72d3ee4-7395-438a-9a07-74a38a82cb0e(com.mbeddr.ext.physicalunits.c)" />
   <language namespace="32128dbe-9db6-4d05-9eaa-43601c29f276(mbeddr.tutorial.foreach)" />
   <language namespace="07b580a3-cb92-4b5d-ab7c-9e2d58b9d602(mbeddr.tutorial.blocks)" />
+  <language namespace="a577a05d-67ad-41db-9547-6e5f0730b85d(mbeddr.tutorial.osconfig)" />
   <devkit namespace="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="3c6d" modelUID="r:d6d71b6a-f5ea-4b72-bd01-9d5b19792726(com.mbeddr.ext.physicalunits.c.structure)" version="0" implicit="yes" />
@@ -23,6 +24,7 @@
   <import index="e1tx" modelUID="r:bd5ec23c-c294-47cc-a078-675c03abdb69(mbeddr.tutorial.main.defaultExtensions)" version="-1" implicit="yes" />
   <import index="f8ij" modelUID="r:ddffbaac-6bb7-469e-a768-5fcd76552224(mbeddr.tutorial.foreach.structure)" version="-1" implicit="yes" />
   <import index="bgic" modelUID="r:f8541cf4-6148-4458-a81b-adf49c8e050c(mbeddr.tutorial.blocks.structure)" version="0" implicit="yes" />
+  <import index="rzjx" modelUID="r:34e48600-25da-4c7c-b6a4-8cd6f6deb117(mbeddr.tutorial.osconfig.structure)" version="-1" implicit="yes" />
   <roots>
     <node type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="7727566415687867284">
       <property name="name" nameId="tpck.1169194664001" value="SafeHeap" />
@@ -50,6 +52,7 @@
     <node type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="7977993180520273424">
       <property name="name" nameId="tpck.1169194664001" value="Blocks" />
     </node>
+    <node type="rzjx.OSConfig" typeId="rzjx.7977993180520290853" id="7977993180520290887" />
   </roots>
   <root id="7727566415687867284">
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="7977993180520004842">
@@ -1165,6 +1168,20 @@
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="7977993180520273571">
       <property name="name" nameId="tpck.1169194664001" value="empty_1352793772531_13" />
+    </node>
+  </root>
+  <root id="7977993180520290887">
+    <node role="contents" roleId="rzjx.7977993180520290882" type="rzjx.TaskDef" typeId="rzjx.7977993180520290857" id="7977993180520291901">
+      <property name="name" nameId="tpck.1169194664001" value="mainTask" />
+      <property name="prio" nameId="rzjx.7977993180520290859" value="1" />
+    </node>
+    <node role="contents" roleId="rzjx.7977993180520290882" type="rzjx.TaskDef" typeId="rzjx.7977993180520290857" id="7977993180520291903">
+      <property name="name" nameId="tpck.1169194664001" value="eventHandler" />
+      <property name="prio" nameId="rzjx.7977993180520290859" value="2" />
+    </node>
+    <node role="contents" roleId="rzjx.7977993180520290882" type="rzjx.TaskDef" typeId="rzjx.7977993180520290857" id="7977993180520291905">
+      <property name="name" nameId="tpck.1169194664001" value="emergencyHandler" />
+      <property name="prio" nameId="rzjx.7977993180520290859" value="3" />
     </node>
   </root>
 </model>
