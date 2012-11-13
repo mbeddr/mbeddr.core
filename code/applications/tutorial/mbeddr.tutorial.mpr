@@ -14,6 +14,7 @@
       <modulePath path="${project}/languages/memory/memory.mpl" folder="" />
       <modulePath path="${project}/languages/osconfig/osconfig.mpl" folder="" />
       <modulePath path="${project}/solutions/mbeddr.tutorial.main/mbeddr.tutorial.main.msd" />
+      <modulePath path="${project}/solutions/mbeddr.tutorial.typesystemtests/typesystemtests.msd" folder="" />
     </projectModules>
     <genConfs />
   </component>
