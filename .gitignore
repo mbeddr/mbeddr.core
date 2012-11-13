@@ -46,6 +46,10 @@ code/languages/*/languages/*/solutions/*/classes_gen/
 code/languages/*/languages/*/solutions/*/source_gen.caches/
 code/languages/*/languages/*/solutions/*/source_gen/
 
+code/languages/*/languages/*/solutions/source_gen
+code/languages/*/languages/*/solutions/source_gen.caches
+code/languages/*/languages/*/solutions/classes_gen
+
 # -----------------------------------------------------------
 # * lib - here we seem to need the generated sources.
 code/languages/*/lib/*/classes_gen
