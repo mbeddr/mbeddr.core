@@ -15,6 +15,14 @@
   <component name="ProjectLibraryManager">
     <option name="libraries">
       <map>
+        <entry key="mbeddr.assembla">
+          <value>
+            <Library>
+              <option name="name" value="mbeddr.assembla" />
+              <option name="path" value="${mbeddr.assembla.ext.home}/code/languages" />
+            </Library>
+          </value>
+        </entry>
         <entry key="mbeddr.core">
           <value>
             <Library>
