@@ -152,8 +152,8 @@ automatically be the name of the model in which it resides. You can achieve this
 by implementing a getter for the name in the constraints section:
 
 
-\begin{lstlisting}[language=mps]
-concepts constraints OSConfig { 
+\begin{lstlisting}[language=mps, morekeywords={property, get, is, valid}]
+concept constraints OSConfig { 
    
   property {name} 
     get:(node, scope)->string { 
@@ -167,7 +167,8 @@ concepts constraints OSConfig {
 We also have to implement the textgen for the \ic{TaskDef}. It is really
 trivial:
 
-\begin{lstlisting}[language=mps]
+\begin{lstlisting}[language=mps, morekeywords={text, gen, component,
+extension, encoding, append}]
 text gen component for concept TaskDef { 
   (node, context, buffer)->void { 
     append {task} ${node.name} { } {(} ${node.prio + ""} {}} ; 
@@ -180,10 +181,79 @@ a \ic{.osconfig} file that contains the operating system configuration.
 
 
 
+\subsection{Connecting to C}
+
+The language developed so far is completely independent of mbeddr C (even
+though for technical reasons it depends on \ic{com.mbeddr.base} for the
+\ic{IGeneratesCodeToIDE} interface). However, we may still want to refer to
+concepts defined in that language from C code. 
+
+In our example, we may want to provide a task implementation in C that
+corresponds to the task definitions in the OS configuration. In classical C, you
+may have to define a function that has the same name as the task and use a
+specific signature. Maybe some kind of special modifier is necessary. While we
+may generate such code (see below), we want to provide a better programming
+experience to the end user. In the code below you can see the new keyword
+\ic{task}; it represent a task implementation. The name behind it
+(\ic{nameTask}) isn't just a name. Instead it is a reference to a task
+definition in an OS config file. Pressing \ic{Ctrl-Space} will code-complete to
+all available task definitions.
+
+
+\begin{lstlisting}[language=mbeddr, morekeywords={task}]
+module Tasks imports nothing { 
+   
+  void aHelperFunction() { } 
+   
+  task mainTask { 
+    // here is some code that implements the task 
+    int8 aVariable = 10; 
+    aHelperFunction(); 
+  }
+}
+\end{lstlisting}
 
 
 
 
+\parhead{Another New Language} We create a new language
+\ic{mbeddr.tutorial.osconfig.cimpl}. It acts as the adapter between mbeddr C and
+the OS configuration. To this end it extends these three languages:
+
+\begin{center} 
+  \includegraphics[scale=0.5]{figures/tutorial/osconfigcimpl.png}
+\end{center}
+ 
+
+\parhead{Structure} We create a new concept \ic{TaskImpl} that implements
+\ic{IModuleContent} so it can be used inside modules. It has a single reference
+to a \ic{TaskDef} as well as a \ic{StatementList} for the body:
+
+
+\begin{lstlisting}[language=mps, morekeywords={implements}]
+concept TaskImpl extends BaseConcept      
+                 implements IModuleContent
+  children:                               
+    StatementList body  1
+                                          
+  references:                             
+    TaskDef       task  1      
+                                          
+  concept properties:                     
+    alias = task                            
+\end{lstlisting}
+                                          
+Note that we specify an alias for the concept even though it is technically a
+smart reference (it has exactly one reference). However, for this guy we do
+\emph{not} want to trigger the special editor behavior. Instead we want the user
+to first create a \ic{TaskImpl} node by typing \ic{task} in a module and then
+select the reference to the \ic{TaskDef}.
+
+Normally we would have to define a scope for the \ic{task} reference. However,
+the default behavior (which puts all the nodes in the current model into the
+scope) is exactly what we want so we don't have to do anything.
+
+\parhead{Generator}
 
 
 

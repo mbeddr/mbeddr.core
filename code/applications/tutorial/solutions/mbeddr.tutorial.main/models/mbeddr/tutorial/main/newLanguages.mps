@@ -7,6 +7,7 @@
   <language namespace="32128dbe-9db6-4d05-9eaa-43601c29f276(mbeddr.tutorial.foreach)" />
   <language namespace="07b580a3-cb92-4b5d-ab7c-9e2d58b9d602(mbeddr.tutorial.blocks)" />
   <language namespace="a577a05d-67ad-41db-9547-6e5f0730b85d(mbeddr.tutorial.osconfig)" />
+  <language namespace="ce2335b7-fcfd-403e-8ace-08dd457fd818(mbeddr.tutorial.osconfig.cimpl)" />
   <devkit namespace="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="3c6d" modelUID="r:d6d71b6a-f5ea-4b72-bd01-9d5b19792726(com.mbeddr.ext.physicalunits.c.structure)" version="0" implicit="yes" />
@@ -25,6 +26,7 @@
   <import index="f8ij" modelUID="r:ddffbaac-6bb7-469e-a768-5fcd76552224(mbeddr.tutorial.foreach.structure)" version="-1" implicit="yes" />
   <import index="bgic" modelUID="r:f8541cf4-6148-4458-a81b-adf49c8e050c(mbeddr.tutorial.blocks.structure)" version="0" implicit="yes" />
   <import index="rzjx" modelUID="r:34e48600-25da-4c7c-b6a4-8cd6f6deb117(mbeddr.tutorial.osconfig.structure)" version="-1" implicit="yes" />
+  <import index="7wyt" modelUID="r:f8ba97cc-e95a-4f72-81bb-93f6528114ed(mbeddr.tutorial.osconfig.cimpl.structure)" version="-1" implicit="yes" />
   <roots>
     <node type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="7727566415687867284">
       <property name="name" nameId="tpck.1169194664001" value="SafeHeap" />
@@ -53,6 +55,9 @@
       <property name="name" nameId="tpck.1169194664001" value="Blocks" />
     </node>
     <node type="rzjx.OSConfig" typeId="rzjx.7977993180520290853" id="7977993180520290887" />
+    <node type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="5485104033529950730">
+      <property name="name" nameId="tpck.1169194664001" value="Tasks" />
+    </node>
   </roots>
   <root id="7727566415687867284">
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="7977993180520004842">
@@ -1182,6 +1187,48 @@
     <node role="contents" roleId="rzjx.7977993180520290882" type="rzjx.TaskDef" typeId="rzjx.7977993180520290857" id="7977993180520291905">
       <property name="name" nameId="tpck.1169194664001" value="emergencyHandler" />
       <property name="prio" nameId="rzjx.7977993180520290859" value="3" />
+    </node>
+  </root>
+  <root id="5485104033529950730">
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="5485104033529950731">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1352810878478_1" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="5485104033529951812">
+      <property name="name" nameId="tpck.1169194664001" value="aHelperFunction" />
+      <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="5485104033529951814" />
+      <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="5485104033529951811">
+        <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+        <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+      </node>
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="5485104033529951809">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1352810980965_2" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="7wyt.TaskImpl" typeId="7wyt.5485104033529949911" id="5485104033529950735">
+      <link role="task" roleId="7wyt.5485104033529949913" targetNodeId="7977993180520291901" resolveInfo="mainTask" />
+      <node role="body" roleId="7wyt.5485104033529949926" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="5485104033529950736">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="5485104033529951802">
+          <property name="comment" nameId="c4fa.1679452829930336985" value="here is some code that implements the task" />
+        </node>
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="5485104033529951804">
+          <property name="name" nameId="tpck.1169194664001" value="aVariable" />
+          <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="5485104033529951805">
+            <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+            <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+          </node>
+          <node role="init" roleId="c4fa.4185783222026502647" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="5485104033529951807">
+            <property name="value" nameId="mj1l.8860443239512128104" value="10" />
+          </node>
+        </node>
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="5485104033529951817">
+          <node role="expr" roleId="c4fa.7254843406768833939" type="x27k.FunctionCall" typeId="x27k.5950410542643524492" id="5485104033529951818">
+            <link role="function" roleId="x27k.5950410542643524493" targetNodeId="5485104033529951812" resolveInfo="aHelperFunction" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="5485104033529950734">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1352810891368_4" />
     </node>
   </root>
 </model>

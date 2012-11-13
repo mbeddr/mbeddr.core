@@ -11,6 +11,7 @@
     <usedLanguage>32128dbe-9db6-4d05-9eaa-43601c29f276(mbeddr.tutorial.foreach)</usedLanguage>
     <usedLanguage>16ff087a-23cd-49b8-9c5b-a2c20cea9d3e(mbeddr.tutorial.heap)</usedLanguage>
     <usedLanguage>a577a05d-67ad-41db-9547-6e5f0730b85d(mbeddr.tutorial.osconfig)</usedLanguage>
+    <usedLanguage>ce2335b7-fcfd-403e-8ace-08dd457fd818(mbeddr.tutorial.osconfig.cimpl)</usedLanguage>
   </usedLanguages>
   <usedDevKits>
     <usedDevKit>9e5aaffe-404b-44dd-9dc5-daf7ffdbd380(com.mbeddr.analyses.dectab)</usedDevKit>
