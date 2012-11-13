@@ -646,6 +646,9 @@
       <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="7977993180520140009">
         <link role="module" roleId="51wr.7717755763392524108" targetNodeId="7977993180520090817" resolveInfo="Foreach" />
       </node>
+      <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="5485104033529998432">
+        <link role="module" roleId="51wr.7717755763392524108" targetNodeId="5485104033529950730" resolveInfo="Tasks" />
+      </node>
     </node>
   </root>
   <root id="646457496850768726">

@@ -253,11 +253,41 @@ Normally we would have to define a scope for the \ic{task} reference. However,
 the default behavior (which puts all the nodes in the current model into the
 scope) is exactly what we want so we don't have to do anything.
 
-\parhead{Generator}
+\parhead{Generator} Let us assume that the compiler for the OS we use in this
+example (some kind of fictional OSEK) expects task implementation function to
+use a special syntax: the example \ic{mainTask} must be translated as follows:
+
+\begin{lstlisting}[language=mps, morekeywords={implements}]
+task(mainTask) void Tasks_taskimpl_mainTask(void) {
+  // here is some code that implements the task
+  int8_t aVariable = 10;
+  Tasks_aHelperFunction();
+}
+\end{lstlisting}
+
+To create this function we define a generator with a reduction rule that looks
+as follows:
+
+
+\begin{center} 
+  \includegraphics[width=\columnwidth]{figures/tutorial/taskimplreduction.png}
+\end{center}
+
+The generator uses a property macro to adapt the name, as well as a
+\ic{COPY\_SRCL} macro to copy in all the statements of the body. We also add a
+special modifier to the function. Modifiers can be added via an intention
+(\ic{Alt-Enter}). The \ic{[...]} modifier accepts arbitrary text between the
+brackets and then just outputs that text during text generation. We use the
+\ic{taskPrefix} dummy text in the template and then replace it with the
+following macro expression:
+
+\begin{lstlisting}
+"task(" + node.task.name + ")";
+\end{lstlisting}
 
 
 
-
+\subsection{Memory Layout}
 
 
 
