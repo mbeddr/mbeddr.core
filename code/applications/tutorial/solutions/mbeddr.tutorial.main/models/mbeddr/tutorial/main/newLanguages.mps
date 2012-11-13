@@ -8,7 +8,9 @@
   <language namespace="07b580a3-cb92-4b5d-ab7c-9e2d58b9d602(mbeddr.tutorial.blocks)" />
   <language namespace="a577a05d-67ad-41db-9547-6e5f0730b85d(mbeddr.tutorial.osconfig)" />
   <language namespace="ce2335b7-fcfd-403e-8ace-08dd457fd818(mbeddr.tutorial.osconfig.cimpl)" />
+  <language namespace="973c8be0-8526-4588-aca6-92bcbb701b50(mbeddr.tutotial.osconfig.memory)" />
   <devkit namespace="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
+  <import index="e1tx" modelUID="r:bd5ec23c-c294-47cc-a078-675c03abdb69(mbeddr.tutorial.main.defaultExtensions)" version="-1" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="3c6d" modelUID="r:d6d71b6a-f5ea-4b72-bd01-9d5b19792726(com.mbeddr.ext.physicalunits.c.structure)" version="0" implicit="yes" />
   <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="17" implicit="yes" />
@@ -22,11 +24,11 @@
   <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="5" implicit="yes" />
   <import index="51wr" modelUID="r:b31f1c3c-99aa-4f1e-a329-cba27efb1a6b(com.mbeddr.core.buildconfig.structure)" version="1" implicit="yes" />
   <import index="k146" modelUID="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" version="2" implicit="yes" />
-  <import index="e1tx" modelUID="r:bd5ec23c-c294-47cc-a078-675c03abdb69(mbeddr.tutorial.main.defaultExtensions)" version="-1" implicit="yes" />
   <import index="f8ij" modelUID="r:ddffbaac-6bb7-469e-a768-5fcd76552224(mbeddr.tutorial.foreach.structure)" version="-1" implicit="yes" />
   <import index="bgic" modelUID="r:f8541cf4-6148-4458-a81b-adf49c8e050c(mbeddr.tutorial.blocks.structure)" version="0" implicit="yes" />
   <import index="rzjx" modelUID="r:34e48600-25da-4c7c-b6a4-8cd6f6deb117(mbeddr.tutorial.osconfig.structure)" version="-1" implicit="yes" />
   <import index="7wyt" modelUID="r:f8ba97cc-e95a-4f72-81bb-93f6528114ed(mbeddr.tutorial.osconfig.cimpl.structure)" version="-1" implicit="yes" />
+  <import index="wlut" modelUID="r:39f56ab1-7cb7-441d-9f40-9b3dac9d6334(mbeddr.tutotial.osconfig.memory.structure)" version="0" implicit="yes" />
   <roots>
     <node type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="7727566415687867284">
       <property name="name" nameId="tpck.1169194664001" value="SafeHeap" />
@@ -1191,6 +1193,45 @@
       <property name="name" nameId="tpck.1169194664001" value="emergencyHandler" />
       <property name="prio" nameId="rzjx.7977993180520290859" value="3" />
     </node>
+    <node role="contents" roleId="rzjx.7977993180520290882" type="wlut.MemoryLayout" typeId="wlut.5485104033530012675" id="5485104033530013776">
+      <node role="regions" roleId="wlut.5485104033530012696" type="wlut.Region" typeId="wlut.5485104033530012680" id="5485104033530015104">
+        <property name="name" nameId="tpck.1169194664001" value="ram" />
+        <node role="startsAt" roleId="wlut.5485104033530012682" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="5485104033530015107">
+          <property name="value" nameId="mj1l.8860443239512128104" value="0" />
+        </node>
+        <node role="endsAt" roleId="wlut.5485104033530013889" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="5485104033530015108">
+          <property name="value" nameId="mj1l.8860443239512128104" value="1024" />
+        </node>
+      </node>
+      <node role="regions" roleId="wlut.5485104033530012696" type="wlut.Region" typeId="wlut.5485104033530012680" id="5485104033530015109">
+        <property name="name" nameId="tpck.1169194664001" value="eprom" />
+        <node role="startsAt" roleId="wlut.5485104033530012682" type="wlut.StartOfExpr" typeId="wlut.5485104033530015112" id="5485104033530019013">
+          <link role="region" roleId="wlut.5485104033530015113" targetNodeId="5485104033530015104" resolveInfo="ram" />
+        </node>
+        <node role="endsAt" roleId="wlut.5485104033530013889" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="5485104033530019014">
+          <property name="value" nameId="mj1l.8860443239512128104" value="2048" />
+        </node>
+      </node>
+      <node role="regions" roleId="wlut.5485104033530012696" type="wlut.Region" typeId="wlut.5485104033530012680" id="5485104033530036512">
+        <property name="name" nameId="tpck.1169194664001" value="devices" />
+        <node role="startsAt" roleId="wlut.5485104033530012682" type="wlut.EndOfExpr" typeId="wlut.5485104033530020974" id="5485104033530036515">
+          <link role="region" roleId="wlut.5485104033530020975" targetNodeId="5485104033530015109" resolveInfo="eprom" />
+        </node>
+        <node role="endsAt" roleId="wlut.5485104033530013889" type="mj1l.PlusExpression" typeId="mj1l.5763383285156373013" id="5485104033530036524">
+          <node role="left" roleId="mj1l.8860443239512128064" type="wlut.StartOfExpr" typeId="wlut.5485104033530015112" id="5485104033530036923">
+            <link role="region" roleId="wlut.5485104033530015113" targetNodeId="5485104033530036512" resolveInfo="devices" />
+          </node>
+          <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.MultiExpression" typeId="mj1l.5763383285156373020" id="5485104033530036519">
+            <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="5485104033530036522">
+              <property name="value" nameId="mj1l.8860443239512128104" value="2" />
+            </node>
+            <node role="left" roleId="mj1l.8860443239512128064" type="wlut.SizeOfExpr" typeId="wlut.5485104033530033315" id="5485104033530036516">
+              <link role="region" roleId="wlut.5485104033530033328" targetNodeId="5485104033530015104" resolveInfo="ram" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
   </root>
   <root id="5485104033529950730">
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="5485104033529950731">
@@ -1198,6 +1239,7 @@
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="5485104033529951812">
       <property name="name" nameId="tpck.1169194664001" value="aHelperFunction" />
+      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
       <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="5485104033529951814" />
       <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="5485104033529951811">
         <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />

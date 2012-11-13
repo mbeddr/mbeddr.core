@@ -289,17 +289,171 @@ following macro expression:
 
 \subsection{Memory Layout}
 
+Let us extend the OS config DSL with a way to define memory layouts. Here is
+some example code:
+
+\begin{lstlisting}[morekeywords={OS, config, task, prio, memory, layout, region,
+endOf, startOf, sizeOf}] 
+OS Config                                                                                                                                    
+------------------------------------                                                                                                         
+                                                                                                                                             
+task mainTask prio = 1                                                                                                                       
+task eventHandler prio = 2                                                                                                                   
+task emergencyHandler prio = 3                                                                                                               
+memory layout { 
+  region ram: 0..1024 
+  region eprom: endOf(ram)..2048 
+  region devices: endOf(eprom)..startOf(devices) + sizeOf(ram) * 2 
+}
+\end{lstlisting}
+
+Note how we have added additional contents to the os config file and also reuse
+C expressions within the regions -- extended with new expressions to refer to
+the start, end and size of other regions.
+
+\parhead{Yet another Language} We create another language to demonstrate how an
+external DSL can be extended using specific concepts from C without modifying
+the original OS configuration DSL. We create a new language
+\ic{mbeddr.tutorial.osconfig.memory}. That new language extends
+\ic{mbeddr.tutorial.osconfig} as well as \ic{com.mbeddr.core.ex- pressions.}
 
 
+\parhead{Structure} The \ic{MemoryLayout} implements \ic{IOSContents} so it can
+be plugged into the \ic{contents} collection of an \ic{OSConfig}. It then
+contains a collection of \ic{Region}s. Each region has a name (via the usual
+interface) and an \ic{Expression} for the start and the end of the region.
+Since our language extends the C expression language we can use \ic{Expression}
+here:
+
+\begin{lstlisting}[language=mps] 
+concept Region extends BaseConcept         
+               implements INamedConcept    
+                                           
+  children:                                
+    Expression startsAt 1
+    Expression endsAt   1  
+                                           
+  concept properties:                      
+    alias = region                           
+\end{lstlisting} 
+
+The \ic{startOf(..)}, \ic{endOf(..)} and \ic{sizeOf(..)} expressions are new
+expressions contributed by this language. All three are essentially similar:
+they extend \ic{Expression} and have a single reference to a \ic{Region}. They
+also have an alias to prevent smart-reference editor behavior in the editor:
+
+\begin{lstlisting}[language=mps] 
+concept EndOfExpr extends Expression 
+                  implements <none>  
+                                     
+  references:                        
+    Region region 1 specializes: <none>
+                                     
+  concept properties:                
+    alias = endOf                      
+\end{lstlisting} 
 
 
+\parhead{Editor} The editors for all of these concepts are straight forward
+based on what we have defined in the tutorials so far. A few remarks. The
+first one concerns the fact that when you create a new \ic{memory layout},
+between the two curlies it doesn't say \ic{<no regions>} as would be MPS'
+default. We have achieved this by using an empty constant as the \ic{empty cell}
+for the \ic{regions} collection in the editor of \ic{MemoryLayout}. Also, we
+have set the \ic{editable: true} style attribute.
+
+Second, we have used an indent child collection (\ic{(- .. -)}) for the regions,
+but still get indentation and each region on a new line. We do that by setting
+the following style attributes on the collection cell \ic{(-} itself:
+
+\begin{lstlisting}[language=mps] 
+indent-layout-on-new-line : true      
+indent-layout-indent : true           
+indent-layout-new-line-children : true 
+\end{lstlisting} 
+
+Finally, you may have noticed that there are no spaces on either side of the
+\ic{..} in the region, or between the paranthesis and the region in the three
+new expressions. We do that by setting the \ic{puctuation-left: true} and
+\ic{puctuation-right: true} style attributes at the respective places. Marking
+something as "punctuation" removes the space on that side. Note that you should
+ever only set these attributes on constants -- otherwise strange things can
+happen (MPS Bug!).
 
 
+\parhead{Type System} The types of the \ic{startsAt} and \ic{endsAt} properties
+for regions must be defined. We can do this with the rule below. In both cases
+we express that the type of the respective property must be \ic{uint64} or any
+of its shorter subtypes.
 
+\begin{lstlisting}[language=mps, morekeywords={infer}] 
+rule typeof_Region {                                                                                                          
+  applicable for concept = Region as r                                                                                        
+                                                                                                                              
+  do {                                                                                                                        
+    infer typeof(r.startsAt) :<=: new node<UnsignedInt64tType>(); 
+    infer typeof(r.endsAt) :<=: new node<UnsignedInt64tType>();
+  }                                                                                                                           
+}                                                                                                                              
+\end{lstlisting} 
 
+The type for the \ic{EndOfExpr} and the \ic{StartOfExpr} is simple as well; it
+is simply the type of the respective expression of the target region:
 
+\begin{lstlisting}[language=mps] 
+typeof(endOfExpr) :==: typeof(endOfExpr.region.startsAt);
+\end{lstlisting} 
 
+For the \ic{SizeOfExpr} it is a bit more interesting, since the type has to be
+the common supertype of the start and the end (we essentially build the
+difference, hence both types play a role). We can express this with the
+following approach:
 
+\begin{lstlisting}[language=mps, morekeywords={infer}] 
+rule typeof_SizeOfExpr {                                                                                  
+  applicable for concept = SizeOfExpr as soe                                                              
+  overrides false                                                                                         
+                                                                                                          
+  do {                                                                                                    
+    infer typeof(soe) :>=: typeof(soe.region.startsAt); 
+    infer typeof(soe) :>=: typeof(soe.region.endsAt);
+  }                                                                                                       
+}                                                                                                         
+\end{lstlisting}
+
+Notice how we define \emph{two} typing rules for the same node (\ic{soe}). In
+both we express a same-or-more-general-type relationship (\ic{:>=:}) to the
+respective property. The only way how the type system engine can make
+\emph{both} of these rules true is by assigning the common supertype of the two
+properties to \ic{typeof(soe)} -- which is exactly what we wanted.
+
+\parhead{Scopes and Constraints} First of all we have to make sure that the new
+expressions (\ic{startOf(..)}, \ic{endOf(..)} and \ic{sizeOf(..)}) can only be
+used below a \ic{MemoryLayout}. Since this is the same for all three of them we
+have introduced a common superconcept. The constraint is defined for that one:
+
+\begin{lstlisting}[language=mps, deletekeywords={link, scope}] 
+concept constraints RegionRefExpr { 
+  can be child 
+    (node, parentNode, link, childConcept, scope, operationContext)->boolean { 
+      parentNode.ancestor<concept = MemoryLayout>.isNotNull; 
+    } 
+}
+\end{lstlisting}
+
+This superconcept has also gotten the reference to the target \ic{Region} so we
+can define the scope for that reference generically as well:
+
+\begin{lstlisting}[language=mps, morekeywords={link, scope}] 
+link {region} 
+  scope: 
+    (... , enclosingNode, ...)->join(ISearchScope | sequence<node<Region>>) {
+      enclosingNode.ancestor<concept = MemoryLayout>.regions; 
+    } 
+\end{lstlisting}
+
+\parhead{Generator} We will not define a generator for this extension. The point
+of this tutorial was to demonstrate the integration of various languages.
 
 
 
