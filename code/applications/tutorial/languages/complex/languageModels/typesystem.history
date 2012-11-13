@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<history>
+  <StructureModification>
+    <dependencies>
+      <model index="af99" modelUID="r:16538061-0464-406e-bfe4-35690468b8db(blockdemo.complex.behavior)" version="-1" />
+      <model index="qufu" modelUID="r:328a956b-f2f5-4a11-917f-ae5f731c81bf(blockdemo.complex.editor)" version="-1" />
+      <model index="d2ga" modelUID="r:c1386ad1-fa06-4825-a021-e8f499a282aa(blockdemo.complex.constraints)" version="-1" />
+      <model index="d47x" modelUID="r:67780e06-1d33-4077-a6c9-86b0b425435c(blockdemo.complex.structure)" version="-1" />
+      <model index="d764" modelUID="r:bc3b2d1b-de39-4e3a-a44d-7c55f6b2f1f8(blockdemo.complex.actions)" version="-1" />
+      <model index="ikal" modelUID="r:58522938-a311-47cd-95a2-13040a165acc(blockdemo.complex.typesystem)" version="-1" />
+    </dependencies>
+    <RenameModel oldModel="r:58522938-a311-47cd-95a2-13040a165acc(blockdemo.complex.typesystem)" newModel="r:58522938-a311-47cd-95a2-13040a165acc(mbeddr.tutorial.complex.typesystem)" />
+    <RenameModel oldModel="r:bc3b2d1b-de39-4e3a-a44d-7c55f6b2f1f8(blockdemo.complex.actions)" newModel="r:bc3b2d1b-de39-4e3a-a44d-7c55f6b2f1f8(mbeddr.tutorial.complex.actions)" />
+    <RenameModel oldModel="r:67780e06-1d33-4077-a6c9-86b0b425435c(blockdemo.complex.structure)" newModel="r:67780e06-1d33-4077-a6c9-86b0b425435c(mbeddr.tutorial.complex.structure)" />
+    <RenameModel oldModel="r:16538061-0464-406e-bfe4-35690468b8db(blockdemo.complex.behavior)" newModel="r:16538061-0464-406e-bfe4-35690468b8db(mbeddr.tutorial.complex.behavior)" />
+    <RenameModel oldModel="r:328a956b-f2f5-4a11-917f-ae5f731c81bf(blockdemo.complex.editor)" newModel="r:328a956b-f2f5-4a11-917f-ae5f731c81bf(mbeddr.tutorial.complex.editor)" />
+    <RenameModel oldModel="r:c1386ad1-fa06-4825-a021-e8f499a282aa(blockdemo.complex.constraints)" newModel="r:c1386ad1-fa06-4825-a021-e8f499a282aa(mbeddr.tutorial.complex.constraints)" />
+  </StructureModification>
+</history>
+

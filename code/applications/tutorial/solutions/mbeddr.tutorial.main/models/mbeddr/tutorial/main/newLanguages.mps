@@ -9,6 +9,16 @@
   <language namespace="a577a05d-67ad-41db-9547-6e5f0730b85d(mbeddr.tutorial.osconfig)" />
   <language namespace="ce2335b7-fcfd-403e-8ace-08dd457fd818(mbeddr.tutorial.osconfig.cimpl)" />
   <language namespace="973c8be0-8526-4588-aca6-92bcbb701b50(mbeddr.tutotial.osconfig.memory)" />
+  <language namespace="c72da2b9-7cce-4447-8389-f407dc1158b7(jetbrains.mps.lang.structure)" />
+  <language namespace="7866978e-a0f0-4cc7-81bc-4d213d9375e1(jetbrains.mps.lang.smodel)" />
+  <language namespace="01cd75cf-892b-47a7-b594-744f9e06e5e4(mbeddr.tutorial.complex)" />
+  <language namespace="7a5dda62-9140-4668-ab76-d5ed1746f2b2(jetbrains.mps.lang.typesystem)" />
+  <language namespace="f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)" />
+  <language namespace="ed6d7656-532c-4bc2-81d1-af945aeb8280(jetbrains.mps.baseLanguage.blTypes)" />
+  <language namespace="9ded098b-ad6a-4657-bfd9-48636cfe8bc3(jetbrains.mps.lang.traceable)" />
+  <language namespace="d4615e3b-d671-4ba9-af01-2b78369b0ba7(jetbrains.mps.lang.pattern)" />
+  <language namespace="fd392034-7849-419d-9071-12563d152375(jetbrains.mps.baseLanguage.closures)" />
+  <language namespace="83888646-71ce-4f1c-9c53-c54016f6ad4f(jetbrains.mps.baseLanguage.collections)" />
   <devkit namespace="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
   <import index="e1tx" modelUID="r:bd5ec23c-c294-47cc-a078-675c03abdb69(mbeddr.tutorial.main.defaultExtensions)" version="-1" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
@@ -202,8 +212,8 @@
               <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="7727566415687767242" resolveInfo="trackpointCounter" />
             </node>
             <node role="left" roleId="mj1l.8860443239512128064" type="clbe.SUArrowExpression" typeId="clbe.7063398228162571833" id="7727566415687767215">
-              <node role="member" roleId="mj1l.1452920870317550651" type="clbe.MemberRef" typeId="clbe.7099329415460395995" id="7727566415687767219">
-                <link role="member" roleId="clbe.7099329415460397525" targetNodeId="e1tx.1731059994647587995" resolveInfo="id" />
+              <node role="member" roleId="mj1l.1452920870317550651" type="clbe.MemberRef" typeId="clbe.7099329415460395995" id="5485104033530057725">
+                <link role="member" roleId="clbe.7099329415460397525" targetNodeId="1731059994647587995" resolveInfo="id" />
               </node>
               <node role="expression" roleId="mj1l.7254843406768839760" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="7727566415687767212">
                 <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="7727566415687767149" resolveInfo="tp" />
@@ -220,8 +230,8 @@
               <node role="targetUnit" roleId="3c6d.4006257212296803127" type="ym4j.SISecond" typeId="ym4j.3801772042669047312" id="7727566415687767263" />
             </node>
             <node role="left" roleId="mj1l.8860443239512128064" type="clbe.SUArrowExpression" typeId="clbe.7063398228162571833" id="7727566415687767236">
-              <node role="member" roleId="mj1l.1452920870317550651" type="clbe.MemberRef" typeId="clbe.7099329415460395995" id="7727566415687767240">
-                <link role="member" roleId="clbe.7099329415460397525" targetNodeId="e1tx.1731059994647587997" resolveInfo="timestamp" />
+              <node role="member" roleId="mj1l.1452920870317550651" type="clbe.MemberRef" typeId="clbe.7099329415460395995" id="5485104033530057727">
+                <link role="member" roleId="clbe.7099329415460397525" targetNodeId="1731059994647587997" resolveInfo="timestamp" />
               </node>
               <node role="expression" roleId="mj1l.7254843406768839760" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="7727566415687767233">
                 <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="7727566415687767149" resolveInfo="tp" />
@@ -238,8 +248,8 @@
               <node role="targetUnit" roleId="3c6d.4006257212296803127" type="ym4j.SIMetre" typeId="ym4j.3801772042669047305" id="7727566415687767282" />
             </node>
             <node role="left" roleId="mj1l.8860443239512128064" type="clbe.SUArrowExpression" typeId="clbe.7063398228162571833" id="7727566415687767269">
-              <node role="member" roleId="mj1l.1452920870317550651" type="clbe.MemberRef" typeId="clbe.7099329415460395995" id="7727566415687767273">
-                <link role="member" roleId="clbe.7099329415460397525" targetNodeId="e1tx.1731059994647588009" resolveInfo="alt" />
+              <node role="member" roleId="mj1l.1452920870317550651" type="clbe.MemberRef" typeId="clbe.7099329415460395995" id="5485104033530057729">
+                <link role="member" roleId="clbe.7099329415460397525" targetNodeId="1731059994647588009" resolveInfo="alt" />
               </node>
               <node role="expression" roleId="mj1l.7254843406768839760" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="7727566415687767266">
                 <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="7727566415687767149" resolveInfo="tp" />
@@ -258,8 +268,8 @@
               </node>
             </node>
             <node role="left" roleId="mj1l.8860443239512128064" type="clbe.SUArrowExpression" typeId="clbe.7063398228162571833" id="7727566415687767288">
-              <node role="member" roleId="mj1l.1452920870317550651" type="clbe.MemberRef" typeId="clbe.7099329415460395995" id="7727566415687767292">
-                <link role="member" roleId="clbe.7099329415460397525" targetNodeId="e1tx.1731059994647588013" resolveInfo="speed" />
+              <node role="member" roleId="mj1l.1452920870317550651" type="clbe.MemberRef" typeId="clbe.7099329415460395995" id="5485104033530057731">
+                <link role="member" roleId="clbe.7099329415460397525" targetNodeId="1731059994647588013" resolveInfo="speed" />
               </node>
               <node role="expression" roleId="mj1l.7254843406768839760" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="7727566415687767290">
                 <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="7727566415687767149" resolveInfo="tp" />
@@ -1206,7 +1216,7 @@
       <node role="regions" roleId="wlut.5485104033530012696" type="wlut.Region" typeId="wlut.5485104033530012680" id="5485104033530015109">
         <property name="name" nameId="tpck.1169194664001" value="eprom" />
         <node role="startsAt" roleId="wlut.5485104033530012682" type="wlut.StartOfExpr" typeId="wlut.5485104033530015112" id="5485104033530019013">
-          <link role="region" roleId="wlut.5485104033530015113" targetNodeId="5485104033530015104" resolveInfo="ram" />
+          <link role="region" roleId="wlut.5485104033530050776" targetNodeId="5485104033530015104" resolveInfo="ram" />
         </node>
         <node role="endsAt" roleId="wlut.5485104033530013889" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="5485104033530019014">
           <property name="value" nameId="mj1l.8860443239512128104" value="2048" />
@@ -1215,18 +1225,18 @@
       <node role="regions" roleId="wlut.5485104033530012696" type="wlut.Region" typeId="wlut.5485104033530012680" id="5485104033530036512">
         <property name="name" nameId="tpck.1169194664001" value="devices" />
         <node role="startsAt" roleId="wlut.5485104033530012682" type="wlut.EndOfExpr" typeId="wlut.5485104033530020974" id="5485104033530036515">
-          <link role="region" roleId="wlut.5485104033530020975" targetNodeId="5485104033530015109" resolveInfo="eprom" />
+          <link role="region" roleId="wlut.5485104033530050776" targetNodeId="5485104033530015109" resolveInfo="eprom" />
         </node>
         <node role="endsAt" roleId="wlut.5485104033530013889" type="mj1l.PlusExpression" typeId="mj1l.5763383285156373013" id="5485104033530036524">
           <node role="left" roleId="mj1l.8860443239512128064" type="wlut.StartOfExpr" typeId="wlut.5485104033530015112" id="5485104033530036923">
-            <link role="region" roleId="wlut.5485104033530015113" targetNodeId="5485104033530036512" resolveInfo="devices" />
+            <link role="region" roleId="wlut.5485104033530050776" targetNodeId="5485104033530036512" resolveInfo="devices" />
           </node>
           <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.MultiExpression" typeId="mj1l.5763383285156373020" id="5485104033530036519">
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="5485104033530036522">
               <property name="value" nameId="mj1l.8860443239512128104" value="2" />
             </node>
             <node role="left" roleId="mj1l.8860443239512128064" type="wlut.SizeOfExpr" typeId="wlut.5485104033530033315" id="5485104033530036516">
-              <link role="region" roleId="wlut.5485104033530033328" targetNodeId="5485104033530015104" resolveInfo="ram" />
+              <link role="region" roleId="wlut.5485104033530050776" targetNodeId="5485104033530015104" resolveInfo="ram" />
             </node>
           </node>
         </node>

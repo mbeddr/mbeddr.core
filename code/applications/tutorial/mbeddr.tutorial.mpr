@@ -8,6 +8,7 @@
     <projectModules>
       <modulePath path="${project}/languages/blocks/blocks.mpl" />
       <modulePath path="${project}/languages/cimpl/cimpl.mpl" folder="" />
+      <modulePath path="${project}/languages/complex/complex.mpl" />
       <modulePath path="${project}/languages/foreach/foreach.mpl" folder="" />
       <modulePath path="${project}/languages/heap/heap.mpl" folder="" />
       <modulePath path="${project}/languages/memory/memory.mpl" folder="" />

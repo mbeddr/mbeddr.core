@@ -230,10 +230,66 @@ existing mechanism for handling variable shadowing (explained below).
 \end{center}
 \caption{A \ic{safeheap} statement declares heap variables which can only be
 used inside the body of the statement. When the body is left, the memory is
-automatically freed. Notice also how we report an error in case the variable
-tries to escape.}
+automatically freed. }
 \label{safeheap}  
 \end{figure}
+
+\parhead{Editor} The safeheap editor is shown in \fig{safeheapEditor}. It
+comprises a collection cell (indent) that contains the keyword, a vertical
+collection of the variables (with the \ic{draw-brackets} style option set) plus
+the body (which brings its own curlies and line break policy). 
+
+\begin{figure} 
+\begin{center}
+\includegraphics[width=100mm]{figures/tutorial/safeheapEditor.png}
+\end{center}
+\caption{The editor for the safeheap statement; details are discussed in the
+running text.}
+\label{safeheapEditor}  
+\end{figure}
+
+There is an important twist to the editor definition and the way it can be used,
+though. The \ic{vars} collection contains a list of \ic{SafeHeapVar} nodes. So,
+when the user edits this collection, he has to instantiate a new
+\ic{SafeHeapVar}, for example using the alias. However, as you will find out
+when using the editor, you can just select the type of that variable, and once
+you have selected one (by typing or by selection from the code completion menu)
+a new \ic{SafeHeapVar} is created and that type is set as its type. This is
+achieved using a wrapper action:
+
+\begin{lstlisting}[language=mps, morekeywords={substitute, actions,
+substituted, condition, actions, add, custom, items, wrap, output,
+concept, wrapper, block, return, small, part}] 
+substitute actions wrap_SafeHeapVarWithType                                                                                                                                                           
+                                                                                                                                                                                                           
+substituted node: SafeHeapVar                                                                                                                                                         
+  condition :                                                                                                                                                                                              
+    (..., parentNode, ...)->boolean { 
+      parentNode.ancestor<concept = SafeHeapBlock, +>.isNotNull; 
+    }                               
+                                                                                                                                                                                                           
+  actions :                                                                                                                                                                                                
+    add custom items  (output concept: SafeHeapVar)                                                                                                                                                        
+      wrap Type                                                                                                                                                                                            
+        wrapper block                                                                                                                                                                                      
+          (..., parentNode, nodeToWrap, ...)->node<SafeHeapVar> {
+            node<SafeHeapVar> v = new node<SafeHeapVar>(); 
+            v.type = nodeToWrap; 
+            v;   
+          }
+        return small part                                                                                                                                                                                  
+          false                                                                                                                                                                                            
+\end{lstlisting}
+
+This action says: whenever a \ic{SafeHeapVar} is expected somewhere
+(\ic{substituted noe}), the user can actually also enter a \ic{Type}
+(\ic{wrap}). In that case, we still create a \ic{SafeHeapVar} (\ic{output
+concept}), and we get it via the code in the wrapper block. There we create an
+instance of \ic{SafeHeapVar}, set the type to be the \ic{nodeToWrap} and then
+return that newly created variable. 
+
+Actions like this play an important role in making the MPS/mbeddr editor usable!
+
 
 
 \parhead{Behaviour} \ic{LocalVarRef}s are expressions that reference
