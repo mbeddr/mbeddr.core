@@ -42,13 +42,22 @@ using the $New \rightarrow Language$ menu item on the project. Note that this
 language does \emph{not} extend any other language. It is completely standaline,
 a completely separate DSL developed with MPS -- no relationship to mbeddr.
 
+Unfortunately because of the way MPS handles cross-model generation, you do have
+to create a dependency to a language so you can implement an interface (see
+next paragraph below) that makes this language play well with the transformation
+schedule. So please create an extends dependency on the \ic{com.mbeddr.base}
+language.
+
 \parhead{Structure} In the language we create a new concept \ic{OSConfig}. This
 is the concept that contains a complete OS configuration and should be useable
 as a root node inside models. This is why we set its \ic{instance can be root}
-property to \ic{true}:
+property to \ic{true}. We also implement \ic{IGeneratesCodeForIDE}; this is the
+interface that makes this concept play well with mbeddr's cross-model code
+generation (mentioned in the previous paragraph):
 
 \begin{lstlisting}[language=mps]
 concept OSConfig extends BaseConcept
+                 implements IGeneratesCodeForIDE
   instance can be root: true        
 \end{lstlisting}
 
@@ -94,6 +103,97 @@ vertical list of the \ic{contents} child collection.
 \begin{center} 
   \includegraphics[scale=0.5]{figures/tutorial/osconfigEditor.png}
 \end{center}
+
+\parhead{Text Generator} So far all languages we have developed were extensions
+of a base language. The generator then was a transformation back to the base
+language. In case of our operating system configuration there is no base
+language -- we have to generate text directly.
+
+Text generators are different from the generators we have seen so far; those are
+actually model-to-model transformations since they map one MPS tree onto another
+one. For text generators we really just write into a text buffer. The language
+to do this is relatively simple. However, since we build text generators only
+for low-level base languages, this language really is good enough. 
+
+So let's get started with the text generator for \ic{OSConfig}. Open the
+structure editor for the \ic{OSConfig} concept and press the little \ic{+} at
+the bottom left of the editor window and add a new Textgen conponent. Here is
+the code for it:
+
+
+\begin{lstlisting}[language=mps, morekeywords={text, gen, component,
+extension, encoding, append}] 
+text gen component for concept OSConfig { 
+  extension : (node)->string { 
+    "osconfig"; 
+  } 
+  encoding : utf-8 
+ 
+  (node, context, buffer)->void { 
+    append {OSConfig} \n ; 
+    append \n ; 
+    foreach c in node.contents { 
+      append ${c} \n ; 
+    } 
+  } 
+}
+\end{lstlisting}
+
+In this texgen component we specify the encoding, the file extension as well as
+the contents of the file. The code involving the \ic{append} statements should
+be clear. Notice that we did \emph{not} specify the name of the file (only its
+extension!). However, our \ic{OSConfig} doesn't have a name. So this won't work!
+We have to give a name to \ic{OSConfig}.
+
+To do so, go back to the structure of \ic{OSConfig} and make the concept
+implement \ic{INamedConcept}. However, we don't really want to manually enter
+the name for each of these things; instead, the name of the \ic{OSConfig} should
+automatically be the name of the model in which it resides. You can achieve this
+by implementing a getter for the name in the constraints section:
+
+
+\begin{lstlisting}[language=mps]
+concepts constraints OSConfig { 
+   
+  property {name} 
+    get:(node, scope)->string { 
+      node.model.name; 
+    } 
+    set:<default> 
+    is valid:<default> 
+}
+\end{lstlisting}
+
+We also have to implement the textgen for the \ic{TaskDef}. It is really
+trivial:
+
+\begin{lstlisting}[language=mps]
+text gen component for concept TaskDef { 
+  (node, context, buffer)->void { 
+    append {task} ${node.name} { } {(} ${node.prio + ""} {}} ; 
+  } 
+}
+\end{lstlisting}
+
+You can now regenerate your model and, next to the C code, you should also get
+a \ic{.osconfig} file that contains the operating system configuration.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
