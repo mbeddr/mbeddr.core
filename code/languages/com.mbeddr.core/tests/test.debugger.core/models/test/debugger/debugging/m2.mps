@@ -25,7 +25,7 @@
     </node>
     <node type="mj1l.TypeSizeConfiguration" typeId="mj1l.3335993110369795380" id="5100083648679164244" />
     <node type="rpmx.DebuggerTestCase" typeId="rpmx.7048220250905867886" id="3463450091879733627">
-      <property name="name" nameId="tpck.1169194664001" value="Bla" />
+      <property name="name" nameId="tpck.1169194664001" value="ReportStatement" />
     </node>
   </roots>
   <root id="5100083648679164286">
@@ -63,6 +63,9 @@
         <node role="statements" roleId="c4fa.4185783222026475862" type="x27k.ReturnStatement" typeId="x27k.8967919205527146149" id="5100083648679164233">
           <node role="expression" roleId="x27k.8967919205527146150" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="5100083648679164234">
             <property name="value" nameId="mj1l.8860443239512128104" value="0" />
+          </node>
+          <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="rpmx.MarkerAnnotation" typeId="rpmx.4193597469137492628" id="8801582929584642464">
+            <property name="name" nameId="tpck.1169194664001" value="m2" />
           </node>
         </node>
       </node>
@@ -258,12 +261,12 @@
   </root>
   <root id="3463450091879733627">
     <node role="testMethods" roleId="rpmx.1217501895093" type="rpmx.DebuggerTestMethod" typeId="rpmx.4193597469137492636" id="3463450091879733629">
-      <property name="name" nameId="tpck.1169194664001" value="blub" />
+      <property name="name" nameId="tpck.1169194664001" value="stepOver" />
       <node role="returnType" roleId="tpee.1068580123133" type="tpee.VoidType" typeId="tpee.1068581517677" id="3463450091879733630" />
       <node role="validationBody" roleId="rpmx.7048220250906209725" type="rpmx.ValidationList" typeId="rpmx.7048220250906209718" id="3463450091879733631">
         <node role="validations" roleId="rpmx.7048220250906209719" type="rpmx.ValidateDebuggerSuspended" typeId="rpmx.7048220250906049590" id="3463450091879733635">
-          <node role="marker" roleId="rpmx.7048220250906049591" type="rpmx.MarkerRef" typeId="rpmx.4193597469137492644" id="3463450091879733636">
-            <link role="marker" roleId="rpmx.4193597469137492645" targetNodeId="5100083648679164292" resolveInfo="m1" />
+          <node role="marker" roleId="rpmx.7048220250906049591" type="rpmx.MarkerRef" typeId="rpmx.4193597469137492644" id="8801582929584642467">
+            <link role="marker" roleId="rpmx.4193597469137492645" targetNodeId="8801582929584642464" resolveInfo="m2" />
           </node>
         </node>
       </node>
