@@ -162,13 +162,13 @@
           <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="3463450091879812119">
             <property name="name" nameId="tpck.1169194664001" value="breakpointRegistryMock" />
             <node role="type" roleId="tpee.5680397130376446158" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="3463450091879812120">
-              <link role="classifier" roleId="tpee.1107535924139" targetNodeId="u02k.3463450091878657152" resolveInfo="ITRBreakpointManager" />
+              <link role="classifier" roleId="tpee.1107535924139" targetNodeId="u02k.3463450091878657152" resolveInfo="ITRBreakpointRegistry" />
             </node>
             <node role="initializer" roleId="tpee.1068431790190" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="3463450091879812122">
               <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="k35w.~EasyMock%dcreateMock(java%dlang%dClass)%cjava%dlang%dObject" resolveInfo="createMock" />
               <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="k35w.~EasyMock" resolveInfo="EasyMock" />
               <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.ClassifierClassExpression" typeId="tpee.1116615150612" id="3463450091879812130">
-                <link role="classifier" roleId="tpee.1116615189566" targetNodeId="u02k.3463450091878657152" resolveInfo="ITRBreakpointManager" />
+                <link role="classifier" roleId="tpee.1116615189566" targetNodeId="u02k.3463450091878657152" resolveInfo="ITRBreakpointRegistry" />
               </node>
             </node>
           </node>
@@ -412,13 +412,13 @@
           <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="8801582929583451819">
             <property name="name" nameId="tpck.1169194664001" value="breakpointRegistryMock" />
             <node role="type" roleId="tpee.5680397130376446158" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="8801582929583451820">
-              <link role="classifier" roleId="tpee.1107535924139" targetNodeId="u02k.3463450091878657152" resolveInfo="ITRBreakpointManager" />
+              <link role="classifier" roleId="tpee.1107535924139" targetNodeId="u02k.3463450091878657152" resolveInfo="ITRBreakpointRegistry" />
             </node>
             <node role="initializer" roleId="tpee.1068431790190" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="8801582929583451821">
               <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="k35w.~EasyMock%dcreateMock(java%dlang%dClass)%cjava%dlang%dObject" resolveInfo="createMock" />
               <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="k35w.~EasyMock" resolveInfo="EasyMock" />
               <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.ClassifierClassExpression" typeId="tpee.1116615150612" id="8801582929583451822">
-                <link role="classifier" roleId="tpee.1116615189566" targetNodeId="u02k.3463450091878657152" resolveInfo="ITRBreakpointManager" />
+                <link role="classifier" roleId="tpee.1116615189566" targetNodeId="u02k.3463450091878657152" resolveInfo="ITRBreakpointRegistry" />
               </node>
             </node>
           </node>
@@ -645,7 +645,7 @@
               <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="8801582929583451853" resolveInfo="notAttachedSession" />
             </node>
             <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="8801582929583451957">
-              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="u02k.3463450091879801674" resolveInfo="start" />
+              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="u02k.3463450091879801674" resolveInfo="attach" />
             </node>
           </node>
         </node>
@@ -790,11 +790,11 @@
                 <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="8801582929585019515" resolveInfo="breakpointLocation" />
               </node>
               <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="8801582929585019531">
-                <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="u02k.3463450091878657142" resolveInfo="getFQModelName" />
+                <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="u02k.3463450091878657142" resolveInfo="getBreakpointable" />
               </node>
             </node>
             <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="8801582929585019544">
-              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="e2lb.~String%dequals(java%dlang%dObject)%cboolean" resolveInfo="equals" />
+              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="e2lb.~Object%dequals(java%dlang%dObject)%cboolean" resolveInfo="equals" />
               <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="8801582929585019545">
                 <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="8801582929585019496" resolveInfo="modelName" />
               </node>
@@ -808,7 +808,7 @@
                 <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="8801582929585019515" resolveInfo="breakpointLocation" />
               </node>
               <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="8801582929585019550">
-                <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="u02k.3463450091878657138" resolveInfo="getNodeID" />
+                <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="u02k.3463450091878657138" resolveInfo="getName" />
               </node>
             </node>
             <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="8801582929585019551">
@@ -1054,14 +1054,14 @@
                               <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="8801582929585024954">
                                 <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="iu3k.~Binder%dbind(java%dlang%dClass)%ccom%dgoogle%dinject%dbinder%dAnnotatedBindingBuilder" resolveInfo="bind" />
                                 <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.ClassifierClassExpression" typeId="tpee.1116615150612" id="8801582929585024956">
-                                  <link role="classifier" roleId="tpee.1116615189566" targetNodeId="u02k.3463450091878657152" resolveInfo="ITRBreakpointManager" />
+                                  <link role="classifier" roleId="tpee.1116615189566" targetNodeId="u02k.3463450091878657152" resolveInfo="ITRBreakpointRegistry" />
                                 </node>
                               </node>
                             </node>
                             <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="8801582929585024981">
                               <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="nybc.~LinkedBindingBuilder%dto(java%dlang%dClass)%ccom%dgoogle%dinject%dbinder%dScopedBindingBuilder" resolveInfo="to" />
                               <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.ClassifierClassExpression" typeId="tpee.1116615150612" id="8801582929585024983">
-                                <link role="classifier" roleId="tpee.1116615189566" targetNodeId="u02k.3463450091878660943" resolveInfo="TRBreakpointManagerImpl" />
+                                <link role="classifier" roleId="tpee.1116615189566" targetNodeId="u02k.3463450091878660943" resolveInfo="TRBreakpointRegistryImpl" />
                               </node>
                             </node>
                           </node>
@@ -1103,7 +1103,7 @@
           <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="8801582929585024991">
             <property name="name" nameId="tpck.1169194664001" value="breakpointManager" />
             <node role="type" roleId="tpee.5680397130376446158" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="8801582929585024992">
-              <link role="classifier" roleId="tpee.1107535924139" targetNodeId="u02k.3463450091878657152" resolveInfo="ITRBreakpointManager" />
+              <link role="classifier" roleId="tpee.1107535924139" targetNodeId="u02k.3463450091878657152" resolveInfo="ITRBreakpointRegistry" />
             </node>
             <node role="initializer" roleId="tpee.1068431790190" type="tpee.DotExpression" typeId="tpee.1197027756228" id="8801582929585025007">
               <node role="operand" roleId="tpee.1197027771414" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="8801582929585024994">
@@ -1112,7 +1112,7 @@
               <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="8801582929585025013">
                 <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="iu3k.~Injector%dgetInstance(java%dlang%dClass)%cjava%dlang%dObject" resolveInfo="getInstance" />
                 <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.ClassifierClassExpression" typeId="tpee.1116615150612" id="8801582929585025018">
-                  <link role="classifier" roleId="tpee.1116615189566" targetNodeId="u02k.3463450091878657152" resolveInfo="ITRBreakpointManager" />
+                  <link role="classifier" roleId="tpee.1116615189566" targetNodeId="u02k.3463450091878657152" resolveInfo="ITRBreakpointRegistry" />
                 </node>
               </node>
             </node>
@@ -1188,14 +1188,14 @@
                               <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="8801582929585043850">
                                 <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="iu3k.~Binder%dbind(java%dlang%dClass)%ccom%dgoogle%dinject%dbinder%dAnnotatedBindingBuilder" resolveInfo="bind" />
                                 <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.ClassifierClassExpression" typeId="tpee.1116615150612" id="8801582929585043851">
-                                  <link role="classifier" roleId="tpee.1116615189566" targetNodeId="u02k.3463450091878657152" resolveInfo="ITRBreakpointManager" />
+                                  <link role="classifier" roleId="tpee.1116615189566" targetNodeId="u02k.3463450091878657152" resolveInfo="ITRBreakpointRegistry" />
                                 </node>
                               </node>
                             </node>
                             <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="8801582929585043852">
                               <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="nybc.~LinkedBindingBuilder%dto(java%dlang%dClass)%ccom%dgoogle%dinject%dbinder%dScopedBindingBuilder" resolveInfo="to" />
                               <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.ClassifierClassExpression" typeId="tpee.1116615150612" id="8801582929585043853">
-                                <link role="classifier" roleId="tpee.1116615189566" targetNodeId="u02k.3463450091878660943" resolveInfo="TRBreakpointManagerImpl" />
+                                <link role="classifier" roleId="tpee.1116615189566" targetNodeId="u02k.3463450091878660943" resolveInfo="TRBreakpointRegistryImpl" />
                               </node>
                             </node>
                           </node>
@@ -1237,7 +1237,7 @@
           <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="8801582929585043855">
             <property name="name" nameId="tpck.1169194664001" value="breakpointManager" />
             <node role="type" roleId="tpee.5680397130376446158" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="8801582929585043856">
-              <link role="classifier" roleId="tpee.1107535924139" targetNodeId="u02k.3463450091878657152" resolveInfo="ITRBreakpointManager" />
+              <link role="classifier" roleId="tpee.1107535924139" targetNodeId="u02k.3463450091878657152" resolveInfo="ITRBreakpointRegistry" />
             </node>
             <node role="initializer" roleId="tpee.1068431790190" type="tpee.DotExpression" typeId="tpee.1197027756228" id="8801582929585043857">
               <node role="operand" roleId="tpee.1197027771414" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="8801582929585043858">
@@ -1246,7 +1246,7 @@
               <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="8801582929585043859">
                 <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="iu3k.~Injector%dgetInstance(java%dlang%dClass)%cjava%dlang%dObject" resolveInfo="getInstance" />
                 <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.ClassifierClassExpression" typeId="tpee.1116615150612" id="8801582929585043860">
-                  <link role="classifier" roleId="tpee.1116615189566" targetNodeId="u02k.3463450091878657152" resolveInfo="ITRBreakpointManager" />
+                  <link role="classifier" roleId="tpee.1116615189566" targetNodeId="u02k.3463450091878657152" resolveInfo="ITRBreakpointRegistry" />
                 </node>
               </node>
             </node>
@@ -1385,14 +1385,14 @@
                               <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="8801582929585044006">
                                 <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="iu3k.~Binder%dbind(java%dlang%dClass)%ccom%dgoogle%dinject%dbinder%dAnnotatedBindingBuilder" resolveInfo="bind" />
                                 <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.ClassifierClassExpression" typeId="tpee.1116615150612" id="8801582929585044007">
-                                  <link role="classifier" roleId="tpee.1116615189566" targetNodeId="u02k.3463450091878657152" resolveInfo="ITRBreakpointManager" />
+                                  <link role="classifier" roleId="tpee.1116615189566" targetNodeId="u02k.3463450091878657152" resolveInfo="ITRBreakpointRegistry" />
                                 </node>
                               </node>
                             </node>
                             <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="8801582929585044008">
                               <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="nybc.~LinkedBindingBuilder%dto(java%dlang%dClass)%ccom%dgoogle%dinject%dbinder%dScopedBindingBuilder" resolveInfo="to" />
                               <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.ClassifierClassExpression" typeId="tpee.1116615150612" id="8801582929585044009">
-                                <link role="classifier" roleId="tpee.1116615189566" targetNodeId="u02k.3463450091878660943" resolveInfo="TRBreakpointManagerImpl" />
+                                <link role="classifier" roleId="tpee.1116615189566" targetNodeId="u02k.3463450091878660943" resolveInfo="TRBreakpointRegistryImpl" />
                               </node>
                             </node>
                           </node>
@@ -1562,7 +1562,7 @@
                     <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="8801582929585044973" resolveInfo="breakpointLocationMock" />
                   </node>
                   <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="8801582929585045006">
-                    <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="u02k.3463450091878657142" resolveInfo="getFQModelName" />
+                    <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="u02k.3463450091878657142" resolveInfo="getBreakpointable" />
                   </node>
                 </node>
               </node>
@@ -1589,7 +1589,7 @@
                     <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="8801582929585044973" resolveInfo="breakpointLocationMock" />
                   </node>
                   <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="8801582929585045031">
-                    <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="u02k.3463450091878657138" resolveInfo="getNodeID" />
+                    <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="u02k.3463450091878657138" resolveInfo="getName" />
                   </node>
                 </node>
               </node>
@@ -1648,11 +1648,11 @@
           <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="8801582929585044011">
             <property name="name" nameId="tpck.1169194664001" value="breakpointManager" />
             <node role="type" roleId="tpee.5680397130376446158" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="8801582929585044071">
-              <link role="classifier" roleId="tpee.1107535924139" targetNodeId="u02k.3463450091878660943" resolveInfo="TRBreakpointManagerImpl" />
+              <link role="classifier" roleId="tpee.1107535924139" targetNodeId="u02k.3463450091878660943" resolveInfo="TRBreakpointRegistryImpl" />
             </node>
             <node role="initializer" roleId="tpee.1068431790190" type="tpee.CastExpression" typeId="tpee.1070534934090" id="8801582929585044074">
               <node role="type" roleId="tpee.1070534934091" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="8801582929585044080">
-                <link role="classifier" roleId="tpee.1107535924139" targetNodeId="u02k.3463450091878660943" resolveInfo="TRBreakpointManagerImpl" />
+                <link role="classifier" roleId="tpee.1107535924139" targetNodeId="u02k.3463450091878660943" resolveInfo="TRBreakpointRegistryImpl" />
               </node>
               <node role="expression" roleId="tpee.1070534934092" type="tpee.DotExpression" typeId="tpee.1197027756228" id="8801582929585044013">
                 <node role="operand" roleId="tpee.1197027771414" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="8801582929585044014">
@@ -1661,7 +1661,7 @@
                 <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="8801582929585044015">
                   <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="iu3k.~Injector%dgetInstance(java%dlang%dClass)%cjava%dlang%dObject" resolveInfo="getInstance" />
                   <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.ClassifierClassExpression" typeId="tpee.1116615150612" id="8801582929585044016">
-                    <link role="classifier" roleId="tpee.1116615189566" targetNodeId="u02k.3463450091878657152" resolveInfo="ITRBreakpointManager" />
+                    <link role="classifier" roleId="tpee.1116615189566" targetNodeId="u02k.3463450091878657152" resolveInfo="ITRBreakpointRegistry" />
                   </node>
                 </node>
               </node>
