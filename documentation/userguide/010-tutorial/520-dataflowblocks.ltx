@@ -1,5 +1,39 @@
 \section{Data Flow Blocks}
 
+Imagine a language for dataflow programming as shown in the image below.
+Defining such systems consists of two steps. The first one is the definition of
+the blocks -- ports, data types and the logic inside them. The second aspect is
+the wiring of block instances to create a complete system.
+
+\begin{center} 
+  \includegraphics[width=60mm]{figures/tutorial/graphicalFlow.png}
+\end{center}
+
+The first aspect can be done textually very well and will be discussed in
+this tutorial (the second aspect is something for the later time when MPS will
+support graphical notations). Here is an example program that defines the \ic{+}
+block. This block has \ic{in} ports, \ic{out} ports as well as the logic
+dependent on its state (it can be turned on or off):
+
+\begin{center} 
+  \includegraphics[scale=0.5]{figures/tutorial/adderBlock.png}
+\end{center}
+
+Below is a more interesting block that integrates an input \ic{signal}. It has a
+configuration property \ic{avgOver} that determines how many values the
+integrator should integrate over. It also has internal data structures to manage
+the rolling buffer necessary for the integration. Finally, the example shows how
+a block can call out to a C function:
+
+\begin{center} 
+  \includegraphics[scale=0.5]{figures/tutorial/integratorBlock.png}
+\end{center}
+
+
+
+
+
+
 
 
 
