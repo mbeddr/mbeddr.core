@@ -63,7 +63,7 @@
             </node>
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="5485104033530174699">
               <property name="name" nameId="tpck.1169194664001" value="productOfComplexAndComplex" />
-              <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="5485104033530249245">
+              <node role="type" roleId="mj1l.318113533128716676" type="d47x.ComplexType" typeId="d47x.8652997886963748611" id="5485104033530249313">
                 <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
                 <property name="const" nameId="mj1l.2941277002445651368" value="false" />
               </node>
