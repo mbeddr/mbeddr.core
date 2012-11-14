@@ -262,10 +262,22 @@ on this node. The second one, \ic{node .. has error}, is used to mark a node
 where you expect an error to show up. Since the node has a red squiggly, and
 that squiggly makes sense, you mark the error as expected. 
 
-You can now run the test case by selecting the \ic{Run Tests in <your model
-name>} option from the context menu of the model that contains the test (yes, it
-takes way too long. JetBrains are working on this problem!). To illustrate a
-test failure, I have changed one line to:
+
+There are two more things worth mentioning: the test info node and the build
+configuration. The test info node is a node that points to the project that
+contains the test. This is so that tests can work on the command line via \ic{ant}.
+When specifying this path you may want to use MPS' path variables to avoid
+hard-coding directories. In the example code we do use a path variable.
+Second, even though you're not generating executable C code, the model that
+contains the test cases has to contain a \ic{BuildConfiguration}. It may be
+empty, but it has to exist.	
+
+
+
+\parhead{Running the Test Case} You can now run the test case by selecting the
+\ic{Run Tests in <your model name>} option from the context menu of the model
+that contains the test (yes, it takes way too long. JetBrains are working on
+this problem!). To illustrate a test failure, I have changed one line to:
 
 \begin{lstlisting}[language=mbeddr]
 int8 productOfComplexAndComplex = c * c;
@@ -303,7 +315,6 @@ yourself. Fortunately is usually relatively simple:
   \item If something has \emph{no} red squiggly in the test but \emph{does} have a
   \ic{node .. has error} annotation, this is a problem, too.
 \end{itemize}
-
 
 
 
