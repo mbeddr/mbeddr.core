@@ -1,5 +1,9 @@
 \section{Vectors and Matrices}
 
+
+\greyboxnote{The code for this example can be found in the tutorial in the
+\ic{mbeddr.tutorial.vectors} language.}
+
 Vectors and Matrices are quite useful in many embedded or technical
 applications. As a consequence of their unique syntax, the projectional nature
 of the MPS editor is also a nice fit. In this tutorial we look at building
@@ -445,18 +449,144 @@ exercise for the reader.
 \subsection{Adding new Operators} 
 
 We also want to add additional operators (cross product \ic{x} and
-transposition \ic{T}).
+transposition \ic{T}). 
 
+\parhead{Structure} The \ic{CrossProductExpression} extends
+\ic{BinaryArithmeticExpression}; this way it plugs in with all kinds of existing
+facilities regarding editor support and typing. Here is the definition:
 
+\begin{lstlisting}[language=mps]
+concept CrossProductExpression extends BinaryArithmeticExpression
+  concept properties:                                            
+    alias = x                                                      
+    priolevel = 2000                                               
+    shortDescription = cross-product                               
+\end{lstlisting}
+                                                                  
+The alias is used as the editor by default. The \ic{prioLevel} determines the
+operator precedence. 2000 is the same as the regular multiplication.
+\ic{shortDescription} is what is shown in the code completion menu behind the
+actual \ic{x} symbol.
 
+The \ic{MatrixTransposeExpr} is a unary expression, it has an alias of \ic{T}, a
+\ic{prioLevel} of 4000 and a \ic{shortDescription} of \ic{transpose}. It has the
+\ic{dontSubstituteByDefault} flag to prevent entering it directly.  
 
+\begin{lstlisting}[language=mps]
+concept MatrixTransposeExpr extends UnaryArithmeticExpression
+  concept properties:                                        
+    alias = T                                                  
+    priolevel = 4000                                           
+    shortDescription = transpose                               
+    dontSubstituteByDefault                                    
+\end{lstlisting}
+                                                             
 
+\parhead{Editor} The editor for the cross product is trivial and inherited from
+the \ic{BinaryArith- meticExpression}. For the \ic{MatrixTransposeExpr}, the
+editor is shown below:
 
+\begin{center}
+\includegraphics[scale=0.7]{figures/tutorial/transposeEditor.png}
+\end{center}
 
+It is essentially a horizontal list with the \ic{expression} and the \ic{T} next
+to each other. To get the superscript, you have to set the \ic{cell layout}
+property of the collection cell to \ic{superscript} and you have to add the
+\ic{script-kind: superscript} style property to the \ic{T}.
 
+To be able to enter the \ic{T} on the right side of an expression you need to
+write a right transformation. Here is the code:
 
+\begin{lstlisting}[language=mps, morekeywords={right, node, output, add,
+custom, items, simple, item, matching, text, description, icon, type,
+condition}, deletekeywords={scope}] 
+side transform actions makeTransposeExpr
+                                                                                                                                                                                                                                                                    
+right transformed node: Expression                                                                                                                                                                                                
+  condition :                                                                                                                                                                                                                                                       
+    (operationContext, scope, model, sourceNode)->boolean { 
+      sourceNode.type.isInstanceOf(MatrixType); 
+  }                                                                                                                                                         
+                                                                                                                                                                                                                                                                    
+  actions :                                                                                                                                                                                                                                                         
+    add custom items  (output concept: MatrixTransposeExpr)                                                                                                                                                                                                         
+      simple item                                                                                                                                                                                                                                                   
+        matching text                                                                                                                                                                                                                                               
+          T                                                                                                                                                                                                                                                         
+        description text                                                                                                                                                                                                                                            
+          <default>                                                                                                                                                                                                                                                 
+        icon                                                                                                                                                                                                                                                        
+          <default>                                                                                                                                                                                                                                                 
+        type                                                                                                                                                                                                                                                        
+          <default>                                                                                                                                                                                                                                                 
+        do transform                                                                                                                                                                                                                                                
+          (operationContext, scope, model, sourceNode, pattern)->node<> { 
+            node<MatrixTransposeExpr> n = new initialized node<MatrixTransposeExpr>(); 
+            sourceNode.replace with(n); 
+            n.expression = sourceNode; 
+            PrioUtil.shuffleUnaryExpression(n); 
+            n; 
+          }
+\end{lstlisting}
+                                                                                                                                                                                                                                                                    
+This is a normal right transform as discussed earlier; what is interesting is
+the call to \ic{PrioUtil.shuffleUnaryExpression(n)}. This reshuffles the tree to
+take care of precedence as expressed in the \ic{prioLevel} property. It has to
+be called as part of any left or right transformation that involves expressions.
 
+\parhead{Type System} The cross product is a binary operator, so it needs an
+overloaded operations container that computes the resulting type:
 
+\begin{lstlisting}[language=mps, morekeywords={left, concepts, type, is,
+exact, right, use, strong, subtyping, typechecker}, 
+deletekeywords={side, nodes}] 
+operation concepts: CrossProductExpression                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
+  left operand type: new node<VectorType>() 
+        is exact: false use strong subtyping false 
+  right operand type: new node<VectorType>() 
+        is exact: false use strong subtyping false is applicable:                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
+  (op, leftOperandType, rightOperandType)->boolean { 
+    leftOperandType : VectorType.dimensionsRows == 
+          rightOperandType : IMatrixType.dimensionsRows; 
+  }                                                                                                                                                                                                                                                                                                                                                                
+operation type:                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
+  (op, leftOperandType, rightOperandType)->node<> { 
+    set<node<>> nodes = new hashset<node<>>; 
+    nodes.add(rightOperandType : IMatrixType.baseType); 
+    nodes.add(leftOperandType : IMatrixType.baseType); 
+    set<node<>> leastCommonSupertypes =
+         typechecker.getSubtypingManager().leastCommonSupertypes(nodes, false);
+    node<VectorType> vt = new node<VectorType>(); 
+    vt.baseType = leastCommonSupertypes.first : IType; 
+    vt.dimensionsRows = rightOperandType : IMatrixType.dimensionsRows; 
+    return vt; 
+  }
+\end{lstlisting}
+
+Finally, the transpose expression needs to calculate the resulting type, which
+is the same type as the expression on which it is called, but with the dimensios
+exchanged:
+
+\begin{lstlisting}[language=mps, morekeywords={when, concrete}]
+rule typeof_MatrixTransposeExpr {                                                                                                                                                                                                                                                         
+  applicable for concept = MatrixTransposeExpr as mte                                                                                                                                                                                                                                     
+  overrides true                                                                                                                                                                                                                                                                          
+                                                                                                                                                                                                                                                                                          
+  do {                                                                                                                                                                                                                                                                                    
+    when concrete (typeof(mte.expression) : MatrixType as mteType) { 
+      node<MatrixType> mt = new node<MatrixType>(); 
+      mt.baseType = mteType.baseType.copy; 
+      mt.dimensionsCols = mteType.dimensionsRows; 
+      mt.dimensionsRows = mteType.dimensionsCols; 
+      typeof(mte) :==: mt; 
+    } 
+  }                                                                                                                                                                                                                                                                                       
+}                                                                                                                                                                                                                                                                                         
+\end{lstlisting}
+
+Note how we use \ic{when concrete} to express that this typing rule may only be
+executed once the type of \ic{mte.expression} has successfully been calculated.
 
 
 
