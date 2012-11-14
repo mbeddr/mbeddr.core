@@ -376,7 +376,76 @@ column.
 
 
 
-\subsection{Operators}
+\subsection{Overriding the Existing Operators} 
+
+The existing operators must get new type system rules (similar to the complex
+numbers). In the example we have done it only for the \ic{MultiExpression}. Here
+is the code for the case where a matrix is multiplied with a skalar value:
+
+\begin{lstlisting}[language=mps, morekeywords={left, concepts, type, is,
+exact, right, use, strong, subtyping, typechecker}, 
+deletekeywords={side, nodes}] 
+operation concepts: MultiExpression                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
+  left operand type: new node<MatrixType>() 
+        is exact: false use strong subtyping false
+  right operand type: new node<PrimitiveType>() 
+        is exact: false use strong subtyping false 
+is applicable:                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
+  (op, leftOperandType, rightOperandType)->boolean { 
+    MeetTypeHelper.isInstanceOf(rightOperandType : IType, concept/INumeric/); 
+  }                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
+operation type:                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
+  (op, leftOperandType, rightOperandType)->node<> { 
+     
+    // determine the least common supertype between the base type 
+    // of the  matrix and the primitive on the other 
+    // side of the binary operator
+    set<node<>> nodes = new hashset<node<>>; 
+    nodes.add(leftOperandType : IMatrixType.baseType); 
+    nodes.add(rightOperandType); 
+    set<node<>> leastCommonSupertypes =
+         typechecker.getSubtypingManager().leastCommonSupertypes(nodes, false);
+     
+    // create a matrix type or a vector type 
+    // depending on what's on the left side 
+    node<IMatrixType> resultType = 
+         leftOperandType : IMatrixType.cloneForBaseType(leastCommonSupertypes.first : IType); 
+    return resultType;
+  }
+\end{lstlisting}
+
+As before, we use the \ic{MeetTypeHelper} to find out whether the right side is
+actually a numeric primitive type. Inside the body we use the \ic{typechecker}
+to determine the least common supertype between the base type of the  matrix and
+the primitive on the other side of the binary operator since this will become
+the basetype of the result type. We then create a \ic{MatrixType} or a \ic{VectorType} 
+depending on whether the original non-primitive type was a matrix or a vector;
+this is handled correctly by \ic{cloneForBaseType} defined for \ic{IMatrixType}.
+Here's the implementation for a \ic{MatrixType}:
+
+\begin{lstlisting}[language=mps] 
+public node<IMatrixType> cloneForBaseType(node<IType> baseType) 
+     overrides IMatrixType.cloneForBaseType { 
+  node<MatrixType> res = new node<MatrixType>(); 
+  res.dimensionsRows = this.dimensionsRows; 
+  res.dimensionsCols = this.dimensionsCols; 
+  res.baseType = baseType; 
+  res; 
+}
+\end{lstlisting}
+
+Similar rules have to written for the other cases (i.e. matrix/vector and
+matrix/vector or primitive and matrix/vector). Also, the code has to be
+generalized for other operators, not just multiplication. This is left as an
+exercise for the reader.
+                                                                                                                                                                                                                                                                                              
+
+
+
+\subsection{Adding new Operators} 
+
+We also want to add additional operators (cross product \ic{x} and
+transposition \ic{T}).
 
 
 

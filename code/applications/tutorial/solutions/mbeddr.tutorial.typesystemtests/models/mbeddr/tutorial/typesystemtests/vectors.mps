@@ -217,6 +217,9 @@
         <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="5485104033530268265">
           <property name="name" nameId="tpck.1169194664001" value="empty_1352881618102_2" />
         </node>
+        <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodeOperationsContainer" typeId="tp5g.1215603922101" id="5485104033530274247">
+          <node role="operations" roleId="tp5g.1215604436604" type="tp5g.TypesCheckOperation" typeId="tp5g.1215607067978" id="5485104033530274248" />
+        </node>
       </node>
     </node>
   </root>
