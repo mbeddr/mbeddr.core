@@ -43,7 +43,7 @@
       <modulePath path="${project}/languages/com.mbeddr.core.util/solutions/pluginSolution/pluginSolution.msd" folder="core-extended.solutions" />
       <modulePath path="${project}/languages/com.mbeddr.core.util/util.mpl" folder="core-extended" />
       <modulePath path="${project}/solutions/com.mbeddr.core.statistics/statistics.msd" folder="core.solutions" />
-      <modulePath path="${project}/solutions/test.dataflow/dataflow.msd" folder="tests" />
+      <modulePath path="${project}/solutions/test.dataflow/dataflow.msd" />
       <modulePath path="${project}/tests/aLibrary/aLibrary.msd" folder="tests" />
       <modulePath path="${project}/tests/test.cstub.core/core.msd" folder="tests.cstub" />
       <modulePath path="${project}/tests/test.cstub.testheader.expressions/expressions.msd" folder="tests.cstub" />
@@ -65,7 +65,7 @@
           <value>
             <Library>
               <option name="name" value="debugger" />
-              <option name="path" value="$PROJECT_DIR$/../com.mbeddr.debugger" />
+              <option name="path" value="${mbeddr.github.core.home}/com.mbeddr.debugger" />
             </Library>
           </value>
         </entry>
@@ -73,7 +73,7 @@
           <value>
             <Library>
               <option name="name" value="mpsutil" />
-              <option name="path" value="$PROJECT_DIR$/../com.mbeddr.mpsutil" />
+              <option name="path" value="${mbeddr.github.core.home}/com.mbeddr.mpsutil" />
             </Library>
           </value>
         </entry>
@@ -81,7 +81,7 @@
           <value>
             <Library>
               <option name="name" value="spawner" />
-              <option name="path" value="$PROJECT_DIR$/../com.mbeddr.spawner" />
+              <option name="path" value="${mbeddr.github.core.home}/com.mbeddr.spawner" />
             </Library>
           </value>
         </entry>
