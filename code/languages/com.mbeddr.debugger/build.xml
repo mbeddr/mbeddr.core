@@ -2,6 +2,10 @@
 
   <property file="build.properties"/>
 
+  <property name="jvm.arg.Xss" value="-Xss1024k"/>
+  <property name="jvm.arg.Xmx" value="-Xmx2048m"/>
+  <property name="jvm.arg.XX:MaxPermSize" value="-XX:MaxPermSize=128m"/>
+
   <path id="mps.ant.path">
    <pathelement location="${mps.home}/lib/mps-backend.jar"/>
    <pathelement location="${mps.home}/lib/jdom.jar"/>
@@ -18,13 +22,13 @@
  
   <jvmargs id="myargs">
       <arg value="-ea"/>
-      <arg value="-Xss1024k"/>
-      <arg value="-Xmx2048m"/>
-      <arg value="-XX:MaxPermSize=128m"/>
+      <arg value="${jvm.arg.Xss}"/>
+      <arg value="${jvm.arg.Xmx}"/>
+      <arg value="${jvm.arg.XX:MaxPermSize}"/>
       <arg value="-XX:+HeapDumpOnOutOfMemoryError"/>
-	  <arg value="-Didea.system.path=${mps.platform.caches}/system"/>
-	  <arg value="-Didea.config.path=${mps.platform.caches}/config"/>
-	  <arg value="-Didea.plugins.path=${mps.platform.caches}/plugins"/>
+      <arg value="-Didea.system.path=${mps.platform.caches}/system"/>
+      <arg value="-Didea.config.path=${mps.platform.caches}/config"/>
+      <arg value="-Didea.plugins.path=${mps.platform.caches}/plugins"/>
   </jvmargs>
 
   <target name="init">
@@ -33,8 +37,8 @@
   </target>
   
   <target name="build">
-	<antcall target="build-languages"/>
-	<antcall target="build-tests"/>
+    <antcall target="build-languages"/>
+    <antcall target="build-tests"/>
   </target>
    
   
@@ -56,7 +60,7 @@
   </target>
 
   <target name="delete-mps-generated-code" >
-  	<delete includeemptydirs="true">
+      <delete includeemptydirs="true">
       <fileset dir="${mbeddr.github.core.home}/${mbeddr.debugger.project.dir}" defaultexcludes="false">
          <include name="**/source_gen/**" />
          <include name="**/source_gen.caches/**" />
@@ -71,7 +75,7 @@
     
     <echo message="mbeddr.github.core.home = ${mbeddr.github.core.home}"/>
     <echo message="path.macro.mbeddr.github.core.home := ${mbeddr.github.core.home}"/>
-	
+    
     <junit haltonfailure="true" showoutput="true" fork="true" dir="${mps.home}">
       <jvmarg value="-ea"/>
       <jvmarg value="-Xss1024k"/>
@@ -86,7 +90,7 @@
       <sysproperty key="idea.config.path" value="${mps.platform.caches}/config"/>
       <sysproperty key="idea.plugins.path" value="${mps.platform.caches}/plugins"/>
       
-      <sysproperty key="mps.junit.pathmacro.mps.home" value="${mps.home}"/>	  
+      <sysproperty key="mps.junit.pathmacro.mps.home" value="${mps.home}"/>      
       <sysproperty key="mps.junit.pathmacro.mbeddr.assembla.ext.home" value="${mbeddr.github.core.home}"/>
       <sysproperty key="mps.junit.pathmacro.mbeddr.github.core.home" value="${mbeddr.github.core.home}"/>
       <sysproperty key="mps.junit.project" value="${mbeddr.github.core.home}/${mbeddr.debugger.project.mpr}"/>

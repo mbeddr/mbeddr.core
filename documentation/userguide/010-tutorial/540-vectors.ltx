@@ -1,0 +1,599 @@
+\section{Vectors and Matrices}
+
+
+\greyboxnote{The code for this example can be found in the tutorial in the
+\ic{mbeddr.tutorial.vectors} language.}
+
+Vectors and Matrices are quite useful in many embedded or technical
+applications. As a consequence of their unique syntax, the projectional nature
+of the MPS editor is also a nice fit. In this tutorial we look at building
+"strange" editors and some type system stuff. As with complex numbers, we don't
+have a generator. Here is some example code that uses vectors and matrices:
+
+\begin{center}
+\includegraphics[width=\columnwidth]{figures/tutorial/vectorDemo.png}
+\end{center}
+
+\subsection{Types and Literals}
+
+\parhead{Structure} First of all, it is important to realize that vectors are
+structurally just matrices with one column. In terms of types and the permitted
+operators, matrices and vectors must be treated differently, but structurally
+they are similar. Consequently there is a \ic{MatrixLiteral} (but no vector
+literal). A \ic{MatrixLiteral} owns a collection of \ic{MatrixLiteralCol}
+concepts, which in turn contain \ic{Expression}s:
+
+\begin{lstlisting}[language=mps]
+concept MatrixLiteral extends Literal           
+  children:                                     
+    MatrixLiteralCol cols 1..n specializes: <none>
+  concept properties:                           
+    alias = [                                     
+    shortDescription = matrix                     
+\end{lstlisting}
+                                                
+\begin{lstlisting}[language=mps]
+concept MatrixLiteralCol extends BaseConcept  
+  children:                                   
+    Expression elements 1..n specializes: <none>
+\end{lstlisting}
+
+In terms of types there is a \ic{MatrixType} and a \ic{VectorType} which both
+implement the \ic{IMatrixType} interface:
+
+\begin{lstlisting}[language=mps, morekeywords={interface}]
+interface concept IMatrixType extends <none>
+  properties:                               
+    dimensionsRows : integer                  
+  children:                                 
+    IType baseType 1 specializes: <none>      
+\end{lstlisting}
+
+This interface has the number rows as well as the base type. These are important
+because the number of rows as well as the base type are relevant for typing: a
+\ic{vector<int8,3>} is not compatible with a \ic{vector<int16,2>}. Since the
+type system really just works with the type nodes, the type has to contain this
+information (this is in contrast to complex numbers, where every complex number is
+compatible with any other complex number). So then the type for vectors is
+defined like this:
+
+\begin{lstlisting}[language=mps, morekeywords={interface}]
+concept VectorType extends Type          
+                   implements IMatrixType
+  concept properties:                    
+    alias = vector                         
+\end{lstlisting}
+                                         
+The type for matrices adds another dimension to represent the number of columns:
+
+\begin{lstlisting}[language=mps, morekeywords={interface}]
+concept MatrixType extends Type          
+                   implements IMatrixType
+  properties:                            
+    dimensionsCols : integer               
+  concept properties:                    
+    alias = matrix                         
+\end{lstlisting}
+                                         
+
+\parhead{Type System} Since we had been discussing the structure of types above
+let's look at the type system for the types and literals. Let us look at the
+typing rules for the \ic{VectorType}. First of all, since it extends \ic{Type},
+it is automatically typed to a clome of itself:
+
+\begin{lstlisting}[language=mps]
+rule typeof_Type {                  
+  applicable for concept = Type as t
+  overrides false                   
+                                    
+  do {                              
+    typeof(t) :==: t.copy;          
+  }                                 
+}                                   
+\end{lstlisting}
+
+Now we have to take a look at subtyping. Vectors are \emph{covariant} regarding
+their base type: \ic{vector<T,i>} is a subtype of \ic{vector<Q,i>} if \ic{T} is
+a subtype of \ic{Q}. To make this work we have to implement a subtyping rule for
+\ic{VectorType}. Subtyping rules return the collection of supertypes for any
+particular type. Here is the basic structure for \ic{VectorType}:
+
+\begin{lstlisting}[language=mps, morekeywords={subtyping, supertypes, weak},
+deletekeywords={to, be}]
+subtyping rule supertypesOfVectorType {                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
+  weak = false                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
+  applicable for concept = VectorType as vectorType                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
+  supertypes {                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
+    nlist<IMatrixType> vectorSuperTypes = new nlist<IMatrixType>;
+    // more stuff to be added here 
+    return vectorSuperTypes;
+  }                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
+}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
+\end{lstlisting}
+
+To implement the covariance discussed above, we can write the following code,
+which should be easy to understand (\ic{immediateSupertypes} is a built-in type
+system operator):
+
+\begin{lstlisting}[language=mps]
+foreach baseSuperType in immediateSupertypes(vectorType.baseType) { 
+  node<VectorType> st = new node<VectorType>(); 
+  st.baseType = baseSuperType : Type; 
+  st.dimensionsRows = vectorType.dimensionsRows; // same number of rows!
+  vectorSuperTypes.add(st); 
+}
+\end{lstlisting}
+
+There is also a special case \todo{Bernd, please explain!}
+
+\begin{lstlisting}[language=mps]
+if (vectorSupertypes.isEmpty && vectorType.baseType != null) { 
+  node<MatrixType> mt = new node<MatrixType>(); 
+  vectorSupertypes.add(mt); 
+  node<VectorType> vt = new node<VectorType>(); 
+  vectorSupertypes.add(vt); 
+}
+\end{lstlisting}
+
+Essentially the same supertyping rule has to be defined for \ic{MatrixType}s.
+However, we want to make sure that if the matrix type has only one column, then
+a corresponding \ic{VectorType} is among the supertypes:
+
+\begin{lstlisting}[language=mps]
+if (matrixType.dimensionsCols == 1) { 
+  node<VectorType> vt = new node<VectorType>(); 
+  vt.dimensionsRows = matrixType.dimensionsRows; 
+  vt.baseType = matrixType.baseType.copy; 
+  supertypes.add(vt); 
+  return supertypes; 
+} else { 
+  foreach superType in immediateSupertypes(matrixType.baseType) { 
+    // essentially same as before 
+  } 
+  if (supertypes.isEmpty && matrixType.baseType != null) { 
+    node<MatrixType> st = new node<MatrixType>(); 
+    supertypes.add(st); 
+  } 
+  return supertypes; 
+}
+\end{lstlisting}
+
+Let us now take a look at the \ic{MatrixLiteral}. Consider this matrix:
+$\begin{bmatrix}
+  10    & 12.1 \\
+  1000  & 1000.12
+\end{bmatrix}$
+What is the type of that matrix? Sure, it has two columns and two rows, but what
+is the base type? It must be the most general of the element types (in this
+case a \ic{float}, I think). Here is the code that calculates that most general
+type:
+
+\begin{lstlisting}[language=mps, morekeywords={infer, var}]
+rule typeof_MatrixLiteral {                                                                                                                                                                                                                                                                                          
+  applicable for concept = MatrixLiteral as ml                                                                                                                                                                                                                                                                       
+  overrides false                                                                                                                                                                                                                                                                                                    
+                                                                                                                                                                                                                                                                                                                     
+  do {                                                                                                                                                                                                                                                                                                               
+    var commonElementType; 
+    foreach e in ml.cols.elements { 
+      infer typeof(e) :<=: commonElementType; 
+    } 
+   
+    node<MatrixType> mt = new node<MatrixType>(); 
+    mt.baseType = commonElementType.copy : IType; 
+    mt.dimensionsCols = ml.cols.size; 
+    mt.dimensionsRows = ml.cols.first.elements.size; 
+    typeof(ml) :==: mt;
+  }                                                                                                                                                                                                                                                                                                                  
+}                                                                                                                                                                                                                                                                                                                    
+\end{lstlisting}
+
+The second part is simple: we create a new \ic{MatrixType}, set its properties,
+and then assign this new type as the type of the matrix literal \ic{ml}. The
+first part of the rule is more interesting. We first declare a new, unbound type
+system variable using the \ic{var} keyword. We then iterate over all elements in
+all columns and write the following relationship for each of them:
+
+
+\begin{lstlisting}[language=mps, morekeywords={infer, var}]
+infer typeof(e) :<=: commonElementType; 
+\end{lstlisting}
+
+This expresses that the type of the element \ic{e} must be the same or a subtype
+of (\ic{:<=:}) as the \ic{commonElementType} variable. Note how we create
+\emph{one such equation for each element}. The only way how the type system
+engine can make \emph{all} of these equations true (which is what the type
+system engine tries to do!) is to make \ic{commonElementType} represent the
+common supertype of all of the element types. This neatly shows the power of
+the declarative, sovler-based type system engine!
+
+There is one last thing we have to make sure: the following matrix is invalid:  
+$\begin{bmatrix}
+  a & b & c \\
+  d & e \\
+  f
+\end{bmatrix}$
+In other words, the number of elements in each column must be the same. Here is
+the non-typesystem rule that makes sure this is the case:
+
+\begin{lstlisting}[language=mps, morekeywords={infer, var}]
+checking rule check_MatrixLiteral {                                                                                                        
+  applicable for concept = MatrixLiteral as ml                                                                                             
+  overrides false                                                                                                                          
+                                                                                                                                           
+  do {                                                                                                                                     
+    node<MatrixLiteralCol> firstCol = ml.cols.first; 
+    if (ml.cols.any({~it => it.elements.size != firstCol.elements.size; })) { 
+      error "all columns must have the same size" -> ml; 
+    }
+  }                                                                                                                                           
+}                                                                                                                                          
+\end{lstlisting}
+
+
+By the way: to render a type (or any other element) nicely in textual output
+(such as error messages), you should override the \ic{getPresentation} behavior.
+This is essentially MPS' \ic{toString()} equivalent.
+
+\begin{lstlisting}[language=mps, morekeywords={infer, var}]
+concept behavior VectorType {                                                                                                                                     
+                                                                                                                                                                  
+  public string getPresentation() 
+        overrides BaseConcept.getPresentation { 
+    "vector<" + this.baseType.getPresentation() + ", " + this.dimensionsRows + ">"; 
+  }
+}                                                                                                                                                                 
+\end{lstlisting}
+
+
+\parhead{Editor} The editors for the two types is are trivial and not worth
+discussing. What is interesting is the editor for the \ic{MatrixLiteral}:
+
+\begin{center}
+\includegraphics[width=\columnwidth]{figures/tutorial/matrixLiteralEditor.png}
+\end{center}
+  
+It consists of two custom cells (about which we'll talk in a moment) and a
+horizontal collection (\ic{(>..<)}) of the colums. A column has its own editor,
+discussed below. To make sure the columns have some space between them we use a
+trick. We add a white, vertical bar as the list separator:
+
+\begin{lstlisting}[language=mps, morekeywords={list, element}]
+list element:                                  
+separator              |                                    
+separator constraint   noflow                    
+separator style        <no parentClass> {             
+                         text-foreground-color : white
+                         padding-left : 1 spaces      
+                         padding-right : 1 spaces     
+                       }                              
+\end{lstlisting}
+
+
+The editor for the \ic{MatrixLiteralCol} is simply a vertical list of all the
+expressions. We specify two style properties to make sure each expression is
+horizontally centered, and that the whole vertical list is centered with regards
+to the line in which the matrix lives:
+
+\begin{lstlisting}
+horizontal-align: center           
+default-baseline: collection center
+\end{lstlisting}
+
+Let us now look at the two custom cells. These obviously handle the "big
+brackets" on the left and right side of the matrix. When you use the \ic{custom
+cell} cell type, you have to actually return the cell object from the inspector
+using an expression like \ic{new OpeningBracketCell(node)}. The real drawing of
+the cell happens in the class. Here is the basic outline of a custom cell
+implementation:
+
+
+\begin{lstlisting}[language=mps]
+public class OpeningBracketCell extends AbstractCellProvider { 
+
+  private node<> myNode; 
+   
+  public OpeningBracketCell(node<> node) { 
+    this.myNode = node; 
+  } 
+   
+  public EditorCell createEditorCell(EditorContext context) { 
+    EditorCell_Basic result = new EditorCell_Basic(context, this.myNode) {
+      ... 
+    }; 
+    return result; 
+  } 
+}
+\end{lstlisting}
+
+Essentially you implement a subtype of \ic{AbstractCellProvider} and implement
+the \ic{createEditorCell} method to return a suitable cell. In many cases it is
+good enough to return an anonymous subclass of \ic{EditorCell\_Basic} that
+overrides a few methods accordingly. Here is how it works for the opening
+bracket cell:
+
+\begin{lstlisting}[language=mps]
+EditorCell_Basic result = new EditorCell_Basic(context, this.myNode) { 
+  public void paintContent(Graphics g, ParentSettings parentSettings) { 
+    g.setColor(Color.BLACK); 
+    EditorCell_Collection parent = this.getParent(); 
+    int x = getX(); 
+    int y = parent.getY(); 
+    int height = parent.getHeight(); 
+    g.fillRect(x, y, 2, height); 
+    g.fillRect(x, y, 4, 2); 
+    g.fillRect(x, y + height - 2, 4, 2); 
+  } 
+   
+  public void relayoutImpl() { 
+    this.myWidth = 4; 
+    this.myHeight = 10; 
+  } 
+   
+  public boolean isFirstCaretPosition() { 
+    return true; 
+  } 
+};
+\end{lstlisting}
+
+\todo{Bernd, please explain what's going here.}
+
+
+
+There are a few things that can be done to improve the editing experience for
+the user; for example, the following intention lets the user select \ic{Add New
+Column} from the intentions menu (\ic{Alt-Enter}) to add a new column.
+
+\begin{lstlisting}[language=mps, morekeywords={filter, description, execute}]
+intention addNewMatrixCol for concept MatrixLiteralCol {
+  error intention : false                                                                                                                                                                                                                                                                                                                                          
+  available in child nodes : true                                                                                                                                                                                                                                                                                                                                  
+  child filter : <all child nodes>                                                                                                                                                                                                                                                                                                                                 
+                                                                                                                                                                                                                                                                                                                                                                 
+  description(editorContext, node)->string { 
+    "Add New Column"; 
+  }                                                                                                                                                                                                                                                                                                 
+                                                                                                                                                                                                                                                                                                                                                                 
+  execute(editorContext, node)->void { 
+    node<MatrixLiteralCol> currentCol = node.ancestor<concept = MatrixLiteralCol, +>; 
+    node<MatrixLiteralCol> newCol = new node<MatrixLiteralCol>(); 
+    currentCol.elements.forEach({~it => newCol.elements.add new(<default>); }); 
+    currentCol.add next-sibling(newCol); 
+    editorContext.select(newCol.elements.first); 
+  }
+}
+\end{lstlisting}
+
+A few words about it. This intention is available not just on a
+\ic{MatrixLiteralCol} but also on all of its children in the tree. This means
+that when it is invoked, the \ic{node} variable may not actually be a
+\ic{MatrixLiteralCol}, but some kind of \ic{Expression} instead. The first line
+in the \ic{execute} body compensates for that by retrieving the current parent
+column. We then create a new column, add a new (empty) expression to it for each
+expression in the current column and then add the \ic{newCol} as a next sibling
+to the current one. We then set the focus into the first element of the new
+column.
+
+\todo{Bernd: what about the actions? do they work?}
+
+
+
+
+\subsection{Overriding the Existing Operators} 
+
+The existing operators must get new type system rules (similar to the complex
+numbers). In the example we have done it only for the \ic{MultiExpression}. Here
+is the code for the case where a matrix is multiplied with a skalar value:
+
+\begin{lstlisting}[language=mps, morekeywords={left, concepts, type, is,
+exact, right, use, strong, subtyping, typechecker}, 
+deletekeywords={side, nodes}] 
+operation concepts: MultiExpression                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
+  left operand type: new node<MatrixType>() 
+        is exact: false use strong subtyping false
+  right operand type: new node<PrimitiveType>() 
+        is exact: false use strong subtyping false 
+is applicable:                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
+  (op, leftOperandType, rightOperandType)->boolean { 
+    MeetTypeHelper.isInstanceOf(rightOperandType : IType, concept/INumeric/); 
+  }                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
+operation type:                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
+  (op, leftOperandType, rightOperandType)->node<> { 
+     
+    // determine the least common supertype between the base type 
+    // of the  matrix and the primitive on the other 
+    // side of the binary operator
+    set<node<>> nodes = new hashset<node<>>; 
+    nodes.add(leftOperandType : IMatrixType.baseType); 
+    nodes.add(rightOperandType); 
+    set<node<>> leastCommonSupertypes =
+         typechecker.getSubtypingManager().leastCommonSupertypes(nodes, false);
+     
+    // create a matrix type or a vector type 
+    // depending on what's on the left side 
+    node<IMatrixType> resultType = 
+         leftOperandType : IMatrixType.cloneForBaseType(leastCommonSupertypes.first : IType); 
+    return resultType;
+  }
+\end{lstlisting}
+
+As before, we use the \ic{MeetTypeHelper} to find out whether the right side is
+actually a numeric primitive type. Inside the body we use the \ic{typechecker}
+to determine the least common supertype between the base type of the  matrix and
+the primitive on the other side of the binary operator since this will become
+the basetype of the result type. We then create a \ic{MatrixType} or a \ic{VectorType} 
+depending on whether the original non-primitive type was a matrix or a vector;
+this is handled correctly by \ic{cloneForBaseType} defined for \ic{IMatrixType}.
+Here's the implementation for a \ic{MatrixType}:
+
+\begin{lstlisting}[language=mps] 
+public node<IMatrixType> cloneForBaseType(node<IType> baseType) 
+     overrides IMatrixType.cloneForBaseType { 
+  node<MatrixType> res = new node<MatrixType>(); 
+  res.dimensionsRows = this.dimensionsRows; 
+  res.dimensionsCols = this.dimensionsCols; 
+  res.baseType = baseType; 
+  res; 
+}
+\end{lstlisting}
+
+Similar rules have to written for the other cases (i.e. matrix/vector and
+matrix/vector or primitive and matrix/vector). Also, the code has to be
+generalized for other operators, not just multiplication. This is left as an
+exercise for the reader.
+                                                                                                                                                                                                                                                                                              
+
+
+
+\subsection{Adding new Operators} 
+
+We also want to add additional operators (cross product \ic{x} and
+transposition \ic{T}). 
+
+\parhead{Structure} The \ic{CrossProductExpression} extends
+\ic{BinaryArithmeticExpression}; this way it plugs in with all kinds of existing
+facilities regarding editor support and typing. Here is the definition:
+
+\begin{lstlisting}[language=mps]
+concept CrossProductExpression extends BinaryArithmeticExpression
+  concept properties:                                            
+    alias = x                                                      
+    priolevel = 2000                                               
+    shortDescription = cross-product                               
+\end{lstlisting}
+                                                                  
+The alias is used as the editor by default. The \ic{prioLevel} determines the
+operator precedence. 2000 is the same as the regular multiplication.
+\ic{shortDescription} is what is shown in the code completion menu behind the
+actual \ic{x} symbol.
+
+The \ic{MatrixTransposeExpr} is a unary expression, it has an alias of \ic{T}, a
+\ic{prioLevel} of 4000 and a \ic{shortDescription} of \ic{transpose}. It has the
+\ic{dontSubstituteByDefault} flag to prevent entering it directly.  
+
+\begin{lstlisting}[language=mps]
+concept MatrixTransposeExpr extends UnaryArithmeticExpression
+  concept properties:                                        
+    alias = T                                                  
+    priolevel = 4000                                           
+    shortDescription = transpose                               
+    dontSubstituteByDefault                                    
+\end{lstlisting}
+                                                             
+
+\parhead{Editor} The editor for the cross product is trivial and inherited from
+the \ic{BinaryArith- meticExpression}. For the \ic{MatrixTransposeExpr}, the
+editor is shown below:
+
+\begin{center}
+\includegraphics[scale=0.7]{figures/tutorial/transposeEditor.png}
+\end{center}
+
+It is essentially a horizontal list with the \ic{expression} and the \ic{T} next
+to each other. To get the superscript, you have to set the \ic{cell layout}
+property of the collection cell to \ic{superscript} and you have to add the
+\ic{script-kind: superscript} style property to the \ic{T}.
+
+To be able to enter the \ic{T} on the right side of an expression you need to
+write a right transformation. Here is the code:
+
+\begin{lstlisting}[language=mps, morekeywords={right, node, output, add,
+custom, items, simple, item, matching, text, description, icon, type,
+condition}, deletekeywords={scope}] 
+side transform actions makeTransposeExpr
+                                                                                                                                                                                                                                                                    
+right transformed node: Expression                                                                                                                                                                                                
+  condition :                                                                                                                                                                                                                                                       
+    (operationContext, scope, model, sourceNode)->boolean { 
+      sourceNode.type.isInstanceOf(MatrixType); 
+  }                                                                                                                                                         
+                                                                                                                                                                                                                                                                    
+  actions :                                                                                                                                                                                                                                                         
+    add custom items  (output concept: MatrixTransposeExpr)                                                                                                                                                                                                         
+      simple item                                                                                                                                                                                                                                                   
+        matching text                                                                                                                                                                                                                                               
+          T                                                                                                                                                                                                                                                         
+        description text                                                                                                                                                                                                                                            
+          <default>                                                                                                                                                                                                                                                 
+        icon                                                                                                                                                                                                                                                        
+          <default>                                                                                                                                                                                                                                                 
+        type                                                                                                                                                                                                                                                        
+          <default>                                                                                                                                                                                                                                                 
+        do transform                                                                                                                                                                                                                                                
+          (operationContext, scope, model, sourceNode, pattern)->node<> { 
+            node<MatrixTransposeExpr> n = new initialized node<MatrixTransposeExpr>(); 
+            sourceNode.replace with(n); 
+            n.expression = sourceNode; 
+            PrioUtil.shuffleUnaryExpression(n); 
+            n; 
+          }
+\end{lstlisting}
+                                                                                                                                                                                                                                                                    
+This is a normal right transform as discussed earlier; what is interesting is
+the call to \ic{PrioUtil.shuffleUnaryExpression(n)}. This reshuffles the tree to
+take care of precedence as expressed in the \ic{prioLevel} property. It has to
+be called as part of any left or right transformation that involves expressions.
+
+\parhead{Type System} The cross product is a binary operator, so it needs an
+overloaded operations container that computes the resulting type:
+
+\begin{lstlisting}[language=mps, morekeywords={left, concepts, type, is,
+exact, right, use, strong, subtyping, typechecker}, 
+deletekeywords={side, nodes}] 
+operation concepts: CrossProductExpression                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
+  left operand type: new node<VectorType>() 
+        is exact: false use strong subtyping false 
+  right operand type: new node<VectorType>() 
+        is exact: false use strong subtyping false is applicable:                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
+  (op, leftOperandType, rightOperandType)->boolean { 
+    leftOperandType : VectorType.dimensionsRows == 
+          rightOperandType : IMatrixType.dimensionsRows; 
+  }                                                                                                                                                                                                                                                                                                                                                                
+operation type:                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
+  (op, leftOperandType, rightOperandType)->node<> { 
+    set<node<>> nodes = new hashset<node<>>; 
+    nodes.add(rightOperandType : IMatrixType.baseType); 
+    nodes.add(leftOperandType : IMatrixType.baseType); 
+    set<node<>> leastCommonSupertypes =
+         typechecker.getSubtypingManager().leastCommonSupertypes(nodes, false);
+    node<VectorType> vt = new node<VectorType>(); 
+    vt.baseType = leastCommonSupertypes.first : IType; 
+    vt.dimensionsRows = rightOperandType : IMatrixType.dimensionsRows; 
+    return vt; 
+  }
+\end{lstlisting}
+
+Finally, the transpose expression needs to calculate the resulting type, which
+is the same type as the expression on which it is called, but with the dimensios
+exchanged:
+
+\begin{lstlisting}[language=mps, morekeywords={when, concrete}]
+rule typeof_MatrixTransposeExpr {                                                                                                                                                                                                                                                         
+  applicable for concept = MatrixTransposeExpr as mte                                                                                                                                                                                                                                     
+  overrides true                                                                                                                                                                                                                                                                          
+                                                                                                                                                                                                                                                                                          
+  do {                                                                                                                                                                                                                                                                                    
+    when concrete (typeof(mte.expression) : MatrixType as mteType) { 
+      node<MatrixType> mt = new node<MatrixType>(); 
+      mt.baseType = mteType.baseType.copy; 
+      mt.dimensionsCols = mteType.dimensionsRows; 
+      mt.dimensionsRows = mteType.dimensionsCols; 
+      typeof(mte) :==: mt; 
+    } 
+  }                                                                                                                                                                                                                                                                                       
+}                                                                                                                                                                                                                                                                                         
+\end{lstlisting}
+
+Note how we use \ic{when concrete} to express that this typing rule may only be
+executed once the type of \ic{mte.expression} has successfully been calculated.
+
+
+
+
+
+
+
+
+
+

@@ -4,3 +4,6 @@ mps.home=T:/MPS2.0/
 mbeddr.github.core.home=L:/lwes/mbeddr.core/
 # an existing, empty dir that MPS can use for caching
 mps.platform.caches=L:/lwes/mps-ant-caches/
+
+# to override setting for jvm e.g. Xmx use he following
+# jvm.arg.Xmx=-Xmx1024m
