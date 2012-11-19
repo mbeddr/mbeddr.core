@@ -31,7 +31,7 @@
       <property name="name" nameId="tpck.1169194664001" value="Smoke" />
     </node>
     <node type="tp5g.TestInfo" typeId="tp5g.5097124989038916362" id="1567877737115580222">
-      <property name="projectPath" nameId="tp5g.5097124989038916363" value="${mbeddr.assembla.ext.home}/code/languages/com.mbeddr.analyses/analyses.dev.mpr" />
+      <property name="projectPath" nameId="tp5g.5097124989038916363" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.analyses/analyses.dev.mpr" />
     </node>
   </roots>
   <root id="1567877737115580200">

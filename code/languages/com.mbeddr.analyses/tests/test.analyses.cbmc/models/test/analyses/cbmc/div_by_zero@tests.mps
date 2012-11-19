@@ -31,7 +31,7 @@
       <property name="name" nameId="tpck.1169194664001" value="DivByZero" />
     </node>
     <node type="tp5g.TestInfo" typeId="tp5g.5097124989038916362" id="6582878939614242826">
-      <property name="projectPath" nameId="tp5g.5097124989038916363" value="${mbeddr.assembla.ext.home}/code/languages/com.mbeddr.analyses/analyses.dev.mpr" />
+      <property name="projectPath" nameId="tp5g.5097124989038916363" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.analyses/analyses.dev.mpr" />
     </node>
     <node type="tp5g.NodesTestCase" typeId="tp5g.1216913645126" id="8118611477531967408">
       <property name="name" nameId="tpck.1169194664001" value="DivByZeroUninitializedVariable" />
