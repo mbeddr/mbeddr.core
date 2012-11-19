@@ -403,7 +403,7 @@ statemachine VerifiableFlightAnalyzer initial = beforeFlight {
 }
 \end{lstlisting}
 
-We can now runt the verifier. \todo{There is also a second FAIL.} It claims that
+We can now runt the verifier. It has two problems. Firt, It claims that
 the \ic{landing} state has nondeterministic transitions. The counter example is
 this:
 
@@ -419,6 +419,9 @@ in_event: next   next(0, 0)
 State landed
 in_event: next   next(0, -32768)
 \end{lstlisting}
+
+\greyboxnote{Contrary to intuition, the actually problematic step may not be the
+last one! In the example here, the \ic{next(0, 0)} is the offending situation!}
 
 In this example, in the \ic{landing} state, the \ic{next(0, 0)} event is fired
 and results in non-determinism. Let us look at the code: 
@@ -445,6 +448,44 @@ state landing {
   on next [speed != 0 mps ] -> landing { points = points - 1; }  
   on reset [ ] -> beforeFlight 
 } 
+\end{lstlisting}
+
+
+
+The second problem is in the \ic{airborne} state. Once again, the actual problem
+is in the second-to-last step: \ic{next(0, 101)}. Here is the respective state:
+
+\begin{lstlisting}[language=mbeddr]
+state airborne { 
+  on next [alt == 0 && speed == 0] -> crashed 
+  on next [alt == 0 && speed > 0] -> landing 
+  on next [speed > 200] -> airborne { points += VERY_HIGH_SPEED; }  
+  on next [speed > 100] -> airborne { points += HIGH_SPEED; }  
+  on reset [ ] -> beforeFlight 
+}
+\end{lstlisting}
+
+The first problem we observe is that transition 4 is also true whenever
+transition 3 is true as well. So we should change transition four to
+
+\begin{lstlisting}[language=mbeddr]
+on next [speed > 100 && speed <= 200] -> airborne { points += HIGH_SPEED; } 
+\end{lstlisting}
+
+However, rerunning the verification still FAILs this state. The real problem is
+an ambiguity between transition 2 and transition four, because we do not check
+for the altitude in transitions 3 and 4. Once again, we imply an ordering of the
+guard conditions ... the C implementation works fine.  Here is the correct
+formulation of the state's transitions:
+
+\begin{lstlisting}[language=mbeddr]
+state airborne { 
+  on next [alt == 0 && speed == 0] -> crashed 
+  on next [alt == 0 && speed > 0] -> landing 
+  on next [alt > 0 && speed > 200] -> airborne { points += VERY_HIGH_SPEED; }  
+  on next [alt > 0 && speed > 100 && speed <= 200] -> airborne { points += HIGH_SPEED; } 
+  on reset [ ] -> beforeFlight 
+}
 \end{lstlisting}
 
 
