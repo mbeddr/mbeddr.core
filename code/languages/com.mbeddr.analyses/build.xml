@@ -20,9 +20,6 @@
   <property name="mbeddr.core.project.dir" value="code/languages/com.mbeddr.core"/>
   <property name="mbeddr.core.project.mpr" value="code/languages/com.mbeddr.core/core.dev.mpr"/>
   
-  <property name="mbeddr.cimport.project.dir" value="code/languages/com.mbeddr.cimport"/>
-  <property name="mbeddr.cimport.project.mpr" value="code/languages/com.mbeddr.cimport/cimport.mpr"/>
-  
   <property name="mbeddr.ext.project.dir" value="code/languages/com.mbeddr.ext"/>
   <property name="mbeddr.ext.project.mpr" value="code/languages/com.mbeddr.ext/ext.dev.mpr"/> <!-- for the time being in core project... -->
 
@@ -37,7 +34,13 @@
   
   <property name="mbeddr.debugger.project.dir" value="code/languages/com.mbeddr.debugger/"/>
   <property name="mbeddr.debugger.project.mpr" value="code/languages/com.mbeddr.debugger/debugger.dev.mpr"/>
-
+  
+  <property name="utilLanguageDir" value="${mbeddr.github.core.home}/${mbeddr.util.project.dir}/languages"/>
+  <property name="debuggerLanguageDir" value="${mbeddr.github.core.home}/${mbeddr.debugger.project.dir}/languages"/>
+  <property name="coreLanguageDir" value="${mbeddr.github.core.home}/${mbeddr.core.project.dir}/languages"/>
+  <property name="extLanguageDir" value="${mbeddr.github.core.home}/${mbeddr.ext.project.dir}/languages"/>
+  <property name="ccLanguageDir" value="${mbeddr.github.core.home}/${mbeddr.cc.project.dir}/languages"/>
+    
   <jvmargs id="myargs">
       <arg value="-ea"/>
       <arg value="${jvm.arg.Xss}"/>
@@ -65,11 +68,11 @@
     <mps.generate parallelMode="true" fork="true" failonerror="true">
       <macro name="mbeddr.github.core.home" path="${mbeddr.github.core.home}"/>
       <jvmargs refid="myargs"/>
-      <library name="util.project" dir="${mbeddr.github.core.home}/${mbeddr.util.project.dir}/languages"/>                                                                                                
-      <library name="core.project" dir="${mbeddr.github.core.home}/${mbeddr.core.project.dir}/languages"/>                                                                                                
-      <library name="debugger.project" dir="${mbeddr.github.core.home}/${mbeddr.debugger.project.dir}/languages"/>                                                                                        
-      <library name="ext.project" dir="${mbeddr.github.core.home}/${mbeddr.ext.project.dir}/languages"/> 
-      <library name="cc.project" dir="${mbeddr.github.core.home}/${mbeddr.cc.project.dir}/languages"/> 
+      <library name="util.project" dir="${utilLanguageDir}"/>                                                                                                
+      <library name="core.project" dir="${coreLanguageDir}"/>                                                                                                
+      <library name="debugger.project" dir="${debuggerLanguageDir}"/>                                                                                        
+      <library name="ext.project" dir="${extLanguageDir}"/> 
+      <library name="cc.project" dir="${ccLanguageDir}"/>
       <modules dir="${mbeddr.github.core.home}/${mbeddr.analyses.project.dir}/languages"/>
     </mps.generate>
   </target>
@@ -80,11 +83,11 @@
     <mps.generate parallelMode="true" fork="true" failonerror="true">
       <macro name="mbeddr.github.core.home" path="${mbeddr.github.core.home}"/>
       <jvmargs refid="myargs"/>
-      <library name="util.project" dir="${mbeddr.github.core.home}/${mbeddr.util.project.dir}/languages"/>                                                                                                
-      <library name="core.project" dir="${mbeddr.github.core.home}/${mbeddr.core.project.dir}/languages"/>                                                                                                
-      <library name="debugger.project" dir="${mbeddr.github.core.home}/${mbeddr.debugger.project.dir}/languages"/>                                                                                        
-      <library name="ext.project" dir="${mbeddr.github.core.home}/${mbeddr.ext.project.dir}/languages"/> 
-      <library name="cc.project" dir="${mbeddr.github.core.home}/${mbeddr.cc.project.dir}/languages"/> 
+      <library name="util.project" dir="${utilLanguageDir}"/>                                                                                                
+      <library name="core.project" dir="${coreLanguageDir}"/>                                                                                                
+      <library name="debugger.project" dir="${debuggerLanguageDir}"/>                                                                                        
+      <library name="ext.project" dir="${extLanguageDir}"/> 
+      <library name="cc.project" dir="${ccLanguageDir}"/> 
       <library name="analyses.project" dir="${mbeddr.github.core.home}/${mbeddr.analyses.project.dir}/languages"/> 
 
       <!-- executable tests -->
