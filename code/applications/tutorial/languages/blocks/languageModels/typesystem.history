@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<history>
+  <StructureModification>
+    <dependencies>
+      <model index="o3h2" modelUID="r:bcc5b0ed-4ae8-47af-8c4f-69087c4e1adc(blockdemo.blocks.generator.template.main@generator)" version="-1" />
+      <model index="yxue" modelUID="r:ad612546-409b-489e-b6b7-8816610ea118(blockdemo.blocks.constraints)" version="-1" />
+      <model index="bgic" modelUID="r:f8541cf4-6148-4458-a81b-adf49c8e050c(blockdemo.blocks.structure)" version="-1" />
+      <model index="u98y" modelUID="r:3a7cc332-c9fe-4786-9057-673ed81b43d8(blockdemo.blocks.editor)" version="-1" />
+      <model index="h6iz" modelUID="r:a5028552-d4c2-4e46-974e-7d1f1358a340(blockdemo.blocks.behavior)" version="-1" />
+      <model index="co8c" modelUID="r:994ad7fd-5802-41db-b136-a960c53e05ea(blockdemo.blocks.typesystem)" version="-1" />
+    </dependencies>
+    <RenameModel oldModel="r:f8541cf4-6148-4458-a81b-adf49c8e050c(blockdemo.blocks.structure)" newModel="r:f8541cf4-6148-4458-a81b-adf49c8e050c(mbeddr.tutorial.blocks.structure)" />
+    <RenameModel oldModel="r:ad612546-409b-489e-b6b7-8816610ea118(blockdemo.blocks.constraints)" newModel="r:ad612546-409b-489e-b6b7-8816610ea118(mbeddr.tutorial.blocks.constraints)" />
+    <RenameModel oldModel="r:3a7cc332-c9fe-4786-9057-673ed81b43d8(blockdemo.blocks.editor)" newModel="r:3a7cc332-c9fe-4786-9057-673ed81b43d8(mbeddr.tutorial.blocks.editor)" />
+    <RenameModel oldModel="r:a5028552-d4c2-4e46-974e-7d1f1358a340(blockdemo.blocks.behavior)" newModel="r:a5028552-d4c2-4e46-974e-7d1f1358a340(mbeddr.tutorial.blocks.behavior)" />
+    <RenameModel oldModel="r:994ad7fd-5802-41db-b136-a960c53e05ea(blockdemo.blocks.typesystem)" newModel="r:994ad7fd-5802-41db-b136-a960c53e05ea(mbeddr.tutorial.blocks.typesystem)" />
+    <RenameModel oldModel="r:bcc5b0ed-4ae8-47af-8c4f-69087c4e1adc(blockdemo.blocks.generator.template.main@generator)" newModel="r:bcc5b0ed-4ae8-47af-8c4f-69087c4e1adc(mbeddr.tutorial.blocks.generator.template.main@generator)" />
+  </StructureModification>
+</history>
+

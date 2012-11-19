@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dev-kit name="com.mbeddr.analyses.dectab" uuid="9e5aaffe-404b-44dd-9dc5-daf7ffdbd380">
+  <exported-language name="797d0abe-30a5-4698-a9cf-31703733bdc9(com.mbeddr.analyses.yices)" />
+  <exported-language name="c365dd1e-9817-4719-bfd1-5d70f3d565a6(com.mbeddr.analyses.yices.dectab)" />
+  <exported-solutions>
+    <exported-solution>13039307-a08f-4bb3-810e-10cbbf8b757b(com.mbeddr.analyses.yices.rt)</exported-solution>
+  </exported-solutions>
+</dev-kit>
+

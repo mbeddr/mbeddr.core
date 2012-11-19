@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<history>
+  <StructureModification>
+    <dependencies>
+      <model index="gwu5" modelUID="r:afad3b17-52c2-41c9-b980-e2641e1c8e87(com.mbeddr.ext.yices.behavior)" version="-1" />
+      <model index="4veu" modelUID="r:89c8c912-0dbf-4a04-b9eb-575f2aec764f(com.mbeddr.ext.yices.typesystem)" version="-1" />
+      <model index="1eu" modelUID="r:50ade53b-ed6e-481d-8b4b-ee52df9b4152(com.mbeddr.ext.yices.structure)" version="0" />
+      <model index="d0z3" modelUID="r:906d07c2-f9a2-479a-8ef2-547b07f01a0c(com.mbeddr.ext.yices.constraints)" version="-1" />
+      <model index="zsnx" modelUID="r:26c40efa-96ee-4d6c-ad56-6daf860040e4(com.mbeddr.ext.yices.editor)" version="-1" />
+      <model index="89b9" modelUID="r:9fd7856e-e34e-4c3b-8d8f-abf94e655e89(com.mbeddr.ext.yices.textGen)" version="-1" />
+    </dependencies>
+    <RenameModel oldModel="r:9fd7856e-e34e-4c3b-8d8f-abf94e655e89(com.mbeddr.ext.yices.textGen)" newModel="r:9fd7856e-e34e-4c3b-8d8f-abf94e655e89(com.mbeddr.analysis.yices.textGen)" />
+    <RenameModel oldModel="r:afad3b17-52c2-41c9-b980-e2641e1c8e87(com.mbeddr.ext.yices.behavior)" newModel="r:afad3b17-52c2-41c9-b980-e2641e1c8e87(com.mbeddr.analysis.yices.behavior)" />
+    <RenameModel oldModel="r:50ade53b-ed6e-481d-8b4b-ee52df9b4152(com.mbeddr.ext.yices.structure)" newModel="r:50ade53b-ed6e-481d-8b4b-ee52df9b4152(com.mbeddr.analysis.yices.structure)" />
+    <RenameModel oldModel="r:89c8c912-0dbf-4a04-b9eb-575f2aec764f(com.mbeddr.ext.yices.typesystem)" newModel="r:89c8c912-0dbf-4a04-b9eb-575f2aec764f(com.mbeddr.analysis.yices.typesystem)" />
+    <RenameModel oldModel="r:26c40efa-96ee-4d6c-ad56-6daf860040e4(com.mbeddr.ext.yices.editor)" newModel="r:26c40efa-96ee-4d6c-ad56-6daf860040e4(com.mbeddr.analysis.yices.editor)" />
+    <RenameModel oldModel="r:906d07c2-f9a2-479a-8ef2-547b07f01a0c(com.mbeddr.ext.yices.constraints)" newModel="r:906d07c2-f9a2-479a-8ef2-547b07f01a0c(com.mbeddr.analysis.yices.constraints)" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="gwu5" modelUID="r:afad3b17-52c2-41c9-b980-e2641e1c8e87(com.mbeddr.analysis.yices.behavior)" version="0" />
+      <model index="4veu" modelUID="r:89c8c912-0dbf-4a04-b9eb-575f2aec764f(com.mbeddr.analysis.yices.typesystem)" version="0" />
+      <model index="1eu" modelUID="r:50ade53b-ed6e-481d-8b4b-ee52df9b4152(com.mbeddr.analysis.yices.structure)" version="1" />
+      <model index="d0z3" modelUID="r:906d07c2-f9a2-479a-8ef2-547b07f01a0c(com.mbeddr.analysis.yices.constraints)" version="0" />
+      <model index="zsnx" modelUID="r:26c40efa-96ee-4d6c-ad56-6daf860040e4(com.mbeddr.analysis.yices.editor)" version="0" />
+      <model index="89b9" modelUID="r:9fd7856e-e34e-4c3b-8d8f-abf94e655e89(com.mbeddr.analysis.yices.textGen)" version="0" />
+    </dependencies>
+    <RenameModel oldModel="r:9fd7856e-e34e-4c3b-8d8f-abf94e655e89(com.mbeddr.analysis.yices.textGen)" newModel="r:9fd7856e-e34e-4c3b-8d8f-abf94e655e89(com.mbeddr.analyses.yices.textGen)" />
+    <RenameModel oldModel="r:afad3b17-52c2-41c9-b980-e2641e1c8e87(com.mbeddr.analysis.yices.behavior)" newModel="r:afad3b17-52c2-41c9-b980-e2641e1c8e87(com.mbeddr.analyses.yices.behavior)" />
+    <RenameModel oldModel="r:50ade53b-ed6e-481d-8b4b-ee52df9b4152(com.mbeddr.analysis.yices.structure)" newModel="r:50ade53b-ed6e-481d-8b4b-ee52df9b4152(com.mbeddr.analyses.yices.structure)" />
+    <RenameModel oldModel="r:89c8c912-0dbf-4a04-b9eb-575f2aec764f(com.mbeddr.analysis.yices.typesystem)" newModel="r:89c8c912-0dbf-4a04-b9eb-575f2aec764f(com.mbeddr.analyses.yices.typesystem)" />
+    <RenameModel oldModel="r:26c40efa-96ee-4d6c-ad56-6daf860040e4(com.mbeddr.analysis.yices.editor)" newModel="r:26c40efa-96ee-4d6c-ad56-6daf860040e4(com.mbeddr.analyses.yices.editor)" />
+    <RenameModel oldModel="r:906d07c2-f9a2-479a-8ef2-547b07f01a0c(com.mbeddr.analysis.yices.constraints)" newModel="r:906d07c2-f9a2-479a-8ef2-547b07f01a0c(com.mbeddr.analyses.yices.constraints)" />
+  </StructureModification>
+</history>
+
