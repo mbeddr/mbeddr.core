@@ -22,7 +22,7 @@
     <node type="mj1l.TypeSizeConfiguration" typeId="mj1l.3335993110369795380" id="8599220535762265915" />
     <node type="51wr.BuildConfiguration" typeId="51wr.7717755763392524104" id="8954398776439929006" />
     <node type="tp5g.TestInfo" typeId="tp5g.5097124989038916362" id="1423209693057696534">
-      <property name="projectPath" nameId="tp5g.5097124989038916363" value="${mbeddr.assembla.ext.home}/code/languages/com.mbeddr.analyses/analyses.dev.mpr" />
+      <property name="projectPath" nameId="tp5g.5097124989038916363" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.analyses/analyses.dev.mpr" />
     </node>
   </roots>
   <root id="8599220535762265912">

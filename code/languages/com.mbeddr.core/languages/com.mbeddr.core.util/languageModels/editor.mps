@@ -316,16 +316,16 @@
     </node>
   </root>
   <root id="6209595569797584865">
+    <node role="inspectedCellModel" roleId="tpc2.1078153129734" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="1777424746412866623">
+      <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Indent" typeId="tpc2.1237303669825" id="1777424746412866624" />
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="1777424746412866625">
+        <property name="text" nameId="tpc2.1073389577007" value="optional expected return type:" />
+      </node>
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_RefNode" typeId="tpc2.1073389882823" id="1777424746412866627">
+        <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="k146.1777424746412866628" />
+      </node>
+    </node>
     <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="6209595569797584867">
-      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_RefNode" typeId="tpc2.1073389882823" id="6209595569797584871">
-        <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="mj1l.318113533128716676" />
-      </node>
-      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="4143042878078342170">
-        <property name="text" nameId="tpc2.1073389577007" value="," />
-        <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.PunctuationLeftStyleClassItem" typeId="tpc2.1233758997495" id="4143042878078342173">
-          <property name="flag" nameId="tpc2.1186414551515" value="true" />
-        </node>
-      </node>
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_RefNode" typeId="tpc2.1073389882823" id="4143042878078342172">
         <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="k146.4143042878078342166" />
       </node>
@@ -339,16 +339,16 @@
                   <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="squ6.941853673534992554" resolveInfo="XYCTableModel" />
                   <node role="actualArgument" roleId="tpee.1068499141038" type="tpc2.ConceptFunctionParameter_node" typeId="tpc2.1142886811589" id="6209595569797587333" />
                   <node role="actualArgument" roleId="tpee.1068499141038" type="tp25.LinkRefExpression" typeId="tp25.1226359078165" id="6209595569797587336">
-                    <link role="conceptDeclaration" roleId="tp25.1226359078166" targetNodeId="k146.6209595569797584861" resolveInfo="DecTab" />
                     <link role="linkDeclaration" roleId="tp25.1226359192215" targetNodeId="k146.6209595569797584862" />
+                    <link role="conceptDeclaration" roleId="tp25.1226359078166" targetNodeId="k146.6209595569797584861" resolveInfo="DecTab" />
                   </node>
                   <node role="actualArgument" roleId="tpee.1068499141038" type="tp25.LinkRefExpression" typeId="tp25.1226359078165" id="6209595569797591915">
-                    <link role="conceptDeclaration" roleId="tp25.1226359078166" targetNodeId="k146.6209595569797584861" resolveInfo="DecTab" />
                     <link role="linkDeclaration" roleId="tp25.1226359192215" targetNodeId="k146.6209595569797584863" />
+                    <link role="conceptDeclaration" roleId="tp25.1226359078166" targetNodeId="k146.6209595569797584861" resolveInfo="DecTab" />
                   </node>
                   <node role="actualArgument" roleId="tpee.1068499141038" type="tp25.LinkRefExpression" typeId="tp25.1226359078165" id="6209595569797591918">
-                    <link role="conceptDeclaration" roleId="tp25.1226359078166" targetNodeId="k146.6209595569797584861" resolveInfo="DecTab" />
                     <link role="linkDeclaration" roleId="tp25.1226359192215" targetNodeId="k146.6209595569797584864" />
+                    <link role="conceptDeclaration" roleId="tp25.1226359078166" targetNodeId="k146.6209595569797584861" resolveInfo="DecTab" />
                   </node>
                   <node role="actualArgument" roleId="tpee.1068499141038" type="tpc2.ConceptFunctionParameter_editorContext" typeId="tpc2.1161622981231" id="6209595569797591913" />
                 </node>

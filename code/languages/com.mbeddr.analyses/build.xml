@@ -136,15 +136,15 @@
           <fileset dir="${mps.home}/lib">
             <include name="**/*.jar"/>
           </fileset>
-          <pathelement path="${mbeddr.assembla.analyses.home}/code/languages/com.mbeddr.analyses/languages/com.mbeddr.analyses.utils/classes_gen" />
-          <pathelement path="${mbeddr.assembla.analyses.home}/code/languages/com.mbeddr.analyses/languages/com.mbeddr.analyses.nusmv.rt/classes_gen" />
-          <pathelement path="${mbeddr.assembla.analyses.home}/code/languages/com.mbeddr.analyses/tests/test.ts.analyses.statemachine/classes_gen/"/>
+          <pathelement path="${mbeddr.github.core.home}/code/languages/com.mbeddr.analyses/languages/com.mbeddr.analyses.utils/classes_gen" />
+          <pathelement path="${mbeddr.github.core.home}/code/languages/com.mbeddr.analyses/languages/com.mbeddr.analyses.nusmv.rt/classes_gen" />
+          <pathelement path="${mbeddr.github.core.home}/code/languages/com.mbeddr.analyses/tests/test.ts.analyses.statemachine/classes_gen/"/>
       </classpath>
                 
       <formatter type="plain"/>
                   
       <batchtest fork="yes">
-        <fileset dir="${mbeddr.assembla.analyses.home}/code/languages/com.mbeddr.analyses/tests/test.ts.analyses.statemachine/source_gen/">
+        <fileset dir="${mbeddr.github.core.home}/code/languages/com.mbeddr.analyses/tests/test.ts.analyses.statemachine/source_gen/">
             <include name="**/*TestCase.java"/>
         </fileset>
       </batchtest>
