@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CodeStyleSettings">
+    <option name="fieldPrefix" value="" />
+    <option name="fieldSuffix" value="" />
+    <option name="localVariablePrefix" value="" />
+    <option name="localVariableSuffix" value="" />
+    <option name="parameterPrefix" value="" />
+    <option name="parameterSuffix" value="" />
+    <option name="staticFieldPrefix" value="" />
+    <option name="staticFieldSuffix" value="" />
+  </component>
+  <component name="DependencyValidationManager">
+    <option name="SKIP_IMPORT_STATEMENTS" value="false" />
+  </component>
+  <component name="Encoding" useUTFGuessing="true" native2AsciiForPropertiesFiles="false" />
+  <component name="MPSProject">
+    <projectModules>
+      <modulePath path="${project}/devkits/com.mbeddr.analyses.dectab/dectab.devkit" folder="yices" />
+      <modulePath path="${project}/devkits/com.mbeddr.analyses.fm/fm.devkit" folder="yices" />
+      <modulePath path="${project}/devkits/com.mbeddr.analyses.smtlangs.yices/yices.devkit" folder="" />
+      <modulePath path="${project}/devkits/com.mbeddr.analyses.statemachine/statemachine.devkit" folder="nusmv" />
+      <modulePath path="${project}/languages/com.mbeddr.analyses.base.unittests/unittests.mpl" folder="base" />
+      <modulePath path="${project}/languages/com.mbeddr.analyses.base/base.mpl" folder="base" />
+      <modulePath path="${project}/languages/com.mbeddr.analyses.cbmc/cbmc.mpl" folder="cbmc" />
+      <modulePath path="${project}/languages/com.mbeddr.analyses.framac.loops/loops.mpl" folder="framac" />
+      <modulePath path="${project}/languages/com.mbeddr.analyses.framac/framac.mpl" folder="framac" />
+      <modulePath path="${project}/languages/com.mbeddr.analyses.framac/solutions/com.mbeddr.analyses.framac.pluginSolution/pluginSolution.msd" folder="framac" />
+      <modulePath path="${project}/languages/com.mbeddr.analyses.framac/solutions/com.mbeddr.analyses.framac.rt/rt.msd" folder="framac" />
+      <modulePath path="${project}/languages/com.mbeddr.analyses.nusmv.rt/rt.msd" folder="nusmv" />
+      <modulePath path="${project}/languages/com.mbeddr.analyses.nusmv.statemachine.tests/tests.mpl" folder="nusmv" />
+      <modulePath path="${project}/languages/com.mbeddr.analyses.nusmv.statemachine/nusmv.statemachine.mpl" folder="nusmv" />
+      <modulePath path="${project}/languages/com.mbeddr.analyses.nusmv.statemachine/solutions/pluginSolution/pluginSolution.msd" folder="nusmv" />
+      <modulePath path="${project}/languages/com.mbeddr.analyses.nusmv/nusmv.mpl" folder="nusmv" />
+      <modulePath path="${project}/languages/com.mbeddr.analyses.utils/utils.msd" folder="base" />
+      <modulePath path="${project}/languages/com.mbeddr.analyses.yices.dectab/dectabyices.mpl" folder="yices" />
+      <modulePath path="${project}/languages/com.mbeddr.analyses.yices.dectab/solutions/pluginSolution/pluginSolution.msd" folder="yices" />
+      <modulePath path="${project}/languages/com.mbeddr.analyses.yices.fm/fmyices.mpl" folder="yices" />
+      <modulePath path="${project}/languages/com.mbeddr.analyses.yices.fm/solutions/pluginSolution/pluginSolution.msd" folder="yices" />
+      <modulePath path="${project}/languages/com.mbeddr.analyses.yices.rt/rt.msd" folder="yices" />
+      <modulePath path="${project}/languages/com.mbeddr.analyses.yices/yices.mpl" folder="yices" />
+      <modulePath path="${project}/solutions/com.mbeddr.analyses.cbmc.pluginSolution/pluginSolution.msd" folder="cbmc" />
+      <modulePath path="${project}/solutions/com.mbeddr.analyses.cbmc.rt/rt.msd" folder="cbmc" />
+      <modulePath path="${project}/solutions/test.analysis.formsera/formsera.msd" />
+      <modulePath path="${project}/solutions/test.ex.analyses.yices/yices.msd" folder="test.yices" />
+      <modulePath path="${project}/solutions/tests.analyses.framac.acsl/acsl.msd" folder="test.framac" />
+      <modulePath path="${project}/solutions/tests.analyses.framac.components/components.msd" folder="test.framac" />
+      <modulePath path="${project}/solutions/tests.analyses.framac.loops/loops.msd" folder="test.framac" />
+      <modulePath path="${project}/tests/test.analyses.cbmc/cbmc.msd" folder="test.cbmc" />
+      <modulePath path="${project}/tests/test.ex.analyses.nusmv/solution.msd" folder="test.nusmv" />
+      <modulePath path="${project}/tests/test.ex.analyses.yices/yices.msd" folder="test.yices" />
+      <modulePath path="${project}/tests/test.ts.analyses.fm/fm.msd" folder="test.yices" />
+      <modulePath path="${project}/tests/test.ts.analyses.statemachine/statemachine.msd" folder="test.nusmv" />
+    </projectModules>
+    <genConfs />
+  </component>
+  <component name="ProjectLibraryManager">
+    <option name="libraries">
+      <map>
+        <entry key="mbeddr.core">
+          <value>
+            <Library>
+              <option name="name" value="mbeddr.core" />
+              <option name="path" value="${mbeddr.github.core.home}/code/languages" />
+            </Library>
+          </value>
+        </entry>
+        <entry key="mbeddr.ext">
+          <value>
+            <Library>
+              <option name="name" value="mbeddr.ext" />
+              <option name="path" value="${mbeddr.assembla.ext.home}/code/languages" />
+            </Library>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="ProjectModuleManager">
+    <modules />
+  </component>
+  <component name="ProjectRootManager" version="2" />
+  <component name="ProjectVersion">
+    <option name="version" value="2.5" />
+  </component>
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$mbeddr.github.core.home$" vcs="Git" />
+    <mapping directory="$mbeddr.assembla.ext.home$" vcs="Git" />
+  </component>
+</project>
+

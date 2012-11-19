@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<history>
+  <StructureModification>
+    <dependencies>
+      <model index="kwbe" modelUID="r:f80f017a-62bd-4600-a15e-eede9b604f3e(com.mbeddr.ext.statemachine.nusmv.plugin)" version="0" />
+      <model index="pvh9" modelUID="r:70aa17d3-00fa-40b2-8aa8-1f811988c57d(com.mbeddr.ext.statemachine.nusmv.intentions)" version="0" />
+      <model index="uise" modelUID="r:aefd5806-11e6-4262-8d96-d21450e898ee(com.mbeddr.ext.statemachine.nusmv.editor)" version="0" />
+      <model index="ghnx" modelUID="r:3affeda3-6eb6-4188-a645-c50f83752349(com.mbeddr.ext.statemachine.nusmv.constraints)" version="-1" />
+      <model index="rf0y" modelUID="r:6dba4756-60ae-4f7f-89f3-f6476ec137bc(com.mbeddr.ext.statemachine.nusmv.behavior)" version="-1" />
+      <model index="pszp" modelUID="r:5097c9c6-4a5a-40ee-bd76-4904ba8fa229(com.mbeddr.ext.statemachine.nusmv.structure)" version="17" />
+      <model index="w7u6" modelUID="r:9fff930e-0eef-4088-b9aa-b74c093c9964(com.mbeddr.ext.statemachine.nusmv.typesystem)" version="0" />
+      <model index="8tgt" modelUID="r:2bd7a930-4442-47e2-aa1b-24a6aa4ee959(com.mbeddr.ext.statemachine.nusmv.generator.template.utils)" version="0" />
+      <model index="xw1c" modelUID="r:c93a08cc-9153-4531-a2fb-ea9b95793a16(com.mbeddr.ext.statemachine.nusmv.generator.template.main@generator)" version="0" />
+    </dependencies>
+    <RenameModel oldModel="r:aefd5806-11e6-4262-8d96-d21450e898ee(com.mbeddr.ext.statemachine.nusmv.editor)" newModel="r:aefd5806-11e6-4262-8d96-d21450e898ee(com.mbeddr.analyses.statemachine.nusmv.editor)" />
+    <RenameModel oldModel="r:3affeda3-6eb6-4188-a645-c50f83752349(com.mbeddr.ext.statemachine.nusmv.constraints)" newModel="r:3affeda3-6eb6-4188-a645-c50f83752349(com.mbeddr.analyses.statemachine.nusmv.constraints)" />
+    <RenameModel oldModel="r:5097c9c6-4a5a-40ee-bd76-4904ba8fa229(com.mbeddr.ext.statemachine.nusmv.structure)" newModel="r:5097c9c6-4a5a-40ee-bd76-4904ba8fa229(com.mbeddr.analyses.statemachine.nusmv.structure)" />
+    <RenameModel oldModel="r:f80f017a-62bd-4600-a15e-eede9b604f3e(com.mbeddr.ext.statemachine.nusmv.plugin)" newModel="r:f80f017a-62bd-4600-a15e-eede9b604f3e(com.mbeddr.analyses.statemachine.nusmv.plugin)" />
+    <RenameModel oldModel="r:9fff930e-0eef-4088-b9aa-b74c093c9964(com.mbeddr.ext.statemachine.nusmv.typesystem)" newModel="r:9fff930e-0eef-4088-b9aa-b74c093c9964(com.mbeddr.analyses.statemachine.nusmv.typesystem)" />
+    <RenameModel oldModel="r:6dba4756-60ae-4f7f-89f3-f6476ec137bc(com.mbeddr.ext.statemachine.nusmv.behavior)" newModel="r:6dba4756-60ae-4f7f-89f3-f6476ec137bc(com.mbeddr.analyses.statemachine.nusmv.behavior)" />
+    <RenameModel oldModel="r:70aa17d3-00fa-40b2-8aa8-1f811988c57d(com.mbeddr.ext.statemachine.nusmv.intentions)" newModel="r:70aa17d3-00fa-40b2-8aa8-1f811988c57d(com.mbeddr.analyses.statemachine.nusmv.intentions)" />
+    <RenameModel oldModel="r:2bd7a930-4442-47e2-aa1b-24a6aa4ee959(com.mbeddr.ext.statemachine.nusmv.generator.template.utils)" newModel="r:2bd7a930-4442-47e2-aa1b-24a6aa4ee959(com.mbeddr.analyses.statemachine.nusmv.generator.template.generator.template.utils)" />
+    <RenameModel oldModel="r:c93a08cc-9153-4531-a2fb-ea9b95793a16(com.mbeddr.ext.statemachine.nusmv.generator.template.main@generator)" newModel="r:c93a08cc-9153-4531-a2fb-ea9b95793a16(com.mbeddr.analyses.statemachine.nusmv.generator.template.generator.template.main@generator)" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="pvh9" modelUID="r:70aa17d3-00fa-40b2-8aa8-1f811988c57d(com.mbeddr.analyses.statemachine.nusmv.intentions)" version="1" />
+      <model index="kwbe" modelUID="r:f80f017a-62bd-4600-a15e-eede9b604f3e(com.mbeddr.analyses.statemachine.nusmv.plugin)" version="1" />
+      <model index="uise" modelUID="r:aefd5806-11e6-4262-8d96-d21450e898ee(com.mbeddr.analyses.statemachine.nusmv.editor)" version="1" />
+      <model index="ghnx" modelUID="r:3affeda3-6eb6-4188-a645-c50f83752349(com.mbeddr.analyses.statemachine.nusmv.constraints)" version="0" />
+      <model index="rf0y" modelUID="r:6dba4756-60ae-4f7f-89f3-f6476ec137bc(com.mbeddr.analyses.statemachine.nusmv.behavior)" version="0" />
+      <model index="pszp" modelUID="r:5097c9c6-4a5a-40ee-bd76-4904ba8fa229(com.mbeddr.analyses.statemachine.nusmv.structure)" version="18" />
+      <model index="w7u6" modelUID="r:9fff930e-0eef-4088-b9aa-b74c093c9964(com.mbeddr.analyses.statemachine.nusmv.typesystem)" version="1" />
+      <model index="8tgt" modelUID="r:2bd7a930-4442-47e2-aa1b-24a6aa4ee959(com.mbeddr.analyses.statemachine.nusmv.generator.template.generator.template.utils)" version="1" />
+      <model index="xw1c" modelUID="r:c93a08cc-9153-4531-a2fb-ea9b95793a16(com.mbeddr.analyses.statemachine.nusmv.generator.template.generator.template.main@generator)" version="1" />
+    </dependencies>
+    <RenameModel oldModel="r:5097c9c6-4a5a-40ee-bd76-4904ba8fa229(com.mbeddr.analyses.statemachine.nusmv.structure)" newModel="r:5097c9c6-4a5a-40ee-bd76-4904ba8fa229(com.mbeddr.analyses.nusmv.statemachine.structure)" />
+    <RenameModel oldModel="r:6dba4756-60ae-4f7f-89f3-f6476ec137bc(com.mbeddr.analyses.statemachine.nusmv.behavior)" newModel="r:6dba4756-60ae-4f7f-89f3-f6476ec137bc(com.mbeddr.analyses.nusmv.statemachine.behavior)" />
+    <RenameModel oldModel="r:f80f017a-62bd-4600-a15e-eede9b604f3e(com.mbeddr.analyses.statemachine.nusmv.plugin)" newModel="r:f80f017a-62bd-4600-a15e-eede9b604f3e(com.mbeddr.analyses.nusmv.statemachine.plugin)" />
+    <RenameModel oldModel="r:70aa17d3-00fa-40b2-8aa8-1f811988c57d(com.mbeddr.analyses.statemachine.nusmv.intentions)" newModel="r:70aa17d3-00fa-40b2-8aa8-1f811988c57d(com.mbeddr.analyses.nusmv.statemachine.intentions)" />
+    <RenameModel oldModel="r:9fff930e-0eef-4088-b9aa-b74c093c9964(com.mbeddr.analyses.statemachine.nusmv.typesystem)" newModel="r:9fff930e-0eef-4088-b9aa-b74c093c9964(com.mbeddr.analyses.nusmv.statemachine.typesystem)" />
+    <RenameModel oldModel="r:3affeda3-6eb6-4188-a645-c50f83752349(com.mbeddr.analyses.statemachine.nusmv.constraints)" newModel="r:3affeda3-6eb6-4188-a645-c50f83752349(com.mbeddr.analyses.nusmv.statemachine.constraints)" />
+    <RenameModel oldModel="r:aefd5806-11e6-4262-8d96-d21450e898ee(com.mbeddr.analyses.statemachine.nusmv.editor)" newModel="r:aefd5806-11e6-4262-8d96-d21450e898ee(com.mbeddr.analyses.nusmv.statemachine.editor)" />
+    <RenameModel oldModel="r:2bd7a930-4442-47e2-aa1b-24a6aa4ee959(com.mbeddr.analyses.statemachine.nusmv.generator.template.generator.template.utils)" newModel="r:2bd7a930-4442-47e2-aa1b-24a6aa4ee959(com.mbeddr.analyses.nusmv.statemachine.generator.template.generator.template.generator.template.utils)" />
+    <RenameModel oldModel="r:c93a08cc-9153-4531-a2fb-ea9b95793a16(com.mbeddr.analyses.statemachine.nusmv.generator.template.generator.template.main@generator)" newModel="r:c93a08cc-9153-4531-a2fb-ea9b95793a16(com.mbeddr.analyses.nusmv.statemachine.generator.template.generator.template.generator.template.main@generator)" />
+  </StructureModification>
+</history>
+
