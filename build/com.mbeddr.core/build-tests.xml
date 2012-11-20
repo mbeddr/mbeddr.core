@@ -394,7 +394,7 @@
         <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/languages/com.mbeddr.core/com.mbeddr.core.base.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/languages/com.mbeddr.core/com.mbeddr.core.buildconfig.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/languages/com.mbeddr.core/com.mbeddr.core.cstubs.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.debugger.build/com.mbeddr.core.debugger.zip/mbeddr.debugger/languages/com.mbeddr.core.debugger/com.mbeddr.core.debug.jar" />
+        <fileset file="${build.tmp}/deps/com.mbeddr.debugger.build/com.mbeddr.core.debugger.zip/debugger/languages/com.mbeddr.core.debugger/com.mbeddr.core.debug.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/languages/com.mbeddr.core/com.mbeddr.core.embedded.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/languages/com.mbeddr.core/com.mbeddr.core.expressions.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/languages/com.mbeddr.core/com.mbeddr.core.make.jar" />
@@ -521,7 +521,7 @@
         <fileset dir="${artifacts.buildMPS}/lib/ant/lib" includes="*.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/languages/com.mbeddr.core/com.mbeddr.core.base.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/languages/com.mbeddr.core/com.mbeddr.core.cstubs.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.debugger.build/com.mbeddr.core.debugger.zip/mbeddr.debugger/languages/com.mbeddr.core.debugger/com.mbeddr.core.debug.jar" />
+        <fileset file="${build.tmp}/deps/com.mbeddr.debugger.build/com.mbeddr.core.debugger.zip/debugger/languages/com.mbeddr.core.debugger/com.mbeddr.core.debug.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/languages/com.mbeddr.core/com.mbeddr.core.expressions.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/languages/com.mbeddr.core/com.mbeddr.core.modules.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/languages/com.mbeddr.core/com.mbeddr.core.modules.runtime.jar" />
@@ -606,7 +606,7 @@
         <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/languages/com.mbeddr.core/com.mbeddr.core.base.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/languages/com.mbeddr.core/com.mbeddr.core.buildconfig.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/languages/com.mbeddr.core/com.mbeddr.core.cstubs.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.debugger.build/com.mbeddr.core.debugger.zip/mbeddr.debugger/languages/com.mbeddr.core.debugger/com.mbeddr.core.debug.jar" />
+        <fileset file="${build.tmp}/deps/com.mbeddr.debugger.build/com.mbeddr.core.debugger.zip/debugger/languages/com.mbeddr.core.debugger/com.mbeddr.core.debug.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/languages/com.mbeddr.core/com.mbeddr.core.expressions.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/languages/com.mbeddr.core/com.mbeddr.core.make.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/languages/com.mbeddr.core/com.mbeddr.core.modules.jar" />
@@ -832,7 +832,7 @@
         <fileset dir="${artifacts.buildMPS}/lib" includes="*.jar" />
         <fileset dir="${artifacts.buildMPS}/lib/ant/lib" includes="*.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/languages/com.mbeddr.core/com.mbeddr.core.base.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.debugger.build/com.mbeddr.core.debugger.zip/mbeddr.debugger/languages/com.mbeddr.core.debugger/com.mbeddr.core.debug.jar" />
+        <fileset file="${build.tmp}/deps/com.mbeddr.debugger.build/com.mbeddr.core.debugger.zip/debugger/languages/com.mbeddr.core.debugger/com.mbeddr.core.debug.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/languages/com.mbeddr.core/com.mbeddr.core.expressions.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/languages/com.mbeddr.core/com.mbeddr.core.modules.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/languages/com.mbeddr.core/com.mbeddr.core.modules.runtime.jar" />
