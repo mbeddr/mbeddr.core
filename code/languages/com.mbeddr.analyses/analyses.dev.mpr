@@ -57,14 +57,6 @@
             </Library>
           </value>
         </entry>
-        <entry key="mbeddr.ext">
-          <value>
-            <Library>
-              <option name="name" value="mbeddr.ext" />
-              <option name="path" value="${mbeddr.assembla.ext.home}/code/languages" />
-            </Library>
-          </value>
-        </entry>
       </map>
     </option>
   </component>
