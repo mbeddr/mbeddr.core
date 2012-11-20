@@ -10,7 +10,6 @@
     <dependency reexport="false">3bf5377a-e904-4ded-9754-5a516023bfaa(com.mbeddr.core.pointers)</dependency>
   </dependencies>
   <usedLanguages>
-    <usedLanguage>653b4150-f37c-4723-986b-97b3e3a83e82(com.mbeddr.analyses.framac)</usedLanguage>
     <usedLanguage>d62d6e81-9ae0-456b-b2c3-d71c0f373ded(com.mbeddr.analyses.nusmv.statemachine)</usedLanguage>
     <usedLanguage>c365dd1e-9817-4719-bfd1-5d70f3d565a6(com.mbeddr.analyses.yices.dectab)</usedLanguage>
     <usedLanguage>ad5c6649-337c-4447-8651-e0cc8f4ffe24(com.mbeddr.analyses.yices.fm)</usedLanguage>
@@ -18,8 +17,6 @@
     <usedLanguage>e401b447-8019-4ccd-a72c-bfb0230f5782(com.mbeddr.cc.var.fm)</usedLanguage>
     <usedLanguage>223dd778-c44f-4ef3-9535-7aa7d12244a6(com.mbeddr.core.debug)</usedLanguage>
     <usedLanguage>62296a07-bc38-46d2-8034-198c24063588(com.mbeddr.core.modules.gen)</usedLanguage>
-    <usedLanguage>edb2cb9c-58b5-4b7f-b577-647bf9b98eee(com.mbeddr.cpp.cext)</usedLanguage>
-    <usedLanguage>31b871c8-3ba6-4751-8c9e-b20f99ee6b69(com.mbeddr.cpp.classes)</usedLanguage>
     <usedLanguage>97d24244-51db-4e2e-97fc-7bd73b1f5f40(com.mbeddr.ext.components)</usedLanguage>
     <usedLanguage>bd640b8f-4be4-42b6-8dc0-2c94d1ddf606(com.mbeddr.ext.components.gen_nomw)</usedLanguage>
     <usedLanguage>59b77d04-29f8-46b7-b2b7-ec3b02751977(com.mbeddr.ext.coords)</usedLanguage>
