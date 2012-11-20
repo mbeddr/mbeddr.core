@@ -18,7 +18,7 @@
     <node type="3ior.BuildProject" typeId="3ior.5617550519002745363" id="8628756186118852031">
       <property name="name" nameId="tpck.1169194664001" value="com.mbeddr.core.tests.build" />
       <property name="internalBaseDirectory" nameId="3ior.5204048710541015587" value="../../../../../build/com.mbeddr.core" />
-      <property name="fileName" nameId="3ior.4915877860348071612" value="tests.xml" />
+      <property name="fileName" nameId="3ior.4915877860348071612" value="build-tests.xml" />
     </node>
   </roots>
   <root id="8628756186118765524">
