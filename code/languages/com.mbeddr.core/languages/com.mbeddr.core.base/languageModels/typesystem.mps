@@ -682,7 +682,7 @@
       <node role="statement" roleId="tpee.1068581517665" type="tpd4.WarningStatement" typeId="tpd4.1207055528241" id="8051977711588518786">
         <node role="warningText" roleId="tpd4.1207055552304" type="tpee.PlusExpression" typeId="tpee.1068581242875" id="8051977711588646366">
           <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="8051977711588646369">
-            <property name="value" nameId="tpee.1070475926801" value=" Deprecated: " />
+            <property name="value" nameId="tpee.1070475926801" value="Deprecated:" />
           </node>
           <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.DotExpression" typeId="tpee.1197027756228" id="8051977711588518792">
             <node role="operand" roleId="tpee.1197027771414" type="tpd4.ApplicableNodeReference" typeId="tpd4.1174650418652" id="8051977711588518789">
