@@ -209,14 +209,12 @@ requiring the user to do it manually is a better idea. Based on that argument,
 the example we have shown here is a bad one.
 
 
-\subsection{Migration Scripts}
-
-Both approaches shown so far address each instance of a to-be-migrated concept
-separately. In the case of intentions this is obvious; but also for the
-automatically executed quick fixes, these are only executed if the user opens
-the root that contains something that needs to to be migrated, or if the user
-runs the model checker and chooses to \ic{Apply Quick Fixes} afterwards.
-Migration scripts are different, since they migrate a whole
+\parhead{Migration Scripts} Both approaches shown so far address each instance
+of a to-be-migrated concept separately. In the case of intentions this is
+obvious; but also for the automatically executed quick fixes, these are only
+executed if the user opens the root that contains something that needs to to be
+migrated, or if the user runs the model checker and chooses to \ic{Apply Quick
+Fixes} afterwards. Migration scripts are different, since they migrate a whole
 model/solution/project.
 
 For our example, we create a new migration script. To be able to do so, we first
