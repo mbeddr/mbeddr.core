@@ -264,7 +264,7 @@ of these:
 \end{itemize}
 
 
-\subsection{Language Aspects}
+\section{Language Aspects}
 
 
 When defining a language in MPS, you have to define several language aspects.
@@ -272,8 +272,99 @@ Some of them are familiar from the disussion above, others haven't been
 mentioned yet. In the rest of this part of the user guide we'll provide example
 for all of these aspects; here is a general overview:
 
-\parhead{Structure} 
+\parhead{Structure} The structure, or abstract syntax or meta model, has been
+discussed above. In terms of structure, a language concept consists of a name,
+child concepts, references to other concepts and primitive properties (integer,
+Boolean, string or an enumeration). A Concept may also extend \emph{one} other
+concept and implement any number of concept interfaces. In addition, a concept
+can also have \emph{static} properties, children and references; MPS refers to
+those as \emph{concept} properties/children/references. The definition of a new
+concept always starts with the structure.
 
+\parhead{Editor} The editor aspect defines the concrete syntax, or the
+projection rules. Currently, each concept has one editor (unless a concept
+inherits the editor from its super-concept). Interface concepts do not have
+editors, but they may define editor \emph{components} that can be embedded into
+other editors. Editors consist of cells, where each cell may contain a constant
+(i.e. a keyword or a symbol), a property value (such as the name), a child cell,
+a reference cell or a collection of other cells. In fact, the editor for a
+concept is defined in two parts: the editor for the concept in the primary
+editor as well as the concept's representation in the inspector (essentially a
+properties view). The editor aspect also defines (some) \emph{actions} and
+keymaps. These determine the reaction of MPS if a certain key is pressed in
+given cell or when a node is deleted.
+
+\parhead{Actions} The actions aspect contains mostly wrappers and side
+transformations (as discussed above). 
+
+\parhead{Behavior} The behavior aspect essentially contains methods defined on
+concepts. Such methods can implement arbitrary behavior and can be called on
+each instance of the concept. Note that concept interfaces cannot just declare
+methods (as in Java), but they can also provide an implementation. In that
+sense, interfaces are more like Scala traits.
+
+\parhead{Constraints} The constraints aspects seems to be a collection of
+relatively independent things. In particular, you define scopes for references
+(i.e. the set of valid target nodes beyond their type), constraints for
+properties (value ranges, regular expressions), as well as context dependencies
+for concepts. The latter allows you to restrict where a concept can be used,
+for example, an \ic{assert} statement may be restricted to test cases.
+
+\parhead{Type System} In the type system you can specify typing rules for
+concepts. These include inference rules (the type of a variable reference is
+the type of the variable referenced by it), subtyping rules (\ic{int} is a
+subtype of \ic{float}) and so-called non-typesystem rules. The latter are
+essentially boolean expressions that evaluate any part of the model. For
+example, they can be used to check for name uniqueness or naming conventions. 
+The type system aspect may also contain quick fixes that can used to resolve
+errors raised by type system rules.
+
+\parhead{Intentions} Intentions are the similar to quick fixes in that they can
+be activated via \ic{Alt-Enter} and then selected from the menu that pops up.
+They are different in that an intention is not associated with an error, but
+just generally with a concept. For example, an intention could allow a user to
+mark a type as \ic{const} by selecting \ic{Make Const} from the intentions menu
+(\ic{Alt-Enter}) of a type.
+
+\parhead{Refactorings} Refactorings are similar to intentions in that they
+change the structure of a program. They are also typically associated with a
+specific concept. There are several differences though: a refactoring shows up
+in the \ic{Refactorings} menu, it can have a keyboard shortcut associated with
+it, it can be written to be able to handle several nodes at a time, and it can
+query the user for input before it is executed.
+
+\parhead{Generator} The generator aspect is used to define the mapping of one
+concept to another one. MPS relies on multi-stage transformations, where only
+the last one creates text and all others are tree-to-tree mappings. The
+generator aspects contains the tree-to-tree mappings, and the textgen aspect
+(discussed below) handles the final to-text transformation. Generator consist of
+so-called mapping configurations that contain transformation rules. There are
+different kinds of rules that transform nodes in different ways. For example, a
+reduction rule replaces any occurence of a concept with the tree fragment
+created by the template associated with the reduction rule. Note that you get
+IDE support for the target language in the transformation template! A generator
+may also contain procedural mapping scripts. 
+
+\parhead{Textgen} The textgen aspect for a language concept defines the mapping
+of the concept to a text buffer. This should only be used for the concept of a
+base language such as Java, C or XML. Any higher-level concepts that create
+programs expressed in such a base language should use generators (previous
+paragraph).
+
+\parhead{Find Usages} The Find Usages aspect supports custom finders: when the
+\ic{Find Usages} item is selected from the context menu of a node, these custom
+finders show up there. Instead of finding \emph{all} usages of a node, these
+custom finders can filter based on the usage context. For example, for local
+variable, a finder may only show usages where the variable is used on the left
+of an assignment statement.
+
+\parhead{Dataflow} The dataflow aspect constructs a dataflow graph for programs.
+For each language concept, a so-called dataflow builder can be defined whose
+task it is to construct the dataflow graph fragment for the respective concept.
+Based on this dataflow graph, a set of dataflow analyses can be performed.
+
+\parhead{Scripts} The scipts aspect contains migration or enhancement scripts
+for language concepts. They are useful in handling language migration problems.
 
 
 
