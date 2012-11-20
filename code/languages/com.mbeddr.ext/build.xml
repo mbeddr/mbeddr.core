@@ -30,7 +30,7 @@
   
   <property name="utilLanguageDir" value="${mbeddr.github.core.home}/${util.project.dir}/languages"/>  
   <property name="coreLanguageDir" value="${mbeddr.github.core.home}/${mbeddr.core.project.dir}/languages"/>  
-
+  <property name="extLanguageDir" value="${mbeddr.github.core.home}/${mbeddr.ext.project.dir}/languages"/>  
   <property name="debuggerLanguageDir" value="${mbeddr.github.core.home}/${debugger.project.dir}/languages"/>
 
     <jvmargs id="myargs">

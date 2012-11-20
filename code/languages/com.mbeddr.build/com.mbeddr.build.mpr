@@ -7,6 +7,7 @@
   <component name="MPSProject">
     <projectModules>
       <modulePath path="${project}/solutions/com.mbeddr.allInOne/allInOne.msd" />
+      <modulePath path="${project}/solutions/com.mbeddr.analyses.dev.build/build.msd" />
       <modulePath path="${project}/solutions/com.mbeddr.cc.dev.build/build.msd" />
       <modulePath path="${project}/solutions/com.mbeddr.core.dev.build/build.msd" />
       <modulePath path="${project}/solutions/com.mbeddr.debugger.dev.build/debugger.msd" folder="" />
