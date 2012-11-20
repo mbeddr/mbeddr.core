@@ -876,6 +876,48 @@
           </node>
         </node>
       </node>
+      <node role="modules" roleId="kdzh.1500819558095907806" type="kdzh.BuildMps_Language" typeId="kdzh.3189788309731840248" id="7247348105538157436">
+        <property name="compact" nameId="kdzh.8369506495128725901" value="true" />
+        <property name="uuid" nameId="kdzh.322010710375892619" value="698eb129-303c-4c1c-b397-9e30753d40b2" />
+        <property name="name" nameId="tpck.1169194664001" value="com.mbeddr.cc.requirements.csv" />
+        <property name="doNotCompile" nameId="kdzh.1500819558096356884" value="false" />
+        <node role="path" roleId="kdzh.322010710375956261" type="3ior.BuildSourceMacroRelativePath" typeId="3ior.7389400916848153117" id="7247348105538157438">
+          <link role="macro" roleId="3ior.7389400916848153130" targetNodeId="6247780594427548286" resolveInfo="mbeddr.cc" />
+          <node role="compositePart" roleId="3ior.7321017245477039051" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="7247348105538157439">
+            <property name="head" nameId="3ior.8618885170173601779" value="languages" />
+            <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="7247348105538157440">
+              <property name="head" nameId="3ior.8618885170173601779" value="com.mbeddr.cc.requirements.csv" />
+              <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="7247348105538157441">
+                <property name="head" nameId="3ior.8618885170173601779" value="csv.mpl" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node role="dependencies" roleId="kdzh.5253498789149547704" type="kdzh.BuildMps_ExtractedModuleDependency" typeId="kdzh.7259033139236285166" id="7247348105538157442">
+          <node role="dependency" roleId="kdzh.7259033139236285167" type="kdzh.BuildMps_ModuleDependencyJar" typeId="kdzh.4278635856200826393" id="7247348105538157443">
+            <node role="path" roleId="kdzh.4278635856200826394" type="3ior.BuildSourceMacroRelativePath" typeId="3ior.7389400916848153117" id="7247348105538157444">
+              <link role="macro" roleId="3ior.7389400916848153130" targetNodeId="6247780594427548286" resolveInfo="mbeddr.cc" />
+              <node role="compositePart" roleId="3ior.7321017245477039051" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="7247348105538157445">
+                <property name="head" nameId="3ior.8618885170173601779" value="languages" />
+                <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="7247348105538157446">
+                  <property name="head" nameId="3ior.8618885170173601779" value="com.mbeddr.cc.requirements.csv" />
+                  <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="7247348105538157447">
+                    <property name="head" nameId="3ior.8618885170173601779" value="lib" />
+                    <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="7247348105538157448">
+                      <property name="head" nameId="3ior.8618885170173601779" value="opencsv-2.3.jar" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node role="dependencies" roleId="kdzh.5253498789149547704" type="kdzh.BuildMps_ExtractedModuleDependency" typeId="kdzh.7259033139236285166" id="7247348105538157449">
+          <node role="dependency" roleId="kdzh.7259033139236285167" type="kdzh.BuildMps_ModuleDependencyExtendLanguage" typeId="kdzh.4278635856200794926" id="7247348105538157450">
+            <link role="language" roleId="kdzh.4278635856200794928" targetNodeId="ffeo.8939513996048535420" resolveInfo="jetbrains.mps.lang.core" />
+          </node>
+        </node>
+      </node>
       <node role="modules" roleId="kdzh.1500819558095907806" type="kdzh.BuildMps_Language" typeId="kdzh.3189788309731840248" id="6247780594427548389">
         <property name="compact" nameId="kdzh.8369506495128725901" value="true" />
         <property name="uuid" nameId="kdzh.322010710375892619" value="53bab999-e9c3-428a-80be-fef5bed08f55" />
