@@ -20,7 +20,7 @@
     <node type="3ior.BuildProject" typeId="3ior.5617550519002745363" id="6247780594427537412">
       <property name="name" nameId="tpck.1169194664001" value="com.mbeddr.cc.tests.build" />
       <property name="internalBaseDirectory" nameId="3ior.5204048710541015587" value="../../../../../build/com.mbeddr.cc" />
-      <property name="fileName" nameId="3ior.4915877860348071612" value="test.xml" />
+      <property name="fileName" nameId="3ior.4915877860348071612" value="build-tests.xml" />
     </node>
     <node type="3ior.BuildProject" typeId="3ior.5617550519002745363" id="6247780594427548258">
       <property name="name" nameId="tpck.1169194664001" value="com.mbeddr.cc.req.build" />

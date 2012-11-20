@@ -16,7 +16,7 @@
     <node type="3ior.BuildProject" typeId="3ior.5617550519002745363" id="6879846215835104553">
       <property name="name" nameId="tpck.1169194664001" value="com.mbeddr.debugger.tests.build" />
       <property name="internalBaseDirectory" nameId="3ior.5204048710541015587" value="../../../../../build/com.mbeddr.debugger" />
-      <property name="fileName" nameId="3ior.4915877860348071612" value="tests.xml" />
+      <property name="fileName" nameId="3ior.4915877860348071612" value="build-tests.xml" />
     </node>
   </roots>
   <root id="6247780594427434811">
@@ -142,7 +142,7 @@
       </node>
       <node role="containerName" roleId="kdzh.6592112598314855574" type="3ior.BuildStringNotEmpty" typeId="3ior.841011766566059607" id="6247780594427434833">
         <node role="parts" roleId="3ior.4903714810883783243" type="3ior.BuildTextStringPart" typeId="3ior.4903714810883702019" id="6247780594427434834">
-          <property name="text" nameId="3ior.4903714810883755350" value="mbeddr.debugger" />
+          <property name="text" nameId="3ior.4903714810883755350" value="debugger" />
         </node>
       </node>
       <node role="content" roleId="kdzh.6592112598314499050" type="kdzh.BuildMps_IdeaPluginGroup" typeId="kdzh.6592112598314586625" id="8066005271802447966">

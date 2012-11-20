@@ -20,9 +20,9 @@
   <target name="assemble" depends="classes">
     <mkdir dir="${build.layout}" />
     <mkdir dir="${build.tmp}/default/com.mbeddr.core.debugger.zip" />
-    <mkdir dir="${build.tmp}/default/com.mbeddr.core.debugger.zip/mbeddr.debugger" />
-    <mkdir dir="${build.tmp}/default/com.mbeddr.core.debugger.zip/mbeddr.debugger/META-INF" />
-    <echoxml file="${build.tmp}/default/com.mbeddr.core.debugger.zip/mbeddr.debugger/META-INF/plugin.xml">
+    <mkdir dir="${build.tmp}/default/com.mbeddr.core.debugger.zip/debugger" />
+    <mkdir dir="${build.tmp}/default/com.mbeddr.core.debugger.zip/debugger/META-INF" />
+    <echoxml file="${build.tmp}/default/com.mbeddr.core.debugger.zip/debugger/META-INF/plugin.xml">
       <idea-plugin version="2" xmlns:xi="http://www.w3.org/2001/XInclude">
         <id>com.mbeddr.debugger</id>
         <name>com.mbeddr.debugger</name>
@@ -35,8 +35,8 @@
         </extensions>
       </idea-plugin>
     </echoxml>
-    <mkdir dir="${build.tmp}/default/com.mbeddr.core.debugger.zip/mbeddr.debugger/languages" />
-    <mkdir dir="${build.tmp}/default/com.mbeddr.core.debugger.zip/mbeddr.debugger/languages/com.mbeddr.core.debugger" />
+    <mkdir dir="${build.tmp}/default/com.mbeddr.core.debugger.zip/debugger/languages" />
+    <mkdir dir="${build.tmp}/default/com.mbeddr.core.debugger.zip/debugger/languages/com.mbeddr.core.debugger" />
     <mkdir dir="${build.tmp}/default/com.mbeddr.core.debug.jar" />
     <mkdir dir="${build.tmp}/default/com.mbeddr.core.debug.jar/META-INF" />
     <echoxml file="${build.tmp}/default/com.mbeddr.core.debug.jar/META-INF/module.xml">
@@ -54,12 +54,12 @@
         <sources jar="com.mbeddr.core.debug-src.jar" descriptor="debug.mpl" />
       </module>
     </echoxml>
-    <jar destfile="${build.tmp}/default/com.mbeddr.core.debugger.zip/mbeddr.debugger/languages/com.mbeddr.core.debugger/com.mbeddr.core.debug.jar">
+    <jar destfile="${build.tmp}/default/com.mbeddr.core.debugger.zip/debugger/languages/com.mbeddr.core.debugger/com.mbeddr.core.debug.jar">
       <fileset dir="${build.tmp}/java/out/com.mbeddr.core.debug" />
       <fileset dir="${mbeddr.core}/languages/com.mbeddr.core.debug" includes="icons/**, resources/**" />
       <fileset dir="${build.tmp}/default/com.mbeddr.core.debug.jar" />
     </jar>
-    <jar destfile="${build.tmp}/default/com.mbeddr.core.debugger.zip/mbeddr.debugger/languages/com.mbeddr.core.debugger/com.mbeddr.core.debug-src.jar">
+    <jar destfile="${build.tmp}/default/com.mbeddr.core.debugger.zip/debugger/languages/com.mbeddr.core.debugger/com.mbeddr.core.debug-src.jar">
       <fileset dir="${mbeddr.core}/languages/com.mbeddr.core.debug/source_gen" includes="**/*.java" />
       <zipfileset file="${mbeddr.core}/languages/com.mbeddr.core.debug/debug.mpl" prefix="module" />
       <zipfileset dir="${mbeddr.core}/languages/com.mbeddr.core.debug/languageModels" includes="**/*.mps, **/*.metadata, **/*.history" prefix="module/languageModels" />
@@ -81,12 +81,12 @@
         <sources jar="com.mbeddr.core.debug.blext-src.jar" descriptor="blext.mpl" />
       </module>
     </echoxml>
-    <jar destfile="${build.tmp}/default/com.mbeddr.core.debugger.zip/mbeddr.debugger/languages/com.mbeddr.core.debugger/com.mbeddr.core.debug.blext.jar">
+    <jar destfile="${build.tmp}/default/com.mbeddr.core.debugger.zip/debugger/languages/com.mbeddr.core.debugger/com.mbeddr.core.debug.blext.jar">
       <fileset dir="${build.tmp}/java/out/com.mbeddr.core.debug.blext" />
       <fileset dir="${mbeddr.core}/languages/com.mbeddr.core.debug.blext" includes="icons/**, resources/**" />
       <fileset dir="${build.tmp}/default/com.mbeddr.core.debug.blext.jar" />
     </jar>
-    <jar destfile="${build.tmp}/default/com.mbeddr.core.debugger.zip/mbeddr.debugger/languages/com.mbeddr.core.debugger/com.mbeddr.core.debug.blext-src.jar">
+    <jar destfile="${build.tmp}/default/com.mbeddr.core.debugger.zip/debugger/languages/com.mbeddr.core.debugger/com.mbeddr.core.debug.blext-src.jar">
       <fileset dir="${mbeddr.core}/languages/com.mbeddr.core.debug.blext/source_gen" includes="**/*.java" />
       <zipfileset file="${mbeddr.core}/languages/com.mbeddr.core.debug.blext/blext.mpl" prefix="module" />
       <zipfileset dir="${mbeddr.core}/languages/com.mbeddr.core.debug.blext/languageModels" includes="**/*.mps, **/*.metadata, **/*.history" prefix="module/languageModels" />
