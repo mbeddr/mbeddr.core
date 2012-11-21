@@ -722,6 +722,7 @@
           <property name="text" nameId="tpc2.1073389577007" value="required header" />
         </node>
         <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Property" typeId="tpc2.1073389658414" id="6275956088645951342">
+          <property name="allowEmptyText" nameId="tpc2.1140114345053" value="true" />
           <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="c4fa.6275956088645591175" resolveInfo="requiredStdHeader" />
         </node>
       </node>
