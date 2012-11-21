@@ -20,6 +20,7 @@
     <usedLanguage>01cd75cf-892b-47a7-b594-744f9e06e5e4(mbeddr.tutorial.complex)</usedLanguage>
     <usedLanguage>32128dbe-9db6-4d05-9eaa-43601c29f276(mbeddr.tutorial.foreach)</usedLanguage>
     <usedLanguage>16ff087a-23cd-49b8-9c5b-a2c20cea9d3e(mbeddr.tutorial.heap)</usedLanguage>
+    <usedLanguage>7fc59e55-0f30-4694-b8e3-d334e472c924(mbeddr.tutorial.metadata)</usedLanguage>
     <usedLanguage>a577a05d-67ad-41db-9547-6e5f0730b85d(mbeddr.tutorial.osconfig)</usedLanguage>
     <usedLanguage>ce2335b7-fcfd-403e-8ace-08dd457fd818(mbeddr.tutorial.osconfig.cimpl)</usedLanguage>
     <usedLanguage>ce969c28-3d5b-4211-97ff-2e336488daeb(mbeddr.tutorial.registers)</usedLanguage>

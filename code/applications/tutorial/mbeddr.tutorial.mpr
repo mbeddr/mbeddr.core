@@ -12,6 +12,7 @@
       <modulePath path="${project}/languages/foreach/foreach.mpl" folder="" />
       <modulePath path="${project}/languages/heap/heap.mpl" folder="" />
       <modulePath path="${project}/languages/memory/memory.mpl" folder="" />
+      <modulePath path="${project}/languages/metadata/metadata.mpl" folder="" />
       <modulePath path="${project}/languages/osconfig/osconfig.mpl" folder="" />
       <modulePath path="${project}/languages/registers/registers.mpl" />
       <modulePath path="${project}/languages/vectors/vectors.mpl" />
