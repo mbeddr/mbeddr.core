@@ -227,8 +227,8 @@ away" things before the existing generator has a chance to reduce things.
 
 
 \parhead{Generating Header File Access} For the real-world translation, we
-assume that the register names are defined as \ic{#define}s in an included
-header file. So the code generator can generate references to \ic{#define}. In
+assume that the register names are defined as \ic{\#define}s in an included
+header file. So the code generator can generate references to \ic{\#define}. In
 this example, however, we use a differnet appraoch: we generate text
 directly. While this can be considered cheating, it is often useful, for
 example, when generating calls to implicit functions (i.e. functions that are
