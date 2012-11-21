@@ -648,6 +648,9 @@
     <node role="configurationItems" roleId="vs0r.4459718605982007338" type="3c6d.PhysicalUnitsConfigItem" typeId="3c6d.9035511730050139082" id="8135882712510801058">
       <link role="container" roleId="3c6d.9035511730050143261" targetNodeId="8135882712510776073" resolveInfo="Units Declarations (mbeddr.tutorial.main.newLanguages)" />
     </node>
+    <node role="configurationItems" roleId="vs0r.4459718605982007338" type="395t.RegisterConfigurationItem" typeId="395t.5706473467947976322" id="2945795531676539909">
+      <property name="trafo" nameId="395t.5706473467947976328" value="realworld" />
+    </node>
     <node role="binaries" roleId="51wr.5046689135694070731" type="51wr.Executable" typeId="51wr.5046689135693761554" id="9141254329931944284">
       <property name="isTest" nameId="51wr.3431613015799084476" value="true" />
       <property name="name" nameId="tpck.1169194664001" value="MbeddrTutorial" />

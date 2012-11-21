@@ -11,7 +11,6 @@
       </models>
       <external-templates>
         <generator generatorUID="be090156-a678-454c-bd8f-89ebd4a0e6af(com.mbeddr.core.modules.gen#1758019824472882132)" />
-        <generator generatorUID="6285e77c-f535-44cc-be5b-103da66e3c19(com.mbeddr.ext.components.gen_nomw#8105003328815413560)" />
       </external-templates>
       <dependencies>
         <dependency reexport="false">2d7fadf5-33f6-4e80-a78f-0f739add2bde(com.mbeddr.core.buildconfig)</dependency>
@@ -35,102 +34,11 @@
         <usedDevKit>fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)</usedDevKit>
       </usedDevKits>
       <mapping-priorities>
-        <mapping-priority-rule kind="after_or_together">
-          <greater-priority-mapping>
-            <generator generatorUID="f3dab8aa-f594-41ad-9fab-e93f9599f3d0(com.itemis.smartmeter.cextensions#2400440333613541885)" />
-            <external-mapping>
-              <mapping-node modelUID="r:5370517a-5b19-4b46-8241-2f6e9f113b2a(mbeddr.tutorial.registers.generator.template.main@generator)" nodeID="2400440333613541934" />
-            </external-mapping>
-          </greater-priority-mapping>
-          <lesser-priority-mapping>
-            <generator generatorUID="be090156-a678-454c-bd8f-89ebd4a0e6af(com.mbeddr.core.modules.gen#1758019824472882132)" />
-            <external-mapping>
-              <mapping-node modelUID="r:5f62df63-885f-42f0-80d6-e13ad6c51489(com.mbeddr.core.modules.gen.generator.template.main@generator)" nodeID="1758019824472882133" />
-            </external-mapping>
-          </lesser-priority-mapping>
-        </mapping-priority-rule>
-        <mapping-priority-rule kind="before_or_together">
-          <greater-priority-mapping>
-            <generator generatorUID="f3dab8aa-f594-41ad-9fab-e93f9599f3d0(com.itemis.smartmeter.cextensions#2400440333613541885)" />
-            <external-mapping>
-              <mapping-node modelUID="r:5370517a-5b19-4b46-8241-2f6e9f113b2a(mbeddr.tutorial.registers.generator.template.main@generator)" nodeID="5706473467948178647" />
-            </external-mapping>
-          </greater-priority-mapping>
-          <lesser-priority-mapping>
-            <generator generatorUID="6285e77c-f535-44cc-be5b-103da66e3c19(com.mbeddr.ext.components.gen_nomw#8105003328815413560)" />
-            <external-mapping>
-              <mapping-node modelUID="r:769ad9a0-f26a-4d17-9cc6-f3ae937bc774(com.mbeddr.ext.components.gen_nomw.generator.template.main@generator)" nodeID="8105003328815413561" />
-            </external-mapping>
-          </lesser-priority-mapping>
-        </mapping-priority-rule>
         <mapping-priority-rule kind="strictly_before">
           <greater-priority-mapping>
             <generator generatorUID="f3dab8aa-f594-41ad-9fab-e93f9599f3d0(com.itemis.smartmeter.cextensions#2400440333613541885)" />
             <external-mapping>
-              <mapping-set>
-                <mapping-set-element>
-                  <mapping-node modelUID="r:5370517a-5b19-4b46-8241-2f6e9f113b2a(mbeddr.tutorial.registers.generator.template.main@generator)" nodeID="5706473467948005268" />
-                </mapping-set-element>
-                <mapping-set-element>
-                  <mapping-node modelUID="r:5370517a-5b19-4b46-8241-2f6e9f113b2a(mbeddr.tutorial.registers.generator.template.main@generator)" nodeID="5706473467948030356" />
-                </mapping-set-element>
-              </mapping-set>
-            </external-mapping>
-          </greater-priority-mapping>
-          <lesser-priority-mapping>
-            <generator generatorUID="be090156-a678-454c-bd8f-89ebd4a0e6af(com.mbeddr.core.modules.gen#1758019824472882132)" />
-            <external-mapping>
-              <mapping-node modelUID="r:5f62df63-885f-42f0-80d6-e13ad6c51489(com.mbeddr.core.modules.gen.generator.template.main@generator)" nodeID="1758019824472882133" />
-            </external-mapping>
-          </lesser-priority-mapping>
-        </mapping-priority-rule>
-        <mapping-priority-rule kind="strictly_before">
-          <greater-priority-mapping>
-            <generator generatorUID="f3dab8aa-f594-41ad-9fab-e93f9599f3d0(com.itemis.smartmeter.cextensions#2400440333613541885)" />
-            <external-mapping>
-              <mapping-node modelUID="r:5370517a-5b19-4b46-8241-2f6e9f113b2a(mbeddr.tutorial.registers.generator.template.main@generator)" nodeID="1302179805032376767" />
-            </external-mapping>
-          </greater-priority-mapping>
-          <lesser-priority-mapping>
-            <generator generatorUID="f3dab8aa-f594-41ad-9fab-e93f9599f3d0(com.itemis.smartmeter.cextensions#2400440333613541885)" />
-            <external-mapping>
-              <mapping-set>
-                <mapping-set-element>
-                  <mapping-node modelUID="r:5370517a-5b19-4b46-8241-2f6e9f113b2a(mbeddr.tutorial.registers.generator.template.main@generator)" nodeID="5706473467948005268" />
-                </mapping-set-element>
-                <mapping-set-element>
-                  <mapping-node modelUID="r:5370517a-5b19-4b46-8241-2f6e9f113b2a(mbeddr.tutorial.registers.generator.template.main@generator)" nodeID="5706473467948030356" />
-                </mapping-set-element>
-              </mapping-set>
-            </external-mapping>
-          </lesser-priority-mapping>
-        </mapping-priority-rule>
-        <mapping-priority-rule kind="after_or_together">
-          <greater-priority-mapping>
-            <generator generatorUID="f3dab8aa-f594-41ad-9fab-e93f9599f3d0(com.itemis.smartmeter.cextensions#2400440333613541885)" />
-            <external-mapping>
-              <mapping-set>
-                <mapping-set-element>
-                  <mapping-node modelUID="r:5370517a-5b19-4b46-8241-2f6e9f113b2a(mbeddr.tutorial.registers.generator.template.main@generator)" nodeID="6150227294361046120" />
-                </mapping-set-element>
-                <mapping-set-element>
-                  <mapping-node modelUID="r:5370517a-5b19-4b46-8241-2f6e9f113b2a(mbeddr.tutorial.registers.generator.template.main@generator)" nodeID="6150227294361046153" />
-                </mapping-set-element>
-              </mapping-set>
-            </external-mapping>
-          </greater-priority-mapping>
-          <lesser-priority-mapping>
-            <generator generatorUID="be090156-a678-454c-bd8f-89ebd4a0e6af(com.mbeddr.core.modules.gen#1758019824472882132)" />
-            <external-mapping>
-              <mapping-node modelUID="r:5f62df63-885f-42f0-80d6-e13ad6c51489(com.mbeddr.core.modules.gen.generator.template.main@generator)" nodeID="1758019824472882133" />
-            </external-mapping>
-          </lesser-priority-mapping>
-        </mapping-priority-rule>
-        <mapping-priority-rule kind="strictly_together">
-          <greater-priority-mapping>
-            <generator generatorUID="f3dab8aa-f594-41ad-9fab-e93f9599f3d0(com.itemis.smartmeter.cextensions#2400440333613541885)" />
-            <external-mapping>
-              <mapping-node modelUID="r:5370517a-5b19-4b46-8241-2f6e9f113b2a(mbeddr.tutorial.registers.generator.template.main@generator)" nodeID="4468002982663247117" />
+              <all-local-mappings />
             </external-mapping>
           </greater-priority-mapping>
           <lesser-priority-mapping>
