@@ -2241,7 +2241,7 @@
         <node role="statement" roleId="tpee.1068581517665" type="tpee.Statement" typeId="tpee.1068580123157" id="4137078037088861303" />
         <node role="statement" roleId="tpee.1068581517665" type="tp2q.ForEachStatement" typeId="tp2q.1153943597977" id="2510219178311140984">
           <node role="variable" roleId="tp2q.1153944400369" type="tp2q.ForEachVariable" typeId="tp2q.1153944193378" id="2510219178311140985">
-            <property name="name" nameId="tpck.1169194664001" value="reqConfigItem" />
+            <property name="name" nameId="tpck.1169194664001" value="requiringConcept" />
           </node>
           <node role="inputSequence" roleId="tp2q.1153944424730" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="2510219178311183078">
             <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="2510219178311172758" resolveInfo="reqConceptItemConcepts" />
@@ -2256,7 +2256,7 @@
                 <node role="initializer" roleId="tpee.1068431790190" type="tpee.DotExpression" typeId="tpee.1197027756228" id="2510219178311183111">
                   <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="2510219178311183112">
                     <node role="operand" roleId="tpee.1197027771414" type="tp2q.ForEachVariableReference" typeId="tp2q.1153944233411" id="2510219178311183113">
-                      <link role="variable" roleId="tp2q.1153944258490" targetNodeId="2510219178311140985" resolveInfo="reqConfigItem" />
+                      <link role="variable" roleId="tp2q.1153944258490" targetNodeId="2510219178311140985" resolveInfo="requiringConcept" />
                     </node>
                     <node role="operation" roleId="tpee.1197027833540" type="tp25.SConceptLinkAccess" typeId="tp25.1175618182947" id="2510219178311183114">
                       <link role="conceptLinkDeclaration" roleId="tp25.1175618223511" targetNodeId="vs0r.1656687801206572013" resolveInfo="configItem" />
@@ -2312,20 +2312,35 @@
                   <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="2510219178311240198">
                     <node role="operand" roleId="tpee.1197027771414" type="tpf3.TemplateFunctionParameter_generationContext" typeId="tpf3.1216860049635" id="2510219178311240177" />
                     <node role="operation" roleId="tpee.1197027833540" type="tpf3.GenerationContextOp_ShowErrorMessage" typeId="tpf3.1217960179967" id="2510219178311240204">
-                      <node role="messageText" roleId="tpf3.1217960314448" type="tpee.PlusExpression" typeId="tpee.1068581242875" id="1656687801206572478">
-                        <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="1656687801206572481">
-                          <property name="value" nameId="tpee.1070475926801" value="\&quot; found in this model. Please add a configuration item in your Build Configuration." />
+                      <node role="messageText" roleId="tpf3.1217960314448" type="tpee.PlusExpression" typeId="tpee.1068581242875" id="2945795531676587303">
+                        <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="2945795531676587306">
+                          <property name="value" nameId="tpee.1070475926801" value=")" />
                         </node>
-                        <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.PlusExpression" typeId="tpee.1068581242875" id="1656687801206572421">
-                          <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="1656687801206572402">
-                            <property name="value" nameId="tpee.1070475926801" value="no configuration item \&quot;" />
-                          </node>
-                          <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.DotExpression" typeId="tpee.1197027756228" id="1656687801206572452">
-                            <node role="operand" roleId="tpee.1197027771414" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="2510219178311183240">
-                              <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="2510219178311183109" resolveInfo="conceptItem" />
+                        <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.PlusExpression" typeId="tpee.1068581242875" id="2945795531676551846">
+                          <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.PlusExpression" typeId="tpee.1068581242875" id="1656687801206572478">
+                            <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.PlusExpression" typeId="tpee.1068581242875" id="1656687801206572421">
+                              <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="1656687801206572402">
+                                <property name="value" nameId="tpee.1070475926801" value="no configuration item \&quot;" />
+                              </node>
+                              <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.DotExpression" typeId="tpee.1197027756228" id="1656687801206572452">
+                                <node role="operand" roleId="tpee.1197027771414" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="2510219178311183240">
+                                  <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="2510219178311183109" resolveInfo="conceptItem" />
+                                </node>
+                                <node role="operation" roleId="tpee.1197027833540" type="tp25.SConceptPropertyAccess" typeId="tp25.1145994841052" id="2510219178311291965">
+                                  <link role="conceptProperty" roleId="tp25.1145994841055" targetNodeId="tpck.1137473891462" resolveInfo="alias" />
+                                </node>
+                              </node>
                             </node>
-                            <node role="operation" roleId="tpee.1197027833540" type="tp25.SConceptPropertyAccess" typeId="tp25.1145994841052" id="2510219178311291965">
-                              <link role="conceptProperty" roleId="tp25.1145994841055" targetNodeId="tpck.1137473891462" resolveInfo="alias" />
+                            <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="1656687801206572481">
+                              <property name="value" nameId="tpee.1070475926801" value="\&quot; found in this model. Please add a configuration item in your Build Configuration. (required by " />
+                            </node>
+                          </node>
+                          <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.DotExpression" typeId="tpee.1197027756228" id="2945795531676551897">
+                            <node role="operand" roleId="tpee.1197027771414" type="tp2q.ForEachVariableReference" typeId="tp2q.1153944233411" id="2945795531676551876">
+                              <link role="variable" roleId="tp2q.1153944258490" targetNodeId="2510219178311140985" resolveInfo="requiringConcept" />
+                            </node>
+                            <node role="operation" roleId="tpee.1197027833540" type="tp25.SPropertyAccess" typeId="tp25.1138056022639" id="2945795531676587281">
+                              <link role="property" roleId="tp25.1138056395725" targetNodeId="tpck.1169194664001" resolveInfo="name" />
                             </node>
                           </node>
                         </node>
