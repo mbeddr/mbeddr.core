@@ -22,6 +22,7 @@
     <usedLanguage>16ff087a-23cd-49b8-9c5b-a2c20cea9d3e(mbeddr.tutorial.heap)</usedLanguage>
     <usedLanguage>a577a05d-67ad-41db-9547-6e5f0730b85d(mbeddr.tutorial.osconfig)</usedLanguage>
     <usedLanguage>ce2335b7-fcfd-403e-8ace-08dd457fd818(mbeddr.tutorial.osconfig.cimpl)</usedLanguage>
+    <usedLanguage>ce969c28-3d5b-4211-97ff-2e336488daeb(mbeddr.tutorial.registers)</usedLanguage>
     <usedLanguage>973c8be0-8526-4588-aca6-92bcbb701b50(mbeddr.tutotial.osconfig.memory)</usedLanguage>
   </usedLanguages>
   <usedDevKits>

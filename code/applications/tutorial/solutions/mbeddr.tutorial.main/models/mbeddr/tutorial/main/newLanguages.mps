@@ -19,6 +19,7 @@
   <language namespace="d4615e3b-d671-4ba9-af01-2b78369b0ba7(jetbrains.mps.lang.pattern)" />
   <language namespace="fd392034-7849-419d-9071-12563d152375(jetbrains.mps.baseLanguage.closures)" />
   <language namespace="83888646-71ce-4f1c-9c53-c54016f6ad4f(jetbrains.mps.baseLanguage.collections)" />
+  <language namespace="ce969c28-3d5b-4211-97ff-2e336488daeb(mbeddr.tutorial.registers)" />
   <devkit namespace="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
   <import index="e1tx" modelUID="r:bd5ec23c-c294-47cc-a078-675c03abdb69(mbeddr.tutorial.main.defaultExtensions)" version="-1" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
@@ -39,6 +40,7 @@
   <import index="rzjx" modelUID="r:34e48600-25da-4c7c-b6a4-8cd6f6deb117(mbeddr.tutorial.osconfig.structure)" version="-1" implicit="yes" />
   <import index="7wyt" modelUID="r:f8ba97cc-e95a-4f72-81bb-93f6528114ed(mbeddr.tutorial.osconfig.cimpl.structure)" version="-1" implicit="yes" />
   <import index="wlut" modelUID="r:39f56ab1-7cb7-441d-9f40-9b3dac9d6334(mbeddr.tutotial.osconfig.memory.structure)" version="0" implicit="yes" />
+  <import index="395t" modelUID="r:26a1587b-4d7c-4a78-9719-aa4683047564(mbeddr.tutorial.registers.structure)" version="13" implicit="yes" />
   <roots>
     <node type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="7727566415687867284">
       <property name="name" nameId="tpck.1169194664001" value="SafeHeap" />
@@ -69,6 +71,9 @@
     <node type="rzjx.OSConfig" typeId="rzjx.7977993180520290853" id="7977993180520290887" />
     <node type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="5485104033529950730">
       <property name="name" nameId="tpck.1169194664001" value="Tasks" />
+    </node>
+    <node type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="2945795531676517483">
+      <property name="name" nameId="tpck.1169194664001" value="Registers" />
     </node>
   </roots>
   <root id="7727566415687867284">
@@ -1284,6 +1289,44 @@
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="5485104033529950734">
       <property name="name" nameId="tpck.1169194664001" value="empty_1352810891368_4" />
+    </node>
+  </root>
+  <root id="2945795531676517483">
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="2945795531676517484">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1353487372732_1" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="395t.Register8" typeId="395t.5706473467947983254" id="2945795531676517487">
+      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
+      <property name="name" nameId="tpck.1169194664001" value="r1" />
+      <node role="setterExpression" roleId="395t.5706473467948039241" type="395t.RegisterValueExpression" typeId="395t.5706473467947891594" id="2945795531676517488" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="395t.Register16" typeId="395t.5706473467947983295" id="2945795531676518077">
+      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
+      <property name="allowCharAccess" nameId="395t.28228713394245199" value="true" />
+      <property name="name" nameId="tpck.1169194664001" value="r2" />
+      <property name="lowSuffix" nameId="395t.5706473467947999285" value="_L" />
+      <property name="highSuffix" nameId="395t.5706473467947999284" value="_H" />
+      <node role="setterExpression" roleId="395t.5706473467948039241" type="mj1l.MultiExpression" typeId="mj1l.5763383285156373020" id="2945795531676527214">
+        <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2945795531676527217">
+          <property name="value" nameId="mj1l.8860443239512128104" value="1000" />
+        </node>
+        <node role="left" roleId="mj1l.8860443239512128064" type="395t.RegisterValueExpression" typeId="395t.5706473467947891594" id="2945795531676527211" />
+      </node>
+      <node role="lowSetterExpr" roleId="395t.5706473467948105148" type="mj1l.MultiExpression" typeId="mj1l.5763383285156373020" id="2945795531676527189">
+        <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2945795531676527192">
+          <property name="value" nameId="mj1l.8860443239512128104" value="1000" />
+        </node>
+        <node role="left" roleId="mj1l.8860443239512128064" type="395t.RegisterValueExpression" typeId="395t.5706473467947891594" id="2945795531676527186" />
+      </node>
+      <node role="highSetterExpr" roleId="395t.5706473467948105149" type="mj1l.MultiExpression" typeId="mj1l.5763383285156373020" id="2945795531676527202">
+        <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2945795531676527205">
+          <property name="value" nameId="mj1l.8860443239512128104" value="1000" />
+        </node>
+        <node role="left" roleId="mj1l.8860443239512128064" type="395t.RegisterValueExpression" typeId="395t.5706473467947891594" id="2945795531676527199" />
+      </node>
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="2945795531676517486">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1353487373059_3" />
     </node>
   </root>
 </model>
