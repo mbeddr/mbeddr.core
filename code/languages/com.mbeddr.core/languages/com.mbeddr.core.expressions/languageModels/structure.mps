@@ -8,6 +8,7 @@
   <import index="356a" modelUID="r:3b7ed80f-6cfd-45bc-b051-2f66c620dd27(jetbrains.mps.lang.traceable.structure)" version="0" implicit="yes" />
   <import index="2gv2" modelUID="r:055bac8c-a50b-42ec-a317-e20a256152b4(com.mbeddr.core.debug.structure)" version="10" implicit="yes" />
   <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="5" implicit="yes" />
+  <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="17" implicit="yes" />
   <roots>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="8860443239512128050">
       <property name="name" nameId="tpck.1169194664001" value="Expression" />
@@ -567,6 +568,14 @@
     <node type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="5160057464295077059">
       <property name="name" nameId="tpck.1169194664001" value="IRequiresTypeToBeInferred" />
       <property name="virtualPackage" nameId="tpck.1193676396447" value="expr" />
+    </node>
+    <node type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="743779816742251347">
+      <property name="name" nameId="tpck.1169194664001" value="ITypeDecorator" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="decorator" />
+    </node>
+    <node type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="743779816742251356">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="decorator" />
+      <property name="name" nameId="tpck.1169194664001" value="ILiteralDecorator" />
     </node>
   </roots>
   <root id="8860443239512128050">
@@ -2085,5 +2094,7 @@
     </node>
   </root>
   <root id="5160057464295077059" />
+  <root id="743779816742251347" />
+  <root id="743779816742251356" />
 </model>
 
