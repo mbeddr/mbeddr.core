@@ -14,9 +14,10 @@
   <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="3" implicit="yes" />
   <import index="clqz" modelUID="r:5ebcdb77-81e9-4964-beae-35bd9a2f28b5(com.mbeddr.ext.statemachines.structure)" version="8" implicit="yes" />
   <import index="pszp" modelUID="r:5097c9c6-4a5a-40ee-bd76-4904ba8fa229(com.mbeddr.analyses.nusmv.statemachine.structure)" version="22" implicit="yes" />
+  <import index="clbe" modelUID="r:61d840b4-12c1-49ea-b142-b2a1550a9b15(com.mbeddr.core.udt.structure)" version="7" implicit="yes" />
   <roots>
     <node type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="3798708219327146852">
-      <property name="name" nameId="tpck.1169194664001" value="TypesTests" />
+      <property name="name" nameId="tpck.1169194664001" value="PrimitiveTypesTests" />
     </node>
     <node type="mj1l.TypeSizeConfiguration" typeId="mj1l.3335993110369795380" id="3798708219327146868" />
     <node type="51wr.BuildConfiguration" typeId="51wr.7717755763392524104" id="3798708219327146910" />
@@ -26,13 +27,16 @@
     <node type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="5749040569929901706">
       <property name="name" nameId="tpck.1169194664001" value="ExpressionsTests" />
     </node>
+    <node type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="6541740662591140868">
+      <property name="name" nameId="tpck.1169194664001" value="StructTypesTests" />
+    </node>
   </roots>
   <root id="3798708219327146852">
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="3798708219327146916">
       <property name="name" nameId="tpck.1169194664001" value="empty_1349463913997_6" />
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="clqz.Statemachine" typeId="clqz.5778488248013533809" id="3798708219327147012">
-      <property name="name" nameId="tpck.1169194664001" value="TypesTestSM" />
+      <property name="name" nameId="tpck.1169194664001" value="PrimitiveTypesTestSM" />
       <link role="initial" roleId="clqz.5778488248013533842" targetNodeId="3798708219327147015" resolveInfo="Init" />
       <node role="contents" roleId="clqz.7835233251114737454" type="clqz.StatemachineVariableDeclaration" typeId="clqz.5633981208992643165" id="3798708219327275425">
         <property name="name" nameId="tpck.1169194664001" value="aBoolVar" />
@@ -333,13 +337,16 @@
     <node role="binaries" roleId="51wr.5046689135694070731" type="51wr.Executable" typeId="51wr.5046689135693761554" id="3798708219327146914">
       <property name="name" nameId="tpck.1169194664001" value="HelloWorld" />
       <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="3798708219327146915">
-        <link role="module" roleId="51wr.7717755763392524108" targetNodeId="3798708219327146852" resolveInfo="TypesTests" />
+        <link role="module" roleId="51wr.7717755763392524108" targetNodeId="3798708219327146852" resolveInfo="PrimitiveTypesTests" />
       </node>
       <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="5749040569929901768">
         <link role="module" roleId="51wr.7717755763392524108" targetNodeId="5749040569929901706" resolveInfo="ExpressionsTests" />
       </node>
       <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="3798708219327275766">
         <link role="module" roleId="51wr.7717755763392524108" targetNodeId="3798708219327275383" resolveInfo="InputEventsTests" />
+      </node>
+      <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="6541740662591146657">
+        <link role="module" roleId="51wr.7717755763392524108" targetNodeId="6541740662591140868" resolveInfo="StructTypesTests" />
       </node>
     </node>
   </root>
@@ -593,6 +600,125 @@
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="5749040569929901738">
       <property name="name" nameId="tpck.1169194664001" value="empty_1349463914309_8" />
+    </node>
+  </root>
+  <root id="6541740662591140868">
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="6541740662591140869">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1349463913997_6" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="clbe.StructDeclaration" typeId="clbe.6394819151180597807" id="6541740662591140914">
+      <property name="name" nameId="tpck.1169194664001" value="Struct" />
+      <node role="members" roleId="clbe.7099329415459888018" type="clbe.Member" typeId="clbe.5882395403881875736" id="6541740662591140916">
+        <property name="name" nameId="tpck.1169194664001" value="a" />
+        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.UnsignedInt8tType" typeId="mj1l.8463282783691618461" id="6541740662591140917">
+          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+        </node>
+      </node>
+      <node role="members" roleId="clbe.7099329415459888018" type="clbe.Member" typeId="clbe.5882395403881875736" id="6541740662591140918">
+        <property name="name" nameId="tpck.1169194664001" value="b" />
+        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="6541740662591140920">
+          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+        </node>
+      </node>
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="6541740662591140915">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1353590782646_2" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="clqz.Statemachine" typeId="clqz.5778488248013533809" id="6541740662591140870">
+      <property name="name" nameId="tpck.1169194664001" value="AStructTypesTestSM" />
+      <link role="initial" roleId="clqz.5778488248013533842" targetNodeId="6541740662591140898" resolveInfo="Init" />
+      <node role="contents" roleId="clqz.7835233251114737454" type="clqz.EmptyStatemachineContent" typeId="clqz.8927638623067326788" id="6541740662591140897" />
+      <node role="contents" roleId="clqz.7835233251114737454" type="clqz.InEvent" typeId="clqz.4643433264760980253" id="6541740662591140924">
+        <property name="name" nameId="tpck.1169194664001" value="tick" />
+        <node role="args" roleId="clqz.1786180596061248896" type="clqz.EventArg" typeId="clqz.1786180596061248885" id="6541740662591140925">
+          <property name="name" nameId="tpck.1169194664001" value="s" />
+          <node role="type" roleId="mj1l.318113533128716676" type="clbe.StructType" typeId="clbe.6394819151180597816" id="6541740662591140927">
+            <link role="struct" roleId="clbe.6394819151180597817" targetNodeId="6541740662591140914" resolveInfo="Struct" />
+          </node>
+        </node>
+      </node>
+      <node role="contents" roleId="clqz.7835233251114737454" type="clqz.EmptyStatemachineContent" typeId="clqz.8927638623067326788" id="6541740662591140923" />
+      <node role="contents" roleId="clqz.7835233251114737454" type="clqz.State" typeId="clqz.5778488248013533839" id="6541740662591140898">
+        <property name="name" nameId="tpck.1169194664001" value="Init" />
+        <node role="contents" roleId="clqz.4753668641245750663" type="clqz.Transition" typeId="clqz.5778488248013533883" id="6541740662591140928">
+          <link role="targetState" roleId="clqz.5778488248013533913" targetNodeId="6541740662591140898" resolveInfo="Init" />
+          <node role="trigger" roleId="clqz.3670856444174351950" type="clqz.Trigger" typeId="clqz.1786180596061233739" id="6541740662591140930">
+            <link role="event" roleId="clqz.8951398808641876049" targetNodeId="6541740662591140924" resolveInfo="tick" />
+          </node>
+          <node role="guard" roleId="clqz.5778488248013533903" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6541740662591140942">
+            <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6541740662591140945">
+              <property name="value" nameId="mj1l.8860443239512128104" value="0" />
+            </node>
+            <node role="left" roleId="mj1l.8860443239512128064" type="clbe.SUDotExpression" typeId="clbe.7063398228162529566" id="3519105269903206982">
+              <node role="expression" roleId="mj1l.7254843406768839760" type="clqz.EventArgRef" typeId="clqz.1786180596061258962" id="6541740662591140931">
+                <link role="arg" roleId="clqz.1786180596061258963" targetNodeId="6541740662591140925" resolveInfo="s" />
+              </node>
+              <node role="member" roleId="mj1l.1452920870317550651" type="clbe.MemberRef" typeId="clbe.7099329415460395995" id="6541740662591140938">
+                <link role="member" roleId="clbe.7099329415460397525" targetNodeId="6541740662591140916" resolveInfo="a" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node role="contents" roleId="clqz.7835233251114737454" type="clqz.EmptyStatemachineContent" typeId="clqz.8927638623067326788" id="3519105269903166347" />
+      <node role="contents" roleId="clqz.7835233251114737454" type="clqz.State" typeId="clqz.5778488248013533839" id="3519105269903166349">
+        <property name="name" nameId="tpck.1169194664001" value="Unreachable" />
+      </node>
+      <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="pszp.VerificationAttribute" typeId="pszp.1579201292659177178" id="6541740662591140899" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="6541740662591140900">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1349463914309_8" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="clqz.Statemachine" typeId="clqz.5778488248013533809" id="3519105269903206984">
+      <property name="name" nameId="tpck.1169194664001" value="APointerToStructTypesTestSM" />
+      <link role="initial" roleId="clqz.5778488248013533842" targetNodeId="3519105269903206990" resolveInfo="Init" />
+      <node role="contents" roleId="clqz.7835233251114737454" type="clqz.EmptyStatemachineContent" typeId="clqz.8927638623067326788" id="3519105269903206985" />
+      <node role="contents" roleId="clqz.7835233251114737454" type="clqz.InEvent" typeId="clqz.4643433264760980253" id="3519105269903206986">
+        <property name="name" nameId="tpck.1169194664001" value="tick" />
+        <node role="args" roleId="clqz.1786180596061248896" type="clqz.EventArg" typeId="clqz.1786180596061248885" id="3519105269903206987">
+          <property name="name" nameId="tpck.1169194664001" value="s" />
+          <node role="type" roleId="mj1l.318113533128716676" type="yq40.PointerType" typeId="yq40.279446265608459824" id="3519105269903207002">
+            <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+            <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+            <node role="baseType" roleId="yq40.279446265608459825" type="clbe.StructType" typeId="clbe.6394819151180597816" id="3519105269903206988">
+              <link role="struct" roleId="clbe.6394819151180597817" targetNodeId="6541740662591140914" resolveInfo="Struct" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node role="contents" roleId="clqz.7835233251114737454" type="clqz.EmptyStatemachineContent" typeId="clqz.8927638623067326788" id="3519105269903206989" />
+      <node role="contents" roleId="clqz.7835233251114737454" type="clqz.State" typeId="clqz.5778488248013533839" id="3519105269903206990">
+        <property name="name" nameId="tpck.1169194664001" value="Init" />
+        <node role="contents" roleId="clqz.4753668641245750663" type="clqz.Transition" typeId="clqz.5778488248013533883" id="3519105269903206991">
+          <link role="targetState" roleId="clqz.5778488248013533913" targetNodeId="3519105269903206990" resolveInfo="Init" />
+          <node role="trigger" roleId="clqz.3670856444174351950" type="clqz.Trigger" typeId="clqz.1786180596061233739" id="3519105269903206992">
+            <link role="event" roleId="clqz.8951398808641876049" targetNodeId="3519105269903206986" resolveInfo="tick" />
+          </node>
+          <node role="guard" roleId="clqz.5778488248013533903" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="3519105269903206993">
+            <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3519105269903206994">
+              <property name="value" nameId="mj1l.8860443239512128104" value="0" />
+            </node>
+            <node role="left" roleId="mj1l.8860443239512128064" type="clbe.SUArrowExpression" typeId="clbe.7063398228162571833" id="3519105269903207003">
+              <node role="expression" roleId="mj1l.7254843406768839760" type="clqz.EventArgRef" typeId="clqz.1786180596061258962" id="3519105269903206996">
+                <link role="arg" roleId="clqz.1786180596061258963" targetNodeId="3519105269903206987" resolveInfo="s" />
+              </node>
+              <node role="member" roleId="mj1l.1452920870317550651" type="clbe.MemberRef" typeId="clbe.7099329415460395995" id="3519105269903206997">
+                <link role="member" roleId="clbe.7099329415460397525" targetNodeId="6541740662591140916" resolveInfo="a" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node role="contents" roleId="clqz.7835233251114737454" type="clqz.EmptyStatemachineContent" typeId="clqz.8927638623067326788" id="3519105269903206998" />
+      <node role="contents" roleId="clqz.7835233251114737454" type="clqz.State" typeId="clqz.5778488248013533839" id="3519105269903206999">
+        <property name="name" nameId="tpck.1169194664001" value="Unreachable" />
+      </node>
+      <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="pszp.VerificationAttribute" typeId="pszp.1579201292659177178" id="3519105269903207000" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="3519105269903206983">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1353594621418_1" />
     </node>
   </root>
 </model>

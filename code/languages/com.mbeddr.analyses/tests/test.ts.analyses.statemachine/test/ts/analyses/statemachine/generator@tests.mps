@@ -19,7 +19,7 @@
   <import index="1b9n" modelUID="r:95fb8574-9ce6-4567-a8e8-253c9bdeb164(com.mbeddr.analyses.base.unittests.structure)" version="0" implicit="yes" />
   <roots>
     <node type="tp5g.NodesTestCase" typeId="tp5g.1216913645126" id="2477204873927036288">
-      <property name="name" nameId="tpck.1169194664001" value="TypesTest" />
+      <property name="name" nameId="tpck.1169194664001" value="PrimitiveTypesTest" />
     </node>
     <node type="tp5g.TestInfo" typeId="tp5g.5097124989038916362" id="1423209693057696534">
       <property name="projectPath" nameId="tp5g.5097124989038916363" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.analyses/analyses.dev.mpr" />
@@ -29,6 +29,9 @@
     <node type="tp5g.NodesTestCase" typeId="tp5g.1216913645126" id="3798708219327490063">
       <property name="name" nameId="tpck.1169194664001" value="InputEventsTest" />
     </node>
+    <node type="tp5g.NodesTestCase" typeId="tp5g.1216913645126" id="6541740662591134892">
+      <property name="name" nameId="tpck.1169194664001" value="ExpressionsTest" />
+    </node>
   </roots>
   <root id="2477204873927036288">
     <node role="testMethods" roleId="tp5g.1217501895093" type="tp5g.SimpleNodeTest" typeId="tp5g.1225978065297" id="2477204873927036315">
@@ -36,7 +39,7 @@
       <node role="returnType" roleId="tpee.1068580123133" type="tpee.VoidType" typeId="tpee.1068581517677" id="2477204873927036316" />
       <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="2477204873927036317">
         <node role="statement" roleId="tpee.1068581517665" type="1b9n.CheckGeneratedFile" typeId="1b9n.3798708219327329636" id="3798708219327326367">
-          <property name="path" nameId="1b9n.3798708219327329638" value="/code/languages/com.mbeddr.analyses/tests/test.ts.analyses.statemachine/source_gen/test/ts/analyses/statemachine/generation/TypesTestSM.smv" />
+          <property name="path" nameId="1b9n.3798708219327329638" value="/code/languages/com.mbeddr.analyses/tests/test.ts.analyses.statemachine/source_gen/test/ts/analyses/statemachine/generation/PrimitiveTypesTestSM.smv" />
           <node role="lines" roleId="1b9n.3798708219327329637" type="1b9n.AssertLineEquals" typeId="1b9n.3798708219327329633" id="3798708219327490058">
             <node role="lineNumber" roleId="1b9n.3798708219327329634" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="3798708219327490061">
               <property name="value" nameId="tpee.1068580320021" value="4" />
@@ -361,6 +364,114 @@
       </node>
     </node>
     <node role="nodesToCheck" roleId="tp5g.1217501822150" type="tp5g.TestNode" typeId="tp5g.1216989428737" id="3798708219327490101" />
+  </root>
+  <root id="6541740662591134892">
+    <node role="testMethods" roleId="tp5g.1217501895093" type="tp5g.SimpleNodeTest" typeId="tp5g.1225978065297" id="6541740662591134893">
+      <property name="name" nameId="tpck.1169194664001" value="testSimpleAnnonym" />
+      <node role="returnType" roleId="tpee.1068580123133" type="tpee.VoidType" typeId="tpee.1068581517677" id="6541740662591134894" />
+      <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="6541740662591134895">
+        <node role="statement" roleId="tpee.1068581517665" type="1b9n.CheckGeneratedFile" typeId="1b9n.3798708219327329636" id="6541740662591134896">
+          <property name="path" nameId="1b9n.3798708219327329638" value="/code/languages/com.mbeddr.analyses/tests/test.ts.analyses.statemachine/source_gen/test/ts/analyses/statemachine/generation/ExpressionsTestSM.smv" />
+          <node role="lines" roleId="1b9n.3798708219327329637" type="1b9n.AssertLineEquals" typeId="1b9n.3798708219327329633" id="6541740662591134897">
+            <node role="expected" roleId="1b9n.3798708219327329635" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="6541740662591134899">
+              <property name="value" nameId="tpee.1070475926801" value="next (lv__anInt_ID_5749040569929901712) := case" />
+            </node>
+            <node role="lineNumber" roleId="1b9n.3798708219327329634" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="6541740662591140641">
+              <property name="value" nameId="tpee.1068580320021" value="161" />
+            </node>
+          </node>
+          <node role="lines" roleId="1b9n.3798708219327329637" type="1b9n.AssertLineEquals" typeId="1b9n.3798708219327329633" id="6541740662591134900">
+            <node role="expected" roleId="1b9n.3798708219327329635" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="6541740662591134902">
+              <property name="value" nameId="tpee.1070475926801" value="(_current_state = Init_ID_5749040569929901736) &amp; (in__tick__present_ID_5749040569929901753 = TRUE) : lv__anInt_ID_5749040569929901712 + 1 &lt; 0 ? -1 : lv__anInt_ID_5749040569929901712 + 1 &gt; 255 ? 256 : lv__anInt_ID_5749040569929901712 + 1;" />
+            </node>
+            <node role="lineNumber" roleId="1b9n.3798708219327329634" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="6541740662591140642">
+              <property name="value" nameId="tpee.1068580320021" value="162" />
+            </node>
+          </node>
+          <node role="lines" roleId="1b9n.3798708219327329637" type="1b9n.AssertLineEquals" typeId="1b9n.3798708219327329633" id="6541740662591134903">
+            <node role="lineNumber" roleId="1b9n.3798708219327329634" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="6541740662591134904">
+              <property name="value" nameId="tpee.1068580320021" value="163" />
+            </node>
+            <node role="expected" roleId="1b9n.3798708219327329635" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="6541740662591134905">
+              <property name="value" nameId="tpee.1070475926801" value="(_current_state = Init_ID_5749040569929901736) &amp; (in__tick__present_ID_5749040569929901753 = TRUE) : lv__anInt_ID_5749040569929901712 - 1 &lt; 0 ? -1 : lv__anInt_ID_5749040569929901712 - 1 &gt; 255 ? 256 : lv__anInt_ID_5749040569929901712 - 1;" />
+            </node>
+          </node>
+          <node role="lines" roleId="1b9n.3798708219327329637" type="1b9n.AssertLineEquals" typeId="1b9n.3798708219327329633" id="6541740662591140677">
+            <node role="lineNumber" roleId="1b9n.3798708219327329634" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="6541740662591140678">
+              <property name="value" nameId="tpee.1068580320021" value="164" />
+            </node>
+            <node role="expected" roleId="1b9n.3798708219327329635" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="6541740662591140679">
+              <property name="value" nameId="tpee.1070475926801" value="(_current_state = Init_ID_5749040569929901736) &amp; (in__tick__present_ID_5749040569929901753 = TRUE) : lv__anInt_ID_5749040569929901712 * 2 &lt; 0 ? -1 : lv__anInt_ID_5749040569929901712 * 2 &gt; 255 ? 256 : lv__anInt_ID_5749040569929901712 * 2;" />
+            </node>
+          </node>
+          <node role="lines" roleId="1b9n.3798708219327329637" type="1b9n.AssertLineEquals" typeId="1b9n.3798708219327329633" id="6541740662591140680">
+            <node role="lineNumber" roleId="1b9n.3798708219327329634" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="6541740662591140681">
+              <property name="value" nameId="tpee.1068580320021" value="165" />
+            </node>
+            <node role="expected" roleId="1b9n.3798708219327329635" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="6541740662591140682">
+              <property name="value" nameId="tpee.1070475926801" value="(_current_state = Init_ID_5749040569929901736) &amp; (in__tick__present_ID_5749040569929901753 = TRUE) : lv__anInt_ID_5749040569929901712 / 2 &lt; 0 ? -1 : lv__anInt_ID_5749040569929901712 / 2 &gt; 255 ? 256 : lv__anInt_ID_5749040569929901712 / 2;" />
+            </node>
+          </node>
+          <node role="lines" roleId="1b9n.3798708219327329637" type="1b9n.AssertLineEquals" typeId="1b9n.3798708219327329633" id="6541740662591140683">
+            <node role="lineNumber" roleId="1b9n.3798708219327329634" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="6541740662591140684">
+              <property name="value" nameId="tpee.1068580320021" value="166" />
+            </node>
+            <node role="expected" roleId="1b9n.3798708219327329635" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="6541740662591140685">
+              <property name="value" nameId="tpee.1070475926801" value="(_current_state = Init_ID_5749040569929901736) &amp; (in__tick__present_ID_5749040569929901753 = TRUE) : lv__anInt_ID_5749040569929901712 + 1 &lt; 0 ? -1 : lv__anInt_ID_5749040569929901712 + 1 &gt; 255 ? 256 : lv__anInt_ID_5749040569929901712 + 1;" />
+            </node>
+          </node>
+          <node role="lines" roleId="1b9n.3798708219327329637" type="1b9n.AssertLineEquals" typeId="1b9n.3798708219327329633" id="6541740662591140686">
+            <node role="lineNumber" roleId="1b9n.3798708219327329634" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="6541740662591140687">
+              <property name="value" nameId="tpee.1068580320021" value="167" />
+            </node>
+            <node role="expected" roleId="1b9n.3798708219327329635" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="6541740662591140688">
+              <property name="value" nameId="tpee.1070475926801" value="(_current_state = Init_ID_5749040569929901736) &amp; (in__tick__present_ID_5749040569929901753 = TRUE) : lv__anInt_ID_5749040569929901712 + 1 &lt; 0 ? -1 : lv__anInt_ID_5749040569929901712 + 1 &gt; 255 ? 256 : lv__anInt_ID_5749040569929901712 + 1;" />
+            </node>
+          </node>
+          <node role="lines" roleId="1b9n.3798708219327329637" type="1b9n.AssertLineEquals" typeId="1b9n.3798708219327329633" id="6541740662591140689">
+            <node role="lineNumber" roleId="1b9n.3798708219327329634" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="6541740662591140690">
+              <property name="value" nameId="tpee.1068580320021" value="168" />
+            </node>
+            <node role="expected" roleId="1b9n.3798708219327329635" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="6541740662591140691">
+              <property name="value" nameId="tpee.1070475926801" value="(_current_state = Init_ID_5749040569929901736) &amp; (in__tick__present_ID_5749040569929901753 = TRUE) : lv__anInt_ID_5749040569929901712 - 1 &lt; 0 ? -1 : lv__anInt_ID_5749040569929901712 - 1 &gt; 255 ? 256 : lv__anInt_ID_5749040569929901712 - 1;" />
+            </node>
+          </node>
+          <node role="lines" roleId="1b9n.3798708219327329637" type="1b9n.AssertLineEquals" typeId="1b9n.3798708219327329633" id="6541740662591140692">
+            <node role="lineNumber" roleId="1b9n.3798708219327329634" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="6541740662591140693">
+              <property name="value" nameId="tpee.1068580320021" value="169" />
+            </node>
+            <node role="expected" roleId="1b9n.3798708219327329635" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="6541740662591140694">
+              <property name="value" nameId="tpee.1070475926801" value="(_current_state = Init_ID_5749040569929901736) &amp; (in__tick__present_ID_5749040569929901753 = TRUE) : lv__anInt_ID_5749040569929901712 - 1 &lt; 0 ? -1 : lv__anInt_ID_5749040569929901712 - 1 &gt; 255 ? 256 : lv__anInt_ID_5749040569929901712 - 1;" />
+            </node>
+          </node>
+          <node role="lines" roleId="1b9n.3798708219327329637" type="1b9n.AssertLineEquals" typeId="1b9n.3798708219327329633" id="6541740662591140701">
+            <node role="lineNumber" roleId="1b9n.3798708219327329634" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="6541740662591140702">
+              <property name="value" nameId="tpee.1068580320021" value="170" />
+            </node>
+            <node role="expected" roleId="1b9n.3798708219327329635" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="6541740662591140703">
+              <property name="value" nameId="tpee.1070475926801" value="(_current_state = Init_ID_5749040569929901736) &amp; (in__tick__present_ID_5749040569929901753 = TRUE) : 50 &lt; 0 ? -1 : 50 &gt; 255 ? 256 : 50;" />
+            </node>
+          </node>
+          <node role="lines" roleId="1b9n.3798708219327329637" type="1b9n.AssertLineEquals" typeId="1b9n.3798708219327329633" id="6541740662591140704">
+            <node role="lineNumber" roleId="1b9n.3798708219327329634" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="6541740662591140705">
+              <property name="value" nameId="tpee.1068580320021" value="171" />
+            </node>
+            <node role="expected" roleId="1b9n.3798708219327329635" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="6541740662591140706">
+              <property name="value" nameId="tpee.1070475926801" value="(_current_state = Init_ID_5749040569929901736) &amp; (in__tick__present_ID_5749040569929901753 = TRUE) : 15 &lt; 0 ? -1 : 15 &gt; 255 ? 256 : 15;" />
+            </node>
+          </node>
+          <node role="lines" roleId="1b9n.3798708219327329637" type="1b9n.AssertLineEquals" typeId="1b9n.3798708219327329633" id="6541740662591140707">
+            <node role="lineNumber" roleId="1b9n.3798708219327329634" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="6541740662591140708">
+              <property name="value" nameId="tpee.1068580320021" value="172" />
+            </node>
+            <node role="expected" roleId="1b9n.3798708219327329635" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="6541740662591140709">
+              <property name="value" nameId="tpee.1070475926801" value="(_current_state = Init_ID_5749040569929901736) &amp; (in__tick__present_ID_5749040569929901753 = TRUE) : 4 &lt; 0 ? -1 : 4 &gt; 255 ? 256 : 4;" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node role="nodesToCheck" roleId="tp5g.1217501822150" type="tp5g.TestNode" typeId="tp5g.1216989428737" id="6541740662591134930" />
   </root>
 </model>
 
