@@ -10,7 +10,7 @@
   <import index="yq40" modelUID="r:152b3fc0-83a1-4bab-a8cd-565eb8483785(com.mbeddr.core.pointers.structure)" version="3" implicit="yes" />
   <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="5" implicit="yes" />
   <import index="51wr" modelUID="r:b31f1c3c-99aa-4f1e-a329-cba27efb1a6b(com.mbeddr.core.buildconfig.structure)" version="1" implicit="yes" />
-  <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="4" implicit="yes" />
+  <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="5" implicit="yes" />
   <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="3" implicit="yes" />
   <import index="clqz" modelUID="r:5ebcdb77-81e9-4964-beae-35bd9a2f28b5(com.mbeddr.ext.statemachines.structure)" version="8" implicit="yes" />
   <import index="pszp" modelUID="r:5097c9c6-4a5a-40ee-bd76-4904ba8fa229(com.mbeddr.analyses.nusmv.statemachine.structure)" version="22" implicit="yes" />
@@ -22,6 +22,9 @@
     <node type="51wr.BuildConfiguration" typeId="51wr.7717755763392524104" id="3798708219327146910" />
     <node type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="3798708219327275383">
       <property name="name" nameId="tpck.1169194664001" value="InputEventsTests" />
+    </node>
+    <node type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="5749040569929901706">
+      <property name="name" nameId="tpck.1169194664001" value="ExpressionsTests" />
     </node>
   </roots>
   <root id="3798708219327146852">
@@ -332,6 +335,9 @@
       <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="3798708219327146915">
         <link role="module" roleId="51wr.7717755763392524108" targetNodeId="3798708219327146852" resolveInfo="TypesTests" />
       </node>
+      <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="5749040569929901768">
+        <link role="module" roleId="51wr.7717755763392524108" targetNodeId="5749040569929901706" resolveInfo="ExpressionsTests" />
+      </node>
       <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="3798708219327275766">
         <link role="module" roleId="51wr.7717755763392524108" targetNodeId="3798708219327275383" resolveInfo="InputEventsTests" />
       </node>
@@ -369,6 +375,223 @@
       <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="pszp.VerificationAttribute" typeId="pszp.1579201292659177178" id="3798708219327275402" />
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="3798708219327275403">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1349463914309_8" />
+    </node>
+  </root>
+  <root id="5749040569929901706">
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="5749040569929901707">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1349463913997_6" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="clqz.Statemachine" typeId="clqz.5778488248013533809" id="5749040569929901708">
+      <property name="name" nameId="tpck.1169194664001" value="ExpressionsTestSM" />
+      <link role="initial" roleId="clqz.5778488248013533842" targetNodeId="5749040569929901736" resolveInfo="Init" />
+      <node role="contents" roleId="clqz.7835233251114737454" type="clqz.StatemachineVariableDeclaration" typeId="clqz.5633981208992643165" id="5749040569929901712">
+        <property name="name" nameId="tpck.1169194664001" value="anInt" />
+        <node role="init" roleId="clqz.4643433264760912612" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="5749040569929901713">
+          <property name="value" nameId="mj1l.8860443239512128104" value="0" />
+        </node>
+        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.UnsignedInt8tType" typeId="mj1l.8463282783691618461" id="4096196690628939559">
+          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+        </node>
+      </node>
+      <node role="contents" roleId="clqz.7835233251114737454" type="clqz.EmptyStatemachineContent" typeId="clqz.8927638623067326788" id="5749040569929901735" />
+      <node role="contents" roleId="clqz.7835233251114737454" type="clqz.InEvent" typeId="clqz.4643433264760980253" id="5749040569929901753">
+        <property name="name" nameId="tpck.1169194664001" value="tick" />
+      </node>
+      <node role="contents" roleId="clqz.7835233251114737454" type="clqz.EmptyStatemachineContent" typeId="clqz.8927638623067326788" id="5749040569929901752" />
+      <node role="contents" roleId="clqz.7835233251114737454" type="clqz.State" typeId="clqz.5778488248013533839" id="5749040569929901736">
+        <property name="name" nameId="tpck.1169194664001" value="Init" />
+        <node role="contents" roleId="clqz.4753668641245750663" type="clqz.Transition" typeId="clqz.5778488248013533883" id="5749040569929901754">
+          <link role="targetState" roleId="clqz.5778488248013533913" targetNodeId="5749040569929901736" resolveInfo="Init" />
+          <node role="trigger" roleId="clqz.3670856444174351950" type="clqz.Trigger" typeId="clqz.1786180596061233739" id="5749040569929901756">
+            <link role="event" roleId="clqz.8951398808641876049" targetNodeId="5749040569929901753" resolveInfo="tick" />
+          </node>
+          <node role="actions" roleId="clqz.5778488248013533907" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="5749040569929901757">
+            <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="5749040569929901759">
+              <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.DirectPlusAssignmentExpression" typeId="mj1l.3820836583575227340" id="5749040569929901763">
+                <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="5749040569929901766">
+                  <property name="value" nameId="mj1l.8860443239512128104" value="1" />
+                </node>
+                <node role="left" roleId="mj1l.8860443239512128064" type="clqz.StatemachineVarRef" typeId="clqz.1786180596061383227" id="5749040569929901760">
+                  <link role="var" roleId="clqz.1786180596061383228" targetNodeId="5749040569929901712" resolveInfo="anInt" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node role="contents" roleId="clqz.4753668641245750663" type="clqz.Transition" typeId="clqz.5778488248013533883" id="4096196690628858114">
+          <link role="targetState" roleId="clqz.5778488248013533913" targetNodeId="5749040569929901736" resolveInfo="Init" />
+          <node role="trigger" roleId="clqz.3670856444174351950" type="clqz.Trigger" typeId="clqz.1786180596061233739" id="4096196690628858115">
+            <link role="event" roleId="clqz.8951398808641876049" targetNodeId="5749040569929901753" resolveInfo="tick" />
+          </node>
+          <node role="actions" roleId="clqz.5778488248013533907" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="4096196690628858116">
+            <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="4096196690628858117">
+              <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.DirectMinusAssignmentExpression" typeId="mj1l.4273030818770088794" id="4096196690628858135">
+                <node role="left" roleId="mj1l.8860443239512128064" type="clqz.StatemachineVarRef" typeId="clqz.1786180596061383227" id="4096196690628858136">
+                  <link role="var" roleId="clqz.1786180596061383228" targetNodeId="5749040569929901712" resolveInfo="anInt" />
+                </node>
+                <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="4096196690628858137">
+                  <property name="value" nameId="mj1l.8860443239512128104" value="1" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node role="contents" roleId="clqz.4753668641245750663" type="clqz.Transition" typeId="clqz.5778488248013533883" id="4096196690628858121">
+          <link role="targetState" roleId="clqz.5778488248013533913" targetNodeId="5749040569929901736" resolveInfo="Init" />
+          <node role="trigger" roleId="clqz.3670856444174351950" type="clqz.Trigger" typeId="clqz.1786180596061233739" id="4096196690628858122">
+            <link role="event" roleId="clqz.8951398808641876049" targetNodeId="5749040569929901753" resolveInfo="tick" />
+          </node>
+          <node role="actions" roleId="clqz.5778488248013533907" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="4096196690628858123">
+            <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="4096196690628858124">
+              <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.DirectMultiAssignmentExpression" typeId="mj1l.4273030818770088796" id="4096196690628858138">
+                <node role="left" roleId="mj1l.8860443239512128064" type="clqz.StatemachineVarRef" typeId="clqz.1786180596061383227" id="4096196690628858139">
+                  <link role="var" roleId="clqz.1786180596061383228" targetNodeId="5749040569929901712" resolveInfo="anInt" />
+                </node>
+                <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="4096196690628939410">
+                  <property name="value" nameId="mj1l.8860443239512128104" value="2" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node role="contents" roleId="clqz.4753668641245750663" type="clqz.Transition" typeId="clqz.5778488248013533883" id="4096196690628858128">
+          <link role="targetState" roleId="clqz.5778488248013533913" targetNodeId="5749040569929901736" resolveInfo="Init" />
+          <node role="trigger" roleId="clqz.3670856444174351950" type="clqz.Trigger" typeId="clqz.1786180596061233739" id="4096196690628858129">
+            <link role="event" roleId="clqz.8951398808641876049" targetNodeId="5749040569929901753" resolveInfo="tick" />
+          </node>
+          <node role="actions" roleId="clqz.5778488248013533907" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="4096196690628858130">
+            <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="4096196690628858131">
+              <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.DirectDivAssignmentExpression" typeId="mj1l.4273030818770088820" id="4096196690628858141">
+                <node role="left" roleId="mj1l.8860443239512128064" type="clqz.StatemachineVarRef" typeId="clqz.1786180596061383227" id="4096196690628858142">
+                  <link role="var" roleId="clqz.1786180596061383228" targetNodeId="5749040569929901712" resolveInfo="anInt" />
+                </node>
+                <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="4096196690628939411">
+                  <property name="value" nameId="mj1l.8860443239512128104" value="2" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node role="contents" roleId="clqz.4753668641245750663" type="clqz.Transition" typeId="clqz.5778488248013533883" id="4096196690628869945">
+          <link role="targetState" roleId="clqz.5778488248013533913" targetNodeId="5749040569929901736" resolveInfo="Init" />
+          <node role="trigger" roleId="clqz.3670856444174351950" type="clqz.Trigger" typeId="clqz.1786180596061233739" id="4096196690628869946">
+            <link role="event" roleId="clqz.8951398808641876049" targetNodeId="5749040569929901753" resolveInfo="tick" />
+          </node>
+          <node role="actions" roleId="clqz.5778488248013533907" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="4096196690628869947">
+            <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="4096196690628869948">
+              <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.PostIncrementExpression" typeId="mj1l.4375898003726285486" id="4096196690628869954">
+                <node role="expression" roleId="mj1l.7254843406768839760" type="clqz.StatemachineVarRef" typeId="clqz.1786180596061383227" id="4096196690628869950">
+                  <link role="var" roleId="clqz.1786180596061383228" targetNodeId="5749040569929901712" resolveInfo="anInt" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node role="contents" roleId="clqz.4753668641245750663" type="clqz.Transition" typeId="clqz.5778488248013533883" id="4096196690628924629">
+          <link role="targetState" roleId="clqz.5778488248013533913" targetNodeId="5749040569929901736" resolveInfo="Init" />
+          <node role="trigger" roleId="clqz.3670856444174351950" type="clqz.Trigger" typeId="clqz.1786180596061233739" id="4096196690628924630">
+            <link role="event" roleId="clqz.8951398808641876049" targetNodeId="5749040569929901753" resolveInfo="tick" />
+          </node>
+          <node role="actions" roleId="clqz.5778488248013533907" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="4096196690628924631">
+            <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="4096196690628924632">
+              <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.PreIncrementExpression" typeId="mj1l.4375898003726285487" id="4096196690628924645">
+                <node role="expression" roleId="mj1l.7254843406768839760" type="clqz.StatemachineVarRef" typeId="clqz.1786180596061383227" id="4096196690628924634">
+                  <link role="var" roleId="clqz.1786180596061383228" targetNodeId="5749040569929901712" resolveInfo="anInt" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node role="contents" roleId="clqz.4753668641245750663" type="clqz.Transition" typeId="clqz.5778488248013533883" id="4096196690628915009">
+          <link role="targetState" roleId="clqz.5778488248013533913" targetNodeId="5749040569929901736" resolveInfo="Init" />
+          <node role="trigger" roleId="clqz.3670856444174351950" type="clqz.Trigger" typeId="clqz.1786180596061233739" id="4096196690628915010">
+            <link role="event" roleId="clqz.8951398808641876049" targetNodeId="5749040569929901753" resolveInfo="tick" />
+          </node>
+          <node role="actions" roleId="clqz.5778488248013533907" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="4096196690628915011">
+            <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="4096196690628915012">
+              <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.PostDecrementExpression" typeId="mj1l.3976803464656498416" id="4096196690628915017">
+                <node role="expression" roleId="mj1l.7254843406768839760" type="clqz.StatemachineVarRef" typeId="clqz.1786180596061383227" id="4096196690628915014">
+                  <link role="var" roleId="clqz.1786180596061383228" targetNodeId="5749040569929901712" resolveInfo="anInt" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node role="contents" roleId="clqz.4753668641245750663" type="clqz.Transition" typeId="clqz.5778488248013533883" id="4096196690628924635">
+          <link role="targetState" roleId="clqz.5778488248013533913" targetNodeId="5749040569929901736" resolveInfo="Init" />
+          <node role="trigger" roleId="clqz.3670856444174351950" type="clqz.Trigger" typeId="clqz.1786180596061233739" id="4096196690628924636">
+            <link role="event" roleId="clqz.8951398808641876049" targetNodeId="5749040569929901753" resolveInfo="tick" />
+          </node>
+          <node role="actions" roleId="clqz.5778488248013533907" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="4096196690628924637">
+            <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="4096196690628924638">
+              <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.PreDecrementExpression" typeId="mj1l.3976803464656498418" id="4096196690628924642">
+                <node role="expression" roleId="mj1l.7254843406768839760" type="clqz.StatemachineVarRef" typeId="clqz.1786180596061383227" id="4096196690628924640">
+                  <link role="var" roleId="clqz.1786180596061383228" targetNodeId="5749040569929901712" resolveInfo="anInt" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node role="contents" roleId="clqz.4753668641245750663" type="clqz.Transition" typeId="clqz.5778488248013533883" id="4096196690628939541">
+          <link role="targetState" roleId="clqz.5778488248013533913" targetNodeId="5749040569929901736" resolveInfo="Init" />
+          <node role="trigger" roleId="clqz.3670856444174351950" type="clqz.Trigger" typeId="clqz.1786180596061233739" id="4096196690628939542">
+            <link role="event" roleId="clqz.8951398808641876049" targetNodeId="5749040569929901753" resolveInfo="tick" />
+          </node>
+          <node role="actions" roleId="clqz.5778488248013533907" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="4096196690628939543">
+            <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="4096196690628939544">
+              <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.AssignmentExpr" typeId="mj1l.22102029902365709" id="4096196690628939549">
+                <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.HexNumberLiteral" typeId="mj1l.1054289341113450444" id="4096196690628939552">
+                  <property name="value" nameId="mj1l.1054289341113450445" value="32" />
+                </node>
+                <node role="left" roleId="mj1l.8860443239512128064" type="clqz.StatemachineVarRef" typeId="clqz.1786180596061383227" id="4096196690628939546">
+                  <link role="var" roleId="clqz.1786180596061383228" targetNodeId="5749040569929901712" resolveInfo="anInt" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node role="contents" roleId="clqz.4753668641245750663" type="clqz.Transition" typeId="clqz.5778488248013533883" id="4096196690628963954">
+          <link role="targetState" roleId="clqz.5778488248013533913" targetNodeId="5749040569929901736" resolveInfo="Init" />
+          <node role="trigger" roleId="clqz.3670856444174351950" type="clqz.Trigger" typeId="clqz.1786180596061233739" id="4096196690628963955">
+            <link role="event" roleId="clqz.8951398808641876049" targetNodeId="5749040569929901753" resolveInfo="tick" />
+          </node>
+          <node role="actions" roleId="clqz.5778488248013533907" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="4096196690628963956">
+            <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="4096196690628963957">
+              <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.AssignmentExpr" typeId="mj1l.22102029902365709" id="4096196690628963958">
+                <node role="left" roleId="mj1l.8860443239512128064" type="clqz.StatemachineVarRef" typeId="clqz.1786180596061383227" id="4096196690628963960">
+                  <link role="var" roleId="clqz.1786180596061383228" targetNodeId="5749040569929901712" resolveInfo="anInt" />
+                </node>
+                <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.OctalNumberLiteral" typeId="mj1l.938100142480245061" id="4096196690628963964">
+                  <property name="value" nameId="mj1l.938100142480245062" value="17" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node role="contents" roleId="clqz.4753668641245750663" type="clqz.Transition" typeId="clqz.5778488248013533883" id="4096196690628963930">
+          <link role="targetState" roleId="clqz.5778488248013533913" targetNodeId="5749040569929901736" resolveInfo="Init" />
+          <node role="trigger" roleId="clqz.3670856444174351950" type="clqz.Trigger" typeId="clqz.1786180596061233739" id="4096196690628963931">
+            <link role="event" roleId="clqz.8951398808641876049" targetNodeId="5749040569929901753" resolveInfo="tick" />
+          </node>
+          <node role="actions" roleId="clqz.5778488248013533907" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="4096196690628963932">
+            <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="4096196690628963933">
+              <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.AssignmentExpr" typeId="mj1l.22102029902365709" id="4096196690628963949">
+                <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.BinaryNumberLiteral" typeId="mj1l.1054289341113496566" id="4096196690628963952">
+                  <property name="value" nameId="mj1l.1054289341113496567" value="100" />
+                </node>
+                <node role="left" roleId="mj1l.8860443239512128064" type="clqz.StatemachineVarRef" typeId="clqz.1786180596061383227" id="4096196690628963936">
+                  <link role="var" roleId="clqz.1786180596061383228" targetNodeId="5749040569929901712" resolveInfo="anInt" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="pszp.VerificationAttribute" typeId="pszp.1579201292659177178" id="5749040569929901737" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="5749040569929901738">
       <property name="name" nameId="tpck.1169194664001" value="empty_1349463914309_8" />
     </node>
   </root>
