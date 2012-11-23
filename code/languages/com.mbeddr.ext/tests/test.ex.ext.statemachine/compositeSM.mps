@@ -43,6 +43,13 @@
       </node>
       <node role="contents" roleId="clqz.7835233251114737454" type="clqz.CompositeState" typeId="clqz.4249345261280336724" id="4249345261280424145">
         <property name="name" nameId="tpck.1169194664001" value="on" />
+        <link role="initial" roleId="clqz.4249345261280591928" targetNodeId="4249345261280558212" resolveInfo="receive" />
+        <node role="contents" roleId="clqz.4249345261280348989" type="clqz.State" typeId="clqz.5778488248013533839" id="4249345261280558210">
+          <property name="name" nameId="tpck.1169194664001" value="send" />
+        </node>
+        <node role="contents" roleId="clqz.4249345261280348989" type="clqz.State" typeId="clqz.5778488248013533839" id="4249345261280558212">
+          <property name="name" nameId="tpck.1169194664001" value="receive" />
+        </node>
       </node>
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="4249345261280424146">
@@ -118,7 +125,7 @@
         <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="4249345261280444821">
           <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="4249345261280444821" />
           <node role="expr" roleId="yz9a.6275792049641587288" type="clqz.IsInStateExpression" typeId="clqz.2558982571829189197" id="4249345261280444826">
-            <link role="state" roleId="clqz.2558982571829202228" targetNodeId="4249345261280424145" resolveInfo="on" />
+            <link role="state" roleId="clqz.2558982571829202228" targetNodeId="4249345261280558212" resolveInfo="receive" />
             <node role="expr" roleId="clqz.2558982571829189198" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="4249345261280444828">
               <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="4249345261280443314" resolveInfo="sm" />
             </node>
