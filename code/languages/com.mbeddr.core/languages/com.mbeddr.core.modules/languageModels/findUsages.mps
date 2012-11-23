@@ -27,12 +27,12 @@
     <node type="tp3b.FinderDeclaration" typeId="tp3b.1197044488845" id="1973141914968363196">
       <property name="name" nameId="tpck.1169194664001" value="findWriteAccessForArgument" />
       <property name="description" nameId="tp3b.1197385993272" value="Write Access (no aliasing)" />
-      <link role="forConcept" roleId="tp3b.1218978181697" targetNodeId="x27k.7892328519581704407" resolveInfo="Argument" />
+      <link role="forConcept" roleId="tp3b.1218978181697" targetNodeId="x27k.8444296659257696249" resolveInfo="IArgumentLike" />
     </node>
     <node type="tp3b.FinderDeclaration" typeId="tp3b.1197044488845" id="1973141914968363221">
       <property name="name" nameId="tpck.1169194664001" value="findReadAccessForArgument" />
       <property name="description" nameId="tp3b.1197385993272" value="Read Access (no aliasing)" />
-      <link role="forConcept" roleId="tp3b.1218978181697" targetNodeId="x27k.7892328519581704407" resolveInfo="Argument" />
+      <link role="forConcept" roleId="tp3b.1218978181697" targetNodeId="x27k.8444296659257696249" resolveInfo="IArgumentLike" />
     </node>
   </roots>
   <root id="1973141914967753837">
