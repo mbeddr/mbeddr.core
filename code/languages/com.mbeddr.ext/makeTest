@@ -119,6 +119,21 @@ cd statemachine_components
 make test
 PROC_RET=$(($?+$PROC_RET))
 
+
+echo -------------------------------------
+echo HelloWorld
+cd ../
+cd helloWorld
+make test
+PROC_RET=$(($?+$PROC_RET))
+
+echo -------------------------------------
+echo Composite SM
+cd ../
+cd compositeSM
+make test
+PROC_RET=$(($?+$PROC_RET))
+
 echo -------------------------------------
 echo Comp-Statemachines with Static Wiring
 cd ../
