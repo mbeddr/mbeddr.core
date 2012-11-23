@@ -33,6 +33,9 @@
     <node type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="3592968415811455927">
       <property name="name" nameId="tpck.1169194664001" value="PointerTypesTests" />
     </node>
+    <node type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="3592968415811465731">
+      <property name="name" nameId="tpck.1169194664001" value="DefinesTests" />
+    </node>
   </roots>
   <root id="3798708219327146852">
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="3798708219327146916">
@@ -351,6 +354,9 @@
       <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="6541740662591146657">
         <link role="module" roleId="51wr.7717755763392524108" targetNodeId="6541740662591140868" resolveInfo="StructTypesTests" />
       </node>
+      <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="3592968415811478881">
+        <link role="module" roleId="51wr.7717755763392524108" targetNodeId="3592968415811465731" resolveInfo="DefinesTests" />
+      </node>
     </node>
   </root>
   <root id="3798708219327275383">
@@ -360,7 +366,6 @@
     <node role="contents" roleId="x27k.6437088627575722833" type="clqz.Statemachine" typeId="clqz.5778488248013533809" id="3798708219327275385">
       <property name="name" nameId="tpck.1169194664001" value="InputEventsTestSM" />
       <link role="initial" roleId="clqz.5778488248013533842" targetNodeId="3798708219327275401" resolveInfo="Init" />
-      <node role="contents" roleId="clqz.7835233251114737454" type="clqz.EmptyStatemachineContent" typeId="clqz.8927638623067326788" id="3798708219327275400" />
       <node role="contents" roleId="clqz.7835233251114737454" type="clqz.InEvent" typeId="clqz.4643433264760980253" id="3798708219327275418">
         <property name="name" nameId="tpck.1169194664001" value="inEvent" />
         <node role="args" roleId="clqz.1786180596061248896" type="clqz.EventArg" typeId="clqz.1786180596061248885" id="3798708219327275419">
@@ -378,7 +383,7 @@
           </node>
         </node>
       </node>
-      <node role="contents" roleId="clqz.7835233251114737454" type="clqz.EmptyStatemachineContent" typeId="clqz.8927638623067326788" id="3798708219327275417" />
+      <node role="contents" roleId="clqz.7835233251114737454" type="clqz.EmptyStatemachineContent" typeId="clqz.8927638623067326788" id="3592968415811465730" />
       <node role="contents" roleId="clqz.7835233251114737454" type="clqz.State" typeId="clqz.5778488248013533839" id="3798708219327275401">
         <property name="name" nameId="tpck.1169194664001" value="Init" />
       </node>
@@ -630,7 +635,7 @@
       <property name="name" nameId="tpck.1169194664001" value="empty_1353590782646_2" />
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="clqz.Statemachine" typeId="clqz.5778488248013533809" id="6541740662591140870">
-      <property name="name" nameId="tpck.1169194664001" value="AStructTypesTestSM" />
+      <property name="name" nameId="tpck.1169194664001" value="StructTypesTestSM" />
       <link role="initial" roleId="clqz.5778488248013533842" targetNodeId="6541740662591140898" resolveInfo="Init" />
       <node role="contents" roleId="clqz.7835233251114737454" type="clqz.InEvent" typeId="clqz.4643433264760980253" id="6541740662591140924">
         <property name="name" nameId="tpck.1169194664001" value="tick" />
@@ -824,6 +829,138 @@
           </node>
         </node>
       </node>
+    </node>
+  </root>
+  <root id="3592968415811465731">
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="3592968415811465732">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1349463913997_6" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.GlobalConstantDeclaration" typeId="x27k.3788988821851860886" id="3592968415811465744">
+      <property name="name" nameId="tpck.1169194664001" value="FIRST_INT_CONST" />
+      <node role="value" roleId="x27k.3788988821851871048" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3592968415811465746">
+        <property name="value" nameId="mj1l.8860443239512128104" value="1" />
+      </node>
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.GlobalConstantDeclaration" typeId="x27k.3788988821851860886" id="3592968415811465770">
+      <property name="name" nameId="tpck.1169194664001" value="SECOND_INT_CONST" />
+      <node role="value" roleId="x27k.3788988821851871048" type="mj1l.PlusExpression" typeId="mj1l.5763383285156373013" id="3592968415811465773">
+        <node role="left" roleId="mj1l.8860443239512128064" type="x27k.GlobalConstantRef" typeId="x27k.3788988821852026523" id="3592968415811465776">
+          <link role="constant" roleId="x27k.3788988821852026524" targetNodeId="3592968415811465744" resolveInfo="FIRST_INT_CONST" />
+        </node>
+        <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3592968415811465771">
+          <property name="value" nameId="mj1l.8860443239512128104" value="1" />
+        </node>
+      </node>
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="3592968415811465769">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1353673758245_3" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.GlobalConstantDeclaration" typeId="x27k.3788988821851860886" id="3592968415811615677">
+      <property name="name" nameId="tpck.1169194664001" value="FIRST_BOOL_CONST" />
+      <node role="value" roleId="x27k.3788988821851871048" type="mj1l.FalseLiteral" typeId="mj1l.8860443239512128099" id="3592968415811632216" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.GlobalConstantDeclaration" typeId="x27k.3788988821851860886" id="3592968415811624794">
+      <property name="name" nameId="tpck.1169194664001" value="SECOND_BOOL_CONST" />
+      <node role="value" roleId="x27k.3788988821851871048" type="mj1l.TrueLiteral" typeId="mj1l.8860443239512128094" id="3592968415811624795" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.GlobalConstantDeclaration" typeId="x27k.3788988821851860886" id="3592968415811615679">
+      <property name="name" nameId="tpck.1169194664001" value="THIRD_BOOL_CONST" />
+      <node role="value" roleId="x27k.3788988821851871048" type="mj1l.OrExpression" typeId="mj1l.8399455261460717642" id="3592968415811632213">
+        <node role="left" roleId="mj1l.8860443239512128064" type="x27k.GlobalConstantRef" typeId="x27k.3788988821852026523" id="3592968415811632214">
+          <link role="constant" roleId="x27k.3788988821852026524" targetNodeId="3592968415811615677" resolveInfo="FIRST_BOOL_CONST" />
+        </node>
+        <node role="right" roleId="mj1l.8860443239512128065" type="x27k.GlobalConstantRef" typeId="x27k.3788988821852026523" id="3592968415811632215">
+          <link role="constant" roleId="x27k.3788988821852026524" targetNodeId="3592968415811624794" resolveInfo="SECOND_BOOL_CONST" />
+        </node>
+      </node>
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="3592968415811615675">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1353675393566_1" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="3592968415811615676">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1353675393812_2" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="clqz.Statemachine" typeId="clqz.5778488248013533809" id="3592968415811465733">
+      <property name="name" nameId="tpck.1169194664001" value="DefinesTestSM" />
+      <link role="initial" roleId="clqz.5778488248013533842" targetNodeId="3592968415811465740" resolveInfo="Init" />
+      <node role="contents" roleId="clqz.7835233251114737454" type="clqz.InEvent" typeId="clqz.4643433264760980253" id="3592968415811465734">
+        <property name="name" nameId="tpck.1169194664001" value="first" />
+      </node>
+      <node role="contents" roleId="clqz.7835233251114737454" type="clqz.InEvent" typeId="clqz.4643433264760980253" id="3592968415811465768">
+        <property name="name" nameId="tpck.1169194664001" value="second" />
+      </node>
+      <node role="contents" roleId="clqz.7835233251114737454" type="clqz.StatemachineVariableDeclaration" typeId="clqz.5633981208992643165" id="3592968415811465751">
+        <property name="name" nameId="tpck.1169194664001" value="intVar" />
+        <node role="init" roleId="clqz.4643433264760912612" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3592968415811465755">
+          <property name="value" nameId="mj1l.8860443239512128104" value="0" />
+        </node>
+        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="3592968415811465754">
+          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+        </node>
+      </node>
+      <node role="contents" roleId="clqz.7835233251114737454" type="clqz.EmptyStatemachineContent" typeId="clqz.8927638623067326788" id="3592968415811465756" />
+      <node role="contents" roleId="clqz.7835233251114737454" type="clqz.State" typeId="clqz.5778488248013533839" id="3592968415811465740">
+        <property name="name" nameId="tpck.1169194664001" value="Init" />
+        <node role="contents" roleId="clqz.4753668641245750663" type="clqz.Transition" typeId="clqz.5778488248013533883" id="3592968415811465748">
+          <link role="targetState" roleId="clqz.5778488248013533913" targetNodeId="3592968415811465740" resolveInfo="Init" />
+          <node role="trigger" roleId="clqz.3670856444174351950" type="clqz.Trigger" typeId="clqz.1786180596061233739" id="3592968415811465750">
+            <link role="event" roleId="clqz.8951398808641876049" targetNodeId="3592968415811465734" resolveInfo="first" />
+          </node>
+          <node role="actions" roleId="clqz.5778488248013533907" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="3592968415811465757">
+            <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="3592968415811465758">
+              <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.DirectPlusAssignmentExpression" typeId="mj1l.3820836583575227340" id="3592968415811465762">
+                <node role="right" roleId="mj1l.8860443239512128065" type="x27k.GlobalConstantRef" typeId="x27k.3788988821852026523" id="3592968415811465765">
+                  <link role="constant" roleId="x27k.3788988821852026524" targetNodeId="3592968415811465744" resolveInfo="FIRST_INT_CONST" />
+                </node>
+                <node role="left" roleId="mj1l.8860443239512128064" type="clqz.StatemachineVarRef" typeId="clqz.1786180596061383227" id="3592968415811465759">
+                  <link role="var" roleId="clqz.1786180596061383228" targetNodeId="3592968415811465751" resolveInfo="intVar" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node role="contents" roleId="clqz.4753668641245750663" type="clqz.Transition" typeId="clqz.5778488248013533883" id="3592968415811465777">
+          <link role="targetState" roleId="clqz.5778488248013533913" targetNodeId="3592968415811465740" resolveInfo="Init" />
+          <node role="trigger" roleId="clqz.3670856444174351950" type="clqz.Trigger" typeId="clqz.1786180596061233739" id="3592968415811465784">
+            <link role="event" roleId="clqz.8951398808641876049" targetNodeId="3592968415811465768" resolveInfo="second" />
+          </node>
+          <node role="actions" roleId="clqz.5778488248013533907" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="3592968415811465779">
+            <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="3592968415811465780">
+              <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.DirectPlusAssignmentExpression" typeId="mj1l.3820836583575227340" id="3592968415811465781">
+                <node role="right" roleId="mj1l.8860443239512128065" type="x27k.GlobalConstantRef" typeId="x27k.3788988821852026523" id="3592968415811465785">
+                  <link role="constant" roleId="x27k.3788988821852026524" targetNodeId="3592968415811465770" resolveInfo="SECOND_INT_CONST" />
+                </node>
+                <node role="left" roleId="mj1l.8860443239512128064" type="clqz.StatemachineVarRef" typeId="clqz.1786180596061383227" id="3592968415811465783">
+                  <link role="var" roleId="clqz.1786180596061383228" targetNodeId="3592968415811465751" resolveInfo="intVar" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node role="contents" roleId="clqz.4753668641245750663" type="clqz.Transition" typeId="clqz.5778488248013533883" id="3592968415811624798">
+          <link role="targetState" roleId="clqz.5778488248013533913" targetNodeId="3592968415811465740" resolveInfo="Init" />
+          <node role="trigger" roleId="clqz.3670856444174351950" type="clqz.Trigger" typeId="clqz.1786180596061233739" id="3592968415811624800">
+            <link role="event" roleId="clqz.8951398808641876049" targetNodeId="3592968415811465734" resolveInfo="first" />
+          </node>
+          <node role="guard" roleId="clqz.5778488248013533903" type="x27k.GlobalConstantRef" typeId="x27k.3788988821852026523" id="3592968415811624801">
+            <link role="constant" roleId="x27k.3788988821852026524" targetNodeId="3592968415811615677" resolveInfo="FIRST_BOOL_CONST" />
+          </node>
+        </node>
+        <node role="contents" roleId="clqz.4753668641245750663" type="clqz.Transition" typeId="clqz.5778488248013533883" id="3592968415811624803">
+          <link role="targetState" roleId="clqz.5778488248013533913" targetNodeId="3592968415811465740" resolveInfo="Init" />
+          <node role="trigger" roleId="clqz.3670856444174351950" type="clqz.Trigger" typeId="clqz.1786180596061233739" id="3592968415811624805">
+            <link role="event" roleId="clqz.8951398808641876049" targetNodeId="3592968415811465768" resolveInfo="second" />
+          </node>
+          <node role="guard" roleId="clqz.5778488248013533903" type="x27k.GlobalConstantRef" typeId="x27k.3788988821852026523" id="3592968415811632217">
+            <link role="constant" roleId="x27k.3788988821852026524" targetNodeId="3592968415811615679" resolveInfo="THIRD_BOOL_CONST" />
+          </node>
+        </node>
+      </node>
+      <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="pszp.VerificationAttribute" typeId="pszp.1579201292659177178" id="3592968415811465741" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="3592968415811465742">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1349463914309_8" />
     </node>
   </root>
 </model>
