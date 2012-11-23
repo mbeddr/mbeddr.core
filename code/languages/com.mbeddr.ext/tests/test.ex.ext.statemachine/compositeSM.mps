@@ -49,6 +49,12 @@
         </node>
         <node role="contents" roleId="clqz.4249345261280348989" type="clqz.State" typeId="clqz.5778488248013533839" id="4249345261280558212">
           <property name="name" nameId="tpck.1169194664001" value="receive" />
+          <node role="contents" roleId="clqz.4249345261280348989" type="clqz.Transition" typeId="clqz.5778488248013533883" id="4249345261281167750">
+            <link role="targetState" roleId="clqz.5778488248013533913" targetNodeId="4249345261280558210" resolveInfo="send" />
+            <node role="trigger" roleId="clqz.3670856444174351950" type="clqz.Trigger" typeId="clqz.1786180596061233739" id="4249345261281167752">
+              <link role="event" roleId="clqz.8951398808641876049" targetNodeId="4249345261280428541" resolveInfo="switch_on" />
+            </node>
+          </node>
         </node>
       </node>
     </node>
