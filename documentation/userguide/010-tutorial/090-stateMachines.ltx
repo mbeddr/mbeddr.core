@@ -320,7 +320,9 @@ verification uses model checking. However, the fundamental approach is similar:
   \item Mark a state machine as \ic{verifiable} using an intention
   \item Verifiable state machines are restricted in some ways, so after marking
   the state machine as \ic{verifiable}, you may have to refactor it in a way so
-  it is inside the verifiable subset
+  it is inside the verifiable subset. For example, it is not possible to assign
+  to the same variable more than once during one transition (taking into
+  account all exit and entry actions).
   \item You can then use the context menu and select \ic{Verify State Machine} to
   run the verification
   \item After running the verification, the result is shown in a separate view. 
@@ -354,58 +356,11 @@ user don't have to specify them. These automatic checks include the following:
 \end{itemize}
 
 
+
 \parhead{Verifying the FlightAnalyzer Machine} We attach the \ic{verifiable}
-flag to the \ic{FlightAnalyzer} state machine. We get two errors. The first one
-complains that the type \ic{Trackpoint} cannot be used in a verifiable state
-machines. The second one complains that the unary operators (as in
-\ic{points--}) cannot be used. We can easily fix the second one, but the first
-one is a more significant limitation -- we have to remove the use of
-\ic{struct}s. So for the sake of this example, we create a copy of the
-\ic{FlightAnalyzer} state machine and call it \ic{VerifiableFlightAnalyzer}. We
-mark the copy as \ic{verifiable} and leave the original one alone.
-
-In this new state machine, instead of using the \ic{struct}, we pass in the two
-relevant members \ic{alt} and \ic{speed} separately. This leads to the following
-code:
-
-
-\begin{lstlisting}[language=mbeddr, morekeywords={readable, verifiable}]
-verifiable                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
-statemachine VerifiableFlightAnalyzer initial = beforeFlight { 
-  in next(uint16/m/ alt, int16/mps/ speed) 
-  in reset() 
-  out crashNotification() -> raiseAlarm 
-  readable var int16 points = 0 
-  state beforeFlight { 
-    entry { points = 0; }  
-    on next [alt > 0 m] -> airborne 
-    exit { points += TAKEOFF; }  
-  }  
-  state airborne { 
-    on next [alt == 0 m && speed == 0 mps] -> crashed 
-    on next [alt == 0 m && speed > 0 mps] -> landing 
-    on next [speed > 200 mps] -> airborne { points += VERY_HIGH_SPEED; }  
-    on next [speed > 100 mps] -> airborne { points += HIGH_SPEED; }  
-    on reset [ ] -> beforeFlight 
-  }  
-  state landing { 
-    on next [speed == 0 mps] -> landed 
-    on next [ ] -> landing { points = points - 1; }  
-    on reset [ ] -> beforeFlight 
-  } 
-  state landed { 
-    entry { points += LANDING; }  
-    on reset [ ] -> beforeFlight 
-  } 
-  state crashed { 
-    entry { send crashNotification(); }  
-  } 
-}
-\end{lstlisting}
-
-We can now runt the verifier. It has two problems. Firt, It claims that
-the \ic{landing} state has nondeterministic transitions. The counter example is
-this:
+flag to the \ic{FlightAnalyzer} state machine and run the verifier. It has two
+problems. Firt, It claims that the \ic{landing} state has nondeterministic
+transitions. The counter example is this:
 
 \begin{lstlisting}
 State beforeFlight
@@ -428,8 +383,8 @@ and results in non-determinism. Let us look at the code:
 
 \begin{lstlisting}[language=mbeddr]
 state landing { 
-  on next [speed == 0 mps] -> landed 
-  on next [ ] -> landing { points = points - 1; }  
+  on next [tp->speed == 0 mps] -> landed 
+  on next [ ] -> landing { points--; }  
   on reset [ ] -> beforeFlight 
 } 
 \end{lstlisting}
@@ -444,8 +399,8 @@ condition (rerun the model checker to test this!):
 
 \begin{lstlisting}[language=mbeddr]
 state landing { 
-  on next [speed == 0 mps] -> landed 
-  on next [speed != 0 mps ] -> landing { points = points - 1; }  
+  on next [tp->speed == 0 mps] -> landed 
+  on next [tp->speed != 0 mps ] -> landing { points--; }  
   on reset [ ] -> beforeFlight 
 } 
 \end{lstlisting}
@@ -457,10 +412,10 @@ is in the second-to-last step: \ic{next(0, 101)}. Here is the respective state:
 
 \begin{lstlisting}[language=mbeddr]
 state airborne { 
-  on next [alt == 0 && speed == 0] -> crashed 
-  on next [alt == 0 && speed > 0] -> landing 
-  on next [speed > 200] -> airborne { points += VERY_HIGH_SPEED; }  
-  on next [speed > 100] -> airborne { points += HIGH_SPEED; }  
+  on next [tp->alt == 0 && tp->speed == 0] -> crashed 
+  on next [tp->alt == 0 && tp->speed > 0] -> landing 
+  on next [tp->speed > 200] -> airborne { points += VERY_HIGH_SPEED; }  
+  on next [tp->speed > 100] -> airborne { points += HIGH_SPEED; }  
   on reset [ ] -> beforeFlight 
 }
 \end{lstlisting}
@@ -469,7 +424,8 @@ The first problem we observe is that transition 4 is also true whenever
 transition 3 is true as well. So we should change transition four to
 
 \begin{lstlisting}[language=mbeddr]
-on next [speed > 100 && speed <= 200] -> airborne { points += HIGH_SPEED; } 
+on next [tp->speed > 100 && tp->speed <= 200] -> 
+   airborne { points += HIGH_SPEED; }
 \end{lstlisting}
 
 However, rerunning the verification still FAILs this state. The real problem is
@@ -480,10 +436,12 @@ formulation of the state's transitions:
 
 \begin{lstlisting}[language=mbeddr]
 state airborne { 
-  on next [alt == 0 && speed == 0] -> crashed 
-  on next [alt == 0 && speed > 0] -> landing 
-  on next [alt > 0 && speed > 200] -> airborne { points += VERY_HIGH_SPEED; }  
-  on next [alt > 0 && speed > 100 && speed <= 200] -> airborne { points += HIGH_SPEED; } 
+  on next [tp->alt == 0 && tp->speed == 0] -> crashed 
+  on next [tp->alt == 0 && tp->speed > 0] -> landing 
+  on next [tp->alt > 0 && tp->speed > 200] -> 
+        airborne { points += VERY_HIGH_SPEED; } 
+  on next [tp->alt > 0 && speed > 100 && speed <= 200] -> 
+  	    airborne { points += HIGH_SPEED; } 
   on reset [ ] -> beforeFlight 
 }
 \end{lstlisting}

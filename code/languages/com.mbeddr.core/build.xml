@@ -60,7 +60,9 @@
       <macro name="mbeddr.github.core.home" path="${mbeddr.github.core.home}"/>
 
       <modules dir="${mbeddr.github.core.home}/${mbeddr.core.project.dir}/languages"/>
-      <modules dir="${mbeddr.github.core.home}/${mbeddr.core.project.dir}/solutions"/>
+      
+      <!-- we don't have any solutions at this time -->
+      <!--<modules dir="${mbeddr.github.core.home}/${mbeddr.core.project.dir}/solutions"/>-->
     </mps.generate>
   </target>
 

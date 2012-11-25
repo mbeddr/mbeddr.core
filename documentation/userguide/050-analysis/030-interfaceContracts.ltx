@@ -1,3 +1,44 @@
 \section{Checking Interface Contracts}
 
+\subsection{Installation}
 
+Checking the contracts attached to component interfaces is based on the
+CBMC model checker:\\
+\ic{http://www.cprover.org/cbmc/}
+
+To be able to use these analyses, CBMC has to be installed on your machine
+and available in the search path.
+
+
+\subsection{Available Analyses}
+
+Given an interface with operations annotated with pre-/postconditions, we can 
+check for all runnables of components implementing the interface operations:
+
+\begin{itemize}
+\item that when they are called the preconditions are ensured to hold;
+\item that the postconditions attached to runnables hold when they return.
+\end{itemize}
+
+\subsection{Performing the Analyses}
+
+The first step for analyzing pre-/postconditions is to enable the generation of 
+labels in the \ic{Build Configuration}:
+
+\begin{center} 
+  \includegraphics[width=0.6\columnwidth]{figures/analyses/cbmcEnableLabelsGeneration.png}
+\end{center}
+
+To start the verification, right-click on a component node and select the \ic{Verify pre/post with CBMC} menu item.
+\begin{center} 
+  \includegraphics[width=0.8\columnwidth]{figures/analyses/cbmcPPCVerifyAction.png}
+\end{center} 
+
+The verification result will be displayed in a window as shown below.
+On the upper part of the window we have the list with checked assertions and runnables. 
+In the case when an assertion fails, if you double-click on it then a trace through the system that leads to 
+the failure will be displayed in the loper part of the window.
+
+%\begin{center} 
+%  \includegraphics[width=0.6\columnwidth]{figures/analyses/fmVerificationResult.png}
+%\end{center} 
