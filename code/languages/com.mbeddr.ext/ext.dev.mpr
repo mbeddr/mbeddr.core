@@ -29,7 +29,7 @@
       <modulePath path="${project}/tests/test.ts.ext.components/components.msd" folder="tests.comp" />
       <modulePath path="${project}/tests/test.ts.ext.exceptionhandling/exceptionhandling.msd" folder="tests.exhandling" />
       <modulePath path="${project}/tests/test.ts.ext.physicalunits.c/c.msd" folder="tests.units" />
-      <modulePath path="${project}/tests/test.ts.ext.statemachine/statemachine.msd" />
+      <modulePath path="${project}/tests/test.ts.ext.statemachine/statemachine.msd" folder="tests.sm" />
     </projectModules>
     <genConfs />
   </component>

@@ -32,6 +32,9 @@
       <node role="contents" roleId="clqz.7835233251114737454" type="clqz.InEvent" typeId="clqz.4643433264760980253" id="4249345261280428541">
         <property name="name" nameId="tpck.1169194664001" value="switch_on" />
       </node>
+      <node role="contents" roleId="clqz.7835233251114737454" type="clqz.InEvent" typeId="clqz.4643433264760980253" id="6365547543500677083">
+        <property name="name" nameId="tpck.1169194664001" value="switch_off" />
+      </node>
       <node role="contents" roleId="clqz.7835233251114737454" type="clqz.State" typeId="clqz.5778488248013533839" id="4249345261280424143">
         <property name="name" nameId="tpck.1169194664001" value="off" />
         <node role="contents" roleId="clqz.4249345261280348989" type="clqz.Transition" typeId="clqz.5778488248013533883" id="4249345261280428544">
@@ -44,13 +47,19 @@
       <node role="contents" roleId="clqz.7835233251114737454" type="clqz.CompositeState" typeId="clqz.4249345261280336724" id="4249345261280424145">
         <property name="name" nameId="tpck.1169194664001" value="on" />
         <link role="initial" roleId="clqz.4249345261280591928" targetNodeId="4249345261280558212" resolveInfo="receive" />
-        <node role="contents" roleId="clqz.4249345261280348989" type="clqz.State" typeId="clqz.5778488248013533839" id="4249345261280558210">
+        <node role="contents" roleId="clqz.4249345261280348989" type="clqz.Transition" typeId="clqz.5778488248013533883" id="6365547543500677081">
+          <link role="targetState" roleId="clqz.5778488248013533913" targetNodeId="4249345261280424143" resolveInfo="off" />
+          <node role="trigger" roleId="clqz.3670856444174351950" type="clqz.Trigger" typeId="clqz.1786180596061233739" id="6365547543500677084">
+            <link role="event" roleId="clqz.8951398808641876049" targetNodeId="6365547543500677083" resolveInfo="switch_off" />
+          </node>
+        </node>
+        <node role="contents" roleId="clqz.4249345261280348989" type="clqz.State" typeId="clqz.5778488248013533839" id="6365547543500721511">
           <property name="name" nameId="tpck.1169194664001" value="send" />
         </node>
         <node role="contents" roleId="clqz.4249345261280348989" type="clqz.State" typeId="clqz.5778488248013533839" id="4249345261280558212">
           <property name="name" nameId="tpck.1169194664001" value="receive" />
           <node role="contents" roleId="clqz.4249345261280348989" type="clqz.Transition" typeId="clqz.5778488248013533883" id="4249345261281167750">
-            <link role="targetState" roleId="clqz.5778488248013533913" targetNodeId="4249345261280558210" resolveInfo="send" />
+            <link role="targetState" roleId="clqz.5778488248013533913" targetNodeId="6365547543500721511" resolveInfo="send" />
             <node role="trigger" roleId="clqz.3670856444174351950" type="clqz.Trigger" typeId="clqz.1786180596061233739" id="4249345261281167752">
               <link role="event" roleId="clqz.8951398808641876049" targetNodeId="4249345261280428541" resolveInfo="switch_on" />
             </node>
