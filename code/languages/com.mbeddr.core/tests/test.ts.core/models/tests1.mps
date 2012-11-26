@@ -10001,6 +10001,18 @@
     <node role="nodesToCheck" roleId="tp5g.1217501822150" type="tp5g.TestNode" typeId="tp5g.1216989428737" id="2494656796337790788">
       <node role="nodeToCheck" roleId="tp5g.1216989461394" type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="2494656796337790789">
         <property name="name" nameId="tpck.1169194664001" value="Dummy" />
+        <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="2799248402513580745">
+          <property name="name" nameId="tpck.1169194664001" value="empty_1353939895135_1" />
+        </node>
+        <node role="contents" roleId="x27k.6437088627575722833" type="x27k.GlobalConstantDeclaration" typeId="x27k.3788988821851860886" id="2799248402513580748">
+          <property name="name" nameId="tpck.1169194664001" value="A_CONST" />
+          <node role="value" roleId="x27k.3788988821851871048" type="mj1l.CharLiteral" typeId="mj1l.1664480272136214700" id="2799248402513580750">
+            <property name="value" nameId="mj1l.1664480272136214701" value="X" />
+          </node>
+        </node>
+        <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="2799248402513580747">
+          <property name="name" nameId="tpck.1169194664001" value="empty_1353939895583_3" />
+        </node>
         <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodeOperationsContainer" typeId="tp5g.1215603922101" id="2494656796337790949">
           <node role="operations" roleId="tp5g.1215604436604" type="tp5g.TypesCheckOperation" typeId="tp5g.1215607067978" id="2494656796337790950" />
         </node>
