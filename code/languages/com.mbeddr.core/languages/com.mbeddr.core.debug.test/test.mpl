@@ -27,9 +27,12 @@
         <dependency reexport="false">8585453e-6bfb-4d80-98de-b16074f1d86c(jetbrains.mps.lang.test)</dependency>
         <dependency reexport="false">fc4584d6-365c-4ceb-b660-b2c91933024d(jetbrains.mps.lang.test#1210261198005)</dependency>
         <dependency reexport="false">707c4fde-f79a-44b5-b3d7-b5cef8844ccf(jetbrains.mps.lang.test.runtime)</dependency>
+        <dependency reexport="false">9b67baf0-e986-49af-b77c-998667f458cb(jetbrains.mps.traceInfo)</dependency>
+        <dependency reexport="false">31c5d39c-9bd1-452c-80a7-32ae1eb73c4d(jetbrains.mps.traceInfo.cache)</dependency>
       </dependencies>
       <usedLanguages>
         <usedLanguage>89c70b13-7f9c-47c3-b3c2-c218b52ed82c(com.mbeddr.core.debug.test)</usedLanguage>
+        <usedLanguage>63650c59-16c8-498a-99c8-005c7ee9515d(jetbrains.mps.lang.access)</usedLanguage>
         <usedLanguage>ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)</usedLanguage>
         <usedLanguage>b401a680-8325-4110-8fd3-84331ff25bef(jetbrains.mps.lang.generator)</usedLanguage>
         <usedLanguage>d7706f63-9be2-479c-a3da-ae92af1e64d5(jetbrains.mps.lang.generator.generationContext)</usedLanguage>
@@ -41,7 +44,7 @@
       <mapping-priorities>
         <mapping-priority-rule kind="strictly_before">
           <greater-priority-mapping>
-            <generator generatorUID="1b881fe2-dedf-490a-bc16-7cf24e5d1226(com.mbeddr.core.debug.test.lang#4193597469137492863)" />
+            <generator generatorUID="1b881fe2-dedf-490a-bc16-7cf24e5d1226(com.mbeddr.core.debug.test#4193597469137492863)" />
             <external-mapping>
               <all-local-mappings />
             </external-mapping>
@@ -55,7 +58,7 @@
         </mapping-priority-rule>
         <mapping-priority-rule kind="strictly_before">
           <greater-priority-mapping>
-            <generator generatorUID="1b881fe2-dedf-490a-bc16-7cf24e5d1226(com.mbeddr.core.debug.test.lang#4193597469137492863)" />
+            <generator generatorUID="1b881fe2-dedf-490a-bc16-7cf24e5d1226(com.mbeddr.core.debug.test#4193597469137492863)" />
             <external-mapping>
               <all-local-mappings />
             </external-mapping>
@@ -69,13 +72,13 @@
         </mapping-priority-rule>
         <mapping-priority-rule kind="strictly_before">
           <greater-priority-mapping>
-            <generator generatorUID="1b881fe2-dedf-490a-bc16-7cf24e5d1226(com.mbeddr.core.debug.test.lang#4193597469137492863)" />
+            <generator generatorUID="1b881fe2-dedf-490a-bc16-7cf24e5d1226(com.mbeddr.core.debug.test#4193597469137492863)" />
             <external-mapping>
               <all-local-mappings />
             </external-mapping>
           </greater-priority-mapping>
           <lesser-priority-mapping>
-            <generator generatorUID="1b881fe2-dedf-490a-bc16-7cf24e5d1226(com.mbeddr.core.debug.test.lang#4193597469137492863)" />
+            <generator generatorUID="1b881fe2-dedf-490a-bc16-7cf24e5d1226(com.mbeddr.core.debug.test#4193597469137492863)" />
             <external-mapping>
               <mapping-set>
                 <mapping-set-element>
