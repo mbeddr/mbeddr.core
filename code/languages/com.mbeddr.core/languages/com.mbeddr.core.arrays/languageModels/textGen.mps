@@ -53,10 +53,6 @@
       <property name="virtualPackage" nameId="tpck.1193676396447" value="literals" />
       <link role="conceptDeclaration" roleId="2omo.1233670257997" targetNodeId="yq40.6113173064526131575" resolveInfo="StringLiteral" />
     </node>
-    <node type="2omo.ConceptTextGenDeclaration" typeId="2omo.1233670071145" id="6113173064528067384">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="types" />
-      <link role="conceptDeclaration" roleId="2omo.1233670257997" targetNodeId="yq40.6113173064528067332" resolveInfo="StringType" />
-    </node>
     <node type="2omo.ConceptTextGenDeclaration" typeId="2omo.1233670071145" id="864143337943400036">
       <link role="conceptDeclaration" roleId="2omo.1233670257997" targetNodeId="yq40.6883925235272353061" resolveInfo="SizeOfExprForExpressions" />
     </node>
@@ -378,32 +374,6 @@
         <node role="statement" roleId="tpee.1068581517665" type="2omo.AppendOperation" typeId="2omo.1237306079178" id="6113173064526131604">
           <node role="part" roleId="2omo.1237306115446" type="2omo.ConstantStringAppendPart" typeId="2omo.1237305557638" id="6113173064526131605">
             <property name="value" nameId="2omo.1237305576108" value="&quot;" />
-          </node>
-        </node>
-      </node>
-    </node>
-  </root>
-  <root id="6113173064528067384">
-    <node role="textGenBlock" roleId="2omo.1233749296504" type="2omo.GenerateTextDeclaration" typeId="2omo.1233749247888" id="6113173064528067385">
-      <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="6113173064528067386">
-        <node role="statement" roleId="tpee.1068581517665" type="tpee.IfStatement" typeId="tpee.1068580123159" id="1238111967815608684">
-          <node role="ifTrue" roleId="tpee.1068580123161" type="tpee.StatementList" typeId="tpee.1068580123136" id="1238111967815608685">
-            <node role="statement" roleId="tpee.1068581517665" type="2omo.AppendOperation" typeId="2omo.1237306079178" id="1238111967815750345">
-              <node role="part" roleId="2omo.1237306115446" type="2omo.ConstantStringAppendPart" typeId="2omo.1237305557638" id="1238111967815750347">
-                <property name="value" nameId="2omo.1237305576108" value="const " />
-              </node>
-            </node>
-          </node>
-          <node role="condition" roleId="tpee.1068580123160" type="tpee.DotExpression" typeId="tpee.1197027756228" id="1238111967815700248">
-            <node role="operand" roleId="tpee.1197027771414" type="2omo.NodeParameter" typeId="2omo.1233748055915" id="1238111967815690417" />
-            <node role="operation" roleId="tpee.1197027833540" type="tp25.SPropertyAccess" typeId="tp25.1138056022639" id="1238111967815750344">
-              <link role="property" roleId="tp25.1138056395725" targetNodeId="mj1l.2941277002445651368" resolveInfo="const" />
-            </node>
-          </node>
-        </node>
-        <node role="statement" roleId="tpee.1068581517665" type="2omo.AppendOperation" typeId="2omo.1237306079178" id="6113173064528067387">
-          <node role="part" roleId="2omo.1237306115446" type="2omo.ConstantStringAppendPart" typeId="2omo.1237305557638" id="6113173064528067388">
-            <property name="value" nameId="2omo.1237305576108" value="char*" />
           </node>
         </node>
       </node>
