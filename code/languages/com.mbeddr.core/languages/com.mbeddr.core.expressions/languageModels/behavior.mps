@@ -2124,7 +2124,7 @@
               </node>
             </node>
             <node role="operation" roleId="tpee.1197027833540" type="tp25.Link_SetNewChildOperation" typeId="tp25.1138757581985" id="3813668170744241055">
-              <link role="concept" roleId="tp25.1139880128956" targetNodeId="mj1l.8463282783691618440" resolveInfo="Int32tType" />
+              <link role="concept" roleId="tp25.1139880128956" targetNodeId="mj1l.8463282783691618450" resolveInfo="UnsignedInt32tType" />
             </node>
           </node>
         </node>
@@ -2137,7 +2137,7 @@
               </node>
             </node>
             <node role="operation" roleId="tpee.1197027833540" type="tp25.Link_SetNewChildOperation" typeId="tp25.1138757581985" id="8863019357864441045">
-              <link role="concept" roleId="tp25.1139880128956" targetNodeId="mj1l.8463282783691618440" resolveInfo="Int32tType" />
+              <link role="concept" roleId="tp25.1139880128956" targetNodeId="mj1l.8463282783691618450" resolveInfo="UnsignedInt32tType" />
             </node>
           </node>
         </node>
