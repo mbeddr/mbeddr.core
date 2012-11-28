@@ -1267,6 +1267,7 @@
       </node>
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Property" typeId="tpc2.1073389658414" id="1664480272136214712">
         <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="mj1l.1664480272136214701" resolveInfo="value" />
+        <link role="styleClass" roleId="tpc2.1186406756722" targetNodeId="8118534740657810997" resolveInfo="text" />
       </node>
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="1664480272136214716">
         <property name="text" nameId="tpc2.1073389577007" value="'" />
