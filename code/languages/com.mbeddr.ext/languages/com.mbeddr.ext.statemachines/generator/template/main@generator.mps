@@ -3160,7 +3160,7 @@
             <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="4197632592758550383" resolveInfo="stateMachines" />
           </node>
           <node role="body" roleId="tpee.1154032183016" type="tpee.StatementList" typeId="tpee.1068580123136" id="4197632592758550406">
-            <node role="statement" roleId="tpee.1068581517665" type="tpee.Statement" typeId="tpee.1068580123157" id="4197632592758550381" />
+            <node role="statement" roleId="tpee.1068581517665" type="tpee.Statement" typeId="tpee.1068580123157" id="8815664698206844682" />
             <node role="statement" roleId="tpee.1068581517665" type="tpee.LocalVariableDeclarationStatement" typeId="tpee.1068581242864" id="4249345261281171523">
               <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="4249345261281171524">
                 <property name="name" nameId="tpck.1169194664001" value="topLevelComposites" />
@@ -3309,8 +3309,11 @@
                 </node>
                 <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="4918562978282322884">
                   <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="4918562978282322885">
-                    <node role="operand" roleId="tpee.1197027771414" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="4918562978282322886">
-                      <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="4918562978282047711" resolveInfo="exitRelevant" />
+                    <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="8815664698207376803">
+                      <node role="operand" roleId="tpee.1197027771414" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="4918562978282322886">
+                        <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="4918562978282047711" resolveInfo="exitRelevant" />
+                      </node>
+                      <node role="operation" roleId="tpee.1197027833540" type="tp2q.ReverseOperation" typeId="tp2q.1175845471038" id="8815664698207376809" />
                     </node>
                     <node role="operation" roleId="tpee.1197027833540" type="tp2q.VisitAllOperation" typeId="tp2q.1204980550705" id="4918562978282322887">
                       <node role="closure" roleId="tp2q.1204796294226" type="tp2c.ClosureLiteral" typeId="tp2c.1199569711397" id="4918562978282322888">
@@ -3321,7 +3324,7 @@
                                 <link role="variable" roleId="tp2q.1153944258490" targetNodeId="4918562978282322815" resolveInfo="t" />
                               </node>
                               <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_ConceptMethodCall" typeId="tp25.1179409122411" id="4918562978282322893">
-                                <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="ktif.4918562978282090656" resolveInfo="addToTailOfAction" />
+                                <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="ktif.4918562978282047736" resolveInfo="addToFrontOfAction" />
                                 <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.DotExpression" typeId="tpee.1197027756228" id="4918562978282506961">
                                   <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="4918562978282322894">
                                     <node role="operand" roleId="tpee.1197027771414" type="tpee.ParameterReference" typeId="tpee.1068581242874" id="4918562978282322895">
@@ -3363,8 +3366,11 @@
                 </node>
                 <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="4918562978282322899">
                   <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="4918562978282322900">
-                    <node role="operand" roleId="tpee.1197027771414" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="4918562978282322901">
-                      <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="4918562978282090810" resolveInfo="entryRelevant" />
+                    <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="8815664698207331812">
+                      <node role="operand" roleId="tpee.1197027771414" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="4918562978282322901">
+                        <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="4918562978282090810" resolveInfo="entryRelevant" />
+                      </node>
+                      <node role="operation" roleId="tpee.1197027833540" type="tp2q.ReverseOperation" typeId="tp2q.1175845471038" id="8815664698207331818" />
                     </node>
                     <node role="operation" roleId="tpee.1197027833540" type="tp2q.VisitAllOperation" typeId="tp2q.1204980550705" id="4918562978282322902">
                       <node role="closure" roleId="tp2q.1204796294226" type="tp2c.ClosureLiteral" typeId="tp2c.1199569711397" id="4918562978282322903">
@@ -3375,7 +3381,7 @@
                                 <link role="variable" roleId="tp2q.1153944258490" targetNodeId="4918562978282322815" resolveInfo="t" />
                               </node>
                               <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_ConceptMethodCall" typeId="tp25.1179409122411" id="4918562978282322908">
-                                <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="ktif.4918562978282047736" resolveInfo="addToFrontOfAction" />
+                                <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="ktif.4918562978282090656" resolveInfo="addToTailOfAction" />
                                 <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.DotExpression" typeId="tpee.1197027756228" id="4918562978282506934">
                                   <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="4918562978282322909">
                                     <node role="operand" roleId="tpee.1197027771414" type="tpee.ParameterReference" typeId="tpee.1068581242874" id="4918562978282322910">
@@ -3448,11 +3454,8 @@
             </node>
             <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="4249345261281172175">
               <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="4249345261281172224">
-                <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="4249345261281172197">
-                  <node role="operand" roleId="tpee.1197027771414" type="tpcw.ConceptFunctionParameter_model" typeId="tpcw.1161622665029" id="4249345261281172176" />
-                  <node role="operation" roleId="tpee.1197027833540" type="tp25.Model_NodesOperation" typeId="tp25.1171323947159" id="4249345261281172203">
-                    <link role="concept" roleId="tp25.1171323947160" targetNodeId="clqz.4249345261280336724" resolveInfo="CompositeState" />
-                  </node>
+                <node role="operand" roleId="tpee.1197027771414" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="8815664698206875641">
+                  <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="4249345261281171524" resolveInfo="topLevelComposites" />
                 </node>
                 <node role="operation" roleId="tpee.1197027833540" type="tp2q.VisitAllOperation" typeId="tp2q.1204980550705" id="4249345261281172230">
                   <node role="closure" roleId="tp2q.1204796294226" type="tp2c.ClosureLiteral" typeId="tp2c.1199569711397" id="4249345261281172231">
