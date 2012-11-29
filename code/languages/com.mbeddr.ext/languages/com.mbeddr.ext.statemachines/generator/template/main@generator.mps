@@ -3152,6 +3152,12 @@
             </node>
           </node>
         </node>
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.Statement" typeId="tpee.1068580123157" id="8815664698207641106" />
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.SingleLineComment" typeId="tpee.6329021646629104954" id="8815664698207641108">
+          <node role="commentPart" roleId="tpee.6329021646629175155" type="tpee.TextCommentPart" typeId="tpee.6329021646629104957" id="8815664698207641109">
+            <property name="text" nameId="tpee.6329021646629104958" value="handle each state machine separately" />
+          </node>
+        </node>
         <node role="statement" roleId="tpee.1068581517665" type="tp2q.ForEachStatement" typeId="tp2q.1153943597977" id="4197632592758550403">
           <node role="variable" roleId="tp2q.1153944400369" type="tp2q.ForEachVariable" typeId="tp2q.1153944193378" id="4197632592758550404">
             <property name="name" nameId="tpck.1169194664001" value="sm" />
@@ -3161,6 +3167,11 @@
           </node>
           <node role="body" roleId="tpee.1154032183016" type="tpee.StatementList" typeId="tpee.1068580123136" id="4197632592758550406">
             <node role="statement" roleId="tpee.1068581517665" type="tpee.Statement" typeId="tpee.1068580123157" id="8815664698206844682" />
+            <node role="statement" roleId="tpee.1068581517665" type="tpee.SingleLineComment" typeId="tpee.6329021646629104954" id="8815664698207641111">
+              <node role="commentPart" roleId="tpee.6329021646629175155" type="tpee.TextCommentPart" typeId="tpee.6329021646629104957" id="8815664698207641112">
+                <property name="text" nameId="tpee.6329021646629104958" value="grab all top level composite states" />
+              </node>
+            </node>
             <node role="statement" roleId="tpee.1068581517665" type="tpee.LocalVariableDeclarationStatement" typeId="tpee.1068581242864" id="4249345261281171523">
               <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="4249345261281171524">
                 <property name="name" nameId="tpck.1169194664001" value="topLevelComposites" />
@@ -3211,6 +3222,17 @@
               </node>
             </node>
             <node role="statement" roleId="tpee.1068581517665" type="tpee.Statement" typeId="tpee.1068580123157" id="4197632592758476548" />
+            <node role="statement" roleId="tpee.1068581517665" type="tpee.SingleLineComment" typeId="tpee.6329021646629104954" id="8815664698207641115">
+              <node role="commentPart" roleId="tpee.6329021646629175155" type="tpee.TextCommentPart" typeId="tpee.6329021646629104957" id="8815664698207641116">
+                <property name="text" nameId="tpee.6329021646629104958" value="for all top level composite states, copy the transitions down to their contained states. " />
+              </node>
+              <node role="commentPart" roleId="tpee.6329021646629175155" type="tpee.TextCommentPart" typeId="tpee.6329021646629104957" id="8815664698207641118">
+                <property name="text" nameId="tpee.6329021646629104958" value="The propagateTransitions method performs this recursively. It has to be done before the flattening so " />
+              </node>
+              <node role="commentPart" roleId="tpee.6329021646629175155" type="tpee.TextCommentPart" typeId="tpee.6329021646629104957" id="8815664698207641120">
+                <property name="text" nameId="tpee.6329021646629104958" value="we can still find out which composite state boundaries we cross." />
+              </node>
+            </node>
             <node role="statement" roleId="tpee.1068581517665" type="tp2q.ForEachStatement" typeId="tp2q.1153943597977" id="4197632592758476551">
               <node role="variable" roleId="tp2q.1153944400369" type="tp2q.ForEachVariable" typeId="tp2q.1153944193378" id="4197632592758476552">
                 <property name="name" nameId="tpck.1169194664001" value="compositeState" />
