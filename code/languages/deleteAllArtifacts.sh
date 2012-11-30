@@ -23,3 +23,8 @@ cd com.mbeddr.ext
 ant delete-mps-generated-code
 
 cd ..
+
+cd com.mbeddr.analyses
+ant delete-mps-generated-code
+
+cd ..

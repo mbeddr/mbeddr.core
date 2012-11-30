@@ -185,8 +185,8 @@
     </node>
     <node type="tpc2.CellActionMapDeclaration" typeId="tpc2.1139535219966" id="5022036173481315394">
       <property name="virtualPackage" nameId="tpck.1193676396447" value="types" />
-      <property name="name" nameId="tpck.1169194664001" value="primitiveTypeAliasActions" />
-      <link role="applicableConcept" roleId="tpc2.1139535219968" targetNodeId="mj1l.8860443239512128056" resolveInfo="PrimitiveType" />
+      <property name="name" nameId="tpck.1169194664001" value="typeAliasActions" />
+      <link role="applicableConcept" roleId="tpc2.1139535219968" targetNodeId="mj1l.8860443239512128054" resolveInfo="Type" />
     </node>
     <node type="tpc2.CellActionMapDeclaration" typeId="tpc2.1139535219966" id="5550109098754549893">
       <property name="virtualPackage" nameId="tpck.1193676396447" value="expr.logic.unary" />
@@ -239,7 +239,7 @@
       </node>
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_ConceptProperty" typeId="tpc2.1137553248617" id="8860443239512128089">
         <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="tpck.1137473891462" resolveInfo="alias" />
-        <link role="actionMap" roleId="tpc2.1139959269582" targetNodeId="5022036173481315394" resolveInfo="primitiveTypeAliasActions" />
+        <link role="actionMap" roleId="tpc2.1139959269582" targetNodeId="5022036173481315394" resolveInfo="typeAliasActions" />
         <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.EditableStyleClassItem" typeId="tpc2.1186414860679" id="5022036173481393297">
           <property name="flag" nameId="tpc2.1186414551515" value="false" />
         </node>
@@ -1081,6 +1081,7 @@
         </node>
         <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_ConceptProperty" typeId="tpc2.1137553248617" id="3134547887598343538">
           <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="tpck.1137473891462" resolveInfo="alias" />
+          <link role="actionMap" roleId="tpc2.1139959269582" targetNodeId="5022036173481315394" resolveInfo="typeAliasActions" />
         </node>
       </node>
     </node>
@@ -1266,6 +1267,7 @@
       </node>
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Property" typeId="tpc2.1073389658414" id="1664480272136214712">
         <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="mj1l.1664480272136214701" resolveInfo="value" />
+        <link role="styleClass" roleId="tpc2.1186406756722" targetNodeId="8118534740657810997" resolveInfo="text" />
       </node>
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="1664480272136214716">
         <property name="text" nameId="tpc2.1073389577007" value="'" />

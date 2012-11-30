@@ -1,0 +1,389 @@
+\section{MPS Language Development Primer}
+
+As we have suggested in the intro to this part, we cannot provide a complete MPS
+tutorial and instead refer to the general MPS documentation. However, here are
+some basics that may help you get started.
+
+\subsection{The Structure of Programs and Languages}
+\label{structureofprograms}
+
+
+\parhead{Concrete and Abstract Syntax} Programs can be represented in their
+abstract syntax and the concrete syntax forms. The \emph{concrete syntax} is the
+notation with which the user interacts as he edits a program. It may be textual,
+symbolic, tabular, graphical or any combination thereof. The \emph{abstract
+syntax} is a data structure that represents the semantically relevant data
+expressed by a program (also known as a meta model or the \emph{structure} of a
+language). It does not contain notational details such as keywords, symbols,
+white space or positions, sizes and coloring in graphical notations.
+The abstract syntax is used for analysis and downstream processing of programs.
+A language definition includes the concrete and the abstract syntax, as well as
+rules for mapping one to the other. \emph{Parser-based} systems map the concrete
+syntax to the abstract syntax. Users interact with a stream of characters, and a
+parser derives the abstract syntax by using a grammar and mapping rules.
+\emph{Projectional} editors like MPS go the other way round: user interactions,
+although performed through the concrete syntax, \emph{directly} change the
+abstract syntax. The concrete syntax is a mere projection (that looks and feels
+like text when a textual projection is used). No parsing takes place.
+
+
+\begin{figure}[h]
+\begin{center}
+  \includegraphics[width=4cm]{figures/tutorial/csVsAs.png} 
+  \caption{Concrete and abstract syntax for a textual variable declaration.
+  Notice how the abstract syntax does not contain the keyword \ic{var} or the
+  symbols \ic{:} and \ic{;}.}
+  \label{csVsAs} 
+\end{center} 
+\end{figure}
+
+
+
+
+The abstract syntax of programs are primarily trees of program \emph{elements}
+or \emph{nodes} in MPS' terminology. Each element is an instance of a
+\emph{language concept}, or \emph{concept} for short. A language is essentially
+a set of concepts (we'll come back to this below).
+Every element (except the root) is contained by exactly one parent element.
+
+\begin{center}  
+\includegraphics[width=35mm]{figures/tutorial/programsAsTrees.png}
+\end{center} 
+
+Syntactic nesting of the concrete syntax corresponds to a parent-child
+relationship in the abstract syntax. There may also be any number of
+non-containing cross-references between elements, established 
+during editing in a projectional system.
+
+
+
+
+\parhead{Fragments} A program may be composed from several program
+\emph{fragments}. A fragment is a standalone tree, a partial program. In MPS
+fragments are known as \emph{Root Nodes}. 
+
+\begin{center}
+  \includegraphics[width=35mm]{figures/tutorial/fragment.png} 
+\end{center} 
+
+
+
+
+
+\parhead{Languages} A language $l$ consists a set of language concepts $C_l$ and
+their relationships\footnote{In the world of grammars, a
+concept is essentially a \emph{Nonterminal}. We will discuss the details about
+grammars in the implementation section of this book}. We use the term
+\emph{concept} to refer to all aspects of an element of a language, including
+concrete syntax, abstract syntax, the associated type system rules and
+constraints as well as some definition of its semantics. 
+
+\begin{center}
+  \includegraphics[width=4cm]{figures/tutorial/langAsSetOfConcepts.png} 
+\end{center} 
+
+In a fragment, each element $e$ is an instance of a concept $c$ defined in some
+language $l$. In the example below, the statement \ic{int x = 3;} is an instance
+of the \ic{LocalVariableDeclaration} concept. \ic{int} is an instance of
+\ic{IntType}, and the \ic{3} is an instance of \ic{NumberLiteral}.
+
+\begin{center}
+  \includegraphics[width=8cm]{figures/tutorial/conceptOf.png}
+\end{center}
+
+
+
+\noindent We define an inheritance relationship that applies the Liskov
+Substitution Principle (LSP) to language concepts. The LSP states that, 
+
+
+\vspace{2mm}
+\noindent\emph{In a
+computer program, if S is a subtype of T, then objects of type T may be replaced
+with objects of type S (i.e., objects of type S may be substitutes for objects
+of type T) without altering any of the desirable properties of that program
+(correctness, task performed, etc.)} 
+\vspace{2mm}
+
+The LSP is well known in the context of
+object-oriented programming. In the context of language design it implies that a
+concept $c_{sub}$ that extends another concept $c_{super}$ can be used in places
+where an instance of $c_{super}$ is expected. 
+
+\begin{center}
+  \includegraphics[width=5.5cm]{figures/tutorial/inheritance.png} 
+\end{center} 
+
+The \ic{LocalVariableDeclaration} introduced above extends the concept
+\ic{Statement}. This way, a local variable declaration can be used wherever a
+\ic{Statement} is expected, for example, in the body of a function, which
+is a \ic{StatementList}.
+
+
+
+
+
+
+\subsection{Projectional Editing}
+
+In the parser-based approach, a grammar specifies the sequence of tokens
+and words that make up a structurally valid program. A parser is generated from
+this grammar. A parser is a program that recognizes valid programs in their
+textual form and creates an abstract syntax tree or graph. Analysis tools or
+generators work with this abstract syntax tree. Users enter programs using the
+concrete syntax (i.e.~character sequences) and programs are also stored in this
+way. 
+\begin{center}
+  \includegraphics[width=50mm]{figures/tutorial/parserbased.png}
+\end{center}  
+
+Projectional editors (also known as structured editors) work without
+grammars and parsers. A language is specified by defining the abstract syntax
+tree, then defining projection rules that render the concrete syntax of the
+language concepts defined by the abstract syntax. Editing actions \emph{directly}
+modify the abstract syntax tree. Projection rules then render a textual (or
+other) representation of the program. Users read and write programs through this
+projected notation. Programs are stored as abstract syntax trees, usually as
+XML. As in parser-based systems, backend tools operate on the abstract syntax
+tree. 
+ 
+
+\begin{center}
+  \includegraphics[width=50mm]{figures/tutorial/projectional.png}
+\end{center}
+
+
+Projectional editing is well known from graphical editors; virtually all of them
+use this approach. However, projectional editors can also be used for
+textual syntax. While in the past projectional text editors have acquired a bad
+reputation mostly because of bad usability, as of 2011, the tools have become
+good enough, and computers have become fast enough to make this approach
+feasible, productive and convenient to use. MPS is a good example of such a
+usable tool.
+
+
+This explicit instantiation of AST objects happens by picking the respective
+concept from the code completion menu using a character sequence defined by the
+respective concept. If at any given program location two concepts can be
+instantiated using \emph{the same character sequence}, then the projection
+editor prompts the user to decide\footnote{As discussed above, this is the
+situation where many grammar-based systems run into problems from ambiguity.}.
+Once a concept is instantiated, it is stored as a node with a unique ID (UID) in
+the AST. References between program elements are based on actual pointers
+(references to UIDs), and the projected syntax that represents the reference can
+be arbitrary. The AST is actually an abstract syntax graph \emph{from the
+start} because cross-references are first-class rather than being resolved after
+parsing\footnote{There is still one single containment hierarchy, so it is
+really a tree with cross-references.} The program is stored using a generic tree
+persistence mechanism, often XML.
+
+Defining a projectional editor, instead of defining a grammar, involves the
+definition of projection rules that map language concepts to a notation. It also
+involves the definition of event handlers that modify the AST based on
+users' editing gestures. The way to define the projection rules and the event
+handlers is specific to the particular tool used. 
+
+The projectional approach can deal with arbitrary syntactic forms including
+traditional text, symbols (as in mathematics), tables or graphics. Since no
+grammar is used, grammar classes are not relevant here. In principle,
+projectional editing is simpler in principle than parsing, since there is no
+need to "extract" the program structure from a flat textual source. However, as
+we will see below, the challenge in projectional editing lies making the editing
+experience convenient. In particular, editing notations that look like
+text should be editable with the editing gestures known from text editors. 
+Here are some of the approaches MPS uses to achieve this. For you as the
+language developer this is relevant because you have to explicitly define some
+of these:
+
+\begin{itemize}
+
+  \item Every language concept that is legal at a given program location is
+  available in the code completion menu. In naive implementations, users have to
+  select the language concept (based on its name) and instantiate it. This is
+  inconvenient. In MPS, languages can instead define aliases for language
+  concepts, allowing users to "just type" the alias, after which the concept
+  is immediately instantiated\footnote{By making the alias the same as the
+  leading keyword (e.g.,~\ic{if} for an \ic{IfStatement}), users can "just
+  type" the code.}.
+
+  \item So-called side transforms make sure that expressions can be entered
+  conveniently. Consider a local variable declaration \ic{int a = 2;}. If this
+  should be changed to \ic{int a = 2+3;} the \ic{2} in the init expression needs
+  to be replaced by an instance of the binary \ic{+} operator, with the \ic{2}
+  in the left slot and the \ic{3} in the right. Instead of removing the \ic{2}
+  and manually inserting a \ic{+}, users can simply type \ic{+} on the right
+  side of the \ic{2}; the system performs the tree restructuring that moves the
+  \ic{+} to the root of the subtree, puts the \ic{2} in the left slot, and then
+  puts the cursor into the right slot, to accept the second argument. This means
+  that expressions (or anything else) can be entered linearly, as expected. For
+  this to work, operator precedence has to be specified, and the tree has to be
+  constructed taking these precedences into account. Precedence is typically
+  specified by a number associated with each operator, and whenever using a side
+  transformation to build an expression, the tree is automatically reshuffled to
+  make sure that those operators with a higher precedence number are further
+  down in the tree.
+  
+  \item Delete actions are used to similar effect when elements are deleted.
+  Deleting the \ic{3} in \ic{2+3} first keeps the plus, with an empty right slot.
+  Deleting the \ic{+} then removes the \ic{+} and puts the \ic{2} at the root of the subtree.
+
+
+  \item Wrappers support instantiation of concepts that are actually children of
+  the concepts allowed at a given location. Consider again a local variable
+  declaration \ic{int a;}. The respective concept could be
+  \ic{LocalVariableDeclaration}, a subconcept of \ic{Statement}, to make it
+  legal in method bodies (for example). However, users simply want to start
+  typing \ic{int}, i.e.\ selecting the content of the \ic{type} field of the
+  \ic{LocalVariableDeclaration}. A wrapper can be used to support entering
+  \ic{Type}s where \ic{LocalVariableDeclaration}s are expected. Once a \ic{Type}
+  is selected, the wrapper implementation creates a
+  \ic{LocalVariableDeclaration}, puts the \ic{Type} into its \ic{type} field,
+  and moves the cursor into the \ic{name} slot.
+
+
+  \item Smart references achieve a similar effect for references (as opposed to
+  children). Consider pressing \ic{Ctrl-Space} after the \ic{+} in \ic{2+3}.
+  Assume further, that a couple of local variables are in scope and that these
+  can be used instead of the \ic{3}. These should be available in the code
+  completion menu. However, technically, a \ic{VariableReference} has to be
+  instantiated, whose \ic{variable} slot then is made to point to any of the
+  variables in scope. This is tedious. Smart references trigger special editor
+  behavior: if in a given context a \ic{VariableReference} is allowed, the
+  editor \emph{first} evaluates its scope to find the possible targets and then
+  puts those targets into the code completion menu. If a user selects one,
+  \emph{then} the \ic{VariableReference} is created, and the selected element is
+  put into its \ic{variable} slot. This makes the reference object effectively
+  invisible in the editor.
+
+
+  \item Smart delimiters are used to simplify inputting list-like data that is
+  separated with a specific separator symbol, such as parameter lists. Once a
+  parameter is entered, users can press comma, i.e.\ the list delimiter, to
+  instantiate the next element.
+
+\end{itemize}
+
+
+\subsection{Language Aspects}
+
+
+When defining a language in MPS, you have to define several language aspects.
+Some of them are familiar from the disussion above, others haven't been
+mentioned yet. In the rest of this part of the user guide we'll provide example
+for all of these aspects; here is a general overview:
+
+\parhead{Structure} The structure, or abstract syntax or meta model, has been
+discussed above. In terms of structure, a language concept consists of a name,
+child concepts, references to other concepts and primitive properties (integer,
+Boolean, string or an enumeration). A Concept may also extend \emph{one} other
+concept and implement any number of concept interfaces. In addition, a concept
+can also have \emph{static} properties, children and references; MPS refers to
+those as \emph{concept} properties/children/references. The definition of a new
+concept always starts with the structure.
+
+\parhead{Editor} The editor aspect defines the concrete syntax, or the
+projection rules. Currently, each concept has one editor (unless a concept
+inherits the editor from its super-concept). Interface concepts do not have
+editors, but they may define editor \emph{components} that can be embedded into
+other editors. Editors consist of cells, where each cell may contain a constant
+(i.e. a keyword or a symbol), a property value (such as the name), a child cell,
+a reference cell or a collection of other cells. In fact, the editor for a
+concept is defined in two parts: the editor for the concept in the primary
+editor as well as the concept's representation in the inspector (essentially a
+properties view). The editor aspect also defines (some) \emph{actions} and
+keymaps. These determine the reaction of MPS if a certain key is pressed in
+given cell or when a node is deleted.
+
+\parhead{Actions} The actions aspect contains mostly wrappers and side
+transformations (as discussed above). 
+
+\parhead{Behavior} The behavior aspect essentially contains methods defined on
+concepts. Such methods can implement arbitrary behavior and can be called on
+each instance of the concept. Note that concept interfaces cannot just declare
+methods (as in Java), but they can also provide an implementation. In that
+sense, interfaces are more like Scala traits.
+
+\parhead{Constraints} The constraints aspects seems to be a collection of
+relatively independent things. In particular, you define scopes for references
+(i.e. the set of valid target nodes beyond their type), constraints for
+properties (value ranges, regular expressions), as well as context dependencies
+for concepts. The latter allows you to restrict where a concept can be used,
+for example, an \ic{assert} statement may be restricted to test cases.
+
+\parhead{Type System} In the type system you can specify typing rules for
+concepts. These include inference rules (the type of a variable reference is
+the type of the variable referenced by it), subtyping rules (\ic{int} is a
+subtype of \ic{float}) and so-called non-typesystem rules. The latter are
+essentially boolean expressions that evaluate any part of the model. For
+example, they can be used to check for name uniqueness or naming conventions. 
+The type system aspect may also contain quick fixes that can used to resolve
+errors raised by type system rules.
+
+\parhead{Intentions} Intentions are the similar to quick fixes in that they can
+be activated via \ic{Alt-Enter} and then selected from the menu that pops up.
+They are different in that an intention is not associated with an error, but
+just generally with a concept. For example, an intention could allow a user to
+mark a type as \ic{const} by selecting \ic{Make Const} from the intentions menu
+(\ic{Alt-Enter}) of a type.
+
+\parhead{Refactorings} Refactorings are similar to intentions in that they
+change the structure of a program. They are also typically associated with a
+specific concept. There are several differences though: a refactoring shows up
+in the \ic{Refactorings} menu, it can have a keyboard shortcut associated with
+it, it can be written to be able to handle several nodes at a time, and it can
+query the user for input before it is executed.
+
+\parhead{Generator} The generator aspect is used to define the mapping of one
+concept to another one. MPS relies on multi-stage transformations, where only
+the last one creates text and all others are tree-to-tree mappings. The
+generator aspects contains the tree-to-tree mappings, and the textgen aspect
+(discussed below) handles the final to-text transformation. Generator consist of
+so-called mapping configurations that contain transformation rules. There are
+different kinds of rules that transform nodes in different ways. For example, a
+reduction rule replaces any occurence of a concept with the tree fragment
+created by the template associated with the reduction rule. Note that you get
+IDE support for the target language in the transformation template! A generator
+may also contain procedural mapping scripts. 
+
+\parhead{Textgen} The textgen aspect for a language concept defines the mapping
+of the concept to a text buffer. This should only be used for the concept of a
+base language such as Java, C or XML. Any higher-level concepts that create
+programs expressed in such a base language should use generators (previous
+paragraph).
+
+\parhead{Find Usages} The Find Usages aspect supports custom finders: when the
+\ic{Find Usages} item is selected from the context menu of a node, these custom
+finders show up there. Instead of finding \emph{all} usages of a node, these
+custom finders can filter based on the usage context. For example, for local
+variable, a finder may only show usages where the variable is used on the left
+of an assignment statement.
+
+\parhead{Dataflow} The dataflow aspect constructs a dataflow graph for programs.
+For each language concept, a so-called dataflow builder can be defined whose
+task it is to construct the dataflow graph fragment for the respective concept.
+Based on this dataflow graph, a set of dataflow analyses can be performed.
+
+\parhead{Scripts} The scipts aspect contains migration or enhancement scripts
+for language concepts. They are useful in handling language migration problems.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+ 

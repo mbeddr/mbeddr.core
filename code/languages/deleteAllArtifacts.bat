@@ -23,3 +23,8 @@ cd com.mbeddr.ext
 call ant delete-mps-generated-code
 
 cd ..
+
+cd com.mbeddr.analyses
+call ant delete-mps-generated-code
+
+cd ..

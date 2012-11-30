@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<history>
+  <StructureModification>
+    <dependencies>
+      <model index="o18s" modelUID="r:a618d913-e198-4e3d-9d3a-b1bdc08867df(com.itemis.smartmeter.cextensions.intentions)" version="-1" />
+      <model index="395t" modelUID="r:26a1587b-4d7c-4a78-9719-aa4683047564(com.itemis.smartmeter.cextensions.structure)" version="12" />
+      <model index="sbrb" modelUID="r:cddd25de-078d-46b6-bee0-44fb8f22fa14(com.itemis.smartmeter.cextensions.editor)" version="-1" />
+      <model index="ubuy" modelUID="r:ec40fb53-d259-4100-9ecd-00beb099c367(com.itemis.smartmeter.cextensions.textGen)" version="-1" />
+      <model index="zm9k" modelUID="r:5370517a-5b19-4b46-8241-2f6e9f113b2a(com.itemis.smartmeter.cextensions.generator.template.main@generator)" version="-1" />
+      <model index="y2xb" modelUID="r:2dcb1c2f-457c-491a-a30f-5ef892f39582(com.itemis.smartmeter.cextensions.typesystem)" version="-1" />
+      <model index="7ff9" modelUID="r:a4e41923-044b-498c-b751-da372a9d444d(com.itemis.smartmeter.cextensions.constraints)" version="-1" />
+      <model index="qudj" modelUID="r:469abd53-1203-4842-9469-aa0648fa5250(com.itemis.smartmeter.cextensions.behavior)" version="-1" />
+      <model index="b0gb" modelUID="r:74e7c30e-342c-4dbe-9b71-717f565c1cc4(com.itemis.smartmeter.cextensions.actions)" version="-1" />
+    </dependencies>
+    <RenameModel oldModel="r:a618d913-e198-4e3d-9d3a-b1bdc08867df(com.itemis.smartmeter.cextensions.intentions)" newModel="r:a618d913-e198-4e3d-9d3a-b1bdc08867df(mbeddr.tutorial.registers.intentions)" />
+    <RenameModel oldModel="r:a4e41923-044b-498c-b751-da372a9d444d(com.itemis.smartmeter.cextensions.constraints)" newModel="r:a4e41923-044b-498c-b751-da372a9d444d(mbeddr.tutorial.registers.constraints)" />
+    <RenameModel oldModel="r:2dcb1c2f-457c-491a-a30f-5ef892f39582(com.itemis.smartmeter.cextensions.typesystem)" newModel="r:2dcb1c2f-457c-491a-a30f-5ef892f39582(mbeddr.tutorial.registers.typesystem)" />
+    <RenameModel oldModel="r:74e7c30e-342c-4dbe-9b71-717f565c1cc4(com.itemis.smartmeter.cextensions.actions)" newModel="r:74e7c30e-342c-4dbe-9b71-717f565c1cc4(mbeddr.tutorial.registers.actions)" />
+    <RenameModel oldModel="r:ec40fb53-d259-4100-9ecd-00beb099c367(com.itemis.smartmeter.cextensions.textGen)" newModel="r:ec40fb53-d259-4100-9ecd-00beb099c367(mbeddr.tutorial.registers.textGen)" />
+    <RenameModel oldModel="r:cddd25de-078d-46b6-bee0-44fb8f22fa14(com.itemis.smartmeter.cextensions.editor)" newModel="r:cddd25de-078d-46b6-bee0-44fb8f22fa14(mbeddr.tutorial.registers.editor)" />
+    <RenameModel oldModel="r:26a1587b-4d7c-4a78-9719-aa4683047564(com.itemis.smartmeter.cextensions.structure)" newModel="r:26a1587b-4d7c-4a78-9719-aa4683047564(mbeddr.tutorial.registers.structure)" />
+    <RenameModel oldModel="r:469abd53-1203-4842-9469-aa0648fa5250(com.itemis.smartmeter.cextensions.behavior)" newModel="r:469abd53-1203-4842-9469-aa0648fa5250(mbeddr.tutorial.registers.behavior)" />
+    <RenameModel oldModel="r:5370517a-5b19-4b46-8241-2f6e9f113b2a(com.itemis.smartmeter.cextensions.generator.template.main@generator)" newModel="r:5370517a-5b19-4b46-8241-2f6e9f113b2a(mbeddr.tutorial.registers.generator.template.main@generator)" />
+  </StructureModification>
+</history>
+

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<history>
+  <StructureModification>
+    <dependencies>
+      <model index="vj37" modelUID="r:4c272460-99ea-4d39-8c9a-f1bc63f0c386(blockdemo.vectors.structure)" version="-1" />
+    </dependencies>
+    <rename id="vj37.5509345450571525118" type="PROPERTY" from="dimensions" to="dimensionsRows" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="vj37" modelUID="r:4c272460-99ea-4d39-8c9a-f1bc63f0c386(blockdemo.vectors.structure)" version="0" />
+    </dependencies>
+    <move id="vj37.5509345450571797376" to="vj37.1090431670134076215" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="stw" modelUID="r:a518f3e2-c492-4493-bbca-31d8e09edb5d(blockdemo.vectors.typesystem)" version="-1" />
+      <model index="9c9p" modelUID="r:68cc99cf-80f6-492b-9a42-1867c0f128de(blockdemo.vectors.constraints)" version="-1" />
+      <model index="vj37" modelUID="r:4c272460-99ea-4d39-8c9a-f1bc63f0c386(blockdemo.vectors.structure)" version="1" />
+      <model index="1hgp" modelUID="r:3f555e13-9627-4a27-888e-cf61306365fc(blockdemo.vectors.actions)" version="-1" />
+      <model index="kssv" modelUID="r:982d5306-9d5e-426f-abf8-1a2ca4a0588a(blockdemo.vectors.behavior)" version="-1" />
+      <model index="o6ex" modelUID="r:84a42df3-f962-48b3-9303-1d28accfd111(blockdemo.vectors.intentions)" version="-1" />
+      <model index="awfw" modelUID="r:8c82993c-58ab-4870-b0b4-a9c6f529cc36(blockdemo.vectors.editor)" version="-1" />
+    </dependencies>
+    <RenameModel oldModel="r:3f555e13-9627-4a27-888e-cf61306365fc(blockdemo.vectors.actions)" newModel="r:3f555e13-9627-4a27-888e-cf61306365fc(mbeddr.tutorial.vectors.actions)" />
+    <RenameModel oldModel="r:a518f3e2-c492-4493-bbca-31d8e09edb5d(blockdemo.vectors.typesystem)" newModel="r:a518f3e2-c492-4493-bbca-31d8e09edb5d(mbeddr.tutorial.vectors.typesystem)" />
+    <RenameModel oldModel="r:8c82993c-58ab-4870-b0b4-a9c6f529cc36(blockdemo.vectors.editor)" newModel="r:8c82993c-58ab-4870-b0b4-a9c6f529cc36(mbeddr.tutorial.vectors.editor)" />
+    <RenameModel oldModel="r:4c272460-99ea-4d39-8c9a-f1bc63f0c386(blockdemo.vectors.structure)" newModel="r:4c272460-99ea-4d39-8c9a-f1bc63f0c386(mbeddr.tutorial.vectors.structure)" />
+    <RenameModel oldModel="r:84a42df3-f962-48b3-9303-1d28accfd111(blockdemo.vectors.intentions)" newModel="r:84a42df3-f962-48b3-9303-1d28accfd111(mbeddr.tutorial.vectors.intentions)" />
+    <RenameModel oldModel="r:982d5306-9d5e-426f-abf8-1a2ca4a0588a(blockdemo.vectors.behavior)" newModel="r:982d5306-9d5e-426f-abf8-1a2ca4a0588a(mbeddr.tutorial.vectors.behavior)" />
+    <RenameModel oldModel="r:68cc99cf-80f6-492b-9a42-1867c0f128de(blockdemo.vectors.constraints)" newModel="r:68cc99cf-80f6-492b-9a42-1867c0f128de(mbeddr.tutorial.vectors.constraints)" />
+  </StructureModification>
+</history>
+

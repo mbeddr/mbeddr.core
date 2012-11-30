@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<history>
+  <StructureModification>
+    <dependencies>
+      <model index="mwjz" modelUID="r:2d9fd8a8-da37-4db8-afcf-d58c195bf9d3(com.mbeddr.ext.nusmv.structure)" version="1" />
+      <model index="uqsx" modelUID="r:314f787b-45fb-45f4-8500-4fe5d0d8225b(com.mbeddr.ext.nusmv.textGen)" version="-1" />
+      <model index="60ex" modelUID="r:ef5e17af-4092-4e7f-bb42-aaddafb3cb94(com.mbeddr.ext.nusmv.constraints)" version="-1" />
+      <model index="mf1j" modelUID="r:5d727491-5b20-4888-a689-a5fb53fe4d45(com.mbeddr.ext.nusmv.actions)" version="-1" />
+      <model index="2mnk" modelUID="r:0ace25dc-5bc5-4032-8662-8abe86dae060(com.mbeddr.ext.nusmv.generator.template.main@generator)" version="-1" />
+      <model index="2nbd" modelUID="r:ee29ec81-1d70-405a-9ec6-7668dc27ce3a(com.mbeddr.ext.nusmv.behavior)" version="0" />
+      <model index="3php" modelUID="r:bd1eadf1-b61e-42f9-98f0-6718779187dd(com.mbeddr.ext.nusmv.editor)" version="-1" />
+      <model index="ev2y" modelUID="r:fc73fef8-63cc-445f-841b-397fee4a8c02(com.mbeddr.ext.nusmv.typesystem)" version="-1" />
+    </dependencies>
+    <RenameModel oldModel="r:5d727491-5b20-4888-a689-a5fb53fe4d45(com.mbeddr.ext.nusmv.actions)" newModel="r:5d727491-5b20-4888-a689-a5fb53fe4d45(com.mbeddr.analyses.nusmv.actions)" />
+    <RenameModel oldModel="r:ee29ec81-1d70-405a-9ec6-7668dc27ce3a(com.mbeddr.ext.nusmv.behavior)" newModel="r:ee29ec81-1d70-405a-9ec6-7668dc27ce3a(com.mbeddr.analyses.nusmv.behavior)" />
+    <RenameModel oldModel="r:fc73fef8-63cc-445f-841b-397fee4a8c02(com.mbeddr.ext.nusmv.typesystem)" newModel="r:fc73fef8-63cc-445f-841b-397fee4a8c02(com.mbeddr.analyses.nusmv.typesystem)" />
+    <RenameModel oldModel="r:2d9fd8a8-da37-4db8-afcf-d58c195bf9d3(com.mbeddr.ext.nusmv.structure)" newModel="r:2d9fd8a8-da37-4db8-afcf-d58c195bf9d3(com.mbeddr.analyses.nusmv.structure)" />
+    <RenameModel oldModel="r:bd1eadf1-b61e-42f9-98f0-6718779187dd(com.mbeddr.ext.nusmv.editor)" newModel="r:bd1eadf1-b61e-42f9-98f0-6718779187dd(com.mbeddr.analyses.nusmv.editor)" />
+    <RenameModel oldModel="r:ef5e17af-4092-4e7f-bb42-aaddafb3cb94(com.mbeddr.ext.nusmv.constraints)" newModel="r:ef5e17af-4092-4e7f-bb42-aaddafb3cb94(com.mbeddr.analyses.nusmv.constraints)" />
+    <RenameModel oldModel="r:314f787b-45fb-45f4-8500-4fe5d0d8225b(com.mbeddr.ext.nusmv.textGen)" newModel="r:314f787b-45fb-45f4-8500-4fe5d0d8225b(com.mbeddr.analyses.nusmv.textGen)" />
+    <RenameModel oldModel="r:0ace25dc-5bc5-4032-8662-8abe86dae060(com.mbeddr.ext.nusmv.generator.template.main@generator)" newModel="r:0ace25dc-5bc5-4032-8662-8abe86dae060(com.mbeddr.analyses.nusmv.generator.template.generator.template.main@generator)" />
+  </StructureModification>
+</history>
+
