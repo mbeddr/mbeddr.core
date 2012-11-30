@@ -215,6 +215,9 @@
                     <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="7174651526804336223">
                       <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="7174651526804336205" resolveInfo="fileName" />
                     </node>
+                    <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="5734397410852247395">
+                      <property name="value" nameId="tpee.1070475926801" value="Checking decision table" />
+                    </node>
                   </node>
                 </node>
                 <node role="type" roleId="tpee.5680397130376446158" type="tp2q.ListType" typeId="tp2q.1151688443754" id="7174651526804336224">
@@ -496,6 +499,9 @@
                     </node>
                     <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="7174651526804336340">
                       <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="7174651526804336322" resolveInfo="fileName" />
+                    </node>
+                    <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="5734397410852247398">
+                      <property name="value" nameId="tpee.1070475926801" value="Checking switch" />
                     </node>
                   </node>
                 </node>
