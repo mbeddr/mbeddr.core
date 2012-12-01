@@ -4,7 +4,7 @@
     <modelRoot path="${solution_descriptor}/lib/aopalliance.jar">
       <manager moduleId="f3061a53-9226-4cc5-a443-f952ceaf5816" className="jetbrains.mps.baseLanguage.stubs.JavaStubs" />
     </modelRoot>
-    <modelRoot path="${solution_descriptor}/lib/cdt2.jar">
+    <modelRoot path="${solution_descriptor}/lib/cdt.jar">
       <manager moduleId="f3061a53-9226-4cc5-a443-f952ceaf5816" className="jetbrains.mps.baseLanguage.stubs.JavaStubs" />
     </modelRoot>
     <modelRoot path="${solution_descriptor}/lib/guice-3.0.jar">
@@ -33,7 +33,7 @@
     <stubModelEntry path="${solution_descriptor}/lib/aopalliance.jar">
       <manager moduleId="f3061a53-9226-4cc5-a443-f952ceaf5816" className="jetbrains.mps.baseLanguage.stubs.JavaStubs" />
     </stubModelEntry>
-    <stubModelEntry path="${solution_descriptor}/lib/cdt2.jar">
+    <stubModelEntry path="${solution_descriptor}/lib/cdt.jar">
       <manager moduleId="f3061a53-9226-4cc5-a443-f952ceaf5816" className="jetbrains.mps.baseLanguage.stubs.JavaStubs" />
     </stubModelEntry>
     <stubModelEntry path="${solution_descriptor}/lib/guice-3.0.jar">
