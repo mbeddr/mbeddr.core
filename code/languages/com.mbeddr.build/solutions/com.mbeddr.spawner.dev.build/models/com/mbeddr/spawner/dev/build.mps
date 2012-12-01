@@ -165,6 +165,23 @@
             <node role="children" roleId="3ior.7389400916848037006" type="kdzh.BuildMpsLayout_ModuleJars" typeId="kdzh.1265949165890536423" id="2067439475997558020">
               <link role="module" roleId="kdzh.1265949165890536425" targetNodeId="8628756186118765626" resolveInfo="com.mbeddr.spawner" />
             </node>
+            <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_File" typeId="3ior.9126048691955220717" id="4130846447817910129">
+              <node role="path" roleId="3ior.9126048691955220762" type="3ior.BuildSourceMacroRelativePath" typeId="3ior.7389400916848153117" id="4130846447817910131">
+                <link role="macro" roleId="3ior.7389400916848153130" targetNodeId="8628756186118380495" resolveInfo="mbeddr.github.core.home" />
+                <node role="compositePart" roleId="3ior.7321017245477039051" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="4130846447817910132">
+                  <property name="head" nameId="3ior.8618885170173601779" value="tools" />
+                  <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="4130846447817910133">
+                    <property name="head" nameId="3ior.8618885170173601779" value="Eclipse.Debugger" />
+                    <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="4130846447817910134">
+                      <property name="head" nameId="3ior.8618885170173601779" value="lib" />
+                      <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="4130846447817910135">
+                        <property name="head" nameId="3ior.8618885170173601779" value="cdt.jar" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
             <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_File" typeId="3ior.9126048691955220717" id="5497188532610193060">
               <node role="path" roleId="3ior.9126048691955220762" type="3ior.BuildSourceMacroRelativePath" typeId="3ior.7389400916848153117" id="5497188532610193062">
                 <link role="macro" roleId="3ior.7389400916848153130" targetNodeId="8628756186118380495" resolveInfo="mbeddr.github.core.home" />
@@ -176,23 +193,6 @@
                       <property name="head" nameId="3ior.8618885170173601779" value="lib" />
                       <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="5497188532610193066">
                         <property name="head" nameId="3ior.8618885170173601779" value="aopalliance.jar" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_File" typeId="3ior.9126048691955220717" id="5497188532610193075">
-              <node role="path" roleId="3ior.9126048691955220762" type="3ior.BuildSourceMacroRelativePath" typeId="3ior.7389400916848153117" id="5497188532610193077">
-                <link role="macro" roleId="3ior.7389400916848153130" targetNodeId="8628756186118380495" resolveInfo="mbeddr.github.core.home" />
-                <node role="compositePart" roleId="3ior.7321017245477039051" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="5497188532610193078">
-                  <property name="head" nameId="3ior.8618885170173601779" value="tools" />
-                  <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="5497188532610193079">
-                    <property name="head" nameId="3ior.8618885170173601779" value="Eclipse.Debugger" />
-                    <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="5497188532610193080">
-                      <property name="head" nameId="3ior.8618885170173601779" value="lib" />
-                      <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="5497188532610193081">
-                        <property name="head" nameId="3ior.8618885170173601779" value="cdt2.jar" />
                       </node>
                     </node>
                   </node>
@@ -410,7 +410,7 @@
                   <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="5497188532610192997">
                     <property name="head" nameId="3ior.8618885170173601779" value="lib" />
                     <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="5497188532610192998">
-                      <property name="head" nameId="3ior.8618885170173601779" value="cdt2.jar" />
+                      <property name="head" nameId="3ior.8618885170173601779" value="cdt.jar" />
                     </node>
                   </node>
                 </node>
