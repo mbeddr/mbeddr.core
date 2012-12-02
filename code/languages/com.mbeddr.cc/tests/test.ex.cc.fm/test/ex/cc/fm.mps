@@ -167,7 +167,7 @@
     <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="qdv7.FeatureModelConfiguration" typeId="qdv7.661141253149262080" id="6617704999132174955">
       <property name="projectionMode" nameId="qdv7.7455436784495594423" value="2" />
       <link role="featureModel" roleId="qdv7.661141253149262081" targetNodeId="6617704999132170930" resolveInfo="DeploymentConfiguration" />
-      <link role="configModel" roleId="qdv7.7455436784495586129" targetNodeId="6617704999132170935" resolveInfo="Debug" />
+      <link role="configModel" roleId="qdv7.7455436784495586129" targetNodeId="6617704999132170939" resolveInfo="Production" />
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="k146.MessageDefinitionTable" typeId="k146.2688792604367903085" id="6617704999132174956">
       <property name="name" nameId="tpck.1169194664001" value="messages" />
