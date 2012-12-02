@@ -40,7 +40,7 @@
     <option name="version" value="2.5" />
   </component>
   <component name="VcsDirectoryMappings">
-    <mapping directory="$mbeddr.github.core.home$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../.." vcs="Git" />
   </component>
 </project>
 
