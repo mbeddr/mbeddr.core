@@ -360,6 +360,10 @@
       <property name="virtualPackage" nameId="tpck.1193676396447" value="expr.comp" />
       <link role="concept" roleId="1i04.1225194240799" targetNodeId="mj1l.8860443239512129322" resolveInfo="EqualsExpression" />
     </node>
+    <node type="1i04.ConceptBehavior" typeId="1i04.1225194240794" id="8528611498588586298">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="expr.arith.binary" />
+      <link role="concept" roleId="1i04.1225194240799" targetNodeId="mj1l.5962749441518381743" resolveInfo="BitwiseAndExpression" />
+    </node>
   </roots>
   <root id="8860443239512166653">
     <node role="method" roleId="1i04.1225194240805" type="1i04.ConceptMethodDeclaration" typeId="1i04.1225194472830" id="3136162014990199388">
@@ -8869,6 +8873,11 @@
     </node>
     <node role="constructor" roleId="1i04.1225194240801" type="1i04.ConceptConstructorDeclaration" typeId="1i04.1225194413805" id="3592968415811583298">
       <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="3592968415811583299" />
+    </node>
+  </root>
+  <root id="8528611498588586298">
+    <node role="constructor" roleId="1i04.1225194240801" type="1i04.ConceptConstructorDeclaration" typeId="1i04.1225194413805" id="8528611498588586299">
+      <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="8528611498588586300" />
     </node>
   </root>
 </model>
