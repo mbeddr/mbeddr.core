@@ -310,16 +310,141 @@ chapter \todo{ref} to do something about that.
 
 
 
+\subsection{Verifying State Machines}
+
+Just like decision tables, state machines can also be verified. While in
+decision tables the verification is based on SMT solving, the state machine
+verification uses model checking. However, the fundamental approach is similar: 
+
+\begin{itemize}
+  \item Mark a state machine as \ic{verifiable} using an intention
+  \item Verifiable state machines are restricted in some ways, so after marking
+  the state machine as \ic{verifiable}, you may have to refactor it in a way so
+  it is inside the verifiable subset. For example, it is not possible to assign
+  to the same variable more than once during one transition (taking into
+  account all exit and entry actions).
+  \item You can then use the context menu and select \ic{Verify State Machine} to
+  run the verification
+  \item After running the verification, the result is shown in a separate view. 
+\end{itemize}
+
+Model checking requires that users specify a set of properties which the state
+machine must implement. The model checker checks for each property whether it
+holds \emph{in all cases}. If it doesn't, the result of the model checker shows
+a counter example, i.e. one possible execution of the state machine that leads
+to a situation where the property does not hold. In mbeddr, every state machine
+is checked for a specific set of properties \emph{automatically}, so you as the
+user don't have to specify them. These automatic checks include the following:
+
+\begin{itemize}
+  \item Is every state reachable, i.e. is there \emph{some} sequence of events
+  in the state machine that leads into each state. If not, the state is dead and
+  can be removed.
+  \item Is every transition potentially executable, i.e. is there \emph{some}
+  sequence of events that fires each transition. If not, the transition could be
+  removed.
+  \item Are all transitions deterministic, i.e. is it always clear which
+  transition must fire. If not, more than one transition could fire at a given
+  time, and the decision which one to fire is unclear\footnote{In the mbeddr
+  implementation (based on a \ic{switch} statement) the first of these
+  transitions will fire. However, one should not rely on this fact and the
+  verifier marks it as a problem.}.
+  \item The state machines language supports bounded integers (i.e. integers
+  that specify a value range). For each variable that uses a bounded integer
+  type, the verifier checks that the variable actually stays within the
+  specified bounds.
+\end{itemize}
 
 
 
+\parhead{Verifying the FlightAnalyzer Machine} We attach the \ic{verifiable}
+flag to the \ic{FlightAnalyzer} state machine and run the verifier. It has two
+problems. Firt, It claims that the \ic{landing} state has nondeterministic
+transitions. The counter example is this:
+
+\begin{lstlisting}
+State beforeFlight
+in_event: next   next(0, -32768)
+State beforeFlight
+in_event: next   next(1, -32768)
+State airborne
+in_event: next   next(0, 101)
+State landing
+in_event: next   next(0, 0)
+State landed
+in_event: next   next(0, -32768)
+\end{lstlisting}
+
+\greyboxnote{Contrary to intuition, the actually problematic step may not be the
+last one! In the example here, the \ic{next(0, 0)} is the offending situation!}
+
+In this example, in the \ic{landing} state, the \ic{next(0, 0)} event is fired
+and results in non-determinism. Let us look at the code: 
+
+\begin{lstlisting}[language=mbeddr]
+state landing { 
+  on next [tp->speed == 0 mps] -> landed 
+  on next [ ] -> landing { points--; }  
+  on reset [ ] -> beforeFlight 
+} 
+\end{lstlisting}
+
+The first transition fires if \ic{speed == 0}, which is the case for
+\ic{next(0, 0)}. The second one fires in any case. Of course what we wanted to
+express there is that this one should only fire \emph{otherwise}. It the
+generated C code it happens to work correctly because of the ordering of the
+transitions. But in general, the situation is ambiguous: \ic{next(0, 0)}
+potentially fires both. We can fix the problem by adding another guard
+condition (rerun the model checker to test this!):
+
+\begin{lstlisting}[language=mbeddr]
+state landing { 
+  on next [tp->speed == 0 mps] -> landed 
+  on next [tp->speed != 0 mps ] -> landing { points--; }  
+  on reset [ ] -> beforeFlight 
+} 
+\end{lstlisting}
 
 
 
+The second problem is in the \ic{airborne} state. Once again, the actual problem
+is in the second-to-last step: \ic{next(0, 101)}. Here is the respective state:
 
+\begin{lstlisting}[language=mbeddr]
+state airborne { 
+  on next [tp->alt == 0 && tp->speed == 0] -> crashed 
+  on next [tp->alt == 0 && tp->speed > 0] -> landing 
+  on next [tp->speed > 200] -> airborne { points += VERY_HIGH_SPEED; }  
+  on next [tp->speed > 100] -> airborne { points += HIGH_SPEED; }  
+  on reset [ ] -> beforeFlight 
+}
+\end{lstlisting}
 
+The first problem we observe is that transition 4 is also true whenever
+transition 3 is true as well. So we should change transition four to
 
+\begin{lstlisting}[language=mbeddr]
+on next [tp->speed > 100 && tp->speed <= 200] -> 
+   airborne { points += HIGH_SPEED; }
+\end{lstlisting}
 
+However, rerunning the verification still FAILs this state. The real problem is
+an ambiguity between transition 2 and transition four, because we do not check
+for the altitude in transitions 3 and 4. Once again, we imply an ordering of the
+guard conditions ... the C implementation works fine.  Here is the correct
+formulation of the state's transitions:
+
+\begin{lstlisting}[language=mbeddr]
+state airborne { 
+  on next [tp->alt == 0 && tp->speed == 0] -> crashed 
+  on next [tp->alt == 0 && tp->speed > 0] -> landing 
+  on next [tp->alt > 0 && tp->speed > 200] -> 
+        airborne { points += VERY_HIGH_SPEED; } 
+  on next [tp->alt > 0 && speed > 100 && speed <= 200] -> 
+  	    airborne { points += HIGH_SPEED; } 
+  on reset [ ] -> beforeFlight 
+}
+\end{lstlisting}
 
 
 

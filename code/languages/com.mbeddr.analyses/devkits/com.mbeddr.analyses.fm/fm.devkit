@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dev-kit name="com.mbeddr.analyses.fm" uuid="0d9470ba-d59f-4411-a2ce-12f6b6bdec49">
+  <exported-language name="797d0abe-30a5-4698-a9cf-31703733bdc9(com.mbeddr.analyses.yices)" />
+  <exported-language name="ad5c6649-337c-4447-8651-e0cc8f4ffe24(com.mbeddr.analyses.yices.fm)" />
+  <exported-solutions>
+    <exported-solution>13039307-a08f-4bb3-810e-10cbbf8b757b(com.mbeddr.analyses.yices.rt)</exported-solution>
+  </exported-solutions>
+</dev-kit>
+

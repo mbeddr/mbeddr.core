@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<history>
+  <StructureModification>
+    <dependencies>
+      <model index="8tgt" modelUID="r:2bd7a930-4442-47e2-aa1b-24a6aa4ee959(com.mbeddr.ext.statemachine.nusmv.generator.template.utils)" version="-1" />
+      <model index="ei81" modelUID="r:f875bbe0-a546-4212-9c40-20fe2e2195cd(com.mbeddr.ext.statemachines.generator.template.utils)" version="-1" />
+    </dependencies>
+    <move id="ei81.6143134971034377138" to="8tgt.1579201292658953432" />
+    <move id="ei81.6143134971034377096" to="8tgt.1579201292658953390" />
+    <move id="ei81.6143134971034377115" to="8tgt.1579201292658953409" />
+    <move id="ei81.6143134971034377077" to="8tgt.1579201292658953371" />
+    <move id="ei81.6143134971034377127" to="8tgt.1579201292658953421" />
+    <move id="ei81.6143134971034377081" to="8tgt.1579201292658953375" />
+    <move id="ei81.6143134971034377130" to="8tgt.1579201292658953424" />
+    <move id="ei81.6143134971034377076" to="8tgt.1579201292658953370" />
+    <move id="ei81.6143134971034377106" to="8tgt.1579201292658953400" />
+    <move id="ei81.6143134971034377133" to="8tgt.1579201292658953427" />
+    <move id="ei81.6143134971034377078" to="8tgt.1579201292658953372" />
+    <move id="ei81.6143134971034377102" to="8tgt.1579201292658953396" />
+    <move id="ei81.6143134971034377097" to="8tgt.1579201292658953391" />
+    <move id="ei81.6143134971034377105" to="8tgt.1579201292658953399" />
+    <move id="ei81.6143134971034377095" to="8tgt.1579201292658953389" />
+    <move id="ei81.6143134971034377089" to="8tgt.1579201292658953383" />
+    <move id="ei81.6143134971034377114" to="8tgt.1579201292658953408" />
+    <move id="ei81.6143134971034377118" to="8tgt.1579201292658953412" />
+    <move id="ei81.6143134971034377088" to="8tgt.1579201292658953382" />
+    <move id="ei81.6143134971034377094" to="8tgt.1579201292658953388" />
+    <move id="ei81.6143134971034377121" to="8tgt.1579201292658953415" />
+    <move id="ei81.6143134971034377124" to="8tgt.1579201292658953418" />
+    <move id="ei81.6143134971034377111" to="8tgt.1579201292658953405" />
+    <move id="ei81.6143134971034377103" to="8tgt.1579201292658953397" />
+    <move id="ei81.6143134971034377117" to="8tgt.1579201292658953411" />
+    <move id="ei81.6143134971034377129" to="8tgt.1579201292658953423" />
+    <move id="ei81.6143134971034377087" to="8tgt.1579201292658953381" />
+    <move id="ei81.6143134971034377098" to="8tgt.1579201292658953392" />
+    <move id="ei81.6143134971034377136" to="8tgt.1579201292658953430" />
+    <move id="ei81.6143134971034377139" to="8tgt.1579201292658953433" />
+    <move id="ei81.6143134971034377109" to="8tgt.1579201292658953403" />
+    <move id="ei81.6143134971034377101" to="8tgt.1579201292658953395" />
+    <move id="ei81.6143134971034377108" to="8tgt.1579201292658953402" />
+    <move id="ei81.6143134971034377080" to="8tgt.1579201292658953374" />
+    <move id="ei81.6143134971034377085" to="8tgt.1579201292658953379" />
+    <move id="ei81.6143134971034377104" to="8tgt.1579201292658953398" />
+    <move id="ei81.6143134971034377100" to="8tgt.1579201292658953394" />
+    <move id="ei81.6143134971034377140" to="8tgt.1579201292658953434" />
+    <move id="ei81.6143134971034377082" to="8tgt.1579201292658953376" />
+    <move id="ei81.6143134971034377084" to="8tgt.1579201292658953378" />
+    <move id="ei81.6143134971034377091" to="8tgt.1579201292658953385" />
+    <move id="ei81.6143134971034377120" to="8tgt.1579201292658953414" />
+    <move id="ei81.6143134971034377135" to="8tgt.1579201292658953429" />
+    <move id="ei81.6143134971034377113" to="8tgt.1579201292658953407" />
+    <move id="ei81.6143134971034377083" to="8tgt.1579201292658953377" />
+    <move id="ei81.6143134971034377123" to="8tgt.1579201292658953417" />
+    <move id="ei81.6143134971034377122" to="8tgt.1579201292658953416" />
+    <move id="ei81.6143134971034377128" to="8tgt.1579201292658953422" />
+    <move id="ei81.6143134971034377112" to="8tgt.1579201292658953406" />
+    <move id="ei81.6143134971034377099" to="8tgt.1579201292658953393" />
+    <move id="ei81.6143134971034377093" to="8tgt.1579201292658953387" />
+    <move id="ei81.6143134971034377134" to="8tgt.1579201292658953428" />
+    <move id="ei81.6143134971034377119" to="8tgt.1579201292658953413" />
+    <move id="ei81.6143134971034377137" to="8tgt.1579201292658953431" />
+    <move id="ei81.6143134971034377126" to="8tgt.1579201292658953420" />
+    <move id="ei81.6143134971034377079" to="8tgt.1579201292658953373" />
+    <move id="ei81.6143134971034377086" to="8tgt.1579201292658953380" />
+    <move id="ei81.6143134971034377131" to="8tgt.1579201292658953425" />
+    <move id="ei81.6143134971034377092" to="8tgt.1579201292658953386" />
+    <move id="ei81.6143134971034377116" to="8tgt.1579201292658953410" />
+    <move id="ei81.6143134971034377132" to="8tgt.1579201292658953426" />
+    <move id="ei81.6143134971034377141" to="8tgt.1579201292658953435" />
+    <move id="ei81.6143134971034377090" to="8tgt.1579201292658953384" />
+    <move id="ei81.6143134971034377125" to="8tgt.1579201292658953419" />
+    <move id="ei81.6143134971034377107" to="8tgt.1579201292658953401" />
+    <move id="ei81.6143134971034377110" to="8tgt.1579201292658953404" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="kwbe" modelUID="r:f80f017a-62bd-4600-a15e-eede9b604f3e(com.mbeddr.ext.statemachine.nusmv.plugin)" version="0" />
+      <model index="pvh9" modelUID="r:70aa17d3-00fa-40b2-8aa8-1f811988c57d(com.mbeddr.ext.statemachine.nusmv.intentions)" version="0" />
+      <model index="uise" modelUID="r:aefd5806-11e6-4262-8d96-d21450e898ee(com.mbeddr.ext.statemachine.nusmv.editor)" version="0" />
+      <model index="ghnx" modelUID="r:3affeda3-6eb6-4188-a645-c50f83752349(com.mbeddr.ext.statemachine.nusmv.constraints)" version="-1" />
+      <model index="rf0y" modelUID="r:6dba4756-60ae-4f7f-89f3-f6476ec137bc(com.mbeddr.ext.statemachine.nusmv.behavior)" version="-1" />
+      <model index="pszp" modelUID="r:5097c9c6-4a5a-40ee-bd76-4904ba8fa229(com.mbeddr.ext.statemachine.nusmv.structure)" version="17" />
+      <model index="w7u6" modelUID="r:9fff930e-0eef-4088-b9aa-b74c093c9964(com.mbeddr.ext.statemachine.nusmv.typesystem)" version="0" />
+      <model index="8tgt" modelUID="r:2bd7a930-4442-47e2-aa1b-24a6aa4ee959(com.mbeddr.ext.statemachine.nusmv.generator.template.utils)" version="0" />
+      <model index="xw1c" modelUID="r:c93a08cc-9153-4531-a2fb-ea9b95793a16(com.mbeddr.ext.statemachine.nusmv.generator.template.main@generator)" version="0" />
+    </dependencies>
+    <RenameModel oldModel="r:aefd5806-11e6-4262-8d96-d21450e898ee(com.mbeddr.ext.statemachine.nusmv.editor)" newModel="r:aefd5806-11e6-4262-8d96-d21450e898ee(com.mbeddr.analyses.statemachine.nusmv.editor)" />
+    <RenameModel oldModel="r:3affeda3-6eb6-4188-a645-c50f83752349(com.mbeddr.ext.statemachine.nusmv.constraints)" newModel="r:3affeda3-6eb6-4188-a645-c50f83752349(com.mbeddr.analyses.statemachine.nusmv.constraints)" />
+    <RenameModel oldModel="r:5097c9c6-4a5a-40ee-bd76-4904ba8fa229(com.mbeddr.ext.statemachine.nusmv.structure)" newModel="r:5097c9c6-4a5a-40ee-bd76-4904ba8fa229(com.mbeddr.analyses.statemachine.nusmv.structure)" />
+    <RenameModel oldModel="r:f80f017a-62bd-4600-a15e-eede9b604f3e(com.mbeddr.ext.statemachine.nusmv.plugin)" newModel="r:f80f017a-62bd-4600-a15e-eede9b604f3e(com.mbeddr.analyses.statemachine.nusmv.plugin)" />
+    <RenameModel oldModel="r:9fff930e-0eef-4088-b9aa-b74c093c9964(com.mbeddr.ext.statemachine.nusmv.typesystem)" newModel="r:9fff930e-0eef-4088-b9aa-b74c093c9964(com.mbeddr.analyses.statemachine.nusmv.typesystem)" />
+    <RenameModel oldModel="r:6dba4756-60ae-4f7f-89f3-f6476ec137bc(com.mbeddr.ext.statemachine.nusmv.behavior)" newModel="r:6dba4756-60ae-4f7f-89f3-f6476ec137bc(com.mbeddr.analyses.statemachine.nusmv.behavior)" />
+    <RenameModel oldModel="r:70aa17d3-00fa-40b2-8aa8-1f811988c57d(com.mbeddr.ext.statemachine.nusmv.intentions)" newModel="r:70aa17d3-00fa-40b2-8aa8-1f811988c57d(com.mbeddr.analyses.statemachine.nusmv.intentions)" />
+    <RenameModel oldModel="r:2bd7a930-4442-47e2-aa1b-24a6aa4ee959(com.mbeddr.ext.statemachine.nusmv.generator.template.utils)" newModel="r:2bd7a930-4442-47e2-aa1b-24a6aa4ee959(com.mbeddr.analyses.statemachine.nusmv.generator.template.generator.template.utils)" />
+    <RenameModel oldModel="r:c93a08cc-9153-4531-a2fb-ea9b95793a16(com.mbeddr.ext.statemachine.nusmv.generator.template.main@generator)" newModel="r:c93a08cc-9153-4531-a2fb-ea9b95793a16(com.mbeddr.analyses.statemachine.nusmv.generator.template.generator.template.main@generator)" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="pvh9" modelUID="r:70aa17d3-00fa-40b2-8aa8-1f811988c57d(com.mbeddr.analyses.statemachine.nusmv.intentions)" version="1" />
+      <model index="kwbe" modelUID="r:f80f017a-62bd-4600-a15e-eede9b604f3e(com.mbeddr.analyses.statemachine.nusmv.plugin)" version="1" />
+      <model index="uise" modelUID="r:aefd5806-11e6-4262-8d96-d21450e898ee(com.mbeddr.analyses.statemachine.nusmv.editor)" version="1" />
+      <model index="ghnx" modelUID="r:3affeda3-6eb6-4188-a645-c50f83752349(com.mbeddr.analyses.statemachine.nusmv.constraints)" version="0" />
+      <model index="rf0y" modelUID="r:6dba4756-60ae-4f7f-89f3-f6476ec137bc(com.mbeddr.analyses.statemachine.nusmv.behavior)" version="0" />
+      <model index="pszp" modelUID="r:5097c9c6-4a5a-40ee-bd76-4904ba8fa229(com.mbeddr.analyses.statemachine.nusmv.structure)" version="18" />
+      <model index="w7u6" modelUID="r:9fff930e-0eef-4088-b9aa-b74c093c9964(com.mbeddr.analyses.statemachine.nusmv.typesystem)" version="1" />
+      <model index="8tgt" modelUID="r:2bd7a930-4442-47e2-aa1b-24a6aa4ee959(com.mbeddr.analyses.statemachine.nusmv.generator.template.generator.template.utils)" version="1" />
+      <model index="xw1c" modelUID="r:c93a08cc-9153-4531-a2fb-ea9b95793a16(com.mbeddr.analyses.statemachine.nusmv.generator.template.generator.template.main@generator)" version="1" />
+    </dependencies>
+    <RenameModel oldModel="r:5097c9c6-4a5a-40ee-bd76-4904ba8fa229(com.mbeddr.analyses.statemachine.nusmv.structure)" newModel="r:5097c9c6-4a5a-40ee-bd76-4904ba8fa229(com.mbeddr.analyses.nusmv.statemachine.structure)" />
+    <RenameModel oldModel="r:6dba4756-60ae-4f7f-89f3-f6476ec137bc(com.mbeddr.analyses.statemachine.nusmv.behavior)" newModel="r:6dba4756-60ae-4f7f-89f3-f6476ec137bc(com.mbeddr.analyses.nusmv.statemachine.behavior)" />
+    <RenameModel oldModel="r:f80f017a-62bd-4600-a15e-eede9b604f3e(com.mbeddr.analyses.statemachine.nusmv.plugin)" newModel="r:f80f017a-62bd-4600-a15e-eede9b604f3e(com.mbeddr.analyses.nusmv.statemachine.plugin)" />
+    <RenameModel oldModel="r:70aa17d3-00fa-40b2-8aa8-1f811988c57d(com.mbeddr.analyses.statemachine.nusmv.intentions)" newModel="r:70aa17d3-00fa-40b2-8aa8-1f811988c57d(com.mbeddr.analyses.nusmv.statemachine.intentions)" />
+    <RenameModel oldModel="r:9fff930e-0eef-4088-b9aa-b74c093c9964(com.mbeddr.analyses.statemachine.nusmv.typesystem)" newModel="r:9fff930e-0eef-4088-b9aa-b74c093c9964(com.mbeddr.analyses.nusmv.statemachine.typesystem)" />
+    <RenameModel oldModel="r:3affeda3-6eb6-4188-a645-c50f83752349(com.mbeddr.analyses.statemachine.nusmv.constraints)" newModel="r:3affeda3-6eb6-4188-a645-c50f83752349(com.mbeddr.analyses.nusmv.statemachine.constraints)" />
+    <RenameModel oldModel="r:aefd5806-11e6-4262-8d96-d21450e898ee(com.mbeddr.analyses.statemachine.nusmv.editor)" newModel="r:aefd5806-11e6-4262-8d96-d21450e898ee(com.mbeddr.analyses.nusmv.statemachine.editor)" />
+    <RenameModel oldModel="r:2bd7a930-4442-47e2-aa1b-24a6aa4ee959(com.mbeddr.analyses.statemachine.nusmv.generator.template.generator.template.utils)" newModel="r:2bd7a930-4442-47e2-aa1b-24a6aa4ee959(com.mbeddr.analyses.nusmv.statemachine.generator.template.generator.template.generator.template.utils)" />
+    <RenameModel oldModel="r:c93a08cc-9153-4531-a2fb-ea9b95793a16(com.mbeddr.analyses.statemachine.nusmv.generator.template.generator.template.main@generator)" newModel="r:c93a08cc-9153-4531-a2fb-ea9b95793a16(com.mbeddr.analyses.nusmv.statemachine.generator.template.generator.template.generator.template.main@generator)" />
+  </StructureModification>
+</history>
+

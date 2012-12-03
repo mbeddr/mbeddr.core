@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<history>
+  <StructureModification>
+    <dependencies>
+      <model index="yyr" modelUID="r:f0b1aa98-3972-4323-92a8-3c8c0a951134(com.mbeddr.ext.dectabyices.typesystem)" version="-1" />
+      <model index="au6w" modelUID="r:e8e7ae23-b344-4420-837a-0d3e728cb865(com.mbeddr.ext.dectabyices.behavior)" version="-1" />
+      <model index="haxe" modelUID="r:08d0a0bc-333b-480b-9f25-2b8dfe3d9ea8(com.mbeddr.ext.dectabyices.plugin.analysis_utils)" version="-1" />
+      <model index="4ppx" modelUID="r:305839b2-216a-43f6-a7c7-eadeb442c6af(com.mbeddr.ext.dectabyices.editor)" version="-1" />
+      <model index="kogb" modelUID="r:71a3274b-bf2a-43ad-98d4-a5c33ece8dee(com.mbeddr.ext.dectabyices.constraints)" version="-1" />
+      <model index="o4ko" modelUID="r:3b74f196-2fa2-402c-83a3-1b40739a14d2(com.mbeddr.ext.dectabyices.structure)" version="-1" />
+      <model index="q0jg" modelUID="r:0d2e7505-95e8-4ff8-8d68-fcb028dfcc71(com.mbeddr.ext.dectabyices.plugin.analysis_result)" version="-1" />
+      <model index="d9km" modelUID="r:7e06cbd4-0af8-4e06-a1e7-c5b63b8743d2(com.mbeddr.ext.dectabyices.plugin)" version="0" />
+      <model index="v584" modelUID="r:ecda0098-4fa3-4490-8e10-9ee7f0cc0edb(com.mbeddr.ext.dectabyices.generator.template.main@generator)" version="0" />
+    </dependencies>
+    <RenameModel oldModel="r:f0b1aa98-3972-4323-92a8-3c8c0a951134(com.mbeddr.ext.dectabyices.typesystem)" newModel="r:f0b1aa98-3972-4323-92a8-3c8c0a951134(com.mbeddr.analyses.dectabyices.typesystem)" />
+    <RenameModel oldModel="r:3b74f196-2fa2-402c-83a3-1b40739a14d2(com.mbeddr.ext.dectabyices.structure)" newModel="r:3b74f196-2fa2-402c-83a3-1b40739a14d2(com.mbeddr.analyses.dectabyices.structure)" />
+    <RenameModel oldModel="r:305839b2-216a-43f6-a7c7-eadeb442c6af(com.mbeddr.ext.dectabyices.editor)" newModel="r:305839b2-216a-43f6-a7c7-eadeb442c6af(com.mbeddr.analyses.dectabyices.editor)" />
+    <RenameModel oldModel="r:08d0a0bc-333b-480b-9f25-2b8dfe3d9ea8(com.mbeddr.ext.dectabyices.plugin.analysis_utils)" newModel="r:08d0a0bc-333b-480b-9f25-2b8dfe3d9ea8(com.mbeddr.analyses.dectabyices.plugin.analysis_utils)" />
+    <RenameModel oldModel="r:0d2e7505-95e8-4ff8-8d68-fcb028dfcc71(com.mbeddr.ext.dectabyices.plugin.analysis_result)" newModel="r:0d2e7505-95e8-4ff8-8d68-fcb028dfcc71(com.mbeddr.analyses.dectabyices.plugin.analysis_result)" />
+    <RenameModel oldModel="r:7e06cbd4-0af8-4e06-a1e7-c5b63b8743d2(com.mbeddr.ext.dectabyices.plugin)" newModel="r:7e06cbd4-0af8-4e06-a1e7-c5b63b8743d2(com.mbeddr.analyses.dectabyices.plugin)" />
+    <RenameModel oldModel="r:e8e7ae23-b344-4420-837a-0d3e728cb865(com.mbeddr.ext.dectabyices.behavior)" newModel="r:e8e7ae23-b344-4420-837a-0d3e728cb865(com.mbeddr.analyses.dectabyices.behavior)" />
+    <RenameModel oldModel="r:71a3274b-bf2a-43ad-98d4-a5c33ece8dee(com.mbeddr.ext.dectabyices.constraints)" newModel="r:71a3274b-bf2a-43ad-98d4-a5c33ece8dee(com.mbeddr.analyses.dectabyices.constraints)" />
+    <RenameModel oldModel="r:ecda0098-4fa3-4490-8e10-9ee7f0cc0edb(com.mbeddr.ext.dectabyices.generator.template.main@generator)" newModel="r:ecda0098-4fa3-4490-8e10-9ee7f0cc0edb(com.mbeddr.analyses.dectabyices.generator.template.generator.template.main@generator)" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="yyr" modelUID="r:f0b1aa98-3972-4323-92a8-3c8c0a951134(com.mbeddr.analyses.dectabyices.typesystem)" version="0" />
+      <model index="au6w" modelUID="r:e8e7ae23-b344-4420-837a-0d3e728cb865(com.mbeddr.analyses.dectabyices.behavior)" version="0" />
+      <model index="jad6" modelUID="r:e53f9711-7814-4067-a91d-9819ba966155(com.mbeddr.analyses.dectabyices.plugin)" version="-1" />
+      <model index="haxe" modelUID="r:08d0a0bc-333b-480b-9f25-2b8dfe3d9ea8(com.mbeddr.analyses.dectabyices.plugin.analysis_utils)" version="0" />
+      <model index="kogb" modelUID="r:71a3274b-bf2a-43ad-98d4-a5c33ece8dee(com.mbeddr.analyses.dectabyices.constraints)" version="0" />
+      <model index="4ppx" modelUID="r:305839b2-216a-43f6-a7c7-eadeb442c6af(com.mbeddr.analyses.dectabyices.editor)" version="0" />
+      <model index="o4ko" modelUID="r:3b74f196-2fa2-402c-83a3-1b40739a14d2(com.mbeddr.analyses.dectabyices.structure)" version="0" />
+      <model index="q0jg" modelUID="r:0d2e7505-95e8-4ff8-8d68-fcb028dfcc71(com.mbeddr.analyses.dectabyices.plugin.analysis_result)" version="0" />
+      <model index="v584" modelUID="r:ecda0098-4fa3-4490-8e10-9ee7f0cc0edb(com.mbeddr.analyses.dectabyices.generator.template.generator.template.main@generator)" version="1" />
+    </dependencies>
+    <RenameModel oldModel="r:08d0a0bc-333b-480b-9f25-2b8dfe3d9ea8(com.mbeddr.analyses.dectabyices.plugin.analysis_utils)" newModel="r:08d0a0bc-333b-480b-9f25-2b8dfe3d9ea8(com.mbeddr.analyses.yices.dectab.plugin.analysis_utils)" />
+    <RenameModel oldModel="r:e53f9711-7814-4067-a91d-9819ba966155(com.mbeddr.analyses.dectabyices.plugin)" newModel="r:e53f9711-7814-4067-a91d-9819ba966155(com.mbeddr.analyses.yices.dectab.plugin)" />
+    <RenameModel oldModel="r:0d2e7505-95e8-4ff8-8d68-fcb028dfcc71(com.mbeddr.analyses.dectabyices.plugin.analysis_result)" newModel="r:0d2e7505-95e8-4ff8-8d68-fcb028dfcc71(com.mbeddr.analyses.yices.dectab.plugin.analysis_result)" />
+    <RenameModel oldModel="r:e8e7ae23-b344-4420-837a-0d3e728cb865(com.mbeddr.analyses.dectabyices.behavior)" newModel="r:e8e7ae23-b344-4420-837a-0d3e728cb865(com.mbeddr.analyses.yices.dectab.behavior)" />
+    <RenameModel oldModel="r:305839b2-216a-43f6-a7c7-eadeb442c6af(com.mbeddr.analyses.dectabyices.editor)" newModel="r:305839b2-216a-43f6-a7c7-eadeb442c6af(com.mbeddr.analyses.yices.dectab.editor)" />
+    <RenameModel oldModel="r:3b74f196-2fa2-402c-83a3-1b40739a14d2(com.mbeddr.analyses.dectabyices.structure)" newModel="r:3b74f196-2fa2-402c-83a3-1b40739a14d2(com.mbeddr.analyses.yices.dectab.structure)" />
+    <RenameModel oldModel="r:71a3274b-bf2a-43ad-98d4-a5c33ece8dee(com.mbeddr.analyses.dectabyices.constraints)" newModel="r:71a3274b-bf2a-43ad-98d4-a5c33ece8dee(com.mbeddr.analyses.yices.dectab.constraints)" />
+    <RenameModel oldModel="r:f0b1aa98-3972-4323-92a8-3c8c0a951134(com.mbeddr.analyses.dectabyices.typesystem)" newModel="r:f0b1aa98-3972-4323-92a8-3c8c0a951134(com.mbeddr.analyses.yices.dectab.typesystem)" />
+    <RenameModel oldModel="r:ecda0098-4fa3-4490-8e10-9ee7f0cc0edb(com.mbeddr.analyses.dectabyices.generator.template.generator.template.main@generator)" newModel="r:ecda0098-4fa3-4490-8e10-9ee7f0cc0edb(com.mbeddr.analyses.yices.dectab.generator.template.generator.template.generator.template.main@generator)" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="o4ko" modelUID="r:3b74f196-2fa2-402c-83a3-1b40739a14d2(com.mbeddr.analyses.yices.dectab.structure)" version="1" />
+    </dependencies>
+    <rename id="o4ko.8132151755547132154" type="CONCEPT" from="DecTabVerifiable" to="VerifiableAttribute" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="o4ko" modelUID="r:3b74f196-2fa2-402c-83a3-1b40739a14d2(com.mbeddr.analyses.yices.dectab.structure)" version="2" />
+    </dependencies>
+    <rename id="o4ko.8132151755547132154" type="CONCEPT" from="VerifiableAttribute" to="DecTabVerifiableAttribute" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="o4ko" modelUID="r:3b74f196-2fa2-402c-83a3-1b40739a14d2(com.mbeddr.analyses.yices.dectab.structure)" version="3" />
+    </dependencies>
+    <rename id="o4ko.5780134359532729279" type="CONCEPT" from="DecTabVerifiableAttribute" to="GSwitchVerifiableAttribute" />
+  </StructureModification>
+</history>
+

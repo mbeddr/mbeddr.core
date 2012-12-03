@@ -5,6 +5,7 @@
   </models>
   <sourcePath />
   <dependencies>
+    <dependency reexport="false">4c28f257-18f6-416e-b37b-fa69eba1866b(com.mbeddr.analyses.dev.build)</dependency>
     <dependency reexport="false">069b04b3-7338-4781-80fa-9e8b854877d2(com.mbeddr.cc.dev.build)</dependency>
     <dependency reexport="false">7f0575ee-ce26-49b7-a897-0e0b348b06af(com.mbeddr.core.dev.build)</dependency>
     <dependency reexport="false">16f4da20-e2ec-436c-9423-ccaadb6e9c38(com.mbeddr.debugger.dev.build)</dependency>

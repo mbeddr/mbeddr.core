@@ -1,0 +1,465 @@
+\section{OS Configuration}
+
+\greyboxnote{The code for this example can be found in the tutorial in the
+\ic{mbeddr.tutorial.osconfig.*} languages.}
+
+
+In this section we discuss the development of external DSLs (i.e. new languages
+that are not directly related to C). In the chapter we also discuss the
+integration of such a language with mbeddr C after the fact. As an example we
+use operating system configuration, something that is necessary in many
+scenarios, among them the Lego Mindstorms/OSEK case study discussed from the
+website:
+
+\ \ \ \ic{http://mbeddr.wordpress.com/further-reading/}
+
+In this case study we have built an implementation of the OIL language used for
+configuring the OSEK operating system. Here is an screenshot with an example OIL
+file. It configures all kinds of aspects of the OS, including tasks, events,
+various flags and the threadng model.
+
+\begin{center} 
+  \includegraphics[scale=0.5]{figures/tutorial/oil0.png}
+\end{center}
+
+
+
+\subsection{A DSL for OS Configuration}
+
+In this example we build a simplified version of such a language. For now,
+the operating system configuration DSL essentially defines a set of tasks:
+
+
+\begin{lstlisting}[morekeywords={OS, Config, task, prio}]
+OS Config                           
+------------------------------------
+                                    
+task mainTask prio = 1              
+task eventHandler prio = 2          
+task emergencyHandler prio = 3      
+\end{lstlisting}
+
+
+
+\parhead{A New Language} We create a new language \ic{mbeddr.tutorial.osconfig}
+using the $New \rightarrow Language$ menu item on the project. Note that this
+language does \emph{not} extend any other language. It is completely standaline,
+a completely separate DSL developed with MPS -- no relationship to mbeddr.
+
+Unfortunately because of the way MPS handles cross-model generation, you do have
+to create a dependency to a language so you can implement an interface (see
+next paragraph below) that makes this language play well with the transformation
+schedule. So please create an extends dependency on the \ic{com.mbeddr.base}
+language.
+
+\parhead{Structure} In the language we create a new concept \ic{OSConfig}. This
+is the concept that contains a complete OS configuration and should be useable
+as a root node inside models. This is why we set its \ic{instance can be root}
+property to \ic{true}. We also implement \ic{IGeneratesCodeForIDE}; this is the
+interface that makes this concept play well with mbeddr's cross-model code
+generation (mentioned in the previous paragraph):
+
+\begin{lstlisting}[language=mps]
+concept OSConfig extends BaseConcept
+                 implements IGeneratesCodeForIDE
+  instance can be root: true        
+\end{lstlisting}
+
+We also create a new concept interface \ic{IOSConfigContents}. We make it extend
+from \ic{INamedConcept} to give each instance a name:
+
+\begin{lstlisting}[language=mps]
+interface concept IOSConfigContents extends INamedConcept
+\end{lstlisting}
+
+We can now go back to the \ic{OSConfig} and add child collection \ic{contents}
+of type \ic{IOSConfigContents}:
+
+\begin{lstlisting}[language=mps]
+concept OSConfig extends BaseConcept
+  instance can be root: true
+  children        
+    IOSConfigContents contents 0..n
+\end{lstlisting}
+                                    
+Let us now create a concrete concept that represents some kind of configuration
+content: the task definition:
+
+\begin{lstlisting}[language=mps]
+concept TaskDef extends BaseConcept         
+                implements IOSConfigContents
+  properties:                               
+    prio : integer                            
+\end{lstlisting}
+
+\parhead{Editors} The interface gets no editor, of course. For the task
+definition we simply define an indent collection with the \ic{task} keyword, the
+name and the priority:
+
+\begin{center} 
+  \includegraphics[scale=0.5]{figures/tutorial/taskdefEditor.png}
+\end{center}
+
+Finally, the editor for the \ic{OSConfig} itself we define a vertical list that
+holds the title, a line, a blank line (a constant with a space in it) and the
+vertical list of the \ic{contents} child collection.
+
+\begin{center} 
+  \includegraphics[scale=0.5]{figures/tutorial/osconfigEditor.png}
+\end{center}
+
+\parhead{Text Generator} So far all languages we have developed were extensions
+of a base language. The generator then was a transformation back to the base
+language. In case of our operating system configuration there is no base
+language -- we have to generate text directly.
+
+Text generators are different from the generators we have seen so far; those are
+actually model-to-model transformations since they map one MPS tree onto another
+one. For text generators we really just write into a text buffer. The language
+to do this is relatively simple. However, since we build text generators only
+for low-level base languages, this language really is good enough. 
+
+So let's get started with the text generator for \ic{OSConfig}. Open the
+structure editor for the \ic{OSConfig} concept and press the little \ic{+} at
+the bottom left of the editor window and add a new Textgen conponent. Here is
+the code for it:
+
+
+\begin{lstlisting}[language=mps, morekeywords={text, gen, component,
+extension, encoding, append}] 
+text gen component for concept OSConfig { 
+  extension : (node)->string { 
+    "osconfig"; 
+  } 
+  encoding : utf-8 
+ 
+  (node, context, buffer)->void { 
+    append {OSConfig} \n ; 
+    append \n ; 
+    foreach c in node.contents { 
+      append ${c} \n ; 
+    } 
+  } 
+}
+\end{lstlisting}
+
+In this texgen component we specify the encoding, the file extension as well as
+the contents of the file. The code involving the \ic{append} statements should
+be clear. Notice that we did \emph{not} specify the name of the file (only its
+extension!). However, our \ic{OSConfig} doesn't have a name. So this won't work!
+We have to give a name to \ic{OSConfig}.
+
+To do so, go back to the structure of \ic{OSConfig} and make the concept
+implement \ic{INamedConcept}. However, we don't really want to manually enter
+the name for each of these things; instead, the name of the \ic{OSConfig} should
+automatically be the name of the model in which it resides. You can achieve this
+by implementing a getter for the name in the constraints section:
+
+
+\begin{lstlisting}[language=mps, morekeywords={property, get, is, valid}]
+concept constraints OSConfig { 
+   
+  property {name} 
+    get:(node, scope)->string { 
+      node.model.name; 
+    } 
+    set:<default> 
+    is valid:<default> 
+}
+\end{lstlisting}
+
+We also have to implement the textgen for the \ic{TaskDef}. It is really
+trivial:
+
+\begin{lstlisting}[language=mps, morekeywords={text, gen, component,
+extension, encoding, append}]
+text gen component for concept TaskDef { 
+  (node, context, buffer)->void { 
+    append {task} ${node.name} { } {(} ${node.prio + ""} {}} ; 
+  } 
+}
+\end{lstlisting}
+
+You can now regenerate your model and, next to the C code, you should also get
+a \ic{.osconfig} file that contains the operating system configuration.
+
+
+
+\subsection{Connecting to C}
+
+The language developed so far is completely independent of mbeddr C (even
+though for technical reasons it depends on \ic{com.mbeddr.base} for the
+\ic{IGeneratesCodeToIDE} interface). However, we may still want to refer to
+concepts defined in that language from C code. 
+
+In our example, we may want to provide a task implementation in C that
+corresponds to the task definitions in the OS configuration. In classical C, you
+may have to define a function that has the same name as the task and use a
+specific signature. Maybe some kind of special modifier is necessary. While we
+may generate such code (see below), we want to provide a better programming
+experience to the end user. In the code below you can see the new keyword
+\ic{task}; it represent a task implementation. The name behind it
+(\ic{nameTask}) isn't just a name. Instead it is a reference to a task
+definition in an OS config file. Pressing \ic{Ctrl-Space} will code-complete to
+all available task definitions.
+
+
+\begin{lstlisting}[language=mbeddr, morekeywords={task}]
+module Tasks imports nothing { 
+   
+  void aHelperFunction() { } 
+   
+  task mainTask { 
+    // here is some code that implements the task 
+    int8 aVariable = 10; 
+    aHelperFunction(); 
+  }
+}
+\end{lstlisting}
+
+
+
+
+\parhead{Another New Language} We create a new language
+\ic{mbeddr.tutorial.osconfig.cimpl}. It acts as the adapter between mbeddr C and
+the OS configuration. To this end it extends these three languages:
+
+\begin{center} 
+  \includegraphics[scale=0.5]{figures/tutorial/osconfigcimpl.png}
+\end{center}
+ 
+
+\parhead{Structure} We create a new concept \ic{TaskImpl} that implements
+\ic{IModuleContent} so it can be used inside modules. It has a single reference
+to a \ic{TaskDef} as well as a \ic{StatementList} for the body:
+
+
+\begin{lstlisting}[language=mps, morekeywords={implements}]
+concept TaskImpl extends BaseConcept      
+                 implements IModuleContent
+  children:                               
+    StatementList body  1
+                                          
+  references:                             
+    TaskDef       task  1      
+                                          
+  concept properties:                     
+    alias = task                            
+\end{lstlisting}
+                                          
+Note that we specify an alias for the concept even though it is technically a
+smart reference (it has exactly one reference). However, for this guy we do
+\emph{not} want to trigger the special editor behavior. Instead we want the user
+to first create a \ic{TaskImpl} node by typing \ic{task} in a module and then
+select the reference to the \ic{TaskDef}.
+
+Normally we would have to define a scope for the \ic{task} reference. However,
+the default behavior (which puts all the nodes in the current model into the
+scope) is exactly what we want so we don't have to do anything.
+
+\parhead{Generator} Let us assume that the compiler for the OS we use in this
+example (some kind of fictional OSEK) expects task implementation function to
+use a special syntax: the example \ic{mainTask} must be translated as follows:
+
+\begin{lstlisting}[language=mps, morekeywords={implements}]
+task(mainTask) void Tasks_taskimpl_mainTask(void) {
+  // here is some code that implements the task
+  int8_t aVariable = 10;
+  Tasks_aHelperFunction();
+}
+\end{lstlisting}
+
+To create this function we define a generator with a reduction rule that looks
+as follows:
+
+
+\begin{center} 
+  \includegraphics[width=\columnwidth]{figures/tutorial/taskimplreduction.png}
+\end{center}
+
+The generator uses a property macro to adapt the name, as well as a
+\ic{COPY\_SRCL} macro to copy in all the statements of the body. We also add a
+special modifier to the function. Modifiers can be added via an intention
+(\ic{Alt-Enter}). The \ic{[...]} modifier accepts arbitrary text between the
+brackets and then just outputs that text during text generation. We use the
+\ic{taskPrefix} dummy text in the template and then replace it with the
+following macro expression:
+
+\begin{lstlisting}
+"task(" + node.task.name + ")";
+\end{lstlisting}
+
+
+
+\subsection{Memory Layout}
+
+Let us extend the OS config DSL with a way to define memory layouts. Here is
+some example code:
+
+\begin{lstlisting}[morekeywords={OS, config, task, prio, memory, layout, region,
+endOf, startOf, sizeOf}] 
+OS Config                                                                                                                                    
+------------------------------------                                                                                                         
+                                                                                                                                             
+task mainTask prio = 1                                                                                                                       
+task eventHandler prio = 2                                                                                                                   
+task emergencyHandler prio = 3                                                                                                               
+memory layout { 
+  region ram: 0..1024 
+  region eprom: endOf(ram)..2048 
+  region devices: endOf(eprom)..startOf(devices) + sizeOf(ram) * 2 
+}
+\end{lstlisting}
+
+Note how we have added additional contents to the os config file and also reuse
+C expressions within the regions -- extended with new expressions to refer to
+the start, end and size of other regions.
+
+\parhead{Yet another Language} We create another language to demonstrate how an
+external DSL can be extended using specific concepts from C without modifying
+the original OS configuration DSL. We create a new language
+\ic{mbeddr.tutorial.osconfig.memory}. That new language extends
+\ic{mbeddr.tutorial.osconfig} as well as \ic{com.mbeddr.core.ex- pressions.}
+
+
+\parhead{Structure} The \ic{MemoryLayout} implements \ic{IOSContents} so it can
+be plugged into the \ic{contents} collection of an \ic{OSConfig}. It then
+contains a collection of \ic{Region}s. Each region has a name (via the usual
+interface) and an \ic{Expression} for the start and the end of the region.
+Since our language extends the C expression language we can use \ic{Expression}
+here:
+
+\begin{lstlisting}[language=mps] 
+concept Region extends BaseConcept         
+               implements INamedConcept    
+                                           
+  children:                                
+    Expression startsAt 1
+    Expression endsAt   1  
+                                           
+  concept properties:                      
+    alias = region                           
+\end{lstlisting} 
+
+The \ic{startOf(..)}, \ic{endOf(..)} and \ic{sizeOf(..)} expressions are new
+expressions contributed by this language. All three are essentially similar:
+they extend \ic{Expression} and have a single reference to a \ic{Region}. They
+also have an alias to prevent smart-reference editor behavior in the editor:
+
+\begin{lstlisting}[language=mps] 
+concept EndOfExpr extends Expression 
+                  implements <none>  
+                                     
+  references:                        
+    Region region 1 specializes: <none>
+                                     
+  concept properties:                
+    alias = endOf                      
+\end{lstlisting} 
+
+
+\parhead{Editor} The editors for all of these concepts are straight forward
+based on what we have defined in the tutorials so far. A few remarks. The
+first one concerns the fact that when you create a new \ic{memory layout},
+between the two curlies it doesn't say \ic{<no regions>} as would be MPS'
+default. We have achieved this by using an empty constant as the \ic{empty cell}
+for the \ic{regions} collection in the editor of \ic{MemoryLayout}. Also, we
+have set the \ic{editable: true} style attribute.
+
+Second, we have used an indent child collection (\ic{(- .. -)}) for the regions,
+but still get indentation and each region on a new line. We do that by setting
+the following style attributes on the collection cell \ic{(-} itself:
+
+\begin{lstlisting}[language=mps] 
+indent-layout-on-new-line : true      
+indent-layout-indent : true           
+indent-layout-new-line-children : true 
+\end{lstlisting} 
+
+Finally, you may have noticed that there are no spaces on either side of the
+\ic{..} in the region, or between the paranthesis and the region in the three
+new expressions. We do that by setting the \ic{puctuation-left: true} and
+\ic{puctuation-right: true} style attributes at the respective places. Marking
+something as "punctuation" removes the space on that side. Note that you should
+ever only set these attributes on constants -- otherwise strange things can
+happen (MPS Bug!).
+
+
+\parhead{Type System} The types of the \ic{startsAt} and \ic{endsAt} properties
+for regions must be defined. We can do this with the rule below. In both cases
+we express that the type of the respective property must be \ic{uint64} or any
+of its shorter subtypes.
+
+\begin{lstlisting}[language=mps, morekeywords={infer}] 
+rule typeof_Region {                                                                                                          
+  applicable for concept = Region as r                                                                                        
+                                                                                                                              
+  do {                                                                                                                        
+    infer typeof(r.startsAt) :<=: new node<UnsignedInt64tType>(); 
+    infer typeof(r.endsAt) :<=: new node<UnsignedInt64tType>();
+  }                                                                                                                           
+}                                                                                                                              
+\end{lstlisting} 
+
+The type for the \ic{EndOfExpr} and the \ic{StartOfExpr} is simple as well; it
+is simply the type of the respective expression of the target region:
+
+\begin{lstlisting}[language=mps] 
+typeof(endOfExpr) :==: typeof(endOfExpr.region.startsAt);
+\end{lstlisting} 
+
+For the \ic{SizeOfExpr} it is a bit more interesting, since the type has to be
+the common supertype of the start and the end (we essentially build the
+difference, hence both types play a role). We can express this with the
+following approach:
+
+\begin{lstlisting}[language=mps, morekeywords={infer}] 
+rule typeof_SizeOfExpr {                                                                                  
+  applicable for concept = SizeOfExpr as soe                                                              
+  overrides false                                                                                         
+                                                                                                          
+  do {                                                                                                    
+    infer typeof(soe) :>=: typeof(soe.region.startsAt); 
+    infer typeof(soe) :>=: typeof(soe.region.endsAt);
+  }                                                                                                       
+}                                                                                                         
+\end{lstlisting}
+
+Notice how we define \emph{two} typing rules for the same node (\ic{soe}). In
+both we express a same-or-more-general-type relationship (\ic{:>=:}) to the
+respective property. The only way how the type system engine can make
+\emph{both} of these rules true is by assigning the common supertype of the two
+properties to \ic{typeof(soe)} -- which is exactly what we wanted.
+
+\parhead{Scopes and Constraints} First of all we have to make sure that the new
+expressions (\ic{startOf(..)}, \ic{endOf(..)} and \ic{sizeOf(..)}) can only be
+used below a \ic{MemoryLayout}. Since this is the same for all three of them we
+have introduced a common superconcept. The constraint is defined for that one:
+
+\begin{lstlisting}[language=mps, deletekeywords={link, scope}] 
+concept constraints RegionRefExpr { 
+  can be child 
+    (node, parentNode, link, childConcept, scope, operationContext)->boolean { 
+      parentNode.ancestor<concept = MemoryLayout>.isNotNull; 
+    } 
+}
+\end{lstlisting}
+
+This superconcept has also gotten the reference to the target \ic{Region} so we
+can define the scope for that reference generically as well:
+
+\begin{lstlisting}[language=mps, morekeywords={link, scope}] 
+link {region} 
+  scope: 
+    (... , enclosingNode, ...)->join(ISearchScope | sequence<node<Region>>) {
+      enclosingNode.ancestor<concept = MemoryLayout>.regions; 
+    } 
+\end{lstlisting}
+
+\parhead{Generator} We will not define a generator for this extension. The point
+of this tutorial was to demonstrate the integration of various languages.
+
+
+
+
+

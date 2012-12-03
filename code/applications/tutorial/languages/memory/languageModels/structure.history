@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<history>
+  <StructureModification>
+    <dependencies>
+      <model index="wlut" modelUID="r:39f56ab1-7cb7-441d-9f40-9b3dac9d6334(mbeddr.tutotial.osconfig.memory.structure)" version="-1" />
+    </dependencies>
+    <rename id="wlut.5485104033530015112" type="CONCEPT" from="EndOfExpr" to="StartOfExpr" />
+  </StructureModification>
+</history>
+

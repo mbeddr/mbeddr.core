@@ -21,3 +21,7 @@ cd ..
 cd com.mbeddr.ext
 call ant build-languages
 cd ..
+
+cd com.mbeddr.analyses
+call ant build-languages
+cd ..

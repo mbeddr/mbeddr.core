@@ -3,12 +3,21 @@
 
 PROC_RET=0
 
-cd solutions/mbeddr.tutorial.main/source_gen/mbeddr/tutorial/main/m1/
+cd solutions/mbeddr.tutorial.main/source_gen/mbeddr/tutorial/main/
 
 echo -------------------------------------
-echo mbeddr tutorial
+echo mbeddr tutorial - defaultExtensions
+cd defaultExtensions
 make test
 PROC_RET=$(($?+$PROC_RET))
+cd ..
+
+echo -------------------------------------
+echo mbeddr tutorial - newLanguages
+cd newLanguages
+make test
+PROC_RET=$(($?+$PROC_RET))
+cd ..
 
 
 
