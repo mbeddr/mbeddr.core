@@ -126,6 +126,27 @@ cd staticWiringSMInComps
 make test
 PROC_RET=$(($?+$PROC_RET))
 
+echo -------------------------------------
+echo Strict Statemachines
+cd ../
+cd strictness
+make test
+PROC_RET=$(($?+$PROC_RET))
+
+echo -------------------------------------
+echo compositeSM
+cd ../
+cd compositeSM
+make test
+PROC_RET=$(($?+$PROC_RET))
+
+echo -------------------------------------
+echo hello world
+cd ../
+cd helloWorld
+make test
+PROC_RET=$(($?+$PROC_RET))
+
 
 cd ../../../../
 cd tests/test.ex.ext.comp_mocking/source_gen/test/ex/ext/comp_mocking/m1
@@ -135,7 +156,7 @@ echo Mocking m1
 cd ../m1
 make test
 PROC_RET=$(($?+$PROC_RET))
-
+ 
 echo -------------------------------------
 echo Mocking m2
 cd ../m2

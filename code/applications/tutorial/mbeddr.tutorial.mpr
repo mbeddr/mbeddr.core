@@ -12,7 +12,9 @@
       <modulePath path="${project}/languages/foreach/foreach.mpl" folder="" />
       <modulePath path="${project}/languages/heap/heap.mpl" folder="" />
       <modulePath path="${project}/languages/memory/memory.mpl" folder="" />
+      <modulePath path="${project}/languages/metadata/metadata.mpl" folder="" />
       <modulePath path="${project}/languages/osconfig/osconfig.mpl" folder="" />
+      <modulePath path="${project}/languages/registers/registers.mpl" />
       <modulePath path="${project}/languages/vectors/vectors.mpl" />
       <modulePath path="${project}/solutions/mbeddr.tutorial.main/mbeddr.tutorial.main.msd" />
       <modulePath path="${project}/solutions/mbeddr.tutorial.typesystemtests/typesystemtests.msd" folder="" />
@@ -22,14 +24,6 @@
   <component name="ProjectLibraryManager">
     <option name="libraries">
       <map>
-        <entry key="mbeddr.assembla">
-          <value>
-            <Library>
-              <option name="name" value="mbeddr.assembla" />
-              <option name="path" value="${mbeddr.assembla.ext.home}/code/languages" />
-            </Library>
-          </value>
-        </entry>
         <entry key="mbeddr.core">
           <value>
             <Library>

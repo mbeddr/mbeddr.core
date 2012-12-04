@@ -51,6 +51,9 @@
     <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="440773076688628187">
       <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="51wr.440773076688628186" resolveInfo="NothingPlatform" />
     </node>
+    <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="7156635943885245831">
+      <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="51wr.7156635943885245828" resolveInfo="DependencyGraphConfigItem" />
+    </node>
   </roots>
   <root id="7717755763392524110">
     <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="7717755763392524130">
@@ -534,6 +537,7 @@
         <property name="text" nameId="tpc2.1073389577007" value="in path" />
       </node>
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Property" typeId="tpc2.1073389658414" id="4809476668198808312">
+        <property name="allowEmptyText" nameId="tpc2.1140114345053" value="true" />
         <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="51wr.4809476668198796989" resolveInfo="path" />
       </node>
     </node>
@@ -541,6 +545,11 @@
   <root id="440773076688628187">
     <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="440773076688628191">
       <property name="text" nameId="tpc2.1073389577007" value="nothing (no build system available)" />
+    </node>
+  </root>
+  <root id="7156635943885245831">
+    <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="7156635943885245833">
+      <property name="text" nameId="tpc2.1073389577007" value="graph: module dependencies" />
     </node>
   </root>
 </model>

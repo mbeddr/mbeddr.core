@@ -81,6 +81,12 @@ state increasing {
 \end{lstlisting}
 
 
+Statemachines can be marked as \ic{strict} (by using an intention). If a state
+machine is triggered and there is \emph{no transition firing}, then an error is
+reported. Regular state machines just silently ignore this case. Also, for
+strict statemachines, you have to be specify a message reference (in the
+inspector) that will be reported if one of these errors occurs.
+
 
 \subsection{Integrating with C code}
 
