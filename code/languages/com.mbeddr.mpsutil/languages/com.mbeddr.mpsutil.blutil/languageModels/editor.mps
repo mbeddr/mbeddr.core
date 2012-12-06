@@ -12,6 +12,7 @@
   <import index="e2lb" modelUID="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" version="-1" implicit="yes" />
   <import index="tpce" modelUID="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" version="0" implicit="yes" />
   <import index="tp2q" modelUID="r:00000000-0000-4000-0000-011c8959032e(jetbrains.mps.baseLanguage.collections.structure)" version="7" implicit="yes" />
+  <import index="tpen" modelUID="r:00000000-0000-4000-0000-011c895902c3(jetbrains.mps.baseLanguage.editor)" version="-1" implicit="yes" />
   <roots>
     <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="374287044672141851">
       <property name="virtualPackage" nameId="tpck.1193676396447" value="dispatch" />
@@ -682,13 +683,26 @@
     <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="6707243726027459979">
       <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Indent" typeId="tpc2.1237303669825" id="6707243726027459980" />
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="6707243726027459978">
-        <property name="text" nameId="tpc2.1073389577007" value="match node" />
+        <property name="text" nameId="tpc2.1073389577007" value="match" />
+        <link role="styleClass" roleId="tpc2.1186406756722" targetNodeId="tpen.1186415544875" resolveInfo="KeyWord" />
+      </node>
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="6385915233778889688">
+        <property name="text" nameId="tpc2.1073389577007" value="(" />
+        <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.PunctuationRightStyleClassItem" typeId="tpc2.1233759184865" id="6385915233778889689">
+          <property name="flag" nameId="tpc2.1186414551515" value="true" />
+        </node>
       </node>
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_RefNode" typeId="tpc2.1073389882823" id="6707243726027459982">
         <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="hba4.6707243726027459973" />
       </node>
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="6385915233778889691">
+        <property name="text" nameId="tpc2.1073389577007" value=")" />
+        <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.PunctuationLeftStyleClassItem" typeId="tpc2.1233758997495" id="6385915233778889692">
+          <property name="flag" nameId="tpc2.1186414551515" value="true" />
+        </node>
+      </node>
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="6707243726027459984">
-        <property name="text" nameId="tpc2.1073389577007" value="against" />
+        <property name="text" nameId="tpc2.1073389577007" value="=&gt;" />
       </node>
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_RefNodeList" typeId="tpc2.1073390211982" id="6707243726027459986">
         <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="hba4.6707243726027459975" />
@@ -713,6 +727,7 @@
       <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Indent" typeId="tpc2.1237303669825" id="6385915233778584139" />
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="6385915233778584146">
         <property name="text" nameId="tpc2.1073389577007" value="p" />
+        <link role="styleClass" roleId="tpc2.1186406756722" targetNodeId="6385915233778743090" resolveInfo="expr" />
       </node>
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_RefNodeList" typeId="tpc2.1073390211982" id="6385915233778584158">
         <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="hba4.6385915233778584156" />
