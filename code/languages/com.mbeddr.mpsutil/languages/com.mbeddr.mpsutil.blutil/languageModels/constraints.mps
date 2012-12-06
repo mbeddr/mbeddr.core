@@ -55,6 +55,9 @@
       <property name="virtualPackage" nameId="tpck.1193676396447" value="match.expr" />
       <link role="concept" roleId="tp1t.1213093996982" targetNodeId="hba4.6385915233778687830" resolveInfo="MatchClauseExpr" />
     </node>
+    <node type="tp1t.ConceptConstraints" typeId="tp1t.1213093968558" id="6385915233778949749">
+      <link role="concept" roleId="tp1t.1213093996982" targetNodeId="hba4.6385915233778584147" resolveInfo="AncestorRoleClause" />
+    </node>
   </roots>
   <root id="374287044672146039">
     <node role="canBeChild" roleId="tp1t.1213106463729" type="tp1t.ConstraintFunction_CanBeAChild" typeId="tp1t.1202989531578" id="374287044672146040">
@@ -503,5 +506,6 @@
       </node>
     </node>
   </root>
+  <root id="6385915233778949749" />
 </model>
 

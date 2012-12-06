@@ -102,12 +102,12 @@
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="6707243726027459974" resolveInfo="MatchClause" />
     </node>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="6385915233778584133">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="match" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="match.clauses" />
       <property name="name" nameId="tpck.1169194664001" value="ParentRoleClause" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="6385915233778584131" resolveInfo="NodeRoleClause" />
     </node>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="6385915233778584147">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="match" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="match.clauses" />
       <property name="name" nameId="tpck.1169194664001" value="AncestorRoleClause" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="6385915233778584131" resolveInfo="NodeRoleClause" />
     </node>
@@ -127,7 +127,7 @@
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="6385915233778584154" resolveInfo="NodeRoleCriterion" />
     </node>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="6385915233778603960">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="match" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="match.clauses" />
       <property name="name" nameId="tpck.1169194664001" value="ThisRoleClause" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="6385915233778584131" resolveInfo="NodeRoleClause" />
     </node>
@@ -144,6 +144,11 @@
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="6385915233778870610">
       <property name="virtualPackage" nameId="tpck.1193676396447" value="match.expr" />
       <property name="name" nameId="tpck.1169194664001" value="ParentRefExpr" />
+      <link role="extends" roleId="tpce.1071489389519" targetNodeId="6385915233778687830" resolveInfo="MatchClauseExpr" />
+    </node>
+    <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="6385915233778949483">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="match.expr" />
+      <property name="name" nameId="tpck.1169194664001" value="AncestorRefExpr" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="6385915233778687830" resolveInfo="MatchClauseExpr" />
     </node>
   </roots>
@@ -462,6 +467,12 @@
   <root id="6385915233778870610">
     <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="6385915233778870611">
       <property name="value" nameId="tpce.1105725733873" value="p" />
+      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473891462" resolveInfo="alias" />
+    </node>
+  </root>
+  <root id="6385915233778949483">
+    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="6385915233778949484">
+      <property name="value" nameId="tpce.1105725733873" value="a" />
       <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473891462" resolveInfo="alias" />
     </node>
   </root>
