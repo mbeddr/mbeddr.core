@@ -20,7 +20,6 @@
       <modulePath path="${project}/languages/com.mbeddr.cc.var.fm/fm.mpl" folder="ple_var" />
       <modulePath path="${project}/languages/com.mbeddr.cc.var.rt.comp/comp.mpl" folder="ple_var" />
       <modulePath path="${project}/languages/com.mbeddr.cc.var.rt/rt.mpl" folder="ple_var" />
-      <modulePath path="${project}/solutions/com.mbeddr.cc.dev.build/build.msd" />
       <modulePath path="${project}/tests/test.ex.cc.fm/fm.msd" folder="tests" />
       <modulePath path="${project}/tests/test.ex.cc.fmrt/fmrt.msd" folder="tests" />
       <modulePath path="${project}/tests/test.ts.cc.archdec/archdec.msd" folder="tests" />

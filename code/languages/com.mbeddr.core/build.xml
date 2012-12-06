@@ -99,6 +99,7 @@
     
     <echo message="mbeddr.github.core.home = ${mbeddr.github.core.home}"/>
     <echo message="path.macro.mbeddr.github.core.home := ${mbeddr.github.core.home}"/>
+    <echo message="mps.home := ${mps.home}"/>
     
     <junit haltonfailure="true" showoutput="true" fork="true" dir="${mps.home}">
       <jvmarg value="-ea"/>
@@ -123,9 +124,12 @@
           <include name="**/*.jar"/>
         </fileset>
         <fileset dir="${mps.home}/plugins">
-          <include name="**/*.jar"/>
+          <include name="**/lib/*.jar"/>
         </fileset>
-        <pathelement location="${mps.home}/plugins/mbeddr.spawner/lib/classes/"/>
+        <fileset dir="${mps.home}/plugins">
+          <include name="*.jar"/>
+        </fileset>
+        <pathelement location="${mps.home}/plugins/spawner/lib/classes/"/>
       </classpath>
 
       <test name="jetbrains.mps.testbench.junit.suites.DefaultTestSuite"/>
