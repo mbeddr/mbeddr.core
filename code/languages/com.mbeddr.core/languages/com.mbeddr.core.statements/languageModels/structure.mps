@@ -207,6 +207,10 @@
       <property name="virtualPackage" nameId="tpck.1193676396447" value="localvar" />
       <property name="name" nameId="tpck.1169194664001" value="IVariableDeclaration" />
     </node>
+    <node type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="8886917924485497795">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="loopsNStuff" />
+      <property name="name" nameId="tpck.1169194664001" value="ILoopStatement" />
+    </node>
   </roots>
   <root id="4185783222026464515">
     <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="4058325937810995945">
@@ -356,6 +360,9 @@
     </node>
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="2782528880863627922">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="2gv2.4474148880361719194" resolveInfo="IWatchablesProviderContext" />
+    </node>
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="8886917924485497797">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="8886917924485497795" resolveInfo="ILoopStatement" />
     </node>
     <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="7254843406768818833">
       <property name="value" nameId="tpce.1105725733873" value="for" />
@@ -535,6 +542,9 @@
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="4468327413562411743">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="2gv2.3298295153090279176" resolveInfo="ISteppableContext" />
     </node>
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="8886917924485497801">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="8886917924485497795" resolveInfo="ILoopStatement" />
+    </node>
   </root>
   <root id="8441331188640862326">
     <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="8441331188640862327">
@@ -576,6 +586,9 @@
     </node>
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="2124797385126087524">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="2gv2.3298295153090279176" resolveInfo="ISteppableContext" />
+    </node>
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="8886917924485497799">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="8886917924485497795" resolveInfo="ILoopStatement" />
     </node>
   </root>
   <root id="3134547887598498470">
@@ -888,5 +901,6 @@
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="mj1l.318113533128716675" resolveInfo="ITyped" />
     </node>
   </root>
+  <root id="8886917924485497795" />
 </model>
 
