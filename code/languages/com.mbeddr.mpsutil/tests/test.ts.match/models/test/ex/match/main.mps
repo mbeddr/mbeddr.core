@@ -590,6 +590,19 @@
             <node role="criteria" roleId="hba4.6385915233778584156" type="hba4.IsConceptCriterion" typeId="hba4.6385915233778584163" id="6385915233779167882">
               <link role="concept" roleId="hba4.6385915233778584164" targetNodeId="tpee.1068580320020" resolveInfo="IntegerConstant" />
             </node>
+            <node role="criteria" roleId="hba4.6385915233778584156" type="hba4.GuardCriterion" typeId="hba4.6385915233779080335" id="6385915233779241085">
+              <node role="condition" roleId="hba4.6385915233779080336" type="tpee.EqualsExpression" typeId="tpee.1068580123152" id="6385915233779241136">
+                <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="6385915233779241139">
+                  <property name="value" nameId="tpee.1068580320021" value="3" />
+                </node>
+                <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.DotExpression" typeId="tpee.1197027756228" id="6385915233779241108">
+                  <node role="operand" roleId="tpee.1197027771414" type="hba4.ThisRefExpr" typeId="hba4.6385915233778687825" id="6385915233779241087" />
+                  <node role="operation" roleId="tpee.1197027833540" type="tp25.SPropertyAccess" typeId="tp25.1138056022639" id="6385915233779241114">
+                    <link role="property" roleId="tp25.1138056395725" targetNodeId="tpee.1068580320021" resolveInfo="value" />
+                  </node>
+                </node>
+              </node>
+            </node>
           </node>
           <node role="clauses" roleId="hba4.6707243726027459975" type="hba4.ParentRoleClause" typeId="hba4.6385915233778584133" id="6385915233779169585">
             <node role="criteria" roleId="hba4.6385915233778584156" type="hba4.IsConceptCriterion" typeId="hba4.6385915233778584163" id="6385915233779169586">
