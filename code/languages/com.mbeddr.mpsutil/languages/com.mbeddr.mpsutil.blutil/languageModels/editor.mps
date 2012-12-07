@@ -118,6 +118,10 @@
       <property name="virtualPackage" nameId="tpck.1193676396447" value="match.criteria" />
       <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="hba4.6385915233779527144" resolveInfo="TypeIsConceptCriterion" />
     </node>
+    <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="3154253959808591581">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="match.criteria" />
+      <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="hba4.3154253959808591577" resolveInfo="TypeSubtypeCriterion" />
+    </node>
   </roots>
   <root id="374287044672141851">
     <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="374287044672141857">
@@ -906,6 +910,20 @@
             <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="tpck.1169194664001" resolveInfo="name" />
           </node>
         </node>
+      </node>
+    </node>
+  </root>
+  <root id="3154253959808591581">
+    <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="3154253959808591583">
+      <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Indent" typeId="tpc2.1237303669825" id="3154253959808591584" />
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="3154253959808591585">
+        <property name="text" nameId="tpc2.1073389577007" value=":&lt;=:" />
+        <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.PunctuationRightStyleClassItem" typeId="tpc2.1233759184865" id="3154253959808591586">
+          <property name="flag" nameId="tpc2.1186414551515" value="true" />
+        </node>
+      </node>
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_RefNode" typeId="tpc2.1073389882823" id="3154253959808591587">
+        <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="hba4.3154253959808591578" />
       </node>
     </node>
   </root>
