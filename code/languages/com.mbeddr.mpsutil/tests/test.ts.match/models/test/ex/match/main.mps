@@ -728,6 +728,95 @@
         </node>
       </node>
     </node>
+    <node role="testMethods" roleId="tp5g.1217501895093" type="tp5g.SimpleNodeTest" typeId="tp5g.1225978065297" id="6385915233779277315">
+      <property name="name" nameId="tpck.1169194664001" value="TestChild" />
+      <node role="returnType" roleId="tpee.1068580123133" type="tpee.VoidType" typeId="tpee.1068581517677" id="6385915233779277316" />
+      <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="6385915233779277317">
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.LocalVariableDeclarationStatement" typeId="tpee.1068581242864" id="6385915233779277318">
+          <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="6385915233779277319">
+            <property name="name" nameId="tpck.1169194664001" value="matched" />
+            <node role="type" roleId="tpee.5680397130376446158" type="tpee.BooleanType" typeId="tpee.1070534644030" id="6385915233779277320" />
+            <node role="initializer" roleId="tpee.1068431790190" type="tpee.BooleanConstant" typeId="tpee.1068580123137" id="6385915233779277321">
+              <property name="value" nameId="tpee.1068580123138" value="false" />
+            </node>
+          </node>
+        </node>
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.LocalVariableDeclarationStatement" typeId="tpee.1068581242864" id="6385915233779277322">
+          <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="6385915233779277323">
+            <property name="name" nameId="tpck.1169194664001" value="plus" />
+            <node role="type" roleId="tpee.5680397130376446158" type="tp25.SNodeType" typeId="tp25.1138055754698" id="6385915233779277324">
+              <link role="concept" roleId="tp25.1138405853777" targetNodeId="tpee.1068581242875" resolveInfo="PlusExpression" />
+            </node>
+            <node role="initializer" roleId="tpee.1068431790190" type="tp3r.Quotation" typeId="tp3r.1196350785113" id="6385915233779277325">
+              <node role="quotedNode" roleId="tp3r.1196350785114" type="tpee.PlusExpression" typeId="tpee.1068581242875" id="6385915233779277326">
+                <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.DivExpression" typeId="tpee.1095950406618" id="6385915233779277327">
+                  <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="6385915233779277328">
+                    <property name="value" nameId="tpee.1068580320021" value="3" />
+                  </node>
+                  <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="6385915233779277329">
+                    <property name="value" nameId="tpee.1068580320021" value="2" />
+                  </node>
+                </node>
+                <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="6385915233779277330">
+                  <property name="value" nameId="tpee.1068580320021" value="4" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node role="statement" roleId="tpee.1068581517665" type="hba4.MatchStatement" typeId="hba4.6707243726027459972" id="6385915233779277331">
+          <node role="candidate" roleId="hba4.6707243726027459973" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="6385915233779277332">
+            <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="6385915233779277323" resolveInfo="plus" />
+          </node>
+          <node role="body" roleId="hba4.6707243726027459990" type="tpee.BlockStatement" typeId="tpee.1082485599095" id="6385915233779277333">
+            <node role="statements" roleId="tpee.1082485599096" type="tpee.StatementList" typeId="tpee.1068580123136" id="6385915233779277334">
+              <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="6385915233779439852">
+                <node role="expression" roleId="tpee.1068580123156" type="tpee.AssignmentExpression" typeId="tpee.1068498886294" id="6385915233779439874">
+                  <node role="rValue" roleId="tpee.1068498886297" type="tpee.BooleanConstant" typeId="tpee.1068580123137" id="6385915233779439958">
+                    <property name="value" nameId="tpee.1068580123138" value="true" />
+                  </node>
+                  <node role="lValue" roleId="tpee.1068498886295" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="6385915233779439853">
+                    <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="6385915233779277319" resolveInfo="matched" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node role="clauses" roleId="hba4.6707243726027459975" type="hba4.LinkRoleClause" typeId="hba4.6385915233779247763" id="6385915233779491667">
+            <link role="link" roleId="hba4.6385915233779257875" targetNodeId="tpee.1081773367579" />
+            <node role="criteria" roleId="hba4.6385915233778584156" type="hba4.IsConceptCriterion" typeId="hba4.6385915233778584163" id="6385915233779491670">
+              <link role="concept" roleId="hba4.6385915233778584164" targetNodeId="tpee.1095950406618" resolveInfo="DivExpression" />
+            </node>
+          </node>
+          <node role="clauses" roleId="hba4.6707243726027459975" type="hba4.LinkRoleClause" typeId="hba4.6385915233779247763" id="6385915233779299133">
+            <link role="link" roleId="hba4.6385915233779257875" targetNodeId="tpee.1081773367580" />
+            <node role="criteria" roleId="hba4.6385915233778584156" type="hba4.IsConceptCriterion" typeId="hba4.6385915233778584163" id="6385915233779379953">
+              <link role="concept" roleId="hba4.6385915233778584164" targetNodeId="tpee.1068580320020" resolveInfo="IntegerConstant" />
+            </node>
+            <node role="criteria" roleId="hba4.6385915233778584156" type="hba4.GuardCriterion" typeId="hba4.6385915233779080335" id="6385915233779379955">
+              <node role="condition" roleId="hba4.6385915233779080336" type="tpee.EqualsExpression" typeId="tpee.1068580123152" id="6385915233779439848">
+                <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="6385915233779439851">
+                  <property name="value" nameId="tpee.1068580320021" value="4" />
+                </node>
+                <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.DotExpression" typeId="tpee.1197027756228" id="6385915233779439820">
+                  <node role="operand" roleId="tpee.1197027771414" type="hba4.LinkRefExpr" typeId="hba4.6385915233779379957" id="6385915233779419298">
+                    <link role="link" roleId="hba4.6385915233779379959" targetNodeId="tpee.1081773367580" />
+                  </node>
+                  <node role="operation" roleId="tpee.1197027833540" type="tp25.SPropertyAccess" typeId="tp25.1138056022639" id="6385915233779439826">
+                    <link role="property" roleId="tp25.1138056395725" targetNodeId="tpee.1068580320021" resolveInfo="value" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node role="statement" roleId="tpee.1068581517665" type="tpe3.AssertTrue" typeId="tpe3.1171981022339" id="6385915233779277350">
+          <node role="condition" roleId="tpe3.1171981057159" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="6385915233779277351">
+            <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="6385915233779277319" resolveInfo="matched" />
+          </node>
+        </node>
+      </node>
+    </node>
   </root>
   <root id="6385915233778751345" />
 </model>
