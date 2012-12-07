@@ -994,18 +994,6 @@
                 <link role="concept" roleId="hba4.6385915233778584164" targetNodeId="tpee.1095950406618" resolveInfo="DivExpression" />
               </node>
             </node>
-            <node role="clauses" roleId="hba4.3154253959808754590" type="hba4.LinkRoleClause" typeId="hba4.6385915233779247763" id="3154253959808835157">
-              <link role="link" roleId="hba4.6385915233779257875" targetNodeId="tpee.1081773367580" />
-              <node role="criteria" roleId="hba4.6385915233778584156" type="hba4.TypeSubtypeCriterion" typeId="hba4.3154253959808591577" id="3154253959808835158">
-                <node role="typeNode" roleId="hba4.3154253959808591578" type="tpee.GenericNewExpression" typeId="tpee.1145552977093" id="3154253959808835160">
-                  <node role="creator" roleId="tpee.1145553007750" type="tp25.SNodeCreator" typeId="tp25.1180636770613" id="3154253959808843826">
-                    <node role="createdType" roleId="tp25.1180636770616" type="tp25.SNodeType" typeId="tp25.1138055754698" id="3154253959808843827">
-                      <link role="concept" roleId="tp25.1138405853777" targetNodeId="tpee.1070534370425" resolveInfo="IntegerType" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
             <node role="candidate" roleId="hba4.3154253959808754589" type="tp3r.Quotation" typeId="tp3r.1196350785113" id="3154253959808871949">
               <node role="quotedNode" roleId="tp3r.1196350785114" type="tpee.PlusExpression" typeId="tpee.1068581242875" id="3154253959808871950">
                 <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.DivExpression" typeId="tpee.1095950406618" id="3154253959808871951">
