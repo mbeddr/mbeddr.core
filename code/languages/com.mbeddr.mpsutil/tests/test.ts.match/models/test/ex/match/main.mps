@@ -764,6 +764,15 @@
             </node>
           </node>
         </node>
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.LocalVariableDeclarationStatement" typeId="tpee.1068581242864" id="6385915233779524848">
+          <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="6385915233779524849">
+            <property name="name" nameId="tpck.1169194664001" value="res" />
+            <node role="type" roleId="tpee.5680397130376446158" type="tp25.SNodeType" typeId="tp25.1138055754698" id="6385915233779524850">
+              <link role="concept" roleId="tp25.1138405853777" targetNodeId="tpee.1095950406618" resolveInfo="DivExpression" />
+            </node>
+            <node role="initializer" roleId="tpee.1068431790190" type="tpee.NullLiteral" typeId="tpee.1070534058343" id="6385915233779524852" />
+          </node>
+        </node>
         <node role="statement" roleId="tpee.1068581517665" type="hba4.MatchStatement" typeId="hba4.6707243726027459972" id="6385915233779277331">
           <node role="candidate" roleId="hba4.6707243726027459973" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="6385915233779277332">
             <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="6385915233779277323" resolveInfo="plus" />
@@ -777,6 +786,16 @@
                   </node>
                   <node role="lValue" roleId="tpee.1068498886295" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="6385915233779439853">
                     <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="6385915233779277319" resolveInfo="matched" />
+                  </node>
+                </node>
+              </node>
+              <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="6385915233779524855">
+                <node role="expression" roleId="tpee.1068580123156" type="tpee.AssignmentExpression" typeId="tpee.1068498886294" id="6385915233779524878">
+                  <node role="rValue" roleId="tpee.1068498886297" type="hba4.LinkRefExpr" typeId="hba4.6385915233779379957" id="6385915233779524883">
+                    <link role="link" roleId="hba4.6385915233779379959" targetNodeId="tpee.1081773367579" />
+                  </node>
+                  <node role="lValue" roleId="tpee.1068498886295" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="6385915233779524856">
+                    <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="6385915233779524849" resolveInfo="res" />
                   </node>
                 </node>
               </node>
