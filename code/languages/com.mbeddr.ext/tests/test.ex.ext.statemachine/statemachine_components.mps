@@ -54,9 +54,6 @@
           <link role="initial" roleId="clqz.5778488248013533842" targetNodeId="4643433264761154536" resolveInfo="start" />
           <node role="contents" roleId="clqz.7835233251114737454" type="clqz.StatemachineVariableDeclaration" typeId="clqz.5633981208992643165" id="4643433264761154531">
             <property name="name" nameId="tpck.1169194664001" value="value" />
-            <node role="init" roleId="clqz.4643433264760912612" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="4643433264761154535">
-              <property name="value" nameId="mj1l.8860443239512128104" value="0" />
-            </node>
             <node role="type" roleId="mj1l.318113533128716676" type="clqz.BoundedIntType" typeId="clqz.7851711690674374947" id="5708867820620657209">
               <property name="min" value="0" />
               <property name="max" value="10" />
@@ -66,6 +63,9 @@
               <node role="max" roleId="clqz.1656687801206292531" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="1656687801206329634">
                 <property name="value" nameId="mj1l.8860443239512128104" value="10" />
               </node>
+            </node>
+            <node role="init" roleId="clqz.4643433264760912612" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="881042019525984323">
+              <property name="value" nameId="mj1l.8860443239512128104" value="5" />
             </node>
           </node>
           <node role="contents" roleId="clqz.7835233251114737454" type="clqz.EmptyStatemachineContent" typeId="clqz.8927638623067326788" id="8927638623067363345" />
@@ -96,6 +96,15 @@
             <property name="name" nameId="tpck.1169194664001" value="start" />
             <node role="contents" roleId="clqz.4249345261280348989" type="clqz.EntryAction" typeId="clqz.4753668641245534592" id="4753668641245760236">
               <node role="body" roleId="clqz.4753668641245545015" type="clqz.ActionList" typeId="clqz.1957198122968598264" id="7825285260293843114">
+                <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="881042019525984325">
+                  <property name="comment" nameId="c4fa.1679452829930336985" value="value is initialized to 5 above" />
+                </node>
+                <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="881042019525984327">
+                  <property name="comment" nameId="c4fa.1679452829930336985" value="setting it to 0 here tests whether this enty" />
+                </node>
+                <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="881042019525984329">
+                  <property name="comment" nameId="c4fa.1679452829930336985" value="action of the initial state is actually executed" />
+                </node>
                 <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="22102029902643312">
                   <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.AssignmentExpr" typeId="mj1l.22102029902365709" id="22102029902643313">
                     <node role="left" roleId="mj1l.8860443239512128064" type="clqz.StatemachineVarRef" typeId="clqz.1786180596061383227" id="7825285260293843116">

@@ -1,0 +1,3 @@
+* Integrate all of Gerber's problems
+* Document the graphviz config items for module dependencies,
+  components and state machines
