@@ -8,9 +8,6 @@
     <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="2161187783549671009">
       <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="q5q6.2161187783549671007" resolveInfo="DecTabCheckAttribute" />
     </node>
-    <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="4247873267530496521">
-      <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="q5q6.2161187783549649462" resolveInfo="PairOfExpressions" />
-    </node>
   </roots>
   <root id="2161187783549671009">
     <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="8132151755547132159">
@@ -19,11 +16,6 @@
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="8132151755547132164">
         <property name="text" nameId="tpc2.1073389577007" value="(checked)" />
       </node>
-    </node>
-  </root>
-  <root id="4247873267530496521">
-    <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="4247873267530496523">
-      <property name="text" nameId="tpc2.1073389577007" value="pair" />
     </node>
   </root>
 </model>
