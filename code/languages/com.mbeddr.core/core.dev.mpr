@@ -42,6 +42,7 @@
       <modulePath path="${project}/languages/com.mbeddr.core.unittest/unittest.mpl" folder="core-extended" />
       <modulePath path="${project}/languages/com.mbeddr.core.util/solutions/pluginSolution/pluginSolution.msd" folder="core-extended.solutions" />
       <modulePath path="${project}/languages/com.mbeddr.core.util/util.mpl" folder="core-extended" />
+      <modulePath path="${project}/solutions/test.ts.core.dataflow/dataflow.msd" folder="tests" />
       <modulePath path="${project}/tests/aLibrary/aLibrary.msd" folder="tests" />
       <modulePath path="${project}/tests/test.cstub.core/core.msd" folder="tests.cstub" />
       <modulePath path="${project}/tests/test.cstub.testheader.expressions/expressions.msd" folder="tests.cstub" />
@@ -63,7 +64,7 @@
           <value>
             <Library>
               <option name="name" value="debugger" />
-              <option name="path" value="${mbeddr.github.core.home}/com.mbeddr.debugger" />
+              <option name="path" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.debugger" />
             </Library>
           </value>
         </entry>
@@ -71,7 +72,7 @@
           <value>
             <Library>
               <option name="name" value="mpsutil" />
-              <option name="path" value="${mbeddr.github.core.home}/com.mbeddr.mpsutil" />
+              <option name="path" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.mpsutil" />
             </Library>
           </value>
         </entry>
@@ -79,7 +80,7 @@
           <value>
             <Library>
               <option name="name" value="spawner" />
-              <option name="path" value="${mbeddr.github.core.home}/com.mbeddr.spawner" />
+              <option name="path" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.spawner" />
             </Library>
           </value>
         </entry>
@@ -94,7 +95,7 @@
     <option name="version" value="2.5" />
   </component>
   <component name="VcsDirectoryMappings">
-    <mapping directory="$PROJECT_DIR$/../../.." vcs="Git" />
+    <mapping directory="$mbeddr.github.core.home$" vcs="Git" />
   </component>
 </project>
 
