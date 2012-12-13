@@ -124,10 +124,7 @@
           <include name="**/*.jar"/>
         </fileset>
         <fileset dir="${mps.home}/plugins">
-          <include name="**/lib/*.jar"/>
-        </fileset>
-        <fileset dir="${mps.home}/plugins">
-          <include name="*.jar"/>
+          <include name="**/*.jar"/>
         </fileset>
         <pathelement location="${mps.home}/plugins/spawner/lib/classes/"/>
       </classpath>
