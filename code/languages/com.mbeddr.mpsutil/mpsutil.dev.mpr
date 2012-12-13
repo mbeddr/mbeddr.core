@@ -17,6 +17,7 @@
       <modulePath path="${project}/languages/com.mbeddr.mpsutil.refactoring/refactoring.mpl" folder="" />
       <modulePath path="${project}/languages/com.mbeddr.mpsutil.tables.rt/tables.rt.msd" />
       <modulePath path="${project}/solutions/com.mbeddr.mpsutil.graph.demo/demo.msd" folder="" />
+      <modulePath path="${project}/tests/test.ts.match/match.msd" />
     </projectModules>
     <genConfs />
   </component>

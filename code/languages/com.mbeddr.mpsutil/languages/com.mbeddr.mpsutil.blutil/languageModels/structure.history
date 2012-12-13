@@ -47,10 +47,10 @@
   </StructureModification>
   <StructureModification>
     <dependencies>
-      <model index="20u6" modelUID="r:bb095207-e9e1-446e-bd19-f8d726d52200(com.mbeddr.mpsutil.blutil.typesystem)" version="-1" />
       <model index="hwgx" modelUID="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)" version="0" />
-      <model index="p15z" modelUID="r:ac36bf27-36e9-407d-ba8e-953c68088e41(com.mbeddr.mpsutil.blutil.behavior)" version="-1" />
+      <model index="20u6" modelUID="r:bb095207-e9e1-446e-bd19-f8d726d52200(com.mbeddr.mpsutil.blutil.typesystem)" version="-1" />
       <model index="hba4" modelUID="r:f5bd2ad9-cd54-4408-b815-07f9f306f074(com.mbeddr.mpsutil.blutil.structure)" version="4" />
+      <model index="p15z" modelUID="r:ac36bf27-36e9-407d-ba8e-953c68088e41(com.mbeddr.mpsutil.blutil.behavior)" version="-1" />
       <model index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="3" />
       <model index="9zoj" modelUID="r:1b0f275e-bd62-4f6e-8c4b-51b05d651a63(com.mbeddr.core.base.typesystem)" version="-1" />
     </dependencies>
@@ -88,6 +88,18 @@
     <move id="20u6.6616025724454822159" to="9zoj.6616025724454843621" />
     <move id="20u6.6616025724454822178" to="9zoj.6616025724454843633" />
     <move id="20u6.6616025724454822186" to="9zoj.6616025724454843629" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="hba4" modelUID="r:f5bd2ad9-cd54-4408-b815-07f9f306f074(com.mbeddr.mpsutil.blutil.structure)" version="5" />
+    </dependencies>
+    <move id="hba4.6707243726027459973" to="hba4.3154253959808754589" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="hba4" modelUID="r:f5bd2ad9-cd54-4408-b815-07f9f306f074(com.mbeddr.mpsutil.blutil.structure)" version="6" />
+    </dependencies>
+    <move id="hba4.6707243726027459975" to="hba4.3154253959808754590" />
   </StructureModification>
 </history>
 

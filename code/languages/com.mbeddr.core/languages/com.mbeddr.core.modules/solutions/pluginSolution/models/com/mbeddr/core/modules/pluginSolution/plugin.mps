@@ -13,7 +13,7 @@
   <language namespace="fd392034-7849-419d-9071-12563d152375(jetbrains.mps.baseLanguage.closures)" />
   <language namespace="83888646-71ce-4f1c-9c53-c54016f6ad4f(jetbrains.mps.baseLanguage.collections)" />
   <import index="e4fp" modelUID="r:4a2bfa22-28af-4fc8-8439-eb79cb594966(com.mbeddr.core.modules.refactorings)" version="-1" />
-  <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="2" />
+  <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="3" />
   <import index="fxg7" modelUID="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.io(java.io@java_stub)" version="-1" />
   <import index="4w5v" modelUID="r:18d75373-a465-46d0-9749-aacc22a947bc(com.mbeddr.mpsutil.refactoring.structure)" version="-1" implicit="yes" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
@@ -49,6 +49,10 @@
     <node type="4w5v.RefactoringAction" typeId="4w5v.7518061998923573137" id="2400440333612945069">
       <property name="name" nameId="tpck.1169194664001" value="Convert into Implementation Module" />
       <link role="refactoring" roleId="4w5v.7518061998923573138" targetNodeId="e4fp.2400440333612944625" resolveInfo="convertExternalModuleIntoImplModule" />
+    </node>
+    <node type="4w5v.RefactoringAction" typeId="4w5v.7518061998923573137" id="881042019526389163">
+      <property name="name" nameId="tpck.1169194664001" value="Extract Constant" />
+      <link role="refactoring" roleId="4w5v.7518061998923573138" targetNodeId="e4fp.1582169519237927131" resolveInfo="extractConstant" />
     </node>
   </roots>
   <root id="7518061998923661565">
@@ -254,5 +258,17 @@
   </root>
   <root id="7990137026351650149" />
   <root id="2400440333612945069" />
+  <root id="881042019526389163">
+    <node role="shortcut" roleId="4w5v.7518061998923573139" type="tp4k.KeyMapKeystroke" typeId="tp4k.1207318242772" id="881042019526389164">
+      <property name="modifiers" nameId="tp4k.1207318242773" value="ctrl+alt" />
+      <property name="keycode" nameId="tp4k.1207318242774" value="VK_C" />
+    </node>
+    <node role="parameters" roleId="4w5v.7518061998923573158" type="4w5v.RefactoringParameter" typeId="4w5v.7518061998923573140" id="881042019526389167">
+      <link role="param" roleId="4w5v.7518061998923573141" targetNodeId="e4fp.1582169519237927155" resolveInfo="varName" />
+      <node role="chooser" roleId="4w5v.7518061998923573142" type="4w5v.StringChooser" typeId="4w5v.7518061998923713757" id="881042019526389168">
+        <property name="title" nameId="4w5v.7518061998923720371" value="Constant Name" />
+      </node>
+    </node>
+  </root>
 </model>
 

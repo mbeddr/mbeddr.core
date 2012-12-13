@@ -1457,6 +1457,27 @@
                             </node>
                           </node>
                         </node>
+                        <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="4980209338054001253">
+                          <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="4980209338054001254">
+                            <node role="operand" roleId="tpee.1197027771414" type="tpee.LocalInstanceMethodCall" typeId="tpee.3066917033203108594" id="4980209338054001255">
+                              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="iu3k.~AbstractModule%dbind(java%dlang%dClass)%ccom%dgoogle%dinject%dbinder%dAnnotatedBindingBuilder" resolveInfo="bind" />
+                              <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.ClassifierClassExpression" typeId="tpee.1116615150612" id="4980209338054001270">
+                                <link role="classifier" roleId="tpee.1116615189566" targetNodeId="x30c.1009869486823207782" resolveInfo="IMPendingBreakpointSetter" />
+                              </node>
+                            </node>
+                            <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="4980209338054001257">
+                              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="nybc.~LinkedBindingBuilder%dtoInstance(java%dlang%dObject)%cvoid" resolveInfo="toInstance" />
+                              <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="4980209338054001258">
+                                <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="s0qc.~EasyMock" resolveInfo="EasyMock" />
+                                <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="s0qc.~EasyMock%dcreateMock(java%dlang%dClass)%cjava%dlang%dObject" resolveInfo="createMock" />
+                                <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.ClassifierClassExpression" typeId="tpee.1116615150612" id="4980209338054001276">
+                                  <link role="classifier" roleId="tpee.1116615189566" targetNodeId="x30c.1009869486823207782" resolveInfo="IMPendingBreakpointSetter" />
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                        <node role="statement" roleId="tpee.1068581517665" type="tpee.Statement" typeId="tpee.1068580123157" id="4980209338054001252" />
                       </node>
                     </node>
                   </node>
@@ -1522,6 +1543,14 @@
             <property name="name" nameId="tpck.1169194664001" value="initialState" />
             <node role="type" roleId="tpee.5680397130376446158" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="6879846215835233939">
               <link role="classifier" roleId="tpee.1107535924139" targetNodeId="x30c.3756274814453598314" resolveInfo="IMIDebugSessionState" />
+            </node>
+          </node>
+        </node>
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.LocalVariableDeclarationStatement" typeId="tpee.1068581242864" id="4980209338054001282">
+          <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="4980209338054001283">
+            <property name="name" nameId="tpck.1169194664001" value="pendingBreakpointSetter" />
+            <node role="type" roleId="tpee.5680397130376446158" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="4980209338054001284">
+              <link role="classifier" roleId="tpee.1107535924139" targetNodeId="x30c.1009869486823207782" resolveInfo="IMPendingBreakpointSetter" />
             </node>
           </node>
         </node>
@@ -1652,6 +1681,24 @@
             </node>
           </node>
         </node>
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="4980209338054001286">
+          <node role="expression" roleId="tpee.1068580123156" type="tpee.AssignmentExpression" typeId="tpee.1068498886294" id="4980209338054001300">
+            <node role="rValue" roleId="tpee.1068498886297" type="tpee.DotExpression" typeId="tpee.1197027756228" id="4980209338054001316">
+              <node role="operand" roleId="tpee.1197027771414" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="4980209338054001303">
+                <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="6879846215835233942" resolveInfo="injector" />
+              </node>
+              <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="4980209338054001322">
+                <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="iu3k.~Injector%dgetInstance(java%dlang%dClass)%cjava%dlang%dObject" resolveInfo="getInstance" />
+                <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.ClassifierClassExpression" typeId="tpee.1116615150612" id="4980209338054001323">
+                  <link role="classifier" roleId="tpee.1116615189566" targetNodeId="x30c.1009869486823207782" resolveInfo="IMPendingBreakpointSetter" />
+                </node>
+              </node>
+            </node>
+            <node role="lValue" roleId="tpee.1068498886295" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="4980209338054001287">
+              <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="4980209338054001283" resolveInfo="pendingBreakpointSetter" />
+            </node>
+          </node>
+        </node>
         <node role="statement" roleId="tpee.1068581517665" type="tpee.Statement" typeId="tpee.1068580123157" id="6879846215835233990" />
         <node role="statement" roleId="tpee.1068581517665" type="tpee.LocalVariableDeclarationStatement" typeId="tpee.1068581242864" id="6879846215835233991">
           <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="6879846215835233992">
@@ -1735,6 +1782,9 @@
                 <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="6879846215835234020">
                   <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="6879846215835234007" resolveInfo="errorReporter" />
                 </node>
+                <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="4980209338054001327">
+                  <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="4980209338054001283" resolveInfo="pendingBreakpointSetter" />
+                </node>
               </node>
             </node>
           </node>
@@ -1770,6 +1820,9 @@
                 <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="6879846215835234035">
                   <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="6879846215835234007" resolveInfo="errorReporter" />
                 </node>
+                <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="4980209338054001329">
+                  <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="4980209338054001283" resolveInfo="pendingBreakpointSetter" />
+                </node>
               </node>
             </node>
           </node>
@@ -1803,6 +1856,9 @@
                 </node>
                 <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="6879846215835234049">
                   <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="6879846215835234007" resolveInfo="errorReporter" />
+                </node>
+                <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="4980209338054001331">
+                  <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="4980209338054001283" resolveInfo="pendingBreakpointSetter" />
                 </node>
               </node>
             </node>
@@ -1838,6 +1894,9 @@
                 <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="6879846215835234063">
                   <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="6879846215835234007" resolveInfo="errorReporter" />
                 </node>
+                <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="4980209338054001333">
+                  <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="4980209338054001283" resolveInfo="pendingBreakpointSetter" />
+                </node>
               </node>
             </node>
           </node>
@@ -1871,6 +1930,9 @@
                 </node>
                 <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="6879846215835234077">
                   <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="6879846215835234007" resolveInfo="errorReporter" />
+                </node>
+                <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="4980209338054001335">
+                  <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="4980209338054001283" resolveInfo="pendingBreakpointSetter" />
                 </node>
               </node>
             </node>
@@ -1937,6 +1999,14 @@
             <property name="name" nameId="tpck.1169194664001" value="initialState" />
             <node role="type" roleId="tpee.5680397130376446158" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="6879846215835234102">
               <link role="classifier" roleId="tpee.1107535924139" targetNodeId="x30c.3756274814453598314" resolveInfo="IMIDebugSessionState" />
+            </node>
+          </node>
+        </node>
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.LocalVariableDeclarationStatement" typeId="tpee.1068581242864" id="4980209338054001348">
+          <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="4980209338054001349">
+            <property name="name" nameId="tpck.1169194664001" value="pendingBreakpointSetter" />
+            <node role="type" roleId="tpee.5680397130376446158" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="4980209338054001350">
+              <link role="classifier" roleId="tpee.1107535924139" targetNodeId="x30c.1009869486823207782" resolveInfo="IMPendingBreakpointSetter" />
             </node>
           </node>
         </node>
@@ -2067,6 +2137,24 @@
             </node>
           </node>
         </node>
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="4980209338054001336">
+          <node role="expression" roleId="tpee.1068580123156" type="tpee.AssignmentExpression" typeId="tpee.1068498886294" id="4980209338054001337">
+            <node role="rValue" roleId="tpee.1068498886297" type="tpee.DotExpression" typeId="tpee.1197027756228" id="4980209338054001338">
+              <node role="operand" roleId="tpee.1197027771414" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="4980209338054001339">
+                <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="6879846215835234105" resolveInfo="injector" />
+              </node>
+              <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="4980209338054001340">
+                <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="iu3k.~Injector%dgetInstance(java%dlang%dClass)%cjava%dlang%dObject" resolveInfo="getInstance" />
+                <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.ClassifierClassExpression" typeId="tpee.1116615150612" id="4980209338054001341">
+                  <link role="classifier" roleId="tpee.1116615189566" targetNodeId="x30c.1009869486823207782" resolveInfo="IMPendingBreakpointSetter" />
+                </node>
+              </node>
+            </node>
+            <node role="lValue" roleId="tpee.1068498886295" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="4980209338054001357">
+              <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="4980209338054001349" resolveInfo="pendingBreakpointSetter" />
+            </node>
+          </node>
+        </node>
         <node role="statement" roleId="tpee.1068581517665" type="tpee.Statement" typeId="tpee.1068580123157" id="6879846215835234153" />
         <node role="statement" roleId="tpee.1068581517665" type="tpee.LocalVariableDeclarationStatement" typeId="tpee.1068581242864" id="6879846215835234154">
           <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="6879846215835234155">
@@ -2166,6 +2254,9 @@
                 </node>
                 <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="6879846215835234188">
                   <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="6879846215835234175" resolveInfo="errorReporter" />
+                </node>
+                <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="4980209338054001360">
+                  <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="4980209338054001349" resolveInfo="pendingBreakpointSetter" />
                 </node>
               </node>
             </node>
@@ -2288,6 +2379,9 @@
                 <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="6879846215835234237">
                   <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="6879846215835234175" resolveInfo="errorReporter" />
                 </node>
+                <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="4980209338054001362">
+                  <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="4980209338054001349" resolveInfo="pendingBreakpointSetter" />
+                </node>
               </node>
             </node>
           </node>
@@ -2383,6 +2477,9 @@
                 </node>
                 <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="6879846215835234276">
                   <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="6879846215835234175" resolveInfo="errorReporter" />
+                </node>
+                <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="4980209338054001364">
+                  <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="4980209338054001349" resolveInfo="pendingBreakpointSetter" />
                 </node>
               </node>
             </node>
@@ -2495,6 +2592,9 @@
                 <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="6879846215835234321">
                   <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="6879846215835234175" resolveInfo="errorReporter" />
                 </node>
+                <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="4980209338054001366">
+                  <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="4980209338054001349" resolveInfo="pendingBreakpointSetter" />
+                </node>
               </node>
             </node>
           </node>
@@ -2532,6 +2632,9 @@
                 </node>
                 <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="6879846215835234335">
                   <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="6879846215835234175" resolveInfo="errorReporter" />
+                </node>
+                <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="4980209338054001368">
+                  <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="4980209338054001349" resolveInfo="pendingBreakpointSetter" />
                 </node>
               </node>
             </node>
@@ -3257,13 +3360,6 @@
               </node>
               <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="6879846215835234619">
                 <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="x30c.3096053326356090450" resolveInfo="debuggerSuspended" />
-                <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="6879846215835234620">
-                  <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="s0qc.~EasyMock%dcreateMock(java%dlang%dClass)%cjava%dlang%dObject" resolveInfo="createMock" />
-                  <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="s0qc.~EasyMock" resolveInfo="EasyMock" />
-                  <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.ClassifierClassExpression" typeId="tpee.1116615150612" id="6879846215835234621">
-                    <link role="classifier" roleId="tpee.1116615189566" targetNodeId="pry4.4474271214082913243" resolveInfo="IThread" />
-                  </node>
-                </node>
               </node>
             </node>
           </node>
@@ -3721,13 +3817,6 @@
             </node>
             <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="6879846215835234797">
               <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="x30c.3096053326356090450" resolveInfo="debuggerSuspended" />
-              <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="6879846215835234798">
-                <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="s0qc.~EasyMock%dcreateMock(java%dlang%dClass)%cjava%dlang%dObject" resolveInfo="createMock" />
-                <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="s0qc.~EasyMock" resolveInfo="EasyMock" />
-                <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.ClassifierClassExpression" typeId="tpee.1116615150612" id="6879846215835234799">
-                  <link role="classifier" roleId="tpee.1116615189566" targetNodeId="pry4.4474271214082913243" resolveInfo="IThread" />
-                </node>
-              </node>
             </node>
           </node>
         </node>
@@ -3952,6 +4041,21 @@
             </node>
           </node>
         </node>
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.LocalVariableDeclarationStatement" typeId="tpee.1068581242864" id="4980209338054001419">
+          <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="4980209338054001420">
+            <property name="name" nameId="tpck.1169194664001" value="pendingBreakpointSetter" />
+            <node role="type" roleId="tpee.5680397130376446158" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="4980209338054001421">
+              <link role="classifier" roleId="tpee.1107535924139" targetNodeId="x30c.1009869486823207782" resolveInfo="IMPendingBreakpointSetter" />
+            </node>
+            <node role="initializer" roleId="tpee.1068431790190" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="4980209338054001423">
+              <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="s0qc.~EasyMock" resolveInfo="EasyMock" />
+              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="s0qc.~EasyMock%dcreateMock(java%dlang%dClass)%cjava%dlang%dObject" resolveInfo="createMock" />
+              <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.ClassifierClassExpression" typeId="tpee.1116615150612" id="4980209338054001431">
+                <link role="classifier" roleId="tpee.1116615189566" targetNodeId="x30c.1009869486823207782" resolveInfo="IMPendingBreakpointSetter" />
+              </node>
+            </node>
+          </node>
+        </node>
         <node role="statement" roleId="tpee.1068581517665" type="tpee.Statement" typeId="tpee.1068580123157" id="6879846215835234882" />
         <node role="statement" roleId="tpee.1068581517665" type="tpee.LocalVariableDeclarationStatement" typeId="tpee.1068581242864" id="6879846215835234883">
           <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="6879846215835234884">
@@ -3974,6 +4078,9 @@
                 </node>
                 <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="6879846215835234892">
                   <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="6879846215835234878" resolveInfo="errorReporter" />
+                </node>
+                <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="4980209338054001437">
+                  <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="4980209338054001420" resolveInfo="pendingBreakpointSetter" />
                 </node>
               </node>
             </node>
@@ -4010,6 +4117,9 @@
                 <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="6879846215835234907">
                   <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="6879846215835234878" resolveInfo="errorReporter" />
                 </node>
+                <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="4980209338054001439">
+                  <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="4980209338054001420" resolveInfo="pendingBreakpointSetter" />
+                </node>
               </node>
             </node>
           </node>
@@ -4044,6 +4154,9 @@
                 </node>
                 <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="6879846215835234922">
                   <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="6879846215835234878" resolveInfo="errorReporter" />
+                </node>
+                <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="4980209338054001441">
+                  <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="4980209338054001420" resolveInfo="pendingBreakpointSetter" />
                 </node>
               </node>
             </node>
@@ -4080,6 +4193,9 @@
                 <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="6879846215835234937">
                   <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="6879846215835234878" resolveInfo="errorReporter" />
                 </node>
+                <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="4980209338054001443">
+                  <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="4980209338054001420" resolveInfo="pendingBreakpointSetter" />
+                </node>
               </node>
             </node>
           </node>
@@ -4114,6 +4230,9 @@
                 </node>
                 <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="6879846215835234952">
                   <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="6879846215835234878" resolveInfo="errorReporter" />
+                </node>
+                <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="4980209338054001445">
+                  <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="4980209338054001420" resolveInfo="pendingBreakpointSetter" />
                 </node>
               </node>
             </node>
@@ -4370,6 +4489,21 @@
             </node>
           </node>
         </node>
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.LocalVariableDeclarationStatement" typeId="tpee.1068581242864" id="4980209338054001446">
+          <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="4980209338054001447">
+            <property name="name" nameId="tpck.1169194664001" value="pendingBreakpointSetter" />
+            <node role="type" roleId="tpee.5680397130376446158" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="4980209338054001448">
+              <link role="classifier" roleId="tpee.1107535924139" targetNodeId="x30c.1009869486823207782" resolveInfo="IMPendingBreakpointSetter" />
+            </node>
+            <node role="initializer" roleId="tpee.1068431790190" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="4980209338054001449">
+              <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="s0qc.~EasyMock" resolveInfo="EasyMock" />
+              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="s0qc.~EasyMock%dcreateMock(java%dlang%dClass)%cjava%dlang%dObject" resolveInfo="createMock" />
+              <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.ClassifierClassExpression" typeId="tpee.1116615150612" id="4980209338054001450">
+                <link role="classifier" roleId="tpee.1116615189566" targetNodeId="x30c.1009869486823207782" resolveInfo="IMPendingBreakpointSetter" />
+              </node>
+            </node>
+          </node>
+        </node>
         <node role="statement" roleId="tpee.1068581517665" type="tpee.Statement" typeId="tpee.1068580123157" id="6879846215835235045" />
         <node role="statement" roleId="tpee.1068581517665" type="tpee.LocalVariableDeclarationStatement" typeId="tpee.1068581242864" id="6879846215835235046">
           <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="6879846215835235047">
@@ -4394,6 +4528,9 @@
                 </node>
                 <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="6879846215835235055">
                   <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="6879846215835235041" resolveInfo="errorReporter" />
+                </node>
+                <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="4980209338054001454">
+                  <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="4980209338054001447" resolveInfo="pendingBreakpointSetter" />
                 </node>
               </node>
             </node>
@@ -4517,6 +4654,9 @@
                 <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="6879846215835235105">
                   <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="6879846215835235041" resolveInfo="errorReporter" />
                 </node>
+                <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="4980209338054001456">
+                  <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="4980209338054001447" resolveInfo="pendingBreakpointSetter" />
+                </node>
               </node>
             </node>
           </node>
@@ -4613,6 +4753,9 @@
                 </node>
                 <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="6879846215835235145">
                   <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="6879846215835235041" resolveInfo="errorReporter" />
+                </node>
+                <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="4980209338054001458">
+                  <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="4980209338054001447" resolveInfo="pendingBreakpointSetter" />
                 </node>
               </node>
             </node>
@@ -4726,6 +4869,9 @@
                 <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="6879846215835235191">
                   <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="6879846215835235041" resolveInfo="errorReporter" />
                 </node>
+                <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="4980209338054001460">
+                  <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="4980209338054001447" resolveInfo="pendingBreakpointSetter" />
+                </node>
               </node>
             </node>
           </node>
@@ -4764,6 +4910,9 @@
                 </node>
                 <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="6879846215835235206">
                   <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="6879846215835235041" resolveInfo="errorReporter" />
+                </node>
+                <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="4980209338054001469">
+                  <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="4980209338054001447" resolveInfo="pendingBreakpointSetter" />
                 </node>
               </node>
             </node>
@@ -5046,6 +5195,9 @@
                 <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="6879846215835235317">
                   <property name="value" nameId="tpee.1068580320021" value="0" />
                 </node>
+                <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="4980209338053993257">
+                  <property name="value" nameId="tpee.1068580320021" value="0" />
+                </node>
               </node>
             </node>
           </node>
@@ -5071,6 +5223,9 @@
                 <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="6879846215835235328">
                   <property name="value" nameId="tpee.1068580320021" value="1" />
                 </node>
+                <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="4980209338053993259">
+                  <property name="value" nameId="tpee.1068580320021" value="1" />
+                </node>
               </node>
             </node>
           </node>
@@ -5092,6 +5247,9 @@
                 <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="6879846215835235338">
                   <property name="value" nameId="tpee.1068580320021" value="2" />
                 </node>
+                <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="4980209338053993255">
+                  <property name="value" nameId="tpee.1068580320021" value="2" />
+                </node>
               </node>
             </node>
           </node>
@@ -5110,6 +5268,9 @@
                 <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.NullLiteral" typeId="tpee.1070534058343" id="6879846215835235347" />
                 <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="6879846215835235348">
                   <property name="value" nameId="tpee.1068580320021" value="3" />
+                </node>
+                <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="4980209338053993267">
+                  <property name="value" nameId="tpee.1068580320021" value="2" />
                 </node>
               </node>
             </node>
@@ -5131,6 +5292,9 @@
                 </node>
                 <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="6879846215835235358">
                   <property name="value" nameId="tpee.1068580320021" value="4" />
+                </node>
+                <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="4980209338053993265">
+                  <property name="value" nameId="tpee.1068580320021" value="1" />
                 </node>
               </node>
             </node>
@@ -5160,6 +5324,9 @@
                 </node>
                 <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="6879846215835235369">
                   <property name="value" nameId="tpee.1068580320021" value="5" />
+                </node>
+                <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="4980209338053993262">
+                  <property name="value" nameId="tpee.1068580320021" value="1" />
                 </node>
               </node>
             </node>
