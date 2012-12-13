@@ -2276,11 +2276,11 @@
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.GlobalVariableDeclaration" typeId="x27k.6610873504380335822" id="22102029902284586">
       <property name="name" nameId="tpck.1169194664001" value="constVolatileArray" />
       <node role="type" roleId="mj1l.318113533128716676" type="yq40.ArrayType" typeId="yq40.5679441017214012545" id="22102029902284588">
-        <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
-        <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+        <property name="volatile" nameId="mj1l.2941277002448691247" value="true" />
+        <property name="const" nameId="mj1l.2941277002445651368" value="true" />
         <node role="baseType" roleId="yq40.5679441017214012546" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="22102029902284587">
-          <property name="volatile" nameId="mj1l.2941277002448691247" value="true" />
-          <property name="const" nameId="mj1l.2941277002445651368" value="true" />
+          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
         </node>
         <node role="sizeExpr" roleId="yq40.1452920870317474611" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="22102029902284590">
           <property name="value" nameId="mj1l.8860443239512128104" value="42" />
