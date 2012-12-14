@@ -33,6 +33,9 @@
     <node type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="12378219274819068">
       <property name="name" nameId="tpck.1169194664001" value="MultiProvider" />
     </node>
+    <node type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="12378219275076130">
+      <property name="name" nameId="tpck.1169194664001" value="MultiUserSystem" />
+    </node>
   </roots>
   <root id="4941942898026891712">
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="4941942898026891713">
@@ -459,6 +462,9 @@
       </node>
       <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="12378219274819172">
         <link role="module" roleId="51wr.7717755763392524108" targetNodeId="12378219274819068" resolveInfo="MultiProvider" />
+      </node>
+      <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="12378219275085687">
+        <link role="module" roleId="51wr.7717755763392524108" targetNodeId="12378219275076130" resolveInfo="MultiUserSystem" />
       </node>
     </node>
   </root>
@@ -1173,6 +1179,30 @@
           <link role="port" roleId="v7ag.6616025724454668920" targetNodeId="12378219274819070" resolveInfo="atm" />
         </node>
       </node>
+      <node role="contents" roleId="v7ag.7780999115923944213" type="v7ag.EmptyInstanceConfigContent" typeId="v7ag.1089269900847289701" id="12378219275085673" />
+      <node role="contents" roleId="v7ag.7780999115923944213" type="v7ag.ComponentInstance" typeId="v7ag.4491876417845649014" id="12378219275085675">
+        <property name="name" nameId="tpck.1169194664001" value="musPass" />
+        <link role="component" roleId="v7ag.4491876417845649015" targetNodeId="12378219275080947" resolveInfo="MultiUserSystemPass" />
+      </node>
+      <node role="contents" roleId="v7ag.7780999115923944213" type="v7ag.PortAdapter" typeId="v7ag.5172178961828157634" id="12378219275085679">
+        <property name="name" nameId="tpck.1169194664001" value="multiUserSystemPass" />
+        <node role="portRef" roleId="v7ag.6616025724454701213" type="v7ag.AdapterInstancePortRef" typeId="v7ag.6616025724454668918" id="12378219275085680">
+          <link role="instance" roleId="v7ag.6616025724454668919" targetNodeId="12378219275085675" resolveInfo="musPass" />
+          <link role="port" roleId="v7ag.6616025724454668920" targetNodeId="12378219275080948" resolveInfo="multiUserSystem" />
+        </node>
+      </node>
+      <node role="contents" roleId="v7ag.7780999115923944213" type="v7ag.EmptyInstanceConfigContent" typeId="v7ag.1089269900847289701" id="12378219275085681" />
+      <node role="contents" roleId="v7ag.7780999115923944213" type="v7ag.ComponentInstance" typeId="v7ag.4491876417845649014" id="12378219275085683">
+        <property name="name" nameId="tpck.1169194664001" value="musFail" />
+        <link role="component" roleId="v7ag.4491876417845649015" targetNodeId="12378219275081004" resolveInfo="MultiUserSystemFail" />
+      </node>
+      <node role="contents" roleId="v7ag.7780999115923944213" type="v7ag.PortAdapter" typeId="v7ag.5172178961828157634" id="12378219275085685">
+        <property name="name" nameId="tpck.1169194664001" value="multiUserSystemFail" />
+        <node role="portRef" roleId="v7ag.6616025724454701213" type="v7ag.AdapterInstancePortRef" typeId="v7ag.6616025724454668918" id="12378219275085686">
+          <link role="instance" roleId="v7ag.6616025724454668919" targetNodeId="12378219275085683" resolveInfo="musFail" />
+          <link role="port" roleId="v7ag.6616025724454668920" targetNodeId="12378219275081005" resolveInfo="multiUserSystem" />
+        </node>
+      </node>
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="891293002575252547">
       <property name="name" nameId="tpck.1169194664001" value="carProtocolRespected" />
@@ -1608,6 +1638,246 @@
         <property name="const" nameId="mj1l.2941277002445651368" value="false" />
       </node>
     </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="12378219275085665">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1355506926583_18" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="12378219275085669">
+      <property name="name" nameId="tpck.1169194664001" value="multiUserSystemPassTest" />
+      <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="12378219275085671">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="12378219275085691">
+          <node role="expr" roleId="c4fa.7254843406768833939" type="v7ag.PortAdapterOpCallExpr" typeId="v7ag.466603768608410221" id="12378219275085695">
+            <link role="operation" roleId="v7ag.8105003328815071752" targetNodeId="12378219275076133" resolveInfo="startOperation" />
+            <node role="expression" roleId="mj1l.7254843406768839760" type="v7ag.PortAdapterRefExpr" typeId="v7ag.8105003328815039001" id="12378219275085692">
+              <link role="portAdater" roleId="v7ag.8105003328815039002" targetNodeId="12378219275085679" resolveInfo="multiUserSystemPass" />
+            </node>
+          </node>
+        </node>
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="12378219275085701">
+          <node role="expr" roleId="c4fa.7254843406768833939" type="v7ag.PortAdapterOpCallExpr" typeId="v7ag.466603768608410221" id="12378219275085705">
+            <link role="operation" roleId="v7ag.8105003328815071752" targetNodeId="12378219275080842" resolveInfo="loginUser" />
+            <node role="expression" roleId="mj1l.7254843406768839760" type="v7ag.PortAdapterRefExpr" typeId="v7ag.8105003328815039001" id="12378219275085702">
+              <link role="portAdater" roleId="v7ag.8105003328815039002" targetNodeId="12378219275085679" resolveInfo="multiUserSystemPass" />
+            </node>
+          </node>
+        </node>
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="12378219275085707">
+          <node role="expr" roleId="c4fa.7254843406768833939" type="v7ag.PortAdapterOpCallExpr" typeId="v7ag.466603768608410221" id="12378219275085711">
+            <link role="operation" roleId="v7ag.8105003328815071752" targetNodeId="12378219275080849" resolveInfo="read" />
+            <node role="expression" roleId="mj1l.7254843406768839760" type="v7ag.PortAdapterRefExpr" typeId="v7ag.8105003328815039001" id="12378219275085708">
+              <link role="portAdater" roleId="v7ag.8105003328815039002" targetNodeId="12378219275085679" resolveInfo="multiUserSystemPass" />
+            </node>
+          </node>
+        </node>
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="12378219275085713">
+          <node role="expr" roleId="c4fa.7254843406768833939" type="v7ag.PortAdapterOpCallExpr" typeId="v7ag.466603768608410221" id="12378219275085717">
+            <link role="operation" roleId="v7ag.8105003328815071752" targetNodeId="12378219275080940" resolveInfo="suAdmin" />
+            <node role="expression" roleId="mj1l.7254843406768839760" type="v7ag.PortAdapterRefExpr" typeId="v7ag.8105003328815039001" id="12378219275085714">
+              <link role="portAdater" roleId="v7ag.8105003328815039002" targetNodeId="12378219275085679" resolveInfo="multiUserSystemPass" />
+            </node>
+          </node>
+        </node>
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="12378219275085719">
+          <node role="expr" roleId="c4fa.7254843406768833939" type="v7ag.PortAdapterOpCallExpr" typeId="v7ag.466603768608410221" id="12378219275085723">
+            <link role="operation" roleId="v7ag.8105003328815071752" targetNodeId="12378219275080856" resolveInfo="write" />
+            <node role="expression" roleId="mj1l.7254843406768839760" type="v7ag.PortAdapterRefExpr" typeId="v7ag.8105003328815039001" id="12378219275085720">
+              <link role="portAdater" roleId="v7ag.8105003328815039002" targetNodeId="12378219275085679" resolveInfo="multiUserSystemPass" />
+            </node>
+          </node>
+        </node>
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="12378219275085725">
+          <node role="expr" roleId="c4fa.7254843406768833939" type="v7ag.PortAdapterOpCallExpr" typeId="v7ag.466603768608410221" id="12378219275085729">
+            <link role="operation" roleId="v7ag.8105003328815071752" targetNodeId="12378219275080849" resolveInfo="read" />
+            <node role="expression" roleId="mj1l.7254843406768839760" type="v7ag.PortAdapterRefExpr" typeId="v7ag.8105003328815039001" id="12378219275085726">
+              <link role="portAdater" roleId="v7ag.8105003328815039002" targetNodeId="12378219275085679" resolveInfo="multiUserSystemPass" />
+            </node>
+          </node>
+        </node>
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="12378219275085731">
+          <node role="expr" roleId="c4fa.7254843406768833939" type="v7ag.PortAdapterOpCallExpr" typeId="v7ag.466603768608410221" id="12378219275085735">
+            <link role="operation" roleId="v7ag.8105003328815071752" targetNodeId="12378219275080899" resolveInfo="logout" />
+            <node role="expression" roleId="mj1l.7254843406768839760" type="v7ag.PortAdapterRefExpr" typeId="v7ag.8105003328815039001" id="12378219275085732">
+              <link role="portAdater" roleId="v7ag.8105003328815039002" targetNodeId="12378219275085679" resolveInfo="multiUserSystemPass" />
+            </node>
+          </node>
+        </node>
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="12378219275085743">
+          <node role="expr" roleId="c4fa.7254843406768833939" type="v7ag.PortAdapterOpCallExpr" typeId="v7ag.466603768608410221" id="12378219275085747">
+            <link role="operation" roleId="v7ag.8105003328815071752" targetNodeId="12378219275080868" resolveInfo="loginRoot" />
+            <node role="expression" roleId="mj1l.7254843406768839760" type="v7ag.PortAdapterRefExpr" typeId="v7ag.8105003328815039001" id="12378219275085744">
+              <link role="portAdater" roleId="v7ag.8105003328815039002" targetNodeId="12378219275085679" resolveInfo="multiUserSystemPass" />
+            </node>
+          </node>
+        </node>
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="12378219275085749">
+          <node role="expr" roleId="c4fa.7254843406768833939" type="v7ag.PortAdapterOpCallExpr" typeId="v7ag.466603768608410221" id="12378219275085753">
+            <link role="operation" roleId="v7ag.8105003328815071752" targetNodeId="12378219275080893" resolveInfo="changeRights" />
+            <node role="expression" roleId="mj1l.7254843406768839760" type="v7ag.PortAdapterRefExpr" typeId="v7ag.8105003328815039001" id="12378219275085750">
+              <link role="portAdater" roleId="v7ag.8105003328815039002" targetNodeId="12378219275085679" resolveInfo="multiUserSystemPass" />
+            </node>
+          </node>
+        </node>
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="12378219275085755">
+          <node role="expr" roleId="c4fa.7254843406768833939" type="v7ag.PortAdapterOpCallExpr" typeId="v7ag.466603768608410221" id="12378219275085759">
+            <link role="operation" roleId="v7ag.8105003328815071752" targetNodeId="12378219275080899" resolveInfo="logout" />
+            <node role="expression" roleId="mj1l.7254843406768839760" type="v7ag.PortAdapterRefExpr" typeId="v7ag.8105003328815039001" id="12378219275085756">
+              <link role="portAdater" roleId="v7ag.8105003328815039002" targetNodeId="12378219275085679" resolveInfo="multiUserSystemPass" />
+            </node>
+          </node>
+        </node>
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="12378219275085737">
+          <node role="expr" roleId="c4fa.7254843406768833939" type="v7ag.PortAdapterOpCallExpr" typeId="v7ag.466603768608410221" id="12378219275085741">
+            <link role="operation" roleId="v7ag.8105003328815071752" targetNodeId="12378219275080918" resolveInfo="exit" />
+            <node role="expression" roleId="mj1l.7254843406768839760" type="v7ag.PortAdapterRefExpr" typeId="v7ag.8105003328815039001" id="12378219275085738">
+              <link role="portAdater" roleId="v7ag.8105003328815039002" targetNodeId="12378219275085679" resolveInfo="multiUserSystemPass" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="12378219275085668">
+        <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+        <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+      </node>
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="12378219275085796">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1355507209457_20" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="12378219275085760">
+      <property name="name" nameId="tpck.1169194664001" value="multiUserSystemFailTest" />
+      <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="12378219275085761">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="12378219275085762">
+          <node role="expr" roleId="c4fa.7254843406768833939" type="v7ag.PortAdapterOpCallExpr" typeId="v7ag.466603768608410221" id="12378219275085763">
+            <link role="operation" roleId="v7ag.8105003328815071752" targetNodeId="12378219275076133" resolveInfo="startOperation" />
+            <node role="expression" roleId="mj1l.7254843406768839760" type="v7ag.PortAdapterRefExpr" typeId="v7ag.8105003328815039001" id="12378219275120956">
+              <link role="portAdater" roleId="v7ag.8105003328815039002" targetNodeId="12378219275085685" resolveInfo="multiUserSystemFail" />
+            </node>
+          </node>
+        </node>
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="12378219275085765">
+          <node role="expr" roleId="c4fa.7254843406768833939" type="v7ag.PortAdapterOpCallExpr" typeId="v7ag.466603768608410221" id="12378219275085766">
+            <link role="operation" roleId="v7ag.8105003328815071752" targetNodeId="12378219275080842" resolveInfo="loginUser" />
+            <node role="expression" roleId="mj1l.7254843406768839760" type="v7ag.PortAdapterRefExpr" typeId="v7ag.8105003328815039001" id="12378219275120957">
+              <link role="portAdater" roleId="v7ag.8105003328815039002" targetNodeId="12378219275085685" resolveInfo="multiUserSystemFail" />
+            </node>
+          </node>
+        </node>
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="12378219275085768">
+          <node role="expr" roleId="c4fa.7254843406768833939" type="v7ag.PortAdapterOpCallExpr" typeId="v7ag.466603768608410221" id="12378219275085769">
+            <link role="operation" roleId="v7ag.8105003328815071752" targetNodeId="12378219275080849" resolveInfo="read" />
+            <node role="expression" roleId="mj1l.7254843406768839760" type="v7ag.PortAdapterRefExpr" typeId="v7ag.8105003328815039001" id="12378219275120958">
+              <link role="portAdater" roleId="v7ag.8105003328815039002" targetNodeId="12378219275085685" resolveInfo="multiUserSystemFail" />
+            </node>
+          </node>
+        </node>
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="12378219275085771">
+          <node role="expr" roleId="c4fa.7254843406768833939" type="v7ag.PortAdapterOpCallExpr" typeId="v7ag.466603768608410221" id="12378219275085772">
+            <link role="operation" roleId="v7ag.8105003328815071752" targetNodeId="12378219275080940" resolveInfo="suAdmin" />
+            <node role="expression" roleId="mj1l.7254843406768839760" type="v7ag.PortAdapterRefExpr" typeId="v7ag.8105003328815039001" id="12378219275120959">
+              <link role="portAdater" roleId="v7ag.8105003328815039002" targetNodeId="12378219275085685" resolveInfo="multiUserSystemFail" />
+            </node>
+          </node>
+        </node>
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="12378219275085774">
+          <node role="expr" roleId="c4fa.7254843406768833939" type="v7ag.PortAdapterOpCallExpr" typeId="v7ag.466603768608410221" id="12378219275085775">
+            <link role="operation" roleId="v7ag.8105003328815071752" targetNodeId="12378219275080856" resolveInfo="write" />
+            <node role="expression" roleId="mj1l.7254843406768839760" type="v7ag.PortAdapterRefExpr" typeId="v7ag.8105003328815039001" id="12378219275120960">
+              <link role="portAdater" roleId="v7ag.8105003328815039002" targetNodeId="12378219275085685" resolveInfo="multiUserSystemFail" />
+            </node>
+          </node>
+        </node>
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="12378219275085799">
+          <node role="expr" roleId="c4fa.7254843406768833939" type="v7ag.PortAdapterOpCallExpr" typeId="v7ag.466603768608410221" id="12378219275085803">
+            <link role="operation" roleId="v7ag.8105003328815071752" targetNodeId="12378219275080931" resolveInfo="createProfile" />
+            <node role="expression" roleId="mj1l.7254843406768839760" type="v7ag.PortAdapterRefExpr" typeId="v7ag.8105003328815039001" id="12378219275120961">
+              <link role="portAdater" roleId="v7ag.8105003328815039002" targetNodeId="12378219275085685" resolveInfo="multiUserSystemFail" />
+            </node>
+          </node>
+        </node>
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="12378219275085777">
+          <node role="expr" roleId="c4fa.7254843406768833939" type="v7ag.PortAdapterOpCallExpr" typeId="v7ag.466603768608410221" id="12378219275085778">
+            <link role="operation" roleId="v7ag.8105003328815071752" targetNodeId="12378219275080849" resolveInfo="read" />
+            <node role="expression" roleId="mj1l.7254843406768839760" type="v7ag.PortAdapterRefExpr" typeId="v7ag.8105003328815039001" id="12378219275120962">
+              <link role="portAdater" roleId="v7ag.8105003328815039002" targetNodeId="12378219275085685" resolveInfo="multiUserSystemFail" />
+            </node>
+          </node>
+        </node>
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="12378219275085780">
+          <node role="expr" roleId="c4fa.7254843406768833939" type="v7ag.PortAdapterOpCallExpr" typeId="v7ag.466603768608410221" id="12378219275085781">
+            <link role="operation" roleId="v7ag.8105003328815071752" targetNodeId="12378219275080899" resolveInfo="logout" />
+            <node role="expression" roleId="mj1l.7254843406768839760" type="v7ag.PortAdapterRefExpr" typeId="v7ag.8105003328815039001" id="12378219275120963">
+              <link role="portAdater" roleId="v7ag.8105003328815039002" targetNodeId="12378219275085685" resolveInfo="multiUserSystemFail" />
+            </node>
+          </node>
+        </node>
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="12378219275085783">
+          <node role="expr" roleId="c4fa.7254843406768833939" type="v7ag.PortAdapterOpCallExpr" typeId="v7ag.466603768608410221" id="12378219275085784">
+            <link role="operation" roleId="v7ag.8105003328815071752" targetNodeId="12378219275080868" resolveInfo="loginRoot" />
+            <node role="expression" roleId="mj1l.7254843406768839760" type="v7ag.PortAdapterRefExpr" typeId="v7ag.8105003328815039001" id="12378219275120964">
+              <link role="portAdater" roleId="v7ag.8105003328815039002" targetNodeId="12378219275085685" resolveInfo="multiUserSystemFail" />
+            </node>
+          </node>
+        </node>
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="12378219275085786">
+          <node role="expr" roleId="c4fa.7254843406768833939" type="v7ag.PortAdapterOpCallExpr" typeId="v7ag.466603768608410221" id="12378219275085787">
+            <link role="operation" roleId="v7ag.8105003328815071752" targetNodeId="12378219275080893" resolveInfo="changeRights" />
+            <node role="expression" roleId="mj1l.7254843406768839760" type="v7ag.PortAdapterRefExpr" typeId="v7ag.8105003328815039001" id="12378219275120965">
+              <link role="portAdater" roleId="v7ag.8105003328815039002" targetNodeId="12378219275085685" resolveInfo="multiUserSystemFail" />
+            </node>
+          </node>
+        </node>
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="12378219275085789">
+          <node role="expr" roleId="c4fa.7254843406768833939" type="v7ag.PortAdapterOpCallExpr" typeId="v7ag.466603768608410221" id="12378219275085790">
+            <link role="operation" roleId="v7ag.8105003328815071752" targetNodeId="12378219275080899" resolveInfo="logout" />
+            <node role="expression" roleId="mj1l.7254843406768839760" type="v7ag.PortAdapterRefExpr" typeId="v7ag.8105003328815039001" id="12378219275120966">
+              <link role="portAdater" roleId="v7ag.8105003328815039002" targetNodeId="12378219275085685" resolveInfo="multiUserSystemFail" />
+            </node>
+          </node>
+        </node>
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="12378219275148704">
+          <node role="expr" roleId="c4fa.7254843406768833939" type="v7ag.PortAdapterOpCallExpr" typeId="v7ag.466603768608410221" id="12378219275148705">
+            <link role="operation" roleId="v7ag.8105003328815071752" targetNodeId="12378219275080868" resolveInfo="loginRoot" />
+            <node role="expression" roleId="mj1l.7254843406768839760" type="v7ag.PortAdapterRefExpr" typeId="v7ag.8105003328815039001" id="12378219275170515">
+              <link role="portAdater" roleId="v7ag.8105003328815039002" targetNodeId="12378219275085685" resolveInfo="multiUserSystemFail" />
+            </node>
+          </node>
+        </node>
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="12378219275148707">
+          <node role="expr" roleId="c4fa.7254843406768833939" type="v7ag.PortAdapterOpCallExpr" typeId="v7ag.466603768608410221" id="12378219275148708">
+            <link role="operation" roleId="v7ag.8105003328815071752" targetNodeId="12378219275080940" resolveInfo="suAdmin" />
+            <node role="expression" roleId="mj1l.7254843406768839760" type="v7ag.PortAdapterRefExpr" typeId="v7ag.8105003328815039001" id="12378219275170516">
+              <link role="portAdater" roleId="v7ag.8105003328815039002" targetNodeId="12378219275085685" resolveInfo="multiUserSystemFail" />
+            </node>
+          </node>
+        </node>
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="12378219275148714">
+          <node role="expr" roleId="c4fa.7254843406768833939" type="v7ag.PortAdapterOpCallExpr" typeId="v7ag.466603768608410221" id="12378219275148719">
+            <link role="operation" roleId="v7ag.8105003328815071752" targetNodeId="12378219275148686" resolveInfo="administrate" />
+            <node role="expression" roleId="mj1l.7254843406768839760" type="v7ag.PortAdapterRefExpr" typeId="v7ag.8105003328815039001" id="12378219275148715">
+              <link role="portAdater" roleId="v7ag.8105003328815039002" targetNodeId="12378219275085685" resolveInfo="multiUserSystemFail" />
+            </node>
+          </node>
+        </node>
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="12378219275148710">
+          <node role="expr" roleId="c4fa.7254843406768833939" type="v7ag.PortAdapterOpCallExpr" typeId="v7ag.466603768608410221" id="12378219275148711">
+            <link role="operation" roleId="v7ag.8105003328815071752" targetNodeId="12378219275080899" resolveInfo="logout" />
+            <node role="expression" roleId="mj1l.7254843406768839760" type="v7ag.PortAdapterRefExpr" typeId="v7ag.8105003328815039001" id="12378219275177633">
+              <link role="portAdater" roleId="v7ag.8105003328815039002" targetNodeId="12378219275085685" resolveInfo="multiUserSystemFail" />
+            </node>
+          </node>
+        </node>
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="12378219275085792">
+          <node role="expr" roleId="c4fa.7254843406768833939" type="v7ag.PortAdapterOpCallExpr" typeId="v7ag.466603768608410221" id="12378219275085793">
+            <link role="operation" roleId="v7ag.8105003328815071752" targetNodeId="12378219275080918" resolveInfo="exit" />
+            <node role="expression" roleId="mj1l.7254843406768839760" type="v7ag.PortAdapterRefExpr" typeId="v7ag.8105003328815039001" id="12378219275127885">
+              <link role="portAdater" roleId="v7ag.8105003328815039002" targetNodeId="12378219275085685" resolveInfo="multiUserSystemFail" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="12378219275085795">
+        <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+        <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+      </node>
+    </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="7292916771111301596">
       <property name="name" nameId="tpck.1169194664001" value="empty_1355494574020_1" />
     </node>
@@ -1662,7 +1932,18 @@
             <link role="function" roleId="x27k.5950410542643524493" targetNodeId="12378219274819146" resolveInfo="multiProviderTestFail" />
           </node>
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="7292916771111312416" />
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="12378219275120949" />
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="12378219275120951">
+          <node role="expr" roleId="c4fa.7254843406768833939" type="x27k.FunctionCall" typeId="x27k.5950410542643524492" id="12378219275120952">
+            <link role="function" roleId="x27k.5950410542643524493" targetNodeId="12378219275085669" resolveInfo="multiUserSystemPassTest" />
+          </node>
+        </node>
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="12378219275120954">
+          <node role="expr" roleId="c4fa.7254843406768833939" type="x27k.FunctionCall" typeId="x27k.5950410542643524492" id="12378219275120955">
+            <link role="function" roleId="x27k.5950410542643524493" targetNodeId="12378219275085760" resolveInfo="multiUserSystemFailTest" />
+          </node>
+        </node>
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="12378219275085662" />
         <node role="statements" roleId="c4fa.4185783222026475862" type="x27k.ReturnStatement" typeId="x27k.8967919205527146149" id="4207776615987918795">
           <node role="expression" roleId="x27k.8967919205527146150" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="4207776615987918796">
             <property name="value" nameId="mj1l.8860443239512128104" value="0" />
@@ -1707,6 +1988,9 @@
     </node>
     <node role="imports" roleId="x27k.1317894735999304826" type="x27k.ModuleImport" typeId="x27k.1317894735999299713" id="12378219274819135">
       <link role="module" roleId="x27k.1317894735999299714" targetNodeId="12378219274819068" resolveInfo="MultiProvider" />
+    </node>
+    <node role="imports" roleId="x27k.1317894735999304826" type="x27k.ModuleImport" typeId="x27k.1317894735999299713" id="12378219275085677">
+      <link role="module" roleId="x27k.1317894735999299714" targetNodeId="12378219275076130" resolveInfo="MultiUserSystem" />
     </node>
   </root>
   <root id="12378219274819068">
@@ -1881,6 +2165,617 @@
     </node>
     <node role="imports" roleId="x27k.1317894735999304826" type="x27k.ModuleImport" typeId="x27k.1317894735999299713" id="12378219274819073">
       <link role="module" roleId="x27k.1317894735999299714" targetNodeId="5327383046620205813" resolveInfo="Car" />
+    </node>
+  </root>
+  <root id="12378219275076130">
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="12378219275076131">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1353068231675_1" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="v7ag.ClientServerInterface" typeId="v7ag.4491876417845484922" id="12378219275076132">
+      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
+      <property name="name" nameId="tpck.1169194664001" value="ACLInterface" />
+      <link role="protocolErrorMsgTable" roleId="v7ag.6209278014151498295" targetNodeId="12378219275076235" resolveInfo="Messages" />
+      <link role="protocolErrorMsgDef" roleId="v7ag.6209278014151498296" targetNodeId="12378219275076236" resolveInfo="protocolFails" />
+      <node role="contents" roleId="v7ag.4491876417845484926" type="v7ag.Operation" typeId="v7ag.4491876417845484924" id="12378219275076133">
+        <property name="name" nameId="tpck.1169194664001" value="startOperation" />
+        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="12378219275076134">
+          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+        </node>
+        <node role="protocols" roleId="v7ag.6209278014151449991" type="v7ag.ProtocolSpec" typeId="v7ag.6209278014151449940" id="12378219275076135">
+          <node role="from" roleId="v7ag.6209278014151449964" type="v7ag.PsmInitState" typeId="v7ag.6209278014151449953" id="12378219275076136" />
+          <node role="to" roleId="v7ag.6209278014151449965" type="v7ag.PsmNewState" typeId="v7ag.6209278014151449943" id="12378219275076137">
+            <property name="name" nameId="tpck.1169194664001" value="LoggedOut" />
+          </node>
+        </node>
+      </node>
+      <node role="contents" roleId="v7ag.4491876417845484926" type="v7ag.Operation" typeId="v7ag.4491876417845484924" id="12378219275080842">
+        <property name="name" nameId="tpck.1169194664001" value="loginUser" />
+        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="12378219275080843">
+          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+        </node>
+        <node role="protocols" roleId="v7ag.6209278014151449991" type="v7ag.ProtocolSpec" typeId="v7ag.6209278014151449940" id="12378219275080845">
+          <node role="from" roleId="v7ag.6209278014151449964" type="v7ag.PsmRefState" typeId="v7ag.6209278014151449980" id="12378219275080846">
+            <link role="ref" roleId="v7ag.6209278014151449981" targetNodeId="12378219275076137" resolveInfo="LoggedOut" />
+          </node>
+          <node role="to" roleId="v7ag.6209278014151449965" type="v7ag.PsmNewState" typeId="v7ag.6209278014151449943" id="12378219275080847">
+            <property name="name" nameId="tpck.1169194664001" value="LoggedInUser" />
+          </node>
+        </node>
+      </node>
+      <node role="contents" roleId="v7ag.4491876417845484926" type="v7ag.Operation" typeId="v7ag.4491876417845484924" id="12378219275080862">
+        <property name="name" nameId="tpck.1169194664001" value="loginAdmin" />
+        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="12378219275080863">
+          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+        </node>
+        <node role="protocols" roleId="v7ag.6209278014151449991" type="v7ag.ProtocolSpec" typeId="v7ag.6209278014151449940" id="12378219275080865">
+          <node role="to" roleId="v7ag.6209278014151449965" type="v7ag.PsmNewState" typeId="v7ag.6209278014151449943" id="12378219275080866">
+            <property name="name" nameId="tpck.1169194664001" value="LoggedInAdmin" />
+          </node>
+          <node role="from" roleId="v7ag.6209278014151449964" type="v7ag.PsmRefState" typeId="v7ag.6209278014151449980" id="12378219275080867">
+            <link role="ref" roleId="v7ag.6209278014151449981" targetNodeId="12378219275076137" resolveInfo="LoggedOut" />
+          </node>
+        </node>
+      </node>
+      <node role="contents" roleId="v7ag.4491876417845484926" type="v7ag.Operation" typeId="v7ag.4491876417845484924" id="12378219275080868">
+        <property name="name" nameId="tpck.1169194664001" value="loginRoot" />
+        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="12378219275080869">
+          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+        </node>
+        <node role="protocols" roleId="v7ag.6209278014151449991" type="v7ag.ProtocolSpec" typeId="v7ag.6209278014151449940" id="12378219275080872">
+          <node role="from" roleId="v7ag.6209278014151449964" type="v7ag.PsmRefState" typeId="v7ag.6209278014151449980" id="12378219275080873">
+            <link role="ref" roleId="v7ag.6209278014151449981" targetNodeId="12378219275076137" resolveInfo="LoggedOut" />
+          </node>
+          <node role="to" roleId="v7ag.6209278014151449965" type="v7ag.PsmNewState" typeId="v7ag.6209278014151449943" id="12378219275080874">
+            <property name="name" nameId="tpck.1169194664001" value="LoggedInRoot" />
+          </node>
+        </node>
+      </node>
+      <node role="contents" roleId="v7ag.4491876417845484926" type="v7ag.Operation" typeId="v7ag.4491876417845484924" id="12378219275080849">
+        <property name="name" nameId="tpck.1169194664001" value="read" />
+        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="12378219275080850">
+          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+        </node>
+        <node role="protocols" roleId="v7ag.6209278014151449991" type="v7ag.ProtocolSpec" typeId="v7ag.6209278014151449940" id="12378219275080852">
+          <node role="from" roleId="v7ag.6209278014151449964" type="v7ag.PsmRefState" typeId="v7ag.6209278014151449980" id="12378219275080853">
+            <link role="ref" roleId="v7ag.6209278014151449981" targetNodeId="12378219275080847" resolveInfo="LoggedInUser" />
+          </node>
+          <node role="to" roleId="v7ag.6209278014151449965" type="v7ag.PsmRefState" typeId="v7ag.6209278014151449980" id="12378219275080854">
+            <link role="ref" roleId="v7ag.6209278014151449981" targetNodeId="12378219275080847" resolveInfo="LoggedInUser" />
+          </node>
+        </node>
+        <node role="protocols" roleId="v7ag.6209278014151449991" type="v7ag.ProtocolSpec" typeId="v7ag.6209278014151449940" id="12378219275080875">
+          <node role="from" roleId="v7ag.6209278014151449964" type="v7ag.PsmRefState" typeId="v7ag.6209278014151449980" id="12378219275080878">
+            <link role="ref" roleId="v7ag.6209278014151449981" targetNodeId="12378219275080866" resolveInfo="LoggedInAdmin" />
+          </node>
+          <node role="to" roleId="v7ag.6209278014151449965" type="v7ag.PsmRefState" typeId="v7ag.6209278014151449980" id="12378219275080879">
+            <link role="ref" roleId="v7ag.6209278014151449981" targetNodeId="12378219275080866" resolveInfo="LoggedInAdmin" />
+          </node>
+        </node>
+        <node role="protocols" roleId="v7ag.6209278014151449991" type="v7ag.ProtocolSpec" typeId="v7ag.6209278014151449940" id="12378219275080880">
+          <node role="from" roleId="v7ag.6209278014151449964" type="v7ag.PsmRefState" typeId="v7ag.6209278014151449980" id="12378219275080883">
+            <link role="ref" roleId="v7ag.6209278014151449981" targetNodeId="12378219275080874" resolveInfo="LoggedInRoot" />
+          </node>
+          <node role="to" roleId="v7ag.6209278014151449965" type="v7ag.PsmRefState" typeId="v7ag.6209278014151449980" id="12378219275080884">
+            <link role="ref" roleId="v7ag.6209278014151449981" targetNodeId="12378219275080874" resolveInfo="LoggedInRoot" />
+          </node>
+        </node>
+      </node>
+      <node role="contents" roleId="v7ag.4491876417845484926" type="v7ag.Operation" typeId="v7ag.4491876417845484924" id="12378219275080856">
+        <property name="name" nameId="tpck.1169194664001" value="write" />
+        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="12378219275080857">
+          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+        </node>
+        <node role="protocols" roleId="v7ag.6209278014151449991" type="v7ag.ProtocolSpec" typeId="v7ag.6209278014151449940" id="12378219275080885">
+          <node role="from" roleId="v7ag.6209278014151449964" type="v7ag.PsmRefState" typeId="v7ag.6209278014151449980" id="12378219275080886">
+            <link role="ref" roleId="v7ag.6209278014151449981" targetNodeId="12378219275080866" resolveInfo="LoggedInAdmin" />
+          </node>
+          <node role="to" roleId="v7ag.6209278014151449965" type="v7ag.PsmRefState" typeId="v7ag.6209278014151449980" id="12378219275080887">
+            <link role="ref" roleId="v7ag.6209278014151449981" targetNodeId="12378219275080866" resolveInfo="LoggedInAdmin" />
+          </node>
+        </node>
+        <node role="protocols" roleId="v7ag.6209278014151449991" type="v7ag.ProtocolSpec" typeId="v7ag.6209278014151449940" id="12378219275080889">
+          <node role="from" roleId="v7ag.6209278014151449964" type="v7ag.PsmRefState" typeId="v7ag.6209278014151449980" id="12378219275080890">
+            <link role="ref" roleId="v7ag.6209278014151449981" targetNodeId="12378219275080874" resolveInfo="LoggedInRoot" />
+          </node>
+          <node role="to" roleId="v7ag.6209278014151449965" type="v7ag.PsmRefState" typeId="v7ag.6209278014151449980" id="12378219275080891">
+            <link role="ref" roleId="v7ag.6209278014151449981" targetNodeId="12378219275080874" resolveInfo="LoggedInRoot" />
+          </node>
+        </node>
+      </node>
+      <node role="contents" roleId="v7ag.4491876417845484926" type="v7ag.Operation" typeId="v7ag.4491876417845484924" id="12378219275080893">
+        <property name="name" nameId="tpck.1169194664001" value="changeRights" />
+        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="12378219275080894">
+          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+        </node>
+        <node role="protocols" roleId="v7ag.6209278014151449991" type="v7ag.ProtocolSpec" typeId="v7ag.6209278014151449940" id="12378219275080895">
+          <node role="from" roleId="v7ag.6209278014151449964" type="v7ag.PsmRefState" typeId="v7ag.6209278014151449980" id="12378219275080896">
+            <link role="ref" roleId="v7ag.6209278014151449981" targetNodeId="12378219275080874" resolveInfo="LoggedInRoot" />
+          </node>
+          <node role="to" roleId="v7ag.6209278014151449965" type="v7ag.PsmRefState" typeId="v7ag.6209278014151449980" id="12378219275080897">
+            <link role="ref" roleId="v7ag.6209278014151449981" targetNodeId="12378219275080874" resolveInfo="LoggedInRoot" />
+          </node>
+        </node>
+      </node>
+      <node role="contents" roleId="v7ag.4491876417845484926" type="v7ag.Operation" typeId="v7ag.4491876417845484924" id="12378219275080931">
+        <property name="name" nameId="tpck.1169194664001" value="createProfile" />
+        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="12378219275080932">
+          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+        </node>
+        <node role="protocols" roleId="v7ag.6209278014151449991" type="v7ag.ProtocolSpec" typeId="v7ag.6209278014151449940" id="12378219275080933">
+          <node role="from" roleId="v7ag.6209278014151449964" type="v7ag.PsmRefState" typeId="v7ag.6209278014151449980" id="12378219275080934">
+            <link role="ref" roleId="v7ag.6209278014151449981" targetNodeId="12378219275080847" resolveInfo="LoggedInUser" />
+          </node>
+          <node role="to" roleId="v7ag.6209278014151449965" type="v7ag.PsmRefState" typeId="v7ag.6209278014151449980" id="12378219275080935">
+            <link role="ref" roleId="v7ag.6209278014151449981" targetNodeId="12378219275080847" resolveInfo="LoggedInUser" />
+          </node>
+        </node>
+      </node>
+      <node role="contents" roleId="v7ag.4491876417845484926" type="v7ag.Operation" typeId="v7ag.4491876417845484924" id="12378219275080940">
+        <property name="name" nameId="tpck.1169194664001" value="suAdmin" />
+        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="12378219275080941">
+          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+        </node>
+        <node role="protocols" roleId="v7ag.6209278014151449991" type="v7ag.ProtocolSpec" typeId="v7ag.6209278014151449940" id="12378219275080943">
+          <node role="from" roleId="v7ag.6209278014151449964" type="v7ag.PsmRefState" typeId="v7ag.6209278014151449980" id="12378219275080944">
+            <link role="ref" roleId="v7ag.6209278014151449981" targetNodeId="12378219275080847" resolveInfo="LoggedInUser" />
+          </node>
+          <node role="to" roleId="v7ag.6209278014151449965" type="v7ag.PsmRefState" typeId="v7ag.6209278014151449980" id="12378219275080945">
+            <link role="ref" roleId="v7ag.6209278014151449981" targetNodeId="12378219275080866" resolveInfo="LoggedInAdmin" />
+          </node>
+        </node>
+      </node>
+      <node role="contents" roleId="v7ag.4491876417845484926" type="v7ag.Operation" typeId="v7ag.4491876417845484924" id="12378219275148686">
+        <property name="name" nameId="tpck.1169194664001" value="administrate" />
+        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="12378219275148687">
+          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+        </node>
+        <node role="protocols" roleId="v7ag.6209278014151449991" type="v7ag.ProtocolSpec" typeId="v7ag.6209278014151449940" id="12378219275148689">
+          <node role="from" roleId="v7ag.6209278014151449964" type="v7ag.PsmRefState" typeId="v7ag.6209278014151449980" id="12378219275148690">
+            <link role="ref" roleId="v7ag.6209278014151449981" targetNodeId="12378219275080866" resolveInfo="LoggedInAdmin" />
+          </node>
+          <node role="to" roleId="v7ag.6209278014151449965" type="v7ag.PsmRefState" typeId="v7ag.6209278014151449980" id="12378219275148691">
+            <link role="ref" roleId="v7ag.6209278014151449981" targetNodeId="12378219275080866" resolveInfo="LoggedInAdmin" />
+          </node>
+        </node>
+      </node>
+      <node role="contents" roleId="v7ag.4491876417845484926" type="v7ag.Operation" typeId="v7ag.4491876417845484924" id="12378219275080899">
+        <property name="name" nameId="tpck.1169194664001" value="logout" />
+        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="12378219275080900">
+          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+        </node>
+        <node role="protocols" roleId="v7ag.6209278014151449991" type="v7ag.ProtocolSpec" typeId="v7ag.6209278014151449940" id="12378219275080902">
+          <node role="from" roleId="v7ag.6209278014151449964" type="v7ag.PsmRefState" typeId="v7ag.6209278014151449980" id="12378219275080903">
+            <link role="ref" roleId="v7ag.6209278014151449981" targetNodeId="12378219275080866" resolveInfo="LoggedInAdmin" />
+          </node>
+          <node role="to" roleId="v7ag.6209278014151449965" type="v7ag.PsmRefState" typeId="v7ag.6209278014151449980" id="12378219275080904">
+            <link role="ref" roleId="v7ag.6209278014151449981" targetNodeId="12378219275076137" resolveInfo="LoggedOut" />
+          </node>
+        </node>
+        <node role="protocols" roleId="v7ag.6209278014151449991" type="v7ag.ProtocolSpec" typeId="v7ag.6209278014151449940" id="12378219275080905">
+          <node role="from" roleId="v7ag.6209278014151449964" type="v7ag.PsmRefState" typeId="v7ag.6209278014151449980" id="12378219275080908">
+            <link role="ref" roleId="v7ag.6209278014151449981" targetNodeId="12378219275080874" resolveInfo="LoggedInRoot" />
+          </node>
+          <node role="to" roleId="v7ag.6209278014151449965" type="v7ag.PsmRefState" typeId="v7ag.6209278014151449980" id="12378219275080909">
+            <link role="ref" roleId="v7ag.6209278014151449981" targetNodeId="12378219275076137" resolveInfo="LoggedOut" />
+          </node>
+        </node>
+        <node role="protocols" roleId="v7ag.6209278014151449991" type="v7ag.ProtocolSpec" typeId="v7ag.6209278014151449940" id="12378219275080910">
+          <node role="from" roleId="v7ag.6209278014151449964" type="v7ag.PsmRefState" typeId="v7ag.6209278014151449980" id="12378219275080913">
+            <link role="ref" roleId="v7ag.6209278014151449981" targetNodeId="12378219275080847" resolveInfo="LoggedInUser" />
+          </node>
+          <node role="to" roleId="v7ag.6209278014151449965" type="v7ag.PsmRefState" typeId="v7ag.6209278014151449980" id="12378219275080914">
+            <link role="ref" roleId="v7ag.6209278014151449981" targetNodeId="12378219275076137" resolveInfo="LoggedOut" />
+          </node>
+        </node>
+      </node>
+      <node role="contents" roleId="v7ag.4491876417845484926" type="v7ag.Operation" typeId="v7ag.4491876417845484924" id="12378219275080918">
+        <property name="name" nameId="tpck.1169194664001" value="exit" />
+        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="12378219275080919">
+          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+        </node>
+        <node role="protocols" roleId="v7ag.6209278014151449991" type="v7ag.ProtocolSpec" typeId="v7ag.6209278014151449940" id="12378219275080921">
+          <node role="from" roleId="v7ag.6209278014151449964" type="v7ag.PsmRefState" typeId="v7ag.6209278014151449980" id="12378219275080922">
+            <link role="ref" roleId="v7ag.6209278014151449981" targetNodeId="12378219275076137" resolveInfo="LoggedOut" />
+          </node>
+          <node role="to" roleId="v7ag.6209278014151449965" type="v7ag.PsmInitState" typeId="v7ag.6209278014151449953" id="12378219275080923" />
+        </node>
+      </node>
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="12378219275076200">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1353586420795_5" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="v7ag.AtomicComponent" typeId="v7ag.4491876417845649011" id="12378219275080947">
+      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
+      <property name="name" nameId="tpck.1169194664001" value="MultiUserSystemPass" />
+      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.ProvidedPort" typeId="v7ag.4491876417845628840" id="12378219275080948">
+        <property name="name" nameId="tpck.1169194664001" value="multiUserSystem" />
+        <link role="intf" roleId="v7ag.4491876417845484932" targetNodeId="12378219275076132" resolveInfo="ACLInterface" />
+      </node>
+      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="12378219275080949">
+        <property name="name" nameId="tpck.1169194664001" value="multiUserSystem_startOperation" />
+        <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="12378219275080950">
+          <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="12378219275080951" />
+        </node>
+        <node role="trigger" roleId="v7ag.4491876417845643892" type="v7ag.OperationTrigger" typeId="v7ag.4491876417845641677" id="12378219275080952">
+          <link role="providedPort" roleId="v7ag.4491876417845673829" targetNodeId="12378219275080948" resolveInfo="multiUserSystem" />
+          <link role="calledOperation" roleId="v7ag.4491876417845641678" targetNodeId="12378219275076133" resolveInfo="startOperation" />
+        </node>
+        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="12378219275080953">
+          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+        </node>
+      </node>
+      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="12378219275080954">
+        <property name="name" nameId="tpck.1169194664001" value="multiUserSystem_loginUser" />
+        <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="12378219275080955">
+          <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="12378219275080956" />
+        </node>
+        <node role="trigger" roleId="v7ag.4491876417845643892" type="v7ag.OperationTrigger" typeId="v7ag.4491876417845641677" id="12378219275080957">
+          <link role="providedPort" roleId="v7ag.4491876417845673829" targetNodeId="12378219275080948" resolveInfo="multiUserSystem" />
+          <link role="calledOperation" roleId="v7ag.4491876417845641678" targetNodeId="12378219275080842" resolveInfo="loginUser" />
+        </node>
+        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="12378219275080958">
+          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+        </node>
+      </node>
+      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="12378219275080959">
+        <property name="name" nameId="tpck.1169194664001" value="multiUserSystem_loginAdmin" />
+        <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="12378219275080960">
+          <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="12378219275080961" />
+        </node>
+        <node role="trigger" roleId="v7ag.4491876417845643892" type="v7ag.OperationTrigger" typeId="v7ag.4491876417845641677" id="12378219275080962">
+          <link role="providedPort" roleId="v7ag.4491876417845673829" targetNodeId="12378219275080948" resolveInfo="multiUserSystem" />
+          <link role="calledOperation" roleId="v7ag.4491876417845641678" targetNodeId="12378219275080862" resolveInfo="loginAdmin" />
+        </node>
+        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="12378219275080963">
+          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+        </node>
+      </node>
+      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="12378219275080964">
+        <property name="name" nameId="tpck.1169194664001" value="multiUserSystem_loginRoot" />
+        <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="12378219275080965">
+          <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="12378219275080966" />
+        </node>
+        <node role="trigger" roleId="v7ag.4491876417845643892" type="v7ag.OperationTrigger" typeId="v7ag.4491876417845641677" id="12378219275080967">
+          <link role="providedPort" roleId="v7ag.4491876417845673829" targetNodeId="12378219275080948" resolveInfo="multiUserSystem" />
+          <link role="calledOperation" roleId="v7ag.4491876417845641678" targetNodeId="12378219275080868" resolveInfo="loginRoot" />
+        </node>
+        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="12378219275080968">
+          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+        </node>
+      </node>
+      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="12378219275080969">
+        <property name="name" nameId="tpck.1169194664001" value="multiUserSystem_read" />
+        <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="12378219275080970">
+          <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="12378219275080971" />
+        </node>
+        <node role="trigger" roleId="v7ag.4491876417845643892" type="v7ag.OperationTrigger" typeId="v7ag.4491876417845641677" id="12378219275080972">
+          <link role="providedPort" roleId="v7ag.4491876417845673829" targetNodeId="12378219275080948" resolveInfo="multiUserSystem" />
+          <link role="calledOperation" roleId="v7ag.4491876417845641678" targetNodeId="12378219275080849" resolveInfo="read" />
+        </node>
+        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="12378219275080973">
+          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+        </node>
+      </node>
+      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="12378219275080974">
+        <property name="name" nameId="tpck.1169194664001" value="multiUserSystem_write" />
+        <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="12378219275080975">
+          <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="12378219275080976" />
+        </node>
+        <node role="trigger" roleId="v7ag.4491876417845643892" type="v7ag.OperationTrigger" typeId="v7ag.4491876417845641677" id="12378219275080977">
+          <link role="providedPort" roleId="v7ag.4491876417845673829" targetNodeId="12378219275080948" resolveInfo="multiUserSystem" />
+          <link role="calledOperation" roleId="v7ag.4491876417845641678" targetNodeId="12378219275080856" resolveInfo="write" />
+        </node>
+        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="12378219275080978">
+          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+        </node>
+      </node>
+      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="12378219275080979">
+        <property name="name" nameId="tpck.1169194664001" value="multiUserSystem_changeRights" />
+        <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="12378219275080980">
+          <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="12378219275080981" />
+        </node>
+        <node role="trigger" roleId="v7ag.4491876417845643892" type="v7ag.OperationTrigger" typeId="v7ag.4491876417845641677" id="12378219275080982">
+          <link role="providedPort" roleId="v7ag.4491876417845673829" targetNodeId="12378219275080948" resolveInfo="multiUserSystem" />
+          <link role="calledOperation" roleId="v7ag.4491876417845641678" targetNodeId="12378219275080893" resolveInfo="changeRights" />
+        </node>
+        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="12378219275080983">
+          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+        </node>
+      </node>
+      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="12378219275080984">
+        <property name="name" nameId="tpck.1169194664001" value="multiUserSystem_createProfile" />
+        <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="12378219275080985">
+          <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="12378219275080986" />
+        </node>
+        <node role="trigger" roleId="v7ag.4491876417845643892" type="v7ag.OperationTrigger" typeId="v7ag.4491876417845641677" id="12378219275080987">
+          <link role="providedPort" roleId="v7ag.4491876417845673829" targetNodeId="12378219275080948" resolveInfo="multiUserSystem" />
+          <link role="calledOperation" roleId="v7ag.4491876417845641678" targetNodeId="12378219275080931" resolveInfo="createProfile" />
+        </node>
+        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="12378219275080988">
+          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+        </node>
+      </node>
+      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="12378219275080989">
+        <property name="name" nameId="tpck.1169194664001" value="multiUserSystem_suAdmin" />
+        <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="12378219275080990">
+          <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="12378219275080991" />
+        </node>
+        <node role="trigger" roleId="v7ag.4491876417845643892" type="v7ag.OperationTrigger" typeId="v7ag.4491876417845641677" id="12378219275080992">
+          <link role="providedPort" roleId="v7ag.4491876417845673829" targetNodeId="12378219275080948" resolveInfo="multiUserSystem" />
+          <link role="calledOperation" roleId="v7ag.4491876417845641678" targetNodeId="12378219275080940" resolveInfo="suAdmin" />
+        </node>
+        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="12378219275080993">
+          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+        </node>
+      </node>
+      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="12378219275080994">
+        <property name="name" nameId="tpck.1169194664001" value="multiUserSystem_logout" />
+        <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="12378219275080995">
+          <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="12378219275080996" />
+        </node>
+        <node role="trigger" roleId="v7ag.4491876417845643892" type="v7ag.OperationTrigger" typeId="v7ag.4491876417845641677" id="12378219275080997">
+          <link role="providedPort" roleId="v7ag.4491876417845673829" targetNodeId="12378219275080948" resolveInfo="multiUserSystem" />
+          <link role="calledOperation" roleId="v7ag.4491876417845641678" targetNodeId="12378219275080899" resolveInfo="logout" />
+        </node>
+        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="12378219275080998">
+          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+        </node>
+      </node>
+      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="12378219275080999">
+        <property name="name" nameId="tpck.1169194664001" value="multiUserSystem_exit" />
+        <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="12378219275081000">
+          <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="12378219275081001" />
+        </node>
+        <node role="trigger" roleId="v7ag.4491876417845643892" type="v7ag.OperationTrigger" typeId="v7ag.4491876417845641677" id="12378219275081002">
+          <link role="providedPort" roleId="v7ag.4491876417845673829" targetNodeId="12378219275080948" resolveInfo="multiUserSystem" />
+          <link role="calledOperation" roleId="v7ag.4491876417845641678" targetNodeId="12378219275080918" resolveInfo="exit" />
+        </node>
+        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="12378219275081003">
+          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+        </node>
+      </node>
+      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="12378219275148692">
+        <property name="name" nameId="tpck.1169194664001" value="multiUserSystem_administrate" />
+        <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="12378219275148693">
+          <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="12378219275148694" />
+        </node>
+        <node role="trigger" roleId="v7ag.4491876417845643892" type="v7ag.OperationTrigger" typeId="v7ag.4491876417845641677" id="12378219275148695">
+          <link role="providedPort" roleId="v7ag.4491876417845673829" targetNodeId="12378219275080948" resolveInfo="multiUserSystem" />
+          <link role="calledOperation" roleId="v7ag.4491876417845641678" targetNodeId="12378219275148686" resolveInfo="administrate" />
+        </node>
+        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="12378219275148696">
+          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+        </node>
+      </node>
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="v7ag.AtomicComponent" typeId="v7ag.4491876417845649011" id="12378219275081004">
+      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
+      <property name="name" nameId="tpck.1169194664001" value="MultiUserSystemFail" />
+      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.ProvidedPort" typeId="v7ag.4491876417845628840" id="12378219275081005">
+        <property name="name" nameId="tpck.1169194664001" value="multiUserSystem" />
+        <link role="intf" roleId="v7ag.4491876417845484932" targetNodeId="12378219275076132" resolveInfo="ACLInterface" />
+      </node>
+      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="12378219275081006">
+        <property name="name" nameId="tpck.1169194664001" value="multiUserSystem_startOperation" />
+        <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="12378219275081007">
+          <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="12378219275081008" />
+        </node>
+        <node role="trigger" roleId="v7ag.4491876417845643892" type="v7ag.OperationTrigger" typeId="v7ag.4491876417845641677" id="12378219275081009">
+          <link role="providedPort" roleId="v7ag.4491876417845673829" targetNodeId="12378219275081005" resolveInfo="multiUserSystem" />
+          <link role="calledOperation" roleId="v7ag.4491876417845641678" targetNodeId="12378219275076133" resolveInfo="startOperation" />
+        </node>
+        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="12378219275081010">
+          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+        </node>
+      </node>
+      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="12378219275081011">
+        <property name="name" nameId="tpck.1169194664001" value="multiUserSystem_loginUser" />
+        <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="12378219275081012">
+          <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="12378219275081013" />
+        </node>
+        <node role="trigger" roleId="v7ag.4491876417845643892" type="v7ag.OperationTrigger" typeId="v7ag.4491876417845641677" id="12378219275081014">
+          <link role="providedPort" roleId="v7ag.4491876417845673829" targetNodeId="12378219275081005" resolveInfo="multiUserSystem" />
+          <link role="calledOperation" roleId="v7ag.4491876417845641678" targetNodeId="12378219275080842" resolveInfo="loginUser" />
+        </node>
+        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="12378219275081015">
+          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+        </node>
+      </node>
+      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="12378219275081016">
+        <property name="name" nameId="tpck.1169194664001" value="multiUserSystem_loginAdmin" />
+        <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="12378219275081017">
+          <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="12378219275081018" />
+        </node>
+        <node role="trigger" roleId="v7ag.4491876417845643892" type="v7ag.OperationTrigger" typeId="v7ag.4491876417845641677" id="12378219275081019">
+          <link role="providedPort" roleId="v7ag.4491876417845673829" targetNodeId="12378219275081005" resolveInfo="multiUserSystem" />
+          <link role="calledOperation" roleId="v7ag.4491876417845641678" targetNodeId="12378219275080862" resolveInfo="loginAdmin" />
+        </node>
+        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="12378219275081020">
+          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+        </node>
+      </node>
+      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="12378219275081021">
+        <property name="name" nameId="tpck.1169194664001" value="multiUserSystem_loginRoot" />
+        <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="12378219275081022">
+          <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="12378219275081023" />
+        </node>
+        <node role="trigger" roleId="v7ag.4491876417845643892" type="v7ag.OperationTrigger" typeId="v7ag.4491876417845641677" id="12378219275081024">
+          <link role="providedPort" roleId="v7ag.4491876417845673829" targetNodeId="12378219275081005" resolveInfo="multiUserSystem" />
+          <link role="calledOperation" roleId="v7ag.4491876417845641678" targetNodeId="12378219275080868" resolveInfo="loginRoot" />
+        </node>
+        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="12378219275081025">
+          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+        </node>
+      </node>
+      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="12378219275081026">
+        <property name="name" nameId="tpck.1169194664001" value="multiUserSystem_read" />
+        <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="12378219275081027">
+          <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="12378219275081028" />
+        </node>
+        <node role="trigger" roleId="v7ag.4491876417845643892" type="v7ag.OperationTrigger" typeId="v7ag.4491876417845641677" id="12378219275081029">
+          <link role="providedPort" roleId="v7ag.4491876417845673829" targetNodeId="12378219275081005" resolveInfo="multiUserSystem" />
+          <link role="calledOperation" roleId="v7ag.4491876417845641678" targetNodeId="12378219275080849" resolveInfo="read" />
+        </node>
+        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="12378219275081030">
+          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+        </node>
+      </node>
+      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="12378219275081031">
+        <property name="name" nameId="tpck.1169194664001" value="multiUserSystem_write" />
+        <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="12378219275081032">
+          <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="12378219275081033" />
+        </node>
+        <node role="trigger" roleId="v7ag.4491876417845643892" type="v7ag.OperationTrigger" typeId="v7ag.4491876417845641677" id="12378219275081034">
+          <link role="providedPort" roleId="v7ag.4491876417845673829" targetNodeId="12378219275081005" resolveInfo="multiUserSystem" />
+          <link role="calledOperation" roleId="v7ag.4491876417845641678" targetNodeId="12378219275080856" resolveInfo="write" />
+        </node>
+        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="12378219275081035">
+          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+        </node>
+      </node>
+      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="12378219275081036">
+        <property name="name" nameId="tpck.1169194664001" value="multiUserSystem_changeRights" />
+        <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="12378219275081037">
+          <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="12378219275081038" />
+        </node>
+        <node role="trigger" roleId="v7ag.4491876417845643892" type="v7ag.OperationTrigger" typeId="v7ag.4491876417845641677" id="12378219275081039">
+          <link role="providedPort" roleId="v7ag.4491876417845673829" targetNodeId="12378219275081005" resolveInfo="multiUserSystem" />
+          <link role="calledOperation" roleId="v7ag.4491876417845641678" targetNodeId="12378219275080893" resolveInfo="changeRights" />
+        </node>
+        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="12378219275081040">
+          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+        </node>
+      </node>
+      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="12378219275081041">
+        <property name="name" nameId="tpck.1169194664001" value="multiUserSystem_createProfile" />
+        <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="12378219275081042">
+          <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="12378219275081043" />
+        </node>
+        <node role="trigger" roleId="v7ag.4491876417845643892" type="v7ag.OperationTrigger" typeId="v7ag.4491876417845641677" id="12378219275081044">
+          <link role="providedPort" roleId="v7ag.4491876417845673829" targetNodeId="12378219275081005" resolveInfo="multiUserSystem" />
+          <link role="calledOperation" roleId="v7ag.4491876417845641678" targetNodeId="12378219275080931" resolveInfo="createProfile" />
+        </node>
+        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="12378219275081045">
+          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+        </node>
+      </node>
+      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="12378219275081046">
+        <property name="name" nameId="tpck.1169194664001" value="multiUserSystem_suAdmin" />
+        <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="12378219275081047">
+          <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="12378219275081048" />
+        </node>
+        <node role="trigger" roleId="v7ag.4491876417845643892" type="v7ag.OperationTrigger" typeId="v7ag.4491876417845641677" id="12378219275081049">
+          <link role="providedPort" roleId="v7ag.4491876417845673829" targetNodeId="12378219275081005" resolveInfo="multiUserSystem" />
+          <link role="calledOperation" roleId="v7ag.4491876417845641678" targetNodeId="12378219275080940" resolveInfo="suAdmin" />
+        </node>
+        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="12378219275081050">
+          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+        </node>
+      </node>
+      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="12378219275081051">
+        <property name="name" nameId="tpck.1169194664001" value="multiUserSystem_logout" />
+        <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="12378219275081052">
+          <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="12378219275081053" />
+        </node>
+        <node role="trigger" roleId="v7ag.4491876417845643892" type="v7ag.OperationTrigger" typeId="v7ag.4491876417845641677" id="12378219275081054">
+          <link role="providedPort" roleId="v7ag.4491876417845673829" targetNodeId="12378219275081005" resolveInfo="multiUserSystem" />
+          <link role="calledOperation" roleId="v7ag.4491876417845641678" targetNodeId="12378219275080899" resolveInfo="logout" />
+        </node>
+        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="12378219275081055">
+          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+        </node>
+      </node>
+      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="12378219275081056">
+        <property name="name" nameId="tpck.1169194664001" value="multiUserSystem_exit" />
+        <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="12378219275081057">
+          <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="12378219275081058" />
+        </node>
+        <node role="trigger" roleId="v7ag.4491876417845643892" type="v7ag.OperationTrigger" typeId="v7ag.4491876417845641677" id="12378219275081059">
+          <link role="providedPort" roleId="v7ag.4491876417845673829" targetNodeId="12378219275081005" resolveInfo="multiUserSystem" />
+          <link role="calledOperation" roleId="v7ag.4491876417845641678" targetNodeId="12378219275080918" resolveInfo="exit" />
+        </node>
+        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="12378219275081060">
+          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+        </node>
+      </node>
+      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="12378219275148697">
+        <property name="name" nameId="tpck.1169194664001" value="multiUserSystem_administrate" />
+        <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="12378219275148698">
+          <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="12378219275148699" />
+        </node>
+        <node role="trigger" roleId="v7ag.4491876417845643892" type="v7ag.OperationTrigger" typeId="v7ag.4491876417845641677" id="12378219275148700">
+          <link role="providedPort" roleId="v7ag.4491876417845673829" targetNodeId="12378219275081005" resolveInfo="multiUserSystem" />
+          <link role="calledOperation" roleId="v7ag.4491876417845641678" targetNodeId="12378219275148686" resolveInfo="administrate" />
+        </node>
+        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="12378219275148701">
+          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+        </node>
+      </node>
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="12378219275076233">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1354282004422_2" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="12378219275076234">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1353068234443_2" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="k146.MessageDefinitionTable" typeId="k146.2688792604367903085" id="12378219275076235">
+      <property name="name" nameId="tpck.1169194664001" value="Messages" />
+      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
+      <node role="messages" roleId="k146.2688792604367903095" type="k146.MessageDefinition" typeId="k146.2688792604367903087" id="12378219275076236">
+        <property name="active" nameId="k146.2688792604367947988" value="true" />
+        <property name="name" nameId="tpck.1169194664001" value="protocolFails" />
+        <property name="text" nameId="k146.2688792604367903089" value="Protocol fails" />
+        <node role="properties" roleId="k146.767515563077204474" type="k146.MessageProperty" typeId="k146.767515563077204464" id="12378219275076237">
+          <property name="name" nameId="tpck.1169194664001" value="id1" />
+          <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="12378219275076238">
+            <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+            <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+          </node>
+        </node>
+        <node role="properties" roleId="k146.767515563077204474" type="k146.MessageProperty" typeId="k146.767515563077204464" id="12378219275076239">
+          <property name="name" nameId="tpck.1169194664001" value="id2" />
+          <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="12378219275076240">
+            <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+            <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+          </node>
+        </node>
+      </node>
     </node>
   </root>
 </model>
