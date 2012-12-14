@@ -87,7 +87,7 @@
   
   
   <target name="build-tests" depends="init">
-    <mps.generate parallelMode="true" fork="true" failonerror="true">
+    <mps.generate parallelMode="false" fork="true" failonerror="true">
       <macro name="mbeddr.github.core.home" path="${mbeddr.github.core.home}"/>
       <jvmargs refid="myargs"/>
       <library name="util.project" dir="${utilLanguageDir}"/>                                                                                                
