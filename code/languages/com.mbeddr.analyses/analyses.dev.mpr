@@ -39,6 +39,7 @@
       <modulePath path="${project}/languages/com.mbeddr.analyses.yices/yices.mpl" folder="yices" />
       <modulePath path="${project}/tests/test.analyses.cbmc/cbmc.msd" folder="test.cbmc" />
       <modulePath path="${project}/tests/test.analysis.formsera/formsera.msd" folder="test" />
+      <modulePath path="${project}/tests/test.analysis.nfm/nfm.msd" folder="test" />
       <modulePath path="${project}/tests/test.ex.analyses.nusmv/solution.msd" folder="test.nusmv" />
       <modulePath path="${project}/tests/test.ex.analyses.yices/yices.msd" folder="test.yices" />
       <modulePath path="${project}/tests/test.ts.analyses.fm/fm.msd" folder="test.yices" />
