@@ -39,6 +39,7 @@
         <depends>com.mbeddr.mpsutil</depends>
         <depends>com.mbeddr.core</depends>
         <depends>com.mbeddr.ext.components</depends>
+        <depends>com.mbeddr.analyses.yices</depends>
         
         <extensions defaultExtensionNs="com.intellij">
           <mps.LanguageLibrary dir="/languages" />
