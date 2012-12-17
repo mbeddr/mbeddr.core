@@ -314,7 +314,9 @@
       </node>
     </node>
     <node role="configurationItems" roleId="vs0r.4459718605982007338" type="v7ag.ComponentsConfigItem" typeId="v7ag.2103658896110121032" id="7736524361202625671">
-      <node role="genStrategy" roleId="v7ag.2103658896110238743" type="p7vm.NoMwComponentsGenStrategy" typeId="p7vm.2103658896110278831" id="7736524361202625672" />
+      <node role="genStrategy" roleId="v7ag.2103658896110238743" type="p7vm.NoMwComponentsGenStrategy" typeId="p7vm.2103658896110278831" id="7736524361202625672">
+        <property name="generateContracts" nameId="p7vm.4768833643347725006" value="true" />
+      </node>
     </node>
     <node role="binaries" roleId="51wr.5046689135694070731" type="51wr.Executable" typeId="51wr.5046689135693761554" id="7736524361202625673">
       <property name="name" nameId="tpck.1169194664001" value="HelloWorld" />

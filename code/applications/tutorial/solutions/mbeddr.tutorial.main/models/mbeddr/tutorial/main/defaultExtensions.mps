@@ -341,7 +341,9 @@
       <link role="container" roleId="3c6d.9035511730050143261" targetNodeId="8135882712510776073" resolveInfo="Units Declarations (mbeddr.tutorial.main.m1)" />
     </node>
     <node role="configurationItems" roleId="vs0r.4459718605982007338" type="v7ag.ComponentsConfigItem" typeId="v7ag.2103658896110121032" id="1731059994647804473">
-      <node role="genStrategy" roleId="v7ag.2103658896110238743" type="p7vm.NoMwComponentsGenStrategy" typeId="p7vm.2103658896110278831" id="1731059994647804475" />
+      <node role="genStrategy" roleId="v7ag.2103658896110238743" type="p7vm.NoMwComponentsGenStrategy" typeId="p7vm.2103658896110278831" id="1731059994647804475">
+        <property name="generateContracts" nameId="p7vm.4768833643347725006" value="true" />
+      </node>
     </node>
     <node role="configurationItems" roleId="vs0r.4459718605982007338" type="yvrq.VarRTConfigItem" typeId="yvrq.8882953773355809617" id="869116753978169842" />
     <node role="configurationItems" roleId="vs0r.4459718605982007338" type="rbly.VariabilityConfigItem" typeId="rbly.4055870397237196333" id="869116753978169844">

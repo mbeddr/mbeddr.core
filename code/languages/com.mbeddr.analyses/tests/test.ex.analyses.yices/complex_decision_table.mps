@@ -307,7 +307,9 @@
       <node role="strategy" roleId="k146.4459718605982051999" type="k146.PrintfReportingStrategy" typeId="k146.4459718605982051980" id="6927655684020185004" />
     </node>
     <node role="configurationItems" roleId="vs0r.4459718605982007338" type="v7ag.ComponentsConfigItem" typeId="v7ag.2103658896110121032" id="6927655684020186087">
-      <node role="genStrategy" roleId="v7ag.2103658896110238743" type="p7vm.NoMwComponentsGenStrategy" typeId="p7vm.2103658896110278831" id="6927655684020186089" />
+      <node role="genStrategy" roleId="v7ag.2103658896110238743" type="p7vm.NoMwComponentsGenStrategy" typeId="p7vm.2103658896110278831" id="6927655684020186089">
+        <property name="generateContracts" nameId="p7vm.4768833643347725006" value="true" />
+      </node>
     </node>
     <node role="configurationItems" roleId="vs0r.4459718605982007338" type="3c6d.PhysicalUnitsConfigItem" typeId="3c6d.9035511730050139082" id="6927655684020320797">
       <link role="container" roleId="3c6d.9035511730050143261" targetNodeId="6927655684020185095" resolveInfo="Units Declarations (complex_decision_table)" />

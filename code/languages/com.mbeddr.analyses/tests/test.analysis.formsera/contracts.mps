@@ -472,6 +472,7 @@
     <node role="configurationItems" roleId="vs0r.4459718605982007338" type="v7ag.ComponentsConfigItem" typeId="v7ag.2103658896110121032" id="7156706072328209560">
       <node role="genStrategy" roleId="v7ag.2103658896110238743" type="p7vm.NoMwComponentsGenStrategy" typeId="p7vm.2103658896110278831" id="7156706072328209562">
         <property name="wireStatically" nameId="p7vm.1553713790141527405" value="true" />
+        <property name="generateContracts" nameId="p7vm.4768833643347725006" value="true" />
         <link role="instanceConfig" roleId="p7vm.1553713790141527407" targetNodeId="7156706072328209271" resolveInfo="comp" />
       </node>
     </node>
