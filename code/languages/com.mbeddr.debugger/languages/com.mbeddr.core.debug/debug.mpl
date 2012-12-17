@@ -15,6 +15,7 @@
     <dependency reexport="false">cc7da2f6-419f-4133-a811-31fcd3295a85(jetbrains.mps.debugger.api.api)</dependency>
     <dependency reexport="false">8d29d73f-ed99-4652-ae0a-083cdfe53c34(jetbrains.mps.ide.platform)</dependency>
     <dependency reexport="false">63650c59-16c8-498a-99c8-005c7ee9515d(jetbrains.mps.lang.access)</dependency>
+    <dependency reexport="false">fa1d9f5d-d5ce-44c5-94ac-ba5f1a1fba8e(test.debugger.core)</dependency>
   </dependencies>
   <usedLanguages>
     <usedLanguage>f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)</usedLanguage>
