@@ -22,6 +22,9 @@
     <node type="tp5g.NodesTestCase" typeId="tp5g.1216913645126" id="12378219275019316">
       <property name="name" nameId="tpck.1169194664001" value="ProtocolGeneralTests" />
     </node>
+    <node type="tp5g.TestInfo" typeId="tp5g.5097124989038916362" id="1190855822935839877">
+      <property name="projectPath" nameId="tp5g.5097124989038916363" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.analyses/analyses.dev.mpr" />
+    </node>
   </roots>
   <root id="12378219274955012">
     <node role="testMethods" roleId="tp5g.1217501895093" type="tp5g.SimpleNodeTest" typeId="tp5g.1225978065297" id="12378219274955013">
@@ -1605,5 +1608,6 @@
       </node>
     </node>
   </root>
+  <root id="1190855822935839877" />
 </model>
 
