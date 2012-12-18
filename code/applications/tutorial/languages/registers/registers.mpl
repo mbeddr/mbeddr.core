@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<language namespace="mbeddr.tutorial.registers" uuid="ce969c28-3d5b-4211-97ff-2e336488daeb" doNotGenerateAdapters="true">
+<language namespace="mbeddr.tutorial.registers" uuid="ce969c28-3d5b-4211-97ff-2e336488ffff" doNotGenerateAdapters="true">
   <models>
     <modelRoot path="${language_descriptor}/languageModels" />
   </models>
@@ -28,7 +28,7 @@
         <usedLanguage>d7706f63-9be2-479c-a3da-ae92af1e64d5(jetbrains.mps.lang.generator.generationContext)</usedLanguage>
         <usedLanguage>13744753-c81f-424a-9c1b-cf8943bf4e86(jetbrains.mps.lang.sharedConcepts)</usedLanguage>
         <usedLanguage>7a5dda62-9140-4668-ab76-d5ed1746f2b2(jetbrains.mps.lang.typesystem)</usedLanguage>
-        <usedLanguage>ce969c28-3d5b-4211-97ff-2e336488daeb(mbeddr.tutorial.registers)</usedLanguage>
+        <usedLanguage>ce969c28-3d5b-4211-97ff-2e336488ffff(mbeddr.tutorial.registers)</usedLanguage>
       </usedLanguages>
       <usedDevKits>
         <usedDevKit>d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)</usedDevKit>
