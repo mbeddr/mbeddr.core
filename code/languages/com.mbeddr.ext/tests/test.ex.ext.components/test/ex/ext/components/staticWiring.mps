@@ -79,7 +79,7 @@
           <node role="statements" roleId="c4fa.4185783222026475862" type="x27k.ReturnStatement" typeId="x27k.8967919205527146149" id="8933128519014038669">
             <node role="expression" roleId="x27k.8967919205527146150" type="mj1l.MultiExpression" typeId="mj1l.5763383285156373020" id="8933128519014038671">
               <node role="right" roleId="mj1l.8860443239512128065" type="x27k.ArgumentRef" typeId="x27k.2093108837558505658" id="8933128519014038674">
-                <link role="arg" roleId="x27k.2093108837558505659" targetNodeId="8933128519014038664" resolveInfo="value" />
+                <link role="arg" roleId="x27k.2093108837558505659" targetNodeId="6091825850321304143" resolveInfo="value" />
               </node>
               <node role="left" roleId="mj1l.8860443239512128064" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="8933128519014038670">
                 <property name="value" nameId="mj1l.8860443239512128104" value="2" />
@@ -92,9 +92,9 @@
           <link role="calledOperation" roleId="v7ag.4491876417845641678" targetNodeId="8933128519013964955" resolveInfo="mal2" />
         </node>
         <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="8933128519014038663" />
-        <node role="arguments" roleId="x27k.5708867820623310661" type="v7ag.RunnableArgument" typeId="v7ag.8105003328814724891" id="8933128519014038664">
+        <node role="arguments" roleId="x27k.5708867820623310661" type="x27k.Argument" typeId="x27k.7892328519581704407" id="6091825850321304143">
           <property name="name" nameId="tpck.1169194664001" value="value" />
-          <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="8933128519014038665" />
+          <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="6091825850321304144" />
         </node>
       </node>
     </node>
