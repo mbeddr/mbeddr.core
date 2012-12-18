@@ -15,6 +15,10 @@
       <link role="refactoring" roleId="4w5v.7518061998923573138" targetNodeId="3wza.1582169519237927131" resolveInfo="introduceLocalVariable" />
     </node>
     <node type="tgbt.StandalonePluginDescriptor" typeId="tgbt.7520713872864775836" id="412995133202385094" />
+    <node type="4w5v.RefactoringAction" typeId="4w5v.7518061998923573137" id="6568414116582508109">
+      <property name="name" nameId="tpck.1169194664001" value="Inline Local Variable" />
+      <link role="refactoring" roleId="4w5v.7518061998923573138" targetNodeId="3wza.6568414116582507559" resolveInfo="inlineLocalVariable" />
+    </node>
   </roots>
   <root id="412995133202385093">
     <node role="parameters" roleId="4w5v.7518061998923573158" type="4w5v.RefactoringParameter" typeId="4w5v.7518061998923573140" id="412995133202385095">
@@ -29,5 +33,11 @@
     </node>
   </root>
   <root id="412995133202385094" />
+  <root id="6568414116582508109">
+    <node role="shortcut" roleId="4w5v.7518061998923573139" type="tp4k.KeyMapKeystroke" typeId="tp4k.1207318242772" id="6568414116582508112">
+      <property name="modifiers" nameId="tp4k.1207318242773" value="ctrl+alt" />
+      <property name="keycode" nameId="tp4k.1207318242774" value="VK_I" />
+    </node>
+  </root>
 </model>
 
