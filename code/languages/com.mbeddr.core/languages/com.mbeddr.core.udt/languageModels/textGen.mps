@@ -355,8 +355,8 @@
           <node role="part" roleId="2omo.1237306115446" type="2omo.NodeAppendPart" typeId="2omo.1237305334312" id="8811614583515731344">
             <node role="value" roleId="2omo.1237305790512" type="tpee.DotExpression" typeId="tpee.1197027756228" id="8811614583515731347">
               <node role="operand" roleId="tpee.1197027771414" type="2omo.NodeParameter" typeId="2omo.1233748055915" id="8811614583515731346" />
-              <node role="operation" roleId="tpee.1197027833540" type="tp25.SPropertyAccess" typeId="tp25.1138056022639" id="8811614583515731351">
-                <link role="property" roleId="tp25.1138056395725" targetNodeId="tpck.1169194664001" resolveInfo="name" />
+              <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_ConceptMethodCall" typeId="tp25.1179409122411" id="6458225268020268568">
+                <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="2rho.6458225268020268409" resolveInfo="mangledName" />
               </node>
             </node>
           </node>
@@ -404,8 +404,8 @@
                   <link role="link" roleId="tp25.1138056516764" targetNodeId="clbe.8811614583515726008" />
                 </node>
               </node>
-              <node role="operation" roleId="tpee.1197027833540" type="tp25.SPropertyAccess" typeId="tp25.1138056022639" id="8811614583515731406">
-                <link role="property" roleId="tp25.1138056395725" targetNodeId="tpck.1169194664001" resolveInfo="name" />
+              <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_ConceptMethodCall" typeId="tp25.1179409122411" id="6458225268020268570">
+                <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="2rho.6458225268020268409" resolveInfo="mangledName" />
               </node>
             </node>
           </node>
