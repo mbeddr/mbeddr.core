@@ -456,11 +456,11 @@
             </node>
           </node>
           <node role="condition" roleId="c4fa.6275792049641600984" type="mj1l.AndExpression" typeId="mj1l.8399455261460717640" id="8053687140971460109">
-            <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.GreaterExpression" typeId="mj1l.8860443239512147445" id="8169112006045868024">
-              <node role="left" roleId="mj1l.8860443239512128064" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="8169112006045868025">
+            <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.GreaterEqualsExpression" typeId="mj1l.8860443239512147447" id="33311699572663738">
+              <node role="left" roleId="mj1l.8860443239512128064" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="33311699572663739">
                 <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="2161187783549496761" resolveInfo="time" />
               </node>
-              <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="8169112006045868026">
+              <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="33311699572663740">
                 <property name="value" nameId="mj1l.8860443239512128104" value="0" />
               </node>
             </node>
@@ -755,6 +755,7 @@
     <node role="configurationItems" roleId="vs0r.4459718605982007338" type="v7ag.ComponentsConfigItem" typeId="v7ag.2103658896110121032" id="2161187783549496957">
       <node role="genStrategy" roleId="v7ag.2103658896110238743" type="p7vm.NoMwComponentsGenStrategy" typeId="p7vm.2103658896110278831" id="2161187783549757858">
         <property name="wireStatically" nameId="p7vm.1553713790141527405" value="true" />
+        <property name="generateContracts" nameId="p7vm.4768833643347725006" value="true" />
         <link role="instanceConfig" roleId="p7vm.1553713790141527407" targetNodeId="2161187783549496754" resolveInfo="comp" />
       </node>
     </node>
