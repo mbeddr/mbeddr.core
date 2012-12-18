@@ -450,7 +450,7 @@
                   <property name="value" nameId="mj1l.8860443239512128104" value="3" />
                 </node>
                 <node role="left" roleId="mj1l.8860443239512128064" type="x27k.ArgumentRef" typeId="x27k.2093108837558505658" id="33311699572682394">
-                  <link role="arg" roleId="x27k.2093108837558505659" targetNodeId="33311699572682138" resolveInfo="aPar" />
+                  <link role="arg" roleId="x27k.2093108837558505659" targetNodeId="8709876562697689788" resolveInfo="aPar" />
                 </node>
               </node>
             </node>
@@ -465,13 +465,13 @@
           <link role="providedPort" roleId="v7ag.4491876417845673829" targetNodeId="2161187783549496739" resolveInfo="simpleInt" />
           <link role="calledOperation" roleId="v7ag.4491876417845641678" targetNodeId="33311699572682166" resolveInfo="aFun" />
         </node>
-        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.FloatType" typeId="mj1l.4739982148980385695" id="33311699572682137">
+        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.FloatType" typeId="mj1l.4739982148980385695" id="8709876562697689787">
           <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
           <property name="const" nameId="mj1l.2941277002445651368" value="false" />
         </node>
-        <node role="arguments" roleId="x27k.5708867820623310661" type="v7ag.RunnableArgument" typeId="v7ag.8105003328814724891" id="33311699572682138">
+        <node role="arguments" roleId="x27k.5708867820623310661" type="x27k.Argument" typeId="x27k.7892328519581704407" id="8709876562697689788">
           <property name="name" nameId="tpck.1169194664001" value="aPar" />
-          <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int16tType" typeId="mj1l.8463282783691618435" id="33311699572682139">
+          <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int16tType" typeId="mj1l.8463282783691618435" id="8709876562697689789">
             <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
             <property name="const" nameId="mj1l.2941277002445651368" value="false" />
           </node>
@@ -589,13 +589,13 @@
           <link role="providedPort" roleId="v7ag.4491876417845673829" targetNodeId="33311699572832101" resolveInfo="interf" />
           <link role="calledOperation" roleId="v7ag.4491876417845641678" targetNodeId="33311699572724942" resolveInfo="oneFunction" />
         </node>
-        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int16tType" typeId="mj1l.8463282783691618435" id="33311699572832107">
+        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int16tType" typeId="mj1l.8463282783691618435" id="8709876562697692623">
           <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
           <property name="const" nameId="mj1l.2941277002445651368" value="false" />
         </node>
-        <node role="arguments" roleId="x27k.5708867820623310661" type="v7ag.RunnableArgument" typeId="v7ag.8105003328814724891" id="33311699572832108">
+        <node role="arguments" roleId="x27k.5708867820623310661" type="x27k.Argument" typeId="x27k.7892328519581704407" id="8709876562697692624">
           <property name="name" nameId="tpck.1169194664001" value="oneArg" />
-          <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int16tType" typeId="mj1l.8463282783691618435" id="33311699572832109">
+          <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int16tType" typeId="mj1l.8463282783691618435" id="8709876562697692625">
             <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
             <property name="const" nameId="mj1l.2941277002445651368" value="false" />
           </node>
