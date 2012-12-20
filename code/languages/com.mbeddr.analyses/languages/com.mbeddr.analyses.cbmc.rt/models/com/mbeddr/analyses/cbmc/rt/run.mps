@@ -2929,6 +2929,18 @@
     </node>
   </root>
   <root id="535044775891089258">
+    <node role="staticField" roleId="tpee.1128555889557" type="tpee.StaticFieldDeclaration" typeId="tpee.1070462154015" id="7836881400740481823">
+      <property name="name" nameId="tpck.1169194664001" value="DEFAULT" />
+      <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="7836881400740481826" />
+      <node role="type" roleId="tpee.5680397130376446158" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="7836881400740490296">
+        <link role="classifier" roleId="tpee.1107535924139" targetNodeId="535044775891089258" resolveInfo="CBMCAnalysisConfig" />
+      </node>
+      <node role="initializer" roleId="tpee.1068431790190" type="tpee.GenericNewExpression" typeId="tpee.1145552977093" id="7836881400740490298">
+        <node role="creator" roleId="tpee.1145553007750" type="tpee.ClassCreator" typeId="tpee.1212685548494" id="7836881400740490300">
+          <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="535044775891089260" resolveInfo="CBMCAnalysisConfig" />
+        </node>
+      </node>
+    </node>
     <node role="property" roleId="tpee.1201374247313" type="tpee.Property" typeId="tpee.1201370618622" id="535044775891089303">
       <property name="propertyName" nameId="tpee.1201371481316" value="generateUnwindingAssertions" />
       <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="535044775891089304" />

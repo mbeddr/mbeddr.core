@@ -24,6 +24,9 @@
     <node type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="9120591063517985345">
       <property name="name" nameId="tpck.1169194664001" value="smoke" />
     </node>
+    <node type="x27k.ExternalModule" typeId="x27k.6116558314501417921" id="2905459043573848943">
+      <property name="name" nameId="tpck.1169194664001" value="nonExistingHeader" />
+    </node>
   </roots>
   <root id="9120591063517985290">
     <node role="target" roleId="51wr.5323740605968447026" type="51wr.DesktopPlatform" typeId="51wr.5323740605968447022" id="9120591063517985291">
@@ -41,6 +44,9 @@
       </node>
       <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="9120591063517985296">
         <link role="module" roleId="51wr.7717755763392524108" targetNodeId="9120591063517985339" resolveInfo="assert" />
+      </node>
+      <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="2905459043573848946">
+        <link role="module" roleId="51wr.7717755763392524108" targetNodeId="2905459043573848943" resolveInfo="nonExistingHeader" />
       </node>
     </node>
   </root>
@@ -268,6 +274,14 @@
     </node>
     <node role="imports" roleId="x27k.1317894735999304826" type="x27k.ModuleImport" typeId="x27k.1317894735999299713" id="9120591063517985363">
       <link role="module" roleId="x27k.1317894735999299714" targetNodeId="9120591063517985339" resolveInfo="assert" />
+    </node>
+    <node role="imports" roleId="x27k.1317894735999304826" type="x27k.ModuleImport" typeId="x27k.1317894735999299713" id="2905459043573848949">
+      <link role="module" roleId="x27k.1317894735999299714" targetNodeId="2905459043573848943" resolveInfo="nonExistingHeader" />
+    </node>
+  </root>
+  <root id="2905459043573848943">
+    <node role="descriptors" roleId="x27k.6116558314501417978" type="x27k.HeaderDescriptor" typeId="x27k.6116558314501417952" id="2905459043573848944">
+      <property name="path" nameId="x27k.6116558314501417936" value="&quot;nonExisting.h&quot;" />
     </node>
   </root>
 </model>
