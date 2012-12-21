@@ -19,8 +19,8 @@
   <language namespace="d4615e3b-d671-4ba9-af01-2b78369b0ba7(jetbrains.mps.lang.pattern)" />
   <language namespace="fd392034-7849-419d-9071-12563d152375(jetbrains.mps.baseLanguage.closures)" />
   <language namespace="83888646-71ce-4f1c-9c53-c54016f6ad4f(jetbrains.mps.baseLanguage.collections)" />
-  <language namespace="ce969c28-3d5b-4211-97ff-2e336488daeb(mbeddr.tutorial.registers)" />
   <language namespace="3d0be1cf-4156-4c3c-ac37-fef83237d8e2(mbeddr.tutorial.vectors)" />
+  <language namespace="ce969c28-3d5b-4211-97ff-2e336488ffff(mbeddr.tutorial.registers)" />
   <devkit namespace="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
   <import index="e1tx" modelUID="r:bd5ec23c-c294-47cc-a078-675c03abdb69(mbeddr.tutorial.main.defaultExtensions)" version="-1" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
@@ -42,6 +42,7 @@
   <import index="7wyt" modelUID="r:f8ba97cc-e95a-4f72-81bb-93f6528114ed(mbeddr.tutorial.osconfig.cimpl.structure)" version="-1" implicit="yes" />
   <import index="wlut" modelUID="r:39f56ab1-7cb7-441d-9f40-9b3dac9d6334(mbeddr.tutotial.osconfig.memory.structure)" version="0" implicit="yes" />
   <import index="vj37" modelUID="r:4c272460-99ea-4d39-8c9a-f1bc63f0c386(mbeddr.tutorial.vectors.structure)" version="2" implicit="yes" />
+  <import index="395t" modelUID="r:26a1587b-4d7c-4a78-9719-aa4683047564(mbeddr.tutorial.registers.structure)" version="13" implicit="yes" />
   <roots>
     <node type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="7727566415687867284">
       <property name="name" nameId="tpck.1169194664001" value="SafeHeap" />
@@ -652,8 +653,8 @@
     <node role="configurationItems" roleId="vs0r.4459718605982007338" type="3c6d.PhysicalUnitsConfigItem" typeId="3c6d.9035511730050139082" id="8135882712510801058">
       <link role="container" roleId="3c6d.9035511730050143261" targetNodeId="8135882712510776073" resolveInfo="Units Declarations (mbeddr.tutorial.main.newLanguages)" />
     </node>
-    <node role="configurationItems" roleId="vs0r.4459718605982007338" type=".mbeddr.tutorial.registers.structure.RegisterConfigurationItem" id="2945795531676539909">
-      <property name="trafo" value="emulate" />
+    <node role="configurationItems" roleId="vs0r.4459718605982007338" type="395t.RegisterConfigurationItem" typeId="395t.5706473467947976322" id="2945795531676539909">
+      <property name="trafo" nameId="395t.5706473467947976328" value="emulate" />
     </node>
     <node role="binaries" roleId="51wr.5046689135694070731" type="51wr.Executable" typeId="51wr.5046689135693761554" id="9141254329931944284">
       <property name="isTest" nameId="51wr.3431613015799084476" value="true" />
@@ -1314,37 +1315,37 @@
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="2945795531676517484">
       <property name="name" nameId="tpck.1169194664001" value="empty_1353487372732_1" />
     </node>
-    <node role="contents" roleId="x27k.6437088627575722833" type=".mbeddr.tutorial.registers.structure.Register8" id="2945795531676517487">
-      <property name="exported" value="true" />
-      <property name="name" value="r1" />
-      <node role="setterExpression" type=".mbeddr.tutorial.registers.structure.RegisterValueExpression" id="2945795531676517488" />
+    <node role="contents" roleId="x27k.6437088627575722833" type="395t.Register8" typeId="395t.5706473467947983254" id="2945795531676517487">
+      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
+      <property name="name" nameId="tpck.1169194664001" value="r1" />
+      <node role="setterExpression" roleId="395t.5706473467948039241" type="395t.RegisterValueExpression" typeId="395t.5706473467947891594" id="2945795531676517488" />
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="2945795531676611656">
       <property name="name" nameId="tpck.1169194664001" value="empty_1353490480055_4" />
     </node>
-    <node role="contents" roleId="x27k.6437088627575722833" type=".mbeddr.tutorial.registers.structure.Register16" id="2945795531676518077">
-      <property name="exported" value="true" />
-      <property name="allowCharAccess" value="true" />
-      <property name="name" value="r2" />
-      <property name="lowSuffix" value="_L" />
-      <property name="highSuffix" value="_H" />
-      <node role="setterExpression" type="mj1l.MultiExpression" typeId="mj1l.5763383285156373020" id="2945795531676527214">
+    <node role="contents" roleId="x27k.6437088627575722833" type="395t.Register16" typeId="395t.5706473467947983295" id="2945795531676518077">
+      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
+      <property name="allowCharAccess" nameId="395t.28228713394245199" value="true" />
+      <property name="name" nameId="tpck.1169194664001" value="r2" />
+      <property name="lowSuffix" nameId="395t.5706473467947999285" value="_L" />
+      <property name="highSuffix" nameId="395t.5706473467947999284" value="_H" />
+      <node role="setterExpression" roleId="395t.5706473467948039241" type="mj1l.MultiExpression" typeId="mj1l.5763383285156373020" id="2945795531676527214">
         <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2945795531676527217">
           <property name="value" nameId="mj1l.8860443239512128104" value="1000" />
         </node>
-        <node role="left" roleId="mj1l.8860443239512128064" type=".mbeddr.tutorial.registers.structure.RegisterValueExpression" id="2945795531676527211" />
+        <node role="left" roleId="mj1l.8860443239512128064" type="395t.RegisterValueExpression" typeId="395t.5706473467947891594" id="2945795531676527211" />
       </node>
-      <node role="lowSetterExpr" type="mj1l.MultiExpression" typeId="mj1l.5763383285156373020" id="2945795531676527189">
+      <node role="lowSetterExpr" roleId="395t.5706473467948105148" type="mj1l.MultiExpression" typeId="mj1l.5763383285156373020" id="2945795531676527189">
         <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2945795531676527192">
           <property name="value" nameId="mj1l.8860443239512128104" value="10" />
         </node>
-        <node role="left" roleId="mj1l.8860443239512128064" type=".mbeddr.tutorial.registers.structure.RegisterValueExpression" id="2945795531676527186" />
+        <node role="left" roleId="mj1l.8860443239512128064" type="395t.RegisterValueExpression" typeId="395t.5706473467947891594" id="2945795531676527186" />
       </node>
-      <node role="highSetterExpr" type="mj1l.MultiExpression" typeId="mj1l.5763383285156373020" id="2945795531676527202">
+      <node role="highSetterExpr" roleId="395t.5706473467948105149" type="mj1l.MultiExpression" typeId="mj1l.5763383285156373020" id="2945795531676527202">
         <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2945795531676527205">
           <property name="value" nameId="mj1l.8860443239512128104" value="10" />
         </node>
-        <node role="left" roleId="mj1l.8860443239512128064" type=".mbeddr.tutorial.registers.structure.RegisterValueExpression" id="2945795531676527199" />
+        <node role="left" roleId="mj1l.8860443239512128064" type="395t.RegisterValueExpression" typeId="395t.5706473467947891594" id="2945795531676527199" />
       </node>
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="2945795531676611647">
@@ -1363,8 +1364,8 @@
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2945795531676611664">
               <property name="value" nameId="mj1l.8860443239512128104" value="100" />
             </node>
-            <node role="left" roleId="mj1l.8860443239512128064" type=".mbeddr.tutorial.registers.structure.RegisterRefExpr" id="2945795531676611658">
-              <link role="register" targetNodeId="2945795531676517487" resolveInfo="r1" />
+            <node role="left" roleId="mj1l.8860443239512128064" type="395t.RegisterRefExpr" typeId="395t.5706473467947857502" id="2945795531676611658">
+              <link role="register" roleId="395t.5706473467947857503" targetNodeId="2945795531676517487" resolveInfo="r1" />
             </node>
           </node>
         </node>
@@ -1374,8 +1375,8 @@
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2945795531676611674">
               <property name="value" nameId="mj1l.8860443239512128104" value="100" />
             </node>
-            <node role="left" roleId="mj1l.8860443239512128064" type=".mbeddr.tutorial.registers.structure.RegisterRefExpr" id="2945795531676611668">
-              <link role="register" targetNodeId="2945795531676517487" resolveInfo="r1" />
+            <node role="left" roleId="mj1l.8860443239512128064" type="395t.RegisterRefExpr" typeId="395t.5706473467947857502" id="2945795531676611668">
+              <link role="register" roleId="395t.5706473467947857503" targetNodeId="2945795531676517487" resolveInfo="r1" />
             </node>
           </node>
         </node>
@@ -1397,8 +1398,8 @@
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2945795531676611682">
               <property name="value" nameId="mj1l.8860443239512128104" value="5" />
             </node>
-            <node role="left" roleId="mj1l.8860443239512128064" type=".mbeddr.tutorial.registers.structure.RegisterRefExpr" id="2945795531676611689">
-              <link role="register" targetNodeId="2945795531676518077" resolveInfo="r2" />
+            <node role="left" roleId="mj1l.8860443239512128064" type="395t.RegisterRefExpr" typeId="395t.5706473467947857502" id="2945795531676611689">
+              <link role="register" roleId="395t.5706473467947857503" targetNodeId="2945795531676518077" resolveInfo="r2" />
             </node>
           </node>
         </node>
@@ -1408,8 +1409,8 @@
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2945795531676611686">
               <property name="value" nameId="mj1l.8860443239512128104" value="5000" />
             </node>
-            <node role="left" roleId="mj1l.8860443239512128064" type=".mbeddr.tutorial.registers.structure.RegisterRefExpr" id="2945795531676611690">
-              <link role="register" targetNodeId="2945795531676518077" resolveInfo="r2" />
+            <node role="left" roleId="mj1l.8860443239512128064" type="395t.RegisterRefExpr" typeId="395t.5706473467947857502" id="2945795531676611690">
+              <link role="register" roleId="395t.5706473467947857503" targetNodeId="2945795531676518077" resolveInfo="r2" />
             </node>
           </node>
         </node>
@@ -1419,9 +1420,9 @@
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2945795531676611722">
               <property name="value" nameId="mj1l.8860443239512128104" value="1" />
             </node>
-            <node role="left" roleId="mj1l.8860443239512128064" type=".mbeddr.tutorial.registers.structure.LowByteRefExpr" id="2945795531676611716">
-              <node role="expression" type=".mbeddr.tutorial.registers.structure.RegisterRefExpr" id="2945795531676611713">
-                <link role="register" targetNodeId="2945795531676518077" resolveInfo="r2" />
+            <node role="left" roleId="mj1l.8860443239512128064" type="395t.LowByteRefExpr" typeId="395t.5706473467947863135" id="2945795531676611716">
+              <node role="expression" roleId="mj1l.7254843406768839760" type="395t.RegisterRefExpr" typeId="395t.5706473467947857502" id="2945795531676611713">
+                <link role="register" roleId="395t.5706473467947857503" targetNodeId="2945795531676518077" resolveInfo="r2" />
               </node>
             </node>
           </node>
@@ -1431,9 +1432,9 @@
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2945795531676611710">
               <property name="value" nameId="mj1l.8860443239512128104" value="2" />
             </node>
-            <node role="left" roleId="mj1l.8860443239512128064" type=".mbeddr.tutorial.registers.structure.HighByteRefExpr" id="2945795531676611704">
-              <node role="expression" type=".mbeddr.tutorial.registers.structure.RegisterRefExpr" id="2945795531676611697">
-                <link role="register" targetNodeId="2945795531676518077" resolveInfo="r2" />
+            <node role="left" roleId="mj1l.8860443239512128064" type="395t.HighByteRefExpr" typeId="395t.5706473467947863336" id="2945795531676611704">
+              <node role="expression" roleId="mj1l.7254843406768839760" type="395t.RegisterRefExpr" typeId="395t.5706473467947857502" id="2945795531676611697">
+                <link role="register" roleId="395t.5706473467947857503" targetNodeId="2945795531676518077" resolveInfo="r2" />
               </node>
             </node>
           </node>
@@ -1444,9 +1445,9 @@
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2945795531676611735">
               <property name="value" nameId="mj1l.8860443239512128104" value="10" />
             </node>
-            <node role="left" roleId="mj1l.8860443239512128064" type=".mbeddr.tutorial.registers.structure.LowByteRefExpr" id="2945795531676611738">
-              <node role="expression" type=".mbeddr.tutorial.registers.structure.RegisterRefExpr" id="2945795531676611726">
-                <link role="register" targetNodeId="2945795531676518077" resolveInfo="r2" />
+            <node role="left" roleId="mj1l.8860443239512128064" type="395t.LowByteRefExpr" typeId="395t.5706473467947863135" id="2945795531676611738">
+              <node role="expression" roleId="mj1l.7254843406768839760" type="395t.RegisterRefExpr" typeId="395t.5706473467947857502" id="2945795531676611726">
+                <link role="register" roleId="395t.5706473467947857503" targetNodeId="2945795531676518077" resolveInfo="r2" />
               </node>
             </node>
           </node>
@@ -1457,9 +1458,9 @@
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2945795531676611741">
               <property name="value" nameId="mj1l.8860443239512128104" value="20" />
             </node>
-            <node role="left" roleId="mj1l.8860443239512128064" type=".mbeddr.tutorial.registers.structure.HighByteRefExpr" id="2945795531676611747">
-              <node role="expression" type=".mbeddr.tutorial.registers.structure.RegisterRefExpr" id="2945795531676611744">
-                <link role="register" targetNodeId="2945795531676518077" resolveInfo="r2" />
+            <node role="left" roleId="mj1l.8860443239512128064" type="395t.HighByteRefExpr" typeId="395t.5706473467947863336" id="2945795531676611747">
+              <node role="expression" roleId="mj1l.7254843406768839760" type="395t.RegisterRefExpr" typeId="395t.5706473467947857502" id="2945795531676611744">
+                <link role="register" roleId="395t.5706473467947857503" targetNodeId="2945795531676518077" resolveInfo="r2" />
               </node>
             </node>
           </node>

@@ -41,7 +41,7 @@
         <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="4247873267530557933">
           <node role="expression" roleId="tpee.1068580123156" type="tpee.TernaryOperatorExpression" typeId="tpee.1163668896201" id="4247873267530563293">
             <node role="ifTrue" roleId="tpee.1163668922816" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="4247873267530563297">
-              <property name="value" nameId="tpee.1070475926801" value="DecTab Complete" />
+              <property name="value" nameId="tpee.1070475926801" value="DecTab Completeness" />
             </node>
             <node role="condition" roleId="tpee.1163668914799" type="tpee.LocalInstanceFieldReference" typeId="tpee.7785501532031639928" id="4247873267530563272">
               <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="4247873267530563267" resolveInfo="completenessAnalysis" />
