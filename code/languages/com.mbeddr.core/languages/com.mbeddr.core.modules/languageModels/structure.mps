@@ -296,6 +296,9 @@
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="1908346841499896641">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="vs0r.1908346841499892479" resolveInfo="IOutlineRoot" />
     </node>
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="2416710259286980097">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="vs0r.2416710259286977851" resolveInfo="IDoNotAnalyzeDataFlowAnnotateable" />
+    </node>
     <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.BooleanConceptProperty" typeId="tpce.1105725574259" id="6437088627575722829">
       <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473854053" resolveInfo="abstract" />
     </node>
@@ -851,6 +854,9 @@
     </node>
     <node role="extends" roleId="tpce.1169127546356" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="1908346841500047661">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="vs0r.1908346841499857570" resolveInfo="IShowUpInOutline" />
+    </node>
+    <node role="extends" roleId="tpce.1169127546356" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="2416710259286978603">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="vs0r.2416710259286977851" resolveInfo="IDoNotAnalyzeDataFlowAnnotateable" />
     </node>
   </root>
   <root id="2093108837558505658">
