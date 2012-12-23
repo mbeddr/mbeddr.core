@@ -49,7 +49,7 @@
                 <link role="classifier" roleId="tpee.1107535924139" targetNodeId="vsqj.~Solution" resolveInfo="Solution" />
               </node>
               <node role="expression" roleId="tpee.1070534934092" type="tp25.ModuleReferenceExpression" typeId="tp25.4040588429969021681" id="2017717622749046642">
-                <property name="moduleId" nameId="tp25.4040588429969021683" value="094b2842-e972-4406-b60e-898cdcdb9de5" />
+                <property name="moduleId" nameId="tp25.4040588429969021683" value="0f697a4c-1fe5-45ba-9ce2-27433184b330" />
               </node>
             </node>
           </node>
@@ -59,7 +59,7 @@
             <property name="name" nameId="tpck.1169194664001" value="res" />
             <node role="initializer" roleId="tpee.1068431790190" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="2017717622748925165">
               <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="sqo1.2017717622748561141" resolveInfo="CBMCNightlyAnalyses" />
-              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="sqo1.2017717622748561142" resolveInfo="performAllAnalyses" />
+              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="sqo1.2017717622748561142" resolveInfo="performAllAnalysesAndSaveResults" />
               <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="8989352057116356522">
                 <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="2017717622749046640" resolveInfo="solution" />
               </node>
@@ -80,7 +80,7 @@
             <node role="operation" roleId="tpee.1197027833540" type="tp2q.GetSizeOperation" typeId="tp2q.1162935959151" id="2017717622748925116" />
           </node>
           <node role="expected" roleId="tpe3.8427750732757990724" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="2017717622748925117">
-            <property name="value" nameId="tpee.1068580320021" value="120" />
+            <property name="value" nameId="tpee.1068580320021" value="4" />
           </node>
         </node>
       </node>
