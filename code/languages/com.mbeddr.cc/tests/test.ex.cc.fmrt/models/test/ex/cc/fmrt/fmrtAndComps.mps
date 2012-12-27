@@ -6,19 +6,16 @@
   <devkit namespace="24565007-e59f-42fc-ac10-da3836deec1c(com.mbeddr.components)" />
   <devkit namespace="b31efd26-898e-4b0e-b5dc-2d7ced06e7f7(com.mbeddr.cc.variability)" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
-  <import index="qqyh" modelUID="r:a74300b8-76a8-461e-befa-fc86b0ad5dd9(com.mbeddr.cc.var.fm.structure)" version="-1" implicit="yes" />
+  <import index="qqyh" modelUID="r:a74300b8-76a8-461e-befa-fc86b0ad5dd9(com.mbeddr.cc.var.fm.structure)" version="3" implicit="yes" />
   <import index="k146" modelUID="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" version="2" implicit="yes" />
-  <import index="v7ag" modelUID="r:9596407c-f27a-49d3-abde-3a66293c5b61(com.mbeddr.ext.components.structure)" version="12" implicit="yes" />
   <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="17" implicit="yes" />
   <import index="yq40" modelUID="r:152b3fc0-83a1-4bab-a8cd-565eb8483785(com.mbeddr.core.pointers.structure)" version="3" implicit="yes" />
   <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="5" implicit="yes" />
   <import index="51wr" modelUID="r:b31f1c3c-99aa-4f1e-a329-cba27efb1a6b(com.mbeddr.core.buildconfig.structure)" version="1" implicit="yes" />
   <import index="yz9a" modelUID="r:734c02dd-cc16-4184-99eb-5fd9f43aa37e(com.mbeddr.core.unittest.structure)" version="0" implicit="yes" />
-  <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="4" implicit="yes" />
+  <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="5" implicit="yes" />
   <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="3" implicit="yes" />
   <import index="yvrq" modelUID="r:2217bb25-9695-4af2-948e-8d9b31dd5a1a(com.mbeddr.cc.var.rt.structure)" version="2" implicit="yes" />
-  <import index="p7vm" modelUID="r:28fa862e-f94d-4c39-bdf7-a4bdbc773888(com.mbeddr.ext.components.gen_nomw.structure)" version="0" implicit="yes" />
-  <import index="v0r9" modelUID="r:277b15fc-1383-4213-8385-5a16481fa36c(com.mbeddr.ext.components.test.structure)" version="4" implicit="yes" />
   <import index="7pum" modelUID="r:18f5097e-f68a-4ea7-9bcf-c691e28486d6(com.mbeddr.cc.var.rt.comp.structure)" version="-1" implicit="yes" />
   <roots>
     <node type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="8000796061690129290">
@@ -48,21 +45,21 @@
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.CommentedModuleContent" typeId="x27k.7024921229556176022" id="8306217617074545760">
       <property name="name" nameId="tpck.1169194664001" value="zzz-commented-AtomicComponent-3" />
-      <node role="commentedCode" roleId="vs0r.7024921229556133804" type="v7ag.AtomicComponent" typeId="v7ag.4491876417845649011" id="8000796061690129358">
-        <property name="exported" nameId="x27k.1317894735999272944" value="true" />
-        <property name="name" nameId="tpck.1169194664001" value="C" />
-        <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Field" typeId="v7ag.5308710777891512019" id="8000796061690132531">
-          <property name="name" nameId="tpck.1169194664001" value="config" />
-          <property name="initField" nameId="v7ag.785275130114861516" value="true" />
-          <node role="type" roleId="mj1l.318113533128716676" type="yvrq.RtFeatureModelType" typeId="yvrq.8882953773355826085" id="8000796061690132532">
+      <node role="commentedCode" roleId="vs0r.7024921229556133804" type=".com.mbeddr.ext.components.structure.AtomicComponent" id="8000796061690129358">
+        <property name="exported" value="true" />
+        <property name="name" value="C" />
+        <node role="contents" type=".com.mbeddr.ext.components.structure.Field" id="8000796061690132531">
+          <property name="name" value="config" />
+          <property name="initField" value="true" />
+          <node role="type" type="yvrq.RtFeatureModelType" typeId="yvrq.8882953773355826085" id="8000796061690132532">
             <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
             <property name="const" nameId="mj1l.2941277002445651368" value="false" />
             <link role="featureModel" roleId="yvrq.8882953773355826086" targetNodeId="8000796061690132530" resolveInfo="CompFeatures" />
           </node>
         </node>
-        <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="8000796061690132536">
-          <property name="name" nameId="tpck.1169194664001" value="getNumber" />
-          <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="8000796061690132537">
+        <node role="contents" type=".com.mbeddr.ext.components.structure.Runnable" id="8000796061690132536">
+          <property name="name" value="getNumber" />
+          <node role="body" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="8000796061690132537">
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="8000796061690170725">
               <property name="name" nameId="tpck.1169194664001" value="x" />
               <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="8000796061690170726">
@@ -91,8 +88,8 @@
                   <link role="feature" roleId="yvrq.8882953773355884815" targetNodeId="8000796061690132540" resolveInfo="returnTheBigNumber" />
                 </node>
               </node>
-              <node role="fmconfig" roleId="yvrq.8882953773355868317" type="v7ag.FieldRef" typeId="v7ag.5308710777891565561" id="8000796061690132549">
-                <link role="field" roleId="v7ag.5308710777891565562" targetNodeId="8000796061690132531" resolveInfo="config" />
+              <node role="fmconfig" roleId="yvrq.8882953773355868317" type=".com.mbeddr.ext.components.structure.FieldRef" id="8000796061690132549">
+                <link role="field" targetNodeId="8000796061690132531" resolveInfo="config" />
               </node>
             </node>
             <node role="statements" roleId="c4fa.4185783222026475862" type="x27k.ReturnStatement" typeId="x27k.8967919205527146149" id="8000796061690170742">
@@ -101,7 +98,7 @@
               </node>
             </node>
           </node>
-          <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="8000796061690170743">
+          <node role="type" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="8000796061690170743">
             <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
             <property name="const" nameId="mj1l.2941277002445651368" value="false" />
           </node>
@@ -113,24 +110,24 @@
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.CommentedModuleContent" typeId="x27k.7024921229556176022" id="8306217617074545759">
       <property name="name" nameId="tpck.1169194664001" value="zzz-commented-InstanceConfiguration-5" />
-      <node role="commentedCode" roleId="vs0r.7024921229556133804" type="v7ag.InstanceConfiguration" typeId="v7ag.4491876417845649024" id="8000796061690132558">
-        <property name="name" nameId="tpck.1169194664001" value="instances" />
-        <node role="contents" roleId="v7ag.6041318036222235020" type="v7ag.ComponentInstance" typeId="v7ag.4491876417845649014" id="8000796061690132559">
-          <property name="name" nameId="tpck.1169194664001" value="cbig" />
-          <link role="component" roleId="v7ag.4491876417845649015" targetNodeId="8000796061690129358" resolveInfo="C" />
-          <node role="initFieldInitializers" roleId="v7ag.785275130114861567" type="v7ag.InitFieldInitializer" typeId="v7ag.785275130114861597" id="8000796061690176384">
-            <link role="field" roleId="v7ag.785275130114861598" targetNodeId="8000796061690132531" resolveInfo="config" />
-            <node role="value" roleId="v7ag.785275130114861599" type="7pum.CreateConfigExpr" typeId="7pum.8000796061690145833" id="7890665228157417091">
+      <node role="commentedCode" roleId="vs0r.7024921229556133804" type=".com.mbeddr.ext.components.structure.InstanceConfiguration" id="8000796061690132558">
+        <property name="name" value="instances" />
+        <node role="contents" type=".com.mbeddr.ext.components.structure.ComponentInstance" id="8000796061690132559">
+          <property name="name" value="cbig" />
+          <link role="component" targetNodeId="8000796061690129358" resolveInfo="C" />
+          <node role="initFieldInitializers" type=".com.mbeddr.ext.components.structure.InitFieldInitializer" id="8000796061690176384">
+            <link role="field" targetNodeId="8000796061690132531" resolveInfo="config" />
+            <node role="value" type="7pum.CreateConfigExpr" typeId="7pum.8000796061690145833" id="7890665228157417091">
               <link role="configModel" roleId="7pum.8000796061690159814" targetNodeId="8000796061690169848" resolveInfo="CfgBig" />
             </node>
           </node>
         </node>
-        <node role="contents" roleId="v7ag.6041318036222235020" type="v7ag.ComponentInstance" typeId="v7ag.4491876417845649014" id="8000796061690170748">
-          <property name="name" nameId="tpck.1169194664001" value="csmall" />
-          <link role="component" roleId="v7ag.4491876417845649015" targetNodeId="8000796061690129358" resolveInfo="C" />
-          <node role="initFieldInitializers" roleId="v7ag.785275130114861567" type="v7ag.InitFieldInitializer" typeId="v7ag.785275130114861597" id="8000796061690170749">
-            <link role="field" roleId="v7ag.785275130114861598" targetNodeId="8000796061690132531" resolveInfo="config" />
-            <node role="value" roleId="v7ag.785275130114861599" type="7pum.CreateConfigExpr" typeId="7pum.8000796061690145833" id="7890665228157417092">
+        <node role="contents" type=".com.mbeddr.ext.components.structure.ComponentInstance" id="8000796061690170748">
+          <property name="name" value="csmall" />
+          <link role="component" targetNodeId="8000796061690129358" resolveInfo="C" />
+          <node role="initFieldInitializers" type=".com.mbeddr.ext.components.structure.InitFieldInitializer" id="8000796061690170749">
+            <link role="field" targetNodeId="8000796061690132531" resolveInfo="config" />
+            <node role="value" type="7pum.CreateConfigExpr" typeId="7pum.8000796061690145833" id="7890665228157417092">
               <link role="configModel" roleId="7pum.8000796061690159814" targetNodeId="8000796061690170745" resolveInfo="CfgSmall" />
             </node>
           </node>
@@ -156,10 +153,10 @@
               <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="8000796061690170760">
                 <property name="value" nameId="mj1l.8860443239512128104" value="10" />
               </node>
-              <node role="left" roleId="mj1l.8860443239512128064" type="v0r9.DirectRunnableCall" typeId="v0r9.8230733038424928674" id="8000796061690170752">
-                <link role="instance" roleId="v7ag.1482737808881210674" targetNodeId="8000796061690132559" resolveInfo="cbig" />
-                <link role="runnable" roleId="v0r9.6105672464781003798" targetNodeId="8000796061690132536" resolveInfo="getNumber" />
-                <link role="config" roleId="v7ag.1482737808881210673" targetNodeId="8000796061690132558" resolveInfo="instances" />
+              <node role="left" roleId="mj1l.8860443239512128064" type=".com.mbeddr.ext.components.test.structure.DirectRunnableCall" id="8000796061690170752">
+                <link role="instance" targetNodeId="8000796061690132559" resolveInfo="cbig" />
+                <link role="runnable" targetNodeId="8000796061690132536" resolveInfo="getNumber" />
+                <link role="config" targetNodeId="8000796061690132558" resolveInfo="instances" />
               </node>
             </node>
           </node>
@@ -169,10 +166,10 @@
               <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="8000796061690170763">
                 <property name="value" nameId="mj1l.8860443239512128104" value="0" />
               </node>
-              <node role="left" roleId="mj1l.8860443239512128064" type="v0r9.DirectRunnableCall" typeId="v0r9.8230733038424928674" id="8000796061690170764">
-                <link role="runnable" roleId="v0r9.6105672464781003798" targetNodeId="8000796061690132536" resolveInfo="getNumber" />
-                <link role="config" roleId="v7ag.1482737808881210673" targetNodeId="8000796061690132558" resolveInfo="instances" />
-                <link role="instance" roleId="v7ag.1482737808881210674" targetNodeId="8000796061690170748" resolveInfo="csmall" />
+              <node role="left" roleId="mj1l.8860443239512128064" type=".com.mbeddr.ext.components.test.structure.DirectRunnableCall" id="8000796061690170764">
+                <link role="runnable" targetNodeId="8000796061690132536" resolveInfo="getNumber" />
+                <link role="config" targetNodeId="8000796061690132558" resolveInfo="instances" />
+                <link role="instance" targetNodeId="8000796061690170748" resolveInfo="csmall" />
               </node>
             </node>
           </node>
@@ -187,8 +184,8 @@
       <property name="exported" nameId="x27k.1317894735999272944" value="true" />
       <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="8000796061690129292">
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentedStatement" typeId="c4fa.7024921229556134722" id="8306217617074545756">
-          <node role="commentedCode" roleId="vs0r.7024921229556133804" type="v7ag.InitializeConfiguration" typeId="v7ag.591155063063570513" id="8000796061690170766">
-            <link role="config" roleId="v7ag.591155063063570514" targetNodeId="8000796061690132558" resolveInfo="instances" />
+          <node role="commentedCode" roleId="vs0r.7024921229556133804" type=".com.mbeddr.ext.components.structure.InitializeConfiguration" id="8000796061690170766">
+            <link role="config" targetNodeId="8000796061690132558" resolveInfo="instances" />
           </node>
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentedStatement" typeId="c4fa.7024921229556134722" id="8306217617074545757">
@@ -396,8 +393,8 @@
     <node role="configurationItems" roleId="vs0r.4459718605982007338" type="k146.ReportingConfiguration" typeId="k146.4459718605982051949" id="8000796061690129350">
       <node role="strategy" roleId="k146.4459718605982051999" type="k146.PrintfReportingStrategy" typeId="k146.4459718605982051980" id="8000796061690129351" />
     </node>
-    <node role="configurationItems" roleId="vs0r.4459718605982007338" type="v7ag.ComponentsConfigItem" typeId="v7ag.2103658896110121032" id="8000796061690141677">
-      <node role="genStrategy" roleId="v7ag.2103658896110238743" type="p7vm.NoMwComponentsGenStrategy" typeId="p7vm.2103658896110278831" id="8000796061690141679" />
+    <node role="configurationItems" roleId="vs0r.4459718605982007338" type=".com.mbeddr.ext.components.structure.ComponentsConfigItem" id="8000796061690141677">
+      <node role="genStrategy" type=".com.mbeddr.ext.components.gen_nomw.structure.NoMwComponentsGenStrategy" id="8000796061690141679" />
     </node>
     <node role="binaries" roleId="51wr.5046689135694070731" type="51wr.Executable" typeId="51wr.5046689135693761554" id="8000796061690129352">
       <property name="isTest" nameId="51wr.3431613015799084476" value="true" />

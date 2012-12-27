@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<history>
+  <StructureModification>
+    <dependencies>
+      <model index="qqyh" modelUID="r:a74300b8-76a8-461e-befa-fc86b0ad5dd9(com.mbeddr.cc.var.fm.structure)" version="-1" />
+    </dependencies>
+    <rename id="qqyh.2203816361987134490" type="CONCEPT" from="DerivationRule" to="DerivatedFeature" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="qqyh" modelUID="r:a74300b8-76a8-461e-befa-fc86b0ad5dd9(com.mbeddr.cc.var.fm.structure)" version="0" />
+    </dependencies>
+    <rename id="qqyh.2203816361987258682" type="CHILD" from="derivatedFeature" to="derivedFeatures" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="qqyh" modelUID="r:a74300b8-76a8-461e-befa-fc86b0ad5dd9(com.mbeddr.cc.var.fm.structure)" version="1" />
+    </dependencies>
+    <rename id="qqyh.2203816361987306077" type="CONCEPT" from="FeatureAttributeReference" to="DerivedFeatureReference" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="qqyh" modelUID="r:a74300b8-76a8-461e-befa-fc86b0ad5dd9(com.mbeddr.cc.var.fm.structure)" version="2" />
+    </dependencies>
+    <rename id="qqyh.2203816361987306078" type="REFERENCE" from="attribute" to="feature" />
+  </StructureModification>
+</history>
+
