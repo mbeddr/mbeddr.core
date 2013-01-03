@@ -3,7 +3,7 @@
   <persistence version="7" />
   <language namespace="18bc6592-03a6-4e29-a83a-7ff23bde13ba(jetbrains.mps.lang.editor)" />
   <import index="tpc2" modelUID="r:00000000-0000-4000-0000-011c8959029e(jetbrains.mps.lang.editor.structure)" version="32" implicit="yes" />
-  <import index="q5q6" modelUID="r:5d65e582-fa41-4818-b31c-b2aee1644b4a(com.mbeddr.analyses.cbmc.structure)" version="0" implicit="yes" />
+  <import index="q5q6" modelUID="r:5d65e582-fa41-4818-b31c-b2aee1644b4a(com.mbeddr.analyses.cbmc.structure)" version="2" implicit="yes" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <roots>
     <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="2161187783549671009">
@@ -11,6 +11,9 @@
     </node>
     <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="535044775891207548">
       <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="q5q6.535044775891207547" resolveInfo="VerificationConfigurationAttribute" />
+    </node>
+    <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="5858278990856390137">
+      <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="q5q6.5858278990856237301" resolveInfo="StatemachineCheckAttribute" />
     </node>
   </roots>
   <root id="2161187783549671009">
@@ -80,6 +83,15 @@
           <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="q5q6.2017717622748544612" resolveInfo="unwindingAssertions" />
         </node>
       </node>
+    </node>
+  </root>
+  <root id="5858278990856390137">
+    <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="7554338819202015372">
+      <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Vertical" typeId="tpc2.1106270571710" id="7554338819202015373" />
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="7554338819202015374">
+        <property name="text" nameId="tpc2.1073389577007" value="checked" />
+      </node>
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_AttributedNodeCell" typeId="tpc2.1149850725784" id="7554338819202015375" />
     </node>
   </root>
 </model>
