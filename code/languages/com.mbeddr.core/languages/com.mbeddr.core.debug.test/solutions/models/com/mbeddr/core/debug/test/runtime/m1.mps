@@ -208,6 +208,7 @@
     </node>
     <node type="tpee.ClassConcept" typeId="tpee.1068390468198" id="6879846215835240745">
       <property name="name" nameId="tpck.1169194664001" value="SpawnerHelper" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="helper" />
     </node>
   </roots>
   <root id="3463450091878657136">
