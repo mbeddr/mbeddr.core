@@ -469,13 +469,8 @@
                                 <node role="initializer" roleId="tpee.1068431790190" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="5579776927402877943">
                                   <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="e7vy.5144237533500575975" resolveInfo="getMember" />
                                   <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="e7vy.5144237533500575682" resolveInfo="MemberRefHelper" />
-                                  <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.CastExpression" typeId="tpee.1070534934090" id="5579776927402877944">
-                                    <node role="type" roleId="tpee.1070534934091" type="tp25.SNodeType" typeId="tp25.1138055754698" id="5579776927402877945">
-                                      <link role="concept" roleId="tp25.1138405853777" targetNodeId="c4fa.2486081302459814099" resolveInfo="IVariableDeclaration" />
-                                    </node>
-                                    <node role="expression" roleId="tpee.1070534934092" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="5579776927403478898">
-                                      <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="5144237533499131543" resolveInfo="variableDeclaration" />
-                                    </node>
+                                  <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="5579776927403478898">
+                                    <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="5144237533499131543" resolveInfo="variableDeclaration" />
                                   </node>
                                   <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="5579776927402877948">
                                     <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="5579776927402877901" resolveInfo="m" />
