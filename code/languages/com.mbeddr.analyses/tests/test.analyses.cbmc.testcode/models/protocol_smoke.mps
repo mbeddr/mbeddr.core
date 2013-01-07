@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model modelUID="r:1ec3107b-123d-4426-af3e-bc24b0567931(protocol)">
+<model modelUID="r:1ec3107b-123d-4426-af3e-bc24b0567931(protocol_smoke)">
   <persistence version="7" />
   <language namespace="6d11763d-483d-4b2b-8efc-09336c1b0001(com.mbeddr.core.modules)" />
   <language namespace="97d24244-51db-4e2e-97fc-7bd73b1f5f40(com.mbeddr.ext.components)" />

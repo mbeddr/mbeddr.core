@@ -3700,6 +3700,38 @@
           </node>
         </node>
       </node>
+      <node role="statement" roleId="tpee.1068581517665" type="tpee.IfStatement" typeId="tpee.1068580123159" id="2135546034320120021">
+        <node role="condition" roleId="tpee.1068580123160" type="tpee.DotExpression" typeId="tpee.1197027756228" id="2135546034320179604">
+          <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="2135546034320129927">
+            <node role="operand" roleId="tpee.1197027771414" type="tpd4.ApplicableNodeReference" typeId="tpd4.1174650418652" id="2135546034320120024">
+              <link role="applicableNode" roleId="tpd4.1174650432090" targetNodeId="4058325937810649169" resolveInfo="ps" />
+            </node>
+            <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="2135546034320179582">
+              <link role="link" roleId="tp25.1138056516764" targetNodeId="v7ag.6209278014151449964" />
+            </node>
+          </node>
+          <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_IsInstanceOfOperation" typeId="tp25.1139621453865" id="2135546034320179610">
+            <node role="conceptArgument" roleId="tp25.1177027386292" type="tp25.RefConcept_Reference" typeId="tp25.1177026924588" id="2135546034320179612">
+              <link role="conceptDeclaration" roleId="tp25.1177026940964" targetNodeId="v7ag.6209278014151449943" resolveInfo="PsmNewState" />
+            </node>
+          </node>
+        </node>
+        <node role="ifTrue" roleId="tpee.1068580123161" type="tpee.StatementList" typeId="tpee.1068580123136" id="2135546034320120023">
+          <node role="statement" roleId="tpee.1068581517665" type="tpd4.ReportErrorStatement" typeId="tpd4.1175517767210" id="2135546034320179613">
+            <node role="errorString" roleId="tpd4.1175517851849" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="2135546034320179616">
+              <property name="value" nameId="tpee.1070475926801" value="cannot use 'new' in the from part of a protocol" />
+            </node>
+            <node role="nodeToReport" roleId="tpd4.1227096802790" type="tpee.DotExpression" typeId="tpee.1197027756228" id="2135546034320253086">
+              <node role="operand" roleId="tpee.1197027771414" type="tpd4.ApplicableNodeReference" typeId="tpd4.1174650418652" id="2135546034320253065">
+                <link role="applicableNode" roleId="tpd4.1174650432090" targetNodeId="4058325937810649169" resolveInfo="ps" />
+              </node>
+              <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="2135546034320253092">
+                <link role="link" roleId="tp25.1138056516764" targetNodeId="v7ag.6209278014151449964" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
       <node role="statement" roleId="tpee.1068581517665" type="tpee.LocalVariableDeclarationStatement" typeId="tpee.1068581242864" id="4058325937810911159">
         <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="4058325937810911160">
           <property name="name" nameId="tpck.1169194664001" value="operation" />

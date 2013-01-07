@@ -19,7 +19,7 @@
   <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="3" implicit="yes" />
   <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="5" implicit="yes" />
   <import index="51wr" modelUID="r:b31f1c3c-99aa-4f1e-a329-cba27efb1a6b(com.mbeddr.core.buildconfig.structure)" version="1" implicit="yes" />
-  <import index="q5q6" modelUID="r:5d65e582-fa41-4818-b31c-b2aee1644b4a(com.mbeddr.analyses.cbmc.structure)" version="-1" implicit="yes" />
+  <import index="q5q6" modelUID="r:5d65e582-fa41-4818-b31c-b2aee1644b4a(com.mbeddr.analyses.cbmc.structure)" version="2" implicit="yes" />
   <import index="p7vm" modelUID="r:28fa862e-f94d-4c39-bdf7-a4bdbc773888(com.mbeddr.ext.components.gen_nomw.structure)" version="0" implicit="yes" />
   <roots>
     <node type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="2161187783549496715">
@@ -184,10 +184,10 @@
             </node>
             <node role="init" roleId="c4fa.4185783222026502647" type="mj1l.DivExpression" typeId="mj1l.5763383285156373022" id="8053687140971342869">
               <node role="right" roleId="mj1l.8860443239512128065" type="x27k.ArgumentRef" typeId="x27k.2093108837558505658" id="8053687140971342870">
-                <link role="arg" roleId="x27k.2093108837558505659" targetNodeId="2161187783549496751" resolveInfo="time" />
+                <link role="arg" roleId="x27k.2093108837558505659" targetNodeId="6091825850321635100" resolveInfo="time" />
               </node>
               <node role="left" roleId="mj1l.8860443239512128064" type="x27k.ArgumentRef" typeId="x27k.2093108837558505658" id="8053687140971342871">
-                <link role="arg" roleId="x27k.2093108837558505659" targetNodeId="2161187783549496749" resolveInfo="distance" />
+                <link role="arg" roleId="x27k.2093108837558505659" targetNodeId="6091825850321635152" resolveInfo="distance" />
               </node>
             </node>
           </node>
@@ -335,16 +335,16 @@
           <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
           <property name="const" nameId="mj1l.2941277002445651368" value="false" />
         </node>
-        <node role="arguments" roleId="x27k.5708867820623310661" type="v7ag.RunnableArgument" typeId="v7ag.8105003328814724891" id="2161187783549496749">
+        <node role="arguments" roleId="x27k.5708867820623310661" type="x27k.Argument" typeId="x27k.7892328519581704407" id="6091825850321635152">
           <property name="name" nameId="tpck.1169194664001" value="distance" />
-          <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int16tType" typeId="mj1l.8463282783691618435" id="2161187783549496750">
+          <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int16tType" typeId="mj1l.8463282783691618435" id="6091825850321635153">
             <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
             <property name="const" nameId="mj1l.2941277002445651368" value="false" />
           </node>
         </node>
-        <node role="arguments" roleId="x27k.5708867820623310661" type="v7ag.RunnableArgument" typeId="v7ag.8105003328814724891" id="2161187783549496751">
+        <node role="arguments" roleId="x27k.5708867820623310661" type="x27k.Argument" typeId="x27k.7892328519581704407" id="6091825850321635100">
           <property name="name" nameId="tpck.1169194664001" value="time" />
-          <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int16tType" typeId="mj1l.8463282783691618435" id="2161187783549496752">
+          <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int16tType" typeId="mj1l.8463282783691618435" id="6091825850321635101">
             <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
             <property name="const" nameId="mj1l.2941277002445651368" value="false" />
           </node>
@@ -456,11 +456,11 @@
             </node>
           </node>
           <node role="condition" roleId="c4fa.6275792049641600984" type="mj1l.AndExpression" typeId="mj1l.8399455261460717640" id="8053687140971460109">
-            <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.GreaterExpression" typeId="mj1l.8860443239512147445" id="8169112006045868024">
-              <node role="left" roleId="mj1l.8860443239512128064" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="8169112006045868025">
+            <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.GreaterEqualsExpression" typeId="mj1l.8860443239512147447" id="33311699572663738">
+              <node role="left" roleId="mj1l.8860443239512128064" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="33311699572663739">
                 <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="2161187783549496761" resolveInfo="time" />
               </node>
-              <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="8169112006045868026">
+              <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="33311699572663740">
                 <property name="value" nameId="mj1l.8860443239512128104" value="0" />
               </node>
             </node>
@@ -749,12 +749,13 @@
     </node>
     <node role="configurationItems" roleId="vs0r.4459718605982007338" type="k146.ReportingConfiguration" typeId="k146.4459718605982051949" id="2161187783549496862">
       <node role="strategy" roleId="k146.4459718605982051999" type="k146.PrintfReportingStrategy" typeId="k146.4459718605982051980" id="2161187783549496863">
-        <property name="addLabels" nameId="k146.836404361042872859" value="true" />
+        <property name="addLabels" value="true" />
       </node>
     </node>
     <node role="configurationItems" roleId="vs0r.4459718605982007338" type="v7ag.ComponentsConfigItem" typeId="v7ag.2103658896110121032" id="2161187783549496957">
       <node role="genStrategy" roleId="v7ag.2103658896110238743" type="p7vm.NoMwComponentsGenStrategy" typeId="p7vm.2103658896110278831" id="2161187783549757858">
         <property name="wireStatically" nameId="p7vm.1553713790141527405" value="true" />
+        <property name="generateContracts" nameId="p7vm.4768833643347725006" value="true" />
         <link role="instanceConfig" roleId="p7vm.1553713790141527407" targetNodeId="2161187783549496754" resolveInfo="comp" />
       </node>
     </node>

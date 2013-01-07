@@ -129,12 +129,6 @@
       <property name="virtualPackage" nameId="tpck.1193676396447" value="comp" />
       <property name="name" nameId="tpck.1169194664001" value="IComponentContent" />
     </node>
-    <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="8105003328814724891">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="comp.runnable" />
-      <property name="name" nameId="tpck.1169194664001" value="RunnableArgument" />
-      <property name="iconPath" nameId="tpce.1160488491229" value="${language_descriptor}/icons/argument.jpg" />
-      <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
-    </node>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="8105003328815039001">
       <property name="name" nameId="tpck.1169194664001" value="PortAdapterRefExpr" />
       <property name="virtualPackage" nameId="tpck.1193676396447" value="adapter" />
@@ -1028,21 +1022,6 @@
     </node>
     <node role="extends" roleId="tpce.1169127546356" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="8515777736166913819">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="vs0r.7024921229556133800" resolveInfo="ICommentable" />
-    </node>
-  </root>
-  <root id="8105003328814724891">
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="4058325937811252155">
-      <property name="value" nameId="tpce.1105725733873" value="--" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473914776" resolveInfo="shortDescription" />
-    </node>
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="8444296659257734277">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="x27k.8444296659257696249" resolveInfo="IArgumentLike" />
-    </node>
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7049003809922836462">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="2gv2.9057217260024409663" resolveInfo="IWatchablesProvider" />
-    </node>
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="5806551411807083305">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="c4fa.5806551411806985509" resolveInfo="ICanBeStoredInRegister" />
     </node>
   </root>
   <root id="8105003328815039001">
