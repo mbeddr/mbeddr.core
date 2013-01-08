@@ -10,7 +10,7 @@
   <language namespace="2d7fadf5-33f6-4e80-a78f-0f739add2bde(com.mbeddr.core.buildconfig)" />
   <language namespace="2693fc71-9b0e-4b05-ab13-f57227d675f2(com.mbeddr.core.util)" />
   <devkit namespace="24565007-e59f-42fc-ac10-da3836deec1c(com.mbeddr.components)" />
-  <import index="v7ag" modelUID="r:9596407c-f27a-49d3-abde-3a66293c5b61(com.mbeddr.ext.components.structure)" version="14" implicit="yes" />
+  <import index="v7ag" modelUID="r:9596407c-f27a-49d3-abde-3a66293c5b61(com.mbeddr.ext.components.structure)" version="15" implicit="yes" />
   <import index="p7vm" modelUID="r:28fa862e-f94d-4c39-bdf7-a4bdbc773888(com.mbeddr.ext.components.gen_nomw.structure)" version="0" implicit="yes" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="yq40" modelUID="r:152b3fc0-83a1-4bab-a8cd-565eb8483785(com.mbeddr.core.pointers.structure)" version="3" implicit="yes" />
@@ -217,7 +217,7 @@
               <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="5308710777891692713">
                 <node role="expr" roleId="c4fa.7254843406768833939" type="v7ag.RequiredPortOpCallExpr" typeId="v7ag.466603768608442377" id="5308710777891692715">
                   <link role="operation" roleId="v7ag.8105003328815071752" targetNodeId="5308710777891692707" resolveInfo="log" />
-                  <node role="expression" roleId="mj1l.7254843406768839760" type="v7ag.RequiredPortRefExpr" typeId="v7ag.8105003328815208362" id="5308710777891692714">
+                  <node role="expression" roleId="mj1l.7254843406768839760" type="v7ag.PortRefExpr" typeId="v7ag.8105003328815208362" id="5308710777891692714">
                     <link role="port" roleId="v7ag.8105003328815208363" targetNodeId="5308710777891692710" resolveInfo="logger" />
                   </node>
                   <node role="actuals" roleId="v7ag.8105003328815091213" type="yq40.StringLiteral" typeId="yq40.6113173064526131575" id="5308710777891692716">
@@ -230,7 +230,7 @@
           <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="8922663937488690199">
             <node role="expr" roleId="c4fa.7254843406768833939" type="v7ag.RequiredPortOpCallExpr" typeId="v7ag.466603768608442377" id="8922663937488690201">
               <link role="operation" roleId="v7ag.8105003328815071752" targetNodeId="8922663937488690184" resolveInfo="doSomeLowlevelStuff" />
-              <node role="expression" roleId="mj1l.7254843406768839760" type="v7ag.RequiredPortRefExpr" typeId="v7ag.8105003328815208362" id="8922663937488690200">
+              <node role="expression" roleId="mj1l.7254843406768839760" type="v7ag.PortRefExpr" typeId="v7ag.8105003328815208362" id="8922663937488690200">
                 <link role="port" roleId="v7ag.8105003328815208363" targetNodeId="8922663937488690187" resolveInfo="lowlevel" />
               </node>
               <node role="actuals" roleId="v7ag.8105003328815091213" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3402431285978276306">
@@ -345,7 +345,7 @@
                   </node>
                   <node role="left" roleId="mj1l.8860443239512128064" type="v7ag.RequiredPortOpCallExpr" typeId="v7ag.466603768608442377" id="466603768608520866">
                     <link role="operation" roleId="v7ag.8105003328815071752" targetNodeId="8105003328815197165" resolveInfo="setDriverValue" />
-                    <node role="expression" roleId="mj1l.7254843406768839760" type="v7ag.RequiredPortRefExpr" typeId="v7ag.8105003328815208362" id="466603768608520492">
+                    <node role="expression" roleId="mj1l.7254843406768839760" type="v7ag.PortRefExpr" typeId="v7ag.8105003328815208362" id="466603768608520492">
                       <link role="port" roleId="v7ag.8105003328815208363" targetNodeId="8105003328815208360" resolveInfo="driver" />
                     </node>
                     <node role="actuals" roleId="v7ag.8105003328815091213" type="x27k.GlobalConstantRef" typeId="x27k.3788988821852026523" id="466603768608520867">
@@ -366,7 +366,7 @@
                   </node>
                   <node role="left" roleId="mj1l.8860443239512128064" type="v7ag.RequiredPortOpCallExpr" typeId="v7ag.466603768608442377" id="466603768608520873">
                     <link role="operation" roleId="v7ag.8105003328815071752" targetNodeId="8105003328815197165" resolveInfo="setDriverValue" />
-                    <node role="expression" roleId="mj1l.7254843406768839760" type="v7ag.RequiredPortRefExpr" typeId="v7ag.8105003328815208362" id="466603768608520872">
+                    <node role="expression" roleId="mj1l.7254843406768839760" type="v7ag.PortRefExpr" typeId="v7ag.8105003328815208362" id="466603768608520872">
                       <link role="port" roleId="v7ag.8105003328815208363" targetNodeId="8105003328815208360" resolveInfo="driver" />
                     </node>
                     <node role="actuals" roleId="v7ag.8105003328815091213" type="x27k.GlobalConstantRef" typeId="x27k.3788988821852026523" id="466603768608520874">
