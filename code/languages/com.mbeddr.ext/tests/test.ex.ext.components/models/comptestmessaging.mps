@@ -4,7 +4,7 @@
   <language namespace="97d24244-51db-4e2e-97fc-7bd73b1f5f40(com.mbeddr.ext.components)" />
   <devkit namespace="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
   <devkit namespace="24565007-e59f-42fc-ac10-da3836deec1c(com.mbeddr.components)" />
-  <import index="v7ag" modelUID="r:9596407c-f27a-49d3-abde-3a66293c5b61(com.mbeddr.ext.components.structure)" version="14" implicit="yes" />
+  <import index="v7ag" modelUID="r:9596407c-f27a-49d3-abde-3a66293c5b61(com.mbeddr.ext.components.structure)" version="15" implicit="yes" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="17" implicit="yes" />
   <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="5" implicit="yes" />
@@ -56,7 +56,7 @@
             <node role="body" roleId="v7ag.5308710777891663533" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="1302968767135217974">
               <node role="statements" roleId="c4fa.4185783222026475862" type="v7ag.SendMessageStatement" typeId="v7ag.2002654497536685286" id="1302968767135217967">
                 <link role="msg" roleId="v7ag.2002654497536685290" targetNodeId="1302968767135217965" resolveInfo="doSomething" />
-                <node role="requiredPort" roleId="v7ag.2002654497536685413" type="v7ag.RequiredPortRefExpr" typeId="v7ag.8105003328815208362" id="1302968767135217971">
+                <node role="requiredPort" roleId="v7ag.2002654497536685413" type="v7ag.PortRefExpr" typeId="v7ag.8105003328815208362" id="1302968767135217971">
                   <link role="port" roleId="v7ag.8105003328815208363" targetNodeId="1302968767135217970" resolveInfo="demo" />
                 </node>
               </node>
