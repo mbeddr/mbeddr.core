@@ -1186,9 +1186,13 @@
         <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="998890089995283818">
           <property name="name" nameId="tpck.1169194664001" value="empty_1357657815081_3" />
         </node>
+        <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="3853922503293677811">
+          <property name="name" nameId="tpck.1169194664001" value="empty_1357722902376_1" />
+        </node>
         <node role="contents" roleId="x27k.6437088627575722833" type="v7ag.SenderReceiverInterface" typeId="v7ag.998890089994729412" id="998890089994828095">
           <property name="name" nameId="tpck.1169194664001" value="CarData" />
           <property name="exported" nameId="x27k.1317894735999272944" value="false" />
+          <property name="strict" nameId="v7ag.3853922503293368919" value="true" />
           <node role="elements" roleId="v7ag.998890089994729432" type="v7ag.DataElement" typeId="v7ag.998890089994729418" id="998890089994905863">
             <property name="name" nameId="tpck.1169194664001" value="drehzahl" />
             <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="998890089994905864">
