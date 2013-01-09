@@ -154,7 +154,7 @@
     </node>
     <node type="tp3j.IntentionDeclaration" typeId="tp3j.1192794744107" id="2116578915583842971">
       <property name="virtualPackage" nameId="tpck.1193676396447" value="intf.sr" />
-      <property name="name" nameId="tpck.1169194664001" value="ToggleAtomic" />
+      <property name="name" nameId="tpck.1169194664001" value="toggleAtomic" />
       <property name="isAvailableInChildNodes" nameId="tp3j.2522969319638091386" value="true" />
       <link role="forConcept" roleId="tp3j.2522969319638198290" targetNodeId="v7ag.998890089994729418" resolveInfo="DataElement" />
     </node>
@@ -1714,7 +1714,7 @@
       <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="3853922503293368956">
         <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="3853922503293375435">
           <node role="expression" roleId="tpee.1068580123156" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3853922503293375436">
-            <property name="value" nameId="tpee.1070475926801" value="Toggle strict" />
+            <property name="value" nameId="tpee.1070475926801" value="Toggle Strict" />
           </node>
         </node>
       </node>
