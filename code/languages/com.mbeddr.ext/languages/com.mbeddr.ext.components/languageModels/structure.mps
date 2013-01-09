@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model modelUID="r:9596407c-f27a-49d3-abde-3a66293c5b61(com.mbeddr.ext.components.structure)" version="15">
+<model modelUID="r:9596407c-f27a-49d3-abde-3a66293c5b61(com.mbeddr.ext.components.structure)" version="16">
   <persistence version="7" />
   <language namespace="c72da2b9-7cce-4447-8389-f407dc1158b7(jetbrains.mps.lang.structure)" />
   <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="5" />
@@ -12,7 +12,7 @@
   <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="17" implicit="yes" />
   <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="5" implicit="yes" />
   <import index="k146" modelUID="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" version="2" implicit="yes" />
-  <import index="v7ag" modelUID="r:9596407c-f27a-49d3-abde-3a66293c5b61(com.mbeddr.ext.components.structure)" version="15" implicit="yes" />
+  <import index="v7ag" modelUID="r:9596407c-f27a-49d3-abde-3a66293c5b61(com.mbeddr.ext.components.structure)" version="16" implicit="yes" />
   <roots>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4491876417845474761">
       <property name="name" nameId="tpck.1169194664001" value="Component" />
@@ -30,20 +30,10 @@
       <property name="iconPath" nameId="tpce.1160488491229" value="${language_descriptor}/icons/csinterface.jpg" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="4491876417845484919" resolveInfo="Interface" />
     </node>
-    <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4491876417845484923">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="intf.msg" />
-      <property name="name" nameId="tpck.1169194664001" value="MessageInterface" />
-      <link role="extends" roleId="tpce.1071489389519" targetNodeId="4491876417845484919" resolveInfo="Interface" />
-    </node>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4491876417845484924">
       <property name="virtualPackage" nameId="tpck.1193676396447" value="intf.cs" />
       <property name="name" nameId="tpck.1169194664001" value="Operation" />
       <property name="iconPath" nameId="tpce.1160488491229" value="${language_descriptor}/icons/operation.jpg" />
-      <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
-    </node>
-    <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4491876417845484927">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="intf.msg" />
-      <property name="name" nameId="tpck.1169194664001" value="Message" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
     </node>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4491876417845484930">
@@ -73,11 +63,6 @@
       <property name="virtualPackage" nameId="tpck.1193676396447" value="comp.runnable" />
       <property name="name" nameId="tpck.1169194664001" value="RunnableTrigger" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
-    </node>
-    <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4491876417845641675">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="comp.runnable" />
-      <property name="name" nameId="tpck.1169194664001" value="MessageTrigger" />
-      <link role="extends" roleId="tpce.1071489389519" targetNodeId="4491876417845641673" resolveInfo="RunnableTrigger" />
     </node>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4491876417845641677">
       <property name="virtualPackage" nameId="tpck.1193676396447" value="comp.runnable" />
@@ -115,11 +100,6 @@
       <property name="name" nameId="tpck.1169194664001" value="InstanceConfiguration" />
       <property name="iconPath" nameId="tpce.1160488491229" value="${language_descriptor}/icons/instanceConfiguration.jpg" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="7780999115923942144" resolveInfo="AbstractInstanceConfiguration" />
-    </node>
-    <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4491876417845683824">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="intf.msg" />
-      <property name="name" nameId="tpck.1169194664001" value="MessageParameter" />
-      <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
     </node>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4491876417845683828">
       <property name="virtualPackage" nameId="tpck.1193676396447" value="intf.cs" />
@@ -184,11 +164,6 @@
       <property name="virtualPackage" nameId="tpck.1193676396447" value="comp.runnable" />
       <property name="name" nameId="tpck.1169194664001" value="InternalRunnableCall" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="mj1l.8860443239512128050" resolveInfo="Expression" />
-    </node>
-    <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="2002654497536685286">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="comp.runnable" />
-      <property name="name" nameId="tpck.1169194664001" value="SendMessageStatement" />
-      <link role="extends" roleId="tpce.1071489389519" targetNodeId="c4fa.4185783222026464515" resolveInfo="Statement" />
     </node>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="1302968767135102724">
       <property name="virtualPackage" nameId="tpck.1193676396447" value="comp.runnable" />
@@ -552,22 +527,6 @@
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="2gv2.4474148880361719194" resolveInfo="IWatchablesProviderContext" />
     </node>
   </root>
-  <root id="4491876417845484923">
-    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="4491876417845484929">
-      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
-      <property name="role" nameId="tpce.1071599776563" value="messages" />
-      <property name="sourceCardinality" nameId="tpce.1071599893252" value="0..n" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="4491876417845484927" resolveInfo="Message" />
-    </node>
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="8105003328814596036">
-      <property name="value" nameId="tpce.1105725733873" value="message interface" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473891462" resolveInfo="alias" />
-    </node>
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="6591434695300617899">
-      <property name="value" nameId="tpce.1105725733873" value="interface with data items" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473914776" resolveInfo="shortDescription" />
-    </node>
-  </root>
   <root id="4491876417845484924">
     <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="4058325937811252132">
       <property name="value" nameId="tpce.1105725733873" value="operation" />
@@ -622,25 +581,6 @@
     <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="6591434695301777601">
       <property name="name" nameId="tpck.1169194664001" value="isQuery" />
       <link role="dataType" roleId="tpce.1082985295845" targetNodeId="tpck.1082983657063" resolveInfo="boolean" />
-    </node>
-  </root>
-  <root id="4491876417845484927">
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="4058325937811252126">
-      <property name="value" nameId="tpce.1105725733873" value="a data packet as a message" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473914776" resolveInfo="shortDescription" />
-    </node>
-    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="4491876417845683827">
-      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
-      <property name="role" nameId="tpce.1071599776563" value="parameters" />
-      <property name="sourceCardinality" nameId="tpce.1071599893252" value="0..n" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="4491876417845683824" resolveInfo="MessageParameter" />
-    </node>
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="4491876417845484928">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="vs0r.7024921229555594291" resolveInfo="IIdentifierNamedConcept" />
-    </node>
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="1302968767135217966">
-      <property name="value" nameId="tpce.1105725733873" value="message" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473891462" resolveInfo="alias" />
     </node>
   </root>
   <root id="4491876417845484930">
@@ -792,28 +732,6 @@
     </node>
     <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.BooleanConceptProperty" typeId="tpce.1105725574259" id="4491876417845641674">
       <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473854053" resolveInfo="abstract" />
-    </node>
-  </root>
-  <root id="4491876417845641675">
-    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="4491876417845673828">
-      <property name="metaClass" nameId="tpce.1071599937831" value="reference" />
-      <property name="role" nameId="tpce.1071599776563" value="providedPort" />
-      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="4491876417845484930" resolveInfo="Port" />
-    </node>
-    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="4491876417845641676">
-      <property name="metaClass" nameId="tpce.1071599937831" value="reference" />
-      <property name="role" nameId="tpce.1071599776563" value="receivedMessage" />
-      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="4491876417845484927" resolveInfo="Message" />
-    </node>
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="2002654497536619074">
-      <property name="value" nameId="tpce.1105725733873" value="msg" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473891462" resolveInfo="alias" />
-    </node>
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="6591434695300617882">
-      <property name="value" nameId="tpce.1105725733873" value="tiggered by message receive" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473914776" resolveInfo="shortDescription" />
     </node>
   </root>
   <root id="4491876417845641677">
@@ -994,18 +912,6 @@
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="2gv2.9057217260024409663" resolveInfo="IWatchablesProvider" />
     </node>
   </root>
-  <root id="4491876417845683824">
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="4058325937811252127">
-      <property name="value" nameId="tpce.1105725733873" value="--" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473914776" resolveInfo="shortDescription" />
-    </node>
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="4491876417845683825">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="vs0r.7024921229555594291" resolveInfo="IIdentifierNamedConcept" />
-    </node>
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="5708867820619400655">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="mj1l.318113533128716675" resolveInfo="ITyped" />
-    </node>
-  </root>
   <root id="4491876417845683828">
     <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="4058325937811252134">
       <property name="value" nameId="tpce.1105725733873" value="a parameter for an operation" />
@@ -1130,7 +1036,7 @@
     </node>
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="466603768608442378">
       <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
-      <property name="role" nameId="tpce.1071599776563" value="requiredPort" />
+      <property name="role" nameId="tpce.1071599776563" value="port" />
       <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
       <link role="target" roleId="tpce.1071599976176" targetNodeId="8105003328815208362" resolveInfo="PortRefExpr" />
       <link role="specializedLink" roleId="tpce.1071599698500" targetNodeId="mj1l.7254843406768839760" />
@@ -1268,34 +1174,6 @@
     </node>
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="8729127847821611323">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="x27k.8011039602902827386" resolveInfo="ICallLike" />
-    </node>
-  </root>
-  <root id="2002654497536685286">
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="4058325937811252157">
-      <property name="value" nameId="tpce.1105725733873" value="send a message via a required port" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473914776" resolveInfo="shortDescription" />
-    </node>
-    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="2002654497536685292">
-      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
-      <property name="role" nameId="tpce.1071599776563" value="actuals" />
-      <property name="sourceCardinality" nameId="tpce.1071599893252" value="0..n" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="mj1l.8860443239512128050" resolveInfo="Expression" />
-    </node>
-    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="2002654497536685413">
-      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
-      <property name="role" nameId="tpce.1071599776563" value="requiredPort" />
-      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="8105003328815208362" resolveInfo="PortRefExpr" />
-    </node>
-    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="2002654497536685290">
-      <property name="metaClass" nameId="tpce.1071599937831" value="reference" />
-      <property name="role" nameId="tpce.1071599776563" value="msg" />
-      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="4491876417845484927" resolveInfo="Message" />
-    </node>
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="2002654497536685288">
-      <property name="value" nameId="tpce.1105725733873" value="send" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473891462" resolveInfo="alias" />
     </node>
   </root>
   <root id="1302968767135102724">
