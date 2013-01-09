@@ -1,102 +1,109 @@
 \section{Data flow analyses}
 \label{details_dataflow}
 
-mbeddr comes with a Debugger for core C. The debugger can also debug the
-standard extensions and is extensible for user-defined extensions. In this
-section we describe how to debug C programs.
+mbeddr comes with support for data flow analyses for the C core. Currently we can detect uninitialised and unused variables, unused assignments, missing return statements and dead code. The data flow analyses are realised with the MPS data flow framework (for further information please take a look at the\href{http://confluence.jetbrains.net/display/MPSD25/Dataflow}{MPS Dataflow Cookbook} and the \href{http://confluence.jetbrains.net/display/MPSD25/Dataflow}{dataflow section of the MPS user guide}). If you want to inspect the data flow graph, which is used for the analyses, you can right click a node in your mbeddr C program and select  \textbf{Show Data Flow Graph} from the \textbf{Language Debug}  context menu. If you decide that the provided data flow information is not useful, we have introduced an annotation to disable the analyses. This annotation can be attached to e.g. a C function with the \textbf{Toggle Do Not Analyze Data Flow Annotation} intention.
 
-\greyboxnote{We assume the default configuration, where we use \ic{gdb} as the
-debug backed. Debugging on some target device is not yet supported.}
+This section gives a short overview of these analyses and explains the warning or error messages with the help of some examples. 
 
-The Hello World project contains a model called \ic{Debugger.Example} that
-contains a simple program that makes use of a number of C extensions. We will
-use this program to illustrate debugging.
-
-\begin{lstlisting}[language=mbeddr, morekeywords={}]
-module DebuggerExample from Debugger.Example imports nothing { 
-   
-  int8 add(int8 x, int8 y) { 
-    return x + y; 
-  } 
-   
-  exported test case testAdding { 
-    assert(0) add(1, 2) == 3; 
-    assert(1) add(2, 4) == 6; 
-  } 
-   
-  int32 main(int32 argc, int8*[ ] argv) { 
-    return test testAdding; 
-  } 
-}
-\end{lstlisting}
-
-\subsection{Creating a Debug Configuration}
-
-We start out by creating a new debug configuration as shown in the figure below:
+\subsection{Uninitialized Variables}
+Writing and reading variables is modelled with MPS data flow read and write instructions.
 
 \vspace{-4mm}
 
 \begin{center} 
-  \includegraphics[width=11cm]{figures/core/debugger2.png}
+  \includegraphics[width=11cm]{figures/core/dataflow1.png}
 \end{center}
 
 \vspace{-4mm}
 
-In the resulting dialog, name the new configuration \ic{DebuggerExampleConfig}
-and select the \ic{Debugger.Example.DebuggerExample} executable via the \ic{...}
-button (this executable is defined in the build configuration of the debugger
-example). \ic{Timeout} controls in \emph{ms} how long the debugger should
-wait for a connection setup to the underlying C debugger (increase this value,
-if your experience problems) and \ic{run Make} creates a executable
-with debug symbols in it (necessary for the debugger).
+The data flow graph of the C function \ic{uninitializedVariablesExample} is shown in the following figure. The usage of an uninitialised variable is detected if there is no write instruction before a read instruction of the corresponding variable. In the example function the reference to variable b is marked with an error message, as the variable is read before it was initialized.
 
 \vspace{-4mm}
+
 \begin{center} 
-  \includegraphics[width=11cm]{figures/core/debugger3.png}
+  \includegraphics[width=4cm]{figures/core/dataflow2.png}
 \end{center}
+
 \vspace{-4mm}
-The launch configurations drop down at the top of the MPS screen should now
-show this new configuration:
+
+\subsection{Unused Variables}
+Variables which are never used can be detected by looking for variables for which neither a read nor a write instruction exists in the data flow graph. If such a variable is detected the variable declaration is marked with a warning message. To detect variables as unused which are initialised (a write instruction exists in the data flow graph) but never read, the data flow graph is searched for write instructions with no consecutive read instruction. In this case, the initialiser of the variable is marked with a warning message. The following two figures contain an example C function and the corresponding data flow graph.
+
+\vspace{-4mm}
 
 \begin{center} 
-  \includegraphics[width=6cm]{figures/core/debugger4.png}
+  \includegraphics[width=11cm]{figures/core/dataflow3.png}
 \end{center}
 
+\vspace{-4mm}
 
-\subsection{Running a Debug Session}
-
-Before we can run the debugger, we have to make sure the C code for the program
-has been generated. So select \ic{Rebuild} from the context menu of the
-\ic{Debugger.Example} model or press \ic{Ctrl-F9}.
-
-Now set a breakpoint in the first line of the test case. You can set breakpoints
-by clicking into the gutter of the editor. The result should look like this:
+\vspace{-4mm}
 
 \begin{center} 
-  \includegraphics[width=11cm]{figures/core/debugger1.png}
+  \includegraphics[width=4cm]{figures/core/dataflow4.png}
 \end{center}
 
-Next, run the previously created debug configuration by pressing
-\keystroke{Shift-F9} or by selecting the debugger button in the MPS title bar
-(see next figure).
+\vspace{-4mm}
+
+\subsection{Unused Assignments}
+Unused assignments can be detected by searching for write instructions with no consecutive read instruction of the same variable in the data flow graph. The C function \ic{unusedAssignmentsExample} is a simple example for an unused assignment. 
+
+\vspace{-4mm}
 
 \begin{center} 
-  \includegraphics[width=6cm]{figures/core/debugger5.png}
+  \includegraphics[width=11cm]{figures/core/dataflow6.png}
 \end{center}
 
-The debugger should start up and stop at the breakpoint we had set before.
+The \ic{int32} variable \ic{a} is initialised with the value \ic{1}. Afterwards it is read in the condition of the if statement\footnote{Please take note that branches into different paths in the program flow are represented in the data flow graph with jump and ifjump instructions. Jump instructions represent mandatory jumps from one point in the program to another, ifjump instructions represent optional jumps. In the case of the if statement an ifjump instruction is used as the true as well as the false path can be reached. }. 
+
+Therefore the assignment is used. In an assignment expression the value \ic{0} is assigned to the variable. As the variable is never used again, this assignment can be marked with a warning message, indication the superfluous assignment. The data flow graph of this example is shown in the following figure.
 
 \begin{center} 
-  \includegraphics[width=11cm]{figures/core/debugger6.png}
+  \includegraphics[width=4cm]{figures/core/dataflow5.png}
 \end{center}
 
-Next, press \ic{F8} to \emph{step over} the current line and then press \ic{F7}
-to \emph{step into} the \ic{add} function on the second line of the test case.
-Once inside the function, you can see the nested stack frames as well as the
-local variables \ic{x} and \ic{y}.
+\vspace{-4mm}
+\subsection{Missing Returns}
+To represent return statements in the data flow graph a return instruction is provided by the MPS data flow framework. To detect C functions with missing return statements the last instruction of the data flow graph is used. If any path to this instruction through the data flow graph with no return instruction exists, a return statement is missing.
+The following two figures show an example C functions and the data flow graph of this function. Take note that the path through the data flow graph via the instruction 0, 1, 2, 3, 7 does not contain any return instruction. This is indicated to the user with an error message.
+
+\vspace{-4mm}
 
 \begin{center} 
-  \includegraphics[width=11cm]{figures/core/debugger7.png}
+  \includegraphics[width=11cm]{figures/core/dataflow7.png}
 \end{center}
+
+\vspace{-4mm}
+
+\vspace{-4mm}
+
+\begin{center} 
+  \includegraphics[width=4cm]{figures/core/dataflow8.png}
+\end{center}
+
+\vspace{-4mm}
+
+\subsection{Dead Code}
+Dead code regions can be detected by searching the data flow graph for program flow paths which are not reachable from the first instruction of the data flow graph.
+An example is given in the following two figures.
+
+\vspace{-4mm}
+
+\begin{center} 
+  \includegraphics[width=11cm]{figures/core/dataflow9.png}
+\end{center}
+
+\vspace{-4mm}
+
+\vspace{-4mm}
+
+\begin{center} 
+  \includegraphics[width=4cm]{figures/core/dataflow10.png}
+\end{center}
+
+\vspace{-4mm}
+
+The first condition will always be false, therefore the then part of the if statement will can not be reached. As the condition of the else if part is always true, the else part can never be reached. Therefore there are two dead code regions in the example C function, which are marked with error messages. 
+
 
 
