@@ -3,7 +3,7 @@
   <persistence version="7" />
   <language namespace="7a5dda62-9140-4668-ab76-d5ed1746f2b2(jetbrains.mps.lang.typesystem)" />
   <devkit namespace="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
-  <import index="v7ag" modelUID="r:9596407c-f27a-49d3-abde-3a66293c5b61(com.mbeddr.ext.components.structure)" version="15" />
+  <import index="v7ag" modelUID="r:9596407c-f27a-49d3-abde-3a66293c5b61(com.mbeddr.ext.components.structure)" version="16" />
   <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="17" />
   <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="3" />
   <import index="qd6m" modelUID="r:c4c3f7d3-0acf-4671-a134-5fab66c4e637(com.mbeddr.core.modules.behavior)" version="0" />
@@ -241,6 +241,10 @@
     <node type="tpd4.NonTypesystemRule" typeId="tpd4.1195214364922" id="998890089995283847">
       <property name="name" nameId="tpck.1169194664001" value="check_DataElementRefExpr" />
       <property name="virtualPackage" nameId="tpck.1193676396447" value="intf.sr" />
+    </node>
+    <node type="tpd4.NonTypesystemRule" typeId="tpd4.1195214364922" id="2116578915583448869">
+      <property name="name" nameId="tpck.1169194664001" value="check_PortRefExpr" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="adapter" />
     </node>
   </roots>
   <root id="8105003328814738228">
@@ -6635,6 +6639,41 @@
     <node role="applicableNode" roleId="tpd4.1174648101952" type="tpd4.ConceptReference" typeId="tpd4.1174642788531" id="998890089995283849">
       <property name="name" nameId="tpck.1169194664001" value="dare" />
       <link role="concept" roleId="tpd4.1174642800329" targetNodeId="v7ag.998890089995051771" resolveInfo="DataElementRefExpr" />
+    </node>
+  </root>
+  <root id="2116578915583448869">
+    <node role="body" roleId="tpd4.1195213635060" type="tpee.StatementList" typeId="tpee.1068580123136" id="2116578915583448870">
+      <node role="statement" roleId="tpee.1068581517665" type="tpee.IfStatement" typeId="tpee.1068580123159" id="2116578915583448872">
+        <node role="ifTrue" roleId="tpee.1068580123161" type="tpee.StatementList" typeId="tpee.1068580123136" id="2116578915583448874">
+          <node role="statement" roleId="tpee.1068581517665" type="tpd4.ReportErrorStatement" typeId="tpd4.1175517767210" id="2116578915583489182">
+            <node role="errorString" roleId="tpd4.1175517851849" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="2116578915583489185">
+              <property name="value" nameId="tpee.1070475926801" value="Cannot be used here" />
+            </node>
+            <node role="nodeToReport" roleId="tpd4.1227096802790" type="tpd4.ApplicableNodeReference" typeId="tpd4.1174650418652" id="2116578915583489186">
+              <link role="applicableNode" roleId="tpd4.1174650432090" targetNodeId="2116578915583448871" resolveInfo="pre" />
+            </node>
+          </node>
+        </node>
+        <node role="condition" roleId="tpee.1068580123160" type="tpee.NotExpression" typeId="tpee.1081516740877" id="2116578915583457157">
+          <node role="expression" roleId="tpee.1081516765348" type="tpee.DotExpression" typeId="tpee.1197027756228" id="2116578915583489174">
+            <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="2116578915583457180">
+              <node role="operand" roleId="tpee.1197027771414" type="tpd4.ApplicableNodeReference" typeId="tpd4.1174650418652" id="2116578915583457159">
+                <link role="applicableNode" roleId="tpd4.1174650432090" targetNodeId="2116578915583448871" resolveInfo="pre" />
+              </node>
+              <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_GetParentOperation" typeId="tp25.1139613262185" id="2116578915583489152" />
+            </node>
+            <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_IsInstanceOfOperation" typeId="tp25.1139621453865" id="2116578915583489179">
+              <node role="conceptArgument" roleId="tp25.1177027386292" type="tp25.RefConcept_Reference" typeId="tp25.1177026924588" id="2116578915583489181">
+                <link role="conceptDeclaration" roleId="tp25.1177026940964" targetNodeId="v7ag.2116578915583337367" resolveInfo="IContextForPortRefExpr" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node role="applicableNode" roleId="tpd4.1174648101952" type="tpd4.ConceptReference" typeId="tpd4.1174642788531" id="2116578915583448871">
+      <property name="name" nameId="tpck.1169194664001" value="pre" />
+      <link role="concept" roleId="tpd4.1174642800329" targetNodeId="v7ag.8105003328815208362" resolveInfo="PortRefExpr" />
     </node>
   </root>
 </model>
