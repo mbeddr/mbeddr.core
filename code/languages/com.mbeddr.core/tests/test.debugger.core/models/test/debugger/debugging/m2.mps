@@ -333,6 +333,18 @@
         <link role="marker" roleId="rpmx.4193597469137492645" targetNodeId="9152682018125644272" resolveInfo="m3" />
       </node>
     </node>
+    <node role="testMethods" roleId="rpmx.1217501895093" type="rpmx.DebuggerTestMethod" typeId="rpmx.4193597469137492636" id="9152682018127797161">
+      <property name="name" nameId="tpck.1169194664001" value="bla" />
+      <node role="returnType" roleId="tpee.1068580123133" type="tpee.VoidType" typeId="tpee.1068581517677" id="9152682018127797162" />
+      <node role="validationBody" roleId="rpmx.7048220250906209725" type="rpmx.ValidationList" typeId="rpmx.7048220250906209718" id="9152682018127797163">
+        <node role="validations" roleId="rpmx.7048220250906209719" type="rpmx.ValidateCallStack" typeId="rpmx.7048220250906041081" id="9152682018127797165">
+          <node role="depth" roleId="rpmx.7048220250906041083" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="9152682018127797166">
+            <property name="value" nameId="tpee.1068580320021" value="1" />
+          </node>
+        </node>
+      </node>
+      <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="9152682018127797164" />
+    </node>
     <node role="binaryRef" roleId="rpmx.5100083648679329380" type="rpmx.BinaryRef" typeId="rpmx.5100083648679329379" id="5649446730602042720">
       <link role="binary" roleId="rpmx.7048220250906128789" targetNodeId="5649446730601945722" resolveInfo="HelloWorld" />
     </node>
