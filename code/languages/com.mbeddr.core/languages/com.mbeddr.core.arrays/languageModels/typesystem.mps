@@ -603,7 +603,7 @@
                     <node role="ifTrue" roleId="tpee.1068580123161" type="tpee.StatementList" typeId="tpee.1068580123136" id="7058269619788391458">
                       <node role="statement" roleId="tpee.1068581517665" type="tpd4.WarningStatement" typeId="tpd4.1207055528241" id="7058269619788391486">
                         <node role="warningText" roleId="tpd4.1207055552304" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="7058269619788391490">
-                          <property name="value" nameId="tpee.1070475926801" value="array size is not staticallyEvaluatable" />
+                          <property name="value" nameId="tpee.1070475926801" value="array size is marked staticallyEvaluatable, but return nothing from evaluateStatically" />
                         </node>
                         <node role="nodeToReport" roleId="tpd4.1227096802790" type="tpd4.ApplicableNodeReference" typeId="tpd4.1174650418652" id="7058269619788391492">
                           <link role="applicableNode" roleId="tpd4.1174650432090" targetNodeId="5679441017214059543" resolveInfo="arrayType" />
