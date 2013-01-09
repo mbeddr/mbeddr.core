@@ -170,8 +170,14 @@ make test
 PROC_RET=$(($?+$PROC_RET))
 
 echo -------------------------------------
+echo SR Tests
+cd ../../../../../../../test.ex.ext.components.sri/source_gen/test/ex/ext/components/sri/main
+make test
+PROC_RET=$(($?+$PROC_RET))
+
+echo -------------------------------------
 echo Exception Handling
-cd ../../../../../../../../
+cd ../../../../../../../../../
 cd lib/com.mbeddr.ext.exceptionhandling.lib/source_gen/com/mbeddr/ext/exceptionhandling/lib/rt/
 make clean all
 cd ../../../../../../../../../
