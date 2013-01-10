@@ -4,7 +4,7 @@
   <language namespace="d7a92d38-f7db-40d0-8431-763b0c3c9f20(jetbrains.mps.lang.intentions)" />
   <language namespace="13744753-c81f-424a-9c1b-cf8943bf4e86(jetbrains.mps.lang.sharedConcepts)" />
   <devkit namespace="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
-  <import index="v7ag" modelUID="r:9596407c-f27a-49d3-abde-3a66293c5b61(com.mbeddr.ext.components.structure)" version="15" />
+  <import index="v7ag" modelUID="r:9596407c-f27a-49d3-abde-3a66293c5b61(com.mbeddr.ext.components.structure)" version="16" />
   <import index="ywuz" modelUID="r:c6ce92e7-5a98-4a6f-866a-ec8b9e945dd8(com.mbeddr.core.expressions.behavior)" version="1" />
   <import index="9a8" modelUID="f:java_stub#1ed103c3-3aa6-49b7-9c21-6765ee11f224#jetbrains.mps.nodeEditor(MPS.Editor/jetbrains.mps.nodeEditor@java_stub)" version="-1" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
@@ -149,7 +149,14 @@
     <node type="tp3j.IntentionDeclaration" typeId="tp3j.1192794744107" id="3853922503293368954">
       <property name="virtualPackage" nameId="tpck.1193676396447" value="intf.sr" />
       <property name="name" nameId="tpck.1169194664001" value="toggleStrict" />
+      <property name="isAvailableInChildNodes" nameId="tp3j.2522969319638091386" value="true" />
       <link role="forConcept" roleId="tp3j.2522969319638198290" targetNodeId="v7ag.998890089994729412" resolveInfo="SenderReceiverInterface" />
+    </node>
+    <node type="tp3j.IntentionDeclaration" typeId="tp3j.1192794744107" id="2116578915583842971">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="intf.sr" />
+      <property name="name" nameId="tpck.1169194664001" value="toggleAtomic" />
+      <property name="isAvailableInChildNodes" nameId="tp3j.2522969319638091386" value="true" />
+      <link role="forConcept" roleId="tp3j.2522969319638198290" targetNodeId="v7ag.998890089994729418" resolveInfo="DataElement" />
     </node>
   </roots>
   <root id="8105003328814679519">
@@ -1707,7 +1714,7 @@
       <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="3853922503293368956">
         <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="3853922503293375435">
           <node role="expression" roleId="tpee.1068580123156" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3853922503293375436">
-            <property name="value" nameId="tpee.1070475926801" value="Toggle strict" />
+            <property name="value" nameId="tpee.1070475926801" value="Toggle Strict" />
           </node>
         </node>
       </node>
@@ -1728,6 +1735,39 @@
               <node role="operand" roleId="tpee.1197027771414" type="tp3j.ConceptFunctionParameter_node" typeId="tp3j.1192796902958" id="3853922503293375442" />
               <node role="operation" roleId="tpee.1197027833540" type="tp25.SPropertyAccess" typeId="tp25.1138056022639" id="3853922503293375469">
                 <link role="property" roleId="tp25.1138056395725" targetNodeId="v7ag.3853922503293368919" resolveInfo="strict" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </root>
+  <root id="2116578915583842971">
+    <node role="descriptionFunction" roleId="tp3j.2522969319638093993" type="tp3j.DescriptionBlock" typeId="tp3j.1192794782375" id="2116578915583842972">
+      <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="2116578915583842973">
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="2116578915583842977">
+          <node role="expression" roleId="tpee.1068580123156" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="2116578915583842978">
+            <property name="value" nameId="tpee.1070475926801" value="Toggle Atomic" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node role="executeFunction" roleId="tp3j.2522969319638198291" type="tp3j.ExecuteBlock" typeId="tp3j.1192795911897" id="2116578915583842974">
+      <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="2116578915583842975">
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="2116578915583842980">
+          <node role="expression" roleId="tpee.1068580123156" type="tpee.AssignmentExpression" typeId="tpee.1068498886294" id="2116578915583843009">
+            <node role="rValue" roleId="tpee.1068498886297" type="tpee.NotExpression" typeId="tpee.1081516740877" id="2116578915583843012">
+              <node role="expression" roleId="tpee.1081516765348" type="tpee.DotExpression" typeId="tpee.1197027756228" id="2116578915583843035">
+                <node role="operand" roleId="tpee.1197027771414" type="tp3j.ConceptFunctionParameter_node" typeId="tp3j.1192796902958" id="2116578915583843014" />
+                <node role="operation" roleId="tpee.1197027833540" type="tp25.SPropertyAccess" typeId="tp25.1138056022639" id="2116578915583843040">
+                  <link role="property" roleId="tp25.1138056395725" targetNodeId="v7ag.2116578915583842931" resolveInfo="atomic" />
+                </node>
+              </node>
+            </node>
+            <node role="lValue" roleId="tpee.1068498886295" type="tpee.DotExpression" typeId="tpee.1197027756228" id="2116578915583843002">
+              <node role="operand" roleId="tpee.1197027771414" type="tp3j.ConceptFunctionParameter_node" typeId="tp3j.1192796902958" id="2116578915583842981" />
+              <node role="operation" roleId="tpee.1197027833540" type="tp25.SPropertyAccess" typeId="tp25.1138056022639" id="2116578915583843008">
+                <link role="property" roleId="tp25.1138056395725" targetNodeId="v7ag.2116578915583842931" resolveInfo="atomic" />
               </node>
             </node>
           </node>
