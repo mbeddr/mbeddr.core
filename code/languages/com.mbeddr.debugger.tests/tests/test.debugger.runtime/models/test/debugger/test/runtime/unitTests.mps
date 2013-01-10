@@ -35,9 +35,6 @@
   <import index="tp25" modelUID="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" version="16" implicit="yes" />
   <import index="fxg7" modelUID="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.io(JDK/java.io@java_stub)" version="-1" implicit="yes" />
   <roots>
-    <node type="tp5g.TestInfo" typeId="tp5g.5097124989038916362" id="1423209693057696534">
-      <property name="projectPath" nameId="tp5g.5097124989038916363" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.core/core.dev.mpr" />
-    </node>
     <node type="tp5g.NodesTestCase" typeId="tp5g.1216913645126" id="3463450091879801047">
       <property name="name" nameId="tpck.1169194664001" value="SessionTerminated" />
       <property name="virtualPackage" nameId="tpck.1193676396447" value="session" />
@@ -86,8 +83,10 @@
       <property name="name" nameId="tpck.1169194664001" value="MapperListener" />
       <property name="virtualPackage" nameId="tpck.1193676396447" value="mapper-listner" />
     </node>
+    <node type="tp5g.TestInfo" typeId="tp5g.5097124989038916362" id="1423209693057696534">
+      <property name="projectPath" nameId="tp5g.5097124989038916363" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.debugger.tests/debugger-tests.mpr" />
+    </node>
   </roots>
-  <root id="1423209693057696534" />
   <root id="3463450091879801047">
     <node role="methods" roleId="tp5g.1216993439383" type="tp4f.DefaultClassifierMethodDeclaration" typeId="tp4f.1205769003971" id="8801582929585133599">
       <property name="name" nameId="tpck.1169194664001" value="injectDependencies" />
@@ -15137,5 +15136,6 @@
       </node>
     </node>
   </root>
+  <root id="1423209693057696534" />
 </model>
 

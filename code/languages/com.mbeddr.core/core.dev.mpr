@@ -23,8 +23,6 @@
       <modulePath path="${project}/languages/com.mbeddr.core.buildconfig/buildconfig.mpl" folder="core-extended" />
       <modulePath path="${project}/languages/com.mbeddr.core.cstubs.test/test.mpl" folder="tests.cstub" />
       <modulePath path="${project}/languages/com.mbeddr.core.cstubs/cstubs.mpl" folder="core" />
-      <modulePath path="${project}/languages/com.mbeddr.core.debug.test/solutions/pluginSolution/runtime.msd" folder="tests.debugger" />
-      <modulePath path="${project}/languages/com.mbeddr.core.debug.test/test.mpl" folder="tests.debugger" />
       <modulePath path="${project}/languages/com.mbeddr.core.embedded/embedded.mpl" folder="core-extended" />
       <modulePath path="${project}/languages/com.mbeddr.core.expressions/expressions.mpl" folder="core" />
       <modulePath path="${project}/languages/com.mbeddr.core.legacy/legacy.mpl" folder="core" />
@@ -47,8 +45,6 @@
       <modulePath path="${project}/tests/test.cstub.core/core.msd" folder="tests.cstub" />
       <modulePath path="${project}/tests/test.cstub.testheader.expressions/expressions.msd" folder="tests.cstub" />
       <modulePath path="${project}/tests/test.cstub.testheader/testheader.msd" folder="tests.cstub" />
-      <modulePath path="${project}/tests/test.debugger.core/core.msd" folder="tests.debugger" />
-      <modulePath path="${project}/tests/test.debugger.runtime/runtime.msd" folder="tests.debugger" />
       <modulePath path="${project}/tests/test.ex.core.libs/libs.msd" folder="tests" />
       <modulePath path="${project}/tests/test.ex.core/core.msd" folder="tests" />
       <modulePath path="${project}/tests/test.ex.errorreporting/errorreporting.msd" folder="tests" />
