@@ -32,12 +32,18 @@
     </node>
     <node type="rpmx.DebuggerTestCase" typeId="rpmx.7048220250905867886" id="9152682018127915044">
       <property name="name" nameId="tpck.1169194664001" value="Functions" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="basic" />
     </node>
     <node type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="9152682018127915046">
       <property name="name" nameId="tpck.1169194664001" value="HelloWorld" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="basic" />
     </node>
-    <node type="mj1l.TypeSizeConfiguration" typeId="mj1l.3335993110369795380" id="9152682018127915061" />
-    <node type="51wr.BuildConfiguration" typeId="51wr.7717755763392524104" id="9152682018127915103" />
+    <node type="mj1l.TypeSizeConfiguration" typeId="mj1l.3335993110369795380" id="9152682018127915061">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="basic" />
+    </node>
+    <node type="51wr.BuildConfiguration" typeId="51wr.7717755763392524104" id="9152682018127915103">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="basic" />
+    </node>
   </roots>
   <root id="1423209693057696534" />
   <root id="9152682018127915044">

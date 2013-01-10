@@ -34,6 +34,14 @@
             </Library>
           </value>
         </entry>
+        <entry key="util">
+          <value>
+            <Library>
+              <option name="name" value="util" />
+              <option name="path" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.mpsutil" />
+            </Library>
+          </value>
+        </entry>
       </map>
     </option>
   </component>

@@ -120,6 +120,27 @@
       </node>
       <node role="steppingCommand" roleId="rpmx.5100083648679219673" type="rpmx.StepIntoCommand" typeId="rpmx.4231345613098876386" id="9152682018127975536" />
     </node>
+    <node role="testMethods" roleId="rpmx.1217501895093" type="rpmx.DebuggerTestMethod" typeId="rpmx.4193597469137492636" id="9152682018128083109">
+      <property name="name" nameId="tpck.1169194664001" value="stepOverFromLastLineOfTestcase" />
+      <node role="returnType" roleId="tpee.1068580123133" type="tpee.VoidType" typeId="tpee.1068581517677" id="9152682018128083110" />
+      <node role="validationBody" roleId="rpmx.7048220250906209725" type="rpmx.ValidationList" typeId="rpmx.7048220250906209718" id="9152682018128083111">
+        <node role="validations" roleId="rpmx.7048220250906209719" type="rpmx.ValidateDebuggerSuspended" typeId="rpmx.7048220250906049590" id="9152682018128083115">
+          <node role="marker" roleId="rpmx.7048220250906049591" type="rpmx.MarkerRef" typeId="rpmx.4193597469137492644" id="9152682018128083116">
+            <link role="marker" roleId="rpmx.4193597469137492645" targetNodeId="9152682018127979220" resolveInfo="m1" />
+          </node>
+        </node>
+        <node role="validations" roleId="rpmx.7048220250906209719" type="rpmx.ValidateCallStack" typeId="rpmx.7048220250906041081" id="9152682018128083118">
+          <node role="depth" roleId="rpmx.7048220250906041083" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="9152682018128083119">
+            <property name="value" nameId="tpee.1068580320021" value="1" />
+          </node>
+        </node>
+      </node>
+      <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="9152682018128083112" />
+      <node role="suspensionPoint" roleId="rpmx.5100083648679219652" type="rpmx.MarkerRef" typeId="rpmx.4193597469137492644" id="9152682018128083113">
+        <link role="marker" roleId="rpmx.4193597469137492645" targetNodeId="9152682018127975534" resolveInfo="m6" />
+      </node>
+      <node role="steppingCommand" roleId="rpmx.5100083648679219673" type="rpmx.StepOverCommand" typeId="rpmx.4231345613098876381" id="9152682018128083114" />
+    </node>
     <node role="binaryRef" roleId="rpmx.5100083648679329380" type="rpmx.BinaryRef" typeId="rpmx.5100083648679329379" id="9152682018127931831">
       <link role="binary" roleId="rpmx.7048220250906128789" targetNodeId="9125142491355884667" resolveInfo="TestHelperTest" />
     </node>
@@ -161,6 +182,9 @@
           <node role="expression" roleId="x27k.8967919205527146150" type="yz9a.ExecuteTestExpression" typeId="yz9a.186853311768094629" id="9125142491355884609">
             <node role="tests" roleId="yz9a.5686538669182341016" type="yz9a.TestCaseRef" typeId="yz9a.5686538669182340985" id="9125142491355884610">
               <link role="testcase" roleId="yz9a.5686538669182340986" targetNodeId="9125142491355884618" resolveInfo="testCase1" />
+            </node>
+            <node role="tests" roleId="yz9a.5686538669182341016" type="yz9a.TestCaseRef" typeId="yz9a.5686538669182340985" id="9152682018128081255">
+              <link role="testcase" roleId="yz9a.5686538669182340986" targetNodeId="9152682018127931833" resolveInfo="testCase2" />
             </node>
           </node>
           <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="rpmx.MarkerAnnotation" typeId="rpmx.4193597469137492628" id="9152682018127979220">
