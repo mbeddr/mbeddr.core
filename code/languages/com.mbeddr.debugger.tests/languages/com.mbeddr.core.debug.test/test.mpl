@@ -30,6 +30,8 @@
       </dependencies>
       <usedLanguages>
         <usedLanguage>89c70b13-7f9c-47c3-b3c2-c218b52ed82c(com.mbeddr.core.debug.test)</usedLanguage>
+        <usedLanguage>4457ca2e-a7c9-4452-9578-e94701cc4942(com.mbeddr.core.debug.util)</usedLanguage>
+        <usedLanguage>f61473f9-130f-42f6-b98d-6c438812c2f6(jetbrains.mps.baseLanguage.unitTest)</usedLanguage>
         <usedLanguage>63650c59-16c8-498a-99c8-005c7ee9515d(jetbrains.mps.lang.access)</usedLanguage>
         <usedLanguage>b401a680-8325-4110-8fd3-84331ff25bef(jetbrains.mps.lang.generator)</usedLanguage>
         <usedLanguage>d7706f63-9be2-479c-a3da-ae92af1e64d5(jetbrains.mps.lang.generator.generationContext)</usedLanguage>
