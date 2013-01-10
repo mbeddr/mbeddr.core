@@ -16,7 +16,7 @@ Writing and reading variables is modelled with MPS data flow read and write inst
 
 \vspace{-4mm}
 
-The data flow graph of the C function \ic{uninitializedVariablesExample} is shown in the following figure. The usage of an uninitialised variable is detected if there is no write instruction before a read instruction of the corresponding variable. In the example function the reference to variable b is marked with an error message, as the variable is read before it was initialized.
+The data flow graph of the C function \ic{uninitializedVariablesExample} is shown in the following figure. The usage of an uninitialised variable is detected if there is no write instruction before a read instruction of the corresponding variable. In the example function the reference to variable b is marked with a warning message, as the variable is read before it was initialized.
 
 \vspace{-4mm}
 
