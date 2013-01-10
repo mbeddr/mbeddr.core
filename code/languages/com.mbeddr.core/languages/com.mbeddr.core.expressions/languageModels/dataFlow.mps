@@ -1745,9 +1745,19 @@
                 </node>
               </node>
             </node>
-            <node role="statement" roleId="tpee.1068581517665" type="tp41.EmitReadStatement" typeId="tp41.1206443823146" id="9064908667074409202">
-              <node role="variable" roleId="tp41.1206444629799" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="9064908667074409204">
-                <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="9064908667074409195" resolveInfo="memberForDataFlowAnalysis" />
+            <node role="statement" roleId="tpee.1068581517665" type="tpee.IfStatement" typeId="tpee.1068580123159" id="3587190153239023727">
+              <node role="ifTrue" roleId="tpee.1068580123161" type="tpee.StatementList" typeId="tpee.1068580123136" id="3587190153239023728">
+                <node role="statement" roleId="tpee.1068581517665" type="tp41.EmitReadStatement" typeId="tp41.1206443823146" id="9064908667074409202">
+                  <node role="variable" roleId="tp41.1206444629799" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="9064908667074409204">
+                    <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="9064908667074409195" resolveInfo="memberForDataFlowAnalysis" />
+                  </node>
+                </node>
+              </node>
+              <node role="condition" roleId="tpee.1068580123160" type="tpee.NotEqualsExpression" typeId="tpee.1073239437375" id="3587190153239023752">
+                <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.NullLiteral" typeId="tpee.1070534058343" id="3587190153239023755" />
+                <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="3587190153239023731">
+                  <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="9064908667074409195" resolveInfo="memberForDataFlowAnalysis" />
+                </node>
               </node>
             </node>
             <node role="statement" roleId="tpee.1068581517665" type="tpee.Statement" typeId="tpee.1068580123157" id="9064908667074409164" />
