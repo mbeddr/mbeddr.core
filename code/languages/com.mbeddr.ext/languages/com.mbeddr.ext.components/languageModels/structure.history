@@ -142,5 +142,17 @@
     </dependencies>
     <rename id="v7ag.4491876417845649016" type="CONCEPT" from="Connector" to="AssemblyConnector" />
   </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="v7ag" modelUID="r:9596407c-f27a-49d3-abde-3a66293c5b61(com.mbeddr.ext.components.structure)" version="14" />
+    </dependencies>
+    <rename id="v7ag.8105003328815208362" type="CONCEPT" from="RequiredPortRefExpr" to="PortRefExpr" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="v7ag" modelUID="r:9596407c-f27a-49d3-abde-3a66293c5b61(com.mbeddr.ext.components.structure)" version="15" />
+    </dependencies>
+    <rename id="v7ag.466603768608442378" type="CHILD" from="requiredPort" to="port" />
+  </StructureModification>
 </history>
 
