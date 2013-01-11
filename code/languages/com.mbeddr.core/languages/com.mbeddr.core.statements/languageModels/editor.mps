@@ -753,7 +753,7 @@
         <property name="text" nameId="tpc2.1073389577007" value="required standard header" />
       </node>
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Property" typeId="tpc2.1073389658414" id="6275956088645601596">
-        <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="c4fa.6275956088645591175" resolveInfo="requiredStdHeader" />
+        <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="c4fa.2401122993844136654" resolveInfo="requiredStdHeader" />
       </node>
     </node>
   </root>
