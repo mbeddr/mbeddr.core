@@ -9,7 +9,7 @@
   <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="5" implicit="yes" />
   <import index="51wr" modelUID="r:b31f1c3c-99aa-4f1e-a329-cba27efb1a6b(com.mbeddr.core.buildconfig.structure)" version="1" implicit="yes" />
   <import index="yz9a" modelUID="r:734c02dd-cc16-4184-99eb-5fd9f43aa37e(com.mbeddr.core.unittest.structure)" version="0" implicit="yes" />
-  <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="5" implicit="yes" />
+  <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="4" implicit="yes" />
   <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="3" implicit="yes" />
   <roots>
     <node type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="5301960176566505206">
@@ -51,10 +51,8 @@
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="6693167602755050358">
           <property name="name" nameId="tpck.1169194664001" value="intFromHex" />
           <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int32tType" typeId="mj1l.8463282783691618440" id="6693167602755050359" />
-          <node role="initializer" roleId="mj1l.2401122993843545632" type="mj1l.InitClause" typeId="mj1l.2401122993843557130" id="3590863974007034283">
-            <node role="value" roleId="mj1l.2401122993843557131" type="mj1l.HexNumberLiteral" typeId="mj1l.1054289341113450444" id="6693167602755050361">
-              <property name="value" nameId="mj1l.1054289341113450445" value="aff12" />
-            </node>
+          <node role="init" roleId="c4fa.4185783222026502647" type="mj1l.HexNumberLiteral" typeId="mj1l.1054289341113450444" id="6693167602755050361">
+            <property name="value" nameId="mj1l.1054289341113450445" value="aff12" />
           </node>
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="8428543981429166702">
@@ -72,10 +70,8 @@
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="6693167602755050365">
           <property name="name" nameId="tpck.1169194664001" value="intFromOct" />
           <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int32tType" typeId="mj1l.8463282783691618440" id="6693167602755050366" />
-          <node role="initializer" roleId="mj1l.2401122993843545632" type="mj1l.InitClause" typeId="mj1l.2401122993843557130" id="3590863974007034176">
-            <node role="value" roleId="mj1l.2401122993843557131" type="mj1l.OctalNumberLiteral" typeId="mj1l.938100142480245061" id="6693167602755050370">
-              <property name="value" nameId="mj1l.938100142480245062" value="334477" />
-            </node>
+          <node role="init" roleId="c4fa.4185783222026502647" type="mj1l.OctalNumberLiteral" typeId="mj1l.938100142480245061" id="6693167602755050370">
+            <property name="value" nameId="mj1l.938100142480245062" value="334477" />
           </node>
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="8428543981429166710">
@@ -93,10 +89,8 @@
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="6693167602755050372">
           <property name="name" nameId="tpck.1169194664001" value="intFromBin" />
           <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int32tType" typeId="mj1l.8463282783691618440" id="6693167602755050373" />
-          <node role="initializer" roleId="mj1l.2401122993843545632" type="mj1l.InitClause" typeId="mj1l.2401122993843557130" id="3590863974007034094">
-            <node role="value" roleId="mj1l.2401122993843557131" type="mj1l.BinaryNumberLiteral" typeId="mj1l.1054289341113496566" id="6693167602755050375">
-              <property name="value" nameId="mj1l.1054289341113496567" value="100110011" />
-            </node>
+          <node role="init" roleId="c4fa.4185783222026502647" type="mj1l.BinaryNumberLiteral" typeId="mj1l.1054289341113496566" id="6693167602755050375">
+            <property name="value" nameId="mj1l.1054289341113496567" value="100110011" />
           </node>
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="8428543981429166720">

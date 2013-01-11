@@ -93,10 +93,8 @@
             <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
             <property name="const" nameId="mj1l.2941277002445651368" value="false" />
           </node>
-          <node role="initializer" roleId="mj1l.2401122993843545632" type="mj1l.InitClause" typeId="mj1l.2401122993843557130" id="3590863974007033976">
-            <node role="value" roleId="mj1l.2401122993843557131" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3457272138385168038">
-              <property name="value" nameId="mj1l.8860443239512128104" value="0" />
-            </node>
+          <node role="init" roleId="c4fa.4185783222026502647" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3457272138385168038">
+            <property name="value" nameId="mj1l.8860443239512128104" value="0" />
           </node>
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="3457272138385168040">
@@ -105,10 +103,8 @@
             <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
             <property name="const" nameId="mj1l.2941277002445651368" value="false" />
           </node>
-          <node role="initializer" roleId="mj1l.2401122993843545632" type="mj1l.InitClause" typeId="mj1l.2401122993843557130" id="3590863974007033718">
-            <node role="value" roleId="mj1l.2401122993843557131" type="mj1l.BinaryNumberLiteral" typeId="mj1l.1054289341113496566" id="3457272138385168043">
-              <property name="value" nameId="mj1l.1054289341113496567" value="001" />
-            </node>
+          <node role="init" roleId="c4fa.4185783222026502647" type="mj1l.BinaryNumberLiteral" typeId="mj1l.1054289341113496566" id="3457272138385168043">
+            <property name="value" nameId="mj1l.1054289341113496567" value="001" />
           </node>
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="3457272138385168044">
@@ -117,10 +113,8 @@
             <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
             <property name="const" nameId="mj1l.2941277002445651368" value="false" />
           </node>
-          <node role="initializer" roleId="mj1l.2401122993843545632" type="mj1l.InitClause" typeId="mj1l.2401122993843557130" id="3590863974007033917">
-            <node role="value" roleId="mj1l.2401122993843557131" type="mj1l.BinaryNumberLiteral" typeId="mj1l.1054289341113496566" id="3457272138385168046">
-              <property name="value" nameId="mj1l.1054289341113496567" value="010" />
-            </node>
+          <node role="init" roleId="c4fa.4185783222026502647" type="mj1l.BinaryNumberLiteral" typeId="mj1l.1054289341113496566" id="3457272138385168046">
+            <property name="value" nameId="mj1l.1054289341113496567" value="010" />
           </node>
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="3457272138385168047" />
@@ -335,7 +329,7 @@
             <node role="def" roleId="k146.4143042878078342166" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="4143042878078347748">
               <property name="value" nameId="mj1l.8860443239512128104" value="0" />
             </node>
-            <node role="type" roleId="k146.1777424746412866628" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="3912676515587447009" />
+            <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="3912676515587447009" />
           </node>
         </node>
       </node>

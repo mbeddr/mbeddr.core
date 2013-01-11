@@ -18,7 +18,7 @@
   <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="17" implicit="yes" />
   <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="5" implicit="yes" />
   <import index="51wr" modelUID="r:b31f1c3c-99aa-4f1e-a329-cba27efb1a6b(com.mbeddr.core.buildconfig.structure)" version="1" implicit="yes" />
-  <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="5" implicit="yes" />
+  <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="4" implicit="yes" />
   <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="3" implicit="yes" />
   <roots>
     <node type="tp5g.NodesTestCase" typeId="tp5g.1216913645126" id="4497436839299134881">
@@ -44,12 +44,10 @@
                 <node role="valueType" roleId="3c6d.5513256947824503029" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="4497436839299134937" />
                 <node role="unit" roleId="3c6d.5513256947824503030" type="sfuj.GlobalCoords" typeId="sfuj.4497436839299102624" id="4497436839299134939" />
               </node>
-              <node role="initializer" roleId="mj1l.2401122993843545632" type="mj1l.InitClause" typeId="mj1l.2401122993843557130" id="3590863974007033816">
-                <node role="value" roleId="mj1l.2401122993843557131" type="3c6d.LiteralWithUnit" typeId="3c6d.5513256947824592491" id="4497436839299134944">
-                  <node role="unit" roleId="3c6d.5513256947824592493" type="sfuj.GlobalCoords" typeId="sfuj.4497436839299102624" id="4497436839299134945" />
-                  <node role="value" roleId="3c6d.5513256947824592492" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="4497436839299134941">
-                    <property name="value" nameId="mj1l.8860443239512128104" value="10" />
-                  </node>
+              <node role="init" roleId="c4fa.4185783222026502647" type="3c6d.LiteralWithUnit" typeId="3c6d.5513256947824592491" id="4497436839299134944">
+                <node role="unit" roleId="3c6d.5513256947824592493" type="sfuj.GlobalCoords" typeId="sfuj.4497436839299102624" id="4497436839299134945" />
+                <node role="value" roleId="3c6d.5513256947824592492" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="4497436839299134941">
+                  <property name="value" nameId="mj1l.8860443239512128104" value="10" />
                 </node>
               </node>
             </node>
@@ -59,12 +57,10 @@
                 <node role="valueType" roleId="3c6d.5513256947824503029" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="4497436839299134966" />
                 <node role="unit" roleId="3c6d.5513256947824503030" type="ym4j.SIKelvin" typeId="ym4j.3801772042669047318" id="4497436839299134968" />
               </node>
-              <node role="initializer" roleId="mj1l.2401122993843545632" type="mj1l.InitClause" typeId="mj1l.2401122993843557130" id="3590863974007033714">
-                <node role="value" roleId="mj1l.2401122993843557131" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="4497436839299134970">
-                  <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="4497436839299134936" resolveInfo="aGlobalVariable" />
-                  <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodePropertiesContainer" typeId="tp5g.1215507532627" id="4497436839299134971">
-                    <node role="properties" roleId="tp5g.1215507909023" type="tp5g.NodeErrorPropety" typeId="tp5g.1215507671101" id="4497436839299134972" />
-                  </node>
+              <node role="init" roleId="c4fa.4185783222026502647" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="4497436839299134970">
+                <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="4497436839299134936" resolveInfo="aGlobalVariable" />
+                <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodePropertiesContainer" typeId="tp5g.1215507532627" id="4497436839299134971">
+                  <node role="properties" roleId="tp5g.1215507909023" type="tp5g.NodeErrorPropety" typeId="tp5g.1215507671101" id="4497436839299134972" />
                 </node>
               </node>
             </node>
@@ -108,12 +104,10 @@
                 <node role="valueType" roleId="3c6d.5513256947824503029" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="4497436839299135038" />
                 <node role="unit" roleId="3c6d.5513256947824503030" type="sfuj.LocalCoords" typeId="sfuj.4497436839299102577" id="4497436839299135040" />
               </node>
-              <node role="initializer" roleId="mj1l.2401122993843545632" type="mj1l.InitClause" typeId="mj1l.2401122993843557130" id="3590863974007034122">
-                <node role="value" roleId="mj1l.2401122993843557131" type="3c6d.LiteralWithUnit" typeId="3c6d.5513256947824592491" id="4497436839299135045">
-                  <node role="unit" roleId="3c6d.5513256947824592493" type="sfuj.LocalCoords" typeId="sfuj.4497436839299102577" id="4497436839299135046" />
-                  <node role="value" roleId="3c6d.5513256947824592492" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="4497436839299135042">
-                    <property name="value" nameId="mj1l.8860443239512128104" value="20" />
-                  </node>
+              <node role="init" roleId="c4fa.4185783222026502647" type="3c6d.LiteralWithUnit" typeId="3c6d.5513256947824592491" id="4497436839299135045">
+                <node role="unit" roleId="3c6d.5513256947824592493" type="sfuj.LocalCoords" typeId="sfuj.4497436839299102577" id="4497436839299135046" />
+                <node role="value" roleId="3c6d.5513256947824592492" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="4497436839299135042">
+                  <property name="value" nameId="mj1l.8860443239512128104" value="20" />
                 </node>
               </node>
             </node>
@@ -137,16 +131,14 @@
                 <node role="valueType" roleId="3c6d.5513256947824503029" type="sfuj.IntVectorType" typeId="sfuj.4497436839299135057" id="4497436839299136561" />
                 <node role="unit" roleId="3c6d.5513256947824503030" type="sfuj.GlobalCoords" typeId="sfuj.4497436839299102624" id="4497436839299137057" />
               </node>
-              <node role="initializer" roleId="mj1l.2401122993843545632" type="mj1l.InitClause" typeId="mj1l.2401122993843557130" id="3590863974007033843">
-                <node role="value" roleId="mj1l.2401122993843557131" type="3c6d.LiteralWithUnit" typeId="3c6d.5513256947824592491" id="4497436839299140465">
-                  <node role="unit" roleId="3c6d.5513256947824592493" type="sfuj.GlobalCoords" typeId="sfuj.4497436839299102624" id="4497436839299140466" />
-                  <node role="value" roleId="3c6d.5513256947824592492" type="sfuj.IntVectorLiteral" typeId="sfuj.4497436839299135148" id="4497436839299136563">
-                    <node role="x" roleId="sfuj.4497436839299135149" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="4497436839299136566">
-                      <property name="value" nameId="mj1l.8860443239512128104" value="10" />
-                    </node>
-                    <node role="y" roleId="sfuj.4497436839299135150" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="4497436839299136567">
-                      <property name="value" nameId="mj1l.8860443239512128104" value="20" />
-                    </node>
+              <node role="init" roleId="c4fa.4185783222026502647" type="3c6d.LiteralWithUnit" typeId="3c6d.5513256947824592491" id="4497436839299140465">
+                <node role="unit" roleId="3c6d.5513256947824592493" type="sfuj.GlobalCoords" typeId="sfuj.4497436839299102624" id="4497436839299140466" />
+                <node role="value" roleId="3c6d.5513256947824592492" type="sfuj.IntVectorLiteral" typeId="sfuj.4497436839299135148" id="4497436839299136563">
+                  <node role="x" roleId="sfuj.4497436839299135149" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="4497436839299136566">
+                    <property name="value" nameId="mj1l.8860443239512128104" value="10" />
+                  </node>
+                  <node role="y" roleId="sfuj.4497436839299135150" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="4497436839299136567">
+                    <property name="value" nameId="mj1l.8860443239512128104" value="20" />
                   </node>
                 </node>
               </node>
@@ -157,20 +149,18 @@
                 <node role="valueType" roleId="3c6d.5513256947824503029" type="sfuj.IntVectorType" typeId="sfuj.4497436839299135057" id="4497436839299140469" />
                 <node role="unit" roleId="3c6d.5513256947824503030" type="sfuj.LocalCoords" typeId="sfuj.4497436839299102577" id="4497436839299140471" />
               </node>
-              <node role="initializer" roleId="mj1l.2401122993843545632" type="mj1l.InitClause" typeId="mj1l.2401122993843557130" id="3590863974007034078">
-                <node role="value" roleId="mj1l.2401122993843557131" type="3c6d.LiteralWithUnit" typeId="3c6d.5513256947824592491" id="4497436839299141218">
-                  <node role="unit" roleId="3c6d.5513256947824592493" type="sfuj.GlobalCoords" typeId="sfuj.4497436839299102624" id="4497436839299141219" />
-                  <node role="value" roleId="3c6d.5513256947824592492" type="sfuj.IntVectorLiteral" typeId="sfuj.4497436839299135148" id="4497436839299141209">
-                    <node role="x" roleId="sfuj.4497436839299135149" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="4497436839299141212">
-                      <property name="value" nameId="mj1l.8860443239512128104" value="20" />
-                    </node>
-                    <node role="y" roleId="sfuj.4497436839299135150" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="4497436839299141215">
-                      <property name="value" nameId="mj1l.8860443239512128104" value="20" />
-                    </node>
+              <node role="init" roleId="c4fa.4185783222026502647" type="3c6d.LiteralWithUnit" typeId="3c6d.5513256947824592491" id="4497436839299141218">
+                <node role="unit" roleId="3c6d.5513256947824592493" type="sfuj.GlobalCoords" typeId="sfuj.4497436839299102624" id="4497436839299141219" />
+                <node role="value" roleId="3c6d.5513256947824592492" type="sfuj.IntVectorLiteral" typeId="sfuj.4497436839299135148" id="4497436839299141209">
+                  <node role="x" roleId="sfuj.4497436839299135149" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="4497436839299141212">
+                    <property name="value" nameId="mj1l.8860443239512128104" value="20" />
                   </node>
-                  <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodePropertiesContainer" typeId="tp5g.1215507532627" id="1798411515023802322">
-                    <node role="properties" roleId="tp5g.1215507909023" type="tp5g.NodeErrorPropety" typeId="tp5g.1215507671101" id="1798411515023802323" />
+                  <node role="y" roleId="sfuj.4497436839299135150" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="4497436839299141215">
+                    <property name="value" nameId="mj1l.8860443239512128104" value="20" />
                   </node>
+                </node>
+                <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodePropertiesContainer" typeId="tp5g.1215507532627" id="1798411515023802322">
+                  <node role="properties" roleId="tp5g.1215507909023" type="tp5g.NodeErrorPropety" typeId="tp5g.1215507671101" id="1798411515023802323" />
                 </node>
               </node>
             </node>

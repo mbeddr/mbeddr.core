@@ -256,18 +256,16 @@
             <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
             <property name="const" nameId="mj1l.2941277002445651368" value="false" />
           </node>
-          <node role="initializer" roleId="mj1l.2401122993843545632" type="mj1l.InitClause" typeId="mj1l.2401122993843557130" id="3590863974007034027">
-            <node role="value" roleId="mj1l.2401122993843557131" type="v7ag.PortAdapterOpCallExpr" typeId="v7ag.466603768608410221" id="4075471389393991909">
-              <link role="operation" roleId="v7ag.8105003328815071752" targetNodeId="4075471389393865403" resolveInfo="add" />
-              <node role="expression" roleId="mj1l.7254843406768839760" type="v7ag.PortAdapterRefExpr" typeId="v7ag.8105003328815039001" id="4075471389393991910">
-                <link role="portAdater" roleId="v7ag.8105003328815039002" targetNodeId="4075471389393921578" resolveInfo="computer" />
-              </node>
-              <node role="actuals" roleId="v7ag.8105003328815091213" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="4075471389393991911">
-                <property name="value" nameId="mj1l.8860443239512128104" value="10" />
-              </node>
-              <node role="actuals" roleId="v7ag.8105003328815091213" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="4075471389393991912">
-                <property name="value" nameId="mj1l.8860443239512128104" value="10" />
-              </node>
+          <node role="init" roleId="c4fa.4185783222026502647" type="v7ag.PortAdapterOpCallExpr" typeId="v7ag.466603768608410221" id="4075471389393991909">
+            <link role="operation" roleId="v7ag.8105003328815071752" targetNodeId="4075471389393865403" resolveInfo="add" />
+            <node role="expression" roleId="mj1l.7254843406768839760" type="v7ag.PortAdapterRefExpr" typeId="v7ag.8105003328815039001" id="4075471389393991910">
+              <link role="portAdater" roleId="v7ag.8105003328815039002" targetNodeId="4075471389393921578" resolveInfo="computer" />
+            </node>
+            <node role="actuals" roleId="v7ag.8105003328815091213" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="4075471389393991911">
+              <property name="value" nameId="mj1l.8860443239512128104" value="10" />
+            </node>
+            <node role="actuals" roleId="v7ag.8105003328815091213" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="4075471389393991912">
+              <property name="value" nameId="mj1l.8860443239512128104" value="10" />
             </node>
           </node>
         </node>
