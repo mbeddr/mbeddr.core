@@ -1585,7 +1585,7 @@
         </node>
         <node role="statement" roleId="tpee.1068581517665" type="tpee.LocalVariableDeclarationStatement" typeId="tpee.1068581242864" id="6879846215835224388">
           <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="6879846215835224389">
-            <property name="name" nameId="tpck.1169194664001" value="target" />
+            <property name="name" nameId="tpck.1169194664001" value="targetMock" />
             <node role="type" roleId="tpee.5680397130376446158" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="6879846215835224390">
               <link role="classifier" roleId="tpee.1107535924139" targetNodeId="9e9y.~Target" resolveInfo="Target" />
             </node>
@@ -1656,7 +1656,7 @@
                 <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="s0qc.~EasyMock%dexpect(java%dlang%dObject)%corg%deasymock%dIExpectationSetters" resolveInfo="expect" />
                 <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.DotExpression" typeId="tpee.1197027756228" id="6879846215835224415">
                   <node role="operand" roleId="tpee.1197027771414" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="6879846215835224416">
-                    <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="6879846215835224389" resolveInfo="target" />
+                    <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="6879846215835224389" resolveInfo="targetMock" />
                   </node>
                   <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="6879846215835224417">
                     <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="9e9y.~Target%dcreateLineLocation(java%dlang%dString,int)%corg%declipse%dcdt%ddebug%dcore%dcdi%dICDILineLocation" resolveInfo="createLineLocation" />
@@ -1691,7 +1691,7 @@
                     <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="s0qc.~EasyMock%dexpect(java%dlang%dObject)%corg%deasymock%dIExpectationSetters" resolveInfo="expect" />
                     <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.DotExpression" typeId="tpee.1197027756228" id="6879846215835224429">
                       <node role="operand" roleId="tpee.1197027771414" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="6879846215835224430">
-                        <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="6879846215835224389" resolveInfo="target" />
+                        <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="6879846215835224389" resolveInfo="targetMock" />
                       </node>
                       <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="6879846215835224431">
                         <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="9e9y.~Target%dsetLineBreakpoint(int,org%declipse%dcdt%ddebug%dcore%dcdi%dICDILineLocation,org%declipse%dcdt%ddebug%dcore%dcdi%dICDICondition,boolean)%corg%declipse%dcdt%ddebug%dcore%dcdi%dmodel%dICDILineBreakpoint" resolveInfo="setLineBreakpoint" />
@@ -1764,7 +1764,7 @@
               <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="6879846215835224456">
                 <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="s0qc.~IExpectationSetters%dandReturn(java%dlang%dObject)%corg%deasymock%dIExpectationSetters" resolveInfo="andReturn" />
                 <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="6879846215835224457">
-                  <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="6879846215835224389" resolveInfo="target" />
+                  <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="6879846215835224389" resolveInfo="targetMock" />
                 </node>
               </node>
             </node>
@@ -1779,7 +1779,7 @@
             <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="s0qc.~EasyMock" resolveInfo="EasyMock" />
             <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="s0qc.~EasyMock%dreplay(java%dlang%dObject%d%d%d)%cvoid" resolveInfo="replay" />
             <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="6879846215835224462">
-              <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="6879846215835224389" resolveInfo="target" />
+              <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="6879846215835224389" resolveInfo="targetMock" />
             </node>
           </node>
         </node>
@@ -1836,7 +1836,7 @@
             <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="s0qc.~EasyMock" resolveInfo="EasyMock" />
             <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="s0qc.~EasyMock%dverify(java%dlang%dObject%d%d%d)%cvoid" resolveInfo="verify" />
             <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="6879846215835224484">
-              <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="6879846215835224389" resolveInfo="target" />
+              <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="6879846215835224389" resolveInfo="targetMock" />
             </node>
           </node>
         </node>
