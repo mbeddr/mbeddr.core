@@ -133,9 +133,6 @@
           <node role="watchables" roleId="rpmx.4550138447367880227" type="rpmx.WatchableDeclaration" typeId="rpmx.4550138447367880222" id="4550138447368001777">
             <property name="name" nameId="rpmx.4550138447367880223" value="a" />
           </node>
-          <node role="watchables" roleId="rpmx.4550138447367880227" type="rpmx.WatchableDeclaration" typeId="rpmx.4550138447367880222" id="4550138447368001778">
-            <property name="name" nameId="rpmx.4550138447367880223" value="a" />
-          </node>
         </node>
       </node>
       <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="9152682018127975533" />
