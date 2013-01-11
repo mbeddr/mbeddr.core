@@ -221,6 +221,15 @@
       <property name="virtualPackage" nameId="tpck.1193676396447" value="types.c99" />
       <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="mj1l.3795266832289055347" resolveInfo="PC99MeetType" />
     </node>
+    <node type="tpc2.EditorComponentDeclaration" typeId="tpc2.1078938745671" id="2401122993843545633">
+      <property name="name" nameId="tpck.1169194664001" value="initExpression" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="init" />
+      <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="mj1l.2401122993843545631" resolveInfo="IInitializable" />
+    </node>
+    <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="2401122993843557132">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="init" />
+      <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="mj1l.2401122993843557130" resolveInfo="InitClause" />
+    </node>
   </roots>
   <root id="8860443239512128087">
     <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="2941277002447374678">
@@ -2473,6 +2482,40 @@
         </node>
       </node>
       <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Horizontal" typeId="tpc2.1106270549637" id="3657295727191702947" />
+    </node>
+  </root>
+  <root id="2401122993843545633">
+    <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="2401122993843557124">
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_RefNode" typeId="tpc2.1073389882823" id="2401122993843557129">
+        <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="mj1l.2401122993843545632" />
+      </node>
+      <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Indent" typeId="tpc2.1237303669825" id="2401122993843557126" />
+      <node role="renderingCondition" roleId="tpc2.1142887637401" type="tpc2.QueryFunction_NodeCondition" typeId="tpc2.1142886221719" id="2401122993843590437">
+        <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="2401122993843590438">
+          <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="2401122993843672012">
+            <node role="expression" roleId="tpee.1068580123156" type="tpee.NotEqualsExpression" typeId="tpee.1073239437375" id="2401122993843672062">
+              <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.NullLiteral" typeId="tpee.1070534058343" id="2401122993843672065" />
+              <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.DotExpression" typeId="tpee.1197027756228" id="2401122993843672034">
+                <node role="operand" roleId="tpee.1197027771414" type="tpc2.ConceptFunctionParameter_node" typeId="tpc2.1142886811589" id="2401122993843672013" />
+                <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="2401122993843672040">
+                  <link role="link" roleId="tp25.1138056516764" targetNodeId="mj1l.2401122993843545632" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </root>
+  <root id="2401122993843557132">
+    <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="2401122993843557134">
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="2401122993843557135">
+        <property name="text" nameId="tpc2.1073389577007" value="=" />
+      </node>
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_RefNode" typeId="tpc2.1073389882823" id="2401122993843557136">
+        <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="mj1l.2401122993843557131" />
+      </node>
+      <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Indent" typeId="tpc2.1237303669825" id="2401122993843557137" />
     </node>
   </root>
 </model>
