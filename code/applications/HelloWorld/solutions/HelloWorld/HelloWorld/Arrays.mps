@@ -9,7 +9,7 @@
   <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="5" implicit="yes" />
   <import index="51wr" modelUID="r:b31f1c3c-99aa-4f1e-a329-cba27efb1a6b(com.mbeddr.core.buildconfig.structure)" version="1" implicit="yes" />
   <import index="yz9a" modelUID="r:734c02dd-cc16-4184-99eb-5fd9f43aa37e(com.mbeddr.core.unittest.structure)" version="0" implicit="yes" />
-  <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="4" implicit="yes" />
+  <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="5" implicit="yes" />
   <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="3" implicit="yes" />
   <roots>
     <node type="51wr.BuildConfiguration" typeId="51wr.7717755763392524104" id="2400719862222053086" />
@@ -125,15 +125,17 @@
               <property name="value" nameId="mj1l.8860443239512128104" value="3" />
             </node>
           </node>
-          <node role="init" roleId="c4fa.4185783222026502647" type="c4fa.ArrayInitExpression" typeId="c4fa.5095889050031622570" id="2400719862222053533">
-            <node role="exprs" roleId="c4fa.5095889050031622571" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2400719862222053534">
-              <property name="value" nameId="mj1l.8860443239512128104" value="1" />
-            </node>
-            <node role="exprs" roleId="c4fa.5095889050031622571" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2400719862222053536">
-              <property name="value" nameId="mj1l.8860443239512128104" value="2" />
-            </node>
-            <node role="exprs" roleId="c4fa.5095889050031622571" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2400719862222053538">
-              <property name="value" nameId="mj1l.8860443239512128104" value="3" />
+          <node role="initializer" roleId="mj1l.2401122993843545632" type="mj1l.InitClause" typeId="mj1l.2401122993843557130" id="3590863974007034222">
+            <node role="value" roleId="mj1l.2401122993843557131" type="c4fa.ArrayInitExpression" typeId="c4fa.5095889050031622570" id="2400719862222053533">
+              <node role="exprs" roleId="c4fa.5095889050031622571" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2400719862222053534">
+                <property name="value" nameId="mj1l.8860443239512128104" value="1" />
+              </node>
+              <node role="exprs" roleId="c4fa.5095889050031622571" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2400719862222053536">
+                <property name="value" nameId="mj1l.8860443239512128104" value="2" />
+              </node>
+              <node role="exprs" roleId="c4fa.5095889050031622571" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2400719862222053538">
+                <property name="value" nameId="mj1l.8860443239512128104" value="3" />
+              </node>
             </node>
           </node>
         </node>
@@ -166,21 +168,23 @@
               <property name="value" nameId="mj1l.8860443239512128104" value="2" />
             </node>
           </node>
-          <node role="init" roleId="c4fa.4185783222026502647" type="c4fa.ArrayInitExpression" typeId="c4fa.5095889050031622570" id="2400719862222053550">
-            <node role="exprs" roleId="c4fa.5095889050031622571" type="c4fa.ArrayInitExpression" typeId="c4fa.5095889050031622570" id="2400719862222053551">
-              <node role="exprs" roleId="c4fa.5095889050031622571" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2400719862222053552">
-                <property name="value" nameId="mj1l.8860443239512128104" value="1" />
+          <node role="initializer" roleId="mj1l.2401122993843545632" type="mj1l.InitClause" typeId="mj1l.2401122993843557130" id="3590863974007034478">
+            <node role="value" roleId="mj1l.2401122993843557131" type="c4fa.ArrayInitExpression" typeId="c4fa.5095889050031622570" id="2400719862222053550">
+              <node role="exprs" roleId="c4fa.5095889050031622571" type="c4fa.ArrayInitExpression" typeId="c4fa.5095889050031622570" id="2400719862222053551">
+                <node role="exprs" roleId="c4fa.5095889050031622571" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2400719862222053552">
+                  <property name="value" nameId="mj1l.8860443239512128104" value="1" />
+                </node>
+                <node role="exprs" roleId="c4fa.5095889050031622571" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2400719862222053554">
+                  <property name="value" nameId="mj1l.8860443239512128104" value="2" />
+                </node>
               </node>
-              <node role="exprs" roleId="c4fa.5095889050031622571" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2400719862222053554">
-                <property name="value" nameId="mj1l.8860443239512128104" value="2" />
-              </node>
-            </node>
-            <node role="exprs" roleId="c4fa.5095889050031622571" type="c4fa.ArrayInitExpression" typeId="c4fa.5095889050031622570" id="2400719862222053556">
-              <node role="exprs" roleId="c4fa.5095889050031622571" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2400719862222053558">
-                <property name="value" nameId="mj1l.8860443239512128104" value="3" />
-              </node>
-              <node role="exprs" roleId="c4fa.5095889050031622571" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2400719862222053560">
-                <property name="value" nameId="mj1l.8860443239512128104" value="4" />
+              <node role="exprs" roleId="c4fa.5095889050031622571" type="c4fa.ArrayInitExpression" typeId="c4fa.5095889050031622570" id="2400719862222053556">
+                <node role="exprs" roleId="c4fa.5095889050031622571" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2400719862222053558">
+                  <property name="value" nameId="mj1l.8860443239512128104" value="3" />
+                </node>
+                <node role="exprs" roleId="c4fa.5095889050031622571" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2400719862222053560">
+                  <property name="value" nameId="mj1l.8860443239512128104" value="4" />
+                </node>
               </node>
             </node>
           </node>

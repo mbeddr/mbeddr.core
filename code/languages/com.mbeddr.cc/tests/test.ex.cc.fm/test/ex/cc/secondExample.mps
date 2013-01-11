@@ -125,8 +125,10 @@
           <node role="type" roleId="mj1l.318113533128716676" type="clbe.TypeDefType" typeId="clbe.6116558314501347863" id="3017602783212238214">
             <link role="typeDef" roleId="clbe.6116558314501347864" targetNodeId="3017602783212238103" resolveInfo="dataType" />
           </node>
-          <node role="init" roleId="c4fa.4185783222026502647" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3017602783212238216">
-            <property name="value" nameId="mj1l.8860443239512128104" value="0" />
+          <node role="initializer" roleId="mj1l.2401122993843545632" type="mj1l.InitClause" typeId="mj1l.2401122993843557130" id="3590863974007034166">
+            <node role="value" roleId="mj1l.2401122993843557131" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3017602783212238216">
+              <property name="value" nameId="mj1l.8860443239512128104" value="0" />
+            </node>
           </node>
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="22102029902643830">

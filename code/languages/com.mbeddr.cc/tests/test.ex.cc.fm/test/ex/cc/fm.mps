@@ -219,19 +219,21 @@
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="6617704999132174970">
           <property name="name" nameId="tpck.1169194664001" value="x" />
           <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="6617704999132174971" />
-          <node role="init" roleId="c4fa.4185783222026502647" type="x27k.FunctionCall" typeId="x27k.5950410542643524492" id="6617704999132174972">
-            <link role="function" roleId="x27k.5950410542643524493" targetNodeId="6617704999132170887" resolveInfo="getSensorValue" />
-            <node role="actuals" roleId="x27k.5950410542643524495" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6617704999132174973">
-              <property name="value" nameId="mj1l.8860443239512128104" value="1" />
-            </node>
-            <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="qdv7.ConditionalReplacement" typeId="qdv7.2613872510229259997" id="5345716333152363981">
-              <node role="condition" roleId="qdv7.2613872510229260001" type="qdv7.FeatureCondition" typeId="qdv7.2613872510229282925" id="5345716333152363982">
-                <node role="expr" roleId="qdv7.2613872510229282926" type="qdv7.FeatureRef" typeId="qdv7.661141253149262053" id="5345716333152363985">
-                  <link role="feature" roleId="qdv7.661141253149262054" targetNodeId="6617704999132170934" resolveInfo="test" />
-                </node>
+          <node role="initializer" roleId="mj1l.2401122993843545632" type="mj1l.InitClause" typeId="mj1l.2401122993843557130" id="3590863974007033809">
+            <node role="value" roleId="mj1l.2401122993843557131" type="x27k.FunctionCall" typeId="x27k.5950410542643524492" id="6617704999132174972">
+              <link role="function" roleId="x27k.5950410542643524493" targetNodeId="6617704999132170887" resolveInfo="getSensorValue" />
+              <node role="actuals" roleId="x27k.5950410542643524495" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6617704999132174973">
+                <property name="value" nameId="mj1l.8860443239512128104" value="1" />
               </node>
-              <node role="replacement" roleId="qdv7.2613872510229260000" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="5345716333152363984">
-                <property name="value" nameId="mj1l.8860443239512128104" value="42" />
+              <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="qdv7.ConditionalReplacement" typeId="qdv7.2613872510229259997" id="5345716333152363981">
+                <node role="condition" roleId="qdv7.2613872510229260001" type="qdv7.FeatureCondition" typeId="qdv7.2613872510229282925" id="5345716333152363982">
+                  <node role="expr" roleId="qdv7.2613872510229282926" type="qdv7.FeatureRef" typeId="qdv7.661141253149262053" id="5345716333152363985">
+                    <link role="feature" roleId="qdv7.661141253149262054" targetNodeId="6617704999132170934" resolveInfo="test" />
+                  </node>
+                </node>
+                <node role="replacement" roleId="qdv7.2613872510229260000" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="5345716333152363984">
+                  <property name="value" nameId="mj1l.8860443239512128104" value="42" />
+                </node>
               </node>
             </node>
           </node>
@@ -281,8 +283,10 @@
               </node>
             </node>
           </node>
-          <node role="init" roleId="c4fa.4185783222026502647" type="qdv7.FeatureAttributeRef" typeId="qdv7.31358532779569319" id="6252218999077666530">
-            <link role="attr" roleId="qdv7.31358532779569320" targetNodeId="2785540331872317141" resolveInfo="value" />
+          <node role="initializer" roleId="mj1l.2401122993843545632" type="mj1l.InitClause" typeId="mj1l.2401122993843557130" id="3590863974007034604">
+            <node role="value" roleId="mj1l.2401122993843557131" type="qdv7.FeatureAttributeRef" typeId="qdv7.31358532779569319" id="6252218999077666530">
+              <link role="attr" roleId="qdv7.31358532779569320" targetNodeId="2785540331872317141" resolveInfo="value" />
+            </node>
           </node>
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="2785540331872317132">
@@ -306,20 +310,22 @@
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="2785540331872345827">
           <property name="name" nameId="tpck.1169194664001" value="ww" />
           <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="2785540331872345828" />
-          <node role="init" roleId="c4fa.4185783222026502647" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2785540331872345835">
-            <property name="value" nameId="mj1l.8860443239512128104" value="22" />
-            <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="qdv7.ConditionalReplacement" typeId="qdv7.2613872510229259997" id="2785540331872346408">
-              <node role="condition" roleId="qdv7.2613872510229260001" type="qdv7.FeatureCondition" typeId="qdv7.2613872510229282925" id="2785540331872346409">
-                <node role="expr" roleId="qdv7.2613872510229282926" type="qdv7.FeatureRef" typeId="qdv7.661141253149262053" id="2785540331872346411">
-                  <link role="feature" roleId="qdv7.661141253149262054" targetNodeId="2785540331872317140" resolveInfo="valueTest" />
+          <node role="initializer" roleId="mj1l.2401122993843545632" type="mj1l.InitClause" typeId="mj1l.2401122993843557130" id="3590863974007034568">
+            <node role="value" roleId="mj1l.2401122993843557131" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2785540331872345835">
+              <property name="value" nameId="mj1l.8860443239512128104" value="22" />
+              <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="qdv7.ConditionalReplacement" typeId="qdv7.2613872510229259997" id="2785540331872346408">
+                <node role="condition" roleId="qdv7.2613872510229260001" type="qdv7.FeatureCondition" typeId="qdv7.2613872510229282925" id="2785540331872346409">
+                  <node role="expr" roleId="qdv7.2613872510229282926" type="qdv7.FeatureRef" typeId="qdv7.661141253149262053" id="2785540331872346411">
+                    <link role="feature" roleId="qdv7.661141253149262054" targetNodeId="2785540331872317140" resolveInfo="valueTest" />
+                  </node>
                 </node>
-              </node>
-              <node role="replacement" roleId="qdv7.2613872510229260000" type="mj1l.PlusExpression" typeId="mj1l.5763383285156373013" id="2785540331872346413">
-                <node role="right" roleId="mj1l.8860443239512128065" type="qdv7.FeatureAttributeRef" typeId="qdv7.31358532779569319" id="2785540331872346416">
-                  <link role="attr" roleId="qdv7.31358532779569320" targetNodeId="2785540331872317141" resolveInfo="value" />
-                </node>
-                <node role="left" roleId="mj1l.8860443239512128064" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2785540331872346412">
-                  <property name="value" nameId="mj1l.8860443239512128104" value="12" />
+                <node role="replacement" roleId="qdv7.2613872510229260000" type="mj1l.PlusExpression" typeId="mj1l.5763383285156373013" id="2785540331872346413">
+                  <node role="right" roleId="mj1l.8860443239512128065" type="qdv7.FeatureAttributeRef" typeId="qdv7.31358532779569319" id="2785540331872346416">
+                    <link role="attr" roleId="qdv7.31358532779569320" targetNodeId="2785540331872317141" resolveInfo="value" />
+                  </node>
+                  <node role="left" roleId="mj1l.8860443239512128064" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2785540331872346412">
+                    <property name="value" nameId="mj1l.8860443239512128104" value="12" />
+                  </node>
                 </node>
               </node>
             </node>

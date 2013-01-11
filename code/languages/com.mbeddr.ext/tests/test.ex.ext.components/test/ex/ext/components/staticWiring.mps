@@ -114,10 +114,12 @@
           <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="8933128519014038683">
             <property name="name" nameId="tpck.1169194664001" value="theVal" />
             <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="8933128519014038684" />
-            <node role="init" roleId="c4fa.4185783222026502647" type="v7ag.RequiredPortOpCallExpr" typeId="v7ag.466603768608442377" id="8933128519014038685">
-              <link role="operation" roleId="v7ag.8105003328815071752" targetNodeId="8933128519013964948" resolveInfo="get42" />
-              <node role="expression" roleId="mj1l.7254843406768839760" type="v7ag.PortRefExpr" typeId="v7ag.8105003328815208362" id="8933128519014038686">
-                <link role="port" roleId="v7ag.8105003328815208363" targetNodeId="9016194309503490028" resolveInfo="i" />
+            <node role="initializer" roleId="mj1l.2401122993843545632" type="mj1l.InitClause" typeId="mj1l.2401122993843557130" id="3590863974007034037">
+              <node role="value" roleId="mj1l.2401122993843557131" type="v7ag.RequiredPortOpCallExpr" typeId="v7ag.466603768608442377" id="8933128519014038685">
+                <link role="operation" roleId="v7ag.8105003328815071752" targetNodeId="8933128519013964948" resolveInfo="get42" />
+                <node role="expression" roleId="mj1l.7254843406768839760" type="v7ag.PortRefExpr" typeId="v7ag.8105003328815208362" id="8933128519014038686">
+                  <link role="port" roleId="v7ag.8105003328815208363" targetNodeId="9016194309503490028" resolveInfo="i" />
+                </node>
               </node>
             </node>
           </node>

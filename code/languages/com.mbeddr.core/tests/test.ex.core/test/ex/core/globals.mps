@@ -58,17 +58,21 @@
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="6610873504380370559">
           <property name="name" nameId="tpck.1169194664001" value="l" />
-          <node role="init" roleId="c4fa.4185783222026502647" type="x27k.GlobalVarRef" typeId="x27k.6610873504380357354" id="6610873504380376023">
-            <link role="var" roleId="x27k.6610873504380357355" targetNodeId="6610873504380353745" resolveInfo="x" />
-          </node>
           <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="5083029923012081028" />
+          <node role="initializer" roleId="mj1l.2401122993843545632" type="mj1l.InitClause" typeId="mj1l.2401122993843557130" id="3590863974007034333">
+            <node role="value" roleId="mj1l.2401122993843557131" type="x27k.GlobalVarRef" typeId="x27k.6610873504380357354" id="6610873504380376023">
+              <link role="var" roleId="x27k.6610873504380357355" targetNodeId="6610873504380353745" resolveInfo="x" />
+            </node>
+          </node>
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="6610873504380381157">
           <property name="name" nameId="tpck.1169194664001" value="m" />
-          <node role="init" roleId="c4fa.4185783222026502647" type="x27k.GlobalVarRef" typeId="x27k.6610873504380357354" id="6610873504380381160">
-            <link role="var" roleId="x27k.6610873504380357355" targetNodeId="6610873504380377801" resolveInfo="global2" />
-          </node>
           <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="5083029923012081238" />
+          <node role="initializer" roleId="mj1l.2401122993843545632" type="mj1l.InitClause" typeId="mj1l.2401122993843557130" id="3590863974007033868">
+            <node role="value" roleId="mj1l.2401122993843557131" type="x27k.GlobalVarRef" typeId="x27k.6610873504380357354" id="6610873504380381160">
+              <link role="var" roleId="x27k.6610873504380357355" targetNodeId="6610873504380377801" resolveInfo="global2" />
+            </node>
+          </node>
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="6610873504380381162">
           <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="6610873504380381162" />
@@ -129,17 +133,21 @@
       <node role="body" roleId="yz9a.6275792049641586525" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="3788988821852189008">
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="3788988821852189009">
           <property name="name" nameId="tpck.1169194664001" value="x1" />
-          <node role="init" roleId="c4fa.4185783222026502647" type="x27k.GlobalConstantRef" typeId="x27k.3788988821852026523" id="3788988821852295103">
-            <link role="constant" roleId="x27k.3788988821852026524" targetNodeId="3788988821852138201" resolveInfo="arrSize1" />
-          </node>
           <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="5083029923012081088" />
+          <node role="initializer" roleId="mj1l.2401122993843545632" type="mj1l.InitClause" typeId="mj1l.2401122993843557130" id="3590863974007034500">
+            <node role="value" roleId="mj1l.2401122993843557131" type="x27k.GlobalConstantRef" typeId="x27k.3788988821852026523" id="3788988821852295103">
+              <link role="constant" roleId="x27k.3788988821852026524" targetNodeId="3788988821852138201" resolveInfo="arrSize1" />
+            </node>
+          </node>
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="3788988821852295105">
           <property name="name" nameId="tpck.1169194664001" value="x2" />
-          <node role="init" roleId="c4fa.4185783222026502647" type="x27k.GlobalConstantRef" typeId="x27k.3788988821852026523" id="3788988821852295108">
-            <link role="constant" roleId="x27k.3788988821852026524" targetNodeId="3788988821852188999" resolveInfo="arraysize2" />
-          </node>
           <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="5083029923012080829" />
+          <node role="initializer" roleId="mj1l.2401122993843545632" type="mj1l.InitClause" typeId="mj1l.2401122993843557130" id="3590863974007034542">
+            <node role="value" roleId="mj1l.2401122993843557131" type="x27k.GlobalConstantRef" typeId="x27k.3788988821852026523" id="3788988821852295108">
+              <link role="constant" roleId="x27k.3788988821852026524" targetNodeId="3788988821852188999" resolveInfo="arraysize2" />
+            </node>
+          </node>
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="3788988821852296384">
           <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="3788988821852296384" />

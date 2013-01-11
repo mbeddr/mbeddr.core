@@ -90,9 +90,11 @@
               <link role="union" roleId="clbe.5882395403881907207" targetNodeId="5882395403881929092" resolveInfo="union1" />
             </node>
           </node>
-          <node role="init" roleId="c4fa.4185783222026502647" type="yq40.ReferenceExpr" typeId="yq40.1595838349830846141" id="1730914748330560162">
-            <node role="expression" roleId="mj1l.7254843406768839760" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="1730914748330560164">
-              <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="5882395403881929099" resolveInfo="u1" />
+          <node role="initializer" roleId="mj1l.2401122993843545632" type="mj1l.InitClause" typeId="mj1l.2401122993843557130" id="3590863974007033852">
+            <node role="value" roleId="mj1l.2401122993843557131" type="yq40.ReferenceExpr" typeId="yq40.1595838349830846141" id="1730914748330560162">
+              <node role="expression" roleId="mj1l.7254843406768839760" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="1730914748330560164">
+                <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="5882395403881929099" resolveInfo="u1" />
+              </node>
             </node>
           </node>
         </node>
@@ -133,10 +135,12 @@
           <node role="type" roleId="mj1l.318113533128716676" type="clbe.UnionType" typeId="clbe.5882395403881907205" id="3073566081777350839">
             <link role="union" roleId="clbe.5882395403881907207" targetNodeId="5882395403881929092" resolveInfo="union1" />
           </node>
-          <node role="init" roleId="c4fa.4185783222026502647" type="clbe.UnionInitExpression" typeId="clbe.3073566081777327818" id="3073566081777350841">
-            <link role="member" roleId="clbe.3073566081777327822" targetNodeId="1694414027524184270" resolveInfo="x" />
-            <node role="value" roleId="clbe.3073566081777327823" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3073566081777350843">
-              <property name="value" nameId="mj1l.8860443239512128104" value="10" />
+          <node role="initializer" roleId="mj1l.2401122993843545632" type="mj1l.InitClause" typeId="mj1l.2401122993843557130" id="3590863974007033713">
+            <node role="value" roleId="mj1l.2401122993843557131" type="clbe.UnionInitExpression" typeId="clbe.3073566081777327818" id="3073566081777350841">
+              <link role="member" roleId="clbe.3073566081777327822" targetNodeId="1694414027524184270" resolveInfo="x" />
+              <node role="value" roleId="clbe.3073566081777327823" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3073566081777350843">
+                <property name="value" nameId="mj1l.8860443239512128104" value="10" />
+              </node>
             </node>
           </node>
         </node>

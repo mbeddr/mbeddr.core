@@ -174,10 +174,12 @@
                   <node role="body" roleId="k146.5686538669182273029" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="5686538669182343455">
                     <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="5686538669182343456">
                       <property name="name" nameId="tpck.1169194664001" value="__failures" />
-                      <node role="init" roleId="c4fa.4185783222026502647" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="5686538669182343459">
-                        <property name="value" nameId="mj1l.8860443239512128104" value="0" />
-                      </node>
                       <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int32tType" typeId="mj1l.8463282783691618440" id="5083029923012081231" />
+                      <node role="initializer" roleId="mj1l.2401122993843545632" type="mj1l.InitClause" typeId="mj1l.2401122993843557130" id="3590863974007034119">
+                        <node role="value" roleId="mj1l.2401122993843557131" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="5686538669182343459">
+                          <property name="value" nameId="mj1l.8860443239512128104" value="0" />
+                        </node>
+                      </node>
                     </node>
                     <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="22102029902643576">
                       <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.AssignmentExpr" typeId="mj1l.22102029902365709" id="22102029902643577">
@@ -1100,10 +1102,12 @@
         <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="6275792049641599036">
           <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="5232867887045275779">
             <property name="name" nameId="tpck.1169194664001" value="__failuresVal" />
-            <node role="init" roleId="c4fa.4185783222026502647" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="5232867887045275782">
-              <property name="value" nameId="mj1l.8860443239512128104" value="0" />
-            </node>
             <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="5083029923012081135" />
+            <node role="initializer" roleId="mj1l.2401122993843545632" type="mj1l.InitClause" typeId="mj1l.2401122993843557130" id="3590863974007034137">
+              <node role="value" roleId="mj1l.2401122993843557131" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="5232867887045275782">
+                <property name="value" nameId="mj1l.8860443239512128104" value="0" />
+              </node>
+            </node>
           </node>
           <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="9125142491355884879">
             <property name="name" nameId="tpck.1169194664001" value="__failures" />
@@ -1115,9 +1119,11 @@
                 <property name="const" nameId="mj1l.2941277002445651368" value="false" />
               </node>
             </node>
-            <node role="init" roleId="c4fa.4185783222026502647" type="yq40.ReferenceExpr" typeId="yq40.1595838349830846141" id="9125142491355884901">
-              <node role="expression" roleId="mj1l.7254843406768839760" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="9125142491355884903">
-                <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="5232867887045275779" resolveInfo="__failuresVal" />
+            <node role="initializer" roleId="mj1l.2401122993843545632" type="mj1l.InitClause" typeId="mj1l.2401122993843557130" id="3590863974007034348">
+              <node role="value" roleId="mj1l.2401122993843557131" type="yq40.ReferenceExpr" typeId="yq40.1595838349830846141" id="9125142491355884901">
+                <node role="expression" roleId="mj1l.7254843406768839760" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="9125142491355884903">
+                  <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="5232867887045275779" resolveInfo="__failuresVal" />
+                </node>
               </node>
             </node>
           </node>

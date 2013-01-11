@@ -308,10 +308,12 @@
         <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="8105003328814679424">
           <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="1302968767135054237">
             <property name="name" nameId="tpck.1169194664001" value="i" />
-            <node role="init" roleId="c4fa.4185783222026502647" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="1302968767135054240">
-              <property name="value" nameId="mj1l.8860443239512128104" value="0" />
-            </node>
             <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="5083029923012080986" />
+            <node role="initializer" roleId="mj1l.2401122993843545632" type="mj1l.InitClause" typeId="mj1l.2401122993843557130" id="3590863974007033993">
+              <node role="value" roleId="mj1l.2401122993843557131" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="1302968767135054240">
+                <property name="value" nameId="mj1l.8860443239512128104" value="0" />
+              </node>
+            </node>
           </node>
           <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="22102029902643690">
             <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.AssignmentExpr" typeId="mj1l.22102029902365709" id="22102029902643691">
@@ -407,8 +409,10 @@
           <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="7265387141425485026">
             <property name="name" nameId="tpck.1169194664001" value="theMessage" />
             <node role="type" roleId="mj1l.318113533128716676" type="yq40.StringType" typeId="yq40.6113173064528067332" id="7265387141425485027" />
-            <node role="init" roleId="c4fa.4185783222026502647" type="x27k.ArgumentRef" typeId="x27k.2093108837558505658" id="7265387141425485029">
-              <link role="arg" roleId="x27k.2093108837558505659" targetNodeId="6091825850321303953" resolveInfo="message" />
+            <node role="initializer" roleId="mj1l.2401122993843545632" type="mj1l.InitClause" typeId="mj1l.2401122993843557130" id="3590863974007033963">
+              <node role="value" roleId="mj1l.2401122993843557131" type="x27k.ArgumentRef" typeId="x27k.2093108837558505658" id="7265387141425485029">
+                <link role="arg" roleId="x27k.2093108837558505659" targetNodeId="6091825850321303953" resolveInfo="message" />
+              </node>
             </node>
           </node>
         </node>

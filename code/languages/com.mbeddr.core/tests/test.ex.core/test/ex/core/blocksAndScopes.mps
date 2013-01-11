@@ -119,15 +119,17 @@
       <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="8257817273846925644">
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="7646082028326283152">
           <property name="name" nameId="tpck.1169194664001" value="x" />
-          <node role="init" roleId="c4fa.4185783222026502647" type="mj1l.PlusExpression" typeId="mj1l.5763383285156373013" id="7646082028326283154">
-            <node role="left" roleId="mj1l.8860443239512128064" type="x27k.ArgumentRef" typeId="x27k.2093108837558505658" id="8257817273846925648">
-              <link role="arg" roleId="x27k.2093108837558505659" targetNodeId="8257817273846925646" resolveInfo="arg" />
-            </node>
-            <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="7646082028326283156">
-              <property name="value" nameId="mj1l.8860443239512128104" value="2" />
+          <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="5083029923012080994" />
+          <node role="initializer" roleId="mj1l.2401122993843545632" type="mj1l.InitClause" typeId="mj1l.2401122993843557130" id="3590863974007034590">
+            <node role="value" roleId="mj1l.2401122993843557131" type="mj1l.PlusExpression" typeId="mj1l.5763383285156373013" id="7646082028326283154">
+              <node role="left" roleId="mj1l.8860443239512128064" type="x27k.ArgumentRef" typeId="x27k.2093108837558505658" id="8257817273846925648">
+                <link role="arg" roleId="x27k.2093108837558505659" targetNodeId="8257817273846925646" resolveInfo="arg" />
+              </node>
+              <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="7646082028326283156">
+                <property name="value" nameId="mj1l.8860443239512128104" value="2" />
+              </node>
             </node>
           </node>
-          <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="5083029923012080994" />
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="3526734305768050833">
           <property name="name" nameId="tpck.1169194664001" value="a1" />
@@ -135,32 +137,36 @@
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="7646082028326283160">
           <property name="name" nameId="tpck.1169194664001" value="a2" />
-          <node role="init" roleId="c4fa.4185783222026502647" type="mj1l.PlusExpression" typeId="mj1l.5763383285156373013" id="7646082028326283162">
-            <node role="left" roleId="mj1l.8860443239512128064" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="7646082028326283163">
-              <property name="value" nameId="mj1l.8860443239512128104" value="2" />
-            </node>
-            <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="7646082028326283164">
-              <property name="value" nameId="mj1l.8860443239512128104" value="3" />
+          <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="5083029923012081009" />
+          <node role="initializer" roleId="mj1l.2401122993843545632" type="mj1l.InitClause" typeId="mj1l.2401122993843557130" id="3590863974007034272">
+            <node role="value" roleId="mj1l.2401122993843557131" type="mj1l.PlusExpression" typeId="mj1l.5763383285156373013" id="7646082028326283162">
+              <node role="left" roleId="mj1l.8860443239512128064" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="7646082028326283163">
+                <property name="value" nameId="mj1l.8860443239512128104" value="2" />
+              </node>
+              <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="7646082028326283164">
+                <property name="value" nameId="mj1l.8860443239512128104" value="3" />
+              </node>
             </node>
           </node>
-          <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="5083029923012081009" />
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="7646082028326283165">
           <property name="name" nameId="tpck.1169194664001" value="a3" />
-          <node role="init" roleId="c4fa.4185783222026502647" type="mj1l.PlusExpression" typeId="mj1l.5763383285156373013" id="7646082028326283167">
-            <node role="left" roleId="mj1l.8860443239512128064" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="7646082028326283168">
-              <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="7646082028326283160" resolveInfo="a2" />
-            </node>
-            <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.MultiExpression" typeId="mj1l.5763383285156373020" id="7646082028326283169">
-              <node role="left" roleId="mj1l.8860443239512128064" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="7646082028326283170">
+          <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="5083029923012081283" />
+          <node role="initializer" roleId="mj1l.2401122993843545632" type="mj1l.InitClause" typeId="mj1l.2401122993843557130" id="3590863974007033786">
+            <node role="value" roleId="mj1l.2401122993843557131" type="mj1l.PlusExpression" typeId="mj1l.5763383285156373013" id="7646082028326283167">
+              <node role="left" roleId="mj1l.8860443239512128064" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="7646082028326283168">
                 <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="7646082028326283160" resolveInfo="a2" />
               </node>
-              <node role="right" roleId="mj1l.8860443239512128065" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="7646082028326283171">
-                <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="3526734305768050833" resolveInfo="a1" />
+              <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.MultiExpression" typeId="mj1l.5763383285156373020" id="7646082028326283169">
+                <node role="left" roleId="mj1l.8860443239512128064" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="7646082028326283170">
+                  <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="7646082028326283160" resolveInfo="a2" />
+                </node>
+                <node role="right" roleId="mj1l.8860443239512128065" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="7646082028326283171">
+                  <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="3526734305768050833" resolveInfo="a1" />
+                </node>
               </node>
             </node>
           </node>
-          <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="5083029923012081283" />
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="7646082028326283172">
           <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="7646082028326283173">
@@ -169,24 +175,28 @@
           </node>
           <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="7646082028326283175">
             <property name="name" nameId="tpck.1169194664001" value="b1" />
-            <node role="init" roleId="c4fa.4185783222026502647" type="mj1l.PlusExpression" typeId="mj1l.5763383285156373013" id="7646082028326283177">
-              <node role="left" roleId="mj1l.8860443239512128064" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="7646082028326283178">
-                <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="7646082028326283173" resolveInfo="a1" />
-              </node>
-              <node role="right" roleId="mj1l.8860443239512128065" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="7646082028326283179">
-                <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="7646082028326283160" resolveInfo="a2" />
+            <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="5083029923012081130" />
+            <node role="initializer" roleId="mj1l.2401122993843545632" type="mj1l.InitClause" typeId="mj1l.2401122993843557130" id="3590863974007034031">
+              <node role="value" roleId="mj1l.2401122993843557131" type="mj1l.PlusExpression" typeId="mj1l.5763383285156373013" id="7646082028326283177">
+                <node role="left" roleId="mj1l.8860443239512128064" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="7646082028326283178">
+                  <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="7646082028326283173" resolveInfo="a1" />
+                </node>
+                <node role="right" roleId="mj1l.8860443239512128065" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="7646082028326283179">
+                  <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="7646082028326283160" resolveInfo="a2" />
+                </node>
               </node>
             </node>
-            <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="5083029923012081130" />
           </node>
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="7646082028326283180">
           <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="7646082028326283181">
             <property name="name" nameId="tpck.1169194664001" value="c1" />
-            <node role="init" roleId="c4fa.4185783222026502647" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="7646082028326283183">
-              <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="3526734305768050833" resolveInfo="a1" />
-            </node>
             <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="5083029923012081100" />
+            <node role="initializer" roleId="mj1l.2401122993843545632" type="mj1l.InitClause" typeId="mj1l.2401122993843557130" id="3590863974007034518">
+              <node role="value" roleId="mj1l.2401122993843557131" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="7646082028326283183">
+                <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="3526734305768050833" resolveInfo="a1" />
+              </node>
+            </node>
           </node>
           <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="7646082028326283184">
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="7646082028326283185">
@@ -195,41 +205,51 @@
             </node>
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="7646082028326283187">
               <property name="name" nameId="tpck.1169194664001" value="d2" />
-              <node role="init" roleId="c4fa.4185783222026502647" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="7646082028326283189">
-                <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="7646082028326283185" resolveInfo="d1" />
-              </node>
               <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="5083029923012080991" />
+              <node role="initializer" roleId="mj1l.2401122993843545632" type="mj1l.InitClause" typeId="mj1l.2401122993843557130" id="3590863974007034391">
+                <node role="value" roleId="mj1l.2401122993843557131" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="7646082028326283189">
+                  <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="7646082028326283185" resolveInfo="d1" />
+                </node>
+              </node>
             </node>
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="7646082028326283190">
               <property name="name" nameId="tpck.1169194664001" value="d3" />
-              <node role="init" roleId="c4fa.4185783222026502647" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="7646082028326283192">
-                <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="7646082028326283185" resolveInfo="d1" />
-              </node>
               <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="5083029923012080975" />
+              <node role="initializer" roleId="mj1l.2401122993843545632" type="mj1l.InitClause" typeId="mj1l.2401122993843557130" id="3590863974007033850">
+                <node role="value" roleId="mj1l.2401122993843557131" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="7646082028326283192">
+                  <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="7646082028326283185" resolveInfo="d1" />
+                </node>
+              </node>
             </node>
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="7646082028326283193">
               <property name="name" nameId="tpck.1169194664001" value="d4" />
-              <node role="init" roleId="c4fa.4185783222026502647" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="7646082028326283195">
-                <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="7646082028326283190" resolveInfo="d3" />
-              </node>
               <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="5083029923012081370" />
+              <node role="initializer" roleId="mj1l.2401122993843545632" type="mj1l.InitClause" typeId="mj1l.2401122993843557130" id="3590863974007034248">
+                <node role="value" roleId="mj1l.2401122993843557131" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="7646082028326283195">
+                  <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="7646082028326283190" resolveInfo="d3" />
+                </node>
+              </node>
             </node>
           </node>
           <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ForStatement" typeId="c4fa.7254843406768596598" id="7646082028326283196">
             <node role="body" roleId="c4fa.7254843406768606771" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="7646082028326283197">
               <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="7646082028326283198">
                 <property name="name" nameId="tpck.1169194664001" value="x" />
-                <node role="init" roleId="c4fa.4185783222026502647" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="7646082028326283200">
-                  <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="7646082028326283152" resolveInfo="x" />
-                </node>
                 <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="5083029923012081114" />
+                <node role="initializer" roleId="mj1l.2401122993843545632" type="mj1l.InitClause" typeId="mj1l.2401122993843557130" id="3590863974007034550">
+                  <node role="value" roleId="mj1l.2401122993843557131" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="7646082028326283200">
+                    <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="7646082028326283152" resolveInfo="x" />
+                  </node>
+                </node>
               </node>
               <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="7646082028326283201">
                 <property name="name" nameId="tpck.1169194664001" value="y" />
-                <node role="init" roleId="c4fa.4185783222026502647" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="7646082028326283203">
-                  <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="7646082028326283198" resolveInfo="x" />
-                </node>
                 <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="5083029923012081304" />
+                <node role="initializer" roleId="mj1l.2401122993843545632" type="mj1l.InitClause" typeId="mj1l.2401122993843557130" id="3590863974007034592">
+                  <node role="value" roleId="mj1l.2401122993843557131" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="7646082028326283203">
+                    <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="7646082028326283198" resolveInfo="x" />
+                  </node>
+                </node>
               </node>
               <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="7646082028326283204">
                 <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.PostIncrementExpression" typeId="mj1l.4375898003726285486" id="2799490600706129163">
@@ -255,18 +275,22 @@
               </node>
               <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="7646082028326283212">
                 <property name="name" nameId="tpck.1169194664001" value="i" />
-                <node role="init" roleId="c4fa.4185783222026502647" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="7646082028326283214">
-                  <property name="value" nameId="mj1l.8860443239512128104" value="10" />
-                </node>
                 <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="5083029923012081383" />
+                <node role="initializer" roleId="mj1l.2401122993843545632" type="mj1l.InitClause" typeId="mj1l.2401122993843557130" id="3590863974007034538">
+                  <node role="value" roleId="mj1l.2401122993843557131" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="7646082028326283214">
+                    <property name="value" nameId="mj1l.8860443239512128104" value="10" />
+                  </node>
+                </node>
               </node>
             </node>
             <node role="iterator" roleId="c4fa.7254843406768606784" type="c4fa.ForVarDecl" typeId="c4fa.7254843406768606755" id="7646082028326283215">
               <property name="name" nameId="tpck.1169194664001" value="i" />
-              <node role="init" roleId="c4fa.4185783222026502647" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="7646082028326283217">
-                <property name="value" nameId="mj1l.8860443239512128104" value="0" />
-              </node>
               <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="5083029923012081258" />
+              <node role="initializer" roleId="mj1l.2401122993843545632" type="mj1l.InitClause" typeId="mj1l.2401122993843557130" id="3590863974007033941">
+                <node role="value" roleId="mj1l.2401122993843557131" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="7646082028326283217">
+                  <property name="value" nameId="mj1l.8860443239512128104" value="0" />
+                </node>
+              </node>
             </node>
             <node role="condition" roleId="c4fa.7254843406768606787" type="mj1l.LessExpression" typeId="mj1l.8860443239512147449" id="7646082028326283218">
               <node role="left" roleId="mj1l.8860443239512128064" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="7646082028326283219">
@@ -285,16 +309,18 @@
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="7646082028326283223">
           <property name="name" nameId="tpck.1169194664001" value="sum" />
-          <node role="init" roleId="c4fa.4185783222026502647" type="x27k.FunctionCall" typeId="x27k.5950410542643524492" id="7646082028326283225">
-            <link role="function" roleId="x27k.5950410542643524493" targetNodeId="7646082028326283235" resolveInfo="add" />
-            <node role="actuals" roleId="x27k.5950410542643524495" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="7646082028326283226">
-              <property name="value" nameId="mj1l.8860443239512128104" value="12" />
-            </node>
-            <node role="actuals" roleId="x27k.5950410542643524495" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="7646082028326283227">
-              <property name="value" nameId="mj1l.8860443239512128104" value="3" />
+          <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="5083029923012081363" />
+          <node role="initializer" roleId="mj1l.2401122993843545632" type="mj1l.InitClause" typeId="mj1l.2401122993843557130" id="3590863974007034600">
+            <node role="value" roleId="mj1l.2401122993843557131" type="x27k.FunctionCall" typeId="x27k.5950410542643524492" id="7646082028326283225">
+              <link role="function" roleId="x27k.5950410542643524493" targetNodeId="7646082028326283235" resolveInfo="add" />
+              <node role="actuals" roleId="x27k.5950410542643524495" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="7646082028326283226">
+                <property name="value" nameId="mj1l.8860443239512128104" value="12" />
+              </node>
+              <node role="actuals" roleId="x27k.5950410542643524495" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="7646082028326283227">
+                <property name="value" nameId="mj1l.8860443239512128104" value="3" />
+              </node>
             </node>
           </node>
-          <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="5083029923012081363" />
         </node>
       </node>
       <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="5708867820622277875" />
@@ -309,15 +335,17 @@
       <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="7646082028326283237">
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="7646082028326283238">
           <property name="name" nameId="tpck.1169194664001" value="c" />
-          <node role="init" roleId="c4fa.4185783222026502647" type="mj1l.PlusExpression" typeId="mj1l.5763383285156373013" id="7646082028326283240">
-            <node role="left" roleId="mj1l.8860443239512128064" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="7646082028326283241">
-              <property name="value" nameId="mj1l.8860443239512128104" value="1" />
-            </node>
-            <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="7646082028326283242">
-              <property name="value" nameId="mj1l.8860443239512128104" value="1" />
+          <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="5083029923012081115" />
+          <node role="initializer" roleId="mj1l.2401122993843545632" type="mj1l.InitClause" typeId="mj1l.2401122993843557130" id="3590863974007033720">
+            <node role="value" roleId="mj1l.2401122993843557131" type="mj1l.PlusExpression" typeId="mj1l.5763383285156373013" id="7646082028326283240">
+              <node role="left" roleId="mj1l.8860443239512128064" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="7646082028326283241">
+                <property name="value" nameId="mj1l.8860443239512128104" value="1" />
+              </node>
+              <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="7646082028326283242">
+                <property name="value" nameId="mj1l.8860443239512128104" value="1" />
+              </node>
             </node>
           </node>
-          <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="5083029923012081115" />
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="x27k.ReturnStatement" typeId="x27k.8967919205527146149" id="7646082028326283243">
           <node role="expression" roleId="x27k.8967919205527146150" type="mj1l.PlusExpression" typeId="mj1l.5763383285156373013" id="7646082028326283244">
