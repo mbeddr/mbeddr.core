@@ -21,6 +21,10 @@ build.properties
 TEST-*.xml
 junit*.properties
 
+classes_gen
+source_gen
+source_gen.caches
+
 # -----------------------------------------------------------
 # * build
 build/*/build
@@ -36,16 +40,6 @@ code/languages/com.mbeddr.ext/diagrams/*.gv
 code/languages/com.mbeddr.ext/diagrams/*.png
 
 # -----------------------------------------------------------
-# * languages
-code/languages/*/languages/*/classes_gen
-code/languages/*/languages/*/source_gen
-code/languages/*/languages/*/source_gen.caches
-
-code/languages/*/languages/*/solutions/*/classes_gen/
-code/languages/*/languages/*/solutions/*/source_gen.caches/
-code/languages/*/languages/*/solutions/*/source_gen/
-
-# -----------------------------------------------------------
 # * lib - here we seem to need the generated sources.
 code/languages/*/lib/*/classes_gen
 code/languages/*/lib/*/source_gen.caches
@@ -54,26 +48,12 @@ code/languages/*/lib/*/source_gen.caches
 
 # -----------------------------------------------------------
 # * tests
-code/languages/*/tests/*/classes_gen
-code/languages/*/tests/*/source_gen
-code/languages/*/tests/*/source_gen.caches
-
-code/languages/*/tests/*/test_gen
-code/languages/*/tests/*/test_gen.caches
+test_gen
+test_gen.caches
 
 
-# -----------------------------------------------------------
-# * libs
-code/languages/*/lib/*/classes_gen
-code/languages/*/lib/*/source_gen
-code/languages/*/lib/*/source_gen.caches
 
 
-# -----------------------------------------------------------
-# * solutions
-code/languages/*/solutions/*/classes_gen
-code/languages/*/solutions/*/source_gen
-code/languages/*/solutions/*/source_gen.caches
 
 # -----------------------------------------------------------
 # * project settings
@@ -84,19 +64,6 @@ code/languages/*/TEST*.xml
 # -----------------------------------------------------------
 # applications
 code/applications/*/*.iws
-code/applications/*/solutions/*/source_gen
-code/applications/*/solutions/*/source_gen.caches
-code/applications/*/solutions/*/classes_gen
-code/applications/*/tests/*/source_gen
-code/applications/*/tests/*/source_gen.caches
-code/applications/*/tests/*/classes_gen
-code/applications/*/languages/*/source_gen
-code/applications/*/languages/*/source_gen.caches
-code/applications/*/languages/*/classes_gen
-code/applications/*/source_gen
-code/applications/*/source_gen.caches
-code/applications/*/classes_gen
-code/applications/*/classes_gen.caches
 code/applications/*/build.properties
 
 #-----------------------------------------------------------

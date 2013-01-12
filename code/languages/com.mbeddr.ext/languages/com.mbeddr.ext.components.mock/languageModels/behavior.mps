@@ -20,6 +20,7 @@
   <import index="tp2q" modelUID="r:00000000-0000-4000-0000-011c8959032e(jetbrains.mps.baseLanguage.collections.structure)" version="7" implicit="yes" />
   <import index="tp2c" modelUID="r:00000000-0000-4000-0000-011c89590338(jetbrains.mps.baseLanguage.closures.structure)" version="3" implicit="yes" />
   <import index="e2lb" modelUID="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" version="-1" implicit="yes" />
+  <import index="hba4" modelUID="r:f5bd2ad9-cd54-4408-b815-07f9f306f074(com.mbeddr.mpsutil.blutil.structure)" version="7" implicit="yes" />
   <import index="tpib" modelUID="r:00000000-0000-4000-0000-011c8959057f(jetbrains.mps.baseLanguage.logging.structure)" version="0" implicit="yes" />
   <roots>
     <node type="1i04.ConceptBehavior" typeId="1i04.1225194240794" id="2151335435833382005">
@@ -61,8 +62,8 @@
                 <link role="link" roleId="tp25.1138056546658" targetNodeId="v7ag.6041318036221669720" />
               </node>
             </node>
-            <node role="operation" roleId="tpee.1197027833540" type=".com.mbeddr.mpsutil.blutil.structure.FilterOperation" id="17217465924525195">
-              <link role="concept" targetNodeId="mxvz.2151335435833308544" resolveInfo="Expectation" />
+            <node role="operation" roleId="tpee.1197027833540" type="hba4.FilterOperation" typeId="hba4.17217465924316850" id="17217465924525195">
+              <link role="concept" roleId="hba4.17217465924316851" targetNodeId="mxvz.2151335435833308544" resolveInfo="Expectation" />
             </node>
           </node>
         </node>
