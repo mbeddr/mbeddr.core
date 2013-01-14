@@ -273,5 +273,17 @@
     <move id="dylp.8118534740657855647" to="h99f.6113173064528067384" />
     <move id="dylp.8118534740657855649" to="h99f.6113173064528067386" />
   </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="17" />
+    </dependencies>
+    <rename id="mj1l.704069370490430471" type="CONCEPT" from="IDataflowType" to="IDataflowTyped" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="18" />
+    </dependencies>
+    <rename id="mj1l.7274201720600672741" type="CONCEPT" from="IDataflowVariable" to="IDataflowVariableContainer" />
+  </StructureModification>
 </history>
 
