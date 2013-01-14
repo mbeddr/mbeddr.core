@@ -19,11 +19,16 @@ sets of functions, \ic{enum}s, \ic{typedef}s etc. into different \ic{.c} and
 To use the components in your C programs, please include the
 \ic{com.mbeddr.components} devkit.
 
-\parhead{Interfaces} An interface is essentially a set of operation
-signatures, similar to function prototypes in C.
-\ic{query} marks functions as not performing any state changes; they are assumed
-to be invokable any number of times without side effects (something we do not
-verify automatically at this time).
+\parhead{Interfaces} There are two kinds of interfaces. Client/Server interfaces
+contain a set of operations that can be called by client components.
+Sender/Receiver interfaces are used to share data among components. In the rest
+of this section we first look at client/server interfaces and later at
+sender/receiver interfaces.
+
+An client/server interface is essentially a set of operation signatures, similar
+to function prototypes in C. \ic{query} marks functions as not performing any
+state changes; they are assumed to be invokable any number of times without side
+effects (something we do not verify automatically at this time).
 
  
 \begin{lstlisting}[language=mbeddr, morekeywords={}]
@@ -433,3 +438,96 @@ exported test case testCall {
   assert(0) $instances:c1.getStuff(10) == 1; 
 }
 \end{lstlisting} 
+
+\subsection{Sender/Receiver Interfaces}
+
+A sender/receiver interface does not declare operations. Instead it declares
+data items:
+
+\begin{lstlisting}[language=mbeddr]
+exported sr interface PositionProvider { 
+  int8 x; 
+  int8 y; 
+  uint16 alt; 
+}
+\end{lstlisting}
+
+A component that \emph{provides} this interface is supposed to provide values
+for these items. A component that \emph{requires} a sender/receiver interface is
+supposed to read these values:
+
+\begin{lstlisting}[language=mbeddr]
+module ComponentsSRI imports DataStructures { 
+   
+  exported component GPS extends nothing { 
+    provides PositionProvider pos 
+    void update() { 
+      pos.x++; 
+      pos.y++; 
+    } 
+  } 
+   
+  exported component FlightRecorder extends nothing { 
+    requires PositionProvider pp 
+    Trackpoint[1000] recordedFlight; 
+    uint16 count = 0; 
+    void timed_tick() { 
+      with (recordedFlight[count]) { 
+        x = pp.x 
+        y = pp.y 
+        alt = pp.alt 
+      }; 
+      count++; 
+    } 
+  } 
+   
+}
+\end{lstlisting}
+
+
+Components still have to be instantiated, and the ports connected. As with
+client/server interfaces, several required ports can connect to the same
+provided port. 
+
+There are two options for sender/receiver interfaces. First, an interface can be
+marked as \ic{strict}. In this case, \emph{only the provider} can write the
+values defined in the interface, and the requirers can only read them. Data flow
+is in one direction. If interfaces are not strict, then requirers can also
+write.
+
+So you may ask what is the difference between providing and requiring? The
+difference is who owns the data. If you have one provider and two requirers,
+then there is \emph{one} set of data at runtime. If one requirer writes to the
+data item, the other requirer will see the change.
+
+A second option is that a data item can be marked as \ic{atomic}. This means
+that it can only be set in one piece. This is especially useful when
+\ic{struct}s are used as the type of a data item. For non-atomic data items,
+you can assign to fields of complex data items (as in \ic{carData.position.x =
+value}):
+
+\begin{lstlisting}[language=mbeddr, morekeywords={}]
+exported struct Position { 
+  int8 x; 
+  int8 y; 
+}; 
+ 
+exported sr interface CarData { 
+  Position position; 
+} 
+ 
+exported component Motor extends nothing { 
+  provides CarData carData 
+  internal void updateCarDataPositionX(int8 value) <- no trigger { 
+    carData.position.x = value; 
+  }
+} 
+\end{lstlisting}
+
+If the \ic{position} item were marked as \ic{atomic} only the complete \ic{struct}
+could be assigned (as in \ic{carData.position = otherPosition;}). 
+
+Both \ic{atomic} and \ic{strict} are necessary for certain middleware platforms.
+In a pure-C/no-middleware implementation, these two options are not relevant.
+
+
