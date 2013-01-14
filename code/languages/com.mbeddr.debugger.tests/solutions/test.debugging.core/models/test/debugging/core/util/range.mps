@@ -53,18 +53,6 @@
     </node>
   </root>
   <root id="8729447926330639733">
-    <node role="contents" roleId="x27k.6437088627575722833" type="k146.MessageDefinitionTable" typeId="k146.2688792604367903085" id="6591434695300513113">
-      <property name="name" nameId="tpck.1169194664001" value="m" />
-      <node role="messages" roleId="k146.2688792604367903095" type="k146.MessageDefinition" typeId="k146.2688792604367903087" id="6591434695300513114">
-        <property name="active" nameId="k146.2688792604367947988" value="true" />
-        <property name="name" nameId="tpck.1169194664001" value="counter" />
-        <property name="text" nameId="k146.2688792604367903089" value="counter" />
-        <node role="properties" roleId="k146.767515563077204474" type="k146.MessageProperty" typeId="k146.767515563077204464" id="6591434695300513115">
-          <property name="name" nameId="tpck.1169194664001" value="x" />
-          <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="6591434695300513116" />
-        </node>
-      </node>
-    </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="yz9a.TestCase" typeId="yz9a.6275792049641586523" id="8729447926330639782">
       <property name="exported" nameId="x27k.1317894735999272944" value="true" />
       <property name="name" nameId="tpck.1169194664001" value="simpleRanges" />
@@ -152,6 +140,9 @@
             </node>
           </node>
         </node>
+      </node>
+      <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="rpmx.MarkerAnnotation" typeId="rpmx.4193597469137492628" id="2812390151932396038">
+        <property name="name" nameId="tpck.1169194664001" value="optimizedFunction" />
       </node>
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="3136162014989838122">
@@ -1922,12 +1913,12 @@
       <link role="binary" roleId="rpmx.7048220250906128789" targetNodeId="8729447926330640756" resolveInfo="Ranges" />
     </node>
     <node role="testMethods" roleId="rpmx.1217501895093" type="rpmx.DebuggerTestMethod" typeId="rpmx.4193597469137492636" id="8165847842702777758">
-      <property name="name" nameId="tpck.1169194664001" value="tryingToStepIntoRangeExpression" />
+      <property name="name" nameId="tpck.1169194664001" value="breakpointOnRangeExpression" />
       <node role="returnType" roleId="tpee.1068580123133" type="tpee.VoidType" typeId="tpee.1068581517677" id="8165847842702777759" />
       <node role="validationBody" roleId="rpmx.7048220250906209725" type="rpmx.ValidationList" typeId="rpmx.7048220250906209718" id="8165847842702777760">
-        <node role="validations" roleId="rpmx.7048220250906209719" type="rpmx.ValidateDebuggerSuspended" typeId="rpmx.7048220250906049590" id="8165847842702777766">
-          <node role="marker" roleId="rpmx.7048220250906049591" type="rpmx.MarkerRef" typeId="rpmx.4193597469137492644" id="8165847842702777768">
-            <link role="marker" roleId="rpmx.4193597469137492645" targetNodeId="8165847842702777765" resolveInfo="assertStmntWithRangeExpr2" />
+        <node role="validations" roleId="rpmx.7048220250906209719" type="rpmx.ValidateDebuggerSuspended" typeId="rpmx.7048220250906049590" id="2812390151932396036">
+          <node role="marker" roleId="rpmx.7048220250906049591" type="rpmx.MarkerRef" typeId="rpmx.4193597469137492644" id="2812390151932410011">
+            <link role="marker" roleId="rpmx.4193597469137492645" targetNodeId="2812390151932396038" resolveInfo="optimizedFunction" />
           </node>
         </node>
         <node role="validations" roleId="rpmx.7048220250906209719" type="rpmx.WatchablesValidationList" typeId="rpmx.4550138447367847233" id="8165847842702777770" />
@@ -1936,7 +1927,6 @@
       <node role="suspensionPoint" roleId="rpmx.5100083648679219652" type="rpmx.MarkerRef" typeId="rpmx.4193597469137492644" id="8165847842702777763">
         <link role="marker" roleId="rpmx.4193597469137492645" targetNodeId="8165847842702777762" resolveInfo="assertStmntWithRangeExpr1" />
       </node>
-      <node role="steppingCommands" roleId="rpmx.5100083648679219673" type="rpmx.StepIntoCommand" typeId="rpmx.4231345613098876386" id="8165847842702777764" />
     </node>
     <node role="testMethods" roleId="rpmx.1217501895093" type="rpmx.DebuggerTestMethod" typeId="rpmx.4193597469137492636" id="8165847842702777771">
       <property name="name" nameId="tpck.1169194664001" value="stepOverToForRangeStmnt" />
