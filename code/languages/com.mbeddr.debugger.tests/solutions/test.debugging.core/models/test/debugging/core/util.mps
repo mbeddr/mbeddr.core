@@ -24,12 +24,6 @@
   <language namespace="223dd778-c44f-4ef3-9535-7aa7d12244a6(com.mbeddr.core.debug)" />
   <language namespace="83888646-71ce-4f1c-9c53-c54016f6ad4f(jetbrains.mps.baseLanguage.collections)" />
   <import index="jbga" modelUID="r:9b74815c-87a0-4017-a91c-72c5ee13c634(test.debugging.core.util.basic)" version="-1" />
-  <import index="tp5g" modelUID="r:00000000-0000-4000-0000-011c89590388(jetbrains.mps.lang.test.structure)" version="4" implicit="yes" />
-  <roots>
-    <node type="tp5g.TestInfo" typeId="tp5g.5097124989038916362" id="1423209693057696534">
-      <property name="projectPath" nameId="tp5g.5097124989038916363" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.debugger.tests/debugger-tests.mpr" />
-    </node>
-  </roots>
-  <root id="1423209693057696534" />
+  <roots />
 </model>
 
