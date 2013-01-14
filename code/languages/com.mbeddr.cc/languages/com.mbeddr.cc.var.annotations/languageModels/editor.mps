@@ -3,7 +3,7 @@
   <persistence version="7" />
   <language namespace="18bc6592-03a6-4e29-a83a-7ff23bde13ba(jetbrains.mps.lang.editor)" />
   <devkit namespace="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
-  <import index="qdv7" modelUID="r:1ff3d952-eae5-4d94-b89e-ea3060b11545(com.mbeddr.cc.var.annotations.structure)" version="2" />
+  <import index="qdv7" modelUID="r:1ff3d952-eae5-4d94-b89e-ea3060b11545(com.mbeddr.cc.var.annotations.structure)" version="5" />
   <import index="rpdm" modelUID="r:91453863-abdf-432d-a851-57f349774287(com.mbeddr.cc.var.annotations.behavior)" version="1" />
   <import index="1t7x" modelUID="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.awt(JDK/java.awt@java_stub)" version="-1" />
   <import index="qqyh" modelUID="r:a74300b8-76a8-461e-befa-fc86b0ad5dd9(com.mbeddr.cc.var.fm.structure)" version="3" />
@@ -16,7 +16,7 @@
   <roots>
     <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="661141253149231547">
       <property name="virtualPackage" nameId="tpck.1193676396447" value="programannotations" />
-      <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="qdv7.661141253149231475" resolveInfo="PresenceCondidtion" />
+      <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="qdv7.661141253149231475" resolveInfo="PresenceCondition" />
     </node>
     <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="661141253149262055">
       <property name="virtualPackage" nameId="tpck.1193676396447" value="programannotations" />
@@ -35,7 +35,7 @@
     </node>
     <node type="tpc2.CellActionMapDeclaration" typeId="tpc2.1139535219966" id="2613872510229257859">
       <property name="name" nameId="tpck.1169194664001" value="deletePCOnPC" />
-      <link role="applicableConcept" roleId="tpc2.1139535219968" targetNodeId="qdv7.661141253149231475" resolveInfo="PresenceCondidtion" />
+      <link role="applicableConcept" roleId="tpc2.1139535219968" targetNodeId="qdv7.661141253149231475" resolveInfo="PresenceCondition" />
     </node>
     <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="2613872510229271521">
       <property name="virtualPackage" nameId="tpck.1193676396447" value="programannotations" />
@@ -64,6 +64,10 @@
       <property name="virtualPackage" nameId="tpck.1193676396447" value="programannotations" />
       <property name="name" nameId="tpck.1169194664001" value="deletePCOnFC" />
       <link role="applicableConcept" roleId="tpc2.1139535219968" targetNodeId="qdv7.2613872510229282925" resolveInfo="FeatureCondition" />
+    </node>
+    <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="6840952553349668025">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="programannotations" />
+      <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="qdv7.6840952553349668023" resolveInfo="DerivedFeatureRef" />
     </node>
   </roots>
   <root id="661141253149231547">
@@ -1638,6 +1642,17 @@
               <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_DeleteOperation" typeId="tp25.1140133623887" id="2785540331872346432" />
             </node>
           </node>
+        </node>
+      </node>
+    </node>
+  </root>
+  <root id="6840952553349668025">
+    <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_RefCell" typeId="tpc2.1088013125922" id="6840952553349668027">
+      <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="qdv7.6840952553349668024" />
+      <node role="editorComponent" roleId="tpc2.1088186146602" type="tpc2.InlineEditorComponent" typeId="tpc2.1088185857835" id="6840952553349668028">
+        <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Property" typeId="tpc2.1073389658414" id="6840952553349668030">
+          <property name="readOnly" nameId="tpc2.1140017977771" value="true" />
+          <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="tpck.1169194664001" resolveInfo="name" />
         </node>
       </node>
     </node>
