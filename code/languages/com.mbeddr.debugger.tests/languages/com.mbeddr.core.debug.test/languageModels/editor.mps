@@ -29,11 +29,11 @@
       <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="rpmx.7048220250905867886" resolveInfo="DebuggerTestCase" />
     </node>
     <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="7048220250906041084">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="validation.kinds" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="validation.kinds.callstack-depth" />
       <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="rpmx.7048220250906041081" resolveInfo="ValidateCallStack" />
     </node>
     <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="7048220250906049593">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="validation.kinds" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="validation.kinds.suspended" />
       <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="rpmx.7048220250906049590" resolveInfo="ValidateDebuggerSuspended" />
     </node>
     <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="7048220250906209720">
@@ -372,7 +372,7 @@
   <root id="7048220250906049593">
     <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="7048220250906049595">
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="7048220250906049596">
-        <property name="text" nameId="tpc2.1073389577007" value="debugger suspended at:" />
+        <property name="text" nameId="tpc2.1073389577007" value="suspended at:" />
       </node>
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_RefNode" typeId="tpc2.1073389882823" id="7048220250906049597">
         <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="rpmx.7048220250906049591" />

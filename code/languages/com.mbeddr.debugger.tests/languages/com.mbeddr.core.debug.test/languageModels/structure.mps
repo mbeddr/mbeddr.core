@@ -31,12 +31,12 @@
     </node>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7048220250906041081">
       <property name="name" nameId="tpck.1169194664001" value="ValidateCallStack" />
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="validation.kinds" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="validation.kinds.callstack-depth" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="7048220250906219004" resolveInfo="Validation" />
     </node>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7048220250906049590">
       <property name="name" nameId="tpck.1169194664001" value="ValidateDebuggerSuspended" />
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="validation.kinds" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="validation.kinds.suspended" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="7048220250906219004" resolveInfo="Validation" />
     </node>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7048220250906209718">
@@ -187,6 +187,9 @@
     <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="7048220250906349840">
       <property name="value" nameId="tpce.1105725733873" value=" " />
       <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473891462" resolveInfo="alias" />
+    </node>
+    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.BooleanConceptProperty" typeId="tpce.1105725574259" id="2812390151934189585">
+      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473854053" resolveInfo="abstract" />
     </node>
   </root>
   <root id="5100083648679219672" />

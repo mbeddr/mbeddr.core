@@ -19,7 +19,7 @@
     </node>
     <node type="tpd4.NonTypesystemRule" typeId="tpd4.1195214364922" id="7048220250906225332">
       <property name="name" nameId="tpck.1169194664001" value="check_ValidateCallStack" />
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="validation.kinds" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="validation.kinds.callstack-depth" />
     </node>
     <node type="tpd4.InferenceRule" typeId="tpd4.1174643105530" id="7048220250906225353">
       <property name="name" nameId="tpck.1169194664001" value="typeof_ValidateCallStack" />
@@ -27,7 +27,7 @@
     </node>
     <node type="tpd4.NonTypesystemRule" typeId="tpd4.1195214364922" id="7048220250906324579">
       <property name="name" nameId="tpck.1169194664001" value="check_ValidateDebuggerSuspended" />
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="validation.kinds" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="validation.kinds.suspended" />
     </node>
     <node type="tpd4.NonTypesystemRule" typeId="tpd4.1195214364922" id="7048220250906351656">
       <property name="name" nameId="tpck.1169194664001" value="check_DebuggerTestCase" />
