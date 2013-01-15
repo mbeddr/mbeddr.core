@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model modelUID="r:a74300b8-76a8-461e-befa-fc86b0ad5dd9(com.mbeddr.cc.var.fm.structure)" version="3">
+<model modelUID="r:a74300b8-76a8-461e-befa-fc86b0ad5dd9(com.mbeddr.cc.var.fm.structure)" version="4">
   <persistence version="7" />
   <language namespace="c72da2b9-7cce-4447-8389-f407dc1158b7(jetbrains.mps.lang.structure)" />
   <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="17" />
@@ -7,7 +7,7 @@
   <import index="qdv7" modelUID="r:1ff3d952-eae5-4d94-b89e-ea3060b11545(com.mbeddr.cc.var.annotations.structure)" version="5" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="tpce" modelUID="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" version="0" implicit="yes" />
-  <import index="qqyh" modelUID="r:a74300b8-76a8-461e-befa-fc86b0ad5dd9(com.mbeddr.cc.var.fm.structure)" version="3" implicit="yes" />
+  <import index="qqyh" modelUID="r:a74300b8-76a8-461e-befa-fc86b0ad5dd9(com.mbeddr.cc.var.fm.structure)" version="4" implicit="yes" />
   <roots>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="6825476687691297413">
       <property name="name" nameId="tpck.1169194664001" value="AttributeValue" />
@@ -138,6 +138,11 @@
       <property name="virtualPackage" nameId="tpck.1193676396447" value="fm" />
       <property name="name" nameId="tpck.1169194664001" value="NoValueExpression" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="mj1l.8860443239512128050" resolveInfo="Expression" />
+    </node>
+    <node type="tpce.EnumerationDataTypeDeclaration" typeId="tpce.1082978164219" id="4375745351933311823">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="fm" />
+      <property name="name" nameId="tpck.1169194664001" value="ExtraConstraintType" />
+      <link role="memberDataType" roleId="tpce.1083171729157" targetNodeId="tpck.1082983657062" resolveInfo="integer" />
     </node>
   </roots>
   <root id="6825476687691297413">
@@ -365,6 +370,10 @@
       <property name="name" nameId="tpck.1169194664001" value="message" />
       <link role="dataType" roleId="tpce.1082985295845" targetNodeId="tpck.1082983041843" resolveInfo="string" />
     </node>
+    <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="7643633527369755564">
+      <property name="name" nameId="tpck.1169194664001" value="type" />
+      <link role="dataType" roleId="tpce.1082985295845" targetNodeId="4375745351933311823" resolveInfo="ExtraConstraintType" />
+    </node>
   </root>
   <root id="2203816361987295385">
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="2203816361987295386">
@@ -415,5 +424,15 @@
     </node>
   </root>
   <root id="6840952553350507413" />
+  <root id="4375745351933311823">
+    <node role="member" roleId="tpce.1083172003582" type="tpce.EnumerationMemberDeclaration" typeId="tpce.1083171877298" id="4375745351933311824">
+      <property name="externalValue" nameId="tpce.1083923523172" value="error" />
+      <property name="internalValue" nameId="tpce.1083923523171" value="0" />
+    </node>
+    <node role="member" roleId="tpce.1083172003582" type="tpce.EnumerationMemberDeclaration" typeId="tpce.1083171877298" id="4375745351933311825">
+      <property name="externalValue" nameId="tpce.1083923523172" value="warning" />
+      <property name="internalValue" nameId="tpce.1083923523171" value="1" />
+    </node>
+  </root>
 </model>
 

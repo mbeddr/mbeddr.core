@@ -24,5 +24,11 @@
     </dependencies>
     <rename id="qqyh.2203816361987306078" type="REFERENCE" from="attribute" to="feature" />
   </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="qqyh" modelUID="r:a74300b8-76a8-461e-befa-fc86b0ad5dd9(com.mbeddr.cc.var.fm.structure)" version="3" />
+    </dependencies>
+    <rename id="qqyh.7643633527369755564" type="PROPERTY" from="boolean" to="isError" />
+  </StructureModification>
 </history>
 
