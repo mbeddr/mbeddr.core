@@ -144,12 +144,6 @@
           <node role="watchables" roleId="rpmx.4550138447367880227" type="rpmx.WatchableDeclaration" typeId="rpmx.4550138447367880222" id="8165847842702599891">
             <property name="name" nameId="rpmx.4550138447367880223" value="a" />
           </node>
-          <node role="watchables" roleId="rpmx.4550138447367880227" type="rpmx.WatchableDeclaration" typeId="rpmx.4550138447367880222" id="8165847842702599892">
-            <property name="name" nameId="rpmx.4550138447367880223" value="argc" />
-          </node>
-          <node role="watchables" roleId="rpmx.4550138447367880227" type="rpmx.WatchableDeclaration" typeId="rpmx.4550138447367880222" id="8165847842702599893">
-            <property name="name" nameId="rpmx.4550138447367880223" value="argv" />
-          </node>
         </node>
         <node role="validations" roleId="rpmx.7048220250906209719" type="rpmx.StackFramesValidationList" typeId="rpmx.4550138447368300128" id="8165847842702599894">
           <node role="stackFrames" roleId="rpmx.4550138447368300129" type="rpmx.StackFrameDeclaration" typeId="rpmx.4550138447368290426" id="8165847842702599895">
@@ -183,7 +177,7 @@
             <property name="name" nameId="rpmx.4550138447367880223" value="a" />
           </node>
         </node>
-        <node role="validations" roleId="rpmx.7048220250906209719" type="rpmx.StackFramesValidationList" typeId="rpmx.4550138447368300128" id="8165847842702599910">
+        <node role="validations" roleId="rpmx.7048220250906209719" type="rpmx.StackFramesValidationList" typeId="rpmx.4550138447368300128" id="2812390151933047066">
           <node role="stackFrames" roleId="rpmx.4550138447368300129" type="rpmx.StackFrameDeclaration" typeId="rpmx.4550138447368290426" id="8165847842702599911">
             <property name="name" nameId="rpmx.4550138447368290430" value="helperFunction" />
           </node>
