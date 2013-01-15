@@ -621,6 +621,10 @@
       <property name="name" nameId="tpck.1169194664001" value="IDataflowVariable" />
       <property name="virtualPackage" nameId="tpck.1193676396447" value="dataflow" />
     </node>
+    <node type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="4087861105422588581">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="dataflow" />
+      <property name="name" nameId="tpck.1169194664001" value="IDataflowComplexValue" />
+    </node>
   </roots>
   <root id="8860443239512128050">
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="356284525549555981">
@@ -2185,6 +2189,11 @@
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="704069370490430471" resolveInfo="IDataflowTyped" />
     </node>
     <node role="extends" roleId="tpce.1169127546356" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7349952699791418325">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="7274201720600672742" resolveInfo="IDataflowValue" />
+    </node>
+  </root>
+  <root id="4087861105422588581">
+    <node role="extends" roleId="tpce.1169127546356" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="4087861105422588582">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="7274201720600672742" resolveInfo="IDataflowValue" />
     </node>
   </root>
