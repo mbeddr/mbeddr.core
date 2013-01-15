@@ -351,12 +351,9 @@
             <link role="marker" roleId="rpmx.4193597469137492645" targetNodeId="2812390151932546601" resolveInfo="logging2ndExpression" />
           </node>
         </node>
-        <node role="validations" roleId="rpmx.7048220250906209719" type="rpmx.StackFramesValidationList" typeId="rpmx.4550138447368300128" id="2812390151932546629">
-          <node role="stackFrames" roleId="rpmx.4550138447368300129" type="rpmx.StackFrameDeclaration" typeId="rpmx.4550138447368290426" id="2812390151932546630">
-            <property name="name" nameId="rpmx.4550138447368290430" value="testLogExpressions" />
-          </node>
-          <node role="stackFrames" roleId="rpmx.4550138447368300129" type="rpmx.StackFrameDeclaration" typeId="rpmx.4550138447368290426" id="2812390151932546631">
-            <property name="name" nameId="rpmx.4550138447368290430" value="main" />
+        <node role="validations" roleId="rpmx.7048220250906209719" type="rpmx.ValidateCallStack" typeId="rpmx.7048220250906041081" id="2812390151932571151">
+          <node role="depth" roleId="rpmx.7048220250906041083" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="2812390151932571152">
+            <property name="value" nameId="tpee.1068580320021" value="2" />
           </node>
         </node>
       </node>
@@ -364,7 +361,7 @@
       <node role="suspensionPoint" roleId="rpmx.5100083648679219652" type="rpmx.MarkerRef" typeId="rpmx.4193597469137492644" id="2812390151932546621">
         <link role="marker" roleId="rpmx.4193597469137492645" targetNodeId="2812390151932546600" resolveInfo="logging1stExpression" />
       </node>
-      <node role="steppingCommands" roleId="rpmx.5100083648679219673" type="rpmx.StepOverCommand" typeId="rpmx.4231345613098876381" id="2812390151932546622" />
+      <node role="steppingCommands" roleId="rpmx.5100083648679219673" type="rpmx.StepOverCommand" typeId="rpmx.4231345613098876381" id="2812390151932571149" />
     </node>
   </root>
 </model>
