@@ -704,8 +704,8 @@
         <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Property" typeId="tpc2.1073389658414" id="4375745351933311826">
           <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="qqyh.7643633527369755564" resolveInfo="type" />
         </node>
-        <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Property" typeId="tpc2.1073389658414" id="2203816361987385492">
-          <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="qqyh.2203816361987287677" resolveInfo="message" />
+        <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_RefNode" typeId="tpc2.1073389882823" id="4375745351933774080">
+          <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="qqyh.2203816361987287678" />
         </node>
         <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="2203816361987385494">
           <property name="text" nameId="tpc2.1073389577007" value=":" />
@@ -717,8 +717,11 @@
         </node>
         <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Indent" typeId="tpc2.1198256887712" id="2203816361987385074" />
         <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Horizontal" typeId="tpc2.1106270549637" id="2203816361987385073" />
-        <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_RefNode" typeId="tpc2.1073389882823" id="2203816361987385076">
-          <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="qqyh.2203816361987287678" />
+        <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Property" typeId="tpc2.1073389658414" id="4375745351933774084">
+          <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="qqyh.2203816361987287677" resolveInfo="message" />
+          <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.FontStyleStyleClassItem" typeId="tpc2.1186403751766" id="4375745351933774085">
+            <property name="style" nameId="tpc2.1186403771423" value="ITALIC" />
+          </node>
         </node>
       </node>
     </node>
