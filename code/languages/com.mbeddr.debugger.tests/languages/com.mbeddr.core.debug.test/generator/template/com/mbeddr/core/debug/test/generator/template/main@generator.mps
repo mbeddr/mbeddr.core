@@ -40,7 +40,6 @@
     <node type="tpf8.MappingConfiguration" typeId="tpf8.1095416546421" id="4193597469137492904">
       <property name="name" nameId="tpck.1169194664001" value="main" />
       <property name="topPriorityGroup" nameId="tpf8.1184950341882" value="true" />
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="validation.kinds.callstack-depth" />
     </node>
     <node type="hbzk.MbeddrClassConcept" typeId="hbzk.9152682018127982951" id="4231345613098794282">
       <property name="name" nameId="tpck.1169194664001" value="testClass" />
@@ -1024,12 +1023,12 @@
                 <node role="statement" roleId="tpee.1068581517665" type="tpee.LocalVariableDeclarationStatement" typeId="tpee.1068581242864" id="4550138447367922026">
                   <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="4550138447367922027">
                     <property name="name" nameId="tpck.1169194664001" value="specifiedWatches" />
-                    <node role="type" roleId="tpee.5680397130376446158" type="tp2q.SetType" typeId="tp2q.1226511727824" id="4550138447368140753">
-                      <node role="elementType" roleId="tp2q.1226511765987" type="tpee.StringType" typeId="tpee.1225271177708" id="4550138447368140754" />
+                    <node role="type" roleId="tpee.5680397130376446158" type="tp2q.ListType" typeId="tp2q.1151688443754" id="5580547245468991608">
+                      <node role="elementType" roleId="tp2q.1151688676805" type="tpee.StringType" typeId="tpee.1225271177708" id="5580547245468991609" />
                     </node>
                     <node role="initializer" roleId="tpee.1068431790190" type="tpee.GenericNewExpression" typeId="tpee.1145552977093" id="4550138447367922032">
-                      <node role="creator" roleId="tpee.1145553007750" type="tp2q.HashSetCreator" typeId="tp2q.1226516258405" id="4550138447368140760">
-                        <node role="elementType" roleId="tp2q.1237721435807" type="tpee.StringType" typeId="tpee.1225271177708" id="4550138447368140761" />
+                      <node role="creator" roleId="tpee.1145553007750" type="tp2q.ListCreatorWithInit" typeId="tp2q.1160600644654" id="5580547245468991611">
+                        <node role="elementType" roleId="tp2q.1237721435807" type="tpee.StringType" typeId="tpee.1225271177708" id="5580547245468991612" />
                       </node>
                     </node>
                   </node>
