@@ -540,6 +540,129 @@ exported test case testInterpolatorWithMock {
 \end{lstlisting}
 
 
+\subsection{Sender/Receiver Interfaces}
+
+So far we have always used client/server interfaces to communicate between
+components. These essentially define a set of operations, plus contracts, that
+can be invoked in a client/server style. However, mbeddr comes with a second
+kind of interface, the sender/receiver interface. In this case, the providing
+and requiring components exchange data items.
+
+To demonstrate how they work, let us explore another aspect of the application
+around \ic{Trackpoint}s (the example is in the \ic{ComponentsSRI}
+implementation module). The data has to be collected in the airplane.
+Let us assume we have the following components: a GPS to provide the position, a speed
+indicator for the speed, and a flight recorder, whose job it is to create lists
+of \ic{Trackpoint}s that capture the progress of the flight. All these
+components are time-triggered, i.e. it is assumed that they execute in regular
+intervals, by some kind of scheduler. They all provide an interface \ic{Timed}
+that provides an operation \ic{tick} that is called by the scheduler. 
+So far, these components don't exchange any data yet: sender/receiver interfaces
+will be used for that later\footnote{Note that this time-triggered
+architecture is very widespread in embedded software. In future releases of
+mbeddr we will provide direct support for time-triggered runnables, so you
+don't have to use an explicit interface such as \ic{Timed}}. Here is
+the code so far:
+
+\begin{lstlisting}[language=mbeddr]
+module ComponentsSRI imports DataStructures { 
+   
+  exported cs interface Timed { 
+    void tick() 
+  }    
+   
+  exported component GPS extends nothing { 
+    provides Timed timed 
+    void update() <- op timed.tick {}
+  } 
+   
+  exported component SpeedIndicator extends nothing { 
+    provides Timed timed 
+    void update() <- op timed.tick {}
+  } 
+   
+  exported component FlightRecorder extends nothing { 
+    provides Timed timed 
+    void timed_tick() <- op timed.tick {}
+  } 
+     
+}
+\end{lstlisting}
+
+Let's now look at the data exchange, focussing on the position first. Here is a
+sender/receiver interface position provider. The interface declares a set of
+data elements, in this case with physical units:
+
+\begin{lstlisting}[language=mbeddr]
+exported sr interface PositionProvider { 
+  int8/m/ x; 
+  int8/m/ y; 
+  uint16/m/ alt; 
+}
+\end{lstlisting}
+
+The GPS is supposed to provide this data, so we give it a provided port with
+this interface:
+
+\begin{lstlisting}[language=mbeddr]
+exported component GPS extends nothing { 
+  provides PositionProvider pos 
+  provides Timed timed 
+  void init() <- on init { 
+    pos.x = 0 m; 
+    pos.y = 0 m; 
+    pos.alt = 0 m; 
+  }  
+  void update() <- op timed.tick { 
+    pos.x++; 
+    pos.y++; 
+  }  
+}
+\end{lstlisting}
+
+Note how from within component runnables we can use expressions to assign to
+the data values defined in the interface as if they were normal fields. Let us
+now look at the flight recorder. It is supposed to read the data written by the
+GPS (and the same with the speed indicator):
+
+\begin{lstlisting}[language=mbeddr]
+exported component FlightRecorder extends nothing { 
+  provides Timed timed 
+  requires PositionProvider pp 
+  requires SpeedProvider sp 
+  Trackpoint[1000] recordedFlight; 
+  uint16 count = 0; 
+  void timed_tick() <- op timed.tick { 
+    with (recordedFlight[count]) { 
+      id = ((int8) count) 
+      x = pp.x 
+      y = pp.y 
+      alt = pp.alt 
+      speed = sp.speed 
+    }; 
+    count++; 
+  }  
+}
+\end{lstlisting}
+
+Inside the \ic{with}-statement, we can access the data acquired via the 
+\ic{pp} and \ic{sp} required ports.
+
+What distinguishes this from global variables, of course, is that the component
+instances still have to be wired: required ports have to be connected to
+provided ports, in this case, defining access to the data items:
+
+\begin{lstlisting}[language=mbeddr]
+instances instances { 
+  instance GPS gps 
+  instance SpeedIndicator si 
+  instance FlightRecorder recorder 
+  connect recorder.sp to si.speed 
+  connect recorder.pp to gps.pos 
+}
+\end{lstlisting}
+
+
 \fordetails{Interfaces and Components}{\sect{details_components}}
 
 
