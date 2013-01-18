@@ -16,9 +16,32 @@
  <taskdef resource="jetbrains/mps/build/ant/antlib.xml"
           classpathref="mps.ant.path"/>
 
-  <property name="mbeddr.debugger.project.dir" value="code/languages/com.mbeddr.debugger.tests"/>
-  <property name="mbeddr.debugger.project.mpr" value="code/languages/com.mbeddr.debugger.tests/debugger-tests.mpr"/>  
+  <property name="mbeddr.debugger-test.project.dir" value="code/languages/com.mbeddr.debugger.tests"/>
+  <property name="mbeddr.debugger-test.project.mpr" value="code/languages/com.mbeddr.debugger.tests/debugger-tests.mpr"/>  
 
+  <property name="mbeddr.core.project.dir" value="code/languages/com.mbeddr.core"/>
+  <property name="mbeddr.core.project.mpr" value="code/languages/com.mbeddr.core/core.dev.mpr"/>
+  
+  <property name="mbeddr.ext.project.dir" value="code/languages/com.mbeddr.ext"/>
+  <property name="mbeddr.ext.project.mpr" value="code/languages/com.mbeddr.ext/ext.dev.mpr"/> <!-- for the time being in core project... -->
+
+  <property name="mbeddr.util.project.dir" value="code/languages/com.mbeddr.mpsutil"/>
+  <property name="mbeddr.util.project.mpr" value="code/languages/com.mbeddr.mpsutil/mpsutil.dev.mpr"/>
+
+  <property name="mbeddr.analyses.project.dir" value="code/languages/com.mbeddr.analyses"/>
+  <property name="mbeddr.analyses.project.mpr" value="code/languages/com.mbeddr.analyses/analyses.dev.mpr"/> <!-- for the time being in core project... -->
+  
+  <property name="mbeddr.cc.project.dir" value="code/languages/com.mbeddr.cc"/>
+  <property name="mbeddr.cc.project.mpr" value="code/languages/com.mbeddr.cc/cc.dev.mpr"/> <!-- for the time being in core project... -->
+  
+  <property name="mbeddr.debugger.project.dir" value="code/languages/com.mbeddr.debugger/"/>
+  <property name="mbeddr.debugger.project.mpr" value="code/languages/com.mbeddr.debugger/debugger.dev.mpr"/>
+  
+  <property name="utilLanguageDir" value="${mbeddr.github.core.home}/${mbeddr.util.project.dir}/languages"/>
+  <property name="debuggerLanguageDir" value="${mbeddr.github.core.home}/${mbeddr.debugger.project.dir}/languages"/>
+  <property name="coreLanguageDir" value="${mbeddr.github.core.home}/${mbeddr.core.project.dir}/languages"/>
+  <property name="extLanguageDir" value="${mbeddr.github.core.home}/${mbeddr.ext.project.dir}/languages"/>
+  <property name="ccLanguageDir" value="${mbeddr.github.core.home}/${mbeddr.cc.project.dir}/languages"/>
  
   <jvmargs id="myargs">
       <arg value="-ea"/>
@@ -45,8 +68,13 @@
   <target name="build-languages" depends="init">
     <mps.generate parallelMode="true" fork="true" >
       <jvmargs refid="myargs"/>
+      <library name="util.project" dir="${utilLanguageDir}"/>                                                                                                
+      <library name="core.project" dir="${coreLanguageDir}"/>                                                                                                
+      <library name="debugger.project" dir="${debuggerLanguageDir}"/>                                                                                        
+      <library name="ext.project" dir="${extLanguageDir}"/> 
+      <library name="cc.project" dir="${ccLanguageDir}"/>
       <macro name="mbeddr.github.core.home" path="${mbeddr.github.core.home}"/>
-      <modules dir="${mbeddr.github.core.home}/${mbeddr.debugger.project.dir}/languages"/>
+      <modules dir="${mbeddr.github.core.home}/${mbeddr.debugger-test.project.dir}/languages"/>
     </mps.generate>
   </target>
 
@@ -54,14 +82,20 @@
   <target name="build-tests" depends="init">
     <mps.generate parallelMode="false" fork="true">
       <jvmargs refid="myargs"/>   
-      <library name="mbeddr.project" dir="${mbeddr.github.core.home}/${mbeddr.debugger.project.dir}"/>
-      <modules dir="${mbeddr.github.core.home}/${mbeddr.debugger.project.dir}/tests"/>
+	  <macro name="mbeddr.github.core.home" path="${mbeddr.github.core.home}"/>
+      <library name="util.project" dir="${utilLanguageDir}"/>                                                                                                
+      <library name="core.project" dir="${coreLanguageDir}"/>                                                                                                
+      <library name="debugger.project" dir="${debuggerLanguageDir}"/>                                                                                        
+      <library name="ext.project" dir="${extLanguageDir}"/> 
+      <library name="cc.project" dir="${ccLanguageDir}"/>
+      <library name="mbeddr.project" dir="${mbeddr.github.core.home}/${mbeddr.debugger-test.project.dir}"/>
+      <modules dir="${mbeddr.github.core.home}/${mbeddr.debugger-test.project.dir}/tests"/>
     </mps.generate>
   </target>
 
   <target name="delete-mps-generated-code" >
       <delete includeemptydirs="true">
-      <fileset dir="${mbeddr.github.core.home}/${mbeddr.debugger.project.dir}" defaultexcludes="false">
+      <fileset dir="${mbeddr.github.core.home}/${mbeddr.debugger-test.project.dir}" defaultexcludes="false">
          <include name="**/source_gen/**" />
          <include name="**/source_gen.caches/**" />
          <include name="**/classes_gen/**" />
@@ -92,7 +126,7 @@
       
       <sysproperty key="mps.junit.pathmacro.mps.home" value="${mps.home}"/>      
       <sysproperty key="mps.junit.pathmacro.mbeddr.github.core.home" value="${mbeddr.github.core.home}"/>
-      <sysproperty key="mps.junit.project" value="${mbeddr.github.core.home}/${mbeddr.debugger.project.mpr}"/>
+      <sysproperty key="mps.junit.project" value="${mbeddr.github.core.home}/${mbeddr.debugger-test.project.mpr}"/>
 
       <classpath>
         <fileset dir="${mps.home}/lib">
