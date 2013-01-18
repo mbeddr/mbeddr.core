@@ -56,6 +56,12 @@
           </node>
         </node>
       </node>
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="8834022522773306532">
+        <property name="text" nameId="tpc2.1073389577007" value="filtered?" />
+      </node>
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Property" typeId="tpc2.1073389658414" id="8834022522773306534">
+        <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="y5m3.8834022522773306528" resolveInfo="applyFilters" />
+      </node>
     </node>
   </root>
 </model>
