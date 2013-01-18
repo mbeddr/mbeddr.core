@@ -296,7 +296,9 @@
       <node role="suspensionPoint" roleId="rpmx.5100083648679219652" type="rpmx.MarkerRef" typeId="rpmx.4193597469137492644" id="9152682018125644480">
         <link role="marker" roleId="rpmx.4193597469137492645" targetNodeId="9152682018125644272" resolveInfo="m3" />
       </node>
-      <node role="steppingCommands" roleId="rpmx.5100083648679219673" type="rpmx.StepOutCommand" typeId="rpmx.4231345613098876391" id="9152682018125644481" />
+      <node role="steppingCommands" roleId="rpmx.5100083648679219673" type="rpmx.StepOutCommand" typeId="rpmx.4231345613098876391" id="9152682018125644481">
+        <property name="times" nameId="rpmx.610689949604310287" value="1" />
+      </node>
     </node>
     <node role="testMethods" roleId="rpmx.1217501895093" type="rpmx.DebuggerTestMethod" typeId="rpmx.4193597469137492636" id="9152682018127720825">
       <property name="name" nameId="tpck.1169194664001" value="missingBreakpoint" />

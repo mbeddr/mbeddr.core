@@ -75,6 +75,11 @@
       <property name="virtualPackage" nameId="tpck.1193676396447" value="validation.kinds.stack-frames" />
       <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="rpmx.4550138447368300128" resolveInfo="StackFramesValidationList" />
     </node>
+    <node type="tpc2.EditorComponentDeclaration" typeId="tpc2.1078938745671" id="610689949604317972">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="stepping" />
+      <property name="name" nameId="tpck.1169194664001" value="TimesPostfix" />
+      <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="rpmx.5100083648679219672" resolveInfo="ISteppingCommand" />
+    </node>
   </roots>
   <root id="4193597469137492659">
     <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="4193597469137492660">
@@ -400,18 +405,36 @@
     </node>
   </root>
   <root id="4231345613098876383">
-    <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="4231345613098876385">
-      <property name="text" nameId="tpc2.1073389577007" value="step over" />
+    <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="610689949604328949">
+      <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Indent" typeId="tpc2.1237303669825" id="610689949604328950" />
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="610689949604328951">
+        <property name="text" nameId="tpc2.1073389577007" value="step over" />
+      </node>
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Component" typeId="tpc2.1078939183254" id="610689949604328952">
+        <link role="editorComponent" roleId="tpc2.1078939183255" targetNodeId="610689949604317972" resolveInfo="TimesPostfix" />
+      </node>
     </node>
   </root>
   <root id="4231345613098876388">
-    <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="4231345613098876390">
-      <property name="text" nameId="tpc2.1073389577007" value="step into" />
+    <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="610689949604328940">
+      <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Indent" typeId="tpc2.1237303669825" id="610689949604328941" />
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="610689949604328942">
+        <property name="text" nameId="tpc2.1073389577007" value="step into" />
+      </node>
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Component" typeId="tpc2.1078939183254" id="610689949604328944">
+        <link role="editorComponent" roleId="tpc2.1078939183255" targetNodeId="610689949604317972" resolveInfo="TimesPostfix" />
+      </node>
     </node>
   </root>
   <root id="4231345613098876393">
-    <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="4231345613098876395">
-      <property name="text" nameId="tpc2.1073389577007" value="step out" />
+    <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="610689949604328945">
+      <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Indent" typeId="tpc2.1237303669825" id="610689949604328946" />
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="610689949604328947">
+        <property name="text" nameId="tpc2.1073389577007" value="step out" />
+      </node>
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Component" typeId="tpc2.1078939183254" id="610689949604328948">
+        <link role="editorComponent" roleId="tpc2.1078939183255" targetNodeId="610689949604317972" resolveInfo="TimesPostfix" />
+      </node>
     </node>
   </root>
   <root id="4550138447367880219">
@@ -603,6 +626,17 @@
         <property name="text" nameId="tpc2.1073389577007" value="}" />
       </node>
       <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Vertical" typeId="tpc2.1106270571710" id="4550138447368300150" />
+    </node>
+  </root>
+  <root id="610689949604317972">
+    <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="610689949604328938">
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Property" typeId="tpc2.1073389658414" id="610689949604317976">
+        <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="rpmx.610689949604310287" resolveInfo="times" />
+      </node>
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="610689949604317977">
+        <property name="text" nameId="tpc2.1073389577007" value="times" />
+      </node>
+      <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Indent" typeId="tpc2.1237303669825" id="610689949604328939" />
     </node>
   </root>
 </model>

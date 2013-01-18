@@ -361,7 +361,9 @@
       <node role="suspensionPoint" roleId="rpmx.5100083648679219652" type="rpmx.MarkerRef" typeId="rpmx.4193597469137492644" id="2812390151932546621">
         <link role="marker" roleId="rpmx.4193597469137492645" targetNodeId="2812390151932546600" resolveInfo="logging1stExpression" />
       </node>
-      <node role="steppingCommands" roleId="rpmx.5100083648679219673" type="rpmx.StepOverCommand" typeId="rpmx.4231345613098876381" id="2812390151932571149" />
+      <node role="steppingCommands" roleId="rpmx.5100083648679219673" type="rpmx.StepOverCommand" typeId="rpmx.4231345613098876381" id="2812390151932571149">
+        <property name="times" nameId="rpmx.610689949604310287" value="1" />
+      </node>
     </node>
   </root>
 </model>

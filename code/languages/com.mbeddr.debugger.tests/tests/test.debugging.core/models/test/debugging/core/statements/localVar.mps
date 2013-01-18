@@ -371,7 +371,9 @@
       <node role="suspensionPoint" roleId="rpmx.5100083648679219652" type="rpmx.MarkerRef" typeId="rpmx.4193597469137492644" id="5580547245468966515">
         <link role="marker" roleId="rpmx.4193597469137492645" targetNodeId="5580547245468965979" resolveInfo="firstVarDeclarationWithInit" />
       </node>
-      <node role="steppingCommands" roleId="rpmx.5100083648679219673" type="rpmx.StepOverCommand" typeId="rpmx.4231345613098876381" id="5580547245468966516" />
+      <node role="steppingCommands" roleId="rpmx.5100083648679219673" type="rpmx.StepOverCommand" typeId="rpmx.4231345613098876381" id="5580547245468966516">
+        <property name="times" nameId="rpmx.610689949604310287" value="1" />
+      </node>
     </node>
     <node role="testMethods" roleId="rpmx.1217501895093" type="rpmx.DebuggerTestMethod" typeId="rpmx.4193597469137492636" id="5580547245468966519">
       <property name="name" nameId="tpck.1169194664001" value="stepIntoLocalVarDeclaration" />
@@ -387,7 +389,9 @@
       <node role="suspensionPoint" roleId="rpmx.5100083648679219652" type="rpmx.MarkerRef" typeId="rpmx.4193597469137492644" id="5580547245468966525">
         <link role="marker" roleId="rpmx.4193597469137492645" targetNodeId="5580547245468965979" resolveInfo="firstVarDeclarationWithInit" />
       </node>
-      <node role="steppingCommands" roleId="rpmx.5100083648679219673" type="rpmx.StepIntoCommand" typeId="rpmx.4231345613098876386" id="5580547245468966528" />
+      <node role="steppingCommands" roleId="rpmx.5100083648679219673" type="rpmx.StepIntoCommand" typeId="rpmx.4231345613098876386" id="5580547245468966528">
+        <property name="times" nameId="rpmx.610689949604310287" value="1" />
+      </node>
     </node>
     <node role="testMethods" roleId="rpmx.1217501895093" type="rpmx.DebuggerTestMethod" typeId="rpmx.4193597469137492636" id="5580547245468966529">
       <property name="name" nameId="tpck.1169194664001" value="stepIntoStatementListFromLocalVarDeclaration" />
@@ -403,7 +407,9 @@
       <node role="suspensionPoint" roleId="rpmx.5100083648679219652" type="rpmx.MarkerRef" typeId="rpmx.4193597469137492644" id="5580547245468966533">
         <link role="marker" roleId="rpmx.4193597469137492645" targetNodeId="5580547245468966500" resolveInfo="secondVariableDeclarationWithInit" />
       </node>
-      <node role="steppingCommands" roleId="rpmx.5100083648679219673" type="rpmx.StepIntoCommand" typeId="rpmx.4231345613098876386" id="5580547245468966546" />
+      <node role="steppingCommands" roleId="rpmx.5100083648679219673" type="rpmx.StepIntoCommand" typeId="rpmx.4231345613098876386" id="5580547245468966546">
+        <property name="times" nameId="rpmx.610689949604310287" value="1" />
+      </node>
     </node>
     <node role="testMethods" roleId="rpmx.1217501895093" type="rpmx.DebuggerTestMethod" typeId="rpmx.4193597469137492636" id="5580547245468966538">
       <property name="name" nameId="tpck.1169194664001" value="stepOverLocalVarDeclarationToStatementList" />
@@ -439,7 +445,9 @@
       <node role="suspensionPoint" roleId="rpmx.5100083648679219652" type="rpmx.MarkerRef" typeId="rpmx.4193597469137492644" id="5580547245468966544">
         <link role="marker" roleId="rpmx.4193597469137492645" targetNodeId="5580547245468966500" resolveInfo="secondVariableDeclarationWithInit" />
       </node>
-      <node role="steppingCommands" roleId="rpmx.5100083648679219673" type="rpmx.StepOverCommand" typeId="rpmx.4231345613098876381" id="5580547245468966545" />
+      <node role="steppingCommands" roleId="rpmx.5100083648679219673" type="rpmx.StepOverCommand" typeId="rpmx.4231345613098876381" id="5580547245468966545">
+        <property name="times" nameId="rpmx.610689949604310287" value="1" />
+      </node>
     </node>
   </root>
 </model>

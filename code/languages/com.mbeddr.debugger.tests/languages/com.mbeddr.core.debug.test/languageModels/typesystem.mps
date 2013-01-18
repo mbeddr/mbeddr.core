@@ -41,6 +41,10 @@
       <property name="name" nameId="tpck.1169194664001" value="check_MarkerAnnotation" />
       <property name="virtualPackage" nameId="tpck.1193676396447" value="marker" />
     </node>
+    <node type="tpd4.NonTypesystemRule" typeId="tpd4.1195214364922" id="211881811396781616">
+      <property name="name" nameId="tpck.1169194664001" value="check_ISteppingCommand" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="stepping" />
+    </node>
   </roots>
   <root id="7048220250905989300">
     <node role="body" roleId="tpd4.1195213635060" type="tpee.StatementList" typeId="tpee.1068580123136" id="7048220250905989301">
@@ -667,6 +671,39 @@
     <node role="applicableNode" roleId="tpd4.1174648101952" type="tpd4.ConceptReference" typeId="tpd4.1174642788531" id="977958407435861848">
       <property name="name" nameId="tpck.1169194664001" value="ma" />
       <link role="concept" roleId="tpd4.1174642800329" targetNodeId="rpmx.4193597469137492628" resolveInfo="MarkerAnnotation" />
+    </node>
+  </root>
+  <root id="211881811396781616">
+    <node role="body" roleId="tpd4.1195213635060" type="tpee.StatementList" typeId="tpee.1068580123136" id="211881811396781617">
+      <node role="statement" roleId="tpee.1068581517665" type="tpee.IfStatement" typeId="tpee.1068580123159" id="211881811396781619">
+        <node role="condition" roleId="tpee.1068580123160" type="tpee.LessThanOrEqualsExpression" typeId="tpee.1153422305557" id="211881811396781663">
+          <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="211881811396781666">
+            <property name="value" nameId="tpee.1068580320021" value="0" />
+          </node>
+          <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.DotExpression" typeId="tpee.1197027756228" id="211881811396781640">
+            <node role="operand" roleId="tpee.1197027771414" type="tpd4.ApplicableNodeReference" typeId="tpd4.1174650418652" id="211881811396781623">
+              <link role="applicableNode" roleId="tpd4.1174650432090" targetNodeId="211881811396781618" resolveInfo="sc" />
+            </node>
+            <node role="operation" roleId="tpee.1197027833540" type="tp25.SPropertyAccess" typeId="tp25.1138056022639" id="211881811396781645">
+              <link role="property" roleId="tp25.1138056395725" targetNodeId="rpmx.610689949604310287" resolveInfo="times" />
+            </node>
+          </node>
+        </node>
+        <node role="ifTrue" roleId="tpee.1068580123161" type="tpee.StatementList" typeId="tpee.1068580123136" id="211881811396781621">
+          <node role="statement" roleId="tpee.1068581517665" type="tpd4.ReportErrorStatement" typeId="tpd4.1175517767210" id="211881811396781667">
+            <node role="errorString" roleId="tpd4.1175517851849" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="211881811396781670">
+              <property name="value" nameId="tpee.1070475926801" value="stepping command is never performed" />
+            </node>
+            <node role="nodeToReport" roleId="tpd4.1227096802790" type="tpd4.ApplicableNodeReference" typeId="tpd4.1174650418652" id="211881811396781671">
+              <link role="applicableNode" roleId="tpd4.1174650432090" targetNodeId="211881811396781618" resolveInfo="sc" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node role="applicableNode" roleId="tpd4.1174648101952" type="tpd4.ConceptReference" typeId="tpd4.1174642788531" id="211881811396781618">
+      <property name="name" nameId="tpck.1169194664001" value="sc" />
+      <link role="concept" roleId="tpd4.1174642800329" targetNodeId="rpmx.5100083648679219672" resolveInfo="ISteppingCommand" />
     </node>
   </root>
 </model>

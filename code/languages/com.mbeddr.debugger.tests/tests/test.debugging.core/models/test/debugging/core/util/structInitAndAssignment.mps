@@ -57,7 +57,9 @@
       <node role="suspensionPoint" roleId="rpmx.5100083648679219652" type="rpmx.MarkerRef" typeId="rpmx.4193597469137492644" id="2812390151932499065">
         <link role="marker" roleId="rpmx.4193597469137492645" targetNodeId="2812390151932498598" resolveInfo="stmntBeforeMemberAssignment" />
       </node>
-      <node role="steppingCommands" roleId="rpmx.5100083648679219673" type="rpmx.StepOverCommand" typeId="rpmx.4231345613098876381" id="2812390151932498563" />
+      <node role="steppingCommands" roleId="rpmx.5100083648679219673" type="rpmx.StepOverCommand" typeId="rpmx.4231345613098876381" id="2812390151932498563">
+        <property name="times" nameId="rpmx.610689949604310287" value="1" />
+      </node>
     </node>
     <node role="testMethods" roleId="rpmx.1217501895093" type="rpmx.DebuggerTestMethod" typeId="rpmx.4193597469137492636" id="2812390151932498564">
       <property name="name" nameId="tpck.1169194664001" value="suspendOnMemberAssignment" />
@@ -88,8 +90,12 @@
       <node role="suspensionPoint" roleId="rpmx.5100083648679219652" type="rpmx.MarkerRef" typeId="rpmx.4193597469137492644" id="2812390151932499082">
         <link role="marker" roleId="rpmx.4193597469137492645" targetNodeId="2812390151932498552" resolveInfo="firstMemberAssignment" />
       </node>
-      <node role="steppingCommands" roleId="rpmx.5100083648679219673" type="rpmx.StepOverCommand" typeId="rpmx.4231345613098876381" id="2812390151932499083" />
-      <node role="steppingCommands" roleId="rpmx.5100083648679219673" type="rpmx.StepOverCommand" typeId="rpmx.4231345613098876381" id="2812390151932499085" />
+      <node role="steppingCommands" roleId="rpmx.5100083648679219673" type="rpmx.StepOverCommand" typeId="rpmx.4231345613098876381" id="2812390151932499083">
+        <property name="times" nameId="rpmx.610689949604310287" value="1" />
+      </node>
+      <node role="steppingCommands" roleId="rpmx.5100083648679219673" type="rpmx.StepOverCommand" typeId="rpmx.4231345613098876381" id="2812390151932499085">
+        <property name="times" nameId="rpmx.610689949604310287" value="1" />
+      </node>
     </node>
     <node role="testMethods" roleId="rpmx.1217501895093" type="rpmx.DebuggerTestMethod" typeId="rpmx.4193597469137492636" id="2812390151932502606">
       <property name="name" nameId="tpck.1169194664001" value="stepOverStructDeclaration" />
@@ -110,7 +116,9 @@
       <node role="suspensionPoint" roleId="rpmx.5100083648679219652" type="rpmx.MarkerRef" typeId="rpmx.4193597469137492644" id="2812390151932502610">
         <link role="marker" roleId="rpmx.4193597469137492645" targetNodeId="2812390151932502604" resolveInfo="firstStmntInMain" />
       </node>
-      <node role="steppingCommands" roleId="rpmx.5100083648679219673" type="rpmx.StepOverCommand" typeId="rpmx.4231345613098876381" id="2812390151932502611" />
+      <node role="steppingCommands" roleId="rpmx.5100083648679219673" type="rpmx.StepOverCommand" typeId="rpmx.4231345613098876381" id="2812390151932502611">
+        <property name="times" nameId="rpmx.610689949604310287" value="1" />
+      </node>
     </node>
     <node role="testMethods" roleId="rpmx.1217501895093" type="rpmx.DebuggerTestMethod" typeId="rpmx.4193597469137492636" id="2812390151932502618">
       <property name="name" nameId="tpck.1169194664001" value="stepIntoStructDeclaration" />
@@ -131,7 +139,9 @@
       <node role="suspensionPoint" roleId="rpmx.5100083648679219652" type="rpmx.MarkerRef" typeId="rpmx.4193597469137492644" id="2812390151932502626">
         <link role="marker" roleId="rpmx.4193597469137492645" targetNodeId="2812390151932502604" resolveInfo="firstStmntInMain" />
       </node>
-      <node role="steppingCommands" roleId="rpmx.5100083648679219673" type="rpmx.StepOverCommand" typeId="rpmx.4231345613098876381" id="2812390151932502627" />
+      <node role="steppingCommands" roleId="rpmx.5100083648679219673" type="rpmx.StepOverCommand" typeId="rpmx.4231345613098876381" id="2812390151932502627">
+        <property name="times" nameId="rpmx.610689949604310287" value="1" />
+      </node>
     </node>
     <node role="binaryRef" roleId="rpmx.5100083648679329380" type="rpmx.BinaryRef" typeId="rpmx.5100083648679329379" id="2812390151932498290">
       <link role="binary" roleId="rpmx.7048220250906128789" targetNodeId="2812390151932498282" resolveInfo="WithStatementTest" />

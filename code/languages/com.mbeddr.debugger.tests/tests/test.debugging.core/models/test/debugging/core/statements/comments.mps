@@ -331,7 +331,9 @@
       <node role="suspensionPoint" roleId="rpmx.5100083648679219652" type="rpmx.MarkerRef" typeId="rpmx.4193597469137492644" id="5580547245468826522">
         <link role="marker" roleId="rpmx.4193597469137492645" targetNodeId="5580547245468826502" resolveInfo="statementBeforeFirstComment" />
       </node>
-      <node role="steppingCommands" roleId="rpmx.5100083648679219673" type="rpmx.StepOverCommand" typeId="rpmx.4231345613098876381" id="5580547245468826524" />
+      <node role="steppingCommands" roleId="rpmx.5100083648679219673" type="rpmx.StepOverCommand" typeId="rpmx.4231345613098876381" id="5580547245468826524">
+        <property name="times" nameId="rpmx.610689949604310287" value="1" />
+      </node>
     </node>
     <node role="testMethods" roleId="rpmx.1217501895093" type="rpmx.DebuggerTestMethod" typeId="rpmx.4193597469137492636" id="5580547245468832420">
       <property name="name" nameId="tpck.1169194664001" value="stepOverStatementBeforeMultiLineComment" />
@@ -355,7 +357,9 @@
       <node role="suspensionPoint" roleId="rpmx.5100083648679219652" type="rpmx.MarkerRef" typeId="rpmx.4193597469137492644" id="5580547245468832431">
         <link role="marker" roleId="rpmx.4193597469137492645" targetNodeId="5580547245468832390" resolveInfo="statementBeforeThirdComment" />
       </node>
-      <node role="steppingCommands" roleId="rpmx.5100083648679219673" type="rpmx.StepOverCommand" typeId="rpmx.4231345613098876381" id="5580547245468832430" />
+      <node role="steppingCommands" roleId="rpmx.5100083648679219673" type="rpmx.StepOverCommand" typeId="rpmx.4231345613098876381" id="5580547245468832430">
+        <property name="times" nameId="rpmx.610689949604310287" value="1" />
+      </node>
     </node>
     <node role="testMethods" roleId="rpmx.1217501895093" type="rpmx.DebuggerTestMethod" typeId="rpmx.4193597469137492636" id="5580547245468826533">
       <property name="name" nameId="tpck.1169194664001" value="suspendInTestCaseWithSingleComment" />

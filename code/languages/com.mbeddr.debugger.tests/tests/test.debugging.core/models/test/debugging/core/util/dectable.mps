@@ -496,7 +496,9 @@
       <node role="suspensionPoint" roleId="rpmx.5100083648679219652" type="rpmx.MarkerRef" typeId="rpmx.4193597469137492644" id="2812390151932593427">
         <link role="marker" roleId="rpmx.4193597469137492645" targetNodeId="2812390151932593426" resolveInfo="firstFunctionCallToDecTab" />
       </node>
-      <node role="steppingCommands" roleId="rpmx.5100083648679219673" type="rpmx.StepIntoCommand" typeId="rpmx.4231345613098876386" id="2812390151932593428" />
+      <node role="steppingCommands" roleId="rpmx.5100083648679219673" type="rpmx.StepIntoCommand" typeId="rpmx.4231345613098876386" id="2812390151932593428">
+        <property name="times" nameId="rpmx.610689949604310287" value="1" />
+      </node>
     </node>
     <node role="testMethods" roleId="rpmx.1217501895093" type="rpmx.DebuggerTestMethod" typeId="rpmx.4193597469137492636" id="2812390151932616744">
       <property name="name" nameId="tpck.1169194664001" value="stepToDecTab" />
@@ -520,7 +522,9 @@
       <node role="suspensionPoint" roleId="rpmx.5100083648679219652" type="rpmx.MarkerRef" typeId="rpmx.4193597469137492644" id="2812390151932616748">
         <link role="marker" roleId="rpmx.4193597469137492645" targetNodeId="2812390151932616743" resolveInfo="stmntBeforeDecTabExpressionStmnt" />
       </node>
-      <node role="steppingCommands" roleId="rpmx.5100083648679219673" type="rpmx.StepOverCommand" typeId="rpmx.4231345613098876381" id="2812390151932616749" />
+      <node role="steppingCommands" roleId="rpmx.5100083648679219673" type="rpmx.StepOverCommand" typeId="rpmx.4231345613098876381" id="2812390151932616749">
+        <property name="times" nameId="rpmx.610689949604310287" value="1" />
+      </node>
     </node>
   </root>
   <root id="1423209693057696534" />
