@@ -34,7 +34,7 @@
         </node>
         <node role="statement" roleId="tpee.1068581517665" type="2omo.AppendOperation" typeId="2omo.1237306079178" id="4887422885165646961">
           <node role="part" roleId="2omo.1237306115446" type="2omo.ConstantStringAppendPart" typeId="2omo.1237305557638" id="4887422885165646962">
-            <property name="value" nameId="2omo.1237305576108" value=")" />
+            <property name="value" nameId="2omo.1237305576108" value=");" />
           </node>
         </node>
         <node role="statement" roleId="tpee.1068581517665" type="tpee.Statement" typeId="tpee.1068580123157" id="4887422885165646960" />
