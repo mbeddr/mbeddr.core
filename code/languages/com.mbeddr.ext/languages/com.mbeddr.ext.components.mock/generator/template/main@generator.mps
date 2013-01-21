@@ -56,6 +56,7 @@
     <node type="tpf8.MappingConfiguration" typeId="tpf8.1095416546421" id="6307143892175910527">
       <property name="name" nameId="tpck.1169194664001" value="stubStuff" />
       <property name="virtualPackage" nameId="tpck.1193676396447" value="stub" />
+      <property name="topPriorityGroup" nameId="tpf8.1184950341882" value="true" />
     </node>
     <node type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="5178825530493239413">
       <property name="virtualPackage" nameId="tpck.1193676396447" value="mock" />
