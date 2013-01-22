@@ -46,6 +46,9 @@
       <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Indent" typeId="tpc2.1237303669825" id="8200057468984903164" />
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="8200057468984903162">
         <property name="text" nameId="tpc2.1073389577007" value="generate XHTML report for" />
+        <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.EditableStyleClassItem" typeId="tpc2.1186414860679" id="7784032510525664259">
+          <property name="flag" nameId="tpc2.1186414551515" value="false" />
+        </node>
       </node>
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_RefCell" typeId="tpc2.1088013125922" id="8200057468984903166">
         <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="y5m3.8200057468984903159" />
@@ -58,9 +61,21 @@
       </node>
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="8834022522773306532">
         <property name="text" nameId="tpc2.1073389577007" value="filtered?" />
+        <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.EditableStyleClassItem" typeId="tpc2.1186414860679" id="7784032510525664260">
+          <property name="flag" nameId="tpc2.1186414551515" value="false" />
+        </node>
       </node>
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Property" typeId="tpc2.1073389658414" id="8834022522773306534">
         <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="y5m3.8834022522773306528" resolveInfo="applyFilters" />
+      </node>
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="7784032510525662163">
+        <property name="text" nameId="tpc2.1073389577007" value="collapsed if depth &gt;" />
+        <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.EditableStyleClassItem" typeId="tpc2.1186414860679" id="7784032510525664258">
+          <property name="flag" nameId="tpc2.1186414551515" value="false" />
+        </node>
+      </node>
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Property" typeId="tpc2.1073389658414" id="7784032510525662165">
+        <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="y5m3.7784032510525662161" resolveInfo="collapsedStartingFromLevel" />
       </node>
     </node>
   </root>
