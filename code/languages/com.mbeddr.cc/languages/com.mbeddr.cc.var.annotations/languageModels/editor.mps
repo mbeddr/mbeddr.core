@@ -1279,9 +1279,6 @@
           <property name="flag" nameId="tpc2.1186414551515" value="true" />
         </node>
       </node>
-      <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.FontSizeStyleClassItem" typeId="tpc2.1186415722038" id="2613872510229299900">
-        <property name="value" nameId="tpc2.1221209241505" value="11" />
-      </node>
     </node>
   </root>
   <root id="2613872510229398165">
