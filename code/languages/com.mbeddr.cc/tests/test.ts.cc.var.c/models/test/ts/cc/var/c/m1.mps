@@ -12,6 +12,7 @@
   <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="17" implicit="yes" />
   <import index="qqyh" modelUID="r:a74300b8-76a8-461e-befa-fc86b0ad5dd9(com.mbeddr.cc.var.fm.structure)" version="-1" implicit="yes" />
   <import index="qdv7" modelUID="r:1ff3d952-eae5-4d94-b89e-ea3060b11545(com.mbeddr.cc.var.annotations.structure)" version="2" implicit="yes" />
+  <import index="yq40" modelUID="r:152b3fc0-83a1-4bab-a8cd-565eb8483785(com.mbeddr.core.pointers.structure)" version="3" implicit="yes" />
   <roots>
     <node type="tp5g.NodesTestCase" typeId="tp5g.1216913645126" id="5959167564566770491">
       <property name="name" nameId="tpck.1169194664001" value="Example" />
@@ -51,7 +52,7 @@
               <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
               <property name="const" nameId="mj1l.2941277002445651368" value="false" />
             </node>
-            <node role="caseTypes" roleId="vxuc.5959167564566908589" type="mj1l.Type" typeId="mj1l.8860443239512128054" id="5959167564566946584">
+            <node role="caseTypes" roleId="vxuc.5959167564566908589" type="yq40.StringType" typeId="yq40.6113173064528067332" id="5959167564566950693">
               <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
               <property name="const" nameId="mj1l.2941277002445651368" value="false" />
             </node>
@@ -66,9 +67,9 @@
       </node>
     </node>
     <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="qdv7.FeatureModelConfiguration" typeId="qdv7.661141253149262080" id="5959167564566811032">
-      <property name="projectionMode" nameId="qdv7.7455436784495594423" value="0" />
+      <property name="projectionMode" nameId="qdv7.7455436784495594423" value="2" />
       <link role="featureModel" roleId="qdv7.661141253149262081" targetNodeId="5959167564566811025" resolveInfo="FM" />
-      <link role="configModel" roleId="qdv7.7455436784495586129" targetNodeId="5959167564566811178" resolveInfo="Floating" />
+      <link role="configModel" roleId="qdv7.7455436784495586129" targetNodeId="5959167564566908555" resolveInfo="String" />
     </node>
   </root>
   <root id="5959167564566810981">

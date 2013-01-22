@@ -156,8 +156,12 @@
         </node>
         <node role="ifTrue" roleId="tpee.1068580123161" type="tpee.StatementList" typeId="tpee.1068580123136" id="5959167564566949854">
           <node role="statement" roleId="tpee.1068581517665" type="tpd4.ReportErrorStatement" typeId="tpd4.1175517767210" id="5959167564566949989">
-            <node role="errorString" roleId="tpd4.1175517851849" type="tpee.Expression" typeId="tpee.1068431790191" id="5959167564566949990" />
-            <node role="nodeToReport" roleId="tpd4.1227096802790" type="tpee.Expression" typeId="tpee.1068431790191" id="5959167564566949991" />
+            <node role="errorString" roleId="tpd4.1175517851849" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="5959167564566949993">
+              <property name="value" nameId="tpee.1070475926801" value="inconsitency in the conditions and case nodes" />
+            </node>
+            <node role="nodeToReport" roleId="tpd4.1227096802790" type="tpd4.ApplicableNodeReference" typeId="tpd4.1174650418652" id="5959167564566949994">
+              <link role="applicableNode" roleId="tpd4.1174650432090" targetNodeId="5959167564566949851" resolveInfo="va" />
+            </node>
           </node>
         </node>
       </node>
