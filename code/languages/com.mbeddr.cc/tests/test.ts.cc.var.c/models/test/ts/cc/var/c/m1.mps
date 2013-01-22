@@ -42,7 +42,16 @@
                 <link role="feature" roleId="qdv7.661141253149262054" targetNodeId="5959167564566811162" resolveInfo="floatType" />
               </node>
             </node>
+            <node role="conditions" roleId="vxuc.5959167564566749552" type="qdv7.FeatureCondition" typeId="qdv7.2613872510229282925" id="5959167564566946581">
+              <node role="expr" roleId="qdv7.2613872510229282926" type="qdv7.FeatureRef" typeId="qdv7.661141253149262053" id="5959167564566946583">
+                <link role="feature" roleId="qdv7.661141253149262054" targetNodeId="5959167564566811031" resolveInfo="stringType" />
+              </node>
+            </node>
             <node role="caseTypes" roleId="vxuc.5959167564566908589" type="mj1l.FloatType" typeId="mj1l.4739982148980385695" id="5959167564566911056">
+              <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+              <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+            </node>
+            <node role="caseTypes" roleId="vxuc.5959167564566908589" type="mj1l.Type" typeId="mj1l.8860443239512128054" id="5959167564566946584">
               <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
               <property name="const" nameId="mj1l.2941277002445651368" value="false" />
             </node>

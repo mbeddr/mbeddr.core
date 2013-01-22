@@ -1284,9 +1284,6 @@
   <root id="2613872510229398165">
     <node role="styleClass" roleId="tpc2.1186402402630" type="tpc2.StyleSheetClass" typeId="tpc2.1186402373407" id="2613872510229398166">
       <property name="name" nameId="tpck.1169194664001" value="greyAndSmall" />
-      <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.FontSizeStyleClassItem" typeId="tpc2.1186415722038" id="2613872510229398167">
-        <property name="value" nameId="tpc2.1221209241505" value="10" />
-      </node>
       <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.ForegroundColorStyleClassItem" typeId="tpc2.1186404549998" id="2613872510229398168">
         <property name="color" nameId="tpc2.1186403713874" value="WHITE" />
       </node>
