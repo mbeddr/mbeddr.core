@@ -30,24 +30,25 @@
         </node>
         <node role="contents" roleId="x27k.6437088627575722833" type="x27k.GlobalVariableDeclaration" typeId="x27k.6610873504380335822" id="5959167564566804434">
           <property name="name" nameId="tpck.1169194664001" value="x" />
-          <node role="type" roleId="mj1l.318113533128716676" type="vxuc.VariantAwareType" typeId="vxuc.5959167564566749004" id="5959167564566847215">
+          <node role="type" roleId="mj1l.318113533128716676" type="vxuc.VariantAwareType" typeId="vxuc.5959167564566749004" id="5959167564566911052">
             <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
             <property name="const" nameId="mj1l.2941277002445651368" value="false" />
-            <node role="baseCase" roleId="vxuc.5959167564566804614" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="5959167564566847214">
+            <node role="baseCase" roleId="vxuc.5959167564566804614" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="5959167564566911051">
               <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
               <property name="const" nameId="mj1l.2941277002445651368" value="false" />
             </node>
-            <node role="cases" roleId="vxuc.5959167564566749552" type="vxuc.VariantAwareTypeCase" typeId="vxuc.5959167564566749005" id="5959167564566847216">
-              <node role="type" roleId="vxuc.5959167564566749020" type="mj1l.FloatType" typeId="mj1l.4739982148980385695" id="5959167564566847220">
-                <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
-                <property name="const" nameId="mj1l.2941277002445651368" value="false" />
-              </node>
-              <node role="prescon" roleId="vxuc.5959167564566749009" type="qdv7.FeatureCondition" typeId="qdv7.2613872510229282925" id="5959167564566895022">
-                <node role="expr" roleId="qdv7.2613872510229282926" type="qdv7.FeatureRef" typeId="qdv7.661141253149262053" id="5959167564566895025">
-                  <link role="feature" roleId="qdv7.661141253149262054" targetNodeId="5959167564566811162" resolveInfo="floatType" />
-                </node>
+            <node role="conditions" roleId="vxuc.5959167564566749552" type="qdv7.FeatureCondition" typeId="qdv7.2613872510229282925" id="5959167564566911053">
+              <node role="expr" roleId="qdv7.2613872510229282926" type="qdv7.FeatureRef" typeId="qdv7.661141253149262053" id="5959167564566911055">
+                <link role="feature" roleId="qdv7.661141253149262054" targetNodeId="5959167564566811162" resolveInfo="floatType" />
               </node>
             </node>
+            <node role="caseTypes" roleId="vxuc.5959167564566908589" type="mj1l.FloatType" typeId="mj1l.4739982148980385695" id="5959167564566911056">
+              <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+              <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+            </node>
+          </node>
+          <node role="init" roleId="x27k.2771264470558526601" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="5959167564566914034">
+            <property name="value" nameId="mj1l.8860443239512128104" value="10.33" />
           </node>
         </node>
         <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="5959167564566770496">
@@ -56,7 +57,7 @@
       </node>
     </node>
     <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="qdv7.FeatureModelConfiguration" typeId="qdv7.661141253149262080" id="5959167564566811032">
-      <property name="projectionMode" nameId="qdv7.7455436784495594423" value="2" />
+      <property name="projectionMode" nameId="qdv7.7455436784495594423" value="0" />
       <link role="featureModel" roleId="qdv7.661141253149262081" targetNodeId="5959167564566811025" resolveInfo="FM" />
       <link role="configModel" roleId="qdv7.7455436784495586129" targetNodeId="5959167564566811178" resolveInfo="Floating" />
     </node>
