@@ -123,6 +123,10 @@
     </node>
   </root>
   <root id="6472990431939799912">
+    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="4387602950358812545">
+      <property name="value" nameId="tpce.1105725733873" value="components_analysis_config" />
+      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473891462" resolveInfo="alias" />
+    </node>
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="6472990431939799913">
       <property name="metaClass" nameId="tpce.1071599937831" value="reference" />
       <property name="role" nameId="tpce.1071599776563" value="analyzedComponent" />
@@ -130,7 +134,12 @@
       <link role="target" roleId="tpce.1071599976176" targetNodeId="v7ag.4491876417845474761" resolveInfo="Component" />
     </node>
   </root>
-  <root id="6472990431940227507" />
+  <root id="6472990431940227507">
+    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="4387602950358812543">
+      <property name="value" nameId="tpce.1105725733873" value="function_analysis_config" />
+      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473891462" resolveInfo="alias" />
+    </node>
+  </root>
   <root id="4887422885165621122">
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="4887422885165621123">
       <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
