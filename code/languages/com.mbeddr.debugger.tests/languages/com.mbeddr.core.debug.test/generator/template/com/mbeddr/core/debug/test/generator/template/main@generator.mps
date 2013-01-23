@@ -2681,6 +2681,12 @@
       </node>
       <node role="classInitializer" roleId="tpee.1221737886778" type="tpee.StaticInitializer" typeId="tpee.1221737317277" id="9152682018128281527">
         <node role="statementList" roleId="tpee.1221737317278" type="tpee.StatementList" typeId="tpee.1068580123136" id="9152682018128281528">
+          <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="1113553024393041592">
+            <node role="expression" roleId="tpee.1068580123156" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="1113553024393041594">
+              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="u02k.1113553024393041141" resolveInfo="verifyCommandLineToolsInstalled" />
+              <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="u02k.3463450091878660221" resolveInfo="TestRuntime" />
+            </node>
+          </node>
           <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="9152682018128294771">
             <node role="expression" roleId="tpee.1068580123156" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="9152682018128181436">
               <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="u02k.3463450091878660221" resolveInfo="TestRuntime" />
