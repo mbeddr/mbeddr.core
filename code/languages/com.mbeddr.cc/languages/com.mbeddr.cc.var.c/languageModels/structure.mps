@@ -16,12 +16,9 @@
       <property name="name" nameId="tpck.1169194664001" value="VariantAwareType" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="mj1l.8860443239512128054" resolveInfo="Type" />
     </node>
-    <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="5959167564566749005">
-      <property name="name" nameId="tpck.1169194664001" value="VariantAwareTypeCase" />
-      <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
-    </node>
-    <node type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="5959167564566749008">
-      <property name="name" nameId="tpck.1169194664001" value="IVariantCase" />
+    <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="5959167564566953249">
+      <property name="name" nameId="tpck.1169194664001" value="VariantAwareExpression" />
+      <link role="extends" roleId="tpce.1071489389519" targetNodeId="mj1l.8860443239512128050" resolveInfo="Expression" />
     </node>
   </roots>
   <root id="5959167564566749003">
@@ -49,23 +46,21 @@
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="5959167564566749003" resolveInfo="IVariantAware" />
     </node>
   </root>
-  <root id="5959167564566749005">
-    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="5959167564566749020">
+  <root id="5959167564566953249">
+    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="5959167564566953250">
       <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
-      <property name="role" nameId="tpce.1071599776563" value="type" />
+      <property name="role" nameId="tpce.1071599776563" value="baseCase" />
       <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="mj1l.8860443239512128054" resolveInfo="Type" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="mj1l.8860443239512128050" resolveInfo="Expression" />
     </node>
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="5959167564566749010">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="5959167564566749008" resolveInfo="IVariantCase" />
-    </node>
-  </root>
-  <root id="5959167564566749008">
-    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="5959167564566749009">
+    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="5959167564566953251">
       <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
-      <property name="role" nameId="tpce.1071599776563" value="prescon" />
-      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="qdv7.2613872510229282925" resolveInfo="FeatureCondition" />
+      <property name="role" nameId="tpce.1071599776563" value="caseExpressions" />
+      <property name="sourceCardinality" nameId="tpce.1071599893252" value="0..n" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="mj1l.8860443239512128050" resolveInfo="Expression" />
+    </node>
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="5959167564566953254">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="5959167564566749003" resolveInfo="IVariantAware" />
     </node>
   </root>
 </model>
