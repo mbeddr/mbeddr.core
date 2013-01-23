@@ -104,11 +104,11 @@
   </root>
   <root id="7455436784495594419">
     <node role="member" roleId="tpce.1083172003582" type="tpce.EnumerationMemberDeclaration" typeId="tpce.1083171877298" id="7455436784495594420">
-      <property name="externalValue" nameId="tpce.1083923523172" value="product line" />
+      <property name="externalValue" nameId="tpce.1083923523172" value="detailed PL" />
       <property name="internalValue" nameId="tpce.1083923523171" value="0" />
     </node>
     <node role="member" roleId="tpce.1083172003582" type="tpce.EnumerationMemberDeclaration" typeId="tpce.1083171877298" id="7455436784495594421">
-      <property name="externalValue" nameId="tpce.1083923523172" value="undecorated" />
+      <property name="externalValue" nameId="tpce.1083923523172" value="concise PL" />
       <property name="internalValue" nameId="tpce.1083923523171" value="1" />
     </node>
     <node role="member" roleId="tpce.1083172003582" type="tpce.EnumerationMemberDeclaration" typeId="tpce.1083171877298" id="7455436784495594422">
