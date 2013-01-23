@@ -49,9 +49,7 @@
           <property name="const" nameId="mj1l.2941277002445651368" value="false" />
         </node>
         <node role="protocols" roleId="v7ag.6209278014151449991" type="v7ag.ProtocolSpec" typeId="v7ag.6209278014151449940" id="8053687140971342827">
-          <node role="from" roleId="v7ag.6209278014151449964" type="v7ag.PsmNewState" typeId="v7ag.6209278014151449943" id="8053687140971342828">
-            <property name="name" nameId="tpck.1169194664001" value="Deactive" />
-          </node>
+          <node role="from" roleId="v7ag.6209278014151449964" type="v7ag.PsmInitState" typeId="v7ag.6209278014151449953" id="6224485357112592512" />
           <node role="to" roleId="v7ag.6209278014151449965" type="v7ag.PsmNewState" typeId="v7ag.6209278014151449943" id="8053687140971342829">
             <property name="name" nameId="tpck.1169194664001" value="Active" />
           </node>
@@ -127,9 +125,7 @@
           <node role="from" roleId="v7ag.6209278014151449964" type="v7ag.PsmRefState" typeId="v7ag.6209278014151449980" id="8053687140971342840">
             <link role="ref" roleId="v7ag.6209278014151449981" targetNodeId="8053687140971342829" resolveInfo="Active" />
           </node>
-          <node role="to" roleId="v7ag.6209278014151449965" type="v7ag.PsmRefState" typeId="v7ag.6209278014151449980" id="8053687140971342842">
-            <link role="ref" roleId="v7ag.6209278014151449981" targetNodeId="8053687140971342828" resolveInfo="Deactive" />
-          </node>
+          <node role="to" roleId="v7ag.6209278014151449965" type="v7ag.PsmInitState" typeId="v7ag.6209278014151449953" id="6224485357112592513" />
         </node>
       </node>
     </node>

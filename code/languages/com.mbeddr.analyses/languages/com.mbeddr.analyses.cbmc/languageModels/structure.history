@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<history>
+  <StructureModification>
+    <dependencies>
+      <model index="q5q6" modelUID="r:5d65e582-fa41-4818-b31c-b2aee1644b4a(com.mbeddr.analyses.cbmc.structure)" version="4" />
+    </dependencies>
+    <rename id="q5q6.4887422885165654650" type="CONCEPT" from="im" to="implication" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="q5q6" modelUID="r:5d65e582-fa41-4818-b31c-b2aee1644b4a(com.mbeddr.analyses.cbmc.structure)" version="5" />
+    </dependencies>
+    <rename id="q5q6.4887422885165654650" type="CONCEPT" from="implication" to="i" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="q5q6" modelUID="r:5d65e582-fa41-4818-b31c-b2aee1644b4a(com.mbeddr.analyses.cbmc.structure)" version="6" />
+    </dependencies>
+    <rename id="q5q6.4887422885165654650" type="CONCEPT" from="implication" to="implies" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="q5q6" modelUID="r:5d65e582-fa41-4818-b31c-b2aee1644b4a(com.mbeddr.analyses.cbmc.structure)" version="7" />
+    </dependencies>
+    <rename id="q5q6.4887422885165654650" type="CONCEPT" from="implies" to="Implies" />
+  </StructureModification>
+</history>
+
