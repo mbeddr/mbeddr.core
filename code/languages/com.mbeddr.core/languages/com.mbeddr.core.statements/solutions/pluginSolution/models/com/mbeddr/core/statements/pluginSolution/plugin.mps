@@ -24,7 +24,7 @@
     <node role="parameters" roleId="4w5v.7518061998923573158" type="4w5v.RefactoringParameter" typeId="4w5v.7518061998923573140" id="412995133202385095">
       <link role="param" roleId="4w5v.7518061998923573141" targetNodeId="3wza.1582169519237927155" resolveInfo="varName" />
       <node role="chooser" roleId="4w5v.7518061998923573142" type="4w5v.StringChooser" typeId="4w5v.7518061998923713757" id="412995133202385098">
-        <property name="title" nameId="4w5v.7518061998923720371" value="Varaible Name" />
+        <property name="title" nameId="4w5v.7518061998923720371" value="Variable Name" />
       </node>
     </node>
     <node role="shortcut" roleId="4w5v.7518061998923573139" type="tp4k.KeyMapKeystroke" typeId="tp4k.1207318242772" id="412995133202385099">
