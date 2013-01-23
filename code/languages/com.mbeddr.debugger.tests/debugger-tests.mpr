@@ -9,7 +9,6 @@
       <modulePath path="${project}/languages/com.mbeddr.core.debug.test/solutions/pluginSolution/runtime.msd" />
       <modulePath path="${project}/languages/com.mbeddr.core.debug.test/test.mpl" />
       <modulePath path="${project}/languages/com.mbeddr.core.debug.util/util.mpl" />
-      <modulePath path="${project}/tests/test.debugger.core/core.msd" />
       <modulePath path="${project}/tests/test.debugger.runtime/runtime.msd" />
       <modulePath path="${project}/tests/test.debugging.core/core.msd" />
     </projectModules>
