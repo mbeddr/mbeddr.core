@@ -101,9 +101,6 @@
             </node>
           </node>
         </node>
-        <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="5959167564566957568">
-          <property name="name" nameId="tpck.1169194664001" value="empty_1358926249824_1" />
-        </node>
         <node role="contents" roleId="x27k.6437088627575722833" type="x27k.GlobalVariableDeclaration" typeId="x27k.6610873504380335822" id="5959167564566966291">
           <property name="name" nameId="tpck.1169194664001" value="anotherVar" />
           <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="5959167564567264806">
@@ -176,7 +173,7 @@
     <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="qdv7.FeatureModelConfiguration" typeId="qdv7.661141253149262080" id="5959167564566811032">
       <property name="projectionMode" nameId="qdv7.7455436784495594423" value="1" />
       <link role="featureModel" roleId="qdv7.661141253149262081" targetNodeId="5959167564566811025" resolveInfo="FM" />
-      <link role="configModel" roleId="qdv7.7455436784495586129" targetNodeId="5959167564566811178" resolveInfo="Floating" />
+      <link role="configModel" roleId="qdv7.7455436784495586129" targetNodeId="5959167564566908555" resolveInfo="String" />
     </node>
   </root>
   <root id="5959167564566810981">
