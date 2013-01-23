@@ -8,6 +8,7 @@
   <import index="kmnf" modelUID="r:e1ae1b28-1a87-4465-9845-f4edf139cc0b(com.mbeddr.cc.var.c.behavior)" version="-1" implicit="yes" />
   <import index="tp25" modelUID="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" version="16" implicit="yes" />
   <import index="tpee" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="4" implicit="yes" />
+  <import index="7rpm" modelUID="r:c7e1413b-fad0-49ac-824c-9b0d20143090(com.mbeddr.cc.var.annotations.editor)" version="1" implicit="yes" />
   <roots>
     <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="5959167564566749553">
       <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="vxuc.5959167564566749004" resolveInfo="VariantAwareType" />
@@ -59,6 +60,7 @@
       <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Indent" typeId="tpc2.1237303669825" id="5959167564566804604" />
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="5959167564566804602">
         <property name="text" nameId="tpc2.1073389577007" value="§" />
+        <link role="styleClass" roleId="tpc2.1186406756722" targetNodeId="7rpm.31358532779782218" resolveInfo="greyAndBig" />
         <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.PunctuationRightStyleClassItem" typeId="tpc2.1233759184865" id="5959167564566804616">
           <property name="flag" nameId="tpc2.1186414551515" value="true" />
         </node>

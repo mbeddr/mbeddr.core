@@ -13,6 +13,7 @@
   <import index="qqyh" modelUID="r:a74300b8-76a8-461e-befa-fc86b0ad5dd9(com.mbeddr.cc.var.fm.structure)" version="-1" implicit="yes" />
   <import index="qdv7" modelUID="r:1ff3d952-eae5-4d94-b89e-ea3060b11545(com.mbeddr.cc.var.annotations.structure)" version="2" implicit="yes" />
   <import index="yq40" modelUID="r:152b3fc0-83a1-4bab-a8cd-565eb8483785(com.mbeddr.core.pointers.structure)" version="3" implicit="yes" />
+  <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="5" implicit="yes" />
   <roots>
     <node type="tp5g.NodesTestCase" typeId="tp5g.1216913645126" id="5959167564566770491">
       <property name="name" nameId="tpck.1169194664001" value="Example" />
@@ -20,6 +21,9 @@
     <node type="mj1l.TypeSizeConfiguration" typeId="mj1l.3335993110369795380" id="5959167564566810981" />
     <node type="qqyh.VariabilitySupport" typeId="qqyh.6825476687691337712" id="5959167564566811023">
       <property name="name" nameId="tpck.1169194664001" value="M1Var" />
+    </node>
+    <node type="tp5g.TestInfo" typeId="tp5g.5097124989038916362" id="1423209693057696534">
+      <property name="projectPath" nameId="tp5g.5097124989038916363" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.cc/cc.dev.mpr" />
     </node>
   </roots>
   <root id="5959167564566770491">
@@ -100,12 +104,79 @@
         <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="5959167564566957568">
           <property name="name" nameId="tpck.1169194664001" value="empty_1358926249824_1" />
         </node>
+        <node role="contents" roleId="x27k.6437088627575722833" type="x27k.GlobalVariableDeclaration" typeId="x27k.6610873504380335822" id="5959167564566966291">
+          <property name="name" nameId="tpck.1169194664001" value="anotherVar" />
+          <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="5959167564566966292">
+            <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+            <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+          </node>
+          <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="qdv7.PresenceCondidtion" typeId="qdv7.661141253149231475" id="5959167564566966297">
+            <node role="condition" roleId="qdv7.661141253149231543" type="qdv7.FeatureCondition" typeId="qdv7.2613872510229282925" id="5959167564566966298">
+              <node role="expr" roleId="qdv7.2613872510229282926" type="qdv7.FeatureRef" typeId="qdv7.661141253149262053" id="5959167564566966314">
+                <link role="feature" roleId="qdv7.661141253149262054" targetNodeId="5959167564566966303" resolveInfo="gv" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="5959167564566966289">
+          <property name="name" nameId="tpck.1169194664001" value="empty_1358926750124_4" />
+        </node>
+        <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="5959167564566966284">
+          <property name="name" nameId="tpck.1169194664001" value="dummyMethod" />
+          <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="5959167564566966286">
+            <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="5959167564566966315">
+              <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.AssignmentExpr" typeId="mj1l.22102029902365709" id="5959167564566966319">
+                <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="5959167564566966322">
+                  <property name="value" nameId="mj1l.8860443239512128104" value="10" />
+                </node>
+                <node role="left" roleId="mj1l.8860443239512128064" type="x27k.GlobalVarRef" typeId="x27k.6610873504380357354" id="5959167564566966323">
+                  <link role="var" roleId="x27k.6610873504380357355" targetNodeId="5959167564566966291" resolveInfo="anotherVar" />
+                </node>
+              </node>
+            </node>
+            <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="5959167564567148596" />
+            <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="5959167564567148598">
+              <property name="name" nameId="tpck.1169194664001" value="local" />
+              <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="5959167564567148599">
+                <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+                <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+              </node>
+              <node role="init" roleId="c4fa.4185783222026502647" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="5959167564567148601">
+                <property name="value" nameId="mj1l.8860443239512128104" value="0" />
+              </node>
+              <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="qdv7.PresenceCondidtion" typeId="qdv7.661141253149231475" id="5959167564567148602">
+                <node role="condition" roleId="qdv7.661141253149231543" type="qdv7.FeatureCondition" typeId="qdv7.2613872510229282925" id="5959167564567148603">
+                  <node role="expr" roleId="qdv7.2613872510229282926" type="qdv7.FeatureRef" typeId="qdv7.661141253149262053" id="5959167564567148604">
+                    <link role="feature" roleId="qdv7.661141253149262054" targetNodeId="5959167564566966303" resolveInfo="gv" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="5959167564567148607">
+              <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.AssignmentExpr" typeId="mj1l.22102029902365709" id="5959167564567148611">
+                <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="5959167564567148614">
+                  <property name="value" nameId="mj1l.8860443239512128104" value="10" />
+                </node>
+                <node role="left" roleId="mj1l.8860443239512128064" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="5959167564567148608">
+                  <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="5959167564567148598" resolveInfo="local" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="5959167564566966283">
+            <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+            <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+          </node>
+        </node>
+        <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="5959167564566966281">
+          <property name="name" nameId="tpck.1169194664001" value="empty_1358926744173_2" />
+        </node>
       </node>
     </node>
     <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="qdv7.FeatureModelConfiguration" typeId="qdv7.661141253149262080" id="5959167564566811032">
       <property name="projectionMode" nameId="qdv7.7455436784495594423" value="2" />
       <link role="featureModel" roleId="qdv7.661141253149262081" targetNodeId="5959167564566811025" resolveInfo="FM" />
-      <link role="configModel" roleId="qdv7.7455436784495586129" targetNodeId="5959167564566811178" resolveInfo="Floating" />
+      <link role="configModel" roleId="qdv7.7455436784495586129" targetNodeId="5959167564566966308" resolveInfo="GV" />
     </node>
   </root>
   <root id="5959167564566810981">
@@ -266,13 +337,20 @@
       <property name="name" nameId="tpck.1169194664001" value="FM" />
       <node role="root" roleId="qqyh.6825476687691297435" type="qqyh.Feature" typeId="qqyh.6825476687691297426" id="5959167564566811027">
         <property name="name" nameId="tpck.1169194664001" value="f" />
-        <node role="constraint" roleId="qqyh.6825476687691297427" type="qqyh.XorConstraint" typeId="qqyh.6825476687691317633" id="5959167564566811163" />
-        <node role="children" roleId="qqyh.6825476687691297428" type="qqyh.Feature" typeId="qqyh.6825476687691297426" id="5959167564566811162">
-          <property name="name" nameId="tpck.1169194664001" value="floatType" />
+        <node role="children" roleId="qqyh.6825476687691297428" type="qqyh.Feature" typeId="qqyh.6825476687691297426" id="5959167564566966299">
+          <property name="name" nameId="tpck.1169194664001" value="type" />
+          <node role="constraint" roleId="qqyh.6825476687691297427" type="qqyh.XorConstraint" typeId="qqyh.6825476687691317633" id="5959167564566966302" />
+          <node role="children" roleId="qqyh.6825476687691297428" type="qqyh.Feature" typeId="qqyh.6825476687691297426" id="5959167564566811162">
+            <property name="name" nameId="tpck.1169194664001" value="floatType" />
+          </node>
+          <node role="children" roleId="qqyh.6825476687691297428" type="qqyh.Feature" typeId="qqyh.6825476687691297426" id="5959167564566811031">
+            <property name="name" nameId="tpck.1169194664001" value="stringType" />
+          </node>
         </node>
-        <node role="children" roleId="qqyh.6825476687691297428" type="qqyh.Feature" typeId="qqyh.6825476687691297426" id="5959167564566811031">
-          <property name="name" nameId="tpck.1169194664001" value="stringType" />
+        <node role="children" roleId="qqyh.6825476687691297428" type="qqyh.Feature" typeId="qqyh.6825476687691297426" id="5959167564566966303">
+          <property name="name" nameId="tpck.1169194664001" value="gv" />
         </node>
+        <node role="constraint" roleId="qqyh.6825476687691297427" type="qqyh.OptionalConstraint" typeId="qqyh.6825476687691317627" id="5959167564566966313" />
       </node>
     </node>
     <node role="contents" roleId="qqyh.6825476687691337713" type="qqyh.ConfigurationModel" typeId="qqyh.6825476687691297416" id="5959167564566811178">
@@ -280,8 +358,11 @@
       <link role="configures" roleId="qqyh.6825476687691297418" targetNodeId="5959167564566811025" resolveInfo="FM" />
       <node role="rootFeature" roleId="qqyh.6825476687691297417" type="qqyh.SelectedFeature" typeId="qqyh.6825476687691297422" id="5959167564566811180">
         <link role="feature" roleId="qqyh.6825476687691297425" targetNodeId="5959167564566811027" resolveInfo="f" />
-        <node role="children" roleId="qqyh.6825476687691297423" type="qqyh.SelectedFeature" typeId="qqyh.6825476687691297422" id="5959167564566811181">
-          <link role="feature" roleId="qqyh.6825476687691297425" targetNodeId="5959167564566811162" resolveInfo="floatType" />
+        <node role="children" roleId="qqyh.6825476687691297423" type="qqyh.SelectedFeature" typeId="qqyh.6825476687691297422" id="5959167564566966304">
+          <link role="feature" roleId="qqyh.6825476687691297425" targetNodeId="5959167564566966299" resolveInfo="type" />
+          <node role="children" roleId="qqyh.6825476687691297423" type="qqyh.SelectedFeature" typeId="qqyh.6825476687691297422" id="5959167564566966305">
+            <link role="feature" roleId="qqyh.6825476687691297425" targetNodeId="5959167564566811162" resolveInfo="floatType" />
+          </node>
         </node>
       </node>
     </node>
@@ -290,11 +371,25 @@
       <link role="configures" roleId="qqyh.6825476687691297418" targetNodeId="5959167564566811025" resolveInfo="FM" />
       <node role="rootFeature" roleId="qqyh.6825476687691297417" type="qqyh.SelectedFeature" typeId="qqyh.6825476687691297422" id="5959167564566908556">
         <link role="feature" roleId="qqyh.6825476687691297425" targetNodeId="5959167564566811027" resolveInfo="f" />
-        <node role="children" roleId="qqyh.6825476687691297423" type="qqyh.SelectedFeature" typeId="qqyh.6825476687691297422" id="5959167564566908558">
-          <link role="feature" roleId="qqyh.6825476687691297425" targetNodeId="5959167564566811031" resolveInfo="stringType" />
+        <node role="children" roleId="qqyh.6825476687691297423" type="qqyh.SelectedFeature" typeId="qqyh.6825476687691297422" id="5959167564566966307">
+          <link role="feature" roleId="qqyh.6825476687691297425" targetNodeId="5959167564566966299" resolveInfo="type" />
+          <node role="children" roleId="qqyh.6825476687691297423" type="qqyh.SelectedFeature" typeId="qqyh.6825476687691297422" id="5959167564566908558">
+            <link role="feature" roleId="qqyh.6825476687691297425" targetNodeId="5959167564566811031" resolveInfo="stringType" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node role="contents" roleId="qqyh.6825476687691337713" type="qqyh.ConfigurationModel" typeId="qqyh.6825476687691297416" id="5959167564566966308">
+      <property name="name" nameId="tpck.1169194664001" value="GV" />
+      <link role="configures" roleId="qqyh.6825476687691297418" targetNodeId="5959167564566811025" resolveInfo="FM" />
+      <node role="rootFeature" roleId="qqyh.6825476687691297417" type="qqyh.SelectedFeature" typeId="qqyh.6825476687691297422" id="5959167564566966309">
+        <link role="feature" roleId="qqyh.6825476687691297425" targetNodeId="5959167564566811027" resolveInfo="f" />
+        <node role="children" roleId="qqyh.6825476687691297423" type="qqyh.SelectedFeature" typeId="qqyh.6825476687691297422" id="5959167564566966312">
+          <link role="feature" roleId="qqyh.6825476687691297425" targetNodeId="5959167564566966303" resolveInfo="gv" />
         </node>
       </node>
     </node>
   </root>
+  <root id="1423209693057696534" />
 </model>
 
