@@ -31,8 +31,24 @@ cd ../fmrtAndComps
 make test
 PROC_RET=$(($?+$PROC_RET))
 
+cd ../../../../../../../..
+pwd
+cd tests/test.ex.cc.var.c/source_gen/test/ex/cc/var/c/int_variant 
+pwd
 
+echo -------------------------------------
+echo test.ex.cc.var.c
+cd ../int_variant
+pwd
+make test
+PROC_RET=$(($?+$PROC_RET))
 
+echo -------------------------------------
+echo test.ex.cc.var.c
+cd ../float_variant
+pwd
+make test
+PROC_RET=$(($?+$PROC_RET))
 
 
 

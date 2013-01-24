@@ -259,32 +259,60 @@
         <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="5959167564567375156">
           <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="5959167564567375156" />
           <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="5959167564567381853">
-            <node role="right" roleId="mj1l.8860443239512128065" type="vxuc.VariantAwareExpression" typeId="vxuc.5959167564566953249" id="5959167564567381857">
-              <node role="baseCase" roleId="vxuc.5959167564566953250" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="5959167564567381856">
-                <property name="value" nameId="mj1l.8860443239512128104" value="10" />
-              </node>
-              <node role="conditions" roleId="vxuc.5959167564566749552" type="qdv7.FeatureCondition" typeId="qdv7.2613872510229282925" id="5959167564567381858">
-                <node role="expr" roleId="qdv7.2613872510229282926" type="qdv7.FeatureRef" typeId="qdv7.661141253149262053" id="5959167564567381859">
-                  <link role="feature" roleId="qdv7.661141253149262054" targetNodeId="5959167564566811162" resolveInfo="floatType" />
-                </node>
-              </node>
-              <node role="caseExpressions" roleId="vxuc.5959167564566953251" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="5959167564567381860">
-                <property name="value" nameId="mj1l.8860443239512128104" value="10.10" />
-              </node>
+            <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="5959167564567440102">
+              <property name="value" nameId="mj1l.8860443239512128104" value="10" />
             </node>
             <node role="left" roleId="mj1l.8860443239512128064" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="5959167564567375166">
               <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="5959167564567375137" resolveInfo="v" />
             </node>
           </node>
+          <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="qdv7.PresenceCondidtion" typeId="qdv7.661141253149231475" id="5959167564567440103">
+            <node role="condition" roleId="qdv7.661141253149231543" type="qdv7.FeatureCondition" typeId="qdv7.2613872510229282925" id="5959167564567440104">
+              <node role="expr" roleId="qdv7.2613872510229282926" type="mj1l.NotExpression" typeId="mj1l.3830958861296781575" id="5959167564567440105">
+                <node role="expression" roleId="mj1l.7254843406768839760" type="qdv7.FeatureRef" typeId="qdv7.661141253149262053" id="5959167564567440107">
+                  <link role="feature" roleId="qdv7.661141253149262054" targetNodeId="5959167564566811162" resolveInfo="floatType" />
+                </node>
+              </node>
+            </node>
+          </node>
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="5959167564567375154" />
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="5959167564567440117" />
+        <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="5959167564567440109">
+          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="5959167564567440109" />
+          <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.AndExpression" typeId="mj1l.8399455261460717640" id="5959167564567440121">
+            <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.LessExpression" typeId="mj1l.8860443239512147449" id="5959167564567440127">
+              <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="5959167564567440130">
+                <property name="value" nameId="mj1l.8860443239512128104" value="10.2" />
+              </node>
+              <node role="left" roleId="mj1l.8860443239512128064" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="5959167564567440124">
+                <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="5959167564567375137" resolveInfo="v" />
+              </node>
+            </node>
+            <node role="left" roleId="mj1l.8860443239512128064" type="mj1l.GreaterExpression" typeId="mj1l.8860443239512147445" id="5959167564567440114">
+              <node role="left" roleId="mj1l.8860443239512128064" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="5959167564567440111">
+                <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="5959167564567375137" resolveInfo="v" />
+              </node>
+              <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="5959167564567440118">
+                <property name="value" nameId="mj1l.8860443239512128104" value="10.0" />
+              </node>
+            </node>
+          </node>
+          <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="qdv7.PresenceCondidtion" typeId="qdv7.661141253149231475" id="5959167564567440131">
+            <node role="condition" roleId="qdv7.661141253149231543" type="qdv7.FeatureCondition" typeId="qdv7.2613872510229282925" id="5959167564567440132">
+              <node role="expr" roleId="qdv7.2613872510229282926" type="qdv7.FeatureRef" typeId="qdv7.661141253149262053" id="5959167564567440133">
+                <link role="feature" roleId="qdv7.661141253149262054" targetNodeId="5959167564566811162" resolveInfo="floatType" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="5959167564567440108" />
       </node>
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="5959167564567375121">
       <property name="name" nameId="tpck.1169194664001" value="empty_1359022554147_3" />
     </node>
     <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="qdv7.FeatureModelConfiguration" typeId="qdv7.661141253149262080" id="5959167564567375124">
-      <property name="projectionMode" nameId="qdv7.7455436784495594423" value="1" />
+      <property name="projectionMode" nameId="qdv7.7455436784495594423" value="0" />
       <link role="featureModel" roleId="qdv7.661141253149262081" targetNodeId="5959167564566811025" resolveInfo="FM" />
     </node>
   </root>
