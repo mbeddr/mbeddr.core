@@ -173,7 +173,7 @@
     <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="qdv7.FeatureModelConfiguration" typeId="qdv7.661141253149262080" id="5959167564566811032">
       <property name="projectionMode" nameId="qdv7.7455436784495594423" value="1" />
       <link role="featureModel" roleId="qdv7.661141253149262081" targetNodeId="5959167564566811025" resolveInfo="FM" />
-      <link role="configModel" roleId="qdv7.7455436784495586129" targetNodeId="5959167564566908555" resolveInfo="String" />
+      <link role="configModel" roleId="qdv7.7455436784495586129" targetNodeId="5959167564566811178" resolveInfo="Floating" />
     </node>
   </root>
   <root id="5959167564566810981">

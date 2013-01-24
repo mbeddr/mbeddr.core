@@ -22,6 +22,9 @@
     <node type="tpc2.StyleSheet" typeId="tpc2.1186402211651" id="5959167564567270376">
       <property name="name" nameId="tpck.1169194664001" value="variantStuff" />
     </node>
+    <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="5959167564567389931">
+      <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="vxuc.5959167564567389862" resolveInfo="CVariabilityConfigItem" />
+    </node>
   </roots>
   <root id="5959167564566749553">
     <node role="inspectedCellModel" roleId="tpc2.1078153129734" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="5959167564566749556">
@@ -53,6 +56,12 @@
         <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_RefNodeList" typeId="tpc2.1073390211982" id="5959167564566908603">
           <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="vxuc.5959167564566908589" />
           <node role="cellLayout" roleId="tpc2.1140524464360" type="tpc2.CellLayout_VerticalGrid" typeId="tpc2.1239814640496" id="5959167564566908607" />
+          <node role="emptyCellModel" roleId="tpc2.1140524464359" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="5959167564567375182">
+            <property name="text" nameId="tpc2.1073389577007" value="" />
+            <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.EditableStyleClassItem" typeId="tpc2.1186414860679" id="5959167564567375183">
+              <property name="flag" nameId="tpc2.1186414551515" value="true" />
+            </node>
+          </node>
         </node>
       </node>
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="5959167564566749561">
@@ -108,6 +117,12 @@
           <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_RefNodeList" typeId="tpc2.1073390211982" id="5959167564567276785">
             <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="vxuc.5959167564566908589" />
             <node role="cellLayout" roleId="tpc2.1140524464360" type="tpc2.CellLayout_VerticalGrid" typeId="tpc2.1239814640496" id="5959167564567276786" />
+            <node role="emptyCellModel" roleId="tpc2.1140524464359" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="5959167564567375180">
+              <property name="text" nameId="tpc2.1073389577007" value="" />
+              <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.EditableStyleClassItem" typeId="tpc2.1186414860679" id="5959167564567375181">
+                <property name="flag" nameId="tpc2.1186414551515" value="true" />
+              </node>
+            </node>
           </node>
         </node>
         <node role="renderingCondition" roleId="tpc2.1142887637401" type="tpc2.QueryFunction_NodeCondition" typeId="tpc2.1142886221719" id="5959167564567276789">
@@ -278,6 +293,12 @@
         <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_RefNodeList" typeId="tpc2.1073390211982" id="5959167564567291409">
           <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="vxuc.5959167564566953251" />
           <node role="cellLayout" roleId="tpc2.1140524464360" type="tpc2.CellLayout_VerticalGrid" typeId="tpc2.1239814640496" id="5959167564567291410" />
+          <node role="emptyCellModel" roleId="tpc2.1140524464359" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="5959167564567375184">
+            <property name="text" nameId="tpc2.1073389577007" value="" />
+            <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.EditableStyleClassItem" typeId="tpc2.1186414860679" id="5959167564567375185">
+              <property name="flag" nameId="tpc2.1186414551515" value="true" />
+            </node>
+          </node>
         </node>
       </node>
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="5959167564567291411">
@@ -333,6 +354,12 @@
           <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_RefNodeList" typeId="tpc2.1073390211982" id="5959167564567310082">
             <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="vxuc.5959167564566953251" />
             <node role="cellLayout" roleId="tpc2.1140524464360" type="tpc2.CellLayout_VerticalGrid" typeId="tpc2.1239814640496" id="5959167564567310083" />
+            <node role="emptyCellModel" roleId="tpc2.1140524464359" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="5959167564567375178">
+              <property name="text" nameId="tpc2.1073389577007" value="" />
+              <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.EditableStyleClassItem" typeId="tpc2.1186414860679" id="5959167564567375179">
+                <property name="flag" nameId="tpc2.1186414551515" value="true" />
+              </node>
+            </node>
           </node>
         </node>
         <node role="renderingCondition" roleId="tpc2.1142887637401" type="tpc2.QueryFunction_NodeCondition" typeId="tpc2.1142886221719" id="5959167564567310084">
@@ -498,6 +525,11 @@
           </node>
         </node>
       </node>
+    </node>
+  </root>
+  <root id="5959167564567389931">
+    <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="5959167564567389933">
+      <property name="text" nameId="tpc2.1073389577007" value="c-level variability" />
     </node>
   </root>
 </model>
