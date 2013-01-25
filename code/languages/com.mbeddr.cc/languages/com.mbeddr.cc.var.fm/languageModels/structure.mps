@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model modelUID="r:a74300b8-76a8-461e-befa-fc86b0ad5dd9(com.mbeddr.cc.var.fm.structure)" version="4">
+<model modelUID="r:a74300b8-76a8-461e-befa-fc86b0ad5dd9(com.mbeddr.cc.var.fm.structure)" version="5">
   <persistence version="7" />
   <language namespace="c72da2b9-7cce-4447-8389-f407dc1158b7(jetbrains.mps.lang.structure)" />
   <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="17" />
@@ -7,7 +7,7 @@
   <import index="qdv7" modelUID="r:1ff3d952-eae5-4d94-b89e-ea3060b11545(com.mbeddr.cc.var.annotations.structure)" version="5" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="tpce" modelUID="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" version="0" implicit="yes" />
-  <import index="qqyh" modelUID="r:a74300b8-76a8-461e-befa-fc86b0ad5dd9(com.mbeddr.cc.var.fm.structure)" version="4" implicit="yes" />
+  <import index="qqyh" modelUID="r:a74300b8-76a8-461e-befa-fc86b0ad5dd9(com.mbeddr.cc.var.fm.structure)" version="5" implicit="yes" />
   <roots>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="6825476687691297413">
       <property name="name" nameId="tpck.1169194664001" value="AttributeValue" />
@@ -102,7 +102,7 @@
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="8433257123783652289" resolveInfo="CrossConstraint" />
     </node>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="2203816361987134490">
-      <property name="name" nameId="tpck.1169194664001" value="DerivatedFeature" />
+      <property name="name" nameId="tpck.1169194664001" value="DerivedFeature" />
       <property name="virtualPackage" nameId="tpck.1193676396447" value="fm" />
     </node>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="2203816361987287676">
@@ -256,7 +256,7 @@
       <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
       <property name="role" nameId="tpce.1071599776563" value="derivedFeatures" />
       <property name="sourceCardinality" nameId="tpce.1071599893252" value="0..n" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="2203816361987134490" resolveInfo="DerivatedFeature" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="2203816361987134490" resolveInfo="DerivedFeature" />
     </node>
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="2203816361987287698">
       <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
@@ -391,7 +391,7 @@
       <property name="metaClass" nameId="tpce.1071599937831" value="reference" />
       <property name="role" nameId="tpce.1071599776563" value="feature" />
       <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="2203816361987134490" resolveInfo="DerivatedFeature" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="2203816361987134490" resolveInfo="DerivedFeature" />
     </node>
   </root>
   <root id="8799034948079995131">
