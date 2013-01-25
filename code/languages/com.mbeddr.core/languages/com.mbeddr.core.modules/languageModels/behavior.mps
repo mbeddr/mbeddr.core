@@ -175,6 +175,10 @@
     <node type="tpee.ClassConcept" typeId="tpee.1068390468198" id="692085292169542727">
       <property name="name" nameId="tpck.1169194664001" value="VisibleContentsOfTypeCache" />
     </node>
+    <node type="1i04.ConceptBehavior" typeId="1i04.1225194240794" id="2428914313699421188">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="functionrefs" />
+      <link role="concept" roleId="1i04.1225194240799" targetNodeId="x27k.8551646674110484035" resolveInfo="FunctionRefExpr" />
+    </node>
   </roots>
   <root id="7892328519581793769">
     <node role="method" roleId="1i04.1225194240805" type="1i04.ConceptMethodDeclaration" typeId="1i04.1225194472830" id="745648737914652272">
@@ -7622,6 +7626,24 @@
       <node role="returnType" roleId="tpee.1068580123133" type="tpee.VoidType" typeId="tpee.1068581517677" id="692085292169542730" />
       <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="692085292169542731" />
       <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="692085292169542732" />
+    </node>
+  </root>
+  <root id="2428914313699421188">
+    <node role="method" roleId="1i04.1225194240805" type="1i04.ConceptMethodDeclaration" typeId="1i04.1225194472830" id="2428914313699421371">
+      <property name="name" nameId="tpck.1169194664001" value="getValue" />
+      <link role="overriddenMethod" roleId="1i04.1225194472831" targetNodeId="ywuz.7274201720600704473" resolveInfo="getValue" />
+      <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="2428914313699421374">
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.ReturnStatement" typeId="tpee.1068581242878" id="2428914313699452905">
+          <node role="expression" roleId="tpee.1068581517676" type="1i04.ThisNodeExpression" typeId="1i04.1225194691553" id="2428914313699452907" />
+        </node>
+      </node>
+      <node role="returnType" roleId="tpee.1068580123133" type="tp25.SNodeType" typeId="tp25.1138055754698" id="2428914313699452903">
+        <link role="concept" roleId="tp25.1138405853777" targetNodeId="mj1l.7274201720600672742" resolveInfo="IDataflowValue" />
+      </node>
+      <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="2428914313699452904" />
+    </node>
+    <node role="constructor" roleId="1i04.1225194240801" type="1i04.ConceptConstructorDeclaration" typeId="1i04.1225194413805" id="2428914313699421189">
+      <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="2428914313699421190" />
     </node>
   </root>
 </model>
