@@ -54,9 +54,9 @@
       <module namespace="com.mbeddr.spawner" type="solution" uuid="ebe1768e-261a-4c37-a061-412b0853e506">
         <dependencies>
           <module ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" />
-          <module ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" />
           <module ref="4c6a28d1-2c60-478d-b36e-db9b3cbb21fb(closures.runtime)" />
           <module ref="9b80526e-f0bf-4992-bdf5-cee39c1833f3(collections.runtime)" />
+          <module ref="a3e4657f-a76c-45bb-bbda-c764596ecc65(jetbrains.mps.baseLanguage.logging.runtime)" />
           <module ref="d44dab97-aaac-44cb-9745-8a14db674c03(jetbrains.mps.baseLanguage.tuples.runtime)" />
           <module ref="34f23130-e35c-4795-a45a-85d828b16016(jetbrains.mps.gtext.runtime)" />
           <module ref="2d3c70e9-aab2-4870-8d8d-6036800e4103(jetbrains.mps.kernel)" />
@@ -92,6 +92,8 @@
     <echo file="${build.layout}/build.properties">buildMPS.build.number=${buildMPS.build.number}${line.separator}buildMPS.date=${buildMPS.date}${line.separator}buildMPS.build.vcs.number=${buildMPS.build.vcs.number}${line.separator}buildMPS.teamcity.buildConfName=${buildMPS.teamcity.buildConfName}${line.separator}buildMPS.idea.platform.build.number=${buildMPS.idea.platform.build.number}${line.separator}buildCore.version=${buildCore.version}</echo>
   </target>
   
+  <target name="fetchDependencies" />
+  
   <target name="build" depends="assemble, check" />
   
   <target name="clean">
@@ -109,7 +111,7 @@
   
   <target name="check" depends="test" />
   
-  <target name="java.compile.com.mbeddr.spawner">
+  <target name="java.compile.com.mbeddr.spawner" depends="fetchDependencies">
     <mkdir dir="${build.tmp}/java/out/com.mbeddr.spawner" />
     <javac destdir="${build.tmp}/java/out/com.mbeddr.spawner" fork="true" includeantruntime="false">
       <compilerarg value="-Xlint:none" />
@@ -124,6 +126,7 @@
         <fileset file="${artifacts.buildMPS}/lib/mps-platform.jar" />
         <fileset file="${artifacts.buildMPS}/lib/mps-editor-api.jar" />
         <fileset file="${artifacts.buildMPS}/lib/mps-editor.jar" />
+        <fileset file="${artifacts.buildMPS}/lib/commons-logging-1.1.1.jar" />
         <fileset file="${artifacts.buildMPS}/lib/commons-lang-2.4.jar" />
         <fileset file="${artifacts.buildMPS}/lib/org.eclipse.jdt.core_3.5.2.v_981_R35x.jar" />
         <fileset file="${artifacts.buildMPS}/lib/guava-11.0.1.jar" />
@@ -132,7 +135,6 @@
         <fileset file="${artifacts.buildMPS}/lib/trove4j.jar" />
         <fileset file="${artifacts.buildMPS}/lib/xstream.jar" />
         <fileset file="${artifacts.buildMPS}/lib/annotations.jar" />
-        <fileset file="${artifacts.buildMPS}/lib/commons-logging-1.1.1.jar" />
         <fileset file="${artifacts.buildMPS}/lib/asm.jar" />
         <fileset file="${artifacts.buildMPS}/lib/diffutils-1.2.1.jar" />
         <fileset dir="${artifacts.buildMPS}/lib" includes="*.jar" />
