@@ -6,7 +6,7 @@
   <devkit namespace="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   <import index="clqz" modelUID="r:5ebcdb77-81e9-4964-beae-35bd9a2f28b5(com.mbeddr.ext.statemachines.structure)" version="9" />
   <import index="ywuz" modelUID="r:c6ce92e7-5a98-4a6f-866a-ec8b9e945dd8(com.mbeddr.core.expressions.behavior)" version="1" />
-  <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="17" />
+  <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="19" />
   <import index="tpd4" modelUID="r:00000000-0000-4000-0000-011c895902b4(jetbrains.mps.lang.typesystem.structure)" version="3" />
   <import index="k7g3" modelUID="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.util(JDK/java.util@java_stub)" version="-1" />
   <import index="cu2c" modelUID="f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.smodel(MPS.Core/jetbrains.mps.smodel@java_stub)" version="-1" />
@@ -2171,12 +2171,16 @@
   </root>
   <root id="6827806583615147323">
     <node role="body" roleId="tpd4.1195213635060" type="tpee.StatementList" typeId="tpee.1068580123136" id="6827806583615147324">
-      <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="2486081302458330948">
-        <node role="expression" roleId="tpee.1068580123156" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="2486081302458330951">
-          <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="6827806583615693335" resolveInfo="StatemachineDataFlowUtil" />
-          <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="2486081302458330616" resolveInfo="checkUnreachableCode" />
-          <node role="actualArgument" roleId="tpee.1068499141038" type="tpd4.ApplicableNodeReference" typeId="tpd4.1174650418652" id="6827806583615147327">
-            <link role="applicableNode" roleId="tpd4.1174650432090" targetNodeId="6827806583615147326" resolveInfo="statemachine" />
+      <node role="statement" roleId="tpee.1068581517665" type="tpee.SingleLineComment" typeId="tpee.6329021646629104954" id="4391544413937491721">
+        <node role="commentPart" roleId="tpee.6329021646629175155" type="tpee.StatementCommentPart" typeId="tpee.6329021646629175143" id="4391544413937491722">
+          <node role="commentedStatement" roleId="tpee.6329021646629175144" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="2486081302458330948">
+            <node role="expression" roleId="tpee.1068580123156" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="2486081302458330951">
+              <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="6827806583615693335" resolveInfo="StatemachineDataFlowUtil" />
+              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="2486081302458330616" resolveInfo="checkUnreachableCode" />
+              <node role="actualArgument" roleId="tpee.1068499141038" type="tpd4.ApplicableNodeReference" typeId="tpd4.1174650418652" id="6827806583615147327">
+                <link role="applicableNode" roleId="tpd4.1174650432090" targetNodeId="6827806583615147326" resolveInfo="statemachine" />
+              </node>
+            </node>
           </node>
         </node>
       </node>
@@ -2188,12 +2192,16 @@
   </root>
   <root id="6827806583615265339">
     <node role="body" roleId="tpd4.1195213635060" type="tpee.StatementList" typeId="tpee.1068580123136" id="6827806583615265340">
-      <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="2486081302458330965">
-        <node role="expression" roleId="tpee.1068580123156" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="2486081302458330968">
-          <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="6827806583615693335" resolveInfo="StatemachineDataFlowUtil" />
-          <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="2486081302458330758" resolveInfo="checkUnusedAssignments" />
-          <node role="actualArgument" roleId="tpee.1068499141038" type="tpd4.ApplicableNodeReference" typeId="tpd4.1174650418652" id="6827806583615265343">
-            <link role="applicableNode" roleId="tpd4.1174650432090" targetNodeId="6827806583615265342" resolveInfo="statemachine" />
+      <node role="statement" roleId="tpee.1068581517665" type="tpee.SingleLineComment" typeId="tpee.6329021646629104954" id="4391544413937491725">
+        <node role="commentPart" roleId="tpee.6329021646629175155" type="tpee.StatementCommentPart" typeId="tpee.6329021646629175143" id="4391544413937491726">
+          <node role="commentedStatement" roleId="tpee.6329021646629175144" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="2486081302458330965">
+            <node role="expression" roleId="tpee.1068580123156" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="2486081302458330968">
+              <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="6827806583615693335" resolveInfo="StatemachineDataFlowUtil" />
+              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="2486081302458330758" resolveInfo="checkUnusedAssignments" />
+              <node role="actualArgument" roleId="tpee.1068499141038" type="tpd4.ApplicableNodeReference" typeId="tpd4.1174650418652" id="6827806583615265343">
+                <link role="applicableNode" roleId="tpd4.1174650432090" targetNodeId="6827806583615265342" resolveInfo="statemachine" />
+              </node>
+            </node>
           </node>
         </node>
       </node>
