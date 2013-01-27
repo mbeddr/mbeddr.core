@@ -41,7 +41,7 @@
           <value>
             <Library>
               <option name="name" value="mbeddr.core" />
-              <option name="path" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.core" />
+              <option name="path" value="${mbeddr.github.core.home}/" />
             </Library>
           </value>
         </entry>

@@ -3,7 +3,7 @@
   <persistence version="7" />
   <language namespace="18bc6592-03a6-4e29-a83a-7ff23bde13ba(jetbrains.mps.lang.editor)" />
   <devkit namespace="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
-  <import index="mxvz" modelUID="r:b92c0a08-d42f-4c78-a3f4-d5f989493286(com.mbeddr.ext.components.mock.structure)" version="-1" />
+  <import index="mxvz" modelUID="r:b92c0a08-d42f-4c78-a3f4-d5f989493286(com.mbeddr.ext.components.mock.structure)" version="0" />
   <import index="cl6c" modelUID="r:890ea833-37c9-445e-a04d-3b69ce24aa30(com.mbeddr.core.modules.editor)" version="-1" />
   <import index="vrqd" modelUID="r:53e59391-150a-45ff-930e-2b4fdafb0904(com.mbeddr.core.expressions.editor)" version="1" />
   <import index="qd6m" modelUID="r:c4c3f7d3-0acf-4671-a134-5fab66c4e637(com.mbeddr.core.modules.behavior)" version="0" />
@@ -69,6 +69,14 @@
     <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="2319970887606685458">
       <property name="virtualPackage" nameId="tpck.1193676396447" value="stub" />
       <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="mxvz.2319970887606685453" resolveInfo="PhaseChangeStatement" />
+    </node>
+    <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="6329057548770953990">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="stub" />
+      <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="mxvz.6329057548770953988" resolveInfo="PhaseChangeTrigger" />
+    </node>
+    <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="6329057548771029091">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="stub" />
+      <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="mxvz.6329057548771013571" resolveInfo="PhaseRefExpression" />
     </node>
   </roots>
   <root id="2151335435833308539">
@@ -711,6 +719,22 @@
         <property name="text" nameId="tpc2.1073389577007" value=");" />
         <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.PunctuationLeftStyleClassItem" typeId="tpc2.1233758997495" id="2319970887606685477">
           <property name="flag" nameId="tpc2.1186414551515" value="true" />
+        </node>
+      </node>
+    </node>
+  </root>
+  <root id="6329057548770953990">
+    <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="6329057548770953992">
+      <property name="text" nameId="tpc2.1073389577007" value="phase change" />
+    </node>
+  </root>
+  <root id="6329057548771029091">
+    <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_RefCell" typeId="tpc2.1088013125922" id="6329057548771029093">
+      <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="mxvz.6329057548771013572" />
+      <node role="editorComponent" roleId="tpc2.1088186146602" type="tpc2.InlineEditorComponent" typeId="tpc2.1088185857835" id="6329057548771029094">
+        <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Property" typeId="tpc2.1073389658414" id="6329057548771029096">
+          <property name="readOnly" nameId="tpc2.1140017977771" value="true" />
+          <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="tpck.1169194664001" resolveInfo="name" />
         </node>
       </node>
     </node>
