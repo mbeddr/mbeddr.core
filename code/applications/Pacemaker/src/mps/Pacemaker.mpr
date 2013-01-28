@@ -17,6 +17,7 @@
   <component name="MPSProject">
     <projectModules>
       <modulePath path="${project}/solutions/Pacemaker.main/Pacemaker.main.msd" />
+      <modulePath path="${project}/solutions/Pacemaker_verified/Pacemaker_verified.msd" folder="" />
     </projectModules>
     <genConfs />
   </component>
@@ -27,7 +28,7 @@
           <value>
             <Library>
               <option name="name" value="mbeddr.core" />
-              <option name="path" value="${mbeddr.github.core.home}/code/languages" />
+              <option name="path" value="${mps_home}/bin/${mbeddr.github.core.home}/code/languages" />
             </Library>
           </value>
         </entry>
@@ -35,7 +36,7 @@
           <value>
             <Library>
               <option name="name" value="mbeddr.ext" />
-              <option name="path" value="${mbeddr.assembla.ext.home}/code/languages" />
+              <option name="path" value="${mps_home}/bin/${mbeddr.assembla.ext.home}/code/languages" />
             </Library>
           </value>
         </entry>
@@ -48,7 +49,7 @@
   </component>
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="" />
-    <mapping directory="$mbeddr.github.core.home$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../../../.." vcs="Git" />
   </component>
 </project>
 
