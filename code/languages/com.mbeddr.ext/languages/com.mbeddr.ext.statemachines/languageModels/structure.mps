@@ -193,14 +193,14 @@
       <property name="name" nameId="tpck.1169194664001" value="AbstractState" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
     </node>
-    <node type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="4249345261280558218">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="machine" />
-      <property name="name" nameId="tpck.1169194664001" value="IStateContainer" />
-    </node>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4249345261280336724">
       <property name="virtualPackage" nameId="tpck.1193676396447" value="machine.states" />
       <property name="name" nameId="tpck.1169194664001" value="CompositeState" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="4249345261280334498" resolveInfo="AbstractState" />
+    </node>
+    <node type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="4249345261280558218">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="machine" />
+      <property name="name" nameId="tpck.1169194664001" value="IStateContainer" />
     </node>
   </roots>
   <root id="5778488248013533809">
@@ -380,6 +380,9 @@
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="6941595764870514770">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="mj1l.8515777736166452576" resolveInfo="IInitializationContext" />
     </node>
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="6827806583614830857">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="c4fa.2486081302459814099" resolveInfo="IVariableDeclaration" />
+    </node>
   </root>
   <root id="7851711690674263345">
     <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="4058325937810995657">
@@ -550,6 +553,9 @@
     </node>
   </root>
   <root id="1786180596061383227">
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="6827806583614830858">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="c4fa.2486081302459354921" resolveInfo="IVariableReference" />
+    </node>
     <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="4058325937810995658">
       <property name="value" nameId="tpce.1105725733873" value="--" />
       <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473914776" resolveInfo="shortDescription" />
@@ -912,11 +918,6 @@
       <link role="target" roleId="tpce.1071599976176" targetNodeId="4753668641245534589" resolveInfo="IStateContents" />
     </node>
   </root>
-  <root id="4249345261280558218">
-    <node role="extends" roleId="tpce.1169127546356" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="4249345261280694520">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="vs0r.7024921229555594291" resolveInfo="IIdentifierNamedConcept" />
-    </node>
-  </root>
   <root id="4249345261280336724">
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="4249345261280591928">
       <property name="metaClass" nameId="tpce.1071599937831" value="reference" />
@@ -930,6 +931,11 @@
     </node>
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="4249345261280558221">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="4249345261280558218" resolveInfo="IStateContainer" />
+    </node>
+  </root>
+  <root id="4249345261280558218">
+    <node role="extends" roleId="tpce.1169127546356" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="4249345261280694520">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="vs0r.7024921229555594291" resolveInfo="IIdentifierNamedConcept" />
     </node>
   </root>
 </model>

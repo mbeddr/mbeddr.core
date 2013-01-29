@@ -41,6 +41,7 @@
       <modulePath path="${project}/languages/com.mbeddr.core.unittest/unittest.mpl" folder="core-extended" />
       <modulePath path="${project}/languages/com.mbeddr.core.util/solutions/pluginSolution/pluginSolution.msd" folder="core-extended.solutions" />
       <modulePath path="${project}/languages/com.mbeddr.core.util/util.mpl" folder="core-extended" />
+      <modulePath path="${project}/languages/dataflow/dataflow.mpl" folder="core" />
       <modulePath path="${project}/tests/aLibrary/aLibrary.msd" folder="tests" />
       <modulePath path="${project}/tests/test.cstub.core/core.msd" folder="tests.cstub" />
       <modulePath path="${project}/tests/test.cstub.testheader.expressions/expressions.msd" folder="tests.cstub" />
@@ -48,6 +49,7 @@
       <modulePath path="${project}/tests/test.ex.core.libs/libs.msd" folder="tests" />
       <modulePath path="${project}/tests/test.ex.core/core.msd" folder="tests" />
       <modulePath path="${project}/tests/test.ex.errorreporting/errorreporting.msd" folder="tests" />
+      <modulePath path="${project}/tests/test.ts.core.dataflow/dataflow.msd" />
       <modulePath path="${project}/tests/test.ts.core/core.msd" folder="tests" />
     </projectModules>
     <genConfs />
@@ -71,6 +73,14 @@
             <Library>
               <option name="name" value="mpsutil" />
               <option name="path" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.mpsutil" />
+            </Library>
+          </value>
+        </entry>
+        <entry key="spawner">
+          <value>
+            <Library>
+              <option name="name" value="spawner" />
+              <option name="path" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.spawner" />
             </Library>
           </value>
         </entry>

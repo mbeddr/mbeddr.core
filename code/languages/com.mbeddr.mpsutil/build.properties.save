@@ -1,0 +1,6 @@
+# MPS installation
+mps.home=/home/malte/MPS/MPS2.5/
+# directory that contains the mbeddr project (the one that contains the .git dir)
+mbeddr.github.core.home=L:/lwes/mbeddr.core/
+# an existing, empty dir that MPS can use for caching
+mps.platform.caches=file:///home/malte/MPS/MPS2.5 L:/lwes/mps-ant-caches/
