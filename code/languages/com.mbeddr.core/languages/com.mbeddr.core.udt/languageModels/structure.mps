@@ -365,6 +365,9 @@
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="8515777736166452818">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="mj1l.8515777736166427325" resolveInfo="IOnlyInInitialization" />
     </node>
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="4115720392370607697">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="c4fa.4115720392370607692" resolveInfo="IStructuredInitExpression" />
+    </node>
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7349952699784934201">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="mj1l.7897559875243468033" resolveInfo="IDataflowComplexTypeInitExpression" />
     </node>
