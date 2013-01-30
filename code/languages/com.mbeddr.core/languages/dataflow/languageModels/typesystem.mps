@@ -34,7 +34,7 @@
   <import index="tp2c" modelUID="r:00000000-0000-4000-0000-011c89590338(jetbrains.mps.baseLanguage.closures.structure)" version="3" implicit="yes" />
   <roots>
     <node type="tpd4.NonTypesystemRule" typeId="tpd4.1195214364922" id="7474547269770636769">
-      <property name="name" nameId="tpck.1169194664001" value="check_ValueState" />
+      <property name="name" nameId="tpck.1169194664001" value="check_ConstantPropagationState" />
     </node>
     <node type="tpd4.NonTypesystemRule" typeId="tpd4.1195214364922" id="6710775822621544600">
       <property name="name" nameId="tpck.1169194664001" value="check_ConstantState" />
@@ -61,7 +61,7 @@
               <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="6072660817912778845">
                 <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="6072660817912778868">
                   <node role="operand" roleId="tpee.1197027771414" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="6072660817912778875">
-                    <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="23p2.5580426463526010522" resolveInfo="ValuePropagationResultHelper" />
+                    <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="23p2.5580426463526010522" resolveInfo="ConstantPropagationResultHelper" />
                     <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="23p2.5580426463526010550" resolveInfo="getInstance" />
                   </node>
                   <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="6072660817912778874">
@@ -1103,7 +1103,7 @@
             <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="6072660817912778902">
               <node role="operand" roleId="tpee.1197027771414" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="2416710259287256896">
                 <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="23p2.1951948517712404629" resolveInfo="getInstance" />
-                <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="23p2.1951948517712404329" resolveInfo="ConstantPropagationResultHelper" />
+                <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="23p2.1951948517712404329" resolveInfo="ConstantDetectionResultHelper" />
               </node>
               <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="6072660817912778908">
                 <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="23p2.6072660817912778796" resolveInfo="clear" />
@@ -1137,7 +1137,7 @@
                 </node>
               </node>
               <node role="initializer" roleId="tpee.1068431790190" type="bj1v.AnalyzerRunnerCreator" typeId="bj1v.95073643532950038" id="3791846458263577210">
-                <link role="analyzer" roleId="bj1v.95073643532950039" targetNodeId="23p2.6710775822621496779" resolveInfo="ConstantStateAnalyzer" />
+                <link role="analyzer" roleId="bj1v.95073643532950039" targetNodeId="23p2.6710775822621496779" resolveInfo="ConstantDetectionAnalyzer" />
                 <node role="nodeToCheck" roleId="bj1v.178770917832625312" type="tpd4.ApplicableNodeReference" typeId="tpd4.1174650418652" id="6710775822621544610">
                   <link role="applicableNode" roleId="tpd4.1174650432090" targetNodeId="6710775822621544605" resolveInfo="function" />
                 </node>
