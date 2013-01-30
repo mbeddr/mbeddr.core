@@ -19,6 +19,7 @@
   <import index="k146" modelUID="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" version="2" implicit="yes" />
   <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="19" implicit="yes" />
   <import index="yz9a" modelUID="r:734c02dd-cc16-4184-99eb-5fd9f43aa37e(com.mbeddr.core.unittest.structure)" version="0" implicit="yes" />
+  <import index="v0r9" modelUID="r:277b15fc-1383-4213-8385-5a16481fa36c(com.mbeddr.ext.components.test.structure)" version="4" implicit="yes" />
   <roots>
     <node type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="4643433264761154524">
       <property name="name" nameId="tpck.1169194664001" value="StatemachineCompTests" />
@@ -30,6 +31,9 @@
     </node>
     <node type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="268054603277370027">
       <property name="name" nameId="tpck.1169194664001" value="Main" />
+    </node>
+    <node type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="268054603277645420">
+      <property name="name" nameId="tpck.1169194664001" value="TestSMInComp" />
     </node>
   </roots>
   <root id="4643433264761154524">
@@ -363,6 +367,9 @@
       <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="268054603277638416">
         <link role="module" roleId="51wr.7717755763392524108" targetNodeId="268054603277369990" resolveInfo="PortOpCallInSM" />
       </node>
+      <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="268054603277645474">
+        <link role="module" roleId="51wr.7717755763392524108" targetNodeId="268054603277645420" resolveInfo="TestSMInComp" />
+      </node>
       <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="268054603277638418">
         <link role="module" roleId="51wr.7717755763392524108" targetNodeId="268054603277370027" resolveInfo="Main" />
       </node>
@@ -620,6 +627,9 @@
             <node role="tests" roleId="yz9a.5686538669182341016" type="yz9a.TestCaseRef" typeId="yz9a.5686538669182340985" id="268054603277370034">
               <link role="testcase" roleId="yz9a.5686538669182340986" targetNodeId="268054603277370013" resolveInfo="testPortOpCallInSM" />
             </node>
+            <node role="tests" roleId="yz9a.5686538669182341016" type="yz9a.TestCaseRef" typeId="yz9a.5686538669182340985" id="268054603277645477">
+              <link role="testcase" roleId="yz9a.5686538669182340986" targetNodeId="268054603277645468" resolveInfo="testSMInComp" />
+            </node>
           </node>
         </node>
       </node>
@@ -639,6 +649,114 @@
     </node>
     <node role="imports" roleId="x27k.1317894735999304826" type="x27k.ModuleImport" typeId="x27k.1317894735999299713" id="268054603277370033">
       <link role="module" roleId="x27k.1317894735999299714" targetNodeId="4643433264761154524" resolveInfo="StatemachineCompTests" />
+    </node>
+    <node role="imports" roleId="x27k.1317894735999304826" type="x27k.ModuleImport" typeId="x27k.1317894735999299713" id="268054603277645476">
+      <link role="module" roleId="x27k.1317894735999299714" targetNodeId="268054603277645420" resolveInfo="TestSMInComp" />
+    </node>
+  </root>
+  <root id="268054603277645420">
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="268054603277645434">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1359545838084_6" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="v7ag.AtomicComponent" typeId="v7ag.4491876417845649011" id="268054603277645435">
+      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
+      <property name="name" nameId="tpck.1169194664001" value="Client" />
+      <node role="contents" roleId="v7ag.6041318036221669720" type="8yj6.StatemachineComponentAdapter" typeId="8yj6.8663730687027689188" id="268054603277645437">
+        <node role="machine" roleId="8yj6.8663730687027689238" type="clqz.Statemachine" typeId="clqz.5778488248013533809" id="268054603277645438">
+          <property name="name" nameId="tpck.1169194664001" value="SM" />
+          <link role="initial" roleId="clqz.5778488248013533842" targetNodeId="268054603277645440" resolveInfo="S1" />
+          <node role="contents" roleId="clqz.7835233251114737454" type="clqz.InEvent" typeId="clqz.4643433264760980253" id="268054603277645439">
+            <property name="name" nameId="tpck.1169194664001" value="e" />
+          </node>
+          <node role="contents" roleId="clqz.7835233251114737454" type="clqz.State" typeId="clqz.5778488248013533839" id="268054603277645440">
+            <property name="name" nameId="tpck.1169194664001" value="S1" />
+            <node role="contents" roleId="clqz.4249345261280348989" type="clqz.Transition" typeId="clqz.5778488248013533883" id="268054603277645441">
+              <link role="targetState" roleId="clqz.5778488248013533913" targetNodeId="268054603277645447" resolveInfo="S2" />
+              <node role="trigger" roleId="clqz.3670856444174351950" type="clqz.Trigger" typeId="clqz.1786180596061233739" id="268054603277645442">
+                <link role="event" roleId="clqz.8951398808641876049" targetNodeId="268054603277645439" resolveInfo="e" />
+              </node>
+            </node>
+          </node>
+          <node role="contents" roleId="clqz.7835233251114737454" type="clqz.State" typeId="clqz.5778488248013533839" id="268054603277645447">
+            <property name="name" nameId="tpck.1169194664001" value="S2" />
+          </node>
+        </node>
+      </node>
+      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Field" typeId="v7ag.5308710777891512019" id="268054603277645448">
+        <property name="name" nameId="tpck.1169194664001" value="sm" />
+        <node role="type" roleId="mj1l.318113533128716676" type="clqz.StatemachineType" typeId="clqz.7851711690674263345" id="268054603277645449">
+          <link role="machine" roleId="clqz.7851711690674263346" targetNodeId="268054603277645438" resolveInfo="SM" />
+        </node>
+      </node>
+      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="268054603277645450">
+        <property name="name" nameId="tpck.1169194664001" value="aRunnable" />
+        <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="268054603277645451">
+          <node role="statements" roleId="c4fa.4185783222026475862" type="clqz.InitializeSMStatement" typeId="clqz.1786180596061208520" id="268054603277645452">
+            <node role="statemachine" roleId="clqz.1786180596061208522" type="v7ag.FieldRef" typeId="v7ag.5308710777891565561" id="268054603277645453">
+              <link role="field" roleId="v7ag.5308710777891565562" targetNodeId="268054603277645448" resolveInfo="sm" />
+            </node>
+          </node>
+          <node role="statements" roleId="c4fa.4185783222026475862" type="clqz.TriggerSMStatement" typeId="clqz.7851711690674279259" id="268054603277645454">
+            <link role="event" roleId="clqz.1786180596061231919" targetNodeId="268054603277645439" resolveInfo="e" />
+            <node role="statemachine" roleId="clqz.7851711690674279260" type="v7ag.FieldRef" typeId="v7ag.5308710777891565561" id="268054603277645455">
+              <link role="field" roleId="v7ag.5308710777891565562" targetNodeId="268054603277645448" resolveInfo="sm" />
+            </node>
+          </node>
+          <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="268054603277658427">
+            <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="268054603277658427" />
+            <node role="expr" roleId="yz9a.6275792049641587288" type="clqz.IsInStateExpression" typeId="clqz.2558982571829189197" id="268054603277658429">
+              <link role="state" roleId="clqz.2558982571829202228" targetNodeId="268054603277645447" resolveInfo="S2" />
+              <node role="expr" roleId="clqz.2558982571829189198" type="v7ag.FieldRef" typeId="v7ag.5308710777891565561" id="268054603277658431">
+                <link role="field" roleId="v7ag.5308710777891565562" targetNodeId="268054603277645448" resolveInfo="sm" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="yz9a.TestHelperFunctionAnnotation" typeId="yz9a.8230733038425966121" id="268054603277658425" />
+        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="268054603277658434">
+          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+        </node>
+      </node>
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="268054603277645478">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1359546444689_1" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="268054603277645460">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1359545845251_8" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="v7ag.InstanceConfiguration" typeId="v7ag.4491876417845649024" id="268054603277645461">
+      <property name="name" nameId="tpck.1169194664001" value="instances" />
+      <node role="contents" roleId="v7ag.7780999115923944213" type="v7ag.ComponentInstance" typeId="v7ag.4491876417845649014" id="268054603277645462">
+        <property name="name" nameId="tpck.1169194664001" value="c" />
+        <link role="component" roleId="v7ag.4491876417845649015" targetNodeId="268054603277645435" resolveInfo="Client" />
+      </node>
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="268054603277645467">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1359545847483_11" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="yz9a.TestCase" typeId="yz9a.6275792049641586523" id="268054603277645468">
+      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
+      <property name="name" nameId="tpck.1169194664001" value="testSMInComp" />
+      <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="268054603277645469">
+        <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+        <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+      </node>
+      <node role="body" roleId="yz9a.6275792049641586525" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="268054603277645470">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="v7ag.InitializeConfiguration" typeId="v7ag.591155063063570513" id="268054603277645471">
+          <link role="config" roleId="v7ag.591155063063570514" targetNodeId="268054603277645461" resolveInfo="instances" />
+        </node>
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="268054603277658436">
+          <node role="expr" roleId="c4fa.7254843406768833939" type="v0r9.DirectRunnableCall" typeId="v0r9.8230733038424928674" id="268054603277658437">
+            <link role="config" roleId="v7ag.1482737808881210673" targetNodeId="268054603277645461" resolveInfo="instances" />
+            <link role="instance" roleId="v7ag.1482737808881210674" targetNodeId="268054603277645462" resolveInfo="c" />
+            <link role="runnable" roleId="v0r9.6105672464781003798" targetNodeId="268054603277645450" resolveInfo="aRunnable" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="268054603277645472">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1359545807637_3" />
     </node>
   </root>
 </model>
