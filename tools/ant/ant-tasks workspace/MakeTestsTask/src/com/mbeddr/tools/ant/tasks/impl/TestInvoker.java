@@ -51,8 +51,10 @@ public class TestInvoker implements MakeExecutor {
 
 	private Process createMakeTestProcess(File workingDirectory)
 			throws IOException {
-		return util.createProcess(workingDirectory, new ProcessBuilder(
-				"make", "test"));
+		List<String> commandList = new ArrayList<String>();
+		commandList.add("make");
+		commandList.add("test");
+		return util.createProcess(workingDirectory, util.createPlatformSpecificProcessBuilder(commandList));
 	}
 
 	private List<File> filterTests(List<File> makeFiles) {

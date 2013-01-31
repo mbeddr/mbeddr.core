@@ -4,6 +4,7 @@ import java.io.BufferedReader;
 import java.io.File;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.List;
 import java.util.concurrent.CountDownLatch;
 
 import org.apache.tools.ant.Project;
@@ -14,6 +15,20 @@ public class Util {
 
 	public Util(Project project) {
 		this.project = project;
+	}
+	
+	public ProcessBuilder createPlatformSpecificProcessBuilder(List<String> commandAndArguments) {
+		ProcessBuilder processBuilder = null;
+		if(System.getProperty("os.name").toLowerCase().contains("win")) {
+			addWindowsCmdPrefix(commandAndArguments);
+		} 
+		processBuilder = new ProcessBuilder(commandAndArguments);
+		return processBuilder;
+	}
+	
+	private void addWindowsCmdPrefix(List<String> commandAndArguments) {
+		commandAndArguments.add(0, "/c");
+		commandAndArguments.add(0, "cmd");
 	}
 
 	public Process createProcess(File workingDirectory,

@@ -18,7 +18,9 @@ public class LibraryBuilder implements MakeExecutor {
 	private int totalNumberOfFailures = 0;
 	
 	private Process createMakeProcess(File workingDirectory) throws IOException {
-		return util.createProcess(workingDirectory, new ProcessBuilder("make"));
+		List<String> commandList = new ArrayList<String>();
+		commandList.add("make");
+		return util.createProcess(workingDirectory, util.createPlatformSpecificProcessBuilder(commandList));
 	}
 	
 	private List<File> filterLibraries(List<File> makeFiles) {
