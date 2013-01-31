@@ -15,7 +15,8 @@
  
  <taskdef resource="jetbrains/mps/build/ant/antlib.xml"
           classpathref="mps.ant.path"/>
-
+ <taskdef name="make-tests" classname="com.mbeddr.tools.ant.MakeTestsTask" classpath="${mbeddr.github.core.home}/tools/ant/tasks/MakeTestsTask.jar" />
+ 
   <property name="mbeddr.core.project.dir" value="code/languages/com.mbeddr.core"/>
   <property name="mbeddr.core.project.mpr" value="code/languages/com.mbeddr.core/core.dev.mpr"/>
   
@@ -97,7 +98,12 @@
       </mps.generate>
   </target>
 
-  
+  <target name="make-tests" description="Run 'make test' for child Makefiles">
+  		
+  		<make-tests workingDirectory="${basedir}"/>
+		
+  </target>
+    
  <target name="run-ts-tests" >
     
     <echo message="mbeddr.github.core.home = ${mbeddr.github.core.home}"/>
@@ -111,7 +117,7 @@
       <jvmarg value="-XX:MaxPermSize=256m"/>
       <jvmarg value="-XX:+HeapDumpOnOutOfMemoryError"/>
       
-      
+      <sysproperty key="idea.load.plugins" value="true"/>
       <sysproperty key="idea.system.path" value="${mps.platform.caches}/system"/>
       <sysproperty key="idea.config.path" value="${mps.platform.caches}/config"/>
       <sysproperty key="idea.plugins.path" value="${mps.platform.caches}/plugins"/>
