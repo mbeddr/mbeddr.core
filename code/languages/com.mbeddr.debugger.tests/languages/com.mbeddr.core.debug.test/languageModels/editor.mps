@@ -4,7 +4,7 @@
   <language namespace="18bc6592-03a6-4e29-a83a-7ff23bde13ba(jetbrains.mps.lang.editor)" />
   <language namespace="f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)" />
   <language namespace="7866978e-a0f0-4cc7-81bc-4d213d9375e1(jetbrains.mps.lang.smodel)" />
-  <import index="rpmx" modelUID="r:64720d49-3cb5-4469-81c5-0c62eda0a2cb(com.mbeddr.core.debug.test.structure)" version="39" />
+  <import index="rpmx" modelUID="r:64720d49-3cb5-4469-81c5-0c62eda0a2cb(com.mbeddr.core.debug.test.structure)" version="41" />
   <import index="tpen" modelUID="r:00000000-0000-4000-0000-011c895902c3(jetbrains.mps.baseLanguage.editor)" version="-1" />
   <import index="yz9a" modelUID="r:734c02dd-cc16-4184-99eb-5fd9f43aa37e(com.mbeddr.core.unittest.structure)" version="0" />
   <import index="k7g3" modelUID="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.util(JDK/java.util@java_stub)" version="-1" />
@@ -21,14 +21,14 @@
       <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="rpmx.4193597469137492628" resolveInfo="MarkerAnnotation" />
     </node>
     <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="4193597469137492712">
-      <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="rpmx.4193597469137492636" resolveInfo="DebuggerTestMethod" />
+      <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="rpmx.4193597469137492636" resolveInfo="DebuggerTestCase" />
     </node>
     <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="4193597469137492721">
       <property name="virtualPackage" nameId="tpck.1193676396447" value="marker" />
       <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="rpmx.4193597469137492644" resolveInfo="MarkerRef" />
     </node>
     <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="7048220250905867894">
-      <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="rpmx.7048220250905867886" resolveInfo="DebuggerTestCase" />
+      <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="rpmx.7048220250905867886" resolveInfo="DebuggerTest" />
     </node>
     <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="7048220250906041084">
       <property name="virtualPackage" nameId="tpck.1193676396447" value="validation.kinds.callstack-depth" />
