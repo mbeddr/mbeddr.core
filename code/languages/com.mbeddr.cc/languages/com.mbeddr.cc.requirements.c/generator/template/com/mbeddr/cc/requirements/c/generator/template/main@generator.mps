@@ -14,6 +14,7 @@
     <node type="tpf8.MappingConfiguration" typeId="tpf8.1095416546421" id="3534497005926849081">
       <property name="name" nameId="tpck.1169194664001" value="main" />
       <property name="topPriorityGroup" nameId="tpf8.1184950341882" value="true" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="constant" />
     </node>
   </roots>
   <root id="3534497005926849081">

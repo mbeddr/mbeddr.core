@@ -12,9 +12,11 @@
   <import index="tpcu" modelUID="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" version="-1" implicit="yes" />
   <roots>
     <node type="1i04.ConceptBehavior" typeId="1i04.1225194240794" id="3534497005926837606">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="constant" />
       <link role="concept" roleId="1i04.1225194240799" targetNodeId="3vkx.3534497005926837262" resolveInfo="RConstant" />
     </node>
     <node type="1i04.ConceptBehavior" typeId="1i04.1225194240794" id="3534497005926844905">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="constant" />
       <link role="concept" roleId="1i04.1225194240799" targetNodeId="3vkx.3534497005926837277" resolveInfo="RConstantRef" />
     </node>
   </roots>
