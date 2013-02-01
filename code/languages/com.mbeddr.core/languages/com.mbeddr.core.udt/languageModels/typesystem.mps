@@ -1287,38 +1287,6 @@
   </root>
   <root id="3073566081777327938">
     <node role="body" roleId="tpd4.1195213635060" type="tpee.StatementList" typeId="tpee.1068580123136" id="3073566081777327939">
-      <node role="statement" roleId="tpee.1068581517665" type="tpd4.CreateEquationStatement" typeId="tpd4.1174658326157" id="3073566081777328027">
-        <node role="rightExpression" roleId="tpd4.1174660783414" type="tpd4.NormalTypeClause" typeId="tpd4.1185788614172" id="3073566081777328031">
-          <node role="normalType" roleId="tpd4.1185788644032" type="tpd4.TypeOfExpression" typeId="tpd4.1174657487114" id="3073566081777328032">
-            <node role="term" roleId="tpd4.1174657509053" type="tpee.DotExpression" typeId="tpee.1197027756228" id="1049346859913667386">
-              <node role="operand" roleId="tpee.1197027771414" type="tpee.GenericNewExpression" typeId="tpee.1145552977093" id="1049346859913665419">
-                <node role="creator" roleId="tpee.1145553007750" type="tpee.ClassCreator" typeId="tpee.1212685548494" id="1049346859913667337">
-                  <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="ywuz.3073566081776970565" resolveInfo="ContextTypeHelper" />
-                  <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.DotExpression" typeId="tpee.1197027756228" id="1049346859913667359">
-                    <node role="operand" roleId="tpee.1197027771414" type="tpd4.ApplicableNodeReference" typeId="tpd4.1174650418652" id="1049346859913667338">
-                      <link role="applicableNode" roleId="tpd4.1174650432090" targetNodeId="3073566081777327940" resolveInfo="uie" />
-                    </node>
-                    <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_GetParentOperation" typeId="tp25.1139613262185" id="1049346859913667365" />
-                  </node>
-                </node>
-              </node>
-              <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="1049346859913667392">
-                <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="ywuz.1049346859913665322" resolveInfo="getContextType" />
-                <node role="actualArgument" roleId="tpee.1068499141038" type="tp25.ConceptRefExpression" typeId="tp25.1172424058054" id="1049346859913667393">
-                  <link role="conceptDeclaration" roleId="tp25.1172424100906" targetNodeId="clbe.5882395403881907205" resolveInfo="UnionType" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node role="leftExpression" roleId="tpd4.1174660783413" type="tpd4.NormalTypeClause" typeId="tpd4.1185788614172" id="3073566081777328030">
-          <node role="normalType" roleId="tpd4.1185788644032" type="tpd4.TypeOfExpression" typeId="tpd4.1174657487114" id="3073566081777327942">
-            <node role="term" roleId="tpd4.1174657509053" type="tpd4.ApplicableNodeReference" typeId="tpd4.1174650418652" id="3073566081777327944">
-              <link role="applicableNode" roleId="tpd4.1174650432090" targetNodeId="3073566081777327940" resolveInfo="uie" />
-            </node>
-          </node>
-        </node>
-      </node>
       <node role="statement" roleId="tpee.1068581517665" type="tpd4.CreateLessThanInequationStatement" typeId="tpd4.1174663118805" id="3073566081777328144">
         <node role="rightExpression" roleId="tpd4.1174660783414" type="tpd4.NormalTypeClause" typeId="tpd4.1185788614172" id="3073566081777328150">
           <node role="normalType" roleId="tpd4.1185788644032" type="tpd4.TypeOfExpression" typeId="tpd4.1174657487114" id="3073566081777328151">
