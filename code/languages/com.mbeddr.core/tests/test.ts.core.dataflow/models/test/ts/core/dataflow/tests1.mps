@@ -3412,14 +3412,14 @@
                     </node>
                   </node>
                 </node>
-                <node role="memberAssigns" roleId="k146.3059865549680413567" type="k146.WithMemberAssignment" typeId="k146.3073566081777391256" id="5579776927402792379">
+                <node role="memberAssigns" roleId="k146.3059865549680413567" type="k146.WithMemberAssignment" typeId="k146.3073566081777391256" id="1682138447509512545">
                   <link role="member" roleId="k146.3073566081777391258" targetNodeId="5579776927402790953" resolveInfo="q" />
-                  <node role="value" roleId="k146.3073566081777391257" type="clbe.StructInitExpression" typeId="clbe.5095889050031607156" id="5579776927402792381">
-                    <node role="elements" roleId="clbe.5095889050031607158" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="5579776927402792382">
-                      <property name="value" nameId="mj1l.8860443239512128104" value="0" />
-                    </node>
-                    <node role="elements" roleId="clbe.5095889050031607158" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="5579776927402792384">
+                  <node role="value" roleId="k146.3073566081777391257" type="clbe.StructInitExpression" typeId="clbe.5095889050031607156" id="1682138447509512549">
+                    <node role="elements" roleId="clbe.5095889050031607158" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="1682138447509512550">
                       <property name="value" nameId="mj1l.8860443239512128104" value="1" />
+                    </node>
+                    <node role="elements" roleId="clbe.5095889050031607158" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="1682138447509512552">
+                      <property name="value" nameId="mj1l.8860443239512128104" value="2" />
                     </node>
                   </node>
                 </node>
