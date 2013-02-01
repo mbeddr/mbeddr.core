@@ -170,9 +170,6 @@
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="2020194812908828630">
       <property name="name" nameId="tpck.1169194664001" value="empty_1333549189962_5" />
     </node>
-    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="912616408885321649">
-      <property name="name" nameId="tpck.1169194664001" value="empty_1345559561059_2" />
-    </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="2020194812908828631">
       <property name="name" nameId="tpck.1169194664001" value="empty_1333549190402_6" />
     </node>
@@ -542,6 +539,7 @@
   </root>
   <root id="211881811397253723" />
   <root id="105850086900682083">
+    <node role="contents" roleId="rpmx.105850086901784219" type="rpmx.EmptyDebuggerContent" typeId="rpmx.105850086901771260" id="105850086902003227" />
     <node role="binaryRef" roleId="rpmx.5100083648679329380" type="rpmx.BinaryRef" typeId="rpmx.5100083648679329379" id="105850086900682084">
       <link role="binary" roleId="rpmx.7048220250906128789" targetNodeId="5728674636025005164" resolveInfo="FunctionPointersTest" />
     </node>
@@ -575,6 +573,7 @@
         <property name="times" nameId="rpmx.610689949604310287" value="1" />
       </node>
     </node>
+    <node role="contents" roleId="rpmx.105850086901784219" type="rpmx.EmptyDebuggerContent" typeId="rpmx.105850086901771260" id="105850086901995259" />
     <node role="contents" roleId="rpmx.105850086901784219" type="rpmx.DebuggerTestCase" typeId="rpmx.4193597469137492636" id="211881811397325011">
       <property name="name" nameId="tpck.1169194664001" value="stepOverReferencedFunction" />
       <property name="active" value="true" />
