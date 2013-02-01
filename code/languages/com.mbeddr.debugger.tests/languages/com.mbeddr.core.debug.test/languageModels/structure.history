@@ -674,5 +674,11 @@
     </dependencies>
     <rename id="rpmx.4193597469137492636" type="CONCEPT" from="DebuggerTestMethod" to="DebuggerTestCase" />
   </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="rpmx" modelUID="r:64720d49-3cb5-4469-81c5-0c62eda0a2cb(com.mbeddr.core.debug.test.structure)" version="41" />
+    </dependencies>
+    <rename id="rpmx.105850086900925271" type="REFERENCE" from="teamplate" to="template" />
+  </StructureModification>
 </history>
 
