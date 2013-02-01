@@ -291,7 +291,10 @@
   </root>
   <root id="1423209693057696534" />
   <root id="105850086900725342">
-    <node role="testMethods" roleId="rpmx.1217501895093" type="rpmx.DebuggerTestCase" typeId="rpmx.4193597469137492636" id="5580547245468826511">
+    <node role="binaryRef" roleId="rpmx.5100083648679329380" type="rpmx.BinaryRef" typeId="rpmx.5100083648679329379" id="105850086900725344">
+      <link role="binary" roleId="rpmx.7048220250906128789" targetNodeId="3812351604230115929" resolveInfo="CommentTest" />
+    </node>
+    <node role="contents" roleId="rpmx.105850086901176488" type="rpmx.DebuggerTestCase" typeId="rpmx.4193597469137492636" id="5580547245468826511">
       <property name="name" nameId="tpck.1169194664001" value="suspendOnASingleLineComment" />
       <property name="active" value="true" />
       <node role="returnType" roleId="tpee.1068580123133" type="tpee.VoidType" typeId="tpee.1068581517677" id="5580547245468826512" />
@@ -307,7 +310,7 @@
         <link role="marker" roleId="rpmx.4193597469137492645" targetNodeId="5580547245468830916" resolveInfo="firstComment" />
       </node>
     </node>
-    <node role="testMethods" roleId="rpmx.1217501895093" type="rpmx.DebuggerTestCase" typeId="rpmx.4193597469137492636" id="5580547245468826518">
+    <node role="contents" roleId="rpmx.105850086901176488" type="rpmx.DebuggerTestCase" typeId="rpmx.4193597469137492636" id="5580547245468826518">
       <property name="name" nameId="tpck.1169194664001" value="stepOverStatementBeforeSingleLineComment" />
       <property name="active" value="true" />
       <node role="returnType" roleId="tpee.1068580123133" type="tpee.VoidType" typeId="tpee.1068581517677" id="5580547245468826519" />
@@ -334,7 +337,7 @@
         <property name="times" nameId="rpmx.610689949604310287" value="1" />
       </node>
     </node>
-    <node role="testMethods" roleId="rpmx.1217501895093" type="rpmx.DebuggerTestCase" typeId="rpmx.4193597469137492636" id="5580547245468832420">
+    <node role="contents" roleId="rpmx.105850086901176488" type="rpmx.DebuggerTestCase" typeId="rpmx.4193597469137492636" id="5580547245468832420">
       <property name="name" nameId="tpck.1169194664001" value="stepOverStatementBeforeMultiLineComment" />
       <property name="active" value="true" />
       <node role="returnType" roleId="tpee.1068580123133" type="tpee.VoidType" typeId="tpee.1068581517677" id="5580547245468832421" />
@@ -361,7 +364,7 @@
         <property name="times" nameId="rpmx.610689949604310287" value="1" />
       </node>
     </node>
-    <node role="testMethods" roleId="rpmx.1217501895093" type="rpmx.DebuggerTestCase" typeId="rpmx.4193597469137492636" id="5580547245468826533">
+    <node role="contents" roleId="rpmx.105850086901176488" type="rpmx.DebuggerTestCase" typeId="rpmx.4193597469137492636" id="5580547245468826533">
       <property name="name" nameId="tpck.1169194664001" value="suspendInTestCaseWithSingleComment" />
       <property name="active" value="true" />
       <node role="returnType" roleId="tpee.1068580123133" type="tpee.VoidType" typeId="tpee.1068581517677" id="5580547245468826534" />
@@ -384,9 +387,6 @@
       <node role="suspensionPoint" roleId="rpmx.105850086900323684" type="rpmx.MarkerRef" typeId="rpmx.4193597469137492644" id="5580547245468826537">
         <link role="marker" roleId="rpmx.4193597469137492645" targetNodeId="5580547245468826507" resolveInfo="secondComment" />
       </node>
-    </node>
-    <node role="binaryRef" roleId="rpmx.5100083648679329380" type="rpmx.BinaryRef" typeId="rpmx.5100083648679329379" id="105850086900725344">
-      <link role="binary" roleId="rpmx.7048220250906128789" targetNodeId="3812351604230115929" resolveInfo="CommentTest" />
     </node>
   </root>
 </model>

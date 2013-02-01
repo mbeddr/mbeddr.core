@@ -474,7 +474,10 @@
   </root>
   <root id="1423209693057696534" />
   <root id="105850086900725349">
-    <node role="testMethods" roleId="rpmx.1217501895093" type="rpmx.DebuggerTestCase" typeId="rpmx.4193597469137492636" id="1113553024390824329">
+    <node role="binaryRef" roleId="rpmx.5100083648679329380" type="rpmx.BinaryRef" typeId="rpmx.5100083648679329379" id="105850086900725350">
+      <link role="binary" roleId="rpmx.7048220250906128789" targetNodeId="1113553024390704829" resolveInfo="SwitchCaseTest" />
+    </node>
+    <node role="contents" roleId="rpmx.105850086901176488" type="rpmx.DebuggerTestCase" typeId="rpmx.4193597469137492636" id="1113553024390824329">
       <property name="name" nameId="tpck.1169194664001" value="suspendOnConditionOfUnoptimizedSwitchCase" />
       <property name="active" value="true" />
       <node role="returnType" roleId="tpee.1068580123133" type="tpee.VoidType" typeId="tpee.1068581517677" id="1113553024390824330" />
@@ -490,7 +493,7 @@
         <link role="marker" roleId="rpmx.4193597469137492645" targetNodeId="1113553024390824333" resolveInfo="conditionOf1stSwitchCase" />
       </node>
     </node>
-    <node role="testMethods" roleId="rpmx.1217501895093" type="rpmx.DebuggerTestCase" typeId="rpmx.4193597469137492636" id="1113553024390830538">
+    <node role="contents" roleId="rpmx.105850086901176488" type="rpmx.DebuggerTestCase" typeId="rpmx.4193597469137492636" id="1113553024390830538">
       <property name="name" nameId="tpck.1169194664001" value="stepToUnoptimizedSwitchCaseCondition" />
       <property name="active" value="true" />
       <node role="returnType" roleId="tpee.1068580123133" type="tpee.VoidType" typeId="tpee.1068581517677" id="1113553024390830539" />
@@ -509,7 +512,7 @@
         <property name="times" nameId="rpmx.610689949604310287" value="1" />
       </node>
     </node>
-    <node role="testMethods" roleId="rpmx.1217501895093" type="rpmx.DebuggerTestCase" typeId="rpmx.4193597469137492636" id="1113553024390830546">
+    <node role="contents" roleId="rpmx.105850086901176488" type="rpmx.DebuggerTestCase" typeId="rpmx.4193597469137492636" id="1113553024390830546">
       <property name="name" nameId="tpck.1169194664001" value="stepFromUnoptimizedSwitchCaseConditionToFirstCase" />
       <property name="active" value="true" />
       <node role="returnType" roleId="tpee.1068580123133" type="tpee.VoidType" typeId="tpee.1068581517677" id="1113553024390830547" />
@@ -528,7 +531,7 @@
         <property name="times" nameId="rpmx.610689949604310287" value="1" />
       </node>
     </node>
-    <node role="testMethods" roleId="rpmx.1217501895093" type="rpmx.DebuggerTestCase" typeId="rpmx.4193597469137492636" id="1113553024390830554">
+    <node role="contents" roleId="rpmx.105850086901176488" type="rpmx.DebuggerTestCase" typeId="rpmx.4193597469137492636" id="1113553024390830554">
       <property name="name" nameId="tpck.1169194664001" value="stepOverCaseStatementBeforeBreak" />
       <property name="active" value="true" />
       <node role="returnType" roleId="tpee.1068580123133" type="tpee.VoidType" typeId="tpee.1068581517677" id="1113553024390830555" />
@@ -547,7 +550,7 @@
         <property name="times" nameId="rpmx.610689949604310287" value="1" />
       </node>
     </node>
-    <node role="testMethods" roleId="rpmx.1217501895093" type="rpmx.DebuggerTestCase" typeId="rpmx.4193597469137492636" id="1113553024390830562">
+    <node role="contents" roleId="rpmx.105850086901176488" type="rpmx.DebuggerTestCase" typeId="rpmx.4193597469137492636" id="1113553024390830562">
       <property name="name" nameId="tpck.1169194664001" value="stepFromUnoptimizedSwitchCaseConditionToDefault" />
       <property name="active" value="true" />
       <node role="returnType" roleId="tpee.1068580123133" type="tpee.VoidType" typeId="tpee.1068581517677" id="1113553024390830563" />
@@ -566,7 +569,7 @@
         <property name="times" nameId="rpmx.610689949604310287" value="1" />
       </node>
     </node>
-    <node role="testMethods" roleId="rpmx.1217501895093" type="rpmx.DebuggerTestCase" typeId="rpmx.4193597469137492636" id="1113553024390830566">
+    <node role="contents" roleId="rpmx.105850086901176488" type="rpmx.DebuggerTestCase" typeId="rpmx.4193597469137492636" id="1113553024390830566">
       <property name="name" nameId="tpck.1169194664001" value="stepOverLastDefaultStatement" />
       <property name="active" value="true" />
       <node role="returnType" roleId="tpee.1068580123133" type="tpee.VoidType" typeId="tpee.1068581517677" id="1113553024390830567" />
@@ -585,7 +588,7 @@
         <link role="marker" roleId="rpmx.4193597469137492645" targetNodeId="1113553024390824317" resolveInfo="stmntInDefaultOf2ndSwitchCase" />
       </node>
     </node>
-    <node role="testMethods" roleId="rpmx.1217501895093" type="rpmx.DebuggerTestCase" typeId="rpmx.4193597469137492636" id="1113553024392945574">
+    <node role="contents" roleId="rpmx.105850086901176488" type="rpmx.DebuggerTestCase" typeId="rpmx.4193597469137492636" id="1113553024392945574">
       <property name="active" value="true" />
       <property name="name" nameId="tpck.1169194664001" value="stepIntoNestedSwitchCaseWithOptimizedCondition" />
       <node role="returnType" roleId="tpee.1068580123133" type="tpee.VoidType" typeId="tpee.1068581517677" id="1113553024392945575" />
@@ -603,9 +606,6 @@
       <node role="steppingCommands" roleId="rpmx.105850086900323685" type="rpmx.StepOverCommand" typeId="rpmx.4231345613098876381" id="1113553024392945579">
         <property name="times" nameId="rpmx.610689949604310287" value="1" />
       </node>
-    </node>
-    <node role="binaryRef" roleId="rpmx.5100083648679329380" type="rpmx.BinaryRef" typeId="rpmx.5100083648679329379" id="105850086900725350">
-      <link role="binary" roleId="rpmx.7048220250906128789" targetNodeId="1113553024390704829" resolveInfo="SwitchCaseTest" />
     </node>
   </root>
 </model>

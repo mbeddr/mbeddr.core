@@ -310,7 +310,10 @@
   </root>
   <root id="1423209693057696534" />
   <root id="105850086900725276">
-    <node role="testMethods" roleId="rpmx.1217501895093" type="rpmx.DebuggerTestCase" typeId="rpmx.4193597469137492636" id="211881811397183369">
+    <node role="binaryRef" roleId="rpmx.5100083648679329380" type="rpmx.BinaryRef" typeId="rpmx.5100083648679329379" id="105850086900725277">
+      <link role="binary" roleId="rpmx.7048220250906128789" targetNodeId="6610873504380384111" resolveInfo="GlobalVariablesTest" />
+    </node>
+    <node role="contents" roleId="rpmx.105850086901176488" type="rpmx.DebuggerTestCase" typeId="rpmx.4193597469137492636" id="211881811397183369">
       <property name="name" nameId="tpck.1169194664001" value="onlyGlobalsVisible" />
       <property name="active" value="true" />
       <node role="returnType" roleId="tpee.1068580123133" type="tpee.VoidType" typeId="tpee.1068581517677" id="211881811397183370" />
@@ -329,7 +332,7 @@
         <link role="marker" roleId="rpmx.4193597469137492645" targetNodeId="211881811397183366" resolveInfo="mainFunction" />
       </node>
     </node>
-    <node role="testMethods" roleId="rpmx.1217501895093" type="rpmx.DebuggerTestCase" typeId="rpmx.4193597469137492636" id="211881811397184233">
+    <node role="contents" roleId="rpmx.105850086901176488" type="rpmx.DebuggerTestCase" typeId="rpmx.4193597469137492636" id="211881811397184233">
       <property name="name" nameId="tpck.1169194664001" value="suspendInsideImportedModule" />
       <property name="active" value="true" />
       <node role="returnType" roleId="tpee.1068580123133" type="tpee.VoidType" typeId="tpee.1068581517677" id="211881811397184234" />
@@ -345,7 +348,7 @@
         <link role="marker" roleId="rpmx.4193597469137492645" targetNodeId="211881811397184237" resolveInfo="calledFunctionInsideImportedModule" />
       </node>
     </node>
-    <node role="testMethods" roleId="rpmx.1217501895093" type="rpmx.DebuggerTestCase" typeId="rpmx.4193597469137492636" id="211881811397184243">
+    <node role="contents" roleId="rpmx.105850086901176488" type="rpmx.DebuggerTestCase" typeId="rpmx.4193597469137492636" id="211881811397184243">
       <property name="name" nameId="tpck.1169194664001" value="localAndGlobalVariables" />
       <property name="active" value="true" />
       <node role="returnType" roleId="tpee.1068580123133" type="tpee.VoidType" typeId="tpee.1068581517677" id="211881811397184244" />
@@ -369,9 +372,6 @@
       <node role="suspensionPoint" roleId="rpmx.105850086900323684" type="rpmx.MarkerRef" typeId="rpmx.4193597469137492644" id="211881811397184248">
         <link role="marker" roleId="rpmx.4193597469137492645" targetNodeId="211881811397184242" resolveInfo="mixingGlobalAndLocalVariables" />
       </node>
-    </node>
-    <node role="binaryRef" roleId="rpmx.5100083648679329380" type="rpmx.BinaryRef" typeId="rpmx.5100083648679329379" id="105850086900725277">
-      <link role="binary" roleId="rpmx.7048220250906128789" targetNodeId="6610873504380384111" resolveInfo="GlobalVariablesTest" />
     </node>
   </root>
 </model>
