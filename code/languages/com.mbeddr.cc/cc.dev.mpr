@@ -25,9 +25,9 @@
       <modulePath path="${project}/languages/com.mbeddr.cc.var.rt/rt.mpl" folder="ple_var" />
       <modulePath path="${project}/tests/test.ex.cc.fm/fm.msd" folder="tests" />
       <modulePath path="${project}/tests/test.ex.cc.fmrt/fmrt.msd" folder="tests" />
+      <modulePath path="${project}/tests/test.ex.cc.requirements.c/c.msd" folder="tests" />
       <modulePath path="${project}/tests/test.ts.cc.archdec/archdec.msd" folder="tests" />
       <modulePath path="${project}/tests/test.ts.cc.requirements/requirements.msd" folder="tests" />
-      <modulePath path="${project}/tests/test.ts.requirements.c/c.msd" folder="tests" />
     </projectModules>
     <genConfs />
   </component>

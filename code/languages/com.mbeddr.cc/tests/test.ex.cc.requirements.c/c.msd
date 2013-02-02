@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="test.ts.requirements.c" uuid="573b21f7-42a0-49fb-9b0f-c30c63a6ba81" compileInMPS="true">
+<solution name="test.ex.cc.requirements.c" uuid="573b21f7-42a0-49fb-9b0f-c30c63a6ba81" compileInMPS="true">
   <models>
     <modelRoot path="${solution_descriptor}/models" />
   </models>
