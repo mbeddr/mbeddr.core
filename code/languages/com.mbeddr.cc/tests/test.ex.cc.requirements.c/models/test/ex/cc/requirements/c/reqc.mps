@@ -181,17 +181,12 @@
       <node role="additionalData" roleId="75wo.8745401669463270518" type="3vkx.RCalculation" typeId="3vkx.3534497005926949315" id="3534497005926953363">
         <property name="name" nameId="tpck.1169194664001" value="rebatedPrice" />
         <property name="descr" nameId="3vkx.3534497005926954227" value="calculates the rebated price" />
-        <node role="expr" roleId="3vkx.3534497005926949336" type="mj1l.PlusExpression" typeId="mj1l.5763383285156373013" id="3562422675424123680">
-          <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3562422675424123683">
-            <property name="value" nameId="mj1l.8860443239512128104" value="1" />
+        <node role="expr" roleId="3vkx.3534497005926949336" type="mj1l.MultiExpression" typeId="mj1l.5763383285156373020" id="3534497005926953372">
+          <node role="left" roleId="mj1l.8860443239512128064" type="3vkx.RParamRef" typeId="3vkx.3534497005926949485" id="3534497005926953369">
+            <link role="param" roleId="3vkx.3534497005926949486" targetNodeId="3534497005926953365" resolveInfo="rebate" />
           </node>
-          <node role="left" roleId="mj1l.8860443239512128064" type="mj1l.MultiExpression" typeId="mj1l.5763383285156373020" id="3534497005926953372">
-            <node role="left" roleId="mj1l.8860443239512128064" type="3vkx.RParamRef" typeId="3vkx.3534497005926949485" id="3534497005926953369">
-              <link role="param" roleId="3vkx.3534497005926949486" targetNodeId="3534497005926953365" resolveInfo="rebate" />
-            </node>
-            <node role="right" roleId="mj1l.8860443239512128065" type="3vkx.RConstantRef" typeId="3vkx.3534497005926837277" id="3534497005926953375">
-              <link role="constant" roleId="3vkx.3534497005926837278" targetNodeId="3534497005926839238" resolveInfo="PRICE" />
-            </node>
+          <node role="right" roleId="mj1l.8860443239512128065" type="3vkx.RConstantRef" typeId="3vkx.3534497005926837277" id="3534497005926953375">
+            <link role="constant" roleId="3vkx.3534497005926837278" targetNodeId="3534497005926839238" resolveInfo="PRICE" />
           </node>
         </node>
         <node role="params" roleId="3vkx.3534497005926949334" type="3vkx.RParam" typeId="3vkx.3534497005926949316" id="3534497005926953365">
@@ -202,19 +197,19 @@
             <property name="const" nameId="mj1l.2941277002445651368" value="false" />
           </node>
         </node>
-        <node role="tests" roleId="3vkx.3562422675424033877" type="3vkx.RTestCase" typeId="3vkx.3562422675423849389" id="3562422675424123674">
-          <node role="expected" roleId="3vkx.3562422675423880817" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3562422675424123677">
-            <property name="value" nameId="mj1l.8860443239512128104" value="101" />
+        <node role="tests" roleId="3vkx.3562422675424033877" type="3vkx.RTestCase" typeId="3vkx.3562422675423849389" id="3562422675424138073">
+          <node role="expected" roleId="3vkx.3562422675423880817" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3562422675424138076">
+            <property name="value" nameId="mj1l.8860443239512128104" value="100" />
           </node>
-          <node role="params" roleId="3vkx.3562422675423859806" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3562422675424123676">
+          <node role="params" roleId="3vkx.3562422675423859806" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3562422675424145554">
             <property name="value" nameId="mj1l.8860443239512128104" value="10" />
           </node>
         </node>
-        <node role="tests" roleId="3vkx.3562422675424033877" type="3vkx.RTestCase" typeId="3vkx.3562422675423849389" id="3562422675424076058">
-          <node role="expected" roleId="3vkx.3562422675423880817" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3562422675424076061">
-            <property name="value" nameId="mj1l.8860443239512128104" value="51" />
+        <node role="tests" roleId="3vkx.3562422675424033877" type="3vkx.RTestCase" typeId="3vkx.3562422675423849389" id="3562422675424138069">
+          <node role="expected" roleId="3vkx.3562422675423880817" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3562422675424138072">
+            <property name="value" nameId="mj1l.8860443239512128104" value="50" />
           </node>
-          <node role="params" roleId="3vkx.3562422675423859806" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3562422675424076060">
+          <node role="params" roleId="3vkx.3562422675423859806" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3562422675424138071">
             <property name="value" nameId="mj1l.8860443239512128104" value="5" />
           </node>
         </node>
