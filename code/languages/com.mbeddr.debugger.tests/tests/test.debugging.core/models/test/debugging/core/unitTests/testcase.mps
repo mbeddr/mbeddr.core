@@ -21,7 +21,7 @@
   <import index="k146" modelUID="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" version="2" implicit="yes" />
   <import index="tp5g" modelUID="r:00000000-0000-4000-0000-011c89590388(jetbrains.mps.lang.test.structure)" version="4" implicit="yes" />
   <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="19" implicit="yes" />
-  <import index="rpmx" modelUID="r:64720d49-3cb5-4469-81c5-0c62eda0a2cb(com.mbeddr.core.debug.test.structure)" version="44" implicit="yes" />
+  <import index="rpmx" modelUID="r:64720d49-3cb5-4469-81c5-0c62eda0a2cb(com.mbeddr.core.debug.test.structure)" version="54" implicit="yes" />
   <import index="yz9a" modelUID="r:734c02dd-cc16-4184-99eb-5fd9f43aa37e(com.mbeddr.core.unittest.structure)" version="0" implicit="yes" />
   <roots>
     <node type="51wr.BuildConfiguration" typeId="51wr.7717755763392524104" id="2812390151934280447">
@@ -466,7 +466,7 @@
             <link role="marker" roleId="rpmx.4193597469137492645" targetNodeId="2812390151934280491" resolveInfo="m3" />
           </node>
         </node>
-        <node role="validations" roleId="rpmx.7048220250906209719" type="rpmx.ValidateCallStack" typeId="rpmx.7048220250906041081" id="2812390151934280583">
+        <node role="validations" roleId="rpmx.7048220250906209719" type="rpmx.ValidateCallStackDepth" typeId="rpmx.7048220250906041081" id="2812390151934280583">
           <node role="depth" roleId="rpmx.7048220250906041083" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="2812390151934280584">
             <property name="value" nameId="tpee.1068580320021" value="2" />
           </node>
@@ -495,7 +495,7 @@
             <link role="marker" roleId="rpmx.4193597469137492645" targetNodeId="2812390151934280463" resolveInfo="m1" />
           </node>
         </node>
-        <node role="validations" roleId="rpmx.7048220250906209719" type="rpmx.ValidateCallStack" typeId="rpmx.7048220250906041081" id="2812390151934280595">
+        <node role="validations" roleId="rpmx.7048220250906209719" type="rpmx.ValidateCallStackDepth" typeId="rpmx.7048220250906041081" id="2812390151934280595">
           <node role="depth" roleId="rpmx.7048220250906041083" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="2812390151934280596">
             <property name="value" nameId="tpee.1068580320021" value="1" />
           </node>
@@ -535,7 +535,7 @@
             <link role="marker" roleId="rpmx.4193597469137492645" targetNodeId="2812390151934280520" resolveInfo="m4" />
           </node>
         </node>
-        <node role="validations" roleId="rpmx.7048220250906209719" type="rpmx.ValidateCallStack" typeId="rpmx.7048220250906041081" id="2812390151934280611">
+        <node role="validations" roleId="rpmx.7048220250906209719" type="rpmx.ValidateCallStackDepth" typeId="rpmx.7048220250906041081" id="2812390151934280611">
           <node role="depth" roleId="rpmx.7048220250906041083" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="2812390151934280612">
             <property name="value" nameId="tpee.1068580320021" value="3" />
           </node>
@@ -570,7 +570,7 @@
             <link role="marker" roleId="rpmx.4193597469137492645" targetNodeId="2812390151934280463" resolveInfo="m1" />
           </node>
         </node>
-        <node role="validations" roleId="rpmx.7048220250906209719" type="rpmx.ValidateCallStack" typeId="rpmx.7048220250906041081" id="2812390151934280625">
+        <node role="validations" roleId="rpmx.7048220250906209719" type="rpmx.ValidateCallStackDepth" typeId="rpmx.7048220250906041081" id="2812390151934280625">
           <node role="depth" roleId="rpmx.7048220250906041083" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="2812390151934280626">
             <property name="value" nameId="tpee.1068580320021" value="1" />
           </node>
@@ -599,7 +599,7 @@
             <link role="marker" roleId="rpmx.4193597469137492645" targetNodeId="2812390151934280463" resolveInfo="m1" />
           </node>
         </node>
-        <node role="validations" roleId="rpmx.7048220250906209719" type="rpmx.ValidateCallStack" typeId="rpmx.7048220250906041081" id="2812390151934280637">
+        <node role="validations" roleId="rpmx.7048220250906209719" type="rpmx.ValidateCallStackDepth" typeId="rpmx.7048220250906041081" id="2812390151934280637">
           <node role="depth" roleId="rpmx.7048220250906041083" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="2812390151934280638">
             <property name="value" nameId="tpee.1068580320021" value="1" />
           </node>

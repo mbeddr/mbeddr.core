@@ -692,5 +692,65 @@
     </dependencies>
     <rename id="rpmx.105850086901784219" type="CHILD" from="icontents" to="contents" />
   </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="rpmx" modelUID="r:64720d49-3cb5-4469-81c5-0c62eda0a2cb(com.mbeddr.core.debug.test.structure)" version="44" />
+    </dependencies>
+    <rename id="rpmx.105850086902564368" type="CONCEPT" from="Super" to="SuperISuspensionPoint" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="rpmx" modelUID="r:64720d49-3cb5-4469-81c5-0c62eda0a2cb(com.mbeddr.core.debug.test.structure)" version="45" />
+    </dependencies>
+    <rename id="rpmx.105850086902564368" type="CONCEPT" from="SuperISuspensionPoint" to="SuperSuspensionPoint" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="rpmx" modelUID="r:64720d49-3cb5-4469-81c5-0c62eda0a2cb(com.mbeddr.core.debug.test.structure)" version="46" />
+    </dependencies>
+    <rename id="rpmx.105850086903157559" type="PROPERTY" from="string" to="name" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="rpmx" modelUID="r:64720d49-3cb5-4469-81c5-0c62eda0a2cb(com.mbeddr.core.debug.test.structure)" version="47" />
+    </dependencies>
+    <rename id="rpmx.105850086903176721" type="REFERENCE" from="perf" to="valid" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="rpmx" modelUID="r:64720d49-3cb5-4469-81c5-0c62eda0a2cb(com.mbeddr.core.debug.test.structure)" version="48" />
+    </dependencies>
+    <rename id="rpmx.105850086903217235" type="CONCEPT" from="IDebuggerConfigurationElement" to="IDebuggerTestcaseConfigurationElement" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="rpmx" modelUID="r:64720d49-3cb5-4469-81c5-0c62eda0a2cb(com.mbeddr.core.debug.test.structure)" version="49" />
+    </dependencies>
+    <rename id="rpmx.105850086903250145" type="CONCEPT" from="SuspensionConfiguration" to="SuspensionPointConfiguration" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="rpmx" modelUID="r:64720d49-3cb5-4469-81c5-0c62eda0a2cb(com.mbeddr.core.debug.test.structure)" version="50" />
+    </dependencies>
+    <rename id="rpmx.105850086902839308" type="CHILD" from="spoint" to="suspension" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="rpmx" modelUID="r:64720d49-3cb5-4469-81c5-0c62eda0a2cb(com.mbeddr.core.debug.test.structure)" version="51" />
+    </dependencies>
+    <rename id="rpmx.105850086902839309" type="REFERENCE" from="template" to="extendedTest" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="rpmx" modelUID="r:64720d49-3cb5-4469-81c5-0c62eda0a2cb(com.mbeddr.core.debug.test.structure)" version="52" />
+    </dependencies>
+    <rename id="rpmx.7048220250906041081" type="CONCEPT" from="ValidateCallStack" to="ValidateCallStackDepth" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="rpmx" modelUID="r:64720d49-3cb5-4469-81c5-0c62eda0a2cb(com.mbeddr.core.debug.test.structure)" version="53" />
+    </dependencies>
+    <rename id="rpmx.4360423713604419403" type="CONCEPT" from="ValidationConfigurationElement" to="IValidationConfigurationElement" />
+  </StructureModification>
 </history>
 
