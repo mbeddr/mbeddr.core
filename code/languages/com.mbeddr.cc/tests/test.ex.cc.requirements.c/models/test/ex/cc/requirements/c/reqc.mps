@@ -155,7 +155,7 @@
   <root id="3534497005926839233">
     <node role="requirements" roleId="75wo.8745401669462963171" type="75wo.Requirement" typeId="75wo.8745401669462952101" id="3534497005926839234">
       <property name="priority" nameId="75wo.3314758227758879688" value="0" />
-      <property name="open" nameId="75wo.1165432222361744926" value="true" />
+      <property name="open" nameId="75wo.1165432222361744926" value="false" />
       <property name="name" nameId="tpck.1169194664001" value="R1" />
       <property name="summmary" nameId="75wo.3402431285977818823" value="Price is 10 EUR" />
       <property name="proseText" nameId="75wo.8745401669463252438" value="" />
@@ -173,7 +173,7 @@
     </node>
     <node role="requirements" roleId="75wo.8745401669462963171" type="75wo.Requirement" typeId="75wo.8745401669462952101" id="3534497005926953361">
       <property name="priority" nameId="75wo.3314758227758879688" value="0" />
-      <property name="open" nameId="75wo.1165432222361744926" value="true" />
+      <property name="open" nameId="75wo.1165432222361744926" value="false" />
       <property name="name" nameId="tpck.1169194664001" value="R2" />
       <property name="summmary" nameId="75wo.3402431285977818823" value="The price may be rebated." />
       <property name="proseText" nameId="75wo.8745401669463252438" value="" />
@@ -211,6 +211,146 @@
           </node>
           <node role="params" roleId="3vkx.3562422675423859806" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3562422675424138071">
             <property name="value" nameId="mj1l.8860443239512128104" value="5" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node role="requirements" roleId="75wo.8745401669462963171" type="75wo.Requirement" typeId="75wo.8745401669462952101" id="3562422675424166429">
+      <property name="priority" nameId="75wo.3314758227758879688" value="0" />
+      <property name="open" nameId="75wo.1165432222361744926" value="true" />
+      <property name="name" nameId="tpck.1169194664001" value="R3" />
+      <property name="summmary" nameId="75wo.3402431285977818823" value="Price per call" />
+      <node role="kind" roleId="75wo.8921256082857728256" type="75wo.FunctionalRequirementKind" typeId="75wo.8921256082857728250" id="3562422675424166430" />
+      <node role="additionalData" roleId="75wo.8745401669463270518" type="3vkx.RConstant" typeId="3vkx.3534497005926837262" id="3562422675424166431">
+        <property name="name" nameId="tpck.1169194664001" value="PER_MINUTE" />
+        <node role="value" roleId="3vkx.3534497005926847011" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3562422675424166435">
+          <property name="value" nameId="mj1l.8860443239512128104" value="10" />
+        </node>
+        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="3562422675424166434">
+          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+        </node>
+      </node>
+      <node role="additionalData" roleId="75wo.8745401669463270518" type="3vkx.RCalculation" typeId="3vkx.3534497005926949315" id="3562422675424166437">
+        <property name="name" nameId="tpck.1169194664001" value="priceForCall" />
+        <property name="descr" nameId="3vkx.3534497005926954227" value="calculates the price" />
+        <node role="params" roleId="3vkx.3534497005926949334" type="3vkx.RParam" typeId="3vkx.3534497005926949316" id="3562422675424166439">
+          <property name="name" nameId="tpck.1169194664001" value="duration" />
+          <property name="description" nameId="3vkx.3534497005926949331" value="Dauer in ms" />
+          <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="3562422675424166441">
+            <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+            <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+          </node>
+        </node>
+        <node role="expr" roleId="3vkx.3534497005926949336" type="k146.GSwitchExpression" typeId="k146.6209595569797561318" id="3562422675424166451">
+          <node role="def" roleId="k146.6209595569797561368" type="mj1l.MultiExpression" typeId="mj1l.5763383285156373020" id="3562422675424166499">
+            <node role="right" roleId="mj1l.8860443239512128065" type="3vkx.RConstantRef" typeId="3vkx.3534497005926837277" id="3562422675424166502">
+              <link role="constant" roleId="3vkx.3534497005926837278" targetNodeId="3562422675424166431" resolveInfo="PER_MINUTE" />
+            </node>
+            <node role="left" roleId="mj1l.8860443239512128064" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3562422675424166496">
+              <property name="value" nameId="mj1l.8860443239512128104" value="100" />
+            </node>
+          </node>
+          <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="3562422675424166454">
+            <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+            <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+          </node>
+          <node role="cases" roleId="k146.6209595569797561355" type="k146.GSwitchCase" typeId="k146.6209595569797561319" id="3562422675424166455">
+            <node role="condition" roleId="k146.6209595569797561320" type="mj1l.LessExpression" typeId="mj1l.8860443239512147449" id="3562422675424166461">
+              <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3562422675424166464">
+                <property name="value" nameId="mj1l.8860443239512128104" value="10" />
+              </node>
+              <node role="left" roleId="mj1l.8860443239512128064" type="3vkx.RParamRef" typeId="3vkx.3534497005926949485" id="3562422675424166458">
+                <link role="param" roleId="3vkx.3534497005926949486" targetNodeId="3562422675424166439" resolveInfo="duration" />
+              </node>
+            </node>
+            <node role="result" roleId="k146.6209595569797561321" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3562422675424166465">
+              <property name="value" nameId="mj1l.8860443239512128104" value="0" />
+            </node>
+          </node>
+          <node role="cases" roleId="k146.6209595569797561355" type="k146.GSwitchCase" typeId="k146.6209595569797561319" id="3562422675424166466">
+            <node role="result" roleId="k146.6209595569797561321" type="mj1l.MultiExpression" typeId="mj1l.5763383285156373020" id="3562422675424166492">
+              <node role="right" roleId="mj1l.8860443239512128065" type="3vkx.RConstantRef" typeId="3vkx.3534497005926837277" id="3562422675424166495">
+                <link role="constant" roleId="3vkx.3534497005926837278" targetNodeId="3562422675424166431" resolveInfo="PER_MINUTE" />
+              </node>
+              <node role="left" roleId="mj1l.8860443239512128064" type="3vkx.RParamRef" typeId="3vkx.3534497005926949485" id="3562422675424166489">
+                <link role="param" roleId="3vkx.3534497005926949486" targetNodeId="3562422675424166439" resolveInfo="duration" />
+              </node>
+            </node>
+            <node role="condition" roleId="k146.6209595569797561320" type="mj1l.AndExpression" typeId="mj1l.8399455261460717640" id="3562422675424166478">
+              <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.LessExpression" typeId="mj1l.8860443239512147449" id="3562422675424166484">
+                <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3562422675424166487">
+                  <property name="value" nameId="mj1l.8860443239512128104" value="100" />
+                </node>
+                <node role="left" roleId="mj1l.8860443239512128064" type="3vkx.RParamRef" typeId="3vkx.3534497005926949485" id="3562422675424166481">
+                  <link role="param" roleId="3vkx.3534497005926949486" targetNodeId="3562422675424166439" resolveInfo="duration" />
+                </node>
+              </node>
+              <node role="left" roleId="mj1l.8860443239512128064" type="mj1l.GreaterEqualsExpression" typeId="mj1l.8860443239512147447" id="3562422675424166472">
+                <node role="left" roleId="mj1l.8860443239512128064" type="3vkx.RParamRef" typeId="3vkx.3534497005926949485" id="3562422675424166469">
+                  <link role="param" roleId="3vkx.3534497005926949486" targetNodeId="3562422675424166439" resolveInfo="duration" />
+                </node>
+                <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3562422675424166475">
+                  <property name="value" nameId="mj1l.8860443239512128104" value="10" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node role="tests" roleId="3vkx.3562422675424033877" type="3vkx.RTestCase" typeId="3vkx.3562422675423849389" id="3562422675424166504">
+          <node role="expected" roleId="3vkx.3562422675423880817" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3562422675424166507">
+            <property name="value" nameId="mj1l.8860443239512128104" value="0" />
+          </node>
+          <node role="params" roleId="3vkx.3562422675423859806" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3562422675424166506">
+            <property name="value" nameId="mj1l.8860443239512128104" value="5" />
+          </node>
+        </node>
+        <node role="tests" roleId="3vkx.3562422675424033877" type="3vkx.RTestCase" typeId="3vkx.3562422675423849389" id="3562422675424166508">
+          <node role="expected" roleId="3vkx.3562422675423880817" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3562422675424166511">
+            <property name="value" nameId="mj1l.8860443239512128104" value="0" />
+          </node>
+          <node role="params" roleId="3vkx.3562422675423859806" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3562422675424166510">
+            <property name="value" nameId="mj1l.8860443239512128104" value="9" />
+          </node>
+        </node>
+        <node role="tests" roleId="3vkx.3562422675424033877" type="3vkx.RTestCase" typeId="3vkx.3562422675423849389" id="3562422675424166512">
+          <node role="expected" roleId="3vkx.3562422675423880817" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3562422675424166515">
+            <property name="value" nameId="mj1l.8860443239512128104" value="100" />
+          </node>
+          <node role="params" roleId="3vkx.3562422675423859806" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3562422675424166514">
+            <property name="value" nameId="mj1l.8860443239512128104" value="10" />
+          </node>
+        </node>
+        <node role="tests" roleId="3vkx.3562422675424033877" type="3vkx.RTestCase" typeId="3vkx.3562422675423849389" id="3562422675424193432">
+          <node role="expected" roleId="3vkx.3562422675423880817" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3562422675424193435">
+            <property name="value" nameId="mj1l.8860443239512128104" value="500" />
+          </node>
+          <node role="params" roleId="3vkx.3562422675423859806" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3562422675424193434">
+            <property name="value" nameId="mj1l.8860443239512128104" value="50" />
+          </node>
+        </node>
+        <node role="tests" roleId="3vkx.3562422675424033877" type="3vkx.RTestCase" typeId="3vkx.3562422675423849389" id="3562422675424193437">
+          <node role="expected" roleId="3vkx.3562422675423880817" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3562422675424193440">
+            <property name="value" nameId="mj1l.8860443239512128104" value="1000" />
+          </node>
+          <node role="params" roleId="3vkx.3562422675423859806" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3562422675424193439">
+            <property name="value" nameId="mj1l.8860443239512128104" value="100" />
+          </node>
+        </node>
+        <node role="tests" roleId="3vkx.3562422675424033877" type="3vkx.RTestCase" typeId="3vkx.3562422675423849389" id="3562422675424193441">
+          <node role="expected" roleId="3vkx.3562422675423880817" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3562422675424193442">
+            <property name="value" nameId="mj1l.8860443239512128104" value="1000" />
+          </node>
+          <node role="params" roleId="3vkx.3562422675423859806" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3562422675424193443">
+            <property name="value" nameId="mj1l.8860443239512128104" value="110" />
+          </node>
+        </node>
+        <node role="tests" roleId="3vkx.3562422675424033877" type="3vkx.RTestCase" typeId="3vkx.3562422675423849389" id="3562422675424193444">
+          <node role="expected" roleId="3vkx.3562422675423880817" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3562422675424193445">
+            <property name="value" nameId="mj1l.8860443239512128104" value="1000" />
+          </node>
+          <node role="params" roleId="3vkx.3562422675423859806" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3562422675424193446">
+            <property name="value" nameId="mj1l.8860443239512128104" value="120" />
           </node>
         </node>
       </node>
