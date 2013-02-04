@@ -1305,10 +1305,13 @@
           <link role="macro" roleId="3ior.7389400916848153130" targetNodeId="8628756186118852054" resolveInfo="mbeddr.core" />
           <node role="compositePart" roleId="3ior.7321017245477039051" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="8628756186118852489">
             <property name="head" nameId="3ior.8618885170173601779" value="tests" />
-            <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="8628756186118852490">
-              <property name="head" nameId="3ior.8618885170173601779" value="aLibrary" />
-              <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="8628756186118852491">
-                <property name="head" nameId="3ior.8618885170173601779" value="aLibrary.msd" />
+            <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="3969368766616539356">
+              <property name="head" nameId="3ior.8618885170173601779" value="libs" />
+              <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="3969368766616539357">
+                <property name="head" nameId="3ior.8618885170173601779" value="aLibrary" />
+                <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="3969368766616539358">
+                  <property name="head" nameId="3ior.8618885170173601779" value="aLibrary.msd" />
+                </node>
               </node>
             </node>
           </node>
