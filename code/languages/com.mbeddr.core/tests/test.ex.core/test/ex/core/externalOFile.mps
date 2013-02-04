@@ -157,10 +157,10 @@
   </root>
   <root id="5275554368891504429">
     <node role="descriptors" roleId="x27k.6116558314501417978" type="x27k.HeaderDescriptor" typeId="x27k.6116558314501417952" id="5275554368891504441">
-      <property name="path" nameId="x27k.6116558314501417936" value="&quot;../expressions/HelperFunctions.h&quot;" />
+      <property name="path" nameId="x27k.6116558314501417936" value="&quot;../lib/expressions/HelperFunctions.h&quot;" />
     </node>
     <node role="descriptors" roleId="x27k.6116558314501417978" type="x27k.ObjResourceDescriptor" typeId="x27k.6116558314501417950" id="5275554368891504430">
-      <property name="path" nameId="x27k.6116558314501417936" value="../expressions/bin/HelperFunctions.o" />
+      <property name="path" nameId="x27k.6116558314501417936" value="../lib/expressions/bin/HelperFunctions.o" />
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.FunctionPrototype" typeId="x27k.6437088627575724000" id="5275554368891504432">
       <property name="name" nameId="tpck.1169194664001" value="add" />
