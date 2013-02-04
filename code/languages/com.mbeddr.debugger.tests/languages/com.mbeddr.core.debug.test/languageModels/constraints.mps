@@ -4,7 +4,7 @@
   <language namespace="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1(jetbrains.mps.lang.constraints)" />
   <language namespace="13744753-c81f-424a-9c1b-cf8943bf4e86(jetbrains.mps.lang.sharedConcepts)" />
   <devkit namespace="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
-  <import index="rpmx" modelUID="r:64720d49-3cb5-4469-81c5-0c62eda0a2cb(com.mbeddr.core.debug.test.structure)" version="54" />
+  <import index="rpmx" modelUID="r:64720d49-3cb5-4469-81c5-0c62eda0a2cb(com.mbeddr.core.debug.test.structure)" version="56" />
   <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="3" />
   <import index="51wr" modelUID="r:b31f1c3c-99aa-4f1e-a329-cba27efb1a6b(com.mbeddr.core.buildconfig.structure)" version="1" />
   <import index="fxg7" modelUID="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.io(JDK/java.io@java_stub)" version="-1" />
@@ -18,16 +18,12 @@
   <import index="tp2c" modelUID="r:00000000-0000-4000-0000-011c89590338(jetbrains.mps.baseLanguage.closures.structure)" version="3" implicit="yes" />
   <roots>
     <node type="tp1t.ConceptConstraints" typeId="tp1t.1213093968558" id="4193597469137492726">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="marker" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="configuration.suspension.elements" />
       <link role="concept" roleId="tp1t.1213093996982" targetNodeId="rpmx.4193597469137492644" resolveInfo="MarkerRef" />
     </node>
     <node type="tp1t.ConceptConstraints" typeId="tp1t.1213093968558" id="4193597469137492780">
       <property name="virtualPackage" nameId="tpck.1193676396447" value="marker" />
       <link role="concept" roleId="tp1t.1213093996982" targetNodeId="rpmx.4193597469137492628" resolveInfo="MarkerAnnotation" />
-    </node>
-    <node type="tp1t.ConceptConstraints" typeId="tp1t.1213093968558" id="7048220250906325267">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="validation" />
-      <link role="concept" roleId="tp1t.1213093996982" targetNodeId="rpmx.7048220250906219004" resolveInfo="Validation" />
     </node>
     <node type="tp1t.ConceptConstraints" typeId="tp1t.1213093968558" id="5100083648679336786">
       <link role="concept" roleId="tp1t.1213093996982" targetNodeId="rpmx.5100083648679329379" resolveInfo="BinaryRef" />
@@ -46,7 +42,7 @@
     </node>
     <node type="tp1t.ConceptConstraints" typeId="tp1t.1213093968558" id="4360423713604473683">
       <property name="virtualPackage" nameId="tpck.1193676396447" value="" />
-      <link role="concept" roleId="tp1t.1213093996982" targetNodeId="rpmx.105850086902839305" resolveInfo="TestcasePrototype" />
+      <link role="concept" roleId="tp1t.1213093996982" targetNodeId="rpmx.105850086902839305" resolveInfo="DebuggerTestcase2" />
     </node>
   </roots>
   <root id="4193597469137492726">
@@ -299,32 +295,6 @@
               <node role="operand" roleId="tpee.1197027771414" type="tp1t.ConstraintsFunctionParameter_node" typeId="tp1t.1147468365020" id="4193597469137492786" />
               <node role="operation" roleId="tpee.1197027833540" type="tp25.SPropertyAccess" typeId="tp25.1138056022639" id="4193597469137492787">
                 <link role="property" roleId="tp25.1138056395725" targetNodeId="tpck.1169194664001" resolveInfo="name" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-  </root>
-  <root id="7048220250906325267">
-    <node role="canBeChild" roleId="tp1t.1213106463729" type="tp1t.ConstraintFunction_CanBeAChild" typeId="tp1t.1202989531578" id="7048220250906325270">
-      <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="7048220250906325271">
-        <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="7048220250906325272">
-          <node role="expression" roleId="tpee.1068580123156" type="tpee.OrExpression" typeId="tpee.1080223426719" id="4360423713604483016">
-            <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.DotExpression" typeId="tpee.1197027756228" id="7048220250906325294">
-              <node role="operand" roleId="tpee.1197027771414" type="tp1t.ConstraintFunctionParameter_parentNode" typeId="tp1t.1202989658459" id="7048220250906325273" />
-              <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_IsInstanceOfOperation" typeId="tp25.1139621453865" id="7048220250906325299">
-                <node role="conceptArgument" roleId="tp25.1177027386292" type="tp25.RefConcept_Reference" typeId="tp25.1177026924588" id="7048220250906325301">
-                  <link role="conceptDeclaration" roleId="tp25.1177026940964" targetNodeId="rpmx.7048220250906209718" resolveInfo="ValidationList" />
-                </node>
-              </node>
-            </node>
-            <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.DotExpression" typeId="tpee.1197027756228" id="4360423713604483019">
-              <node role="operand" roleId="tpee.1197027771414" type="tp1t.ConstraintFunctionParameter_parentNode" typeId="tp1t.1202989658459" id="4360423713604483020" />
-              <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_IsInstanceOfOperation" typeId="tp25.1139621453865" id="4360423713604483021">
-                <node role="conceptArgument" roleId="tp25.1177027386292" type="tp25.RefConcept_Reference" typeId="tp25.1177026924588" id="4360423713604483023">
-                  <link role="conceptDeclaration" roleId="tp25.1177026940964" targetNodeId="rpmx.4360423713604419372" resolveInfo="ValidationConfiguration" />
-                </node>
               </node>
             </node>
           </node>
@@ -697,7 +667,7 @@
                             </node>
                             <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_IsInstanceOfOperation" typeId="tp25.1139621453865" id="4360423713604473986">
                               <node role="conceptArgument" roleId="tp25.1177027386292" type="tp25.RefConcept_Reference" typeId="tp25.1177026924588" id="4360423713604473988">
-                                <link role="conceptDeclaration" roleId="tp25.1177026940964" targetNodeId="rpmx.105850086902839305" resolveInfo="TestcasePrototype" />
+                                <link role="conceptDeclaration" roleId="tp25.1177026940964" targetNodeId="rpmx.105850086902839305" resolveInfo="DebuggerTestcase2" />
                               </node>
                             </node>
                           </node>
@@ -719,7 +689,7 @@
               </node>
               <node role="operation" roleId="tpee.1197027833540" type="tp2q.OfTypeOperation" typeId="tp2q.4611582986551314327" id="4360423713604474018">
                 <node role="requestedType" roleId="tp2q.4611582986551314344" type="tp25.SNodeType" typeId="tp25.1138055754698" id="4360423713604474061">
-                  <link role="concept" roleId="tp25.1138405853777" targetNodeId="rpmx.105850086902839305" resolveInfo="TestcasePrototype" />
+                  <link role="concept" roleId="tp25.1138405853777" targetNodeId="rpmx.105850086902839305" resolveInfo="DebuggerTestcase2" />
                 </node>
               </node>
             </node>

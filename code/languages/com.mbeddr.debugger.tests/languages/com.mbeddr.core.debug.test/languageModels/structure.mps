@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model modelUID="r:64720d49-3cb5-4469-81c5-0c62eda0a2cb(com.mbeddr.core.debug.test.structure)" version="54">
+<model modelUID="r:64720d49-3cb5-4469-81c5-0c62eda0a2cb(com.mbeddr.core.debug.test.structure)" version="56">
   <persistence version="7" />
   <language namespace="c72da2b9-7cce-4447-8389-f407dc1158b7(jetbrains.mps.lang.structure)" />
   <import index="tpee" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="-1" />
@@ -8,20 +8,16 @@
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="tpce" modelUID="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" version="0" implicit="yes" />
   <import index="tp5g" modelUID="r:00000000-0000-4000-0000-011c89590388(jetbrains.mps.lang.test.structure)" version="4" implicit="yes" />
-  <import index="rpmx" modelUID="r:64720d49-3cb5-4469-81c5-0c62eda0a2cb(com.mbeddr.core.debug.test.structure)" version="54" implicit="yes" />
+  <import index="rpmx" modelUID="r:64720d49-3cb5-4469-81c5-0c62eda0a2cb(com.mbeddr.core.debug.test.structure)" version="56" implicit="yes" />
   <roots>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4193597469137492628">
       <property name="name" nameId="tpck.1169194664001" value="MarkerAnnotation" />
       <property name="virtualPackage" nameId="tpck.1193676396447" value="marker" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.3364660638048049748" resolveInfo="NodeAttribute" />
     </node>
-    <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4193597469137492636">
-      <property name="name" nameId="tpck.1169194664001" value="DebuggerTestCase" />
-      <link role="extends" roleId="tpce.1071489389519" targetNodeId="105850086901136879" resolveInfo="DebuggerTestContent" />
-    </node>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4193597469137492644">
       <property name="name" nameId="tpck.1169194664001" value="MarkerRef" />
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="marker" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="configuration.suspension.elements" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
     </node>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7048220250905867886">
@@ -31,64 +27,54 @@
     </node>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7048220250906041081">
       <property name="name" nameId="tpck.1169194664001" value="ValidateCallStackDepth" />
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="validation.kinds.callstack-depth" />
-      <link role="extends" roleId="tpce.1071489389519" targetNodeId="7048220250906219004" resolveInfo="Validation" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="configuration.validation.element.callstack-depth" />
+      <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
     </node>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7048220250906049590">
       <property name="name" nameId="tpck.1169194664001" value="ValidateDebuggerSuspended" />
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="validation.kinds.suspended" />
-      <link role="extends" roleId="tpce.1071489389519" targetNodeId="7048220250906219004" resolveInfo="Validation" />
-    </node>
-    <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7048220250906209718">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="validation" />
-      <property name="name" nameId="tpck.1169194664001" value="ValidationList" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="configuration.validation.element.suspended" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
     </node>
-    <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7048220250906219004">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="validation" />
-      <property name="name" nameId="tpck.1169194664001" value="Validation" />
-      <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpee.1068580123157" resolveInfo="Statement" />
-    </node>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4231345613098876391">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="stepping" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="configuration.stepping.element" />
       <property name="name" nameId="tpck.1169194664001" value="StepOutCommand" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
     </node>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4231345613098876386">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="stepping" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="configuration.stepping.element" />
       <property name="name" nameId="tpck.1169194664001" value="StepIntoCommand" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
     </node>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4550138447368300128">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="validation.kinds.stack-frames" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="configuration.validation.element.stack-frames" />
       <property name="name" nameId="tpck.1169194664001" value="StackFramesValidationList" />
-      <link role="extends" roleId="tpce.1071489389519" targetNodeId="7048220250906219004" resolveInfo="Validation" />
+      <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
     </node>
     <node type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="5100083648679219672">
       <property name="name" nameId="tpck.1169194664001" value="ISteppingCommand" />
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="stepping" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="configuration.stepping.element" />
     </node>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="5100083648679329379">
       <property name="name" nameId="tpck.1169194664001" value="BinaryRef" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
     </node>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4550138447368290426">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="validation.kinds.stack-frames" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="configuration.validation.element.stack-frames" />
       <property name="name" nameId="tpck.1169194664001" value="StackFrameDeclaration" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
     </node>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4231345613098876381">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="stepping" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="configuration.stepping.element" />
       <property name="name" nameId="tpck.1169194664001" value="StepOverCommand" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
     </node>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4550138447367847233">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="validation.kinds.watches" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="configuration.validation.element.watches" />
       <property name="name" nameId="tpck.1169194664001" value="WatchablesValidationList" />
-      <link role="extends" roleId="tpce.1071489389519" targetNodeId="7048220250906219004" resolveInfo="Validation" />
+      <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
     </node>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4550138447367880222">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="validation.kinds.watches" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="configuration.validation.element.watches" />
       <property name="name" nameId="tpck.1169194664001" value="WatchableDeclaration" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
     </node>
@@ -104,12 +90,12 @@
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
     </node>
     <node type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="105850086902564366">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="marker" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="configuration.suspension.elements" />
       <property name="name" nameId="tpck.1169194664001" value="ISuspensionPoint" />
     </node>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="105850086902839305">
       <property name="virtualPackage" nameId="tpck.1193676396447" value="" />
-      <property name="name" nameId="tpck.1169194664001" value="TestcasePrototype" />
+      <property name="name" nameId="tpck.1169194664001" value="DebuggerTestcase2" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="105850086901136879" resolveInfo="DebuggerTestContent" />
     </node>
     <node type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="105850086903217235">
@@ -172,32 +158,6 @@
     </node>
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="4193597469137492632">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="tpck.3734116213129792499" resolveInfo="ScopeProvider" />
-    </node>
-  </root>
-  <root id="4193597469137492636">
-    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="105850086901810582">
-      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
-      <property name="role" nameId="tpce.1071599776563" value="validationBody" />
-      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="7048220250906209718" resolveInfo="ValidationList" />
-    </node>
-    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="105850086901810583">
-      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
-      <property name="role" nameId="tpce.1071599776563" value="suspensionPoint" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="105850086902564366" resolveInfo="ISuspensionPoint" />
-    </node>
-    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="105850086901810584">
-      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
-      <property name="role" nameId="tpce.1071599776563" value="steppingCommands" />
-      <property name="sourceCardinality" nameId="tpce.1071599893252" value="0..n" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="5100083648679219672" resolveInfo="ISteppingCommand" />
-    </node>
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="105850086900151264">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="105850086900151263" resolveInfo="IDebuggerTestContent" />
-    </node>
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="105850086900925283">
-      <property name="value" nameId="tpce.1105725733873" value="testcase" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473891462" resolveInfo="alias" />
     </node>
   </root>
   <root id="4193597469137492644">
@@ -265,23 +225,6 @@
     </node>
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="4360423713604470277">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="4360423713604419403" resolveInfo="IValidationConfigurationElement" />
-    </node>
-  </root>
-  <root id="7048220250906209718">
-    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="7048220250906209719">
-      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
-      <property name="role" nameId="tpce.1071599776563" value="validations" />
-      <property name="sourceCardinality" nameId="tpce.1071599893252" value="0..n" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="7048220250906219004" resolveInfo="Validation" />
-    </node>
-  </root>
-  <root id="7048220250906219004">
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="7048220250906349840">
-      <property name="value" nameId="tpce.1105725733873" value=" " />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473891462" resolveInfo="alias" />
-    </node>
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.BooleanConceptProperty" typeId="tpce.1105725574259" id="2812390151934189585">
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473854053" resolveInfo="abstract" />
     </node>
   </root>
   <root id="4231345613098876391">
@@ -424,7 +367,7 @@
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="105850086902839309">
       <property name="metaClass" nameId="tpce.1071599937831" value="reference" />
       <property name="role" nameId="tpce.1071599776563" value="extendedTest" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="105850086902839305" resolveInfo="TestcasePrototype" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="105850086902839305" resolveInfo="DebuggerTestcase2" />
     </node>
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="105850086902839308">
       <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
