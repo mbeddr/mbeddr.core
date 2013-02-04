@@ -770,5 +770,17 @@
     </dependencies>
     <rename id="rpmx.105850086902839305" type="CONCEPT" from="DebuggerTestcase2" to="DebuggerTestcase" />
   </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="rpmx" modelUID="r:64720d49-3cb5-4469-81c5-0c62eda0a2cb(com.mbeddr.core.debug.test.structure)" version="57" />
+    </dependencies>
+    <rename id="rpmx.8924761790438756110" type="CONCEPT" from="Validation" to="ValidationDeclration" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="rpmx" modelUID="r:64720d49-3cb5-4469-81c5-0c62eda0a2cb(com.mbeddr.core.debug.test.structure)" version="58" />
+    </dependencies>
+    <rename id="rpmx.8924761790438756110" type="CONCEPT" from="ValidationDeclration" to="ValidationDeclaration" />
+  </StructureModification>
 </history>
 
