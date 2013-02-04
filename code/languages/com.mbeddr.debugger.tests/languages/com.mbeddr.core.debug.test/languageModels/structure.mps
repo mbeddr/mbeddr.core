@@ -110,7 +110,7 @@
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="105850086902839305">
       <property name="virtualPackage" nameId="tpck.1193676396447" value="" />
       <property name="name" nameId="tpck.1169194664001" value="TestcasePrototype" />
-      <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
+      <link role="extends" roleId="tpce.1071489389519" targetNodeId="105850086901136879" resolveInfo="DebuggerTestContent" />
     </node>
     <node type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="105850086903217235">
       <property name="virtualPackage" nameId="tpck.1193676396447" value="configuration" />
