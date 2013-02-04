@@ -782,5 +782,17 @@
     </dependencies>
     <rename id="rpmx.8924761790438756110" type="CONCEPT" from="ValidationDeclration" to="ValidationDeclaration" />
   </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="rpmx" modelUID="r:64720d49-3cb5-4469-81c5-0c62eda0a2cb(com.mbeddr.core.debug.test.structure)" version="59" />
+    </dependencies>
+    <rename id="rpmx.8924761790438948079" type="REFERENCE" from="tests" to="imports" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="rpmx" modelUID="r:64720d49-3cb5-4469-81c5-0c62eda0a2cb(com.mbeddr.core.debug.test.structure)" version="60" />
+    </dependencies>
+    <rename id="rpmx.8924761790438948088" type="CHILD" from="re" to="imports" />
+  </StructureModification>
 </history>
 
