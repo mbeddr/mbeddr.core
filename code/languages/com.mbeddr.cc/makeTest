@@ -31,6 +31,16 @@ cd ../fmrtAndComps
 make test
 PROC_RET=$(($?+$PROC_RET))
 
+echo -------------------------------------
+echo test.ex.cc.requirements.c
+pwd
+cd ../../../../../../..
+pwd
+cd test.ex.cc.requirements.c/source_gen/test/ex/cc/requirements/c/reqc
+pwd
+make test
+PROC_RET=$(($?+$PROC_RET))
+
 
 
 
