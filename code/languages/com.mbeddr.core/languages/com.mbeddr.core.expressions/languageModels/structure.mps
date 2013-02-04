@@ -2156,7 +2156,12 @@
   <root id="5160057464295077059" />
   <root id="743779816742251347" />
   <root id="743779816742251356" />
-  <root id="5289481837639973214" />
+  <root id="5289481837639973214">
+    <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="5192961572790190887">
+      <property name="name" nameId="tpck.1169194664001" value="unsigned" />
+      <link role="dataType" roleId="tpce.1082985295845" targetNodeId="tpck.1082983657063" resolveInfo="boolean" />
+    </node>
+  </root>
   <root id="7274201720600672741">
     <node role="extends" roleId="tpce.1169127546356" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="704069370493332551">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="704069370490430471" resolveInfo="IDataflowTyped" />
