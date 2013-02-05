@@ -177,6 +177,9 @@
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="5679441017213980671">
           <property name="name" nameId="tpck.1169194664001" value="i" />
           <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="5083029923012080979" />
+          <node role="init" roleId="c4fa.4185783222026502647" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="236363977594764402">
+            <property name="value" nameId="mj1l.8860443239512128104" value="0" />
+          </node>
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="5679441017213980681">
           <property name="name" nameId="tpck.1169194664001" value="pi" />
