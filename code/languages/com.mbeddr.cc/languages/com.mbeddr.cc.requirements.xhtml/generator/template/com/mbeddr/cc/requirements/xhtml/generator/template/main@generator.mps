@@ -6,7 +6,7 @@
   <devkit namespace="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   <import index="y5m3" modelUID="r:b1d3a385-9042-4361-85fa-24f097b1b1ff(com.mbeddr.cc.requirements.xhtml.structure)" version="-1" />
   <import index="ahli" modelUID="r:44ccebce-f3a6-4238-afbf-c4a18f6348c1(com.mbeddr.core.buildconfig.behavior)" version="-1" />
-  <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="5" />
+  <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="6" />
   <import index="75wo" modelUID="r:eaa205a4-f15c-47d3-99e2-e648881b5997(com.mbeddr.cc.requirements.structure)" version="6" />
   <import index="xvsr" modelUID="r:18791582-199a-4c4c-a282-6d61b7657294(com.mbeddr.cc.requirements.behavior)" version="0" />
   <import index="ytvv" modelUID="r:fb656a84-26f1-490a-9c33-e3686bfff12d(com.mbeddr.cc.requirements.xhtml.generator.req2xhtml.util)" version="-1" />
@@ -356,7 +356,7 @@
                             <node role="ifTrue" roleId="tpee.1068580123161" type="tpee.StatementList" typeId="tpee.1068580123136" id="7784032510525676232">
                               <node role="statement" roleId="tpee.1068581517665" type="tpee.ReturnStatement" typeId="tpee.1068581242878" id="7784032510525676282">
                                 <node role="expression" roleId="tpee.1068581517676" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="7784032510525676284">
-                                  <property name="value" nameId="tpee.1070475926801" value="+" />
+                                  <property name="value" nameId="tpee.1070475926801" value="[+]" />
                                 </node>
                               </node>
                             </node>
@@ -370,7 +370,7 @@
                               <node role="statements" roleId="tpee.1082485599096" type="tpee.StatementList" typeId="tpee.1068580123136" id="7784032510525676286">
                                 <node role="statement" roleId="tpee.1068581517665" type="tpee.ReturnStatement" typeId="tpee.1068581242878" id="7784032510525676287">
                                   <node role="expression" roleId="tpee.1068581517676" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="7784032510525676289">
-                                    <property name="value" nameId="tpee.1070475926801" value="-" />
+                                    <property name="value" nameId="tpee.1070475926801" value="[--]" />
                                   </node>
                                 </node>
                               </node>
@@ -1136,7 +1136,7 @@
               <property name="value" nameId="iuxj.1622293396948953704" value="      e.style.display = 'none';" />
             </node>
             <node role="content" roleId="iuxj.1622293396948928802" type="iuxj.XmlText" typeId="iuxj.1622293396948952339" id="7784032510525516085">
-              <property name="value" nameId="iuxj.1622293396948953704" value="      eImg.innerHTML = '+';" />
+              <property name="value" nameId="iuxj.1622293396948953704" value="      eImg.innerHTML = '[+]';" />
             </node>
             <node role="content" roleId="iuxj.1622293396948928802" type="iuxj.XmlText" typeId="iuxj.1622293396948952339" id="7784032510525516086">
               <property name="value" nameId="iuxj.1622293396948953704" value="   } else {" />
@@ -1145,7 +1145,7 @@
               <property name="value" nameId="iuxj.1622293396948953704" value="      e.style.display = '';" />
             </node>
             <node role="content" roleId="iuxj.1622293396948928802" type="iuxj.XmlText" typeId="iuxj.1622293396948952339" id="7784032510525516089">
-              <property name="value" nameId="iuxj.1622293396948953704" value="      eImg.innerHTML = '-';" />
+              <property name="value" nameId="iuxj.1622293396948953704" value="      eImg.innerHTML = '[--]';" />
             </node>
             <node role="content" roleId="iuxj.1622293396948928802" type="iuxj.XmlText" typeId="iuxj.1622293396948952339" id="7784032510525516090">
               <property name="value" nameId="iuxj.1622293396948953704" value="   }" />
