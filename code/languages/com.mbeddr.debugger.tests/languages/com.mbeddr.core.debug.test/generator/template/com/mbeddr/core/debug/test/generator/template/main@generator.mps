@@ -40,7 +40,6 @@
     <node type="tpf8.MappingConfiguration" typeId="tpf8.1095416546421" id="4193597469137492904">
       <property name="name" nameId="tpck.1169194664001" value="main" />
       <property name="topPriorityGroup" nameId="tpf8.1184950341882" value="true" />
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="configuration.general" />
     </node>
     <node type="hbzk.MbeddrClassConcept" typeId="hbzk.9152682018127982951" id="4231345613098794282">
       <property name="name" nameId="tpck.1169194664001" value="testClass" />
