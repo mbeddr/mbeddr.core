@@ -161,9 +161,6 @@
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="154287305789211529">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="154287305789211528" resolveInfo="IHasDocParts" />
     </node>
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7534202261664852651">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="7534202261664852649" resolveInfo="IIsDocumentationComment" />
-    </node>
   </root>
   <root id="3857533489766146432" />
   <root id="3857533489766836826">
