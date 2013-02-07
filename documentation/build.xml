@@ -1,0 +1,91 @@
+<project name="My Project Name Here" basedir="." default="main">
+  
+    <target name="main">
+        <delete dir="build/user"/>
+		<mkdir dir="build"/>
+		<mkdir dir="build/user"/>
+		
+		<!-- Windows -->
+		<exec executable="cmd" dir="${basedir}/userguide" osfamily="windows">
+		    <arg value="/c"/>			
+			<arg value="bibtex" />
+		    <arg value="mbeddr-userguide"/>
+		</exec>
+		<exec executable="cmd" dir="${basedir}/userguide" osfamily="windows">
+		    <arg value="/c"/>			
+			<arg value="pdflatex"/>
+		    <arg value="mbeddr-userguide.tex"/>
+		</exec>	
+		<exec executable="cmd" dir="${basedir}/userguide" osfamily="windows">
+		    <arg value="/c"/>			
+			<arg value="bibtex"/>
+		    <arg value="mbeddr-userguide"/>
+		</exec>
+		<exec executable="cmd" dir="${basedir}/userguide" osfamily="windows">
+		    <arg value="/c"/>			
+			<arg value="pdflatex"/>
+		    <arg value="mbeddr-userguide.tex"/>
+		</exec>
+		<exec executable="cmd" dir="${basedir}/userguide" osfamily="windows">
+		    <arg value="/c"/>			
+			<arg value="bibtex"/>
+		    <arg value="mbeddr-userguide"/>
+		</exec>
+		<exec executable="cmd" dir="${basedir}/userguide" osfamily="windows">
+		    <arg value="/c"/>			
+			<arg value="pdflatex"/>
+		    <arg value="mbeddr-userguide.tex"/>
+		</exec>	
+		<exec executable="cmd" dir="${basedir}/userguide" osfamily="windows">
+		    <arg value="/c"/>	
+			<arg value="${basedir}/latexpand.pl"/>
+			<arg value="mbeddr-userguide.tex"/>
+			<arg value="mbeddr-userguide-AllInOne.tex"/>
+		</exec>		
+		<exec executable="cmd" dir="${basedir}/userguide" osfamily="windows">
+		    <arg value="/c"/>	
+			<arg value="pandoc"/>
+		    <arg value="-S"/>
+			<arg value="--self-contained"/>
+			<arg value="-o"/>
+			<arg value="mbeddr-userguide-AllInOne.html5"/>
+			<arg value="mbeddr-userguide-AllInOne.tex"/>
+		</exec>
+				
+		<!-- Unix/Mac -->
+		<exec executable="bibtex" dir="${basedir}/userguide" osfamily="unix">
+		    <arg value="mbeddr-userguide"/>
+		</exec>
+		<exec executable="pdflatex" dir="${basedir}/userguide" osfamily="unix">
+		    <arg value="mbeddr-userguide.tex"/>
+		</exec>		
+		<exec executable="bibtex" dir="${basedir}/userguide" osfamily="unix">
+		    <arg value="mbeddr-userguide"/>
+		</exec>		
+		<exec executable="pdflatex" dir="${basedir}/userguide" osfamily="unix">
+		    <arg value="mbeddr-userguide.tex"/>
+		</exec>
+		<exec executable="bibtex" dir="${basedir}/userguide" osfamily="unix">
+		    <arg value="mbeddr-userguide"/>
+		</exec>		
+		<exec executable="pdflatex" dir="${basedir}/userguide" osfamily="unix">
+		    <arg value="mbeddr-userguide.tex"/>
+		</exec>
+
+		<exec executable="${basedir}/latexpand.pl" dir="${basedir}/userguide" osfamily="unix">
+			<arg value="mbeddr-userguide.tex"/>
+			<arg value="mbeddr-userguide-AllInOne.tex"/>
+		</exec>		
+		<exec executable="pandoc" dir="${basedir}/userguide" osfamily="unix">
+		    <arg value="-S"/>
+			<arg value="--self-contained"/>
+			<arg value="-o"/>
+			<arg value="mbeddr-userguide-AllInOne.html5"/>
+			<arg value="mbeddr-userguide-AllInOne.tex"/>
+		</exec>
+		
+		<copy file="${basedir}/userguide/mbeddr-userguide-AllInOne.html5" tofile="${basedir}/build/user/mbeddr-userguide.html"/>
+		<copy file="${basedir}/userguide/mbeddr-userguide.pdf" todir="${basedir}/build/user"/>
+    </target>
+ 
+</project>

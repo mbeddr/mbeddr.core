@@ -109,6 +109,27 @@ cd CompWithDectab
 make test
 PROC_RET=$(($?+$PROC_RET))
 
+echo -------------------------------------
+echo Bug124
+cd ../
+cd bug124
+make test
+PROC_RET=$(($?+$PROC_RET))
+
+echo -------------------------------------
+echo Bug367
+cd ../
+cd bug367
+make test
+PROC_RET=$(($?+$PROC_RET))
+
+echo -------------------------------------
+echo Bug547
+cd ../
+cd bug547
+make test
+PROC_RET=$(($?+$PROC_RET))
+
 cd ../../../../../../../
 cd test.ex.ext.statemachine/source_gen/statemachine_components
 

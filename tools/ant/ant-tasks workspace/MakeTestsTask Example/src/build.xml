@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<project name="Example Task" basedir="." default="make-tests">
+	
+	<property file="build.properties"/>
+	<fail unless="mbeddr.github.core.home">Property mbeddr.github.core.home wasn't set!</fail>
+	<taskdef name="make-tests" classname="com.mbeddr.tools.ant.MakeTestsTask" classpath="${mbeddr.github.core.home}/MakeTestsTask.jar" />
+	
+	<target name="make-tests" description="Use the Task">
+		
+		<fileset id="makeFileSet" dir="${basedir}">
+			<include name="**/Makefile" />
+			<exclude name="**/source_gen/**/Makefile" />
+			<contains text="test:" casesensitive="yes" />
+		</fileset>
+
+		<pathconvert dirsep="/" pathsep="," property="dirs" refid="makeFileSet">
+			<mapper type="glob" from="*/Makefile" to="*/" />
+		</pathconvert>
+
+		<make-tests directories="${dirs}"/>
+		
+	</target>
+
+</project>

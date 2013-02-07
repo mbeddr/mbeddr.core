@@ -8,21 +8,22 @@
     <projectModules>
       <modulePath path="${project}/devkits/com.mbeddr.archdec/archdec.devkit" folder="archdec" />
       <modulePath path="${project}/devkits/com.mbeddr.cc.reqtrace/reqtrace.devkit" folder="requirements" />
-      <modulePath path="${project}/devkits/com.mbeddr.cc.variability/variability.devkit" folder="var" />
+      <modulePath path="${project}/devkits/com.mbeddr.cc.variability/variability.devkit" folder="ple_var" />
       <modulePath path="${project}/languages/com.mbeddr.cc.archdec/archdec.mpl" folder="archdec" />
+      <modulePath path="${project}/languages/com.mbeddr.cc.requirements.c/c.mpl" folder="requirements" />
       <modulePath path="${project}/languages/com.mbeddr.cc.requirements.csv/csv.mpl" folder="requirements" />
       <modulePath path="${project}/languages/com.mbeddr.cc.requirements.xhtml/xhtml.mpl" folder="requirements" />
       <modulePath path="${project}/languages/com.mbeddr.cc.requirements/requirements.mpl" folder="requirements" />
       <modulePath path="${project}/languages/com.mbeddr.cc.requirements/solutions/pluginSolution/pluginSolution.msd" folder="requirements" />
       <modulePath path="${project}/languages/com.mbeddr.cc.trace/solutions/pluginSolution/pluginSolution.msd" folder="requirements" />
       <modulePath path="${project}/languages/com.mbeddr.cc.trace/trace.mpl" folder="requirements" />
-      <modulePath path="${project}/languages/com.mbeddr.cc.var.annotations/fm.mpl" folder="var" />
-      <modulePath path="${project}/languages/com.mbeddr.cc.var.annotations/solutions/pluginSolution/pluginSolution.msd" folder="var" />
-      <modulePath path="${project}/languages/com.mbeddr.cc.var.buildconfig/buildconfig.mpl" folder="var" />
-      <modulePath path="${project}/languages/com.mbeddr.cc.var.c/c.mpl" folder="var" />
-      <modulePath path="${project}/languages/com.mbeddr.cc.var.fm/fm.mpl" folder="var" />
-      <modulePath path="${project}/languages/com.mbeddr.cc.var.rt.comp/comp.mpl" folder="var" />
-      <modulePath path="${project}/languages/com.mbeddr.cc.var.rt/rt.mpl" folder="var" />
+      <modulePath path="${project}/languages/com.mbeddr.cc.var.annotations/fm.mpl" folder="ple_var" />
+      <modulePath path="${project}/languages/com.mbeddr.cc.var.annotations/solutions/pluginSolution/pluginSolution.msd" folder="ple_var" />
+      <modulePath path="${project}/languages/com.mbeddr.cc.var.buildconfig/buildconfig.mpl" folder="ple_var" />
+      <modulePath path="${project}/languages/com.mbeddr.cc.var.c/c.mpl" folder="ple_var" />
+      <modulePath path="${project}/languages/com.mbeddr.cc.var.fm/fm.mpl" folder="ple_var" />
+      <modulePath path="${project}/languages/com.mbeddr.cc.var.rt.comp/comp.mpl" folder="ple_var" />
+      <modulePath path="${project}/languages/com.mbeddr.cc.var.rt/rt.mpl" folder="ple_var" />
       <modulePath path="${project}/tests/test.ex.cc.fm/fm.msd" folder="tests" />
       <modulePath path="${project}/tests/test.ex.cc.fmrt/fmrt.msd" folder="tests" />
       <modulePath path="${project}/tests/test.ex.cc.var.c/c.msd" folder="tests" />

@@ -5,7 +5,9 @@
   <property name="jvm.arg.Xss" value="-Xss1024k"/>
   <property name="jvm.arg.Xmx" value="-Xmx2048m"/>
   <property name="jvm.arg.XX:MaxPermSize" value="-XX:MaxPermSize=128m"/>
-
+  
+  <taskdef name="make-tests" classname="com.mbeddr.tools.ant.MakeTestsTask" classpath="${mbeddr.github.core.home}/tools/ant/tasks/MakeTestsTask.jar" />
+  
   <path id="mps.ant.path">
    <pathelement location="${mps.home}/lib/mps-backend.jar"/>
    <pathelement location="${mps.home}/lib/jdom.jar"/>
@@ -139,7 +141,13 @@
       <formatter type="xml"/>
     </junit>
   </target>  
-
+  
+  <target name="make-tests" description="Run 'make test' for child Makefiles">
+  		
+  		<make-tests workingDirectory="${basedir}"/>
+		
+  </target>
+  
   <target name="run-nusmv-tests" depends="init">
     <junit printsummary="yes" haltonfailure="no">
       <classpath>
