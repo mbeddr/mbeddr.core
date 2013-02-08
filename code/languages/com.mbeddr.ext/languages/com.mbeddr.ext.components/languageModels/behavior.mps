@@ -10854,7 +10854,7 @@
                             </node>
                           </node>
                           <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="7919846782125033190">
-                            <property name="value" nameId="tpee.1070475926801" value=" - " />
+                            <property name="value" nameId="tpee.1070475926801" value=" --&gt; " />
                           </node>
                         </node>
                         <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.DotExpression" typeId="tpee.1197027756228" id="7919846782125033293">
