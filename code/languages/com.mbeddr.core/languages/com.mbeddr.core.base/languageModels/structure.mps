@@ -9,6 +9,7 @@
   <import index="tpce" modelUID="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" version="0" implicit="yes" />
   <import index="tpee" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="4" implicit="yes" />
   <import index="tp2q" modelUID="r:00000000-0000-4000-0000-011c8959032e(jetbrains.mps.baseLanguage.collections.structure)" version="7" implicit="yes" />
+  <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="6" implicit="yes" />
   <roots>
     <node type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="7024921229555594291">
       <property name="name" nameId="tpck.1169194664001" value="IIdentifierNamedConcept" />
@@ -121,6 +122,14 @@
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="5959167564566976062">
       <property name="name" nameId="tpck.1169194664001" value="VisibilityControllingAttribute" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.3364660638048049748" resolveInfo="NodeAttribute" />
+    </node>
+    <node type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="117464341934551657">
+      <property name="name" nameId="tpck.1169194664001" value="IVisualizable" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="vis" />
+    </node>
+    <node type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="117464341934617033">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="vis" />
+      <property name="name" nameId="tpck.1169194664001" value="IVisualizationParticipant" />
     </node>
   </roots>
   <root id="7024921229555594291">
@@ -585,5 +594,7 @@
       <link role="target" roleId="tpce.1105736807942" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
     </node>
   </root>
+  <root id="117464341934551657" />
+  <root id="117464341934617033" />
 </model>
 
