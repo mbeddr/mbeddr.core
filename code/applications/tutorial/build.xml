@@ -13,7 +13,9 @@
 
  <taskdef resource="jetbrains/mps/build/ant/antlib.xml"
           classpathref="mps.ant.path"/>
-
+ <taskdef name="make-tests" classname="com.mbeddr.tools.ant.MakeTestsTask" 
+	 	  classpath="${mbeddr.github.core.home}/tools/ant/tasks/MakeTestsTask.jar" />
+ 
   <jvmargs id="myargs">
       <arg value="-ea"/>
       <arg value="-Xss1024k"/>
@@ -49,5 +51,8 @@
     	/>
   </target>
 
-
+  <target name="make-tests" description="Run 'make test' for child Makefiles">
+  	<make-tests workingDirectory="${basedir}"/>		
+  </target>
+  
 </project>
