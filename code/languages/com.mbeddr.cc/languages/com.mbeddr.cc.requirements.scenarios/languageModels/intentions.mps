@@ -30,6 +30,11 @@
       <property name="isErrorIntention" nameId="tp3j.2522969319638091385" value="true" />
       <link role="forConcept" roleId="tp3j.2522969319638198290" targetNodeId="4l29.5744000828452849517" resolveInfo="NonSelfCall" />
     </node>
+    <node type="tp3j.IntentionDeclaration" typeId="tp3j.1192794744107" id="5744000828453213355">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="scenario.logic" />
+      <property name="name" nameId="tpck.1169194664001" value="addAlternativeElse" />
+      <link role="forConcept" roleId="tp3j.2522969319638198290" targetNodeId="4l29.5744000828453199884" resolveInfo="Alternative" />
+    </node>
   </roots>
   <root id="5744000828452680283">
     <node role="descriptionFunction" roleId="tp3j.2522969319638093993" type="tp3j.DescriptionBlock" typeId="tp3j.1192794782375" id="5744000828452680284">
@@ -181,6 +186,40 @@
             <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="nrxl.6707243726026773314" resolveInfo="CreateReferencedUtil" />
             <node role="actualArgument" roleId="tpee.1068499141038" type="tpcw.ConceptFunctionParameter_editorContext" typeId="tpcw.1194033889146" id="6707243726026763783" />
             <node role="actualArgument" roleId="tpee.1068499141038" type="tp3j.ConceptFunctionParameter_node" typeId="tp3j.1192796902958" id="6707243726026763785" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </root>
+  <root id="5744000828453213355">
+    <node role="descriptionFunction" roleId="tp3j.2522969319638093993" type="tp3j.DescriptionBlock" typeId="tp3j.1192794782375" id="5744000828453213356">
+      <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="5744000828453213357">
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="5744000828453213360">
+          <node role="expression" roleId="tpee.1068580123156" type="tpee.PlusExpression" typeId="tpee.1068581242875" id="5744000828453213382">
+            <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.DotExpression" typeId="tpee.1197027756228" id="5744000828453213416">
+              <node role="operand" roleId="tpee.1197027771414" type="tp3j.ConceptFunctionParameter_node" typeId="tp3j.1192796902958" id="5744000828453213385" />
+              <node role="operation" roleId="tpee.1197027833540" type="tp25.SPropertyAccess" typeId="tp25.1138056022639" id="5744000828453213423">
+                <link role="property" roleId="tp25.1138056395725" targetNodeId="4l29.5744000828453199886" resolveInfo="condition" />
+              </node>
+            </node>
+            <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="5744000828453213361">
+              <property name="value" nameId="tpee.1070475926801" value="Add another alternative to " />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node role="executeFunction" roleId="tp3j.2522969319638198291" type="tp3j.ExecuteBlock" typeId="tp3j.1192795911897" id="5744000828453213358">
+      <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="5744000828453213359">
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="5744000828453213424">
+          <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="5744000828453213474">
+            <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="5744000828453213446">
+              <node role="operand" roleId="tpee.1197027771414" type="tp3j.ConceptFunctionParameter_node" typeId="tp3j.1192796902958" id="5744000828453213425" />
+              <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkListAccess" typeId="tp25.1138056282393" id="5744000828453213452">
+                <link role="link" roleId="tp25.1138056546658" targetNodeId="4l29.5744000828453213263" />
+              </node>
+            </node>
+            <node role="operation" roleId="tpee.1197027833540" type="tp25.LinkList_AddNewChildOperation" typeId="tp25.1139184414036" id="5744000828453213480" />
           </node>
         </node>
       </node>
