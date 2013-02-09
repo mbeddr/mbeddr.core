@@ -55,14 +55,6 @@
             </Library>
           </value>
         </entry>
-        <entry key="pu">
-          <value>
-            <Library>
-              <option name="name" value="pu" />
-              <option name="path" value="${mbeddr.assembla.ext.home}/code/languages/com.mbeddr.plantuml" />
-            </Library>
-          </value>
-        </entry>
       </map>
     </option>
   </component>
