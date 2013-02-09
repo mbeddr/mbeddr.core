@@ -6,5 +6,11 @@
     </dependencies>
     <rename id="4l29.5744000828452648918" type="CONCEPT" from="IDataContents" to="IDataContent" />
   </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="4l29" modelUID="r:9f885776-26d3-48f5-a714-b3a8fa61c18a(com.mbeddr.cc.requirements.scenarios.structure)" version="0" />
+    </dependencies>
+    <rename id="4l29.5744000828452849518" type="CHILD" from="participant" to="targetParticipant" />
+  </StructureModification>
 </history>
 
