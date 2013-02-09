@@ -2,30 +2,6 @@
 <history>
   <StructureModification>
     <dependencies>
-      <model index="3vkx" modelUID="r:1c91fcc2-cf14-47f5-a4d4-3b424626f0d4(com.mbeddr.cc.requirements.c.structure)" version="-1" />
-    </dependencies>
-    <rename id="3vkx.3534497005926959052" type="CONCEPT" from="IUsableFromC" to="IInRequirements" />
-  </StructureModification>
-  <StructureModification>
-    <dependencies>
-      <model index="3vkx" modelUID="r:1c91fcc2-cf14-47f5-a4d4-3b424626f0d4(com.mbeddr.cc.requirements.c.structure)" version="0" />
-    </dependencies>
-    <rename id="3vkx.3534497005926959052" type="CONCEPT" from="IInRequirements" to="PointsToReqData" />
-  </StructureModification>
-  <StructureModification>
-    <dependencies>
-      <model index="3vkx" modelUID="r:1c91fcc2-cf14-47f5-a4d4-3b424626f0d4(com.mbeddr.cc.requirements.c.structure)" version="1" />
-    </dependencies>
-    <rename id="3vkx.3534497005926959052" type="CONCEPT" from="PointsToReqData" to="IPointsToReqData" />
-  </StructureModification>
-  <StructureModification>
-    <dependencies>
-      <model index="3vkx" modelUID="r:1c91fcc2-cf14-47f5-a4d4-3b424626f0d4(com.mbeddr.cc.requirements.c.structure)" version="2" />
-    </dependencies>
-    <rename id="3vkx.3562422675423859806" type="CHILD" from="param" to="params" />
-  </StructureModification>
-  <StructureModification>
-    <dependencies>
       <model index="hkt1" modelUID="r:c8eb480e-3a9c-4444-9a74-7da98d9d0a76(com.mbeddr.cc.requirements.c.behavior)" version="-1" />
       <model index="xvsr" modelUID="r:18791582-199a-4c4c-a282-6d61b7657294(com.mbeddr.cc.requirements.behavior)" version="0" />
       <model index="3vkx" modelUID="r:1c91fcc2-cf14-47f5-a4d4-3b424626f0d4(com.mbeddr.cc.requirements.c.structure)" version="3" />

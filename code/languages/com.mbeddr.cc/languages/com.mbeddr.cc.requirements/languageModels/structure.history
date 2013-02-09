@@ -16,13 +16,13 @@
     <dependencies>
       <model index="f21f" modelUID="r:4a0e833e-2a72-40dd-9dd5-8d4cbc79a7bc(com.mbeddr.cc.trace.editor)" version="-1" />
       <model index="5zzw" modelUID="r:95e79a09-2c9b-4b4c-9713-9635ede32e0c(com.mbeddr.cc.trace.refactorings)" version="-1" />
-      <model index="s6bi" modelUID="r:a85ddf64-0248-4e9b-81ab-306845f3da69(com.mbeddr.cc.requirements.intentions)" version="-1" />
-      <model index="xvsr" modelUID="r:18791582-199a-4c4c-a282-6d61b7657294(com.mbeddr.cc.requirements.behavior)" version="-1" />
       <model index="26ao" modelUID="r:7c15925b-a4a5-4da3-88aa-931a5a9ed982(com.mbeddr.cc.trace.structure)" version="-1" />
-      <model index="cxb7" modelUID="r:76ee7d03-b107-4cfa-af31-c8085d27d752(com.mbeddr.cc.trace.intentions)" version="-1" />
+      <model index="xvsr" modelUID="r:18791582-199a-4c4c-a282-6d61b7657294(com.mbeddr.cc.requirements.behavior)" version="-1" />
+      <model index="s6bi" modelUID="r:a85ddf64-0248-4e9b-81ab-306845f3da69(com.mbeddr.cc.requirements.intentions)" version="-1" />
       <model index="75wo" modelUID="r:eaa205a4-f15c-47d3-99e2-e648881b5997(com.mbeddr.cc.requirements.structure)" version="1" />
-      <model index="603" modelUID="r:e75c96fc-f7f0-4331-ae4f-5b6af3aa2cc4(com.mbeddr.cc.requirements.editor)" version="-1" />
+      <model index="cxb7" modelUID="r:76ee7d03-b107-4cfa-af31-c8085d27d752(com.mbeddr.cc.trace.intentions)" version="-1" />
       <model index="mi8d" modelUID="r:3424d837-c178-4d7b-8543-e9f3af3f6072(com.mbeddr.cc.requirements.refactorings)" version="-1" />
+      <model index="603" modelUID="r:e75c96fc-f7f0-4331-ae4f-5b6af3aa2cc4(com.mbeddr.cc.requirements.editor)" version="-1" />
       <model index="y6af" modelUID="r:266125ed-2b05-4b4a-aa3e-7e3d1931d4cd(com.mbeddr.cc.trace.behavior)" version="-1" />
     </dependencies>
     <move id="75wo.3402431285977807417" to="26ao.439567521322929004" />
@@ -218,8 +218,8 @@
       <model index="f21f" modelUID="r:4a0e833e-2a72-40dd-9dd5-8d4cbc79a7bc(com.mbeddr.cc.trace.editor)" version="0" />
       <model index="26ao" modelUID="r:7c15925b-a4a5-4da3-88aa-931a5a9ed982(com.mbeddr.cc.trace.structure)" version="0" />
       <model index="wv0b" modelUID="r:7997f0fd-03cf-4899-b0e1-fc6ea1a5f5f1(com.mbeddr.cc.requirements.constraints)" version="-1" />
-      <model index="qeo3" modelUID="r:838107b6-6775-42a4-a627-76f34bc65522(com.mbeddr.cc.trace.constraints)" version="-1" />
       <model index="75wo" modelUID="r:eaa205a4-f15c-47d3-99e2-e648881b5997(com.mbeddr.cc.requirements.structure)" version="2" />
+      <model index="qeo3" modelUID="r:838107b6-6775-42a4-a627-76f34bc65522(com.mbeddr.cc.trace.constraints)" version="-1" />
       <model index="603" modelUID="r:e75c96fc-f7f0-4331-ae4f-5b6af3aa2cc4(com.mbeddr.cc.requirements.editor)" version="0" />
     </dependencies>
     <move id="75wo.8745401669463168539" to="26ao.439567521322929332" />
@@ -398,6 +398,96 @@
       <model index="75wo" modelUID="r:eaa205a4-f15c-47d3-99e2-e648881b5997(com.mbeddr.cc.requirements.structure)" version="5" />
     </dependencies>
     <rename id="75wo.8745401669462952101" type="CONCEPT" from="ArDe" to="Requirement" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="hkt1" modelUID="r:c8eb480e-3a9c-4444-9a74-7da98d9d0a76(com.mbeddr.cc.requirements.c.behavior)" version="-1" />
+      <model index="xvsr" modelUID="r:18791582-199a-4c4c-a282-6d61b7657294(com.mbeddr.cc.requirements.behavior)" version="0" />
+      <model index="3vkx" modelUID="r:1c91fcc2-cf14-47f5-a4d4-3b424626f0d4(com.mbeddr.cc.requirements.c.structure)" version="3" />
+      <model index="75wo" modelUID="r:eaa205a4-f15c-47d3-99e2-e648881b5997(com.mbeddr.cc.requirements.structure)" version="6" />
+    </dependencies>
+    <move id="3vkx.3534497005926959052" to="75wo.5744000828452695322" />
+    <move id="hkt1.3534497005926975542" to="xvsr.5744000828452695363" />
+    <move id="hkt1.3534497005926975518" to="xvsr.5744000828452695337" />
+    <move id="hkt1.3534497005926975549" to="xvsr.5744000828452695370" />
+    <move id="hkt1.3534497005926975580" to="xvsr.5744000828452695401" />
+    <move id="hkt1.3534497005926975531" to="xvsr.5744000828452695352" />
+    <move id="hkt1.3534497005926975579" to="xvsr.5744000828452695400" />
+    <move id="hkt1.3534497005926975520" to="xvsr.5744000828452695338" />
+    <move id="hkt1.3534497005926990039" to="xvsr.5744000828452695325" />
+    <move id="hkt1.3534497005926975511" to="xvsr.5744000828452695336" />
+    <move id="hkt1.3534497005926990044" to="xvsr.5744000828452695331" />
+    <move id="hkt1.3534497005926975528" to="xvsr.5744000828452695349" />
+    <move id="hkt1.3534497005926975524" to="xvsr.5744000828452695345" />
+    <move id="hkt1.3534497005926975552" to="xvsr.5744000828452695373" />
+    <move id="hkt1.3534497005926975546" to="xvsr.5744000828452695367" />
+    <move id="hkt1.3534497005926975578" to="xvsr.5744000828452695399" />
+    <move id="hkt1.3534497005926975569" to="xvsr.5744000828452695390" />
+    <move id="hkt1.3534497005926975539" to="xvsr.5744000828452695360" />
+    <move id="hkt1.3534497005926975556" to="xvsr.5744000828452695377" />
+    <move id="hkt1.3534497005926975558" to="xvsr.5744000828452695379" />
+    <move id="hkt1.3534497005926975567" to="xvsr.5744000828452695388" />
+    <move id="hkt1.3534497005926975547" to="xvsr.5744000828452695368" />
+    <move id="hkt1.3534497005926990072" to="xvsr.5744000828452695333" />
+    <move id="hkt1.3534497005926974759" to="xvsr.5744000828452695323" />
+    <move id="hkt1.3534497005926975536" to="xvsr.5744000828452695357" />
+    <move id="hkt1.3534497005926975540" to="xvsr.5744000828452695361" />
+    <move id="hkt1.3534497005926990164" to="xvsr.5744000828452695329" />
+    <move id="hkt1.3534497005926975577" to="xvsr.5744000828452695398" />
+    <move id="hkt1.3534497005926975538" to="xvsr.5744000828452695359" />
+    <move id="hkt1.3534497005926975550" to="xvsr.5744000828452695371" />
+    <move id="hkt1.3534497005926990065" to="xvsr.5744000828452695330" />
+    <move id="hkt1.3534497005926975543" to="xvsr.5744000828452695364" />
+    <move id="hkt1.3534497005926975565" to="xvsr.5744000828452695386" />
+    <move id="hkt1.3534497005926975563" to="xvsr.5744000828452695384" />
+    <move id="hkt1.3534497005926975555" to="xvsr.5744000828452695376" />
+    <move id="hkt1.3534497005926975532" to="xvsr.5744000828452695353" />
+    <move id="hkt1.3534497005926975517" to="xvsr.5744000828452695343" />
+    <move id="hkt1.3534497005926975570" to="xvsr.5744000828452695391" />
+    <move id="hkt1.3534497005926975515" to="xvsr.5744000828452695342" />
+    <move id="hkt1.3534497005926975534" to="xvsr.5744000828452695355" />
+    <move id="hkt1.3534497005926975548" to="xvsr.5744000828452695369" />
+    <move id="hkt1.3534497005926975573" to="xvsr.5744000828452695394" />
+    <move id="hkt1.3534497005926975564" to="xvsr.5744000828452695385" />
+    <move id="hkt1.3534497005926975514" to="xvsr.5744000828452695344" />
+    <move id="hkt1.3534497005926990041" to="xvsr.5744000828452695327" />
+    <move id="hkt1.3534497005926975527" to="xvsr.5744000828452695348" />
+    <move id="hkt1.3534497005926975529" to="xvsr.5744000828452695350" />
+    <move id="hkt1.3534497005926975551" to="xvsr.5744000828452695372" />
+    <move id="hkt1.3534497005926975557" to="xvsr.5744000828452695378" />
+    <move id="hkt1.3534497005926990170" to="xvsr.5744000828452695335" />
+    <move id="hkt1.3534497005926975568" to="xvsr.5744000828452695389" />
+    <move id="hkt1.3534497005926990071" to="xvsr.5744000828452695332" />
+    <move id="hkt1.3534497005926975541" to="xvsr.5744000828452695362" />
+    <move id="hkt1.3534497005926975521" to="xvsr.5744000828452695339" />
+    <move id="hkt1.3534497005926975576" to="xvsr.5744000828452695397" />
+    <move id="hkt1.3534497005926975530" to="xvsr.5744000828452695351" />
+    <move id="hkt1.3534497005926975566" to="xvsr.5744000828452695387" />
+    <move id="hkt1.3534497005926975525" to="xvsr.5744000828452695346" />
+    <move id="hkt1.3534497005926975545" to="xvsr.5744000828452695366" />
+    <move id="hkt1.3534497005926975562" to="xvsr.5744000828452695383" />
+    <move id="hkt1.3534497005926975535" to="xvsr.5744000828452695356" />
+    <move id="hkt1.3534497005926975512" to="xvsr.5744000828452695341" />
+    <move id="hkt1.3534497005926990143" to="xvsr.5744000828452695334" />
+    <move id="hkt1.3534497005926975559" to="xvsr.5744000828452695380" />
+    <move id="hkt1.3534497005926990043" to="xvsr.5744000828452695328" />
+    <move id="hkt1.3534497005926974760" to="xvsr.5744000828452695402" />
+    <move id="hkt1.3534497005926990038" to="xvsr.5744000828452695324" />
+    <move id="hkt1.3534497005926975572" to="xvsr.5744000828452695393" />
+    <move id="hkt1.3534497005926975561" to="xvsr.5744000828452695382" />
+    <move id="hkt1.3534497005926975537" to="xvsr.5744000828452695358" />
+    <move id="hkt1.3534497005926975575" to="xvsr.5744000828452695396" />
+    <move id="hkt1.3534497005926975560" to="xvsr.5744000828452695381" />
+    <move id="hkt1.3534497005926975553" to="xvsr.5744000828452695374" />
+    <move id="hkt1.3534497005926975526" to="xvsr.5744000828452695347" />
+    <move id="hkt1.3534497005926990042" to="xvsr.5744000828452695326" />
+    <move id="hkt1.3534497005926975544" to="xvsr.5744000828452695365" />
+    <move id="hkt1.3534497005926974761" to="xvsr.5744000828452695403" />
+    <move id="hkt1.3534497005926975554" to="xvsr.5744000828452695375" />
+    <move id="hkt1.3534497005926975523" to="xvsr.5744000828452695340" />
+    <move id="hkt1.3534497005926975533" to="xvsr.5744000828452695354" />
+    <move id="hkt1.3534497005926975571" to="xvsr.5744000828452695392" />
+    <move id="hkt1.3534497005926975574" to="xvsr.5744000828452695395" />
   </StructureModification>
 </history>
 
