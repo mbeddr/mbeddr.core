@@ -14,7 +14,7 @@
   <root id="5744000828452680214">
     <node role="requirements" roleId="75wo.8745401669462963171" type="75wo.Requirement" typeId="75wo.8745401669462952101" id="5744000828452777899">
       <property name="priority" nameId="75wo.3314758227758879688" value="0" />
-      <property name="open" nameId="75wo.1165432222361744926" value="true" />
+      <property name="open" nameId="75wo.1165432222361744926" value="false" />
       <property name="name" nameId="tpck.1169194664001" value="Comm" />
       <property name="summmary" nameId="75wo.3402431285977818823" value="Communicates over the wireline" />
       <property name="proseText" nameId="75wo.8745401669463252438" value="" />
@@ -36,7 +36,7 @@
     </node>
     <node role="requirements" roleId="75wo.8745401669462963171" type="75wo.Requirement" typeId="75wo.8745401669462952101" id="5744000828452683536">
       <property name="priority" nameId="75wo.3314758227758879688" value="0" />
-      <property name="open" nameId="75wo.1165432222361744926" value="true" />
+      <property name="open" nameId="75wo.1165432222361744926" value="false" />
       <property name="name" nameId="tpck.1169194664001" value="Metrology" />
       <property name="summmary" nameId="75wo.3402431285977818823" value="Measures current consumption" />
       <node role="kind" roleId="75wo.8921256082857728256" type="4l29.ComponentRequirementKind" typeId="4l29.5744000828452822758" id="5744000828452842000" />
@@ -76,11 +76,12 @@
       <property name="open" nameId="75wo.1165432222361744926" value="false" />
       <property name="name" nameId="tpck.1169194664001" value="CurrentData" />
       <property name="summmary" nameId="75wo.3402431285977818823" value="Represents a current flowing" />
+      <property name="proseText" nameId="75wo.8745401669463252438" value="Here are the requirements Details." />
       <node role="kind" roleId="75wo.8921256082857728256" type="75wo.FunctionalRequirementKind" typeId="75wo.8921256082857728250" id="5744000828452680216" />
     </node>
     <node role="requirements" roleId="75wo.8745401669462963171" type="75wo.Requirement" typeId="75wo.8745401669462952101" id="5744000828452816594">
       <property name="priority" nameId="75wo.3314758227758879688" value="0" />
-      <property name="open" nameId="75wo.1165432222361744926" value="true" />
+      <property name="open" nameId="75wo.1165432222361744926" value="false" />
       <property name="name" nameId="tpck.1169194664001" value="Scheduler" />
       <property name="summmary" nameId="75wo.3402431285977818823" value="Schedules the other components" />
       <node role="kind" roleId="75wo.8921256082857728256" type="4l29.ComponentRequirementKind" typeId="4l29.5744000828452822758" id="5744000828452842001" />
@@ -104,7 +105,7 @@
     </node>
     <node role="requirements" roleId="75wo.8745401669462963171" type="75wo.Requirement" typeId="75wo.8745401669462952101" id="5744000828452830497">
       <property name="priority" nameId="75wo.3314758227758879688" value="0" />
-      <property name="open" nameId="75wo.1165432222361744926" value="true" />
+      <property name="open" nameId="75wo.1165432222361744926" value="false" />
       <property name="name" nameId="tpck.1169194664001" value="RunMeasurement" />
       <property name="summmary" nameId="75wo.3402431285977818823" value="Run a measurement" />
       <property name="proseText" nameId="75wo.8745401669463252438" value="" />
@@ -194,6 +195,7 @@
         </node>
       </node>
     </node>
+    <node role="summaries" roleId="75wo.3314758227759002193" type="75wo.CountingSummary" typeId="75wo.3314758227759007649" id="8119642625901571690" />
   </root>
 </model>
 
