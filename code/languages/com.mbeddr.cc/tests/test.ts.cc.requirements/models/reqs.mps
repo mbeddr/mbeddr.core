@@ -47,7 +47,7 @@
         <node role="details" roleId="75wo.8745401669462962629" type="75wo.Requirement" typeId="75wo.8745401669462952101" id="1209423092481311986">
           <property name="name" nameId="tpck.1169194664001" value="FailOtherwise" />
           <property name="summmary" nameId="75wo.3402431285977818823" value="Otherwise it should return -1" />
-          <property name="open" nameId="75wo.1165432222361744926" value="false" />
+          <property name="open" nameId="75wo.1165432222361744926" value="true" />
           <property name="proseText" nameId="75wo.8745401669463252438" value="Hallo hier sind die Details." />
           <property name="implemented" nameId="75wo.2667296550441502913" value="true" />
           <property name="traced" nameId="75wo.2667296550441527826" value="true" />
@@ -57,7 +57,7 @@
           <node role="additionalData" roleId="75wo.8745401669463270518" type="75wo.TimingSpecification" typeId="75wo.3402431285977750163" id="1165432222362099155">
             <property name="timingSpec" nameId="75wo.3402431285977750164" value="dfsdfdsf" />
           </node>
-          <node role="links" roleId="75wo.8745401669463260576" type="75wo.ConflictsWithLink" typeId="75wo.8745401669463257446" id="1165432222362099156">
+          <node role="additionalData" roleId="75wo.8745401669463270518" type="75wo.ConflictsWithLink" typeId="75wo.8745401669463257446" id="1165432222362099156">
             <link role="target" roleId="75wo.8745401669463257454" targetNodeId="1209423092481311976" resolveInfo="Add" />
           </node>
         </node>
@@ -125,10 +125,10 @@
       <property name="summmary" nameId="75wo.3402431285977818823" value="Specializes this other one" />
       <property name="proseText" nameId="75wo.8745401669463252438" value="This is the text." />
       <property name="priority" nameId="75wo.3314758227758879688" value="1" />
-      <node role="kind" roleId="75wo.8921256082857728256" type="75wo.FunctionalRequirementKind" typeId="75wo.8921256082857728250" id="1165432222362134392" />
-      <node role="links" roleId="75wo.8745401669463260576" type="75wo.RefinesLink" typeId="75wo.1165432222362123724" id="1165432222362134393">
+      <node role="additionalData" roleId="75wo.8745401669463270518" type="75wo.RefinesLink" typeId="75wo.1165432222362123724" id="1165432222362134393">
         <link role="target" roleId="75wo.8745401669463257454" targetNodeId="1209423092481311976" resolveInfo="Add" />
       </node>
+      <node role="kind" roleId="75wo.8921256082857728256" type="75wo.FunctionalRequirementKind" typeId="75wo.8921256082857728250" id="1165432222362134392" />
     </node>
   </root>
   <root id="8200057468984897506">
