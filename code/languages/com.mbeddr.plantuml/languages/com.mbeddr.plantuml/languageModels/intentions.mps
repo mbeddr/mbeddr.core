@@ -25,6 +25,7 @@
   <roots>
     <node type="tp3j.ParameterizedIntentionDeclaration" typeId="tp3j.1240395258925" id="7919846782124794074">
       <property name="name" nameId="tpck.1169194664001" value="visualize" />
+      <property name="isAvailableInChildNodes" nameId="tp3j.2522969319638091386" value="true" />
       <link role="forConcept" roleId="tp3j.2522969319638198290" targetNodeId="vs0r.117464341934551657" resolveInfo="IVisualizable" />
     </node>
   </roots>
