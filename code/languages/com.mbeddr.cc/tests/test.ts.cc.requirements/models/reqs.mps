@@ -137,9 +137,11 @@
     </node>
     <node role="configurationItems" roleId="vs0r.4459718605982007338" type="y5m3.RequirementsConfigItem" typeId="y5m3.8200057468984885908" id="8200057468984897509">
       <node role="reports" roleId="y5m3.8200057468984903170" type="y5m3.GenerateReport" typeId="y5m3.8200057468984903158" id="8200057468984992955">
+        <property name="collapsedStartingFromLevel" nameId="y5m3.7784032510525662161" value="1" />
         <link role="module" roleId="y5m3.8200057468984903159" targetNodeId="1165432222362120317" resolveInfo="DetailedRequirements" />
       </node>
       <node role="reports" roleId="y5m3.8200057468984903170" type="y5m3.GenerateReport" typeId="y5m3.8200057468984903158" id="8200057468984992956">
+        <property name="collapsedStartingFromLevel" nameId="y5m3.7784032510525662161" value="1" />
         <link role="module" roleId="y5m3.8200057468984903159" targetNodeId="8745401669463114528" resolveInfo="HighLevelRequirements" />
       </node>
     </node>
