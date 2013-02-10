@@ -105,7 +105,7 @@
     </node>
     <node role="requirements" roleId="75wo.8745401669462963171" type="75wo.Requirement" typeId="75wo.8745401669462952101" id="5744000828452830497">
       <property name="priority" nameId="75wo.3314758227758879688" value="0" />
-      <property name="open" nameId="75wo.1165432222361744926" value="false" />
+      <property name="open" nameId="75wo.1165432222361744926" value="true" />
       <property name="name" nameId="tpck.1169194664001" value="RunMeasurement" />
       <property name="summmary" nameId="75wo.3402431285977818823" value="Run a measurement" />
       <property name="proseText" nameId="75wo.8745401669463252438" value="" />
@@ -114,6 +114,9 @@
         <property name="name" nameId="tpck.1169194664001" value="RunMeasurement" />
         <node role="initial" roleId="4l29.5744000828452824190" type="4l29.InitialContext" typeId="4l29.5744000828452824121" id="5744000828452842004">
           <link role="initiator" roleId="4l29.5744000828452824122" targetNodeId="5744000828452816596" resolveInfo="Scheduler" />
+          <node role="contents" roleId="4l29.5744000828452862537" type="4l29.Heading" typeId="4l29.8119642625901571839" id="8119642625901597891">
+            <property name="text" nameId="4l29.8119642625901571841" value="Init" />
+          </node>
           <node role="contents" roleId="4l29.5744000828452862537" type="4l29.SequentialCall" typeId="4l29.5744000828452842290" id="5744000828452925868">
             <link role="capability" roleId="4l29.5744000828452854655" targetNodeId="5744000828452925866" resolveInfo="sendData" />
             <node role="targetParticipant" roleId="4l29.5744000828452849518" type="4l29.ParticipantRef" typeId="4l29.5744000828452824074" id="5744000828452925870">
@@ -153,6 +156,9 @@
               <link role="participant" roleId="4l29.5744000828452824075" targetNodeId="5744000828452777901" resolveInfo="Comm" />
             </node>
           </node>
+          <node role="contents" roleId="4l29.5744000828452862537" type="4l29.Heading" typeId="4l29.8119642625901571839" id="8119642625901597893">
+            <property name="text" nameId="4l29.8119642625901571841" value="Execute" />
+          </node>
           <node role="contents" roleId="4l29.5744000828452862537" type="4l29.Loop" typeId="4l29.5744000828453143034" id="5744000828453168381">
             <property name="iteration" nameId="4l29.5744000828453143037" value="over all items" />
             <node role="contents" roleId="4l29.5744000828453143036" type="4l29.SequentialCall" typeId="4l29.5744000828452842290" id="5744000828453168957">
@@ -169,6 +175,9 @@
             <property name="condition" nameId="4l29.5744000828453199886" value="the good case" />
             <node role="contents" roleId="4l29.5744000828453199898" type="4l29.SelfCall" typeId="4l29.5744000828452956484" id="5744000828453211672">
               <link role="capability" roleId="4l29.5744000828452854655" targetNodeId="5744000828452816601" resolveInfo="schedule" />
+            </node>
+            <node role="contents" roleId="4l29.5744000828453199898" type="4l29.Heading" typeId="4l29.8119642625901571839" id="8119642625901585596">
+              <property name="text" nameId="4l29.8119642625901571841" value="This is a heading" />
             </node>
             <node role="contents" roleId="4l29.5744000828453199898" type="4l29.SequentialCall" typeId="4l29.5744000828452842290" id="5744000828453211674">
               <link role="capability" roleId="4l29.5744000828452854655" targetNodeId="5744000828452925866" resolveInfo="sendData" />
