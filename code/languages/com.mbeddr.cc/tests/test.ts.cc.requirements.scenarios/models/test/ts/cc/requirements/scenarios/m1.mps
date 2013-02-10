@@ -14,13 +14,16 @@
   <root id="5744000828452680214">
     <node role="requirements" roleId="75wo.8745401669462963171" type="75wo.Requirement" typeId="75wo.8745401669462952101" id="5744000828452777899">
       <property name="priority" nameId="75wo.3314758227758879688" value="0" />
-      <property name="open" nameId="75wo.1165432222361744926" value="false" />
+      <property name="open" nameId="75wo.1165432222361744926" value="true" />
       <property name="name" nameId="tpck.1169194664001" value="Comm" />
       <property name="summmary" nameId="75wo.3402431285977818823" value="Communicates over the wireline" />
       <property name="proseText" nameId="75wo.8745401669463252438" value="" />
       <node role="kind" roleId="75wo.8921256082857728256" type="4l29.ComponentRequirementKind" typeId="4l29.5744000828452822758" id="5744000828452841999" />
       <node role="additionalData" roleId="75wo.8745401669463270518" type="4l29.Component" typeId="4l29.5744000828452661387" id="5744000828452777901">
         <property name="name" nameId="tpck.1169194664001" value="Comm" />
+        <node role="contents" roleId="4l29.5744000828452661377" type="4l29.DataItem" typeId="4l29.5744000828452648916" id="8119642625901709819">
+          <property name="name" nameId="tpck.1169194664001" value="ControlData" />
+        </node>
         <node role="contents" roleId="4l29.5744000828452661377" type="4l29.Collaboration" typeId="4l29.5744000828452694711" id="5744000828452777902">
           <link role="participant" roleId="4l29.5744000828452694713" targetNodeId="5744000828452683538" resolveInfo="Metrology" />
         </node>
@@ -76,7 +79,7 @@
       <property name="open" nameId="75wo.1165432222361744926" value="false" />
       <property name="name" nameId="tpck.1169194664001" value="CurrentData" />
       <property name="summmary" nameId="75wo.3402431285977818823" value="Represents a current flowing" />
-      <property name="proseText" nameId="75wo.8745401669463252438" value="Here are the requirements Details." />
+      <property name="proseText" nameId="75wo.8745401669463252438" value="Here are the requirements Details. You can enter as much as you like." />
       <node role="kind" roleId="75wo.8921256082857728256" type="75wo.FunctionalRequirementKind" typeId="75wo.8921256082857728250" id="5744000828452680216" />
     </node>
     <node role="requirements" roleId="75wo.8745401669462963171" type="75wo.Requirement" typeId="75wo.8745401669462952101" id="5744000828452816594">
@@ -199,6 +202,37 @@
               <node role="contents" roleId="4l29.5744000828453213328" type="4l29.SelfCall" typeId="4l29.5744000828452956484" id="5744000828453229976">
                 <link role="capability" roleId="4l29.5744000828452854655" targetNodeId="5744000828452816601" resolveInfo="schedule" />
               </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node role="requirements" roleId="75wo.8745401669462963171" type="75wo.Requirement" typeId="75wo.8745401669462952101" id="8119642625901690642">
+      <property name="priority" nameId="75wo.3314758227758879688" value="0" />
+      <property name="open" nameId="75wo.1165432222361744926" value="true" />
+      <property name="name" nameId="tpck.1169194664001" value="AnotherScenario" />
+      <property name="summmary" nameId="75wo.3402431285977818823" value="SomeData" />
+      <node role="kind" roleId="75wo.8921256082857728256" type="4l29.ScenarioRequirementKind" typeId="4l29.5744000828452835552" id="8119642625901690644" />
+      <node role="additionalData" roleId="75wo.8745401669463270518" type="4l29.Scenario" typeId="4l29.5744000828452824073" id="8119642625901709812">
+        <property name="name" nameId="tpck.1169194664001" value="AnotherScenario" />
+        <node role="initial" roleId="4l29.5744000828452824190" type="4l29.InitialContext" typeId="4l29.5744000828452824121" id="8119642625901709814">
+          <link role="initiator" roleId="4l29.5744000828452824122" targetNodeId="5744000828452777901" resolveInfo="Comm" />
+          <node role="contents" roleId="4l29.5744000828452862537" type="4l29.SequentialCall" typeId="4l29.5744000828452842290" id="8119642625901709815">
+            <link role="capability" roleId="4l29.5744000828452854655" targetNodeId="5744000828452683542" resolveInfo="measure" />
+            <node role="targetParticipant" roleId="4l29.5744000828452849518" type="4l29.ParticipantRef" typeId="4l29.5744000828452824074" id="8119642625901709817">
+              <link role="participant" roleId="4l29.5744000828452824075" targetNodeId="5744000828452683538" resolveInfo="Metrology" />
+            </node>
+            <node role="args" roleId="4l29.5744000828452981042" type="4l29.DataItemArg" typeId="4l29.5744000828452990961" id="8119642625901709820">
+              <link role="item" roleId="4l29.5744000828452990962" targetNodeId="8119642625901709819" resolveInfo="ControlData" />
+            </node>
+          </node>
+          <node role="contents" roleId="4l29.5744000828452862537" type="4l29.SequentialCall" typeId="4l29.5744000828452842290" id="8119642625901709822">
+            <link role="capability" roleId="4l29.5744000828452854655" targetNodeId="5744000828452966659" resolveInfo="hallo" />
+            <node role="targetParticipant" roleId="4l29.5744000828452849518" type="4l29.ParticipantRef" typeId="4l29.5744000828452824074" id="8119642625901709824">
+              <link role="participant" roleId="4l29.5744000828452824075" targetNodeId="5744000828452683538" resolveInfo="Metrology" />
+            </node>
+            <node role="args" roleId="4l29.5744000828452981042" type="4l29.DataItemArg" typeId="4l29.5744000828452990961" id="8119642625901718865">
+              <link role="item" roleId="4l29.5744000828452990962" targetNodeId="5744000828453095894" resolveInfo="Measurement" />
             </node>
           </node>
         </node>
