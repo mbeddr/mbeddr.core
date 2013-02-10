@@ -105,7 +105,7 @@
     </node>
     <node role="requirements" roleId="75wo.8745401669462963171" type="75wo.Requirement" typeId="75wo.8745401669462952101" id="5744000828452830497">
       <property name="priority" nameId="75wo.3314758227758879688" value="0" />
-      <property name="open" nameId="75wo.1165432222361744926" value="true" />
+      <property name="open" nameId="75wo.1165432222361744926" value="false" />
       <property name="name" nameId="tpck.1169194664001" value="RunMeasurement" />
       <property name="summmary" nameId="75wo.3402431285977818823" value="Run a measurement" />
       <property name="proseText" nameId="75wo.8745401669463252438" value="" />
