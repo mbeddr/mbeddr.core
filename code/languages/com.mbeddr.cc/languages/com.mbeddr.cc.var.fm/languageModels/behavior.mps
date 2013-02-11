@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model modelUID="r:0a669ac3-8469-4820-883d-73721ea0df96(com.mbeddr.cc.var.fm.behavior)">
+<model modelUID="r:0a669ac3-8469-4820-883d-73721ea0df96(com.mbeddr.cc.var.fm.behavior)" version="0">
   <persistence version="7" />
   <language namespace="af65afd8-f0dd-4942-87d9-63a55f2a9db1(jetbrains.mps.lang.behavior)" />
   <devkit namespace="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
-  <import index="qqyh" modelUID="r:a74300b8-76a8-461e-befa-fc86b0ad5dd9(com.mbeddr.cc.var.fm.structure)" version="5" />
+  <import index="qqyh" modelUID="r:a74300b8-76a8-461e-befa-fc86b0ad5dd9(com.mbeddr.cc.var.fm.structure)" version="6" />
   <import index="o8zo" modelUID="r:314576fc-3aee-4386-a0a5-a38348ac317d(jetbrains.mps.scope)" version="-1" />
   <import index="68ai" modelUID="f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#org.jetbrains.annotations(MPS.Core/org.jetbrains.annotations@java_stub)" version="-1" />
+  <import index="qdv7" modelUID="r:1ff3d952-eae5-4d94-b89e-ea3060b11545(com.mbeddr.cc.var.annotations.structure)" version="6" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="tp25" modelUID="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" version="-1" implicit="yes" />
   <import index="tpee" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="3" implicit="yes" />
@@ -60,13 +61,17 @@
     <node type="tpee.ClassConcept" typeId="tpee.1068390468198" id="4375745351933436273">
       <property name="name" nameId="tpck.1169194664001" value="FeatureModelScope" />
     </node>
-    <node type="1i04.ConceptBehavior" typeId="1i04.1225194240794" id="8655966904682796858">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="fm" />
-      <link role="concept" roleId="1i04.1225194240799" targetNodeId="qqyh.6840952553350507413" resolveInfo="NoValueExpression" />
-    </node>
     <node type="1i04.ConceptBehavior" typeId="1i04.1225194240794" id="8655966904682798964">
       <property name="virtualPackage" nameId="tpck.1193676396447" value="fm" />
       <link role="concept" roleId="1i04.1225194240799" targetNodeId="qqyh.8799034948079995131" resolveInfo="ConfigurationDependantExpression" />
+    </node>
+    <node type="1i04.ConceptBehavior" typeId="1i04.1225194240794" id="4508614440797598278">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="fm" />
+      <link role="concept" roleId="1i04.1225194240799" targetNodeId="qqyh.4508614440797534978" resolveInfo="FeatureModelElement" />
+    </node>
+    <node type="1i04.ConceptBehavior" typeId="1i04.1225194240794" id="4508614440797598286">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="fm" />
+      <link role="concept" roleId="1i04.1225194240799" targetNodeId="qqyh.2203816361987134490" resolveInfo="DerivedFeature" />
     </node>
   </roots>
   <root id="6825476687691297517">
@@ -1450,26 +1455,6 @@
       </node>
     </node>
   </root>
-  <root id="8655966904682796858">
-    <node role="constructor" roleId="1i04.1225194240801" type="1i04.ConceptConstructorDeclaration" typeId="1i04.1225194413805" id="8655966904682796859">
-      <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="8655966904682796860" />
-    </node>
-    <node role="method" roleId="1i04.1225194240805" type="1i04.ConceptMethodDeclaration" typeId="1i04.1225194472830" id="8655966904682796861">
-      <property name="name" nameId="tpck.1169194664001" value="isStaticallyEvaluatable" />
-      <property name="isVirtual" nameId="1i04.1225194472832" value="false" />
-      <property name="isAbstract" nameId="1i04.1225194472834" value="false" />
-      <link role="overriddenMethod" roleId="1i04.1225194472831" targetNodeId="ywuz.3788988821852141811" resolveInfo="isStaticallyEvaluatable" />
-      <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="8655966904682796862" />
-      <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="8655966904682796863">
-        <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="8655966904682796865">
-          <node role="expression" roleId="tpee.1068580123156" type="tpee.BooleanConstant" typeId="tpee.1068580123137" id="8655966904682796870">
-            <property name="value" nameId="tpee.1068580123138" value="true" />
-          </node>
-        </node>
-      </node>
-      <node role="returnType" roleId="tpee.1068580123133" type="tpee.BooleanType" typeId="tpee.1070534644030" id="8655966904682796864" />
-    </node>
-  </root>
   <root id="8655966904682798964">
     <node role="constructor" roleId="1i04.1225194240801" type="1i04.ConceptConstructorDeclaration" typeId="1i04.1225194413805" id="8655966904682798965">
       <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="8655966904682798966" />
@@ -1512,7 +1497,7 @@
                                   <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="8655966904682801332" resolveInfo="it" />
                                 </node>
                                 <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="8655966904682801339">
-                                  <link role="link" roleId="tp25.1138056516764" targetNodeId="qqyh.8799034948080016964" />
+                                  <link role="link" roleId="tp25.1138056516764" targetNodeId="qdv7.4508614440797598371" />
                                 </node>
                               </node>
                               <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_ConceptMethodCall" typeId="tp25.1179409122411" id="8655966904682801340">
@@ -1536,6 +1521,16 @@
         </node>
       </node>
       <node role="returnType" roleId="tpee.1068580123133" type="tpee.BooleanType" typeId="tpee.1070534644030" id="8655966904682798970" />
+    </node>
+  </root>
+  <root id="4508614440797598278">
+    <node role="constructor" roleId="1i04.1225194240801" type="1i04.ConceptConstructorDeclaration" typeId="1i04.1225194413805" id="4508614440797598279">
+      <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="4508614440797598280" />
+    </node>
+  </root>
+  <root id="4508614440797598286">
+    <node role="constructor" roleId="1i04.1225194240801" type="1i04.ConceptConstructorDeclaration" typeId="1i04.1225194413805" id="4508614440797598287">
+      <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="4508614440797598288" />
     </node>
   </root>
 </model>
