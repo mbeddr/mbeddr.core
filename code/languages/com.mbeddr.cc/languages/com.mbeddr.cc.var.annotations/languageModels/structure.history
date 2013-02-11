@@ -11,8 +11,8 @@
       <model index="px2x" modelUID="r:c414c326-1f3c-4c25-a6e1-a886a8a5ae3c(com.mbeddr.cc.fm.intentions)" version="-1" />
       <model index="6jzq" modelUID="r:b34a99b5-15cb-4dbe-ba4c-638edf0da733(com.mbeddr.cc.fm.plugin)" version="-1" />
       <model index="rpdm" modelUID="r:91453863-abdf-432d-a851-57f349774287(com.mbeddr.cc.fm.behavior)" version="-1" />
-      <model index="qkbr" modelUID="r:b6c2ea2b-94d4-4291-9ab5-6b0b10da5dd6(com.mbeddr.cc.fm.typesystem)" version="-1" />
       <model index="7rpm" modelUID="r:c7e1413b-fad0-49ac-824c-9b0d20143090(com.mbeddr.cc.fm.editor)" version="-1" />
+      <model index="qkbr" modelUID="r:b6c2ea2b-94d4-4291-9ab5-6b0b10da5dd6(com.mbeddr.cc.fm.typesystem)" version="-1" />
       <model index="yvar" modelUID="r:765e33cb-4436-4258-bc77-24aaaa4929ca(com.mbeddr.cc.fm.constraints)" version="-1" />
       <model index="qdv7" modelUID="r:1ff3d952-eae5-4d94-b89e-ea3060b11545(com.mbeddr.cc.fm.structure)" version="0" />
     </dependencies>
@@ -29,8 +29,8 @@
       <model index="px2x" modelUID="r:c414c326-1f3c-4c25-a6e1-a886a8a5ae3c(com.mbeddr.cc.var.intentions)" version="0" />
       <model index="6jzq" modelUID="r:b34a99b5-15cb-4dbe-ba4c-638edf0da733(com.mbeddr.cc.var.plugin)" version="0" />
       <model index="rpdm" modelUID="r:91453863-abdf-432d-a851-57f349774287(com.mbeddr.cc.var.behavior)" version="0" />
-      <model index="qkbr" modelUID="r:b6c2ea2b-94d4-4291-9ab5-6b0b10da5dd6(com.mbeddr.cc.var.typesystem)" version="0" />
       <model index="7rpm" modelUID="r:c7e1413b-fad0-49ac-824c-9b0d20143090(com.mbeddr.cc.var.editor)" version="0" />
+      <model index="qkbr" modelUID="r:b6c2ea2b-94d4-4291-9ab5-6b0b10da5dd6(com.mbeddr.cc.var.typesystem)" version="0" />
       <model index="yvar" modelUID="r:765e33cb-4436-4258-bc77-24aaaa4929ca(com.mbeddr.cc.var.constraints)" version="0" />
       <model index="qdv7" modelUID="r:1ff3d952-eae5-4d94-b89e-ea3060b11545(com.mbeddr.cc.var.structure)" version="1" />
     </dependencies>
@@ -59,6 +59,66 @@
       <model index="qdv7" modelUID="r:1ff3d952-eae5-4d94-b89e-ea3060b11545(com.mbeddr.cc.var.annotations.structure)" version="4" />
     </dependencies>
     <rename id="qdv7.8799034948079995131" type="CONCEPT" from="UnderConditionExpression" to="ConfigurationDependantExpression" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="rpdm" modelUID="r:91453863-abdf-432d-a851-57f349774287(com.mbeddr.cc.var.annotations.behavior)" version="1" />
+      <model index="qqyh" modelUID="r:a74300b8-76a8-461e-befa-fc86b0ad5dd9(com.mbeddr.cc.var.fm.structure)" version="5" />
+      <model index="7rpm" modelUID="r:c7e1413b-fad0-49ac-824c-9b0d20143090(com.mbeddr.cc.var.annotations.editor)" version="1" />
+      <model index="4prv" modelUID="r:1e889373-bd3c-4acd-972a-d9526584c597(com.mbeddr.cc.var.fm.editor)" version="-1" />
+      <model index="qdv7" modelUID="r:1ff3d952-eae5-4d94-b89e-ea3060b11545(com.mbeddr.cc.var.annotations.structure)" version="5" />
+      <model index="g0zr" modelUID="r:0a669ac3-8469-4820-883d-73721ea0df96(com.mbeddr.cc.var.fm.behavior)" version="-1" />
+    </dependencies>
+    <move id="qqyh.6840952553350485133" to="qdv7.4508614440797598372" />
+    <move id="qqyh.2203816361987306077" to="qdv7.4508614440797598366" />
+    <move id="qqyh.6840952553350485134" to="qdv7.4508614440797598373" />
+    <move id="qqyh.8799034948079995130" to="qdv7.4508614440797598370" />
+    <move id="qqyh.8799034948080016964" to="qdv7.4508614440797598371" />
+    <move id="qqyh.2203816361987306078" to="qdv7.4508614440797598367" />
+    <move id="qqyh.8799034948079995129" to="qdv7.4508614440797598369" />
+    <move id="qqyh.6840952553350507413" to="qdv7.4508614440797598368" />
+    <move id="g0zr.8655966904682796861" to="rpdm.4508614440797598377" />
+    <move id="g0zr.8655966904682796859" to="rpdm.4508614440797598375" />
+    <move id="g0zr.8655966904682796862" to="rpdm.4508614440797598378" />
+    <move id="g0zr.8655966904682796865" to="rpdm.4508614440797598380" />
+    <move id="g0zr.8655966904682796863" to="rpdm.4508614440797598379" />
+    <move id="g0zr.8655966904682796858" to="rpdm.4508614440797598374" />
+    <move id="g0zr.8655966904682796864" to="rpdm.4508614440797598382" />
+    <move id="g0zr.8655966904682796860" to="rpdm.4508614440797598376" />
+    <move id="g0zr.8655966904682796870" to="rpdm.4508614440797598381" />
+    <move id="4prv.6840952553350485172" to="7rpm.4508614440797598413" />
+    <move id="4prv.2203816361987382570" to="7rpm.4508614440797598385" />
+    <move id="4prv.768916965300458918" to="7rpm.4508614440797598394" />
+    <move id="4prv.6840952553350485139" to="7rpm.4508614440797598403" />
+    <move id="4prv.6840952553350507416" to="7rpm.4508614440797598415" />
+    <move id="4prv.6840952553350485144" to="7rpm.4508614440797598409" />
+    <move id="4prv.8799034948080434764" to="7rpm.4508614440797598393" />
+    <move id="4prv.6840952553350485137" to="7rpm.4508614440797598401" />
+    <move id="4prv.6840952553350485142" to="7rpm.4508614440797598407" />
+    <move id="4prv.768916965300458925" to="7rpm.4508614440797598396" />
+    <move id="4prv.8799034948080434757" to="7rpm.4508614440797598390" />
+    <move id="4prv.6840952553350485143" to="7rpm.4508614440797598408" />
+    <move id="4prv.768916965300458926" to="7rpm.4508614440797598397" />
+    <move id="4prv.6840952553350507414" to="7rpm.4508614440797598414" />
+    <move id="4prv.6840952553350485146" to="7rpm.4508614440797598412" />
+    <move id="4prv.7643633527369641088" to="7rpm.4508614440797598406" />
+    <move id="4prv.8799034948080434753" to="7rpm.4508614440797598388" />
+    <move id="4prv.2203816361987382569" to="7rpm.4508614440797598384" />
+    <move id="4prv.768916965300458928" to="7rpm.4508614440797598398" />
+    <move id="4prv.6840952553350485135" to="7rpm.4508614440797598400" />
+    <move id="4prv.8799034948080434760" to="7rpm.4508614440797598392" />
+    <move id="4prv.8799034948080434754" to="7rpm.4508614440797598389" />
+    <move id="4prv.2203816361987382572" to="7rpm.4508614440797598386" />
+    <move id="4prv.6840952553350485145" to="7rpm.4508614440797598410" />
+    <move id="4prv.8799034948080434758" to="7rpm.4508614440797598391" />
+    <move id="4prv.8799034948080435505" to="7rpm.4508614440797598387" />
+    <move id="4prv.6840952553350485141" to="7rpm.4508614440797598405" />
+    <move id="4prv.2203816361987382567" to="7rpm.4508614440797598383" />
+    <move id="4prv.6840952553350485138" to="7rpm.4508614440797598402" />
+    <move id="4prv.768916965300458922" to="7rpm.4508614440797598395" />
+    <move id="4prv.6840952553350485167" to="7rpm.4508614440797598411" />
+    <move id="4prv.768916965300458929" to="7rpm.4508614440797598399" />
+    <move id="4prv.7643633527369641087" to="7rpm.4508614440797598404" />
   </StructureModification>
 </history>
 
