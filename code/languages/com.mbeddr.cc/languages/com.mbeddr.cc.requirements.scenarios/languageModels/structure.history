@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<history>
+  <StructureModification>
+    <dependencies>
+      <model index="4l29" modelUID="r:9f885776-26d3-48f5-a714-b3a8fa61c18a(com.mbeddr.cc.requirements.scenarios.structure)" version="-1" />
+    </dependencies>
+    <rename id="4l29.5744000828452648918" type="CONCEPT" from="IDataContents" to="IDataContent" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="4l29" modelUID="r:9f885776-26d3-48f5-a714-b3a8fa61c18a(com.mbeddr.cc.requirements.scenarios.structure)" version="0" />
+    </dependencies>
+    <rename id="4l29.5744000828452849518" type="CHILD" from="participant" to="targetParticipant" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="4l29" modelUID="r:9f885776-26d3-48f5-a714-b3a8fa61c18a(com.mbeddr.cc.requirements.scenarios.structure)" version="1" />
+    </dependencies>
+    <rename id="4l29.5744000828452862537" type="CHILD" from="calls" to="contents" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="4l29" modelUID="r:9f885776-26d3-48f5-a714-b3a8fa61c18a(com.mbeddr.cc.requirements.scenarios.structure)" version="2" />
+    </dependencies>
+    <rename id="4l29.8119642625901719133" type="PROPERTY" from="text" to="message" />
+  </StructureModification>
+</history>
+
