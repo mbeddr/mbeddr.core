@@ -4,7 +4,7 @@
   <language namespace="d6714220-402d-48cb-a4a2-88223c6257f6(com.mbeddr.cc.requirements.scenarios)" />
   <devkit namespace="a4dac888-0788-4852-b4c0-f386bf6f2c0b(com.mbeddr.cc.reqtrace)" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
-  <import index="4l29" modelUID="r:9f885776-26d3-48f5-a714-b3a8fa61c18a(com.mbeddr.cc.requirements.scenarios.structure)" version="3" implicit="yes" />
+  <import index="4l29" modelUID="r:9f885776-26d3-48f5-a714-b3a8fa61c18a(com.mbeddr.cc.requirements.scenarios.structure)" version="4" implicit="yes" />
   <import index="75wo" modelUID="r:eaa205a4-f15c-47d3-99e2-e648881b5997(com.mbeddr.cc.requirements.structure)" version="7" implicit="yes" />
   <roots>
     <node type="75wo.RequirementsModule" typeId="75wo.8745401669462963169" id="5744000828452680214">
@@ -117,8 +117,8 @@
         <property name="name" nameId="tpck.1169194664001" value="RunMeasurement" />
         <node role="initial" roleId="4l29.5744000828452824190" type="4l29.InitialContext" typeId="4l29.5744000828452824121" id="5744000828452842004">
           <link role="initiator" roleId="4l29.5744000828452824122" targetNodeId="5744000828452816596" resolveInfo="Scheduler" />
-          <node role="contents" roleId="4l29.5744000828452862537" type="4l29.Heading" typeId="4l29.8119642625901571839" id="8119642625901597891">
-            <property name="text" nameId="4l29.8119642625901571841" value="Init" />
+          <node role="contents" roleId="4l29.5744000828452862537" type="4l29.Pause" typeId="4l29.552710421071336559" id="8119642625901597891">
+            <property name="text" nameId="4l29.552710421071336561" value="Init" />
           </node>
           <node role="contents" roleId="4l29.5744000828452862537" type="4l29.SequentialCall" typeId="4l29.5744000828452842290" id="5744000828452925868">
             <link role="capability" roleId="4l29.5744000828452854655" targetNodeId="5744000828452925866" resolveInfo="sendData" />
@@ -159,8 +159,8 @@
               <link role="participant" roleId="4l29.5744000828452824075" targetNodeId="5744000828452777901" resolveInfo="Comm" />
             </node>
           </node>
-          <node role="contents" roleId="4l29.5744000828452862537" type="4l29.Heading" typeId="4l29.8119642625901571839" id="8119642625901597893">
-            <property name="text" nameId="4l29.8119642625901571841" value="Execute" />
+          <node role="contents" roleId="4l29.5744000828452862537" type="4l29.Pause" typeId="4l29.552710421071336559" id="8119642625901597893">
+            <property name="text" nameId="4l29.552710421071336561" value="Execute" />
           </node>
           <node role="contents" roleId="4l29.5744000828452862537" type="4l29.Loop" typeId="4l29.5744000828453143034" id="5744000828453168381">
             <property name="iteration" nameId="4l29.5744000828453143037" value="over all items" />
@@ -179,8 +179,8 @@
             <node role="contents" roleId="4l29.5744000828453199898" type="4l29.SelfCall" typeId="4l29.5744000828452956484" id="5744000828453211672">
               <link role="capability" roleId="4l29.5744000828452854655" targetNodeId="5744000828452816601" resolveInfo="schedule" />
             </node>
-            <node role="contents" roleId="4l29.5744000828453199898" type="4l29.Heading" typeId="4l29.8119642625901571839" id="8119642625901585596">
-              <property name="text" nameId="4l29.8119642625901571841" value="This is a heading" />
+            <node role="contents" roleId="4l29.5744000828453199898" type="4l29.Pause" typeId="4l29.552710421071336559" id="8119642625901585596">
+              <property name="text" nameId="4l29.552710421071336561" value="This is a heading" />
             </node>
             <node role="contents" roleId="4l29.5744000828453199898" type="4l29.SequentialCall" typeId="4l29.5744000828452842290" id="5744000828453211674">
               <link role="capability" roleId="4l29.5744000828452854655" targetNodeId="5744000828452925866" resolveInfo="sendData" />
@@ -217,8 +217,8 @@
         <property name="name" nameId="tpck.1169194664001" value="AnotherScenario" />
         <node role="initial" roleId="4l29.5744000828452824190" type="4l29.InitialContext" typeId="4l29.5744000828452824121" id="8119642625901709814">
           <link role="initiator" roleId="4l29.5744000828452824122" targetNodeId="5744000828452777901" resolveInfo="Comm" />
-          <node role="contents" roleId="4l29.5744000828452862537" type="4l29.Heading" typeId="4l29.8119642625901571839" id="8119642625901719105">
-            <property name="text" nameId="4l29.8119642625901571841" value="Init" />
+          <node role="contents" roleId="4l29.5744000828452862537" type="4l29.Heading" typeId="4l29.8119642625901571839" id="552710421071356844">
+            <property name="text" nameId="4l29.8119642625901571841" value="init" />
           </node>
           <node role="contents" roleId="4l29.5744000828452862537" type="4l29.SequentialCall" typeId="4l29.5744000828452842290" id="8119642625901719099">
             <link role="capability" roleId="4l29.5744000828452854655" targetNodeId="5744000828452683542" resolveInfo="measure" />
@@ -241,8 +241,8 @@
               <link role="item" roleId="4l29.5744000828452990962" targetNodeId="5744000828453095894" resolveInfo="Measurement" />
             </node>
           </node>
-          <node role="contents" roleId="4l29.5744000828452862537" type="4l29.Heading" typeId="4l29.8119642625901571839" id="8119642625901753450">
-            <property name="text" nameId="4l29.8119642625901571841" value="Operation" />
+          <node role="contents" roleId="4l29.5744000828452862537" type="4l29.Pause" typeId="4l29.552710421071336559" id="8119642625901753450">
+            <property name="text" nameId="4l29.552710421071336561" value="Operation" />
           </node>
           <node role="contents" roleId="4l29.5744000828452862537" type="4l29.Alternative" typeId="4l29.5744000828453199884" id="8119642625901719115">
             <property name="condition" nameId="4l29.5744000828453199886" value="nur im GutFall" />

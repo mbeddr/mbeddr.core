@@ -3,7 +3,7 @@
   <persistence version="7" />
   <language namespace="18bc6592-03a6-4e29-a83a-7ff23bde13ba(jetbrains.mps.lang.editor)" />
   <devkit namespace="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
-  <import index="4l29" modelUID="r:9f885776-26d3-48f5-a714-b3a8fa61c18a(com.mbeddr.cc.requirements.scenarios.structure)" version="3" />
+  <import index="4l29" modelUID="r:9f885776-26d3-48f5-a714-b3a8fa61c18a(com.mbeddr.cc.requirements.scenarios.structure)" version="4" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="tpc2" modelUID="r:00000000-0000-4000-0000-011c8959029e(jetbrains.mps.lang.editor.structure)" version="32" implicit="yes" />
   <import index="tp25" modelUID="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" version="16" implicit="yes" />
@@ -87,6 +87,14 @@
     <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="8119642625901719127">
       <property name="virtualPackage" nameId="tpck.1193676396447" value="scenario.logic" />
       <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="4l29.8119642625901719122" resolveInfo="Error" />
+    </node>
+    <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="552710421071340899">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="scenario" />
+      <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="4l29.552710421071336559" resolveInfo="Pause" />
+    </node>
+    <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="552710421071372864">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="scenario" />
+      <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="4l29.552710421071372859" resolveInfo="Comment" />
     </node>
   </roots>
   <root id="5744000828452648923">
@@ -722,6 +730,28 @@
       </node>
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Property" typeId="tpc2.1073389658414" id="8119642625901737067">
         <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="4l29.8119642625901719133" resolveInfo="message" />
+      </node>
+    </node>
+  </root>
+  <root id="552710421071340899">
+    <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="552710421071340902">
+      <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Indent" typeId="tpc2.1237303669825" id="552710421071340903" />
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="552710421071340901">
+        <property name="text" nameId="tpc2.1073389577007" value="..." />
+      </node>
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Property" typeId="tpc2.1073389658414" id="552710421071340905">
+        <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="4l29.552710421071336561" resolveInfo="text" />
+      </node>
+    </node>
+  </root>
+  <root id="552710421071372864">
+    <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="552710421071372867">
+      <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Indent" typeId="tpc2.1237303669825" id="552710421071372868" />
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="552710421071372866">
+        <property name="text" nameId="tpc2.1073389577007" value="#" />
+      </node>
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Property" typeId="tpc2.1073389658414" id="552710421071372870">
+        <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="4l29.552710421071372861" resolveInfo="text" />
       </node>
     </node>
   </root>
