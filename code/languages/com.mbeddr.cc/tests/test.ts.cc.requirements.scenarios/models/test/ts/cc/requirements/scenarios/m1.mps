@@ -39,7 +39,7 @@
     </node>
     <node role="requirements" roleId="75wo.8745401669462963171" type="75wo.Requirement" typeId="75wo.8745401669462952101" id="5744000828452683536">
       <property name="priority" nameId="75wo.3314758227758879688" value="0" />
-      <property name="open" nameId="75wo.1165432222361744926" value="false" />
+      <property name="open" nameId="75wo.1165432222361744926" value="true" />
       <property name="name" nameId="tpck.1169194664001" value="Metrology" />
       <property name="summmary" nameId="75wo.3402431285977818823" value="Measures current consumption" />
       <node role="kind" roleId="75wo.8921256082857728256" type="4l29.ComponentRequirementKind" typeId="4l29.5744000828452822758" id="5744000828452842000" />
@@ -71,6 +71,25 @@
         </node>
         <node role="contents" roleId="4l29.5744000828452661377" type="4l29.Collaboration" typeId="4l29.5744000828452694711" id="5744000828452981034">
           <link role="participant" roleId="4l29.5744000828452694713" targetNodeId="5744000828452777901" resolveInfo="Comm" />
+        </node>
+        <node role="contents" roleId="4l29.5744000828452661377" type="4l29.Collaboration" typeId="4l29.5744000828452694711" id="552710421071388913">
+          <link role="participant" roleId="4l29.5744000828452694713" targetNodeId="552710421071388909" resolveInfo="CC" />
+        </node>
+      </node>
+    </node>
+    <node role="requirements" roleId="75wo.8745401669462963171" type="75wo.Requirement" typeId="75wo.8745401669462952101" id="552710421071388906">
+      <property name="priority" nameId="75wo.3314758227758879688" value="0" />
+      <property name="open" nameId="75wo.1165432222361744926" value="true" />
+      <property name="name" nameId="tpck.1169194664001" value="CC" />
+      <property name="summmary" nameId="75wo.3402431285977818823" value="Bla" />
+      <node role="kind" roleId="75wo.8921256082857728256" type="4l29.ComponentRequirementKind" typeId="4l29.5744000828452822758" id="552710421071388908" />
+      <node role="additionalData" roleId="75wo.8745401669463270518" type="4l29.Component" typeId="4l29.5744000828452661387" id="552710421071388909">
+        <property name="name" nameId="tpck.1169194664001" value="CC" />
+        <node role="contents" roleId="4l29.5744000828452661377" type="4l29.Capability" typeId="4l29.5744000828452661413" id="552710421071388910">
+          <property name="name" nameId="tpck.1169194664001" value="bla" />
+        </node>
+        <node role="contents" roleId="4l29.5744000828452661377" type="4l29.Capability" typeId="4l29.5744000828452661413" id="552710421071388917">
+          <property name="name" nameId="tpck.1169194664001" value="blubber" />
         </node>
       </node>
     </node>
@@ -209,7 +228,7 @@
     </node>
     <node role="requirements" roleId="75wo.8745401669462963171" type="75wo.Requirement" typeId="75wo.8745401669462952101" id="8119642625901690642">
       <property name="priority" nameId="75wo.3314758227758879688" value="0" />
-      <property name="open" nameId="75wo.1165432222361744926" value="true" />
+      <property name="open" nameId="75wo.1165432222361744926" value="false" />
       <property name="name" nameId="tpck.1169194664001" value="AnotherScenario" />
       <property name="summmary" nameId="75wo.3402431285977818823" value="SomeData" />
       <node role="kind" roleId="75wo.8921256082857728256" type="4l29.ScenarioRequirementKind" typeId="4l29.5744000828452835552" id="8119642625901690644" />
@@ -256,6 +275,42 @@
               <property name="condition" nameId="4l29.5744000828453213327" value="andernfalls" />
               <node role="contents" roleId="4l29.5744000828453213328" type="4l29.Error" typeId="4l29.8119642625901719122" id="8119642625901752250">
                 <property name="message" nameId="4l29.8119642625901719133" value="failERROR!" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node role="requirements" roleId="75wo.8745401669462963171" type="75wo.Requirement" typeId="75wo.8745401669462952101" id="552710421071388886">
+      <property name="priority" nameId="75wo.3314758227758879688" value="0" />
+      <property name="open" nameId="75wo.1165432222361744926" value="true" />
+      <property name="name" nameId="tpck.1169194664001" value="S1" />
+      <node role="kind" roleId="75wo.8921256082857728256" type="4l29.ScenarioRequirementKind" typeId="4l29.5744000828452835552" id="552710421071388888" />
+      <node role="additionalData" roleId="75wo.8745401669463270518" type="4l29.Scenario" typeId="4l29.5744000828452824073" id="552710421071388891">
+        <property name="name" nameId="tpck.1169194664001" value="S1" />
+        <node role="initial" roleId="4l29.5744000828452824190" type="4l29.InitialContext" typeId="4l29.5744000828452824121" id="552710421071388893">
+          <link role="initiator" roleId="4l29.5744000828452824122" targetNodeId="5744000828452777901" resolveInfo="Comm" />
+          <node role="contents" roleId="4l29.5744000828452862537" type="4l29.SequentialCall" typeId="4l29.5744000828452842290" id="552710421071388894">
+            <link role="capability" roleId="4l29.5744000828452854655" targetNodeId="5744000828452683542" resolveInfo="measure" />
+            <node role="targetParticipant" roleId="4l29.5744000828452849518" type="4l29.ParticipantRef" typeId="4l29.5744000828452824074" id="552710421071388895">
+              <link role="participant" roleId="4l29.5744000828452824075" targetNodeId="5744000828452683538" resolveInfo="Metrology" />
+            </node>
+            <node role="args" roleId="4l29.5744000828452981042" type="4l29.DataItemArg" typeId="4l29.5744000828452990961" id="552710421071388896">
+              <link role="item" roleId="4l29.5744000828452990962" targetNodeId="8119642625901709819" resolveInfo="ControlData" />
+            </node>
+            <node role="contents" roleId="4l29.5744000828452862537" type="4l29.SelfCall" typeId="4l29.5744000828452956484" id="552710421071388898">
+              <link role="capability" roleId="4l29.5744000828452854655" targetNodeId="5744000828452966659" resolveInfo="hallo" />
+            </node>
+            <node role="contents" roleId="4l29.5744000828452862537" type="4l29.SequentialCall" typeId="4l29.5744000828452842290" id="552710421071388911">
+              <link role="capability" roleId="4l29.5744000828452854655" targetNodeId="552710421071388910" resolveInfo="bla" />
+              <node role="targetParticipant" roleId="4l29.5744000828452849518" type="4l29.ParticipantRef" typeId="4l29.5744000828452824074" id="552710421071388912">
+                <link role="participant" roleId="4l29.5744000828452824075" targetNodeId="552710421071388909" resolveInfo="CC" />
+              </node>
+            </node>
+            <node role="contents" roleId="4l29.5744000828452862537" type="4l29.SequentialCall" typeId="4l29.5744000828452842290" id="552710421071388915">
+              <link role="capability" roleId="4l29.5744000828452854655" targetNodeId="552710421071388917" resolveInfo="blubber" />
+              <node role="targetParticipant" roleId="4l29.5744000828452849518" type="4l29.ParticipantRef" typeId="4l29.5744000828452824074" id="552710421071388916">
+                <link role="participant" roleId="4l29.5744000828452824075" targetNodeId="552710421071388909" resolveInfo="CC" />
               </node>
             </node>
           </node>
