@@ -30,6 +30,7 @@
         </dependencies>
         <library jar="../lib/aopalliance.jar" />
         <library jar="../lib/cdt.jar" />
+        <library jar="../lib/cdt-facade.jar" />
         <library jar="../lib/com.ibm.icu_4.4.2.v20110823.jar" />
         <library jar="../lib/guice-3.0.jar" />
         <library jar="../lib/guice-multibindings-3.0.jar" />
@@ -93,6 +94,7 @@
       <zipfileset file="${mbeddr.core}/languages/com.mbeddr.core.spawner/source_gen/com/mbeddr/spawner/loader/plugin.xml" prefix="mbeddr.spawner/META-INF" />
       <zipfileset file="${mbeddr.github.core.home}/tools/Eclipse.Debugger/lib/aopalliance.jar" prefix="mbeddr.spawner/lib" />
       <zipfileset file="${mbeddr.github.core.home}/tools/Eclipse.Debugger/lib/cdt.jar" prefix="mbeddr.spawner/lib" />
+      <zipfileset file="${mbeddr.github.core.home}/tools/Eclipse.Debugger/lib/cdt-facade.jar" prefix="mbeddr.spawner/lib" />
       <zipfileset file="${mbeddr.github.core.home}/tools/Eclipse.Debugger/lib/com.ibm.icu_4.4.2.v20110823.jar" prefix="mbeddr.spawner/lib" />
       <zipfileset file="${mbeddr.github.core.home}/tools/Eclipse.Debugger/lib/guice-3.0.jar" prefix="mbeddr.spawner/lib" />
       <zipfileset file="${mbeddr.github.core.home}/tools/Eclipse.Debugger/lib/guice-multibindings-3.0.jar" prefix="mbeddr.spawner/lib" />
