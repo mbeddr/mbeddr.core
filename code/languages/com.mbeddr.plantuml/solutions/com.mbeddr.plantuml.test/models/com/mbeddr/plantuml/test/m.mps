@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <model modelUID="r:c7492249-a1f9-4ee7-b7b8-4de24527d867(com.mbeddr.plantuml.test.m)">
   <persistence version="7" />
-  <language namespace="7c53651f-ed08-4b49-a64b-2c55e77c53dc(com.mbeddr.plantuml)" />
   <devkit namespace="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
   <devkit namespace="43d889ae-8e6a-4f6e-a649-d59342d8728d(com.mbeddr.statemachines)" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
