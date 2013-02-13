@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model modelUID="r:83f53e7f-110f-49f5-be48-95681cbb1402(com.mbeddr.core.util.constraints)" version="0">
+<model modelUID="r:83f53e7f-110f-49f5-be48-95681cbb1402(com.mbeddr.core.util.constraints)" version="1">
   <persistence version="7" />
   <language namespace="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1(jetbrains.mps.lang.constraints)" />
   <language namespace="7a5dda62-9140-4668-ab76-d5ed1746f2b2(jetbrains.mps.lang.typesystem)" />
   <language namespace="63e0e566-5131-447e-90e3-12ea330e1a00(com.mbeddr.mpsutil.blutil)" />
   <devkit namespace="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
-  <import index="k146" modelUID="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" version="2" />
+  <import index="k146" modelUID="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" version="3" />
   <import index="qd6m" modelUID="r:c4c3f7d3-0acf-4671-a134-5fab66c4e637(com.mbeddr.core.modules.behavior)" version="0" />
   <import index="hwgx" modelUID="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)" version="2" />
   <import index="ywuz" modelUID="r:c6ce92e7-5a98-4a6f-866a-ec8b9e945dd8(com.mbeddr.core.expressions.behavior)" version="1" />
@@ -73,6 +73,10 @@
     <node type="tp1t.ConceptConstraints" typeId="tp1t.1213093968558" id="1433966787983944961">
       <property name="virtualPackage" nameId="tpck.1193676396447" value="genutil" />
       <link role="concept" roleId="tp1t.1213093996982" targetNodeId="k146.1433966787983924365" resolveInfo="SingleArgDummyExpr" />
+    </node>
+    <node type="tp1t.ConceptConstraints" typeId="tp1t.1213093968558" id="5065104421776378469">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="util" />
+      <link role="concept" roleId="tp1t.1213093996982" targetNodeId="k146.5065104421776378465" resolveInfo="AndedExprList" />
     </node>
   </roots>
   <root id="5686538669182296675">
@@ -480,5 +484,6 @@
   </root>
   <root id="3059865549680537566" />
   <root id="1433966787983944961" />
+  <root id="5065104421776378469" />
 </model>
 
