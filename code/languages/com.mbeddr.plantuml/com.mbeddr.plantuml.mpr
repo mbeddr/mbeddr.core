@@ -6,10 +6,8 @@
   <component name="Encoding" useUTFGuessing="true" native2AsciiForPropertiesFiles="false" />
   <component name="MPSProject">
     <projectModules>
-      <modulePath path="${project}/languages/com.mbeddr.plantuml/plantuml.mpl" />
       <modulePath path="${project}/languages/com.mbeddr.plantuml/solutions/pluginSolution/pluginSolution.msd" folder="" />
       <modulePath path="${project}/solutions/com.mbeddr.plantuml.test/test.msd" folder="" />
-      <modulePath path="${project}/solutions/com.mbeddr.plantumlplugin/plantumlplugin.msd" folder="" />
     </projectModules>
     <genConfs />
   </component>
