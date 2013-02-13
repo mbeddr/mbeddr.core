@@ -6,13 +6,13 @@
   <devkit namespace="f2792d40-14b9-4136-b555-a71460eb1873(com.mbeddr.archdec)" />
   <import index="iujl" modelUID="r:21dd5898-af30-4358-b37c-4277d1169196(test.ts.cc.archdec.main)" version="-1" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
-  <import index="k146" modelUID="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" version="2" implicit="yes" />
-  <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="17" implicit="yes" />
+  <import index="k146" modelUID="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" version="3" implicit="yes" />
+  <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="20" implicit="yes" />
   <import index="yq40" modelUID="r:152b3fc0-83a1-4bab-a8cd-565eb8483785(com.mbeddr.core.pointers.structure)" version="3" implicit="yes" />
-  <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="5" implicit="yes" />
+  <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="6" implicit="yes" />
   <import index="51wr" modelUID="r:b31f1c3c-99aa-4f1e-a329-cba27efb1a6b(com.mbeddr.core.buildconfig.structure)" version="1" implicit="yes" />
   <import index="n80h" modelUID="r:7d46a182-8703-4db2-b9ab-f79dbf9bfffc(com.mbeddr.cc.archdec.structure)" version="3" implicit="yes" />
-  <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="4" implicit="yes" />
+  <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="5" implicit="yes" />
   <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="3" implicit="yes" />
   <import index="26ao" modelUID="r:7c15925b-a4a5-4da3-88aa-931a5a9ed982(com.mbeddr.cc.trace.structure)" version="3" implicit="yes" />
   <roots>
@@ -38,7 +38,7 @@
             <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="26ao.TraceAnnotation" typeId="26ao.439567521322928994" id="4837632670852642034">
               <node role="tracekind" roleId="26ao.439567521322928995" type="n80h.DrivenBy" typeId="n80h.4837632670852707749" id="4837632670852810415" />
               <node role="refs" roleId="26ao.439567521322928996" type="n80h.ArchDecRef" typeId="n80h.4837632670852670561" id="4837632670852787934">
-                <link role="target" roleId="26ao.439567521322959431" targetNodeId="iujl.8433683602661351431" resolveInfo="SomeDecision" />
+                <link role="target" roleId="26ao.439567521322959431" targetNodeId="iujl.8433683602661351431" resolveInfo="MakeSystemDistributed" />
               </node>
             </node>
           </node>
@@ -91,7 +91,7 @@
       <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="26ao.TraceAnnotation" typeId="26ao.439567521322928994" id="4837632670852810450">
         <node role="tracekind" roleId="26ao.439567521322928995" type="n80h.DrivenBy" typeId="n80h.4837632670852707749" id="4837632670852810453" />
         <node role="refs" roleId="26ao.439567521322928996" type="n80h.ArchDecRef" typeId="n80h.4837632670852670561" id="4837632670852810452">
-          <link role="target" roleId="26ao.439567521322959431" targetNodeId="iujl.8433683602661351431" resolveInfo="SomeDecision" />
+          <link role="target" roleId="26ao.439567521322959431" targetNodeId="iujl.8433683602661351431" resolveInfo="MakeSystemDistributed" />
         </node>
       </node>
     </node>
