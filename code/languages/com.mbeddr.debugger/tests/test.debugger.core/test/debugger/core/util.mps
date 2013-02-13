@@ -376,7 +376,7 @@
               <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="6879846215835397886">
                 <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="vsqj.~PathMacros%dgetValue(java%dlang%dString)%cjava%dlang%dString" resolveInfo="getValue" />
                 <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="6879846215835397888">
-                  <property name="value" nameId="tpee.1070475926801" value="mps.home" />
+                  <property name="value" nameId="tpee.1070475926801" value="mbeddr.github.core.home" />
                 </node>
               </node>
             </node>
@@ -391,7 +391,7 @@
                 <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="6879846215835397881" resolveInfo="mpsPath" />
               </node>
               <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="6879846215835397898">
-                <property name="value" nameId="tpee.1070475926801" value="/plugins/mbeddr.spawner/lib/spawner/" />
+                <property name="value" nameId="tpee.1070475926801" value="/tools/mbeddr.spawner/lib/spawner/" />
               </node>
             </node>
           </node>
@@ -1218,10 +1218,10 @@
                     <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="6879846215835241245" resolveInfo="path" />
                   </node>
                   <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="1624047607908224513">
-                    <property name="value" nameId="tpee.1068580320021" value="4000" />
+                    <property name="value" nameId="tpee.1068580320021" value="2000" />
                   </node>
                   <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="1624047607908224514">
-                    <property name="value" nameId="tpee.1068580320021" value="5000" />
+                    <property name="value" nameId="tpee.1068580320021" value="1500" />
                   </node>
                 </node>
               </node>
