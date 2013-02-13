@@ -1853,10 +1853,19 @@
               </node>
               <node role="statement" roleId="tpee.1068581517665" type="tpee.LocalVariableDeclarationStatement" typeId="tpee.1068581242864" id="4360423713604939168">
                 <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="4360423713604939169">
-                  <property name="name" nameId="tpck.1169194664001" value="timeout" />
+                  <property name="name" nameId="tpck.1169194664001" value="launchTimeout" />
                   <node role="type" roleId="tpee.5680397130376446158" type="tpee.IntegerType" typeId="tpee.1070534370425" id="4360423713604939170" />
                   <node role="initializer" roleId="tpee.1068431790190" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="4360423713604939171">
-                    <property name="value" nameId="tpee.1068580320021" value="3000" />
+                    <property name="value" nameId="tpee.1068580320021" value="1500" />
+                  </node>
+                </node>
+              </node>
+              <node role="statement" roleId="tpee.1068581517665" type="tpee.LocalVariableDeclarationStatement" typeId="tpee.1068581242864" id="7021211762026578492">
+                <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="7021211762026578493">
+                  <property name="name" nameId="tpck.1169194664001" value="commandTimeout" />
+                  <node role="type" roleId="tpee.5680397130376446158" type="tpee.IntegerType" typeId="tpee.1070534370425" id="7021211762026578494" />
+                  <node role="initializer" roleId="tpee.1068431790190" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="7021211762026578495">
+                    <property name="value" nameId="tpee.1068580320021" value="2200" />
                   </node>
                 </node>
               </node>
@@ -1947,7 +1956,10 @@
                         <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="4360423713604939130" resolveInfo="tracePath" />
                       </node>
                       <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="4360423713604939207">
-                        <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="4360423713604939169" resolveInfo="timeout" />
+                        <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="4360423713604939169" resolveInfo="launchTimeout" />
+                      </node>
+                      <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="7021211762026610099">
+                        <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="7021211762026578493" resolveInfo="commandTimeout" />
                       </node>
                     </node>
                   </node>
