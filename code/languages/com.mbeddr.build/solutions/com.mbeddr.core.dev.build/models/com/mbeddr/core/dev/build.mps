@@ -153,6 +153,20 @@
                 </node>
               </node>
             </node>
+            <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_Files" typeId="3ior.2750015747481074431" id="8009804792182892416">
+              <node role="path" roleId="3ior.2750015747481074432" type="3ior.BuildSourceMacroRelativePath" typeId="3ior.7389400916848153117" id="8009804792182892418">
+                <link role="macro" roleId="3ior.7389400916848153130" targetNodeId="8628756186118765768" resolveInfo="mbeddr.core" />
+                <node role="compositePart" roleId="3ior.7321017245477039051" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="8009804792182892419">
+                  <property name="head" nameId="3ior.8618885170173601779" value="languages" />
+                  <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="8009804792182892420">
+                    <property name="head" nameId="3ior.8618885170173601779" value="com.mbeddr.core.modules.runtime" />
+                    <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="8009804792182892421">
+                      <property name="head" nameId="3ior.8618885170173601779" value="lib" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
           </node>
         </node>
       </node>
@@ -281,6 +295,25 @@
               <property name="head" nameId="3ior.8618885170173601779" value="com.mbeddr.core.modules.runtime" />
               <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="8628756186118765839">
                 <property name="head" nameId="3ior.8618885170173601779" value="include.msd" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node role="dependencies" roleId="kdzh.5253498789149547704" type="kdzh.BuildMps_ExtractedModuleDependency" typeId="kdzh.7259033139236285166" id="8009804792182892408">
+          <node role="dependency" roleId="kdzh.7259033139236285167" type="kdzh.BuildMps_ModuleDependencyJar" typeId="kdzh.4278635856200826393" id="8009804792182892409">
+            <node role="path" roleId="kdzh.4278635856200826394" type="3ior.BuildSourceMacroRelativePath" typeId="3ior.7389400916848153117" id="8009804792182892410">
+              <link role="macro" roleId="3ior.7389400916848153130" targetNodeId="8628756186118765768" resolveInfo="mbeddr.core" />
+              <node role="compositePart" roleId="3ior.7321017245477039051" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="8009804792182892411">
+                <property name="head" nameId="3ior.8618885170173601779" value="languages" />
+                <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="8009804792182892412">
+                  <property name="head" nameId="3ior.8618885170173601779" value="com.mbeddr.core.modules.runtime" />
+                  <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="8009804792182892413">
+                    <property name="head" nameId="3ior.8618885170173601779" value="lib" />
+                    <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="8009804792182892414">
+                      <property name="head" nameId="3ior.8618885170173601779" value="commons-io-2.4.jar" />
+                    </node>
+                  </node>
+                </node>
               </node>
             </node>
           </node>
@@ -778,7 +811,7 @@
         </node>
       </node>
       <node role="modules" roleId="kdzh.1500819558095907806" type="kdzh.BuildMps_Language" typeId="kdzh.3189788309731840248" id="8628756186118765604">
-        <property name="compact" nameId="kdzh.8369506495128725901" value="true" />
+        <property name="compact" nameId="kdzh.8369506495128725901" value="false" />
         <property name="uuid" nameId="kdzh.322010710375892619" value="2d7fadf5-33f6-4e80-a78f-0f739add2bde" />
         <property name="name" nameId="tpck.1169194664001" value="com.mbeddr.core.buildconfig" />
         <property name="doNotCompile" nameId="kdzh.1500819558096356884" value="false" />
@@ -792,11 +825,6 @@
                 <property name="head" nameId="3ior.8618885170173601779" value="buildconfig.mpl" />
               </node>
             </node>
-          </node>
-        </node>
-        <node role="dependencies" roleId="kdzh.5253498789149547704" type="kdzh.BuildMps_ExtractedModuleDependency" typeId="kdzh.7259033139236285166" id="8628756186118766017">
-          <node role="dependency" roleId="kdzh.7259033139236285167" type="kdzh.BuildMps_ModuleDependencyExtendLanguage" typeId="kdzh.4278635856200794926" id="8628756186118766018">
-            <link role="language" roleId="kdzh.4278635856200794928" targetNodeId="al5i.8628756186118380543" resolveInfo="com.mbeddr.mpsutil.graph" />
           </node>
         </node>
         <node role="dependencies" roleId="kdzh.5253498789149547704" type="kdzh.BuildMps_ExtractedModuleDependency" typeId="kdzh.7259033139236285166" id="8628756186118766019">
