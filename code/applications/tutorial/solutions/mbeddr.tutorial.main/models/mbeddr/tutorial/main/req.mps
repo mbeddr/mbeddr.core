@@ -386,11 +386,20 @@
             </node>
             <node role="contents" roleId="4l29.5744000828453199898" type="4l29.SequentialCall" typeId="4l29.5744000828452842290" id="552710421071417226">
               <link role="capability" roleId="4l29.5744000828452854655" targetNodeId="8119642625901800284" resolveInfo="store" />
+              <node role="contents" roleId="4l29.5744000828452862537" type="4l29.ImplStep" typeId="4l29.8009804792183241983" id="8009804792183317066">
+                <property name="text" nameId="4l29.8009804792183241985" value="starts a transaction" />
+              </node>
               <node role="targetParticipant" roleId="4l29.5744000828452849518" type="4l29.ParticipantRef" typeId="4l29.5744000828452824074" id="552710421071417228">
                 <link role="participant" roleId="4l29.5744000828452824075" targetNodeId="8119642625901800282" resolveInfo="InMemoryStore" />
               </node>
               <node role="args" roleId="4l29.5744000828452981042" type="4l29.DataItemArg" typeId="4l29.5744000828452990961" id="552710421071417229">
                 <link role="item" roleId="4l29.5744000828452990962" targetNodeId="8119642625901801135" resolveInfo="SomeFlightData" />
+              </node>
+              <node role="contents" roleId="4l29.5744000828452862537" type="4l29.ImplStep" typeId="4l29.8009804792183241983" id="8009804792183258676">
+                <property name="text" nameId="4l29.8009804792183241985" value="stores the flight in a database" />
+              </node>
+              <node role="contents" roleId="4l29.5744000828452862537" type="4l29.ImplStep" typeId="4l29.8009804792183241983" id="8009804792183328933">
+                <property name="text" nameId="4l29.8009804792183241985" value="commits the transaction" />
               </node>
             </node>
             <node role="contents" roleId="4l29.5744000828453199898" type="4l29.SequentialCall" typeId="4l29.5744000828452842290" id="552710421071417231">
@@ -400,6 +409,9 @@
               </node>
               <node role="args" roleId="4l29.5744000828452981042" type="4l29.DataItemArg" typeId="4l29.5744000828452990961" id="552710421071417233">
                 <link role="item" roleId="4l29.5744000828452990962" targetNodeId="8119642625901801135" resolveInfo="SomeFlightData" />
+              </node>
+              <node role="contents" roleId="4l29.5744000828452862537" type="4l29.ImplStep" typeId="4l29.8009804792183241983" id="8009804792183328935">
+                <property name="text" nameId="4l29.8009804792183241985" value="same as above" />
               </node>
             </node>
             <node role="otherCases" roleId="4l29.5744000828453213263" type="4l29.AlternativeElse" typeId="4l29.5744000828453213262" id="7451725615401720590">
