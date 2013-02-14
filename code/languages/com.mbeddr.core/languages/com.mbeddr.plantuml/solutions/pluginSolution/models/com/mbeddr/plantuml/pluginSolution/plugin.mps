@@ -1455,7 +1455,7 @@
       <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="206784761227657333">
         <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="206784761227657337">
           <node role="expression" roleId="tpee.1068580123156" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="206784761227657338">
-            <property name="value" nameId="tpee.1070475926801" value="arial,sans-serif" />
+            <property name="value" nameId="tpee.1070475926801" value="consolas,arial,sans-serif" />
           </node>
         </node>
       </node>
@@ -1748,7 +1748,7 @@
       </node>
     </node>
     <node role="icon" roleId="tp4k.8976425910813834639" type="1oap.IconResource" typeId="1oap.8974276187400029883" id="6472990431939816388">
-      <property name="path" nameId="1oap.8974276187400029899" value="${solution_descriptor}/icons/zoomin.png" />
+      <property name="path" nameId="1oap.8974276187400029899" value="${solution_descriptor}/icons/zoomInIcon.png" />
     </node>
     <node role="parameter" roleId="tp4k.1217413222820" type="tp4k.ActionDataParameterDeclaration" typeId="tp4k.1217252042208" id="1315009641672134058">
       <property name="name" nameId="tpck.1169194664001" value="project" />
@@ -1856,11 +1856,11 @@
   </root>
   <root id="1315009641672127213">
     <node role="contents" roleId="tp4k.1207145245948" type="tp4k.ElementListContents" typeId="tp4k.1207145163717" id="1315009641672127215">
-      <node role="reference" roleId="tp4k.1207145201301" type="tp4k.ActionInstance" typeId="tp4k.1203088046679" id="1315009641672127216">
-        <link role="action" roleId="tp4k.1203088061055" targetNodeId="1315009641671430875" resolveInfo="ZoomIn" />
-      </node>
       <node role="reference" roleId="tp4k.1207145201301" type="tp4k.ActionInstance" typeId="tp4k.1203088046679" id="2825381606726382838">
         <link role="action" roleId="tp4k.1203088061055" targetNodeId="2825381606726382757" resolveInfo="ZoomOut" />
+      </node>
+      <node role="reference" roleId="tp4k.1207145201301" type="tp4k.ActionInstance" typeId="tp4k.1203088046679" id="1315009641672127216">
+        <link role="action" roleId="tp4k.1203088061055" targetNodeId="1315009641671430875" resolveInfo="ZoomIn" />
       </node>
       <node role="reference" roleId="tp4k.1207145201301" type="tp4k.ActionInstance" typeId="tp4k.1203088046679" id="2825381606726382842">
         <link role="action" roleId="tp4k.1203088061055" targetNodeId="2825381606726382777" resolveInfo="Reset" />
@@ -1902,7 +1902,7 @@
       </node>
     </node>
     <node role="icon" roleId="tp4k.8976425910813834639" type="1oap.IconResource" typeId="1oap.8974276187400029883" id="2825381606726382773">
-      <property name="path" nameId="1oap.8974276187400029899" value="${solution_descriptor}/icons/zoomout.png" />
+      <property name="path" nameId="1oap.8974276187400029899" value="${solution_descriptor}/icons/zoomOutIcon.png" />
     </node>
     <node role="parameter" roleId="tp4k.1217413222820" type="tp4k.ActionDataParameterDeclaration" typeId="tp4k.1217252042208" id="2825381606726382774">
       <property name="name" nameId="tpck.1169194664001" value="project" />
@@ -1945,7 +1945,7 @@
       </node>
     </node>
     <node role="icon" roleId="tp4k.8976425910813834639" type="1oap.IconResource" typeId="1oap.8974276187400029883" id="2825381606726382793">
-      <property name="path" nameId="1oap.8974276187400029899" value="${solution_descriptor}/icons/reset.png" />
+      <property name="path" nameId="1oap.8974276187400029899" value="${solution_descriptor}/icons/resetIcon.png" />
     </node>
     <node role="parameter" roleId="tp4k.1217413222820" type="tp4k.ActionDataParameterDeclaration" typeId="tp4k.1217252042208" id="2825381606726382794">
       <property name="name" nameId="tpck.1169194664001" value="project" />
