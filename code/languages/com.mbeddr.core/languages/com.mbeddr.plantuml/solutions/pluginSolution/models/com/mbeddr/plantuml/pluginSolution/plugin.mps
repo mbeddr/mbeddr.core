@@ -81,7 +81,7 @@
       <property name="virtualPackage" nameId="tpck.1193676396447" value="toolbar" />
     </node>
     <node type="tp4k.ActionDeclaration" typeId="tp4k.1203071646776" id="2825381606726382777">
-      <property name="name" nameId="tpck.1169194664001" value="Reset" />
+      <property name="name" nameId="tpck.1169194664001" value="Save" />
       <property name="caption" nameId="tp4k.1205250923097" value="Reset" />
       <property name="virtualPackage" nameId="tpck.1193676396447" value="toolbar" />
     </node>
@@ -101,6 +101,21 @@
     </node>
     <node type="tp4k.KeymapChangesDeclaration" typeId="tp4k.1562714432501166197" id="1089679054537218848">
       <property name="name" nameId="tpck.1169194664001" value="visualizeKeymapping" />
+    </node>
+    <node type="tp4k.ActionDeclaration" typeId="tp4k.1203071646776" id="5069184281393155759">
+      <property name="name" nameId="tpck.1169194664001" value="Reset" />
+      <property name="caption" nameId="tp4k.1205250923097" value="Reset" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="toolbar" />
+    </node>
+    <node type="tp4k.ActionDeclaration" typeId="tp4k.1203071646776" id="5069184281393163720">
+      <property name="name" nameId="tpck.1169194664001" value="Back" />
+      <property name="caption" nameId="tp4k.1205250923097" value="Reset" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="toolbar" />
+    </node>
+    <node type="tp4k.ActionDeclaration" typeId="tp4k.1203071646776" id="5069184281393163726">
+      <property name="name" nameId="tpck.1169194664001" value="Forward" />
+      <property name="caption" nameId="tp4k.1205250923097" value="Reset" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="toolbar" />
     </node>
   </roots>
   <root id="2253533512441782391" />
@@ -409,6 +424,32 @@
                   </node>
                   <node role="statement" roleId="tpee.1068581517665" type="tpee.IfStatement" typeId="tpee.1068580123159" id="206784761227321181">
                     <node role="ifTrue" roleId="tpee.1068580123161" type="tpee.StatementList" typeId="tpee.1068580123136" id="206784761227321182">
+                      <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="5069184281393178176">
+                        <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="5069184281393178225">
+                          <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="5069184281393178198">
+                            <node role="operand" roleId="tpee.1197027771414" type="tp4f.ThisClassifierExpression" typeId="tp4f.1205752633985" id="5069184281393178177" />
+                            <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="5069184281393178204">
+                              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="jwd7.~BaseTool%dgetToolWindow()%ccom%dintellij%dopenapi%dwm%dToolWindow" resolveInfo="getToolWindow" />
+                            </node>
+                          </node>
+                          <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="5069184281393178231">
+                            <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="h2w.~ToolWindow%dsetTitle(java%dlang%dString)%cvoid" resolveInfo="setTitle" />
+                            <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.PlusExpression" typeId="tpee.1068581242875" id="5069184281393178253">
+                              <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.DotExpression" typeId="tpee.1197027756228" id="5069184281393178277">
+                                <node role="operand" roleId="tpee.1197027771414" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="5069184281393178256">
+                                  <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="2825381606726399131" resolveInfo="visualization" />
+                                </node>
+                                <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="5069184281393178282">
+                                  <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="hwgx.5069184281393175875" resolveInfo="getTitle" />
+                                </node>
+                              </node>
+                              <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="5069184281393178232">
+                                <property name="value" nameId="tpee.1070475926801" value=" ::  " />
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
                       <node role="statement" roleId="tpee.1068581517665" type="tpee.LocalVariableDeclarationStatement" typeId="tpee.1068581242864" id="2825381606726498107">
                         <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="2825381606726498108">
                           <property name="name" nameId="tpck.1169194664001" value="graphAsString" />
@@ -1010,9 +1051,6 @@
                 </node>
               </node>
             </node>
-            <node role="statement" roleId="tpee.1068581517665" type="tpee.Statement" typeId="tpee.1068580123157" id="2825381606728306042" />
-            <node role="statement" roleId="tpee.1068581517665" type="tpee.Statement" typeId="tpee.1068580123157" id="2825381606728306043" />
-            <node role="statement" roleId="tpee.1068581517665" type="tpee.Statement" typeId="tpee.1068580123157" id="2825381606728306044" />
           </node>
         </node>
       </node>
@@ -1856,15 +1894,28 @@
   </root>
   <root id="1315009641672127213">
     <node role="contents" roleId="tp4k.1207145245948" type="tp4k.ElementListContents" typeId="tp4k.1207145163717" id="1315009641672127215">
+      <node role="reference" roleId="tp4k.1207145201301" type="tp4k.ActionInstance" typeId="tp4k.1203088046679" id="5069184281393163733">
+        <link role="action" roleId="tp4k.1203088061055" targetNodeId="5069184281393163720" resolveInfo="Back" />
+      </node>
+      <node role="reference" roleId="tp4k.1207145201301" type="tp4k.ActionInstance" typeId="tp4k.1203088046679" id="5069184281393163735">
+        <link role="action" roleId="tp4k.1203088061055" targetNodeId="5069184281393163726" resolveInfo="Forward" />
+      </node>
+      <node role="reference" roleId="tp4k.1207145201301" type="tp4k.Separator" typeId="tp4k.1204908117386" id="5069184281393155567" />
+      <node role="reference" roleId="tp4k.1207145201301" type="tp4k.ActionInstance" typeId="tp4k.1203088046679" id="5069184281393162153">
+        <link role="action" roleId="tp4k.1203088061055" targetNodeId="2825381606726382777" resolveInfo="Save" />
+      </node>
+      <node role="reference" roleId="tp4k.1207145201301" type="tp4k.Separator" typeId="tp4k.1204908117386" id="5069184281393167345" />
       <node role="reference" roleId="tp4k.1207145201301" type="tp4k.ActionInstance" typeId="tp4k.1203088046679" id="2825381606726382838">
         <link role="action" roleId="tp4k.1203088061055" targetNodeId="2825381606726382757" resolveInfo="ZoomOut" />
       </node>
       <node role="reference" roleId="tp4k.1207145201301" type="tp4k.ActionInstance" typeId="tp4k.1203088046679" id="1315009641672127216">
         <link role="action" roleId="tp4k.1203088061055" targetNodeId="1315009641671430875" resolveInfo="ZoomIn" />
       </node>
-      <node role="reference" roleId="tp4k.1207145201301" type="tp4k.ActionInstance" typeId="tp4k.1203088046679" id="2825381606726382842">
-        <link role="action" roleId="tp4k.1203088061055" targetNodeId="2825381606726382777" resolveInfo="Reset" />
+      <node role="reference" roleId="tp4k.1207145201301" type="tp4k.Separator" typeId="tp4k.1204908117386" id="5069184281393167347" />
+      <node role="reference" roleId="tp4k.1207145201301" type="tp4k.ActionInstance" typeId="tp4k.1203088046679" id="5069184281393162150">
+        <link role="action" roleId="tp4k.1203088061055" targetNodeId="5069184281393155759" resolveInfo="Reset" />
       </node>
+      <node role="reference" roleId="tp4k.1207145201301" type="tp4k.Separator" typeId="tp4k.1204908117386" id="5069184281393167349" />
     </node>
   </root>
   <root id="2825381606726382757">
@@ -1912,40 +1963,10 @@
   </root>
   <root id="2825381606726382777">
     <node role="executeFunction" roleId="tp4k.1203083461638" type="tp4k.ExecuteBlock" typeId="tp4k.1203083511112" id="2825381606726382778">
-      <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="2825381606726382779">
-        <node role="statement" roleId="tpee.1068581517665" type="tpee.LocalVariableDeclarationStatement" typeId="tpee.1068581242864" id="2825381606726382780">
-          <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="2825381606726382781">
-            <property name="name" nameId="tpck.1169194664001" value="content" />
-            <node role="type" roleId="tpee.5680397130376446158" type="tp4k.ToolType" typeId="tp4k.1208528650020" id="2825381606726382782">
-              <link role="tool" roleId="tp4k.1208529537963" targetNodeId="2253533512441990797" resolveInfo="SVGViewer" />
-            </node>
-            <node role="initializer" roleId="tpee.1068431790190" type="tpee.DotExpression" typeId="tpee.1197027756228" id="2825381606726382783">
-              <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="2825381606726382784">
-                <node role="operand" roleId="tpee.1197027771414" type="tp4f.ThisClassifierExpression" typeId="tp4f.1205752633985" id="2825381606726382785" />
-                <node role="operation" roleId="tpee.1197027833540" type="tp4k.ActionDataParameterReferenceOperation" typeId="tp4k.1217252428768" id="2825381606726382786">
-                  <link role="member" roleId="tp4f.1205756909548" targetNodeId="2825381606726382794" resolveInfo="project" />
-                </node>
-              </node>
-              <node role="operation" roleId="tpee.1197027833540" type="tgbt.GetToolInProjectOperation" typeId="tgbt.681855071694758165" id="2825381606726382787">
-                <link role="tool" roleId="tgbt.681855071694758166" targetNodeId="2253533512441990797" resolveInfo="SVGViewer" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="2825381606726382788">
-          <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="2825381606726382789">
-            <node role="operand" roleId="tpee.1197027771414" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="2825381606726382790">
-              <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="2825381606726382781" resolveInfo="content" />
-            </node>
-            <node role="operation" roleId="tpee.1197027833540" type="tp4f.DefaultClassifierMethodCallOperation" typeId="tp4f.1205769149993" id="2825381606726384385">
-              <link role="member" roleId="tp4f.1205756909548" targetNodeId="2825381606726384370" resolveInfo="reset" />
-            </node>
-          </node>
-        </node>
-      </node>
+      <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="2825381606726382779" />
     </node>
     <node role="icon" roleId="tp4k.8976425910813834639" type="1oap.IconResource" typeId="1oap.8974276187400029883" id="2825381606726382793">
-      <property name="path" nameId="1oap.8974276187400029899" value="${solution_descriptor}/icons/resetIcon.png" />
+      <property name="path" nameId="1oap.8974276187400029899" value="${solution_descriptor}/icons/saveIcon.png" />
     </node>
     <node role="parameter" roleId="tp4k.1217413222820" type="tp4k.ActionDataParameterDeclaration" typeId="tp4k.1217252042208" id="2825381606726382794">
       <property name="name" nameId="tpck.1169194664001" value="project" />
@@ -3516,6 +3537,75 @@
         <property name="modifiers" nameId="tp4k.1207318242773" value="ctrl+alt" />
         <property name="keycode" nameId="tp4k.1207318242774" value="VK_V" />
       </node>
+    </node>
+  </root>
+  <root id="5069184281393155759">
+    <node role="executeFunction" roleId="tp4k.1203083461638" type="tp4k.ExecuteBlock" typeId="tp4k.1203083511112" id="5069184281393155760">
+      <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="5069184281393155761">
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.LocalVariableDeclarationStatement" typeId="tpee.1068581242864" id="5069184281393155762">
+          <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="5069184281393155763">
+            <property name="name" nameId="tpck.1169194664001" value="content" />
+            <node role="type" roleId="tpee.5680397130376446158" type="tp4k.ToolType" typeId="tp4k.1208528650020" id="5069184281393155764">
+              <link role="tool" roleId="tp4k.1208529537963" targetNodeId="2253533512441990797" resolveInfo="SVGViewer" />
+            </node>
+            <node role="initializer" roleId="tpee.1068431790190" type="tpee.DotExpression" typeId="tpee.1197027756228" id="5069184281393155765">
+              <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="5069184281393155766">
+                <node role="operand" roleId="tpee.1197027771414" type="tp4f.ThisClassifierExpression" typeId="tp4f.1205752633985" id="5069184281393155767" />
+                <node role="operation" roleId="tpee.1197027833540" type="tp4k.ActionDataParameterReferenceOperation" typeId="tp4k.1217252428768" id="5069184281393155768">
+                  <link role="member" roleId="tp4f.1205756909548" targetNodeId="5069184281393155775" resolveInfo="project" />
+                </node>
+              </node>
+              <node role="operation" roleId="tpee.1197027833540" type="tgbt.GetToolInProjectOperation" typeId="tgbt.681855071694758165" id="5069184281393155769">
+                <link role="tool" roleId="tgbt.681855071694758166" targetNodeId="2253533512441990797" resolveInfo="SVGViewer" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="5069184281393155770">
+          <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="5069184281393155771">
+            <node role="operand" roleId="tpee.1197027771414" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="5069184281393155772">
+              <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="5069184281393155763" resolveInfo="content" />
+            </node>
+            <node role="operation" roleId="tpee.1197027833540" type="tp4f.DefaultClassifierMethodCallOperation" typeId="tp4f.1205769149993" id="5069184281393155773">
+              <link role="member" roleId="tp4f.1205756909548" targetNodeId="2825381606726384370" resolveInfo="reset" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node role="icon" roleId="tp4k.8976425910813834639" type="1oap.IconResource" typeId="1oap.8974276187400029883" id="5069184281393155774">
+      <property name="path" nameId="1oap.8974276187400029899" value="${solution_descriptor}/icons/resetIcon.png" />
+    </node>
+    <node role="parameter" roleId="tp4k.1217413222820" type="tp4k.ActionDataParameterDeclaration" typeId="tp4k.1217252042208" id="5069184281393155775">
+      <property name="name" nameId="tpck.1169194664001" value="project" />
+      <link role="key" roleId="tp4k.1217252646389" targetNodeId="6tyf.~PlatformDataKeys%dPROJECT" resolveInfo="PROJECT" />
+      <node role="condition" roleId="tp4k.5538333046911298738" type="tp4k.RequiredCondition" typeId="tp4k.5538333046911348654" id="5069184281393155776" />
+    </node>
+  </root>
+  <root id="5069184281393163720">
+    <node role="executeFunction" roleId="tp4k.1203083461638" type="tp4k.ExecuteBlock" typeId="tp4k.1203083511112" id="5069184281393163721">
+      <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="5069184281393163722" />
+    </node>
+    <node role="icon" roleId="tp4k.8976425910813834639" type="1oap.IconResource" typeId="1oap.8974276187400029883" id="5069184281393163723">
+      <property name="path" nameId="1oap.8974276187400029899" value="${solution_descriptor}/icons/backIcon.png" />
+    </node>
+    <node role="parameter" roleId="tp4k.1217413222820" type="tp4k.ActionDataParameterDeclaration" typeId="tp4k.1217252042208" id="5069184281393163724">
+      <property name="name" nameId="tpck.1169194664001" value="project" />
+      <link role="key" roleId="tp4k.1217252646389" targetNodeId="6tyf.~PlatformDataKeys%dPROJECT" resolveInfo="PROJECT" />
+      <node role="condition" roleId="tp4k.5538333046911298738" type="tp4k.RequiredCondition" typeId="tp4k.5538333046911348654" id="5069184281393163725" />
+    </node>
+  </root>
+  <root id="5069184281393163726">
+    <node role="executeFunction" roleId="tp4k.1203083461638" type="tp4k.ExecuteBlock" typeId="tp4k.1203083511112" id="5069184281393163727">
+      <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="5069184281393163728" />
+    </node>
+    <node role="icon" roleId="tp4k.8976425910813834639" type="1oap.IconResource" typeId="1oap.8974276187400029883" id="5069184281393163729">
+      <property name="path" nameId="1oap.8974276187400029899" value="${solution_descriptor}/icons/fwdIcon.png" />
+    </node>
+    <node role="parameter" roleId="tp4k.1217413222820" type="tp4k.ActionDataParameterDeclaration" typeId="tp4k.1217252042208" id="5069184281393163730">
+      <property name="name" nameId="tpck.1169194664001" value="project" />
+      <link role="key" roleId="tp4k.1217252646389" targetNodeId="6tyf.~PlatformDataKeys%dPROJECT" resolveInfo="PROJECT" />
+      <node role="condition" roleId="tp4k.5538333046911298738" type="tp4k.RequiredCondition" typeId="tp4k.5538333046911348654" id="5069184281393163731" />
     </node>
   </root>
 </model>
