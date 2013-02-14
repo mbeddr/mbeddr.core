@@ -64,11 +64,12 @@
       <property name="virtualPackage" nameId="tpck.1193676396447" value="toolbar" />
     </node>
     <node type="tp4k.ActionDeclaration" typeId="tp4k.1203071646776" id="1315009641671468621">
-      <property name="name" nameId="tpck.1169194664001" value="Visualize" />
+      <property name="name" nameId="tpck.1169194664001" value="VisualizeAction" />
       <property name="caption" nameId="tp4k.1205250923097" value="Visualize" />
+      <property name="mnemonic" nameId="tp4k.1215865999894" value="V" />
     </node>
     <node type="tp4k.ActionGroupDeclaration" typeId="tp4k.1203087890642" id="1315009641672076209">
-      <property name="name" nameId="tpck.1169194664001" value="Visualize" />
+      <property name="name" nameId="tpck.1169194664001" value="VisualizeActionGroup" />
     </node>
     <node type="tp4k.ActionGroupDeclaration" typeId="tp4k.1203087890642" id="1315009641672127213">
       <property name="name" nameId="tpck.1169194664001" value="ToolbarGroup" />
@@ -98,6 +99,9 @@
       <property name="virtualPackage" nameId="tpck.1193676396447" value="toolbar" />
       <property name="name" nameId="tpck.1169194664001" value="IChangeCategoryCallback" />
     </node>
+    <node type="tp4k.KeymapChangesDeclaration" typeId="tp4k.1562714432501166197" id="1089679054537218848">
+      <property name="name" nameId="tpck.1169194664001" value="visualizeKeymapping" />
+    </node>
   </roots>
   <root id="2253533512441782391" />
   <root id="2253533512441990797">
@@ -105,6 +109,18 @@
       <property name="name" nameId="tpck.1169194664001" value="load" />
       <node role="returnType" roleId="tpee.1068580123133" type="tpee.VoidType" typeId="tpee.1068581517677" id="1315009641672136521" />
       <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="1315009641672136520">
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.IfStatement" typeId="tpee.1068580123159" id="1089679054537241447">
+          <node role="ifTrue" roleId="tpee.1068580123161" type="tpee.StatementList" typeId="tpee.1068580123136" id="1089679054537241448" />
+          <node role="condition" roleId="tpee.1068580123160" type="tpee.EqualsExpression" typeId="tpee.1068580123152" id="1089679054537241527">
+            <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.NullLiteral" typeId="tpee.1070534058343" id="1089679054537241530" />
+            <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.DotExpression" typeId="tpee.1197027756228" id="1089679054537241472">
+              <node role="operand" roleId="tpee.1197027771414" type="tp4f.ThisClassifierExpression" typeId="tp4f.1205752633985" id="1089679054537241451" />
+              <node role="operation" roleId="tpee.1197027833540" type="tp4f.DefaultClassifierFieldAccessOperation" typeId="tp4f.1213999117680" id="1089679054537241478">
+                <link role="member" roleId="tp4f.1205756909548" targetNodeId="2825381606728326855" resolveInfo="categoryModel" />
+              </node>
+            </node>
+          </node>
+        </node>
         <node role="statement" roleId="tpee.1068581517665" type="tpee.ForStatement" typeId="tpee.1144231330558" id="2825381606728326998">
           <node role="body" roleId="tpee.1154032183016" type="tpee.StatementList" typeId="tpee.1068580123136" id="2825381606728326999">
             <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="2825381606728327103">
@@ -1087,6 +1103,21 @@
       </node>
       <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="2447991587475417022">
         <node role="statement" roleId="tpee.1068581517665" type="tpee.IfStatement" typeId="tpee.1068580123159" id="206784761227165346">
+          <node role="ifFalseStatement" roleId="tpee.1082485599094" type="tpee.BlockStatement" typeId="tpee.1082485599095" id="206784761227657319">
+            <node role="statements" roleId="tpee.1082485599096" type="tpee.StatementList" typeId="tpee.1068580123136" id="206784761227657320">
+              <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="206784761227657321">
+                <node role="expression" roleId="tpee.1068580123156" type="tpee.SuperMethodCall" typeId="tpee.1073063089578" id="206784761227657322">
+                  <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="qs12.~SVGUserAgentAdapter%dopenLink(java%dlang%dString,boolean)%cvoid" resolveInfo="openLink" />
+                  <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.ParameterReference" typeId="tpee.1068581242874" id="206784761227657323">
+                    <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="2447991587475417018" resolveInfo="url" />
+                  </node>
+                  <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.ParameterReference" typeId="tpee.1068581242874" id="206784761227657325">
+                    <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="2447991587475417020" resolveInfo="b" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
           <node role="ifTrue" roleId="tpee.1068580123161" type="tpee.StatementList" typeId="tpee.1068580123136" id="206784761227165347">
             <node role="statement" roleId="tpee.1068581517665" type="tpee.LocalVariableDeclarationStatement" typeId="tpee.1068581242864" id="206784761227168308">
               <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="206784761227168309">
@@ -1403,21 +1434,6 @@
               <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StaticFieldReference" typeId="tpee.1070533707846" id="206784761227172376">
                 <link role="classifier" roleId="tpee.1144433057691" targetNodeId="hwgx.117464341934615651" resolveInfo="VisGraph" />
                 <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="hwgx.206784761227166096" resolveInfo="URL_PREFIX" />
-              </node>
-            </node>
-          </node>
-          <node role="ifFalseStatement" roleId="tpee.1082485599094" type="tpee.BlockStatement" typeId="tpee.1082485599095" id="206784761227657319">
-            <node role="statements" roleId="tpee.1082485599096" type="tpee.StatementList" typeId="tpee.1068580123136" id="206784761227657320">
-              <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="206784761227657321">
-                <node role="expression" roleId="tpee.1068580123156" type="tpee.SuperMethodCall" typeId="tpee.1073063089578" id="206784761227657322">
-                  <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="qs12.~SVGUserAgentAdapter%dopenLink(java%dlang%dString,boolean)%cvoid" resolveInfo="openLink" />
-                  <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.ParameterReference" typeId="tpee.1068581242874" id="206784761227657323">
-                    <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="2447991587475417018" resolveInfo="url" />
-                  </node>
-                  <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.ParameterReference" typeId="tpee.1068581242874" id="206784761227657325">
-                    <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="2447991587475417020" resolveInfo="b" />
-                  </node>
-                </node>
               </node>
             </node>
           </node>
@@ -1827,7 +1843,7 @@
   <root id="1315009641672076209">
     <node role="contents" roleId="tp4k.1207145245948" type="tp4k.ElementListContents" typeId="tp4k.1207145163717" id="1315009641672076214">
       <node role="reference" roleId="tp4k.1207145201301" type="tp4k.ActionInstance" typeId="tp4k.1203088046679" id="1315009641672076215">
-        <link role="action" roleId="tp4k.1203088061055" targetNodeId="1315009641671468621" resolveInfo="Visualize" />
+        <link role="action" roleId="tp4k.1203088061055" targetNodeId="1315009641671468621" resolveInfo="VisualizeAction" />
       </node>
     </node>
     <node role="modifier" roleId="tp4k.1204991552650" type="tp4k.ModificationStatement" typeId="tp4k.1203092361741" id="1315009641672076216">
@@ -3492,6 +3508,15 @@
       </node>
     </node>
     <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="7418711545582123918" />
+  </root>
+  <root id="1089679054537218848">
+    <node role="shortcutChange" roleId="tp4k.1562714432501166199" type="tp4k.SimpleShortcutChange" typeId="tp4k.1562714432501166198" id="1089679054537218849">
+      <link role="action" roleId="tp4k.6193305307616734326" targetNodeId="1315009641671468621" resolveInfo="VisualizeAction" />
+      <node role="keystroke" roleId="tp4k.1562714432501166206" type="tp4k.KeyMapKeystroke" typeId="tp4k.1207318242772" id="1089679054537218850">
+        <property name="modifiers" nameId="tp4k.1207318242773" value="ctrl+alt" />
+        <property name="keycode" nameId="tp4k.1207318242774" value="VK_V" />
+      </node>
+    </node>
   </root>
 </model>
 
