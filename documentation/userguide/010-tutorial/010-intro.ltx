@@ -111,6 +111,10 @@ things running:
 
 \begin{itemize}
   \item Clone the repository onto your local machine.
+  \item Inside the cloned repository, there is a \ic{tools} folder. This folder
+  contains a \ic{mbeddr.spawner} folder. This folder (not just its contents)
+  must be copied into the \ic{plugins} directory inside MPS (note that there is also a
+  \ic{plugin} directory in MPS, without the \ic{s}!).
   \item Rebuild all the languages. We provide a shell script for this purpose 
   (\ic{.bat} and \ic{.sh}) called \ic{rebuildLanguagesAfterCheckout}. 
   It is in the \ic{code/languages} directory. For this to work, you have to
