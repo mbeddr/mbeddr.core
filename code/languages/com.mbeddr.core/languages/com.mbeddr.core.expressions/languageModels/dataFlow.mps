@@ -2988,8 +2988,8 @@
                                   <property name="value" nameId="tpee.1070475926801" value="*" />
                                 </node>
                                 <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.DotExpression" typeId="tpee.1197027756228" id="7349952699790890016">
-                                  <node role="operand" roleId="tpee.1197027771414" type="tpee.ParameterReference" typeId="tpee.1068581242874" id="7349952699790889995">
-                                    <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="9064908667074138831" resolveInfo="varDecl" />
+                                  <node role="operand" roleId="tpee.1197027771414" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="8570602913607084361">
+                                    <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="9064908667074138773" resolveInfo="element" />
                                   </node>
                                   <node role="operation" roleId="tpee.1197027833540" type="tp25.SPropertyAccess" typeId="tp25.1138056022639" id="7349952699790890021">
                                     <link role="property" roleId="tp25.1138056395725" targetNodeId="tpck.1169194664001" resolveInfo="name" />

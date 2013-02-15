@@ -156,6 +156,9 @@
       <property name="value" nameId="tpce.1105725733873" value="get address" />
       <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473914776" resolveInfo="shortDescription" />
     </node>
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="8570602913607182770">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="mj1l.4087861105422588581" resolveInfo="IDataflowComplexValue" />
+    </node>
   </root>
   <root id="1595838349830846142">
     <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.BooleanConceptProperty" typeId="tpce.1105725574259" id="1595838349830846143">
