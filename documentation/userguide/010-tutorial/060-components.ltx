@@ -665,6 +665,42 @@ instances instances {
 
 \fordetails{Interfaces and Components}{\sect{details_components}}
 
+\subsection{Visualing Components}
+
+mbeddr's diagramming capabilities are put to use in two ways in the context of
+components: component/interface dependencies and instance diagrams.
+
+\parhead{Component/Interface Dependencies} Select a component or an interface
+and execute the \emph{Visualize} action from the context menu (or press
+\ic{Ctrl-Alt-V}). \fig{vcomponents} shows the result.
+
+\begin{figure}[h]
+\begin{center} 
+  \includegraphics[width=\columnwidth]{figures/tutorial/v_components.png}
+\end{center}
+\caption{The interface/components dependency diagram shows all components
+visible from the current module, the interfaces, and the provided (solid
+lines) and required ports (dashed lines).}
+\label{vcomponents}
+\end{figure}
+
+\parhead{Instance/Wiring Diagrams} You can also select an instance configuration
+and visualize it. You'll get a diagram that shows component instances and their
+connections (\fig{vinstances}).
+
+\begin{figure}[h]
+\begin{center} 
+  \includegraphics[width=0.4\columnwidth]{figures/tutorial/v_instances.png}
+\end{center}
+\caption{This diagram shows component instances and their connectors. The label
+in the instance boxes contain the instance name and the component name (after
+the colon). The edges represent connectors. The label shows the required port
+(before the arrow, the provided port name (after the arrow), and the name of
+the interface used by the two ports (on the new line).}
+\label{vinstances}
+\end{figure}
+
+
 
 % \subsection{Contract Verification}
 

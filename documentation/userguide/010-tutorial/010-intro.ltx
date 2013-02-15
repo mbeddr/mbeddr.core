@@ -71,9 +71,10 @@ set PATH=C:\ide\Cygwin\bin;%PATH%
 
 \section{Graphviz}
 
-MPS supports visualization of models via graphviz, directly embedded in MPS. To
-use it, you have to install graphviz from \ic{http://graphviz.org}. We use
-version 2.28. After the installation, you have to put the \ic{bin} directory of
+MPS supports visualization of models via PlantUML
+(\ic{http://plantuml.sourceforge.net}), directly embedded in MPS.
+To use it, you have to install graphviz from \ic{http://graphviz.org}. We use
+version 2.30. After the installation, you have to put the \ic{bin} directory of
 graphviz into the path. Either globally, or by modifying the MPS startup script
 in the same way as above:
 
@@ -82,12 +83,6 @@ in the same way as above:
 ::rem adapt the following to your graphviz bin path
 set PATH=C:\ide\graphviz2.28\bin;%PATH%
 \end{lstlisting}
-
-To make the graphviz viewer work, you also have to install a custom plugin into
-MPS. To do so, please move (not just copy!) the \ic{zgrviewer} folder from the
-\ic{tools} directory of mbeddr into the \ic{plugins} directory of MPS (note that there
-\ic{plugin} and \ic{plugins} directories in MPS; make sure you copy it into the
-\ic{plugins} directory).
 
 
 \section{mbeddr}
@@ -116,6 +111,10 @@ things running:
 
 \begin{itemize}
   \item Clone the repository onto your local machine.
+  \item Inside the cloned repository, there is a \ic{tools} folder. This folder
+  contains a \ic{mbeddr.spawner} folder. This folder (not just its contents)
+  must be copied into the \ic{plugins} directory inside MPS (note that there is also a
+  \ic{plugin} directory in MPS, without the \ic{s}!).
   \item Rebuild all the languages. We provide a shell script for this purpose 
   (\ic{.bat} and \ic{.sh}) called \ic{rebuildLanguagesAfterCheckout}. 
   It is in the \ic{code/languages} directory. For this to work, you have to

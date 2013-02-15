@@ -6,18 +6,18 @@
   <component name="Encoding" useUTFGuessing="true" native2AsciiForPropertiesFiles="false" />
   <component name="MPSProject">
     <projectModules>
-      <modulePath path="${project}/languages/blocks/blocks.mpl" />
-      <modulePath path="${project}/languages/cimpl/cimpl.mpl" folder="" />
-      <modulePath path="${project}/languages/complex/complex.mpl" />
-      <modulePath path="${project}/languages/foreach/foreach.mpl" folder="" />
-      <modulePath path="${project}/languages/heap/heap.mpl" folder="" />
-      <modulePath path="${project}/languages/memory/memory.mpl" folder="" />
-      <modulePath path="${project}/languages/metadata/metadata.mpl" folder="" />
-      <modulePath path="${project}/languages/osconfig/osconfig.mpl" folder="" />
-      <modulePath path="${project}/languages/registers/registers.mpl" />
-      <modulePath path="${project}/languages/vectors/vectors.mpl" />
-      <modulePath path="${project}/solutions/mbeddr.tutorial.main/mbeddr.tutorial.main.msd" />
-      <modulePath path="${project}/solutions/mbeddr.tutorial.typesystemtests/typesystemtests.msd" folder="" />
+      <modulePath path="${project}/languages/blocks/blocks.mpl" folder="languages" />
+      <modulePath path="${project}/languages/cimpl/cimpl.mpl" folder="languages" />
+      <modulePath path="${project}/languages/complex/complex.mpl" folder="languages" />
+      <modulePath path="${project}/languages/foreach/foreach.mpl" folder="languages" />
+      <modulePath path="${project}/languages/heap/heap.mpl" folder="languages" />
+      <modulePath path="${project}/languages/memory/memory.mpl" folder="languages" />
+      <modulePath path="${project}/languages/metadata/metadata.mpl" folder="languages" />
+      <modulePath path="${project}/languages/osconfig/osconfig.mpl" folder="languages" />
+      <modulePath path="${project}/languages/registers/registers.mpl" folder="languages" />
+      <modulePath path="${project}/languages/vectors/vectors.mpl" folder="languages" />
+      <modulePath path="${project}/solutions/mbeddr.tutorial.main/mbeddr.tutorial.main.msd" folder="exampleCode" />
+      <modulePath path="${project}/solutions/mbeddr.tutorial.typesystemtests/typesystemtests.msd" folder="typesystem-tests" />
     </projectModules>
     <genConfs />
   </component>
