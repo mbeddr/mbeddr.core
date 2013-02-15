@@ -8,14 +8,14 @@
   <import index="tpce" modelUID="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" version="0" implicit="yes" />
   <import index="yz9a" modelUID="r:734c02dd-cc16-4184-99eb-5fd9f43aa37e(com.mbeddr.core.unittest.structure)" version="0" implicit="yes" />
   <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="3" implicit="yes" />
-  <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="19" implicit="yes" />
-  <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="6" implicit="yes" />
+  <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="17" implicit="yes" />
+  <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="5" implicit="yes" />
   <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="5" implicit="yes" />
+  <import index="mxvz" modelUID="r:b92c0a08-d42f-4c78-a3f4-d5f989493286(com.mbeddr.ext.components.mock.structure)" version="0" implicit="yes" />
   <roots>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="2151335435833216353">
       <property name="name" nameId="tpck.1169194664001" value="MockComponent" />
       <property name="virtualPackage" nameId="tpck.1193676396447" value="mock" />
-      <property name="iconPath" nameId="tpce.1160488491229" value="${language_descriptor}/icons/mocks.png" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="v7ag.4491876417845474761" resolveInfo="Component" />
     </node>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="2151335435833308544">
@@ -103,15 +103,15 @@
       <property name="name" nameId="tpck.1169194664001" value="PhaseChangeStatement" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="c4fa.4185783222026464515" resolveInfo="Statement" />
     </node>
-    <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="6329057548770953993">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="stub" />
-      <property name="name" nameId="tpck.1169194664001" value="PhaseType" />
-      <link role="extends" roleId="tpce.1071489389519" targetNodeId="mj1l.8860443239512128056" resolveInfo="PrimitiveType" />
-    </node>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="6329057548770953988">
       <property name="virtualPackage" nameId="tpck.1193676396447" value="stub" />
       <property name="name" nameId="tpck.1169194664001" value="PhaseChangeTrigger" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="v7ag.4491876417845641673" resolveInfo="RunnableTrigger" />
+    </node>
+    <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="6329057548770953993">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="stub" />
+      <property name="name" nameId="tpck.1169194664001" value="PhaseType" />
+      <link role="extends" roleId="tpce.1071489389519" targetNodeId="mj1l.8860443239512128056" resolveInfo="PrimitiveType" />
     </node>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="6329057548771013571">
       <property name="virtualPackage" nameId="tpck.1193676396447" value="stub" />
@@ -387,6 +387,12 @@
       <link role="target" roleId="tpce.1071599976176" targetNodeId="2319970887606630628" resolveInfo="StubPhase" />
     </node>
   </root>
+  <root id="6329057548770953988">
+    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="6329057548770953989">
+      <property name="value" nameId="tpce.1105725733873" value="phase change" />
+      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473891462" resolveInfo="alias" />
+    </node>
+  </root>
   <root id="6329057548770953993">
     <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="6329057548770953995">
       <property name="value" nameId="tpce.1105725733873" value="phase" />
@@ -394,12 +400,6 @@
     </node>
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="6329057548771062444">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="mj1l.8860443239512166593" resolveInfo="IComparable" />
-    </node>
-  </root>
-  <root id="6329057548770953988">
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="6329057548770953989">
-      <property name="value" nameId="tpce.1105725733873" value="phase change" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473891462" resolveInfo="alias" />
     </node>
   </root>
   <root id="6329057548771013571">

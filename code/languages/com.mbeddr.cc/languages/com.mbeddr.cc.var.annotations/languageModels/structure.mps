@@ -5,13 +5,14 @@
   <import index="qqyh" modelUID="r:a74300b8-76a8-461e-befa-fc86b0ad5dd9(com.mbeddr.cc.var.fm.structure)" version="-1" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="tpce" modelUID="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" version="0" implicit="yes" />
-  <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="17" implicit="yes" />
+  <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="20" implicit="yes" />
   <import index="qdv7" modelUID="r:1ff3d952-eae5-4d94-b89e-ea3060b11545(com.mbeddr.cc.var.annotations.structure)" version="2" implicit="yes" />
+  <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="6" implicit="yes" />
   <roots>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="661141253149231475">
       <property name="name" nameId="tpck.1169194664001" value="PresenceCondidtion" />
       <property name="virtualPackage" nameId="tpck.1193676396447" value="programannotations" />
-      <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.3364660638048049748" resolveInfo="NodeAttribute" />
+      <link role="extends" roleId="tpce.1071489389519" targetNodeId="vs0r.5959167564566976062" resolveInfo="VisibilityControllingAttribute" />
     </node>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="661141253149262053">
       <property name="virtualPackage" nameId="tpck.1193676396447" value="programannotations" />
@@ -54,10 +55,6 @@
     </node>
   </roots>
   <root id="661141253149231475">
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="661141253149231546">
-      <property name="value" nameId="tpce.1105725733873" value="presenceCondition" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.5169995583184591164" resolveInfo="role" />
-    </node>
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="661141253149231543">
       <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
       <property name="role" nameId="tpce.1071599776563" value="condition" />
@@ -107,11 +104,11 @@
   </root>
   <root id="7455436784495594419">
     <node role="member" roleId="tpce.1083172003582" type="tpce.EnumerationMemberDeclaration" typeId="tpce.1083171877298" id="7455436784495594420">
-      <property name="externalValue" nameId="tpce.1083923523172" value="product line" />
+      <property name="externalValue" nameId="tpce.1083923523172" value="detailed PL" />
       <property name="internalValue" nameId="tpce.1083923523171" value="0" />
     </node>
     <node role="member" roleId="tpce.1083172003582" type="tpce.EnumerationMemberDeclaration" typeId="tpce.1083171877298" id="7455436784495594421">
-      <property name="externalValue" nameId="tpce.1083923523172" value="undecorated" />
+      <property name="externalValue" nameId="tpce.1083923523172" value="concise PL" />
       <property name="internalValue" nameId="tpce.1083923523171" value="1" />
     </node>
     <node role="member" roleId="tpce.1083172003582" type="tpce.EnumerationMemberDeclaration" typeId="tpce.1083171877298" id="7455436784495594422">

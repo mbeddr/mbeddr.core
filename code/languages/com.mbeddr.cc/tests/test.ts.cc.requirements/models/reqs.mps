@@ -4,13 +4,13 @@
   <language namespace="e865cad2-7cc8-437a-951a-665bcbcb8b1a(com.mbeddr.cc.requirements)" />
   <language namespace="8c1afb04-04c4-462e-a7d5-d69f2a293428(com.mbeddr.cc.requirements.xhtml)" />
   <devkit namespace="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
-  <import index="75wo" modelUID="r:eaa205a4-f15c-47d3-99e2-e648881b5997(com.mbeddr.cc.requirements.structure)" version="6" implicit="yes" />
+  <import index="75wo" modelUID="r:eaa205a4-f15c-47d3-99e2-e648881b5997(com.mbeddr.cc.requirements.structure)" version="7" implicit="yes" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="26ao" modelUID="r:7c15925b-a4a5-4da3-88aa-931a5a9ed982(com.mbeddr.cc.trace.structure)" version="3" implicit="yes" />
   <import index="51wr" modelUID="r:b31f1c3c-99aa-4f1e-a329-cba27efb1a6b(com.mbeddr.core.buildconfig.structure)" version="1" implicit="yes" />
   <import index="y5m3" modelUID="r:b1d3a385-9042-4361-85fa-24f097b1b1ff(com.mbeddr.cc.requirements.xhtml.structure)" version="-1" implicit="yes" />
-  <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="5" implicit="yes" />
-  <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="17" implicit="yes" />
+  <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="6" implicit="yes" />
+  <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="20" implicit="yes" />
   <roots>
     <node type="75wo.RequirementsModule" typeId="75wo.8745401669462963169" id="8745401669463114528">
       <property name="name" nameId="tpck.1169194664001" value="HighLevelRequirements" />
@@ -47,7 +47,7 @@
         <node role="details" roleId="75wo.8745401669462962629" type="75wo.Requirement" typeId="75wo.8745401669462952101" id="1209423092481311986">
           <property name="name" nameId="tpck.1169194664001" value="FailOtherwise" />
           <property name="summmary" nameId="75wo.3402431285977818823" value="Otherwise it should return -1" />
-          <property name="open" nameId="75wo.1165432222361744926" value="false" />
+          <property name="open" nameId="75wo.1165432222361744926" value="true" />
           <property name="proseText" nameId="75wo.8745401669463252438" value="Hallo hier sind die Details." />
           <property name="implemented" nameId="75wo.2667296550441502913" value="true" />
           <property name="traced" nameId="75wo.2667296550441527826" value="true" />
@@ -57,7 +57,7 @@
           <node role="additionalData" roleId="75wo.8745401669463270518" type="75wo.TimingSpecification" typeId="75wo.3402431285977750163" id="1165432222362099155">
             <property name="timingSpec" nameId="75wo.3402431285977750164" value="dfsdfdsf" />
           </node>
-          <node role="links" roleId="75wo.8745401669463260576" type="75wo.ConflictsWithLink" typeId="75wo.8745401669463257446" id="1165432222362099156">
+          <node role="additionalData" roleId="75wo.8745401669463270518" type="75wo.ConflictsWithLink" typeId="75wo.8745401669463257446" id="1165432222362099156">
             <link role="target" roleId="75wo.8745401669463257454" targetNodeId="1209423092481311976" resolveInfo="Add" />
           </node>
         </node>
@@ -125,10 +125,10 @@
       <property name="summmary" nameId="75wo.3402431285977818823" value="Specializes this other one" />
       <property name="proseText" nameId="75wo.8745401669463252438" value="This is the text." />
       <property name="priority" nameId="75wo.3314758227758879688" value="1" />
-      <node role="kind" roleId="75wo.8921256082857728256" type="75wo.FunctionalRequirementKind" typeId="75wo.8921256082857728250" id="1165432222362134392" />
-      <node role="links" roleId="75wo.8745401669463260576" type="75wo.RefinesLink" typeId="75wo.1165432222362123724" id="1165432222362134393">
+      <node role="additionalData" roleId="75wo.8745401669463270518" type="75wo.RefinesLink" typeId="75wo.1165432222362123724" id="1165432222362134393">
         <link role="target" roleId="75wo.8745401669463257454" targetNodeId="1209423092481311976" resolveInfo="Add" />
       </node>
+      <node role="kind" roleId="75wo.8921256082857728256" type="75wo.FunctionalRequirementKind" typeId="75wo.8921256082857728250" id="1165432222362134392" />
     </node>
   </root>
   <root id="8200057468984897506">
@@ -137,9 +137,11 @@
     </node>
     <node role="configurationItems" roleId="vs0r.4459718605982007338" type="y5m3.RequirementsConfigItem" typeId="y5m3.8200057468984885908" id="8200057468984897509">
       <node role="reports" roleId="y5m3.8200057468984903170" type="y5m3.GenerateReport" typeId="y5m3.8200057468984903158" id="8200057468984992955">
+        <property name="collapsedStartingFromLevel" nameId="y5m3.7784032510525662161" value="1" />
         <link role="module" roleId="y5m3.8200057468984903159" targetNodeId="1165432222362120317" resolveInfo="DetailedRequirements" />
       </node>
       <node role="reports" roleId="y5m3.8200057468984903170" type="y5m3.GenerateReport" typeId="y5m3.8200057468984903158" id="8200057468984992956">
+        <property name="collapsedStartingFromLevel" nameId="y5m3.7784032510525662161" value="1" />
         <link role="module" roleId="y5m3.8200057468984903159" targetNodeId="8745401669463114528" resolveInfo="HighLevelRequirements" />
       </node>
     </node>

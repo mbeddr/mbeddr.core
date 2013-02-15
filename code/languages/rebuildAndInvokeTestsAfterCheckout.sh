@@ -1,9 +1,9 @@
 set -e
 
-cd com.mbeddr.debugger
-ant build-tests
+#cd com.mbeddr.debugger
+#ant build-tests
 # ant run-ts-tests
-cd ..
+#cd ..
 
 cd com.mbeddr.core
 ant build-tests

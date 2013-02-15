@@ -344,9 +344,6 @@
     </node>
   </root>
   <root id="5095889050031607156">
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="4115720392370607697">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="c4fa.4115720392370607692" resolveInfo="IStructuredInitExpression" />
-    </node>
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="5095889050031607158">
       <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
       <property name="role" nameId="tpce.1071599776563" value="elements" />
@@ -360,6 +357,9 @@
     <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="2400440333613793412">
       <property name="value" nameId="tpce.1105725733873" value="struct initializer (positional)" />
       <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473914776" resolveInfo="shortDescription" />
+    </node>
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="4115720392370607697">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="c4fa.4115720392370607692" resolveInfo="IStructuredInitExpression" />
     </node>
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7349952699784934201">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="mj1l.7897559875243468033" resolveInfo="IDataflowComplexTypeInitExpression" />
