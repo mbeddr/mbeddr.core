@@ -10238,6 +10238,11 @@
     </node>
   </root>
   <root id="7919846782124811653">
+    <node role="field" roleId="tpee.1068390468199" type="tpee.FieldDeclaration" typeId="tpee.1068390468200" id="6899320312454389489">
+      <property name="name" nameId="tpck.1169194664001" value="dummy" />
+      <node role="visibility" roleId="tpee.1178549979242" type="tpee.PrivateVisibility" typeId="tpee.1146644623116" id="6899320312454389490" />
+      <node role="type" roleId="tpee.5680397130376446158" type="tpee.IntegerType" typeId="tpee.1070534370425" id="6899320312454389492" />
+    </node>
     <node role="staticMethod" roleId="tpee.1070462273904" type="tpee.StaticMethodDeclaration" typeId="tpee.1081236700938" id="7919846782124811666">
       <property name="name" nameId="tpck.1169194664001" value="getCategoriesForComponents" />
       <node role="returnType" roleId="tpee.1068580123133" type="tpee.ArrayType" typeId="tpee.1070534760951" id="7919846782124811671">
