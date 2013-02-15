@@ -334,6 +334,15 @@
         <node role="contents" roleId="4l29.5744000828452661377" type="4l29.Collaboration" typeId="4l29.5744000828452694711" id="8119642625901820564">
           <link role="participant" roleId="4l29.5744000828452694713" targetNodeId="8119642625901800282" resolveInfo="InMemoryStore" />
         </node>
+        <node role="contents" roleId="4l29.5744000828452661377" type="4l29.Collaboration" typeId="4l29.5744000828452694711" id="8009804792183451325">
+          <link role="participant" roleId="4l29.5744000828452694713" targetNodeId="8009804792183451319" resolveInfo="Bla" />
+        </node>
+      </node>
+      <node role="additionalData" roleId="75wo.8745401669463270518" type="4l29.Component" typeId="4l29.5744000828452661387" id="8009804792183451319">
+        <property name="name" nameId="tpck.1169194664001" value="Bla" />
+        <node role="contents" roleId="4l29.5744000828452661377" type="4l29.Capability" typeId="4l29.5744000828452661413" id="8009804792183451320">
+          <property name="name" nameId="tpck.1169194664001" value="blubb" />
+        </node>
       </node>
     </node>
     <node role="requirements" roleId="75wo.8745401669462963171" type="75wo.Requirement" typeId="75wo.8745401669462952101" id="8119642625901800287">
@@ -374,6 +383,12 @@
             <link role="capability" roleId="4l29.5744000828452854655" targetNodeId="8119642625901800307" resolveInfo="setup" />
             <node role="targetParticipant" roleId="4l29.5744000828452849518" type="4l29.ParticipantRef" typeId="4l29.5744000828452824074" id="552710421071417205">
               <link role="participant" roleId="4l29.5744000828452824075" targetNodeId="8119642625901800282" resolveInfo="InMemoryStore" />
+            </node>
+          </node>
+          <node role="contents" roleId="4l29.5744000828452862537" type="4l29.SequentialCall" typeId="4l29.5744000828452842290" id="8009804792183451322">
+            <link role="capability" roleId="4l29.5744000828452854655" targetNodeId="8009804792183451320" resolveInfo="blubb" />
+            <node role="targetParticipant" roleId="4l29.5744000828452849518" type="4l29.ParticipantRef" typeId="4l29.5744000828452824074" id="8009804792183451323">
+              <link role="participant" roleId="4l29.5744000828452824075" targetNodeId="8009804792183451319" resolveInfo="Bla" />
             </node>
           </node>
           <node role="contents" roleId="4l29.5744000828452862537" type="4l29.Alternative" typeId="4l29.5744000828453199884" id="552710421071417220">
