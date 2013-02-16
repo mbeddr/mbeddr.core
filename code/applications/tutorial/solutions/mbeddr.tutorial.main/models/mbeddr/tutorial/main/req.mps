@@ -428,6 +428,9 @@
               <node role="contents" roleId="4l29.5744000828452862537" type="4l29.ImplStep" typeId="4l29.8009804792183241983" id="8009804792183328935">
                 <property name="text" nameId="4l29.8009804792183241985" value="same as above" />
               </node>
+              <node role="contents" roleId="4l29.5744000828452862537" type="4l29.ScenarioCall" typeId="4l29.6899320312455930732" id="6899320312455960236">
+                <link role="scenario" roleId="4l29.6899320312455930737" targetNodeId="6899320312455930730" resolveInfo="AnotherOne" />
+              </node>
             </node>
             <node role="otherCases" roleId="4l29.5744000828453213263" type="4l29.AlternativeElse" typeId="4l29.5744000828453213262" id="7451725615401720590">
               <property name="condition" nameId="4l29.5744000828453213327" value="setup failed" />
@@ -436,6 +439,12 @@
               </node>
             </node>
           </node>
+        </node>
+      </node>
+      <node role="additionalData" roleId="75wo.8745401669463270518" type="4l29.Scenario" typeId="4l29.5744000828452824073" id="6899320312455930730">
+        <property name="name" nameId="tpck.1169194664001" value="AnotherOne" />
+        <node role="initials" roleId="4l29.5744000828452824190" type="4l29.InitialContext" typeId="4l29.5744000828452824121" id="6899320312455960237">
+          <link role="initiator" roleId="4l29.5744000828452824122" targetNodeId="8119642625901800282" resolveInfo="InMemoryStore" />
         </node>
       </node>
     </node>

@@ -1097,6 +1097,18 @@
         <property name="color" nameId="tpc2.1186403713874" value="lightGray" />
       </node>
     </node>
+    <node role="styleClass" roleId="tpc2.1186402402630" type="tpc2.StyleSheetClass" typeId="tpc2.1186402373407" id="7728114058480714157">
+      <property name="name" nameId="tpck.1169194664001" value="readOnly" />
+      <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.ForegroundColorStyleClassItem" typeId="tpc2.1186404549998" id="7728114058480714158">
+        <property name="color" nameId="tpc2.1186403713874" value="gray" />
+      </node>
+      <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.SelectableStyleSheetItem" typeId="tpc2.1186414928363" id="7728114058480714315">
+        <property name="flag" nameId="tpc2.1186414551515" value="false" />
+      </node>
+      <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.EditableStyleClassItem" typeId="tpc2.1186414860679" id="7728114058480714317">
+        <property name="flag" nameId="tpc2.1186414551515" value="false" />
+      </node>
+    </node>
   </root>
   <root id="3134547887598498480">
     <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Alternation" typeId="tpc2.1088612959204" id="3134547887598498482">
