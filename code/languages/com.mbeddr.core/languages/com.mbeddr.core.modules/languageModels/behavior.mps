@@ -4273,11 +4273,11 @@
           <node role="expression" roleId="tpee.1068580123156" type="tpee.GenericNewExpression" typeId="tpee.1145552977093" id="7728114058480404672">
             <node role="creator" roleId="tpee.1145553007750" type="tpee.ArrayCreatorWithInitializer" typeId="tpee.1154542696413" id="7728114058480404698">
               <node role="componentType" roleId="tpee.1154542793668" type="tpee.StringType" typeId="tpee.1225271177708" id="7728114058480404677" />
-              <node role="initValue" roleId="tpee.1154542803372" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="7728114058480404700">
-                <property name="value" nameId="tpee.1070475926801" value="transitive dependencies" />
-              </node>
               <node role="initValue" roleId="tpee.1154542803372" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="7728114058480884190">
                 <property name="value" nameId="tpee.1070475926801" value="transitive dependencies (2D)" />
+              </node>
+              <node role="initValue" roleId="tpee.1154542803372" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="7728114058480404700">
+                <property name="value" nameId="tpee.1070475926801" value="transitive dependencies" />
               </node>
             </node>
           </node>

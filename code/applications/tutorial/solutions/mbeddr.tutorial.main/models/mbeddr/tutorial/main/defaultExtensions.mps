@@ -52,21 +52,26 @@
     </node>
     <node type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="9141254329931944290">
       <property name="name" nameId="tpck.1169194664001" value="FunctionPointers" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="examples" />
     </node>
     <node type="ym4j.UnitContainer" typeId="ym4j.3801772042669047872" id="8135882712510776073">
       <property name="virtualPackage" nameId="tpck.1193676396447" value="config" />
     </node>
     <node type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="1731059994647587993">
       <property name="name" nameId="tpck.1169194664001" value="DataStructures" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="examples" />
     </node>
     <node type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="1731059994647588211">
       <property name="name" nameId="tpck.1169194664001" value="Components" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="examples" />
     </node>
     <node type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="5160057464295358354">
       <property name="name" nameId="tpck.1169194664001" value="StateMachines" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="examples" />
     </node>
     <node type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="5160057464295359491">
       <property name="name" nameId="tpck.1169194664001" value="LibraryAccess" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="examples" />
     </node>
     <node type="x27k.ExternalModule" typeId="x27k.6116558314501417921" id="7727566415687366376">
       <property name="name" nameId="tpck.1169194664001" value="stdio_stub" />
@@ -82,6 +87,7 @@
     </node>
     <node type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="5441227754062389682">
       <property name="name" nameId="tpck.1169194664001" value="RuntimeVariability" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="examples" />
     </node>
     <node type="qqyh.VariabilitySupport" typeId="qqyh.6825476687691337712" id="5441227754062389703">
       <property name="virtualPackage" nameId="tpck.1193676396447" value="config" />
@@ -89,9 +95,11 @@
     </node>
     <node type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="869116753978119546">
       <property name="name" nameId="tpck.1169194664001" value="StaticVariability" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="examples" />
     </node>
     <node type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="6700886800242034956">
       <property name="name" nameId="tpck.1169194664001" value="ComponentsSRI" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="examples" />
     </node>
   </roots>
   <root id="9141254329931944222">
