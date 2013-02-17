@@ -263,6 +263,12 @@
         <node role="contents" roleId="4l29.5744000828452661377" type="4l29.DataItem" typeId="4l29.5744000828452648916" id="6446320527598544111">
           <property name="name" nameId="tpck.1169194664001" value="Flight" />
         </node>
+        <node role="contents" roleId="4l29.5744000828452661377" type="4l29.Capability" typeId="4l29.5744000828452661413" id="6446320527598639249">
+          <property name="name" nameId="tpck.1169194664001" value="createFlight" />
+          <node role="returns" roleId="4l29.5744000828452661425" type="4l29.DataItemRef" typeId="4l29.5744000828452990961" id="6446320527598639250">
+            <link role="item" roleId="4l29.5744000828452990962" targetNodeId="6446320527598544111" resolveInfo="Flight" />
+          </node>
+        </node>
       </node>
     </node>
     <node role="requirements" roleId="75wo.8745401669462963171" type="75wo.Requirement" typeId="75wo.8745401669462952101" id="6446320527598544106">
@@ -302,9 +308,9 @@
         <node role="contents" roleId="4l29.5744000828452661377" type="4l29.Collaboration" typeId="4l29.5744000828452694711" id="6446320527598544119">
           <link role="participant" roleId="4l29.5744000828452694713" targetNodeId="8119642625901795406" resolveInfo="FlightDataProvider" />
         </node>
-        <node role="contents" roleId="4l29.5744000828452661377" type=".com.mbeddr.cc.requirements.scenarios.structure.DataElement" id="6446320527598539629">
-          <property name="name" value="flights" />
-          <node role="data" type="4l29.DataItemRef" typeId="4l29.5744000828452990961" id="6446320527598544100">
+        <node role="contents" roleId="4l29.5744000828452661377" type="4l29.OwnedData" typeId="4l29.6446320527598514143" id="6446320527598639244">
+          <property name="name" nameId="tpck.1169194664001" value="flights" />
+          <node role="data" roleId="4l29.6446320527598514151" type="4l29.DataItemRef" typeId="4l29.5744000828452990961" id="6446320527598639251">
             <link role="item" roleId="4l29.5744000828452990962" targetNodeId="6446320527598544111" resolveInfo="Flight" />
           </node>
         </node>
@@ -381,6 +387,37 @@
           </node>
           <node role="contents" roleId="4l29.5744000828452862537" type="4l29.Alternative" typeId="4l29.5744000828453199884" id="552710421071417220">
             <property name="condition" nameId="4l29.5744000828453199886" value="setup status ok?" />
+            <node role="contents" roleId="4l29.5744000828453199898" type="4l29.SequentialCall" typeId="4l29.5744000828452842290" id="6446320527598639253">
+              <link role="capability" roleId="4l29.5744000828452854655" targetNodeId="6446320527598639249" resolveInfo="createFlight" />
+              <node role="targetParticipant" roleId="4l29.5744000828452849518" type="4l29.ParticipantRef" typeId="4l29.5744000828452824074" id="6446320527598639254">
+                <link role="participant" roleId="4l29.5744000828452824075" targetNodeId="8119642625901795406" resolveInfo="FlightDataProvider" />
+              </node>
+              <node role="returns" roleId="4l29.6446320527598513761" type="4l29.OwnedItemRef" typeId="4l29.6446320527598618610" id="6446320527598675710">
+                <link role="data" roleId="4l29.6446320527598618612" targetNodeId="6446320527598639237" resolveInfo="exampleFlight" />
+              </node>
+            </node>
+            <node role="contents" roleId="4l29.5744000828453199898" type="4l29.SequentialCall" typeId="4l29.5744000828452842290" id="6446320527598675706">
+              <link role="capability" roleId="4l29.5744000828452854655" targetNodeId="6446320527598639249" resolveInfo="createFlight" />
+              <node role="targetParticipant" roleId="4l29.5744000828452849518" type="4l29.ParticipantRef" typeId="4l29.5744000828452824074" id="6446320527598675707">
+                <link role="participant" roleId="4l29.5744000828452824075" targetNodeId="8119642625901795406" resolveInfo="FlightDataProvider" />
+              </node>
+              <node role="returns" roleId="4l29.6446320527598513761" type="4l29.AnonymousInstance" typeId="4l29.6446320527598554645" id="6446320527598675708">
+                <property name="name" nameId="tpck.1169194664001" value="f" />
+                <node role="data" roleId="4l29.6446320527598554647" type="4l29.DataItemRef" typeId="4l29.5744000828452990961" id="6446320527598675709">
+                  <link role="item" roleId="4l29.5744000828452990962" targetNodeId="6446320527598544111" resolveInfo="Flight" />
+                </node>
+              </node>
+            </node>
+            <node role="contents" roleId="4l29.5744000828453199898" type="4l29.SequentialCall" typeId="4l29.5744000828452842290" id="6446320527598639259">
+              <link role="capability" roleId="4l29.5744000828452854655" targetNodeId="8119642625901800284" resolveInfo="store" />
+              <node role="targetParticipant" roleId="4l29.5744000828452849518" type="4l29.ParticipantRef" typeId="4l29.5744000828452824074" id="6446320527598639262">
+                <link role="participant" roleId="4l29.5744000828452824075" targetNodeId="8119642625901800282" resolveInfo="InMemoryStore" />
+              </node>
+              <node role="returns" roleId="4l29.6446320527598513761" type="4l29.StatusValueOK" typeId="4l29.6446320527598544124" id="6446320527598656714" />
+              <node role="args" roleId="4l29.5744000828452981042" type="4l29.ReceivedItemRef" typeId="4l29.6446320527598639263" id="6446320527598759099">
+                <link role="data" roleId="4l29.6446320527598639270" targetNodeId="6446320527598675708" resolveInfo="f" />
+              </node>
+            </node>
             <node role="contents" roleId="4l29.5744000828453199898" type="4l29.Heading" typeId="4l29.8119642625901571839" id="552710421071417224">
               <property name="text" nameId="4l29.8119642625901571841" value="Operation" />
             </node>
@@ -404,12 +441,7 @@
               <node role="args" roleId="4l29.5744000828452981042" type="4l29.OwnedItemRef" typeId="4l29.6446320527598618610" id="6446320527598637446">
                 <link role="data" roleId="4l29.6446320527598618612" targetNodeId="6446320527598639237" resolveInfo="exampleFlight" />
               </node>
-              <node role="returns" roleId="4l29.6446320527598513761" type="4l29.AnonymousInstance" typeId="4l29.6446320527598554645" id="6446320527598639240">
-                <property name="name" nameId="tpck.1169194664001" value="f" />
-                <node role="data" roleId="4l29.6446320527598554647" type="4l29.DataItemRef" typeId="4l29.5744000828452990961" id="6446320527598639242">
-                  <link role="item" roleId="4l29.5744000828452990962" targetNodeId="6446320527598544111" resolveInfo="Flight" />
-                </node>
-              </node>
+              <node role="returns" roleId="4l29.6446320527598513761" type="4l29.StatusValueOK" typeId="4l29.6446320527598544124" id="6446320527598639243" />
             </node>
             <node role="contents" roleId="4l29.5744000828453199898" type="4l29.SequentialCall" typeId="4l29.5744000828452842290" id="552710421071417231">
               <link role="capability" roleId="4l29.5744000828452854655" targetNodeId="8119642625901800284" resolveInfo="store" />
