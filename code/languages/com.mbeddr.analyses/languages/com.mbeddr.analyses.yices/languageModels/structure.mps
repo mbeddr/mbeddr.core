@@ -181,6 +181,10 @@
       <property name="name" nameId="tpck.1169194664001" value="RecordMemberRef" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="mj1l.8860443239512128050" resolveInfo="Expression" />
     </node>
+    <node type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="5070503009225538578">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="commands" />
+      <property name="name" nameId="tpck.1169194664001" value="IAssertLike" />
+    </node>
   </roots>
   <root id="5228347731919190605">
     <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.BooleanConceptProperty" typeId="tpce.1105725574259" id="5228347731919190606">
@@ -200,6 +204,9 @@
     <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="3504960153615494367">
       <property name="name" nameId="tpck.1169194664001" value="exprInPrefixForm" />
       <link role="dataType" roleId="tpce.1082985295845" targetNodeId="tpck.1082983041843" resolveInfo="string" />
+    </node>
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="5070503009225538579">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="5070503009225538578" resolveInfo="IAssertLike" />
     </node>
   </root>
   <root id="5228347731919190621">
@@ -326,6 +333,9 @@
     <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="4974736285582265660">
       <property name="name" nameId="tpck.1169194664001" value="exprInPrefixForm" />
       <link role="dataType" roleId="tpce.1082985295845" targetNodeId="tpck.1082983041843" resolveInfo="string" />
+    </node>
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="5070503009225538580">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="5070503009225538578" resolveInfo="IAssertLike" />
     </node>
   </root>
   <root id="7315270766388763586">
@@ -466,5 +476,6 @@
       <link role="target" roleId="tpce.1071599976176" targetNodeId="4529108844407133111" resolveInfo="ConstantDeclaration" />
     </node>
   </root>
+  <root id="5070503009225538578" />
 </model>
 
