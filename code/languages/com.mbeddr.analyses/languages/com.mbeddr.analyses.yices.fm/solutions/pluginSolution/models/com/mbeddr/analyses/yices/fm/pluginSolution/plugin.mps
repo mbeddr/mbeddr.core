@@ -47,7 +47,7 @@
     </node>
     <node type="tp4k.ToolDeclaration" typeId="tp4k.1203071677434" id="1611636138415538765">
       <property name="name" nameId="tpck.1169194664001" value="FMYicesTool" />
-      <property name="caption" nameId="tp4k.6547237850567462620" value="Feature Model Analyzer" />
+      <property name="caption" nameId="tp4k.6547237850567462620" value="Feature Model Verification (Yices)" />
       <property name="number" nameId="tp4k.6547237850567462701" value="0" />
       <property name="position" nameId="tp4k.2498620720770664572" value="RIGHT" />
     </node>
