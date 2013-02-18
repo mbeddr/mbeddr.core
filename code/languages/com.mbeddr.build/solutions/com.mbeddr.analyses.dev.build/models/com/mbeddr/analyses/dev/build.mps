@@ -681,6 +681,9 @@
     </node>
     <node role="parts" roleId="3ior.7389400916848080626" type="kdzh.BuildMps_IdeaPlugin" typeId="kdzh.6592112598314498932" id="7247348105538928878">
       <property name="id" nameId="kdzh.6592112598314498927" value="com.mbeddr.analyses.nusmv" />
+      <node role="dependencies" roleId="kdzh.6592112598314499028" type="kdzh.BuildMps_IdeaPluginDependency" typeId="kdzh.6592112598314499027" id="6092063148125684436">
+        <link role="target" roleId="kdzh.6592112598314499066" targetNodeId="7247348105538752469" />
+      </node>
       <node role="name" roleId="kdzh.6592112598314499021" type="3ior.BuildStringNotEmpty" typeId="3ior.841011766566059607" id="7247348105538928879">
         <node role="parts" roleId="3ior.4903714810883783243" type="3ior.BuildTextStringPart" typeId="3ior.4903714810883702019" id="7247348105538928880">
           <property name="text" nameId="3ior.4903714810883755350" value="com.mbeddr.analyses.nusmv" />

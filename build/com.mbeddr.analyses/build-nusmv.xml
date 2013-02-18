@@ -34,6 +34,7 @@
         <name>com.mbeddr.analyses.nusmv</name>
         <version>1.0</version>
         <vendor url="http://mbeddr.com">mbeddr</vendor>
+        <depends>com.mbeddr.analyses.base</depends>
         <depends>jetbrains.mps.core</depends>
         <depends>com.mbeddr.mpsutil</depends>
         <depends>com.mbeddr.core</depends>
