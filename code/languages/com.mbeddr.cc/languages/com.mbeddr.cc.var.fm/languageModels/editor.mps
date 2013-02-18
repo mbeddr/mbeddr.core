@@ -3,11 +3,11 @@
   <persistence version="7" />
   <language namespace="18bc6592-03a6-4e29-a83a-7ff23bde13ba(jetbrains.mps.lang.editor)" />
   <devkit namespace="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
-  <import index="qqyh" modelUID="r:a74300b8-76a8-461e-befa-fc86b0ad5dd9(com.mbeddr.cc.var.fm.structure)" version="6" />
-  <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="19" />
+  <import index="qqyh" modelUID="r:a74300b8-76a8-461e-befa-fc86b0ad5dd9(com.mbeddr.cc.var.fm.structure)" version="-1" />
+  <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="17" />
   <import index="dbrf" modelUID="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#javax.swing(JDK/javax.swing@java_stub)" version="-1" />
   <import index="1t7x" modelUID="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.awt(JDK/java.awt@java_stub)" version="-1" />
-  <import index="qdv7" modelUID="r:1ff3d952-eae5-4d94-b89e-ea3060b11545(com.mbeddr.cc.var.annotations.structure)" version="6" />
+  <import index="qdv7" modelUID="r:1ff3d952-eae5-4d94-b89e-ea3060b11545(com.mbeddr.cc.var.annotations.structure)" version="-1" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="tp25" modelUID="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" version="-1" implicit="yes" />
   <import index="tpc2" modelUID="r:00000000-0000-4000-0000-011c8959029e(jetbrains.mps.lang.editor.structure)" version="32" implicit="yes" />
@@ -54,13 +54,13 @@
       <property name="virtualPackage" nameId="tpck.1193676396447" value="fm.constraints.cross" />
       <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="qqyh.8433257123783652305" resolveInfo="ConflictsConstraint" />
     </node>
-    <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="2203816361987258671">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="fm" />
-      <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="qqyh.2203816361987134490" resolveInfo="DerivedFeature" />
-    </node>
     <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="2203816361987287679">
       <property name="virtualPackage" nameId="tpck.1193676396447" value="fm" />
       <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="qqyh.2203816361987287676" resolveInfo="ExtraConstraint" />
+    </node>
+    <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="2203816361987258671">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="fm" />
+      <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="qqyh.2203816361987134490" resolveInfo="DerivedFeature" />
     </node>
     <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="8799034948080016979">
       <property name="virtualPackage" nameId="tpck.1193676396447" value="fm" />
@@ -660,20 +660,6 @@
       </node>
     </node>
   </root>
-  <root id="2203816361987258671">
-    <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="2203816361987258673">
-      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Property" typeId="tpc2.1073389658414" id="2203816361987258677">
-        <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="tpck.1169194664001" resolveInfo="name" />
-      </node>
-      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="2203816361987258678">
-        <property name="text" nameId="tpc2.1073389577007" value="&lt;--" />
-      </node>
-      <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Horizontal" typeId="tpc2.1106270549637" id="2203816361987258675" />
-      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_RefNode" typeId="tpc2.1073389882823" id="2203816361987258681">
-        <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="qqyh.2203816361987258679" />
-      </node>
-    </node>
-  </root>
   <root id="2203816361987287679">
     <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="2203816361987385059">
       <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Vertical" typeId="tpc2.1106270571710" id="2203816361987385061" />
@@ -704,6 +690,20 @@
             <property name="style" nameId="tpc2.1186403771423" value="ITALIC" />
           </node>
         </node>
+      </node>
+    </node>
+  </root>
+  <root id="2203816361987258671">
+    <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="2203816361987258673">
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Property" typeId="tpc2.1073389658414" id="2203816361987258677">
+        <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="tpck.1169194664001" resolveInfo="name" />
+      </node>
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="2203816361987258678">
+        <property name="text" nameId="tpc2.1073389577007" value="&lt;--" />
+      </node>
+      <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Horizontal" typeId="tpc2.1106270549637" id="2203816361987258675" />
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_RefNode" typeId="tpc2.1073389882823" id="2203816361987258681">
+        <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="qqyh.2203816361987258679" />
       </node>
     </node>
   </root>

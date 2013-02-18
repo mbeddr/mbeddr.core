@@ -1,7 +1,7 @@
 \section{Components}
 
 Let us now introduce components to further structure the system. We start by
-factoring the \ic{Trackpoint} data structure into a separate module and export
+factoring the \ic{Trackpoint} data structure into a parate module and export
 it to make it accessible from importing modules.
 
 
@@ -665,10 +665,75 @@ instances instances {
 
 \fordetails{Interfaces and Components}{\sect{details_components}}
 
+\subsection{Visualing Components}
 
-% \subsection{Contract Verification}
+mbeddr's diagramming capabilities are put to use in two ways in the context of
+components: component/interface dependencies and instance diagrams.
+
+\parhead{Component/Interface Dependencies} Select a component or an interface
+and execute the \emph{Visualize} action from the context menu (or press
+\ic{Ctrl-Alt-V}). \fig{vcomponents} shows the result.
+
+\begin{figure}[h]
+\begin{center} 
+  \includegraphics[width=\columnwidth]{figures/tutorial/v_components.png}
+\end{center}
+\caption{The interface/components dependency diagram shows all components
+visible from the current module, the interfaces, and the provided (solid
+lines) and required ports (dashed lines).}
+\label{vcomponents}
+\end{figure}
+
+\parhead{Instance/Wiring Diagrams} You can also select an instance configuration
+and visualize it. You'll get a diagram that shows component instances and their
+connections (\fig{vinstances}).
+
+\begin{figure}[h]
+\begin{center} 
+  \includegraphics[width=0.4\columnwidth]{figures/tutorial/v_instances.png}
+\end{center}
+\caption{This diagram shows component instances and their connectors. The label
+in the instance boxes contain the instance name and the component name (after
+the colon). The edges represent connectors. The label shows the required port
+(before the arrow, the provided port name (after the arrow), and the name of
+the interface used by the two ports (on the new line).}
+\label{vinstances}
+\end{figure}
 
 
+
+\subsection{Contract Verification}
+
+mbeddr comes with support for verifying contracts of components statically. This
+verification is based on C-level dataflow analysis with CBMC. Let's set up our
+tutorial to use verification.
+
+First, add the \ic{com.mbeddr.analyses.componentcontracts} devkit to the model
+that contains the components code. In the model create a new instance of
+\ic{AnalysisConfiguration} (from the \ic{c.m.analyses.base} language). This
+configuration controls how the static analyses are executed. In the
+\ic{Analyses} section, add a \ic{component analysis}. Configure it in the
+following way:
+
+\begin{lstlisting}
+component analysis:                  
+component analysis:                                      
+  verify component: InMemoryStorage from entry point main
+  unwind loops: 2; fail if too low: false                
+\end{lstlisting}
+
+Let us look at the four parameters you have to set here: The first one
+determines which component we want to analyze for contract violations. The
+second determines from where the program is "executed". The entry point should
+be selected to be "close" to the to-be-verified component. If you verify the
+whole system, then, at least for big systems, this will take long.
+The third item determines how often a loop is executed. You should start with
+low numbers to keep verification times low. Finally, the fourth parameter
+determines if the verification should fail in case it cannot be proven that the
+\ic{unwinding loops} number is sufficient.
+
+You can now run the verification by selecting the Analysis Configution itself
+and run 
 
 
 

@@ -2,8 +2,16 @@
 <solution name="com.mbeddr.core.modules.runtime" uuid="fda566a8-0df7-442b-b355-ba0f7b3d1cbd" pluginKind="PLUGIN_EDITOR" compileInMPS="true">
   <models>
     <modelRoot path="${solution_descriptor}/" />
+    <modelRoot path="${solution_descriptor}/lib/commons-io-2.4.jar">
+      <manager moduleId="f3061a53-9226-4cc5-a443-f952ceaf5816" className="jetbrains.mps.baseLanguage.stubs.JavaStubs" />
+    </modelRoot>
     <modelRoot path="${solution_descriptor}/models" />
   </models>
+  <stubModelEntries>
+    <stubModelEntry path="${solution_descriptor}/lib/commons-io-2.4.jar">
+      <manager moduleId="f3061a53-9226-4cc5-a443-f952ceaf5816" className="jetbrains.mps.baseLanguage.stubs.JavaStubs" />
+    </stubModelEntry>
+  </stubModelEntries>
   <sourcePath />
   <dependencies>
     <dependency reexport="false">85d9f97b-1654-4692-b61c-fcc40db03653(Eclipse.Debugger)</dependency>
@@ -16,13 +24,10 @@
     <dependency reexport="false">a9d69647-0840-491e-bf39-2eb0805d2011(com.mbeddr.core.statements)</dependency>
     <dependency reexport="false">efda956e-491e-4f00-ba14-36af2f213ecf(com.mbeddr.core.udt)</dependency>
     <dependency reexport="false">2693fc71-9b0e-4b05-ab13-f57227d675f2(com.mbeddr.core.util)</dependency>
-    <dependency reexport="false">ac3c3af3-071f-47d4-8ed9-dd9e752fdfdf(com.mbeddr.mpsutil.graphview)</dependency>
   </dependencies>
   <usedLanguages>
     <usedLanguage>fd614f42-6c14-432b-8cad-9da2b5a2b43e(com.mbeddr.mpsutil.bldoc)</usedLanguage>
     <usedLanguage>63e0e566-5131-447e-90e3-12ea330e1a00(com.mbeddr.mpsutil.blutil)</usedLanguage>
-    <usedLanguage>17e4a96f-f2a0-4ccc-badd-b73f1fe7a7a6(com.mbeddr.mpsutil.graph)</usedLanguage>
-    <usedLanguage>5550bbcf-81f8-460f-b7db-a7a6efc1e286(com.mbeddr.mpsutil.langdepdiag)</usedLanguage>
     <usedLanguage>f2801650-65d5-424e-bb1b-463a8781b786(jetbrains.mps.baseLanguage.javadoc)</usedLanguage>
     <usedLanguage>63650c59-16c8-498a-99c8-005c7ee9515d(jetbrains.mps.lang.access)</usedLanguage>
     <usedLanguage>3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1(jetbrains.mps.lang.constraints)</usedLanguage>

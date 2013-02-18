@@ -18,6 +18,7 @@
   <exported-language name="f93d1dbe-bfd1-42dd-932a-f375fa6f5373(com.mbeddr.core.make)" />
   <exported-language name="223dd778-c44f-4ef3-9535-7aa7d12244a6(com.mbeddr.core.debug)" />
   <exported-solutions>
+    <exported-solution>c0488c1e-322f-4f38-92d4-5520a7ce96c1(com.mbeddr.plantuml.pluginSolution)</exported-solution>
     <exported-solution>fda566a8-0df7-442b-b355-ba0f7b3d1cbd(com.mbeddr.core.modules.runtime)</exported-solution>
   </exported-solutions>
 </dev-kit>

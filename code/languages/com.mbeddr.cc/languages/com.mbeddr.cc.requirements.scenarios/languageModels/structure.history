@@ -24,5 +24,11 @@
     </dependencies>
     <rename id="4l29.8119642625901719133" type="PROPERTY" from="text" to="message" />
   </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="4l29" modelUID="r:9f885776-26d3-48f5-a714-b3a8fa61c18a(com.mbeddr.cc.requirements.scenarios.structure)" version="3" />
+    </dependencies>
+    <rename id="4l29.552710421071336559" type="CONCEPT" from="Heading" to="Pause" />
+  </StructureModification>
 </history>
 

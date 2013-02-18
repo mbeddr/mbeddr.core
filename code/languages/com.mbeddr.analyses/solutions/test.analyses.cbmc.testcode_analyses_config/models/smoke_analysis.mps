@@ -9,12 +9,12 @@
   <import index="51wr" modelUID="r:b31f1c3c-99aa-4f1e-a329-cba27efb1a6b(com.mbeddr.core.buildconfig.structure)" version="1" implicit="yes" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="q46j" modelUID="r:de290943-4e17-4d44-ae22-c863a13543cf(com.mbeddr.analyses.base.structure)" version="1" implicit="yes" />
-  <import index="q5q6" modelUID="r:5d65e582-fa41-4818-b31c-b2aee1644b4a(com.mbeddr.analyses.cbmc.structure)" version="4" implicit="yes" />
+  <import index="q5q6" modelUID="r:5d65e582-fa41-4818-b31c-b2aee1644b4a(com.mbeddr.analyses.cbmc.structure)" version="8" implicit="yes" />
   <import index="p7vm" modelUID="r:28fa862e-f94d-4c39-bdf7-a4bdbc773888(com.mbeddr.ext.components.gen_nomw.structure)" version="0" implicit="yes" />
   <import index="v7ag" modelUID="r:9596407c-f27a-49d3-abde-3a66293c5b61(com.mbeddr.ext.components.structure)" version="16" implicit="yes" />
-  <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="5" implicit="yes" />
-  <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="17" implicit="yes" />
-  <import index="k146" modelUID="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" version="2" implicit="yes" />
+  <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="6" implicit="yes" />
+  <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="20" implicit="yes" />
+  <import index="k146" modelUID="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" version="3" implicit="yes" />
   <roots>
     <node type="51wr.BuildConfiguration" typeId="51wr.7717755763392524104" id="6472990431939782584" />
     <node type="q46j.AnalysisConfiguration" typeId="q46j.6472990431939580591" id="6472990431939785837" />
@@ -25,6 +25,15 @@
       <property name="name" nameId="tpck.1169194664001" value="lib" />
       <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="6472990431939782765">
         <link role="module" roleId="51wr.7717755763392524108" targetNodeId="4ysy.6472990431939782585" resolveInfo="simple" />
+      </node>
+      <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="6598859022322999166">
+        <link role="module" roleId="51wr.7717755763392524108" targetNodeId="4ysy.6472990431940257410" resolveInfo="functions" />
+      </node>
+      <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="6598859022322999167">
+        <link role="module" roleId="51wr.7717755763392524108" targetNodeId="4ysy.6472990431940257494" resolveInfo="assert" />
+      </node>
+      <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="6598859022323049568">
+        <link role="module" roleId="51wr.7717755763392524108" targetNodeId="4ysy.6598859022322999977" resolveInfo="decTables" />
       </node>
     </node>
     <node role="target" roleId="51wr.5323740605968447026" type="51wr.DesktopPlatform" typeId="51wr.5323740605968447022" id="6472990431940201324">
@@ -48,6 +57,17 @@
       <property name="unwindingDepth" nameId="q5q6.6472990431939799909" value="25" />
       <link role="analyzedComponent" roleId="q5q6.6472990431939799913" targetNodeId="4ysy.6472990431939782665" resolveInfo="ReaderImpls" />
       <link role="entryPoint" roleId="q5q6.6472990431939799908" targetNodeId="4ysy.6472990431939782743" resolveInfo="client" />
+    </node>
+    <node role="analyses" roleId="q46j.6472990431939692464" type="q5q6.FunctionsCBMCAnalysis" typeId="q5q6.6472990431940227507" id="6598859022322998583">
+      <property name="unwindingAssertions" nameId="q5q6.6472990431939799910" value="false" />
+      <property name="unwindingDepth" nameId="q5q6.6472990431939799909" value="25" />
+      <link role="entryPoint" roleId="q5q6.6472990431939799908" targetNodeId="4ysy.6472990431940257468" resolveInfo="assertedCode" />
+    </node>
+    <node role="analyses" roleId="q46j.6472990431939692464" type="q5q6.DecTabCBMCAnalysis" typeId="q5q6.5070503009225618710" id="6598859022323000063">
+      <property name="unwindingAssertions" nameId="q5q6.6472990431939799910" value="false" />
+      <property name="unwindingDepth" nameId="q5q6.6472990431939799909" value="25" />
+      <link role="decTabContainer" roleId="q5q6.5070503009225669554" targetNodeId="4ysy.6598859022322999982" resolveInfo="funWithDT" />
+      <link role="entryPoint" roleId="q5q6.6472990431939799908" targetNodeId="4ysy.6598859022322999982" resolveInfo="funWithDT" />
     </node>
   </root>
   <root id="6472990431939782586">

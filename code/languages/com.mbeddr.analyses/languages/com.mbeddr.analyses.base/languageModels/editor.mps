@@ -16,6 +16,9 @@
       <property name="virtualPackage" nameId="tpck.1193676396447" value="configuration.base" />
       <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="q46j.6472990431939580591" resolveInfo="AnalysisConfiguration" />
     </node>
+    <node type="tpc2.StyleSheet" typeId="tpc2.1186402211651" id="1634970928500780280">
+      <property name="name" nameId="tpck.1169194664001" value="Verification" />
+    </node>
   </roots>
   <root id="4961438297707779421">
     <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="4961438297707779425">
@@ -69,6 +72,28 @@
         </node>
       </node>
       <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Indent" typeId="tpc2.1237303669825" id="8257817273846714613" />
+    </node>
+  </root>
+  <root id="1634970928500780280">
+    <node role="styleClass" roleId="tpc2.1186402402630" type="tpc2.StyleSheetClass" typeId="tpc2.1186402373407" id="1634970928500780281">
+      <property name="name" nameId="tpck.1169194664001" value="verification" />
+      <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.ForegroundColorStyleClassItem" typeId="tpc2.1186404549998" id="1634970928500780284">
+        <property name="color" nameId="tpc2.1186403713874" value="orange" />
+        <node role="query" roleId="tpc2.1186403803051" type="tpc2.RGBColor" typeId="tpc2.1225456267680" id="1634970928500813326">
+          <property name="value" nameId="tpc2.1225456424731" value="E0771B" />
+        </node>
+      </node>
+      <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.FontStyleStyleClassItem" typeId="tpc2.1186403751766" id="1634970928500813328">
+        <property name="style" nameId="tpc2.1186403771423" value="BOLD" />
+      </node>
+      <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.DrawBracketsStyleClassItem" typeId="tpc2.1219226236603" id="1634970928500813368">
+        <property name="flag" nameId="tpc2.1186414551515" value="true" />
+      </node>
+      <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.BracketColorStyleClassItem" typeId="tpc2.1186413799158" id="1634970928500813370">
+        <node role="query" roleId="tpc2.1186403803051" type="tpc2.RGBColor" typeId="tpc2.1225456267680" id="1634970928500813371">
+          <property name="value" nameId="tpc2.1225456424731" value="E0771B" />
+        </node>
+      </node>
     </node>
   </root>
 </model>

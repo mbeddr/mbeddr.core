@@ -2,10 +2,10 @@
 <model modelUID="r:50ade53b-ed6e-481d-8b4b-ee52df9b4152(com.mbeddr.analyses.yices.structure)" version="9">
   <persistence version="7" />
   <language namespace="c72da2b9-7cce-4447-8389-f407dc1158b7(jetbrains.mps.lang.structure)" />
-  <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="5" />
+  <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="6" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="tpce" modelUID="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" version="0" implicit="yes" />
-  <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="17" implicit="yes" />
+  <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="20" implicit="yes" />
   <import index="1eu" modelUID="r:50ade53b-ed6e-481d-8b4b-ee52df9b4152(com.mbeddr.analyses.yices.structure)" version="9" implicit="yes" />
   <roots>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="5228347731919190605">
@@ -181,6 +181,10 @@
       <property name="name" nameId="tpck.1169194664001" value="RecordMemberRef" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="mj1l.8860443239512128050" resolveInfo="Expression" />
     </node>
+    <node type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="5070503009225538578">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="commands" />
+      <property name="name" nameId="tpck.1169194664001" value="IAssertLike" />
+    </node>
   </roots>
   <root id="5228347731919190605">
     <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.BooleanConceptProperty" typeId="tpce.1105725574259" id="5228347731919190606">
@@ -200,6 +204,9 @@
     <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="3504960153615494367">
       <property name="name" nameId="tpck.1169194664001" value="exprInPrefixForm" />
       <link role="dataType" roleId="tpce.1082985295845" targetNodeId="tpck.1082983041843" resolveInfo="string" />
+    </node>
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="5070503009225538579">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="5070503009225538578" resolveInfo="IAssertLike" />
     </node>
   </root>
   <root id="5228347731919190621">
@@ -326,6 +333,9 @@
     <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="4974736285582265660">
       <property name="name" nameId="tpck.1169194664001" value="exprInPrefixForm" />
       <link role="dataType" roleId="tpce.1082985295845" targetNodeId="tpck.1082983041843" resolveInfo="string" />
+    </node>
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="5070503009225538580">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="5070503009225538578" resolveInfo="IAssertLike" />
     </node>
   </root>
   <root id="7315270766388763586">
@@ -466,5 +476,6 @@
       <link role="target" roleId="tpce.1071599976176" targetNodeId="4529108844407133111" resolveInfo="ConstantDeclaration" />
     </node>
   </root>
+  <root id="5070503009225538578" />
 </model>
 

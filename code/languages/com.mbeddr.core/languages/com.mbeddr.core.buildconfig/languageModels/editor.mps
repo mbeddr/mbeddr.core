@@ -14,7 +14,7 @@
   <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="6" implicit="yes" />
   <import index="tp25" modelUID="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" version="-1" implicit="yes" />
   <import index="tpee" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="3" implicit="yes" />
-  <import index="vrqd" modelUID="r:53e59391-150a-45ff-930e-2b4fdafb0904(com.mbeddr.core.expressions.editor)" version="1" implicit="yes" />
+  <import index="vrqd" modelUID="r:53e59391-150a-45ff-930e-2b4fdafb0904(com.mbeddr.core.expressions.editor)" version="2" implicit="yes" />
   <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="3" implicit="yes" />
   <roots>
     <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="7717755763392524110">
@@ -50,9 +50,6 @@
     </node>
     <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="440773076688628187">
       <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="51wr.440773076688628186" resolveInfo="NothingPlatform" />
-    </node>
-    <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="7156635943885245831">
-      <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="51wr.7156635943885245828" resolveInfo="DependencyGraphConfigItem" />
     </node>
   </roots>
   <root id="7717755763392524110">
@@ -584,11 +581,6 @@
   <root id="440773076688628187">
     <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="440773076688628191">
       <property name="text" nameId="tpc2.1073389577007" value="nothing (no build system available)" />
-    </node>
-  </root>
-  <root id="7156635943885245831">
-    <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="7156635943885245833">
-      <property name="text" nameId="tpc2.1073389577007" value="graph: module dependencies" />
     </node>
   </root>
 </model>

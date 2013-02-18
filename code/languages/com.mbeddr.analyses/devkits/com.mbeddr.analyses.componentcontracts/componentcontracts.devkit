@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dev-kit name="com.mbeddr.analyses.componentcontracts" uuid="f5226c26-1a3d-4ca7-8823-0d9ca197c4ac">
+  <exported-language name="5d09074f-babf-4f2b-b78b-e9929af0f3be(com.mbeddr.analyses.base)" />
+  <exported-language name="42270baf-e92c-4c32-b263-d617b3fce239(com.mbeddr.analyses.cbmc)" />
+</dev-kit>
+

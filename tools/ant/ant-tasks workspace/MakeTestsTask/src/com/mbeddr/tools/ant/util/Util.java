@@ -33,6 +33,7 @@ public class Util {
 
 	public Process createProcess(File workingDirectory,
 			ProcessBuilder processBuilder) throws IOException {
+		System.out.println("working in: " + workingDirectory);
 		processBuilder.directory(workingDirectory);
 		return processBuilder.start();
 	}

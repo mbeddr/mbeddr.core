@@ -7,8 +7,8 @@
   <import index="qqyh" modelUID="r:a74300b8-76a8-461e-befa-fc86b0ad5dd9(com.mbeddr.cc.var.fm.structure)" version="3" implicit="yes" />
   <import index="qdv7" modelUID="r:1ff3d952-eae5-4d94-b89e-ea3060b11545(com.mbeddr.cc.var.annotations.structure)" version="5" implicit="yes" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
-  <import index="k146" modelUID="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" version="2" implicit="yes" />
-  <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="17" implicit="yes" />
+  <import index="k146" modelUID="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" version="3" implicit="yes" />
+  <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="20" implicit="yes" />
   <import index="yq40" modelUID="r:152b3fc0-83a1-4bab-a8cd-565eb8483785(com.mbeddr.core.pointers.structure)" version="3" implicit="yes" />
   <import index="clbe" modelUID="r:61d840b4-12c1-49ea-b142-b2a1550a9b15(com.mbeddr.core.udt.structure)" version="7" implicit="yes" />
   <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="5" implicit="yes" />
@@ -92,7 +92,7 @@
         <property name="name" nameId="tpck.1169194664001" value="finishingMeasurement" />
         <property name="text" nameId="k146.2688792604367903089" value="exitingMainFunction" />
       </node>
-      <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="qdv7.PresenceCondition" typeId="qdv7.661141253149231475" id="6617704999132174959">
+      <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="qdv7.PresenceCondidtion" typeId="qdv7.661141253149231475" id="6617704999132174959">
         <node role="condition" roleId="qdv7.661141253149231543" type="qdv7.FeatureCondition" typeId="qdv7.2613872510229282925" id="6617704999132174960">
           <node role="expr" roleId="qdv7.2613872510229282926" type="qdv7.FeatureRef" typeId="qdv7.661141253149262053" id="3017602783212238114">
             <link role="feature" roleId="qdv7.661141253149262054" targetNodeId="3017602783212238062" resolveInfo="logging" />
@@ -112,7 +112,7 @@
             <link role="table" roleId="k146.2688792604367964824" targetNodeId="6617704999132174956" resolveInfo="messages" />
             <link role="msg" roleId="k146.2688792604367964825" targetNodeId="6617704999132174957" resolveInfo="startingMeasurement" />
           </node>
-          <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="qdv7.PresenceCondition" typeId="qdv7.661141253149231475" id="3017602783212238128">
+          <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="qdv7.PresenceCondidtion" typeId="qdv7.661141253149231475" id="3017602783212238128">
             <node role="condition" roleId="qdv7.661141253149231543" type="qdv7.FeatureCondition" typeId="qdv7.2613872510229282925" id="3017602783212238129">
               <node role="expr" roleId="qdv7.2613872510229282926" type="qdv7.FeatureRef" typeId="qdv7.661141253149262053" id="3017602783212238130">
                 <link role="feature" roleId="qdv7.661141253149262054" targetNodeId="3017602783212238062" resolveInfo="logging" />
@@ -141,7 +141,7 @@
               </node>
             </node>
           </node>
-          <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="qdv7.PresenceCondition" typeId="qdv7.661141253149231475" id="3017602783212238232">
+          <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="qdv7.PresenceCondidtion" typeId="qdv7.661141253149231475" id="3017602783212238232">
             <node role="condition" roleId="qdv7.661141253149231543" type="qdv7.FeatureCondition" typeId="qdv7.2613872510229282925" id="3017602783212238233">
               <node role="expr" roleId="qdv7.2613872510229282926" type="mj1l.NotExpression" typeId="mj1l.3830958861296781575" id="3017602783212238234">
                 <node role="expression" roleId="mj1l.7254843406768839760" type="qdv7.FeatureRef" typeId="qdv7.661141253149262053" id="3017602783212238236">
@@ -163,7 +163,7 @@
               </node>
             </node>
           </node>
-          <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="qdv7.PresenceCondition" typeId="qdv7.661141253149231475" id="3017602783212238237">
+          <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="qdv7.PresenceCondidtion" typeId="qdv7.661141253149231475" id="3017602783212238237">
             <node role="condition" roleId="qdv7.661141253149231543" type="qdv7.FeatureCondition" typeId="qdv7.2613872510229282925" id="3017602783212238238">
               <node role="expr" roleId="qdv7.2613872510229282926" type="qdv7.FeatureRef" typeId="qdv7.661141253149262053" id="3017602783212238239">
                 <link role="feature" roleId="qdv7.661141253149262054" targetNodeId="3017602783212238064" resolveInfo="highRes" />
@@ -177,7 +177,7 @@
             <link role="table" roleId="k146.2688792604367964824" targetNodeId="6617704999132174956" resolveInfo="messages" />
             <link role="msg" roleId="k146.2688792604367964825" targetNodeId="6617704999132174958" resolveInfo="finishingMeasurement" />
           </node>
-          <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="qdv7.PresenceCondition" typeId="qdv7.661141253149231475" id="3017602783212238259">
+          <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="qdv7.PresenceCondidtion" typeId="qdv7.661141253149231475" id="3017602783212238259">
             <node role="condition" roleId="qdv7.661141253149231543" type="qdv7.FeatureCondition" typeId="qdv7.2613872510229282925" id="3017602783212238260">
               <node role="expr" roleId="qdv7.2613872510229282926" type="qdv7.FeatureRef" typeId="qdv7.661141253149262053" id="3017602783212238261">
                 <link role="feature" roleId="qdv7.661141253149262054" targetNodeId="3017602783212238062" resolveInfo="logging" />
