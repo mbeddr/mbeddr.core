@@ -810,6 +810,10 @@
       <property name="value" nameId="tpce.1105725733873" value="use case" />
       <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473891462" resolveInfo="alias" />
     </node>
+    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="6514529288614072908">
+      <property name="value" nameId="tpce.1105725733873" value="a use case for the system" />
+      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473914776" resolveInfo="shortDescription" />
+    </node>
     <node role="conceptLink" roleId="tpce.1105736949336" type="tpce.ReferenceConceptLink" typeId="tpce.1105736778597" id="6514529288613812200">
       <link role="conceptLinkDeclaration" roleId="tpce.1105736734721" targetNodeId="75wo.3402431285977742871" resolveInfo="requiredDataKind" />
       <link role="target" roleId="tpce.1105736807942" targetNodeId="6514529288613812195" resolveInfo="UseCase" />
