@@ -41,7 +41,7 @@
           <value>
             <Library>
               <option name="name" value="mbeddr.core" />
-              <option name="path" value="${mps_home}/bin/${mbeddr.github.core.home}/code/languages/com.mbeddr.core" />
+              <option name="path" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.core" />
             </Library>
           </value>
         </entry>
@@ -49,7 +49,7 @@
           <value>
             <Library>
               <option name="name" value="mbeddr.debugger" />
-              <option name="path" value="${mps_home}/bin/${mbeddr.github.core.home}/code/languages/com.mbeddr.debugger" />
+              <option name="path" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.debugger" />
             </Library>
           </value>
         </entry>
@@ -57,7 +57,7 @@
           <value>
             <Library>
               <option name="name" value="mps.util" />
-              <option name="path" value="${mps_home}/bin/${mbeddr.github.core.home}/code/languages/com.mbeddr.mpsutil" />
+              <option name="path" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.mpsutil" />
             </Library>
           </value>
         </entry>
