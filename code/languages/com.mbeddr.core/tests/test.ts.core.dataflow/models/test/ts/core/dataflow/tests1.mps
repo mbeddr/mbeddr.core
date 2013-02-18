@@ -3758,6 +3758,7 @@
           <property name="name" nameId="tpck.1169194664001" value="strucktUunionTest1" />
           <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="3073566081777350315">
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="5579776927402819961" />
+            <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="720334501858206929" />
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="5579776927402819963">
               <property name="name" nameId="tpck.1169194664001" value="nested3" />
               <node role="type" roleId="mj1l.318113533128716676" type="clbe.StructType" typeId="clbe.6394819151180597816" id="5579776927402819964">
