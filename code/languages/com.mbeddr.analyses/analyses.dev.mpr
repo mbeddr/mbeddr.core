@@ -16,6 +16,7 @@
   <component name="Encoding" useUTFGuessing="true" native2AsciiForPropertiesFiles="false" />
   <component name="MPSProject">
     <projectModules>
+      <modulePath path="${project}/devkits/com.mbeddr.analyses.componentcontracts/componentcontracts.devkit" folder="cbmc" />
       <modulePath path="${project}/devkits/com.mbeddr.analyses.dectab/dectab.devkit" folder="yices" />
       <modulePath path="${project}/devkits/com.mbeddr.analyses.fm/fm.devkit" folder="yices" />
       <modulePath path="${project}/devkits/com.mbeddr.analyses.smtlangs.yices/yices.devkit" folder="" />

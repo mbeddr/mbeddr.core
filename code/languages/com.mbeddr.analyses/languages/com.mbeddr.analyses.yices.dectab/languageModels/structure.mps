@@ -35,6 +35,9 @@
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="4961438297707637943">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="1eu.4529108844407142381" resolveInfo="YicesLine" />
     </node>
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="5070503009225538582">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="1eu.5070503009225538578" resolveInfo="IAssertLike" />
+    </node>
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="4961438297707637944">
       <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
       <property name="role" nameId="tpce.1071599776563" value="childExpressions" />
