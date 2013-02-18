@@ -5,6 +5,7 @@
   <import index="pszp" modelUID="r:5097c9c6-4a5a-40ee-bd76-4904ba8fa229(com.mbeddr.analyses.nusmv.statemachine.structure)" version="22" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="tpc2" modelUID="r:00000000-0000-4000-0000-011c8959029e(jetbrains.mps.lang.editor.structure)" version="32" implicit="yes" />
+  <import index="srwo" modelUID="r:37f0c2b5-25ac-4a2d-ad51-ef33c790d7e3(com.mbeddr.analyses.base.editor)" version="0" implicit="yes" />
   <roots>
     <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="1579201292659037806">
       <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="pszp.1579201292659037803" resolveInfo="NuSMVStatemachineContainer" />
@@ -110,6 +111,7 @@
       <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Vertical" typeId="tpc2.1106270571710" id="1579201292659177185" />
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="1579201292659416059">
         <property name="text" nameId="tpc2.1073389577007" value="verifiable" />
+        <link role="styleClass" roleId="tpc2.1186406756722" targetNodeId="srwo.1634970928500780281" resolveInfo="verification" />
       </node>
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_AttributedNodeCell" typeId="tpc2.1149850725784" id="1579201292659177189" />
     </node>
