@@ -71,9 +71,10 @@ set PATH=C:\ide\Cygwin\bin;%PATH%
 
 \section{Graphviz}
 
-MPS supports visualization of models via graphviz, directly embedded in MPS. To
-use it, you have to install graphviz from \ic{http://graphviz.org}. We use
-version 2.28. After the installation, you have to put the \ic{bin} directory of
+MPS supports visualization of models via PlantUML
+(\ic{http://plantuml.sourceforge.net}), directly embedded in MPS.
+To use it, you have to install graphviz from \ic{http://graphviz.org}. We use
+version 2.30. After the installation, you have to put the \ic{bin} directory of
 graphviz into the path. Either globally, or by modifying the MPS startup script
 in the same way as above:
 
@@ -82,12 +83,6 @@ in the same way as above:
 ::rem adapt the following to your graphviz bin path
 set PATH=C:\ide\graphviz2.28\bin;%PATH%
 \end{lstlisting}
-
-To make the graphviz viewer work, you also have to install a custom plugin into
-MPS. To do so, please move (not just copy!) the \ic{zgrviewer} folder from the
-\ic{tools} directory of mbeddr into the \ic{plugins} directory of MPS (note that there
-\ic{plugin} and \ic{plugins} directories in MPS; make sure you copy it into the
-\ic{plugins} directory).
 
 
 \section{mbeddr}

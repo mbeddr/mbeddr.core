@@ -446,6 +446,71 @@ state airborne {
 }
 \end{lstlisting}
 
+\subsection{Hierarchical State Machines}
+
+State machines can also be hierarchical. This means that a state may contain
+essentially a sub-state machine. The following piece of code shows an example.
+Here are the semantics:
+
+\begin{itemize}
+  \item When a transition from outside a composite state targets
+a composite state, the initial state in that composite state is activated.
+  \item A composite state can have transitions. These act as if they were
+  defined for each of the states of the composite state.
+  \item If a transition from an inner state A crosses a composite
+  state-boundary (B), then the actions happen in the following order: exit
+  actions of A, exit actions of B, transition action, and entry action of the
+  transition's target.
+\end{itemize}
+\vspace{5mm}
+ 
+\begin{lstlisting}[language=mbeddr, morekeywords={composite}]
+statemachine HierarchicalFlightAnalyzer initial = beforeFlight { 
+  in next(Trackpoint* tp) 
+  in reset() 
+  out crashNotification() => raiseAlarm 
+  readable var int16 points = 0 
+  state beforeFlight { 
+    on next [tp->alt > 0 m] -> airborne 
+    exit { points += TAKEOFF; } 
+  }  
+  composite state airborne initial = flying { 
+    on reset [ ] -> beforeFlight { points = 0; } 
+    on next [tp->alt == 0 m && tp->speed == 0 mps] -> crashed 
+    state flying (airborne.flying) { 
+      on next [tp->alt == 0 m && tp->speed > 0 mps] -> landing 
+      on next [tp->speed > 200 mps] -> flying { points += VERY_HIGH_SPEED; } 
+      on next [tp->speed > 100 mps] -> flying { points += HIGH_SPEED; } 
+    } 
+    state landing (airborne.landing) { 
+      on next [tp->speed == 0 mps] -> landed 
+      on next [ ] -> landing { points--; } 
+    } 
+    state landed (airborne.landed) { 
+      entry { points += LANDING; } 
+    } 
+  }  
+  state crashed { 
+    entry { send crashNotification(); } 
+  }  
+}
+\end{lstlisting}
+
+
+
+\subsection{State Machine Diagrams}
+
+State Machines can also be rendered as a diagram; \fig{vsm} shows an example. 
+
+\begin{figure}[b]
+\begin{center} 
+  \includegraphics[width=0.3\columnwidth]{figures/tutorial/v_sm.png}
+\end{center}
+\caption{A visualization of a state machine in mbeddr. You can click on the
+states and transitions to select the respective element in the editor.}
+\label{vsm}
+\end{figure}
+
 
 
 
