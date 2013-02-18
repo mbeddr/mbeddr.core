@@ -11,6 +11,7 @@
   <devkit namespace="b31efd26-898e-4b0e-b5dc-2d7ced06e7f7(com.mbeddr.cc.variability)" />
   <devkit namespace="9e5aaffe-404b-44dd-9dc5-daf7ffdbd380(com.mbeddr.analyses.dectab)" />
   <devkit namespace="2bdeee47-6092-4bbf-b31d-6be5dbbba49d(com.mbeddr.analyses.statemachine)" />
+  <devkit namespace="f5226c26-1a3d-4ca7-8823-0d9ca197c4ac(com.mbeddr.analyses.componentcontracts)" />
   <import index="iwll" modelUID="r:79ed4c17-66fc-4c5a-bff7-46990b4e0c5d(mbeddr.tutorial.main.req)" version="-1" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="k146" modelUID="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" version="3" implicit="yes" />
@@ -39,6 +40,8 @@
   <import index="pszp" modelUID="r:5097c9c6-4a5a-40ee-bd76-4904ba8fa229(com.mbeddr.analyses.nusmv.statemachine.structure)" version="22" implicit="yes" />
   <import index="v0r9" modelUID="r:277b15fc-1383-4213-8385-5a16481fa36c(com.mbeddr.ext.components.test.structure)" version="4" implicit="yes" />
   <import index="3vkx" modelUID="r:1c91fcc2-cf14-47f5-a4d4-3b424626f0d4(com.mbeddr.cc.requirements.c.structure)" version="4" implicit="yes" />
+  <import index="q5q6" modelUID="r:5d65e582-fa41-4818-b31c-b2aee1644b4a(com.mbeddr.analyses.cbmc.structure)" version="8" implicit="yes" />
+  <import index="q46j" modelUID="r:de290943-4e17-4d44-ae22-c863a13543cf(com.mbeddr.analyses.base.structure)" version="1" implicit="yes" />
   <roots>
     <node type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="9141254329931944222">
       <property name="name" nameId="tpck.1169194664001" value="Main" />
@@ -100,6 +103,9 @@
     <node type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="6700886800242034956">
       <property name="name" nameId="tpck.1169194664001" value="ComponentsSRI" />
       <property name="virtualPackage" nameId="tpck.1193676396447" value="examples" />
+    </node>
+    <node type="q46j.AnalysisConfiguration" typeId="q46j.6472990431939580591" id="6310088739592905027">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="config" />
     </node>
   </roots>
   <root id="9141254329931944222">
@@ -9638,6 +9644,14 @@
     </node>
     <node role="imports" roleId="x27k.1317894735999304826" type="x27k.ModuleImport" typeId="x27k.1317894735999299713" id="6700886800242034961">
       <link role="module" roleId="x27k.1317894735999299714" targetNodeId="1731059994647587993" resolveInfo="DataStructures" />
+    </node>
+  </root>
+  <root id="6310088739592905027">
+    <node role="analyses" roleId="q46j.6472990431939692464" type="q5q6.ComponentsCBMCAnalysis" typeId="q5q6.6472990431939799912" id="6310088739592905029">
+      <property name="unwindingAssertions" nameId="q5q6.6472990431939799910" value="false" />
+      <property name="unwindingDepth" nameId="q5q6.6472990431939799909" value="10" />
+      <link role="analyzedComponent" roleId="q5q6.6472990431939799913" targetNodeId="1731059994647814153" resolveInfo="InMemoryStorage" />
+      <link role="entryPoint" roleId="q5q6.6472990431939799908" targetNodeId="9141254329931944223" resolveInfo="main" />
     </node>
   </root>
 </model>

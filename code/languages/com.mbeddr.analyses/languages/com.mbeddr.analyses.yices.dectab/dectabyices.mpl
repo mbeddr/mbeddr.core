@@ -90,6 +90,7 @@
   </usedDevKits>
   <extendedLanguages>
     <extendedLanguage>797d0abe-30a5-4698-a9cf-31703733bdc9(com.mbeddr.analyses.yices)</extendedLanguage>
+    <extendedLanguage>5d09074f-babf-4f2b-b78b-e9929af0f3be(com.mbeddr.analyses.base)</extendedLanguage>
   </extendedLanguages>
 </language>
 
