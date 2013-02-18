@@ -359,7 +359,7 @@
   </root>
   <root id="5744000828452822758">
     <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="5744000828452822759">
-      <property name="value" nameId="tpce.1105725733873" value="component" />
+      <property name="value" nameId="tpce.1105725733873" value="participant" />
       <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473891462" resolveInfo="alias" />
     </node>
     <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="8119642625901690649">
