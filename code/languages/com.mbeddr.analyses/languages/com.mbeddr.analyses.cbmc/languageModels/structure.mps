@@ -124,7 +124,7 @@
   </root>
   <root id="6472990431939799912">
     <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="4387602950358812545">
-      <property name="value" nameId="tpce.1105725733873" value="components_analysis_config" />
+      <property name="value" nameId="tpce.1105725733873" value="components analysis" />
       <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473891462" resolveInfo="alias" />
     </node>
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="6472990431939799913">

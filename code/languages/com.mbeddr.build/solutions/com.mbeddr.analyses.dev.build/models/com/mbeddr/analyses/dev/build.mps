@@ -1049,6 +1049,29 @@
           </node>
         </node>
       </node>
+      <node role="modules" roleId="kdzh.1500819558095907806" type="kdzh.BuildMps_DevKit" typeId="kdzh.322010710375794190" id="6310088739592895075">
+        <property name="compact" nameId="kdzh.8369506495128725901" value="true" />
+        <property name="uuid" nameId="kdzh.322010710375892619" value="f5226c26-1a3d-4ca7-8823-0d9ca197c4ac" />
+        <property name="name" nameId="tpck.1169194664001" value="com.mbeddr.analyses.componentcontracts" />
+        <node role="path" roleId="kdzh.322010710375956261" type="3ior.BuildSourceMacroRelativePath" typeId="3ior.7389400916848153117" id="6310088739592895079">
+          <link role="macro" roleId="3ior.7389400916848153130" targetNodeId="7247348105538928986" resolveInfo="mbeddr.analyses" />
+          <node role="compositePart" roleId="3ior.7321017245477039051" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="6310088739592895080">
+            <property name="head" nameId="3ior.8618885170173601779" value="devkits" />
+            <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="6310088739592895081">
+              <property name="head" nameId="3ior.8618885170173601779" value="com.mbeddr.analyses.componentcontracts" />
+              <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="6310088739592895082">
+                <property name="head" nameId="3ior.8618885170173601779" value="componentcontracts.devkit" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node role="exports" roleId="kdzh.322010710375832962" type="kdzh.BuildMps_DevKitExportLanguage" typeId="kdzh.322010710375832938" id="6310088739592895083">
+          <link role="language" roleId="kdzh.322010710375832947" targetNodeId="7247348105538752483" resolveInfo="com.mbeddr.analyses.base" />
+        </node>
+        <node role="exports" roleId="kdzh.322010710375832962" type="kdzh.BuildMps_DevKitExportLanguage" typeId="kdzh.322010710375832938" id="6310088739592895084">
+          <link role="language" roleId="kdzh.322010710375832947" targetNodeId="7247348105538929020" resolveInfo="com.mbeddr.analyses.cbmc" />
+        </node>
+      </node>
     </node>
   </root>
 </model>
