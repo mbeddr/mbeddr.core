@@ -55,7 +55,7 @@
     </node>
     <node type="tp4k.ToolDeclaration" typeId="tp4k.1203071677434" id="1611636138415537937">
       <property name="name" nameId="tpck.1169194664001" value="NusmvTool" />
-      <property name="caption" nameId="tp4k.6547237850567462620" value="NuSMV Tool" />
+      <property name="caption" nameId="tp4k.6547237850567462620" value="State Machine Verification (NuSMV)" />
       <property name="number" nameId="tp4k.6547237850567462701" value="0" />
       <property name="position" nameId="tp4k.2498620720770664572" value="RIGHT" />
     </node>

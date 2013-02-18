@@ -708,33 +708,92 @@ mbeddr comes with support for verifying contracts of components statically. This
 verification is based on C-level dataflow analysis with CBMC. Let's set up our
 tutorial to use verification.
 
-First, add the \ic{com.mbeddr.analyses.componentcontracts} devkit to the model
-that contains the components code. In the model create a new instance of
-\ic{AnalysisConfiguration} (from the \ic{c.m.analyses.base} language). This
-configuration controls how the static analyses are executed. In the
-\ic{Analyses} section, add a \ic{component analysis}. Configure it in the
-following way:
+Let us verify the \ic{InMemoryStorage} component. To do so, 
+first add the \ic{com.mbeddr.analyses.componentcontracts} devkit to the model
+that contains the components code. Then use an intention to
+add the \ic{verifiable} flag to the component. To make the verification work,
+you will have to provide some more information in the inspector:
 
 \begin{lstlisting}
-component analysis:                  
-component analysis:                                      
-  verify component: InMemoryStorage from entry point main
-  unwind loops: 2; fail if too low: false                
+configuration items          
+  entryPoint: verification   
+  loops unwinding: 2         
+  unwinding assertions: false
 \end{lstlisting}
 
-Let us look at the four parameters you have to set here: The first one
-determines which component we want to analyze for contract violations. The
-second determines from where the program is "executed". The entry point should
-be selected to be "close" to the to-be-verified component. If you verify the
-whole system, then, at least for big systems, this will take long.
-The third item determines how often a loop is executed. You should start with
-low numbers to keep verification times low. Finally, the fourth parameter
-determines if the verification should fail in case it cannot be proven that the
-\ic{unwinding loops} number is sufficient.
+Let us look at the three parameters you have to set here: The first one
+determines from where the program is "executed". The entry point should be
+selected to be "close" to the to-be-verified component (if you verify the whole
+system, then, at least for big systems, this will take long). In our case we use
+a special test case \ic{verification}, which looks as follows:
 
-You can now run the verification by selecting the Analysis Configution itself
-and run 
+\begin{lstlisting}[language=mbeddr]
+instances verificationInstances { 
+  instance Interpolator interpol(divident = 2) 
+  connect interpol.store to store.store 
+  instance InMemoryStorage store 
+} 
+ 
+exported test case verification { 
+  initialize verificationInstances; 
+  Trackpoint p1 = {id = 1, timestamp = 1 s, speed = 10 mps }; 
+  Trackpoint p2 = {id = 2, timestamp = 2 s, speed = 20 mps }; 
+  $verificationInstances:interpol.processor_process(&p1); 
+  $verificationInstances:interpol.processor_process(&p2); 
+}
+\end{lstlisting}
 
+
+The second line in the configuration determines how often a loop is executed.
+You should start with low numbers to keep verification times low. Finally, the
+third parameter determines if the verification should fail in case it cannot be
+proven that the \ic{unwinding loops} number is sufficient.
+
+You can now run the verification by selecting the component and executing the
+\ic{Verify Component} action. After a few seconds, you'll get a result table
+that reports everything as ok (see \fig{verificationOK}): every precondition of
+every operation in every provided port has been proven to be correct.
+
+
+\begin{figure}[h]
+\begin{center} 
+  \includegraphics[width=0.7\columnwidth]{figures/tutorial/verificationOK.png}
+\end{center}
+\caption{The table that shows the verification results; everything is ok in
+this case.}
+\label{verificationOK}
+\end{figure}
+
+Let us introduce an error. The following version of the
+\ic{trackpointStore\_store} runnable does not actually store the trackpoint.
+This violates the postcondition, which claims that \ic{storedTP != null}. Note
+that have to have the return: for the analysis to work, all paths through the
+body of a function (or a runnable) must end with a return (you'll get an in-IDE
+error if you don't do this). 
+
+\begin{lstlisting}[language=mbeddr]
+void trackpointStore_store(Trackpoint* tp) <- op store.store { 
+  return; 
+} 
+\end{lstlisting}
+
+Let us rerun the verification. Now we get an error, as shown in
+\fig{verificationNotOK}. Note how the lower part of the table now shows the
+execution trace that led to the contract violation. You should check the
+\ic{Call/Return} checkbox to filter the trace to only show the
+call/return-granularity, and not every statement. You can also double-click onto
+the trace elements to select the particular program element in the code.
+
+\begin{figure}[h]
+\begin{center} 
+  \includegraphics[width=0.7\columnwidth]{figures/tutorial/verificationNotOK.png}
+\end{center}
+\caption{The table that shows the verification results; now we have an error,
+and the trace in the bottom half shows an example execution that led to the
+error.}
+\label{verificationNotOK}
+\end{figure}
+ 
 
 
 

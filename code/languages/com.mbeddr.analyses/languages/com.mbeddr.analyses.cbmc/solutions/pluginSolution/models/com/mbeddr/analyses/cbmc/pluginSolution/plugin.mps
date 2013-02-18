@@ -27,7 +27,7 @@
   <import index="srng" modelUID="f:java_stub#1ed103c3-3aa6-49b7-9c21-6765ee11f224#jetbrains.mps.openapi.editor(MPS.Editor/jetbrains.mps.openapi.editor@java_stub)" version="-1" />
   <import index="fxg7" modelUID="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.io(JDK/java.io@java_stub)" version="-1" />
   <import index="ph2v" modelUID="f:java_stub#742f6602-5a2f-4313-aa6e-ae1cd4ffdc61#com.intellij.openapi.project(MPS.Platform/com.intellij.openapi.project@java_stub)" version="-1" />
-  <import index="k146" modelUID="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" version="2" />
+  <import index="k146" modelUID="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" version="3" />
   <import index="98rj" modelUID="r:df9839a8-7e3d-466b-b138-ae8af92e84d6(com.mbeddr.analyses.cbmc.rt.counterexample_decTab)" version="-1" />
   <import index="clqz" modelUID="r:5ebcdb77-81e9-4964-beae-35bd9a2f28b5(com.mbeddr.ext.statemachines.structure)" version="9" />
   <import index="q46j" modelUID="r:de290943-4e17-4d44-ae22-c863a13543cf(com.mbeddr.analyses.base.structure)" version="1" />
@@ -60,9 +60,9 @@
     </node>
     <node type="tp4k.ToolDeclaration" typeId="tp4k.1203071677434" id="4276766474763251572">
       <property name="name" nameId="tpck.1169194664001" value="CbmcTool" />
-      <property name="caption" nameId="tp4k.6547237850567462620" value="Cmbc Tool" />
       <property name="position" nameId="tp4k.2498620720770664572" value="RIGHT" />
       <property name="number" nameId="tp4k.6547237850567462701" value="1" />
+      <property name="caption" nameId="tp4k.6547237850567462620" value="Verification (CBMC)" />
     </node>
     <node type="tp4k.ActionDeclaration" typeId="tp4k.1203071646776" id="6420766685447256174">
       <property name="name" nameId="tpck.1169194664001" value="CbmcVerifyPrePostConditionAction" />
