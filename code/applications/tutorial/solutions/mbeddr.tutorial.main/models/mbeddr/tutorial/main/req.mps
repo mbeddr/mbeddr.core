@@ -554,7 +554,7 @@
     </node>
     <node role="requirements" roleId="75wo.8745401669462963171" type="75wo.Requirement" typeId="75wo.8745401669462952101" id="6898387700925062305">
       <property name="priority" nameId="75wo.3314758227758879688" value="0" />
-      <property name="open" nameId="75wo.1165432222361744926" value="false" />
+      <property name="open" nameId="75wo.1165432222361744926" value="true" />
       <property name="name" nameId="tpck.1169194664001" value="UserInterface" />
       <property name="summmary" nameId="75wo.3402431285977818823" value="The UI with which the end user interacts" />
       <node role="kind" roleId="75wo.8921256082857728256" type="4l29.ComponentRequirementKind" typeId="4l29.5744000828452822758" id="6898387700925062307" />
