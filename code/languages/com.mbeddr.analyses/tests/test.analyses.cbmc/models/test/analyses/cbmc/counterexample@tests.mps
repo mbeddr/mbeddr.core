@@ -1005,7 +1005,7 @@
         </node>
         <node role="statement" roleId="tpee.1068581517665" type="tpe3.AssertEquals" typeId="tpe3.1171978097730" id="33311699573031017">
           <node role="expected" roleId="tpe3.8427750732757990724" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="33311699573031018">
-            <property name="value" nameId="tpee.1070475926801" value="aFunction" />
+            <property name="value" nameId="tpee.1070475926801" value="anotherFunction" />
           </node>
           <node role="actual" roleId="tpe3.8427750732757990725" type="tpee.DotExpression" typeId="tpee.1197027756228" id="33311699573031019">
             <node role="operand" roleId="tpee.1197027771414" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="33311699573031020">

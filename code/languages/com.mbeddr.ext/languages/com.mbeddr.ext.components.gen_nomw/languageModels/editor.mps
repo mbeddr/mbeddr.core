@@ -81,7 +81,7 @@
         </node>
         <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Indent" typeId="tpc2.1237303669825" id="4768833643347725534" />
         <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="4768833643347725539">
-          <property name="text" nameId="tpc2.1073389577007" value="check contracts:" />
+          <property name="text" nameId="tpc2.1073389577007" value="check contracts (runtime &amp; static):" />
         </node>
         <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Property" typeId="tpc2.1073389658414" id="4768833643347725541">
           <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="p7vm.4768833643347725006" resolveInfo="generateContracts" />

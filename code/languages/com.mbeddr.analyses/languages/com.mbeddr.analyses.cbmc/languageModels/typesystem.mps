@@ -169,8 +169,8 @@
               </node>
               <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_GetDescendantsOperation" typeId="tp25.1171305280644" id="6598859022323009105">
                 <node role="parameter" roleId="tp25.1144104376918" type="tp25.OperationParm_Concept" typeId="tp25.1144101972840" id="6598859022323009106">
-                  <node role="conceptArgument" roleId="tp25.1207343664468" type="tp25.RefConcept_Reference" typeId="tp25.1177026924588" id="6598859022323009107">
-                    <link role="conceptDeclaration" roleId="tp25.1177026940964" targetNodeId="51wr.2671893947946158498" resolveInfo="StaticLibrary" />
+                  <node role="conceptArgument" roleId="tp25.1207343664468" type="tp25.RefConcept_Reference" typeId="tp25.1177026924588" id="5512262613064857788">
+                    <link role="conceptDeclaration" roleId="tp25.1177026940964" targetNodeId="51wr.5046689135693761556" resolveInfo="Binary" />
                   </node>
                 </node>
               </node>

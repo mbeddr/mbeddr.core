@@ -416,7 +416,9 @@
         <property name="name" nameId="tpck.1169194664001" value="D2" />
         <property name="summmary" nameId="75wo.3402431285977818823" value="fdsfdsfdsafdsa" />
         <node role="kind" roleId="75wo.8921256082857728256" type="75wo.FunctionalRequirementKind" typeId="75wo.8921256082857728250" id="1165432222362212513" />
+        <node role="textParts" roleId="75wo.4539911450717510658" type="75wo.TextPart" typeId="75wo.4539911450717510653" id="4539911450717528792" />
       </node>
+      <node role="textParts" roleId="75wo.4539911450717510658" type="75wo.TextPart" typeId="75wo.4539911450717510653" id="4539911450717528501" />
     </node>
   </root>
 </model>
