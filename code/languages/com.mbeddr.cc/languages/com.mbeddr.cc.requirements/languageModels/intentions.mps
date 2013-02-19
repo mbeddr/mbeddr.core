@@ -39,13 +39,11 @@
     <node type="tp3j.IntentionDeclaration" typeId="tp3j.1192794744107" id="8971811727362309069">
       <property name="virtualPackage" nameId="tpck.1193676396447" value="filters" />
       <property name="name" nameId="tpck.1169194664001" value="SurroundWithAndFilter" />
-      <property name="isAvailableInChildNodes" nameId="tp3j.2522969319638091386" value="true" />
       <link role="forConcept" roleId="tp3j.2522969319638198290" targetNodeId="75wo.6148254807184908145" resolveInfo="RequirementsFilter" />
     </node>
     <node type="tp3j.IntentionDeclaration" typeId="tp3j.1192794744107" id="8971811727362309172">
       <property name="virtualPackage" nameId="tpck.1193676396447" value="filters" />
       <property name="name" nameId="tpck.1169194664001" value="SurroundWithOrFilter" />
-      <property name="isAvailableInChildNodes" nameId="tp3j.2522969319638091386" value="true" />
       <link role="forConcept" roleId="tp3j.2522969319638198290" targetNodeId="75wo.6148254807184908145" resolveInfo="RequirementsFilter" />
     </node>
     <node type="tp3j.IntentionDeclaration" typeId="tp3j.1192794744107" id="8971811727362310510">
