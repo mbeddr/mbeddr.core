@@ -31,6 +31,7 @@
       <property name="name" nameId="tpck.1169194664001" value="simple_req" />
       <property name="summmary" nameId="75wo.3402431285977818823" value="a simple requirement" />
       <node role="kind" roleId="75wo.8921256082857728256" type="75wo.FunctionalRequirementKind" typeId="75wo.8921256082857728250" id="4155609647750946109" />
+      <node role="textParts" roleId="75wo.4539911450717510658" type="75wo.TextPart" typeId="75wo.4539911450717510653" id="4539911450717528760" />
     </node>
   </root>
   <root id="4155609647750946111">

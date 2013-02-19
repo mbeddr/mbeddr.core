@@ -193,8 +193,18 @@
     <node type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="5744000828452695322">
       <property name="name" nameId="tpck.1169194664001" value="IPointsToReqData" />
     </node>
+    <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4539911450717510653">
+      <property name="name" nameId="tpck.1169194664001" value="TextPart" />
+      <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
+    </node>
   </roots>
   <root id="8745401669462952101">
+    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="4539911450717510658">
+      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
+      <property name="role" nameId="tpce.1071599776563" value="textParts" />
+      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1..n" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="4539911450717510653" resolveInfo="TextPart" />
+    </node>
     <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="3402431285977818823">
       <property name="name" nameId="tpck.1169194664001" value="summmary" />
       <link role="dataType" roleId="tpce.1082985295845" targetNodeId="tpck.1082983041843" resolveInfo="string" />
@@ -558,5 +568,11 @@
     </node>
   </root>
   <root id="5744000828452695322" />
+  <root id="4539911450717510653">
+    <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="4539911450717510654">
+      <property name="name" nameId="tpck.1169194664001" value="text" />
+      <link role="dataType" roleId="tpce.1082985295845" targetNodeId="tpck.1082983041843" resolveInfo="string" />
+    </node>
+  </root>
 </model>
 
