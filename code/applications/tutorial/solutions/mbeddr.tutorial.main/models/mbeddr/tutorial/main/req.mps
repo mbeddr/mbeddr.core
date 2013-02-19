@@ -583,9 +583,43 @@
           </node>
         </node>
       </node>
+      <node role="details" roleId="75wo.8745401669462962629" type="75wo.Requirement" typeId="75wo.8745401669462952101" id="1942554214112319815">
+        <property name="priority" nameId="75wo.3314758227758879688" value="0" />
+        <property name="open" nameId="75wo.1165432222361744926" value="true" />
+        <property name="name" nameId="tpck.1169194664001" value="UserSuppliesFlightError" />
+        <property name="summmary" nameId="75wo.3402431285977818823" value="An erro occurs during submission" />
+        <node role="kind" roleId="75wo.8921256082857728256" type="4l29.ScenarioRequirementKind" typeId="4l29.5744000828452835552" id="1942554214112319817" />
+        <node role="additionalData" roleId="75wo.8745401669463270518" type="4l29.Scenario" typeId="4l29.5744000828452824073" id="1942554214112319818">
+          <property name="name" nameId="tpck.1169194664001" value="UserSuppliesFlightError" />
+          <node role="initials" roleId="4l29.5744000828452824190" type="4l29.InitialContext" typeId="4l29.5744000828452824121" id="1942554214112319819">
+            <link role="initiator" roleId="4l29.5744000828452824122" targetNodeId="6898387700925062299" resolveInfo="Pilot" />
+            <node role="contents" roleId="4l29.5744000828452862537" type="4l29.SequentialCall" typeId="4l29.5744000828452842290" id="1942554214112319820">
+              <link role="capability" roleId="4l29.5744000828452854655" targetNodeId="6898387700925313669" resolveInfo="submitFlight" />
+              <node role="targetParticipant" roleId="4l29.5744000828452849518" type="4l29.ParticipantRef" typeId="4l29.5744000828452824074" id="1942554214112319821">
+                <link role="participant" roleId="4l29.5744000828452824075" targetNodeId="6898387700925260474" resolveInfo="UI" />
+              </node>
+              <node role="returns" roleId="4l29.6446320527598513761" type="4l29.StatusValueError" typeId="4l29.6446320527598544129" id="1942554214112319827">
+                <property name="msg" nameId="4l29.6446320527598544131" value="init failed" />
+              </node>
+              <node role="args" roleId="4l29.5744000828452981042" type="4l29.OwnedItemRef" typeId="4l29.6446320527598618610" id="1942554214112319826">
+                <link role="data" roleId="4l29.6446320527598618612" targetNodeId="6898387700925412273" resolveInfo="exampleFlight" />
+              </node>
+              <node role="contents" roleId="4l29.5744000828452862537" type="4l29.ImplStep" typeId="4l29.8009804792183241983" id="1942554214112320139">
+                <property name="text" nameId="4l29.8009804792183241985" value="maybe the database is full" />
+              </node>
+              <node role="contents" roleId="4l29.5744000828452862537" type="4l29.ImplStep" typeId="4l29.8009804792183241983" id="1942554214112320141">
+                <property name="text" nameId="4l29.8009804792183241985" value="or the connection to the database failed" />
+              </node>
+            </node>
+            <node role="contents" roleId="4l29.5744000828452862537" type="4l29.Error" typeId="4l29.8119642625901719122" id="1942554214112320137">
+              <property name="message" nameId="4l29.8119642625901719133" value="FAILED" />
+            </node>
+          </node>
+        </node>
+      </node>
       <node role="details" roleId="75wo.8745401669462962629" type="75wo.Requirement" typeId="75wo.8745401669462952101" id="6898387700925291928">
         <property name="priority" nameId="75wo.3314758227758879688" value="0" />
-        <property name="open" nameId="75wo.1165432222361744926" value="false" />
+        <property name="open" nameId="75wo.1165432222361744926" value="true" />
         <property name="name" nameId="tpck.1169194664001" value="UserSuppliesFlightsSuccess" />
         <property name="summmary" nameId="75wo.3402431285977818823" value="Successful submission of Flight" />
         <node role="kind" roleId="75wo.8921256082857728256" type="4l29.ScenarioRequirementKind" typeId="4l29.5744000828452835552" id="6898387700925291931" />
