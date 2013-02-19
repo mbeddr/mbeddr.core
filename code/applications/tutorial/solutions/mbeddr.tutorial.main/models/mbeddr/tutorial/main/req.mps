@@ -16,7 +16,7 @@
       <property name="name" nameId="tpck.1169194664001" value="FlightJudgementRules" />
     </node>
     <node type="75wo.RequirementsModule" typeId="75wo.8745401669462963169" id="8119642625901794439">
-      <property name="name" nameId="tpck.1169194664001" value="Architectural" />
+      <property name="name" nameId="tpck.1169194664001" value="ArchitecturalComponents" />
     </node>
     <node type="75wo.RequirementsModule" typeId="75wo.8745401669462963169" id="6898387700925052063">
       <property name="name" nameId="tpck.1169194664001" value="UseCases" />
@@ -704,7 +704,7 @@
       </node>
     </node>
     <node role="imports" roleId="75wo.1165432222362099166" type="75wo.ModuleRef" typeId="75wo.439567521322965024" id="8983161156585739660">
-      <link role="module" roleId="75wo.439567521322965025" targetNodeId="8119642625901794439" resolveInfo="Architectural" />
+      <link role="module" roleId="75wo.439567521322965025" targetNodeId="8119642625901794439" resolveInfo="ArchitecturalComponents" />
     </node>
   </root>
 </model>
