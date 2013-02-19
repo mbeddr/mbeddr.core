@@ -149,6 +149,10 @@
     <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="4539911450717510655">
       <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="75wo.4539911450717510653" resolveInfo="TextPart" />
     </node>
+    <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="7943230030363105529">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="filters" />
+      <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="75wo.7294881402136442649" resolveInfo="ProseTextContainsStringFilter" />
+    </node>
   </roots>
   <root id="8745401669462962631">
     <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="8119642625901899457">
@@ -2193,6 +2197,20 @@
     <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Property" typeId="tpc2.1073389658414" id="4539911450717510657">
       <property name="allowEmptyText" nameId="tpc2.1140114345053" value="true" />
       <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="75wo.4539911450717510654" resolveInfo="text" />
+    </node>
+  </root>
+  <root id="7943230030363105529">
+    <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="7943230030363105531">
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="7943230030363105532">
+        <property name="text" nameId="tpc2.1073389577007" value="text contains string" />
+      </node>
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="7943230030363105533">
+        <property name="text" nameId="tpc2.1073389577007" value="=" />
+      </node>
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Property" typeId="tpc2.1073389658414" id="7943230030363105534">
+        <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="75wo.7294881402136442650" resolveInfo="substring" />
+      </node>
+      <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Indent" typeId="tpc2.1237303669825" id="7943230030363105535" />
     </node>
   </root>
 </model>
