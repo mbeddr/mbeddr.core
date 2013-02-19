@@ -3,30 +3,29 @@
 
 \subsection{Installation}
 
-Checking the contracts and protocols attached to component interfaces is based on the
-CBMC model checker:\\
-\ic{http://www.cprover.org/cbmc/}
-
-To be able to use these analyses, CBMC has to be installed on your machine
-and available in the search path.
+Checking the contracts and protocols attached to component interfaces is based
+on the CBMC model checker: \ic{http://www.cprover.org/cbmc/}. To be able to use
+these analyses, CBMC has to be installed on your machine and available in the
+search path.
 
 
 \subsection{Available Analyses}
 
-Given an interface with operations annotated with pre-/postconditions or interface 
-usage protocols, we can check for all runnables of components implementing the 
-interface operations:
+Given a component that provides interfaces that have pre- or postconditions or
+interface protocols, we check for each runnable in the component:
 
 \begin{itemize}
-\item that when they are called the preconditions are ensured to hold;
-\item that the postconditions attached to runnables hold when they return.
-\item that the clients of this component comply with the protocol expected by the interface.
+\item that all preconditions are always met when the operations are called. 
+\item that all postconditions hold when the runnable returns.
+\item that the clients of this component comply with the protocol 
+      expected by the interface.
 \end{itemize}
+
 
 \subsection{Performing the Analyses}
 
-The first step for analyzing pre-/postconditions and interface protocols is to enable the generation of 
-labels in the \ic{Build Configuration}:
+The first step for analyzing pre-/postconditions and interface protocols is to
+enable the generation of labels in the \ic{Build Configuration}:
 
 \begin{center} 
   \includegraphics[width=0.6\columnwidth]{figures/analyses/cbmcEnableLabelsGeneration.png}

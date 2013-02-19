@@ -84,6 +84,8 @@ in the same way as above:
 set PATH=C:\ide\graphviz2.28\bin;%PATH%
 \end{lstlisting}
 
+On Windows, you also have to have an environment variable \ic{GRAPHVIZ\_DOT}
+that points to the \ic{dot.exe} file supplied with graphviz.
 
 \section{mbeddr}
 
@@ -154,8 +156,23 @@ before your first application project.
 You are now ready to build your first project with mbeddr.
  
 
+\section{Additional Verification Tools}
 
+To be able to use the verifications, you have to install a set of external
+tools:
 
+\begin{itemize}
+  \item You have to install \ic{NuSMV} from \ic{http://nusmv.fbk.eu/} to be able
+  to verify state machines.
+  \item You have to install \ic{Yices 1} from \ic{http://yices.csl.sri.com/} to be
+  able to verify decision tables and feature models.
+  \item You have to install \ic{CBMC} from \ic{http://www.cprover.org/cbmc/} to be able
+  to verify component protocols and contracts.
+\end{itemize}
+
+For each of these tools, the exectuables have to be on the path! You can verify
+that they are by simply typing \ic{nusmv}, \ic{yices} and/or \ic{cbmc} somewhere
+in a console. The respective tools should start.
 
 \chapter{Writing Code in MPS}
 
