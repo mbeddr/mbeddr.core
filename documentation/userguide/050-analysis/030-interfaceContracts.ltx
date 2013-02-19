@@ -1,44 +1,109 @@
-\section{Checking Interface Contracts}
+\section{Checking Interface Contracts and Protocols}
+\label{sec:interface_contracts}
 
 \subsection{Installation}
 
-Checking the contracts attached to component interfaces is based on the
-CBMC model checker:\\
-\ic{http://www.cprover.org/cbmc/}
-
-To be able to use these analyses, CBMC has to be installed on your machine
-and available in the search path.
+Checking the contracts and protocols attached to component interfaces is based
+on the CBMC model checker: \ic{http://www.cprover.org/cbmc/}. To be able to use
+these analyses, CBMC has to be installed on your machine and available in the
+search path.
 
 
 \subsection{Available Analyses}
 
-Given an interface with operations annotated with pre-/postconditions, we can 
-check for all runnables of components implementing the interface operations:
+Given a component that provides interfaces that have pre- or postconditions or
+interface protocols, we check for each runnable in the component:
 
 \begin{itemize}
-\item that when they are called the preconditions are ensured to hold;
-\item that the postconditions attached to runnables hold when they return.
+\item that all preconditions are always met when the operations are called. 
+\item that all postconditions hold when the runnable returns.
+\item that the clients of this component comply with the protocol 
+      expected by the interface.
+\end{itemize}
+
+
+\subsection{Performing the Analyses}
+
+The first step for analyzing pre-/postconditions and interface protocols is to enable the checking of 
+contracts (\ic{check contracts} must be \ic{true}) in the \ic{Build Configuration}:
+
+\begin{center} 
+  \includegraphics[width=0.55\columnwidth]{figures/analyses/cbmcEnableLabelsGeneration.png}
+\end{center}
+
+To start the verification, right-click on a component node and select the \ic{Verify component with CBMC} menu item.
+\begin{center} 
+  \includegraphics[width=0.8\columnwidth]{figures/analyses/cbmcVerifyComponentAction.png}
+\end{center} 
+
+The verification result will be displayed in a window as shown below.
+On the upper part of the window we have the list with checked pre-/postconditions and protocols. 
+In the case when an condition fails, if you double-click on it then a trace through the system that leads to 
+the failure will be displayed in the loper part of the window. Many times traces are long and can be 
+filtered by entering a text. By clicking the "Call/Return" only the method calls and returns from the 
+counterexample will be displayed. By selecting "Last 100" only the last 100 steps of the counterexample
+will be displayed.
+
+\begin{center} 
+  \includegraphics[width=0.65\columnwidth]{figures/analyses/cbmcVerifyComponentResults.png}
+\end{center} 
+
+\subsection{Analyses Configuration}
+
+For each component one can configure how the analysis is performed by defining an analysis configuration. 
+The following parameters can be configured:
+
+\begin{itemize}
+\item {\bf entry point} represents the function from where the analysis starts. By default, if none is given, the 
+analysis starts from the \ic{main} function.
+\item {\bf loops unwinding} is the number of times the loops are unwinded (unfolded)
+\item {\bf unwinding assertions} when set \ic{true} then the analysis fails if the number of unfolds is insufficient 
+for analyzing the whole loop. If set to false, then the analysis is performed but potentially incomplete.
+\end{itemize}
+
+The analysis configuration can be created in two ways:
+\begin{itemize}
+\item {\bf 1)} in the inspector of the 'verifiable' flag.
+\item {\bf 2)} as item in an 'Analysis Configuration' module. By right-clicking on the \ic{Analysis configuration} node,
+all analyses are performed.
+\end{itemize}
+
+\begin{center} 
+  \includegraphics[width=0.8\columnwidth]{figures/analyses/cbmcComponentVerifiableConfiguration.png}
+\end{center} 
+
+\begin{center} 
+  \includegraphics[width=0.8\columnwidth]{figures/analyses/cbmcComponentAnalysisConfiguration.png}
+\end{center} 
+
+\section{Checking Assertions and Division-by-Zero}
+
+\subsection{Installation}
+
+Checking assertions and the occurrence of division-by-zero  can be done by using the CBMC model checker.
+This can be installed as described in Section \ref{sec:interface_contracts}. 
+
+\subsection{Available Analyses}
+
+The following analyses can be performed:
+\begin{itemize}
+\item checking the potential occurrence of division-by-zero;
+\item checking generic assertions used in the code.
 \end{itemize}
 
 \subsection{Performing the Analyses}
 
-The first step for analyzing pre-/postconditions is to enable the generation of 
-labels in the \ic{Build Configuration}:
+To start the assertion or division-by-zero checking, right-click on a function node and select the \ic{Check assertions starting from this function} or \ic{Check division-by-zero starting from this function} menu item. Please make sure that the implementation module which contain the functions on which the analyses are run is contained in the \ic{Build configuration}.
 
 \begin{center} 
-  \includegraphics[width=0.6\columnwidth]{figures/analyses/cbmcEnableLabelsGeneration.png}
-\end{center}
-
-To start the verification, right-click on a component node and select the \ic{Verify pre/post with CBMC} menu item.
-\begin{center} 
-  \includegraphics[width=0.8\columnwidth]{figures/analyses/cbmcPPCVerifyAction.png}
+  \includegraphics[width=0.8\columnwidth]{figures/analyses/cbmcAssertionsAndDivByZero.png}
 \end{center} 
 
-The verification result will be displayed in a window as shown below.
-On the upper part of the window we have the list with checked assertions and runnables. 
-In the case when an assertion fails, if you double-click on it then a trace through the system that leads to 
-the failure will be displayed in the loper part of the window.
+Below is illustrated the result of checking assertions starting from a function. In the case when the assertion fails, a counterexample is shown that guides 
+you through the system towards a state which violates the assertion. By clicking on different entries of the counterexample, the corresponding piece of 
+the program is opened and highlighted in the editor.
 
-%\begin{center} 
-%  \includegraphics[width=0.6\columnwidth]{figures/analyses/fmVerificationResult.png}
-%\end{center} 
+\begin{center} 
+  \includegraphics[width=0.8\columnwidth]{figures/analyses/cbmcAssertionFailResult.png}
+\end{center} 
+
