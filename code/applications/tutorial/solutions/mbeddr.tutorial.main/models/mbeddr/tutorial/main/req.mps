@@ -497,6 +497,36 @@
     </node>
   </root>
   <root id="6898387700925052063">
+    <node role="requirements" roleId="75wo.8745401669462963171" type="75wo.Requirement" typeId="75wo.8745401669462952101" id="1942554214112320142">
+      <property name="priority" nameId="75wo.3314758227758879688" value="0" />
+      <property name="open" nameId="75wo.1165432222361744926" value="false" />
+      <property name="name" nameId="tpck.1169194664001" value="Aircraft" />
+      <property name="summmary" nameId="75wo.3402431285977818823" value="The aircraft a pilot flies in" />
+      <node role="kind" roleId="75wo.8921256082857728256" type="4l29.ComponentRequirementKind" typeId="4l29.5744000828452822758" id="1942554214112320144" />
+      <node role="additionalData" roleId="75wo.8745401669463270518" type="4l29.Actor" typeId="4l29.5744000828452661378" id="1942554214112320145">
+        <property name="name" nameId="tpck.1169194664001" value="Aircraft" />
+      </node>
+    </node>
+    <node role="requirements" roleId="75wo.8745401669462963171" type="75wo.Requirement" typeId="75wo.8745401669462952101" id="1942554214112320148">
+      <property name="priority" nameId="75wo.3314758227758879688" value="0" />
+      <property name="open" nameId="75wo.1165432222361744926" value="false" />
+      <property name="name" nameId="tpck.1169194664001" value="PilotCollectsFlightData" />
+      <property name="summmary" nameId="75wo.3402431285977818823" value="A pilot flies the airplane and collects flight data" />
+      <node role="kind" roleId="75wo.8921256082857728256" type="4l29.UseCaseKind" typeId="4l29.6514529288613812198" id="1942554214112320150" />
+      <node role="additionalData" roleId="75wo.8745401669463270518" type="4l29.UseCase" typeId="4l29.6514529288613812195" id="1942554214112320151">
+        <property name="name" nameId="tpck.1169194664001" value="PilotCollectsFlightData" />
+        <node role="contents" roleId="4l29.6514529288613824147" type="4l29.UseCaseActiveActor" typeId="4l29.6514529288613824161" id="1942554214112320152">
+          <node role="participant" roleId="4l29.6514529288613824163" type="4l29.ParticipantRef" typeId="4l29.5744000828452824074" id="1942554214112320154">
+            <link role="participant" roleId="4l29.5744000828452824075" targetNodeId="6898387700925062299" resolveInfo="Pilot" />
+          </node>
+        </node>
+        <node role="contents" roleId="4l29.6514529288613824147" type="4l29.UseCasePassiveActor" typeId="4l29.6514529288613845835" id="1942554214112320156">
+          <node role="participant" roleId="4l29.6514529288613845836" type="4l29.ParticipantRef" typeId="4l29.5744000828452824074" id="1942554214112320158">
+            <link role="participant" roleId="4l29.5744000828452824075" targetNodeId="1942554214112320145" resolveInfo="Aircraft" />
+          </node>
+        </node>
+      </node>
+    </node>
     <node role="requirements" roleId="75wo.8745401669462963171" type="75wo.Requirement" typeId="75wo.8745401669462952101" id="6898387700925260480">
       <property name="priority" nameId="75wo.3314758227758879688" value="0" />
       <property name="open" nameId="75wo.1165432222361744926" value="false" />
@@ -562,6 +592,10 @@
         <node role="contents" roleId="4l29.5744000828452661377" type="4l29.Collaboration" typeId="4l29.5744000828452694711" id="6898387700925390292">
           <link role="participant" roleId="4l29.5744000828452694713" targetNodeId="6898387700925260474" resolveInfo="UI" />
         </node>
+        <node role="contents" roleId="4l29.5744000828452661377" type="4l29.Collaboration" typeId="4l29.5744000828452694711" id="1942554214112320147">
+          <property name="description" nameId="4l29.5744000828452816602" value="flies in the aircraft" />
+          <link role="participant" roleId="4l29.5744000828452694713" targetNodeId="1942554214112320145" resolveInfo="Aircraft" />
+        </node>
       </node>
     </node>
     <node role="requirements" roleId="75wo.8745401669462963171" type="75wo.Requirement" typeId="75wo.8745401669462952101" id="6898387700925052066">
@@ -585,7 +619,7 @@
       </node>
       <node role="details" roleId="75wo.8745401669462962629" type="75wo.Requirement" typeId="75wo.8745401669462952101" id="1942554214112319815">
         <property name="priority" nameId="75wo.3314758227758879688" value="0" />
-        <property name="open" nameId="75wo.1165432222361744926" value="true" />
+        <property name="open" nameId="75wo.1165432222361744926" value="false" />
         <property name="name" nameId="tpck.1169194664001" value="UserSuppliesFlightError" />
         <property name="summmary" nameId="75wo.3402431285977818823" value="An erro occurs during submission" />
         <node role="kind" roleId="75wo.8921256082857728256" type="4l29.ScenarioRequirementKind" typeId="4l29.5744000828452835552" id="1942554214112319817" />
@@ -619,7 +653,7 @@
       </node>
       <node role="details" roleId="75wo.8745401669462962629" type="75wo.Requirement" typeId="75wo.8745401669462952101" id="6898387700925291928">
         <property name="priority" nameId="75wo.3314758227758879688" value="0" />
-        <property name="open" nameId="75wo.1165432222361744926" value="true" />
+        <property name="open" nameId="75wo.1165432222361744926" value="false" />
         <property name="name" nameId="tpck.1169194664001" value="UserSuppliesFlightsSuccess" />
         <property name="summmary" nameId="75wo.3402431285977818823" value="Successful submission of Flight" />
         <node role="kind" roleId="75wo.8921256082857728256" type="4l29.ScenarioRequirementKind" typeId="4l29.5744000828452835552" id="6898387700925291931" />
