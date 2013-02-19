@@ -436,7 +436,7 @@
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="3335993110369795380">
       <property name="name" nameId="tpck.1169194664001" value="TypeSizeConfiguration" />
       <property name="rootable" nameId="tpce.1096454100552" value="true" />
-      <property name="iconPath" nameId="tpce.1160488491229" value="${language_descriptor}/icons/typesizeconfig.jpg" />
+      <property name="iconPath" nameId="tpce.1160488491229" value="${language_descriptor}/icons/typesizeconfig.png" />
       <property name="virtualPackage" nameId="tpck.1193676396447" value="typeSizeSpec" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
     </node>
