@@ -67,7 +67,7 @@
     </node>
     <node type="tp4k.ActionDeclaration" typeId="tp4k.1203071646776" id="6420766685447256174">
       <property name="name" nameId="tpck.1169194664001" value="CbmcVerifyComponentAction" />
-      <property name="caption" nameId="tp4k.1205250923097" value="Verify component with CBMC" />
+      <property name="caption" nameId="tp4k.1205250923097" value="Verify Component" />
     </node>
     <node type="tp4k.ActionDeclaration" typeId="tp4k.1203071646776" id="2191080784050300873">
       <property name="name" nameId="tpck.1169194664001" value="CbmcVerifyAssertsAction" />
