@@ -17,7 +17,7 @@
       <modulePath path="${project}/languages/com.mbeddr.cc.requirements/requirements.mpl" folder="requirements" />
       <modulePath path="${project}/languages/com.mbeddr.cc.requirements/solutions/pluginSolution/pluginSolution.msd" folder="requirements" />
       <modulePath path="${project}/languages/com.mbeddr.cc.trace/solutions/pluginSolution/pluginSolution.msd" folder="requirements" />
-      <modulePath path="${project}/languages/com.mbeddr.cc.trace/trace.mpl" />
+      <modulePath path="${project}/languages/com.mbeddr.cc.trace/trace.mpl" folder="requirements" />
       <modulePath path="${project}/languages/com.mbeddr.cc.var.annotations/fm.mpl" folder="ple_var" />
       <modulePath path="${project}/languages/com.mbeddr.cc.var.annotations/solutions/pluginSolution/pluginSolution.msd" folder="ple_var" />
       <modulePath path="${project}/languages/com.mbeddr.cc.var.buildconfig/buildconfig.mpl" folder="ple_var" />
@@ -52,6 +52,14 @@
             <Library>
               <option name="name" value="mbeddr.debugger" />
               <option name="path" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.debugger" />
+            </Library>
+          </value>
+        </entry>
+        <entry key="mbeddr.ext">
+          <value>
+            <Library>
+              <option name="name" value="mbeddr.ext" />
+              <option name="path" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.ext" />
             </Library>
           </value>
         </entry>

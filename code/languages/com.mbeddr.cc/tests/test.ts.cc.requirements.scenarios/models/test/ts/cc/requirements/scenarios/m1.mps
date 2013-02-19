@@ -36,6 +36,7 @@
           </node>
         </node>
       </node>
+      <node role="textParts" roleId="75wo.4539911450717510658" type="75wo.TextPart" typeId="75wo.4539911450717510653" id="8983161156585691663" />
     </node>
     <node role="requirements" roleId="75wo.8745401669462963171" type="75wo.Requirement" typeId="75wo.8745401669462952101" id="5744000828452683536">
       <property name="priority" nameId="75wo.3314758227758879688" value="0" />
@@ -76,6 +77,7 @@
           <link role="participant" roleId="4l29.5744000828452694713" targetNodeId="552710421071388909" resolveInfo="CC" />
         </node>
       </node>
+      <node role="textParts" roleId="75wo.4539911450717510658" type="75wo.TextPart" typeId="75wo.4539911450717510653" id="8983161156585691655" />
     </node>
     <node role="requirements" roleId="75wo.8745401669462963171" type="75wo.Requirement" typeId="75wo.8745401669462952101" id="552710421071388906">
       <property name="priority" nameId="75wo.3314758227758879688" value="0" />
@@ -92,14 +94,17 @@
           <property name="name" nameId="tpck.1169194664001" value="blubber" />
         </node>
       </node>
+      <node role="textParts" roleId="75wo.4539911450717510658" type="75wo.TextPart" typeId="75wo.4539911450717510653" id="8983161156585691650" />
     </node>
     <node role="requirements" roleId="75wo.8745401669462963171" type="75wo.Requirement" typeId="75wo.8745401669462952101" id="5744000828452680215">
       <property name="priority" nameId="75wo.3314758227758879688" value="0" />
       <property name="open" nameId="75wo.1165432222361744926" value="false" />
       <property name="name" nameId="tpck.1169194664001" value="CurrentData" />
       <property name="summmary" nameId="75wo.3402431285977818823" value="Represents a current flowing" />
-      <property name="proseText" nameId="75wo.8745401669463252438" value="Here are the requirements Details. You can enter as much as you like." />
       <node role="kind" roleId="75wo.8921256082857728256" type="75wo.FunctionalRequirementKind" typeId="75wo.8921256082857728250" id="5744000828452680216" />
+      <node role="textParts" roleId="75wo.4539911450717510658" type="75wo.TextPart" typeId="75wo.4539911450717510653" id="8983161156585691653">
+        <property name="text" nameId="75wo.4539911450717510654" value="Here are the requirements Details. You can enter as much as you like." />
+      </node>
     </node>
     <node role="requirements" roleId="75wo.8745401669462963171" type="75wo.Requirement" typeId="75wo.8745401669462952101" id="5744000828452816594">
       <property name="priority" nameId="75wo.3314758227758879688" value="0" />
@@ -124,6 +129,7 @@
           <property name="name" nameId="tpck.1169194664001" value="schedule" />
         </node>
       </node>
+      <node role="textParts" roleId="75wo.4539911450717510658" type="75wo.TextPart" typeId="75wo.4539911450717510653" id="8983161156585691664" />
     </node>
     <node role="requirements" roleId="75wo.8745401669462963171" type="75wo.Requirement" typeId="75wo.8745401669462952101" id="5744000828452830497">
       <property name="priority" nameId="75wo.3314758227758879688" value="0" />
@@ -132,6 +138,7 @@
       <property name="summmary" nameId="75wo.3402431285977818823" value="Run a measurement" />
       <property name="proseText" nameId="75wo.8745401669463252438" value="" />
       <node role="kind" roleId="75wo.8921256082857728256" type="4l29.ScenarioRequirementKind" typeId="4l29.5744000828452835552" id="5744000828452842002" />
+      <node role="textParts" roleId="75wo.4539911450717510658" type="75wo.TextPart" typeId="75wo.4539911450717510653" id="8983161156585691654" />
     </node>
     <node role="requirements" roleId="75wo.8745401669462963171" type="75wo.Requirement" typeId="75wo.8745401669462952101" id="8119642625901690642">
       <property name="priority" nameId="75wo.3314758227758879688" value="0" />
@@ -139,6 +146,7 @@
       <property name="name" nameId="tpck.1169194664001" value="AnotherScenario" />
       <property name="summmary" nameId="75wo.3402431285977818823" value="SomeData" />
       <node role="kind" roleId="75wo.8921256082857728256" type="4l29.ScenarioRequirementKind" typeId="4l29.5744000828452835552" id="8119642625901690644" />
+      <node role="textParts" roleId="75wo.4539911450717510658" type="75wo.TextPart" typeId="75wo.4539911450717510653" id="8983161156585691666" />
     </node>
     <node role="summaries" roleId="75wo.3314758227759002193" type="75wo.CountingSummary" typeId="75wo.3314758227759007649" id="8119642625901571690" />
   </root>
