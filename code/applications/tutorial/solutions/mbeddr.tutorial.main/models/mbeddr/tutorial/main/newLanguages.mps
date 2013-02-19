@@ -46,6 +46,7 @@
   <roots>
     <node type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="7727566415687867284">
       <property name="name" nameId="tpck.1169194664001" value="SafeHeap" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="examples" />
     </node>
     <node type="mj1l.TypeSizeConfiguration" typeId="mj1l.3335993110369795380" id="646457496850768683">
       <property name="virtualPackage" nameId="tpck.1193676396447" value="config" />
@@ -66,19 +67,24 @@
     </node>
     <node type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="7977993180520090817">
       <property name="name" nameId="tpck.1169194664001" value="Foreach" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="examples" />
     </node>
     <node type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="7977993180520273424">
       <property name="name" nameId="tpck.1169194664001" value="Blocks" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="examples" />
     </node>
     <node type="rzjx.OSConfig" typeId="rzjx.7977993180520290853" id="7977993180520290887" />
     <node type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="5485104033529950730">
       <property name="name" nameId="tpck.1169194664001" value="Tasks" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="examples" />
     </node>
     <node type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="2945795531676517483">
       <property name="name" nameId="tpck.1169194664001" value="Registers" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="examples" />
     </node>
     <node type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="3834230661748359908">
       <property name="name" nameId="tpck.1169194664001" value="Vectors" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="examples" />
     </node>
   </roots>
   <root id="7727566415687867284">

@@ -10,11 +10,11 @@ cd com.mbeddr.debugger
 ant build-languages
 cd ..
 
-cd com.mbeddr.debugger.tests
+cd com.mbeddr.core
 ant build-languages
 cd ..
 
-cd com.mbeddr.core
+cd com.mbeddr.debugger.tests
 ant build-languages
 cd ..
 
