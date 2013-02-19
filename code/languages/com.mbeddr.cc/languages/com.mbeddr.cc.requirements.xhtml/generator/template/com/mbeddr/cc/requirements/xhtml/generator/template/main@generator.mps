@@ -568,8 +568,8 @@
                     <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="8834022522772582541">
                       <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="8834022522772582542">
                         <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="8834022522772582543">
-                          <node role="operation" roleId="tpee.1197027833540" type="tp25.SPropertyAccess" typeId="tp25.1138056022639" id="8834022522772828858">
-                            <link role="property" roleId="tp25.1138056395725" targetNodeId="75wo.8745401669463252438" resolveInfo="proseText" />
+                          <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_ConceptMethodCall" typeId="tp25.1179409122411" id="4539911450717591339">
+                            <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="xvsr.4539911450717587471" resolveInfo="proseText" />
                           </node>
                           <node role="operand" roleId="tpee.1197027771414" type="tpf8.TemplateFunctionParameter_sourceNode" typeId="tpf8.1167169188348" id="8834022522772582545" />
                         </node>
@@ -585,8 +585,8 @@
                       <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="8834022522772585562">
                         <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="8834022522772585534">
                           <node role="operand" roleId="tpee.1197027771414" type="tpf8.TemplateFunctionParameter_sourceNode" typeId="tpf8.1167169188348" id="8834022522772585513" />
-                          <node role="operation" roleId="tpee.1197027833540" type="tp25.SPropertyAccess" typeId="tp25.1138056022639" id="8834022522772585540">
-                            <link role="property" roleId="tp25.1138056395725" targetNodeId="75wo.8745401669463252438" resolveInfo="proseText" />
+                          <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_ConceptMethodCall" typeId="tp25.1179409122411" id="4539911450717591336">
+                            <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="xvsr.4539911450717587471" resolveInfo="proseText" />
                           </node>
                         </node>
                         <node role="operation" roleId="tpee.1197027833540" type="tpee.IsNotEmptyOperation" typeId="tpee.1225271408483" id="8834022522772585568" />

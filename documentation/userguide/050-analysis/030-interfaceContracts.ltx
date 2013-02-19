@@ -31,18 +31,20 @@ contracts (\ic{check contracts} must be \ic{true}) in the \ic{Build Configuratio
   \includegraphics[width=0.55\columnwidth]{figures/analyses/cbmcEnableLabelsGeneration.png}
 \end{center}
 
-To start the verification, right-click on a component node and select the \ic{Verify component with CBMC} menu item.
+To start the verification, right-click on a component node and select the
+\ic{Verify Component} menu item.
 \begin{center} 
   \includegraphics[width=0.8\columnwidth]{figures/analyses/cbmcVerifyComponentAction.png}
 \end{center} 
 
 The verification result will be displayed in a window as shown below.
-On the upper part of the window we have the list with checked pre-/postconditions and protocols. 
-In the case when an condition fails, if you double-click on it then a trace through the system that leads to 
-the failure will be displayed in the loper part of the window. Many times traces are long and can be 
-filtered by entering a text. By clicking the "Call/Return" only the method calls and returns from the 
-counterexample will be displayed. By selecting "Last 100" only the last 100 steps of the counterexample
-will be displayed.
+On the upper part of the window we have the list with checked
+pre-/postconditions and protocols. In the case when an condition fails, if you
+double-click on it then a trace through the system that leads to the failure
+will be displayed in the lower part of the window. Often, traces are long
+and can be filtered by entering a text. By checking \ic{Call/Return}, only the
+method calls and returns from the counterexample will be displayed. By selecting
+\ic{Last 100} only the last 100 steps of the counterexample will be displayed.
 
 \begin{center} 
   \includegraphics[width=0.65\columnwidth]{figures/analyses/cbmcVerifyComponentResults.png}
@@ -50,27 +52,27 @@ will be displayed.
 
 \subsection{Analyses Configuration}
 
-For each component one can configure how the analysis is performed by defining an analysis configuration. 
-The following parameters can be configured:
+For each component one can configure how the analysis is performed by defining
+an analysis configuration. The configuration can be entered in the inspector for
+the \ic{verifiable} annotation. The following parameters can be configured:
 
 \begin{itemize}
-\item {\bf entry point} represents the function from where the analysis starts. By default, if none is given, the 
-analysis starts from the \ic{main} function.
-\item {\bf loops unwinding} is the number of times the loops are unwinded (unfolded)
-\item {\bf unwinding assertions} when set \ic{true} then the analysis fails if the number of unfolds is insufficient 
-for analyzing the whole loop. If set to false, then the analysis is performed but potentially incomplete.
+\item {\bf entry point} represents the function from where the analysis starts. 
+By default, if none is given, the analysis starts from the \ic{main} function.
+However, starting from \ic{main} may make the verification take a long time, and
+a more local entry point may be advantageous.
+\item {\bf loops unwinding} is the number of times the loops are unwound
+(unfolded)
+\item {\bf unwinding assertions} when set to true, then the analysis fails if
+the number of unfolds is insufficient for analyzing the whole loop. If set to false, 
+then the analysis is performed but potentially incomplete.
 \end{itemize}
 
-The analysis configuration can be created in two ways:
-\begin{itemize}
-\item {\bf 1)} in the inspector of the 'verifiable' flag.
-\item {\bf 2)} as item in an 'Analysis Configuration' module. By right-clicking on the \ic{Analysis configuration} node,
+In addition to specifying the configuration in the inspector of the
+\ic{verifiable} flag, it can also be added as a configuration item in the build
+configuration. By right-clicking on the \ic{Analysis Configuration} node itself,
 all analyses are performed.
-\end{itemize}
 
-\begin{center} 
-  \includegraphics[width=0.8\columnwidth]{figures/analyses/cbmcComponentVerifiableConfiguration.png}
-\end{center} 
 
 \begin{center} 
   \includegraphics[width=0.8\columnwidth]{figures/analyses/cbmcComponentAnalysisConfiguration.png}
@@ -80,20 +82,18 @@ all analyses are performed.
 
 \subsection{Installation}
 
-Checking assertions and the occurrence of division-by-zero  can be done by using the CBMC model checker.
-This can be installed as described in Section \ref{sec:interface_contracts}. 
+Checking assertions and the potential occurrence of division-by-zero can be
+done by using the CBMC model checker. Its installation has been described in the
+previous section (\sect{sec:interface_contracts}).
 
-\subsection{Available Analyses}
-
-The following analyses can be performed:
-\begin{itemize}
-\item checking the potential occurrence of division-by-zero;
-\item checking generic assertions used in the code.
-\end{itemize}
 
 \subsection{Performing the Analyses}
 
-To start the assertion or division-by-zero checking, right-click on a function node and select the \ic{Check assertions starting from this function} or \ic{Check division-by-zero starting from this function} menu item. Please make sure that the implementation module which contain the functions on which the analyses are run is contained in the \ic{Build configuration}.
+To start the assertion or division-by-zero checking, right-click on a function
+node and select the \ic{Check assertions starting from this function} or
+\ic{Check division-by-zero starting from this function} menu item. Please make
+sure that the implementation module which contain the functions on which the
+analyses are run is contained in the \ic{Build Configuration}.
 
 \begin{center} 
   \includegraphics[width=0.8\columnwidth]{figures/analyses/cbmcAssertionsAndDivByZero.png}
