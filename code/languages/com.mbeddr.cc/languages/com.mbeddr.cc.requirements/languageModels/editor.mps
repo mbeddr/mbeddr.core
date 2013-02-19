@@ -566,13 +566,6 @@
               </node>
             </node>
           </node>
-          <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_RefNode" typeId="tpc2.1073389882823" id="8921256082857737020">
-            <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="75wo.8921256082857728256" />
-            <link role="keyMap" roleId="tpc2.1081339532145" targetNodeId="1165432222361989421" resolveInfo="openDetails" />
-            <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.PunctuationLeftStyleClassItem" typeId="tpc2.1233758997495" id="4458576562019055516">
-              <property name="flag" nameId="tpc2.1186414551515" value="true" />
-            </node>
-          </node>
           <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Property" typeId="tpc2.1073389658414" id="8745401669463116079">
             <property name="attractsFocus" nameId="tpc2.1130859485024" value="2" />
             <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="tpck.1169194664001" resolveInfo="name" />
@@ -580,6 +573,16 @@
             <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.FontStyleStyleClassItem" typeId="tpc2.1186403751766" id="1165432222362120335">
               <property name="style" nameId="tpc2.1186403771423" value="BOLD" />
             </node>
+          </node>
+          <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="6898387700925221215">
+            <property name="text" nameId="tpc2.1073389577007" value=":" />
+            <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.PunctuationLeftStyleClassItem" typeId="tpc2.1233758997495" id="6898387700925221733">
+              <property name="flag" nameId="tpc2.1186414551515" value="true" />
+            </node>
+          </node>
+          <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_RefNode" typeId="tpc2.1073389882823" id="8921256082857737020">
+            <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="75wo.8921256082857728256" />
+            <link role="keyMap" roleId="tpc2.1081339532145" targetNodeId="1165432222361989421" resolveInfo="openDetails" />
           </node>
           <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="3314758227758934690">
             <property name="text" nameId="tpc2.1073389577007" value="(" />
