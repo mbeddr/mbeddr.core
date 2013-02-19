@@ -454,6 +454,17 @@
               </node>
             </node>
           </node>
+          <node role="vars" roleId="rijl.7727566415687866112" type="rijl.SafeHeapVar" typeId="rijl.7727566415687866088" id="6125369673958867788">
+            <property name="name" nameId="tpck.1169194664001" value="y" />
+            <node role="type" roleId="mj1l.318113533128716676" type="yq40.PointerType" typeId="yq40.279446265608459824" id="4390449211807300016">
+              <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+              <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+              <node role="baseType" roleId="yq40.279446265608459825" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="6125369673958867792">
+                <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+                <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+              </node>
+            </node>
+          </node>
           <node role="vars" roleId="rijl.7727566415687866112" type="rijl.SafeHeapVar" typeId="rijl.7727566415687866088" id="6125369673958871532">
             <property name="name" nameId="tpck.1169194664001" value="tp2" />
             <node role="type" roleId="mj1l.318113533128716676" type="yq40.PointerType" typeId="yq40.279446265608459824" id="4390449211807255086">
@@ -470,17 +481,6 @@
               </node>
               <node role="actuals" roleId="x27k.5950410542643524495" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6125369673958871548">
                 <property name="value" nameId="mj1l.8860443239512128104" value="100" />
-              </node>
-            </node>
-          </node>
-          <node role="vars" roleId="rijl.7727566415687866112" type="rijl.SafeHeapVar" typeId="rijl.7727566415687866088" id="6125369673958867788">
-            <property name="name" nameId="tpck.1169194664001" value="y" />
-            <node role="type" roleId="mj1l.318113533128716676" type="yq40.PointerType" typeId="yq40.279446265608459824" id="4390449211807300016">
-              <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
-              <property name="const" nameId="mj1l.2941277002445651368" value="false" />
-              <node role="baseType" roleId="yq40.279446265608459825" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="6125369673958867792">
-                <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
-                <property name="const" nameId="mj1l.2941277002445651368" value="false" />
               </node>
             </node>
           </node>
