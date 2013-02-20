@@ -83,7 +83,6 @@
       <library name="ext.project" dir="${extLanguageDir}"/> 
       <library name="cc.project" dir="${ccLanguageDir}"/>
       <modules dir="${mbeddr.github.core.home}/${mbeddr.analyses.project.dir}/languages"/>
-	  <modules dir="${mbeddr.github.core.home}/${mbeddr.analyses.project.dir}/solutions"/>
     </mps.generate>
   </target>
 
