@@ -517,8 +517,8 @@
             <node role="errorString" roleId="tpd4.1175517851849" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="6375603587899678642">
               <property name="value" nameId="tpee.1070475926801" value="Only decision tables marked as 'checked' can be analyzed." />
             </node>
-            <node role="nodeToReport" roleId="tpd4.1227096802790" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="6375603587899678809">
-              <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="6375603587899678797" resolveInfo="node" />
+            <node role="nodeToReport" roleId="tpd4.1227096802790" type="tpd4.ApplicableNodeReference" typeId="tpd4.1174650418652" id="5540530590525485440">
+              <link role="applicableNode" roleId="tpd4.1174650432090" targetNodeId="6375603587899678628" resolveInfo="decTabAnalysis" />
             </node>
           </node>
         </node>
