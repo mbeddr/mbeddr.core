@@ -170,10 +170,11 @@
           <property name="value" nameId="mj1l.8860443239512128104" value="10" />
         </node>
       </node>
+      <node role="textParts" roleId="75wo.4539911450717510658" type="75wo.TextPart" typeId="75wo.4539911450717510653" id="8983161156585691660" />
     </node>
     <node role="requirements" roleId="75wo.8745401669462963171" type="75wo.Requirement" typeId="75wo.8745401669462952101" id="3534497005926953361">
       <property name="priority" nameId="75wo.3314758227758879688" value="0" />
-      <property name="open" nameId="75wo.1165432222361744926" value="false" />
+      <property name="open" nameId="75wo.1165432222361744926" value="true" />
       <property name="name" nameId="tpck.1169194664001" value="R2" />
       <property name="summmary" nameId="75wo.3402431285977818823" value="The price may be rebated." />
       <property name="proseText" nameId="75wo.8745401669463252438" value="" />
@@ -214,10 +215,11 @@
           </node>
         </node>
       </node>
+      <node role="textParts" roleId="75wo.4539911450717510658" type="75wo.TextPart" typeId="75wo.4539911450717510653" id="8983161156585691665" />
     </node>
     <node role="requirements" roleId="75wo.8745401669462963171" type="75wo.Requirement" typeId="75wo.8745401669462952101" id="3562422675424166429">
       <property name="priority" nameId="75wo.3314758227758879688" value="0" />
-      <property name="open" nameId="75wo.1165432222361744926" value="true" />
+      <property name="open" nameId="75wo.1165432222361744926" value="false" />
       <property name="name" nameId="tpck.1169194664001" value="R3" />
       <property name="summmary" nameId="75wo.3402431285977818823" value="Price per call" />
       <node role="kind" roleId="75wo.8921256082857728256" type="75wo.FunctionalRequirementKind" typeId="75wo.8921256082857728250" id="3562422675424166430" />
@@ -354,6 +356,7 @@
           </node>
         </node>
       </node>
+      <node role="textParts" roleId="75wo.4539911450717510658" type="75wo.TextPart" typeId="75wo.4539911450717510653" id="8983161156585691658" />
     </node>
   </root>
   <root id="3534497005926839241">
