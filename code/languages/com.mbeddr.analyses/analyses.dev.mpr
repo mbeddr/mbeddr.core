@@ -38,8 +38,8 @@
       <modulePath path="${project}/languages/com.mbeddr.analyses.yices.fm/solutions/pluginSolution/pluginSolution.msd" folder="yices" />
       <modulePath path="${project}/languages/com.mbeddr.analyses.yices.rt/rt.msd" folder="yices" />
       <modulePath path="${project}/languages/com.mbeddr.analyses.yices/yices.mpl" folder="yices" />
-      <modulePath path="${project}/solutions/test.analyses.cbmc.testcode_analyses_config/testcode_analyses_config.msd" folder="test.cbmc" />
       <modulePath path="${project}/tests/test.analyses.cbmc.testcode/testcode.msd" folder="test.cbmc" />
+      <modulePath path="${project}/tests/test.analyses.cbmc.testcode_analyses_config/testcode_analyses_config.msd" folder="test.cbmc" />
       <modulePath path="${project}/tests/test.analyses.cbmc.testcode_nightly/testcode_nightly.msd/testcode_nightly.msd" folder="test.cbmc" />
       <modulePath path="${project}/tests/test.analyses.cbmc/cbmc.msd" folder="test.cbmc" />
       <modulePath path="${project}/tests/test.analysis.formsera/formsera.msd" folder="test" />
@@ -73,7 +73,7 @@
     <option name="version" value="2.5" />
   </component>
   <component name="VcsDirectoryMappings">
-    <mapping directory="$mbeddr.github.core.home$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../.." vcs="Git" />
   </component>
 </project>
 
