@@ -32,6 +32,11 @@
   <property name="ccLanguageDir" value="${mbeddr.github.core.home}/${mbeddr.cc.project.dir}/languages"/>
   <property name="analysesanguageDir" value="${mbeddr.github.core.home}/${mbeddr.analyses.project.dir}/languages"/>
   
+  <!-- validate if path properties are set in build.properties -->
+  <fail unless="mbeddr.github.core.home">mbeddr.github.core.home must be set in your build.properties</fail>
+  <fail unless="mps.platform.caches">mps.platform.caches must be set in your build.properties</fail>
+  <fail unless="mps.home">mps.home must be set in your build.properties</fail>
+  
   <path id="mps.ant.path">
    <pathelement location="${mps.home}/lib/mps-backend.jar"/>
    <pathelement location="${mps.home}/lib/jdom.jar"/>
