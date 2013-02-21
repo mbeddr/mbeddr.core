@@ -356,11 +356,22 @@ user don't have to specify them. These automatic checks include the following:
 \end{itemize}
 
 
+\begin{figure}[h]
+\begin{center} 
+  \includegraphics[width=0.5\columnwidth]{figures/tutorial/smverres.png}
+\end{center}
+\caption{The view that shows the results of the verfication of the
+\ic{FlightAnalyzer} state machine.}
+\label{smverres}
+\end{figure}
+
+
+
 
 \parhead{Verifying the FlightAnalyzer Machine} We attach the \ic{verifiable}
-flag to the \ic{FlightAnalyzer} state machine and run the verifier. It has two
-problems. Firt, It claims that the \ic{landing} state has nondeterministic
-transitions. The counter example is this:
+flag to the \ic{FlightAnalyzer} state machine and run the verifier.
+\fig{smverres} shows the result. It has two problems. Firt, It claims that the
+\ic{landing} state has nondeterministic transitions. The counter example is this:
 
 \begin{lstlisting}
 State beforeFlight
@@ -502,9 +513,9 @@ statemachine HierarchicalFlightAnalyzer initial = beforeFlight {
 
 State Machines can also be rendered as a diagram; \fig{vsm} shows an example. 
 
-\begin{figure}[b]
+\begin{figure}[h]
 \begin{center} 
-  \includegraphics[width=0.3\columnwidth]{figures/tutorial/v_sm.png}
+  \includegraphics[width=0.4\columnwidth]{figures/tutorial/v_sm.png}
 \end{center}
 \caption{A visualization of a state machine in mbeddr. You can click on the
 states and transitions to select the respective element in the editor.}

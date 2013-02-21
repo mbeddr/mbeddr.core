@@ -73,7 +73,8 @@ There are still errors. The first one complains that the message list must be
 exported if the interface is exported. We fix it by exporting the message list
 (via an intention). The next error complains that the message needs to have to
 integer arguments to represent the operation and the pre- or postcondition. We
-change it thusly:
+change it thusly (note that there are quick fixes available to adapt the
+signatures in the required way):
 
 \begin{lstlisting}[language=mbeddr]
 exported messagelist ContractMessages { 
@@ -714,9 +715,9 @@ that contains the components code. Then use an intention to
 add the \ic{verifiable} flag to the component. To make the verification work,
 you will have to provide some more information in the inspector:
 
-\begin{lstlisting}
-configuration items          
-  entryPoint: verification   
+\begin{lstlisting}[morekeywords={configuration, items, entry, point, loops,
+unwinding, assertions}] configuration items          
+  entry point: verification   
   loops unwinding: 2         
   unwinding assertions: false
 \end{lstlisting}

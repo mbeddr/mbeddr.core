@@ -41,7 +41,7 @@ program):
 \todo{Update to new format/layout optional type for dectab.}
 
 \begin{center} 
-  \includegraphics[width=0.8\columnwidth]{figures/tutorial/dectab.png}
+  \includegraphics[width=0.9\columnwidth]{figures/tutorial/dectab.png}
 \end{center}
 
 Let us write a test. Of course we first need an instance of \ic{Judge}:
@@ -101,7 +101,7 @@ it also reports failires because the cells (1,1) and (2,1) are inconsistent. The
 problem is -- as we expect -- related to the altitude being 2000 m, because in
 this case it is not decidable which alternative should be used. 
 
-\begin{lstlisting}
+\begin{lstlisting}[morekeywords={SUCCESS, FAIL}]
 SUCCESS: Table complete.
 FAIL: cells (1, 1) and (2, 1) are inconsistent.
 	tp.x : 0
@@ -122,7 +122,7 @@ FAIL: cells (1, 2) and (2, 2) are inconsistent.
 We can fix the problem for example by changing the \ic{tp->alt <= 2000 m} to
 \ic{tp->alt < 2000 m}. Running the verification again results in this:
 
-\begin{lstlisting}
+\begin{lstlisting}[morekeywords={SUCCESS, FAIL}]
 SUCCESS: Table complete.
 OK: All cells are consistent
 \end{lstlisting}
