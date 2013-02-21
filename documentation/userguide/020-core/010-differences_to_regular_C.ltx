@@ -5,9 +5,6 @@
 \section{mbeddr core: Differences to regular C}
 
 This section describes the differences between mbeddr C and regular C99.
-All examples shown in this chapter can be found in the \emph{HelloWorld} project
-that is available for download together with the \emph{mbeddr.core}
-distribution.
 
 \todo{Use noindent consistently} 
  
@@ -41,7 +38,7 @@ programs.
 
 
 \parhead{Implementation Modules} The following example shows an implementation
-module (\ic{Im- plementationModule}) with an exported function. You can toggle
+module (\ic{ImplementationModule}) with an exported function. You can toggle
 the \emph{exported} flag with the intention \intention{Toggle Export}. The second
 module (\ic{ModuleUsingTheExportedFun- ction}) imports the
 \ic{ImplementationModule} with the \ic{im- ports} keyword in the module header.
@@ -155,7 +152,8 @@ MPS model!) requires the following three steps:
   the library, the used library has to be specified in the \ic{used libraries}
   section:
   
-\begin{lstlisting}[language=mbeddr, morekeywords={}]
+\begin{lstlisting}[language=mbeddr, morekeywords={executable, used, libraries,
+included, modules}] 
 executable AnExe isTest: true { 
   used libraries 
     MathLib  
@@ -804,6 +802,15 @@ folder (top right) is useful, since it shows the actual error message).
 You can update the error output text in the text area at any time; press the
 button with the two green arrows to refresh the found nodes on the right.
 
+\parhead{Running directly in the IDE} The approach shown above is useful if you
+get error output from an mbeddr program running on another machine. If you run it on the machine that also runs
+the mbeddr IDE, you can  also run the C program directly from inside the mbeddr
+IDE. To do so, you have to create a run configuration for your executable (this
+is described in detail in the section on debugging: \sect{details_debugging}) and
+then run it with the little green arrow inside MPS. The output of the program is
+shown directly in the MPS console view, and the error messages are directly
+hyperlinked to the respective program nodes.
+
 
 \parhead{Logging Expressions} For debugging purposes it is often useful to log
 expressions without manually creating a message and a report statement. To this
@@ -876,7 +883,7 @@ enter arbitrary text. One line only! The following shows as simple
 comment.
 
 \begin{center} 
-  \includegraphics[scale=0.6]{figures/core/onelinecomment.png}
+  \includegraphics[width=\columnwidth]{figures/core/onelinecomment.png}
 \end{center}
 
 A multi-line comment statement can be created by typing \ic{/*} in statement
@@ -914,14 +921,14 @@ next screenshot):
 
 
 \begin{center} 
-  \includegraphics[scale=0.4]{figures/core/todoexamplecode.png}
+  \includegraphics[scale=0.5]{figures/core/todoexamplecode.png}
 \end{center}
 
 To find the TODOs anywhere in your project, use the $Tools -> mbeddr TODO$. It
 shows the TODOs in the form of a Find Usages dialog.
 
 \begin{center} 
-  \includegraphics[scale=0.35]{figures/core/todoview.png}
+  \includegraphics[scale=0.45]{figures/core/todoview.png}
 \end{center}
 
 The view has many view options (try them!). The most important one is the top

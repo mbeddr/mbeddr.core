@@ -227,7 +227,7 @@ menu, see figure below).
 Initially, it will look as follows:
 
 \begin{lstlisting}[language=mbeddr, morekeywords={Target, Platform,
-Configuration, Items, Binaries}] 
+Configuration, Items, Binaries}, deletekeywords={no}] 
 Target Platform: 
   <no target> 
  
@@ -357,5 +357,50 @@ element is then selected in the editor.
 
 \greyboxnote{That same Hello World example can be created using the $Code
 \rightarrow Make Hello World$ menu. }
+
+\parhead{Command-Line Generation} mbeddr C projects can be generated from the
+command line via \ic{ant} -- and through \ic{ant}, they can be included in CI
+servers. To generate the necessary ant build file (\ic{build.xml}), mark the
+current project in the mbeddr/MPS IDE and select \ic{(Re-)Generate and build
+file for Project} from the \ic{Code} menu. This creates two files, both in the
+project root directory (next to the \ic{.mpr} file): a \ic{build.xml} and a
+\ic{build.properties}.
+
+The \ic{build.xml} file contains the invocation of the MPS generator; its
+\ic{build} target performs the actual generation. No changes is ever necessary
+in this file. 
+
+The \ic{build.properties} contains local settings. You have to specify the MPS
+directory (e.g., the \ic{MPS25.app} directory on a \onmac) and a temp directory
+where MPS can create some temporary files.
+
+To run the generator, invoke \ic{ant} in the project directory. You will get the
+following output:
+
+\begin{lstlisting}
+~/projects/hw$ ant
+Buildfile: /Users/markusvoelter/projects/hw/build.xml
+
+build:
+[mps.generate] Loaded project [file=/Users/markusvoelter/projects/hw/HelloWorld.mpr] 
+[mps.generate] Generating in strict mode, parallel generation = on 
+[mps.generate] Generating:
+[mps.generate]     MPS Project [file=/Users/markusvoelter/projects/hw/HelloWorld.mpr]
+
+BUILD SUCCESSFUL
+Total time: 18 seconds
+\end{lstlisting}
+
+If you now change to the \ic{solutions/HellowWorld/source\_gen/main/}, you will
+see the output:
+
+\begin{lstlisting}
+~/projects/hw/solutions/HelloWorld/source_gen/HelloWorld/HelloWorld/main$ ls -ll
+total 32
+-rw-r--r--  1 markusvoelter  staff   440 Feb 20 15:00 Makefile
+-rw-r--r--  1 markusvoelter  staff    92 Feb 20 15:00 HelloWorld.c
+-rw-r--r--  1 markusvoelter  staff   150 Feb 20 15:00 HelloWorld.h
+-rw-r--r--  1 markusvoelter  staff  1582 Feb 21 10:55 trace.info
+\end{lstlisting}
 
 
