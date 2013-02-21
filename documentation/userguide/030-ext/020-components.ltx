@@ -506,7 +506,7 @@ that it can only be set in one piece. This is especially useful when
 you can assign to fields of complex data items (as in \ic{carData.position.x =
 value}):
 
-\begin{lstlisting}[language=mbeddr, morekeywords={}]
+\begin{lstlisting}[language=mbeddr, morekeywords={internal}]
 exported struct Position { 
   int8 x; 
   int8 y; 
@@ -530,4 +530,5 @@ could be assigned (as in \ic{carData.position = otherPosition;}).
 Both \ic{atomic} and \ic{strict} are necessary for certain middleware platforms.
 In a pure-C/no-middleware implementation, these two options are not relevant.
 
-
+\todo{Port Cardinalities}
+\todo{Interface type}

@@ -2,8 +2,8 @@
 
 \chapter{Installation and Setup}
 
-However, this section describes the installation of mbeddr in detail, including
-Java and MPS itself. 
+This section describes the installation of mbeddr in detail, including
+Java, MPS and the additional tools needed for visualization and verification. 
 
 \greyboxnote{We are working on a all-in-one distribution that includes MPS and
 mbeddr. Stay tuned.}
@@ -11,8 +11,11 @@ mbeddr. Stay tuned.}
 \section{Java} 
 
 MPS is a Java application. So as the first step, you have to install a Java
-Development Kit version 1.6 or greater (JDK 1.6). You can get it from here \\
+Development Kit version 1.6.x. You can get it from here \\
 \hspace*{5mm}\ic{http://www.oracle.com/technetwork/java/javase/downloads/index.html}
+\\ 
+Note that currently MPS does not run on JDK 1.7.
+
 
 \section{JetBrains Meta Programming System (MPS)} 
 
@@ -39,8 +42,8 @@ after the change:
 -Dfile.encoding=UTF-8
 \end{lstlisting}
 
-On some 32bit Windows XP systems we had to reduce the \ic{-Xmx1200m} setting to
-\ic{768m} to get it to work.
+\onwin On some 32bit Windows XP systems we had to reduce the \ic{-Xmx1200m}
+setting to \ic{768m} to get it to work.
 
 
 
@@ -49,11 +52,13 @@ On some 32bit Windows XP systems we had to reduce the \ic{-Xmx1200m} setting to
 The mbeddr toolkit relies on \ic{gcc} and \ic{make} for compilation (unless you
 use a different, target-specific build process). 
 
-\begin{itemize}
-  \item On Mac you should install XCode to get \ic{gcc}, \ic{gdb}, \ic{make} and the
-  associated tools.
-  \item On Linux, these tools should be installed by default.
-  \item On Windows we recommend installing cygwin
+\onmac On the Mac, you should install XCode to get \ic{gcc}, \ic{gdb},
+\ic{make} and the associated tools.
+
+\onlin On Linux, these tools should be installed by default.
+
+
+\onwin On Windows we recommend installing cygwin
      (\ic{http://www.cygwin.com/}), a Unix-like environment for Windows. When
 selecting the packages to be installed, make sure \ic{gcc-core}, \ic{gdb} and
 \ic{make} are included (both of them are in the \ic{Devel} subtree in the selection
@@ -61,7 +66,6 @@ dialog). The \ic{bin} directory of your cygwin installation has to be added to t
 \ic{PATH} variable; either globally, or in the script that starts up MPS (MPS
 runs \ic{make}, so it has to be visible to MPS). On Windows, the \ic{mps.bat}
 file in the MPS installation folder would have to be adapted like this:
-\end{itemize}
  
 \begin{lstlisting}
 ::rem mbeddr depends on Cygwin: gcc, make etc
@@ -71,21 +75,22 @@ set PATH=C:\ide\Cygwin\bin;%PATH%
 
 \section{Graphviz}
 
-MPS supports visualization of models via PlantUML
+MPS supports visualization via PlantUML
 (\ic{http://plantuml.sourceforge.net}), directly embedded in MPS.
-To use it, you have to install graphviz from \ic{http://graphviz.org}. We use
-version 2.30. After the installation, you have to put the \ic{bin} directory of
-graphviz into the path. Either globally, or by modifying the MPS startup script
-in the same way as above:
+To use it, you have to install graphviz, which you can get from
+\ic{http://graphviz.org}.
+We use version 2.30. After the installation, you have to put the \ic{bin}
+directory of graphviz into the path. Either globally, or by modifying the MPS
+startup script in the same way as above:
 
 \begin{lstlisting}
 ::rem mbeddr depends on graphviz dot
 ::rem adapt the following to your graphviz bin path
-set PATH=C:\ide\graphviz2.28\bin;%PATH%
+set PATH=C:\ide\graphviz2.30\bin;%PATH%
 \end{lstlisting}
 
-On Windows, you also have to have an environment variable \ic{GRAPHVIZ\_DOT}
-that points to the \ic{dot.exe} file supplied with graphviz.
+\onwin On Windows, you also have to have an environment variable
+\ic{GRAPHVIZ\_DOT} that points to the \ic{dot.exe} file supplied with graphviz.
 
 \section{mbeddr}
 
@@ -100,35 +105,45 @@ distribution can be downloaded from the \ic{mbeddr.com} website:
 \hspace{10mm} \ic{http://mbeddr.wordpress.com/getit/}
 \vspace{-3mm}
 
-The ZIP file you can get there contains this user guide, an early version of the
-extension guide as well as a set of plugins for MPS. Please take all the folders
-inside the \ic{plugins} directory in the ZIP file and copy them into the
-\ic{plugins} directory under MPS\footnote{Note that there is also a
-\ic{plugin} (without the \ic{s}) directory under MPS!}. So, for example, after
-copying, there should be a \ic{\$MPS\_DIR\$/plugins/mbeddr.core} directory.
+The ZIP file you can get there contains this user guide as well as a set of
+plugins for MPS. Please take all the folders inside the \ic{plugins} directory
+in the ZIP file and copy them into the \ic{plugins} directory under
+MPS\footnote{Note that there is also a \ic{plugin} (without the \ic{s})
+directory under MPS!}. So, for example, after copying, there should be a
+\ic{\$MPS\_DIR\$/plugins/mbeddr.core} directory.
 
-\parhead{Installing From github} The github repo ist a
-\ic{https://github.com/mbeddr/mbeddr.core}. Here are the steps to get
-things running:
+\parhead{Installing From github} Here are the steps to get
+mbeddr running from the github repository. You should only do this if you want
+to stay at the bleeding edge of mbeddr development, and if you plan to
+regularly update your local mbeddr, or if you plan to fork it. Otherwise, we
+recommend you stay with the distribution discussed above. The repository is at 
+\ic{https://github.com/mbeddr/mbeddr.core}.
+
 
 \begin{itemize}
-  \item Clone the repository onto your local machine.
-  \item Inside the cloned repository, there is a \ic{tools} folder. This folder
-  contains a \ic{mbeddr.spawner} folder. This folder (not just its contents)
-  must be copied into the \ic{plugins} directory inside MPS (note that there is also a
-  \ic{plugin} directory in MPS, without the \ic{s}!).
+  \item Clone the repository onto your local machine. 
+  
+  \item The mbeddr debugger is based on \ic{gdb}, which has been installed as
+  part of the Cygwin install. However, we don't use \ic{gdb} directly; rather
+  we use the Eclipse CDT debug bridge. This contains native code, and Java has to be able to
+  find this native code. The Eclipse code is packaged into a special MPS plugin
+  which you have to install into MPS. To do so, please move (not just copy!) the
+  \ic{spawner} folder from the \ic{tools} directory of mbeddr into the
+  \ic{plugins} directory of MPS (again, make sure it ends up the \ic{plugins}
+  directory, not in \ic{plugin}).
+  
   \item Rebuild all the languages. We provide a shell script for this purpose 
   (\ic{.bat} and \ic{.sh}) called \ic{rebuildLanguagesAfterCheckout}. 
   It is in the \ic{code/languages} directory. For this to work, you have to
   configure all \ic{build.properties} files to point to your MPS install dir and
-  the mbeddr root dir (\textbf{You have to use forward shlashes as directory
-  separators even on Windows!}). The easiest way to find all the places where this has to be adapted is to search for all \ic{build.properties.example} under the mbeddr
+  the mbeddr root dir (\onwin \textbf{You have to use forward shlashes as
+  directory separators even on Windows!}). The easiest way to find all the places where this has to be adapted is to search for all \ic{build.properties.example} under the mbeddr
   root mbeddr directory; remove the \ic{.example} and fill in the respective
   directories. 
 
-  \item We now have to make the project aware of the \ic{mbeddr.core} languages
-  in the github checkout. Go to the $File \rightarrow Settings$ (on the
-  Mac it is under $MPS \rightarrow Preferences$) and select the $Global
+  \item We now have to make future application projects aware of the
+  \ic{mbeddr.core} languages in the github checkout directory. Go to the $File
+  \rightarrow Settings$ (on the Mac it is under $MPS \rightarrow Preferences$) and select the $Global
   Libraries$ in the IDE settings. Create a library called \ic{mbeddr.core} that
   points to the \ic{code} directory of the unzipped mbeddr
   installation. The library must point to the \ic{code}
@@ -142,14 +157,6 @@ things running:
 Notice that this is a global settings and have to be performed only once
 before your first application project.
 
-  \item The mbeddr debugger is based on \ic{gdb}, which has been installed as
-  part of the Cygwin install. However, we don't use \ic{gdb} directly; rather
-  we use the Eclipse CDT debug bridge. This contains native code, and Java has to be able to
-  find this native code. The Eclipse code is packaged into a special MPS plugin
-  which you have to install into MPS. To do so, please move (not just copy!) the
-  \ic{spawner} folder from the \ic{tools} directory of mbeddr into the
-  \ic{plugins} directory of MPS (again, make sure it ends up the \ic{plugins}
-  directory, not in \ic{plugin}).
   
 \end{itemize}
 
@@ -165,34 +172,47 @@ tools:
   \item You have to install \ic{NuSMV} from \ic{http://nusmv.fbk.eu/} to be able
   to verify state machines.
   \item You have to install \ic{Yices 1} from \ic{http://yices.csl.sri.com/} to be
-  able to verify decision tables and feature models.
+  able to verify decision tables and feature models. Note that there is also a
+  \ic{Yices 2}, which does \emph{not} work!
   \item You have to install \ic{CBMC} from \ic{http://www.cprover.org/cbmc/} to be able
   to verify component protocols and contracts.
 \end{itemize}
 
 For each of these tools, the exectuables have to be on the path! You can verify
 that they are by simply typing \ic{nusmv}, \ic{yices} and/or \ic{cbmc} somewhere
-in a console. The respective tools should start.
+in a console. The respective tools should start, complaining that they need
+some kind of input to do useful work.
+
+
+
 
 \chapter{Writing Code in MPS}
 
 You can now start writing mbeddr code. \sect{helloworld} contains a tutorial
 that shows how to write the simplest possible program, the ubiquitous Hello,
-World. We suggest to take a look at this section.
-
-
-MPS is a projectional editor. It does not parse text and build an Abstract
-Syntax Tree (AST). Instead the AST is created directly by user editing actions,
-and what you see in terms of text (or other notations) is a projection. This has
-many advantages, but it also means that some of the well-known editing gestures
-we know from normal text editing don't work. So in this section we explain some
+World. We suggest to take a look at this section next. In this section we
+explain some of the ways how you can productively edit code with MPS. MPS is a
+projectional editor. It does not parse text and build an Abstract Syntax Tree
+(AST). Instead the AST is created directly by user editing actions, and what you
+see in terms of text (or other notations) is a projection. This has many
+advantages, but it also means that some of the well-known editing gestures we
+know from normal text editing don't work. So in this section we explain some
 keyboard shortcuts that are essential to work with MPS.
 
 Since the very first experience a projectional editor is somewhat
 different from what you are accustomed to in a text editor, we recommend
 you watch the following screencast:\\
-\hspace*{10mm} \ic{http://www.youtube.com/watch?v=wgsY3-ZX\_fs}  
+\hspace*{10mm} \ic{http://www.youtube.com/watch?v=NenPFYK0TPM}  
 
+To get an overview over the mbeddr/MPS IDE, you may want to take a look at the
+following screencast:\\
+\hspace*{10mm} \ic{http://www.youtube.com/watch?v=cJ4goWQxb1U}
+
+\section{Important Keyboard Shortcuts}
+
+Here is a summary of the most important keyboard shortcuts. Please take the time
+to learn them. It pays off! At the end of this section you can also find a cheat
+sheet that you can print and put next to your computer.
 
 \parhead{Entering Code} In MPS you can only enter code that is
 available from the code completion menu. Using aliases and other "tricks", MPS
@@ -309,17 +329,67 @@ feature heavily. The next section introduces some of these.
 project explorer (the big tree of the left), press \keystroke{Alt-F1} and then
 \keystroke{Enter}.
 
-\parhead{Make and Rebuild} By default, \keystroke{Ctrl-F9} (and
+\parhead{Open Inspector} Sometimes, additional properties of an element can be
+entered in the inspector ("properties view"). To open the inspector
+window, press \keystroke{Ctrl-2}.
+
+\parhead{Make and Rebuild} By default, \keystroke{Ctrl-F9} (\onmac
 \keystroke{Cmd-F9} on the Mac) makes the current module, i.e. it regenerates and
 recompiles if the current module has changed. We recommend using the Keymap
 preferences to assign \keystroke{Ctrl-Alt-F9} (and \keystroke{Cmd-Alt-F9} on
-the Mac) to a complete Rebuild of the current module; sometimes changes aren't
-detected correctly and a full rebuild is necessary.
+the Mac) to a complete Rebuild of the current solution; sometimes changes
+aren't detected correctly and a full rebuild is necessary.
+\keystroke{Ctrl-Alt-F8} and \keystroke{Ctrl-Alt-F10} should be mapped to a
+rebuild of the current model and the current project, respectively (see
+screenshot below).
+
+\begin{center} 
+  \includegraphics[width=12cm]{figures/tutorial/keymapbuild.png}
+\end{center}
 
 
-\greyboxnote{Since MPS 2.5, MPS comes with a productivity guide and actually
-useful hints and tips at startup. The productivity guide tracks the commands you
-use and recommends more productive ones. Find it in the \ic{Help} menu.}
+\pagebreak[4]
+\section{Cheat Sheet}
+
+Print, cut out and put it next to your monitor when you start with mbeddr. 
+
+\begin{tabular}{|l|l|}
+  \hline
+  \multicolumn{2}{|l|}{\textbf{Entering Text}} \\
+  \hline
+  Code Completion Menu & \keystroke{Ctrl-Space}  \\
+  Code Completion Menu Reset & \keystroke{Ctrl-Space} again \\
+  Intentions Menu & \keystroke{Alt-Enter}  \\
+  Select Intentions & \keystroke{Alt-Enter}, then type name  \\
+  Wrap With... & \keystroke{Ctrl-Alt-T} \\
+  Deleting & \keystroke{Backspace}, or Select-and-then-Backspace \\
+  \hline
+  \multicolumn{2}{|l|}{\textbf{Selection}} \\
+  \hline
+  Select Along Tree & \keystroke{Ctrl-Up/Down} \\
+  Select Siblings (List) & \keystroke{Shift-Up/Down} \\
+  \hline
+  \multicolumn{2}{|l|}{\textbf{Navigation}} \\
+  \hline
+  Select in Project & \keystroke{Alt-F1}, then \keystroke{Enter} \\
+  Go-To-Definition & \keystroke{Ctrl-Click} or \keystroke{Ctrl-B} \\
+  Find Usages & \keystroke{Alt-F7} \\
+  Outline & \keystroke{Alt-F12} \\
+  Open Inspectot & \keystroke{Ctrl-2} \\
+  \hline
+  \multicolumn{2}{|l|}{\textbf{Generic Refactoring}} \\
+  \hline
+  Add Documentation & \keystroke{Alt-A} \\
+  Comment Out & \keystroke{Ctrl-Shift-C} \\
+  \hline
+  \multicolumn{2}{|l|}{\textbf{Build}} \\
+  \hline
+  Make Solution & \keystroke{Ctrl-F9} \\
+  Rebuild Solution & \keystroke{Ctrl-Alt-F9} (custom mapped) \\
+  Rebuild Model & \keystroke{Ctrl-Alt-F8} (custom mapped) \\
+  Rebuild Project & \keystroke{Ctrl-Alt-F10} (custom mapped) \\
+  \hline
+\end{tabular}
 
    
    

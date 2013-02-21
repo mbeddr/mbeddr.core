@@ -21,6 +21,7 @@
       <node role="additionalData" roleId="75wo.8745401669463270518" type="4l29.Component" typeId="4l29.5744000828452661387" id="6514529288613845827">
         <property name="name" nameId="tpck.1169194664001" value="Engine" />
       </node>
+      <node role="textParts" roleId="75wo.4539911450717510658" type="75wo.TextPart" typeId="75wo.4539911450717510653" id="8983161156585691651" />
     </node>
     <node role="requirements" roleId="75wo.8745401669462963171" type="75wo.Requirement" typeId="75wo.8745401669462952101" id="6514529288613845816">
       <property name="priority" nameId="75wo.3314758227758879688" value="0" />
@@ -31,6 +32,7 @@
       <node role="additionalData" roleId="75wo.8745401669463270518" type="4l29.Actor" typeId="4l29.5744000828452661378" id="6514529288613845821">
         <property name="name" nameId="tpck.1169194664001" value="A1" />
       </node>
+      <node role="textParts" roleId="75wo.4539911450717510658" type="75wo.TextPart" typeId="75wo.4539911450717510653" id="8983161156585691659" />
     </node>
     <node role="requirements" roleId="75wo.8745401669462963171" type="75wo.Requirement" typeId="75wo.8745401669462952101" id="6514529288613908326">
       <property name="priority" nameId="75wo.3314758227758879688" value="0" />
@@ -40,6 +42,7 @@
       <node role="additionalData" roleId="75wo.8745401669463270518" type="4l29.UseCase" typeId="4l29.6514529288613812195" id="6514529288613908329">
         <property name="name" nameId="tpck.1169194664001" value="UC2" />
       </node>
+      <node role="textParts" roleId="75wo.4539911450717510658" type="75wo.TextPart" typeId="75wo.4539911450717510653" id="8983161156585691661" />
     </node>
     <node role="requirements" roleId="75wo.8745401669462963171" type="75wo.Requirement" typeId="75wo.8745401669462952101" id="6514529288613940857">
       <property name="priority" nameId="75wo.3314758227758879688" value="0" />
@@ -49,6 +52,7 @@
       <node role="additionalData" roleId="75wo.8745401669463270518" type="4l29.UseCase" typeId="4l29.6514529288613812195" id="6514529288613940859">
         <property name="name" nameId="tpck.1169194664001" value="UC3" />
       </node>
+      <node role="textParts" roleId="75wo.4539911450717510658" type="75wo.TextPart" typeId="75wo.4539911450717510653" id="8983161156585691656" />
     </node>
     <node role="requirements" roleId="75wo.8745401669462963171" type="75wo.Requirement" typeId="75wo.8745401669462952101" id="6514529288613845811">
       <property name="priority" nameId="75wo.3314758227758879688" value="0" />
@@ -78,6 +82,7 @@
           <link role="usecase" roleId="4l29.6514529288613918327" targetNodeId="6514529288613940859" resolveInfo="UC3" />
         </node>
       </node>
+      <node role="textParts" roleId="75wo.4539911450717510658" type="75wo.TextPart" typeId="75wo.4539911450717510653" id="8983161156585691662" />
     </node>
   </root>
 </model>

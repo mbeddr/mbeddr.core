@@ -430,14 +430,14 @@
       <property name="virtualPackage" nameId="tpck.1193676396447" value="adapter" />
       <property name="name" nameId="tpck.1169194664001" value="IContextForPortRefExpr" />
     </node>
-    <node type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="5065104421776015558">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="comp.runnable.whenconnected" />
-      <property name="name" nameId="tpck.1169194664001" value="IConnectedCheck" />
-    </node>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="5065104421775983277">
       <property name="virtualPackage" nameId="tpck.1193676396447" value="comp.runnable.whenconnected" />
       <property name="name" nameId="tpck.1169194664001" value="WhenPortsConnectedExpr" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="mj1l.8860443239512128050" resolveInfo="Expression" />
+    </node>
+    <node type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="5065104421776015558">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="comp.runnable.whenconnected" />
+      <property name="name" nameId="tpck.1169194664001" value="IConnectedCheck" />
     </node>
   </roots>
   <root id="4491876417845474761">
@@ -1505,7 +1505,7 @@
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7798021607625522242">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="tpck.1169194658468" resolveInfo="INamedConcept" />
     </node>
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="3764368431725449548">
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="2520049670573291787">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="vs0r.3578942323568389911" resolveInfo="IGeneratesCodeForIDE" />
     </node>
   </root>
@@ -1831,7 +1831,6 @@
     </node>
   </root>
   <root id="2116578915583337367" />
-  <root id="5065104421776015558" />
   <root id="5065104421775983277">
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="5065104421775983278">
       <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
@@ -1856,5 +1855,6 @@
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="2116578915583337367" resolveInfo="IContextForPortRefExpr" />
     </node>
   </root>
+  <root id="5065104421776015558" />
 </model>
 

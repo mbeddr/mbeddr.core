@@ -84,10 +84,12 @@ binary:
 \begin{lstlisting}[language=mbeddr-buildconfig]
 executable MbeddrTutorial isTest: true { 
   used external libraries 
-  used mbeddr libraries 
+  
+  used mbeddr libraries
+   
   included modules 
-    Main (mbeddr.tutorial.main.m1) 
-    FunctionPointers (mbeddr.tutorial.main.m1) 
+    Main  
+    FunctionPointers 
 }
 \end{lstlisting}
 
@@ -185,14 +187,25 @@ As you can see the test fails. It says that in the
 \ic{0}. You can either navigate to the offending \ic{assert} manually.
 Alternatively you can copy the console output into the clipboard and then paste
 it into the text box into the window that opens from the \ic{Analyze -> mbeddr
-Analyze Error Output} menu:
+Analyze Error Output} menu. Double clicking on the respective line opens the editor on the offending
+\ic{assert} statement. 
+
 
 \begin{center} 
   \includegraphics[width=\columnwidth]{figures/tutorial/erroroutput.png}
 \end{center}
 
-Double clicking on the respective line opens the editor on the offending
-\ic{assert} statement.
+
+The approach shown above is useful if you get error output from an mbeddr
+program running on another machine. If you run it on the machine that also runs
+the mbeddr IDE, you can  also run the C program directly from inside the mbeddr
+IDE. To do so, you have to create a run configuration for your executable (this
+is described in detail in the section on debugging: \sect{details_debugging}) and
+then run it with the little green arrow inside MPS. The output of the program is
+shown directly in the MPS console view, and the error messages are directly
+hyperlinked to the respective program nodes.
+
+
 
 
 

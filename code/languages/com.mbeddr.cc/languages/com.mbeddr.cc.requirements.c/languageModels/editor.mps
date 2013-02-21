@@ -200,11 +200,9 @@
           <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="3vkx.3534497005926949336" />
         </node>
       </node>
-      <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.DrawBracketsStyleClassItem" typeId="tpc2.1219226236603" id="3534497005926957137">
-        <property name="flag" nameId="tpc2.1186414551515" value="true" />
-      </node>
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="3562422675424069427">
         <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Horizontal" typeId="tpc2.1106270549637" id="3562422675424069428" />
+        <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Indent" typeId="tpc2.1198256887712" id="8983161156585931492" />
         <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="3562422675424069426">
           <property name="text" nameId="tpc2.1073389577007" value="tests:" />
         </node>

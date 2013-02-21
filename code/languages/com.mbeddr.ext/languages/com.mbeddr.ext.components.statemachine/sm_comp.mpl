@@ -52,33 +52,9 @@
             </external-mapping>
           </greater-priority-mapping>
           <lesser-priority-mapping>
-            <mapping-set>
-              <mapping-set-element>
-                <generator generatorUID="0e384510-95ab-427d-a3f4-b0e5ceb69b2b(com.mbeddr.ext.components#312587838749342891)" />
-                <external-mapping>
-                  <mapping-node modelUID="r:b9b22e10-428b-4f92-963a-8cf564256895(com.mbeddr.ext.components.generator.template.main@generator)" nodeID="312587838749342892" />
-                </external-mapping>
-              </mapping-set-element>
-              <mapping-set-element>
-                <generator generatorUID="6285e77c-f535-44cc-be5b-103da66e3c19(com.mbeddr.ext.components.gen_nomw#8105003328815413560)" />
-                <external-mapping>
-                  <mapping-node modelUID="r:769ad9a0-f26a-4d17-9cc6-f3ae937bc774(com.mbeddr.ext.components.gen_nomw.generator.template.main@generator)" nodeID="*" />
-                </external-mapping>
-              </mapping-set-element>
-            </mapping-set>
-          </lesser-priority-mapping>
-        </mapping-priority-rule>
-        <mapping-priority-rule kind="strictly_after">
-          <greater-priority-mapping>
-            <generator generatorUID="318e60a1-d099-4839-94ee-2dc303d9c6f0(com.mbeddr.ext.components.statemachine#8663730687027710488)" />
+            <generator generatorUID="6285e77c-f535-44cc-be5b-103da66e3c19(com.mbeddr.ext.components.gen_nomw#8105003328815413560)" />
             <external-mapping>
               <all-local-mappings />
-            </external-mapping>
-          </greater-priority-mapping>
-          <lesser-priority-mapping>
-            <generator generatorUID="0e384510-95ab-427d-a3f4-b0e5ceb69b2b(com.mbeddr.ext.components#312587838749342891)" />
-            <external-mapping>
-              <mapping-node modelUID="r:910aa226-f466-4532-b802-c2ccde0fbc4b(com.mbeddr.ext.components.generator.main.debug@generator)" nodeID="*" />
             </external-mapping>
           </lesser-priority-mapping>
         </mapping-priority-rule>
