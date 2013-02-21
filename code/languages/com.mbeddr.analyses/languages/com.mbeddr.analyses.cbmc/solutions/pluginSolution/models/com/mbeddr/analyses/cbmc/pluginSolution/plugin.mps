@@ -76,11 +76,11 @@
     </node>
     <node type="tp4k.ActionDeclaration" typeId="tp4k.1203071646776" id="2161187783549686647">
       <property name="name" nameId="tpck.1169194664001" value="CbmcVerifyDecisionTableAction" />
-      <property name="caption" nameId="tp4k.1205250923097" value="Verify decision table with CBMC" />
+      <property name="caption" nameId="tp4k.1205250923097" value="Verify with CBMC (experimental)" />
     </node>
     <node type="tp4k.ActionDeclaration" typeId="tp4k.1203071646776" id="3907476694113351134">
       <property name="name" nameId="tpck.1169194664001" value="CbmcVerifyStatemachineAction" />
-      <property name="caption" nameId="tp4k.1205250923097" value="Verify statemachine with CBMC" />
+      <property name="caption" nameId="tp4k.1205250923097" value="Verify with CBMC (experimental)" />
     </node>
     <node type="tp4k.ActionDeclaration" typeId="tp4k.1203071646776" id="6472990431939816278">
       <property name="name" nameId="tpck.1169194664001" value="CbmcVerifyAnalysisConfigurationAction" />

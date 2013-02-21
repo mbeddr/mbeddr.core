@@ -42,7 +42,7 @@
   <roots>
     <node type="tp4k.ActionDeclaration" typeId="tp4k.1203071646776" id="1611636138415538362">
       <property name="name" nameId="tpck.1169194664001" value="DecTabVerificationAction" />
-      <property name="caption" nameId="tp4k.1205250923097" value="Verifiy Decision Table" />
+      <property name="caption" nameId="tp4k.1205250923097" value="Verifiy" />
       <property name="mnemonic" nameId="tp4k.1215865999894" value="V" />
     </node>
     <node type="tp4k.ActionGroupDeclaration" typeId="tp4k.1203087890642" id="1611636138415538514">
