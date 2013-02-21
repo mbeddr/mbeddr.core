@@ -3,7 +3,40 @@
   <property file="build.properties"/>
   
   <property name="languagesDir" value="${mbeddr.github.core.home}/code/languages/"/>
+  
+  <property name="mbeddr.tutorial.project.dir" value="code/applications/tutorial"/>
+  <property name="mbeddr.tutorial.project.mpr" value="code/applications/tutorial/mbeddr.tutorial.mpr"/>
+  
+  <property name="mbeddr.core.project.dir" value="code/languages/com.mbeddr.core"/>
+  <property name="mbeddr.core.project.mpr" value="code/languages/com.mbeddr.core/core.dev.mpr"/>
+  
+  <property name="mbeddr.ext.project.dir" value="code/languages/com.mbeddr.ext"/>
+  <property name="mbeddr.ext.project.mpr" value="code/languages/com.mbeddr.ext/ext.dev.mpr"/> <!-- for the time being in core project... -->
 
+  <property name="mbeddr.util.project.dir" value="code/languages/com.mbeddr.mpsutil"/>
+  <property name="mbeddr.util.project.mpr" value="code/languages/com.mbeddr.mpsutil/mpsutil.dev.mpr"/>
+
+  <property name="mbeddr.analyses.project.dir" value="code/languages/com.mbeddr.analyses"/>
+  <property name="mbeddr.analyses.project.mpr" value="code/languages/com.mbeddr.analyses/analyses.dev.mpr"/> <!-- for the time being in core project... -->
+  
+  <property name="mbeddr.cc.project.dir" value="code/languages/com.mbeddr.cc"/>
+  <property name="mbeddr.cc.project.mpr" value="code/languages/com.mbeddr.cc/cc.dev.mpr"/> <!-- for the time being in core project... -->
+  
+  <property name="mbeddr.debugger.project.dir" value="code/languages/com.mbeddr.debugger/"/>
+  <property name="mbeddr.debugger.project.mpr" value="code/languages/com.mbeddr.debugger/debugger.dev.mpr"/>
+  
+  <property name="utilLanguageDir" value="${mbeddr.github.core.home}/${mbeddr.util.project.dir}/languages"/>
+  <property name="debuggerLanguageDir" value="${mbeddr.github.core.home}/${mbeddr.debugger.project.dir}/languages"/>
+  <property name="coreLanguageDir" value="${mbeddr.github.core.home}/${mbeddr.core.project.dir}/languages"/>
+  <property name="extLanguageDir" value="${mbeddr.github.core.home}/${mbeddr.ext.project.dir}/languages"/>
+  <property name="ccLanguageDir" value="${mbeddr.github.core.home}/${mbeddr.cc.project.dir}/languages"/>
+  <property name="analysesanguageDir" value="${mbeddr.github.core.home}/${mbeddr.analyses.project.dir}/languages"/>
+  
+  <!-- validate if path properties are set in build.properties -->
+  <fail unless="mbeddr.github.core.home">mbeddr.github.core.home must be set in your build.properties</fail>
+  <fail unless="mps.platform.caches">mps.platform.caches must be set in your build.properties</fail>
+  <fail unless="mps.home">mps.home must be set in your build.properties</fail>
+  
   <path id="mps.ant.path">
    <pathelement location="${mps.home}/lib/mps-backend.jar"/>
    <pathelement location="${mps.home}/lib/jdom.jar"/>
@@ -38,7 +71,15 @@
       <jvmargs refid="myargs"/>
       <macro name="mbeddr.github.core.home" path="${mbeddr.github.core.home}"/>
 	  <project file="${mbeddr.github.core.home}/code/applications/tutorial/mbeddr.tutorial.mpr"/>
-	  <library name="languages" dir="${languagesDir}"/>
+	  
+      <library name="util.project" dir="${utilLanguageDir}"/>                                                                                                
+      <library name="core.project" dir="${coreLanguageDir}"/>                                                                                                
+      <library name="debugger.project" dir="${debuggerLanguageDir}"/>                                                                                        
+      <library name="ext.project" dir="${extLanguageDir}"/> 
+      <library name="cc.project" dir="${ccLanguageDir}"/> 
+	  <library name="analyses.project" dir="${analysesanguageDir}"/> 
+      <library name="tutorial.project" dir="${mbeddr.github.core.home}/${mbeddr.tutorial.project.dir}/languages"/> 
+      <library name="tutorial.project" dir="${mbeddr.github.core.home}/${mbeddr.tutorial.project.dir}/solutions"/> 	  
     </mps.generate>
   </target>
 

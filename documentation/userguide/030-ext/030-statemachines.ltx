@@ -178,7 +178,7 @@ In addition to model checking (discussed in the chapter on analyses) state
 machines can also be checked regularly. The following piece of test code checks
 if the state machine works correctly:
 
-\begin{lstlisting}[language=mbeddr, morekeywords={}]
+\begin{lstlisting}[language=mbeddr, morekeywords={smtrigger}]
 exported test case testTheWrapper { 
   smtrigger(wc, reset); 
   assert(0) isInState(wc, start); 
@@ -207,3 +207,6 @@ exported test case testTheWrapper {
   } 
 }  
 \end{lstlisting}
+
+\todo{Hierarchical SMs}
+\todo{Visualizing SMs}

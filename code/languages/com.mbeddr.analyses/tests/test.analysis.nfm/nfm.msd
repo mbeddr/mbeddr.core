@@ -4,10 +4,8 @@
     <modelRoot path="${solution_descriptor}/models" />
   </models>
   <sourcePath />
-  <dependencies>
-    <dependency reexport="false">d23b59ca-f643-49ec-ae67-3f4488570639(test.analysis.formsera)</dependency>
-  </dependencies>
   <usedLanguages>
+    <usedLanguage>5d09074f-babf-4f2b-b78b-e9929af0f3be(com.mbeddr.analyses.base)</usedLanguage>
     <usedLanguage>42270baf-e92c-4c32-b263-d617b3fce239(com.mbeddr.analyses.cbmc)</usedLanguage>
     <usedLanguage>61c69711-ed61-4850-81d9-7714ff227fb0(com.mbeddr.core.expressions)</usedLanguage>
     <usedLanguage>6d11763d-483d-4b2b-8efc-09336c1b0001(com.mbeddr.core.modules)</usedLanguage>

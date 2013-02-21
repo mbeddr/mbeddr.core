@@ -4,7 +4,7 @@
   <language namespace="d6714220-402d-48cb-a4a2-88223c6257f6(com.mbeddr.cc.requirements.scenarios)" />
   <devkit namespace="a4dac888-0788-4852-b4c0-f386bf6f2c0b(com.mbeddr.cc.reqtrace)" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
-  <import index="4l29" modelUID="r:9f885776-26d3-48f5-a714-b3a8fa61c18a(com.mbeddr.cc.requirements.scenarios.structure)" version="4" implicit="yes" />
+  <import index="4l29" modelUID="r:9f885776-26d3-48f5-a714-b3a8fa61c18a(com.mbeddr.cc.requirements.scenarios.structure)" version="6" implicit="yes" />
   <import index="75wo" modelUID="r:eaa205a4-f15c-47d3-99e2-e648881b5997(com.mbeddr.cc.requirements.structure)" version="7" implicit="yes" />
   <roots>
     <node type="75wo.RequirementsModule" typeId="75wo.8745401669462963169" id="5744000828452680214">
@@ -29,13 +29,14 @@
         </node>
         <node role="contents" roleId="4l29.5744000828452661377" type="4l29.Capability" typeId="4l29.5744000828452661413" id="5744000828452925866">
           <property name="name" nameId="tpck.1169194664001" value="sendData" />
-          <node role="returns" roleId="4l29.5744000828452661425" type="4l29.InlineDataItem" typeId="4l29.5744000828452684334" id="5744000828453061474">
-            <node role="item" roleId="4l29.5744000828452684337" type="4l29.DataItem" typeId="4l29.5744000828452648916" id="5744000828453061475">
+          <node role="returns" roleId="4l29.5744000828452661425" type=".com.mbeddr.cc.requirements.scenarios.structure.InlineDataItem" id="5744000828453061474">
+            <node role="item" type="4l29.DataItem" typeId="4l29.5744000828452648916" id="5744000828453061475">
               <property name="name" nameId="tpck.1169194664001" value="SendStatus" />
             </node>
           </node>
         </node>
       </node>
+      <node role="textParts" roleId="75wo.4539911450717510658" type="75wo.TextPart" typeId="75wo.4539911450717510653" id="8983161156585691663" />
     </node>
     <node role="requirements" roleId="75wo.8745401669462963171" type="75wo.Requirement" typeId="75wo.8745401669462952101" id="5744000828452683536">
       <property name="priority" nameId="75wo.3314758227758879688" value="0" />
@@ -50,21 +51,21 @@
         </node>
         <node role="contents" roleId="4l29.5744000828452661377" type="4l29.Capability" typeId="4l29.5744000828452661413" id="5744000828452683542">
           <property name="name" nameId="tpck.1169194664001" value="measure" />
-          <node role="args" roleId="4l29.5744000828452661426" type="4l29.InlineDataItem" typeId="4l29.5744000828452684334" id="5744000828452687275">
-            <node role="item" roleId="4l29.5744000828452684337" type="4l29.DataItem" typeId="4l29.5744000828452648916" id="5744000828452687276">
+          <node role="args" roleId="4l29.5744000828452661426" type=".com.mbeddr.cc.requirements.scenarios.structure.InlineDataItem" id="5744000828452687275">
+            <node role="item" type="4l29.DataItem" typeId="4l29.5744000828452648916" id="5744000828452687276">
               <property name="name" nameId="tpck.1169194664001" value="Power" />
             </node>
           </node>
-          <node role="returns" roleId="4l29.5744000828452661425" type="4l29.InlineDataItem" typeId="4l29.5744000828452684334" id="5744000828453095893">
-            <node role="item" roleId="4l29.5744000828452684337" type="4l29.DataItem" typeId="4l29.5744000828452648916" id="5744000828453095894">
+          <node role="returns" roleId="4l29.5744000828452661425" type=".com.mbeddr.cc.requirements.scenarios.structure.InlineDataItem" id="5744000828453095893">
+            <node role="item" type="4l29.DataItem" typeId="4l29.5744000828452648916" id="5744000828453095894">
               <property name="name" nameId="tpck.1169194664001" value="Measurement" />
             </node>
           </node>
         </node>
         <node role="contents" roleId="4l29.5744000828452661377" type="4l29.Capability" typeId="4l29.5744000828452661413" id="5744000828452966659">
           <property name="name" nameId="tpck.1169194664001" value="hallo" />
-          <node role="args" roleId="4l29.5744000828452661426" type="4l29.InlineDataItem" typeId="4l29.5744000828452684334" id="5744000828453119604">
-            <node role="item" roleId="4l29.5744000828452684337" type="4l29.DataItem" typeId="4l29.5744000828452648916" id="5744000828453119605">
+          <node role="args" roleId="4l29.5744000828452661426" type=".com.mbeddr.cc.requirements.scenarios.structure.InlineDataItem" id="5744000828453119604">
+            <node role="item" type="4l29.DataItem" typeId="4l29.5744000828452648916" id="5744000828453119605">
               <property name="name" nameId="tpck.1169194664001" value="HalloData" />
             </node>
           </node>
@@ -76,6 +77,7 @@
           <link role="participant" roleId="4l29.5744000828452694713" targetNodeId="552710421071388909" resolveInfo="CC" />
         </node>
       </node>
+      <node role="textParts" roleId="75wo.4539911450717510658" type="75wo.TextPart" typeId="75wo.4539911450717510653" id="8983161156585691655" />
     </node>
     <node role="requirements" roleId="75wo.8745401669462963171" type="75wo.Requirement" typeId="75wo.8745401669462952101" id="552710421071388906">
       <property name="priority" nameId="75wo.3314758227758879688" value="0" />
@@ -92,14 +94,17 @@
           <property name="name" nameId="tpck.1169194664001" value="blubber" />
         </node>
       </node>
+      <node role="textParts" roleId="75wo.4539911450717510658" type="75wo.TextPart" typeId="75wo.4539911450717510653" id="8983161156585691650" />
     </node>
     <node role="requirements" roleId="75wo.8745401669462963171" type="75wo.Requirement" typeId="75wo.8745401669462952101" id="5744000828452680215">
       <property name="priority" nameId="75wo.3314758227758879688" value="0" />
       <property name="open" nameId="75wo.1165432222361744926" value="false" />
       <property name="name" nameId="tpck.1169194664001" value="CurrentData" />
       <property name="summmary" nameId="75wo.3402431285977818823" value="Represents a current flowing" />
-      <property name="proseText" nameId="75wo.8745401669463252438" value="Here are the requirements Details. You can enter as much as you like." />
       <node role="kind" roleId="75wo.8921256082857728256" type="75wo.FunctionalRequirementKind" typeId="75wo.8921256082857728250" id="5744000828452680216" />
+      <node role="textParts" roleId="75wo.4539911450717510658" type="75wo.TextPart" typeId="75wo.4539911450717510653" id="8983161156585691653">
+        <property name="text" nameId="75wo.4539911450717510654" value="Here are the requirements Details. You can enter as much as you like." />
+      </node>
     </node>
     <node role="requirements" roleId="75wo.8745401669462963171" type="75wo.Requirement" typeId="75wo.8745401669462952101" id="5744000828452816594">
       <property name="priority" nameId="75wo.3314758227758879688" value="0" />
@@ -124,6 +129,7 @@
           <property name="name" nameId="tpck.1169194664001" value="schedule" />
         </node>
       </node>
+      <node role="textParts" roleId="75wo.4539911450717510658" type="75wo.TextPart" typeId="75wo.4539911450717510653" id="8983161156585691664" />
     </node>
     <node role="requirements" roleId="75wo.8745401669462963171" type="75wo.Requirement" typeId="75wo.8745401669462952101" id="5744000828452830497">
       <property name="priority" nameId="75wo.3314758227758879688" value="0" />
@@ -132,6 +138,7 @@
       <property name="summmary" nameId="75wo.3402431285977818823" value="Run a measurement" />
       <property name="proseText" nameId="75wo.8745401669463252438" value="" />
       <node role="kind" roleId="75wo.8921256082857728256" type="4l29.ScenarioRequirementKind" typeId="4l29.5744000828452835552" id="5744000828452842002" />
+      <node role="textParts" roleId="75wo.4539911450717510658" type="75wo.TextPart" typeId="75wo.4539911450717510653" id="8983161156585691654" />
     </node>
     <node role="requirements" roleId="75wo.8745401669462963171" type="75wo.Requirement" typeId="75wo.8745401669462952101" id="8119642625901690642">
       <property name="priority" nameId="75wo.3314758227758879688" value="0" />
@@ -139,6 +146,7 @@
       <property name="name" nameId="tpck.1169194664001" value="AnotherScenario" />
       <property name="summmary" nameId="75wo.3402431285977818823" value="SomeData" />
       <node role="kind" roleId="75wo.8921256082857728256" type="4l29.ScenarioRequirementKind" typeId="4l29.5744000828452835552" id="8119642625901690644" />
+      <node role="textParts" roleId="75wo.4539911450717510658" type="75wo.TextPart" typeId="75wo.4539911450717510653" id="8983161156585691666" />
     </node>
     <node role="summaries" roleId="75wo.3314758227759002193" type="75wo.CountingSummary" typeId="75wo.3314758227759007649" id="8119642625901571690" />
   </root>

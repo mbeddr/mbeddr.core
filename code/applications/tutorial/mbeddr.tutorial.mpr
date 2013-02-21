@@ -14,7 +14,7 @@
       <modulePath path="${project}/languages/memory/memory.mpl" folder="languages" />
       <modulePath path="${project}/languages/metadata/metadata.mpl" folder="languages" />
       <modulePath path="${project}/languages/osconfig/osconfig.mpl" folder="languages" />
-      <modulePath path="${project}/languages/registers/registers.mpl" folder="languages" />
+      <modulePath path="${project}/languages/processorregisters/processorregisters.mpl" folder="languages" />
       <modulePath path="${project}/languages/vectors/vectors.mpl" folder="languages" />
       <modulePath path="${project}/solutions/mbeddr.tutorial.main/mbeddr.tutorial.main.msd" folder="exampleCode" />
       <modulePath path="${project}/solutions/mbeddr.tutorial.typesystemtests/typesystemtests.msd" folder="typesystem-tests" />

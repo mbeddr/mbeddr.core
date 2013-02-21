@@ -27,7 +27,6 @@
     <node role="requirements" roleId="75wo.8745401669462963171" type="75wo.Requirement" typeId="75wo.8745401669462952101" id="3291018189726975357">
       <property name="name" nameId="tpck.1169194664001" value="Main" />
       <property name="summmary" nameId="75wo.3402431285977818823" value="Program has to run from the command line" />
-      <property name="proseText" nameId="75wo.8745401669463252438" value="Hallo\nZeile 2\nZeile 3" />
       <property name="open" nameId="75wo.1165432222361744926" value="false" />
       <property name="implemented" nameId="75wo.2667296550441502913" value="true" />
       <property name="traced" nameId="75wo.2667296550441527826" value="true" />
@@ -37,7 +36,6 @@
       <node role="details" roleId="75wo.8745401669462962629" type="75wo.Requirement" typeId="75wo.8745401669462952101" id="3291018189726988279">
         <property name="name" nameId="tpck.1169194664001" value="Arg2" />
         <property name="summmary" nameId="75wo.3402431285977818823" value="Argument Count must be 2" />
-        <property name="proseText" nameId="75wo.8745401669463252438" value="dfökd ölgkfdgas &#10;gdfüpfo gü+dsogüdoüpfdgfd&#10;&#10;dsafasdfd" />
         <property name="open" nameId="75wo.1165432222361744926" value="false" />
         <property name="implemented" nameId="75wo.2667296550441502913" value="true" />
         <property name="traced" nameId="75wo.2667296550441527826" value="true" />
@@ -48,7 +46,6 @@
           <property name="name" nameId="tpck.1169194664001" value="FailOtherwise" />
           <property name="summmary" nameId="75wo.3402431285977818823" value="Otherwise it should return -1" />
           <property name="open" nameId="75wo.1165432222361744926" value="true" />
-          <property name="proseText" nameId="75wo.8745401669463252438" value="Hallo hier sind die Details." />
           <property name="implemented" nameId="75wo.2667296550441502913" value="true" />
           <property name="traced" nameId="75wo.2667296550441527826" value="true" />
           <property name="tested" nameId="75wo.2667296550441527827" value="true" />
@@ -60,6 +57,21 @@
           <node role="additionalData" roleId="75wo.8745401669463270518" type="75wo.ConflictsWithLink" typeId="75wo.8745401669463257446" id="1165432222362099156">
             <link role="target" roleId="75wo.8745401669463257454" targetNodeId="1209423092481311976" resolveInfo="Add" />
           </node>
+          <node role="textParts" roleId="75wo.4539911450717510658" type="75wo.TextPart" typeId="75wo.4539911450717510653" id="4539911450717528939">
+            <property name="text" nameId="75wo.4539911450717510654" value="Hallo hier sind die Details." />
+          </node>
+        </node>
+        <node role="textParts" roleId="75wo.4539911450717510658" type="75wo.TextPart" typeId="75wo.4539911450717510653" id="4539911450717528604">
+          <property name="text" nameId="75wo.4539911450717510654" value="dfökd ölgkfdgas " />
+        </node>
+        <node role="textParts" roleId="75wo.4539911450717510658" type="75wo.TextPart" typeId="75wo.4539911450717510653" id="4539911450717528605">
+          <property name="text" nameId="75wo.4539911450717510654" value="gdfüpfo gü+dsogüdoüpfdgfd" />
+        </node>
+        <node role="textParts" roleId="75wo.4539911450717510658" type="75wo.TextPart" typeId="75wo.4539911450717510653" id="4539911450717528606">
+          <property name="text" nameId="75wo.4539911450717510654" value="" />
+        </node>
+        <node role="textParts" roleId="75wo.4539911450717510658" type="75wo.TextPart" typeId="75wo.4539911450717510653" id="4539911450717528607">
+          <property name="text" nameId="75wo.4539911450717510654" value="dsafasdfd" />
         </node>
       </node>
       <node role="additionalData" roleId="75wo.8745401669463270518" type="75wo.ConflictsWithLink" typeId="75wo.8745401669463257446" id="1165432222361897078">
@@ -67,6 +79,9 @@
       </node>
       <node role="additionalData" roleId="75wo.8745401669463270518" type="75wo.RequiresAlso" typeId="75wo.8745401669463268209" id="1165432222361961716">
         <link role="target" roleId="75wo.8745401669463257454" targetNodeId="3291018189726988279" resolveInfo="Arg2" />
+      </node>
+      <node role="textParts" roleId="75wo.4539911450717510658" type="75wo.TextPart" typeId="75wo.4539911450717510653" id="4539911450717528662">
+        <property name="text" nameId="75wo.4539911450717510654" value="Hallo\nZeile 2\nZeile 3" />
       </node>
     </node>
     <node role="requirements" roleId="75wo.8745401669462963171" type="75wo.Requirement" typeId="75wo.8745401669462952101" id="1209423092481311976">
@@ -88,7 +103,9 @@
         <property name="tested" nameId="75wo.2667296550441527827" value="false" />
         <property name="priority" nameId="75wo.3314758227758879688" value="1" />
         <node role="kind" roleId="75wo.8921256082857728256" type="75wo.FunctionalRequirementKind" typeId="75wo.8921256082857728250" id="1209423092481311982" />
+        <node role="textParts" roleId="75wo.4539911450717510658" type="75wo.TextPart" typeId="75wo.4539911450717510653" id="4539911450717528832" />
       </node>
+      <node role="textParts" roleId="75wo.4539911450717510658" type="75wo.TextPart" typeId="75wo.4539911450717510653" id="4539911450717528942" />
     </node>
     <node role="requirements" roleId="75wo.8745401669462963171" type="75wo.Requirement" typeId="75wo.8745401669462952101" id="2667296550441654210">
       <property name="open" nameId="75wo.1165432222361744926" value="false" />
@@ -99,6 +116,7 @@
       <property name="tested" nameId="75wo.2667296550441527827" value="false" />
       <property name="priority" nameId="75wo.3314758227758879688" value="1" />
       <node role="kind" roleId="75wo.8921256082857728256" type="75wo.FunctionalRequirementKind" typeId="75wo.8921256082857728250" id="2667296550441654211" />
+      <node role="textParts" roleId="75wo.4539911450717510658" type="75wo.TextPart" typeId="75wo.4539911450717510653" id="4539911450717528796" />
     </node>
     <node role="requirements" roleId="75wo.8745401669462963171" type="75wo.Requirement" typeId="75wo.8745401669462952101" id="4458576562019058202">
       <property name="open" nameId="75wo.1165432222361744926" value="false" />
@@ -106,6 +124,7 @@
       <property name="summmary" nameId="75wo.3402431285977818823" value="AnotherRequirement" />
       <property name="priority" nameId="75wo.3314758227758879688" value="1" />
       <node role="kind" roleId="75wo.8921256082857728256" type="75wo.FunctionalRequirementKind" typeId="75wo.8921256082857728250" id="4458576562019058203" />
+      <node role="textParts" roleId="75wo.4539911450717510658" type="75wo.TextPart" typeId="75wo.4539911450717510653" id="4539911450717528969" />
     </node>
     <node role="requirements" roleId="75wo.8745401669462963171" type="75wo.Requirement" typeId="75wo.8745401669462952101" id="4458576562019058204">
       <property name="open" nameId="75wo.1165432222361744926" value="false" />
@@ -113,6 +132,7 @@
       <property name="summmary" nameId="75wo.3402431285977818823" value="It also has a summary" />
       <property name="priority" nameId="75wo.3314758227758879688" value="1" />
       <node role="kind" roleId="75wo.8921256082857728256" type="75wo.FunctionalRequirementKind" typeId="75wo.8921256082857728250" id="4458576562019058205" />
+      <node role="textParts" roleId="75wo.4539911450717510658" type="75wo.TextPart" typeId="75wo.4539911450717510653" id="4539911450717528498" />
     </node>
   </root>
   <root id="1165432222362120317">
@@ -123,12 +143,14 @@
       <property name="open" nameId="75wo.1165432222361744926" value="true" />
       <property name="name" nameId="tpck.1169194664001" value="Specialized" />
       <property name="summmary" nameId="75wo.3402431285977818823" value="Specializes this other one" />
-      <property name="proseText" nameId="75wo.8745401669463252438" value="This is the text." />
       <property name="priority" nameId="75wo.3314758227758879688" value="1" />
       <node role="additionalData" roleId="75wo.8745401669463270518" type="75wo.RefinesLink" typeId="75wo.1165432222362123724" id="1165432222362134393">
         <link role="target" roleId="75wo.8745401669463257454" targetNodeId="1209423092481311976" resolveInfo="Add" />
       </node>
       <node role="kind" roleId="75wo.8921256082857728256" type="75wo.FunctionalRequirementKind" typeId="75wo.8921256082857728250" id="1165432222362134392" />
+      <node role="textParts" roleId="75wo.4539911450717510658" type="75wo.TextPart" typeId="75wo.4539911450717510653" id="4539911450717528916">
+        <property name="text" nameId="75wo.4539911450717510654" value="This is the text." />
+      </node>
     </node>
   </root>
   <root id="8200057468984897506">

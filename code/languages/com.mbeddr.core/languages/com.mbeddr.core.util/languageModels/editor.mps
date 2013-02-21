@@ -1341,14 +1341,14 @@
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="5724839270942479580">
         <property name="text" nameId="tpc2.1073389577007" value="log:" />
         <link role="actionMap" roleId="tpc2.1139959269582" targetNodeId="5724839270942479910" resolveInfo="deleteLogExpression" />
-        <link role="styleClass" roleId="tpc2.1186406756722" targetNodeId="vrqd.3134547887598403854" resolveInfo="nothing" />
+        <link role="styleClass" roleId="tpc2.1186406756722" targetNodeId="vrqd.1997463568368978787" resolveInfo="gray" />
         <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.PunctuationRightStyleClassItem" typeId="tpc2.1233759184865" id="5724839270942479583">
           <property name="flag" nameId="tpc2.1186414551515" value="true" />
         </node>
       </node>
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_ReadOnlyModelAccessor" typeId="tpc2.1225900081164" id="5724839270942479597">
         <link role="actionMap" roleId="tpc2.1139959269582" targetNodeId="5724839270942479910" resolveInfo="deleteLogExpression" />
-        <link role="styleClass" roleId="tpc2.1186406756722" targetNodeId="vrqd.3134547887598403854" resolveInfo="nothing" />
+        <link role="styleClass" roleId="tpc2.1186406756722" targetNodeId="vrqd.1997463568368978787" resolveInfo="gray" />
         <node role="modelAccessor" roleId="tpc2.1225900141900" type="tpc2.ReadOnlyModelAccessor" typeId="tpc2.1225898583838" id="5724839270942479598">
           <node role="getter" roleId="tpc2.1225898971709" type="tpc2.QueryFunction_ModelAccess_Getter" typeId="tpc2.1176717841777" id="5724839270942479599">
             <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="5724839270942479600">
@@ -1374,7 +1374,8 @@
       </node>
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="5724839270942479592">
         <property name="text" nameId="tpc2.1073389577007" value="&lt;" />
-        <link role="styleClass" roleId="tpc2.1186406756722" targetNodeId="vrqd.3134547887598403854" resolveInfo="nothing" />
+        <link role="styleClass" roleId="tpc2.1186406756722" targetNodeId="vrqd.1997463568368978787" resolveInfo="gray" />
+        <link role="actionMap" roleId="tpc2.1139959269582" targetNodeId="5724839270942479910" resolveInfo="deleteLogExpression" />
         <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.PunctuationLeftStyleClassItem" typeId="tpc2.1233758997495" id="5724839270942479595">
           <property name="flag" nameId="tpc2.1186414551515" value="true" />
         </node>
@@ -1388,7 +1389,8 @@
       <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Indent" typeId="tpc2.1237303669825" id="5724839270942479579" />
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="5724839270942479582">
         <property name="text" nameId="tpc2.1073389577007" value="&gt;" />
-        <link role="styleClass" roleId="tpc2.1186406756722" targetNodeId="vrqd.3134547887598403854" resolveInfo="nothing" />
+        <link role="styleClass" roleId="tpc2.1186406756722" targetNodeId="vrqd.1997463568368978787" resolveInfo="gray" />
+        <link role="actionMap" roleId="tpc2.1139959269582" targetNodeId="5724839270942479910" resolveInfo="deleteLogExpression" />
         <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.PunctuationLeftStyleClassItem" typeId="tpc2.1233758997495" id="5724839270942479584">
           <property name="flag" nameId="tpc2.1186414551515" value="true" />
         </node>
