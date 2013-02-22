@@ -266,6 +266,9 @@
       <property name="name" nameId="tpck.1169194664001" value="PragmaModelContent" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
     </node>
+    <node type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="4811430974075023012">
+      <property name="name" nameId="tpck.1169194664001" value="IRequiresHeaderImport" />
+    </node>
   </roots>
   <root id="6437088627575722813">
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="6437088627575722833">
@@ -1141,6 +1144,12 @@
     <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="836404361042829360">
       <property name="value" nameId="tpce.1105725733873" value="#pragma" />
       <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473891462" resolveInfo="alias" />
+    </node>
+  </root>
+  <root id="4811430974075023012">
+    <node role="conceptPropertyDeclaration" roleId="tpce.1137467167200" type="tpce.StringConceptPropertyDeclaration" typeId="tpce.1105725281956" id="4811430974075023015">
+      <property name="name" nameId="tpck.1169194664001" value="headerToImport" />
+      <property name="inheritable" nameId="tpce.1218571350029" value="true" />
     </node>
   </root>
 </model>
