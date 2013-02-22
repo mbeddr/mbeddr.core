@@ -263,9 +263,6 @@
   </root>
   <root id="5778488248013533863">
     <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="5778488248013533868">
-      <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.SelectableStyleSheetItem" typeId="tpc2.1186414928363" id="5778488248013533869">
-        <property name="flag" nameId="tpc2.1186414551515" value="false" />
-      </node>
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="1259074046607431746">
         <property name="text" nameId="tpc2.1073389577007" value="state" />
       </node>
