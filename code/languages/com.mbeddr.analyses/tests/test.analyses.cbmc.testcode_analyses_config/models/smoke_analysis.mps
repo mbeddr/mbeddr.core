@@ -24,13 +24,16 @@
     <node role="binaries" roleId="51wr.5046689135694070731" type="51wr.StaticLibrary" typeId="51wr.2671893947946158498" id="6472990431939782763">
       <property name="name" nameId="tpck.1169194664001" value="lib" />
       <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="6472990431939782765">
-        <link role="module" roleId="51wr.7717755763392524108" targetNodeId="4ysy.6472990431939782585" resolveInfo="simple" />
+        <link role="module" roleId="51wr.7717755763392524108" targetNodeId="4ysy.6472990431939782585" resolveInfo="components" />
       </node>
       <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="6598859022322999166">
         <link role="module" roleId="51wr.7717755763392524108" targetNodeId="4ysy.6472990431940257410" resolveInfo="functions" />
       </node>
       <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="6598859022322999167">
         <link role="module" roleId="51wr.7717755763392524108" targetNodeId="4ysy.6472990431940257494" resolveInfo="assert" />
+      </node>
+      <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="8376973589777602106">
+        <link role="module" roleId="51wr.7717755763392524108" targetNodeId="4ysy.8376973589777602060" resolveInfo="statemachine" />
       </node>
       <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="6598859022323049568">
         <link role="module" roleId="51wr.7717755763392524108" targetNodeId="4ysy.6598859022322999977" resolveInfo="decTables" />
@@ -68,6 +71,12 @@
       <property name="unwindingDepth" nameId="q5q6.6472990431939799909" value="25" />
       <link role="decTabContainer" roleId="q5q6.5070503009225669554" targetNodeId="4ysy.6598859022322999982" resolveInfo="funWithDT" />
       <link role="entryPoint" roleId="q5q6.6472990431939799908" targetNodeId="4ysy.6598859022322999982" resolveInfo="funWithDT" />
+    </node>
+    <node role="analyses" roleId="q46j.6472990431939692464" type="q5q6.StatemachineCBMCAnalysis" typeId="q5q6.8376973589777602107" id="8376973589777647400">
+      <property name="unwindingAssertions" nameId="q5q6.6472990431939799910" value="false" />
+      <property name="unwindingDepth" nameId="q5q6.6472990431939799909" value="25" />
+      <link role="satemachine" roleId="q5q6.8376973589777602108" targetNodeId="4ysy.8376973589777602081" resolveInfo="STM" />
+      <link role="entryPoint" roleId="q5q6.6472990431939799908" targetNodeId="4ysy.8376973589777647405" resolveInfo="statemachineClient" />
     </node>
   </root>
   <root id="6472990431939782586">
