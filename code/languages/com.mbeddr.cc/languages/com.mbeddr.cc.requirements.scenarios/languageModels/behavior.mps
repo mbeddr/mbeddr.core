@@ -432,8 +432,8 @@
                             <node role="operand" roleId="tpee.1197027771414" type="tpee.ParameterReference" typeId="tpee.1068581242874" id="5744000828453113395">
                               <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="5744000828453113400" resolveInfo="it" />
                             </node>
-                            <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="6446320527598656895">
-                              <link role="link" roleId="tp25.1138056516764" targetNodeId="4l29.6446320527598513761" />
+                            <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_ConceptMethodCall" typeId="tp25.1179409122411" id="9159582801231027057">
+                              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="9159582801230953504" resolveInfo="returnedValue" />
                             </node>
                           </node>
                           <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_IsInstanceOfOperation" typeId="tp25.1139621453865" id="5744000828453113398">
@@ -920,8 +920,8 @@
                       <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.PlusExpression" typeId="tpee.1068581242875" id="5744000828453185595">
                         <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.DotExpression" typeId="tpee.1197027756228" id="5744000828453185597">
                           <node role="operand" roleId="tpee.1197027771414" type="1i04.ThisNodeExpression" typeId="1i04.1225194691553" id="5744000828453185751" />
-                          <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="6446320527598859446">
-                            <link role="link" roleId="tp25.1138056516764" targetNodeId="4l29.6446320527598513761" />
+                          <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_ConceptMethodCall" typeId="tp25.1179409122411" id="9159582801231051401">
+                            <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="9159582801230953504" resolveInfo="returnedValue" />
                           </node>
                         </node>
                         <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.PlusExpression" typeId="tpee.1068581242875" id="5744000828453185603">

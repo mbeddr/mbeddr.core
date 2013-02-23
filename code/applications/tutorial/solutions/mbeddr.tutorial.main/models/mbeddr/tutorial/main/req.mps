@@ -539,7 +539,7 @@
       <property name="summmary" nameId="75wo.3402431285977818823" value="Flight is Interpolated and Evaluated" />
       <node role="details" roleId="75wo.8745401669462962629" type="75wo.Requirement" typeId="75wo.8745401669462952101" id="8983161156585742570">
         <property name="priority" nameId="75wo.3314758227758879688" value="0" />
-        <property name="open" nameId="75wo.1165432222361744926" value="true" />
+        <property name="open" nameId="75wo.1165432222361744926" value="false" />
         <property name="summmary" nameId="75wo.3402431285977818823" value="Describes the Interpolation" />
         <property name="name" nameId="tpck.1169194664001" value="Interpolation" />
         <node role="textParts" roleId="75wo.4539911450717510658" type="75wo.TextPart" typeId="75wo.4539911450717510653" id="8983161156585866956" />
@@ -580,7 +580,7 @@
                 <link role="participant" roleId="4l29.5744000828452824075" targetNodeId="8119642625901795400" resolveInfo="Interpolator" />
               </node>
               <node role="args" roleId="4l29.5744000828452981042" type="4l29.ReceivedItemRef" typeId="4l29.6446320527598639263" id="8983161156585760489">
-                <link role="data" roleId="4l29.6446320527598639270" targetNodeId="8983161156585760482" resolveInfo="f" />
+                <link role="data" roleId="4l29.6446320527598639270" targetNodeId="9159582801231002476" resolveInfo="f2" />
               </node>
               <node role="returns" roleId="4l29.6446320527598513761" type="4l29.StatusValueOK" typeId="4l29.6446320527598544124" id="8983161156585760496" />
             </node>
