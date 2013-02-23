@@ -21,7 +21,9 @@
   <language namespace="83888646-71ce-4f1c-9c53-c54016f6ad4f(jetbrains.mps.baseLanguage.collections)" />
   <language namespace="3d0be1cf-4156-4c3c-ac37-fef83237d8e2(mbeddr.tutorial.vectors)" />
   <language namespace="f0055926-d605-4ab8-9b98-55d1e17723f5(mbeddr.tutorial.processorregisters)" />
+  <language namespace="8f78d0b6-57c9-4fa8-86fe-8c30d0d5b15c(mbeddr.tutorial.smtrigger)" />
   <devkit namespace="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
+  <devkit namespace="43d889ae-8e6a-4f6e-a649-d59342d8728d(com.mbeddr.statemachines)" />
   <import index="e1tx" modelUID="r:bd5ec23c-c294-47cc-a078-675c03abdb69(mbeddr.tutorial.main.defaultExtensions)" version="-1" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="3c6d" modelUID="r:d6d71b6a-f5ea-4b72-bd01-9d5b19792726(com.mbeddr.ext.physicalunits.c.structure)" version="0" implicit="yes" />
@@ -43,6 +45,8 @@
   <import index="wlut" modelUID="r:39f56ab1-7cb7-441d-9f40-9b3dac9d6334(mbeddr.tutotial.osconfig.memory.structure)" version="0" implicit="yes" />
   <import index="vj37" modelUID="r:4c272460-99ea-4d39-8c9a-f1bc63f0c386(mbeddr.tutorial.vectors.structure)" version="2" implicit="yes" />
   <import index="qs8s" modelUID="r:74e70f47-713d-47fb-a78d-6496d3649756(mbeddr.tutorial.processorregisters.structure)" version="-1" implicit="yes" />
+  <import index="clqz" modelUID="r:5ebcdb77-81e9-4964-beae-35bd9a2f28b5(com.mbeddr.ext.statemachines.structure)" version="9" implicit="yes" />
+  <import index="uj5" modelUID="r:629e0a9b-c3a1-42af-b223-2aea2640ad4f(mbeddr.tutorial.smtrigger.structure)" version="-1" implicit="yes" />
   <roots>
     <node type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="7727566415687867284">
       <property name="name" nameId="tpck.1169194664001" value="SafeHeap" />
@@ -85,6 +89,10 @@
     <node type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="3834230661748359908">
       <property name="name" nameId="tpck.1169194664001" value="Vectors" />
       <property name="virtualPackage" nameId="tpck.1193676396447" value="examples" />
+    </node>
+    <node type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="2051642899460592673">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="examples" />
+      <property name="name" nameId="tpck.1169194664001" value="SmInterruptTrigger" />
     </node>
   </roots>
   <root id="7727566415687867284">
@@ -680,6 +688,9 @@
       </node>
       <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="2945795531676622952">
         <link role="module" roleId="51wr.7717755763392524108" targetNodeId="2945795531676517483" resolveInfo="Registers" />
+      </node>
+      <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="2051642899460600991">
+        <link role="module" roleId="51wr.7717755763392524108" targetNodeId="2051642899460592673" resolveInfo="SmInterruptTrigger" />
       </node>
     </node>
   </root>
@@ -1610,6 +1621,94 @@
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="3834230661748359916">
       <property name="name" nameId="tpck.1169194664001" value="empty_1354456164755_3" />
+    </node>
+  </root>
+  <root id="2051642899460592673">
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="2051642899460592674">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1361644129626_1" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="2051642899460593303">
+      <property name="name" nameId="tpck.1169194664001" value="someMemoryAccessAPI" />
+      <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="2051642899460593305">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="x27k.ReturnStatement" typeId="x27k.8967919205527146149" id="2051642899460593307">
+          <node role="expression" roleId="x27k.8967919205527146150" type="yq40.NullExpression" typeId="yq40.5308710777891643206" id="2051642899460593308" />
+        </node>
+      </node>
+      <node role="type" roleId="mj1l.318113533128716676" type="yq40.PointerType" typeId="yq40.279446265608459824" id="2051642899460593302">
+        <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+        <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+        <node role="baseType" roleId="yq40.279446265608459825" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="2051642899460593300">
+          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+        </node>
+      </node>
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="2051642899460593298">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1361644595834_2" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.GlobalVariableDeclaration" typeId="x27k.6610873504380335822" id="2051642899460593325">
+      <property name="name" nameId="tpck.1169194664001" value="protocol" />
+      <node role="type" roleId="mj1l.318113533128716676" type="clqz.StatemachineType" typeId="clqz.7851711690674263345" id="2051642899460593326">
+        <link role="machine" roleId="clqz.7851711690674263346" targetNodeId="2051642899460592677" resolveInfo="ProtocolSM" />
+      </node>
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="2051642899460593323">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1361644732163_4" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="clqz.Statemachine" typeId="clqz.5778488248013533809" id="2051642899460592677">
+      <property name="name" nameId="tpck.1169194664001" value="ProtocolSM" />
+      <link role="initial" roleId="clqz.5778488248013533842" targetNodeId="2051642899460592678" resolveInfo="off" />
+      <node role="contents" roleId="clqz.7835233251114737454" type="clqz.InEvent" typeId="clqz.4643433264760980253" id="2051642899460592683">
+        <property name="name" nameId="tpck.1169194664001" value="rec_init" />
+        <node role="binding" roleId="clqz.4643433264760980256" type="uj5.InterruptTrigger" typeId="uj5.2051642899460592888" id="2051642899460593289">
+          <property name="id" nameId="uj5.2051642899460592893" value="12" />
+          <node role="instance" roleId="uj5.2051642899460593329" type="x27k.GlobalVarRef" typeId="x27k.6610873504380357354" id="2051642899460593963">
+            <link role="var" roleId="x27k.6610873504380357355" targetNodeId="2051642899460593325" resolveInfo="protocol" />
+          </node>
+        </node>
+      </node>
+      <node role="contents" roleId="clqz.7835233251114737454" type="clqz.StatemachineVariableDeclaration" typeId="clqz.5633981208992643165" id="2051642899460593291">
+        <property name="name" nameId="tpck.1169194664001" value="sessionID" />
+        <node role="init" roleId="clqz.4643433264760912612" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2051642899460593295">
+          <property name="value" nameId="mj1l.8860443239512128104" value="0" />
+        </node>
+        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="2051642899460593294">
+          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+        </node>
+      </node>
+      <node role="contents" roleId="clqz.7835233251114737454" type="clqz.State" typeId="clqz.5778488248013533839" id="2051642899460592678">
+        <property name="name" nameId="tpck.1169194664001" value="off" />
+        <node role="contents" roleId="clqz.4249345261280348989" type="clqz.Transition" typeId="clqz.5778488248013533883" id="2051642899460592684">
+          <link role="targetState" roleId="clqz.5778488248013533913" targetNodeId="2051642899460592680" resolveInfo="on" />
+          <node role="trigger" roleId="clqz.3670856444174351950" type="clqz.Trigger" typeId="clqz.1786180596061233739" id="2051642899460592686">
+            <link role="event" roleId="clqz.8951398808641876049" targetNodeId="2051642899460592683" resolveInfo="rec_init" />
+          </node>
+          <node role="actions" roleId="clqz.5778488248013533907" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="2051642899460593296">
+            <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="2051642899460593309">
+              <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.AssignmentExpr" typeId="mj1l.22102029902365709" id="2051642899460593313">
+                <node role="right" roleId="mj1l.8860443239512128065" type="yq40.ArrayAccessExpr" typeId="yq40.6282313788306893057" id="2051642899460593319">
+                  <node role="expression" roleId="mj1l.7254843406768839760" type="x27k.FunctionCall" typeId="x27k.5950410542643524492" id="2051642899460593316">
+                    <link role="function" roleId="x27k.5950410542643524493" targetNodeId="2051642899460593303" resolveInfo="someMemoryAccessAPI" />
+                  </node>
+                  <node role="index" roleId="yq40.6282313788306893059" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2051642899460593320">
+                    <property name="value" nameId="mj1l.8860443239512128104" value="0" />
+                  </node>
+                </node>
+                <node role="left" roleId="mj1l.8860443239512128064" type="clqz.StatemachineVarRef" typeId="clqz.1786180596061383227" id="2051642899460593310">
+                  <link role="var" roleId="clqz.1786180596061383228" targetNodeId="2051642899460593291" resolveInfo="sessionID" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node role="contents" roleId="clqz.7835233251114737454" type="clqz.State" typeId="clqz.5778488248013533839" id="2051642899460592680">
+        <property name="name" nameId="tpck.1169194664001" value="on" />
+      </node>
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="2051642899460592675">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1361644129746_2" />
     </node>
   </root>
 </model>
