@@ -9,6 +9,9 @@
     <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="2051642899460592891">
       <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="uj5.2051642899460592888" resolveInfo="InterruptTrigger" />
     </node>
+    <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="2051642899460644248">
+      <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="uj5.2051642899460644244" resolveInfo="InterruptAnnotation" />
+    </node>
   </roots>
   <root id="2051642899460592891">
     <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="2051642899460592895">
@@ -19,12 +22,21 @@
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Property" typeId="tpc2.1073389658414" id="2051642899460592898">
         <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="uj5.2051642899460592893" resolveInfo="id" />
       </node>
-      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="2051642899460593965">
-        <property name="text" nameId="tpc2.1073389577007" value="for" />
+    </node>
+  </root>
+  <root id="2051642899460644248">
+    <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="2051642899460644255">
+      <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Vertical" typeId="tpc2.1106270571710" id="2051642899460644256" />
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="2051642899460644251">
+        <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Indent" typeId="tpc2.1237303669825" id="2051642899460644252" />
+        <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="2051642899460644250">
+          <property name="text" nameId="tpc2.1073389577007" value="interrupt-driven instance" />
+        </node>
+        <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_RefNode" typeId="tpc2.1073389882823" id="2051642899460644254">
+          <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="uj5.2051642899460644247" />
+        </node>
       </node>
-      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_RefNode" typeId="tpc2.1073389882823" id="2051642899460593357">
-        <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="uj5.2051642899460593329" />
-      </node>
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_AttributedNodeCell" typeId="tpc2.1149850725784" id="2051642899460644260" />
     </node>
   </root>
 </model>

@@ -1657,14 +1657,11 @@
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="clqz.Statemachine" typeId="clqz.5778488248013533809" id="2051642899460592677">
       <property name="name" nameId="tpck.1169194664001" value="ProtocolSM" />
-      <link role="initial" roleId="clqz.5778488248013533842" targetNodeId="2051642899460592678" resolveInfo="off" />
+      <link role="initial" roleId="clqz.5778488248013533842" targetNodeId="2051642899460592678" resolveInfo="stby" />
       <node role="contents" roleId="clqz.7835233251114737454" type="clqz.InEvent" typeId="clqz.4643433264760980253" id="2051642899460592683">
-        <property name="name" nameId="tpck.1169194664001" value="rec_init" />
-        <node role="binding" roleId="clqz.4643433264760980256" type="uj5.InterruptTrigger" typeId="uj5.2051642899460592888" id="2051642899460593289">
+        <property name="name" nameId="tpck.1169194664001" value="msgReceived" />
+        <node role="binding" roleId="clqz.4643433264760980256" type="uj5.InterruptTrigger" typeId="uj5.2051642899460592888" id="2051642899460645559">
           <property name="id" nameId="uj5.2051642899460592893" value="12" />
-          <node role="instance" roleId="uj5.2051642899460593329" type="x27k.GlobalVarRef" typeId="x27k.6610873504380357354" id="2051642899460593963">
-            <link role="var" roleId="x27k.6610873504380357355" targetNodeId="2051642899460593325" resolveInfo="protocol" />
-          </node>
         </node>
       </node>
       <node role="contents" roleId="clqz.7835233251114737454" type="clqz.StatemachineVariableDeclaration" typeId="clqz.5633981208992643165" id="2051642899460593291">
@@ -1678,11 +1675,11 @@
         </node>
       </node>
       <node role="contents" roleId="clqz.7835233251114737454" type="clqz.State" typeId="clqz.5778488248013533839" id="2051642899460592678">
-        <property name="name" nameId="tpck.1169194664001" value="off" />
+        <property name="name" nameId="tpck.1169194664001" value="stby" />
         <node role="contents" roleId="clqz.4249345261280348989" type="clqz.Transition" typeId="clqz.5778488248013533883" id="2051642899460592684">
-          <link role="targetState" roleId="clqz.5778488248013533913" targetNodeId="2051642899460592680" resolveInfo="on" />
+          <link role="targetState" roleId="clqz.5778488248013533913" targetNodeId="2051642899460592680" resolveInfo="receiving" />
           <node role="trigger" roleId="clqz.3670856444174351950" type="clqz.Trigger" typeId="clqz.1786180596061233739" id="2051642899460592686">
-            <link role="event" roleId="clqz.8951398808641876049" targetNodeId="2051642899460592683" resolveInfo="rec_init" />
+            <link role="event" roleId="clqz.8951398808641876049" targetNodeId="2051642899460592683" resolveInfo="msgReceived" />
           </node>
           <node role="actions" roleId="clqz.5778488248013533907" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="2051642899460593296">
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="2051642899460593309">
@@ -1704,11 +1701,39 @@
         </node>
       </node>
       <node role="contents" roleId="clqz.7835233251114737454" type="clqz.State" typeId="clqz.5778488248013533839" id="2051642899460592680">
-        <property name="name" nameId="tpck.1169194664001" value="on" />
+        <property name="name" nameId="tpck.1169194664001" value="receiving" />
+      </node>
+      <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="uj5.InterruptAnnotation" typeId="uj5.2051642899460644244" id="2051642899460645557">
+        <node role="instance" roleId="uj5.2051642899460644247" type="x27k.GlobalVarRef" typeId="x27k.6610873504380357354" id="2051642899460645558">
+          <link role="var" roleId="x27k.6610873504380357355" targetNodeId="2051642899460593325" resolveInfo="protocol" />
+        </node>
       </node>
     </node>
-    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="2051642899460592675">
-      <property name="name" nameId="tpck.1169194664001" value="empty_1361644129746_2" />
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="2051642899460644227">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1361648421713_1" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="2051642899460644232">
+      <property name="name" nameId="tpck.1169194664001" value="runProtocol" />
+      <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="2051642899460644234">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="2051642899460644236">
+          <property name="comment" nameId="c4fa.1679452829930336985" value="disable interrupts" />
+        </node>
+        <node role="statements" roleId="c4fa.4185783222026475862" type="clqz.InitializeSMStatement" typeId="clqz.1786180596061208520" id="2051642899460644239">
+          <node role="statemachine" roleId="clqz.1786180596061208522" type="x27k.GlobalVarRef" typeId="x27k.6610873504380357354" id="2051642899460644241">
+            <link role="var" roleId="x27k.6610873504380357355" targetNodeId="2051642899460593325" resolveInfo="protocol" />
+          </node>
+        </node>
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="2051642899460644243">
+          <property name="comment" nameId="c4fa.1679452829930336985" value="enable interrupts" />
+        </node>
+      </node>
+      <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="2051642899460644231">
+        <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+        <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+      </node>
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="2051642899460644229">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1361648421987_3" />
     </node>
   </root>
 </model>
