@@ -4,7 +4,7 @@
 \ic{mbeddr.tutorial.smtrigger} language.}
 
 \subsection{Example}
-
+ 
 Imagine you have a state machine that handles a communication protocol, such as
 TCP/IP or a CAN bus. Often, the protocol implementation uses interrupts: when a
 new message is received by the network hardware, an interrupt is triggered to
@@ -157,9 +157,28 @@ concept InterruptTrigger extends BaseConcept
 Since we implement \ic{IInEventBinding} we can add an instance of
 \ic{InterruptTrigger} on the right side of an in-event. The editor is trivial:
 the constant \ic{interrupt} plus a cell for the \ic{id}, arranged in a
-horizontal list. Finally, you probably want to create an checking rule that
+horizontal list. 
+
+\parhead{Constraints} We have to make sure that the \ic{InterruptTrigger}
+event binding is only used on state machines that have the
+\ic{InterruptAnnotation} attached to them. We do this with a \ic{can be child}
+constraint:
+
+\begin{lstlisting}[language=mps, morekeywords={}, deletekeywords={link, scope}] 
+concept constraints InterruptTrigger { 
+  can be child 
+    (node, parentNode, link, childConcept, scope, operationContext)->boolean { 
+      parentNode.ancestor<concept = Statemachine>.@interrupted != null; 
+    } 
+}
+\end{lstlisting} 
+
+Finally, you probably want to create an checking rule that
 makes sure that each interrupt is bound only once. As they say: this is left as
 an exercise for the reader :-)
+
+
+
 
 \subsection{Generator} The structure and editor for this language is rather
 trivial. The interesting part is the generator. So let's take a look. As we have
