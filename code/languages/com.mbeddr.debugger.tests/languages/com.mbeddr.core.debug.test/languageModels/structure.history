@@ -794,5 +794,125 @@
     </dependencies>
     <rename id="rpmx.8924761790438948088" type="CHILD" from="re" to="imports" />
   </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="rpmx" modelUID="r:64720d49-3cb5-4469-81c5-0c62eda0a2cb(com.mbeddr.core.debug.test.structure)" version="61" />
+    </dependencies>
+    <rename id="rpmx.6894131567067385972" type="CONCEPT" from="Value" to="PrimitiveValue" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="rpmx" modelUID="r:64720d49-3cb5-4469-81c5-0c62eda0a2cb(com.mbeddr.core.debug.test.structure)" version="62" />
+    </dependencies>
+    <rename id="rpmx.6894131567067385974" type="PROPERTY" from="string" to="value" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="rpmx" modelUID="r:64720d49-3cb5-4469-81c5-0c62eda0a2cb(com.mbeddr.core.debug.test.structure)" version="63" />
+    </dependencies>
+    <rename id="rpmx.6894131567067405300" type="CONCEPT" from="String" to="ConcreteValue" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="rpmx" modelUID="r:64720d49-3cb5-4469-81c5-0c62eda0a2cb(com.mbeddr.core.debug.test.structure)" version="64" />
+    </dependencies>
+    <rename id="rpmx.6894131567067657500" type="CONCEPT" from="RegexSpecifiedValue" to="RegexValueSpecification" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="rpmx" modelUID="r:64720d49-3cb5-4469-81c5-0c62eda0a2cb(com.mbeddr.core.debug.test.structure)" version="65" />
+    </dependencies>
+    <rename id="rpmx.6894131567067751707" type="CONCEPT" from="WatchableValueExpression" to="WatchableValueSpecificationExpression" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="rpmx" modelUID="r:64720d49-3cb5-4469-81c5-0c62eda0a2cb(com.mbeddr.core.debug.test.structure)" version="66" />
+    </dependencies>
+    <rename id="rpmx.6894131567067751708" type="CHILD" from="left" to="name" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="rpmx" modelUID="r:64720d49-3cb5-4469-81c5-0c62eda0a2cb(com.mbeddr.core.debug.test.structure)" version="67" />
+    </dependencies>
+    <rename id="rpmx.6894131567067751727" type="PROPERTY" from="str" to="value" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="rpmx" modelUID="r:64720d49-3cb5-4469-81c5-0c62eda0a2cb(com.mbeddr.core.debug.test.structure)" version="68" />
+    </dependencies>
+    <rename id="rpmx.6894131567068111611" type="CONCEPT" from="String" to="StringExpressedValue" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="rpmx" modelUID="r:64720d49-3cb5-4469-81c5-0c62eda0a2cb(com.mbeddr.core.debug.test.structure)" version="69" />
+    </dependencies>
+    <rename id="rpmx.6894131567068111612" type="CONCEPT" from="Wa" to="WatchableValue" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="rpmx" modelUID="r:64720d49-3cb5-4469-81c5-0c62eda0a2cb(com.mbeddr.core.debug.test.structure)" version="70" />
+    </dependencies>
+    <rename id="rpmx.6894131567068111701" type="PROPERTY" from="string" to="value" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="rpmx" modelUID="r:64720d49-3cb5-4469-81c5-0c62eda0a2cb(com.mbeddr.core.debug.test.structure)" version="71" />
+    </dependencies>
+    <rename id="rpmx.6894131567068111615" type="CONCEPT" from="RegexExpressedValue" to="RegexValue" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="rpmx" modelUID="r:64720d49-3cb5-4469-81c5-0c62eda0a2cb(com.mbeddr.core.debug.test.structure)" version="72" />
+    </dependencies>
+    <rename id="rpmx.6894131567068111611" type="CONCEPT" from="StringExpressedValue" to="StringValue" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="rpmx" modelUID="r:64720d49-3cb5-4469-81c5-0c62eda0a2cb(com.mbeddr.core.debug.test.structure)" version="73" />
+    </dependencies>
+    <rename id="rpmx.6894131567068111611" type="CONCEPT" from="StringValue" to="LiteralValue" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="rpmx" modelUID="r:64720d49-3cb5-4469-81c5-0c62eda0a2cb(com.mbeddr.core.debug.test.structure)" version="74" />
+    </dependencies>
+    <rename id="rpmx.6894131567068077383" type="CONCEPT" from="ComplexWatchableValueExpression" to="ComplexWatchableExpression" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="rpmx" modelUID="r:64720d49-3cb5-4469-81c5-0c62eda0a2cb(com.mbeddr.core.debug.test.structure)" version="75" />
+    </dependencies>
+    <rename id="rpmx.6894131567067751726" type="CONCEPT" from="PrimitiveWatchableValueExpression" to="PrimitiveWatchableExpression" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="rpmx" modelUID="r:64720d49-3cb5-4469-81c5-0c62eda0a2cb(com.mbeddr.core.debug.test.structure)" version="76" />
+    </dependencies>
+    <rename id="rpmx.6894131567067751710" type="CONCEPT" from="WatchableValueExpression" to="WatchableExpression" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="rpmx" modelUID="r:64720d49-3cb5-4469-81c5-0c62eda0a2cb(com.mbeddr.core.debug.test.structure)" version="77" />
+    </dependencies>
+    <rename id="rpmx.6894131567067751710" type="CONCEPT" from="WatchableExpression" to="ValueExpression" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="rpmx" modelUID="r:64720d49-3cb5-4469-81c5-0c62eda0a2cb(com.mbeddr.core.debug.test.structure)" version="78" />
+    </dependencies>
+    <rename id="rpmx.6894131567067751726" type="CONCEPT" from="PrimitiveWatchableExpression" to="PrimitiveValueExpression" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="rpmx" modelUID="r:64720d49-3cb5-4469-81c5-0c62eda0a2cb(com.mbeddr.core.debug.test.structure)" version="79" />
+    </dependencies>
+    <rename id="rpmx.6894131567068077383" type="CONCEPT" from="ComplexWatchableExpression" to="ComplexValueExpression" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="rpmx" modelUID="r:64720d49-3cb5-4469-81c5-0c62eda0a2cb(com.mbeddr.core.debug.test.structure)" version="80" />
+    </dependencies>
+    <rename id="rpmx.6894131567067751707" type="CONCEPT" from="WatchableValueSpecificationExpression" to="WatchableWithValueExpression" />
+  </StructureModification>
 </history>
 

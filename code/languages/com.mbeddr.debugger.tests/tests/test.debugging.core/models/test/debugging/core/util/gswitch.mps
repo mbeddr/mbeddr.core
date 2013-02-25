@@ -14,7 +14,7 @@
   <import index="yq40" modelUID="r:152b3fc0-83a1-4bab-a8cd-565eb8483785(com.mbeddr.core.pointers.structure)" version="3" implicit="yes" />
   <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="5" implicit="yes" />
   <import index="yz9a" modelUID="r:734c02dd-cc16-4184-99eb-5fd9f43aa37e(com.mbeddr.core.unittest.structure)" version="0" implicit="yes" />
-  <import index="rpmx" modelUID="r:64720d49-3cb5-4469-81c5-0c62eda0a2cb(com.mbeddr.core.debug.test.structure)" version="61" implicit="yes" />
+  <import index="rpmx" modelUID="r:64720d49-3cb5-4469-81c5-0c62eda0a2cb(com.mbeddr.core.debug.test.structure)" version="81" implicit="yes" />
   <import index="tpee" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="4" implicit="yes" />
   <roots>
     <node type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="2878195925414126787">
@@ -464,8 +464,8 @@
     <node role="contents" roleId="rpmx.105850086901784219" type="rpmx.ValidationDeclaration" typeId="rpmx.8924761790438756110" id="2878195925414556457">
       <property name="name" nameId="tpck.1169194664001" value="1stGSwitch" />
       <node role="validations" roleId="rpmx.8924761790438855800" type="rpmx.WatchablesValidationList" typeId="rpmx.4550138447367847233" id="2878195925414556458">
-        <node role="watchables" roleId="rpmx.4550138447367880227" type="rpmx.WatchableDeclaration" typeId="rpmx.4550138447367880222" id="2878195925414556464">
-          <property name="name" nameId="rpmx.4550138447367880223" value="a" />
+        <node role="watchables" roleId="rpmx.4550138447367880227" type="rpmx.WatchableNameExpression" typeId="rpmx.6894131567067751702" id="6894131567068802548">
+          <property name="name" nameId="tpck.1169194664001" value="a" />
         </node>
       </node>
       <node role="validations" roleId="rpmx.8924761790438855800" type="rpmx.StackFramesValidationList" typeId="rpmx.4550138447368300128" id="2878195925414556460">
