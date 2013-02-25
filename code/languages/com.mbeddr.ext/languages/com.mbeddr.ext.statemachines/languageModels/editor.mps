@@ -263,9 +263,6 @@
   </root>
   <root id="5778488248013533863">
     <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="5778488248013533868">
-      <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.SelectableStyleSheetItem" typeId="tpc2.1186414928363" id="5778488248013533869">
-        <property name="flag" nameId="tpc2.1186414551515" value="false" />
-      </node>
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="1259074046607431746">
         <property name="text" nameId="tpc2.1073389577007" value="state" />
       </node>
@@ -411,7 +408,7 @@
         </node>
       </node>
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="5778488248013533911">
-        <property name="text" nameId="tpc2.1073389577007" value="➔" />
+        <property name="text" nameId="tpc2.1073389577007" value="-&gt;" />
       </node>
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_RefCell" typeId="tpc2.1088013125922" id="5778488248013533914">
         <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="clqz.5778488248013533913" />
@@ -946,7 +943,7 @@
     <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="567269909073788523">
       <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Indent" typeId="tpc2.1237303669825" id="567269909073788525" />
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="4643433264761024390">
-        <property name="text" nameId="tpc2.1073389577007" value="⇒" />
+        <property name="text" nameId="tpc2.1073389577007" value="=&gt;" />
       </node>
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_RefCell" typeId="tpc2.1088013125922" id="567269909073815619">
         <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="clqz.567269909073808458" />

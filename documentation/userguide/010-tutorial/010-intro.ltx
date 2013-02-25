@@ -1,6 +1,6 @@
 \part{Tutorials}
 
-\chapter{Installation and Setup}
+\chapter{Installation and Setup} 
 
 This section describes the installation of mbeddr in detail, including
 Java, MPS and the additional tools needed for visualization and verification. 
@@ -264,6 +264,9 @@ Within an mbeddr program, you can also press \keystroke{Ctrl-F12} to get an
 outline view that lists all top level or important elements in that particular
 program so you can navigate to it easily.
 
+\keystroke{Ctrl-E} will show you the recently closed editors, in case you've
+closed too many. More generally, \keystroke{Ctrl-Tab} can be used to switch
+between windows in MPS (we use \keystroke{Cmd-W} on the Mac).
 
 \parhead{Selection} Selection is different. \keystroke{Ctrl-Up/Down} can be
 used to select along the tree. For example consider a local variable declaration
@@ -347,11 +350,29 @@ screenshot below).
   \includegraphics[width=12cm]{figures/tutorial/keymapbuild.png}
 \end{center}
 
+\section{Other Useful MPS Settings}
+
+Here are a few settings we recommend you change in MPS more generally (in the
+$File \rightarrow Preferences$ menu):
+
+\begin{itemize}
+  \item In the \emph{Editor} settings, you should select \emph{Show 1 Tab for Each
+  Aspect} in the \emph{Editor Tabs} choice.
+  \item In the \emph{Editor} settings, you should select \emph{Activate most recent
+  opened Tab} in the \emph{When closing active editor} choice.
+  \item In the \emph{Editor} settings, you may want to change the font to Consolas.
+  Looks nicer.
+  \item In the \emph{Generator} settings, you may want to turn of the
+  \emph{Check models before Generation} in the \emph{General} settings.
+\end{itemize}
+
 
 \pagebreak[4]
 \section{Cheat Sheet}
 
 Print, cut out and put it next to your monitor when you start with mbeddr. 
+Note that on the Mac, most (but not all!) of the \keystroke{Ctrl-Something} are
+actually \keystroke{Cmd-Something}.
 
 \begin{tabular}{|l|l|}
   \hline
@@ -375,11 +396,14 @@ Print, cut out and put it next to your monitor when you start with mbeddr.
   Go-To-Definition & \keystroke{Ctrl-Click} or \keystroke{Ctrl-B} \\
   Find Usages & \keystroke{Alt-F7} \\
   Outline & \keystroke{Alt-F12} \\
-  Open Inspectot & \keystroke{Ctrl-2} \\
+  Open Inspector & \keystroke{Ctrl-2} \\
+  Close current Editor & \keystroke{Ctrl-W} (custom mapped) \\
+  Show List of Recent Editors & \keystroke{Ctrl-E} \\
+  Toggle through current Windows & \keystroke{Ctrl-Tab} \\
   \hline
   \multicolumn{2}{|l|}{\textbf{Generic Refactoring}} \\
   \hline
-  Add Documentation & \keystroke{Alt-A} \\
+  Add Documentation & \keystroke{Ctrl-A} \\
   Comment Out & \keystroke{Ctrl-Shift-C} \\
   \hline
   \multicolumn{2}{|l|}{\textbf{Build}} \\
@@ -392,4 +416,5 @@ Print, cut out and put it next to your monitor when you start with mbeddr.
 \end{tabular}
 
    
+    
    
