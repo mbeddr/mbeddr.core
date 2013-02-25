@@ -29,7 +29,7 @@
           <value>
             <Library>
               <option name="name" value="mbeddr.core" />
-              <option name="path" value="${mps_home}/bin/${mbeddr.github.core.home}/code/languages" />
+              <option name="path" value="${mbeddr.github.core.home}/code/languages" />
             </Library>
           </value>
         </entry>
