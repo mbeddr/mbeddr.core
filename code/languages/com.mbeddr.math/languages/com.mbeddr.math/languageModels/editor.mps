@@ -33,6 +33,9 @@
     <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="4811430974075165359">
       <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="npga.4811430974075165356" resolveInfo="Abs" />
     </node>
+    <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="4811430974075208636">
+      <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="npga.4811430974075208631" resolveInfo="Sum" />
+    </node>
   </roots>
   <root id="4811430974074981345">
     <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="4811430974074981347">
@@ -194,6 +197,53 @@
         </node>
       </node>
       <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Horizontal" typeId="tpc2.1106270549637" id="4811430974075165363" />
+    </node>
+  </root>
+  <root id="4811430974075208636">
+    <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="4811430974075208638">
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="4811430974075208641">
+        <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.SelectableStyleSheetItem" typeId="tpc2.1186414928363" id="4811430974075208642">
+          <property name="flag" nameId="tpc2.1186414551515" value="false" />
+        </node>
+        <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_RefNode" typeId="tpc2.1073389882823" id="4811430974075208647">
+          <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="npga.4811430974075208632" />
+          <link role="styleClass" roleId="tpc2.1186406756722" targetNodeId="4811430974075155425" resolveInfo="mathBase" />
+          <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.HorizontalAlign" typeId="tpc2.1235999440492" id="4811430974075208715">
+            <property name="align" nameId="tpc2.1235999920262" value="CENTER" />
+          </node>
+        </node>
+        <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="4811430974075208714">
+          <property name="text" nameId="tpc2.1073389577007" value="∑" />
+          <link role="styleClass" roleId="tpc2.1186406756722" targetNodeId="4811430974075155417" resolveInfo="mathKeyword" />
+          <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.HorizontalAlign" typeId="tpc2.1235999440492" id="4811430974075208717">
+            <property name="align" nameId="tpc2.1235999920262" value="CENTER" />
+          </node>
+          <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.IndentLayoutOnNewLineStyleClassItem" typeId="tpc2.1237385578942" id="4811430974075212165">
+            <property name="flag" nameId="tpc2.1186414551515" value="true" />
+          </node>
+        </node>
+        <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Property" typeId="tpc2.1073389658414" id="4811430974075208706">
+          <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="tpck.1169194664001" resolveInfo="name" />
+          <link role="styleClass" roleId="tpc2.1186406756722" targetNodeId="4811430974075155425" resolveInfo="mathBase" />
+          <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.IndentLayoutOnNewLineStyleClassItem" typeId="tpc2.1237385578942" id="4811430974075212166">
+            <property name="flag" nameId="tpc2.1186414551515" value="true" />
+          </node>
+        </node>
+        <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="4811430974075208711">
+          <property name="text" nameId="tpc2.1073389577007" value="=" />
+          <link role="styleClass" roleId="tpc2.1186406756722" targetNodeId="4811430974075155425" resolveInfo="mathBase" />
+        </node>
+        <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_RefNode" typeId="tpc2.1073389882823" id="4811430974075208713">
+          <property name="attractsFocus" nameId="tpc2.1130859485024" value="1" />
+          <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="npga.4811430974075208633" />
+          <link role="styleClass" roleId="tpc2.1186406756722" targetNodeId="4811430974075155425" resolveInfo="mathBase" />
+        </node>
+        <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Indent" typeId="tpc2.1237303669825" id="4811430974075212163" />
+      </node>
+      <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Horizontal" typeId="tpc2.1106270549637" id="4811430974075208639" />
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_RefNode" typeId="tpc2.1073389882823" id="4811430974075208719">
+        <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="npga.4811430974075208634" />
+      </node>
     </node>
   </root>
 </model>
