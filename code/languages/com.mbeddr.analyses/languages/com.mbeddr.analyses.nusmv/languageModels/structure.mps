@@ -832,6 +832,9 @@
       <property name="value" nameId="tpce.1105725733873" value="-&gt;" />
       <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473891462" resolveInfo="alias" />
     </node>
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="4811430974075512033">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="5338984991526018275" resolveInfo="INuSMVElement" />
+    </node>
   </root>
   <root id="7342679784410528828">
     <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="7342679784410528830">
