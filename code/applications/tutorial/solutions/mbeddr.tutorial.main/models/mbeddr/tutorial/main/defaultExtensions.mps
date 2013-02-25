@@ -3705,7 +3705,17 @@
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="7727566415687763153">
       <property name="name" nameId="tpck.1169194664001" value="raiseAlarm" />
       <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="7727566415687763155">
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="7727566415687763156" />
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="5887451785619936705">
+          <property name="name" nameId="tpck.1169194664001" value="fa" />
+          <node role="type" roleId="mj1l.318113533128716676" type="clqz.StatemachineType" typeId="clqz.7851711690674263345" id="5887451785619936706">
+            <link role="machine" roleId="clqz.7851711690674263346" targetNodeId="7727566415687718765" resolveInfo="FlightAnalyzer" />
+          </node>
+        </node>
+        <node role="statements" roleId="c4fa.4185783222026475862" type="clqz.InitializeSMStatement" typeId="clqz.1786180596061208520" id="5887451785619936747">
+          <node role="statemachine" roleId="clqz.1786180596061208522" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="5887451785619936753">
+            <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="5887451785619936705" resolveInfo="fa" />
+          </node>
+        </node>
       </node>
       <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="7727566415687763148">
         <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
