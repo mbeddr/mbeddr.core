@@ -81,19 +81,19 @@
       <link role="concept" roleId="1i04.1225194240799" targetNodeId="rpmx.4360423713604419403" resolveInfo="IValidationConfigurationElement" />
     </node>
     <node type="1i04.ConceptBehavior" typeId="1i04.1225194240794" id="6894131567067780481">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="configuration.validation.element.watches.new" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="configuration.validation.element.watches" />
       <link role="concept" roleId="1i04.1225194240799" targetNodeId="rpmx.6894131567067751707" resolveInfo="WatchableWithValueExpression" />
     </node>
     <node type="1i04.ConceptBehavior" typeId="1i04.1225194240794" id="6894131567068111617">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="configuration.validation.element.watches.new.values.literals" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="configuration.validation.element.watches.values.literals" />
       <link role="concept" roleId="1i04.1225194240799" targetNodeId="rpmx.6894131567068111615" resolveInfo="RegexValue" />
     </node>
     <node type="1i04.ConceptBehavior" typeId="1i04.1225194240794" id="6894131567068180945">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="configuration.validation.element.watches.new.values" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="configuration.validation.element.watches.values" />
       <link role="concept" roleId="1i04.1225194240799" targetNodeId="rpmx.6894131567067751726" resolveInfo="PrimitiveValueExpression" />
     </node>
     <node type="1i04.ConceptBehavior" typeId="1i04.1225194240794" id="6894131567068247238">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="configuration.validation.element.watches.new.values" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="configuration.validation.element.watches.values" />
       <link role="concept" roleId="1i04.1225194240799" targetNodeId="rpmx.6894131567068077383" resolveInfo="ComplexValueExpression" />
     </node>
   </roots>

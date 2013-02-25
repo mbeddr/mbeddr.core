@@ -11,7 +11,7 @@
   <import index="tp2q" modelUID="r:00000000-0000-4000-0000-011c8959032e(jetbrains.mps.baseLanguage.collections.structure)" version="7" implicit="yes" />
   <roots>
     <node type="tpdg.SideTransformHintSubstituteActions" typeId="tpdg.1138079416598" id="6894131567067780442">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="configuration.validation.element.watches.new" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="configuration.validation.element.watches" />
       <property name="name" nameId="tpck.1169194664001" value="makeValueAssignment" />
     </node>
   </roots>

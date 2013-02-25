@@ -57,7 +57,7 @@
       <link role="concept" roleId="tp1t.1213093996982" targetNodeId="rpmx.8924761790438904165" resolveInfo="SteppingsReference" />
     </node>
     <node type="tp1t.ConceptConstraints" typeId="tp1t.1213093968558" id="6894131567067963211">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="configuration.validation.element.watches.new" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="configuration.validation.element.watches" />
       <link role="concept" roleId="tp1t.1213093996982" targetNodeId="rpmx.6894131567067751702" resolveInfo="WatchableNameExpression" />
     </node>
   </roots>

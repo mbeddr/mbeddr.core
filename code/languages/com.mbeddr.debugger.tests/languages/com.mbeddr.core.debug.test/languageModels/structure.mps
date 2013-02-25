@@ -74,11 +74,6 @@
       <property name="name" nameId="tpck.1169194664001" value="WatchablesValidationList" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
     </node>
-    <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4550138447367880222">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="configuration.validation.element.watches" />
-      <property name="name" nameId="tpck.1169194664001" value="WatchableDeclaration" />
-      <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
-    </node>
     <node type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="105850086900151263">
       <property name="name" nameId="tpck.1169194664001" value="IDebuggerTestContent" />
     </node>
@@ -165,53 +160,49 @@
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
     </node>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="6894131567067751700">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="configuration.validation.element.watches.new" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="configuration.validation.element.watches" />
       <property name="name" nameId="tpck.1169194664001" value="WatchableExpression" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
     </node>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="6894131567067751702">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="configuration.validation.element.watches.new" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="configuration.validation.element.watches" />
       <property name="name" nameId="tpck.1169194664001" value="WatchableNameExpression" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="6894131567067751700" resolveInfo="WatchableExpression" />
     </node>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="6894131567067751707">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="configuration.validation.element.watches.new" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="configuration.validation.element.watches" />
       <property name="name" nameId="tpck.1169194664001" value="WatchableWithValueExpression" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="6894131567067751700" resolveInfo="WatchableExpression" />
     </node>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="6894131567067751710">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="configuration.validation.element.watches.new.values" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="configuration.validation.element.watches.values" />
       <property name="name" nameId="tpck.1169194664001" value="ValueExpression" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
     </node>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="6894131567067751726">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="configuration.validation.element.watches.new.values" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="configuration.validation.element.watches.values" />
       <property name="name" nameId="tpck.1169194664001" value="PrimitiveValueExpression" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="6894131567067751710" resolveInfo="ValueExpression" />
     </node>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="6894131567068077383">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="configuration.validation.element.watches.new.values" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="configuration.validation.element.watches.values" />
       <property name="name" nameId="tpck.1169194664001" value="ComplexValueExpression" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="6894131567067751710" resolveInfo="ValueExpression" />
     </node>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="6894131567068111611">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="configuration.validation.element.watches.new.values.literals" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="configuration.validation.element.watches.values.literals" />
       <property name="name" nameId="tpck.1169194664001" value="LiteralValue" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="6894131567068111612" resolveInfo="WatchableValue" />
     </node>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="6894131567068111612">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="configuration.validation.element.watches.new.values.literals" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="configuration.validation.element.watches.values.literals" />
       <property name="name" nameId="tpck.1169194664001" value="WatchableValue" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
     </node>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="6894131567068111615">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="configuration.validation.element.watches.new.values.literals" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="configuration.validation.element.watches.values.literals" />
       <property name="name" nameId="tpck.1169194664001" value="RegexValue" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="6894131567068111612" resolveInfo="WatchableValue" />
-    </node>
-    <node type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="6894131567068292113">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="configuration.validation.element.watches" />
-      <property name="name" nameId="tpck.1169194664001" value="IWatchable" />
     </node>
   </roots>
   <root id="4193597469137492628">
@@ -392,7 +383,7 @@
       <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
       <property name="role" nameId="tpce.1071599776563" value="watchables" />
       <property name="sourceCardinality" nameId="tpce.1071599893252" value="0..n" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="6894131567068292113" resolveInfo="IWatchable" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="6894131567067751700" resolveInfo="WatchableExpression" />
     </node>
     <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="4550138447367916027">
       <property name="value" nameId="tpce.1105725733873" value="watchables" />
@@ -400,15 +391,6 @@
     </node>
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="4360423713604470278">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="4360423713604419403" resolveInfo="IValidationConfigurationElement" />
-    </node>
-  </root>
-  <root id="4550138447367880222">
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="4550138447367916028">
-      <property name="value" nameId="tpce.1105725733873" value="watchable" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473891462" resolveInfo="alias" />
-    </node>
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="6894131567068292117">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="6894131567068292113" resolveInfo="IWatchable" />
     </node>
   </root>
   <root id="105850086900151263">
@@ -621,8 +603,8 @@
     <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.BooleanConceptProperty" typeId="tpce.1105725574259" id="6894131567067751701">
       <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473854053" resolveInfo="abstract" />
     </node>
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="6894131567068761802">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="6894131567068292113" resolveInfo="IWatchable" />
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="6894131567069395565">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="tpck.1169194658468" resolveInfo="INamedConcept" />
     </node>
   </root>
   <root id="6894131567067751702">
@@ -707,11 +689,6 @@
     <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="6894131567068269923">
       <property name="value" nameId="tpce.1105725733873" value="regular expression" />
       <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473891462" resolveInfo="alias" />
-    </node>
-  </root>
-  <root id="6894131567068292113">
-    <node role="extends" roleId="tpce.1169127546356" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="6894131567068292115">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="tpck.1169194658468" resolveInfo="INamedConcept" />
     </node>
   </root>
 </model>

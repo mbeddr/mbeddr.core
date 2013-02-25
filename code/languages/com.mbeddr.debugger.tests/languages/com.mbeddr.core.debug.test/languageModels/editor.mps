@@ -55,10 +55,6 @@
       <property name="virtualPackage" nameId="tpck.1193676396447" value="configuration.validation.element.watches" />
       <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="rpmx.4550138447367847233" resolveInfo="WatchablesValidationList" />
     </node>
-    <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="4550138447367880224">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="configuration.validation.element.watches" />
-      <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="rpmx.4550138447367880222" resolveInfo="WatchableDeclaration" />
-    </node>
     <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="4550138447368290428">
       <property name="virtualPackage" nameId="tpck.1193676396447" value="configuration.validation.element.stack-frames" />
       <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="rpmx.4550138447368290426" resolveInfo="StackFrameDeclaration" />
@@ -123,27 +119,27 @@
       <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="rpmx.105850086900151263" resolveInfo="IDebuggerTestContent" />
     </node>
     <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="6894131567067751704">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="configuration.validation.element.watches.new" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="configuration.validation.element.watches" />
       <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="rpmx.6894131567067751702" resolveInfo="WatchableNameExpression" />
     </node>
     <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="6894131567067751713">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="configuration.validation.element.watches.new" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="configuration.validation.element.watches" />
       <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="rpmx.6894131567067751707" resolveInfo="WatchableWithValueExpression" />
     </node>
     <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="6894131567067751728">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="configuration.validation.element.watches.new.values" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="configuration.validation.element.watches.values" />
       <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="rpmx.6894131567067751726" resolveInfo="PrimitiveValueExpression" />
     </node>
     <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="6894131567068077387">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="configuration.validation.element.watches.new.values" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="configuration.validation.element.watches.values" />
       <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="rpmx.6894131567068077383" resolveInfo="ComplexValueExpression" />
     </node>
     <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="6894131567068111698">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="configuration.validation.element.watches.new.values.literals" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="configuration.validation.element.watches.values.literals" />
       <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="rpmx.6894131567068111615" resolveInfo="RegexValue" />
     </node>
     <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="6894131567068111702">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="configuration.validation.element.watches.new.values.literals" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="configuration.validation.element.watches.values.literals" />
       <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="rpmx.6894131567068111611" resolveInfo="LiteralValue" />
     </node>
   </roots>
@@ -403,6 +399,19 @@
               <property name="flag" nameId="tpc2.1186414551515" value="true" />
             </node>
             <node role="emptyCellModel" roleId="tpc2.1140524464359" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="4550138447367916029" />
+            <node role="nodeFactory" roleId="tpc2.1176897874615" type="tpc2.QueryFunction_NodeFactory" typeId="tpc2.1176897764478" id="6894131567069609846">
+              <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="6894131567069609847">
+                <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="6894131567069619251">
+                  <node role="expression" roleId="tpee.1068580123156" type="tpee.GenericNewExpression" typeId="tpee.1145552977093" id="6894131567069619252">
+                    <node role="creator" roleId="tpee.1145553007750" type="tp25.SNodeCreator" typeId="tp25.1180636770613" id="6894131567069619254">
+                      <node role="createdType" roleId="tp25.1180636770616" type="tp25.SNodeType" typeId="tp25.1138055754698" id="6894131567069619255">
+                        <link role="concept" roleId="tp25.1138405853777" targetNodeId="rpmx.6894131567067751702" resolveInfo="WatchableNameExpression" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
           </node>
           <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Horizontal" typeId="tpc2.1106270549637" id="7634928937261243390" />
         </node>
@@ -412,11 +421,6 @@
         <property name="text" nameId="tpc2.1073389577007" value="}" />
       </node>
       <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Vertical" typeId="tpc2.1106270571710" id="4996624930072785039" />
-    </node>
-  </root>
-  <root id="4550138447367880224">
-    <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Property" typeId="tpc2.1073389658414" id="4550138447367880226">
-      <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="tpck.1169194664001" resolveInfo="name" />
     </node>
   </root>
   <root id="4550138447368290428">
