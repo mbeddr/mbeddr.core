@@ -1342,7 +1342,7 @@
   <root id="6894131567067751704">
     <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="6894131567068464781">
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Property" typeId="tpc2.1073389658414" id="6894131567067751706">
-        <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="rpmx.6894131567067751703" resolveInfo="name" />
+        <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="tpck.1169194664001" resolveInfo="name" />
       </node>
       <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Indent" typeId="tpc2.1237303669825" id="6894131567068464782" />
     </node>
