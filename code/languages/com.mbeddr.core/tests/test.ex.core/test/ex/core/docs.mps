@@ -17,6 +17,12 @@
     <node type="mj1l.TypeSizeConfiguration" typeId="mj1l.3335993110369795380" id="7496733358578266352" />
   </roots>
   <root id="1679452829930635049">
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="4052432714773225399">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1361901611029_1" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="4052432714773225400">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1361901611333_2" />
+    </node>
     <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="vs0r.ElementDocumentation" typeId="vs0r.3857533489766146428" id="1679452829930635050">
       <node role="parts" roleId="vs0r.3857533489766836837" type="vs0r.DocPart" typeId="vs0r.3857533489766836826" id="3857533489766840526">
         <property name="text" nameId="vs0r.3857533489766836827" value="Some Documentaton for the module" />
@@ -80,7 +86,7 @@
             <property name="escapedValue" nameId="87nw.2557074442922438158" value="Goes" />
           </node>
           <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4052432714772706100">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value="Here. Text.\n" />
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value="Here. Text. \n" />
           </node>
           <node role="words" roleId="87nw.2557074442922392302" type="x27k.ArgRefWord" typeId="x27k.4052432714772706112" id="4052432714773079014">
             <link role="arg" roleId="x27k.4052432714772706113" targetNodeId="4052432714772775503" resolveInfo="arg1" />
