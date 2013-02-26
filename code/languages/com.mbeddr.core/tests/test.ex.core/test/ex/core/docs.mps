@@ -9,6 +9,7 @@
   <import index="clbe" modelUID="r:61d840b4-12c1-49ea-b142-b2a1550a9b15(com.mbeddr.core.udt.structure)" version="7" implicit="yes" />
   <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="6" implicit="yes" />
   <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="3" implicit="yes" />
+  <import index="87nw" modelUID="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" version="5" implicit="yes" />
   <roots>
     <node type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="1679452829930635049">
       <property name="name" nameId="tpck.1169194664001" value="ADocumentedModule" />
@@ -20,6 +21,18 @@
       <node role="parts" roleId="vs0r.3857533489766836837" type="vs0r.DocPart" typeId="vs0r.3857533489766836826" id="3857533489766840526">
         <property name="text" nameId="vs0r.3857533489766836827" value="Some Documentaton for the module" />
       </node>
+      <node role="text" roleId="vs0r.4052432714772608243" type="87nw.Text" typeId="87nw.2557074442922380897" id="4052432714772702503">
+        <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4052432714772702504">
+          <property name="escapedValue" nameId="87nw.2557074442922438158" value="Enter" />
+        </node>
+        <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4052432714772702505">
+          <property name="escapedValue" nameId="87nw.2557074442922438158" value="Goes" />
+        </node>
+        <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4052432714772702506">
+          <property name="escapedValue" nameId="87nw.2557074442922438158" value="Here." />
+        </node>
+        <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4052432714772702507" />
+      </node>
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="clbe.TypeDef" typeId="clbe.6116558314501347857" id="1679452829930653239">
       <property name="name" nameId="tpck.1169194664001" value="blubb" />
@@ -28,7 +41,108 @@
         <node role="parts" roleId="vs0r.3857533489766836837" type="vs0r.DocPart" typeId="vs0r.3857533489766836826" id="3857533489766840777">
           <property name="text" nameId="vs0r.3857533489766836827" value="docs for the typedef" />
         </node>
+        <node role="text" roleId="vs0r.4052432714772608243" type="87nw.Text" typeId="87nw.2557074442922380897" id="4052432714772702508">
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4052432714772702509">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value="Enter" />
+          </node>
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4052432714772702510">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value="Goes" />
+          </node>
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4052432714772702511">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value="Here." />
+          </node>
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4052432714772706080" />
+        </node>
       </node>
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="4052432714772706082">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1361899336649_1" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="4052432714772706083">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1361899336813_2" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="4052432714772706091">
+      <property name="name" nameId="tpck.1169194664001" value="function" />
+      <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="4052432714772706093">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="4052432714772706094" />
+      </node>
+      <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="4052432714772706090">
+        <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+        <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+      </node>
+      <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="vs0r.ElementDocumentation" typeId="vs0r.3857533489766146428" id="4052432714772706095">
+        <node role="parts" roleId="vs0r.3857533489766836837" type="vs0r.DocPart" typeId="vs0r.3857533489766836826" id="4052432714772706096" />
+        <node role="text" roleId="vs0r.4052432714772608243" type="87nw.Text" typeId="87nw.2557074442922380897" id="4052432714772706097">
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4052432714772706098">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value="Enter" />
+          </node>
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4052432714772706099">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value="Goes" />
+          </node>
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4052432714772706100">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value="Here. Text.\n" />
+          </node>
+          <node role="words" roleId="87nw.2557074442922392302" type="x27k.ArgRefWord" typeId="x27k.4052432714772706112" id="4052432714773079014">
+            <link role="arg" roleId="x27k.4052432714772706113" targetNodeId="4052432714772775503" resolveInfo="arg1" />
+          </node>
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4052432714773079015">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value=" " />
+          </node>
+          <node role="words" roleId="87nw.2557074442922392302" type="x27k.ArgRefWord" typeId="x27k.4052432714772706112" id="4052432714773079016">
+            <link role="arg" roleId="x27k.4052432714772706113" targetNodeId="4052432714772775506" resolveInfo="arg2" />
+          </node>
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4052432714772706101" />
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4052432714773078863" />
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4052432714773078864" />
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4052432714773079017" />
+          <node role="words" roleId="87nw.2557074442922392302" type="x27k.ArgRefWord" typeId="x27k.4052432714772706112" id="4052432714773079019">
+            <link role="arg" roleId="x27k.4052432714772706113" targetNodeId="4052432714772775503" resolveInfo="arg1" />
+          </node>
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4052432714773079901">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value=" und ein anderes" />
+          </node>
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4052432714773079902">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value="Wort. " />
+          </node>
+          <node role="words" roleId="87nw.2557074442922392302" type="x27k.ArgRefWord" typeId="x27k.4052432714772706112" id="4052432714773079903">
+            <link role="arg" roleId="x27k.4052432714772706113" targetNodeId="4052432714772775506" resolveInfo="arg2" />
+          </node>
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4052432714773135266">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value="\nAnother function, " />
+          </node>
+          <node role="words" roleId="87nw.2557074442922392302" type="x27k.ModuleContentRefWord" typeId="x27k.4052432714773079904" id="4052432714773217198">
+            <link role="mc" roleId="x27k.4052432714773079905" targetNodeId="1679452829930635057" resolveInfo="TestCase" />
+          </node>
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4052432714773135267" />
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4052432714773135269" />
+          <node role="words" roleId="87nw.2557074442922392302" type="x27k.ModuleContentRefWord" typeId="x27k.4052432714773079904" id="4052432714773217200">
+            <link role="mc" roleId="x27k.4052432714773079905" targetNodeId="4052432714772706091" resolveInfo="function" />
+          </node>
+        </node>
+      </node>
+      <node role="arguments" roleId="x27k.5708867820623310661" type="x27k.Argument" typeId="x27k.7892328519581704407" id="4052432714772775503">
+        <property name="name" nameId="tpck.1169194664001" value="arg1" />
+        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="4052432714772775504">
+          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+        </node>
+      </node>
+      <node role="arguments" roleId="x27k.5708867820623310661" type="x27k.Argument" typeId="x27k.7892328519581704407" id="4052432714772775506">
+        <property name="name" nameId="tpck.1169194664001" value="arg2" />
+        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="4052432714772775507">
+          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+        </node>
+      </node>
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="4052432714772706086">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1361899337224_5" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="4052432714772706087">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1361899337370_6" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="4052432714772706088">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1361899337497_7" />
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="yz9a.TestCase" typeId="yz9a.6275792049641586523" id="1679452829930635057">
       <property name="exported" nameId="x27k.1317894735999272944" value="true" />
@@ -48,6 +162,18 @@
             <node role="parts" roleId="vs0r.3857533489766836837" type="vs0r.DocPart" typeId="vs0r.3857533489766836826" id="3857533489766840779">
               <property name="text" nameId="vs0r.3857533489766836827" value="docs for the assert" />
             </node>
+            <node role="text" roleId="vs0r.4052432714772608243" type="87nw.Text" typeId="87nw.2557074442922380897" id="4052432714772702513">
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4052432714772702514">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="Enter" />
+              </node>
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4052432714772702515">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="Goes" />
+              </node>
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4052432714772702516">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="Here." />
+              </node>
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4052432714772702517" />
+            </node>
           </node>
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="1679452829931201910">
@@ -56,6 +182,18 @@
           <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="vs0r.ElementDocumentation" typeId="vs0r.3857533489766146428" id="1679452829931201912">
             <node role="parts" roleId="vs0r.3857533489766836837" type="vs0r.DocPart" typeId="vs0r.3857533489766836826" id="3857533489767008582">
               <property name="text" nameId="vs0r.3857533489766836827" value="Der Text" />
+            </node>
+            <node role="text" roleId="vs0r.4052432714772608243" type="87nw.Text" typeId="87nw.2557074442922380897" id="4052432714772702498">
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4052432714772702499">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="Enter" />
+              </node>
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4052432714772702500">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="Goes" />
+              </node>
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4052432714772702501">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="Here." />
+              </node>
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4052432714772702502" />
             </node>
           </node>
           <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="5083029923012080973" />
@@ -67,12 +205,53 @@
             <node role="parts" roleId="vs0r.3857533489766836837" type="vs0r.DocPart" typeId="vs0r.3857533489766836826" id="3857533489766842860">
               <property name="text" nameId="vs0r.3857533489766836827" value="Text" />
             </node>
+            <node role="text" roleId="vs0r.4052432714772608243" type="87nw.Text" typeId="87nw.2557074442922380897" id="4052432714772702493">
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4052432714772702494">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="Enter" />
+              </node>
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4052432714772702495">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="Goes" />
+              </node>
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4052432714772702496">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="Here." />
+              </node>
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4052432714772702497" />
+            </node>
           </node>
         </node>
       </node>
       <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="vs0r.ElementDocumentation" typeId="vs0r.3857533489766146428" id="1679452829930635059">
         <node role="parts" roleId="vs0r.3857533489766836837" type="vs0r.DocPart" typeId="vs0r.3857533489766836826" id="3857533489766840778">
           <property name="text" nameId="vs0r.3857533489766836827" value="docs for the function" />
+        </node>
+        <node role="text" roleId="vs0r.4052432714772608243" type="87nw.Text" typeId="87nw.2557074442922380897" id="4052432714772702488">
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4052432714772702489">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value="Enter" />
+          </node>
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4052432714772702490">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value="Goes" />
+          </node>
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4052432714772702491">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value="Here." />
+          </node>
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4052432714772702492">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value="Mehr Text.\n" />
+          </node>
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4052432714772702518" />
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4052432714772702519" />
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4052432714772702520" />
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4052432714772702521" />
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4052432714772702522" />
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4052432714772702523" />
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4052432714772702524" />
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4052432714772702525" />
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4052432714772702526" />
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4052432714772702527" />
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4052432714772702528" />
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4052432714772702529" />
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4052432714772702530" />
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4052432714772702531" />
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4052432714772702532" />
         </node>
       </node>
       <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="5708867820622915289" />

@@ -70,6 +70,14 @@
             </Library>
           </value>
         </entry>
+        <entry key="lisson.stuff">
+          <value>
+            <Library>
+              <option name="name" value="lisson.stuff" />
+              <option name="path" value="${lisson.home}/" />
+            </Library>
+          </value>
+        </entry>
         <entry key="mpsutil">
           <value>
             <Library>

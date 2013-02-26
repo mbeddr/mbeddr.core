@@ -132,6 +132,18 @@
   <root id="3857533489766146460">
     <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="3857533489766146461">
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="552710421071165612">
+        <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_RefNode" typeId="tpc2.1073389882823" id="4052432714772623002">
+          <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="vs0r.4052432714772608243" />
+          <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.ForegroundColorStyleClassItem" typeId="tpc2.1186404549998" id="4052432714772702533">
+            <property name="color" nameId="tpc2.1186403713874" value="gray" />
+          </node>
+        </node>
+        <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="4052432714772623000">
+          <property name="text" nameId="tpc2.1073389577007" value="------" />
+          <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.IndentLayoutOnNewLineStyleClassItem" typeId="tpc2.1237385578942" id="4052432714772623003">
+            <property name="flag" nameId="tpc2.1186414551515" value="true" />
+          </node>
+        </node>
         <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.SelectableStyleSheetItem" typeId="tpc2.1186414928363" id="552710421071165613">
           <property name="flag" nameId="tpc2.1186414551515" value="true" />
         </node>
@@ -146,6 +158,9 @@
           <node role="query" roleId="tpc2.1186403803051" type="tpc2.RGBColor" typeId="tpc2.1225456267680" id="552710421071192478">
             <property name="value" nameId="tpc2.1225456424731" value="EEEEEE" />
           </node>
+        </node>
+        <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.IndentLayoutOnNewLineStyleClassItem" typeId="tpc2.1237385578942" id="4052432714772623005">
+          <property name="flag" nameId="tpc2.1186414551515" value="true" />
         </node>
         <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Component" typeId="tpc2.1078939183254" id="7534202261664943577">
           <link role="editorComponent" roleId="tpc2.1078939183255" targetNodeId="7565145259447112918" resolveInfo="listOfDocParts" />

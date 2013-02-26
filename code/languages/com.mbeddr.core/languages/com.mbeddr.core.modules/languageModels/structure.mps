@@ -11,6 +11,7 @@
   <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="20" implicit="yes" />
   <import index="yq40" modelUID="r:152b3fc0-83a1-4bab-a8cd-565eb8483785(com.mbeddr.core.pointers.structure)" version="3" implicit="yes" />
   <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="3" implicit="yes" />
+  <import index="87nw" modelUID="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" version="5" implicit="yes" />
   <roots>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="6437088627575722813">
       <property name="name" nameId="tpck.1169194664001" value="Module" />
@@ -268,6 +269,16 @@
     </node>
     <node type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="4811430974075023012">
       <property name="name" nameId="tpck.1169194664001" value="IRequiresHeaderImport" />
+    </node>
+    <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4052432714772706112">
+      <property name="name" nameId="tpck.1169194664001" value="ArgRefWord" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="documentation.words" />
+      <link role="extends" roleId="tpce.1071489389519" targetNodeId="vs0r.4052432714772706104" resolveInfo="CDocWord" />
+    </node>
+    <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4052432714773079904">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="documentation.words" />
+      <property name="name" nameId="tpck.1169194664001" value="ModuleContentRefWord" />
+      <link role="extends" roleId="tpce.1071489389519" targetNodeId="vs0r.4052432714772706104" resolveInfo="CDocWord" />
     </node>
   </roots>
   <root id="6437088627575722813">
@@ -1150,6 +1161,30 @@
     <node role="conceptPropertyDeclaration" roleId="tpce.1137467167200" type="tpce.StringConceptPropertyDeclaration" typeId="tpce.1105725281956" id="4811430974075023015">
       <property name="name" nameId="tpck.1169194664001" value="headerToImport" />
       <property name="inheritable" nameId="tpce.1218571350029" value="true" />
+    </node>
+  </root>
+  <root id="4052432714772706112">
+    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="4052432714772706113">
+      <property name="metaClass" nameId="tpce.1071599937831" value="reference" />
+      <property name="role" nameId="tpce.1071599776563" value="arg" />
+      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="8444296659257696249" resolveInfo="IArgumentLike" />
+    </node>
+    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="4052432714772706116">
+      <property name="value" nameId="tpce.1105725733873" value="@arg" />
+      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="87nw.2557074442922714728" resolveInfo="transformKey" />
+    </node>
+  </root>
+  <root id="4052432714773079904">
+    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="4052432714773079905">
+      <property name="metaClass" nameId="tpce.1071599937831" value="reference" />
+      <property name="role" nameId="tpce.1071599776563" value="mc" />
+      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="6437088627575722831" resolveInfo="IModuleContent" />
+    </node>
+    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="4052432714773135271">
+      <property name="value" nameId="tpce.1105725733873" value="@top" />
+      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="87nw.2557074442922714728" resolveInfo="transformKey" />
     </node>
   </root>
 </model>
