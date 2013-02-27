@@ -3280,8 +3280,8 @@
                         <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="4360423713604939218">
                           <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="4360423713604939219">
                             <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="4360423713604939220">
-                              <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="4360423713604939325">
-                                <link role="link" roleId="tp25.1138056516764" targetNodeId="rpmx.105850086902839308" />
+                              <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_ConceptMethodCall" typeId="tp25.1179409122411" id="7179294824063471135">
+                                <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="dm5s.105850086903250456" resolveInfo="getSuspensionConfiguration" />
                               </node>
                               <node role="operand" roleId="tpee.1197027771414" type="tpf8.TemplateFunctionParameter_sourceNode" typeId="tpf8.1167169188348" id="4360423713604939222" />
                             </node>
@@ -3310,8 +3310,8 @@
                           <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="4360423713604939296">
                             <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="4360423713604939318">
                               <node role="operand" roleId="tpee.1197027771414" type="tpf8.TemplateFunctionParameter_sourceNode" typeId="tpf8.1167169188348" id="4360423713604939297" />
-                              <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="4360423713604939323">
-                                <link role="link" roleId="tp25.1138056516764" targetNodeId="rpmx.105850086903379490" />
+                              <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_ConceptMethodCall" typeId="tp25.1179409122411" id="7179294824063471138">
+                                <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="dm5s.105850086903379454" resolveInfo="getSteppingConfiguration" />
                               </node>
                             </node>
                           </node>
@@ -3329,8 +3329,8 @@
                           <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="4360423713604939241">
                             <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="4360423713604939242">
                               <node role="operand" roleId="tpee.1197027771414" type="tpf8.TemplateFunctionParameter_sourceNode" typeId="tpf8.1167169188348" id="4360423713604939243" />
-                              <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="4360423713604939295">
-                                <link role="link" roleId="tp25.1138056516764" targetNodeId="rpmx.4360423713604451010" />
+                              <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_ConceptMethodCall" typeId="tp25.1179409122411" id="7179294824063471140">
+                                <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="dm5s.4360423713604450970" resolveInfo="getValidationConfiguration" />
                               </node>
                             </node>
                           </node>
