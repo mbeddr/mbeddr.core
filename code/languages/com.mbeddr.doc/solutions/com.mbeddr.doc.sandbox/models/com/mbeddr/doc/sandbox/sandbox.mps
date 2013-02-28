@@ -61,6 +61,17 @@
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3350625596580225383" />
           </node>
         </node>
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.ImageParagraph" typeId="2c95.6386504476136263187" id="6386504476136285101">
+          <property name="imagePath" nameId="2c95.6386504476136263188" value="/Users/markusvoelter/Documents/mbeddr/mbeddr.core/code/languages/com.mbeddr.doc/solutions/com.mbeddr.doc.sandbox/images/img1.jpg" />
+          <node role="description" roleId="2c95.6386504476136278696" type="87nw.Text" typeId="87nw.2557074442922380897" id="6386504476136285102">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6386504476136285105">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="Here is the description for that image. It shows things. A nice airplane especially." />
+            </node>
+          </node>
+        </node>
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.EmptyDocContent" typeId="2c95.3350625596579911760" id="6386504476136358615">
+          <property name="name" nameId="tpck.1169194664001" value="empty_1362049273754_1" />
+        </node>
       </node>
     </node>
   </root>
