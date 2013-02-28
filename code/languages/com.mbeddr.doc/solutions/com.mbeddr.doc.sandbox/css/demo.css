@@ -1,5 +1,9 @@
 .chapter {font-family:Sans-serif;}
 .section {font-family:Sans-serif;}
 .subsection {font-family:Sans-serif;}
-p.caption {padding-bottom:10px;font-style:italic}
+p.caption {font-style:italic}
+
+.imagecontainer {padding-top:25px;padding-bottom:25px;display:table, width:100%;}
+.image {display: table-cell;}
+.imagecaption {display: table-cell; width=200px; vertical-align:top}
 
