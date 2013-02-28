@@ -5,10 +5,13 @@
   <language namespace="92d2ea16-5a42-4fdf-a676-c7604efe3504(de.slisson.mps.richtext)" />
   <language namespace="2dec0852-3a21-4c4e-a68c-b05236cc37f2(com.mbeddr.doc.gen_xhtml)" />
   <language namespace="f44f6b9a-bf30-4f73-866e-fac17c177409(com.mbeddr.doc.gen_latex)" />
+  <language namespace="445de13f-b9dd-436f-be62-42c616f697e2(com.mbeddr.doc.c)" />
+  <import index="haow" modelUID="r:d183ee78-698a-4d70-a6c1-07e860784580(com.mbeddr.doc.sandbox.cstuff)" version="-1" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="2c95" modelUID="r:5f7188a9-e7b4-4a2e-bef9-38d2cf379fdc(com.mbeddr.doc.structure)" version="0" implicit="yes" />
   <import index="87nw" modelUID="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" version="5" implicit="yes" />
   <import index="g9w8" modelUID="r:506f4964-2b3f-49f3-a581-8c498222bac6(com.mbeddr.doc.gen_latex.structure)" version="-1" implicit="yes" />
+  <import index="rh4a" modelUID="r:51a64317-678a-4e8f-9df1-1e83f73c9d71(com.mbeddr.doc.c.structure)" version="-1" implicit="yes" />
   <roots>
     <node type="2c95.Document" typeId="2c95.3350625596579911728" id="3350625596580087926">
       <property name="name" nameId="tpck.1169194664001" value="DocumentationOfDocumentation" />
@@ -124,6 +127,20 @@
             <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="4457500422381337441">
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4457500422381337442">
                 <property name="escapedValue" nameId="87nw.2557074442922438158" value="Lorem Ipsum Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nec porta libero. Nullam nec ullamcorper risus. Fusce eget eros sed quam molestie interdum. Aenean lectus ipsum, dictum id feugiat fringilla, gravida at enim. Donec nisl nibh, mollis a bibendum molestie, tristique sed tellus. Nunc ut leo ipsum. Nullam ultricies lobortis urna eget viverra." />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.SubSection" typeId="2c95.3350625596580064457" id="4457500422381538342">
+          <property name="name" nameId="tpck.1169194664001" value="code" />
+          <property name="text" nameId="2c95.3350625596580064225" value="Here is a reference to code" />
+          <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="4457500422381538343">
+            <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="4457500422381538344">
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4457500422381538345">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="We can also refernece code, for example " />
+              </node>
+              <node role="words" roleId="87nw.2557074442922392302" type="rh4a.CRefWord" typeId="rh4a.4457500422381536784" id="4457500422381538346">
+                <link role="content" roleId="rh4a.4457500422381536794" targetNodeId="haow.4457500422381538290" resolveInfo="testCase1" />
               </node>
             </node>
           </node>
