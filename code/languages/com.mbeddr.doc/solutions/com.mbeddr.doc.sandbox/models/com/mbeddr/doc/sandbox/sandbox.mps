@@ -7,7 +7,10 @@
   <import index="87nw" modelUID="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" version="5" implicit="yes" />
   <roots>
     <node type="2c95.Document" typeId="2c95.3350625596579911728" id="3350625596580087926">
-      <property name="name" nameId="tpck.1169194664001" value="Documentation" />
+      <property name="name" nameId="tpck.1169194664001" value="DocumentationOfDocumentation" />
+    </node>
+    <node type="2c95.Document" typeId="2c95.3350625596579911728" id="3350625596580246774">
+      <property name="name" nameId="tpck.1169194664001" value="AnotherDocument" />
     </node>
   </roots>
   <root id="3350625596580087926">
@@ -46,11 +49,20 @@
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="3350625596580122729">
           <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="3350625596580122730">
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3350625596580122731">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value="The base technology is based on Sascha Lisson's Richtext framework." />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="The base technology is based on Sascha Lisson's Richtext framework.\nIt supports prose text editing in MPS, with embeddable nodes. An example\nof such embedding is the reference to the intro: " />
             </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.SectRefWord" typeId="2c95.3350625596580108709" id="3350625596580225384">
+              <link role="target" roleId="2c95.3350625596580108719" targetNodeId="3350625596580089581" resolveInfo="intro" />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3350625596580225383" />
           </node>
         </node>
       </node>
+    </node>
+  </root>
+  <root id="3350625596580246774">
+    <node role="imports" roleId="2c95.3350625596580225393" type="2c95.DocumentImport" typeId="2c95.3350625596580225385" id="3350625596580251471">
+      <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="3350625596580246774" resolveInfo="AnotherDocument" />
     </node>
   </root>
 </model>
