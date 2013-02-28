@@ -11,12 +11,16 @@
   <roots>
     <node type="2c95.Document" typeId="2c95.3350625596579911728" id="3350625596580087926">
       <property name="name" nameId="tpck.1169194664001" value="DocumentationOfDocumentation" />
+      <link role="config" roleId="2c95.6386504476136472832" targetNodeId="6386504476136482735" resolveInfo="Config" />
     </node>
     <node type="2c95.Document" typeId="2c95.3350625596579911728" id="3350625596580246774">
       <property name="name" nameId="tpck.1169194664001" value="AnotherDocument" />
     </node>
     <node type="2c95.DocumentExport" typeId="2c95.3350625596580256366" id="3350625596580274911">
       <property name="name" nameId="tpck.1169194664001" value="ExampleDocument" />
+    </node>
+    <node type="2c95.DocumentConfig" typeId="2c95.6386504476136472782" id="6386504476136482735">
+      <property name="name" nameId="tpck.1169194664001" value="Config" />
     </node>
   </roots>
   <root id="3350625596580087926">
@@ -62,7 +66,7 @@
           </node>
         </node>
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.ImageParagraph" typeId="2c95.6386504476136263187" id="6386504476136456051">
-          <property name="imagePath" nameId="2c95.6386504476136263188" value="/Users/markusvoelter/Documents/mbeddr/mbeddr.core/code/languages/com.mbeddr.doc/solutions/com.mbeddr.doc.sandbox/images/img1.jpg" />
+          <property name="imagePath" value="/Users/markusvoelter/Documents/mbeddr/mbeddr.core/code/languages/com.mbeddr.doc/solutions/com.mbeddr.doc.sandbox/images/img1.jpg" />
           <node role="description" roleId="2c95.6386504476136278696" type="2c95.TextBlock" typeId="2c95.6386504476136446898" id="6386504476136456052">
             <node role="text" roleId="2c95.6386504476136446899" type="87nw.Text" typeId="87nw.2557074442922380897" id="6386504476136456053">
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6386504476136456054">
@@ -75,6 +79,10 @@
                 <property name="escapedValue" nameId="87nw.2557074442922438158" value="referenzieren. " />
               </node>
             </node>
+          </node>
+          <node role="resource" roleId="2c95.6386504476136531838" type="2c95.Resource" typeId="2c95.6386504476136521407" id="6386504476136543213">
+            <property name="fileName" nameId="2c95.6386504476136521408" value="img1.jpg" />
+            <link role="path" roleId="2c95.6386504476136521409" targetNodeId="6386504476136521406" resolveInfo="images" />
           </node>
         </node>
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="6386504476136428224">
@@ -102,6 +110,12 @@
     </node>
     <node role="documents" roleId="2c95.3350625596580269182" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="3350625596580274915">
       <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="3350625596580087926" resolveInfo="DocumentationOfDocumentation" />
+    </node>
+  </root>
+  <root id="6386504476136482735">
+    <node role="paths" roleId="2c95.6386504476136472817" type="2c95.PathDefinition" typeId="2c95.6386504476136472795" id="6386504476136521406">
+      <property name="name" nameId="tpck.1169194664001" value="images" />
+      <property name="editTimePath" nameId="2c95.6386504476136472797" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.doc/solutions/com.mbeddr.doc.sandbox/images/" />
     </node>
   </root>
 </model>
