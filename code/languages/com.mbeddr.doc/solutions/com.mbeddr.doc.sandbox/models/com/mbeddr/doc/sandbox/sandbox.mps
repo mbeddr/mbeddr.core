@@ -187,7 +187,7 @@
                 </node>
               </node>
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1978640040348328135">
-                <property name="escapedValue" nameId="87nw.2557074442922438158" value="\n" />
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value=" " />
               </node>
               <node role="words" roleId="87nw.2557074442922392302" type="2c95.ShortcutRefWord" typeId="2c95.4457500422381858396" id="1978640040348328133">
                 <link role="shortcut" roleId="2c95.4457500422381858397" targetNodeId="4457500422381962830" resolveInfo="great" />
