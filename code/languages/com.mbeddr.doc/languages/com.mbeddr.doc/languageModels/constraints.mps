@@ -41,9 +41,12 @@
     <node type="tp1t.ConceptConstraints" typeId="tp1t.1213093968558" id="6386504476136521425">
       <link role="concept" roleId="tp1t.1213093996982" targetNodeId="2c95.6386504476136521407" resolveInfo="Resource" />
     </node>
+    <node type="tp1t.ConceptConstraints" typeId="tp1t.1213093968558" id="4457500422381858412">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="words" />
+      <link role="concept" roleId="tp1t.1213093996982" targetNodeId="2c95.4457500422381858396" resolveInfo="ShortcutRefWord" />
+    </node>
   </roots>
-  <root id="3350625596580097826" />
-  <root id="3350625596580097830">
+  <root id="3350625596580097826">
     <node role="property" roleId="tp1t.1213098023997" type="tp1t.NodePropertyConstraint" typeId="tp1t.1147467115080" id="3350625596580097827">
       <link role="applicableProperty" roleId="tp1t.1147467295099" targetNodeId="tpck.1169194664001" resolveInfo="name" />
       <node role="propertyGetter" roleId="tp1t.1147468630220" type="tp1t.ConstraintFunction_PropertyGetter" typeId="tp1t.1147467790433" id="3350625596580097828">
@@ -71,6 +74,7 @@
       </node>
     </node>
   </root>
+  <root id="3350625596580097830" />
   <root id="3350625596580108730">
     <node role="referent" roleId="tp1t.1213100494875" type="tp1t.NodeReferentConstraint" typeId="tp1t.1148687176410" id="3350625596580242083">
       <link role="applicableLink" roleId="tp1t.1148687202698" targetNodeId="2c95.3350625596580108719" />
@@ -252,6 +256,37 @@
               </node>
               <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkListAccess" typeId="tp25.1138056282393" id="6386504476136521517">
                 <link role="link" roleId="tp25.1138056546658" targetNodeId="2c95.6386504476136472817" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </root>
+  <root id="4457500422381858412">
+    <node role="referent" roleId="tp1t.1213100494875" type="tp1t.NodeReferentConstraint" typeId="tp1t.1148687176410" id="4457500422381858413">
+      <link role="applicableLink" roleId="tp1t.1148687202698" targetNodeId="2c95.4457500422381858397" />
+      <node role="searchScopeFactory" roleId="tp1t.1148687345559" type="tp1t.ConstraintFunction_ReferentSearchScope_Factory" typeId="tp1t.1148684180339" id="4457500422381858414">
+        <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="4457500422381858415">
+          <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="4457500422381858416">
+            <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="4457500422381858497">
+              <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="4457500422381858469">
+                <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="4457500422381858438">
+                  <node role="operand" roleId="tpee.1197027771414" type="tp1t.ConceptParameter_ReferentSearchScope_enclosingNode" typeId="tp1t.1148934636683" id="4457500422381858417" />
+                  <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_GetAncestorOperation" typeId="tp25.1171407110247" id="4457500422381858444">
+                    <node role="parameter" roleId="tp25.1144104376918" type="tp25.OperationParm_Concept" typeId="tp25.1144101972840" id="4457500422381858445">
+                      <node role="conceptArgument" roleId="tp25.1207343664468" type="tp25.RefConcept_Reference" typeId="tp25.1177026924588" id="4457500422381858448">
+                        <link role="conceptDeclaration" roleId="tp25.1177026940964" targetNodeId="2c95.3350625596579911728" resolveInfo="Document" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="4457500422381858475">
+                  <link role="link" roleId="tp25.1138056516764" targetNodeId="2c95.6386504476136472832" />
+                </node>
+              </node>
+              <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkListAccess" typeId="tp25.1138056282393" id="4457500422381858503">
+                <link role="link" roleId="tp25.1138056546658" targetNodeId="2c95.4457500422381845292" />
               </node>
             </node>
           </node>

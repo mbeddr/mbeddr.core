@@ -79,7 +79,7 @@
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.ImageParagraph" typeId="2c95.6386504476136263187" id="6386504476136456051">
           <property name="imagePath" value="/Users/markusvoelter/Documents/mbeddr/mbeddr.core/code/languages/com.mbeddr.doc/solutions/com.mbeddr.doc.sandbox/images/img1.jpg" />
           <property name="showImage" nameId="2c95.6386504476136358630" value="false" />
-          <property name="name" nameId="tpck.1169194664001" value="image_1c" />
+          <property name="name" nameId="tpck.1169194664001" value="glider1" />
           <node role="description" roleId="2c95.6386504476136278696" type="2c95.TextBlock" typeId="2c95.6386504476136446898" id="6386504476136456052">
             <node role="text" roleId="2c95.6386504476136446899" type="87nw.Text" typeId="87nw.2557074442922380897" id="6386504476136456053">
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6386504476136456054">
@@ -89,7 +89,7 @@
                 <link role="target" roleId="2c95.3350625596580108719" targetNodeId="3350625596580113301" resolveInfo="base" />
               </node>
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6386504476136456057">
-                <property name="escapedValue" nameId="87nw.2557074442922438158" value="referenzieren.\nMehr Beschreibung ist hier auch M\u00F6glich. Auch " />
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value=" referenzieren.\nMehr Beschreibung ist hier auch M\u00F6glich. Auch " />
               </node>
               <node role="words" roleId="87nw.2557074442922392302" type="2c95.EmphasizedWord" typeId="2c95.4457500422381556825" id="4457500422381785233">
                 <property name="text" nameId="2c95.4457500422381556838" value="wichtige Worte" />
@@ -107,6 +107,7 @@
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.ImageParagraph" typeId="2c95.6386504476136263187" id="4457500422381349986">
           <property name="imagePath" value="/Users/markusvoelter/Documents/mbeddr/mbeddr.core/code/languages/com.mbeddr.doc/solutions/com.mbeddr.doc.sandbox/images/img1.jpg" />
           <property name="showImage" nameId="2c95.6386504476136358630" value="false" />
+          <property name="name" nameId="tpck.1169194664001" value="glider2" />
           <node role="description" roleId="2c95.6386504476136278696" type="2c95.TextBlock" typeId="2c95.6386504476136446898" id="4457500422381349987">
             <node role="text" roleId="2c95.6386504476136446899" type="87nw.Text" typeId="87nw.2557074442922380897" id="4457500422381349988">
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4457500422381349989">
@@ -116,7 +117,7 @@
                 <link role="target" roleId="2c95.3350625596580108719" targetNodeId="3350625596580113301" resolveInfo="base" />
               </node>
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4457500422381349991">
-                <property name="escapedValue" nameId="87nw.2557074442922438158" value="referenzieren. " />
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value=" referenzieren. " />
               </node>
             </node>
           </node>
@@ -131,7 +132,7 @@
               <property name="escapedValue" nameId="87nw.2557074442922438158" value="We have an image that we can reference as well: " />
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="2c95.ImgRefWord" typeId="2c95.6386504476136420159" id="6386504476136428227">
-              <link role="image" roleId="2c95.6386504476136420174" targetNodeId="6386504476136456051" resolveInfo="image_1" />
+              <link role="image" roleId="2c95.6386504476136420174" targetNodeId="6386504476136456051" resolveInfo="glider1" />
             </node>
           </node>
         </node>
@@ -169,6 +170,15 @@
               </node>
               <node role="words" roleId="87nw.2557074442922392302" type="rh4a.CRefWord" typeId="rh4a.4457500422381536784" id="4457500422381538346">
                 <link role="content" roleId="rh4a.4457500422381536794" targetNodeId="haow.4457500422381538290" resolveInfo="testCase1Umbennst" />
+              </node>
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4457500422381872165">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value=" Here is a " />
+              </node>
+              <node role="words" roleId="87nw.2557074442922392302" type="2c95.ShortcutRefWord" typeId="2c95.4457500422381858396" id="4457500422381872166">
+                <link role="shortcut" roleId="2c95.4457500422381858397" targetNodeId="4457500422381858388" resolveInfo="mbeddr" />
+              </node>
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4457500422381872167">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="." />
               </node>
             </node>
           </node>
@@ -214,6 +224,16 @@
     <node role="paths" roleId="2c95.6386504476136472817" type="2c95.PathDefinition" typeId="2c95.6386504476136472795" id="6386504476136521406">
       <property name="name" nameId="tpck.1169194664001" value="images" />
       <property name="editTimePath" nameId="2c95.6386504476136472797" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.doc/solutions/com.mbeddr.doc.sandbox/images/" />
+    </node>
+    <node role="shortcuts" roleId="2c95.4457500422381845292" type="2c95.Shortcut" typeId="2c95.4457500422381845279" id="4457500422381858388">
+      <property name="name" nameId="tpck.1169194664001" value="mbeddr" />
+      <node role="text" roleId="2c95.4457500422381845281" type="2c95.TextBlock" typeId="2c95.6386504476136446898" id="4457500422381858389">
+        <node role="text" roleId="2c95.6386504476136446899" type="87nw.Text" typeId="87nw.2557074442922380897" id="4457500422381858390">
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4457500422381858391">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value="mbeddr technology stack" />
+          </node>
+        </node>
+      </node>
     </node>
   </root>
 </model>
