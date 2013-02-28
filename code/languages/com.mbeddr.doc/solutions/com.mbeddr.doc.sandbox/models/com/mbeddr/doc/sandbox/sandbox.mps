@@ -10,8 +10,8 @@
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="2c95" modelUID="r:5f7188a9-e7b4-4a2e-bef9-38d2cf379fdc(com.mbeddr.doc.structure)" version="0" implicit="yes" />
   <import index="87nw" modelUID="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" version="5" implicit="yes" />
-  <import index="g9w8" modelUID="r:506f4964-2b3f-49f3-a581-8c498222bac6(com.mbeddr.doc.gen_latex.structure)" version="-1" implicit="yes" />
   <import index="rh4a" modelUID="r:51a64317-678a-4e8f-9df1-1e83f73c9d71(com.mbeddr.doc.c.structure)" version="-1" implicit="yes" />
+  <import index="lsus" modelUID="r:25d6e7db-06a4-44ee-83aa-8c5bf17f3b3a(com.mbeddr.doc.gen_xhtml.structure)" version="-1" implicit="yes" />
   <roots>
     <node type="2c95.Document" typeId="2c95.3350625596579911728" id="3350625596580087926">
       <property name="name" nameId="tpck.1169194664001" value="DocumentationOfDocumentation" />
@@ -38,7 +38,13 @@
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="3350625596580112195">
           <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="3350625596580112196">
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3350625596580112197">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value="Sometimes prose text is useful. For example, for documenting things.\nThe documentation language supports just that.  " />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="Sometimes prose text is useful. For example, for documenting things.\nThe documentation language supports just that. " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="rh4a.CRefWord" typeId="rh4a.4457500422381536784" id="4457500422381556824">
+              <link role="content" roleId="rh4a.4457500422381536794" targetNodeId="haow.4457500422381538279" resolveInfo="main" />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4457500422381556823">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" " />
             </node>
           </node>
         </node>
@@ -134,13 +140,26 @@
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.SubSection" typeId="2c95.3350625596580064457" id="4457500422381538342">
           <property name="name" nameId="tpck.1169194664001" value="code" />
           <property name="text" nameId="2c95.3350625596580064225" value="Here is a reference to code" />
+          <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="4457500422381571302">
+            <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="4457500422381571303">
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4457500422381571304">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="Text, der " />
+              </node>
+              <node role="words" roleId="87nw.2557074442922392302" type="2c95.EmphasizedWord" typeId="2c95.4457500422381556825" id="4457500422381571305">
+                <property name="text" nameId="2c95.4457500422381556838" value="wichtig" />
+              </node>
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4457500422381571308">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value=" ist ist auch hervorgehoben." />
+              </node>
+            </node>
+          </node>
           <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="4457500422381538343">
             <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="4457500422381538344">
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4457500422381538345">
                 <property name="escapedValue" nameId="87nw.2557074442922438158" value="We can also refernece code, for example " />
               </node>
               <node role="words" roleId="87nw.2557074442922392302" type="rh4a.CRefWord" typeId="rh4a.4457500422381536784" id="4457500422381538346">
-                <link role="content" roleId="rh4a.4457500422381536794" targetNodeId="haow.4457500422381538290" resolveInfo="testCase1" />
+                <link role="content" roleId="rh4a.4457500422381536794" targetNodeId="haow.4457500422381538290" resolveInfo="testCase1Umbennst" />
               </node>
             </node>
           </node>
@@ -160,8 +179,8 @@
     <node role="documents" roleId="2c95.3350625596580269182" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="3350625596580274915">
       <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="3350625596580087926" resolveInfo="DocumentationOfDocumentation" />
     </node>
-    <node role="renderer" roleId="2c95.3350625596580269180" type="g9w8.LatexRenderer" typeId="g9w8.4457500422381351715" id="4457500422381355069">
-      <property name="documentClass" nameId="g9w8.4457500422381351717" value="article" />
+    <node role="renderer" roleId="2c95.3350625596580269180" type="lsus.HTMLRenderer" typeId="lsus.3350625596580275037" id="4457500422381588990">
+      <property name="stylesheet" nameId="lsus.4457500422381329081" value="/Users/markusvoelter/Documents/mbeddr/mbeddr.core/code/languages/com.mbeddr.doc/solutions/com.mbeddr.doc.sandbox/css/demo.css" />
     </node>
   </root>
   <root id="6386504476136482735">

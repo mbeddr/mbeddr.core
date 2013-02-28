@@ -2,9 +2,13 @@
 .section {font-family:Sans-serif;padding-top:25px;}
 .subsection {font-family:Sans-serif;padding-top:10px;}
 .body {line-height:130%;}
+
 p.caption {font-style:italic}
 
 .imagecontainer {padding-top:25px;padding-bottom:25px;display:table;width:100%;}
 .image {display: table-cell;}
 .imagecaption {padding-left:10px; display:table-cell; width=200px; vertical-align:top}
+
+.code {font-family:monospace;font-style:bold;}
+.emphasized {font-style:italic;}
 
