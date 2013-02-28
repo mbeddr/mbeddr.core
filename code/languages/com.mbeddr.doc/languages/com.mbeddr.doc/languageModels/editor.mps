@@ -1436,8 +1436,8 @@
                                   <link role="link" roleId="tp25.1138056516764" targetNodeId="2c95.6386504476136521409" />
                                 </node>
                               </node>
-                              <node role="operation" roleId="tpee.1197027833540" type="tp25.SPropertyAccess" typeId="tp25.1138056022639" id="6386504476136543426">
-                                <link role="property" roleId="tp25.1138056395725" targetNodeId="2c95.6386504476136472797" resolveInfo="editTimePath" />
+                              <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_ConceptMethodCall" typeId="tp25.1179409122411" id="4457500422381338121">
+                                <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="4gky.4457500422381281775" resolveInfo="getSubsitutedPath" />
                               </node>
                             </node>
                           </node>
