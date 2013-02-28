@@ -4,10 +4,11 @@
   <language namespace="2374bc90-7e37-41f1-a9c4-c2e35194c36a(com.mbeddr.doc)" />
   <language namespace="92d2ea16-5a42-4fdf-a676-c7604efe3504(de.slisson.mps.richtext)" />
   <language namespace="2dec0852-3a21-4c4e-a68c-b05236cc37f2(com.mbeddr.doc.gen_xhtml)" />
+  <language namespace="f44f6b9a-bf30-4f73-866e-fac17c177409(com.mbeddr.doc.gen_latex)" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="2c95" modelUID="r:5f7188a9-e7b4-4a2e-bef9-38d2cf379fdc(com.mbeddr.doc.structure)" version="0" implicit="yes" />
   <import index="87nw" modelUID="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" version="5" implicit="yes" />
-  <import index="lsus" modelUID="r:25d6e7db-06a4-44ee-83aa-8c5bf17f3b3a(com.mbeddr.doc.gen_xhtml.structure)" version="-1" implicit="yes" />
+  <import index="g9w8" modelUID="r:506f4964-2b3f-49f3-a581-8c498222bac6(com.mbeddr.doc.gen_latex.structure)" version="-1" implicit="yes" />
   <roots>
     <node type="2c95.Document" typeId="2c95.3350625596579911728" id="3350625596580087926">
       <property name="name" nameId="tpck.1169194664001" value="DocumentationOfDocumentation" />
@@ -15,6 +16,7 @@
     </node>
     <node type="2c95.Document" typeId="2c95.3350625596579911728" id="3350625596580246774">
       <property name="name" nameId="tpck.1169194664001" value="AnotherDocument" />
+      <link role="config" roleId="2c95.6386504476136472832" targetNodeId="6386504476136482735" resolveInfo="Config" />
     </node>
     <node type="2c95.DocumentExport" typeId="2c95.3350625596580256366" id="3350625596580274911">
       <property name="name" nameId="tpck.1169194664001" value="ExampleDocument" />
@@ -121,7 +123,7 @@
           <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="4457500422381337440">
             <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="4457500422381337441">
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4457500422381337442">
-                <property name="escapedValue" nameId="87nw.2557074442922438158" value="Textdf\u00F6kg\u00F6kdfg \u00F6 g\u00F6Lorem Ipsum ist ein einfacher Demo-Text f\u00FCr die Print- und Schriftindustrie. Lorem Ipsum ist in der Industrie bereits der Standard Demo-Text seit 1500, als ein unbekannter Schriftsteller eine Hand voll W\u00F6rter nahm und diese durcheinander warf um ein Musterbuch zu erstellen. Es hat nicht nur 5 Jahrhunderte \u00FCberlebt, sondern auch in Spruch in die elektronische Schriftbearbeitung geschafft (bemerke, nahezu unver\u00E4ndert). Bekannt wurde es 1960, mit dem erscheinen von \&quot;Letraset\&quot;, welches Passagen von Lorem Ipsum enhielt, so wie Desktop Software wie \&quot;Aldus PageMaker\&quot; - ebenfalls mit Lorem Ipsum." />
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="Lorem Ipsum Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nec porta libero. Nullam nec ullamcorper risus. Fusce eget eros sed quam molestie interdum. Aenean lectus ipsum, dictum id feugiat fringilla, gravida at enim. Donec nisl nibh, mollis a bibendum molestie, tristique sed tellus. Nunc ut leo ipsum. Nullam ultricies lobortis urna eget viverra." />
               </node>
             </node>
           </node>
@@ -135,14 +137,14 @@
     </node>
   </root>
   <root id="3350625596580274911">
-    <node role="renderer" roleId="2c95.3350625596580269180" type="lsus.HTMLRenderer" typeId="lsus.3350625596580275037" id="6386504476136185112">
-      <property name="stylesheet" nameId="lsus.4457500422381329081" value="/Users/markusvoelter/Documents/mbeddr/mbeddr.core/code/languages/com.mbeddr.doc/solutions/com.mbeddr.doc.sandbox/css/demo.css" />
-    </node>
     <node role="documents" roleId="2c95.3350625596580269182" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="3350625596580274913">
       <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="3350625596580246774" resolveInfo="AnotherDocument" />
     </node>
     <node role="documents" roleId="2c95.3350625596580269182" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="3350625596580274915">
       <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="3350625596580087926" resolveInfo="DocumentationOfDocumentation" />
+    </node>
+    <node role="renderer" roleId="2c95.3350625596580269180" type="g9w8.LatexRenderer" typeId="g9w8.4457500422381351715" id="4457500422381355069">
+      <property name="documentClass" nameId="g9w8.4457500422381351717" value="article" />
     </node>
   </root>
   <root id="6386504476136482735">
