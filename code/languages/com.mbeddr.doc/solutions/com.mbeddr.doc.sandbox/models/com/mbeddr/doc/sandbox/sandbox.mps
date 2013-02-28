@@ -178,7 +178,25 @@
                 <link role="shortcut" roleId="2c95.4457500422381858397" targetNodeId="4457500422381858388" resolveInfo="mbeddr" />
               </node>
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4457500422381872167">
-                <property name="escapedValue" nameId="87nw.2557074442922438158" value="." />
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value=".\nMore stuff: " />
+              </node>
+              <node role="words" roleId="87nw.2557074442922392302" type="2c95.ShortcutRefWord" typeId="2c95.4457500422381858396" id="4457500422381995667">
+                <link role="shortcut" roleId="2c95.4457500422381858397" targetNodeId="4457500422381962830" resolveInfo="great" />
+                <node role="args" roleId="2c95.4457500422381979449" type="87nw.Word" typeId="87nw.2557074442922438156" id="4457500422382012079">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="Flugzeug" />
+                </node>
+              </node>
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1978640040348328135">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="\n" />
+              </node>
+              <node role="words" roleId="87nw.2557074442922392302" type="2c95.ShortcutRefWord" typeId="2c95.4457500422381858396" id="1978640040348328133">
+                <link role="shortcut" roleId="2c95.4457500422381858397" targetNodeId="4457500422381962830" resolveInfo="great" />
+                <node role="args" roleId="2c95.4457500422381979449" type="2c95.SectRefWord" typeId="2c95.3350625596580108709" id="1978640040348328136">
+                  <link role="target" roleId="2c95.3350625596580108719" targetNodeId="4457500422381337439" resolveInfo="demo" />
+                </node>
+              </node>
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4457500422381995666">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value=" Und das ist echt toll." />
               </node>
             </node>
           </node>
@@ -231,6 +249,25 @@
         <node role="text" roleId="2c95.6386504476136446899" type="87nw.Text" typeId="87nw.2557074442922380897" id="4457500422381858390">
           <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4457500422381858391">
             <property name="escapedValue" nameId="87nw.2557074442922438158" value="mbeddr technology stack" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node role="shortcuts" roleId="2c95.4457500422381845292" type="2c95.Shortcut" typeId="2c95.4457500422381845279" id="4457500422381962830">
+      <property name="name" nameId="tpck.1169194664001" value="great" />
+      <node role="args" roleId="2c95.4457500422381931831" type="2c95.ShortcutArg" typeId="2c95.4457500422381931825" id="4457500422381962834">
+        <property name="name" nameId="tpck.1169194664001" value="thing" />
+      </node>
+      <node role="text" roleId="2c95.4457500422381845281" type="2c95.TextBlock" typeId="2c95.6386504476136446898" id="4457500422381962831">
+        <node role="text" roleId="2c95.6386504476136446899" type="87nw.Text" typeId="87nw.2557074442922380897" id="4457500422381962835">
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4457500422381962839">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value="The " />
+          </node>
+          <node role="words" roleId="87nw.2557074442922392302" type="2c95.ShortcutArgRef" typeId="2c95.4457500422381931843" id="4457500422381962840">
+            <link role="arg" roleId="2c95.4457500422381931845" targetNodeId="4457500422381962834" resolveInfo="thing" />
+          </node>
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4457500422381962841">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value=" is really great." />
           </node>
         </node>
       </node>
