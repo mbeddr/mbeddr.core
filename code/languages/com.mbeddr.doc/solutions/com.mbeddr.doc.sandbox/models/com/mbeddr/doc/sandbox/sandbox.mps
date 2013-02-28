@@ -2,8 +2,9 @@
 <model modelUID="r:b6465ad2-9262-414b-ae3c-9581e5aa1a46(com.mbeddr.doc.sandbox.sandbox)">
   <persistence version="7" />
   <language namespace="2374bc90-7e37-41f1-a9c4-c2e35194c36a(com.mbeddr.doc)" />
+  <language namespace="92d2ea16-5a42-4fdf-a676-c7604efe3504(de.slisson.mps.richtext)" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
-  <import index="2c95" modelUID="r:5f7188a9-e7b4-4a2e-bef9-38d2cf379fdc(com.mbeddr.doc.structure)" version="-1" implicit="yes" />
+  <import index="2c95" modelUID="r:5f7188a9-e7b4-4a2e-bef9-38d2cf379fdc(com.mbeddr.doc.structure)" version="0" implicit="yes" />
   <import index="87nw" modelUID="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" version="5" implicit="yes" />
   <roots>
     <node type="2c95.Document" typeId="2c95.3350625596579911728" id="3350625596580087926">
@@ -11,6 +12,9 @@
     </node>
     <node type="2c95.Document" typeId="2c95.3350625596579911728" id="3350625596580246774">
       <property name="name" nameId="tpck.1169194664001" value="AnotherDocument" />
+    </node>
+    <node type="2c95.DocumentExport" typeId="2c95.3350625596580256366" id="3350625596580274911">
+      <property name="name" nameId="tpck.1169194664001" value="ExampleDocument" />
     </node>
   </roots>
   <root id="3350625596580087926">
@@ -23,10 +27,8 @@
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="3350625596580112195">
           <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="3350625596580112196">
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3350625596580112197">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value="Sometimes prose text is useful. For example, for documenting things.\nThe documentation language supports just that." />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="Sometimes prose text is useful. For example, for documenting things.\nThe documentation language supports just that.  " />
             </node>
-            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3350625596580112429" />
-            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3350625596580112430" />
           </node>
         </node>
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="3350625596580113302">
@@ -61,8 +63,17 @@
     </node>
   </root>
   <root id="3350625596580246774">
-    <node role="imports" roleId="2c95.3350625596580225393" type="2c95.DocumentImport" typeId="2c95.3350625596580225385" id="3350625596580251471">
+    <node role="imports" roleId="2c95.3350625596580225393" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="3350625596580274990">
+      <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="3350625596580087926" resolveInfo="DocumentationOfDocumentation" />
+    </node>
+  </root>
+  <root id="3350625596580274911">
+    <node role="renderer" roleId="2c95.3350625596580269180" type="2c95.NullRenderer" typeId="2c95.3350625596580269173" id="3350625596580274912" />
+    <node role="documents" roleId="2c95.3350625596580269182" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="3350625596580274913">
       <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="3350625596580246774" resolveInfo="AnotherDocument" />
+    </node>
+    <node role="documents" roleId="2c95.3350625596580269182" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="3350625596580274915">
+      <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="3350625596580087926" resolveInfo="DocumentationOfDocumentation" />
     </node>
   </root>
 </model>
