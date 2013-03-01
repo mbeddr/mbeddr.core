@@ -11,6 +11,7 @@
       <modulePath path="${project}/languages/complex/complex.mpl" folder="languages" />
       <modulePath path="${project}/languages/foreach/foreach.mpl" folder="languages" />
       <modulePath path="${project}/languages/heap/heap.mpl" folder="languages" />
+      <modulePath path="${project}/languages/mbeddr.tutorial.smtrigger/mbeddr.tutorial.smtrigger.mpl" folder="languages" />
       <modulePath path="${project}/languages/memory/memory.mpl" folder="languages" />
       <modulePath path="${project}/languages/metadata/metadata.mpl" folder="languages" />
       <modulePath path="${project}/languages/osconfig/osconfig.mpl" folder="languages" />

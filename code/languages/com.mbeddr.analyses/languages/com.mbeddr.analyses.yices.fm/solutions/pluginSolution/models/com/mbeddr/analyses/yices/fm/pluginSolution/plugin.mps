@@ -39,7 +39,7 @@
   <roots>
     <node type="tp4k.ActionDeclaration" typeId="tp4k.1203071646776" id="1611636138415538632">
       <property name="name" nameId="tpck.1169194664001" value="FMYicesAction" />
-      <property name="caption" nameId="tp4k.1205250923097" value="Verify Feature Model" />
+      <property name="caption" nameId="tp4k.1205250923097" value="Verify" />
       <property name="mnemonic" nameId="tp4k.1215865999894" value="V" />
     </node>
     <node type="tp4k.ActionGroupDeclaration" typeId="tp4k.1203087890642" id="1611636138415538758">
@@ -53,7 +53,7 @@
     </node>
     <node type="tp4k.ActionDeclaration" typeId="tp4k.1203071646776" id="1611636138415538866">
       <property name="name" nameId="tpck.1169194664001" value="CMYicesAction" />
-      <property name="caption" nameId="tp4k.1205250923097" value="Verify Configuration Model" />
+      <property name="caption" nameId="tp4k.1205250923097" value="Verify" />
       <property name="mnemonic" nameId="tp4k.1215865999894" value="V" />
     </node>
     <node type="tgbt.StandalonePluginDescriptor" typeId="tgbt.7520713872864775836" id="1611636138415538994" />
