@@ -171,6 +171,10 @@
             </node>
           </node>
         </node>
+        <node role="contents" roleId="2c95.3350625596580064250" type="rh4a.CCodeParagraph" typeId="rh4a.6165313375056112024" id="4755612053022236795">
+          <property name="text" nameId="rh4a.6363363735479324452" value="statemachine Ampel initial = S1 { &#10;  in e() &lt;no binding&gt; &#10;  state S1 { &#10;     &#10;  } state S1 &#10;}" />
+          <link role="code" roleId="rh4a.6165313375056112026" targetNodeId="haow.4755612053022236787" resolveInfo="Ampel" />
+        </node>
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.SubSection" typeId="2c95.3350625596580064457" id="4457500422381538342">
           <property name="name" nameId="tpck.1169194664001" value="code" />
           <property name="text" nameId="2c95.3350625596580064225" value="Here is a reference to code" />
@@ -363,6 +367,7 @@
   <root id="3350625596580274911">
     <node role="renderer" roleId="2c95.3350625596580269180" type="g9w8.LatexRenderer" typeId="g9w8.4457500422381351715" id="5378658552263172791">
       <property name="documentClass" nameId="g9w8.4457500422381351717" value="article" />
+      <property name="prolog" nameId="g9w8.4755612053022149513" value="prolog.ltx" />
     </node>
     <node role="root" roleId="2c95.3350625596580269182" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="6165313375056073093">
       <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="3350625596580087926" resolveInfo="DocumentationOfDocumentation" />

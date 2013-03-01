@@ -46,7 +46,7 @@
             <node role="words" roleId="tis3.4457500422381364317" type="tis3.CommandWord" typeId="tis3.4457500422381364333" id="4755612053022145921">
               <property name="command" nameId="tis3.4457500422381364335" value="begin" />
               <node role="args" roleId="tis3.4457500422381364347" type="tis3.TextWord" typeId="tis3.4457500422381364540" id="4755612053022145922">
-                <property name="text" nameId="tis3.4457500422381364541" value="lstlising" />
+                <property name="text" nameId="tis3.4457500422381364541" value="lstlisting" />
               </node>
               <node role="options2" roleId="tis3.4457500422381500094" type="tis3.TextWord" typeId="tis3.4457500422381364540" id="4755612053022145923">
                 <property name="text" nameId="tis3.4457500422381364541" value="language=mbeddr" />
@@ -95,7 +95,7 @@
             <node role="words" roleId="tis3.4457500422381364317" type="tis3.CommandWord" typeId="tis3.4457500422381364333" id="4755612053022145983">
               <property name="command" nameId="tis3.4457500422381364335" value="end" />
               <node role="args" roleId="tis3.4457500422381364347" type="tis3.TextWord" typeId="tis3.4457500422381364540" id="4755612053022145984">
-                <property name="text" nameId="tis3.4457500422381364541" value="lstlising" />
+                <property name="text" nameId="tis3.4457500422381364541" value="lstlisting" />
               </node>
             </node>
           </node>
@@ -999,14 +999,34 @@
         </node>
       </node>
     </node>
-    <node role="prologs" roleId="tis3.4457500422381465724" type="tis3.WordLine" typeId="tis3.4457500422381364312" id="4457500422381472144">
-      <node role="words" roleId="tis3.4457500422381364317" type="tis3.CommandWord" typeId="tis3.4457500422381364333" id="4457500422381472145">
-        <property name="command" nameId="tis3.4457500422381364335" value="usepackage" />
-        <node role="options1" roleId="tis3.4457500422381364346" type="tis3.TextWord" typeId="tis3.4457500422381364540" id="4457500422381513976">
-          <property name="text" nameId="tis3.4457500422381364541" value="pdftex" />
-        </node>
-        <node role="args" roleId="tis3.4457500422381364347" type="tis3.TextWord" typeId="tis3.4457500422381364540" id="4457500422381472147">
-          <property name="text" nameId="tis3.4457500422381364541" value="graphicx" />
+    <node role="prologs" roleId="tis3.4457500422381465724" type="tis3.WordLine" typeId="tis3.4457500422381364312" id="4755612053022230707">
+      <node role="words" roleId="tis3.4457500422381364317" type="tis3.CommandWord" typeId="tis3.4457500422381364333" id="4755612053022230708">
+        <property name="command" nameId="tis3.4457500422381364335" value="input" />
+        <node role="args" roleId="tis3.4457500422381364347" type="tis3.TextWord" typeId="tis3.4457500422381364540" id="4755612053022230709">
+          <property name="text" nameId="tis3.4457500422381364541" value="prolog" />
+          <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.PropertyMacro" typeId="tpf8.1087833241328" id="4755612053022230710">
+            <property name="propertyName" nameId="tpck.1757699476691236117" value="text" />
+            <node role="propertyValueFunction" roleId="tpf8.1167756362303" type="tpf8.PropertyMacro_GetPropertyValue" typeId="tpf8.1167756080639" id="4755612053022230711">
+              <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="4755612053022230712">
+                <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="4755612053022230713">
+                  <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="4755612053022230830">
+                    <node role="operand" roleId="tpee.1197027771414" type="tp25.SNodeTypeCastExpression" typeId="tp25.1140137987495" id="4755612053022230808">
+                      <link role="concept" roleId="tp25.1140138128738" targetNodeId="g9w8.4457500422381351715" resolveInfo="LatexRenderer" />
+                      <node role="leftExpression" roleId="tp25.1140138123956" type="tpee.DotExpression" typeId="tpee.1197027756228" id="4755612053022230781">
+                        <node role="operand" roleId="tpee.1197027771414" type="tpf8.TemplateFunctionParameter_sourceNode" typeId="tpf8.1167169188348" id="4755612053022230714" />
+                        <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="4755612053022230786">
+                          <link role="link" roleId="tp25.1138056516764" targetNodeId="2c95.3350625596580269180" />
+                        </node>
+                      </node>
+                    </node>
+                    <node role="operation" roleId="tpee.1197027833540" type="tp25.SPropertyAccess" typeId="tp25.1138056022639" id="4755612053022230836">
+                      <link role="property" roleId="tp25.1138056395725" targetNodeId="g9w8.4755612053022149513" resolveInfo="prolog" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
         </node>
       </node>
     </node>
