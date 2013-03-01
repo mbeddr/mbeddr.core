@@ -29,7 +29,7 @@
   <roots>
     <node type="tp4k.ActionDeclaration" typeId="tp4k.1203071646776" id="6363363735479351192">
       <property name="name" nameId="tpck.1169194664001" value="udpateCode" />
-      <property name="caption" nameId="tp4k.1205250923097" value="Update Code References in Docs" />
+      <property name="caption" nameId="tp4k.1205250923097" value="Update Code Embeddings in Docs" />
     </node>
     <node type="tp4k.ActionGroupDeclaration" typeId="tp4k.1203087890642" id="6363363735479366548">
       <property name="name" nameId="tpck.1169194664001" value="updateCodeActions" />
