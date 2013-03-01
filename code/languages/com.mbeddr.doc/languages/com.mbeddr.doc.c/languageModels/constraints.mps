@@ -22,6 +22,9 @@
     <node type="tp1t.ConceptConstraints" typeId="tp1t.1213093968558" id="6165313375056112039">
       <link role="concept" roleId="tp1t.1213093996982" targetNodeId="rh4a.6165313375056112024" resolveInfo="CCodeParagraph" />
     </node>
+    <node type="tp1t.ConceptConstraints" typeId="tp1t.1213093968558" id="4755612053022249507">
+      <link role="concept" roleId="tp1t.1213093996982" targetNodeId="rh4a.4755612053022249332" resolveInfo="ExtendedModule" />
+    </node>
   </roots>
   <root id="4457500422381537451">
     <node role="referent" roleId="tp1t.1213100494875" type="tp1t.NodeReferentConstraint" typeId="tp1t.1148687176410" id="4457500422381537452">
@@ -104,6 +107,24 @@
                     <node role="type" roleId="tpee.5680397130376446158" type="tpee.UndefinedType" typeId="tpee.4836112446988635817" id="4755612053022245570" />
                   </node>
                 </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </root>
+  <root id="4755612053022249507">
+    <node role="referent" roleId="tp1t.1213100494875" type="tp1t.NodeReferentConstraint" typeId="tp1t.1148687176410" id="4755612053022249508">
+      <link role="applicableLink" roleId="tp1t.1148687202698" targetNodeId="rh4a.4755612053022249337" />
+      <node role="searchScopeFactory" roleId="tp1t.1148687345559" type="tp1t.ConstraintFunction_ReferentSearchScope_Factory" typeId="tp1t.1148684180339" id="4755612053022249509">
+        <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="4755612053022249510">
+          <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="4755612053022249511">
+            <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="4755612053022249533">
+              <node role="operand" roleId="tpee.1197027771414" type="tpcw.ConceptFunctionParameter_model" typeId="tpcw.1161622665029" id="4755612053022249512" />
+              <node role="operation" roleId="tpee.1197027833540" type="tp25.Model_RootsIncludingImportedOperation" typeId="tp25.1176109685393" id="4755612053022249539">
+                <link role="concept" roleId="tp25.1176109685394" targetNodeId="x27k.6437088627575722830" resolveInfo="ImplementationModule" />
+                <node role="scope" roleId="tp25.1176109762787" type="tpcw.ConceptFunctionParameter_scope" typeId="tpcw.1161622878565" id="4755612053022249541" />
               </node>
             </node>
           </node>
