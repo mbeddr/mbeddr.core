@@ -159,7 +159,7 @@
           </node>
           <node role="contents" roleId="2c95.3350625596580064250" type="rh4a.CCodeParagraph" typeId="rh4a.6165313375056112024" id="4755612053022239309">
             <property name="language" nameId="rh4a.4755612053022237479" value="mbeddr" />
-            <property name="text" nameId="rh4a.6363363735479324452" value="statemachine Ampel initial = S1 { &#10;  in e() &lt;no binding&gt; &#10;  state S1 { &#10;     &#10;  } state S1 &#10;}" />
+            <property name="text" nameId="rh4a.6363363735479324452" value="statemachine Ampel initial = Red { &#10;  in buttonPressed() &lt;no binding&gt; &#10;  composite state Red initial = Red_initial { &#10;    state Red_initial (Red.Red_initial) { &#10;      on buttonPressed [ ] -&gt; RedYellow &#10;    } state Red_initial &#10;    state RedYellow (Red.RedYellow) { &#10;      on buttonPressed [ ] -&gt; Green &#10;    } state RedYellow &#10;  } state Red &#10;  state Green { &#10;     &#10;  } state Green &#10;}" />
             <link role="code" roleId="rh4a.6165313375056112026" targetNodeId="haow.4755612053022236787" resolveInfo="Ampel" />
           </node>
           <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="4755612053022299118">
@@ -357,7 +357,10 @@
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="4755612053022509153">
           <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="4755612053022509154">
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4755612053022509155">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value="Und dann kommt hier einfach mehr Text." />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="Und dann kommt hier einfach mehr Text. Und wir haben eine State Machine in " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.ImgRefWord" typeId="2c95.6386504476136420159" id="4755612053022611609">
+              <link role="image" roleId="2c95.6386504476136420174" targetNodeId="4755612053022516160" resolveInfo="ampel" />
             </node>
           </node>
         </node>
@@ -369,7 +372,7 @@
           <node role="description" roleId="rh4a.4755612053022495458" type="2c95.TextBlock" typeId="2c95.6386504476136446898" id="4755612053022516161">
             <node role="text" roleId="2c95.6386504476136446899" type="87nw.Text" typeId="87nw.2557074442922380897" id="4755612053022516162">
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4755612053022516163">
-                <property name="escapedValue" nameId="87nw.2557074442922438158" value="Text" />
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="Und dann ist hier die Beschreibung der STate Machine." />
               </node>
             </node>
           </node>
