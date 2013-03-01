@@ -13,3 +13,5 @@ p.caption {font-style:italic}
 .math {font-family:monospace;font-style:bold;}
 .emphasized {font-style:italic;}
 
+.codeblock {background-color:#DDDDDD;}
+
