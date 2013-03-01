@@ -52,6 +52,9 @@
       <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="4643433264760141937">
         <link role="module" roleId="51wr.7717755763392524108" targetNodeId="4643433264760141214" resolveInfo="Main" />
       </node>
+      <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="8449450029452915349">
+        <link role="module" roleId="51wr.7717755763392524108" targetNodeId="1752670652009888688" resolveInfo="StatemachineWithEnums" />
+      </node>
     </node>
     <node role="target" roleId="51wr.5323740605968447026" type="51wr.DesktopPlatform" typeId="51wr.5323740605968447022" id="4459718605982799806">
       <property name="compiler" nameId="51wr.5323740605968447024" value="gcc" />

@@ -134,21 +134,35 @@
                 <node role="body" roleId="tp2c.1199569916463" type="tpee.StatementList" typeId="tpee.1068580123136" id="6472990431939837886">
                   <node role="statement" roleId="tpee.1068581517665" type="tpee.BlockStatement" typeId="tpee.1082485599095" id="6472990431940173017">
                     <node role="statements" roleId="tpee.1082485599096" type="tpee.StatementList" typeId="tpee.1068580123136" id="6472990431940173018">
-                      <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="7496742889710629287">
-                        <node role="expression" roleId="tpee.1068580123156" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="7496742889710629288">
-                          <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="2017717622748561141" resolveInfo="CBMCNightlyAnalyses" />
-                          <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="7496742889710629166" resolveInfo="performSingleAnalysisConfiguration" />
-                          <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.ParameterReference" typeId="tpee.1068581242874" id="7496742889710629289">
-                            <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="7123609158770177903" resolveInfo="pi" />
+                      <node role="statement" roleId="tpee.1068581517665" type="tpee.IfStatement" typeId="tpee.1068580123159" id="6446369965057452030">
+                        <node role="ifTrue" roleId="tpee.1068580123161" type="tpee.StatementList" typeId="tpee.1068580123136" id="6446369965057452031">
+                          <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="7496742889710629287">
+                            <node role="expression" roleId="tpee.1068580123156" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="7496742889710629288">
+                              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="7496742889710629166" resolveInfo="performSingleAnalysisConfiguration" />
+                              <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="2017717622748561141" resolveInfo="CBMCNightlyAnalyses" />
+                              <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.ParameterReference" typeId="tpee.1068581242874" id="7496742889710629289">
+                                <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="7123609158770177903" resolveInfo="pi" />
+                              </node>
+                              <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.ParameterReference" typeId="tpee.1068581242874" id="7496742889710629290">
+                                <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="6472990431939837887" resolveInfo="it" />
+                              </node>
+                              <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="7496742889710629291">
+                                <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="6472990431939837891" resolveInfo="allResults" />
+                              </node>
+                              <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="7496742889710629292">
+                                <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="6472990431940177239" resolveInfo="allCFiles" />
+                              </node>
+                            </node>
                           </node>
-                          <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.ParameterReference" typeId="tpee.1068581242874" id="7496742889710629290">
-                            <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="6472990431939837887" resolveInfo="it" />
-                          </node>
-                          <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="7496742889710629291">
-                            <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="6472990431939837891" resolveInfo="allResults" />
-                          </node>
-                          <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="7496742889710629292">
-                            <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="6472990431940177239" resolveInfo="allCFiles" />
+                        </node>
+                        <node role="condition" roleId="tpee.1068580123160" type="tpee.NotExpression" typeId="tpee.1081516740877" id="6446369965057453479">
+                          <node role="expression" roleId="tpee.1081516765348" type="tpee.DotExpression" typeId="tpee.1197027756228" id="6446369965057453480">
+                            <node role="operand" roleId="tpee.1197027771414" type="tpee.ParameterReference" typeId="tpee.1068581242874" id="6446369965057453481">
+                              <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="7123609158770177903" resolveInfo="pi" />
+                            </node>
+                            <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="6446369965057453482">
+                              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="b1vz.~ProgressIndicator%disCanceled()%cboolean" resolveInfo="isCanceled" />
+                            </node>
                           </node>
                         </node>
                       </node>
