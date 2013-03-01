@@ -36,18 +36,10 @@
     <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Chapter" typeId="2c95.3350625596580064453" id="3350625596580089581">
       <property name="name" nameId="tpck.1169194664001" value="intro" />
       <property name="text" nameId="2c95.3350625596580064225" value="Introduction" />
-      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.EmptyDocContent" typeId="2c95.3350625596579911760" id="6165313375056243421">
-        <property name="name" nameId="tpck.1169194664001" value="empty_1362144257840_1" />
-      </node>
       <node role="contents" roleId="2c95.3350625596580064250" type="rh4a.CCodeParagraph" typeId="rh4a.6165313375056112024" id="6165313375056243425">
         <property name="text" nameId="rh4a.6363363735479324452" value="exported int32 main(int32 argc, string[] argv) { &#10;  return test testCase1; &#10;} main (function)" />
+        <property name="language" nameId="rh4a.4755612053022237479" value="mbeddr" />
         <link role="code" roleId="rh4a.6165313375056112026" targetNodeId="haow.4457500422381538279" resolveInfo="main" />
-      </node>
-      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.EmptyDocContent" typeId="2c95.3350625596579911760" id="6165313375056243423">
-        <property name="name" nameId="tpck.1169194664001" value="empty_1362144258123_3" />
-      </node>
-      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.EmptyDocContent" typeId="2c95.3350625596579911760" id="6165313375056243424">
-        <property name="name" nameId="tpck.1169194664001" value="empty_1362144258254_4" />
       </node>
       <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Section" typeId="2c95.3350625596580064455" id="3350625596580089582">
         <property name="name" nameId="tpck.1169194664001" value="wtf" />
@@ -171,7 +163,8 @@
             </node>
           </node>
         </node>
-        <node role="contents" roleId="2c95.3350625596580064250" type="rh4a.CCodeParagraph" typeId="rh4a.6165313375056112024" id="4755612053022236795">
+        <node role="contents" roleId="2c95.3350625596580064250" type="rh4a.CCodeParagraph" typeId="rh4a.6165313375056112024" id="4755612053022239309">
+          <property name="language" nameId="rh4a.4755612053022237479" value="mbeddr" />
           <property name="text" nameId="rh4a.6363363735479324452" value="statemachine Ampel initial = S1 { &#10;  in e() &lt;no binding&gt; &#10;  state S1 { &#10;     &#10;  } state S1 &#10;}" />
           <link role="code" roleId="rh4a.6165313375056112026" targetNodeId="haow.4755612053022236787" resolveInfo="Ampel" />
         </node>
