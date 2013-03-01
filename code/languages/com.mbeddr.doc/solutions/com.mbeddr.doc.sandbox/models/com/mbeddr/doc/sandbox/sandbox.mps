@@ -342,8 +342,37 @@
           </node>
         </node>
         <node role="contents" roleId="2c95.3350625596580064250" type="rh4a.Visualization" typeId="rh4a.4755612053022373494" id="4755612053022378022">
-          <property name="category" nameId="rh4a.4755612053022373532" value="transitive dependencies" />
-          <link role="visualizable" roleId="rh4a.4755612053022373496" targetNodeId="haow.4457500422381538278" resolveInfo="MinimalTest" />
+          <property name="category" nameId="rh4a.4755612053022373532" value="module dependencies" />
+          <property name="name" nameId="tpck.1169194664001" value="dependencies" />
+          <link role="visualizable" roleId="rh4a.4755612053022373496" targetNodeId="haow.4457500422381538339" resolveInfo="MinimalTest" />
+          <link role="path" roleId="rh4a.4755612053022398751" targetNodeId="4755612053022398739" resolveInfo="visualizations" />
+          <node role="description" roleId="rh4a.4755612053022495458" type="2c95.TextBlock" typeId="2c95.6386504476136446898" id="4755612053022509142">
+            <node role="text" roleId="2c95.6386504476136446899" type="87nw.Text" typeId="87nw.2557074442922380897" id="4755612053022509143">
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4755612053022509144">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="Diese Visualisierung hat eine Beschreibung." />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="4755612053022509153">
+          <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="4755612053022509154">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4755612053022509155">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="Und dann kommt hier einfach mehr Text." />
+            </node>
+          </node>
+        </node>
+        <node role="contents" roleId="2c95.3350625596580064250" type="rh4a.Visualization" typeId="rh4a.4755612053022373494" id="4755612053022516160">
+          <property name="category" nameId="rh4a.4755612053022373532" value="statechart (2D)" />
+          <property name="name" nameId="tpck.1169194664001" value="ampel" />
+          <link role="visualizable" roleId="rh4a.4755612053022373496" targetNodeId="haow.4755612053022236787" resolveInfo="Ampel" />
+          <link role="path" roleId="rh4a.4755612053022398751" targetNodeId="4755612053022398739" resolveInfo="visualizations" />
+          <node role="description" roleId="rh4a.4755612053022495458" type="2c95.TextBlock" typeId="2c95.6386504476136446898" id="4755612053022516161">
+            <node role="text" roleId="2c95.6386504476136446899" type="87nw.Text" typeId="87nw.2557074442922380897" id="4755612053022516162">
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4755612053022516163">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="Text" />
+              </node>
+            </node>
+          </node>
         </node>
       </node>
     </node>
@@ -375,11 +404,19 @@
     <node role="renderer" roleId="2c95.3350625596580269180" type="lsus.HTMLRenderer" typeId="lsus.3350625596580275037" id="4755612053022362012">
       <property name="stylesheet" nameId="lsus.4457500422381329081" value="/Users/markusvoelter/Documents/mbeddr/mbeddr.core/code/languages/com.mbeddr.doc/solutions/com.mbeddr.doc.sandbox/css/demo.css" />
     </node>
+    <node role="mappings" roleId="2c95.6386504476136554628" type="2c95.PathMapping" typeId="2c95.6386504476136554612" id="4755612053022494288">
+      <property name="mappedPath" nameId="2c95.6386504476136554614" value="../../../../../../_vis" />
+      <link role="pathDef" roleId="2c95.6386504476136554613" targetNodeId="4755612053022398739" resolveInfo="visualizations" />
+    </node>
   </root>
   <root id="6386504476136482735">
     <node role="paths" roleId="2c95.6386504476136472817" type="2c95.PathDefinition" typeId="2c95.6386504476136472795" id="6386504476136521406">
       <property name="name" nameId="tpck.1169194664001" value="images" />
       <property name="editTimePath" nameId="2c95.6386504476136472797" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.doc/solutions/com.mbeddr.doc.sandbox/images/" />
+    </node>
+    <node role="paths" roleId="2c95.6386504476136472817" type="2c95.PathDefinition" typeId="2c95.6386504476136472795" id="4755612053022398739">
+      <property name="name" nameId="tpck.1169194664001" value="visualizations" />
+      <property name="editTimePath" nameId="2c95.6386504476136472797" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.doc/solutions/com.mbeddr.doc.sandbox/_vis/" />
     </node>
     <node role="shortcuts" roleId="2c95.4457500422381845292" type="2c95.Shortcut" typeId="2c95.4457500422381845279" id="4457500422381858388">
       <property name="name" nameId="tpck.1169194664001" value="mbeddr" />

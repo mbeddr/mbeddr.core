@@ -63,13 +63,21 @@
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="clqz.Statemachine" typeId="clqz.5778488248013533809" id="4755612053022236787">
       <property name="name" nameId="tpck.1169194664001" value="Ampel" />
-      <link role="initial" roleId="clqz.5778488248013533842" targetNodeId="4755612053022236788" resolveInfo="S1" />
+      <link role="initial" roleId="clqz.5778488248013533842" targetNodeId="4755612053022236788" resolveInfo="Red" />
       <node role="contents" roleId="clqz.7835233251114737454" type="clqz.InEvent" typeId="clqz.4643433264760980253" id="4755612053022236792">
-        <property name="name" nameId="tpck.1169194664001" value="e" />
+        <property name="name" nameId="tpck.1169194664001" value="buttonPressed" />
       </node>
       <node role="contents" roleId="clqz.7835233251114737454" type="clqz.State" typeId="clqz.5778488248013533839" id="4755612053022236788">
-        <property name="name" nameId="tpck.1169194664001" value="S1" />
-        <node role="contents" roleId="clqz.4249345261280348989" type="clqz.EmptyStateContents" typeId="clqz.4753668641245811355" id="4755612053022236789" />
+        <property name="name" nameId="tpck.1169194664001" value="Red" />
+        <node role="contents" roleId="clqz.4249345261280348989" type="clqz.Transition" typeId="clqz.5778488248013533883" id="4755612053022509147">
+          <link role="targetState" roleId="clqz.5778488248013533913" targetNodeId="4755612053022509146" resolveInfo="Green" />
+          <node role="trigger" roleId="clqz.3670856444174351950" type="clqz.Trigger" typeId="clqz.1786180596061233739" id="4755612053022509149">
+            <link role="event" roleId="clqz.8951398808641876049" targetNodeId="4755612053022236792" resolveInfo="buttonPressed" />
+          </node>
+        </node>
+      </node>
+      <node role="contents" roleId="clqz.7835233251114737454" type="clqz.State" typeId="clqz.5778488248013533839" id="4755612053022509146">
+        <property name="name" nameId="tpck.1169194664001" value="Green" />
       </node>
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="4755612053022236786">
