@@ -51,6 +51,9 @@
       <property name="name" nameId="tpck.1169194664001" value="cref" />
       <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.ForegroundColorStyleClassItem" typeId="tpc2.1186404549998" id="4457500422381536805">
         <property name="color" nameId="tpc2.1186403713874" value="DARK_GREEN" />
+        <node role="query" roleId="tpc2.1186403803051" type="tpc2.RGBColor" typeId="tpc2.1225456267680" id="6165313375055960805">
+          <property name="value" nameId="tpc2.1225456424731" value="618769" />
+        </node>
       </node>
     </node>
   </root>

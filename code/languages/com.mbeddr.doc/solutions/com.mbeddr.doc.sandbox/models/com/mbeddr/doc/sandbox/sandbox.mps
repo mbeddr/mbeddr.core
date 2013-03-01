@@ -165,7 +165,14 @@
                 <property name="text" nameId="2c95.4457500422381556838" value="wichtig" />
               </node>
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4457500422381571308">
-                <property name="escapedValue" nameId="87nw.2557074442922438158" value=" ist ist auch hervorgehoben. Freitext  editor hast" />
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value=" ist ist auch hervorgehoben. Freitext  editor hast. " />
+              </node>
+              <node role="words" roleId="87nw.2557074442922392302" type="2c95.MathFormattedText" typeId="2c95.6165313375055755361" id="6165313375055797473">
+                <node role="text" roleId="2c95.6165313375055755362" type="87nw.Text" typeId="87nw.2557074442922380897" id="6165313375055797474">
+                  <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6165313375055797475">
+                    <property name="escapedValue" nameId="87nw.2557074442922438158" value="Hallo" />
+                  </node>
+                </node>
               </node>
             </node>
           </node>

@@ -64,11 +64,15 @@
       <property name="name" nameId="tpck.1169194664001" value="var" />
       <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.ForegroundColorStyleClassItem" typeId="tpc2.1186404549998" id="5378658552263149337">
         <property name="color" nameId="tpc2.1186403713874" value="blue" />
+        <node role="query" roleId="tpc2.1186403803051" type="tpc2.RGBColor" typeId="tpc2.1225456267680" id="6165313375055984804">
+          <property name="value" nameId="tpc2.1225456424731" value="E37F74" />
+        </node>
       </node>
     </node>
   </root>
   <root id="5378658552263151451">
     <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="5378658552263151454">
+      <link role="styleClass" roleId="tpc2.1186406756722" targetNodeId="5378658552263149336" resolveInfo="var" />
       <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Indent" typeId="tpc2.1237303669825" id="5378658552263151455" />
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="5378658552263151453">
         <property name="text" nameId="tpc2.1073389577007" value="$" />

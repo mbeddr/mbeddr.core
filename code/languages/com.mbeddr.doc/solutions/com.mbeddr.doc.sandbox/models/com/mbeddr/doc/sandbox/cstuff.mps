@@ -28,7 +28,7 @@
         <node role="statements" roleId="c4fa.4185783222026475862" type="x27k.ReturnStatement" typeId="x27k.8967919205527146149" id="4457500422381538281">
           <node role="expression" roleId="x27k.8967919205527146150" type="yz9a.ExecuteTestExpression" typeId="yz9a.186853311768094629" id="4457500422381538282">
             <node role="tests" roleId="yz9a.5686538669182341016" type="yz9a.TestCaseRef" typeId="yz9a.5686538669182340985" id="4457500422381538283">
-              <link role="testcase" roleId="yz9a.5686538669182340986" targetNodeId="4457500422381538290" resolveInfo="testCase1Umbennst" />
+              <link role="testcase" roleId="yz9a.5686538669182340986" targetNodeId="4457500422381538290" resolveInfo="testCase1" />
             </node>
           </node>
         </node>
@@ -58,7 +58,7 @@
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="yz9a.TestCase" typeId="yz9a.6275792049641586523" id="4457500422381538290">
       <property name="exported" nameId="x27k.1317894735999272944" value="true" />
-      <property name="name" nameId="tpck.1169194664001" value="testCase1Umbennst" />
+      <property name="name" nameId="tpck.1169194664001" value="testCase1" />
       <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="4457500422381538291">
         <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
         <property name="const" nameId="mj1l.2941277002445651368" value="false" />
