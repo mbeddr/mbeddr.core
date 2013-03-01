@@ -1,5 +1,0 @@
-@startuml
-skinparam packageStyle rect
-component MinimalTest <<module>>
-url of MinimalTest is [[http://mbeddr.com/r:d183ee78-698a-4d70-a6c1-07e860784580##__##4457500422381538278]]
-@enduml

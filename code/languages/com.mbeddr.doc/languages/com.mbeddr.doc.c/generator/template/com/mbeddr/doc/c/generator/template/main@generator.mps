@@ -81,10 +81,10 @@
                           <property name="value" nameId="tpee.1070475926801" value=".png" />
                         </node>
                         <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.DotExpression" typeId="tpee.1197027756228" id="4755612053022495427">
-                          <node role="operand" roleId="tpee.1197027771414" type="tpf8.TemplateFunctionParameter_sourceNode" typeId="tpf8.1167169188348" id="4755612053022495406" />
-                          <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_ConceptMethodCall" typeId="tp25.1179409122411" id="4755612053022495433">
-                            <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="hwgx.5470497459578244269" resolveInfo="qualifiedName" />
+                          <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_ConceptMethodCall" typeId="tp25.1179409122411" id="4755612053022636920">
+                            <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="1v5f.4755612053022636837" resolveInfo="filenameWithoutExtension" />
                           </node>
+                          <node role="operand" roleId="tpee.1197027771414" type="tpf8.TemplateFunctionParameter_sourceNode" typeId="tpf8.1167169188348" id="4755612053022495406" />
                         </node>
                       </node>
                     </node>
@@ -434,11 +434,11 @@
                                     <property name="value" nameId="tpee.1070475926801" value=".puml" />
                                   </node>
                                   <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.DotExpression" typeId="tpee.1197027756228" id="4755612053022412688">
+                                    <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_ConceptMethodCall" typeId="tp25.1179409122411" id="4755612053022636914">
+                                      <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="1v5f.4755612053022636837" resolveInfo="filenameWithoutExtension" />
+                                    </node>
                                     <node role="operand" roleId="tpee.1197027771414" type="tp2q.ForEachVariableReference" typeId="tp2q.1153944233411" id="4755612053022412667">
                                       <link role="variable" roleId="tp2q.1153944258490" targetNodeId="4755612053022405330" resolveInfo="v" />
-                                    </node>
-                                    <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_ConceptMethodCall" typeId="tp25.1179409122411" id="4755612053022412694">
-                                      <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="hwgx.5470497459578244269" resolveInfo="qualifiedName" />
                                     </node>
                                   </node>
                                 </node>

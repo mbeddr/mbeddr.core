@@ -237,6 +237,7 @@
         </node>
         <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Indent" typeId="tpc2.1198256887712" id="3350625596580064259" />
         <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_RefNodeList" typeId="tpc2.1073390211982" id="3350625596580064261">
+          <property name="separatorText" nameId="tpc2.1140524450557" value="\n" />
           <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="2c95.3350625596580064250" />
           <node role="cellLayout" roleId="tpc2.1140524464360" type="tpc2.CellLayout_Vertical" typeId="tpc2.1106270571710" id="3350625596580064262" />
           <node role="nodeFactory" roleId="tpc2.1176897874615" type="tpc2.QueryFunction_NodeFactory" typeId="tpc2.1176897764478" id="3350625596580064263">
@@ -1329,16 +1330,13 @@
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_RefNode" typeId="tpc2.1073389882823" id="6386504476136278697">
         <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="2c95.6386504476136278696" />
       </node>
-      <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.DrawBracketsStyleClassItem" typeId="tpc2.1219226236603" id="4755612053022510703">
-        <property name="flag" nameId="tpc2.1186414551515" value="true" />
-      </node>
     </node>
   </root>
   <root id="6386504476136420161">
     <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="6386504476136420163">
       <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Indent" typeId="tpc2.1237303669825" id="6386504476136420164" />
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="6386504476136420165">
-        <property name="text" nameId="tpc2.1073389577007" value="@img(" />
+        <property name="text" nameId="tpc2.1073389577007" value="@fig(" />
         <link role="styleClass" roleId="tpc2.1186406756722" targetNodeId="3350625596580113308" resolveInfo="structure" />
         <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.PunctuationLeftStyleClassItem" typeId="tpc2.1233758997495" id="6386504476136420166">
           <property name="flag" nameId="tpc2.1186414551515" value="true" />

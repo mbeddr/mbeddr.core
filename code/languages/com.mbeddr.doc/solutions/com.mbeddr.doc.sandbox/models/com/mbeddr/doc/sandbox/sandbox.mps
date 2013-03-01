@@ -15,7 +15,7 @@
   <import index="rh4a" modelUID="r:51a64317-678a-4e8f-9df1-1e83f73c9d71(com.mbeddr.doc.c.structure)" version="0" implicit="yes" />
   <import index="f87k" modelUID="r:e7473124-6323-4ddf-9715-6e1684f751bd(com.mbeddr.doc.expressions.structure)" version="-1" implicit="yes" />
   <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="20" implicit="yes" />
-  <import index="lsus" modelUID="r:25d6e7db-06a4-44ee-83aa-8c5bf17f3b3a(com.mbeddr.doc.gen_xhtml.structure)" version="-1" implicit="yes" />
+  <import index="g9w8" modelUID="r:506f4964-2b3f-49f3-a581-8c498222bac6(com.mbeddr.doc.gen_latex.structure)" version="-1" implicit="yes" />
   <roots>
     <node type="2c95.Document" typeId="2c95.3350625596579911728" id="3350625596580087926">
       <property name="name" nameId="tpck.1169194664001" value="DocumentationOfDocumentation" />
@@ -159,7 +159,7 @@
           </node>
           <node role="contents" roleId="2c95.3350625596580064250" type="rh4a.CCodeParagraph" typeId="rh4a.6165313375056112024" id="4755612053022239309">
             <property name="language" nameId="rh4a.4755612053022237479" value="mbeddr" />
-            <property name="text" nameId="rh4a.6363363735479324452" value="statemachine Ampel initial = Red { &#10;  in buttonPressed() &lt;no binding&gt; &#10;  state Red { &#10;    on buttonPressed [ ] -&gt; Green &#10;  } state Red &#10;  state Green { &#10;     &#10;  } state Green &#10;}" />
+            <property name="text" nameId="rh4a.6363363735479324452" value="statemachine Ampel initial = Red { &#10;  in buttonPressed() &lt;no binding&gt; &#10;  composite state Red initial = Red_initial { &#10;    state Red_initial (Red.Red_initial) { &#10;      on buttonPressed [ ] -&gt; RedYellow &#10;    } state Red_initial &#10;    state RedYellow (Red.RedYellow) { &#10;      on buttonPressed [ ] -&gt; Green &#10;    } state RedYellow &#10;  } state Red &#10;  state Green { &#10;     &#10;  } state Green &#10;}" />
             <link role="code" roleId="rh4a.6165313375056112026" targetNodeId="haow.4755612053022236787" resolveInfo="Ampel" />
           </node>
           <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="4755612053022299118">
@@ -357,7 +357,10 @@
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="4755612053022509153">
           <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="4755612053022509154">
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4755612053022509155">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value="Und dann kommt hier einfach mehr Text." />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="Und dann kommt hier einfach mehr Text. Und wir haben eine State Machine in " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.ImgRefWord" typeId="2c95.6386504476136420159" id="4755612053022611609">
+              <link role="image" roleId="2c95.6386504476136420174" targetNodeId="4755612053022516160" resolveInfo="ampel" />
             </node>
           </node>
         </node>
@@ -369,7 +372,7 @@
           <node role="description" roleId="rh4a.4755612053022495458" type="2c95.TextBlock" typeId="2c95.6386504476136446898" id="4755612053022516161">
             <node role="text" roleId="2c95.6386504476136446899" type="87nw.Text" typeId="87nw.2557074442922380897" id="4755612053022516162">
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4755612053022516163">
-                <property name="escapedValue" nameId="87nw.2557074442922438158" value="Text" />
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="Und dann ist hier die Beschreibung der STate Machine." />
               </node>
             </node>
           </node>
@@ -398,14 +401,15 @@
     </node>
   </root>
   <root id="3350625596580274911">
+    <node role="renderer" roleId="2c95.3350625596580269180" type="g9w8.LatexRenderer" typeId="g9w8.4457500422381351715" id="4755612053022632282">
+      <property name="documentClass" nameId="g9w8.4457500422381351717" value="article" />
+      <property name="prolog" nameId="g9w8.4755612053022149513" value="prolog.ltx" />
+    </node>
     <node role="root" roleId="2c95.3350625596580269182" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="6165313375056073093">
       <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="3350625596580087926" resolveInfo="DocumentationOfDocumentation" />
     </node>
-    <node role="renderer" roleId="2c95.3350625596580269180" type="lsus.HTMLRenderer" typeId="lsus.3350625596580275037" id="4755612053022362012">
-      <property name="stylesheet" nameId="lsus.4457500422381329081" value="/Users/markusvoelter/Documents/mbeddr/mbeddr.core/code/languages/com.mbeddr.doc/solutions/com.mbeddr.doc.sandbox/css/demo.css" />
-    </node>
     <node role="mappings" roleId="2c95.6386504476136554628" type="2c95.PathMapping" typeId="2c95.6386504476136554612" id="4755612053022494288">
-      <property name="mappedPath" nameId="2c95.6386504476136554614" value="../../../../../../_vis" />
+      <property name="mappedPath" nameId="2c95.6386504476136554614" value="../../../../../../_vis/" />
       <link role="pathDef" roleId="2c95.6386504476136554613" targetNodeId="4755612053022398739" resolveInfo="visualizations" />
     </node>
   </root>
