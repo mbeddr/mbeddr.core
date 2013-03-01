@@ -1665,8 +1665,8 @@
           <property name="flag" nameId="tpc2.1186414551515" value="true" />
         </node>
       </node>
-      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Property" typeId="tpc2.1073389658414" id="4457500422381571996">
-        <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="2c95.4457500422381571987" resolveInfo="text" />
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_RefNode" typeId="tpc2.1073389882823" id="5378658552263187706">
+        <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="2c95.5378658552263187704" />
       </node>
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="4457500422381571997">
         <property name="text" nameId="tpc2.1073389577007" value=")" />
