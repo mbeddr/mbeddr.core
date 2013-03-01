@@ -10,5 +10,6 @@ p.caption {font-style:italic}
 .imagecaption {padding-left:10px; display:table-cell; width=200px; vertical-align:top}
 
 .code {font-family:monospace;font-style:bold;}
+.math {font-family:monospace;font-style:bold;}
 .emphasized {font-style:italic;}
 
