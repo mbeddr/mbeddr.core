@@ -200,6 +200,35 @@
               </node>
             </node>
           </node>
+          <node role="contents" roleId="2c95.3350625596580064250" type="2c95.ItemList" typeId="2c95.5378658552262893169" id="5378658552263129793">
+            <node role="items" roleId="2c95.5378658552262986137" type="2c95.Item" typeId="2c95.5378658552262903588" id="5378658552263130270">
+              <node role="text" roleId="2c95.5378658552262903589" type="2c95.TextBlock" typeId="2c95.6386504476136446898" id="5378658552263130271">
+                <node role="text" roleId="2c95.6386504476136446899" type="87nw.Text" typeId="87nw.2557074442922380897" id="5378658552263130272">
+                  <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5378658552263130273">
+                    <property name="escapedValue" nameId="87nw.2557074442922438158" value="Ein bischen Text." />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node role="items" roleId="2c95.5378658552262986137" type="2c95.Item" typeId="2c95.5378658552262903588" id="5378658552263130262">
+              <node role="text" roleId="2c95.5378658552262903589" type="2c95.TextBlock" typeId="2c95.6386504476136446898" id="5378658552263130263">
+                <node role="text" roleId="2c95.6386504476136446899" type="87nw.Text" typeId="87nw.2557074442922380897" id="5378658552263130264">
+                  <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5378658552263130265">
+                    <property name="escapedValue" nameId="87nw.2557074442922438158" value="Mehr Text steht in dieser Bullet. " />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node role="items" roleId="2c95.5378658552262986137" type="2c95.Item" typeId="2c95.5378658552262903588" id="5378658552263130266">
+              <node role="text" roleId="2c95.5378658552262903589" type="2c95.TextBlock" typeId="2c95.6386504476136446898" id="5378658552263130267">
+                <node role="text" roleId="2c95.6386504476136446899" type="87nw.Text" typeId="87nw.2557074442922380897" id="5378658552263130268">
+                  <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5378658552263130269">
+                    <property name="escapedValue" nameId="87nw.2557074442922438158" value="Noch mehr Text in dieser hier." />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
         </node>
       </node>
     </node>

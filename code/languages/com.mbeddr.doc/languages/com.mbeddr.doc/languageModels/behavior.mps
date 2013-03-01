@@ -50,6 +50,10 @@
     <node type="1i04.ConceptBehavior" typeId="1i04.1225194240794" id="6386504476136531841">
       <link role="concept" roleId="1i04.1225194240799" targetNodeId="2c95.6386504476136521407" resolveInfo="Resource" />
     </node>
+    <node type="1i04.ConceptBehavior" typeId="1i04.1225194240794" id="5378658552263093801">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="paragraphs" />
+      <link role="concept" roleId="1i04.1225194240799" targetNodeId="2c95.5378658552262903588" resolveInfo="Item" />
+    </node>
   </roots>
   <root id="3350625596580059253">
     <node role="constructor" roleId="1i04.1225194240801" type="1i04.ConceptConstructorDeclaration" typeId="1i04.1225194413805" id="3350625596580059254">
@@ -1436,6 +1440,11 @@
     </node>
     <node role="constructor" roleId="1i04.1225194240801" type="1i04.ConceptConstructorDeclaration" typeId="1i04.1225194413805" id="6386504476136531842">
       <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="6386504476136531843" />
+    </node>
+  </root>
+  <root id="5378658552263093801">
+    <node role="constructor" roleId="1i04.1225194240801" type="1i04.ConceptConstructorDeclaration" typeId="1i04.1225194413805" id="5378658552263093802">
+      <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="5378658552263093803" />
     </node>
   </root>
 </model>
