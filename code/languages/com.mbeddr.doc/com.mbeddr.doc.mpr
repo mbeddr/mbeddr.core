@@ -7,6 +7,7 @@
   <component name="MPSProject">
     <projectModules>
       <modulePath path="${project}/languages/com.mbeddr.doc.c/com.mbeddr.doc.c.mpl" folder="" />
+      <modulePath path="${project}/languages/com.mbeddr.doc.c/solutions/pluginSolution/pluginSolution.msd" />
       <modulePath path="${project}/languages/com.mbeddr.doc.expressions/com.mbeddr.doc.expressions.mpl" folder="" />
       <modulePath path="${project}/languages/com.mbeddr.doc.gen_latex/com.mbeddr.doc.gen_latex.mpl" folder="" />
       <modulePath path="${project}/languages/com.mbeddr.doc.gen_xhtml/com.mbeddr.doc.gen_xhtml.mpl" folder="" />
