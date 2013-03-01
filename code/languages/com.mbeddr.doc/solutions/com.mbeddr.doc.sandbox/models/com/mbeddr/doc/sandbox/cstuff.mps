@@ -88,6 +88,12 @@
             </node>
           </node>
         </node>
+        <node role="contents" roleId="clqz.4249345261280348989" type="clqz.State" typeId="clqz.5778488248013533839" id="4755612053022679136">
+          <property name="name" nameId="tpck.1169194664001" value="Kaputt" />
+        </node>
+        <node role="contents" roleId="clqz.4249345261280348989" type="clqz.State" typeId="clqz.5778488248013533839" id="4755612053022714662">
+          <property name="name" nameId="tpck.1169194664001" value="Kaputt2" />
+        </node>
       </node>
       <node role="contents" roleId="clqz.7835233251114737454" type="clqz.State" typeId="clqz.5778488248013533839" id="4755612053022509146">
         <property name="name" nameId="tpck.1169194664001" value="Green" />
