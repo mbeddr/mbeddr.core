@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<history>
+  <StructureModification>
+    <dependencies>
+      <model index="rh4a" modelUID="r:51a64317-678a-4e8f-9df1-1e83f73c9d71(com.mbeddr.doc.c.structure)" version="-1" />
+    </dependencies>
+    <rename id="rh4a.6165313375056112024" type="CONCEPT" from="CodeParagraph" to="CCodeParagraph" />
+  </StructureModification>
+</history>
+
