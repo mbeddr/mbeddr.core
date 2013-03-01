@@ -47,6 +47,7 @@
           <link role="config" roleId="2c95.6386504476136472832" targetNodeId="4755612053022494311" resolveInfo="DummyCfg" />
           <node role="contents" roleId="2c95.3350625596580064250" type="2c95.ImageParagraph" typeId="2c95.6386504476136263187" id="4755612053022495290">
             <property name="name" nameId="tpck.1169194664001" value="img" />
+            <property name="border" nameId="2c95.4755612053022517119" value="true" />
             <node role="resource" roleId="2c95.6386504476136531838" type="2c95.Resource" typeId="2c95.6386504476136521407" id="4755612053022495305">
               <property name="fileName" nameId="2c95.6386504476136521408" value="var" />
               <link role="path" roleId="2c95.6386504476136521409" targetNodeId="4755612053022494313" resolveInfo="p" />
