@@ -66,6 +66,11 @@
           </node>
         </node>
       </node>
+      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.DocumentInclude" typeId="2c95.6165313375056012512" id="6165313375056071967">
+        <node role="ref" roleId="2c95.6165313375056012515" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="6165313375056071969">
+          <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="3350625596580246774" resolveInfo="AnotherDocument" />
+        </node>
+      </node>
       <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Section" typeId="2c95.3350625596580064455" id="3350625596580113301">
         <property name="name" nameId="tpck.1169194664001" value="base" />
         <property name="text" nameId="2c95.3350625596580064225" value="Base Technology" />
@@ -168,7 +173,7 @@
                 <property name="escapedValue" nameId="87nw.2557074442922438158" value=" ist ist auch hervorgehoben. Freitext  editor hast. " />
               </node>
               <node role="words" roleId="87nw.2557074442922392302" type="2c95.MathFormattedText" typeId="2c95.6165313375055755361" id="6165313375055797473">
-                <node role="text" roleId="2c95.6165313375055755362" type="87nw.Text" typeId="87nw.2557074442922380897" id="6165313375055797474">
+                <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="6165313375055797474">
                   <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6165313375055797475">
                     <property name="escapedValue" nameId="87nw.2557074442922438158" value="Hallo" />
                   </node>
@@ -182,7 +187,7 @@
                 <property name="escapedValue" nameId="87nw.2557074442922438158" value="We can also refernece code, for example " />
               </node>
               <node role="words" roleId="87nw.2557074442922392302" type="rh4a.CRefWord" typeId="rh4a.4457500422381536784" id="4457500422381538346">
-                <link role="content" roleId="rh4a.4457500422381536794" targetNodeId="haow.4457500422381538290" resolveInfo="testCase1Umbennst" />
+                <link role="content" roleId="rh4a.4457500422381536794" targetNodeId="haow.4457500422381538290" resolveInfo="testCase1" />
               </node>
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4457500422381872165">
                 <property name="escapedValue" nameId="87nw.2557074442922438158" value=" Here is a " />
@@ -323,22 +328,19 @@
     </node>
   </root>
   <root id="3350625596580246774">
-    <node role="imports" roleId="2c95.3350625596580225393" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="3350625596580274990">
-      <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="3350625596580087926" resolveInfo="DocumentationOfDocumentation" />
-    </node>
     <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Section" typeId="2c95.3350625596580064455" id="4457500422381799153">
       <property name="name" nameId="tpck.1169194664001" value="s1" />
       <property name="text" nameId="2c95.3350625596580064225" value="Section" />
       <node role="contents" roleId="2c95.3350625596580064250" type="2c95.SubSection" typeId="2c95.3350625596580064457" id="4457500422381799152">
         <property name="name" nameId="tpck.1169194664001" value="stuff" />
-        <property name="text" nameId="2c95.3350625596580064225" value="Here is more stuff" />
+        <property name="text" nameId="2c95.3350625596580064225" value="Imported Stuff" />
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="4457500422381589500">
           <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="4457500422381589501">
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4457500422381589502">
               <property name="escapedValue" nameId="87nw.2557074442922438158" value="TextMehr text: " />
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="2c95.SectRefWord" typeId="2c95.3350625596580108709" id="4457500422381589503">
-              <link role="target" roleId="2c95.3350625596580108719" targetNodeId="3350625596580113301" resolveInfo="base" />
+              <link role="target" roleId="2c95.3350625596580108719" targetNodeId="4457500422381799153" resolveInfo="s1" />
             </node>
           </node>
         </node>
@@ -346,14 +348,11 @@
     </node>
   </root>
   <root id="3350625596580274911">
-    <node role="documents" roleId="2c95.3350625596580269182" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="3350625596580274915">
-      <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="3350625596580087926" resolveInfo="DocumentationOfDocumentation" />
-    </node>
-    <node role="documents" roleId="2c95.3350625596580269182" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="3350625596580274913">
-      <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="3350625596580246774" resolveInfo="AnotherDocument" />
-    </node>
     <node role="renderer" roleId="2c95.3350625596580269180" type="g9w8.LatexRenderer" typeId="g9w8.4457500422381351715" id="5378658552263172791">
       <property name="documentClass" nameId="g9w8.4457500422381351717" value="article" />
+    </node>
+    <node role="root" roleId="2c95.3350625596580269182" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="6165313375056073093">
+      <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="3350625596580087926" resolveInfo="DocumentationOfDocumentation" />
     </node>
   </root>
   <root id="6386504476136482735">

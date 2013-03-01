@@ -12,6 +12,9 @@
       <external-templates>
         <generator generatorUID="864be1b4-10fc-4e1f-9112-c5b47ae9adec(com.mbeddr.doc#4457500422381538528)" />
       </external-templates>
+      <dependencies>
+        <dependency reexport="false">ae22a5d5-bb74-4acf-b102-de4ea6203c98(com.mbeddr.doc.gen_latex#4457500422381351720)</dependency>
+      </dependencies>
       <usedLanguages>
         <usedLanguage>2dec0852-3a21-4c4e-a68c-b05236cc37f2(com.mbeddr.doc.gen_xhtml)</usedLanguage>
         <usedLanguage>479c7a8c-02f9-43b5-9139-d910cb22f298(jetbrains.mps.core.xml)</usedLanguage>
