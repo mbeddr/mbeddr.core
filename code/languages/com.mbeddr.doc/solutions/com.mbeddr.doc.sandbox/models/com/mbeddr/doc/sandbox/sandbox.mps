@@ -341,6 +341,10 @@
             </node>
           </node>
         </node>
+        <node role="contents" roleId="2c95.3350625596580064250" type="rh4a.Visualization" typeId="rh4a.4755612053022373494" id="4755612053022378022">
+          <property name="category" nameId="rh4a.4755612053022373532" value="transitive dependencies" />
+          <link role="visualizable" roleId="rh4a.4755612053022373496" targetNodeId="haow.4457500422381538278" resolveInfo="MinimalTest" />
+        </node>
       </node>
     </node>
   </root>
