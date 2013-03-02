@@ -172,7 +172,7 @@
             </node>
           </node>
           <node role="contents" roleId="2c95.3350625596580064250" type="rh4a.CCodeParagraph" typeId="rh4a.6165313375056112024" id="6165313375056243425">
-            <property name="text" nameId="rh4a.6363363735479324452" value="exported int32 main(int32 argc, string[] argv) { &#10;  return test testCase1; &#10;} main (function)" />
+            <property name="text" nameId="rh4a.6363363735479324452" value="exported int32 main(int32 argc, string[] argv) { \n  return test testCase1; \n} main (function)" />
             <property name="language" nameId="rh4a.4755612053022237479" value="mbeddr" />
             <link role="code" roleId="rh4a.6165313375056112026" targetNodeId="haow.4457500422381538279" resolveInfo="main" />
             <link role="module" roleId="rh4a.126932837435556061" targetNodeId="haow.4457500422381538278" resolveInfo="MinimalTest" />

@@ -18,10 +18,6 @@
       <property name="virtualPackage" nameId="tpck.1193676396447" value="paragraphs" />
       <link role="concept" roleId="tp1t.1213093996982" targetNodeId="2c95.3350625596580089586" resolveInfo="TextParagraph" />
     </node>
-    <node type="tp1t.ConceptConstraints" typeId="tp1t.1213093968558" id="3350625596580097830">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="paragraphs" />
-      <link role="concept" roleId="tp1t.1213093996982" targetNodeId="2c95.3350625596580089583" resolveInfo="AbstractParagraph" />
-    </node>
     <node type="tp1t.ConceptConstraints" typeId="tp1t.1213093968558" id="3350625596580108730">
       <property name="virtualPackage" nameId="tpck.1193676396447" value="words" />
       <link role="concept" roleId="tp1t.1213093996982" targetNodeId="2c95.3350625596580108709" resolveInfo="SectRefWord" />
@@ -89,7 +85,6 @@
       </node>
     </node>
   </root>
-  <root id="3350625596580097830" />
   <root id="3350625596580108730">
     <node role="referent" roleId="tp1t.1213100494875" type="tp1t.NodeReferentConstraint" typeId="tp1t.1148687176410" id="3350625596580242083">
       <link role="applicableLink" roleId="tp1t.1148687202698" targetNodeId="2c95.3350625596580108719" />
