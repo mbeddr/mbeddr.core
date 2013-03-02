@@ -28,6 +28,7 @@
     </node>
     <node type="2c95.DocumentExport" typeId="2c95.3350625596580256366" id="3350625596580274911">
       <property name="name" nameId="tpck.1169194664001" value="ExampleDocument" />
+      <property name="title" nameId="2c95.126932837435324910" value="Example Document" />
     </node>
     <node type="2c95.DocumentConfig" typeId="2c95.6386504476136472782" id="6386504476136482735">
       <property name="name" nameId="tpck.1169194664001" value="Config" />
