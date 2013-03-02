@@ -401,15 +401,19 @@
     </node>
   </root>
   <root id="3350625596580274911">
+    <node role="mappings" roleId="2c95.6386504476136554628" type="2c95.PathMapping" typeId="2c95.6386504476136554612" id="4509696981881722613">
+      <property name="mappedPath" nameId="2c95.6386504476136554614" value="_images/" />
+      <link role="pathDef" roleId="2c95.6386504476136554613" targetNodeId="6386504476136521406" resolveInfo="images" />
+    </node>
     <node role="renderer" roleId="2c95.3350625596580269180" type="g9w8.LatexRenderer" typeId="g9w8.4457500422381351715" id="4755612053022632282">
       <property name="documentClass" nameId="g9w8.4457500422381351717" value="article" />
-      <property name="prolog" nameId="g9w8.4755612053022149513" value="prolog.ltx" />
+      <property name="prolog" nameId="g9w8.4755612053022149513" value="mbeddr-prolog.ltx" />
     </node>
     <node role="root" roleId="2c95.3350625596580269182" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="6165313375056073093">
       <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="3350625596580087926" resolveInfo="DocumentationOfDocumentation" />
     </node>
     <node role="mappings" roleId="2c95.6386504476136554628" type="2c95.PathMapping" typeId="2c95.6386504476136554612" id="4755612053022494288">
-      <property name="mappedPath" nameId="2c95.6386504476136554614" value="../../../../../../_vis/" />
+      <property name="mappedPath" nameId="2c95.6386504476136554614" value="_vis/" />
       <link role="pathDef" roleId="2c95.6386504476136554613" targetNodeId="4755612053022398739" resolveInfo="visualizations" />
     </node>
   </root>
@@ -420,7 +424,7 @@
     </node>
     <node role="paths" roleId="2c95.6386504476136472817" type="2c95.PathDefinition" typeId="2c95.6386504476136472795" id="4755612053022398739">
       <property name="name" nameId="tpck.1169194664001" value="visualizations" />
-      <property name="editTimePath" nameId="2c95.6386504476136472797" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.doc/solutions/com.mbeddr.doc.sandbox/_vis/" />
+      <property name="editTimePath" nameId="2c95.6386504476136472797" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.doc/solutions/com.mbeddr.doc.sandbox/_vis" />
     </node>
     <node role="shortcuts" roleId="2c95.4457500422381845292" type="2c95.Shortcut" typeId="2c95.4457500422381845279" id="4457500422381858388">
       <property name="name" nameId="tpck.1169194664001" value="mbeddr" />
