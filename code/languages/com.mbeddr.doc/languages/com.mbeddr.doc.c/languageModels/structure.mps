@@ -110,6 +110,9 @@
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="4755612053022606767">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="2c95.4755612053022588104" resolveInfo="IFloating" />
     </node>
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="4509696981881854556">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="2c95.4509696981881823272" resolveInfo="IUsesExternalPath" />
+    </node>
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="4755612053022373496">
       <property name="metaClass" nameId="tpce.1071599937831" value="reference" />
       <property name="role" nameId="tpce.1071599776563" value="visualizable" />
