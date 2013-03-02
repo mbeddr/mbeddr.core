@@ -162,6 +162,7 @@
             <property name="language" nameId="rh4a.4755612053022237479" value="mbeddr" />
             <property name="text" nameId="rh4a.6363363735479324452" value="statemachine Ampel initial = Red { &#10;  in buttonPressed() &lt;no binding&gt; &#10;  composite state Red initial = Red_initial { &#10;    state Red_initial (Red.Red_initial) { &#10;      on buttonPressed [ ] -&gt; RedYellow &#10;    } state Red_initial &#10;    state RedYellow (Red.RedYellow) { &#10;      on buttonPressed [ ] -&gt; Green &#10;    } state RedYellow &#10;    state Kaputt (Red.Kaputt) { &#10;       &#10;    } state Kaputt &#10;  } state Red &#10;  state Green { &#10;     &#10;  } state Green &#10;}" />
             <link role="code" roleId="rh4a.6165313375056112026" targetNodeId="haow.4755612053022236787" resolveInfo="Ampel" />
+            <link role="module" roleId="rh4a.126932837435556061" targetNodeId="haow.4457500422381538278" resolveInfo="MinimalTest" />
           </node>
           <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="4755612053022299118">
             <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="4755612053022299119">
@@ -174,6 +175,7 @@
             <property name="text" nameId="rh4a.6363363735479324452" value="exported int32 main(int32 argc, string[] argv) { &#10;  return test testCase1; &#10;} main (function)" />
             <property name="language" nameId="rh4a.4755612053022237479" value="mbeddr" />
             <link role="code" roleId="rh4a.6165313375056112026" targetNodeId="haow.4457500422381538279" resolveInfo="main" />
+            <link role="module" roleId="rh4a.126932837435556061" targetNodeId="haow.4457500422381538278" resolveInfo="MinimalTest" />
           </node>
         </node>
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.SubSection" typeId="2c95.3350625596580064457" id="4457500422381538342">

@@ -125,6 +125,10 @@
       <property name="name" nameId="tpck.1169194664001" value="vis" />
       <property name="editTimePath" nameId="2c95.6386504476136472797" value="${mbeddr.github.core.home}/code/applications/tutorial/solutions/mbeddr.tutorial.main/_vis" />
     </node>
+    <node role="paths" roleId="2c95.6386504476136472817" type="2c95.PathDefinition" typeId="2c95.6386504476136472795" id="4715820023543670791">
+      <property name="name" nameId="tpck.1169194664001" value="images" />
+      <property name="editTimePath" nameId="2c95.6386504476136472797" value="${mbeddr.github.core.home}/code/applications/tutorial/solutions/mbeddr.tutorial.main/images" />
+    </node>
   </root>
   <root id="794010416819640951">
     <node role="contents" roleId="2c95.3350625596580064250" type="2c95.EmptyDocContent" typeId="2c95.3350625596579911760" id="794010416819640960">
@@ -178,6 +182,7 @@
         <node role="contents" roleId="2c95.3350625596580064250" type="rh4a.CCodeParagraph" typeId="rh4a.6165313375056112024" id="794010416819974413">
           <property name="language" nameId="rh4a.4755612053022237479" value="mbeddr" />
           <link role="code" roleId="rh4a.6165313375056112026" targetNodeId="e1tx.1731059994647587994" resolveInfo="Trackpoint" />
+          <link role="module" roleId="rh4a.126932837435556061" targetNodeId="e1tx.1731059994647587993" resolveInfo="DataStructures" />
         </node>
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="794010416820037028">
           <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="794010416820037029">
@@ -200,9 +205,155 @@
           <property name="language" nameId="rh4a.4755612053022237479" value="mbeddr" />
           <link role="code" roleId="rh4a.6165313375056112026" targetNodeId="e1tx.1731059994647781810" resolveInfo="Nuller" />
           <link role="detail" roleId="rh4a.126932837435232782" targetNodeId="e1tx.1731059994647782993" resolveInfo="processor_process" />
+          <link role="module" roleId="rh4a.126932837435556061" targetNodeId="e1tx.1731059994647588211" resolveInfo="Components" />
         </node>
-        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.EmptyDocContent" typeId="2c95.3350625596579911760" id="794010416820037077">
-          <property name="name" nameId="tpck.1169194664001" value="empty_1362238404098_3" />
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="126932837435541955">
+          <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="126932837435541956">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="126932837435541957">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="Of course the type system checks unit compatibility. If you add apples and oranges, you\nwill get an error reported. If you divide " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="126932837435541964">
+              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="126932837435541965">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="126932837435541966">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="m" />
+                </node>
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="126932837435541967">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" by" />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="126932837435541968">
+              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="126932837435541969">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="126932837435541970">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="s" />
+                </node>
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="126932837435541973">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" the type system will calculate\n" />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="126932837435541975">
+              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="126932837435541976">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="126932837435541977">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="m\/s" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="4715820023543670770">
+          <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="4715820023543670771">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4715820023543670772">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="Note that the referneces into the code (such as " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="rh4a.ContentRefWord" typeId="rh4a.4457500422381536784" id="4715820023543670773">
+              <link role="content" roleId="rh4a.4457500422381536794" targetNodeId="e1tx.1731059994647587994" resolveInfo="Trackpoint" />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4715820023543670774">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=") are actually real \npointers. So if the element is renamed, it gets renamed in the docs. When deleted, the\nreference breaks, and we get an error. Also, the embedded pieces of code are not copied in,\nthey are taked from the actual mbeddr programs during generation. In other words, they also\nstay consistent with the code automatically." />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Section" typeId="2c95.3350625596580064455" id="126932837435541981">
+        <property name="name" nameId="tpck.1169194664001" value="comps" />
+        <property name="text" nameId="2c95.3350625596580064225" value="Interfaces and Components" />
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="126932837435556053">
+          <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="126932837435556054">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="126932837435556055">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="Interfaces declare operations that can be provided or used by components. Each operation\ncan also declare pre- and postconditions as well as protocols. These can be checked either\nat runtime or statically. The " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="rh4a.ModuleRefWord" typeId="rh4a.794010416819955528" id="126932837435556057">
+              <link role="module" roleId="rh4a.794010416819955529" targetNodeId="e1tx.1731059994647588211" resolveInfo="Components" />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="126932837435556058">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" module contains examples. Below is an interface:" />
+            </node>
+          </node>
+        </node>
+        <node role="contents" roleId="2c95.3350625596580064250" type="rh4a.CCodeParagraph" typeId="rh4a.6165313375056112024" id="126932837435556060">
+          <property name="language" nameId="rh4a.4755612053022237479" value="mbeddr" />
+          <link role="module" roleId="rh4a.126932837435556061" targetNodeId="e1tx.1731059994647588211" resolveInfo="Components" />
+          <link role="code" roleId="rh4a.6165313375056112026" targetNodeId="e1tx.1731059994647814010" resolveInfo="TrackpointStore1" />
+        </node>
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="4715820023543612302">
+          <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="4715820023543612303">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4715820023543612304">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="The interfaces, components and thei relationships in a given module can also be rendered\ngraphically. An example is shown in " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.ImgRefWord" typeId="2c95.6386504476136420159" id="4715820023543626619">
+              <link role="image" roleId="2c95.6386504476136420174" targetNodeId="4715820023543612306" resolveInfo="ci" />
+            </node>
+          </node>
+        </node>
+        <node role="contents" roleId="2c95.3350625596580064250" type="rh4a.Visualization" typeId="rh4a.4755612053022373494" id="4715820023543612306">
+          <property name="category" nameId="rh4a.4755612053022373532" value="components + interfaces (grouped)" />
+          <property name="name" nameId="tpck.1169194664001" value="ci" />
+          <link role="visualizable" roleId="rh4a.4755612053022373496" targetNodeId="e1tx.1731059994647814010" resolveInfo="TrackpointStore1" />
+          <link role="path" roleId="rh4a.4755612053022398751" targetNodeId="794010416819988006" resolveInfo="vis" />
+          <node role="description" roleId="rh4a.4755612053022495458" type="2c95.TextBlock" typeId="2c95.6386504476136446898" id="4715820023543612307">
+            <node role="text" roleId="2c95.6386504476136446899" type="87nw.Text" typeId="87nw.2557074442922380897" id="4715820023543612308">
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4715820023543612309">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="The components and their provided (solid lines) and required (dotted lines) ports." />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="4715820023543670777">
+          <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="4715820023543670778">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4715820023543670779">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="Of course the visualizations are also not just images. In the source to the document,\nwe embed references to " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="4715820023543670780">
+              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="4715820023543670781">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4715820023543670782">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="IVisualizable" />
+                </node>
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4715820023543670786">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" instances. In the doc, one can select the \nvisualization category, and then, during generation, PlantUML automatically rerenders \nthe image." />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Section" typeId="2c95.3350625596580064455" id="4715820023543670790">
+        <property name="name" nameId="tpck.1169194664001" value="howItWorks" />
+        <property name="text" nameId="2c95.3350625596580064225" value="How it Works" />
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="4715820023543670792">
+          <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="4715820023543670793">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4715820023543670794">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="The whole thing is based on Sascha Lisson's rich text editing support for MPS. It supports\nconvenient multi-line text editing, with embedded \&quot;real\&quot; program nodes. " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.ImgRefWord" typeId="2c95.6386504476136420159" id="4715820023543699947">
+              <link role="image" roleId="2c95.6386504476136420174" targetNodeId="4715820023543670797" resolveInfo="editor" />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4715820023543699948">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" shows \na screenshot of the editor." />
+            </node>
+          </node>
+        </node>
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.ImageParagraph" typeId="2c95.6386504476136263187" id="4715820023543670797">
+          <property name="name" nameId="tpck.1169194664001" value="editor" />
+          <property name="showImage" nameId="2c95.6386504476136358630" value="false" />
+          <node role="resource" roleId="2c95.6386504476136531838" type="2c95.Resource" typeId="2c95.6386504476136521407" id="4715820023543670802">
+            <property name="fileName" nameId="2c95.6386504476136521408" value="doceditor.png" />
+            <link role="path" roleId="2c95.6386504476136521409" targetNodeId="4715820023543670791" resolveInfo="images" />
+          </node>
+          <node role="description" roleId="2c95.6386504476136278696" type="2c95.TextBlock" typeId="2c95.6386504476136446898" id="4715820023543670799">
+            <node role="text" roleId="2c95.6386504476136446899" type="87nw.Text" typeId="87nw.2557074442922380897" id="4715820023543670800">
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4715820023543670801">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="A screenshot of the document editing in MPS." />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="4715820023543699954">
+          <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="4715820023543699955">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4715820023543699956">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="In terms of output, the documents can be rendered to Latex and to HTML, both customizable\nvia document classes and style sheets." />
+            </node>
+          </node>
         </node>
       </node>
     </node>
@@ -241,6 +392,10 @@
     <node role="mappings" roleId="2c95.6386504476136554628" type="2c95.PathMapping" typeId="2c95.6386504476136554612" id="126932837435308866">
       <property name="mappedPath" nameId="2c95.6386504476136554614" value="_vis" />
       <link role="pathDef" roleId="2c95.6386504476136554613" targetNodeId="794010416819988006" resolveInfo="vis" />
+    </node>
+    <node role="mappings" roleId="2c95.6386504476136554628" type="2c95.PathMapping" typeId="2c95.6386504476136554612" id="4715820023543670804">
+      <property name="mappedPath" nameId="2c95.6386504476136554614" value="images" />
+      <link role="pathDef" roleId="2c95.6386504476136554613" targetNodeId="4715820023543670791" resolveInfo="images" />
     </node>
     <node role="abstract" roleId="2c95.126932837435324914" type="2c95.TextBlock" typeId="2c95.6386504476136446898" id="126932837435349020">
       <node role="text" roleId="2c95.6386504476136446899" type="87nw.Text" typeId="87nw.2557074442922380897" id="126932837435349021">
