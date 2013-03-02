@@ -178,6 +178,30 @@
           <property name="language" nameId="rh4a.4755612053022237479" value="mbeddr" />
           <link role="code" roleId="rh4a.6165313375056112026" targetNodeId="e1tx.1731059994647587994" resolveInfo="Trackpoint" />
         </node>
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="794010416820037028">
+          <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="794010416820037029">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="126932837434993666">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="Phyical units can be attached to any types, as seen above, as well as to literals.\nFor example, the code below assigns " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="126932837434993655">
+              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="126932837434993656">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="126932837434993657">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="0m" />
+                </node>
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="126932837434993665">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=". " />
+            </node>
+          </node>
+        </node>
+        <node role="contents" roleId="2c95.3350625596580064250" type="rh4a.CCodeParagraph" typeId="rh4a.6165313375056112024" id="794010416820037079">
+          <property name="language" nameId="rh4a.4755612053022237479" value="mbeddr" />
+          <link role="code" roleId="rh4a.6165313375056112026" targetNodeId="e1tx.1731059994647781810" resolveInfo="Nuller" />
+        </node>
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.EmptyDocContent" typeId="2c95.3350625596579911760" id="794010416820037077">
+          <property name="name" nameId="tpck.1169194664001" value="empty_1362238404098_3" />
+        </node>
       </node>
     </node>
     <node role="contents" roleId="2c95.3350625596580064250" type="2c95.EmptyDocContent" typeId="2c95.3350625596579911760" id="794010416819640962">
