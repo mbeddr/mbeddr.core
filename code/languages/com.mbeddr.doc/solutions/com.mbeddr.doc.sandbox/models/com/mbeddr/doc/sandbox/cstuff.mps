@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <model modelUID="r:d183ee78-698a-4d70-a6c1-07e860784580(com.mbeddr.doc.sandbox.cstuff)">
   <persistence version="7" />
+  <language namespace="445de13f-b9dd-436f-be62-42c616f697e2(com.mbeddr.doc.c)" />
   <devkit namespace="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
   <devkit namespace="43d889ae-8e6a-4f6e-a649-d59342d8728d(com.mbeddr.statemachines)" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
@@ -13,6 +14,7 @@
   <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="5" implicit="yes" />
   <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="3" implicit="yes" />
   <import index="clqz" modelUID="r:5ebcdb77-81e9-4964-beae-35bd9a2f28b5(com.mbeddr.ext.statemachines.structure)" version="9" implicit="yes" />
+  <import index="rh4a" modelUID="r:51a64317-678a-4e8f-9df1-1e83f73c9d71(com.mbeddr.doc.c.structure)" version="0" implicit="yes" />
   <roots>
     <node type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="4457500422381538278">
       <property name="name" nameId="tpck.1169194664001" value="MinimalTest" />
@@ -101,6 +103,9 @@
           <link role="targetState" roleId="clqz.5778488248013533913" targetNodeId="4755612053022586734" resolveInfo="Red" />
           <node role="trigger" roleId="clqz.3670856444174351950" type="clqz.Trigger" typeId="clqz.1786180596061233739" id="4509696981881722269">
             <link role="event" roleId="clqz.8951398808641876049" targetNodeId="4755612053022236792" resolveInfo="buttonPressed" />
+          </node>
+          <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="rh4a.NameAnnotation" typeId="rh4a.4509696981882026489" id="4509696981882035502">
+            <property name="name" nameId="tpck.1169194664001" value="aTransition" />
           </node>
         </node>
       </node>

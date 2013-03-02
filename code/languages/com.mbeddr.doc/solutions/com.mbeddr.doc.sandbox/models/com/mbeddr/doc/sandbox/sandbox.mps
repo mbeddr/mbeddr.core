@@ -232,7 +232,35 @@
                 </node>
               </node>
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4457500422381995666">
-                <property name="escapedValue" nameId="87nw.2557074442922438158" value=" Und das ist echt toll." />
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value=" Und das ist echt toll.\nEine Referenz auf eine State Machine " />
+              </node>
+              <node role="words" roleId="87nw.2557074442922392302" type="rh4a.CRefWord" typeId="rh4a.4457500422381536784" id="4509696981881927690">
+                <link role="content" roleId="rh4a.4457500422381536794" targetNodeId="haow.4755612053022236787" resolveInfo="Ampel" />
+              </node>
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4509696981881927691">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value=" sowie auf einen darin befindlichen \nZustand " />
+              </node>
+              <node role="words" roleId="87nw.2557074442922392302" type="rh4a.CRefWord" typeId="rh4a.4457500422381536784" id="4509696981881927693">
+                <link role="content" roleId="rh4a.4457500422381536794" targetNodeId="haow.4755612053022236787" resolveInfo="Ampel" />
+                <link role="detail" roleId="rh4a.4509696981881923017" targetNodeId="haow.4755612053022509146" resolveInfo="Green" />
+              </node>
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4509696981881927692">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value=". Man kann auch auf eine " />
+              </node>
+              <node role="words" roleId="87nw.2557074442922392302" type="rh4a.CRefWord" typeId="rh4a.4457500422381536784" id="4509696981882039908">
+                <property name="referenceText" nameId="rh4a.4509696981882039909" value="transition" />
+                <link role="content" roleId="rh4a.4457500422381536794" targetNodeId="haow.4755612053022236787" resolveInfo="Ampel" />
+                <link role="detail" roleId="rh4a.4509696981881923017" targetNodeId="haow.4509696981882035502" resolveInfo="aTransition" />
+              </node>
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4509696981882039907">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value=" in der State \nMachine zeigen. Eine Transition is markiert als " />
+              </node>
+              <node role="words" roleId="87nw.2557074442922392302" type="rh4a.CRefWord" typeId="rh4a.4457500422381536784" id="4509696981882052178">
+                <link role="content" roleId="rh4a.4457500422381536794" targetNodeId="haow.4755612053022236787" resolveInfo="Ampel" />
+                <link role="detail" roleId="rh4a.4509696981881923017" targetNodeId="haow.4509696981882035502" resolveInfo="aTransition" />
+              </node>
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4509696981882052179">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value=".  " />
               </node>
             </node>
           </node>
@@ -413,11 +441,11 @@
       <property name="mappedPath" nameId="2c95.6386504476136554614" value="_vis/" />
       <link role="pathDef" roleId="2c95.6386504476136554613" targetNodeId="4755612053022398739" resolveInfo="visualizations" />
     </node>
-    <node role="inactiveRenderer" roleId="2c95.4509696981881725587" type="g9w8.LatexRenderer" typeId="g9w8.4457500422381351715" id="4755612053022632282">
+    <node role="renderer" roleId="2c95.3350625596580269180" type="g9w8.LatexRenderer" typeId="g9w8.4457500422381351715" id="4509696981882025239">
       <property name="documentClass" nameId="g9w8.4457500422381351717" value="article" />
       <property name="prolog" nameId="g9w8.4755612053022149513" value="mbeddr-prolog.ltx" />
     </node>
-    <node role="renderer" roleId="2c95.3350625596580269180" type="lsus.HTMLRenderer" typeId="lsus.3350625596580275037" id="4509696981881744434">
+    <node role="inactiveRenderer" roleId="2c95.4509696981881725587" type="lsus.HTMLRenderer" typeId="lsus.3350625596580275037" id="4509696981882025240">
       <property name="stylesheet" nameId="lsus.4457500422381329081" value="htmlexport.css" />
     </node>
   </root>
