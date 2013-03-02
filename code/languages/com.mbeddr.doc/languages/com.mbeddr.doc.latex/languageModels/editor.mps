@@ -41,7 +41,7 @@
         <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="tpck.1169194664001" resolveInfo="name" />
       </node>
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="4457500422381350421">
-        <property name="text" nameId="tpc2.1073389577007" value="\documentclass{" />
+        <property name="text" nameId="tpc2.1073389577007" value="\documentclass[12pt, a4paper]{" />
         <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.PunctuationRightStyleClassItem" typeId="tpc2.1233759184865" id="4457500422381350426">
           <property name="flag" nameId="tpc2.1186414551515" value="true" />
         </node>

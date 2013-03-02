@@ -29,6 +29,7 @@
     </node>
     <node type="2c95.DocumentExport" typeId="2c95.3350625596580256366" id="794010416819641044">
       <property name="name" nameId="tpck.1169194664001" value="TutorialOverview" />
+      <property name="title" nameId="2c95.126932837435324910" value="mbeddr Tutorial Overview" />
     </node>
   </roots>
   <root id="2637267020265430783">
@@ -181,12 +182,12 @@
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="794010416820037028">
           <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="794010416820037029">
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="126932837434993666">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value="Phyical units can be attached to any types, as seen above, as well as to literals.\nFor example, the code below assigns " />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="Phyical units can be attached to any types, as seen above, as well as to literals.\nFor example, the runnable below assigns " />
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="126932837434993655">
               <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="126932837434993656">
                 <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="126932837434993657">
-                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="0m" />
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="0  m" />
                 </node>
               </node>
             </node>
@@ -198,6 +199,7 @@
         <node role="contents" roleId="2c95.3350625596580064250" type="rh4a.CCodeParagraph" typeId="rh4a.6165313375056112024" id="794010416820037079">
           <property name="language" nameId="rh4a.4755612053022237479" value="mbeddr" />
           <link role="code" roleId="rh4a.6165313375056112026" targetNodeId="e1tx.1731059994647781810" resolveInfo="Nuller" />
+          <link role="detail" roleId="rh4a.126932837435232782" targetNodeId="e1tx.1731059994647782993" resolveInfo="processor_process" />
         </node>
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.EmptyDocContent" typeId="2c95.3350625596579911760" id="794010416820037077">
           <property name="name" nameId="tpck.1169194664001" value="empty_1362238404098_3" />
@@ -207,8 +209,16 @@
     <node role="contents" roleId="2c95.3350625596580064250" type="2c95.EmptyDocContent" typeId="2c95.3350625596579911760" id="794010416819640962">
       <property name="name" nameId="tpck.1169194664001" value="empty_1362234723950_7" />
     </node>
+    <node role="authors" roleId="2c95.126932837435370865" type="2c95.Author" typeId="2c95.126932837435370850" id="126932837435390986">
+      <property name="name" nameId="2c95.126932837435370851" value="Markus Voelter" />
+      <property name="email" nameId="2c95.126932837435370852" value="voelter@acm.org" />
+    </node>
   </root>
   <root id="794010416819640964">
+    <node role="authors" roleId="2c95.126932837435370865" type="2c95.Author" typeId="2c95.126932837435370850" id="126932837435452521">
+      <property name="name" nameId="2c95.126932837435370851" value="John Doe" />
+      <property name="email" nameId="2c95.126932837435370852" value="joh@doe.org" />
+    </node>
     <node role="contents" roleId="2c95.3350625596580064250" type="2c95.EmptyDocContent" typeId="2c95.3350625596579911760" id="794010416819641037">
       <property name="name" nameId="tpck.1169194664001" value="empty_1362234784407_10" />
     </node>
@@ -227,6 +237,17 @@
     </node>
     <node role="root" roleId="2c95.3350625596580269182" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="794010416819641047">
       <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="2637267020265430783" resolveInfo="overview" />
+    </node>
+    <node role="mappings" roleId="2c95.6386504476136554628" type="2c95.PathMapping" typeId="2c95.6386504476136554612" id="126932837435308866">
+      <property name="mappedPath" nameId="2c95.6386504476136554614" value="_vis" />
+      <link role="pathDef" roleId="2c95.6386504476136554613" targetNodeId="794010416819988006" resolveInfo="vis" />
+    </node>
+    <node role="abstract" roleId="2c95.126932837435324914" type="2c95.TextBlock" typeId="2c95.6386504476136446898" id="126932837435349020">
+      <node role="text" roleId="2c95.6386504476136446899" type="87nw.Text" typeId="87nw.2557074442922380897" id="126932837435349021">
+        <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="126932837435349022">
+          <property name="escapedValue" nameId="87nw.2557074442922438158" value="This document provides an overview over the mbeddr tutorial. It also documents how to use the documentation support, which is new and actually quite cool. Take a look at the sources of this document; it is written in MPS!" />
+        </node>
+      </node>
     </node>
   </root>
 </model>
