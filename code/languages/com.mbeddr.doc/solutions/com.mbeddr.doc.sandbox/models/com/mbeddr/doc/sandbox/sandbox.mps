@@ -12,7 +12,7 @@
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="2c95" modelUID="r:5f7188a9-e7b4-4a2e-bef9-38d2cf379fdc(com.mbeddr.doc.structure)" version="1" implicit="yes" />
   <import index="87nw" modelUID="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" version="5" implicit="yes" />
-  <import index="rh4a" modelUID="r:51a64317-678a-4e8f-9df1-1e83f73c9d71(com.mbeddr.doc.c.structure)" version="0" implicit="yes" />
+  <import index="rh4a" modelUID="r:51a64317-678a-4e8f-9df1-1e83f73c9d71(com.mbeddr.doc.c.structure)" version="1" implicit="yes" />
   <import index="f87k" modelUID="r:e7473124-6323-4ddf-9715-6e1684f751bd(com.mbeddr.doc.expressions.structure)" version="-1" implicit="yes" />
   <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="20" implicit="yes" />
   <import index="g9w8" modelUID="r:506f4964-2b3f-49f3-a581-8c498222bac6(com.mbeddr.doc.gen_latex.structure)" version="-1" implicit="yes" />
@@ -45,7 +45,7 @@
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3350625596580112197">
               <property name="escapedValue" nameId="87nw.2557074442922438158" value="Sometimes prose text is useful. For example, for documenting things.\nThe documentation language supports just that. " />
             </node>
-            <node role="words" roleId="87nw.2557074442922392302" type="rh4a.CRefWord" typeId="rh4a.4457500422381536784" id="4457500422381556824">
+            <node role="words" roleId="87nw.2557074442922392302" type="rh4a.ContentRefWord" typeId="rh4a.4457500422381536784" id="4457500422381556824">
               <link role="content" roleId="rh4a.4457500422381536794" targetNodeId="haow.4457500422381538279" resolveInfo="main" />
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4457500422381556823">
@@ -204,7 +204,7 @@
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4457500422381538345">
                 <property name="escapedValue" nameId="87nw.2557074442922438158" value="We can also refernece code, for example " />
               </node>
-              <node role="words" roleId="87nw.2557074442922392302" type="rh4a.CRefWord" typeId="rh4a.4457500422381536784" id="4457500422381538346">
+              <node role="words" roleId="87nw.2557074442922392302" type="rh4a.ContentRefWord" typeId="rh4a.4457500422381536784" id="4457500422381538346">
                 <link role="content" roleId="rh4a.4457500422381536794" targetNodeId="haow.4457500422381538290" resolveInfo="testCase1" />
               </node>
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4457500422381872165">
@@ -234,20 +234,20 @@
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4457500422381995666">
                 <property name="escapedValue" nameId="87nw.2557074442922438158" value=" Und das ist echt toll.\nEine Referenz auf eine State Machine " />
               </node>
-              <node role="words" roleId="87nw.2557074442922392302" type="rh4a.CRefWord" typeId="rh4a.4457500422381536784" id="4509696981881927690">
+              <node role="words" roleId="87nw.2557074442922392302" type="rh4a.ContentRefWord" typeId="rh4a.4457500422381536784" id="4509696981881927690">
                 <link role="content" roleId="rh4a.4457500422381536794" targetNodeId="haow.4755612053022236787" resolveInfo="Ampel" />
               </node>
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4509696981881927691">
                 <property name="escapedValue" nameId="87nw.2557074442922438158" value=" sowie auf einen darin befindlichen \nZustand " />
               </node>
-              <node role="words" roleId="87nw.2557074442922392302" type="rh4a.CRefWord" typeId="rh4a.4457500422381536784" id="4509696981881927693">
+              <node role="words" roleId="87nw.2557074442922392302" type="rh4a.ContentRefWord" typeId="rh4a.4457500422381536784" id="4509696981881927693">
                 <link role="content" roleId="rh4a.4457500422381536794" targetNodeId="haow.4755612053022236787" resolveInfo="Ampel" />
                 <link role="detail" roleId="rh4a.4509696981881923017" targetNodeId="haow.4755612053022509146" resolveInfo="Green" />
               </node>
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4509696981881927692">
                 <property name="escapedValue" nameId="87nw.2557074442922438158" value=". Man kann auch auf eine " />
               </node>
-              <node role="words" roleId="87nw.2557074442922392302" type="rh4a.CRefWord" typeId="rh4a.4457500422381536784" id="4509696981882039908">
+              <node role="words" roleId="87nw.2557074442922392302" type="rh4a.ContentRefWord" typeId="rh4a.4457500422381536784" id="4509696981882039908">
                 <property name="referenceText" nameId="rh4a.4509696981882039909" value="transition" />
                 <link role="content" roleId="rh4a.4457500422381536794" targetNodeId="haow.4755612053022236787" resolveInfo="Ampel" />
                 <link role="detail" roleId="rh4a.4509696981881923017" targetNodeId="haow.4509696981882035502" resolveInfo="aTransition" />
@@ -255,7 +255,7 @@
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4509696981882039907">
                 <property name="escapedValue" nameId="87nw.2557074442922438158" value=" in der State \nMachine zeigen. Eine Transition is markiert als " />
               </node>
-              <node role="words" roleId="87nw.2557074442922392302" type="rh4a.CRefWord" typeId="rh4a.4457500422381536784" id="4509696981882052178">
+              <node role="words" roleId="87nw.2557074442922392302" type="rh4a.ContentRefWord" typeId="rh4a.4457500422381536784" id="4509696981882052178">
                 <link role="content" roleId="rh4a.4457500422381536794" targetNodeId="haow.4755612053022236787" resolveInfo="Ampel" />
                 <link role="detail" roleId="rh4a.4509696981881923017" targetNodeId="haow.4509696981882035502" resolveInfo="aTransition" />
               </node>
