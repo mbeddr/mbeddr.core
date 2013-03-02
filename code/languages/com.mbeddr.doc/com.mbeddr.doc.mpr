@@ -6,6 +6,7 @@
   <component name="Encoding" useUTFGuessing="true" native2AsciiForPropertiesFiles="false" />
   <component name="MPSProject">
     <projectModules>
+      <modulePath path="${project}/devkits/com.mbeddr.documentation/com.mbeddr.documentation.devkit" folder="" />
       <modulePath path="${project}/languages/com.mbeddr.doc.c/com.mbeddr.doc.c.mpl" folder="" />
       <modulePath path="${project}/languages/com.mbeddr.doc.c/solutions/pluginSolution/pluginSolution.msd" />
       <modulePath path="${project}/languages/com.mbeddr.doc.expressions/com.mbeddr.doc.expressions.mpl" folder="" />
