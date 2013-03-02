@@ -27,51 +27,19 @@
 \usepackage{listings} 
 \usepackage{tikz}
 \usepackage{etoolbox}
-\newenvironment{code}
-    {\noindent
-     \rule{\columnwidth}{0.6pt}
-     \vspace{-4mm}
-     \scriptsize \verbatim}
-    {\endverbatim \normalsize
-     \vspace{-4mm} 
-    \rule{\columnwidth}{0.6pt}
- 	}
-
 
 \newcommand{\changefont}[3]{\fontfamily{#1}\fontseries{#2}\fontshape{#3}\selectfont}
 
 \newcommand\parhead[1]{\vspace{2mm}\noindent\textbf{{#1}}\ \ }  
   
-%\newcommand{\mynote}[2]{\textbf{{#1}:}\textit{{#2}}}
-\newcommand{\mynote}[2]{}
-%\newcommand{\mynote}[2]{\textbf{{#1}(}\textit{{#2}}\textbf{)}}
-\newcommand\todo[1]{\mynote{TODO}{#1}} 
-\newcommand\dan[1]{\mynote{DAN}{#1}} 
-\newcommand\markus[1]{\mynote{MARKUS}{#1}} 
-\newcommand\bernd[1]{\mynote{BERND}{#1}} 
-\newcommand\domenik[1]{\mynote{DOMENIK}{#1}} 
-\newcommand\timo[1]{\mynote{TIMO}{#1}}
-
-\newcommand\change{}
-
-
-\newcommand{\fig}[1]{Fig.~\ref{#1}}
-\newcommand{\sect}[1]{Section~\ref{#1}}
-
 \newcommand{\ic}[1]{\changefont{cmtt}{m}{n}{#1}\normalfont}  % inline code
 \newcommand{\lcr}[1]{\changefont{cmtt}{m}{n}{#1}\normalfont} % language
-\newcommand{\eg}{e.\,g., }
-\newcommand{\ie}{i.\,e., } 
- 
 
 \definecolor{myGray1}{rgb}{.5,.5,.5}
 \definecolor{myGray3}{rgb}{0.65,0.65,.65}
 \definecolor{myGray2}{rgb}{0.95,0.95,.95}
 \definecolor{myGray4}{rgb}{0.85,0.85,.85}
 
-
-
-% important for nicer code font
 \usepackage[scaled]{beramono}
 
 
@@ -103,26 +71,31 @@ morekeywords={}
  
  
 \lstdefinelanguage{mbeddr}
-{keywords={return,test,case,exported,int8_t,foreach,it,int32,void,sized,assert,rule,as,
-applicable,concept,overrides,do,typeof,if,applicable,error,int64_t,int8, for,
-concepts,constraints,can,be,child,ancestor,isNotNull,node,int32_t,executeTests
-% assert(0),assert(1),assert(2),assert(3),assert(4),
-% assert(5),assert(6),assert(7),assert(8),assert(9),assert(10),assert(11),assert(12),
-% assert(13),assert(14),assert(15),assert(16),assert(17),assert(18),assert(19),assert(20),
-% assert(21),assert(22),assert(23),assert(24),assert(25),assert(26),assert(27),assert(28),
-% assert(29),assert(30)
-},
-% otherkeywords={::,:,->,=>,[,],;,==;+=,=,:<=:,:==:,<,+,&,!,\,,*},
-otherkeywords={},
-alsodigit={0,1,2,3,4,5,6,7,8,9,0},
-stringstyle=\color{OliveGreen},
-mathescape=true,
-showstringspaces=false,
-sensitive=true,
-tabsize=2,
-columns=fullflexible,
-morestring=[b]",
-comment=[l]{//},
-basicstyle=\scriptsize\ttfamily\color{darkgray},
-keywordstyle=\bf\scriptsize\ttfamily\color{black},
+{morekeywords={
+return,test,case,exported,foreach,it,void,sized,assert,rule,as,
+applicable,concept,overrides,do,typeof,if,applicable,error,
+concepts,constraints,can,be,child,ancestor,isNotNull,node,executeTests,
+module, statemachine, events, states, initial, state, on, assert, imports, in,
+event, int, out, local, variables, interface, boolean, component, true, false,
+provides, requires, struct, typedef, assert, cs, pre, post, protocol,
+messagelist, active, extends, null, op, instances, instance, adapt, connect,
+initialize, query, new, init, section, result, introduceunit, for, mock, total,
+no, of, calls, is, sequence, step, parameter, report, messages, validatemock,
+external, const, var, entry, exit, with, sr
+ }, 
+comment=[l]{//}
+}
+
+\lstdefinelanguage{mbeddr-buildconfig}
+{morekeywords={
+executable, isTest, true, false, used, external, libraries, mbeddr, included,
+modules, Configuration, Items, reporting, printf, add, labels, physical, units,
+config, components, wire, statically, no, middleware
+}, comment=[l]{//}
+}
+
+\lstdefinelanguage{mbeddr-units}
+{morekeywords={
+Unit, Configuration, derived, unit, for},
+comment=[l]{//}
 }

@@ -456,6 +456,14 @@
               </node>
             </node>
           </node>
+          <node role="lines" roleId="tis3.4457500422381362357" type="tis3.WordLine" typeId="tis3.4457500422381364312" id="4755612053022724589">
+            <node role="words" roleId="tis3.4457500422381364317" type="tis3.CommandWord" typeId="tis3.4457500422381364333" id="4755612053022724590">
+              <property name="command" nameId="tis3.4457500422381364335" value="begin" />
+              <node role="args" roleId="tis3.4457500422381364347" type="tis3.TextWord" typeId="tis3.4457500422381364540" id="4755612053022724591">
+                <property name="text" nameId="tis3.4457500422381364541" value="center" />
+              </node>
+            </node>
+          </node>
           <node role="lines" roleId="tis3.4457500422381362357" type="tis3.SimpleTextualLine" typeId="tis3.4457500422381360575" id="4755612053022719649">
             <property name="text" nameId="tis3.4457500422381360577" value="\fbox {" />
             <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.IfMacro" typeId="tpf8.1118773211870" id="4755612053022719653">
@@ -510,7 +518,7 @@
                 </node>
               </node>
               <node role="options1" roleId="tis3.4457500422381364346" type="tis3.TextWord" typeId="tis3.4457500422381364540" id="4457500422381513977">
-                <property name="text" nameId="tis3.4457500422381364541" value="width=\columnwidth" />
+                <property name="text" nameId="tis3.4457500422381364541" value="max width=\columnwidth" />
               </node>
             </node>
           </node>
@@ -528,6 +536,14 @@
                     </node>
                   </node>
                 </node>
+              </node>
+            </node>
+          </node>
+          <node role="lines" roleId="tis3.4457500422381362357" type="tis3.WordLine" typeId="tis3.4457500422381364312" id="4755612053022724592">
+            <node role="words" roleId="tis3.4457500422381364317" type="tis3.CommandWord" typeId="tis3.4457500422381364333" id="4755612053022724593">
+              <property name="command" nameId="tis3.4457500422381364335" value="end" />
+              <node role="args" roleId="tis3.4457500422381364347" type="tis3.TextWord" typeId="tis3.4457500422381364540" id="4755612053022724594">
+                <property name="text" nameId="tis3.4457500422381364541" value="center" />
               </node>
             </node>
           </node>
