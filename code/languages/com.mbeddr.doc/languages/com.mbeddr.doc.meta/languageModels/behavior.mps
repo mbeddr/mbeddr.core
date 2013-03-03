@@ -24,10 +24,15 @@
       <link role="concept" roleId="1i04.1225194240799" targetNodeId="soy0.4715820023543872567" resolveInfo="ConceptRefWord" />
     </node>
     <node type="1i04.ConceptBehavior" typeId="1i04.1225194240794" id="4715820023543882284">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="embed" />
       <link role="concept" roleId="1i04.1225194240799" targetNodeId="soy0.4715820023543882251" resolveInfo="StructureEmbedding" />
     </node>
     <node type="tpee.ClassConcept" typeId="tpee.1068390468198" id="4715820023543944370">
       <property name="name" nameId="tpck.1169194664001" value="MetaCodeCleaner" />
+    </node>
+    <node type="1i04.ConceptBehavior" typeId="1i04.1225194240794" id="3251049954616740608">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="embed" />
+      <link role="concept" roleId="1i04.1225194240799" targetNodeId="soy0.3251049954616740592" resolveInfo="TypesystemRuleEmbedding" />
     </node>
   </roots>
   <root id="4715820023543878665">
@@ -350,7 +355,42 @@
         <node role="type" roleId="tpee.5680397130376446158" type="tpee.StringType" typeId="tpee.1225271177708" id="4715820023543944377" />
       </node>
     </node>
+    <node role="staticMethod" roleId="tpee.1070462273904" type="tpee.StaticMethodDeclaration" typeId="tpee.1081236700938" id="3251049954616787178">
+      <property name="name" nameId="tpck.1169194664001" value="cleanRule" />
+      <node role="returnType" roleId="tpee.1068580123133" type="tpee.StringType" typeId="tpee.1225271177708" id="3251049954616787179" />
+      <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="3251049954616787180" />
+      <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="3251049954616787181">
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="3251049954616787281">
+          <node role="expression" roleId="tpee.1068580123156" type="tpee.ParameterReference" typeId="tpee.1068581242874" id="3251049954616787282">
+            <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="3251049954616787277" resolveInfo="code" />
+          </node>
+        </node>
+      </node>
+      <node role="parameter" roleId="tpee.1068580123134" type="tpee.ParameterDeclaration" typeId="tpee.1068498886292" id="3251049954616787277">
+        <property name="name" nameId="tpck.1169194664001" value="code" />
+        <node role="type" roleId="tpee.5680397130376446158" type="tpee.StringType" typeId="tpee.1225271177708" id="3251049954616787278" />
+      </node>
+    </node>
     <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="4715820023543944371" />
+  </root>
+  <root id="3251049954616740608">
+    <node role="constructor" roleId="1i04.1225194240801" type="1i04.ConceptConstructorDeclaration" typeId="1i04.1225194413805" id="3251049954616740609">
+      <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="3251049954616740610">
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="3251049954616740611">
+          <node role="expression" roleId="tpee.1068580123156" type="tpee.AssignmentExpression" typeId="tpee.1068498886294" id="3251049954616740612">
+            <node role="rValue" roleId="tpee.1068498886297" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3251049954616740613">
+              <property name="value" nameId="tpee.1070475926801" value="mps-typesystem" />
+            </node>
+            <node role="lValue" roleId="tpee.1068498886295" type="tpee.DotExpression" typeId="tpee.1197027756228" id="3251049954616740614">
+              <node role="operand" roleId="tpee.1197027771414" type="1i04.ThisNodeExpression" typeId="1i04.1225194691553" id="3251049954616740615" />
+              <node role="operation" roleId="tpee.1197027833540" type="tp25.SPropertyAccess" typeId="tp25.1138056022639" id="3251049954616740616">
+                <link role="property" roleId="tp25.1138056395725" targetNodeId="soy0.4715820023543882250" resolveInfo="language" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
   </root>
 </model>
 

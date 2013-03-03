@@ -6,6 +6,7 @@
   <sourcePath />
   <dependencies>
     <dependency reexport="false">2374bc90-7e37-41f1-a9c4-c2e35194c36a(com.mbeddr.doc)</dependency>
+    <dependency reexport="false">1c5b7d51-0ef3-4332-af36-874466950878(com.mbeddr.doc.expressions)</dependency>
   </dependencies>
   <usedLanguages>
     <usedLanguage>2374bc90-7e37-41f1-a9c4-c2e35194c36a(com.mbeddr.doc)</usedLanguage>

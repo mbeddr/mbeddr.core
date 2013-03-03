@@ -12,6 +12,7 @@
   <import index="haow" modelUID="r:d183ee78-698a-4d70-a6c1-07e860784580(com.mbeddr.doc.sandbox.cstuff)" version="-1" />
   <import index="2c95" modelUID="r:5f7188a9-e7b4-4a2e-bef9-38d2cf379fdc(com.mbeddr.doc.structure)" version="1" />
   <import index="z726" modelUID="r:6b7eb85f-64d8-4de6-8906-0e18804729df(com.mbeddr.doc.editor)" version="-1" />
+  <import index="9xqh" modelUID="r:7d63afe9-9fc3-4991-890c-1008af05d479(com.mbeddr.doc.expressions.typesystem)" version="-1" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="87nw" modelUID="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" version="5" implicit="yes" />
   <import index="rh4a" modelUID="r:51a64317-678a-4e8f-9df1-1e83f73c9d71(com.mbeddr.doc.c.structure)" version="1" implicit="yes" />
@@ -552,6 +553,23 @@
     <node role="contents" roleId="2c95.3350625596580064250" type="soy0.StructureEmbedding" typeId="soy0.4715820023543882251" id="4715820023543942694">
       <property name="language" nameId="soy0.4715820023543882250" value="mps-structure" />
       <link role="concept" roleId="soy0.4715820023543882253" targetNodeId="2c95.3350625596579911728" resolveInfo="Document" />
+    </node>
+    <node role="contents" roleId="2c95.3350625596580064250" type="2c95.EmptyDocContent" typeId="2c95.3350625596579911760" id="3251049954616792120">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1362338800528_1" />
+    </node>
+    <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="3251049954616792123">
+      <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="3251049954616792124">
+        <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3251049954616792125">
+          <property name="escapedValue" nameId="87nw.2557074442922438158" value="And here is a type system rule:" />
+        </node>
+      </node>
+    </node>
+    <node role="contents" roleId="2c95.3350625596580064250" type="2c95.EmptyDocContent" typeId="2c95.3350625596579911760" id="3251049954616792121">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1362338800874_2" />
+    </node>
+    <node role="contents" roleId="2c95.3350625596580064250" type="soy0.TypesystemRuleEmbedding" typeId="soy0.3251049954616740592" id="3251049954616792127">
+      <property name="language" nameId="soy0.4715820023543882250" value="mps-typesystem" />
+      <link role="rule" roleId="soy0.3251049954616740593" targetNodeId="9xqh.5378658552263151477" resolveInfo="typeof_VarRef" />
     </node>
   </root>
 </model>

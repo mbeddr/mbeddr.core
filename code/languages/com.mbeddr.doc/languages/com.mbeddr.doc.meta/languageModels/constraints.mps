@@ -10,6 +10,7 @@
   <import index="tp1t" modelUID="r:00000000-0000-4000-0000-011c8959030d(jetbrains.mps.lang.constraints.structure)" version="9" implicit="yes" />
   <roots>
     <node type="tp1t.ConceptConstraints" typeId="tp1t.1213093968558" id="4715820023543942695">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="embed" />
       <link role="concept" roleId="tp1t.1213093996982" targetNodeId="soy0.4715820023543882247" resolveInfo="LangDefEmbedding" />
     </node>
   </roots>
