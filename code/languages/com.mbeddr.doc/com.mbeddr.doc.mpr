@@ -13,6 +13,7 @@
       <modulePath path="${project}/languages/com.mbeddr.doc.gen_latex/com.mbeddr.doc.gen_latex.mpl" folder="" />
       <modulePath path="${project}/languages/com.mbeddr.doc.gen_xhtml/com.mbeddr.doc.gen_xhtml.mpl" folder="" />
       <modulePath path="${project}/languages/com.mbeddr.doc.latex/com.mbeddr.doc.latex.mpl" folder="" />
+      <modulePath path="${project}/languages/com.mbeddr.doc.meta/com.mbeddr.doc.meta.mpl" folder="" />
       <modulePath path="${project}/languages/com.mbeddr.doc/doc.mpl" />
       <modulePath path="${project}/solutions/com.mbeddr.doc.sandbox/com.mbeddr.doc.sandbox.msd" />
     </projectModules>

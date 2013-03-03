@@ -7,16 +7,19 @@
   <language namespace="f44f6b9a-bf30-4f73-866e-fac17c177409(com.mbeddr.doc.gen_latex)" />
   <language namespace="445de13f-b9dd-436f-be62-42c616f697e2(com.mbeddr.doc.c)" />
   <language namespace="1c5b7d51-0ef3-4332-af36-874466950878(com.mbeddr.doc.expressions)" />
+  <language namespace="e06345c7-da82-4f8b-bd44-1425fe158640(com.mbeddr.doc.meta)" />
   <devkit namespace="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
   <import index="haow" modelUID="r:d183ee78-698a-4d70-a6c1-07e860784580(com.mbeddr.doc.sandbox.cstuff)" version="-1" />
+  <import index="2c95" modelUID="r:5f7188a9-e7b4-4a2e-bef9-38d2cf379fdc(com.mbeddr.doc.structure)" version="1" />
+  <import index="z726" modelUID="r:6b7eb85f-64d8-4de6-8906-0e18804729df(com.mbeddr.doc.editor)" version="-1" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
-  <import index="2c95" modelUID="r:5f7188a9-e7b4-4a2e-bef9-38d2cf379fdc(com.mbeddr.doc.structure)" version="1" implicit="yes" />
   <import index="87nw" modelUID="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" version="5" implicit="yes" />
   <import index="rh4a" modelUID="r:51a64317-678a-4e8f-9df1-1e83f73c9d71(com.mbeddr.doc.c.structure)" version="1" implicit="yes" />
   <import index="f87k" modelUID="r:e7473124-6323-4ddf-9715-6e1684f751bd(com.mbeddr.doc.expressions.structure)" version="-1" implicit="yes" />
   <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="20" implicit="yes" />
   <import index="g9w8" modelUID="r:506f4964-2b3f-49f3-a581-8c498222bac6(com.mbeddr.doc.gen_latex.structure)" version="-1" implicit="yes" />
   <import index="lsus" modelUID="r:25d6e7db-06a4-44ee-83aa-8c5bf17f3b3a(com.mbeddr.doc.gen_xhtml.structure)" version="-1" implicit="yes" />
+  <import index="soy0" modelUID="r:7c7016e4-716d-41ab-b7e5-8604290de403(com.mbeddr.doc.meta.structure)" version="-1" implicit="yes" />
   <roots>
     <node type="2c95.Document" typeId="2c95.3350625596579911728" id="3350625596580087926">
       <property name="name" nameId="tpck.1169194664001" value="DocumentationOfDocumentation" />
@@ -32,6 +35,10 @@
     </node>
     <node type="2c95.DocumentConfig" typeId="2c95.6386504476136472782" id="6386504476136482735">
       <property name="name" nameId="tpck.1169194664001" value="Config" />
+    </node>
+    <node type="2c95.Document" typeId="2c95.3350625596579911728" id="4715820023543873333">
+      <property name="name" nameId="tpck.1169194664001" value="LanguageDocumentation" />
+      <link role="config" roleId="2c95.6386504476136472832" targetNodeId="6386504476136482735" resolveInfo="Config" />
     </node>
   </roots>
   <root id="3350625596580087926">
@@ -411,6 +418,17 @@
         </node>
       </node>
     </node>
+    <node role="contents" roleId="2c95.3350625596580064250" type="2c95.EmptyDocContent" typeId="2c95.3350625596579911760" id="4715820023543876424">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1362322909841_1" />
+    </node>
+    <node role="contents" roleId="2c95.3350625596580064250" type="2c95.DocumentInclude" typeId="2c95.6165313375056012512" id="4715820023543876427">
+      <node role="ref" roleId="2c95.6165313375056012515" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="4715820023543876429">
+        <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="4715820023543873333" resolveInfo="LanguageDocumentation" />
+      </node>
+    </node>
+    <node role="contents" roleId="2c95.3350625596580064250" type="2c95.EmptyDocContent" typeId="2c95.3350625596579911760" id="4715820023543876425">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1362322910035_2" />
+    </node>
   </root>
   <root id="3350625596580246774">
     <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Section" typeId="2c95.3350625596580064455" id="4457500422381799153">
@@ -487,6 +505,28 @@
           <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4457500422381962841">
             <property name="escapedValue" nameId="87nw.2557074442922438158" value=" is really great." />
           </node>
+        </node>
+      </node>
+    </node>
+  </root>
+  <root id="4715820023543873333">
+    <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="4715820023543873334">
+      <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="4715820023543873335">
+        <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4715820023543873336">
+          <property name="escapedValue" nameId="87nw.2557074442922438158" value="Of course you can also document langauage definitions. Here we document the documentation\nlanguage itself. " />
+        </node>
+        <node role="words" roleId="87nw.2557074442922392302" type="soy0.ConceptRefWord" typeId="soy0.4715820023543872567" id="4715820023543873518">
+          <link role="concept" roleId="soy0.4715820023543872580" targetNodeId="2c95.3350625596579911728" resolveInfo="Document" />
+        </node>
+        <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4715820023543873519">
+          <property name="escapedValue" nameId="87nw.2557074442922438158" value=" is at the center. It also has an " />
+        </node>
+        <node role="words" roleId="87nw.2557074442922392302" type="soy0.EditorRefWord" typeId="soy0.4715820023543873520" id="4715820023543876422">
+          <property name="textOverride" nameId="soy0.4715820023543874788" value="editor" />
+          <link role="editor" roleId="soy0.4715820023543873538" targetNodeId="z726.3350625596579911735" resolveInfo="Document_Editor" />
+        </node>
+        <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4715820023543876423">
+          <property name="escapedValue" nameId="87nw.2557074442922438158" value=" of course." />
         </node>
       </node>
     </node>
