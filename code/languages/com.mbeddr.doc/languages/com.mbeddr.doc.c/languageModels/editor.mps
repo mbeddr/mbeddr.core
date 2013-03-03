@@ -167,7 +167,7 @@
     <node role="inspectedCellModel" roleId="tpc2.1078153129734" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="126932837435278494">
       <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Indent" typeId="tpc2.1237303669825" id="126932837435278495" />
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="126932837435278493">
-        <property name="text" nameId="tpc2.1073389577007" value="language:" />
+        <property name="text" nameId="tpc2.1073389577007" value="language (for formatting):" />
       </node>
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Property" typeId="tpc2.1073389658414" id="4755612053022237539">
         <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="rh4a.4755612053022237479" resolveInfo="language" />

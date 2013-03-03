@@ -530,6 +530,29 @@
         </node>
       </node>
     </node>
+    <node role="contents" roleId="2c95.3350625596580064250" type="2c95.EmptyDocContent" typeId="2c95.3350625596579911760" id="4715820023543942685">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1362324705231_1" />
+    </node>
+    <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="4715820023543942687">
+      <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="4715820023543942688">
+        <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4715820023543942689">
+          <property name="escapedValue" nameId="87nw.2557074442922438158" value="Here is the structure of the concept " />
+        </node>
+        <node role="words" roleId="87nw.2557074442922392302" type="soy0.ConceptRefWord" typeId="soy0.4715820023543872567" id="4715820023543942690">
+          <link role="concept" roleId="soy0.4715820023543872580" targetNodeId="2c95.3350625596579911728" resolveInfo="Document" />
+        </node>
+        <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4715820023543942691">
+          <property name="escapedValue" nameId="87nw.2557074442922438158" value=":" />
+        </node>
+      </node>
+    </node>
+    <node role="contents" roleId="2c95.3350625596580064250" type="2c95.EmptyDocContent" typeId="2c95.3350625596579911760" id="4715820023543942692">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1362324723983_3" />
+    </node>
+    <node role="contents" roleId="2c95.3350625596580064250" type="soy0.StructureEmbedding" typeId="soy0.4715820023543882251" id="4715820023543942694">
+      <property name="language" nameId="soy0.4715820023543882250" value="mps-structure" />
+      <link role="concept" roleId="soy0.4715820023543882253" targetNodeId="2c95.3350625596579911728" resolveInfo="Document" />
+    </node>
   </root>
 </model>
 

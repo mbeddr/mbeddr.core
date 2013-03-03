@@ -159,8 +159,8 @@
                           <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="126932837435235177" resolveInfo="text" />
                         </node>
                         <node role="rValue" roleId="tpee.1068498886297" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="126932837435247956">
-                          <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="1v5f.1671983567912368068" resolveInfo="FakeEditorComponent" />
-                          <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="1v5f.1147992087610392322" resolveInfo="getTextForNode" />
+                          <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="4gky.4715820023543913679" resolveInfo="FakeEditorComponent" />
+                          <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="4gky.4715820023543913680" resolveInfo="getTextForNode" />
                           <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.DotExpression" typeId="tpee.1197027756228" id="126932837435247957">
                             <node role="operand" roleId="tpee.1197027771414" type="tpf8.TemplateFunctionParameter_sourceNode" typeId="tpf8.1167169188348" id="126932837435247958" />
                             <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="126932837435247962">
@@ -189,8 +189,8 @@
                             <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="126932837435235177" resolveInfo="text" />
                           </node>
                           <node role="rValue" roleId="tpee.1068498886297" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="4509696981882054787">
-                            <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="1v5f.1147992087610392322" resolveInfo="getTextForNode" />
-                            <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="1v5f.1671983567912368068" resolveInfo="FakeEditorComponent" />
+                            <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="4gky.4715820023543913680" resolveInfo="getTextForNode" />
+                            <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="4gky.4715820023543913679" resolveInfo="FakeEditorComponent" />
                             <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.DotExpression" typeId="tpee.1197027756228" id="4509696981882054788">
                               <node role="operand" roleId="tpee.1197027771414" type="tpf8.TemplateFunctionParameter_sourceNode" typeId="tpf8.1167169188348" id="4509696981882054789" />
                               <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="4509696981882054790">
