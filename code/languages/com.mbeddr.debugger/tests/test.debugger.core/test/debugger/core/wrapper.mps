@@ -30,7 +30,6 @@
   <import index="lu0u" modelUID="f:java_stub#85d9f97b-1654-4692-b61c-fcc40db03653#org.eclipse.cdt.debug.mi.core.output(Eclipse.Debugger/org.eclipse.cdt.debug.mi.core.output@java_stub)" version="-1" />
   <import index="kghe" modelUID="r:87260fb1-1050-473f-920f-76ef0bd55c13(test.debugger.core.util)" version="-1" />
   <import index="prwg" modelUID="f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#com.google.common.util.concurrent(MPS.Core/com.google.common.util.concurrent@java_stub)" version="-1" />
-  <import index="r8ii" modelUID="f:java_stub#b8e4beec-8383-4fb9-b0bb-9d1c9c159cfc#com.google.common.util.concurrent(jetbrains.mps.lang.structure#1170324972255/com.google.common.util.concurrent@java_stub)" version="-1" />
   <import index="f655" modelUID="f:java_stub#85d9f97b-1654-4692-b61c-fcc40db03653#com.google.inject.name(Eclipse.Debugger/com.google.inject.name@java_stub)" version="-1" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="tpee" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="4" implicit="yes" />
