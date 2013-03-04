@@ -44,7 +44,7 @@
       <arg value="-Didea.config.path=${mps.platform.caches}/config"/>
       <arg value="-Didea.plugins.path=${mps.platform.caches}/plugins"/>
   </jvmargs>
-
+  
   <target name="init">
       <delete dir="${mps.platform.caches}"/>
       <mkdir dir="${mps.platform.caches}"/>

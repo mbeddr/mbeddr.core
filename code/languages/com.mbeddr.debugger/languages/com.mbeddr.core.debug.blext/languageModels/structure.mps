@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model modelUID="r:98c60105-1d91-4aab-8dfe-5ef258ec8eb6(com.mbeddr.core.debug.blext.structure)" version="38">
+<model modelUID="r:98c60105-1d91-4aab-8dfe-5ef258ec8eb6(com.mbeddr.core.debug.blext.structure)" version="40">
   <persistence version="7" />
   <language namespace="c72da2b9-7cce-4447-8389-f407dc1158b7(jetbrains.mps.lang.structure)" />
   <import index="1i04" modelUID="r:3270011d-8b2d-4938-8dff-d256a759e017(jetbrains.mps.lang.behavior.structure)" version="-1" />
   <import index="tpee" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="3" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
-  <import index="talm" modelUID="r:98c60105-1d91-4aab-8dfe-5ef258ec8eb6(com.mbeddr.core.debug.blext.structure)" version="38" implicit="yes" />
+  <import index="talm" modelUID="r:98c60105-1d91-4aab-8dfe-5ef258ec8eb6(com.mbeddr.core.debug.blext.structure)" version="40" implicit="yes" />
   <import index="tpce" modelUID="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" version="0" implicit="yes" />
   <roots>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="8344177855845759727">
@@ -174,6 +174,20 @@
       <property name="virtualPackage" nameId="tpck.1193676396447" value="watches.hiding" />
       <property name="name" nameId="tpck.1169194664001" value="HidingPolicy" />
       <link role="memberDataType" roleId="tpce.1083171729157" targetNodeId="tpck.1082983657062" resolveInfo="integer" />
+    </node>
+    <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="6193281990723322895">
+      <property name="name" nameId="tpck.1169194664001" value="SuspendOnFirstSteppableStatement" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="stepping" />
+      <link role="extends" roleId="tpce.1071489389519" targetNodeId="5333670511000731186" resolveInfo="AbstractStrategyAdder" />
+    </node>
+    <node type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="6193281990723473342">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="stepping.strategies" />
+      <property name="name" nameId="tpck.1169194664001" value="DebugStrategy" />
+    </node>
+    <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="6193281990723473347">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="stepping.strategies" />
+      <property name="name" nameId="tpck.1169194664001" value="SingleBreakpoint" />
+      <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
     </node>
   </roots>
   <root id="8344177855845759727">
@@ -547,6 +561,24 @@
     <node role="member" roleId="tpce.1083172003582" type="tpce.EnumerationMemberDeclaration" typeId="tpce.1083171877298" id="396290619978151856">
       <property name="externalValue" nameId="tpce.1083923523172" value="try to" />
       <property name="internalValue" nameId="tpce.1083923523171" value="1" />
+    </node>
+  </root>
+  <root id="6193281990723322895">
+    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="6193281990723356312">
+      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
+      <property name="role" nameId="tpce.1071599776563" value="nodeList" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="tpee.1068431790191" resolveInfo="Expression" />
+    </node>
+    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="6193281990723356321">
+      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
+      <property name="role" nameId="tpce.1071599776563" value="strategy" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="6193281990723473342" resolveInfo="DebugStrategy" />
+    </node>
+  </root>
+  <root id="6193281990723473342" />
+  <root id="6193281990723473347">
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="6193281990723473351">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="6193281990723473342" resolveInfo="DebugStrategy" />
     </node>
   </root>
 </model>
