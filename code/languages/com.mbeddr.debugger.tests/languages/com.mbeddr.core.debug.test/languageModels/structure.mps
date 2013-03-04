@@ -207,7 +207,7 @@
     <node type="tpce.EnumerationDataTypeDeclaration" typeId="tpce.1082978164219" id="2033545087487743574">
       <property name="virtualPackage" nameId="tpck.1193676396447" value="configuration" />
       <property name="name" nameId="tpck.1169194664001" value="Platform" />
-      <link role="memberDataType" roleId="tpce.1083171729157" targetNodeId="tpck.1082983657062" resolveInfo="integer" />
+      <link role="memberDataType" roleId="tpce.1083171729157" targetNodeId="tpck.1082983041843" resolveInfo="string" />
     </node>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="2033545087487794832">
       <property name="virtualPackage" nameId="tpck.1193676396447" value="configuration.validation.element.suspended" />
@@ -702,21 +702,17 @@
     </node>
   </root>
   <root id="2033545087487743574">
-    <node role="member" roleId="tpce.1083172003582" type="tpce.EnumerationMemberDeclaration" typeId="tpce.1083171877298" id="2033545087487743575">
-      <property name="externalValue" nameId="tpce.1083923523172" value="any" />
-      <property name="internalValue" nameId="tpce.1083923523171" value="0" />
+    <node role="member" roleId="tpce.1083172003582" type="tpce.EnumerationMemberDeclaration" typeId="tpce.1083171877298" id="2033545087487743577">
+      <property name="externalValue" nameId="tpce.1083923523172" value="mac" />
+      <property name="internalValue" nameId="tpce.1083923523171" value="mac" />
     </node>
     <node role="member" roleId="tpce.1083172003582" type="tpce.EnumerationMemberDeclaration" typeId="tpce.1083171877298" id="2033545087487743576">
       <property name="externalValue" nameId="tpce.1083923523172" value="linux" />
-      <property name="internalValue" nameId="tpce.1083923523171" value="1" />
-    </node>
-    <node role="member" roleId="tpce.1083172003582" type="tpce.EnumerationMemberDeclaration" typeId="tpce.1083171877298" id="2033545087487743577">
-      <property name="externalValue" nameId="tpce.1083923523172" value="mac" />
-      <property name="internalValue" nameId="tpce.1083923523171" value="2" />
+      <property name="internalValue" nameId="tpce.1083923523171" value="nux" />
     </node>
     <node role="member" roleId="tpce.1083172003582" type="tpce.EnumerationMemberDeclaration" typeId="tpce.1083171877298" id="2033545087487743578">
       <property name="externalValue" nameId="tpce.1083923523172" value="windows" />
-      <property name="internalValue" nameId="tpce.1083923523171" value="3" />
+      <property name="internalValue" nameId="tpce.1083923523171" value="win" />
     </node>
   </root>
   <root id="2033545087487794832">
