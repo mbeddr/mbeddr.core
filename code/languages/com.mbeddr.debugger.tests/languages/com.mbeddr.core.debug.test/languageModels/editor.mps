@@ -1533,7 +1533,7 @@
       </node>
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_RefNodeList" typeId="tpc2.1073390211982" id="2033545087487794849">
         <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="rpmx.2033545087487794833" />
-        <node role="cellLayout" roleId="tpc2.1140524464360" type="tpc2.CellLayout_Indent" typeId="tpc2.1237303669825" id="2033545087487794850" />
+        <node role="cellLayout" roleId="tpc2.1140524464360" type="tpc2.CellLayout_Vertical" typeId="tpc2.1106270571710" id="2033545087488022066" />
         <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.IndentLayoutIndentStyleClassItem" typeId="tpc2.1237307900041" id="2033545087487794851">
           <property name="flag" nameId="tpc2.1186414551515" value="true" />
         </node>
