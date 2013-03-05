@@ -29,10 +29,10 @@
   
   <target name="assemble" depends="classes">
     <mkdir dir="${build.layout}" />
-    <mkdir dir="${build.tmp}/default/com.mbeddr.build.zip" />
-    <mkdir dir="${build.tmp}/default/com.mbeddr.build.zip/debugger.testing" />
-    <mkdir dir="${build.tmp}/default/com.mbeddr.build.zip/debugger.testing/META-INF" />
-    <echoxml file="${build.tmp}/default/com.mbeddr.build.zip/debugger.testing/META-INF/plugin.xml">
+    <mkdir dir="${build.tmp}/default/com.mbeddr.debugger.testing.zip" />
+    <mkdir dir="${build.tmp}/default/com.mbeddr.debugger.testing.zip/debugger.testing" />
+    <mkdir dir="${build.tmp}/default/com.mbeddr.debugger.testing.zip/debugger.testing/META-INF" />
+    <echoxml file="${build.tmp}/default/com.mbeddr.debugger.testing.zip/debugger.testing/META-INF/plugin.xml">
       <idea-plugin version="2" xmlns:xi="http://www.w3.org/2001/XInclude">
         <id>com.mbeddr.debugger.testing</id>
         <name>com.mbeddr.debugger.testing</name>
@@ -48,8 +48,8 @@
         </extensions>
       </idea-plugin>
     </echoxml>
-    <mkdir dir="${build.tmp}/default/com.mbeddr.build.zip/debugger.testing/languages" />
-    <mkdir dir="${build.tmp}/default/com.mbeddr.build.zip/debugger.testing/languages/com.mbeddr.debugger.testing" />
+    <mkdir dir="${build.tmp}/default/com.mbeddr.debugger.testing.zip/debugger.testing/languages" />
+    <mkdir dir="${build.tmp}/default/com.mbeddr.debugger.testing.zip/debugger.testing/languages/com.mbeddr.debugger.testing" />
     <mkdir dir="${build.tmp}/default/com.mbeddr.core.debug.test.runtime.jar" />
     <mkdir dir="${build.tmp}/default/com.mbeddr.core.debug.test.runtime.jar/META-INF" />
     <echoxml file="${build.tmp}/default/com.mbeddr.core.debug.test.runtime.jar/META-INF/module.xml">
@@ -70,12 +70,12 @@
         <sources jar="com.mbeddr.core.debug.test.runtime-src.jar" descriptor="runtime.msd" />
       </module>
     </echoxml>
-    <jar destfile="${build.tmp}/default/com.mbeddr.build.zip/debugger.testing/languages/com.mbeddr.debugger.testing/com.mbeddr.core.debug.test.runtime.jar">
+    <jar destfile="${build.tmp}/default/com.mbeddr.debugger.testing.zip/debugger.testing/languages/com.mbeddr.debugger.testing/com.mbeddr.core.debug.test.runtime.jar">
       <fileset dir="${build.tmp}/java/out/com.mbeddr.core.debug.test.runtime" />
       <fileset dir="${mbeddr.github.core.home}/code/languages/com.mbeddr.debugger.tests/languages/com.mbeddr.core.debug.test/solutions/pluginSolution" includes="icons/**, resources/**" />
       <fileset dir="${build.tmp}/default/com.mbeddr.core.debug.test.runtime.jar" />
     </jar>
-    <jar destfile="${build.tmp}/default/com.mbeddr.build.zip/debugger.testing/languages/com.mbeddr.debugger.testing/com.mbeddr.core.debug.test.runtime-src.jar">
+    <jar destfile="${build.tmp}/default/com.mbeddr.debugger.testing.zip/debugger.testing/languages/com.mbeddr.debugger.testing/com.mbeddr.core.debug.test.runtime-src.jar">
       <fileset dir="${mbeddr.github.core.home}/code/languages/com.mbeddr.debugger.tests/languages/com.mbeddr.core.debug.test/solutions/pluginSolution/source_gen" includes="**/*.java" />
       <zipfileset file="${mbeddr.github.core.home}/code/languages/com.mbeddr.debugger.tests/languages/com.mbeddr.core.debug.test/solutions/pluginSolution/runtime.msd" prefix="module" />
       <zipfileset dir="${mbeddr.github.core.home}/code/languages/com.mbeddr.debugger.tests/languages/com.mbeddr.core.debug.test/solutions/pluginSolution/models" includes="**/*.mps, **/*.metadata, **/*.history" prefix="module/models" />
@@ -98,12 +98,12 @@
         <sources jar="com.mbeddr.core.debug.util-src.jar" descriptor="util.mpl" />
       </module>
     </echoxml>
-    <jar destfile="${build.tmp}/default/com.mbeddr.build.zip/debugger.testing/languages/com.mbeddr.debugger.testing/com.mbeddr.core.debug.util.jar">
+    <jar destfile="${build.tmp}/default/com.mbeddr.debugger.testing.zip/debugger.testing/languages/com.mbeddr.debugger.testing/com.mbeddr.core.debug.util.jar">
       <fileset dir="${build.tmp}/java/out/com.mbeddr.core.debug.util" />
       <fileset dir="${mbeddr.github.core.home}/code/languages/com.mbeddr.debugger.tests/languages/com.mbeddr.core.debug.util" includes="icons/**, resources/**" />
       <fileset dir="${build.tmp}/default/com.mbeddr.core.debug.util.jar" />
     </jar>
-    <jar destfile="${build.tmp}/default/com.mbeddr.build.zip/debugger.testing/languages/com.mbeddr.debugger.testing/com.mbeddr.core.debug.util-src.jar">
+    <jar destfile="${build.tmp}/default/com.mbeddr.debugger.testing.zip/debugger.testing/languages/com.mbeddr.debugger.testing/com.mbeddr.core.debug.util-src.jar">
       <fileset dir="${mbeddr.github.core.home}/code/languages/com.mbeddr.debugger.tests/languages/com.mbeddr.core.debug.util/source_gen" includes="**/*.java" />
       <zipfileset file="${mbeddr.github.core.home}/code/languages/com.mbeddr.debugger.tests/languages/com.mbeddr.core.debug.util/util.mpl" prefix="module" />
       <zipfileset dir="${mbeddr.github.core.home}/code/languages/com.mbeddr.debugger.tests/languages/com.mbeddr.core.debug.util/languageModels" includes="**/*.mps, **/*.metadata, **/*.history" prefix="module/languageModels" />
@@ -128,19 +128,19 @@
         <sources jar="com.mbeddr.core.debug.test-src.jar" descriptor="test.mpl" />
       </module>
     </echoxml>
-    <jar destfile="${build.tmp}/default/com.mbeddr.build.zip/debugger.testing/languages/com.mbeddr.debugger.testing/com.mbeddr.core.debug.test.jar">
+    <jar destfile="${build.tmp}/default/com.mbeddr.debugger.testing.zip/debugger.testing/languages/com.mbeddr.debugger.testing/com.mbeddr.core.debug.test.jar">
       <fileset dir="${build.tmp}/java/out/com.mbeddr.core.debug.test" />
       <fileset dir="${mbeddr.github.core.home}/code/languages/com.mbeddr.debugger.tests/languages/com.mbeddr.core.debug.test" includes="icons/**, resources/**" />
       <fileset dir="${build.tmp}/default/com.mbeddr.core.debug.test.jar" />
     </jar>
-    <jar destfile="${build.tmp}/default/com.mbeddr.build.zip/debugger.testing/languages/com.mbeddr.debugger.testing/com.mbeddr.core.debug.test-src.jar">
+    <jar destfile="${build.tmp}/default/com.mbeddr.debugger.testing.zip/debugger.testing/languages/com.mbeddr.debugger.testing/com.mbeddr.core.debug.test-src.jar">
       <fileset dir="${mbeddr.github.core.home}/code/languages/com.mbeddr.debugger.tests/languages/com.mbeddr.core.debug.test/source_gen" includes="**/*.java" />
       <zipfileset file="${mbeddr.github.core.home}/code/languages/com.mbeddr.debugger.tests/languages/com.mbeddr.core.debug.test/test.mpl" prefix="module" />
       <zipfileset dir="${mbeddr.github.core.home}/code/languages/com.mbeddr.debugger.tests/languages/com.mbeddr.core.debug.test/languageModels" includes="**/*.mps, **/*.metadata, **/*.history" prefix="module/languageModels" />
       <zipfileset dir="${mbeddr.github.core.home}/code/languages/com.mbeddr.debugger.tests/languages/com.mbeddr.core.debug.test/generator/template" includes="**/*.mps, **/*.metadata, **/*.history" prefix="module/generator/template" />
     </jar>
-    <zip destfile="${build.layout}/com.mbeddr.build.zip">
-      <fileset dir="${build.tmp}/default/com.mbeddr.build.zip" />
+    <zip destfile="${build.layout}/com.mbeddr.debugger.testing.zip">
+      <fileset dir="${build.tmp}/default/com.mbeddr.debugger.testing.zip" />
     </zip>
     <echo file="${build.layout}/build.properties">buildMPS.build.number=${buildMPS.build.number}${line.separator}buildMPS.date=${buildMPS.date}${line.separator}buildMPS.build.vcs.number=${buildMPS.build.vcs.number}${line.separator}buildMPS.teamcity.buildConfName=${buildMPS.teamcity.buildConfName}${line.separator}buildMPS.idea.platform.build.number=${buildMPS.idea.platform.build.number}${line.separator}buildCore.version=${buildCore.version}${line.separator}com.mbeddr.mpsutil.build.build.number=${com.mbeddr.mpsutil.build.build.number}</echo>
   </target>
@@ -155,10 +155,10 @@
   <target name="fetchDependencies">
     <mkdir dir="${build.tmp}/deps/com.mbeddr.mpsutil.build/com.mbeddr.mpsutil.zip" />
     <unzip src="${artifacts.com.mbeddr.mpsutil.build}/com.mbeddr.mpsutil.zip" dest="${build.tmp}/deps/com.mbeddr.mpsutil.build/com.mbeddr.mpsutil.zip" />
-    <mkdir dir="${build.tmp}/deps/com.mbeddr.debugger.build/com.mbeddr.core.debugger.zip" />
-    <unzip src="${artifacts.com.mbeddr.debugger.build}/com.mbeddr.core.debugger.zip" dest="${build.tmp}/deps/com.mbeddr.debugger.build/com.mbeddr.core.debugger.zip" />
     <mkdir dir="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip" />
     <unzip src="${artifacts.com.mbeddr.core.build}/com.mbeddr.core.zip" dest="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip" />
+    <mkdir dir="${build.tmp}/deps/com.mbeddr.debugger.build/com.mbeddr.core.debugger.zip" />
+    <unzip src="${artifacts.com.mbeddr.debugger.build}/com.mbeddr.core.debugger.zip" dest="${build.tmp}/deps/com.mbeddr.debugger.build/com.mbeddr.core.debugger.zip" />
     <mkdir dir="${build.tmp}/deps/com.mbeddr.spawner.build/com.mbeddr.spawner.zip" />
     <unzip src="${artifacts.com.mbeddr.spawner.build}/com.mbeddr.spawner.zip" dest="${build.tmp}/deps/com.mbeddr.spawner.build/com.mbeddr.spawner.zip" />
   </target>

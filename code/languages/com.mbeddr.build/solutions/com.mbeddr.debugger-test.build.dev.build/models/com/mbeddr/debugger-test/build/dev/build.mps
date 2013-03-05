@@ -103,7 +103,7 @@
       <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_Zip" typeId="3ior.7389400916848050071" id="6970948587879843298">
         <node role="containerName" roleId="3ior.4380385936562148502" type="3ior.BuildStringNotEmpty" typeId="3ior.841011766566059607" id="6970948587879843299">
           <node role="parts" roleId="3ior.4903714810883783243" type="3ior.BuildTextStringPart" typeId="3ior.4903714810883702019" id="6970948587879843300">
-            <property name="text" nameId="3ior.4903714810883755350" value="com.mbeddr.build.zip" />
+            <property name="text" nameId="3ior.4903714810883755350" value="com.mbeddr.debugger.testing.zip" />
           </node>
         </node>
         <node role="children" roleId="3ior.7389400916848037006" type="kdzh.BuildMpsLayout_Plugin" typeId="kdzh.6592112598314498926" id="6970948587879843301">

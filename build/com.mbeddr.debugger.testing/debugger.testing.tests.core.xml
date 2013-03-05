@@ -99,8 +99,8 @@
     <unzip src="${artifacts.com.mbeddr.debugger.build}/com.mbeddr.core.debugger.zip" dest="${build.tmp}/deps/com.mbeddr.debugger.build/com.mbeddr.core.debugger.zip" />
     <mkdir dir="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip" />
     <unzip src="${artifacts.com.mbeddr.core.build}/com.mbeddr.core.zip" dest="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip" />
-    <mkdir dir="${build.tmp}/deps/com.mbeddr.debugger.testing.build/com.mbeddr.build.zip" />
-    <unzip src="${artifacts.com.mbeddr.debugger.testing.build}/com.mbeddr.build.zip" dest="${build.tmp}/deps/com.mbeddr.debugger.testing.build/com.mbeddr.build.zip" />
+    <mkdir dir="${build.tmp}/deps/com.mbeddr.debugger.testing.build/com.mbeddr.debugger.testing.zip" />
+    <unzip src="${artifacts.com.mbeddr.debugger.testing.build}/com.mbeddr.debugger.testing.zip" dest="${build.tmp}/deps/com.mbeddr.debugger.testing.build/com.mbeddr.debugger.testing.zip" />
     <mkdir dir="${build.tmp}/deps/com.mbeddr.spawner.build/com.mbeddr.spawner.zip" />
     <unzip src="${artifacts.com.mbeddr.spawner.build}/com.mbeddr.spawner.zip" dest="${build.tmp}/deps/com.mbeddr.spawner.build/com.mbeddr.spawner.zip" />
     <mkdir dir="${build.tmp}/deps/com.mbeddr.mpsutil.build/com.mbeddr.mpsutil.zip" />
@@ -193,7 +193,7 @@
         <fileset dir="${artifacts.buildMPS}/lib" includes="*.jar" />
         <fileset dir="${artifacts.buildMPS}/lib/ant/lib" includes="*.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.debugger.build/com.mbeddr.core.debugger.zip/debugger/languages/com.mbeddr.core.debugger/com.mbeddr.core.debug.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.debugger.testing.build/com.mbeddr.build.zip/debugger.testing/languages/com.mbeddr.debugger.testing/com.mbeddr.core.debug.test.runtime.jar" />
+        <fileset file="${build.tmp}/deps/com.mbeddr.debugger.testing.build/com.mbeddr.debugger.testing.zip/debugger.testing/languages/com.mbeddr.debugger.testing/com.mbeddr.core.debug.test.runtime.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/languages/com.mbeddr.core/com.mbeddr.core.modules.runtime.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/languages/com.mbeddr.core/com.mbeddr.plantuml.pluginSolution.jar" />
         <fileset file="${artifacts.buildMPS}/languages/baseLanguage/jetbrains.mps.baseLanguage.regexp.runtime.jar" />
@@ -212,7 +212,7 @@
       <plugin path="${artifacts.buildMPS}/plugins/mps-debugger-api" />
       <plugin path="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core" />
       <plugin path="${build.tmp}/deps/com.mbeddr.debugger.build/com.mbeddr.core.debugger.zip/debugger" />
-      <plugin path="${build.tmp}/deps/com.mbeddr.debugger.testing.build/com.mbeddr.build.zip/debugger.testing" />
+      <plugin path="${build.tmp}/deps/com.mbeddr.debugger.testing.build/com.mbeddr.debugger.testing.zip/debugger.testing" />
       <plugin path="${build.tmp}/deps/com.mbeddr.mpsutil.build/com.mbeddr.mpsutil.zip/mbeddr.mpsutil" />
       <library file="${artifacts.buildMPS}/languages/baseLanguage/jetbrains.mps.baseLanguage.blTypes.jar" />
       <library file="${artifacts.buildMPS}/languages/baseLanguage/jetbrains.mps.baseLanguage.classifiers.jar" />
@@ -304,8 +304,8 @@
       <library file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/languages/com.mbeddr.core/com.mbeddr.plantuml.pluginSolution.jar" />
       <library file="${build.tmp}/deps/com.mbeddr.debugger.build/com.mbeddr.core.debugger.zip/debugger/languages/com.mbeddr.core.debugger/com.mbeddr.core.debug.blext.jar" />
       <library file="${build.tmp}/deps/com.mbeddr.debugger.build/com.mbeddr.core.debugger.zip/debugger/languages/com.mbeddr.core.debugger/com.mbeddr.core.debug.jar" />
-      <library file="${build.tmp}/deps/com.mbeddr.debugger.testing.build/com.mbeddr.build.zip/debugger.testing/languages/com.mbeddr.debugger.testing/com.mbeddr.core.debug.test.jar" />
-      <library file="${build.tmp}/deps/com.mbeddr.debugger.testing.build/com.mbeddr.build.zip/debugger.testing/languages/com.mbeddr.debugger.testing/com.mbeddr.core.debug.test.runtime.jar" />
+      <library file="${build.tmp}/deps/com.mbeddr.debugger.testing.build/com.mbeddr.debugger.testing.zip/debugger.testing/languages/com.mbeddr.debugger.testing/com.mbeddr.core.debug.test.jar" />
+      <library file="${build.tmp}/deps/com.mbeddr.debugger.testing.build/com.mbeddr.debugger.testing.zip/debugger.testing/languages/com.mbeddr.debugger.testing/com.mbeddr.core.debug.test.runtime.jar" />
       <library file="${build.tmp}/deps/com.mbeddr.mpsutil.build/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil/com.mbeddr.mpsutil.bldoc.jar" />
       <library file="${build.tmp}/deps/com.mbeddr.spawner.build/com.mbeddr.spawner.zip/mbeddr.spawner/languages/Eclipse.Debugger.jar" />
       <chunk>
