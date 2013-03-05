@@ -23,8 +23,10 @@
           classpathref="mps.ant.path"/>
  
   <property name="mbeddr.doc.project.dir" value="code/languages/com.mbeddr.doc"/>
+  <property name="mbeddr.core.project.dir" value="code/languages/com.mbeddr.core"/>
   <property name="util.project.dir" value="code/languages/com.mbeddr.mpsutil"/>  
-
+  <property name="debugger.project.dir" value="code/languages/com.mbeddr.debugger"/>
+  
   <property name="utilLanguageDir" value="${mbeddr.github.core.home}/${util.project.dir}/languages"/>  
   <property name="coreLanguageDir" value="${mbeddr.github.core.home}/${mbeddr.core.project.dir}/languages"/>  
   <property name="lissonLanguageDir" value="${lisson.home}/"/>  
