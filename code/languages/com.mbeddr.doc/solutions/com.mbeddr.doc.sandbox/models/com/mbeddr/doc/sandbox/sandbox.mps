@@ -10,8 +10,8 @@
   <language namespace="e06345c7-da82-4f8b-bd44-1425fe158640(com.mbeddr.doc.meta)" />
   <devkit namespace="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
   <import index="haow" modelUID="r:d183ee78-698a-4d70-a6c1-07e860784580(com.mbeddr.doc.sandbox.cstuff)" version="-1" />
-  <import index="2c95" modelUID="r:5f7188a9-e7b4-4a2e-bef9-38d2cf379fdc(com.mbeddr.doc.structure)" version="1" />
-  <import index="z726" modelUID="r:6b7eb85f-64d8-4de6-8906-0e18804729df(com.mbeddr.doc.editor)" version="-1" />
+  <import index="2c95" modelUID="r:5f7188a9-e7b4-4a2e-bef9-38d2cf379fdc(com.mbeddr.doc.structure)" version="2" />
+  <import index="z726" modelUID="r:6b7eb85f-64d8-4de6-8906-0e18804729df(com.mbeddr.doc.editor)" version="0" />
   <import index="9xqh" modelUID="r:7d63afe9-9fc3-4991-890c-1008af05d479(com.mbeddr.doc.expressions.typesystem)" version="-1" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="87nw" modelUID="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" version="5" implicit="yes" />
@@ -21,6 +21,7 @@
   <import index="g9w8" modelUID="r:506f4964-2b3f-49f3-a581-8c498222bac6(com.mbeddr.doc.gen_latex.structure)" version="-1" implicit="yes" />
   <import index="lsus" modelUID="r:25d6e7db-06a4-44ee-83aa-8c5bf17f3b3a(com.mbeddr.doc.gen_xhtml.structure)" version="-1" implicit="yes" />
   <import index="soy0" modelUID="r:7c7016e4-716d-41ab-b7e5-8604290de403(com.mbeddr.doc.meta.structure)" version="-1" implicit="yes" />
+  <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="7" implicit="yes" />
   <roots>
     <node type="2c95.Document" typeId="2c95.3350625596579911728" id="3350625596580087926">
       <property name="name" nameId="tpck.1169194664001" value="DocumentationOfDocumentation" />
@@ -101,8 +102,8 @@
           <property name="imagePath" value="/Users/markusvoelter/Documents/mbeddr/mbeddr.core/code/languages/com.mbeddr.doc/solutions/com.mbeddr.doc.sandbox/images/img1.jpg" />
           <property name="showImage" nameId="2c95.6386504476136358630" value="false" />
           <property name="name" nameId="tpck.1169194664001" value="glider1" />
-          <node role="description" roleId="2c95.6386504476136278696" type="2c95.TextBlock" typeId="2c95.6386504476136446898" id="6386504476136456052">
-            <node role="text" roleId="2c95.6386504476136446899" type="87nw.Text" typeId="87nw.2557074442922380897" id="6386504476136456053">
+          <node role="description" roleId="2c95.6386504476136278696" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="6386504476136456052">
+            <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="6386504476136456053">
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6386504476136456054">
                 <property name="escapedValue" nameId="87nw.2557074442922438158" value="Text hat es auch hier drin. Und man kann da auch " />
               </node>
@@ -129,8 +130,8 @@
           <property name="imagePath" value="/Users/markusvoelter/Documents/mbeddr/mbeddr.core/code/languages/com.mbeddr.doc/solutions/com.mbeddr.doc.sandbox/images/img1.jpg" />
           <property name="showImage" nameId="2c95.6386504476136358630" value="false" />
           <property name="name" nameId="tpck.1169194664001" value="glider2" />
-          <node role="description" roleId="2c95.6386504476136278696" type="2c95.TextBlock" typeId="2c95.6386504476136446898" id="4457500422381349987">
-            <node role="text" roleId="2c95.6386504476136446899" type="87nw.Text" typeId="87nw.2557074442922380897" id="4457500422381349988">
+          <node role="description" roleId="2c95.6386504476136278696" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="4457500422381349987">
+            <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="4457500422381349988">
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4457500422381349989">
                 <property name="escapedValue" nameId="87nw.2557074442922438158" value="Text hat es auch hier drin. Und man kann da auch " />
               </node>
@@ -277,8 +278,8 @@
           </node>
           <node role="contents" roleId="2c95.3350625596580064250" type="2c95.ItemList" typeId="2c95.5378658552262893169" id="5378658552263129793">
             <node role="items" roleId="2c95.5378658552262986137" type="2c95.Item" typeId="2c95.5378658552262903588" id="5378658552263130270">
-              <node role="text" roleId="2c95.5378658552262903589" type="2c95.TextBlock" typeId="2c95.6386504476136446898" id="5378658552263130271">
-                <node role="text" roleId="2c95.6386504476136446899" type="87nw.Text" typeId="87nw.2557074442922380897" id="5378658552263130272">
+              <node role="text" roleId="2c95.5378658552262903589" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="5378658552263130271">
+                <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="5378658552263130272">
                   <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5378658552263130273">
                     <property name="escapedValue" nameId="87nw.2557074442922438158" value="Ein bischen Text." />
                   </node>
@@ -286,8 +287,8 @@
               </node>
             </node>
             <node role="items" roleId="2c95.5378658552262986137" type="2c95.Item" typeId="2c95.5378658552262903588" id="5378658552263130262">
-              <node role="text" roleId="2c95.5378658552262903589" type="2c95.TextBlock" typeId="2c95.6386504476136446898" id="5378658552263130263">
-                <node role="text" roleId="2c95.6386504476136446899" type="87nw.Text" typeId="87nw.2557074442922380897" id="5378658552263130264">
+              <node role="text" roleId="2c95.5378658552262903589" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="5378658552263130263">
+                <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="5378658552263130264">
                   <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5378658552263130265">
                     <property name="escapedValue" nameId="87nw.2557074442922438158" value="Mehr Text steht in dieser Bullet. " />
                   </node>
@@ -295,8 +296,8 @@
               </node>
             </node>
             <node role="items" roleId="2c95.5378658552262986137" type="2c95.Item" typeId="2c95.5378658552262903588" id="5378658552263130266">
-              <node role="text" roleId="2c95.5378658552262903589" type="2c95.TextBlock" typeId="2c95.6386504476136446898" id="5378658552263130267">
-                <node role="text" roleId="2c95.6386504476136446899" type="87nw.Text" typeId="87nw.2557074442922380897" id="5378658552263130268">
+              <node role="text" roleId="2c95.5378658552262903589" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="5378658552263130267">
+                <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="5378658552263130268">
                   <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5378658552263130269">
                     <property name="escapedValue" nameId="87nw.2557074442922438158" value="Noch mehr Text in dieser hier." />
                   </node>
@@ -386,8 +387,8 @@
           <property name="name" nameId="tpck.1169194664001" value="dependencies" />
           <link role="visualizable" roleId="rh4a.4755612053022373496" targetNodeId="haow.4457500422381538339" resolveInfo="MinimalTest" />
           <link role="path" roleId="rh4a.4755612053022398751" targetNodeId="4755612053022398739" resolveInfo="visualizations" />
-          <node role="description" roleId="rh4a.4755612053022495458" type="2c95.TextBlock" typeId="2c95.6386504476136446898" id="4755612053022509142">
-            <node role="text" roleId="2c95.6386504476136446899" type="87nw.Text" typeId="87nw.2557074442922380897" id="4755612053022509143">
+          <node role="description" roleId="rh4a.4755612053022495458" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="4755612053022509142">
+            <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="4755612053022509143">
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4755612053022509144">
                 <property name="escapedValue" nameId="87nw.2557074442922438158" value="Diese Visualisierung hat eine Beschreibung." />
               </node>
@@ -409,8 +410,8 @@
           <property name="name" nameId="tpck.1169194664001" value="ampel" />
           <link role="visualizable" roleId="rh4a.4755612053022373496" targetNodeId="haow.4755612053022236787" resolveInfo="Ampel" />
           <link role="path" roleId="rh4a.4755612053022398751" targetNodeId="4755612053022398739" resolveInfo="visualizations" />
-          <node role="description" roleId="rh4a.4755612053022495458" type="2c95.TextBlock" typeId="2c95.6386504476136446898" id="4755612053022516161">
-            <node role="text" roleId="2c95.6386504476136446899" type="87nw.Text" typeId="87nw.2557074442922380897" id="4755612053022516162">
+          <node role="description" roleId="rh4a.4755612053022495458" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="4755612053022516161">
+            <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="4755612053022516162">
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4755612053022516163">
                 <property name="escapedValue" nameId="87nw.2557074442922438158" value="Und dann ist hier die Beschreibung der STate Machine." />
               </node>
@@ -482,8 +483,8 @@
     </node>
     <node role="shortcuts" roleId="2c95.4457500422381845292" type="2c95.Shortcut" typeId="2c95.4457500422381845279" id="4457500422381858388">
       <property name="name" nameId="tpck.1169194664001" value="mbeddr" />
-      <node role="text" roleId="2c95.4457500422381845281" type="2c95.TextBlock" typeId="2c95.6386504476136446898" id="4457500422381858389">
-        <node role="text" roleId="2c95.6386504476136446899" type="87nw.Text" typeId="87nw.2557074442922380897" id="4457500422381858390">
+      <node role="text" roleId="2c95.4457500422381845281" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="4457500422381858389">
+        <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="4457500422381858390">
           <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4457500422381858391">
             <property name="escapedValue" nameId="87nw.2557074442922438158" value="mbeddr technology stack" />
           </node>
@@ -495,8 +496,8 @@
       <node role="args" roleId="2c95.4457500422381931831" type="2c95.ShortcutArg" typeId="2c95.4457500422381931825" id="4457500422381962834">
         <property name="name" nameId="tpck.1169194664001" value="thing" />
       </node>
-      <node role="text" roleId="2c95.4457500422381845281" type="2c95.TextBlock" typeId="2c95.6386504476136446898" id="4457500422381962831">
-        <node role="text" roleId="2c95.6386504476136446899" type="87nw.Text" typeId="87nw.2557074442922380897" id="4457500422381962835">
+      <node role="text" roleId="2c95.4457500422381845281" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="4457500422381962831">
+        <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="4457500422381962835">
           <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4457500422381962839">
             <property name="escapedValue" nameId="87nw.2557074442922438158" value="The " />
           </node>

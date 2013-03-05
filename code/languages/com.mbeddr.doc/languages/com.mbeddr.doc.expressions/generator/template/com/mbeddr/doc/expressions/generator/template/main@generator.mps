@@ -12,7 +12,7 @@
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="tpf8" modelUID="r:00000000-0000-4000-0000-011c895902e8(jetbrains.mps.lang.generator.structure)" version="2" implicit="yes" />
   <import index="tp25" modelUID="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" version="16" implicit="yes" />
-  <import index="2c95" modelUID="r:5f7188a9-e7b4-4a2e-bef9-38d2cf379fdc(com.mbeddr.doc.structure)" version="1" implicit="yes" />
+  <import index="2c95" modelUID="r:5f7188a9-e7b4-4a2e-bef9-38d2cf379fdc(com.mbeddr.doc.structure)" version="2" implicit="yes" />
   <import index="tpee" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="4" implicit="yes" />
   <import index="87nw" modelUID="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" version="5" implicit="yes" />
   <roots>
@@ -25,7 +25,7 @@
       <link role="applicableConcept" roleId="tpf8.1167169349424" targetNodeId="f87k.5378658552263149308" resolveInfo="VariableDef" />
       <node role="ruleConsequence" roleId="tpf8.1169672767469" type="tpf8.InlineTemplate_RuleConsequence" typeId="tpf8.1177093525992" id="5378658552263161911">
         <node role="templateNode" roleId="tpf8.1177093586806" type="2c95.MathFormattedText" typeId="2c95.6165313375055755361" id="6165313375055775754">
-          <node role="text" roleId="2c95.6165313375055755362" type="87nw.Text" typeId="87nw.2557074442922380897" id="6165313375055775755">
+          <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="6165313375055775755">
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6165313375055775759">
               <property name="escapedValue" nameId="87nw.2557074442922438158" value="w" />
               <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.CopySrcNodeMacro" typeId="tpf8.1114706874351" id="6165313375055775762">
@@ -55,7 +55,7 @@
       <link role="applicableConcept" roleId="tpf8.1167169349424" targetNodeId="f87k.5378658552263151469" resolveInfo="VarRef" />
       <node role="ruleConsequence" roleId="tpf8.1169672767469" type="tpf8.InlineTemplate_RuleConsequence" typeId="tpf8.1177093525992" id="5378658552263161924">
         <node role="templateNode" roleId="tpf8.1177093586806" type="2c95.MathFormattedText" typeId="2c95.6165313375055755361" id="6165313375055775803">
-          <node role="text" roleId="2c95.6165313375055755362" type="87nw.Text" typeId="87nw.2557074442922380897" id="6165313375055775804">
+          <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="6165313375055775804">
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6165313375055775807">
               <property name="escapedValue" nameId="87nw.2557074442922438158" value="w" />
               <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.CopySrcNodeMacro" typeId="tpf8.1114706874351" id="6165313375055775809">
@@ -90,7 +90,7 @@
       <link role="applicableConcept" roleId="tpf8.1167169349424" targetNodeId="f87k.5378658552263151447" resolveInfo="Equation" />
       <node role="ruleConsequence" roleId="tpf8.1169672767469" type="tpf8.InlineTemplate_RuleConsequence" typeId="tpf8.1177093525992" id="5378658552263161975">
         <node role="templateNode" roleId="tpf8.1177093586806" type="2c95.MathFormattedText" typeId="2c95.6165313375055755361" id="6165313375055775818">
-          <node role="text" roleId="2c95.6165313375055755362" type="87nw.Text" typeId="87nw.2557074442922380897" id="6165313375055775819">
+          <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="6165313375055775819">
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6165313375055775821">
               <property name="escapedValue" nameId="87nw.2557074442922438158" value="w" />
               <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.CopySrcNodeMacro" typeId="tpf8.1114706874351" id="6165313375055775823">
