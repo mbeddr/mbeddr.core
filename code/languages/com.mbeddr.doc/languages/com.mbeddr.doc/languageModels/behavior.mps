@@ -91,9 +91,9 @@
         <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="8934095934011938603">
           <node role="expression" roleId="tpee.1068580123156" type="tpee.AssignmentExpression" typeId="tpee.1068498886294" id="8934095934011938610">
             <node role="rValue" roleId="tpee.1068498886297" type="tpee.PlusExpression" typeId="tpee.1068581242875" id="8934095934012023920">
-              <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="8934095934012023924">
-                <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="qd6m.8934095934012023882" resolveInfo="UniqueNameHelper" />
+              <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="8375407818529071540">
                 <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="qd6m.8934095934012023894" resolveInfo="newUniqueName" />
+                <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="qd6m.8934095934012023882" resolveInfo="UniqueNameHelper" />
               </node>
               <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="8934095934012023919">
                 <property name="value" nameId="tpee.1070475926801" value="empty_" />

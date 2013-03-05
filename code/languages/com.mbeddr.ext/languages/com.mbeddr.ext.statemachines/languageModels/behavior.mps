@@ -32,6 +32,7 @@
   <import index="tp2c" modelUID="r:00000000-0000-4000-0000-011c89590338(jetbrains.mps.baseLanguage.closures.structure)" version="3" implicit="yes" />
   <import index="talm" modelUID="r:98c60105-1d91-4aab-8dfe-5ef258ec8eb6(com.mbeddr.core.debug.blext.structure)" version="40" implicit="yes" />
   <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="6" implicit="yes" />
+  <import index="hba4" modelUID="r:f5bd2ad9-cd54-4408-b815-07f9f306f074(com.mbeddr.mpsutil.blutil.structure)" version="7" implicit="yes" />
   <roots>
     <node type="1i04.ConceptBehavior" typeId="1i04.1225194240794" id="5633981208992655224">
       <property name="virtualPackage" nameId="tpck.1193676396447" value="machine" />
@@ -170,8 +171,8 @@
                 <link role="link" roleId="tp25.1138056546658" targetNodeId="clqz.7835233251114737454" />
               </node>
             </node>
-            <node role="operation" roleId="tpee.1197027833540" type=".com.mbeddr.mpsutil.blutil.structure.FilterOperation" id="3114718041086279447">
-              <link role="concept" targetNodeId="clqz.5633981208992643165" resolveInfo="StatemachineVariableDeclaration" />
+            <node role="operation" roleId="tpee.1197027833540" type="hba4.FilterOperation" typeId="hba4.17217465924316850" id="3114718041086279447">
+              <link role="concept" roleId="hba4.17217465924316851" targetNodeId="clqz.5633981208992643165" resolveInfo="StatemachineVariableDeclaration" />
             </node>
           </node>
         </node>
@@ -194,8 +195,8 @@
                 <link role="link" roleId="tp25.1138056546658" targetNodeId="clqz.7835233251114737454" />
               </node>
             </node>
-            <node role="operation" roleId="tpee.1197027833540" type=".com.mbeddr.mpsutil.blutil.structure.FilterOperation" id="3114718041086279561">
-              <link role="concept" targetNodeId="clqz.4643433264760980253" resolveInfo="InEvent" />
+            <node role="operation" roleId="tpee.1197027833540" type="hba4.FilterOperation" typeId="hba4.17217465924316850" id="3114718041086279561">
+              <link role="concept" roleId="hba4.17217465924316851" targetNodeId="clqz.4643433264760980253" resolveInfo="InEvent" />
             </node>
           </node>
         </node>
@@ -218,8 +219,8 @@
                 <link role="link" roleId="tp25.1138056546658" targetNodeId="clqz.7835233251114737454" />
               </node>
             </node>
-            <node role="operation" roleId="tpee.1197027833540" type=".com.mbeddr.mpsutil.blutil.structure.FilterOperation" id="3114718041086279504">
-              <link role="concept" targetNodeId="clqz.4643433264760980254" resolveInfo="OutEvent" />
+            <node role="operation" roleId="tpee.1197027833540" type="hba4.FilterOperation" typeId="hba4.17217465924316850" id="3114718041086279504">
+              <link role="concept" roleId="hba4.17217465924316851" targetNodeId="clqz.4643433264760980254" resolveInfo="OutEvent" />
             </node>
           </node>
         </node>
@@ -237,8 +238,8 @@
                 <link role="link" roleId="tp25.1138056546658" targetNodeId="clqz.7835233251114737454" />
               </node>
             </node>
-            <node role="operation" roleId="tpee.1197027833540" type=".com.mbeddr.mpsutil.blutil.structure.FilterOperation" id="3114718041086279390">
-              <link role="concept" targetNodeId="clqz.4249345261280334498" resolveInfo="AbstractState" />
+            <node role="operation" roleId="tpee.1197027833540" type="hba4.FilterOperation" typeId="hba4.17217465924316850" id="3114718041086279390">
+              <link role="concept" roleId="hba4.17217465924316851" targetNodeId="clqz.4249345261280334498" resolveInfo="AbstractState" />
             </node>
           </node>
         </node>
@@ -262,8 +263,8 @@
                 <link role="link" roleId="tp25.1138056546658" targetNodeId="clqz.7835233251114737454" />
               </node>
             </node>
-            <node role="operation" roleId="tpee.1197027833540" type=".com.mbeddr.mpsutil.blutil.structure.FilterOperation" id="3114718041086279333">
-              <link role="concept" targetNodeId="clqz.5778488248013533839" resolveInfo="State" />
+            <node role="operation" roleId="tpee.1197027833540" type="hba4.FilterOperation" typeId="hba4.17217465924316850" id="3114718041086279333">
+              <link role="concept" roleId="hba4.17217465924316851" targetNodeId="clqz.5778488248013533839" resolveInfo="State" />
             </node>
           </node>
         </node>
@@ -7485,8 +7486,8 @@
                 <link role="link" roleId="tp25.1138056546658" targetNodeId="clqz.4249345261280348989" />
               </node>
             </node>
-            <node role="operation" roleId="tpee.1197027833540" type=".com.mbeddr.mpsutil.blutil.structure.FilterOperation" id="17217465924525297">
-              <link role="concept" targetNodeId="clqz.5778488248013533883" resolveInfo="Transition" />
+            <node role="operation" roleId="tpee.1197027833540" type="hba4.FilterOperation" typeId="hba4.17217465924316850" id="17217465924525297">
+              <link role="concept" roleId="hba4.17217465924316851" targetNodeId="clqz.5778488248013533883" resolveInfo="Transition" />
             </node>
           </node>
         </node>
@@ -8107,8 +8108,8 @@
                 <link role="link" roleId="tp25.1138056546658" targetNodeId="clqz.4249345261280348989" />
               </node>
             </node>
-            <node role="operation" roleId="tpee.1197027833540" type=".com.mbeddr.mpsutil.blutil.structure.FilterOperation" id="17217465924525325">
-              <link role="concept" targetNodeId="clqz.4249345261280334498" resolveInfo="AbstractState" />
+            <node role="operation" roleId="tpee.1197027833540" type="hba4.FilterOperation" typeId="hba4.17217465924316850" id="17217465924525325">
+              <link role="concept" roleId="hba4.17217465924316851" targetNodeId="clqz.4249345261280334498" resolveInfo="AbstractState" />
             </node>
           </node>
         </node>
