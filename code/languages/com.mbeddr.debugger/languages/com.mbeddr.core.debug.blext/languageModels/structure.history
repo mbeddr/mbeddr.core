@@ -318,5 +318,17 @@
     <move id="talm.5753619016197138388" to="rpmx.4193597469137492621" />
     <move id="talm.5753619016197138387" to="rpmx.4193597469137492620" />
   </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="talm" modelUID="r:98c60105-1d91-4aab-8dfe-5ef258ec8eb6(com.mbeddr.core.debug.blext.structure)" version="38" />
+    </dependencies>
+    <rename id="talm.2355782130528637298" type="CONCEPT" from="BreakOn" to="BreakOnFirstSteppable" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="talm" modelUID="r:98c60105-1d91-4aab-8dfe-5ef258ec8eb6(com.mbeddr.core.debug.blext.structure)" version="39" />
+    </dependencies>
+    <rename id="talm.6193281990723414481" type="REFERENCE" from="stragegyClass" to="stragegy" />
+  </StructureModification>
 </history>
 

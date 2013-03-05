@@ -23,7 +23,6 @@
       <modulePath path="${project}/languages/com.mbeddr.core.buildconfig/buildconfig.mpl" folder="core-extended" />
       <modulePath path="${project}/languages/com.mbeddr.core.cstubs.test/test.mpl" folder="tests.cstub" />
       <modulePath path="${project}/languages/com.mbeddr.core.cstubs/cstubs.mpl" folder="core" />
-      <modulePath path="${project}/languages/com.mbeddr.core.debug.test/test.mpl" folder="tests.debugger" />
       <modulePath path="${project}/languages/com.mbeddr.core.embedded/embedded.mpl" folder="core-extended" />
       <modulePath path="${project}/languages/com.mbeddr.core.expressions/expressions.mpl" folder="core" />
       <modulePath path="${project}/languages/com.mbeddr.core.legacy/legacy.mpl" folder="core" />
