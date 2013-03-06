@@ -10,7 +10,7 @@
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="tp25" modelUID="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" version="16" implicit="yes" />
   <import index="tpee" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="4" implicit="yes" />
-  <import index="rpmx" modelUID="r:64720d49-3cb5-4469-81c5-0c62eda0a2cb(com.mbeddr.core.debug.test.structure)" version="86" implicit="yes" />
+  <import index="rpmx" modelUID="r:64720d49-3cb5-4469-81c5-0c62eda0a2cb(com.mbeddr.core.debug.test.structure)" version="87" implicit="yes" />
   <import index="tpd4" modelUID="r:00000000-0000-4000-0000-011c895902b4(jetbrains.mps.lang.typesystem.structure)" version="3" implicit="yes" />
   <import index="tp2q" modelUID="r:00000000-0000-4000-0000-011c8959032e(jetbrains.mps.baseLanguage.collections.structure)" version="7" implicit="yes" />
   <import index="tp5g" modelUID="r:00000000-0000-4000-0000-011c89590388(jetbrains.mps.lang.test.structure)" version="4" implicit="yes" />
@@ -52,6 +52,10 @@
     <node type="tpd4.NonTypesystemRule" typeId="tpd4.1195214364922" id="1218249513292340861">
       <property name="name" nameId="tpck.1169194664001" value="check_WatchablesValidationList" />
       <property name="virtualPackage" nameId="tpck.1193676396447" value="configuration.validation.element.watches" />
+    </node>
+    <node type="tpd4.NonTypesystemRule" typeId="tpd4.1195214364922" id="1218249513292868004">
+      <property name="name" nameId="tpck.1169194664001" value="check_StackFramesReference" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="configuration.validation.element.stack-frames" />
     </node>
   </roots>
   <root id="7048220250906225332">
@@ -911,6 +915,37 @@
     <node role="applicableNode" roleId="tpd4.1174648101952" type="tpd4.ConceptReference" typeId="tpd4.1174642788531" id="1218249513292340863">
       <property name="name" nameId="tpck.1169194664001" value="wvl" />
       <link role="concept" roleId="tpd4.1174642800329" targetNodeId="rpmx.4550138447367847233" resolveInfo="WatchablesValidationList" />
+    </node>
+  </root>
+  <root id="1218249513292868004">
+    <node role="body" roleId="tpd4.1195213635060" type="tpee.StatementList" typeId="tpee.1068580123136" id="1218249513292868005">
+      <node role="statement" roleId="tpee.1068581517665" type="tpee.IfStatement" typeId="tpee.1068580123159" id="1218249513292868007">
+        <node role="condition" roleId="tpee.1068580123160" type="tpee.DotExpression" typeId="tpee.1197027756228" id="1218249513292868055">
+          <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="1218249513292868029">
+            <node role="operand" roleId="tpee.1197027771414" type="tpd4.ApplicableNodeReference" typeId="tpd4.1174650418652" id="1218249513292868010">
+              <link role="applicableNode" roleId="tpd4.1174650432090" targetNodeId="1218249513292868006" resolveInfo="sfr" />
+            </node>
+            <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="1218249513292868035">
+              <link role="link" roleId="tp25.1138056516764" targetNodeId="rpmx.1218249513292851177" />
+            </node>
+          </node>
+          <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_IsNullOperation" typeId="tp25.1171999116870" id="1218249513292868061" />
+        </node>
+        <node role="ifTrue" roleId="tpee.1068580123161" type="tpee.StatementList" typeId="tpee.1068580123136" id="1218249513292868009">
+          <node role="statement" roleId="tpee.1068581517665" type="tpd4.ReportErrorStatement" typeId="tpd4.1175517767210" id="1218249513292868062">
+            <node role="errorString" roleId="tpd4.1175517851849" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="1218249513292868065">
+              <property name="value" nameId="tpee.1070475926801" value="no stack frames declaration referenced" />
+            </node>
+            <node role="nodeToReport" roleId="tpd4.1227096802790" type="tpd4.ApplicableNodeReference" typeId="tpd4.1174650418652" id="1218249513292868066">
+              <link role="applicableNode" roleId="tpd4.1174650432090" targetNodeId="1218249513292868006" resolveInfo="sfr" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node role="applicableNode" roleId="tpd4.1174648101952" type="tpd4.ConceptReference" typeId="tpd4.1174642788531" id="1218249513292868006">
+      <property name="name" nameId="tpck.1169194664001" value="sfr" />
+      <link role="concept" roleId="tpd4.1174642800329" targetNodeId="rpmx.1218249513292851176" resolveInfo="StackFramesReference" />
     </node>
   </root>
 </model>
