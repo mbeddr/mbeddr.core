@@ -6,7 +6,7 @@
   <component name="Encoding" useUTFGuessing="true" native2AsciiForPropertiesFiles="false" />
   <component name="MPSProject">
     <projectModules>
-      <modulePath path="${project}/devkits/debugger-testing/debugger-testing.devkit" folder="" />
+      <modulePath path="${project}/devkits/debugger-testing/debugger-testing.devkit" />
       <modulePath path="${project}/languages/com.mbeddr.core.debug.test/solutions/pluginSolution/runtime.msd" />
       <modulePath path="${project}/languages/com.mbeddr.core.debug.test/test.mpl" />
       <modulePath path="${project}/languages/com.mbeddr.core.debug.util/util.mpl" />
