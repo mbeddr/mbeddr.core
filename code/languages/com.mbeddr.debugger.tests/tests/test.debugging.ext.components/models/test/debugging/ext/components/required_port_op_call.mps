@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model modelUID="r:3a0137c9-170c-4fb9-97e4-fdd20a324ad3(test.debugging.ext.components.atomic_components)">
+<model modelUID="r:3a0137c9-170c-4fb9-97e4-fdd20a324ad3(test.debugging.ext.components.required_port_op_call)">
   <persistence version="7" />
   <devkit namespace="87468ddd-5b04-4352-a61d-70ff981afab6(debugger-testing)" />
   <devkit namespace="24565007-e59f-42fc-ac10-da3836deec1c(com.mbeddr.components)" />
