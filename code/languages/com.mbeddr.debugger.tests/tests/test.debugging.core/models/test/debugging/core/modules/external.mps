@@ -210,7 +210,7 @@
     <node role="binaryRef" roleId="rpmx.5100083648679329380" type="rpmx.BinaryRef" typeId="rpmx.5100083648679329379" id="105850086900725275">
       <link role="binary" roleId="rpmx.7048220250906128789" targetNodeId="9066372830133147126" resolveInfo="ExternalModulesTest" />
     </node>
-    <node role="contents" roleId="rpmx.105850086901784219" type="rpmx.DebuggerTestcase" typeId="rpmx.105850086902839305" id="7179294824063464530">
+    <node role="contents" roleId="rpmx.5710167937130937944" type="rpmx.DebuggerTestcase" typeId="rpmx.105850086902839305" id="7179294824063464530">
       <property name="abstract" nameId="rpmx.105850086903217241" value="true" />
       <property name="name" nameId="tpck.1169194664001" value="stepOnexternalModuleCall" />
       <node role="returnType" roleId="tpee.1068580123133" type="tpee.VoidType" typeId="tpee.1068581517677" id="7179294824063464531" />
@@ -238,9 +238,18 @@
             </node>
           </node>
         </node>
+        <node role="validations" roleId="rpmx.4360423713604419402" type="rpmx.StackFramesValidationList" typeId="rpmx.4550138447368300128" id="5710167937131955849">
+          <node role="stackFrames" roleId="rpmx.1218249513292774579" type="rpmx.StackFrame" typeId="rpmx.4550138447368290426" id="5710167937131953347">
+            <property name="name" nameId="rpmx.4550138447368290430" value="va" />
+          </node>
+          <node role="stackFrames" roleId="rpmx.1218249513292774579" type="rpmx.StackFrame" typeId="rpmx.4550138447368290426" id="5710167937131953346">
+            <property name="name" nameId="rpmx.4550138447368290430" value="main" />
+          </node>
+        </node>
       </node>
     </node>
-    <node role="contents" roleId="rpmx.105850086901784219" type="rpmx.DebuggerTestcase" typeId="rpmx.105850086902839305" id="8924761790438007271">
+    <node role="contents" roleId="rpmx.5710167937130937944" type="rpmx.EmptyDebuggerContent" typeId="rpmx.105850086901771260" id="5710167937131953342" />
+    <node role="contents" roleId="rpmx.5710167937130937944" type="rpmx.DebuggerTestcase" typeId="rpmx.105850086902839305" id="8924761790438007271">
       <property name="name" nameId="tpck.1169194664001" value="stepIntoExternalModuleCall" />
       <link role="extendedTest" roleId="rpmx.105850086902839309" targetNodeId="7179294824063464530" resolveInfo="stepOnexternalModuleCall" />
       <node role="returnType" roleId="tpee.1068580123133" type="tpee.VoidType" typeId="tpee.1068581517677" id="8924761790438007272" />
@@ -254,7 +263,8 @@
         <node role="suspensionPoint" roleId="rpmx.105850086903250160" type="rpmx.SuperConfigurationElement" typeId="rpmx.105850086903250163" id="7179294824063467478" />
       </node>
     </node>
-    <node role="contents" roleId="rpmx.105850086901784219" type="rpmx.DebuggerTestcase" typeId="rpmx.105850086902839305" id="8924761790438007669">
+    <node role="contents" roleId="rpmx.5710167937130937944" type="rpmx.EmptyDebuggerContent" typeId="rpmx.105850086901771260" id="5710167937131953341" />
+    <node role="contents" roleId="rpmx.5710167937130937944" type="rpmx.DebuggerTestcase" typeId="rpmx.105850086902839305" id="8924761790438007669">
       <property name="name" nameId="tpck.1169194664001" value="stepOverExternalModuleCall" />
       <link role="extendedTest" roleId="rpmx.105850086902839309" targetNodeId="7179294824063464530" resolveInfo="stepOnexternalModuleCall" />
       <node role="returnType" roleId="tpee.1068580123133" type="tpee.VoidType" typeId="tpee.1068581517677" id="8924761790438007670" />
@@ -265,7 +275,8 @@
         </node>
       </node>
     </node>
-    <node role="contents" roleId="rpmx.105850086901784219" type="rpmx.DebuggerTestcase" typeId="rpmx.105850086902839305" id="8924761790438007519">
+    <node role="contents" roleId="rpmx.5710167937130937944" type="rpmx.EmptyDebuggerContent" typeId="rpmx.105850086901771260" id="5710167937131953340" />
+    <node role="contents" roleId="rpmx.5710167937130937944" type="rpmx.DebuggerTestcase" typeId="rpmx.105850086902839305" id="8924761790438007519">
       <property name="name" nameId="tpck.1169194664001" value="suspendOnExternalModuleCall" />
       <node role="returnType" roleId="tpee.1068580123133" type="tpee.VoidType" typeId="tpee.1068581517677" id="8924761790438007520" />
       <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="8924761790438007521" />
