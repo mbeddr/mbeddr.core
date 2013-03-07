@@ -92,7 +92,7 @@ documentation/*/*.toc
 documentation/*/*.synctex.gz
 
 documentation/userguide/*.pdf
-
+documentation/build
 
 # ----------------------------------------------------
 # result files from the NuSMV unit tests
