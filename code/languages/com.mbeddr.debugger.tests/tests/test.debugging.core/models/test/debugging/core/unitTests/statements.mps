@@ -12,6 +12,7 @@
   <language namespace="f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)" />
   <language namespace="2d7fadf5-33f6-4e80-a78f-0f739add2bde(com.mbeddr.core.buildconfig)" />
   <devkit namespace="87468ddd-5b04-4352-a61d-70ff981afab6(debugger-testing)" />
+  <import index="qaxz" modelUID="r:dc0f2c70-414d-4f6a-8df3-0bc856f1fe35(test.debugging.core.unitTests.common)" version="-1" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="tpee" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="4" implicit="yes" />
   <import index="yq40" modelUID="r:152b3fc0-83a1-4bab-a8cd-565eb8483785(com.mbeddr.core.pointers.structure)" version="3" implicit="yes" />
@@ -407,42 +408,6 @@
     </node>
   </root>
   <root id="105850086900748278">
-    <node role="contents" roleId="rpmx.5710167937130937944" type="rpmx.StackFramesDeclaration" typeId="rpmx.1218249513292774460" id="5710167937131387680">
-      <property name="name" nameId="tpck.1169194664001" value="inTestCase1" />
-      <node role="stackFrames" roleId="rpmx.1218249513292774579" type="rpmx.StackFrame" typeId="rpmx.4550138447368290426" id="5710167937131387681">
-        <property name="name" nameId="rpmx.4550138447368290430" value="testCase1" />
-      </node>
-      <node role="stackFrames" roleId="rpmx.1218249513292774579" type="rpmx.StackFrame" typeId="rpmx.4550138447368290426" id="5710167937131387682">
-        <property name="name" nameId="rpmx.4550138447368290430" value="main" />
-      </node>
-    </node>
-    <node role="contents" roleId="rpmx.5710167937130937944" type="rpmx.EmptyDebuggerContent" typeId="rpmx.105850086901771260" id="5710167937131387686" />
-    <node role="contents" roleId="rpmx.5710167937130937944" type="rpmx.StackFramesDeclaration" typeId="rpmx.1218249513292774460" id="5710167937131387683">
-      <property name="name" nameId="tpck.1169194664001" value="inTestHelper" />
-      <node role="stackFrames" roleId="rpmx.1218249513292774579" type="rpmx.StackFrame" typeId="rpmx.4550138447368290426" id="5710167937131387687">
-        <property name="name" nameId="rpmx.4550138447368290430" value="f" />
-      </node>
-      <node role="stackFrames" roleId="rpmx.1218249513292774579" type="rpmx.StackFrame" typeId="rpmx.4550138447368290426" id="5710167937131387684">
-        <property name="name" nameId="rpmx.4550138447368290430" value="testCase1" />
-      </node>
-      <node role="stackFrames" roleId="rpmx.1218249513292774579" type="rpmx.StackFrame" typeId="rpmx.4550138447368290426" id="5710167937131387685">
-        <property name="name" nameId="rpmx.4550138447368290430" value="main" />
-      </node>
-    </node>
-    <node role="contents" roleId="rpmx.5710167937130937944" type="rpmx.EmptyDebuggerContent" typeId="rpmx.105850086901771260" id="5710167937131387694" />
-    <node role="contents" roleId="rpmx.5710167937130937944" type="rpmx.WatchablesDeclaration" typeId="rpmx.1218249513292256529" id="5710167937131387696">
-      <property name="name" nameId="tpck.1169194664001" value="inTest1" />
-      <node role="watchables" roleId="rpmx.1218249513292256533" type="rpmx.WatchableNameExpression" typeId="rpmx.6894131567067751702" id="5710167937131387701">
-        <property name="name" nameId="tpck.1169194664001" value="a" />
-      </node>
-    </node>
-    <node role="contents" roleId="rpmx.5710167937130937944" type="rpmx.EmptyDebuggerContent" typeId="rpmx.105850086901771260" id="5710167937131387697" />
-    <node role="contents" roleId="rpmx.5710167937130937944" type="rpmx.WatchablesDeclaration" typeId="rpmx.1218249513292256529" id="5710167937131387699">
-      <property name="name" nameId="tpck.1169194664001" value="inTestHelper" />
-      <node role="watchables" roleId="rpmx.1218249513292256533" type="rpmx.WatchableNameExpression" typeId="rpmx.6894131567067751702" id="5710167937131387700">
-        <property name="name" nameId="tpck.1169194664001" value="a" />
-      </node>
-    </node>
     <node role="contents" roleId="rpmx.5710167937130937944" type="rpmx.EmptyDebuggerContent" typeId="rpmx.105850086901771260" id="5710167937131387679" />
     <node role="binaryRef" roleId="rpmx.5100083648679329380" type="rpmx.BinaryRef" typeId="rpmx.5100083648679329379" id="105850086900748279">
       <link role="binary" roleId="rpmx.7048220250906128789" targetNodeId="2812390151934280451" resolveInfo="TestStatementsTest" />
@@ -468,11 +433,11 @@
           </node>
         </node>
         <node role="validations" roleId="rpmx.4360423713604419402" type="rpmx.StackFramesReference" typeId="rpmx.1218249513292851176" id="5710167937131387693">
-          <link role="declaration" roleId="rpmx.1218249513292851177" targetNodeId="5710167937131387680" resolveInfo="inTestCase1" />
+          <link role="declaration" roleId="rpmx.1218249513292851177" targetNodeId="qaxz.5710167937131387680" resolveInfo="inTestCase1" />
         </node>
         <node role="validations" roleId="rpmx.4360423713604419402" type="rpmx.WatchablesValidationList" typeId="rpmx.4550138447367847233" id="5710167937131387703">
           <node role="extends" roleId="rpmx.1218249513292277448" type="rpmx.WatchableDeclarationReference" typeId="rpmx.1218249513292277439" id="5710167937131387704">
-            <link role="declaration" roleId="rpmx.1218249513292301610" targetNodeId="5710167937131387696" resolveInfo="inTest1" />
+            <link role="declaration" roleId="rpmx.1218249513292301610" targetNodeId="qaxz.5710167937131387696" resolveInfo="inTest1" />
           </node>
         </node>
       </node>
@@ -494,7 +459,7 @@
       <node role="validation" roleId="rpmx.4360423713604451010" type="rpmx.ValidationConfiguration" typeId="rpmx.4360423713604419372" id="8924761790438007188">
         <node role="validations" roleId="rpmx.4360423713604419402" type="rpmx.WatchablesValidationList" typeId="rpmx.4550138447367847233" id="5710167937131387705">
           <node role="extends" roleId="rpmx.1218249513292277448" type="rpmx.WatchableDeclarationReference" typeId="rpmx.1218249513292277439" id="5710167937131387706">
-            <link role="declaration" roleId="rpmx.1218249513292301610" targetNodeId="5710167937131387696" resolveInfo="inTest1" />
+            <link role="declaration" roleId="rpmx.1218249513292301610" targetNodeId="qaxz.5710167937131387696" resolveInfo="inTest1" />
           </node>
         </node>
         <node role="validations" roleId="rpmx.4360423713604419402" type="rpmx.ValidateDebuggerSuspended" typeId="rpmx.7048220250906049590" id="8924761790438007189">
@@ -503,7 +468,7 @@
           </node>
         </node>
         <node role="validations" roleId="rpmx.4360423713604419402" type="rpmx.StackFramesReference" typeId="rpmx.1218249513292851176" id="5710167937131387691">
-          <link role="declaration" roleId="rpmx.1218249513292851177" targetNodeId="5710167937131387680" resolveInfo="inTestCase1" />
+          <link role="declaration" roleId="rpmx.1218249513292851177" targetNodeId="qaxz.5710167937131387680" resolveInfo="inTestCase1" />
         </node>
       </node>
     </node>
@@ -524,7 +489,7 @@
       <node role="validation" roleId="rpmx.4360423713604451010" type="rpmx.ValidationConfiguration" typeId="rpmx.4360423713604419372" id="8924761790438007584">
         <node role="validations" roleId="rpmx.4360423713604419402" type="rpmx.WatchablesValidationList" typeId="rpmx.4550138447367847233" id="5710167937131387707">
           <node role="extends" roleId="rpmx.1218249513292277448" type="rpmx.WatchableDeclarationReference" typeId="rpmx.1218249513292277439" id="5710167937131387709">
-            <link role="declaration" roleId="rpmx.1218249513292301610" targetNodeId="5710167937131387699" resolveInfo="inTestHelper" />
+            <link role="declaration" roleId="rpmx.1218249513292301610" targetNodeId="qaxz.5710167937131387699" resolveInfo="inTestHelper" />
           </node>
         </node>
         <node role="validations" roleId="rpmx.4360423713604419402" type="rpmx.ValidateDebuggerSuspended" typeId="rpmx.7048220250906049590" id="8924761790438007585">
@@ -533,9 +498,12 @@
           </node>
         </node>
         <node role="validations" roleId="rpmx.4360423713604419402" type="rpmx.StackFramesReference" typeId="rpmx.1218249513292851176" id="5710167937131387689">
-          <link role="declaration" roleId="rpmx.1218249513292851177" targetNodeId="5710167937131387683" resolveInfo="inTestHelper" />
+          <link role="declaration" roleId="rpmx.1218249513292851177" targetNodeId="qaxz.5710167937131387683" resolveInfo="inTestHelper" />
         </node>
       </node>
+    </node>
+    <node role="imports" roleId="rpmx.5710167937130937945" type="rpmx.DebuggerTestReference" typeId="rpmx.8924761790438948080" id="5710167937131394008">
+      <link role="test" roleId="rpmx.8924761790438948081" targetNodeId="qaxz.5710167937131394006" resolveInfo="UnitTestingLib" />
     </node>
   </root>
 </model>
