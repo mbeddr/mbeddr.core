@@ -12,6 +12,7 @@
       <modulePath path="${project}/languages/com.mbeddr.core.debug.util/util.mpl" />
       <modulePath path="${project}/tests/test.debugger.runtime/runtime.msd" />
       <modulePath path="${project}/tests/test.debugging.core/core.msd" />
+      <modulePath path="${project}/tests/test.debugging.cross/test.debugging.cross.msd" folder="" />
       <modulePath path="${project}/tests/test.debugging.ext.components/test.debugging.ext.components.msd" />
     </projectModules>
     <genConfs />
