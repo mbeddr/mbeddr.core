@@ -10,6 +10,7 @@
       <modulePath path="${project}/solutions/com.mbeddr.analyses.dev.build/build.msd" />
       <modulePath path="${project}/solutions/com.mbeddr.cc.dev.build/build.msd" />
       <modulePath path="${project}/solutions/com.mbeddr.core.dev.build/build.msd" />
+      <modulePath path="${project}/solutions/com.mbeddr.debugger-test.build.dev.build/com.mbeddr.debugger-test.build.dev.build.msd" />
       <modulePath path="${project}/solutions/com.mbeddr.debugger.dev.build/debugger.msd" folder="" />
       <modulePath path="${project}/solutions/com.mbeddr.ext.build/build.msd" />
       <modulePath path="${project}/solutions/com.mbeddr.mpsutil.dev.build/build.msd" />
