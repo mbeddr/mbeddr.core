@@ -503,7 +503,7 @@
     <node role="binaryRef" roleId="rpmx.5100083648679329380" type="rpmx.BinaryRef" typeId="rpmx.5100083648679329379" id="105850086900707201">
       <link role="binary" roleId="rpmx.7048220250906128789" targetNodeId="5728674636025005164" resolveInfo="FunctionTypesTest" />
     </node>
-    <node role="contents" roleId="rpmx.105850086901784219" type="rpmx.DebuggerTestcase" typeId="rpmx.105850086902839305" id="8924761790438006511">
+    <node role="contents" roleId="rpmx.5710167937130937944" type="rpmx.DebuggerTestcase" typeId="rpmx.105850086902839305" id="8924761790438006511">
       <property name="name" nameId="tpck.1169194664001" value="stepIntoFunctionTypeDef" />
       <property name="abstract" nameId="rpmx.105850086903217241" value="true" />
       <node role="returnType" roleId="tpee.1068580123133" type="tpee.VoidType" typeId="tpee.1068581517677" id="8924761790438006512" />
@@ -532,7 +532,8 @@
         </node>
       </node>
     </node>
-    <node role="contents" roleId="rpmx.105850086901784219" type="rpmx.DebuggerTestcase" typeId="rpmx.105850086902839305" id="8924761790438007475">
+    <node role="contents" roleId="rpmx.5710167937130937944" type="rpmx.EmptyDebuggerContent" typeId="rpmx.105850086901771260" id="5710167937131860536" />
+    <node role="contents" roleId="rpmx.5710167937130937944" type="rpmx.DebuggerTestcase" typeId="rpmx.105850086902839305" id="8924761790438007475">
       <property name="name" nameId="tpck.1169194664001" value="stepIntoFunctionWithVariableParameters" />
       <property name="abstract" nameId="rpmx.105850086903217241" value="true" />
       <node role="returnType" roleId="tpee.1068580123133" type="tpee.VoidType" typeId="tpee.1068581517677" id="8924761790438007476" />
@@ -553,9 +554,32 @@
             <link role="marker" roleId="rpmx.4193597469137492645" targetNodeId="211881811397568252" resolveInfo="argumentListInit" />
           </node>
         </node>
+        <node role="validations" roleId="rpmx.4360423713604419402" type="rpmx.StackFramesValidationList" typeId="rpmx.4550138447368300128" id="5710167937131860550">
+          <node role="stackFrames" roleId="rpmx.1218249513292774579" type="rpmx.StackFrame" typeId="rpmx.4550138447368290426" id="5710167937131860552">
+            <property name="name" nameId="rpmx.4550138447368290430" value="sum" />
+          </node>
+          <node role="stackFrames" roleId="rpmx.1218249513292774579" type="rpmx.StackFrame" typeId="rpmx.4550138447368290426" id="5710167937131860553">
+            <property name="name" nameId="rpmx.4550138447368290430" value="testFunctionWithEllipses" />
+          </node>
+          <node role="stackFrames" roleId="rpmx.1218249513292774579" type="rpmx.StackFrame" typeId="rpmx.4550138447368290426" id="5710167937131860551">
+            <property name="name" nameId="rpmx.4550138447368290430" value="main" />
+          </node>
+        </node>
+        <node role="validations" roleId="rpmx.4360423713604419402" type="rpmx.WatchablesValidationList" typeId="rpmx.4550138447367847233" id="5710167937131860545">
+          <node role="watchables" roleId="rpmx.4550138447367880227" type="rpmx.WatchableNameExpression" typeId="rpmx.6894131567067751702" id="5710167937131860546">
+            <property name="name" nameId="tpck.1169194664001" value="i" />
+          </node>
+          <node role="watchables" roleId="rpmx.4550138447367880227" type="rpmx.WatchableNameExpression" typeId="rpmx.6894131567067751702" id="5710167937131860547">
+            <property name="name" nameId="tpck.1169194664001" value="valist" />
+          </node>
+          <node role="watchables" roleId="rpmx.4550138447367880227" type="rpmx.WatchableNameExpression" typeId="rpmx.6894131567067751702" id="5710167937131860548">
+            <property name="name" nameId="tpck.1169194664001" value="sum" />
+          </node>
+        </node>
       </node>
     </node>
-    <node role="contents" roleId="rpmx.105850086901784219" type="rpmx.DebuggerTestcase" typeId="rpmx.105850086902839305" id="2033545087487741808">
+    <node role="contents" roleId="rpmx.5710167937130937944" type="rpmx.EmptyDebuggerContent" typeId="rpmx.105850086901771260" id="5710167937131860537" />
+    <node role="contents" roleId="rpmx.5710167937130937944" type="rpmx.DebuggerTestcase" typeId="rpmx.105850086902839305" id="2033545087487741808">
       <property name="name" nameId="tpck.1169194664001" value="dummy" />
       <node role="returnType" roleId="tpee.1068580123133" type="tpee.VoidType" typeId="tpee.1068581517677" id="2033545087487741809" />
       <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="2033545087487741810" />
@@ -568,6 +592,15 @@
         <node role="validations" roleId="rpmx.4360423713604419402" type="rpmx.ValidateDebuggerSuspended" typeId="rpmx.7048220250906049590" id="2033545087487741814">
           <node role="marker" roleId="rpmx.7048220250906049591" type="rpmx.MarkerRef" typeId="rpmx.4193597469137492644" id="2033545087487741815">
             <link role="marker" roleId="rpmx.4193597469137492645" targetNodeId="211881811397323972" resolveInfo="callToFunctionWithVariableParameters" />
+          </node>
+        </node>
+        <node role="validations" roleId="rpmx.4360423713604419402" type="rpmx.WatchablesValidationList" typeId="rpmx.4550138447367847233" id="5710167937131860539" />
+        <node role="validations" roleId="rpmx.4360423713604419402" type="rpmx.StackFramesValidationList" typeId="rpmx.4550138447368300128" id="5710167937131860541">
+          <node role="stackFrames" roleId="rpmx.1218249513292774579" type="rpmx.StackFrame" typeId="rpmx.4550138447368290426" id="5710167937131860543">
+            <property name="name" nameId="rpmx.4550138447368290430" value="testFunctionWithEllipses" />
+          </node>
+          <node role="stackFrames" roleId="rpmx.1218249513292774579" type="rpmx.StackFrame" typeId="rpmx.4550138447368290426" id="5710167937131860542">
+            <property name="name" nameId="rpmx.4550138447368290430" value="main" />
           </node>
         </node>
       </node>
