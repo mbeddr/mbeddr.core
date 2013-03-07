@@ -100,6 +100,10 @@
     <node type="1i04.ConceptBehavior" typeId="1i04.1225194240794" id="5710167937130937928">
       <link role="concept" roleId="1i04.1225194240799" targetNodeId="rpmx.5710167937130873101" resolveInfo="DebuggerTestLibrary" />
     </node>
+    <node type="1i04.ConceptBehavior" typeId="1i04.1225194240794" id="5710167937131356733">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="declaration" />
+      <link role="concept" roleId="1i04.1225194240799" targetNodeId="rpmx.1218249513292256529" resolveInfo="WatchablesDeclaration" />
+    </node>
   </roots>
   <root id="7048220250905867898">
     <node role="method" roleId="1i04.1225194240805" type="1i04.ConceptMethodDeclaration" typeId="1i04.1225194472830" id="105850086901189764">
@@ -2222,6 +2226,90 @@
         </node>
       </node>
       <node role="returnType" roleId="tpee.1068580123133" type="tpee.BooleanType" typeId="tpee.1070534644030" id="5710167937130937934" />
+    </node>
+  </root>
+  <root id="5710167937131356733">
+    <node role="method" roleId="1i04.1225194240805" type="1i04.ConceptMethodDeclaration" typeId="1i04.1225194472830" id="5710167937131356736">
+      <property name="name" nameId="tpck.1169194664001" value="getWatchablesWithInherited" />
+      <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="5710167937131356737" />
+      <node role="returnType" roleId="tpee.1068580123133" type="tp25.SNodeListType" typeId="tp25.1145383075378" id="5710167937131356740">
+        <link role="elementConcept" roleId="tp25.1145383142433" targetNodeId="rpmx.6894131567067751700" resolveInfo="WatchableExpression" />
+      </node>
+      <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="5710167937131356739">
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.LocalVariableDeclarationStatement" typeId="tpee.1068581242864" id="5710167937131356741">
+          <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="5710167937131356742">
+            <property name="name" nameId="tpck.1169194664001" value="allWatchablesWithInherited" />
+            <node role="type" roleId="tpee.5680397130376446158" type="tp25.SNodeListType" typeId="tp25.1145383075378" id="5710167937131356743">
+              <link role="elementConcept" roleId="tp25.1145383142433" targetNodeId="rpmx.6894131567067751700" resolveInfo="WatchableExpression" />
+            </node>
+            <node role="initializer" roleId="tpee.1068431790190" type="tpee.GenericNewExpression" typeId="tpee.1145552977093" id="5710167937131356745">
+              <node role="creator" roleId="tpee.1145553007750" type="tp25.SNodeListCreator" typeId="tp25.1145567426890" id="5710167937131356747">
+                <node role="createdType" roleId="tp25.1145567471833" type="tp25.SNodeListType" typeId="tp25.1145383075378" id="5710167937131356748">
+                  <link role="elementConcept" roleId="tp25.1145383142433" targetNodeId="rpmx.6894131567067751700" resolveInfo="WatchableExpression" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="5710167937131356756">
+          <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="5710167937131356778">
+            <node role="operand" roleId="tpee.1197027771414" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="5710167937131356757">
+              <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="5710167937131356742" resolveInfo="allWatchablesWithInherited" />
+            </node>
+            <node role="operation" roleId="tpee.1197027833540" type="tp2q.AddAllElementsOperation" typeId="tp2q.1160666733551" id="5710167937131356784">
+              <node role="argument" roleId="tp2q.1160666822012" type="tpee.DotExpression" typeId="tpee.1197027756228" id="5710167937131356807">
+                <node role="operand" roleId="tpee.1197027771414" type="1i04.ThisNodeExpression" typeId="1i04.1225194691553" id="5710167937131356786" />
+                <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkListAccess" typeId="tp25.1138056282393" id="5710167937131356812">
+                  <link role="link" roleId="tp25.1138056546658" targetNodeId="rpmx.1218249513292256533" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node role="statement" roleId="tpee.1068581517665" type="tp2q.ForEachStatement" typeId="tp2q.1153943597977" id="5710167937131356813">
+          <node role="variable" roleId="tp2q.1153944400369" type="tp2q.ForEachVariable" typeId="tp2q.1153944193378" id="5710167937131356814">
+            <property name="name" nameId="tpck.1169194664001" value="extendedWatchablesDeclaration" />
+          </node>
+          <node role="inputSequence" roleId="tp2q.1153944424730" type="tpee.DotExpression" typeId="tpee.1197027756228" id="5710167937131356848">
+            <node role="operand" roleId="tpee.1197027771414" type="1i04.ThisNodeExpression" typeId="1i04.1225194691553" id="5710167937131356817" />
+            <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkListAccess" typeId="tp25.1138056282393" id="5710167937131356854">
+              <link role="link" roleId="tp25.1138056546658" targetNodeId="rpmx.5710167937131356722" />
+            </node>
+          </node>
+          <node role="body" roleId="tpee.1154032183016" type="tpee.StatementList" typeId="tpee.1068580123136" id="5710167937131356816">
+            <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="5710167937131356855">
+              <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="5710167937131356877">
+                <node role="operand" roleId="tpee.1197027771414" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="5710167937131356856">
+                  <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="5710167937131356742" resolveInfo="allWatchablesWithInherited" />
+                </node>
+                <node role="operation" roleId="tpee.1197027833540" type="tp2q.AddAllElementsOperation" typeId="tp2q.1160666733551" id="5710167937131356883">
+                  <node role="argument" roleId="tp2q.1160666822012" type="tpee.DotExpression" typeId="tpee.1197027756228" id="5710167937131356936">
+                    <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="5710167937131356906">
+                      <node role="operand" roleId="tpee.1197027771414" type="tp2q.ForEachVariableReference" typeId="tp2q.1153944233411" id="5710167937131356885">
+                        <link role="variable" roleId="tp2q.1153944258490" targetNodeId="5710167937131356814" resolveInfo="extendedWatchablesDeclaration" />
+                      </node>
+                      <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="5710167937131356914">
+                        <link role="link" roleId="tp25.1138056516764" targetNodeId="rpmx.1218249513292301610" />
+                      </node>
+                    </node>
+                    <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_ConceptMethodCall" typeId="tp25.1179409122411" id="5710167937131356942">
+                      <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="5710167937131356736" resolveInfo="getWatchablesWithInherited" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.ReturnStatement" typeId="tpee.1068581242878" id="5710167937131356753">
+          <node role="expression" roleId="tpee.1068581517676" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="5710167937131356755">
+            <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="5710167937131356742" resolveInfo="allWatchablesWithInherited" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node role="constructor" roleId="1i04.1225194240801" type="1i04.ConceptConstructorDeclaration" typeId="1i04.1225194413805" id="5710167937131356734">
+      <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="5710167937131356735" />
     </node>
   </root>
 </model>
