@@ -3,6 +3,7 @@
   <persistence version="7" />
   <devkit namespace="87468ddd-5b04-4352-a61d-70ff981afab6(debugger-testing)" />
   <devkit namespace="24565007-e59f-42fc-ac10-da3836deec1c(com.mbeddr.components)" />
+  <import index="tr6y" modelUID="r:47eb6bd5-b98e-420e-bda6-2069fa596758(test.debugging.cross.util)" version="-1" />
   <import index="p7vm" modelUID="r:28fa862e-f94d-4c39-bdf7-a4bdbc773888(com.mbeddr.ext.components.gen_nomw.structure)" version="0" implicit="yes" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="yq40" modelUID="r:152b3fc0-83a1-4bab-a8cd-565eb8483785(com.mbeddr.core.pointers.structure)" version="3" implicit="yes" />
@@ -722,6 +723,9 @@
     </node>
     <node role="binaryRef" roleId="rpmx.5100083648679329380" type="rpmx.BinaryRef" typeId="rpmx.5100083648679329379" id="1480668935412712475">
       <link role="binary" roleId="rpmx.7048220250906128789" targetNodeId="4075471389393077712" resolveInfo="AtomicComponentsTest" />
+    </node>
+    <node role="imports" roleId="rpmx.8924761790438948088" type="rpmx.DebuggerTestReference" typeId="rpmx.8924761790438948080" id="5710167937130311719">
+      <link role="test" roleId="rpmx.8924761790438948081" targetNodeId="tr6y.5710167937130238636" resolveInfo="Main" />
     </node>
   </root>
   <root id="8165847842702726628" />

@@ -4,6 +4,9 @@
     <modelRoot path="${solution_descriptor}/models" />
   </models>
   <sourcePath />
+  <dependencies>
+    <dependency reexport="false">09415d0e-8820-47a4-a923-f3216224ac46(test.debugging.cross)</dependency>
+  </dependencies>
   <usedDevKits>
     <usedDevKit>24565007-e59f-42fc-ac10-da3836deec1c(com.mbeddr.components)</usedDevKit>
     <usedDevKit>87468ddd-5b04-4352-a61d-70ff981afab6(debugger-testing)</usedDevKit>
