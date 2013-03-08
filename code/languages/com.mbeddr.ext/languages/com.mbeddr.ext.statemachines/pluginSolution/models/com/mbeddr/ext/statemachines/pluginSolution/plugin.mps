@@ -23,6 +23,12 @@
       <property name="modifiers" nameId="tp4k.1207318242773" value="ctrl+alt" />
       <property name="keycode" nameId="tp4k.1207318242774" value="VK_M" />
     </node>
+    <node role="parameters" roleId="4w5v.7518061998923573158" type="4w5v.RefactoringParameter" typeId="4w5v.7518061998923573140" id="5338908363446230052">
+      <link role="param" roleId="4w5v.7518061998923573141" targetNodeId="8ry9.5338908363446230045" resolveInfo="macroName" />
+      <node role="chooser" roleId="4w5v.7518061998923573142" type="4w5v.StringChooser" typeId="4w5v.7518061998923713757" id="5338908363446230054">
+        <property name="title" nameId="4w5v.7518061998923720371" value="Name of new Macro" />
+      </node>
+    </node>
   </root>
 </model>
 

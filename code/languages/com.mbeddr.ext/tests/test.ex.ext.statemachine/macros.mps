@@ -101,20 +101,6 @@
             <link role="macro" roleId="clqz.5338908363445903988" targetNodeId="5338908363445858443" resolveInfo="xGRy" />
           </node>
         </node>
-        <node role="contents" roleId="clqz.4249345261280348989" type="clqz.Transition" typeId="clqz.5778488248013533883" id="5338908363446222542">
-          <link role="targetState" roleId="clqz.5778488248013533913" targetNodeId="5338908363445903982" resolveInfo="S2" />
-          <node role="trigger" roleId="clqz.3670856444174351950" type="clqz.Trigger" typeId="clqz.1786180596061233739" id="5338908363446222543">
-            <link role="event" roleId="clqz.8951398808641876049" targetNodeId="5338908363445900592" resolveInfo="e1" />
-          </node>
-          <node role="guard" roleId="clqz.5778488248013533903" type="mj1l.GreaterExpression" typeId="mj1l.8860443239512147445" id="5338908363446222548">
-            <node role="right" roleId="mj1l.8860443239512128065" type="x27k.GlobalVarRef" typeId="x27k.6610873504380357354" id="5338908363446222551">
-              <link role="var" roleId="x27k.6610873504380357355" targetNodeId="5338908363445858450" resolveInfo="y" />
-            </node>
-            <node role="left" roleId="mj1l.8860443239512128064" type="x27k.GlobalVarRef" typeId="x27k.6610873504380357354" id="5338908363446222545">
-              <link role="var" roleId="x27k.6610873504380357355" targetNodeId="5338908363445858447" resolveInfo="x" />
-            </node>
-          </node>
-        </node>
       </node>
       <node role="contents" roleId="clqz.7835233251114737454" type="clqz.State" typeId="clqz.5778488248013533839" id="5338908363445903982">
         <property name="name" nameId="tpck.1169194664001" value="S2" />
