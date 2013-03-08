@@ -47,6 +47,9 @@
     <node role="configurationItems" roleId="vs0r.4459718605982007338" type="k146.ReportingConfiguration" typeId="k146.4459718605982051949" id="3606837211743273854">
       <node role="strategy" roleId="k146.4459718605982051999" type="k146.PrintfReportingStrategy" typeId="k146.4459718605982051980" id="3606837211743273855" />
     </node>
+    <node role="configurationItems" roleId="vs0r.4459718605982007338" type="clqz.StatemachineConfigItem" typeId="clqz.4709703140582114943" id="6183633367245147492">
+      <property name="triggerAsConst" nameId="clqz.4709703140582114945" value="true" />
+    </node>
   </root>
   <root id="3606837211743269857">
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="3606837211743269858">

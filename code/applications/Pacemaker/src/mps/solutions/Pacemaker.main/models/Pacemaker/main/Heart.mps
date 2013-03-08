@@ -263,6 +263,9 @@
         <property name="generateContracts" nameId="p7vm.4768833643347725006" value="true" />
       </node>
     </node>
+    <node role="configurationItems" roleId="vs0r.4459718605982007338" type="clqz.StatemachineConfigItem" typeId="clqz.4709703140582114943" id="6183633367245147497">
+      <property name="triggerAsConst" nameId="clqz.4709703140582114945" value="true" />
+    </node>
   </root>
   <root id="4600281520963330225">
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="688232101345592273">

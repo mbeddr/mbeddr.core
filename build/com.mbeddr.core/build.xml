@@ -939,6 +939,7 @@
         <fileset file="${artifacts.buildMPS}/languages/xml/jetbrains.mps.xml.jar" />
         <fileset file="${artifacts.buildMPS}/languages/xml/jetbrains.mps.xmlInternal.jar" />
         <fileset file="${artifacts.buildMPS}/languages/xml/jetbrains.mps.xmlSchema.jar" />
+        <fileset file="${build.tmp}/deps/com.mbeddr.mpsutil.build/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil/com.mbeddr.mpsutil.blutil.jar" />
         <fileset file="${artifacts.buildMPS}/languages/baseLanguage/jetbrains.mps.baseLanguage.scopes.jar" />
         <fileset file="${artifacts.buildMPS}/plugins/mps-devkit/languages/languageDesign/jetbrains.mps.lang.dataFlow.pluginSolution.jar" />
         <fileset file="${artifacts.buildMPS}/languages/languageDesign/jetbrains.mps.lang.generator.jar" />
@@ -1748,6 +1749,7 @@
         <fileset dir="${artifacts.buildMPS}/lib" includes="*.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.debugger.build/com.mbeddr.core.debugger.zip/debugger/languages/com.mbeddr.core.debugger/com.mbeddr.core.debug.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.mpsutil.build/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil/com.mbeddr.mpsutil.bldoc.jar" />
+        <fileset file="${build.tmp}/deps/com.mbeddr.mpsutil.build/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil/com.mbeddr.mpsutil.blutil.jar" />
         <fileset file="${artifacts.buildMPS}/languages/baseLanguage/jetbrains.mps.baseLanguage.jar" />
         <fileset file="${artifacts.buildMPS}/languages/baseLanguage/jetbrains.mps.baseLanguage.blTypes.jar" />
         <fileset file="${artifacts.buildMPS}/languages/baseLanguage/jetbrains.mps.baseLanguage.classifiers.jar" />
