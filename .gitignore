@@ -99,6 +99,10 @@ documentation/build
 code/languages/com.mbeddr.ext/result.txt
 code/languages/com.mbeddr.ext/result.xml
 
+# ----------------------------------------------------
+# result files from the cbmc unit tests
+source_gentest.analyses.cbmc.testcode_nightly_nightly.html
+
 # -----------------------------------------------------------
 # tools
 tools/zgrviewer/zgrviewerformps/target/*
