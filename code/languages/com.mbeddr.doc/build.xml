@@ -17,7 +17,6 @@
  <fail unless="mbeddr.github.core.home">mbeddr.github.core.home must be set in your build.properties</fail>
  <fail unless="mps.platform.caches">mps.platform.caches must be set in your build.properties</fail>
  <fail unless="mps.home">mps.home must be set in your build.properties</fail>
- <fail unless="lisson.home">lisson.home must be set in your build.properties</fail>
  
  <taskdef resource="jetbrains/mps/build/ant/antlib.xml"
           classpathref="mps.ant.path"/>
@@ -29,7 +28,6 @@
   
   <property name="utilLanguageDir" value="${mbeddr.github.core.home}/${util.project.dir}/languages"/>  
   <property name="coreLanguageDir" value="${mbeddr.github.core.home}/${mbeddr.core.project.dir}/languages"/>  
-  <property name="lissonLanguageDir" value="${lisson.home}/"/>  
   <property name="debuggerLanguageDir" value="${mbeddr.github.core.home}/${debugger.project.dir}/languages"/>
 
     <jvmargs id="myargs">
@@ -60,7 +58,6 @@
       <library name="util.languages" dir="${utilLanguageDir}"/>
       <library name="core.languages" dir="${coreLanguageDir}"/>
       <library name="debugger.languages" dir="${debuggerLanguageDir}"/>
-      <library name="lisson.languages" dir="${lissonLanguageDir}"/>
       
       <modules dir="${mbeddr.github.core.home}/${mbeddr.doc.project.dir}/languages"/>
     </mps.generate>

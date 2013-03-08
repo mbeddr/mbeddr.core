@@ -39,14 +39,6 @@
   <component name="ProjectLibraryManager">
     <option name="libraries">
       <map>
-        <entry key="lisson.stuff">
-          <value>
-            <Library>
-              <option name="name" value="lisson.stuff" />
-              <option name="path" value="${lisson.home}/" />
-            </Library>
-          </value>
-        </entry>
         <entry key="mbeddr">
           <value>
             <Library>

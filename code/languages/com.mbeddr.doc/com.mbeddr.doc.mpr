@@ -29,14 +29,6 @@
             </Library>
           </value>
         </entry>
-        <entry key="slisson">
-          <value>
-            <Library>
-              <option name="name" value="slisson" />
-              <option name="path" value="${lisson.home}/" />
-            </Library>
-          </value>
-        </entry>
       </map>
     </option>
   </component>
