@@ -413,6 +413,9 @@
         <link role="module" roleId="51wr.7717755763392524108" targetNodeId="6700886800242034956" resolveInfo="ComponentsSRI" />
       </node>
     </node>
+    <node role="configurationItems" roleId="vs0r.4459718605982007338" type="clqz.StatemachineConfigItem" typeId="clqz.4709703140582114943" id="6183633367245147491">
+      <property name="triggerAsConst" nameId="clqz.4709703140582114945" value="true" />
+    </node>
   </root>
   <root id="9141254329931944290">
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="9141254329931945897">

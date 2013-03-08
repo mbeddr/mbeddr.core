@@ -2744,6 +2744,9 @@
         <link role="module" roleId="51wr.7717755763392524108" targetNodeId="5688055005366700759" resolveInfo="Loggers" />
       </node>
     </node>
+    <node role="configurationItems" roleId="vs0r.4459718605982007338" type="clqz.StatemachineConfigItem" typeId="clqz.4709703140582114943" id="6183633367245147490">
+      <property name="triggerAsConst" nameId="clqz.4709703140582114945" value="true" />
+    </node>
   </root>
   <root id="4967856996714701067">
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="8412574337284617394">

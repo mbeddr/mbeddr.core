@@ -693,6 +693,9 @@
         <link role="module" roleId="51wr.7717755763392524108" targetNodeId="2051642899460592673" resolveInfo="SmInterruptTrigger" />
       </node>
     </node>
+    <node role="configurationItems" roleId="vs0r.4459718605982007338" type="clqz.StatemachineConfigItem" typeId="clqz.4709703140582114943" id="6183633367245147493">
+      <property name="triggerAsConst" nameId="clqz.4709703140582114945" value="true" />
+    </node>
   </root>
   <root id="646457496850768726">
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="646457496850768727">
