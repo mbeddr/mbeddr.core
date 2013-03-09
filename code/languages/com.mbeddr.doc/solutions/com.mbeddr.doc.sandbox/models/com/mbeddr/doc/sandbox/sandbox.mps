@@ -117,7 +117,7 @@
                 <property name="text" nameId="2c95.4457500422381556838" value="wichtige Worte" />
               </node>
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4457500422381785234">
-                <property name="escapedValue" nameId="87nw.2557074442922438158" value=" sind \nm\u00F6glich!   " />
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value=" sind \nm\u00F6glich! Hier ist jetzt Text. Und Da kann man jetzt was eingeben. " />
               </node>
             </node>
           </node>
@@ -505,7 +505,7 @@
             <link role="arg" roleId="2c95.4457500422381931845" targetNodeId="4457500422381962834" resolveInfo="thing" />
           </node>
           <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4457500422381962841">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value=" is really great." />
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value=" is really great. " />
           </node>
         </node>
       </node>

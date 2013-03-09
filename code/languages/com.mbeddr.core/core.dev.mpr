@@ -73,7 +73,7 @@
           <value>
             <Library>
               <option name="name" value="lisson.stuff" />
-              <option name="path" value="${lisson.home}/" />
+              <option name="path" value="${mps_home}/bin/${lisson.home}" />
             </Library>
           </value>
         </entry>
