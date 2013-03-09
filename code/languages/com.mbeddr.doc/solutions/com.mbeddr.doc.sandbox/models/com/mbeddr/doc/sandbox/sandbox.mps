@@ -156,6 +156,7 @@
             <node role="words" roleId="87nw.2557074442922392302" type="2c95.ImgRefWord" typeId="2c95.6386504476136420159" id="6386504476136428227">
               <link role="image" roleId="2c95.6386504476136420174" targetNodeId="6386504476136456051" resolveInfo="glider1" />
             </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4023163832127319570" />
           </node>
         </node>
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.SubSection" typeId="2c95.3350625596580064457" id="4457500422381337439">
@@ -209,6 +210,7 @@
                   </node>
                 </node>
               </node>
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4023163832127319572" />
             </node>
           </node>
           <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="4457500422381538343">
@@ -379,6 +381,7 @@
                   </node>
                 </node>
               </node>
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4023163832127319571" />
             </node>
           </node>
         </node>
@@ -403,6 +406,7 @@
             <node role="words" roleId="87nw.2557074442922392302" type="2c95.ImgRefWord" typeId="2c95.6386504476136420159" id="4755612053022611609">
               <link role="image" roleId="2c95.6386504476136420174" targetNodeId="4755612053022516160" resolveInfo="ampel" />
             </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4023163832127319569" />
           </node>
         </node>
         <node role="contents" roleId="2c95.3350625596580064250" type="rh4a.Visualization" typeId="rh4a.4755612053022373494" id="4755612053022516160">
