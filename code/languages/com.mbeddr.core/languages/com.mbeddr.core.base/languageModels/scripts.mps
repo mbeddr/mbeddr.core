@@ -15,16 +15,16 @@
   <roots>
     <node type="tp33.MigrationScript" typeId="tp33.1177457067821" id="4855100605282836682">
       <property name="name" nameId="tpck.1169194664001" value="migrateElementDocumentation" />
-      <property name="title" nameId="tp33.1177457669450" value="MBEDDR: Migrate ElementDocumentation" />
+      <property name="title" nameId="tp33.1177457669450" value="MBEDDR-DOC: Migrate ElementDocumentation" />
     </node>
     <node type="tp33.MigrationScript" typeId="tp33.1177457067821" id="4855100605282893197">
-      <property name="name" nameId="tpck.1169194664001" value="migrateElementDocumentation" />
-      <property name="title" nameId="tp33.1177457669450" value="MBEDDR: Detect Empty ElementDoc" />
+      <property name="name" nameId="tpck.1169194664001" value="detectEmptyDocs" />
+      <property name="title" nameId="tp33.1177457669450" value="MBEDDR-DOC: Remove Empty ElementDoc" />
     </node>
   </roots>
   <root id="4855100605282836682">
     <node role="part" roleId="tp33.1177458178889" type="tp33.MigrationScriptPart_Instance" typeId="tp33.1177457850499" id="4855100605282836683">
-      <property name="description" nameId="tp33.1177457972041" value="MBEDDR: Migrate ElementDocumentation" />
+      <property name="description" nameId="tp33.1177457972041" value="MBEDDR-DOC: Migrate ElementDocumentation" />
       <link role="affectedInstanceConcept" roleId="tp33.1177457957477" targetNodeId="vs0r.3857533489766146428" resolveInfo="ElementDocumentation" />
       <node role="affectedInstanceUpdater" roleId="tp33.1177458005323" type="tp33.MigrationScriptPart_Instance_Updater" typeId="tp33.1177458491964" id="4855100605282836684">
         <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="4855100605282836685">
@@ -145,25 +145,14 @@
   </root>
   <root id="4855100605282893197">
     <node role="part" roleId="tp33.1177458178889" type="tp33.MigrationScriptPart_Instance" typeId="tp33.1177457850499" id="4855100605282893198">
-      <property name="description" nameId="tp33.1177457972041" value="MBEDDR: Migrate ElementDocumentation" />
+      <property name="description" nameId="tp33.1177457972041" value="MBEDDR-DOC: Remove ElementDocumentation" />
       <link role="affectedInstanceConcept" roleId="tp33.1177457957477" targetNodeId="vs0r.3857533489766146428" resolveInfo="ElementDocumentation" />
       <node role="affectedInstanceUpdater" roleId="tp33.1177458005323" type="tp33.MigrationScriptPart_Instance_Updater" typeId="tp33.1177458491964" id="4855100605282893199">
         <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="4855100605282893200">
-          <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="4855100605282893526">
-            <node role="expression" roleId="tpee.1068580123156" type="tpee.AssignmentExpression" typeId="tpee.1068498886294" id="4855100605282893572">
-              <node role="rValue" roleId="tpee.1068498886297" type="tpee.GenericNewExpression" typeId="tpee.1145552977093" id="4855100605282893575">
-                <node role="creator" roleId="tpee.1145553007750" type="tp25.SNodeCreator" typeId="tp25.1180636770613" id="4855100605282893576">
-                  <node role="createdType" roleId="tp25.1180636770616" type="tp25.SNodeType" typeId="tp25.1138055754698" id="4855100605282893577">
-                    <link role="concept" roleId="tp25.1138405853777" targetNodeId="vs0r.8375407818529178006" resolveInfo="TextBlock" />
-                  </node>
-                </node>
-              </node>
-              <node role="lValue" roleId="tpee.1068498886295" type="tpee.DotExpression" typeId="tpee.1197027756228" id="4855100605282893546">
-                <node role="operand" roleId="tpee.1197027771414" type="tp33.MigrationScriptPart_node" typeId="tp33.1177458237937" id="4855100605282893527" />
-                <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="4855100605282893552">
-                  <link role="link" roleId="tp25.1138056516764" targetNodeId="vs0r.4052432714772608243" />
-                </node>
-              </node>
+          <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="4855100605282902761">
+            <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="4855100605282902781">
+              <node role="operand" roleId="tpee.1197027771414" type="tp33.MigrationScriptPart_node" typeId="tp33.1177458237937" id="4855100605282902762" />
+              <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_DeleteOperation" typeId="tp25.1140133623887" id="4855100605282902787" />
             </node>
           </node>
         </node>
