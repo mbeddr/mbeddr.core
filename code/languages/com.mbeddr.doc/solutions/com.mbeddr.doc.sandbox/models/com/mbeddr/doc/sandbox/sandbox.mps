@@ -459,11 +459,6 @@
     <node role="contents" roleId="2c95.3350625596580064250" type="2c95.EmptyDocContent" typeId="2c95.3350625596579911760" id="6416473402306204606">
       <property name="name" nameId="tpck.1169194664001" value="empty_1363009542076_1" />
     </node>
-    <node role="contents" roleId="2c95.3350625596580064250" type="rh4a.CCodeAsImageParagraph" typeId="rh4a.6416473402306197330" id="6416473402306204609">
-      <link role="module" roleId="rh4a.6416473402306172903" targetNodeId="haow.4457500422381538278" resolveInfo="MinimalTest" />
-      <link role="code" roleId="rh4a.6416473402306172904" targetNodeId="haow.4755612053022236787" resolveInfo="Ampel" />
-      <link role="path" roleId="rh4a.6416473402306197356" targetNodeId="6416473402306204610" resolveInfo="temp" />
-    </node>
     <node role="contents" roleId="2c95.3350625596580064250" type="2c95.EmptyDocContent" typeId="2c95.3350625596579911760" id="6416473402306204608">
       <property name="name" nameId="tpck.1169194664001" value="empty_1363009542376_3" />
     </node>
