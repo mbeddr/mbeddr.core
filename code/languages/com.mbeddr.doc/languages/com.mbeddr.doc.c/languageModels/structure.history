@@ -12,5 +12,23 @@
     </dependencies>
     <rename id="rh4a.4457500422381536784" type="CONCEPT" from="CRefWord" to="ContentRefWord" />
   </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="rh4a" modelUID="r:51a64317-678a-4e8f-9df1-1e83f73c9d71(com.mbeddr.doc.c.structure)" version="1" />
+    </dependencies>
+    <move id="rh4a.126932837435556061" to="rh4a.6416473402306172903" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="rh4a" modelUID="r:51a64317-678a-4e8f-9df1-1e83f73c9d71(com.mbeddr.doc.c.structure)" version="2" />
+    </dependencies>
+    <move id="rh4a.6165313375056112026" to="rh4a.6416473402306172904" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="rh4a" modelUID="r:51a64317-678a-4e8f-9df1-1e83f73c9d71(com.mbeddr.doc.c.structure)" version="3" />
+    </dependencies>
+    <move id="rh4a.126932837435232782" to="rh4a.6416473402306189931" />
+  </StructureModification>
 </history>
 

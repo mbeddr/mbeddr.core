@@ -15,7 +15,7 @@
   <import index="9xqh" modelUID="r:7d63afe9-9fc3-4991-890c-1008af05d479(com.mbeddr.doc.expressions.typesystem)" version="-1" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="87nw" modelUID="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" version="5" implicit="yes" />
-  <import index="rh4a" modelUID="r:51a64317-678a-4e8f-9df1-1e83f73c9d71(com.mbeddr.doc.c.structure)" version="1" implicit="yes" />
+  <import index="rh4a" modelUID="r:51a64317-678a-4e8f-9df1-1e83f73c9d71(com.mbeddr.doc.c.structure)" version="4" implicit="yes" />
   <import index="f87k" modelUID="r:e7473124-6323-4ddf-9715-6e1684f751bd(com.mbeddr.doc.expressions.structure)" version="-1" implicit="yes" />
   <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="20" implicit="yes" />
   <import index="g9w8" modelUID="r:506f4964-2b3f-49f3-a581-8c498222bac6(com.mbeddr.doc.gen_latex.structure)" version="-1" implicit="yes" />
@@ -172,8 +172,8 @@
           <node role="contents" roleId="2c95.3350625596580064250" type="rh4a.CCodeParagraph" typeId="rh4a.6165313375056112024" id="4755612053022239309">
             <property name="language" nameId="rh4a.4755612053022237479" value="mbeddr" />
             <property name="text" nameId="rh4a.6363363735479324452" value="statemachine Ampel initial = Red { &#10;  in buttonPressed() &lt;no binding&gt; &#10;  composite state Red initial = Red_initial { &#10;    state Red_initial (Red.Red_initial) { &#10;      on buttonPressed [ ] -&gt; RedYellow &#10;    } state Red_initial &#10;    state RedYellow (Red.RedYellow) { &#10;      on buttonPressed [ ] -&gt; Green &#10;    } state RedYellow &#10;    state Kaputt (Red.Kaputt) { &#10;       &#10;    } state Kaputt &#10;  } state Red &#10;  state Green { &#10;     &#10;  } state Green &#10;}" />
-            <link role="code" roleId="rh4a.6165313375056112026" targetNodeId="haow.4755612053022236787" resolveInfo="Ampel" />
-            <link role="module" roleId="rh4a.126932837435556061" targetNodeId="haow.4457500422381538278" resolveInfo="MinimalTest" />
+            <link role="code" roleId="rh4a.6416473402306172904" targetNodeId="haow.4755612053022236787" resolveInfo="Ampel" />
+            <link role="module" roleId="rh4a.6416473402306172903" targetNodeId="haow.4457500422381538278" resolveInfo="MinimalTest" />
           </node>
           <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="4755612053022299118">
             <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="4755612053022299119">
@@ -185,8 +185,8 @@
           <node role="contents" roleId="2c95.3350625596580064250" type="rh4a.CCodeParagraph" typeId="rh4a.6165313375056112024" id="6165313375056243425">
             <property name="text" nameId="rh4a.6363363735479324452" value="exported int32 main(int32 argc, string[] argv) { \n  return test testCase1; \n} main (function)" />
             <property name="language" nameId="rh4a.4755612053022237479" value="mbeddr" />
-            <link role="code" roleId="rh4a.6165313375056112026" targetNodeId="haow.4457500422381538279" resolveInfo="main" />
-            <link role="module" roleId="rh4a.126932837435556061" targetNodeId="haow.4457500422381538278" resolveInfo="MinimalTest" />
+            <link role="code" roleId="rh4a.6416473402306172904" targetNodeId="haow.4457500422381538279" resolveInfo="main" />
+            <link role="module" roleId="rh4a.6416473402306172903" targetNodeId="haow.4457500422381538278" resolveInfo="MinimalTest" />
           </node>
         </node>
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.SubSection" typeId="2c95.3350625596580064457" id="4457500422381538342">
@@ -456,6 +456,17 @@
         </node>
       </node>
     </node>
+    <node role="contents" roleId="2c95.3350625596580064250" type="2c95.EmptyDocContent" typeId="2c95.3350625596579911760" id="6416473402306204606">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1363009542076_1" />
+    </node>
+    <node role="contents" roleId="2c95.3350625596580064250" type="rh4a.CCodeAsImageParagraph" typeId="rh4a.6416473402306197330" id="6416473402306204609">
+      <link role="module" roleId="rh4a.6416473402306172903" targetNodeId="haow.4457500422381538278" resolveInfo="MinimalTest" />
+      <link role="code" roleId="rh4a.6416473402306172904" targetNodeId="haow.4755612053022236787" resolveInfo="Ampel" />
+      <link role="path" roleId="rh4a.6416473402306197356" targetNodeId="6416473402306204610" resolveInfo="temp" />
+    </node>
+    <node role="contents" roleId="2c95.3350625596580064250" type="2c95.EmptyDocContent" typeId="2c95.3350625596579911760" id="6416473402306204608">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1363009542376_3" />
+    </node>
   </root>
   <root id="3350625596580274911">
     <node role="mappings" roleId="2c95.6386504476136554628" type="2c95.PathMapping" typeId="2c95.6386504476136554612" id="4509696981881722613">
@@ -481,6 +492,10 @@
     <node role="paths" roleId="2c95.6386504476136472817" type="2c95.PathDefinition" typeId="2c95.6386504476136472795" id="6386504476136521406">
       <property name="name" nameId="tpck.1169194664001" value="images" />
       <property name="editTimePath" nameId="2c95.6386504476136472797" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.doc/solutions/com.mbeddr.doc.sandbox/images/" />
+    </node>
+    <node role="paths" roleId="2c95.6386504476136472817" type="2c95.PathDefinition" typeId="2c95.6386504476136472795" id="6416473402306204610">
+      <property name="name" nameId="tpck.1169194664001" value="temp" />
+      <property name="editTimePath" nameId="2c95.6386504476136472797" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.doc/solutions/com.mbeddr.doc.sandbox/temp/" />
     </node>
     <node role="paths" roleId="2c95.6386504476136472817" type="2c95.PathDefinition" typeId="2c95.6386504476136472795" id="4755612053022398739">
       <property name="name" nameId="tpck.1169194664001" value="visualizations" />
