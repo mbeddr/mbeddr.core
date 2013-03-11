@@ -81,6 +81,9 @@
         </node>
       </node>
     </node>
+    <node role="macros" roleId="3ior.5617550519002745378" type="3ior.BuildFolderMacro" typeId="3ior.7389400916848136194" id="8607331426311827902">
+      <property name="name" nameId="tpck.1169194664001" value="multiline.artifacts" />
+    </node>
     <node role="macros" roleId="3ior.5617550519002745378" type="3ior.BuildFolderMacro" typeId="3ior.7389400916848136194" id="3860690561157493570">
       <property name="name" nameId="tpck.1169194664001" value="richtext.artifacts" />
     </node>
@@ -113,7 +116,7 @@
     <node role="dependencies" roleId="3ior.5617550519002745381" type="3ior.BuildProjectDependency" typeId="3ior.4993211115183325728" id="5334272373773682289">
       <link role="script" roleId="3ior.5617550519002745380" targetNodeId="2ikx.5063083321524165975" resolveInfo="mps-multiline" />
       <node role="artifacts" roleId="3ior.4129895186893471026" type="3ior.BuildSourceMacroRelativePath" typeId="3ior.7389400916848153117" id="5334272373773682291">
-        <link role="macro" roleId="3ior.7389400916848153130" targetNodeId="3860690561157493570" resolveInfo="richtext.artifacts" />
+        <link role="macro" roleId="3ior.7389400916848153130" targetNodeId="8607331426311827902" resolveInfo="multiline.artifacts" />
       </node>
     </node>
     <node role="layout" roleId="3ior.5617550519002745372" type="3ior.BuildLayout" typeId="3ior.5617550519002745364" id="6970948587879843297">
@@ -590,7 +593,7 @@
     <node role="dependencies" roleId="3ior.5617550519002745381" type="3ior.BuildProjectDependency" typeId="3ior.4993211115183325728" id="3860690561157512764">
       <link role="script" roleId="3ior.5617550519002745380" targetNodeId="2ikx.5063083321524165975" resolveInfo="mps-multiline" />
       <node role="artifacts" roleId="3ior.4129895186893471026" type="3ior.BuildSourceMacroRelativePath" typeId="3ior.7389400916848153117" id="3860690561157512765">
-        <link role="macro" roleId="3ior.7389400916848153130" targetNodeId="3860690561157512759" resolveInfo="richtext.artifacts" />
+        <link role="macro" roleId="3ior.7389400916848153130" targetNodeId="8607331426312055936" resolveInfo="multiline.artifacts" />
       </node>
     </node>
     <node role="macros" roleId="3ior.5617550519002745378" type="3ior.BuildFolderMacro" typeId="3ior.7389400916848136194" id="6970948587879845908">
@@ -641,6 +644,9 @@
           </node>
         </node>
       </node>
+    </node>
+    <node role="macros" roleId="3ior.5617550519002745378" type="3ior.BuildFolderMacro" typeId="3ior.7389400916848136194" id="8607331426312055936">
+      <property name="name" nameId="tpck.1169194664001" value="multiline.artifacts" />
     </node>
     <node role="macros" roleId="3ior.5617550519002745378" type="3ior.BuildFolderMacro" typeId="3ior.7389400916848136194" id="3860690561157512759">
       <property name="name" nameId="tpck.1169194664001" value="richtext.artifacts" />
@@ -838,7 +844,7 @@
     <node role="dependencies" roleId="3ior.5617550519002745381" type="3ior.BuildProjectDependency" typeId="3ior.4993211115183325728" id="3860690561157515358">
       <link role="script" roleId="3ior.5617550519002745380" targetNodeId="2ikx.5063083321524165975" resolveInfo="mps-multiline" />
       <node role="artifacts" roleId="3ior.4129895186893471026" type="3ior.BuildSourceMacroRelativePath" typeId="3ior.7389400916848153117" id="3860690561157515359">
-        <link role="macro" roleId="3ior.7389400916848153130" targetNodeId="3860690561157515354" resolveInfo="richtext.artifacts" />
+        <link role="macro" roleId="3ior.7389400916848153130" targetNodeId="8607331426312055937" resolveInfo="multiline.artifacts" />
       </node>
     </node>
     <node role="macros" roleId="3ior.5617550519002745378" type="3ior.BuildFolderMacro" typeId="3ior.7389400916848136194" id="6970948587879845925">
@@ -904,6 +910,9 @@
           </node>
         </node>
       </node>
+    </node>
+    <node role="macros" roleId="3ior.5617550519002745378" type="3ior.BuildFolderMacro" typeId="3ior.7389400916848136194" id="8607331426312055937">
+      <property name="name" nameId="tpck.1169194664001" value="multiline.artifacts" />
     </node>
     <node role="macros" roleId="3ior.5617550519002745378" type="3ior.BuildFolderMacro" typeId="3ior.7389400916848136194" id="3860690561157515354">
       <property name="name" nameId="tpck.1169194664001" value="richtext.artifacts" />

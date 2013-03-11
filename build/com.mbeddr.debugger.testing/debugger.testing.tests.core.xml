@@ -5,6 +5,7 @@
   <property name="build.layout" location="${build.dir}/artifacts/com.mbeddr.debugger.testing.tests.core.build" />
   <property name="mps_home" location="${basedir}/../../../../../../../../Applications/MPS25.app" />
   <property name="mbeddr.github.core.home" location="${basedir}/../../" />
+  <property name="multiline.artifacts" location="" />
   <property name="richtext.artifacts" location="" />
   <property name="artifacts.buildMPS" location="${mps_home}" />
   <property name="artifacts.com.mbeddr.spawner.build" location="../com.mbeddr.spawner/build/artifacts/com.mbeddr.spawner.build" />
@@ -14,7 +15,7 @@
   <property name="artifacts.com.mbeddr.debugger.testing.build" location="${build.dir}/artifacts/com.mbeddr.debugger.testing.build" />
   <property name="artifacts.buildDeprecatedBuildlanguage" location="${mps_home}/plugins/mps-obsolete" />
   <property name="artifacts.mps-richtext" location="${richtext.artifacts}" />
-  <property name="artifacts.mps-multiline" location="${richtext.artifacts}" />
+  <property name="artifacts.mps-multiline" location="${multiline.artifacts}" />
   <property file="${artifacts.buildMPS}/build.properties" prefix="import.buildMPS" />
   <property file="${artifacts.com.mbeddr.core.build}/build.properties" prefix="import.com.mbeddr.core.build" />
   <property name="buildMPS.build.number" value="${import.buildMPS.buildMPS.build.number}" />
