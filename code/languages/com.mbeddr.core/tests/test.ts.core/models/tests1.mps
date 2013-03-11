@@ -22,7 +22,7 @@
   <import index="yz9a" modelUID="r:734c02dd-cc16-4184-99eb-5fd9f43aa37e(com.mbeddr.core.unittest.structure)" version="0" implicit="yes" />
   <import index="tp2q" modelUID="r:00000000-0000-4000-0000-011c8959032e(jetbrains.mps.baseLanguage.collections.structure)" version="7" implicit="yes" />
   <import index="51wr" modelUID="r:b31f1c3c-99aa-4f1e-a329-cba27efb1a6b(com.mbeddr.core.buildconfig.structure)" version="1" implicit="yes" />
-  <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="6" implicit="yes" />
+  <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="7" implicit="yes" />
   <import index="k146" modelUID="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" version="3" implicit="yes" />
   <import index="tpd4" modelUID="r:00000000-0000-4000-0000-011c895902b4(jetbrains.mps.lang.typesystem.structure)" version="3" implicit="yes" />
   <import index="e2lb" modelUID="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" version="-1" implicit="yes" />
@@ -1789,11 +1789,6 @@
                   <property name="value" nameId="mj1l.8860443239512128104" value="2" />
                 </node>
               </node>
-              <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="vs0r.ElementDocumentation" typeId="vs0r.3857533489766146428" id="154287305787832193">
-                <node role="text" roleId="vs0r.4052432714772608243" type="87nw.Text" typeId="87nw.2557074442922380897" id="8375407818528883788">
-                  <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8375407818528883790" />
-                </node>
-              </node>
             </node>
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="36486875645774095">
               <property name="name" nameId="tpck.1169194664001" value="ia" />
@@ -2010,11 +2005,14 @@
           </node>
           <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="5708867820622277813" />
           <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="vs0r.ElementDocumentation" typeId="vs0r.3857533489766146428" id="154287305787827071">
-            <node role="parts" roleId="vs0r.3857533489766836837" type="vs0r.DocPart" typeId="vs0r.3857533489766836826" id="154287305787827072">
-              <property name="text" nameId="vs0r.3857533489766836827" value="TODO(XY) here is some textsldkfjsödjflsdj lsdkjf lsdkfj " />
-            </node>
             <node role="text" roleId="vs0r.4052432714772608243" type="87nw.Text" typeId="87nw.2557074442922380897" id="8375407818528883787">
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8375407818528883789" />
+              <node role="text" type="87nw.Text" typeId="87nw.2557074442922380897" id="3860690561158025390">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3860690561158025391" />
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3860690561158025392">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="TODO(XY) here is some textsldkfjs\u00F6djflsdj lsdkjf lsdkfj " />
+                </node>
+              </node>
             </node>
           </node>
           <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="vs0r.DoNotAnalyzeDataFlowAnnotation" typeId="vs0r.7307224057853283254" id="1682138447509490338" />
@@ -5697,14 +5695,14 @@
                 </node>
               </node>
               <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="vs0r.ElementDocumentation" typeId="vs0r.3857533489766146428" id="8230733038424810068">
-                <node role="parts" roleId="vs0r.3857533489766836837" type="vs0r.DocPart" typeId="vs0r.3857533489766836826" id="8230733038424810074">
-                  <property name="text" nameId="vs0r.3857533489766836827" value="Note that currently we cannot find out that the underlying i8p is constant" />
-                </node>
-                <node role="parts" roleId="vs0r.3857533489766836837" type="vs0r.DocPart" typeId="vs0r.3857533489766836826" id="8230733038424810075">
-                  <property name="text" nameId="vs0r.3857533489766836827" value="because the TS rules does not capture this. So we have made all *x an lvaue." />
-                </node>
                 <node role="text" roleId="vs0r.4052432714772608243" type="87nw.Text" typeId="87nw.2557074442922380897" id="8375407818528883814">
                   <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8375407818528893306" />
+                  <node role="text" type="87nw.Text" typeId="87nw.2557074442922380897" id="3860690561158029281">
+                    <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3860690561158029282" />
+                    <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3860690561158029283">
+                      <property name="escapedValue" nameId="87nw.2557074442922438158" value="Note that currently we cannot find out that the underlying i8p is constant because the TS rules does not capture this. So we have made all *x an lvaue." />
+                    </node>
+                  </node>
                 </node>
               </node>
             </node>
@@ -5779,14 +5777,14 @@
                 </node>
               </node>
               <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="vs0r.ElementDocumentation" typeId="vs0r.3857533489766146428" id="8230733038424821308">
-                <node role="parts" roleId="vs0r.3857533489766836837" type="vs0r.DocPart" typeId="vs0r.3857533489766836826" id="8230733038424821314">
-                  <property name="text" nameId="vs0r.3857533489766836827" value="Note that currently we cannot find out that the underlying i8p is constant" />
-                </node>
-                <node role="parts" roleId="vs0r.3857533489766836837" type="vs0r.DocPart" typeId="vs0r.3857533489766836826" id="8230733038424821315">
-                  <property name="text" nameId="vs0r.3857533489766836827" value="because the TS rules does not capture this. So we have made all *x an lvaue." />
-                </node>
                 <node role="text" roleId="vs0r.4052432714772608243" type="87nw.Text" typeId="87nw.2557074442922380897" id="8375407818528883816">
                   <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8375407818528893307" />
+                  <node role="text" type="87nw.Text" typeId="87nw.2557074442922380897" id="3860690561158026251">
+                    <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3860690561158026252" />
+                    <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3860690561158026253">
+                      <property name="escapedValue" nameId="87nw.2557074442922438158" value="Note that currently we cannot find out that the underlying i8p is constant because the TS rules does not capture this. So we have made all *x an lvaue." />
+                    </node>
+                  </node>
                 </node>
               </node>
             </node>
@@ -5851,14 +5849,14 @@
                 </node>
               </node>
               <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="vs0r.ElementDocumentation" typeId="vs0r.3857533489766146428" id="4633402679181492405">
-                <node role="parts" roleId="vs0r.3857533489766836837" type="vs0r.DocPart" typeId="vs0r.3857533489766836826" id="4633402679181492406">
-                  <property name="text" nameId="vs0r.3857533489766836827" value="Note that currently we cannot find out that the underlying i8p is constant" />
-                </node>
-                <node role="parts" roleId="vs0r.3857533489766836837" type="vs0r.DocPart" typeId="vs0r.3857533489766836826" id="4633402679181492411">
-                  <property name="text" nameId="vs0r.3857533489766836827" value="because the TS rules does not capture this. So we have made all *x an lvaue." />
-                </node>
                 <node role="text" roleId="vs0r.4052432714772608243" type="87nw.Text" typeId="87nw.2557074442922380897" id="8375407818528883815">
                   <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8375407818528899651" />
+                  <node role="text" type="87nw.Text" typeId="87nw.2557074442922380897" id="3860690561158028049">
+                    <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3860690561158028050" />
+                    <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3860690561158028051">
+                      <property name="escapedValue" nameId="87nw.2557074442922438158" value="Note that currently we cannot find out that the underlying i8p is constant because the TS rules does not capture this. So we have made all *x an lvaue." />
+                    </node>
+                  </node>
                 </node>
               </node>
             </node>
