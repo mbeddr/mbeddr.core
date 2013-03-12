@@ -115,6 +115,7 @@
       <fileset dir="${mbeddr.ext}/languages/com.mbeddr.ext.components/source_gen" includes="**/*.java" />
       <zipfileset file="${mbeddr.ext}/languages/com.mbeddr.ext.components/components.mpl" prefix="module" />
       <zipfileset dir="${mbeddr.ext}/languages/com.mbeddr.ext.components/languageModels" includes="**/*.mps, **/*.metadata, **/*.history" prefix="module/languageModels" />
+      <zipfileset dir="${mbeddr.ext}/languages/com.mbeddr.ext.components/generator/template" includes="**/*.mps, **/*.metadata, **/*.history" prefix="module/generator/template" />
     </jar>
     <mkdir dir="${build.tmp}/default/com.mbeddr.ext.components.gen_nomw.jar" />
     <mkdir dir="${build.tmp}/default/com.mbeddr.ext.components.gen_nomw.jar/META-INF" />
@@ -193,16 +194,16 @@
   </target>
   
   <target name="fetchDependencies">
-    <mkdir dir="${build.tmp}/deps/com.mbeddr.debugger.build/com.mbeddr.core.debugger.zip" />
-    <unzip src="${artifacts.com.mbeddr.debugger.build}/com.mbeddr.core.debugger.zip" dest="${build.tmp}/deps/com.mbeddr.debugger.build/com.mbeddr.core.debugger.zip" />
     <mkdir dir="${build.tmp}/deps/mps-multiline/mps-multiline.zip" />
     <unzip src="${artifacts.mps-multiline}/mps-multiline.zip" dest="${build.tmp}/deps/mps-multiline/mps-multiline.zip" />
     <mkdir dir="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip" />
     <unzip src="${artifacts.com.mbeddr.core.build}/com.mbeddr.core.zip" dest="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip" />
-    <mkdir dir="${build.tmp}/deps/mps-richtext/mps-richtext.zip" />
-    <unzip src="${artifacts.mps-richtext}/mps-richtext.zip" dest="${build.tmp}/deps/mps-richtext/mps-richtext.zip" />
+    <mkdir dir="${build.tmp}/deps/com.mbeddr.debugger.build/com.mbeddr.core.debugger.zip" />
+    <unzip src="${artifacts.com.mbeddr.debugger.build}/com.mbeddr.core.debugger.zip" dest="${build.tmp}/deps/com.mbeddr.debugger.build/com.mbeddr.core.debugger.zip" />
     <mkdir dir="${build.tmp}/deps/com.mbeddr.mpsutil.build/com.mbeddr.mpsutil.zip" />
     <unzip src="${artifacts.com.mbeddr.mpsutil.build}/com.mbeddr.mpsutil.zip" dest="${build.tmp}/deps/com.mbeddr.mpsutil.build/com.mbeddr.mpsutil.zip" />
+    <mkdir dir="${build.tmp}/deps/mps-richtext/mps-richtext.zip" />
+    <unzip src="${artifacts.mps-richtext}/mps-richtext.zip" dest="${build.tmp}/deps/mps-richtext/mps-richtext.zip" />
     <mkdir dir="${build.tmp}/deps/com.mbeddr.spawner.build/com.mbeddr.spawner.zip" />
     <unzip src="${artifacts.com.mbeddr.spawner.build}/com.mbeddr.spawner.zip" dest="${build.tmp}/deps/com.mbeddr.spawner.build/com.mbeddr.spawner.zip" />
   </target>
@@ -664,8 +665,8 @@
       <library file="${build.tmp}/deps/com.mbeddr.spawner.build/com.mbeddr.spawner.zip/mbeddr.spawner/languages/Eclipse.Debugger.jar" />
       <library file="${build.tmp}/deps/mps-multiline/mps-multiline.zip/mps-multiline/languages/mps-multiline/de.slisson.mps.editor.multiline.runtime.jar" />
       <library file="${build.tmp}/deps/mps-richtext/mps-richtext.zip/mps-richtext/languages/mps-richtext/de.slisson.mps.richtext.jar" />
-      <chunk>
-        <module file="${mbeddr.ext}/languages/com.mbeddr.ext.components/components.mpl" />
+      <chunk bootstrap="true">
+        <module file="${mbeddr.ext}/languages/com.mbeddr.ext.components/components.mpl" bootstrap="true" />
       </chunk>
       <chunk>
         <module file="${mbeddr.ext}/languages/com.mbeddr.ext.components.gen_nomw/gen_nomw.mpl" />
@@ -679,7 +680,6 @@
   </target>
   
   <target name="cleanSources">
-    <delete dir="${mbeddr.ext}/languages/com.mbeddr.ext.components/source_gen" />
     <delete dir="${mbeddr.ext}/languages/com.mbeddr.ext.components.gen_nomw/source_gen" />
     <delete dir="${mbeddr.ext}/languages/com.mbeddr.ext.components.test/source_gen" />
     <delete dir="${mbeddr.ext}/languages/com.mbeddr.ext.components.mock/source_gen" />

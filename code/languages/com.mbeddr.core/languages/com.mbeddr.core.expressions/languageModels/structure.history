@@ -27,8 +27,8 @@
   <StructureModification>
     <dependencies>
       <model index="wayc" modelUID="r:8ccd67a3-3ed6-472a-aeac-67e00cb6b91d(com.mbeddr.core.expressions.constraints)" version="-1" />
-      <model index="5c5e" modelUID="r:7a2f88d6-4108-4d29-b499-cc4de14ea970(com.mbeddr.core.base.constraints)" version="-1" />
       <model index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="7" />
+      <model index="5c5e" modelUID="r:7a2f88d6-4108-4d29-b499-cc4de14ea970(com.mbeddr.core.base.constraints)" version="-1" />
       <model index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="-1" />
     </dependencies>
     <move id="mj1l.995988627238200005" to="vs0r.7024921229555594291" />
@@ -106,8 +106,8 @@
     <dependencies>
       <model index="sv09" modelUID="r:4c06b4f2-6394-4780-a8ca-e242a7dc5ec9(com.mbeddr.core.expressions.intentions)" version="-1" />
       <model index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="13" />
-      <model index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="3" />
       <model index="7kf" modelUID="r:52560947-b3d4-4502-82de-09a64d1cf1ac(com.mbeddr.core.statements.intentions)" version="1" />
+      <model index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="3" />
     </dependencies>
     <move id="c4fa.7825285260294008966" to="mj1l.2941277002448691204" />
     <move id="c4fa.7825285260294008965" to="mj1l.2941277002448691203" />
@@ -143,16 +143,16 @@
   </StructureModification>
   <StructureModification>
     <dependencies>
-      <model index="ywuz" modelUID="r:c6ce92e7-5a98-4a6f-866a-ec8b9e945dd8(com.mbeddr.core.expressions.behavior)" version="-1" />
       <model index="dylp" modelUID="r:9840bc62-cb31-4ef3-9c9b-2de91c97cc15(com.mbeddr.core.expressions.textGen)" version="-1" />
+      <model index="ywuz" modelUID="r:c6ce92e7-5a98-4a6f-866a-ec8b9e945dd8(com.mbeddr.core.expressions.behavior)" version="-1" />
       <model index="n7pc" modelUID="r:1f4b6c73-0d50-4599-bc8a-9f6948adf243(com.mbeddr.core.expressions.typesystem)" version="-1" />
-      <model index="h99f" modelUID="r:31fa710b-b3ef-4cb0-bfde-11f20f2ce96a(com.mbeddr.core.pointers.textGen)" version="0" />
       <model index="vrqd" modelUID="r:53e59391-150a-45ff-930e-2b4fdafb0904(com.mbeddr.core.expressions.editor)" version="0" />
+      <model index="h99f" modelUID="r:31fa710b-b3ef-4cb0-bfde-11f20f2ce96a(com.mbeddr.core.pointers.textGen)" version="0" />
       <model index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="15" />
-      <model index="yq40" modelUID="r:152b3fc0-83a1-4bab-a8cd-565eb8483785(com.mbeddr.core.pointers.structure)" version="1" />
       <model index="j807" modelUID="r:54210dde-4071-421e-b973-a22bb864eeac(com.mbeddr.core.pointers.typesystem)" version="0" />
-      <model index="1s42" modelUID="r:d482a2e6-b3ef-4c45-883b-cf624a56b653(com.mbeddr.core.pointers.behavior)" version="-1" />
+      <model index="yq40" modelUID="r:152b3fc0-83a1-4bab-a8cd-565eb8483785(com.mbeddr.core.pointers.structure)" version="1" />
       <model index="g6jk" modelUID="r:9a326681-7a8d-435d-989e-2781eecc297d(com.mbeddr.core.pointers.editor)" version="0" />
+      <model index="1s42" modelUID="r:d482a2e6-b3ef-4c45-883b-cf624a56b653(com.mbeddr.core.pointers.behavior)" version="-1" />
     </dependencies>
     <move id="mj1l.2088909457728253269" to="yq40.6113173064526131578" />
     <move id="mj1l.2088909457728253268" to="yq40.6113173064526131575" />
@@ -208,8 +208,8 @@
   </StructureModification>
   <StructureModification>
     <dependencies>
-      <model index="ywuz" modelUID="r:c6ce92e7-5a98-4a6f-866a-ec8b9e945dd8(com.mbeddr.core.expressions.behavior)" version="0" />
       <model index="dylp" modelUID="r:9840bc62-cb31-4ef3-9c9b-2de91c97cc15(com.mbeddr.core.expressions.textGen)" version="0" />
+      <model index="ywuz" modelUID="r:c6ce92e7-5a98-4a6f-866a-ec8b9e945dd8(com.mbeddr.core.expressions.behavior)" version="0" />
       <model index="h99f" modelUID="r:31fa710b-b3ef-4cb0-bfde-11f20f2ce96a(com.mbeddr.core.pointers.textGen)" version="1" />
       <model index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="16" />
       <model index="yq40" modelUID="r:152b3fc0-83a1-4bab-a8cd-565eb8483785(com.mbeddr.core.pointers.structure)" version="2" />
@@ -287,14 +287,14 @@
   </StructureModification>
   <StructureModification>
     <dependencies>
-      <model index="h7k5" modelUID="r:2003a7dc-1d33-4109-abf0-90ad1f9028fd(com.mbeddr.core.util.editor)" version="0" />
       <model index="ui8w" modelUID="r:83f53e7f-110f-49f5-be48-95681cbb1402(com.mbeddr.core.util.constraints)" version="0" />
-      <model index="n7pc" modelUID="r:1f4b6c73-0d50-4599-bc8a-9f6948adf243(com.mbeddr.core.expressions.typesystem)" version="0" />
-      <model index="wayc" modelUID="r:8ccd67a3-3ed6-472a-aeac-67e00cb6b91d(com.mbeddr.core.expressions.constraints)" version="1" />
+      <model index="h7k5" modelUID="r:2003a7dc-1d33-4109-abf0-90ad1f9028fd(com.mbeddr.core.util.editor)" version="0" />
       <model index="k146" modelUID="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" version="2" />
+      <model index="wayc" modelUID="r:8ccd67a3-3ed6-472a-aeac-67e00cb6b91d(com.mbeddr.core.expressions.constraints)" version="1" />
+      <model index="n7pc" modelUID="r:1f4b6c73-0d50-4599-bc8a-9f6948adf243(com.mbeddr.core.expressions.typesystem)" version="0" />
       <model index="vrqd" modelUID="r:53e59391-150a-45ff-930e-2b4fdafb0904(com.mbeddr.core.expressions.editor)" version="1" />
-      <model index="c9jm" modelUID="r:167d778b-bddc-4b3f-a776-89718ce72b97(com.mbeddr.core.util.typesystem)" version="0" />
       <model index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="19" />
+      <model index="c9jm" modelUID="r:167d778b-bddc-4b3f-a776-89718ce72b97(com.mbeddr.core.util.typesystem)" version="0" />
     </dependencies>
     <move id="mj1l.5065104421776346453" to="k146.5065104421776378467" />
     <move id="mj1l.5065104421776346452" to="k146.5065104421776378466" />
@@ -335,6 +335,18 @@
     <move id="n7pc.5065104421776346621" to="c9jm.5065104421776378501" />
     <move id="n7pc.5065104421776346615" to="c9jm.5065104421776378495" />
     <move id="n7pc.5065104421776346496" to="c9jm.5065104421776378486" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="20" />
+    </dependencies>
+    <rename id="mj1l.3196454794517236255" type="CONCEPT" from="IDataFlowAssignmentExpression" to="IDataFlowAssignment" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="21" />
+    </dependencies>
+    <rename id="mj1l.3196454794517236255" type="CONCEPT" from="IDataFlowAssignment" to="IDataflowAssignment" />
   </StructureModification>
 </history>
 
