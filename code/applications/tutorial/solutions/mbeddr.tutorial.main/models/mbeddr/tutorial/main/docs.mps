@@ -99,6 +99,9 @@
             </node>
           </node>
         </node>
+        <node role="sizeSpec" roleId="rh4a.8624890525767931145" type="2c95.InheritSizeSpec" typeId="2c95.8624890525767650652" id="8624890525768078258">
+          <link role="base" roleId="2c95.8624890525767800818" targetNodeId="8624890525768078251" resolveInfo="width100" />
+        </node>
       </node>
     </node>
     <node role="contents" roleId="2c95.3350625596580064250" type="2c95.EmptyDocContent" typeId="2c95.3350625596579911760" id="794010416819640949">
@@ -129,6 +132,18 @@
     <node role="paths" roleId="2c95.6386504476136472817" type="2c95.PathDefinition" typeId="2c95.6386504476136472795" id="4715820023543670791">
       <property name="name" nameId="tpck.1169194664001" value="images" />
       <property name="editTimePath" nameId="2c95.6386504476136472797" value="${mbeddr.github.core.home}/code/applications/tutorial/solutions/mbeddr.tutorial.main/images" />
+    </node>
+    <node role="sizeSpecs" roleId="2c95.8624890525767800998" type="2c95.NamedSizeSpec" typeId="2c95.8624890525767800825" id="8624890525768078251">
+      <property name="name" nameId="tpck.1169194664001" value="width100" />
+      <node role="spec" roleId="2c95.8624890525767800827" type="2c95.PageWidthSizeSpec" typeId="2c95.8624890525767637976" id="8624890525768078253">
+        <property name="percentage" nameId="2c95.8624890525767637977" value="100" />
+      </node>
+    </node>
+    <node role="sizeSpecs" roleId="2c95.8624890525767800998" type="2c95.NamedSizeSpec" typeId="2c95.8624890525767800825" id="8624890525768078255">
+      <property name="name" nameId="tpck.1169194664001" value="width80" />
+      <node role="spec" roleId="2c95.8624890525767800827" type="2c95.PageWidthSizeSpec" typeId="2c95.8624890525767637976" id="8624890525768078256">
+        <property name="percentage" nameId="2c95.8624890525767637977" value="80" />
+      </node>
     </node>
   </root>
   <root id="794010416819640951">
@@ -301,6 +316,9 @@
               </node>
             </node>
           </node>
+          <node role="sizeSpec" roleId="rh4a.8624890525767931145" type="2c95.InheritSizeSpec" typeId="2c95.8624890525767650652" id="8624890525768078254">
+            <link role="base" roleId="2c95.8624890525767800818" targetNodeId="8624890525768078251" resolveInfo="width100" />
+          </node>
         </node>
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="4715820023543670777">
           <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="4715820023543670778">
@@ -349,6 +367,9 @@
                 <property name="escapedValue" nameId="87nw.2557074442922438158" value="A screenshot of the document editing in MPS." />
               </node>
             </node>
+          </node>
+          <node role="sizeSpec" roleId="2c95.8624890525767908695" type="2c95.InheritSizeSpec" typeId="2c95.8624890525767650652" id="8624890525768078257">
+            <link role="base" roleId="2c95.8624890525767800818" targetNodeId="8624890525768078255" resolveInfo="width80" />
           </node>
         </node>
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="4715820023543699954">
