@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<history>
+  <StructureModification>
+    <dependencies>
+      <model index="tis3" modelUID="r:c66b6ed4-08e6-4cce-9020-c9aa6a1039e3(com.mbeddr.doc.latex.structure)" version="-1" />
+    </dependencies>
+    <rename id="tis3.4457500422381350435" type="CHILD" from="lines" to="contents" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="tis3" modelUID="r:c66b6ed4-08e6-4cce-9020-c9aa6a1039e3(com.mbeddr.doc.latex.structure)" version="0" />
+    </dependencies>
+    <rename id="tis3.4457500422381364346" type="CHILD" from="options" to="options1" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="tis3" modelUID="r:c66b6ed4-08e6-4cce-9020-c9aa6a1039e3(com.mbeddr.doc.latex.structure)" version="1" />
+    </dependencies>
+    <rename id="tis3.4457500422381500094" type="CHILD" from="options1" to="options2" />
+  </StructureModification>
+</history>
+

@@ -72,7 +72,7 @@
       <link role="conceptDeclaration" roleId="tp41.1206442096288" targetNodeId="clqz.7851711690674279259" resolveInfo="TriggerSMStatement" />
     </node>
     <node type="tp41.DataFlowBuilderDeclaration" typeId="tp41.1206442055221" id="6827806583616083808">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="c-integration" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="c-integration.test" />
       <link role="conceptDeclaration" roleId="tp41.1206442096288" targetNodeId="clqz.2558982571829189197" resolveInfo="IsInStateExpression" />
     </node>
     <node type="tp41.DataFlowBuilderDeclaration" typeId="tp41.1206442055221" id="6827806583616204512">

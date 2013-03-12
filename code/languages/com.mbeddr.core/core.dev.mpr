@@ -69,6 +69,14 @@
             </Library>
           </value>
         </entry>
+        <entry key="lisson.stuff">
+          <value>
+            <Library>
+              <option name="name" value="lisson.stuff" />
+              <option name="path" value="${mps_home}/bin/${lisson.home}" />
+            </Library>
+          </value>
+        </entry>
         <entry key="mpsutil">
           <value>
             <Library>
