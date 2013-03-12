@@ -445,13 +445,29 @@
         <property name="text" nameId="2c95.3350625596580064225" value="Imported Stuff" />
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="4457500422381589500">
           <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="4457500422381589501">
-            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4457500422381589502">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value="TextMehr text: " />
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2726240646375922986">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="Here we have some code integrated. " />
             </node>
-            <node role="words" roleId="87nw.2557074442922392302" type="2c95.SectRefWord" typeId="2c95.3350625596580108709" id="4457500422381589503">
-              <link role="target" roleId="2c95.3350625596580108719" targetNodeId="4457500422381799153" resolveInfo="s1" />
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.ImgRefWord" typeId="2c95.6386504476136420159" id="2726240646375922987">
+              <link role="image" roleId="2c95.6386504476136420174" targetNodeId="2726240646375789091" resolveInfo="ampelCode" />
             </node>
-            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4855100605282823458" />
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2726240646375922988" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node role="contents" roleId="2c95.3350625596580064250" type="2c95.EmptyDocContent" typeId="2c95.3350625596579911760" id="2726240646375787196">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1363083013203_1" />
+    </node>
+    <node role="contents" roleId="2c95.3350625596580064250" type="rh4a.CCodeAsImageParagraph" typeId="rh4a.6416473402306197330" id="2726240646375789091">
+      <property name="name" nameId="tpck.1169194664001" value="ampelCode" />
+      <link role="module" roleId="rh4a.6416473402306172903" targetNodeId="haow.4457500422381538278" resolveInfo="MinimalTest" />
+      <link role="code" roleId="rh4a.6416473402306172904" targetNodeId="haow.4755612053022236787" resolveInfo="Ampel" />
+      <link role="path" roleId="rh4a.6416473402306197356" targetNodeId="6416473402306204610" resolveInfo="temp" />
+      <node role="description" roleId="rh4a.2726240646375887189" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="2726240646375894752">
+        <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="2726240646375894753">
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2726240646375894754">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value="The Ampel state machine." />
           </node>
         </node>
       </node>
