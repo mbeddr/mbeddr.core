@@ -11,6 +11,8 @@
   <import index="3vkx" modelUID="r:1c91fcc2-cf14-47f5-a4d4-3b424626f0d4(com.mbeddr.cc.requirements.c.structure)" version="4" implicit="yes" />
   <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="20" implicit="yes" />
   <import index="k146" modelUID="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" version="3" implicit="yes" />
+  <import index="87nw" modelUID="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" version="5" implicit="yes" />
+  <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="7" implicit="yes" />
   <roots>
     <node type="75wo.RequirementsModule" typeId="75wo.8745401669462963169" id="1433966787984154171">
       <property name="name" nameId="tpck.1169194664001" value="FlightJudgementRules" />
@@ -43,6 +45,13 @@
           <property name="const" nameId="mj1l.2941277002445651368" value="false" />
         </node>
       </node>
+      <node role="text" roleId="75wo.8375407818529829156" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="4066530727403326153">
+        <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="4066530727403326154">
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4066530727403326155">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value="Text" />
+          </node>
+        </node>
+      </node>
     </node>
     <node role="requirements" roleId="75wo.8745401669462963171" type="75wo.Requirement" typeId="75wo.8745401669462952101" id="7451725615401720594">
       <property name="priority" nameId="75wo.3314758227758879688" value="0" />
@@ -61,6 +70,13 @@
         <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="7451725615401720599">
           <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
           <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+        </node>
+      </node>
+      <node role="text" roleId="75wo.8375407818529829156" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="4066530727403326156">
+        <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="4066530727403326157">
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4066530727403326158">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value="Text" />
+          </node>
         </node>
       </node>
     </node>
@@ -85,6 +101,13 @@
         <property name="tested" nameId="75wo.2667296550441527827" value="false" />
         <node role="textParts" roleId="75wo.4539911450717510658" type="75wo.TextPart" typeId="75wo.4539911450717510653" id="4539911450717528909" />
         <node role="kind" roleId="75wo.8921256082857728256" type="75wo.FunctionalRequirementKind" typeId="75wo.8921256082857728250" id="1433966787984154177" />
+        <node role="text" roleId="75wo.8375407818529829156" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="4066530727403326162">
+          <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="4066530727403326163">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4066530727403326164">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="Text" />
+            </node>
+          </node>
+        </node>
       </node>
       <node role="details" roleId="75wo.8745401669462962629" type="75wo.Requirement" typeId="75wo.8745401669462952101" id="1433966787984154178">
         <property name="priority" nameId="75wo.3314758227758879688" value="0" />
@@ -98,6 +121,13 @@
           <property name="text" nameId="75wo.4539911450717510654" value="" />
         </node>
         <node role="kind" roleId="75wo.8921256082857728256" type="75wo.FunctionalRequirementKind" typeId="75wo.8921256082857728250" id="1433966787984154179" />
+        <node role="text" roleId="75wo.8375407818529829156" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="4066530727403326165">
+          <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="4066530727403326166">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4066530727403326167">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="Text" />
+            </node>
+          </node>
+        </node>
       </node>
       <node role="additionalData" roleId="75wo.8745401669463270518" type="3vkx.RCalculation" typeId="3vkx.3534497005926949315" id="552710421071397247">
         <property name="name" nameId="tpck.1169194664001" value="PointForATrackpoint" />
@@ -228,6 +258,13 @@
           </node>
         </node>
       </node>
+      <node role="text" roleId="75wo.8375407818529829156" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="4066530727403326159">
+        <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="4066530727403326160">
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4066530727403326161">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value="Text" />
+          </node>
+        </node>
+      </node>
     </node>
     <node role="requirements" roleId="75wo.8745401669462963171" type="75wo.Requirement" typeId="75wo.8745401669462952101" id="1433966787984154180">
       <property name="priority" nameId="75wo.3314758227758879688" value="0" />
@@ -251,6 +288,13 @@
           <property name="text" nameId="75wo.4539911450717510654" value="For each trackpoint where you are on the ground you get 1 point deduced." />
         </node>
         <node role="kind" roleId="75wo.8921256082857728256" type="75wo.FunctionalRequirementKind" typeId="75wo.8921256082857728250" id="1433966787984154183" />
+        <node role="text" roleId="75wo.8375407818529829156" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="4066530727403326171">
+          <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="4066530727403326172">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4066530727403326173">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="Text" />
+            </node>
+          </node>
+        </node>
       </node>
       <node role="details" roleId="75wo.8745401669462962629" type="75wo.Requirement" typeId="75wo.8745401669462952101" id="1433966787984154184">
         <property name="priority" nameId="75wo.3314758227758879688" value="0" />
@@ -262,6 +306,20 @@
         <property name="tested" nameId="75wo.2667296550441527827" value="false" />
         <node role="textParts" roleId="75wo.4539911450717510658" type="75wo.TextPart" typeId="75wo.4539911450717510653" id="4539911450717528838" />
         <node role="kind" roleId="75wo.8921256082857728256" type="75wo.FunctionalRequirementKind" typeId="75wo.8921256082857728250" id="1433966787984154185" />
+        <node role="text" roleId="75wo.8375407818529829156" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="4066530727403326174">
+          <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="4066530727403326175">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4066530727403326176">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="Text" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node role="text" roleId="75wo.8375407818529829156" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="4066530727403326168">
+        <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="4066530727403326169">
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4066530727403326170">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value="Text" />
+          </node>
+        </node>
       </node>
     </node>
   </root>
@@ -291,6 +349,13 @@
           </node>
         </node>
       </node>
+      <node role="text" roleId="75wo.8375407818529829156" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="4066530727403582823">
+        <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="4066530727403582824">
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4066530727403582825">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value="Text" />
+          </node>
+        </node>
+      </node>
     </node>
     <node role="requirements" roleId="75wo.8745401669462963171" type="75wo.Requirement" typeId="75wo.8745401669462952101" id="6446320527598544106">
       <property name="priority" nameId="75wo.3314758227758879688" value="0" />
@@ -303,6 +368,13 @@
         <property name="name" nameId="tpck.1169194664001" value="Nuller" />
         <node role="contents" roleId="4l29.5744000828452661377" type="4l29.Capability" typeId="4l29.5744000828452661413" id="6446320527598544109">
           <property name="name" nameId="tpck.1169194664001" value="process" />
+        </node>
+      </node>
+      <node role="text" roleId="75wo.8375407818529829156" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="4066530727403582826">
+        <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="4066530727403582827">
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4066530727403582828">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value="Text" />
+          </node>
         </node>
       </node>
     </node>
@@ -324,6 +396,13 @@
             <link role="item" roleId="4l29.5744000828452990962" targetNodeId="6446320527598544111" resolveInfo="Flight" />
           </node>
           <node role="returns" roleId="4l29.5744000828452661425" type="4l29.Status" typeId="4l29.6446320527598503586" id="8983161156585760492" />
+        </node>
+      </node>
+      <node role="text" roleId="75wo.8375407818529829156" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="4066530727403582829">
+        <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="4066530727403582830">
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4066530727403582831">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value="Text" />
+          </node>
         </node>
       </node>
     </node>
@@ -357,6 +436,13 @@
           <node role="returns" roleId="4l29.5744000828452661425" type="4l29.Status" typeId="4l29.6446320527598503586" id="6446320527598513698" />
         </node>
       </node>
+      <node role="text" roleId="75wo.8375407818529829156" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="4066530727403582832">
+        <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="4066530727403582833">
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4066530727403582834">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value="Text" />
+          </node>
+        </node>
+      </node>
     </node>
     <node role="requirements" roleId="75wo.8745401669462963171" type="75wo.Requirement" typeId="75wo.8745401669462952101" id="8119642625901800298">
       <property name="priority" nameId="75wo.3314758227758879688" value="0" />
@@ -380,6 +466,13 @@
           <link role="participant" roleId="4l29.5744000828452694713" targetNodeId="8119642625901800282" resolveInfo="InMemoryStore" />
         </node>
       </node>
+      <node role="text" roleId="75wo.8375407818529829156" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="4066530727403582835">
+        <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="4066530727403582836">
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4066530727403582837">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value="Text" />
+          </node>
+        </node>
+      </node>
     </node>
     <node role="requirements" roleId="75wo.8745401669462963171" type="75wo.Requirement" typeId="75wo.8745401669462952101" id="8119642625901800287">
       <property name="priority" nameId="75wo.3314758227758879688" value="0" />
@@ -400,6 +493,13 @@
           </node>
         </node>
       </node>
+      <node role="text" roleId="75wo.8375407818529829156" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="4066530727403582838">
+        <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="4066530727403582839">
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4066530727403582840">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value="Text" />
+          </node>
+        </node>
+      </node>
     </node>
   </root>
   <root id="6898387700925052063">
@@ -413,6 +513,13 @@
         <property name="name" nameId="tpck.1169194664001" value="Aircraft" />
       </node>
       <node role="textParts" roleId="75wo.4539911450717510658" type="75wo.TextPart" typeId="75wo.4539911450717510653" id="8983161156585709285" />
+      <node role="text" roleId="75wo.8375407818529829156" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="4066530727403582841">
+        <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="4066530727403582842">
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4066530727403582843">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value="Text" />
+          </node>
+        </node>
+      </node>
     </node>
     <node role="requirements" roleId="75wo.8745401669462963171" type="75wo.Requirement" typeId="75wo.8745401669462952101" id="1942554214112320148">
       <property name="priority" nameId="75wo.3314758227758879688" value="0" />
@@ -434,6 +541,13 @@
         </node>
       </node>
       <node role="textParts" roleId="75wo.4539911450717510658" type="75wo.TextPart" typeId="75wo.4539911450717510653" id="8983161156585709287" />
+      <node role="text" roleId="75wo.8375407818529829156" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="4066530727403582844">
+        <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="4066530727403582845">
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4066530727403582846">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value="Text" />
+          </node>
+        </node>
+      </node>
     </node>
     <node role="requirements" roleId="75wo.8745401669462963171" type="75wo.Requirement" typeId="75wo.8745401669462952101" id="6898387700925260480">
       <property name="priority" nameId="75wo.3314758227758879688" value="0" />
@@ -466,6 +580,13 @@
           </node>
         </node>
       </node>
+      <node role="text" roleId="75wo.8375407818529829156" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="4066530727403582847">
+        <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="4066530727403582848">
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4066530727403582849">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value="Text" />
+          </node>
+        </node>
+      </node>
     </node>
     <node role="requirements" roleId="75wo.8745401669462963171" type="75wo.Requirement" typeId="75wo.8745401669462952101" id="6898387700925062305">
       <property name="priority" nameId="75wo.3314758227758879688" value="0" />
@@ -494,6 +615,13 @@
         </node>
         <node role="contents" roleId="4l29.5744000828452661377" type="4l29.Collaboration" typeId="4l29.5744000828452694711" id="8983161156585866954">
           <link role="participant" roleId="4l29.5744000828452694713" targetNodeId="8119642625901800289" resolveInfo="Judger" />
+        </node>
+      </node>
+      <node role="text" roleId="75wo.8375407818529829156" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="4066530727403582850">
+        <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="4066530727403582851">
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4066530727403582852">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value="Text" />
+          </node>
         </node>
       </node>
     </node>
@@ -530,6 +658,13 @@
       </node>
       <node role="textParts" roleId="75wo.4539911450717510658" type="75wo.TextPart" typeId="75wo.4539911450717510653" id="8983161156585739647">
         <property name="text" nameId="75wo.4539911450717510654" value="jfg hk" />
+      </node>
+      <node role="text" roleId="75wo.8375407818529829156" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="4066530727403582853">
+        <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="4066530727403582854">
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4066530727403582855">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value="Text" />
+          </node>
+        </node>
       </node>
     </node>
     <node role="requirements" roleId="75wo.8745401669462963171" type="75wo.Requirement" typeId="75wo.8745401669462952101" id="8983161156585739652">
@@ -601,6 +736,13 @@
             </node>
           </node>
         </node>
+        <node role="text" roleId="75wo.8375407818529829156" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="4066530727403582859">
+          <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="4066530727403582860">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4066530727403582861">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="Text" />
+            </node>
+          </node>
+        </node>
       </node>
       <node role="kind" roleId="75wo.8921256082857728256" type="4l29.UseCaseKind" typeId="4l29.6514529288613812198" id="8983161156585739655" />
       <node role="textParts" roleId="75wo.4539911450717510658" type="75wo.TextPart" typeId="75wo.4539911450717510653" id="8983161156585739654" />
@@ -624,6 +766,13 @@
         <node role="contents" roleId="4l29.6514529288613824147" type="4l29.UseCasePassiveActor" typeId="4l29.6514529288613845835" id="8983161156585742567">
           <node role="participant" roleId="4l29.6514529288613845836" type="4l29.ParticipantRef" typeId="4l29.5744000828452824074" id="8983161156585742569">
             <link role="participant" roleId="4l29.5744000828452824075" targetNodeId="8119642625901800289" resolveInfo="Judger" />
+          </node>
+        </node>
+      </node>
+      <node role="text" roleId="75wo.8375407818529829156" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="4066530727403582856">
+        <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="4066530727403582857">
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4066530727403582858">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value="Text" />
           </node>
         </node>
       </node>
@@ -668,6 +817,13 @@
           </node>
         </node>
         <node role="textParts" roleId="75wo.4539911450717510658" type="75wo.TextPart" typeId="75wo.4539911450717510653" id="8983161156585709286" />
+        <node role="text" roleId="75wo.8375407818529829156" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="4066530727403582865">
+          <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="4066530727403582866">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4066530727403582867">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="Text" />
+            </node>
+          </node>
+        </node>
       </node>
       <node role="kind" roleId="75wo.8921256082857728256" type="4l29.UseCaseKind" typeId="4l29.6514529288613812198" id="6898387700925052067" />
       <node role="additionalData" roleId="75wo.8745401669463270518" type="4l29.UseCase" typeId="4l29.6514529288613812195" id="6898387700925062298">
@@ -713,6 +869,20 @@
                 <link role="data" roleId="4l29.6446320527598618612" targetNodeId="6898387700925412273" resolveInfo="exampleFlight" />
               </node>
             </node>
+          </node>
+        </node>
+        <node role="text" roleId="75wo.8375407818529829156" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="4066530727403582868">
+          <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="4066530727403582869">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4066530727403582870">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="Text" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node role="text" roleId="75wo.8375407818529829156" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="4066530727403582862">
+        <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="4066530727403582863">
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4066530727403582864">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value="Text" />
           </node>
         </node>
       </node>

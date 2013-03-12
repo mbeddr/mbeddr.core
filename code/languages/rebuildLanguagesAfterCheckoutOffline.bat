@@ -10,6 +10,10 @@ cd com.mbeddr.core
 call ant build-languages
 cd ..
 
+cd com.mbeddr.doc
+call ant build-languages
+cd ..
+
 cd com.mbeddr.debugger.tests
 call ant build-languages
 cd ..
