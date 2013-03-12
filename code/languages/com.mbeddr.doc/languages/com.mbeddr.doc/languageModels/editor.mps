@@ -468,7 +468,7 @@
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="126932837435324904">
         <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Indent" typeId="tpc2.1237303669825" id="126932837435324905" />
         <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="126932837435324906">
-          <property name="text" nameId="tpc2.1073389577007" value="abstrct:" />
+          <property name="text" nameId="tpc2.1073389577007" value="abstract:" />
         </node>
         <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_RefNode" typeId="tpc2.1073389882823" id="126932837435324923">
           <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="2c95.126932837435324914" />
