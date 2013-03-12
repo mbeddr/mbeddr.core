@@ -17,7 +17,7 @@
   <import index="87nw" modelUID="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" version="5" implicit="yes" />
   <import index="rh4a" modelUID="r:51a64317-678a-4e8f-9df1-1e83f73c9d71(com.mbeddr.doc.c.structure)" version="4" implicit="yes" />
   <import index="f87k" modelUID="r:e7473124-6323-4ddf-9715-6e1684f751bd(com.mbeddr.doc.expressions.structure)" version="-1" implicit="yes" />
-  <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="20" implicit="yes" />
+  <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="22" implicit="yes" />
   <import index="g9w8" modelUID="r:506f4964-2b3f-49f3-a581-8c498222bac6(com.mbeddr.doc.gen_latex.structure)" version="-1" implicit="yes" />
   <import index="lsus" modelUID="r:25d6e7db-06a4-44ee-83aa-8c5bf17f3b3a(com.mbeddr.doc.gen_xhtml.structure)" version="-1" implicit="yes" />
   <import index="soy0" modelUID="r:7c7016e4-716d-41ab-b7e5-8604290de403(com.mbeddr.doc.meta.structure)" version="-1" implicit="yes" />
@@ -125,6 +125,9 @@
             <property name="fileName" nameId="2c95.6386504476136521408" value="img1.jpg" />
             <link role="path" roleId="2c95.6386504476136521409" targetNodeId="6386504476136521406" resolveInfo="images" />
           </node>
+          <node role="sizeSpec" roleId="2c95.8624890525767908695" type="2c95.InheritSizeSpec" typeId="2c95.8624890525767650652" id="8624890525767984209">
+            <link role="base" roleId="2c95.8624890525767800818" targetNodeId="8624890525767939374" resolveInfo="colwidth" />
+          </node>
         </node>
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.ImageParagraph" typeId="2c95.6386504476136263187" id="4457500422381349986">
           <property name="imagePath" value="/Users/markusvoelter/Documents/mbeddr/mbeddr.core/code/languages/com.mbeddr.doc/solutions/com.mbeddr.doc.sandbox/images/img1.jpg" />
@@ -146,6 +149,9 @@
           <node role="resource" roleId="2c95.6386504476136531838" type="2c95.Resource" typeId="2c95.6386504476136521407" id="4457500422381349992">
             <property name="fileName" nameId="2c95.6386504476136521408" value="img2.jpg" />
             <link role="path" roleId="2c95.6386504476136521409" targetNodeId="6386504476136521406" resolveInfo="images" />
+          </node>
+          <node role="sizeSpec" roleId="2c95.8624890525767908695" type="2c95.InheritSizeSpec" typeId="2c95.8624890525767650652" id="8624890525767984210">
+            <link role="base" roleId="2c95.8624890525767800818" targetNodeId="8624890525767939374" resolveInfo="colwidth" />
           </node>
         </node>
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="6386504476136428224">
@@ -397,6 +403,7 @@
               </node>
             </node>
           </node>
+          <node role="sizeSpec" roleId="rh4a.8624890525767931145" type="2c95.DefaultSizeSpec" typeId="2c95.8624890525767886396" id="8624890525768036626" />
         </node>
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="4755612053022509153">
           <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="4755612053022509154">
@@ -420,6 +427,9 @@
                 <property name="escapedValue" nameId="87nw.2557074442922438158" value="Und dann ist hier die Beschreibung der STate Machine." />
               </node>
             </node>
+          </node>
+          <node role="sizeSpec" roleId="rh4a.8624890525767931145" type="2c95.InheritSizeSpec" typeId="2c95.8624890525767650652" id="8624890525767984212">
+            <link role="base" roleId="2c95.8624890525767800818" targetNodeId="8624890525767939374" resolveInfo="colwidth" />
           </node>
         </node>
       </node>
@@ -471,6 +481,9 @@
           </node>
         </node>
       </node>
+      <node role="sizeSpec" roleId="rh4a.8624890525767931140" type="2c95.InheritSizeSpec" typeId="2c95.8624890525767650652" id="8624890525767939380">
+        <link role="base" roleId="2c95.8624890525767800818" targetNodeId="8624890525767939377" resolveInfo="scale50" />
+      </node>
     </node>
     <node role="contents" roleId="2c95.3350625596580064250" type="2c95.EmptyDocContent" typeId="2c95.3350625596579911760" id="6416473402306204606">
       <property name="name" nameId="tpck.1169194664001" value="empty_1363009542076_1" />
@@ -500,6 +513,18 @@
     </node>
   </root>
   <root id="6386504476136482735">
+    <node role="sizeSpecs" roleId="2c95.8624890525767800998" type="2c95.NamedSizeSpec" typeId="2c95.8624890525767800825" id="8624890525767939374">
+      <property name="name" nameId="tpck.1169194664001" value="colwidth" />
+      <node role="spec" roleId="2c95.8624890525767800827" type="2c95.PageWidthSizeSpec" typeId="2c95.8624890525767637976" id="8624890525767939376">
+        <property name="percentage" nameId="2c95.8624890525767637977" value="100" />
+      </node>
+    </node>
+    <node role="sizeSpecs" roleId="2c95.8624890525767800998" type="2c95.NamedSizeSpec" typeId="2c95.8624890525767800825" id="8624890525767939377">
+      <property name="name" nameId="tpck.1169194664001" value="scale50" />
+      <node role="spec" roleId="2c95.8624890525767800827" type="2c95.ScalingSizeSpec" typeId="2c95.8624890525767555426" id="8624890525767939379">
+        <property name="percentage" nameId="2c95.8624890525767555427" value="50" />
+      </node>
+    </node>
     <node role="paths" roleId="2c95.6386504476136472817" type="2c95.PathDefinition" typeId="2c95.6386504476136472795" id="6386504476136521406">
       <property name="name" nameId="tpck.1169194664001" value="images" />
       <property name="editTimePath" nameId="2c95.6386504476136472797" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.doc/solutions/com.mbeddr.doc.sandbox/images/" />
