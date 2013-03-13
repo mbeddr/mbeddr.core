@@ -1169,9 +1169,14 @@
         <property name="const" nameId="mj1l.2941277002445651368" value="false" />
       </node>
       <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="298572849313103869">
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.MultiLineCommentStatement" typeId="c4fa.7565145259447112915" id="298572849313105908">
-          <node role="parts" roleId="vs0r.3857533489766836837" type="vs0r.DocPart" typeId="vs0r.3857533489766836826" id="298572849313105909">
-            <property name="text" nameId="vs0r.3857533489766836827" value="Initialize the USART module with 19200 @ 4Mhz, 8 bit, no check, async" />
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="6068976060903393706">
+          <node role="textblock" roleId="c4fa.8624890525768479139" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="6068976060903393707">
+            <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="6068976060903393708">
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6068976060903393709" />
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6068976060903393710">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="Initialize the USART module with 19200 @ 4Mhz, 8 bit, no check, async" />
+              </node>
+            </node>
           </node>
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="298572849313103873">
@@ -1888,12 +1893,14 @@
       <property name="name" nameId="tpck.1169194664001" value="InitializeTimers" />
       <property name="exported" nameId="x27k.1317894735999272944" value="true" />
       <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="298572849313105957">
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.MultiLineCommentStatement" typeId="c4fa.7565145259447112915" id="9016946137851906869">
-          <node role="parts" roleId="vs0r.3857533489766836837" type="vs0r.DocPart" typeId="vs0r.3857533489766836826" id="9016946137851906870">
-            <property name="text" nameId="vs0r.3857533489766836827" value="Initialize Timer0" />
-          </node>
-          <node role="parts" roleId="vs0r.3857533489766836837" type="vs0r.DocPart" typeId="vs0r.3857533489766836826" id="1151886682082492092">
-            <property name="text" nameId="vs0r.3857533489766836827" value="'unBuggedPrescalerConf' used to resolve 'null' data type bug" />
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="6068976060903393536">
+          <node role="textblock" roleId="c4fa.8624890525768479139" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="6068976060903393537">
+            <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="6068976060903393538">
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6068976060903393539" />
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6068976060903393540">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="Initialize Timer0 'unBuggedPrescalerConf' used to resolve 'null' data type bug" />
+              </node>
+            </node>
           </node>
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="1151886682082492263">
@@ -1948,21 +1955,36 @@
           </node>
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="9016946137851906871" />
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.MultiLineCommentStatement" typeId="c4fa.7565145259447112915" id="9016946137851906873">
-          <node role="parts" roleId="vs0r.3857533489766836837" type="vs0r.DocPart" typeId="vs0r.3857533489766836826" id="9016946137851906874">
-            <property name="text" nameId="vs0r.3857533489766836827" value="Don't use Timer1 since it causes some intereferences with the Atrial pacing &quot;an issue with pin being shared&quot;" />
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="6068976060903393501">
+          <node role="textblock" roleId="c4fa.8624890525768479139" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="6068976060903393502">
+            <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="6068976060903393503">
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6068976060903393504" />
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6068976060903393505">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="Don't use Timer1 since it causes some intereferences with the Atrial pacing \&quot;an issue with pin being shared\&quot;" />
+              </node>
+            </node>
           </node>
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="9016946137851906875" />
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.MultiLineCommentStatement" typeId="c4fa.7565145259447112915" id="9016946137851906881">
-          <node role="parts" roleId="vs0r.3857533489766836837" type="vs0r.DocPart" typeId="vs0r.3857533489766836826" id="9016946137851906882">
-            <property name="text" nameId="vs0r.3857533489766836827" value="We don't use Timer2" />
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="6068976060903393761">
+          <node role="textblock" roleId="c4fa.8624890525768479139" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="6068976060903393762">
+            <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="6068976060903393763">
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6068976060903393764" />
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6068976060903393765">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="We don't use Timer2" />
+              </node>
+            </node>
           </node>
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="9016946137851906879" />
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.MultiLineCommentStatement" typeId="c4fa.7565145259447112915" id="9016946137851906877">
-          <node role="parts" roleId="vs0r.3857533489766836837" type="vs0r.DocPart" typeId="vs0r.3857533489766836826" id="9016946137851906878">
-            <property name="text" nameId="vs0r.3857533489766836827" value="Initialize Timer3" />
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="6068976060903393661">
+          <node role="textblock" roleId="c4fa.8624890525768479139" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="6068976060903393662">
+            <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="6068976060903393663">
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6068976060903393664" />
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6068976060903393665">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="Initialize Timer3" />
+              </node>
+            </node>
           </node>
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="9016946137851906967">
@@ -2704,18 +2726,14 @@
           </node>
           <node role="cases" roleId="c4fa.3134547887598524959" type="c4fa.SwitchCase" typeId="c4fa.3134547887598524928" id="4600281520963332415">
             <node role="body" roleId="c4fa.3134547887598524931" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="4600281520963332416">
-              <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.MultiLineCommentStatement" typeId="c4fa.7565145259447112915" id="298572849313095761">
-                <node role="parts" roleId="vs0r.3857533489766836837" type="vs0r.DocPart" typeId="vs0r.3857533489766836826" id="298572849313095762">
-                  <property name="text" nameId="vs0r.3857533489766836827" value="Disconnect Sense Circuit," />
-                </node>
-                <node role="parts" roleId="vs0r.3857533489766836837" type="vs0r.DocPart" typeId="vs0r.3857533489766836826" id="298572849313095764">
-                  <property name="text" nameId="vs0r.3857533489766836827" value="Impedance Circuit," />
-                </node>
-                <node role="parts" roleId="vs0r.3857533489766836837" type="vs0r.DocPart" typeId="vs0r.3857533489766836826" id="298572849313095765">
-                  <property name="text" nameId="vs0r.3857533489766836827" value="Capacitor Charging Circuit" />
-                </node>
-                <node role="parts" roleId="vs0r.3857533489766836837" type="vs0r.DocPart" typeId="vs0r.3857533489766836826" id="298572849313095763">
-                  <property name="text" nameId="vs0r.3857533489766836827" value="and PACE" />
+              <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="6068976060903393876">
+                <node role="textblock" roleId="c4fa.8624890525768479139" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="6068976060903393877">
+                  <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="6068976060903393878">
+                    <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6068976060903393879" />
+                    <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6068976060903393880">
+                      <property name="escapedValue" nameId="87nw.2557074442922438158" value="Disconnect Sense Circuit, Impedance Circuit, Capacitor Charging Circuit and PACE" />
+                    </node>
+                  </node>
                 </node>
               </node>
               <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="298572849313095661">
@@ -2842,15 +2860,14 @@
                 </node>
               </node>
               <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="7059795523744244949" />
-              <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.MultiLineCommentStatement" typeId="c4fa.7565145259447112915" id="298572849313095777">
-                <node role="parts" roleId="vs0r.3857533489766836837" type="vs0r.DocPart" typeId="vs0r.3857533489766836826" id="298572849313095778">
-                  <property name="text" nameId="vs0r.3857533489766836827" value="Reconnect Charging Circuit, " />
-                </node>
-                <node role="parts" roleId="vs0r.3857533489766836837" type="vs0r.DocPart" typeId="vs0r.3857533489766836826" id="298572849313095779">
-                  <property name="text" nameId="vs0r.3857533489766836827" value="Impedance Circuit and" />
-                </node>
-                <node role="parts" roleId="vs0r.3857533489766836837" type="vs0r.DocPart" typeId="vs0r.3857533489766836826" id="298572849313095780">
-                  <property name="text" nameId="vs0r.3857533489766836827" value="Sense Circuit" />
+              <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="6068976060903393716">
+                <node role="textblock" roleId="c4fa.8624890525768479139" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="6068976060903393717">
+                  <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="6068976060903393718">
+                    <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6068976060903393719" />
+                    <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6068976060903393720">
+                      <property name="escapedValue" nameId="87nw.2557074442922438158" value="Reconnect Charging Circuit,  Impedance Circuit and Sense Circuit" />
+                    </node>
+                  </node>
                 </node>
               </node>
               <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="7059795523744236897">
@@ -3082,15 +3099,14 @@
         <property name="const" nameId="mj1l.2941277002445651368" value="false" />
       </node>
       <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="1559571946845221861">
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.MultiLineCommentStatement" typeId="c4fa.7565145259447112915" id="1559571946845221969">
-          <node role="parts" roleId="vs0r.3857533489766836837" type="vs0r.DocPart" typeId="vs0r.3857533489766836826" id="1559571946845221972">
-            <property name="text" nameId="vs0r.3857533489766836827" value="ADCON1 :" />
-          </node>
-          <node role="parts" roleId="vs0r.3857533489766836837" type="vs0r.DocPart" typeId="vs0r.3857533489766836826" id="1559571946845221970">
-            <property name="text" nameId="vs0r.3857533489766836827" value="*** NOT TRIVIAL TO SET ***" />
-          </node>
-          <node role="parts" roleId="vs0r.3857533489766836837" type="vs0r.DocPart" typeId="vs0r.3857533489766836826" id="1559571946845221971">
-            <property name="text" nameId="vs0r.3857533489766836827" value="*** AN5, AN6, AN7, AN11 Need to be set to DIGITAL" />
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="6068976060903393596">
+          <node role="textblock" roleId="c4fa.8624890525768479139" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="6068976060903393597">
+            <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="6068976060903393598">
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6068976060903393599" />
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6068976060903393600">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="ADCON1 : *** NOT TRIVIAL TO SET *** *** AN5, AN6, AN7, AN11 Need to be set to DIGITAL" />
+              </node>
+            </node>
           </node>
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="1559571946845221865">
@@ -3102,24 +3118,14 @@
           </node>
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="1559571946845221964" />
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.MultiLineCommentStatement" typeId="c4fa.7565145259447112915" id="1559571946845221966">
-          <node role="parts" roleId="vs0r.3857533489766836837" type="vs0r.DocPart" typeId="vs0r.3857533489766836826" id="1559571946845221967">
-            <property name="text" nameId="vs0r.3857533489766836827" value="INTCON, INTCON2 and INTCON3 :" />
-          </node>
-          <node role="parts" roleId="vs0r.3857533489766836837" type="vs0r.DocPart" typeId="vs0r.3857533489766836826" id="1559571946845221977">
-            <property name="text" nameId="vs0r.3857533489766836827" value="Initial Timer Configuration :" />
-          </node>
-          <node role="parts" roleId="vs0r.3857533489766836837" type="vs0r.DocPart" typeId="vs0r.3857533489766836826" id="1559571946845221978">
-            <property name="text" nameId="vs0r.3857533489766836827" value="7 - 0 - GLOBAL INTERRUPT DISABLED" />
-          </node>
-          <node role="parts" roleId="vs0r.3857533489766836837" type="vs0r.DocPart" typeId="vs0r.3857533489766836826" id="1559571946845221979">
-            <property name="text" nameId="vs0r.3857533489766836827" value="6 - 1 - PRIORITY INTERRUPTS ENABLED" />
-          </node>
-          <node role="parts" roleId="vs0r.3857533489766836837" type="vs0r.DocPart" typeId="vs0r.3857533489766836826" id="1559571946845221980">
-            <property name="text" nameId="vs0r.3857533489766836827" value="5 - 1 - TIMER 0 Interrupt Enable" />
-          </node>
-          <node role="parts" roleId="vs0r.3857533489766836837" type="vs0r.DocPart" typeId="vs0r.3857533489766836826" id="1559571946845221981">
-            <property name="text" nameId="vs0r.3857533489766836827" value="4 - 1 - INT0 PIN ENABLED" />
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="6068976060903393651">
+          <node role="textblock" roleId="c4fa.8624890525768479139" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="6068976060903393652">
+            <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="6068976060903393653">
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6068976060903393654" />
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6068976060903393655">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="INTCON, INTCON2 and INTCON3 : Initial Timer Configuration : 7 - 0 - GLOBAL INTERRUPT DISABLED 6 - 1 - PRIORITY INTERRUPTS ENABLED 5 - 1 - TIMER 0 Interrupt Enable 4 - 1 - INT0 PIN ENABLED" />
+              </node>
+            </node>
           </node>
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="1559571946845221869">
@@ -3147,69 +3153,14 @@
           </node>
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="1559571946845221903" />
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.MultiLineCommentStatement" typeId="c4fa.7565145259447112915" id="1559571946845221983">
-          <node role="parts" roleId="vs0r.3857533489766836837" type="vs0r.DocPart" typeId="vs0r.3857533489766836826" id="1559571946845221984">
-            <property name="text" nameId="vs0r.3857533489766836827" value="TRISA :" />
-          </node>
-          <node role="parts" roleId="vs0r.3857533489766836837" type="vs0r.DocPart" typeId="vs0r.3857533489766836826" id="1559571946845222011">
-            <property name="text" nameId="vs0r.3857533489766836827" value="---" />
-          </node>
-          <node role="parts" roleId="vs0r.3857533489766836837" type="vs0r.DocPart" typeId="vs0r.3857533489766836826" id="1559571946845221985">
-            <property name="text" nameId="vs0r.3857533489766836827" value="TRISB :" />
-          </node>
-          <node role="parts" roleId="vs0r.3857533489766836837" type="vs0r.DocPart" typeId="vs0r.3857533489766836826" id="1559571946845221989">
-            <property name="text" nameId="vs0r.3857533489766836827" value="0 - INPUT - VENTRICULAR SENCE" />
-          </node>
-          <node role="parts" roleId="vs0r.3857533489766836837" type="vs0r.DocPart" typeId="vs0r.3857533489766836826" id="1559571946845221990">
-            <property name="text" nameId="vs0r.3857533489766836827" value="1 - INPUT - ATRIAL SENCE" />
-          </node>
-          <node role="parts" roleId="vs0r.3857533489766836837" type="vs0r.DocPart" typeId="vs0r.3857533489766836826" id="1559571946845221991">
-            <property name="text" nameId="vs0r.3857533489766836827" value="4 - OUTPUT - ATRIAL OUTPUT CIRCUIT" />
-          </node>
-          <node role="parts" roleId="vs0r.3857533489766836837" type="vs0r.DocPart" typeId="vs0r.3857533489766836826" id="1559571946845221992">
-            <property name="text" nameId="vs0r.3857533489766836827" value="5 - OUTPUT - ATRIAL OUTPUT CIRCUIT" />
-          </node>
-          <node role="parts" roleId="vs0r.3857533489766836837" type="vs0r.DocPart" typeId="vs0r.3857533489766836826" id="1559571946845221993">
-            <property name="text" nameId="vs0r.3857533489766836827" value="6 - OUTPUT - ATRIAL OUTPUT CIRCUIT" />
-          </node>
-          <node role="parts" roleId="vs0r.3857533489766836837" type="vs0r.DocPart" typeId="vs0r.3857533489766836826" id="1559571946845221994">
-            <property name="text" nameId="vs0r.3857533489766836827" value="7 - OUTPUT - ATRIAL OUTPUT CIRCUIT" />
-          </node>
-          <node role="parts" roleId="vs0r.3857533489766836837" type="vs0r.DocPart" typeId="vs0r.3857533489766836826" id="1559571946845221986">
-            <property name="text" nameId="vs0r.3857533489766836827" value="TRISC :" />
-          </node>
-          <node role="parts" roleId="vs0r.3857533489766836837" type="vs0r.DocPart" typeId="vs0r.3857533489766836826" id="1559571946845221995">
-            <property name="text" nameId="vs0r.3857533489766836827" value="0 - OUTPUT - VENTRICLE PACE CIRCUIT" />
-          </node>
-          <node role="parts" roleId="vs0r.3857533489766836837" type="vs0r.DocPart" typeId="vs0r.3857533489766836826" id="1559571946845221987">
-            <property name="text" nameId="vs0r.3857533489766836827" value="TRISD :" />
-          </node>
-          <node role="parts" roleId="vs0r.3857533489766836837" type="vs0r.DocPart" typeId="vs0r.3857533489766836826" id="1559571946845221996">
-            <property name="text" nameId="vs0r.3857533489766836827" value="0 - OUTPUT - VENTRICAL Z CONTROL" />
-          </node>
-          <node role="parts" roleId="vs0r.3857533489766836837" type="vs0r.DocPart" typeId="vs0r.3857533489766836826" id="1559571946845221997">
-            <property name="text" nameId="vs0r.3857533489766836827" value="1 - OUTPUT - ATRIAL Z CONTROL" />
-          </node>
-          <node role="parts" roleId="vs0r.3857533489766836837" type="vs0r.DocPart" typeId="vs0r.3857533489766836826" id="1559571946845221998">
-            <property name="text" nameId="vs0r.3857533489766836827" value="4 - OUTPUT - VENTRICLE SENCE CONTROL" />
-          </node>
-          <node role="parts" roleId="vs0r.3857533489766836837" type="vs0r.DocPart" typeId="vs0r.3857533489766836826" id="1559571946845221999">
-            <property name="text" nameId="vs0r.3857533489766836827" value="5 - OUTPUT - ATRIAL SENCE CONTROL" />
-          </node>
-          <node role="parts" roleId="vs0r.3857533489766836837" type="vs0r.DocPart" typeId="vs0r.3857533489766836826" id="1559571946845221988">
-            <property name="text" nameId="vs0r.3857533489766836827" value="TRISE :" />
-          </node>
-          <node role="parts" roleId="vs0r.3857533489766836837" type="vs0r.DocPart" typeId="vs0r.3857533489766836826" id="1559571946845222000">
-            <property name="text" nameId="vs0r.3857533489766836827" value="0 - 0 - OUTPUT - VENTRICLE PACE CIRCUIT" />
-          </node>
-          <node role="parts" roleId="vs0r.3857533489766836837" type="vs0r.DocPart" typeId="vs0r.3857533489766836826" id="1559571946845222001">
-            <property name="text" nameId="vs0r.3857533489766836827" value="1 - 0 - OUTPUT - VENTRICLE PACE CIRCUIT" />
-          </node>
-          <node role="parts" roleId="vs0r.3857533489766836837" type="vs0r.DocPart" typeId="vs0r.3857533489766836826" id="1559571946845222002">
-            <property name="text" nameId="vs0r.3857533489766836827" value="2 - 0 - OUTPUT - VENTRICLE PACE CIRCUIT" />
-          </node>
-          <node role="parts" roleId="vs0r.3857533489766836837" type="vs0r.DocPart" typeId="vs0r.3857533489766836826" id="1559571946845222003">
-            <property name="text" nameId="vs0r.3857533489766836827" value="4 - 0 - PSP MODE OFF" />
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="6068976060903393711">
+          <node role="textblock" roleId="c4fa.8624890525768479139" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="6068976060903393712">
+            <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="6068976060903393713">
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6068976060903393714" />
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6068976060903393715">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="TRISA : --- TRISB : 0 - INPUT - VENTRICULAR SENCE 1 - INPUT - ATRIAL SENCE 4 - OUTPUT - ATRIAL OUTPUT CIRCUIT 5 - OUTPUT - ATRIAL OUTPUT CIRCUIT 6 - OUTPUT - ATRIAL OUTPUT CIRCUIT 7 - OUTPUT - ATRIAL OUTPUT CIRCUIT TRISC : 0 - OUTPUT - VENTRICLE PACE CIRCUIT TRISD : 0 - OUTPUT - VENTRICAL Z CONTROL 1 - OUTPUT - ATRIAL Z CONTROL 4 - OUTPUT - VENTRICLE SENCE CONTROL 5 - OUTPUT - ATRIAL SENCE CONTROL TRISE : 0 - 0 - OUTPUT - VENTRICLE PACE CIRCUIT 1 - 0 - OUTPUT - VENTRICLE PACE CIRCUIT 2 - 0 - OUTPUT - VENTRICLE PACE CIRCUIT 4 - 0 - PSP MODE OFF" />
+              </node>
+            </node>
           </node>
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="1559571946845221881">
@@ -3253,45 +3204,14 @@
           </node>
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="1559571946845221901" />
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.MultiLineCommentStatement" typeId="c4fa.7565145259447112915" id="1559571946845222005">
-          <node role="parts" roleId="vs0r.3857533489766836837" type="vs0r.DocPart" typeId="vs0r.3857533489766836826" id="1559571946845222006">
-            <property name="text" nameId="vs0r.3857533489766836827" value="PORTA :" />
-          </node>
-          <node role="parts" roleId="vs0r.3857533489766836837" type="vs0r.DocPart" typeId="vs0r.3857533489766836826" id="1559571946845222012">
-            <property name="text" nameId="vs0r.3857533489766836827" value="---" />
-          </node>
-          <node role="parts" roleId="vs0r.3857533489766836837" type="vs0r.DocPart" typeId="vs0r.3857533489766836826" id="1559571946845222007">
-            <property name="text" nameId="vs0r.3857533489766836827" value="PORTB :" />
-          </node>
-          <node role="parts" roleId="vs0r.3857533489766836837" type="vs0r.DocPart" typeId="vs0r.3857533489766836826" id="1559571946845222013">
-            <property name="text" nameId="vs0r.3857533489766836827" value="7 - 1 - ON ATRIUM CHARCING CIRCUIT" />
-          </node>
-          <node role="parts" roleId="vs0r.3857533489766836837" type="vs0r.DocPart" typeId="vs0r.3857533489766836826" id="1559571946845222008">
-            <property name="text" nameId="vs0r.3857533489766836827" value="PORTC :" />
-          </node>
-          <node role="parts" roleId="vs0r.3857533489766836837" type="vs0r.DocPart" typeId="vs0r.3857533489766836826" id="1559571946845222014">
-            <property name="text" nameId="vs0r.3857533489766836827" value="---" />
-          </node>
-          <node role="parts" roleId="vs0r.3857533489766836837" type="vs0r.DocPart" typeId="vs0r.3857533489766836826" id="1559571946845222009">
-            <property name="text" nameId="vs0r.3857533489766836827" value="PORTD :" />
-          </node>
-          <node role="parts" roleId="vs0r.3857533489766836837" type="vs0r.DocPart" typeId="vs0r.3857533489766836826" id="1559571946845222015">
-            <property name="text" nameId="vs0r.3857533489766836827" value="0 - OFF VENTRICLE IMPEDENCE CIRCUIT OFF" />
-          </node>
-          <node role="parts" roleId="vs0r.3857533489766836837" type="vs0r.DocPart" typeId="vs0r.3857533489766836826" id="1559571946845222016">
-            <property name="text" nameId="vs0r.3857533489766836827" value="1 - OFF ATRIUM IMPEDENCE CIRCUIT OFF" />
-          </node>
-          <node role="parts" roleId="vs0r.3857533489766836837" type="vs0r.DocPart" typeId="vs0r.3857533489766836826" id="1559571946845222017">
-            <property name="text" nameId="vs0r.3857533489766836827" value="4 - ON VETRICLE SENCE CIRCUIT ON" />
-          </node>
-          <node role="parts" roleId="vs0r.3857533489766836837" type="vs0r.DocPart" typeId="vs0r.3857533489766836826" id="1559571946845222018">
-            <property name="text" nameId="vs0r.3857533489766836827" value="5 - ON ATRIAM SENCE CIRCUIT ON" />
-          </node>
-          <node role="parts" roleId="vs0r.3857533489766836837" type="vs0r.DocPart" typeId="vs0r.3857533489766836826" id="1559571946845222010">
-            <property name="text" nameId="vs0r.3857533489766836827" value="PORTE :" />
-          </node>
-          <node role="parts" roleId="vs0r.3857533489766836837" type="vs0r.DocPart" typeId="vs0r.3857533489766836826" id="1559571946845222019">
-            <property name="text" nameId="vs0r.3857533489766836827" value="0 - ON VENTRICLE CHARGING CIRCUIT ON" />
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="6068976060903393751">
+          <node role="textblock" roleId="c4fa.8624890525768479139" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="6068976060903393752">
+            <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="6068976060903393753">
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6068976060903393754" />
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6068976060903393755">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="PORTA : --- PORTB : 7 - 1 - ON ATRIUM CHARCING CIRCUIT PORTC : --- PORTD : 0 - OFF VENTRICLE IMPEDENCE CIRCUIT OFF 1 - OFF ATRIUM IMPEDENCE CIRCUIT OFF 4 - ON VETRICLE SENCE CIRCUIT ON 5 - ON ATRIAM SENCE CIRCUIT ON PORTE : 0 - ON VENTRICLE CHARGING CIRCUIT ON" />
+              </node>
+            </node>
           </node>
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="1559571946845221904">
@@ -3335,9 +3255,14 @@
           </node>
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="1559571946845221923" />
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.MultiLineCommentStatement" typeId="c4fa.7565145259447112915" id="1559571946845221925">
-          <node role="parts" roleId="vs0r.3857533489766836837" type="vs0r.DocPart" typeId="vs0r.3857533489766836826" id="1559571946845221926">
-            <property name="text" nameId="vs0r.3857533489766836827" value="Initialize the ventricle leads" />
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="6068976060903393941">
+          <node role="textblock" roleId="c4fa.8624890525768479139" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="6068976060903393942">
+            <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="6068976060903393943">
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6068976060903393944" />
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6068976060903393945">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="Initialize the ventricle leads" />
+              </node>
+            </node>
           </node>
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="1559571946845221928">
@@ -3373,9 +3298,14 @@
           </node>
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="1559571946845221944" />
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.MultiLineCommentStatement" typeId="c4fa.7565145259447112915" id="1559571946845221946">
-          <node role="parts" roleId="vs0r.3857533489766836837" type="vs0r.DocPart" typeId="vs0r.3857533489766836826" id="1559571946845221947">
-            <property name="text" nameId="vs0r.3857533489766836827" value="Initialize the atrial leads" />
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="6068976060903393696">
+          <node role="textblock" roleId="c4fa.8624890525768479139" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="6068976060903393697">
+            <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="6068976060903393698">
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6068976060903393699" />
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6068976060903393700">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="Initialize the atrial leads" />
+              </node>
+            </node>
           </node>
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="1559571946845221949">
@@ -3411,9 +3341,14 @@
           </node>
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="1559571946845222024" />
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.MultiLineCommentStatement" typeId="c4fa.7565145259447112915" id="4712415786988364422">
-          <node role="parts" roleId="vs0r.3857533489766836837" type="vs0r.DocPart" typeId="vs0r.3857533489766836826" id="4712415786988364423">
-            <property name="text" nameId="vs0r.3857533489766836827" value="Initialize Digital Resistors I2C line" />
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="6068976060903393561">
+          <node role="textblock" roleId="c4fa.8624890525768479139" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="6068976060903393562">
+            <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="6068976060903393563">
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6068976060903393564" />
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6068976060903393565">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="Initialize Digital Resistors I2C line" />
+              </node>
+            </node>
           </node>
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="4712415786988364449">
@@ -4034,9 +3969,14 @@
           </node>
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="4712415786988364562" />
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.MultiLineCommentStatement" typeId="c4fa.7565145259447112915" id="4712415786988364564">
-          <node role="parts" roleId="vs0r.3857533489766836837" type="vs0r.DocPart" typeId="vs0r.3857533489766836826" id="4712415786988364565">
-            <property name="text" nameId="vs0r.3857533489766836827" value="Read the device's response on the 9th clock pulse" />
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="6068976060903393381">
+          <node role="textblock" roleId="c4fa.8624890525768479139" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="6068976060903393382">
+            <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="6068976060903393383">
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6068976060903393384" />
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6068976060903393385">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="Read the device's response on the 9th clock pulse" />
+              </node>
+            </node>
           </node>
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="4712415786988364570">
@@ -4108,9 +4048,14 @@
           </node>
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="4712415786988513548" />
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.MultiLineCommentStatement" typeId="c4fa.7565145259447112915" id="4712415786988364636">
-          <node role="parts" roleId="vs0r.3857533489766836837" type="vs0r.DocPart" typeId="vs0r.3857533489766836826" id="4712415786988364637">
-            <property name="text" nameId="vs0r.3857533489766836827" value="If device pulled the SDA line low durring the 9th pulse then an ACK has been received" />
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="6068976060903393906">
+          <node role="textblock" roleId="c4fa.8624890525768479139" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="6068976060903393907">
+            <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="6068976060903393908">
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6068976060903393909" />
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6068976060903393910">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="If device pulled the SDA line low durring the 9th pulse then an ACK has been received" />
+              </node>
+            </node>
           </node>
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="x27k.ReturnStatement" typeId="x27k.8967919205527146149" id="4712415786988364627">
@@ -4425,9 +4370,14 @@
           </node>
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="4712415786988364991" />
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.MultiLineCommentStatement" typeId="c4fa.7565145259447112915" id="4712415786988365059">
-          <node role="parts" roleId="vs0r.3857533489766836837" type="vs0r.DocPart" typeId="vs0r.3857533489766836826" id="4712415786988365060">
-            <property name="text" nameId="vs0r.3857533489766836827" value="all is ok so far, send the data byte" />
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="6068976060903393831">
+          <node role="textblock" roleId="c4fa.8624890525768479139" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="6068976060903393832">
+            <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="6068976060903393833">
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6068976060903393834" />
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6068976060903393835">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="all is ok so far, send the data byte" />
+              </node>
+            </node>
           </node>
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.IfStatement" typeId="c4fa.6275792049641600983" id="4712415786988365044">
@@ -4498,24 +4448,14 @@
       <property name="name" nameId="tpck.1169194664001" value="SetSenseGain" />
       <property name="exported" nameId="x27k.1317894735999272944" value="true" />
       <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="4712415786988524814">
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.MultiLineCommentStatement" typeId="c4fa.7565145259447112915" id="4712415786988524821">
-          <node role="parts" roleId="vs0r.3857533489766836837" type="vs0r.DocPart" typeId="vs0r.3857533489766836826" id="4712415786988524822">
-            <property name="text" nameId="vs0r.3857533489766836827" value="The sensed voltage is in the order of mV and therefore needs amplification. This is done through a OpAmp with" />
-          </node>
-          <node role="parts" roleId="vs0r.3857533489766836837" type="vs0r.DocPart" typeId="vs0r.3857533489766836826" id="4712415786988524823">
-            <property name="text" nameId="vs0r.3857533489766836827" value="a resistor controlled gain. Under these conditions, the gain can only take values from the following domain :" />
-          </node>
-          <node role="parts" roleId="vs0r.3857533489766836837" type="vs0r.DocPart" typeId="vs0r.3857533489766836826" id="4712415786988524824">
-            <property name="text" nameId="vs0r.3857533489766836827" value="[1.99, 155.37]. Be advised though: because the resistor used is of digital type, not all gain values are " />
-          </node>
-          <node role="parts" roleId="vs0r.3857533489766836837" type="vs0r.DocPart" typeId="vs0r.3857533489766836826" id="4712415786988524825">
-            <property name="text" nameId="vs0r.3857533489766836827" value="obtainable. The function aproximates a obtainable gain for every valid value asked." />
-          </node>
-          <node role="parts" roleId="vs0r.3857533489766836837" type="vs0r.DocPart" typeId="vs0r.3857533489766836826" id="4712415786988524826">
-            <property name="text" nameId="vs0r.3857533489766836827" value="The function used for calculating the RDAC data is as follows :" />
-          </node>
-          <node role="parts" roleId="vs0r.3857533489766836837" type="vs0r.DocPart" typeId="vs0r.3857533489766836826" id="4712415786988524827">
-            <property name="text" nameId="vs0r.3857533489766836827" value="DRValue = 252.928/(DesiredGain - 1) - 1.6384" />
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="6068976060903393801">
+          <node role="textblock" roleId="c4fa.8624890525768479139" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="6068976060903393802">
+            <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="6068976060903393803">
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6068976060903393804" />
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6068976060903393805">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="The sensed voltage is in the order of mV and therefore needs amplification. This is done through a OpAmp with a resistor controlled gain. Under these conditions, the gain can only take values from the following domain : [1.99, 155.37]. Be advised though: because the resistor used is of digital type, not all gain values are  obtainable. The function aproximates a obtainable gain for every valid value asked. The function used for calculating the RDAC data is as follows : DRValue = 252.928\/(DesiredGain - 1) - 1.6384" />
+              </node>
+            </node>
           </node>
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.IfStatement" typeId="c4fa.6275792049641600983" id="4712415786988524830">
@@ -4544,9 +4484,14 @@
           </node>
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="4712415786988524858" />
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.MultiLineCommentStatement" typeId="c4fa.7565145259447112915" id="4712415786988559211">
-          <node role="parts" roleId="vs0r.3857533489766836837" type="vs0r.DocPart" typeId="vs0r.3857533489766836826" id="4712415786988559212">
-            <property name="text" nameId="vs0r.3857533489766836827" value="I know that this is an uneeded step and that it could be compacted, but PICC18 crashes if it does!" />
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="6068976060903393756">
+          <node role="textblock" roleId="c4fa.8624890525768479139" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="6068976060903393757">
+            <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="6068976060903393758">
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6068976060903393759" />
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6068976060903393760">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="I know that this is an uneeded step and that it could be compacted, but PICC18 crashes if it does!" />
+              </node>
+            </node>
           </node>
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="4712415786988559202">
@@ -4618,15 +4563,14 @@
       <property name="name" nameId="tpck.1169194664001" value="SetTripVoltage" />
       <property name="exported" nameId="x27k.1317894735999272944" value="true" />
       <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="4712415786988364903">
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.MultiLineCommentStatement" typeId="c4fa.7565145259447112915" id="4712415786988364910">
-          <node role="parts" roleId="vs0r.3857533489766836837" type="vs0r.DocPart" typeId="vs0r.3857533489766836826" id="4712415786988364911">
-            <property name="text" nameId="vs0r.3857533489766836827" value="According to the math, val may only take values in the the following range : [1.43, 4.92]V" />
-          </node>
-          <node role="parts" roleId="vs0r.3857533489766836837" type="vs0r.DocPart" typeId="vs0r.3857533489766836826" id="4712415786988364912">
-            <property name="text" nameId="vs0r.3857533489766836827" value="The actual formula for calculating the value of the digital resistance is as follows :" />
-          </node>
-          <node role="parts" roleId="vs0r.3857533489766836837" type="vs0r.DocPart" typeId="vs0r.3857533489766836826" id="4712415786988364913">
-            <property name="text" nameId="vs0r.3857533489766836827" value="DRValue = 512/Vtrip - 104.038 for a voltage devider made with a tied-to-grown 20K nominal resistance" />
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="6068976060903393356">
+          <node role="textblock" roleId="c4fa.8624890525768479139" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="6068976060903393357">
+            <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="6068976060903393358">
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6068976060903393359" />
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6068976060903393360">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="According to the math, val may only take values in the the following range : [1.43, 4.92]V The actual formula for calculating the value of the digital resistance is as follows : DRValue = 512\/Vtrip - 104.038 for a voltage devider made with a tied-to-grown 20K nominal resistance" />
+              </node>
+            </node>
           </node>
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.IfStatement" typeId="c4fa.6275792049641600983" id="4712415786988364916">
