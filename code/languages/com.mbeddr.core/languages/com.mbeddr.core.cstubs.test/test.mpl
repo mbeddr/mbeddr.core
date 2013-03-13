@@ -45,7 +45,7 @@
             </external-mapping>
           </greater-priority-mapping>
           <lesser-priority-mapping>
-            <generator generatorUID="com.mbeddr.core.cstubs.test#3355994504310952831" />
+            <generator generatorUID="28901f34-a095-43a2-98bf-10c380d71b88(com.mbeddr.core.cstubs.test#3355994504310952831)" />
             <external-mapping>
               <mapping-set>
                 <mapping-set-element>

@@ -19,6 +19,7 @@
       <modulePath path="${project}/languages/com.mbeddr.ext.exceptionhandling/exceptionhandling.mpl" folder="exceptionhandling" />
       <modulePath path="${project}/languages/com.mbeddr.ext.physicalunits.c/c.mpl" folder="units" />
       <modulePath path="${project}/languages/com.mbeddr.ext.physicalunits/physicalunits.mpl" folder="units" />
+      <modulePath path="${project}/languages/com.mbeddr.ext.statemachines/pluginSolution/com.mbeddr.ext.statemachines.pluginSolution.msd" folder="statemachine" />
       <modulePath path="${project}/languages/com.mbeddr.ext.statemachines/statemachines.mpl" folder="statemachine" />
       <modulePath path="${project}/lib/com.mbeddr.ext.exceptionhandling.lib/lib.msd" folder="exceptionhandling" />
       <modulePath path="${project}/tests/test.ex.ext.comp_mocking/comp_mocking.msd" folder="tests.comp" />

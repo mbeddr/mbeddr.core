@@ -6,12 +6,15 @@ cd com.mbeddr.spawner
 ant delete-mps-generated-code
 cd ..
 
-
 cd com.mbeddr.debugger
 ant delete-mps-generated-code
 cd ..
 
 cd com.mbeddr.core
+ant delete-mps-generated-code
+cd ..
+
+cd com.mbeddr.debugger.tests
 ant delete-mps-generated-code
 cd ..
 
@@ -21,10 +24,8 @@ cd ..
 
 cd com.mbeddr.ext
 ant delete-mps-generated-code
-
 cd ..
 
 cd com.mbeddr.analyses
 ant delete-mps-generated-code
-
 cd ..

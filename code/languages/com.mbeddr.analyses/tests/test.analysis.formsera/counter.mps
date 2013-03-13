@@ -441,6 +441,9 @@
         <link role="module" roleId="51wr.7717755763392524108" targetNodeId="4974736285582413482" resolveInfo="Counters" />
       </node>
     </node>
+    <node role="configurationItems" roleId="vs0r.4459718605982007338" type="clqz.StatemachineConfigItem" typeId="clqz.4709703140582114943" id="6183633367245147495">
+      <property name="triggerAsConst" nameId="clqz.4709703140582114945" value="true" />
+    </node>
   </root>
 </model>
 

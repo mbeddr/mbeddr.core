@@ -105,6 +105,11 @@
       <property name="virtualPackage" nameId="tpck.1193676396447" value="fm" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
     </node>
+    <node type="tpce.EnumerationDataTypeDeclaration" typeId="tpce.1082978164219" id="4375745351933311823">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="fm" />
+      <property name="name" nameId="tpck.1169194664001" value="ExtraConstraintType" />
+      <link role="memberDataType" roleId="tpce.1083171729157" targetNodeId="tpck.1082983657062" resolveInfo="integer" />
+    </node>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="2203816361987134490">
       <property name="name" nameId="tpck.1169194664001" value="DerivedFeature" />
       <property name="virtualPackage" nameId="tpck.1193676396447" value="fm" />
@@ -114,11 +119,6 @@
       <property name="virtualPackage" nameId="tpck.1193676396447" value="fm" />
       <property name="name" nameId="tpck.1169194664001" value="ConfigurationDependantExpression" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="mj1l.8860443239512128050" resolveInfo="Expression" />
-    </node>
-    <node type="tpce.EnumerationDataTypeDeclaration" typeId="tpce.1082978164219" id="4375745351933311823">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="fm" />
-      <property name="name" nameId="tpck.1169194664001" value="ExtraConstraintType" />
-      <link role="memberDataType" roleId="tpce.1083171729157" targetNodeId="tpck.1082983657062" resolveInfo="integer" />
     </node>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4508614440797534978">
       <property name="virtualPackage" nameId="tpck.1193676396447" value="fm" />
@@ -351,6 +351,16 @@
       <link role="dataType" roleId="tpce.1082985295845" targetNodeId="4375745351933311823" resolveInfo="ExtraConstraintType" />
     </node>
   </root>
+  <root id="4375745351933311823">
+    <node role="member" roleId="tpce.1083172003582" type="tpce.EnumerationMemberDeclaration" typeId="tpce.1083171877298" id="4375745351933311824">
+      <property name="externalValue" nameId="tpce.1083923523172" value="error" />
+      <property name="internalValue" nameId="tpce.1083923523171" value="0" />
+    </node>
+    <node role="member" roleId="tpce.1083172003582" type="tpce.EnumerationMemberDeclaration" typeId="tpce.1083171877298" id="4375745351933311825">
+      <property name="externalValue" nameId="tpce.1083923523172" value="warning" />
+      <property name="internalValue" nameId="tpce.1083923523171" value="1" />
+    </node>
+  </root>
   <root id="2203816361987134490">
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="2203816361987258679">
       <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
@@ -369,16 +379,6 @@
       <property name="role" nameId="tpce.1071599776563" value="cases" />
       <property name="sourceCardinality" nameId="tpce.1071599893252" value="1..n" />
       <link role="target" roleId="tpce.1071599976176" targetNodeId="qdv7.4508614440797598369" resolveInfo="UnderConditionExpression" />
-    </node>
-  </root>
-  <root id="4375745351933311823">
-    <node role="member" roleId="tpce.1083172003582" type="tpce.EnumerationMemberDeclaration" typeId="tpce.1083171877298" id="4375745351933311824">
-      <property name="externalValue" nameId="tpce.1083923523172" value="error" />
-      <property name="internalValue" nameId="tpce.1083923523171" value="0" />
-    </node>
-    <node role="member" roleId="tpce.1083172003582" type="tpce.EnumerationMemberDeclaration" typeId="tpce.1083171877298" id="4375745351933311825">
-      <property name="externalValue" nameId="tpce.1083923523172" value="warning" />
-      <property name="internalValue" nameId="tpce.1083923523171" value="1" />
     </node>
   </root>
   <root id="4508614440797534978">

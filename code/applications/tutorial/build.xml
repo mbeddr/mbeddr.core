@@ -13,6 +13,9 @@
   <property name="mbeddr.ext.project.dir" value="code/languages/com.mbeddr.ext"/>
   <property name="mbeddr.ext.project.mpr" value="code/languages/com.mbeddr.ext/ext.dev.mpr"/> <!-- for the time being in core project... -->
 
+  <property name="mbeddr.doc.project.dir" value="code/languages/com.mbeddr.doc"/>
+  <property name="mbeddr.doc.project.mpr" value="code/languages/com.mbeddr.doc/com.mbeddr.doc.mpr"/> 
+
   <property name="mbeddr.util.project.dir" value="code/languages/com.mbeddr.mpsutil"/>
   <property name="mbeddr.util.project.mpr" value="code/languages/com.mbeddr.mpsutil/mpsutil.dev.mpr"/>
 
@@ -28,6 +31,7 @@
   <property name="utilLanguageDir" value="${mbeddr.github.core.home}/${mbeddr.util.project.dir}/languages"/>
   <property name="debuggerLanguageDir" value="${mbeddr.github.core.home}/${mbeddr.debugger.project.dir}/languages"/>
   <property name="coreLanguageDir" value="${mbeddr.github.core.home}/${mbeddr.core.project.dir}/languages"/>
+  <property name="docLanguageDir" value="${mbeddr.github.core.home}/${mbeddr.doc.project.dir}/languages"/>
   <property name="extLanguageDir" value="${mbeddr.github.core.home}/${mbeddr.ext.project.dir}/languages"/>
   <property name="ccLanguageDir" value="${mbeddr.github.core.home}/${mbeddr.cc.project.dir}/languages"/>
   <property name="analysesanguageDir" value="${mbeddr.github.core.home}/${mbeddr.analyses.project.dir}/languages"/>
@@ -76,6 +80,7 @@
       <library name="core.project" dir="${coreLanguageDir}"/>                                                                                                
       <library name="debugger.project" dir="${debuggerLanguageDir}"/>                                                                                        
       <library name="ext.project" dir="${extLanguageDir}"/> 
+      <library name="doc.project" dir="${docLanguageDir}"/> 
       <library name="cc.project" dir="${ccLanguageDir}"/> 
 	  <library name="analyses.project" dir="${analysesanguageDir}"/> 
       <library name="tutorial.project" dir="${mbeddr.github.core.home}/${mbeddr.tutorial.project.dir}/languages"/> 
