@@ -103,7 +103,7 @@
       <property name="name" nameId="tpck.1169194664001" value="empty_1363188761337_2" />
     </node>
     <node role="authors" roleId="2c95.126932837435370865" type="2c95.Author" typeId="2c95.126932837435370850" id="2293093897292931469">
-      <property name="name" nameId="2c95.126932837435370851" value="Makrus Voelter" />
+      <property name="name" nameId="2c95.126932837435370851" value="Markus Voelter" />
       <property name="email" nameId="2c95.126932837435370852" value="voelter@acm.org" />
     </node>
   </root>
@@ -506,7 +506,7 @@
       <property name="name" nameId="tpck.1169194664001" value="empty_1363192629115_1" />
     </node>
     <node role="authors" roleId="2c95.126932837435370865" type="2c95.Author" typeId="2c95.126932837435370850" id="8730648445432859522">
-      <property name="name" nameId="2c95.126932837435370851" value="Makrus Voelter" />
+      <property name="name" nameId="2c95.126932837435370851" value="Markus Voelter" />
       <property name="email" nameId="2c95.126932837435370852" value="voelter@acm.org" />
     </node>
   </root>
