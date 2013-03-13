@@ -3,12 +3,14 @@
   <persistence version="7" />
   <language namespace="d7145000-936a-47e8-95a5-71f220e623f9(com.mbeddr.doc.self)" />
   <devkit namespace="54c79f9f-f3ba-4167-91f1-eb4e98a9c47c(com.mbeddr.documentation)" />
+  <import index="bskg" modelUID="r:be2272c0-bc2d-4ac4-a164-b072c9e60516(exampleCCode)" version="-1" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="2c95" modelUID="r:5f7188a9-e7b4-4a2e-bef9-38d2cf379fdc(com.mbeddr.doc.structure)" version="6" implicit="yes" />
   <import index="87nw" modelUID="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" version="5" implicit="yes" />
   <import index="g9w8" modelUID="r:506f4964-2b3f-49f3-a581-8c498222bac6(com.mbeddr.doc.gen_latex.structure)" version="-1" implicit="yes" />
   <import index="z5ox" modelUID="r:48b6c04c-173b-45da-963f-54fbbdb59cfc(com.mbeddr.doc.self.structure)" version="-1" implicit="yes" />
   <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="7" implicit="yes" />
+  <import index="rh4a" modelUID="r:51a64317-678a-4e8f-9df1-1e83f73c9d71(com.mbeddr.doc.c.structure)" version="4" implicit="yes" />
   <roots>
     <node type="2c95.Document" typeId="2c95.3350625596579911728" id="2293093897292931468">
       <property name="name" nameId="tpck.1169194664001" value="A_Introduction" />
@@ -145,15 +147,9 @@
     </node>
   </root>
   <root id="8730648445432859484">
-    <node role="contents" roleId="2c95.3350625596580064250" type="2c95.EmptyDocContent" typeId="2c95.3350625596579911760" id="8730648445432859507">
-      <property name="name" nameId="tpck.1169194664001" value="empty_1363185603105_3" />
-    </node>
     <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Section" typeId="2c95.3350625596580064455" id="8730648445432859508">
       <property name="name" nameId="tpck.1169194664001" value="normalDocs" />
       <property name="text" nameId="2c95.3350625596580064225" value="Writing Regular Documents" />
-      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.EmptyDocContent" typeId="2c95.3350625596579911760" id="8730648445433286684">
-        <property name="name" nameId="tpck.1169194664001" value="empty_1363194801353_18" />
-      </node>
       <node role="contents" roleId="2c95.3350625596580064250" type="2c95.SubSection" typeId="2c95.3350625596580064457" id="8730648445433286682">
         <property name="name" nameId="tpck.1169194664001" value="simpleText" />
         <property name="text" nameId="2c95.3350625596580064225" value="Simple Text" />
@@ -557,7 +553,133 @@
           <node role="words" roleId="87nw.2557074442922392302" type="2c95.SectRefWord" typeId="2c95.3350625596580108709" id="8730648445433290625">
             <link role="target" roleId="2c95.3350625596580108719" targetNodeId="2293093897292937699" resolveInfo="introduction" />
           </node>
-          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8730648445433290626" />
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8730648445433290626">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value=". In this\nsection we explain how it works." />
+          </node>
+        </node>
+      </node>
+      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.SubSection" typeId="2c95.3350625596580064457" id="8730648445433473733">
+        <property name="name" nameId="tpck.1169194664001" value="referencingCode" />
+        <property name="text" nameId="2c95.3350625596580064225" value="Referencing Code" />
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="8730648445433543909">
+          <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="8730648445433543910">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8730648445433543911">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="The simplest way of integrating documentation prose is to use references\nto mbeddr code. Why would you do this? Of course to be refactoring-safe: as\nyou rename the referenced element, the text in the documentation changes with it.\nIf you delete the element, the reference breaks, and you know you have to change\nsomething. " />
+            </node>
+          </node>
+        </node>
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="8730648445433601025">
+          <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="8730648445433601026">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8730648445433601027">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="For example, you reference the interface " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="rh4a.ContentRefWord" typeId="rh4a.4457500422381536784" id="8730648445433601028">
+              <link role="content" roleId="rh4a.4457500422381536794" targetNodeId="bskg.8730648445433600010" resolveInfo="Calculator" />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8730648445433601029">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" using the " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="8730648445433601030">
+              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="8730648445433601031">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8730648445433601032">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="@cc" />
+                </node>
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8730648445433601033">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="\nembedded node. You can also refer to any named child of a top level content by\nselecting that child after the slash in the " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="8730648445433601034">
+              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="8730648445433601035">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8730648445433601036">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="@cc" />
+                </node>
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8730648445433601037">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" element. For example, you\ncan refer to an argument " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="rh4a.ContentRefWord" typeId="rh4a.4457500422381536784" id="8730648445433601038">
+              <link role="content" roleId="rh4a.4457500422381536794" targetNodeId="bskg.8730648445433600010" resolveInfo="Calculator" />
+              <link role="detail" roleId="rh4a.4509696981881923017" targetNodeId="bskg.8730648445433600016" resolveInfo="x" />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8730648445433601039">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=". If you want to reference things that\ndo not have a name, you can attach a name label to an element (using the \n" />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="8730648445433601045">
+              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="8730648445433601046">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8730648445433601047">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="Attach  Name" />
+                </node>
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8730648445433601048">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" intention; you need to use the " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="8730648445433601049">
+              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="8730648445433601050">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8730648445433601051">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="com.mbeddr.doc.c" />
+                </node>
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8730648445433601053">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" language\nin the respective mbeddr model to get the intention. For example, we can refer to\n" />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="rh4a.ContentRefWord" typeId="rh4a.4457500422381536784" id="8730648445433601055">
+              <property name="referenceText" nameId="rh4a.4509696981882039909" value="a precondition" />
+              <link role="content" roleId="rh4a.4457500422381536794" targetNodeId="bskg.8730648445433600010" resolveInfo="Calculator" />
+              <link role="detail" roleId="rh4a.4509696981881923017" targetNodeId="bskg.8730648445433601044" resolveInfo="aPreCondition" />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8730648445433601056">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=". " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.ImgRefWord" typeId="2c95.6386504476136420159" id="8730648445433601064">
+              <link role="image" roleId="2c95.6386504476136420174" targetNodeId="8730648445433601058" resolveInfo="calculator" />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8730648445433601063">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" shows how this looks in the code." />
+            </node>
+          </node>
+        </node>
+        <node role="contents" roleId="2c95.3350625596580064250" type="rh4a.CCodeAsImageParagraph" typeId="rh4a.6416473402306197330" id="8730648445433601058">
+          <property name="name" nameId="tpck.1169194664001" value="calculator" />
+          <link role="module" roleId="rh4a.6416473402306172903" targetNodeId="bskg.8730648445433290556" resolveInfo="ExampleCode" />
+          <link role="code" roleId="rh4a.6416473402306172904" targetNodeId="bskg.8730648445433600010" resolveInfo="Calculator" />
+          <link role="path" roleId="rh4a.6416473402306197356" targetNodeId="8730648445432874250" resolveInfo="imgTemp" />
+          <node role="description" roleId="rh4a.2726240646375887189" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8730648445433601059">
+            <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8730648445433601060">
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8730648445433601061">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="An interface with a marker on a precondition, so it can be referenced. " />
+              </node>
+            </node>
+          </node>
+          <node role="sizeSpec" roleId="rh4a.8624890525767931140" type="2c95.PageWidthSizeSpec" typeId="2c95.8624890525767637976" id="8730648445433601062">
+            <property name="percentage" nameId="2c95.8624890525767637977" value="100" />
+          </node>
+        </node>
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="8730648445433601067">
+          <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="8730648445433601068">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8730648445433601069">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="In addition, you can also refer to modules using the " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="8730648445433601070">
+              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="8730648445433601071">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8730648445433601072">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="@cm" />
+                </node>
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8730648445433601073">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" node. For example,\nhere we refer to the " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="rh4a.ModuleRefWord" typeId="rh4a.794010416819955528" id="8730648445433601074">
+              <link role="module" roleId="rh4a.794010416819955529" targetNodeId="bskg.8730648445433290556" resolveInfo="ExampleCode" />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8730648445433601075">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" module." />
+            </node>
+          </node>
         </node>
       </node>
     </node>
