@@ -143,6 +143,10 @@
       <property name="name" nameId="tpck.1169194664001" value="TextBlock" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
     </node>
+    <node type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="8624890525768344447">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="paragraphs" />
+      <property name="name" nameId="tpck.1169194664001" value="ITextBlockOwner" />
+    </node>
   </roots>
   <root id="7024921229555594291">
     <node role="extends" roleId="tpce.1169127546356" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7024921229555594292">
@@ -190,6 +194,9 @@
     </node>
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="154287305789211529">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="154287305789211528" resolveInfo="IHasDocParts" />
+    </node>
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="8624890525768344977">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="8624890525768344447" resolveInfo="ITextBlockOwner" />
     </node>
   </root>
   <root id="3857533489766146432" />
@@ -854,5 +861,6 @@
       <link role="target" roleId="tpce.1071599976176" targetNodeId="87nw.2557074442922380897" resolveInfo="Text" />
     </node>
   </root>
+  <root id="8624890525768344447" />
 </model>
 
