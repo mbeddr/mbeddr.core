@@ -3306,7 +3306,13 @@
                 <link role="mc" roleId="x27k.4052432714773079905" targetNodeId="7727566415687763044" resolveInfo="HIGH_SPEED" />
               </node>
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6068976060903866978">
-                <property name="escapedValue" nameId="87nw.2557074442922438158" value=" constants. " />
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value=" constants. These constants are defined in the\nsame module " />
+              </node>
+              <node role="words" roleId="87nw.2557074442922392302" type="x27k.ModuleRefWord" typeId="x27k.6068976060903930232" id="6068976060903988797">
+                <link role="module" roleId="x27k.6068976060903930233" targetNodeId="5160057464295358354" resolveInfo="StateMachines" />
+              </node>
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6068976060903988798">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="." />
               </node>
             </node>
           </node>

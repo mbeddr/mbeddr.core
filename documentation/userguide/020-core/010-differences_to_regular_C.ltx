@@ -905,6 +905,33 @@ machines.
 \end{center}
 
 
+\parhead{Embedding Nodes} The documentation elements and comments cannot just
+contain plain text; they can also contain embedded nodes. In principle, they can
+contain arbitrary nodes, however, obviously useful things in the context of
+comments are references to other program elements. By using actual references
+instead of "just text", the references can actually be followed, they are
+automatically renamed if the target element is renamed, and, if the target
+element is deleted, the reference breaks, hinting at the need to rework the
+documentation. Here is an example of a state machine with comments that embed
+nodes:
+
+\begin{center} 
+  \includegraphics[width=0.8\columnwidth]{figures/core/commentsWithEmbeddedNodes.png}
+\end{center}
+
+Nodes can be embedded by pressing \keystroke{Ctrl-Space} and selecting a node
+anywhere in the text. The following embeddable references are generically
+embeddable: \ic{@module} references a module; \ic{@top} references any top level
+C construct such as a \ic{struct}, a constant, a function, an interface or a
+state machine (anything that resides directly in a module). \ic{@child}
+references any named child of the owning top level construct. 
+
+Dependending on the context, additional references may be available. For
+example, in the documentation of functions, references to arguments are
+available via \ic{@arg}.
+
+
+
 \parhead{TODOs} mbeddr comes with a special view for collecting and showing
 TODOs in comments. Anywhere within the comments discussed above, you can write
 \ic{TODO and then some text} or \ic{TODO(category) and then some text} (see
