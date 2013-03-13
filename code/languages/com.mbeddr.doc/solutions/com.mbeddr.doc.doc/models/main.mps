@@ -108,6 +108,10 @@
       <property name="name" nameId="tpck.1169194664001" value="imgTemp" />
       <property name="editTimePath" nameId="2c95.6386504476136472797" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.doc/solutions/com.mbeddr.doc.doc/temp" />
     </node>
+    <node role="paths" roleId="2c95.6386504476136472817" type="2c95.PathDefinition" typeId="2c95.6386504476136472795" id="8730648445433243074">
+      <property name="name" nameId="tpck.1169194664001" value="images" />
+      <property name="editTimePath" nameId="2c95.6386504476136472797" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.doc/solutions/com.mbeddr.doc.doc/images" />
+    </node>
   </root>
   <root id="2293093897293118943">
     <node role="renderer" roleId="2c95.6068976060904007487" type="g9w8.LatexRenderer" typeId="g9w8.4457500422381351715" id="2293093897293118947">
@@ -120,6 +124,10 @@
     <node role="mappings" roleId="2c95.6068976060904007490" type="2c95.PathMapping" typeId="2c95.6386504476136554612" id="8730648445433186999">
       <property name="mappedPath" nameId="2c95.6386504476136554614" value="images/" />
       <link role="pathDef" roleId="2c95.6386504476136554613" targetNodeId="8730648445432874250" resolveInfo="imgTemp" />
+    </node>
+    <node role="mappings" roleId="2c95.6068976060904007490" type="2c95.PathMapping" typeId="2c95.6386504476136554612" id="8730648445433243076">
+      <property name="mappedPath" nameId="2c95.6386504476136554614" value="images/" />
+      <link role="pathDef" roleId="2c95.6386504476136554613" targetNodeId="8730648445433243074" resolveInfo="images" />
     </node>
   </root>
   <root id="8730648445432859484">
@@ -172,7 +180,7 @@
             <property name="escapedValue" nameId="87nw.2557074442922438158" value="). It has vertical brackets \non both sides to denote its boundary. Below in fig " />
           </node>
           <node role="words" roleId="87nw.2557074442922392302" type="2c95.ImgRefWord" typeId="2c95.6386504476136420159" id="8730648445433184034">
-            <link role="image" roleId="2c95.6386504476136420174" targetNodeId="8730648445432874248" resolveInfo="section1" />
+            <link role="image" roleId="2c95.6386504476136420174" targetNodeId="8730648445432874248" resolveInfo="exSection" />
           </node>
           <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8730648445433184033">
             <property name="escapedValue" nameId="87nw.2557074442922438158" value=" is an \nexample, that also embeds this same paragraph as an image." />
@@ -180,7 +188,7 @@
         </node>
       </node>
       <node role="contents" roleId="2c95.3350625596580064250" type="z5ox.SectionAsImageParagraph" typeId="z5ox.6416473402306197330" id="8730648445432874248">
-        <property name="name" nameId="tpck.1169194664001" value="section1" />
+        <property name="name" nameId="tpck.1169194664001" value="exSection" />
         <link role="section" roleId="z5ox.8730648445432859548" targetNodeId="8730648445432859508" resolveInfo="normalDocs" />
         <link role="path" roleId="z5ox.6416473402306197356" targetNodeId="8730648445432874250" resolveInfo="imgTemp" />
         <node role="sizeSpec" roleId="z5ox.8624890525767931140" type="2c95.PageWidthSizeSpec" typeId="2c95.8624890525767637976" id="8730648445432874251">
@@ -189,20 +197,182 @@
         <node role="description" roleId="z5ox.8730648445433126847" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8730648445433182408">
           <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8730648445433182409">
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8730648445433182410">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value="An example section from a document." />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="An example section from a document. It is embedded as an image." />
             </node>
           </node>
         </node>
       </node>
     </node>
-    <node role="contents" roleId="2c95.3350625596580064250" type="2c95.EmptyDocContent" typeId="2c95.3350625596579911760" id="8730648445432859521">
-      <property name="name" nameId="tpck.1169194664001" value="empty_1363188761337_2" />
+    <node role="contents" roleId="2c95.3350625596580064250" type="2c95.EmptyDocContent" typeId="2c95.3350625596579911760" id="8730648445433241606">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1363191714496_9" />
     </node>
-    <node role="contents" roleId="2c95.3350625596580064250" type="2c95.EmptyDocContent" typeId="2c95.3350625596579911760" id="8730648445432859545">
-      <property name="name" nameId="tpck.1169194664001" value="empty_1363189036734_10" />
+    <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Section" typeId="2c95.3350625596580064455" id="8730648445433240865">
+      <property name="name" nameId="tpck.1169194664001" value="formatting" />
+      <property name="text" nameId="2c95.3350625596580064225" value="Formatting Text" />
+      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="8730648445433240094">
+        <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="8730648445433240095">
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8730648445433240096">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value="Of course, it is possible to format words as " />
+          </node>
+          <node role="words" roleId="87nw.2557074442922392302" type="2c95.EmphasizedWord" typeId="2c95.4457500422381556825" id="8730648445433240097">
+            <property name="text" nameId="2c95.4457500422381556838" value="emphasized" />
+          </node>
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8730648445433240098">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value=" as well as as\n" />
+          </node>
+          <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="8730648445433240099">
+            <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="8730648445433240100">
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8730648445433240101">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="code" />
+              </node>
+            </node>
+          </node>
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8730648445433240102">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value=", and more formatting options will show up over time. You can press\n" />
+          </node>
+          <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="8730648445433240105">
+            <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="8730648445433240106">
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8730648445433240107">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="Ctrl-Space" />
+              </node>
+            </node>
+          </node>
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8730648445433240108">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value=" in the text paragraph to see which formatting options are \navailable. Formatting options all start with a hash sign. " />
+          </node>
+          <node role="words" roleId="87nw.2557074442922392302" type="2c95.ImgRefWord" typeId="2c95.6386504476136420159" id="8730648445433240120">
+            <link role="image" roleId="2c95.6386504476136420174" targetNodeId="8730648445433240114" resolveInfo="formatting" />
+          </node>
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8730648445433240119">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value=" shows \nthe paragraph you're reading here as a screenshot so you can see the way to \nformat words. " />
+          </node>
+        </node>
+      </node>
+      <node role="contents" roleId="2c95.3350625596580064250" type="z5ox.SectionAsImageParagraph" typeId="z5ox.6416473402306197330" id="8730648445433240114">
+        <property name="name" nameId="tpck.1169194664001" value="formatting" />
+        <link role="path" roleId="z5ox.6416473402306197356" targetNodeId="8730648445432874250" resolveInfo="imgTemp" />
+        <link role="section" roleId="z5ox.8730648445432859548" targetNodeId="8730648445433240865" resolveInfo="formatting" />
+        <node role="sizeSpec" roleId="z5ox.8624890525767931140" type="2c95.PageWidthSizeSpec" typeId="2c95.8624890525767637976" id="8730648445433240124">
+          <property name="percentage" nameId="2c95.8624890525767637977" value="100" />
+        </node>
+        <node role="description" roleId="z5ox.8730648445433126847" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8730648445433240116">
+          <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8730648445433240117">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8730648445433240118">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="This paragraph shows how to format text." />
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
-    <node role="contents" roleId="2c95.3350625596580064250" type="2c95.EmptyDocContent" typeId="2c95.3350625596579911760" id="8730648445432859546">
-      <property name="name" nameId="tpck.1169194664001" value="empty_1363189036869_11" />
+    <node role="contents" roleId="2c95.3350625596580064250" type="2c95.EmptyDocContent" typeId="2c95.3350625596579911760" id="8730648445433243071">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1363191814897_10" />
+    </node>
+    <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Section" typeId="2c95.3350625596580064455" id="8730648445433243073">
+      <property name="name" nameId="tpck.1169194664001" value="figures" />
+      <property name="text" nameId="2c95.3350625596580064225" value="Embedding Regular Figures" />
+      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="8730648445433243077">
+        <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="8730648445433243078">
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8730648445433243079">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value="You can also embed images that are not rendered from within MPS, but are supplied\nexternally. Below, im " />
+          </node>
+          <node role="words" roleId="87nw.2557074442922392302" type="2c95.ImgRefWord" typeId="2c95.6386504476136420159" id="8730648445433243094">
+            <link role="image" roleId="2c95.6386504476136420174" targetNodeId="8730648445433243087" resolveInfo="glider" />
+          </node>
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8730648445433243095">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value=", is an example. \nThe code to embed an image is shown in " />
+          </node>
+          <node role="words" roleId="87nw.2557074442922392302" type="2c95.ImgRefWord" typeId="2c95.6386504476136420159" id="8730648445433245275">
+            <link role="image" roleId="2c95.6386504476136420174" targetNodeId="8730648445433243102" resolveInfo="figures" />
+          </node>
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8730648445433245276">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value="." />
+          </node>
+        </node>
+      </node>
+      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.ImageParagraph" typeId="2c95.6386504476136263187" id="8730648445433243087">
+        <property name="name" nameId="tpck.1169194664001" value="glider" />
+        <node role="resource" roleId="2c95.6386504476136531838" type="2c95.Resource" typeId="2c95.6386504476136521407" id="8730648445433243093">
+          <property name="fileName" nameId="2c95.6386504476136521408" value="ash26.png" />
+          <link role="path" roleId="2c95.6386504476136521409" targetNodeId="8730648445433243074" resolveInfo="images" />
+        </node>
+        <node role="description" roleId="2c95.6386504476136278696" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8730648445433243089">
+          <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8730648445433243090">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8730648445433243091">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="An ASH 26E glider." />
+            </node>
+          </node>
+        </node>
+        <node role="sizeSpec" roleId="2c95.8624890525767908695" type="2c95.PageWidthSizeSpec" typeId="2c95.8624890525767637976" id="8730648445433244191">
+          <property name="percentage" nameId="2c95.8624890525767637977" value="100" />
+        </node>
+      </node>
+      <node role="contents" roleId="2c95.3350625596580064250" type="z5ox.SectionAsImageParagraph" typeId="z5ox.6416473402306197330" id="8730648445433243102">
+        <property name="name" nameId="tpck.1169194664001" value="figures" />
+        <link role="section" roleId="z5ox.8730648445432859548" targetNodeId="8730648445433243073" resolveInfo="figures" />
+        <link role="path" roleId="z5ox.6416473402306197356" targetNodeId="8730648445432874250" resolveInfo="imgTemp" />
+        <node role="sizeSpec" roleId="z5ox.8624890525767931140" type="2c95.PageWidthSizeSpec" typeId="2c95.8624890525767637976" id="8730648445433244192">
+          <property name="percentage" nameId="2c95.8624890525767637977" value="100" />
+        </node>
+        <node role="description" roleId="z5ox.8730648445433126847" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8730648445433243104">
+          <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8730648445433243105">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8730648445433243106">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="The code that embeds an image" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="8730648445433246341">
+        <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="8730648445433246342">
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8730648445433246343">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value="When embedding an image, you have to specify a name (so the image can be referenced\nfrom within the document), a path (defined via a path definition in the document\nconfiguration), the actual image file (code completion is available in the editor),\nas well as a size specification (among others, a scaling factor or a specification\nrelative to page size). " />
+          </node>
+        </node>
+      </node>
+      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="8730648445433246345">
+        <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="8730648445433246346">
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8730648445433246347">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value="The path definitions are made in the document configuration, and include a path\nthat is valid while the document is edited; MPS path variables can be used. When\nthe document is exported (see below), these are mapped to paths relative to the\nlocation at which the document is located. " />
+          </node>
+          <node role="words" roleId="87nw.2557074442922392302" type="2c95.ImgRefWord" typeId="2c95.6386504476136420159" id="8730648445433247961">
+            <link role="image" roleId="2c95.6386504476136420174" targetNodeId="8730648445433247956" resolveInfo="config" />
+          </node>
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8730648445433247962">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value=" shows the document config\nfor this document. Note that you can also define size specifications there that\ncan be referenced from images within the document (to reuse the size specs)." />
+          </node>
+        </node>
+      </node>
+      <node role="contents" roleId="2c95.3350625596580064250" type="z5ox.SectionAsImageParagraph" typeId="z5ox.6416473402306197330" id="8730648445433247956">
+        <property name="name" nameId="tpck.1169194664001" value="config" />
+        <link role="section" roleId="z5ox.8730648445432859548" targetNodeId="2293093897292931470" resolveInfo="Config" />
+        <link role="path" roleId="z5ox.6416473402306197356" targetNodeId="8730648445432874250" resolveInfo="imgTemp" />
+        <node role="sizeSpec" roleId="z5ox.8624890525767931140" type="2c95.PageWidthSizeSpec" typeId="2c95.8624890525767637976" id="8730648445433273803">
+          <property name="percentage" nameId="2c95.8624890525767637977" value="100" />
+        </node>
+        <node role="description" roleId="z5ox.8730648445433126847" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8730648445433247958">
+          <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8730648445433247959">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8730648445433247960">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="An example document configuration with path definitions." />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="8730648445433275055">
+        <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="8730648445433275056">
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8730648445433275057">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value="Other artifacts can also be embedded, not just images. The approach is always the\nsame, in particular, you typically specify a path and a size, as well as a name so\nit can be referenced. The embeddings of the document sources (as screenshots) are\nexamples. We will see more examples below." />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node role="contents" roleId="2c95.3350625596580064250" type="2c95.EmptyDocContent" typeId="2c95.3350625596579911760" id="8730648445433275051">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1363192629115_1" />
+    </node>
+    <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Section" typeId="2c95.3350625596580064455" id="8730648445433277592">
+      <property name="name" nameId="tpck.1169194664001" value="exporting" />
+      <property name="text" nameId="2c95.3350625596580064225" value="Exporting Documents" />
+      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.EmptyDocContent" typeId="2c95.3350625596579911760" id="8730648445433277596">
+        <property name="name" nameId="tpck.1169194664001" value="empty_1363192834643_7" />
+      </node>
     </node>
     <node role="authors" roleId="2c95.126932837435370865" type="2c95.Author" typeId="2c95.126932837435370850" id="8730648445432859522">
       <property name="name" nameId="2c95.126932837435370851" value="Makrus Voelter" />
