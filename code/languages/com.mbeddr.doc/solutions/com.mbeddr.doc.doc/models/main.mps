@@ -129,6 +129,13 @@
       <property name="mappedPath" nameId="2c95.6386504476136554614" value="images/" />
       <link role="pathDef" roleId="2c95.6386504476136554613" targetNodeId="8730648445433243074" resolveInfo="images" />
     </node>
+    <node role="abstract" roleId="2c95.126932837435324914" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8730648445433281653">
+      <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8730648445433281654">
+        <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8730648445433281655">
+          <property name="escapedValue" nameId="87nw.2557074442922438158" value="This document explains how to use the documentation language of mbeddr.\nThe document is itself written with the documentation language, so it\nis bootstrapped, as one would expect." />
+        </node>
+      </node>
+    </node>
   </root>
   <root id="8730648445432859484">
     <node role="contents" roleId="2c95.3350625596580064250" type="2c95.EmptyDocContent" typeId="2c95.3350625596579911760" id="8730648445432859507">
@@ -356,10 +363,20 @@
           </node>
         </node>
       </node>
+    </node>
+    <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Section" typeId="2c95.3350625596580064455" id="8730648445433277597">
+      <property name="name" nameId="tpck.1169194664001" value="otherEmbeddings" />
+      <property name="text" nameId="2c95.3350625596580064225" value="Embedding Other Things" />
       <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="8730648445433275055">
         <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="8730648445433275056">
           <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8730648445433275057">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value="Other artifacts can also be embedded, not just images. The approach is always the\nsame, in particular, you typically specify a path and a size, as well as a name so\nit can be referenced. The embeddings of the document sources (as screenshots) are\nexamples. We will see more examples below." />
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value="Other artifacts can also be embedded, not just images. The approach is always the\nsame, in particular, you typically specify a path and a size, as well as a name so\nit can be referenced. The embeddings of the document sources (as screenshots) are\nexamples. In many cases, the artifacts are actually\nonly created during the creation of the document. For example, the screenshots that\nrepresent the document source code are created " />
+          </node>
+          <node role="words" roleId="87nw.2557074442922392302" type="2c95.EmphasizedWord" typeId="2c95.4457500422381556825" id="8730648445433277598">
+            <property name="text" nameId="2c95.4457500422381556838" value="from the live code" />
+          </node>
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8730648445433277599">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value=" during the\ngeneration of the document. This way, they are always up to date. Other extensions to\nthe basic documentation language can contribute their own embedded resources. We will\nsee examples below." />
           </node>
         </node>
       </node>
@@ -370,8 +387,94 @@
     <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Section" typeId="2c95.3350625596580064455" id="8730648445433277592">
       <property name="name" nameId="tpck.1169194664001" value="exporting" />
       <property name="text" nameId="2c95.3350625596580064225" value="Exporting Documents" />
-      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.EmptyDocContent" typeId="2c95.3350625596579911760" id="8730648445433277596">
-        <property name="name" nameId="tpck.1169194664001" value="empty_1363192834643_7" />
+      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="8730648445433281656">
+        <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="8730648445433281657">
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8730648445433281658">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value="Exporting the document (as HTML, PDF, or possibly in other formats) involves two\nsteps. First, you likely wrote the overall text in several actual documents. To \ncreate a big, contiguous HTML or Latex document you probably want to join them.\nYou can do this by creating another document and including others. " />
+          </node>
+          <node role="words" roleId="87nw.2557074442922392302" type="2c95.ImgRefWord" typeId="2c95.6386504476136420159" id="8730648445433281665">
+            <link role="image" roleId="2c95.6386504476136420174" targetNodeId="8730648445433281660" resolveInfo="root" />
+          </node>
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8730648445433281666">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value=" shows\nan example how to do that." />
+          </node>
+        </node>
+      </node>
+      <node role="contents" roleId="2c95.3350625596580064250" type="z5ox.SectionAsImageParagraph" typeId="z5ox.6416473402306197330" id="8730648445433281660">
+        <property name="name" nameId="tpck.1169194664001" value="root" />
+        <link role="section" roleId="z5ox.8730648445432859548" targetNodeId="8730648445432859523" resolveInfo="Root" />
+        <link role="path" roleId="z5ox.6416473402306197356" targetNodeId="8730648445432874250" resolveInfo="imgTemp" />
+        <node role="description" roleId="z5ox.8730648445433126847" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8730648445433281662">
+          <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8730648445433281663">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8730648445433281664">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="A root document that includes other documents in a specific order." />
+            </node>
+          </node>
+        </node>
+        <node role="sizeSpec" roleId="z5ox.8624890525767931140" type="2c95.ScalingSizeSpec" typeId="2c95.8624890525767555426" id="8730648445433283237">
+          <property name="percentage" nameId="2c95.8624890525767555427" value="60" />
+        </node>
+      </node>
+      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="8730648445433284816">
+        <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="8730648445433284817">
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8730648445433284818">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value="The second ingredient is the actual export configuration, as shown in " />
+          </node>
+          <node role="words" roleId="87nw.2557074442922392302" type="2c95.ImgRefWord" typeId="2c95.6386504476136420159" id="8730648445433284826">
+            <link role="image" roleId="2c95.6386504476136420174" targetNodeId="8730648445433284820" resolveInfo="doc" />
+          </node>
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8730648445433284825">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value=".\nThere, you specify a document title, optionally an abstract, a root document, as \nwell as a renderer. You also specify path mappings: the path definitions from the\nconfiguration (" />
+          </node>
+          <node role="words" roleId="87nw.2557074442922392302" type="2c95.ImgRefWord" typeId="2c95.6386504476136420159" id="8730648445433284828">
+            <link role="image" roleId="2c95.6386504476136420174" targetNodeId="8730648445433247956" resolveInfo="config" />
+          </node>
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8730648445433284827">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value=") now have to be mapped to paths relative to the output\nfolder of the generated document (most likely you have to manually create a script \nthat copies these resources into this directory). " />
+          </node>
+        </node>
+      </node>
+      <node role="contents" roleId="2c95.3350625596580064250" type="z5ox.SectionAsImageParagraph" typeId="z5ox.6416473402306197330" id="8730648445433284820">
+        <property name="name" nameId="tpck.1169194664001" value="doc" />
+        <link role="section" roleId="z5ox.8730648445432859548" targetNodeId="2293093897293118943" resolveInfo="DocumentationDocumentation" />
+        <link role="path" roleId="z5ox.6416473402306197356" targetNodeId="8730648445432874250" resolveInfo="imgTemp" />
+        <node role="sizeSpec" roleId="z5ox.8624890525767931140" type="2c95.PageWidthSizeSpec" typeId="2c95.8624890525767637976" id="8730648445433284821">
+          <property name="percentage" nameId="2c95.8624890525767637977" value="100" />
+        </node>
+        <node role="description" roleId="z5ox.8730648445433126847" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8730648445433284822">
+          <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8730648445433284823">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8730648445433284824">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="The export configuration for this document." />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="8730648445433284830">
+        <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="8730648445433284831">
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8730648445433284832">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value="To create the document, you simply generate the respective MPS model. The HTML or\nLatex file(s) will be generated. " />
+          </node>
+        </node>
+      </node>
+      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.ItemList" typeId="2c95.5378658552262893169" id="8730648445433284834">
+        <node role="items" roleId="2c95.5378658552262986137" type="2c95.Item" typeId="2c95.5378658552262903588" id="8730648445433284835">
+          <node role="text" roleId="2c95.5378658552262903589" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8730648445433284836">
+            <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8730648445433284837">
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8730648445433284838">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="For Latex, you specify a document class as well as a prolog file. \nThe prolog file is included at the beginning of the document, and it\ncan define all the style customizations you want." />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node role="items" roleId="2c95.5378658552262986137" type="2c95.Item" typeId="2c95.5378658552262903588" id="8730648445433284839">
+          <node role="text" roleId="2c95.5378658552262903589" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8730648445433284840">
+            <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8730648445433284841">
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8730648445433284842">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="For HTML, you specify a style sheet. This style sheet can format the\nHTML code in any way you want. Take a look at the generated HTML to \nlearn about the style classes used in the generated HTML." />
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
     </node>
     <node role="authors" roleId="2c95.126932837435370865" type="2c95.Author" typeId="2c95.126932837435370850" id="8730648445432859522">
