@@ -397,7 +397,7 @@
               <link role="image" roleId="2c95.6386504476136420174" targetNodeId="8730648445433281660" resolveInfo="root" />
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8730648445433281666">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" shows\nan example how to do that." />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" shows\nan example how to do that. Note that you can only include documents for which you \nspecify a dependency in the document header." />
             </node>
           </node>
         </node>
