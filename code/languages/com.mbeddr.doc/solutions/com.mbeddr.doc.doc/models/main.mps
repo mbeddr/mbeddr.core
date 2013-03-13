@@ -11,26 +11,29 @@
   <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="7" implicit="yes" />
   <roots>
     <node type="2c95.Document" typeId="2c95.3350625596579911728" id="2293093897292931468">
-      <property name="name" nameId="tpck.1169194664001" value="Introduction" />
+      <property name="name" nameId="tpck.1169194664001" value="A_Introduction" />
       <link role="config" roleId="2c95.6386504476136472832" targetNodeId="2293093897292931470" resolveInfo="Config" />
     </node>
     <node type="2c95.DocumentConfig" typeId="2c95.6386504476136472782" id="2293093897292931470">
       <property name="name" nameId="tpck.1169194664001" value="Config" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="cfg" />
     </node>
     <node type="2c95.DocumentExport" typeId="2c95.3350625596580256366" id="2293093897293118943">
       <property name="name" nameId="tpck.1169194664001" value="DocumentationDocumentation" />
       <property name="title" nameId="2c95.126932837435324910" value="Documentation" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="cfg" />
     </node>
     <node type="2c95.Document" typeId="2c95.3350625596579911728" id="8730648445432859484">
-      <property name="name" nameId="tpck.1169194664001" value="SimpleDocuments" />
+      <property name="name" nameId="tpck.1169194664001" value="B_SimpleDocuments" />
       <link role="config" roleId="2c95.6386504476136472832" targetNodeId="2293093897292931470" resolveInfo="Config" />
     </node>
     <node type="2c95.Document" typeId="2c95.3350625596579911728" id="8730648445432859523">
       <property name="name" nameId="tpck.1169194664001" value="Root" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="cfg" />
       <link role="config" roleId="2c95.6386504476136472832" targetNodeId="2293093897292931470" resolveInfo="Config" />
     </node>
     <node type="2c95.Document" typeId="2c95.3350625596579911728" id="8730648445433290619">
-      <property name="name" nameId="tpck.1169194664001" value="EmbeddingMbeddr" />
+      <property name="name" nameId="tpck.1169194664001" value="C_EmbeddingMbeddr" />
       <link role="config" roleId="2c95.6386504476136472832" targetNodeId="2293093897292931470" resolveInfo="Config" />
     </node>
   </roots>
@@ -516,30 +519,30 @@
     </node>
     <node role="contents" roleId="2c95.3350625596580064250" type="2c95.DocumentInclude" typeId="2c95.6165313375056012512" id="8730648445432859527">
       <node role="ref" roleId="2c95.6165313375056012515" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="8730648445432859529">
-        <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="2293093897292931468" resolveInfo="Introduction" />
+        <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="2293093897292931468" resolveInfo="A_Introduction" />
       </node>
     </node>
     <node role="contents" roleId="2c95.3350625596580064250" type="2c95.DocumentInclude" typeId="2c95.6165313375056012512" id="8730648445432859531">
       <node role="ref" roleId="2c95.6165313375056012515" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="8730648445432859533">
-        <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="8730648445432859484" resolveInfo="SimpleDocuments" />
+        <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="8730648445432859484" resolveInfo="B_SimpleDocuments" />
       </node>
     </node>
     <node role="contents" roleId="2c95.3350625596580064250" type="2c95.DocumentInclude" typeId="2c95.6165313375056012512" id="8730648445433290622">
       <node role="ref" roleId="2c95.6165313375056012515" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="8730648445433290624">
-        <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="8730648445433290619" resolveInfo="EmbeddingMbeddr" />
+        <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="8730648445433290619" resolveInfo="C_EmbeddingMbeddr" />
       </node>
     </node>
     <node role="contents" roleId="2c95.3350625596580064250" type="2c95.EmptyDocContent" typeId="2c95.3350625596579911760" id="8730648445432859526">
       <property name="name" nameId="tpck.1169194664001" value="empty_1363188922445_7" />
     </node>
     <node role="dependsOn" roleId="2c95.8730648445433290694" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="8730648445433340261">
-      <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="2293093897292931468" resolveInfo="Introduction" />
+      <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="2293093897292931468" resolveInfo="A_Introduction" />
     </node>
     <node role="dependsOn" roleId="2c95.8730648445433290694" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="8730648445433340257">
-      <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="8730648445432859484" resolveInfo="SimpleDocuments" />
+      <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="8730648445432859484" resolveInfo="B_SimpleDocuments" />
     </node>
     <node role="dependsOn" roleId="2c95.8730648445433290694" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="8730648445433340259">
-      <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="8730648445433290619" resolveInfo="EmbeddingMbeddr" />
+      <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="8730648445433290619" resolveInfo="C_EmbeddingMbeddr" />
     </node>
   </root>
   <root id="8730648445433290619">
@@ -563,7 +566,7 @@
       <property name="email" nameId="2c95.126932837435370852" value="voelter@acm.org" />
     </node>
     <node role="dependsOn" roleId="2c95.8730648445433290694" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="8730648445433340256">
-      <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="2293093897292931468" resolveInfo="Introduction" />
+      <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="2293093897292931468" resolveInfo="A_Introduction" />
     </node>
   </root>
 </model>
