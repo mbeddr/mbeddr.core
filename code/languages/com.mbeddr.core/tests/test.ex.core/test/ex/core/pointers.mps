@@ -1229,6 +1229,12 @@
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="8934095934011975951">
       <property name="name" nameId="tpck.1169194664001" value="empty1326292240445" />
     </node>
+    <node role="imports" roleId="x27k.1317894735999304826" type="x27k.ModuleImport" typeId="x27k.1317894735999299713" id="8257817273847094240">
+      <link role="module" roleId="x27k.1317894735999299714" targetNodeId="8257817273847090669" resolveInfo="ClosureUtils" />
+    </node>
+    <node role="imports" roleId="x27k.1317894735999304826" type="x27k.ModuleImport" typeId="x27k.1317894735999299713" id="8257817273847172768">
+      <link role="module" roleId="x27k.1317894735999299714" targetNodeId="6173518449210279095" resolveInfo="stdlib" />
+    </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="yz9a.TestCase" typeId="yz9a.6275792049641586523" id="8257817273847094241">
       <property name="exported" nameId="x27k.1317894735999272944" value="true" />
       <property name="name" nameId="tpck.1169194664001" value="testClosures" />
@@ -1949,12 +1955,6 @@
           <link role="typeDef" roleId="clbe.6116558314501347864" targetNodeId="8257817273847094248" resolveInfo="ftype" />
         </node>
       </node>
-    </node>
-    <node role="imports" roleId="x27k.1317894735999304826" type="x27k.ModuleImport" typeId="x27k.1317894735999299713" id="8257817273847094240">
-      <link role="module" roleId="x27k.1317894735999299714" targetNodeId="8257817273847090669" resolveInfo="ClosureUtils" />
-    </node>
-    <node role="imports" roleId="x27k.1317894735999304826" type="x27k.ModuleImport" typeId="x27k.1317894735999299713" id="8257817273847172768">
-      <link role="module" roleId="x27k.1317894735999299714" targetNodeId="6173518449210279095" resolveInfo="stdlib" />
     </node>
   </root>
   <root id="7496733358578280435">
@@ -2803,6 +2803,14 @@
       <node role="body" roleId="yz9a.6275792049641586525" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="5684014141267564511">
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="5684014141267564513">
           <property name="comment" nameId="c4fa.1679452829930336985" value="this is just a compile test" />
+          <node role="textblock" roleId="c4fa.8624890525768479139" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8624890525768587238">
+            <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8624890525768587241">
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8624890525768587242" />
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8624890525768587243">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="this is just a compile test" />
+              </node>
+            </node>
+          </node>
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="5684014141267567386">
           <property name="name" nameId="tpck.1169194664001" value="str" />

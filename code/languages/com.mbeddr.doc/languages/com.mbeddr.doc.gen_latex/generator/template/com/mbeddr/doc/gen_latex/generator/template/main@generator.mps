@@ -250,7 +250,7 @@
       <node role="ruleConsequence" roleId="tpf8.1169672767469" type="tpf8.InlineTemplate_RuleConsequence" typeId="tpf8.1177093525992" id="4457500422381390714">
         <node role="templateNode" roleId="tpf8.1177093586806" type="tis3.WordList" typeId="tis3.4457500422381380663" id="4457500422381390716">
           <node role="words" roleId="tis3.4457500422381380665" type="tis3.TextWord" typeId="tis3.4457500422381364540" id="4457500422381390718">
-            <property name="text" nameId="tis3.4457500422381364541" value="Sect. " />
+            <property name="text" nameId="tis3.4457500422381364541" value="Sect." />
             <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.PropertyMacro" typeId="tpf8.1087833241328" id="4457500422381390800">
               <property name="propertyName" nameId="tpck.1757699476691236117" value="text" />
               <node role="propertyValueFunction" roleId="tpf8.1167756362303" type="tpf8.PropertyMacro_GetPropertyValue" typeId="tpf8.1167756080639" id="4457500422381390801">
@@ -306,7 +306,7 @@
       <node role="ruleConsequence" roleId="tpf8.1169672767469" type="tpf8.InlineTemplate_RuleConsequence" typeId="tpf8.1177093525992" id="4457500422381390784">
         <node role="templateNode" roleId="tpf8.1177093586806" type="tis3.WordList" typeId="tis3.4457500422381380663" id="4457500422381390785">
           <node role="words" roleId="tis3.4457500422381380665" type="tis3.TextWord" typeId="tis3.4457500422381364540" id="4457500422381390786">
-            <property name="text" nameId="tis3.4457500422381364541" value="Fig. " />
+            <property name="text" nameId="tis3.4457500422381364541" value="Fig." />
           </node>
           <node role="words" roleId="tis3.4457500422381380665" type="tis3.CommandWord" typeId="tis3.4457500422381364333" id="4457500422381390787">
             <property name="command" nameId="tis3.4457500422381364335" value="ref" />
@@ -519,7 +519,27 @@
                 </node>
               </node>
               <node role="options1" roleId="tis3.4457500422381364346" type="tis3.TextWord" typeId="tis3.4457500422381364540" id="4457500422381513977">
-                <property name="text" nameId="tis3.4457500422381364541" value="max width=\columnwidth" />
+                <property name="text" nameId="tis3.4457500422381364541" value="sizespec" />
+                <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.PropertyMacro" typeId="tpf8.1087833241328" id="8624890525768008546">
+                  <property name="propertyName" nameId="tpck.1757699476691236117" value="text" />
+                  <node role="propertyValueFunction" roleId="tpf8.1167756362303" type="tpf8.PropertyMacro_GetPropertyValue" typeId="tpf8.1167756080639" id="8624890525768008547">
+                    <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="8624890525768008548">
+                      <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="8624890525768008549">
+                        <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="8624890525768008599">
+                          <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="8624890525768008571">
+                            <node role="operand" roleId="tpee.1197027771414" type="tpf8.TemplateFunctionParameter_sourceNode" typeId="tpf8.1167169188348" id="8624890525768008550" />
+                            <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="8624890525768008577">
+                              <link role="link" roleId="tp25.1138056516764" targetNodeId="2c95.8624890525767908695" />
+                            </node>
+                          </node>
+                          <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_ConceptMethodCall" typeId="tp25.1179409122411" id="8624890525768008605">
+                            <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="4gky.8624890525767985846" resolveInfo="getLatexSizeSpec" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
               </node>
             </node>
           </node>

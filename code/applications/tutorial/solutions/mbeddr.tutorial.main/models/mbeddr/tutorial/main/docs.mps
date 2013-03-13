@@ -4,10 +4,11 @@
   <devkit namespace="54c79f9f-f3ba-4167-91f1-eb4e98a9c47c(com.mbeddr.documentation)" />
   <import index="e1tx" modelUID="r:bd5ec23c-c294-47cc-a078-675c03abdb69(mbeddr.tutorial.main.defaultExtensions)" version="-1" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
-  <import index="2c95" modelUID="r:5f7188a9-e7b4-4a2e-bef9-38d2cf379fdc(com.mbeddr.doc.structure)" version="1" implicit="yes" />
+  <import index="2c95" modelUID="r:5f7188a9-e7b4-4a2e-bef9-38d2cf379fdc(com.mbeddr.doc.structure)" version="2" implicit="yes" />
   <import index="87nw" modelUID="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" version="5" implicit="yes" />
   <import index="g9w8" modelUID="r:506f4964-2b3f-49f3-a581-8c498222bac6(com.mbeddr.doc.gen_latex.structure)" version="-1" implicit="yes" />
-  <import index="rh4a" modelUID="r:51a64317-678a-4e8f-9df1-1e83f73c9d71(com.mbeddr.doc.c.structure)" version="1" implicit="yes" />
+  <import index="rh4a" modelUID="r:51a64317-678a-4e8f-9df1-1e83f73c9d71(com.mbeddr.doc.c.structure)" version="4" implicit="yes" />
+  <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="7" implicit="yes" />
   <roots>
     <node type="2c95.Document" typeId="2c95.3350625596579911728" id="2637267020265430783">
       <property name="name" nameId="tpck.1169194664001" value="overview" />
@@ -91,12 +92,15 @@
         <property name="name" nameId="tpck.1169194664001" value="moduleDeps" />
         <link role="visualizable" roleId="rh4a.4755612053022373496" targetNodeId="e1tx.9141254329931944284" resolveInfo="MbeddrTutorial" />
         <link role="path" roleId="rh4a.4755612053022398751" targetNodeId="794010416819988006" resolveInfo="vis" />
-        <node role="description" roleId="rh4a.4755612053022495458" type="2c95.TextBlock" typeId="2c95.6386504476136446898" id="794010416819988003">
-          <node role="text" roleId="2c95.6386504476136446899" type="87nw.Text" typeId="87nw.2557074442922380897" id="794010416819988004">
+        <node role="description" roleId="rh4a.4755612053022495458" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="794010416819988003">
+          <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="794010416819988004">
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="794010416819988005">
               <property name="escapedValue" nameId="87nw.2557074442922438158" value="An overview over the module dependencies in the tutorial." />
             </node>
           </node>
+        </node>
+        <node role="sizeSpec" roleId="rh4a.8624890525767931145" type="2c95.InheritSizeSpec" typeId="2c95.8624890525767650652" id="8624890525768078258">
+          <link role="base" roleId="2c95.8624890525767800818" targetNodeId="8624890525768078251" resolveInfo="width100" />
         </node>
       </node>
     </node>
@@ -128,6 +132,18 @@
     <node role="paths" roleId="2c95.6386504476136472817" type="2c95.PathDefinition" typeId="2c95.6386504476136472795" id="4715820023543670791">
       <property name="name" nameId="tpck.1169194664001" value="images" />
       <property name="editTimePath" nameId="2c95.6386504476136472797" value="${mbeddr.github.core.home}/code/applications/tutorial/solutions/mbeddr.tutorial.main/images" />
+    </node>
+    <node role="sizeSpecs" roleId="2c95.8624890525767800998" type="2c95.NamedSizeSpec" typeId="2c95.8624890525767800825" id="8624890525768078251">
+      <property name="name" nameId="tpck.1169194664001" value="width100" />
+      <node role="spec" roleId="2c95.8624890525767800827" type="2c95.PageWidthSizeSpec" typeId="2c95.8624890525767637976" id="8624890525768078253">
+        <property name="percentage" nameId="2c95.8624890525767637977" value="100" />
+      </node>
+    </node>
+    <node role="sizeSpecs" roleId="2c95.8624890525767800998" type="2c95.NamedSizeSpec" typeId="2c95.8624890525767800825" id="8624890525768078255">
+      <property name="name" nameId="tpck.1169194664001" value="width80" />
+      <node role="spec" roleId="2c95.8624890525767800827" type="2c95.PageWidthSizeSpec" typeId="2c95.8624890525767637976" id="8624890525768078256">
+        <property name="percentage" nameId="2c95.8624890525767637977" value="80" />
+      </node>
     </node>
   </root>
   <root id="794010416819640951">
@@ -181,8 +197,8 @@
         </node>
         <node role="contents" roleId="2c95.3350625596580064250" type="rh4a.CCodeParagraph" typeId="rh4a.6165313375056112024" id="794010416819974413">
           <property name="language" nameId="rh4a.4755612053022237479" value="mbeddr" />
-          <link role="code" roleId="rh4a.6165313375056112026" targetNodeId="e1tx.1731059994647587994" resolveInfo="Trackpoint" />
-          <link role="module" roleId="rh4a.126932837435556061" targetNodeId="e1tx.1731059994647587993" resolveInfo="DataStructures" />
+          <link role="code" roleId="rh4a.6416473402306172904" targetNodeId="e1tx.1731059994647587994" resolveInfo="Trackpoint" />
+          <link role="module" roleId="rh4a.6416473402306172903" targetNodeId="e1tx.1731059994647587993" resolveInfo="DataStructures" />
         </node>
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="794010416820037028">
           <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="794010416820037029">
@@ -203,9 +219,9 @@
         </node>
         <node role="contents" roleId="2c95.3350625596580064250" type="rh4a.CCodeParagraph" typeId="rh4a.6165313375056112024" id="794010416820037079">
           <property name="language" nameId="rh4a.4755612053022237479" value="mbeddr" />
-          <link role="code" roleId="rh4a.6165313375056112026" targetNodeId="e1tx.1731059994647781810" resolveInfo="Nuller" />
-          <link role="detail" roleId="rh4a.126932837435232782" targetNodeId="e1tx.1731059994647782993" resolveInfo="processor_process" />
-          <link role="module" roleId="rh4a.126932837435556061" targetNodeId="e1tx.1731059994647588211" resolveInfo="Components" />
+          <link role="code" roleId="rh4a.6416473402306172904" targetNodeId="e1tx.1731059994647781810" resolveInfo="Nuller" />
+          <link role="detail" roleId="rh4a.6416473402306189931" targetNodeId="e1tx.1731059994647782993" resolveInfo="processor_process" />
+          <link role="module" roleId="rh4a.6416473402306172903" targetNodeId="e1tx.1731059994647588211" resolveInfo="Components" />
         </node>
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="126932837435541955">
           <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="126932837435541956">
@@ -239,6 +255,7 @@
                 </node>
               </node>
             </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4120785633232304398" />
           </node>
         </node>
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="4715820023543670770">
@@ -273,8 +290,8 @@
         </node>
         <node role="contents" roleId="2c95.3350625596580064250" type="rh4a.CCodeParagraph" typeId="rh4a.6165313375056112024" id="126932837435556060">
           <property name="language" nameId="rh4a.4755612053022237479" value="mbeddr" />
-          <link role="module" roleId="rh4a.126932837435556061" targetNodeId="e1tx.1731059994647588211" resolveInfo="Components" />
-          <link role="code" roleId="rh4a.6165313375056112026" targetNodeId="e1tx.1731059994647814010" resolveInfo="TrackpointStore1" />
+          <link role="module" roleId="rh4a.6416473402306172903" targetNodeId="e1tx.1731059994647588211" resolveInfo="Components" />
+          <link role="code" roleId="rh4a.6416473402306172904" targetNodeId="e1tx.1731059994647814010" resolveInfo="TrackpointStore1" />
         </node>
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="4715820023543612302">
           <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="4715820023543612303">
@@ -284,6 +301,7 @@
             <node role="words" roleId="87nw.2557074442922392302" type="2c95.ImgRefWord" typeId="2c95.6386504476136420159" id="4715820023543626619">
               <link role="image" roleId="2c95.6386504476136420174" targetNodeId="4715820023543612306" resolveInfo="ci" />
             </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4120785633232304397" />
           </node>
         </node>
         <node role="contents" roleId="2c95.3350625596580064250" type="rh4a.Visualization" typeId="rh4a.4755612053022373494" id="4715820023543612306">
@@ -291,12 +309,15 @@
           <property name="name" nameId="tpck.1169194664001" value="ci" />
           <link role="visualizable" roleId="rh4a.4755612053022373496" targetNodeId="e1tx.1731059994647814010" resolveInfo="TrackpointStore1" />
           <link role="path" roleId="rh4a.4755612053022398751" targetNodeId="794010416819988006" resolveInfo="vis" />
-          <node role="description" roleId="rh4a.4755612053022495458" type="2c95.TextBlock" typeId="2c95.6386504476136446898" id="4715820023543612307">
-            <node role="text" roleId="2c95.6386504476136446899" type="87nw.Text" typeId="87nw.2557074442922380897" id="4715820023543612308">
+          <node role="description" roleId="rh4a.4755612053022495458" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="4715820023543612307">
+            <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="4715820023543612308">
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4715820023543612309">
                 <property name="escapedValue" nameId="87nw.2557074442922438158" value="The components and their provided (solid lines) and required (dotted lines) ports." />
               </node>
             </node>
+          </node>
+          <node role="sizeSpec" roleId="rh4a.8624890525767931145" type="2c95.InheritSizeSpec" typeId="2c95.8624890525767650652" id="8624890525768078254">
+            <link role="base" roleId="2c95.8624890525767800818" targetNodeId="8624890525768078251" resolveInfo="width100" />
           </node>
         </node>
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="4715820023543670777">
@@ -340,12 +361,15 @@
             <property name="fileName" nameId="2c95.6386504476136521408" value="doceditor.png" />
             <link role="path" roleId="2c95.6386504476136521409" targetNodeId="4715820023543670791" resolveInfo="images" />
           </node>
-          <node role="description" roleId="2c95.6386504476136278696" type="2c95.TextBlock" typeId="2c95.6386504476136446898" id="4715820023543670799">
-            <node role="text" roleId="2c95.6386504476136446899" type="87nw.Text" typeId="87nw.2557074442922380897" id="4715820023543670800">
+          <node role="description" roleId="2c95.6386504476136278696" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="4715820023543670799">
+            <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="4715820023543670800">
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4715820023543670801">
                 <property name="escapedValue" nameId="87nw.2557074442922438158" value="A screenshot of the document editing in MPS." />
               </node>
             </node>
+          </node>
+          <node role="sizeSpec" roleId="2c95.8624890525767908695" type="2c95.InheritSizeSpec" typeId="2c95.8624890525767650652" id="8624890525768078257">
+            <link role="base" roleId="2c95.8624890525767800818" targetNodeId="8624890525768078255" resolveInfo="width80" />
           </node>
         </node>
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="4715820023543699954">
@@ -397,8 +421,8 @@
       <property name="mappedPath" nameId="2c95.6386504476136554614" value="images" />
       <link role="pathDef" roleId="2c95.6386504476136554613" targetNodeId="4715820023543670791" resolveInfo="images" />
     </node>
-    <node role="abstract" roleId="2c95.126932837435324914" type="2c95.TextBlock" typeId="2c95.6386504476136446898" id="126932837435349020">
-      <node role="text" roleId="2c95.6386504476136446899" type="87nw.Text" typeId="87nw.2557074442922380897" id="126932837435349021">
+    <node role="abstract" roleId="2c95.126932837435324914" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="126932837435349020">
+      <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="126932837435349021">
         <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="126932837435349022">
           <property name="escapedValue" nameId="87nw.2557074442922438158" value="This document provides an overview over the mbeddr tutorial. It also documents how to use the documentation support, which is new and actually quite cool. Take a look at the sources of this document; it is written in MPS!" />
         </node>

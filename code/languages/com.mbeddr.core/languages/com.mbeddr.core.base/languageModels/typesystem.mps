@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model modelUID="r:1b0f275e-bd62-4f6e-8c4b-51b05d651a63(com.mbeddr.core.base.typesystem)" version="0">
+<model modelUID="r:1b0f275e-bd62-4f6e-8c4b-51b05d651a63(com.mbeddr.core.base.typesystem)" version="1">
   <persistence version="7" />
   <language namespace="7a5dda62-9140-4668-ab76-d5ed1746f2b2(jetbrains.mps.lang.typesystem)" />
   <language namespace="f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)" />
@@ -41,6 +41,14 @@
     </node>
     <node type="tpd4.NonTypesystemRule" typeId="tpd4.1195214364922" id="8051977711588518783">
       <property name="name" nameId="tpck.1169194664001" value="check_IDeprecatedLangConcept" />
+    </node>
+    <node type="tpd4.NonTypesystemRule" typeId="tpd4.1195214364922" id="8624890525768446201">
+      <property name="name" nameId="tpck.1169194664001" value="detectEmptyTextBlockOwner" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="paragraphs" />
+    </node>
+    <node type="tpd4.TypesystemQuickFix" typeId="tpd4.1216383170661" id="8624890525768446213">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="paragraphs" />
+      <property name="name" nameId="tpck.1169194664001" value="fixEmptyTextBlockOwner" />
     </node>
   </roots>
   <root id="4459718605982014131">
@@ -701,6 +709,64 @@
     <node role="applicableNode" roleId="tpd4.1174648101952" type="tpd4.ConceptReference" typeId="tpd4.1174642788531" id="8051977711588518785">
       <property name="name" nameId="tpck.1169194664001" value="iDep" />
       <link role="concept" roleId="tpd4.1174642800329" targetNodeId="vs0r.8051977711588518781" resolveInfo="IDeprecatedLangConcept" />
+    </node>
+  </root>
+  <root id="8624890525768446201">
+    <node role="body" roleId="tpd4.1195213635060" type="tpee.StatementList" typeId="tpee.1068580123136" id="8624890525768446202">
+      <node role="statement" roleId="tpee.1068581517665" type="tpee.IfStatement" typeId="tpee.1068580123159" id="8624890525768446203">
+        <node role="condition" roleId="tpee.1068580123160" type="tpee.DotExpression" typeId="tpee.1197027756228" id="8624890525768446204">
+          <node role="operand" roleId="tpee.1197027771414" type="tpd4.ApplicableNodeReference" typeId="tpd4.1174650418652" id="8624890525768446205">
+            <link role="applicableNode" roleId="tpd4.1174650432090" targetNodeId="8624890525768446212" resolveInfo="to" />
+          </node>
+          <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_ConceptMethodCall" typeId="tp25.1179409122411" id="8624890525768446206">
+            <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="hwgx.8624890525768381973" resolveInfo="isEmpty" />
+          </node>
+        </node>
+        <node role="ifTrue" roleId="tpee.1068580123161" type="tpee.StatementList" typeId="tpee.1068580123136" id="8624890525768446207">
+          <node role="statement" roleId="tpee.1068581517665" type="tpd4.ReportErrorStatement" typeId="tpd4.1175517767210" id="8624890525768446208">
+            <node role="errorString" roleId="tpd4.1175517851849" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="8624890525768446209">
+              <property name="value" nameId="tpee.1070475926801" value="cannot have empty text blocks" />
+            </node>
+            <node role="nodeToReport" roleId="tpd4.1227096802790" type="tpd4.ApplicableNodeReference" typeId="tpd4.1174650418652" id="8624890525768446210">
+              <link role="applicableNode" roleId="tpd4.1174650432090" targetNodeId="8624890525768446212" resolveInfo="to" />
+            </node>
+            <node role="helginsIntention" roleId="tpd4.1227096802791" type="tpd4.TypesystemIntention" typeId="tpd4.1210784285454" id="8624890525768446211">
+              <property name="applyImmediately" nameId="tpd4.1216127910019" value="true" />
+              <link role="quickFix" roleId="tpd4.1216388525179" targetNodeId="8624890525768446213" resolveInfo="fixEmptyTextBlockOwner" />
+              <node role="actualArgument" roleId="tpd4.1210784493590" type="tpd4.TypesystemIntentionArgument" typeId="tpd4.1210784384552" id="8624890525768469712">
+                <link role="quickFixArgument" roleId="tpd4.1216386999476" targetNodeId="8624890525768446214" resolveInfo="to" />
+                <node role="value" roleId="tpd4.1210784642750" type="tpd4.ApplicableNodeReference" typeId="tpd4.1174650418652" id="8624890525768469714">
+                  <link role="applicableNode" roleId="tpd4.1174650432090" targetNodeId="8624890525768446212" resolveInfo="to" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node role="applicableNode" roleId="tpd4.1174648101952" type="tpd4.ConceptReference" typeId="tpd4.1174642788531" id="8624890525768446212">
+      <property name="name" nameId="tpck.1169194664001" value="to" />
+      <link role="concept" roleId="tpd4.1174642800329" targetNodeId="vs0r.8624890525768344447" resolveInfo="ITextBlockOwner" />
+    </node>
+  </root>
+  <root id="8624890525768446213">
+    <node role="quickFixArgument" roleId="tpd4.1216383476350" type="tpd4.QuickFixArgument" typeId="tpd4.1216383482742" id="8624890525768446214">
+      <property name="name" nameId="tpck.1169194664001" value="to" />
+      <node role="argumentType" roleId="tpd4.1216383511839" type="tp25.SNodeType" typeId="tp25.1138055754698" id="8624890525768446215">
+        <link role="concept" roleId="tp25.1138405853777" targetNodeId="vs0r.8624890525768344447" resolveInfo="ITextBlockOwner" />
+      </node>
+    </node>
+    <node role="executeBlock" roleId="tpd4.1216383424566" type="tpd4.QuickFixExecuteBlock" typeId="tpd4.1216383287005" id="8624890525768446216">
+      <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="8624890525768446217">
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="8624890525768446218">
+          <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="8624890525768446219">
+            <node role="operand" roleId="tpee.1197027771414" type="tpd4.QuickFixArgumentReference" typeId="tpd4.1216390348809" id="8624890525768446220">
+              <link role="quickFixArgument" roleId="tpd4.1216390348810" targetNodeId="8624890525768446214" resolveInfo="to" />
+            </node>
+            <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_DeleteOperation" typeId="tp25.1140133623887" id="8624890525768446221" />
+          </node>
+        </node>
+      </node>
     </node>
   </root>
 </model>
