@@ -11,6 +11,8 @@
   <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="7" implicit="yes" />
   <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="3" implicit="yes" />
   <import index="yz9a" modelUID="r:734c02dd-cc16-4184-99eb-5fd9f43aa37e(com.mbeddr.core.unittest.structure)" version="0" implicit="yes" />
+  <import index="87nw" modelUID="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" version="5" implicit="yes" />
+  <import index="yq40" modelUID="r:152b3fc0-83a1-4bab-a8cd-565eb8483785(com.mbeddr.core.pointers.structure)" version="3" implicit="yes" />
   <roots>
     <node type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="279446265608457321">
       <property name="name" nameId="tpck.1169194664001" value="pointerStuff" />
@@ -71,13 +73,13 @@
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="6610873504380015706">
           <property name="name" nameId="tpck.1169194664001" value="xp" />
-          <node role="init" roleId="c4fa.4185783222026502647" type=".com.mbeddr.core.pointers.structure.ReferenceExpr" id="6610873504380016728">
-            <node role="expression" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="7996914629314980002">
+          <node role="init" roleId="c4fa.4185783222026502647" type="yq40.ReferenceExpr" typeId="yq40.1595838349830846141" id="6610873504380016728">
+            <node role="expression" roleId="mj1l.7254843406768839760" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="7996914629314980002">
               <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="6610873504380015701" resolveInfo="x" />
             </node>
           </node>
-          <node role="type" roleId="mj1l.318113533128716676" type=".com.mbeddr.core.pointers.structure.PointerType" id="5083029923012081319">
-            <node role="baseType" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="5083029923012081320" />
+          <node role="type" roleId="mj1l.318113533128716676" type="yq40.PointerType" typeId="yq40.279446265608459824" id="5083029923012081319">
+            <node role="baseType" roleId="yq40.279446265608459825" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="5083029923012081320" />
           </node>
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="6610873504380016732">
@@ -85,14 +87,14 @@
           <node role="init" roleId="c4fa.4185783222026502647" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="6610873504380016737">
             <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="6610873504380015706" resolveInfo="xp" />
           </node>
-          <node role="type" roleId="mj1l.318113533128716676" type=".com.mbeddr.core.pointers.structure.PointerType" id="5083029923012080732">
-            <node role="baseType" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="5083029923012080733" />
+          <node role="type" roleId="mj1l.318113533128716676" type="yq40.PointerType" typeId="yq40.279446265608459824" id="5083029923012080732">
+            <node role="baseType" roleId="yq40.279446265608459825" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="5083029923012080733" />
           </node>
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="6610873504380016739">
           <property name="name" nameId="tpck.1169194664001" value="y" />
-          <node role="init" roleId="c4fa.4185783222026502647" type=".com.mbeddr.core.pointers.structure.DerefExpr" id="6610873504380018288">
-            <node role="expression" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="7996914629314980004">
+          <node role="init" roleId="c4fa.4185783222026502647" type="yq40.DerefExpr" typeId="yq40.279446265608463015" id="6610873504380018288">
+            <node role="expression" roleId="mj1l.7254843406768839760" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="7996914629314980004">
               <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="6610873504380016732" resolveInfo="yp" />
             </node>
           </node>
@@ -111,8 +113,8 @@
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="6610873504380018302">
           <property name="name" nameId="tpck.1169194664001" value="a" />
-          <node role="init" roleId="c4fa.4185783222026502647" type=".com.mbeddr.core.pointers.structure.DerefExpr" id="6610873504380018310">
-            <node role="expression" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="7996914629314980008">
+          <node role="init" roleId="c4fa.4185783222026502647" type="yq40.DerefExpr" typeId="yq40.279446265608463015" id="6610873504380018310">
+            <node role="expression" roleId="mj1l.7254843406768839760" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="7996914629314980008">
               <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="6610873504380016732" resolveInfo="yp" />
             </node>
           </node>
@@ -131,22 +133,22 @@
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="279446265608461451">
           <property name="name" nameId="tpck.1169194664001" value="xpp" />
-          <node role="init" roleId="c4fa.4185783222026502647" type=".com.mbeddr.core.pointers.structure.ReferenceExpr" id="6610873504380018320">
-            <node role="expression" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="7996914629314980009">
+          <node role="init" roleId="c4fa.4185783222026502647" type="yq40.ReferenceExpr" typeId="yq40.1595838349830846141" id="6610873504380018320">
+            <node role="expression" roleId="mj1l.7254843406768839760" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="7996914629314980009">
               <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="6610873504380015706" resolveInfo="xp" />
             </node>
           </node>
-          <node role="type" roleId="mj1l.318113533128716676" type=".com.mbeddr.core.pointers.structure.PointerType" id="5083029923012081127">
-            <node role="baseType" type=".com.mbeddr.core.pointers.structure.PointerType" id="5083029923012081128">
-              <node role="baseType" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="5083029923012081129" />
+          <node role="type" roleId="mj1l.318113533128716676" type="yq40.PointerType" typeId="yq40.279446265608459824" id="5083029923012081127">
+            <node role="baseType" roleId="yq40.279446265608459825" type="yq40.PointerType" typeId="yq40.279446265608459824" id="5083029923012081128">
+              <node role="baseType" roleId="yq40.279446265608459825" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="5083029923012081129" />
             </node>
           </node>
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="6610873504380018324">
           <property name="name" nameId="tpck.1169194664001" value="r" />
-          <node role="init" roleId="c4fa.4185783222026502647" type=".com.mbeddr.core.pointers.structure.DerefExpr" id="6610873504380018327">
-            <node role="expression" type=".com.mbeddr.core.pointers.structure.DerefExpr" id="7996914629314980010">
-              <node role="expression" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="7996914629314980011">
+          <node role="init" roleId="c4fa.4185783222026502647" type="yq40.DerefExpr" typeId="yq40.279446265608463015" id="6610873504380018327">
+            <node role="expression" roleId="mj1l.7254843406768839760" type="yq40.DerefExpr" typeId="yq40.279446265608463015" id="7996914629314980010">
+              <node role="expression" roleId="mj1l.7254843406768839760" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="7996914629314980011">
                 <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="279446265608461451" resolveInfo="xpp" />
               </node>
             </node>
@@ -165,9 +167,9 @@
           </node>
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="1595838349830957221">
-          <node role="expr" roleId="c4fa.7254843406768833939" type=".com.mbeddr.core.pointers.structure.DerefExpr" id="1595838349830957223">
-            <node role="expression" type=".com.mbeddr.core.pointers.structure.DerefExpr" id="7996914629314980012">
-              <node role="expression" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="7996914629314980013">
+          <node role="expr" roleId="c4fa.7254843406768833939" type="yq40.DerefExpr" typeId="yq40.279446265608463015" id="1595838349830957223">
+            <node role="expression" roleId="mj1l.7254843406768839760" type="yq40.DerefExpr" typeId="yq40.279446265608463015" id="7996914629314980012">
+              <node role="expression" roleId="mj1l.7254843406768839760" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="7996914629314980013">
                 <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="279446265608461451" resolveInfo="xpp" />
               </node>
             </node>
@@ -182,13 +184,13 @@
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="5679441017213980681">
           <property name="name" nameId="tpck.1169194664001" value="pi" />
-          <node role="init" roleId="c4fa.4185783222026502647" type=".com.mbeddr.core.pointers.structure.ReferenceExpr" id="5679441017213981151">
-            <node role="expression" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="7996914629314980014">
+          <node role="init" roleId="c4fa.4185783222026502647" type="yq40.ReferenceExpr" typeId="yq40.1595838349830846141" id="5679441017213981151">
+            <node role="expression" roleId="mj1l.7254843406768839760" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="7996914629314980014">
               <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="5679441017213980671" resolveInfo="i" />
             </node>
           </node>
-          <node role="type" roleId="mj1l.318113533128716676" type=".com.mbeddr.core.pointers.structure.PointerType" id="5083029923012081004">
-            <node role="baseType" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="5083029923012081005" />
+          <node role="type" roleId="mj1l.318113533128716676" type="yq40.PointerType" typeId="yq40.279446265608459824" id="5083029923012081004">
+            <node role="baseType" roleId="yq40.279446265608459825" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="5083029923012081005" />
           </node>
         </node>
       </node>
@@ -203,22 +205,22 @@
           <node role="init" roleId="c4fa.4185783222026502647" type="mj1l.CastExpression" typeId="mj1l.6610873504380029780" id="6610873504380049541">
             <node role="expr" roleId="mj1l.6610873504380029782" type="x27k.FunctionCall" typeId="x27k.5950410542643524492" id="6610873504380029776">
               <link role="function" roleId="x27k.5950410542643524493" targetNodeId="6173518449210279097" resolveInfo="malloc" />
-              <node role="actuals" roleId="x27k.5950410542643524495" type=".com.mbeddr.core.pointers.structure.SizeOfExpr" id="6610873504380029777">
-                <node role="type2Calculate" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="3813668170744198625" />
+              <node role="actuals" roleId="x27k.5950410542643524495" type="yq40.SizeOfExpr" typeId="yq40.279446265608352903" id="6610873504380029777">
+                <node role="type2Calculate" roleId="yq40.279446265608352905" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="3813668170744198625" />
               </node>
             </node>
-            <node role="targetType" roleId="mj1l.6610873504380029790" type=".com.mbeddr.core.pointers.structure.PointerType" id="6610873504380049544">
-              <node role="baseType" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="3813668170744198626" />
+            <node role="targetType" roleId="mj1l.6610873504380029790" type="yq40.PointerType" typeId="yq40.279446265608459824" id="6610873504380049544">
+              <node role="baseType" roleId="yq40.279446265608459825" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="3813668170744198626" />
             </node>
           </node>
-          <node role="type" roleId="mj1l.318113533128716676" type=".com.mbeddr.core.pointers.structure.PointerType" id="5083029923012081276">
-            <node role="baseType" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="5083029923012081277" />
+          <node role="type" roleId="mj1l.318113533128716676" type="yq40.PointerType" typeId="yq40.279446265608459824" id="5083029923012081276">
+            <node role="baseType" roleId="yq40.279446265608459825" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="5083029923012081277" />
           </node>
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="22102029902643410">
           <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.AssignmentExpr" typeId="mj1l.22102029902365709" id="22102029902643411">
-            <node role="left" roleId="mj1l.8860443239512128064" type=".com.mbeddr.core.pointers.structure.DerefExpr" id="6610873504380058181">
-              <node role="expression" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="7996914629314980017">
+            <node role="left" roleId="mj1l.8860443239512128064" type="yq40.DerefExpr" typeId="yq40.279446265608463015" id="6610873504380058181">
+              <node role="expression" roleId="mj1l.7254843406768839760" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="7996914629314980017">
                 <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="6610873504380029771" resolveInfo="mem" />
               </node>
             </node>
@@ -230,8 +232,8 @@
         <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="6610873504380058191">
           <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="6610873504380058191" />
           <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6610873504380058204">
-            <node role="left" roleId="mj1l.8860443239512128064" type=".com.mbeddr.core.pointers.structure.DerefExpr" id="6610873504380058205">
-              <node role="expression" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="7996914629314980018">
+            <node role="left" roleId="mj1l.8860443239512128064" type="yq40.DerefExpr" typeId="yq40.279446265608463015" id="6610873504380058205">
+              <node role="expression" roleId="mj1l.7254843406768839760" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="7996914629314980018">
                 <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="6610873504380029771" resolveInfo="mem" />
               </node>
             </node>
@@ -268,9 +270,9 @@
               <property name="value" nameId="mj1l.8860443239512128104" value="6" />
             </node>
           </node>
-          <node role="type" roleId="mj1l.318113533128716676" type=".com.mbeddr.core.pointers.structure.ArrayType" id="5083029923012080764">
-            <node role="baseType" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="5083029923012080765" />
-            <node role="sizeExpr" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6035922876555474365">
+          <node role="type" roleId="mj1l.318113533128716676" type="yq40.ArrayType" typeId="yq40.5679441017214012545" id="5083029923012080764">
+            <node role="baseType" roleId="yq40.5679441017214012546" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="5083029923012080765" />
+            <node role="sizeExpr" roleId="yq40.1452920870317474611" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6035922876555474365">
               <property name="value" nameId="mj1l.8860443239512128104" value="3" />
             </node>
           </node>
@@ -280,15 +282,15 @@
           <node role="init" roleId="c4fa.4185783222026502647" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="7863679314024361279">
             <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="7863679314024361263" resolveInfo="anArray" />
           </node>
-          <node role="type" roleId="mj1l.318113533128716676" type=".com.mbeddr.core.pointers.structure.PointerType" id="5083029923012081388">
-            <node role="baseType" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="5083029923012081389" />
+          <node role="type" roleId="mj1l.318113533128716676" type="yq40.PointerType" typeId="yq40.279446265608459824" id="5083029923012081388">
+            <node role="baseType" roleId="yq40.279446265608459825" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="5083029923012081389" />
           </node>
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="7863679314024361281">
           <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="7863679314024361281" />
           <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="7863679314024361287">
-            <node role="left" roleId="mj1l.8860443239512128064" type=".com.mbeddr.core.pointers.structure.DerefExpr" id="7863679314024361288">
-              <node role="expression" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="7062990249306948706">
+            <node role="left" roleId="mj1l.8860443239512128064" type="yq40.DerefExpr" typeId="yq40.279446265608463015" id="7863679314024361288">
+              <node role="expression" roleId="mj1l.7254843406768839760" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="7062990249306948706">
                 <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="7863679314024361274" resolveInfo="ap" />
               </node>
             </node>
@@ -302,13 +304,13 @@
             <node role="left" roleId="mj1l.8860443239512128064" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="7863679314024361294">
               <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="7863679314024361274" resolveInfo="ap" />
             </node>
-            <node role="right" roleId="mj1l.8860443239512128065" type=".com.mbeddr.core.pointers.structure.Int2Pointer" id="7863679314024372703">
-              <node role="expr" type="mj1l.PlusExpression" typeId="mj1l.5763383285156373013" id="7863679314024388147">
-                <node role="left" roleId="mj1l.8860443239512128064" type=".com.mbeddr.core.pointers.structure.Pointer2Int" id="7863679314024361299">
-                  <node role="expr" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="7863679314024361298">
+            <node role="right" roleId="mj1l.8860443239512128065" type="yq40.Int2Pointer" typeId="yq40.7863679314024361302" id="7863679314024372703">
+              <node role="expr" roleId="yq40.7863679314024361303" type="mj1l.PlusExpression" typeId="mj1l.5763383285156373013" id="7863679314024388147">
+                <node role="left" roleId="mj1l.8860443239512128064" type="yq40.Pointer2Int" typeId="yq40.7863679314024295441" id="7863679314024361299">
+                  <node role="expr" roleId="yq40.7863679314024295460" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="7863679314024361298">
                     <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="7863679314024361274" resolveInfo="ap" />
                   </node>
-                  <node role="type" type="mj1l.PtrDiffT" typeId="mj1l.6035922876555486166" id="6035922876555545190">
+                  <node role="type" roleId="yq40.4415315037677926511" type="mj1l.PtrDiffT" typeId="mj1l.6035922876555486166" id="6035922876555545190">
                     <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
                     <property name="const" nameId="mj1l.2941277002445651368" value="false" />
                   </node>
@@ -317,10 +319,10 @@
                   <property name="value" nameId="mj1l.8860443239512128104" value="1" />
                 </node>
               </node>
-              <node role="type" type=".com.mbeddr.core.pointers.structure.PointerType" id="7664133259366900483">
-                <property name="volatile" value="false" />
-                <property name="const" value="false" />
-                <node role="baseType" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="7664133259366900482">
+              <node role="type" roleId="yq40.4415315037677889398" type="yq40.PointerType" typeId="yq40.279446265608459824" id="7664133259366900483">
+                <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+                <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+                <node role="baseType" roleId="yq40.279446265608459825" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="7664133259366900482">
                   <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
                   <property name="const" nameId="mj1l.2941277002445651368" value="false" />
                 </node>
@@ -330,8 +332,8 @@
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="7863679314024387702">
           <property name="name" nameId="tpck.1169194664001" value="val" />
-          <node role="init" roleId="c4fa.4185783222026502647" type=".com.mbeddr.core.pointers.structure.DerefExpr" id="7863679314024387705">
-            <node role="expression" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="7062990249306948707">
+          <node role="init" roleId="c4fa.4185783222026502647" type="yq40.DerefExpr" typeId="yq40.279446265608463015" id="7863679314024387705">
+            <node role="expression" roleId="mj1l.7254843406768839760" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="7062990249306948707">
               <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="7863679314024361274" resolveInfo="ap" />
             </node>
           </node>
@@ -394,9 +396,9 @@
               <property name="value" nameId="mj1l.8860443239512128104" value="50" />
             </node>
           </node>
-          <node role="type" roleId="mj1l.318113533128716676" type=".com.mbeddr.core.pointers.structure.ArrayType" id="5083029923012081293">
-            <node role="baseType" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="5083029923012081294" />
-            <node role="sizeExpr" type="x27k.GlobalConstantRef" typeId="x27k.3788988821852026523" id="3562155621518895396">
+          <node role="type" roleId="mj1l.318113533128716676" type="yq40.ArrayType" typeId="yq40.5679441017214012545" id="5083029923012081293">
+            <node role="baseType" roleId="yq40.5679441017214012546" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="5083029923012081294" />
+            <node role="sizeExpr" roleId="yq40.1452920870317474611" type="x27k.GlobalConstantRef" typeId="x27k.3788988821852026523" id="3562155621518895396">
               <link role="constant" roleId="x27k.3788988821852026524" targetNodeId="7248713732034362486" resolveInfo="arrSize" />
             </node>
           </node>
@@ -405,11 +407,11 @@
         <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="5728674636024843212">
           <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="5728674636024843212" />
           <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="5728674636024843217">
-            <node role="left" roleId="mj1l.8860443239512128064" type=".com.mbeddr.core.pointers.structure.ArrayAccessExpr" id="5728674636024843215">
-              <node role="expression" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="7996914629314979999">
+            <node role="left" roleId="mj1l.8860443239512128064" type="yq40.ArrayAccessExpr" typeId="yq40.6282313788306893057" id="5728674636024843215">
+              <node role="expression" roleId="mj1l.7254843406768839760" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="7996914629314979999">
                 <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="36486875645774050" resolveInfo="andererArray" />
               </node>
-              <node role="index" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="5728674636024843216">
+              <node role="index" roleId="yq40.6282313788306893059" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="5728674636024843216">
                 <property name="value" nameId="mj1l.8860443239512128104" value="0" />
               </node>
             </node>
@@ -422,11 +424,11 @@
           <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="8607471592849978379" />
           <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="8607471592849978388">
             <node role="left" roleId="mj1l.8860443239512128064" type="mj1l.PlusExpression" typeId="mj1l.5763383285156373013" id="8607471592849978384">
-              <node role="left" roleId="mj1l.8860443239512128064" type=".com.mbeddr.core.pointers.structure.ArrayAccessExpr" id="8607471592849978382">
-                <node role="expression" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="8607471592849978381">
+              <node role="left" roleId="mj1l.8860443239512128064" type="yq40.ArrayAccessExpr" typeId="yq40.6282313788306893057" id="8607471592849978382">
+                <node role="expression" roleId="mj1l.7254843406768839760" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="8607471592849978381">
                   <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="36486875645774050" resolveInfo="andererArray" />
                 </node>
-                <node role="index" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="8607471592849978383">
+                <node role="index" roleId="yq40.6282313788306893059" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="8607471592849978383">
                   <property name="value" nameId="mj1l.8860443239512128104" value="0" />
                 </node>
               </node>
@@ -434,11 +436,11 @@
                 <property name="value" nameId="mj1l.8860443239512128104" value="10" />
               </node>
             </node>
-            <node role="right" roleId="mj1l.8860443239512128065" type=".com.mbeddr.core.pointers.structure.ArrayAccessExpr" id="8607471592849978393">
-              <node role="expression" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="8607471592849978392">
+            <node role="right" roleId="mj1l.8860443239512128065" type="yq40.ArrayAccessExpr" typeId="yq40.6282313788306893057" id="8607471592849978393">
+              <node role="expression" roleId="mj1l.7254843406768839760" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="8607471592849978392">
                 <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="36486875645774050" resolveInfo="andererArray" />
               </node>
-              <node role="index" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="8607471592849978394">
+              <node role="index" roleId="yq40.6282313788306893059" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="8607471592849978394">
                 <property name="value" nameId="mj1l.8860443239512128104" value="1" />
               </node>
             </node>
@@ -447,20 +449,20 @@
         <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="8607471592849978396">
           <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="8607471592849978396" />
           <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="8607471592849978405">
-            <node role="right" roleId="mj1l.8860443239512128065" type=".com.mbeddr.core.pointers.structure.ArrayAccessExpr" id="8607471592849978409">
-              <node role="expression" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="8607471592849978408">
+            <node role="right" roleId="mj1l.8860443239512128065" type="yq40.ArrayAccessExpr" typeId="yq40.6282313788306893057" id="8607471592849978409">
+              <node role="expression" roleId="mj1l.7254843406768839760" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="8607471592849978408">
                 <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="36486875645774050" resolveInfo="andererArray" />
               </node>
-              <node role="index" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="8607471592849978410">
+              <node role="index" roleId="yq40.6282313788306893059" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="8607471592849978410">
                 <property name="value" nameId="mj1l.8860443239512128104" value="0" />
               </node>
             </node>
             <node role="left" roleId="mj1l.8860443239512128064" type="mj1l.MultiExpression" typeId="mj1l.5763383285156373020" id="8607471592849978401">
-              <node role="left" roleId="mj1l.8860443239512128064" type=".com.mbeddr.core.pointers.structure.ArrayAccessExpr" id="8607471592849978399">
-                <node role="expression" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="8607471592849978398">
+              <node role="left" roleId="mj1l.8860443239512128064" type="yq40.ArrayAccessExpr" typeId="yq40.6282313788306893057" id="8607471592849978399">
+                <node role="expression" roleId="mj1l.7254843406768839760" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="8607471592849978398">
                   <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="36486875645774050" resolveInfo="andererArray" />
                 </node>
-                <node role="index" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="8607471592849978400">
+                <node role="index" roleId="yq40.6282313788306893059" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="8607471592849978400">
                   <property name="value" nameId="mj1l.8860443239512128104" value="0" />
                 </node>
               </node>
@@ -499,14 +501,14 @@
       <node role="body" roleId="yz9a.6275792049641586525" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="8599220535762603936">
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="8599220535762603978">
           <property name="name" nameId="tpck.1169194664001" value="arr" />
-          <node role="type" roleId="mj1l.318113533128716676" type=".com.mbeddr.core.pointers.structure.ArrayType" id="8599220535762603980">
-            <node role="baseType" type=".com.mbeddr.core.pointers.structure.ArrayType" id="8599220535762603982">
-              <node role="baseType" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="8599220535762603979" />
-              <node role="sizeExpr" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2941277002443884905">
+          <node role="type" roleId="mj1l.318113533128716676" type="yq40.ArrayType" typeId="yq40.5679441017214012545" id="8599220535762603980">
+            <node role="baseType" roleId="yq40.5679441017214012546" type="yq40.ArrayType" typeId="yq40.5679441017214012545" id="8599220535762603982">
+              <node role="baseType" roleId="yq40.5679441017214012546" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="8599220535762603979" />
+              <node role="sizeExpr" roleId="yq40.1452920870317474611" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2941277002443884905">
                 <property name="value" nameId="mj1l.8860443239512128104" value="2" />
               </node>
             </node>
-            <node role="sizeExpr" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2941277002443884862">
+            <node role="sizeExpr" roleId="yq40.1452920870317474611" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2941277002443884862">
               <property name="value" nameId="mj1l.8860443239512128104" value="4" />
             </node>
           </node>
@@ -521,11 +523,11 @@
       <property name="name" nameId="tpck.1169194664001" value="getSthFromArray" />
       <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="5728674636024843242">
         <node role="statements" roleId="c4fa.4185783222026475862" type="x27k.ReturnStatement" typeId="x27k.8967919205527146149" id="5728674636024843248">
-          <node role="expression" roleId="x27k.8967919205527146150" type=".com.mbeddr.core.pointers.structure.ArrayAccessExpr" id="5728674636024843250">
-            <node role="expression" type="x27k.ArgumentRef" typeId="x27k.2093108837558505658" id="3608436418819629856">
+          <node role="expression" roleId="x27k.8967919205527146150" type="yq40.ArrayAccessExpr" typeId="yq40.6282313788306893057" id="5728674636024843250">
+            <node role="expression" roleId="mj1l.7254843406768839760" type="x27k.ArgumentRef" typeId="x27k.2093108837558505658" id="3608436418819629856">
               <link role="arg" roleId="x27k.2093108837558505659" targetNodeId="5728674636024843244" resolveInfo="arr" />
             </node>
-            <node role="index" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="5728674636024843251">
+            <node role="index" roleId="yq40.6282313788306893059" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="5728674636024843251">
               <property name="value" nameId="mj1l.8860443239512128104" value="1" />
             </node>
           </node>
@@ -534,9 +536,9 @@
       <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="5708867820622277820" />
       <node role="arguments" roleId="x27k.5708867820623310661" type="x27k.Argument" typeId="x27k.7892328519581704407" id="5728674636024843244">
         <property name="name" nameId="tpck.1169194664001" value="arr" />
-        <node role="type" roleId="mj1l.318113533128716676" type=".com.mbeddr.core.pointers.structure.ArrayType" id="5708867820621171371">
-          <node role="baseType" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="5708867820621171372" />
-          <node role="sizeExpr" type="x27k.GlobalConstantRef" typeId="x27k.3788988821852026523" id="1071471145938718896">
+        <node role="type" roleId="mj1l.318113533128716676" type="yq40.ArrayType" typeId="yq40.5679441017214012545" id="5708867820621171371">
+          <node role="baseType" roleId="yq40.5679441017214012546" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="5708867820621171372" />
+          <node role="sizeExpr" roleId="yq40.1452920870317474611" type="x27k.GlobalConstantRef" typeId="x27k.3788988821852026523" id="1071471145938718896">
             <link role="constant" roleId="x27k.3788988821852026524" targetNodeId="7248713732034362486" resolveInfo="arrSize" />
           </node>
         </node>
@@ -635,8 +637,8 @@
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.FunctionPrototype" typeId="x27k.6437088627575724000" id="6173518449210279097">
       <property name="name" nameId="tpck.1169194664001" value="malloc" />
-      <node role="type" roleId="mj1l.318113533128716676" type=".com.mbeddr.core.pointers.structure.PointerType" id="5708867820622277942">
-        <node role="baseType" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="5708867820622277943" />
+      <node role="type" roleId="mj1l.318113533128716676" type="yq40.PointerType" typeId="yq40.279446265608459824" id="5708867820622277942">
+        <node role="baseType" roleId="yq40.279446265608459825" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="5708867820622277943" />
       </node>
       <node role="arguments" roleId="x27k.5708867820623310661" type="x27k.Argument" typeId="x27k.7892328519581704407" id="6173518449210279106">
         <property name="name" nameId="tpck.1169194664001" value="size" />
@@ -650,8 +652,8 @@
       <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="5708867820622277957" />
       <node role="arguments" roleId="x27k.5708867820623310661" type="x27k.Argument" typeId="x27k.7892328519581704407" id="6173518449210280453">
         <property name="name" nameId="tpck.1169194664001" value="pointer" />
-        <node role="type" roleId="mj1l.318113533128716676" type=".com.mbeddr.core.pointers.structure.PointerType" id="5708867820621171168">
-          <node role="baseType" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="5708867820621171169" />
+        <node role="type" roleId="mj1l.318113533128716676" type="yq40.PointerType" typeId="yq40.279446265608459824" id="5708867820621171168">
+          <node role="baseType" roleId="yq40.279446265608459825" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="5708867820621171169" />
         </node>
       </node>
     </node>
@@ -717,9 +719,9 @@
     <node role="contents" roleId="x27k.6437088627575722833" type="clbe.TypeDef" typeId="clbe.6116558314501347857" id="6261694371278131455">
       <property name="name" nameId="tpck.1169194664001" value="functionWithConstTypeDef" />
       <node role="original" roleId="clbe.6116558314501347862" type="x27k.FunctionRefType" typeId="x27k.8551646674110395547" id="6261694371278131457">
-        <node role="returnType" roleId="x27k.8551646674110395548" type=".com.mbeddr.core.pointers.structure.PointerType" id="6261694371278131460">
-          <property name="const" value="true" />
-          <node role="baseType" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="6261694371278131459" />
+        <node role="returnType" roleId="x27k.8551646674110395548" type="yq40.PointerType" typeId="yq40.279446265608459824" id="6261694371278131460">
+          <property name="const" nameId="mj1l.2941277002445651368" value="true" />
+          <node role="baseType" roleId="yq40.279446265608459825" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="6261694371278131459" />
         </node>
         <node role="argTypes" roleId="x27k.8551646674110395549" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="6261694371278131461" />
       </node>
@@ -737,10 +739,10 @@
       <property name="name" nameId="tpck.1169194664001" value="globalRef" />
       <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="vs0r.ElementDocumentation" typeId="vs0r.3857533489766146428" id="2749618433534965683">
         <node role="text" roleId="vs0r.4052432714772608243" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="3860690561158027011">
-          <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="3860690561158027014">
-            <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="3860690561158027015" />
-            <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="3860690561158027016">
-              <property name="escapedValue" value="a function reference in a global variable a function reference in a global variable" />
+          <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="3860690561158027014">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3860690561158027015" />
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3860690561158027016">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="a function reference in a global variable a function reference in a global variable" />
             </node>
           </node>
         </node>
@@ -772,10 +774,10 @@
       <property name="name" nameId="tpck.1169194664001" value="add" />
       <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="vs0r.ElementDocumentation" typeId="vs0r.3857533489766146428" id="2749618433534961599">
         <node role="text" roleId="vs0r.4052432714772608243" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="3860690561158027803">
-          <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="3860690561158027806">
-            <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="3860690561158027807" />
-            <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="3860690561158027808">
-              <property name="escapedValue" value="a simple add function a simple add function" />
+          <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="3860690561158027806">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3860690561158027807" />
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3860690561158027808">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="a simple add function a simple add function" />
             </node>
           </node>
         </node>
@@ -819,16 +821,16 @@
           </node>
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="x27k.ReturnStatement" typeId="x27k.8967919205527146149" id="2020194812908828613">
-          <node role="expression" roleId="x27k.8967919205527146150" type=".com.mbeddr.core.pointers.structure.ReferenceExpr" id="2020194812908828614">
-            <node role="expression" type="x27k.GlobalVarRef" typeId="x27k.6610873504380357354" id="2020194812908828616">
+          <node role="expression" roleId="x27k.8967919205527146150" type="yq40.ReferenceExpr" typeId="yq40.1595838349830846141" id="2020194812908828614">
+            <node role="expression" roleId="mj1l.7254843406768839760" type="x27k.GlobalVarRef" typeId="x27k.6610873504380357354" id="2020194812908828616">
               <link role="var" roleId="x27k.6610873504380357355" targetNodeId="2020194812908828597" resolveInfo="i8" />
             </node>
           </node>
         </node>
       </node>
-      <node role="type" roleId="mj1l.318113533128716676" type=".com.mbeddr.core.pointers.structure.PointerType" id="2020194812908828612">
-        <property name="const" value="true" />
-        <node role="baseType" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="2020194812908828591" />
+      <node role="type" roleId="mj1l.318113533128716676" type="yq40.PointerType" typeId="yq40.279446265608459824" id="2020194812908828612">
+        <property name="const" nameId="mj1l.2941277002445651368" value="true" />
+        <node role="baseType" roleId="yq40.279446265608459825" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="2020194812908828591" />
       </node>
       <node role="arguments" roleId="x27k.5708867820623310661" type="x27k.Argument" typeId="x27k.7892328519581704407" id="2020194812908841156">
         <property name="name" nameId="tpck.1169194664001" value="i" />
@@ -856,10 +858,10 @@
           </node>
           <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="vs0r.ElementDocumentation" typeId="vs0r.3857533489766146428" id="2749618433534965684">
             <node role="text" roleId="vs0r.4052432714772608243" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="3860690561158029245">
-              <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="3860690561158029248">
-                <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="3860690561158029249" />
-                <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="3860690561158029250">
-                  <property name="escapedValue" value="assign a reference to add to globalref... assign a reference to add to globalref..." />
+              <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="3860690561158029248">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3860690561158029249" />
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3860690561158029250">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="assign a reference to add to globalref... assign a reference to add to globalref..." />
                 </node>
               </node>
             </node>
@@ -869,10 +871,10 @@
           <property name="name" nameId="tpck.1169194664001" value="res" />
           <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="vs0r.ElementDocumentation" typeId="vs0r.3857533489766146428" id="2749618433534965685">
             <node role="text" roleId="vs0r.4052432714772608243" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="3860690561158027827">
-              <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="3860690561158027830">
-                <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="3860690561158027831" />
-                <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="3860690561158027832">
-                  <property name="escapedValue" value="and call it... and call it..." />
+              <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="3860690561158027830">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3860690561158027831" />
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3860690561158027832">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="and call it... and call it..." />
                 </node>
               </node>
             </node>
@@ -906,10 +908,10 @@
           <property name="name" nameId="tpck.1169194664001" value="localRef" />
           <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="vs0r.ElementDocumentation" typeId="vs0r.3857533489766146428" id="2749618433534965686">
             <node role="text" roleId="vs0r.4052432714772608243" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="3860690561158028232">
-              <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="3860690561158028235">
-                <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="3860690561158028236" />
-                <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="3860690561158028237">
-                  <property name="escapedValue" value="a local variable of function reference type a local variable of function reference type" />
+              <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="3860690561158028235">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3860690561158028236" />
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3860690561158028237">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="a local variable of function reference type a local variable of function reference type" />
                 </node>
               </node>
             </node>
@@ -934,10 +936,10 @@
           <property name="name" nameId="tpck.1169194664001" value="localres" />
           <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="vs0r.ElementDocumentation" typeId="vs0r.3857533489766146428" id="2749618433534965687">
             <node role="text" roleId="vs0r.4052432714772608243" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="3860690561158025579">
-              <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="3860690561158025582">
-                <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="3860690561158025583" />
-                <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="3860690561158025584">
-                  <property name="escapedValue" value="calling through the local one calling through the local one" />
+              <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="3860690561158025582">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3860690561158025583" />
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3860690561158025584">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="calling through the local one calling through the local one" />
                 </node>
               </node>
             </node>
@@ -988,10 +990,10 @@
           <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="8551646674110580414" />
           <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="vs0r.ElementDocumentation" typeId="vs0r.3857533489766146428" id="2749618433534965689">
             <node role="text" roleId="vs0r.4052432714772608243" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="3860690561158025909">
-              <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="3860690561158025912">
-                <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="3860690561158025913" />
-                <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="3860690561158025914">
-                  <property name="escapedValue" value="calling the HOF function with a function reference calling the HOF function with a function reference" />
+              <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="3860690561158025912">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3860690561158025913" />
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3860690561158025914">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="calling the HOF function with a function reference calling the HOF function with a function reference" />
                 </node>
               </node>
             </node>
@@ -1023,10 +1025,10 @@
           </node>
           <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="vs0r.ElementDocumentation" typeId="vs0r.3857533489766146428" id="2749618433534965690">
             <node role="text" roleId="vs0r.4052432714772608243" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="3860690561158026993">
-              <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="3860690561158026996">
-                <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="3860690561158026997" />
-                <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="3860690561158026998">
-                  <property name="escapedValue" value="calling the HOF directly with a function reference calling the HOF directly with a function reference" />
+              <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="3860690561158026996">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3860690561158026997" />
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3860690561158026998">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="calling the HOF directly with a function reference calling the HOF directly with a function reference" />
                 </node>
               </node>
             </node>
@@ -1074,8 +1076,8 @@
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2020194812908841175">
               <property name="value" nameId="mj1l.8860443239512128104" value="25" />
             </node>
-            <node role="left" roleId="mj1l.8860443239512128064" type=".com.mbeddr.core.pointers.structure.DerefExpr" id="2020194812908841176">
-              <node role="expression" type="x27k.FunctionCall" typeId="x27k.5950410542643524492" id="2020194812908841168">
+            <node role="left" roleId="mj1l.8860443239512128064" type="yq40.DerefExpr" typeId="yq40.279446265608463015" id="2020194812908841176">
+              <node role="expression" roleId="mj1l.7254843406768839760" type="x27k.FunctionCall" typeId="x27k.5950410542643524492" id="2020194812908841168">
                 <link role="function" roleId="x27k.5950410542643524493" targetNodeId="2020194812908828588" resolveInfo="functionWithConst" />
                 <node role="actuals" roleId="x27k.5950410542643524495" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2020194812908841169">
                   <property name="value" nameId="mj1l.8860443239512128104" value="5" />
@@ -1092,10 +1094,10 @@
       <property name="name" nameId="tpck.1169194664001" value="higherOrderFunction" />
       <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="vs0r.ElementDocumentation" typeId="vs0r.3857533489766146428" id="2749618433534965688">
         <node role="text" roleId="vs0r.4052432714772608243" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="3860690561158028682">
-          <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="3860690561158028685">
-            <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="3860690561158028686" />
-            <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="3860690561158028687">
-              <property name="escapedValue" value="a function taking another function as an argument a function taking another function as an argument" />
+          <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="3860690561158028685">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3860690561158028686" />
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3860690561158028687">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="a function taking another function as an argument a function taking another function as an argument" />
             </node>
           </node>
         </node>
@@ -1467,9 +1469,9 @@
               <property name="value" nameId="mj1l.8860443239512128104" value="5" />
             </node>
           </node>
-          <node role="type" roleId="mj1l.318113533128716676" type=".com.mbeddr.core.pointers.structure.ArrayType" id="5083029923012081326">
-            <node role="baseType" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="5083029923012081327" />
-            <node role="sizeExpr" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6035922876555479874">
+          <node role="type" roleId="mj1l.318113533128716676" type="yq40.ArrayType" typeId="yq40.5679441017214012545" id="5083029923012081326">
+            <node role="baseType" roleId="yq40.5679441017214012546" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="5083029923012081327" />
+            <node role="sizeExpr" roleId="yq40.1452920870317474611" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6035922876555479874">
               <property name="value" nameId="mj1l.8860443239512128104" value="5" />
             </node>
           </node>
@@ -1512,11 +1514,11 @@
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="8257817273847139245">
               <property name="value" nameId="mj1l.8860443239512128104" value="6" />
             </node>
-            <node role="left" roleId="mj1l.8860443239512128064" type=".com.mbeddr.core.pointers.structure.ArrayAccessExpr" id="8257817273847139240">
-              <node role="expression" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="8257817273847139239">
+            <node role="left" roleId="mj1l.8860443239512128064" type="yq40.ArrayAccessExpr" typeId="yq40.6282313788306893057" id="8257817273847139240">
+              <node role="expression" roleId="mj1l.7254843406768839760" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="8257817273847139239">
                 <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="8257817273847139158" resolveInfo="intarr" />
               </node>
-              <node role="index" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="8257817273847139241">
+              <node role="index" roleId="yq40.6282313788306893059" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="8257817273847139241">
                 <property name="value" nameId="mj1l.8860443239512128104" value="2" />
               </node>
             </node>
@@ -1582,11 +1584,11 @@
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2179155938639637000">
               <property name="value" nameId="mj1l.8860443239512128104" value="4" />
             </node>
-            <node role="left" roleId="mj1l.8860443239512128064" type=".com.mbeddr.core.pointers.structure.ArrayAccessExpr" id="2179155938639636995">
-              <node role="expression" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="2179155938639636994">
+            <node role="left" roleId="mj1l.8860443239512128064" type="yq40.ArrayAccessExpr" typeId="yq40.6282313788306893057" id="2179155938639636995">
+              <node role="expression" roleId="mj1l.7254843406768839760" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="2179155938639636994">
                 <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="8257817273847139158" resolveInfo="intarr" />
               </node>
-              <node role="index" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2179155938639636996">
+              <node role="index" roleId="yq40.6282313788306893059" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2179155938639636996">
                 <property name="value" nameId="mj1l.8860443239512128104" value="0" />
               </node>
             </node>
@@ -1598,11 +1600,11 @@
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2179155938639637003">
               <property name="value" nameId="mj1l.8860443239512128104" value="6" />
             </node>
-            <node role="left" roleId="mj1l.8860443239512128064" type=".com.mbeddr.core.pointers.structure.ArrayAccessExpr" id="2179155938639637004">
-              <node role="expression" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="2179155938639637005">
+            <node role="left" roleId="mj1l.8860443239512128064" type="yq40.ArrayAccessExpr" typeId="yq40.6282313788306893057" id="2179155938639637004">
+              <node role="expression" roleId="mj1l.7254843406768839760" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="2179155938639637005">
                 <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="8257817273847139158" resolveInfo="intarr" />
               </node>
-              <node role="index" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2179155938639637006">
+              <node role="index" roleId="yq40.6282313788306893059" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2179155938639637006">
                 <property name="value" nameId="mj1l.8860443239512128104" value="2" />
               </node>
             </node>
@@ -1674,11 +1676,11 @@
           <node role="body" roleId="c4fa.7254843406768606771" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="8257817273847171195">
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="8257817273847171213">
               <node role="expr" roleId="c4fa.7254843406768833939" type="x27k.FunctionRefCallExpr" typeId="x27k.8551646674110505761" id="8257817273847171215">
-                <node role="actuals" roleId="x27k.8551646674110548275" type=".com.mbeddr.core.pointers.structure.ArrayAccessExpr" id="8257817273847171217">
-                  <node role="expression" type="x27k.ArgumentRef" typeId="x27k.2093108837558505658" id="3608436418819629841">
+                <node role="actuals" roleId="x27k.8551646674110548275" type="yq40.ArrayAccessExpr" typeId="yq40.6282313788306893057" id="8257817273847171217">
+                  <node role="expression" roleId="mj1l.7254843406768839760" type="x27k.ArgumentRef" typeId="x27k.2093108837558505658" id="3608436418819629841">
                     <link role="arg" roleId="x27k.2093108837558505659" targetNodeId="8257817273847171182" resolveInfo="arr" />
                   </node>
-                  <node role="index" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="8257817273847171218">
+                  <node role="index" roleId="yq40.6282313788306893059" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="8257817273847171218">
                     <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="8257817273847171205" resolveInfo="p" />
                   </node>
                 </node>
@@ -1713,8 +1715,8 @@
       <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="5708867820622277883" />
       <node role="arguments" roleId="x27k.5708867820623310661" type="x27k.Argument" typeId="x27k.7892328519581704407" id="8257817273847171182">
         <property name="name" nameId="tpck.1169194664001" value="arr" />
-        <node role="type" roleId="mj1l.318113533128716676" type=".com.mbeddr.core.pointers.structure.ArrayType" id="5708867820621171318">
-          <node role="baseType" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="5708867820621171319" />
+        <node role="type" roleId="mj1l.318113533128716676" type="yq40.ArrayType" typeId="yq40.5679441017214012545" id="5708867820621171318">
+          <node role="baseType" roleId="yq40.5679441017214012546" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="5708867820621171319" />
         </node>
       </node>
       <node role="arguments" roleId="x27k.5708867820623310661" type="x27k.Argument" typeId="x27k.7892328519581704407" id="8257817273847171185">
@@ -1736,11 +1738,11 @@
           <node role="body" roleId="c4fa.7254843406768606771" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="8257817273847139195">
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="22102029902643274">
               <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.AssignmentExpr" typeId="mj1l.22102029902365709" id="22102029902643275">
-                <node role="left" roleId="mj1l.8860443239512128064" type=".com.mbeddr.core.pointers.structure.ArrayAccessExpr" id="8257817273847139250">
-                  <node role="expression" type="x27k.ArgumentRef" typeId="x27k.2093108837558505658" id="3608436418819629843">
+                <node role="left" roleId="mj1l.8860443239512128064" type="yq40.ArrayAccessExpr" typeId="yq40.6282313788306893057" id="8257817273847139250">
+                  <node role="expression" roleId="mj1l.7254843406768839760" type="x27k.ArgumentRef" typeId="x27k.2093108837558505658" id="3608436418819629843">
                     <link role="arg" roleId="x27k.2093108837558505659" targetNodeId="8257817273847139180" resolveInfo="arr" />
                   </node>
-                  <node role="index" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="8257817273847139251">
+                  <node role="index" roleId="yq40.6282313788306893059" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="8257817273847139251">
                     <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="8257817273847139196" resolveInfo="p" />
                   </node>
                 </node>
@@ -1748,11 +1750,11 @@
                   <node role="expr" roleId="x27k.8551646674110505762" type="x27k.ArgumentRef" typeId="x27k.2093108837558505658" id="3608436418819629844">
                     <link role="arg" roleId="x27k.2093108837558505659" targetNodeId="8257817273847139186" resolveInfo="modifyFunction" />
                   </node>
-                  <node role="actuals" roleId="x27k.8551646674110548275" type=".com.mbeddr.core.pointers.structure.ArrayAccessExpr" id="8257817273847154222">
-                    <node role="expression" type="x27k.ArgumentRef" typeId="x27k.2093108837558505658" id="3608436418819629845">
+                  <node role="actuals" roleId="x27k.8551646674110548275" type="yq40.ArrayAccessExpr" typeId="yq40.6282313788306893057" id="8257817273847154222">
+                    <node role="expression" roleId="mj1l.7254843406768839760" type="x27k.ArgumentRef" typeId="x27k.2093108837558505658" id="3608436418819629845">
                       <link role="arg" roleId="x27k.2093108837558505659" targetNodeId="8257817273847139180" resolveInfo="arr" />
                     </node>
-                    <node role="index" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="8257817273847154223">
+                    <node role="index" roleId="yq40.6282313788306893059" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="8257817273847154223">
                       <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="8257817273847139196" resolveInfo="p" />
                     </node>
                   </node>
@@ -1785,8 +1787,8 @@
       <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="5708867820622277854" />
       <node role="arguments" roleId="x27k.5708867820623310661" type="x27k.Argument" typeId="x27k.7892328519581704407" id="8257817273847139180">
         <property name="name" nameId="tpck.1169194664001" value="arr" />
-        <node role="type" roleId="mj1l.318113533128716676" type=".com.mbeddr.core.pointers.structure.ArrayType" id="5708867820621171259">
-          <node role="baseType" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="5708867820621171260" />
+        <node role="type" roleId="mj1l.318113533128716676" type="yq40.ArrayType" typeId="yq40.5679441017214012545" id="5708867820621171259">
+          <node role="baseType" roleId="yq40.5679441017214012546" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="5708867820621171260" />
         </node>
       </node>
       <node role="arguments" roleId="x27k.5708867820623310661" type="x27k.Argument" typeId="x27k.7892328519581704407" id="8257817273847139183">
@@ -1808,11 +1810,11 @@
           <node role="body" roleId="c4fa.7254843406768606771" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="2179155938639636904">
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="2179155938639636939">
               <property name="name" nameId="tpck.1169194664001" value="i" />
-              <node role="init" roleId="c4fa.4185783222026502647" type=".com.mbeddr.core.pointers.structure.ArrayAccessExpr" id="2179155938639636943">
-                <node role="expression" type="x27k.ArgumentRef" typeId="x27k.2093108837558505658" id="3608436418819629848">
+              <node role="init" roleId="c4fa.4185783222026502647" type="yq40.ArrayAccessExpr" typeId="yq40.6282313788306893057" id="2179155938639636943">
+                <node role="expression" roleId="mj1l.7254843406768839760" type="x27k.ArgumentRef" typeId="x27k.2093108837558505658" id="3608436418819629848">
                   <link role="arg" roleId="x27k.2093108837558505659" targetNodeId="2179155938639636923" resolveInfo="arr" />
                 </node>
-                <node role="index" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="2179155938639636944">
+                <node role="index" roleId="yq40.6282313788306893059" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="2179155938639636944">
                   <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="2179155938639636914" resolveInfo="p" />
                 </node>
               </node>
@@ -1830,11 +1832,11 @@
               <node role="thenPart" roleId="c4fa.6275792049641600985" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="2179155938639636948">
                 <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="22102029902643544">
                   <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.AssignmentExpr" typeId="mj1l.22102029902365709" id="22102029902643545">
-                    <node role="left" roleId="mj1l.8860443239512128064" type=".com.mbeddr.core.pointers.structure.ArrayAccessExpr" id="2179155938639636906">
-                      <node role="expression" type="x27k.ArgumentRef" typeId="x27k.2093108837558505658" id="3608436418819629851">
+                    <node role="left" roleId="mj1l.8860443239512128064" type="yq40.ArrayAccessExpr" typeId="yq40.6282313788306893057" id="2179155938639636906">
+                      <node role="expression" roleId="mj1l.7254843406768839760" type="x27k.ArgumentRef" typeId="x27k.2093108837558505658" id="3608436418819629851">
                         <link role="arg" roleId="x27k.2093108837558505659" targetNodeId="2179155938639636923" resolveInfo="arr" />
                       </node>
-                      <node role="index" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="2179155938639636908">
+                      <node role="index" roleId="yq40.6282313788306893059" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="2179155938639636908">
                         <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="2179155938639636914" resolveInfo="p" />
                       </node>
                     </node>
@@ -1876,8 +1878,8 @@
       <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="5708867820622277927" />
       <node role="arguments" roleId="x27k.5708867820623310661" type="x27k.Argument" typeId="x27k.7892328519581704407" id="2179155938639636923">
         <property name="name" nameId="tpck.1169194664001" value="arr" />
-        <node role="type" roleId="mj1l.318113533128716676" type=".com.mbeddr.core.pointers.structure.ArrayType" id="5708867820621171345">
-          <node role="baseType" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="5708867820621171346" />
+        <node role="type" roleId="mj1l.318113533128716676" type="yq40.ArrayType" typeId="yq40.5679441017214012545" id="5708867820621171345">
+          <node role="baseType" roleId="yq40.5679441017214012546" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="5708867820621171346" />
         </node>
       </node>
       <node role="arguments" roleId="x27k.5708867820623310661" type="x27k.Argument" typeId="x27k.7892328519581704407" id="2179155938639636926">
@@ -2276,10 +2278,10 @@
       <property name="name" nameId="tpck.1169194664001" value="PointerStruct" />
       <node role="members" roleId="clbe.7099329415459888018" type="clbe.Member" typeId="clbe.5882395403881875736" id="4378677424457831452">
         <property name="name" nameId="tpck.1169194664001" value="pointPtr" />
-        <node role="type" roleId="mj1l.318113533128716676" type=".com.mbeddr.core.pointers.structure.PointerType" id="4378677424457831474">
-          <property name="volatile" value="false" />
-          <property name="const" value="false" />
-          <node role="baseType" type="clbe.StructType" typeId="clbe.6394819151180597816" id="4378677424457831473">
+        <node role="type" roleId="mj1l.318113533128716676" type="yq40.PointerType" typeId="yq40.279446265608459824" id="4378677424457831474">
+          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+          <node role="baseType" roleId="yq40.279446265608459825" type="clbe.StructType" typeId="clbe.6394819151180597816" id="4378677424457831473">
             <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
             <property name="const" nameId="mj1l.2941277002445651368" value="false" />
             <link role="struct" roleId="clbe.6394819151180597817" targetNodeId="4378677424457830987" resolveInfo="Point" />
@@ -2453,8 +2455,8 @@
           <node role="init" roleId="c4fa.4185783222026502647" type="k146.NamedArgStructInitExpression" typeId="k146.3059865549680361316" id="4378677424457832151">
             <node role="memberAssigns" roleId="k146.3059865549680413567" type="k146.WithMemberAssignment" typeId="k146.3073566081777391256" id="4378677424457832160">
               <link role="member" roleId="k146.3073566081777391258" targetNodeId="4378677424457831452" resolveInfo="pointPtr" />
-              <node role="value" roleId="k146.3073566081777391257" type=".com.mbeddr.core.pointers.structure.ReferenceExpr" id="4378677424457832199">
-                <node role="expression" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="4378677424457832213">
+              <node role="value" roleId="k146.3073566081777391257" type="yq40.ReferenceExpr" typeId="yq40.1595838349830846141" id="4378677424457832199">
+                <node role="expression" roleId="mj1l.7254843406768839760" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="4378677424457832213">
                   <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="4378677424457831994" resolveInfo="p2" />
                 </node>
               </node>
@@ -2749,10 +2751,10 @@
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.GlobalVariableDeclaration" typeId="x27k.6610873504380335822" id="22102029902284578">
       <property name="name" nameId="tpck.1169194664001" value="constVolPtr" />
-      <node role="type" roleId="mj1l.318113533128716676" type=".com.mbeddr.core.pointers.structure.PointerType" id="22102029902284580">
-        <property name="const" value="true" />
-        <property name="volatile" value="true" />
-        <node role="baseType" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="22102029902284579">
+      <node role="type" roleId="mj1l.318113533128716676" type="yq40.PointerType" typeId="yq40.279446265608459824" id="22102029902284580">
+        <property name="const" nameId="mj1l.2941277002445651368" value="true" />
+        <property name="volatile" nameId="mj1l.2941277002448691247" value="true" />
+        <node role="baseType" roleId="yq40.279446265608459825" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="22102029902284579">
           <property name="const" nameId="mj1l.2941277002445651368" value="false" />
           <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
         </node>
@@ -2760,10 +2762,10 @@
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.GlobalVariableDeclaration" typeId="x27k.6610873504380335822" id="22102029902284582">
       <property name="name" nameId="tpck.1169194664001" value="constVolPtrAndInt" />
-      <node role="type" roleId="mj1l.318113533128716676" type=".com.mbeddr.core.pointers.structure.PointerType" id="22102029902284583">
-        <property name="const" value="true" />
-        <property name="volatile" value="true" />
-        <node role="baseType" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="22102029902284584">
+      <node role="type" roleId="mj1l.318113533128716676" type="yq40.PointerType" typeId="yq40.279446265608459824" id="22102029902284583">
+        <property name="const" nameId="mj1l.2941277002445651368" value="true" />
+        <property name="volatile" nameId="mj1l.2941277002448691247" value="true" />
+        <node role="baseType" roleId="yq40.279446265608459825" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="22102029902284584">
           <property name="const" nameId="mj1l.2941277002445651368" value="true" />
           <property name="volatile" nameId="mj1l.2941277002448691247" value="true" />
         </node>
@@ -2771,14 +2773,14 @@
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.GlobalVariableDeclaration" typeId="x27k.6610873504380335822" id="22102029902284586">
       <property name="name" nameId="tpck.1169194664001" value="constVolatileArray" />
-      <node role="type" roleId="mj1l.318113533128716676" type=".com.mbeddr.core.pointers.structure.ArrayType" id="22102029902284588">
-        <property name="volatile" value="true" />
-        <property name="const" value="true" />
-        <node role="baseType" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="22102029902284587">
+      <node role="type" roleId="mj1l.318113533128716676" type="yq40.ArrayType" typeId="yq40.5679441017214012545" id="22102029902284588">
+        <property name="volatile" nameId="mj1l.2941277002448691247" value="true" />
+        <property name="const" nameId="mj1l.2941277002445651368" value="true" />
+        <node role="baseType" roleId="yq40.5679441017214012546" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="22102029902284587">
           <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
           <property name="const" nameId="mj1l.2941277002445651368" value="false" />
         </node>
-        <node role="sizeExpr" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="22102029902284590">
+        <node role="sizeExpr" roleId="yq40.1452920870317474611" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="22102029902284590">
           <property name="value" nameId="mj1l.8860443239512128104" value="42" />
         </node>
       </node>
@@ -2801,86 +2803,94 @@
       <node role="body" roleId="yz9a.6275792049641586525" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="5684014141267564511">
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="5684014141267564513">
           <property name="comment" nameId="c4fa.1679452829930336985" value="this is just a compile test" />
+          <node role="textblock" roleId="c4fa.8624890525768479139" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8624890525768587238">
+            <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8624890525768587241">
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8624890525768587242" />
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8624890525768587243">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="this is just a compile test" />
+              </node>
+            </node>
+          </node>
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="5684014141267567386">
           <property name="name" nameId="tpck.1169194664001" value="str" />
-          <node role="type" roleId="mj1l.318113533128716676" type=".com.mbeddr.core.pointers.structure.StringType" id="5684014141267630080">
-            <property name="volatile" value="false" />
-            <property name="const" value="false" />
+          <node role="type" roleId="mj1l.318113533128716676" type="yq40.StringType" typeId="yq40.6113173064528067332" id="5684014141267630080">
+            <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+            <property name="const" nameId="mj1l.2941277002445651368" value="false" />
           </node>
-          <node role="init" roleId="c4fa.4185783222026502647" type=".com.mbeddr.core.pointers.structure.StringLiteral" id="5684014141267567389">
-            <property name="value" value="Hallo Welt" />
+          <node role="init" roleId="c4fa.4185783222026502647" type="yq40.StringLiteral" typeId="yq40.6113173064526131575" id="5684014141267567389">
+            <property name="value" nameId="yq40.6113173064526131578" value="Hallo Welt" />
           </node>
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="5684014141267630081">
           <property name="name" nameId="tpck.1169194664001" value="strArray" />
-          <node role="type" roleId="mj1l.318113533128716676" type=".com.mbeddr.core.pointers.structure.StringArrayType" id="5684014141267630084">
-            <property name="volatile" value="false" />
-            <property name="const" value="false" />
-            <node role="size" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="5684014141267655940">
+          <node role="type" roleId="mj1l.318113533128716676" type="yq40.StringArrayType" typeId="yq40.5684014141267595977" id="5684014141267630084">
+            <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+            <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+            <node role="size" roleId="yq40.5684014141267595982" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="5684014141267655940">
               <property name="value" nameId="mj1l.8860443239512128104" value="10" />
             </node>
           </node>
-          <node role="init" roleId="c4fa.4185783222026502647" type=".com.mbeddr.core.pointers.structure.StringLiteral" id="5684014141267630083">
-            <property name="value" value="Hallo Welt" />
+          <node role="init" roleId="c4fa.4185783222026502647" type="yq40.StringLiteral" typeId="yq40.6113173064526131575" id="5684014141267630083">
+            <property name="value" nameId="yq40.6113173064526131578" value="Hallo Welt" />
           </node>
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="5684014141267661649">
           <property name="name" nameId="tpck.1169194664001" value="xxx" />
-          <node role="type" roleId="mj1l.318113533128716676" type=".com.mbeddr.core.pointers.structure.StringArrayType" id="5684014141267661650">
-            <property name="volatile" value="false" />
-            <property name="const" value="false" />
-            <node role="size" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="5684014141267661652">
+          <node role="type" roleId="mj1l.318113533128716676" type="yq40.StringArrayType" typeId="yq40.5684014141267595977" id="5684014141267661650">
+            <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+            <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+            <node role="size" roleId="yq40.5684014141267595982" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="5684014141267661652">
               <property name="value" nameId="mj1l.8860443239512128104" value="10" />
             </node>
           </node>
-          <node role="init" roleId="c4fa.4185783222026502647" type=".com.mbeddr.core.pointers.structure.StringLiteral" id="5684014141267661654">
-            <property name="value" value="aaaaaaaaaa" />
+          <node role="init" roleId="c4fa.4185783222026502647" type="yq40.StringLiteral" typeId="yq40.6113173064526131575" id="5684014141267661654">
+            <property name="value" nameId="yq40.6113173064526131578" value="aaaaaaaaaa" />
           </node>
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="2799248402513577233">
           <property name="name" nameId="tpck.1169194664001" value="i8Ptr" />
-          <node role="type" roleId="mj1l.318113533128716676" type=".com.mbeddr.core.pointers.structure.PointerType" id="2799248402513577258">
-            <property name="volatile" value="false" />
-            <property name="const" value="false" />
-            <node role="baseType" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="2799248402513577234">
+          <node role="type" roleId="mj1l.318113533128716676" type="yq40.PointerType" typeId="yq40.279446265608459824" id="2799248402513577258">
+            <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+            <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+            <node role="baseType" roleId="yq40.279446265608459825" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="2799248402513577234">
               <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
               <property name="const" nameId="mj1l.2941277002445651368" value="false" />
             </node>
           </node>
-          <node role="init" roleId="c4fa.4185783222026502647" type=".com.mbeddr.core.pointers.structure.StringLiteral" id="2799248402513580741">
-            <property name="value" value="Hallo Welt" />
+          <node role="init" roleId="c4fa.4185783222026502647" type="yq40.StringLiteral" typeId="yq40.6113173064526131575" id="2799248402513580741">
+            <property name="value" nameId="yq40.6113173064526131578" value="Hallo Welt" />
           </node>
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="5684014141267506017">
           <property name="name" nameId="tpck.1169194664001" value="i8Array" />
-          <node role="type" roleId="mj1l.318113533128716676" type=".com.mbeddr.core.pointers.structure.ArrayType" id="5684014141267506019">
-            <property name="volatile" value="false" />
-            <property name="const" value="false" />
-            <node role="baseType" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="5684014141267506018">
+          <node role="type" roleId="mj1l.318113533128716676" type="yq40.ArrayType" typeId="yq40.5679441017214012545" id="5684014141267506019">
+            <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+            <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+            <node role="baseType" roleId="yq40.5679441017214012546" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="5684014141267506018">
               <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
               <property name="const" nameId="mj1l.2941277002445651368" value="false" />
             </node>
           </node>
-          <node role="init" roleId="c4fa.4185783222026502647" type=".com.mbeddr.core.pointers.structure.StringLiteral" id="5684014141267506021">
-            <property name="value" value="Hallo Welt" />
+          <node role="init" roleId="c4fa.4185783222026502647" type="yq40.StringLiteral" typeId="yq40.6113173064526131575" id="5684014141267506021">
+            <property name="value" nameId="yq40.6113173064526131578" value="Hallo Welt" />
           </node>
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="5684014141267552947">
           <property name="name" nameId="tpck.1169194664001" value="i8ArrayWithSize" />
-          <node role="type" roleId="mj1l.318113533128716676" type=".com.mbeddr.core.pointers.structure.ArrayType" id="5684014141267552948">
-            <property name="volatile" value="false" />
-            <property name="const" value="false" />
-            <node role="baseType" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="5684014141267552949">
+          <node role="type" roleId="mj1l.318113533128716676" type="yq40.ArrayType" typeId="yq40.5679441017214012545" id="5684014141267552948">
+            <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+            <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+            <node role="baseType" roleId="yq40.5679441017214012546" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="5684014141267552949">
               <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
               <property name="const" nameId="mj1l.2941277002445651368" value="false" />
             </node>
-            <node role="sizeExpr" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="5684014141267564506">
+            <node role="sizeExpr" roleId="yq40.1452920870317474611" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="5684014141267564506">
               <property name="value" nameId="mj1l.8860443239512128104" value="11" />
             </node>
           </node>
-          <node role="init" roleId="c4fa.4185783222026502647" type=".com.mbeddr.core.pointers.structure.StringLiteral" id="5684014141267552950">
-            <property name="value" value="Hallo Welt" />
+          <node role="init" roleId="c4fa.4185783222026502647" type="yq40.StringLiteral" typeId="yq40.6113173064526131575" id="5684014141267552950">
+            <property name="value" nameId="yq40.6113173064526131578" value="Hallo Welt" />
           </node>
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="3562155621519075700" />
@@ -2893,14 +2903,14 @@
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.GlobalVariableDeclaration" typeId="x27k.6610873504380335822" id="268054603277746269">
       <property name="name" nameId="tpck.1169194664001" value="a" />
-      <node role="type" roleId="mj1l.318113533128716676" type=".com.mbeddr.core.pointers.structure.ArrayType" id="268054603277746274">
-        <property name="volatile" value="false" />
-        <property name="const" value="false" />
-        <node role="baseType" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="268054603277746270">
+      <node role="type" roleId="mj1l.318113533128716676" type="yq40.ArrayType" typeId="yq40.5679441017214012545" id="268054603277746274">
+        <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+        <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+        <node role="baseType" roleId="yq40.5679441017214012546" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="268054603277746270">
           <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
           <property name="const" nameId="mj1l.2941277002445651368" value="false" />
         </node>
-        <node role="sizeExpr" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="268054603277746275">
+        <node role="sizeExpr" roleId="yq40.1452920870317474611" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="268054603277746275">
           <property name="value" nameId="mj1l.8860443239512128104" value="2" />
         </node>
       </node>
@@ -2915,63 +2925,63 @@
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.GlobalVariableDeclaration" typeId="x27k.6610873504380335822" id="268054603277746281">
       <property name="name" nameId="tpck.1169194664001" value="b" />
-      <node role="type" roleId="mj1l.318113533128716676" type=".com.mbeddr.core.pointers.structure.ArrayType" id="268054603277746283">
-        <property name="volatile" value="false" />
-        <property name="const" value="false" />
-        <node role="baseType" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="268054603277746282">
+      <node role="type" roleId="mj1l.318113533128716676" type="yq40.ArrayType" typeId="yq40.5679441017214012545" id="268054603277746283">
+        <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+        <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+        <node role="baseType" roleId="yq40.5679441017214012546" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="268054603277746282">
           <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
           <property name="const" nameId="mj1l.2941277002445651368" value="false" />
         </node>
-        <node role="sizeExpr" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="268054603277746284">
+        <node role="sizeExpr" roleId="yq40.1452920870317474611" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="268054603277746284">
           <property name="value" nameId="mj1l.8860443239512128104" value="2" />
         </node>
       </node>
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.GlobalVariableDeclaration" typeId="x27k.6610873504380335822" id="4115720392369377463">
       <property name="name" nameId="tpck.1169194664001" value="c" />
-      <node role="type" roleId="mj1l.318113533128716676" type=".com.mbeddr.core.pointers.structure.ArrayType" id="4115720392369377467">
-        <property name="volatile" value="false" />
-        <property name="const" value="false" />
-        <node role="baseType" type=".com.mbeddr.core.pointers.structure.ArrayType" id="4115720392369377464">
-          <property name="volatile" value="false" />
-          <property name="const" value="false" />
-          <node role="baseType" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="4115720392369377465">
+      <node role="type" roleId="mj1l.318113533128716676" type="yq40.ArrayType" typeId="yq40.5679441017214012545" id="4115720392369377467">
+        <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+        <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+        <node role="baseType" roleId="yq40.5679441017214012546" type="yq40.ArrayType" typeId="yq40.5679441017214012545" id="4115720392369377464">
+          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+          <node role="baseType" roleId="yq40.5679441017214012546" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="4115720392369377465">
             <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
             <property name="const" nameId="mj1l.2941277002445651368" value="false" />
           </node>
-          <node role="sizeExpr" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="4115720392369377466">
+          <node role="sizeExpr" roleId="yq40.1452920870317474611" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="4115720392369377466">
             <property name="value" nameId="mj1l.8860443239512128104" value="2" />
           </node>
         </node>
-        <node role="sizeExpr" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="4115720392369377468">
+        <node role="sizeExpr" roleId="yq40.1452920870317474611" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="4115720392369377468">
           <property name="value" nameId="mj1l.8860443239512128104" value="3" />
         </node>
       </node>
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.GlobalVariableDeclaration" typeId="x27k.6610873504380335822" id="4115720392370218653">
       <property name="name" nameId="tpck.1169194664001" value="d" />
-      <node role="type" roleId="mj1l.318113533128716676" type=".com.mbeddr.core.pointers.structure.ArrayType" id="4115720392370218659">
-        <property name="volatile" value="false" />
-        <property name="const" value="false" />
-        <node role="baseType" type=".com.mbeddr.core.pointers.structure.ArrayType" id="4115720392370218654">
-          <property name="volatile" value="false" />
-          <property name="const" value="false" />
-          <node role="baseType" type=".com.mbeddr.core.pointers.structure.ArrayType" id="4115720392370218655">
-            <property name="volatile" value="false" />
-            <property name="const" value="false" />
-            <node role="baseType" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="4115720392370218656">
+      <node role="type" roleId="mj1l.318113533128716676" type="yq40.ArrayType" typeId="yq40.5679441017214012545" id="4115720392370218659">
+        <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+        <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+        <node role="baseType" roleId="yq40.5679441017214012546" type="yq40.ArrayType" typeId="yq40.5679441017214012545" id="4115720392370218654">
+          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+          <node role="baseType" roleId="yq40.5679441017214012546" type="yq40.ArrayType" typeId="yq40.5679441017214012545" id="4115720392370218655">
+            <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+            <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+            <node role="baseType" roleId="yq40.5679441017214012546" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="4115720392370218656">
               <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
               <property name="const" nameId="mj1l.2941277002445651368" value="false" />
             </node>
-            <node role="sizeExpr" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="4115720392370218657">
+            <node role="sizeExpr" roleId="yq40.1452920870317474611" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="4115720392370218657">
               <property name="value" nameId="mj1l.8860443239512128104" value="2" />
             </node>
           </node>
-          <node role="sizeExpr" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="4115720392370218658">
+          <node role="sizeExpr" roleId="yq40.1452920870317474611" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="4115720392370218658">
             <property name="value" nameId="mj1l.8860443239512128104" value="3" />
           </node>
         </node>
-        <node role="sizeExpr" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="4115720392370218660">
+        <node role="sizeExpr" roleId="yq40.1452920870317474611" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="4115720392370218660">
           <property name="value" nameId="mj1l.8860443239512128104" value="4" />
         </node>
       </node>
@@ -2993,11 +3003,11 @@
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="4115720392368449638">
               <property name="value" nameId="mj1l.8860443239512128104" value="2" />
             </node>
-            <node role="left" roleId="mj1l.8860443239512128064" type=".com.mbeddr.core.pointers.structure.ArrayAccessExpr" id="4115720392368449631">
-              <node role="expression" type="x27k.GlobalVarRef" typeId="x27k.6610873504380357354" id="268054603277746303">
+            <node role="left" roleId="mj1l.8860443239512128064" type="yq40.ArrayAccessExpr" typeId="yq40.6282313788306893057" id="4115720392368449631">
+              <node role="expression" roleId="mj1l.7254843406768839760" type="x27k.GlobalVarRef" typeId="x27k.6610873504380357354" id="268054603277746303">
                 <link role="var" roleId="x27k.6610873504380357355" targetNodeId="268054603277746269" resolveInfo="a" />
               </node>
-              <node role="index" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="4115720392368449632">
+              <node role="index" roleId="yq40.6282313788306893059" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="4115720392368449632">
                 <property name="value" nameId="mj1l.8860443239512128104" value="0" />
               </node>
             </node>
@@ -3009,11 +3019,11 @@
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="4115720392368449641">
               <property name="value" nameId="mj1l.8860443239512128104" value="1" />
             </node>
-            <node role="left" roleId="mj1l.8860443239512128064" type=".com.mbeddr.core.pointers.structure.ArrayAccessExpr" id="4115720392368449642">
-              <node role="expression" type="x27k.GlobalVarRef" typeId="x27k.6610873504380357354" id="4115720392368449643">
+            <node role="left" roleId="mj1l.8860443239512128064" type="yq40.ArrayAccessExpr" typeId="yq40.6282313788306893057" id="4115720392368449642">
+              <node role="expression" roleId="mj1l.7254843406768839760" type="x27k.GlobalVarRef" typeId="x27k.6610873504380357354" id="4115720392368449643">
                 <link role="var" roleId="x27k.6610873504380357355" targetNodeId="268054603277746269" resolveInfo="a" />
               </node>
-              <node role="index" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="4115720392368449644">
+              <node role="index" roleId="yq40.6282313788306893059" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="4115720392368449644">
                 <property name="value" nameId="mj1l.8860443239512128104" value="1" />
               </node>
             </node>
@@ -3041,11 +3051,11 @@
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="4115720392368449659">
               <property name="value" nameId="mj1l.8860443239512128104" value="10" />
             </node>
-            <node role="left" roleId="mj1l.8860443239512128064" type=".com.mbeddr.core.pointers.structure.ArrayAccessExpr" id="4115720392368449652">
-              <node role="expression" type="x27k.GlobalVarRef" typeId="x27k.6610873504380357354" id="4115720392368449649">
+            <node role="left" roleId="mj1l.8860443239512128064" type="yq40.ArrayAccessExpr" typeId="yq40.6282313788306893057" id="4115720392368449652">
+              <node role="expression" roleId="mj1l.7254843406768839760" type="x27k.GlobalVarRef" typeId="x27k.6610873504380357354" id="4115720392368449649">
                 <link role="var" roleId="x27k.6610873504380357355" targetNodeId="268054603277746281" resolveInfo="b" />
               </node>
-              <node role="index" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="4115720392368449653">
+              <node role="index" roleId="yq40.6282313788306893059" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="4115720392368449653">
                 <property name="value" nameId="mj1l.8860443239512128104" value="0" />
               </node>
             </node>
@@ -3057,11 +3067,11 @@
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="4115720392368449662">
               <property name="value" nameId="mj1l.8860443239512128104" value="20" />
             </node>
-            <node role="left" roleId="mj1l.8860443239512128064" type=".com.mbeddr.core.pointers.structure.ArrayAccessExpr" id="4115720392368449663">
-              <node role="expression" type="x27k.GlobalVarRef" typeId="x27k.6610873504380357354" id="4115720392368449664">
+            <node role="left" roleId="mj1l.8860443239512128064" type="yq40.ArrayAccessExpr" typeId="yq40.6282313788306893057" id="4115720392368449663">
+              <node role="expression" roleId="mj1l.7254843406768839760" type="x27k.GlobalVarRef" typeId="x27k.6610873504380357354" id="4115720392368449664">
                 <link role="var" roleId="x27k.6610873504380357355" targetNodeId="268054603277746281" resolveInfo="b" />
               </node>
-              <node role="index" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="4115720392368449665">
+              <node role="index" roleId="yq40.6282313788306893059" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="4115720392368449665">
                 <property name="value" nameId="mj1l.8860443239512128104" value="1" />
               </node>
             </node>
@@ -3101,46 +3111,46 @@
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="1199641370204832869" />
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="1199641370204778220">
-          <node role="expr" roleId="c4fa.7254843406768833939" type=".com.mbeddr.core.pointers.structure.ArrayAccessExpr" id="1199641370204778221">
-            <node role="expression" type=".com.mbeddr.core.pointers.structure.ArrayAccessExpr" id="1199641370204778222">
-              <node role="expression" type="x27k.GlobalVarRef" typeId="x27k.6610873504380357354" id="1199641370204778223">
+          <node role="expr" roleId="c4fa.7254843406768833939" type="yq40.ArrayAccessExpr" typeId="yq40.6282313788306893057" id="1199641370204778221">
+            <node role="expression" roleId="mj1l.7254843406768839760" type="yq40.ArrayAccessExpr" typeId="yq40.6282313788306893057" id="1199641370204778222">
+              <node role="expression" roleId="mj1l.7254843406768839760" type="x27k.GlobalVarRef" typeId="x27k.6610873504380357354" id="1199641370204778223">
                 <link role="var" roleId="x27k.6610873504380357355" targetNodeId="4115720392369377463" resolveInfo="c" />
               </node>
-              <node role="index" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="1199641370204778224">
+              <node role="index" roleId="yq40.6282313788306893059" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="1199641370204778224">
                 <property name="value" nameId="mj1l.8860443239512128104" value="0" />
               </node>
             </node>
-            <node role="index" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="1199641370204778225">
+            <node role="index" roleId="yq40.6282313788306893059" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="1199641370204778225">
               <property name="value" nameId="mj1l.8860443239512128104" value="0" />
             </node>
           </node>
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="1199641370204778226">
-          <node role="expr" roleId="c4fa.7254843406768833939" type=".com.mbeddr.core.pointers.structure.ArrayAccessExpr" id="1199641370204778227">
-            <node role="expression" type=".com.mbeddr.core.pointers.structure.ArrayAccessExpr" id="1199641370204778228">
-              <node role="expression" type="x27k.GlobalVarRef" typeId="x27k.6610873504380357354" id="1199641370204778229">
+          <node role="expr" roleId="c4fa.7254843406768833939" type="yq40.ArrayAccessExpr" typeId="yq40.6282313788306893057" id="1199641370204778227">
+            <node role="expression" roleId="mj1l.7254843406768839760" type="yq40.ArrayAccessExpr" typeId="yq40.6282313788306893057" id="1199641370204778228">
+              <node role="expression" roleId="mj1l.7254843406768839760" type="x27k.GlobalVarRef" typeId="x27k.6610873504380357354" id="1199641370204778229">
                 <link role="var" roleId="x27k.6610873504380357355" targetNodeId="4115720392369377463" resolveInfo="c" />
               </node>
-              <node role="index" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="1199641370204778230">
+              <node role="index" roleId="yq40.6282313788306893059" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="1199641370204778230">
                 <property name="value" nameId="mj1l.8860443239512128104" value="0" />
               </node>
             </node>
-            <node role="index" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="1199641370204778231">
+            <node role="index" roleId="yq40.6282313788306893059" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="1199641370204778231">
               <property name="value" nameId="mj1l.8860443239512128104" value="1" />
             </node>
           </node>
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="1199641370204778232">
-          <node role="expr" roleId="c4fa.7254843406768833939" type=".com.mbeddr.core.pointers.structure.ArrayAccessExpr" id="1199641370204778233">
-            <node role="expression" type=".com.mbeddr.core.pointers.structure.ArrayAccessExpr" id="1199641370204778234">
-              <node role="expression" type="x27k.GlobalVarRef" typeId="x27k.6610873504380357354" id="1199641370204778235">
+          <node role="expr" roleId="c4fa.7254843406768833939" type="yq40.ArrayAccessExpr" typeId="yq40.6282313788306893057" id="1199641370204778233">
+            <node role="expression" roleId="mj1l.7254843406768839760" type="yq40.ArrayAccessExpr" typeId="yq40.6282313788306893057" id="1199641370204778234">
+              <node role="expression" roleId="mj1l.7254843406768839760" type="x27k.GlobalVarRef" typeId="x27k.6610873504380357354" id="1199641370204778235">
                 <link role="var" roleId="x27k.6610873504380357355" targetNodeId="4115720392369377463" resolveInfo="c" />
               </node>
-              <node role="index" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="1199641370204778236">
+              <node role="index" roleId="yq40.6282313788306893059" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="1199641370204778236">
                 <property name="value" nameId="mj1l.8860443239512128104" value="0" />
               </node>
             </node>
-            <node role="index" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="1199641370204778237">
+            <node role="index" roleId="yq40.6282313788306893059" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="1199641370204778237">
               <property name="value" nameId="mj1l.8860443239512128104" value="2" />
             </node>
           </node>
@@ -3152,16 +3162,16 @@
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="4115720392370003972">
               <property name="value" nameId="mj1l.8860443239512128104" value="1" />
             </node>
-            <node role="left" roleId="mj1l.8860443239512128064" type=".com.mbeddr.core.pointers.structure.ArrayAccessExpr" id="4115720392370003965">
-              <node role="expression" type=".com.mbeddr.core.pointers.structure.ArrayAccessExpr" id="4115720392370003960">
-                <node role="expression" type="x27k.GlobalVarRef" typeId="x27k.6610873504380357354" id="4115720392370003957">
+            <node role="left" roleId="mj1l.8860443239512128064" type="yq40.ArrayAccessExpr" typeId="yq40.6282313788306893057" id="4115720392370003965">
+              <node role="expression" roleId="mj1l.7254843406768839760" type="yq40.ArrayAccessExpr" typeId="yq40.6282313788306893057" id="4115720392370003960">
+                <node role="expression" roleId="mj1l.7254843406768839760" type="x27k.GlobalVarRef" typeId="x27k.6610873504380357354" id="4115720392370003957">
                   <link role="var" roleId="x27k.6610873504380357355" targetNodeId="4115720392369377463" resolveInfo="c" />
                 </node>
-                <node role="index" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="4115720392370003961">
+                <node role="index" roleId="yq40.6282313788306893059" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="4115720392370003961">
                   <property name="value" nameId="mj1l.8860443239512128104" value="0" />
                 </node>
               </node>
-              <node role="index" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="4115720392370003966">
+              <node role="index" roleId="yq40.6282313788306893059" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="4115720392370003966">
                 <property name="value" nameId="mj1l.8860443239512128104" value="0" />
               </node>
             </node>
@@ -3173,16 +3183,16 @@
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="4115720392370003975">
               <property name="value" nameId="mj1l.8860443239512128104" value="3" />
             </node>
-            <node role="left" roleId="mj1l.8860443239512128064" type=".com.mbeddr.core.pointers.structure.ArrayAccessExpr" id="4115720392370003976">
-              <node role="expression" type=".com.mbeddr.core.pointers.structure.ArrayAccessExpr" id="4115720392370003977">
-                <node role="expression" type="x27k.GlobalVarRef" typeId="x27k.6610873504380357354" id="4115720392370003978">
+            <node role="left" roleId="mj1l.8860443239512128064" type="yq40.ArrayAccessExpr" typeId="yq40.6282313788306893057" id="4115720392370003976">
+              <node role="expression" roleId="mj1l.7254843406768839760" type="yq40.ArrayAccessExpr" typeId="yq40.6282313788306893057" id="4115720392370003977">
+                <node role="expression" roleId="mj1l.7254843406768839760" type="x27k.GlobalVarRef" typeId="x27k.6610873504380357354" id="4115720392370003978">
                   <link role="var" roleId="x27k.6610873504380357355" targetNodeId="4115720392369377463" resolveInfo="c" />
                 </node>
-                <node role="index" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="4115720392370003979">
+                <node role="index" roleId="yq40.6282313788306893059" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="4115720392370003979">
                   <property name="value" nameId="mj1l.8860443239512128104" value="0" />
                 </node>
               </node>
-              <node role="index" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="4115720392370003980">
+              <node role="index" roleId="yq40.6282313788306893059" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="4115720392370003980">
                 <property name="value" nameId="mj1l.8860443239512128104" value="2" />
               </node>
             </node>
@@ -3194,16 +3204,16 @@
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="4115720392370003983">
               <property name="value" nameId="mj1l.8860443239512128104" value="5" />
             </node>
-            <node role="left" roleId="mj1l.8860443239512128064" type=".com.mbeddr.core.pointers.structure.ArrayAccessExpr" id="4115720392370003984">
-              <node role="expression" type=".com.mbeddr.core.pointers.structure.ArrayAccessExpr" id="4115720392370003985">
-                <node role="expression" type="x27k.GlobalVarRef" typeId="x27k.6610873504380357354" id="4115720392370003986">
+            <node role="left" roleId="mj1l.8860443239512128064" type="yq40.ArrayAccessExpr" typeId="yq40.6282313788306893057" id="4115720392370003984">
+              <node role="expression" roleId="mj1l.7254843406768839760" type="yq40.ArrayAccessExpr" typeId="yq40.6282313788306893057" id="4115720392370003985">
+                <node role="expression" roleId="mj1l.7254843406768839760" type="x27k.GlobalVarRef" typeId="x27k.6610873504380357354" id="4115720392370003986">
                   <link role="var" roleId="x27k.6610873504380357355" targetNodeId="4115720392369377463" resolveInfo="c" />
                 </node>
-                <node role="index" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="4115720392370003987">
+                <node role="index" roleId="yq40.6282313788306893059" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="4115720392370003987">
                   <property name="value" nameId="mj1l.8860443239512128104" value="1" />
                 </node>
               </node>
-              <node role="index" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="4115720392370003988">
+              <node role="index" roleId="yq40.6282313788306893059" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="4115720392370003988">
                 <property name="value" nameId="mj1l.8860443239512128104" value="1" />
               </node>
             </node>
@@ -3367,21 +3377,21 @@
                         <node role="right" roleId="mj1l.8860443239512128065" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="4115720392370218808">
                           <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="4115720392370218777" resolveInfo="cc" />
                         </node>
-                        <node role="left" roleId="mj1l.8860443239512128064" type=".com.mbeddr.core.pointers.structure.ArrayAccessExpr" id="4115720392370218801">
-                          <node role="expression" type=".com.mbeddr.core.pointers.structure.ArrayAccessExpr" id="4115720392370218797">
-                            <node role="expression" type=".com.mbeddr.core.pointers.structure.ArrayAccessExpr" id="4115720392370218793">
-                              <node role="expression" type="x27k.GlobalVarRef" typeId="x27k.6610873504380357354" id="4115720392370218790">
+                        <node role="left" roleId="mj1l.8860443239512128064" type="yq40.ArrayAccessExpr" typeId="yq40.6282313788306893057" id="4115720392370218801">
+                          <node role="expression" roleId="mj1l.7254843406768839760" type="yq40.ArrayAccessExpr" typeId="yq40.6282313788306893057" id="4115720392370218797">
+                            <node role="expression" roleId="mj1l.7254843406768839760" type="yq40.ArrayAccessExpr" typeId="yq40.6282313788306893057" id="4115720392370218793">
+                              <node role="expression" roleId="mj1l.7254843406768839760" type="x27k.GlobalVarRef" typeId="x27k.6610873504380357354" id="4115720392370218790">
                                 <link role="var" roleId="x27k.6610873504380357355" targetNodeId="4115720392370218653" resolveInfo="d" />
                               </node>
-                              <node role="index" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="4115720392370218794">
+                              <node role="index" roleId="yq40.6282313788306893059" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="4115720392370218794">
                                 <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="4115720392370218740" resolveInfo="l1" />
                               </node>
                             </node>
-                            <node role="index" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="4115720392370218798">
+                            <node role="index" roleId="yq40.6282313788306893059" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="4115720392370218798">
                               <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="4115720392370218757" resolveInfo="l2" />
                             </node>
                           </node>
-                          <node role="index" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="4115720392370218802">
+                          <node role="index" roleId="yq40.6282313788306893059" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="4115720392370218802">
                             <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="4115720392370218767" resolveInfo="l3" />
                           </node>
                         </node>
@@ -3488,15 +3498,15 @@
       <property name="name" nameId="tpck.1169194664001" value="MDPos" />
       <node role="members" roleId="clbe.7099329415459888018" type="clbe.Member" typeId="clbe.5882395403881875736" id="3534497005925008936">
         <property name="name" nameId="tpck.1169194664001" value="pos" />
-        <node role="type" roleId="mj1l.318113533128716676" type=".com.mbeddr.core.pointers.structure.ArrayType" id="3534497005925008954">
-          <property name="volatile" value="false" />
-          <property name="const" value="false" />
-          <node role="baseType" type="clbe.StructType" typeId="clbe.6394819151180597816" id="3534497005925008937">
+        <node role="type" roleId="mj1l.318113533128716676" type="yq40.ArrayType" typeId="yq40.5679441017214012545" id="3534497005925008954">
+          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+          <node role="baseType" roleId="yq40.5679441017214012546" type="clbe.StructType" typeId="clbe.6394819151180597816" id="3534497005925008937">
             <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
             <property name="const" nameId="mj1l.2941277002445651368" value="false" />
             <link role="struct" roleId="clbe.6394819151180597817" targetNodeId="4115720392370598400" resolveInfo="Position" />
           </node>
-          <node role="sizeExpr" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3534497005925008971">
+          <node role="sizeExpr" roleId="yq40.1452920870317474611" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3534497005925008971">
             <property name="value" nameId="mj1l.8860443239512128104" value="3" />
           </node>
         </node>
@@ -3663,15 +3673,15 @@
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="4115720392371138905" />
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="4115720392371236987">
           <property name="name" nameId="tpck.1169194664001" value="posses" />
-          <node role="type" roleId="mj1l.318113533128716676" type=".com.mbeddr.core.pointers.structure.ArrayType" id="4115720392371236989">
-            <property name="volatile" value="false" />
-            <property name="const" value="false" />
-            <node role="baseType" type="clbe.StructType" typeId="clbe.6394819151180597816" id="4115720392371236988">
+          <node role="type" roleId="mj1l.318113533128716676" type="yq40.ArrayType" typeId="yq40.5679441017214012545" id="4115720392371236989">
+            <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+            <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+            <node role="baseType" roleId="yq40.5679441017214012546" type="clbe.StructType" typeId="clbe.6394819151180597816" id="4115720392371236988">
               <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
               <property name="const" nameId="mj1l.2941277002445651368" value="false" />
               <link role="struct" roleId="clbe.6394819151180597817" targetNodeId="4115720392370598400" resolveInfo="Position" />
             </node>
-            <node role="sizeExpr" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="4115720392371236990">
+            <node role="sizeExpr" roleId="yq40.1452920870317474611" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="4115720392371236990">
               <property name="value" nameId="mj1l.8860443239512128104" value="2" />
             </node>
           </node>
@@ -3713,11 +3723,11 @@
               <node role="member" roleId="mj1l.1452920870317550651" type="clbe.MemberRef" typeId="clbe.7099329415460395995" id="4115720392371237030">
                 <link role="member" roleId="clbe.7099329415460397525" targetNodeId="4115720392370598401" resolveInfo="x" />
               </node>
-              <node role="expression" roleId="mj1l.7254843406768839760" type=".com.mbeddr.core.pointers.structure.ArrayAccessExpr" id="4115720392371237017">
-                <node role="expression" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="4115720392371237014">
+              <node role="expression" roleId="mj1l.7254843406768839760" type="yq40.ArrayAccessExpr" typeId="yq40.6282313788306893057" id="4115720392371237017">
+                <node role="expression" roleId="mj1l.7254843406768839760" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="4115720392371237014">
                   <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="4115720392371236987" resolveInfo="posses" />
                 </node>
-                <node role="index" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="4115720392371237018">
+                <node role="index" roleId="yq40.6282313788306893059" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="4115720392371237018">
                   <property name="value" nameId="mj1l.8860443239512128104" value="0" />
                 </node>
               </node>
@@ -3734,11 +3744,11 @@
               <node role="member" roleId="mj1l.1452920870317550651" type="clbe.MemberRef" typeId="clbe.7099329415460395995" id="4115720392371237079">
                 <link role="member" roleId="clbe.7099329415460397525" targetNodeId="4115720392370598403" resolveInfo="y" />
               </node>
-              <node role="expression" roleId="mj1l.7254843406768839760" type=".com.mbeddr.core.pointers.structure.ArrayAccessExpr" id="4115720392371237059">
-                <node role="expression" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="4115720392371237060">
+              <node role="expression" roleId="mj1l.7254843406768839760" type="yq40.ArrayAccessExpr" typeId="yq40.6282313788306893057" id="4115720392371237059">
+                <node role="expression" roleId="mj1l.7254843406768839760" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="4115720392371237060">
                   <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="4115720392371236987" resolveInfo="posses" />
                 </node>
-                <node role="index" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="4115720392371237061">
+                <node role="index" roleId="yq40.6282313788306893059" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="4115720392371237061">
                   <property name="value" nameId="mj1l.8860443239512128104" value="1" />
                 </node>
               </node>
@@ -3748,15 +3758,15 @@
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="4115720392371236984" />
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="1357038773596835837">
           <property name="name" nameId="tpck.1169194664001" value="pos3dArr" />
-          <node role="type" roleId="mj1l.318113533128716676" type=".com.mbeddr.core.pointers.structure.ArrayType" id="1357038773596835847">
-            <property name="volatile" value="false" />
-            <property name="const" value="false" />
-            <node role="baseType" type="clbe.StructType" typeId="clbe.6394819151180597816" id="1357038773596835838">
+          <node role="type" roleId="mj1l.318113533128716676" type="yq40.ArrayType" typeId="yq40.5679441017214012545" id="1357038773596835847">
+            <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+            <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+            <node role="baseType" roleId="yq40.5679441017214012546" type="clbe.StructType" typeId="clbe.6394819151180597816" id="1357038773596835838">
               <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
               <property name="const" nameId="mj1l.2941277002445651368" value="false" />
               <link role="struct" roleId="clbe.6394819151180597817" targetNodeId="4115720392371122154" resolveInfo="Pos3D" />
             </node>
-            <node role="sizeExpr" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="1357038773596835856">
+            <node role="sizeExpr" roleId="yq40.1452920870317474611" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="1357038773596835856">
               <property name="value" nameId="mj1l.8860443239512128104" value="2" />
             </node>
           </node>
@@ -3811,11 +3821,11 @@
                 <node role="member" roleId="mj1l.1452920870317550651" type="clbe.MemberRef" typeId="clbe.7099329415460395995" id="1357038773596836340">
                   <link role="member" roleId="clbe.7099329415460397525" targetNodeId="4115720392371122155" resolveInfo="pos" />
                 </node>
-                <node role="expression" roleId="mj1l.7254843406768839760" type=".com.mbeddr.core.pointers.structure.ArrayAccessExpr" id="1357038773596836304">
-                  <node role="expression" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="1357038773596836293">
+                <node role="expression" roleId="mj1l.7254843406768839760" type="yq40.ArrayAccessExpr" typeId="yq40.6282313788306893057" id="1357038773596836304">
+                  <node role="expression" roleId="mj1l.7254843406768839760" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="1357038773596836293">
                     <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="1357038773596835837" resolveInfo="pos3dArr" />
                   </node>
-                  <node role="index" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="1357038773596836313">
+                  <node role="index" roleId="yq40.6282313788306893059" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="1357038773596836313">
                     <property name="value" nameId="mj1l.8860443239512128104" value="0" />
                   </node>
                 </node>
@@ -3837,11 +3847,11 @@
                 <node role="member" roleId="mj1l.1452920870317550651" type="clbe.MemberRef" typeId="clbe.7099329415460395995" id="1357038773596836500">
                   <link role="member" roleId="clbe.7099329415460397525" targetNodeId="4115720392371122155" resolveInfo="pos" />
                 </node>
-                <node role="expression" roleId="mj1l.7254843406768839760" type=".com.mbeddr.core.pointers.structure.ArrayAccessExpr" id="1357038773596836501">
-                  <node role="expression" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="1357038773596836502">
+                <node role="expression" roleId="mj1l.7254843406768839760" type="yq40.ArrayAccessExpr" typeId="yq40.6282313788306893057" id="1357038773596836501">
+                  <node role="expression" roleId="mj1l.7254843406768839760" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="1357038773596836502">
                     <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="1357038773596835837" resolveInfo="pos3dArr" />
                   </node>
-                  <node role="index" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="1357038773596836503">
+                  <node role="index" roleId="yq40.6282313788306893059" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="1357038773596836503">
                     <property name="value" nameId="mj1l.8860443239512128104" value="0" />
                   </node>
                 </node>
@@ -3856,11 +3866,11 @@
               <property name="value" nameId="mj1l.8860443239512128104" value="100" />
             </node>
             <node role="left" roleId="mj1l.8860443239512128064" type="clbe.SUDotExpression" typeId="clbe.7063398228162529566" id="1357038773596836548">
-              <node role="expression" roleId="mj1l.7254843406768839760" type=".com.mbeddr.core.pointers.structure.ArrayAccessExpr" id="1357038773596836550">
-                <node role="expression" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="1357038773596836551">
+              <node role="expression" roleId="mj1l.7254843406768839760" type="yq40.ArrayAccessExpr" typeId="yq40.6282313788306893057" id="1357038773596836550">
+                <node role="expression" roleId="mj1l.7254843406768839760" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="1357038773596836551">
                   <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="1357038773596835837" resolveInfo="pos3dArr" />
                 </node>
-                <node role="index" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="1357038773596836552">
+                <node role="index" roleId="yq40.6282313788306893059" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="1357038773596836552">
                   <property name="value" nameId="mj1l.8860443239512128104" value="0" />
                 </node>
               </node>
@@ -3884,11 +3894,11 @@
                 <node role="member" roleId="mj1l.1452920870317550651" type="clbe.MemberRef" typeId="clbe.7099329415460395995" id="1357038773596836643">
                   <link role="member" roleId="clbe.7099329415460397525" targetNodeId="4115720392371122155" resolveInfo="pos" />
                 </node>
-                <node role="expression" roleId="mj1l.7254843406768839760" type=".com.mbeddr.core.pointers.structure.ArrayAccessExpr" id="1357038773596836644">
-                  <node role="expression" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="1357038773596836645">
+                <node role="expression" roleId="mj1l.7254843406768839760" type="yq40.ArrayAccessExpr" typeId="yq40.6282313788306893057" id="1357038773596836644">
+                  <node role="expression" roleId="mj1l.7254843406768839760" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="1357038773596836645">
                     <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="1357038773596835837" resolveInfo="pos3dArr" />
                   </node>
-                  <node role="index" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="1357038773596836646">
+                  <node role="index" roleId="yq40.6282313788306893059" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="1357038773596836646">
                     <property name="value" nameId="mj1l.8860443239512128104" value="1" />
                   </node>
                 </node>
@@ -3910,11 +3920,11 @@
                 <node role="member" roleId="mj1l.1452920870317550651" type="clbe.MemberRef" typeId="clbe.7099329415460395995" id="1357038773596836633">
                   <link role="member" roleId="clbe.7099329415460397525" targetNodeId="4115720392371122155" resolveInfo="pos" />
                 </node>
-                <node role="expression" roleId="mj1l.7254843406768839760" type=".com.mbeddr.core.pointers.structure.ArrayAccessExpr" id="1357038773596836634">
-                  <node role="expression" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="1357038773596836635">
+                <node role="expression" roleId="mj1l.7254843406768839760" type="yq40.ArrayAccessExpr" typeId="yq40.6282313788306893057" id="1357038773596836634">
+                  <node role="expression" roleId="mj1l.7254843406768839760" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="1357038773596836635">
                     <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="1357038773596835837" resolveInfo="pos3dArr" />
                   </node>
-                  <node role="index" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="1357038773596836636">
+                  <node role="index" roleId="yq40.6282313788306893059" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="1357038773596836636">
                     <property name="value" nameId="mj1l.8860443239512128104" value="1" />
                   </node>
                 </node>
@@ -3929,11 +3939,11 @@
               <property name="value" nameId="mj1l.8860443239512128104" value="50" />
             </node>
             <node role="left" roleId="mj1l.8860443239512128064" type="clbe.SUDotExpression" typeId="clbe.7063398228162529566" id="1357038773596836622">
-              <node role="expression" roleId="mj1l.7254843406768839760" type=".com.mbeddr.core.pointers.structure.ArrayAccessExpr" id="1357038773596836623">
-                <node role="expression" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="1357038773596836624">
+              <node role="expression" roleId="mj1l.7254843406768839760" type="yq40.ArrayAccessExpr" typeId="yq40.6282313788306893057" id="1357038773596836623">
+                <node role="expression" roleId="mj1l.7254843406768839760" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="1357038773596836624">
                   <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="1357038773596835837" resolveInfo="pos3dArr" />
                 </node>
-                <node role="index" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="1357038773596836625">
+                <node role="index" roleId="yq40.6282313788306893059" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="1357038773596836625">
                   <property name="value" nameId="mj1l.8860443239512128104" value="1" />
                 </node>
               </node>
@@ -4073,15 +4083,15 @@
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="3534497005925167351" />
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="3534497005925167354">
           <property name="name" nameId="tpck.1169194664001" value="posses" />
-          <node role="type" roleId="mj1l.318113533128716676" type=".com.mbeddr.core.pointers.structure.ArrayType" id="3534497005925167372">
-            <property name="volatile" value="false" />
-            <property name="const" value="false" />
-            <node role="baseType" type="clbe.StructType" typeId="clbe.6394819151180597816" id="3534497005925167355">
+          <node role="type" roleId="mj1l.318113533128716676" type="yq40.ArrayType" typeId="yq40.5679441017214012545" id="3534497005925167372">
+            <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+            <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+            <node role="baseType" roleId="yq40.5679441017214012546" type="clbe.StructType" typeId="clbe.6394819151180597816" id="3534497005925167355">
               <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
               <property name="const" nameId="mj1l.2941277002445651368" value="false" />
               <link role="struct" roleId="clbe.6394819151180597817" targetNodeId="4115720392370598400" resolveInfo="Position" />
             </node>
-            <node role="sizeExpr" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3534497005925167389">
+            <node role="sizeExpr" roleId="yq40.1452920870317474611" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3534497005925167389">
               <property name="value" nameId="mj1l.8860443239512128104" value="2" />
             </node>
           </node>
@@ -4128,11 +4138,11 @@
               <node role="member" roleId="mj1l.1452920870317550651" type="clbe.MemberRef" typeId="clbe.7099329415460395995" id="3534497005925167640">
                 <link role="member" roleId="clbe.7099329415460397525" targetNodeId="4115720392370598401" resolveInfo="x" />
               </node>
-              <node role="expression" roleId="mj1l.7254843406768839760" type=".com.mbeddr.core.pointers.structure.ArrayAccessExpr" id="3534497005925167608">
-                <node role="expression" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="3534497005925167597">
+              <node role="expression" roleId="mj1l.7254843406768839760" type="yq40.ArrayAccessExpr" typeId="yq40.6282313788306893057" id="3534497005925167608">
+                <node role="expression" roleId="mj1l.7254843406768839760" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="3534497005925167597">
                   <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="3534497005925167354" resolveInfo="posses" />
                 </node>
-                <node role="index" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3534497005925167617">
+                <node role="index" roleId="yq40.6282313788306893059" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3534497005925167617">
                   <property name="value" nameId="mj1l.8860443239512128104" value="0" />
                 </node>
               </node>
@@ -4149,11 +4159,11 @@
               <node role="member" roleId="mj1l.1452920870317550651" type="clbe.MemberRef" typeId="clbe.7099329415460395995" id="3534497005925167793">
                 <link role="member" roleId="clbe.7099329415460397525" targetNodeId="4115720392370598403" resolveInfo="y" />
               </node>
-              <node role="expression" roleId="mj1l.7254843406768839760" type=".com.mbeddr.core.pointers.structure.ArrayAccessExpr" id="3534497005925167701">
-                <node role="expression" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="3534497005925167702">
+              <node role="expression" roleId="mj1l.7254843406768839760" type="yq40.ArrayAccessExpr" typeId="yq40.6282313788306893057" id="3534497005925167701">
+                <node role="expression" roleId="mj1l.7254843406768839760" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="3534497005925167702">
                   <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="3534497005925167354" resolveInfo="posses" />
                 </node>
-                <node role="index" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3534497005925167703">
+                <node role="index" roleId="yq40.6282313788306893059" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3534497005925167703">
                   <property name="value" nameId="mj1l.8860443239512128104" value="0" />
                 </node>
               </node>
@@ -4170,11 +4180,11 @@
               <node role="member" roleId="mj1l.1452920870317550651" type="clbe.MemberRef" typeId="clbe.7099329415460395995" id="3534497005925167708">
                 <link role="member" roleId="clbe.7099329415460397525" targetNodeId="4115720392370598401" resolveInfo="x" />
               </node>
-              <node role="expression" roleId="mj1l.7254843406768839760" type=".com.mbeddr.core.pointers.structure.ArrayAccessExpr" id="3534497005925167709">
-                <node role="expression" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="3534497005925167710">
+              <node role="expression" roleId="mj1l.7254843406768839760" type="yq40.ArrayAccessExpr" typeId="yq40.6282313788306893057" id="3534497005925167709">
+                <node role="expression" roleId="mj1l.7254843406768839760" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="3534497005925167710">
                   <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="3534497005925167354" resolveInfo="posses" />
                 </node>
-                <node role="index" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3534497005925167711">
+                <node role="index" roleId="yq40.6282313788306893059" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3534497005925167711">
                   <property name="value" nameId="mj1l.8860443239512128104" value="1" />
                 </node>
               </node>
@@ -4191,11 +4201,11 @@
               <node role="member" roleId="mj1l.1452920870317550651" type="clbe.MemberRef" typeId="clbe.7099329415460395995" id="3534497005925167915">
                 <link role="member" roleId="clbe.7099329415460397525" targetNodeId="4115720392370598403" resolveInfo="y" />
               </node>
-              <node role="expression" roleId="mj1l.7254843406768839760" type=".com.mbeddr.core.pointers.structure.ArrayAccessExpr" id="3534497005925167717">
-                <node role="expression" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="3534497005925167718">
+              <node role="expression" roleId="mj1l.7254843406768839760" type="yq40.ArrayAccessExpr" typeId="yq40.6282313788306893057" id="3534497005925167717">
+                <node role="expression" roleId="mj1l.7254843406768839760" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="3534497005925167718">
                   <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="3534497005925167354" resolveInfo="posses" />
                 </node>
-                <node role="index" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3534497005925167719">
+                <node role="index" roleId="yq40.6282313788306893059" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3534497005925167719">
                   <property name="value" nameId="mj1l.8860443239512128104" value="1" />
                 </node>
               </node>
@@ -4212,14 +4222,14 @@
       <property name="name" nameId="tpck.1169194664001" value="U" />
       <node role="members" roleId="clbe.7099329415459888018" type="clbe.Member" typeId="clbe.5882395403881875736" id="3534497005925429369">
         <property name="name" nameId="tpck.1169194664001" value="arr" />
-        <node role="type" roleId="mj1l.318113533128716676" type=".com.mbeddr.core.pointers.structure.ArrayType" id="3534497005925429396">
-          <property name="volatile" value="false" />
-          <property name="const" value="false" />
-          <node role="baseType" type="mj1l.UnsignedInt8tType" typeId="mj1l.8463282783691618461" id="3534497005925429395">
+        <node role="type" roleId="mj1l.318113533128716676" type="yq40.ArrayType" typeId="yq40.5679441017214012545" id="3534497005925429396">
+          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+          <node role="baseType" roleId="yq40.5679441017214012546" type="mj1l.UnsignedInt8tType" typeId="mj1l.8463282783691618461" id="3534497005925429395">
             <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
             <property name="const" nameId="mj1l.2941277002445651368" value="false" />
           </node>
-          <node role="sizeExpr" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3534497005925429397">
+          <node role="sizeExpr" roleId="yq40.1452920870317474611" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3534497005925429397">
             <property name="value" nameId="mj1l.8860443239512128104" value="2" />
           </node>
         </node>
@@ -4266,8 +4276,8 @@
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3534497005925429687">
               <property name="value" nameId="mj1l.8860443239512128104" value="1" />
             </node>
-            <node role="left" roleId="mj1l.8860443239512128064" type=".com.mbeddr.core.pointers.structure.ArrayAccessExpr" id="3534497005925429674">
-              <node role="expression" type="clbe.SUDotExpression" typeId="clbe.7063398228162529566" id="3534497005925429664">
+            <node role="left" roleId="mj1l.8860443239512128064" type="yq40.ArrayAccessExpr" typeId="yq40.6282313788306893057" id="3534497005925429674">
+              <node role="expression" roleId="mj1l.7254843406768839760" type="clbe.SUDotExpression" typeId="clbe.7063398228162529566" id="3534497005925429664">
                 <node role="member" roleId="mj1l.1452920870317550651" type="clbe.MemberRef" typeId="clbe.7099329415460395995" id="3534497005925429669">
                   <link role="member" roleId="clbe.7099329415460397525" targetNodeId="3534497005925429369" resolveInfo="arr" />
                 </node>
@@ -4275,7 +4285,7 @@
                   <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="3534497005925429623" resolveInfo="u" />
                 </node>
               </node>
-              <node role="index" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3534497005925429675">
+              <node role="index" roleId="yq40.6282313788306893059" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3534497005925429675">
                 <property name="value" nameId="mj1l.8860443239512128104" value="0" />
               </node>
             </node>
@@ -4287,8 +4297,8 @@
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3534497005925429690">
               <property name="value" nameId="mj1l.8860443239512128104" value="2" />
             </node>
-            <node role="left" roleId="mj1l.8860443239512128064" type=".com.mbeddr.core.pointers.structure.ArrayAccessExpr" id="3534497005925429691">
-              <node role="expression" type="clbe.SUDotExpression" typeId="clbe.7063398228162529566" id="3534497005925429692">
+            <node role="left" roleId="mj1l.8860443239512128064" type="yq40.ArrayAccessExpr" typeId="yq40.6282313788306893057" id="3534497005925429691">
+              <node role="expression" roleId="mj1l.7254843406768839760" type="clbe.SUDotExpression" typeId="clbe.7063398228162529566" id="3534497005925429692">
                 <node role="member" roleId="mj1l.1452920870317550651" type="clbe.MemberRef" typeId="clbe.7099329415460395995" id="3534497005925429693">
                   <link role="member" roleId="clbe.7099329415460397525" targetNodeId="3534497005925429369" resolveInfo="arr" />
                 </node>
@@ -4296,7 +4306,7 @@
                   <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="3534497005925429623" resolveInfo="u" />
                 </node>
               </node>
-              <node role="index" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3534497005925429695">
+              <node role="index" roleId="yq40.6282313788306893059" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3534497005925429695">
                 <property name="value" nameId="mj1l.8860443239512128104" value="1" />
               </node>
             </node>
@@ -4327,8 +4337,8 @@
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3534497005925429713">
               <property name="value" nameId="mj1l.8860443239512128104" value="3" />
             </node>
-            <node role="left" roleId="mj1l.8860443239512128064" type=".com.mbeddr.core.pointers.structure.ArrayAccessExpr" id="3534497005925429714">
-              <node role="expression" type="clbe.SUDotExpression" typeId="clbe.7063398228162529566" id="3534497005925429715">
+            <node role="left" roleId="mj1l.8860443239512128064" type="yq40.ArrayAccessExpr" typeId="yq40.6282313788306893057" id="3534497005925429714">
+              <node role="expression" roleId="mj1l.7254843406768839760" type="clbe.SUDotExpression" typeId="clbe.7063398228162529566" id="3534497005925429715">
                 <node role="member" roleId="mj1l.1452920870317550651" type="clbe.MemberRef" typeId="clbe.7099329415460395995" id="3534497005925429716">
                   <link role="member" roleId="clbe.7099329415460397525" targetNodeId="3534497005925429369" resolveInfo="arr" />
                 </node>
@@ -4336,7 +4346,7 @@
                   <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="3534497005925429623" resolveInfo="u" />
                 </node>
               </node>
-              <node role="index" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3534497005925429718">
+              <node role="index" roleId="yq40.6282313788306893059" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3534497005925429718">
                 <property name="value" nameId="mj1l.8860443239512128104" value="0" />
               </node>
             </node>
@@ -4345,8 +4355,8 @@
         <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="3534497005925429719">
           <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="3534497005925429719" />
           <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="3534497005925429720">
-            <node role="left" roleId="mj1l.8860443239512128064" type=".com.mbeddr.core.pointers.structure.ArrayAccessExpr" id="3534497005925429722">
-              <node role="expression" type="clbe.SUDotExpression" typeId="clbe.7063398228162529566" id="3534497005925429723">
+            <node role="left" roleId="mj1l.8860443239512128064" type="yq40.ArrayAccessExpr" typeId="yq40.6282313788306893057" id="3534497005925429722">
+              <node role="expression" roleId="mj1l.7254843406768839760" type="clbe.SUDotExpression" typeId="clbe.7063398228162529566" id="3534497005925429723">
                 <node role="member" roleId="mj1l.1452920870317550651" type="clbe.MemberRef" typeId="clbe.7099329415460395995" id="3534497005925429724">
                   <link role="member" roleId="clbe.7099329415460397525" targetNodeId="3534497005925429369" resolveInfo="arr" />
                 </node>
@@ -4354,7 +4364,7 @@
                   <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="3534497005925429623" resolveInfo="u" />
                 </node>
               </node>
-              <node role="index" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3534497005925429726">
+              <node role="index" roleId="yq40.6282313788306893059" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3534497005925429726">
                 <property name="value" nameId="mj1l.8860443239512128104" value="1" />
               </node>
             </node>
@@ -4397,13 +4407,13 @@
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="3534497005925510540" />
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="3534497005925510543">
           <property name="name" nameId="tpck.1169194664001" value="uarr" />
-          <node role="type" roleId="mj1l.318113533128716676" type=".com.mbeddr.core.pointers.structure.ArrayType" id="3534497005925510569">
-            <property name="volatile" value="false" />
-            <property name="const" value="false" />
-            <node role="baseType" type="clbe.UnionType" typeId="clbe.5882395403881907205" id="3534497005925510544">
+          <node role="type" roleId="mj1l.318113533128716676" type="yq40.ArrayType" typeId="yq40.5679441017214012545" id="3534497005925510569">
+            <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+            <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+            <node role="baseType" roleId="yq40.5679441017214012546" type="clbe.UnionType" typeId="clbe.5882395403881907205" id="3534497005925510544">
               <link role="union" roleId="clbe.5882395403881907207" targetNodeId="3534497005925429219" resolveInfo="U" />
             </node>
-            <node role="sizeExpr" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3534497005925510595">
+            <node role="sizeExpr" roleId="yq40.1452920870317474611" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3534497005925510595">
               <property name="value" nameId="mj1l.8860443239512128104" value="2" />
             </node>
           </node>
@@ -4440,21 +4450,21 @@
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3534497005925510893">
               <property name="value" nameId="mj1l.8860443239512128104" value="2" />
             </node>
-            <node role="left" roleId="mj1l.8860443239512128064" type=".com.mbeddr.core.pointers.structure.ArrayAccessExpr" id="3534497005925510862">
-              <node role="expression" type="clbe.SUDotExpression" typeId="clbe.7063398228162529566" id="3534497005925510837">
+            <node role="left" roleId="mj1l.8860443239512128064" type="yq40.ArrayAccessExpr" typeId="yq40.6282313788306893057" id="3534497005925510862">
+              <node role="expression" roleId="mj1l.7254843406768839760" type="clbe.SUDotExpression" typeId="clbe.7063398228162529566" id="3534497005925510837">
                 <node role="member" roleId="mj1l.1452920870317550651" type="clbe.MemberRef" typeId="clbe.7099329415460395995" id="3534497005925510850">
                   <link role="member" roleId="clbe.7099329415460397525" targetNodeId="3534497005925429369" resolveInfo="arr" />
                 </node>
-                <node role="expression" roleId="mj1l.7254843406768839760" type=".com.mbeddr.core.pointers.structure.ArrayAccessExpr" id="3534497005925510817">
-                  <node role="expression" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="3534497005925510806">
+                <node role="expression" roleId="mj1l.7254843406768839760" type="yq40.ArrayAccessExpr" typeId="yq40.6282313788306893057" id="3534497005925510817">
+                  <node role="expression" roleId="mj1l.7254843406768839760" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="3534497005925510806">
                     <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="3534497005925510543" resolveInfo="uarr" />
                   </node>
-                  <node role="index" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3534497005925510826">
+                  <node role="index" roleId="yq40.6282313788306893059" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3534497005925510826">
                     <property name="value" nameId="mj1l.8860443239512128104" value="0" />
                   </node>
                 </node>
               </node>
-              <node role="index" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3534497005925510871">
+              <node role="index" roleId="yq40.6282313788306893059" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3534497005925510871">
                 <property name="value" nameId="mj1l.8860443239512128104" value="0" />
               </node>
             </node>
@@ -4466,21 +4476,21 @@
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3534497005925510904">
               <property name="value" nameId="mj1l.8860443239512128104" value="3" />
             </node>
-            <node role="left" roleId="mj1l.8860443239512128064" type=".com.mbeddr.core.pointers.structure.ArrayAccessExpr" id="3534497005925510905">
-              <node role="expression" type="clbe.SUDotExpression" typeId="clbe.7063398228162529566" id="3534497005925510906">
+            <node role="left" roleId="mj1l.8860443239512128064" type="yq40.ArrayAccessExpr" typeId="yq40.6282313788306893057" id="3534497005925510905">
+              <node role="expression" roleId="mj1l.7254843406768839760" type="clbe.SUDotExpression" typeId="clbe.7063398228162529566" id="3534497005925510906">
                 <node role="member" roleId="mj1l.1452920870317550651" type="clbe.MemberRef" typeId="clbe.7099329415460395995" id="3534497005925510907">
                   <link role="member" roleId="clbe.7099329415460397525" targetNodeId="3534497005925429369" resolveInfo="arr" />
                 </node>
-                <node role="expression" roleId="mj1l.7254843406768839760" type=".com.mbeddr.core.pointers.structure.ArrayAccessExpr" id="3534497005925510908">
-                  <node role="expression" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="3534497005925510909">
+                <node role="expression" roleId="mj1l.7254843406768839760" type="yq40.ArrayAccessExpr" typeId="yq40.6282313788306893057" id="3534497005925510908">
+                  <node role="expression" roleId="mj1l.7254843406768839760" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="3534497005925510909">
                     <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="3534497005925510543" resolveInfo="uarr" />
                   </node>
-                  <node role="index" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3534497005925510910">
+                  <node role="index" roleId="yq40.6282313788306893059" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3534497005925510910">
                     <property name="value" nameId="mj1l.8860443239512128104" value="0" />
                   </node>
                 </node>
               </node>
-              <node role="index" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3534497005925510911">
+              <node role="index" roleId="yq40.6282313788306893059" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3534497005925510911">
                 <property name="value" nameId="mj1l.8860443239512128104" value="1" />
               </node>
             </node>
@@ -4496,11 +4506,11 @@
               <node role="member" roleId="mj1l.1452920870317550651" type="clbe.MemberRef" typeId="clbe.7099329415460395995" id="3534497005925510979">
                 <link role="member" roleId="clbe.7099329415460397525" targetNodeId="3534497005925429422" resolveInfo="ui" />
               </node>
-              <node role="expression" roleId="mj1l.7254843406768839760" type=".com.mbeddr.core.pointers.structure.ArrayAccessExpr" id="3534497005925510950">
-                <node role="expression" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="3534497005925510951">
+              <node role="expression" roleId="mj1l.7254843406768839760" type="yq40.ArrayAccessExpr" typeId="yq40.6282313788306893057" id="3534497005925510950">
+                <node role="expression" roleId="mj1l.7254843406768839760" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="3534497005925510951">
                   <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="3534497005925510543" resolveInfo="uarr" />
                 </node>
-                <node role="index" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3534497005925510952">
+                <node role="index" roleId="yq40.6282313788306893059" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3534497005925510952">
                   <property name="value" nameId="mj1l.8860443239512128104" value="1" />
                 </node>
               </node>

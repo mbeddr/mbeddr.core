@@ -873,46 +873,37 @@ things.}.
 
 
 
-\parhead{Documentation} mbeddr supports comments. There are several kinds of
-comments that can be used: single line statement comments, multi-line statement
-comments and element documentations.
+\parhead{Documentation} mbeddr supports documentation comments. There are
+several kinds of comments that can be used: statement comments and element
+documentations.
 
-Single line statement comments are comments that can be used \emph{only} in
+Sstatement comments are comments that can be used \emph{only} in
 statement context. For example, in a function body, you can type \ic{//} and
 enter arbitrary text. One line only! The following shows as simple
 comment.
 
 \begin{center} 
-  \includegraphics[width=\columnwidth]{figures/core/onelinecomment.png}
+  \includegraphics[width=0.6\columnwidth]{figures/core/commentStatement.png}
 \end{center}
 
-A multi-line comment statement can be created by typing \ic{/*} in statement
-context. It supports multiple lines. However, since there is no wrapping over
-into the next line\footnote{This is a problem with MPS' editor and will be fixed
-in future release.}, editing can be cumbersome. To solve this problem you can
-press \ic{Ctrl-A} anywhere in the multi-line comment to open a dialog with a
-regular text area. You can edit the text in this text area and when you close it
-with \ic{OK} the text is transferred back into the actual comment.
 
-\begin{center} 
-  \includegraphics[scale=0.4]{figures/core/multilinecomment.png}
-\end{center}
-
-You can also press \ic{Ctrl-Y} on a multi-line comment to automatically
-rearrange the line contents.
-
-The two statement comments discussed above have two important limitations.
+The comment statement discussed above has two important limitations.
 The first one is that they are standalone statements and not connected to any
 program element (other than through their position in the code, just like in
 normal textual programming). Second, as mentioned above, they can only be used
 in statement context. A better solution in many cases is to use the element
-documentation. It is structurally attached to a program element. To create one,
+documentation. It is \emph{structurally attached} to a program element. To create one,
 either press \ic{Ctrl-A} or use the \ic{Add Documentation} intention. It looks
-just like a multi-line comment (and has the same edit dialog for convenient
-editing), but it is attached to (and hence moves around with) a program element.
+just like a comment but it is attached to (and hence moves around with) a program element.
 Currently, all statements and module contents can be annotated with an element
 documentation, as well as many other concepts such as states in state machines
-or ports in components.
+or ports in components. Below in an example of comments used inside state
+machines.
+
+\begin{center} 
+  \includegraphics[width=0.8\columnwidth]{figures/core/commentsInSMs.png}
+\end{center}
+
 
 \parhead{TODOs} mbeddr comes with a special view for collecting and showing
 TODOs in comments. Anywhere within the comments discussed above, you can write
