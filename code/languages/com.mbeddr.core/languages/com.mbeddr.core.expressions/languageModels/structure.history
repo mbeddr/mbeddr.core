@@ -338,19 +338,15 @@
   </StructureModification>
   <StructureModification>
     <dependencies>
-      <model index="ywuz" modelUID="r:c6ce92e7-5a98-4a6f-866a-ec8b9e945dd8(com.mbeddr.core.expressions.behavior)" version="1" />
-      <model index="u5n7" modelUID="r:982b63d9-9815-4b2a-91f2-26936b5fef73(com.mbeddr.cimport.preprocessor.structure)" version="52" />
       <model index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="20" />
-      <model index="urqa" modelUID="r:05bbb65e-11f4-4568-ad90-f084ef71eb50(com.mbeddr.cimport.preprocessor.behavior)" version="2" />
     </dependencies>
-    <move id="u5n7.9112271685744620171" to="mj1l.9112271685744623394" />
-    <move id="urqa.9112271685744620176" to="ywuz.9112271685744623397" />
-    <move id="urqa.9112271685744620174" to="ywuz.9112271685744623401" />
-    <move id="urqa.9112271685744620173" to="ywuz.9112271685744623400" />
-    <move id="urqa.9112271685744620179" to="ywuz.9112271685744623398" />
-    <move id="urqa.9112271685744620175" to="ywuz.9112271685744623396" />
-    <move id="urqa.9112271685744620178" to="ywuz.9112271685744623399" />
-    <move id="urqa.9112271685744620172" to="ywuz.9112271685744623395" />
+    <rename id="mj1l.3196454794517236255" type="CONCEPT" from="IDataFlowAssignmentExpression" to="IDataFlowAssignment" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="21" />
+    </dependencies>
+    <rename id="mj1l.3196454794517236255" type="CONCEPT" from="IDataFlowAssignment" to="IDataflowAssignment" />
   </StructureModification>
 </history>
 

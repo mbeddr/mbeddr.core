@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="21">
+<model modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="20">
   <persistence version="7" />
   <language namespace="c72da2b9-7cce-4447-8389-f407dc1158b7(jetbrains.mps.lang.structure)" />
   <language namespace="7866978e-a0f0-4cc7-81bc-4d213d9375e1(jetbrains.mps.lang.smodel)" />
@@ -630,7 +630,11 @@
       <property name="virtualPackage" nameId="tpck.1193676396447" value="dataflow" />
       <property name="name" nameId="tpck.1169194664001" value="IDataflowType" />
     </node>
-    <node type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="9112271685744623394">
+    <node type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="3196454794517236255">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="dataflow" />
+      <property name="name" nameId="tpck.1169194664001" value="IDataflowAssignment" />
+    </node>
+        <node type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="9112271685744623394">
       <property name="name" nameId="tpck.1169194664001" value="IPrintable" />
     </node>
   </roots>
@@ -2214,6 +2218,5 @@
     </node>
   </root>
   <root id="358427452148581103" />
-  <root id="9112271685744623394" />
 </model>
 

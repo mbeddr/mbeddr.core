@@ -17,6 +17,7 @@
  <fail unless="mbeddr.github.core.home">mbeddr.github.core.home must be set in your build.properties</fail>
  <fail unless="mps.platform.caches">mps.platform.caches must be set in your build.properties</fail>
  <fail unless="mps.home">mps.home must be set in your build.properties</fail>
+
  
  <taskdef resource="jetbrains/mps/build/ant/antlib.xml"
           classpathref="mps.ant.path"/>
@@ -34,6 +35,7 @@
   <property name="coreLanguageDir" value="${mbeddr.github.core.home}/${mbeddr.core.project.dir}/languages"/>  
   <property name="extLanguageDir" value="${mbeddr.github.core.home}/${mbeddr.ext.project.dir}/languages"/>  
   <property name="debuggerLanguageDir" value="${mbeddr.github.core.home}/${debugger.project.dir}/languages"/>
+
 
     <jvmargs id="myargs">
       <arg value="-ea"/>
@@ -74,6 +76,7 @@
       <library name="mbeddr.project" dir="${coreLanguageDir}"/>
       <library name="util.languages" dir="${utilLanguageDir}"/>
       <library name="debugger.languages" dir="${debuggerLanguageDir}"/>
+
       
       <modules dir="${mbeddr.github.core.home}/${mbeddr.cc.project.dir}/languages"/>
     </mps.generate>
@@ -91,6 +94,7 @@
       <library name="util.languages" dir="${utilLanguageDir}"/>
       <library name="ext.languages" dir="${extLanguageDir}"/>
       <library name="debugger.languages" dir="${debuggerLanguageDir}"/>
+
       
       <!-- executable tests -->
       <modules dir="${mbeddr.github.core.home}/${mbeddr.cc.project.dir}/tests/"/>
@@ -118,7 +122,7 @@
       <jvmarg value="-XX:MaxPermSize=256m"/>
       <jvmarg value="-XX:+HeapDumpOnOutOfMemoryError"/>
       
-      
+      <sysproperty key="idea.load.plugins" value="true"/>
       <sysproperty key="idea.system.path" value="${mps.platform.caches}/system"/>
       <sysproperty key="idea.config.path" value="${mps.platform.caches}/config"/>
       <sysproperty key="idea.plugins.path" value="${mps.platform.caches}/plugins"/>

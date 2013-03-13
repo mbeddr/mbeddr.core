@@ -282,6 +282,9 @@
         <link role="instanceConfig" roleId="p7vm.1553713790141527407" targetNodeId="2161187783549496754" resolveInfo="comp" />
       </node>
     </node>
+    <node role="configurationItems" roleId="vs0r.4459718605982007338" type="clqz.StatemachineConfigItem" typeId="clqz.4709703140582114943" id="5769379601450384773">
+      <property name="triggerAsConst" nameId="clqz.4709703140582114945" value="true" />
+    </node>
     <node role="binaries" roleId="51wr.5046689135694070731" type="51wr.Executable" typeId="51wr.5046689135693761554" id="7255863045967613738">
       <property name="name" nameId="tpck.1169194664001" value="HelloWorld" />
       <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="20776903375366608">

@@ -1152,7 +1152,7 @@
                     <node role="statement" roleId="tpee.1068581517665" type="tpee.Statement" typeId="tpee.1068580123157" id="3073747806394543565" />
                     <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="8225865834980308167">
                       <node role="expression" roleId="tpee.1068580123156" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="7349952699785778977">
-                        <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="b8v4.8225865834980290358" resolveInfo="setElementForIndex" />
+                        <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="b8v4.8225865834980290358" resolveInfo="addElementForIndex" />
                         <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="b8v4.7349952699785493154" resolveInfo="ComplexTypeIndexedElementHelper" />
                         <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="7349952699785778978">
                           <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="8225865834980289562" resolveInfo="parent" />

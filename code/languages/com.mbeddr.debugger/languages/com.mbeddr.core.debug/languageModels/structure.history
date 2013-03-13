@@ -98,5 +98,11 @@
     </dependencies>
     <rename id="2gv2.8859859684349260294" type="PROPERTY" from="existsOutside" to="knowsOnlyGlobalWatchables" />
   </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="2gv2" modelUID="r:055bac8c-a50b-42ec-a317-e20a256152b4(com.mbeddr.core.debug.structure)" version="10" />
+    </dependencies>
+    <rename id="2gv2.1113553024393724310" type="CONCEPT" from="ILoop" to="IBreakAndContinueable" />
+  </StructureModification>
 </history>
 
