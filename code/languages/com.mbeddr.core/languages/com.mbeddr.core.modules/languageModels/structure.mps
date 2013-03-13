@@ -271,6 +271,9 @@
       <property name="name" nameId="tpck.1169194664001" value="GlobalConstantFunctionArgumentRef" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="mj1l.8860443239512128050" resolveInfo="Expression" />
     </node>
+    <node type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="4811430974075023012">
+      <property name="name" nameId="tpck.1169194664001" value="IRequiresHeaderImport" />
+    </node>
   </roots>
   <root id="6437088627575722813">
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="6437088627575722833">
@@ -1159,6 +1162,12 @@
       <property name="role" nameId="tpce.1071599776563" value="argument" />
       <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
       <link role="target" roleId="tpce.1071599976176" targetNodeId="6021475212426054485" resolveInfo="GlobalConstantFunctionArgument" />
+    </node>
+  </root>
+  <root id="4811430974075023012">
+    <node role="conceptPropertyDeclaration" roleId="tpce.1137467167200" type="tpce.StringConceptPropertyDeclaration" typeId="tpce.1105725281956" id="4811430974075023015">
+      <property name="name" nameId="tpck.1169194664001" value="headerToImport" />
+      <property name="inheritable" nameId="tpce.1218571350029" value="true" />
     </node>
   </root>
 </model>

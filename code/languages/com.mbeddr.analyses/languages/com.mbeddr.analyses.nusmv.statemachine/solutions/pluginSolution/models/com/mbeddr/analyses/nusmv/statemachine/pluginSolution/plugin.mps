@@ -47,7 +47,7 @@
   <roots>
     <node type="tp4k.ActionDeclaration" typeId="tp4k.1203071646776" id="1611636138415537833">
       <property name="name" nameId="tpck.1169194664001" value="NusmvAction" />
-      <property name="caption" nameId="tp4k.1205250923097" value="Verify State Machine" />
+      <property name="caption" nameId="tp4k.1205250923097" value="Verify" />
       <property name="mnemonic" nameId="tp4k.1215865999894" value="V" />
     </node>
     <node type="tp4k.ActionGroupDeclaration" typeId="tp4k.1203087890642" id="1611636138415537932">

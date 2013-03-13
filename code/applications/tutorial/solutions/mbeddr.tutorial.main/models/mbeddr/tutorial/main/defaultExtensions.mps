@@ -3705,7 +3705,17 @@
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="7727566415687763153">
       <property name="name" nameId="tpck.1169194664001" value="raiseAlarm" />
       <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="7727566415687763155">
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="7727566415687763156" />
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="5887451785619936705">
+          <property name="name" nameId="tpck.1169194664001" value="fa" />
+          <node role="type" roleId="mj1l.318113533128716676" type="clqz.StatemachineType" typeId="clqz.7851711690674263345" id="5887451785619936706">
+            <link role="machine" roleId="clqz.7851711690674263346" targetNodeId="7727566415687718765" resolveInfo="FlightAnalyzer" />
+          </node>
+        </node>
+        <node role="statements" roleId="c4fa.4185783222026475862" type="clqz.InitializeSMStatement" typeId="clqz.1786180596061208520" id="5887451785619936747">
+          <node role="statemachine" roleId="clqz.1786180596061208522" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="5887451785619936753">
+            <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="5887451785619936705" resolveInfo="fa" />
+          </node>
+        </node>
       </node>
       <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="7727566415687763148">
         <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
@@ -3883,6 +3893,8 @@
             <link role="machine" roleId="clqz.7851711690674263346" targetNodeId="7727566415687718765" resolveInfo="FlightAnalyzer" />
           </node>
         </node>
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="3799849708010390562" />
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="3799849708010390420" />
         <node role="statements" roleId="c4fa.4185783222026475862" type="clqz.InitializeSMStatement" typeId="clqz.1786180596061208520" id="7727566415687767310">
           <node role="statemachine" roleId="clqz.1786180596061208522" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="7727566415687767312">
             <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="7727566415687767302" resolveInfo="f" />
@@ -4975,10 +4987,9 @@
       </node>
       <node role="arguments" roleId="x27k.5708867820623310661" type="x27k.Argument" typeId="x27k.7892328519581704407" id="1433966787984146774">
         <property name="name" nameId="tpck.1169194664001" value="arg0" />
-        <node role="type" roleId="mj1l.318113533128716676" type="clbe.TypeDefType" typeId="clbe.6116558314501347863" id="1433966787984146775">
+        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.SizeT" typeId="mj1l.8863019357864392148" id="6917727037584648789">
           <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
           <property name="const" nameId="mj1l.2941277002445651368" value="false" />
-          <link role="typeDef" roleId="clbe.6116558314501347864" targetNodeId="1433966787984146597" resolveInfo="size_t" />
         </node>
       </node>
     </node>
@@ -8640,9 +8651,6 @@
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="5441227754062477039">
       <property name="name" nameId="tpck.1169194664001" value="empty_1352016923981_7" />
-    </node>
-    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="5441227754062529091">
-      <property name="name" nameId="tpck.1169194664001" value="empty_1352018449439_1" />
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="5441227754062529092">
       <property name="name" nameId="tpck.1169194664001" value="empty_1352018449711_2" />

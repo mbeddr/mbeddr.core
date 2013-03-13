@@ -917,7 +917,7 @@
           <property name="flag" nameId="tpc2.1186414551515" value="false" />
         </node>
         <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="8105003328814596049">
-          <property name="text" nameId="tpc2.1073389577007" value="⬅" />
+          <property name="text" nameId="tpc2.1073389577007" value="&lt;=" />
         </node>
         <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_RefNode" typeId="tpc2.1073389882823" id="899185318197771002">
           <property name="noTargetText" nameId="tpc2.1139852716018" value="no trigger" />
