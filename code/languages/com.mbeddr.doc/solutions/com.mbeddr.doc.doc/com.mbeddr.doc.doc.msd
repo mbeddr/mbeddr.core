@@ -4,6 +4,9 @@
     <modelRoot path="${solution_descriptor}/models" />
   </models>
   <sourcePath />
+  <usedLanguages>
+    <usedLanguage>d7145000-936a-47e8-95a5-71f220e623f9(com.mbeddr.doc.self)</usedLanguage>
+  </usedLanguages>
   <usedDevKits>
     <usedDevKit>54c79f9f-f3ba-4167-91f1-eb4e98a9c47c(com.mbeddr.documentation)</usedDevKit>
   </usedDevKits>
