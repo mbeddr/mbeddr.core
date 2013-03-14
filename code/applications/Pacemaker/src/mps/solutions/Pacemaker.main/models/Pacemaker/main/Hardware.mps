@@ -404,7 +404,6 @@
       <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="vs0r.ElementDocumentation" typeId="vs0r.3857533489766146428" id="1559571946845221782">
         <node role="text" roleId="vs0r.4052432714772608243" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="3860690561158028879">
           <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="3860690561158028882">
-            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3860690561158028883" />
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3860690561158028884">
               <property name="escapedValue" nameId="87nw.2557074442922438158" value="port changing routines" />
             </node>
@@ -1973,7 +1972,6 @@
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="6068976060903393661">
           <node role="textblock" roleId="c4fa.8624890525768479139" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="6068976060903393662">
             <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="6068976060903393663">
-              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6068976060903393664" />
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6068976060903393665">
                 <property name="escapedValue" nameId="87nw.2557074442922438158" value="Initialize Timer3" />
               </node>
@@ -2022,7 +2020,6 @@
           <property name="comment" nameId="c4fa.1679452829930336985" value="TODO: Insert a 'dectab' here once they are stable" />
           <node role="textblock" roleId="c4fa.8624890525768479139" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8624890525768588779">
             <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8624890525768588782">
-              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8624890525768588783" />
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8624890525768588784">
                 <property name="escapedValue" nameId="87nw.2557074442922438158" value="TODO: Insert a 'dectab' here once they are stable" />
               </node>
@@ -2721,7 +2718,6 @@
               <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="6068976060903393876">
                 <node role="textblock" roleId="c4fa.8624890525768479139" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="6068976060903393877">
                   <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="6068976060903393878">
-                    <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6068976060903393879" />
                     <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6068976060903393880">
                       <property name="escapedValue" nameId="87nw.2557074442922438158" value="Disconnect Sense Circuit, Impedance Circuit, Capacitor Charging Circuit and PACE" />
                     </node>
@@ -2834,7 +2830,6 @@
                 <property name="comment" nameId="c4fa.1679452829930336985" value="Discharge" />
                 <node role="textblock" roleId="c4fa.8624890525768479139" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8624890525768588413">
                   <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8624890525768588416">
-                    <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8624890525768588417" />
                     <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8624890525768588418">
                       <property name="escapedValue" nameId="87nw.2557074442922438158" value="Discharge" />
                     </node>
@@ -3107,7 +3102,6 @@
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="6068976060903393651">
           <node role="textblock" roleId="c4fa.8624890525768479139" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="6068976060903393652">
             <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="6068976060903393653">
-              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6068976060903393654" />
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6068976060903393655">
                 <property name="escapedValue" nameId="87nw.2557074442922438158" value="INTCON, INTCON2 and INTCON3 : Initial Timer Configuration : 7 - 0 - GLOBAL INTERRUPT DISABLED 6 - 1 - PRIORITY INTERRUPTS ENABLED 5 - 1 - TIMER 0 Interrupt Enable 4 - 1 - INT0 PIN ENABLED" />
               </node>
@@ -3142,7 +3136,6 @@
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="6068976060903393711">
           <node role="textblock" roleId="c4fa.8624890525768479139" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="6068976060903393712">
             <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="6068976060903393713">
-              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6068976060903393714" />
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6068976060903393715">
                 <property name="escapedValue" nameId="87nw.2557074442922438158" value="TRISA : --- TRISB : 0 - INPUT - VENTRICULAR SENCE 1 - INPUT - ATRIAL SENCE 4 - OUTPUT - ATRIAL OUTPUT CIRCUIT 5 - OUTPUT - ATRIAL OUTPUT CIRCUIT 6 - OUTPUT - ATRIAL OUTPUT CIRCUIT 7 - OUTPUT - ATRIAL OUTPUT CIRCUIT TRISC : 0 - OUTPUT - VENTRICLE PACE CIRCUIT TRISD : 0 - OUTPUT - VENTRICAL Z CONTROL 1 - OUTPUT - ATRIAL Z CONTROL 4 - OUTPUT - VENTRICLE SENCE CONTROL 5 - OUTPUT - ATRIAL SENCE CONTROL TRISE : 0 - 0 - OUTPUT - VENTRICLE PACE CIRCUIT 1 - 0 - OUTPUT - VENTRICLE PACE CIRCUIT 2 - 0 - OUTPUT - VENTRICLE PACE CIRCUIT 4 - 0 - PSP MODE OFF" />
               </node>
@@ -3285,7 +3278,6 @@
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="6068976060903393696">
           <node role="textblock" roleId="c4fa.8624890525768479139" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="6068976060903393697">
             <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="6068976060903393698">
-              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6068976060903393699" />
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6068976060903393700">
                 <property name="escapedValue" nameId="87nw.2557074442922438158" value="Initialize the atrial leads" />
               </node>
@@ -4354,7 +4346,6 @@
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="6068976060903393831">
           <node role="textblock" roleId="c4fa.8624890525768479139" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="6068976060903393832">
             <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="6068976060903393833">
-              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6068976060903393834" />
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6068976060903393835">
                 <property name="escapedValue" nameId="87nw.2557074442922438158" value="all is ok so far, send the data byte" />
               </node>
@@ -4432,7 +4423,6 @@
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="6068976060903393801">
           <node role="textblock" roleId="c4fa.8624890525768479139" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="6068976060903393802">
             <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="6068976060903393803">
-              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6068976060903393804" />
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6068976060903393805">
                 <property name="escapedValue" nameId="87nw.2557074442922438158" value="The sensed voltage is in the order of mV and therefore needs amplification. This is done through a OpAmp with a resistor controlled gain. Under these conditions, the gain can only take values from the following domain : [1.99, 155.37]. Be advised though: because the resistor used is of digital type, not all gain values are  obtainable. The function aproximates a obtainable gain for every valid value asked. The function used for calculating the RDAC data is as follows : DRValue = 252.928\/(DesiredGain - 1) - 1.6384" />
               </node>
@@ -4468,7 +4458,6 @@
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="6068976060903393756">
           <node role="textblock" roleId="c4fa.8624890525768479139" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="6068976060903393757">
             <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="6068976060903393758">
-              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6068976060903393759" />
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6068976060903393760">
                 <property name="escapedValue" nameId="87nw.2557074442922438158" value="I know that this is an uneeded step and that it could be compacted, but PICC18 crashes if it does!" />
               </node>
@@ -4547,7 +4536,6 @@
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="6068976060903393356">
           <node role="textblock" roleId="c4fa.8624890525768479139" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="6068976060903393357">
             <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="6068976060903393358">
-              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6068976060903393359" />
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6068976060903393360">
                 <property name="escapedValue" nameId="87nw.2557074442922438158" value="According to the math, val may only take values in the the following range : [1.43, 4.92]V The actual formula for calculating the value of the digital resistance is as follows : DRValue = 512\/Vtrip - 104.038 for a voltage devider made with a tied-to-grown 20K nominal resistance" />
               </node>
