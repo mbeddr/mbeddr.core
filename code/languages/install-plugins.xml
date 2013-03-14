@@ -45,10 +45,10 @@
   </target>
   
   <target name="clean-installed-plugins">
-	  <delete dir="${mps.home}/${plugins.folder}/${editor-override.expanded-folder.name}" verbose="true" />
-	  <delete dir="${mps.home}/${plugins.folder}/${multiline.expanded-folder.name}" verbose="true" />
-	  <delete dir="${mps.home}/${plugins.folder}/${richtext.expanded-folder.name}" verbose="true" />
-	  <delete dir="${mps.home}/${plugins.folder}/${spawner.expanded-folder.name}" verbose="true" />
+	  <delete dir="${mps.home}/${plugins.folder.name}/${editor-override.expanded-folder.name}" verbose="true" />
+	  <delete dir="${mps.home}/${plugins.folder.name}/${multiline.expanded-folder.name}" verbose="true" />
+	  <delete dir="${mps.home}/${plugins.folder.name}/${richtext.expanded-folder.name}" verbose="true" />
+	  <delete dir="${mps.home}/${plugins.folder.name}/${spawner.expanded-folder.name}" verbose="true" />
   </target>	
   
   <target name="download-plugins" depends="clean-installed-plugins" >
