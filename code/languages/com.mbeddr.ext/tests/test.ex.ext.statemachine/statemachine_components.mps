@@ -117,7 +117,6 @@
                   <property name="comment" nameId="c4fa.1679452829930336985" value="value is initialized to 5 above" />
                   <node role="textblock" roleId="c4fa.8624890525768479139" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8624890525768588503">
                     <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8624890525768588506">
-                      <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8624890525768588507" />
                       <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8624890525768588508">
                         <property name="escapedValue" nameId="87nw.2557074442922438158" value="value is initialized to 5 above" />
                       </node>
@@ -128,7 +127,6 @@
                   <property name="comment" nameId="c4fa.1679452829930336985" value="setting it to 0 here tests whether this enty" />
                   <node role="textblock" roleId="c4fa.8624890525768479139" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8624890525768588611">
                     <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8624890525768588614">
-                      <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8624890525768588615" />
                       <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8624890525768588616">
                         <property name="escapedValue" nameId="87nw.2557074442922438158" value="setting it to 0 here tests whether this enty" />
                       </node>
