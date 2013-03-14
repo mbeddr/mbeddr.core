@@ -10,7 +10,7 @@
   <language namespace="e06345c7-da82-4f8b-bd44-1425fe158640(com.mbeddr.doc.meta)" />
   <devkit namespace="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
   <import index="haow" modelUID="r:d183ee78-698a-4d70-a6c1-07e860784580(com.mbeddr.doc.sandbox.cstuff)" version="-1" />
-  <import index="2c95" modelUID="r:5f7188a9-e7b4-4a2e-bef9-38d2cf379fdc(com.mbeddr.doc.structure)" version="2" />
+  <import index="2c95" modelUID="r:5f7188a9-e7b4-4a2e-bef9-38d2cf379fdc(com.mbeddr.doc.structure)" version="6" />
   <import index="z726" modelUID="r:6b7eb85f-64d8-4de6-8906-0e18804729df(com.mbeddr.doc.editor)" version="0" />
   <import index="9xqh" modelUID="r:7d63afe9-9fc3-4991-890c-1008af05d479(com.mbeddr.doc.expressions.typesystem)" version="-1" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
@@ -445,6 +445,12 @@
     <node role="contents" roleId="2c95.3350625596580064250" type="2c95.EmptyDocContent" typeId="2c95.3350625596579911760" id="4715820023543876425">
       <property name="name" nameId="tpck.1169194664001" value="empty_1362322910035_2" />
     </node>
+    <node role="dependsOn" roleId="2c95.8730648445433290694" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="5185579450378887718">
+      <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="4715820023543873333" resolveInfo="LanguageDocumentation" />
+    </node>
+    <node role="dependsOn" roleId="2c95.8730648445433290694" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="5185579450378887720">
+      <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="3350625596580246774" resolveInfo="AnotherDocument" />
+    </node>
   </root>
   <root id="3350625596580246774">
     <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Section" typeId="2c95.3350625596580064455" id="4457500422381799153">
@@ -493,22 +499,22 @@
     </node>
   </root>
   <root id="3350625596580274911">
-    <node role="mappings" roleId="2c95.6386504476136554628" type="2c95.PathMapping" typeId="2c95.6386504476136554612" id="4509696981881722613">
+    <node role="mappings" roleId="2c95.6068976060904007490" type="2c95.PathMapping" typeId="2c95.6386504476136554612" id="4509696981881722613">
       <property name="mappedPath" nameId="2c95.6386504476136554614" value="_images/" />
       <link role="pathDef" roleId="2c95.6386504476136554613" targetNodeId="6386504476136521406" resolveInfo="images" />
     </node>
-    <node role="root" roleId="2c95.3350625596580269182" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="6165313375056073093">
+    <node role="root" roleId="2c95.6068976060904007489" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="6165313375056073093">
       <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="3350625596580087926" resolveInfo="DocumentationOfDocumentation" />
     </node>
-    <node role="mappings" roleId="2c95.6386504476136554628" type="2c95.PathMapping" typeId="2c95.6386504476136554612" id="4755612053022494288">
+    <node role="mappings" roleId="2c95.6068976060904007490" type="2c95.PathMapping" typeId="2c95.6386504476136554612" id="4755612053022494288">
       <property name="mappedPath" nameId="2c95.6386504476136554614" value="_vis/" />
       <link role="pathDef" roleId="2c95.6386504476136554613" targetNodeId="4755612053022398739" resolveInfo="visualizations" />
     </node>
-    <node role="renderer" roleId="2c95.3350625596580269180" type="g9w8.LatexRenderer" typeId="g9w8.4457500422381351715" id="4509696981882025239">
+    <node role="renderer" roleId="2c95.6068976060904007487" type="g9w8.LatexRenderer" typeId="g9w8.4457500422381351715" id="4509696981882025239">
       <property name="documentClass" nameId="g9w8.4457500422381351717" value="article" />
       <property name="prolog" nameId="g9w8.4755612053022149513" value="mbeddr-prolog.ltx" />
     </node>
-    <node role="inactiveRenderer" roleId="2c95.4509696981881725587" type="lsus.HTMLRenderer" typeId="lsus.3350625596580275037" id="4509696981882025240">
+    <node role="inactiveRenderer" roleId="2c95.6068976060904007488" type="lsus.HTMLRenderer" typeId="lsus.3350625596580275037" id="4509696981882025240">
       <property name="stylesheet" nameId="lsus.4457500422381329081" value="htmlexport.css" />
     </node>
   </root>
