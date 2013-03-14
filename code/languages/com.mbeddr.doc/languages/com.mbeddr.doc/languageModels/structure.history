@@ -55,5 +55,29 @@
     <move id="z726.6386504476136446904" to="r4b4.8375407818529178021" />
     <move id="z726.6165313375055925345" to="r4b4.8375407818529178031" />
   </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="2c95" modelUID="r:5f7188a9-e7b4-4a2e-bef9-38d2cf379fdc(com.mbeddr.doc.structure)" version="2" />
+    </dependencies>
+    <move id="2c95.3350625596580269180" to="2c95.6068976060904007487" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="2c95" modelUID="r:5f7188a9-e7b4-4a2e-bef9-38d2cf379fdc(com.mbeddr.doc.structure)" version="3" />
+    </dependencies>
+    <move id="2c95.4509696981881725587" to="2c95.6068976060904007488" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="2c95" modelUID="r:5f7188a9-e7b4-4a2e-bef9-38d2cf379fdc(com.mbeddr.doc.structure)" version="4" />
+    </dependencies>
+    <move id="2c95.3350625596580269182" to="2c95.6068976060904007489" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="2c95" modelUID="r:5f7188a9-e7b4-4a2e-bef9-38d2cf379fdc(com.mbeddr.doc.structure)" version="5" />
+    </dependencies>
+    <move id="2c95.6386504476136554628" to="2c95.6068976060904007490" />
+  </StructureModification>
 </history>
 
