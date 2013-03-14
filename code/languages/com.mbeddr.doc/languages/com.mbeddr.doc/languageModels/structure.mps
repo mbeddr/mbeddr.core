@@ -523,7 +523,7 @@
       <link role="dataType" roleId="tpce.1082985295845" targetNodeId="tpck.1082983041843" resolveInfo="string" />
     </node>
     <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="4457500422381556827">
-      <property name="value" nameId="tpce.1105725733873" value="#emph" />
+      <property name="value" nameId="tpce.1105725733873" value="\emph" />
       <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="87nw.2557074442922714728" resolveInfo="transformKey" />
     </node>
     <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="4855100605282951678">
@@ -533,7 +533,7 @@
   </root>
   <root id="4457500422381571986">
     <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="4457500422381571988">
-      <property name="value" nameId="tpce.1105725733873" value="#code" />
+      <property name="value" nameId="tpce.1105725733873" value="\code" />
       <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="87nw.2557074442922714728" resolveInfo="transformKey" />
     </node>
     <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="4855100605282951682">
@@ -638,7 +638,7 @@
   </root>
   <root id="6165313375055755361">
     <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="6165313375055755363">
-      <property name="value" nameId="tpce.1105725733873" value="#math" />
+      <property name="value" nameId="tpce.1105725733873" value="\math" />
       <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="87nw.2557074442922714728" resolveInfo="transformKey" />
     </node>
     <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="4855100605282951684">
