@@ -4,14 +4,12 @@ java -jar ../plantuml.jar *.puml
 cd ..
 
 echo ===== Copying Rendered Images and Screenshots
-cd source_gen/main
-mkdir doc_images
-cd ../..
-cp temp/*.png source_gen/main/doc_images
+mkdir -p source_gen/main/figures/doc
+cp temp/*.png source_gen/main/figures/doc
 
 
 echo ===== Copying Native Images
-cp images/*.png source_gen/main/doc_images
+cp images/*.png source_gen/main/figures/doc
 
 
 echo ===== Copying Prolog

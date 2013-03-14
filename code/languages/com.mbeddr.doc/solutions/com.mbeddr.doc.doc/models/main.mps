@@ -137,11 +137,11 @@
       <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="8730648445432859523" resolveInfo="Root" />
     </node>
     <node role="mappings" roleId="2c95.6068976060904007490" type="2c95.PathMapping" typeId="2c95.6386504476136554612" id="8730648445433186999">
-      <property name="mappedPath" nameId="2c95.6386504476136554614" value="doc_images/" />
+      <property name="mappedPath" nameId="2c95.6386504476136554614" value="figures/doc" />
       <link role="pathDef" roleId="2c95.6386504476136554613" targetNodeId="8730648445432874250" resolveInfo="imgTemp" />
     </node>
     <node role="mappings" roleId="2c95.6068976060904007490" type="2c95.PathMapping" typeId="2c95.6386504476136554612" id="8730648445433243076">
-      <property name="mappedPath" nameId="2c95.6386504476136554614" value="doc_images/" />
+      <property name="mappedPath" nameId="2c95.6386504476136554614" value="figures/doc" />
       <link role="pathDef" roleId="2c95.6386504476136554613" targetNodeId="8730648445433243074" resolveInfo="images" />
     </node>
     <node role="abstract" roleId="2c95.126932837435324914" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8730648445433281653">
