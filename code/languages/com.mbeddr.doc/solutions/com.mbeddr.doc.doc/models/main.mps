@@ -121,6 +121,12 @@
       <property name="name" nameId="tpck.1169194664001" value="images" />
       <property name="editTimePath" nameId="2c95.6386504476136472797" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.doc/solutions/com.mbeddr.doc.doc/images" />
     </node>
+    <node role="sizeSpecs" roleId="2c95.8624890525767800998" type="2c95.NamedSizeSpec" typeId="2c95.8624890525767800825" id="8730648445434214488">
+      <property name="name" nameId="tpck.1169194664001" value="smallCodeShot" />
+      <node role="spec" roleId="2c95.8624890525767800827" type="2c95.ScalingSizeSpec" typeId="2c95.8624890525767555426" id="8730648445434225364">
+        <property name="percentage" nameId="2c95.8624890525767555427" value="55" />
+      </node>
+    </node>
   </root>
   <root id="2293093897293118943">
     <node role="renderer" roleId="2c95.6068976060904007487" type="g9w8.LatexRenderer" typeId="g9w8.4457500422381351715" id="2293093897293118947">
@@ -131,11 +137,11 @@
       <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="8730648445432859523" resolveInfo="Root" />
     </node>
     <node role="mappings" roleId="2c95.6068976060904007490" type="2c95.PathMapping" typeId="2c95.6386504476136554612" id="8730648445433186999">
-      <property name="mappedPath" nameId="2c95.6386504476136554614" value="images/" />
+      <property name="mappedPath" nameId="2c95.6386504476136554614" value="doc_images/" />
       <link role="pathDef" roleId="2c95.6386504476136554613" targetNodeId="8730648445432874250" resolveInfo="imgTemp" />
     </node>
     <node role="mappings" roleId="2c95.6068976060904007490" type="2c95.PathMapping" typeId="2c95.6386504476136554612" id="8730648445433243076">
-      <property name="mappedPath" nameId="2c95.6386504476136554614" value="images/" />
+      <property name="mappedPath" nameId="2c95.6386504476136554614" value="doc_images/" />
       <link role="pathDef" roleId="2c95.6386504476136554613" targetNodeId="8730648445433243074" resolveInfo="images" />
     </node>
     <node role="abstract" roleId="2c95.126932837435324914" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8730648445433281653">
@@ -411,8 +417,8 @@
               </node>
             </node>
           </node>
-          <node role="sizeSpec" roleId="z5ox.8624890525767931140" type="2c95.ScalingSizeSpec" typeId="2c95.8624890525767555426" id="8730648445433283237">
-            <property name="percentage" nameId="2c95.8624890525767555427" value="60" />
+          <node role="sizeSpec" roleId="z5ox.8624890525767931140" type="2c95.InheritSizeSpec" typeId="2c95.8624890525767650652" id="8730648445434214500">
+            <link role="base" roleId="2c95.8624890525767800818" targetNodeId="8730648445434214488" resolveInfo="smallCodeShot" />
           </node>
         </node>
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="8730648445433284816">
@@ -654,8 +660,8 @@
               </node>
             </node>
           </node>
-          <node role="sizeSpec" roleId="rh4a.8624890525767931140" type="2c95.ScalingSizeSpec" typeId="2c95.8624890525767555426" id="8730648445433622104">
-            <property name="percentage" nameId="2c95.8624890525767555427" value="70" />
+          <node role="sizeSpec" roleId="rh4a.8624890525767931140" type="2c95.InheritSizeSpec" typeId="2c95.8624890525767650652" id="8730648445434220510">
+            <link role="base" roleId="2c95.8624890525767800818" targetNodeId="8730648445434214488" resolveInfo="smallCodeShot" />
           </node>
         </node>
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="8730648445433601067">
@@ -769,8 +775,8 @@
               </node>
             </node>
           </node>
-          <node role="sizeSpec" roleId="rh4a.8624890525767931140" type="2c95.ScalingSizeSpec" typeId="2c95.8624890525767555426" id="8730648445433631465">
-            <property name="percentage" nameId="2c95.8624890525767555427" value="70" />
+          <node role="sizeSpec" roleId="rh4a.8624890525767931140" type="2c95.InheritSizeSpec" typeId="2c95.8624890525767650652" id="8730648445434220511">
+            <link role="base" roleId="2c95.8624890525767800818" targetNodeId="8730648445434214488" resolveInfo="smallCodeShot" />
           </node>
         </node>
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="8730648445433854299">
@@ -975,8 +981,25 @@
           </node>
         </node>
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.ListingParagraph" typeId="2c95.8730648445434044903" id="8730648445434072518">
-          <property name="text" nameId="2c95.8730648445434044906" value="echo ===== Rendering Visualizations using plantuml&#10;cd temp&#10;java -jar ../plantuml.jar *.puml&#10;cd ..&#10;&#10;echo ===== Copying Rendered Images and Screenshots&#10;cd source_gen/main&#10;mkdir images&#10;cd ../..&#10;cp temp/*.png source_gen/main/images" />
-          <property name="language" nameId="2c95.8730648445434044905" value="batch" />
+          <property name="text" nameId="2c95.8730648445434044906" value="echo ===== Rendering Visualizations using plantuml&#10;cd temp&#10;java -jar ../plantuml.jar *.puml&#10;cd ..&#10;&#10;echo ===== Copying Rendered Images and Screenshots&#10;cd source_gen/main&#10;mkdir doc_images&#10;cd ../..&#10;cp temp/*.png source_gen/main/doc_images" />
+          <property name="language" nameId="2c95.8730648445434044905" value="bash" />
+        </node>
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="8730648445434159747">
+          <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="8730648445434159748">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8730648445434159750">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="The above example also shows how to embed a listing as text. You can add a \n" />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="8730648445434159751">
+              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="8730648445434159752">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8730648445434159753">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="listing" />
+                </node>
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8730648445434159754">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" paragraph and paste the actual textual code into a text area\nin the inspector." />
+            </node>
+          </node>
         </node>
       </node>
     </node>
