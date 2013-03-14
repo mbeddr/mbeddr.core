@@ -1,11 +1,18 @@
-echo ===== Copying Rendered Images
+echo ===== Rendering Visualizations
+cd temp
+java -jar ../plantuml.jar *.puml
+cd ..
+
+echo ===== Copying Rendered Images and Screenshots
 cd source_gen/main
 mkdir images
 cd ../..
 cp temp/*.png source_gen/main/images
 
+
 echo ===== Copying Native Images
 cp images/*.png source_gen/main/images
+
 
 
 echo ===== Copying Prolog
