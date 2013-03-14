@@ -949,8 +949,34 @@
                 </node>
               </node>
             </node>
-            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8730648445433993756" />
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8730648445433993756">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=". The following listing shows how we render the images using\n" />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="8730648445434128648">
+              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="8730648445434128649">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8730648445434128650">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="plantuml" />
+                </node>
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8730648445434128651">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" and how we copy them into a an " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="8730648445434128652">
+              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="8730648445434128653">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8730648445434128654">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="images" />
+                </node>
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8730648445434128655">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" folder. This \nfolder is the one from which the images are read by the generated Latex file." />
+            </node>
           </node>
+        </node>
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.ListingParagraph" typeId="2c95.8730648445434044903" id="8730648445434072518">
+          <property name="text" nameId="2c95.8730648445434044906" value="echo ===== Rendering Visualizations using plantuml&#10;cd temp&#10;java -jar ../plantuml.jar *.puml&#10;cd ..&#10;&#10;echo ===== Copying Rendered Images and Screenshots&#10;cd source_gen/main&#10;mkdir images&#10;cd ../..&#10;cp temp/*.png source_gen/main/images" />
+          <property name="language" nameId="2c95.8730648445434044905" value="batch" />
         </node>
       </node>
     </node>
