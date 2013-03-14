@@ -51,21 +51,21 @@
 	  <delete dir="${mps.home}/${plugins.folder.name}/${spawner.expanded-folder.name}" verbose="true" />
   </target>	
   
-  <target name="download-plugins" depends="clean-installed-plugins" >
+  <target name="download-plugins" >
 	  <get src="${base-url}/${multiline.build-id}/${latest-build}/${multiline.zip-file.name}" dest="${mps.home}/${plugins.folder.name}" verbose="true" skipexisting="true" usetimestamp="true"/>
 	  <get src="${base-url}/${richtext.build-id}/${latest-build}/${richtext.zip-file.name}" dest="${mps.home}/${plugins.folder.name}" verbose="true" skipexisting="true" usetimestamp="true"/>
 	  <get src="${base-url}/${editor-override.build-id}/${latest-build}/${editor-override.zip-file.name}" dest="${mps.home}/${plugins.folder.name}" verbose="true" skipexisting="true" usetimestamp="true"/>
 	  <get src="${base-url}/${spawner.build-id}/${latest-build}/${spawner.suburl}/${spawner.zip-file.name}" dest="${mps.home}/${plugins.folder.name}" verbose="true" skipexisting="true" usetimestamp="true"/>	  
   </target>	
 
-  <target name="unzip-plugins" depends="clean-installed-plugins,download-plugins">
+  <target name="unzip-plugins" >
 	  <unzip src="${mps.home}/${plugins.folder.name}/${multiline.zip-file.name}" dest="${mps.home}/${plugins.folder.name}" overwrite="true" />
 	  <unzip src="${mps.home}/${plugins.folder.name}/${richtext.zip-file.name}" dest="${mps.home}/${plugins.folder.name}" overwrite="true" />
 	  <unzip src="${mps.home}/${plugins.folder.name}/${editor-override.zip-file.name}" dest="${mps.home}/${plugins.folder.name}" overwrite="true" />
 	  <unzip src="${mps.home}/${plugins.folder.name}/${spawner.zip-file.name}" dest="${mps.home}/${plugins.folder.name}" overwrite="true" />  
   </target>	
       
-  <target name="clean-downloaded-artifacts" depends="clean-installed-plugins,download-plugins,unzip-plugins">
+  <target name="clean-downloaded-artifacts" >
 	  <delete file="${mps.home}/${plugins.folder.name}/${multiline.zip-file.name}"/>
 	  <delete file="${mps.home}/${plugins.folder.name}/${editor-override.zip-file.name}"/>
 	  <delete file="${mps.home}/${plugins.folder.name}/${richtext.zip-file.name}"/>
