@@ -550,7 +550,13 @@
               </node>
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5785245534400001461">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value="\nreference." />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="\nreference. The code for tables is shown in " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.ImgRefWord" typeId="2c95.6386504476136420159" id="5785245534400438826">
+              <link role="image" roleId="2c95.6386504476136420174" targetNodeId="5785245534400438821" resolveInfo="tables" />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5785245534400438828">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="." />
             </node>
           </node>
         </node>
@@ -624,6 +630,21 @@
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5785245534400096800">
               <property name="escapedValue" nameId="87nw.2557074442922438158" value=" a line between the \ncolumns; this may be changed in the future." />
+            </node>
+          </node>
+        </node>
+        <node role="contents" roleId="2c95.3350625596580064250" type="z5ox.SectionAsImageParagraph" typeId="z5ox.6416473402306197330" id="5785245534400438821">
+          <property name="name" nameId="tpck.1169194664001" value="tables" />
+          <link role="section" roleId="z5ox.8730648445432859548" targetNodeId="5185579450379584402" resolveInfo="tables" />
+          <link role="path" roleId="z5ox.6416473402306197356" targetNodeId="8730648445432874250" resolveInfo="imgTemp" />
+          <node role="sizeSpec" roleId="z5ox.8624890525767931140" type="2c95.PageWidthSizeSpec" typeId="2c95.8624890525767637976" id="5785245534400438822">
+            <property name="percentage" nameId="2c95.8624890525767637977" value="100" />
+          </node>
+          <node role="description" roleId="z5ox.8730648445433126847" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="5785245534400438823">
+            <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="5785245534400438824">
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5785245534400438825">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="The code for writing tables." />
+              </node>
             </node>
           </node>
         </node>
