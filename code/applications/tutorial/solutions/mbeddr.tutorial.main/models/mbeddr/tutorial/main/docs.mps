@@ -37,7 +37,7 @@
     <node role="contents" roleId="2c95.3350625596580064250" type="2c95.EmptyDocContent" typeId="2c95.3350625596579911760" id="2637267020265430785">
       <property name="name" nameId="tpck.1169194664001" value="empty_1362234290894_1" />
     </node>
-    <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Chapter" typeId="2c95.3350625596580064453" id="2637267020265430789">
+    <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Section" typeId="2c95.3350625596580064455" id="5185579450378967057">
       <property name="name" nameId="tpck.1169194664001" value="overview" />
       <property name="text" nameId="2c95.3350625596580064225" value="Overview" />
       <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Section" typeId="2c95.3350625596580064455" id="2637267020265430800">
@@ -150,7 +150,7 @@
     <node role="contents" roleId="2c95.3350625596580064250" type="2c95.EmptyDocContent" typeId="2c95.3350625596579911760" id="794010416819640960">
       <property name="name" nameId="tpck.1169194664001" value="empty_1362234722982_5" />
     </node>
-    <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Chapter" typeId="2c95.3350625596580064453" id="794010416819640963">
+    <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Section" typeId="2c95.3350625596580064455" id="5185579450378967059">
       <property name="name" nameId="tpck.1169194664001" value="existing" />
       <property name="text" nameId="2c95.3350625596580064225" value="Existing Languages" />
       <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Section" typeId="2c95.3350625596580064455" id="794010416819928749">
@@ -395,7 +395,7 @@
     <node role="contents" roleId="2c95.3350625596580064250" type="2c95.EmptyDocContent" typeId="2c95.3350625596579911760" id="794010416819641037">
       <property name="name" nameId="tpck.1169194664001" value="empty_1362234784407_10" />
     </node>
-    <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Chapter" typeId="2c95.3350625596580064453" id="794010416819641040">
+    <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Section" typeId="2c95.3350625596580064455" id="5185579450378967058">
       <property name="name" nameId="tpck.1169194664001" value="newLanguages" />
       <property name="text" nameId="2c95.3350625596580064225" value="New Languages" />
     </node>

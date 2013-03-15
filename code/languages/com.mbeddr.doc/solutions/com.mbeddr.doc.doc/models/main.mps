@@ -156,7 +156,7 @@
     <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Section" typeId="2c95.3350625596580064455" id="8730648445432859508">
       <property name="name" nameId="tpck.1169194664001" value="normalDocs" />
       <property name="text" nameId="2c95.3350625596580064225" value="Writing Regular Documents" />
-      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.SubSection" typeId="2c95.3350625596580064457" id="8730648445433286682">
+      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Section" typeId="2c95.3350625596580064455" id="5185579450378967071">
         <property name="name" nameId="tpck.1169194664001" value="simpleText" />
         <property name="text" nameId="2c95.3350625596580064225" value="Simple Text" />
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="8730648445432859509">
@@ -212,7 +212,7 @@
         <node role="contents" roleId="2c95.3350625596580064250" type="z5ox.SectionAsImageParagraph" typeId="z5ox.6416473402306197330" id="8730648445432874248">
           <property name="name" nameId="tpck.1169194664001" value="exSection" />
           <link role="path" roleId="z5ox.6416473402306197356" targetNodeId="8730648445432874250" resolveInfo="imgTemp" />
-          <link role="section" roleId="z5ox.8730648445432859548" targetNodeId="8730648445433286682" resolveInfo="simpleText" />
+          <link role="section" roleId="z5ox.8730648445432859548" targetNodeId="5185579450378967071" resolveInfo="simpleText" />
           <node role="sizeSpec" roleId="z5ox.8624890525767931140" type="2c95.PageWidthSizeSpec" typeId="2c95.8624890525767637976" id="8730648445432874251">
             <property name="percentage" nameId="2c95.8624890525767637977" value="100" />
           </node>
@@ -225,7 +225,7 @@
           </node>
         </node>
       </node>
-      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.SubSection" typeId="2c95.3350625596580064457" id="8730648445433286685">
+      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Section" typeId="2c95.3350625596580064455" id="5185579450378967064">
         <property name="name" nameId="tpck.1169194664001" value="formatting" />
         <property name="text" nameId="2c95.3350625596580064225" value="Formatting Text" />
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="8730648445433240094">
@@ -270,7 +270,7 @@
         <node role="contents" roleId="2c95.3350625596580064250" type="z5ox.SectionAsImageParagraph" typeId="z5ox.6416473402306197330" id="8730648445433240114">
           <property name="name" nameId="tpck.1169194664001" value="formatting" />
           <link role="path" roleId="z5ox.6416473402306197356" targetNodeId="8730648445432874250" resolveInfo="imgTemp" />
-          <link role="section" roleId="z5ox.8730648445432859548" targetNodeId="8730648445433286685" resolveInfo="formatting" />
+          <link role="section" roleId="z5ox.8730648445432859548" targetNodeId="5185579450378967064" resolveInfo="formatting" />
           <node role="sizeSpec" roleId="z5ox.8624890525767931140" type="2c95.PageWidthSizeSpec" typeId="2c95.8624890525767637976" id="8730648445433240124">
             <property name="percentage" nameId="2c95.8624890525767637977" value="100" />
           </node>
@@ -283,7 +283,7 @@
           </node>
         </node>
       </node>
-      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.SubSection" typeId="2c95.3350625596580064457" id="8730648445433286687">
+      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Section" typeId="2c95.3350625596580064455" id="5185579450378967069">
         <property name="name" nameId="tpck.1169194664001" value="figures" />
         <property name="text" nameId="2c95.3350625596580064225" value="Embedding Figures" />
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="8730648445433243077">
@@ -325,7 +325,7 @@
         <node role="contents" roleId="2c95.3350625596580064250" type="z5ox.SectionAsImageParagraph" typeId="z5ox.6416473402306197330" id="8730648445433243102">
           <property name="name" nameId="tpck.1169194664001" value="figures" />
           <link role="path" roleId="z5ox.6416473402306197356" targetNodeId="8730648445432874250" resolveInfo="imgTemp" />
-          <link role="section" roleId="z5ox.8730648445432859548" targetNodeId="8730648445433286687" resolveInfo="figures" />
+          <link role="section" roleId="z5ox.8730648445432859548" targetNodeId="5185579450378967069" resolveInfo="figures" />
           <node role="sizeSpec" roleId="z5ox.8624890525767931140" type="2c95.PageWidthSizeSpec" typeId="2c95.8624890525767637976" id="8730648445433244192">
             <property name="percentage" nameId="2c95.8624890525767637977" value="100" />
           </node>
@@ -373,7 +373,7 @@
           </node>
         </node>
       </node>
-      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.SubSection" typeId="2c95.3350625596580064457" id="8730648445433286690">
+      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Section" typeId="2c95.3350625596580064455" id="5185579450378967061">
         <property name="name" nameId="tpck.1169194664001" value="otherEmbeddings" />
         <property name="text" nameId="2c95.3350625596580064225" value="Embedding Other Things" />
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="8730648445433275055">
@@ -390,7 +390,7 @@
           </node>
         </node>
       </node>
-      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.SubSection" typeId="2c95.3350625596580064457" id="8730648445433286691">
+      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Section" typeId="2c95.3350625596580064455" id="5185579450378967070">
         <property name="name" nameId="tpck.1169194664001" value="exporting" />
         <property name="text" nameId="2c95.3350625596580064225" value="Exporting Documents" />
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="8730648445433281656">
@@ -564,7 +564,7 @@
           </node>
         </node>
       </node>
-      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.SubSection" typeId="2c95.3350625596580064457" id="8730648445433473733">
+      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Section" typeId="2c95.3350625596580064455" id="5185579450378967062">
         <property name="name" nameId="tpck.1169194664001" value="referencingCode" />
         <property name="text" nameId="2c95.3350625596580064225" value="Referencing Code" />
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="8730648445433543909">
@@ -714,7 +714,7 @@
           </node>
         </node>
       </node>
-      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.SubSection" typeId="2c95.3350625596580064457" id="8730648445433631453">
+      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Section" typeId="2c95.3350625596580064455" id="5185579450378967072">
         <property name="name" nameId="tpck.1169194664001" value="embddingCode" />
         <property name="text" nameId="2c95.3350625596580064225" value="Embedding Code" />
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="8730648445433631454">
@@ -847,7 +847,7 @@
           </node>
         </node>
       </node>
-      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.SubSection" typeId="2c95.3350625596580064457" id="8730648445433858403">
+      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Section" typeId="2c95.3350625596580064455" id="5185579450378967065">
         <property name="name" nameId="tpck.1169194664001" value="visualizations" />
         <property name="text" nameId="2c95.3350625596580064225" value="Embedding Visualizations" />
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="8730648445433858404">

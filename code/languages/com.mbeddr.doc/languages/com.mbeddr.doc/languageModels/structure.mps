@@ -30,18 +30,8 @@
     <node type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="3350625596580064249">
       <property name="name" nameId="tpck.1169194664001" value="IDocContentContainer" />
     </node>
-    <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="3350625596580064453">
-      <property name="name" nameId="tpck.1169194664001" value="Chapter" />
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="structure" />
-      <link role="extends" roleId="tpce.1071489389519" targetNodeId="3350625596580064222" resolveInfo="AbstractSection" />
-    </node>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="3350625596580064455">
       <property name="name" nameId="tpck.1169194664001" value="Section" />
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="structure" />
-      <link role="extends" roleId="tpce.1071489389519" targetNodeId="3350625596580064222" resolveInfo="AbstractSection" />
-    </node>
-    <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="3350625596580064457">
-      <property name="name" nameId="tpck.1169194664001" value="SubSection" />
       <property name="virtualPackage" nameId="tpck.1193676396447" value="structure" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="3350625596580064222" resolveInfo="AbstractSection" />
     </node>
@@ -313,21 +303,9 @@
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="vs0r.5095889050031055796" resolveInfo="IContainerOfUniqueNames" />
     </node>
   </root>
-  <root id="3350625596580064453">
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="3350625596580064454">
-      <property name="value" nameId="tpce.1105725733873" value="chapter" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473891462" resolveInfo="alias" />
-    </node>
-  </root>
   <root id="3350625596580064455">
     <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="3350625596580064456">
       <property name="value" nameId="tpce.1105725733873" value="section" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473891462" resolveInfo="alias" />
-    </node>
-  </root>
-  <root id="3350625596580064457">
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="3350625596580064458">
-      <property name="value" nameId="tpce.1105725733873" value="subsection" />
       <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473891462" resolveInfo="alias" />
     </node>
   </root>

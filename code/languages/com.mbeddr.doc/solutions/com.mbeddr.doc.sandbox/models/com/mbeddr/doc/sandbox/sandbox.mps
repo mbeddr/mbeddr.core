@@ -44,7 +44,7 @@
     </node>
   </roots>
   <root id="3350625596580087926">
-    <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Chapter" typeId="2c95.3350625596580064453" id="3350625596580089581">
+    <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Section" typeId="2c95.3350625596580064455" id="5185579450378967060">
       <property name="name" nameId="tpck.1169194664001" value="intro" />
       <property name="text" nameId="2c95.3350625596580064225" value="Introduction" />
       <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Section" typeId="2c95.3350625596580064455" id="3350625596580089582">
@@ -91,7 +91,7 @@
               <property name="escapedValue" nameId="87nw.2557074442922438158" value="The base technology is based on Sascha Lisson's Richtext framework.\nIt supports prose text editing in MPS, with embeddable nodes. An example\nof such embedding is the reference to the intro: " />
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="2c95.SectRefWord" typeId="2c95.3350625596580108709" id="3350625596580225384">
-              <link role="target" roleId="2c95.3350625596580108719" targetNodeId="3350625596580089581" resolveInfo="intro" />
+              <link role="target" roleId="2c95.3350625596580108719" targetNodeId="5185579450378967060" resolveInfo="intro" />
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3350625596580225383">
               <property name="escapedValue" nameId="87nw.2557074442922438158" value=" " />
@@ -165,7 +165,7 @@
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4023163832127319570" />
           </node>
         </node>
-        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.SubSection" typeId="2c95.3350625596580064457" id="4457500422381337439">
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Section" typeId="2c95.3350625596580064455" id="5185579450378967063">
           <property name="name" nameId="tpck.1169194664001" value="demo" />
           <property name="text" nameId="2c95.3350625596580064225" value="Here is a subsection" />
           <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="4755612053022299114">
@@ -195,7 +195,7 @@
             <link role="module" roleId="rh4a.6416473402306172903" targetNodeId="haow.4457500422381538278" resolveInfo="MinimalTest" />
           </node>
         </node>
-        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.SubSection" typeId="2c95.3350625596580064457" id="4457500422381538342">
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Section" typeId="2c95.3350625596580064455" id="5185579450378967067">
           <property name="name" nameId="tpck.1169194664001" value="code" />
           <property name="text" nameId="2c95.3350625596580064225" value="Here is a reference to code" />
           <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="4457500422381571302">
@@ -248,7 +248,7 @@
               <node role="words" roleId="87nw.2557074442922392302" type="2c95.ShortcutRefWord" typeId="2c95.4457500422381858396" id="1978640040348328133">
                 <link role="shortcut" roleId="2c95.4457500422381858397" targetNodeId="4457500422381962830" resolveInfo="great" />
                 <node role="args" roleId="2c95.4457500422381979449" type="2c95.SectRefWord" typeId="2c95.3350625596580108709" id="1978640040348328136">
-                  <link role="target" roleId="2c95.3350625596580108719" targetNodeId="4457500422381337439" resolveInfo="demo" />
+                  <link role="target" roleId="2c95.3350625596580108719" targetNodeId="5185579450378967063" resolveInfo="demo" />
                 </node>
               </node>
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4457500422381995666">
@@ -314,7 +314,7 @@
             </node>
           </node>
         </node>
-        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.SubSection" typeId="2c95.3350625596580064457" id="5378658552263150084">
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Section" typeId="2c95.3350625596580064455" id="5185579450378967066">
           <property name="name" nameId="tpck.1169194664001" value="drake" />
           <property name="text" nameId="2c95.3350625596580064225" value="The Drake Equation" />
           <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="5378658552263150085">
@@ -456,7 +456,7 @@
     <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Section" typeId="2c95.3350625596580064455" id="4457500422381799153">
       <property name="name" nameId="tpck.1169194664001" value="s1" />
       <property name="text" nameId="2c95.3350625596580064225" value="Section" />
-      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.SubSection" typeId="2c95.3350625596580064457" id="4457500422381799152">
+      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Section" typeId="2c95.3350625596580064455" id="5185579450378967068">
         <property name="name" nameId="tpck.1169194664001" value="stuff" />
         <property name="text" nameId="2c95.3350625596580064225" value="Imported Stuff" />
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="4457500422381589500">
