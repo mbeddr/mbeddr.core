@@ -50,12 +50,11 @@ public class GenerateProjectTask extends Task {
 			List<GitRepository> gitRepositories) {
 		List<ModuleMapping> modulePaths = new ArrayList<ModuleMapping>();
 		for (GitRepository gitRepository : gitRepositories) {
-			modulePaths.addAll(moduleLocator.getModulePaths(
-					gitRepository.getPath(), gitRepository.getName()));
+			modulePaths.addAll(moduleLocator.getModuleMappings(gitRepository.getPath(), gitRepository.getName()));
 		}
 		return modulePaths;
 	}
-
+	
 	private List<GitRepository> readRepositoriesFromProperties() {
 		List<GitRepository> gitRepositories = new ArrayList<GitRepository>();
 		Set<String> propertyKeys = (Set<String>) getProject().getProperties()
