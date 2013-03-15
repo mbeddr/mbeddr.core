@@ -110,4 +110,4 @@ tools/zgrviewer/zvtm-core-formps/target/*
 
 # -----------------------------------------------------------
 # compiled java classes within the ant-task eclipse workspace 
-tools/ant/ant-task-workspace/*/bin/**
+tools/ant/ant-task-workspace/*/bin/**/*.class
