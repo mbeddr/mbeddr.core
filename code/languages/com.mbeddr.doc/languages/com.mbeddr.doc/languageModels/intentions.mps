@@ -5,7 +5,7 @@
   <language namespace="63e0e566-5131-447e-90e3-12ea330e1a00(com.mbeddr.mpsutil.blutil)" />
   <language namespace="13744753-c81f-424a-9c1b-cf8943bf4e86(jetbrains.mps.lang.sharedConcepts)" />
   <devkit namespace="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
-  <import index="2c95" modelUID="r:5f7188a9-e7b4-4a2e-bef9-38d2cf379fdc(com.mbeddr.doc.structure)" version="9" />
+  <import index="2c95" modelUID="r:5f7188a9-e7b4-4a2e-bef9-38d2cf379fdc(com.mbeddr.doc.structure)" version="10" />
   <import index="9a8" modelUID="f:java_stub#1ed103c3-3aa6-49b7-9c21-6765ee11f224#jetbrains.mps.nodeEditor(MPS.Editor/jetbrains.mps.nodeEditor@java_stub)" version="-1" />
   <import index="jsgz" modelUID="f:java_stub#1ed103c3-3aa6-49b7-9c21-6765ee11f224#jetbrains.mps.nodeEditor.cells(MPS.Editor/jetbrains.mps.nodeEditor.cells@java_stub)" version="-1" />
   <import index="tp3j" modelUID="r:00000000-0000-4000-0000-011c89590353(jetbrains.mps.lang.intentions.structure)" version="8" implicit="yes" />
@@ -68,7 +68,7 @@
     <node type="tp3j.IntentionDeclaration" typeId="tp3j.1192794744107" id="5785245534399625796">
       <property name="virtualPackage" nameId="tpck.1193676396447" value="table" />
       <property name="name" nameId="tpck.1169194664001" value="toggleHeader" />
-      <link role="forConcept" roleId="tp3j.2522969319638198290" targetNodeId="2c95.5185579450379471862" resolveInfo="TextTableCell" />
+      <link role="forConcept" roleId="tp3j.2522969319638198290" targetNodeId="2c95.5185579450379471862" resolveInfo="StringTableCell" />
     </node>
   </roots>
   <root id="4457500422381589504">

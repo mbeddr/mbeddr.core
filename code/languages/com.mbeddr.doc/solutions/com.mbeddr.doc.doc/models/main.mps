@@ -6,7 +6,7 @@
   <devkit namespace="54c79f9f-f3ba-4167-91f1-eb4e98a9c47c(com.mbeddr.documentation)" />
   <import index="bskg" modelUID="r:be2272c0-bc2d-4ac4-a164-b072c9e60516(exampleCCode)" version="-1" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
-  <import index="2c95" modelUID="r:5f7188a9-e7b4-4a2e-bef9-38d2cf379fdc(com.mbeddr.doc.structure)" version="9" implicit="yes" />
+  <import index="2c95" modelUID="r:5f7188a9-e7b4-4a2e-bef9-38d2cf379fdc(com.mbeddr.doc.structure)" version="10" implicit="yes" />
   <import index="87nw" modelUID="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" version="5" implicit="yes" />
   <import index="g9w8" modelUID="r:506f4964-2b3f-49f3-a581-8c498222bac6(com.mbeddr.doc.gen_latex.structure)" version="-1" implicit="yes" />
   <import index="z5ox" modelUID="r:48b6c04c-173b-45da-963f-54fbbdb59cfc(com.mbeddr.doc.self.structure)" version="-1" implicit="yes" />
@@ -559,50 +559,50 @@
           <node role="rows" roleId="2c95.5785245534399940635" type="2c95.TableRow" typeId="2c95.5185579450379471854" id="5185579450379612740">
             <property name="lineBelow" nameId="2c95.5785245534399720606" value="true" />
             <property name="lineAbove" nameId="2c95.5785245534399720605" value="true" />
-            <node role="cells" roleId="2c95.5185579450379471857" type="2c95.TextTableCell" typeId="2c95.5185579450379471862" id="5185579450379612741">
+            <node role="cells" roleId="2c95.5185579450379471857" type="2c95.StringTableCell" typeId="2c95.5185579450379471862" id="5185579450379612741">
               <property name="text" nameId="2c95.5185579450379471864" value="Name" />
               <property name="isheader" nameId="2c95.5785245534399625710" value="true" />
             </node>
-            <node role="cells" roleId="2c95.5185579450379471857" type="2c95.TextTableCell" typeId="2c95.5185579450379471862" id="5185579450379612743">
+            <node role="cells" roleId="2c95.5185579450379471857" type="2c95.StringTableCell" typeId="2c95.5185579450379471862" id="5185579450379612743">
               <property name="text" nameId="2c95.5185579450379471864" value="Alter" />
               <property name="isheader" nameId="2c95.5785245534399625710" value="true" />
             </node>
-            <node role="cells" roleId="2c95.5185579450379471857" type="2c95.TextTableCell" typeId="2c95.5185579450379471862" id="5185579450379612746">
+            <node role="cells" roleId="2c95.5185579450379471857" type="2c95.StringTableCell" typeId="2c95.5185579450379471862" id="5185579450379612746">
               <property name="text" nameId="2c95.5185579450379471864" value="Adresse" />
               <property name="isheader" nameId="2c95.5785245534399625710" value="true" />
             </node>
           </node>
           <node role="rows" roleId="2c95.5785245534399940635" type="2c95.TableRow" typeId="2c95.5185579450379471854" id="5185579450379612747">
-            <node role="cells" roleId="2c95.5185579450379471857" type="2c95.TextTableCell" typeId="2c95.5185579450379471862" id="5185579450379612748">
+            <node role="cells" roleId="2c95.5185579450379471857" type="2c95.StringTableCell" typeId="2c95.5185579450379471862" id="5185579450379612748">
               <property name="text" nameId="2c95.5185579450379471864" value="Markus" />
             </node>
-            <node role="cells" roleId="2c95.5185579450379471857" type="2c95.TextTableCell" typeId="2c95.5185579450379471862" id="5185579450379612750">
+            <node role="cells" roleId="2c95.5185579450379471857" type="2c95.StringTableCell" typeId="2c95.5185579450379471862" id="5185579450379612750">
               <property name="text" nameId="2c95.5185579450379471864" value="38" />
             </node>
-            <node role="cells" roleId="2c95.5185579450379471857" type="2c95.TextTableCell" typeId="2c95.5185579450379471862" id="5185579450379612752">
+            <node role="cells" roleId="2c95.5185579450379471857" type="2c95.StringTableCell" typeId="2c95.5185579450379471862" id="5185579450379612752">
               <property name="text" nameId="2c95.5185579450379471864" value="voelter@acm.org" />
             </node>
           </node>
           <node role="rows" roleId="2c95.5785245534399940635" type="2c95.TableRow" typeId="2c95.5185579450379471854" id="5185579450379612753">
-            <node role="cells" roleId="2c95.5185579450379471857" type="2c95.TextTableCell" typeId="2c95.5185579450379471862" id="5185579450379612754">
+            <node role="cells" roleId="2c95.5185579450379471857" type="2c95.StringTableCell" typeId="2c95.5185579450379471862" id="5185579450379612754">
               <property name="text" nameId="2c95.5185579450379471864" value="Bernd" />
             </node>
-            <node role="cells" roleId="2c95.5185579450379471857" type="2c95.TextTableCell" typeId="2c95.5185579450379471862" id="5185579450379612756">
+            <node role="cells" roleId="2c95.5185579450379471857" type="2c95.StringTableCell" typeId="2c95.5185579450379471862" id="5185579450379612756">
               <property name="text" nameId="2c95.5185579450379471864" value="30" />
             </node>
-            <node role="cells" roleId="2c95.5185579450379471857" type="2c95.TextTableCell" typeId="2c95.5185579450379471862" id="5185579450379612758">
+            <node role="cells" roleId="2c95.5185579450379471857" type="2c95.StringTableCell" typeId="2c95.5185579450379471862" id="5185579450379612758">
               <property name="text" nameId="2c95.5185579450379471864" value="kolb@itemis.de" />
             </node>
           </node>
           <node role="rows" roleId="2c95.5785245534399940635" type="2c95.TableRow" typeId="2c95.5185579450379471854" id="5785245534399620505">
             <property name="lineBelow" nameId="2c95.5785245534399720606" value="true" />
-            <node role="cells" roleId="2c95.5185579450379471857" type="2c95.TextTableCell" typeId="2c95.5185579450379471862" id="5785245534399620506">
+            <node role="cells" roleId="2c95.5185579450379471857" type="2c95.StringTableCell" typeId="2c95.5185579450379471862" id="5785245534399620506">
               <property name="text" nameId="2c95.5185579450379471864" value="Peter" />
             </node>
-            <node role="cells" roleId="2c95.5185579450379471857" type="2c95.TextTableCell" typeId="2c95.5185579450379471862" id="5785245534399620508">
+            <node role="cells" roleId="2c95.5185579450379471857" type="2c95.StringTableCell" typeId="2c95.5185579450379471862" id="5785245534399620508">
               <property name="text" nameId="2c95.5185579450379471864" value="30" />
             </node>
-            <node role="cells" roleId="2c95.5185579450379471857" type="2c95.TextTableCell" typeId="2c95.5185579450379471862" id="5785245534399620510">
+            <node role="cells" roleId="2c95.5185579450379471857" type="2c95.StringTableCell" typeId="2c95.5185579450379471862" id="5785245534400351520">
               <property name="text" nameId="2c95.5185579450379471864" value="peter@friese.de" />
             </node>
           </node>
@@ -610,7 +610,7 @@
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="5785245534400066187">
           <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="5785245534400066188">
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5785245534400066189">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value="In a table, you specify the number of columns (and a name for floating\ntables). You then add rows and cells. Currently we support only text\ncells (denoted by the bracket), additional cell types will be supported\nin the future." />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="In a table, you specify the number of columns (and a name for floating\ntables). You then add rows and cells. Currently we support only text\ncells (denoted by the parens) and text block cells (denoted by the angle\nbracket, just as in text paragaphs in general). Additional cell types \nwill be supported in the future." />
             </node>
           </node>
         </node>
