@@ -708,6 +708,9 @@
           <node role="lines" roleId="tis3.4457500422381362357" type="tis3.SimpleTextualLine" typeId="tis3.4457500422381360575" id="5785245534399883830">
             <property name="text" nameId="tis3.4457500422381360577" value="\begin{center}" />
           </node>
+          <node role="lines" roleId="tis3.4457500422381362357" type="tis3.SimpleTextualLine" typeId="tis3.4457500422381360575" id="5785245534400876497">
+            <property name="text" nameId="tis3.4457500422381360577" value="\footnotesize" />
+          </node>
           <node role="lines" roleId="tis3.4457500422381362357" type="tis3.SimpleTextualLine" typeId="tis3.4457500422381360575" id="5785245534399659264">
             <property name="text" nameId="tis3.4457500422381360577" value="\begin{tabular}{l|l}" />
             <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.PropertyMacro" typeId="tpf8.1087833241328" id="5785245534399752013">
@@ -799,6 +802,9 @@
           <node role="lines" roleId="tis3.4457500422381362357" type="tis3.SimpleTextualLine" typeId="tis3.4457500422381360575" id="5785245534399659265">
             <property name="text" nameId="tis3.4457500422381360577" value="\end{tabular}" />
           </node>
+          <node role="lines" roleId="tis3.4457500422381362357" type="tis3.SimpleTextualLine" typeId="tis3.4457500422381360575" id="5785245534400876496">
+            <property name="text" nameId="tis3.4457500422381360577" value="\normalsize" />
+          </node>
           <node role="lines" roleId="tis3.4457500422381362357" type="tis3.SimpleTextualLine" typeId="tis3.4457500422381360575" id="5785245534399883831">
             <property name="text" nameId="tis3.4457500422381360577" value="\end{center}" />
           </node>
@@ -869,8 +875,17 @@
       <node role="ruleConsequence" roleId="tpf8.1169672767469" type="tpf8.InlineTemplate_RuleConsequence" typeId="tpf8.1177093525992" id="5785245534399940701">
         <node role="templateNode" roleId="tpf8.1177093586806" type="tis3.LineList" typeId="tis3.4457500422381362355" id="5785245534399940702">
           <node role="lines" roleId="tis3.4457500422381362357" type="tis3.EmptyLine" typeId="tis3.4457500422381425974" id="5785245534399940703" />
-          <node role="lines" roleId="tis3.4457500422381362357" type="tis3.SimpleTextualLine" typeId="tis3.4457500422381360575" id="5785245534399940709">
-            <property name="text" nameId="tis3.4457500422381360577" value="\begin{center}" />
+          <node role="lines" roleId="tis3.4457500422381362357" type="tis3.SimpleTextualLine" typeId="tis3.4457500422381360575" id="5785245534400951437">
+            <property name="text" nameId="tis3.4457500422381360577" value="\vspace{3mm}" />
+          </node>
+          <node role="lines" roleId="tis3.4457500422381362357" type="tis3.SimpleTextualLine" typeId="tis3.4457500422381360575" id="5785245534400942138">
+            <property name="text" nameId="tis3.4457500422381360577" value="\noindent" />
+          </node>
+          <node role="lines" roleId="tis3.4457500422381362357" type="tis3.SimpleTextualLine" typeId="tis3.4457500422381360575" id="5785245534400944786">
+            <property name="text" nameId="tis3.4457500422381360577" value="\begin{minipage}{0.96\columnwidth}" />
+          </node>
+          <node role="lines" roleId="tis3.4457500422381362357" type="tis3.SimpleTextualLine" typeId="tis3.4457500422381360575" id="5785245534400876494">
+            <property name="text" nameId="tis3.4457500422381360577" value="\footnotesize" />
           </node>
           <node role="lines" roleId="tis3.4457500422381362357" type="tis3.SimpleTextualLine" typeId="tis3.4457500422381360575" id="5785245534399940710">
             <property name="text" nameId="tis3.4457500422381360577" value="\begin{tabular}{l|l}" />
@@ -963,9 +978,13 @@
           <node role="lines" roleId="tis3.4457500422381362357" type="tis3.SimpleTextualLine" typeId="tis3.4457500422381360575" id="5785245534399940748">
             <property name="text" nameId="tis3.4457500422381360577" value="\end{tabular}" />
           </node>
-          <node role="lines" roleId="tis3.4457500422381362357" type="tis3.SimpleTextualLine" typeId="tis3.4457500422381360575" id="5785245534399940749">
-            <property name="text" nameId="tis3.4457500422381360577" value="\end{center}" />
+          <node role="lines" roleId="tis3.4457500422381362357" type="tis3.SimpleTextualLine" typeId="tis3.4457500422381360575" id="5785245534400876495">
+            <property name="text" nameId="tis3.4457500422381360577" value="\normalsize" />
           </node>
+          <node role="lines" roleId="tis3.4457500422381362357" type="tis3.SimpleTextualLine" typeId="tis3.4457500422381360575" id="5785245534400944787">
+            <property name="text" nameId="tis3.4457500422381360577" value="\end{minipage}" />
+          </node>
+          <node role="lines" roleId="tis3.4457500422381362357" type="tis3.EmptyLine" typeId="tis3.4457500422381425974" id="5785245534400887089" />
         </node>
       </node>
     </node>
