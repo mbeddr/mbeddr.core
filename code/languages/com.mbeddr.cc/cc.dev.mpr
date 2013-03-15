@@ -11,6 +11,7 @@
       <modulePath path="${project}/devkits/com.mbeddr.cc.variability/variability.devkit" folder="ple_var" />
       <modulePath path="${project}/languages/com.mbeddr.cc.archdec/archdec.mpl" folder="archdec" />
       <modulePath path="${project}/languages/com.mbeddr.cc.requirements.c/c.mpl" folder="requirements" />
+      <modulePath path="${project}/languages/com.mbeddr.cc.requirements.c2doc/com.mbeddr.cc.requirements.c2doc.mpl" folder="requirements" />
       <modulePath path="${project}/languages/com.mbeddr.cc.requirements.csv/csv.mpl" folder="requirements" />
       <modulePath path="${project}/languages/com.mbeddr.cc.requirements.report/com.mbeddr.cc.requirements.report.mpl" folder="requirements" />
       <modulePath path="${project}/languages/com.mbeddr.cc.requirements.scenarios/scenarios.mpl" folder="requirements" />

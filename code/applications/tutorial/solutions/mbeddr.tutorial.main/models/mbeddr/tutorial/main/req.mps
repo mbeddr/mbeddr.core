@@ -3,16 +3,24 @@
   <persistence version="7" />
   <language namespace="d6714220-402d-48cb-a4a2-88223c6257f6(com.mbeddr.cc.requirements.scenarios)" />
   <language namespace="f3ed62ca-3490-40d0-890b-9b3133cc2ead(com.mbeddr.cc.requirements.c)" />
+  <language namespace="983e02f8-8062-426e-b60d-bc044a46b93a(com.mbeddr.cc.requirements.report)" />
+  <language namespace="7a52ca96-9053-41d2-ae13-8cee05f36698(com.mbeddr.cc.requirements.c2doc)" />
   <devkit namespace="a4dac888-0788-4852-b4c0-f386bf6f2c0b(com.mbeddr.cc.reqtrace)" />
   <devkit namespace="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
+  <devkit namespace="54c79f9f-f3ba-4167-91f1-eb4e98a9c47c(com.mbeddr.documentation)" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="75wo" modelUID="r:eaa205a4-f15c-47d3-99e2-e648881b5997(com.mbeddr.cc.requirements.structure)" version="7" implicit="yes" />
   <import index="4l29" modelUID="r:9f885776-26d3-48f5-a714-b3a8fa61c18a(com.mbeddr.cc.requirements.scenarios.structure)" version="6" implicit="yes" />
   <import index="3vkx" modelUID="r:1c91fcc2-cf14-47f5-a4d4-3b424626f0d4(com.mbeddr.cc.requirements.c.structure)" version="4" implicit="yes" />
   <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="22" implicit="yes" />
-  <import index="k146" modelUID="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" version="3" implicit="yes" />
   <import index="87nw" modelUID="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" version="5" implicit="yes" />
   <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="7" implicit="yes" />
+  <import index="2c95" modelUID="r:5f7188a9-e7b4-4a2e-bef9-38d2cf379fdc(com.mbeddr.doc.structure)" version="10" implicit="yes" />
+  <import index="g9w8" modelUID="r:506f4964-2b3f-49f3-a581-8c498222bac6(com.mbeddr.doc.gen_latex.structure)" version="-1" implicit="yes" />
+  <import index="9prt" modelUID="r:408fbb9e-2f4a-492c-80c9-659ad1be0b91(com.mbeddr.cc.requirements.report.structure)" version="-1" implicit="yes" />
+  <import index="51wr" modelUID="r:b31f1c3c-99aa-4f1e-a329-cba27efb1a6b(com.mbeddr.core.buildconfig.structure)" version="1" implicit="yes" />
+  <import index="k146" modelUID="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" version="3" implicit="yes" />
+  <import index="555r" modelUID="r:01e7a735-c89c-4c96-8b5e-4c3cef4e77c0(com.mbeddr.cc.requirements.c2doc.structure)" version="-1" implicit="yes" />
   <roots>
     <node type="75wo.RequirementsModule" typeId="75wo.8745401669462963169" id="1433966787984154171">
       <property name="name" nameId="tpck.1169194664001" value="FlightJudgementRules" />
@@ -23,6 +31,21 @@
     <node type="75wo.RequirementsModule" typeId="75wo.8745401669462963169" id="6898387700925052063">
       <property name="name" nameId="tpck.1169194664001" value="UseCases" />
     </node>
+    <node type="2c95.Document" typeId="2c95.3350625596579911728" id="5785245534400491064">
+      <property name="name" nameId="tpck.1169194664001" value="requirementsReport" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="report" />
+      <link role="config" roleId="2c95.6386504476136472832" targetNodeId="5785245534400491065" resolveInfo="Config" />
+    </node>
+    <node type="2c95.DocumentConfig" typeId="2c95.6386504476136472782" id="5785245534400491065">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="report" />
+      <property name="name" nameId="tpck.1169194664001" value="Config" />
+    </node>
+    <node type="2c95.DocumentExport" typeId="2c95.3350625596580256366" id="5785245534400491080">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="report" />
+      <property name="name" nameId="tpck.1169194664001" value="RequirementsReport" />
+      <property name="title" nameId="2c95.126932837435324910" value="Requirements for Flight Judgement" />
+    </node>
+    <node type="51wr.BuildConfiguration" typeId="51wr.7717755763392524104" id="5785245534400491126" />
   </roots>
   <root id="1433966787984154171">
     <node role="requirements" roleId="75wo.8745401669462963171" type="75wo.Requirement" typeId="75wo.8745401669462952101" id="1433966787984154172">
@@ -36,7 +59,7 @@
       <node role="textParts" roleId="75wo.4539911450717510658" type="75wo.TextPart" typeId="75wo.4539911450717510653" id="4539911450717528602" />
       <node role="kind" roleId="75wo.8921256082857728256" type="75wo.FunctionalRequirementKind" typeId="75wo.8921256082857728250" id="1433966787984154173" />
       <node role="additionalData" roleId="75wo.8745401669463270518" type="3vkx.RConstant" typeId="3vkx.3534497005926837262" id="552710421071397239">
-        <property name="name" nameId="tpck.1169194664001" value="POINTS_FOR_TAKEOFF" />
+        <property name="name" nameId="tpck.1169194664001" value="POINTSFORTAKEOFF" />
         <node role="value" roleId="3vkx.3534497005926847011" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="552710421071397243">
           <property name="value" nameId="mj1l.8860443239512128104" value="100" />
         </node>
@@ -58,12 +81,8 @@
       <property name="open" nameId="75wo.1165432222361744926" value="true" />
       <property name="name" nameId="tpck.1169194664001" value="PointsFactor" />
       <property name="summmary" nameId="75wo.3402431285977818823" value="The factor of points" />
-      <node role="textParts" roleId="75wo.4539911450717510658" type="75wo.TextPart" typeId="75wo.4539911450717510653" id="4539911450717570215">
-        <property name="text" nameId="75wo.4539911450717510654" value="" />
-      </node>
-      <node role="kind" roleId="75wo.8921256082857728256" type="75wo.FunctionalRequirementKind" typeId="75wo.8921256082857728250" id="7451725615401720595" />
       <node role="additionalData" roleId="75wo.8745401669463270518" type="3vkx.RConstant" typeId="3vkx.3534497005926837262" id="7451725615401720596">
-        <property name="name" nameId="tpck.1169194664001" value="BASE_POINTS" />
+        <property name="name" nameId="tpck.1169194664001" value="BASEPOINTS" />
         <node role="value" roleId="3vkx.3534497005926847011" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="7451725615401720600">
           <property name="value" nameId="mj1l.8860443239512128104" value="10" />
         </node>
@@ -72,6 +91,10 @@
           <property name="const" nameId="mj1l.2941277002445651368" value="false" />
         </node>
       </node>
+      <node role="textParts" roleId="75wo.4539911450717510658" type="75wo.TextPart" typeId="75wo.4539911450717510653" id="4539911450717570215">
+        <property name="text" nameId="75wo.4539911450717510654" value="" />
+      </node>
+      <node role="kind" roleId="75wo.8921256082857728256" type="75wo.FunctionalRequirementKind" typeId="75wo.8921256082857728250" id="7451725615401720595" />
       <node role="text" roleId="75wo.8375407818529829156" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="4066530727403326156">
         <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="4066530727403326157">
           <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4066530727403326158">
@@ -89,45 +112,8 @@
       <property name="implemented" nameId="75wo.2667296550441502913" value="false" />
       <property name="tested" nameId="75wo.2667296550441527827" value="false" />
       <property name="proseText" value="" />
-      <node role="textParts" roleId="75wo.4539911450717510658" type="75wo.TextPart" typeId="75wo.4539911450717510653" id="4539911450717528932" />
-      <node role="kind" roleId="75wo.8921256082857728256" type="75wo.FunctionalRequirementKind" typeId="75wo.8921256082857728250" id="1433966787984154175" />
-      <node role="details" roleId="75wo.8745401669462962629" type="75wo.Requirement" typeId="75wo.8745401669462952101" id="1433966787984154176">
-        <property name="priority" nameId="75wo.3314758227758879688" value="0" />
-        <property name="open" nameId="75wo.1165432222361744926" value="false" />
-        <property name="name" nameId="tpck.1169194664001" value="FasterThan100" />
-        <property name="summmary" nameId="75wo.3402431285977818823" value="For each trackpoint where you go more than 100 mps, you get 10 points" />
-        <property name="traced" nameId="75wo.2667296550441527826" value="true" />
-        <property name="implemented" nameId="75wo.2667296550441502913" value="true" />
-        <property name="tested" nameId="75wo.2667296550441527827" value="false" />
-        <node role="textParts" roleId="75wo.4539911450717510658" type="75wo.TextPart" typeId="75wo.4539911450717510653" id="4539911450717528909" />
-        <node role="kind" roleId="75wo.8921256082857728256" type="75wo.FunctionalRequirementKind" typeId="75wo.8921256082857728250" id="1433966787984154177" />
-        <node role="text" roleId="75wo.8375407818529829156" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="4066530727403326162">
-          <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="4066530727403326163">
-            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4066530727403326164">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value="Text" />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node role="details" roleId="75wo.8745401669462962629" type="75wo.Requirement" typeId="75wo.8745401669462952101" id="1433966787984154178">
-        <property name="priority" nameId="75wo.3314758227758879688" value="0" />
-        <property name="open" nameId="75wo.1165432222361744926" value="false" />
-        <property name="name" nameId="tpck.1169194664001" value="FasterThan200" />
-        <property name="summmary" nameId="75wo.3402431285977818823" value="For each trackpoint where you go more than 200 mps, you get 20 points" />
-        <property name="traced" nameId="75wo.2667296550441527826" value="true" />
-        <property name="implemented" nameId="75wo.2667296550441502913" value="true" />
-        <property name="tested" nameId="75wo.2667296550441527827" value="false" />
-        <node role="textParts" roleId="75wo.4539911450717510658" type="75wo.TextPart" typeId="75wo.4539911450717510653" id="4539911450717587460">
-          <property name="text" nameId="75wo.4539911450717510654" value="" />
-        </node>
-        <node role="kind" roleId="75wo.8921256082857728256" type="75wo.FunctionalRequirementKind" typeId="75wo.8921256082857728250" id="1433966787984154179" />
-        <node role="text" roleId="75wo.8375407818529829156" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="4066530727403326165">
-          <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="4066530727403326166">
-            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4066530727403326167">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value="Text" />
-            </node>
-          </node>
-        </node>
+      <node role="additionalData" roleId="75wo.8745401669463270518" type="75wo.TimingSpecification" typeId="75wo.3402431285977750163" id="5785245534400583694">
+        <property name="timingSpec" nameId="75wo.3402431285977750164" value="12" />
       </node>
       <node role="additionalData" roleId="75wo.8745401669463270518" type="3vkx.RCalculation" typeId="3vkx.3534497005926949315" id="552710421071397247">
         <property name="name" nameId="tpck.1169194664001" value="PointForATrackpoint" />
@@ -182,8 +168,8 @@
               <property name="value" nameId="mj1l.8860443239512128104" value="0" />
             </node>
           </node>
-          <node role="left" roleId="mj1l.8860443239512128064" type="3vkx.RConstantRef" typeId="3vkx.3534497005926837277" id="7451725615401720602">
-            <link role="constant" roleId="3vkx.3534497005926837278" targetNodeId="7451725615401720596" resolveInfo="BASE_POINTS" />
+          <node role="left" roleId="mj1l.8860443239512128064" type="3vkx.RConstantRef" typeId="3vkx.3534497005926837277" id="5785245534400540001">
+            <link role="constant" roleId="3vkx.3534497005926837278" targetNodeId="7451725615401720596" resolveInfo="BASEPOINTS" />
           </node>
         </node>
         <node role="params" roleId="3vkx.3534497005926949334" type="3vkx.RParam" typeId="3vkx.3534497005926949316" id="552710421071397252">
@@ -255,6 +241,46 @@
           </node>
           <node role="expected" roleId="3vkx.3562422675423880817" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="7451725615401925361">
             <property name="value" nameId="mj1l.8860443239512128104" value="300" />
+          </node>
+        </node>
+      </node>
+      <node role="textParts" roleId="75wo.4539911450717510658" type="75wo.TextPart" typeId="75wo.4539911450717510653" id="4539911450717528932" />
+      <node role="kind" roleId="75wo.8921256082857728256" type="75wo.FunctionalRequirementKind" typeId="75wo.8921256082857728250" id="1433966787984154175" />
+      <node role="details" roleId="75wo.8745401669462962629" type="75wo.Requirement" typeId="75wo.8745401669462952101" id="1433966787984154176">
+        <property name="priority" nameId="75wo.3314758227758879688" value="0" />
+        <property name="open" nameId="75wo.1165432222361744926" value="false" />
+        <property name="name" nameId="tpck.1169194664001" value="FasterThan100" />
+        <property name="summmary" nameId="75wo.3402431285977818823" value="For each trackpoint where you go more than 100 mps, you get 10 points" />
+        <property name="traced" nameId="75wo.2667296550441527826" value="true" />
+        <property name="implemented" nameId="75wo.2667296550441502913" value="true" />
+        <property name="tested" nameId="75wo.2667296550441527827" value="false" />
+        <node role="textParts" roleId="75wo.4539911450717510658" type="75wo.TextPart" typeId="75wo.4539911450717510653" id="4539911450717528909" />
+        <node role="kind" roleId="75wo.8921256082857728256" type="75wo.FunctionalRequirementKind" typeId="75wo.8921256082857728250" id="1433966787984154177" />
+        <node role="text" roleId="75wo.8375407818529829156" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="4066530727403326162">
+          <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="4066530727403326163">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4066530727403326164">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="Text" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node role="details" roleId="75wo.8745401669462962629" type="75wo.Requirement" typeId="75wo.8745401669462952101" id="1433966787984154178">
+        <property name="priority" nameId="75wo.3314758227758879688" value="0" />
+        <property name="open" nameId="75wo.1165432222361744926" value="false" />
+        <property name="name" nameId="tpck.1169194664001" value="FasterThan200" />
+        <property name="summmary" nameId="75wo.3402431285977818823" value="For each trackpoint where you go more than 200 mps, you get 20 points" />
+        <property name="traced" nameId="75wo.2667296550441527826" value="true" />
+        <property name="implemented" nameId="75wo.2667296550441502913" value="true" />
+        <property name="tested" nameId="75wo.2667296550441527827" value="false" />
+        <node role="textParts" roleId="75wo.4539911450717510658" type="75wo.TextPart" typeId="75wo.4539911450717510653" id="4539911450717587460">
+          <property name="text" nameId="75wo.4539911450717510654" value="" />
+        </node>
+        <node role="kind" roleId="75wo.8921256082857728256" type="75wo.FunctionalRequirementKind" typeId="75wo.8921256082857728250" id="1433966787984154179" />
+        <node role="text" roleId="75wo.8375407818529829156" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="4066530727403326165">
+          <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="4066530727403326166">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4066530727403326167">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="Text" />
+            </node>
           </node>
         </node>
       </node>
@@ -785,7 +811,7 @@
       <node role="textParts" roleId="75wo.4539911450717510658" type="75wo.TextPart" typeId="75wo.4539911450717510653" id="4539911450717528937" />
       <node role="details" roleId="75wo.8745401669462962629" type="75wo.Requirement" typeId="75wo.8745401669462952101" id="1942554214112319815">
         <property name="priority" nameId="75wo.3314758227758879688" value="0" />
-        <property name="open" nameId="75wo.1165432222361744926" value="false" />
+        <property name="open" nameId="75wo.1165432222361744926" value="true" />
         <property name="name" nameId="tpck.1169194664001" value="UserSuppliesFlightError" />
         <property name="summmary" nameId="75wo.3402431285977818823" value="An erro occurs during submission" />
         <node role="kind" roleId="75wo.8921256082857728256" type="4l29.ScenarioRequirementKind" typeId="4l29.5744000828452835552" id="1942554214112319817" />
@@ -890,6 +916,47 @@
     <node role="imports" roleId="75wo.1165432222362099166" type="75wo.ModuleRef" typeId="75wo.439567521322965024" id="8983161156585739660">
       <link role="module" roleId="75wo.439567521322965025" targetNodeId="8119642625901794439" resolveInfo="ArchitecturalComponents" />
     </node>
+  </root>
+  <root id="5785245534400491064">
+    <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Section" typeId="2c95.3350625596580064455" id="5785245534400491071">
+      <property name="name" nameId="tpck.1169194664001" value="intro" />
+      <property name="text" nameId="2c95.3350625596580064225" value="Introduction" />
+      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="5785245534400491072">
+        <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="5785245534400491073">
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5785245534400491074">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value="This document contains the requirements for the flight judgement rules." />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node role="contents" roleId="2c95.3350625596580064250" type="2c95.EmptyDocContent" typeId="2c95.3350625596579911760" id="5785245534400531215">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1363362083279_3" />
+    </node>
+    <node role="contents" roleId="2c95.3350625596580064250" type="9prt.RequirementsParagraph" typeId="9prt.5785245534400474241" id="5785245534400491079">
+      <link role="module" roleId="9prt.5785245534400474242" targetNodeId="1433966787984154171" resolveInfo="FlightJudgementRules" />
+    </node>
+    <node role="contents" roleId="2c95.3350625596580064250" type="2c95.EmptyDocContent" typeId="2c95.3350625596579911760" id="5785245534400491067">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1363360812865_2" />
+    </node>
+    <node role="contents" roleId="2c95.3350625596580064250" type="2c95.EmptyDocContent" typeId="2c95.3350625596579911760" id="5785245534400491068">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1363360812993_3" />
+    </node>
+  </root>
+  <root id="5785245534400491065" />
+  <root id="5785245534400491080">
+    <node role="renderer" roleId="2c95.6068976060904007487" type="g9w8.LatexRenderer" typeId="g9w8.4457500422381351715" id="5785245534400491084">
+      <property name="prolog" nameId="g9w8.4755612053022149513" value="mbeddr-prolog.ltx" />
+      <property name="documentClass" nameId="g9w8.4457500422381351717" value="article" />
+    </node>
+    <node role="root" roleId="2c95.6068976060904007489" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="5785245534400491083">
+      <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="5785245534400491064" resolveInfo="requirementsReport" />
+    </node>
+  </root>
+  <root id="5785245534400491126">
+    <node role="configurationItems" roleId="vs0r.4459718605982007338" type="k146.ReportingConfiguration" typeId="k146.4459718605982051949" id="5785245534400581853">
+      <node role="strategy" roleId="k146.4459718605982051999" type="k146.PrintfReportingStrategy" typeId="k146.4459718605982051980" id="5785245534400581854" />
+    </node>
+    <node role="configurationItems" roleId="vs0r.4459718605982007338" type="555r.RequirementsC2DocConfigItem" typeId="555r.5785245534400582270" id="5785245534400582588" />
   </root>
 </model>
 
