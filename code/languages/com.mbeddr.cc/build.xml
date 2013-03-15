@@ -25,6 +25,7 @@
  
   <property name="mbeddr.core.project.dir" value="code/languages/com.mbeddr.core"/>
   <property name="util.project.dir" value="code/languages/com.mbeddr.mpsutil"/>  
+  <property name="mbeddr.doc.project.dir" value="code/languages/com.mbeddr.doc"/>
   <property name="mbeddr.ext.project.dir" value="code/languages/com.mbeddr.ext"/>
   <property name="mbeddr.cc.project.dir" value="code/languages/com.mbeddr.cc"/>
   <property name="mbeddr.cc.project.mpr" value="code/languages/com.mbeddr.cc/cc.dev.mpr"/>
@@ -33,6 +34,7 @@
 
   <property name="utilLanguageDir" value="${mbeddr.github.core.home}/${util.project.dir}/languages"/>  
   <property name="coreLanguageDir" value="${mbeddr.github.core.home}/${mbeddr.core.project.dir}/languages"/>  
+  <property name="docLanguageDir" value="${mbeddr.github.core.home}/${mbeddr.doc.project.dir}/languages"/>  
   <property name="extLanguageDir" value="${mbeddr.github.core.home}/${mbeddr.ext.project.dir}/languages"/>  
   <property name="debuggerLanguageDir" value="${mbeddr.github.core.home}/${debugger.project.dir}/languages"/>
 
@@ -75,6 +77,7 @@
       <macro name="mbeddr.github.core.home" path="${mbeddr.github.core.home}"/>
       <library name="mbeddr.project" dir="${coreLanguageDir}"/>
       <library name="util.languages" dir="${utilLanguageDir}"/>
+      <library name="doc.languages" dir="${docLanguageDir}"/>
       <library name="debugger.languages" dir="${debuggerLanguageDir}"/>
 
       
@@ -93,6 +96,7 @@
       <library name="core.languages" dir="${coreLanguageDir}"/>
       <library name="util.languages" dir="${utilLanguageDir}"/>
       <library name="ext.languages" dir="${extLanguageDir}"/>
+      <library name="doc.languages" dir="${docLanguageDir}"/>
       <library name="debugger.languages" dir="${debuggerLanguageDir}"/>
 
       
