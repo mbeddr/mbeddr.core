@@ -79,5 +79,23 @@
     </dependencies>
     <move id="2c95.6386504476136554628" to="2c95.6068976060904007490" />
   </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="2c95" modelUID="r:5f7188a9-e7b4-4a2e-bef9-38d2cf379fdc(com.mbeddr.doc.structure)" version="6" />
+    </dependencies>
+    <move id="2c95.5785245534399752008" to="2c95.5785245534399940634" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="2c95" modelUID="r:5f7188a9-e7b4-4a2e-bef9-38d2cf379fdc(com.mbeddr.doc.structure)" version="7" />
+    </dependencies>
+    <move id="2c95.5185579450379471856" to="2c95.5785245534399940635" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="2c95" modelUID="r:5f7188a9-e7b4-4a2e-bef9-38d2cf379fdc(com.mbeddr.doc.structure)" version="8" />
+    </dependencies>
+    <rename id="2c95.5185579450379471852" type="CONCEPT" from="TableParagraph" to="FloatingTableParagraph" />
+  </StructureModification>
 </history>
 

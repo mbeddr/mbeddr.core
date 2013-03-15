@@ -13,7 +13,7 @@
   <import index="hwgx" modelUID="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)" version="3" />
   <import index="tbr6" modelUID="r:6a005c26-87c0-43c4-8cf3-49ffba1099df(de.slisson.mps.richtext.behavior)" version="1" />
   <import index="cu2c" modelUID="f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.smodel(MPS.Core/jetbrains.mps.smodel@java_stub)" version="-1" />
-  <import index="2c95" modelUID="r:5f7188a9-e7b4-4a2e-bef9-38d2cf379fdc(com.mbeddr.doc.structure)" version="6" />
+  <import index="2c95" modelUID="r:5f7188a9-e7b4-4a2e-bef9-38d2cf379fdc(com.mbeddr.doc.structure)" version="9" />
   <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="7" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="tpf8" modelUID="r:00000000-0000-4000-0000-011c895902e8(jetbrains.mps.lang.generator.structure)" version="2" implicit="yes" />
@@ -686,7 +686,7 @@
       </node>
     </node>
     <node role="reductionMappingRule" roleId="tpf8.1167328349397" type="tpf8.Reduction_MappingRule" typeId="tpf8.1167327847730" id="5785245534399659138">
-      <link role="applicableConcept" roleId="tpf8.1167169349424" targetNodeId="2c95.5185579450379471852" resolveInfo="TableParagraph" />
+      <link role="applicableConcept" roleId="tpf8.1167169349424" targetNodeId="2c95.5185579450379471852" resolveInfo="FloatingTableParagraph" />
       <node role="ruleConsequence" roleId="tpf8.1169672767469" type="tpf8.InlineTemplate_RuleConsequence" typeId="tpf8.1177093525992" id="5785245534399659139">
         <node role="templateNode" roleId="tpf8.1177093586806" type="tis3.LineList" typeId="tis3.4457500422381362355" id="5785245534399659140">
           <node role="lines" roleId="tis3.4457500422381362357" type="tis3.EmptyLine" typeId="tis3.4457500422381425974" id="5785245534399659141" />
@@ -746,7 +746,7 @@
                       <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.DotExpression" typeId="tpee.1197027756228" id="5785245534399752100">
                         <node role="operand" roleId="tpee.1197027771414" type="tpf8.TemplateFunctionParameter_sourceNode" typeId="tpf8.1167169188348" id="5785245534399752079" />
                         <node role="operation" roleId="tpee.1197027833540" type="tp25.SPropertyAccess" typeId="tp25.1138056022639" id="5785245534399752106">
-                          <link role="property" roleId="tp25.1138056395725" targetNodeId="2c95.5785245534399752008" resolveInfo="numCols" />
+                          <link role="property" roleId="tp25.1138056395725" targetNodeId="2c95.5785245534399940634" resolveInfo="numCols" />
                         </node>
                       </node>
                       <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="5785245534399752055">
@@ -786,7 +786,7 @@
                   <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="5785245534399659274">
                     <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="5785245534399659275">
                       <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkListAccess" typeId="tp25.1138056282393" id="5785245534399659276">
-                        <link role="link" roleId="tp25.1138056546658" targetNodeId="2c95.5185579450379471856" />
+                        <link role="link" roleId="tp25.1138056546658" targetNodeId="2c95.5785245534399940635" />
                       </node>
                       <node role="operand" roleId="tpee.1197027771414" type="tpf8.TemplateFunctionParameter_sourceNode" typeId="tpf8.1167169188348" id="5785245534399659277" />
                     </node>
@@ -860,6 +860,111 @@
             </node>
           </node>
           <node role="lines" roleId="tis3.4457500422381362357" type="tis3.EmptyLine" typeId="tis3.4457500422381425974" id="5785245534399659245" />
+        </node>
+      </node>
+    </node>
+    <node role="reductionMappingRule" roleId="tpf8.1167328349397" type="tpf8.Reduction_MappingRule" typeId="tpf8.1167327847730" id="5785245534399940700">
+      <link role="applicableConcept" roleId="tpf8.1167169349424" targetNodeId="2c95.5785245534399940636" resolveInfo="InlineTableParagraph" />
+      <node role="ruleConsequence" roleId="tpf8.1169672767469" type="tpf8.InlineTemplate_RuleConsequence" typeId="tpf8.1177093525992" id="5785245534399940701">
+        <node role="templateNode" roleId="tpf8.1177093586806" type="tis3.LineList" typeId="tis3.4457500422381362355" id="5785245534399940702">
+          <node role="lines" roleId="tis3.4457500422381362357" type="tis3.EmptyLine" typeId="tis3.4457500422381425974" id="5785245534399940703" />
+          <node role="lines" roleId="tis3.4457500422381362357" type="tis3.SimpleTextualLine" typeId="tis3.4457500422381360575" id="5785245534399940709">
+            <property name="text" nameId="tis3.4457500422381360577" value="\begin{center}" />
+          </node>
+          <node role="lines" roleId="tis3.4457500422381362357" type="tis3.SimpleTextualLine" typeId="tis3.4457500422381360575" id="5785245534399940710">
+            <property name="text" nameId="tis3.4457500422381360577" value="\begin{tabular}{l|l}" />
+            <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.PropertyMacro" typeId="tpf8.1087833241328" id="5785245534399940711">
+              <property name="propertyName" nameId="tpck.1757699476691236117" value="text" />
+              <node role="propertyValueFunction" roleId="tpf8.1167756362303" type="tpf8.PropertyMacro_GetPropertyValue" typeId="tpf8.1167756080639" id="5785245534399940712">
+                <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="5785245534399940713">
+                  <node role="statement" roleId="tpee.1068581517665" type="tpee.LocalVariableDeclarationStatement" typeId="tpee.1068581242864" id="5785245534399940714">
+                    <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="5785245534399940715">
+                      <property name="name" nameId="tpck.1169194664001" value="cols" />
+                      <node role="type" roleId="tpee.5680397130376446158" type="tpee.StringType" typeId="tpee.1225271177708" id="5785245534399940716" />
+                      <node role="initializer" roleId="tpee.1068431790190" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="5785245534399940717">
+                        <property name="value" nameId="tpee.1070475926801" value="|" />
+                      </node>
+                    </node>
+                  </node>
+                  <node role="statement" roleId="tpee.1068581517665" type="tpee.ForStatement" typeId="tpee.1144231330558" id="5785245534399940718">
+                    <node role="body" roleId="tpee.1154032183016" type="tpee.StatementList" typeId="tpee.1068580123136" id="5785245534399940719">
+                      <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="5785245534399940720">
+                        <node role="expression" roleId="tpee.1068580123156" type="tpee.PlusAssignmentExpression" typeId="tpee.1215695189714" id="5785245534399940721">
+                          <node role="rValue" roleId="tpee.1068498886297" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="5785245534399940722">
+                            <property name="value" nameId="tpee.1070475926801" value="l|" />
+                          </node>
+                          <node role="lValue" roleId="tpee.1068498886295" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="5785245534399940723">
+                            <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="5785245534399940715" resolveInfo="cols" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node role="variable" roleId="tpee.1144230900587" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="5785245534399940724">
+                      <property name="name" nameId="tpck.1169194664001" value="i" />
+                      <node role="type" roleId="tpee.5680397130376446158" type="tpee.IntegerType" typeId="tpee.1070534370425" id="5785245534399940725" />
+                      <node role="initializer" roleId="tpee.1068431790190" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="5785245534399940726">
+                        <property name="value" nameId="tpee.1068580320021" value="0" />
+                      </node>
+                    </node>
+                    <node role="condition" roleId="tpee.1144231399730" type="tpee.LessThanExpression" typeId="tpee.1081506773034" id="5785245534399940727">
+                      <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.DotExpression" typeId="tpee.1197027756228" id="5785245534399940728">
+                        <node role="operand" roleId="tpee.1197027771414" type="tpf8.TemplateFunctionParameter_sourceNode" typeId="tpf8.1167169188348" id="5785245534399940729" />
+                        <node role="operation" roleId="tpee.1197027833540" type="tp25.SPropertyAccess" typeId="tp25.1138056022639" id="5785245534399940730">
+                          <link role="property" roleId="tp25.1138056395725" targetNodeId="2c95.5785245534399940634" resolveInfo="numCols" />
+                        </node>
+                      </node>
+                      <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="5785245534399940731">
+                        <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="5785245534399940724" resolveInfo="i" />
+                      </node>
+                    </node>
+                    <node role="iteration" roleId="tpee.1144231408325" type="tpee.PostfixIncrementExpression" typeId="tpee.1214918800624" id="5785245534399940732">
+                      <node role="expression" roleId="tpee.1239714902950" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="5785245534399940733">
+                        <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="5785245534399940724" resolveInfo="i" />
+                      </node>
+                    </node>
+                  </node>
+                  <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="5785245534399940734">
+                    <node role="expression" roleId="tpee.1068580123156" type="tpee.PlusExpression" typeId="tpee.1068581242875" id="5785245534399940735">
+                      <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="5785245534399940736">
+                        <property name="value" nameId="tpee.1070475926801" value="}" />
+                      </node>
+                      <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.PlusExpression" typeId="tpee.1068581242875" id="5785245534399940737">
+                        <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="5785245534399940738">
+                          <property name="value" nameId="tpee.1070475926801" value="\\begin{tabular}{" />
+                        </node>
+                        <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="5785245534399940739">
+                          <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="5785245534399940715" resolveInfo="cols" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node role="lines" roleId="tis3.4457500422381362357" type="tis3.SimpleTextualLine" typeId="tis3.4457500422381360575" id="5785245534399940740">
+            <property name="text" nameId="tis3.4457500422381360577" value="row" />
+            <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.CopySrcListMacro" typeId="tpf8.1114729360583" id="5785245534399940741">
+              <node role="sourceNodesQuery" roleId="tpf8.1168278589236" type="tpf8.SourceSubstituteMacro_SourceNodesQuery" typeId="tpf8.1167951910403" id="5785245534399940742">
+                <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="5785245534399940743">
+                  <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="5785245534399940744">
+                    <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="5785245534399940745">
+                      <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkListAccess" typeId="tp25.1138056282393" id="5785245534399940746">
+                        <link role="link" roleId="tp25.1138056546658" targetNodeId="2c95.5785245534399940635" />
+                      </node>
+                      <node role="operand" roleId="tpee.1197027771414" type="tpf8.TemplateFunctionParameter_sourceNode" typeId="tpf8.1167169188348" id="5785245534399940747" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node role="lines" roleId="tis3.4457500422381362357" type="tis3.SimpleTextualLine" typeId="tis3.4457500422381360575" id="5785245534399940748">
+            <property name="text" nameId="tis3.4457500422381360577" value="\end{tabular}" />
+          </node>
+          <node role="lines" roleId="tis3.4457500422381362357" type="tis3.SimpleTextualLine" typeId="tis3.4457500422381360575" id="5785245534399940749">
+            <property name="text" nameId="tis3.4457500422381360577" value="\end{center}" />
+          </node>
         </node>
       </node>
     </node>
