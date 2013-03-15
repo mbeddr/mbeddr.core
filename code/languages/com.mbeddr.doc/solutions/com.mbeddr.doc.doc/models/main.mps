@@ -22,7 +22,7 @@
     </node>
     <node type="2c95.DocumentExport" typeId="2c95.3350625596580256366" id="2293093897293118943">
       <property name="name" nameId="tpck.1169194664001" value="DocumentationDocumentation" />
-      <property name="title" nameId="2c95.126932837435324910" value="Documentation" />
+      <property name="title" nameId="2c95.126932837435324910" value="The mbeddr Documentation Language" />
       <property name="virtualPackage" nameId="tpck.1193676396447" value="cfg" />
     </node>
     <node type="2c95.Document" typeId="2c95.3350625596579911728" id="8730648445432859484">
@@ -36,6 +36,10 @@
     </node>
     <node type="2c95.Document" typeId="2c95.3350625596579911728" id="8730648445433290619">
       <property name="name" nameId="tpck.1169194664001" value="C_EmbeddingMbeddr" />
+      <link role="config" roleId="2c95.6386504476136472832" targetNodeId="2293093897292931470" resolveInfo="Config" />
+    </node>
+    <node type="2c95.Document" typeId="2c95.3350625596579911728" id="5185579450379355909">
+      <property name="name" nameId="tpck.1169194664001" value="D_Extending" />
       <link role="config" roleId="2c95.6386504476136472832" targetNodeId="2293093897292931470" resolveInfo="Config" />
     </node>
   </roots>
@@ -132,6 +136,8 @@
     <node role="renderer" roleId="2c95.6068976060904007487" type="g9w8.LatexRenderer" typeId="g9w8.4457500422381351715" id="2293093897293118947">
       <property name="documentClass" nameId="g9w8.4457500422381351717" value="article" />
       <property name="prolog" nameId="g9w8.4755612053022149513" value="mbeddr-prolog.ltx" />
+      <property name="hasTOC" nameId="g9w8.5185579450379315413" value="true" />
+      <property name="hasLOF" nameId="g9w8.5185579450379334216" value="true" />
     </node>
     <node role="root" roleId="2c95.6068976060904007489" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="8730648445432859534">
       <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="8730648445432859523" resolveInfo="Root" />
@@ -147,7 +153,7 @@
     <node role="abstract" roleId="2c95.126932837435324914" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8730648445433281653">
       <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8730648445433281654">
         <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8730648445433281655">
-          <property name="escapedValue" nameId="87nw.2557074442922438158" value="This document explains how to use the documentation language of mbeddr.\nThe document is itself written with the documentation language, so it\nis bootstrapped, as one would expect." />
+          <property name="escapedValue" nameId="87nw.2557074442922438158" value="This document explains how to use the documentation language of mbeddr.\nIt supports writing prose text with sections, figures etc. It also supports\nembedding program nodes into the prose text. For example, references to other\nsections or figures are actural (refactoring-safe) references. Using a separate\nextension language, it is also possible to reference mbeddr code and even to \nembed mbeddr code as images or as text. mbeddr visualizations can also be \nrendered in real-time and embedded into the document. Documents can be output\nto HTML and Latex. The document you are currently reading is is itself written \nwith the documentation language: another extension module can be used to \ndocument itself by embedding documentation language code into documentation\ndocuments." />
         </node>
       </node>
     </node>
@@ -189,7 +195,7 @@
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="8730648445432859512">
           <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="8730648445432859513">
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8730648445432859514">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value="Inside a document, the basic document structure consists of chapters, sections, \nsubsections and various kinds of paragraphs. The simplest kind of paragraph is \nthe text paragraph (entered by typing a " />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="Inside a document, the basic document structure consists of sections  \nand various kinds of paragraphs. The simplest kind of paragraph is \nthe text paragraph (entered by typing a " />
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="8730648445432859515">
               <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="8730648445432859516">
@@ -534,6 +540,11 @@
         <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="8730648445433290619" resolveInfo="C_EmbeddingMbeddr" />
       </node>
     </node>
+    <node role="contents" roleId="2c95.3350625596580064250" type="2c95.DocumentInclude" typeId="2c95.6165313375056012512" id="5185579450379355918">
+      <node role="ref" roleId="2c95.6165313375056012515" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="5185579450379355920">
+        <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="5185579450379355909" resolveInfo="D_Extending" />
+      </node>
+    </node>
     <node role="contents" roleId="2c95.3350625596580064250" type="2c95.EmptyDocContent" typeId="2c95.3350625596579911760" id="8730648445432859526">
       <property name="name" nameId="tpck.1169194664001" value="empty_1363188922445_7" />
     </node>
@@ -546,11 +557,14 @@
     <node role="dependsOn" roleId="2c95.8730648445433290694" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="8730648445433340259">
       <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="8730648445433290619" resolveInfo="C_EmbeddingMbeddr" />
     </node>
+    <node role="dependsOn" roleId="2c95.8730648445433290694" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="5185579450379355916">
+      <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="5185579450379355909" resolveInfo="D_Extending" />
+    </node>
   </root>
   <root id="8730648445433290619">
     <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Section" typeId="2c95.3350625596580064455" id="8730648445433288571">
       <property name="name" nameId="tpck.1169194664001" value="workingWithMbeddr" />
-      <property name="text" nameId="2c95.3350625596580064225" value="Embedding C Artifacts" />
+      <property name="text" nameId="2c95.3350625596580064225" value="Embedding mbeddr Artifacts" />
       <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="8730648445433290616">
         <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="8730648445433290617">
           <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8730648445433290618">
@@ -700,8 +714,8 @@
         </node>
         <node role="contents" roleId="2c95.3350625596580064250" type="z5ox.SectionAsImageParagraph" typeId="z5ox.6416473402306197330" id="8730648445433628194">
           <property name="name" nameId="tpck.1169194664001" value="refCode" />
-          <link role="section" roleId="z5ox.8730648445432859548" targetNodeId="8730648445433473733" resolveInfo="referencingCode" />
           <link role="path" roleId="z5ox.6416473402306197356" targetNodeId="8730648445432874250" resolveInfo="imgTemp" />
+          <link role="section" roleId="z5ox.8730648445432859548" targetNodeId="5185579450378967062" resolveInfo="referencingCode" />
           <node role="sizeSpec" roleId="z5ox.8624890525767931140" type="2c95.PageWidthSizeSpec" typeId="2c95.8624890525767637976" id="8730648445433628195">
             <property name="percentage" nameId="2c95.8624890525767637977" value="100" />
           </node>
@@ -761,6 +775,9 @@
               <property name="escapedValue" nameId="87nw.2557074442922438158" value=" tag." />
             </node>
           </node>
+          <node role="header" roleId="2c95.5185579450379273128" type="2c95.TextParHeader" typeId="2c95.5185579450379273118" id="5185579450379300049">
+            <property name="text" nameId="2c95.5185579450379273119" value="Embed as Image" />
+          </node>
         </node>
         <node role="contents" roleId="2c95.3350625596580064250" type="rh4a.CCodeAsImageParagraph" typeId="rh4a.6416473402306197330" id="8730648445433631460">
           <property name="name" nameId="tpck.1169194664001" value="addOp" />
@@ -815,6 +832,9 @@
               <property name="escapedValue" nameId="87nw.2557074442922438158" value="." />
             </node>
           </node>
+          <node role="header" roleId="2c95.5185579450379273128" type="2c95.TextParHeader" typeId="2c95.5185579450379273118" id="5185579450379300050">
+            <property name="text" nameId="2c95.5185579450379273119" value="Embedding as Text" />
+          </node>
         </node>
         <node role="contents" roleId="2c95.3350625596580064250" type="rh4a.CCodeParagraph" typeId="rh4a.6165313375056112024" id="8730648445433854307">
           <property name="language" nameId="rh4a.4755612053022237479" value="mbeddr" />
@@ -823,8 +843,8 @@
         </node>
         <node role="contents" roleId="2c95.3350625596580064250" type="z5ox.SectionAsImageParagraph" typeId="z5ox.6416473402306197330" id="8730648445433631470">
           <property name="name" nameId="tpck.1169194664001" value="embedding1" />
-          <link role="section" roleId="z5ox.8730648445432859548" targetNodeId="8730648445433631453" resolveInfo="embddingCode" />
           <link role="path" roleId="z5ox.6416473402306197356" targetNodeId="8730648445432874250" resolveInfo="imgTemp" />
+          <link role="section" roleId="z5ox.8730648445432859548" targetNodeId="5185579450378967072" resolveInfo="embddingCode" />
           <node role="sizeSpec" roleId="z5ox.8624890525767931140" type="2c95.PageWidthSizeSpec" typeId="2c95.8624890525767637976" id="8730648445433631471">
             <property name="percentage" nameId="2c95.8624890525767637977" value="100" />
           </node>
@@ -876,7 +896,7 @@
               <property name="escapedValue" nameId="87nw.2557074442922438158" value=" menu item from the context menu. Alternatively you can also\nembed such visualizations into a generated document; the visualization is rendered\non the fly (like the code screenshots discussed in " />
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="2c95.SectRefWord" typeId="2c95.3350625596580108709" id="8730648445433858415">
-              <link role="target" roleId="2c95.3350625596580108719" targetNodeId="8730648445433631453" resolveInfo="embddingCode" />
+              <link role="target" roleId="2c95.3350625596580108719" targetNodeId="5185579450378967072" resolveInfo="embddingCode" />
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8730648445433858416">
               <property name="escapedValue" nameId="87nw.2557074442922438158" value=". " />
@@ -930,8 +950,8 @@
         </node>
         <node role="contents" roleId="2c95.3350625596580064250" type="z5ox.SectionAsImageParagraph" typeId="z5ox.6416473402306197330" id="8730648445433858418">
           <property name="name" nameId="tpck.1169194664001" value="vis" />
-          <link role="section" roleId="z5ox.8730648445432859548" targetNodeId="8730648445433858403" resolveInfo="visualizations" />
           <link role="path" roleId="z5ox.6416473402306197356" targetNodeId="8730648445432874250" resolveInfo="imgTemp" />
+          <link role="section" roleId="z5ox.8730648445432859548" targetNodeId="5185579450378967065" resolveInfo="visualizations" />
           <node role="sizeSpec" roleId="z5ox.8624890525767931140" type="2c95.PageWidthSizeSpec" typeId="2c95.8624890525767637976" id="8730648445433858419">
             <property name="percentage" nameId="2c95.8624890525767637977" value="100" />
           </node>
@@ -1009,6 +1029,19 @@
     </node>
     <node role="dependsOn" roleId="2c95.8730648445433290694" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="8730648445433340256">
       <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="2293093897292931468" resolveInfo="A_Introduction" />
+    </node>
+  </root>
+  <root id="5185579450379355909">
+    <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Section" typeId="2c95.3350625596580064455" id="5185579450379355911">
+      <property name="name" nameId="tpck.1169194664001" value="extending" />
+      <property name="text" nameId="2c95.3350625596580064225" value="Extending the Documentation Language" />
+      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="5185579450379355912">
+        <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="5185579450379355913">
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5185579450379355914">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value="tbd." />
+          </node>
+        </node>
+      </node>
     </node>
   </root>
 </model>
