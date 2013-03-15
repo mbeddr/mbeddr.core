@@ -25,7 +25,6 @@
       </node>
       <node role="text" roleId="75wo.8375407818529829156" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="3860690561158031724">
         <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="3860690561158031727">
-          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3860690561158031728" />
           <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3860690561158031729">
             <property name="escapedValue" nameId="87nw.2557074442922438158" value="The Atrial and Ventricle pulse widths shall be intependently programmable." />
           </node>
@@ -55,7 +54,6 @@
       </node>
       <node role="text" roleId="75wo.8375407818529829156" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="3860690561158030581">
         <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="3860690561158030584">
-          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3860690561158030585" />
           <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3860690561158030586">
             <property name="escapedValue" nameId="87nw.2557074442922438158" value="The following bradycardia operating modes shall be programable: Off, DDDR, VDDR, DDIR, DOOR, VOOR, AOOR, VVIR, AAIR, DDD, VDD, DDI, DOO, VOO, AOO, VVI, AAI, VVT, AAT.  OVO, OAO, ODO and OOO shall be available in temporary operation." />
           </node>
@@ -73,7 +71,6 @@
       </node>
       <node role="text" roleId="75wo.8375407818529829156" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="3860690561158030125">
         <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="3860690561158030128">
-          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3860690561158030129" />
           <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3860690561158030130">
             <property name="escapedValue" nameId="87nw.2557074442922438158" value="The Atrial and Ventricular pacing pulse amplitudes shall be independently programmable." />
           </node>
@@ -94,7 +91,6 @@
       </node>
       <node role="text" roleId="75wo.8375407818529829156" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="3860690561158029861">
         <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="3860690561158029864">
-          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3860690561158029865" />
           <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3860690561158029866">
             <property name="escapedValue" nameId="87nw.2557074442922438158" value="All rate detection decisions shall be based on the measured cardiac cycle lengths of the sensed rythm. Rate shall be evaluated on an interval-by-interval basis." />
           </node>
@@ -112,7 +108,6 @@
       </node>
       <node role="text" roleId="75wo.8375407818529829156" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="3860690561158030167">
         <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="3860690561158030170">
-          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3860690561158030171" />
           <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3860690561158030172">
             <property name="escapedValue" nameId="87nw.2557074442922438158" value="3.5.1: Pacing without sensing is called asynchronous pacing. During asynchronous pacing, paces shall be delivered without regard to senses." />
           </node>
@@ -130,7 +125,6 @@
       </node>
       <node role="text" roleId="75wo.8375407818529829156" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="3860690561158030155">
         <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="3860690561158030158">
-          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3860690561158030159" />
           <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3860690561158030160">
             <property name="escapedValue" nameId="87nw.2557074442922438158" value="3.5.2: During triggered pacing, a sense in a chamber shall trigger an immediate pace in that chamber." />
           </node>
@@ -148,7 +142,6 @@
       </node>
       <node role="text" roleId="75wo.8375407818529829156" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="3860690561158031262">
         <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="3860690561158031265">
-          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3860690561158031266" />
           <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3860690561158031267">
             <property name="escapedValue" nameId="87nw.2557074442922438158" value="3.5.3: During inhibited pacing, a sense in a chamber shall inhibit a pending pace in that chamber." />
           </node>
@@ -166,7 +159,6 @@
       </node>
       <node role="text" roleId="75wo.8375407818529829156" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="3860690561158030137">
         <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="3860690561158030140">
-          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3860690561158030141" />
           <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3860690561158030142">
             <property name="escapedValue" nameId="87nw.2557074442922438158" value="3.5.4: Duribng tracked pacing, an atrial sense shall cause a tracked ventricular pace after a programmed AV delay, unless a ventricular sense was detected beforehand." />
           </node>
@@ -187,7 +179,6 @@
       </node>
       <node role="text" roleId="75wo.8375407818529829156" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="3860690561158031415">
         <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="3860690561158031418">
-          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3860690561158031419" />
           <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3860690561158031420">
             <property name="escapedValue" nameId="87nw.2557074442922438158" value="3.6: The following bradycardia states shall be available: Permanent, Temporary, Pace-Now, Magnet, and Power-On Reset (POR). Operating states shall be mutually exclusive." />
           </node>
@@ -205,7 +196,6 @@
       </node>
       <node role="text" roleId="75wo.8375407818529829156" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="3860690561158031568">
         <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="3860690561158031571">
-          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3860690561158031572" />
           <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3860690561158031573">
             <property name="escapedValue" nameId="87nw.2557074442922438158" value="3.6.1: The permanent pacing state is the normal state of operation of the device. The normal pacing parameters programmed shall be used in the permanent brady state." />
           </node>
@@ -232,7 +222,6 @@
       </node>
       <node role="text" roleId="75wo.8375407818529829156" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="3860690561158030047">
         <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="3860690561158030050">
-          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3860690561158030051" />
           <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3860690561158030052">
             <property name="escapedValue" nameId="87nw.2557074442922438158" value="3.6.2: The temporary brady pacing state is independent of other pacing functions. The temporary brady brady parameteres programmed shall be used in the temporary brady state. The temporary state shall be capable of being used to temporarily test various system parameters or provide patient diagnostic testing. Temporary brady pacing shall be terminated by one of the following: breaking the telemetry link, a Pace-Now pace, or a DCM command to the device to cancel temporary pacing." />
           </node>
@@ -277,7 +266,6 @@
       </node>
       <node role="text" roleId="75wo.8375407818529829156" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="3860690561158030527">
         <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="3860690561158030530">
-          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3860690561158030531" />
           <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3860690561158030532">
             <property name="escapedValue" nameId="87nw.2557074442922438158" value="3.6.3: Commanded emergency bradycardia pacing (Pace-Now) shall be available. The Pace-Now Pace parametere values are as follows: - The mode Pace-Now pace parameter shall have a value of VVI. - The lower rate limit Pace-Now pace parametere shall have a value of 65ppm give-or-take 8ms - The amplitude Pace-Now pace parameter shall have a value of 5.0V give-or-take 0.5V - The pulse width Pace-Now parameter shall have a value of 1.00 ms give-or-take 0.02ms - The ventricular refractory Pace-Now pace parameter shall have a value of 320ms give-or-take 8ms - The ventricular sensitivity shall have a value of 1.5mV - The first Pace-Now pacing pulse shall be issued within two cardiac cycles plus 500ms from the time the last user action reuired to activate the Pace-Now state. - Once initiated, Pace-Now pacing shall continue until the DCM changes the device pacing mode." />
           </node>
@@ -295,7 +283,6 @@
       </node>
       <node role="text" roleId="75wo.8375407818529829156" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="3860690561158031301">
         <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="3860690561158031304">
-          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3860690561158031305" />
           <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3860690561158031306">
             <property name="escapedValue" nameId="87nw.2557074442922438158" value="3.6.4: The Magnet State is used during the Magnet Test." />
           </node>
@@ -343,7 +330,6 @@
       </node>
       <node role="text" roleId="75wo.8375407818529829156" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="3860690561158030107">
         <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="3860690561158030110">
-          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3860690561158030111" />
           <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3860690561158030112">
             <property name="escapedValue" nameId="87nw.2557074442922438158" value="3.6.5: A Power-On Reset (POR) state shall be entered when the battery voltage drops so low that PG operation is not predictable. All functions shall be disabled until the battery voltage exceeds the POR trip voltage. Above this trip voltage, the PG enters the POR state which is used to power-up the PG system to a known state and set of parameters.  The POR parameter values are as follows: - The mode POR pace parameter shall have a value of VVI. - The lower rate limit POR pace parameter shall have a value of 65ppm give-or-take 8ms. - The amplitude POR pace parameter shall have a value of 5.0V give-or-take 0.5V. - The pulse width POR pace parameter shall have a value of 0.5ms give-or-take 0.02ms. - The ventricular refactory POR pace parameter shall have a value of 320ms give-or-take 8ms. - The ventricular sensitivity shall have a value of 1.5mV." />
           </node>
@@ -379,7 +365,6 @@
       </node>
       <node role="text" roleId="75wo.8375407818529829156" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="3860690561158031736">
         <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="3860690561158031739">
-          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3860690561158031740" />
           <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3860690561158031741">
             <property name="escapedValue" nameId="87nw.2557074442922438158" value="3.7: A magnet can be used to determine the battery status of the device. A standard cardiac donut magnet shall be detected by the devuce at a distance of 2.5cm between the center of the labeled surface of the device and the surface of the magnet. When the magned is in place, the device shall: - Pace asynchronously with a fixed pacing rate. The device mode shall be AOO if previous mode was AXXX, VOO if previous mode was VXXX, DOO if previous mode was DXXX, or OOO if previous mode was OXO modes. - At BOL the magnet rate shall be 100ppm. At ERM the magnet rate shall decrease to 90ppm. At ERT the magnet rate shall decrease further to 85ppm. During post-ERT operation the rate interval may gradually decrease as the battery voltage continues to decrease. - When the magnet is removed the device shall automatically assume pretest operation. - The magnet mode shall have the capability to be programmed OFF, so that it will ignore magnet detection," />
           </node>
@@ -412,7 +397,6 @@
       </node>
       <node role="text" roleId="75wo.8375407818529829156" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="3860690561158031472">
         <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="3860690561158031475">
-          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3860690561158031476" />
           <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3860690561158031477">
             <property name="escapedValue" nameId="87nw.2557074442922438158" value="3.8: The device shall be capable of storing the following information in device memory: - The device shall be capable of storing the device model and serial number, and implant date information. - The device shall be capable of storing the lead implant date and polarity information. - The device shall be capable of storing pacing thresholds and P and R-wave amplitude information. - The device shall be capable of storing the pacing lead impedance information. - The device shall be capable of storing the patient's indications for pacing." />
           </node>
