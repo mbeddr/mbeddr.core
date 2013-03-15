@@ -39,6 +39,10 @@
       <property name="virtualPackage" nameId="tpck.1193676396447" value="config" />
       <property name="name" nameId="tpck.1169194664001" value="createPathDir" />
     </node>
+    <node type="tpd4.NonTypesystemRule" typeId="tpd4.1195214364922" id="5185579450379235453">
+      <property name="name" nameId="tpck.1169194664001" value="check_AbstractSection" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="structure" />
+    </node>
   </roots>
   <root id="6386504476136386586">
     <node role="body" roleId="tpd4.1195213635060" type="tpee.StatementList" typeId="tpee.1068580123136" id="6386504476136386587">
@@ -511,6 +515,42 @@
           </node>
         </node>
       </node>
+    </node>
+  </root>
+  <root id="5185579450379235453">
+    <node role="body" roleId="tpd4.1195213635060" type="tpee.StatementList" typeId="tpee.1068580123136" id="5185579450379235454">
+      <node role="statement" roleId="tpee.1068581517665" type="tpee.IfStatement" typeId="tpee.1068580123159" id="5185579450379235456">
+        <node role="condition" roleId="tpee.1068580123160" type="tpee.GreaterThanExpression" typeId="tpee.1081506762703" id="5185579450379235507">
+          <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="5185579450379235510">
+            <property name="value" nameId="tpee.1068580320021" value="2" />
+          </node>
+          <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.DotExpression" typeId="tpee.1197027756228" id="5185579450379235480">
+            <node role="operand" roleId="tpee.1197027771414" type="tpd4.ApplicableNodeReference" typeId="tpd4.1174650418652" id="5185579450379235459">
+              <link role="applicableNode" roleId="tpd4.1174650432090" targetNodeId="5185579450379235455" resolveInfo="as" />
+            </node>
+            <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_ConceptMethodCall" typeId="tp25.1179409122411" id="5185579450379235486">
+              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="4gky.5185579450379205811" resolveInfo="nestingLevel" />
+            </node>
+          </node>
+        </node>
+        <node role="ifTrue" roleId="tpee.1068580123161" type="tpee.StatementList" typeId="tpee.1068580123136" id="5185579450379235458">
+          <node role="statement" roleId="tpee.1068581517665" type="tpd4.WarningStatement" typeId="tpd4.1207055528241" id="5185579450379235511">
+            <node role="warningText" roleId="tpd4.1207055552304" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="5185579450379235514">
+              <property name="value" nameId="tpee.1070475926801" value="some renderers may ignore nesting levels &gt; 2" />
+            </node>
+            <node role="nodeToReport" roleId="tpd4.1227096802790" type="tpd4.ApplicableNodeReference" typeId="tpd4.1174650418652" id="5185579450379235515">
+              <link role="applicableNode" roleId="tpd4.1174650432090" targetNodeId="5185579450379235455" resolveInfo="as" />
+            </node>
+            <node role="messageTarget" roleId="tpd4.1227096836496" type="tpd4.PropertyMessageTarget" typeId="tpd4.1227096498176" id="5185579450379235518">
+              <link role="propertyDeclaration" roleId="tpd4.1227096521710" targetNodeId="tpck.1169194664001" resolveInfo="name" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node role="applicableNode" roleId="tpd4.1174648101952" type="tpd4.ConceptReference" typeId="tpd4.1174642788531" id="5185579450379235455">
+      <property name="name" nameId="tpck.1169194664001" value="as" />
+      <link role="concept" roleId="tpd4.1174642800329" targetNodeId="2c95.3350625596580064222" resolveInfo="AbstractSection" />
     </node>
   </root>
 </model>
