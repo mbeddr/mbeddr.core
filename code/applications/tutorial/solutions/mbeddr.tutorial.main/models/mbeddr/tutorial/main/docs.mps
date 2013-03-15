@@ -56,13 +56,13 @@
               <property name="escapedValue" nameId="87nw.2557074442922438158" value="The document has two main chapters. " />
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="2c95.SectRefWord" typeId="2c95.3350625596580108709" id="794010416819641036">
-              <link role="target" roleId="2c95.3350625596580108719" targetNodeId="794010416819640963" resolveInfo="existing" />
+              <link role="target" roleId="2c95.3350625596580108719" targetNodeId="5185579450378967059" resolveInfo="existing" />
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="794010416819641035">
               <property name="escapedValue" nameId="87nw.2557074442922438158" value=" discusses\nthe exising default extensions, and " />
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="2c95.SectRefWord" typeId="2c95.3350625596580108709" id="794010416819641042">
-              <link role="target" roleId="2c95.3350625596580108719" targetNodeId="794010416819641040" resolveInfo="newLanguages" />
+              <link role="target" roleId="2c95.3350625596580108719" targetNodeId="5185579450378967058" resolveInfo="newLanguages" />
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="794010416819641043">
               <property name="escapedValue" nameId="87nw.2557074442922438158" value=" shows the new\nlanguages developed in the tutorial as a means of teaching language\nextension.  " />
@@ -108,7 +108,7 @@
       <property name="name" nameId="tpck.1169194664001" value="empty_1362234640483_1" />
     </node>
     <node role="contents" roleId="2c95.3350625596580064250" type="2c95.DocumentInclude" typeId="2c95.6165313375056012512" id="794010416819640953">
-      <node role="ref" roleId="2c95.6165313375056012515" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="794010416819640955">
+      <node role="ref" roleId="2c95.6165313375056012515" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="5185579450379456829">
         <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="794010416819640951" resolveInfo="existingLanguages" />
       </node>
     </node>
@@ -116,12 +116,18 @@
       <property name="name" nameId="tpck.1169194664001" value="empty_1362234751602_9" />
     </node>
     <node role="contents" roleId="2c95.3350625596580064250" type="2c95.DocumentInclude" typeId="2c95.6165313375056012512" id="794010416819640966">
-      <node role="ref" roleId="2c95.6165313375056012515" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="794010416819640968">
+      <node role="ref" roleId="2c95.6165313375056012515" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="5185579450379456830">
         <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="794010416819640964" resolveInfo="newLanguages" />
       </node>
     </node>
     <node role="contents" roleId="2c95.3350625596580064250" type="2c95.EmptyDocContent" typeId="2c95.3350625596579911760" id="2637267020265430787">
       <property name="name" nameId="tpck.1169194664001" value="empty_1362234291471_3" />
+    </node>
+    <node role="dependsOn" roleId="2c95.8730648445433290694" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="5185579450379456824">
+      <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="794010416819640951" resolveInfo="existingLanguages" />
+    </node>
+    <node role="dependsOn" roleId="2c95.8730648445433290694" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="5185579450379456828">
+      <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="794010416819640964" resolveInfo="newLanguages" />
     </node>
   </root>
   <root id="2637267020265430784">
