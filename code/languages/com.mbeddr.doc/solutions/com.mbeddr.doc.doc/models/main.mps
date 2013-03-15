@@ -11,6 +11,7 @@
   <import index="z5ox" modelUID="r:48b6c04c-173b-45da-963f-54fbbdb59cfc(com.mbeddr.doc.self.structure)" version="-1" implicit="yes" />
   <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="7" implicit="yes" />
   <import index="rh4a" modelUID="r:51a64317-678a-4e8f-9df1-1e83f73c9d71(com.mbeddr.doc.c.structure)" version="4" implicit="yes" />
+  <import index="lsus" modelUID="r:25d6e7db-06a4-44ee-83aa-8c5bf17f3b3a(com.mbeddr.doc.gen_xhtml.structure)" version="-1" implicit="yes" />
   <roots>
     <node type="2c95.Document" typeId="2c95.3350625596579911728" id="2293093897292931468">
       <property name="name" nameId="tpck.1169194664001" value="A_Introduction" />
@@ -133,12 +134,6 @@
     </node>
   </root>
   <root id="2293093897293118943">
-    <node role="renderer" roleId="2c95.6068976060904007487" type="g9w8.LatexRenderer" typeId="g9w8.4457500422381351715" id="2293093897293118947">
-      <property name="documentClass" nameId="g9w8.4457500422381351717" value="article" />
-      <property name="prolog" nameId="g9w8.4755612053022149513" value="mbeddr-prolog.ltx" />
-      <property name="hasTOC" nameId="g9w8.5185579450379315413" value="true" />
-      <property name="hasLOF" nameId="g9w8.5185579450379334216" value="true" />
-    </node>
     <node role="root" roleId="2c95.6068976060904007489" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="8730648445432859534">
       <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="8730648445432859523" resolveInfo="Root" />
     </node>
@@ -156,6 +151,15 @@
           <property name="escapedValue" nameId="87nw.2557074442922438158" value="This document explains how to use the documentation language of mbeddr.\nIt supports writing prose text with sections, figures etc. It also supports\nembedding program nodes into the prose text. For example, references to other\nsections or figures are actural (refactoring-safe) references. Using a separate\nextension language, it is also possible to reference mbeddr code and even to \nembed mbeddr code as images or as text. mbeddr visualizations can also be \nrendered in real-time and embedded into the document. Documents can be output\nto HTML and Latex. The document you are currently reading is is itself written \nwith the documentation language: another extension module can be used to \ndocument itself by embedding documentation language code into documentation\ndocuments." />
         </node>
       </node>
+    </node>
+    <node role="renderer" roleId="2c95.6068976060904007487" type="g9w8.LatexRenderer" typeId="g9w8.4457500422381351715" id="5185579450379392913">
+      <property name="documentClass" nameId="g9w8.4457500422381351717" value="article" />
+      <property name="prolog" nameId="g9w8.4755612053022149513" value="mbeddr-prolog.ltx" />
+      <property name="hasTOC" nameId="g9w8.5185579450379315413" value="true" />
+      <property name="hasLOF" nameId="g9w8.5185579450379334216" value="true" />
+    </node>
+    <node role="inactiveRenderer" roleId="2c95.6068976060904007488" type="lsus.HTMLRenderer" typeId="lsus.3350625596580275037" id="5185579450379392914">
+      <property name="stylesheet" nameId="lsus.4457500422381329081" value="htmlexport.css" />
     </node>
   </root>
   <root id="8730648445432859484">
