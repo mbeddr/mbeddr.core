@@ -2656,6 +2656,12 @@
         <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Property" typeId="tpc2.1073389658414" id="5785245534399752012">
           <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="2c95.5785245534399940634" resolveInfo="numCols" />
         </node>
+        <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="8903209210859212283">
+          <property name="text" nameId="tpc2.1073389577007" value="line at bottom" />
+        </node>
+        <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Property" typeId="tpc2.1073389658414" id="8903209210859212285">
+          <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="2c95.8903209210859212281" resolveInfo="lineAtBottom" />
+        </node>
       </node>
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_RefNode" typeId="tpc2.1073389882823" id="5785245534399659254">
         <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="2c95.5785245534399659249" />
@@ -2885,6 +2891,12 @@
         </node>
         <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Property" typeId="tpc2.1073389658414" id="5785245534399940666">
           <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="2c95.5785245534399940634" resolveInfo="numCols" />
+        </node>
+        <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="8903209210859212287">
+          <property name="text" nameId="tpc2.1073389577007" value="line at bottom" />
+        </node>
+        <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Property" typeId="tpc2.1073389658414" id="8903209210859212289">
+          <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="2c95.8903209210859212281" resolveInfo="lineAtBottom" />
         </node>
       </node>
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Custom" typeId="tpc2.1078308402140" id="5785245534399940668">
