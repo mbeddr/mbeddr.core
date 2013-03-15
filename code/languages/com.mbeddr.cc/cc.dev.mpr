@@ -12,6 +12,7 @@
       <modulePath path="${project}/languages/com.mbeddr.cc.archdec/archdec.mpl" folder="archdec" />
       <modulePath path="${project}/languages/com.mbeddr.cc.requirements.c/c.mpl" folder="requirements" />
       <modulePath path="${project}/languages/com.mbeddr.cc.requirements.csv/csv.mpl" folder="requirements" />
+      <modulePath path="${project}/languages/com.mbeddr.cc.requirements.report/com.mbeddr.cc.requirements.report.mpl" folder="requirements" />
       <modulePath path="${project}/languages/com.mbeddr.cc.requirements.scenarios/scenarios.mpl" folder="requirements" />
       <modulePath path="${project}/languages/com.mbeddr.cc.requirements.xhtml/xhtml.mpl" folder="requirements" />
       <modulePath path="${project}/languages/com.mbeddr.cc.requirements/requirements.mpl" folder="requirements" />
@@ -29,6 +30,7 @@
       <modulePath path="${project}/tests/test.ex.cc.fmrt/fmrt.msd" folder="tests" />
       <modulePath path="${project}/tests/test.ex.cc.requirements.c/c.msd" folder="tests" />
       <modulePath path="${project}/tests/test.ex.cc.var.c/c.msd" folder="tests" />
+      <modulePath path="${project}/tests/test.ex.requirements.report/test.ex.requirements.report.msd" folder="tests" />
       <modulePath path="${project}/tests/test.ts.cc.archdec/archdec.msd" folder="tests" />
       <modulePath path="${project}/tests/test.ts.cc.requirements.scenarios/scenarios.msd" folder="tests" />
       <modulePath path="${project}/tests/test.ts.cc.requirements/requirements.msd" folder="tests" />
@@ -52,6 +54,14 @@
             <Library>
               <option name="name" value="mbeddr.debugger" />
               <option name="path" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.debugger" />
+            </Library>
+          </value>
+        </entry>
+        <entry key="mbeddr.doc">
+          <value>
+            <Library>
+              <option name="name" value="mbeddr.doc" />
+              <option name="path" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.doc" />
             </Library>
           </value>
         </entry>
