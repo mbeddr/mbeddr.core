@@ -151,6 +151,10 @@
         <property name="percentage" nameId="2c95.8624890525767637977" value="80" />
       </node>
     </node>
+    <node role="defaultTempPath" roleId="2c95.5785245534401182264" type="2c95.PathDefinition" typeId="2c95.6386504476136472795" id="6119416551720820600">
+      <property name="name" nameId="tpck.1169194664001" value="vis" />
+      <property name="editTimePath" nameId="2c95.6386504476136472797" value="${mbeddr.github.core.home}/code/applications/tutorial/solutions/mbeddr.tutorial.main/_vis" />
+    </node>
   </root>
   <root id="794010416819640951">
     <node role="contents" roleId="2c95.3350625596580064250" type="2c95.EmptyDocContent" typeId="2c95.3350625596579911760" id="794010416819640960">
