@@ -326,7 +326,7 @@
       </node>
       <node role="details" roleId="75wo.8745401669462962629" type="75wo.Requirement" typeId="75wo.8745401669462952101" id="1433966787984154184">
         <property name="priority" nameId="75wo.3314758227758879688" value="0" />
-        <property name="open" nameId="75wo.1165432222361744926" value="false" />
+        <property name="open" nameId="75wo.1165432222361744926" value="true" />
         <property name="name" nameId="tpck.1169194664001" value="FullStop" />
         <property name="summmary" nameId="75wo.3402431285977818823" value="Once you land successfully, you get another 100 points." />
         <property name="traced" nameId="75wo.2667296550441527826" value="true" />
