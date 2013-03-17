@@ -157,9 +157,10 @@
     </node>
     <node type="tp4k.ToolDeclaration" typeId="tp4k.1203071677434" id="3126418051240508020">
       <property name="name" nameId="tpck.1169194664001" value="MbeddrSearchViewer" />
-      <property name="caption" nameId="tp4k.6547237850567462620" value="search" />
+      <property name="caption" nameId="tp4k.6547237850567462620" value="Model Search" />
       <property name="virtualPackage" nameId="tpck.1193676396447" value="search" />
       <property name="position" nameId="tp4k.2498620720770664572" value="RIGHT" />
+      <property name="number" nameId="tp4k.6547237850567462701" value="7" />
     </node>
     <node type="tpee.ClassConcept" typeId="tpee.1068390468198" id="3126418051240508092">
       <property name="name" nameId="tpck.1169194664001" value="SearchViewer" />
@@ -2416,6 +2417,9 @@
         </node>
       </node>
     </node>
+    <node role="toolIcon" roleId="tp4k.6791676465872004185" type="1oap.IconResource" typeId="1oap.8974276187400029883" id="6119416551720843082">
+      <property name="path" nameId="1oap.8974276187400029899" value="${solution_descriptor}/icons/search.png" />
+    </node>
   </root>
   <root id="3126418051240508092">
     <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="3126418051240508093" />
@@ -3344,6 +3348,9 @@
           </node>
         </node>
       </node>
+    </node>
+    <node role="icon" roleId="tp4k.8976425910813834639" type="1oap.IconResource" typeId="1oap.8974276187400029883" id="5156331262984864012">
+      <property name="path" nameId="1oap.8974276187400029899" value="${solution_descriptor}/icons/search.png" />
     </node>
   </root>
   <root id="3126418051240600885">
