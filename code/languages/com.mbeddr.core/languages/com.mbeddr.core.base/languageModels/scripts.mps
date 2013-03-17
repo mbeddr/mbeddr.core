@@ -25,6 +25,10 @@
       <property name="name" nameId="tpck.1169194664001" value="removeNullWords" />
       <property name="title" nameId="tp33.1177457669450" value="MBEDDR-DOC: remove null words" />
     </node>
+    <node type="tp33.MigrationScript" typeId="tp33.1177457067821" id="7502794012052349746">
+      <property name="name" nameId="tpck.1169194664001" value="deleteDocParts" />
+      <property name="title" nameId="tp33.1177457669450" value="MBEDDR-DOC: DElete DocParts" />
+    </node>
   </roots>
   <root id="4855100605282836682">
     <node role="part" roleId="tp33.1177458178889" type="tp33.MigrationScriptPart_Instance" typeId="tp33.1177457850499" id="4855100605282836683">
@@ -272,6 +276,22 @@
                 </node>
                 <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.NullLiteral" typeId="tpee.1070534058343" id="1969649511497763222" />
               </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </root>
+  <root id="7502794012052349746">
+    <node role="part" roleId="tp33.1177458178889" type="tp33.MigrationScriptPart_Instance" typeId="tp33.1177457850499" id="7502794012052349747">
+      <property name="description" nameId="tp33.1177457972041" value="docparts" />
+      <link role="affectedInstanceConcept" roleId="tp33.1177457957477" targetNodeId="vs0r.3857533489766836826" resolveInfo="DocPart" />
+      <node role="affectedInstanceUpdater" roleId="tp33.1177458005323" type="tp33.MigrationScriptPart_Instance_Updater" typeId="tp33.1177458491964" id="7502794012052349748">
+        <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="7502794012052349749">
+          <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="7502794012052352009">
+            <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="7502794012052361911">
+              <node role="operand" roleId="tpee.1197027771414" type="tp33.MigrationScriptPart_node" typeId="tp33.1177458237937" id="7502794012052352010" />
+              <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_DeleteOperation" typeId="tp25.1140133623887" id="7502794012052411568" />
             </node>
           </node>
         </node>
