@@ -202,6 +202,9 @@
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="8624890525768344977">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="8624890525768344447" resolveInfo="ITextBlockOwner" />
     </node>
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="5156331262984980980">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="349463322506397155" resolveInfo="ISearchSupport" />
+    </node>
   </root>
   <root id="3857533489766146432" />
   <root id="3857533489766836826">
