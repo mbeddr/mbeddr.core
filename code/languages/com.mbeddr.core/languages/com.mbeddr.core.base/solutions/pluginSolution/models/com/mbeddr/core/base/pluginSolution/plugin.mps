@@ -139,7 +139,7 @@
     </node>
     <node type="tp4k.ActionDeclaration" typeId="tp4k.1203071646776" id="8624890525768136847">
       <property name="name" nameId="tpck.1169194664001" value="openTerminalForModelOutput" />
-      <property name="caption" nameId="tp4k.1205250923097" value="Open Terminal in Project Folder" />
+      <property name="caption" nameId="tp4k.1205250923097" value="Open Terminal in Model Output Folder" />
       <property name="virtualPackage" nameId="tpck.1193676396447" value="terminal" />
     </node>
     <node type="tpee.ClassConcept" typeId="tpee.1068390468198" id="8624890525768155453">
