@@ -147,6 +147,10 @@
       <property name="virtualPackage" nameId="tpck.1193676396447" value="paragraphs" />
       <property name="name" nameId="tpck.1169194664001" value="ITextBlockOwner" />
     </node>
+    <node type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="349463322506397155">
+      <property name="name" nameId="tpck.1169194664001" value="ISearchSupport" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="search" />
+    </node>
   </roots>
   <root id="7024921229555594291">
     <node role="extends" roleId="tpce.1169127546356" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7024921229555594292">
@@ -862,5 +866,6 @@
     </node>
   </root>
   <root id="8624890525768344447" />
+  <root id="349463322506397155" />
 </model>
 
