@@ -193,6 +193,9 @@
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="5156331262984980980">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="349463322506397155" resolveInfo="ISearchSupport" />
     </node>
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7502794012053237309">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="7534202261664852649" resolveInfo="IIsDocumentationComment" />
+    </node>
   </root>
   <root id="3857533489766146432" />
   <root id="4459718605982007336">
