@@ -14,6 +14,7 @@
       <modulePath path="${project}/languages/com.mbeddr.cc.requirements.c2doc/com.mbeddr.cc.requirements.c2doc.mpl" folder="requirements" />
       <modulePath path="${project}/languages/com.mbeddr.cc.requirements.csv/csv.mpl" folder="requirements" />
       <modulePath path="${project}/languages/com.mbeddr.cc.requirements.report/com.mbeddr.cc.requirements.report.mpl" folder="requirements" />
+      <modulePath path="${project}/languages/com.mbeddr.cc.requirements.scenario2doc/com.mbeddr.cc.requirements.scenario2doc.mpl" folder="requirements" />
       <modulePath path="${project}/languages/com.mbeddr.cc.requirements.scenarios/scenarios.mpl" folder="requirements" />
       <modulePath path="${project}/languages/com.mbeddr.cc.requirements.xhtml/xhtml.mpl" folder="requirements" />
       <modulePath path="${project}/languages/com.mbeddr.cc.requirements/requirements.mpl" folder="requirements" />

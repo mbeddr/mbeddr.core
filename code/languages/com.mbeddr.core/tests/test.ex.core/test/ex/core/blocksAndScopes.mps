@@ -115,7 +115,6 @@
                 </node>
               </node>
             </node>
-            <node role="parts" roleId="vs0r.3857533489766836837" type="vs0r.DocPart" typeId="vs0r.3857533489766836826" id="6068976060903766846" />
           </node>
         </node>
       </node>
