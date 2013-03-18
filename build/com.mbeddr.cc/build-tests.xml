@@ -15,8 +15,8 @@
   <property name="artifacts.com.mbeddr.spawner.build" location="../com.mbeddr.spawner/build/artifacts/com.mbeddr.spawner.build" />
   <property name="artifacts.com.mbeddr.mpsutil.build" location="../com.mbeddr.mpsutil/build/artifacts/com.mbeddr.mpsutil.build" />
   <property name="artifacts.com.mbeddr.cc.ple.build" location="${build.dir}/artifacts/com.mbeddr.cc.ple.build" />
-  <property name="artifacts.com.mbeddr.cc.req.build" location="${build.dir}/artifacts/com.mbeddr.cc.req.build" />
   <property name="artifacts.com.mbeddr.doc.build" location="../com.mbeddr.doc/build/artifacts/com.mbeddr.doc.build" />
+  <property name="artifacts.com.mbeddr.cc.req.build" location="${build.dir}/artifacts/com.mbeddr.cc.req.build" />
   <property name="artifacts.com.mbeddr.debugger.build" location="../com.mbeddr.debugger/build/artifacts/com.mbeddr.debugger.build" />
   <property name="artifacts.mps-richtext" location="${richtext.artifacts}" />
   <property name="artifacts.mps-multiline" location="${multiline.artifacts}" />
@@ -53,8 +53,8 @@
         <depends>com.mbeddr.core</depends>
         <depends>com.mbeddr.mpsutil</depends>
         <depends>com.mbeddr.cc.ple</depends>
-        <depends>com.mbeddr.cc.req</depends>
         <depends>com.mbeddr.doc</depends>
+        <depends>com.mbeddr.cc.req</depends>
         <depends>com.mbeddr.debugger</depends>
         <depends>de.slisson.mps.richtext</depends>
         
@@ -127,8 +127,8 @@
     <ant antfile="../com.mbeddr.spawner/build.xml" inheritAll="false" useNativeBasedir="true" />
     <ant antfile="../com.mbeddr.mpsutil/build.xml" inheritAll="false" useNativeBasedir="true" />
     <ant antfile="build-ple.xml" inheritAll="false" useNativeBasedir="true" />
-    <ant antfile="build-req.xml" inheritAll="false" useNativeBasedir="true" />
     <ant antfile="../com.mbeddr.doc/build.xml" inheritAll="false" useNativeBasedir="true" />
+    <ant antfile="build-req.xml" inheritAll="false" useNativeBasedir="true" />
     <ant antfile="../com.mbeddr.debugger/build.xml" inheritAll="false" useNativeBasedir="true" />
   </target>
   
