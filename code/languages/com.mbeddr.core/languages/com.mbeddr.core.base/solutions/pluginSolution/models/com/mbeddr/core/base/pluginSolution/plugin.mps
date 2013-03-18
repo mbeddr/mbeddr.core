@@ -136,7 +136,7 @@
     </node>
     <node type="tp4k.ActionDeclaration" typeId="tp4k.1203071646776" id="8624890525768079769">
       <property name="name" nameId="tpck.1169194664001" value="openTerminalForModule" />
-      <property name="caption" nameId="tp4k.1205250923097" value="Open Terminal in Module Folder" />
+      <property name="caption" nameId="tp4k.1205250923097" value="Terminal in Module Folder" />
       <property name="virtualPackage" nameId="tpck.1193676396447" value="terminal" />
       <property name="isAlwaysVisible" nameId="tp4k.1207149998849" value="true" />
     </node>
@@ -146,7 +146,7 @@
     </node>
     <node type="tp4k.ActionDeclaration" typeId="tp4k.1203071646776" id="8624890525768136847">
       <property name="name" nameId="tpck.1169194664001" value="openTerminalForModelOutput" />
-      <property name="caption" nameId="tp4k.1205250923097" value="Open Terminal in Model Output Folder" />
+      <property name="caption" nameId="tp4k.1205250923097" value="Terminal in Output Folder" />
       <property name="virtualPackage" nameId="tpck.1193676396447" value="terminal" />
     </node>
     <node type="tpee.ClassConcept" typeId="tpee.1068390468198" id="8624890525768155453">
@@ -191,6 +191,10 @@
     <node type="tp4k.KeymapChangesDeclaration" typeId="tp4k.1562714432501166197" id="6923106206061252939">
       <property name="virtualPackage" nameId="tpck.1193676396447" value="search" />
       <property name="name" nameId="tpck.1169194664001" value="openSearch" />
+    </node>
+    <node type="tp4k.KeymapChangesDeclaration" typeId="tp4k.1562714432501166197" id="7502794012053454681">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="terminal" />
+      <property name="name" nameId="tpck.1169194664001" value="openTerminal" />
     </node>
   </roots>
   <root id="1611636138415080827" />
@@ -1868,6 +1872,9 @@
       <link role="key" roleId="tp4k.1217252646389" targetNodeId="5xh9.~MPSCommonDataKeys%dMODULE" resolveInfo="MODULE" />
       <node role="condition" roleId="tp4k.5538333046911298738" type="tp4k.RequiredCondition" typeId="tp4k.5538333046911348654" id="8624890525768113571" />
     </node>
+    <node role="icon" roleId="tp4k.8976425910813834639" type="1oap.IconResource" typeId="1oap.8974276187400029883" id="7502794012053454680">
+      <property name="path" nameId="1oap.8974276187400029899" value="${solution_descriptor}/icons/terminal.png" />
+    </node>
   </root>
   <root id="8624890525768115840">
     <node role="contents" roleId="tp4k.1207145245948" type="tp4k.ElementListContents" typeId="tp4k.1207145163717" id="8624890525768115843">
@@ -1987,6 +1994,9 @@
       <property name="name" nameId="tpck.1169194664001" value="proj" />
       <link role="key" roleId="tp4k.1217252646389" targetNodeId="6tyf.~PlatformDataKeys%dPROJECT" resolveInfo="PROJECT" />
       <node role="condition" roleId="tp4k.5538333046911298738" type="tp4k.RequiredCondition" typeId="tp4k.5538333046911348654" id="8624890525768182032" />
+    </node>
+    <node role="icon" roleId="tp4k.8976425910813834639" type="1oap.IconResource" typeId="1oap.8974276187400029883" id="7502794012053454679">
+      <property name="path" nameId="1oap.8974276187400029899" value="${solution_descriptor}/icons/terminal.png" />
     </node>
   </root>
   <root id="8624890525768155453">
@@ -5023,6 +5033,22 @@
       <node role="keystroke" roleId="tp4k.1562714432501166206" type="tp4k.KeyMapKeystroke" typeId="tp4k.1207318242772" id="6923106206061252941">
         <property name="modifiers" nameId="tp4k.1207318242773" value="ctrl+alt" />
         <property name="keycode" nameId="tp4k.1207318242774" value="VK_S" />
+      </node>
+    </node>
+  </root>
+  <root id="7502794012053454681">
+    <node role="shortcutChange" roleId="tp4k.1562714432501166199" type="tp4k.SimpleShortcutChange" typeId="tp4k.1562714432501166198" id="7502794012053454686">
+      <link role="action" roleId="tp4k.6193305307616734326" targetNodeId="8624890525768136847" resolveInfo="openTerminalForModelOutput" />
+      <node role="keystroke" roleId="tp4k.1562714432501166206" type="tp4k.KeyMapKeystroke" typeId="tp4k.1207318242772" id="7502794012053454687">
+        <property name="modifiers" nameId="tp4k.1207318242773" value="ctrl+alt" />
+        <property name="keycode" nameId="tp4k.1207318242774" value="VK_T" />
+      </node>
+    </node>
+    <node role="shortcutChange" roleId="tp4k.1562714432501166199" type="tp4k.SimpleShortcutChange" typeId="tp4k.1562714432501166198" id="7502794012053454688">
+      <link role="action" roleId="tp4k.6193305307616734326" targetNodeId="8624890525768079769" resolveInfo="openTerminalForModule" />
+      <node role="keystroke" roleId="tp4k.1562714432501166206" type="tp4k.KeyMapKeystroke" typeId="tp4k.1207318242772" id="7502794012053454689">
+        <property name="modifiers" nameId="tp4k.1207318242773" value="ctrl+alt" />
+        <property name="keycode" nameId="tp4k.1207318242774" value="VK_T" />
       </node>
     </node>
   </root>
