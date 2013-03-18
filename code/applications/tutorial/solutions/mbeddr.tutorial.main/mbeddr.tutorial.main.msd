@@ -10,6 +10,7 @@
     <usedLanguage>f3ed62ca-3490-40d0-890b-9b3133cc2ead(com.mbeddr.cc.requirements.c)</usedLanguage>
     <usedLanguage>7a52ca96-9053-41d2-ae13-8cee05f36698(com.mbeddr.cc.requirements.c2doc)</usedLanguage>
     <usedLanguage>983e02f8-8062-426e-b60d-bc044a46b93a(com.mbeddr.cc.requirements.report)</usedLanguage>
+    <usedLanguage>b9f5080f-7f6a-4d86-b994-77d4c982153a(com.mbeddr.cc.requirements.scenario2doc)</usedLanguage>
     <usedLanguage>d6714220-402d-48cb-a4a2-88223c6257f6(com.mbeddr.cc.requirements.scenarios)</usedLanguage>
     <usedLanguage>fb853ce7-1235-4635-99f2-8ca7447fa202(com.mbeddr.ext.physicalunits)</usedLanguage>
     <usedLanguage>d72d3ee4-7395-438a-9a07-74a38a82cb0e(com.mbeddr.ext.physicalunits.c)</usedLanguage>

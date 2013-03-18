@@ -4,7 +4,12 @@
     <modelRoot path="${solution_descriptor}/models" />
   </models>
   <sourcePath />
+  <dependencies>
+    <dependency reexport="false">2374bc90-7e37-41f1-a9c4-c2e35194c36a(com.mbeddr.doc)</dependency>
+  </dependencies>
   <usedLanguages>
+    <usedLanguage>1c5b7d51-0ef3-4332-af36-874466950878(com.mbeddr.doc.expressions)</usedLanguage>
+    <usedLanguage>e06345c7-da82-4f8b-bd44-1425fe158640(com.mbeddr.doc.meta)</usedLanguage>
     <usedLanguage>d7145000-936a-47e8-95a5-71f220e623f9(com.mbeddr.doc.self)</usedLanguage>
   </usedLanguages>
   <usedDevKits>
