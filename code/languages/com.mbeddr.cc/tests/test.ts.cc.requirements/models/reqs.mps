@@ -56,9 +56,6 @@
           <node role="additionalData" roleId="75wo.8745401669463270518" type="75wo.ConflictsWithLink" typeId="75wo.8745401669463257446" id="1165432222362099156">
             <link role="target" roleId="75wo.8745401669463257454" targetNodeId="1209423092481311976" resolveInfo="Add" />
           </node>
-          <node role="textParts" type=".com.mbeddr.cc.requirements.structure.TextPart" id="4539911450717528939">
-            <property name="text" value="Hallo hier sind die Details." />
-          </node>
           <node role="text" roleId="75wo.8375407818529829156" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="3860690561158030968">
             <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="3860690561158030971">
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3860690561158030973">
@@ -66,18 +63,6 @@
               </node>
             </node>
           </node>
-        </node>
-        <node role="textParts" type=".com.mbeddr.cc.requirements.structure.TextPart" id="4539911450717528604">
-          <property name="text" value="dfökd ölgkfdgas " />
-        </node>
-        <node role="textParts" type=".com.mbeddr.cc.requirements.structure.TextPart" id="4539911450717528605">
-          <property name="text" value="gdfüpfo gü+dsogüdoüpfdgfd" />
-        </node>
-        <node role="textParts" type=".com.mbeddr.cc.requirements.structure.TextPart" id="4539911450717528606">
-          <property name="text" value="" />
-        </node>
-        <node role="textParts" type=".com.mbeddr.cc.requirements.structure.TextPart" id="4539911450717528607">
-          <property name="text" value="dsafasdfd" />
         </node>
         <node role="text" roleId="75wo.8375407818529829156" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="3860690561158030224">
           <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="3860690561158030227">
@@ -92,9 +77,6 @@
       </node>
       <node role="additionalData" roleId="75wo.8745401669463270518" type="75wo.RequiresAlso" typeId="75wo.8745401669463268209" id="1165432222361961716">
         <link role="target" roleId="75wo.8745401669463257454" targetNodeId="3291018189726988279" resolveInfo="Arg2" />
-      </node>
-      <node role="textParts" type=".com.mbeddr.cc.requirements.structure.TextPart" id="4539911450717528662">
-        <property name="text" value="Hallo\nZeile 2\nZeile 3" />
       </node>
       <node role="text" roleId="75wo.8375407818529829156" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="3860690561158029777">
         <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="3860690561158029780">
@@ -123,7 +105,6 @@
         <property name="tested" nameId="75wo.2667296550441527827" value="false" />
         <property name="priority" nameId="75wo.3314758227758879688" value="1" />
         <node role="kind" roleId="75wo.8921256082857728256" type="75wo.FunctionalRequirementKind" typeId="75wo.8921256082857728250" id="1209423092481311982" />
-        <node role="textParts" type=".com.mbeddr.cc.requirements.structure.TextPart" id="4539911450717528832" />
         <node role="text" roleId="75wo.8375407818529829156" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="3860690561158030089">
           <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="3860690561158030092">
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3860690561158030094">
@@ -132,7 +113,6 @@
           </node>
         </node>
       </node>
-      <node role="textParts" type=".com.mbeddr.cc.requirements.structure.TextPart" id="4539911450717528942" />
       <node role="text" roleId="75wo.8375407818529829156" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="3860690561158031718">
         <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="3860690561158031721">
           <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3860690561158031723">
@@ -150,7 +130,6 @@
       <property name="tested" nameId="75wo.2667296550441527827" value="false" />
       <property name="priority" nameId="75wo.3314758227758879688" value="1" />
       <node role="kind" roleId="75wo.8921256082857728256" type="75wo.FunctionalRequirementKind" typeId="75wo.8921256082857728250" id="2667296550441654211" />
-      <node role="textParts" type=".com.mbeddr.cc.requirements.structure.TextPart" id="4539911450717528796" />
       <node role="text" roleId="75wo.8375407818529829156" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="3860690561158030269">
         <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="3860690561158030272">
           <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3860690561158030274">
@@ -165,7 +144,6 @@
       <property name="summmary" nameId="75wo.3402431285977818823" value="AnotherRequirement" />
       <property name="priority" nameId="75wo.3314758227758879688" value="1" />
       <node role="kind" roleId="75wo.8921256082857728256" type="75wo.FunctionalRequirementKind" typeId="75wo.8921256082857728250" id="4458576562019058203" />
-      <node role="textParts" type=".com.mbeddr.cc.requirements.structure.TextPart" id="4539911450717528969" />
       <node role="text" roleId="75wo.8375407818529829156" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="3860690561158030365">
         <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="3860690561158030368">
           <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3860690561158030370">
@@ -180,7 +158,6 @@
       <property name="summmary" nameId="75wo.3402431285977818823" value="It also has a summary" />
       <property name="priority" nameId="75wo.3314758227758879688" value="1" />
       <node role="kind" roleId="75wo.8921256082857728256" type="75wo.FunctionalRequirementKind" typeId="75wo.8921256082857728250" id="4458576562019058205" />
-      <node role="textParts" type=".com.mbeddr.cc.requirements.structure.TextPart" id="4539911450717528498" />
       <node role="text" roleId="75wo.8375407818529829156" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="3860690561158030083">
         <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="3860690561158030086">
           <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3860690561158030088">
@@ -203,9 +180,6 @@
         <link role="target" roleId="75wo.8745401669463257454" targetNodeId="1209423092481311976" resolveInfo="Add" />
       </node>
       <node role="kind" roleId="75wo.8921256082857728256" type="75wo.FunctionalRequirementKind" typeId="75wo.8921256082857728250" id="1165432222362134392" />
-      <node role="textParts" type=".com.mbeddr.cc.requirements.structure.TextPart" id="4539911450717528916">
-        <property name="text" value="This is the text." />
-      </node>
       <node role="text" roleId="75wo.8375407818529829156" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="3860690561158031544">
         <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="3860690561158031547">
           <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3860690561158031549">
