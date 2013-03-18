@@ -58,7 +58,6 @@
       <property name="traced" nameId="75wo.2667296550441527826" value="true" />
       <property name="implemented" nameId="75wo.2667296550441502913" value="true" />
       <property name="tested" nameId="75wo.2667296550441527827" value="false" />
-      <node role="textParts" roleId="75wo.4539911450717510658" type="75wo.TextPart" typeId="75wo.4539911450717510653" id="4539911450717528602" />
       <node role="kind" roleId="75wo.8921256082857728256" type="75wo.FunctionalRequirementKind" typeId="75wo.8921256082857728250" id="1433966787984154173" />
       <node role="additionalData" roleId="75wo.8745401669463270518" type="3vkx.RConstant" typeId="3vkx.3534497005926837262" id="552710421071397239">
         <property name="name" nameId="tpck.1169194664001" value="POINTSFORTAKEOFF" />
@@ -92,9 +91,6 @@
           <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
           <property name="const" nameId="mj1l.2941277002445651368" value="false" />
         </node>
-      </node>
-      <node role="textParts" roleId="75wo.4539911450717510658" type="75wo.TextPart" typeId="75wo.4539911450717510653" id="4539911450717570215">
-        <property name="text" nameId="75wo.4539911450717510654" value="" />
       </node>
       <node role="kind" roleId="75wo.8921256082857728256" type="75wo.FunctionalRequirementKind" typeId="75wo.8921256082857728250" id="7451725615401720595" />
       <node role="text" roleId="75wo.8375407818529829156" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="4066530727403326156">
@@ -246,7 +242,6 @@
           </node>
         </node>
       </node>
-      <node role="textParts" roleId="75wo.4539911450717510658" type="75wo.TextPart" typeId="75wo.4539911450717510653" id="4539911450717528932" />
       <node role="kind" roleId="75wo.8921256082857728256" type="75wo.FunctionalRequirementKind" typeId="75wo.8921256082857728250" id="1433966787984154175" />
       <node role="details" roleId="75wo.8745401669462962629" type="75wo.Requirement" typeId="75wo.8745401669462952101" id="1433966787984154176">
         <property name="priority" nameId="75wo.3314758227758879688" value="0" />
@@ -256,7 +251,6 @@
         <property name="traced" nameId="75wo.2667296550441527826" value="true" />
         <property name="implemented" nameId="75wo.2667296550441502913" value="true" />
         <property name="tested" nameId="75wo.2667296550441527827" value="false" />
-        <node role="textParts" roleId="75wo.4539911450717510658" type="75wo.TextPart" typeId="75wo.4539911450717510653" id="4539911450717528909" />
         <node role="kind" roleId="75wo.8921256082857728256" type="75wo.FunctionalRequirementKind" typeId="75wo.8921256082857728250" id="1433966787984154177" />
         <node role="text" roleId="75wo.8375407818529829156" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="4066530727403326162">
           <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="5785245534401090371">
@@ -274,9 +268,6 @@
         <property name="traced" nameId="75wo.2667296550441527826" value="true" />
         <property name="implemented" nameId="75wo.2667296550441502913" value="true" />
         <property name="tested" nameId="75wo.2667296550441527827" value="false" />
-        <node role="textParts" roleId="75wo.4539911450717510658" type="75wo.TextPart" typeId="75wo.4539911450717510653" id="4539911450717587460">
-          <property name="text" nameId="75wo.4539911450717510654" value="" />
-        </node>
         <node role="kind" roleId="75wo.8921256082857728256" type="75wo.FunctionalRequirementKind" typeId="75wo.8921256082857728250" id="1433966787984154179" />
         <node role="text" roleId="75wo.8375407818529829156" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="4066530727403326165">
           <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="5785245534401090375">
@@ -302,7 +293,6 @@
       <property name="traced" nameId="75wo.2667296550441527826" value="true" />
       <property name="implemented" nameId="75wo.2667296550441502913" value="true" />
       <property name="tested" nameId="75wo.2667296550441527827" value="false" />
-      <node role="textParts" roleId="75wo.4539911450717510658" type="75wo.TextPart" typeId="75wo.4539911450717510653" id="4539911450717528921" />
       <node role="kind" roleId="75wo.8921256082857728256" type="75wo.FunctionalRequirementKind" typeId="75wo.8921256082857728250" id="1433966787984154181" />
       <node role="details" roleId="75wo.8745401669462962629" type="75wo.Requirement" typeId="75wo.8745401669462952101" id="1433966787984154182">
         <property name="priority" nameId="75wo.3314758227758879688" value="0" />
@@ -312,9 +302,6 @@
         <property name="traced" nameId="75wo.2667296550441527826" value="true" />
         <property name="implemented" nameId="75wo.2667296550441502913" value="true" />
         <property name="tested" nameId="75wo.2667296550441527827" value="false" />
-        <node role="textParts" roleId="75wo.4539911450717510658" type="75wo.TextPart" typeId="75wo.4539911450717510653" id="4539911450717528807">
-          <property name="text" nameId="75wo.4539911450717510654" value="For each trackpoint where you are on the ground you get 1 point deduced." />
-        </node>
         <node role="kind" roleId="75wo.8921256082857728256" type="75wo.FunctionalRequirementKind" typeId="75wo.8921256082857728250" id="1433966787984154183" />
         <node role="text" roleId="75wo.8375407818529829156" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="4066530727403326171">
           <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="5785245534401090378">
@@ -332,7 +319,6 @@
         <property name="traced" nameId="75wo.2667296550441527826" value="true" />
         <property name="implemented" nameId="75wo.2667296550441502913" value="true" />
         <property name="tested" nameId="75wo.2667296550441527827" value="false" />
-        <node role="textParts" roleId="75wo.4539911450717510658" type="75wo.TextPart" typeId="75wo.4539911450717510653" id="4539911450717528838" />
         <node role="kind" roleId="75wo.8921256082857728256" type="75wo.FunctionalRequirementKind" typeId="75wo.8921256082857728250" id="1433966787984154185" />
         <node role="text" roleId="75wo.8375407818529829156" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="4066530727403326174">
           <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="5785245534401090381">
@@ -357,7 +343,6 @@
       <property name="open" nameId="75wo.1165432222361744926" value="false" />
       <property name="name" nameId="tpck.1169194664001" value="FlightData" />
       <property name="summmary" nameId="75wo.3402431285977818823" value="Provides flight data" />
-      <node role="textParts" roleId="75wo.4539911450717510658" type="75wo.TextPart" typeId="75wo.4539911450717510653" id="4539911450717528755" />
       <node role="kind" roleId="75wo.8921256082857728256" type="4l29.ComponentRequirementKind" typeId="4l29.5744000828452822758" id="8119642625901795405" />
       <node role="additionalData" roleId="75wo.8745401669463270518" type="4l29.Component" typeId="4l29.5744000828452661387" id="8119642625901795406">
         <property name="name" nameId="tpck.1169194664001" value="FlightDataProvider" />
@@ -390,7 +375,6 @@
       <property name="open" nameId="75wo.1165432222361744926" value="false" />
       <property name="name" nameId="tpck.1169194664001" value="Nuller" />
       <property name="summmary" nameId="75wo.3402431285977818823" value="nullifies the altitute" />
-      <node role="textParts" roleId="75wo.4539911450717510658" type="75wo.TextPart" typeId="75wo.4539911450717510653" id="4539911450717528721" />
       <node role="kind" roleId="75wo.8921256082857728256" type="4l29.ComponentRequirementKind" typeId="4l29.5744000828452822758" id="6446320527598544107" />
       <node role="additionalData" roleId="75wo.8745401669463270518" type="4l29.Component" typeId="4l29.5744000828452661387" id="6446320527598544108">
         <property name="name" nameId="tpck.1169194664001" value="Nuller" />
@@ -411,7 +395,6 @@
       <property name="open" nameId="75wo.1165432222361744926" value="false" />
       <property name="name" nameId="tpck.1169194664001" value="Interpolator" />
       <property name="summmary" nameId="75wo.3402431285977818823" value="averages over the flights" />
-      <node role="textParts" roleId="75wo.4539911450717510658" type="75wo.TextPart" typeId="75wo.4539911450717510653" id="4539911450717528609" />
       <node role="kind" roleId="75wo.8921256082857728256" type="4l29.ComponentRequirementKind" typeId="4l29.5744000828452822758" id="8119642625901795399" />
       <node role="additionalData" roleId="75wo.8745401669463270518" type="4l29.Component" typeId="4l29.5744000828452661387" id="8119642625901795400">
         <property name="name" nameId="tpck.1169194664001" value="Interpolator" />
@@ -439,7 +422,6 @@
       <property name="open" nameId="75wo.1165432222361744926" value="false" />
       <property name="name" nameId="tpck.1169194664001" value="InMemoryStore" />
       <property name="summmary" nameId="75wo.3402431285977818823" value="stores flights in memory" />
-      <node role="textParts" roleId="75wo.4539911450717510658" type="75wo.TextPart" typeId="75wo.4539911450717510653" id="4539911450717528672" />
       <node role="kind" roleId="75wo.8921256082857728256" type="4l29.ComponentRequirementKind" typeId="4l29.5744000828452822758" id="8119642625901800281" />
       <node role="additionalData" roleId="75wo.8745401669463270518" type="4l29.Component" typeId="4l29.5744000828452661387" id="8119642625901800282">
         <property name="name" nameId="tpck.1169194664001" value="InMemoryStore" />
@@ -477,7 +459,6 @@
       <property name="open" nameId="75wo.1165432222361744926" value="false" />
       <property name="name" nameId="tpck.1169194664001" value="Driver" />
       <property name="summmary" nameId="75wo.3402431285977818823" value="Coordinates the overall program functionality" />
-      <node role="textParts" roleId="75wo.4539911450717510658" type="75wo.TextPart" typeId="75wo.4539911450717510653" id="4539911450717528925" />
       <node role="kind" roleId="75wo.8921256082857728256" type="4l29.ComponentRequirementKind" typeId="4l29.5744000828452822758" id="8119642625901800300" />
       <node role="additionalData" roleId="75wo.8745401669463270518" type="4l29.Component" typeId="4l29.5744000828452661387" id="8119642625901800301">
         <property name="name" nameId="tpck.1169194664001" value="Driver" />
@@ -507,7 +488,6 @@
       <property name="open" nameId="75wo.1165432222361744926" value="false" />
       <property name="name" nameId="tpck.1169194664001" value="Judger" />
       <property name="summmary" nameId="75wo.3402431285977818823" value="Judges a flight" />
-      <node role="textParts" roleId="75wo.4539911450717510658" type="75wo.TextPart" typeId="75wo.4539911450717510653" id="4539911450717528536" />
       <node role="kind" roleId="75wo.8921256082857728256" type="4l29.ComponentRequirementKind" typeId="4l29.5744000828452822758" id="8119642625901800288" />
       <node role="additionalData" roleId="75wo.8745401669463270518" type="4l29.Component" typeId="4l29.5744000828452661387" id="8119642625901800289">
         <property name="name" nameId="tpck.1169194664001" value="Judger" />
@@ -541,7 +521,6 @@
         <property name="open" nameId="75wo.1165432222361744926" value="false" />
         <property name="name" nameId="tpck.1169194664001" value="UserSuppliesFlights" />
         <property name="summmary" nameId="75wo.3402431285977818823" value="An end user supplies a flight to the UI" />
-        <node role="textParts" roleId="75wo.4539911450717510658" type="75wo.TextPart" typeId="75wo.4539911450717510653" id="4539911450717528937" />
         <node role="details" roleId="75wo.8745401669462962629" type="75wo.Requirement" typeId="75wo.8745401669462952101" id="1942554214112319815">
           <property name="priority" nameId="75wo.3314758227758879688" value="0" />
           <property name="open" nameId="75wo.1165432222361744926" value="false" />
@@ -575,7 +554,6 @@
               </node>
             </node>
           </node>
-          <node role="textParts" roleId="75wo.4539911450717510658" type="75wo.TextPart" typeId="75wo.4539911450717510653" id="8983161156585709286" />
           <node role="text" roleId="75wo.8375407818529829156" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="4066530727403582865">
             <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="5785245534401174273">
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5785245534401174274">
@@ -603,7 +581,6 @@
           <property name="open" nameId="75wo.1165432222361744926" value="false" />
           <property name="name" nameId="tpck.1169194664001" value="UserSuppliesFlightsSuccess" />
           <property name="summmary" nameId="75wo.3402431285977818823" value="Successful submission of Flight" />
-          <node role="textParts" roleId="75wo.4539911450717510658" type="75wo.TextPart" typeId="75wo.4539911450717510653" id="4539911450717528465" />
           <node role="kind" roleId="75wo.8921256082857728256" type="4l29.ScenarioRequirementKind" typeId="4l29.5744000828452835552" id="6898387700925291931" />
           <node role="additionalData" roleId="75wo.8745401669463270518" type="4l29.Scenario" typeId="4l29.5744000828452824073" id="6898387700925291932">
             <property name="name" nameId="tpck.1169194664001" value="UserSuppliesFlightsSuccess" />
@@ -656,7 +633,6 @@
           <property name="open" nameId="75wo.1165432222361744926" value="false" />
           <property name="summmary" nameId="75wo.3402431285977818823" value="Describes the Interpolation" />
           <property name="name" nameId="tpck.1169194664001" value="Interpolation" />
-          <node role="textParts" roleId="75wo.4539911450717510658" type="75wo.TextPart" typeId="75wo.4539911450717510653" id="8983161156585866956" />
           <node role="kind" roleId="75wo.8921256082857728256" type="4l29.ScenarioRequirementKind" typeId="4l29.5744000828452835552" id="8983161156585760475" />
           <node role="additionalData" roleId="75wo.8745401669463270518" type="4l29.Scenario" typeId="4l29.5744000828452824073" id="8983161156585760476">
             <property name="name" nameId="tpck.1169194664001" value="Interpolation" />
@@ -724,7 +700,6 @@
           </node>
         </node>
         <node role="kind" roleId="75wo.8921256082857728256" type="4l29.UseCaseKind" typeId="4l29.6514529288613812198" id="8983161156585739655" />
-        <node role="textParts" roleId="75wo.4539911450717510658" type="75wo.TextPart" typeId="75wo.4539911450717510653" id="8983161156585739654" />
         <node role="additionalData" roleId="75wo.8745401669463270518" type="4l29.UseCase" typeId="4l29.6514529288613812195" id="8983161156585739656">
           <property name="name" nameId="tpck.1169194664001" value="FlightIsInterpolated" />
           <node role="contents" roleId="4l29.6514529288613824147" type="4l29.UseCaseActiveActor" typeId="4l29.6514529288613824161" id="8983161156585739657">
@@ -775,7 +750,6 @@
             </node>
           </node>
         </node>
-        <node role="textParts" roleId="75wo.4539911450717510658" type="75wo.TextPart" typeId="75wo.4539911450717510653" id="8983161156585709287" />
         <node role="text" roleId="75wo.8375407818529829156" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="4066530727403582844">
           <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="5785245534401174255">
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5785245534401174256">
@@ -789,7 +763,6 @@
         <property name="open" nameId="75wo.1165432222361744926" value="false" />
         <property name="name" nameId="tpck.1169194664001" value="DataStore" />
         <property name="summmary" nameId="75wo.3402431285977818823" value="Stores the flight data" />
-        <node role="textParts" roleId="75wo.4539911450717510658" type="75wo.TextPart" typeId="75wo.4539911450717510653" id="4539911450717528729" />
         <node role="kind" roleId="75wo.8921256082857728256" type="4l29.ComponentRequirementKind" typeId="4l29.5744000828452822758" id="6898387700925260482" />
         <node role="additionalData" roleId="75wo.8745401669463270518" type="4l29.Component" typeId="4l29.5744000828452661387" id="6898387700925260483">
           <property name="name" nameId="tpck.1169194664001" value="DataStore" />
@@ -828,7 +801,6 @@
         <property name="open" nameId="75wo.1165432222361744926" value="false" />
         <property name="name" nameId="tpck.1169194664001" value="UserInterface" />
         <property name="summmary" nameId="75wo.3402431285977818823" value="The UI with which the end user interacts" />
-        <node role="textParts" roleId="75wo.4539911450717510658" type="75wo.TextPart" typeId="75wo.4539911450717510653" id="4539911450717528963" />
         <node role="kind" roleId="75wo.8921256082857728256" type="4l29.ComponentRequirementKind" typeId="4l29.5744000828452822758" id="6898387700925062307" />
         <node role="additionalData" roleId="75wo.8745401669463270518" type="4l29.Component" typeId="4l29.5744000828452661387" id="6898387700925260474">
           <property name="name" nameId="tpck.1169194664001" value="UI" />
@@ -885,15 +857,6 @@
             <link role="participant" roleId="4l29.5744000828452694713" targetNodeId="3126418051239998855" resolveInfo="Aircraft" />
           </node>
         </node>
-        <node role="textParts" roleId="75wo.4539911450717510658" type="75wo.TextPart" typeId="75wo.4539911450717510653" id="8983161156585739644">
-          <property name="text" nameId="75wo.4539911450717510654" value="döfg öfg älfhj fädlghj dfächjfg #phdf gpohjdf ghp+jdf " />
-        </node>
-        <node role="textParts" roleId="75wo.4539911450717510658" type="75wo.TextPart" typeId="75wo.4539911450717510653" id="8983161156585739645">
-          <property name="text" nameId="75wo.4539911450717510654" value="jdf fdxgf" />
-        </node>
-        <node role="textParts" roleId="75wo.4539911450717510658" type="75wo.TextPart" typeId="75wo.4539911450717510653" id="8983161156585739647">
-          <property name="text" nameId="75wo.4539911450717510654" value="jfg hk" />
-        </node>
         <node role="text" roleId="75wo.8375407818529829156" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="4066530727403582853">
           <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="5785245534401174264">
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5785245534401174265">
@@ -911,7 +874,6 @@
         <node role="additionalData" roleId="75wo.8745401669463270518" type="4l29.Actor" typeId="4l29.5744000828452661378" id="3126418051239998855">
           <property name="name" nameId="tpck.1169194664001" value="Aircraft" />
         </node>
-        <node role="textParts" roleId="75wo.4539911450717510658" type="75wo.TextPart" typeId="75wo.4539911450717510653" id="3126418051239998856" />
         <node role="text" roleId="75wo.8375407818529829156" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="3126418051239998857">
           <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="3126418051239998858">
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3126418051239998859">
