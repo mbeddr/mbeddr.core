@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dev-kit name="debugger-testing" uuid="87468ddd-5b04-4352-a61d-70ff981afab6">
+<dev-kit name="com.mbeddr.debugger-testing" uuid="87468ddd-5b04-4352-a61d-70ff981afab6">
   <exported-language name="8585453e-6bfb-4d80-98de-b16074f1d86c(jetbrains.mps.lang.test)" />
   <exported-language name="c72da2b9-7cce-4447-8389-f407dc1158b7(jetbrains.mps.lang.structure)" />
   <exported-language name="7866978e-a0f0-4cc7-81bc-4d213d9375e1(jetbrains.mps.lang.smodel)" />
