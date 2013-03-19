@@ -16,7 +16,6 @@
       <modulePath path="${project}/languages/com.mbeddr.doc.self/com.mbeddr.doc.self.mpl" folder="" />
       <modulePath path="${project}/languages/com.mbeddr.doc/doc.mpl" />
       <modulePath path="${project}/solutions/com.mbeddr.doc.doc/com.mbeddr.doc.doc.msd" folder="" />
-      <modulePath path="${project}/solutions/com.mbeddr.doc.sandbox/com.mbeddr.doc.sandbox.msd" />
     </projectModules>
     <genConfs />
   </component>
