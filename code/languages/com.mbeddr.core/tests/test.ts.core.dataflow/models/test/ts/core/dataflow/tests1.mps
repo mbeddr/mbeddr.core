@@ -81,6 +81,18 @@
     <node type="tp5g.NodesTestCase" typeId="tp5g.1216913645126" id="358427452148954135">
       <property name="name" nameId="tpck.1169194664001" value="UnusedPointerVariablesBug" />
     </node>
+    <node type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="8771010139225901887">
+      <property name="name" nameId="tpck.1169194664001" value="ImportedModule1" />
+    </node>
+    <node type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="8771010139225901888">
+      <property name="name" nameId="tpck.1169194664001" value="ImportedModule2" />
+    </node>
+    <node type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="8771010139225901890">
+      <property name="name" nameId="tpck.1169194664001" value="ImportedModule3" />
+    </node>
+    <node type="tp5g.NodesTestCase" typeId="tp5g.1216913645126" id="8771010139225901897">
+      <property name="name" nameId="tpck.1169194664001" value="ImportsBug" />
+    </node>
   </roots>
   <root id="6072660817912344434">
     <node role="sizeTType" roleId="mj1l.8863019357864392147" type="mj1l.Int32tType" typeId="mj1l.8463282783691618440" id="6072660817912344484">
@@ -8629,8 +8641,6 @@
                 </node>
               </node>
             </node>
-            <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="3587190153237643317" />
-            <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="3587190153237643429" />
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="3587190153237643430" />
           </node>
           <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="3587190153237643431">
@@ -10798,6 +10808,9 @@
         <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="6783193556202592612">
           <property name="name" nameId="tpck.1169194664001" value="empty_1361113261876_1" />
         </node>
+        <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="1277910956789696823">
+          <property name="name" nameId="tpck.1169194664001" value="empty_1363447704612_1" />
+        </node>
         <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodeOperationsContainer" typeId="tp5g.1215603922101" id="5996656966171525363">
           <node role="operations" roleId="tp5g.1215604436604" type="tp5g.TypesCheckOperation" typeId="tp5g.1215607067978" id="5996656966171525364">
             <property name="allowWarnings" nameId="tp5g.852155438140865198" value="true" />
@@ -11316,6 +11329,86 @@
         <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodeOperationsContainer" typeId="tp5g.1215603922101" id="358427452148954262">
           <node role="operations" roleId="tp5g.1215604436604" type="tp5g.TypesCheckOperation" typeId="tp5g.1215607067978" id="358427452148954263">
             <property name="allowWarnings" nameId="tp5g.852155438140865198" value="true" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </root>
+  <root id="8771010139225901887">
+    <node role="imports" roleId="x27k.1317894735999304826" type="x27k.ModuleImport" typeId="x27k.1317894735999299713" id="8771010139225901896">
+      <link role="module" roleId="x27k.1317894735999299714" targetNodeId="8771010139225901890" resolveInfo="ImportedModule3" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.GlobalVariableDeclaration" typeId="x27k.6610873504380335822" id="8771010139225902028">
+      <property name="name" nameId="tpck.1169194664001" value="im1" />
+      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
+      <node role="type" roleId="mj1l.318113533128716676" type="mj1l.BooleanType" typeId="mj1l.8860443239512128058" id="8771010139225902029">
+        <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+        <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+      </node>
+    </node>
+  </root>
+  <root id="8771010139225901888">
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.GlobalVariableDeclaration" typeId="x27k.6610873504380335822" id="8771010139225902030">
+      <property name="name" nameId="tpck.1169194664001" value="im2" />
+      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
+      <node role="type" roleId="mj1l.318113533128716676" type="mj1l.BooleanType" typeId="mj1l.8860443239512128058" id="8771010139225902031">
+        <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+        <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+      </node>
+    </node>
+    <node role="imports" roleId="x27k.1317894735999304826" type="x27k.ModuleImport" typeId="x27k.1317894735999299713" id="8771010139225901889">
+      <link role="module" roleId="x27k.1317894735999299714" targetNodeId="8771010139225901887" resolveInfo="ImportedModule1" />
+    </node>
+  </root>
+  <root id="8771010139225901890">
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.GlobalVariableDeclaration" typeId="x27k.6610873504380335822" id="8771010139225902032">
+      <property name="name" nameId="tpck.1169194664001" value="im3" />
+      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
+      <node role="type" roleId="mj1l.318113533128716676" type="mj1l.BooleanType" typeId="mj1l.8860443239512128058" id="8771010139225902033">
+        <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+        <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+      </node>
+    </node>
+    <node role="imports" roleId="x27k.1317894735999304826" type="x27k.ModuleImport" typeId="x27k.1317894735999299713" id="8771010139225901895">
+      <link role="module" roleId="x27k.1317894735999299714" targetNodeId="8771010139225901888" resolveInfo="ImportedModule2" />
+    </node>
+  </root>
+  <root id="8771010139225901897">
+    <node role="nodesToCheck" roleId="tp5g.1217501822150" type="tp5g.TestNode" typeId="tp5g.1216989428737" id="8771010139225901898">
+      <node role="nodeToCheck" roleId="tp5g.1216989461394" type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="8771010139225901899">
+        <property name="name" nameId="tpck.1169194664001" value="ImportsTest" />
+        <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodeOperationsContainer" typeId="tp5g.1215603922101" id="8771010139225902018">
+          <node role="operations" roleId="tp5g.1215604436604" type="tp5g.TypesCheckOperation" typeId="tp5g.1215607067978" id="8771010139225902019">
+            <property name="allowWarnings" nameId="tp5g.852155438140865198" value="true" />
+          </node>
+        </node>
+        <node role="imports" roleId="x27k.1317894735999304826" type="x27k.ModuleImport" typeId="x27k.1317894735999299713" id="8771010139225902021">
+          <link role="module" roleId="x27k.1317894735999299714" targetNodeId="8771010139225901887" resolveInfo="ImportedModule1" />
+        </node>
+        <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="8771010139225902024">
+          <property name="name" nameId="tpck.1169194664001" value="test" />
+          <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="8771010139225902026">
+            <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="8771010139225902034">
+              <node role="expr" roleId="c4fa.7254843406768833939" type="x27k.GlobalVarRef" typeId="x27k.6610873504380357354" id="8771010139225902035">
+                <link role="var" roleId="x27k.6610873504380357355" targetNodeId="8771010139225902028" resolveInfo="im1" />
+                <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodePropertiesContainer" typeId="tp5g.1215507532627" id="8771010139225902041">
+                  <node role="properties" roleId="tp5g.1215507909023" type="tp5g.NodeWarningProperty" typeId="tp5g.1215511704609" id="8771010139225902043" />
+                </node>
+              </node>
+            </node>
+            <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="8771010139225902037">
+              <node role="expr" roleId="c4fa.7254843406768833939" type="x27k.GlobalVarRef" typeId="x27k.6610873504380357354" id="8771010139225902038">
+                <link role="var" roleId="x27k.6610873504380357355" targetNodeId="8771010139225902032" resolveInfo="im3" />
+                <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodePropertiesContainer" typeId="tp5g.1215507532627" id="8771010139225902044">
+                  <node role="properties" roleId="tp5g.1215507909023" type="tp5g.NodeWarningProperty" typeId="tp5g.1215511704609" id="8771010139225902046" />
+                </node>
+              </node>
+            </node>
+            <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="8771010139225904565" />
+          </node>
+          <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="8771010139225902023">
+            <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+            <property name="const" nameId="mj1l.2941277002445651368" value="false" />
           </node>
         </node>
       </node>
