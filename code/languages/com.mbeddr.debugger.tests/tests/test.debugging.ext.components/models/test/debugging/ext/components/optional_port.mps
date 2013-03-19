@@ -99,7 +99,7 @@
       </node>
       <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.RequiredPort" typeId="v7ag.4491876417845628841" id="4075471389393077732">
         <property name="name" nameId="tpck.1169194664001" value="helloWorldA" />
-        <property name="optional" nameId="v7ag.349917904115138509" value="true" />
+        <property name="optional" nameId="v7ag.349917904115138509" value="false" />
         <link role="intf" roleId="v7ag.4491876417845484932" targetNodeId="4075471389393077721" resolveInfo="HelloWorld" />
       </node>
       <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.RequiredPort" typeId="v7ag.4491876417845628841" id="1480668935412850117">
