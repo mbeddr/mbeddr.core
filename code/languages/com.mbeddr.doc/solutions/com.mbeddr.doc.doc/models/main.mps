@@ -324,6 +324,7 @@
         </node>
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.ImageParagraph" typeId="2c95.6386504476136263187" id="8730648445433243087">
           <property name="name" nameId="tpck.1169194664001" value="glider" />
+          <property name="showImage" nameId="2c95.6386504476136358630" value="false" />
           <node role="resource" roleId="2c95.6386504476136531838" type="2c95.Resource" typeId="2c95.6386504476136521407" id="8730648445433243093">
             <property name="fileName" nameId="2c95.6386504476136521408" value="ash26.png" />
             <link role="path" roleId="2c95.6386504476136521409" targetNodeId="8730648445433243074" resolveInfo="images" />
