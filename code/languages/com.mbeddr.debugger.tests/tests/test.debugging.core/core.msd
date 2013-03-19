@@ -11,7 +11,6 @@
     <usedLanguage>f61473f9-130f-42f6-b98d-6c438812c2f6(jetbrains.mps.baseLanguage.unitTest)</usedLanguage>
   </usedLanguages>
   <usedDevKits>
-    <usedDevKit>24565007-e59f-42fc-ac10-da3836deec1c(com.mbeddr.components)</usedDevKit>
     <usedDevKit>87468ddd-5b04-4352-a61d-70ff981afab6(debugger-testing)</usedDevKit>
   </usedDevKits>
 </solution>
