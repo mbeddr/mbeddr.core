@@ -3016,8 +3016,11 @@
         </node>
       </node>
     </node>
-    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="7727566415687762961">
-      <property name="name" nameId="tpck.1169194664001" value="empty_1351865133913_5" />
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="6068976060903808387">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1363163027759_1" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="6068976060903808389">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1363163028057_3" />
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="clqz.Statemachine" typeId="clqz.5778488248013533809" id="7727566415687718765">
       <property name="name" nameId="tpck.1169194664001" value="FlightAnalyzer" />
@@ -3087,7 +3090,6 @@
                 </node>
               </node>
             </node>
-            <node role="parts" roleId="vs0r.3857533489766836837" type="vs0r.DocPart" typeId="vs0r.3857533489766836826" id="6068976060903808292" />
           </node>
         </node>
         <node role="contents" roleId="clqz.4249345261280348989" type="clqz.ExitAction" typeId="clqz.4753668641245545020" id="7727566415687762966">
@@ -3291,12 +3293,28 @@
           <node role="text" roleId="vs0r.4052432714772608243" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="6068976060903798096">
             <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="6068976060903798097">
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6068976060903798098">
-                <property name="escapedValue" nameId="87nw.2557074442922438158" value="This represents the state in which the airplane flies.\nIt has several substates." />
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="This represents the state in which the airplane flies.\nIt has several substates. Note how it uses the " />
               </node>
-              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6068976060903798109" />
+              <node role="words" roleId="87nw.2557074442922392302" type="x27k.ModuleContentRefWord" typeId="x27k.4052432714773079904" id="6068976060903866958">
+                <link role="mc" roleId="x27k.4052432714773079905" targetNodeId="7727566415687763046" resolveInfo="VERY_HIGH_SPEED" />
+              </node>
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6068976060903808521">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="\nand " />
+              </node>
+              <node role="words" roleId="87nw.2557074442922392302" type="x27k.ModuleContentRefWord" typeId="x27k.4052432714773079904" id="6068976060903866977">
+                <link role="mc" roleId="x27k.4052432714773079905" targetNodeId="7727566415687763044" resolveInfo="HIGH_SPEED" />
+              </node>
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6068976060903866978">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value=" constants. These constants are defined in the\nsame module " />
+              </node>
+              <node role="words" roleId="87nw.2557074442922392302" type="x27k.ModuleRefWord" typeId="x27k.6068976060903930232" id="6068976060903988797">
+                <link role="module" roleId="x27k.6068976060903930233" targetNodeId="5160057464295358354" resolveInfo="StateMachines" />
+              </node>
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6068976060903988798">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="." />
+              </node>
             </node>
           </node>
-          <node role="parts" roleId="vs0r.3857533489766836837" type="vs0r.DocPart" typeId="vs0r.3857533489766836826" id="6068976060903798099" />
         </node>
       </node>
       <node role="contents" roleId="clqz.7835233251114737454" type="clqz.State" typeId="clqz.5778488248013533839" id="7727566415687762903">
@@ -3393,6 +3411,27 @@
         </node>
       </node>
       <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="pszp.VerificationAttribute" typeId="pszp.1579201292659177178" id="4422281473825710793" />
+      <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="vs0r.ElementDocumentation" typeId="vs0r.3857533489766146428" id="6068976060903867015">
+        <node role="text" roleId="vs0r.4052432714772608243" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="6068976060903867016">
+          <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="6068976060903867017">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6068976060903867018">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="This state machine implements a way to grade flights.\nIt has separate states for the important flight phases,\nsuch as " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="x27k.NamedSiblingRefWord" typeId="x27k.6068976060903808906" id="6068976060903867038">
+              <link role="sibling" roleId="x27k.6068976060903808907" targetNodeId="7727566415687762901" resolveInfo="beforeFlight" />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6068976060903867039">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" or " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="x27k.NamedSiblingRefWord" typeId="x27k.6068976060903808906" id="6068976060903867048">
+              <link role="sibling" roleId="x27k.6068976060903808907" targetNodeId="7727566415687762902" resolveInfo="airborne" />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6068976060903867049">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="." />
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="7977993180520218052">
       <property name="name" nameId="tpck.1169194664001" value="empty_1352791791535_1" />

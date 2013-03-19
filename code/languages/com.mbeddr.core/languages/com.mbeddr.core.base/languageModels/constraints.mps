@@ -22,10 +22,6 @@
     <node type="tp1t.ConceptConstraints" typeId="tp1t.1213093968558" id="6021475212426107481">
       <link role="concept" roleId="tp1t.1213093996982" targetNodeId="vs0r.8628579007224192794" resolveInfo="INameFirstCharLowerCase" />
     </node>
-    <node type="tp1t.ConceptConstraints" typeId="tp1t.1213093968558" id="5095889050031044991">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="documentation" />
-      <link role="concept" roleId="tp1t.1213093996982" targetNodeId="vs0r.3857533489766836826" resolveInfo="DocPart" />
-    </node>
     <node type="tpee.ClassConcept" typeId="tpee.1068390468198" id="5706473467948754894">
       <property name="name" nameId="tpck.1169194664001" value="CIdentifierHelper" />
     </node>
@@ -110,7 +106,6 @@
   </root>
   <root id="7024921229556319962" />
   <root id="6021475212426107481" />
-  <root id="5095889050031044991" />
   <root id="5706473467948754894">
     <node role="staticMethod" roleId="tpee.1070462273904" type="tpee.StaticMethodDeclaration" typeId="tpee.1081236700938" id="5706473467948755362">
       <property name="name" nameId="tpck.1169194664001" value="isCKeyword" />
@@ -301,8 +296,8 @@
               <node role="operand" roleId="tpee.1197027771414" type="tp1t.ConstraintFunctionParameter_parentNode" typeId="tp1t.1202989658459" id="8375407818528997248" />
               <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_GetAncestorOperation" typeId="tp25.1171407110247" id="8375407818528997275">
                 <node role="parameter" roleId="tp25.1144104376918" type="tp25.OperationParm_Concept" typeId="tp25.1144101972840" id="8375407818528997276">
-                  <node role="conceptArgument" roleId="tp25.1207343664468" type="tp25.RefConcept_Reference" typeId="tp25.1177026924588" id="8375407818528997279">
-                    <link role="conceptDeclaration" roleId="tp25.1177026940964" targetNodeId="vs0r.3857533489766146428" resolveInfo="ElementDocumentation" />
+                  <node role="conceptArgument" roleId="tp25.1207343664468" type="tp25.RefConcept_Reference" typeId="tp25.1177026924588" id="6068976060903808578">
+                    <link role="conceptDeclaration" roleId="tp25.1177026940964" targetNodeId="vs0r.7534202261664852649" resolveInfo="IIsDocumentationComment" />
                   </node>
                 </node>
               </node>

@@ -778,29 +778,10 @@ shown in the respective \ic{report} or \ic{assert} statement (the number in
 parentheses). Based on this information, the location can be found manually.
 
 However, mbeddr also comes with a tool that simplifies finding the message
-source. Using $Analyze \rightarrow mbeddr Analyze Error Output$, arbitrary test
-program output can be analyzed. After selecting the menu item, the following
-view opens:
+source. It lets you paste the console output of a program into a window, and
+then makes the reporting nodes directly clickable. It is described in
+\sect{analyzeErrorOutput}
 
-\begin{center} 
-  \includegraphics[width=11cm]{figures/core/analyzeErrorOutput1.png}
-\end{center}
-
-You can then paste arbitrary text that contains report messages into the text
-area (for example the example above). Pressing the \ic{Analyze} button will find
-the nodes that created the messages (using the Node ID; this is the long number
-that follows the \ic{\#} in the message location).
-
-\begin{center} 
-  \includegraphics[width=11cm]{figures/core/analyzeErrorOutput2.png}
-\end{center}
-
-You can then click on the node to select it in the editor (you should play a
-bit with the options buttons on the left; in particular the one with the grey
-folder (top right) is useful, since it shows the actual error message).
-
-You can update the error output text in the text area at any time; press the
-button with the two green arrows to refresh the found nodes on the right.
 
 \parhead{Running directly in the IDE} The approach shown above is useful if you
 get error output from an mbeddr program running on another machine. If you run it on the machine that also runs
@@ -905,28 +886,42 @@ machines.
 \end{center}
 
 
+\parhead{Embedding Nodes} The documentation elements and comments cannot just
+contain plain text; they can also contain embedded nodes. In principle, they can
+contain arbitrary nodes, however, obviously useful things in the context of
+comments are references to other program elements. By using actual references
+instead of "just text", the references can actually be followed, they are
+automatically renamed if the target element is renamed, and, if the target
+element is deleted, the reference breaks, hinting at the need to rework the
+documentation. Here is an example of a state machine with comments that embed
+nodes:
+
+\begin{center} 
+  \includegraphics[width=0.8\columnwidth]{figures/core/commentsWithEmbeddedNodes.png}
+\end{center}
+
+Nodes can be embedded by pressing \keystroke{Ctrl-Space} and selecting a node
+anywhere in the text. The following embeddable references are generically
+embeddable: \ic{@module} references a module; \ic{@top} references any top level
+C construct such as a \ic{struct}, a constant, a function, an interface or a
+state machine (anything that resides directly in a module). \ic{@child}
+references any named child of the owning top level construct. 
+
+Dependending on the context, additional references may be available. For
+example, in the documentation of functions, references to arguments are
+available via \ic{@arg}.
+
+\parhead{Searching} Note that it is possible to search whole models for text
+substrings, including the contents of documentation comments. This facility is
+discussed in \sect{searching}.
+
+\parhead{Writing Prose Documentation} mbeddr also ships with a language that
+supports writing prose documentation tightly integrated with program elements,
+generatable to HTML and Latex. This language is discussed in \sect{doclang}. In
+fact, that whole chapter is generated from within mbeddr/MPS.
+
 \parhead{TODOs} mbeddr comes with a special view for collecting and showing
-TODOs in comments. Anywhere within the comments discussed above, you can write
-\ic{TODO and then some text} or \ic{TODO(category) and then some text} (see
-next screenshot):
-
-
-\begin{center} 
-  \includegraphics[scale=0.5]{figures/core/todoexamplecode.png}
-\end{center}
-
-To find the TODOs anywhere in your project, use the $Tools -> mbeddr TODO$. It
-shows the TODOs in the form of a Find Usages dialog.
-
-\begin{center} 
-  \includegraphics[scale=0.45]{figures/core/todoview.png}
-\end{center}
-
-The view has many view options (try them!). The most important one is the top
-left one. Pressing it enables categories. In this case the TODOs are grouped by
-what has been specified by \ic{category} in the \ic{TODO(category)} format.
-
-
+TODOs in comments. It is described in \sect{todoutil}.
 
 
 
