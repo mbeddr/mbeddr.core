@@ -4197,7 +4197,6 @@
             <property name="inline" nameId="x27k.5679441017213716505" value="true" />
             <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="4139652462542957389">
               <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="4075471389393145261">
-                <property name="comment" nameId="c4fa.1679452829930336985" value="COMPONENT" />
                 <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.PropertyMacro" typeId="tpf8.1087833241328" id="4075471389393145266">
                   <property name="propertyName" nameId="tpck.1757699476691236117" value="comment" />
                   <node role="propertyValueFunction" roleId="tpf8.1167756362303" type="tpf8.PropertyMacro_GetPropertyValue" typeId="tpf8.1167756080639" id="4075471389393145267">
@@ -13819,7 +13818,6 @@
             <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="1539255704408506133">
               <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="1539255704408506134">
                 <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="1539255704408506135">
-                  <property name="comment" nameId="c4fa.1679452829930336985" value="inlined" />
                   <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.PropertyMacro" typeId="tpf8.1087833241328" id="1539255704408506136">
                     <property name="propertyName" nameId="tpck.1757699476691236117" value="comment" />
                     <node role="propertyValueFunction" roleId="tpf8.1167756362303" type="tpf8.PropertyMacro_GetPropertyValue" typeId="tpf8.1167756080639" id="1539255704408506137">
@@ -13941,7 +13939,6 @@
             <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="1539255704408534335">
               <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="1539255704408534336">
                 <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="1539255704408534337">
-                  <property name="comment" nameId="c4fa.1679452829930336985" value="inlined" />
                   <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.PropertyMacro" typeId="tpf8.1087833241328" id="1539255704408534338">
                     <property name="propertyName" nameId="tpck.1757699476691236117" value="comment" />
                     <node role="propertyValueFunction" roleId="tpf8.1167756362303" type="tpf8.PropertyMacro_GetPropertyValue" typeId="tpf8.1167756080639" id="1539255704408534339">
