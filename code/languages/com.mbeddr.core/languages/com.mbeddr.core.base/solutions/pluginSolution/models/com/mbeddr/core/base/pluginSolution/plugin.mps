@@ -1885,6 +1885,7 @@
     </node>
     <node role="modifier" roleId="tp4k.1204991552650" type="tp4k.ModificationStatement" typeId="tp4k.1203092361741" id="8624890525768115845">
       <link role="modifiedGroup" roleId="tp4k.1203092736097" targetNodeId="tprs.1204991226689" resolveInfo="SolutionActions" />
+      <link role="point" roleId="tp4k.1204992316090" targetNodeId="tprs.401659284115231184" resolveInfo="commonModule" />
     </node>
   </root>
   <root id="8624890525768136847">
@@ -2248,6 +2249,7 @@
     </node>
     <node role="modifier" roleId="tp4k.1204991552650" type="tp4k.ModificationStatement" typeId="tp4k.1203092361741" id="8624890525768177153">
       <link role="modifiedGroup" roleId="tp4k.1203092736097" targetNodeId="tprs.1204991218714" resolveInfo="ModelActions" />
+      <link role="point" roleId="tp4k.1204992316090" targetNodeId="tprs.2510134983999478400" resolveInfo="showHelp" />
     </node>
   </root>
   <root id="3126418051240508020">
@@ -3671,13 +3673,13 @@
   </root>
   <root id="3126418051240508411">
     <node role="contents" roleId="tp4k.1207145245948" type="tp4k.ElementListContents" typeId="tp4k.1207145163717" id="3126418051240508412">
-      <node role="reference" roleId="tp4k.1207145201301" type="tp4k.Separator" typeId="tp4k.1204908117386" id="3126418051240508413" />
       <node role="reference" roleId="tp4k.1207145201301" type="tp4k.ActionInstance" typeId="tp4k.1203088046679" id="3126418051240515733">
         <link role="action" roleId="tp4k.1203088061055" targetNodeId="3126418051240508417" resolveInfo="OpenSearchAction" />
       </node>
     </node>
     <node role="modifier" roleId="tp4k.1204991552650" type="tp4k.ModificationStatement" typeId="tp4k.1203092361741" id="3126418051240508416">
       <link role="modifiedGroup" roleId="tp4k.1203092736097" targetNodeId="tprs.1204991218714" resolveInfo="ModelActions" />
+      <link role="point" roleId="tp4k.1204992316090" targetNodeId="tprs.1453248744423272127" resolveInfo="check" />
     </node>
   </root>
   <root id="3126418051240508417">
