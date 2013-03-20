@@ -192,25 +192,30 @@
       <property name="name" nameId="tpck.1169194664001" value="bottomBorder" />
       <link role="dataType" roleId="tpce.1082985295845" targetNodeId="2042272859107062474" resolveInfo="Border" />
     </node>
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="2042272859107053538">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="tpck.1169194658468" resolveInfo="INamedConcept" />
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="2042272859110132313">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="vs0r.7024921229555594291" resolveInfo="IIdentifierNamedConcept" />
     </node>
   </root>
   <root id="2042272859107062474">
     <node role="member" roleId="tpce.1083172003582" type="tpce.EnumerationMemberDeclaration" typeId="tpce.1083171877298" id="2042272859107062475">
       <property name="externalValue" nameId="tpce.1083923523172" value="none" />
+      <property name="internalValue" nameId="tpce.1083923523171" value="0" />
     </node>
     <node role="member" roleId="tpce.1083172003582" type="tpce.EnumerationMemberDeclaration" typeId="tpce.1083171877298" id="2042272859107062476">
       <property name="externalValue" nameId="tpce.1083923523172" value="thin" />
+      <property name="internalValue" nameId="tpce.1083923523171" value="1" />
     </node>
     <node role="member" roleId="tpce.1083172003582" type="tpce.EnumerationMemberDeclaration" typeId="tpce.1083171877298" id="2042272859107062477">
       <property name="externalValue" nameId="tpce.1083923523172" value="medium" />
+      <property name="internalValue" nameId="tpce.1083923523171" value="2" />
     </node>
     <node role="member" roleId="tpce.1083172003582" type="tpce.EnumerationMemberDeclaration" typeId="tpce.1083171877298" id="2042272859107062479">
       <property name="externalValue" nameId="tpce.1083923523172" value="thick" />
+      <property name="internalValue" nameId="tpce.1083923523171" value="3" />
     </node>
     <node role="member" roleId="tpce.1083172003582" type="tpce.EnumerationMemberDeclaration" typeId="tpce.1083171877298" id="2042272859107062478">
       <property name="externalValue" nameId="tpce.1083923523172" value="doubleBorder" />
+      <property name="internalValue" nameId="tpce.1083923523171" value="4" />
     </node>
   </root>
   <root id="2042272859107062581">
