@@ -161,91 +161,15 @@
                   <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="2042272859107068992">
                     <property name="name" nameId="tpck.1169194664001" value="border" />
                     <node role="type" roleId="tpee.5680397130376446158" type="tpee.ShortType" typeId="tpee.1070533982221" id="2042272859107068993" />
-                    <node role="initializer" roleId="tpee.1068431790190" type="tpee.TernaryOperatorExpression" typeId="tpee.1163668896201" id="2042272859107594073">
-                      <node role="condition" roleId="tpee.1163668914799" type="tpee.DotExpression" typeId="tpee.1197027756228" id="2042272859107594034">
-                        <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="2042272859107593998">
-                          <node role="operand" roleId="tpee.1197027771414" type="tp2q.ForEachVariableReference" typeId="tp2q.1153944233411" id="2042272859107593977">
-                            <link role="variable" roleId="tp2q.1153944258490" targetNodeId="2042272859107053621" resolveInfo="style" />
-                          </node>
-                          <node role="operation" roleId="tpee.1197027833540" type="tp25.SPropertyAccess" typeId="tp25.1138056022639" id="2042272859107594012">
-                            <link role="property" roleId="tp25.1138056395725" targetNodeId="gnwj.2042272859107062473" resolveInfo="border" />
-                          </node>
+                    <node role="initializer" roleId="tpee.1068431790190" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="2042272859110733415">
+                      <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="770w.2042272859110733269" resolveInfo="borderFor" />
+                      <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="770w.2042272859110733268" resolveInfo="BorderHelper" />
+                      <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.DotExpression" typeId="tpee.1197027756228" id="2042272859110733416">
+                        <node role="operand" roleId="tpee.1197027771414" type="tp2q.ForEachVariableReference" typeId="tp2q.1153944233411" id="2042272859110733417">
+                          <link role="variable" roleId="tp2q.1153944258490" targetNodeId="2042272859107053621" resolveInfo="style" />
                         </node>
-                        <node role="operation" roleId="tpee.1197027833540" type="tp25.Property_HasValue_Enum" typeId="tp25.1146171026731" id="2042272859107594047">
-                          <node role="value" roleId="tp25.1146171026732" type="tp25.EnumMemberReference" typeId="tp25.1138676077309" id="2042272859107594048">
-                            <link role="enumMember" roleId="tp25.1138676095763" targetNodeId="gnwj.2042272859107062476" />
-                          </node>
-                        </node>
-                      </node>
-                      <node role="ifTrue" roleId="tpee.1163668922816" type="tpee.StaticFieldReference" typeId="tpee.1070533707846" id="2042272859107068995">
-                        <link role="classifier" roleId="tpee.1144433057691" targetNodeId="soat.~CellStyle" resolveInfo="CellStyle" />
-                        <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="soat.~CellStyle%dBORDER_THIN" resolveInfo="BORDER_THIN" />
-                      </node>
-                      <node role="ifFalse" roleId="tpee.1163668934364" type="tpee.TernaryOperatorExpression" typeId="tpee.1163668896201" id="2042272859107594089">
-                        <node role="condition" roleId="tpee.1163668914799" type="tpee.DotExpression" typeId="tpee.1197027756228" id="2042272859107594090">
-                          <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="2042272859107594091">
-                            <node role="operand" roleId="tpee.1197027771414" type="tp2q.ForEachVariableReference" typeId="tp2q.1153944233411" id="2042272859107594092">
-                              <link role="variable" roleId="tp2q.1153944258490" targetNodeId="2042272859107053621" resolveInfo="style" />
-                            </node>
-                            <node role="operation" roleId="tpee.1197027833540" type="tp25.SPropertyAccess" typeId="tp25.1138056022639" id="2042272859107594093">
-                              <link role="property" roleId="tp25.1138056395725" targetNodeId="gnwj.2042272859107062473" resolveInfo="border" />
-                            </node>
-                          </node>
-                          <node role="operation" roleId="tpee.1197027833540" type="tp25.Property_HasValue_Enum" typeId="tp25.1146171026731" id="2042272859107594094">
-                            <node role="value" roleId="tp25.1146171026732" type="tp25.EnumMemberReference" typeId="tp25.1138676077309" id="2042272859107594095">
-                              <link role="enumMember" roleId="tp25.1138676095763" targetNodeId="gnwj.2042272859107062477" />
-                            </node>
-                          </node>
-                        </node>
-                        <node role="ifTrue" roleId="tpee.1163668922816" type="tpee.StaticFieldReference" typeId="tpee.1070533707846" id="2042272859107594096">
-                          <link role="classifier" roleId="tpee.1144433057691" targetNodeId="soat.~CellStyle" resolveInfo="CellStyle" />
-                          <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="soat.~CellStyle%dBORDER_MEDIUM" resolveInfo="BORDER_MEDIUM" />
-                        </node>
-                        <node role="ifFalse" roleId="tpee.1163668934364" type="tpee.TernaryOperatorExpression" typeId="tpee.1163668896201" id="2042272859107594106">
-                          <node role="condition" roleId="tpee.1163668914799" type="tpee.DotExpression" typeId="tpee.1197027756228" id="2042272859107594107">
-                            <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="2042272859107594108">
-                              <node role="operand" roleId="tpee.1197027771414" type="tp2q.ForEachVariableReference" typeId="tp2q.1153944233411" id="2042272859107594109">
-                                <link role="variable" roleId="tp2q.1153944258490" targetNodeId="2042272859107053621" resolveInfo="style" />
-                              </node>
-                              <node role="operation" roleId="tpee.1197027833540" type="tp25.SPropertyAccess" typeId="tp25.1138056022639" id="2042272859107594110">
-                                <link role="property" roleId="tp25.1138056395725" targetNodeId="gnwj.2042272859107062473" resolveInfo="border" />
-                              </node>
-                            </node>
-                            <node role="operation" roleId="tpee.1197027833540" type="tp25.Property_HasValue_Enum" typeId="tp25.1146171026731" id="2042272859107594111">
-                              <node role="value" roleId="tp25.1146171026732" type="tp25.EnumMemberReference" typeId="tp25.1138676077309" id="2042272859107594112">
-                                <link role="enumMember" roleId="tp25.1138676095763" targetNodeId="gnwj.2042272859107062479" />
-                              </node>
-                            </node>
-                          </node>
-                          <node role="ifTrue" roleId="tpee.1163668922816" type="tpee.StaticFieldReference" typeId="tpee.1070533707846" id="2042272859107594113">
-                            <link role="classifier" roleId="tpee.1144433057691" targetNodeId="soat.~CellStyle" resolveInfo="CellStyle" />
-                            <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="soat.~CellStyle%dBORDER_THICK" resolveInfo="BORDER_THICK" />
-                          </node>
-                          <node role="ifFalse" roleId="tpee.1163668934364" type="tpee.TernaryOperatorExpression" typeId="tpee.1163668896201" id="2042272859107594123">
-                            <node role="condition" roleId="tpee.1163668914799" type="tpee.DotExpression" typeId="tpee.1197027756228" id="2042272859107594124">
-                              <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="2042272859107594125">
-                                <node role="operand" roleId="tpee.1197027771414" type="tp2q.ForEachVariableReference" typeId="tp2q.1153944233411" id="2042272859107594126">
-                                  <link role="variable" roleId="tp2q.1153944258490" targetNodeId="2042272859107053621" resolveInfo="style" />
-                                </node>
-                                <node role="operation" roleId="tpee.1197027833540" type="tp25.SPropertyAccess" typeId="tp25.1138056022639" id="2042272859107594127">
-                                  <link role="property" roleId="tp25.1138056395725" targetNodeId="gnwj.2042272859107062473" resolveInfo="border" />
-                                </node>
-                              </node>
-                              <node role="operation" roleId="tpee.1197027833540" type="tp25.Property_HasValue_Enum" typeId="tp25.1146171026731" id="2042272859107594128">
-                                <node role="value" roleId="tp25.1146171026732" type="tp25.EnumMemberReference" typeId="tp25.1138676077309" id="2042272859107594129">
-                                  <link role="enumMember" roleId="tp25.1138676095763" targetNodeId="gnwj.2042272859107062478" />
-                                </node>
-                              </node>
-                            </node>
-                            <node role="ifTrue" roleId="tpee.1163668922816" type="tpee.StaticFieldReference" typeId="tpee.1070533707846" id="2042272859107594130">
-                              <link role="classifier" roleId="tpee.1144433057691" targetNodeId="soat.~CellStyle" resolveInfo="CellStyle" />
-                              <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="soat.~CellStyle%dBORDER_DOUBLE" resolveInfo="BORDER_DOUBLE" />
-                            </node>
-                            <node role="ifFalse" roleId="tpee.1163668934364" type="tpee.StaticFieldReference" typeId="tpee.1070533707846" id="2042272859107594140">
-                              <link role="classifier" roleId="tpee.1144433057691" targetNodeId="soat.~CellStyle" resolveInfo="CellStyle" />
-                              <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="soat.~CellStyle%dBORDER_NONE" resolveInfo="BORDER_NONE" />
-                            </node>
-                          </node>
+                        <node role="operation" roleId="tpee.1197027833540" type="tp25.SPropertyAccess" typeId="tp25.1138056022639" id="2042272859110733418">
+                          <link role="property" roleId="tp25.1138056395725" targetNodeId="gnwj.2042272859107062473" resolveInfo="border" />
                         </node>
                       </node>
                     </node>
@@ -298,92 +222,59 @@
                     </node>
                     <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="2042272859107063316">
                       <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="yb8z.~XSSFCellStyle%dsetBorderBottom(short)%cvoid" resolveInfo="setBorderBottom" />
-                      <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.TernaryOperatorExpression" typeId="tpee.1163668896201" id="2042272859107594239">
-                        <node role="condition" roleId="tpee.1163668914799" type="tpee.DotExpression" typeId="tpee.1197027756228" id="2042272859107594240">
-                          <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="2042272859107594241">
-                            <node role="operand" roleId="tpee.1197027771414" type="tp2q.ForEachVariableReference" typeId="tp2q.1153944233411" id="2042272859107594242">
-                              <link role="variable" roleId="tp2q.1153944258490" targetNodeId="2042272859107053621" resolveInfo="style" />
-                            </node>
-                            <node role="operation" roleId="tpee.1197027833540" type="tp25.SPropertyAccess" typeId="tp25.1138056022639" id="2042272859107594281">
-                              <link role="property" roleId="tp25.1138056395725" targetNodeId="gnwj.2042272859107062480" resolveInfo="bottomBorder" />
-                            </node>
+                      <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="2042272859110733405">
+                        <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="770w.2042272859110733269" resolveInfo="borderFor" />
+                        <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="770w.2042272859110733268" resolveInfo="BorderHelper" />
+                        <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.DotExpression" typeId="tpee.1197027756228" id="2042272859110733406">
+                          <node role="operand" roleId="tpee.1197027771414" type="tp2q.ForEachVariableReference" typeId="tp2q.1153944233411" id="2042272859110733407">
+                            <link role="variable" roleId="tp2q.1153944258490" targetNodeId="2042272859107053621" resolveInfo="style" />
                           </node>
-                          <node role="operation" roleId="tpee.1197027833540" type="tp25.Property_HasValue_Enum" typeId="tp25.1146171026731" id="2042272859107594244">
-                            <node role="value" roleId="tp25.1146171026732" type="tp25.EnumMemberReference" typeId="tp25.1138676077309" id="2042272859107594245">
-                              <link role="enumMember" roleId="tp25.1138676095763" targetNodeId="gnwj.2042272859107062476" />
-                            </node>
+                          <node role="operation" roleId="tpee.1197027833540" type="tp25.SPropertyAccess" typeId="tp25.1138056022639" id="2042272859110733408">
+                            <link role="property" roleId="tp25.1138056395725" targetNodeId="gnwj.2042272859107062480" resolveInfo="bottomBorder" />
                           </node>
                         </node>
-                        <node role="ifTrue" roleId="tpee.1163668922816" type="tpee.StaticFieldReference" typeId="tpee.1070533707846" id="2042272859107594246">
-                          <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="soat.~CellStyle%dBORDER_THIN" resolveInfo="BORDER_THIN" />
-                          <link role="classifier" roleId="tpee.1144433057691" targetNodeId="soat.~CellStyle" resolveInfo="CellStyle" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node role="statement" roleId="tpee.1068581517665" type="tpee.IfStatement" typeId="tpee.1068580123159" id="2042272859110733387">
+                  <node role="ifTrue" roleId="tpee.1068580123161" type="tpee.StatementList" typeId="tpee.1068580123136" id="2042272859110733388">
+                    <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="2042272859110733480">
+                      <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="2042272859110733502">
+                        <node role="operand" roleId="tpee.1197027771414" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="2042272859110733481">
+                          <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="2042272859107053719" resolveInfo="cellStyle" />
                         </node>
-                        <node role="ifFalse" roleId="tpee.1163668934364" type="tpee.TernaryOperatorExpression" typeId="tpee.1163668896201" id="2042272859107594247">
-                          <node role="condition" roleId="tpee.1163668914799" type="tpee.DotExpression" typeId="tpee.1197027756228" id="2042272859107594248">
-                            <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="2042272859107594249">
-                              <node role="operand" roleId="tpee.1197027771414" type="tp2q.ForEachVariableReference" typeId="tp2q.1153944233411" id="2042272859107594250">
+                        <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="2042272859110734374">
+                          <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="yb8z.~XSSFCellStyle%dsetAlignment(short)%cvoid" resolveInfo="setAlignment" />
+                          <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="2042272859110734380">
+                            <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="770w.2042272859110708041" resolveInfo="alignmentFor" />
+                            <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="770w.2042272859110708039" resolveInfo="AlignmentHelper" />
+                            <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.DotExpression" typeId="tpee.1197027756228" id="2042272859110734405">
+                              <node role="operand" roleId="tpee.1197027771414" type="tp2q.ForEachVariableReference" typeId="tp2q.1153944233411" id="2042272859110734384">
                                 <link role="variable" roleId="tp2q.1153944258490" targetNodeId="2042272859107053621" resolveInfo="style" />
                               </node>
-                              <node role="operation" roleId="tpee.1197027833540" type="tp25.SPropertyAccess" typeId="tp25.1138056022639" id="2042272859107594283">
-                                <link role="property" roleId="tp25.1138056395725" targetNodeId="gnwj.2042272859107062480" resolveInfo="bottomBorder" />
-                              </node>
-                            </node>
-                            <node role="operation" roleId="tpee.1197027833540" type="tp25.Property_HasValue_Enum" typeId="tp25.1146171026731" id="2042272859107594252">
-                              <node role="value" roleId="tp25.1146171026732" type="tp25.EnumMemberReference" typeId="tp25.1138676077309" id="2042272859107594253">
-                                <link role="enumMember" roleId="tp25.1138676095763" targetNodeId="gnwj.2042272859107062477" />
+                              <node role="operation" roleId="tpee.1197027833540" type="tp25.SPropertyAccess" typeId="tp25.1138056022639" id="2042272859110734412">
+                                <link role="property" roleId="tp25.1138056395725" targetNodeId="gnwj.2042272859110711037" resolveInfo="alignment" />
                               </node>
                             </node>
                           </node>
-                          <node role="ifTrue" roleId="tpee.1163668922816" type="tpee.StaticFieldReference" typeId="tpee.1070533707846" id="2042272859107594254">
-                            <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="soat.~CellStyle%dBORDER_MEDIUM" resolveInfo="BORDER_MEDIUM" />
-                            <link role="classifier" roleId="tpee.1144433057691" targetNodeId="soat.~CellStyle" resolveInfo="CellStyle" />
-                          </node>
-                          <node role="ifFalse" roleId="tpee.1163668934364" type="tpee.TernaryOperatorExpression" typeId="tpee.1163668896201" id="2042272859107594255">
-                            <node role="condition" roleId="tpee.1163668914799" type="tpee.DotExpression" typeId="tpee.1197027756228" id="2042272859107594256">
-                              <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="2042272859107594257">
-                                <node role="operand" roleId="tpee.1197027771414" type="tp2q.ForEachVariableReference" typeId="tp2q.1153944233411" id="2042272859107594258">
-                                  <link role="variable" roleId="tp2q.1153944258490" targetNodeId="2042272859107053621" resolveInfo="style" />
-                                </node>
-                                <node role="operation" roleId="tpee.1197027833540" type="tp25.SPropertyAccess" typeId="tp25.1138056022639" id="2042272859107594285">
-                                  <link role="property" roleId="tp25.1138056395725" targetNodeId="gnwj.2042272859107062480" resolveInfo="bottomBorder" />
-                                </node>
-                              </node>
-                              <node role="operation" roleId="tpee.1197027833540" type="tp25.Property_HasValue_Enum" typeId="tp25.1146171026731" id="2042272859107594260">
-                                <node role="value" roleId="tp25.1146171026732" type="tp25.EnumMemberReference" typeId="tp25.1138676077309" id="2042272859107594261">
-                                  <link role="enumMember" roleId="tp25.1138676095763" targetNodeId="gnwj.2042272859107062479" />
-                                </node>
-                              </node>
-                            </node>
-                            <node role="ifTrue" roleId="tpee.1163668922816" type="tpee.StaticFieldReference" typeId="tpee.1070533707846" id="2042272859107594262">
-                              <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="soat.~CellStyle%dBORDER_THICK" resolveInfo="BORDER_THICK" />
-                              <link role="classifier" roleId="tpee.1144433057691" targetNodeId="soat.~CellStyle" resolveInfo="CellStyle" />
-                            </node>
-                            <node role="ifFalse" roleId="tpee.1163668934364" type="tpee.TernaryOperatorExpression" typeId="tpee.1163668896201" id="2042272859107594263">
-                              <node role="condition" roleId="tpee.1163668914799" type="tpee.DotExpression" typeId="tpee.1197027756228" id="2042272859107594264">
-                                <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="2042272859107594265">
-                                  <node role="operand" roleId="tpee.1197027771414" type="tp2q.ForEachVariableReference" typeId="tp2q.1153944233411" id="2042272859107594266">
-                                    <link role="variable" roleId="tp2q.1153944258490" targetNodeId="2042272859107053621" resolveInfo="style" />
-                                  </node>
-                                  <node role="operation" roleId="tpee.1197027833540" type="tp25.SPropertyAccess" typeId="tp25.1138056022639" id="2042272859107594287">
-                                    <link role="property" roleId="tp25.1138056395725" targetNodeId="gnwj.2042272859107062480" resolveInfo="bottomBorder" />
-                                  </node>
-                                </node>
-                                <node role="operation" roleId="tpee.1197027833540" type="tp25.Property_HasValue_Enum" typeId="tp25.1146171026731" id="2042272859107594268">
-                                  <node role="value" roleId="tp25.1146171026732" type="tp25.EnumMemberReference" typeId="tp25.1138676077309" id="2042272859107594269">
-                                    <link role="enumMember" roleId="tp25.1138676095763" targetNodeId="gnwj.2042272859107062478" />
-                                  </node>
-                                </node>
-                              </node>
-                              <node role="ifTrue" roleId="tpee.1163668922816" type="tpee.StaticFieldReference" typeId="tpee.1070533707846" id="2042272859107594270">
-                                <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="soat.~CellStyle%dBORDER_DOUBLE" resolveInfo="BORDER_DOUBLE" />
-                                <link role="classifier" roleId="tpee.1144433057691" targetNodeId="soat.~CellStyle" resolveInfo="CellStyle" />
-                              </node>
-                              <node role="ifFalse" roleId="tpee.1163668934364" type="tpee.StaticFieldReference" typeId="tpee.1070533707846" id="2042272859107594271">
-                                <link role="classifier" roleId="tpee.1144433057691" targetNodeId="soat.~CellStyle" resolveInfo="CellStyle" />
-                                <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="soat.~CellStyle%dBORDER_NONE" resolveInfo="BORDER_NONE" />
-                              </node>
-                            </node>
-                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node role="condition" roleId="tpee.1068580123160" type="tpee.NotExpression" typeId="tpee.1081516740877" id="2042272859110733422">
+                    <node role="expression" roleId="tpee.1081516765348" type="tpee.DotExpression" typeId="tpee.1197027756228" id="2042272859110733473">
+                      <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="2042272859110733445">
+                        <node role="operand" roleId="tpee.1197027771414" type="tp2q.ForEachVariableReference" typeId="tp2q.1153944233411" id="2042272859110733424">
+                          <link role="variable" roleId="tp2q.1153944258490" targetNodeId="2042272859107053621" resolveInfo="style" />
+                        </node>
+                        <node role="operation" roleId="tpee.1197027833540" type="tp25.SPropertyAccess" typeId="tp25.1138056022639" id="2042272859110733451">
+                          <link role="property" roleId="tp25.1138056395725" targetNodeId="gnwj.2042272859110711037" resolveInfo="alignment" />
+                        </node>
+                      </node>
+                      <node role="operation" roleId="tpee.1197027833540" type="tp25.Property_HasValue_Enum" typeId="tp25.1146171026731" id="2042272859110733478">
+                        <node role="value" roleId="tp25.1146171026732" type="tp25.EnumMemberReference" typeId="tp25.1138676077309" id="2042272859110733479">
+                          <link role="enumMember" roleId="tp25.1138676095763" targetNodeId="gnwj.2042272859110711033" />
                         </node>
                       </node>
                     </node>
@@ -690,17 +581,8 @@
                                   <node role="actualArgument" roleId="tpee.1068499141038" type="tp2q.MapElement" typeId="tp2q.1197932370469" id="2042272859107063778">
                                     <node role="key" roleId="tp2q.1197932525128" type="tpee.DotExpression" typeId="tpee.1197027756228" id="2042272859107063830">
                                       <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="2042272859107586964">
-                                        <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="2042272859107586965">
-                                          <node role="operand" roleId="tpee.1197027771414" type="tp2q.ForEachVariableReference" typeId="tp2q.1153944233411" id="2042272859107586966">
-                                            <link role="variable" roleId="tp2q.1153944258490" targetNodeId="2042272859106998933" resolveInfo="cell" />
-                                          </node>
-                                          <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_GetAncestorOperation" typeId="tp25.1171407110247" id="2042272859107586967">
-                                            <node role="parameter" roleId="tp25.1144104376918" type="tp25.OperationParm_Concept" typeId="tp25.1144101972840" id="2042272859107586968">
-                                              <node role="conceptArgument" roleId="tp25.1207343664468" type="tp25.RefConcept_Reference" typeId="tp25.1177026924588" id="2042272859107586969">
-                                                <link role="conceptDeclaration" roleId="tp25.1177026940964" targetNodeId="gnwj.2042272859106810439" resolveInfo="Row" />
-                                              </node>
-                                            </node>
-                                          </node>
+                                        <node role="operand" roleId="tpee.1197027771414" type="tp2q.ForEachVariableReference" typeId="tp2q.1153944233411" id="2042272859107586966">
+                                          <link role="variable" roleId="tp2q.1153944258490" targetNodeId="2042272859106998933" resolveInfo="cell" />
                                         </node>
                                         <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="2042272859107586970">
                                           <link role="link" roleId="tp25.1138056516764" targetNodeId="gnwj.2042272859107586908" />
@@ -720,17 +602,8 @@
                           </node>
                           <node role="condition" roleId="tpee.1068580123160" type="tpee.DotExpression" typeId="tpee.1197027756228" id="2042272859107063720">
                             <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="2042272859107063692">
-                              <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="2042272859107586948">
-                                <node role="operand" roleId="tpee.1197027771414" type="tp2q.ForEachVariableReference" typeId="tp2q.1153944233411" id="2042272859107063671">
-                                  <link role="variable" roleId="tp2q.1153944258490" targetNodeId="2042272859106998933" resolveInfo="cell" />
-                                </node>
-                                <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_GetAncestorOperation" typeId="tp25.1171407110247" id="2042272859107586957">
-                                  <node role="parameter" roleId="tp25.1144104376918" type="tp25.OperationParm_Concept" typeId="tp25.1144101972840" id="2042272859107586958">
-                                    <node role="conceptArgument" roleId="tp25.1207343664468" type="tp25.RefConcept_Reference" typeId="tp25.1177026924588" id="2042272859107586961">
-                                      <link role="conceptDeclaration" roleId="tp25.1177026940964" targetNodeId="gnwj.2042272859106810439" resolveInfo="Row" />
-                                    </node>
-                                  </node>
-                                </node>
+                              <node role="operand" roleId="tpee.1197027771414" type="tp2q.ForEachVariableReference" typeId="tp2q.1153944233411" id="2042272859107063671">
+                                <link role="variable" roleId="tp2q.1153944258490" targetNodeId="2042272859106998933" resolveInfo="cell" />
                               </node>
                               <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="2042272859107586963">
                                 <link role="link" roleId="tp25.1138056516764" targetNodeId="gnwj.2042272859107586908" />
