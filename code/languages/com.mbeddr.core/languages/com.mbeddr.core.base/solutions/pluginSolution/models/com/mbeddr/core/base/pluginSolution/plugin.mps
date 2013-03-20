@@ -72,9 +72,7 @@
   <import index="oj8w" modelUID="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#javax.swing.text(JDK/javax.swing.text@java_stub)" version="-1" implicit="yes" />
   <import index="h2w" modelUID="f:java_stub#742f6602-5a2f-4313-aa6e-ae1cd4ffdc61#com.intellij.openapi.wm(MPS.Platform/com.intellij.openapi.wm@java_stub)" version="-1" implicit="yes" />
   <roots>
-    <node type="tgbt.StandalonePluginDescriptor" typeId="tgbt.7520713872864775836" id="1611636138415080827">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="documentationStuff" />
-    </node>
+    <node type="tgbt.StandalonePluginDescriptor" typeId="tgbt.7520713872864775836" id="1611636138415080827" />
     <node type="4w5v.RefactoringAction" typeId="4w5v.7518061998923573137" id="7518061998923645758">
       <property name="name" nameId="tpck.1169194664001" value="Add Documentation" />
       <property name="virtualPackage" nameId="tpck.1193676396447" value="documentationStuff" />
