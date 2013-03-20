@@ -9,7 +9,7 @@
   <import index="tp1t" modelUID="r:00000000-0000-4000-0000-011c8959030d(jetbrains.mps.lang.constraints.structure)" version="9" implicit="yes" />
   <roots>
     <node type="tp1t.ConceptConstraints" typeId="tp1t.1213093968558" id="2042272859107053545">
-      <link role="concept" roleId="tp1t.1213093996982" targetNodeId="gnwj.2042272859106810439" resolveInfo="Row" />
+      <link role="concept" roleId="tp1t.1213093996982" targetNodeId="gnwj.2042272859106851282" resolveInfo="ICell" />
     </node>
     <node type="tp1t.ConceptConstraints" typeId="tp1t.1213093968558" id="2042272859110130827">
       <link role="concept" roleId="tp1t.1213093996982" targetNodeId="gnwj.2042272859107062581" resolveInfo="Color" />

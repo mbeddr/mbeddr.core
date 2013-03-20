@@ -46,6 +46,9 @@
         <modelRoot path="${language_descriptor}/generator/template" />
       </models>
       <external-templates />
+      <dependencies>
+        <dependency reexport="false">1d891f7b-dc93-42f9-a4bc-b016656b14e2(com.mbeddr.spreadsheat)</dependency>
+      </dependencies>
       <usedLanguages>
         <usedLanguage>b401a680-8325-4110-8fd3-84331ff25bef(jetbrains.mps.lang.generator)</usedLanguage>
         <usedLanguage>d7706f63-9be2-479c-a3da-ae92af1e64d5(jetbrains.mps.lang.generator.generationContext)</usedLanguage>
