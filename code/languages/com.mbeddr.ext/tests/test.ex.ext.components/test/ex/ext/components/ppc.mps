@@ -13,6 +13,7 @@
   <import index="yz9a" modelUID="r:734c02dd-cc16-4184-99eb-5fd9f43aa37e(com.mbeddr.core.unittest.structure)" version="0" implicit="yes" />
   <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="5" implicit="yes" />
   <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="3" implicit="yes" />
+  <import index="k146" modelUID="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" version="5" implicit="yes" />
   <roots>
     <node type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="6591434695300767006">
       <property name="name" nameId="tpck.1169194664001" value="CalculatorExample" />
@@ -30,24 +31,24 @@
     </node>
   </roots>
   <root id="6591434695300767006">
-    <node role="contents" roleId="x27k.6437088627575722833" type=".com.mbeddr.core.util.structure.MessageDefinitionTable" id="6591434695301152732">
-      <property name="name" value="CalcMessages" />
-      <node role="messages" type=".com.mbeddr.core.util.structure.MessageDefinition" id="6591434695301152733">
-        <property name="active" value="true" />
-        <property name="name" value="ppcfailed" />
-        <property name="text" value="ppc failed" />
-        <property name="kind" value="2" />
-        <property name="count" value="true" />
-        <node role="properties" type=".com.mbeddr.core.util.structure.MessageProperty" id="7085783497127189708">
-          <property name="name" value="opID" />
-          <node role="type" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="7085783497127189709">
+    <node role="contents" roleId="x27k.6437088627575722833" type="k146.MessageDefinitionTable" typeId="k146.2688792604367903085" id="6591434695301152732">
+      <property name="name" nameId="tpck.1169194664001" value="CalcMessages" />
+      <node role="messages" roleId="k146.2688792604367903095" type="k146.MessageDefinition" typeId="k146.2688792604367903087" id="6591434695301152733">
+        <property name="active" nameId="k146.2688792604367947988" value="true" />
+        <property name="name" nameId="tpck.1169194664001" value="ppcfailed" />
+        <property name="text" nameId="k146.2688792604367903089" value="ppc failed" />
+        <property name="kind" nameId="k146.2688792604367903094" value="2" />
+        <property name="count" nameId="k146.6209278014151014065" value="true" />
+        <node role="properties" roleId="k146.767515563077204474" type="k146.MessageProperty" typeId="k146.767515563077204464" id="7085783497127189708">
+          <property name="name" nameId="tpck.1169194664001" value="opID" />
+          <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="7085783497127189709">
             <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
             <property name="const" nameId="mj1l.2941277002445651368" value="false" />
           </node>
         </node>
-        <node role="properties" type=".com.mbeddr.core.util.structure.MessageProperty" id="7085783497127189710">
-          <property name="name" value="constraintID" />
-          <node role="type" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="7085783497127189711">
+        <node role="properties" roleId="k146.767515563077204474" type="k146.MessageProperty" typeId="k146.767515563077204464" id="7085783497127189710">
+          <property name="name" nameId="tpck.1169194664001" value="constraintID" />
+          <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="7085783497127189711">
             <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
             <property name="const" nameId="mj1l.2941277002445651368" value="false" />
           </node>
@@ -408,8 +409,8 @@
       <property name="compilerOptions" nameId="51wr.5323740605968447025" value="-std=c99" />
       <property name="debugOptions" nameId="51wr.2736179788492003937" value="-g" />
     </node>
-    <node role="configurationItems" roleId="vs0r.4459718605982007338" type=".com.mbeddr.core.util.structure.ReportingConfiguration" id="4459718605982799804">
-      <node role="strategy" type=".com.mbeddr.core.util.structure.PrintfReportingStrategy" id="4459718605982799805" />
+    <node role="configurationItems" roleId="vs0r.4459718605982007338" type="k146.ReportingConfiguration" typeId="k146.4459718605982051949" id="4459718605982799804">
+      <node role="strategy" roleId="k146.4459718605982051999" type="k146.PrintfReportingStrategy" typeId="k146.4459718605982051980" id="4459718605982799805" />
     </node>
     <node role="configurationItems" roleId="vs0r.4459718605982007338" type="v7ag.ComponentsConfigItem" typeId="v7ag.2103658896110121032" id="2103658896110642446">
       <node role="genStrategy" roleId="v7ag.2103658896110238743" type="p7vm.NoMwComponentsGenStrategy" typeId="p7vm.2103658896110278831" id="2103658896110642448">
@@ -418,20 +419,20 @@
     </node>
   </root>
   <root id="6209278014151173611">
-    <node role="contents" roleId="x27k.6437088627575722833" type=".com.mbeddr.core.util.structure.MessageDefinitionTable" id="6209278014151173612">
-      <property name="name" value="CalcMessages" />
-      <node role="messages" type=".com.mbeddr.core.util.structure.MessageDefinition" id="6209278014151173613">
-        <property name="active" value="true" />
-        <property name="name" value="ppcfailed" />
-        <property name="text" value="pre or post condition failed" />
-        <property name="count" value="true" />
-        <node role="properties" type=".com.mbeddr.core.util.structure.MessageProperty" id="6209278014151173614">
-          <property name="name" value="operation" />
-          <node role="type" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="6775244185295847784" />
+    <node role="contents" roleId="x27k.6437088627575722833" type="k146.MessageDefinitionTable" typeId="k146.2688792604367903085" id="6209278014151173612">
+      <property name="name" nameId="tpck.1169194664001" value="CalcMessages" />
+      <node role="messages" roleId="k146.2688792604367903095" type="k146.MessageDefinition" typeId="k146.2688792604367903087" id="6209278014151173613">
+        <property name="active" nameId="k146.2688792604367947988" value="true" />
+        <property name="name" nameId="tpck.1169194664001" value="ppcfailed" />
+        <property name="text" nameId="k146.2688792604367903089" value="pre or post condition failed" />
+        <property name="count" nameId="k146.6209278014151014065" value="true" />
+        <node role="properties" roleId="k146.767515563077204474" type="k146.MessageProperty" typeId="k146.767515563077204464" id="6209278014151173614">
+          <property name="name" nameId="tpck.1169194664001" value="operation" />
+          <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="6775244185295847784" />
         </node>
-        <node role="properties" type=".com.mbeddr.core.util.structure.MessageProperty" id="6209278014151173616">
-          <property name="name" value="ppc" />
-          <node role="type" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="6209278014151173617" />
+        <node role="properties" roleId="k146.767515563077204474" type="k146.MessageProperty" typeId="k146.767515563077204464" id="6209278014151173616">
+          <property name="name" nameId="tpck.1169194664001" value="ppc" />
+          <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="6209278014151173617" />
         </node>
       </node>
     </node>
@@ -779,20 +780,20 @@
     </node>
   </root>
   <root id="6209278014151496950">
-    <node role="contents" roleId="x27k.6437088627575722833" type=".com.mbeddr.core.util.structure.MessageDefinitionTable" id="6209278014151498287">
-      <property name="name" value="Messages" />
-      <node role="messages" type=".com.mbeddr.core.util.structure.MessageDefinition" id="6209278014151498288">
-        <property name="active" value="true" />
-        <property name="name" value="protocolError" />
-        <property name="text" value="protocol error" />
-        <property name="count" value="true" />
-        <node role="properties" type=".com.mbeddr.core.util.structure.MessageProperty" id="4058325937810649121">
-          <property name="name" value="operationIndex" />
-          <node role="type" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="4058325937810649122" />
+    <node role="contents" roleId="x27k.6437088627575722833" type="k146.MessageDefinitionTable" typeId="k146.2688792604367903085" id="6209278014151498287">
+      <property name="name" nameId="tpck.1169194664001" value="Messages" />
+      <node role="messages" roleId="k146.2688792604367903095" type="k146.MessageDefinition" typeId="k146.2688792604367903087" id="6209278014151498288">
+        <property name="active" nameId="k146.2688792604367947988" value="true" />
+        <property name="name" nameId="tpck.1169194664001" value="protocolError" />
+        <property name="text" nameId="k146.2688792604367903089" value="protocol error" />
+        <property name="count" nameId="k146.6209278014151014065" value="true" />
+        <node role="properties" roleId="k146.767515563077204474" type="k146.MessageProperty" typeId="k146.767515563077204464" id="4058325937810649121">
+          <property name="name" nameId="tpck.1169194664001" value="operationIndex" />
+          <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="4058325937810649122" />
         </node>
-        <node role="properties" type=".com.mbeddr.core.util.structure.MessageProperty" id="6209278014151498292">
-          <property name="name" value="actualState" />
-          <node role="type" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="6209278014151537145" />
+        <node role="properties" roleId="k146.767515563077204474" type="k146.MessageProperty" typeId="k146.767515563077204464" id="6209278014151498292">
+          <property name="name" nameId="tpck.1169194664001" value="actualState" />
+          <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="6209278014151537145" />
         </node>
       </node>
     </node>
