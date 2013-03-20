@@ -119,6 +119,11 @@
       <property name="name" nameId="tpck.1169194664001" value="BackgroundColorStyleProperty" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="2042272859111088576" resolveInfo="ColorStyleProperty" />
     </node>
+    <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="8857110853482109456">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="style.font" />
+      <property name="name" nameId="tpck.1169194664001" value="FontSizeStyleProperty" />
+      <link role="extends" roleId="tpce.1071489389519" targetNodeId="2042272859111088543" resolveInfo="AbstractStyleProperty" />
+    </node>
   </roots>
   <root id="2042272859106810418">
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="2042272859106810421">
@@ -393,6 +398,16 @@
   <root id="2042272859111088600">
     <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="2042272859111088601">
       <property name="value" nameId="tpce.1105725733873" value="background color" />
+      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473891462" resolveInfo="alias" />
+    </node>
+  </root>
+  <root id="8857110853482109456">
+    <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="8857110853482109457">
+      <property name="name" nameId="tpck.1169194664001" value="size" />
+      <link role="dataType" roleId="tpce.1082985295845" targetNodeId="tpck.1082983657062" resolveInfo="integer" />
+    </node>
+    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="8857110853482109458">
+      <property name="value" nameId="tpce.1105725733873" value="font size" />
       <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473891462" resolveInfo="alias" />
     </node>
   </root>

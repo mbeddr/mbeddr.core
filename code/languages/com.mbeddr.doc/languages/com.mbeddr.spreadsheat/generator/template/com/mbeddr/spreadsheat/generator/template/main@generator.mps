@@ -325,6 +325,46 @@
                     <node role="operation" roleId="tpee.1197027833540" type="tpee.IsNotEmptyOperation" typeId="tpee.1225271408483" id="2042272859107585315" />
                   </node>
                 </node>
+                <node role="statement" roleId="tpee.1068581517665" type="tpee.IfStatement" typeId="tpee.1068580123159" id="8857110853482109513">
+                  <node role="ifTrue" roleId="tpee.1068580123161" type="tpee.StatementList" typeId="tpee.1068580123136" id="8857110853482109514">
+                    <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="8857110853482109515">
+                      <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="8857110853482109516">
+                        <node role="operand" roleId="tpee.1197027771414" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="8857110853482109517">
+                          <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="2042272859107063395" resolveInfo="font" />
+                        </node>
+                        <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="8857110853482109518">
+                          <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="yb8z.~XSSFFont%dsetFontHeightInPoints(short)%cvoid" resolveInfo="setFontHeightInPoints" />
+                          <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.ParenthesizedExpression" typeId="tpee.1079359253375" id="8857110853482109556">
+                            <node role="expression" roleId="tpee.1079359253376" type="tpee.CastExpression" typeId="tpee.1070534934090" id="8857110853482109557">
+                              <node role="expression" roleId="tpee.1070534934092" type="tpee.DotExpression" typeId="tpee.1197027756228" id="8857110853482109558">
+                                <node role="operand" roleId="tpee.1197027771414" type="tp2q.ForEachVariableReference" typeId="tp2q.1153944233411" id="8857110853482109559">
+                                  <link role="variable" roleId="tp2q.1153944258490" targetNodeId="2042272859107053621" resolveInfo="style" />
+                                </node>
+                                <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_ConceptMethodCall" typeId="tp25.1179409122411" id="8857110853482109560">
+                                  <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="watd.8857110853482109468" resolveInfo="fontSize" />
+                                </node>
+                              </node>
+                              <node role="type" roleId="tpee.1070534934091" type="tpee.ShortType" typeId="tpee.1070533982221" id="8857110853482109561" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node role="condition" roleId="tpee.1068580123160" type="tpee.GreaterThanExpression" typeId="tpee.1081506762703" id="8857110853482109549">
+                    <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="8857110853482109552">
+                      <property name="value" nameId="tpee.1068580320021" value="0" />
+                    </node>
+                    <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.DotExpression" typeId="tpee.1197027756228" id="8857110853482109523">
+                      <node role="operand" roleId="tpee.1197027771414" type="tp2q.ForEachVariableReference" typeId="tp2q.1153944233411" id="8857110853482109524">
+                        <link role="variable" roleId="tp2q.1153944258490" targetNodeId="2042272859107053621" resolveInfo="style" />
+                      </node>
+                      <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_ConceptMethodCall" typeId="tp25.1179409122411" id="8857110853482109528">
+                        <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="watd.8857110853482109468" resolveInfo="fontSize" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
                 <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="2042272859107063361">
                   <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="2042272859107063425">
                     <node role="operand" roleId="tpee.1197027771414" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="2042272859107063400">

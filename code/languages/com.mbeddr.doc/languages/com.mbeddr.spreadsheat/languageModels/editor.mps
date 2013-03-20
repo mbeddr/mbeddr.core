@@ -62,6 +62,10 @@
       <property name="virtualPackage" nameId="tpck.1193676396447" value="style.color" />
       <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="gnwj.2042272859111088576" resolveInfo="ColorStyleProperty" />
     </node>
+    <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="8857110853482109459">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="style.font" />
+      <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="gnwj.8857110853482109456" resolveInfo="FontSizeStyleProperty" />
+    </node>
   </roots>
   <root id="2042272859106810422">
     <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="2042272859106810424">
@@ -695,6 +699,17 @@
         </node>
       </node>
       <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Horizontal" typeId="tpc2.1106270549637" id="2042272859111088586" />
+    </node>
+  </root>
+  <root id="8857110853482109459">
+    <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="8857110853482109461">
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Component" typeId="tpc2.1078939183254" id="8857110853482109464">
+        <link role="editorComponent" roleId="tpc2.1078939183255" targetNodeId="2042272859111088520" resolveInfo="alias" />
+      </node>
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Property" typeId="tpc2.1073389658414" id="8857110853482109466">
+        <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="gnwj.8857110853482109457" resolveInfo="size" />
+      </node>
+      <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Horizontal" typeId="tpc2.1106270549637" id="8857110853482109463" />
     </node>
   </root>
 </model>
