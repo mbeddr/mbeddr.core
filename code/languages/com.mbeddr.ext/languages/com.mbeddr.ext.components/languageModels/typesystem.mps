@@ -18,7 +18,7 @@
   <import index="tpd4" modelUID="r:00000000-0000-4000-0000-011c895902b4(jetbrains.mps.lang.typesystem.structure)" version="3" implicit="yes" />
   <import index="tp2c" modelUID="r:00000000-0000-4000-0000-011c89590338(jetbrains.mps.baseLanguage.closures.structure)" version="3" implicit="yes" />
   <import index="e2lb" modelUID="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" version="-1" implicit="yes" />
-  <import index="k146" modelUID="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" version="3" implicit="yes" />
+  <import index="k146" modelUID="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" version="5" implicit="yes" />
   <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="5" implicit="yes" />
   <import index="n7pc" modelUID="r:1f4b6c73-0d50-4599-bc8a-9f6948adf243(com.mbeddr.core.expressions.typesystem)" version="1" implicit="yes" />
   <roots>
@@ -3201,15 +3201,6 @@
             <node role="ifFalseStatement" roleId="tpee.1082485599094" type="tpee.BlockStatement" typeId="tpee.1082485599095" id="2546541902879120857">
               <node role="statements" roleId="tpee.1082485599096" type="tpee.StatementList" typeId="tpee.1068580123136" id="2546541902879120858">
                 <node role="statement" roleId="tpee.1068581517665" type="tpd4.ReportErrorStatement" typeId="tpd4.1175517767210" id="2546541902879120859">
-                  <node role="errorString" roleId="tpd4.1175517851849" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="2546541902879120860">
-                    <property name="value" nameId="tpee.1070475926801" value="exactly two int8_t arguments needed (operation ID and protocol ID)" />
-                  </node>
-                  <node role="nodeToReport" roleId="tpd4.1227096802790" type="tpd4.ApplicableNodeReference" typeId="tpd4.1174650418652" id="2546541902879120861">
-                    <link role="applicableNode" roleId="tpd4.1174650432090" targetNodeId="4058325937810649165" resolveInfo="csi" />
-                  </node>
-                  <node role="messageTarget" roleId="tpd4.1227096836496" type="tpd4.ReferenceMessageTarget" typeId="tpd4.1227096620180" id="2546541902879120862">
-                    <link role="linkDeclaration" roleId="tpd4.1227096645744" targetNodeId="v7ag.6209278014151498296" />
-                  </node>
                   <node role="helginsIntention" roleId="tpd4.1227096802791" type="tpd4.TypesystemIntention" typeId="tpd4.1210784285454" id="7085783497127070134">
                     <link role="quickFix" roleId="tpd4.1216388525179" targetNodeId="7085783497127070128" resolveInfo="fixPPCMessage" />
                     <node role="actualArgument" roleId="tpd4.1210784493590" type="tpd4.TypesystemIntentionArgument" typeId="tpd4.1210784384552" id="7085783497127070135">
@@ -3223,6 +3214,15 @@
                         </node>
                       </node>
                     </node>
+                  </node>
+                  <node role="errorString" roleId="tpd4.1175517851849" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="2546541902879120860">
+                    <property name="value" nameId="tpee.1070475926801" value="exactly two int8_t arguments needed (operation ID and protocol ID)" />
+                  </node>
+                  <node role="nodeToReport" roleId="tpd4.1227096802790" type="tpd4.ApplicableNodeReference" typeId="tpd4.1174650418652" id="2546541902879120861">
+                    <link role="applicableNode" roleId="tpd4.1174650432090" targetNodeId="4058325937810649165" resolveInfo="csi" />
+                  </node>
+                  <node role="messageTarget" roleId="tpd4.1227096836496" type="tpd4.ReferenceMessageTarget" typeId="tpd4.1227096620180" id="2546541902879120862">
+                    <link role="linkDeclaration" roleId="tpd4.1227096645744" targetNodeId="v7ag.6209278014151498296" />
                   </node>
                 </node>
               </node>
