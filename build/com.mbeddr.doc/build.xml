@@ -268,8 +268,50 @@
       <zipfileset dir="${mbeddr.github.core.home}/code/languages/com.mbeddr.doc/languages/com.mbeddr.doc.meta/languageModels" includes="**/*.mps, **/*.metadata, **/*.history" prefix="module/languageModels" />
       <zipfileset dir="${mbeddr.github.core.home}/code/languages/com.mbeddr.doc/languages/com.mbeddr.doc.meta/generator/template" includes="**/*.mps, **/*.metadata, **/*.history" prefix="module/generator/template" />
     </jar>
+    <mkdir dir="${build.tmp}/default/com.mbeddr.spreadsheat.jar" />
+    <mkdir dir="${build.tmp}/default/com.mbeddr.spreadsheat.jar/META-INF" />
+    <echoxml file="${build.tmp}/default/com.mbeddr.spreadsheat.jar/META-INF/module.xml">
+      <module namespace="com.mbeddr.spreadsheat" type="language" uuid="1d891f7b-dc93-42f9-a4bc-b016656b14e2">
+        <dependencies>
+          <module ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" />
+          <module ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" />
+          <module ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224(MPS.Editor)" />
+          <module ref="4c6a28d1-2c60-478d-b36e-db9b3cbb21fb(closures.runtime)" />
+          <module ref="9b80526e-f0bf-4992-bdf5-cee39c1833f3(collections.runtime)" />
+          <module ref="a3e4657f-a76c-45bb-bbda-c764596ecc65(jetbrains.mps.baseLanguage.logging.runtime)" />
+          <module ref="d44dab97-aaac-44cb-9745-8a14db674c03(jetbrains.mps.baseLanguage.tuples.runtime)" />
+          <module ref="2af156ab-65c1-4a62-bd0d-ea734f71eab6(jetbrains.mps.dataFlow.runtime)" />
+          <module ref="8fe4c62a-2020-4ff4-8eda-f322a55bdc9f(jetbrains.mps.refactoring.runtime)" />
+        </dependencies>
+        <library jar="../../lib/commons-codec-1.5.jar" />
+        <library jar="../../lib/commons-logging-1.1.jar" />
+        <library jar="../../lib/dom4j-1.6.1.jar" />
+        <library jar="../../lib/junit-3.8.1.jar" />
+        <library jar="../../lib/log4j-1.2.13.jar" />
+        <library jar="../../lib/poi-3.9-20121203.jar" />
+        <library jar="../../lib/poi-excelant-3.9-20121203.jar" />
+        <library jar="../../lib/poi-ooxml-3.9-20121203.jar" />
+        <library jar="../../lib/poi-ooxml-schemas-3.9-20121203.jar" />
+        <library jar="../../lib/poi-scratchpad-3.9-20121203.jar" />
+        <library jar="../../lib/stax-api-1.0.1.jar" />
+        <library jar="../../lib/xmlbeans-2.3.0.jar" />
+        <sources jar="com.mbeddr.spreadsheat-src.jar" descriptor="spreadsheat.mpl" />
+      </module>
+    </echoxml>
+    <jar destfile="${build.tmp}/default/com.mbeddr.doc.zip/mbeddr.doc/languages/com.mbeddr.doc/com.mbeddr.spreadsheat.jar">
+      <fileset dir="${build.tmp}/java/out/com.mbeddr.spreadsheat" />
+      <fileset dir="${mbeddr.github.core.home}/code/languages/com.mbeddr.doc/languages/com.mbeddr.spreadsheat" includes="icons/**, resources/**" />
+      <fileset dir="${build.tmp}/default/com.mbeddr.spreadsheat.jar" />
+    </jar>
+    <jar destfile="${build.tmp}/default/com.mbeddr.doc.zip/mbeddr.doc/languages/com.mbeddr.doc/com.mbeddr.spreadsheat-src.jar">
+      <fileset dir="${mbeddr.github.core.home}/code/languages/com.mbeddr.doc/languages/com.mbeddr.spreadsheat/source_gen" includes="**/*.java" />
+      <zipfileset file="${mbeddr.github.core.home}/code/languages/com.mbeddr.doc/languages/com.mbeddr.spreadsheat/spreadsheat.mpl" prefix="module" />
+      <zipfileset dir="${mbeddr.github.core.home}/code/languages/com.mbeddr.doc/languages/com.mbeddr.spreadsheat/languageModels" includes="**/*.mps, **/*.metadata, **/*.history" prefix="module/languageModels" />
+      <zipfileset dir="${mbeddr.github.core.home}/code/languages/com.mbeddr.doc/languages/com.mbeddr.spreadsheat/generator/template" includes="**/*.mps, **/*.metadata, **/*.history" prefix="module/generator/template" />
+    </jar>
     <zip destfile="${build.layout}/com.mbeddr.doc.zip">
       <zipfileset file="${mbeddr.github.core.home}/code/languages/com.mbeddr.doc/devkits/com.mbeddr.documentation/com.mbeddr.documentation.devkit" prefix="mbeddr.doc/languages/com.mbeddr.doc" />
+      <zipfileset dir="${mbeddr.github.core.home}/code/languages/com.mbeddr.doc/languages/com.mbeddr.spreadsheat/lib" prefix="mbeddr.doc/lib" />
       <fileset dir="${build.tmp}/default/com.mbeddr.doc.zip" />
     </zip>
     <echo file="${build.layout}/build.properties">buildMPS.build.number=${buildMPS.build.number}${line.separator}buildMPS.date=${buildMPS.date}${line.separator}buildMPS.build.vcs.number=${buildMPS.build.vcs.number}${line.separator}buildMPS.teamcity.buildConfName=${buildMPS.teamcity.buildConfName}${line.separator}buildMPS.idea.platform.build.number=${buildMPS.idea.platform.build.number}${line.separator}buildCore.version=${buildCore.version}${line.separator}com.mbeddr.mpsutil.build.build.number=${com.mbeddr.mpsutil.build.build.number}</echo>
@@ -283,16 +325,16 @@
   </target>
   
   <target name="fetchDependencies">
-    <mkdir dir="${build.tmp}/deps/com.mbeddr.debugger.build/com.mbeddr.core.debugger.zip" />
-    <unzip src="${artifacts.com.mbeddr.debugger.build}/com.mbeddr.core.debugger.zip" dest="${build.tmp}/deps/com.mbeddr.debugger.build/com.mbeddr.core.debugger.zip" />
     <mkdir dir="${build.tmp}/deps/mps-multiline/mps-multiline.zip" />
     <unzip src="${artifacts.mps-multiline}/mps-multiline.zip" dest="${build.tmp}/deps/mps-multiline/mps-multiline.zip" />
+    <mkdir dir="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip" />
+    <unzip src="${artifacts.com.mbeddr.core.build}/com.mbeddr.core.zip" dest="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip" />
     <mkdir dir="${build.tmp}/deps/mps-richtext/mps-richtext.zip" />
     <unzip src="${artifacts.mps-richtext}/mps-richtext.zip" dest="${build.tmp}/deps/mps-richtext/mps-richtext.zip" />
     <mkdir dir="${build.tmp}/deps/com.mbeddr.mpsutil.build/com.mbeddr.mpsutil.zip" />
     <unzip src="${artifacts.com.mbeddr.mpsutil.build}/com.mbeddr.mpsutil.zip" dest="${build.tmp}/deps/com.mbeddr.mpsutil.build/com.mbeddr.mpsutil.zip" />
-    <mkdir dir="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip" />
-    <unzip src="${artifacts.com.mbeddr.core.build}/com.mbeddr.core.zip" dest="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip" />
+    <mkdir dir="${build.tmp}/deps/com.mbeddr.debugger.build/com.mbeddr.core.debugger.zip" />
+    <unzip src="${artifacts.com.mbeddr.debugger.build}/com.mbeddr.core.debugger.zip" dest="${build.tmp}/deps/com.mbeddr.debugger.build/com.mbeddr.core.debugger.zip" />
     <mkdir dir="${build.tmp}/deps/com.mbeddr.spawner.build/com.mbeddr.spawner.zip" />
     <unzip src="${artifacts.com.mbeddr.spawner.build}/com.mbeddr.spawner.zip" dest="${build.tmp}/deps/com.mbeddr.spawner.build/com.mbeddr.spawner.zip" />
   </target>
@@ -304,7 +346,7 @@
     <delete dir="${build.layout}" />
   </target>
   
-  <target name="compileJava" depends="java.compile.com.mbeddr.doc, java.compile.com.mbeddr.doc.c, java.compile.com.mbeddr.doc.expressions, java.compile.com.mbeddr.doc.gen_latex, java.compile.com.mbeddr.doc.gen_xhtml, java.compile.com.mbeddr.doc.latex, java.compile.com.mbeddr.doc.meta" />
+  <target name="compileJava" depends="java.compile.com.mbeddr.doc, java.compile.com.mbeddr.doc.c, java.compile.com.mbeddr.doc.expressions, java.compile.com.mbeddr.doc.gen_latex, java.compile.com.mbeddr.doc.gen_xhtml, java.compile.com.mbeddr.doc.latex, java.compile.com.mbeddr.doc.meta, java.compile.com.mbeddr.spreadsheat" />
   
   <target name="processResources" />
   
@@ -652,6 +694,59 @@
     </javac>
   </target>
   
+  <target name="java.compile.com.mbeddr.spreadsheat" depends="fetchDependencies">
+    <mkdir dir="${build.tmp}/java/out/com.mbeddr.spreadsheat" />
+    <javac destdir="${build.tmp}/java/out/com.mbeddr.spreadsheat" fork="true" includeantruntime="false">
+      <compilerarg value="-Xlint:none" />
+      <src>
+        <path location="${mbeddr.github.core.home}/code/languages/com.mbeddr.doc/languages/com.mbeddr.spreadsheat/source_gen" />
+      </src>
+      <classpath>
+        <fileset file="${artifacts.buildMPS}/lib/mps-closures.jar" />
+        <fileset file="${artifacts.buildMPS}/lib/mps-collections.jar" />
+        <fileset file="${artifacts.buildMPS}/lib/mps-tuples.jar" />
+        <fileset file="${artifacts.buildMPS}/lib/mps-core.jar" />
+        <fileset file="${artifacts.buildMPS}/lib/mps-editor-api.jar" />
+        <fileset file="${artifacts.buildMPS}/lib/mps-editor.jar" />
+        <fileset file="${artifacts.buildMPS}/lib/mps-platform.jar" />
+        <fileset file="${mbeddr.github.core.home}/code/languages/com.mbeddr.doc/languages/com.mbeddr.spreadsheat/lib/commons-codec-1.5.jar" />
+        <fileset file="${mbeddr.github.core.home}/code/languages/com.mbeddr.doc/languages/com.mbeddr.spreadsheat/lib/commons-logging-1.1.jar" />
+        <fileset file="${mbeddr.github.core.home}/code/languages/com.mbeddr.doc/languages/com.mbeddr.spreadsheat/lib/dom4j-1.6.1.jar" />
+        <fileset file="${mbeddr.github.core.home}/code/languages/com.mbeddr.doc/languages/com.mbeddr.spreadsheat/lib/junit-3.8.1.jar" />
+        <fileset file="${mbeddr.github.core.home}/code/languages/com.mbeddr.doc/languages/com.mbeddr.spreadsheat/lib/log4j-1.2.13.jar" />
+        <fileset file="${mbeddr.github.core.home}/code/languages/com.mbeddr.doc/languages/com.mbeddr.spreadsheat/lib/poi-3.9-20121203.jar" />
+        <fileset file="${mbeddr.github.core.home}/code/languages/com.mbeddr.doc/languages/com.mbeddr.spreadsheat/lib/poi-excelant-3.9-20121203.jar" />
+        <fileset file="${mbeddr.github.core.home}/code/languages/com.mbeddr.doc/languages/com.mbeddr.spreadsheat/lib/poi-ooxml-3.9-20121203.jar" />
+        <fileset file="${mbeddr.github.core.home}/code/languages/com.mbeddr.doc/languages/com.mbeddr.spreadsheat/lib/poi-ooxml-schemas-3.9-20121203.jar" />
+        <fileset file="${mbeddr.github.core.home}/code/languages/com.mbeddr.doc/languages/com.mbeddr.spreadsheat/lib/poi-scratchpad-3.9-20121203.jar" />
+        <fileset file="${mbeddr.github.core.home}/code/languages/com.mbeddr.doc/languages/com.mbeddr.spreadsheat/lib/stax-api-1.0.1.jar" />
+        <fileset file="${mbeddr.github.core.home}/code/languages/com.mbeddr.doc/languages/com.mbeddr.spreadsheat/lib/xmlbeans-2.3.0.jar" />
+        <fileset file="${artifacts.buildMPS}/lib/commons-logging-1.1.1.jar" />
+        <fileset file="${artifacts.buildMPS}/lib/org.eclipse.jdt.core_3.5.2.v_981_R35x.jar" />
+        <fileset file="${artifacts.buildMPS}/lib/guava-11.0.1.jar" />
+        <fileset file="${artifacts.buildMPS}/lib/jdom.jar" />
+        <fileset file="${artifacts.buildMPS}/lib/log4j.jar" />
+        <fileset file="${artifacts.buildMPS}/lib/trove4j.jar" />
+        <fileset file="${artifacts.buildMPS}/lib/xstream.jar" />
+        <fileset file="${artifacts.buildMPS}/lib/annotations.jar" />
+        <fileset file="${artifacts.buildMPS}/lib/commons-lang-2.4.jar" />
+        <fileset file="${artifacts.buildMPS}/lib/asm.jar" />
+        <fileset file="${artifacts.buildMPS}/lib/diffutils-1.2.1.jar" />
+        <fileset dir="${artifacts.buildMPS}/lib" includes="*.jar" />
+        <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/languages/com.mbeddr.core/com.mbeddr.core.base.jar" />
+        <fileset file="${build.tmp}/deps/mps-richtext/mps-richtext.zip/mps-richtext/languages/mps-richtext/de.slisson.mps.richtext.jar" />
+        <fileset file="${artifacts.buildMPS}/languages/baseLanguage/jetbrains.mps.baseLanguage.jar" />
+        <fileset file="${artifacts.buildMPS}/languages/baseLanguage/jetbrains.mps.baseLanguage.blTypes.jar" />
+        <fileset file="${artifacts.buildMPS}/languages/baseLanguage/jetbrains.mps.baseLanguage.closures.jar" />
+        <fileset file="${artifacts.buildMPS}/languages/baseLanguage/jetbrains.mps.baseLanguage.collections.jar" />
+        <fileset file="${artifacts.buildMPS}/languages/baseLanguage/jetbrains.mps.baseLanguage.jdk7.jar" />
+        <fileset file="${artifacts.buildMPS}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
+        <fileset file="${artifacts.buildMPS}/languages/languageDesign/jetbrains.mps.lang.structure.jar" />
+        <fileset file="${artifacts.buildMPS}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
+      </classpath>
+    </javac>
+  </target>
+  
   <target name="declare-mps-tasks">
     <taskdef resource="jetbrains/mps/build/ant/antlib.xml" classpathref="path.mps.ant.path" />
   </target>
@@ -757,6 +852,7 @@
       <chunk bootstrap="true">
         <module file="${mbeddr.github.core.home}/code/languages/com.mbeddr.doc/languages/com.mbeddr.doc/doc.mpl" bootstrap="true" />
         <module file="${mbeddr.github.core.home}/code/languages/com.mbeddr.doc/languages/com.mbeddr.doc.latex/com.mbeddr.doc.latex.mpl" />
+        <module file="${mbeddr.github.core.home}/code/languages/com.mbeddr.doc/languages/com.mbeddr.spreadsheat/spreadsheat.mpl" />
       </chunk>
       <chunk>
         <module file="${mbeddr.github.core.home}/code/languages/com.mbeddr.doc/languages/com.mbeddr.doc.c/com.mbeddr.doc.c.mpl" />

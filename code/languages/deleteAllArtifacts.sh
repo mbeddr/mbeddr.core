@@ -10,6 +10,10 @@ cd com.mbeddr.debugger
 ant delete-mps-generated-code
 cd ..
 
+cd com.mbeddr.doc
+ant delete-mps-generated-code
+cd ..
+
 cd com.mbeddr.core
 ant delete-mps-generated-code
 cd ..
