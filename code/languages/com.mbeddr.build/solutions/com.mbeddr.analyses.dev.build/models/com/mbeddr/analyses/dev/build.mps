@@ -1347,6 +1347,9 @@
         <node role="exports" roleId="kdzh.322010710375832962" type="kdzh.BuildMps_DevKitExportSolution" typeId="kdzh.322010710375832954" id="1009040730562493535">
           <link role="solution" roleId="kdzh.322010710375832955" targetNodeId="7247348105538928917" resolveInfo="com.mbeddr.analyses.nusmv.rt" />
         </node>
+        <node role="exports" roleId="kdzh.322010710375832962" type="kdzh.BuildMps_DevKitExportSolution" typeId="kdzh.322010710375832954" id="3809389242691549180">
+          <link role="solution" roleId="kdzh.322010710375832955" targetNodeId="7247348105538752506" resolveInfo="com.mbeddr.analyses.utils" />
+        </node>
       </node>
     </node>
     <node role="aspects" roleId="3ior.3542413272732620719" type="kdzh.BuildMpsAspect" typeId="kdzh.6503355885715333289" id="7360615763635671009">
