@@ -4,6 +4,9 @@
   <property name="build.tmp" location="${build.dir}/tmp/com.mbeddr.allInOne" />
   <property name="build.layout" location="${build.dir}/artifacts/com.mbeddr.allInOne" />
   <property name="mps_home" location="" />
+  <property name="multiline.artifacts" location="" />
+  <property name="richtext.artifacts" location="" />
+  <property name="override.artifacts" location="" />
   <property name="artifacts.buildMPS" location="${mps_home}" />
   <property name="artifacts.com.mbeddr.mpsutil.build" location="../com.mbeddr.mpsutil/build/artifacts/com.mbeddr.mpsutil.build" />
   <property name="artifacts.com.mbeddr.spawner.build" location="../com.mbeddr.spawner/build/artifacts/com.mbeddr.spawner.build" />
@@ -21,6 +24,9 @@
   <property name="artifacts.com.mbeddr.analyses.nusmv" location="../com.mbeddr.analyses/build/artifacts/com.mbeddr.analyses.nusmv" />
   <property name="artifacts.com.mbeddr.analyses.yices" location="../com.mbeddr.analyses/build/artifacts/com.mbeddr.analyses.yices" />
   <property name="artifacts.com.mbeddr.doc.build" location="../com.mbeddr.doc/build/artifacts/com.mbeddr.doc.build" />
+  <property name="artifacts.mps-richtext" location="${richtext.artifacts}" />
+  <property name="artifacts.mps-multiline" location="${multiline.artifacts}" />
+  <property name="artifacts.mps-editor-override" location="${override.artifacts}" />
   <property file="${artifacts.buildMPS}/build.properties" prefix="import.buildMPS" />
   <property file="${artifacts.com.mbeddr.mpsutil.build}/build.properties" prefix="import.com.mbeddr.mpsutil.build" />
   <property name="buildMPS.build.number" value="${import.buildMPS.buildMPS.build.number}" />
@@ -50,6 +56,9 @@
       <zipfileset dir="${build.tmp}/deps/com.mbeddr.analyses.nusmv/com.mbeddr.analyses.nusmv.zip" prefix="plugins" />
       <zipfileset dir="${build.tmp}/deps/com.mbeddr.analyses.yices/com.mbeddr.analyses.yices.zip" prefix="plugins" />
       <zipfileset dir="${build.tmp}/deps/com.mbeddr.doc.build/com.mbeddr.doc.zip" prefix="plugins" />
+      <zipfileset dir="${build.tmp}/deps/mps-multiline/mps-multiline.zip" prefix="plugins" />
+      <zipfileset dir="${build.tmp}/deps/mps-richtext/mps-richtext.zip" prefix="plugins" />
+      <zipfileset dir="${build.tmp}/deps/mps-editor-override/mps-editor-override.zip" prefix="plugins" />
     </zip>
     <echo file="${build.layout}/build.properties">buildMPS.build.number=${buildMPS.build.number}${line.separator}buildMPS.date=${buildMPS.date}${line.separator}buildMPS.build.vcs.number=${buildMPS.build.vcs.number}${line.separator}buildMPS.teamcity.buildConfName=${buildMPS.teamcity.buildConfName}${line.separator}buildMPS.idea.platform.build.number=${buildMPS.idea.platform.build.number}${line.separator}buildCore.version=${buildCore.version}${line.separator}com.mbeddr.mpsutil.build.build.number=${com.mbeddr.mpsutil.build.build.number}</echo>
   </target>
@@ -106,6 +115,12 @@
     <unzip src="${artifacts.com.mbeddr.analyses.yices}/com.mbeddr.analyses.yices.zip" dest="${build.tmp}/deps/com.mbeddr.analyses.yices/com.mbeddr.analyses.yices.zip" />
     <mkdir dir="${build.tmp}/deps/com.mbeddr.doc.build/com.mbeddr.doc.zip" />
     <unzip src="${artifacts.com.mbeddr.doc.build}/com.mbeddr.doc.zip" dest="${build.tmp}/deps/com.mbeddr.doc.build/com.mbeddr.doc.zip" />
+    <mkdir dir="${build.tmp}/deps/mps-multiline/mps-multiline.zip" />
+    <unzip src="${artifacts.mps-multiline}/mps-multiline.zip" dest="${build.tmp}/deps/mps-multiline/mps-multiline.zip" />
+    <mkdir dir="${build.tmp}/deps/mps-richtext/mps-richtext.zip" />
+    <unzip src="${artifacts.mps-richtext}/mps-richtext.zip" dest="${build.tmp}/deps/mps-richtext/mps-richtext.zip" />
+    <mkdir dir="${build.tmp}/deps/mps-editor-override/mps-editor-override.zip" />
+    <unzip src="${artifacts.mps-editor-override}/mps-editor-override.zip" dest="${build.tmp}/deps/mps-editor-override/mps-editor-override.zip" />
   </target>
   
   <target name="build" depends="assemble, check" />

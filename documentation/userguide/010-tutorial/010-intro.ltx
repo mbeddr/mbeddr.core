@@ -112,38 +112,38 @@ MPS\footnote{Note that there is also a \ic{plugin} (without the \ic{s})
 directory under MPS!}. So, for example, after copying, there should be a
 \ic{\$MPS\_DIR\$/plugins/mbeddr.core} directory.
 
+
 \parhead{Installing From github} Here are the steps to get
 mbeddr running from the github repository. You should only do this if you want
 to stay at the bleeding edge of mbeddr development, and if you plan to
 regularly update your local mbeddr, or if you plan to fork it. Otherwise, we
-recommend you stay with the distribution discussed above. The repository is at 
-\ic{https://github.com/mbeddr/mbeddr.core}.
+recommend you stay with the distribution discussed above. 
 
 
 \begin{itemize}
-  \item Clone the repository onto your local machine. 
+  \item Clone the repository onto your local machine. The repository is at 
+  \ic{https://github.com/mbeddr/mbeddr.core}. 
   
-  \item The mbeddr debugger is based on \ic{gdb}, which has been installed as
-  part of the Cygwin install. However, we don't use \ic{gdb} directly; rather
-  we use the Eclipse CDT debug bridge. This contains native code, and Java has to be able to
-  find this native code. The Eclipse code is packaged into a special MPS plugin
-  which you have to install into MPS. To do so, please move (not just copy!) the
-  \ic{mbeddr.spawner} folder from the \ic{tools} directory of mbeddr into the
-  \ic{plugins} directory of MPS (again, make sure it ends up the \ic{plugins}
-  directory, not in \ic{plugin}).
   
   \item Rebuild all the languages. We provide a shell script for this purpose 
   (\ic{.bat} and \ic{.sh}) called \ic{rebuildLanguagesAfterCheckout}. 
   It is in the \ic{code/languages} directory. For this to work, you have to
   configure all \ic{build.properties} files to point to your MPS install dir and
   the mbeddr root dir (\onwin \textbf{You have to use forward shlashes as
-  directory separators even on Windows!}). The easiest way to find all the places where this has to be adapted is to search for all \ic{build.properties.example} under the mbeddr
+  directory separators even on Windows!}). The easiest way to find all the places 
+  where this has to be adapted is to search for all \ic{build.properties.example} under the mbeddr
   root mbeddr directory; remove the \ic{.example} and fill in the respective
   directories. 
 
+  \item When running the above-mentioned script, you should have an internet
+  connection because the script also downloads a few additional MPS plugins and
+  installs them in the MPS \ic{plugins} directory. These include a support
+  plugin for debugging as well as the plugins to support multiline and richtext
+  editing. 
+
   \item We now have to make future application projects aware of the
-  \ic{mbeddr.core} languages in the github checkout directory. Go to the $File
-  \rightarrow Settings$ (on the Mac it is under $MPS \rightarrow Preferences$) and select the $Global
+  \ic{mbeddr.core} languages in the github checkout directory. Start MPS and go
+  to the $File \rightarrow Settings$ (on the Mac it is under $MPS \rightarrow Preferences$) and select the $Global
   Libraries$ in the IDE settings. Create a library called \ic{mbeddr.core} that
   points to the \ic{code} directory of the unzipped mbeddr
   installation. The library must point to the \ic{code}
