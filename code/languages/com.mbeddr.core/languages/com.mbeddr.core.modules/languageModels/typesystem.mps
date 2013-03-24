@@ -3634,8 +3634,12 @@
           </node>
         </node>
       </node>
-      <node role="statement" roleId="tpee.1068581517665" type="tpee.Statement" typeId="tpee.1068580123157" id="3474567626210802231" />
-      <node role="statement" roleId="tpee.1068581517665" type="tpee.Statement" typeId="tpee.1068580123157" id="7307224057853407062" />
+      <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="2579429382614014065">
+        <node role="expression" roleId="tpee.1068580123156" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="2579429382614014066">
+          <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="8323085870815808630" resolveInfo="DataFlowUtil" />
+          <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="9064908667075052790" resolveInfo="resetHelpers" />
+        </node>
+      </node>
     </node>
     <node role="applicableNode" roleId="tpd4.1174648101952" type="tpd4.ConceptReference" typeId="tpd4.1174642788531" id="2486081302458330947">
       <property name="name" nameId="tpck.1169194664001" value="iFunctionLike" />
@@ -3703,8 +3707,12 @@
           </node>
         </node>
       </node>
-      <node role="statement" roleId="tpee.1068581517665" type="tpee.Statement" typeId="tpee.1068580123157" id="7307224057853407072" />
-      <node role="statement" roleId="tpee.1068581517665" type="tpee.Statement" typeId="tpee.1068580123157" id="7307224057853407073" />
+      <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="2579429382614014067">
+        <node role="expression" roleId="tpee.1068580123156" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="2579429382614014068">
+          <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="8323085870815808630" resolveInfo="DataFlowUtil" />
+          <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="9064908667075052790" resolveInfo="resetHelpers" />
+        </node>
+      </node>
     </node>
     <node role="applicableNode" roleId="tpd4.1174648101952" type="tpd4.ConceptReference" typeId="tpd4.1174642788531" id="2486081302458330964">
       <property name="name" nameId="tpck.1169194664001" value="iFunctionLike" />
@@ -3867,8 +3875,12 @@
           </node>
         </node>
       </node>
-      <node role="statement" roleId="tpee.1068581517665" type="tpee.Statement" typeId="tpee.1068580123157" id="3474567626210802183" />
-      <node role="statement" roleId="tpee.1068581517665" type="tpee.Statement" typeId="tpee.1068580123157" id="7307224057853406979" />
+      <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="2579429382614014048">
+        <node role="expression" roleId="tpee.1068580123156" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="2579429382614014050">
+          <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="9064908667075052790" resolveInfo="resetHelpers" />
+          <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="8323085870815808630" resolveInfo="DataFlowUtil" />
+        </node>
+      </node>
       <node role="statement" roleId="tpee.1068581517665" type="tpee.Statement" typeId="tpee.1068580123157" id="7307224057853406980" />
     </node>
     <node role="applicableNode" roleId="tpd4.1174648101952" type="tpd4.ConceptReference" typeId="tpd4.1174642788531" id="2486081302458330897">
@@ -3937,8 +3949,12 @@
           </node>
         </node>
       </node>
-      <node role="statement" roleId="tpee.1068581517665" type="tpee.Statement" typeId="tpee.1068580123157" id="3474567626210802251" />
-      <node role="statement" roleId="tpee.1068581517665" type="tpee.Statement" typeId="tpee.1068580123157" id="6827806583615609695" />
+      <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="2579429382614014069">
+        <node role="expression" roleId="tpee.1068580123156" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="2579429382614014070">
+          <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="8323085870815808630" resolveInfo="DataFlowUtil" />
+          <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="9064908667075052790" resolveInfo="resetHelpers" />
+        </node>
+      </node>
     </node>
     <node role="applicableNode" roleId="tpd4.1174648101952" type="tpd4.ConceptReference" typeId="tpd4.1174642788531" id="2486081302458330981">
       <property name="name" nameId="tpck.1169194664001" value="iFunctionLike" />
@@ -4006,9 +4022,12 @@
           </node>
         </node>
       </node>
-      <node role="statement" roleId="tpee.1068581517665" type="tpee.Statement" typeId="tpee.1068580123157" id="3474567626210802221" />
-      <node role="statement" roleId="tpee.1068581517665" type="tpee.Statement" typeId="tpee.1068580123157" id="7307224057853407059" />
-      <node role="statement" roleId="tpee.1068581517665" type="tpee.Statement" typeId="tpee.1068580123157" id="7307224057853407060" />
+      <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="2579429382614014063">
+        <node role="expression" roleId="tpee.1068580123156" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="2579429382614014064">
+          <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="8323085870815808630" resolveInfo="DataFlowUtil" />
+          <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="9064908667075052790" resolveInfo="resetHelpers" />
+        </node>
+      </node>
     </node>
     <node role="applicableNode" roleId="tpd4.1174648101952" type="tpd4.ConceptReference" typeId="tpd4.1174642788531" id="8323085870816137358">
       <property name="name" nameId="tpck.1169194664001" value="iFunctionLike" />
@@ -7183,7 +7202,7 @@
     <node role="staticMethod" roleId="tpee.1070462273904" type="tpee.StaticMethodDeclaration" typeId="tpee.1081236700938" id="9064908667075052790">
       <property name="name" nameId="tpck.1169194664001" value="resetHelpers" />
       <node role="returnType" roleId="tpee.1068580123133" type="tpee.VoidType" typeId="tpee.1068581517677" id="9064908667075052791" />
-      <node role="visibility" roleId="tpee.1178549979242" type="tpee.PrivateVisibility" typeId="tpee.1146644623116" id="9064908667075052795" />
+      <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="2579429382614014045" />
       <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="9064908667075052793">
         <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="7349952699786348037">
           <node role="expression" roleId="tpee.1068580123156" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="7349952699786348040">
