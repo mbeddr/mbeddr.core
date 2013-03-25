@@ -6444,7 +6444,7 @@
             <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="7125476651953896852">
               <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="e2lb.~String%dcontains(java%dlang%dCharSequence)%cboolean" resolveInfo="contains" />
               <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="7125476651953896853">
-                <property name="value" nameId="tpee.1070475926801" value="TOTO" />
+                <property name="value" nameId="tpee.1070475926801" value="TODO" />
               </node>
             </node>
           </node>
