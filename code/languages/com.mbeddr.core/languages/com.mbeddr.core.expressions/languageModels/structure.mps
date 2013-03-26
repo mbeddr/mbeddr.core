@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="22">
+<model modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="20">
   <persistence version="7" />
   <language namespace="c72da2b9-7cce-4447-8389-f407dc1158b7(jetbrains.mps.lang.structure)" />
   <language namespace="7866978e-a0f0-4cc7-81bc-4d213d9375e1(jetbrains.mps.lang.smodel)" />
@@ -633,6 +633,9 @@
       <property name="virtualPackage" nameId="tpck.1193676396447" value="dataflow" />
       <property name="name" nameId="tpck.1169194664001" value="IDataflowAssignment" />
     </node>
+    <node type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="9112271685744623394">
+      <property name="name" nameId="tpck.1169194664001" value="IPrintable" />
+    </node>
   </roots>
   <root id="8860443239512128050">
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="356284525549555981">
@@ -646,9 +649,6 @@
     </node>
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7274201720600704517">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="7274201720600672741" resolveInfo="IDataflowVariableContainer" />
-    </node>
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="3196454794517128129">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="704069370490430471" resolveInfo="IDataflowTyped" />
     </node>
     <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.BooleanConceptProperty" typeId="tpce.1105725574259" id="8860443239512128051">
       <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473854053" resolveInfo="abstract" />
@@ -707,9 +707,6 @@
     </node>
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="9200379251402200815">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="tpck.1234971358450" resolveInfo="IType" />
-    </node>
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="3196454794517689694">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="358427452148581103" resolveInfo="IDataflowType" />
     </node>
   </root>
   <root id="8860443239512128056">
@@ -2091,9 +2088,6 @@
     </node>
   </root>
   <root id="22102029902365709">
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="3196454794517236275">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="3196454794517236255" resolveInfo="IDataflowAssignment" />
-    </node>
     <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="22102029902365710">
       <property name="value" nameId="tpce.1105725733873" value="=" />
       <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473891462" resolveInfo="alias" />
@@ -2172,19 +2166,28 @@
   <root id="5160057464295077059" />
   <root id="743779816742251347" />
   <root id="743779816742251356" />
-  <root id="5289481837639973214" />
-  <root id="7274201720600672741" />
-  <root id="7274201720600672742" />
+  <root id="5289481837639973214">
+    <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="5192961572790190887">
+      <property name="name" nameId="tpck.1169194664001" value="unsigned" />
+      <link role="dataType" roleId="tpce.1082985295845" targetNodeId="tpck.1082983657063" resolveInfo="boolean" />
+    </node>
+  </root>
+  <root id="7274201720600672741">
+    <node role="extends" roleId="tpce.1169127546356" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="704069370493332551">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="704069370490430471" resolveInfo="IDataflowTyped" />
+    </node>
+  </root>
+  <root id="7274201720600672742">
+    <node role="extends" roleId="tpce.1169127546356" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="8736810155874421282">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="704069370490430471" resolveInfo="IDataflowTyped" />
+    </node>
+  </root>
   <root id="7274201720602653805">
     <node role="extends" roleId="tpce.1169127546356" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="358427452148581120">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="358427452148581103" resolveInfo="IDataflowType" />
     </node>
   </root>
-  <root id="7897559875243468033">
-    <node role="extends" roleId="tpce.1169127546356" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="5915021000826832321">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="7274201720600672742" resolveInfo="IDataflowValue" />
-    </node>
-  </root>
+  <root id="7897559875243468033" />
   <root id="704069370490430470">
     <node role="extends" roleId="tpce.1169127546356" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="358427452148581118">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="358427452148581103" resolveInfo="IDataflowType" />
@@ -2219,5 +2222,6 @@
   </root>
   <root id="358427452148581103" />
   <root id="3196454794517236255" />
+  <root id="9112271685744623394" />
 </model>
 
