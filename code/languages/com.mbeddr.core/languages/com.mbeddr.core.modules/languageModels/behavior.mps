@@ -3003,24 +3003,14 @@
         </node>
       </node>
       <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="m373.MethodDocComment" typeId="m373.5349172909345532724" id="7475861851228904398">
-        <node role="body" roleId="m373.8465538089690331502" type="m373.CommentLine" typeId="m373.8465538089690331500" id="7475861851228904399">
-          <node role="part" roleId="m373.8970989240999019149" type="m373.TextCommentLinePart" typeId="m373.8970989240999019143" id="7475861851228904400">
-            <property name="text" nameId="m373.8970989240999019144" value="In IModuleContent_Behavior there is a method mangledNameNew that is currently \n" />
+        <node role="body" roleId="m373.8465538089690331502" type="m373.CommentLine" typeId="m373.8465538089690331500" id="1428544136460032295">
+          <node role="part" roleId="m373.8970989240999019149" type="m373.TextCommentLinePart" typeId="m373.8970989240999019143" id="1428544136460032296">
+            <property name="text" nameId="m373.8970989240999019144" value="Does not work. If modules A and B define a local name, and then" />
           </node>
         </node>
-        <node role="body" roleId="m373.8465538089690331502" type="m373.CommentLine" typeId="m373.8465538089690331500" id="7475861851228904404">
-          <node role="part" roleId="m373.8970989240999019149" type="m373.TextCommentLinePart" typeId="m373.8970989240999019143" id="7475861851228904405">
-            <property name="text" nameId="m373.8970989240999019144" value="*not* called, but can be swapped in for the existing one, once we have the \n" />
-          </node>
-        </node>
-        <node role="body" roleId="m373.8465538089690331502" type="m373.CommentLine" typeId="m373.8465538089690331500" id="7475861851228904406">
-          <node role="part" roleId="m373.8970989240999019149" type="m373.TextCommentLinePart" typeId="m373.8970989240999019143" id="7475861851228904407">
-            <property name="text" nameId="m373.8970989240999019144" value="separation of stuff into header and implementation file fixed. Even though \n" />
-          </node>
-        </node>
-        <node role="body" roleId="m373.8465538089690331502" type="m373.CommentLine" typeId="m373.8465538089690331500" id="7475861851228904408">
-          <node role="part" roleId="m373.8970989240999019149" type="m373.TextCommentLinePart" typeId="m373.8970989240999019143" id="7475861851228904409">
-            <property name="text" nameId="m373.8970989240999019144" value="it looks &quot;slow&quot;, it is actually fast enough." />
+        <node role="body" roleId="m373.8465538089690331502" type="m373.CommentLine" typeId="m373.8465538089690331500" id="1428544136460032297">
+          <node role="part" roleId="m373.8970989240999019149" type="m373.TextCommentLinePart" typeId="m373.8970989240999019143" id="1428544136460032298">
+            <property name="text" nameId="m373.8970989240999019144" value="C imports A and B, you end up with duplicate names." />
           </node>
         </node>
       </node>
