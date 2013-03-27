@@ -312,7 +312,7 @@
               <link role="image" roleId="2c95.6386504476136420174" targetNodeId="8730648445433243087" resolveInfo="glider" />
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8730648445433243095">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value=", is an example. \nThe code to embed an image is shown in " />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=", is an example. The code to embed an image is shown in " />
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="2c95.ImgRefWord" typeId="2c95.6386504476136420159" id="8730648445433245275">
               <link role="image" roleId="2c95.6386504476136420174" targetNodeId="8730648445433243102" resolveInfo="figures" />
@@ -397,13 +397,13 @@
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="8730648445433275055">
           <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="8730648445433275056">
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8730648445433275057">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value="Other artifacts can also be embedded, not just images. The approach is always the\nsame, in particular, you typically specify a path and a size, as well as a name so\nit can be referenced. The embeddings of the document sources (as screenshots) are\nexamples. In many cases, the artifacts are actually\nonly created during the creation of the document. For example, the screenshots that\nrepresent the document source code are created " />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="Other artifacts can also be embedded, not just images. The approach is always the\nsame, in particular, you typically specify a path and a size, as well as a name so\nit can be referenced. The embeddings of the document sources (as screenshots) are\nexamples. In many cases, the artifacts are actually only created during the creation of the document. For example, the screenshots that represent the document source code are created " />
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="2c95.EmphasizedWord" typeId="2c95.4457500422381556825" id="8730648445433277598">
               <property name="text" nameId="2c95.4457500422381556838" value="from the live code" />
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8730648445433277599">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" during the\ngeneration of the document. This way, they are always up to date. Other extensions to\nthe basic documentation language can contribute their own embedded resources. We will\nsee examples below." />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" during the generation of the document. This way, they are always up to date. Other extensions to the basic documentation language can contribute their own embedded resources. We will see examples below." />
             </node>
           </node>
         </node>
@@ -779,7 +779,7 @@
             <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="8730648445433601045">
               <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="8730648445433601046">
                 <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8730648445433601047">
-                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="Attach  Name" />
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="Attach Name" />
                 </node>
               </node>
             </node>
@@ -1192,9 +1192,6 @@
           </node>
         </node>
       </node>
-      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.EmptyDocContent" typeId="2c95.3350625596579911760" id="7502794012053454673">
-        <property name="name" nameId="tpck.1169194664001" value="empty_1363606894339_1" />
-      </node>
       <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Section" typeId="2c95.3350625596580064455" id="7502794012053454675">
         <property name="name" nameId="tpck.1169194664001" value="para" />
         <property name="text" nameId="2c95.3350625596580064225" value="New Paragraphs" />
@@ -1381,9 +1378,6 @@
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.EmptyDocContent" typeId="2c95.3350625596579911760" id="7502794012053469777">
           <property name="name" nameId="tpck.1169194664001" value="empty_1363607769950_2" />
         </node>
-      </node>
-      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.EmptyDocContent" typeId="2c95.3350625596579911760" id="7502794012053466233">
-        <property name="name" nameId="tpck.1169194664001" value="empty_1363607461606_5" />
       </node>
     </node>
   </root>

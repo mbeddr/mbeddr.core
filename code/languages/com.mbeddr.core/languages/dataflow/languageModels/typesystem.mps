@@ -1415,6 +1415,12 @@
           </node>
         </node>
       </node>
+      <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="2579429382614014061">
+        <node role="expression" roleId="tpee.1068580123156" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="2579429382614014062">
+          <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="p3tm.8323085870815808630" resolveInfo="DataFlowUtil" />
+          <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="p3tm.9064908667075052790" resolveInfo="resetHelpers" />
+        </node>
+      </node>
       <node role="statement" roleId="tpee.1068581517665" type="tpee.Statement" typeId="tpee.1068580123157" id="3474567626210854866" />
       <node role="statement" roleId="tpee.1068581517665" type="tpee.Statement" typeId="tpee.1068580123157" id="3474567626210854867" />
     </node>
@@ -2063,9 +2069,12 @@
                   </node>
                 </node>
               </node>
-              <node role="statement" roleId="tpee.1068581517665" type="tpee.Statement" typeId="tpee.1068580123157" id="3562155621518944310" />
-              <node role="statement" roleId="tpee.1068581517665" type="tpee.Statement" typeId="tpee.1068580123157" id="3474567626211988126" />
-              <node role="statement" roleId="tpee.1068581517665" type="tpee.Statement" typeId="tpee.1068580123157" id="5996656966171870964" />
+              <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="2579429382614014048">
+                <node role="expression" roleId="tpee.1068580123156" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="2579429382614014050">
+                  <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="p3tm.8323085870815808630" resolveInfo="DataFlowUtil" />
+                  <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="p3tm.9064908667075052790" resolveInfo="resetHelpers" />
+                </node>
+              </node>
             </node>
             <node role="condition" roleId="tpee.1068580123160" type="tpee.EqualsExpression" typeId="tpee.1068580123152" id="5996656966171870966">
               <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.DotExpression" typeId="tpee.1197027756228" id="5996656966171870967">

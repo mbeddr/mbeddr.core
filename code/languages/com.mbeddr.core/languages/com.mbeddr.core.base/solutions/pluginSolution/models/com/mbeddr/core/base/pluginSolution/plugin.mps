@@ -1883,7 +1883,7 @@
     </node>
     <node role="modifier" roleId="tp4k.1204991552650" type="tp4k.ModificationStatement" typeId="tp4k.1203092361741" id="8624890525768115845">
       <link role="modifiedGroup" roleId="tp4k.1203092736097" targetNodeId="tprs.1204991226689" resolveInfo="SolutionActions" />
-      <link role="point" roleId="tp4k.1204992316090" targetNodeId="tprs.401659284115231184" resolveInfo="commonModule" />
+      <link role="point" roleId="tp4k.1204992316090" targetNodeId="tprs.1366781238034254894" resolveInfo="contents" />
     </node>
   </root>
   <root id="8624890525768136847">
@@ -2247,7 +2247,7 @@
     </node>
     <node role="modifier" roleId="tp4k.1204991552650" type="tp4k.ModificationStatement" typeId="tp4k.1203092361741" id="8624890525768177153">
       <link role="modifiedGroup" roleId="tp4k.1203092736097" targetNodeId="tprs.1204991218714" resolveInfo="ModelActions" />
-      <link role="point" roleId="tp4k.1204992316090" targetNodeId="tprs.2510134983999478400" resolveInfo="showHelp" />
+      <link role="point" roleId="tp4k.1204992316090" targetNodeId="tprs.424100430191192417" resolveInfo="make" />
     </node>
   </root>
   <root id="3126418051240508020">
