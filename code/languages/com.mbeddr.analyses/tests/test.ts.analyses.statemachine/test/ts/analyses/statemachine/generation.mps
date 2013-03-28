@@ -11,7 +11,7 @@
   <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="7" implicit="yes" />
   <import index="51wr" modelUID="r:b31f1c3c-99aa-4f1e-a329-cba27efb1a6b(com.mbeddr.core.buildconfig.structure)" version="1" implicit="yes" />
   <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="5" implicit="yes" />
-  <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="3" implicit="yes" />
+  <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="5" implicit="yes" />
   <import index="clqz" modelUID="r:5ebcdb77-81e9-4964-beae-35bd9a2f28b5(com.mbeddr.ext.statemachines.structure)" version="9" implicit="yes" />
   <import index="pszp" modelUID="r:5097c9c6-4a5a-40ee-bd76-4904ba8fa229(com.mbeddr.analyses.nusmv.statemachine.structure)" version="22" implicit="yes" />
   <import index="clbe" modelUID="r:61d840b4-12c1-49ea-b142-b2a1550a9b15(com.mbeddr.core.udt.structure)" version="7" implicit="yes" />
@@ -876,15 +876,15 @@
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.GlobalConstantDeclaration" typeId="x27k.3788988821851860886" id="3592968415811465744">
       <property name="name" nameId="tpck.1169194664001" value="FIRST_INT_CONST" />
-      <node role="value" roleId="x27k.3788988821851871048" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3592968415811465746">
+      <node role="value" roleId="x27k.3376775282622233992" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3592968415811465746">
         <property name="value" nameId="mj1l.8860443239512128104" value="1" />
       </node>
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.GlobalConstantDeclaration" typeId="x27k.3788988821851860886" id="3592968415811465770">
       <property name="name" nameId="tpck.1169194664001" value="SECOND_INT_CONST" />
-      <node role="value" roleId="x27k.3788988821851871048" type="mj1l.PlusExpression" typeId="mj1l.5763383285156373013" id="3592968415811465773">
+      <node role="value" roleId="x27k.3376775282622233992" type="mj1l.PlusExpression" typeId="mj1l.5763383285156373013" id="3592968415811465773">
         <node role="left" roleId="mj1l.8860443239512128064" type="x27k.GlobalConstantRef" typeId="x27k.3788988821852026523" id="3592968415811465776">
-          <link role="constant" roleId="x27k.3788988821852026524" targetNodeId="3592968415811465744" resolveInfo="FIRST_INT_CONST" />
+          <link role="constant" roleId="x27k.3376775282622611130" targetNodeId="3592968415811465744" resolveInfo="FIRST_INT_CONST" />
         </node>
         <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3592968415811465771">
           <property name="value" nameId="mj1l.8860443239512128104" value="1" />
@@ -896,20 +896,20 @@
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.GlobalConstantDeclaration" typeId="x27k.3788988821851860886" id="3592968415811615677">
       <property name="name" nameId="tpck.1169194664001" value="FIRST_BOOL_CONST" />
-      <node role="value" roleId="x27k.3788988821851871048" type="mj1l.FalseLiteral" typeId="mj1l.8860443239512128099" id="3592968415811632216" />
+      <node role="value" roleId="x27k.3376775282622233992" type="mj1l.FalseLiteral" typeId="mj1l.8860443239512128099" id="3592968415811632216" />
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.GlobalConstantDeclaration" typeId="x27k.3788988821851860886" id="3592968415811624794">
       <property name="name" nameId="tpck.1169194664001" value="SECOND_BOOL_CONST" />
-      <node role="value" roleId="x27k.3788988821851871048" type="mj1l.TrueLiteral" typeId="mj1l.8860443239512128094" id="3592968415811624795" />
+      <node role="value" roleId="x27k.3376775282622233992" type="mj1l.TrueLiteral" typeId="mj1l.8860443239512128094" id="3592968415811624795" />
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.GlobalConstantDeclaration" typeId="x27k.3788988821851860886" id="3592968415811615679">
       <property name="name" nameId="tpck.1169194664001" value="THIRD_BOOL_CONST" />
-      <node role="value" roleId="x27k.3788988821851871048" type="mj1l.OrExpression" typeId="mj1l.8399455261460717642" id="3592968415811632213">
+      <node role="value" roleId="x27k.3376775282622233992" type="mj1l.OrExpression" typeId="mj1l.8399455261460717642" id="3592968415811632213">
         <node role="left" roleId="mj1l.8860443239512128064" type="x27k.GlobalConstantRef" typeId="x27k.3788988821852026523" id="3592968415811632214">
-          <link role="constant" roleId="x27k.3788988821852026524" targetNodeId="3592968415811615677" resolveInfo="FIRST_BOOL_CONST" />
+          <link role="constant" roleId="x27k.3376775282622611130" targetNodeId="3592968415811615677" resolveInfo="FIRST_BOOL_CONST" />
         </node>
         <node role="right" roleId="mj1l.8860443239512128065" type="x27k.GlobalConstantRef" typeId="x27k.3788988821852026523" id="3592968415811632215">
-          <link role="constant" roleId="x27k.3788988821852026524" targetNodeId="3592968415811624794" resolveInfo="SECOND_BOOL_CONST" />
+          <link role="constant" roleId="x27k.3376775282622611130" targetNodeId="3592968415811624794" resolveInfo="SECOND_BOOL_CONST" />
         </node>
       </node>
     </node>
@@ -950,7 +950,7 @@
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="3592968415811465758">
               <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.DirectPlusAssignmentExpression" typeId="mj1l.3820836583575227340" id="3592968415811465762">
                 <node role="right" roleId="mj1l.8860443239512128065" type="x27k.GlobalConstantRef" typeId="x27k.3788988821852026523" id="3592968415811465765">
-                  <link role="constant" roleId="x27k.3788988821852026524" targetNodeId="3592968415811465744" resolveInfo="FIRST_INT_CONST" />
+                  <link role="constant" roleId="x27k.3376775282622611130" targetNodeId="3592968415811465744" resolveInfo="FIRST_INT_CONST" />
                 </node>
                 <node role="left" roleId="mj1l.8860443239512128064" type="clqz.StatemachineVarRef" typeId="clqz.1786180596061383227" id="3592968415811465759">
                   <link role="var" roleId="clqz.1786180596061383228" targetNodeId="3592968415811465751" resolveInfo="intVar" />
@@ -968,7 +968,7 @@
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="3592968415811465780">
               <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.DirectPlusAssignmentExpression" typeId="mj1l.3820836583575227340" id="3592968415811465781">
                 <node role="right" roleId="mj1l.8860443239512128065" type="x27k.GlobalConstantRef" typeId="x27k.3788988821852026523" id="3592968415811465785">
-                  <link role="constant" roleId="x27k.3788988821852026524" targetNodeId="3592968415811465770" resolveInfo="SECOND_INT_CONST" />
+                  <link role="constant" roleId="x27k.3376775282622611130" targetNodeId="3592968415811465770" resolveInfo="SECOND_INT_CONST" />
                 </node>
                 <node role="left" roleId="mj1l.8860443239512128064" type="clqz.StatemachineVarRef" typeId="clqz.1786180596061383227" id="3592968415811465783">
                   <link role="var" roleId="clqz.1786180596061383228" targetNodeId="3592968415811465751" resolveInfo="intVar" />
@@ -983,7 +983,7 @@
             <link role="event" roleId="clqz.8951398808641876049" targetNodeId="3592968415811465734" resolveInfo="first" />
           </node>
           <node role="guard" roleId="clqz.5778488248013533903" type="x27k.GlobalConstantRef" typeId="x27k.3788988821852026523" id="3592968415811624801">
-            <link role="constant" roleId="x27k.3788988821852026524" targetNodeId="3592968415811615677" resolveInfo="FIRST_BOOL_CONST" />
+            <link role="constant" roleId="x27k.3376775282622611130" targetNodeId="3592968415811615677" resolveInfo="FIRST_BOOL_CONST" />
           </node>
         </node>
         <node role="contents" roleId="clqz.4249345261280348989" type="clqz.Transition" typeId="clqz.5778488248013533883" id="3592968415811624803">
@@ -992,7 +992,7 @@
             <link role="event" roleId="clqz.8951398808641876049" targetNodeId="3592968415811465768" resolveInfo="second" />
           </node>
           <node role="guard" roleId="clqz.5778488248013533903" type="x27k.GlobalConstantRef" typeId="x27k.3788988821852026523" id="3592968415811632217">
-            <link role="constant" roleId="x27k.3788988821852026524" targetNodeId="3592968415811615679" resolveInfo="THIRD_BOOL_CONST" />
+            <link role="constant" roleId="x27k.3376775282622611130" targetNodeId="3592968415811615679" resolveInfo="THIRD_BOOL_CONST" />
           </node>
         </node>
       </node>

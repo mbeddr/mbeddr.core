@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <model modelUID="r:80b4c780-9553-4c4a-bae4-115a5444171e(com.mbeddr.ext.exceptionhandling.lib.rt)">
   <persistence version="7" />
+  <language namespace="92d2ea16-5a42-4fdf-a676-c7604efe3504(de.slisson.mps.richtext)" />
   <devkit namespace="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
-  <import index="k146" modelUID="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" version="3" implicit="yes" />
+  <import index="k146" modelUID="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" version="5" implicit="yes" />
   <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="22" implicit="yes" />
   <import index="yq40" modelUID="r:152b3fc0-83a1-4bab-a8cd-565eb8483785(com.mbeddr.core.pointers.structure)" version="3" implicit="yes" />
   <import index="clbe" modelUID="r:61d840b4-12c1-49ea-b142-b2a1550a9b15(com.mbeddr.core.udt.structure)" version="7" implicit="yes" />
   <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="7" implicit="yes" />
   <import index="51wr" modelUID="r:b31f1c3c-99aa-4f1e-a329-cba27efb1a6b(com.mbeddr.core.buildconfig.structure)" version="1" implicit="yes" />
   <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="5" implicit="yes" />
-  <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="3" implicit="yes" />
+  <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="5" implicit="yes" />
   <import index="87nw" modelUID="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" version="5" implicit="yes" />
   <roots>
     <node type="51wr.BuildConfiguration" typeId="51wr.7717755763392524104" id="3682516440041620674" />
@@ -47,7 +48,7 @@
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.GlobalConstantDeclaration" typeId="x27k.3788988821851860886" id="3682516440041620535">
       <property name="name" nameId="tpck.1169194664001" value="MAXCONTEXT" />
       <property name="exported" nameId="x27k.1317894735999272944" value="true" />
-      <node role="value" roleId="x27k.3788988821851871048" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3682516440041620539">
+      <node role="value" roleId="x27k.3376775282622233992" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3682516440041620539">
         <property name="value" nameId="mj1l.8860443239512128104" value="1000" />
       </node>
     </node>
@@ -59,7 +60,7 @@
           <link role="typeDef" roleId="clbe.6116558314501347864" targetNodeId="3682516440041620490" resolveInfo="jmp_buf" />
         </node>
         <node role="sizeExpr" roleId="yq40.1452920870317474611" type="x27k.GlobalConstantRef" typeId="x27k.3788988821852026523" id="3682516440041620551">
-          <link role="constant" roleId="x27k.3788988821852026524" targetNodeId="3682516440041620535" resolveInfo="MAXCONTEXT" />
+          <link role="constant" roleId="x27k.3376775282622611130" targetNodeId="3682516440041620535" resolveInfo="MAXCONTEXT" />
         </node>
       </node>
     </node>
@@ -96,7 +97,7 @@
                 <property name="value" nameId="mj1l.8860443239512128104" value="1" />
               </node>
               <node role="left" roleId="mj1l.8860443239512128064" type="x27k.GlobalConstantRef" typeId="x27k.3788988821852026523" id="3682516440041620589">
-                <link role="constant" roleId="x27k.3788988821852026524" targetNodeId="3682516440041620535" resolveInfo="MAXCONTEXT" />
+                <link role="constant" roleId="x27k.3376775282622611130" targetNodeId="3682516440041620535" resolveInfo="MAXCONTEXT" />
               </node>
             </node>
             <node role="left" roleId="mj1l.8860443239512128064" type="x27k.GlobalVarRef" typeId="x27k.6610873504380357354" id="3682516440041620585">
@@ -192,7 +193,7 @@
           <node role="condition" roleId="c4fa.6275792049641600984" type="mj1l.AndExpression" typeId="mj1l.8399455261460717640" id="3682516440041620629">
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.GreaterEqualsExpression" typeId="mj1l.8860443239512147447" id="3682516440041620633">
               <node role="right" roleId="mj1l.8860443239512128065" type="x27k.GlobalConstantRef" typeId="x27k.3788988821852026523" id="3682516440041620636">
-                <link role="constant" roleId="x27k.3788988821852026524" targetNodeId="3682516440041620535" resolveInfo="MAXCONTEXT" />
+                <link role="constant" roleId="x27k.3376775282622611130" targetNodeId="3682516440041620535" resolveInfo="MAXCONTEXT" />
               </node>
               <node role="left" roleId="mj1l.8860443239512128064" type="x27k.GlobalVarRef" typeId="x27k.6610873504380357354" id="3682516440041620632">
                 <link role="var" roleId="x27k.6610873504380357355" targetNodeId="3682516440041620556" resolveInfo="currentContext" />
@@ -326,7 +327,7 @@
   <root id="3682516440041620488">
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.GlobalConstantDeclaration" typeId="x27k.3788988821851860886" id="3682516440041620501">
       <property name="name" nameId="tpck.1169194664001" value="_JBLEN" />
-      <node role="value" roleId="x27k.3788988821851871048" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3682516440041620529">
+      <node role="value" roleId="x27k.3376775282622233992" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3682516440041620529">
         <property name="value" nameId="mj1l.8860443239512128104" value="0" />
       </node>
     </node>
@@ -338,7 +339,7 @@
       <node role="original" roleId="clbe.6116558314501347862" type="yq40.ArrayType" typeId="yq40.5679441017214012545" id="3682516440041620493">
         <node role="baseType" roleId="yq40.5679441017214012546" type="mj1l.IntType" typeId="mj1l.8860443239512128108" id="3682516440041620492" />
         <node role="sizeExpr" roleId="yq40.1452920870317474611" type="x27k.GlobalConstantRef" typeId="x27k.3788988821852026523" id="7041589747176463581">
-          <link role="constant" roleId="x27k.3788988821852026524" targetNodeId="3682516440041620501" resolveInfo="_JBLEN" />
+          <link role="constant" roleId="x27k.3376775282622611130" targetNodeId="3682516440041620501" resolveInfo="_JBLEN" />
         </node>
       </node>
     </node>

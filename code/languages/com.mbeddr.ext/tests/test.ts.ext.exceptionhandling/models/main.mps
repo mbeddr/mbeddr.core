@@ -16,7 +16,7 @@
   <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="7" implicit="yes" />
   <import index="51wr" modelUID="r:b31f1c3c-99aa-4f1e-a329-cba27efb1a6b(com.mbeddr.core.buildconfig.structure)" version="1" implicit="yes" />
   <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="5" implicit="yes" />
-  <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="3" implicit="yes" />
+  <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="5" implicit="yes" />
   <roots>
     <node type="mj1l.TypeSizeConfiguration" typeId="mj1l.3335993110369795380" id="8599220535762265915" />
     <node type="tp5g.NodesTestCase" typeId="tp5g.1216913645126" id="8599220535762265912">
@@ -90,13 +90,13 @@
         </node>
         <node role="contents" roleId="x27k.6437088627575722833" type="skt0.ExceptionErrorDeclaration" typeId="skt0.7020824145854549841" id="2144336194025143087">
           <property name="name" nameId="tpck.1169194664001" value="JUST_AN_EXCEPTION" />
-          <node role="value" roleId="x27k.3788988821851871048" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2144336194025143090">
+          <node role="value" roleId="x27k.3376775282622233992" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2144336194025143090">
             <property name="value" nameId="mj1l.8860443239512128104" value="20" />
           </node>
         </node>
         <node role="contents" roleId="x27k.6437088627575722833" type="skt0.ExceptionErrorDeclaration" typeId="skt0.7020824145854549841" id="2144336194025150917">
           <property name="name" nameId="tpck.1169194664001" value="JUST_AN_EXCEPTION2" />
-          <node role="value" roleId="x27k.3788988821851871048" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2144336194025150919">
+          <node role="value" roleId="x27k.3376775282622233992" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2144336194025150919">
             <property name="value" nameId="mj1l.8860443239512128104" value="21" />
           </node>
         </node>

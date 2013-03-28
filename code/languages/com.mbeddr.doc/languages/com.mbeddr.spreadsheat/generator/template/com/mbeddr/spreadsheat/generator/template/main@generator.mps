@@ -517,12 +517,16 @@
                       </node>
                       <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="2042272859106996851">
                         <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="yb8z.~XSSFWorkbook%dcreateSheet(java%dlang%dString)%corg%dapache%dpoi%dxssf%dusermodel%dXSSFSheet" resolveInfo="createSheet" />
-                        <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.DotExpression" typeId="tpee.1197027756228" id="2042272859106996852">
-                          <node role="operand" roleId="tpee.1197027771414" type="tp2q.ForEachVariableReference" typeId="tp2q.1153944233411" id="2042272859106996853">
-                            <link role="variable" roleId="tp2q.1153944258490" targetNodeId="2042272859106996758" resolveInfo="sheet" />
-                          </node>
-                          <node role="operation" roleId="tpee.1197027833540" type="tp25.SPropertyAccess" typeId="tp25.1138056022639" id="2042272859106996854">
-                            <link role="property" roleId="tp25.1138056395725" targetNodeId="tpck.1169194664001" resolveInfo="name" />
+                        <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="4657240325584842653">
+                          <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="8923.~WorkbookUtil%dcreateSafeSheetName(java%dlang%dString)%cjava%dlang%dString" resolveInfo="createSafeSheetName" />
+                          <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="8923.~WorkbookUtil" resolveInfo="WorkbookUtil" />
+                          <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.DotExpression" typeId="tpee.1197027756228" id="2042272859106996852">
+                            <node role="operand" roleId="tpee.1197027771414" type="tp2q.ForEachVariableReference" typeId="tp2q.1153944233411" id="2042272859106996853">
+                              <link role="variable" roleId="tp2q.1153944258490" targetNodeId="2042272859106996758" resolveInfo="sheet" />
+                            </node>
+                            <node role="operation" roleId="tpee.1197027833540" type="tp25.SPropertyAccess" typeId="tp25.1138056022639" id="2042272859106996854">
+                              <link role="property" roleId="tp25.1138056395725" targetNodeId="tpck.1169194664001" resolveInfo="name" />
+                            </node>
                           </node>
                         </node>
                       </node>
