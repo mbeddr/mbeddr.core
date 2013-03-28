@@ -427,10 +427,6 @@
       <property name="name" nameId="tpck.1169194664001" value="DataElementRefExpr" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="mj1l.3005510381523579442" resolveInfo="UnaryExpression" />
     </node>
-    <node type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="2116578915583337367">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="adapter" />
-      <property name="name" nameId="tpck.1169194664001" value="IContextForPortRefExpr" />
-    </node>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="5065104421775983277">
       <property name="virtualPackage" nameId="tpck.1193676396447" value="comp.runnable.whenconnected" />
       <property name="name" nameId="tpck.1169194664001" value="WhenPortsConnectedExpr" />
@@ -1065,9 +1061,6 @@
     </node>
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="3298295153090251335">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="2gv2.3298295153090251326" resolveInfo="IStepIntoable" />
-    </node>
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="2116578915583489188">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="2116578915583337367" resolveInfo="IContextForPortRefExpr" />
     </node>
   </root>
   <root id="591155063063570513">
@@ -1827,11 +1820,7 @@
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="998890089995051772">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="mj1l.8793291511880188110" resolveInfo="IStopReshuffling" />
     </node>
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="2116578915583489190">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="2116578915583337367" resolveInfo="IContextForPortRefExpr" />
-    </node>
   </root>
-  <root id="2116578915583337367" />
   <root id="5065104421775983277">
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="5065104421775983278">
       <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
@@ -1851,9 +1840,6 @@
     </node>
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="5065104421776017082">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="5065104421776015558" resolveInfo="IConnectedCheck" />
-    </node>
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="5065104421776234694">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="2116578915583337367" resolveInfo="IContextForPortRefExpr" />
     </node>
   </root>
   <root id="5065104421776015558" />
