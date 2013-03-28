@@ -153,6 +153,10 @@
       <property name="virtualPackage" nameId="tpck.1193676396447" value="scenario" />
       <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="4l29.9159582801230953360" resolveInfo="Return" />
     </node>
+    <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="3126418051240013623">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="usecase" />
+      <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="4l29.3126418051240013621" resolveInfo="UseCaseSummary" />
+    </node>
   </roots>
   <root id="5744000828452648923">
     <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="5744000828452648926">
@@ -1175,6 +1179,11 @@
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_RefNode" typeId="tpc2.1073389882823" id="9159582801230953370">
         <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="4l29.9159582801230953362" />
       </node>
+    </node>
+  </root>
+  <root id="3126418051240013623">
+    <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="3126418051240013625">
+      <property name="text" nameId="tpc2.1073389577007" value="use case summary (children)" />
     </node>
   </root>
 </model>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<history>
+  <StructureModification>
+    <dependencies>
+      <model index="l0wz" modelUID="r:0f65fa18-de0b-4b5d-8744-46c3a95fc665(com.mbeddr.core.debug.test.generator.template.main@generator)" version="-1" />
+      <model index="goq0" modelUID="r:0349ad2a-48af-455d-8382-6bd1d74afb8e(com.mbeddr.core.debug.blext.generator.template.main@generator)" version="-1" />
+    </dependencies>
+    <move id="goq0.1306098083780743977" to="l0wz.4193597469137492932" />
+    <move id="goq0.1306098083780744004" to="l0wz.4193597469137492916" />
+    <move id="goq0.1306098083780743966" to="l0wz.4193597469137492905" />
+    <move id="goq0.1306098083780935700" to="l0wz.4193597469137492928" />
+    <move id="goq0.1306098083780744000" to="l0wz.4193597469137492912" />
+    <move id="goq0.1306098083780743973" to="l0wz.4193597469137492930" />
+    <move id="goq0.1306098083780935698" to="l0wz.4193597469137492926" />
+    <move id="goq0.1306098083780744001" to="l0wz.4193597469137492913" />
+    <move id="goq0.1306098083780935697" to="l0wz.4193597469137492925" />
+    <move id="goq0.1306098083780743972" to="l0wz.4193597469137492929" />
+    <move id="goq0.1306098083780743992" to="l0wz.4193597469137492907" />
+    <move id="goq0.1306098083780935696" to="l0wz.4193597469137492936" />
+    <move id="goq0.4193597469137383693" to="l0wz.4193597469137492937" />
+    <move id="goq0.1306098083780935668" to="l0wz.4193597469137492935" />
+    <move id="goq0.1306098083780743982" to="l0wz.4193597469137492922" />
+    <move id="goq0.1306098083780744002" to="l0wz.4193597469137492914" />
+    <move id="goq0.1306098083780743986" to="l0wz.4193597469137492924" />
+    <move id="goq0.1306098083780743969" to="l0wz.4193597469137492919" />
+    <move id="goq0.1306098083780743976" to="l0wz.4193597469137492931" />
+    <move id="goq0.1306098083780743967" to="l0wz.4193597469137492917" />
+    <move id="goq0.1306098083780743999" to="l0wz.4193597469137492911" />
+    <move id="goq0.1306098083780743968" to="l0wz.4193597469137492918" />
+    <move id="goq0.1306098083780935699" to="l0wz.4193597469137492927" />
+    <move id="goq0.1306098083780935689" to="l0wz.4193597469137492934" />
+    <move id="goq0.1306098083780743971" to="l0wz.4193597469137492921" />
+    <move id="goq0.1306098083780743994" to="l0wz.4193597469137492909" />
+    <move id="goq0.1306098083780743993" to="l0wz.4193597469137492908" />
+    <move id="goq0.1306098083780743970" to="l0wz.4193597469137492920" />
+    <move id="goq0.4193597469137383694" to="l0wz.4193597469137492938" />
+    <move id="goq0.1306098083780743985" to="l0wz.4193597469137492923" />
+    <move id="goq0.1306098083780743996" to="l0wz.4193597469137492910" />
+    <move id="goq0.1306098083780743978" to="l0wz.4193597469137492933" />
+    <move id="goq0.1306098083780744003" to="l0wz.4193597469137492915" />
+    <move id="goq0.1306098083780743991" to="l0wz.4193597469137492906" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="8aqa" modelUID="r:566c3417-ad82-456e-bd2d-4f4c15a9f767(com.mbeddr.core.debug.test.editor)" version="2" />
+      <model index="l0wz" modelUID="r:0f65fa18-de0b-4b5d-8744-46c3a95fc665(com.mbeddr.core.debug.test.generator.template.main@generator)" version="0" />
+      <model index="nety" modelUID="r:a3a6c212-5dd4-42f5-a8df-ac09efb8e938(com.mbeddr.core.debug.test.plugin)" version="-1" />
+      <model index="urkp" modelUID="r:ad5469e5-4d78-4821-ab9b-12b54a18c468(com.mbeddr.core.debug.test.typesystem)" version="-1" />
+      <model index="dm5s" modelUID="r:cc63f437-a3eb-4092-9c7c-2b5860f74f8d(com.mbeddr.core.debug.test.behavior)" version="0" />
+      <model index="bq87" modelUID="r:9f9fa6cb-0005-48c2-8479-31a27b345f2c(com.mbeddr.core.debug.test.constraints)" version="1" />
+      <model index="rpmx" modelUID="r:64720d49-3cb5-4469-81c5-0c62eda0a2cb(com.mbeddr.core.debug.test.structure)" version="27" />
+      <model index="8yw3" modelUID="r:41dc19e8-8129-40ad-b71e-e82b992587cd(com.mbeddr.core.debug.test.intentions)" version="0" />
+    </dependencies>
+    <RenameModel oldModel="r:ad5469e5-4d78-4821-ab9b-12b54a18c468(com.mbeddr.core.debug.test.typesystem)" newModel="r:ad5469e5-4d78-4821-ab9b-12b54a18c468(com.mbeddr.core.debug.test.lang.typesystem)" />
+    <RenameModel oldModel="r:9f9fa6cb-0005-48c2-8479-31a27b345f2c(com.mbeddr.core.debug.test.constraints)" newModel="r:9f9fa6cb-0005-48c2-8479-31a27b345f2c(com.mbeddr.core.debug.test.lang.constraints)" />
+    <RenameModel oldModel="r:64720d49-3cb5-4469-81c5-0c62eda0a2cb(com.mbeddr.core.debug.test.structure)" newModel="r:64720d49-3cb5-4469-81c5-0c62eda0a2cb(com.mbeddr.core.debug.test.lang.structure)" />
+    <RenameModel oldModel="r:a3a6c212-5dd4-42f5-a8df-ac09efb8e938(com.mbeddr.core.debug.test.plugin)" newModel="r:a3a6c212-5dd4-42f5-a8df-ac09efb8e938(com.mbeddr.core.debug.test.lang.plugin)" />
+    <RenameModel oldModel="r:cc63f437-a3eb-4092-9c7c-2b5860f74f8d(com.mbeddr.core.debug.test.behavior)" newModel="r:cc63f437-a3eb-4092-9c7c-2b5860f74f8d(com.mbeddr.core.debug.test.lang.behavior)" />
+    <RenameModel oldModel="r:566c3417-ad82-456e-bd2d-4f4c15a9f767(com.mbeddr.core.debug.test.editor)" newModel="r:566c3417-ad82-456e-bd2d-4f4c15a9f767(com.mbeddr.core.debug.test.lang.editor)" />
+    <RenameModel oldModel="r:41dc19e8-8129-40ad-b71e-e82b992587cd(com.mbeddr.core.debug.test.intentions)" newModel="r:41dc19e8-8129-40ad-b71e-e82b992587cd(com.mbeddr.core.debug.test.lang.intentions)" />
+    <RenameModel oldModel="r:0f65fa18-de0b-4b5d-8744-46c3a95fc665(com.mbeddr.core.debug.test.generator.template.main@generator)" newModel="r:0f65fa18-de0b-4b5d-8744-46c3a95fc665(com.mbeddr.core.debug.test.lang.generator.template.main@generator)" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="l0wz" modelUID="r:0f65fa18-de0b-4b5d-8744-46c3a95fc665(com.mbeddr.core.debug.test.lang.generator.template.main@generator)" version="1" />
+      <model index="8aqa" modelUID="r:566c3417-ad82-456e-bd2d-4f4c15a9f767(com.mbeddr.core.debug.test.lang.editor)" version="3" />
+      <model index="nety" modelUID="r:a3a6c212-5dd4-42f5-a8df-ac09efb8e938(com.mbeddr.core.debug.test.lang.plugin)" version="0" />
+      <model index="dm5s" modelUID="r:cc63f437-a3eb-4092-9c7c-2b5860f74f8d(com.mbeddr.core.debug.test.lang.behavior)" version="1" />
+      <model index="urkp" modelUID="r:ad5469e5-4d78-4821-ab9b-12b54a18c468(com.mbeddr.core.debug.test.lang.typesystem)" version="0" />
+      <model index="bq87" modelUID="r:9f9fa6cb-0005-48c2-8479-31a27b345f2c(com.mbeddr.core.debug.test.lang.constraints)" version="2" />
+      <model index="rpmx" modelUID="r:64720d49-3cb5-4469-81c5-0c62eda0a2cb(com.mbeddr.core.debug.test.lang.structure)" version="32" />
+      <model index="8yw3" modelUID="r:41dc19e8-8129-40ad-b71e-e82b992587cd(com.mbeddr.core.debug.test.lang.intentions)" version="1" />
+    </dependencies>
+    <RenameModel oldModel="r:ad5469e5-4d78-4821-ab9b-12b54a18c468(com.mbeddr.core.debug.test.lang.typesystem)" newModel="r:ad5469e5-4d78-4821-ab9b-12b54a18c468(com.mbeddr.core.debug.test.typesystem)" />
+    <RenameModel oldModel="r:a3a6c212-5dd4-42f5-a8df-ac09efb8e938(com.mbeddr.core.debug.test.lang.plugin)" newModel="r:a3a6c212-5dd4-42f5-a8df-ac09efb8e938(com.mbeddr.core.debug.test.plugin)" />
+    <RenameModel oldModel="r:9f9fa6cb-0005-48c2-8479-31a27b345f2c(com.mbeddr.core.debug.test.lang.constraints)" newModel="r:9f9fa6cb-0005-48c2-8479-31a27b345f2c(com.mbeddr.core.debug.test.constraints)" />
+    <RenameModel oldModel="r:41dc19e8-8129-40ad-b71e-e82b992587cd(com.mbeddr.core.debug.test.lang.intentions)" newModel="r:41dc19e8-8129-40ad-b71e-e82b992587cd(com.mbeddr.core.debug.test.intentions)" />
+    <RenameModel oldModel="r:cc63f437-a3eb-4092-9c7c-2b5860f74f8d(com.mbeddr.core.debug.test.lang.behavior)" newModel="r:cc63f437-a3eb-4092-9c7c-2b5860f74f8d(com.mbeddr.core.debug.test.behavior)" />
+    <RenameModel oldModel="r:64720d49-3cb5-4469-81c5-0c62eda0a2cb(com.mbeddr.core.debug.test.lang.structure)" newModel="r:64720d49-3cb5-4469-81c5-0c62eda0a2cb(com.mbeddr.core.debug.test.structure)" />
+    <RenameModel oldModel="r:566c3417-ad82-456e-bd2d-4f4c15a9f767(com.mbeddr.core.debug.test.lang.editor)" newModel="r:566c3417-ad82-456e-bd2d-4f4c15a9f767(com.mbeddr.core.debug.test.editor)" />
+    <RenameModel oldModel="r:0f65fa18-de0b-4b5d-8744-46c3a95fc665(com.mbeddr.core.debug.test.lang.generator.template.main@generator)" newModel="r:0f65fa18-de0b-4b5d-8744-46c3a95fc665(com.mbeddr.core.debug.test.generator.template.main@generator)" />
+  </StructureModification>
+</history>
+
