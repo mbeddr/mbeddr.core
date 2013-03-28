@@ -34,5 +34,11 @@
     <move id="qd6m.55677248263845658" to="hwgx.8428744930541856334" />
     <move id="qd6m.55677248263845653" to="hwgx.8428744930541856341" />
   </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="3" />
+    </dependencies>
+    <rename id="x27k.4869834929027891141" type="CONCEPT" from="IWillBeInitializedAnnotateable" to="IInitializingFunction" />
+  </StructureModification>
 </history>
 
