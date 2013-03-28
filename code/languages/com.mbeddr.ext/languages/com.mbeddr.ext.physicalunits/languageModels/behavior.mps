@@ -24,7 +24,7 @@
       <link role="concept" roleId="1i04.1225194240799" targetNodeId="ym4j.3801772042669047303" resolveInfo="ElementaryUnitDeclaration" />
     </node>
     <node type="1i04.ConceptBehavior" typeId="1i04.1225194240794" id="8099136929591178867">
-      <link role="concept" roleId="1i04.1225194240799" targetNodeId="ym4j.8099136929591173606" resolveInfo="UnitDeclarationRef" />
+      <link role="concept" roleId="1i04.1225194240799" targetNodeId="ym4j.1085404444144943749" resolveInfo="AbstractUnitDeclRef" />
     </node>
     <node type="1i04.ConceptBehavior" typeId="1i04.1225194240794" id="8099136929591178900">
       <link role="concept" roleId="1i04.1225194240799" targetNodeId="ym4j.3801772042669047322" resolveInfo="UnitWithExponent" />
@@ -70,6 +70,7 @@
       <link role="concept" roleId="1i04.1225194240799" targetNodeId="ym4j.2078797996880543459" resolveInfo="NamedUnitDeclaration" />
     </node>
     <node type="1i04.ConceptBehavior" typeId="1i04.1225194240794" id="2078797996880634040">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="standalone" />
       <link role="concept" roleId="1i04.1225194240799" targetNodeId="ym4j.3801772042669047872" resolveInfo="UnitContainer" />
     </node>
     <node type="1i04.ConceptBehavior" typeId="1i04.1225194240794" id="1656687801206561209">
@@ -78,6 +79,9 @@
     <node type="1i04.ConceptBehavior" typeId="1i04.1225194240794" id="2583895349223030747">
       <property name="virtualPackage" nameId="tpck.1193676396447" value="si" />
       <link role="concept" roleId="1i04.1225194240799" targetNodeId="ym4j.4497436839299083269" resolveInfo="SIBaseUnitDeclaration" />
+    </node>
+    <node type="1i04.ConceptBehavior" typeId="1i04.1225194240794" id="1085404444144930962">
+      <link role="concept" roleId="1i04.1225194240799" targetNodeId="ym4j.1085404444144930947" resolveInfo="IUnitContainer" />
     </node>
   </roots>
   <root id="8099136929591178845">
@@ -389,7 +393,7 @@
             <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="8099136929591178883">
               <node role="operand" roleId="tpee.1197027771414" type="1i04.ThisNodeExpression" typeId="1i04.1225194691553" id="8099136929591178880" />
               <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="8099136929591178889">
-                <link role="link" roleId="tp25.1138056516764" targetNodeId="ym4j.8099136929591173608" />
+                <link role="link" roleId="tp25.1138056516764" targetNodeId="ym4j.1085404444144943750" />
               </node>
             </node>
             <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_ConceptMethodCall" typeId="tp25.1179409122411" id="8099136929591178899">
@@ -411,7 +415,7 @@
             <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="2090513530788243309">
               <node role="operand" roleId="tpee.1197027771414" type="1i04.ThisNodeExpression" typeId="1i04.1225194691553" id="2090513530788243306" />
               <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="2090513530788243315">
-                <link role="link" roleId="tp25.1138056516764" targetNodeId="ym4j.8099136929591173608" />
+                <link role="link" roleId="tp25.1138056516764" targetNodeId="ym4j.1085404444144943750" />
               </node>
             </node>
             <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_ConceptMethodCall" typeId="tp25.1179409122411" id="2090513530788243325">
@@ -432,7 +436,7 @@
             <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="1850134002004800172">
               <node role="operand" roleId="tpee.1197027771414" type="1i04.ThisNodeExpression" typeId="1i04.1225194691553" id="1850134002004800169" />
               <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="1850134002004800178">
-                <link role="link" roleId="tp25.1138056516764" targetNodeId="ym4j.8099136929591173608" />
+                <link role="link" roleId="tp25.1138056516764" targetNodeId="ym4j.1085404444144943750" />
               </node>
             </node>
             <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_ConceptMethodCall" typeId="tp25.1179409122411" id="1850134002004800188">
@@ -453,7 +457,7 @@
             <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="1850134002004977207">
               <node role="operand" roleId="tpee.1197027771414" type="1i04.ThisNodeExpression" typeId="1i04.1225194691553" id="1850134002004977204" />
               <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="1850134002004977212">
-                <link role="link" roleId="tp25.1138056516764" targetNodeId="ym4j.8099136929591173608" />
+                <link role="link" roleId="tp25.1138056516764" targetNodeId="ym4j.1085404444144943750" />
               </node>
             </node>
             <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_ConceptMethodCall" typeId="tp25.1179409122411" id="1850134002004977221">
@@ -481,13 +485,13 @@
                     </node>
                   </node>
                   <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="2078797996880626380">
-                    <link role="link" roleId="tp25.1138056516764" targetNodeId="ym4j.8099136929591173608" />
+                    <link role="link" roleId="tp25.1138056516764" targetNodeId="ym4j.1085404444144943750" />
                   </node>
                 </node>
                 <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.DotExpression" typeId="tpee.1197027756228" id="2078797996880626329">
                   <node role="operand" roleId="tpee.1197027771414" type="1i04.ThisNodeExpression" typeId="1i04.1225194691553" id="2078797996880626326" />
                   <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="2078797996880626335">
-                    <link role="link" roleId="tp25.1138056516764" targetNodeId="ym4j.8099136929591173608" />
+                    <link role="link" roleId="tp25.1138056516764" targetNodeId="ym4j.1085404444144943750" />
                   </node>
                 </node>
               </node>
@@ -531,7 +535,7 @@
             <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="2583895349223024061">
               <node role="operand" roleId="tpee.1197027771414" type="1i04.ThisNodeExpression" typeId="1i04.1225194691553" id="2583895349223024040" />
               <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="2583895349223024067">
-                <link role="link" roleId="tp25.1138056516764" targetNodeId="ym4j.8099136929591173608" />
+                <link role="link" roleId="tp25.1138056516764" targetNodeId="ym4j.1085404444144943750" />
               </node>
             </node>
             <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_ConceptMethodCall" typeId="tp25.1179409122411" id="2583895349223024095">
@@ -560,7 +564,7 @@
             <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="3165701247831525494">
               <node role="operand" roleId="tpee.1197027771414" type="1i04.ThisNodeExpression" typeId="1i04.1225194691553" id="3165701247831525473" />
               <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="3165701247831525500">
-                <link role="link" roleId="tp25.1138056516764" targetNodeId="ym4j.8099136929591173608" />
+                <link role="link" roleId="tp25.1138056516764" targetNodeId="ym4j.1085404444144943750" />
               </node>
             </node>
             <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_ConceptMethodCall" typeId="tp25.1179409122411" id="3165701247831525528">
@@ -1895,7 +1899,7 @@
                 <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="8428744930541248399" resolveInfo="ref" />
               </node>
               <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="8428744930541248431">
-                <link role="link" roleId="tp25.1138056516764" targetNodeId="ym4j.8099136929591173608" />
+                <link role="link" roleId="tp25.1138056516764" targetNodeId="ym4j.1085404444144943750" />
               </node>
             </node>
           </node>
@@ -2374,6 +2378,23 @@
   <root id="2583895349223030747">
     <node role="constructor" roleId="1i04.1225194240801" type="1i04.ConceptConstructorDeclaration" typeId="1i04.1225194413805" id="2583895349223030748">
       <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="2583895349223030749" />
+    </node>
+  </root>
+  <root id="1085404444144930962">
+    <node role="method" roleId="1i04.1225194240805" type="1i04.ConceptMethodDeclaration" typeId="1i04.1225194472830" id="1085404444144930965">
+      <property name="isAbstract" nameId="1i04.1225194472834" value="true" />
+      <property name="isVirtual" nameId="1i04.1225194472832" value="true" />
+      <property name="name" nameId="tpck.1169194664001" value="visibleUnits" />
+      <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="1085404444144930966" />
+      <node role="returnType" roleId="tpee.1068580123133" type="tp2q.SequenceType" typeId="tp2q.1151689724996" id="1085404444144931091">
+        <node role="elementType" roleId="tp2q.1151689745422" type="tp25.SNodeType" typeId="tp25.1138055754698" id="1085404444144931093">
+          <link role="concept" roleId="tp25.1138405853777" targetNodeId="ym4j.2078797996880543459" resolveInfo="NamedUnitDeclaration" />
+        </node>
+      </node>
+      <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="1085404444144930968" />
+    </node>
+    <node role="constructor" roleId="1i04.1225194240801" type="1i04.ConceptConstructorDeclaration" typeId="1i04.1225194413805" id="1085404444144930963">
+      <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="1085404444144930964" />
     </node>
   </root>
 </model>
