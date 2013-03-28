@@ -305,6 +305,9 @@
       <property name="name" nameId="tpck.1169194664001" value="StaticMemoryLocation" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="3376775282622142916" resolveInfo="AbstractDefineLike" />
     </node>
+    <node type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="1085404444144995831">
+      <property name="name" nameId="tpck.1169194664001" value="IModuleContentAdapter" />
+    </node>
   </roots>
   <root id="6437088627575722813">
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="6437088627575722833">
@@ -1294,6 +1297,14 @@
     <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="3376775282622611166">
       <property name="value" nameId="tpce.1105725733873" value="#memoryloc" />
       <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473891462" resolveInfo="alias" />
+    </node>
+  </root>
+  <root id="1085404444144995831">
+    <node role="extends" roleId="tpce.1169127546356" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="1085404444144995832">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="4643433264761171019" resolveInfo="IVisibleElementAdapter" />
+    </node>
+    <node role="extends" roleId="tpce.1169127546356" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="1085404444145161776">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="6437088627575722831" resolveInfo="IModuleContent" />
     </node>
   </root>
 </model>

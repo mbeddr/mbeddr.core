@@ -26,7 +26,7 @@
       <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="ym4j.8099136929591129785" resolveInfo="NamedDerivedUnitDeclaration" />
     </node>
     <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="8099136929591173609">
-      <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="ym4j.1085404444144943749" resolveInfo="AbstractUnitDeclRef" />
+      <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="ym4j.8099136929591173606" resolveInfo="UnitDeclarationRef" />
     </node>
     <node type="tpc2.StyleSheet" typeId="tpc2.1186402211651" id="5513256947824560920">
       <property name="name" nameId="tpck.1169194664001" value="units" />
@@ -90,6 +90,7 @@
     <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="3801772042669047867">
       <link role="styleClass" roleId="tpc2.1186406756722" targetNodeId="5513256947824560921" resolveInfo="physicalUnits" />
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_RefNodeList" typeId="tpc2.1073390211982" id="3801772042669047870">
+        <property name="separatorText" nameId="tpc2.1140524450557" value=" *" />
         <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="ym4j.3801772042669047864" />
         <link role="styleClass" roleId="tpc2.1186406756722" targetNodeId="5513256947824560921" resolveInfo="physicalUnits" />
         <node role="cellLayout" roleId="tpc2.1140524464360" type="tpc2.CellLayout_Indent" typeId="tpc2.1237303669825" id="3801772042669047871" />

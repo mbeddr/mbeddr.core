@@ -47,10 +47,6 @@
       <property name="name" nameId="tpck.1169194664001" value="UnitInModuleAdapter" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
     </node>
-    <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="1085404444144943878">
-      <property name="name" nameId="tpck.1169194664001" value="CUnitDeclRef" />
-      <link role="extends" roleId="tpce.1071489389519" targetNodeId="ym4j.1085404444144943749" resolveInfo="AbstractUnitDeclRef" />
-    </node>
   </roots>
   <root id="5513256947824492703">
     <node role="conceptLink" roleId="tpce.1105736949336" type="tpce.ReferenceConceptLink" typeId="tpce.1105736778597" id="9035511730050139081">
@@ -78,6 +74,9 @@
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="743779816742263133">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="mj1l.743779816742251347" resolveInfo="ITypeDecorator" />
     </node>
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="3900645836624052776">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="ym4j.1085404444144930947" resolveInfo="IVisibleUnitProvider" />
+    </node>
     <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.BooleanConceptProperty" typeId="tpce.1105725574259" id="5571096356573955065">
       <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473994950" resolveInfo="dontSubstituteByDefault" />
     </node>
@@ -100,6 +99,9 @@
     </node>
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="743779816742263174">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="mj1l.743779816742251356" resolveInfo="ILiteralDecorator" />
+    </node>
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="3900645836624019314">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="ym4j.1085404444144930947" resolveInfo="IVisibleUnitProvider" />
     </node>
   </root>
   <root id="5185104661801317038">
@@ -149,6 +151,9 @@
     <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="2078797996880607637">
       <property name="value" nameId="tpce.1105725733873" value="convert" />
       <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473891462" resolveInfo="alias" />
+    </node>
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="3900645836624054855">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="ym4j.1085404444144930947" resolveInfo="IVisibleUnitProvider" />
     </node>
   </root>
   <root id="4006257212296783260">
@@ -203,19 +208,21 @@
       <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
       <link role="target" roleId="tpce.1071599976176" targetNodeId="ym4j.2078797996880543459" resolveInfo="NamedUnitDeclaration" />
     </node>
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="1085404444144879478">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="x27k.6437088627575722831" resolveInfo="IModuleContent" />
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="1085404444145043045">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="x27k.1085404444144995831" resolveInfo="IModuleContentAdapter" />
     </node>
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="1085404444144930988">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="ym4j.1085404444144930947" resolveInfo="IUnitContainer" />
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="ym4j.1085404444144930947" resolveInfo="IVisibleUnitProvider" />
     </node>
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="1085404444144931099">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="x27k.4643433264761171019" resolveInfo="IVisibleElementAdapter" />
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="3900645836624007681">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="x27k.6437088627575722831" resolveInfo="IModuleContent" />
     </node>
     <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.BooleanConceptProperty" typeId="tpce.1105725574259" id="1085404444144899809">
       <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="vs0r.1085404444144838941" resolveInfo="allowNonIdentifierNames" />
     </node>
+    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.BooleanConceptProperty" typeId="tpce.1105725574259" id="1085404444145145165">
+      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="x27k.1317894735999278394" resolveInfo="exportable" />
+    </node>
   </root>
-  <root id="1085404444144943878" />
 </model>
 
