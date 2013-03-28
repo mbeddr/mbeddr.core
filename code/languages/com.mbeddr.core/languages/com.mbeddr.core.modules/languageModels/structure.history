@@ -38,7 +38,13 @@
     <dependencies>
       <model index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="3" />
     </dependencies>
-    <rename id="x27k.4869834929027891141" type="CONCEPT" from="IWillBeInitializedAnnotateable" to="IInitializingFunction" />
+    <move id="x27k.3788988821851871048" to="x27k.3376775282622233992" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="4" />
+    </dependencies>
+    <move id="x27k.3788988821852026524" to="x27k.3376775282622611130" />
   </StructureModification>
 </history>
 

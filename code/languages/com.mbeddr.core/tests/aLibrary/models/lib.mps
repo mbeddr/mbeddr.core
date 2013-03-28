@@ -2,47 +2,42 @@
 <model modelUID="r:30bd260c-eeef-48cc-bdac-128d01e18a6f(aLibrary.lib)">
   <persistence version="7" />
   <devkit namespace="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
-  <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="23" implicit="yes" />
   <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="5" implicit="yes" />
-  <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="4" implicit="yes" />
-  <import index="51wr" modelUID="r:b31f1c3c-99aa-4f1e-a329-cba27efb1a6b(com.mbeddr.core.buildconfig.structure)" version="1" implicit="yes" />
-  <import index="k146" modelUID="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" version="5" implicit="yes" />
-  <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="7" implicit="yes" />
   <roots>
-    <node type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="1579201292659807720">
-      <property name="name" nameId="tpck.1169194664001" value="MathLib" />
+    <node type=".com.mbeddr.core.modules.structure.ImplementationModule" id="1579201292659807720">
+      <property name="name" value="MathLib" />
     </node>
     <node type="mj1l.TypeSizeConfiguration" typeId="mj1l.3335993110369795380" id="1579201292659807730" />
-    <node type="51wr.BuildConfiguration" typeId="51wr.7717755763392524104" id="2671893947946166811" />
-    <node type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="2671893947946267782">
-      <property name="name" nameId="tpck.1169194664001" value="AnotherOne" />
+    <node type=".com.mbeddr.core.buildconfig.structure.BuildConfiguration" id="2671893947946166811" />
+    <node type=".com.mbeddr.core.modules.structure.ImplementationModule" id="2671893947946267782">
+      <property name="name" value="AnotherOne" />
     </node>
   </roots>
   <root id="1579201292659807720">
-    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="1579201292659807721">
-      <property name="name" nameId="tpck.1169194664001" value="add" />
-      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
-      <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="1579201292659807722">
-        <node role="statements" roleId="c4fa.4185783222026475862" type="x27k.ReturnStatement" typeId="x27k.8967919205527146149" id="1579201292659807763">
-          <node role="expression" roleId="x27k.8967919205527146150" type="mj1l.PlusExpression" typeId="mj1l.5763383285156373013" id="1579201292659807765">
-            <node role="right" roleId="mj1l.8860443239512128065" type="x27k.ArgumentRef" typeId="x27k.2093108837558505658" id="1579201292659807768">
-              <link role="arg" roleId="x27k.2093108837558505659" targetNodeId="1579201292659807728" resolveInfo="y" />
+    <node role="contents" type=".com.mbeddr.core.modules.structure.Function" id="1579201292659807721">
+      <property name="name" value="add" />
+      <property name="exported" value="true" />
+      <node role="body" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="1579201292659807722">
+        <node role="statements" roleId="c4fa.4185783222026475862" type=".com.mbeddr.core.modules.structure.ReturnStatement" id="1579201292659807763">
+          <node role="expression" type="mj1l.PlusExpression" typeId="mj1l.5763383285156373013" id="1579201292659807765">
+            <node role="right" roleId="mj1l.8860443239512128065" type=".com.mbeddr.core.modules.structure.ArgumentRef" id="1579201292659807768">
+              <link role="arg" targetNodeId="1579201292659807728" resolveInfo="y" />
             </node>
-            <node role="left" roleId="mj1l.8860443239512128064" type="x27k.ArgumentRef" typeId="x27k.2093108837558505658" id="1579201292659807764">
-              <link role="arg" roleId="x27k.2093108837558505659" targetNodeId="1579201292659807725" resolveInfo="x" />
+            <node role="left" roleId="mj1l.8860443239512128064" type=".com.mbeddr.core.modules.structure.ArgumentRef" id="1579201292659807764">
+              <link role="arg" targetNodeId="1579201292659807725" resolveInfo="x" />
             </node>
           </node>
         </node>
       </node>
-      <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="1579201292659807724" />
-      <node role="arguments" roleId="x27k.5708867820623310661" type="x27k.Argument" typeId="x27k.7892328519581704407" id="1579201292659807725">
-        <property name="name" nameId="tpck.1169194664001" value="x" />
-        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="1579201292659807726" />
+      <node role="type" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="1579201292659807724" />
+      <node role="arguments" type=".com.mbeddr.core.modules.structure.Argument" id="1579201292659807725">
+        <property name="name" value="x" />
+        <node role="type" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="1579201292659807726" />
       </node>
-      <node role="arguments" roleId="x27k.5708867820623310661" type="x27k.Argument" typeId="x27k.7892328519581704407" id="1579201292659807728">
-        <property name="name" nameId="tpck.1169194664001" value="y" />
-        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="1579201292659807729" />
+      <node role="arguments" type=".com.mbeddr.core.modules.structure.Argument" id="1579201292659807728">
+        <property name="name" value="y" />
+        <node role="type" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="1579201292659807729" />
       </node>
     </node>
   </root>
@@ -116,31 +111,31 @@
     </node>
   </root>
   <root id="2671893947946166811">
-    <node role="binaries" roleId="51wr.5046689135694070731" type="51wr.StaticLibrary" typeId="51wr.2671893947946158498" id="2671893947946166812">
-      <property name="name" nameId="tpck.1169194664001" value="MathLibLib" />
-      <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="2671893947946166813">
-        <link role="module" roleId="51wr.7717755763392524108" targetNodeId="1579201292659807720" resolveInfo="MathLib" />
+    <node role="binaries" type=".com.mbeddr.core.buildconfig.structure.StaticLibrary" id="2671893947946166812">
+      <property name="name" value="MathLibLib" />
+      <node role="referencedModules" type=".com.mbeddr.core.buildconfig.structure.ModuleRef" id="2671893947946166813">
+        <link role="module" targetNodeId="1579201292659807720" resolveInfo="MathLib" />
       </node>
-      <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="2671893947946267788">
-        <link role="module" roleId="51wr.7717755763392524108" targetNodeId="2671893947946267782" resolveInfo="AnotherOne" />
+      <node role="referencedModules" type=".com.mbeddr.core.buildconfig.structure.ModuleRef" id="2671893947946267788">
+        <link role="module" targetNodeId="2671893947946267782" resolveInfo="AnotherOne" />
       </node>
     </node>
-    <node role="target" roleId="51wr.5323740605968447026" type="51wr.DesktopPlatform" typeId="51wr.5323740605968447022" id="4459718605982728841">
-      <property name="compiler" nameId="51wr.5323740605968447024" value="gcc" />
-      <property name="compilerOptions" nameId="51wr.5323740605968447025" value="-std=c99" />
-      <property name="debugOptions" nameId="51wr.2736179788492003937" value="-g" />
+    <node role="target" type=".com.mbeddr.core.buildconfig.structure.DesktopPlatform" id="4459718605982728841">
+      <property name="compiler" value="gcc" />
+      <property name="compilerOptions" value="-std=c99" />
+      <property name="debugOptions" value="-g" />
     </node>
-    <node role="configurationItems" roleId="vs0r.4459718605982007338" type="k146.ReportingConfiguration" typeId="k146.4459718605982051949" id="4459718605982728842">
-      <node role="strategy" roleId="k146.4459718605982051999" type="k146.PrintfReportingStrategy" typeId="k146.4459718605982051980" id="4459718605982728843" />
+    <node role="configurationItems" type=".com.mbeddr.core.util.structure.ReportingConfiguration" id="4459718605982728842">
+      <node role="strategy" type=".com.mbeddr.core.util.structure.PrintfReportingStrategy" id="4459718605982728843" />
     </node>
   </root>
   <root id="2671893947946267782">
-    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="2671893947946267783">
-      <property name="name" nameId="tpck.1169194664001" value="dosSomething" />
-      <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="2671893947946267784">
+    <node role="contents" type=".com.mbeddr.core.modules.structure.Function" id="2671893947946267783">
+      <property name="name" value="dosSomething" />
+      <node role="body" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="2671893947946267784">
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="2671893947946267785" />
       </node>
-      <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="2671893947946267786" />
+      <node role="type" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="2671893947946267786" />
     </node>
   </root>
 </model>
