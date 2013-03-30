@@ -13,228 +13,234 @@
   <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="23" implicit="yes" />
   <import index="yq40" modelUID="r:152b3fc0-83a1-4bab-a8cd-565eb8483785(com.mbeddr.core.pointers.structure)" version="3" implicit="yes" />
   <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="5" implicit="yes" />
+  <import index="k146" modelUID="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" version="5" implicit="yes" />
+  <import index="clbe" modelUID="r:61d840b4-12c1-49ea-b142-b2a1550a9b15(com.mbeddr.core.udt.structure)" version="7" implicit="yes" />
+  <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="7" implicit="yes" />
+  <import index="51wr" modelUID="r:b31f1c3c-99aa-4f1e-a329-cba27efb1a6b(com.mbeddr.core.buildconfig.structure)" version="1" implicit="yes" />
+  <import index="yz9a" modelUID="r:734c02dd-cc16-4184-99eb-5fd9f43aa37e(com.mbeddr.core.unittest.structure)" version="0" implicit="yes" />
+  <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="3" implicit="yes" />
   <roots>
-    <node type=".com.mbeddr.core.buildconfig.structure.BuildConfiguration" id="6500545468170850174" />
-    <node type=".com.mbeddr.core.modules.structure.ImplementationModule" id="6500545468170850185">
-      <property name="name" value="Driver" />
+    <node type="51wr.BuildConfiguration" typeId="51wr.7717755763392524104" id="6500545468170850174" />
+    <node type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="6500545468170850185">
+      <property name="name" nameId="tpck.1169194664001" value="Driver" />
     </node>
-    <node type=".com.mbeddr.core.modules.structure.ImplementationModule" id="6500545468170850233">
-      <property name="name" value="ExpressionTests1" />
+    <node type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="6500545468170850233">
+      <property name="name" nameId="tpck.1169194664001" value="ExpressionTests1" />
     </node>
-    <node type=".com.mbeddr.core.modules.structure.ImplementationModule" id="6500545468170850462">
-      <property name="name" value="ExpressionTests2" />
+    <node type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="6500545468170850462">
+      <property name="name" nameId="tpck.1169194664001" value="ExpressionTests2" />
     </node>
-    <node type=".com.mbeddr.core.modules.structure.ImplementationModule" id="6500545468170850484">
-      <property name="name" value="HelperFunctions" />
+    <node type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="6500545468170850484">
+      <property name="name" nameId="tpck.1169194664001" value="HelperFunctions" />
     </node>
-    <node type=".com.mbeddr.core.modules.structure.ImplementationModule" id="6500545468170850499">
-      <property name="name" value="OperatorsTest" />
+    <node type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="6500545468170850499">
+      <property name="name" nameId="tpck.1169194664001" value="OperatorsTest" />
     </node>
     <node type="mj1l.TypeSizeConfiguration" typeId="mj1l.3335993110369795380" id="6500545468170851941" />
-    <node type=".com.mbeddr.core.modules.structure.ImplementationModule" id="6500545468170851974">
-      <property name="name" value="UnaryOperatorsTest" />
+    <node type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="6500545468170851974">
+      <property name="name" nameId="tpck.1169194664001" value="UnaryOperatorsTest" />
     </node>
   </roots>
   <root id="6500545468170850174">
-    <node role="binaries" type=".com.mbeddr.core.buildconfig.structure.Executable" id="6500545468170850175">
-      <property name="name" value="ExpressionsTest" />
-      <property name="isTest" value="true" />
-      <node role="referencedModules" type=".com.mbeddr.core.buildconfig.structure.ModuleRef" id="6500545468170850176">
-        <link role="module" targetNodeId="6500545468170850185" resolveInfo="Driver" />
+    <node role="binaries" roleId="51wr.5046689135694070731" type="51wr.Executable" typeId="51wr.5046689135693761554" id="6500545468170850175">
+      <property name="name" nameId="tpck.1169194664001" value="ExpressionsTest" />
+      <property name="isTest" nameId="51wr.3431613015799084476" value="true" />
+      <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="6500545468170850176">
+        <link role="module" roleId="51wr.7717755763392524108" targetNodeId="6500545468170850185" resolveInfo="Driver" />
       </node>
-      <node role="referencedModules" type=".com.mbeddr.core.buildconfig.structure.ModuleRef" id="6500545468170850177">
-        <link role="module" targetNodeId="6500545468170850499" resolveInfo="OperatorsTest" />
+      <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="6500545468170850177">
+        <link role="module" roleId="51wr.7717755763392524108" targetNodeId="6500545468170850499" resolveInfo="OperatorsTest" />
       </node>
-      <node role="referencedModules" type=".com.mbeddr.core.buildconfig.structure.ModuleRef" id="6500545468170850178">
-        <link role="module" targetNodeId="6500545468170851974" resolveInfo="UnaryOperatorsTest" />
+      <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="6500545468170850178">
+        <link role="module" roleId="51wr.7717755763392524108" targetNodeId="6500545468170851974" resolveInfo="UnaryOperatorsTest" />
       </node>
-      <node role="referencedModules" type=".com.mbeddr.core.buildconfig.structure.ModuleRef" id="6500545468170850179">
-        <link role="module" targetNodeId="6500545468170850233" resolveInfo="ExpressionTests1" />
+      <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="6500545468170850179">
+        <link role="module" roleId="51wr.7717755763392524108" targetNodeId="6500545468170850233" resolveInfo="ExpressionTests1" />
       </node>
-      <node role="referencedModules" type=".com.mbeddr.core.buildconfig.structure.ModuleRef" id="6500545468170850180">
-        <link role="module" targetNodeId="6500545468170850462" resolveInfo="ExpressionTests2" />
+      <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="6500545468170850180">
+        <link role="module" roleId="51wr.7717755763392524108" targetNodeId="6500545468170850462" resolveInfo="ExpressionTests2" />
       </node>
-      <node role="referencedModules" type=".com.mbeddr.core.buildconfig.structure.ModuleRef" id="6500545468170850181">
-        <link role="module" targetNodeId="6500545468170850484" resolveInfo="HelperFunctions" />
+      <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="6500545468170850181">
+        <link role="module" roleId="51wr.7717755763392524108" targetNodeId="6500545468170850484" resolveInfo="HelperFunctions" />
       </node>
     </node>
-    <node role="target" type=".com.mbeddr.core.buildconfig.structure.DesktopPlatform" id="6500545468170850182">
-      <property name="compiler" value="gcc" />
-      <property name="compilerOptions" value="-std=c99" />
-      <property name="debugOptions" value="-g" />
+    <node role="target" roleId="51wr.5323740605968447026" type="51wr.DesktopPlatform" typeId="51wr.5323740605968447022" id="6500545468170850182">
+      <property name="compiler" nameId="51wr.5323740605968447024" value="gcc" />
+      <property name="compilerOptions" nameId="51wr.5323740605968447025" value="-std=c99" />
+      <property name="debugOptions" nameId="51wr.2736179788492003937" value="-g" />
     </node>
-    <node role="configurationItems" type=".com.mbeddr.core.util.structure.ReportingConfiguration" id="6500545468170850183">
-      <node role="strategy" type=".com.mbeddr.core.util.structure.PrintfReportingStrategy" id="6500545468170850184" />
+    <node role="configurationItems" roleId="vs0r.4459718605982007338" type="k146.ReportingConfiguration" typeId="k146.4459718605982051949" id="6500545468170850183">
+      <node role="strategy" roleId="k146.4459718605982051999" type="k146.PrintfReportingStrategy" typeId="k146.4459718605982051980" id="6500545468170850184" />
     </node>
   </root>
   <root id="6500545468170850185">
-    <node role="contents" type=".com.mbeddr.core.modules.structure.Function" id="6500545468170850186">
-      <property name="name" value="main" />
-      <property name="exported" value="true" />
-      <node role="body" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="6500545468170850187">
-        <node role="statements" roleId="c4fa.4185783222026475862" type=".com.mbeddr.core.modules.structure.ReturnStatement" id="6500545468170850188">
-          <node role="expression" type=".com.mbeddr.core.unittest.structure.ExecuteTestExpression" id="6500545468170850189">
-            <node role="tests" type=".com.mbeddr.core.unittest.structure.TestCaseRef" id="6500545468170850190">
-              <link role="testcase" targetNodeId="6500545468170850245" resolveInfo="addNumbers" />
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="6500545468170850186">
+      <property name="name" nameId="tpck.1169194664001" value="main" />
+      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
+      <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="6500545468170850187">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="x27k.ReturnStatement" typeId="x27k.8967919205527146149" id="6500545468170850188">
+          <node role="expression" roleId="x27k.8967919205527146150" type="yz9a.ExecuteTestExpression" typeId="yz9a.186853311768094629" id="6500545468170850189">
+            <node role="tests" roleId="yz9a.5686538669182341016" type="yz9a.TestCaseRef" typeId="yz9a.5686538669182340985" id="6500545468170850190">
+              <link role="testcase" roleId="yz9a.5686538669182340986" targetNodeId="6500545468170850245" resolveInfo="addNumbers" />
             </node>
-            <node role="tests" type=".com.mbeddr.core.unittest.structure.TestCaseRef" id="6500545468170850191">
-              <link role="testcase" targetNodeId="6500545468170850333" resolveInfo="logicalOperators" />
+            <node role="tests" roleId="yz9a.5686538669182341016" type="yz9a.TestCaseRef" typeId="yz9a.5686538669182340985" id="6500545468170850191">
+              <link role="testcase" roleId="yz9a.5686538669182340986" targetNodeId="6500545468170850333" resolveInfo="logicalOperators" />
             </node>
-            <node role="tests" type=".com.mbeddr.core.unittest.structure.TestCaseRef" id="6500545468170850192">
-              <link role="testcase" targetNodeId="6500545468170850396" resolveInfo="boolAndInt" />
+            <node role="tests" roleId="yz9a.5686538669182341016" type="yz9a.TestCaseRef" typeId="yz9a.5686538669182340985" id="6500545468170850192">
+              <link role="testcase" roleId="yz9a.5686538669182340986" targetNodeId="6500545468170850396" resolveInfo="boolAndInt" />
             </node>
-            <node role="tests" type=".com.mbeddr.core.unittest.structure.TestCaseRef" id="6500545468170850193">
-              <link role="testcase" targetNodeId="6500545468170850434" resolveInfo="charTest" />
+            <node role="tests" roleId="yz9a.5686538669182341016" type="yz9a.TestCaseRef" typeId="yz9a.5686538669182340985" id="6500545468170850193">
+              <link role="testcase" roleId="yz9a.5686538669182340986" targetNodeId="6500545468170850434" resolveInfo="charTest" />
             </node>
-            <node role="tests" type=".com.mbeddr.core.unittest.structure.TestCaseRef" id="6500545468170850194">
-              <link role="testcase" targetNodeId="6500545468170850500" resolveInfo="testBitwiseAnd" />
+            <node role="tests" roleId="yz9a.5686538669182341016" type="yz9a.TestCaseRef" typeId="yz9a.5686538669182340985" id="6500545468170850194">
+              <link role="testcase" roleId="yz9a.5686538669182340986" targetNodeId="6500545468170850500" resolveInfo="testBitwiseAnd" />
             </node>
-            <node role="tests" type=".com.mbeddr.core.unittest.structure.TestCaseRef" id="6500545468170850195">
-              <link role="testcase" targetNodeId="6500545468170850569" resolveInfo="testBitwiseOR" />
+            <node role="tests" roleId="yz9a.5686538669182341016" type="yz9a.TestCaseRef" typeId="yz9a.5686538669182340985" id="6500545468170850195">
+              <link role="testcase" roleId="yz9a.5686538669182340986" targetNodeId="6500545468170850569" resolveInfo="testBitwiseOR" />
             </node>
-            <node role="tests" type=".com.mbeddr.core.unittest.structure.TestCaseRef" id="6500545468170850196">
-              <link role="testcase" targetNodeId="6500545468170850611" resolveInfo="testBitwiseXOR" />
+            <node role="tests" roleId="yz9a.5686538669182341016" type="yz9a.TestCaseRef" typeId="yz9a.5686538669182340985" id="6500545468170850196">
+              <link role="testcase" roleId="yz9a.5686538669182340986" targetNodeId="6500545468170850611" resolveInfo="testBitwiseXOR" />
             </node>
-            <node role="tests" type=".com.mbeddr.core.unittest.structure.TestCaseRef" id="6500545468170850197">
-              <link role="testcase" targetNodeId="6500545468170850653" resolveInfo="testBitwiseRightShift" />
+            <node role="tests" roleId="yz9a.5686538669182341016" type="yz9a.TestCaseRef" typeId="yz9a.5686538669182340985" id="6500545468170850197">
+              <link role="testcase" roleId="yz9a.5686538669182340986" targetNodeId="6500545468170850653" resolveInfo="testBitwiseRightShift" />
             </node>
-            <node role="tests" type=".com.mbeddr.core.unittest.structure.TestCaseRef" id="6500545468170850198">
-              <link role="testcase" targetNodeId="6500545468170850694" resolveInfo="testBitwiseLeftShift" />
+            <node role="tests" roleId="yz9a.5686538669182341016" type="yz9a.TestCaseRef" typeId="yz9a.5686538669182340985" id="6500545468170850198">
+              <link role="testcase" roleId="yz9a.5686538669182340986" targetNodeId="6500545468170850694" resolveInfo="testBitwiseLeftShift" />
             </node>
-            <node role="tests" type=".com.mbeddr.core.unittest.structure.TestCaseRef" id="6500545468170850199">
-              <link role="testcase" targetNodeId="6500545468170850735" resolveInfo="testUnaryIncrementOperator" />
+            <node role="tests" roleId="yz9a.5686538669182341016" type="yz9a.TestCaseRef" typeId="yz9a.5686538669182340985" id="6500545468170850199">
+              <link role="testcase" roleId="yz9a.5686538669182340986" targetNodeId="6500545468170850735" resolveInfo="testUnaryIncrementOperator" />
             </node>
-            <node role="tests" type=".com.mbeddr.core.unittest.structure.TestCaseRef" id="6500545468170850200">
-              <link role="testcase" targetNodeId="6500545468170850765" resolveInfo="testUnaryDecrementOperator" />
+            <node role="tests" roleId="yz9a.5686538669182341016" type="yz9a.TestCaseRef" typeId="yz9a.5686538669182340985" id="6500545468170850200">
+              <link role="testcase" roleId="yz9a.5686538669182340986" targetNodeId="6500545468170850765" resolveInfo="testUnaryDecrementOperator" />
             </node>
-            <node role="tests" type=".com.mbeddr.core.unittest.structure.TestCaseRef" id="6500545468170850201">
-              <link role="testcase" targetNodeId="6500545468170850796" resolveInfo="testUnaryMinusOperator" />
+            <node role="tests" roleId="yz9a.5686538669182341016" type="yz9a.TestCaseRef" typeId="yz9a.5686538669182340985" id="6500545468170850201">
+              <link role="testcase" roleId="yz9a.5686538669182340986" targetNodeId="6500545468170850796" resolveInfo="testUnaryMinusOperator" />
             </node>
-            <node role="tests" type=".com.mbeddr.core.unittest.structure.TestCaseRef" id="6500545468170850202">
-              <link role="testcase" targetNodeId="6500545468170850821" resolveInfo="testUnaryArithmeticNotOperator" />
+            <node role="tests" roleId="yz9a.5686538669182341016" type="yz9a.TestCaseRef" typeId="yz9a.5686538669182340985" id="6500545468170850202">
+              <link role="testcase" roleId="yz9a.5686538669182340986" targetNodeId="6500545468170850821" resolveInfo="testUnaryArithmeticNotOperator" />
             </node>
-            <node role="tests" type=".com.mbeddr.core.unittest.structure.TestCaseRef" id="6500545468170850203">
-              <link role="testcase" targetNodeId="6500545468170851494" resolveInfo="testModuloOperator" />
+            <node role="tests" roleId="yz9a.5686538669182341016" type="yz9a.TestCaseRef" typeId="yz9a.5686538669182340985" id="6500545468170850203">
+              <link role="testcase" roleId="yz9a.5686538669182340986" targetNodeId="6500545468170851494" resolveInfo="testModuloOperator" />
             </node>
-            <node role="tests" type=".com.mbeddr.core.unittest.structure.TestCaseRef" id="6500545468170850204">
-              <link role="testcase" targetNodeId="6500545468170851517" resolveInfo="testAndOperator" />
+            <node role="tests" roleId="yz9a.5686538669182341016" type="yz9a.TestCaseRef" typeId="yz9a.5686538669182340985" id="6500545468170850204">
+              <link role="testcase" roleId="yz9a.5686538669182340986" targetNodeId="6500545468170851517" resolveInfo="testAndOperator" />
             </node>
-            <node role="tests" type=".com.mbeddr.core.unittest.structure.TestCaseRef" id="6500545468170850205">
-              <link role="testcase" targetNodeId="6500545468170851552" resolveInfo="testOrOperator" />
+            <node role="tests" roleId="yz9a.5686538669182341016" type="yz9a.TestCaseRef" typeId="yz9a.5686538669182340985" id="6500545468170850205">
+              <link role="testcase" roleId="yz9a.5686538669182340986" targetNodeId="6500545468170851552" resolveInfo="testOrOperator" />
             </node>
-            <node role="tests" type=".com.mbeddr.core.unittest.structure.TestCaseRef" id="6500545468170850206">
-              <link role="testcase" targetNodeId="6500545468170851586" resolveInfo="testNotOperator" />
+            <node role="tests" roleId="yz9a.5686538669182341016" type="yz9a.TestCaseRef" typeId="yz9a.5686538669182340985" id="6500545468170850206">
+              <link role="testcase" roleId="yz9a.5686538669182340986" targetNodeId="6500545468170851586" resolveInfo="testNotOperator" />
             </node>
-            <node role="tests" type=".com.mbeddr.core.unittest.structure.TestCaseRef" id="6500545468170850207">
-              <link role="testcase" targetNodeId="6500545468170851603" resolveInfo="testEqualsOperator" />
+            <node role="tests" roleId="yz9a.5686538669182341016" type="yz9a.TestCaseRef" typeId="yz9a.5686538669182340985" id="6500545468170850207">
+              <link role="testcase" roleId="yz9a.5686538669182340986" targetNodeId="6500545468170851603" resolveInfo="testEqualsOperator" />
             </node>
-            <node role="tests" type=".com.mbeddr.core.unittest.structure.TestCaseRef" id="6500545468170850208">
-              <link role="testcase" targetNodeId="6500545468170851632" resolveInfo="testNotEqualsOperator" />
+            <node role="tests" roleId="yz9a.5686538669182341016" type="yz9a.TestCaseRef" typeId="yz9a.5686538669182340985" id="6500545468170850208">
+              <link role="testcase" roleId="yz9a.5686538669182340986" targetNodeId="6500545468170851632" resolveInfo="testNotEqualsOperator" />
             </node>
-            <node role="tests" type=".com.mbeddr.core.unittest.structure.TestCaseRef" id="6500545468170850209">
-              <link role="testcase" targetNodeId="6500545468170851748" resolveInfo="testGreaterEqualsOperator" />
+            <node role="tests" roleId="yz9a.5686538669182341016" type="yz9a.TestCaseRef" typeId="yz9a.5686538669182340985" id="6500545468170850209">
+              <link role="testcase" roleId="yz9a.5686538669182340986" targetNodeId="6500545468170851748" resolveInfo="testGreaterEqualsOperator" />
             </node>
-            <node role="tests" type=".com.mbeddr.core.unittest.structure.TestCaseRef" id="6500545468170850210">
-              <link role="testcase" targetNodeId="6500545468170851723" resolveInfo="testGreaterOperator" />
+            <node role="tests" roleId="yz9a.5686538669182341016" type="yz9a.TestCaseRef" typeId="yz9a.5686538669182340985" id="6500545468170850210">
+              <link role="testcase" roleId="yz9a.5686538669182340986" targetNodeId="6500545468170851723" resolveInfo="testGreaterOperator" />
             </node>
-            <node role="tests" type=".com.mbeddr.core.unittest.structure.TestCaseRef" id="6500545468170850211">
-              <link role="testcase" targetNodeId="6500545468170851697" resolveInfo="testLessEqualsOperator" />
+            <node role="tests" roleId="yz9a.5686538669182341016" type="yz9a.TestCaseRef" typeId="yz9a.5686538669182340985" id="6500545468170850211">
+              <link role="testcase" roleId="yz9a.5686538669182340986" targetNodeId="6500545468170851697" resolveInfo="testLessEqualsOperator" />
             </node>
-            <node role="tests" type=".com.mbeddr.core.unittest.structure.TestCaseRef" id="6500545468170850212">
-              <link role="testcase" targetNodeId="6500545468170851660" resolveInfo="testLessOperator" />
+            <node role="tests" roleId="yz9a.5686538669182341016" type="yz9a.TestCaseRef" typeId="yz9a.5686538669182340985" id="6500545468170850212">
+              <link role="testcase" roleId="yz9a.5686538669182340986" targetNodeId="6500545468170851660" resolveInfo="testLessOperator" />
             </node>
-            <node role="tests" type=".com.mbeddr.core.unittest.structure.TestCaseRef" id="6500545468170850213">
-              <link role="testcase" targetNodeId="6500545468170850869" resolveInfo="testDirectAssignment" />
+            <node role="tests" roleId="yz9a.5686538669182341016" type="yz9a.TestCaseRef" typeId="yz9a.5686538669182340985" id="6500545468170850213">
+              <link role="testcase" roleId="yz9a.5686538669182340986" targetNodeId="6500545468170850869" resolveInfo="testDirectAssignment" />
             </node>
-            <node role="tests" type=".com.mbeddr.core.unittest.structure.TestCaseRef" id="6500545468170850214">
-              <link role="testcase" targetNodeId="6500545468170850840" resolveInfo="testParens" />
+            <node role="tests" roleId="yz9a.5686538669182341016" type="yz9a.TestCaseRef" typeId="yz9a.5686538669182340985" id="6500545468170850214">
+              <link role="testcase" roleId="yz9a.5686538669182340986" targetNodeId="6500545468170850840" resolveInfo="testParens" />
             </node>
-            <node role="tests" type=".com.mbeddr.core.unittest.structure.TestCaseRef" id="6500545468170850215">
-              <link role="testcase" targetNodeId="6500545468170850884" resolveInfo="testDirectPlusAssignmentExpression" />
+            <node role="tests" roleId="yz9a.5686538669182341016" type="yz9a.TestCaseRef" typeId="yz9a.5686538669182340985" id="6500545468170850215">
+              <link role="testcase" roleId="yz9a.5686538669182340986" targetNodeId="6500545468170850884" resolveInfo="testDirectPlusAssignmentExpression" />
             </node>
-            <node role="tests" type=".com.mbeddr.core.unittest.structure.TestCaseRef" id="6500545468170850216">
-              <link role="testcase" targetNodeId="6500545468170850968" resolveInfo="testDirectMinusAssignmentExpression" />
+            <node role="tests" roleId="yz9a.5686538669182341016" type="yz9a.TestCaseRef" typeId="yz9a.5686538669182340985" id="6500545468170850216">
+              <link role="testcase" roleId="yz9a.5686538669182340986" targetNodeId="6500545468170850968" resolveInfo="testDirectMinusAssignmentExpression" />
             </node>
-            <node role="tests" type=".com.mbeddr.core.unittest.structure.TestCaseRef" id="6500545468170850217">
-              <link role="testcase" targetNodeId="6500545468170851055" resolveInfo="testDirectMultiAssignmentExpression" />
+            <node role="tests" roleId="yz9a.5686538669182341016" type="yz9a.TestCaseRef" typeId="yz9a.5686538669182340985" id="6500545468170850217">
+              <link role="testcase" roleId="yz9a.5686538669182340986" targetNodeId="6500545468170851055" resolveInfo="testDirectMultiAssignmentExpression" />
             </node>
-            <node role="tests" type=".com.mbeddr.core.unittest.structure.TestCaseRef" id="6500545468170850218">
-              <link role="testcase" targetNodeId="6500545468170851142" resolveInfo="testDirectDivAssignmentExpression" />
+            <node role="tests" roleId="yz9a.5686538669182341016" type="yz9a.TestCaseRef" typeId="yz9a.5686538669182340985" id="6500545468170850218">
+              <link role="testcase" roleId="yz9a.5686538669182340986" targetNodeId="6500545468170851142" resolveInfo="testDirectDivAssignmentExpression" />
             </node>
-            <node role="tests" type=".com.mbeddr.core.unittest.structure.TestCaseRef" id="6500545468170850219">
-              <link role="testcase" targetNodeId="6500545468170851226" resolveInfo="testDirectModuloAssignmentExpression" />
+            <node role="tests" roleId="yz9a.5686538669182341016" type="yz9a.TestCaseRef" typeId="yz9a.5686538669182340985" id="6500545468170850219">
+              <link role="testcase" roleId="yz9a.5686538669182340986" targetNodeId="6500545468170851226" resolveInfo="testDirectModuloAssignmentExpression" />
             </node>
-            <node role="tests" type=".com.mbeddr.core.unittest.structure.TestCaseRef" id="6500545468170850220">
-              <link role="testcase" targetNodeId="6500545468170851282" resolveInfo="testDirectBitwiseANDAssignmentExpression" />
+            <node role="tests" roleId="yz9a.5686538669182341016" type="yz9a.TestCaseRef" typeId="yz9a.5686538669182340985" id="6500545468170850220">
+              <link role="testcase" roleId="yz9a.5686538669182340986" targetNodeId="6500545468170851282" resolveInfo="testDirectBitwiseANDAssignmentExpression" />
             </node>
-            <node role="tests" type=".com.mbeddr.core.unittest.structure.TestCaseRef" id="6500545468170850221">
-              <link role="testcase" targetNodeId="6500545468170851451" resolveInfo="testDirectBitwiseLeftShiftAssignmentExpression" />
+            <node role="tests" roleId="yz9a.5686538669182341016" type="yz9a.TestCaseRef" typeId="yz9a.5686538669182340985" id="6500545468170850221">
+              <link role="testcase" roleId="yz9a.5686538669182340986" targetNodeId="6500545468170851451" resolveInfo="testDirectBitwiseLeftShiftAssignmentExpression" />
             </node>
-            <node role="tests" type=".com.mbeddr.core.unittest.structure.TestCaseRef" id="6500545468170850222">
-              <link role="testcase" targetNodeId="6500545468170851324" resolveInfo="testDirectBitwiseORAssignmentExpression" />
+            <node role="tests" roleId="yz9a.5686538669182341016" type="yz9a.TestCaseRef" typeId="yz9a.5686538669182340985" id="6500545468170850222">
+              <link role="testcase" roleId="yz9a.5686538669182340986" targetNodeId="6500545468170851324" resolveInfo="testDirectBitwiseORAssignmentExpression" />
             </node>
-            <node role="tests" type=".com.mbeddr.core.unittest.structure.TestCaseRef" id="6500545468170850223">
-              <link role="testcase" targetNodeId="6500545468170851408" resolveInfo="testDirectBitwiseRightShiftAssignmentExpression" />
+            <node role="tests" roleId="yz9a.5686538669182341016" type="yz9a.TestCaseRef" typeId="yz9a.5686538669182340985" id="6500545468170850223">
+              <link role="testcase" roleId="yz9a.5686538669182340986" targetNodeId="6500545468170851408" resolveInfo="testDirectBitwiseRightShiftAssignmentExpression" />
             </node>
-            <node role="tests" type=".com.mbeddr.core.unittest.structure.TestCaseRef" id="6500545468170850224">
-              <link role="testcase" targetNodeId="6500545468170851366" resolveInfo="testDirectBitwiseXORAssignmentExpression" />
+            <node role="tests" roleId="yz9a.5686538669182341016" type="yz9a.TestCaseRef" typeId="yz9a.5686538669182340985" id="6500545468170850224">
+              <link role="testcase" roleId="yz9a.5686538669182340986" targetNodeId="6500545468170851366" resolveInfo="testDirectBitwiseXORAssignmentExpression" />
             </node>
-            <node role="tests" type=".com.mbeddr.core.unittest.structure.TestCaseRef" id="6500545468170850225">
-              <link role="testcase" targetNodeId="6500545468170851990" resolveInfo="testUnaryOperatorOnArray" />
+            <node role="tests" roleId="yz9a.5686538669182341016" type="yz9a.TestCaseRef" typeId="yz9a.5686538669182340985" id="6500545468170850225">
+              <link role="testcase" roleId="yz9a.5686538669182340986" targetNodeId="6500545468170851990" resolveInfo="testUnaryOperatorOnArray" />
             </node>
-            <node role="tests" type=".com.mbeddr.core.unittest.structure.TestCaseRef" id="6500545468170850226">
-              <link role="testcase" targetNodeId="6500545468170852006" resolveInfo="testUnaryOperatorOnFunction" />
+            <node role="tests" roleId="yz9a.5686538669182341016" type="yz9a.TestCaseRef" typeId="yz9a.5686538669182340985" id="6500545468170850226">
+              <link role="testcase" roleId="yz9a.5686538669182340986" targetNodeId="6500545468170852006" resolveInfo="testUnaryOperatorOnFunction" />
             </node>
-            <node role="tests" type=".com.mbeddr.core.unittest.structure.TestCaseRef" id="6500545468170850227">
-              <link role="testcase" targetNodeId="6500545468170852030" resolveInfo="testUnaryOperatorOnPointerDeref" />
+            <node role="tests" roleId="yz9a.5686538669182341016" type="yz9a.TestCaseRef" typeId="yz9a.5686538669182340985" id="6500545468170850227">
+              <link role="testcase" roleId="yz9a.5686538669182340986" targetNodeId="6500545468170852030" resolveInfo="testUnaryOperatorOnPointerDeref" />
             </node>
           </node>
         </node>
       </node>
-      <node role="type" type="mj1l.Int64tType" typeId="mj1l.8463282783691618445" id="6500545468170850228" />
+      <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int64tType" typeId="mj1l.8463282783691618445" id="6500545468170850228" />
     </node>
-    <node role="imports" type=".com.mbeddr.core.modules.structure.ModuleImport" id="6500545468170850229">
-      <link role="module" targetNodeId="6500545468170850233" resolveInfo="ExpressionTests1" />
+    <node role="imports" roleId="x27k.1317894735999304826" type="x27k.ModuleImport" typeId="x27k.1317894735999299713" id="6500545468170850229">
+      <link role="module" roleId="x27k.1317894735999299714" targetNodeId="6500545468170850233" resolveInfo="ExpressionTests1" />
     </node>
-    <node role="imports" type=".com.mbeddr.core.modules.structure.ModuleImport" id="6500545468170850230">
-      <link role="module" targetNodeId="6500545468170850462" resolveInfo="ExpressionTests2" />
+    <node role="imports" roleId="x27k.1317894735999304826" type="x27k.ModuleImport" typeId="x27k.1317894735999299713" id="6500545468170850230">
+      <link role="module" roleId="x27k.1317894735999299714" targetNodeId="6500545468170850462" resolveInfo="ExpressionTests2" />
     </node>
-    <node role="imports" type=".com.mbeddr.core.modules.structure.ModuleImport" id="6500545468170850231">
-      <link role="module" targetNodeId="6500545468170850499" resolveInfo="OperatorsTest" />
+    <node role="imports" roleId="x27k.1317894735999304826" type="x27k.ModuleImport" typeId="x27k.1317894735999299713" id="6500545468170850231">
+      <link role="module" roleId="x27k.1317894735999299714" targetNodeId="6500545468170850499" resolveInfo="OperatorsTest" />
     </node>
-    <node role="imports" type=".com.mbeddr.core.modules.structure.ModuleImport" id="6500545468170850232">
-      <link role="module" targetNodeId="6500545468170851974" resolveInfo="UnaryOperatorsTest" />
+    <node role="imports" roleId="x27k.1317894735999304826" type="x27k.ModuleImport" typeId="x27k.1317894735999299713" id="6500545468170850232">
+      <link role="module" roleId="x27k.1317894735999299714" targetNodeId="6500545468170851974" resolveInfo="UnaryOperatorsTest" />
     </node>
   </root>
   <root id="6500545468170850233">
-    <node role="contents" type=".com.mbeddr.core.modules.structure.Function" id="6500545468170850234">
-      <property name="name" value="dummy" />
-      <node role="body" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="6500545468170850235">
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="6500545468170850234">
+      <property name="name" nameId="tpck.1169194664001" value="dummy" />
+      <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="6500545468170850235">
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="6500545468170850236">
           <property name="name" nameId="tpck.1169194664001" value="d" />
           <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="6500545468170850237" />
         </node>
       </node>
-      <node role="type" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="6500545468170850238" />
-      <node role="arguments" type=".com.mbeddr.core.modules.structure.Argument" id="6500545468170850239">
-        <property name="name" value="x" />
-        <node role="type" type="mj1l.Int16tType" typeId="mj1l.8463282783691618435" id="6500545468170850240" />
+      <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="6500545468170850238" />
+      <node role="arguments" roleId="x27k.5708867820623310661" type="x27k.Argument" typeId="x27k.7892328519581704407" id="6500545468170850239">
+        <property name="name" nameId="tpck.1169194664001" value="x" />
+        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int16tType" typeId="mj1l.8463282783691618435" id="6500545468170850240" />
       </node>
-      <node role="arguments" type=".com.mbeddr.core.modules.structure.Argument" id="6500545468170850241">
-        <property name="name" value="y" />
-        <node role="type" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="6500545468170850242" />
+      <node role="arguments" roleId="x27k.5708867820623310661" type="x27k.Argument" typeId="x27k.7892328519581704407" id="6500545468170850241">
+        <property name="name" nameId="tpck.1169194664001" value="y" />
+        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="6500545468170850242" />
       </node>
     </node>
-    <node role="contents" type=".com.mbeddr.core.modules.structure.EmptyModuleContent" id="6500545468170850243">
-      <property name="name" value="empty_1330431500185_2" />
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="6500545468170850243">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1330431500185_2" />
     </node>
-    <node role="contents" type=".com.mbeddr.core.modules.structure.EmptyModuleContent" id="6500545468170850244">
-      <property name="name" value="empty_1330431500321_3" />
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="6500545468170850244">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1330431500321_3" />
     </node>
-    <node role="contents" type=".com.mbeddr.core.unittest.structure.TestCase" id="6500545468170850245">
-      <property name="name" value="addNumbers" />
-      <property name="exported" value="true" />
-      <node role="body" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="6500545468170850246">
+    <node role="contents" roleId="x27k.6437088627575722833" type="yz9a.TestCase" typeId="yz9a.6275792049641586523" id="6500545468170850245">
+      <property name="name" nameId="tpck.1169194664001" value="addNumbers" />
+      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
+      <node role="body" roleId="yz9a.6275792049641586525" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="6500545468170850246">
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="6500545468170850247">
           <property name="name" nameId="tpck.1169194664001" value="x" />
           <node role="init" roleId="c4fa.4185783222026502647" type="mj1l.PlusExpression" typeId="mj1l.5763383285156373013" id="6500545468170850248">
@@ -247,9 +253,9 @@
           </node>
           <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="6500545468170850251" />
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type=".com.mbeddr.core.unittest.structure.AssertStatement" id="6500545468170850252">
-          <property name="contextNodeIdD" value="6500545468170850252" />
-          <node role="expr" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170850253">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="6500545468170850252">
+          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="6500545468170850252" />
+          <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170850253">
             <node role="left" roleId="mj1l.8860443239512128064" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="6500545468170850254">
               <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="6500545468170850247" resolveInfo="x" />
             </node>
@@ -258,15 +264,15 @@
             </node>
           </node>
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type=".com.mbeddr.core.unittest.structure.AssertStatement" id="6500545468170850256">
-          <property name="contextNodeIdD" value="6500545468170850256" />
-          <node role="expr" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170850257">
-            <node role="left" roleId="mj1l.8860443239512128064" type=".com.mbeddr.core.modules.structure.FunctionCall" id="6500545468170850258">
-              <link role="function" targetNodeId="6500545468170850485" resolveInfo="add" />
-              <node role="actuals" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6500545468170850259">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="6500545468170850256">
+          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="6500545468170850256" />
+          <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170850257">
+            <node role="left" roleId="mj1l.8860443239512128064" type="x27k.FunctionCall" typeId="x27k.5950410542643524492" id="6500545468170850258">
+              <link role="function" roleId="x27k.5950410542643524493" targetNodeId="6500545468170850485" resolveInfo="add" />
+              <node role="actuals" roleId="x27k.5950410542643524495" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6500545468170850259">
                 <property name="value" nameId="mj1l.8860443239512128104" value="10" />
               </node>
-              <node role="actuals" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6500545468170850260">
+              <node role="actuals" roleId="x27k.5950410542643524495" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6500545468170850260">
                 <property name="value" nameId="mj1l.8860443239512128104" value="2" />
               </node>
             </node>
@@ -277,20 +283,20 @@
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="6500545468170850262">
           <property name="name" nameId="tpck.1169194664001" value="y" />
-          <node role="init" roleId="c4fa.4185783222026502647" type=".com.mbeddr.core.modules.structure.FunctionCall" id="6500545468170850263">
-            <link role="function" targetNodeId="6500545468170850485" resolveInfo="add" />
-            <node role="actuals" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6500545468170850264">
+          <node role="init" roleId="c4fa.4185783222026502647" type="x27k.FunctionCall" typeId="x27k.5950410542643524492" id="6500545468170850263">
+            <link role="function" roleId="x27k.5950410542643524493" targetNodeId="6500545468170850485" resolveInfo="add" />
+            <node role="actuals" roleId="x27k.5950410542643524495" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6500545468170850264">
               <property name="value" nameId="mj1l.8860443239512128104" value="3" />
             </node>
-            <node role="actuals" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6500545468170850265">
+            <node role="actuals" roleId="x27k.5950410542643524495" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6500545468170850265">
               <property name="value" nameId="mj1l.8860443239512128104" value="3" />
             </node>
           </node>
           <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="6500545468170850266" />
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type=".com.mbeddr.core.unittest.structure.AssertStatement" id="6500545468170850267">
-          <property name="contextNodeIdD" value="6500545468170850267" />
-          <node role="expr" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170850268">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="6500545468170850267">
+          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="6500545468170850267" />
+          <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170850268">
             <node role="left" roleId="mj1l.8860443239512128064" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="6500545468170850269">
               <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="6500545468170850262" resolveInfo="y" />
             </node>
@@ -299,9 +305,9 @@
             </node>
           </node>
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type=".com.mbeddr.core.unittest.structure.AssertStatement" id="6500545468170850271">
-          <property name="contextNodeIdD" value="6500545468170850271" />
-          <node role="expr" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170850272">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="6500545468170850271">
+          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="6500545468170850271" />
+          <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170850272">
             <node role="left" roleId="mj1l.8860443239512128064" type="mj1l.PlusExpression" typeId="mj1l.5763383285156373013" id="6500545468170850273">
               <node role="left" roleId="mj1l.8860443239512128064" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6500545468170850274">
                 <property name="value" nameId="mj1l.8860443239512128104" value="3" />
@@ -320,9 +326,9 @@
             </node>
           </node>
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type=".com.mbeddr.core.unittest.structure.AssertStatement" id="6500545468170850279">
-          <property name="contextNodeIdD" value="6500545468170850279" />
-          <node role="expr" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170850280">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="6500545468170850279">
+          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="6500545468170850279" />
+          <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170850280">
             <node role="left" roleId="mj1l.8860443239512128064" type="mj1l.MultiExpression" typeId="mj1l.5763383285156373020" id="6500545468170850281">
               <node role="left" roleId="mj1l.8860443239512128064" type="mj1l.MultiExpression" typeId="mj1l.5763383285156373020" id="6500545468170850282">
                 <node role="left" roleId="mj1l.8860443239512128064" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6500545468170850283">
@@ -376,9 +382,9 @@
             </node>
           </node>
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type=".com.mbeddr.core.unittest.structure.AssertStatement" id="6500545468170850302">
-          <property name="contextNodeIdD" value="6500545468170850302" />
-          <node role="expr" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170850303">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="6500545468170850302">
+          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="6500545468170850302" />
+          <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170850303">
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6500545468170850304">
               <property name="value" nameId="mj1l.8860443239512128104" value="7" />
             </node>
@@ -443,24 +449,24 @@
           </node>
         </node>
       </node>
-      <node role="type" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="6500545468170850329" />
+      <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="6500545468170850329" />
     </node>
-    <node role="contents" type=".com.mbeddr.core.modules.structure.EmptyModuleContent" id="6500545468170850330">
-      <property name="name" value="empty_1341567917947_1" />
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="6500545468170850330">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1341567917947_1" />
     </node>
-    <node role="contents" type=".com.mbeddr.core.modules.structure.EmptyModuleContent" id="6500545468170850331">
-      <property name="name" value="empty_1341567918227_3" />
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="6500545468170850331">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1341567918227_3" />
     </node>
-    <node role="contents" type=".com.mbeddr.core.modules.structure.EmptyModuleContent" id="6500545468170850332">
-      <property name="name" value="empty_1341567918373_4" />
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="6500545468170850332">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1341567918373_4" />
     </node>
-    <node role="contents" type=".com.mbeddr.core.unittest.structure.TestCase" id="6500545468170850333">
-      <property name="name" value="logicalOperators" />
-      <property name="exported" value="true" />
-      <node role="body" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="6500545468170850334">
-        <node role="statements" roleId="c4fa.4185783222026475862" type=".com.mbeddr.core.unittest.structure.AssertStatement" id="6500545468170850335">
-          <property name="contextNodeIdD" value="6500545468170850335" />
-          <node role="expr" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170850336">
+    <node role="contents" roleId="x27k.6437088627575722833" type="yz9a.TestCase" typeId="yz9a.6275792049641586523" id="6500545468170850333">
+      <property name="name" nameId="tpck.1169194664001" value="logicalOperators" />
+      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
+      <node role="body" roleId="yz9a.6275792049641586525" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="6500545468170850334">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="6500545468170850335">
+          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="6500545468170850335" />
+          <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170850336">
             <node role="left" roleId="mj1l.8860443239512128064" type="mj1l.ParensExpression" typeId="mj1l.5763383285156533447" id="6500545468170850337">
               <node role="expression" roleId="mj1l.7254843406768839760" type="mj1l.OrExpression" typeId="mj1l.8399455261460717642" id="6500545468170850338">
                 <node role="left" roleId="mj1l.8860443239512128064" type="mj1l.TrueLiteral" typeId="mj1l.8860443239512128094" id="6500545468170850339" />
@@ -470,9 +476,9 @@
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.TrueLiteral" typeId="mj1l.8860443239512128094" id="6500545468170850341" />
           </node>
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type=".com.mbeddr.core.unittest.structure.AssertStatement" id="6500545468170850342">
-          <property name="contextNodeIdD" value="6500545468170850342" />
-          <node role="expr" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170850343">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="6500545468170850342">
+          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="6500545468170850342" />
+          <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170850343">
             <node role="left" roleId="mj1l.8860443239512128064" type="mj1l.ParensExpression" typeId="mj1l.5763383285156533447" id="6500545468170850344">
               <node role="expression" roleId="mj1l.7254843406768839760" type="mj1l.OrExpression" typeId="mj1l.8399455261460717642" id="6500545468170850345">
                 <node role="left" roleId="mj1l.8860443239512128064" type="mj1l.TrueLiteral" typeId="mj1l.8860443239512128094" id="6500545468170850346" />
@@ -482,9 +488,9 @@
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.TrueLiteral" typeId="mj1l.8860443239512128094" id="6500545468170850348" />
           </node>
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type=".com.mbeddr.core.unittest.structure.AssertStatement" id="6500545468170850349">
-          <property name="contextNodeIdD" value="6500545468170850349" />
-          <node role="expr" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170850350">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="6500545468170850349">
+          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="6500545468170850349" />
+          <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170850350">
             <node role="left" roleId="mj1l.8860443239512128064" type="mj1l.ParensExpression" typeId="mj1l.5763383285156533447" id="6500545468170850351">
               <node role="expression" roleId="mj1l.7254843406768839760" type="mj1l.OrExpression" typeId="mj1l.8399455261460717642" id="6500545468170850352">
                 <node role="left" roleId="mj1l.8860443239512128064" type="mj1l.FalseLiteral" typeId="mj1l.8860443239512128099" id="6500545468170850353" />
@@ -494,9 +500,9 @@
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.FalseLiteral" typeId="mj1l.8860443239512128099" id="6500545468170850355" />
           </node>
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type=".com.mbeddr.core.unittest.structure.AssertStatement" id="6500545468170850356">
-          <property name="contextNodeIdD" value="6500545468170850356" />
-          <node role="expr" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170850357">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="6500545468170850356">
+          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="6500545468170850356" />
+          <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170850357">
             <node role="left" roleId="mj1l.8860443239512128064" type="mj1l.ParensExpression" typeId="mj1l.5763383285156533447" id="6500545468170850358">
               <node role="expression" roleId="mj1l.7254843406768839760" type="mj1l.AndExpression" typeId="mj1l.8399455261460717640" id="6500545468170850359">
                 <node role="left" roleId="mj1l.8860443239512128064" type="mj1l.TrueLiteral" typeId="mj1l.8860443239512128094" id="6500545468170850360" />
@@ -506,9 +512,9 @@
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.TrueLiteral" typeId="mj1l.8860443239512128094" id="6500545468170850362" />
           </node>
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type=".com.mbeddr.core.unittest.structure.AssertStatement" id="6500545468170850363">
-          <property name="contextNodeIdD" value="6500545468170850363" />
-          <node role="expr" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170850364">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="6500545468170850363">
+          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="6500545468170850363" />
+          <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170850364">
             <node role="left" roleId="mj1l.8860443239512128064" type="mj1l.ParensExpression" typeId="mj1l.5763383285156533447" id="6500545468170850365">
               <node role="expression" roleId="mj1l.7254843406768839760" type="mj1l.AndExpression" typeId="mj1l.8399455261460717640" id="6500545468170850366">
                 <node role="left" roleId="mj1l.8860443239512128064" type="mj1l.TrueLiteral" typeId="mj1l.8860443239512128094" id="6500545468170850367" />
@@ -518,9 +524,9 @@
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.FalseLiteral" typeId="mj1l.8860443239512128099" id="6500545468170850369" />
           </node>
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type=".com.mbeddr.core.unittest.structure.AssertStatement" id="6500545468170850370">
-          <property name="contextNodeIdD" value="6500545468170850370" />
-          <node role="expr" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170850371">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="6500545468170850370">
+          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="6500545468170850370" />
+          <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170850371">
             <node role="left" roleId="mj1l.8860443239512128064" type="mj1l.ParensExpression" typeId="mj1l.5763383285156533447" id="6500545468170850372">
               <node role="expression" roleId="mj1l.7254843406768839760" type="mj1l.AndExpression" typeId="mj1l.8399455261460717640" id="6500545468170850373">
                 <node role="left" roleId="mj1l.8860443239512128064" type="mj1l.FalseLiteral" typeId="mj1l.8860443239512128099" id="6500545468170850374" />
@@ -530,9 +536,9 @@
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.FalseLiteral" typeId="mj1l.8860443239512128099" id="6500545468170850376" />
           </node>
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type=".com.mbeddr.core.unittest.structure.AssertStatement" id="6500545468170850377">
-          <property name="contextNodeIdD" value="6500545468170850377" />
-          <node role="expr" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170850378">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="6500545468170850377">
+          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="6500545468170850377" />
+          <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170850378">
             <node role="left" roleId="mj1l.8860443239512128064" type="mj1l.ParensExpression" typeId="mj1l.5763383285156533447" id="6500545468170850379">
               <node role="expression" roleId="mj1l.7254843406768839760" type="mj1l.AndExpression" typeId="mj1l.8399455261460717640" id="6500545468170850380">
                 <node role="left" roleId="mj1l.8860443239512128064" type="mj1l.TrueLiteral" typeId="mj1l.8860443239512128094" id="6500545468170850381" />
@@ -545,9 +551,9 @@
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.TrueLiteral" typeId="mj1l.8860443239512128094" id="6500545468170850385" />
           </node>
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type=".com.mbeddr.core.unittest.structure.AssertStatement" id="6500545468170850386">
-          <property name="contextNodeIdD" value="6500545468170850386" />
-          <node role="expr" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170850387">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="6500545468170850386">
+          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="6500545468170850386" />
+          <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170850387">
             <node role="left" roleId="mj1l.8860443239512128064" type="mj1l.ParensExpression" typeId="mj1l.5763383285156533447" id="6500545468170850388">
               <node role="expression" roleId="mj1l.7254843406768839760" type="mj1l.AndExpression" typeId="mj1l.8399455261460717640" id="6500545468170850389">
                 <node role="left" roleId="mj1l.8860443239512128064" type="mj1l.TrueLiteral" typeId="mj1l.8860443239512128094" id="6500545468170850390" />
@@ -561,12 +567,12 @@
           </node>
         </node>
       </node>
-      <node role="type" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="6500545468170850395" />
+      <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="6500545468170850395" />
     </node>
-    <node role="contents" type=".com.mbeddr.core.unittest.structure.TestCase" id="6500545468170850396">
-      <property name="exported" value="true" />
-      <property name="name" value="boolAndInt" />
-      <node role="body" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="6500545468170850397">
+    <node role="contents" roleId="x27k.6437088627575722833" type="yz9a.TestCase" typeId="yz9a.6275792049641586523" id="6500545468170850396">
+      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
+      <property name="name" nameId="tpck.1169194664001" value="boolAndInt" />
+      <node role="body" roleId="yz9a.6275792049641586525" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="6500545468170850397">
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="6500545468170850398">
           <property name="name" nameId="tpck.1169194664001" value="wahr" />
           <node role="init" roleId="c4fa.4185783222026502647" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6500545468170850399">
@@ -583,9 +589,9 @@
           </node>
           <node role="type" roleId="mj1l.318113533128716676" type="mj1l.BooleanType" typeId="mj1l.8860443239512128058" id="6500545468170850404" />
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type=".com.mbeddr.core.unittest.structure.AssertStatement" id="6500545468170850405">
-          <property name="contextNodeIdD" value="6500545468170850405" />
-          <node role="expr" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="6500545468170850406">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="6500545468170850405">
+          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="6500545468170850405" />
+          <node role="expr" roleId="yz9a.6275792049641587288" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="6500545468170850406">
             <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="6500545468170850401" resolveInfo="b" />
           </node>
         </node>
@@ -605,9 +611,9 @@
           </node>
           <node role="type" roleId="mj1l.318113533128716676" type="mj1l.BooleanType" typeId="mj1l.8860443239512128058" id="6500545468170850413" />
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type=".com.mbeddr.core.unittest.structure.AssertStatement" id="6500545468170850414">
-          <property name="contextNodeIdD" value="6500545468170850414" />
-          <node role="expr" type="mj1l.NotExpression" typeId="mj1l.3830958861296781575" id="6500545468170850415">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="6500545468170850414">
+          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="6500545468170850414" />
+          <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.NotExpression" typeId="mj1l.3830958861296781575" id="6500545468170850415">
             <node role="expression" roleId="mj1l.7254843406768839760" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="6500545468170850416">
               <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="6500545468170850410" resolveInfo="b2" />
             </node>
@@ -629,9 +635,9 @@
           </node>
           <node role="type" roleId="mj1l.318113533128716676" type="mj1l.BooleanType" typeId="mj1l.8860443239512128058" id="6500545468170850423" />
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type=".com.mbeddr.core.unittest.structure.AssertStatement" id="6500545468170850424">
-          <property name="contextNodeIdD" value="6500545468170850424" />
-          <node role="expr" type="mj1l.NotExpression" typeId="mj1l.3830958861296781575" id="6500545468170850425">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="6500545468170850424">
+          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="6500545468170850424" />
+          <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.NotExpression" typeId="mj1l.3830958861296781575" id="6500545468170850425">
             <node role="expression" roleId="mj1l.7254843406768839760" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="6500545468170850426">
               <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="6500545468170850420" resolveInfo="b3" />
             </node>
@@ -646,19 +652,19 @@
           </node>
           <node role="type" roleId="mj1l.318113533128716676" type="mj1l.BooleanType" typeId="mj1l.8860443239512128058" id="6500545468170850430" />
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type=".com.mbeddr.core.unittest.structure.AssertStatement" id="6500545468170850431">
-          <property name="contextNodeIdD" value="6500545468170850431" />
-          <node role="expr" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="6500545468170850432">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="6500545468170850431">
+          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="6500545468170850431" />
+          <node role="expr" roleId="yz9a.6275792049641587288" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="6500545468170850432">
             <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="6500545468170850427" resolveInfo="b4" />
           </node>
         </node>
       </node>
-      <node role="type" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="6500545468170850433" />
+      <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="6500545468170850433" />
     </node>
-    <node role="contents" type=".com.mbeddr.core.unittest.structure.TestCase" id="6500545468170850434">
-      <property name="exported" value="true" />
-      <property name="name" value="charTest" />
-      <node role="body" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="6500545468170850435">
+    <node role="contents" roleId="x27k.6437088627575722833" type="yz9a.TestCase" typeId="yz9a.6275792049641586523" id="6500545468170850434">
+      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
+      <property name="name" nameId="tpck.1169194664001" value="charTest" />
+      <node role="body" roleId="yz9a.6275792049641586525" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="6500545468170850435">
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="6500545468170850436">
           <property name="name" nameId="tpck.1169194664001" value="c" />
           <node role="init" roleId="c4fa.4185783222026502647" type="mj1l.CharLiteral" typeId="mj1l.1664480272136214700" id="6500545468170850437">
@@ -697,9 +703,9 @@
             </node>
           </node>
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type=".com.mbeddr.core.unittest.structure.AssertStatement" id="6500545468170850452">
-          <property name="contextNodeIdD" value="6500545468170850452" />
-          <node role="expr" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170850453">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="6500545468170850452">
+          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="6500545468170850452" />
+          <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170850453">
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.CharLiteral" typeId="mj1l.1664480272136214700" id="6500545468170850454">
               <property name="value" nameId="mj1l.1664480272136214701" value="H" />
             </node>
@@ -708,9 +714,9 @@
             </node>
           </node>
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type=".com.mbeddr.core.unittest.structure.AssertStatement" id="6500545468170850456">
-          <property name="contextNodeIdD" value="6500545468170850456" />
-          <node role="expr" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170850457">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="6500545468170850456">
+          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="6500545468170850456" />
+          <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170850457">
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.CharLiteral" typeId="mj1l.1664480272136214700" id="6500545468170850458">
               <property name="value" nameId="mj1l.1664480272136214701" value="J" />
             </node>
@@ -720,25 +726,25 @@
           </node>
         </node>
       </node>
-      <node role="type" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="6500545468170850460" />
+      <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="6500545468170850460" />
     </node>
-    <node role="imports" type=".com.mbeddr.core.modules.structure.ModuleImport" id="6500545468170850461">
-      <link role="module" targetNodeId="6500545468170850484" resolveInfo="HelperFunctions" />
+    <node role="imports" roleId="x27k.1317894735999304826" type="x27k.ModuleImport" typeId="x27k.1317894735999299713" id="6500545468170850461">
+      <link role="module" roleId="x27k.1317894735999299714" targetNodeId="6500545468170850484" resolveInfo="HelperFunctions" />
     </node>
   </root>
   <root id="6500545468170850462">
-    <node role="contents" type=".com.mbeddr.core.unittest.structure.TestCase" id="6500545468170850463">
-      <property name="name" value="testMinus" />
-      <node role="body" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="6500545468170850464">
-        <node role="statements" roleId="c4fa.4185783222026475862" type=".com.mbeddr.core.unittest.structure.AssertStatement" id="6500545468170850465">
-          <property name="contextNodeIdD" value="6500545468170850465" />
-          <node role="expr" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170850466">
-            <node role="right" roleId="mj1l.8860443239512128065" type=".com.mbeddr.core.modules.structure.FunctionCall" id="6500545468170850467">
-              <link role="function" targetNodeId="6500545468170850472" resolveInfo="minus" />
-              <node role="actuals" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6500545468170850468">
+    <node role="contents" roleId="x27k.6437088627575722833" type="yz9a.TestCase" typeId="yz9a.6275792049641586523" id="6500545468170850463">
+      <property name="name" nameId="tpck.1169194664001" value="testMinus" />
+      <node role="body" roleId="yz9a.6275792049641586525" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="6500545468170850464">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="6500545468170850465">
+          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="6500545468170850465" />
+          <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170850466">
+            <node role="right" roleId="mj1l.8860443239512128065" type="x27k.FunctionCall" typeId="x27k.5950410542643524492" id="6500545468170850467">
+              <link role="function" roleId="x27k.5950410542643524493" targetNodeId="6500545468170850472" resolveInfo="minus" />
+              <node role="actuals" roleId="x27k.5950410542643524495" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6500545468170850468">
                 <property name="value" nameId="mj1l.8860443239512128104" value="10" />
               </node>
-              <node role="actuals" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6500545468170850469">
+              <node role="actuals" roleId="x27k.5950410542643524495" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6500545468170850469">
                 <property name="value" nameId="mj1l.8860443239512128104" value="20" />
               </node>
             </node>
@@ -748,43 +754,43 @@
           </node>
         </node>
       </node>
-      <node role="type" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="6500545468170850471" />
+      <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="6500545468170850471" />
     </node>
-    <node role="contents" type=".com.mbeddr.core.modules.structure.Function" id="6500545468170850472">
-      <property name="name" value="minus" />
-      <node role="body" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="6500545468170850473">
-        <node role="statements" roleId="c4fa.4185783222026475862" type=".com.mbeddr.core.modules.structure.ReturnStatement" id="6500545468170850474">
-          <node role="expression" type="mj1l.MinusExpression" typeId="mj1l.5763383285156373018" id="6500545468170850475">
-            <node role="left" roleId="mj1l.8860443239512128064" type=".com.mbeddr.core.modules.structure.ArgumentRef" id="6500545468170850476">
-              <link role="arg" targetNodeId="6500545468170850479" resolveInfo="a" />
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="6500545468170850472">
+      <property name="name" nameId="tpck.1169194664001" value="minus" />
+      <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="6500545468170850473">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="x27k.ReturnStatement" typeId="x27k.8967919205527146149" id="6500545468170850474">
+          <node role="expression" roleId="x27k.8967919205527146150" type="mj1l.MinusExpression" typeId="mj1l.5763383285156373018" id="6500545468170850475">
+            <node role="left" roleId="mj1l.8860443239512128064" type="x27k.ArgumentRef" typeId="x27k.2093108837558505658" id="6500545468170850476">
+              <link role="arg" roleId="x27k.2093108837558505659" targetNodeId="6500545468170850479" resolveInfo="a" />
             </node>
-            <node role="right" roleId="mj1l.8860443239512128065" type=".com.mbeddr.core.modules.structure.ArgumentRef" id="6500545468170850477">
-              <link role="arg" targetNodeId="6500545468170850481" resolveInfo="b" />
+            <node role="right" roleId="mj1l.8860443239512128065" type="x27k.ArgumentRef" typeId="x27k.2093108837558505658" id="6500545468170850477">
+              <link role="arg" roleId="x27k.2093108837558505659" targetNodeId="6500545468170850481" resolveInfo="b" />
             </node>
           </node>
         </node>
       </node>
-      <node role="type" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="6500545468170850478" />
-      <node role="arguments" type=".com.mbeddr.core.modules.structure.Argument" id="6500545468170850479">
-        <property name="name" value="a" />
-        <node role="type" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="6500545468170850480" />
+      <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="6500545468170850478" />
+      <node role="arguments" roleId="x27k.5708867820623310661" type="x27k.Argument" typeId="x27k.7892328519581704407" id="6500545468170850479">
+        <property name="name" nameId="tpck.1169194664001" value="a" />
+        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="6500545468170850480" />
       </node>
-      <node role="arguments" type=".com.mbeddr.core.modules.structure.Argument" id="6500545468170850481">
-        <property name="name" value="b" />
-        <node role="type" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="6500545468170850482" />
+      <node role="arguments" roleId="x27k.5708867820623310661" type="x27k.Argument" typeId="x27k.7892328519581704407" id="6500545468170850481">
+        <property name="name" nameId="tpck.1169194664001" value="b" />
+        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="6500545468170850482" />
       </node>
     </node>
-    <node role="imports" type=".com.mbeddr.core.modules.structure.ModuleImport" id="6500545468170850483">
-      <link role="module" targetNodeId="6500545468170850484" resolveInfo="HelperFunctions" />
+    <node role="imports" roleId="x27k.1317894735999304826" type="x27k.ModuleImport" typeId="x27k.1317894735999299713" id="6500545468170850483">
+      <link role="module" roleId="x27k.1317894735999299714" targetNodeId="6500545468170850484" resolveInfo="HelperFunctions" />
     </node>
   </root>
   <root id="6500545468170850484">
-    <node role="contents" type=".com.mbeddr.core.modules.structure.Function" id="6500545468170850485">
-      <property name="name" value="add" />
-      <property name="exported" value="true" />
-      <property name="preventNameMangling" value="true" />
-      <property name="extern" value="true" />
-      <node role="body" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="6500545468170850486">
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="6500545468170850485">
+      <property name="name" nameId="tpck.1169194664001" value="add" />
+      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
+      <property name="preventNameMangling" nameId="x27k.6708182213627106114" value="true" />
+      <property name="extern" nameId="x27k.6708182213627045681" value="true" />
+      <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="6500545468170850486">
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="6500545468170850487">
           <property name="name" nameId="tpck.1169194664001" value="bla" />
           <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int16tType" typeId="mj1l.8463282783691618435" id="6500545468170850488" />
@@ -792,33 +798,33 @@
             <property name="value" nameId="mj1l.8860443239512128104" value="23" />
           </node>
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type=".com.mbeddr.core.modules.structure.ReturnStatement" id="6500545468170850490">
-          <node role="expression" type="mj1l.PlusExpression" typeId="mj1l.5763383285156373013" id="6500545468170850491">
-            <node role="left" roleId="mj1l.8860443239512128064" type=".com.mbeddr.core.modules.structure.ArgumentRef" id="6500545468170850492">
-              <link role="arg" targetNodeId="6500545468170850495" resolveInfo="x" />
+        <node role="statements" roleId="c4fa.4185783222026475862" type="x27k.ReturnStatement" typeId="x27k.8967919205527146149" id="6500545468170850490">
+          <node role="expression" roleId="x27k.8967919205527146150" type="mj1l.PlusExpression" typeId="mj1l.5763383285156373013" id="6500545468170850491">
+            <node role="left" roleId="mj1l.8860443239512128064" type="x27k.ArgumentRef" typeId="x27k.2093108837558505658" id="6500545468170850492">
+              <link role="arg" roleId="x27k.2093108837558505659" targetNodeId="6500545468170850495" resolveInfo="x" />
             </node>
-            <node role="right" roleId="mj1l.8860443239512128065" type=".com.mbeddr.core.modules.structure.ArgumentRef" id="6500545468170850493">
-              <link role="arg" targetNodeId="6500545468170850497" resolveInfo="y" />
+            <node role="right" roleId="mj1l.8860443239512128065" type="x27k.ArgumentRef" typeId="x27k.2093108837558505658" id="6500545468170850493">
+              <link role="arg" roleId="x27k.2093108837558505659" targetNodeId="6500545468170850497" resolveInfo="y" />
             </node>
           </node>
         </node>
       </node>
-      <node role="type" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="6500545468170850494" />
-      <node role="arguments" type=".com.mbeddr.core.modules.structure.Argument" id="6500545468170850495">
-        <property name="name" value="x" />
-        <node role="type" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="6500545468170850496" />
+      <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="6500545468170850494" />
+      <node role="arguments" roleId="x27k.5708867820623310661" type="x27k.Argument" typeId="x27k.7892328519581704407" id="6500545468170850495">
+        <property name="name" nameId="tpck.1169194664001" value="x" />
+        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="6500545468170850496" />
       </node>
-      <node role="arguments" type=".com.mbeddr.core.modules.structure.Argument" id="6500545468170850497">
-        <property name="name" value="y" />
-        <node role="type" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="6500545468170850498" />
+      <node role="arguments" roleId="x27k.5708867820623310661" type="x27k.Argument" typeId="x27k.7892328519581704407" id="6500545468170850497">
+        <property name="name" nameId="tpck.1169194664001" value="y" />
+        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="6500545468170850498" />
       </node>
     </node>
   </root>
   <root id="6500545468170850499">
-    <node role="contents" type=".com.mbeddr.core.unittest.structure.TestCase" id="6500545468170850500">
-      <property name="exported" value="true" />
-      <property name="name" value="testBitwiseAnd" />
-      <node role="body" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="6500545468170850501">
+    <node role="contents" roleId="x27k.6437088627575722833" type="yz9a.TestCase" typeId="yz9a.6275792049641586523" id="6500545468170850500">
+      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
+      <property name="name" nameId="tpck.1169194664001" value="testBitwiseAnd" />
+      <node role="body" roleId="yz9a.6275792049641586525" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="6500545468170850501">
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="6500545468170850502">
           <property name="name" nameId="tpck.1169194664001" value="i1" />
           <node role="init" roleId="c4fa.4185783222026502647" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6500545468170850503">
@@ -845,9 +851,9 @@
           </node>
           <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="6500545468170850512" />
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type=".com.mbeddr.core.unittest.structure.AssertStatement" id="6500545468170850513">
-          <property name="contextNodeIdD" value="6500545468170850513" />
-          <node role="expr" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170850514">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="6500545468170850513">
+          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="6500545468170850513" />
+          <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170850514">
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6500545468170850515">
               <property name="value" nameId="mj1l.8860443239512128104" value="4" />
             </node>
@@ -874,9 +880,9 @@
           </node>
           <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="6500545468170850524" />
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type=".com.mbeddr.core.unittest.structure.AssertStatement" id="6500545468170850525">
-          <property name="contextNodeIdD" value="6500545468170850525" />
-          <node role="expr" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170850526">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="6500545468170850525">
+          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="6500545468170850525" />
+          <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170850526">
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6500545468170850527">
               <property name="value" nameId="mj1l.8860443239512128104" value="2" />
             </node>
@@ -905,9 +911,9 @@
           </node>
           <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="6500545468170850537" />
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type=".com.mbeddr.core.unittest.structure.AssertStatement" id="6500545468170850538">
-          <property name="contextNodeIdD" value="6500545468170850538" />
-          <node role="expr" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170850539">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="6500545468170850538">
+          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="6500545468170850538" />
+          <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170850539">
             <node role="left" roleId="mj1l.8860443239512128064" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="6500545468170850540">
               <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="6500545468170850530" resolveInfo="result3" />
             </node>
@@ -943,9 +949,9 @@
           </node>
           <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int32tType" typeId="mj1l.8463282783691618440" id="6500545468170850553" />
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type=".com.mbeddr.core.unittest.structure.AssertStatement" id="6500545468170850554">
-          <property name="contextNodeIdD" value="6500545468170850554" />
-          <node role="expr" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170850555">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="6500545468170850554">
+          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="6500545468170850554" />
+          <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170850555">
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6500545468170850556">
               <property name="value" nameId="mj1l.8860443239512128104" value="4" />
             </node>
@@ -967,9 +973,9 @@
           </node>
           <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int32tType" typeId="mj1l.8463282783691618440" id="6500545468170850563" />
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type=".com.mbeddr.core.unittest.structure.AssertStatement" id="6500545468170850564">
-          <property name="contextNodeIdD" value="6500545468170850564" />
-          <node role="expr" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170850565">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="6500545468170850564">
+          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="6500545468170850564" />
+          <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170850565">
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6500545468170850566">
               <property name="value" nameId="mj1l.8860443239512128104" value="4" />
             </node>
@@ -979,12 +985,12 @@
           </node>
         </node>
       </node>
-      <node role="type" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="6500545468170850568" />
+      <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="6500545468170850568" />
     </node>
-    <node role="contents" type=".com.mbeddr.core.unittest.structure.TestCase" id="6500545468170850569">
-      <property name="exported" value="true" />
-      <property name="name" value="testBitwiseOR" />
-      <node role="body" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="6500545468170850570">
+    <node role="contents" roleId="x27k.6437088627575722833" type="yz9a.TestCase" typeId="yz9a.6275792049641586523" id="6500545468170850569">
+      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
+      <property name="name" nameId="tpck.1169194664001" value="testBitwiseOR" />
+      <node role="body" roleId="yz9a.6275792049641586525" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="6500545468170850570">
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="6500545468170850571">
           <property name="name" nameId="tpck.1169194664001" value="i1" />
           <node role="init" roleId="c4fa.4185783222026502647" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6500545468170850572">
@@ -1011,9 +1017,9 @@
           </node>
           <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="6500545468170850581" />
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type=".com.mbeddr.core.unittest.structure.AssertStatement" id="6500545468170850582">
-          <property name="contextNodeIdD" value="6500545468170850582" />
-          <node role="expr" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170850583">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="6500545468170850582">
+          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="6500545468170850582" />
+          <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170850583">
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6500545468170850584">
               <property name="value" nameId="mj1l.8860443239512128104" value="15" />
             </node>
@@ -1040,9 +1046,9 @@
           </node>
           <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="6500545468170850593" />
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type=".com.mbeddr.core.unittest.structure.AssertStatement" id="6500545468170850594">
-          <property name="contextNodeIdD" value="6500545468170850594" />
-          <node role="expr" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170850595">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="6500545468170850594">
+          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="6500545468170850594" />
+          <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170850595">
             <node role="left" roleId="mj1l.8860443239512128064" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="6500545468170850596">
               <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="6500545468170850587" resolveInfo="result2" />
             </node>
@@ -1070,9 +1076,9 @@
           </node>
           <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="6500545468170850605" />
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type=".com.mbeddr.core.unittest.structure.AssertStatement" id="6500545468170850606">
-          <property name="contextNodeIdD" value="6500545468170850606" />
-          <node role="expr" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170850607">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="6500545468170850606">
+          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="6500545468170850606" />
+          <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170850607">
             <node role="left" roleId="mj1l.8860443239512128064" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="6500545468170850608">
               <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="6500545468170850598" resolveInfo="result3" />
             </node>
@@ -1082,12 +1088,12 @@
           </node>
         </node>
       </node>
-      <node role="type" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="6500545468170850610" />
+      <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="6500545468170850610" />
     </node>
-    <node role="contents" type=".com.mbeddr.core.unittest.structure.TestCase" id="6500545468170850611">
-      <property name="exported" value="true" />
-      <property name="name" value="testBitwiseXOR" />
-      <node role="body" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="6500545468170850612">
+    <node role="contents" roleId="x27k.6437088627575722833" type="yz9a.TestCase" typeId="yz9a.6275792049641586523" id="6500545468170850611">
+      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
+      <property name="name" nameId="tpck.1169194664001" value="testBitwiseXOR" />
+      <node role="body" roleId="yz9a.6275792049641586525" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="6500545468170850612">
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="6500545468170850613">
           <property name="name" nameId="tpck.1169194664001" value="i1" />
           <node role="init" roleId="c4fa.4185783222026502647" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6500545468170850614">
@@ -1114,9 +1120,9 @@
           </node>
           <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="6500545468170850623" />
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type=".com.mbeddr.core.unittest.structure.AssertStatement" id="6500545468170850624">
-          <property name="contextNodeIdD" value="6500545468170850624" />
-          <node role="expr" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170850625">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="6500545468170850624">
+          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="6500545468170850624" />
+          <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170850625">
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6500545468170850626">
               <property name="value" nameId="mj1l.8860443239512128104" value="2" />
             </node>
@@ -1143,9 +1149,9 @@
           </node>
           <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="6500545468170850635" />
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type=".com.mbeddr.core.unittest.structure.AssertStatement" id="6500545468170850636">
-          <property name="contextNodeIdD" value="6500545468170850636" />
-          <node role="expr" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170850637">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="6500545468170850636">
+          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="6500545468170850636" />
+          <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170850637">
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6500545468170850638">
               <property name="value" nameId="mj1l.8860443239512128104" value="2" />
             </node>
@@ -1173,9 +1179,9 @@
           </node>
           <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="6500545468170850647" />
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type=".com.mbeddr.core.unittest.structure.AssertStatement" id="6500545468170850648">
-          <property name="contextNodeIdD" value="6500545468170850648" />
-          <node role="expr" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170850649">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="6500545468170850648">
+          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="6500545468170850648" />
+          <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170850649">
             <node role="left" roleId="mj1l.8860443239512128064" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="6500545468170850650">
               <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="6500545468170850640" resolveInfo="result3" />
             </node>
@@ -1185,12 +1191,12 @@
           </node>
         </node>
       </node>
-      <node role="type" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="6500545468170850652" />
+      <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="6500545468170850652" />
     </node>
-    <node role="contents" type=".com.mbeddr.core.unittest.structure.TestCase" id="6500545468170850653">
-      <property name="exported" value="true" />
-      <property name="name" value="testBitwiseRightShift" />
-      <node role="body" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="6500545468170850654">
+    <node role="contents" roleId="x27k.6437088627575722833" type="yz9a.TestCase" typeId="yz9a.6275792049641586523" id="6500545468170850653">
+      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
+      <property name="name" nameId="tpck.1169194664001" value="testBitwiseRightShift" />
+      <node role="body" roleId="yz9a.6275792049641586525" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="6500545468170850654">
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="6500545468170850655">
           <property name="name" nameId="tpck.1169194664001" value="i1" />
           <node role="init" roleId="c4fa.4185783222026502647" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6500545468170850656">
@@ -1210,9 +1216,9 @@
           </node>
           <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="6500545468170850662" />
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type=".com.mbeddr.core.unittest.structure.AssertStatement" id="6500545468170850663">
-          <property name="contextNodeIdD" value="6500545468170850663" />
-          <node role="expr" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170850664">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="6500545468170850663">
+          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="6500545468170850663" />
+          <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170850664">
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6500545468170850665">
               <property name="value" nameId="mj1l.8860443239512128104" value="1" />
             </node>
@@ -1222,9 +1228,9 @@
           </node>
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="6500545468170850667" />
-        <node role="statements" roleId="c4fa.4185783222026475862" type=".com.mbeddr.core.unittest.structure.AssertStatement" id="6500545468170850668">
-          <property name="contextNodeIdD" value="6500545468170850668" />
-          <node role="expr" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170850669">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="6500545468170850668">
+          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="6500545468170850668" />
+          <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170850669">
             <node role="left" roleId="mj1l.8860443239512128064" type="mj1l.BitwiseRightShiftExpression" typeId="mj1l.9013371069685947728" id="6500545468170850670">
               <node role="left" roleId="mj1l.8860443239512128064" type="mj1l.MinusExpression" typeId="mj1l.5763383285156373018" id="6500545468170850671">
                 <node role="left" roleId="mj1l.8860443239512128064" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6500545468170850672">
@@ -1243,9 +1249,9 @@
             </node>
           </node>
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type=".com.mbeddr.core.unittest.structure.AssertStatement" id="6500545468170850676">
-          <property name="contextNodeIdD" value="6500545468170850676" />
-          <node role="expr" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170850677">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="6500545468170850676">
+          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="6500545468170850676" />
+          <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170850677">
             <node role="left" roleId="mj1l.8860443239512128064" type="mj1l.BitwiseRightShiftExpression" typeId="mj1l.9013371069685947728" id="6500545468170850678">
               <node role="left" roleId="mj1l.8860443239512128064" type="mj1l.MinusExpression" typeId="mj1l.5763383285156373018" id="6500545468170850679">
                 <node role="left" roleId="mj1l.8860443239512128064" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6500545468170850680">
@@ -1264,9 +1270,9 @@
             </node>
           </node>
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type=".com.mbeddr.core.unittest.structure.AssertStatement" id="6500545468170850684">
-          <property name="contextNodeIdD" value="6500545468170850684" />
-          <node role="expr" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170850685">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="6500545468170850684">
+          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="6500545468170850684" />
+          <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170850685">
             <node role="left" roleId="mj1l.8860443239512128064" type="mj1l.MinusExpression" typeId="mj1l.5763383285156373018" id="6500545468170850686">
               <node role="left" roleId="mj1l.8860443239512128064" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6500545468170850687">
                 <property name="value" nameId="mj1l.8860443239512128104" value="5" />
@@ -1288,12 +1294,12 @@
           </node>
         </node>
       </node>
-      <node role="type" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="6500545468170850693" />
+      <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="6500545468170850693" />
     </node>
-    <node role="contents" type=".com.mbeddr.core.unittest.structure.TestCase" id="6500545468170850694">
-      <property name="exported" value="true" />
-      <property name="name" value="testBitwiseLeftShift" />
-      <node role="body" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="6500545468170850695">
+    <node role="contents" roleId="x27k.6437088627575722833" type="yz9a.TestCase" typeId="yz9a.6275792049641586523" id="6500545468170850694">
+      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
+      <property name="name" nameId="tpck.1169194664001" value="testBitwiseLeftShift" />
+      <node role="body" roleId="yz9a.6275792049641586525" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="6500545468170850695">
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="6500545468170850696">
           <property name="name" nameId="tpck.1169194664001" value="i1" />
           <node role="init" roleId="c4fa.4185783222026502647" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6500545468170850697">
@@ -1313,9 +1319,9 @@
           </node>
           <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="6500545468170850703" />
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type=".com.mbeddr.core.unittest.structure.AssertStatement" id="6500545468170850704">
-          <property name="contextNodeIdD" value="6500545468170850704" />
-          <node role="expr" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170850705">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="6500545468170850704">
+          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="6500545468170850704" />
+          <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170850705">
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6500545468170850706">
               <property name="value" nameId="mj1l.8860443239512128104" value="2" />
             </node>
@@ -1325,9 +1331,9 @@
           </node>
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="6500545468170850708" />
-        <node role="statements" roleId="c4fa.4185783222026475862" type=".com.mbeddr.core.unittest.structure.AssertStatement" id="6500545468170850709">
-          <property name="contextNodeIdD" value="6500545468170850709" />
-          <node role="expr" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170850710">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="6500545468170850709">
+          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="6500545468170850709" />
+          <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170850710">
             <node role="left" roleId="mj1l.8860443239512128064" type="mj1l.BitwiseLeftShiftExpression" typeId="mj1l.9013371069686136255" id="6500545468170850711">
               <node role="left" roleId="mj1l.8860443239512128064" type="mj1l.MinusExpression" typeId="mj1l.5763383285156373018" id="6500545468170850712">
                 <node role="left" roleId="mj1l.8860443239512128064" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6500545468170850713">
@@ -1346,9 +1352,9 @@
             </node>
           </node>
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type=".com.mbeddr.core.unittest.structure.AssertStatement" id="6500545468170850717">
-          <property name="contextNodeIdD" value="6500545468170850717" />
-          <node role="expr" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170850718">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="6500545468170850717">
+          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="6500545468170850717" />
+          <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170850718">
             <node role="left" roleId="mj1l.8860443239512128064" type="mj1l.BitwiseLeftShiftExpression" typeId="mj1l.9013371069686136255" id="6500545468170850719">
               <node role="left" roleId="mj1l.8860443239512128064" type="mj1l.MinusExpression" typeId="mj1l.5763383285156373018" id="6500545468170850720">
                 <node role="left" roleId="mj1l.8860443239512128064" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6500545468170850721">
@@ -1367,9 +1373,9 @@
             </node>
           </node>
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type=".com.mbeddr.core.unittest.structure.AssertStatement" id="6500545468170850725">
-          <property name="contextNodeIdD" value="6500545468170850725" />
-          <node role="expr" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170850726">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="6500545468170850725">
+          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="6500545468170850725" />
+          <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170850726">
             <node role="left" roleId="mj1l.8860443239512128064" type="mj1l.MinusExpression" typeId="mj1l.5763383285156373018" id="6500545468170850727">
               <node role="left" roleId="mj1l.8860443239512128064" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6500545468170850728">
                 <property name="value" nameId="mj1l.8860443239512128104" value="5" />
@@ -1391,12 +1397,12 @@
           </node>
         </node>
       </node>
-      <node role="type" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="6500545468170850734" />
+      <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="6500545468170850734" />
     </node>
-    <node role="contents" type=".com.mbeddr.core.unittest.structure.TestCase" id="6500545468170850735">
-      <property name="exported" value="true" />
-      <property name="name" value="testUnaryIncrementOperator" />
-      <node role="body" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="6500545468170850736">
+    <node role="contents" roleId="x27k.6437088627575722833" type="yz9a.TestCase" typeId="yz9a.6275792049641586523" id="6500545468170850735">
+      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
+      <property name="name" nameId="tpck.1169194664001" value="testUnaryIncrementOperator" />
+      <node role="body" roleId="yz9a.6275792049641586525" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="6500545468170850736">
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="6500545468170850737">
           <property name="name" nameId="tpck.1169194664001" value="i" />
           <node role="init" roleId="c4fa.4185783222026502647" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6500545468170850738">
@@ -1413,9 +1419,9 @@
           </node>
           <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="6500545468170850743" />
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type=".com.mbeddr.core.unittest.structure.AssertStatement" id="6500545468170850744">
-          <property name="contextNodeIdD" value="6500545468170850744" />
-          <node role="expr" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170850745">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="6500545468170850744">
+          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="6500545468170850744" />
+          <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170850745">
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6500545468170850746">
               <property name="value" nameId="mj1l.8860443239512128104" value="2" />
             </node>
@@ -1424,9 +1430,9 @@
             </node>
           </node>
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type=".com.mbeddr.core.unittest.structure.AssertStatement" id="6500545468170850748">
-          <property name="contextNodeIdD" value="6500545468170850748" />
-          <node role="expr" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170850749">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="6500545468170850748">
+          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="6500545468170850748" />
+          <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170850749">
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6500545468170850750">
               <property name="value" nameId="mj1l.8860443239512128104" value="2" />
             </node>
@@ -1444,9 +1450,9 @@
           </node>
           <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="6500545468170850755" />
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type=".com.mbeddr.core.unittest.structure.AssertStatement" id="6500545468170850756">
-          <property name="contextNodeIdD" value="6500545468170850756" />
-          <node role="expr" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170850757">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="6500545468170850756">
+          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="6500545468170850756" />
+          <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170850757">
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6500545468170850758">
               <property name="value" nameId="mj1l.8860443239512128104" value="2" />
             </node>
@@ -1455,9 +1461,9 @@
             </node>
           </node>
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type=".com.mbeddr.core.unittest.structure.AssertStatement" id="6500545468170850760">
-          <property name="contextNodeIdD" value="6500545468170850760" />
-          <node role="expr" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170850761">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="6500545468170850760">
+          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="6500545468170850760" />
+          <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170850761">
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6500545468170850762">
               <property name="value" nameId="mj1l.8860443239512128104" value="3" />
             </node>
@@ -1467,12 +1473,12 @@
           </node>
         </node>
       </node>
-      <node role="type" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="6500545468170850764" />
+      <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="6500545468170850764" />
     </node>
-    <node role="contents" type=".com.mbeddr.core.unittest.structure.TestCase" id="6500545468170850765">
-      <property name="exported" value="true" />
-      <property name="name" value="testUnaryDecrementOperator" />
-      <node role="body" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="6500545468170850766">
+    <node role="contents" roleId="x27k.6437088627575722833" type="yz9a.TestCase" typeId="yz9a.6275792049641586523" id="6500545468170850765">
+      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
+      <property name="name" nameId="tpck.1169194664001" value="testUnaryDecrementOperator" />
+      <node role="body" roleId="yz9a.6275792049641586525" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="6500545468170850766">
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="6500545468170850767">
           <property name="name" nameId="tpck.1169194664001" value="i" />
           <node role="init" roleId="c4fa.4185783222026502647" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6500545468170850768">
@@ -1489,9 +1495,9 @@
           </node>
           <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="6500545468170850773" />
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type=".com.mbeddr.core.unittest.structure.AssertStatement" id="6500545468170850774">
-          <property name="contextNodeIdD" value="6500545468170850774" />
-          <node role="expr" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170850775">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="6500545468170850774">
+          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="6500545468170850774" />
+          <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170850775">
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6500545468170850776">
               <property name="value" nameId="mj1l.8860443239512128104" value="1" />
             </node>
@@ -1500,9 +1506,9 @@
             </node>
           </node>
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type=".com.mbeddr.core.unittest.structure.AssertStatement" id="6500545468170850778">
-          <property name="contextNodeIdD" value="6500545468170850778" />
-          <node role="expr" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170850779">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="6500545468170850778">
+          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="6500545468170850778" />
+          <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170850779">
             <node role="left" roleId="mj1l.8860443239512128064" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="6500545468170850780">
               <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="6500545468170850767" resolveInfo="i" />
             </node>
@@ -1520,9 +1526,9 @@
           </node>
           <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="6500545468170850785" />
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type=".com.mbeddr.core.unittest.structure.AssertStatement" id="6500545468170850786">
-          <property name="contextNodeIdD" value="6500545468170850786" />
-          <node role="expr" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170850787">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="6500545468170850786">
+          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="6500545468170850786" />
+          <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170850787">
             <node role="left" roleId="mj1l.8860443239512128064" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="6500545468170850788">
               <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="6500545468170850782" resolveInfo="result2" />
             </node>
@@ -1531,9 +1537,9 @@
             </node>
           </node>
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type=".com.mbeddr.core.unittest.structure.AssertStatement" id="6500545468170850790">
-          <property name="contextNodeIdD" value="6500545468170850790" />
-          <node role="expr" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170850791">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="6500545468170850790">
+          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="6500545468170850790" />
+          <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170850791">
             <node role="left" roleId="mj1l.8860443239512128064" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="6500545468170850792">
               <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="6500545468170850767" resolveInfo="i" />
             </node>
@@ -1544,12 +1550,12 @@
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="6500545468170850794" />
       </node>
-      <node role="type" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="6500545468170850795" />
+      <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="6500545468170850795" />
     </node>
-    <node role="contents" type=".com.mbeddr.core.unittest.structure.TestCase" id="6500545468170850796">
-      <property name="exported" value="true" />
-      <property name="name" value="testUnaryMinusOperator" />
-      <node role="body" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="6500545468170850797">
+    <node role="contents" roleId="x27k.6437088627575722833" type="yz9a.TestCase" typeId="yz9a.6275792049641586523" id="6500545468170850796">
+      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
+      <property name="name" nameId="tpck.1169194664001" value="testUnaryMinusOperator" />
+      <node role="body" roleId="yz9a.6275792049641586525" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="6500545468170850797">
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="6500545468170850798">
           <property name="name" nameId="tpck.1169194664001" value="i" />
           <node role="init" roleId="c4fa.4185783222026502647" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6500545468170850799">
@@ -1566,9 +1572,9 @@
           </node>
           <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="6500545468170850804" />
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type=".com.mbeddr.core.unittest.structure.AssertStatement" id="6500545468170850805">
-          <property name="contextNodeIdD" value="6500545468170850805" />
-          <node role="expr" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170850806">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="6500545468170850805">
+          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="6500545468170850805" />
+          <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170850806">
             <node role="left" roleId="mj1l.8860443239512128064" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="6500545468170850807">
               <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="6500545468170850801" resolveInfo="result" />
             </node>
@@ -1593,9 +1599,9 @@
           </node>
           <node role="type" roleId="mj1l.318113533128716676" type="mj1l.FloatType" typeId="mj1l.4739982148980385695" id="6500545468170850815" />
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type=".com.mbeddr.core.unittest.structure.AssertStatement" id="6500545468170850816">
-          <property name="contextNodeIdD" value="6500545468170850816" />
-          <node role="expr" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170850817">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="6500545468170850816">
+          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="6500545468170850816" />
+          <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170850817">
             <node role="left" roleId="mj1l.8860443239512128064" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6500545468170850818">
               <property name="value" nameId="mj1l.8860443239512128104" value="-10.0" />
             </node>
@@ -1605,12 +1611,12 @@
           </node>
         </node>
       </node>
-      <node role="type" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="6500545468170850820" />
+      <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="6500545468170850820" />
     </node>
-    <node role="contents" type=".com.mbeddr.core.unittest.structure.TestCase" id="6500545468170850821">
-      <property name="exported" value="true" />
-      <property name="name" value="testUnaryArithmeticNotOperator" />
-      <node role="body" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="6500545468170850822">
+    <node role="contents" roleId="x27k.6437088627575722833" type="yz9a.TestCase" typeId="yz9a.6275792049641586523" id="6500545468170850821">
+      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
+      <property name="name" nameId="tpck.1169194664001" value="testUnaryArithmeticNotOperator" />
+      <node role="body" roleId="yz9a.6275792049641586525" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="6500545468170850822">
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="6500545468170850823">
           <property name="name" nameId="tpck.1169194664001" value="i" />
           <node role="init" roleId="c4fa.4185783222026502647" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6500545468170850824">
@@ -1627,9 +1633,9 @@
             </node>
           </node>
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type=".com.mbeddr.core.unittest.structure.AssertStatement" id="6500545468170850830">
-          <property name="contextNodeIdD" value="6500545468170850830" />
-          <node role="expr" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170850831">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="6500545468170850830">
+          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="6500545468170850830" />
+          <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170850831">
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6500545468170850832">
               <property name="value" nameId="mj1l.8860443239512128104" value="-16" />
             </node>
@@ -1638,9 +1644,9 @@
             </node>
           </node>
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type=".com.mbeddr.core.unittest.structure.AssertStatement" id="6500545468170850834">
-          <property name="contextNodeIdD" value="6500545468170850834" />
-          <node role="expr" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170850835">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="6500545468170850834">
+          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="6500545468170850834" />
+          <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170850835">
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.BitwiseNotExpression" typeId="mj1l.3976803464656556878" id="6500545468170850836">
               <node role="expression" roleId="mj1l.7254843406768839760" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6500545468170850837">
                 <property name="value" nameId="mj1l.8860443239512128104" value="15" />
@@ -1652,12 +1658,12 @@
           </node>
         </node>
       </node>
-      <node role="type" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="6500545468170850839" />
+      <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="6500545468170850839" />
     </node>
-    <node role="contents" type=".com.mbeddr.core.unittest.structure.TestCase" id="6500545468170850840">
-      <property name="exported" value="true" />
-      <property name="name" value="testParens" />
-      <node role="body" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="6500545468170850841">
+    <node role="contents" roleId="x27k.6437088627575722833" type="yz9a.TestCase" typeId="yz9a.6275792049641586523" id="6500545468170850840">
+      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
+      <property name="name" nameId="tpck.1169194664001" value="testParens" />
+      <node role="body" roleId="yz9a.6275792049641586525" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="6500545468170850841">
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="6500545468170850842">
           <property name="name" nameId="tpck.1169194664001" value="i" />
           <node role="init" roleId="c4fa.4185783222026502647" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6500545468170850843">
@@ -1701,9 +1707,9 @@
           </node>
           <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="6500545468170850859" />
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type=".com.mbeddr.core.unittest.structure.AssertStatement" id="6500545468170850860">
-          <property name="contextNodeIdD" value="6500545468170850860" />
-          <node role="expr" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170850861">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="6500545468170850860">
+          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="6500545468170850860" />
+          <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170850861">
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6500545468170850862">
               <property name="value" nameId="mj1l.8860443239512128104" value="9" />
             </node>
@@ -1712,9 +1718,9 @@
             </node>
           </node>
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type=".com.mbeddr.core.unittest.structure.AssertStatement" id="6500545468170850864">
-          <property name="contextNodeIdD" value="6500545468170850864" />
-          <node role="expr" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170850865">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="6500545468170850864">
+          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="6500545468170850864" />
+          <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170850865">
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6500545468170850866">
               <property name="value" nameId="mj1l.8860443239512128104" value="25" />
             </node>
@@ -1724,12 +1730,12 @@
           </node>
         </node>
       </node>
-      <node role="type" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="6500545468170850868" />
+      <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="6500545468170850868" />
     </node>
-    <node role="contents" type=".com.mbeddr.core.unittest.structure.TestCase" id="6500545468170850869">
-      <property name="exported" value="true" />
-      <property name="name" value="testDirectAssignment" />
-      <node role="body" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="6500545468170850870">
+    <node role="contents" roleId="x27k.6437088627575722833" type="yz9a.TestCase" typeId="yz9a.6275792049641586523" id="6500545468170850869">
+      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
+      <property name="name" nameId="tpck.1169194664001" value="testDirectAssignment" />
+      <node role="body" roleId="yz9a.6275792049641586525" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="6500545468170850870">
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="6500545468170850871">
           <property name="name" nameId="tpck.1169194664001" value="i" />
           <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="6500545468170850872" />
@@ -1749,9 +1755,9 @@
             </node>
           </node>
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type=".com.mbeddr.core.unittest.structure.AssertStatement" id="6500545468170850879">
-          <property name="contextNodeIdD" value="6500545468170850879" />
-          <node role="expr" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170850880">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="6500545468170850879">
+          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="6500545468170850879" />
+          <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170850880">
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6500545468170850881">
               <property name="value" nameId="mj1l.8860443239512128104" value="7" />
             </node>
@@ -1761,12 +1767,12 @@
           </node>
         </node>
       </node>
-      <node role="type" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="6500545468170850883" />
+      <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="6500545468170850883" />
     </node>
-    <node role="contents" type=".com.mbeddr.core.unittest.structure.TestCase" id="6500545468170850884">
-      <property name="exported" value="true" />
-      <property name="name" value="testDirectPlusAssignmentExpression" />
-      <node role="body" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="6500545468170850885">
+    <node role="contents" roleId="x27k.6437088627575722833" type="yz9a.TestCase" typeId="yz9a.6275792049641586523" id="6500545468170850884">
+      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
+      <property name="name" nameId="tpck.1169194664001" value="testDirectPlusAssignmentExpression" />
+      <node role="body" roleId="yz9a.6275792049641586525" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="6500545468170850885">
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="6500545468170850886">
           <property name="name" nameId="tpck.1169194664001" value="i" />
           <node role="init" roleId="c4fa.4185783222026502647" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6500545468170850887">
@@ -1789,9 +1795,9 @@
             </node>
           </node>
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type=".com.mbeddr.core.unittest.structure.AssertStatement" id="6500545468170850895">
-          <property name="contextNodeIdD" value="6500545468170850895" />
-          <node role="expr" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170850896">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="6500545468170850895">
+          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="6500545468170850895" />
+          <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170850896">
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6500545468170850897">
               <property name="value" nameId="mj1l.8860443239512128104" value="20" />
             </node>
@@ -1818,9 +1824,9 @@
             </node>
           </node>
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type=".com.mbeddr.core.unittest.structure.AssertStatement" id="6500545468170850907">
-          <property name="contextNodeIdD" value="6500545468170850907" />
-          <node role="expr" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170850908">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="6500545468170850907">
+          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="6500545468170850907" />
+          <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170850908">
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6500545468170850909">
               <property name="value" nameId="mj1l.8860443239512128104" value="32" />
             </node>
@@ -1838,9 +1844,9 @@
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ForStatement" typeId="c4fa.7254843406768596598" id="6500545468170850914">
           <node role="body" roleId="c4fa.7254843406768606771" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="6500545468170850915">
-            <node role="statements" roleId="c4fa.4185783222026475862" type=".com.mbeddr.core.unittest.structure.AssertStatement" id="6500545468170850916">
-              <property name="contextNodeIdD" value="6500545468170850916" />
-              <node role="expr" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170850917">
+            <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="6500545468170850916">
+              <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="6500545468170850916" />
+              <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170850917">
                 <node role="right" roleId="mj1l.8860443239512128065" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="6500545468170850918">
                   <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="6500545468170850911" resolveInfo="sum" />
                 </node>
@@ -1921,9 +1927,9 @@
             </node>
           </node>
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type=".com.mbeddr.core.unittest.structure.AssertStatement" id="6500545468170850948">
-          <property name="contextNodeIdD" value="6500545468170850948" />
-          <node role="expr" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170850949">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="6500545468170850948">
+          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="6500545468170850948" />
+          <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170850949">
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6500545468170850950">
               <property name="value" nameId="mj1l.8860443239512128104" value="13" />
             </node>
@@ -1955,9 +1961,9 @@
           </node>
           <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int32tType" typeId="mj1l.8463282783691618440" id="6500545468170850961" />
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type=".com.mbeddr.core.unittest.structure.AssertStatement" id="6500545468170850962">
-          <property name="contextNodeIdD" value="6500545468170850962" />
-          <node role="expr" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170850963">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="6500545468170850962">
+          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="6500545468170850962" />
+          <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170850963">
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6500545468170850964">
               <property name="value" nameId="mj1l.8860443239512128104" value="12" />
             </node>
@@ -1968,12 +1974,12 @@
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="6500545468170850966" />
       </node>
-      <node role="type" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="6500545468170850967" />
+      <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="6500545468170850967" />
     </node>
-    <node role="contents" type=".com.mbeddr.core.unittest.structure.TestCase" id="6500545468170850968">
-      <property name="exported" value="true" />
-      <property name="name" value="testDirectMinusAssignmentExpression" />
-      <node role="body" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="6500545468170850969">
+    <node role="contents" roleId="x27k.6437088627575722833" type="yz9a.TestCase" typeId="yz9a.6275792049641586523" id="6500545468170850968">
+      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
+      <property name="name" nameId="tpck.1169194664001" value="testDirectMinusAssignmentExpression" />
+      <node role="body" roleId="yz9a.6275792049641586525" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="6500545468170850969">
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="6500545468170850970">
           <property name="name" nameId="tpck.1169194664001" value="i" />
           <node role="init" roleId="c4fa.4185783222026502647" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6500545468170850971">
@@ -1991,9 +1997,9 @@
             </node>
           </node>
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type=".com.mbeddr.core.unittest.structure.AssertStatement" id="6500545468170850977">
-          <property name="contextNodeIdD" value="6500545468170850977" />
-          <node role="expr" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170850978">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="6500545468170850977">
+          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="6500545468170850977" />
+          <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170850978">
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6500545468170850979">
               <property name="value" nameId="mj1l.8860443239512128104" value="5" />
             </node>
@@ -2020,9 +2026,9 @@
             </node>
           </node>
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type=".com.mbeddr.core.unittest.structure.AssertStatement" id="6500545468170850989">
-          <property name="contextNodeIdD" value="6500545468170850989" />
-          <node role="expr" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170850990">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="6500545468170850989">
+          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="6500545468170850989" />
+          <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170850990">
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6500545468170850991">
               <property name="value" nameId="mj1l.8860443239512128104" value="7" />
             </node>
@@ -2050,9 +2056,9 @@
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ForStatement" typeId="c4fa.7254843406768596598" id="6500545468170851000">
           <node role="body" roleId="c4fa.7254843406768606771" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="6500545468170851001">
-            <node role="statements" roleId="c4fa.4185783222026475862" type=".com.mbeddr.core.unittest.structure.AssertStatement" id="6500545468170851002">
-              <property name="contextNodeIdD" value="6500545468170851002" />
-              <node role="expr" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170851003">
+            <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="6500545468170851002">
+              <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="6500545468170851002" />
+              <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170851003">
                 <node role="right" roleId="mj1l.8860443239512128065" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="6500545468170851004">
                   <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="6500545468170850997" resolveInfo="sum" />
                 </node>
@@ -2134,9 +2140,9 @@
           </node>
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="6500545468170851034" />
-        <node role="statements" roleId="c4fa.4185783222026475862" type=".com.mbeddr.core.unittest.structure.AssertStatement" id="6500545468170851035">
-          <property name="contextNodeIdD" value="6500545468170851035" />
-          <node role="expr" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170851036">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="6500545468170851035">
+          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="6500545468170851035" />
+          <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170851036">
             <node role="left" roleId="mj1l.8860443239512128064" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="6500545468170851037">
               <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="6500545468170850970" resolveInfo="i" />
             </node>
@@ -2168,9 +2174,9 @@
           </node>
           <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int32tType" typeId="mj1l.8463282783691618440" id="6500545468170851048" />
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type=".com.mbeddr.core.unittest.structure.AssertStatement" id="6500545468170851049">
-          <property name="contextNodeIdD" value="6500545468170851049" />
-          <node role="expr" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170851050">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="6500545468170851049">
+          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="6500545468170851049" />
+          <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170851050">
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6500545468170851051">
               <property name="value" nameId="mj1l.8860443239512128104" value="8" />
             </node>
@@ -2181,12 +2187,12 @@
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="6500545468170851053" />
       </node>
-      <node role="type" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="6500545468170851054" />
+      <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="6500545468170851054" />
     </node>
-    <node role="contents" type=".com.mbeddr.core.unittest.structure.TestCase" id="6500545468170851055">
-      <property name="exported" value="true" />
-      <property name="name" value="testDirectMultiAssignmentExpression" />
-      <node role="body" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="6500545468170851056">
+    <node role="contents" roleId="x27k.6437088627575722833" type="yz9a.TestCase" typeId="yz9a.6275792049641586523" id="6500545468170851055">
+      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
+      <property name="name" nameId="tpck.1169194664001" value="testDirectMultiAssignmentExpression" />
+      <node role="body" roleId="yz9a.6275792049641586525" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="6500545468170851056">
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="6500545468170851057">
           <property name="name" nameId="tpck.1169194664001" value="i" />
           <node role="init" roleId="c4fa.4185783222026502647" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6500545468170851058">
@@ -2204,9 +2210,9 @@
             </node>
           </node>
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type=".com.mbeddr.core.unittest.structure.AssertStatement" id="6500545468170851064">
-          <property name="contextNodeIdD" value="6500545468170851064" />
-          <node role="expr" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170851065">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="6500545468170851064">
+          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="6500545468170851064" />
+          <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170851065">
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6500545468170851066">
               <property name="value" nameId="mj1l.8860443239512128104" value="20" />
             </node>
@@ -2233,9 +2239,9 @@
             </node>
           </node>
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type=".com.mbeddr.core.unittest.structure.AssertStatement" id="6500545468170851076">
-          <property name="contextNodeIdD" value="6500545468170851076" />
-          <node role="expr" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170851077">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="6500545468170851076">
+          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="6500545468170851076" />
+          <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170851077">
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6500545468170851078">
               <property name="value" nameId="mj1l.8860443239512128104" value="24" />
             </node>
@@ -2263,9 +2269,9 @@
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ForStatement" typeId="c4fa.7254843406768596598" id="6500545468170851087">
           <node role="body" roleId="c4fa.7254843406768606771" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="6500545468170851088">
-            <node role="statements" roleId="c4fa.4185783222026475862" type=".com.mbeddr.core.unittest.structure.AssertStatement" id="6500545468170851089">
-              <property name="contextNodeIdD" value="6500545468170851089" />
-              <node role="expr" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170851090">
+            <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="6500545468170851089">
+              <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="6500545468170851089" />
+              <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170851090">
                 <node role="right" roleId="mj1l.8860443239512128065" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="6500545468170851091">
                   <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="6500545468170851084" resolveInfo="sum" />
                 </node>
@@ -2347,9 +2353,9 @@
           </node>
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="6500545468170851121" />
-        <node role="statements" roleId="c4fa.4185783222026475862" type=".com.mbeddr.core.unittest.structure.AssertStatement" id="6500545468170851122">
-          <property name="contextNodeIdD" value="6500545468170851122" />
-          <node role="expr" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170851123">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="6500545468170851122">
+          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="6500545468170851122" />
+          <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170851123">
             <node role="left" roleId="mj1l.8860443239512128064" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="6500545468170851124">
               <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="6500545468170851057" resolveInfo="i" />
             </node>
@@ -2381,9 +2387,9 @@
           </node>
           <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int32tType" typeId="mj1l.8463282783691618440" id="6500545468170851135" />
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type=".com.mbeddr.core.unittest.structure.AssertStatement" id="6500545468170851136">
-          <property name="contextNodeIdD" value="6500545468170851136" />
-          <node role="expr" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170851137">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="6500545468170851136">
+          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="6500545468170851136" />
+          <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170851137">
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6500545468170851138">
               <property name="value" nameId="mj1l.8860443239512128104" value="100" />
             </node>
@@ -2394,12 +2400,12 @@
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="6500545468170851140" />
       </node>
-      <node role="type" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="6500545468170851141" />
+      <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="6500545468170851141" />
     </node>
-    <node role="contents" type=".com.mbeddr.core.unittest.structure.TestCase" id="6500545468170851142">
-      <property name="exported" value="true" />
-      <property name="name" value="testDirectDivAssignmentExpression" />
-      <node role="body" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="6500545468170851143">
+    <node role="contents" roleId="x27k.6437088627575722833" type="yz9a.TestCase" typeId="yz9a.6275792049641586523" id="6500545468170851142">
+      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
+      <property name="name" nameId="tpck.1169194664001" value="testDirectDivAssignmentExpression" />
+      <node role="body" roleId="yz9a.6275792049641586525" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="6500545468170851143">
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="6500545468170851144">
           <property name="name" nameId="tpck.1169194664001" value="i" />
           <node role="init" roleId="c4fa.4185783222026502647" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6500545468170851145">
@@ -2417,9 +2423,9 @@
             </node>
           </node>
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type=".com.mbeddr.core.unittest.structure.AssertStatement" id="6500545468170851151">
-          <property name="contextNodeIdD" value="6500545468170851151" />
-          <node role="expr" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170851152">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="6500545468170851151">
+          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="6500545468170851151" />
+          <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170851152">
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6500545468170851153">
               <property name="value" nameId="mj1l.8860443239512128104" value="5" />
             </node>
@@ -2446,9 +2452,9 @@
             </node>
           </node>
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type=".com.mbeddr.core.unittest.structure.AssertStatement" id="6500545468170851163">
-          <property name="contextNodeIdD" value="6500545468170851163" />
-          <node role="expr" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170851164">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="6500545468170851163">
+          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="6500545468170851163" />
+          <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170851164">
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6500545468170851165">
               <property name="value" nameId="mj1l.8860443239512128104" value="6" />
             </node>
@@ -2476,9 +2482,9 @@
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ForStatement" typeId="c4fa.7254843406768596598" id="6500545468170851174">
           <node role="body" roleId="c4fa.7254843406768606771" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="6500545468170851175">
-            <node role="statements" roleId="c4fa.4185783222026475862" type=".com.mbeddr.core.unittest.structure.AssertStatement" id="6500545468170851176">
-              <property name="contextNodeIdD" value="6500545468170851176" />
-              <node role="expr" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170851177">
+            <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="6500545468170851176">
+              <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="6500545468170851176" />
+              <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170851177">
                 <node role="right" roleId="mj1l.8860443239512128065" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="6500545468170851178">
                   <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="6500545468170851171" resolveInfo="sum" />
                 </node>
@@ -2551,9 +2557,9 @@
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="6500545468170851204" />
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="6500545468170851205" />
-        <node role="statements" roleId="c4fa.4185783222026475862" type=".com.mbeddr.core.unittest.structure.AssertStatement" id="6500545468170851206">
-          <property name="contextNodeIdD" value="6500545468170851206" />
-          <node role="expr" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170851207">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="6500545468170851206">
+          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="6500545468170851206" />
+          <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170851207">
             <node role="left" roleId="mj1l.8860443239512128064" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="6500545468170851208">
               <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="6500545468170851144" resolveInfo="i" />
             </node>
@@ -2585,9 +2591,9 @@
           </node>
           <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int32tType" typeId="mj1l.8463282783691618440" id="6500545468170851219" />
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type=".com.mbeddr.core.unittest.structure.AssertStatement" id="6500545468170851220">
-          <property name="contextNodeIdD" value="6500545468170851220" />
-          <node role="expr" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170851221">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="6500545468170851220">
+          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="6500545468170851220" />
+          <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170851221">
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6500545468170851222">
               <property name="value" nameId="mj1l.8860443239512128104" value="1" />
             </node>
@@ -2598,12 +2604,12 @@
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="6500545468170851224" />
       </node>
-      <node role="type" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="6500545468170851225" />
+      <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="6500545468170851225" />
     </node>
-    <node role="contents" type=".com.mbeddr.core.unittest.structure.TestCase" id="6500545468170851226">
-      <property name="exported" value="true" />
-      <property name="name" value="testDirectModuloAssignmentExpression" />
-      <node role="body" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="6500545468170851227">
+    <node role="contents" roleId="x27k.6437088627575722833" type="yz9a.TestCase" typeId="yz9a.6275792049641586523" id="6500545468170851226">
+      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
+      <property name="name" nameId="tpck.1169194664001" value="testDirectModuloAssignmentExpression" />
+      <node role="body" roleId="yz9a.6275792049641586525" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="6500545468170851227">
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="6500545468170851228">
           <property name="name" nameId="tpck.1169194664001" value="i" />
           <node role="init" roleId="c4fa.4185783222026502647" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6500545468170851229">
@@ -2621,9 +2627,9 @@
             </node>
           </node>
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type=".com.mbeddr.core.unittest.structure.AssertStatement" id="6500545468170851235">
-          <property name="contextNodeIdD" value="6500545468170851235" />
-          <node role="expr" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170851236">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="6500545468170851235">
+          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="6500545468170851235" />
+          <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170851236">
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6500545468170851237">
               <property name="value" nameId="mj1l.8860443239512128104" value="2" />
             </node>
@@ -2650,9 +2656,9 @@
             </node>
           </node>
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type=".com.mbeddr.core.unittest.structure.AssertStatement" id="6500545468170851247">
-          <property name="contextNodeIdD" value="6500545468170851247" />
-          <node role="expr" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170851248">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="6500545468170851247">
+          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="6500545468170851247" />
+          <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170851248">
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6500545468170851249">
               <property name="value" nameId="mj1l.8860443239512128104" value="2" />
             </node>
@@ -2685,9 +2691,9 @@
           </node>
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="6500545468170851261" />
-        <node role="statements" roleId="c4fa.4185783222026475862" type=".com.mbeddr.core.unittest.structure.AssertStatement" id="6500545468170851262">
-          <property name="contextNodeIdD" value="6500545468170851262" />
-          <node role="expr" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170851263">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="6500545468170851262">
+          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="6500545468170851262" />
+          <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170851263">
             <node role="left" roleId="mj1l.8860443239512128064" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="6500545468170851264">
               <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="6500545468170851228" resolveInfo="i" />
             </node>
@@ -2719,9 +2725,9 @@
           </node>
           <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int32tType" typeId="mj1l.8463282783691618440" id="6500545468170851275" />
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type=".com.mbeddr.core.unittest.structure.AssertStatement" id="6500545468170851276">
-          <property name="contextNodeIdD" value="6500545468170851276" />
-          <node role="expr" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170851277">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="6500545468170851276">
+          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="6500545468170851276" />
+          <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170851277">
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6500545468170851278">
               <property name="value" nameId="mj1l.8860443239512128104" value="0" />
             </node>
@@ -2732,12 +2738,12 @@
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="6500545468170851280" />
       </node>
-      <node role="type" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="6500545468170851281" />
+      <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="6500545468170851281" />
     </node>
-    <node role="contents" type=".com.mbeddr.core.unittest.structure.TestCase" id="6500545468170851282">
-      <property name="exported" value="true" />
-      <property name="name" value="testDirectBitwiseANDAssignmentExpression" />
-      <node role="body" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="6500545468170851283">
+    <node role="contents" roleId="x27k.6437088627575722833" type="yz9a.TestCase" typeId="yz9a.6275792049641586523" id="6500545468170851282">
+      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
+      <property name="name" nameId="tpck.1169194664001" value="testDirectBitwiseANDAssignmentExpression" />
+      <node role="body" roleId="yz9a.6275792049641586525" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="6500545468170851283">
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="6500545468170851284">
           <property name="name" nameId="tpck.1169194664001" value="i1" />
           <node role="init" roleId="c4fa.4185783222026502647" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6500545468170851285">
@@ -2762,9 +2768,9 @@
             </node>
           </node>
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type=".com.mbeddr.core.unittest.structure.AssertStatement" id="6500545468170851294">
-          <property name="contextNodeIdD" value="6500545468170851294" />
-          <node role="expr" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170851295">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="6500545468170851294">
+          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="6500545468170851294" />
+          <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170851295">
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6500545468170851296">
               <property name="value" nameId="mj1l.8860443239512128104" value="4" />
             </node>
@@ -2799,9 +2805,9 @@
             </node>
           </node>
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type=".com.mbeddr.core.unittest.structure.AssertStatement" id="6500545468170851310">
-          <property name="contextNodeIdD" value="6500545468170851310" />
-          <node role="expr" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170851311">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="6500545468170851310">
+          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="6500545468170851310" />
+          <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170851311">
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6500545468170851312">
               <property name="value" nameId="mj1l.8860443239512128104" value="4" />
             </node>
@@ -2821,9 +2827,9 @@
             </node>
           </node>
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type=".com.mbeddr.core.unittest.structure.AssertStatement" id="6500545468170851319">
-          <property name="contextNodeIdD" value="6500545468170851319" />
-          <node role="expr" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170851320">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="6500545468170851319">
+          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="6500545468170851319" />
+          <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170851320">
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6500545468170851321">
               <property name="value" nameId="mj1l.8860443239512128104" value="4" />
             </node>
@@ -2833,12 +2839,12 @@
           </node>
         </node>
       </node>
-      <node role="type" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="6500545468170851323" />
+      <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="6500545468170851323" />
     </node>
-    <node role="contents" type=".com.mbeddr.core.unittest.structure.TestCase" id="6500545468170851324">
-      <property name="exported" value="true" />
-      <property name="name" value="testDirectBitwiseORAssignmentExpression" />
-      <node role="body" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="6500545468170851325">
+    <node role="contents" roleId="x27k.6437088627575722833" type="yz9a.TestCase" typeId="yz9a.6275792049641586523" id="6500545468170851324">
+      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
+      <property name="name" nameId="tpck.1169194664001" value="testDirectBitwiseORAssignmentExpression" />
+      <node role="body" roleId="yz9a.6275792049641586525" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="6500545468170851325">
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="6500545468170851326">
           <property name="name" nameId="tpck.1169194664001" value="i1" />
           <node role="init" roleId="c4fa.4185783222026502647" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6500545468170851327">
@@ -2863,9 +2869,9 @@
             </node>
           </node>
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type=".com.mbeddr.core.unittest.structure.AssertStatement" id="6500545468170851336">
-          <property name="contextNodeIdD" value="6500545468170851336" />
-          <node role="expr" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170851337">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="6500545468170851336">
+          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="6500545468170851336" />
+          <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170851337">
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6500545468170851338">
               <property name="value" nameId="mj1l.8860443239512128104" value="7" />
             </node>
@@ -2900,9 +2906,9 @@
             </node>
           </node>
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type=".com.mbeddr.core.unittest.structure.AssertStatement" id="6500545468170851352">
-          <property name="contextNodeIdD" value="6500545468170851352" />
-          <node role="expr" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170851353">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="6500545468170851352">
+          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="6500545468170851352" />
+          <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170851353">
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6500545468170851354">
               <property name="value" nameId="mj1l.8860443239512128104" value="7" />
             </node>
@@ -2922,9 +2928,9 @@
             </node>
           </node>
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type=".com.mbeddr.core.unittest.structure.AssertStatement" id="6500545468170851361">
-          <property name="contextNodeIdD" value="6500545468170851361" />
-          <node role="expr" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170851362">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="6500545468170851361">
+          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="6500545468170851361" />
+          <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170851362">
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6500545468170851363">
               <property name="value" nameId="mj1l.8860443239512128104" value="7" />
             </node>
@@ -2934,12 +2940,12 @@
           </node>
         </node>
       </node>
-      <node role="type" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="6500545468170851365" />
+      <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="6500545468170851365" />
     </node>
-    <node role="contents" type=".com.mbeddr.core.unittest.structure.TestCase" id="6500545468170851366">
-      <property name="exported" value="true" />
-      <property name="name" value="testDirectBitwiseXORAssignmentExpression" />
-      <node role="body" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="6500545468170851367">
+    <node role="contents" roleId="x27k.6437088627575722833" type="yz9a.TestCase" typeId="yz9a.6275792049641586523" id="6500545468170851366">
+      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
+      <property name="name" nameId="tpck.1169194664001" value="testDirectBitwiseXORAssignmentExpression" />
+      <node role="body" roleId="yz9a.6275792049641586525" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="6500545468170851367">
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="6500545468170851368">
           <property name="name" nameId="tpck.1169194664001" value="i1" />
           <node role="init" roleId="c4fa.4185783222026502647" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6500545468170851369">
@@ -2964,9 +2970,9 @@
             </node>
           </node>
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type=".com.mbeddr.core.unittest.structure.AssertStatement" id="6500545468170851378">
-          <property name="contextNodeIdD" value="6500545468170851378" />
-          <node role="expr" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170851379">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="6500545468170851378">
+          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="6500545468170851378" />
+          <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170851379">
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6500545468170851380">
               <property name="value" nameId="mj1l.8860443239512128104" value="3" />
             </node>
@@ -3001,9 +3007,9 @@
             </node>
           </node>
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type=".com.mbeddr.core.unittest.structure.AssertStatement" id="6500545468170851394">
-          <property name="contextNodeIdD" value="6500545468170851394" />
-          <node role="expr" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170851395">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="6500545468170851394">
+          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="6500545468170851394" />
+          <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170851395">
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6500545468170851396">
               <property name="value" nameId="mj1l.8860443239512128104" value="3" />
             </node>
@@ -3023,9 +3029,9 @@
             </node>
           </node>
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type=".com.mbeddr.core.unittest.structure.AssertStatement" id="6500545468170851403">
-          <property name="contextNodeIdD" value="6500545468170851403" />
-          <node role="expr" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170851404">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="6500545468170851403">
+          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="6500545468170851403" />
+          <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170851404">
             <node role="left" roleId="mj1l.8860443239512128064" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="6500545468170851405">
               <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="6500545468170851383" resolveInfo="l1" />
             </node>
@@ -3035,12 +3041,12 @@
           </node>
         </node>
       </node>
-      <node role="type" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="6500545468170851407" />
+      <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="6500545468170851407" />
     </node>
-    <node role="contents" type=".com.mbeddr.core.unittest.structure.TestCase" id="6500545468170851408">
-      <property name="exported" value="true" />
-      <property name="name" value="testDirectBitwiseRightShiftAssignmentExpression" />
-      <node role="body" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="6500545468170851409">
+    <node role="contents" roleId="x27k.6437088627575722833" type="yz9a.TestCase" typeId="yz9a.6275792049641586523" id="6500545468170851408">
+      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
+      <property name="name" nameId="tpck.1169194664001" value="testDirectBitwiseRightShiftAssignmentExpression" />
+      <node role="body" roleId="yz9a.6275792049641586525" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="6500545468170851409">
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="6500545468170851410">
           <property name="name" nameId="tpck.1169194664001" value="i1" />
           <node role="init" roleId="c4fa.4185783222026502647" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6500545468170851411">
@@ -3058,9 +3064,9 @@
             </node>
           </node>
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type=".com.mbeddr.core.unittest.structure.AssertStatement" id="6500545468170851417">
-          <property name="contextNodeIdD" value="6500545468170851417" />
-          <node role="expr" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170851418">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="6500545468170851417">
+          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="6500545468170851417" />
+          <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170851418">
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6500545468170851419">
               <property name="value" nameId="mj1l.8860443239512128104" value="1" />
             </node>
@@ -3087,9 +3093,9 @@
             </node>
           </node>
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type=".com.mbeddr.core.unittest.structure.AssertStatement" id="6500545468170851429">
-          <property name="contextNodeIdD" value="6500545468170851429" />
-          <node role="expr" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170851430">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="6500545468170851429">
+          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="6500545468170851429" />
+          <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170851430">
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6500545468170851431">
               <property name="value" nameId="mj1l.8860443239512128104" value="1" />
             </node>
@@ -3128,9 +3134,9 @@
             </node>
           </node>
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type=".com.mbeddr.core.unittest.structure.AssertStatement" id="6500545468170851446">
-          <property name="contextNodeIdD" value="6500545468170851446" />
-          <node role="expr" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170851447">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="6500545468170851446">
+          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="6500545468170851446" />
+          <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170851447">
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6500545468170851448">
               <property name="value" nameId="mj1l.8860443239512128104" value="1" />
             </node>
@@ -3140,12 +3146,12 @@
           </node>
         </node>
       </node>
-      <node role="type" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="6500545468170851450" />
+      <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="6500545468170851450" />
     </node>
-    <node role="contents" type=".com.mbeddr.core.unittest.structure.TestCase" id="6500545468170851451">
-      <property name="exported" value="true" />
-      <property name="name" value="testDirectBitwiseLeftShiftAssignmentExpression" />
-      <node role="body" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="6500545468170851452">
+    <node role="contents" roleId="x27k.6437088627575722833" type="yz9a.TestCase" typeId="yz9a.6275792049641586523" id="6500545468170851451">
+      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
+      <property name="name" nameId="tpck.1169194664001" value="testDirectBitwiseLeftShiftAssignmentExpression" />
+      <node role="body" roleId="yz9a.6275792049641586525" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="6500545468170851452">
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="6500545468170851453">
           <property name="name" nameId="tpck.1169194664001" value="i1" />
           <node role="init" roleId="c4fa.4185783222026502647" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6500545468170851454">
@@ -3163,9 +3169,9 @@
             </node>
           </node>
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type=".com.mbeddr.core.unittest.structure.AssertStatement" id="6500545468170851460">
-          <property name="contextNodeIdD" value="6500545468170851460" />
-          <node role="expr" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170851461">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="6500545468170851460">
+          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="6500545468170851460" />
+          <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170851461">
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6500545468170851462">
               <property name="value" nameId="mj1l.8860443239512128104" value="6" />
             </node>
@@ -3192,9 +3198,9 @@
             </node>
           </node>
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type=".com.mbeddr.core.unittest.structure.AssertStatement" id="6500545468170851472">
-          <property name="contextNodeIdD" value="6500545468170851472" />
-          <node role="expr" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170851473">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="6500545468170851472">
+          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="6500545468170851472" />
+          <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170851473">
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6500545468170851474">
               <property name="value" nameId="mj1l.8860443239512128104" value="6" />
             </node>
@@ -3233,9 +3239,9 @@
             </node>
           </node>
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type=".com.mbeddr.core.unittest.structure.AssertStatement" id="6500545468170851489">
-          <property name="contextNodeIdD" value="6500545468170851489" />
-          <node role="expr" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170851490">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="6500545468170851489">
+          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="6500545468170851489" />
+          <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170851490">
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6500545468170851491">
               <property name="value" nameId="mj1l.8860443239512128104" value="6" />
             </node>
@@ -3245,12 +3251,12 @@
           </node>
         </node>
       </node>
-      <node role="type" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="6500545468170851493" />
+      <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="6500545468170851493" />
     </node>
-    <node role="contents" type=".com.mbeddr.core.unittest.structure.TestCase" id="6500545468170851494">
-      <property name="exported" value="true" />
-      <property name="name" value="testModuloOperator" />
-      <node role="body" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="6500545468170851495">
+    <node role="contents" roleId="x27k.6437088627575722833" type="yz9a.TestCase" typeId="yz9a.6275792049641586523" id="6500545468170851494">
+      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
+      <property name="name" nameId="tpck.1169194664001" value="testModuloOperator" />
+      <node role="body" roleId="yz9a.6275792049641586525" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="6500545468170851495">
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="6500545468170851496">
           <property name="name" nameId="tpck.1169194664001" value="i" />
           <node role="init" roleId="c4fa.4185783222026502647" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6500545468170851497">
@@ -3270,9 +3276,9 @@
           </node>
           <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="6500545468170851503" />
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type=".com.mbeddr.core.unittest.structure.AssertStatement" id="6500545468170851504">
-          <property name="contextNodeIdD" value="6500545468170851504" />
-          <node role="expr" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170851505">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="6500545468170851504">
+          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="6500545468170851504" />
+          <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170851505">
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6500545468170851506">
               <property name="value" nameId="mj1l.8860443239512128104" value="0" />
             </node>
@@ -3281,9 +3287,9 @@
             </node>
           </node>
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type=".com.mbeddr.core.unittest.structure.AssertStatement" id="6500545468170851508">
-          <property name="contextNodeIdD" value="6500545468170851508" />
-          <node role="expr" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170851509">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="6500545468170851508">
+          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="6500545468170851508" />
+          <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170851509">
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6500545468170851510">
               <property name="value" nameId="mj1l.8860443239512128104" value="5" />
             </node>
@@ -3303,12 +3309,12 @@
           </node>
         </node>
       </node>
-      <node role="type" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="6500545468170851516" />
+      <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="6500545468170851516" />
     </node>
-    <node role="contents" type=".com.mbeddr.core.unittest.structure.TestCase" id="6500545468170851517">
-      <property name="exported" value="true" />
-      <property name="name" value="testAndOperator" />
-      <node role="body" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="6500545468170851518">
+    <node role="contents" roleId="x27k.6437088627575722833" type="yz9a.TestCase" typeId="yz9a.6275792049641586523" id="6500545468170851517">
+      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
+      <property name="name" nameId="tpck.1169194664001" value="testAndOperator" />
+      <node role="body" roleId="yz9a.6275792049641586525" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="6500545468170851518">
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="6500545468170851519">
           <property name="name" nameId="tpck.1169194664001" value="a" />
           <node role="init" roleId="c4fa.4185783222026502647" type="mj1l.FalseLiteral" typeId="mj1l.8860443239512128099" id="6500545468170851520" />
@@ -3319,9 +3325,9 @@
           <node role="init" roleId="c4fa.4185783222026502647" type="mj1l.TrueLiteral" typeId="mj1l.8860443239512128094" id="6500545468170851523" />
           <node role="type" roleId="mj1l.318113533128716676" type="mj1l.BooleanType" typeId="mj1l.8860443239512128058" id="6500545468170851524" />
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type=".com.mbeddr.core.unittest.structure.AssertStatement" id="6500545468170851525">
-          <property name="contextNodeIdD" value="6500545468170851525" />
-          <node role="expr" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170851526">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="6500545468170851525">
+          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="6500545468170851525" />
+          <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170851526">
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.AndExpression" typeId="mj1l.8399455261460717640" id="6500545468170851527">
               <node role="right" roleId="mj1l.8860443239512128065" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="6500545468170851528">
                 <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="6500545468170851522" resolveInfo="b" />
@@ -3340,9 +3346,9 @@
             </node>
           </node>
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type=".com.mbeddr.core.unittest.structure.AssertStatement" id="6500545468170851533">
-          <property name="contextNodeIdD" value="6500545468170851533" />
-          <node role="expr" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170851534">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="6500545468170851533">
+          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="6500545468170851533" />
+          <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170851534">
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.FalseLiteral" typeId="mj1l.8860443239512128099" id="6500545468170851535" />
             <node role="left" roleId="mj1l.8860443239512128064" type="mj1l.ParensExpression" typeId="mj1l.5763383285156533447" id="6500545468170851536">
               <node role="expression" roleId="mj1l.7254843406768839760" type="mj1l.AndExpression" typeId="mj1l.8399455261460717640" id="6500545468170851537">
@@ -3356,9 +3362,9 @@
             </node>
           </node>
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type=".com.mbeddr.core.unittest.structure.AssertStatement" id="6500545468170851540">
-          <property name="contextNodeIdD" value="6500545468170851540" />
-          <node role="expr" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170851541">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="6500545468170851540">
+          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="6500545468170851540" />
+          <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170851541">
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NotExpression" typeId="mj1l.3830958861296781575" id="6500545468170851542">
               <node role="expression" roleId="mj1l.7254843406768839760" type="mj1l.OrExpression" typeId="mj1l.8399455261460717642" id="6500545468170851543">
                 <node role="left" roleId="mj1l.8860443239512128064" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="6500545468170851544">
@@ -3384,12 +3390,12 @@
           </node>
         </node>
       </node>
-      <node role="type" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="6500545468170851551" />
+      <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="6500545468170851551" />
     </node>
-    <node role="contents" type=".com.mbeddr.core.unittest.structure.TestCase" id="6500545468170851552">
-      <property name="exported" value="true" />
-      <property name="name" value="testOrOperator" />
-      <node role="body" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="6500545468170851553">
+    <node role="contents" roleId="x27k.6437088627575722833" type="yz9a.TestCase" typeId="yz9a.6275792049641586523" id="6500545468170851552">
+      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
+      <property name="name" nameId="tpck.1169194664001" value="testOrOperator" />
+      <node role="body" roleId="yz9a.6275792049641586525" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="6500545468170851553">
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="6500545468170851554">
           <property name="name" nameId="tpck.1169194664001" value="a" />
           <node role="init" roleId="c4fa.4185783222026502647" type="mj1l.TrueLiteral" typeId="mj1l.8860443239512128094" id="6500545468170851555" />
@@ -3400,9 +3406,9 @@
           <node role="init" roleId="c4fa.4185783222026502647" type="mj1l.FalseLiteral" typeId="mj1l.8860443239512128099" id="6500545468170851558" />
           <node role="type" roleId="mj1l.318113533128716676" type="mj1l.BooleanType" typeId="mj1l.8860443239512128058" id="6500545468170851559" />
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type=".com.mbeddr.core.unittest.structure.AssertStatement" id="6500545468170851560">
-          <property name="contextNodeIdD" value="6500545468170851560" />
-          <node role="expr" type="mj1l.OrExpression" typeId="mj1l.8399455261460717642" id="6500545468170851561">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="6500545468170851560">
+          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="6500545468170851560" />
+          <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.OrExpression" typeId="mj1l.8399455261460717642" id="6500545468170851561">
             <node role="right" roleId="mj1l.8860443239512128065" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="6500545468170851562">
               <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="6500545468170851554" resolveInfo="a" />
             </node>
@@ -3421,9 +3427,9 @@
             </node>
           </node>
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type=".com.mbeddr.core.unittest.structure.AssertStatement" id="6500545468170851568">
-          <property name="contextNodeIdD" value="6500545468170851568" />
-          <node role="expr" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170851569">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="6500545468170851568">
+          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="6500545468170851568" />
+          <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170851569">
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.TrueLiteral" typeId="mj1l.8860443239512128094" id="6500545468170851570" />
             <node role="left" roleId="mj1l.8860443239512128064" type="mj1l.OrExpression" typeId="mj1l.8399455261460717642" id="6500545468170851571">
               <node role="left" roleId="mj1l.8860443239512128064" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="6500545468170851572">
@@ -3435,9 +3441,9 @@
             </node>
           </node>
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type=".com.mbeddr.core.unittest.structure.AssertStatement" id="6500545468170851574">
-          <property name="contextNodeIdD" value="6500545468170851574" />
-          <node role="expr" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170851575">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="6500545468170851574">
+          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="6500545468170851574" />
+          <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170851575">
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NotExpression" typeId="mj1l.3830958861296781575" id="6500545468170851576">
               <node role="expression" roleId="mj1l.7254843406768839760" type="mj1l.AndExpression" typeId="mj1l.8399455261460717640" id="6500545468170851577">
                 <node role="left" roleId="mj1l.8860443239512128064" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="6500545468170851578">
@@ -3463,20 +3469,20 @@
           </node>
         </node>
       </node>
-      <node role="type" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="6500545468170851585" />
+      <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="6500545468170851585" />
     </node>
-    <node role="contents" type=".com.mbeddr.core.unittest.structure.TestCase" id="6500545468170851586">
-      <property name="exported" value="true" />
-      <property name="name" value="testNotOperator" />
-      <node role="body" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="6500545468170851587">
+    <node role="contents" roleId="x27k.6437088627575722833" type="yz9a.TestCase" typeId="yz9a.6275792049641586523" id="6500545468170851586">
+      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
+      <property name="name" nameId="tpck.1169194664001" value="testNotOperator" />
+      <node role="body" roleId="yz9a.6275792049641586525" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="6500545468170851587">
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="6500545468170851588">
           <property name="name" nameId="tpck.1169194664001" value="a" />
           <node role="init" roleId="c4fa.4185783222026502647" type="mj1l.TrueLiteral" typeId="mj1l.8860443239512128094" id="6500545468170851589" />
           <node role="type" roleId="mj1l.318113533128716676" type="mj1l.BooleanType" typeId="mj1l.8860443239512128058" id="6500545468170851590" />
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type=".com.mbeddr.core.unittest.structure.AssertStatement" id="6500545468170851591">
-          <property name="contextNodeIdD" value="6500545468170851591" />
-          <node role="expr" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170851592">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="6500545468170851591">
+          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="6500545468170851591" />
+          <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170851592">
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.FalseLiteral" typeId="mj1l.8860443239512128099" id="6500545468170851593" />
             <node role="left" roleId="mj1l.8860443239512128064" type="mj1l.NotExpression" typeId="mj1l.3830958861296781575" id="6500545468170851594">
               <node role="expression" roleId="mj1l.7254843406768839760" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="6500545468170851595">
@@ -3485,9 +3491,9 @@
             </node>
           </node>
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type=".com.mbeddr.core.unittest.structure.AssertStatement" id="6500545468170851596">
-          <property name="contextNodeIdD" value="6500545468170851596" />
-          <node role="expr" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170851597">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="6500545468170851596">
+          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="6500545468170851596" />
+          <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170851597">
             <node role="right" roleId="mj1l.8860443239512128065" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="6500545468170851598">
               <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="6500545468170851588" resolveInfo="a" />
             </node>
@@ -3501,12 +3507,12 @@
           </node>
         </node>
       </node>
-      <node role="type" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="6500545468170851602" />
+      <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="6500545468170851602" />
     </node>
-    <node role="contents" type=".com.mbeddr.core.unittest.structure.TestCase" id="6500545468170851603">
-      <property name="exported" value="true" />
-      <property name="name" value="testEqualsOperator" />
-      <node role="body" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="6500545468170851604">
+    <node role="contents" roleId="x27k.6437088627575722833" type="yz9a.TestCase" typeId="yz9a.6275792049641586523" id="6500545468170851603">
+      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
+      <property name="name" nameId="tpck.1169194664001" value="testEqualsOperator" />
+      <node role="body" roleId="yz9a.6275792049641586525" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="6500545468170851604">
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="6500545468170851605">
           <property name="name" nameId="tpck.1169194664001" value="a" />
           <node role="init" roleId="c4fa.4185783222026502647" type="mj1l.TrueLiteral" typeId="mj1l.8860443239512128094" id="6500545468170851606" />
@@ -3517,9 +3523,9 @@
           <node role="init" roleId="c4fa.4185783222026502647" type="mj1l.TrueLiteral" typeId="mj1l.8860443239512128094" id="6500545468170851609" />
           <node role="type" roleId="mj1l.318113533128716676" type="mj1l.BooleanType" typeId="mj1l.8860443239512128058" id="6500545468170851610" />
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type=".com.mbeddr.core.unittest.structure.AssertStatement" id="6500545468170851611">
-          <property name="contextNodeIdD" value="6500545468170851611" />
-          <node role="expr" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170851612">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="6500545468170851611">
+          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="6500545468170851611" />
+          <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170851612">
             <node role="right" roleId="mj1l.8860443239512128065" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="6500545468170851613">
               <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="6500545468170851608" resolveInfo="b" />
             </node>
@@ -3528,9 +3534,9 @@
             </node>
           </node>
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type=".com.mbeddr.core.unittest.structure.AssertStatement" id="6500545468170851615">
-          <property name="contextNodeIdD" value="6500545468170851615" />
-          <node role="expr" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170851616">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="6500545468170851615">
+          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="6500545468170851615" />
+          <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170851616">
             <node role="right" roleId="mj1l.8860443239512128065" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="6500545468170851617">
               <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="6500545468170851605" resolveInfo="a" />
             </node>
@@ -3539,9 +3545,9 @@
             </node>
           </node>
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type=".com.mbeddr.core.unittest.structure.AssertStatement" id="6500545468170851619">
-          <property name="contextNodeIdD" value="6500545468170851619" />
-          <node role="expr" type="mj1l.AndExpression" typeId="mj1l.8399455261460717640" id="6500545468170851620">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="6500545468170851619">
+          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="6500545468170851619" />
+          <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.AndExpression" typeId="mj1l.8399455261460717640" id="6500545468170851620">
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.TrueLiteral" typeId="mj1l.8860443239512128094" id="6500545468170851621" />
             <node role="left" roleId="mj1l.8860443239512128064" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170851622">
               <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.FalseLiteral" typeId="mj1l.8860443239512128099" id="6500545468170851623" />
@@ -3549,9 +3555,9 @@
             </node>
           </node>
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type=".com.mbeddr.core.unittest.structure.AssertStatement" id="6500545468170851625">
-          <property name="contextNodeIdD" value="6500545468170851625" />
-          <node role="expr" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170851626">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="6500545468170851625">
+          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="6500545468170851625" />
+          <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170851626">
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NotExpression" typeId="mj1l.3830958861296781575" id="6500545468170851627">
               <node role="expression" roleId="mj1l.7254843406768839760" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="6500545468170851628">
                 <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="6500545468170851608" resolveInfo="b" />
@@ -3565,12 +3571,12 @@
           </node>
         </node>
       </node>
-      <node role="type" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="6500545468170851631" />
+      <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="6500545468170851631" />
     </node>
-    <node role="contents" type=".com.mbeddr.core.unittest.structure.TestCase" id="6500545468170851632">
-      <property name="exported" value="true" />
-      <property name="name" value="testNotEqualsOperator" />
-      <node role="body" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="6500545468170851633">
+    <node role="contents" roleId="x27k.6437088627575722833" type="yz9a.TestCase" typeId="yz9a.6275792049641586523" id="6500545468170851632">
+      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
+      <property name="name" nameId="tpck.1169194664001" value="testNotEqualsOperator" />
+      <node role="body" roleId="yz9a.6275792049641586525" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="6500545468170851633">
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="6500545468170851634">
           <property name="name" nameId="tpck.1169194664001" value="a" />
           <node role="init" roleId="c4fa.4185783222026502647" type="mj1l.TrueLiteral" typeId="mj1l.8860443239512128094" id="6500545468170851635" />
@@ -3581,9 +3587,9 @@
           <node role="init" roleId="c4fa.4185783222026502647" type="mj1l.FalseLiteral" typeId="mj1l.8860443239512128099" id="6500545468170851638" />
           <node role="type" roleId="mj1l.318113533128716676" type="mj1l.BooleanType" typeId="mj1l.8860443239512128058" id="6500545468170851639" />
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type=".com.mbeddr.core.unittest.structure.AssertStatement" id="6500545468170851640">
-          <property name="contextNodeIdD" value="6500545468170851640" />
-          <node role="expr" type="mj1l.NotEqualsExpression" typeId="mj1l.7615572890648529894" id="6500545468170851641">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="6500545468170851640">
+          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="6500545468170851640" />
+          <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.NotEqualsExpression" typeId="mj1l.7615572890648529894" id="6500545468170851641">
             <node role="left" roleId="mj1l.8860443239512128064" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="6500545468170851642">
               <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="6500545468170851634" resolveInfo="a" />
             </node>
@@ -3592,9 +3598,9 @@
             </node>
           </node>
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type=".com.mbeddr.core.unittest.structure.AssertStatement" id="6500545468170851644">
-          <property name="contextNodeIdD" value="6500545468170851644" />
-          <node role="expr" type="mj1l.NotEqualsExpression" typeId="mj1l.7615572890648529894" id="6500545468170851645">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="6500545468170851644">
+          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="6500545468170851644" />
+          <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.NotEqualsExpression" typeId="mj1l.7615572890648529894" id="6500545468170851645">
             <node role="left" roleId="mj1l.8860443239512128064" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="6500545468170851646">
               <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="6500545468170851637" resolveInfo="b" />
             </node>
@@ -3603,9 +3609,9 @@
             </node>
           </node>
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type=".com.mbeddr.core.unittest.structure.AssertStatement" id="6500545468170851648">
-          <property name="contextNodeIdD" value="6500545468170851648" />
-          <node role="expr" type="mj1l.AndExpression" typeId="mj1l.8399455261460717640" id="6500545468170851649">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="6500545468170851648">
+          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="6500545468170851648" />
+          <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.AndExpression" typeId="mj1l.8399455261460717640" id="6500545468170851649">
             <node role="left" roleId="mj1l.8860443239512128064" type="mj1l.NotEqualsExpression" typeId="mj1l.7615572890648529894" id="6500545468170851650">
               <node role="left" roleId="mj1l.8860443239512128064" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="6500545468170851651">
                 <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="6500545468170851634" resolveInfo="a" />
@@ -3617,9 +3623,9 @@
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.TrueLiteral" typeId="mj1l.8860443239512128094" id="6500545468170851653" />
           </node>
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type=".com.mbeddr.core.unittest.structure.AssertStatement" id="6500545468170851654">
-          <property name="contextNodeIdD" value="6500545468170851654" />
-          <node role="expr" type="mj1l.NotEqualsExpression" typeId="mj1l.7615572890648529894" id="6500545468170851655">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="6500545468170851654">
+          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="6500545468170851654" />
+          <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.NotEqualsExpression" typeId="mj1l.7615572890648529894" id="6500545468170851655">
             <node role="right" roleId="mj1l.8860443239512128065" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="6500545468170851656">
               <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="6500545468170851634" resolveInfo="a" />
             </node>
@@ -3631,12 +3637,12 @@
           </node>
         </node>
       </node>
-      <node role="type" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="6500545468170851659" />
+      <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="6500545468170851659" />
     </node>
-    <node role="contents" type=".com.mbeddr.core.unittest.structure.TestCase" id="6500545468170851660">
-      <property name="exported" value="true" />
-      <property name="name" value="testLessOperator" />
-      <node role="body" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="6500545468170851661">
+    <node role="contents" roleId="x27k.6437088627575722833" type="yz9a.TestCase" typeId="yz9a.6275792049641586523" id="6500545468170851660">
+      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
+      <property name="name" nameId="tpck.1169194664001" value="testLessOperator" />
+      <node role="body" roleId="yz9a.6275792049641586525" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="6500545468170851661">
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="6500545468170851662">
           <property name="name" nameId="tpck.1169194664001" value="a" />
           <node role="init" roleId="c4fa.4185783222026502647" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6500545468170851663">
@@ -3651,9 +3657,9 @@
           </node>
           <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="6500545468170851667" />
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type=".com.mbeddr.core.unittest.structure.AssertStatement" id="6500545468170851668">
-          <property name="contextNodeIdD" value="6500545468170851668" />
-          <node role="expr" type="mj1l.LessExpression" typeId="mj1l.8860443239512147449" id="6500545468170851669">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="6500545468170851668">
+          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="6500545468170851668" />
+          <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.LessExpression" typeId="mj1l.8860443239512147449" id="6500545468170851669">
             <node role="right" roleId="mj1l.8860443239512128065" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="6500545468170851670">
               <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="6500545468170851665" resolveInfo="b" />
             </node>
@@ -3662,9 +3668,9 @@
             </node>
           </node>
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type=".com.mbeddr.core.unittest.structure.AssertStatement" id="6500545468170851672">
-          <property name="contextNodeIdD" value="6500545468170851672" />
-          <node role="expr" type="mj1l.LessExpression" typeId="mj1l.8860443239512147449" id="6500545468170851673">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="6500545468170851672">
+          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="6500545468170851672" />
+          <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.LessExpression" typeId="mj1l.8860443239512147449" id="6500545468170851673">
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.UnaryMinusExpression" typeId="mj1l.3976803464656531170" id="6500545468170851674">
               <node role="expression" roleId="mj1l.7254843406768839760" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="6500545468170851675">
                 <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="6500545468170851662" resolveInfo="a" />
@@ -3677,9 +3683,9 @@
             </node>
           </node>
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type=".com.mbeddr.core.unittest.structure.AssertStatement" id="6500545468170851678">
-          <property name="contextNodeIdD" value="6500545468170851678" />
-          <node role="expr" type="mj1l.LessExpression" typeId="mj1l.8860443239512147449" id="6500545468170851679">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="6500545468170851678">
+          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="6500545468170851678" />
+          <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.LessExpression" typeId="mj1l.8860443239512147449" id="6500545468170851679">
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.PlusExpression" typeId="mj1l.5763383285156373013" id="6500545468170851680">
               <node role="left" roleId="mj1l.8860443239512128064" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6500545468170851681">
                 <property name="value" nameId="mj1l.8860443239512128104" value="9" />
@@ -3693,9 +3699,9 @@
             </node>
           </node>
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type=".com.mbeddr.core.unittest.structure.AssertStatement" id="6500545468170851684">
-          <property name="contextNodeIdD" value="6500545468170851684" />
-          <node role="expr" type="mj1l.LessExpression" typeId="mj1l.8860443239512147449" id="6500545468170851685">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="6500545468170851684">
+          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="6500545468170851684" />
+          <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.LessExpression" typeId="mj1l.8860443239512147449" id="6500545468170851685">
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6500545468170851686">
               <property name="value" nameId="mj1l.8860443239512128104" value="12" />
             </node>
@@ -3709,9 +3715,9 @@
             </node>
           </node>
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type=".com.mbeddr.core.unittest.structure.AssertStatement" id="6500545468170851690">
-          <property name="contextNodeIdD" value="6500545468170851690" />
-          <node role="expr" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170851691">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="6500545468170851690">
+          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="6500545468170851690" />
+          <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170851691">
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.FalseLiteral" typeId="mj1l.8860443239512128099" id="6500545468170851692" />
             <node role="left" roleId="mj1l.8860443239512128064" type="mj1l.LessExpression" typeId="mj1l.8860443239512147449" id="6500545468170851693">
               <node role="left" roleId="mj1l.8860443239512128064" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6500545468170851694">
@@ -3724,12 +3730,12 @@
           </node>
         </node>
       </node>
-      <node role="type" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="6500545468170851696" />
+      <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="6500545468170851696" />
     </node>
-    <node role="contents" type=".com.mbeddr.core.unittest.structure.TestCase" id="6500545468170851697">
-      <property name="exported" value="true" />
-      <property name="name" value="testLessEqualsOperator" />
-      <node role="body" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="6500545468170851698">
+    <node role="contents" roleId="x27k.6437088627575722833" type="yz9a.TestCase" typeId="yz9a.6275792049641586523" id="6500545468170851697">
+      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
+      <property name="name" nameId="tpck.1169194664001" value="testLessEqualsOperator" />
+      <node role="body" roleId="yz9a.6275792049641586525" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="6500545468170851698">
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="6500545468170851699">
           <property name="name" nameId="tpck.1169194664001" value="a" />
           <node role="init" roleId="c4fa.4185783222026502647" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6500545468170851700">
@@ -3751,9 +3757,9 @@
           </node>
           <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="6500545468170851707" />
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type=".com.mbeddr.core.unittest.structure.AssertStatement" id="6500545468170851708">
-          <property name="contextNodeIdD" value="6500545468170851708" />
-          <node role="expr" type="mj1l.LessEqualsExpression" typeId="mj1l.8860443239512147451" id="6500545468170851709">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="6500545468170851708">
+          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="6500545468170851708" />
+          <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.LessEqualsExpression" typeId="mj1l.8860443239512147451" id="6500545468170851709">
             <node role="right" roleId="mj1l.8860443239512128065" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="6500545468170851710">
               <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="6500545468170851705" resolveInfo="c" />
             </node>
@@ -3762,9 +3768,9 @@
             </node>
           </node>
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type=".com.mbeddr.core.unittest.structure.AssertStatement" id="6500545468170851712">
-          <property name="contextNodeIdD" value="6500545468170851712" />
-          <node role="expr" type="mj1l.LessEqualsExpression" typeId="mj1l.8860443239512147451" id="6500545468170851713">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="6500545468170851712">
+          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="6500545468170851712" />
+          <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.LessEqualsExpression" typeId="mj1l.8860443239512147451" id="6500545468170851713">
             <node role="right" roleId="mj1l.8860443239512128065" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="6500545468170851714">
               <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="6500545468170851702" resolveInfo="b" />
             </node>
@@ -3773,9 +3779,9 @@
             </node>
           </node>
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type=".com.mbeddr.core.unittest.structure.AssertStatement" id="6500545468170851716">
-          <property name="contextNodeIdD" value="6500545468170851716" />
-          <node role="expr" type="mj1l.LessEqualsExpression" typeId="mj1l.8860443239512147451" id="6500545468170851717">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="6500545468170851716">
+          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="6500545468170851716" />
+          <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.LessEqualsExpression" typeId="mj1l.8860443239512147451" id="6500545468170851717">
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.PlusExpression" typeId="mj1l.5763383285156373013" id="6500545468170851718">
               <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6500545468170851719">
                 <property name="value" nameId="mj1l.8860443239512128104" value="10" />
@@ -3790,12 +3796,12 @@
           </node>
         </node>
       </node>
-      <node role="type" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="6500545468170851722" />
+      <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="6500545468170851722" />
     </node>
-    <node role="contents" type=".com.mbeddr.core.unittest.structure.TestCase" id="6500545468170851723">
-      <property name="exported" value="true" />
-      <property name="name" value="testGreaterOperator" />
-      <node role="body" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="6500545468170851724">
+    <node role="contents" roleId="x27k.6437088627575722833" type="yz9a.TestCase" typeId="yz9a.6275792049641586523" id="6500545468170851723">
+      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
+      <property name="name" nameId="tpck.1169194664001" value="testGreaterOperator" />
+      <node role="body" roleId="yz9a.6275792049641586525" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="6500545468170851724">
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="6500545468170851725">
           <property name="name" nameId="tpck.1169194664001" value="a" />
           <node role="init" roleId="c4fa.4185783222026502647" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6500545468170851726">
@@ -3810,9 +3816,9 @@
           </node>
           <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="6500545468170851730" />
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type=".com.mbeddr.core.unittest.structure.AssertStatement" id="6500545468170851731">
-          <property name="contextNodeIdD" value="6500545468170851731" />
-          <node role="expr" type="mj1l.GreaterExpression" typeId="mj1l.8860443239512147445" id="6500545468170851732">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="6500545468170851731">
+          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="6500545468170851731" />
+          <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.GreaterExpression" typeId="mj1l.8860443239512147445" id="6500545468170851732">
             <node role="right" roleId="mj1l.8860443239512128065" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="6500545468170851733">
               <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="6500545468170851725" resolveInfo="a" />
             </node>
@@ -3821,9 +3827,9 @@
             </node>
           </node>
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type=".com.mbeddr.core.unittest.structure.AssertStatement" id="6500545468170851735">
-          <property name="contextNodeIdD" value="6500545468170851735" />
-          <node role="expr" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170851736">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="6500545468170851735">
+          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="6500545468170851735" />
+          <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170851736">
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.FalseLiteral" typeId="mj1l.8860443239512128099" id="6500545468170851737" />
             <node role="left" roleId="mj1l.8860443239512128064" type="mj1l.GreaterExpression" typeId="mj1l.8860443239512147445" id="6500545468170851738">
               <node role="left" roleId="mj1l.8860443239512128064" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="6500545468170851739">
@@ -3835,9 +3841,9 @@
             </node>
           </node>
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type=".com.mbeddr.core.unittest.structure.AssertStatement" id="6500545468170851741">
-          <property name="contextNodeIdD" value="6500545468170851741" />
-          <node role="expr" type="mj1l.GreaterExpression" typeId="mj1l.8860443239512147445" id="6500545468170851742">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="6500545468170851741">
+          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="6500545468170851741" />
+          <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.GreaterExpression" typeId="mj1l.8860443239512147445" id="6500545468170851742">
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.UnaryMinusExpression" typeId="mj1l.3976803464656531170" id="6500545468170851743">
               <node role="expression" roleId="mj1l.7254843406768839760" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="6500545468170851744">
                 <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="6500545468170851728" resolveInfo="b" />
@@ -3851,12 +3857,12 @@
           </node>
         </node>
       </node>
-      <node role="type" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="6500545468170851747" />
+      <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="6500545468170851747" />
     </node>
-    <node role="contents" type=".com.mbeddr.core.unittest.structure.TestCase" id="6500545468170851748">
-      <property name="exported" value="true" />
-      <property name="name" value="testGreaterEqualsOperator" />
-      <node role="body" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="6500545468170851749">
+    <node role="contents" roleId="x27k.6437088627575722833" type="yz9a.TestCase" typeId="yz9a.6275792049641586523" id="6500545468170851748">
+      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
+      <property name="name" nameId="tpck.1169194664001" value="testGreaterEqualsOperator" />
+      <node role="body" roleId="yz9a.6275792049641586525" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="6500545468170851749">
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="6500545468170851750">
           <property name="name" nameId="tpck.1169194664001" value="a" />
           <node role="init" roleId="c4fa.4185783222026502647" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6500545468170851751">
@@ -3871,9 +3877,9 @@
           </node>
           <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="6500545468170851755" />
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type=".com.mbeddr.core.unittest.structure.AssertStatement" id="6500545468170851756">
-          <property name="contextNodeIdD" value="6500545468170851756" />
-          <node role="expr" type="mj1l.GreaterEqualsExpression" typeId="mj1l.8860443239512147447" id="6500545468170851757">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="6500545468170851756">
+          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="6500545468170851756" />
+          <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.GreaterEqualsExpression" typeId="mj1l.8860443239512147447" id="6500545468170851757">
             <node role="right" roleId="mj1l.8860443239512128065" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="6500545468170851758">
               <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="6500545468170851750" resolveInfo="a" />
             </node>
@@ -3882,9 +3888,9 @@
             </node>
           </node>
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type=".com.mbeddr.core.unittest.structure.AssertStatement" id="6500545468170851760">
-          <property name="contextNodeIdD" value="6500545468170851760" />
-          <node role="expr" type="mj1l.GreaterEqualsExpression" typeId="mj1l.8860443239512147447" id="6500545468170851761">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="6500545468170851760">
+          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="6500545468170851760" />
+          <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.GreaterEqualsExpression" typeId="mj1l.8860443239512147447" id="6500545468170851761">
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.PlusExpression" typeId="mj1l.5763383285156373013" id="6500545468170851762">
               <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6500545468170851763">
                 <property name="value" nameId="mj1l.8860443239512128104" value="10" />
@@ -3898,9 +3904,9 @@
             </node>
           </node>
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type=".com.mbeddr.core.unittest.structure.AssertStatement" id="6500545468170851766">
-          <property name="contextNodeIdD" value="6500545468170851766" />
-          <node role="expr" type="mj1l.GreaterEqualsExpression" typeId="mj1l.8860443239512147447" id="6500545468170851767">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="6500545468170851766">
+          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="6500545468170851766" />
+          <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.GreaterEqualsExpression" typeId="mj1l.8860443239512147447" id="6500545468170851767">
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.UnaryMinusExpression" typeId="mj1l.3976803464656531170" id="6500545468170851768">
               <node role="expression" roleId="mj1l.7254843406768839760" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="6500545468170851769">
                 <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="6500545468170851753" resolveInfo="b" />
@@ -3914,12 +3920,12 @@
           </node>
         </node>
       </node>
-      <node role="type" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="6500545468170851772" />
+      <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="6500545468170851772" />
     </node>
-    <node role="contents" type=".com.mbeddr.core.unittest.structure.TestCase" id="6500545468170851773">
-      <property name="exported" value="true" />
-      <property name="name" value="testPlusOperator" />
-      <node role="body" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="6500545468170851774">
+    <node role="contents" roleId="x27k.6437088627575722833" type="yz9a.TestCase" typeId="yz9a.6275792049641586523" id="6500545468170851773">
+      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
+      <property name="name" nameId="tpck.1169194664001" value="testPlusOperator" />
+      <node role="body" roleId="yz9a.6275792049641586525" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="6500545468170851774">
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="6500545468170851775">
           <property name="name" nameId="tpck.1169194664001" value="a" />
           <node role="init" roleId="c4fa.4185783222026502647" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6500545468170851776">
@@ -3934,9 +3940,9 @@
           </node>
           <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="6500545468170851780" />
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type=".com.mbeddr.core.unittest.structure.AssertStatement" id="6500545468170851781">
-          <property name="contextNodeIdD" value="6500545468170851781" />
-          <node role="expr" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170851782">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="6500545468170851781">
+          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="6500545468170851781" />
+          <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170851782">
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6500545468170851783">
               <property name="value" nameId="mj1l.8860443239512128104" value="8" />
             </node>
@@ -3950,9 +3956,9 @@
             </node>
           </node>
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type=".com.mbeddr.core.unittest.structure.AssertStatement" id="6500545468170851787">
-          <property name="contextNodeIdD" value="6500545468170851787" />
-          <node role="expr" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170851788">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="6500545468170851787">
+          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="6500545468170851787" />
+          <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170851788">
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6500545468170851789">
               <property name="value" nameId="mj1l.8860443239512128104" value="1" />
             </node>
@@ -3971,9 +3977,9 @@
             </node>
           </node>
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type=".com.mbeddr.core.unittest.structure.AssertStatement" id="6500545468170851795">
-          <property name="contextNodeIdD" value="6500545468170851795" />
-          <node role="expr" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170851796">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="6500545468170851795">
+          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="6500545468170851795" />
+          <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170851796">
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6500545468170851797">
               <property name="value" nameId="mj1l.8860443239512128104" value="16" />
             </node>
@@ -3993,12 +3999,12 @@
           </node>
         </node>
       </node>
-      <node role="type" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="6500545468170851803" />
+      <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="6500545468170851803" />
     </node>
-    <node role="contents" type=".com.mbeddr.core.unittest.structure.TestCase" id="6500545468170851804">
-      <property name="exported" value="true" />
-      <property name="name" value="testMinusOperator" />
-      <node role="body" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="6500545468170851805">
+    <node role="contents" roleId="x27k.6437088627575722833" type="yz9a.TestCase" typeId="yz9a.6275792049641586523" id="6500545468170851804">
+      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
+      <property name="name" nameId="tpck.1169194664001" value="testMinusOperator" />
+      <node role="body" roleId="yz9a.6275792049641586525" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="6500545468170851805">
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="6500545468170851806">
           <property name="name" nameId="tpck.1169194664001" value="a" />
           <node role="init" roleId="c4fa.4185783222026502647" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6500545468170851807">
@@ -4013,9 +4019,9 @@
           </node>
           <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="6500545468170851811" />
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type=".com.mbeddr.core.unittest.structure.AssertStatement" id="6500545468170851812">
-          <property name="contextNodeIdD" value="6500545468170851812" />
-          <node role="expr" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170851813">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="6500545468170851812">
+          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="6500545468170851812" />
+          <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170851813">
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6500545468170851814">
               <property name="value" nameId="mj1l.8860443239512128104" value="10" />
             </node>
@@ -4029,9 +4035,9 @@
             </node>
           </node>
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type=".com.mbeddr.core.unittest.structure.AssertStatement" id="6500545468170851818">
-          <property name="contextNodeIdD" value="6500545468170851818" />
-          <node role="expr" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170851819">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="6500545468170851818">
+          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="6500545468170851818" />
+          <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170851819">
             <node role="right" roleId="mj1l.8860443239512128065" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="6500545468170851820">
               <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="6500545468170851806" resolveInfo="a" />
             </node>
@@ -4050,9 +4056,9 @@
             </node>
           </node>
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type=".com.mbeddr.core.unittest.structure.AssertStatement" id="6500545468170851826">
-          <property name="contextNodeIdD" value="6500545468170851826" />
-          <node role="expr" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170851827">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="6500545468170851826">
+          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="6500545468170851826" />
+          <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170851827">
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.PlusExpression" typeId="mj1l.5763383285156373013" id="6500545468170851828">
               <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.MultiExpression" typeId="mj1l.5763383285156373020" id="6500545468170851829">
                 <node role="right" roleId="mj1l.8860443239512128065" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="6500545468170851830">
@@ -4083,9 +4089,9 @@
             </node>
           </node>
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type=".com.mbeddr.core.unittest.structure.AssertStatement" id="6500545468170851839">
-          <property name="contextNodeIdD" value="6500545468170851839" />
-          <node role="expr" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170851840">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="6500545468170851839">
+          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="6500545468170851839" />
+          <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170851840">
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6500545468170851841">
               <property name="value" nameId="mj1l.8860443239512128104" value="16" />
             </node>
@@ -4105,12 +4111,12 @@
           </node>
         </node>
       </node>
-      <node role="type" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="6500545468170851847" />
+      <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="6500545468170851847" />
     </node>
-    <node role="contents" type=".com.mbeddr.core.unittest.structure.TestCase" id="6500545468170851848">
-      <property name="exported" value="true" />
-      <property name="name" value="testMultOperator" />
-      <node role="body" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="6500545468170851849">
+    <node role="contents" roleId="x27k.6437088627575722833" type="yz9a.TestCase" typeId="yz9a.6275792049641586523" id="6500545468170851848">
+      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
+      <property name="name" nameId="tpck.1169194664001" value="testMultOperator" />
+      <node role="body" roleId="yz9a.6275792049641586525" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="6500545468170851849">
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="6500545468170851850">
           <property name="name" nameId="tpck.1169194664001" value="a" />
           <node role="init" roleId="c4fa.4185783222026502647" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6500545468170851851">
@@ -4125,9 +4131,9 @@
           </node>
           <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="6500545468170851855" />
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type=".com.mbeddr.core.unittest.structure.AssertStatement" id="6500545468170851856">
-          <property name="contextNodeIdD" value="6500545468170851856" />
-          <node role="expr" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170851857">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="6500545468170851856">
+          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="6500545468170851856" />
+          <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170851857">
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6500545468170851858">
               <property name="value" nameId="mj1l.8860443239512128104" value="200" />
             </node>
@@ -4141,9 +4147,9 @@
             </node>
           </node>
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type=".com.mbeddr.core.unittest.structure.AssertStatement" id="6500545468170851862">
-          <property name="contextNodeIdD" value="6500545468170851862" />
-          <node role="expr" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170851863">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="6500545468170851862">
+          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="6500545468170851862" />
+          <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170851863">
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6500545468170851864">
               <property name="value" nameId="mj1l.8860443239512128104" value="210" />
             </node>
@@ -4162,9 +4168,9 @@
             </node>
           </node>
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type=".com.mbeddr.core.unittest.structure.AssertStatement" id="6500545468170851870">
-          <property name="contextNodeIdD" value="6500545468170851870" />
-          <node role="expr" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170851871">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="6500545468170851870">
+          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="6500545468170851870" />
+          <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170851871">
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6500545468170851872">
               <property name="value" nameId="mj1l.8860443239512128104" value="210" />
             </node>
@@ -4183,9 +4189,9 @@
             </node>
           </node>
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type=".com.mbeddr.core.unittest.structure.AssertStatement" id="6500545468170851878">
-          <property name="contextNodeIdD" value="6500545468170851878" />
-          <node role="expr" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170851879">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="6500545468170851878">
+          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="6500545468170851878" />
+          <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170851879">
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6500545468170851880">
               <property name="value" nameId="mj1l.8860443239512128104" value="210" />
             </node>
@@ -4204,12 +4210,12 @@
           </node>
         </node>
       </node>
-      <node role="type" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="6500545468170851886" />
+      <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="6500545468170851886" />
     </node>
-    <node role="contents" type=".com.mbeddr.core.unittest.structure.TestCase" id="6500545468170851887">
-      <property name="exported" value="true" />
-      <property name="name" value="testDivOperator" />
-      <node role="body" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="6500545468170851888">
+    <node role="contents" roleId="x27k.6437088627575722833" type="yz9a.TestCase" typeId="yz9a.6275792049641586523" id="6500545468170851887">
+      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
+      <property name="name" nameId="tpck.1169194664001" value="testDivOperator" />
+      <node role="body" roleId="yz9a.6275792049641586525" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="6500545468170851888">
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="6500545468170851889">
           <property name="name" nameId="tpck.1169194664001" value="a" />
           <node role="init" roleId="c4fa.4185783222026502647" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6500545468170851890">
@@ -4224,9 +4230,9 @@
           </node>
           <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="6500545468170851894" />
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type=".com.mbeddr.core.unittest.structure.AssertStatement" id="6500545468170851895">
-          <property name="contextNodeIdD" value="6500545468170851895" />
-          <node role="expr" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170851896">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="6500545468170851895">
+          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="6500545468170851895" />
+          <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170851896">
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6500545468170851897">
               <property name="value" nameId="mj1l.8860443239512128104" value="2" />
             </node>
@@ -4240,9 +4246,9 @@
             </node>
           </node>
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type=".com.mbeddr.core.unittest.structure.AssertStatement" id="6500545468170851901">
-          <property name="contextNodeIdD" value="6500545468170851901" />
-          <node role="expr" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170851902">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="6500545468170851901">
+          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="6500545468170851901" />
+          <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170851902">
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6500545468170851903">
               <property name="value" nameId="mj1l.8860443239512128104" value="12" />
             </node>
@@ -4261,9 +4267,9 @@
             </node>
           </node>
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type=".com.mbeddr.core.unittest.structure.AssertStatement" id="6500545468170851909">
-          <property name="contextNodeIdD" value="6500545468170851909" />
-          <node role="expr" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170851910">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="6500545468170851909">
+          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="6500545468170851909" />
+          <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170851910">
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6500545468170851911">
               <property name="value" nameId="mj1l.8860443239512128104" value="12" />
             </node>
@@ -4282,9 +4288,9 @@
             </node>
           </node>
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type=".com.mbeddr.core.unittest.structure.AssertStatement" id="6500545468170851917">
-          <property name="contextNodeIdD" value="6500545468170851917" />
-          <node role="expr" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170851918">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="6500545468170851917">
+          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="6500545468170851917" />
+          <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170851918">
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6500545468170851919">
               <property name="value" nameId="mj1l.8860443239512128104" value="2" />
             </node>
@@ -4303,12 +4309,12 @@
           </node>
         </node>
       </node>
-      <node role="type" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="6500545468170851925" />
+      <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="6500545468170851925" />
     </node>
-    <node role="contents" type=".com.mbeddr.core.unittest.structure.TestCase" id="6500545468170851926">
-      <property name="exported" value="true" />
-      <property name="name" value="testStrangePrios" />
-      <node role="body" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="6500545468170851927">
+    <node role="contents" roleId="x27k.6437088627575722833" type="yz9a.TestCase" typeId="yz9a.6275792049641586523" id="6500545468170851926">
+      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
+      <property name="name" nameId="tpck.1169194664001" value="testStrangePrios" />
+      <node role="body" roleId="yz9a.6275792049641586525" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="6500545468170851927">
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="6500545468170851928">
           <property name="name" nameId="tpck.1169194664001" value="a" />
           <node role="init" roleId="c4fa.4185783222026502647" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6500545468170851929">
@@ -4323,9 +4329,9 @@
             <property name="value" nameId="mj1l.8860443239512128104" value="1" />
           </node>
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type=".com.mbeddr.core.unittest.structure.AssertStatement" id="6500545468170851934">
-          <property name="contextNodeIdD" value="6500545468170851934" />
-          <node role="expr" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170851935">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="6500545468170851934">
+          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="6500545468170851934" />
+          <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170851935">
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6500545468170851936">
               <property name="value" nameId="mj1l.8860443239512128104" value="1" />
             </node>
@@ -4340,7 +4346,7 @@
           </node>
         </node>
       </node>
-      <node role="type" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="6500545468170851940" />
+      <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="6500545468170851940" />
     </node>
   </root>
   <root id="6500545468170851941">
@@ -4398,43 +4404,43 @@
     <node role="pointerDiffType" roleId="mj1l.3813668170744198630" type="mj1l.Int32tType" typeId="mj1l.8463282783691618440" id="6500545468170851973" />
   </root>
   <root id="6500545468170851974">
-    <node role="contents" type=".com.mbeddr.core.udt.structure.StructDeclaration" id="6500545468170851975">
-      <property name="name" value="Point" />
-      <node role="members" type=".com.mbeddr.core.udt.structure.Member" id="6500545468170851976">
-        <property name="name" value="x" />
-        <node role="type" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="6500545468170851977" />
+    <node role="contents" roleId="x27k.6437088627575722833" type="clbe.StructDeclaration" typeId="clbe.6394819151180597807" id="6500545468170851975">
+      <property name="name" nameId="tpck.1169194664001" value="Point" />
+      <node role="members" roleId="clbe.7099329415459888018" type="clbe.Member" typeId="clbe.5882395403881875736" id="6500545468170851976">
+        <property name="name" nameId="tpck.1169194664001" value="x" />
+        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="6500545468170851977" />
       </node>
-      <node role="members" type=".com.mbeddr.core.udt.structure.Member" id="6500545468170851978">
-        <property name="name" value="y" />
-        <node role="type" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="6500545468170851979" />
+      <node role="members" roleId="clbe.7099329415459888018" type="clbe.Member" typeId="clbe.5882395403881875736" id="6500545468170851978">
+        <property name="name" nameId="tpck.1169194664001" value="y" />
+        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="6500545468170851979" />
       </node>
     </node>
-    <node role="contents" type=".com.mbeddr.core.modules.structure.Function" id="6500545468170851980">
-      <property name="name" value="simpleReturn" />
-      <node role="body" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="6500545468170851981">
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="6500545468170851980">
+      <property name="name" nameId="tpck.1169194664001" value="simpleReturn" />
+      <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="6500545468170851981">
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="6500545468170851982">
           <property name="name" nameId="tpck.1169194664001" value="returnValue" />
-          <node role="init" roleId="c4fa.4185783222026502647" type=".com.mbeddr.core.modules.structure.ArgumentRef" id="6500545468170851983">
-            <link role="arg" targetNodeId="6500545468170851988" resolveInfo="value" />
+          <node role="init" roleId="c4fa.4185783222026502647" type="x27k.ArgumentRef" typeId="x27k.2093108837558505658" id="6500545468170851983">
+            <link role="arg" roleId="x27k.2093108837558505659" targetNodeId="6500545468170851988" resolveInfo="value" />
           </node>
           <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="6500545468170851984" />
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type=".com.mbeddr.core.modules.structure.ReturnStatement" id="6500545468170851985">
-          <node role="expression" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="6500545468170851986">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="x27k.ReturnStatement" typeId="x27k.8967919205527146149" id="6500545468170851985">
+          <node role="expression" roleId="x27k.8967919205527146150" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="6500545468170851986">
             <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="6500545468170851982" resolveInfo="returnValue" />
           </node>
         </node>
       </node>
-      <node role="type" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="6500545468170851987" />
-      <node role="arguments" type=".com.mbeddr.core.modules.structure.Argument" id="6500545468170851988">
-        <property name="name" value="value" />
-        <node role="type" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="6500545468170851989" />
+      <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="6500545468170851987" />
+      <node role="arguments" roleId="x27k.5708867820623310661" type="x27k.Argument" typeId="x27k.7892328519581704407" id="6500545468170851988">
+        <property name="name" nameId="tpck.1169194664001" value="value" />
+        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="6500545468170851989" />
       </node>
     </node>
-    <node role="contents" type=".com.mbeddr.core.unittest.structure.TestCase" id="6500545468170851990">
-      <property name="exported" value="true" />
-      <property name="name" value="testUnaryOperatorOnArray" />
-      <node role="body" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="6500545468170851991">
+    <node role="contents" roleId="x27k.6437088627575722833" type="yz9a.TestCase" typeId="yz9a.6275792049641586523" id="6500545468170851990">
+      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
+      <property name="name" nameId="tpck.1169194664001" value="testUnaryOperatorOnArray" />
+      <node role="body" roleId="yz9a.6275792049641586525" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="6500545468170851991">
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="6500545468170851992">
           <property name="name" nameId="tpck.1169194664001" value="testArray" />
           <node role="init" roleId="c4fa.4185783222026502647" type="c4fa.ArrayInitExpression" typeId="c4fa.5095889050031622570" id="6500545468170851993">
@@ -4449,9 +4455,9 @@
             </node>
           </node>
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type=".com.mbeddr.core.unittest.structure.AssertStatement" id="6500545468170851998">
-          <property name="contextNodeIdD" value="6500545468170851998" />
-          <node role="expr" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170851999">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="6500545468170851998">
+          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="6500545468170851998" />
+          <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170851999">
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6500545468170852000">
               <property name="value" nameId="mj1l.8860443239512128104" value="-10" />
             </node>
@@ -4468,42 +4474,42 @@
           </node>
         </node>
       </node>
-      <node role="type" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="6500545468170852005" />
+      <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="6500545468170852005" />
     </node>
-    <node role="contents" type=".com.mbeddr.core.unittest.structure.TestCase" id="6500545468170852006">
-      <property name="exported" value="true" />
-      <property name="name" value="testUnaryOperatorOnFunction" />
-      <node role="body" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="6500545468170852007">
-        <node role="statements" roleId="c4fa.4185783222026475862" type=".com.mbeddr.core.unittest.structure.AssertStatement" id="6500545468170852008">
-          <property name="contextNodeIdD" value="6500545468170852008" />
-          <node role="expr" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170852009">
+    <node role="contents" roleId="x27k.6437088627575722833" type="yz9a.TestCase" typeId="yz9a.6275792049641586523" id="6500545468170852006">
+      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
+      <property name="name" nameId="tpck.1169194664001" value="testUnaryOperatorOnFunction" />
+      <node role="body" roleId="yz9a.6275792049641586525" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="6500545468170852007">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="6500545468170852008">
+          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="6500545468170852008" />
+          <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170852009">
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6500545468170852010">
               <property name="value" nameId="mj1l.8860443239512128104" value="-10" />
             </node>
             <node role="left" roleId="mj1l.8860443239512128064" type="mj1l.UnaryMinusExpression" typeId="mj1l.3976803464656531170" id="6500545468170852011">
-              <node role="expression" roleId="mj1l.7254843406768839760" type=".com.mbeddr.core.modules.structure.FunctionCall" id="6500545468170852012">
-                <link role="function" targetNodeId="6500545468170851980" resolveInfo="simpleReturn" />
-                <node role="actuals" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6500545468170852013">
+              <node role="expression" roleId="mj1l.7254843406768839760" type="x27k.FunctionCall" typeId="x27k.5950410542643524492" id="6500545468170852012">
+                <link role="function" roleId="x27k.5950410542643524493" targetNodeId="6500545468170851980" resolveInfo="simpleReturn" />
+                <node role="actuals" roleId="x27k.5950410542643524495" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6500545468170852013">
                   <property name="value" nameId="mj1l.8860443239512128104" value="10" />
                 </node>
               </node>
             </node>
           </node>
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type=".com.mbeddr.core.unittest.structure.AssertStatement" id="6500545468170852014">
-          <property name="contextNodeIdD" value="6500545468170852014" />
-          <node role="expr" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170852015">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="6500545468170852014">
+          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="6500545468170852014" />
+          <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170852015">
             <node role="left" roleId="mj1l.8860443239512128064" type="mj1l.PlusExpression" typeId="mj1l.5763383285156373013" id="6500545468170852016">
-              <node role="right" roleId="mj1l.8860443239512128065" type=".com.mbeddr.core.modules.structure.FunctionCall" id="6500545468170852017">
-                <link role="function" targetNodeId="6500545468170851980" resolveInfo="simpleReturn" />
-                <node role="actuals" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6500545468170852018">
+              <node role="right" roleId="mj1l.8860443239512128065" type="x27k.FunctionCall" typeId="x27k.5950410542643524492" id="6500545468170852017">
+                <link role="function" roleId="x27k.5950410542643524493" targetNodeId="6500545468170851980" resolveInfo="simpleReturn" />
+                <node role="actuals" roleId="x27k.5950410542643524495" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6500545468170852018">
                   <property name="value" nameId="mj1l.8860443239512128104" value="10" />
                 </node>
               </node>
               <node role="left" roleId="mj1l.8860443239512128064" type="mj1l.UnaryMinusExpression" typeId="mj1l.3976803464656531170" id="6500545468170852019">
-                <node role="expression" roleId="mj1l.7254843406768839760" type=".com.mbeddr.core.modules.structure.FunctionCall" id="6500545468170852020">
-                  <link role="function" targetNodeId="6500545468170851980" resolveInfo="simpleReturn" />
-                  <node role="actuals" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6500545468170852021">
+                <node role="expression" roleId="mj1l.7254843406768839760" type="x27k.FunctionCall" typeId="x27k.5950410542643524492" id="6500545468170852020">
+                  <link role="function" roleId="x27k.5950410542643524493" targetNodeId="6500545468170851980" resolveInfo="simpleReturn" />
+                  <node role="actuals" roleId="x27k.5950410542643524495" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6500545468170852021">
                     <property name="value" nameId="mj1l.8860443239512128104" value="10" />
                   </node>
                 </node>
@@ -4517,9 +4523,9 @@
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="6500545468170852023">
           <property name="name" nameId="tpck.1169194664001" value="c" />
           <node role="init" roleId="c4fa.4185783222026502647" type="mj1l.UnaryMinusExpression" typeId="mj1l.3976803464656531170" id="6500545468170852024">
-            <node role="expression" roleId="mj1l.7254843406768839760" type=".com.mbeddr.core.modules.structure.FunctionCall" id="6500545468170852025">
-              <link role="function" targetNodeId="6500545468170851980" resolveInfo="simpleReturn" />
-              <node role="actuals" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6500545468170852026">
+            <node role="expression" roleId="mj1l.7254843406768839760" type="x27k.FunctionCall" typeId="x27k.5950410542643524492" id="6500545468170852025">
+              <link role="function" roleId="x27k.5950410542643524493" targetNodeId="6500545468170851980" resolveInfo="simpleReturn" />
+              <node role="actuals" roleId="x27k.5950410542643524495" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6500545468170852026">
                 <property name="value" nameId="mj1l.8860443239512128104" value="10" />
               </node>
             </node>
@@ -4528,26 +4534,26 @@
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="6500545468170852028" />
       </node>
-      <node role="type" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="6500545468170852029" />
+      <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="6500545468170852029" />
     </node>
-    <node role="contents" type=".com.mbeddr.core.unittest.structure.TestCase" id="6500545468170852030">
-      <property name="exported" value="true" />
-      <property name="name" value="testUnaryOperatorOnPointerDeref" />
-      <node role="body" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="6500545468170852031">
+    <node role="contents" roleId="x27k.6437088627575722833" type="yz9a.TestCase" typeId="yz9a.6275792049641586523" id="6500545468170852030">
+      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
+      <property name="name" nameId="tpck.1169194664001" value="testUnaryOperatorOnPointerDeref" />
+      <node role="body" roleId="yz9a.6275792049641586525" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="6500545468170852031">
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="6500545468170852032">
           <property name="name" nameId="tpck.1169194664001" value="p" />
-          <node role="type" roleId="mj1l.318113533128716676" type=".com.mbeddr.core.udt.structure.StructType" id="6500545468170852033">
-            <link role="struct" targetNodeId="6500545468170851975" resolveInfo="Point" />
+          <node role="type" roleId="mj1l.318113533128716676" type="clbe.StructType" typeId="clbe.6394819151180597816" id="6500545468170852033">
+            <link role="struct" roleId="clbe.6394819151180597817" targetNodeId="6500545468170851975" resolveInfo="Point" />
           </node>
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="6500545468170852034">
           <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.AssignmentExpr" typeId="mj1l.22102029902365709" id="6500545468170852035">
-            <node role="left" roleId="mj1l.8860443239512128064" type=".com.mbeddr.core.udt.structure.SUDotExpression" id="6500545468170852036">
-              <node role="expression" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="6500545468170852037">
+            <node role="left" roleId="mj1l.8860443239512128064" type="clbe.SUDotExpression" typeId="clbe.7063398228162529566" id="6500545468170852036">
+              <node role="expression" roleId="mj1l.7254843406768839760" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="6500545468170852037">
                 <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="6500545468170852032" resolveInfo="p" />
               </node>
-              <node role="member" type=".com.mbeddr.core.udt.structure.MemberRef" id="6500545468170852038">
-                <link role="member" targetNodeId="6500545468170851976" resolveInfo="x" />
+              <node role="member" roleId="mj1l.1452920870317550651" type="clbe.MemberRef" typeId="clbe.7099329415460395995" id="6500545468170852038">
+                <link role="member" roleId="clbe.7099329415460397525" targetNodeId="6500545468170851976" resolveInfo="x" />
               </node>
             </node>
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6500545468170852039">
@@ -4555,60 +4561,60 @@
             </node>
           </node>
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type=".com.mbeddr.core.unittest.structure.AssertStatement" id="6500545468170852040">
-          <property name="contextNodeIdD" value="6500545468170852040" />
-          <node role="expr" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170852041">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="6500545468170852040">
+          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="6500545468170852040" />
+          <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170852041">
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6500545468170852042">
               <property name="value" nameId="mj1l.8860443239512128104" value="-10" />
             </node>
             <node role="left" roleId="mj1l.8860443239512128064" type="mj1l.UnaryMinusExpression" typeId="mj1l.3976803464656531170" id="6500545468170852043">
-              <node role="expression" roleId="mj1l.7254843406768839760" type=".com.mbeddr.core.udt.structure.SUDotExpression" id="6500545468170852044">
-                <node role="expression" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="6500545468170852045">
+              <node role="expression" roleId="mj1l.7254843406768839760" type="clbe.SUDotExpression" typeId="clbe.7063398228162529566" id="6500545468170852044">
+                <node role="expression" roleId="mj1l.7254843406768839760" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="6500545468170852045">
                   <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="6500545468170852032" resolveInfo="p" />
                 </node>
-                <node role="member" type=".com.mbeddr.core.udt.structure.MemberRef" id="6500545468170852046">
-                  <link role="member" targetNodeId="6500545468170851976" resolveInfo="x" />
+                <node role="member" roleId="mj1l.1452920870317550651" type="clbe.MemberRef" typeId="clbe.7099329415460395995" id="6500545468170852046">
+                  <link role="member" roleId="clbe.7099329415460397525" targetNodeId="6500545468170851976" resolveInfo="x" />
                 </node>
               </node>
             </node>
           </node>
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type=".com.mbeddr.core.unittest.structure.AssertStatement" id="6500545468170852047">
-          <property name="contextNodeIdD" value="6500545468170852047" />
-          <node role="expr" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170852048">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="6500545468170852047">
+          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="6500545468170852047" />
+          <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170852048">
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6500545468170852049">
               <property name="value" nameId="mj1l.8860443239512128104" value="10" />
             </node>
             <node role="left" roleId="mj1l.8860443239512128064" type="mj1l.PostIncrementExpression" typeId="mj1l.4375898003726285486" id="6500545468170852050">
-              <node role="expression" roleId="mj1l.7254843406768839760" type=".com.mbeddr.core.udt.structure.SUDotExpression" id="6500545468170852051">
-                <node role="expression" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="6500545468170852052">
+              <node role="expression" roleId="mj1l.7254843406768839760" type="clbe.SUDotExpression" typeId="clbe.7063398228162529566" id="6500545468170852051">
+                <node role="expression" roleId="mj1l.7254843406768839760" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="6500545468170852052">
                   <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="6500545468170852032" resolveInfo="p" />
                 </node>
-                <node role="member" type=".com.mbeddr.core.udt.structure.MemberRef" id="6500545468170852053">
-                  <link role="member" targetNodeId="6500545468170851976" resolveInfo="x" />
+                <node role="member" roleId="mj1l.1452920870317550651" type="clbe.MemberRef" typeId="clbe.7099329415460395995" id="6500545468170852053">
+                  <link role="member" roleId="clbe.7099329415460397525" targetNodeId="6500545468170851976" resolveInfo="x" />
                 </node>
               </node>
             </node>
           </node>
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type=".com.mbeddr.core.unittest.structure.AssertStatement" id="6500545468170852054">
-          <property name="contextNodeIdD" value="6500545468170852054" />
-          <node role="expr" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170852055">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="6500545468170852054">
+          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="6500545468170852054" />
+          <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6500545468170852055">
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6500545468170852056">
               <property name="value" nameId="mj1l.8860443239512128104" value="11" />
             </node>
-            <node role="left" roleId="mj1l.8860443239512128064" type=".com.mbeddr.core.udt.structure.SUDotExpression" id="6500545468170852057">
-              <node role="expression" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="6500545468170852058">
+            <node role="left" roleId="mj1l.8860443239512128064" type="clbe.SUDotExpression" typeId="clbe.7063398228162529566" id="6500545468170852057">
+              <node role="expression" roleId="mj1l.7254843406768839760" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="6500545468170852058">
                 <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="6500545468170852032" resolveInfo="p" />
               </node>
-              <node role="member" type=".com.mbeddr.core.udt.structure.MemberRef" id="6500545468170852059">
-                <link role="member" targetNodeId="6500545468170851976" resolveInfo="x" />
+              <node role="member" roleId="mj1l.1452920870317550651" type="clbe.MemberRef" typeId="clbe.7099329415460395995" id="6500545468170852059">
+                <link role="member" roleId="clbe.7099329415460397525" targetNodeId="6500545468170851976" resolveInfo="x" />
               </node>
             </node>
           </node>
         </node>
       </node>
-      <node role="type" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="6500545468170852060" />
+      <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="6500545468170852060" />
     </node>
   </root>
 </model>
