@@ -3,6 +3,7 @@
   <persistence version="7" />
   <language namespace="d7a92d38-f7db-40d0-8431-763b0c3c9f20(jetbrains.mps.lang.intentions)" />
   <devkit namespace="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
+  <devkit namespace="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
   <import index="7aka" modelUID="r:02a5dde5-8560-4c26-8875-8f2a79444bd3(com.mbeddr.mpsutil.bldoc.structure)" version="-1" />
   <import index="e2lb" modelUID="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" version="-1" />
   <import index="cu2c" modelUID="f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.smodel(MPS.Core/jetbrains.mps.smodel@java_stub)" version="-1" />
@@ -15,10 +16,6 @@
     <node type="tp3j.IntentionDeclaration" typeId="tp3j.1192794744107" id="7999989049973706137">
       <property name="name" nameId="tpck.1169194664001" value="addOrRemoveDoc" />
       <link role="forConcept" roleId="tp3j.2522969319638198290" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
-    </node>
-    <node type="tp3j.IntentionDeclaration" typeId="tp3j.1192794744107" id="3900810238002073139">
-      <property name="name" nameId="tpck.1169194664001" value="removeDoc" />
-      <link role="forConcept" roleId="tp3j.2522969319638198290" targetNodeId="7aka.7999989049973673107" resolveInfo="Documentation" />
     </node>
     <node type="tp3j.IntentionDeclaration" typeId="tp3j.1192794744107" id="14270488321492155">
       <property name="name" nameId="tpck.1169194664001" value="addOrRemoveErrorMarker" />
@@ -44,8 +41,8 @@
                 <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="7999989049973714625">
                   <node role="operand" roleId="tpee.1197027771414" type="tp3j.ConceptFunctionParameter_node" typeId="tp3j.1192796902958" id="7999989049973714624" />
                   <node role="operation" roleId="tpee.1197027833540" type="tp25.AttributeAccess" typeId="tp25.6407023681583031218" id="7999989049973714629">
-                    <node role="qualifier" roleId="tp25.6407023681583036852" type="tp25.NodeAttributeQualifier" typeId="tp25.6407023681583036853" id="7999989049973714631">
-                      <link role="attributeConcept" roleId="tp25.6407023681583036854" targetNodeId="7aka.7999989049973673107" resolveInfo="Documentation" />
+                    <node role="qualifier" roleId="tp25.6407023681583036852" type="tp25.NodeAttributeQualifier" typeId="tp25.6407023681583036853" id="4195764031267328081">
+                      <link role="attributeConcept" roleId="tp25.6407023681583036854" targetNodeId="7aka.6925419451529157942" resolveInfo="BLDoc" />
                     </node>
                   </node>
                 </node>
@@ -58,8 +55,8 @@
             <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.DotExpression" typeId="tpee.1197027756228" id="3900810238002073009">
               <node role="operand" roleId="tpee.1197027771414" type="tp3j.ConceptFunctionParameter_node" typeId="tp3j.1192796902958" id="3900810238002073008" />
               <node role="operation" roleId="tpee.1197027833540" type="tp25.AttributeAccess" typeId="tp25.6407023681583031218" id="3900810238002073013">
-                <node role="qualifier" roleId="tp25.6407023681583036852" type="tp25.NodeAttributeQualifier" typeId="tp25.6407023681583036853" id="3900810238002073015">
-                  <link role="attributeConcept" roleId="tp25.6407023681583036854" targetNodeId="7aka.7999989049973673107" resolveInfo="Documentation" />
+                <node role="qualifier" roleId="tp25.6407023681583036852" type="tp25.NodeAttributeQualifier" typeId="tp25.6407023681583036853" id="4195764031267328079">
+                  <link role="attributeConcept" roleId="tp25.6407023681583036854" targetNodeId="7aka.6925419451529157942" resolveInfo="BLDoc" />
                 </node>
               </node>
             </node>
@@ -71,8 +68,8 @@
                   <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="3900810238002073026">
                     <node role="operand" roleId="tpee.1197027771414" type="tp3j.ConceptFunctionParameter_node" typeId="tp3j.1192796902958" id="3900810238002073025" />
                     <node role="operation" roleId="tpee.1197027833540" type="tp25.AttributeAccess" typeId="tp25.6407023681583031218" id="3900810238002073030">
-                      <node role="qualifier" roleId="tp25.6407023681583036852" type="tp25.NodeAttributeQualifier" typeId="tp25.6407023681583036853" id="3900810238002073032">
-                        <link role="attributeConcept" roleId="tp25.6407023681583036854" targetNodeId="7aka.7999989049973673107" resolveInfo="Documentation" />
+                      <node role="qualifier" roleId="tp25.6407023681583036852" type="tp25.NodeAttributeQualifier" typeId="tp25.6407023681583036853" id="4195764031267328084">
+                        <link role="attributeConcept" roleId="tp25.6407023681583036854" targetNodeId="7aka.6925419451529157942" resolveInfo="BLDoc" />
                       </node>
                     </node>
                   </node>
@@ -122,33 +119,12 @@
               <node role="expression" roleId="tpee.1081516765348" type="tpee.DotExpression" typeId="tpee.1197027756228" id="3900810238002073323">
                 <node role="operand" roleId="tpee.1197027771414" type="tp3j.ConceptFunctionParameter_node" typeId="tp3j.1192796902958" id="3900810238002073322" />
                 <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_IsInstanceOfOperation" typeId="tp25.1139621453865" id="3900810238002073327">
-                  <node role="conceptArgument" roleId="tp25.1177027386292" type="tp25.RefConcept_Reference" typeId="tp25.1177026924588" id="3900810238002073329">
-                    <link role="conceptDeclaration" roleId="tp25.1177026940964" targetNodeId="7aka.7999989049973673107" resolveInfo="Documentation" />
+                  <node role="conceptArgument" roleId="tp25.1177027386292" type="tp25.RefConcept_Reference" typeId="tp25.1177026924588" id="4195764031267328077">
+                    <link role="conceptDeclaration" roleId="tp25.1177026940964" targetNodeId="7aka.6925419451529157942" resolveInfo="BLDoc" />
                   </node>
                 </node>
               </node>
             </node>
-          </node>
-        </node>
-      </node>
-    </node>
-  </root>
-  <root id="3900810238002073139">
-    <node role="descriptionFunction" roleId="tp3j.2522969319638093993" type="tp3j.DescriptionBlock" typeId="tp3j.1192794782375" id="3900810238002073140">
-      <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="3900810238002073141">
-        <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="3900810238002073144">
-          <node role="expression" roleId="tpee.1068580123156" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3900810238002073145">
-            <property name="value" nameId="tpee.1070475926801" value="Remove Documentation" />
-          </node>
-        </node>
-      </node>
-    </node>
-    <node role="executeFunction" roleId="tp3j.2522969319638198291" type="tp3j.ExecuteBlock" typeId="tp3j.1192795911897" id="3900810238002073142">
-      <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="3900810238002073143">
-        <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="3900810238002073146">
-          <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="3900810238002073148">
-            <node role="operand" roleId="tpee.1197027771414" type="tp3j.ConceptFunctionParameter_node" typeId="tp3j.1192796902958" id="3900810238002073147" />
-            <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_DeleteOperation" typeId="tp25.1140133623887" id="3900810238002073152" />
           </node>
         </node>
       </node>
