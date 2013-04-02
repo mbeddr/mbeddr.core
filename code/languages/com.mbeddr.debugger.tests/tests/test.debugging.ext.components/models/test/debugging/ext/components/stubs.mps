@@ -56,8 +56,16 @@
     </node>
   </root>
   <root id="6307143892175816574">
-    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="4075471389393094661">
-      <property name="name" nameId="tpck.1169194664001" value="empty_1343890426001_1" />
+    <node role="contents" roleId="x27k.6437088627575722833" type="v7ag.SenderReceiverInterface" typeId="v7ag.998890089994729412" id="998890089994828095">
+      <property name="name" nameId="tpck.1169194664001" value="CarData" />
+      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
+      <node role="elements" roleId="v7ag.998890089994729432" type="v7ag.DataElement" typeId="v7ag.998890089994729418" id="998890089994905863">
+        <property name="name" nameId="tpck.1169194664001" value="drehzahl" />
+        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="998890089994905864">
+          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+        </node>
+      </node>
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="v7ag.ClientServerInterface" typeId="v7ag.4491876417845484922" id="8729447926330476739">
       <property name="name" nameId="tpck.1169194664001" value="DataAcquisition" />
@@ -105,7 +113,10 @@
         <property name="name" nameId="tpck.1169194664001" value="sensor2" />
         <link role="intf" roleId="v7ag.4491876417845484932" targetNodeId="2910276674574175355" resolveInfo="Sensor2" />
       </node>
-      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.EmptyComponentContent" typeId="v7ag.8515777736166878876" id="4075471389393094667" />
+      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.RequiredPort" typeId="v7ag.4491876417845628841" id="4826423066067644193">
+        <property name="name" nameId="tpck.1169194664001" value="carData" />
+        <link role="intf" roleId="v7ag.4491876417845484932" targetNodeId="998890089994828095" resolveInfo="CarData" />
+      </node>
       <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="8729447926330476747">
         <property name="name" nameId="tpck.1169194664001" value="acq_run" />
         <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="8729447926330476748">
@@ -158,6 +169,10 @@
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="mxvz.StubComponent" typeId="mxvz.6307143892175591011" id="6307143892175816627">
       <property name="name" nameId="tpck.1169194664001" value="SensorStub" />
+      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.ProvidedPort" typeId="v7ag.4491876417845628840" id="4826423066067632918">
+        <property name="name" nameId="tpck.1169194664001" value="carData" />
+        <link role="intf" roleId="v7ag.4491876417845484932" targetNodeId="998890089994828095" resolveInfo="CarData" />
+      </node>
       <node role="phases" roleId="mxvz.2319970887606630660" type="mxvz.StubPhase" typeId="mxvz.2319970887606630628" id="1779165058149904972">
         <property name="name" nameId="tpck.1169194664001" value="bla" />
       </node>
@@ -329,6 +344,16 @@
       <node role="contents" roleId="v7ag.7780999115923944213" type="v7ag.ComponentInstance" typeId="v7ag.4491876417845649014" id="8729447926330607721">
         <property name="name" nameId="tpck.1169194664001" value="m" />
         <link role="component" roleId="v7ag.4491876417845649015" targetNodeId="8729447926330476743" resolveInfo="DataManager" />
+      </node>
+      <node role="contents" roleId="v7ag.7780999115923944213" type="v7ag.AssemblyConnector" typeId="v7ag.4491876417845649016" id="4826423066067644195">
+        <node role="source" roleId="v7ag.4491876417845649020" type="v7ag.InstancePortRef" typeId="v7ag.4491876417845649017" id="4826423066067644196">
+          <link role="instance" roleId="v7ag.4491876417845649018" targetNodeId="8729447926330607721" resolveInfo="m" />
+          <link role="port" roleId="v7ag.3444913373458569211" targetNodeId="4826423066067644193" resolveInfo="carData" />
+        </node>
+        <node role="target" roleId="v7ag.4491876417845649021" type="v7ag.InstancePortRef" typeId="v7ag.4491876417845649017" id="4826423066067644197">
+          <link role="instance" roleId="v7ag.4491876417845649018" targetNodeId="4157464901390188223" resolveInfo="s" />
+          <link role="port" roleId="v7ag.3444913373458569211" targetNodeId="4826423066067632918" resolveInfo="carData" />
+        </node>
       </node>
       <node role="contents" roleId="v7ag.7780999115923944213" type="v7ag.AssemblyConnector" typeId="v7ag.4491876417845649016" id="8729447926330607722">
         <node role="source" roleId="v7ag.4491876417845649020" type="v7ag.InstancePortRef" typeId="v7ag.4491876417845649017" id="8729447926330607723">
@@ -640,6 +665,36 @@
               <property name="name" nameId="tpck.1169194664001" value="s" />
             </node>
             <node role="value" roleId="rpmx.6894131567067751709" type="rpmx.ComplexValueExpression" typeId="rpmx.6894131567068077383" id="1779165058149989443">
+              <node role="childern" roleId="rpmx.6894131567068077386" type="rpmx.WatchableWithValueExpression" typeId="rpmx.6894131567067751707" id="8341269959367779839">
+                <node role="name" roleId="rpmx.6894131567067751708" type="rpmx.WatchableNameExpression" typeId="rpmx.6894131567067751702" id="8341269959367779838">
+                  <property name="name" nameId="tpck.1169194664001" value="carData" />
+                </node>
+                <node role="value" roleId="rpmx.6894131567067751709" type="rpmx.ComplexValueExpression" typeId="rpmx.6894131567068077383" id="8341269959367779844">
+                  <node role="value" roleId="rpmx.6894131567068111706" type="rpmx.LiteralValue" typeId="rpmx.6894131567068111611" id="8341269959367779845">
+                    <property name="value" nameId="rpmx.6894131567068111701" value="CarData[1]" />
+                  </node>
+                  <node role="childern" roleId="rpmx.6894131567068077386" type="rpmx.WatchableWithValueExpression" typeId="rpmx.6894131567067751707" id="4826423066067321210">
+                    <node role="name" roleId="rpmx.6894131567067751708" type="rpmx.WatchableNameExpression" typeId="rpmx.6894131567067751702" id="4826423066067321211">
+                      <property name="name" nameId="tpck.1169194664001" value="carData[0]" />
+                    </node>
+                    <node role="value" roleId="rpmx.6894131567067751709" type="rpmx.ComplexValueExpression" typeId="rpmx.6894131567068077383" id="4826423066067321212">
+                      <node role="value" roleId="rpmx.6894131567068111706" type="rpmx.LiteralValue" typeId="rpmx.6894131567068111611" id="4826423066067321213">
+                        <property name="value" nameId="rpmx.6894131567068111701" value="CarData" />
+                      </node>
+                      <node role="childern" roleId="rpmx.6894131567068077386" type="rpmx.WatchableWithValueExpression" typeId="rpmx.6894131567067751707" id="4826423066067321214">
+                        <node role="name" roleId="rpmx.6894131567067751708" type="rpmx.WatchableNameExpression" typeId="rpmx.6894131567067751702" id="4826423066067321215">
+                          <property name="name" nameId="tpck.1169194664001" value="drehzahl" />
+                        </node>
+                        <node role="value" roleId="rpmx.6894131567067751709" type="rpmx.PrimitiveValueExpression" typeId="rpmx.6894131567067751726" id="4826423066067321216">
+                          <node role="value" roleId="rpmx.6894131567068111705" type="rpmx.LiteralValue" typeId="rpmx.6894131567068111611" id="4826423066067321217">
+                            <property name="value" nameId="rpmx.6894131567068111701" value="0" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
               <node role="childern" roleId="rpmx.6894131567068077386" type="rpmx.WatchableWithValueExpression" typeId="rpmx.6894131567067751707" id="1779165058149989444">
                 <node role="name" roleId="rpmx.6894131567067751708" type="rpmx.WatchableNameExpression" typeId="rpmx.6894131567067751702" id="1779165058149989445">
                   <property name="name" nameId="tpck.1169194664001" value="bla" />
@@ -777,6 +832,36 @@
                       </node>
                     </node>
                   </node>
+                  <node role="childern" roleId="rpmx.6894131567068077386" type="rpmx.WatchableWithValueExpression" typeId="rpmx.6894131567067751707" id="8341269959367715603">
+                    <node role="name" roleId="rpmx.6894131567067751708" type="rpmx.WatchableNameExpression" typeId="rpmx.6894131567067751702" id="8341269959367715602">
+                      <property name="name" nameId="tpck.1169194664001" value="carData" />
+                    </node>
+                    <node role="value" roleId="rpmx.6894131567067751709" type="rpmx.ComplexValueExpression" typeId="rpmx.6894131567068077383" id="8341269959367715608">
+                      <node role="value" roleId="rpmx.6894131567068111706" type="rpmx.LiteralValue" typeId="rpmx.6894131567068111611" id="8341269959367715609">
+                        <property name="value" nameId="rpmx.6894131567068111701" value="CarData[1]" />
+                      </node>
+                      <node role="childern" roleId="rpmx.6894131567068077386" type="rpmx.WatchableWithValueExpression" typeId="rpmx.6894131567067751707" id="8341269959367685429">
+                        <node role="name" roleId="rpmx.6894131567067751708" type="rpmx.WatchableNameExpression" typeId="rpmx.6894131567067751702" id="8341269959367685430">
+                          <property name="name" nameId="tpck.1169194664001" value="carData[0]" />
+                        </node>
+                        <node role="value" roleId="rpmx.6894131567067751709" type="rpmx.ComplexValueExpression" typeId="rpmx.6894131567068077383" id="8341269959367685431">
+                          <node role="value" roleId="rpmx.6894131567068111706" type="rpmx.LiteralValue" typeId="rpmx.6894131567068111611" id="8341269959367685432">
+                            <property name="value" nameId="rpmx.6894131567068111701" value="CarData" />
+                          </node>
+                          <node role="childern" roleId="rpmx.6894131567068077386" type="rpmx.WatchableWithValueExpression" typeId="rpmx.6894131567067751707" id="8341269959367685433">
+                            <node role="name" roleId="rpmx.6894131567067751708" type="rpmx.WatchableNameExpression" typeId="rpmx.6894131567067751702" id="8341269959367685434">
+                              <property name="name" nameId="tpck.1169194664001" value="drehzahl" />
+                            </node>
+                            <node role="value" roleId="rpmx.6894131567067751709" type="rpmx.PrimitiveValueExpression" typeId="rpmx.6894131567067751726" id="8341269959367685435">
+                              <node role="value" roleId="rpmx.6894131567068111705" type="rpmx.LiteralValue" typeId="rpmx.6894131567068111611" id="8341269959367685436">
+                                <property name="value" nameId="rpmx.6894131567068111701" value="0" />
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
                   <node role="value" roleId="rpmx.6894131567068111706" type="rpmx.LiteralValue" typeId="rpmx.6894131567068111611" id="2910276674573998651">
                     <property name="value" nameId="rpmx.6894131567068111701" value="DataManager" />
                   </node>
@@ -830,8 +915,11 @@
                       <node role="childern" roleId="rpmx.6894131567068077386" type="rpmx.WatchableNameExpression" typeId="rpmx.6894131567067751702" id="1779165058149743648">
                         <property name="name" nameId="tpck.1169194664001" value="sensor2" />
                       </node>
+                      <node role="childern" roleId="rpmx.6894131567068077386" type="rpmx.WatchableNameExpression" typeId="rpmx.6894131567067751702" id="8341269959367758332">
+                        <property name="name" nameId="tpck.1169194664001" value="carData" />
+                      </node>
                       <node role="value" roleId="rpmx.6894131567068111706" type="rpmx.LiteralValue" typeId="rpmx.6894131567068111611" id="1779165058149739732">
-                        <property name="value" nameId="rpmx.6894131567068111701" value="-2" />
+                        <property name="value" nameId="rpmx.6894131567068111701" value="-3" />
                       </node>
                     </node>
                   </node>
@@ -842,6 +930,36 @@
                     <node role="value" roleId="rpmx.6894131567067751709" type="rpmx.PrimitiveValueExpression" typeId="rpmx.6894131567067751726" id="1779165058149739794">
                       <node role="value" roleId="rpmx.6894131567068111705" type="rpmx.LiteralValue" typeId="rpmx.6894131567068111611" id="1779165058149739795">
                         <property name="value" nameId="rpmx.6894131567068111701" value="-1" />
+                      </node>
+                    </node>
+                  </node>
+                  <node role="childern" roleId="rpmx.6894131567068077386" type="rpmx.WatchableWithValueExpression" typeId="rpmx.6894131567067751707" id="8341269959367779846">
+                    <node role="name" roleId="rpmx.6894131567067751708" type="rpmx.WatchableNameExpression" typeId="rpmx.6894131567067751702" id="8341269959367779847">
+                      <property name="name" nameId="tpck.1169194664001" value="carData" />
+                    </node>
+                    <node role="value" roleId="rpmx.6894131567067751709" type="rpmx.ComplexValueExpression" typeId="rpmx.6894131567068077383" id="8341269959367779848">
+                      <node role="value" roleId="rpmx.6894131567068111706" type="rpmx.LiteralValue" typeId="rpmx.6894131567068111611" id="8341269959367779849">
+                        <property name="value" nameId="rpmx.6894131567068111701" value="CarData[1]" />
+                      </node>
+                      <node role="childern" roleId="rpmx.6894131567068077386" type="rpmx.WatchableWithValueExpression" typeId="rpmx.6894131567067751707" id="8341269959367779850">
+                        <node role="name" roleId="rpmx.6894131567067751708" type="rpmx.WatchableNameExpression" typeId="rpmx.6894131567067751702" id="8341269959367779851">
+                          <property name="name" nameId="tpck.1169194664001" value="carData[0]" />
+                        </node>
+                        <node role="value" roleId="rpmx.6894131567067751709" type="rpmx.ComplexValueExpression" typeId="rpmx.6894131567068077383" id="8341269959367779852">
+                          <node role="value" roleId="rpmx.6894131567068111706" type="rpmx.LiteralValue" typeId="rpmx.6894131567068111611" id="8341269959367779853">
+                            <property name="value" nameId="rpmx.6894131567068111701" value="CarData" />
+                          </node>
+                          <node role="childern" roleId="rpmx.6894131567068077386" type="rpmx.WatchableWithValueExpression" typeId="rpmx.6894131567067751707" id="8341269959367779854">
+                            <node role="name" roleId="rpmx.6894131567067751708" type="rpmx.WatchableNameExpression" typeId="rpmx.6894131567067751702" id="8341269959367779855">
+                              <property name="name" nameId="tpck.1169194664001" value="drehzahl" />
+                            </node>
+                            <node role="value" roleId="rpmx.6894131567067751709" type="rpmx.PrimitiveValueExpression" typeId="rpmx.6894131567067751726" id="8341269959367779856">
+                              <node role="value" roleId="rpmx.6894131567068111705" type="rpmx.LiteralValue" typeId="rpmx.6894131567068111611" id="8341269959367779857">
+                                <property name="value" nameId="rpmx.6894131567068111701" value="0" />
+                              </node>
+                            </node>
+                          </node>
+                        </node>
                       </node>
                     </node>
                   </node>
@@ -925,6 +1043,36 @@
                       </node>
                     </node>
                   </node>
+                  <node role="childern" roleId="rpmx.6894131567068077386" type="rpmx.WatchableWithValueExpression" typeId="rpmx.6894131567067751707" id="8341269959367715623">
+                    <node role="name" roleId="rpmx.6894131567067751708" type="rpmx.WatchableNameExpression" typeId="rpmx.6894131567067751702" id="8341269959367715624">
+                      <property name="name" nameId="tpck.1169194664001" value="carData" />
+                    </node>
+                    <node role="value" roleId="rpmx.6894131567067751709" type="rpmx.ComplexValueExpression" typeId="rpmx.6894131567068077383" id="8341269959367715625">
+                      <node role="value" roleId="rpmx.6894131567068111706" type="rpmx.LiteralValue" typeId="rpmx.6894131567068111611" id="8341269959367715626">
+                        <property name="value" nameId="rpmx.6894131567068111701" value="CarData[1]" />
+                      </node>
+                      <node role="childern" roleId="rpmx.6894131567068077386" type="rpmx.WatchableWithValueExpression" typeId="rpmx.6894131567067751707" id="8341269959367715627">
+                        <node role="name" roleId="rpmx.6894131567067751708" type="rpmx.WatchableNameExpression" typeId="rpmx.6894131567067751702" id="8341269959367715628">
+                          <property name="name" nameId="tpck.1169194664001" value="carData[0]" />
+                        </node>
+                        <node role="value" roleId="rpmx.6894131567067751709" type="rpmx.ComplexValueExpression" typeId="rpmx.6894131567068077383" id="8341269959367715629">
+                          <node role="value" roleId="rpmx.6894131567068111706" type="rpmx.LiteralValue" typeId="rpmx.6894131567068111611" id="8341269959367715630">
+                            <property name="value" nameId="rpmx.6894131567068111701" value="CarData" />
+                          </node>
+                          <node role="childern" roleId="rpmx.6894131567068077386" type="rpmx.WatchableWithValueExpression" typeId="rpmx.6894131567067751707" id="8341269959367715631">
+                            <node role="name" roleId="rpmx.6894131567067751708" type="rpmx.WatchableNameExpression" typeId="rpmx.6894131567067751702" id="8341269959367715632">
+                              <property name="name" nameId="tpck.1169194664001" value="drehzahl" />
+                            </node>
+                            <node role="value" roleId="rpmx.6894131567067751709" type="rpmx.PrimitiveValueExpression" typeId="rpmx.6894131567067751726" id="8341269959367715633">
+                              <node role="value" roleId="rpmx.6894131567068111705" type="rpmx.LiteralValue" typeId="rpmx.6894131567068111611" id="8341269959367715634">
+                                <property name="value" nameId="rpmx.6894131567068111701" value="0" />
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
                   <node role="value" roleId="rpmx.6894131567068111706" type="rpmx.LiteralValue" typeId="rpmx.6894131567068111611" id="1779165058149989497">
                     <property name="value" nameId="rpmx.6894131567068111701" value="DataManager" />
                   </node>
@@ -985,8 +1133,11 @@
                       <node role="childern" roleId="rpmx.6894131567068077386" type="rpmx.WatchableNameExpression" typeId="rpmx.6894131567067751702" id="1779165058149989516">
                         <property name="name" nameId="tpck.1169194664001" value="sensor2" />
                       </node>
+                      <node role="childern" roleId="rpmx.6894131567068077386" type="rpmx.WatchableNameExpression" typeId="rpmx.6894131567067751702" id="8341269959367758333">
+                        <property name="name" nameId="tpck.1169194664001" value="carData" />
+                      </node>
                       <node role="value" roleId="rpmx.6894131567068111706" type="rpmx.LiteralValue" typeId="rpmx.6894131567068111611" id="1779165058149989517">
-                        <property name="value" nameId="rpmx.6894131567068111701" value="-2" />
+                        <property name="value" nameId="rpmx.6894131567068111701" value="-3" />
                       </node>
                     </node>
                   </node>
@@ -1002,6 +1153,36 @@
                   </node>
                   <node role="value" roleId="rpmx.6894131567068111706" type="rpmx.LiteralValue" typeId="rpmx.6894131567068111611" id="1779165058149989522">
                     <property name="value" nameId="rpmx.6894131567068111701" value="SensorStub" />
+                  </node>
+                  <node role="childern" roleId="rpmx.6894131567068077386" type="rpmx.WatchableWithValueExpression" typeId="rpmx.6894131567067751707" id="8341269959367779858">
+                    <node role="name" roleId="rpmx.6894131567067751708" type="rpmx.WatchableNameExpression" typeId="rpmx.6894131567067751702" id="8341269959367779859">
+                      <property name="name" nameId="tpck.1169194664001" value="carData" />
+                    </node>
+                    <node role="value" roleId="rpmx.6894131567067751709" type="rpmx.ComplexValueExpression" typeId="rpmx.6894131567068077383" id="8341269959367779860">
+                      <node role="value" roleId="rpmx.6894131567068111706" type="rpmx.LiteralValue" typeId="rpmx.6894131567068111611" id="8341269959367779861">
+                        <property name="value" nameId="rpmx.6894131567068111701" value="CarData[1]" />
+                      </node>
+                      <node role="childern" roleId="rpmx.6894131567068077386" type="rpmx.WatchableWithValueExpression" typeId="rpmx.6894131567067751707" id="8341269959367779862">
+                        <node role="name" roleId="rpmx.6894131567067751708" type="rpmx.WatchableNameExpression" typeId="rpmx.6894131567067751702" id="8341269959367779863">
+                          <property name="name" nameId="tpck.1169194664001" value="carData[0]" />
+                        </node>
+                        <node role="value" roleId="rpmx.6894131567067751709" type="rpmx.ComplexValueExpression" typeId="rpmx.6894131567068077383" id="8341269959367779864">
+                          <node role="value" roleId="rpmx.6894131567068111706" type="rpmx.LiteralValue" typeId="rpmx.6894131567068111611" id="8341269959367779865">
+                            <property name="value" nameId="rpmx.6894131567068111701" value="CarData" />
+                          </node>
+                          <node role="childern" roleId="rpmx.6894131567068077386" type="rpmx.WatchableWithValueExpression" typeId="rpmx.6894131567067751707" id="8341269959367779866">
+                            <node role="name" roleId="rpmx.6894131567067751708" type="rpmx.WatchableNameExpression" typeId="rpmx.6894131567067751702" id="8341269959367779867">
+                              <property name="name" nameId="tpck.1169194664001" value="drehzahl" />
+                            </node>
+                            <node role="value" roleId="rpmx.6894131567067751709" type="rpmx.PrimitiveValueExpression" typeId="rpmx.6894131567067751726" id="8341269959367779868">
+                              <node role="value" roleId="rpmx.6894131567068111705" type="rpmx.LiteralValue" typeId="rpmx.6894131567068111611" id="8341269959367779869">
+                                <property name="value" nameId="rpmx.6894131567068111701" value="0" />
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
                   </node>
                 </node>
               </node>
