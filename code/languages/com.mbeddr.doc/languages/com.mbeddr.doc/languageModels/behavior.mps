@@ -88,15 +88,15 @@
       <link role="concept" roleId="1i04.1225194240799" targetNodeId="2c95.5378658552262903588" resolveInfo="Item" />
     </node>
     <node type="1i04.ConceptBehavior" typeId="1i04.1225194240794" id="6165313375055779636">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="words" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="words.formatted" />
       <link role="concept" roleId="1i04.1225194240799" targetNodeId="2c95.6165313375055755361" resolveInfo="MathFormattedText" />
     </node>
     <node type="1i04.ConceptBehavior" typeId="1i04.1225194240794" id="6165313375055779695">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="words" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="words.formatted" />
       <link role="concept" roleId="1i04.1225194240799" targetNodeId="2c95.4457500422381571986" resolveInfo="CodeFormattedText" />
     </node>
     <node type="1i04.ConceptBehavior" typeId="1i04.1225194240794" id="6165313375055797493">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="words" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="words.formatted" />
       <link role="concept" roleId="1i04.1225194240799" targetNodeId="2c95.6165313375055797476" resolveInfo="FormattedText" />
     </node>
     <node type="1i04.ConceptBehavior" typeId="1i04.1225194240794" id="4755612053022588106">
