@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <model modelUID="r:81090d69-46e6-4641-95c0-92f0d8391ab1(test.debugging.ext.components.optional_port)">
   <persistence version="7" />
-  <devkit namespace="87468ddd-5b04-4352-a61d-70ff981afab6(debugger-testing)" />
+  <devkit namespace="87468ddd-5b04-4352-a61d-70ff981afab6(com.mbeddr.debugger-testing)" />
   <devkit namespace="24565007-e59f-42fc-ac10-da3836deec1c(com.mbeddr.components)" />
   <import index="tr6y" modelUID="r:47eb6bd5-b98e-420e-bda6-2069fa596758(test.debugging.cross.util)" version="-1" />
   <import index="p7vm" modelUID="r:28fa862e-f94d-4c39-bdf7-a4bdbc773888(com.mbeddr.ext.components.gen_nomw.structure)" version="0" implicit="yes" />
@@ -13,7 +13,7 @@
   <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="3" implicit="yes" />
   <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="5" implicit="yes" />
   <import index="tp5g" modelUID="r:00000000-0000-4000-0000-011c89590388(jetbrains.mps.lang.test.structure)" version="4" implicit="yes" />
-  <import index="k146" modelUID="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" version="3" implicit="yes" />
+  <import index="k146" modelUID="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" version="5" implicit="yes" />
   <import index="v7ag" modelUID="r:9596407c-f27a-49d3-abde-3a66293c5b61(com.mbeddr.ext.components.structure)" version="16" implicit="yes" />
   <import index="v0r9" modelUID="r:277b15fc-1383-4213-8385-5a16481fa36c(com.mbeddr.ext.components.test.structure)" version="4" implicit="yes" />
   <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="22" implicit="yes" />
@@ -627,19 +627,39 @@
                     <node role="name" roleId="rpmx.6894131567067751708" type="rpmx.WatchableNameExpression" typeId="rpmx.6894131567067751702" id="558204211617461149">
                       <property name="name" nameId="tpck.1169194664001" value="helloWorldA" />
                     </node>
-                    <node role="value" roleId="rpmx.6894131567067751709" type="rpmx.PrimitiveValueExpression" typeId="rpmx.6894131567067751726" id="558204211617461150">
-                      <node role="value" roleId="rpmx.6894131567068111705" type="rpmx.LiteralValue" typeId="rpmx.6894131567068111611" id="558204211617461151">
-                        <property name="value" nameId="rpmx.6894131567068111701" value="&lt;connected&gt;" />
+                    <node role="value" roleId="rpmx.6894131567067751709" type="rpmx.ComplexValueExpression" typeId="rpmx.6894131567068077383" id="4826423066066844157">
+                      <node role="childern" roleId="rpmx.6894131567068077386" type="rpmx.WatchableWithValueExpression" typeId="rpmx.6894131567067751707" id="4826423066066844161">
+                        <node role="name" roleId="rpmx.6894131567067751708" type="rpmx.WatchableNameExpression" typeId="rpmx.6894131567067751702" id="4826423066066844159">
+                          <property name="name" nameId="tpck.1169194664001" value="helloWorldA[0]" />
+                        </node>
+                        <node role="value" roleId="rpmx.6894131567067751709" type="rpmx.PrimitiveValueExpression" typeId="rpmx.6894131567067751726" id="4826423066066844164">
+                          <node role="value" roleId="rpmx.6894131567068111705" type="rpmx.LiteralValue" typeId="rpmx.6894131567068111611" id="4826423066066844165">
+                            <property name="value" nameId="rpmx.6894131567068111701" value="&lt;connected&gt;" />
+                          </node>
+                        </node>
+                      </node>
+                      <node role="value" roleId="rpmx.6894131567068111706" type="rpmx.LiteralValue" typeId="rpmx.6894131567068111611" id="4826423066066844158">
+                        <property name="value" nameId="rpmx.6894131567068111701" value="HelloWorld[1]" />
                       </node>
                     </node>
                   </node>
-                  <node role="childern" roleId="rpmx.6894131567068077386" type="rpmx.WatchableWithValueExpression" typeId="rpmx.6894131567067751707" id="558204211617461152">
-                    <node role="name" roleId="rpmx.6894131567067751708" type="rpmx.WatchableNameExpression" typeId="rpmx.6894131567067751702" id="558204211617461153">
+                  <node role="childern" roleId="rpmx.6894131567068077386" type="rpmx.WatchableWithValueExpression" typeId="rpmx.6894131567067751707" id="4826423066066844175">
+                    <node role="name" roleId="rpmx.6894131567067751708" type="rpmx.WatchableNameExpression" typeId="rpmx.6894131567067751702" id="4826423066066844176">
                       <property name="name" nameId="tpck.1169194664001" value="helloWorldB" />
                     </node>
-                    <node role="value" roleId="rpmx.6894131567067751709" type="rpmx.PrimitiveValueExpression" typeId="rpmx.6894131567067751726" id="558204211617461154">
-                      <node role="value" roleId="rpmx.6894131567068111705" type="rpmx.LiteralValue" typeId="rpmx.6894131567068111611" id="558204211617461155">
-                        <property name="value" nameId="rpmx.6894131567068111701" value="&lt;not connected&gt;" />
+                    <node role="value" roleId="rpmx.6894131567067751709" type="rpmx.ComplexValueExpression" typeId="rpmx.6894131567068077383" id="4826423066066844177">
+                      <node role="childern" roleId="rpmx.6894131567068077386" type="rpmx.WatchableWithValueExpression" typeId="rpmx.6894131567067751707" id="4826423066066844178">
+                        <node role="name" roleId="rpmx.6894131567067751708" type="rpmx.WatchableNameExpression" typeId="rpmx.6894131567067751702" id="4826423066066844179">
+                          <property name="name" nameId="tpck.1169194664001" value="helloWorldB[0]" />
+                        </node>
+                        <node role="value" roleId="rpmx.6894131567067751709" type="rpmx.PrimitiveValueExpression" typeId="rpmx.6894131567067751726" id="4826423066066844180">
+                          <node role="value" roleId="rpmx.6894131567068111705" type="rpmx.LiteralValue" typeId="rpmx.6894131567068111611" id="4826423066066844181">
+                            <property name="value" nameId="rpmx.6894131567068111701" value="&lt;not connected&gt;" />
+                          </node>
+                        </node>
+                      </node>
+                      <node role="value" roleId="rpmx.6894131567068111706" type="rpmx.LiteralValue" typeId="rpmx.6894131567068111611" id="4826423066066844182">
+                        <property name="value" nameId="rpmx.6894131567068111701" value="HelloWorld[1]" />
                       </node>
                     </node>
                   </node>

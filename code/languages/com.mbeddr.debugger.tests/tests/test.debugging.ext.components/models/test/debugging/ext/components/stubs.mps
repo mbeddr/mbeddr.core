@@ -741,19 +741,39 @@
                     <node role="name" roleId="rpmx.6894131567067751708" type="rpmx.WatchableNameExpression" typeId="rpmx.6894131567067751702" id="2910276674573998637">
                       <property name="name" nameId="tpck.1169194664001" value="sensor1" />
                     </node>
-                    <node role="value" roleId="rpmx.6894131567067751709" type="rpmx.PrimitiveValueExpression" typeId="rpmx.6894131567067751726" id="2910276674573998641">
-                      <node role="value" roleId="rpmx.6894131567068111705" type="rpmx.LiteralValue" typeId="rpmx.6894131567068111611" id="2910276674573998642">
-                        <property name="value" nameId="rpmx.6894131567068111701" value="&lt;connected&gt;" />
+                    <node role="value" roleId="rpmx.6894131567067751709" type="rpmx.ComplexValueExpression" typeId="rpmx.6894131567068077383" id="4826423066067058577">
+                      <node role="childern" roleId="rpmx.6894131567068077386" type="rpmx.WatchableWithValueExpression" typeId="rpmx.6894131567067751707" id="4826423066067058580">
+                        <node role="name" roleId="rpmx.6894131567067751708" type="rpmx.WatchableNameExpression" typeId="rpmx.6894131567067751702" id="4826423066067058579">
+                          <property name="name" nameId="tpck.1169194664001" value="sensor1[0]" />
+                        </node>
+                        <node role="value" roleId="rpmx.6894131567067751709" type="rpmx.PrimitiveValueExpression" typeId="rpmx.6894131567067751726" id="4826423066067058583">
+                          <node role="value" roleId="rpmx.6894131567068111705" type="rpmx.LiteralValue" typeId="rpmx.6894131567068111611" id="4826423066067058584">
+                            <property name="value" nameId="rpmx.6894131567068111701" value="&lt;connected&gt;" />
+                          </node>
+                        </node>
+                      </node>
+                      <node role="value" roleId="rpmx.6894131567068111706" type="rpmx.LiteralValue" typeId="rpmx.6894131567068111611" id="4826423066067058578">
+                        <property name="value" nameId="rpmx.6894131567068111701" value="Sensor1[1]" />
                       </node>
                     </node>
                   </node>
-                  <node role="childern" roleId="rpmx.6894131567068077386" type="rpmx.WatchableWithValueExpression" typeId="rpmx.6894131567067751707" id="1779165058149739745">
-                    <node role="name" roleId="rpmx.6894131567067751708" type="rpmx.WatchableNameExpression" typeId="rpmx.6894131567067751702" id="1779165058149739746">
+                  <node role="childern" roleId="rpmx.6894131567068077386" type="rpmx.WatchableWithValueExpression" typeId="rpmx.6894131567067751707" id="4826423066067058594">
+                    <node role="name" roleId="rpmx.6894131567067751708" type="rpmx.WatchableNameExpression" typeId="rpmx.6894131567067751702" id="4826423066067058595">
                       <property name="name" nameId="tpck.1169194664001" value="sensor2" />
                     </node>
-                    <node role="value" roleId="rpmx.6894131567067751709" type="rpmx.PrimitiveValueExpression" typeId="rpmx.6894131567067751726" id="1779165058149747467">
-                      <node role="value" roleId="rpmx.6894131567068111705" type="rpmx.LiteralValue" typeId="rpmx.6894131567068111611" id="1779165058149747468">
-                        <property name="value" nameId="rpmx.6894131567068111701" value="&lt;connected&gt;" />
+                    <node role="value" roleId="rpmx.6894131567067751709" type="rpmx.ComplexValueExpression" typeId="rpmx.6894131567068077383" id="4826423066067058596">
+                      <node role="childern" roleId="rpmx.6894131567068077386" type="rpmx.WatchableWithValueExpression" typeId="rpmx.6894131567067751707" id="4826423066067058597">
+                        <node role="name" roleId="rpmx.6894131567067751708" type="rpmx.WatchableNameExpression" typeId="rpmx.6894131567067751702" id="4826423066067058598">
+                          <property name="name" nameId="tpck.1169194664001" value="sensor2[0]" />
+                        </node>
+                        <node role="value" roleId="rpmx.6894131567067751709" type="rpmx.PrimitiveValueExpression" typeId="rpmx.6894131567067751726" id="4826423066067058599">
+                          <node role="value" roleId="rpmx.6894131567068111705" type="rpmx.LiteralValue" typeId="rpmx.6894131567068111611" id="4826423066067058600">
+                            <property name="value" nameId="rpmx.6894131567068111701" value="&lt;connected&gt;" />
+                          </node>
+                        </node>
+                      </node>
+                      <node role="value" roleId="rpmx.6894131567068111706" type="rpmx.LiteralValue" typeId="rpmx.6894131567068111611" id="4826423066067058601">
+                        <property name="value" nameId="rpmx.6894131567068111701" value="Sensor2[1]" />
                       </node>
                     </node>
                   </node>
@@ -865,23 +885,43 @@
                   <property name="name" nameId="tpck.1169194664001" value="m" />
                 </node>
                 <node role="value" roleId="rpmx.6894131567067751709" type="rpmx.ComplexValueExpression" typeId="rpmx.6894131567068077383" id="1779165058149989488">
-                  <node role="childern" roleId="rpmx.6894131567068077386" type="rpmx.WatchableWithValueExpression" typeId="rpmx.6894131567067751707" id="1779165058149989489">
-                    <node role="name" roleId="rpmx.6894131567067751708" type="rpmx.WatchableNameExpression" typeId="rpmx.6894131567067751702" id="1779165058149989490">
+                  <node role="childern" roleId="rpmx.6894131567068077386" type="rpmx.WatchableWithValueExpression" typeId="rpmx.6894131567067751707" id="4826423066067058602">
+                    <node role="name" roleId="rpmx.6894131567067751708" type="rpmx.WatchableNameExpression" typeId="rpmx.6894131567067751702" id="4826423066067058603">
                       <property name="name" nameId="tpck.1169194664001" value="sensor1" />
                     </node>
-                    <node role="value" roleId="rpmx.6894131567067751709" type="rpmx.PrimitiveValueExpression" typeId="rpmx.6894131567067751726" id="1779165058149989491">
-                      <node role="value" roleId="rpmx.6894131567068111705" type="rpmx.LiteralValue" typeId="rpmx.6894131567068111611" id="1779165058149989492">
-                        <property name="value" nameId="rpmx.6894131567068111701" value="&lt;connected&gt;" />
+                    <node role="value" roleId="rpmx.6894131567067751709" type="rpmx.ComplexValueExpression" typeId="rpmx.6894131567068077383" id="4826423066067058604">
+                      <node role="childern" roleId="rpmx.6894131567068077386" type="rpmx.WatchableWithValueExpression" typeId="rpmx.6894131567067751707" id="4826423066067058605">
+                        <node role="name" roleId="rpmx.6894131567067751708" type="rpmx.WatchableNameExpression" typeId="rpmx.6894131567067751702" id="4826423066067058606">
+                          <property name="name" nameId="tpck.1169194664001" value="sensor1[0]" />
+                        </node>
+                        <node role="value" roleId="rpmx.6894131567067751709" type="rpmx.PrimitiveValueExpression" typeId="rpmx.6894131567067751726" id="4826423066067058607">
+                          <node role="value" roleId="rpmx.6894131567068111705" type="rpmx.LiteralValue" typeId="rpmx.6894131567068111611" id="4826423066067058608">
+                            <property name="value" nameId="rpmx.6894131567068111701" value="&lt;connected&gt;" />
+                          </node>
+                        </node>
+                      </node>
+                      <node role="value" roleId="rpmx.6894131567068111706" type="rpmx.LiteralValue" typeId="rpmx.6894131567068111611" id="4826423066067058609">
+                        <property name="value" nameId="rpmx.6894131567068111701" value="Sensor1[1]" />
                       </node>
                     </node>
                   </node>
-                  <node role="childern" roleId="rpmx.6894131567068077386" type="rpmx.WatchableWithValueExpression" typeId="rpmx.6894131567067751707" id="1779165058149989493">
-                    <node role="name" roleId="rpmx.6894131567067751708" type="rpmx.WatchableNameExpression" typeId="rpmx.6894131567067751702" id="1779165058149989494">
+                  <node role="childern" roleId="rpmx.6894131567068077386" type="rpmx.WatchableWithValueExpression" typeId="rpmx.6894131567067751707" id="4826423066067058610">
+                    <node role="name" roleId="rpmx.6894131567067751708" type="rpmx.WatchableNameExpression" typeId="rpmx.6894131567067751702" id="4826423066067058611">
                       <property name="name" nameId="tpck.1169194664001" value="sensor2" />
                     </node>
-                    <node role="value" roleId="rpmx.6894131567067751709" type="rpmx.PrimitiveValueExpression" typeId="rpmx.6894131567067751726" id="1779165058149989495">
-                      <node role="value" roleId="rpmx.6894131567068111705" type="rpmx.LiteralValue" typeId="rpmx.6894131567068111611" id="1779165058149989496">
-                        <property name="value" nameId="rpmx.6894131567068111701" value="&lt;connected&gt;" />
+                    <node role="value" roleId="rpmx.6894131567067751709" type="rpmx.ComplexValueExpression" typeId="rpmx.6894131567068077383" id="4826423066067058612">
+                      <node role="childern" roleId="rpmx.6894131567068077386" type="rpmx.WatchableWithValueExpression" typeId="rpmx.6894131567067751707" id="4826423066067058613">
+                        <node role="name" roleId="rpmx.6894131567067751708" type="rpmx.WatchableNameExpression" typeId="rpmx.6894131567067751702" id="4826423066067058614">
+                          <property name="name" nameId="tpck.1169194664001" value="sensor2[0]" />
+                        </node>
+                        <node role="value" roleId="rpmx.6894131567067751709" type="rpmx.PrimitiveValueExpression" typeId="rpmx.6894131567067751726" id="4826423066067058615">
+                          <node role="value" roleId="rpmx.6894131567068111705" type="rpmx.LiteralValue" typeId="rpmx.6894131567068111611" id="4826423066067058616">
+                            <property name="value" nameId="rpmx.6894131567068111701" value="&lt;connected&gt;" />
+                          </node>
+                        </node>
+                      </node>
+                      <node role="value" roleId="rpmx.6894131567068111706" type="rpmx.LiteralValue" typeId="rpmx.6894131567068111611" id="4826423066067058617">
+                        <property name="value" nameId="rpmx.6894131567068111701" value="Sensor2[1]" />
                       </node>
                     </node>
                   </node>

@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <model modelUID="r:75c8a7bc-ed46-4152-bd6e-88fad23d3ada(test.debugging.ext.components.componentInheritance)">
   <persistence version="7" />
-  <devkit namespace="87468ddd-5b04-4352-a61d-70ff981afab6(debugger-testing)" />
+  <devkit namespace="87468ddd-5b04-4352-a61d-70ff981afab6(com.mbeddr.debugger-testing)" />
   <devkit namespace="24565007-e59f-42fc-ac10-da3836deec1c(com.mbeddr.components)" />
   <import index="tr6y" modelUID="r:47eb6bd5-b98e-420e-bda6-2069fa596758(test.debugging.cross.util)" version="-1" />
   <import index="p7vm" modelUID="r:28fa862e-f94d-4c39-bdf7-a4bdbc773888(com.mbeddr.ext.components.gen_nomw.structure)" version="0" implicit="yes" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
-  <import index="k146" modelUID="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" version="3" implicit="yes" />
+  <import index="k146" modelUID="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" version="5" implicit="yes" />
   <import index="v7ag" modelUID="r:9596407c-f27a-49d3-abde-3a66293c5b61(com.mbeddr.ext.components.structure)" version="16" implicit="yes" />
   <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="22" implicit="yes" />
   <import index="yq40" modelUID="r:152b3fc0-83a1-4bab-a8cd-565eb8483785(com.mbeddr.core.pointers.structure)" version="3" implicit="yes" />
@@ -895,9 +895,19 @@
                 <node role="name" roleId="rpmx.6894131567067751708" type="rpmx.WatchableNameExpression" typeId="rpmx.6894131567067751702" id="8885587964581080513">
                   <property name="name" nameId="tpck.1169194664001" value="baseOfBase" />
                 </node>
-                <node role="value" roleId="rpmx.6894131567067751709" type="rpmx.PrimitiveValueExpression" typeId="rpmx.6894131567067751726" id="8885587964581080514">
-                  <node role="value" roleId="rpmx.6894131567068111705" type="rpmx.LiteralValue" typeId="rpmx.6894131567068111611" id="8885587964581080515">
-                    <property name="value" nameId="rpmx.6894131567068111701" value="&lt;connected&gt;" />
+                <node role="value" roleId="rpmx.6894131567067751709" type="rpmx.ComplexValueExpression" typeId="rpmx.6894131567068077383" id="4826423066066844183">
+                  <node role="childern" roleId="rpmx.6894131567068077386" type="rpmx.WatchableWithValueExpression" typeId="rpmx.6894131567067751707" id="4826423066066844186">
+                    <node role="name" roleId="rpmx.6894131567067751708" type="rpmx.WatchableNameExpression" typeId="rpmx.6894131567067751702" id="4826423066066844185">
+                      <property name="name" nameId="tpck.1169194664001" value="baseOfBase[0]" />
+                    </node>
+                    <node role="value" roleId="rpmx.6894131567067751709" type="rpmx.PrimitiveValueExpression" typeId="rpmx.6894131567067751726" id="4826423066066844189">
+                      <node role="value" roleId="rpmx.6894131567068111705" type="rpmx.LiteralValue" typeId="rpmx.6894131567068111611" id="4826423066066844190">
+                        <property name="value" nameId="rpmx.6894131567068111701" value="&lt;connected&gt;" />
+                      </node>
+                    </node>
+                  </node>
+                  <node role="value" roleId="rpmx.6894131567068111706" type="rpmx.LiteralValue" typeId="rpmx.6894131567068111611" id="4826423066066844184">
+                    <property name="value" nameId="rpmx.6894131567068111701" value="Intf[1]" />
                   </node>
                 </node>
               </node>
@@ -921,23 +931,43 @@
                   </node>
                 </node>
               </node>
-              <node role="childern" roleId="rpmx.6894131567068077386" type="rpmx.WatchableWithValueExpression" typeId="rpmx.6894131567067751707" id="8885587964580995392">
-                <node role="name" roleId="rpmx.6894131567067751708" type="rpmx.WatchableNameExpression" typeId="rpmx.6894131567067751702" id="8885587964580995391">
+              <node role="childern" roleId="rpmx.6894131567068077386" type="rpmx.WatchableWithValueExpression" typeId="rpmx.6894131567067751707" id="4826423066066844200">
+                <node role="name" roleId="rpmx.6894131567067751708" type="rpmx.WatchableNameExpression" typeId="rpmx.6894131567067751702" id="4826423066066844201">
                   <property name="name" nameId="tpck.1169194664001" value="r" />
                 </node>
-                <node role="value" roleId="rpmx.6894131567067751709" type="rpmx.PrimitiveValueExpression" typeId="rpmx.6894131567067751726" id="8885587964580995395">
-                  <node role="value" roleId="rpmx.6894131567068111705" type="rpmx.LiteralValue" typeId="rpmx.6894131567068111611" id="8885587964580995396">
-                    <property name="value" nameId="rpmx.6894131567068111701" value="&lt;connected&gt;" />
+                <node role="value" roleId="rpmx.6894131567067751709" type="rpmx.ComplexValueExpression" typeId="rpmx.6894131567068077383" id="4826423066066844202">
+                  <node role="childern" roleId="rpmx.6894131567068077386" type="rpmx.WatchableWithValueExpression" typeId="rpmx.6894131567067751707" id="4826423066066844203">
+                    <node role="name" roleId="rpmx.6894131567067751708" type="rpmx.WatchableNameExpression" typeId="rpmx.6894131567067751702" id="4826423066066844204">
+                      <property name="name" nameId="tpck.1169194664001" value="r[0]" />
+                    </node>
+                    <node role="value" roleId="rpmx.6894131567067751709" type="rpmx.PrimitiveValueExpression" typeId="rpmx.6894131567067751726" id="4826423066066844205">
+                      <node role="value" roleId="rpmx.6894131567068111705" type="rpmx.LiteralValue" typeId="rpmx.6894131567068111611" id="4826423066066844206">
+                        <property name="value" nameId="rpmx.6894131567068111701" value="&lt;connected&gt;" />
+                      </node>
+                    </node>
+                  </node>
+                  <node role="value" roleId="rpmx.6894131567068111706" type="rpmx.LiteralValue" typeId="rpmx.6894131567068111611" id="4826423066066844207">
+                    <property name="value" nameId="rpmx.6894131567068111701" value="Intf[1]" />
                   </node>
                 </node>
               </node>
-              <node role="childern" roleId="rpmx.6894131567068077386" type="rpmx.WatchableWithValueExpression" typeId="rpmx.6894131567067751707" id="8885587964581184449">
-                <node role="name" roleId="rpmx.6894131567067751708" type="rpmx.WatchableNameExpression" typeId="rpmx.6894131567067751702" id="8885587964581184450">
+              <node role="childern" roleId="rpmx.6894131567068077386" type="rpmx.WatchableWithValueExpression" typeId="rpmx.6894131567067751707" id="4826423066066844192">
+                <node role="name" roleId="rpmx.6894131567067751708" type="rpmx.WatchableNameExpression" typeId="rpmx.6894131567067751702" id="4826423066066844193">
                   <property name="name" nameId="tpck.1169194664001" value="baseOfBase" />
                 </node>
-                <node role="value" roleId="rpmx.6894131567067751709" type="rpmx.PrimitiveValueExpression" typeId="rpmx.6894131567067751726" id="8885587964581184451">
-                  <node role="value" roleId="rpmx.6894131567068111705" type="rpmx.LiteralValue" typeId="rpmx.6894131567068111611" id="8885587964581184452">
-                    <property name="value" nameId="rpmx.6894131567068111701" value="&lt;connected&gt;" />
+                <node role="value" roleId="rpmx.6894131567067751709" type="rpmx.ComplexValueExpression" typeId="rpmx.6894131567068077383" id="4826423066066844194">
+                  <node role="childern" roleId="rpmx.6894131567068077386" type="rpmx.WatchableWithValueExpression" typeId="rpmx.6894131567067751707" id="4826423066066844195">
+                    <node role="name" roleId="rpmx.6894131567067751708" type="rpmx.WatchableNameExpression" typeId="rpmx.6894131567067751702" id="4826423066066844196">
+                      <property name="name" nameId="tpck.1169194664001" value="baseOfBase[0]" />
+                    </node>
+                    <node role="value" roleId="rpmx.6894131567067751709" type="rpmx.PrimitiveValueExpression" typeId="rpmx.6894131567067751726" id="4826423066066844197">
+                      <node role="value" roleId="rpmx.6894131567068111705" type="rpmx.LiteralValue" typeId="rpmx.6894131567068111611" id="4826423066066844198">
+                        <property name="value" nameId="rpmx.6894131567068111701" value="&lt;connected&gt;" />
+                      </node>
+                    </node>
+                  </node>
+                  <node role="value" roleId="rpmx.6894131567068111706" type="rpmx.LiteralValue" typeId="rpmx.6894131567068111611" id="4826423066066844199">
+                    <property name="value" nameId="rpmx.6894131567068111701" value="Intf[1]" />
                   </node>
                 </node>
               </node>
@@ -961,23 +991,43 @@
                   </node>
                 </node>
               </node>
-              <node role="childern" roleId="rpmx.6894131567068077386" type="rpmx.WatchableWithValueExpression" typeId="rpmx.6894131567067751707" id="8885587964580995417">
-                <node role="name" roleId="rpmx.6894131567067751708" type="rpmx.WatchableNameExpression" typeId="rpmx.6894131567067751702" id="8885587964580995418">
+              <node role="childern" roleId="rpmx.6894131567068077386" type="rpmx.WatchableWithValueExpression" typeId="rpmx.6894131567067751707" id="4826423066066844208">
+                <node role="name" roleId="rpmx.6894131567067751708" type="rpmx.WatchableNameExpression" typeId="rpmx.6894131567067751702" id="4826423066066844209">
                   <property name="name" nameId="tpck.1169194664001" value="r" />
                 </node>
-                <node role="value" roleId="rpmx.6894131567067751709" type="rpmx.PrimitiveValueExpression" typeId="rpmx.6894131567067751726" id="8885587964580995419">
-                  <node role="value" roleId="rpmx.6894131567068111705" type="rpmx.LiteralValue" typeId="rpmx.6894131567068111611" id="8885587964580995420">
-                    <property name="value" nameId="rpmx.6894131567068111701" value="&lt;connected&gt;" />
+                <node role="value" roleId="rpmx.6894131567067751709" type="rpmx.ComplexValueExpression" typeId="rpmx.6894131567068077383" id="4826423066066844210">
+                  <node role="childern" roleId="rpmx.6894131567068077386" type="rpmx.WatchableWithValueExpression" typeId="rpmx.6894131567067751707" id="4826423066066844211">
+                    <node role="name" roleId="rpmx.6894131567067751708" type="rpmx.WatchableNameExpression" typeId="rpmx.6894131567067751702" id="4826423066066844212">
+                      <property name="name" nameId="tpck.1169194664001" value="r[0]" />
+                    </node>
+                    <node role="value" roleId="rpmx.6894131567067751709" type="rpmx.PrimitiveValueExpression" typeId="rpmx.6894131567067751726" id="4826423066066844213">
+                      <node role="value" roleId="rpmx.6894131567068111705" type="rpmx.LiteralValue" typeId="rpmx.6894131567068111611" id="4826423066066844214">
+                        <property name="value" nameId="rpmx.6894131567068111701" value="&lt;connected&gt;" />
+                      </node>
+                    </node>
+                  </node>
+                  <node role="value" roleId="rpmx.6894131567068111706" type="rpmx.LiteralValue" typeId="rpmx.6894131567068111611" id="4826423066066844215">
+                    <property name="value" nameId="rpmx.6894131567068111701" value="Intf[1]" />
                   </node>
                 </node>
               </node>
-              <node role="childern" roleId="rpmx.6894131567068077386" type="rpmx.WatchableWithValueExpression" typeId="rpmx.6894131567067751707" id="8885587964581184453">
-                <node role="name" roleId="rpmx.6894131567067751708" type="rpmx.WatchableNameExpression" typeId="rpmx.6894131567067751702" id="8885587964581184454">
+              <node role="childern" roleId="rpmx.6894131567068077386" type="rpmx.WatchableWithValueExpression" typeId="rpmx.6894131567067751707" id="4826423066066844216">
+                <node role="name" roleId="rpmx.6894131567067751708" type="rpmx.WatchableNameExpression" typeId="rpmx.6894131567067751702" id="4826423066066844217">
                   <property name="name" nameId="tpck.1169194664001" value="baseOfBase" />
                 </node>
-                <node role="value" roleId="rpmx.6894131567067751709" type="rpmx.PrimitiveValueExpression" typeId="rpmx.6894131567067751726" id="8885587964581184455">
-                  <node role="value" roleId="rpmx.6894131567068111705" type="rpmx.LiteralValue" typeId="rpmx.6894131567068111611" id="8885587964581184456">
-                    <property name="value" nameId="rpmx.6894131567068111701" value="&lt;connected&gt;" />
+                <node role="value" roleId="rpmx.6894131567067751709" type="rpmx.ComplexValueExpression" typeId="rpmx.6894131567068077383" id="4826423066066844218">
+                  <node role="childern" roleId="rpmx.6894131567068077386" type="rpmx.WatchableWithValueExpression" typeId="rpmx.6894131567067751707" id="4826423066066844219">
+                    <node role="name" roleId="rpmx.6894131567067751708" type="rpmx.WatchableNameExpression" typeId="rpmx.6894131567067751702" id="4826423066066844220">
+                      <property name="name" nameId="tpck.1169194664001" value="baseOfBase[0]" />
+                    </node>
+                    <node role="value" roleId="rpmx.6894131567067751709" type="rpmx.PrimitiveValueExpression" typeId="rpmx.6894131567067751726" id="4826423066066844221">
+                      <node role="value" roleId="rpmx.6894131567068111705" type="rpmx.LiteralValue" typeId="rpmx.6894131567068111611" id="4826423066066844222">
+                        <property name="value" nameId="rpmx.6894131567068111701" value="&lt;connected&gt;" />
+                      </node>
+                    </node>
+                  </node>
+                  <node role="value" roleId="rpmx.6894131567068111706" type="rpmx.LiteralValue" typeId="rpmx.6894131567068111611" id="4826423066066844223">
+                    <property name="value" nameId="rpmx.6894131567068111701" value="Intf[1]" />
                   </node>
                 </node>
               </node>
@@ -1011,23 +1061,43 @@
                   </node>
                 </node>
               </node>
-              <node role="childern" roleId="rpmx.6894131567068077386" type="rpmx.WatchableWithValueExpression" typeId="rpmx.6894131567067751707" id="8885587964580995434">
-                <node role="name" roleId="rpmx.6894131567067751708" type="rpmx.WatchableNameExpression" typeId="rpmx.6894131567067751702" id="8885587964580995435">
+              <node role="childern" roleId="rpmx.6894131567068077386" type="rpmx.WatchableWithValueExpression" typeId="rpmx.6894131567067751707" id="4826423066066844224">
+                <node role="name" roleId="rpmx.6894131567067751708" type="rpmx.WatchableNameExpression" typeId="rpmx.6894131567067751702" id="4826423066066844225">
                   <property name="name" nameId="tpck.1169194664001" value="r" />
                 </node>
-                <node role="value" roleId="rpmx.6894131567067751709" type="rpmx.PrimitiveValueExpression" typeId="rpmx.6894131567067751726" id="8885587964580995436">
-                  <node role="value" roleId="rpmx.6894131567068111705" type="rpmx.LiteralValue" typeId="rpmx.6894131567068111611" id="8885587964580995437">
-                    <property name="value" nameId="rpmx.6894131567068111701" value="&lt;connected&gt;" />
+                <node role="value" roleId="rpmx.6894131567067751709" type="rpmx.ComplexValueExpression" typeId="rpmx.6894131567068077383" id="4826423066066844226">
+                  <node role="childern" roleId="rpmx.6894131567068077386" type="rpmx.WatchableWithValueExpression" typeId="rpmx.6894131567067751707" id="4826423066066844227">
+                    <node role="name" roleId="rpmx.6894131567067751708" type="rpmx.WatchableNameExpression" typeId="rpmx.6894131567067751702" id="4826423066066844228">
+                      <property name="name" nameId="tpck.1169194664001" value="r[0]" />
+                    </node>
+                    <node role="value" roleId="rpmx.6894131567067751709" type="rpmx.PrimitiveValueExpression" typeId="rpmx.6894131567067751726" id="4826423066066844229">
+                      <node role="value" roleId="rpmx.6894131567068111705" type="rpmx.LiteralValue" typeId="rpmx.6894131567068111611" id="4826423066066844230">
+                        <property name="value" nameId="rpmx.6894131567068111701" value="&lt;connected&gt;" />
+                      </node>
+                    </node>
+                  </node>
+                  <node role="value" roleId="rpmx.6894131567068111706" type="rpmx.LiteralValue" typeId="rpmx.6894131567068111611" id="4826423066066844231">
+                    <property name="value" nameId="rpmx.6894131567068111701" value="Intf[1]" />
                   </node>
                 </node>
               </node>
-              <node role="childern" roleId="rpmx.6894131567068077386" type="rpmx.WatchableWithValueExpression" typeId="rpmx.6894131567067751707" id="8885587964581184457">
-                <node role="name" roleId="rpmx.6894131567067751708" type="rpmx.WatchableNameExpression" typeId="rpmx.6894131567067751702" id="8885587964581184458">
+              <node role="childern" roleId="rpmx.6894131567068077386" type="rpmx.WatchableWithValueExpression" typeId="rpmx.6894131567067751707" id="4826423066066844232">
+                <node role="name" roleId="rpmx.6894131567067751708" type="rpmx.WatchableNameExpression" typeId="rpmx.6894131567067751702" id="4826423066066844233">
                   <property name="name" nameId="tpck.1169194664001" value="baseOfBase" />
                 </node>
-                <node role="value" roleId="rpmx.6894131567067751709" type="rpmx.PrimitiveValueExpression" typeId="rpmx.6894131567067751726" id="8885587964581184459">
-                  <node role="value" roleId="rpmx.6894131567068111705" type="rpmx.LiteralValue" typeId="rpmx.6894131567068111611" id="8885587964581184460">
-                    <property name="value" nameId="rpmx.6894131567068111701" value="&lt;connected&gt;" />
+                <node role="value" roleId="rpmx.6894131567067751709" type="rpmx.ComplexValueExpression" typeId="rpmx.6894131567068077383" id="4826423066066844234">
+                  <node role="childern" roleId="rpmx.6894131567068077386" type="rpmx.WatchableWithValueExpression" typeId="rpmx.6894131567067751707" id="4826423066066844235">
+                    <node role="name" roleId="rpmx.6894131567067751708" type="rpmx.WatchableNameExpression" typeId="rpmx.6894131567067751702" id="4826423066066844236">
+                      <property name="name" nameId="tpck.1169194664001" value="baseOfBase[0]" />
+                    </node>
+                    <node role="value" roleId="rpmx.6894131567067751709" type="rpmx.PrimitiveValueExpression" typeId="rpmx.6894131567067751726" id="4826423066066844237">
+                      <node role="value" roleId="rpmx.6894131567068111705" type="rpmx.LiteralValue" typeId="rpmx.6894131567068111611" id="4826423066066844238">
+                        <property name="value" nameId="rpmx.6894131567068111701" value="&lt;connected&gt;" />
+                      </node>
+                    </node>
+                  </node>
+                  <node role="value" roleId="rpmx.6894131567068111706" type="rpmx.LiteralValue" typeId="rpmx.6894131567068111611" id="4826423066066844239">
+                    <property name="value" nameId="rpmx.6894131567068111701" value="Intf[1]" />
                   </node>
                 </node>
               </node>
@@ -1061,23 +1131,43 @@
                   </node>
                 </node>
               </node>
-              <node role="childern" roleId="rpmx.6894131567068077386" type="rpmx.WatchableWithValueExpression" typeId="rpmx.6894131567067751707" id="8885587964580995438">
-                <node role="name" roleId="rpmx.6894131567067751708" type="rpmx.WatchableNameExpression" typeId="rpmx.6894131567067751702" id="8885587964580995439">
+              <node role="childern" roleId="rpmx.6894131567068077386" type="rpmx.WatchableWithValueExpression" typeId="rpmx.6894131567067751707" id="4826423066066844240">
+                <node role="name" roleId="rpmx.6894131567067751708" type="rpmx.WatchableNameExpression" typeId="rpmx.6894131567067751702" id="4826423066066844241">
                   <property name="name" nameId="tpck.1169194664001" value="r" />
                 </node>
-                <node role="value" roleId="rpmx.6894131567067751709" type="rpmx.PrimitiveValueExpression" typeId="rpmx.6894131567067751726" id="8885587964580995440">
-                  <node role="value" roleId="rpmx.6894131567068111705" type="rpmx.LiteralValue" typeId="rpmx.6894131567068111611" id="8885587964580995441">
-                    <property name="value" nameId="rpmx.6894131567068111701" value="&lt;connected&gt;" />
+                <node role="value" roleId="rpmx.6894131567067751709" type="rpmx.ComplexValueExpression" typeId="rpmx.6894131567068077383" id="4826423066066844242">
+                  <node role="childern" roleId="rpmx.6894131567068077386" type="rpmx.WatchableWithValueExpression" typeId="rpmx.6894131567067751707" id="4826423066066844243">
+                    <node role="name" roleId="rpmx.6894131567067751708" type="rpmx.WatchableNameExpression" typeId="rpmx.6894131567067751702" id="4826423066066844244">
+                      <property name="name" nameId="tpck.1169194664001" value="r[0]" />
+                    </node>
+                    <node role="value" roleId="rpmx.6894131567067751709" type="rpmx.PrimitiveValueExpression" typeId="rpmx.6894131567067751726" id="4826423066066844245">
+                      <node role="value" roleId="rpmx.6894131567068111705" type="rpmx.LiteralValue" typeId="rpmx.6894131567068111611" id="4826423066066844246">
+                        <property name="value" nameId="rpmx.6894131567068111701" value="&lt;connected&gt;" />
+                      </node>
+                    </node>
+                  </node>
+                  <node role="value" roleId="rpmx.6894131567068111706" type="rpmx.LiteralValue" typeId="rpmx.6894131567068111611" id="4826423066066844247">
+                    <property name="value" nameId="rpmx.6894131567068111701" value="Intf[1]" />
                   </node>
                 </node>
               </node>
-              <node role="childern" roleId="rpmx.6894131567068077386" type="rpmx.WatchableWithValueExpression" typeId="rpmx.6894131567067751707" id="8885587964581184461">
-                <node role="name" roleId="rpmx.6894131567067751708" type="rpmx.WatchableNameExpression" typeId="rpmx.6894131567067751702" id="8885587964581184462">
+              <node role="childern" roleId="rpmx.6894131567068077386" type="rpmx.WatchableWithValueExpression" typeId="rpmx.6894131567067751707" id="4826423066066844248">
+                <node role="name" roleId="rpmx.6894131567067751708" type="rpmx.WatchableNameExpression" typeId="rpmx.6894131567067751702" id="4826423066066844249">
                   <property name="name" nameId="tpck.1169194664001" value="baseOfBase" />
                 </node>
-                <node role="value" roleId="rpmx.6894131567067751709" type="rpmx.PrimitiveValueExpression" typeId="rpmx.6894131567067751726" id="8885587964581184463">
-                  <node role="value" roleId="rpmx.6894131567068111705" type="rpmx.LiteralValue" typeId="rpmx.6894131567068111611" id="8885587964581184464">
-                    <property name="value" nameId="rpmx.6894131567068111701" value="&lt;connected&gt;" />
+                <node role="value" roleId="rpmx.6894131567067751709" type="rpmx.ComplexValueExpression" typeId="rpmx.6894131567068077383" id="4826423066066844250">
+                  <node role="childern" roleId="rpmx.6894131567068077386" type="rpmx.WatchableWithValueExpression" typeId="rpmx.6894131567067751707" id="4826423066066844251">
+                    <node role="name" roleId="rpmx.6894131567067751708" type="rpmx.WatchableNameExpression" typeId="rpmx.6894131567067751702" id="4826423066066844252">
+                      <property name="name" nameId="tpck.1169194664001" value="baseOfBase[0]" />
+                    </node>
+                    <node role="value" roleId="rpmx.6894131567067751709" type="rpmx.PrimitiveValueExpression" typeId="rpmx.6894131567067751726" id="4826423066066844253">
+                      <node role="value" roleId="rpmx.6894131567068111705" type="rpmx.LiteralValue" typeId="rpmx.6894131567068111611" id="4826423066066844254">
+                        <property name="value" nameId="rpmx.6894131567068111701" value="&lt;connected&gt;" />
+                      </node>
+                    </node>
+                  </node>
+                  <node role="value" roleId="rpmx.6894131567068111706" type="rpmx.LiteralValue" typeId="rpmx.6894131567068111611" id="4826423066066844255">
+                    <property name="value" nameId="rpmx.6894131567068111701" value="Intf[1]" />
                   </node>
                 </node>
               </node>
@@ -1164,23 +1254,43 @@
               </node>
             </node>
           </node>
-          <node role="watchables" roleId="rpmx.4550138447367880227" type="rpmx.WatchableWithValueExpression" typeId="rpmx.6894131567067751707" id="8885587964581010121">
-            <node role="name" roleId="rpmx.6894131567067751708" type="rpmx.WatchableNameExpression" typeId="rpmx.6894131567067751702" id="8885587964581010122">
+          <node role="watchables" roleId="rpmx.4550138447367880227" type="rpmx.WatchableWithValueExpression" typeId="rpmx.6894131567067751707" id="4826423066066844256">
+            <node role="name" roleId="rpmx.6894131567067751708" type="rpmx.WatchableNameExpression" typeId="rpmx.6894131567067751702" id="4826423066066844257">
               <property name="name" nameId="tpck.1169194664001" value="r" />
             </node>
-            <node role="value" roleId="rpmx.6894131567067751709" type="rpmx.PrimitiveValueExpression" typeId="rpmx.6894131567067751726" id="8885587964581010123">
-              <node role="value" roleId="rpmx.6894131567068111705" type="rpmx.LiteralValue" typeId="rpmx.6894131567068111611" id="8885587964581010124">
-                <property name="value" nameId="rpmx.6894131567068111701" value="&lt;connected&gt;" />
+            <node role="value" roleId="rpmx.6894131567067751709" type="rpmx.ComplexValueExpression" typeId="rpmx.6894131567068077383" id="4826423066066844258">
+              <node role="childern" roleId="rpmx.6894131567068077386" type="rpmx.WatchableWithValueExpression" typeId="rpmx.6894131567067751707" id="4826423066066844259">
+                <node role="name" roleId="rpmx.6894131567067751708" type="rpmx.WatchableNameExpression" typeId="rpmx.6894131567067751702" id="4826423066066844260">
+                  <property name="name" nameId="tpck.1169194664001" value="r[0]" />
+                </node>
+                <node role="value" roleId="rpmx.6894131567067751709" type="rpmx.PrimitiveValueExpression" typeId="rpmx.6894131567067751726" id="4826423066066844261">
+                  <node role="value" roleId="rpmx.6894131567068111705" type="rpmx.LiteralValue" typeId="rpmx.6894131567068111611" id="4826423066066844262">
+                    <property name="value" nameId="rpmx.6894131567068111701" value="&lt;connected&gt;" />
+                  </node>
+                </node>
+              </node>
+              <node role="value" roleId="rpmx.6894131567068111706" type="rpmx.LiteralValue" typeId="rpmx.6894131567068111611" id="4826423066066844263">
+                <property name="value" nameId="rpmx.6894131567068111701" value="Intf[1]" />
               </node>
             </node>
           </node>
-          <node role="watchables" roleId="rpmx.4550138447367880227" type="rpmx.WatchableWithValueExpression" typeId="rpmx.6894131567067751707" id="8885587964581080524">
-            <node role="name" roleId="rpmx.6894131567067751708" type="rpmx.WatchableNameExpression" typeId="rpmx.6894131567067751702" id="8885587964581080525">
+          <node role="watchables" roleId="rpmx.4550138447367880227" type="rpmx.WatchableWithValueExpression" typeId="rpmx.6894131567067751707" id="4826423066066844264">
+            <node role="name" roleId="rpmx.6894131567067751708" type="rpmx.WatchableNameExpression" typeId="rpmx.6894131567067751702" id="4826423066066844265">
               <property name="name" nameId="tpck.1169194664001" value="baseOfBase" />
             </node>
-            <node role="value" roleId="rpmx.6894131567067751709" type="rpmx.PrimitiveValueExpression" typeId="rpmx.6894131567067751726" id="8885587964581080526">
-              <node role="value" roleId="rpmx.6894131567068111705" type="rpmx.LiteralValue" typeId="rpmx.6894131567068111611" id="8885587964581080527">
-                <property name="value" nameId="rpmx.6894131567068111701" value="&lt;connected&gt;" />
+            <node role="value" roleId="rpmx.6894131567067751709" type="rpmx.ComplexValueExpression" typeId="rpmx.6894131567068077383" id="4826423066066844266">
+              <node role="childern" roleId="rpmx.6894131567068077386" type="rpmx.WatchableWithValueExpression" typeId="rpmx.6894131567067751707" id="4826423066066844267">
+                <node role="name" roleId="rpmx.6894131567067751708" type="rpmx.WatchableNameExpression" typeId="rpmx.6894131567067751702" id="4826423066066844268">
+                  <property name="name" nameId="tpck.1169194664001" value="baseOfBase[0]" />
+                </node>
+                <node role="value" roleId="rpmx.6894131567067751709" type="rpmx.PrimitiveValueExpression" typeId="rpmx.6894131567067751726" id="4826423066066844269">
+                  <node role="value" roleId="rpmx.6894131567068111705" type="rpmx.LiteralValue" typeId="rpmx.6894131567068111611" id="4826423066066844270">
+                    <property name="value" nameId="rpmx.6894131567068111701" value="&lt;connected&gt;" />
+                  </node>
+                </node>
+              </node>
+              <node role="value" roleId="rpmx.6894131567068111706" type="rpmx.LiteralValue" typeId="rpmx.6894131567068111611" id="4826423066066844271">
+                <property name="value" nameId="rpmx.6894131567068111701" value="Intf[1]" />
               </node>
             </node>
           </node>
@@ -1228,23 +1338,43 @@
               </node>
             </node>
           </node>
-          <node role="watchables" roleId="rpmx.4550138447367880227" type="rpmx.WatchableWithValueExpression" typeId="rpmx.6894131567067751707" id="8885587964581010125">
-            <node role="name" roleId="rpmx.6894131567067751708" type="rpmx.WatchableNameExpression" typeId="rpmx.6894131567067751702" id="8885587964581010126">
+          <node role="watchables" roleId="rpmx.4550138447367880227" type="rpmx.WatchableWithValueExpression" typeId="rpmx.6894131567067751707" id="4826423066066844272">
+            <node role="name" roleId="rpmx.6894131567067751708" type="rpmx.WatchableNameExpression" typeId="rpmx.6894131567067751702" id="4826423066066844273">
               <property name="name" nameId="tpck.1169194664001" value="r" />
             </node>
-            <node role="value" roleId="rpmx.6894131567067751709" type="rpmx.PrimitiveValueExpression" typeId="rpmx.6894131567067751726" id="8885587964581010127">
-              <node role="value" roleId="rpmx.6894131567068111705" type="rpmx.LiteralValue" typeId="rpmx.6894131567068111611" id="8885587964581010128">
-                <property name="value" nameId="rpmx.6894131567068111701" value="&lt;connected&gt;" />
+            <node role="value" roleId="rpmx.6894131567067751709" type="rpmx.ComplexValueExpression" typeId="rpmx.6894131567068077383" id="4826423066066844274">
+              <node role="childern" roleId="rpmx.6894131567068077386" type="rpmx.WatchableWithValueExpression" typeId="rpmx.6894131567067751707" id="4826423066066844275">
+                <node role="name" roleId="rpmx.6894131567067751708" type="rpmx.WatchableNameExpression" typeId="rpmx.6894131567067751702" id="4826423066066844276">
+                  <property name="name" nameId="tpck.1169194664001" value="r[0]" />
+                </node>
+                <node role="value" roleId="rpmx.6894131567067751709" type="rpmx.PrimitiveValueExpression" typeId="rpmx.6894131567067751726" id="4826423066066844277">
+                  <node role="value" roleId="rpmx.6894131567068111705" type="rpmx.LiteralValue" typeId="rpmx.6894131567068111611" id="4826423066066844278">
+                    <property name="value" nameId="rpmx.6894131567068111701" value="&lt;connected&gt;" />
+                  </node>
+                </node>
+              </node>
+              <node role="value" roleId="rpmx.6894131567068111706" type="rpmx.LiteralValue" typeId="rpmx.6894131567068111611" id="4826423066066844279">
+                <property name="value" nameId="rpmx.6894131567068111701" value="Intf[1]" />
               </node>
             </node>
           </node>
-          <node role="watchables" roleId="rpmx.4550138447367880227" type="rpmx.WatchableWithValueExpression" typeId="rpmx.6894131567067751707" id="8885587964581080520">
-            <node role="name" roleId="rpmx.6894131567067751708" type="rpmx.WatchableNameExpression" typeId="rpmx.6894131567067751702" id="8885587964581080521">
+          <node role="watchables" roleId="rpmx.4550138447367880227" type="rpmx.WatchableWithValueExpression" typeId="rpmx.6894131567067751707" id="4826423066066844280">
+            <node role="name" roleId="rpmx.6894131567067751708" type="rpmx.WatchableNameExpression" typeId="rpmx.6894131567067751702" id="4826423066066844281">
               <property name="name" nameId="tpck.1169194664001" value="baseOfBase" />
             </node>
-            <node role="value" roleId="rpmx.6894131567067751709" type="rpmx.PrimitiveValueExpression" typeId="rpmx.6894131567067751726" id="8885587964581080522">
-              <node role="value" roleId="rpmx.6894131567068111705" type="rpmx.LiteralValue" typeId="rpmx.6894131567068111611" id="8885587964581080523">
-                <property name="value" nameId="rpmx.6894131567068111701" value="&lt;connected&gt;" />
+            <node role="value" roleId="rpmx.6894131567067751709" type="rpmx.ComplexValueExpression" typeId="rpmx.6894131567068077383" id="4826423066066844282">
+              <node role="childern" roleId="rpmx.6894131567068077386" type="rpmx.WatchableWithValueExpression" typeId="rpmx.6894131567067751707" id="4826423066066844283">
+                <node role="name" roleId="rpmx.6894131567067751708" type="rpmx.WatchableNameExpression" typeId="rpmx.6894131567067751702" id="4826423066066844284">
+                  <property name="name" nameId="tpck.1169194664001" value="baseOfBase[0]" />
+                </node>
+                <node role="value" roleId="rpmx.6894131567067751709" type="rpmx.PrimitiveValueExpression" typeId="rpmx.6894131567067751726" id="4826423066066844285">
+                  <node role="value" roleId="rpmx.6894131567068111705" type="rpmx.LiteralValue" typeId="rpmx.6894131567068111611" id="4826423066066844286">
+                    <property name="value" nameId="rpmx.6894131567068111701" value="&lt;connected&gt;" />
+                  </node>
+                </node>
+              </node>
+              <node role="value" roleId="rpmx.6894131567068111706" type="rpmx.LiteralValue" typeId="rpmx.6894131567068111611" id="4826423066066844287">
+                <property name="value" nameId="rpmx.6894131567068111701" value="Intf[1]" />
               </node>
             </node>
           </node>
@@ -1307,23 +1437,43 @@
               </node>
             </node>
           </node>
-          <node role="watchables" roleId="rpmx.4550138447367880227" type="rpmx.WatchableWithValueExpression" typeId="rpmx.6894131567067751707" id="8885587964581010129">
-            <node role="name" roleId="rpmx.6894131567067751708" type="rpmx.WatchableNameExpression" typeId="rpmx.6894131567067751702" id="8885587964581010130">
+          <node role="watchables" roleId="rpmx.4550138447367880227" type="rpmx.WatchableWithValueExpression" typeId="rpmx.6894131567067751707" id="4826423066066844288">
+            <node role="name" roleId="rpmx.6894131567067751708" type="rpmx.WatchableNameExpression" typeId="rpmx.6894131567067751702" id="4826423066066844289">
               <property name="name" nameId="tpck.1169194664001" value="r" />
             </node>
-            <node role="value" roleId="rpmx.6894131567067751709" type="rpmx.PrimitiveValueExpression" typeId="rpmx.6894131567067751726" id="8885587964581010131">
-              <node role="value" roleId="rpmx.6894131567068111705" type="rpmx.LiteralValue" typeId="rpmx.6894131567068111611" id="8885587964581010132">
-                <property name="value" nameId="rpmx.6894131567068111701" value="&lt;connected&gt;" />
+            <node role="value" roleId="rpmx.6894131567067751709" type="rpmx.ComplexValueExpression" typeId="rpmx.6894131567068077383" id="4826423066066844290">
+              <node role="childern" roleId="rpmx.6894131567068077386" type="rpmx.WatchableWithValueExpression" typeId="rpmx.6894131567067751707" id="4826423066066844291">
+                <node role="name" roleId="rpmx.6894131567067751708" type="rpmx.WatchableNameExpression" typeId="rpmx.6894131567067751702" id="4826423066066844292">
+                  <property name="name" nameId="tpck.1169194664001" value="r[0]" />
+                </node>
+                <node role="value" roleId="rpmx.6894131567067751709" type="rpmx.PrimitiveValueExpression" typeId="rpmx.6894131567067751726" id="4826423066066844293">
+                  <node role="value" roleId="rpmx.6894131567068111705" type="rpmx.LiteralValue" typeId="rpmx.6894131567068111611" id="4826423066066844294">
+                    <property name="value" nameId="rpmx.6894131567068111701" value="&lt;connected&gt;" />
+                  </node>
+                </node>
+              </node>
+              <node role="value" roleId="rpmx.6894131567068111706" type="rpmx.LiteralValue" typeId="rpmx.6894131567068111611" id="4826423066066844295">
+                <property name="value" nameId="rpmx.6894131567068111701" value="Intf[1]" />
               </node>
             </node>
           </node>
-          <node role="watchables" roleId="rpmx.4550138447367880227" type="rpmx.WatchableWithValueExpression" typeId="rpmx.6894131567067751707" id="8885587964581080516">
-            <node role="name" roleId="rpmx.6894131567067751708" type="rpmx.WatchableNameExpression" typeId="rpmx.6894131567067751702" id="8885587964581080517">
+          <node role="watchables" roleId="rpmx.4550138447367880227" type="rpmx.WatchableWithValueExpression" typeId="rpmx.6894131567067751707" id="4826423066066844296">
+            <node role="name" roleId="rpmx.6894131567067751708" type="rpmx.WatchableNameExpression" typeId="rpmx.6894131567067751702" id="4826423066066844297">
               <property name="name" nameId="tpck.1169194664001" value="baseOfBase" />
             </node>
-            <node role="value" roleId="rpmx.6894131567067751709" type="rpmx.PrimitiveValueExpression" typeId="rpmx.6894131567067751726" id="8885587964581080518">
-              <node role="value" roleId="rpmx.6894131567068111705" type="rpmx.LiteralValue" typeId="rpmx.6894131567068111611" id="8885587964581080519">
-                <property name="value" nameId="rpmx.6894131567068111701" value="&lt;connected&gt;" />
+            <node role="value" roleId="rpmx.6894131567067751709" type="rpmx.ComplexValueExpression" typeId="rpmx.6894131567068077383" id="4826423066066844298">
+              <node role="childern" roleId="rpmx.6894131567068077386" type="rpmx.WatchableWithValueExpression" typeId="rpmx.6894131567067751707" id="4826423066066844299">
+                <node role="name" roleId="rpmx.6894131567067751708" type="rpmx.WatchableNameExpression" typeId="rpmx.6894131567067751702" id="4826423066066844300">
+                  <property name="name" nameId="tpck.1169194664001" value="baseOfBase[0]" />
+                </node>
+                <node role="value" roleId="rpmx.6894131567067751709" type="rpmx.PrimitiveValueExpression" typeId="rpmx.6894131567067751726" id="4826423066066844301">
+                  <node role="value" roleId="rpmx.6894131567068111705" type="rpmx.LiteralValue" typeId="rpmx.6894131567068111611" id="4826423066066844302">
+                    <property name="value" nameId="rpmx.6894131567068111701" value="&lt;connected&gt;" />
+                  </node>
+                </node>
+              </node>
+              <node role="value" roleId="rpmx.6894131567068111706" type="rpmx.LiteralValue" typeId="rpmx.6894131567068111611" id="4826423066066844303">
+                <property name="value" nameId="rpmx.6894131567068111701" value="Intf[1]" />
               </node>
             </node>
           </node>
