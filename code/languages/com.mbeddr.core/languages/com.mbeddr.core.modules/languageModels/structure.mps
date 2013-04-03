@@ -12,6 +12,7 @@
   <import index="tpce" modelUID="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" version="0" implicit="yes" />
   <import index="yq40" modelUID="r:152b3fc0-83a1-4bab-a8cd-565eb8483785(com.mbeddr.core.pointers.structure)" version="3" implicit="yes" />
   <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="5" implicit="yes" />
+  <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="3" implicit="yes" />
   <roots>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="6437088627575722813">
       <property name="name" nameId="tpck.1169194664001" value="Module" />
@@ -108,7 +109,7 @@
       <property name="virtualPackage" nameId="tpck.1193676396447" value="global" />
       <property name="name" nameId="tpck.1169194664001" value="GlobalConstantDeclaration" />
       <property name="iconPath" nameId="tpce.1160488491229" value="${language_descriptor}/icons/globalconst.jpg" />
-      <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
+      <link role="extends" roleId="tpce.1071489389519" targetNodeId="3376775282622142916" resolveInfo="AbstractDefineLike" />
     </node>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="6610873504380357354">
       <property name="virtualPackage" nameId="tpck.1193676396447" value="global" />
@@ -720,27 +721,6 @@
     </node>
   </root>
   <root id="3788988821851860886">
-    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="3788988821851871048">
-      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
-      <property name="role" nameId="tpce.1071599776563" value="value" />
-      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="mj1l.8860443239512128050" resolveInfo="Expression" />
-    </node>
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="3788988821851871043">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="6437088627575722831" resolveInfo="IModuleContent" />
-    </node>
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="8628579007224197664">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="vs0r.8628579007224193612" resolveInfo="INameAllUpperCase" />
-    </node>
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="8515777736166452814">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="mj1l.8515777736166452576" resolveInfo="IInitializationContext" />
-    </node>
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7123462210703020149">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="vs0r.7123462210702867708" resolveInfo="ILOCCountProvider" />
-    </node>
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="870493690554580542">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="mj1l.7349952699787631186" resolveInfo="IDataflowVariable" />
-    </node>
     <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.BooleanConceptProperty" typeId="tpce.1105725574259" id="3788988821851871044">
       <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="1317894735999278394" resolveInfo="exportable" />
     </node>

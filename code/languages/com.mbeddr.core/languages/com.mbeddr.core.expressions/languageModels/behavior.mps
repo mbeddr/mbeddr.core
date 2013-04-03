@@ -435,6 +435,9 @@
       <property name="virtualPackage" nameId="tpck.1193676396447" value="dataflow" />
       <link role="concept" roleId="1i04.1225194240799" targetNodeId="mj1l.3196454794517236255" resolveInfo="IDataflowAssignment" />
     </node>
+    <node type="1i04.ConceptBehavior" typeId="1i04.1225194240794" id="4621481987179755163">
+      <link role="concept" roleId="1i04.1225194240799" targetNodeId="mj1l.4621481987179755162" resolveInfo="IPrintable" />
+    </node>
   </roots>
   <root id="8860443239512166653">
     <node role="method" roleId="1i04.1225194240805" type="1i04.ConceptMethodDeclaration" typeId="1i04.1225194472830" id="3136162014990199388">
@@ -12808,6 +12811,19 @@
     </node>
     <node role="constructor" roleId="1i04.1225194240801" type="1i04.ConceptConstructorDeclaration" typeId="1i04.1225194413805" id="3196454794517236257">
       <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="3196454794517236258" />
+    </node>
+  </root>
+  <root id="4621481987179755163">
+    <node role="method" roleId="1i04.1225194240805" type="1i04.ConceptMethodDeclaration" typeId="1i04.1225194472830" id="9112271685744623396">
+      <property name="isAbstract" nameId="1i04.1225194472834" value="true" />
+      <property name="isVirtual" nameId="1i04.1225194472832" value="true" />
+      <property name="name" nameId="tpck.1169194664001" value="toString" />
+      <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="9112271685744623397" />
+      <node role="returnType" roleId="tpee.1068580123133" type="tpee.StringType" typeId="tpee.1225271177708" id="9112271685744623398" />
+      <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="9112271685744623399" />
+    </node>
+    <node role="constructor" roleId="1i04.1225194240801" type="1i04.ConceptConstructorDeclaration" typeId="1i04.1225194413805" id="4621481987179755164">
+      <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="4621481987179755165" />
     </node>
   </root>
 </model>

@@ -634,6 +634,9 @@
       <property name="virtualPackage" nameId="tpck.1193676396447" value="dataflow" />
       <property name="name" nameId="tpck.1169194664001" value="IDataflowAssignment" />
     </node>
+    <node type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="4621481987179755162">
+      <property name="name" nameId="tpck.1169194664001" value="IPrintable" />
+    </node>
   </roots>
   <root id="8860443239512128050">
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="356284525549555981">
@@ -2229,5 +2232,6 @@
   </root>
   <root id="358427452148581103" />
   <root id="3196454794517236255" />
+  <root id="4621481987179755162" />
 </model>
 
