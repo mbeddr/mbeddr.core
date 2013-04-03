@@ -53,7 +53,52 @@
       </fileset>
     </delete>
   </target>
+  
+  <target name="build-tests" depends="init">
+    <mps.generate parallelMode="false" fork="true">
+      <macro name="mbeddr.github.core.home" path="${mbeddr.github.core.home}"/>
+      <jvmargs refid="myargs"/>      
+      <macro name="mbeddr.github.core.home" path="${mbeddr.github.core.home}"/>     
+      <library name="util.project" dir="${mbeddr.github.core.home}/${util.project.dir}"/>           
+      <modules dir="${mbeddr.github.core.home}/${util.project.dir}/tests"/>
+    </mps.generate>
+  </target>
+  
+  <target name="run-ts-tests" >
+    
+    <echo message="mbeddr.github.core.home = ${mbeddr.github.core.home}"/>
+    <echo message="path.macro.mbeddr.github.core.home := ${mbeddr.github.core.home}"/>
+    <echo message="mps.home := ${mps.home}"/>
+    
+    <junit haltonfailure="true" showoutput="true" fork="true" dir="${mps.home}">
+      <jvmarg value="-ea"/>
+      <jvmarg value="-Xss1024k"/>
+      <jvmarg value="-Xmx1024m"/>
+      <jvmarg value="-XX:MaxPermSize=256m"/>
+      <jvmarg value="-XX:+HeapDumpOnOutOfMemoryError"/>
+      <jvmarg value="-XX:-UseGCOverheadLimit"/>
+        
+      <sysproperty key="idea.load.plugins" value="true"/>
+      <sysproperty key="idea.system.path" value="${mps.platform.caches}/system"/>
+      <sysproperty key="idea.config.path" value="${mps.platform.caches}/config"/>
+      <sysproperty key="idea.plugins.path" value="${mps.platform.caches}/plugins"/>       
+      <sysproperty key="mps.junit.pathmacro.mbeddr.github.core.home" value="${mbeddr.github.core.home}"/>
+      <sysproperty key="mps.junit.project" value="${mbeddr.github.core.home}/${util.project.mpr}"/>
 
+      <classpath>
+        <fileset dir="${mps.home}/lib">
+          <include name="**/*.jar"/>
+        </fileset>
+        <fileset dir="${mps.home}/plugins">
+          <include name="**/*.jar"/>
+        </fileset>
+      </classpath>
+
+      <test name="jetbrains.mps.testbench.junit.suites.DefaultTestSuite"/>
+      <formatter type="xml"/>
+    </junit>
+  </target>
+  
   <target name="build-languages" depends="init">
     <mps.generate parallelMode="true" fork="true">
       <jvmargs refid="myargs"/>
