@@ -4,6 +4,7 @@
   <exported-language name="d62d6e81-9ae0-456b-b2c3-d71c0f373ded(com.mbeddr.analyses.nusmv.statemachine)" />
   <exported-solutions>
     <exported-solution>25d559de-599f-4919-b0d2-22ca6cabbcb5(com.mbeddr.analyses.nusmv.rt)</exported-solution>
+    <exported-solution>4c16cb42-7fa3-47c7-89c7-1c479c287588(com.mbeddr.analyses.utils)</exported-solution>
   </exported-solutions>
 </dev-kit>
 

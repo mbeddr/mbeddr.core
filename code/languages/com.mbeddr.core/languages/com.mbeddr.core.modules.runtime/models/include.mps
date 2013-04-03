@@ -10,8 +10,8 @@
   <import index="k7g3" modelUID="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.util(JDK/java.util@java_stub)" version="-1" />
   <import index="e2lb" modelUID="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" version="-1" />
   <import index="fxg7" modelUID="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.io(JDK/java.io@java_stub)" version="-1" />
-  <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="3" />
-  <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="22" />
+  <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="5" />
+  <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="23" />
   <import index="clbe" modelUID="r:61d840b4-12c1-49ea-b142-b2a1550a9b15(com.mbeddr.core.udt.structure)" version="7" />
   <import index="yq40" modelUID="r:152b3fc0-83a1-4bab-a8cd-565eb8483785(com.mbeddr.core.pointers.structure)" version="3" />
   <import index="nbyu" modelUID="r:5104a07c-c91d-412c-8374-26edb13383eb(com.mbeddr.core.embedded.structure)" version="2" />
@@ -37,7 +37,7 @@
   <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="5" />
   <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="7" />
   <import index="rj8d" modelUID="r:da9fd96f-5c71-45ab-b2da-1aa6232ec67f(com.mbeddr.core.statements.behavior)" version="0" />
-  <import index="qd6m" modelUID="r:c4c3f7d3-0acf-4671-a134-5fab66c4e637(com.mbeddr.core.modules.behavior)" version="0" />
+  <import index="qd6m" modelUID="r:c4c3f7d3-0acf-4671-a134-5fab66c4e637(com.mbeddr.core.modules.behavior)" version="1" />
   <import index="sf5" modelUID="f:java_stub#85d9f97b-1654-4692-b61c-fcc40db03653#org.eclipse.cdt.core.dom.ast.c(Eclipse.Debugger/org.eclipse.cdt.core.dom.ast.c@java_stub)" version="-1" />
   <import index="xqpa" modelUID="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang.reflect(JDK/java.lang.reflect@java_stub)" version="-1" />
   <import index="dbrf" modelUID="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#javax.swing(JDK/javax.swing@java_stub)" version="-1" />
@@ -47,7 +47,6 @@
   <import index="fojm" modelUID="f:java_stub#85d9f97b-1654-4692-b61c-fcc40db03653#org.eclipse.cdt.internal.core.parser(Eclipse.Debugger/org.eclipse.cdt.internal.core.parser@java_stub)" version="-1" />
   <import index="gn6g" modelUID="f:java_stub#85d9f97b-1654-4692-b61c-fcc40db03653#org.eclipse.cdt.core.dom(Eclipse.Debugger/org.eclipse.cdt.core.dom@java_stub)" version="-1" />
   <import index="x7kv" modelUID="f:java_stub#fda566a8-0df7-442b-b355-ba0f7b3d1cbd#org.apache.commons.io(com.mbeddr.core.modules.runtime/org.apache.commons.io@java_stub)" version="-1" />
-  <import index="brq7" modelUID="r:dbaab530-7e32-49a7-ad84-fd01a8f0ea89(com.mbeddr.core.modules.runtime.c.parser)" version="-1" />
   <import index="tp25" modelUID="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" version="-1" implicit="yes" />
   <import index="tp2q" modelUID="r:00000000-0000-4000-0000-011c8959032e(jetbrains.mps.baseLanguage.collections.structure)" version="7" implicit="yes" />
   <import index="tpib" modelUID="r:00000000-0000-4000-0000-011c8959057f(jetbrains.mps.baseLanguage.logging.structure)" version="0" implicit="yes" />
@@ -57,6 +56,8 @@
   <import index="hba4" modelUID="r:f5bd2ad9-cd54-4408-b815-07f9f306f074(com.mbeddr.mpsutil.blutil.structure)" version="7" implicit="yes" />
   <import index="7aka" modelUID="r:02a5dde5-8560-4c26-8875-8f2a79444bd3(com.mbeddr.mpsutil.bldoc.structure)" version="-1" implicit="yes" />
   <import index="m373" modelUID="r:4095af4f-a097-4799-aaa9-03df087ddfa6(jetbrains.mps.baseLanguage.javadoc.structure)" version="5" implicit="yes" />
+  <import index="87nw" modelUID="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" version="5" implicit="yes" />
+  <import index="brq7" modelUID="r:dbaab530-7e32-49a7-ad84-fd01a8f0ea89(com.mbeddr.core.modules.runtime.c.parser)" version="-1" implicit="yes" />
   <roots>
     <node type="tpee.ClassConcept" typeId="tpee.1068390468198" id="270496905847836993">
       <property name="name" nameId="tpck.1169194664001" value="CStubUtil" />
@@ -2243,7 +2244,7 @@
                               <link role="concept" roleId="hba4.4481811096720976619" targetNodeId="x27k.3788988821852026523" resolveInfo="GlobalConstantRef" />
                             </node>
                             <node role="children" roleId="hba4.4481811096720537463" type="hba4.RefStep" typeId="hba4.4481811096721038000" id="767256501283938262">
-                              <link role="refLink" roleId="hba4.4481811096721038001" targetNodeId="x27k.3788988821852026524" />
+                              <link role="refLink" roleId="hba4.4481811096721038001" targetNodeId="x27k.3376775282622611130" />
                               <node role="target" roleId="hba4.4481811096721038002" type="tp25.SNodeTypeCastExpression" typeId="tp25.1140137987495" id="767256501283938263">
                                 <link role="concept" roleId="tp25.1140138128738" targetNodeId="x27k.3788988821851860886" resolveInfo="GlobalConstantDeclaration" />
                                 <node role="leftExpression" roleId="tp25.1140138123956" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="767256501283938264">
@@ -5042,7 +5043,7 @@
                                   <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="3125271056635828072" resolveInfo="gcd" />
                                 </node>
                                 <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="3125271056635840846">
-                                  <link role="link" roleId="tp25.1138056516764" targetNodeId="x27k.3788988821851871048" />
+                                  <link role="link" roleId="tp25.1138056516764" targetNodeId="x27k.3376775282622233992" />
                                 </node>
                               </node>
                             </node>
@@ -5168,7 +5169,7 @@
                                                     <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="8885491090088554503" resolveInfo="gcdOriginal" />
                                                   </node>
                                                   <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="3125271056635866806">
-                                                    <link role="link" roleId="tp25.1138056516764" targetNodeId="x27k.3788988821851871048" />
+                                                    <link role="link" roleId="tp25.1138056516764" targetNodeId="x27k.3376775282622233992" />
                                                   </node>
                                                 </node>
                                               </node>
@@ -5199,7 +5200,7 @@
                                   <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="8885491090088554503" resolveInfo="gcdOriginal" />
                                 </node>
                                 <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="3125271056635879899">
-                                  <link role="link" roleId="tp25.1138056516764" targetNodeId="x27k.3788988821851871048" />
+                                  <link role="link" roleId="tp25.1138056516764" targetNodeId="x27k.3376775282622233992" />
                                 </node>
                               </node>
                               <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_IsInstanceOfOperation" typeId="tp25.1139621453865" id="3125271056635879927">
@@ -5228,7 +5229,7 @@
                                   <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="8885491090088554503" resolveInfo="gcdOriginal" />
                                 </node>
                                 <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="8885491090088554588">
-                                  <link role="link" roleId="tp25.1138056516764" targetNodeId="x27k.3788988821851871048" />
+                                  <link role="link" roleId="tp25.1138056516764" targetNodeId="x27k.3376775282622233992" />
                                 </node>
                               </node>
                             </node>
@@ -8212,7 +8213,7 @@
                         <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="5255370464256887296" resolveInfo="decl" />
                       </node>
                       <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="5255370464256887346">
-                        <link role="link" roleId="tp25.1138056516764" targetNodeId="x27k.3788988821851871048" />
+                        <link role="link" roleId="tp25.1138056516764" targetNodeId="x27k.3376775282622233992" />
                       </node>
                     </node>
                   </node>
@@ -8292,7 +8293,7 @@
                         <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="5255370464256887296" resolveInfo="decl" />
                       </node>
                       <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="5255370464256887383">
-                        <link role="link" roleId="tp25.1138056516764" targetNodeId="x27k.3788988821851871048" />
+                        <link role="link" roleId="tp25.1138056516764" targetNodeId="x27k.3376775282622233992" />
                       </node>
                     </node>
                   </node>
@@ -8478,7 +8479,7 @@
                 <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="5255370464256887296" resolveInfo="decl" />
               </node>
               <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="5255370464256887411">
-                <link role="link" roleId="tp25.1138056516764" targetNodeId="x27k.3788988821851871048" />
+                <link role="link" roleId="tp25.1138056516764" targetNodeId="x27k.3376775282622233992" />
               </node>
             </node>
           </node>
@@ -16926,8 +16927,13 @@
         <link role="classifier" roleId="tpee.1107535924139" targetNodeId="2009438888129319782" resolveInfo="DeclaratorDTO" />
       </node>
       <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="638966541988531466">
-        <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="7aka.Documentation" typeId="7aka.7999989049973673107" id="638966541988531467">
-          <property name="text" nameId="7aka.7999989049973673110" value="problem:in regular c you hava &quot;int a, b[], *c&quot;. in mbeddr c you hava &quot;int a; int[b]; int* c&quot;&#10;&#10;so the real type in regular c depends on the declarator" />
+        <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="7aka.BLDoc" typeId="7aka.6925419451529157942" id="4195764031267263166">
+          <node role="text" roleId="7aka.6925419451529198196" type="87nw.Text" typeId="87nw.2557074442922380897" id="4195764031267263167">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4195764031267263168" />
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4195764031267263169">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="problem:in regular c you hava \&quot;int a, b[], *c\&quot;. in mbeddr c you hava \&quot;int a; int[b]; int* c\&quot;\n\nso the real type in regular c depends on the declarator" />
+            </node>
+          </node>
         </node>
       </node>
       <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="638966541988531468">
@@ -17406,8 +17412,13 @@
         <link role="classifier" roleId="tpee.1107535924139" targetNodeId="2009438888129319782" resolveInfo="DeclaratorDTO" />
       </node>
       <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="2567691893340452023">
-        <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="7aka.Documentation" typeId="7aka.7999989049973673107" id="2567691893340452024">
-          <property name="text" nameId="7aka.7999989049973673110" value="problem:in regular c you hava &quot;int a, b[], *c&quot;. in mbeddr c you hava &quot;int a; int[b]; int* c&quot;&#10;&#10;so the real type in regular c depends on the declarator" />
+        <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="7aka.BLDoc" typeId="7aka.6925419451529157942" id="4195764031267263174">
+          <node role="text" roleId="7aka.6925419451529198196" type="87nw.Text" typeId="87nw.2557074442922380897" id="4195764031267263175">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4195764031267263176" />
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4195764031267263177">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="problem:in regular c you hava \&quot;int a, b[], *c\&quot;. in mbeddr c you hava \&quot;int a; int[b]; int* c\&quot;\nso the real type in regular c depends on the declarator" />
+            </node>
+          </node>
         </node>
       </node>
       <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="2567691893340452025">

@@ -70,7 +70,30 @@
       <mkdir dir="${mps.platform.caches}"/>
   </target>
 
-  <target name="build" depends="init">
+  <target name="build" depends="init, build-languages, build-solutions">
+  </target>
+
+
+  <target name="build-solutions" depends="init">
+    <mps.generate parallelMode="true" fork="true">
+      <jvmargs refid="myargs"/>
+      <macro name="mbeddr.github.core.home" path="${mbeddr.github.core.home}"/>
+	  <project file="${mbeddr.github.core.home}/code/applications/tutorial/mbeddr.tutorial.mpr"/>
+	  
+      <library name="util.project" dir="${utilLanguageDir}"/>                                                                                                
+      <library name="core.project" dir="${coreLanguageDir}"/>                                                                                                
+      <library name="debugger.project" dir="${debuggerLanguageDir}"/>                                                                                        
+      <library name="ext.project" dir="${extLanguageDir}"/> 
+      <library name="doc.project" dir="${docLanguageDir}"/> 
+      <library name="cc.project" dir="${ccLanguageDir}"/> 
+	  <library name="analyses.project" dir="${analysesanguageDir}"/> 
+      <library name="tutorial.project" dir="${mbeddr.github.core.home}/${mbeddr.tutorial.project.dir}/solutions"/> 	  
+    </mps.generate>
+  </target>
+
+
+
+  <target name="build-languages" depends="init">
     <mps.generate parallelMode="true" fork="true">
       <jvmargs refid="myargs"/>
       <macro name="mbeddr.github.core.home" path="${mbeddr.github.core.home}"/>
@@ -84,9 +107,11 @@
       <library name="cc.project" dir="${ccLanguageDir}"/> 
 	  <library name="analyses.project" dir="${analysesanguageDir}"/> 
       <library name="tutorial.project" dir="${mbeddr.github.core.home}/${mbeddr.tutorial.project.dir}/languages"/> 
-      <library name="tutorial.project" dir="${mbeddr.github.core.home}/${mbeddr.tutorial.project.dir}/solutions"/> 	  
     </mps.generate>
   </target>
+
+
+
 
 
   <target name="zipit">

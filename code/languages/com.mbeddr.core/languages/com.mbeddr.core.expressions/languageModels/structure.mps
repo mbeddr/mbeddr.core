@@ -586,7 +586,7 @@
       <property name="name" nameId="tpck.1169194664001" value="INumericLiteral" />
     </node>
     <node type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="7274201720600672741">
-      <property name="name" nameId="tpck.1169194664001" value="IDataflowVariableContainer" />
+      <property name="name" nameId="tpck.1169194664001" value="IDataflowVariableAccessor" />
       <property name="virtualPackage" nameId="tpck.1193676396447" value="dataflow" />
     </node>
     <node type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="7274201720600672742">
@@ -648,7 +648,7 @@
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="7274201720600672742" resolveInfo="IDataflowValue" />
     </node>
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7274201720600704517">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="7274201720600672741" resolveInfo="IDataflowVariableContainer" />
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="7274201720600672741" resolveInfo="IDataflowVariableAccessor" />
     </node>
     <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.BooleanConceptProperty" typeId="tpce.1105725574259" id="8860443239512128051">
       <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473854053" resolveInfo="abstract" />

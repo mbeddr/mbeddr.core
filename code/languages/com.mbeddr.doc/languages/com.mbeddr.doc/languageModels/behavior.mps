@@ -7,7 +7,7 @@
   <language namespace="13744753-c81f-424a-9c1b-cf8943bf4e86(jetbrains.mps.lang.sharedConcepts)" />
   <devkit namespace="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   <import index="2c95" modelUID="r:5f7188a9-e7b4-4a2e-bef9-38d2cf379fdc(com.mbeddr.doc.structure)" version="10" />
-  <import index="qd6m" modelUID="r:c4c3f7d3-0acf-4671-a134-5fab66c4e637(com.mbeddr.core.modules.behavior)" version="0" />
+  <import index="qd6m" modelUID="r:c4c3f7d3-0acf-4671-a134-5fab66c4e637(com.mbeddr.core.modules.behavior)" version="1" />
   <import index="fxg7" modelUID="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.io(JDK/java.io@java_stub)" version="-1" />
   <import index="lgzw" modelUID="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.util.regex(JDK/java.util.regex@java_stub)" version="-1" />
   <import index="vsqj" modelUID="f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.project(MPS.Core/jetbrains.mps.project@java_stub)" version="-1" />
@@ -88,15 +88,15 @@
       <link role="concept" roleId="1i04.1225194240799" targetNodeId="2c95.5378658552262903588" resolveInfo="Item" />
     </node>
     <node type="1i04.ConceptBehavior" typeId="1i04.1225194240794" id="6165313375055779636">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="words" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="words.formatted" />
       <link role="concept" roleId="1i04.1225194240799" targetNodeId="2c95.6165313375055755361" resolveInfo="MathFormattedText" />
     </node>
     <node type="1i04.ConceptBehavior" typeId="1i04.1225194240794" id="6165313375055779695">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="words" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="words.formatted" />
       <link role="concept" roleId="1i04.1225194240799" targetNodeId="2c95.4457500422381571986" resolveInfo="CodeFormattedText" />
     </node>
     <node type="1i04.ConceptBehavior" typeId="1i04.1225194240794" id="6165313375055797493">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="words" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="words.formatted" />
       <link role="concept" roleId="1i04.1225194240799" targetNodeId="2c95.6165313375055797476" resolveInfo="FormattedText" />
     </node>
     <node type="1i04.ConceptBehavior" typeId="1i04.1225194240794" id="4755612053022588106">

@@ -38,6 +38,10 @@
   
   <property name="mbeddr.cc.project.dir" value="code/languages/com.mbeddr.cc"/>
   <property name="mbeddr.cc.project.mpr" value="code/languages/com.mbeddr.cc/cc.dev.mpr"/> <!-- for the time being in core project... -->
+
+  <property name="mbeddr.doc.project.dir" value="code/languages/com.mbeddr.doc/"/>
+  <property name="mbeddr.doc.project.mpr" value="code/languages/com.mbeddr.doc/com.mbeddr.doc.mpr"/>
+
   
   <property name="mbeddr.debugger.project.dir" value="code/languages/com.mbeddr.debugger/"/>
   <property name="mbeddr.debugger.project.mpr" value="code/languages/com.mbeddr.debugger/debugger.dev.mpr"/>
@@ -47,6 +51,7 @@
   <property name="coreLanguageDir" value="${mbeddr.github.core.home}/${mbeddr.core.project.dir}/languages"/>
   <property name="extLanguageDir" value="${mbeddr.github.core.home}/${mbeddr.ext.project.dir}/languages"/>
   <property name="ccLanguageDir" value="${mbeddr.github.core.home}/${mbeddr.cc.project.dir}/languages"/>
+  <property name="docLanguageDir" value="${mbeddr.github.core.home}/${mbeddr.doc.project.dir}/languages"/>
  
   <jvmargs id="myargs">
       <arg value="-ea"/>
@@ -78,6 +83,7 @@
       <library name="debugger.project" dir="${debuggerLanguageDir}"/>                                                                                        
       <library name="ext.project" dir="${extLanguageDir}"/> 
       <library name="cc.project" dir="${ccLanguageDir}"/>
+      <library name="doc.project" dir="${docLanguageDir}"/>
       <macro name="mbeddr.github.core.home" path="${mbeddr.github.core.home}"/>
       <modules dir="${mbeddr.github.core.home}/${mbeddr.debugger-test.project.dir}/languages"/>
     </mps.generate>
@@ -93,6 +99,7 @@
       <library name="debugger.project" dir="${debuggerLanguageDir}"/>                                                                                        
       <library name="ext.project" dir="${extLanguageDir}"/> 
       <library name="cc.project" dir="${ccLanguageDir}"/>
+      <library name="doc.project" dir="${docLanguageDir}"/>
       <library name="mbeddr.project" dir="${mbeddr.github.core.home}/${mbeddr.debugger-test.project.dir}"/>
       <modules dir="${mbeddr.github.core.home}/${mbeddr.debugger-test.project.dir}/tests"/>
     </mps.generate>
