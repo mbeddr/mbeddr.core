@@ -1,0 +1,129 @@
+<project name="mbeddr download and deploy plugins" default="install-plugins">
+  <property file="build.properties"/>
+  
+  <!-- url/mps properties -->
+  <property name="plugins.folder.name" value="plugins"/>
+  <property name="base-url" value="https://mbeddr-build.itemis.de/teamcity/guestAuth/repository/download"/>
+  <property name="latest-build" value="latest.lastSuccessful"/>
+  <!-- multiline -->  
+  <property name="multiline.zip-file.name" value="mps-multiline.zip" />
+  <property name="multiline.expanded-folder.name" value="mps-multiline" />
+  <property name="multiline.build-id" value="bt28" />  
+  <!-- richtext -->  
+  <property name="richtext.zip-file.name" value="mps-richtext.zip" />
+  <property name="richtext.expanded-folder.name" value="mps-richtext" />
+  <property name="richtext.build-id" value="bt29" />
+  <!-- editor-override -->
+  <property name="editor-override.zip-file.name" value="mps-editor-override.zip" />
+  <property name="editor-override.expanded-folder.name" value="mps-editor-override" />  
+  <property name="editor-override.build-id" value="bt27" />   
+  <!-- spawner -->
+  <property name="spawner.suburl" value="com.mbeddr.spawner.build" /> 
+  <property name="spawner.zip-file.name" value="com.mbeddr.spawner.zip" />
+  <property name="spawner.expanded-folder.name" value="mbeddr.spawner" />
+  <property name="spawner.build-id" value="bt3" />
+   
+  <!-- validations -->
+  <fail unless="mps.home">mps.home must be set in your build.properties</fail>
+  <fail message="Your MPS installation (${mps.home}) doesn't contain a ${plugins.folder.name} folder">
+      <condition>
+          <not>
+              <resourcecount count="1">
+				  <dirset dir="${mps.home}" >
+					  <include name="${plugins.folder.name}"/>
+				  </dirset> 
+              </resourcecount>
+          </not>
+      </condition>
+  </fail>
+
+  <target name="install-plugins">
+	  <!-- clean-plugin-folder -->
+	  <delete dir="${mps.home}/${plugins.folder.name}/${editor-override.expanded-folder.name}" verbose="true" />
+	  <delete dir="${mps.home}/${plugins.folder.name}/${multiline.expanded-folder.name}" verbose="true" />
+	  <delete dir="${mps.home}/${plugins.folder.name}/${richtext.expanded-folder.name}" verbose="true" />
+	  <delete dir="${mps.home}/${plugins.folder.name}/${spawner.expanded-folder.name}" verbose="true" />
+	  <delete file="${mps.home}/${plugins.folder.name}/${multiline.zip-file.name}"/>
+	  <delete file="${mps.home}/${plugins.folder.name}/${editor-override.zip-file.name}"/>
+	  <delete file="${mps.home}/${plugins.folder.name}/${richtext.zip-file.name}"/>
+	  <delete file="${mps.home}/${plugins.folder.name}/${spawner.zip-file.name}"/>	
+	    	  
+	  <!-- download-plugins -->
+	  <get src="${base-url}/${multiline.build-id}/${latest-build}/${multiline.zip-file.name}" dest="${mps.home}/${plugins.folder.name}" verbose="true" skipexisting="true" usetimestamp="true"/>
+	  <get src="${base-url}/${richtext.build-id}/${latest-build}/${richtext.zip-file.name}" dest="${mps.home}/${plugins.folder.name}" verbose="true" skipexisting="true" usetimestamp="true"/>
+	  <get src="${base-url}/${editor-override.build-id}/${latest-build}/${editor-override.zip-file.name}" dest="${mps.home}/${plugins.folder.name}" verbose="true" skipexisting="true" usetimestamp="true"/>
+	  <get src="${base-url}/${spawner.build-id}/${latest-build}/${spawner.suburl}/${spawner.zip-file.name}" dest="${mps.home}/${plugins.folder.name}" verbose="true" skipexisting="true" usetimestamp="true"/>	  
+	  	 
+	  <!-- unzip-plugins -->
+	  <unzip src="${mps.home}/${plugins.folder.name}/${multiline.zip-file.name}" dest="${mps.home}/${plugins.folder.name}" overwrite="true" />
+	  <unzip src="${mps.home}/${plugins.folder.name}/${richtext.zip-file.name}" dest="${mps.home}/${plugins.folder.name}" overwrite="true" />
+	  <unzip src="${mps.home}/${plugins.folder.name}/${editor-override.zip-file.name}" dest="${mps.home}/${plugins.folder.name}" overwrite="true" />
+	  <unzip src="${mps.home}/${plugins.folder.name}/${spawner.zip-file.name}" dest="${mps.home}/${plugins.folder.name}" overwrite="true" /> 	 
+	   
+	  <!-- clean-downloaded-artifacts -->
+	  <get src="${base-url}/${multiline.build-id}/${latest-build}/${multiline.zip-file.name}" dest="${mps.home}/${plugins.folder.name}" verbose="true" skipexisting="true" usetimestamp="true"/>
+	  <get src="${base-url}/${richtext.build-id}/${latest-build}/${richtext.zip-file.name}" dest="${mps.home}/${plugins.folder.name}" verbose="true" skipexisting="true" usetimestamp="true"/>
+	  <get src="${base-url}/${editor-override.build-id}/${latest-build}/${editor-override.zip-file.name}" dest="${mps.home}/${plugins.folder.name}" verbose="true" skipexisting="true" usetimestamp="true"/>
+	  <get src="${base-url}/${spawner.build-id}/${latest-build}/${spawner.suburl}/${spawner.zip-file.name}" dest="${mps.home}/${plugins.folder.name}" verbose="true" skipexisting="true" usetimestamp="true"/>		  
+  </target>
+
+  <target name="delete-mps-generated-code" >		  
+	  <ant antfile="build.xml" dir="com.mbeddr.mpsutil" target="delete-mps-generated-code" />
+	  <ant antfile="build.xml" dir="com.mbeddr.debugger" target="delete-mps-generated-code" />
+	  <ant antfile="build.xml" dir="com.mbeddr.core" target="delete-mps-generated-code" />
+	  <ant antfile="build.xml" dir="com.mbeddr.doc" target="delete-mps-generated-code" />
+	  <ant antfile="build.xml" dir="com.mbeddr.debugger.tests" target="delete-mps-generated-code" />
+	  <ant antfile="build.xml" dir="com.mbeddr.cc" target="delete-mps-generated-code" />
+	  <ant antfile="build.xml" dir="com.mbeddr.ext" target="delete-mps-generated-code" />
+	  <ant antfile="build.xml" dir="com.mbeddr.analyses" target="delete-mps-generated-code" />
+  </target>	
+	  
+  <target name="build-languages" depends="delete-mps-generated-code" >		  
+	  <ant antfile="build.xml" dir="com.mbeddr.mpsutil" target="build-languages" />
+	  <ant antfile="build.xml" dir="com.mbeddr.debugger" target="build-languages" />
+	  <ant antfile="build.xml" dir="com.mbeddr.core" target="build-languages" />
+	  <ant antfile="build.xml" dir="com.mbeddr.doc" target="build-languages" />
+	  <ant antfile="build.xml" dir="com.mbeddr.debugger.tests" target="build-languages" />
+	  <ant antfile="build.xml" dir="com.mbeddr.cc" target="build-languages" />
+	  <ant antfile="build.xml" dir="com.mbeddr.ext" target="build-languages" />
+	  <ant antfile="build.xml" dir="com.mbeddr.analyses" target="build-languages" />
+  </target>	
+  
+  <target name="build-and-run-tests">
+	<!--  <ant antfile="build.xml" dir="com.mbeddr.mpsutil" target="build-tests" /> -->
+	<!--  <ant antfile="build.xml" dir="com.mbeddr.mpsutil" target="run-ts-tests" /> -->
+	  
+<!--	  <ant antfile="build.xml" dir="com.mbeddr.debugger" target="build-tests" />
+	  <ant antfile="build.xml" dir="com.mbeddr.debugger" target="run-ts-tests" />
+	  
+	  <ant antfile="build.xml" dir="com.mbeddr.core" target="build-tests" />
+	  <ant antfile="build.xml" dir="com.mbeddr.core" target="run-ts-tests" />	  
+	  <ant antfile="build.xml" dir="com.mbeddr.core" target="make-tests" />	  
+	-->  
+	  <ant antfile="build.xml" dir="com.mbeddr.debugger.tests" target="build-tests" />
+	  <ant antfile="build.xml" dir="com.mbeddr.debugger.tests" target="run-ts-tests" />
+	  
+	  <ant antfile="build.xml" dir="com.mbeddr.cc" target="build-tests" />
+	  <ant antfile="build.xml" dir="com.mbeddr.cc" target="run-ts-tests" />
+	  
+	  <ant antfile="build.xml" dir="com.mbeddr.ext" target="build-tests" />
+	  <ant antfile="build.xml" dir="com.mbeddr.ext" target="run-ts-tests" />
+	  <ant antfile="build.xml" dir="com.mbeddr.ext" target="make-tests" />
+	  
+	  <ant antfile="build.xml" dir="com.mbeddr.analyses" target="build-tests" />
+	  <ant antfile="build.xml" dir="com.mbeddr.analyses" target="run-ts-tests" />
+	  <ant antfile="build.xml" dir="com.mbeddr.analyses" target="make-tests" />
+  </target>	  
+  
+  <target name="build-and-test-offline">
+	  <ant target="build-languages" />
+	  <ant target="build-and-run-tests" />
+  </target>
+  
+  <target name="build-and-test-online">
+	  <ant target="install-plugins" />
+	  <ant target="build-languages" />
+	  <ant target="build-and-run-tests" />
+  </target>
+	  	  
+</project>
