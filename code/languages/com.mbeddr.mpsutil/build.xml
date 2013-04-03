@@ -1,6 +1,6 @@
 <project name="com.mbeddr.core build and test" default="build">
 
-  <property file="build.properties"/> 
+  <property file="../build.properties"/> 
 
   <property name="jvm.arg.Xss" value="-Xss1024k"/>
   <property name="jvm.arg.Xmx" value="-Xmx2048m"/>
