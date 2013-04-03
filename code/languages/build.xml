@@ -61,10 +61,10 @@
 	  <unzip src="${mps.home}/${plugins.folder.name}/${spawner.zip-file.name}" dest="${mps.home}/${plugins.folder.name}" overwrite="true" /> 	 
 	   
 	  <!-- clean-downloaded-artifacts -->
-	  <get src="${base-url}/${multiline.build-id}/${latest-build}/${multiline.zip-file.name}" dest="${mps.home}/${plugins.folder.name}" verbose="true" skipexisting="true" usetimestamp="true"/>
-	  <get src="${base-url}/${richtext.build-id}/${latest-build}/${richtext.zip-file.name}" dest="${mps.home}/${plugins.folder.name}" verbose="true" skipexisting="true" usetimestamp="true"/>
-	  <get src="${base-url}/${editor-override.build-id}/${latest-build}/${editor-override.zip-file.name}" dest="${mps.home}/${plugins.folder.name}" verbose="true" skipexisting="true" usetimestamp="true"/>
-	  <get src="${base-url}/${spawner.build-id}/${latest-build}/${spawner.suburl}/${spawner.zip-file.name}" dest="${mps.home}/${plugins.folder.name}" verbose="true" skipexisting="true" usetimestamp="true"/>		  
+	  <delete file="${mps.home}/${plugins.folder.name}/${multiline.zip-file.name}"/>
+	  <delete file="${mps.home}/${plugins.folder.name}/${editor-override.zip-file.name}"/>
+	  <delete file="${mps.home}/${plugins.folder.name}/${richtext.zip-file.name}"/>
+	  <delete file="${mps.home}/${plugins.folder.name}/${spawner.zip-file.name}"/>		  
   </target>
 
   <target name="delete-mps-generated-code" >		  
@@ -78,7 +78,7 @@
 	  <ant antfile="build.xml" dir="com.mbeddr.analyses" target="delete-mps-generated-code" />
   </target>	
 	  
-  <target name="build-languages" depends="delete-mps-generated-code" >		  
+  <target name="build-languages" >
 	  <ant antfile="build.xml" dir="com.mbeddr.mpsutil" target="build-languages" />
 	  <ant antfile="build.xml" dir="com.mbeddr.debugger" target="build-languages" />
 	  <ant antfile="build.xml" dir="com.mbeddr.core" target="build-languages" />
@@ -90,16 +90,17 @@
   </target>	
   
   <target name="build-and-run-tests">
-	<!--  <ant antfile="build.xml" dir="com.mbeddr.mpsutil" target="build-tests" /> -->
-	<!--  <ant antfile="build.xml" dir="com.mbeddr.mpsutil" target="run-ts-tests" /> -->
-	  
-<!--	  <ant antfile="build.xml" dir="com.mbeddr.debugger" target="build-tests" />
+	  <!--
+	  <ant antfile="build.xml" dir="com.mbeddr.mpsutil" target="build-tests" />
+	  <ant antfile="build.xml" dir="com.mbeddr.mpsutil" target="run-ts-tests" />
+	  -->
+	  <ant antfile="build.xml" dir="com.mbeddr.debugger" target="build-tests" />
 	  <ant antfile="build.xml" dir="com.mbeddr.debugger" target="run-ts-tests" />
 	  
 	  <ant antfile="build.xml" dir="com.mbeddr.core" target="build-tests" />
 	  <ant antfile="build.xml" dir="com.mbeddr.core" target="run-ts-tests" />	  
 	  <ant antfile="build.xml" dir="com.mbeddr.core" target="make-tests" />	  
-	-->  
+	
 	  <ant antfile="build.xml" dir="com.mbeddr.debugger.tests" target="build-tests" />
 	  <ant antfile="build.xml" dir="com.mbeddr.debugger.tests" target="run-ts-tests" />
 	  
