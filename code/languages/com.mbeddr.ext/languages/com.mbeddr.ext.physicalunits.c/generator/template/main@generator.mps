@@ -19,7 +19,6 @@
   <import index="tp2q" modelUID="r:00000000-0000-4000-0000-011c8959032e(jetbrains.mps.baseLanguage.collections.structure)" version="7" implicit="yes" />
   <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="23" implicit="yes" />
   <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="5" implicit="yes" />
-  <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="5" implicit="yes" />
   <roots>
     <node type="tpf8.MappingConfiguration" typeId="tpf8.1095416546421" id="7720784317543457156">
       <property name="name" nameId="tpck.1169194664001" value="main" />
@@ -401,11 +400,17 @@
           <property name="name" nameId="tpck.1169194664001" value="a2b" />
           <node role="arguments" roleId="x27k.6021475212425916983" type="x27k.GlobalConstantFunctionArgument" typeId="x27k.6021475212426054485" id="3650959968720754416">
             <property name="name" nameId="tpck.1169194664001" value="val" />
+            <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int64tType" typeId="mj1l.8463282783691618445" id="7308356872494700229">
+              <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+              <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+            </node>
           </node>
-          <node role="content" roleId="x27k.7308356872494485437" type="c4fa.ArbitraryTextExpression" typeId="c4fa.3830958861296871078" id="7308356872494553701">
-            <node role="items" roleId="c4fa.3830958861296879115" type="c4fa.AbstractItem" typeId="c4fa.745648737914844471" id="7308356872494553702" />
-            <node role="items" roleId="c4fa.3830958861296879115" type="c4fa.AbritraryTextItem" typeId="c4fa.3830958861296879113" id="7308356872494553703">
-              <property name="text" nameId="c4fa.3830958861296879114" value="val*" />
+          <node role="content" roleId="x27k.7308356872494485437" type="mj1l.MultiExpression" typeId="mj1l.5763383285156373020" id="7308356872494700234">
+            <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="7308356872494700237">
+              <property name="value" nameId="mj1l.8860443239512128104" value="2" />
+            </node>
+            <node role="left" roleId="mj1l.8860443239512128064" type="x27k.GlobalConstantFuntionArgumentRef" typeId="x27k.7308356872494660981" id="7308356872494700231">
+              <link role="arg" roleId="x27k.7308356872494660982" targetNodeId="3650959968720754416" resolveInfo="val" />
             </node>
           </node>
         </node>

@@ -2002,9 +2002,17 @@
       <property name="preventNameMangling" nameId="x27k.6708182213627106114" value="true" />
       <node role="arguments" roleId="x27k.6021475212425916983" type="x27k.GlobalConstantFunctionArgument" typeId="x27k.6021475212426054485" id="633485411402944176">
         <property name="name" nameId="tpck.1169194664001" value="i" />
+        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int64tType" typeId="mj1l.8463282783691618445" id="7308356872494700130">
+          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+        </node>
       </node>
       <node role="arguments" roleId="x27k.6021475212425916983" type="x27k.GlobalConstantFunctionArgument" typeId="x27k.6021475212426054485" id="633485411402944177">
         <property name="name" nameId="tpck.1169194664001" value="j" />
+        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int64tType" typeId="mj1l.8463282783691618445" id="7308356872494700131">
+          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+        </node>
       </node>
       <node role="content" roleId="x27k.7308356872494485437" type="c4fa.ArbitraryTextExpression" typeId="c4fa.3830958861296871078" id="7308356872494556750">
         <node role="items" roleId="c4fa.3830958861296879115" type="c4fa.AbstractItem" typeId="c4fa.745648737914844471" id="7308356872494556751" />
@@ -2023,6 +2031,10 @@
       <property name="preventNameMangling" nameId="x27k.6708182213627106114" value="true" />
       <node role="arguments" roleId="x27k.6021475212425916983" type="x27k.GlobalConstantFunctionArgument" typeId="x27k.6021475212426054485" id="633485411402944179">
         <property name="name" nameId="tpck.1169194664001" value="x" />
+        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int64tType" typeId="mj1l.8463282783691618445" id="7308356872494700133">
+          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+        </node>
       </node>
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.GlobalConstantDeclaration" typeId="x27k.3788988821851860886" id="633485411402944180">
@@ -2042,6 +2054,10 @@
       <property name="preventNameMangling" nameId="x27k.6708182213627106114" value="true" />
       <node role="arguments" roleId="x27k.6021475212425916983" type="x27k.GlobalConstantFunctionArgument" typeId="x27k.6021475212426054485" id="633485411402944184">
         <property name="name" nameId="tpck.1169194664001" value="x" />
+        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int64tType" typeId="mj1l.8463282783691618445" id="7308356872494700132">
+          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+        </node>
       </node>
       <node role="content" roleId="x27k.7308356872494485437" type="c4fa.ArbitraryTextExpression" typeId="c4fa.3830958861296871078" id="7308356872494556642">
         <node role="items" roleId="c4fa.3830958861296879115" type="c4fa.AbstractItem" typeId="c4fa.745648737914844471" id="7308356872494556643" />
@@ -2762,6 +2778,10 @@
       <property name="preventNameMangling" nameId="x27k.6708182213627106114" value="true" />
       <node role="arguments" roleId="x27k.6021475212425916983" type="x27k.GlobalConstantFunctionArgument" typeId="x27k.6021475212426054485" id="633485411402944257">
         <property name="name" nameId="tpck.1169194664001" value="name" />
+        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int64tType" typeId="mj1l.8463282783691618445" id="7308356872494700134">
+          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+        </node>
       </node>
       <node role="content" roleId="x27k.7308356872494485437" type="c4fa.ArbitraryTextExpression" typeId="c4fa.3830958861296871078" id="7308356872494556530">
         <node role="items" roleId="c4fa.3830958861296879115" type="c4fa.AbstractItem" typeId="c4fa.745648737914844471" id="7308356872494556531" />
