@@ -285,6 +285,50 @@
               </node>
             </node>
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="9108052991586027303" />
+            <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="4561522810758857067">
+              <property name="name" nameId="tpck.1169194664001" value="wh" />
+              <node role="type" roleId="mj1l.318113533128716676" type="3c6d.TypeWithUnit" typeId="3c6d.5513256947824492703" id="4561522810758857069">
+                <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+                <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+                <node role="valueType" roleId="3c6d.5513256947824503029" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="4561522810758857068">
+                  <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+                  <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+                </node>
+                <node role="unit" roleId="3c6d.5513256947824503030" type="ym4j.CompositeUnitDeclaration" typeId="ym4j.3801772042669047863" id="4561522810758857072">
+                  <node role="components" roleId="ym4j.3801772042669047864" type="ym4j.UnitWithExponent" typeId="ym4j.3801772042669047322" id="4561522810758857073">
+                    <property name="exponent" nameId="ym4j.3801772042669047325" value="1" />
+                    <node role="unit" roleId="ym4j.3801772042669047323" type="ym4j.UnitDeclarationRef" typeId="ym4j.8099136929591173606" id="4561522810758857077">
+                      <link role="ref" roleId="ym4j.1085404444144943750" targetNodeId="4561522810758857057" resolveInfo="W" />
+                    </node>
+                  </node>
+                  <node role="components" roleId="ym4j.3801772042669047864" type="ym4j.UnitWithExponent" typeId="ym4j.3801772042669047322" id="4561522810758857075">
+                    <property name="exponent" nameId="ym4j.3801772042669047325" value="1" />
+                    <node role="unit" roleId="ym4j.3801772042669047323" type="ym4j.UnitDeclarationRef" typeId="ym4j.8099136929591173606" id="4561522810758857078">
+                      <link role="ref" roleId="ym4j.1085404444144943750" targetNodeId="4561522810758857064" resolveInfo="h" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node role="init" roleId="c4fa.4185783222026502647" type="mj1l.MultiExpression" typeId="mj1l.5763383285156373020" id="4561522810758857122">
+                <node role="right" roleId="mj1l.8860443239512128065" type="3c6d.LiteralWithUnit" typeId="3c6d.5513256947824592491" id="4561522810758857128">
+                  <node role="unit" roleId="3c6d.5513256947824592493" type="ym4j.UnitDeclarationRef" typeId="ym4j.8099136929591173606" id="4561522810758857129">
+                    <link role="ref" roleId="ym4j.1085404444144943750" targetNodeId="4561522810758857064" resolveInfo="h" />
+                  </node>
+                  <node role="value" roleId="3c6d.5513256947824592492" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="4561522810758857125">
+                    <property name="value" nameId="mj1l.8860443239512128104" value="1" />
+                  </node>
+                </node>
+                <node role="left" roleId="mj1l.8860443239512128064" type="3c6d.LiteralWithUnit" typeId="3c6d.5513256947824592491" id="4561522810758857081">
+                  <node role="unit" roleId="3c6d.5513256947824592493" type="ym4j.UnitDeclarationRef" typeId="ym4j.8099136929591173606" id="4561522810758857083">
+                    <link role="ref" roleId="ym4j.1085404444144943750" targetNodeId="4561522810758857057" resolveInfo="W" />
+                  </node>
+                  <node role="value" roleId="3c6d.5513256947824592492" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="4561522810758857080">
+                    <property name="value" nameId="mj1l.8860443239512128104" value="1" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="4561522810758857066" />
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="9108052991585889650">
               <property name="name" nameId="tpck.1169194664001" value="aLuminousIntensity" />
               <node role="type" roleId="mj1l.318113533128716676" type="3c6d.TypeWithUnit" typeId="3c6d.5513256947824492703" id="9108052991585889651">
@@ -1185,6 +1229,26 @@
         <property name="name" nameId="tpck.1169194664001" value="C" />
         <property name="physicalMeaning" nameId="ym4j.2078797996880543461" value="temperature" />
       </node>
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="4561522810758857053">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1365090175067_21" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="3c6d.UnitInModuleAdapter" typeId="3c6d.1085404444144872539" id="4561522810758857056">
+      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
+      <node role="unitDecl" roleId="3c6d.1085404444144872540" type="ym4j.NamedConvertibleUnitDeclaration" typeId="ym4j.2078797996880580463" id="4561522810758857057">
+        <property name="name" nameId="tpck.1169194664001" value="W" />
+        <property name="physicalMeaning" nameId="ym4j.2078797996880543461" value="energy" />
+      </node>
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="3c6d.UnitInModuleAdapter" typeId="3c6d.1085404444144872539" id="4561522810758857063">
+      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
+      <node role="unitDecl" roleId="3c6d.1085404444144872540" type="ym4j.NamedConvertibleUnitDeclaration" typeId="ym4j.2078797996880580463" id="4561522810758857064">
+        <property name="name" nameId="tpck.1169194664001" value="h" />
+        <property name="physicalMeaning" nameId="ym4j.2078797996880543461" value="time" />
+      </node>
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="4561522810758857055">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1365090178043_23" />
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="3c6d.CBasedConversionRule" typeId="3c6d.2078797996880475936" id="2078797996880515333">
       <property name="exported" nameId="x27k.1317894735999272944" value="true" />

@@ -345,9 +345,7 @@
     <node role="configurationItems" roleId="vs0r.4459718605982007338" type="k146.ReportingConfiguration" typeId="k146.4459718605982051949" id="4765878051576570979">
       <node role="strategy" roleId="k146.4459718605982051999" type="k146.PrintfReportingStrategy" typeId="k146.4459718605982051980" id="4765878051576570980" />
     </node>
-    <node role="configurationItems" roleId="vs0r.4459718605982007338" type="3c6d.PhysicalUnitsConfigItem" typeId="3c6d.9035511730050139082" id="6008766899745295083">
-      <link role="container" targetNodeId="6927655684020185095" resolveInfo="Units Declarations (dec_tab)" />
-    </node>
+    <node role="configurationItems" roleId="vs0r.4459718605982007338" type="3c6d.PhysicalUnitsConfigItem" typeId="3c6d.9035511730050139082" id="4561522810758744246" />
     <node role="binaries" roleId="51wr.5046689135694070731" type="51wr.Executable" typeId="51wr.5046689135693761554" id="4765878051576570981">
       <property name="name" nameId="tpck.1169194664001" value="dec_tab" />
       <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="6008766899745294906">
@@ -355,6 +353,9 @@
       </node>
       <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="4765878051576571268">
         <link role="module" roleId="51wr.7717755763392524108" targetNodeId="8585170594914858034" resolveInfo="DecTables" />
+      </node>
+      <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="4561522810758744247">
+        <link role="module" roleId="51wr.7717755763392524108" targetNodeId="6657613005452170117" resolveInfo="UnitDeclarations" />
       </node>
     </node>
   </root>

@@ -316,9 +316,7 @@
         <property name="generateContracts" nameId="p7vm.4768833643347725006" value="true" />
       </node>
     </node>
-    <node role="configurationItems" roleId="vs0r.4459718605982007338" type="3c6d.PhysicalUnitsConfigItem" typeId="3c6d.9035511730050139082" id="6927655684020320797">
-      <link role="container" targetNodeId="6927655684020185095" resolveInfo="Units Declarations (complex_decision_table)" />
-    </node>
+    <node role="configurationItems" roleId="vs0r.4459718605982007338" type="3c6d.PhysicalUnitsConfigItem" typeId="3c6d.9035511730050139082" id="4561522810758793508" />
     <node role="binaries" roleId="51wr.5046689135694070731" type="51wr.Executable" typeId="51wr.5046689135693761554" id="6927655684020185005">
       <property name="name" nameId="tpck.1169194664001" value="SimpleDecTab" />
       <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="6927655684020194610">
@@ -332,6 +330,9 @@
       </node>
       <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="6927655684020320395">
         <link role="module" roleId="51wr.7717755763392524108" targetNodeId="6927655684020184932" resolveInfo="decisionTableAccessingPointerToStructAndPhysicalUnits" />
+      </node>
+      <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="4561522810758793509">
+        <link role="module" roleId="51wr.7717755763392524108" targetNodeId="6657613005452170108" resolveInfo="UnitDeclarations" />
       </node>
     </node>
   </root>
