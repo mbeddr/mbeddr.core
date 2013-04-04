@@ -18,7 +18,7 @@
   <import index="lsus" modelUID="r:25d6e7db-06a4-44ee-83aa-8c5bf17f3b3a(com.mbeddr.doc.gen_xhtml.structure)" version="-1" implicit="yes" />
   <import index="soy0" modelUID="r:7c7016e4-716d-41ab-b7e5-8604290de403(com.mbeddr.doc.meta.structure)" version="-1" implicit="yes" />
   <import index="f87k" modelUID="r:e7473124-6323-4ddf-9715-6e1684f751bd(com.mbeddr.doc.expressions.structure)" version="-1" implicit="yes" />
-  <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="22" implicit="yes" />
+  <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="23" implicit="yes" />
   <roots>
     <node type="2c95.Document" typeId="2c95.3350625596579911728" id="2293093897292931468">
       <property name="name" nameId="tpck.1169194664001" value="A_Introduction" />
@@ -139,6 +139,10 @@
         <property name="percentage" nameId="2c95.8624890525767555427" value="55" />
       </node>
     </node>
+    <node role="defaultTempPath" roleId="2c95.5785245534401182264" type="2c95.PathDefinition" typeId="2c95.6386504476136472795" id="4400783559374234270">
+      <property name="name" nameId="tpck.1169194664001" value="temp" />
+      <property name="editTimePath" nameId="2c95.6386504476136472797" value="/" />
+    </node>
   </root>
   <root id="2293093897293118943">
     <node role="root" roleId="2c95.6068976060904007489" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="8730648445432859534">
@@ -179,7 +183,7 @@
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="8730648445432859509">
           <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="8730648445432859510">
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8730648445432859511">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value="The most fundamental concept is the " />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="The most concept is the " />
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="8730648445432859535">
               <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="8730648445432859536">
@@ -250,10 +254,14 @@
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8730648445433240096">
               <property name="escapedValue" nameId="87nw.2557074442922438158" value="Of course, it is possible to format words as " />
             </node>
-            <node role="words" roleId="87nw.2557074442922392302" type="2c95.EmphasizedWord" typeId="2c95.4457500422381556825" id="8730648445433240097">
-              <property name="text" nameId="2c95.4457500422381556838" value="emphasized" />
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.EmphFormattedText" typeId="2c95.4400783559374052800" id="4400783559374166464">
+              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="4400783559374166465">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4400783559374166466">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="emphasized" />
+                </node>
+              </node>
             </node>
-            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8730648445433240098">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4400783559374166463">
               <property name="escapedValue" nameId="87nw.2557074442922438158" value=" as well as as\n" />
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="8730648445433240099">
@@ -399,10 +407,14 @@
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8730648445433275057">
               <property name="escapedValue" nameId="87nw.2557074442922438158" value="Other artifacts can also be embedded, not just images. The approach is always the\nsame, in particular, you typically specify a path and a size, as well as a name so\nit can be referenced. The embeddings of the document sources (as screenshots) are\nexamples. In many cases, the artifacts are actually only created during the creation of the document. For example, the screenshots that represent the document source code are created " />
             </node>
-            <node role="words" roleId="87nw.2557074442922392302" type="2c95.EmphasizedWord" typeId="2c95.4457500422381556825" id="8730648445433277598">
-              <property name="text" nameId="2c95.4457500422381556838" value="from the live code" />
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.EmphFormattedText" typeId="2c95.4400783559374052800" id="4400783559374166459">
+              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="4400783559374166460">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4400783559374166461">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="from the live code" />
+                </node>
+              </node>
             </node>
-            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8730648445433277599">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4400783559374166458">
               <property name="escapedValue" nameId="87nw.2557074442922438158" value=" during the generation of the document. This way, they are always up to date. Other extensions to the basic documentation language can contribute their own embedded resources. We will see examples below." />
             </node>
           </node>
@@ -632,10 +644,14 @@
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5785245534400066194">
               <property name="escapedValue" nameId="87nw.2557074442922438158" value="For each cell, you set if it is a header using a setting in the inspector.\nFor each row, you can specify whether there should be lines above or \nbelow the line. Currently, there is " />
             </node>
-            <node role="words" roleId="87nw.2557074442922392302" type="2c95.EmphasizedWord" typeId="2c95.4457500422381556825" id="5785245534400096798">
-              <property name="text" nameId="2c95.4457500422381556838" value="always" />
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.EmphFormattedText" typeId="2c95.4400783559374052800" id="4400783559374166454">
+              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="4400783559374166455">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4400783559374166456">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="always" />
+                </node>
+              </node>
             </node>
-            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5785245534400096800">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4400783559374166453">
               <property name="escapedValue" nameId="87nw.2557074442922438158" value=" a line between the \ncolumns; this may be changed in the future." />
             </node>
           </node>

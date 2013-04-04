@@ -750,6 +750,10 @@
       <property name="editTimePath" nameId="2c95.6386504476136472797" value="/" />
     </node>
     <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.RootTemplateAnnotation" typeId="tpf8.1168619357332" id="1671983567912437847" />
+    <node role="defaultTempPath" roleId="2c95.5785245534401182264" type="2c95.PathDefinition" typeId="2c95.6386504476136472795" id="4400783559374235002">
+      <property name="name" nameId="tpck.1169194664001" value="temp" />
+      <property name="editTimePath" nameId="2c95.6386504476136472797" value="/" />
+    </node>
   </root>
   <root id="6416473402306272609">
     <node role="codeBlock" roleId="tpf8.1195501105008" type="tpf8.MappingScript_CodeBlock" typeId="tpf8.1195500722856" id="6416473402306272610">
