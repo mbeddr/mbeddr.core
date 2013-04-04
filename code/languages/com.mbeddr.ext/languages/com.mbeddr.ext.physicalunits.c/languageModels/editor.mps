@@ -118,7 +118,7 @@
         <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="ym4j.2078797996880475937" />
       </node>
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="2078797996880475949">
-        <property name="text" nameId="tpc2.1073389577007" value="⇾" />
+        <property name="text" nameId="tpc2.1073389577007" value="-&gt;" />
       </node>
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_RefNode" typeId="tpc2.1073389882823" id="2078797996880475951">
         <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="ym4j.2078797996880475938" />
@@ -135,7 +135,7 @@
     <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="2078797996880607641">
       <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Indent" typeId="tpc2.1237303669825" id="2078797996880607642" />
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="2078797996880607646">
-        <property name="text" nameId="tpc2.1073389577007" value="convert⟦" />
+        <property name="text" nameId="tpc2.1073389577007" value="convert[" />
         <link role="styleClass" roleId="tpc2.1186406756722" targetNodeId="2qjx.5513256947824560921" resolveInfo="physicalUnits" />
         <link role="actionMap" roleId="tpc2.1139959269582" targetNodeId="1139274356256242049" resolveInfo="deleteConvertUnitExpr" />
         <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.PunctuationRightStyleClassItem" typeId="tpc2.1233759184865" id="2078797996880607655">
@@ -146,7 +146,7 @@
         <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="3c6d.2078797996880607660" />
       </node>
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="3381058180567346954">
-        <property name="text" nameId="tpc2.1073389577007" value="⇾" />
+        <property name="text" nameId="tpc2.1073389577007" value="-&gt;" />
       </node>
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_RefNode" typeId="tpc2.1073389882823" id="2078797996880607662">
         <property name="emptyNoTargetText" nameId="tpc2.1214560368769" value="true" />
@@ -154,7 +154,7 @@
         <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="3c6d.2078797996880607636" />
       </node>
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="2078797996880607650">
-        <property name="text" nameId="tpc2.1073389577007" value="⟧" />
+        <property name="text" nameId="tpc2.1073389577007" value="]" />
         <link role="styleClass" roleId="tpc2.1186406756722" targetNodeId="2qjx.5513256947824560921" resolveInfo="physicalUnits" />
         <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.PunctuationLeftStyleClassItem" typeId="tpc2.1233758997495" id="2078797996880607658">
           <property name="flag" nameId="tpc2.1186414551515" value="true" />
