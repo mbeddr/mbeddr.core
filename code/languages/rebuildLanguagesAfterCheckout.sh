@@ -1,3 +1,2 @@
-ant -f install-plugins.xml
-
-./rebuildLanguagesAfterCheckoutOffline.sh
+ant install-plugins
+ant build-languages

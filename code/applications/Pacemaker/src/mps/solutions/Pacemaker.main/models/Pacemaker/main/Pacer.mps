@@ -4,6 +4,7 @@
   <language namespace="13a36f90-83c5-4bf6-9dd6-70e455f1ef36(com.mbeddr.ext.components.statemachine)" />
   <language namespace="d62d6e81-9ae0-456b-b2c3-d71c0f373ded(com.mbeddr.analyses.nusmv.statemachine)" />
   <language namespace="63e0e566-5131-447e-90e3-12ea330e1a00(com.mbeddr.mpsutil.blutil)" />
+  <language namespace="92d2ea16-5a42-4fdf-a676-c7604efe3504(de.slisson.mps.richtext)" />
   <devkit namespace="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
   <devkit namespace="43d889ae-8e6a-4f6e-a649-d59342d8728d(com.mbeddr.statemachines)" />
   <devkit namespace="24565007-e59f-42fc-ac10-da3836deec1c(com.mbeddr.components)" />
@@ -17,8 +18,8 @@
   <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="7" implicit="yes" />
   <import index="clbe" modelUID="r:61d840b4-12c1-49ea-b142-b2a1550a9b15(com.mbeddr.core.udt.structure)" version="7" implicit="yes" />
   <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="5" implicit="yes" />
-  <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="3" implicit="yes" />
-  <import index="k146" modelUID="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" version="3" implicit="yes" />
+  <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="5" implicit="yes" />
+  <import index="k146" modelUID="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" version="5" implicit="yes" />
   <import index="51wr" modelUID="r:b31f1c3c-99aa-4f1e-a329-cba27efb1a6b(com.mbeddr.core.buildconfig.structure)" version="1" implicit="yes" />
   <import index="v7ag" modelUID="r:9596407c-f27a-49d3-abde-3a66293c5b61(com.mbeddr.ext.components.structure)" version="16" implicit="yes" />
   <import index="8yj6" modelUID="r:b5ef41ef-8594-459c-bc08-a7e214c6fb43(com.mbeddr.ext.components.statemachine.structure)" version="0" implicit="yes" />
@@ -339,7 +340,7 @@
             <node role="expr" roleId="c4fa.7254843406768833939" type="x27k.FunctionCall" typeId="x27k.5950410542643524492" id="8028557988791055223">
               <link role="function" roleId="x27k.5950410542643524493" targetNodeId="fetz.8028557988791055197" resolveInfo="ChangeAtrialInterruptEnabled" />
               <node role="actuals" roleId="x27k.5950410542643524495" type="x27k.GlobalConstantRef" typeId="x27k.3788988821852026523" id="6047040665414172765">
-                <link role="constant" roleId="x27k.3788988821852026524" targetNodeId="fetz.4292918926323583696" resolveInfo="Off" />
+                <link role="constant" roleId="x27k.3376775282622611130" targetNodeId="fetz.4292918926323583696" resolveInfo="Off" />
               </node>
             </node>
           </node>
@@ -347,7 +348,7 @@
             <node role="expr" roleId="c4fa.7254843406768833939" type="x27k.FunctionCall" typeId="x27k.5950410542643524492" id="8028557988791055226">
               <link role="function" roleId="x27k.5950410542643524493" targetNodeId="fetz.8028557988791055191" resolveInfo="ChangeVentricleInterruptEnabled" />
               <node role="actuals" roleId="x27k.5950410542643524495" type="x27k.GlobalConstantRef" typeId="x27k.3788988821852026523" id="6047040665414172764">
-                <link role="constant" roleId="x27k.3788988821852026524" targetNodeId="fetz.4292918926323583696" resolveInfo="Off" />
+                <link role="constant" roleId="x27k.3376775282622611130" targetNodeId="fetz.4292918926323583696" resolveInfo="Off" />
               </node>
             </node>
           </node>
@@ -355,7 +356,7 @@
             <node role="expr" roleId="c4fa.7254843406768833939" type="x27k.FunctionCall" typeId="x27k.5950410542643524492" id="8028557988791055229">
               <link role="function" roleId="x27k.5950410542643524493" targetNodeId="fetz.298572849313103169" resolveInfo="ChangeTimer0EnabledState" />
               <node role="actuals" roleId="x27k.5950410542643524495" type="x27k.GlobalConstantRef" typeId="x27k.3788988821852026523" id="6047040665414172766">
-                <link role="constant" roleId="x27k.3788988821852026524" targetNodeId="fetz.4292918926323583692" resolveInfo="On" />
+                <link role="constant" roleId="x27k.3376775282622611130" targetNodeId="fetz.4292918926323583692" resolveInfo="On" />
               </node>
             </node>
           </node>
@@ -1058,7 +1059,7 @@
             <node role="expr" roleId="c4fa.7254843406768833939" type="x27k.FunctionCall" typeId="x27k.5950410542643524492" id="5688055005366701554">
               <link role="function" roleId="x27k.5950410542643524493" targetNodeId="fetz.8028557988791055197" resolveInfo="ChangeAtrialInterruptEnabled" />
               <node role="actuals" roleId="x27k.5950410542643524495" type="x27k.GlobalConstantRef" typeId="x27k.3788988821852026523" id="5688055005366701555">
-                <link role="constant" roleId="x27k.3788988821852026524" targetNodeId="fetz.4292918926323583696" resolveInfo="Off" />
+                <link role="constant" roleId="x27k.3376775282622611130" targetNodeId="fetz.4292918926323583696" resolveInfo="Off" />
               </node>
             </node>
           </node>
@@ -1066,7 +1067,7 @@
             <node role="expr" roleId="c4fa.7254843406768833939" type="x27k.FunctionCall" typeId="x27k.5950410542643524492" id="5688055005366701557">
               <link role="function" roleId="x27k.5950410542643524493" targetNodeId="fetz.8028557988791055191" resolveInfo="ChangeVentricleInterruptEnabled" />
               <node role="actuals" roleId="x27k.5950410542643524495" type="x27k.GlobalConstantRef" typeId="x27k.3788988821852026523" id="5688055005366701558">
-                <link role="constant" roleId="x27k.3788988821852026524" targetNodeId="fetz.4292918926323583696" resolveInfo="Off" />
+                <link role="constant" roleId="x27k.3376775282622611130" targetNodeId="fetz.4292918926323583696" resolveInfo="Off" />
               </node>
             </node>
           </node>
@@ -1074,7 +1075,7 @@
             <node role="expr" roleId="c4fa.7254843406768833939" type="x27k.FunctionCall" typeId="x27k.5950410542643524492" id="5688055005366701560">
               <link role="function" roleId="x27k.5950410542643524493" targetNodeId="fetz.298572849313103169" resolveInfo="ChangeTimer0EnabledState" />
               <node role="actuals" roleId="x27k.5950410542643524495" type="x27k.GlobalConstantRef" typeId="x27k.3788988821852026523" id="5688055005366701561">
-                <link role="constant" roleId="x27k.3788988821852026524" targetNodeId="fetz.4292918926323583692" resolveInfo="On" />
+                <link role="constant" roleId="x27k.3376775282622611130" targetNodeId="fetz.4292918926323583692" resolveInfo="On" />
               </node>
             </node>
           </node>
@@ -1810,7 +1811,7 @@
             <node role="expr" roleId="c4fa.7254843406768833939" type="x27k.FunctionCall" typeId="x27k.5950410542643524492" id="8028557988791059029">
               <link role="function" roleId="x27k.5950410542643524493" targetNodeId="fetz.8028557988791055197" resolveInfo="ChangeAtrialInterruptEnabled" />
               <node role="actuals" roleId="x27k.5950410542643524495" type="x27k.GlobalConstantRef" typeId="x27k.3788988821852026523" id="6047040665414172813">
-                <link role="constant" roleId="x27k.3788988821852026524" targetNodeId="fetz.4292918926323583696" resolveInfo="Off" />
+                <link role="constant" roleId="x27k.3376775282622611130" targetNodeId="fetz.4292918926323583696" resolveInfo="Off" />
               </node>
             </node>
           </node>
@@ -1818,7 +1819,7 @@
             <node role="expr" roleId="c4fa.7254843406768833939" type="x27k.FunctionCall" typeId="x27k.5950410542643524492" id="8028557988791059032">
               <link role="function" roleId="x27k.5950410542643524493" targetNodeId="fetz.8028557988791055191" resolveInfo="ChangeVentricleInterruptEnabled" />
               <node role="actuals" roleId="x27k.5950410542643524495" type="x27k.GlobalConstantRef" typeId="x27k.3788988821852026523" id="6047040665414172814">
-                <link role="constant" roleId="x27k.3788988821852026524" targetNodeId="fetz.4292918926323583692" resolveInfo="On" />
+                <link role="constant" roleId="x27k.3376775282622611130" targetNodeId="fetz.4292918926323583692" resolveInfo="On" />
               </node>
             </node>
           </node>
@@ -1826,7 +1827,7 @@
             <node role="expr" roleId="c4fa.7254843406768833939" type="x27k.FunctionCall" typeId="x27k.5950410542643524492" id="8028557988791059035">
               <link role="function" roleId="x27k.5950410542643524493" targetNodeId="fetz.298572849313103169" resolveInfo="ChangeTimer0EnabledState" />
               <node role="actuals" roleId="x27k.5950410542643524495" type="x27k.GlobalConstantRef" typeId="x27k.3788988821852026523" id="8211777014870436951">
-                <link role="constant" roleId="x27k.3788988821852026524" targetNodeId="fetz.4292918926323583692" resolveInfo="On" />
+                <link role="constant" roleId="x27k.3376775282622611130" targetNodeId="fetz.4292918926323583692" resolveInfo="On" />
               </node>
             </node>
           </node>
@@ -1889,7 +1890,7 @@
             <node role="expr" roleId="c4fa.7254843406768833939" type="x27k.FunctionCall" typeId="x27k.5950410542643524492" id="8028557988791059306">
               <link role="function" roleId="x27k.5950410542643524493" targetNodeId="fetz.8028557988791055191" resolveInfo="ChangeVentricleInterruptEnabled" />
               <node role="actuals" roleId="x27k.5950410542643524495" type="x27k.GlobalConstantRef" typeId="x27k.3788988821852026523" id="6047040665414172816">
-                <link role="constant" roleId="x27k.3788988821852026524" targetNodeId="fetz.4292918926323583696" resolveInfo="Off" />
+                <link role="constant" roleId="x27k.3376775282622611130" targetNodeId="fetz.4292918926323583696" resolveInfo="Off" />
               </node>
             </node>
           </node>
@@ -1919,7 +1920,7 @@
             <node role="expr" roleId="c4fa.7254843406768833939" type="x27k.FunctionCall" typeId="x27k.5950410542643524492" id="8028557988791059311">
               <link role="function" roleId="x27k.5950410542643524493" targetNodeId="fetz.8028557988791055191" resolveInfo="ChangeVentricleInterruptEnabled" />
               <node role="actuals" roleId="x27k.5950410542643524495" type="x27k.GlobalConstantRef" typeId="x27k.3788988821852026523" id="6047040665414172818">
-                <link role="constant" roleId="x27k.3788988821852026524" targetNodeId="fetz.4292918926323583692" resolveInfo="On" />
+                <link role="constant" roleId="x27k.3376775282622611130" targetNodeId="fetz.4292918926323583692" resolveInfo="On" />
               </node>
             </node>
           </node>

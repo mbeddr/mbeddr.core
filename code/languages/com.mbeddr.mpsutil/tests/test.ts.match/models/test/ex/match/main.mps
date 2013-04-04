@@ -19,7 +19,9 @@
     <node type="tp5g.NodesTestCase" typeId="tp5g.1216913645126" id="6385915233778742029">
       <property name="name" nameId="tpck.1169194664001" value="TestMatcher" />
     </node>
-    <node type="tp5g.TestInfo" typeId="tp5g.5097124989038916362" id="6385915233778751345" />
+    <node type="tp5g.TestInfo" typeId="tp5g.5097124989038916362" id="6385915233778751345">
+      <property name="projectPath" nameId="tp5g.5097124989038916363" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.mpsutil/mpsutil.dev.mpr" />
+    </node>
     <node type="tp5g.NodesTestCase" typeId="tp5g.1216913645126" id="17217465924336636">
       <property name="name" nameId="tpck.1169194664001" value="TestFilter" />
     </node>

@@ -9,8 +9,8 @@
   <devkit namespace="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
   <import index="d0vh" modelUID="r:9488318d-ce46-4320-b4e7-2566a511c366(com.mbeddr.core.modules.gen.structure)" version="1" />
   <import index="e2lb" modelUID="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" version="-1" />
-  <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="3" />
-  <import index="qd6m" modelUID="r:c4c3f7d3-0acf-4671-a134-5fab66c4e637(com.mbeddr.core.modules.behavior)" version="0" />
+  <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="5" />
+  <import index="qd6m" modelUID="r:c4c3f7d3-0acf-4671-a134-5fab66c4e637(com.mbeddr.core.modules.behavior)" version="1" />
   <import index="51wr" modelUID="r:b31f1c3c-99aa-4f1e-a329-cba27efb1a6b(com.mbeddr.core.buildconfig.structure)" version="1" />
   <import index="ahli" modelUID="r:44ccebce-f3a6-4238-afbf-c4a18f6348c1(com.mbeddr.core.buildconfig.behavior)" version="-1" />
   <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="7" />
@@ -20,7 +20,7 @@
   <import index="iqxh" modelUID="r:3ff8d811-87f2-49a7-b8a3-5cb1e610f6d2(com.mbeddr.core.buildconfig.typesystem)" version="-1" />
   <import index="cu2c" modelUID="f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.smodel(MPS.Core/jetbrains.mps.smodel@java_stub)" version="-1" />
   <import index="k7g3" modelUID="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.util(JDK/java.util@java_stub)" version="-1" />
-  <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="20" />
+  <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="23" />
   <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="5" />
   <import index="tpcu" modelUID="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" version="-1" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
@@ -632,7 +632,7 @@
     </node>
     <node role="contents" roleId="d0vh.1758019824472688221" type="x27k.GlobalConstantDeclaration" typeId="x27k.3788988821851860886" id="3788988821852300150">
       <property name="name" nameId="tpck.1169194664001" value="x" />
-      <node role="value" roleId="x27k.3788988821851871048" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3788988821852300156">
+      <node role="value" roleId="x27k.3376775282622233992" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3788988821852300156">
         <property name="value" nameId="mj1l.8860443239512128104" value="100" />
       </node>
       <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.CopySrcListMacro" typeId="tpf8.1114729360583" id="3788988821852300158">
@@ -850,7 +850,7 @@
     </node>
     <node role="contents" roleId="d0vh.1758019824472688221" type="x27k.GlobalConstantDeclaration" typeId="x27k.3788988821851860886" id="3017602783213217983">
       <property name="name" nameId="tpck.1169194664001" value="x" />
-      <node role="value" roleId="x27k.3788988821851871048" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3017602783213217984">
+      <node role="value" roleId="x27k.3376775282622233992" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3017602783213217984">
         <property name="value" nameId="mj1l.8860443239512128104" value="100" />
       </node>
       <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.CopySrcListMacro" typeId="tpf8.1114729360583" id="3017602783213217985">
@@ -943,7 +943,7 @@
   <root id="1758019824472885451">
     <node role="contents" roleId="d0vh.1758019824472688223" type="x27k.GlobalConstantDeclaration" typeId="x27k.3788988821851860886" id="3788988821852302197">
       <property name="name" nameId="tpck.1169194664001" value="x" />
-      <node role="value" roleId="x27k.3788988821851871048" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3788988821852302201">
+      <node role="value" roleId="x27k.3376775282622233992" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3788988821852302201">
         <property name="value" nameId="mj1l.8860443239512128104" value="210" />
       </node>
       <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.CopySrcListMacro" typeId="tpf8.1114729360583" id="3788988821852302203">
@@ -1448,8 +1448,8 @@
                                 <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="3136162014988639936" resolveInfo="it" />
                               </node>
                               <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_IsInstanceOfOperation" typeId="tp25.1139621453865" id="3136162014988639973">
-                                <node role="conceptArgument" roleId="tp25.1177027386292" type="tp25.RefConcept_Reference" typeId="tp25.1177026924588" id="3136162014988639974">
-                                  <link role="conceptDeclaration" roleId="tp25.1177026940964" targetNodeId="vs0r.3578942323568389911" resolveInfo="IGeneratesCodeForIDE" />
+                                <node role="conceptArgument" roleId="tp25.1177027386292" type="tp25.RefConcept_Reference" typeId="tp25.1177026924588" id="4577779292081686400">
+                                  <link role="conceptDeclaration" roleId="tp25.1177026940964" targetNodeId="vs0r.4577779292081684434" resolveInfo="IKeepAliveInGeneration" />
                                 </node>
                               </node>
                             </node>
@@ -1665,8 +1665,8 @@
                                 <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="3578942323568389952" resolveInfo="it" />
                               </node>
                               <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_IsInstanceOfOperation" typeId="tp25.1139621453865" id="3578942323568389990">
-                                <node role="conceptArgument" roleId="tp25.1177027386292" type="tp25.RefConcept_Reference" typeId="tp25.1177026924588" id="3578942323568389991">
-                                  <link role="conceptDeclaration" roleId="tp25.1177026940964" targetNodeId="vs0r.3578942323568389911" resolveInfo="IGeneratesCodeForIDE" />
+                                <node role="conceptArgument" roleId="tp25.1177027386292" type="tp25.RefConcept_Reference" typeId="tp25.1177026924588" id="4577779292081686401">
+                                  <link role="conceptDeclaration" roleId="tp25.1177026940964" targetNodeId="vs0r.4577779292081684434" resolveInfo="IKeepAliveInGeneration" />
                                 </node>
                               </node>
                             </node>
@@ -1877,8 +1877,8 @@
                                     <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="3578942323568412004" resolveInfo="it" />
                                   </node>
                                   <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_IsInstanceOfOperation" typeId="tp25.1139621453865" id="3578942323568412042">
-                                    <node role="conceptArgument" roleId="tp25.1177027386292" type="tp25.RefConcept_Reference" typeId="tp25.1177026924588" id="3578942323568412043">
-                                      <link role="conceptDeclaration" roleId="tp25.1177026940964" targetNodeId="vs0r.3578942323568389911" resolveInfo="IGeneratesCodeForIDE" />
+                                    <node role="conceptArgument" roleId="tp25.1177027386292" type="tp25.RefConcept_Reference" typeId="tp25.1177026924588" id="4577779292081686402">
+                                      <link role="conceptDeclaration" roleId="tp25.1177026940964" targetNodeId="vs0r.4577779292081684434" resolveInfo="IKeepAliveInGeneration" />
                                     </node>
                                   </node>
                                 </node>
@@ -1956,7 +1956,7 @@
               <node role="argument" roleId="tp2q.1160666822012" type="tpee.DotExpression" typeId="tpee.1197027756228" id="3578942323568399146">
                 <node role="operand" roleId="tpee.1197027771414" type="tpcw.ConceptFunctionParameter_model" typeId="tpcw.1161622665029" id="3578942323568399125" />
                 <node role="operation" roleId="tpee.1197027833540" type="tp25.Model_RootsIncludingImportedOperation" typeId="tp25.1176109685393" id="3578942323568399152">
-                  <link role="concept" roleId="tp25.1176109685394" targetNodeId="vs0r.3578942323568389911" resolveInfo="IGeneratesCodeForIDE" />
+                  <link role="concept" roleId="tp25.1176109685394" targetNodeId="vs0r.4577779292081684434" resolveInfo="IKeepAliveInGeneration" />
                   <node role="scope" roleId="tp25.1176109762787" type="tpee.DotExpression" typeId="tpee.1197027756228" id="3578942323568399175">
                     <node role="operand" roleId="tpee.1197027771414" type="tpcw.ConceptFunctionParameter_operationContext" typeId="tpcw.1161622753914" id="3578942323568399154" />
                     <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="3578942323568399181">

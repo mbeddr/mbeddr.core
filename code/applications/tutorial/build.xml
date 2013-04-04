@@ -1,6 +1,6 @@
 <project name="HelloWorld" default="build">
 
-  <property file="build.properties"/>
+  <property file="../../languages/build.properties"/>
   
   <property name="languagesDir" value="${mbeddr.github.core.home}/code/languages/"/>
   

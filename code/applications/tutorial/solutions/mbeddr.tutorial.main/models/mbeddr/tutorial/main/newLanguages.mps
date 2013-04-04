@@ -22,6 +22,7 @@
   <language namespace="3d0be1cf-4156-4c3c-ac37-fef83237d8e2(mbeddr.tutorial.vectors)" />
   <language namespace="f0055926-d605-4ab8-9b98-55d1e17723f5(mbeddr.tutorial.processorregisters)" />
   <language namespace="8f78d0b6-57c9-4fa8-86fe-8c30d0d5b15c(mbeddr.tutorial.smtrigger)" />
+  <language namespace="92d2ea16-5a42-4fdf-a676-c7604efe3504(de.slisson.mps.richtext)" />
   <devkit namespace="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
   <devkit namespace="43d889ae-8e6a-4f6e-a649-d59342d8728d(com.mbeddr.statemachines)" />
   <import index="e1tx" modelUID="r:bd5ec23c-c294-47cc-a078-675c03abdb69(mbeddr.tutorial.main.defaultExtensions)" version="-1" />
@@ -34,10 +35,10 @@
   <import index="rijl" modelUID="r:a56eacaf-7e31-441b-a2cd-6d0aa7af811f(mbeddr.tutorial.heap.structure)" version="-1" implicit="yes" />
   <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="5" implicit="yes" />
   <import index="yz9a" modelUID="r:734c02dd-cc16-4184-99eb-5fd9f43aa37e(com.mbeddr.core.unittest.structure)" version="0" implicit="yes" />
-  <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="3" implicit="yes" />
+  <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="5" implicit="yes" />
   <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="7" implicit="yes" />
   <import index="51wr" modelUID="r:b31f1c3c-99aa-4f1e-a329-cba27efb1a6b(com.mbeddr.core.buildconfig.structure)" version="1" implicit="yes" />
-  <import index="k146" modelUID="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" version="3" implicit="yes" />
+  <import index="k146" modelUID="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" version="5" implicit="yes" />
   <import index="f8ij" modelUID="r:ddffbaac-6bb7-469e-a768-5fcd76552224(mbeddr.tutorial.foreach.structure)" version="-1" implicit="yes" />
   <import index="bgic" modelUID="r:f8541cf4-6148-4458-a81b-adf49c8e050c(mbeddr.tutorial.blocks.structure)" version="0" implicit="yes" />
   <import index="rzjx" modelUID="r:34e48600-25da-4c7c-b6a4-8cd6f6deb117(mbeddr.tutorial.osconfig.structure)" version="-1" implicit="yes" />
@@ -826,7 +827,7 @@
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.GlobalConstantDeclaration" typeId="x27k.3788988821851860886" id="7977993180520090857">
       <property name="name" nameId="tpck.1169194664001" value="ARRSIZE" />
-      <node role="value" roleId="x27k.3788988821851871048" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="7977993180520090859">
+      <node role="value" roleId="x27k.3376775282622233992" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="7977993180520090859">
         <property name="value" nameId="mj1l.8860443239512128104" value="5" />
       </node>
     </node>
@@ -861,7 +862,7 @@
               <property name="const" nameId="mj1l.2941277002445651368" value="false" />
             </node>
             <node role="sizeExpr" roleId="yq40.1452920870317474611" type="x27k.GlobalConstantRef" typeId="x27k.3788988821852026523" id="7977993180520090860">
-              <link role="constant" roleId="x27k.3788988821852026524" targetNodeId="7977993180520090857" resolveInfo="ARRSIZE" />
+              <link role="constant" roleId="x27k.3376775282622611130" targetNodeId="7977993180520090857" resolveInfo="ARRSIZE" />
             </node>
           </node>
           <node role="init" roleId="c4fa.4185783222026502647" type="c4fa.ArrayInitExpression" typeId="c4fa.5095889050031622570" id="7977993180520090841">
@@ -888,7 +889,7 @@
             <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="7977993180520090836" resolveInfo="data" />
           </node>
           <node role="size" roleId="f8ij.646457496850739613" type="x27k.GlobalConstantRef" typeId="x27k.3788988821852026523" id="7977993180520090861">
-            <link role="constant" roleId="x27k.3788988821852026524" targetNodeId="7977993180520090857" resolveInfo="ARRSIZE" />
+            <link role="constant" roleId="x27k.3376775282622611130" targetNodeId="7977993180520090857" resolveInfo="ARRSIZE" />
           </node>
           <node role="body" roleId="f8ij.646457496850739628" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="7977993180520090827">
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="7977993180520124931">
@@ -992,7 +993,7 @@
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.GlobalConstantDeclaration" typeId="x27k.3788988821851860886" id="7977993180520273512">
       <property name="name" nameId="tpck.1169194664001" value="MAX_INTEGRATION_SIZE" />
-      <node role="value" roleId="x27k.3788988821851871048" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="7977993180520273514">
+      <node role="value" roleId="x27k.3376775282622233992" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="7977993180520273514">
         <property name="value" nameId="mj1l.8860443239512128104" value="20" />
       </node>
     </node>
@@ -1033,7 +1034,7 @@
             <property name="const" nameId="mj1l.2941277002445651368" value="false" />
           </node>
           <node role="sizeExpr" roleId="yq40.1452920870317474611" type="x27k.GlobalConstantRef" typeId="x27k.3788988821852026523" id="7977993180520273515">
-            <link role="constant" roleId="x27k.3788988821852026524" targetNodeId="7977993180520273512" resolveInfo="MAX_INTEGRATION_SIZE" />
+            <link role="constant" roleId="x27k.3376775282622611130" targetNodeId="7977993180520273512" resolveInfo="MAX_INTEGRATION_SIZE" />
           </node>
         </node>
       </node>
@@ -1212,7 +1213,7 @@
             <property name="const" nameId="mj1l.2941277002445651368" value="false" />
           </node>
           <node role="sizeExpr" roleId="yq40.1452920870317474611" type="x27k.GlobalConstantRef" typeId="x27k.3788988821852026523" id="7977993180520273581">
-            <link role="constant" roleId="x27k.3788988821852026524" targetNodeId="7977993180520273512" resolveInfo="MAX_INTEGRATION_SIZE" />
+            <link role="constant" roleId="x27k.3376775282622611130" targetNodeId="7977993180520273512" resolveInfo="MAX_INTEGRATION_SIZE" />
           </node>
         </node>
       </node>

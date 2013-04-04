@@ -2,15 +2,15 @@
 <model modelUID="r:d215b8f7-1b72-4e36-87a9-58966caafe13(test.ex.core.importAndReexport)">
   <persistence version="7" />
   <devkit namespace="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
-  <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
-  <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="22" implicit="yes" />
-  <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="3" implicit="yes" />
+  <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="23" implicit="yes" />
   <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="5" implicit="yes" />
-  <import index="yz9a" modelUID="r:734c02dd-cc16-4184-99eb-5fd9f43aa37e(com.mbeddr.core.unittest.structure)" version="0" implicit="yes" />
   <import index="yq40" modelUID="r:152b3fc0-83a1-4bab-a8cd-565eb8483785(com.mbeddr.core.pointers.structure)" version="3" implicit="yes" />
+  <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="k146" modelUID="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" version="5" implicit="yes" />
   <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="7" implicit="yes" />
   <import index="51wr" modelUID="r:b31f1c3c-99aa-4f1e-a329-cba27efb1a6b(com.mbeddr.core.buildconfig.structure)" version="1" implicit="yes" />
+  <import index="yz9a" modelUID="r:734c02dd-cc16-4184-99eb-5fd9f43aa37e(com.mbeddr.core.unittest.structure)" version="0" implicit="yes" />
+  <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="3" implicit="yes" />
   <roots>
     <node type="mj1l.TypeSizeConfiguration" typeId="mj1l.3335993110369795380" id="7475861851226119735" />
     <node type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="7475861851226252612">
@@ -190,14 +190,14 @@
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.GlobalConstantDeclaration" typeId="x27k.3788988821851860886" id="7475861851226410903">
       <property name="name" nameId="tpck.1169194664001" value="M4p" />
       <property name="exported" nameId="x27k.1317894735999272944" value="false" />
-      <node role="value" roleId="x27k.3788988821851871048" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="7475861851226410904">
+      <node role="value" roleId="x27k.3376775282622233992" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="7475861851226410904">
         <property name="value" nameId="mj1l.8860443239512128104" value="0" />
       </node>
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.GlobalConstantDeclaration" typeId="x27k.3788988821851860886" id="7475861851226410902">
       <property name="name" nameId="tpck.1169194664001" value="M4q" />
       <property name="exported" nameId="x27k.1317894735999272944" value="true" />
-      <node role="value" roleId="x27k.3788988821851871048" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="7475861851226334717">
+      <node role="value" roleId="x27k.3376775282622233992" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="7475861851226334717">
         <property name="value" nameId="mj1l.8860443239512128104" value="10" />
       </node>
     </node>
@@ -215,14 +215,14 @@
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.GlobalConstantDeclaration" typeId="x27k.3788988821851860886" id="7475861851226410895">
       <property name="name" nameId="tpck.1169194664001" value="M1a" />
       <property name="exported" nameId="x27k.1317894735999272944" value="false" />
-      <node role="value" roleId="x27k.3788988821851871048" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="7475861851226119730">
+      <node role="value" roleId="x27k.3376775282622233992" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="7475861851226119730">
         <property name="value" nameId="mj1l.8860443239512128104" value="10" />
       </node>
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.GlobalConstantDeclaration" typeId="x27k.3788988821851860886" id="7475861851226410894">
       <property name="name" nameId="tpck.1169194664001" value="M1b" />
       <property name="exported" nameId="x27k.1317894735999272944" value="true" />
-      <node role="value" roleId="x27k.3788988821851871048" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="7475861851226119789">
+      <node role="value" roleId="x27k.3376775282622233992" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="7475861851226119789">
         <property name="value" nameId="mj1l.8860443239512128104" value="10" />
       </node>
     </node>
@@ -272,14 +272,14 @@
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.GlobalConstantDeclaration" typeId="x27k.3788988821851860886" id="7475861851226410899">
       <property name="name" nameId="tpck.1169194664001" value="M3g" />
       <property name="exported" nameId="x27k.1317894735999272944" value="false" />
-      <node role="value" roleId="x27k.3788988821851871048" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="7475861851226410900">
+      <node role="value" roleId="x27k.3376775282622233992" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="7475861851226410900">
         <property name="value" nameId="mj1l.8860443239512128104" value="0" />
       </node>
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.GlobalConstantDeclaration" typeId="x27k.3788988821851860886" id="7475861851226410898">
       <property name="name" nameId="tpck.1169194664001" value="M3h" />
       <property name="exported" nameId="x27k.1317894735999272944" value="true" />
-      <node role="value" roleId="x27k.3788988821851871048" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="7475861851226334715">
+      <node role="value" roleId="x27k.3376775282622233992" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="7475861851226334715">
         <property name="value" nameId="mj1l.8860443239512128104" value="10" />
       </node>
     </node>
@@ -305,7 +305,7 @@
         <property name="const" nameId="mj1l.2941277002445651368" value="false" />
       </node>
       <node role="init" roleId="x27k.2771264470558526601" type="x27k.GlobalConstantRef" typeId="x27k.3788988821852026523" id="7475861851226410896">
-        <link role="constant" roleId="x27k.3788988821852026524" targetNodeId="7475861851226410894" resolveInfo="M1b" />
+        <link role="constant" roleId="x27k.3376775282622611130" targetNodeId="7475861851226410894" resolveInfo="M1b" />
       </node>
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.GlobalVariableDeclaration" typeId="x27k.6610873504380335822" id="7475861851226334701">
@@ -315,7 +315,7 @@
         <property name="const" nameId="mj1l.2941277002445651368" value="false" />
       </node>
       <node role="init" roleId="x27k.2771264470558526601" type="x27k.GlobalConstantRef" typeId="x27k.3788988821852026523" id="7475861851226410901">
-        <link role="constant" roleId="x27k.3788988821852026524" targetNodeId="7475861851226410898" resolveInfo="M3h" />
+        <link role="constant" roleId="x27k.3376775282622611130" targetNodeId="7475861851226410898" resolveInfo="M3h" />
       </node>
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.GlobalVariableDeclaration" typeId="x27k.6610873504380335822" id="7475861851226334710">
@@ -325,7 +325,7 @@
         <property name="const" nameId="mj1l.2941277002445651368" value="false" />
       </node>
       <node role="init" roleId="x27k.2771264470558526601" type="x27k.GlobalConstantRef" typeId="x27k.3788988821852026523" id="7475861851226410905">
-        <link role="constant" roleId="x27k.3788988821852026524" targetNodeId="7475861851226410902" resolveInfo="M4q" />
+        <link role="constant" roleId="x27k.3376775282622611130" targetNodeId="7475861851226410902" resolveInfo="M4q" />
       </node>
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="7475861851226334674">

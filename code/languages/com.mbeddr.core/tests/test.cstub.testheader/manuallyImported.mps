@@ -5,15 +5,15 @@
   <import index="7lmn" modelUID="r:07cb7f90-0acc-4344-993d-7234f63252df(com.mbeddr.core.modules.runtime.include)" version="-1" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="punb" modelUID="r:401d5aa1-f59d-49c0-833e-cf94fb548e92(com.mbeddr.core.cstubs.structure)" version="1" implicit="yes" />
-  <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="3" implicit="yes" />
-  <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="7" implicit="yes" />
-  <import index="51wr" modelUID="r:b31f1c3c-99aa-4f1e-a329-cba27efb1a6b(com.mbeddr.core.buildconfig.structure)" version="1" implicit="yes" />
-  <import index="k146" modelUID="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" version="5" implicit="yes" />
   <import index="s5bn" modelUID="r:a92dafc6-eacf-4328-984c-d7620d951c7f(com.mbeddr.core.legacy.structure)" version="1" implicit="yes" />
-  <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="22" implicit="yes" />
+  <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="23" implicit="yes" />
   <import index="yq40" modelUID="r:152b3fc0-83a1-4bab-a8cd-565eb8483785(com.mbeddr.core.pointers.structure)" version="3" implicit="yes" />
   <import index="nbyu" modelUID="r:5104a07c-c91d-412c-8374-26edb13383eb(com.mbeddr.core.embedded.structure)" version="2" implicit="yes" />
+  <import index="k146" modelUID="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" version="5" implicit="yes" />
   <import index="clbe" modelUID="r:61d840b4-12c1-49ea-b142-b2a1550a9b15(com.mbeddr.core.udt.structure)" version="7" implicit="yes" />
+  <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="7" implicit="yes" />
+  <import index="51wr" modelUID="r:b31f1c3c-99aa-4f1e-a329-cba27efb1a6b(com.mbeddr.core.buildconfig.structure)" version="1" implicit="yes" />
+  <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="3" implicit="yes" />
   <roots>
     <node type="punb.HeaderImportSpecHFile" typeId="punb.7097640331099443677" id="3029574721709407579">
       <property name="includeDir" nameId="punb.7097640331099443678" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.core/tests/test.cstub.testheader/headers" />
@@ -293,7 +293,7 @@
       <property name="name" nameId="tpck.1169194664001" value="value" />
       <property name="preventNameMangling" nameId="x27k.6708182213627106114" value="true" />
       <property name="exported" nameId="x27k.1317894735999272944" value="true" />
-      <node role="value" roleId="x27k.3788988821851871048" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3334965554181431674">
+      <node role="value" roleId="x27k.3376775282622233992" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3334965554181431674">
         <property name="value" nameId="mj1l.8860443239512128104" value="3" />
       </node>
     </node>
@@ -313,7 +313,7 @@
           <property name="const" nameId="mj1l.2941277002445651368" value="false" />
         </node>
         <node role="sizeExpr" roleId="yq40.1452920870317474611" type="x27k.GlobalConstantRef" typeId="x27k.3788988821852026523" id="3334965554181431679">
-          <link role="constant" roleId="x27k.3788988821852026524" targetNodeId="3334965554181431673" resolveInfo="value" />
+          <link role="constant" roleId="x27k.3376775282622611130" targetNodeId="3334965554181431673" resolveInfo="value" />
         </node>
       </node>
     </node>
@@ -321,7 +321,7 @@
       <property name="name" nameId="tpck.1169194664001" value="value" />
       <property name="preventNameMangling" nameId="x27k.6708182213627106114" value="true" />
       <property name="exported" nameId="x27k.1317894735999272944" value="true" />
-      <node role="value" roleId="x27k.3788988821851871048" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3334965554181431680">
+      <node role="value" roleId="x27k.3376775282622233992" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3334965554181431680">
         <property name="value" nameId="mj1l.8860443239512128104" value="3" />
       </node>
     </node>
@@ -341,7 +341,7 @@
           <property name="const" nameId="mj1l.2941277002445651368" value="false" />
         </node>
         <node role="sizeExpr" roleId="yq40.1452920870317474611" type="x27k.GlobalConstantRef" typeId="x27k.3788988821852026523" id="3334965554181431685">
-          <link role="constant" roleId="x27k.3788988821852026524" targetNodeId="3334965554181431670" resolveInfo="value" />
+          <link role="constant" roleId="x27k.3376775282622611130" targetNodeId="3334965554181431670" resolveInfo="value" />
         </node>
       </node>
     </node>
@@ -361,7 +361,7 @@
       <property name="name" nameId="tpck.1169194664001" value="value" />
       <property name="preventNameMangling" nameId="x27k.6708182213627106114" value="true" />
       <property name="exported" nameId="x27k.1317894735999272944" value="true" />
-      <node role="value" roleId="x27k.3788988821851871048" type="s5bn.OpaqueTextWithType" typeId="s5bn.8720844099624588923" id="3334965554181431689">
+      <node role="value" roleId="x27k.3376775282622233992" type="s5bn.OpaqueTextWithType" typeId="s5bn.8720844099624588923" id="3334965554181431689">
         <property name="value" nameId="s5bn.5443628787102794761" value="1 + 3" />
         <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="3334965554181431690">
           <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
@@ -373,7 +373,7 @@
       <property name="name" nameId="tpck.1169194664001" value="value" />
       <property name="preventNameMangling" nameId="x27k.6708182213627106114" value="true" />
       <property name="exported" nameId="x27k.1317894735999272944" value="true" />
-      <node role="value" roleId="x27k.3788988821851871048" type="s5bn.OpaqueTextWithType" typeId="s5bn.8720844099624588923" id="3334965554181431692">
+      <node role="value" roleId="x27k.3376775282622233992" type="s5bn.OpaqueTextWithType" typeId="s5bn.8720844099624588923" id="3334965554181431692">
         <property name="value" nameId="s5bn.5443628787102794761" value="1 + 3" />
         <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="3334965554181431693">
           <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
@@ -546,7 +546,7 @@
       <property name="name" nameId="tpck.1169194664001" value="value" />
       <property name="preventNameMangling" nameId="x27k.6708182213627106114" value="true" />
       <property name="exported" nameId="x27k.1317894735999272944" value="true" />
-      <node role="value" roleId="x27k.3788988821851871048" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="633485411402944777">
+      <node role="value" roleId="x27k.3376775282622233992" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="633485411402944777">
         <property name="value" nameId="mj1l.8860443239512128104" value="3" />
       </node>
     </node>
@@ -566,7 +566,7 @@
           <property name="const" nameId="mj1l.2941277002445651368" value="false" />
         </node>
         <node role="sizeExpr" roleId="yq40.1452920870317474611" type="x27k.GlobalConstantRef" typeId="x27k.3788988821852026523" id="633485411402944782">
-          <link role="constant" roleId="x27k.3788988821852026524" targetNodeId="633485411402944772" resolveInfo="value" />
+          <link role="constant" roleId="x27k.3376775282622611130" targetNodeId="633485411402944772" resolveInfo="value" />
         </node>
       </node>
     </node>
@@ -582,7 +582,7 @@
       <property name="name" nameId="tpck.1169194664001" value="NICE_SYMBOL" />
       <property name="preventNameMangling" nameId="x27k.6708182213627106114" value="true" />
       <property name="exported" nameId="x27k.1317894735999272944" value="true" />
-      <node role="value" roleId="x27k.3788988821851871048" type="s5bn.OpaqueTextWithType" typeId="s5bn.8720844099624588923" id="633485411402944597">
+      <node role="value" roleId="x27k.3376775282622233992" type="s5bn.OpaqueTextWithType" typeId="s5bn.8720844099624588923" id="633485411402944597">
         <property name="value" nameId="s5bn.5443628787102794761" value="symbol" />
         <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="633485411402944598">
           <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
@@ -610,7 +610,7 @@
       <property name="name" nameId="tpck.1169194664001" value="d" />
       <property name="preventNameMangling" nameId="x27k.6708182213627106114" value="true" />
       <property name="exported" nameId="x27k.1317894735999272944" value="true" />
-      <node role="value" roleId="x27k.3788988821851871048" type="s5bn.OpaqueTextWithType" typeId="s5bn.8720844099624588923" id="633485411402944137">
+      <node role="value" roleId="x27k.3376775282622233992" type="s5bn.OpaqueTextWithType" typeId="s5bn.8720844099624588923" id="633485411402944137">
         <property name="value" nameId="s5bn.5443628787102794761" value="d" />
         <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="633485411402944138">
           <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
@@ -906,7 +906,7 @@
       <property name="name" nameId="tpck.1169194664001" value="someNumber" />
       <property name="preventNameMangling" nameId="x27k.6708182213627106114" value="true" />
       <property name="exported" nameId="x27k.1317894735999272944" value="true" />
-      <node role="value" roleId="x27k.3788988821851871048" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="633485411402944205">
+      <node role="value" roleId="x27k.3376775282622233992" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="633485411402944205">
         <property name="value" nameId="mj1l.8860443239512128104" value="4" />
       </node>
     </node>
@@ -1697,7 +1697,7 @@
       <property name="name" nameId="tpck.1169194664001" value="fileInVirtualFolder" />
       <property name="preventNameMangling" nameId="x27k.6708182213627106114" value="true" />
       <property name="exported" nameId="x27k.1317894735999272944" value="true" />
-      <node role="value" roleId="x27k.3788988821851871048" type="s5bn.OpaqueTextWithType" typeId="s5bn.8720844099624588923" id="633485411402944793">
+      <node role="value" roleId="x27k.3376775282622233992" type="s5bn.OpaqueTextWithType" typeId="s5bn.8720844099624588923" id="633485411402944793">
         <property name="value" nameId="s5bn.5443628787102794761" value="A" />
         <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="633485411402944794">
           <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
@@ -1717,7 +1717,7 @@
       <property name="name" nameId="tpck.1169194664001" value="value" />
       <property name="preventNameMangling" nameId="x27k.6708182213627106114" value="true" />
       <property name="exported" nameId="x27k.1317894735999272944" value="true" />
-      <node role="value" roleId="x27k.3788988821851871048" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="633485411402944153">
+      <node role="value" roleId="x27k.3376775282622233992" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="633485411402944153">
         <property name="value" nameId="mj1l.8860443239512128104" value="3" />
       </node>
     </node>
@@ -1737,7 +1737,7 @@
           <property name="const" nameId="mj1l.2941277002445651368" value="false" />
         </node>
         <node role="sizeExpr" roleId="yq40.1452920870317474611" type="x27k.GlobalConstantRef" typeId="x27k.3788988821852026523" id="633485411402944158">
-          <link role="constant" roleId="x27k.3788988821852026524" targetNodeId="633485411402944148" resolveInfo="value" />
+          <link role="constant" roleId="x27k.3376775282622611130" targetNodeId="633485411402944148" resolveInfo="value" />
         </node>
       </node>
     </node>
@@ -1948,7 +1948,7 @@
       <property name="name" nameId="tpck.1169194664001" value="IntValue" />
       <property name="preventNameMangling" nameId="x27k.6708182213627106114" value="true" />
       <property name="exported" nameId="x27k.1317894735999272944" value="true" />
-      <node role="value" roleId="x27k.3788988821851871048" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="633485411402944163">
+      <node role="value" roleId="x27k.3376775282622233992" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="633485411402944163">
         <property name="value" nameId="mj1l.8860443239512128104" value="3" />
       </node>
     </node>
@@ -1956,7 +1956,7 @@
       <property name="name" nameId="tpck.1169194664001" value="HexValue" />
       <property name="preventNameMangling" nameId="x27k.6708182213627106114" value="true" />
       <property name="exported" nameId="x27k.1317894735999272944" value="true" />
-      <node role="value" roleId="x27k.3788988821851871048" type="mj1l.HexNumberLiteral" typeId="mj1l.1054289341113450444" id="633485411402944165">
+      <node role="value" roleId="x27k.3376775282622233992" type="mj1l.HexNumberLiteral" typeId="mj1l.1054289341113450444" id="633485411402944165">
         <property name="value" nameId="mj1l.1054289341113450445" value="a" />
       </node>
     </node>
@@ -1964,7 +1964,7 @@
       <property name="name" nameId="tpck.1169194664001" value="hexWithBracket" />
       <property name="preventNameMangling" nameId="x27k.6708182213627106114" value="true" />
       <property name="exported" nameId="x27k.1317894735999272944" value="true" />
-      <node role="value" roleId="x27k.3788988821851871048" type="mj1l.HexNumberLiteral" typeId="mj1l.1054289341113450444" id="633485411402944167">
+      <node role="value" roleId="x27k.3376775282622233992" type="mj1l.HexNumberLiteral" typeId="mj1l.1054289341113450444" id="633485411402944167">
         <property name="value" nameId="mj1l.1054289341113450445" value="244" />
       </node>
     </node>
@@ -1972,7 +1972,7 @@
       <property name="name" nameId="tpck.1169194664001" value="intWithBracket" />
       <property name="preventNameMangling" nameId="x27k.6708182213627106114" value="true" />
       <property name="exported" nameId="x27k.1317894735999272944" value="true" />
-      <node role="value" roleId="x27k.3788988821851871048" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="633485411402944169">
+      <node role="value" roleId="x27k.3376775282622233992" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="633485411402944169">
         <property name="value" nameId="mj1l.8860443239512128104" value="244" />
       </node>
     </node>
@@ -1980,7 +1980,7 @@
       <property name="name" nameId="tpck.1169194664001" value="hexWithBracketU" />
       <property name="preventNameMangling" nameId="x27k.6708182213627106114" value="true" />
       <property name="exported" nameId="x27k.1317894735999272944" value="true" />
-      <node role="value" roleId="x27k.3788988821851871048" type="mj1l.HexNumberLiteral" typeId="mj1l.1054289341113450444" id="633485411402944171">
+      <node role="value" roleId="x27k.3376775282622233992" type="mj1l.HexNumberLiteral" typeId="mj1l.1054289341113450444" id="633485411402944171">
         <property name="value" nameId="mj1l.1054289341113450445" value="0020u" />
       </node>
     </node>
@@ -1988,7 +1988,7 @@
       <property name="name" nameId="tpck.1169194664001" value="StringValue" />
       <property name="preventNameMangling" nameId="x27k.6708182213627106114" value="true" />
       <property name="exported" nameId="x27k.1317894735999272944" value="true" />
-      <node role="value" roleId="x27k.3788988821851871048" type="s5bn.OpaqueTextWithType" typeId="s5bn.8720844099624588923" id="633485411402944173">
+      <node role="value" roleId="x27k.3376775282622233992" type="s5bn.OpaqueTextWithType" typeId="s5bn.8720844099624588923" id="633485411402944173">
         <property name="value" nameId="s5bn.5443628787102794761" value="ImAString" />
         <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="633485411402944174">
           <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
@@ -2019,7 +2019,7 @@
       <property name="name" nameId="tpck.1169194664001" value="includeDefineSuccessful" />
       <property name="preventNameMangling" nameId="x27k.6708182213627106114" value="true" />
       <property name="exported" nameId="x27k.1317894735999272944" value="true" />
-      <node role="value" roleId="x27k.3788988821851871048" type="s5bn.OpaqueTextWithType" typeId="s5bn.8720844099624588923" id="633485411402944181">
+      <node role="value" roleId="x27k.3376775282622233992" type="s5bn.OpaqueTextWithType" typeId="s5bn.8720844099624588923" id="633485411402944181">
         <property name="value" nameId="s5bn.5443628787102794761" value="successful" />
         <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="633485411402944182">
           <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
@@ -2073,7 +2073,7 @@
       <property name="name" nameId="tpck.1169194664001" value="fileInVirtualFolder" />
       <property name="preventNameMangling" nameId="x27k.6708182213627106114" value="true" />
       <property name="exported" nameId="x27k.1317894735999272944" value="true" />
-      <node role="value" roleId="x27k.3788988821851871048" type="s5bn.OpaqueTextWithType" typeId="s5bn.8720844099624588923" id="633485411402944799">
+      <node role="value" roleId="x27k.3376775282622233992" type="s5bn.OpaqueTextWithType" typeId="s5bn.8720844099624588923" id="633485411402944799">
         <property name="value" nameId="s5bn.5443628787102794761" value="A" />
         <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="633485411402944800">
           <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
@@ -2093,7 +2093,7 @@
       <property name="name" nameId="tpck.1169194664001" value="fileInVirtualFolder" />
       <property name="preventNameMangling" nameId="x27k.6708182213627106114" value="true" />
       <property name="exported" nameId="x27k.1317894735999272944" value="true" />
-      <node role="value" roleId="x27k.3788988821851871048" type="s5bn.OpaqueTextWithType" typeId="s5bn.8720844099624588923" id="633485411402944811">
+      <node role="value" roleId="x27k.3376775282622233992" type="s5bn.OpaqueTextWithType" typeId="s5bn.8720844099624588923" id="633485411402944811">
         <property name="value" nameId="s5bn.5443628787102794761" value="A" />
         <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="633485411402944812">
           <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
@@ -2139,7 +2139,7 @@
       <property name="name" nameId="tpck.1169194664001" value="someInt" />
       <property name="preventNameMangling" nameId="x27k.6708182213627106114" value="true" />
       <property name="exported" nameId="x27k.1317894735999272944" value="true" />
-      <node role="value" roleId="x27k.3788988821851871048" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="633485411402944044">
+      <node role="value" roleId="x27k.3376775282622233992" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="633485411402944044">
         <property name="value" nameId="mj1l.8860443239512128104" value="22" />
       </node>
     </node>
@@ -2579,7 +2579,7 @@
       <property name="name" nameId="tpck.1169194664001" value="fileInVirtualFolder" />
       <property name="preventNameMangling" nameId="x27k.6708182213627106114" value="true" />
       <property name="exported" nameId="x27k.1317894735999272944" value="true" />
-      <node role="value" roleId="x27k.3788988821851871048" type="s5bn.OpaqueTextWithType" typeId="s5bn.8720844099624588923" id="633485411402944805">
+      <node role="value" roleId="x27k.3376775282622233992" type="s5bn.OpaqueTextWithType" typeId="s5bn.8720844099624588923" id="633485411402944805">
         <property name="value" nameId="s5bn.5443628787102794761" value="A" />
         <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="633485411402944806">
           <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
@@ -2599,7 +2599,7 @@
       <property name="name" nameId="tpck.1169194664001" value="includeDefineSuccessful" />
       <property name="preventNameMangling" nameId="x27k.6708182213627106114" value="true" />
       <property name="exported" nameId="x27k.1317894735999272944" value="true" />
-      <node role="value" roleId="x27k.3788988821851871048" type="s5bn.OpaqueTextWithType" typeId="s5bn.8720844099624588923" id="633485411402944758">
+      <node role="value" roleId="x27k.3376775282622233992" type="s5bn.OpaqueTextWithType" typeId="s5bn.8720844099624588923" id="633485411402944758">
         <property name="value" nameId="s5bn.5443628787102794761" value="successful" />
         <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="633485411402944759">
           <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
@@ -2701,7 +2701,7 @@
       <property name="name" nameId="tpck.1169194664001" value="niceSymbolIsDefined" />
       <property name="preventNameMangling" nameId="x27k.6708182213627106114" value="true" />
       <property name="exported" nameId="x27k.1317894735999272944" value="true" />
-      <node role="value" roleId="x27k.3788988821851871048" type="s5bn.OpaqueTextWithType" typeId="s5bn.8720844099624588923" id="633485411402944752">
+      <node role="value" roleId="x27k.3376775282622233992" type="s5bn.OpaqueTextWithType" typeId="s5bn.8720844099624588923" id="633485411402944752">
         <property name="value" nameId="s5bn.5443628787102794761" value="true" />
         <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="633485411402944753">
           <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
