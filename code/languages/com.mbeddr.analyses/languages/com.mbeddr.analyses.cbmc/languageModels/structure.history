@@ -24,5 +24,11 @@
     </dependencies>
     <rename id="q5q6.4887422885165654650" type="CONCEPT" from="implies" to="Implies" />
   </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="q5q6" modelUID="r:5d65e582-fa41-4818-b31c-b2aee1644b4a(com.mbeddr.analyses.cbmc.structure)" version="8" />
+    </dependencies>
+    <rename id="q5q6.7392194941658528658" type="CONCEPT" from="AfterPThenQ" to="BeforePMustQ" />
+  </StructureModification>
 </history>
 
