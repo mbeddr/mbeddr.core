@@ -1,6 +1,6 @@
 <project name="com.mbeddr.build mpsutil" default="build">
 
-  <property file="build.properties"/>
+  <property file="../build.properties"/>
 
   <path id="mps.ant.path">
    <pathelement location="${mps.home}/lib/mps-backend.jar"/>

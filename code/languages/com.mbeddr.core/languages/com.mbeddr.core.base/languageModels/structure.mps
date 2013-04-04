@@ -9,7 +9,6 @@
   <import index="tpce" modelUID="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" version="0" implicit="yes" />
   <import index="tpee" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="4" implicit="yes" />
   <import index="tp2q" modelUID="r:00000000-0000-4000-0000-011c8959032e(jetbrains.mps.baseLanguage.collections.structure)" version="7" implicit="yes" />
-  <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="7" implicit="yes" />
   <import index="tp2c" modelUID="r:00000000-0000-4000-0000-011c89590338(jetbrains.mps.baseLanguage.closures.structure)" version="3" implicit="yes" />
   <import index="87nw" modelUID="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" version="5" implicit="yes" />
   <roots>
@@ -141,6 +140,9 @@
     <node type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="349463322506397155">
       <property name="name" nameId="tpck.1169194664001" value="ISearchSupport" />
       <property name="virtualPackage" nameId="tpck.1193676396447" value="search" />
+    </node>
+    <node type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="4577779292081684434">
+      <property name="name" nameId="tpck.1169194664001" value="IKeepAliveInGeneration" />
     </node>
   </roots>
   <root id="7024921229555594291">
@@ -794,7 +796,11 @@
   <root id="1908346841499857570" />
   <root id="1908346841499892479" />
   <root id="1908346841499937386" />
-  <root id="3578942323568389911" />
+  <root id="3578942323568389911">
+    <node role="extends" roleId="tpce.1169127546356" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="4577779292081684435">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="4577779292081684434" resolveInfo="IKeepAliveInGeneration" />
+    </node>
+  </root>
   <root id="7307224057853283254">
     <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="7307224057853283256">
       <property name="value" nameId="tpce.1105725733873" value="dataFlowAnnotation" />
@@ -843,5 +849,6 @@
   </root>
   <root id="8624890525768344447" />
   <root id="349463322506397155" />
+  <root id="4577779292081684434" />
 </model>
 

@@ -1,3 +1,2 @@
-call ant -f install-plugins.xml
-
-call rebuildLanguagesAfterCheckoutOffline.bat
+call ant install-plugins
+call ant build-languages
