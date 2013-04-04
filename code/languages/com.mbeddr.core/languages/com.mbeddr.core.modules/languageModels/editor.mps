@@ -243,6 +243,10 @@
       <property name="virtualPackage" nameId="tpck.1193676396447" value="documentation" />
       <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="x27k.4869834929028630704" resolveInfo="WillBeInitializedAnnotation" />
     </node>
+    <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="7308356872494660983">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="global" />
+      <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="x27k.7308356872494660981" resolveInfo="GlobalConstantFuntionArgumentRef" />
+    </node>
   </roots>
   <root id="6437088627575722855">
     <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="6437088627575722857">
@@ -1977,10 +1981,6 @@
         <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_RefNode" typeId="tpc2.1073389882823" id="7308356872494485439">
           <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="x27k.7308356872494485437" />
         </node>
-        <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Property" typeId="tpc2.1073389658414" id="6021475212426234035">
-          <property name="allowEmptyText" nameId="tpc2.1140114345053" value="true" />
-          <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="x27k.6021475212426234033" resolveInfo="body" />
-        </node>
         <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="6021475212425980003">
           <property name="text" nameId="tpc2.1073389577007" value=";" />
           <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.PunctuationLeftStyleClassItem" typeId="tpc2.1233758997495" id="6021475212425980004">
@@ -2041,6 +2041,15 @@
   <root id="6021475212426054488">
     <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Property" typeId="tpc2.1073389658414" id="6021475212426054490">
       <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="tpck.1169194664001" resolveInfo="name" />
+    </node>
+    <node role="inspectedCellModel" roleId="tpc2.1078153129734" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="7308356872494618812">
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="7308356872494618815">
+        <property name="text" nameId="tpc2.1073389577007" value="type:" />
+      </node>
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_RefNode" typeId="tpc2.1073389882823" id="7308356872494618817">
+        <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="mj1l.318113533128716676" />
+      </node>
+      <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Indent" typeId="tpc2.1237303669825" id="7308356872494618814" />
     </node>
   </root>
   <root id="2877808180148899334">
@@ -2450,6 +2459,17 @@
         </node>
       </node>
       <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Horizontal" typeId="tpc2.1106270549637" id="4869834929029254684" />
+    </node>
+  </root>
+  <root id="7308356872494660983">
+    <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_RefCell" typeId="tpc2.1088013125922" id="7308356872494660985">
+      <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="x27k.7308356872494660982" />
+      <node role="editorComponent" roleId="tpc2.1088186146602" type="tpc2.InlineEditorComponent" typeId="tpc2.1088185857835" id="7308356872494660986">
+        <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Property" typeId="tpc2.1073389658414" id="7308356872494660988">
+          <property name="readOnly" nameId="tpc2.1140017977771" value="true" />
+          <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="tpck.1169194664001" resolveInfo="name" />
+        </node>
+      </node>
     </node>
   </root>
 </model>
