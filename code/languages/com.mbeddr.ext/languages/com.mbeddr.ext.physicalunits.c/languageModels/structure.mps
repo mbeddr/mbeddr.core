@@ -194,6 +194,9 @@
       <property name="value" nameId="tpce.1105725733873" value="introduceunit" />
       <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473891462" resolveInfo="alias" />
     </node>
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="4561522810758420555">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="3092622784654610402" resolveInfo="IVisibleUnitsProviderForC" />
+    </node>
   </root>
   <root id="9035511730050139082">
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="3092622784654708881">
