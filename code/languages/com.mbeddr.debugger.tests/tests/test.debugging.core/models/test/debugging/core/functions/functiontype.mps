@@ -79,7 +79,6 @@
         </node>
       </node>
       <node role="content" roleId="x27k.7308356872494485437" type="c4fa.ArbitraryTextExpression" typeId="c4fa.3830958861296871078" id="7308356872494556810">
-        <node role="items" roleId="c4fa.3830958861296879115" type="c4fa.AbstractItem" typeId="c4fa.745648737914844471" id="7308356872494556811" />
         <node role="items" roleId="c4fa.3830958861296879115" type="c4fa.AbritraryTextItem" typeId="c4fa.3830958861296879113" id="7308356872494556812">
           <property name="text" nameId="c4fa.3830958861296879114" value="__a + __b" />
         </node>
