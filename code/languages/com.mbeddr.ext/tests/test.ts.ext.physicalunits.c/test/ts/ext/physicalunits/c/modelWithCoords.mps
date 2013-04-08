@@ -177,11 +177,16 @@
           <property name="name" nameId="tpck.1169194664001" value="empty_1365169239556_1" />
         </node>
         <node role="contents" roleId="x27k.6437088627575722833" type="3c6d.CBasedConversionRule" typeId="3c6d.2078797996880475936" id="1785292206583324903">
-          <node role="conversion" roleId="3c6d.2078797996880475939" type="mj1l.MultiExpression" typeId="mj1l.5763383285156373020" id="1785292206583324913">
-            <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="1785292206583324916">
-              <property name="value" nameId="mj1l.8860443239512128104" value="2" />
+          <node role="conversion" roleId="3c6d.2078797996880475939" type="3c6d.IntroduceUnitExpression" typeId="3c6d.4006257212296803108" id="7308356872494864084">
+            <node role="expr" roleId="3c6d.4006257212296803109" type="mj1l.MultiExpression" typeId="mj1l.5763383285156373020" id="1785292206583324913">
+              <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="1785292206583324916">
+                <property name="value" nameId="mj1l.8860443239512128104" value="2" />
+              </node>
+              <node role="left" roleId="mj1l.8860443239512128064" type="3c6d.StripUnitExpression" typeId="3c6d.4006257212296783260" id="7308356872494864083">
+                <node role="expr" roleId="3c6d.4006257212296783261" type="3c6d.ValExpression" typeId="3c6d.5185104661801317038" id="1785292206583324910" />
+              </node>
             </node>
-            <node role="left" roleId="mj1l.8860443239512128064" type="3c6d.ValExpression" typeId="3c6d.5185104661801317038" id="1785292206583324910" />
+            <node role="targetUnit" roleId="3c6d.4006257212296803127" type="sfuj.GlobalCoords" typeId="sfuj.4497436839299102624" id="7308356872494864086" />
           </node>
           <node role="from" roleId="ym4j.2078797996880475937" type="sfuj.LocalCoords" typeId="sfuj.4497436839299102577" id="1785292206583324907" />
           <node role="to" roleId="ym4j.2078797996880475938" type="sfuj.GlobalCoords" typeId="sfuj.4497436839299102624" id="1785292206583324908" />
