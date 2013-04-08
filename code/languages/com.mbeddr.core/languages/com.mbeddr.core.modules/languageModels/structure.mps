@@ -727,7 +727,7 @@
       <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="1317894735999278394" resolveInfo="exportable" />
     </node>
     <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="3788988821851871046">
-      <property name="value" nameId="tpce.1105725733873" value="#define" />
+      <property name="value" nameId="tpce.1105725733873" value="#constant" />
       <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473891462" resolveInfo="alias" />
     </node>
     <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="4058325937810995872">
@@ -1108,11 +1108,11 @@
       <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="1317894735999278394" resolveInfo="exportable" />
     </node>
     <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="6021475212425916976">
-      <property name="value" nameId="tpce.1105725733873" value="#definefunction" />
+      <property name="value" nameId="tpce.1105725733873" value="#macro" />
       <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473891462" resolveInfo="alias" />
     </node>
     <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="6021475212425916977">
-      <property name="value" nameId="tpce.1105725733873" value="a global function constant definition" />
+      <property name="value" nameId="tpce.1105725733873" value="a global macro definition" />
       <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473914776" resolveInfo="shortDescription" />
     </node>
   </root>
@@ -1309,7 +1309,7 @@
   </root>
   <root id="3376775282622611165">
     <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="3376775282622611166">
-      <property name="value" nameId="tpce.1105725733873" value="#memoryloc" />
+      <property name="value" nameId="tpce.1105725733873" value="#alias" />
       <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473891462" resolveInfo="alias" />
     </node>
   </root>
