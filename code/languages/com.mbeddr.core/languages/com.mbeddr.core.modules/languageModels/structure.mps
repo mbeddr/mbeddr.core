@@ -367,9 +367,6 @@
       <property name="value" nameId="tpce.1105725733873" value="module encapsulating implementation code" />
       <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473914776" resolveInfo="shortDescription" />
     </node>
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.BooleanConceptProperty" typeId="tpce.1105725574259" id="1589906514419271544">
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="9066372830133136156" resolveInfo="mangleNames" />
-    </node>
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="2093108837558513475">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="vs0r.3857533489766146432" resolveInfo="IDocumentable" />
     </node>
@@ -570,10 +567,6 @@
     </node>
   </root>
   <root id="1317894735999378711">
-    <node role="conceptPropertyDeclaration" roleId="tpce.1137467167200" type="tpce.BooleanConceptPropertyDeclaration" typeId="tpce.1105725240314" id="9066372830133136156">
-      <property name="name" nameId="tpck.1169194664001" value="mangleNames" />
-      <property name="inheritable" nameId="tpce.1218571350029" value="true" />
-    </node>
     <node role="extends" roleId="tpce.1169127546356" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="1317894735999378738">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="vs0r.7024921229555594291" resolveInfo="IIdentifierNamedConcept" />
     </node>
