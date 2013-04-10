@@ -7,7 +7,7 @@
   <import index="3c6d" modelUID="r:d6d71b6a-f5ea-4b72-bd01-9d5b19792726(com.mbeddr.ext.physicalunits.c.structure)" version="0" implicit="yes" />
   <import index="ym4j" modelUID="r:cf0df747-2506-460f-a33d-eb236a605ee8(com.mbeddr.ext.physicalunits.structure)" version="10" implicit="yes" />
   <import index="k146" modelUID="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" version="5" implicit="yes" />
-  <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="22" implicit="yes" />
+  <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="23" implicit="yes" />
   <import index="yq40" modelUID="r:152b3fc0-83a1-4bab-a8cd-565eb8483785(com.mbeddr.core.pointers.structure)" version="3" implicit="yes" />
   <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="7" implicit="yes" />
   <import index="51wr" modelUID="r:b31f1c3c-99aa-4f1e-a329-cba27efb1a6b(com.mbeddr.core.buildconfig.structure)" version="1" implicit="yes" />
@@ -21,7 +21,9 @@
     </node>
     <node type="mj1l.TypeSizeConfiguration" typeId="mj1l.3335993110369795380" id="5185104661801336618" />
     <node type="51wr.BuildConfiguration" typeId="51wr.7717755763392524104" id="5185104661801336666" />
-    <node type="ym4j.UnitContainer" typeId="ym4j.3801772042669047872" id="5513256947824581019" />
+    <node type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="6657613005452170110">
+      <property name="name" nameId="tpck.1169194664001" value="UnitDeclarations" />
+    </node>
   </roots>
   <root id="5185104661801336617">
     <node role="contents" roleId="x27k.6437088627575722833" type="clbe.StructDeclaration" typeId="clbe.6394819151180597807" id="5725195488789425492">
@@ -36,7 +38,7 @@
             <property name="const" nameId="mj1l.2941277002445651368" value="false" />
           </node>
           <node role="unit" roleId="3c6d.5513256947824503030" type="ym4j.UnitDeclarationRef" typeId="ym4j.8099136929591173606" id="5725195488789425496">
-            <link role="ref" roleId="ym4j.8099136929591173608" targetNodeId="2078797996880601373" resolveInfo="C" />
+            <link role="ref" roleId="ym4j.1085404444144943750" targetNodeId="2078797996880601373" resolveInfo="C" />
           </node>
         </node>
       </node>
@@ -51,27 +53,26 @@
       <node role="body" roleId="yz9a.6275792049641586525" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="5185104661801336694">
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="6702952168899840791" />
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="6702952168899840804" />
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="6702952168899840793" />
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="6702952168899840794" />
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="5185104661801336698">
           <property name="name" nameId="tpck.1169194664001" value="temp" />
           <node role="type" roleId="mj1l.318113533128716676" type="3c6d.TypeWithUnit" typeId="3c6d.5513256947824492703" id="5185104661801336700">
             <node role="valueType" roleId="3c6d.5513256947824503029" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="5185104661801336699" />
             <node role="unit" roleId="3c6d.5513256947824503030" type="ym4j.UnitDeclarationRef" typeId="ym4j.8099136929591173606" id="2078797996880659687">
-              <link role="ref" roleId="ym4j.8099136929591173608" targetNodeId="2078797996880601373" resolveInfo="C" />
+              <link role="ref" roleId="ym4j.1085404444144943750" targetNodeId="2078797996880601373" resolveInfo="C" />
             </node>
           </node>
           <node role="init" roleId="c4fa.4185783222026502647" type="3c6d.ConvertUnitExpression" typeId="3c6d.2078797996880607635" id="2078797996880659644">
             <node role="expr" roleId="3c6d.2078797996880607660" type="3c6d.LiteralWithUnit" typeId="3c6d.5513256947824592491" id="2078797996880659652">
               <node role="unit" roleId="3c6d.5513256947824592493" type="ym4j.UnitDeclarationRef" typeId="ym4j.8099136929591173606" id="2078797996880659653">
-                <link role="ref" roleId="ym4j.8099136929591173608" targetNodeId="2078797996880601371" resolveInfo="F" />
+                <link role="ref" roleId="ym4j.1085404444144943750" targetNodeId="2078797996880601371" resolveInfo="F" />
               </node>
               <node role="value" roleId="3c6d.5513256947824592492" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2078797996880659647">
                 <property name="value" nameId="mj1l.8860443239512128104" value="20" />
               </node>
             </node>
             <node role="targetUnit" roleId="3c6d.2078797996880607636" type="ym4j.UnitDeclarationRef" typeId="ym4j.8099136929591173606" id="2078797996880659686">
-              <link role="ref" roleId="ym4j.8099136929591173608" targetNodeId="2078797996880601373" resolveInfo="C" />
+              <link role="ref" roleId="ym4j.1085404444144943750" targetNodeId="2078797996880601373" resolveInfo="C" />
             </node>
           </node>
         </node>
@@ -80,7 +81,7 @@
           <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="5185104661801338044">
             <node role="right" roleId="mj1l.8860443239512128065" type="3c6d.LiteralWithUnit" typeId="3c6d.5513256947824592491" id="2078797996880659696">
               <node role="unit" roleId="3c6d.5513256947824592493" type="ym4j.UnitDeclarationRef" typeId="ym4j.8099136929591173606" id="2078797996880659697">
-                <link role="ref" roleId="ym4j.8099136929591173608" targetNodeId="2078797996880601373" resolveInfo="C" />
+                <link role="ref" roleId="ym4j.1085404444144943750" targetNodeId="2078797996880601373" resolveInfo="C" />
               </node>
               <node role="value" roleId="3c6d.5513256947824592492" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2078797996880659691">
                 <property name="value" nameId="mj1l.8860443239512128104" value="40" />
@@ -97,13 +98,13 @@
           <node role="type" roleId="mj1l.318113533128716676" type="3c6d.TypeWithUnit" typeId="3c6d.5513256947824492703" id="5185104661801338199">
             <node role="valueType" roleId="3c6d.5513256947824503029" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="5185104661801338198" />
             <node role="unit" roleId="3c6d.5513256947824503030" type="ym4j.UnitDeclarationRef" typeId="ym4j.8099136929591173606" id="2078797996880659715">
-              <link role="ref" roleId="ym4j.8099136929591173608" targetNodeId="2078797996880601373" resolveInfo="C" />
+              <link role="ref" roleId="ym4j.1085404444144943750" targetNodeId="2078797996880601373" resolveInfo="C" />
             </node>
           </node>
           <node role="init" roleId="c4fa.4185783222026502647" type="mj1l.PlusExpression" typeId="mj1l.5763383285156373013" id="3381058180567399567">
             <node role="right" roleId="mj1l.8860443239512128065" type="3c6d.LiteralWithUnit" typeId="3c6d.5513256947824592491" id="3381058180567399575">
               <node role="unit" roleId="3c6d.5513256947824592493" type="ym4j.UnitDeclarationRef" typeId="ym4j.8099136929591173606" id="3381058180567399576">
-                <link role="ref" roleId="ym4j.8099136929591173608" targetNodeId="2078797996880601373" resolveInfo="C" />
+                <link role="ref" roleId="ym4j.1085404444144943750" targetNodeId="2078797996880601373" resolveInfo="C" />
               </node>
               <node role="value" roleId="3c6d.5513256947824592492" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3381058180567399570">
                 <property name="value" nameId="mj1l.8860443239512128104" value="10" />
@@ -112,14 +113,14 @@
             <node role="left" roleId="mj1l.8860443239512128064" type="3c6d.ConvertUnitExpression" typeId="3c6d.2078797996880607635" id="3381058180567399577">
               <node role="expr" roleId="3c6d.2078797996880607660" type="3c6d.LiteralWithUnit" typeId="3c6d.5513256947824592491" id="3381058180567399562">
                 <node role="unit" roleId="3c6d.5513256947824592493" type="ym4j.UnitDeclarationRef" typeId="ym4j.8099136929591173606" id="3381058180567399563">
-                  <link role="ref" roleId="ym4j.8099136929591173608" targetNodeId="2078797996880601371" resolveInfo="F" />
+                  <link role="ref" roleId="ym4j.1085404444144943750" targetNodeId="2078797996880601371" resolveInfo="F" />
                 </node>
                 <node role="value" roleId="3c6d.5513256947824592492" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3381058180567399559">
                   <property name="value" nameId="mj1l.8860443239512128104" value="20" />
                 </node>
               </node>
               <node role="targetUnit" roleId="3c6d.2078797996880607636" type="ym4j.UnitDeclarationRef" typeId="ym4j.8099136929591173606" id="3381058180567399578">
-                <link role="ref" roleId="ym4j.8099136929591173608" targetNodeId="2078797996880601373" resolveInfo="C" />
+                <link role="ref" roleId="ym4j.1085404444144943750" targetNodeId="2078797996880601373" resolveInfo="C" />
               </node>
             </node>
           </node>
@@ -132,7 +133,7 @@
             </node>
             <node role="right" roleId="mj1l.8860443239512128065" type="3c6d.LiteralWithUnit" typeId="3c6d.5513256947824592491" id="2078797996880663130">
               <node role="unit" roleId="3c6d.5513256947824592493" type="ym4j.UnitDeclarationRef" typeId="ym4j.8099136929591173606" id="2078797996880663131">
-                <link role="ref" roleId="ym4j.8099136929591173608" targetNodeId="2078797996880601373" resolveInfo="C" />
+                <link role="ref" roleId="ym4j.1085404444144943750" targetNodeId="2078797996880601373" resolveInfo="C" />
               </node>
               <node role="value" roleId="3c6d.5513256947824592492" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2078797996880663125">
                 <property name="value" nameId="mj1l.8860443239512128104" value="50" />
@@ -146,12 +147,12 @@
           <node role="type" roleId="mj1l.318113533128716676" type="3c6d.TypeWithUnit" typeId="3c6d.5513256947824492703" id="5185104661801338432">
             <node role="valueType" roleId="3c6d.5513256947824503029" type="mj1l.FloatType" typeId="mj1l.4739982148980385695" id="5185104661801339644" />
             <node role="unit" roleId="3c6d.5513256947824503030" type="ym4j.UnitDeclarationRef" typeId="ym4j.8099136929591173606" id="2078797996880664210">
-              <link role="ref" roleId="ym4j.8099136929591173608" targetNodeId="2078797996880601373" resolveInfo="C" />
+              <link role="ref" roleId="ym4j.1085404444144943750" targetNodeId="2078797996880601373" resolveInfo="C" />
             </node>
           </node>
           <node role="init" roleId="c4fa.4185783222026502647" type="3c6d.LiteralWithUnit" typeId="3c6d.5513256947824592491" id="3712762268617385211">
             <node role="unit" roleId="3c6d.5513256947824592493" type="ym4j.UnitDeclarationRef" typeId="ym4j.8099136929591173606" id="3712762268617385212">
-              <link role="ref" roleId="ym4j.8099136929591173608" targetNodeId="2078797996880601373" resolveInfo="C" />
+              <link role="ref" roleId="ym4j.1085404444144943750" targetNodeId="2078797996880601373" resolveInfo="C" />
             </node>
             <node role="value" roleId="3c6d.5513256947824592492" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3712762268617385207">
               <property name="value" nameId="mj1l.8860443239512128104" value="84.85" />
@@ -164,7 +165,7 @@
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.LessExpression" typeId="mj1l.8860443239512147449" id="2078797996880680319">
               <node role="right" roleId="mj1l.8860443239512128065" type="3c6d.LiteralWithUnit" typeId="3c6d.5513256947824592491" id="2078797996880680329">
                 <node role="unit" roleId="3c6d.5513256947824592493" type="ym4j.UnitDeclarationRef" typeId="ym4j.8099136929591173606" id="2078797996880680330">
-                  <link role="ref" roleId="ym4j.8099136929591173608" targetNodeId="2078797996880601373" resolveInfo="C" />
+                  <link role="ref" roleId="ym4j.1085404444144943750" targetNodeId="2078797996880601373" resolveInfo="C" />
                 </node>
                 <node role="value" roleId="3c6d.5513256947824592492" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2078797996880680322">
                   <property name="value" nameId="mj1l.8860443239512128104" value="84.9" />
@@ -180,7 +181,7 @@
               </node>
               <node role="right" roleId="mj1l.8860443239512128065" type="3c6d.LiteralWithUnit" typeId="3c6d.5513256947824592491" id="2078797996880680310">
                 <node role="unit" roleId="3c6d.5513256947824592493" type="ym4j.UnitDeclarationRef" typeId="ym4j.8099136929591173606" id="2078797996880680311">
-                  <link role="ref" roleId="ym4j.8099136929591173608" targetNodeId="2078797996880601373" resolveInfo="C" />
+                  <link role="ref" roleId="ym4j.1085404444144943750" targetNodeId="2078797996880601373" resolveInfo="C" />
                 </node>
                 <node role="value" roleId="3c6d.5513256947824592492" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2078797996880680312">
                   <property name="value" nameId="mj1l.8860443239512128104" value="84.8" />
@@ -200,12 +201,12 @@
               <property name="const" nameId="mj1l.2941277002445651368" value="false" />
             </node>
             <node role="unit" roleId="3c6d.5513256947824503030" type="ym4j.UnitDeclarationRef" typeId="ym4j.8099136929591173606" id="1656687801206570384">
-              <link role="ref" roleId="ym4j.8099136929591173608" targetNodeId="1656687801206568657" resolveInfo="kWH" />
+              <link role="ref" roleId="ym4j.1085404444144943750" targetNodeId="1656687801206568657" resolveInfo="kWH" />
             </node>
           </node>
           <node role="init" roleId="c4fa.4185783222026502647" type="3c6d.LiteralWithUnit" typeId="3c6d.5513256947824592491" id="1656687801206570395">
             <node role="unit" roleId="3c6d.5513256947824592493" type="ym4j.UnitDeclarationRef" typeId="ym4j.8099136929591173606" id="1656687801206570396">
-              <link role="ref" roleId="ym4j.8099136929591173608" targetNodeId="1656687801206568657" resolveInfo="kWH" />
+              <link role="ref" roleId="ym4j.1085404444144943750" targetNodeId="1656687801206568657" resolveInfo="kWH" />
             </node>
             <node role="value" roleId="3c6d.5513256947824592492" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="1656687801206570386">
               <property name="value" nameId="mj1l.8860443239512128104" value="10" />
@@ -217,7 +218,7 @@
           <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="1656687801206570403">
             <node role="right" roleId="mj1l.8860443239512128065" type="3c6d.LiteralWithUnit" typeId="3c6d.5513256947824592491" id="1656687801206570415">
               <node role="unit" roleId="3c6d.5513256947824592493" type="ym4j.UnitDeclarationRef" typeId="ym4j.8099136929591173606" id="1656687801206570416">
-                <link role="ref" roleId="ym4j.8099136929591173608" targetNodeId="1656687801206568657" resolveInfo="kWH" />
+                <link role="ref" roleId="ym4j.1085404444144943750" targetNodeId="1656687801206568657" resolveInfo="kWH" />
               </node>
               <node role="value" roleId="3c6d.5513256947824592492" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="1656687801206570406">
                 <property name="value" nameId="mj1l.8860443239512128104" value="10" />
@@ -228,6 +229,52 @@
             </node>
           </node>
         </node>
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="7308356872494864501" />
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="7308356872494864505">
+          <property name="name" nameId="tpck.1169194664001" value="rawC" />
+          <node role="type" roleId="mj1l.318113533128716676" type="3c6d.TypeWithUnit" typeId="3c6d.5513256947824492703" id="7308356872494864507">
+            <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+            <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+            <node role="valueType" roleId="3c6d.5513256947824503029" type="mj1l.Int16tType" typeId="mj1l.8463282783691618435" id="7308356872494864506">
+              <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+              <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+            </node>
+            <node role="unit" roleId="3c6d.5513256947824503030" type="ym4j.UnitDeclarationRef" typeId="ym4j.8099136929591173606" id="7308356872494864508">
+              <link role="ref" roleId="ym4j.1085404444144943750" targetNodeId="7308356872494864468" resolveInfo="rawC" />
+            </node>
+          </node>
+          <node role="init" roleId="c4fa.4185783222026502647" type="3c6d.LiteralWithUnit" typeId="3c6d.5513256947824592491" id="7308356872494864517">
+            <node role="unit" roleId="3c6d.5513256947824592493" type="ym4j.UnitDeclarationRef" typeId="ym4j.8099136929591173606" id="7308356872494864518">
+              <link role="ref" roleId="ym4j.1085404444144943750" targetNodeId="7308356872494864468" resolveInfo="rawC" />
+            </node>
+            <node role="value" roleId="3c6d.5513256947824592492" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="7308356872494864510">
+              <property name="value" nameId="mj1l.8860443239512128104" value="10" />
+            </node>
+          </node>
+        </node>
+        <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="7308356872494864521">
+          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="7308356872494864521" />
+          <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="7308356872494864528">
+            <node role="right" roleId="mj1l.8860443239512128065" type="3c6d.LiteralWithUnit" typeId="3c6d.5513256947824592491" id="7308356872494864538">
+              <node role="unit" roleId="3c6d.5513256947824592493" type="ym4j.UnitDeclarationRef" typeId="ym4j.8099136929591173606" id="7308356872494864539">
+                <link role="ref" roleId="ym4j.1085404444144943750" targetNodeId="2078797996880601371" resolveInfo="F" />
+              </node>
+              <node role="value" roleId="3c6d.5513256947824592492" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="7308356872494864531">
+                <property name="value" nameId="mj1l.8860443239512128104" value="55" />
+              </node>
+            </node>
+            <node role="left" roleId="mj1l.8860443239512128064" type="3c6d.ConvertUnitExpression" typeId="3c6d.2078797996880607635" id="7308356872494864524">
+              <node role="expr" roleId="3c6d.2078797996880607660" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="7308356872494864523">
+                <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="7308356872494864505" resolveInfo="rawC" />
+              </node>
+              <node role="targetUnit" roleId="3c6d.2078797996880607636" type="ym4j.UnitDeclarationRef" typeId="ym4j.8099136929591173606" id="7308356872494864525">
+                <link role="ref" roleId="ym4j.1085404444144943750" targetNodeId="2078797996880601371" resolveInfo="F" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="7308356872494864503" />
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="7308356872494864504" />
       </node>
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="5185104661801336691">
@@ -258,6 +305,9 @@
           </node>
         </node>
       </node>
+    </node>
+    <node role="imports" roleId="x27k.1317894735999304826" type="x27k.ModuleImport" typeId="x27k.1317894735999299713" id="6657613005452170122">
+      <link role="module" roleId="x27k.1317894735999299714" targetNodeId="6657613005452170110" resolveInfo="UnitDeclarations" />
     </node>
   </root>
   <root id="5185104661801336618">
@@ -350,59 +400,146 @@
     <node role="configurationItems" roleId="vs0r.4459718605982007338" type="k146.ReportingConfiguration" typeId="k146.4459718605982051949" id="5185104661801336668">
       <node role="strategy" roleId="k146.4459718605982051999" type="k146.PrintfReportingStrategy" typeId="k146.4459718605982051980" id="5185104661801336669" />
     </node>
-    <node role="configurationItems" roleId="vs0r.4459718605982007338" type="3c6d.PhysicalUnitsConfigItem" typeId="3c6d.9035511730050139082" id="9035511730050477866">
-      <link role="container" roleId="3c6d.9035511730050143261" targetNodeId="5513256947824581019" resolveInfo="test.ex.ext.physicalunits.c.main" />
-    </node>
+    <node role="configurationItems" roleId="vs0r.4459718605982007338" type="3c6d.PhysicalUnitsConfigItem" typeId="3c6d.9035511730050139082" id="4561522810758402510" />
     <node role="binaries" roleId="51wr.5046689135694070731" type="51wr.Executable" typeId="51wr.5046689135693761554" id="5185104661801336670">
       <property name="name" nameId="tpck.1169194664001" value="SomeModule" />
       <property name="isTest" nameId="51wr.3431613015799084476" value="true" />
       <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="5185104661801336676">
         <link role="module" roleId="51wr.7717755763392524108" targetNodeId="5185104661801336617" resolveInfo="SomeModule" />
       </node>
+      <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="4561522810758402508">
+        <link role="module" roleId="51wr.7717755763392524108" targetNodeId="6657613005452170110" resolveInfo="UnitDeclarations" />
+      </node>
     </node>
   </root>
-  <root id="5513256947824581019">
-    <node role="contents" roleId="ym4j.6870096341748240402" type="ym4j.EmptyUnitContainerContents" typeId="ym4j.6870096341748575352" id="6870096341748581575" />
-    <node role="contents" roleId="ym4j.6870096341748240402" type="ym4j.NamedConvertibleUnitDeclaration" typeId="ym4j.2078797996880580463" id="2078797996880601371">
-      <property name="name" nameId="tpck.1169194664001" value="F" />
-      <property name="physicalMeaning" nameId="ym4j.2078797996880543461" value="temperature" />
+  <root id="6657613005452170110">
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="6657613005452170111">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1365083950488_1" />
     </node>
-    <node role="contents" roleId="ym4j.6870096341748240402" type="ym4j.NamedConvertibleUnitDeclaration" typeId="ym4j.2078797996880580463" id="2078797996880601373">
-      <property name="name" nameId="tpck.1169194664001" value="C" />
-      <property name="physicalMeaning" nameId="ym4j.2078797996880543461" value="temperature" />
+    <node role="contents" roleId="x27k.6437088627575722833" type="3c6d.UnitInModuleAdapter" typeId="3c6d.1085404444144872539" id="6657613005452170112">
+      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
+      <node role="unitDecl" roleId="3c6d.1085404444144872540" type="ym4j.NamedConvertibleUnitDeclaration" typeId="ym4j.2078797996880580463" id="2078797996880601371">
+        <property name="name" nameId="tpck.1169194664001" value="F" />
+        <property name="physicalMeaning" nameId="ym4j.2078797996880543461" value="temperature" />
+      </node>
     </node>
-    <node role="contents" roleId="ym4j.6870096341748240402" type="ym4j.EmptyUnitContainerContents" typeId="ym4j.6870096341748575352" id="6702952168899792329" />
-    <node role="contents" roleId="ym4j.6870096341748240402" type="ym4j.NamedOpaqueUnitDeclaration" typeId="ym4j.1656687801206561197" id="1656687801206568657">
-      <property name="name" nameId="tpck.1169194664001" value="kWH" />
-      <property name="physicalMeaning" nameId="ym4j.2078797996880543461" value="energy" />
+    <node role="contents" roleId="x27k.6437088627575722833" type="3c6d.UnitInModuleAdapter" typeId="3c6d.1085404444144872539" id="6657613005452170113">
+      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
+      <node role="unitDecl" roleId="3c6d.1085404444144872540" type="ym4j.NamedConvertibleUnitDeclaration" typeId="ym4j.2078797996880580463" id="2078797996880601373">
+        <property name="name" nameId="tpck.1169194664001" value="C" />
+        <property name="physicalMeaning" nameId="ym4j.2078797996880543461" value="temperature" />
+      </node>
     </node>
-    <node role="contents" roleId="ym4j.6870096341748240402" type="ym4j.EmptyUnitContainerContents" typeId="ym4j.6870096341748575352" id="6702952168899837909" />
-    <node role="contents" roleId="ym4j.6870096341748240402" type="3c6d.CBasedConversionRule" typeId="3c6d.2078797996880475936" id="2078797996880515333">
-      <node role="conversion" roleId="3c6d.2078797996880475939" type="mj1l.MultiExpression" typeId="mj1l.5763383285156373020" id="2078797996880659703">
-        <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2078797996880659706">
-          <property name="value" nameId="mj1l.8860443239512128104" value="2" />
+    <node role="contents" roleId="x27k.6437088627575722833" type="3c6d.UnitInModuleAdapter" typeId="3c6d.1085404444144872539" id="7308356872494864467">
+      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
+      <node role="unitDecl" roleId="3c6d.1085404444144872540" type="ym4j.NamedConvertibleUnitDeclaration" typeId="ym4j.2078797996880580463" id="7308356872494864468">
+        <property name="name" nameId="tpck.1169194664001" value="rawC" />
+        <property name="physicalMeaning" nameId="ym4j.2078797996880543461" value="temp" />
+      </node>
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="7308356872494864466">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1365427724969_1" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="3c6d.UnitInModuleAdapter" typeId="3c6d.1085404444144872539" id="6657613005452170115">
+      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
+      <node role="unitDecl" roleId="3c6d.1085404444144872540" type="ym4j.NamedOpaqueUnitDeclaration" typeId="ym4j.1656687801206561197" id="1656687801206568657">
+        <property name="name" nameId="tpck.1169194664001" value="kWH" />
+        <property name="physicalMeaning" nameId="ym4j.2078797996880543461" value="energy" />
+      </node>
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="6657613005452170116">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1365083950489_3" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="3c6d.CBasedConversionRule" typeId="3c6d.2078797996880475936" id="2078797996880515333">
+      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
+      <node role="conversion" roleId="3c6d.2078797996880475939" type="3c6d.IntroduceUnitExpression" typeId="3c6d.4006257212296803108" id="7308356872494864461">
+        <node role="expr" roleId="3c6d.4006257212296803109" type="mj1l.MultiExpression" typeId="mj1l.5763383285156373020" id="2078797996880659703">
+          <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2078797996880659706">
+            <property name="value" nameId="mj1l.8860443239512128104" value="2" />
+          </node>
+          <node role="left" roleId="mj1l.8860443239512128064" type="3c6d.StripUnitExpression" typeId="3c6d.4006257212296783260" id="7308356872494864460">
+            <node role="expr" roleId="3c6d.4006257212296783261" type="3c6d.ValExpression" typeId="3c6d.5185104661801317038" id="2078797996880659700" />
+          </node>
         </node>
-        <node role="left" roleId="mj1l.8860443239512128064" type="3c6d.ValExpression" typeId="3c6d.5185104661801317038" id="2078797996880659700" />
+        <node role="targetUnit" roleId="3c6d.4006257212296803127" type="ym4j.UnitDeclarationRef" typeId="ym4j.8099136929591173606" id="7308356872494864462">
+          <link role="ref" roleId="ym4j.1085404444144943750" targetNodeId="2078797996880601373" resolveInfo="C" />
+        </node>
       </node>
       <node role="from" roleId="ym4j.2078797996880475937" type="ym4j.UnitDeclarationRef" typeId="ym4j.8099136929591173606" id="2078797996880515337">
-        <link role="ref" roleId="ym4j.8099136929591173608" targetNodeId="2078797996880601371" resolveInfo="F" />
+        <link role="ref" roleId="ym4j.1085404444144943750" targetNodeId="2078797996880601371" resolveInfo="F" />
       </node>
       <node role="to" roleId="ym4j.2078797996880475938" type="ym4j.UnitDeclarationRef" typeId="ym4j.8099136929591173606" id="2078797996880515338">
-        <link role="ref" roleId="ym4j.8099136929591173608" targetNodeId="2078797996880601373" resolveInfo="C" />
+        <link role="ref" roleId="ym4j.1085404444144943750" targetNodeId="2078797996880601373" resolveInfo="C" />
       </node>
     </node>
-    <node role="contents" roleId="ym4j.6870096341748240402" type="3c6d.CBasedConversionRule" typeId="3c6d.2078797996880475936" id="2078797996880515995">
+    <node role="contents" roleId="x27k.6437088627575722833" type="3c6d.CBasedConversionRule" typeId="3c6d.2078797996880475936" id="2078797996880515995">
+      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
       <node role="from" roleId="ym4j.2078797996880475937" type="ym4j.UnitDeclarationRef" typeId="ym4j.8099136929591173606" id="2078797996880515999">
-        <link role="ref" roleId="ym4j.8099136929591173608" targetNodeId="2078797996880601373" resolveInfo="C" />
+        <link role="ref" roleId="ym4j.1085404444144943750" targetNodeId="2078797996880601373" resolveInfo="C" />
       </node>
       <node role="to" roleId="ym4j.2078797996880475938" type="ym4j.UnitDeclarationRef" typeId="ym4j.8099136929591173606" id="2078797996880516000">
-        <link role="ref" roleId="ym4j.8099136929591173608" targetNodeId="2078797996880601371" resolveInfo="F" />
+        <link role="ref" roleId="ym4j.1085404444144943750" targetNodeId="2078797996880601371" resolveInfo="F" />
       </node>
-      <node role="conversion" roleId="3c6d.2078797996880475939" type="mj1l.DivExpression" typeId="mj1l.5763383285156373022" id="2078797996880659711">
-        <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2078797996880659714">
-          <property name="value" nameId="mj1l.8860443239512128104" value="2" />
+      <node role="conversion" roleId="3c6d.2078797996880475939" type="3c6d.IntroduceUnitExpression" typeId="3c6d.4006257212296803108" id="7308356872494864464">
+        <node role="expr" roleId="3c6d.4006257212296803109" type="mj1l.DivExpression" typeId="mj1l.5763383285156373022" id="2078797996880659711">
+          <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2078797996880659714">
+            <property name="value" nameId="mj1l.8860443239512128104" value="2" />
+          </node>
+          <node role="left" roleId="mj1l.8860443239512128064" type="3c6d.StripUnitExpression" typeId="3c6d.4006257212296783260" id="7308356872494864463">
+            <node role="expr" roleId="3c6d.4006257212296783261" type="3c6d.ValExpression" typeId="3c6d.5185104661801317038" id="2078797996880659708" />
+          </node>
         </node>
-        <node role="left" roleId="mj1l.8860443239512128064" type="3c6d.ValExpression" typeId="3c6d.5185104661801317038" id="2078797996880659708" />
+        <node role="targetUnit" roleId="3c6d.4006257212296803127" type="ym4j.UnitDeclarationRef" typeId="ym4j.8099136929591173606" id="7308356872494864465">
+          <link role="ref" roleId="ym4j.1085404444144943750" targetNodeId="2078797996880601371" resolveInfo="F" />
+        </node>
+      </node>
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="7308356872494864469">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1365427755542_2" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="3c6d.CBasedConversionRule" typeId="3c6d.2078797996880475936" id="7308356872494864471">
+      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
+      <node role="conversion" roleId="3c6d.2078797996880475939" type="3c6d.IntroduceUnitExpression" typeId="3c6d.4006257212296803108" id="7308356872494864486">
+        <node role="expr" roleId="3c6d.4006257212296803109" type="mj1l.PlusExpression" typeId="mj1l.5763383285156373013" id="7308356872494864481">
+          <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="7308356872494864484">
+            <property name="value" nameId="mj1l.8860443239512128104" value="100" />
+          </node>
+          <node role="left" roleId="mj1l.8860443239512128064" type="3c6d.StripUnitExpression" typeId="3c6d.4006257212296783260" id="7308356872494864485">
+            <node role="expr" roleId="3c6d.4006257212296783261" type="3c6d.ValExpression" typeId="3c6d.5185104661801317038" id="7308356872494864478" />
+          </node>
+        </node>
+        <node role="targetUnit" roleId="3c6d.4006257212296803127" type="ym4j.UnitDeclarationRef" typeId="ym4j.8099136929591173606" id="7308356872494864487">
+          <link role="ref" roleId="ym4j.1085404444144943750" targetNodeId="2078797996880601373" resolveInfo="C" />
+        </node>
+      </node>
+      <node role="from" roleId="ym4j.2078797996880475937" type="ym4j.UnitDeclarationRef" typeId="ym4j.8099136929591173606" id="7308356872494864476">
+        <link role="ref" roleId="ym4j.1085404444144943750" targetNodeId="7308356872494864468" resolveInfo="rawC" />
+      </node>
+      <node role="to" roleId="ym4j.2078797996880475938" type="ym4j.UnitDeclarationRef" typeId="ym4j.8099136929591173606" id="7308356872494864477">
+        <link role="ref" roleId="ym4j.1085404444144943750" targetNodeId="2078797996880601373" resolveInfo="C" />
+      </node>
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="7308356872494864488">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1365427790468_4" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="3c6d.CBasedConversionRule" typeId="3c6d.2078797996880475936" id="7308356872494864490">
+      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
+      <node role="conversion" roleId="3c6d.2078797996880475939" type="3c6d.ConvertUnitExpression" typeId="3c6d.2078797996880607635" id="7308356872494864499">
+        <node role="expr" roleId="3c6d.2078797996880607660" type="3c6d.ConvertUnitExpression" typeId="3c6d.2078797996880607635" id="7308356872494864497">
+          <node role="expr" roleId="3c6d.2078797996880607660" type="3c6d.ValExpression" typeId="3c6d.5185104661801317038" id="7308356872494864496" />
+          <node role="targetUnit" roleId="3c6d.2078797996880607636" type="ym4j.UnitDeclarationRef" typeId="ym4j.8099136929591173606" id="7308356872494864498">
+            <link role="ref" roleId="ym4j.1085404444144943750" targetNodeId="2078797996880601373" resolveInfo="C" />
+          </node>
+        </node>
+        <node role="targetUnit" roleId="3c6d.2078797996880607636" type="ym4j.UnitDeclarationRef" typeId="ym4j.8099136929591173606" id="7308356872494864500">
+          <link role="ref" roleId="ym4j.1085404444144943750" targetNodeId="2078797996880601371" resolveInfo="F" />
+        </node>
+      </node>
+      <node role="from" roleId="ym4j.2078797996880475937" type="ym4j.UnitDeclarationRef" typeId="ym4j.8099136929591173606" id="7308356872494864494">
+        <link role="ref" roleId="ym4j.1085404444144943750" targetNodeId="7308356872494864468" resolveInfo="rawC" />
+      </node>
+      <node role="to" roleId="ym4j.2078797996880475938" type="ym4j.UnitDeclarationRef" typeId="ym4j.8099136929591173606" id="7308356872494864495">
+        <link role="ref" roleId="ym4j.1085404444144943750" targetNodeId="2078797996880601371" resolveInfo="F" />
       </node>
     </node>
   </root>

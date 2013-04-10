@@ -88,7 +88,7 @@
           <node role="init" roleId="x27k.2771264470558526601" type="x27k.GlobalVarRef" typeId="x27k.6610873504380357354" id="7475861851226119784">
             <link role="var" roleId="x27k.6610873504380357355" targetNodeId="7475861851226119727" resolveInfo="M1a" />
             <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodePropertiesContainer" typeId="tp5g.1215507532627" id="7475861851226119785">
-              <node role="properties" roleId="tp5g.1215507909023" type="tp5g.NodeErrorPropety" typeId="tp5g.1215507671101" id="7475861851226119786" />
+              <node role="properties" roleId="tp5g.1215507909023" type="tp5g.NodeUnreachable" typeId="tp5g.1215612918969" id="4561522810758258648" />
             </node>
           </node>
         </node>
@@ -114,7 +114,7 @@
           <node role="init" roleId="x27k.2771264470558526601" type="x27k.GlobalVarRef" typeId="x27k.6610873504380357354" id="7475861851226252173">
             <link role="var" roleId="x27k.6610873504380357355" targetNodeId="7475861851226119799" resolveInfo="M2x" />
             <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodePropertiesContainer" typeId="tp5g.1215507532627" id="7475861851226252174">
-              <node role="properties" roleId="tp5g.1215507909023" type="tp5g.NodeErrorPropety" typeId="tp5g.1215507671101" id="7475861851226252175" />
+              <node role="properties" roleId="tp5g.1215507909023" type="tp5g.NodeUnreachable" typeId="tp5g.1215612918969" id="4561522810758258649" />
             </node>
           </node>
         </node>
@@ -127,7 +127,7 @@
           <node role="init" roleId="x27k.2771264470558526601" type="x27k.GlobalVarRef" typeId="x27k.6610873504380357354" id="7475861851226252168">
             <link role="var" roleId="x27k.6610873504380357355" targetNodeId="7475861851226119802" resolveInfo="M2y" />
             <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodePropertiesContainer" typeId="tp5g.1215507532627" id="7475861851226252169">
-              <node role="properties" roleId="tp5g.1215507909023" type="tp5g.NodeErrorPropety" typeId="tp5g.1215507671101" id="7475861851226252170" />
+              <node role="properties" roleId="tp5g.1215507909023" type="tp5g.NodeUnreachable" typeId="tp5g.1215612918969" id="4561522810758258650" />
             </node>
           </node>
         </node>
@@ -143,7 +143,7 @@
           <node role="init" roleId="x27k.2771264470558526601" type="x27k.GlobalVarRef" typeId="x27k.6610873504380357354" id="7475861851226252600">
             <link role="var" roleId="x27k.6610873504380357355" targetNodeId="7475861851226145568" resolveInfo="M3g" />
             <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodePropertiesContainer" typeId="tp5g.1215507532627" id="7475861851226252601">
-              <node role="properties" roleId="tp5g.1215507909023" type="tp5g.NodeErrorPropety" typeId="tp5g.1215507671101" id="7475861851226252602" />
+              <node role="properties" roleId="tp5g.1215507909023" type="tp5g.NodeUnreachable" typeId="tp5g.1215612918969" id="4561522810758258651" />
             </node>
           </node>
         </node>
@@ -169,7 +169,7 @@
           <node role="init" roleId="x27k.2771264470558526601" type="x27k.GlobalVarRef" typeId="x27k.6610873504380357354" id="7475861851226252627">
             <link role="var" roleId="x27k.6610873504380357355" targetNodeId="7475861851226252614" resolveInfo="M4p" />
             <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodePropertiesContainer" typeId="tp5g.1215507532627" id="7475861851226252628">
-              <node role="properties" roleId="tp5g.1215507909023" type="tp5g.NodeErrorPropety" typeId="tp5g.1215507671101" id="7475861851226252629" />
+              <node role="properties" roleId="tp5g.1215507909023" type="tp5g.NodeUnreachable" typeId="tp5g.1215612918969" id="4561522810758258652" />
             </node>
           </node>
         </node>
