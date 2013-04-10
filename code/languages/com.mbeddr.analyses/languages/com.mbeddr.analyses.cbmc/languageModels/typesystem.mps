@@ -11,10 +11,10 @@
   <devkit namespace="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
   <import index="51wr" modelUID="r:b31f1c3c-99aa-4f1e-a329-cba27efb1a6b(com.mbeddr.core.buildconfig.structure)" version="1" />
   <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="5" />
-  <import index="q5q6" modelUID="r:5d65e582-fa41-4818-b31c-b2aee1644b4a(com.mbeddr.analyses.cbmc.structure)" version="9" />
+  <import index="q5q6" modelUID="r:5d65e582-fa41-4818-b31c-b2aee1644b4a(com.mbeddr.analyses.cbmc.structure)" version="16" />
   <import index="v7ag" modelUID="r:9596407c-f27a-49d3-abde-3a66293c5b61(com.mbeddr.ext.components.structure)" version="16" />
   <import index="eup9" modelUID="r:ab391014-3e08-4918-9cc5-1c93e3a55c72(com.mbeddr.ext.components.behavior)" version="0" />
-  <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="22" />
+  <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="23" />
   <import index="k146" modelUID="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" version="5" />
   <import index="tzyt" modelUID="r:b35b0dd8-a38e-4607-ba37-cc8f7410b705(com.mbeddr.analyses.cbmc.rt.run)" version="-1" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
@@ -49,6 +49,14 @@
     <node type="tpd4.NonTypesystemRule" typeId="tpd4.1195214364922" id="6375603587899700150">
       <property name="name" nameId="tpck.1169194664001" value="check_ComponentsCBMCAnalysis" />
       <property name="virtualPackage" nameId="tpck.1193676396447" value="configuration.cbmc" />
+    </node>
+    <node type="tpd4.NonTypesystemRule" typeId="tpd4.1195214364922" id="8985851583396614831">
+      <property name="name" nameId="tpck.1169194664001" value="check_InitializeVariable" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="harness" />
+    </node>
+    <node type="tpd4.InferenceRule" typeId="tpd4.1174643105530" id="8985851583396614923">
+      <property name="name" nameId="tpck.1169194664001" value="typeof_InitializeVariable" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="harness" />
     </node>
   </roots>
   <root id="4887422885165640738">
@@ -571,6 +579,51 @@
     <node role="applicableNode" roleId="tpd4.1174648101952" type="tpd4.ConceptReference" typeId="tpd4.1174642788531" id="6375603587899700152">
       <property name="name" nameId="tpck.1169194664001" value="componentsAnalysis" />
       <link role="concept" roleId="tpd4.1174642800329" targetNodeId="q5q6.6472990431939799912" resolveInfo="ComponentsCBMCAnalysis" />
+    </node>
+  </root>
+  <root id="8985851583396614831">
+    <node role="body" roleId="tpd4.1195213635060" type="tpee.StatementList" typeId="tpee.1068580123136" id="8985851583396614832" />
+    <node role="applicableNode" roleId="tpd4.1174648101952" type="tpd4.ConceptReference" typeId="tpd4.1174642788531" id="8985851583396614833">
+      <property name="name" nameId="tpck.1169194664001" value="iv" />
+      <link role="concept" roleId="tpd4.1174642800329" targetNodeId="q5q6.8985851583396455245" resolveInfo="NondetVarAssignment" />
+    </node>
+  </root>
+  <root id="8985851583396614923">
+    <node role="body" roleId="tpd4.1195213635060" type="tpee.StatementList" typeId="tpee.1068580123136" id="8985851583396614924">
+      <node role="statement" roleId="tpee.1068581517665" type="tp2q.ForEachStatement" typeId="tp2q.1153943597977" id="8985851583396614926">
+        <node role="variable" roleId="tp2q.1153944400369" type="tp2q.ForEachVariable" typeId="tp2q.1153944193378" id="8985851583396614927">
+          <property name="name" nameId="tpck.1169194664001" value="c" />
+        </node>
+        <node role="inputSequence" roleId="tp2q.1153944424730" type="tpee.DotExpression" typeId="tpee.1197027756228" id="8985851583396614951">
+          <node role="operand" roleId="tpee.1197027771414" type="tpd4.ApplicableNodeReference" typeId="tpd4.1174650418652" id="8985851583396614930">
+            <link role="applicableNode" roleId="tpd4.1174650432090" targetNodeId="8985851583396614925" resolveInfo="iv" />
+          </node>
+          <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkListAccess" typeId="tp25.1138056282393" id="8985851583396614957">
+            <link role="link" roleId="tp25.1138056546658" targetNodeId="q5q6.8985851583396455261" />
+          </node>
+        </node>
+        <node role="body" roleId="tpee.1154032183016" type="tpee.StatementList" typeId="tpee.1068580123136" id="8985851583396614929">
+          <node role="statement" roleId="tpee.1068581517665" type="tpd4.CreateEquationStatement" typeId="tpd4.1174658326157" id="8985851583396614958">
+            <property name="checkOnly" nameId="tpd4.1206359757216" value="true" />
+            <node role="leftExpression" roleId="tpd4.1174660783413" type="tpd4.NormalTypeClause" typeId="tpd4.1185788614172" id="8985851583396614959">
+              <node role="normalType" roleId="tpd4.1185788644032" type="tpd4.TypeOfExpression" typeId="tpd4.1174657487114" id="8985851583396614960">
+                <node role="term" roleId="tpd4.1174657509053" type="tp2q.ForEachVariableReference" typeId="tp2q.1153944233411" id="8985851583396614965">
+                  <link role="variable" roleId="tp2q.1153944258490" targetNodeId="8985851583396614927" resolveInfo="c" />
+                </node>
+              </node>
+            </node>
+            <node role="rightExpression" roleId="tpd4.1174660783414" type="tpd4.NormalTypeClause" typeId="tpd4.1185788614172" id="8985851583396614961">
+              <node role="normalType" roleId="tpd4.1185788644032" type="tp3r.Quotation" typeId="tp3r.1196350785113" id="8985851583396614962">
+                <node role="quotedNode" roleId="tp3r.1196350785114" type="mj1l.BooleanType" typeId="mj1l.8860443239512128058" id="8985851583396614963" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node role="applicableNode" roleId="tpd4.1174648101952" type="tpd4.ConceptReference" typeId="tpd4.1174642788531" id="8985851583396614925">
+      <property name="name" nameId="tpck.1169194664001" value="iv" />
+      <link role="concept" roleId="tpd4.1174642800329" targetNodeId="q5q6.8985851583396455245" resolveInfo="NondetVarAssignment" />
     </node>
   </root>
 </model>
