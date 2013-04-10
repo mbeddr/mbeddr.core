@@ -5,7 +5,7 @@
   <import index="tpc2" modelUID="r:00000000-0000-4000-0000-011c8959029e(jetbrains.mps.lang.editor.structure)" version="32" implicit="yes" />
   <import index="q5q6" modelUID="r:5d65e582-fa41-4818-b31c-b2aee1644b4a(com.mbeddr.analyses.cbmc.structure)" version="9" implicit="yes" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
-  <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="22" implicit="yes" />
+  <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="23" implicit="yes" />
   <import index="srwo" modelUID="r:37f0c2b5-25ac-4a2d-ad51-ef33c790d7e3(com.mbeddr.analyses.base.editor)" version="0" implicit="yes" />
   <roots>
     <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="2161187783549671009">
@@ -53,6 +53,14 @@
     <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="7392194941658581823">
       <property name="virtualPackage" nameId="tpck.1193676396447" value="verification_condition" />
       <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="q5q6.7392194941658528658" resolveInfo="UntilPMustQ" />
+    </node>
+    <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="6876648630975719724">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="verification_condition" />
+      <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="q5q6.6876648630975719716" resolveInfo="BetweenQAndRMustP" />
+    </node>
+    <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="8361725885982646995">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="verification_condition" />
+      <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="q5q6.8361725885982646993" resolveInfo="AfterQUntilRMustP" />
     </node>
   </roots>
   <root id="2161187783549671009">
@@ -470,6 +478,52 @@
         <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="q5q6.7392194941658581814" />
       </node>
       <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Indent" typeId="tpc2.1237303669825" id="7392194941658581833" />
+    </node>
+  </root>
+  <root id="6876648630975719724">
+    <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="6876648630975723089">
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="6876648630975723113">
+        <property name="text" nameId="tpc2.1073389577007" value="between" />
+      </node>
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_RefNode" typeId="tpc2.1073389882823" id="6876648630975723094">
+        <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="q5q6.6876648630975719720" />
+      </node>
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="6876648630975723114">
+        <property name="text" nameId="tpc2.1073389577007" value="and" />
+      </node>
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_RefNode" typeId="tpc2.1073389882823" id="6876648630975723096">
+        <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="q5q6.6876648630975719722" />
+      </node>
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="6876648630975723115">
+        <property name="text" nameId="tpc2.1073389577007" value="must" />
+      </node>
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_RefNode" typeId="tpc2.1073389882823" id="6876648630975723098">
+        <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="q5q6.6876648630975719718" />
+      </node>
+      <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Indent" typeId="tpc2.1237303669825" id="6876648630975723091" />
+    </node>
+  </root>
+  <root id="8361725885982646995">
+    <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="8361725885982646997">
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="8361725885982647000">
+        <property name="text" nameId="tpc2.1073389577007" value="after" />
+      </node>
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_RefNode" typeId="tpc2.1073389882823" id="8361725885982647002">
+        <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="q5q6.6876648630975719720" />
+      </node>
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="8361725885982647004">
+        <property name="text" nameId="tpc2.1073389577007" value="until" />
+      </node>
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_RefNode" typeId="tpc2.1073389882823" id="8361725885982647006">
+        <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="q5q6.6876648630975719722" />
+      </node>
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="8361725885982647008">
+        <property name="text" nameId="tpc2.1073389577007" value="must" />
+      </node>
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_RefNode" typeId="tpc2.1073389882823" id="8361725885982647010">
+        <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="q5q6.6876648630975719718" />
+      </node>
+      <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Indent" typeId="tpc2.1237303669825" id="8361725885982646999" />
     </node>
   </root>
 </model>
