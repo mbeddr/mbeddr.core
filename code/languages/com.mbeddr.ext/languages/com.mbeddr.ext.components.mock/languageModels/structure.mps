@@ -3,8 +3,9 @@
   <persistence version="7" />
   <language namespace="c72da2b9-7cce-4447-8389-f407dc1158b7(jetbrains.mps.lang.structure)" />
   <import index="2gv2" modelUID="r:055bac8c-a50b-42ec-a317-e20a256152b4(com.mbeddr.core.debug.structure)" version="11" />
+  <import index="356a" modelUID="r:3b7ed80f-6cfd-45bc-b051-2f66c620dd27(jetbrains.mps.lang.traceable.structure)" version="0" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
-  <import index="v7ag" modelUID="r:9596407c-f27a-49d3-abde-3a66293c5b61(com.mbeddr.ext.components.structure)" version="16" implicit="yes" />
+  <import index="v7ag" modelUID="r:9596407c-f27a-49d3-abde-3a66293c5b61(com.mbeddr.ext.components.structure)" version="17" implicit="yes" />
   <import index="tpce" modelUID="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" version="0" implicit="yes" />
   <import index="yz9a" modelUID="r:734c02dd-cc16-4184-99eb-5fd9f43aa37e(com.mbeddr.core.unittest.structure)" version="0" implicit="yes" />
   <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="5" implicit="yes" />
@@ -16,7 +17,7 @@
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="2151335435833216353">
       <property name="name" nameId="tpck.1169194664001" value="MockComponent" />
       <property name="virtualPackage" nameId="tpck.1193676396447" value="mock" />
-      <property name="iconPath" nameId="tpce.1160488491229" value="${language_descriptor}/icons/mocks.png" />
+      <property name="iconPath" nameId="tpce.1160488491229" value="${language_descriptor}/icons/mock.png" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="v7ag.4491876417845474761" resolveInfo="Component" />
     </node>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="2151335435833308544">
@@ -26,7 +27,7 @@
     </node>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="2151335435833308548">
       <property name="name" nameId="tpck.1169194664001" value="ExpectNoCall" />
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="mock.expectations" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="mock.expectations.calls" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="2151335435833308544" resolveInfo="Expectation" />
     </node>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="2151335435833463260">
@@ -36,7 +37,8 @@
     </node>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4957503999940758571">
       <property name="name" nameId="tpck.1169194664001" value="ExpectTotalNoOfCalls" />
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="mock.expectations" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="mock.expectations.calls" />
+      <property name="iconPath" nameId="tpce.1160488491229" value="${language_descriptor}/icons/CallCount.png" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="2151335435833308544" resolveInfo="Expectation" />
     </node>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4957503999940784579">
@@ -47,6 +49,7 @@
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4957503999940784581">
       <property name="virtualPackage" nameId="tpck.1193676396447" value="mock.expectations" />
       <property name="name" nameId="tpck.1169194664001" value="Step" />
+      <property name="iconPath" nameId="tpce.1160488491229" value="${language_descriptor}/icons/Steps.png" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
     </node>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4957503999941447492">
@@ -57,6 +60,7 @@
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4957503999941447512">
       <property name="virtualPackage" nameId="tpck.1193676396447" value="mock.expectations.assertions" />
       <property name="name" nameId="tpck.1169194664001" value="StepAssertion" />
+      <property name="iconPath" nameId="tpce.1160488491229" value="${language_descriptor}/icons/AssertStep.png" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
     </node>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4331139697889290796">
@@ -119,6 +123,10 @@
       <property name="name" nameId="tpck.1169194664001" value="PhaseRefExpression" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="mj1l.8860443239512128050" resolveInfo="Expression" />
     </node>
+    <node type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="5528592168124376299">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="mock.expectations.calls" />
+      <property name="name" nameId="tpck.1169194664001" value="CallExpectation" />
+    </node>
   </roots>
   <root id="2151335435833216353">
     <node role="conceptLink" roleId="tpce.1105736949336" type="tpce.ReferenceConceptLink" typeId="tpce.1105736778597" id="1656687801207008596">
@@ -168,6 +176,9 @@
       <property name="value" nameId="tpce.1105725733873" value="expect no calls on this component" />
       <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473914776" resolveInfo="shortDescription" />
     </node>
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="5528592168124376313">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="5528592168124376299" resolveInfo="CallExpectation" />
+    </node>
   </root>
   <root id="2151335435833463260">
     <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="2151335435833463261">
@@ -197,6 +208,9 @@
     <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="6591434695300679436">
       <property name="value" nameId="tpce.1105725733873" value="constrain the number of total calls" />
       <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473914776" resolveInfo="shortDescription" />
+    </node>
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="5528592168124376312">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="5528592168124376299" resolveInfo="CallExpectation" />
     </node>
   </root>
   <root id="4957503999940784579">
@@ -254,6 +268,27 @@
       <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
       <link role="target" roleId="tpce.1071599976176" targetNodeId="v7ag.4491876417845484924" resolveInfo="Operation" />
     </node>
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7635126078859191890">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="2gv2.8811944678849085924" resolveInfo="IBreakpointSupport" />
+    </node>
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7635126078859380168">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="356a.5067982036267369891" resolveInfo="TraceableConcept" />
+    </node>
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7635126078859398141">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="2gv2.1061857790208788243" resolveInfo="IRealStackFrameContributor" />
+    </node>
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="3629580915884420726">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="2gv2.4474148880361719194" resolveInfo="IWatchablesProviderContext" />
+    </node>
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="3629580915884420724">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="2gv2.9057217260024409663" resolveInfo="IWatchablesProvider" />
+    </node>
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="3629580915884310095">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="2gv2.568116135000816591" resolveInfo="ISteppable" />
+    </node>
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="4390760819952509145">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="v7ag.4390760819952509116" resolveInfo="ITriggeredByOperation" />
+    </node>
   </root>
   <root id="4957503999941447492">
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="4957503999941447495">
@@ -269,6 +304,12 @@
     <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="6591434695300679441">
       <property name="value" nameId="tpce.1105725733873" value="check validity of parameter" />
       <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473914776" resolveInfo="shortDescription" />
+    </node>
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="3629580915884403459">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="356a.5067982036267369891" resolveInfo="TraceableConcept" />
+    </node>
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="3629580915884403461">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="2gv2.8811944678849085924" resolveInfo="IBreakpointSupport" />
     </node>
   </root>
   <root id="4957503999941447512">
@@ -414,5 +455,6 @@
       <link role="target" roleId="tpce.1071599976176" targetNodeId="2319970887606630628" resolveInfo="StubPhase" />
     </node>
   </root>
+  <root id="5528592168124376299" />
 </model>
 
