@@ -12,7 +12,7 @@
   <import index="yz9a" modelUID="r:734c02dd-cc16-4184-99eb-5fd9f43aa37e(com.mbeddr.core.unittest.structure)" version="0" implicit="yes" />
   <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="5" implicit="yes" />
   <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="3" implicit="yes" />
-  <import index="clqz" modelUID="r:5ebcdb77-81e9-4964-beae-35bd9a2f28b5(com.mbeddr.ext.statemachines.structure)" version="10" implicit="yes" />
+  <import index="clqz" modelUID="r:5ebcdb77-81e9-4964-beae-35bd9a2f28b5(com.mbeddr.ext.statemachines.structure)" version="11" implicit="yes" />
   <roots>
     <node type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="8409287311039168418">
       <property name="name" nameId="tpck.1169194664001" value="DuringActions" />
@@ -68,7 +68,7 @@
         </node>
         <node role="contents" roleId="clqz.7835233251114737454" type="clqz.State" typeId="clqz.5778488248013533839" id="8409287311039168487">
           <property name="name" nameId="tpck.1169194664001" value="S1" />
-          <node role="contents" roleId="clqz.4249345261280348989" type="clqz.DuringAction" typeId="clqz.8409287311039121599" id="8409287311039219511">
+          <node role="contents" roleId="clqz.4249345261280348989" type="clqz.DoAction" typeId="clqz.8409287311039121599" id="8409287311039219511">
             <node role="body" roleId="clqz.8409287311039042109" type="clqz.ActionList" typeId="clqz.1957198122968598264" id="8409287311039219512">
               <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="8409287311039219519">
                 <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.PostIncrementExpression" typeId="mj1l.4375898003726285486" id="8409287311039219523">
@@ -295,7 +295,7 @@
         <node role="contents" roleId="clqz.7835233251114737454" type="clqz.CompositeState" typeId="clqz.4249345261280336724" id="1834672534525978846">
           <property name="name" nameId="tpck.1169194664001" value="C1" />
           <link role="initial" roleId="clqz.4249345261280591928" targetNodeId="1834672534525978847" resolveInfo="S1" />
-          <node role="contents" roleId="clqz.4249345261280348989" type="clqz.DuringAction" typeId="clqz.8409287311039121599" id="1834672534525978884">
+          <node role="contents" roleId="clqz.4249345261280348989" type="clqz.DoAction" typeId="clqz.8409287311039121599" id="1834672534525978884">
             <node role="body" roleId="clqz.8409287311039042109" type="clqz.ActionList" typeId="clqz.1957198122968598264" id="1834672534525978885">
               <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="1834672534525978886">
                 <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.PostIncrementExpression" typeId="mj1l.4375898003726285486" id="1834672534525978890">
@@ -308,7 +308,7 @@
           </node>
           <node role="contents" roleId="clqz.4249345261280348989" type="clqz.State" typeId="clqz.5778488248013533839" id="1834672534525978847">
             <property name="name" nameId="tpck.1169194664001" value="S1" />
-            <node role="contents" roleId="clqz.4249345261280348989" type="clqz.DuringAction" typeId="clqz.8409287311039121599" id="1834672534525978875">
+            <node role="contents" roleId="clqz.4249345261280348989" type="clqz.DoAction" typeId="clqz.8409287311039121599" id="1834672534525978875">
               <node role="body" roleId="clqz.8409287311039042109" type="clqz.ActionList" typeId="clqz.1957198122968598264" id="1834672534525978876">
                 <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="1834672534525978877">
                   <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.PostIncrementExpression" typeId="mj1l.4375898003726285486" id="1834672534525978881">

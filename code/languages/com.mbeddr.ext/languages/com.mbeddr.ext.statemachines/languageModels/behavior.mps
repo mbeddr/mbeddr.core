@@ -6,7 +6,7 @@
   <language namespace="ebb5e132-d298-4649-b320-b3f4d7f3acff(com.mbeddr.core.debug.blext)" />
   <language namespace="63e0e566-5131-447e-90e3-12ea330e1a00(com.mbeddr.mpsutil.blutil)" />
   <devkit namespace="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
-  <import index="clqz" modelUID="r:5ebcdb77-81e9-4964-beae-35bd9a2f28b5(com.mbeddr.ext.statemachines.structure)" version="10" />
+  <import index="clqz" modelUID="r:5ebcdb77-81e9-4964-beae-35bd9a2f28b5(com.mbeddr.ext.statemachines.structure)" version="11" />
   <import index="x30c" modelUID="r:04a32be8-7074-4c9c-b2f8-77d4a01a19dc(com.mbeddr.core.debug.debugger)" version="-1" />
   <import index="k7g3" modelUID="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.util(JDK/java.util@java_stub)" version="-1" />
   <import index="2gv2" modelUID="r:055bac8c-a50b-42ec-a317-e20a256152b4(com.mbeddr.core.debug.structure)" version="11" />
@@ -168,7 +168,7 @@
     </node>
     <node type="1i04.ConceptBehavior" typeId="1i04.1225194240794" id="8409287311039121601">
       <property name="virtualPackage" nameId="tpck.1193676396447" value="machine.states.actions" />
-      <link role="concept" roleId="1i04.1225194240799" targetNodeId="clqz.8409287311039121599" resolveInfo="DuringAction" />
+      <link role="concept" roleId="1i04.1225194240799" targetNodeId="clqz.8409287311039121599" resolveInfo="DoAction" />
     </node>
   </roots>
   <root id="5633981208992655224">
@@ -7459,7 +7459,7 @@
                         </node>
                         <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_IsInstanceOfOperation" typeId="tp25.1139621453865" id="8409287311039121888">
                           <node role="conceptArgument" roleId="tp25.1177027386292" type="tp25.RefConcept_Reference" typeId="tp25.1177026924588" id="8409287311039121905">
-                            <link role="conceptDeclaration" roleId="tp25.1177026940964" targetNodeId="clqz.8409287311039121599" resolveInfo="DuringAction" />
+                            <link role="conceptDeclaration" roleId="tp25.1177026940964" targetNodeId="clqz.8409287311039121599" resolveInfo="DoAction" />
                           </node>
                         </node>
                       </node>
@@ -7485,7 +7485,7 @@
             <node role="statement" roleId="tpee.1068581517665" type="tpee.ReturnStatement" typeId="tpee.1068581242878" id="8409287311039121897">
               <node role="expression" roleId="tpee.1068581517676" type="tpee.DotExpression" typeId="tpee.1197027756228" id="8409287311039121898">
                 <node role="operand" roleId="tpee.1197027771414" type="tp25.SNodeTypeCastExpression" typeId="tp25.1140137987495" id="8409287311039121899">
-                  <link role="concept" roleId="tp25.1140138128738" targetNodeId="clqz.8409287311039121599" resolveInfo="DuringAction" />
+                  <link role="concept" roleId="tp25.1140138128738" targetNodeId="clqz.8409287311039121599" resolveInfo="DoAction" />
                   <node role="leftExpression" roleId="tp25.1140138123956" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="8409287311039121900">
                     <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="8409287311039121876" resolveInfo="da" />
                   </node>
