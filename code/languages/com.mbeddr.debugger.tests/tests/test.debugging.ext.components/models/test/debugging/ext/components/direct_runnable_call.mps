@@ -158,11 +158,6 @@
             <link role="instance" roleId="v7ag.1482737808881210674" targetNodeId="8230733038425038026" resolveInfo="c1" />
             <link role="runnable" roleId="v0r9.6105672464781003798" targetNodeId="8230733038425038008" resolveInfo="doStuff" />
           </node>
-          <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="vs0r.ElementDocumentation" typeId="vs0r.3857533489766146428" id="8230733038425050613">
-            <node role="parts" type=".com.mbeddr.core.base.structure.DocPart" id="8230733038425050617">
-              <property name="text" value="Interface für &quot;Calls&quot; was die Parameter prüft etc." />
-            </node>
-          </node>
           <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="rpmx.MarkerAnnotation" typeId="rpmx.4193597469137492628" id="5710167937130238627">
             <property name="name" nameId="tpck.1169194664001" value="calling1stRunnable" />
           </node>
