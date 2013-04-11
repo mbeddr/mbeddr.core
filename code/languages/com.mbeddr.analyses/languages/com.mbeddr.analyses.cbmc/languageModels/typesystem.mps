@@ -50,10 +50,6 @@
       <property name="name" nameId="tpck.1169194664001" value="check_ComponentsCBMCAnalysis" />
       <property name="virtualPackage" nameId="tpck.1193676396447" value="configuration.cbmc" />
     </node>
-    <node type="tpd4.NonTypesystemRule" typeId="tpd4.1195214364922" id="8985851583396614831">
-      <property name="name" nameId="tpck.1169194664001" value="check_InitializeVariable" />
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="harness" />
-    </node>
     <node type="tpd4.InferenceRule" typeId="tpd4.1174643105530" id="8985851583396614923">
       <property name="name" nameId="tpck.1169194664001" value="typeof_InitializeVariable" />
       <property name="virtualPackage" nameId="tpck.1193676396447" value="harness" />
@@ -579,13 +575,6 @@
     <node role="applicableNode" roleId="tpd4.1174648101952" type="tpd4.ConceptReference" typeId="tpd4.1174642788531" id="6375603587899700152">
       <property name="name" nameId="tpck.1169194664001" value="componentsAnalysis" />
       <link role="concept" roleId="tpd4.1174642800329" targetNodeId="q5q6.6472990431939799912" resolveInfo="ComponentsCBMCAnalysis" />
-    </node>
-  </root>
-  <root id="8985851583396614831">
-    <node role="body" roleId="tpd4.1195213635060" type="tpee.StatementList" typeId="tpee.1068580123136" id="8985851583396614832" />
-    <node role="applicableNode" roleId="tpd4.1174648101952" type="tpd4.ConceptReference" typeId="tpd4.1174642788531" id="8985851583396614833">
-      <property name="name" nameId="tpck.1169194664001" value="iv" />
-      <link role="concept" roleId="tpd4.1174642800329" targetNodeId="q5q6.8985851583396455245" resolveInfo="NondetVarAssignment" />
     </node>
   </root>
   <root id="8985851583396614923">
