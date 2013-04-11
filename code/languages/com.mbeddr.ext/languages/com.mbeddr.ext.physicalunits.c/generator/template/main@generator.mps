@@ -40,9 +40,6 @@
     </node>
   </roots>
   <root id="7720784317543457156">
-    <node role="postMappingScript" roleId="tpf8.1195502346405" type="tpf8.MappingScriptReference" typeId="tpf8.1195502151594" id="1485122135950322296">
-      <link role="mappingScript" roleId="tpf8.1195502167610" targetNodeId="1485122135950322297" resolveInfo="optimizeExpressions" />
-    </node>
     <node role="reductionMappingRule" roleId="tpf8.1167328349397" type="tpf8.Reduction_MappingRule" typeId="tpf8.1167327847730" id="7720784317543460710">
       <link role="applicableConcept" roleId="tpf8.1167169349424" targetNodeId="3c6d.5513256947824492703" resolveInfo="TypeWithUnit" />
       <node role="ruleConsequence" roleId="tpf8.1169672767469" type="tpf8.InlineTemplate_RuleConsequence" typeId="tpf8.1177093525992" id="7720784317543460712">
@@ -223,18 +220,6 @@
             <node role="left" roleId="mj1l.8860443239512128064" type="x27k.GlobalConstantFuntionArgumentRef" typeId="x27k.7308356872494660981" id="7308356872494700255">
               <link role="arg" roleId="x27k.7308356872494660982" targetNodeId="7308356872494700251" resolveInfo="val" />
               <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.TemplateFragment" typeId="tpf8.1095672379244" id="7308356872494700263" />
-              <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.ReferenceMacro" typeId="tpf8.1088761943574" id="7308356872494792547">
-                <property name="linkRole" nameId="tpck.1757699476691236116" value="arg" />
-                <node role="referentFunction" roleId="tpf8.1167770376702" type="tpf8.ReferenceMacro_GetReferent" typeId="tpf8.1167770111131" id="7308356872494792548">
-                  <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="7308356872494792549">
-                    <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="7308356872494792550">
-                      <node role="expression" roleId="tpee.1068580123156" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="7308356872494792551">
-                        <property name="value" nameId="tpee.1070475926801" value="val" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
             </node>
           </node>
         </node>
@@ -318,9 +303,6 @@
     </node>
     <node role="dropRootRule" roleId="tpf8.1219952894531" type="tpf8.DropRootRule" typeId="tpf8.1219952072943" id="7720784317543460709">
       <link role="applicableConcept" roleId="tpf8.1219952338328" targetNodeId="ym4j.3801772042669047872" resolveInfo="UnitContainer" />
-    </node>
-    <node role="preMappingScript" roleId="tpf8.1195502100749" type="tpf8.MappingScriptReference" typeId="tpf8.1195502151594" id="1485122135950089229">
-      <link role="mappingScript" roleId="tpf8.1195502167610" targetNodeId="8711875228214879815" resolveInfo="flattenNestedConvertUnitExpressions" />
     </node>
   </root>
   <root id="7308356872494700279">
@@ -833,6 +815,7 @@
           </node>
         </node>
         <node role="statement" roleId="tpee.1068581517665" type="tpee.Statement" typeId="tpee.1068580123157" id="1485122135950332646" />
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.Statement" typeId="tpee.1068580123157" id="1485122135950442413" />
         <node role="statement" roleId="tpee.1068581517665" type="tp2q.ForEachStatement" typeId="tp2q.1153943597977" id="1485122135950332671">
           <node role="variable" roleId="tp2q.1153944400369" type="tp2q.ForEachVariable" typeId="tp2q.1153944193378" id="1485122135950332672">
             <property name="name" nameId="tpck.1169194664001" value="expr" />
