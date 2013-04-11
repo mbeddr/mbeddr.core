@@ -144,7 +144,7 @@
       </node>
       <node role="contents" roleId="v7ag.7780999115923944213" type="v7ag.AssemblyConnector" typeId="v7ag.4491876417845649016" id="6305416899339625043">
         <node role="source" roleId="v7ag.4491876417845649020" type="v7ag.InstancePortRef" typeId="v7ag.4491876417845649017" id="6305416899339625044">
-          <link role="port" roleId="v7ag.3444913373458569211" targetNodeId="6305416899339625023" resolveInfo="server" />
+          <link role="port" roleId="v7ag.3444913373458569211" targetNodeId="6305416899339625023" resolveInfo="server1" />
           <link role="instance" roleId="v7ag.4491876417845649018" targetNodeId="6305416899339625037" resolveInfo="component1" />
         </node>
         <node role="target" roleId="v7ag.4491876417845649021" type="v7ag.InstancePortRef" typeId="v7ag.4491876417845649017" id="6305416899339625045">
@@ -152,12 +152,32 @@
           <link role="port" roleId="v7ag.3444913373458569211" targetNodeId="6305416899339625018" resolveInfo="server" />
         </node>
       </node>
+      <node role="contents" roleId="v7ag.7780999115923944213" type="v7ag.AssemblyConnector" typeId="v7ag.4491876417845649016" id="2906074397379137726">
+        <node role="source" roleId="v7ag.4491876417845649020" type="v7ag.InstancePortRef" typeId="v7ag.4491876417845649017" id="2906074397379137727">
+          <link role="instance" roleId="v7ag.4491876417845649018" targetNodeId="6305416899339625037" resolveInfo="component1" />
+          <link role="port" roleId="v7ag.3444913373458569211" targetNodeId="2906074397379137725" resolveInfo="server2" />
+        </node>
+        <node role="target" roleId="v7ag.4491876417845649021" type="v7ag.InstancePortRef" typeId="v7ag.4491876417845649017" id="2906074397379137728">
+          <link role="instance" roleId="v7ag.4491876417845649018" targetNodeId="4390760819953028998" resolveInfo="mock2" />
+          <link role="port" roleId="v7ag.3444913373458569211" targetNodeId="4390760819953028987" resolveInfo="server" />
+        </node>
+      </node>
       <node role="contents" roleId="v7ag.7780999115923944213" type="v7ag.AssemblyConnector" typeId="v7ag.4491876417845649016" id="4390760819953081319">
         <node role="source" roleId="v7ag.4491876417845649020" type="v7ag.InstancePortRef" typeId="v7ag.4491876417845649017" id="4390760819953081320">
-          <link role="port" roleId="v7ag.3444913373458569211" targetNodeId="6305416899339625023" resolveInfo="server" />
           <link role="instance" roleId="v7ag.4491876417845649018" targetNodeId="4390760819953081318" resolveInfo="component2" />
+          <link role="port" roleId="v7ag.3444913373458569211" targetNodeId="2906074397379137725" resolveInfo="server2" />
         </node>
         <node role="target" roleId="v7ag.4491876417845649021" type="v7ag.InstancePortRef" typeId="v7ag.4491876417845649017" id="4390760819953081321">
+          <link role="instance" roleId="v7ag.4491876417845649018" targetNodeId="6305416899339625035" resolveInfo="mock1" />
+          <link role="port" roleId="v7ag.3444913373458569211" targetNodeId="6305416899339625018" resolveInfo="server" />
+        </node>
+      </node>
+      <node role="contents" roleId="v7ag.7780999115923944213" type="v7ag.AssemblyConnector" typeId="v7ag.4491876417845649016" id="2906074397379137729">
+        <node role="source" roleId="v7ag.4491876417845649020" type="v7ag.InstancePortRef" typeId="v7ag.4491876417845649017" id="2906074397379137730">
+          <link role="instance" roleId="v7ag.4491876417845649018" targetNodeId="4390760819953081318" resolveInfo="component2" />
+          <link role="port" roleId="v7ag.3444913373458569211" targetNodeId="6305416899339625023" resolveInfo="server1" />
+        </node>
+        <node role="target" roleId="v7ag.4491876417845649021" type="v7ag.InstancePortRef" typeId="v7ag.4491876417845649017" id="2906074397379137731">
           <link role="instance" roleId="v7ag.4491876417845649018" targetNodeId="4390760819953028998" resolveInfo="mock2" />
           <link role="port" roleId="v7ag.3444913373458569211" targetNodeId="4390760819953028987" resolveInfo="server" />
         </node>
@@ -200,6 +220,9 @@
       <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.ProvidedPort" typeId="v7ag.4491876417845628840" id="6305416899339625018">
         <property name="name" nameId="tpck.1169194664001" value="server" />
         <link role="intf" roleId="v7ag.4491876417845484932" targetNodeId="6305416899339625011" resolveInfo="DoSomething" />
+      </node>
+      <node role="contents" roleId="v7ag.6041318036221669720" type="mxvz.ExpectTotalNoOfCalls" typeId="mxvz.4957503999940758571" id="2906074397379137733">
+        <property name="noOfCalls" nameId="mxvz.4957503999940761153" value="1" />
       </node>
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="4390760819953028984">
@@ -294,7 +317,12 @@
       <property name="exported" nameId="x27k.1317894735999272944" value="true" />
       <property name="name" nameId="tpck.1169194664001" value="Client" />
       <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.RequiredPort" typeId="v7ag.4491876417845628841" id="6305416899339625023">
-        <property name="name" nameId="tpck.1169194664001" value="server" />
+        <property name="name" nameId="tpck.1169194664001" value="server1" />
+        <property name="optional" nameId="v7ag.349917904115138509" value="false" />
+        <link role="intf" roleId="v7ag.4491876417845484932" targetNodeId="6305416899339625011" resolveInfo="DoSomething" />
+      </node>
+      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.RequiredPort" typeId="v7ag.4491876417845628841" id="2906074397379137725">
+        <property name="name" nameId="tpck.1169194664001" value="server2" />
         <property name="optional" nameId="v7ag.349917904115138509" value="false" />
         <link role="intf" roleId="v7ag.4491876417845484932" targetNodeId="6305416899339625011" resolveInfo="DoSomething" />
       </node>
@@ -314,11 +342,27 @@
               <property name="name" nameId="tpck.1169194664001" value="insideComponent" />
             </node>
           </node>
+          <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="2906074397379137735">
+            <node role="expr" roleId="c4fa.7254843406768833939" type="v7ag.RequiredPortOpCallExpr" typeId="v7ag.466603768608442377" id="2906074397379137739">
+              <link role="operation" roleId="v7ag.8105003328815071752" targetNodeId="6305416899339625016" resolveInfo="doSomething" />
+              <node role="expression" roleId="mj1l.7254843406768839760" type="v7ag.PortRefExpr" typeId="v7ag.8105003328815208362" id="2906074397379137736">
+                <link role="port" roleId="v7ag.8105003328815208363" targetNodeId="2906074397379137725" resolveInfo="server2" />
+              </node>
+            </node>
+          </node>
+          <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="2906074397379236466">
+            <node role="expr" roleId="c4fa.7254843406768833939" type="v7ag.RequiredPortOpCallExpr" typeId="v7ag.466603768608442377" id="2906074397379236467">
+              <link role="operation" roleId="v7ag.8105003328815071752" targetNodeId="6305416899339625016" resolveInfo="doSomething" />
+              <node role="expression" roleId="mj1l.7254843406768839760" type="v7ag.PortRefExpr" typeId="v7ag.8105003328815208362" id="2906074397379236468">
+                <link role="port" roleId="v7ag.8105003328815208363" targetNodeId="2906074397379137725" resolveInfo="server2" />
+              </node>
+            </node>
+          </node>
           <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="1095141890318176564">
             <node role="expr" roleId="c4fa.7254843406768833939" type="v7ag.RequiredPortOpCallExpr" typeId="v7ag.466603768608442377" id="1095141890318176568">
               <link role="operation" roleId="v7ag.8105003328815071752" targetNodeId="6305416899339697539" resolveInfo="ready" />
               <node role="expression" roleId="mj1l.7254843406768839760" type="v7ag.PortRefExpr" typeId="v7ag.8105003328815208362" id="1095141890318176565">
-                <link role="port" roleId="v7ag.8105003328815208363" targetNodeId="6305416899339625023" resolveInfo="server" />
+                <link role="port" roleId="v7ag.8105003328815208363" targetNodeId="6305416899339625023" resolveInfo="server1" />
               </node>
               <node role="actuals" roleId="v7ag.8105003328815091213" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="1095141890318176569">
                 <property name="value" nameId="mj1l.8860443239512128104" value="3" />
@@ -332,7 +376,7 @@
             <node role="expr" roleId="c4fa.7254843406768833939" type="v7ag.RequiredPortOpCallExpr" typeId="v7ag.466603768608442377" id="6305416899339696459">
               <link role="operation" roleId="v7ag.8105003328815071752" targetNodeId="6305416899339625016" resolveInfo="doSomething" />
               <node role="expression" roleId="mj1l.7254843406768839760" type="v7ag.PortRefExpr" typeId="v7ag.8105003328815208362" id="6305416899339696456">
-                <link role="port" roleId="v7ag.8105003328815208363" targetNodeId="6305416899339625023" resolveInfo="server" />
+                <link role="port" roleId="v7ag.8105003328815208363" targetNodeId="6305416899339625023" resolveInfo="server1" />
               </node>
             </node>
             <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="rpmx.MarkerAnnotation" typeId="rpmx.4193597469137492628" id="1095141890318300361">
@@ -348,7 +392,7 @@
             <node role="init" roleId="c4fa.4185783222026502647" type="v7ag.RequiredPortOpCallExpr" typeId="v7ag.466603768608442377" id="6305416899339697547">
               <link role="operation" roleId="v7ag.8105003328815071752" targetNodeId="6305416899339697539" resolveInfo="ready" />
               <node role="expression" roleId="mj1l.7254843406768839760" type="v7ag.PortRefExpr" typeId="v7ag.8105003328815208362" id="6305416899339697544">
-                <link role="port" roleId="v7ag.8105003328815208363" targetNodeId="6305416899339625023" resolveInfo="server" />
+                <link role="port" roleId="v7ag.8105003328815208363" targetNodeId="6305416899339625023" resolveInfo="server1" />
               </node>
               <node role="actuals" roleId="v7ag.8105003328815091213" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="4390760819953028997">
                 <property name="value" nameId="mj1l.8860443239512128104" value="2" />
@@ -375,7 +419,7 @@
             <node role="expr" roleId="c4fa.7254843406768833939" type="v7ag.RequiredPortOpCallExpr" typeId="v7ag.466603768608442377" id="1095141890318190262">
               <link role="operation" roleId="v7ag.8105003328815071752" targetNodeId="6305416899339697539" resolveInfo="ready" />
               <node role="expression" roleId="mj1l.7254843406768839760" type="v7ag.PortRefExpr" typeId="v7ag.8105003328815208362" id="1095141890318190263">
-                <link role="port" roleId="v7ag.8105003328815208363" targetNodeId="6305416899339625023" resolveInfo="server" />
+                <link role="port" roleId="v7ag.8105003328815208363" targetNodeId="6305416899339625023" resolveInfo="server1" />
               </node>
               <node role="actuals" roleId="v7ag.8105003328815091213" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="1095141890318190264">
                 <property name="value" nameId="mj1l.8860443239512128104" value="2" />
@@ -700,6 +744,24 @@
       <property name="abstract" nameId="rpmx.105850086903217241" value="true" />
       <node role="returnType" roleId="tpee.1068580123133" type="tpee.VoidType" typeId="tpee.1068581517677" id="4390760819953036194" />
       <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="4390760819953036195" />
+      <node role="suspension" roleId="rpmx.105850086902839308" type="rpmx.SuspensionPointConfiguration" typeId="rpmx.105850086903250145" id="2906074397379272938">
+        <node role="suspensionPoint" roleId="rpmx.105850086903250160" type="rpmx.MarkerReference" typeId="rpmx.105850086903250161" id="2906074397379272939">
+          <link role="marker" roleId="rpmx.105850086903274948" targetNodeId="6305416899339704545" resolveInfo="insideComponent" />
+        </node>
+      </node>
+      <node role="stepping" roleId="rpmx.105850086903379490" type="rpmx.SteppingConfiguration" typeId="rpmx.105850086903379387" id="2906074397379272940">
+        <node role="steppingElements" roleId="rpmx.105850086903379390" type="rpmx.StepOverCommand" typeId="rpmx.4231345613098876381" id="2906074397379272941">
+          <property name="times" nameId="rpmx.610689949604310287" value="3" />
+        </node>
+      </node>
+      <node role="validation" roleId="rpmx.4360423713604451010" type="rpmx.ValidationConfiguration" typeId="rpmx.4360423713604419372" id="2906074397379272942">
+        <node role="validations" roleId="rpmx.4360423713604419402" type="rpmx.ValidateDebuggerSuspended" typeId="rpmx.7048220250906049590" id="2906074397379272943">
+          <node role="marker" roleId="rpmx.7048220250906049591" type="rpmx.MarkerRef" typeId="rpmx.4193597469137492644" id="2906074397379272944">
+            <link role="marker" roleId="rpmx.4193597469137492645" targetNodeId="1095141890318300351" resolveInfo="calling1stStep" />
+          </node>
+        </node>
+        <node role="validations" roleId="rpmx.4360423713604419402" type="rpmx.WatchablesValidationList" typeId="rpmx.4550138447367847233" id="2906074397379272946" />
+      </node>
     </node>
     <node role="contents" roleId="rpmx.5710167937130937944" type="rpmx.EmptyDebuggerContent" typeId="rpmx.105850086901771260" id="4390760819953036199" />
     <node role="contents" roleId="rpmx.5710167937130937944" type="rpmx.DebuggerTestcase" typeId="rpmx.105850086902839305" id="4390760819953036201">

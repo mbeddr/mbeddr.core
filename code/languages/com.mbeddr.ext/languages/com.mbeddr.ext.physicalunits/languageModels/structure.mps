@@ -62,6 +62,7 @@
       <property name="name" nameId="tpck.1169194664001" value="UnitContainer" />
       <property name="rootable" nameId="tpce.1096454100552" value="true" />
       <property name="iconPath" nameId="tpce.1160488491229" value="${language_descriptor}/icons/unitcontainer.png" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="standalone" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
     </node>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="8099136929591129785">
@@ -99,6 +100,9 @@
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="6870096341748575352">
       <property name="name" nameId="tpck.1169194664001" value="EmptyUnitContainerContents" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
+    </node>
+    <node type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="1085404444144930947">
+      <property name="name" nameId="tpck.1169194664001" value="IVisibleUnitProvider" />
     </node>
   </roots>
   <root id="3801772042669047301">
@@ -219,6 +223,9 @@
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="9035511730050143284">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="tpck.1169194658468" resolveInfo="INamedConcept" />
     </node>
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="1085404444145151052">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="1085404444144930947" resolveInfo="IVisibleUnitProvider" />
+    </node>
   </root>
   <root id="8099136929591129785">
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="8099136929591129798">
@@ -237,7 +244,7 @@
     </node>
   </root>
   <root id="8099136929591173606">
-    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="8099136929591173608">
+    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="1085404444144943750">
       <property name="metaClass" nameId="tpce.1071599937831" value="reference" />
       <property name="role" nameId="tpce.1071599776563" value="ref" />
       <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
@@ -316,5 +323,6 @@
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="vs0r.1049346859912912067" resolveInfo="IEmpty" />
     </node>
   </root>
+  <root id="1085404444144930947" />
 </model>
 
