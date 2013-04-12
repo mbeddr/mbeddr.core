@@ -83,8 +83,7 @@
 	  <ant antfile="build.xml" dir="com.mbeddr.debugger" target="build-languages" />
 	  <ant antfile="build.xml" dir="com.mbeddr.core" target="build-languages" />
 	  <ant antfile="build.xml" dir="com.mbeddr.doc" target="build-languages" />
-	  <ant antfile="build.xml" dir="com.mbeddr.cc" target="build-languages" />
-		  
+	  <ant antfile="build.xml" dir="com.mbeddr.cc" target="build-languages" />		  
 	  <ant antfile="build.xml" dir="com.mbeddr.ext" target="build-languages" />
 	  <ant antfile="build.xml" dir="com.mbeddr.debugger.tests" target="build-languages" />	  
 	  <ant antfile="build.xml" dir="com.mbeddr.analyses" target="build-languages" />
@@ -94,8 +93,7 @@
 	  <!--
 	  <ant antfile="build.xml" dir="com.mbeddr.mpsutil" target="build-tests" />
 	  <ant antfile="build.xml" dir="com.mbeddr.mpsutil" target="run-ts-tests" />
-	  -->
-	  <!--
+	  -->	  
 	  <ant antfile="build.xml" dir="com.mbeddr.debugger" target="build-tests" />
 	  <ant antfile="build.xml" dir="com.mbeddr.debugger" target="run-ts-tests" />
 	 
@@ -109,7 +107,7 @@
 	  <ant antfile="build.xml" dir="com.mbeddr.ext" target="build-tests" />
 	  <ant antfile="build.xml" dir="com.mbeddr.ext" target="run-ts-tests" />
 	  <ant antfile="build.xml" dir="com.mbeddr.ext" target="make-tests" />
-	  -->
+
 	  <ant antfile="build.xml" dir="com.mbeddr.debugger.tests" target="build-tests" />
 	  <ant antfile="build.xml" dir="com.mbeddr.debugger.tests" target="run-ts-tests" />
 	  
