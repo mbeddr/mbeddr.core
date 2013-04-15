@@ -5,7 +5,7 @@
   <language namespace="61c69711-ed61-4850-81d9-7714ff227fb0(com.mbeddr.core.expressions)" />
   <devkit namespace="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   <import index="k146" modelUID="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" version="5" />
-  <import index="ywuz" modelUID="r:c6ce92e7-5a98-4a6f-866a-ec8b9e945dd8(com.mbeddr.core.expressions.behavior)" version="1" />
+  <import index="ywuz" modelUID="r:c6ce92e7-5a98-4a6f-866a-ec8b9e945dd8(com.mbeddr.core.expressions.behavior)" version="2" />
   <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="23" />
   <import index="tpd4" modelUID="r:00000000-0000-4000-0000-011c895902b4(jetbrains.mps.lang.typesystem.structure)" version="3" />
   <import index="tpcu" modelUID="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" version="-1" />
@@ -381,7 +381,7 @@
           <node role="statement" roleId="tpee.1068581517665" type="tpd4.CreateEquationStatement" typeId="tpd4.1174658326157" id="6209595569797567059">
             <node role="rightExpression" roleId="tpd4.1174660783414" type="tpd4.NormalTypeClause" typeId="tpd4.1185788614172" id="6209595569797567063">
               <node role="normalType" roleId="tpd4.1185788644032" type="tp3r.Quotation" typeId="tp3r.1196350785113" id="6209595569797567064">
-                <node role="quotedNode" roleId="tp3r.1196350785114" type="mj1l.BooleanType" typeId="mj1l.8860443239512128058" id="6209595569797567066" />
+                <node role="quotedNode" roleId="tp3r.1196350785114" type=".com.mbeddr.core.expressions.structure.BooleanType" id="6209595569797567066" />
               </node>
             </node>
             <node role="leftExpression" roleId="tpd4.1174660783413" type="tpd4.NormalTypeClause" typeId="tpd4.1185788614172" id="6209595569797567062">
@@ -496,7 +496,7 @@
                 <node role="statement" roleId="tpee.1068581517665" type="tpd4.CreateEquationStatement" typeId="tpd4.1174658326157" id="4143042878078340992">
                   <node role="rightExpression" roleId="tpd4.1174660783414" type="tpd4.NormalTypeClause" typeId="tpd4.1185788614172" id="4143042878078340996">
                     <node role="normalType" roleId="tpd4.1185788644032" type="tp3r.Quotation" typeId="tp3r.1196350785113" id="4143042878078340997">
-                      <node role="quotedNode" roleId="tp3r.1196350785114" type="mj1l.BooleanType" typeId="mj1l.8860443239512128058" id="4143042878078340999" />
+                      <node role="quotedNode" roleId="tp3r.1196350785114" type=".com.mbeddr.core.expressions.structure.BooleanType" id="4143042878078340999" />
                     </node>
                   </node>
                   <node role="leftExpression" roleId="tpd4.1174660783413" type="tpd4.NormalTypeClause" typeId="tpd4.1185788614172" id="4143042878078340995">
@@ -525,7 +525,7 @@
                 <node role="statement" roleId="tpee.1068581517665" type="tpd4.CreateEquationStatement" typeId="tpd4.1174658326157" id="4143042878078341003">
                   <node role="rightExpression" roleId="tpd4.1174660783414" type="tpd4.NormalTypeClause" typeId="tpd4.1185788614172" id="4143042878078341004">
                     <node role="normalType" roleId="tpd4.1185788644032" type="tp3r.Quotation" typeId="tp3r.1196350785113" id="4143042878078341005">
-                      <node role="quotedNode" roleId="tp3r.1196350785114" type="mj1l.BooleanType" typeId="mj1l.8860443239512128058" id="4143042878078341006" />
+                      <node role="quotedNode" roleId="tp3r.1196350785114" type=".com.mbeddr.core.expressions.structure.BooleanType" id="4143042878078341006" />
                     </node>
                   </node>
                   <node role="leftExpression" roleId="tpd4.1174660783413" type="tpd4.NormalTypeClause" typeId="tpd4.1185788614172" id="4143042878078341007">
@@ -728,7 +728,7 @@
         <property name="checkOnly" nameId="tpd4.1206359757216" value="true" />
         <node role="rightExpression" roleId="tpd4.1174660783414" type="tpd4.NormalTypeClause" typeId="tpd4.1185788614172" id="2688792604368169674">
           <node role="normalType" roleId="tpd4.1185788644032" type="tp3r.Quotation" typeId="tp3r.1196350785113" id="2688792604368169675">
-            <node role="quotedNode" roleId="tp3r.1196350785114" type="mj1l.BooleanType" typeId="mj1l.8860443239512128058" id="2688792604368169677" />
+            <node role="quotedNode" roleId="tp3r.1196350785114" type=".com.mbeddr.core.expressions.structure.BooleanType" id="2688792604368169677" />
           </node>
         </node>
         <node role="leftExpression" roleId="tpd4.1174660783413" type="tpd4.NormalTypeClause" typeId="tpd4.1185788614172" id="2688792604368169673">
@@ -1174,7 +1174,7 @@
         <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="4157464901390021911">
           <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="4157464901390021930">
             <node role="expression" roleId="tpee.1068580123156" type="tp3r.Quotation" typeId="tp3r.1196350785113" id="4157464901390021931">
-              <node role="quotedNode" roleId="tp3r.1196350785114" type="mj1l.BooleanType" typeId="mj1l.8860443239512128058" id="4157464901390021933" />
+              <node role="quotedNode" roleId="tp3r.1196350785114" type=".com.mbeddr.core.expressions.structure.BooleanType" id="4157464901390021933" />
             </node>
           </node>
         </node>
@@ -1195,7 +1195,7 @@
                   <node role="leftExpression" roleId="tpee.1081773367580" type="tpd4.IsSubtypeExpression" typeId="tpd4.1176543928247" id="4157464901390050105">
                     <node role="subtypeExpression" roleId="tpd4.1176543945045" type="tpd4.LeftOperandType_parameter" typeId="tpd4.1236083209648" id="4157464901390050108" />
                     <node role="supertypeExpression" roleId="tpd4.1176543950311" type="tp3r.Quotation" typeId="tp3r.1196350785113" id="4157464901390050109">
-                      <node role="quotedNode" roleId="tp3r.1196350785114" type="mj1l.Int32tType" typeId="mj1l.8463282783691618440" id="4157464901390050111" />
+                      <node role="quotedNode" roleId="tp3r.1196350785114" type=".com.mbeddr.core.expressions.structure.Int32tType" id="4157464901390050111" />
                     </node>
                   </node>
                   <node role="rightExpression" roleId="tpee.1081773367579" type="tpd4.IsSubtypeExpression" typeId="tpd4.1176543928247" id="4157464901390050136">
@@ -1209,7 +1209,7 @@
                       </node>
                     </node>
                     <node role="supertypeExpression" roleId="tpd4.1176543950311" type="tp3r.Quotation" typeId="tp3r.1196350785113" id="4157464901390050139">
-                      <node role="quotedNode" roleId="tp3r.1196350785114" type="mj1l.Int32tType" typeId="mj1l.8463282783691618440" id="4157464901390050140" />
+                      <node role="quotedNode" roleId="tp3r.1196350785114" type=".com.mbeddr.core.expressions.structure.Int32tType" id="4157464901390050140" />
                     </node>
                   </node>
                 </node>
@@ -2175,7 +2175,7 @@
         </node>
         <node role="rightExpression" roleId="tpd4.1174660783414" type="tpd4.NormalTypeClause" typeId="tpd4.1185788614172" id="6321794478502972667">
           <node role="normalType" roleId="tpd4.1185788644032" type="tp3r.Quotation" typeId="tp3r.1196350785113" id="6321794478502972668">
-            <node role="quotedNode" roleId="tp3r.1196350785114" type="mj1l.Int64tType" typeId="mj1l.8463282783691618445" id="6321794478502972669" />
+            <node role="quotedNode" roleId="tp3r.1196350785114" type=".com.mbeddr.core.expressions.structure.Int64tType" id="6321794478502972669" />
           </node>
         </node>
       </node>
