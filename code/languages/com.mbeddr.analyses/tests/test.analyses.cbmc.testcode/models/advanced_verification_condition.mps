@@ -35,6 +35,15 @@
     <node type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="3693493944569248137">
       <property name="name" nameId="tpck.1169194664001" value="between_and_must" />
     </node>
+    <node type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="2609337213949641052">
+      <property name="name" nameId="tpck.1169194664001" value="between_and_exists" />
+    </node>
+    <node type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="2609337213949641216">
+      <property name="name" nameId="tpck.1169194664001" value="until_exists" />
+    </node>
+    <node type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="2609337213949641332">
+      <property name="name" nameId="tpck.1169194664001" value="precedes" />
+    </node>
   </roots>
   <root id="7573444803550978951">
     <node role="target" roleId="51wr.5323740605968447026" type="51wr.DesktopPlatform" typeId="51wr.5323740605968447022" id="7573444803550978952">
@@ -61,6 +70,15 @@
       </node>
       <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="3693493944569860963">
         <link role="module" roleId="51wr.7717755763392524108" targetNodeId="3693493944569247934" resolveInfo="after_until_must" />
+      </node>
+      <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="2609337213949805527">
+        <link role="module" roleId="51wr.7717755763392524108" targetNodeId="2609337213949641052" resolveInfo="between_and_exists" />
+      </node>
+      <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="2609337213949805529">
+        <link role="module" roleId="51wr.7717755763392524108" targetNodeId="2609337213949641216" resolveInfo="until_exists" />
+      </node>
+      <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="2609337213949805531">
+        <link role="module" roleId="51wr.7717755763392524108" targetNodeId="2609337213949641332" resolveInfo="precedes" />
       </node>
     </node>
   </root>
@@ -594,8 +612,8 @@
       <property name="name" nameId="tpck.1169194664001" value="afterUntilMust" />
       <property name="exported" nameId="x27k.1317894735999272944" value="true" />
       <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="3693493944569247937">
-        <node role="statements" roleId="c4fa.4185783222026475862" type=".com.mbeddr.analyses.cbmc.structure.AfterQUntilRMustP" id="3693493944570179994">
-          <node role="p" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="1063237037874638485">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="q5q6.AfterQUntilRMustP" typeId="q5q6.8361725885982646993" id="3693493944570179994">
+          <node role="p" roleId="q5q6.6876648630975719718" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="1063237037874638485">
             <node role="left" roleId="mj1l.8860443239512128064" type="x27k.ArgumentRef" typeId="x27k.2093108837558505658" id="1063237037874638486">
               <link role="arg" roleId="x27k.2093108837558505659" targetNodeId="3693493944569247999" resolveInfo="z" />
             </node>
@@ -603,7 +621,7 @@
               <property name="value" nameId="mj1l.8860443239512128104" value="0" />
             </node>
           </node>
-          <node role="q" type="mj1l.LessExpression" typeId="mj1l.8860443239512147449" id="3693493944570180002">
+          <node role="q" roleId="q5q6.6876648630975719720" type="mj1l.LessExpression" typeId="mj1l.8860443239512147449" id="3693493944570180002">
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3693493944570180005">
               <property name="value" nameId="mj1l.8860443239512128104" value="0" />
             </node>
@@ -611,7 +629,7 @@
               <link role="arg" roleId="x27k.2093108837558505659" targetNodeId="3693493944569247946" resolveInfo="x" />
             </node>
           </node>
-          <node role="r" type="mj1l.GreaterExpression" typeId="mj1l.8860443239512147445" id="3693493944570180009">
+          <node role="r" roleId="q5q6.6876648630975719722" type="mj1l.GreaterExpression" typeId="mj1l.8860443239512147445" id="3693493944570180009">
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3693493944570180012">
               <property name="value" nameId="mj1l.8860443239512128104" value="0" />
             </node>
@@ -827,8 +845,8 @@
       <property name="name" nameId="tpck.1169194664001" value="betweenAndMust" />
       <property name="exported" nameId="x27k.1317894735999272944" value="true" />
       <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="3693493944569248140">
-        <node role="statements" roleId="c4fa.4185783222026475862" type=".com.mbeddr.analyses.cbmc.structure.BetweenQAndRMustP" id="3693493944570180023">
-          <node role="q" type="mj1l.LessExpression" typeId="mj1l.8860443239512147449" id="3693493944570180030">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="q5q6.BetweenQAndRMustP" typeId="q5q6.6876648630975719716" id="3693493944570180023">
+          <node role="q" roleId="q5q6.6876648630975719720" type="mj1l.LessExpression" typeId="mj1l.8860443239512147449" id="3693493944570180030">
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3693493944570180033">
               <property name="value" nameId="mj1l.8860443239512128104" value="0" />
             </node>
@@ -836,7 +854,7 @@
               <link role="arg" roleId="x27k.2093108837558505659" targetNodeId="3693493944569248146" resolveInfo="x" />
             </node>
           </node>
-          <node role="r" type="mj1l.GreaterExpression" typeId="mj1l.8860443239512147445" id="3693493944570180037">
+          <node role="r" roleId="q5q6.6876648630975719722" type="mj1l.GreaterExpression" typeId="mj1l.8860443239512147445" id="3693493944570180037">
             <node role="left" roleId="mj1l.8860443239512128064" type="x27k.ArgumentRef" typeId="x27k.2093108837558505658" id="3693493944570180034">
               <link role="arg" roleId="x27k.2093108837558505659" targetNodeId="3693493944569248148" resolveInfo="y" />
             </node>
@@ -844,7 +862,7 @@
               <property name="value" nameId="mj1l.8860443239512128104" value="0" />
             </node>
           </node>
-          <node role="p" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="1063237037874639548">
+          <node role="p" roleId="q5q6.6876648630975719718" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="1063237037874639548">
             <node role="left" roleId="mj1l.8860443239512128064" type="x27k.ArgumentRef" typeId="x27k.2093108837558505658" id="1063237037874639549">
               <link role="arg" roleId="x27k.2093108837558505659" targetNodeId="3693493944569248150" resolveInfo="z" />
             </node>
@@ -1063,6 +1081,514 @@
       </node>
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="3693493944569248212">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1365056885074_3" />
+    </node>
+  </root>
+  <root id="2609337213949641052">
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="2609337213949641053">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1346846121984_1" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="2609337213949641054">
+      <property name="name" nameId="tpck.1169194664001" value="betweenAndExists" />
+      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
+      <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="2609337213949641055">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="q5q6.BetweenQAndRExistsP" typeId="q5q6.2609337213949315030" id="2609337213949641140">
+          <node role="q" roleId="q5q6.6876648630975719720" type="mj1l.LessExpression" typeId="mj1l.8860443239512147449" id="2609337213949641147">
+            <node role="left" roleId="mj1l.8860443239512128064" type="x27k.ArgumentRef" typeId="x27k.2093108837558505658" id="2609337213949641144">
+              <link role="arg" roleId="x27k.2093108837558505659" targetNodeId="2609337213949641067" resolveInfo="x" />
+            </node>
+            <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2609337213949641152">
+              <property name="value" nameId="mj1l.8860443239512128104" value="0" />
+            </node>
+          </node>
+          <node role="r" roleId="q5q6.6876648630975719722" type="mj1l.GreaterExpression" typeId="mj1l.8860443239512147445" id="2609337213949641156">
+            <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2609337213949641159">
+              <property name="value" nameId="mj1l.8860443239512128104" value="0" />
+            </node>
+            <node role="left" roleId="mj1l.8860443239512128064" type="x27k.ArgumentRef" typeId="x27k.2093108837558505658" id="2609337213949641153">
+              <link role="arg" roleId="x27k.2093108837558505659" targetNodeId="2609337213949641069" resolveInfo="y" />
+            </node>
+          </node>
+          <node role="p" roleId="q5q6.6876648630975719718" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="2609337213949641163">
+            <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2609337213949641166">
+              <property name="value" nameId="mj1l.8860443239512128104" value="0" />
+            </node>
+            <node role="left" roleId="mj1l.8860443239512128064" type="x27k.ArgumentRef" typeId="x27k.2093108837558505658" id="2609337213949641160">
+              <link role="arg" roleId="x27k.2093108837558505659" targetNodeId="2609337213949641071" resolveInfo="z" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="2609337213949641066">
+        <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+        <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+      </node>
+      <node role="arguments" roleId="x27k.5708867820623310661" type="x27k.Argument" typeId="x27k.7892328519581704407" id="2609337213949641067">
+        <property name="name" nameId="tpck.1169194664001" value="x" />
+        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int16tType" typeId="mj1l.8463282783691618435" id="2609337213949641068">
+          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+        </node>
+      </node>
+      <node role="arguments" roleId="x27k.5708867820623310661" type="x27k.Argument" typeId="x27k.7892328519581704407" id="2609337213949641069">
+        <property name="name" nameId="tpck.1169194664001" value="y" />
+        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int16tType" typeId="mj1l.8463282783691618435" id="2609337213949641070">
+          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+        </node>
+      </node>
+      <node role="arguments" roleId="x27k.5708867820623310661" type="x27k.Argument" typeId="x27k.7892328519581704407" id="2609337213949641071">
+        <property name="name" nameId="tpck.1169194664001" value="z" />
+        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int16tType" typeId="mj1l.8463282783691618435" id="2609337213949641072">
+          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+        </node>
+      </node>
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="2609337213949641073">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1365004666378_2" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="2609337213949641074">
+      <property name="name" nameId="tpck.1169194664001" value="betweenAndExistsPositiveTests" />
+      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
+      <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="2609337213949641075">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="2609337213949641076">
+          <node role="expr" roleId="c4fa.7254843406768833939" type="x27k.FunctionCall" typeId="x27k.5950410542643524492" id="2609337213949641077">
+            <link role="function" roleId="x27k.5950410542643524493" targetNodeId="2609337213949641054" resolveInfo="betweenAndExists" />
+            <node role="actuals" roleId="x27k.5950410542643524495" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2609337213949641078">
+              <property name="value" nameId="mj1l.8860443239512128104" value="-1" />
+            </node>
+            <node role="actuals" roleId="x27k.5950410542643524495" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2609337213949641079">
+              <property name="value" nameId="mj1l.8860443239512128104" value="-2" />
+            </node>
+            <node role="actuals" roleId="x27k.5950410542643524495" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2609337213949641080">
+              <property name="value" nameId="mj1l.8860443239512128104" value="3" />
+            </node>
+          </node>
+        </node>
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="2609337213949641081">
+          <node role="expr" roleId="c4fa.7254843406768833939" type="x27k.FunctionCall" typeId="x27k.5950410542643524492" id="2609337213949641082">
+            <link role="function" roleId="x27k.5950410542643524493" targetNodeId="2609337213949641054" resolveInfo="betweenAndExists" />
+            <node role="actuals" roleId="x27k.5950410542643524495" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2609337213949641083">
+              <property name="value" nameId="mj1l.8860443239512128104" value="-1" />
+            </node>
+            <node role="actuals" roleId="x27k.5950410542643524495" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2609337213949641084">
+              <property name="value" nameId="mj1l.8860443239512128104" value="-2" />
+            </node>
+            <node role="actuals" roleId="x27k.5950410542643524495" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2609337213949641168">
+              <property name="value" nameId="mj1l.8860443239512128104" value="3" />
+            </node>
+          </node>
+        </node>
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="2609337213949641169">
+          <node role="expr" roleId="c4fa.7254843406768833939" type="x27k.FunctionCall" typeId="x27k.5950410542643524492" id="2609337213949641170">
+            <link role="function" roleId="x27k.5950410542643524493" targetNodeId="2609337213949641054" resolveInfo="betweenAndExists" />
+            <node role="actuals" roleId="x27k.5950410542643524495" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2609337213949641171">
+              <property name="value" nameId="mj1l.8860443239512128104" value="-1" />
+            </node>
+            <node role="actuals" roleId="x27k.5950410542643524495" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2609337213949641172">
+              <property name="value" nameId="mj1l.8860443239512128104" value="-2" />
+            </node>
+            <node role="actuals" roleId="x27k.5950410542643524495" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2609337213949641173">
+              <property name="value" nameId="mj1l.8860443239512128104" value="3" />
+            </node>
+          </node>
+        </node>
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="2609337213949641174">
+          <node role="expr" roleId="c4fa.7254843406768833939" type="x27k.FunctionCall" typeId="x27k.5950410542643524492" id="2609337213949641175">
+            <link role="function" roleId="x27k.5950410542643524493" targetNodeId="2609337213949641054" resolveInfo="betweenAndExists" />
+            <node role="actuals" roleId="x27k.5950410542643524495" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2609337213949641176">
+              <property name="value" nameId="mj1l.8860443239512128104" value="-1" />
+            </node>
+            <node role="actuals" roleId="x27k.5950410542643524495" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2609337213949641177">
+              <property name="value" nameId="mj1l.8860443239512128104" value="-2" />
+            </node>
+            <node role="actuals" roleId="x27k.5950410542643524495" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2609337213949641178">
+              <property name="value" nameId="mj1l.8860443239512128104" value="3" />
+            </node>
+          </node>
+        </node>
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="2609337213949641097">
+          <node role="expr" roleId="c4fa.7254843406768833939" type="x27k.FunctionCall" typeId="x27k.5950410542643524492" id="2609337213949641098">
+            <link role="function" roleId="x27k.5950410542643524493" targetNodeId="2609337213949641054" resolveInfo="betweenAndExists" />
+            <node role="actuals" roleId="x27k.5950410542643524495" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2609337213949641099">
+              <property name="value" nameId="mj1l.8860443239512128104" value="1" />
+            </node>
+            <node role="actuals" roleId="x27k.5950410542643524495" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2609337213949641100">
+              <property name="value" nameId="mj1l.8860443239512128104" value="-2" />
+            </node>
+            <node role="actuals" roleId="x27k.5950410542643524495" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2609337213949641101">
+              <property name="value" nameId="mj1l.8860443239512128104" value="0" />
+            </node>
+          </node>
+        </node>
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="2609337213949641179">
+          <node role="expr" roleId="c4fa.7254843406768833939" type="x27k.FunctionCall" typeId="x27k.5950410542643524492" id="2609337213949641180">
+            <link role="function" roleId="x27k.5950410542643524493" targetNodeId="2609337213949641054" resolveInfo="betweenAndExists" />
+            <node role="actuals" roleId="x27k.5950410542643524495" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2609337213949641181">
+              <property name="value" nameId="mj1l.8860443239512128104" value="-1" />
+            </node>
+            <node role="actuals" roleId="x27k.5950410542643524495" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2609337213949641182">
+              <property name="value" nameId="mj1l.8860443239512128104" value="-2" />
+            </node>
+            <node role="actuals" roleId="x27k.5950410542643524495" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2609337213949641183">
+              <property name="value" nameId="mj1l.8860443239512128104" value="3" />
+            </node>
+          </node>
+        </node>
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="2609337213949641184">
+          <node role="expr" roleId="c4fa.7254843406768833939" type="x27k.FunctionCall" typeId="x27k.5950410542643524492" id="2609337213949641185">
+            <link role="function" roleId="x27k.5950410542643524493" targetNodeId="2609337213949641054" resolveInfo="betweenAndExists" />
+            <node role="actuals" roleId="x27k.5950410542643524495" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2609337213949641186">
+              <property name="value" nameId="mj1l.8860443239512128104" value="-1" />
+            </node>
+            <node role="actuals" roleId="x27k.5950410542643524495" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2609337213949641187">
+              <property name="value" nameId="mj1l.8860443239512128104" value="-2" />
+            </node>
+            <node role="actuals" roleId="x27k.5950410542643524495" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2609337213949641188">
+              <property name="value" nameId="mj1l.8860443239512128104" value="3" />
+            </node>
+          </node>
+        </node>
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="2609337213949641102">
+          <node role="expr" roleId="c4fa.7254843406768833939" type="x27k.FunctionCall" typeId="x27k.5950410542643524492" id="2609337213949641103">
+            <link role="function" roleId="x27k.5950410542643524493" targetNodeId="2609337213949641054" resolveInfo="betweenAndExists" />
+            <node role="actuals" roleId="x27k.5950410542643524495" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2609337213949641104">
+              <property name="value" nameId="mj1l.8860443239512128104" value="1" />
+            </node>
+            <node role="actuals" roleId="x27k.5950410542643524495" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2609337213949641105">
+              <property name="value" nameId="mj1l.8860443239512128104" value="2" />
+            </node>
+            <node role="actuals" roleId="x27k.5950410542643524495" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2609337213949641106">
+              <property name="value" nameId="mj1l.8860443239512128104" value="5" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="2609337213949641118">
+        <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+        <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+      </node>
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="2609337213949641119">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1365056663879_1" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="2609337213949641120">
+      <property name="name" nameId="tpck.1169194664001" value="betweenAndExistsNegativeTests" />
+      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
+      <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="2609337213949641121">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="2609337213949641189">
+          <node role="expr" roleId="c4fa.7254843406768833939" type="x27k.FunctionCall" typeId="x27k.5950410542643524492" id="2609337213949641190">
+            <link role="function" roleId="x27k.5950410542643524493" targetNodeId="2609337213949641054" resolveInfo="betweenAndExists" />
+            <node role="actuals" roleId="x27k.5950410542643524495" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2609337213949641191">
+              <property name="value" nameId="mj1l.8860443239512128104" value="-1" />
+            </node>
+            <node role="actuals" roleId="x27k.5950410542643524495" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2609337213949641192">
+              <property name="value" nameId="mj1l.8860443239512128104" value="-2" />
+            </node>
+            <node role="actuals" roleId="x27k.5950410542643524495" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2609337213949641193">
+              <property name="value" nameId="mj1l.8860443239512128104" value="3" />
+            </node>
+          </node>
+        </node>
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="2609337213949641194">
+          <node role="expr" roleId="c4fa.7254843406768833939" type="x27k.FunctionCall" typeId="x27k.5950410542643524492" id="2609337213949641195">
+            <link role="function" roleId="x27k.5950410542643524493" targetNodeId="2609337213949641054" resolveInfo="betweenAndExists" />
+            <node role="actuals" roleId="x27k.5950410542643524495" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2609337213949641196">
+              <property name="value" nameId="mj1l.8860443239512128104" value="1" />
+            </node>
+            <node role="actuals" roleId="x27k.5950410542643524495" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2609337213949641197">
+              <property name="value" nameId="mj1l.8860443239512128104" value="-2" />
+            </node>
+            <node role="actuals" roleId="x27k.5950410542643524495" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2609337213949641215">
+              <property name="value" nameId="mj1l.8860443239512128104" value="1" />
+            </node>
+          </node>
+        </node>
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="2609337213949641209">
+          <node role="expr" roleId="c4fa.7254843406768833939" type="x27k.FunctionCall" typeId="x27k.5950410542643524492" id="2609337213949641210">
+            <link role="function" roleId="x27k.5950410542643524493" targetNodeId="2609337213949641054" resolveInfo="betweenAndExists" />
+            <node role="actuals" roleId="x27k.5950410542643524495" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2609337213949641211">
+              <property name="value" nameId="mj1l.8860443239512128104" value="1" />
+            </node>
+            <node role="actuals" roleId="x27k.5950410542643524495" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2609337213949641212">
+              <property name="value" nameId="mj1l.8860443239512128104" value="2" />
+            </node>
+            <node role="actuals" roleId="x27k.5950410542643524495" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2609337213949641213">
+              <property name="value" nameId="mj1l.8860443239512128104" value="5" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="2609337213949641137">
+        <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+        <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+      </node>
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="2609337213949641138">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1365056885074_3" />
+    </node>
+  </root>
+  <root id="2609337213949641216">
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="2609337213949641217">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1346846121984_1" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="2609337213949641218">
+      <property name="name" nameId="tpck.1169194664001" value="untilExists" />
+      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
+      <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="2609337213949641219">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="q5q6.UntilQExistsP" typeId="q5q6.2609337213949315048" id="2609337213949641275">
+          <node role="q" roleId="q5q6.7392194941658581814" type="mj1l.GreaterExpression" typeId="mj1l.8860443239512147445" id="2609337213949641281">
+            <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2609337213949641284">
+              <property name="value" nameId="mj1l.8860443239512128104" value="0" />
+            </node>
+            <node role="left" roleId="mj1l.8860443239512128064" type="x27k.ArgumentRef" typeId="x27k.2093108837558505658" id="2609337213949641278">
+              <link role="arg" roleId="x27k.2093108837558505659" targetNodeId="2609337213949641228" resolveInfo="x" />
+            </node>
+          </node>
+          <node role="p" roleId="q5q6.7392194941658581813" type="mj1l.GreaterExpression" typeId="mj1l.8860443239512147445" id="2609337213949641294">
+            <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2609337213949641297">
+              <property name="value" nameId="mj1l.8860443239512128104" value="0" />
+            </node>
+            <node role="left" roleId="mj1l.8860443239512128064" type="x27k.ArgumentRef" typeId="x27k.2093108837558505658" id="2609337213949641291">
+              <link role="arg" roleId="x27k.2093108837558505659" targetNodeId="2609337213949641230" resolveInfo="y" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="2609337213949641227">
+        <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+        <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+      </node>
+      <node role="arguments" roleId="x27k.5708867820623310661" type="x27k.Argument" typeId="x27k.7892328519581704407" id="2609337213949641228">
+        <property name="name" nameId="tpck.1169194664001" value="x" />
+        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int16tType" typeId="mj1l.8463282783691618435" id="2609337213949641229">
+          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+        </node>
+      </node>
+      <node role="arguments" roleId="x27k.5708867820623310661" type="x27k.Argument" typeId="x27k.7892328519581704407" id="2609337213949641230">
+        <property name="name" nameId="tpck.1169194664001" value="y" />
+        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int16tType" typeId="mj1l.8463282783691618435" id="2609337213949641231">
+          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+        </node>
+      </node>
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="2609337213949641232">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1365004666378_2" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="2609337213949641233">
+      <property name="name" nameId="tpck.1169194664001" value="untilExistsPositiveTests" />
+      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
+      <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="2609337213949641234">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="2609337213949641298">
+          <node role="expr" roleId="c4fa.7254843406768833939" type="x27k.FunctionCall" typeId="x27k.5950410542643524492" id="2609337213949641299">
+            <link role="function" roleId="x27k.5950410542643524493" targetNodeId="2609337213949641218" resolveInfo="untilExists" />
+            <node role="actuals" roleId="x27k.5950410542643524495" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2609337213949641300">
+              <property name="value" nameId="mj1l.8860443239512128104" value="-1" />
+            </node>
+            <node role="actuals" roleId="x27k.5950410542643524495" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2609337213949641302">
+              <property name="value" nameId="mj1l.8860443239512128104" value="-1" />
+            </node>
+          </node>
+        </node>
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="2609337213949641304">
+          <node role="expr" roleId="c4fa.7254843406768833939" type="x27k.FunctionCall" typeId="x27k.5950410542643524492" id="2609337213949641305">
+            <link role="function" roleId="x27k.5950410542643524493" targetNodeId="2609337213949641218" resolveInfo="untilExists" />
+            <node role="actuals" roleId="x27k.5950410542643524495" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2609337213949641306">
+              <property name="value" nameId="mj1l.8860443239512128104" value="-1" />
+            </node>
+            <node role="actuals" roleId="x27k.5950410542643524495" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2609337213949641307">
+              <property name="value" nameId="mj1l.8860443239512128104" value="-1" />
+            </node>
+          </node>
+        </node>
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="2609337213949641312">
+          <node role="expr" roleId="c4fa.7254843406768833939" type="x27k.FunctionCall" typeId="x27k.5950410542643524492" id="2609337213949641313">
+            <link role="function" roleId="x27k.5950410542643524493" targetNodeId="2609337213949641218" resolveInfo="untilExists" />
+            <node role="actuals" roleId="x27k.5950410542643524495" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2609337213949641314">
+              <property name="value" nameId="mj1l.8860443239512128104" value="-1" />
+            </node>
+            <node role="actuals" roleId="x27k.5950410542643524495" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2609337213949641317">
+              <property name="value" nameId="mj1l.8860443239512128104" value="2" />
+            </node>
+          </node>
+        </node>
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="2609337213949641318">
+          <node role="expr" roleId="c4fa.7254843406768833939" type="x27k.FunctionCall" typeId="x27k.5950410542643524492" id="2609337213949641319">
+            <link role="function" roleId="x27k.5950410542643524493" targetNodeId="2609337213949641218" resolveInfo="untilExists" />
+            <node role="actuals" roleId="x27k.5950410542643524495" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2609337213949641320">
+              <property name="value" nameId="mj1l.8860443239512128104" value="-1" />
+            </node>
+            <node role="actuals" roleId="x27k.5950410542643524495" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2609337213949641321">
+              <property name="value" nameId="mj1l.8860443239512128104" value="-1" />
+            </node>
+          </node>
+        </node>
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="2609337213949641322">
+          <node role="expr" roleId="c4fa.7254843406768833939" type="x27k.FunctionCall" typeId="x27k.5950410542643524492" id="2609337213949641323">
+            <link role="function" roleId="x27k.5950410542643524493" targetNodeId="2609337213949641218" resolveInfo="untilExists" />
+            <node role="actuals" roleId="x27k.5950410542643524495" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2609337213949641324">
+              <property name="value" nameId="mj1l.8860443239512128104" value="1" />
+            </node>
+            <node role="actuals" roleId="x27k.5950410542643524495" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2609337213949641325">
+              <property name="value" nameId="mj1l.8860443239512128104" value="-1" />
+            </node>
+          </node>
+        </node>
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="2609337213949641303" />
+      </node>
+      <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="2609337213949641254">
+        <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+        <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+      </node>
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="2609337213949641255">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1365056663879_1" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="2609337213949641256">
+      <property name="name" nameId="tpck.1169194664001" value="untilExistsNegativeTests" />
+      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
+      <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="2609337213949641257">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="2609337213949641326">
+          <node role="expr" roleId="c4fa.7254843406768833939" type="x27k.FunctionCall" typeId="x27k.5950410542643524492" id="2609337213949641327">
+            <link role="function" roleId="x27k.5950410542643524493" targetNodeId="2609337213949641218" resolveInfo="untilExists" />
+            <node role="actuals" roleId="x27k.5950410542643524495" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2609337213949641329">
+              <property name="value" nameId="mj1l.8860443239512128104" value="2" />
+            </node>
+            <node role="actuals" roleId="x27k.5950410542643524495" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2609337213949641331">
+              <property name="value" nameId="mj1l.8860443239512128104" value="2" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="2609337213949641272">
+        <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+        <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+      </node>
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="2609337213949641273">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1365056885074_3" />
+    </node>
+  </root>
+  <root id="2609337213949641332">
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="2609337213949641333">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1346846121984_1" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="2609337213949641334">
+      <property name="name" nameId="tpck.1169194664001" value="precedes" />
+      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
+      <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="2609337213949641335">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="q5q6.PImmediatelyPrecedesQ" typeId="q5q6.2609337213949315063" id="2609337213949641382">
+          <node role="p" roleId="q5q6.7392194941658581813" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="2609337213949641388">
+            <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2609337213949641391">
+              <property name="value" nameId="mj1l.8860443239512128104" value="0" />
+            </node>
+            <node role="left" roleId="mj1l.8860443239512128064" type="x27k.ArgumentRef" typeId="x27k.2093108837558505658" id="2609337213949641385">
+              <link role="arg" roleId="x27k.2093108837558505659" targetNodeId="2609337213949641344" resolveInfo="x" />
+            </node>
+          </node>
+          <node role="q" roleId="q5q6.7392194941658581814" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="2609337213949641402">
+            <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2609337213949641405">
+              <property name="value" nameId="mj1l.8860443239512128104" value="0" />
+            </node>
+            <node role="left" roleId="mj1l.8860443239512128064" type="x27k.ArgumentRef" typeId="x27k.2093108837558505658" id="2609337213949641392">
+              <link role="arg" roleId="x27k.2093108837558505659" targetNodeId="2609337213949641346" resolveInfo="y" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="2609337213949641343">
+        <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+        <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+      </node>
+      <node role="arguments" roleId="x27k.5708867820623310661" type="x27k.Argument" typeId="x27k.7892328519581704407" id="2609337213949641344">
+        <property name="name" nameId="tpck.1169194664001" value="x" />
+        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int16tType" typeId="mj1l.8463282783691618435" id="2609337213949641345">
+          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+        </node>
+      </node>
+      <node role="arguments" roleId="x27k.5708867820623310661" type="x27k.Argument" typeId="x27k.7892328519581704407" id="2609337213949641346">
+        <property name="name" nameId="tpck.1169194664001" value="y" />
+        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int16tType" typeId="mj1l.8463282783691618435" id="2609337213949641347">
+          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+        </node>
+      </node>
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="2609337213949641348">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1365004666378_2" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="2609337213949641349">
+      <property name="name" nameId="tpck.1169194664001" value="precedesPositiveTests" />
+      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
+      <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="2609337213949641350">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="2609337213949641351">
+          <node role="expr" roleId="c4fa.7254843406768833939" type="x27k.FunctionCall" typeId="x27k.5950410542643524492" id="2609337213949641352">
+            <link role="function" roleId="x27k.5950410542643524493" targetNodeId="2609337213949641334" resolveInfo="precedes" />
+            <node role="actuals" roleId="x27k.5950410542643524495" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2609337213949641354">
+              <property name="value" nameId="mj1l.8860443239512128104" value="0" />
+            </node>
+            <node role="actuals" roleId="x27k.5950410542643524495" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2609337213949641411">
+              <property name="value" nameId="mj1l.8860443239512128104" value="1" />
+            </node>
+          </node>
+        </node>
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="2609337213949641355">
+          <node role="expr" roleId="c4fa.7254843406768833939" type="x27k.FunctionCall" typeId="x27k.5950410542643524492" id="2609337213949641356">
+            <link role="function" roleId="x27k.5950410542643524493" targetNodeId="2609337213949641334" resolveInfo="precedes" />
+            <node role="actuals" roleId="x27k.5950410542643524495" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2609337213949641412">
+              <property name="value" nameId="mj1l.8860443239512128104" value="0" />
+            </node>
+            <node role="actuals" roleId="x27k.5950410542643524495" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2609337213949641414">
+              <property name="value" nameId="mj1l.8860443239512128104" value="0" />
+            </node>
+          </node>
+        </node>
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="2609337213949641359">
+          <node role="expr" roleId="c4fa.7254843406768833939" type="x27k.FunctionCall" typeId="x27k.5950410542643524492" id="2609337213949641360">
+            <link role="function" roleId="x27k.5950410542643524493" targetNodeId="2609337213949641334" resolveInfo="precedes" />
+            <node role="actuals" roleId="x27k.5950410542643524495" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2609337213949641415">
+              <property name="value" nameId="mj1l.8860443239512128104" value="1" />
+            </node>
+            <node role="actuals" roleId="x27k.5950410542643524495" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2609337213949641417">
+              <property name="value" nameId="mj1l.8860443239512128104" value="0" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="2609337213949641372">
+        <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+        <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+      </node>
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="2609337213949641373">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1365056663879_1" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="2609337213949641374">
+      <property name="name" nameId="tpck.1169194664001" value="precedesNegativeTests" />
+      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
+      <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="2609337213949641375">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="2609337213949641376">
+          <node role="expr" roleId="c4fa.7254843406768833939" type="x27k.FunctionCall" typeId="x27k.5950410542643524492" id="2609337213949641377">
+            <link role="function" roleId="x27k.5950410542643524493" targetNodeId="2609337213949641334" resolveInfo="precedes" />
+            <node role="actuals" roleId="x27k.5950410542643524495" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2609337213949641406">
+              <property name="value" nameId="mj1l.8860443239512128104" value="0" />
+            </node>
+            <node role="actuals" roleId="x27k.5950410542643524495" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2609337213949641408">
+              <property name="value" nameId="mj1l.8860443239512128104" value="0" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="2609337213949641380">
+        <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+        <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+      </node>
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="2609337213949641381">
       <property name="name" nameId="tpck.1169194664001" value="empty_1365056885074_3" />
     </node>
   </root>
