@@ -19,6 +19,7 @@
       <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="ym4j.3801772042669047863" resolveInfo="CompositeUnitDeclaration" />
     </node>
     <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="3801772042669047874">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="standalone" />
       <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="ym4j.3801772042669047872" resolveInfo="UnitContainer" />
     </node>
     <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="8099136929591129787">
@@ -38,6 +39,9 @@
     </node>
     <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="6870096341748575357">
       <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="ym4j.6870096341748575352" resolveInfo="EmptyUnitContainerContents" />
+    </node>
+    <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="1085404444144925950">
+      <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="ym4j.3801772042669047301" resolveInfo="UnitDeclaration" />
     </node>
   </roots>
   <root id="3801772042669047307">
@@ -86,6 +90,7 @@
     <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="3801772042669047867">
       <link role="styleClass" roleId="tpc2.1186406756722" targetNodeId="5513256947824560921" resolveInfo="physicalUnits" />
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_RefNodeList" typeId="tpc2.1073390211982" id="3801772042669047870">
+        <property name="separatorText" nameId="tpc2.1140524450557" value=" *" />
         <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="ym4j.3801772042669047864" />
         <link role="styleClass" roleId="tpc2.1186406756722" targetNodeId="5513256947824560921" resolveInfo="physicalUnits" />
         <node role="cellLayout" roleId="tpc2.1140524464360" type="tpc2.CellLayout_Indent" typeId="tpc2.1237303669825" id="3801772042669047871" />
@@ -184,7 +189,7 @@
   </root>
   <root id="8099136929591173609">
     <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_RefCell" typeId="tpc2.1088013125922" id="8099136929591173611">
-      <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="ym4j.8099136929591173608" />
+      <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="ym4j.1085404444144943750" />
       <node role="editorComponent" roleId="tpc2.1088186146602" type="tpc2.InlineEditorComponent" typeId="tpc2.1088185857835" id="8099136929591173612">
         <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Property" typeId="tpc2.1073389658414" id="8099136929591173614">
           <property name="readOnly" nameId="tpc2.1140017977771" value="true" />
@@ -250,6 +255,11 @@
       <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.EditableStyleClassItem" typeId="tpc2.1186414860679" id="6870096341748575360">
         <property name="flag" nameId="tpc2.1186414551515" value="true" />
       </node>
+    </node>
+  </root>
+  <root id="1085404444144925950">
+    <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Error" typeId="tpc2.1075375595203" id="1085404444144925952">
+      <property name="text" nameId="tpc2.1075375595204" value="no unit" />
     </node>
   </root>
 </model>

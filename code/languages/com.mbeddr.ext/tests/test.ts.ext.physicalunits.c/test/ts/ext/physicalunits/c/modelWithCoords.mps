@@ -16,7 +16,7 @@
   <import index="3c6d" modelUID="r:d6d71b6a-f5ea-4b72-bd01-9d5b19792726(com.mbeddr.ext.physicalunits.c.structure)" version="0" implicit="yes" />
   <import index="ym4j" modelUID="r:cf0df747-2506-460f-a33d-eb236a605ee8(com.mbeddr.ext.physicalunits.structure)" version="10" implicit="yes" />
   <import index="k146" modelUID="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" version="5" implicit="yes" />
-  <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="22" implicit="yes" />
+  <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="23" implicit="yes" />
   <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="7" implicit="yes" />
   <import index="51wr" modelUID="r:b31f1c3c-99aa-4f1e-a329-cba27efb1a6b(com.mbeddr.core.buildconfig.structure)" version="1" implicit="yes" />
   <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="5" implicit="yes" />
@@ -26,10 +26,12 @@
       <property name="name" nameId="tpck.1169194664001" value="testCoords" />
     </node>
     <node type="mj1l.TypeSizeConfiguration" typeId="mj1l.3335993110369795380" id="4497436839299134884" />
-    <node type="ym4j.UnitContainer" typeId="ym4j.3801772042669047872" id="4497436839299135003" />
     <node type="51wr.BuildConfiguration" typeId="51wr.7717755763392524104" id="1798411515023801994" />
     <node type="tp5g.TestInfo" typeId="tp5g.5097124989038916362" id="1423209693056975518">
       <property name="projectPath" nameId="tp5g.5097124989038916363" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.ext/ext.dev.mpr" />
+    </node>
+    <node type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="6657613005452170107">
+      <property name="name" nameId="tpck.1169194664001" value="UnitDeclarations" />
     </node>
   </roots>
   <root id="4497436839299134881">
@@ -171,6 +173,24 @@
           <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="4497436839299134935" />
           <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="vs0r.DoNotAnalyzeDataFlowAnnotation" typeId="vs0r.7307224057853283254" id="3204665927010152426" />
         </node>
+        <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="1785292206583324901">
+          <property name="name" nameId="tpck.1169194664001" value="empty_1365169239556_1" />
+        </node>
+        <node role="contents" roleId="x27k.6437088627575722833" type="3c6d.CBasedConversionRule" typeId="3c6d.2078797996880475936" id="1785292206583324903">
+          <node role="conversion" roleId="3c6d.2078797996880475939" type="3c6d.IntroduceUnitExpression" typeId="3c6d.4006257212296803108" id="7308356872494864084">
+            <node role="expr" roleId="3c6d.4006257212296803109" type="mj1l.MultiExpression" typeId="mj1l.5763383285156373020" id="1785292206583324913">
+              <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="1785292206583324916">
+                <property name="value" nameId="mj1l.8860443239512128104" value="2" />
+              </node>
+              <node role="left" roleId="mj1l.8860443239512128064" type="3c6d.StripUnitExpression" typeId="3c6d.4006257212296783260" id="7308356872494864083">
+                <node role="expr" roleId="3c6d.4006257212296783261" type="3c6d.ValExpression" typeId="3c6d.5185104661801317038" id="1785292206583324910" />
+              </node>
+            </node>
+            <node role="targetUnit" roleId="3c6d.4006257212296803127" type="sfuj.GlobalCoords" typeId="sfuj.4497436839299102624" id="7308356872494864086" />
+          </node>
+          <node role="from" roleId="ym4j.2078797996880475937" type="sfuj.LocalCoords" typeId="sfuj.4497436839299102577" id="1785292206583324907" />
+          <node role="to" roleId="ym4j.2078797996880475938" type="sfuj.GlobalCoords" typeId="sfuj.4497436839299102624" id="1785292206583324908" />
+        </node>
         <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodeOperationsContainer" typeId="tp5g.1215603922101" id="1798411515023801992">
           <node role="operations" roleId="tp5g.1215604436604" type="tp5g.TypesCheckOperation" typeId="tp5g.1215607067978" id="1798411515023801993" />
         </node>
@@ -258,8 +278,21 @@
       <node role="ieee754Type" roleId="mj1l.9149785691755093698" type="mj1l.LongDoubleType" typeId="mj1l.9149785691754701072" id="4497436839299134931" />
     </node>
   </root>
-  <root id="4497436839299135003">
-    <node role="contents" roleId="ym4j.6870096341748240402" type="3c6d.CBasedConversionRule" typeId="3c6d.2078797996880475936" id="4497436839299135004">
+  <root id="1798411515023801994">
+    <node role="target" roleId="51wr.5323740605968447026" type="51wr.DesktopPlatform" typeId="51wr.5323740605968447022" id="1798411515023801995">
+      <property name="compiler" nameId="51wr.5323740605968447024" value="gcc" />
+      <property name="compilerOptions" nameId="51wr.5323740605968447025" value="-std=c99" />
+      <property name="debugOptions" nameId="51wr.2736179788492003937" value="-g" />
+    </node>
+    <node role="configurationItems" roleId="vs0r.4459718605982007338" type="k146.ReportingConfiguration" typeId="k146.4459718605982051949" id="1798411515023801996">
+      <node role="strategy" roleId="k146.4459718605982051999" type="k146.PrintfReportingStrategy" typeId="k146.4459718605982051980" id="1798411515023801997" />
+    </node>
+    <node role="configurationItems" roleId="vs0r.4459718605982007338" type="3c6d.PhysicalUnitsConfigItem" typeId="3c6d.9035511730050139082" id="4561522810758420554" />
+  </root>
+  <root id="1423209693056975518" />
+  <root id="6657613005452170107">
+    <node role="contents" roleId="x27k.6437088627575722833" type="3c6d.CBasedConversionRule" typeId="3c6d.2078797996880475936" id="4497436839299135004">
+      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
       <node role="conversion" roleId="3c6d.2078797996880475939" type="mj1l.PlusExpression" typeId="mj1l.5763383285156373013" id="4497436839299135016">
         <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="4497436839299135019">
           <property name="value" nameId="mj1l.8860443239512128104" value="20" />
@@ -269,7 +302,8 @@
       <node role="from" roleId="ym4j.2078797996880475937" type="sfuj.GlobalCoords" typeId="sfuj.4497436839299102624" id="4497436839299135008" />
       <node role="to" roleId="ym4j.2078797996880475938" type="sfuj.LocalCoords" typeId="sfuj.4497436839299102577" id="4497436839299135009" />
     </node>
-    <node role="contents" roleId="ym4j.6870096341748240402" type="3c6d.CBasedConversionRule" typeId="3c6d.2078797996880475936" id="4497436839299135020">
+    <node role="contents" roleId="x27k.6437088627575722833" type="3c6d.CBasedConversionRule" typeId="3c6d.2078797996880475936" id="4497436839299135020">
+      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
       <node role="conversion" roleId="3c6d.2078797996880475939" type="mj1l.MinusExpression" typeId="mj1l.5763383285156373018" id="4497436839299135028">
         <node role="left" roleId="mj1l.8860443239512128064" type="3c6d.ValExpression" typeId="3c6d.5185104661801317038" id="4497436839299135029" />
         <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="4497436839299135030">
@@ -280,19 +314,5 @@
       <node role="to" roleId="ym4j.2078797996880475938" type="sfuj.GlobalCoords" typeId="sfuj.4497436839299102624" id="4497436839299135027" />
     </node>
   </root>
-  <root id="1798411515023801994">
-    <node role="target" roleId="51wr.5323740605968447026" type="51wr.DesktopPlatform" typeId="51wr.5323740605968447022" id="1798411515023801995">
-      <property name="compiler" nameId="51wr.5323740605968447024" value="gcc" />
-      <property name="compilerOptions" nameId="51wr.5323740605968447025" value="-std=c99" />
-      <property name="debugOptions" nameId="51wr.2736179788492003937" value="-g" />
-    </node>
-    <node role="configurationItems" roleId="vs0r.4459718605982007338" type="k146.ReportingConfiguration" typeId="k146.4459718605982051949" id="1798411515023801996">
-      <node role="strategy" roleId="k146.4459718605982051999" type="k146.PrintfReportingStrategy" typeId="k146.4459718605982051980" id="1798411515023801997" />
-    </node>
-    <node role="configurationItems" roleId="vs0r.4459718605982007338" type="3c6d.PhysicalUnitsConfigItem" typeId="3c6d.9035511730050139082" id="9035511730050477869">
-      <link role="container" roleId="3c6d.9035511730050143261" targetNodeId="4497436839299135003" resolveInfo="test.ts.ext.physicalunits.c.modelWithCoords" />
-    </node>
-  </root>
-  <root id="1423209693056975518" />
 </model>
 

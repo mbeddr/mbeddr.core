@@ -60,5 +60,17 @@
     </dependencies>
     <move id="clqz.4753668641245750663" to="clqz.4249345261280348989" />
   </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="clqz" modelUID="r:5ebcdb77-81e9-4964-beae-35bd9a2f28b5(com.mbeddr.ext.statemachines.structure)" version="9" />
+    </dependencies>
+    <move id="clqz.4753668641245545015" to="clqz.8409287311039042109" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="clqz" modelUID="r:5ebcdb77-81e9-4964-beae-35bd9a2f28b5(com.mbeddr.ext.statemachines.structure)" version="10" />
+    </dependencies>
+    <rename id="clqz.8409287311039121599" type="CONCEPT" from="DuringAction" to="DoAction" />
+  </StructureModification>
 </history>
 

@@ -24,5 +24,53 @@
     </dependencies>
     <rename id="q5q6.4887422885165654650" type="CONCEPT" from="implies" to="Implies" />
   </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="q5q6" modelUID="r:5d65e582-fa41-4818-b31c-b2aee1644b4a(com.mbeddr.analyses.cbmc.structure)" version="8" />
+    </dependencies>
+    <rename id="q5q6.7392194941658528658" type="CONCEPT" from="AfterPThenQ" to="BeforePMustQ" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="q5q6" modelUID="r:5d65e582-fa41-4818-b31c-b2aee1644b4a(com.mbeddr.analyses.cbmc.structure)" version="9" />
+    </dependencies>
+    <rename id="q5q6.8985851583396455245" type="CONCEPT" from="VarInit" to="InitializeVariable" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="q5q6" modelUID="r:5d65e582-fa41-4818-b31c-b2aee1644b4a(com.mbeddr.analyses.cbmc.structure)" version="10" />
+    </dependencies>
+    <rename id="q5q6.8985851583396614966" type="CONCEPT" from="NonDeterministicEvent" to="GuardedNonDeterministicChoice" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="q5q6" modelUID="r:5d65e582-fa41-4818-b31c-b2aee1644b4a(com.mbeddr.analyses.cbmc.structure)" version="11" />
+    </dependencies>
+    <rename id="q5q6.8985851583396614966" type="CONCEPT" from="GuardedNonDeterministicChoice" to="GuardedNondeterministicChoice" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="q5q6" modelUID="r:5d65e582-fa41-4818-b31c-b2aee1644b4a(com.mbeddr.analyses.cbmc.structure)" version="12" />
+    </dependencies>
+    <rename id="q5q6.8985851583396614966" type="CONCEPT" from="GuardedNondeterministicChoice" to="GuardedNonDeterministicChoice" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="q5q6" modelUID="r:5d65e582-fa41-4818-b31c-b2aee1644b4a(com.mbeddr.analyses.cbmc.structure)" version="13" />
+    </dependencies>
+    <rename id="q5q6.8985851583396634741" type="CHILD" from="call" to="stmts" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="q5q6" modelUID="r:5d65e582-fa41-4818-b31c-b2aee1644b4a(com.mbeddr.analyses.cbmc.structure)" version="14" />
+    </dependencies>
+    <rename id="q5q6.5921690033619037700" type="CONCEPT" from="NonDetInt" to="NondetInt" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="q5q6" modelUID="r:5d65e582-fa41-4818-b31c-b2aee1644b4a(com.mbeddr.analyses.cbmc.structure)" version="15" />
+    </dependencies>
+    <rename id="q5q6.8985851583396455245" type="CONCEPT" from="InitializeVariable" to="NondetVarAssignment" />
+  </StructureModification>
 </history>
 
