@@ -14,6 +14,9 @@
   <import index="k146" modelUID="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" version="5" implicit="yes" />
   <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="23" implicit="yes" />
   <import index="yz9a" modelUID="r:734c02dd-cc16-4184-99eb-5fd9f43aa37e(com.mbeddr.core.unittest.structure)" version="0" implicit="yes" />
+  <import index="vxuc" modelUID="r:acfa7fc7-0a34-4d9a-8ea8-22459c66d50c(com.mbeddr.cc.var.c.structure)" version="-1" implicit="yes" />
+  <import index="qdv7" modelUID="r:1ff3d952-eae5-4d94-b89e-ea3060b11545(com.mbeddr.cc.var.annotations.structure)" version="7" implicit="yes" />
+  <import index="rbly" modelUID="r:a38003d5-3cc2-4cc7-bfed-041d3d2d1289(com.mbeddr.cc.var.buildconfig.structure)" version="1" implicit="yes" />
   <roots>
     <node type="51wr.BuildConfiguration" typeId="51wr.7717755763392524104" id="5959167564567439212" />
     <node type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="5959167564567439223">
@@ -40,15 +43,15 @@
     <node role="configurationItems" roleId="vs0r.4459718605982007338" type="k146.ReportingConfiguration" typeId="k146.4459718605982051949" id="5959167564567439217">
       <node role="strategy" roleId="k146.4459718605982051999" type="k146.PrintfReportingStrategy" typeId="k146.4459718605982051980" id="5959167564567439218" />
     </node>
-    <node role="configurationItems" roleId="vs0r.4459718605982007338" type=".com.mbeddr.cc.var.buildconfig.structure.VariabilityConfigItem" id="5959167564567439219">
-      <node role="config" type=".com.mbeddr.cc.var.annotations.structure.VariabilityTransformationConfig" id="5959167564567439220">
-        <node role="mappings" type=".com.mbeddr.cc.var.annotations.structure.ConfigurationMapping" id="5959167564567439221">
-          <link role="featureModel" targetNodeId="lfqn.5959167564566811025" resolveInfo="FM" />
-          <link role="configurationModel" targetNodeId="lfqn.5959167564566811178" resolveInfo="Float" />
+    <node role="configurationItems" roleId="vs0r.4459718605982007338" type="rbly.VariabilityConfigItem" typeId="rbly.4055870397237196333" id="5959167564567439219">
+      <node role="config" roleId="rbly.4055870397237196334" type="qdv7.VariabilityTransformationConfig" typeId="qdv7.6617704999132114004" id="5959167564567439220">
+        <node role="mappings" roleId="qdv7.6617704999132114005" type="qdv7.ConfigurationMapping" typeId="qdv7.6617704999132114000" id="5959167564567439221">
+          <link role="featureModel" roleId="qdv7.6617704999132114002" targetNodeId="lfqn.5959167564566811025" resolveInfo="FM" />
+          <link role="configurationModel" roleId="qdv7.6617704999132114003" targetNodeId="lfqn.5959167564566811178" resolveInfo="Float" />
         </node>
       </node>
     </node>
-    <node role="configurationItems" roleId="vs0r.4459718605982007338" type=".com.mbeddr.cc.var.c.structure.CVariabilityConfigItem" id="5959167564567439222" />
+    <node role="configurationItems" roleId="vs0r.4459718605982007338" type="vxuc.CVariabilityConfigItem" typeId="vxuc.5959167564567389862" id="5959167564567439222" />
   </root>
   <root id="5959167564567439223">
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="5959167564567439224">

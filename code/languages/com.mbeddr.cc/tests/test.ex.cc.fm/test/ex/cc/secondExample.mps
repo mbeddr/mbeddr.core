@@ -11,9 +11,11 @@
   <import index="clbe" modelUID="r:61d840b4-12c1-49ea-b142-b2a1550a9b15(com.mbeddr.core.udt.structure)" version="7" implicit="yes" />
   <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="5" implicit="yes" />
   <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="5" implicit="yes" />
+  <import index="qqyh" modelUID="r:a74300b8-76a8-461e-befa-fc86b0ad5dd9(com.mbeddr.cc.var.fm.structure)" version="6" implicit="yes" />
+  <import index="qdv7" modelUID="r:1ff3d952-eae5-4d94-b89e-ea3060b11545(com.mbeddr.cc.var.annotations.structure)" version="7" implicit="yes" />
   <roots>
-    <node type=".com.mbeddr.cc.var.fm.structure.VariabilitySupport" id="3017602783212238056">
-      <property name="name" value="VS" />
+    <node type="qqyh.VariabilitySupport" typeId="qqyh.6825476687691337712" id="3017602783212238056">
+      <property name="name" nameId="tpck.1169194664001" value="VS" />
     </node>
     <node type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="3017602783212238065">
       <property name="name" nameId="tpck.1169194664001" value="Sensor" />
@@ -24,16 +26,16 @@
     <node type="mj1l.TypeSizeConfiguration" typeId="mj1l.3335993110369795380" id="3017602783212238150" />
   </roots>
   <root id="3017602783212238056">
-    <node role="contents" type=".com.mbeddr.cc.var.fm.structure.FeatureModel" id="3017602783212238057">
-      <property name="name" value="Deployment" />
-      <node role="root" type=".com.mbeddr.cc.var.fm.structure.Feature" id="3017602783212238059">
-        <property name="name" value="root" />
-        <node role="constraint" type=".com.mbeddr.cc.var.fm.structure.OptionalConstraint" id="3017602783212238061" />
-        <node role="children" type=".com.mbeddr.cc.var.fm.structure.Feature" id="3017602783212238062">
-          <property name="name" value="logging" />
+    <node role="contents" roleId="qqyh.6825476687691337713" type="qqyh.FeatureModel" typeId="qqyh.6825476687691297434" id="3017602783212238057">
+      <property name="name" nameId="tpck.1169194664001" value="Deployment" />
+      <node role="root" roleId="qqyh.6825476687691297435" type="qqyh.Feature" typeId="qqyh.6825476687691297426" id="3017602783212238059">
+        <property name="name" nameId="tpck.1169194664001" value="root" />
+        <node role="constraint" roleId="qqyh.6825476687691297427" type="qqyh.OptionalConstraint" typeId="qqyh.6825476687691317627" id="3017602783212238061" />
+        <node role="children" roleId="qqyh.6825476687691297428" type="qqyh.Feature" typeId="qqyh.6825476687691297426" id="3017602783212238062">
+          <property name="name" nameId="tpck.1169194664001" value="logging" />
         </node>
-        <node role="children" type=".com.mbeddr.cc.var.fm.structure.Feature" id="3017602783212238064">
-          <property name="name" value="highRes" />
+        <node role="children" roleId="qqyh.6825476687691297428" type="qqyh.Feature" typeId="qqyh.6825476687691297426" id="3017602783212238064">
+          <property name="name" nameId="tpck.1169194664001" value="highRes" />
         </node>
       </node>
     </node>
@@ -42,19 +44,19 @@
     <node role="contents" roleId="x27k.6437088627575722833" type="clbe.TypeDef" typeId="clbe.6116558314501347857" id="3017602783212238103">
       <property name="name" nameId="tpck.1169194664001" value="dataType" />
       <node role="original" roleId="clbe.6116558314501347862" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="3017602783212238105">
-        <node role="smodelAttribute" roleId="tpck.5169995583184591170" type=".com.mbeddr.cc.var.annotations.structure.ConditionalReplacement" id="3017602783212238106">
-          <node role="condition" type=".com.mbeddr.cc.var.annotations.structure.FeatureCondition" id="3017602783212238107">
-            <node role="expr" type=".com.mbeddr.cc.var.annotations.structure.FeatureRef" id="3017602783212238109">
-              <link role="feature" targetNodeId="3017602783212238064" resolveInfo="highRes" />
+        <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="qdv7.ConditionalReplacement" typeId="qdv7.2613872510229259997" id="3017602783212238106">
+          <node role="condition" roleId="qdv7.2613872510229260001" type="qdv7.FeatureCondition" typeId="qdv7.2613872510229282925" id="3017602783212238107">
+            <node role="expr" roleId="qdv7.2613872510229282926" type="qdv7.FeatureRef" typeId="qdv7.661141253149262053" id="3017602783212238109">
+              <link role="feature" roleId="qdv7.661141253149262054" targetNodeId="3017602783212238064" resolveInfo="highRes" />
             </node>
           </node>
-          <node role="replacement" type="mj1l.DoubleType" typeId="mj1l.8864856114140038681" id="3017602783212238110" />
+          <node role="replacement" roleId="qdv7.2613872510229260000" type="mj1l.DoubleType" typeId="mj1l.8864856114140038681" id="3017602783212238110" />
         </node>
       </node>
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.GlobalConstantDeclaration" typeId="x27k.3788988821851860886" id="3017602783212238072">
       <property name="name" nameId="tpck.1169194664001" value="DATA_SIZE" />
-      <node role="value" roleId="x27k.3788988821851871048" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3017602783212238076">
+      <node role="value" roleId="x27k.3376775282622233992" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3017602783212238076">
         <property name="value" nameId="mj1l.8860443239512128104" value="100" />
       </node>
     </node>
@@ -65,7 +67,7 @@
           <link role="typeDef" roleId="clbe.6116558314501347864" targetNodeId="3017602783212238103" resolveInfo="dataType" />
         </node>
         <node role="sizeExpr" roleId="yq40.1452920870317474611" type="x27k.GlobalConstantRef" typeId="x27k.3788988821852026523" id="3017602783212238078">
-          <link role="constant" roleId="x27k.3788988821852026524" targetNodeId="3017602783212238072" resolveInfo="DATA_SIZE" />
+          <link role="constant" roleId="x27k.3376775282622611130" targetNodeId="3017602783212238072" resolveInfo="DATA_SIZE" />
         </node>
       </node>
     </node>
@@ -73,27 +75,27 @@
       <property name="name" nameId="tpck.1169194664001" value="idx" />
       <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="3017602783212238124" />
     </node>
-    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="3017602783212238079">
-      <property name="name" nameId="tpck.1169194664001" value="empty_1328440670341_3" />
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="1683704241753519615">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1366055287791_1" />
     </node>
-    <node role="contents" roleId="x27k.6437088627575722833" type="k146.MessageDefinitionTable" typeId="k146.2688792604367903085" id="6617704999132174956">
+    <node role="contents" roleId="x27k.6437088627575722833" type="k146.MessageDefinitionTable" typeId="k146.2688792604367903085" id="1683704241753519617">
       <property name="name" nameId="tpck.1169194664001" value="messages" />
-      <node role="messages" roleId="k146.2688792604367903095" type="k146.MessageDefinition" typeId="k146.2688792604367903087" id="6617704999132174957">
+      <node role="messages" roleId="k146.2688792604367903095" type="k146.MessageDefinition" typeId="k146.2688792604367903087" id="1683704241753519618">
         <property name="active" nameId="k146.2688792604367947988" value="true" />
         <property name="kind" nameId="k146.2688792604367903094" value="1" />
         <property name="name" nameId="tpck.1169194664001" value="startingMeasurement" />
         <property name="text" nameId="k146.2688792604367903089" value="entering main function" />
       </node>
-      <node role="messages" roleId="k146.2688792604367903095" type="k146.MessageDefinition" typeId="k146.2688792604367903087" id="6617704999132174958">
+      <node role="messages" roleId="k146.2688792604367903095" type="k146.MessageDefinition" typeId="k146.2688792604367903087" id="1683704241753519619">
         <property name="active" nameId="k146.2688792604367947988" value="true" />
         <property name="kind" nameId="k146.2688792604367903094" value="1" />
         <property name="name" nameId="tpck.1169194664001" value="finishingMeasurement" />
         <property name="text" nameId="k146.2688792604367903089" value="exitingMainFunction" />
       </node>
-      <node role="smodelAttribute" roleId="tpck.5169995583184591170" type=".com.mbeddr.cc.var.annotations.structure.PresenceCondidtion" id="6617704999132174959">
-        <node role="condition" type=".com.mbeddr.cc.var.annotations.structure.FeatureCondition" id="6617704999132174960">
-          <node role="expr" type=".com.mbeddr.cc.var.annotations.structure.FeatureRef" id="3017602783212238114">
-            <link role="feature" targetNodeId="3017602783212238062" resolveInfo="logging" />
+      <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="qdv7.PresenceCondition" typeId="qdv7.661141253149231475" id="1683704241753519620">
+        <node role="condition" roleId="qdv7.661141253149231543" type="qdv7.FeatureCondition" typeId="qdv7.2613872510229282925" id="1683704241753519621">
+          <node role="expr" roleId="qdv7.2613872510229282926" type="qdv7.FeatureRef" typeId="qdv7.661141253149262053" id="1683704241753519622">
+            <link role="feature" roleId="qdv7.661141253149262054" targetNodeId="3017602783212238062" resolveInfo="logging" />
           </node>
         </node>
       </node>
@@ -104,16 +106,16 @@
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="3017602783212238093">
       <property name="name" nameId="tpck.1169194664001" value="measure" />
       <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="3017602783212238094">
-        <node role="statements" roleId="c4fa.4185783222026475862" type="k146.ReportStatement" typeId="k146.2688792604367964821" id="3017602783212238126">
-          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="3017602783212238126" />
-          <node role="msgref" roleId="k146.2688792604367973273" type="k146.MessageRef" typeId="k146.2688792604367964823" id="3017602783212238127">
-            <link role="table" roleId="k146.2688792604367964824" targetNodeId="6617704999132174956" resolveInfo="messages" />
-            <link role="msg" roleId="k146.2688792604367964825" targetNodeId="6617704999132174957" resolveInfo="startingMeasurement" />
+        <node role="statements" roleId="c4fa.4185783222026475862" type="k146.ReportStatement" typeId="k146.2688792604367964821" id="1683704241753519624">
+          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="1683704241753519624" />
+          <node role="msgref" roleId="k146.2688792604367973273" type="k146.MessageRef" typeId="k146.2688792604367964823" id="1683704241753519625">
+            <link role="table" roleId="k146.2688792604367964824" targetNodeId="1683704241753519617" resolveInfo="messages" />
+            <link role="msg" roleId="k146.2688792604367964825" targetNodeId="1683704241753519618" resolveInfo="startingMeasurement" />
           </node>
-          <node role="smodelAttribute" roleId="tpck.5169995583184591170" type=".com.mbeddr.cc.var.annotations.structure.PresenceCondidtion" id="3017602783212238128">
-            <node role="condition" type=".com.mbeddr.cc.var.annotations.structure.FeatureCondition" id="3017602783212238129">
-              <node role="expr" type=".com.mbeddr.cc.var.annotations.structure.FeatureRef" id="3017602783212238130">
-                <link role="feature" targetNodeId="3017602783212238062" resolveInfo="logging" />
+          <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="qdv7.PresenceCondition" typeId="qdv7.661141253149231475" id="1683704241753519626">
+            <node role="condition" roleId="qdv7.661141253149231543" type="qdv7.FeatureCondition" typeId="qdv7.2613872510229282925" id="1683704241753519627">
+              <node role="expr" roleId="qdv7.2613872510229282926" type="qdv7.FeatureRef" typeId="qdv7.661141253149262053" id="1683704241753519628">
+                <link role="feature" roleId="qdv7.661141253149262054" targetNodeId="3017602783212238062" resolveInfo="logging" />
               </node>
             </node>
           </node>
@@ -127,58 +129,60 @@
             <property name="value" nameId="mj1l.8860443239512128104" value="0" />
           </node>
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="22102029902643830">
-          <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.AssignmentExpr" typeId="mj1l.22102029902365709" id="22102029902643831">
-            <node role="left" roleId="mj1l.8860443239512128064" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="3017602783212238219">
-              <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="3017602783212238213" resolveInfo="res" />
-            </node>
-            <node role="right" roleId="mj1l.8860443239512128065" type="x27k.FunctionCall" typeId="x27k.5950410542643524492" id="3017602783212238222">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="1683704241753519636">
+          <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.AssignmentExpr" typeId="mj1l.22102029902365709" id="1683704241753519640">
+            <node role="right" roleId="mj1l.8860443239512128065" type="x27k.FunctionCall" typeId="x27k.5950410542643524492" id="1683704241753519643">
               <link role="function" roleId="x27k.5950410542643524493" targetNodeId="3017602783212238133" resolveInfo="readPortInt" />
-              <node role="actuals" roleId="x27k.5950410542643524495" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3017602783212238223">
+              <node role="actuals" roleId="x27k.5950410542643524495" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="1683704241753519644">
+                <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
                 <property name="value" nameId="mj1l.8860443239512128104" value="1" />
               </node>
             </node>
+            <node role="left" roleId="mj1l.8860443239512128064" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="1683704241753519637">
+              <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="3017602783212238213" resolveInfo="res" />
+            </node>
           </node>
-          <node role="smodelAttribute" roleId="tpck.5169995583184591170" type=".com.mbeddr.cc.var.annotations.structure.PresenceCondidtion" id="3017602783212238232">
-            <node role="condition" type=".com.mbeddr.cc.var.annotations.structure.FeatureCondition" id="3017602783212238233">
-              <node role="expr" type="mj1l.NotExpression" typeId="mj1l.3830958861296781575" id="3017602783212238234">
-                <node role="expression" roleId="mj1l.7254843406768839760" type=".com.mbeddr.cc.var.annotations.structure.FeatureRef" id="3017602783212238236">
-                  <link role="feature" targetNodeId="3017602783212238064" resolveInfo="highRes" />
+          <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="qdv7.PresenceCondition" typeId="qdv7.661141253149231475" id="1683704241753519645">
+            <node role="condition" roleId="qdv7.661141253149231543" type="qdv7.FeatureCondition" typeId="qdv7.2613872510229282925" id="1683704241753519646">
+              <node role="expr" roleId="qdv7.2613872510229282926" type="mj1l.NotExpression" typeId="mj1l.3830958861296781575" id="1683704241753519649">
+                <node role="expression" roleId="mj1l.7254843406768839760" type="qdv7.FeatureRef" typeId="qdv7.661141253149262053" id="1683704241753519647">
+                  <link role="feature" roleId="qdv7.661141253149262054" targetNodeId="3017602783212238064" resolveInfo="highRes" />
                 </node>
               </node>
             </node>
           </node>
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="22102029902643192">
-          <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.AssignmentExpr" typeId="mj1l.22102029902365709" id="22102029902643193">
-            <node role="left" roleId="mj1l.8860443239512128064" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="3017602783212238226">
-              <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="3017602783212238213" resolveInfo="res" />
-            </node>
-            <node role="right" roleId="mj1l.8860443239512128065" type="x27k.FunctionCall" typeId="x27k.5950410542643524492" id="3017602783212238229">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="1683704241753519652">
+          <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.AssignmentExpr" typeId="mj1l.22102029902365709" id="1683704241753519656">
+            <node role="right" roleId="mj1l.8860443239512128065" type="x27k.FunctionCall" typeId="x27k.5950410542643524492" id="1683704241753519659">
               <link role="function" roleId="x27k.5950410542643524493" targetNodeId="3017602783212238141" resolveInfo="readPortDouble" />
-              <node role="actuals" roleId="x27k.5950410542643524495" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3017602783212238231">
+              <node role="actuals" roleId="x27k.5950410542643524495" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="1683704241753519660">
+                <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
                 <property name="value" nameId="mj1l.8860443239512128104" value="1" />
               </node>
             </node>
+            <node role="left" roleId="mj1l.8860443239512128064" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="1683704241753519653">
+              <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="3017602783212238213" resolveInfo="res" />
+            </node>
           </node>
-          <node role="smodelAttribute" roleId="tpck.5169995583184591170" type=".com.mbeddr.cc.var.annotations.structure.PresenceCondidtion" id="3017602783212238237">
-            <node role="condition" type=".com.mbeddr.cc.var.annotations.structure.FeatureCondition" id="3017602783212238238">
-              <node role="expr" type=".com.mbeddr.cc.var.annotations.structure.FeatureRef" id="3017602783212238239">
-                <link role="feature" targetNodeId="3017602783212238064" resolveInfo="highRes" />
+          <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="qdv7.PresenceCondition" typeId="qdv7.661141253149231475" id="1683704241753519661">
+            <node role="condition" roleId="qdv7.661141253149231543" type="qdv7.FeatureCondition" typeId="qdv7.2613872510229282925" id="1683704241753519662">
+              <node role="expr" roleId="qdv7.2613872510229282926" type="qdv7.FeatureRef" typeId="qdv7.661141253149262053" id="1683704241753519663">
+                <link role="feature" roleId="qdv7.661141253149262054" targetNodeId="3017602783212238064" resolveInfo="highRes" />
               </node>
             </node>
           </node>
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type="k146.ReportStatement" typeId="k146.2688792604367964821" id="3017602783212238244">
-          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="3017602783212238244" />
-          <node role="msgref" roleId="k146.2688792604367973273" type="k146.MessageRef" typeId="k146.2688792604367964823" id="3017602783212238245">
-            <link role="table" roleId="k146.2688792604367964824" targetNodeId="6617704999132174956" resolveInfo="messages" />
-            <link role="msg" roleId="k146.2688792604367964825" targetNodeId="6617704999132174958" resolveInfo="finishingMeasurement" />
+        <node role="statements" roleId="c4fa.4185783222026475862" type="k146.ReportStatement" typeId="k146.2688792604367964821" id="1683704241753519630">
+          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="1683704241753519630" />
+          <node role="msgref" roleId="k146.2688792604367973273" type="k146.MessageRef" typeId="k146.2688792604367964823" id="1683704241753519631">
+            <link role="table" roleId="k146.2688792604367964824" targetNodeId="1683704241753519617" resolveInfo="messages" />
+            <link role="msg" roleId="k146.2688792604367964825" targetNodeId="1683704241753519619" resolveInfo="finishingMeasurement" />
           </node>
-          <node role="smodelAttribute" roleId="tpck.5169995583184591170" type=".com.mbeddr.cc.var.annotations.structure.PresenceCondidtion" id="3017602783212238259">
-            <node role="condition" type=".com.mbeddr.cc.var.annotations.structure.FeatureCondition" id="3017602783212238260">
-              <node role="expr" type=".com.mbeddr.cc.var.annotations.structure.FeatureRef" id="3017602783212238261">
-                <link role="feature" targetNodeId="3017602783212238062" resolveInfo="logging" />
+          <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="qdv7.PresenceCondition" typeId="qdv7.661141253149231475" id="1683704241753519632">
+            <node role="condition" roleId="qdv7.661141253149231543" type="qdv7.FeatureCondition" typeId="qdv7.2613872510229282925" id="1683704241753519633">
+              <node role="expr" roleId="qdv7.2613872510229282926" type="qdv7.FeatureRef" typeId="qdv7.661141253149262053" id="1683704241753519634">
+                <link role="feature" roleId="qdv7.661141253149262054" targetNodeId="3017602783212238062" resolveInfo="logging" />
               </node>
             </node>
           </node>
@@ -218,8 +222,8 @@
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="3017602783212238092">
       <property name="name" nameId="tpck.1169194664001" value="empty_1328440756889_5" />
     </node>
-    <node role="smodelAttribute" roleId="tpck.5169995583184591170" type=".com.mbeddr.cc.var.annotations.structure.FeatureModelConfiguration" id="3017602783212238081">
-      <link role="featureModel" targetNodeId="3017602783212238057" resolveInfo="Deployment" />
+    <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="qdv7.FeatureModelConfiguration" typeId="qdv7.661141253149262080" id="3017602783212238081">
+      <link role="featureModel" roleId="qdv7.661141253149262081" targetNodeId="3017602783212238057" resolveInfo="Deployment" />
     </node>
     <node role="imports" roleId="x27k.1317894735999304826" type="x27k.ModuleImport" typeId="x27k.1317894735999299713" id="3017602783212238212">
       <link role="module" roleId="x27k.1317894735999299714" targetNodeId="3017602783212238132" resolveInfo="Driver" />
