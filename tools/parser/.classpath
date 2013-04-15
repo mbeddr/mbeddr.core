@@ -3,141 +3,93 @@
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6"/>
 	<classpathentry kind="con" path="org.eclipse.pde.core.requiredPlugins"/>
 	<classpathentry kind="src" path="src"/>
-	<classpathentry kind="lib" path="/Users/matzat/cdt-master-8.0.0/plugins/org.eclipse.tm.tcf.rse_0.4.0.201106081058.jar"/>
-	<classpathentry kind="lib" path="/Users/matzat/cdt-master-8.0.0/plugins/org.eclipse.tm.tcf.debug.ui_0.4.0.201106081058.jar"/>
-	<classpathentry kind="lib" path="/Users/matzat/cdt-master-8.0.0/plugins/org.eclipse.tm.tcf.debug_0.4.0.201106081058.jar"/>
-	<classpathentry kind="lib" path="/Users/matzat/cdt-master-8.0.0/plugins/org.eclipse.tm.tcf.core_0.4.0.201106081058.jar"/>
-	<classpathentry kind="lib" path="/Users/matzat/cdt-master-8.0.0/plugins/org.eclipse.tm.tcf.cdt.ui_0.4.0.201106081058.jar"/>
-	<classpathentry kind="lib" path="/Users/matzat/cdt-master-8.0.0/plugins/org.eclipse.tm.tcf_0.4.0.201106081058.jar"/>
-	<classpathentry kind="lib" path="/Users/matzat/cdt-master-8.0.0/plugins/org.eclipse.test_3.3.100.jar"/>
-	<classpathentry kind="lib" path="/Users/matzat/cdt-master-8.0.0/plugins/org.eclipse.cdt.util_5.0.100.201106081058.jar"/>
-	<classpathentry kind="lib" path="/Users/matzat/cdt-master-8.0.0/plugins/org.eclipse.cdt.ui.tests_5.3.0.201106081058.jar"/>
-	<classpathentry kind="lib" path="/Users/matzat/cdt-master-8.0.0/plugins/org.eclipse.cdt.ui.source_5.3.0.201106081058.jar"/>
-	<classpathentry kind="lib" path="/Users/matzat/cdt-master-8.0.0/plugins/org.eclipse.cdt.ui_5.3.0.201106081058.jar"/>
-	<classpathentry kind="lib" path="/Users/matzat/cdt-master-8.0.0/plugins/org.eclipse.cdt.testing_8.0.0.201106081058.jar"/>
-	<classpathentry kind="lib" path="/Users/matzat/cdt-master-8.0.0/plugins/org.eclipse.cdt.source_8.0.0.201106081058.jar"/>
-	<classpathentry kind="lib" path="/Users/matzat/cdt-master-8.0.0/plugins/org.eclipse.cdt.sdk_8.0.0.201106081058.jar"/>
-	<classpathentry kind="lib" path="/Users/matzat/cdt-master-8.0.0/plugins/org.eclipse.cdt.scripting_1.0.0.201106081058.jar"/>
-	<classpathentry kind="lib" path="/Users/matzat/cdt-master-8.0.0/plugins/org.eclipse.cdt.p2_1.0.0.201106081058.jar"/>
-	<classpathentry kind="lib" path="/Users/matzat/cdt-master-8.0.0/plugins/org.eclipse.cdt.msw.build_1.0.0.201106081058.jar"/>
-	<classpathentry kind="lib" path="/Users/matzat/cdt-master-8.0.0/plugins/org.eclipse.cdt.managedbuilder.xlupc.ui.source_1.1.0.201106081058.jar"/>
-	<classpathentry kind="lib" path="/Users/matzat/cdt-master-8.0.0/plugins/org.eclipse.cdt.managedbuilder.xlupc.ui_1.1.0.201106081058.jar"/>
-	<classpathentry kind="lib" path="/Users/matzat/cdt-master-8.0.0/plugins/org.eclipse.cdt.managedbuilder.xlc.ui.source_6.1.0.201106081058.jar"/>
-	<classpathentry kind="lib" path="/Users/matzat/cdt-master-8.0.0/plugins/org.eclipse.cdt.managedbuilder.xlc.ui_6.1.0.201106081058.jar"/>
-	<classpathentry kind="lib" path="/Users/matzat/cdt-master-8.0.0/plugins/org.eclipse.cdt.managedbuilder.xlc.core.source_5.0.0.201106081058.jar"/>
-	<classpathentry kind="lib" path="/Users/matzat/cdt-master-8.0.0/plugins/org.eclipse.cdt.managedbuilder.xlc.core_5.0.0.201106081058.jar"/>
-	<classpathentry kind="lib" path="/Users/matzat/cdt-master-8.0.0/plugins/org.eclipse.cdt.managedbuilder.ui.tests_8.0.0.201106081058.jar"/>
-	<classpathentry kind="lib" path="/Users/matzat/cdt-master-8.0.0/plugins/org.eclipse.cdt.managedbuilder.ui.source_8.0.0.201106081058.jar"/>
-	<classpathentry kind="lib" path="/Users/matzat/cdt-master-8.0.0/plugins/org.eclipse.cdt.managedbuilder.ui_8.0.0.201106081058.jar"/>
-	<classpathentry kind="lib" path="/Users/matzat/cdt-master-8.0.0/plugins/org.eclipse.cdt.managedbuilder.gnu.ui.source_8.0.0.201106081058.jar"/>
-	<classpathentry kind="lib" path="/Users/matzat/cdt-master-8.0.0/plugins/org.eclipse.cdt.managedbuilder.gnu.ui_8.0.0.201106081058.jar"/>
-	<classpathentry kind="lib" path="/Users/matzat/cdt-master-8.0.0/plugins/org.eclipse.cdt.managedbuilder.core.tests_8.0.0.201106081058.jar"/>
-	<classpathentry kind="lib" path="/Users/matzat/cdt-master-8.0.0/plugins/org.eclipse.cdt.managedbuilder.core.source_8.0.0.201106081058.jar"/>
-	<classpathentry kind="lib" path="/Users/matzat/cdt-master-8.0.0/plugins/org.eclipse.cdt.managedbuilder.core_8.0.0.201106081058.jar"/>
-	<classpathentry kind="lib" path="/Users/matzat/cdt-master-8.0.0/plugins/org.eclipse.cdt.managedbuilder.bupc.ui_1.0.3.201106081058.jar"/>
-	<classpathentry kind="lib" path="/Users/matzat/cdt-master-8.0.0/plugins/org.eclipse.cdt.make.xlc.core.source_5.1.0.201106081058.jar"/>
-	<classpathentry kind="lib" path="/Users/matzat/cdt-master-8.0.0/plugins/org.eclipse.cdt.make.xlc.core_5.1.0.201106081058.jar"/>
-	<classpathentry kind="lib" path="/Users/matzat/cdt-master-8.0.0/plugins/org.eclipse.cdt.make.ui.source_7.1.0.201106081058.jar"/>
-	<classpathentry kind="lib" path="/Users/matzat/cdt-master-8.0.0/plugins/org.eclipse.cdt.make.ui_7.1.0.201106081058.jar"/>
-	<classpathentry kind="lib" path="/Users/matzat/cdt-master-8.0.0/plugins/org.eclipse.cdt.make.core.source_7.1.0.201106081058.jar"/>
-	<classpathentry kind="lib" path="/Users/matzat/cdt-master-8.0.0/plugins/org.eclipse.cdt.make.core_7.1.0.201106081058.jar"/>
-	<classpathentry kind="lib" path="/Users/matzat/cdt-master-8.0.0/plugins/org.eclipse.cdt.launch.source_7.0.0.201106081058.jar"/>
-	<classpathentry kind="lib" path="/Users/matzat/cdt-master-8.0.0/plugins/org.eclipse.cdt.launch.remote.source_2.3.0.201106081058.jar"/>
-	<classpathentry kind="lib" path="/Users/matzat/cdt-master-8.0.0/plugins/org.eclipse.cdt.launch.remote_2.3.0.201106081058.jar"/>
-	<classpathentry kind="lib" path="/Users/matzat/cdt-master-8.0.0/plugins/org.eclipse.cdt.launch_7.0.0.201106081058.jar"/>
-	<classpathentry kind="lib" path="/Users/matzat/cdt-master-8.0.0/plugins/org.eclipse.cdt.gdb.ui.source_7.0.0.201106081058.jar"/>
-	<classpathentry kind="lib" path="/Users/matzat/cdt-master-8.0.0/plugins/org.eclipse.cdt.gdb.ui_7.0.0.201106081058.jar"/>
-	<classpathentry kind="lib" path="/Users/matzat/cdt-master-8.0.0/plugins/org.eclipse.cdt.gdb.source_7.0.0.201106081058.jar"/>
-	<classpathentry kind="lib" path="/Users/matzat/cdt-master-8.0.0/plugins/org.eclipse.cdt.gdb_7.0.0.201106081058.jar"/>
-	<classpathentry kind="lib" path="/Users/matzat/cdt-master-8.0.0/plugins/org.eclipse.cdt.examples.dsf.pda.ui_2.1.0.201106081058.jar"/>
-	<classpathentry kind="lib" path="/Users/matzat/cdt-master-8.0.0/plugins/org.eclipse.cdt.examples.dsf.pda_2.1.0.201106081058.jar"/>
-	<classpathentry kind="lib" path="/Users/matzat/cdt-master-8.0.0/plugins/org.eclipse.cdt.examples.dsf_2.1.0.201106081058.jar"/>
-	<classpathentry kind="lib" path="/Users/matzat/cdt-master-8.0.0/plugins/org.eclipse.cdt.errorparsers.xlc.source_5.0.100.201106081058.jar"/>
-	<classpathentry kind="lib" path="/Users/matzat/cdt-master-8.0.0/plugins/org.eclipse.cdt.errorparsers.xlc_5.0.100.201106081058.jar"/>
-	<classpathentry kind="lib" path="/Users/matzat/cdt-master-8.0.0/plugins/org.eclipse.cdt.dsf.ui.source_2.2.0.201106081058.jar"/>
-	<classpathentry kind="lib" path="/Users/matzat/cdt-master-8.0.0/plugins/org.eclipse.cdt.dsf.ui_2.2.0.201106081058.jar"/>
-	<classpathentry kind="lib" path="/Users/matzat/cdt-master-8.0.0/plugins/org.eclipse.cdt.dsf.source_2.2.0.201106081058.jar"/>
-	<classpathentry kind="lib" path="/Users/matzat/cdt-master-8.0.0/plugins/org.eclipse.cdt.dsf.gdb.ui.source_2.2.0.201106081058.jar"/>
-	<classpathentry kind="lib" path="/Users/matzat/cdt-master-8.0.0/plugins/org.eclipse.cdt.dsf.gdb.ui_2.2.0.201106081058.jar"/>
-	<classpathentry kind="lib" path="/Users/matzat/cdt-master-8.0.0/plugins/org.eclipse.cdt.dsf.gdb.source_4.0.0.201106081058.jar"/>
-	<classpathentry kind="lib" path="/Users/matzat/cdt-master-8.0.0/plugins/org.eclipse.cdt.dsf.gdb_4.0.0.201106081058.jar"/>
-	<classpathentry kind="lib" path="/Users/matzat/cdt-master-8.0.0/plugins/org.eclipse.cdt.dsf_2.2.0.201106081058.jar"/>
-	<classpathentry kind="lib" path="/Users/matzat/cdt-master-8.0.0/plugins/org.eclipse.cdt.doc.user_5.1.0.201106081058.jar"/>
-	<classpathentry kind="lib" path="/Users/matzat/cdt-master-8.0.0/plugins/org.eclipse.cdt.doc.isv_5.1.0.201106081058.jar"/>
-	<classpathentry kind="lib" path="/Users/matzat/cdt-master-8.0.0/plugins/org.eclipse.cdt.debug.ui.tests_6.0.0.201106081058.jar"/>
-	<classpathentry kind="lib" path="/Users/matzat/cdt-master-8.0.0/plugins/org.eclipse.cdt.debug.ui.source_7.1.0.201106081058.jar"/>
-	<classpathentry kind="lib" path="/Users/matzat/cdt-master-8.0.0/plugins/org.eclipse.cdt.debug.ui.memory.transport_2.1.0.201106081058.jar"/>
-	<classpathentry kind="lib" path="/Users/matzat/cdt-master-8.0.0/plugins/org.eclipse.cdt.debug.ui.memory.traditional_1.2.0.201106081058.jar"/>
-	<classpathentry kind="lib" path="/Users/matzat/cdt-master-8.0.0/plugins/org.eclipse.cdt.debug.ui.memory.search_1.2.0.201106081058.jar"/>
-	<classpathentry kind="lib" path="/Users/matzat/cdt-master-8.0.0/plugins/org.eclipse.cdt.debug.ui.memory.memorybrowser_1.2.100.201106081058.jar"/>
-	<classpathentry kind="lib" path="/Users/matzat/cdt-master-8.0.0/plugins/org.eclipse.cdt.debug.ui_7.1.0.201106081058.jar"/>
-	<classpathentry kind="lib" path="/Users/matzat/cdt-master-8.0.0/plugins/org.eclipse.cdt.debug.mi.ui.source_6.1.0.201106081058.jar"/>
-	<classpathentry kind="lib" path="/Users/matzat/cdt-master-8.0.0/plugins/org.eclipse.cdt.debug.mi.ui_6.1.0.201106081058.jar"/>
-	<classpathentry kind="lib" path="/Users/matzat/cdt-master-8.0.0/plugins/org.eclipse.cdt.debug.mi.core.source_7.1.0.201106081058.jar"/>
-	<classpathentry kind="lib" path="/Users/matzat/cdt-master-8.0.0/plugins/org.eclipse.cdt.debug.mi.core_7.1.0.201106081058.jar"/>
-	<classpathentry kind="lib" path="/Users/matzat/cdt-master-8.0.0/plugins/org.eclipse.cdt.debug.gdbjtag.ui_7.0.0.201106081058.jar"/>
-	<classpathentry kind="lib" path="/Users/matzat/cdt-master-8.0.0/plugins/org.eclipse.cdt.debug.gdbjtag.core_8.0.0.201106081058.jar"/>
-	<classpathentry kind="lib" path="/Users/matzat/cdt-master-8.0.0/plugins/org.eclipse.cdt.debug.gdbjtag_7.0.0.201106081058.jar"/>
-	<classpathentry kind="lib" path="/Users/matzat/cdt-master-8.0.0/plugins/org.eclipse.cdt.debug.edc.x86_1.0.0.201106081058.jar"/>
-	<classpathentry kind="lib" path="/Users/matzat/cdt-master-8.0.0/plugins/org.eclipse.cdt.debug.edc.windows.ui_1.0.0.201106081058.jar"/>
-	<classpathentry kind="lib" path="/Users/matzat/cdt-master-8.0.0/plugins/org.eclipse.cdt.debug.edc.windows_2.0.0.201106081058.jar"/>
-	<classpathentry kind="lib" path="/Users/matzat/cdt-master-8.0.0/plugins/org.eclipse.cdt.debug.edc.ui_2.0.0.201106081058.jar"/>
-	<classpathentry kind="lib" path="/Users/matzat/cdt-master-8.0.0/plugins/org.eclipse.cdt.debug.edc.tcf.extension_2.0.0.201106081058.jar"/>
-	<classpathentry kind="lib" path="/Users/matzat/cdt-master-8.0.0/plugins/org.eclipse.cdt.debug.edc.linux.x86_1.0.0.201106081058.jar"/>
-	<classpathentry kind="lib" path="/Users/matzat/cdt-master-8.0.0/plugins/org.eclipse.cdt.debug.edc.doc.user_1.0.0.201106081058.jar"/>
-	<classpathentry kind="lib" path="/Users/matzat/cdt-master-8.0.0/plugins/org.eclipse.cdt.debug.edc_2.0.0.201106081058.jar"/>
-	<classpathentry kind="lib" path="/Users/matzat/cdt-master-8.0.0/plugins/org.eclipse.cdt.debug.core.source_7.1.0.201106081058.jar"/>
-	<classpathentry kind="lib" path="/Users/matzat/cdt-master-8.0.0/plugins/org.eclipse.cdt.debug.core_7.1.0.201106081058.jar"/>
-	<classpathentry kind="lib" path="/Users/matzat/cdt-master-8.0.0/plugins/org.eclipse.cdt.core.win32.source_5.2.0.201106081058.jar"/>
-	<classpathentry kind="lib" path="/Users/matzat/cdt-master-8.0.0/plugins/org.eclipse.cdt.core.win32_5.2.0.201106081058.jar"/>
-	<classpathentry kind="lib" path="/Users/matzat/cdt-master-8.0.0/plugins/org.eclipse.cdt.core.tests_5.3.0.201106081058.jar"/>
-	<classpathentry kind="lib" path="/Users/matzat/cdt-master-8.0.0/plugins/org.eclipse.cdt.core.source_5.3.0.201106081058.jar"/>
-	<classpathentry kind="lib" path="/Users/matzat/cdt-master-8.0.0/plugins/org.eclipse.cdt.core.solaris.source_5.2.0.201106081058.jar"/>
-	<classpathentry kind="lib" path="/Users/matzat/cdt-master-8.0.0/plugins/org.eclipse.cdt.core.solaris_5.2.0.201106081058.jar"/>
-	<classpathentry kind="lib" path="/Users/matzat/cdt-master-8.0.0/plugins/org.eclipse.cdt.core.qnx.source_5.1.0.201106081058.jar"/>
-	<classpathentry kind="lib" path="/Users/matzat/cdt-master-8.0.0/plugins/org.eclipse.cdt.core.qnx_5.1.0.201106081058.jar"/>
-	<classpathentry kind="lib" path="/Users/matzat/cdt-master-8.0.0/plugins/org.eclipse.cdt.core.parser.upc.tests_5.1.0.201106081058.jar"/>
-	<classpathentry kind="lib" path="/Users/matzat/cdt-master-8.0.0/plugins/org.eclipse.cdt.core.parser.upc.source_5.1.0.201106081058.jar"/>
-	<classpathentry kind="lib" path="/Users/matzat/cdt-master-8.0.0/plugins/org.eclipse.cdt.core.parser.upc_5.1.0.201106081058.jar"/>
-	<classpathentry kind="lib" path="/Users/matzat/cdt-master-8.0.0/plugins/org.eclipse.cdt.core.macosx.source_5.2.0.201106081058.jar"/>
-	<classpathentry kind="lib" path="/Users/matzat/cdt-master-8.0.0/plugins/org.eclipse.cdt.core.macosx_5.2.0.201106081058.jar"/>
-	<classpathentry kind="lib" path="/Users/matzat/cdt-master-8.0.0/plugins/org.eclipse.cdt.core.lrparser.xlc.tests_1.0.0.jar"/>
-	<classpathentry kind="lib" path="/Users/matzat/cdt-master-8.0.0/plugins/org.eclipse.cdt.core.lrparser.xlc.source_5.1.0.201106081058.jar"/>
-	<classpathentry kind="lib" path="/Users/matzat/cdt-master-8.0.0/plugins/org.eclipse.cdt.core.lrparser.xlc_5.1.0.201106081058.jar"/>
-	<classpathentry kind="lib" path="/Users/matzat/cdt-master-8.0.0/plugins/org.eclipse.cdt.core.lrparser.tests_5.1.0.201106081058.jar"/>
-	<classpathentry kind="lib" path="/Users/matzat/cdt-master-8.0.0/plugins/org.eclipse.cdt.core.lrparser.source_5.2.0.201106081058.jar"/>
-	<classpathentry kind="lib" path="/Users/matzat/cdt-master-8.0.0/plugins/org.eclipse.cdt.core.lrparser_5.2.0.201106081058.jar"/>
-	<classpathentry kind="lib" path="/Users/matzat/cdt-master-8.0.0/plugins/org.eclipse.cdt.core.linux.x86.source_5.2.0.201106081058.jar"/>
-	<classpathentry kind="lib" path="/Users/matzat/cdt-master-8.0.0/plugins/org.eclipse.cdt.core.linux.x86_64.source_5.2.0.201106081058.jar"/>
-	<classpathentry kind="lib" path="/Users/matzat/cdt-master-8.0.0/plugins/org.eclipse.cdt.core.linux.x86_64_5.2.0.201106081058.jar"/>
-	<classpathentry kind="lib" path="/Users/matzat/cdt-master-8.0.0/plugins/org.eclipse.cdt.core.linux.x86_5.2.0.201106081058.jar"/>
-	<classpathentry kind="lib" path="/Users/matzat/cdt-master-8.0.0/plugins/org.eclipse.cdt.core.linux.source_5.2.0.201106081058.jar"/>
-	<classpathentry kind="lib" path="/Users/matzat/cdt-master-8.0.0/plugins/org.eclipse.cdt.core.linux.ppc64.source_5.1.0.201106081058.jar"/>
-	<classpathentry kind="lib" path="/Users/matzat/cdt-master-8.0.0/plugins/org.eclipse.cdt.core.linux.ppc64_5.1.0.201106081058.jar"/>
-	<classpathentry kind="lib" path="/Users/matzat/cdt-master-8.0.0/plugins/org.eclipse.cdt.core.linux.ppc.source_5.1.0.201106081058.jar"/>
-	<classpathentry kind="lib" path="/Users/matzat/cdt-master-8.0.0/plugins/org.eclipse.cdt.core.linux.ppc_5.1.0.201106081058.jar"/>
-	<classpathentry kind="lib" path="/Users/matzat/cdt-master-8.0.0/plugins/org.eclipse.cdt.core.linux.ia64.source_5.1.0.201106081058.jar"/>
-	<classpathentry kind="lib" path="/Users/matzat/cdt-master-8.0.0/plugins/org.eclipse.cdt.core.linux.ia64_5.1.0.201106081058.jar"/>
-	<classpathentry kind="lib" path="/Users/matzat/cdt-master-8.0.0/plugins/org.eclipse.cdt.core.linux_5.2.0.201106081058.jar"/>
-	<classpathentry kind="lib" path="/Users/matzat/cdt-master-8.0.0/plugins/org.eclipse.cdt.core.aix.source_5.1.0.201106081058.jar"/>
-	<classpathentry kind="lib" path="/Users/matzat/cdt-master-8.0.0/plugins/org.eclipse.cdt.core.aix_5.1.0.201106081058.jar"/>
-	<classpathentry kind="lib" path="/Users/matzat/cdt-master-8.0.0/plugins/org.eclipse.cdt.core_5.3.0.201106081058.jar" sourcepath="/Users/matzat/cdt-master-8.0.0/plugins/org.eclipse.cdt.core.source_5.3.0.201106081058.jar"/>
-	<classpathentry kind="lib" path="/Users/matzat/cdt-master-8.0.0/plugins/org.eclipse.cdt.codan.ui.source_2.0.0.201106081058.jar"/>
-	<classpathentry kind="lib" path="/Users/matzat/cdt-master-8.0.0/plugins/org.eclipse.cdt.codan.ui.cxx.source_2.0.0.201106081058.jar"/>
-	<classpathentry kind="lib" path="/Users/matzat/cdt-master-8.0.0/plugins/org.eclipse.cdt.codan.ui.cxx_2.0.0.201106081058.jar"/>
-	<classpathentry kind="lib" path="/Users/matzat/cdt-master-8.0.0/plugins/org.eclipse.cdt.codan.ui_2.0.0.201106081058.jar"/>
-	<classpathentry kind="lib" path="/Users/matzat/cdt-master-8.0.0/plugins/org.eclipse.cdt.codan.core.test_1.0.0.201106081058.jar"/>
-	<classpathentry kind="lib" path="/Users/matzat/cdt-master-8.0.0/plugins/org.eclipse.cdt.codan.core.source_2.0.0.201106081058.jar"/>
-	<classpathentry kind="lib" path="/Users/matzat/cdt-master-8.0.0/plugins/org.eclipse.cdt.codan.core.cxx.source_1.0.0.201106081058.jar"/>
-	<classpathentry kind="lib" path="/Users/matzat/cdt-master-8.0.0/plugins/org.eclipse.cdt.codan.core.cxx_1.0.0.201106081058.jar"/>
-	<classpathentry kind="lib" path="/Users/matzat/cdt-master-8.0.0/plugins/org.eclipse.cdt.codan.core_2.0.0.201106081058.jar"/>
-	<classpathentry kind="lib" path="/Users/matzat/cdt-master-8.0.0/plugins/org.eclipse.cdt.codan.checkers.ui.source_1.0.0.201106081058.jar"/>
-	<classpathentry kind="lib" path="/Users/matzat/cdt-master-8.0.0/plugins/org.eclipse.cdt.codan.checkers.ui_1.0.0.201106081058.jar"/>
-	<classpathentry kind="lib" path="/Users/matzat/cdt-master-8.0.0/plugins/org.eclipse.cdt.codan.checkers.source_1.0.0.201106081058.jar"/>
-	<classpathentry kind="lib" path="/Users/matzat/cdt-master-8.0.0/plugins/org.eclipse.cdt.codan.checkers_1.0.0.201106081058.jar"/>
-	<classpathentry kind="lib" path="/Users/matzat/cdt-master-8.0.0/plugins/org.eclipse.cdt.build.crossgcc_1.0.0.201106081058.jar"/>
-	<classpathentry kind="lib" path="/Users/matzat/cdt-master-8.0.0/plugins/org.eclipse.cdt_8.0.0.201106081058.jar"/>
-	<classpathentry kind="lib" path="/Users/matzat/cdt-master-8.0.0/plugins/org.eclipse.ant.optional.junit_3.3.0.jar"/>
-	<classpathentry kind="lib" path="/Users/matzat/cdt-master-8.0.0/plugins/net.sourceforge.lpg.lpgjavaruntime_1.1.0.v200803061910.jar"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/org.eclipse.cdt.alltests"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/org.eclipse.cdt.autotools.core"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/org.eclipse.cdt.autotools.docs"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/org.eclipse.cdt.autotools.tests"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/org.eclipse.cdt.autotools.ui"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/org.eclipse.cdt.autotools.ui.tests"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/org.eclipse.cdt.build.crossgcc"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/org.eclipse.cdt.codan.checkers"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/org.eclipse.cdt.codan.checkers.ui"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/org.eclipse.cdt.codan.core"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/org.eclipse.cdt.codan.core.cxx"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/org.eclipse.cdt.codan.core.test"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/org.eclipse.cdt.codan.examples"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/org.eclipse.cdt.codan.ui"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/org.eclipse.cdt.codan.ui.cfgview"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/org.eclipse.cdt.codan.ui.cxx"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/org.eclipse.cdt.core"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/org.eclipse.cdt.core.aix"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/org.eclipse.cdt.core.linux"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/org.eclipse.cdt.core.lrparser"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/org.eclipse.cdt.core.lrparser.tests"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/org.eclipse.cdt.core.lrparser.xlc"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/org.eclipse.cdt.core.lrparser.xlc.tests"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/org.eclipse.cdt.core.macosx"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/org.eclipse.cdt.core.parser.upc"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/org.eclipse.cdt.core.parser.upc.tests"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/org.eclipse.cdt.core.qnx"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/org.eclipse.cdt.core.solaris"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/org.eclipse.cdt.core.tests"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/org.eclipse.cdt.core.win32"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/org.eclipse.cdt.debug.core"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/org.eclipse.cdt.debug.gdbjtag.core"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/org.eclipse.cdt.debug.gdbjtag.ui"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/org.eclipse.cdt.debug.mi.core"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/org.eclipse.cdt.debug.mi.ui"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/org.eclipse.cdt.debug.ui"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/org.eclipse.cdt.debug.ui.memory.floatingpoint"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/org.eclipse.cdt.debug.ui.memory.memorybrowser"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/org.eclipse.cdt.debug.ui.memory.search"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/org.eclipse.cdt.debug.ui.memory.traditional"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/org.eclipse.cdt.debug.ui.memory.transport"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/org.eclipse.cdt.debug.ui.tests"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/org.eclipse.cdt.dsf"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/org.eclipse.cdt.dsf.gdb"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/org.eclipse.cdt.dsf.gdb.multicorevisualizer.ui"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/org.eclipse.cdt.dsf.gdb.ui"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/org.eclipse.cdt.dsf.ui"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/org.eclipse.cdt.errorparsers.xlc"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/org.eclipse.cdt.errorparsers.xlc.tests"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/org.eclipse.cdt.examples.dsf"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/org.eclipse.cdt.examples.dsf.pda"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/org.eclipse.cdt.examples.dsf.pda.ui"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/org.eclipse.cdt.gdb"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/org.eclipse.cdt.gdb.ui"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/org.eclipse.cdt.launch"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/org.eclipse.cdt.launch.remote"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/org.eclipse.cdt.make.core"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/org.eclipse.cdt.make.core.tests"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/org.eclipse.cdt.make.ui"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/org.eclipse.cdt.make.xlc.core"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/org.eclipse.cdt.managedbuilder.bupc.ui"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/org.eclipse.cdt.managedbuilder.core"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/org.eclipse.cdt.managedbuilder.core.tests"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/org.eclipse.cdt.managedbuilder.gnu.ui"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/org.eclipse.cdt.managedbuilder.ui"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/org.eclipse.cdt.managedbuilder.ui.tests"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/org.eclipse.cdt.managedbuilder.xlc.core"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/org.eclipse.cdt.managedbuilder.xlc.ui"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/org.eclipse.cdt.managedbuilder.xlupc.ui"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/org.eclipse.cdt.msw.build"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/org.eclipse.cdt.p2"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/org.eclipse.cdt.p2.generator"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/org.eclipse.cdt.qt.core"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/org.eclipse.cdt.qt.ui"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/org.eclipse.cdt.tests.dsf"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/org.eclipse.cdt.tests.dsf.gdb"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/org.eclipse.cdt.testsrunner"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/org.eclipse.cdt.testsrunner.boost"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/org.eclipse.cdt.testsrunner.gtest"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/org.eclipse.cdt.testsrunner.qttest"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/org.eclipse.cdt.testsrunner.test"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/org.eclipse.cdt.ui"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/org.eclipse.cdt.ui.tests"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/org.eclipse.cdt.util"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/org.eclipse.cdt.visualizer.core"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/org.eclipse.cdt.visualizer.examples"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/org.eclipse.cdt.visualizer.ui"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/org.eclipse.linuxtools.cdt.autotools.core"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

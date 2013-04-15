@@ -4,18 +4,16 @@
   <language namespace="e401b447-8019-4ccd-a72c-bfb0230f5782(com.mbeddr.cc.var.fm)" />
   <language namespace="017fba0e-af15-4a23-b0a8-02b5c1141e75(com.mbeddr.cc.var.annotations)" />
   <devkit namespace="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
-  <import index="qqyh" modelUID="r:a74300b8-76a8-461e-befa-fc86b0ad5dd9(com.mbeddr.cc.var.fm.structure)" version="-1" implicit="yes" />
-  <import index="qdv7" modelUID="r:1ff3d952-eae5-4d94-b89e-ea3060b11545(com.mbeddr.cc.var.annotations.structure)" version="2" implicit="yes" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="k146" modelUID="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" version="5" implicit="yes" />
-  <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="22" implicit="yes" />
+  <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="23" implicit="yes" />
   <import index="yq40" modelUID="r:152b3fc0-83a1-4bab-a8cd-565eb8483785(com.mbeddr.core.pointers.structure)" version="3" implicit="yes" />
   <import index="clbe" modelUID="r:61d840b4-12c1-49ea-b142-b2a1550a9b15(com.mbeddr.core.udt.structure)" version="7" implicit="yes" />
   <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="5" implicit="yes" />
   <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="5" implicit="yes" />
   <roots>
-    <node type="qqyh.VariabilitySupport" typeId="qqyh.6825476687691337712" id="3017602783212238056">
-      <property name="name" nameId="tpck.1169194664001" value="VS" />
+    <node type=".com.mbeddr.cc.var.fm.structure.VariabilitySupport" id="3017602783212238056">
+      <property name="name" value="VS" />
     </node>
     <node type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="3017602783212238065">
       <property name="name" nameId="tpck.1169194664001" value="Sensor" />
@@ -26,16 +24,16 @@
     <node type="mj1l.TypeSizeConfiguration" typeId="mj1l.3335993110369795380" id="3017602783212238150" />
   </roots>
   <root id="3017602783212238056">
-    <node role="contents" roleId="qqyh.6825476687691337713" type="qqyh.FeatureModel" typeId="qqyh.6825476687691297434" id="3017602783212238057">
-      <property name="name" nameId="tpck.1169194664001" value="Deployment" />
-      <node role="root" roleId="qqyh.6825476687691297435" type="qqyh.Feature" typeId="qqyh.6825476687691297426" id="3017602783212238059">
-        <property name="name" nameId="tpck.1169194664001" value="root" />
-        <node role="constraint" roleId="qqyh.6825476687691297427" type="qqyh.OptionalConstraint" typeId="qqyh.6825476687691317627" id="3017602783212238061" />
-        <node role="children" roleId="qqyh.6825476687691297428" type="qqyh.Feature" typeId="qqyh.6825476687691297426" id="3017602783212238062">
-          <property name="name" nameId="tpck.1169194664001" value="logging" />
+    <node role="contents" type=".com.mbeddr.cc.var.fm.structure.FeatureModel" id="3017602783212238057">
+      <property name="name" value="Deployment" />
+      <node role="root" type=".com.mbeddr.cc.var.fm.structure.Feature" id="3017602783212238059">
+        <property name="name" value="root" />
+        <node role="constraint" type=".com.mbeddr.cc.var.fm.structure.OptionalConstraint" id="3017602783212238061" />
+        <node role="children" type=".com.mbeddr.cc.var.fm.structure.Feature" id="3017602783212238062">
+          <property name="name" value="logging" />
         </node>
-        <node role="children" roleId="qqyh.6825476687691297428" type="qqyh.Feature" typeId="qqyh.6825476687691297426" id="3017602783212238064">
-          <property name="name" nameId="tpck.1169194664001" value="highRes" />
+        <node role="children" type=".com.mbeddr.cc.var.fm.structure.Feature" id="3017602783212238064">
+          <property name="name" value="highRes" />
         </node>
       </node>
     </node>
@@ -44,19 +42,19 @@
     <node role="contents" roleId="x27k.6437088627575722833" type="clbe.TypeDef" typeId="clbe.6116558314501347857" id="3017602783212238103">
       <property name="name" nameId="tpck.1169194664001" value="dataType" />
       <node role="original" roleId="clbe.6116558314501347862" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="3017602783212238105">
-        <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="qdv7.ConditionalReplacement" typeId="qdv7.2613872510229259997" id="3017602783212238106">
-          <node role="condition" roleId="qdv7.2613872510229260001" type="qdv7.FeatureCondition" typeId="qdv7.2613872510229282925" id="3017602783212238107">
-            <node role="expr" roleId="qdv7.2613872510229282926" type="qdv7.FeatureRef" typeId="qdv7.661141253149262053" id="3017602783212238109">
-              <link role="feature" roleId="qdv7.661141253149262054" targetNodeId="3017602783212238064" resolveInfo="highRes" />
+        <node role="smodelAttribute" roleId="tpck.5169995583184591170" type=".com.mbeddr.cc.var.annotations.structure.ConditionalReplacement" id="3017602783212238106">
+          <node role="condition" type=".com.mbeddr.cc.var.annotations.structure.FeatureCondition" id="3017602783212238107">
+            <node role="expr" type=".com.mbeddr.cc.var.annotations.structure.FeatureRef" id="3017602783212238109">
+              <link role="feature" targetNodeId="3017602783212238064" resolveInfo="highRes" />
             </node>
           </node>
-          <node role="replacement" roleId="qdv7.2613872510229260000" type="mj1l.DoubleType" typeId="mj1l.8864856114140038681" id="3017602783212238110" />
+          <node role="replacement" type="mj1l.DoubleType" typeId="mj1l.8864856114140038681" id="3017602783212238110" />
         </node>
       </node>
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.GlobalConstantDeclaration" typeId="x27k.3788988821851860886" id="3017602783212238072">
       <property name="name" nameId="tpck.1169194664001" value="DATA_SIZE" />
-      <node role="value" roleId="x27k.3376775282622233992" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3017602783212238076">
+      <node role="value" roleId="x27k.3788988821851871048" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3017602783212238076">
         <property name="value" nameId="mj1l.8860443239512128104" value="100" />
       </node>
     </node>
@@ -67,7 +65,7 @@
           <link role="typeDef" roleId="clbe.6116558314501347864" targetNodeId="3017602783212238103" resolveInfo="dataType" />
         </node>
         <node role="sizeExpr" roleId="yq40.1452920870317474611" type="x27k.GlobalConstantRef" typeId="x27k.3788988821852026523" id="3017602783212238078">
-          <link role="constant" roleId="x27k.3376775282622611130" targetNodeId="3017602783212238072" resolveInfo="DATA_SIZE" />
+          <link role="constant" roleId="x27k.3788988821852026524" targetNodeId="3017602783212238072" resolveInfo="DATA_SIZE" />
         </node>
       </node>
     </node>
@@ -92,10 +90,10 @@
         <property name="name" nameId="tpck.1169194664001" value="finishingMeasurement" />
         <property name="text" nameId="k146.2688792604367903089" value="exitingMainFunction" />
       </node>
-      <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="qdv7.PresenceCondidtion" typeId="qdv7.661141253149231475" id="6617704999132174959">
-        <node role="condition" roleId="qdv7.661141253149231543" type="qdv7.FeatureCondition" typeId="qdv7.2613872510229282925" id="6617704999132174960">
-          <node role="expr" roleId="qdv7.2613872510229282926" type="qdv7.FeatureRef" typeId="qdv7.661141253149262053" id="3017602783212238114">
-            <link role="feature" roleId="qdv7.661141253149262054" targetNodeId="3017602783212238062" resolveInfo="logging" />
+      <node role="smodelAttribute" roleId="tpck.5169995583184591170" type=".com.mbeddr.cc.var.annotations.structure.PresenceCondidtion" id="6617704999132174959">
+        <node role="condition" type=".com.mbeddr.cc.var.annotations.structure.FeatureCondition" id="6617704999132174960">
+          <node role="expr" type=".com.mbeddr.cc.var.annotations.structure.FeatureRef" id="3017602783212238114">
+            <link role="feature" targetNodeId="3017602783212238062" resolveInfo="logging" />
           </node>
         </node>
       </node>
@@ -112,10 +110,10 @@
             <link role="table" roleId="k146.2688792604367964824" targetNodeId="6617704999132174956" resolveInfo="messages" />
             <link role="msg" roleId="k146.2688792604367964825" targetNodeId="6617704999132174957" resolveInfo="startingMeasurement" />
           </node>
-          <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="qdv7.PresenceCondidtion" typeId="qdv7.661141253149231475" id="3017602783212238128">
-            <node role="condition" roleId="qdv7.661141253149231543" type="qdv7.FeatureCondition" typeId="qdv7.2613872510229282925" id="3017602783212238129">
-              <node role="expr" roleId="qdv7.2613872510229282926" type="qdv7.FeatureRef" typeId="qdv7.661141253149262053" id="3017602783212238130">
-                <link role="feature" roleId="qdv7.661141253149262054" targetNodeId="3017602783212238062" resolveInfo="logging" />
+          <node role="smodelAttribute" roleId="tpck.5169995583184591170" type=".com.mbeddr.cc.var.annotations.structure.PresenceCondidtion" id="3017602783212238128">
+            <node role="condition" type=".com.mbeddr.cc.var.annotations.structure.FeatureCondition" id="3017602783212238129">
+              <node role="expr" type=".com.mbeddr.cc.var.annotations.structure.FeatureRef" id="3017602783212238130">
+                <link role="feature" targetNodeId="3017602783212238062" resolveInfo="logging" />
               </node>
             </node>
           </node>
@@ -141,11 +139,11 @@
               </node>
             </node>
           </node>
-          <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="qdv7.PresenceCondidtion" typeId="qdv7.661141253149231475" id="3017602783212238232">
-            <node role="condition" roleId="qdv7.661141253149231543" type="qdv7.FeatureCondition" typeId="qdv7.2613872510229282925" id="3017602783212238233">
-              <node role="expr" roleId="qdv7.2613872510229282926" type="mj1l.NotExpression" typeId="mj1l.3830958861296781575" id="3017602783212238234">
-                <node role="expression" roleId="mj1l.7254843406768839760" type="qdv7.FeatureRef" typeId="qdv7.661141253149262053" id="3017602783212238236">
-                  <link role="feature" roleId="qdv7.661141253149262054" targetNodeId="3017602783212238064" resolveInfo="highRes" />
+          <node role="smodelAttribute" roleId="tpck.5169995583184591170" type=".com.mbeddr.cc.var.annotations.structure.PresenceCondidtion" id="3017602783212238232">
+            <node role="condition" type=".com.mbeddr.cc.var.annotations.structure.FeatureCondition" id="3017602783212238233">
+              <node role="expr" type="mj1l.NotExpression" typeId="mj1l.3830958861296781575" id="3017602783212238234">
+                <node role="expression" roleId="mj1l.7254843406768839760" type=".com.mbeddr.cc.var.annotations.structure.FeatureRef" id="3017602783212238236">
+                  <link role="feature" targetNodeId="3017602783212238064" resolveInfo="highRes" />
                 </node>
               </node>
             </node>
@@ -163,10 +161,10 @@
               </node>
             </node>
           </node>
-          <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="qdv7.PresenceCondidtion" typeId="qdv7.661141253149231475" id="3017602783212238237">
-            <node role="condition" roleId="qdv7.661141253149231543" type="qdv7.FeatureCondition" typeId="qdv7.2613872510229282925" id="3017602783212238238">
-              <node role="expr" roleId="qdv7.2613872510229282926" type="qdv7.FeatureRef" typeId="qdv7.661141253149262053" id="3017602783212238239">
-                <link role="feature" roleId="qdv7.661141253149262054" targetNodeId="3017602783212238064" resolveInfo="highRes" />
+          <node role="smodelAttribute" roleId="tpck.5169995583184591170" type=".com.mbeddr.cc.var.annotations.structure.PresenceCondidtion" id="3017602783212238237">
+            <node role="condition" type=".com.mbeddr.cc.var.annotations.structure.FeatureCondition" id="3017602783212238238">
+              <node role="expr" type=".com.mbeddr.cc.var.annotations.structure.FeatureRef" id="3017602783212238239">
+                <link role="feature" targetNodeId="3017602783212238064" resolveInfo="highRes" />
               </node>
             </node>
           </node>
@@ -177,10 +175,10 @@
             <link role="table" roleId="k146.2688792604367964824" targetNodeId="6617704999132174956" resolveInfo="messages" />
             <link role="msg" roleId="k146.2688792604367964825" targetNodeId="6617704999132174958" resolveInfo="finishingMeasurement" />
           </node>
-          <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="qdv7.PresenceCondidtion" typeId="qdv7.661141253149231475" id="3017602783212238259">
-            <node role="condition" roleId="qdv7.661141253149231543" type="qdv7.FeatureCondition" typeId="qdv7.2613872510229282925" id="3017602783212238260">
-              <node role="expr" roleId="qdv7.2613872510229282926" type="qdv7.FeatureRef" typeId="qdv7.661141253149262053" id="3017602783212238261">
-                <link role="feature" roleId="qdv7.661141253149262054" targetNodeId="3017602783212238062" resolveInfo="logging" />
+          <node role="smodelAttribute" roleId="tpck.5169995583184591170" type=".com.mbeddr.cc.var.annotations.structure.PresenceCondidtion" id="3017602783212238259">
+            <node role="condition" type=".com.mbeddr.cc.var.annotations.structure.FeatureCondition" id="3017602783212238260">
+              <node role="expr" type=".com.mbeddr.cc.var.annotations.structure.FeatureRef" id="3017602783212238261">
+                <link role="feature" targetNodeId="3017602783212238062" resolveInfo="logging" />
               </node>
             </node>
           </node>
@@ -220,8 +218,8 @@
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="3017602783212238092">
       <property name="name" nameId="tpck.1169194664001" value="empty_1328440756889_5" />
     </node>
-    <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="qdv7.FeatureModelConfiguration" typeId="qdv7.661141253149262080" id="3017602783212238081">
-      <link role="featureModel" roleId="qdv7.661141253149262081" targetNodeId="3017602783212238057" resolveInfo="Deployment" />
+    <node role="smodelAttribute" roleId="tpck.5169995583184591170" type=".com.mbeddr.cc.var.annotations.structure.FeatureModelConfiguration" id="3017602783212238081">
+      <link role="featureModel" targetNodeId="3017602783212238057" resolveInfo="Deployment" />
     </node>
     <node role="imports" roleId="x27k.1317894735999304826" type="x27k.ModuleImport" typeId="x27k.1317894735999299713" id="3017602783212238212">
       <link role="module" roleId="x27k.1317894735999299714" targetNodeId="3017602783212238132" resolveInfo="Driver" />

@@ -103,6 +103,7 @@
 		  
 	  <ant antfile="build.xml" dir="com.mbeddr.cc" target="build-tests" />
 	  <ant antfile="build.xml" dir="com.mbeddr.cc" target="run-ts-tests" />
+	  <ant antfile="build.xml" dir="com.mbeddr.cc" target="make-tests" />	  	  
 	  
 	  <ant antfile="build.xml" dir="com.mbeddr.ext" target="build-tests" />
 	  <ant antfile="build.xml" dir="com.mbeddr.ext" target="run-ts-tests" />
