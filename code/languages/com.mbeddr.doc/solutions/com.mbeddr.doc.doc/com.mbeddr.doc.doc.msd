@@ -11,6 +11,7 @@
     <usedLanguage>1c5b7d51-0ef3-4332-af36-874466950878(com.mbeddr.doc.expressions)</usedLanguage>
     <usedLanguage>e06345c7-da82-4f8b-bd44-1425fe158640(com.mbeddr.doc.meta)</usedLanguage>
     <usedLanguage>d7145000-936a-47e8-95a5-71f220e623f9(com.mbeddr.doc.self)</usedLanguage>
+    <usedLanguage>c61970b4-87fb-4429-8a3a-c87719f000a3(com.mbeddr.doc.terms)</usedLanguage>
   </usedLanguages>
   <usedDevKits>
     <usedDevKit>24565007-e59f-42fc-ac10-da3836deec1c(com.mbeddr.components)</usedDevKit>
