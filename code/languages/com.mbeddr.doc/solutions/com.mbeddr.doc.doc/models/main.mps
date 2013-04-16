@@ -1598,8 +1598,20 @@
         <node role="text" roleId="8zu2.8574110643282425940" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="4224548511521435051">
           <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="4224548511521435052">
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4224548511521435053">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value="This is a human. Not explained any further." />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="This is a human. Not explained any further. A person " />
             </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="8zu2.TermRelationshipText" typeId="8zu2.1233689874746925900" id="4224548511521513855">
+              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="4224548511521513856">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4224548511521513857">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="may have a brother " />
+                </node>
+                <node role="words" roleId="87nw.2557074442922392302" type="8zu2.TermRefWord" typeId="8zu2.8574110643282370464" id="4224548511521513868">
+                  <link role="term" roleId="8zu2.8574110643282370473" targetNodeId="4224548511521435050" resolveInfo="Person" />
+                </node>
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4224548511521513869" />
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4224548511521513858" />
           </node>
         </node>
       </node>
