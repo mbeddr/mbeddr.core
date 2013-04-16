@@ -34,7 +34,7 @@
     <usedLanguage>9ded098b-ad6a-4657-bfd9-48636cfe8bc3(jetbrains.mps.lang.traceable)</usedLanguage>
   </usedLanguages>
   <usedDevKits>
-    <usedDevKit>87468ddd-5b04-4352-a61d-70ff981afab6(debugger-testing)</usedDevKit>
+    <usedDevKit>87468ddd-5b04-4352-a61d-70ff981afab6(com.mbeddr.debugger-testing)</usedDevKit>
   </usedDevKits>
 </solution>
 

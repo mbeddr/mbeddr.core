@@ -5,7 +5,7 @@
   </models>
   <sourcePath />
   <usedDevKits>
-    <usedDevKit>87468ddd-5b04-4352-a61d-70ff981afab6(debugger-testing)</usedDevKit>
+    <usedDevKit>87468ddd-5b04-4352-a61d-70ff981afab6(com.mbeddr.debugger-testing)</usedDevKit>
   </usedDevKits>
 </solution>
 
