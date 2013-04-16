@@ -33,6 +33,10 @@ public class TestInvoker implements MakeExecutor {
 							"Invoking 'make test' failed in the following directory:"
 									+ makeDirectory.getAbsolutePath());
 				}
+				if(failures > 1) {
+					// Make increments the return code, if process fails
+					failures--;
+				}
 				logFooter(failures);
 				totalNumberOfFailures += failures;
 			} else {
