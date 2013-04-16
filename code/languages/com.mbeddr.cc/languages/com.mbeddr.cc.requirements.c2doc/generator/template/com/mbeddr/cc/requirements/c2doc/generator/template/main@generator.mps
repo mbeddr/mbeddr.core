@@ -29,13 +29,13 @@
     <node role="reductionMappingRule" roleId="tpf8.1167340453568" type="tpf8.Reduction_MappingRule" typeId="tpf8.1167327847730" id="5785245534400582258">
       <link role="applicableConcept" roleId="tpf8.1167169349424" targetNodeId="3vkx.3534497005926837262" resolveInfo="RConstant" />
       <node role="ruleConsequence" roleId="tpf8.1169672767469" type="tpf8.InlineTemplate_RuleConsequence" typeId="tpf8.1177093525992" id="5785245534400582260">
-        <node role="templateNode" roleId="tpf8.1177093586806" type=".com.mbeddr.doc.structure.TextParagraph" id="5785245534400582262">
-          <node role="text" type="87nw.Text" typeId="87nw.2557074442922380897" id="5785245534400582263">
+        <node role="templateNode" roleId="tpf8.1177093586806" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="5785245534400582262">
+          <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="5785245534400582263">
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5785245534400766599">
               <property name="escapedValue" nameId="87nw.2557074442922438158" value="Konstante" />
             </node>
           </node>
-          <node role="smodelAttribute" type="tpf8.CopySrcNodeMacro" typeId="tpf8.1114706874351" id="5785245534400766601">
+          <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.CopySrcNodeMacro" typeId="tpf8.1114706874351" id="5785245534400766601">
             <node role="sourceNodeQuery" roleId="tpf8.1168024447342" type="tpf8.SourceSubstituteMacro_SourceNodeQuery" typeId="tpf8.1168024337012" id="5785245534400766602">
               <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="5785245534400766603">
                 <node role="statement" roleId="tpee.1068581517665" type="tpee.LocalVariableDeclarationStatement" typeId="tpee.1068581242864" id="5785245534400766604">
@@ -138,10 +138,10 @@
     <node role="reductionMappingRule" roleId="tpf8.1167340453568" type="tpf8.Reduction_MappingRule" typeId="tpf8.1167327847730" id="5785245534400582265">
       <link role="applicableConcept" roleId="tpf8.1167169349424" targetNodeId="3vkx.3534497005926949315" resolveInfo="RCalculation" />
       <node role="ruleConsequence" roleId="tpf8.1169672767469" type="tpf8.InlineTemplateWithContext_RuleConsequence" typeId="tpf8.8900764248744213868" id="5785245534400667147">
-        <node role="contentNode" roleId="tpf8.8900764248744213871" type=".com.mbeddr.doc.structure.Document" id="5785245534400667149">
-          <property name="name" value="dummy" />
-          <node role="contents" type=".com.mbeddr.doc.structure.TextParagraph" id="5785245534400667150">
-            <node role="text" type="87nw.Text" typeId="87nw.2557074442922380897" id="5785245534400667151">
+        <node role="contentNode" roleId="tpf8.8900764248744213871" type="2c95.Document" typeId="2c95.3350625596579911728" id="5785245534400667149">
+          <property name="name" nameId="tpck.1169194664001" value="dummy" />
+          <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="5785245534400667150">
+            <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="5785245534400667151">
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5785245534400667152">
                 <property name="escapedValue" nameId="87nw.2557074442922438158" value="Intro " />
                 <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.CopySrcNodeMacro" typeId="tpf8.1114706874351" id="5785245534400667161">
@@ -173,8 +173,8 @@
                   </node>
                 </node>
               </node>
-              <node role="words" roleId="87nw.2557074442922392302" type=".com.mbeddr.doc.structure.MathFormattedText" id="5785245534400667153">
-                <node role="text" type="87nw.Text" typeId="87nw.2557074442922380897" id="5785245534400667154">
+              <node role="words" roleId="87nw.2557074442922392302" type="2c95.MathFormattedText" typeId="2c95.6165313375055755361" id="5785245534400667153">
+                <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="5785245534400667154">
                   <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5785245534400667157">
                     <property name="escapedValue" nameId="87nw.2557074442922438158" value="formula" />
                     <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.CopySrcNodeMacro" typeId="tpf8.1114706874351" id="5785245534400667268">
@@ -207,26 +207,26 @@
                 <property name="escapedValue" nameId="87nw.2557074442922438158" value=". The arguments are as follows:" />
               </node>
             </node>
-            <node role="smodelAttribute" type="tpf8.TemplateFragment" typeId="tpf8.1095672379244" id="5785245534400667160" />
+            <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.TemplateFragment" typeId="tpf8.1095672379244" id="5785245534400667160" />
           </node>
-          <node role="contents" type=".com.mbeddr.doc.structure.InlineTableParagraph" id="5785245534400667340">
-            <property name="numCols" value="2" />
-            <node role="rows" type=".com.mbeddr.doc.structure.TableRow" id="5785245534400668552">
-              <property name="lineBelow" value="true" />
-              <node role="cells" type=".com.mbeddr.doc.structure.StringTableCell" id="5785245534400668555">
-                <property name="text" value="Name" />
-                <property name="isheader" value="true" />
+          <node role="contents" roleId="2c95.3350625596580064250" type="2c95.InlineTableParagraph" typeId="2c95.5785245534399940636" id="5785245534400667340">
+            <property name="numCols" nameId="2c95.5785245534399940634" value="2" />
+            <node role="rows" roleId="2c95.5785245534399940635" type="2c95.TableRow" typeId="2c95.5185579450379471854" id="5785245534400668552">
+              <property name="lineBelow" nameId="2c95.5785245534399720606" value="true" />
+              <node role="cells" roleId="2c95.5185579450379471857" type="2c95.StringTableCell" typeId="2c95.5185579450379471862" id="5785245534400668555">
+                <property name="text" nameId="2c95.5185579450379471864" value="Name" />
+                <property name="isheader" nameId="2c95.5785245534399625710" value="true" />
               </node>
-              <node role="cells" type=".com.mbeddr.doc.structure.StringTableCell" id="5785245534400668557">
-                <property name="text" value="Description" />
-                <property name="isheader" value="true" />
+              <node role="cells" roleId="2c95.5185579450379471857" type="2c95.StringTableCell" typeId="2c95.5185579450379471862" id="5785245534400668557">
+                <property name="text" nameId="2c95.5185579450379471864" value="Description" />
+                <property name="isheader" nameId="2c95.5785245534399625710" value="true" />
               </node>
             </node>
-            <node role="rows" type=".com.mbeddr.doc.structure.TableRow" id="5785245534400667341">
-              <node role="cells" type=".com.mbeddr.doc.structure.StringTableCell" id="5785245534400667343">
-                <property name="text" value="param" />
-                <property name="isheader" value="false" />
-                <node role="smodelAttribute" type="tpf8.PropertyMacro" typeId="tpf8.1087833241328" id="5785245534400667346">
+            <node role="rows" roleId="2c95.5785245534399940635" type="2c95.TableRow" typeId="2c95.5185579450379471854" id="5785245534400667341">
+              <node role="cells" roleId="2c95.5185579450379471857" type="2c95.StringTableCell" typeId="2c95.5185579450379471862" id="5785245534400667343">
+                <property name="text" nameId="2c95.5185579450379471864" value="param" />
+                <property name="isheader" nameId="2c95.5785245534399625710" value="false" />
+                <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.PropertyMacro" typeId="tpf8.1087833241328" id="5785245534400667346">
                   <property name="propertyName" nameId="tpck.1757699476691236117" value="text" />
                   <node role="propertyValueFunction" roleId="tpf8.1167756362303" type="tpf8.PropertyMacro_GetPropertyValue" typeId="tpf8.1167756080639" id="5785245534400667347">
                     <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="5785245534400667348">
@@ -242,9 +242,9 @@
                   </node>
                 </node>
               </node>
-              <node role="cells" type=".com.mbeddr.doc.structure.StringTableCell" id="5785245534400667345">
-                <property name="text" value="explanation" />
-                <node role="smodelAttribute" type="tpf8.PropertyMacro" typeId="tpf8.1087833241328" id="5785245534400667411">
+              <node role="cells" roleId="2c95.5185579450379471857" type="2c95.StringTableCell" typeId="2c95.5185579450379471862" id="5785245534400667345">
+                <property name="text" nameId="2c95.5185579450379471864" value="explanation" />
+                <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.PropertyMacro" typeId="tpf8.1087833241328" id="5785245534400667411">
                   <property name="propertyName" nameId="tpck.1757699476691236117" value="text" />
                   <node role="propertyValueFunction" roleId="tpf8.1167756362303" type="tpf8.PropertyMacro_GetPropertyValue" typeId="tpf8.1167756080639" id="5785245534400667412">
                     <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="5785245534400667413">
@@ -263,7 +263,7 @@
                   </node>
                 </node>
               </node>
-              <node role="smodelAttribute" type="tpf8.LoopMacro" typeId="tpf8.1118786554307" id="5785245534400667469">
+              <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.LoopMacro" typeId="tpf8.1118786554307" id="5785245534400667469">
                 <node role="sourceNodesQuery" roleId="tpf8.1167952069335" type="tpf8.SourceSubstituteMacro_SourceNodesQuery" typeId="tpf8.1167951910403" id="5785245534400667470">
                   <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="5785245534400667471">
                     <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="5785245534400667474">
@@ -278,7 +278,7 @@
                 </node>
               </node>
             </node>
-            <node role="smodelAttribute" type="tpf8.TemplateFragment" typeId="tpf8.1095672379244" id="5785245534400667342" />
+            <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.TemplateFragment" typeId="tpf8.1095672379244" id="5785245534400667342" />
           </node>
         </node>
       </node>

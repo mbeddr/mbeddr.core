@@ -71,7 +71,7 @@
       <link role="concept" roleId="1i04.1225194240799" targetNodeId="75wo.3314758227759007649" resolveInfo="CountingSummary" />
     </node>
     <node type="tpee.ClassConcept" typeId="tpee.1068390468198" id="5410671989824377610">
-      <property name="name" nameId="tpck.1169194664001" value="FilterHelper2" />
+      <property name="name" nameId="tpck.1169194664001" value="FilterHelper" />
     </node>
     <node type="1i04.ConceptBehavior" typeId="1i04.1225194240794" id="4622656891658494377">
       <property name="virtualPackage" nameId="tpck.1193676396447" value="filters" />
