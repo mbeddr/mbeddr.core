@@ -1450,6 +1450,25 @@
     <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Section" typeId="2c95.3350625596580064455" id="8574110643282419122">
       <property name="name" nameId="tpck.1169194664001" value="importantTerms" />
       <property name="text" nameId="2c95.3350625596580064225" value="Important Terms" />
+      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.EmptyDocContent" typeId="2c95.3350625596579911760" id="2732739370697315759">
+        <property name="name" nameId="tpck.1169194664001" value="empty_1366139061810_1" />
+      </node>
+      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="2732739370697315762">
+        <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="2732739370697315763">
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2732739370697315764">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value="Here are a number of important terms. Each of them is defined separately\nin the document. The definitions can contain explicit relationships to \nother terms. These can be shown as a diagram. An example is in " />
+          </node>
+          <node role="words" roleId="87nw.2557074442922392302" type="2c95.ImgRefWord" typeId="2c95.6386504476136420159" id="2732739370697315765">
+            <link role="image" roleId="2c95.6386504476136420174" targetNodeId="2732739370697308260" resolveInfo="termDeps" />
+          </node>
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2732739370697315766">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value="." />
+          </node>
+        </node>
+      </node>
+      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.EmptyDocContent" typeId="2c95.3350625596579911760" id="2732739370697315760">
+        <property name="name" nameId="tpck.1169194664001" value="empty_1366139061953_2" />
+      </node>
       <node role="contents" roleId="2c95.3350625596580064250" type="8zu2.TermDefParagraph" typeId="8zu2.8574110643282425937" id="8574110643282429386">
         <property name="term" nameId="8zu2.8574110643282425939" value="Car" />
         <node role="text" roleId="8zu2.8574110643282425940" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8574110643282429387">
@@ -1618,8 +1637,21 @@
       <node role="contents" roleId="2c95.3350625596580064250" type="2c95.EmptyDocContent" typeId="2c95.3350625596579911760" id="4224548511521432087">
         <property name="name" nameId="tpck.1169194664001" value="empty_1366137056247_2" />
       </node>
-      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.EmptyDocContent" typeId="2c95.3350625596579911760" id="4224548511521432080">
-        <property name="name" nameId="tpck.1169194664001" value="empty_1366137052806_1" />
+      <node role="contents" roleId="2c95.3350625596580064250" type="rh4a.Visualization" typeId="rh4a.4755612053022373494" id="2732739370697308260">
+        <property name="category" nameId="rh4a.4755612053022373532" value="term dependencies" />
+        <property name="name" nameId="tpck.1169194664001" value="termDeps" />
+        <link role="visualizable" roleId="rh4a.4755612053022373496" targetNodeId="8574110643282429386" resolveInfo="Car" />
+        <link role="path" roleId="rh4a.4755612053022398751" targetNodeId="8730648445432874250" resolveInfo="imgTemp" />
+        <node role="description" roleId="rh4a.4755612053022495458" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="2732739370697308261">
+          <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="2732739370697308262">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2732739370697308263">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="The relationships between the terms can also be shown as a diagram." />
+            </node>
+          </node>
+        </node>
+        <node role="sizeSpec" roleId="rh4a.8624890525767931145" type="2c95.PageWidthSizeSpec" typeId="2c95.8624890525767637976" id="2732739370697308264">
+          <property name="percentage" nameId="2c95.8624890525767637977" value="100" />
+        </node>
       </node>
     </node>
     <node role="contents" roleId="2c95.3350625596580064250" type="2c95.EmptyDocContent" typeId="2c95.3350625596579911760" id="8574110643282412678">
