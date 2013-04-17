@@ -31,7 +31,7 @@
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="6116558314501347863">
       <property name="name" nameId="tpck.1169194664001" value="TypeDefType" />
       <property name="virtualPackage" nameId="tpck.1193676396447" value="typedef" />
-      <link role="extends" roleId="tpce.1071489389519" targetNodeId="mj1l.8860443239512128054" resolveInfo="Type" />
+      <link role="extends" roleId="tpce.1071489389519" targetNodeId="x27k.5936743812040996206" resolveInfo="TypeWithDeclaration" />
     </node>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="8811614583515725851">
       <property name="name" nameId="tpck.1169194664001" value="EnumDeclaration" />
@@ -47,7 +47,7 @@
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="8811614583515725893">
       <property name="virtualPackage" nameId="tpck.1193676396447" value="enum" />
       <property name="name" nameId="tpck.1169194664001" value="EnumType" />
-      <link role="extends" roleId="tpce.1071489389519" targetNodeId="mj1l.8860443239512128054" resolveInfo="Type" />
+      <link role="extends" roleId="tpce.1071489389519" targetNodeId="x27k.5936743812040996206" resolveInfo="TypeWithDeclaration" />
     </node>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="8811614583515726007">
       <property name="virtualPackage" nameId="tpck.1193676396447" value="enum" />
@@ -108,7 +108,7 @@
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="3669865008872185501">
       <property name="virtualPackage" nameId="tpck.1193676396447" value="su" />
       <property name="name" nameId="tpck.1169194664001" value="SUType" />
-      <link role="extends" roleId="tpce.1071489389519" targetNodeId="mj1l.8860443239512128054" resolveInfo="Type" />
+      <link role="extends" roleId="tpce.1071489389519" targetNodeId="x27k.5936743812040996206" resolveInfo="TypeWithDeclaration" />
     </node>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="3073566081777327818">
       <property name="virtualPackage" nameId="tpck.1193676396447" value="su.union" />
