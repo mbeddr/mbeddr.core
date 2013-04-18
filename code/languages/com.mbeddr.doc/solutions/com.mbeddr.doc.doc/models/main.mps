@@ -1444,15 +1444,9 @@
     </node>
   </root>
   <root id="8574110643282412676">
-    <node role="contents" roleId="2c95.3350625596580064250" type="2c95.EmptyDocContent" typeId="2c95.3350625596579911760" id="8574110643282412677">
-      <property name="name" nameId="tpck.1169194664001" value="empty_1366047883946_1" />
-    </node>
     <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Section" typeId="2c95.3350625596580064455" id="8574110643282419122">
       <property name="name" nameId="tpck.1169194664001" value="importantTerms" />
       <property name="text" nameId="2c95.3350625596580064225" value="Important Terms" />
-      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.EmptyDocContent" typeId="2c95.3350625596579911760" id="2732739370697315759">
-        <property name="name" nameId="tpck.1169194664001" value="empty_1366139061810_1" />
-      </node>
       <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="2732739370697315762">
         <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="2732739370697315763">
           <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2732739370697315764">
@@ -1477,10 +1471,11 @@
               <property name="escapedValue" nameId="87nw.2557074442922438158" value="A Car is a thing with four " />
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="8zu2.TermRefWord" typeId="8zu2.8574110643282370464" id="8574110643282433095">
+              <property name="alternativeText" nameId="8zu2.4201933574507578547" value="Wheels" />
               <link role="term" roleId="8zu2.8574110643282370473" targetNodeId="8574110643282431634" resolveInfo="Wheel" />
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8574110643282433096">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value="s. Cars also have an " />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=". Cars also have an " />
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="8zu2.TermRefWord" typeId="8zu2.8574110643282370464" id="4224548511521379221">
               <link role="term" roleId="8zu2.8574110643282370473" targetNodeId="4224548511521379216" resolveInfo="Engine" />
@@ -1565,7 +1560,13 @@
         <node role="text" roleId="8zu2.8574110643282425940" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="4224548511521379217">
           <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="4224548511521379218">
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4224548511521379219">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value="An engine is the thing that drives the car. Of course, there is also the " />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="An engine is the thing that drives the " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="8zu2.TermRefWord" typeId="8zu2.8574110643282370464" id="4201933574507581636">
+              <link role="term" roleId="8zu2.8574110643282370473" targetNodeId="8574110643282429386" resolveInfo="Car" />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4201933574507581635">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=". Of course, there is also the " />
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="8zu2.TermRefWord" typeId="8zu2.8574110643282370464" id="4224548511521382413">
               <link role="term" roleId="8zu2.8574110643282370473" targetNodeId="4224548511521382408" resolveInfo="Driver" />
