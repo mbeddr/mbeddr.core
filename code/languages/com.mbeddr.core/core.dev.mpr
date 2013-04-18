@@ -43,6 +43,7 @@
       <modulePath path="${project}/languages/com.mbeddr.core.util/util.mpl" folder="core-extended" />
       <modulePath path="${project}/languages/com.mbeddr.plantuml/solutions/pluginSolution/pluginSolution.msd" />
       <modulePath path="${project}/languages/dataflow/dataflow.mpl" folder="core" />
+      <modulePath path="${project}/languages/intermediatesymbols/com.mbeddr.core.intermediatesymbols.mpl" folder="core" />
       <modulePath path="${project}/tests/aLibrary/aLibrary.msd" folder="tests" />
       <modulePath path="${project}/tests/test.cstub.core/core.msd" folder="tests.cstub" />
       <modulePath path="${project}/tests/test.cstub.testheader.expressions/expressions.msd" folder="tests.cstub" />
