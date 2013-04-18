@@ -163,6 +163,10 @@
     <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="5710167937130873106">
       <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="rpmx.5710167937130873101" resolveInfo="DebuggerTestLibrary" />
     </node>
+    <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="2250775661460263466">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="configuration.validation.element" />
+      <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="rpmx.2250775661460263464" resolveInfo="DebuggerDetachedValidation" />
+    </node>
   </roots>
   <root id="4193597469137492659">
     <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="4193597469137492660">
@@ -2085,6 +2089,11 @@
           </node>
         </node>
       </node>
+    </node>
+  </root>
+  <root id="2250775661460263466">
+    <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="2250775661460263468">
+      <property name="text" nameId="tpc2.1073389577007" value="debugger detached" />
     </node>
   </root>
 </model>
