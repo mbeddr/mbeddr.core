@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <model modelUID="r:dc0f2c70-414d-4f6a-8df3-0bc856f1fe35(test.debugging.core.unitTests.common)">
   <persistence version="7" />
-  <devkit namespace="87468ddd-5b04-4352-a61d-70ff981afab6(debugger-testing)" />
+  <devkit namespace="87468ddd-5b04-4352-a61d-70ff981afab6(com.mbeddr.debugger-testing)" />
   <devkit namespace="24565007-e59f-42fc-ac10-da3836deec1c(com.mbeddr.components)" />
   <import index="tr6y" modelUID="r:47eb6bd5-b98e-420e-bda6-2069fa596758(test.debugging.cross.util)" version="-1" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />

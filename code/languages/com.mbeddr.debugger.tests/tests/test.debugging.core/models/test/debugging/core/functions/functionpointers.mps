@@ -4,7 +4,7 @@
   <language namespace="8585453e-6bfb-4d80-98de-b16074f1d86c(jetbrains.mps.lang.test)" />
   <language namespace="89c70b13-7f9c-47c3-b3c2-c218b52ed82c(com.mbeddr.core.debug.test)" />
   <language namespace="f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)" />
-  <devkit namespace="87468ddd-5b04-4352-a61d-70ff981afab6(debugger-testing)" />
+  <devkit namespace="87468ddd-5b04-4352-a61d-70ff981afab6(com.mbeddr.debugger-testing)" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="k146" modelUID="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" version="5" implicit="yes" />
   <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="23" implicit="yes" />
@@ -444,7 +444,7 @@
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.GlobalConstantFunctionDeclaration" typeId="x27k.6021475212425916971" id="3926162927329457382">
       <property name="name" nameId="tpck.1169194664001" value="va_start" />
       <property name="preventNameMangling" nameId="x27k.6708182213627106114" value="true" />
-      <node role="content" roleId="x27k.7308356872494485437" type="c4fa.ArbitraryTextExpression" typeId="c4fa.3830958861296871078" id="7308356872494556870">
+      <node role="content" roleId="x27k.8655966904682451042" type="c4fa.ArbitraryTextExpression" typeId="c4fa.3830958861296871078" id="7308356872494556870">
         <node role="items" roleId="c4fa.3830958861296879115" type="c4fa.AbritraryTextItem" typeId="c4fa.3830958861296879113" id="7308356872494556872">
           <property name="text" nameId="c4fa.3830958861296879114" value="dummy" />
         </node>
@@ -471,7 +471,7 @@
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.GlobalConstantFunctionDeclaration" typeId="x27k.6021475212425916971" id="3926162927329457386">
       <property name="name" nameId="tpck.1169194664001" value="va_arg" />
       <property name="preventNameMangling" nameId="x27k.6708182213627106114" value="true" />
-      <node role="content" roleId="x27k.7308356872494485437" type="c4fa.ArbitraryTextExpression" typeId="c4fa.3830958861296871078" id="7308356872494556834">
+      <node role="content" roleId="x27k.8655966904682451042" type="c4fa.ArbitraryTextExpression" typeId="c4fa.3830958861296871078" id="7308356872494556834">
         <node role="items" roleId="c4fa.3830958861296879115" type="c4fa.AbritraryTextItem" typeId="c4fa.3830958861296879113" id="7308356872494556836">
           <property name="text" nameId="c4fa.3830958861296879114" value="dummy" />
         </node>
@@ -498,7 +498,7 @@
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.GlobalConstantFunctionDeclaration" typeId="x27k.6021475212425916971" id="3926162927329529281">
       <property name="name" nameId="tpck.1169194664001" value="va_end" />
       <property name="preventNameMangling" nameId="x27k.6708182213627106114" value="true" />
-      <node role="content" roleId="x27k.7308356872494485437" type="c4fa.ArbitraryTextExpression" typeId="c4fa.3830958861296871078" id="7308356872494556706">
+      <node role="content" roleId="x27k.8655966904682451042" type="c4fa.ArbitraryTextExpression" typeId="c4fa.3830958861296871078" id="7308356872494556706">
         <node role="items" roleId="c4fa.3830958861296879115" type="c4fa.AbritraryTextItem" typeId="c4fa.3830958861296879113" id="7308356872494556708">
           <property name="text" nameId="c4fa.3830958861296879114" value="dummy" />
         </node>
