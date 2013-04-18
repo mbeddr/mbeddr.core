@@ -4,9 +4,6 @@
     <modelRoot path="${solution_descriptor}/models" />
   </models>
   <sourcePath />
-  <dependencies>
-    <dependency reexport="false">41e01e06-e491-4e99-b423-0d3299bae764(com.mbeddr.ext.exceptionhandling.lib)</dependency>
-  </dependencies>
   <usedLanguages>
     <usedLanguage>89c70b13-7f9c-47c3-b3c2-c218b52ed82c(com.mbeddr.core.debug.test)</usedLanguage>
     <usedLanguage>7bb2fde4-1dd3-4cc6-b8d6-6755853dd5fd(com.mbeddr.ext.exceptionhandling)</usedLanguage>

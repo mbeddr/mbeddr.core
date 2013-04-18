@@ -14,8 +14,8 @@
       <modulePath path="${project}/tests/test.debugging.core/core.msd" />
       <modulePath path="${project}/tests/test.debugging.cross/test.debugging.cross.msd" />
       <modulePath path="${project}/tests/test.debugging.ext.components/test.debugging.ext.components.msd" />
-      <modulePath path="${project}/tests/test.debugging.ext.exceptionhadling/test.debugging.ext.exceptionhadling.msd" folder="" />
-      <modulePath path="${project}/tests/test.debugging.ext.physical-units/test.debugging.ext.physical-units.msd" folder="" />
+      <modulePath path="${project}/tests/test.debugging.ext.exceptionhadling/test.debugging.ext.exceptionhadling.msd" />
+      <modulePath path="${project}/tests/test.debugging.ext.physical-units/test.debugging.ext.physical-units.msd" />
       <modulePath path="${project}/tests/test.debugging.ext.statemachines/test.debugging.ext.statemachines.msd" />
     </projectModules>
     <genConfs />
