@@ -19,7 +19,7 @@
       <property name="path" nameId="zpaf.1535917470678273194" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.core/tests/NewSolution/filesToImportAsH" />
     </node>
     <node role="baseDir" roleId="zpaf.1535917470678426803" type="zpaf.IncludePath" typeId="zpaf.1535917470678273193" id="1535917470678401718">
-      <property name="import" nameId="zpaf.1535917470678390284" value="header" />
+      <property name="import" nameId="zpaf.1535917470678390284" value="source" />
       <property name="path" nameId="zpaf.1535917470678273194" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.core/tests/NewSolution/filesToImportAsC" />
     </node>
   </root>
