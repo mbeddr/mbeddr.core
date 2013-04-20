@@ -87,6 +87,14 @@
     <node type="tpee.ClassConcept" typeId="tpee.1068390468198" id="6763953563861026298">
       <property name="name" nameId="tpck.1169194664001" value="Concatenator" />
     </node>
+    <node type="1i04.ConceptBehavior" typeId="1i04.1225194240794" id="7946676408104689222">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="typeswitch" />
+      <link role="concept" roleId="1i04.1225194240799" targetNodeId="hba4.7946676408104688781" resolveInfo="TypeSwitchCaseVariableDeclaration" />
+    </node>
+    <node type="1i04.ConceptBehavior" typeId="1i04.1225194240794" id="7946676408104739373">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="typeswitch" />
+      <link role="concept" roleId="1i04.1225194240799" targetNodeId="hba4.7946676408104549967" resolveInfo="TypeSwitch" />
+    </node>
   </roots>
   <root id="374287044672185901">
     <node role="method" roleId="1i04.1225194240805" type="1i04.ConceptMethodDeclaration" typeId="1i04.1225194472830" id="374287044672185904">
@@ -1601,6 +1609,30 @@
       </node>
     </node>
     <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="6763953563861026299" />
+  </root>
+  <root id="7946676408104689222">
+    <node role="constructor" roleId="1i04.1225194240801" type="1i04.ConceptConstructorDeclaration" typeId="1i04.1225194413805" id="7946676408104689223">
+      <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="7946676408104689224">
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="7946676408104689225">
+          <node role="expression" roleId="tpee.1068580123156" type="tpee.AssignmentExpression" typeId="tpee.1068498886294" id="7946676408104689294">
+            <node role="rValue" roleId="tpee.1068498886297" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="7946676408104689297">
+              <property name="value" nameId="tpee.1070475926801" value="it" />
+            </node>
+            <node role="lValue" roleId="tpee.1068498886295" type="tpee.DotExpression" typeId="tpee.1197027756228" id="7946676408104689267">
+              <node role="operand" roleId="tpee.1197027771414" type="1i04.ThisNodeExpression" typeId="1i04.1225194691553" id="7946676408104689226" />
+              <node role="operation" roleId="tpee.1197027833540" type="tp25.SPropertyAccess" typeId="tp25.1138056022639" id="7946676408104689272">
+                <link role="property" roleId="tp25.1138056395725" targetNodeId="tpck.1169194664001" resolveInfo="name" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </root>
+  <root id="7946676408104739373">
+    <node role="constructor" roleId="1i04.1225194240801" type="1i04.ConceptConstructorDeclaration" typeId="1i04.1225194413805" id="7946676408104739374">
+      <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="7946676408104739375" />
+    </node>
   </root>
 </model>
 
