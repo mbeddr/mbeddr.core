@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model modelUID="r:dcb9db89-12fe-42a0-a74f-d5b98b20d437(test.imp.core.cimport.simple)">
+<model modelUID="r:dcb9db89-12fe-42a0-a74f-d5b98b20d437(test.imp.core.cimport.simpleC)">
   <persistence version="7" />
   <language namespace="797272cc-7fb5-4c24-81e2-78fd0a449d00(com.mbeddr.core.cimport)" />
   <devkit namespace="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
   <import index="zpaf" modelUID="r:c88db48d-d023-4410-8481-c1d5ae5bf08f(com.mbeddr.core.cimport.structure)" version="-1" implicit="yes" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="20" implicit="yes" />
-  <import index="clbe" modelUID="r:61d840b4-12c1-49ea-b142-b2a1550a9b15(com.mbeddr.core.udt.structure)" version="7" implicit="yes" />
   <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="5" implicit="yes" />
   <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="4" implicit="yes" />
   <roots>
@@ -16,14 +15,14 @@
     <node type="mj1l.TypeSizeConfiguration" typeId="mj1l.3335993110369795380" id="7946676408105000256">
       <property name="virtualPackage" nameId="tpck.1193676396447" value="__config" />
     </node>
-    <node type="x27k.ExternalModule" typeId="x27k.6116558314501417921" id="7946676408105000327">
-      <property name="name" nameId="tpck.1169194664001" value="someOtherHeader" />
+    <node type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="7946676408105218617">
+      <property name="name" nameId="tpck.1169194664001" value="functionDeclaration" />
     </node>
-    <node type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="7946676408105000329">
-      <property name="name" nameId="tpck.1169194664001" value="basics" />
+    <node type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="7946676408105218621">
+      <property name="name" nameId="tpck.1169194664001" value="moduleContentsUser" />
     </node>
-    <node type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="7946676408105000352">
-      <property name="name" nameId="tpck.1169194664001" value="someHeader" />
+    <node type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="7946676408105218622">
+      <property name="name" nameId="tpck.1169194664001" value="splitHC" />
     </node>
   </roots>
   <root id="1535917470678382147">
@@ -32,12 +31,12 @@
       <property name="path" nameId="zpaf.1535917470678273194" value="/usr/include/" />
     </node>
     <node role="includePath" roleId="zpaf.1535917470678273195" type="zpaf.IncludePath" typeId="zpaf.1535917470678273193" id="7946676408104523605">
-      <property name="import" nameId="zpaf.1535917470678390284" value="header" />
-      <property name="path" nameId="zpaf.1535917470678273194" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.core/tests/NewSolution/filesToImportAsH" />
+      <property name="import" nameId="zpaf.1535917470678390284" value="existing" />
+      <property name="path" nameId="zpaf.1535917470678273194" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.core/tests/NewSolution/import/filesToImportAsH" />
     </node>
     <node role="baseDir" roleId="zpaf.1535917470678426803" type="zpaf.IncludePath" typeId="zpaf.1535917470678273193" id="1535917470678401718">
       <property name="import" nameId="zpaf.1535917470678390284" value="source" />
-      <property name="path" nameId="zpaf.1535917470678273194" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.core/tests/NewSolution/filesToImportAsC" />
+      <property name="path" nameId="zpaf.1535917470678273194" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.core/tests/NewSolution/import/filesToImportAsC" />
     </node>
   </root>
   <root id="7946676408105000256">
@@ -193,89 +192,55 @@
       </node>
     </node>
   </root>
-  <root id="7946676408105000327">
-    <node role="descriptors" roleId="x27k.6116558314501417978" type="x27k.HeaderDescriptor" typeId="x27k.6116558314501417952" id="7946676408105000328">
-      <property name="path" nameId="x27k.6116558314501417936" value="&quot;/Users/berndkolb/mps/mbeddr-split/mbeddr-25/mbeddr.core/code/languages/com.mbeddr.core/tests/NewSolution/filesToImportAsH/someOtherHeader.h&quot;" />
+  <root id="7946676408105218617">
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="7946676408105218618">
+      <property name="exported" nameId="x27k.1317894735999272944" value="false" />
+      <property name="extern" nameId="x27k.6708182213627045681" value="false" />
+      <property name="inline" nameId="x27k.5679441017213716505" value="false" />
+      <property name="name" nameId="tpck.1169194664001" value="aFunctionWithDeclaration" />
+      <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="7946676408105218619">
+        <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+        <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+      </node>
+      <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="7946676408105218620" />
     </node>
   </root>
-  <root id="7946676408105000329">
-    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.GlobalConstantDeclaration" typeId="x27k.3788988821851860886" id="7946676408105000330">
+  <root id="7946676408105218621" />
+  <root id="7946676408105218622">
+    <node role="imports" roleId="x27k.1317894735999304826" type="zpaf.LazyModuleDependency" typeId="zpaf.7946676408105068622" id="7946676408105218623">
+      <property name="name" nameId="tpck.1169194664001" value="splitHC.h" />
+      <property name="path" nameId="zpaf.7946676408105069456" value="/Users/berndkolb/mps/mbeddr-split/mbeddr-25/mbeddr.core/code/languages/com.mbeddr.core/tests/NewSolution/import/filesToImportAsC/splitHC.h" />
+      <property name="reexport" nameId="zpaf.7946676408105069558" value="false" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.GlobalVariableDeclaration" typeId="x27k.6610873504380335822" id="7946676408105218624">
       <property name="exported" nameId="x27k.1317894735999272944" value="false" />
-      <property name="name" nameId="tpck.1169194664001" value="lala" />
-      <node role="value" roleId="x27k.3376775282622233992" type="c4fa.ArbitraryTextExpression" typeId="c4fa.3830958861296871078" id="7946676408105000331">
-        <node role="items" roleId="c4fa.3830958861296879115" type="c4fa.AbritraryTextItem" typeId="c4fa.3830958861296879113" id="7946676408105000332">
+      <property name="name" nameId="tpck.1169194664001" value="aVarWithConstantInit" />
+      <node role="type" roleId="mj1l.318113533128716676" type="mj1l.IntType" typeId="mj1l.8860443239512128108" id="7946676408105218625">
+        <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+        <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+      </node>
+      <node role="init" roleId="x27k.2771264470558526601" type="x27k.GlobalConstantRef" typeId="x27k.3788988821852026523" id="7946676408105218633">
+        <link role="constant" roleId="x27k.3376775282622611130" targetNodeId="7946676408105218630" resolveInfo="aConst" />
+      </node>
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.GlobalConstantDeclaration" typeId="x27k.3788988821851860886" id="7946676408105218627">
+      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
+      <property name="name" nameId="tpck.1169194664001" value="SPLITHC_H" />
+      <node role="value" roleId="x27k.3376775282622233992" type="c4fa.ArbitraryTextExpression" typeId="c4fa.3830958861296871078" id="7946676408105218628">
+        <node role="items" roleId="c4fa.3830958861296879115" type="c4fa.AbritraryTextItem" typeId="c4fa.3830958861296879113" id="7946676408105218629">
+          <property name="text" nameId="c4fa.3830958861296879114" value="" />
+        </node>
+      </node>
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.GlobalConstantDeclaration" typeId="x27k.3788988821851860886" id="7946676408105218630">
+      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
+      <property name="name" nameId="tpck.1169194664001" value="aConst" />
+      <node role="value" roleId="x27k.3376775282622233992" type="c4fa.ArbitraryTextExpression" typeId="c4fa.3830958861296871078" id="7946676408105218631">
+        <node role="items" roleId="c4fa.3830958861296879115" type="c4fa.AbritraryTextItem" typeId="c4fa.3830958861296879113" id="7946676408105218632">
           <property name="text" nameId="c4fa.3830958861296879114" value="10" />
         </node>
       </node>
     </node>
-    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.GlobalConstantFunctionDeclaration" typeId="x27k.6021475212425916971" id="7946676408105000333">
-      <property name="exported" nameId="x27k.1317894735999272944" value="false" />
-      <property name="name" nameId="tpck.1169194664001" value="lala1" />
-      <node role="content" roleId="x27k.8655966904682451042" type="c4fa.ArbitraryTextExpression" typeId="c4fa.3830958861296871078" id="7946676408105000334">
-        <node role="items" roleId="c4fa.3830958861296879115" type="c4fa.AbritraryTextItem" typeId="c4fa.3830958861296879113" id="7946676408105000335">
-          <property name="text" nameId="c4fa.3830958861296879114" value="x+y" />
-        </node>
-      </node>
-      <node role="arguments" roleId="x27k.6021475212425916983" type="x27k.GlobalConstantFunctionArgument" typeId="x27k.6021475212426054485" id="7946676408105000336">
-        <property name="name" nameId="tpck.1169194664001" value="x" />
-        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int64tType" typeId="mj1l.8463282783691618445" id="7946676408105000337">
-          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
-          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
-        </node>
-      </node>
-      <node role="arguments" roleId="x27k.6021475212425916983" type="x27k.GlobalConstantFunctionArgument" typeId="x27k.6021475212426054485" id="7946676408105000338">
-        <property name="name" nameId="tpck.1169194664001" value="y" />
-        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int64tType" typeId="mj1l.8463282783691618445" id="7946676408105000339">
-          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
-          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
-        </node>
-      </node>
-    </node>
-    <node role="contents" roleId="x27k.6437088627575722833" type="clbe.TypeDef" typeId="clbe.6116558314501347857" id="7946676408105000340">
-      <property name="exported" nameId="x27k.1317894735999272944" value="false" />
-      <property name="name" nameId="tpck.1169194664001" value="someInt" />
-      <node role="original" roleId="clbe.6116558314501347862" type="mj1l.UnsignedIntType" typeId="mj1l.8463282783691492730" id="7946676408105000341">
-        <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
-        <property name="const" nameId="mj1l.2941277002445651368" value="false" />
-      </node>
-    </node>
-    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.GlobalVariableDeclaration" typeId="x27k.6610873504380335822" id="7946676408105000342">
-      <property name="exported" nameId="x27k.1317894735999272944" value="false" />
-      <property name="name" nameId="tpck.1169194664001" value="withModifiers" />
-    </node>
-    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.GlobalVariableDeclaration" typeId="x27k.6610873504380335822" id="7946676408105000343">
-      <property name="exported" nameId="x27k.1317894735999272944" value="false" />
-      <property name="name" nameId="tpck.1169194664001" value="td" />
-      <node role="init" roleId="x27k.2771264470558526601" type="x27k.GlobalConstantRef" typeId="x27k.3788988821852026523" id="7946676408105000353">
-        <link role="constant" roleId="x27k.3376775282622611130" targetNodeId="7946676408105000330" resolveInfo="lala" />
-      </node>
-    </node>
-    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="7946676408105000345">
-      <property name="exported" nameId="x27k.1317894735999272944" value="false" />
-      <property name="extern" nameId="x27k.6708182213627045681" value="false" />
-      <property name="inline" nameId="x27k.5679441017213716505" value="false" />
-      <property name="name" nameId="tpck.1169194664001" value="fun" />
-      <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="7946676408105000346">
-        <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
-        <property name="const" nameId="mj1l.2941277002445651368" value="false" />
-      </node>
-      <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="7946676408105000347" />
-    </node>
-    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="7946676408105000348">
-      <property name="exported" nameId="x27k.1317894735999272944" value="false" />
-      <property name="extern" nameId="x27k.6708182213627045681" value="false" />
-      <property name="inline" nameId="x27k.5679441017213716505" value="false" />
-      <property name="name" nameId="tpck.1169194664001" value="funWithArg" />
-      <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="7946676408105000349">
-        <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
-        <property name="const" nameId="mj1l.2941277002445651368" value="false" />
-      </node>
-      <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="7946676408105000350" />
-      <node role="arguments" roleId="x27k.5708867820623310661" type="x27k.Argument" typeId="x27k.7892328519581704407" id="7946676408105000351">
-        <property name="name" nameId="tpck.1169194664001" value="arg" />
-      </node>
-    </node>
   </root>
-  <root id="7946676408105000352" />
 </model>
 
