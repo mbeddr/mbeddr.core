@@ -37,6 +37,9 @@
       <property name="name" nameId="tpck.1169194664001" value="comp_LazyRef" />
       <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="zpaf.7946676408104787334" resolveInfo="ILazyRef" />
     </node>
+    <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="7946676408104983732">
+      <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="zpaf.7946676408104983730" resolveInfo="ErrorType" />
+    </node>
   </roots>
   <root id="1535917470678273196">
     <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="1535917470678390285">
@@ -547,7 +550,7 @@
                                     <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="1535917470678428908" resolveInfo="importer" />
                                   </node>
                                   <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="1535917470678440144">
-                                    <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="c4li.1535917470678426792" resolveInfo="startImport" />
+                                    <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="c4li.1535917470678426792" resolveInfo="doImport" />
                                     <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="7946676408104482464">
                                       <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="7946676408104482459" resolveInfo="model" />
                                     </node>
@@ -631,6 +634,23 @@
         <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="tpck.1169194664001" resolveInfo="name" />
       </node>
       <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Indent" typeId="tpc2.1237303669825" id="7946676408104787314" />
+    </node>
+  </root>
+  <root id="7946676408104983732">
+    <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="7946676408104983734">
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="7946676408104983739">
+        <property name="text" nameId="tpc2.1073389577007" value="unknown:" />
+        <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.ForegroundColorStyleClassItem" typeId="tpc2.1186404549998" id="7946676408104983740">
+          <property name="color" nameId="tpc2.1186403713874" value="red" />
+        </node>
+      </node>
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Property" typeId="tpc2.1073389658414" id="7946676408104983737">
+        <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="tpck.1169194664001" resolveInfo="name" />
+        <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.ForegroundColorStyleClassItem" typeId="tpc2.1186404549998" id="7946676408104983741">
+          <property name="color" nameId="tpc2.1186403713874" value="red" />
+        </node>
+      </node>
+      <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Indent" typeId="tpc2.1237303669825" id="7946676408104983736" />
     </node>
   </root>
 </model>
