@@ -6,7 +6,6 @@
   </models>
   <sourcePath />
   <usedLanguages>
-    <usedLanguage>59b77d04-29f8-46b7-b2b7-ec3b02751977(com.mbeddr.ext.coords)</usedLanguage>
     <usedLanguage>8585453e-6bfb-4d80-98de-b16074f1d86c(jetbrains.mps.lang.test)</usedLanguage>
   </usedLanguages>
   <usedDevKits>
