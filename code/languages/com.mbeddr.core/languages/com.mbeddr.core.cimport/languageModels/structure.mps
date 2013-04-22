@@ -161,19 +161,8 @@
       <property name="name" nameId="tpck.1169194664001" value="reexport" />
       <link role="dataType" roleId="tpce.1082985295845" targetNodeId="tpck.1082983657063" resolveInfo="boolean" />
     </node>
-    <node role="conceptLink" roleId="tpce.1105736949336" type="tpce.ReferenceConceptLink" typeId="tpce.1105736778597" id="7946676408105068627">
-      <link role="conceptLinkDeclaration" roleId="tpce.1105736734721" targetNodeId="7946676408104788104" resolveInfo="targetConcept" />
-      <link role="target" roleId="tpce.1105736807942" targetNodeId="x27k.6437088627575722813" resolveInfo="Module" />
-    </node>
-    <node role="conceptLink" roleId="tpce.1105736949336" type="tpce.ReferenceConceptLink" typeId="tpce.1105736778597" id="7946676408105068629">
-      <link role="conceptLinkDeclaration" roleId="tpce.1105736734721" targetNodeId="7946676408104833713" resolveInfo="referencingConcept" />
-      <link role="target" roleId="tpce.1105736807942" targetNodeId="x27k.1317894735999299713" resolveInfo="ModuleImport" />
-    </node>
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7946676408105068623">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="tpck.1169194658468" resolveInfo="INamedConcept" />
-    </node>
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7946676408105068625">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="7946676408104787334" resolveInfo="ILazyRef" />
     </node>
   </root>
 </model>
