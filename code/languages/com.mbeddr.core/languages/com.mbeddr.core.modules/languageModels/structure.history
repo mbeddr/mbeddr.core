@@ -52,5 +52,11 @@
     </dependencies>
     <rename id="x27k.8655966904682451042" type="CHILD" from="bodyAsExpr" to="content" />
   </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="4" />
+    </dependencies>
+    <rename id="x27k.7308356872494660981" type="CONCEPT" from="GlobalConstantFuntionArgumentRef" to="GlobalConstantFunctionArgumentRef" />
+  </StructureModification>
 </history>
 

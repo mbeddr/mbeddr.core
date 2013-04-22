@@ -20,13 +20,15 @@
   <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="5" implicit="yes" />
   <import index="tp25" modelUID="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" version="16" implicit="yes" />
   <import index="tpee" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="4" implicit="yes" />
+  <import index="yvrq" modelUID="r:2217bb25-9695-4af2-948e-8d9b31dd5a1a(com.mbeddr.cc.var.rt.structure)" version="2" implicit="yes" />
+  <import index="qqyh" modelUID="r:a74300b8-76a8-461e-befa-fc86b0ad5dd9(com.mbeddr.cc.var.fm.structure)" version="6" implicit="yes" />
   <roots>
     <node type="tpf8.MappingConfiguration" typeId="tpf8.1095416546421" id="8000796061690146339">
       <property name="name" nameId="tpck.1169194664001" value="main" />
     </node>
     <node type="mj1l.TypeSizeConfiguration" typeId="mj1l.3335993110369795380" id="8000796061690169865" />
-    <node type=".com.mbeddr.cc.var.fm.structure.VariabilitySupport" id="8000796061690169908">
-      <property name="name" value="VS" />
+    <node type="qqyh.VariabilitySupport" typeId="qqyh.6825476687691337712" id="8000796061690169908">
+      <property name="name" nameId="tpck.1169194664001" value="VS" />
     </node>
   </roots>
   <root id="8000796061690146339">
@@ -35,28 +37,28 @@
       <node role="ruleConsequence" roleId="tpf8.1169672767469" type="tpf8.InlineTemplateWithContext_RuleConsequence" typeId="tpf8.8900764248744213868" id="8000796061690146379">
         <node role="contentNode" roleId="tpf8.8900764248744213871" type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="8000796061690146381">
           <property name="name" nameId="tpck.1169194664001" value="dummy" />
-          <node role="contents" roleId="x27k.6437088627575722833" type=".com.mbeddr.cc.var.rt.structure.RtFeatureModel" id="8000796061690169864">
-            <link role="featureModel" targetNodeId="8000796061690169910" resolveInfo="FM" />
+          <node role="contents" roleId="x27k.6437088627575722833" type="yvrq.RtFeatureModel" typeId="yvrq.8882953773355574483" id="8000796061690169864">
+            <link role="featureModel" roleId="yvrq.8882953773355584900" targetNodeId="8000796061690169910" resolveInfo="FM" />
           </node>
           <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="8000796061690146384">
             <property name="name" nameId="tpck.1169194664001" value="dummy" />
             <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="8000796061690146386">
               <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="8000796061690146390">
                 <property name="name" nameId="tpck.1169194664001" value="x" />
-                <node role="type" roleId="mj1l.318113533128716676" type=".com.mbeddr.cc.var.rt.structure.RtFeatureModelType" id="8000796061690169954">
-                  <property name="volatile" value="false" />
-                  <property name="const" value="false" />
-                  <link role="featureModel" targetNodeId="8000796061690169864" resolveInfo="FM" />
+                <node role="type" roleId="mj1l.318113533128716676" type="yvrq.RtFeatureModelType" typeId="yvrq.8882953773355826085" id="8000796061690169954">
+                  <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+                  <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+                  <link role="featureModel" roleId="yvrq.8882953773355826086" targetNodeId="8000796061690169864" resolveInfo="FM" />
                 </node>
                 <node role="init" roleId="c4fa.4185783222026502647" type="k146.BlockExpression" typeId="k146.5686538669182273028" id="8000796061690146393">
                   <node role="body" roleId="k146.5686538669182273029" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="8000796061690146394">
                     <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="8000796061690169853">
                       <property name="name" nameId="tpck.1169194664001" value="cfg" />
-                      <node role="type" roleId="mj1l.318113533128716676" type=".com.mbeddr.cc.var.rt.structure.RtFeatureModelType" id="8000796061690169854">
-                        <property name="volatile" value="false" />
-                        <property name="const" value="false" />
-                        <link role="featureModel" targetNodeId="8000796061690169864" resolveInfo="FM" />
-                        <node role="smodelAttribute" type="tpf8.ReferenceMacro" typeId="tpf8.1088761943574" id="8000796061690169918">
+                      <node role="type" roleId="mj1l.318113533128716676" type="yvrq.RtFeatureModelType" typeId="yvrq.8882953773355826085" id="8000796061690169854">
+                        <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+                        <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+                        <link role="featureModel" roleId="yvrq.8882953773355826086" targetNodeId="8000796061690169864" resolveInfo="FM" />
+                        <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.ReferenceMacro" typeId="tpf8.1088761943574" id="8000796061690169918">
                           <property name="linkRole" nameId="tpck.1757699476691236116" value="featureModel" />
                           <node role="referentFunction" roleId="tpf8.1167770376702" type="tpf8.ReferenceMacro_GetReferent" typeId="tpf8.1167770111131" id="8000796061690169921">
                             <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="8000796061690169922">
@@ -73,13 +75,13 @@
                         </node>
                       </node>
                     </node>
-                    <node role="statements" roleId="c4fa.4185783222026475862" type=".com.mbeddr.cc.var.rt.structure.StoreRtConfigStatement" id="8000796061690169861">
-                      <link role="rtFeatureModel" targetNodeId="8000796061690169864" resolveInfo="FM" />
-                      <link role="configModel" targetNodeId="8000796061690169914" resolveInfo="CM" />
-                      <node role="target" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="8000796061690169917">
+                    <node role="statements" roleId="c4fa.4185783222026475862" type="yvrq.StoreRtConfigStatement" typeId="yvrq.8882953773355830195" id="8000796061690169861">
+                      <link role="rtFeatureModel" roleId="yvrq.8000796061690159789" targetNodeId="8000796061690169864" resolveInfo="FM" />
+                      <link role="configModel" roleId="yvrq.8000796061690159814" targetNodeId="8000796061690169914" resolveInfo="CM" />
+                      <node role="target" roleId="yvrq.8882953773355838792" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="8000796061690169917">
                         <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="8000796061690169853" resolveInfo="cfg" />
                       </node>
-                      <node role="smodelAttribute" type="tpf8.ReferenceMacro" typeId="tpf8.1088761943574" id="8000796061690169936">
+                      <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.ReferenceMacro" typeId="tpf8.1088761943574" id="8000796061690169936">
                         <property name="linkRole" nameId="tpck.1757699476691236116" value="rtFeatureModel" />
                         <node role="referentFunction" roleId="tpf8.1167770376702" type="tpf8.ReferenceMacro_GetReferent" typeId="tpf8.1167770111131" id="8000796061690169939">
                           <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="8000796061690169940">
@@ -94,7 +96,7 @@
                           </node>
                         </node>
                       </node>
-                      <node role="smodelAttribute" type="tpf8.ReferenceMacro" typeId="tpf8.1088761943574" id="8000796061690169945">
+                      <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.ReferenceMacro" typeId="tpf8.1088761943574" id="8000796061690169945">
                         <property name="linkRole" nameId="tpck.1757699476691236116" value="configModel" />
                         <node role="referentFunction" roleId="tpf8.1167770376702" type="tpf8.ReferenceMacro_GetReferent" typeId="tpf8.1167770111131" id="8000796061690169948">
                           <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="8000796061690169949">
@@ -283,17 +285,17 @@
     </node>
   </root>
   <root id="8000796061690169908">
-    <node role="contents" type=".com.mbeddr.cc.var.fm.structure.FeatureModel" id="8000796061690169910">
-      <property name="name" value="FM" />
-      <node role="root" type=".com.mbeddr.cc.var.fm.structure.Feature" id="8000796061690169912">
-        <property name="name" value="root" />
+    <node role="contents" roleId="qqyh.6825476687691337713" type="qqyh.FeatureModel" typeId="qqyh.6825476687691297434" id="8000796061690169910">
+      <property name="name" nameId="tpck.1169194664001" value="FM" />
+      <node role="root" roleId="qqyh.6825476687691297435" type="qqyh.Feature" typeId="qqyh.6825476687691297426" id="8000796061690169912">
+        <property name="name" nameId="tpck.1169194664001" value="root" />
       </node>
     </node>
-    <node role="contents" type=".com.mbeddr.cc.var.fm.structure.ConfigurationModel" id="8000796061690169914">
-      <property name="name" value="CM" />
-      <link role="configures" targetNodeId="8000796061690169910" resolveInfo="FM" />
-      <node role="rootFeature" type=".com.mbeddr.cc.var.fm.structure.SelectedFeature" id="8000796061690169916">
-        <link role="feature" targetNodeId="8000796061690169912" resolveInfo="root" />
+    <node role="contents" roleId="qqyh.6825476687691337713" type="qqyh.ConfigurationModel" typeId="qqyh.6825476687691297416" id="8000796061690169914">
+      <property name="name" nameId="tpck.1169194664001" value="CM" />
+      <link role="configures" roleId="qqyh.6825476687691297418" targetNodeId="8000796061690169910" resolveInfo="FM" />
+      <node role="rootFeature" roleId="qqyh.6825476687691297417" type="qqyh.SelectedFeature" typeId="qqyh.6825476687691297422" id="8000796061690169916">
+        <link role="feature" roleId="qqyh.6825476687691297425" targetNodeId="8000796061690169912" resolveInfo="root" />
       </node>
     </node>
   </root>
