@@ -31,7 +31,7 @@
     </node>
     <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="7946676408104787310">
       <property name="virtualPackage" nameId="tpck.1193676396447" value="lazy" />
-      <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="zpaf.7946676408104787257" resolveInfo="LazyGlobalConstantRefExpression" />
+      <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="zpaf.7946676408104787257" resolveInfo="LazyStaticMemLocRefExpression" />
     </node>
     <node type="tpc2.EditorComponentDeclaration" typeId="tpc2.1078938745671" id="7946676408104808154">
       <property name="virtualPackage" nameId="tpck.1193676396447" value="lazy" />
@@ -42,7 +42,7 @@
       <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="zpaf.7946676408104983730" resolveInfo="ErrorType" />
     </node>
     <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="7946676408105020427">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="lazy" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="lazy.types" />
       <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="zpaf.7946676408105020419" resolveInfo="LazyTypeDefType" />
     </node>
     <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="7946676408105068630">
@@ -51,6 +51,29 @@
     </node>
     <node type="tpee.ClassConcept" typeId="tpee.1068390468198" id="6444423870370150849">
       <property name="name" nameId="tpck.1169194664001" value="ImportTypeMapper" />
+    </node>
+    <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="7098772480013595212">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="lazy" />
+      <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="zpaf.7098772480013595206" resolveInfo="LazyEnumLiteralRef" />
+    </node>
+    <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="4501525338455684128">
+      <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="zpaf.4501525338455684126" resolveInfo="ProblemType" />
+    </node>
+    <node type="tpc2.StyleSheet" typeId="tpc2.1186402211651" id="4096671478327995360">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="lazy" />
+      <property name="name" nameId="tpck.1169194664001" value="error" />
+    </node>
+    <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="4096671478328039357">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="lazy.types" />
+      <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="zpaf.4096671478328039351" resolveInfo="LazyEnumType" />
+    </node>
+    <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="4096671478328203952">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="lazy.types" />
+      <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="zpaf.4096671478328203946" resolveInfo="LazyStructType" />
+    </node>
+    <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="4096671478328204067">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="lazy.types" />
+      <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="zpaf.4096671478328204063" resolveInfo="LazyUnionType" />
     </node>
   </roots>
   <root id="1535917470678273196">
@@ -490,9 +513,7 @@
   </root>
   <root id="7946676408105068630">
     <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="6444423870370282317">
-      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Error" typeId="tpc2.1075375595203" id="6444423870370370547">
-        <property name="text" nameId="tpc2.1075375595204" value="unresolved" />
-      </node>
+      <link role="styleClass" roleId="tpc2.1186406756722" targetNodeId="4096671478327995361" resolveInfo="error" />
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="6444423870370282318">
         <property name="text" nameId="tpc2.1073389577007" value="[[" />
       </node>
@@ -608,6 +629,66 @@
       </node>
     </node>
     <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="6444423870370150850" />
+  </root>
+  <root id="7098772480013595212">
+    <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Component" typeId="tpc2.1078939183254" id="7098772480013595830">
+      <link role="editorComponent" roleId="tpc2.1078939183255" targetNodeId="7946676408104808154" resolveInfo="comp_LazyRef" />
+    </node>
+  </root>
+  <root id="4501525338455684128">
+    <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="4501525338455718000">
+      <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Horizontal" typeId="tpc2.1106270549637" id="4501525338455718001" />
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Error" typeId="tpc2.1075375595203" id="4501525338455717999">
+        <property name="text" nameId="tpc2.1075375595204" value="Problem type" />
+      </node>
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_ReadOnlyModelAccessor" typeId="tpc2.1225900081164" id="4501525338455718005">
+        <node role="modelAccessor" roleId="tpc2.1225900141900" type="tpc2.ReadOnlyModelAccessor" typeId="tpc2.1225898583838" id="4501525338455718006">
+          <node role="getter" roleId="tpc2.1225898971709" type="tpc2.QueryFunction_ModelAccess_Getter" typeId="tpc2.1176717841777" id="4501525338455718007">
+            <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="4501525338455718008">
+              <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="4501525338455718009">
+                <node role="expression" roleId="tpee.1068580123156" type="tpee.PlusExpression" typeId="tpee.1068581242875" id="2225494817512050371">
+                  <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.DotExpression" typeId="tpee.1197027756228" id="2225494817512050395">
+                    <node role="operand" roleId="tpee.1197027771414" type="tpc2.ConceptFunctionParameter_node" typeId="tpc2.1142886811589" id="2225494817512050374" />
+                    <node role="operation" roleId="tpee.1197027833540" type="tp25.SPropertyAccess" typeId="tp25.1138056022639" id="2225494817512050400">
+                      <link role="property" roleId="tp25.1138056395725" targetNodeId="tpck.1169194664001" resolveInfo="name" />
+                    </node>
+                  </node>
+                  <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="2225494817512050350">
+                    <property name="value" nameId="tpee.1070475926801" value="name: " />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </root>
+  <root id="4096671478327995360">
+    <node role="styleClass" roleId="tpc2.1186402402630" type="tpc2.StyleSheetClass" typeId="tpc2.1186402373407" id="4096671478327995361">
+      <property name="name" nameId="tpck.1169194664001" value="error" />
+      <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.BackgroundColorStyleClassItem" typeId="tpc2.1186404574412" id="4096671478328036271">
+        <property name="color" nameId="tpc2.1186403713874" value="red" />
+        <node role="query" roleId="tpc2.1186403803051" type="tpc2.RGBColor" typeId="tpc2.1225456267680" id="4096671478328036272">
+          <property name="value" nameId="tpc2.1225456424731" value="FF0000" />
+        </node>
+      </node>
+    </node>
+  </root>
+  <root id="4096671478328039357">
+    <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Component" typeId="tpc2.1078939183254" id="4096671478328040001">
+      <link role="editorComponent" roleId="tpc2.1078939183255" targetNodeId="7946676408104808154" resolveInfo="comp_LazyRef" />
+    </node>
+  </root>
+  <root id="4096671478328203952">
+    <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Component" typeId="tpc2.1078939183254" id="4096671478328204872">
+      <link role="editorComponent" roleId="tpc2.1078939183255" targetNodeId="7946676408104808154" resolveInfo="comp_LazyRef" />
+    </node>
+  </root>
+  <root id="4096671478328204067">
+    <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Component" typeId="tpc2.1078939183254" id="4096671478328204871">
+      <link role="editorComponent" roleId="tpc2.1078939183255" targetNodeId="7946676408104808154" resolveInfo="comp_LazyRef" />
+    </node>
   </root>
 </model>
 

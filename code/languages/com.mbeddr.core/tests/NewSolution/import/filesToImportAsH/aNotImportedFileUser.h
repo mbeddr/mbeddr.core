@@ -1,3 +1,4 @@
 #include <aNotImportedFile.h>
 
-//notImportedType aNotImportedTypeVar;
+notImportedType aNotImportedTypeVar;
+

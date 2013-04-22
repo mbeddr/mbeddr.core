@@ -247,7 +247,7 @@
         <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
         <property name="const" nameId="mj1l.2941277002445651368" value="false" />
       </node>
-      <node role="init" roleId="x27k.2771264470558526601" type="zpaf.LazyGlobalConstantRefExpression" typeId="zpaf.7946676408104787257" id="6444423870370370537">
+      <node role="init" roleId="x27k.2771264470558526601" type="zpaf.LazyStaticMemLocRefExpression" typeId="zpaf.7946676408104787257" id="6444423870370370537">
         <property name="name" nameId="tpck.1169194664001" value="aConst" />
       </node>
     </node>

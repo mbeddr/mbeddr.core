@@ -28,7 +28,7 @@
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
     </node>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7946676408104787257">
-      <property name="name" nameId="tpck.1169194664001" value="LazyGlobalConstantRefExpression" />
+      <property name="name" nameId="tpck.1169194664001" value="LazyStaticMemLocRefExpression" />
       <property name="virtualPackage" nameId="tpck.1193676396447" value="lazy" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="mj1l.8860443239512128050" resolveInfo="Expression" />
     </node>
@@ -41,14 +41,43 @@
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="mj1l.8860443239512128054" resolveInfo="Type" />
     </node>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7946676408105020419">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="lazy" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="lazy.types" />
       <property name="name" nameId="tpck.1169194664001" value="LazyTypeDefType" />
-      <link role="extends" roleId="tpce.1071489389519" targetNodeId="mj1l.8860443239512128054" resolveInfo="Type" />
+      <link role="extends" roleId="tpce.1071489389519" targetNodeId="4096671478328228386" resolveInfo="LazyType" />
     </node>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7946676408105068622">
       <property name="virtualPackage" nameId="tpck.1193676396447" value="lazy" />
       <property name="name" nameId="tpck.1169194664001" value="LazyModuleDependency" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="x27k.3830958861296798477" resolveInfo="ModuleDependency" />
+    </node>
+    <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7098772480013595206">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="lazy" />
+      <property name="name" nameId="tpck.1169194664001" value="LazyEnumLiteralRef" />
+      <link role="extends" roleId="tpce.1071489389519" targetNodeId="mj1l.8860443239512128050" resolveInfo="Expression" />
+    </node>
+    <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4501525338455684126">
+      <property name="name" nameId="tpck.1169194664001" value="ProblemType" />
+      <link role="extends" roleId="tpce.1071489389519" targetNodeId="mj1l.8860443239512128054" resolveInfo="Type" />
+    </node>
+    <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4096671478328039351">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="lazy.types" />
+      <property name="name" nameId="tpck.1169194664001" value="LazyEnumType" />
+      <link role="extends" roleId="tpce.1071489389519" targetNodeId="4096671478328228386" resolveInfo="LazyType" />
+    </node>
+    <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4096671478328203946">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="lazy.types" />
+      <property name="name" nameId="tpck.1169194664001" value="LazyStructType" />
+      <link role="extends" roleId="tpce.1071489389519" targetNodeId="4096671478328228386" resolveInfo="LazyType" />
+    </node>
+    <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4096671478328204063">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="lazy.types" />
+      <property name="name" nameId="tpck.1169194664001" value="LazyUnionType" />
+      <link role="extends" roleId="tpce.1071489389519" targetNodeId="4096671478328228386" resolveInfo="LazyType" />
+    </node>
+    <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4096671478328228386">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="lazy.types" />
+      <property name="name" nameId="tpck.1169194664001" value="LazyType" />
+      <link role="extends" roleId="tpce.1071489389519" targetNodeId="mj1l.8860443239512128054" resolveInfo="Type" />
     </node>
   </roots>
   <root id="1535917470678273191">
@@ -111,7 +140,7 @@
   <root id="7946676408104787257">
     <node role="conceptLink" roleId="tpce.1105736949336" type="tpce.ReferenceConceptLink" typeId="tpce.1105736778597" id="7946676408104788106">
       <link role="conceptLinkDeclaration" roleId="tpce.1105736734721" targetNodeId="7946676408104788104" resolveInfo="targetConcept" />
-      <link role="target" roleId="tpce.1105736807942" targetNodeId="x27k.3788988821851860886" resolveInfo="GlobalConstantDeclaration" />
+      <link role="target" roleId="tpce.1105736807942" targetNodeId="x27k.3376775282622611165" resolveInfo="StaticMemoryLocation" />
     </node>
     <node role="conceptLink" roleId="tpce.1105736949336" type="tpce.ReferenceConceptLink" typeId="tpce.1105736778597" id="7946676408104833719">
       <link role="conceptLinkDeclaration" roleId="tpce.1105736734721" targetNodeId="7946676408104833713" resolveInfo="referencingConcept" />
@@ -140,9 +169,6 @@
     </node>
   </root>
   <root id="7946676408105020419">
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7946676408105020420">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="7946676408104787334" resolveInfo="ILazyRef" />
-    </node>
     <node role="conceptLink" roleId="tpce.1105736949336" type="tpce.ReferenceConceptLink" typeId="tpce.1105736778597" id="7946676408105020421">
       <link role="conceptLinkDeclaration" roleId="tpce.1105736734721" targetNodeId="7946676408104833713" resolveInfo="referencingConcept" />
       <link role="target" roleId="tpce.1105736807942" targetNodeId="clbe.6116558314501347863" resolveInfo="TypeDefType" />
@@ -163,6 +189,54 @@
     </node>
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7946676408105068623">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="tpck.1169194658468" resolveInfo="INamedConcept" />
+    </node>
+  </root>
+  <root id="7098772480013595206">
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7098772480013595207">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="7946676408104787334" resolveInfo="ILazyRef" />
+    </node>
+  </root>
+  <root id="4501525338455684126">
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="2225494817512016475">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="tpck.1169194658468" resolveInfo="INamedConcept" />
+    </node>
+  </root>
+  <root id="4096671478328039351">
+    <node role="conceptLink" roleId="tpce.1105736949336" type="tpce.ReferenceConceptLink" typeId="tpce.1105736778597" id="4096671478328039354">
+      <link role="conceptLinkDeclaration" roleId="tpce.1105736734721" targetNodeId="7946676408104788104" resolveInfo="targetConcept" />
+      <link role="target" roleId="tpce.1105736807942" targetNodeId="clbe.8811614583515725851" resolveInfo="EnumDeclaration" />
+    </node>
+    <node role="conceptLink" roleId="tpce.1105736949336" type="tpce.ReferenceConceptLink" typeId="tpce.1105736778597" id="4096671478328039356">
+      <link role="conceptLinkDeclaration" roleId="tpce.1105736734721" targetNodeId="7946676408104833713" resolveInfo="referencingConcept" />
+      <link role="target" roleId="tpce.1105736807942" targetNodeId="clbe.8811614583515725893" resolveInfo="EnumType" />
+    </node>
+  </root>
+  <root id="4096671478328203946">
+    <node role="conceptLink" roleId="tpce.1105736949336" type="tpce.ReferenceConceptLink" typeId="tpce.1105736778597" id="4096671478328203949">
+      <link role="conceptLinkDeclaration" roleId="tpce.1105736734721" targetNodeId="7946676408104833713" resolveInfo="referencingConcept" />
+      <link role="target" roleId="tpce.1105736807942" targetNodeId="clbe.6394819151180597816" resolveInfo="StructType" />
+    </node>
+    <node role="conceptLink" roleId="tpce.1105736949336" type="tpce.ReferenceConceptLink" typeId="tpce.1105736778597" id="4096671478328203951">
+      <link role="conceptLinkDeclaration" roleId="tpce.1105736734721" targetNodeId="7946676408104788104" resolveInfo="targetConcept" />
+      <link role="target" roleId="tpce.1105736807942" targetNodeId="clbe.6394819151180597807" resolveInfo="StructDeclaration" />
+    </node>
+  </root>
+  <root id="4096671478328204063">
+    <node role="conceptLink" roleId="tpce.1105736949336" type="tpce.ReferenceConceptLink" typeId="tpce.1105736778597" id="4096671478328204064">
+      <link role="conceptLinkDeclaration" roleId="tpce.1105736734721" targetNodeId="7946676408104833713" resolveInfo="referencingConcept" />
+      <link role="target" roleId="tpce.1105736807942" targetNodeId="clbe.5882395403881907205" resolveInfo="UnionType" />
+    </node>
+    <node role="conceptLink" roleId="tpce.1105736949336" type="tpce.ReferenceConceptLink" typeId="tpce.1105736778597" id="4096671478328204065">
+      <link role="conceptLinkDeclaration" roleId="tpce.1105736734721" targetNodeId="7946676408104788104" resolveInfo="targetConcept" />
+      <link role="target" roleId="tpce.1105736807942" targetNodeId="clbe.5882395403881907066" resolveInfo="UnionDeclaration" />
+    </node>
+  </root>
+  <root id="4096671478328228386">
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="4096671478328228387">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="7946676408104787334" resolveInfo="ILazyRef" />
+    </node>
+    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.BooleanConceptProperty" typeId="tpce.1105725574259" id="4096671478328228388">
+      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473854053" resolveInfo="abstract" />
     </node>
   </root>
 </model>
