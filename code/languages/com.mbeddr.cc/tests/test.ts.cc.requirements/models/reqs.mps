@@ -42,13 +42,13 @@
         <property name="priority" nameId="75wo.3314758227758879688" value="1" />
         <node role="kind" roleId="75wo.8921256082857728256" type="75wo.FunctionalRequirementKind" typeId="75wo.8921256082857728250" id="3291018189726988280" />
         <node role="details" roleId="75wo.8745401669462962629" type="75wo.Requirement" typeId="75wo.8745401669462952101" id="1209423092481311986">
-          <property name="name" nameId="tpck.1169194664001" value="FailOtherwise" />
           <property name="summmary" nameId="75wo.3402431285977818823" value="Otherwise it should return -1" />
           <property name="open" value="true" />
           <property name="implemented" nameId="75wo.2667296550441502913" value="true" />
           <property name="traced" nameId="75wo.2667296550441527826" value="true" />
           <property name="tested" nameId="75wo.2667296550441527827" value="true" />
           <property name="priority" nameId="75wo.3314758227758879688" value="1" />
+          <property name="name" nameId="tpck.1169194664001" value="FailOtherwise" />
           <node role="kind" roleId="75wo.8921256082857728256" type="75wo.FunctionalRequirementKind" typeId="75wo.8921256082857728250" id="1209423092481311987" />
           <node role="additionalData" roleId="75wo.8745401669463270518" type="75wo.TimingSpecification" typeId="75wo.3402431285977750163" id="1165432222362099155">
             <property name="timingSpec" nameId="75wo.3402431285977750164" value="dfsdfdsf" />
@@ -133,7 +133,13 @@
       <node role="text" roleId="75wo.8375407818529829156" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="3860690561158030269">
         <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="3860690561158030272">
           <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3860690561158030274">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value="null" />
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value="Here is some text. and we can refer to " />
+          </node>
+          <node role="words" roleId="87nw.2557074442922392302" type="75wo.ReqRefWord" typeId="75wo.3814452005696780739" id="3814452005696921678">
+            <link role="req" roleId="75wo.3814452005696798863" targetNodeId="1209423092481311976" resolveInfo="Add" />
+          </node>
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3814452005696921679">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value="." />
           </node>
         </node>
       </node>
