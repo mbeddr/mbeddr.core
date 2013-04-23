@@ -388,9 +388,11 @@
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="7308356872494700254">
               <property name="value" nameId="mj1l.8860443239512128104" value="2" />
             </node>
-            <node role="left" roleId="mj1l.8860443239512128064" type="x27k.GlobalConstantFuntionArgumentRef" typeId="x27k.7308356872494660981" id="7308356872494700255">
-              <link role="arg" roleId="x27k.7308356872494660982" targetNodeId="7308356872494700251" resolveInfo="val" />
-              <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.TemplateFragment" typeId="tpf8.1095672379244" id="7308356872494700263" />
+            <node role="left" roleId="mj1l.8860443239512128064" type="mj1l.ParensExpression" typeId="mj1l.5763383285156533447" id="1277278146078074084">
+              <node role="expression" roleId="mj1l.7254843406768839760" type="x27k.GlobalConstantFuntionArgumentRef" typeId="x27k.7308356872494660981" id="7308356872494700255">
+                <link role="arg" roleId="x27k.7308356872494660982" targetNodeId="7308356872494700251" resolveInfo="val" />
+              </node>
+              <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.TemplateFragment" typeId="tpf8.1095672379244" id="1277278146078074086" />
             </node>
           </node>
         </node>
