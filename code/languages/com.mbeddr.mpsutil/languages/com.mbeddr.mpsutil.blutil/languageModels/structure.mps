@@ -211,6 +211,11 @@
       <property name="name" nameId="tpck.1169194664001" value="TypeSwitchCaseVarRef" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpee.1068431790191" resolveInfo="Expression" />
     </node>
+    <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7098772480013449569">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="typeswitch" />
+      <property name="name" nameId="tpck.1169194664001" value="TypeSwitchDefault" />
+      <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
+    </node>
   </roots>
   <root id="374287044672141846">
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="374287044672144227">
@@ -667,6 +672,11 @@
       <property name="sourceCardinality" nameId="tpce.1071599893252" value="1..n" />
       <link role="target" roleId="tpce.1071599976176" targetNodeId="7946676408104549970" resolveInfo="TypeSwitchCase" />
     </node>
+    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="7098772480013449568">
+      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
+      <property name="role" nameId="tpce.1071599776563" value="default" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="7098772480013449569" resolveInfo="TypeSwitchDefault" />
+    </node>
     <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="7946676408104549968">
       <property name="value" nameId="tpce.1105725733873" value="typeswitch" />
       <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473891462" resolveInfo="alias" />
@@ -710,6 +720,14 @@
       <property name="role" nameId="tpce.1071599776563" value="decl" />
       <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
       <link role="target" roleId="tpce.1071599976176" targetNodeId="7946676408104688781" resolveInfo="TypeSwitchCaseVariableDeclaration" />
+    </node>
+  </root>
+  <root id="7098772480013449569">
+    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="7098772480013449570">
+      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
+      <property name="role" nameId="tpce.1071599776563" value="body" />
+      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="tpee.1068580123136" resolveInfo="StatementList" />
     </node>
   </root>
 </model>

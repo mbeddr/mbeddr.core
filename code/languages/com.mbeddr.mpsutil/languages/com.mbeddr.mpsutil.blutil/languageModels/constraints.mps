@@ -76,6 +76,10 @@
       <property name="virtualPackage" nameId="tpck.1193676396447" value="typeswitch" />
       <link role="concept" roleId="tp1t.1213093996982" targetNodeId="hba4.7946676408104688922" resolveInfo="TypeSwitchCaseVarRef" />
     </node>
+    <node type="tp1t.ConceptConstraints" typeId="tp1t.1213093968558" id="7098772480013516234">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="typeswitch" />
+      <link role="concept" roleId="tp1t.1213093996982" targetNodeId="hba4.7098772480013449569" resolveInfo="TypeSwitchDefault" />
+    </node>
   </roots>
   <root id="374287044672146039">
     <node role="canBeChild" roleId="tp1t.1213106463729" type="tp1t.ConstraintFunction_CanBeAChild" typeId="tp1t.1202989531578" id="374287044672146040">
@@ -683,5 +687,6 @@
       </node>
     </node>
   </root>
+  <root id="7098772480013516234" />
 </model>
 

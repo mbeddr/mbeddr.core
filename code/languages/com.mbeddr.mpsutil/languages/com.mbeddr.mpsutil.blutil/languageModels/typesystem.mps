@@ -109,6 +109,10 @@
       <property name="name" nameId="tpck.1169194664001" value="typeof_TypeSwitchCaseVarRef" />
       <property name="virtualPackage" nameId="tpck.1193676396447" value="typeswitch" />
     </node>
+    <node type="tpd4.NonTypesystemRule" typeId="tpd4.1195214364922" id="7098772480013516235">
+      <property name="name" nameId="tpck.1169194664001" value="check_TypeSwitchDefault" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="typeswitch" />
+    </node>
   </roots>
   <root id="374287044672146060">
     <node role="body" roleId="tpd4.1195213635060" type="tpee.StatementList" typeId="tpee.1068580123136" id="374287044672146061">
@@ -2159,6 +2163,36 @@
     <node role="applicableNode" roleId="tpd4.1174648101952" type="tpd4.ConceptReference" typeId="tpd4.1174642788531" id="7946676408104714515">
       <property name="name" nameId="tpck.1169194664001" value="ref" />
       <link role="concept" roleId="tpd4.1174642800329" targetNodeId="hba4.7946676408104688922" resolveInfo="TypeSwitchCaseVarRef" />
+    </node>
+  </root>
+  <root id="7098772480013516235">
+    <node role="body" roleId="tpd4.1195213635060" type="tpee.StatementList" typeId="tpee.1068580123136" id="7098772480013516236">
+      <node role="statement" roleId="tpee.1068581517665" type="tpd4.AssertStatement" typeId="tpd4.1175517400280" id="7098772480013516238">
+        <node role="condition" roleId="tpd4.1175517761460" type="tpee.DotExpression" typeId="tpee.1197027756228" id="7098772480013516312">
+          <node role="operand" roleId="tpee.1197027771414" type="tp25.SNodeTypeCastExpression" typeId="tp25.1140137987495" id="7098772480013516290">
+            <link role="concept" roleId="tp25.1140138128738" targetNodeId="hba4.7946676408104549967" resolveInfo="TypeSwitch" />
+            <node role="leftExpression" roleId="tp25.1140138123956" type="tpee.DotExpression" typeId="tpee.1197027756228" id="7098772480013516263">
+              <node role="operand" roleId="tpee.1197027771414" type="tpd4.ApplicableNodeReference" typeId="tpd4.1174650418652" id="7098772480013516242">
+                <link role="applicableNode" roleId="tpd4.1174650432090" targetNodeId="7098772480013516237" resolveInfo="def" />
+              </node>
+              <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_GetParentOperation" typeId="tp25.1139613262185" id="7098772480013516268" />
+            </node>
+          </node>
+          <node role="operation" roleId="tpee.1197027833540" type="tp25.SPropertyAccess" typeId="tp25.1138056022639" id="7098772480013516318">
+            <link role="property" roleId="tp25.1138056395725" targetNodeId="hba4.7946676408104739247" resolveInfo="ignoreErrors" />
+          </node>
+        </node>
+        <node role="nodeToReport" roleId="tpd4.1227096802790" type="tpd4.ApplicableNodeReference" typeId="tpd4.1174650418652" id="7098772480013516320">
+          <link role="applicableNode" roleId="tpd4.1174650432090" targetNodeId="7098772480013516237" resolveInfo="def" />
+        </node>
+        <node role="errorString" roleId="tpd4.1175517851849" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="7098772480013516319">
+          <property name="value" nameId="tpee.1070475926801" value="can only be used if 'ignore errors' is set" />
+        </node>
+      </node>
+    </node>
+    <node role="applicableNode" roleId="tpd4.1174648101952" type="tpd4.ConceptReference" typeId="tpd4.1174642788531" id="7098772480013516237">
+      <property name="name" nameId="tpck.1169194664001" value="def" />
+      <link role="concept" roleId="tpd4.1174642800329" targetNodeId="hba4.7098772480013449569" resolveInfo="TypeSwitchDefault" />
     </node>
   </root>
 </model>
