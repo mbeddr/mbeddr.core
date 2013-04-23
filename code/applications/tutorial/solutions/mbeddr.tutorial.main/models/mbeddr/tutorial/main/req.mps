@@ -621,8 +621,18 @@
         <node role="text" roleId="75wo.8375407818529829156" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="4066530727403582862">
           <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="5785245534401174270">
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5785245534401174271">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent feugiat enim arcu, ut egestas velit. Suspendisse potenti. Etiam risus ante, bibendum ut mattis eget, co" />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="Users supply flights to the flight judgement system, which then \ncomputes the number of points for the flight. There are two scenarios,\ncaptured in " />
             </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="75wo.ReqRefWord" typeId="75wo.3814452005696780739" id="3084904294895368958">
+              <link role="req" roleId="75wo.3814452005696798863" targetNodeId="6898387700925291928" resolveInfo="UserSuppliesFlightsSuccess" />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3084904294895368959">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" and \n" />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="75wo.ReqRefWord" typeId="75wo.3814452005696780739" id="3084904294895368960">
+              <link role="req" roleId="75wo.3814452005696798863" targetNodeId="1942554214112319815" resolveInfo="UserSuppliesFlightError" />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3084904294895368961" />
           </node>
         </node>
       </node>
