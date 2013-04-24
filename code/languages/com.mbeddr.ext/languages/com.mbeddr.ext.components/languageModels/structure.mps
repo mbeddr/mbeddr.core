@@ -436,6 +436,11 @@
       <property name="virtualPackage" nameId="tpck.1193676396447" value="comp.runnable.whenconnected" />
       <property name="name" nameId="tpck.1169194664001" value="IConnectedCheck" />
     </node>
+    <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="699911272313212672">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="intf.sr" />
+      <property name="name" nameId="tpck.1169194664001" value="InterfaceTypeDataRefExpr" />
+      <link role="extends" roleId="tpce.1071489389519" targetNodeId="998890089995051771" resolveInfo="DataElementRefExpr" />
+    </node>
   </roots>
   <root id="4491876417845474761">
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="4491876417845484918">
@@ -1843,5 +1848,6 @@
     </node>
   </root>
   <root id="5065104421776015558" />
+  <root id="699911272313212672" />
 </model>
 
