@@ -271,6 +271,7 @@
       </node>
       <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="q5q6.VerificationConfigurationAttribute" typeId="q5q6.535044775891207547" id="8989352057116436279">
         <property name="unwindingDepth" nameId="q5q6.2017717622748544591" value="10" />
+        <property name="analysisDepth" nameId="q5q6.441761995015233437" value="1000" />
         <link role="verificationEntryPoint" roleId="q5q6.535044775891209632" targetNodeId="8989352057116436216" resolveInfo="goodEntryPoint" />
       </node>
     </node>
@@ -315,6 +316,7 @@
       </node>
       <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="q5q6.VerificationConfigurationAttribute" typeId="q5q6.535044775891207547" id="8989352057116436293">
         <property name="unwindingDepth" nameId="q5q6.2017717622748544591" value="10" />
+        <property name="analysisDepth" nameId="q5q6.441761995015233437" value="1000" />
         <link role="verificationEntryPoint" roleId="q5q6.535044775891209632" targetNodeId="8989352057116436228" resolveInfo="badEntryPoint" />
       </node>
     </node>

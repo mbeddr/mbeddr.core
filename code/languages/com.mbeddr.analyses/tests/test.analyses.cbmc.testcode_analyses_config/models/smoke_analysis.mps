@@ -63,23 +63,27 @@
   <root id="6472990431939785837">
     <node role="analyses" roleId="q46j.6472990431939692464" type="q5q6.ComponentsCBMCAnalysis" typeId="q5q6.6472990431939799912" id="6472990431939785838">
       <property name="unwindingDepth" nameId="q5q6.6472990431939799909" value="25" />
+      <property name="analysisDepth" nameId="q5q6.441761995014974059" value="1000" />
       <link role="analyzedComponent" roleId="q5q6.6472990431939799913" targetNodeId="4ysy.6472990431939782665" resolveInfo="ReaderImpls" />
       <link role="entryPoint" roleId="q5q6.6472990431939799908" targetNodeId="4ysy.6472990431939782743" resolveInfo="client" />
     </node>
     <node role="analyses" roleId="q46j.6472990431939692464" type="q5q6.FunctionsCBMCAnalysis" typeId="q5q6.6472990431940227507" id="6598859022322998583">
       <property name="unwindingAssertions" nameId="q5q6.6472990431939799910" value="false" />
       <property name="unwindingDepth" nameId="q5q6.6472990431939799909" value="25" />
+      <property name="analysisDepth" nameId="q5q6.441761995014974059" value="1000" />
       <link role="entryPoint" roleId="q5q6.6472990431939799908" targetNodeId="4ysy.6472990431940257468" resolveInfo="assertedCode" />
     </node>
     <node role="analyses" roleId="q46j.6472990431939692464" type="q5q6.DecTabCBMCAnalysis" typeId="q5q6.5070503009225618710" id="6598859022323000063">
       <property name="unwindingAssertions" nameId="q5q6.6472990431939799910" value="false" />
       <property name="unwindingDepth" nameId="q5q6.6472990431939799909" value="25" />
+      <property name="analysisDepth" nameId="q5q6.441761995014974059" value="1000" />
       <link role="decTabContainer" roleId="q5q6.5070503009225669554" targetNodeId="4ysy.6598859022322999982" resolveInfo="funWithDT" />
       <link role="entryPoint" roleId="q5q6.6472990431939799908" targetNodeId="4ysy.6598859022322999982" resolveInfo="funWithDT" />
     </node>
     <node role="analyses" roleId="q46j.6472990431939692464" type="q5q6.StatemachineCBMCAnalysis" typeId="q5q6.8376973589777602107" id="8376973589777647400">
       <property name="unwindingAssertions" nameId="q5q6.6472990431939799910" value="false" />
       <property name="unwindingDepth" nameId="q5q6.6472990431939799909" value="25" />
+      <property name="analysisDepth" nameId="q5q6.441761995014974059" value="1000" />
       <link role="satemachine" roleId="q5q6.8376973589777602108" targetNodeId="4ysy.8376973589777602081" resolveInfo="STM" />
       <link role="entryPoint" roleId="q5q6.6472990431939799908" targetNodeId="4ysy.8376973589777647405" resolveInfo="statemachineClient" />
     </node>
