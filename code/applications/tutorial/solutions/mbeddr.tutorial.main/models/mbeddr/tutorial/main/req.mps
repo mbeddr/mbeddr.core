@@ -13,7 +13,7 @@
   <import index="75wo" modelUID="r:eaa205a4-f15c-47d3-99e2-e648881b5997(com.mbeddr.cc.requirements.structure)" version="7" implicit="yes" />
   <import index="4l29" modelUID="r:9f885776-26d3-48f5-a714-b3a8fa61c18a(com.mbeddr.cc.requirements.scenarios.structure)" version="6" implicit="yes" />
   <import index="3vkx" modelUID="r:1c91fcc2-cf14-47f5-a4d4-3b424626f0d4(com.mbeddr.cc.requirements.c.structure)" version="4" implicit="yes" />
-  <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="21" implicit="yes" />
+  <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="23" implicit="yes" />
   <import index="87nw" modelUID="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" version="5" implicit="yes" />
   <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="7" implicit="yes" />
   <import index="2c95" modelUID="r:5f7188a9-e7b4-4a2e-bef9-38d2cf379fdc(com.mbeddr.doc.structure)" version="10" implicit="yes" />
@@ -112,6 +112,15 @@
       <property name="proseText" value="" />
       <node role="additionalData" roleId="75wo.8745401669463270518" type="75wo.TimingSpecification" typeId="75wo.3402431285977750163" id="5785245534400583694">
         <property name="timingSpec" nameId="75wo.3402431285977750164" value="12" />
+      </node>
+      <node role="additionalData" roleId="75wo.8745401669463270518" type="75wo.RefinesLink" typeId="75wo.1165432222362123724" id="5950181506552327096">
+        <link role="target" roleId="75wo.8745401669463257454" targetNodeId="7451725615401720594" resolveInfo="PointsFactor" />
+      </node>
+      <node role="additionalData" roleId="75wo.8745401669463270518" type="75wo.RequiresAlso" typeId="75wo.8745401669463268209" id="5950181506552359737">
+        <link role="target" roleId="75wo.8745401669463257454" targetNodeId="1433966787984154176" resolveInfo="FasterThan100" />
+      </node>
+      <node role="additionalData" roleId="75wo.8745401669463270518" type="75wo.RequiresAlso" typeId="75wo.8745401669463268209" id="5950181506552359739">
+        <link role="target" roleId="75wo.8745401669463257454" targetNodeId="1433966787984154178" resolveInfo="FasterThan200" />
       </node>
       <node role="additionalData" roleId="75wo.8745401669463270518" type="3vkx.RCalculation" typeId="3vkx.3534497005926949315" id="552710421071397247">
         <property name="name" nameId="tpck.1169194664001" value="PointForATrackpoint" />
@@ -280,7 +289,13 @@
       <node role="text" roleId="75wo.8375407818529829156" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="4066530727403326159">
         <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="5785245534401089118">
           <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5785245534401089119">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent feugiat enim arcu, ut egestas velit. Suspendisse potenti. Etiam risus ante, bibendum ut mattis eget, convallis sit amet nunc. Ut nec justo sapien, vel condimentum velit. Quisque venenatis faucibus tellus consequat rhoncus. Vestibulum dapibus dictum vulputate. Phasellus rhoncus quam eu dui dictum sollicitudin.\nDuis tempus justo magna. Nunc lobortis libero sed eros interdum aliquet ele" />
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent feugiat enim arcu, ut egestas velit. Suspendisse potenti. Etiam risus ante, bibendum ut mattis eget, convallis sit amet nunc. Ut nec justo sapien, vel condimentum velit. Quisque venenatis faucibus tellus consequat rhoncus. Vestibulum dapibus dictum vulputate. Phasellus rhoncus quam eu dui dictum sollicitudin.\nDuis tempus justo magna. Nunc lobortis libero sed eros interdum aliquet ele. It uses " />
+          </node>
+          <node role="words" roleId="87nw.2557074442922392302" type="75wo.ReqRefWord" typeId="75wo.3814452005696780739" id="5950181506552319023">
+            <link role="req" roleId="75wo.3814452005696798863" targetNodeId="7451725615401720594" resolveInfo="PointsFactor" />
+          </node>
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5950181506552319024">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value=" to calculate the total points." />
           </node>
         </node>
       </node>
@@ -293,6 +308,9 @@
       <property name="traced" nameId="75wo.2667296550441527826" value="true" />
       <property name="implemented" nameId="75wo.2667296550441502913" value="true" />
       <property name="tested" nameId="75wo.2667296550441527827" value="false" />
+      <node role="additionalData" roleId="75wo.8745401669463270518" type="75wo.RequiresAlso" typeId="75wo.8745401669463268209" id="5950181506552451544">
+        <link role="target" roleId="75wo.8745401669463257454" targetNodeId="1433966787984154174" resolveInfo="InFlightPoints" />
+      </node>
       <node role="kind" roleId="75wo.8921256082857728256" type="75wo.FunctionalRequirementKind" typeId="75wo.8921256082857728250" id="1433966787984154181" />
       <node role="details" roleId="75wo.8745401669462962629" type="75wo.Requirement" typeId="75wo.8745401669462952101" id="1433966787984154182">
         <property name="priority" nameId="75wo.3314758227758879688" value="0" />
@@ -323,8 +341,12 @@
         <node role="text" roleId="75wo.8375407818529829156" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="4066530727403326174">
           <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="5785245534401090381">
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5785245534401090382">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent feugiat enim arcu, ut egestas velit. Suspendisse potenti. Etiam risus ante, bibendum ut mattis eget, convallis sit amet nunc. Ut nec" />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent feugiat enim arcu, ut egestas velit. Suspendisse potenti. Etiam risus ante, bibendum ut mattis eget, convallis sit amet nunc. Ut nec. For testing purposes, this one references " />
             </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="75wo.ReqRefWord" typeId="75wo.3814452005696780739" id="5950181506552502223">
+              <link role="req" roleId="75wo.3814452005696798863" targetNodeId="1433966787984154174" resolveInfo="InFlightPoints" />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5950181506552502224" />
           </node>
         </node>
       </node>

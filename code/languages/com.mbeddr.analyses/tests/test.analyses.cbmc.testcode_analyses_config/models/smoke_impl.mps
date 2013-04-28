@@ -8,13 +8,12 @@
   <devkit namespace="24565007-e59f-42fc-ac10-da3836deec1c(com.mbeddr.components)" />
   <devkit namespace="43d889ae-8e6a-4f6e-a649-d59342d8728d(com.mbeddr.statemachines)" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
-  <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="21" implicit="yes" />
+  <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="23" implicit="yes" />
   <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="5" implicit="yes" />
   <import index="k146" modelUID="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" version="5" implicit="yes" />
   <import index="v7ag" modelUID="r:9596407c-f27a-49d3-abde-3a66293c5b61(com.mbeddr.ext.components.structure)" version="17" implicit="yes" />
   <import index="yq40" modelUID="r:152b3fc0-83a1-4bab-a8cd-565eb8483785(com.mbeddr.core.pointers.structure)" version="3" implicit="yes" />
   <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="5" implicit="yes" />
-  <import index="q5q6" modelUID="r:5d65e582-fa41-4818-b31c-b2aee1644b4a(com.mbeddr.analyses.cbmc.structure)" version="16" implicit="yes" />
   <import index="clqz" modelUID="r:5ebcdb77-81e9-4964-beae-35bd9a2f28b5(com.mbeddr.ext.statemachines.structure)" version="11" implicit="yes" />
   <import index="pszp" modelUID="r:5097c9c6-4a5a-40ee-bd76-4904ba8fa229(com.mbeddr.analyses.nusmv.statemachine.structure)" version="22" implicit="yes" />
   <roots>
@@ -512,8 +511,8 @@
         </node>
       </node>
     </node>
-    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="6472990431940257479">
-      <property name="name" nameId="tpck.1169194664001" value="empty_1358236824091_9" />
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="441761995015378006">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1367053147086_3" />
     </node>
     <node role="imports" roleId="x27k.1317894735999304826" type="x27k.ModuleImport" typeId="x27k.1317894735999299713" id="6472990431940257497">
       <link role="module" roleId="x27k.1317894735999299714" targetNodeId="6472990431940257494" resolveInfo="assert" />
@@ -588,7 +587,7 @@
             <node role="cExpr" roleId="k146.6209595569797584864" type="mj1l.TrueLiteral" typeId="mj1l.8860443239512128094" id="6598859022323000059" />
             <node role="cExpr" roleId="k146.6209595569797584864" type="mj1l.FalseLiteral" typeId="mj1l.8860443239512128099" id="6598859022323000060" />
             <node role="def" roleId="k146.4143042878078342166" type="mj1l.FalseLiteral" typeId="mj1l.8860443239512128099" id="6598859022323000026" />
-            <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="q5q6.DecTabCheckAttribute" typeId="q5q6.2161187783549671007" id="5540530590525465059" />
+            <node role="smodelAttribute" roleId="tpck.5169995583184591170" type=".com.mbeddr.analyses.cbmc.structure.DecTabCheckAttribute" id="5540530590525465059" />
           </node>
         </node>
       </node>
@@ -651,7 +650,7 @@
         <property name="name" nameId="tpck.1169194664001" value="inactive" />
       </node>
       <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="pszp.VerificationAttribute" typeId="pszp.1579201292659177178" id="8376973589777651891" />
-      <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="q5q6.StatemachineCheckAttribute" typeId="q5q6.5858278990856237301" id="8376973589777654124" />
+      <node role="smodelAttribute" roleId="tpck.5169995583184591170" type=".com.mbeddr.analyses.cbmc.structure.StatemachineCheckAttribute" id="8376973589777654124" />
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="8376973589777647401">
       <property name="name" nameId="tpck.1169194664001" value="empty_1361481879053_1" />
