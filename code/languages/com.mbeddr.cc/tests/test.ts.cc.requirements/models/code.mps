@@ -3,102 +3,94 @@
   <persistence version="7" />
   <language namespace="e865cad2-7cc8-437a-951a-665bcbcb8b1a(com.mbeddr.cc.requirements)" />
   <language namespace="53bab999-e9c3-428a-80be-fef5bed08f55(com.mbeddr.cc.trace)" />
-  <language namespace="6d11763d-483d-4b2b-8efc-09336c1b0001(com.mbeddr.core.modules)" />
-  <language namespace="a9d69647-0840-491e-bf39-2eb0805d2011(com.mbeddr.core.statements)" />
-  <language namespace="61c69711-ed61-4850-81d9-7714ff227fb0(com.mbeddr.core.expressions)" />
-  <language namespace="3bf5377a-e904-4ded-9754-5a516023bfaa(com.mbeddr.core.pointers)" />
-  <language namespace="2d7fadf5-33f6-4e80-a78f-0f739add2bde(com.mbeddr.core.buildconfig)" />
   <language namespace="92d2ea16-5a42-4fdf-a676-c7604efe3504(de.slisson.mps.richtext)" />
   <devkit namespace="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
   <import index="6bll" modelUID="r:d9293246-b636-408d-a2f1-e29fc568656d(test.ts.requirements.reqs)" version="-1" />
-  <import index="75wo" modelUID="r:eaa205a4-f15c-47d3-99e2-e648881b5997(com.mbeddr.cc.requirements.structure)" version="7" implicit="yes" />
-  <import index="26ao" modelUID="r:7c15925b-a4a5-4da3-88aa-931a5a9ed982(com.mbeddr.cc.trace.structure)" version="5" implicit="yes" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="23" implicit="yes" />
   <import index="yq40" modelUID="r:152b3fc0-83a1-4bab-a8cd-565eb8483785(com.mbeddr.core.pointers.structure)" version="3" implicit="yes" />
   <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="5" implicit="yes" />
-  <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="5" implicit="yes" />
   <import index="51wr" modelUID="r:b31f1c3c-99aa-4f1e-a329-cba27efb1a6b(com.mbeddr.core.buildconfig.structure)" version="1" implicit="yes" />
   <import index="87nw" modelUID="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" version="5" implicit="yes" />
   <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="7" implicit="yes" />
   <roots>
-    <node type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="8745401669463182946">
-      <property name="name" nameId="tpck.1169194664001" value="ExampleCode" />
+    <node type=".com.mbeddr.core.modules.structure.ImplementationModule" id="8745401669463182946">
+      <property name="name" value="ExampleCode" />
     </node>
     <node type="mj1l.TypeSizeConfiguration" typeId="mj1l.3335993110369795380" id="6623913219184388889" />
-    <node type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="1209423092481298536">
-      <property name="name" nameId="tpck.1169194664001" value="StrUtil" />
+    <node type=".com.mbeddr.core.modules.structure.ImplementationModule" id="1209423092481298536">
+      <property name="name" value="StrUtil" />
     </node>
     <node type="51wr.BuildConfiguration" typeId="51wr.7717755763392524104" id="7786631205219274703" />
   </roots>
   <root id="8745401669463182946">
-    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="4577779292082129112">
-      <property name="name" nameId="tpck.1169194664001" value="empty_1364642850447_3" />
+    <node role="contents" type=".com.mbeddr.core.modules.structure.EmptyModuleContent" id="4577779292082129112">
+      <property name="name" value="empty_1364642850447_3" />
     </node>
-    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="1209423092481298556">
-      <property name="name" nameId="tpck.1169194664001" value="add" />
-      <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="1209423092481298557">
-        <node role="statements" roleId="c4fa.4185783222026475862" type="x27k.ReturnStatement" typeId="x27k.8967919205527146149" id="1209423092481298566">
-          <node role="expression" roleId="x27k.8967919205527146150" type="mj1l.PlusExpression" typeId="mj1l.5763383285156373013" id="1209423092481298568">
-            <node role="right" roleId="mj1l.8860443239512128065" type="x27k.ArgumentRef" typeId="x27k.2093108837558505658" id="1209423092481298571">
-              <link role="arg" roleId="x27k.2093108837558505659" targetNodeId="1209423092481298564" resolveInfo="b" />
+    <node role="contents" type=".com.mbeddr.core.modules.structure.Function" id="1209423092481298556">
+      <property name="name" value="add" />
+      <node role="body" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="1209423092481298557">
+        <node role="statements" roleId="c4fa.4185783222026475862" type=".com.mbeddr.core.modules.structure.ReturnStatement" id="1209423092481298566">
+          <node role="expression" type="mj1l.PlusExpression" typeId="mj1l.5763383285156373013" id="1209423092481298568">
+            <node role="right" roleId="mj1l.8860443239512128065" type=".com.mbeddr.core.modules.structure.ArgumentRef" id="1209423092481298571">
+              <link role="arg" targetNodeId="1209423092481298564" resolveInfo="b" />
             </node>
-            <node role="left" roleId="mj1l.8860443239512128064" type="x27k.ArgumentRef" typeId="x27k.2093108837558505658" id="1209423092481298567">
-              <link role="arg" roleId="x27k.2093108837558505659" targetNodeId="1209423092481298560" resolveInfo="a" />
+            <node role="left" roleId="mj1l.8860443239512128064" type=".com.mbeddr.core.modules.structure.ArgumentRef" id="1209423092481298567">
+              <link role="arg" targetNodeId="1209423092481298560" resolveInfo="a" />
             </node>
-            <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="26ao.TraceAnnotation" typeId="26ao.439567521322928994" id="2724289185193262612">
-              <node role="tracekind" roleId="26ao.4577779292081946444" type="26ao.TestsTraceKind" typeId="26ao.439567521322929001" id="2724289185193262615" />
-              <node role="refs" roleId="26ao.4577779292081946445" type="75wo.RequirementRef" typeId="75wo.439567521322984797" id="439567521322996161">
-                <link role="target" roleId="26ao.439567521322959431" targetNodeId="6bll.1209423092481311976" resolveInfo="Add" />
+            <node role="smodelAttribute" roleId="tpck.5169995583184591170" type=".com.mbeddr.cc.trace.structure.TraceAnnotation" id="2724289185193262612">
+              <node role="tracekind" type=".com.mbeddr.cc.trace.structure.TestsTraceKind" id="2724289185193262615" />
+              <node role="refs" type=".com.mbeddr.cc.requirements.structure.RequirementRef" id="439567521322996161">
+                <link role="target" targetNodeId="6bll.1209423092481311976" resolveInfo="Add" />
               </node>
             </node>
           </node>
         </node>
       </node>
-      <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="1209423092481298559" />
-      <node role="arguments" roleId="x27k.5708867820623310661" type="x27k.Argument" typeId="x27k.7892328519581704407" id="1209423092481298560">
-        <property name="name" nameId="tpck.1169194664001" value="a" />
-        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="1209423092481298561" />
+      <node role="type" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="1209423092481298559" />
+      <node role="arguments" type=".com.mbeddr.core.modules.structure.Argument" id="1209423092481298560">
+        <property name="name" value="a" />
+        <node role="type" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="1209423092481298561" />
       </node>
-      <node role="arguments" roleId="x27k.5708867820623310661" type="x27k.Argument" typeId="x27k.7892328519581704407" id="1209423092481298564">
-        <property name="name" nameId="tpck.1169194664001" value="b" />
-        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="1209423092481298565" />
+      <node role="arguments" type=".com.mbeddr.core.modules.structure.Argument" id="1209423092481298564">
+        <property name="name" value="b" />
+        <node role="type" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="1209423092481298565" />
       </node>
-      <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="26ao.TraceAnnotation" typeId="26ao.439567521322928994" id="1209423092481311983">
-        <node role="tracekind" roleId="26ao.4577779292081946444" type="26ao.ImplementsTraceKind" typeId="26ao.439567521322929003" id="1209423092481311984" />
-        <node role="refs" roleId="26ao.4577779292081946445" type="75wo.RequirementRef" typeId="75wo.439567521322984797" id="439567521322996160">
-          <link role="target" roleId="26ao.439567521322959431" targetNodeId="6bll.1209423092481311981" resolveInfo="AddFct" />
+      <node role="smodelAttribute" type=".com.mbeddr.cc.trace.structure.TraceAnnotation" id="1209423092481311983">
+        <node role="tracekind" type=".com.mbeddr.cc.trace.structure.ImplementsTraceKind" id="1209423092481311984" />
+        <node role="refs" type=".com.mbeddr.cc.requirements.structure.RequirementRef" id="439567521322996160">
+          <link role="target" targetNodeId="6bll.1209423092481311981" resolveInfo="AddFct" />
         </node>
       </node>
     </node>
-    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="4577779292082129110">
-      <property name="name" nameId="tpck.1169194664001" value="empty_1364642848639_1" />
+    <node role="contents" type=".com.mbeddr.core.modules.structure.EmptyModuleContent" id="4577779292082129110">
+      <property name="name" value="empty_1364642848639_1" />
     </node>
-    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="4577779292082129113">
-      <property name="name" nameId="tpck.1169194664001" value="empty_1364642854966_4" />
+    <node role="contents" type=".com.mbeddr.core.modules.structure.EmptyModuleContent" id="4577779292082129113">
+      <property name="name" value="empty_1364642854966_4" />
     </node>
-    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="4577779292082129117">
-      <property name="name" nameId="tpck.1169194664001" value="hereIsAnotherFunction" />
-      <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="4577779292082129119">
+    <node role="contents" type=".com.mbeddr.core.modules.structure.Function" id="4577779292082129117">
+      <property name="name" value="hereIsAnotherFunction" />
+      <node role="body" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="4577779292082129119">
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="4577779292082129120" />
       </node>
-      <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="4577779292082129116">
+      <node role="type" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="4577779292082129116">
         <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
         <property name="const" nameId="mj1l.2941277002445651368" value="false" />
       </node>
-      <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="vs0r.ElementDocumentation" typeId="vs0r.3857533489766146428" id="4577779292082129121">
+      <node role="smodelAttribute" type="vs0r.ElementDocumentation" typeId="vs0r.3857533489766146428" id="4577779292082129121">
         <node role="text" roleId="vs0r.4052432714772608243" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="4577779292082129122">
           <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="4577779292082129123">
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4577779292082129124">
               <property name="escapedValue" nameId="87nw.2557074442922438158" value="This function has a documentation. In the documentation,\nyou can also " />
             </node>
-            <node role="words" roleId="87nw.2557074442922392302" type="26ao.TraceWord" typeId="26ao.4577779292081946446" id="4577779292082129125">
-              <node role="tracekind" roleId="26ao.4577779292081946444" type="26ao.ImplementsTraceKind" typeId="26ao.439567521322929003" id="4577779292082132129" />
-              <node role="refs" roleId="26ao.4577779292081946445" type="75wo.RequirementRef" typeId="75wo.439567521322984797" id="4577779292082133372">
-                <link role="target" roleId="26ao.439567521322959431" targetNodeId="6bll.2667296550441654210" resolveInfo="ANewOne" />
+            <node role="words" roleId="87nw.2557074442922392302" type=".com.mbeddr.cc.trace.structure.TraceWord" id="4577779292082129125">
+              <node role="tracekind" type=".com.mbeddr.cc.trace.structure.ImplementsTraceKind" id="4577779292082132129" />
+              <node role="refs" type=".com.mbeddr.cc.requirements.structure.RequirementRef" id="4577779292082133372">
+                <link role="target" targetNodeId="6bll.2667296550441654210" resolveInfo="ANewOne" />
               </node>
-              <node role="refs" roleId="26ao.4577779292081946445" type="75wo.RequirementRef" typeId="75wo.439567521322984797" id="4577779292082138652">
-                <link role="target" roleId="26ao.439567521322959431" targetNodeId="6bll.3291018189726975357" resolveInfo="Main" />
+              <node role="refs" type=".com.mbeddr.cc.requirements.structure.RequirementRef" id="4577779292082138652">
+                <link role="target" targetNodeId="6bll.3291018189726975357" resolveInfo="Main" />
               </node>
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4577779292082129126" />
@@ -106,41 +98,41 @@
         </node>
       </node>
     </node>
-    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="4577779292082129111">
-      <property name="name" nameId="tpck.1169194664001" value="empty_1364642849256_2" />
+    <node role="contents" type=".com.mbeddr.core.modules.structure.EmptyModuleContent" id="4577779292082129111">
+      <property name="name" value="empty_1364642849256_2" />
     </node>
-    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="8745401669463194248">
-      <property name="name" nameId="tpck.1169194664001" value="main" />
-      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
-      <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="8745401669463194249">
+    <node role="contents" type=".com.mbeddr.core.modules.structure.Function" id="8745401669463194248">
+      <property name="name" value="main" />
+      <property name="exported" value="true" />
+      <node role="body" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="8745401669463194249">
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.IfStatement" typeId="c4fa.6275792049641600983" id="3291018189726988282">
           <node role="condition" roleId="c4fa.6275792049641600984" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="3291018189726988290">
-            <node role="left" roleId="mj1l.8860443239512128064" type="x27k.ArgumentRef" typeId="x27k.2093108837558505658" id="3291018189726988291">
-              <link role="arg" roleId="x27k.2093108837558505659" targetNodeId="8745401669463194255" resolveInfo="argc" />
+            <node role="left" roleId="mj1l.8860443239512128064" type=".com.mbeddr.core.modules.structure.ArgumentRef" id="3291018189726988291">
+              <link role="arg" targetNodeId="8745401669463194255" resolveInfo="argc" />
             </node>
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3291018189726988292">
               <property name="value" nameId="mj1l.8860443239512128104" value="2" />
             </node>
-            <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="26ao.TraceAnnotation" typeId="26ao.439567521322928994" id="2724289185193262609">
-              <node role="tracekind" roleId="26ao.4577779292081946444" type="26ao.ImplementsTraceKind" typeId="26ao.439567521322929003" id="2724289185193262610" />
-              <node role="refs" roleId="26ao.4577779292081946445" type="75wo.RequirementRef" typeId="75wo.439567521322984797" id="439567521322996162">
-                <link role="target" roleId="26ao.439567521322959431" targetNodeId="6bll.3291018189726988279" resolveInfo="Arg2" />
+            <node role="smodelAttribute" roleId="tpck.5169995583184591170" type=".com.mbeddr.cc.trace.structure.TraceAnnotation" id="2724289185193262609">
+              <node role="tracekind" type=".com.mbeddr.cc.trace.structure.ImplementsTraceKind" id="2724289185193262610" />
+              <node role="refs" type=".com.mbeddr.cc.requirements.structure.RequirementRef" id="439567521322996162">
+                <link role="target" targetNodeId="6bll.3291018189726988279" resolveInfo="Arg2" />
               </node>
             </node>
           </node>
           <node role="thenPart" roleId="c4fa.6275792049641600985" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="3291018189726988284">
-            <node role="statements" roleId="c4fa.4185783222026475862" type="x27k.ReturnStatement" typeId="x27k.8967919205527146149" id="8745401669463209547">
-              <node role="expression" roleId="x27k.8967919205527146150" type="x27k.FunctionCall" typeId="x27k.5950410542643524492" id="1209423092481298523">
-                <link role="function" roleId="x27k.5950410542643524493" targetNodeId="1209423092481298556" resolveInfo="add" />
-                <node role="actuals" roleId="x27k.5950410542643524495" type="x27k.FunctionCall" typeId="x27k.5950410542643524492" id="1209423092481305707">
-                  <link role="function" roleId="x27k.5950410542643524493" targetNodeId="1209423092481298548" resolveInfo="str2int" />
-                  <node role="actuals" roleId="x27k.5950410542643524495" type="yq40.ArrayAccessExpr" typeId="yq40.6282313788306893057" id="1209423092481298526">
-                    <node role="expression" roleId="mj1l.7254843406768839760" type="x27k.ArgumentRef" typeId="x27k.2093108837558505658" id="1209423092481298525">
-                      <link role="arg" roleId="x27k.2093108837558505659" targetNodeId="8745401669463194252" resolveInfo="args" />
-                      <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="26ao.TraceAnnotation" typeId="26ao.439567521322928994" id="2667296550441544588">
-                        <node role="tracekind" roleId="26ao.4577779292081946444" type="26ao.TestsTraceKind" typeId="26ao.439567521322929001" id="2667296550441544590" />
-                        <node role="refs" roleId="26ao.4577779292081946445" type="75wo.RequirementRef" typeId="75wo.439567521322984797" id="2667296550441544591">
-                          <link role="target" roleId="26ao.439567521322959431" targetNodeId="6bll.1209423092481311986" resolveInfo="FailOtherwise" />
+            <node role="statements" roleId="c4fa.4185783222026475862" type=".com.mbeddr.core.modules.structure.ReturnStatement" id="8745401669463209547">
+              <node role="expression" type=".com.mbeddr.core.modules.structure.FunctionCall" id="1209423092481298523">
+                <link role="function" targetNodeId="1209423092481298556" resolveInfo="add" />
+                <node role="actuals" type=".com.mbeddr.core.modules.structure.FunctionCall" id="1209423092481305707">
+                  <link role="function" targetNodeId="1209423092481298548" resolveInfo="str2int" />
+                  <node role="actuals" type="yq40.ArrayAccessExpr" typeId="yq40.6282313788306893057" id="1209423092481298526">
+                    <node role="expression" roleId="mj1l.7254843406768839760" type=".com.mbeddr.core.modules.structure.ArgumentRef" id="1209423092481298525">
+                      <link role="arg" targetNodeId="8745401669463194252" resolveInfo="args" />
+                      <node role="smodelAttribute" type=".com.mbeddr.cc.trace.structure.TraceAnnotation" id="2667296550441544588">
+                        <node role="tracekind" type=".com.mbeddr.cc.trace.structure.TestsTraceKind" id="2667296550441544590" />
+                        <node role="refs" type=".com.mbeddr.cc.requirements.structure.RequirementRef" id="2667296550441544591">
+                          <link role="target" targetNodeId="6bll.1209423092481311986" resolveInfo="FailOtherwise" />
                         </node>
                       </node>
                     </node>
@@ -149,21 +141,21 @@
                     </node>
                   </node>
                 </node>
-                <node role="actuals" roleId="x27k.5950410542643524495" type="x27k.FunctionCall" typeId="x27k.5950410542643524492" id="1209423092481311974">
-                  <link role="function" roleId="x27k.5950410542643524493" targetNodeId="1209423092481298548" resolveInfo="str2int" />
-                  <node role="actuals" roleId="x27k.5950410542643524495" type="yq40.ArrayAccessExpr" typeId="yq40.6282313788306893057" id="1209423092481298531">
-                    <node role="expression" roleId="mj1l.7254843406768839760" type="x27k.ArgumentRef" typeId="x27k.2093108837558505658" id="1209423092481298530">
-                      <link role="arg" roleId="x27k.2093108837558505659" targetNodeId="8745401669463194252" resolveInfo="args" />
+                <node role="actuals" type=".com.mbeddr.core.modules.structure.FunctionCall" id="1209423092481311974">
+                  <link role="function" targetNodeId="1209423092481298548" resolveInfo="str2int" />
+                  <node role="actuals" type="yq40.ArrayAccessExpr" typeId="yq40.6282313788306893057" id="1209423092481298531">
+                    <node role="expression" roleId="mj1l.7254843406768839760" type=".com.mbeddr.core.modules.structure.ArgumentRef" id="1209423092481298530">
+                      <link role="arg" targetNodeId="8745401669463194252" resolveInfo="args" />
                     </node>
                     <node role="index" roleId="yq40.6282313788306893059" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="1209423092481298532">
                       <property name="value" nameId="mj1l.8860443239512128104" value="1" />
                     </node>
                   </node>
                 </node>
-                <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="26ao.TraceAnnotation" typeId="26ao.439567521322928994" id="1209423092481311978">
-                  <node role="tracekind" roleId="26ao.4577779292081946444" type="26ao.ImplementsTraceKind" typeId="26ao.439567521322929003" id="1209423092481311979" />
-                  <node role="refs" roleId="26ao.4577779292081946445" type="75wo.RequirementRef" typeId="75wo.439567521322984797" id="439567521322996165">
-                    <link role="target" roleId="26ao.439567521322959431" targetNodeId="6bll.3291018189726988279" resolveInfo="Arg2" />
+                <node role="smodelAttribute" type=".com.mbeddr.cc.trace.structure.TraceAnnotation" id="1209423092481311978">
+                  <node role="tracekind" type=".com.mbeddr.cc.trace.structure.ImplementsTraceKind" id="1209423092481311979" />
+                  <node role="refs" type=".com.mbeddr.cc.requirements.structure.RequirementRef" id="439567521322996165">
+                    <link role="target" targetNodeId="6bll.3291018189726988279" resolveInfo="Arg2" />
                   </node>
                 </node>
               </node>
@@ -174,45 +166,45 @@
               <property name="name" nameId="tpck.1169194664001" value="x" />
               <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="2194195324959323913" />
             </node>
-            <node role="statements" roleId="c4fa.4185783222026475862" type="x27k.ReturnStatement" typeId="x27k.8967919205527146149" id="3291018189726997344">
-              <node role="expression" roleId="x27k.8967919205527146150" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3291018189726997345">
+            <node role="statements" roleId="c4fa.4185783222026475862" type=".com.mbeddr.core.modules.structure.ReturnStatement" id="3291018189726997344">
+              <node role="expression" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3291018189726997345">
                 <property name="value" nameId="mj1l.8860443239512128104" value="-1" />
               </node>
-              <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="26ao.TraceAnnotation" typeId="26ao.439567521322928994" id="1209423092481311988">
-                <node role="tracekind" roleId="26ao.4577779292081946444" type="26ao.ImplementsTraceKind" typeId="26ao.439567521322929003" id="1209423092481311989" />
-                <node role="refs" roleId="26ao.4577779292081946445" type="75wo.RequirementRef" typeId="75wo.439567521322984797" id="439567521322996164">
-                  <link role="target" roleId="26ao.439567521322959431" targetNodeId="6bll.1209423092481311986" resolveInfo="FailOtherwise" />
+              <node role="smodelAttribute" type=".com.mbeddr.cc.trace.structure.TraceAnnotation" id="1209423092481311988">
+                <node role="tracekind" type=".com.mbeddr.cc.trace.structure.ImplementsTraceKind" id="1209423092481311989" />
+                <node role="refs" type=".com.mbeddr.cc.requirements.structure.RequirementRef" id="439567521322996164">
+                  <link role="target" targetNodeId="6bll.1209423092481311986" resolveInfo="FailOtherwise" />
                 </node>
               </node>
             </node>
           </node>
         </node>
       </node>
-      <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="5708867820622277804" />
-      <node role="arguments" roleId="x27k.5708867820623310661" type="x27k.Argument" typeId="x27k.7892328519581704407" id="8745401669463194252">
-        <property name="name" nameId="tpck.1169194664001" value="args" />
-        <node role="type" roleId="mj1l.318113533128716676" type="yq40.ArrayType" typeId="yq40.5679441017214012545" id="5708867820621171166">
+      <node role="type" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="5708867820622277804" />
+      <node role="arguments" type=".com.mbeddr.core.modules.structure.Argument" id="8745401669463194252">
+        <property name="name" value="args" />
+        <node role="type" type="yq40.ArrayType" typeId="yq40.5679441017214012545" id="5708867820621171166">
           <node role="baseType" roleId="yq40.5679441017214012546" type="yq40.StringType" typeId="yq40.6113173064528067332" id="5708867820621171167" />
         </node>
       </node>
-      <node role="arguments" roleId="x27k.5708867820623310661" type="x27k.Argument" typeId="x27k.7892328519581704407" id="8745401669463194255">
-        <property name="name" nameId="tpck.1169194664001" value="argc" />
-        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="5708867820621171161" />
+      <node role="arguments" type=".com.mbeddr.core.modules.structure.Argument" id="8745401669463194255">
+        <property name="name" value="argc" />
+        <node role="type" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="5708867820621171161" />
       </node>
-      <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="26ao.TraceAnnotation" typeId="26ao.439567521322928994" id="439567521322996166">
-        <node role="tracekind" roleId="26ao.4577779292081946444" type="26ao.ImplementsTraceKind" typeId="26ao.439567521322929003" id="439567521322996167" />
-        <node role="refs" roleId="26ao.4577779292081946445" type="75wo.RequirementRef" typeId="75wo.439567521322984797" id="439567521322996168">
-          <link role="target" roleId="26ao.439567521322959431" targetNodeId="6bll.3291018189726975357" resolveInfo="Main" />
+      <node role="smodelAttribute" type=".com.mbeddr.cc.trace.structure.TraceAnnotation" id="439567521322996166">
+        <node role="tracekind" type=".com.mbeddr.cc.trace.structure.ImplementsTraceKind" id="439567521322996167" />
+        <node role="refs" type=".com.mbeddr.cc.requirements.structure.RequirementRef" id="439567521322996168">
+          <link role="target" targetNodeId="6bll.3291018189726975357" resolveInfo="Main" />
         </node>
       </node>
     </node>
-    <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="75wo.ReqModuleRefAttribute" typeId="75wo.3402431285977874460" id="3402431285977883629">
-      <node role="refs" roleId="26ao.439567521322959424" type="26ao.TraceTargetProviderRef" typeId="26ao.439567521322959422" id="439567521322996159">
-        <link role="provider" roleId="26ao.439567521322959423" targetNodeId="6bll.1165432222362120317" resolveInfo="DetailedRequirements" />
+    <node role="smodelAttribute" type=".com.mbeddr.cc.requirements.structure.ReqModuleRefAttribute" id="3402431285977883629">
+      <node role="refs" type=".com.mbeddr.cc.trace.structure.TraceTargetProviderRef" id="439567521322996159">
+        <link role="provider" targetNodeId="6bll.1165432222362120317" resolveInfo="DetailedRequirements" />
       </node>
     </node>
-    <node role="imports" roleId="x27k.1317894735999304826" type="x27k.ModuleImport" typeId="x27k.1317894735999299713" id="1209423092481298537">
-      <link role="module" roleId="x27k.1317894735999299714" targetNodeId="1209423092481298536" resolveInfo="StrUtil" />
+    <node role="imports" type=".com.mbeddr.core.modules.structure.ModuleImport" id="1209423092481298537">
+      <link role="module" targetNodeId="1209423092481298536" resolveInfo="StrUtil" />
     </node>
   </root>
   <root id="6623913219184388889">
@@ -270,20 +262,20 @@
     </node>
   </root>
   <root id="1209423092481298536">
-    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="1209423092481298548">
-      <property name="name" nameId="tpck.1169194664001" value="str2int" />
-      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
-      <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="1209423092481298549">
-        <node role="statements" roleId="c4fa.4185783222026475862" type="x27k.ReturnStatement" typeId="x27k.8967919205527146149" id="7537522850027530162">
-          <node role="expression" roleId="x27k.8967919205527146150" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="7537522850027530163">
+    <node role="contents" type=".com.mbeddr.core.modules.structure.Function" id="1209423092481298548">
+      <property name="name" value="str2int" />
+      <property name="exported" value="true" />
+      <node role="body" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="1209423092481298549">
+        <node role="statements" roleId="c4fa.4185783222026475862" type=".com.mbeddr.core.modules.structure.ReturnStatement" id="7537522850027530162">
+          <node role="expression" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="7537522850027530163">
             <property name="value" nameId="mj1l.8860443239512128104" value="0" />
           </node>
         </node>
       </node>
-      <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="1209423092481298551" />
-      <node role="arguments" roleId="x27k.5708867820623310661" type="x27k.Argument" typeId="x27k.7892328519581704407" id="1209423092481298552">
-        <property name="name" nameId="tpck.1169194664001" value="str" />
-        <node role="type" roleId="mj1l.318113533128716676" type="yq40.StringType" typeId="yq40.6113173064528067332" id="1209423092481298553" />
+      <node role="type" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="1209423092481298551" />
+      <node role="arguments" type=".com.mbeddr.core.modules.structure.Argument" id="1209423092481298552">
+        <property name="name" value="str" />
+        <node role="type" type="yq40.StringType" typeId="yq40.6113173064528067332" id="1209423092481298553" />
       </node>
     </node>
   </root>

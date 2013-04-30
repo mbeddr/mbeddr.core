@@ -6,6 +6,7 @@
   <language namespace="e06345c7-da82-4f8b-bd44-1425fe158640(com.mbeddr.doc.meta)" />
   <language namespace="1c5b7d51-0ef3-4332-af36-874466950878(com.mbeddr.doc.expressions)" />
   <language namespace="61c69711-ed61-4850-81d9-7714ff227fb0(com.mbeddr.core.expressions)" />
+  <language namespace="c61970b4-87fb-4429-8a3a-c87719f000a3(com.mbeddr.doc.terms)" />
   <devkit namespace="54c79f9f-f3ba-4167-91f1-eb4e98a9c47c(com.mbeddr.documentation)" />
   <import index="bskg" modelUID="r:be2272c0-bc2d-4ac4-a164-b072c9e60516(exampleCCode)" version="-1" />
   <import index="2c95" modelUID="r:5f7188a9-e7b4-4a2e-bef9-38d2cf379fdc(com.mbeddr.doc.structure)" version="10" />
@@ -19,6 +20,7 @@
   <import index="soy0" modelUID="r:7c7016e4-716d-41ab-b7e5-8604290de403(com.mbeddr.doc.meta.structure)" version="-1" implicit="yes" />
   <import index="f87k" modelUID="r:e7473124-6323-4ddf-9715-6e1684f751bd(com.mbeddr.doc.expressions.structure)" version="-1" implicit="yes" />
   <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="23" implicit="yes" />
+  <import index="8zu2" modelUID="r:04621706-863a-4403-8bd2-5b328fe9405d(com.mbeddr.doc.terms.structure)" version="-1" implicit="yes" />
   <roots>
     <node type="2c95.Document" typeId="2c95.3350625596579911728" id="2293093897292931468">
       <property name="name" nameId="tpck.1169194664001" value="A_Introduction" />
@@ -48,6 +50,10 @@
     </node>
     <node type="2c95.Document" typeId="2c95.3350625596579911728" id="5185579450379355909">
       <property name="name" nameId="tpck.1169194664001" value="D_Extending" />
+      <link role="config" roleId="2c95.6386504476136472832" targetNodeId="2293093897292931470" resolveInfo="Config" />
+    </node>
+    <node type="2c95.Document" typeId="2c95.3350625596579911728" id="8574110643282412676">
+      <property name="name" nameId="tpck.1169194664001" value="Z_Glossary" />
       <link role="config" roleId="2c95.6386504476136472832" targetNodeId="2293093897292931470" resolveInfo="Config" />
     </node>
   </roots>
@@ -672,6 +678,35 @@
           </node>
         </node>
       </node>
+      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Section" typeId="2c95.3350625596580064455" id="8574110643282412694">
+        <property name="name" nameId="tpck.1169194664001" value="glossar" />
+        <property name="text" nameId="2c95.3350625596580064225" value="Glossaries" />
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="8574110643282412695">
+          <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="8574110643282412696">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8574110643282412697">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="Documents can also use glossaries. One of these can be found in " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.SectRefWord" typeId="2c95.3350625596580108709" id="8574110643282412698">
+              <link role="target" roleId="2c95.3350625596580108719" targetNodeId="8574110643282419122" resolveInfo="importantTerms" />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8574110643282412699">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=".\nIt contains a collection of terms such as " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="8zu2.TermRefWord" typeId="8zu2.8574110643282370464" id="8574110643282412700">
+              <link role="term" roleId="8zu2.8574110643282370473" targetNodeId="8574110643282429386" resolveInfo="Car" />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8574110643282412701">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" or " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="8zu2.TermRefWord" typeId="8zu2.8574110643282370464" id="8574110643282412702">
+              <link role="term" roleId="8zu2.8574110643282370473" targetNodeId="8574110643282431634" resolveInfo="Wheel" />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8574110643282412703">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="." />
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
     <node role="contents" roleId="2c95.3350625596580064250" type="2c95.EmptyDocContent" typeId="2c95.3350625596579911760" id="8730648445433241606">
       <property name="name" nameId="tpck.1169194664001" value="empty_1363191714496_9" />
@@ -685,6 +720,9 @@
     <node role="authors" roleId="2c95.126932837435370865" type="2c95.Author" typeId="2c95.126932837435370850" id="8730648445432859522">
       <property name="name" nameId="2c95.126932837435370851" value="Markus Voelter" />
       <property name="email" nameId="2c95.126932837435370852" value="voelter@acm.org" />
+    </node>
+    <node role="dependsOn" roleId="2c95.8730648445433290694" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="8574110643282419120">
+      <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="8574110643282412676" resolveInfo="Z_Glossary" />
     </node>
   </root>
   <root id="8730648445432859523">
@@ -711,6 +749,11 @@
         <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="5185579450379355909" resolveInfo="D_Extending" />
       </node>
     </node>
+    <node role="contents" roleId="2c95.3350625596580064250" type="2c95.DocumentInclude" typeId="2c95.6165313375056012512" id="8574110643282415718">
+      <node role="ref" roleId="2c95.6165313375056012515" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="8574110643282415722">
+        <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="8574110643282412676" resolveInfo="Z_Glossary" />
+      </node>
+    </node>
     <node role="contents" roleId="2c95.3350625596580064250" type="2c95.EmptyDocContent" typeId="2c95.3350625596579911760" id="8730648445432859526">
       <property name="name" nameId="tpck.1169194664001" value="empty_1363188922445_7" />
     </node>
@@ -725,6 +768,9 @@
     </node>
     <node role="dependsOn" roleId="2c95.8730648445433290694" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="5185579450379355916">
       <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="5185579450379355909" resolveInfo="D_Extending" />
+    </node>
+    <node role="dependsOn" roleId="2c95.8730648445433290694" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="8574110643282415721">
+      <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="8574110643282412676" resolveInfo="Z_Glossary" />
     </node>
   </root>
   <root id="8730648445433290619">
@@ -1395,6 +1441,225 @@
           <property name="name" nameId="tpck.1169194664001" value="empty_1363607769950_2" />
         </node>
       </node>
+    </node>
+  </root>
+  <root id="8574110643282412676">
+    <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Section" typeId="2c95.3350625596580064455" id="8574110643282419122">
+      <property name="name" nameId="tpck.1169194664001" value="importantTerms" />
+      <property name="text" nameId="2c95.3350625596580064225" value="Important Terms" />
+      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="2732739370697315762">
+        <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="2732739370697315763">
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2732739370697315764">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value="Here are a number of important terms. Each of them is defined separately\nin the document. The definitions can contain explicit relationships to \nother terms. These can be shown as a diagram. An example is in " />
+          </node>
+          <node role="words" roleId="87nw.2557074442922392302" type="2c95.ImgRefWord" typeId="2c95.6386504476136420159" id="2732739370697315765">
+            <link role="image" roleId="2c95.6386504476136420174" targetNodeId="2732739370697308260" resolveInfo="termDeps" />
+          </node>
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2732739370697315766">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value="." />
+          </node>
+        </node>
+      </node>
+      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.EmptyDocContent" typeId="2c95.3350625596579911760" id="2732739370697315760">
+        <property name="name" nameId="tpck.1169194664001" value="empty_1366139061953_2" />
+      </node>
+      <node role="contents" roleId="2c95.3350625596580064250" type="8zu2.TermDefParagraph" typeId="8zu2.8574110643282425937" id="8574110643282429386">
+        <property name="term" nameId="8zu2.8574110643282425939" value="Car" />
+        <node role="text" roleId="8zu2.8574110643282425940" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8574110643282429387">
+          <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8574110643282429388">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8574110643282429389">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="A Car is a thing with four " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="8zu2.TermRefWord" typeId="8zu2.8574110643282370464" id="8574110643282433095">
+              <property name="alternativeText" nameId="8zu2.4201933574507578547" value="Wheels" />
+              <link role="term" roleId="8zu2.8574110643282370473" targetNodeId="8574110643282431634" resolveInfo="Wheel" />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8574110643282433096">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=". Cars also have an " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="8zu2.TermRefWord" typeId="8zu2.8574110643282370464" id="4224548511521379221">
+              <link role="term" roleId="8zu2.8574110643282370473" targetNodeId="4224548511521379216" resolveInfo="Engine" />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4224548511521379220">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="." />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.EmptyDocContent" typeId="2c95.3350625596579911760" id="8574110643282431632">
+        <property name="name" nameId="tpck.1169194664001" value="empty_1366048816639_1" />
+      </node>
+      <node role="contents" roleId="2c95.3350625596580064250" type="8zu2.TermDefParagraph" typeId="8zu2.8574110643282425937" id="8574110643282431634">
+        <property name="term" nameId="8zu2.8574110643282425939" value="Wheel" />
+        <node role="text" roleId="8zu2.8574110643282425940" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8574110643282431635">
+          <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8574110643282431636">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8574110643282431637">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="A wheel is the thing a " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="8zu2.TermRefWord" typeId="8zu2.8574110643282370464" id="8574110643282431638">
+              <link role="term" roleId="8zu2.8574110643282370473" targetNodeId="8574110643282429386" resolveInfo="Car" />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8574110643282431639">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" has four of. I should write some more text here, because\nI need to check if line breaking works correclty. So this should be enough. Of course\nyou can also refer to other stuff, such as this " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.ImgRefWord" typeId="2c95.6386504476136420159" id="8574110643282452782">
+              <link role="image" roleId="2c95.6386504476136420174" targetNodeId="8574110643282452775" resolveInfo="anImage" />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8574110643282452783">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="." />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.EmptyDocContent" typeId="2c95.3350625596579911760" id="8574110643282452773">
+        <property name="name" nameId="tpck.1169194664001" value="empty_1366049542078_1" />
+      </node>
+      <node role="contents" roleId="2c95.3350625596580064250" type="8zu2.TermDefParagraph" typeId="8zu2.8574110643282425937" id="1233689874746927686">
+        <property name="term" nameId="8zu2.8574110643282425939" value="Vehicle" />
+        <node role="text" roleId="8zu2.8574110643282425940" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="1233689874746927687">
+          <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="1233689874746927688">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1233689874746927689">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="A vehicle is " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="8zu2.TermRelationshipText" typeId="8zu2.1233689874746925900" id="1233689874746927690">
+              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="1233689874746927691">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1233689874746927694">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="the generalization of " />
+                </node>
+                <node role="words" roleId="87nw.2557074442922392302" type="8zu2.TermRefWord" typeId="8zu2.8574110643282370464" id="1233689874746927697">
+                  <link role="term" roleId="8zu2.8574110643282370473" targetNodeId="8574110643282429386" resolveInfo="Car" />
+                </node>
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1233689874746927696">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="" />
+                </node>
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1233689874746927693">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="." />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.ImageParagraph" typeId="2c95.6386504476136263187" id="8574110643282452775">
+        <property name="name" nameId="tpck.1169194664001" value="anImage" />
+        <node role="resource" roleId="2c95.6386504476136531838" type="2c95.Resource" typeId="2c95.6386504476136521407" id="8574110643282452781">
+          <property name="fileName" nameId="2c95.6386504476136521408" value="ash26.png" />
+          <link role="path" roleId="2c95.6386504476136521409" targetNodeId="8730648445433243074" resolveInfo="images" />
+        </node>
+        <node role="description" roleId="2c95.6386504476136278696" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8574110643282452777">
+          <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8574110643282452778">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8574110643282452779" />
+          </node>
+        </node>
+        <node role="sizeSpec" roleId="2c95.8624890525767908695" type="2c95.PageWidthSizeSpec" typeId="2c95.8624890525767637976" id="8574110643282452780">
+          <property name="percentage" nameId="2c95.8624890525767637977" value="100" />
+        </node>
+      </node>
+      <node role="contents" roleId="2c95.3350625596580064250" type="8zu2.TermDefParagraph" typeId="8zu2.8574110643282425937" id="4224548511521379216">
+        <property name="term" nameId="8zu2.8574110643282425939" value="Engine" />
+        <node role="text" roleId="8zu2.8574110643282425940" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="4224548511521379217">
+          <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="4224548511521379218">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4224548511521379219">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="An engine is the thing that drives the " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="8zu2.TermRefWord" typeId="8zu2.8574110643282370464" id="4201933574507581636">
+              <link role="term" roleId="8zu2.8574110643282370473" targetNodeId="8574110643282429386" resolveInfo="Car" />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4201933574507581635">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=". Of course, there is also the " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="8zu2.TermRefWord" typeId="8zu2.8574110643282370464" id="4224548511521382413">
+              <link role="term" roleId="8zu2.8574110643282370473" targetNodeId="4224548511521382408" resolveInfo="Driver" />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4224548511521382412">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=".\nSo, in fact " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="8zu2.TermRelationshipText" typeId="8zu2.1233689874746925900" id="4224548511521435057">
+              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="4224548511521435058">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4224548511521435061">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="the " />
+                </node>
+                <node role="words" roleId="87nw.2557074442922392302" type="8zu2.TermRefWord" typeId="8zu2.8574110643282370464" id="4224548511521435063">
+                  <link role="term" roleId="8zu2.8574110643282370473" targetNodeId="4224548511521382408" resolveInfo="Driver" />
+                </node>
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4224548511521435064">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value=" drives the car." />
+                </node>
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4224548511521435060" />
+          </node>
+        </node>
+      </node>
+      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.EmptyDocContent" typeId="2c95.3350625596579911760" id="4224548511521382415">
+        <property name="name" nameId="tpck.1169194664001" value="empty_1366136993373_2" />
+      </node>
+      <node role="contents" roleId="2c95.3350625596580064250" type="8zu2.TermDefParagraph" typeId="8zu2.8574110643282425937" id="4224548511521382408">
+        <property name="term" nameId="8zu2.8574110643282425939" value="Driver" />
+        <node role="text" roleId="8zu2.8574110643282425940" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="4224548511521382409">
+          <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="4224548511521382410">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4224548511521382411">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="A driver is actually a " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="8zu2.TermRefWord" typeId="8zu2.8574110643282370464" id="4224548511521435056">
+              <link role="term" roleId="8zu2.8574110643282370473" targetNodeId="4224548511521435050" resolveInfo="Person" />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4224548511521435055">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="." />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.EmptyDocContent" typeId="2c95.3350625596579911760" id="4224548511521435054">
+        <property name="name" nameId="tpck.1169194664001" value="empty_1366137098342_1" />
+      </node>
+      <node role="contents" roleId="2c95.3350625596580064250" type="8zu2.TermDefParagraph" typeId="8zu2.8574110643282425937" id="4224548511521435050">
+        <property name="term" nameId="8zu2.8574110643282425939" value="Person" />
+        <node role="text" roleId="8zu2.8574110643282425940" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="4224548511521435051">
+          <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="4224548511521435052">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4224548511521435053">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="This is a human. Not explained any further. A person " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="8zu2.TermRelationshipText" typeId="8zu2.1233689874746925900" id="4224548511521513855">
+              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="4224548511521513856">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4224548511521513857">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="may have a brother " />
+                </node>
+                <node role="words" roleId="87nw.2557074442922392302" type="8zu2.TermRefWord" typeId="8zu2.8574110643282370464" id="4224548511521513868">
+                  <link role="term" roleId="8zu2.8574110643282370473" targetNodeId="4224548511521435050" resolveInfo="Person" />
+                </node>
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4224548511521513869" />
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4224548511521513858" />
+          </node>
+        </node>
+      </node>
+      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.EmptyDocContent" typeId="2c95.3350625596579911760" id="4224548511521432087">
+        <property name="name" nameId="tpck.1169194664001" value="empty_1366137056247_2" />
+      </node>
+      <node role="contents" roleId="2c95.3350625596580064250" type="rh4a.Visualization" typeId="rh4a.4755612053022373494" id="2732739370697308260">
+        <property name="category" nameId="rh4a.4755612053022373532" value="term dependencies" />
+        <property name="name" nameId="tpck.1169194664001" value="termDeps" />
+        <link role="visualizable" roleId="rh4a.4755612053022373496" targetNodeId="8574110643282429386" resolveInfo="Car" />
+        <link role="path" roleId="rh4a.4755612053022398751" targetNodeId="8730648445432874250" resolveInfo="imgTemp" />
+        <node role="description" roleId="rh4a.4755612053022495458" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="2732739370697308261">
+          <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="2732739370697308262">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2732739370697308263">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="The relationships between the terms can also be shown as a diagram." />
+            </node>
+          </node>
+        </node>
+        <node role="sizeSpec" roleId="rh4a.8624890525767931145" type="2c95.PageWidthSizeSpec" typeId="2c95.8624890525767637976" id="2732739370697308264">
+          <property name="percentage" nameId="2c95.8624890525767637977" value="100" />
+        </node>
+      </node>
+    </node>
+    <node role="contents" roleId="2c95.3350625596580064250" type="2c95.EmptyDocContent" typeId="2c95.3350625596579911760" id="8574110643282412678">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1366047884061_2" />
+    </node>
+    <node role="contents" roleId="2c95.3350625596580064250" type="2c95.EmptyDocContent" typeId="2c95.3350625596579911760" id="4224548511521382414">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1366136984924_1" />
     </node>
   </root>
 </model>
