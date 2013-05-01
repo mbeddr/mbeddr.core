@@ -20,7 +20,6 @@
   <import index="51wr" modelUID="r:b31f1c3c-99aa-4f1e-a329-cba27efb1a6b(com.mbeddr.core.buildconfig.structure)" version="1" implicit="yes" />
   <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="5" implicit="yes" />
   <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="5" implicit="yes" />
-  <import index="q5q6" modelUID="r:5d65e582-fa41-4818-b31c-b2aee1644b4a(com.mbeddr.analyses.cbmc.structure)" version="16" implicit="yes" />
   <roots>
     <node type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="535044775891209444">
       <property name="name" nameId="tpck.1169194664001" value="Simple" />
@@ -108,10 +107,10 @@
           <property name="const" nameId="mj1l.2941277002445651368" value="false" />
         </node>
       </node>
-      <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="q5q6.VerificationConfigurationAttribute" typeId="q5q6.535044775891207547" id="2017717622748559363">
-        <property name="unwindingDepth" nameId="q5q6.2017717622748544591" value="10" />
-        <property name="analysisDepth" nameId="q5q6.441761995015233437" value="1000" />
-        <link role="verificationEntryPoint" roleId="q5q6.535044775891209632" targetNodeId="535044775891209537" resolveInfo="goodEntryPoint" />
+      <node role="smodelAttribute" roleId="tpck.5169995583184591170" type=".com.mbeddr.analyses.cbmc.structure.VerificationConfigurationAttribute" id="2017717622748559363">
+        <property name="unwindingDepth" value="10" />
+        <property name="analysisDepth" value="1000" />
+        <link role="verificationEntryPoint" targetNodeId="535044775891209537" resolveInfo="goodEntryPoint" />
       </node>
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="535044775891209514">
@@ -153,10 +152,10 @@
           <property name="const" nameId="mj1l.2941277002445651368" value="false" />
         </node>
       </node>
-      <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="q5q6.VerificationConfigurationAttribute" typeId="q5q6.535044775891207547" id="2017717622748508363">
-        <property name="unwindingDepth" nameId="q5q6.2017717622748544591" value="10" />
-        <property name="analysisDepth" nameId="q5q6.441761995015233437" value="1000" />
-        <link role="verificationEntryPoint" roleId="q5q6.535044775891209632" targetNodeId="2017717622748508335" resolveInfo="badEntryPoint" />
+      <node role="smodelAttribute" roleId="tpck.5169995583184591170" type=".com.mbeddr.analyses.cbmc.structure.VerificationConfigurationAttribute" id="2017717622748508363">
+        <property name="unwindingDepth" value="10" />
+        <property name="analysisDepth" value="1000" />
+        <link role="verificationEntryPoint" targetNodeId="2017717622748508335" resolveInfo="badEntryPoint" />
       </node>
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="2017717622748508350">

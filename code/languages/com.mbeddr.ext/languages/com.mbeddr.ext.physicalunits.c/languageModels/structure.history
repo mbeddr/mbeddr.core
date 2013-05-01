@@ -7,9 +7,9 @@
       <model index="pzl9" modelUID="r:d3fd93c4-cbd2-431d-9739-1a5b059ce0ef(com.mbeddr.ext.physicalunits.derived.typesystem)" version="-1" />
       <model index="nsq1" modelUID="r:c41b54cb-d0f9-4b15-b81f-87befea67f49(com.mbeddr.ext.physicalunits.derived.behavior)" version="-1" />
       <model index="3c6d" modelUID="r:d6d71b6a-f5ea-4b72-bd01-9d5b19792726(com.mbeddr.ext.physicalunits.c.structure)" version="-1" />
-      <model index="l98v" modelUID="r:07a7aaec-7406-438d-b0c1-0522f68b904c(com.mbeddr.ext.physicalunits.c.behavior)" version="-1" />
-      <model index="ufto" modelUID="r:a0b8a376-6b82-46e9-a1b6-01271f3b4624(com.mbeddr.ext.physicalunits.c.constraints)" version="-1" />
       <model index="vg1v" modelUID="r:bfc144bb-c1cb-4758-b03b-639ef968eb7e(com.mbeddr.ext.physicalunits.c.editor)" version="-1" />
+      <model index="ufto" modelUID="r:a0b8a376-6b82-46e9-a1b6-01271f3b4624(com.mbeddr.ext.physicalunits.c.constraints)" version="-1" />
+      <model index="l98v" modelUID="r:07a7aaec-7406-438d-b0c1-0522f68b904c(com.mbeddr.ext.physicalunits.c.behavior)" version="-1" />
       <model index="c8tw" modelUID="r:36309d88-ef87-4da4-8eb4-71476d30bddf(com.mbeddr.ext.physicalunits.c.typesystem)" version="-1" />
       <model index="7og" modelUID="r:eeb994f4-a8e6-4915-b147-eb310bfd9130(com.mbeddr.ext.physicalunits.derived.constraints)" version="-1" />
     </dependencies>
@@ -204,6 +204,13 @@
     <move id="nsq1.5185104661801310338" to="l98v.5185104661801317185" />
     <move id="nsq1.5185104661801310319" to="l98v.5185104661801317180" />
     <move id="nsq1.5185104661801310363" to="l98v.5185104661801317199" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="20" />
+      <model index="3c6d" modelUID="r:d6d71b6a-f5ea-4b72-bd01-9d5b19792726(com.mbeddr.ext.physicalunits.c.structure)" version="0" />
+    </dependencies>
+    <move id="3c6d.5513256947824503029" to="mj1l.7336544617004013388" />
   </StructureModification>
 </history>
 
