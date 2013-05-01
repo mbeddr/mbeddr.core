@@ -16,8 +16,8 @@
   <devkit namespace="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   <import index="pszp" modelUID="r:5097c9c6-4a5a-40ee-bd76-4904ba8fa229(com.mbeddr.analyses.nusmv.statemachine.structure)" version="22" />
   <import index="1kyd" modelUID="r:8e3b5cea-22d0-4810-85cb-5e42618ffced(com.mbeddr.analyses.nusmv.rt.counterexample_model)" version="-1" />
-  <import index="clqz" modelUID="r:5ebcdb77-81e9-4964-beae-35bd9a2f28b5(com.mbeddr.ext.statemachines.structure)" version="9" />
-  <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="22" />
+  <import index="clqz" modelUID="r:5ebcdb77-81e9-4964-beae-35bd9a2f28b5(com.mbeddr.ext.statemachines.structure)" version="11" />
+  <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="23" />
   <import index="jvd9" modelUID="r:a4d279b2-043e-4b7a-a737-92247c439761(com.mbeddr.analyses.nusmv.rt.main)" version="-1" />
   <import index="mwjz" modelUID="r:2d9fd8a8-da37-4db8-afcf-d58c195bf9d3(com.mbeddr.analyses.nusmv.structure)" version="5" />
   <import index="8tgt" modelUID="r:2bd7a930-4442-47e2-aa1b-24a6aa4ee959(com.mbeddr.analyses.nusmv.statemachine.generator.template.generator.template.generator.template.utils)" version="2" />
@@ -27,7 +27,7 @@
   <import index="ktif" modelUID="r:7581afdf-2eec-4ad5-b583-8a9ab51847f7(com.mbeddr.ext.statemachines.behavior)" version="0" />
   <import index="yq40" modelUID="r:152b3fc0-83a1-4bab-a8cd-565eb8483785(com.mbeddr.core.pointers.structure)" version="3" />
   <import index="e2lb" modelUID="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" version="-1" />
-  <import index="ywuz" modelUID="r:c6ce92e7-5a98-4a6f-866a-ec8b9e945dd8(com.mbeddr.core.expressions.behavior)" version="1" />
+  <import index="ywuz" modelUID="r:c6ce92e7-5a98-4a6f-866a-ec8b9e945dd8(com.mbeddr.core.expressions.behavior)" version="2" />
   <import index="fxg7" modelUID="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.io(java.io@java_stub)" version="-1" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="tpf8" modelUID="r:00000000-0000-4000-0000-011c895902e8(jetbrains.mps.lang.generator.structure)" version="2" implicit="yes" />
@@ -5800,6 +5800,68 @@
             <node role="variables" roleId="mwjz.1624258081063515696" type="mwjz.VarDeclaration" typeId="mwjz.9160285965193940980" id="8101753050697035942">
               <property name="name" nameId="tpck.1169194664001" value="event" />
               <node role="type" roleId="mj1l.318113533128716676" type="mwjz.NuSMVBooleanType" typeId="mwjz.8529047761668230854" id="8101753050697035943" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node role="reductionMappingRule" roleId="tpf8.1167328349397" type="tpf8.Reduction_MappingRule" typeId="tpf8.1167327847730" id="429171442366585292">
+      <link role="applicableConcept" roleId="tpf8.1167169349424" targetNodeId="clqz.5338908363445903987" resolveInfo="MacroRef" />
+      <node role="ruleConsequence" roleId="tpf8.1169672767469" type="tpf8.InlineTemplateWithContext_RuleConsequence" typeId="tpf8.8900764248744213868" id="429171442366585293">
+        <node role="contentNode" roleId="tpf8.8900764248744213871" type="mwjz.Module" typeId="mwjz.628165277879732721" id="429171442366585294">
+          <property name="name" nameId="tpck.1169194664001" value="foo" />
+          <node role="elements" roleId="mwjz.7760896152280395302" type="mwjz.VarDeclarationBlock" typeId="mwjz.9160285965193981239" id="429171442366585295">
+            <node role="variables" roleId="mwjz.9160285965193981240" type="mwjz.VarDeclaration" typeId="mwjz.9160285965193940980" id="429171442366585296">
+              <property name="name" nameId="tpck.1169194664001" value="_current_state" />
+              <node role="type" roleId="mj1l.318113533128716676" type="mwjz.EnumerationDeclaration" typeId="mwjz.9160285965193991539" id="429171442366585297">
+                <node role="elements" roleId="mwjz.9160285965193993750" type="mwjz.EnumerationElement" typeId="mwjz.9160285965193991540" id="429171442366585298">
+                  <property name="name" nameId="tpck.1169194664001" value="FOO" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node role="elements" roleId="mwjz.7760896152280395302" type="mwjz.SpecDeclarationBlock" typeId="mwjz.5565537630674770981" id="429171442366585299">
+            <node role="ctlExpr" roleId="mwjz.5565537630674770983" type="mwjz.LocalEnumRef" typeId="mwjz.628165277879648344" id="429171442366585301">
+              <link role="enumeration" roleId="mwjz.628165277879648345" targetNodeId="429171442366585298" resolveInfo="FOO" />
+              <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.TemplateFragment" typeId="tpf8.1095672379244" id="429171442366696793" />
+              <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.CopySrcNodeMacro" typeId="tpf8.1114706874351" id="429171442366585327">
+                <node role="sourceNodeQuery" roleId="tpf8.1168024447342" type="tpf8.SourceSubstituteMacro_SourceNodeQuery" typeId="tpf8.1168024337012" id="429171442366585330">
+                  <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="429171442366585331">
+                    <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="429171442366585332">
+                      <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="429171442366635008">
+                        <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="429171442366585333">
+                          <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="429171442366585334">
+                            <link role="link" roleId="tp25.1138056516764" targetNodeId="clqz.5338908363445903988" />
+                          </node>
+                          <node role="operand" roleId="tpee.1197027771414" type="tpf8.TemplateFunctionParameter_sourceNode" typeId="tpf8.1167169188348" id="429171442366585335" />
+                        </node>
+                        <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="429171442366635014">
+                          <link role="link" roleId="tp25.1138056516764" targetNodeId="clqz.5338908363445763651" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node role="conditionFunction" roleId="tpf8.1167169362365" type="tpf8.BaseMappingRule_Condition" typeId="tpf8.1167168920554" id="429171442366585316">
+        <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="429171442366585317">
+          <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="429171442366585318">
+            <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="429171442366585319">
+              <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="429171442366585320">
+                <node role="operand" roleId="tpee.1197027771414" type="tpf8.TemplateFunctionParameter_sourceNode" typeId="tpf8.1167169188348" id="429171442366585321" />
+                <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_GetAncestorOperation" typeId="tp25.1171407110247" id="429171442366585322">
+                  <node role="parameter" roleId="tp25.1144104376918" type="tp25.OperationParm_Concept" typeId="tp25.1144101972840" id="429171442366585323">
+                    <node role="conceptArgument" roleId="tp25.1207343664468" type="tp25.RefConcept_Reference" typeId="tp25.1177026924588" id="429171442366585324">
+                      <link role="conceptDeclaration" roleId="tp25.1177026940964" targetNodeId="pszp.1579201292659037803" resolveInfo="NuSMVStatemachineContainer" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_IsNotNullOperation" typeId="tp25.1172008320231" id="429171442366585325" />
             </node>
           </node>
         </node>
