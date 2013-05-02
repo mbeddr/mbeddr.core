@@ -132,8 +132,8 @@
             </node>
             <node role="left" roleId="mj1l.8860443239512128064" type="v0r9.DirectRunnableCall" typeId="v0r9.8230733038424928674" id="9184727592626690917">
               <link role="runnable" roleId="v0r9.6105672464781003798" targetNodeId="9184727592626069888" resolveInfo="getValueOfCallable" />
-              <link role="instance" roleId="v7ag.1482737808881210674" targetNodeId="9184727592626582504" resolveInfo="usingType" />
               <link role="config" roleId="v7ag.1482737808881210673" targetNodeId="9184727592626069899" resolveInfo="wiring" />
+              <link role="instance" roleId="v7ag.1482737808881210674" targetNodeId="723073916620812003" resolveInfo="usingType" />
             </node>
           </node>
           <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="rpmx.MarkerAnnotation" typeId="rpmx.4193597469137492628" id="5710167937132109982">
@@ -164,29 +164,29 @@
           <property name="name" nameId="tpck.1169194664001" value="1stComponentInstance" />
         </node>
       </node>
-      <node role="contents" roleId="v7ag.7780999115923944213" type="v7ag.ComponentInstance" typeId="v7ag.4491876417845649014" id="9184727592626582502">
+      <node role="contents" roleId="v7ag.7780999115923944213" type="v7ag.ComponentInstance" typeId="v7ag.4491876417845649014" id="723073916620811998">
         <property name="name" nameId="tpck.1169194664001" value="bla" />
         <link role="component" roleId="v7ag.4491876417845649015" targetNodeId="9184727592626069869" resolveInfo="A" />
-        <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="rpmx.MarkerAnnotation" typeId="rpmx.4193597469137492628" id="5710167937132109967">
-          <property name="name" nameId="tpck.1169194664001" value="2ndComponentInstance" />
-        </node>
-        <node role="initFieldInitializers" roleId="v7ag.785275130114861567" type="v7ag.InitFieldInitializer" typeId="v7ag.785275130114861597" id="5626675291296847975">
+        <node role="initializers" roleId="v7ag.785275130114861567" type="v7ag.InitFieldInitializer" typeId="v7ag.785275130114861597" id="723073916620811999">
           <link role="field" roleId="v7ag.785275130114861598" targetNodeId="5710167937132972047" resolveInfo="anotherComponent" />
-          <node role="value" roleId="v7ag.785275130114861599" type="v7ag.ComponentInstanceRefExpr" typeId="v7ag.9184727592626582507" id="5626675291296847977">
+          <node role="value" roleId="v7ag.785275130114861599" type="v7ag.ComponentInstanceRefExpr" typeId="v7ag.9184727592626582507" id="723073916620812000">
             <link role="ci" roleId="v7ag.9184727592626582508" targetNodeId="5710167937132109966" resolveInfo="c" />
           </node>
         </node>
+        <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="rpmx.MarkerAnnotation" typeId="rpmx.4193597469137492628" id="723073916620812001">
+          <property name="name" nameId="tpck.1169194664001" value="2ndComponentInstance" />
+        </node>
       </node>
-      <node role="contents" roleId="v7ag.7780999115923944213" type="v7ag.ComponentInstance" typeId="v7ag.4491876417845649014" id="9184727592626582504">
+      <node role="contents" roleId="v7ag.7780999115923944213" type="v7ag.ComponentInstance" typeId="v7ag.4491876417845649014" id="723073916620812003">
         <property name="name" nameId="tpck.1169194664001" value="usingType" />
         <link role="component" roleId="v7ag.4491876417845649015" targetNodeId="9184727592626069881" resolveInfo="B" />
-        <node role="initFieldInitializers" roleId="v7ag.785275130114861567" type="v7ag.InitFieldInitializer" typeId="v7ag.785275130114861597" id="9184727592626582505">
+        <node role="initializers" roleId="v7ag.785275130114861567" type="v7ag.InitFieldInitializer" typeId="v7ag.785275130114861597" id="723073916620812004">
           <link role="field" roleId="v7ag.785275130114861598" targetNodeId="9184727592626069882" resolveInfo="c" />
-          <node role="value" roleId="v7ag.785275130114861599" type="v7ag.ComponentInstanceRefExpr" typeId="v7ag.9184727592626582507" id="9184727592626690906">
-            <link role="ci" roleId="v7ag.9184727592626582508" targetNodeId="9184727592626582502" resolveInfo="bla" />
+          <node role="value" roleId="v7ag.785275130114861599" type="v7ag.ComponentInstanceRefExpr" typeId="v7ag.9184727592626582507" id="723073916620812006">
+            <link role="ci" roleId="v7ag.9184727592626582508" targetNodeId="723073916620811998" resolveInfo="bla" />
           </node>
         </node>
-        <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="rpmx.MarkerAnnotation" typeId="rpmx.4193597469137492628" id="5710167937132109968">
+        <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="rpmx.MarkerAnnotation" typeId="rpmx.4193597469137492628" id="723073916620812007">
           <property name="name" nameId="tpck.1169194664001" value="3rdComponentInstance" />
         </node>
       </node>
@@ -724,7 +724,7 @@
       <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="5710167937132109974" />
       <node role="suspension" roleId="rpmx.105850086902839308" type="rpmx.SuspensionPointConfiguration" typeId="rpmx.105850086903250145" id="5710167937132109975">
         <node role="suspensionPoint" roleId="rpmx.105850086903250160" type="rpmx.MarkerReference" typeId="rpmx.105850086903250161" id="5710167937132109976">
-          <link role="marker" roleId="rpmx.105850086903274948" targetNodeId="5710167937132109967" resolveInfo="2ndComponentInstance" />
+          <link role="marker" roleId="rpmx.105850086903274948" targetNodeId="723073916620812001" resolveInfo="2ndComponentInstance" />
         </node>
       </node>
       <node role="stepping" roleId="rpmx.105850086903379490" type="rpmx.SteppingConfiguration" typeId="rpmx.105850086903379387" id="5710167937132109977">
@@ -735,7 +735,7 @@
       <node role="validation" roleId="rpmx.4360423713604451010" type="rpmx.ValidationConfiguration" typeId="rpmx.4360423713604419372" id="5710167937132109979">
         <node role="validations" roleId="rpmx.4360423713604419402" type="rpmx.ValidateDebuggerSuspended" typeId="rpmx.7048220250906049590" id="5710167937132109980">
           <node role="marker" roleId="rpmx.7048220250906049591" type="rpmx.MarkerRef" typeId="rpmx.4193597469137492644" id="5710167937132109981">
-            <link role="marker" roleId="rpmx.4193597469137492645" targetNodeId="5710167937132109968" resolveInfo="3rdComponentInstance" />
+            <link role="marker" roleId="rpmx.4193597469137492645" targetNodeId="723073916620812007" resolveInfo="3rdComponentInstance" />
           </node>
         </node>
       </node>
