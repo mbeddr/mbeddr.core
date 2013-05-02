@@ -13,6 +13,10 @@
     <node type="tp1t.ConceptConstraints" typeId="tp1t.1213093968558" id="7946676408104337250">
       <link role="concept" roleId="tp1t.1213093996982" targetNodeId="zpaf.1535917470678273191" resolveInfo="ImportSpec" />
     </node>
+    <node type="tp1t.ConceptConstraints" typeId="tp1t.1213093968558" id="3581300445063600011">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="lazy" />
+      <link role="concept" roleId="tp1t.1213093996982" targetNodeId="zpaf.3581300445063391406" resolveInfo="LazyMemberRef" />
+    </node>
   </roots>
   <root id="7946676408104337250">
     <node role="property" roleId="tp1t.1213098023997" type="tp1t.NodePropertyConstraint" typeId="tp1t.1147467115080" id="7946676408104337251">
@@ -37,6 +41,17 @@
                 </node>
               </node>
             </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </root>
+  <root id="3581300445063600011">
+    <node role="canBeChild" roleId="tp1t.1213106463729" type="tp1t.ConstraintFunction_CanBeAChild" typeId="tp1t.1202989531578" id="3581300445063600012">
+      <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="3581300445063600013">
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="3581300445063600014">
+          <node role="expression" roleId="tpee.1068580123156" type="tpee.BooleanConstant" typeId="tpee.1068580123137" id="3581300445063600015">
+            <property name="value" nameId="tpee.1068580123138" value="false" />
           </node>
         </node>
       </node>

@@ -11,4 +11,6 @@ union u1 {
 UN u;
 union u1 u1;
 
-
+void xx(){
+	u1.x;
+}
