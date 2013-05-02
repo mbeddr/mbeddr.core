@@ -12,7 +12,7 @@
   <import index="yz9a" modelUID="r:734c02dd-cc16-4184-99eb-5fd9f43aa37e(com.mbeddr.core.unittest.structure)" version="0" implicit="yes" />
   <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="5" implicit="yes" />
   <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="5" implicit="yes" />
-  <import index="v7ag" modelUID="r:9596407c-f27a-49d3-abde-3a66293c5b61(com.mbeddr.ext.components.structure)" version="17" implicit="yes" />
+  <import index="v7ag" modelUID="r:9596407c-f27a-49d3-abde-3a66293c5b61(com.mbeddr.ext.components.structure)" version="19" implicit="yes" />
   <import index="p7vm" modelUID="r:28fa862e-f94d-4c39-bdf7-a4bdbc773888(com.mbeddr.ext.components.gen_nomw.structure)" version="0" implicit="yes" />
   <import index="v0r9" modelUID="r:277b15fc-1383-4213-8385-5a16481fa36c(com.mbeddr.ext.components.test.structure)" version="4" implicit="yes" />
   <import index="clbe" modelUID="r:61d840b4-12c1-49ea-b142-b2a1550a9b15(com.mbeddr.core.udt.structure)" version="7" implicit="yes" />
@@ -258,12 +258,12 @@
       <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.ProvidedPort" typeId="v7ag.4491876417845628840" id="2481387216195029869">
         <property name="name" nameId="tpck.1169194664001" value="carType" />
         <link role="intf" roleId="v7ag.4491876417845484932" targetNodeId="998890089995206423" resolveInfo="CarType" />
-        <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="v7ag.ExternalStorrageLocation" typeId="v7ag.2481387216194749727" id="2481387216195029870" />
+        <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="v7ag.ExternalStorageLocation" typeId="v7ag.2481387216194749727" id="2481387216195029870" />
       </node>
       <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.ProvidedPort" typeId="v7ag.4491876417845628840" id="8043580079800296744">
         <property name="name" nameId="tpck.1169194664001" value="carPositions" />
         <link role="intf" roleId="v7ag.4491876417845484932" targetNodeId="8043580079800296737" resolveInfo="CarPositions" />
-        <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="v7ag.ExternalStorrageLocation" typeId="v7ag.2481387216194749727" id="8043580079800296745" />
+        <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="v7ag.ExternalStorageLocation" typeId="v7ag.2481387216194749727" id="8043580079800296745" />
       </node>
       <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.EmptyComponentContent" typeId="v7ag.8515777736166878876" id="998890089994905872" />
       <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="998890089994905876">
@@ -481,7 +481,7 @@
       <node role="contents" roleId="v7ag.7780999115923944213" type="v7ag.ComponentInstance" typeId="v7ag.4491876417845649014" id="2116578915583633237">
         <property name="name" nameId="tpck.1169194664001" value="motor" />
         <link role="component" roleId="v7ag.4491876417845649015" targetNodeId="998890089994905870" resolveInfo="Motor" />
-        <node role="initializers" roleId="v7ag.785275130114861567" type="v7ag.ExternalStorrageInitializer" typeId="v7ag.2481387216194959457" id="2481387216195029877">
+        <node role="initializers" roleId="v7ag.785275130114861567" type="v7ag.ExternalStorageInitializer" typeId="v7ag.2481387216194959457" id="2481387216195029877">
           <link role="port" roleId="v7ag.2481387216194959458" targetNodeId="2481387216195029869" resolveInfo="carType" />
           <node role="expr" roleId="v7ag.2481387216194959459" type="yq40.ReferenceExpr" typeId="yq40.1595838349830846141" id="2481387216195029879">
             <node role="expression" roleId="mj1l.7254843406768839760" type="x27k.GlobalVarRef" typeId="x27k.6610873504380357354" id="2481387216195029881">
@@ -489,7 +489,7 @@
             </node>
           </node>
         </node>
-        <node role="initializers" roleId="v7ag.785275130114861567" type="v7ag.ExternalStorrageInitializer" typeId="v7ag.2481387216194959457" id="8043580079800296756">
+        <node role="initializers" roleId="v7ag.785275130114861567" type="v7ag.ExternalStorageInitializer" typeId="v7ag.2481387216194959457" id="8043580079800296756">
           <link role="port" roleId="v7ag.2481387216194959458" targetNodeId="8043580079800296744" resolveInfo="carPositions" />
           <node role="expr" roleId="v7ag.2481387216194959459" type="x27k.GlobalVarRef" typeId="x27k.6610873504380357354" id="8043580079800296758">
             <link role="var" roleId="x27k.6610873504380357355" targetNodeId="8043580079800296750" resolveInfo="positions" />
