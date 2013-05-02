@@ -10,13 +10,13 @@
   <import index="51wr" modelUID="r:b31f1c3c-99aa-4f1e-a329-cba27efb1a6b(com.mbeddr.core.buildconfig.structure)" version="1" implicit="yes" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="q46j" modelUID="r:de290943-4e17-4d44-ae22-c863a13543cf(com.mbeddr.analyses.base.structure)" version="1" implicit="yes" />
-  <import index="q5q6" modelUID="r:5d65e582-fa41-4818-b31c-b2aee1644b4a(com.mbeddr.analyses.cbmc.structure)" version="16" implicit="yes" />
   <import index="p7vm" modelUID="r:28fa862e-f94d-4c39-bdf7-a4bdbc773888(com.mbeddr.ext.components.gen_nomw.structure)" version="0" implicit="yes" />
-  <import index="v7ag" modelUID="r:9596407c-f27a-49d3-abde-3a66293c5b61(com.mbeddr.ext.components.structure)" version="16" implicit="yes" />
+  <import index="v7ag" modelUID="r:9596407c-f27a-49d3-abde-3a66293c5b61(com.mbeddr.ext.components.structure)" version="17" implicit="yes" />
   <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="7" implicit="yes" />
   <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="23" implicit="yes" />
   <import index="k146" modelUID="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" version="5" implicit="yes" />
-  <import index="clqz" modelUID="r:5ebcdb77-81e9-4964-beae-35bd9a2f28b5(com.mbeddr.ext.statemachines.structure)" version="9" implicit="yes" />
+  <import index="clqz" modelUID="r:5ebcdb77-81e9-4964-beae-35bd9a2f28b5(com.mbeddr.ext.statemachines.structure)" version="11" implicit="yes" />
+  <import index="q5q6" modelUID="r:5d65e582-fa41-4818-b31c-b2aee1644b4a(com.mbeddr.analyses.cbmc.structure)" version="16" implicit="yes" />
   <roots>
     <node type="51wr.BuildConfiguration" typeId="51wr.7717755763392524104" id="6472990431939782584" />
     <node type="q46j.AnalysisConfiguration" typeId="q46j.6472990431939580591" id="6472990431939785837" />
@@ -63,23 +63,27 @@
   <root id="6472990431939785837">
     <node role="analyses" roleId="q46j.6472990431939692464" type="q5q6.ComponentsCBMCAnalysis" typeId="q5q6.6472990431939799912" id="6472990431939785838">
       <property name="unwindingDepth" nameId="q5q6.6472990431939799909" value="25" />
+      <property name="analysisDepth" nameId="q5q6.441761995014974059" value="1000" />
       <link role="analyzedComponent" roleId="q5q6.6472990431939799913" targetNodeId="4ysy.6472990431939782665" resolveInfo="ReaderImpls" />
       <link role="entryPoint" roleId="q5q6.6472990431939799908" targetNodeId="4ysy.6472990431939782743" resolveInfo="client" />
     </node>
     <node role="analyses" roleId="q46j.6472990431939692464" type="q5q6.FunctionsCBMCAnalysis" typeId="q5q6.6472990431940227507" id="6598859022322998583">
       <property name="unwindingAssertions" nameId="q5q6.6472990431939799910" value="false" />
       <property name="unwindingDepth" nameId="q5q6.6472990431939799909" value="25" />
+      <property name="analysisDepth" nameId="q5q6.441761995014974059" value="1000" />
       <link role="entryPoint" roleId="q5q6.6472990431939799908" targetNodeId="4ysy.6472990431940257468" resolveInfo="assertedCode" />
     </node>
     <node role="analyses" roleId="q46j.6472990431939692464" type="q5q6.DecTabCBMCAnalysis" typeId="q5q6.5070503009225618710" id="6598859022323000063">
       <property name="unwindingAssertions" nameId="q5q6.6472990431939799910" value="false" />
       <property name="unwindingDepth" nameId="q5q6.6472990431939799909" value="25" />
+      <property name="analysisDepth" nameId="q5q6.441761995014974059" value="1000" />
       <link role="decTabContainer" roleId="q5q6.5070503009225669554" targetNodeId="4ysy.6598859022322999982" resolveInfo="funWithDT" />
       <link role="entryPoint" roleId="q5q6.6472990431939799908" targetNodeId="4ysy.6598859022322999982" resolveInfo="funWithDT" />
     </node>
     <node role="analyses" roleId="q46j.6472990431939692464" type="q5q6.StatemachineCBMCAnalysis" typeId="q5q6.8376973589777602107" id="8376973589777647400">
       <property name="unwindingAssertions" nameId="q5q6.6472990431939799910" value="false" />
       <property name="unwindingDepth" nameId="q5q6.6472990431939799909" value="25" />
+      <property name="analysisDepth" nameId="q5q6.441761995014974059" value="1000" />
       <link role="satemachine" roleId="q5q6.8376973589777602108" targetNodeId="4ysy.8376973589777602081" resolveInfo="STM" />
       <link role="entryPoint" roleId="q5q6.6472990431939799908" targetNodeId="4ysy.8376973589777647405" resolveInfo="statemachineClient" />
     </node>

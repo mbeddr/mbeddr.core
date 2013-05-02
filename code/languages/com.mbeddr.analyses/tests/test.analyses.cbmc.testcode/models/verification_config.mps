@@ -13,7 +13,7 @@
   <import index="p7vm" modelUID="r:28fa862e-f94d-4c39-bdf7-a4bdbc773888(com.mbeddr.ext.components.gen_nomw.structure)" version="0" implicit="yes" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="k146" modelUID="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" version="5" implicit="yes" />
-  <import index="v7ag" modelUID="r:9596407c-f27a-49d3-abde-3a66293c5b61(com.mbeddr.ext.components.structure)" version="16" implicit="yes" />
+  <import index="v7ag" modelUID="r:9596407c-f27a-49d3-abde-3a66293c5b61(com.mbeddr.ext.components.structure)" version="17" implicit="yes" />
   <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="23" implicit="yes" />
   <import index="yq40" modelUID="r:152b3fc0-83a1-4bab-a8cd-565eb8483785(com.mbeddr.core.pointers.structure)" version="3" implicit="yes" />
   <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="7" implicit="yes" />
@@ -110,6 +110,7 @@
       </node>
       <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="q5q6.VerificationConfigurationAttribute" typeId="q5q6.535044775891207547" id="2017717622748559363">
         <property name="unwindingDepth" nameId="q5q6.2017717622748544591" value="10" />
+        <property name="analysisDepth" nameId="q5q6.441761995015233437" value="1000" />
         <link role="verificationEntryPoint" roleId="q5q6.535044775891209632" targetNodeId="535044775891209537" resolveInfo="goodEntryPoint" />
       </node>
     </node>
@@ -154,6 +155,7 @@
       </node>
       <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="q5q6.VerificationConfigurationAttribute" typeId="q5q6.535044775891207547" id="2017717622748508363">
         <property name="unwindingDepth" nameId="q5q6.2017717622748544591" value="10" />
+        <property name="analysisDepth" nameId="q5q6.441761995015233437" value="1000" />
         <link role="verificationEntryPoint" roleId="q5q6.535044775891209632" targetNodeId="2017717622748508335" resolveInfo="badEntryPoint" />
       </node>
     </node>
