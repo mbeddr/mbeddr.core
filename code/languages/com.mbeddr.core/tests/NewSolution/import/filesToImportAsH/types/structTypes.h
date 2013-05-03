@@ -32,6 +32,11 @@ COORD w2;
  * @param in
  */
 void init(int in){
-	COORD pos = {1,2};
-	COORD named = {.y=1,.x=2};
+	int y = in;
+	//int arr[] = {1};
+	COORD pos;// = {1,2};
+	COORD named;// = {.y=1,.x=2};
+	COORD *posPtr = &pos;
+	pos.x;
+	posPtr->x;
 }

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model modelUID="r:9596407c-f27a-49d3-abde-3a66293c5b61(com.mbeddr.ext.components.structure)" version="17">
+<model modelUID="r:9596407c-f27a-49d3-abde-3a66293c5b61(com.mbeddr.ext.components.structure)" version="19">
   <persistence version="7" />
   <language namespace="c72da2b9-7cce-4447-8389-f407dc1158b7(jetbrains.mps.lang.structure)" />
   <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="7" />
@@ -12,7 +12,6 @@
   <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="23" implicit="yes" />
   <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="5" implicit="yes" />
   <import index="k146" modelUID="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" version="5" implicit="yes" />
-  <import index="v7ag" modelUID="r:9596407c-f27a-49d3-abde-3a66293c5b61(com.mbeddr.ext.components.structure)" version="17" implicit="yes" />
   <roots>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4491876417845474761">
       <property name="name" nameId="tpck.1169194664001" value="Component" />
@@ -448,7 +447,7 @@
     </node>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="2481387216194749727">
       <property name="virtualPackage" nameId="tpck.1193676396447" value="intf.sr" />
-      <property name="name" nameId="tpck.1169194664001" value="ExternalStorrageLocation" />
+      <property name="name" nameId="tpck.1169194664001" value="ExternalStorageLocation" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.3364660638048049748" resolveInfo="NodeAttribute" />
     </node>
     <node type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="2481387216194884709">
@@ -457,13 +456,13 @@
     </node>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="2481387216194959457">
       <property name="virtualPackage" nameId="tpck.1193676396447" value="intf.sr" />
-      <property name="name" nameId="tpck.1169194664001" value="ExternalStorrageInitializer" />
+      <property name="name" nameId="tpck.1169194664001" value="ExternalStorageInitializer" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="2481387216194330257" resolveInfo="AbstractComponentInitializer" />
-    </node>    
+    </node>
     <node type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="4390760819952509116">
       <property name="virtualPackage" nameId="tpck.1193676396447" value="comp.debug" />
       <property name="name" nameId="tpck.1169194664001" value="ITriggeredByOperation" />
-    </node>    
+    </node>
   </roots>
   <root id="4491876417845474761">
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="4491876417845484918">
