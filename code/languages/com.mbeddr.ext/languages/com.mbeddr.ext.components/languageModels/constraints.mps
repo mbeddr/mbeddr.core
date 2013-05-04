@@ -239,7 +239,7 @@
     </node>
     <node type="tp1t.ConceptConstraints" typeId="tp1t.1213093968558" id="2481387216194959460">
       <property name="virtualPackage" nameId="tpck.1193676396447" value="intf.sr" />
-      <link role="concept" roleId="tp1t.1213093996982" targetNodeId="v7ag.2481387216194959457" resolveInfo="ExternalStorrageInitializer" />
+      <link role="concept" roleId="tp1t.1213093996982" targetNodeId="v7ag.2481387216194959457" resolveInfo="ExternalStorageInitializer" />
     </node>
   </roots>
   <root id="8105003328814695923">
@@ -3155,7 +3155,7 @@
                           </node>
                           <node role="operation" roleId="tpee.1197027833540" type="tp25.AttributeAccess" typeId="tp25.6407023681583031218" id="2481387216194959600">
                             <node role="qualifier" roleId="tp25.6407023681583036852" type="tp25.NodeAttributeQualifier" typeId="tp25.6407023681583036853" id="2481387216194959604">
-                              <link role="attributeConcept" roleId="tp25.6407023681583036854" targetNodeId="v7ag.2481387216194749727" resolveInfo="ExternalStorrageLocation" />
+                              <link role="attributeConcept" roleId="tp25.6407023681583036854" targetNodeId="v7ag.2481387216194749727" resolveInfo="ExternalStorageLocation" />
                             </node>
                           </node>
                         </node>
