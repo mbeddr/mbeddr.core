@@ -115,3 +115,4 @@ tools/ant/ant-task-workspace/*/bin/*/*.class
 # -----------------------------------------------------------
 # debugger test code
 code/languages/com.mbeddr.debugger/tests/test.debugger.cdt/testcode/debuggableTest
+code/languages/offline.sh
