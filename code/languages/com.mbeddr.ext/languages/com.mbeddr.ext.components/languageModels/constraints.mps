@@ -10,7 +10,7 @@
   <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="5" />
   <import index="hwgx" modelUID="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)" version="3" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" />
-  <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="23" />
+  <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="21" />
   <import index="yi43" modelUID="r:1e8a195e-9746-45e6-a347-a6bdffae3936(com.mbeddr.core.util.behavior)" version="0" />
   <import index="tp25" modelUID="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" version="-1" implicit="yes" />
   <import index="tpee" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="3" implicit="yes" />
@@ -239,7 +239,7 @@
     </node>
     <node type="tp1t.ConceptConstraints" typeId="tp1t.1213093968558" id="2481387216194959460">
       <property name="virtualPackage" nameId="tpck.1193676396447" value="intf.sr" />
-      <link role="concept" roleId="tp1t.1213093996982" targetNodeId="v7ag.2481387216194959457" resolveInfo="ExternalStorrageInitializer" />
+      <link role="concept" roleId="tp1t.1213093996982" targetNodeId="v7ag.2481387216194959457" resolveInfo="ExternalStorageInitializer" />
     </node>
   </roots>
   <root id="8105003328814695923">
@@ -3155,7 +3155,7 @@
                           </node>
                           <node role="operation" roleId="tpee.1197027833540" type="tp25.AttributeAccess" typeId="tp25.6407023681583031218" id="2481387216194959600">
                             <node role="qualifier" roleId="tp25.6407023681583036852" type="tp25.NodeAttributeQualifier" typeId="tp25.6407023681583036853" id="2481387216194959604">
-                              <link role="attributeConcept" roleId="tp25.6407023681583036854" targetNodeId="v7ag.2481387216194749727" resolveInfo="ExternalStorrageLocation" />
+                              <link role="attributeConcept" roleId="tp25.6407023681583036854" targetNodeId="v7ag.2481387216194749727" resolveInfo="ExternalStorageLocation" />
                             </node>
                           </node>
                         </node>

@@ -15,6 +15,11 @@ void aVoidFct(){
 
 }
 
+/**
+ *
+ * @param aFctPtr
+ * @param secondArg
+ */
 void aFctWithFctPtr(int (*aFctPtr)(int,int),int secondArg ){
-
+	int i=0;
 }

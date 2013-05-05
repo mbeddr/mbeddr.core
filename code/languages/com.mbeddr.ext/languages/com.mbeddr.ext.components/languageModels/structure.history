@@ -69,8 +69,8 @@
   </StructureModification>
   <StructureModification>
     <dependencies>
-      <model index="v7ag" modelUID="r:9596407c-f27a-49d3-abde-3a66293c5b61(com.mbeddr.ext.components.structure)" version="9" />
       <model index="v0r9" modelUID="r:277b15fc-1383-4213-8385-5a16481fa36c(com.mbeddr.ext.components.test.structure)" version="3" />
+      <model index="v7ag" modelUID="r:9596407c-f27a-49d3-abde-3a66293c5b61(com.mbeddr.ext.components.structure)" version="9" />
       <model index="eup9" modelUID="r:ab391014-3e08-4918-9cc5-1c93e3a55c72(com.mbeddr.ext.components.behavior)" version="-1" />
       <model index="yozf" modelUID="r:99178742-1e76-457e-87e3-952969b55bee(com.mbeddr.ext.components.test.constraints)" version="-1" />
       <model index="bt4i" modelUID="r:4b72363d-e94a-4383-b5ad-ba453d6efac9(com.mbeddr.ext.components.constraints)" version="-1" />
@@ -158,7 +158,19 @@
     <dependencies>
       <model index="v7ag" modelUID="r:9596407c-f27a-49d3-abde-3a66293c5b61(com.mbeddr.ext.components.structure)" version="16" />
     </dependencies>
-    <rename id="v7ag.785275130114861567" type="CHILD" from="initFieldInitializers" to="initializers" />
+    <rename id="v7ag.4390760819952509116" type="CONCEPT" from="IStepIntoableComponentContent" to="ITriggeredByOperation" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="v7ag" modelUID="r:9596407c-f27a-49d3-abde-3a66293c5b61(com.mbeddr.ext.components.structure)" version="17" />
+    </dependencies>
+    <rename id="v7ag.2481387216194749727" type="CONCEPT" from="ExternalStorrageLocation" to="ExternalStorageLocation" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="v7ag" modelUID="r:9596407c-f27a-49d3-abde-3a66293c5b61(com.mbeddr.ext.components.structure)" version="18" />
+    </dependencies>
+    <rename id="v7ag.2481387216194959457" type="CONCEPT" from="ExternalStorrageInitializer" to="ExternalStorageInitializer" />
   </StructureModification>
 </history>
 

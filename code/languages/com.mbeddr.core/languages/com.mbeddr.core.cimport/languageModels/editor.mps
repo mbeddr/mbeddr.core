@@ -30,7 +30,7 @@
       <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="zpaf.1535917470678440145" resolveInfo="MacroDefinition" />
     </node>
     <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="7946676408104787310">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="lazy" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="lazy.expressions" />
       <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="zpaf.7946676408104787257" resolveInfo="LazyStaticMemLocRefExpression" />
     </node>
     <node type="tpc2.EditorComponentDeclaration" typeId="tpc2.1078938745671" id="7946676408104808154">
@@ -53,7 +53,7 @@
       <property name="name" nameId="tpck.1169194664001" value="ImportTypeMapper" />
     </node>
     <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="7098772480013595212">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="lazy" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="lazy.expressions" />
       <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="zpaf.7098772480013595206" resolveInfo="LazyEnumLiteralRef" />
     </node>
     <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="4501525338455684128">
@@ -74,6 +74,25 @@
     <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="4096671478328204067">
       <property name="virtualPackage" nameId="tpck.1193676396447" value="lazy.types" />
       <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="zpaf.4096671478328204063" resolveInfo="LazyUnionType" />
+    </node>
+    <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="7018861704113158534">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="lazy.expressions" />
+      <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="zpaf.7018861704113158529" resolveInfo="LazyArgumentRef" />
+    </node>
+    <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="7018861704113163139">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="lazy.expressions" />
+      <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="zpaf.7018861704113163135" resolveInfo="LazyVariableRef" />
+    </node>
+    <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="7018861704113327201">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="lazy.expressions" />
+      <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="zpaf.7018861704113327195" resolveInfo="LazyFunctionCallRef" />
+    </node>
+    <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="3581300445063391408">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="lazy" />
+      <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="zpaf.3581300445063391406" resolveInfo="LazyMemberRef" />
+    </node>
+    <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="3581300445063723483">
+      <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="zpaf.3581300445063723481" resolveInfo="ProblemExpression" />
     </node>
   </roots>
   <root id="1535917470678273196">
@@ -688,6 +707,59 @@
   <root id="4096671478328204067">
     <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Component" typeId="tpc2.1078939183254" id="4096671478328204871">
       <link role="editorComponent" roleId="tpc2.1078939183255" targetNodeId="7946676408104808154" resolveInfo="comp_LazyRef" />
+    </node>
+  </root>
+  <root id="7018861704113158534">
+    <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Component" typeId="tpc2.1078939183254" id="7018861704113163134">
+      <link role="editorComponent" roleId="tpc2.1078939183255" targetNodeId="7946676408104808154" resolveInfo="comp_LazyRef" />
+    </node>
+  </root>
+  <root id="7018861704113163139">
+    <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Component" typeId="tpc2.1078939183254" id="7018861704113163141">
+      <link role="editorComponent" roleId="tpc2.1078939183255" targetNodeId="7946676408104808154" resolveInfo="comp_LazyRef" />
+    </node>
+  </root>
+  <root id="7018861704113327201">
+    <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="7018861704113328263">
+      <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Indent" typeId="tpc2.1237303669825" id="7018861704113328264" />
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Component" typeId="tpc2.1078939183254" id="7018861704113328023">
+        <link role="editorComponent" roleId="tpc2.1078939183255" targetNodeId="7946676408104808154" resolveInfo="comp_LazyRef" />
+      </node>
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="7018861704113328266">
+        <property name="text" nameId="tpc2.1073389577007" value="(" />
+        <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.PunctuationLeftStyleClassItem" typeId="tpc2.1233758997495" id="7018861704113328273">
+          <property name="flag" nameId="tpc2.1186414551515" value="true" />
+        </node>
+        <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.PunctuationRightStyleClassItem" typeId="tpc2.1233759184865" id="7018861704113328275">
+          <property name="flag" nameId="tpc2.1186414551515" value="true" />
+        </node>
+      </node>
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_RefNodeList" typeId="tpc2.1073390211982" id="7018861704113328268">
+        <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="zpaf.7018861704113328262" />
+        <node role="cellLayout" roleId="tpc2.1140524464360" type="tpc2.CellLayout_Indent" typeId="tpc2.1237303669825" id="7018861704113328269" />
+      </node>
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="7018861704113328271">
+        <property name="text" nameId="tpc2.1073389577007" value=")" />
+        <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.PunctuationLeftStyleClassItem" typeId="tpc2.1233758997495" id="7018861704113328272">
+          <property name="flag" nameId="tpc2.1186414551515" value="true" />
+        </node>
+      </node>
+    </node>
+  </root>
+  <root id="3581300445063391408">
+    <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Component" typeId="tpc2.1078939183254" id="3581300445063395238">
+      <link role="editorComponent" roleId="tpc2.1078939183255" targetNodeId="7946676408104808154" resolveInfo="comp_LazyRef" />
+    </node>
+  </root>
+  <root id="3581300445063723483">
+    <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="3581300445063723486">
+      <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Indent" typeId="tpc2.1237303669825" id="3581300445063723487" />
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Error" typeId="tpc2.1075375595203" id="3581300445063723485">
+        <property name="text" nameId="tpc2.1075375595204" value="PROBLEM:" />
+      </node>
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Property" typeId="tpc2.1073389658414" id="3581300445063723490">
+        <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="tpck.1169194664001" resolveInfo="name" />
+      </node>
     </node>
   </root>
 </model>

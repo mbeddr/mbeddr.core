@@ -13,7 +13,7 @@
     <node role="sheets" roleId="gnwj.2042272859106810421" type="gnwj.Sheet" typeId="gnwj.2042272859106810420" id="2042272859107005543">
       <property name="name" nameId="tpck.1169194664001" value="sheet 1" />
       <node role="rows" roleId="gnwj.2042272859106810440" type="gnwj.Row" typeId="gnwj.2042272859106810439" id="2042272859107005544">
-        <link role="style" roleId="gnwj.2042272859107586908" targetNodeId="2042272859107597280" resolveInfo="header" />
+        <link role="style" targetNodeId="2042272859107597280" resolveInfo="header" />
         <node role="cells" roleId="gnwj.2042272859106810465" type="gnwj.TextCell" typeId="gnwj.2042272859106810464" id="2042272859107005546">
           <property name="value" nameId="gnwj.2042272859106810478" value="Cell A" />
         </node>
@@ -56,17 +56,7 @@
     </node>
     <node role="styles" roleId="gnwj.2042272859107050154" type="gnwj.Style" typeId="gnwj.2042272859107050152" id="2042272859107597280">
       <property name="name" nameId="tpck.1169194664001" value="header" />
-      <property name="bold" nameId="gnwj.2042272859107062470" value="true" />
-      <node role="bgColor" roleId="gnwj.2042272859107062586" type="gnwj.Color" typeId="gnwj.2042272859107062581" id="2042272859107597281">
-        <property name="r" nameId="gnwj.2042272859107062582" value="255" />
-        <property name="g" nameId="gnwj.2042272859107062583" value="255" />
-        <property name="b" nameId="gnwj.2042272859107062584" value="255" />
-      </node>
-      <node role="fontColor" roleId="gnwj.2042272859107062587" type="gnwj.Color" typeId="gnwj.2042272859107062581" id="2042272859107597282">
-        <property name="r" nameId="gnwj.2042272859107062582" value="0" />
-        <property name="g" nameId="gnwj.2042272859107062583" value="0" />
-        <property name="b" nameId="gnwj.2042272859107062584" value="0" />
-      </node>
+      <property name="bold" value="true" />
     </node>
   </root>
 </model>

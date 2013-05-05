@@ -92,6 +92,7 @@ documentation/*/*.toc
 documentation/*/*.synctex.gz
 
 documentation/userguide/*.pdf
+documentation/build
 
 
 # ----------------------------------------------------
@@ -114,5 +115,12 @@ tools/ant/ant-task-workspace/*/bin/*/*.class
 
 # -----------------------------------------------------------
 # debugger test code
-code/languages/com.mbeddr.debugger/tests/test.debugger.cdt/testcode/debuggableTest
+code/languages/com.mbeddr.debugger/tests/test.debugger.cdt/testcode/a.*
+code/languages/com.mbeddr.debugger/tests/test.debugger.cdt/testcode/*.exe
+code/languages/com.mbeddr.debugger/tests/test.debugger.cdt/testcode/debuggableTest*
+code/languages/com.mbeddr.debugger/tests/test.debugger.cdt/testcode/
+code/languages/com.mbeddr.debugger/tests/test.debugger.cdt/testcode/
+
+#Some local script (not to be shared)
 code/languages/offline.sh
+

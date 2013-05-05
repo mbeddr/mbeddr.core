@@ -6,11 +6,17 @@
   <component name="Encoding" useUTFGuessing="true" native2AsciiForPropertiesFiles="false" />
   <component name="MPSProject">
     <projectModules>
+      <modulePath path="${project}/devkits/debugger-testing/debugger-testing.devkit" />
       <modulePath path="${project}/languages/com.mbeddr.core.debug.test/solutions/pluginSolution/runtime.msd" />
       <modulePath path="${project}/languages/com.mbeddr.core.debug.test/test.mpl" />
       <modulePath path="${project}/languages/com.mbeddr.core.debug.util/util.mpl" />
       <modulePath path="${project}/tests/test.debugger.runtime/runtime.msd" />
       <modulePath path="${project}/tests/test.debugging.core/core.msd" />
+      <modulePath path="${project}/tests/test.debugging.cross/test.debugging.cross.msd" />
+      <modulePath path="${project}/tests/test.debugging.ext.components/test.debugging.ext.components.msd" />
+      <modulePath path="${project}/tests/test.debugging.ext.exceptionhadling/test.debugging.ext.exceptionhadling.msd" />
+      <modulePath path="${project}/tests/test.debugging.ext.physical-units/test.debugging.ext.physical-units.msd" />
+      <modulePath path="${project}/tests/test.debugging.ext.statemachines/test.debugging.ext.statemachines.msd" />
     </projectModules>
     <genConfs />
   </component>
@@ -30,6 +36,14 @@
             <Library>
               <option name="name" value="debugger" />
               <option name="path" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.debugger" />
+            </Library>
+          </value>
+        </entry>
+        <entry key="ext">
+          <value>
+            <Library>
+              <option name="name" value="ext" />
+              <option name="path" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.ext" />
             </Library>
           </value>
         </entry>

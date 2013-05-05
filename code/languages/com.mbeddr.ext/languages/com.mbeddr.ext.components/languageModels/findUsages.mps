@@ -312,11 +312,8 @@
               </node>
               <node role="ifTrue" roleId="tpee.1068580123161" type="tpee.StatementList" typeId="tpee.1068580123136" id="7235337523397484261">
                 <node role="statement" roleId="tpee.1068581517665" type="tp3b.ResultStatement" typeId="tp3b.1200242336756" id="7235337523397484262">
-                  <node role="foundNode" roleId="tp3b.1200242376867" type="tpee.DotExpression" typeId="tpee.1197027756228" id="7235337523397484263">
-                    <node role="operand" roleId="tpee.1197027771414" type="tp2q.ForEachVariableReference" typeId="tp2q.1153944233411" id="7235337523397484264">
-                      <link role="variable" roleId="tp2q.1153944258490" targetNodeId="7235337523397484253" resolveInfo="n" />
-                    </node>
-                    <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_GetParentOperation" typeId="tp25.1139613262185" id="7235337523397484265" />
+                  <node role="foundNode" roleId="tp3b.1200242376867" type="tp2q.ForEachVariableReference" typeId="tp2q.1153944233411" id="7235337523397484264">
+                    <link role="variable" roleId="tp2q.1153944258490" targetNodeId="7235337523397484253" resolveInfo="n" />
                   </node>
                 </node>
               </node>

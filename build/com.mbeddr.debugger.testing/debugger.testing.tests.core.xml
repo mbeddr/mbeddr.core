@@ -9,6 +9,7 @@
   <property name="richtext.artifacts" location="" />
   <property name="artifacts.buildMPS" location="${mps_home}" />
   <property name="artifacts.com.mbeddr.spawner.build" location="../com.mbeddr.spawner/build/artifacts/com.mbeddr.spawner.build" />
+  <property name="artifacts.com.mbeddr.debugger.testing.tests.cross.build" location="${build.dir}/artifacts/com.mbeddr.debugger.testing.tests.cross.build" />
   <property name="artifacts.com.mbeddr.core.build" location="../com.mbeddr.core/build/artifacts/com.mbeddr.core.build" />
   <property name="artifacts.com.mbeddr.debugger.build" location="../com.mbeddr.debugger/build/artifacts/com.mbeddr.debugger.build" />
   <property name="artifacts.com.mbeddr.mpsutil.build" location="../com.mbeddr.mpsutil/build/artifacts/com.mbeddr.mpsutil.build" />
@@ -17,14 +18,14 @@
   <property name="artifacts.mps-richtext" location="${richtext.artifacts}" />
   <property name="artifacts.mps-multiline" location="${multiline.artifacts}" />
   <property file="${artifacts.buildMPS}/build.properties" prefix="import.buildMPS" />
-  <property file="${artifacts.com.mbeddr.core.build}/build.properties" prefix="import.com.mbeddr.core.build" />
+  <property file="${artifacts.com.mbeddr.debugger.testing.tests.cross.build}/build.properties" prefix="import.com.mbeddr.debugger.testing.tests.cross.build" />
   <property name="buildMPS.build.number" value="${import.buildMPS.buildMPS.build.number}" />
   <property name="buildMPS.date" value="${import.buildMPS.buildMPS.date}" />
   <property name="buildMPS.build.vcs.number" value="${import.buildMPS.buildMPS.build.vcs.number}" />
   <property name="buildMPS.teamcity.buildConfName" value="${import.buildMPS.buildMPS.teamcity.buildConfName}" />
   <property name="buildMPS.idea.platform.build.number" value="${import.buildMPS.buildMPS.idea.platform.build.number}" />
   <property name="buildCore.version" value="${import.buildMPS.buildCore.version}" />
-  <property name="com.mbeddr.mpsutil.build.build.number" value="${import.com.mbeddr.core.build.com.mbeddr.mpsutil.build.build.number}" />
+  <property name="com.mbeddr.mpsutil.build.build.number" value="${import.com.mbeddr.debugger.testing.tests.cross.build.com.mbeddr.mpsutil.build.build.number}" />
   
   <path id="path.mps.ant.path">
     <pathelement location="${artifacts.buildMPS}/lib/mps-backend.jar" />
@@ -47,9 +48,11 @@
         <depends>com.mbeddr.core</depends>
         <depends>com.mbeddr.spawner</depends>
         <depends>com.mbeddr.debugger</depends>
+        <depends>com.mbeddr.debugger.testing.tests.cross</depends>
         <depends>com.mbeddr.mpsutil</depends>
         <depends>com.mbeddr.debugger.testing</depends>
         <depends>de.slisson.mps.richtext</depends>
+        <depends>de.slisson.mps.editor.multiline</depends>
         
         <extensions defaultExtensionNs="com.intellij">
           <mps.LanguageLibrary dir="/languages" />
@@ -94,6 +97,7 @@
   
   <target name="buildDependents">
     <ant antfile="../com.mbeddr.spawner/build.xml" inheritAll="false" useNativeBasedir="true" />
+    <ant antfile="debugger.testing.tests.cross.xml" inheritAll="false" useNativeBasedir="true" />
     <ant antfile="../com.mbeddr.core/build.xml" inheritAll="false" useNativeBasedir="true" />
     <ant antfile="../com.mbeddr.debugger/build.xml" inheritAll="false" useNativeBasedir="true" />
     <ant antfile="../com.mbeddr.mpsutil/build.xml" inheritAll="false" useNativeBasedir="true" />
@@ -101,14 +105,16 @@
   </target>
   
   <target name="fetchDependencies">
-    <mkdir dir="${build.tmp}/deps/com.mbeddr.debugger.build/com.mbeddr.core.debugger.zip" />
-    <unzip src="${artifacts.com.mbeddr.debugger.build}/com.mbeddr.core.debugger.zip" dest="${build.tmp}/deps/com.mbeddr.debugger.build/com.mbeddr.core.debugger.zip" />
+    <mkdir dir="${build.tmp}/deps/com.mbeddr.debugger.testing.tests.cross.build/com.mbeddr.debugger.testing.tests.cross.zip" />
+    <unzip src="${artifacts.com.mbeddr.debugger.testing.tests.cross.build}/com.mbeddr.debugger.testing.tests.cross.zip" dest="${build.tmp}/deps/com.mbeddr.debugger.testing.tests.cross.build/com.mbeddr.debugger.testing.tests.cross.zip" />
     <mkdir dir="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip" />
     <unzip src="${artifacts.com.mbeddr.core.build}/com.mbeddr.core.zip" dest="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip" />
     <mkdir dir="${build.tmp}/deps/mps-multiline/mps-multiline.zip" />
     <unzip src="${artifacts.mps-multiline}/mps-multiline.zip" dest="${build.tmp}/deps/mps-multiline/mps-multiline.zip" />
     <mkdir dir="${build.tmp}/deps/com.mbeddr.debugger.testing.build/com.mbeddr.debugger.testing.zip" />
     <unzip src="${artifacts.com.mbeddr.debugger.testing.build}/com.mbeddr.debugger.testing.zip" dest="${build.tmp}/deps/com.mbeddr.debugger.testing.build/com.mbeddr.debugger.testing.zip" />
+    <mkdir dir="${build.tmp}/deps/com.mbeddr.debugger.build/com.mbeddr.core.debugger.zip" />
+    <unzip src="${artifacts.com.mbeddr.debugger.build}/com.mbeddr.core.debugger.zip" dest="${build.tmp}/deps/com.mbeddr.debugger.build/com.mbeddr.core.debugger.zip" />
     <mkdir dir="${build.tmp}/deps/com.mbeddr.spawner.build/com.mbeddr.spawner.zip" />
     <unzip src="${artifacts.com.mbeddr.spawner.build}/com.mbeddr.spawner.zip" dest="${build.tmp}/deps/com.mbeddr.spawner.build/com.mbeddr.spawner.zip" />
     <mkdir dir="${build.tmp}/deps/com.mbeddr.mpsutil.build/com.mbeddr.mpsutil.zip" />
@@ -203,13 +209,13 @@
         <fileset file="${artifacts.buildMPS}/lib/diffutils-1.2.1.jar" />
         <fileset dir="${artifacts.buildMPS}/lib" includes="*.jar" />
         <fileset dir="${artifacts.buildMPS}/lib/ant/lib" includes="*.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.debugger.build/com.mbeddr.core.debugger.zip/debugger/languages/com.mbeddr.core.debugger/com.mbeddr.core.debug.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.debugger.testing.build/com.mbeddr.debugger.testing.zip/debugger.testing/languages/com.mbeddr.debugger.testing/com.mbeddr.core.debug.test.runtime.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/languages/com.mbeddr.core/com.mbeddr.core.modules.runtime.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/languages/com.mbeddr.core/com.mbeddr.plantuml.pluginSolution.jar" />
         <fileset file="${build.tmp}/deps/mps-multiline/mps-multiline.zip/mps-multiline/languages/mps-multiline/de.slisson.mps.editor.multiline.runtime.jar" />
         <fileset file="${artifacts.buildMPS}/languages/baseLanguage/jetbrains.mps.baseLanguage.regexp.runtime.jar" />
         <fileset file="${artifacts.buildMPS}/languages/languageDesign/jetbrains.mps.lang.test.runtime.jar" />
+        <fileset file="${build.tmp}/deps/com.mbeddr.debugger.testing.tests.cross.build/com.mbeddr.debugger.testing.tests.cross.zip/debugger.testing.tests.cross/languages/com.mbeddr.debugger.testing.cross.tests/test.debugging.cross.jar" />
       </classpath>
     </javac>
   </target>
@@ -226,6 +232,7 @@
       <plugin path="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core" />
       <plugin path="${build.tmp}/deps/com.mbeddr.debugger.build/com.mbeddr.core.debugger.zip/debugger" />
       <plugin path="${build.tmp}/deps/com.mbeddr.debugger.testing.build/com.mbeddr.debugger.testing.zip/debugger.testing" />
+      <plugin path="${build.tmp}/deps/com.mbeddr.debugger.testing.tests.cross.build/com.mbeddr.debugger.testing.tests.cross.zip/debugger.testing.tests.cross" />
       <plugin path="${build.tmp}/deps/com.mbeddr.mpsutil.build/com.mbeddr.mpsutil.zip/mbeddr.mpsutil" />
       <plugin path="${build.tmp}/deps/mps-multiline/mps-multiline.zip/mps-multiline" />
       <plugin path="${build.tmp}/deps/mps-richtext/mps-richtext.zip/mps-richtext" />
@@ -321,6 +328,8 @@
       <library file="${build.tmp}/deps/com.mbeddr.debugger.build/com.mbeddr.core.debugger.zip/debugger/languages/com.mbeddr.core.debugger/com.mbeddr.core.debug.jar" />
       <library file="${build.tmp}/deps/com.mbeddr.debugger.testing.build/com.mbeddr.debugger.testing.zip/debugger.testing/languages/com.mbeddr.debugger.testing/com.mbeddr.core.debug.test.jar" />
       <library file="${build.tmp}/deps/com.mbeddr.debugger.testing.build/com.mbeddr.debugger.testing.zip/debugger.testing/languages/com.mbeddr.debugger.testing/com.mbeddr.core.debug.test.runtime.jar" />
+      <library file="${build.tmp}/deps/com.mbeddr.debugger.testing.build/com.mbeddr.debugger.testing.zip/debugger.testing/languages/com.mbeddr.debugger.testing/com.mbeddr.debugger-testing.jar" />
+      <library file="${build.tmp}/deps/com.mbeddr.debugger.testing.tests.cross.build/com.mbeddr.debugger.testing.tests.cross.zip/debugger.testing.tests.cross/languages/com.mbeddr.debugger.testing.cross.tests/test.debugging.cross.jar" />
       <library file="${build.tmp}/deps/com.mbeddr.mpsutil.build/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil/com.mbeddr.mpsutil.bldoc.jar" />
       <library file="${build.tmp}/deps/com.mbeddr.mpsutil.build/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil/com.mbeddr.mpsutil.blutil.jar" />
       <library file="${build.tmp}/deps/com.mbeddr.spawner.build/com.mbeddr.spawner.zip/mbeddr.spawner/languages/Eclipse.Debugger.jar" />
