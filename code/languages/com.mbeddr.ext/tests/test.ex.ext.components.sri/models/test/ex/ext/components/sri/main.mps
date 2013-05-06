@@ -538,6 +538,14 @@
           <link role="port" roleId="v7ag.3444913373458569211" targetNodeId="8043580079800296744" resolveInfo="carPositions" />
         </node>
       </node>
+      <node role="contents" roleId="v7ag.7780999115923944213" type="v7ag.EmptyInstanceConfigContent" typeId="v7ag.1089269900847289701" id="6796325052797568068" />
+      <node role="contents" roleId="v7ag.7780999115923944213" type="v7ag.PortAdapter" typeId="v7ag.5172178961828157634" id="6796325052797568074">
+        <property name="name" nameId="tpck.1169194664001" value="carDataAdapter" />
+        <node role="portRef" roleId="v7ag.6616025724454701213" type="v7ag.AdapterInstancePortRef" typeId="v7ag.6616025724454668918" id="6796325052797568075">
+          <link role="instance" roleId="v7ag.6616025724454668919" targetNodeId="2116578915583633237" resolveInfo="motor" />
+          <link role="port" roleId="v7ag.6616025724454668920" targetNodeId="998890089994905871" resolveInfo="carData" />
+        </node>
+      </node>
       <node role="contents" roleId="v7ag.7780999115923944213" type="v7ag.EmptyInstanceConfigContent" typeId="v7ag.1089269900847289701" id="2116578915583633238" />
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="699911272313212639">
@@ -829,6 +837,37 @@
             </node>
           </node>
         </node>
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="6796325052797568080" />
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="8116769332110865442">
+          <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.AssignmentExpr" typeId="mj1l.22102029902365709" id="8116769332110865449">
+            <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="8116769332110865452">
+              <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
+              <property name="value" nameId="mj1l.8860443239512128104" value="20" />
+            </node>
+            <node role="left" roleId="mj1l.8860443239512128064" type="v7ag.PortAdapterElementRefExpr" typeId="v7ag.8594519220734380168" id="8116769332110865446">
+              <link role="element" roleId="v7ag.998890089995051773" targetNodeId="998890089994905863" resolveInfo="drehzahl" />
+              <node role="expression" roleId="mj1l.7254843406768839760" type="v7ag.PortAdapterRefExpr" typeId="v7ag.8105003328815039001" id="8116769332110865443">
+                <link role="portAdater" roleId="v7ag.8105003328815039002" targetNodeId="6796325052797568074" resolveInfo="carDataAdapter" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="8116769332110912652">
+          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="8116769332110912652" />
+          <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="8116769332110912660">
+            <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="8116769332110912663">
+              <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
+              <property name="value" nameId="mj1l.8860443239512128104" value="20" />
+            </node>
+            <node role="left" roleId="mj1l.8860443239512128064" type="v7ag.PortAdapterElementRefExpr" typeId="v7ag.8594519220734380168" id="8116769332110912657">
+              <link role="element" roleId="v7ag.998890089995051773" targetNodeId="998890089994905863" resolveInfo="drehzahl" />
+              <node role="expression" roleId="mj1l.7254843406768839760" type="v7ag.PortAdapterRefExpr" typeId="v7ag.8105003328815039001" id="8116769332110912654">
+                <link role="portAdater" roleId="v7ag.8105003328815039002" targetNodeId="6796325052797568074" resolveInfo="carDataAdapter" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="6796325052797568081" />
       </node>
       <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="998890089994729362">
         <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
