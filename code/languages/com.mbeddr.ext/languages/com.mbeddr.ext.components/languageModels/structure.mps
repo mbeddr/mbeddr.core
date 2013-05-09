@@ -12,6 +12,7 @@
   <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="23" implicit="yes" />
   <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="5" implicit="yes" />
   <import index="k146" modelUID="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" version="5" implicit="yes" />
+  <import index="v7ag" modelUID="r:9596407c-f27a-49d3-abde-3a66293c5b61(com.mbeddr.ext.components.structure)" version="19" implicit="yes" />
   <roots>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4491876417845474761">
       <property name="name" nameId="tpck.1169194664001" value="Component" />
@@ -462,6 +463,11 @@
     <node type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="4390760819952509116">
       <property name="virtualPackage" nameId="tpck.1193676396447" value="comp.debug" />
       <property name="name" nameId="tpck.1169194664001" value="ITriggeredByOperation" />
+    </node>
+    <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="8594519220734380168">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="adapter" />
+      <property name="name" nameId="tpck.1169194664001" value="PortAdapterElementRefExpr" />
+      <link role="extends" roleId="tpce.1071489389519" targetNodeId="998890089995051771" resolveInfo="DataElementRefExpr" />
     </node>
   </roots>
   <root id="4491876417845474761">
@@ -1086,16 +1092,16 @@
     </node>
   </root>
   <root id="466603768608410221">
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="4058325937811252137">
-      <property name="value" nameId="tpce.1105725733873" value="--" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473914776" resolveInfo="shortDescription" />
-    </node>
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="466603768608410222">
       <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
       <property name="role" nameId="tpce.1071599776563" value="portAdapter" />
       <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="8105003328815039001" resolveInfo="PortAdapterRefExpr" />
       <link role="specializedLink" roleId="tpce.1071599698500" targetNodeId="mj1l.7254843406768839760" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="8105003328815039001" resolveInfo="PortAdapterRefExpr" />
+    </node>
+    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="4058325937811252137">
+      <property name="value" nameId="tpce.1105725733873" value="--" />
+      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473914776" resolveInfo="shortDescription" />
     </node>
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="4468327413562698642">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="2gv2.3298295153090251326" resolveInfo="IStepIntoable" />
@@ -1964,6 +1970,15 @@
   <root id="4390760819952509116">
     <node role="extends" roleId="tpce.1169127546356" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="4390760819952510528">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="2gv2.3298295153090279176" resolveInfo="ISteppableContext" />
+    </node>
+  </root>
+  <root id="8594519220734380168">
+    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="8594519220734394066">
+      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
+      <property name="role" nameId="tpce.1071599776563" value="portAdapter" />
+      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
+      <link role="specializedLink" roleId="tpce.1071599698500" targetNodeId="mj1l.7254843406768839760" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="8105003328815039001" resolveInfo="PortAdapterRefExpr" />
     </node>
   </root>
 </model>
