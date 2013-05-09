@@ -1,0 +1,1 @@
+uint32_t __get_PSP(void) __attribute__( ( naked ) );
