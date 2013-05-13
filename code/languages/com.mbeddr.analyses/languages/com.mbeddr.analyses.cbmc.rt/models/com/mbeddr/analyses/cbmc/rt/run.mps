@@ -815,7 +815,7 @@
                   </node>
                 </node>
                 <node role="operation" roleId="tpee.1197027833540" type="hba4.FilterOperation" typeId="hba4.17217465924316850" id="5447058028069590008">
-                  <link role="concept" roleId="hba4.17217465924316851" targetNodeId="clqz.5778488248013533839" resolveInfo="State" />
+                  <link role="concept" roleId="hba4.17217465924316851" targetNodeId="clqz.4249345261280334498" resolveInfo="AbstractState" />
                 </node>
               </node>
               <node role="operation" roleId="tpee.1197027833540" type="tp2q.ToListOperation" typeId="tp2q.1151702311717" id="3907476694113350206" />

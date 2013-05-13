@@ -131,14 +131,15 @@
             <property name="name" nameId="tpck.1169194664001" value="afterTriggerSM" />
           </node>
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="2468281964189317902">
-          <node role="expr" roleId="c4fa.7254843406768833939" type="clqz.HasTransitionFiredExpr" typeId="clqz.6183633367244876538" id="2468281964189317903">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="411439109350928552">
+          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="411439109350928552" />
+          <node role="expr" roleId="yz9a.6275792049641587288" type="clqz.HasTransitionFiredExpr" typeId="clqz.6183633367244876538" id="411439109350928554">
             <link role="transition" roleId="clqz.6183633367244876545" targetNodeId="8444296659257885041" />
-            <node role="expr" roleId="clqz.6183633367244876544" type="x27k.GlobalVarRef" typeId="x27k.6610873504380357354" id="2468281964189319757">
+            <node role="expr" roleId="clqz.6183633367244876544" type="x27k.GlobalVarRef" typeId="x27k.6610873504380357354" id="411439109350928556">
               <link role="var" roleId="x27k.6610873504380357355" targetNodeId="6713970538440332746" resolveInfo="sm" />
             </node>
           </node>
-          <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="rpmx.MarkerAnnotation" typeId="rpmx.4193597469137492628" id="2468281964189317913">
+          <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="rpmx.MarkerAnnotation" typeId="rpmx.4193597469137492628" id="411439109350928559">
             <property name="name" nameId="tpck.1169194664001" value="hasFired" />
           </node>
         </node>
@@ -151,14 +152,15 @@
             <property name="name" nameId="tpck.1169194664001" value="setState" />
           </node>
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="2468281964189375582">
-          <node role="expr" roleId="c4fa.7254843406768833939" type="clqz.IsInStateExpression" typeId="clqz.2558982571829189197" id="2468281964189375583">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="411439109350938642">
+          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="411439109350938642" />
+          <node role="expr" roleId="yz9a.6275792049641587288" type="clqz.IsInStateExpression" typeId="clqz.2558982571829189197" id="411439109350938644">
             <link role="state" roleId="clqz.2558982571829202228" targetNodeId="8444296659257885035" resolveInfo="green" />
-            <node role="expr" roleId="clqz.2558982571829189198" type="x27k.GlobalVarRef" typeId="x27k.6610873504380357354" id="2468281964189375585">
+            <node role="expr" roleId="clqz.2558982571829189198" type="x27k.GlobalVarRef" typeId="x27k.6610873504380357354" id="411439109350938645">
               <link role="var" roleId="x27k.6610873504380357355" targetNodeId="6713970538440332746" resolveInfo="sm" />
             </node>
           </node>
-          <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="rpmx.MarkerAnnotation" typeId="rpmx.4193597469137492628" id="2468281964189375609">
+          <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="rpmx.MarkerAnnotation" typeId="rpmx.4193597469137492628" id="411439109350938648">
             <property name="name" nameId="tpck.1169194664001" value="afterSetState" />
           </node>
         </node>
@@ -681,7 +683,7 @@
       <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="2468281964189319771" />
       <node role="suspension" roleId="rpmx.105850086902839308" type="rpmx.SuspensionPointConfiguration" typeId="rpmx.105850086903250145" id="2468281964189319772">
         <node role="suspensionPoint" roleId="rpmx.105850086903250160" type="rpmx.MarkerReference" typeId="rpmx.105850086903250161" id="2468281964189319773">
-          <link role="marker" roleId="rpmx.105850086903274948" targetNodeId="2468281964189317913" resolveInfo="hasFired" />
+          <link role="marker" roleId="rpmx.105850086903274948" targetNodeId="411439109350928559" resolveInfo="hasFired" />
         </node>
       </node>
       <node role="validation" roleId="rpmx.4360423713604451010" type="rpmx.ValidationConfiguration" typeId="rpmx.4360423713604419372" id="2468281964189319774">
@@ -735,7 +737,7 @@
       <node role="validation" roleId="rpmx.4360423713604451010" type="rpmx.ValidationConfiguration" typeId="rpmx.4360423713604419372" id="2468281964189319787">
         <node role="validations" roleId="rpmx.4360423713604419402" type="rpmx.ValidateDebuggerSuspended" typeId="rpmx.7048220250906049590" id="2468281964189319788">
           <node role="marker" roleId="rpmx.7048220250906049591" type="rpmx.MarkerRef" typeId="rpmx.4193597469137492644" id="2468281964189375610">
-            <link role="marker" roleId="rpmx.4193597469137492645" targetNodeId="2468281964189375609" resolveInfo="afterSetState" />
+            <link role="marker" roleId="rpmx.4193597469137492645" targetNodeId="411439109350938648" resolveInfo="afterSetState" />
           </node>
         </node>
         <node role="validations" roleId="rpmx.4360423713604419402" type="rpmx.WatchablesValidationList" typeId="rpmx.4550138447367847233" id="2468281964189331598">
@@ -776,7 +778,7 @@
       <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="2468281964189465470" />
       <node role="suspension" roleId="rpmx.105850086902839308" type="rpmx.SuspensionPointConfiguration" typeId="rpmx.105850086903250145" id="2468281964189465471">
         <node role="suspensionPoint" roleId="rpmx.105850086903250160" type="rpmx.MarkerReference" typeId="rpmx.105850086903250161" id="2468281964189465472">
-          <link role="marker" roleId="rpmx.105850086903274948" targetNodeId="2468281964189375609" resolveInfo="afterSetState" />
+          <link role="marker" roleId="rpmx.105850086903274948" targetNodeId="411439109350938648" resolveInfo="afterSetState" />
         </node>
       </node>
       <node role="stepping" roleId="rpmx.105850086903379490" type="rpmx.SteppingConfiguration" typeId="rpmx.105850086903379387" id="2468281964189465473">
