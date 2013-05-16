@@ -153,8 +153,8 @@
                         <node role="ifTrue" roleId="tpee.1068580123161" type="tpee.StatementList" typeId="tpee.1068580123136" id="6446369965057452031">
                           <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="7496742889710629287">
                             <node role="expression" roleId="tpee.1068580123156" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="7496742889710629288">
-                              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="7496742889710629166" resolveInfo="performSingleAnalysisConfiguration" />
                               <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="2017717622748561141" resolveInfo="CBMCNightlyAnalyses" />
+                              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="7496742889710629166" resolveInfo="performSingleAnalysisConfiguration" />
                               <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.ParameterReference" typeId="tpee.1068581242874" id="7496742889710629289">
                                 <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="7123609158770177903" resolveInfo="pi" />
                               </node>
@@ -343,8 +343,8 @@
                         <node role="ifTrue" roleId="tpee.1068580123161" type="tpee.StatementList" typeId="tpee.1068580123136" id="5541366122942920784">
                           <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="5541366122942920785">
                             <node role="expression" roleId="tpee.1068580123156" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="5541366122942927436">
-                              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="7496742889710629166" resolveInfo="performSingleAnalysisConfiguration" />
                               <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="2017717622748561141" resolveInfo="CBMCNightlyAnalyses" />
+                              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="7496742889710629166" resolveInfo="performSingleAnalysisConfiguration" />
                               <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.ParameterReference" typeId="tpee.1068581242874" id="5541366122942927437">
                                 <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="773394439851826162" resolveInfo="pi" />
                               </node>

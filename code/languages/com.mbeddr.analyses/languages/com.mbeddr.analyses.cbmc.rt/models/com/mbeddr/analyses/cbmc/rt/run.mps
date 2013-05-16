@@ -2726,9 +2726,6 @@
                     <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.ParameterReference" typeId="tpee.1068581242874" id="2799248402513539295">
                       <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="2799248402513539291" resolveInfo="runnable" />
                     </node>
-                    <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.ParameterReference" typeId="tpee.1068581242874" id="4755507401200043122">
-                      <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="2799248402513539189" resolveInfo="component" />
-                    </node>
                   </node>
                 </node>
               </node>
@@ -3073,16 +3070,13 @@
                                   </node>
                                   <node role="operation" roleId="tpee.1197027833540" type="tp2q.AddElementOperation" typeId="tp2q.1160612413312" id="6472990431940223828">
                                     <node role="argument" roleId="tp2q.1160612519549" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="6472990431940223829">
-                                      <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="mlkb.4941942898026890763" resolveInfo="buildCBMCPPCResult" />
+                                      <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="mlkb.4941942898026890763" resolveInfo="buildCBMCProtocolResult" />
                                       <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="mlkb.4941942898026890762" resolveInfo="CBMCProtocolResultBuilder" />
                                       <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="6472990431940223830">
                                         <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="6472990431940223729" resolveInfo="rawResult" />
                                       </node>
                                       <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.ParameterReference" typeId="tpee.1068581242874" id="6472990431940223831">
                                         <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="6472990431940223727" resolveInfo="it" />
-                                      </node>
-                                      <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.ParameterReference" typeId="tpee.1068581242874" id="6472990431940223832">
-                                        <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="6472990431940223731" resolveInfo="component" />
                                       </node>
                                     </node>
                                   </node>
@@ -3394,6 +3388,18 @@
             <node role="operation" roleId="tpee.1197027833540" type="tp2q.AddElementOperation" typeId="tp2q.1160612413312" id="535044775891084716">
               <node role="argument" roleId="tp2q.1160612519549" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="535044775891084717">
                 <property name="value" nameId="tpee.1070475926801" value="--xml-ui" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="4791280061046266978">
+          <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="4791280061046266998">
+            <node role="operand" roleId="tpee.1197027771414" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="4791280061046266979">
+              <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="535044775891084707" resolveInfo="args" />
+            </node>
+            <node role="operation" roleId="tpee.1197027833540" type="tp2q.AddElementOperation" typeId="tp2q.1160612413312" id="4791280061046267004">
+              <node role="argument" roleId="tp2q.1160612519549" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="4791280061046267006">
+                <property name="value" nameId="tpee.1070475926801" value="--slice-formula" />
               </node>
             </node>
           </node>
