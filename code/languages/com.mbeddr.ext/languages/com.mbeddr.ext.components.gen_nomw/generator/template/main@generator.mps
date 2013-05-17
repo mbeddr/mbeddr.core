@@ -8844,7 +8844,7 @@
               </node>
               <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="3204560883610405905" />
               <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="1021502391329213075">
-                <property name="name" nameId="tpck.1169194664001" value="componentInstance" />
+                <property name="name" nameId="tpck.1169194664001" value="___componentInstance" />
                 <node role="type" roleId="mj1l.318113533128716676" type="yq40.PointerType" typeId="yq40.279446265608459824" id="1021502391329213077">
                   <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
                   <property name="const" nameId="mj1l.2941277002445651368" value="false" />
@@ -8904,7 +8904,7 @@
                 <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="1021502391329213126">
                   <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.AssignmentExpr" typeId="mj1l.22102029902365709" id="1021502391329213130">
                     <node role="left" roleId="mj1l.8860443239512128064" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="1021502391329213127">
-                      <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="1021502391329213075" resolveInfo="componentInstance" />
+                      <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="1021502391329213075" resolveInfo="___componentInstance" />
                     </node>
                     <node role="right" roleId="mj1l.8860443239512128065" type="yq40.ReferenceExpr" typeId="yq40.1595838349830846141" id="1021502391329213133">
                       <node role="expression" roleId="mj1l.7254843406768839760" type="x27k.GlobalVarRef" typeId="x27k.6610873504380357354" id="1021502391329213134">
@@ -8941,7 +8941,7 @@
                   <node role="expr" roleId="c4fa.7254843406768833939" type="x27k.FunctionCall" typeId="x27k.5950410542643524492" id="1021502391329213210">
                     <link role="function" roleId="x27k.5950410542643524493" targetNodeId="5022036173480825669" resolveInfo="aRunnableFunction" />
                     <node role="actuals" roleId="x27k.5950410542643524495" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="1021502391329213360">
-                      <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="1021502391329213075" resolveInfo="componentInstance" />
+                      <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="1021502391329213075" resolveInfo="___componentInstance" />
                     </node>
                     <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.ReferenceMacro" typeId="tpf8.1088761943574" id="1021502391329213222">
                       <property name="linkRole" nameId="tpck.1757699476691236116" value="function" />
