@@ -25,6 +25,10 @@
       <property name="virtualPackage" nameId="tpck.1193676396447" value="configuration.cbmc" />
       <link role="concept" roleId="1i04.1225194240799" targetNodeId="q5q6.6472990431939799907" resolveInfo="CBMCAnalysis" />
     </node>
+    <node type="1i04.ConceptBehavior" typeId="1i04.1225194240794" id="8330520303445148919">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="verification_condition" />
+      <link role="concept" roleId="1i04.1225194240799" targetNodeId="q5q6.7573444803550855446" resolveInfo="CBMCAdvancedVerificationConditionBase" />
+    </node>
   </roots>
   <root id="2017717622748558973">
     <node role="constructor" roleId="1i04.1225194240801" type="1i04.ConceptConstructorDeclaration" typeId="1i04.1225194413805" id="2017717622748558974">
@@ -267,6 +271,25 @@
               <node role="operand" roleId="tpee.1197027771414" type="1i04.ThisNodeExpression" typeId="1i04.1225194691553" id="441761995015090614" />
               <node role="operation" roleId="tpee.1197027833540" type="tp25.SPropertyAccess" typeId="tp25.1138056022639" id="441761995015140291">
                 <link role="property" roleId="tp25.1138056395725" targetNodeId="q5q6.441761995014974059" resolveInfo="analysisDepth" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </root>
+  <root id="8330520303445148919">
+    <node role="constructor" roleId="1i04.1225194240801" type="1i04.ConceptConstructorDeclaration" typeId="1i04.1225194413805" id="8330520303445148920">
+      <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="8330520303445148921">
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="8330520303445148922">
+          <node role="expression" roleId="tpee.1068580123156" type="tpee.AssignmentExpression" typeId="tpee.1068498886294" id="8330520303445148971">
+            <node role="rValue" roleId="tpee.1068498886297" type="tpee.BooleanConstant" typeId="tpee.1068580123137" id="8330520303445148974">
+              <property name="value" nameId="tpee.1068580123138" value="false" />
+            </node>
+            <node role="lValue" roleId="tpee.1068498886295" type="tpee.DotExpression" typeId="tpee.1197027756228" id="8330520303445148944">
+              <node role="operand" roleId="tpee.1197027771414" type="1i04.ThisNodeExpression" typeId="1i04.1225194691553" id="8330520303445148923" />
+              <node role="operation" roleId="tpee.1197027833540" type="tp25.SPropertyAccess" typeId="tp25.1138056022639" id="8330520303445148949">
+                <link role="property" roleId="tp25.1138056395725" targetNodeId="q5q6.8330520303445148918" resolveInfo="disabled" />
               </node>
             </node>
           </node>
