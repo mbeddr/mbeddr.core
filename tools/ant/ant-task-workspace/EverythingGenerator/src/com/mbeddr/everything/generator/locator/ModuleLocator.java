@@ -13,14 +13,14 @@ public class ModuleLocator implements IModuleLocator {
 	String CODE_FOLDER = "/code/";
 	
 	@Override
-	public List<ModuleMapping> getModuleMappings(File rootDirectory, String gitRepoName) {
+	public List<ModuleMapping> getModuleMappings(File rootDirectory, String gitRepoName, List<String> ignoredDirectories) {
 		if(!rootDirectory.exists())
 			throw new BuildException("Directory '"+ rootDirectory + "' of repository doesn't exist!");
 		else if(!rootDirectory.isDirectory())
 			throw new BuildException("Repository path "+ rootDirectory + " does not point to a directory!");
 		List<ModuleMapping> moduleMappings = new ArrayList<ModuleMapping>();
 		String fqRootPath = rootDirectory.getAbsolutePath();
-		List<String> modulePaths = getModulePathsFromFolder(rootDirectory);
+		List<String> modulePaths = getModulePathsFromFolder(rootDirectory, ignoredDirectories);
 		List<String> substitutedModulePaths = substitutePathWithRepoName(modulePaths, gitRepoName, fqRootPath);
 		for (String substitutedModulePath : substitutedModulePaths) {
 			moduleMappings.add(new ModuleMapping(getFolderName(substitutedModulePath, gitRepoName), substitutedModulePath));
@@ -98,16 +98,29 @@ public class ModuleLocator implements IModuleLocator {
 		return substitutedModulePaths;
 	}
 	
-	private List<String> getModulePathsFromFolder(File folder) {
+	private List<String> getModulePathsFromFolder(File folder, List<String> ignoredDirectories) {
 		List<String> modulePaths = new ArrayList<String>();
 		for (File child : folder.listFiles()) {
-			if(child.isDirectory()) {
-				modulePaths.addAll(getModulePathsFromFolder(child));
-			} else if(child.getAbsolutePath().endsWith(".mpl") || child.getAbsolutePath().endsWith(".msd")  || child.getAbsolutePath().endsWith(".devkit")) {
-				modulePaths.add(child.getAbsolutePath());
-			}
+			if(!moduleLiesInIgnoredDirectory(child.getAbsolutePath(), ignoredDirectories)) {
+				if(child.isDirectory()) {
+					modulePaths.addAll(getModulePathsFromFolder(child, ignoredDirectories));
+				} else if(child.getAbsolutePath().endsWith(".mpl") || child.getAbsolutePath().endsWith(".msd")  || child.getAbsolutePath().endsWith(".devkit")) {
+					modulePaths.add(child.getAbsolutePath());
+				}
+			}			
 		}		
 		return modulePaths;
+	}
+	
+	private boolean moduleLiesInIgnoredDirectory(String pathToModule, List<String> ignoredDirectories) {
+		boolean inIgnoredDirectory = false;
+		for (String ignoredDirectory : ignoredDirectories) {
+			inIgnoredDirectory = pathToModule.contains(ignoredDirectory);
+			if(inIgnoredDirectory) {
+				break;
+			}
+		}
+		return inIgnoredDirectory;
 	}
 
 }
