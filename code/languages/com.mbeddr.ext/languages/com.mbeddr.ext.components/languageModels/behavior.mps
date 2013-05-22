@@ -8882,7 +8882,7 @@
         <node role="statement" roleId="tpee.1068581517665" type="talm.HideById" typeId="talm.8483575004407054697" id="8885587964580030669">
           <property name="policy" nameId="talm.396290619978151859" value="1" />
           <node role="varName" roleId="talm.8483575004407054700" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="8885587964580030671">
-            <property name="value" nameId="tpee.1070475926801" value="componentInstance" />
+            <property name="value" nameId="tpee.1070475926801" value="___componentInstance" />
           </node>
         </node>
         <node role="statement" roleId="tpee.1068581517665" type="tpee.LocalVariableDeclarationStatement" typeId="tpee.1068581242864" id="1495719181043420315">

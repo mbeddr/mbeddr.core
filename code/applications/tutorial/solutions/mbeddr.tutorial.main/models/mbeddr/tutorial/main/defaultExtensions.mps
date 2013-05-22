@@ -366,6 +366,7 @@
     <node role="configurationItems" roleId="vs0r.4459718605982007338" type="v7ag.ComponentsConfigItem" typeId="v7ag.2103658896110121032" id="1731059994647804473">
       <node role="genStrategy" roleId="v7ag.2103658896110238743" type="p7vm.NoMwComponentsGenStrategy" typeId="p7vm.2103658896110278831" id="1731059994647804475">
         <property name="generateContracts" nameId="p7vm.4768833643347725006" value="true" />
+        <property name="wireStatically" nameId="p7vm.1553713790141527405" value="false" />
       </node>
     </node>
     <node role="configurationItems" roleId="vs0r.4459718605982007338" type="yvrq.VarRTConfigItem" typeId="yvrq.8882953773355809617" id="869116753978169842" />
@@ -3022,6 +3023,7 @@
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="clqz.Statemachine" typeId="clqz.5778488248013533809" id="7727566415687718765">
       <property name="name" nameId="tpck.1169194664001" value="FlightAnalyzer" />
+      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
       <link role="initial" roleId="clqz.5778488248013533842" targetNodeId="7727566415687762901" resolveInfo="beforeFlight" />
       <node role="contents" roleId="clqz.7835233251114737454" type="clqz.InEvent" typeId="clqz.4643433264760980253" id="7727566415687762906">
         <property name="name" nameId="tpck.1169194664001" value="next" />
@@ -3147,7 +3149,7 @@
                 </node>
               </node>
               <node role="right" roleId="mj1l.8860443239512128065" type="3c6d.LiteralWithUnit" typeId="3c6d.5513256947824592491" id="183497161482807722">
-                <node role="unit" roleId="3c6d.5513256947824592493" type="ym4j.SIMetre" typeId="ym4j.3801772042669047305" id="183497161482807723" />
+                <node role="unit" roleId="3c6d.5513256947824592493" type="ym4j.SIMetre" typeId="ym4j.3801772042669047305" id="3791647284633094201" />
                 <node role="value" roleId="3c6d.5513256947824592492" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="183497161482807724">
                   <property name="value" nameId="mj1l.8860443239512128104" value="0" />
                 </node>
@@ -3514,12 +3516,14 @@
           </node>
         </node>
       </node>
+      <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="q5q6.StatemachineCheckAttribute" typeId="q5q6.5858278990856237301" id="2613206384568804378" />
     </node>
-    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="7977993180520218052">
-      <property name="name" nameId="tpck.1169194664001" value="empty_1352791791535_1" />
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="3791647284633244976">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1368664854217_2" />
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="clqz.Statemachine" typeId="clqz.5778488248013533809" id="8528611498588547081">
       <property name="name" nameId="tpck.1169194664001" value="HierarchicalFlightAnalyzer" />
+      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
       <link role="initial" roleId="clqz.5778488248013533842" targetNodeId="8528611498588547092" resolveInfo="beforeFlight" />
       <node role="contents" roleId="clqz.7835233251114737454" type="clqz.ConditionMacro" typeId="clqz.5338908363445763648" id="183497161482820441">
         <property name="name" nameId="tpck.1169194664001" value="stopped" />
@@ -3834,6 +3838,7 @@
           </node>
         </node>
       </node>
+      <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="q5q6.StatemachineCheckAttribute" typeId="q5q6.5858278990856237301" id="210871162384134375" />
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="7977993180520218053">
       <property name="name" nameId="tpck.1169194664001" value="empty_1352791791745_2" />
