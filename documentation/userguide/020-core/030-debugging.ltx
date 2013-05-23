@@ -45,9 +45,10 @@ We start out by creating a new debug configuration as shown in the figure below:
 In the resulting dialog, name the new configuration \ic{DebuggerExampleConfig}
 and select the \ic{Debugger.Example.DebuggerExample} executable via the \ic{...}
 button (this executable is defined in the build configuration of the debugger
-example). \ic{Timeout} controls in \emph{ms} how long the debugger should
-wait for a connection setup to the underlying C debugger (increase this value,
-if your experience problems) and \ic{run Make} creates a executable
+example). \ic{Launch timeout} control in \emph{ms} how long the debugger should
+wait for a connection setup to the underlying C debugger, \ic{command timeout} 
+does the same for the execution of debug commands (increase this value,
+if your experience problems). \ic{Run Make} creates a executable
 with debug symbols in it (necessary for the debugger).
 
 \vspace{-4mm}
