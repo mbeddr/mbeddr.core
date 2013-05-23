@@ -72,5 +72,11 @@
     </dependencies>
     <rename id="q5q6.8985851583396455245" type="CONCEPT" from="InitializeVariable" to="NondetVarAssignment" />
   </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="q5q6" modelUID="r:5d65e582-fa41-4818-b31c-b2aee1644b4a(com.mbeddr.analyses.cbmc.structure)" version="16" />
+    </dependencies>
+    <rename id="q5q6.6472990431940227507" type="CONCEPT" from="FunctionsCBMCAnalysis" to="AssertionsCBMCAnalysis" />
+  </StructureModification>
 </history>
 
