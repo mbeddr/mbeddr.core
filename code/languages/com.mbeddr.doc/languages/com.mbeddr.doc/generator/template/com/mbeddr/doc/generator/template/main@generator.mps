@@ -19,6 +19,10 @@
     <node type="tpf8.MappingConfiguration" typeId="tpf8.1095416546421" id="4457500422381538575">
       <property name="name" nameId="tpck.1169194664001" value="main" />
     </node>
+    <node type="tpf8.MappingConfiguration" typeId="tpf8.1095416546421" id="2588579461811885770">
+      <property name="name" nameId="tpck.1169194664001" value="resolveIncludes" />
+      <property name="topPriorityGroup" nameId="tpf8.1184950341882" value="true" />
+    </node>
   </roots>
   <root id="4457500422381538575">
     <node role="reductionMappingRule" roleId="tpf8.1167328349397" type="tpf8.Reduction_MappingRule" typeId="tpf8.1167327847730" id="8730648445434128658">
@@ -253,6 +257,8 @@
         </node>
       </node>
     </node>
+  </root>
+  <root id="2588579461811885770">
     <node role="reductionMappingRule" roleId="tpf8.1167328349397" type="tpf8.Reduction_MappingRule" typeId="tpf8.1167327847730" id="6165313375056030495">
       <link role="applicableConcept" roleId="tpf8.1167169349424" targetNodeId="2c95.6165313375056012512" resolveInfo="DocumentInclude" />
       <node role="ruleConsequence" roleId="tpf8.1169672767469" type="tpf8.InlineTemplateWithContext_RuleConsequence" typeId="tpf8.8900764248744213868" id="288801861797797454">
