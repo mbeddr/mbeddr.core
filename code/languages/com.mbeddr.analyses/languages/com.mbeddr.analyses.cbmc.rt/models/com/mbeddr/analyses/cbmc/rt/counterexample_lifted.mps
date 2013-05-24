@@ -4132,7 +4132,14 @@
       <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="6008766899745373821" />
       <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="6008766899745373822">
         <node role="statement" roleId="tpee.1068581517665" type="tpee.ReturnStatement" typeId="tpee.1068581242878" id="6008766899745373823">
-          <node role="expression" roleId="tpee.1068581517676" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="6008766899745373826" />
+          <node role="expression" roleId="tpee.1068581517676" type="tpee.DotExpression" typeId="tpee.1197027756228" id="9047848667681557889">
+            <node role="operand" roleId="tpee.1197027771414" type="tpee.LocalInstanceFieldReference" typeId="tpee.7785501532031639928" id="9047848667681557870">
+              <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="1190855822936011840" resolveInfo="failKind" />
+            </node>
+            <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="9047848667681557895">
+              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="rbq9.7009933055904613803" resolveInfo="getUserFriendlyMessage" />
+            </node>
+          </node>
         </node>
       </node>
     </node>

@@ -628,6 +628,64 @@
                     </node>
                   </node>
                 </node>
+                <node role="elsifClauses" roleId="tpee.1206060520071" type="tpee.ElsifClause" typeId="tpee.1206060495898" id="9047848667681556559">
+                  <node role="statementList" roleId="tpee.1206060644605" type="tpee.StatementList" typeId="tpee.1068580123136" id="9047848667681556560">
+                    <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="9047848667681556561">
+                      <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="9047848667681556562">
+                        <node role="operand" roleId="tpee.1197027771414" type="tpee.LocalInstanceFieldReference" typeId="tpee.7785501532031639928" id="9047848667681556563">
+                          <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="1090123905634146497" resolveInfo="currentState" />
+                        </node>
+                        <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="9047848667681556564">
+                          <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="1190855822936007234" resolveInfo="setFailKind" />
+                          <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.EnumConstantReference" typeId="tpee.1083260308424" id="9047848667681557520">
+                            <link role="enumConstantDeclaration" roleId="tpee.1083260308426" targetNodeId="9047848667681557504" resolveInfo="OVERFLOW" />
+                            <link role="enumClass" roleId="tpee.1144432896254" targetNodeId="7009933055904568061" resolveInfo="RAW_FAIL_KIND" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node role="condition" roleId="tpee.1206060619838" type="tpee.DotExpression" typeId="tpee.1197027756228" id="9047848667681556566">
+                    <node role="operand" roleId="tpee.1197027771414" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="9047848667681556567">
+                      <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="7009933055904591315" resolveInfo="reason" />
+                    </node>
+                    <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="9047848667681556568">
+                      <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="e2lb.~String%dstartsWith(java%dlang%dString)%cboolean" resolveInfo="startsWith" />
+                      <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="9047848667681556569">
+                        <property name="value" nameId="tpee.1070475926801" value="arithmetic overflow" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node role="elsifClauses" roleId="tpee.1206060520071" type="tpee.ElsifClause" typeId="tpee.1206060495898" id="9047848667681557857">
+                  <node role="statementList" roleId="tpee.1206060644605" type="tpee.StatementList" typeId="tpee.1068580123136" id="9047848667681557858">
+                    <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="9047848667681557859">
+                      <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="9047848667681557860">
+                        <node role="operand" roleId="tpee.1197027771414" type="tpee.LocalInstanceFieldReference" typeId="tpee.7785501532031639928" id="9047848667681557861">
+                          <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="1090123905634146497" resolveInfo="currentState" />
+                        </node>
+                        <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="9047848667681557862">
+                          <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="1190855822936007234" resolveInfo="setFailKind" />
+                          <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.EnumConstantReference" typeId="tpee.1083260308424" id="9047848667681557868">
+                            <link role="enumConstantDeclaration" roleId="tpee.1083260308426" targetNodeId="9047848667681557841" resolveInfo="DEREFERENCE" />
+                            <link role="enumClass" roleId="tpee.1144432896254" targetNodeId="7009933055904568061" resolveInfo="RAW_FAIL_KIND" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node role="condition" roleId="tpee.1206060619838" type="tpee.DotExpression" typeId="tpee.1197027756228" id="9047848667681557864">
+                    <node role="operand" roleId="tpee.1197027771414" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="9047848667681557865">
+                      <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="7009933055904591315" resolveInfo="reason" />
+                    </node>
+                    <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="9047848667681557866">
+                      <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="e2lb.~String%dstartsWith(java%dlang%dString)%cboolean" resolveInfo="startsWith" />
+                      <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="9047848667681557867">
+                        <property name="value" nameId="tpee.1070475926801" value="dereference failure" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
                 <node role="elsifClauses" roleId="tpee.1206060520071" type="tpee.ElsifClause" typeId="tpee.1206060495898" id="1190855822935866253">
                   <node role="condition" roleId="tpee.1206060619838" type="tpee.DotExpression" typeId="tpee.1197027756228" id="1190855822935866273">
                     <node role="operand" roleId="tpee.1197027771414" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="1190855822935866256">
@@ -2170,6 +2228,20 @@
       <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="7009933055904568063" resolveInfo="RAW_FAIL_KIND" />
       <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="7009933055904613895">
         <property name="value" nameId="tpee.1070475926801" value="Division by Zero" />
+      </node>
+    </node>
+    <node role="enumConstant" roleId="tpee.1083245396908" type="tpee.EnumConstantDeclaration" typeId="tpee.1083245299891" id="9047848667681557504">
+      <property name="name" nameId="tpck.1169194664001" value="OVERFLOW" />
+      <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="7009933055904568063" resolveInfo="RAW_FAIL_KIND" />
+      <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="9047848667681557505">
+        <property name="value" nameId="tpee.1070475926801" value="Overflow" />
+      </node>
+    </node>
+    <node role="enumConstant" roleId="tpee.1083245396908" type="tpee.EnumConstantDeclaration" typeId="tpee.1083245299891" id="9047848667681557841">
+      <property name="name" nameId="tpck.1169194664001" value="DEREFERENCE" />
+      <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="7009933055904568063" resolveInfo="RAW_FAIL_KIND" />
+      <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="9047848667681557842">
+        <property name="value" nameId="tpee.1070475926801" value="Dereference failure" />
       </node>
     </node>
     <node role="enumConstant" roleId="tpee.1083245396908" type="tpee.EnumConstantDeclaration" typeId="tpee.1083245299891" id="1190855822935866241">

@@ -67,6 +67,20 @@
             </external-mapping>
           </lesser-priority-mapping>
         </mapping-priority-rule>
+        <mapping-priority-rule kind="strictly_before">
+          <greater-priority-mapping>
+            <generator generatorUID="55c68101-5eda-4792-814e-5816de39ea7e(com.mbeddr.analyses.cbmc#2161187783549497010)" />
+            <external-mapping>
+              <mapping-node modelUID="r:e4e4b0dd-d94e-44bb-9f8f-d7d45fe6e705(com.mbeddr.analyses.cbmc.generator.template.main@generator)" nodeID="*" />
+            </external-mapping>
+          </greater-priority-mapping>
+          <lesser-priority-mapping>
+            <generator generatorUID="ea79507d-33bf-45ac-af32-13a874687ef0(com.mbeddr.ext.statemachines#8836799689252270723)" />
+            <external-mapping>
+              <mapping-node modelUID="r:3a5367ae-3f46-4e7d-983f-868d317512c8(com.mbeddr.ext.statemachines.generator.template.generator.template.main@generator)" nodeID="*" />
+            </external-mapping>
+          </lesser-priority-mapping>
+        </mapping-priority-rule>
       </mapping-priorities>
     </generator>
   </generators>
@@ -91,8 +105,8 @@
   </usedDevKits>
   <extendedLanguages>
     <extendedLanguage>5d09074f-babf-4f2b-b78b-e9929af0f3be(com.mbeddr.analyses.base)</extendedLanguage>
-    <extendedLanguage>61c69711-ed61-4850-81d9-7714ff227fb0(com.mbeddr.core.expressions)</extendedLanguage>
     <extendedLanguage>a9d69647-0840-491e-bf39-2eb0805d2011(com.mbeddr.core.statements)</extendedLanguage>
+    <extendedLanguage>61c69711-ed61-4850-81d9-7714ff227fb0(com.mbeddr.core.expressions)</extendedLanguage>
     <extendedLanguage>97d24244-51db-4e2e-97fc-7bd73b1f5f40(com.mbeddr.ext.components)</extendedLanguage>
   </extendedLanguages>
 </language>

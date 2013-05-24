@@ -19,7 +19,7 @@
   <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="5" implicit="yes" />
   <import index="k146" modelUID="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" version="5" implicit="yes" />
   <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="21" implicit="yes" />
-  <import index="q5q6" modelUID="r:5d65e582-fa41-4818-b31c-b2aee1644b4a(com.mbeddr.analyses.cbmc.structure)" version="16" implicit="yes" />
+  <import index="q5q6" modelUID="r:5d65e582-fa41-4818-b31c-b2aee1644b4a(com.mbeddr.analyses.cbmc.structure)" version="17" implicit="yes" />
   <import index="clbe" modelUID="r:61d840b4-12c1-49ea-b142-b2a1550a9b15(com.mbeddr.core.udt.structure)" version="7" implicit="yes" />
   <import index="3c6d" modelUID="r:d6d71b6a-f5ea-4b72-bd01-9d5b19792726(com.mbeddr.ext.physicalunits.c.structure)" version="1" implicit="yes" />
   <import index="ym4j" modelUID="r:cf0df747-2506-460f-a33d-eb236a605ee8(com.mbeddr.ext.physicalunits.structure)" version="10" implicit="yes" />
@@ -224,7 +224,7 @@
     </node>
   </root>
   <root id="1265644944846176449">
-    <node role="analyses" roleId="q46j.6472990431939692464" type="q5q6.FunctionsCBMCAnalysis" typeId="q5q6.6472990431940227507" id="1265644944846176450">
+    <node role="analyses" roleId="q46j.6472990431939692464" type="q5q6.AssertionsCBMCAnalysis" typeId="q5q6.6472990431940227507" id="1265644944846176450">
       <property name="unwindingAssertions" nameId="q5q6.6472990431939799910" value="false" />
       <property name="unwindingDepth" nameId="q5q6.6472990431939799909" value="25" />
       <property name="analysisDepth" nameId="q5q6.441761995014974059" value="1000" />
@@ -236,6 +236,23 @@
       <property name="analysisDepth" nameId="q5q6.441761995014974059" value="1000" />
       <link role="satemachine" roleId="q5q6.8376973589777602108" targetNodeId="e1tx.7727566415687718765" resolveInfo="FlightAnalyzer" />
       <link role="entryPoint" roleId="q5q6.6472990431939799908" targetNodeId="e1tx.7727566415687697331" resolveInfo="testFlightAnalyzer" />
+    </node>
+    <node role="analyses" roleId="q46j.6472990431939692464" type="q5q6.StatemachineCBMCAnalysis" typeId="q5q6.8376973589777602107" id="9047848667681071713">
+      <property name="unwindingAssertions" nameId="q5q6.6472990431939799910" value="false" />
+      <property name="unwindingDepth" nameId="q5q6.6472990431939799909" value="25" />
+      <property name="analysisDepth" nameId="q5q6.441761995014974059" value="1000" />
+      <link role="satemachine" roleId="q5q6.8376973589777602108" targetNodeId="e1tx.7727566415687718765" resolveInfo="FlightAnalyzer" />
+      <link role="entryPoint" roleId="q5q6.6472990431939799908" targetNodeId="3791647284633043932" resolveInfo="flightAnalyzerVerification" />
+    </node>
+    <node role="analyses" roleId="q46j.6472990431939692464" type="q5q6.RobustnessCBMCAnalysis" typeId="q5q6.9047848667681355291" id="8041491615601642957">
+      <property name="unwindingAssertions" nameId="q5q6.6472990431939799910" value="false" />
+      <property name="unwindingDepth" nameId="q5q6.6472990431939799909" value="25" />
+      <property name="analysisDepth" nameId="q5q6.441761995014974059" value="1000" />
+      <property name="check_array_bounds" nameId="q5q6.9047848667681376987" value="true" />
+      <property name="check_div_by_zero" nameId="q5q6.9047848667681374187" value="true" />
+      <property name="check_pointer" nameId="q5q6.9047848667681376986" value="true" />
+      <property name="check_signed_overflow" nameId="q5q6.9047848667681377015" value="true" />
+      <link role="entryPoint" roleId="q5q6.6472990431939799908" targetNodeId="3791647284633043932" resolveInfo="flightAnalyzerVerification" />
     </node>
   </root>
   <root id="3791647284633043928">
