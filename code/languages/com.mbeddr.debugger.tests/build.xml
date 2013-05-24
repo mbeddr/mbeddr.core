@@ -20,7 +20,8 @@
  
  <taskdef resource="jetbrains/mps/build/ant/antlib.xml"
           classpathref="mps.ant.path"/>
-
+  <taskdef name="move-plugin-jars" classname="com.mbeddr.shortenpluginnames.ShortPluginNamesTask" classpath="${mbeddr.github.core.home}/tools/ant/tasks/ShortenPluginJarsTask.jar" />
+ 
   <property name="mbeddr.debugger-test.project.dir" value="code/languages/com.mbeddr.debugger.tests"/>
   <property name="mbeddr.debugger-test.project.mpr" value="code/languages/com.mbeddr.debugger.tests/debugger-tests.mpr"/>  
 
@@ -115,7 +116,9 @@
     </delete>
   </target>
   
-  
+  <target name="move-plugin-jars" >  		
+  		<move-plugin-jars mpsLocation="${mps.home}"/>		
+  </target>
   
   <target name="run-ts-tests" >
     
