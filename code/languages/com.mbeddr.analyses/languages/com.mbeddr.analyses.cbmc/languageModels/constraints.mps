@@ -10,7 +10,7 @@
   <import index="s1ij" modelUID="r:bd61fe0a-b2c9-491d-aa1e-89effd4c5053(com.mbeddr.analyses.base.behavior)" version="0" />
   <import index="v7ag" modelUID="r:9596407c-f27a-49d3-abde-3a66293c5b61(com.mbeddr.ext.components.structure)" version="19" />
   <import index="k146" modelUID="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" version="5" />
-  <import index="q5q6" modelUID="r:5d65e582-fa41-4818-b31c-b2aee1644b4a(com.mbeddr.analyses.cbmc.structure)" version="16" implicit="yes" />
+  <import index="q5q6" modelUID="r:5d65e582-fa41-4818-b31c-b2aee1644b4a(com.mbeddr.analyses.cbmc.structure)" version="17" implicit="yes" />
   <import index="tp1t" modelUID="r:00000000-0000-4000-0000-011c8959030d(jetbrains.mps.lang.constraints.structure)" version="9" implicit="yes" />
   <import index="tpee" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="4" implicit="yes" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
@@ -26,9 +26,6 @@
     <node type="tp1t.ConceptConstraints" typeId="tp1t.1213093968558" id="6472990431939799914">
       <property name="virtualPackage" nameId="tpck.1193676396447" value="configuration.cbmc" />
       <link role="concept" roleId="tp1t.1213093996982" targetNodeId="q5q6.6472990431939799912" resolveInfo="ComponentsCBMCAnalysis" />
-    </node>
-    <node type="tp1t.ConceptConstraints" typeId="tp1t.1213093968558" id="5070503009225686725">
-      <link role="concept" roleId="tp1t.1213093996982" targetNodeId="q5q6.6472990431940227507" resolveInfo="FunctionsCBMCAnalysis" />
     </node>
     <node type="tp1t.ConceptConstraints" typeId="tp1t.1213093968558" id="5070503009225686727">
       <property name="virtualPackage" nameId="tpck.1193676396447" value="configuration.cbmc" />
@@ -208,7 +205,6 @@
       </node>
     </node>
   </root>
-  <root id="5070503009225686725" />
   <root id="5070503009225686727">
     <node role="referent" roleId="tp1t.1213100494875" type="tp1t.NodeReferentConstraint" typeId="tp1t.1148687176410" id="5070503009225686728">
       <link role="applicableLink" roleId="tp1t.1148687202698" targetNodeId="q5q6.5070503009225669554" />
