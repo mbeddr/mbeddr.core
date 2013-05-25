@@ -19,6 +19,9 @@
     <node type="tpf8.MappingConfiguration" typeId="tpf8.1095416546421" id="5378658552263161840">
       <property name="name" nameId="tpck.1169194664001" value="main" />
     </node>
+    <node type="2c95.DocumentConfig" typeId="2c95.6386504476136472782" id="6837710034789951324">
+      <property name="name" nameId="tpck.1169194664001" value="Cfg" />
+    </node>
   </roots>
   <root id="5378658552263161840">
     <node role="reductionMappingRule" roleId="tpf8.1167328349397" type="tpf8.Reduction_MappingRule" typeId="tpf8.1167327847730" id="9186986816326771555">
@@ -26,6 +29,7 @@
       <node role="ruleConsequence" roleId="tpf8.1169672767469" type="tpf8.InlineTemplateWithContext_RuleConsequence" typeId="tpf8.8900764248744213868" id="9186986816326846517">
         <node role="contentNode" roleId="tpf8.8900764248744213871" type="2c95.Document" typeId="2c95.3350625596579911728" id="9186986816326846519">
           <property name="name" nameId="tpck.1169194664001" value="dummy" />
+          <link role="config" roleId="2c95.6386504476136472832" targetNodeId="6837710034789951324" resolveInfo="Cfg" />
           <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="9186986816326771593">
             <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="9186986816326771594">
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="9186986816326771595">
@@ -100,6 +104,7 @@
       <node role="ruleConsequence" roleId="tpf8.1169672767469" type="tpf8.InlineTemplateWithContext_RuleConsequence" typeId="tpf8.8900764248744213868" id="9186986816326846523">
         <node role="contentNode" roleId="tpf8.8900764248744213871" type="2c95.Document" typeId="2c95.3350625596579911728" id="9186986816326846524">
           <property name="name" nameId="tpck.1169194664001" value="dummy" />
+          <link role="config" roleId="2c95.6386504476136472832" targetNodeId="6837710034789951324" resolveInfo="Cfg" />
           <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="9186986816326846525">
             <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="9186986816326846526">
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="9186986816326846527">
@@ -179,6 +184,7 @@
       <node role="ruleConsequence" roleId="tpf8.1169672767469" type="tpf8.InlineTemplateWithContext_RuleConsequence" typeId="tpf8.8900764248744213868" id="9186986816326846624">
         <node role="contentNode" roleId="tpf8.8900764248744213871" type="2c95.Document" typeId="2c95.3350625596579911728" id="9186986816326846625">
           <property name="name" nameId="tpck.1169194664001" value="dummy" />
+          <link role="config" roleId="2c95.6386504476136472832" targetNodeId="6837710034789951324" resolveInfo="Cfg" />
           <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="9186986816326846626">
             <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="9186986816326846627">
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="9186986816326846628">
@@ -279,6 +285,12 @@
           </node>
         </node>
       </node>
+    </node>
+  </root>
+  <root id="6837710034789951324">
+    <node role="defaultTempPath" roleId="2c95.5785245534401182264" type="2c95.PathDefinition" typeId="2c95.6386504476136472795" id="6837710034789951325">
+      <property name="name" nameId="tpck.1169194664001" value="temp" />
+      <property name="editTimePath" nameId="2c95.6386504476136472797" value="/" />
     </node>
   </root>
 </model>
