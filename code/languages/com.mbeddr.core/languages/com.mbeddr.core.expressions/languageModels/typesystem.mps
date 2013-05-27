@@ -744,6 +744,8 @@
                 <node role="expression" roleId="tpee.1068581517676" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="7336544617005005518">
                   <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="ywuz.7336544617004909832" resolveInfo="staticType" />
                   <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="ywuz.8860528120401453903" resolveInfo="NumberEvaluationHelper" />
+                  <node role="actualArgument" roleId="tpee.1068499141038" type="tpd4.LeftOperandType_parameter" typeId="tpd4.1236083209648" id="676979522556027636" />
+                  <node role="actualArgument" roleId="tpee.1068499141038" type="tpd4.RightOperandType_parameter" typeId="tpd4.1236083248858" id="676979522556027637" />
                   <node role="actualArgument" roleId="tpee.1068499141038" type="tpd4.Operation_parameter" typeId="tpd4.1236083245720" id="7336544617005005519" />
                 </node>
               </node>
@@ -833,6 +835,8 @@
                 <node role="expression" roleId="tpee.1068581517676" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="7336544617005005591">
                   <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="ywuz.7336544617004909832" resolveInfo="staticType" />
                   <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="ywuz.8860528120401453903" resolveInfo="NumberEvaluationHelper" />
+                  <node role="actualArgument" roleId="tpee.1068499141038" type="tpd4.LeftOperandType_parameter" typeId="tpd4.1236083209648" id="676979522556027639" />
+                  <node role="actualArgument" roleId="tpee.1068499141038" type="tpd4.RightOperandType_parameter" typeId="tpd4.1236083248858" id="676979522556027641" />
                   <node role="actualArgument" roleId="tpee.1068499141038" type="tp25.SNodeTypeCastExpression" typeId="tp25.1140137987495" id="7336544617005005671">
                     <link role="concept" roleId="tp25.1140138128738" targetNodeId="mj1l.8860443239512128052" resolveInfo="BinaryExpression" />
                     <node role="leftExpression" roleId="tp25.1140138123956" type="tpd4.Operation_parameter" typeId="tpd4.1236083245720" id="7336544617005005592" />
@@ -1222,6 +1226,8 @@
                 <node role="expression" roleId="tpee.1068581517676" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="7336544617005005677">
                   <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="ywuz.7336544617004909832" resolveInfo="staticType" />
                   <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="ywuz.8860528120401453903" resolveInfo="NumberEvaluationHelper" />
+                  <node role="actualArgument" roleId="tpee.1068499141038" type="tpd4.LeftOperandType_parameter" typeId="tpd4.1236083209648" id="676979522556027643" />
+                  <node role="actualArgument" roleId="tpee.1068499141038" type="tpd4.RightOperandType_parameter" typeId="tpd4.1236083248858" id="676979522556027645" />
                   <node role="actualArgument" roleId="tpee.1068499141038" type="tpd4.Operation_parameter" typeId="tpd4.1236083245720" id="7336544617005005678" />
                 </node>
               </node>
@@ -1355,6 +1361,8 @@
                 <node role="expression" roleId="tpee.1068581517676" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="7336544617005005686">
                   <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="ywuz.7336544617004909832" resolveInfo="staticType" />
                   <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="ywuz.8860528120401453903" resolveInfo="NumberEvaluationHelper" />
+                  <node role="actualArgument" roleId="tpee.1068499141038" type="tpd4.LeftOperandType_parameter" typeId="tpd4.1236083209648" id="676979522556027647" />
+                  <node role="actualArgument" roleId="tpee.1068499141038" type="tpd4.RightOperandType_parameter" typeId="tpd4.1236083248858" id="676979522556027649" />
                   <node role="actualArgument" roleId="tpee.1068499141038" type="tpd4.Operation_parameter" typeId="tpd4.1236083245720" id="7336544617005005687" />
                 </node>
               </node>
