@@ -116,12 +116,20 @@
     </delete>
   </target>
   
+   <target name="create-dummy-jar" >  		
+  	 <jar destfile="${mps.home}/plugins/dummy.jar">
+    	 <manifest>
+      	   <attribute name="Class-Path" value="${mps.home}/plugin-jars/mbeddr.components/languages/com.mbeddr.ext.components/*  ${mps.home}/plugin-jars/mbeddr.core/languages/com.mbeddr.core/* ${mps.home}/plugin-jars/mbeddr.debugger/languages/com.mbeddr.core.debugger/* ${mps.home}/plugin-jars/mbeddr.doc/languages/com.mbeddr.doc/* ${mps.home}/plugin-jars/mbeddr.exceptionhandling/languages/com.mbeddr.ext.exceptionhandling/* ${mps.home}/plugin-jars/mbeddr.mpsutil/languages/com.mbeddr.mpsutil/* ${mps.home}/plugin-jars/mbeddr.units/languages/com.mbeddr.ext.units/* ${mps.home}/plugin-jars/mbeddr.statemachine/languages/com.mbeddr.ext.statemachine/* ${mps.home}/plugin-jars/mbeddr.req/languages/com.mbeddr.cc.req/* ${mps.home}/plugin-jars/mbeddr.ple/languages/com.mbeddr.ple/* ${mps.home}/plugin-jars/mbeddr.components/languages/com.mbeddr.ext.components/* ${mps.home}/plugin-jars/mbeddr.spawner/lib/* ${mps.home}/plugin-jars/mbeddr.spawner/languages/* "/>
+    	</manifest>
+  	</jar>
+	</target>
+  
   <target name="move-plugin-jars" >  		
   		<move-plugin-jars mpsLocation="${mps.home}"/>		
   </target>
   
-  <target name="run-ts-tests" >
-    
+  <target name="run-ts-tests" >    	  
+	  
     <echo message="mbeddr.github.core.home = ${mbeddr.github.core.home}"/>
     <echo message="path.macro.mbeddr.github.core.home := ${mbeddr.github.core.home}"/>
     
@@ -145,7 +153,7 @@
 
       <classpath>
         <fileset dir="${mps.home}/lib">
-          <include name="**/*.jar"/>
+          <include name="*.jar"/>
         </fileset>
         <fileset dir="${mps.home}/plugins">
           <include name="**/*.jar"/>
