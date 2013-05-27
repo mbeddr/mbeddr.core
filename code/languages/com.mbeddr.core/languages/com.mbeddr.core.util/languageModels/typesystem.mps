@@ -1959,6 +1959,9 @@
       <node role="operationConcept" roleId="tpd4.8124453027370845341" type="tp25.ConceptReference" typeId="tp25.1154546950173" id="912616408885841287">
         <link role="concept" roleId="tp25.1154546997487" targetNodeId="k146.3457272138385220657" resolveInfo="FlagUnSet" />
       </node>
+      <node role="operationConcept" roleId="tpd4.8124453027370845341" type="tp25.ConceptReference" typeId="tp25.1154546950173" id="676979522555862677">
+        <link role="concept" roleId="tp25.1154546997487" targetNodeId="k146.676979522555858286" resolveInfo="FlagGet" />
+      </node>
       <node role="leftOperandType" roleId="tpd4.1236083115043" type="tpee.GenericNewExpression" typeId="tpee.1145552977093" id="1664480272136274952">
         <node role="creator" roleId="tpee.1145553007750" type="tp25.SNodeCreator" typeId="tp25.1180636770613" id="1664480272136274960">
           <node role="createdType" roleId="tp25.1180636770616" type="tp25.SNodeType" typeId="tp25.1138055754698" id="1664480272136274961">
