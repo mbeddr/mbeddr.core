@@ -116,6 +116,12 @@
     </delete>
   </target>
   
+  <jar destfile="${mps.home}/plugins/dummy.jar">
+    <manifest>
+      <attribute name="Class-Path" value="${mps.home}/plugin-jars/*"/>
+    </manifest>
+  </jar>
+  
   <target name="move-plugin-jars" >  		
   		<move-plugin-jars mpsLocation="${mps.home}"/>		
   </target>
@@ -145,7 +151,7 @@
 
       <classpath>
         <fileset dir="${mps.home}/lib">
-          <include name="**/*.jar"/>
+          <include name="*.jar"/>
         </fileset>
         <fileset dir="${mps.home}/plugins">
           <include name="**/*.jar"/>
