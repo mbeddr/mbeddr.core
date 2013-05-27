@@ -9,13 +9,13 @@
   <language namespace="c61970b4-87fb-4429-8a3a-c87719f000a3(com.mbeddr.doc.terms)" />
   <devkit namespace="54c79f9f-f3ba-4167-91f1-eb4e98a9c47c(com.mbeddr.documentation)" />
   <import index="bskg" modelUID="r:be2272c0-bc2d-4ac4-a164-b072c9e60516(exampleCCode)" version="-1" />
-  <import index="2c95" modelUID="r:5f7188a9-e7b4-4a2e-bef9-38d2cf379fdc(com.mbeddr.doc.structure)" version="10" />
+  <import index="2c95" modelUID="r:5f7188a9-e7b4-4a2e-bef9-38d2cf379fdc(com.mbeddr.doc.structure)" version="11" />
   <import index="87nw" modelUID="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" version="5" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="g9w8" modelUID="r:506f4964-2b3f-49f3-a581-8c498222bac6(com.mbeddr.doc.gen_latex.structure)" version="-1" implicit="yes" />
   <import index="z5ox" modelUID="r:48b6c04c-173b-45da-963f-54fbbdb59cfc(com.mbeddr.doc.self.structure)" version="-1" implicit="yes" />
   <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="7" implicit="yes" />
-  <import index="rh4a" modelUID="r:51a64317-678a-4e8f-9df1-1e83f73c9d71(com.mbeddr.doc.c.structure)" version="4" implicit="yes" />
+  <import index="rh4a" modelUID="r:51a64317-678a-4e8f-9df1-1e83f73c9d71(com.mbeddr.doc.c.structure)" version="5" implicit="yes" />
   <import index="lsus" modelUID="r:25d6e7db-06a4-44ee-83aa-8c5bf17f3b3a(com.mbeddr.doc.gen_xhtml.structure)" version="-1" implicit="yes" />
   <import index="soy0" modelUID="r:7c7016e4-716d-41ab-b7e5-8604290de403(com.mbeddr.doc.meta.structure)" version="-1" implicit="yes" />
   <import index="f87k" modelUID="r:e7473124-6323-4ddf-9715-6e1684f751bd(com.mbeddr.doc.expressions.structure)" version="-1" implicit="yes" />
@@ -1138,12 +1138,12 @@
             </node>
           </node>
         </node>
-        <node role="contents" roleId="2c95.3350625596580064250" type="rh4a.Visualization" typeId="rh4a.4755612053022373494" id="8730648445433858424">
-          <property name="category" nameId="rh4a.4755612053022373532" value="statechart (2D)" />
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Visualization" typeId="2c95.2588579461812060090" id="8730648445433858424">
+          <property name="category" nameId="2c95.2588579461812060097" value="statechart (2D)" />
           <property name="name" nameId="tpck.1169194664001" value="tl" />
-          <link role="visualizable" roleId="rh4a.4755612053022373496" targetNodeId="bskg.8730648445433858446" resolveInfo="TrafficLights" />
-          <link role="path" roleId="rh4a.4755612053022398751" targetNodeId="8730648445432874250" resolveInfo="imgTemp" />
-          <node role="description" roleId="rh4a.4755612053022495458" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8730648445433858425">
+          <link role="visualizable" roleId="2c95.2588579461812060095" targetNodeId="bskg.8730648445433858446" resolveInfo="TrafficLights" />
+          <link role="path" roleId="2c95.2588579461812060096" targetNodeId="8730648445432874250" resolveInfo="imgTemp" />
+          <node role="description" roleId="2c95.2588579461812060099" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8730648445433858425">
             <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8730648445433858426">
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8730648445433858427">
                 <property name="escapedValue" nameId="87nw.2557074442922438158" value="The " />
@@ -1156,7 +1156,7 @@
               </node>
             </node>
           </node>
-          <node role="sizeSpec" roleId="rh4a.8624890525767931145" type="2c95.ScalingSizeSpec" typeId="2c95.8624890525767555426" id="8730648445433984951">
+          <node role="sizeSpec" roleId="2c95.2588579461812060100" type="2c95.ScalingSizeSpec" typeId="2c95.8624890525767555426" id="8730648445433984951">
             <property name="percentage" nameId="2c95.8624890525767555427" value="60" />
           </node>
         </node>
@@ -1638,19 +1638,19 @@
       <node role="contents" roleId="2c95.3350625596580064250" type="2c95.EmptyDocContent" typeId="2c95.3350625596579911760" id="4224548511521432087">
         <property name="name" nameId="tpck.1169194664001" value="empty_1366137056247_2" />
       </node>
-      <node role="contents" roleId="2c95.3350625596580064250" type="rh4a.Visualization" typeId="rh4a.4755612053022373494" id="2732739370697308260">
-        <property name="category" nameId="rh4a.4755612053022373532" value="term dependencies" />
+      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Visualization" typeId="2c95.2588579461812060090" id="2732739370697308260">
+        <property name="category" nameId="2c95.2588579461812060097" value="term dependencies" />
         <property name="name" nameId="tpck.1169194664001" value="termDeps" />
-        <link role="visualizable" roleId="rh4a.4755612053022373496" targetNodeId="8574110643282429386" resolveInfo="Car" />
-        <link role="path" roleId="rh4a.4755612053022398751" targetNodeId="8730648445432874250" resolveInfo="imgTemp" />
-        <node role="description" roleId="rh4a.4755612053022495458" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="2732739370697308261">
+        <link role="visualizable" roleId="2c95.2588579461812060095" targetNodeId="8574110643282429386" resolveInfo="Car" />
+        <link role="path" roleId="2c95.2588579461812060096" targetNodeId="8730648445432874250" resolveInfo="imgTemp" />
+        <node role="description" roleId="2c95.2588579461812060099" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="2732739370697308261">
           <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="2732739370697308262">
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2732739370697308263">
               <property name="escapedValue" nameId="87nw.2557074442922438158" value="The relationships between the terms can also be shown as a diagram." />
             </node>
           </node>
         </node>
-        <node role="sizeSpec" roleId="rh4a.8624890525767931145" type="2c95.PageWidthSizeSpec" typeId="2c95.8624890525767637976" id="2732739370697308264">
+        <node role="sizeSpec" roleId="2c95.2588579461812060100" type="2c95.PageWidthSizeSpec" typeId="2c95.8624890525767637976" id="2732739370697308264">
           <property name="percentage" nameId="2c95.8624890525767637977" value="100" />
         </node>
       </node>

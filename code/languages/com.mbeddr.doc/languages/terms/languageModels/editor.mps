@@ -27,6 +27,9 @@
       <property name="name" nameId="tpck.1169194664001" value="deleteGlossaryPointer" />
       <link role="applicableConcept" roleId="tpc2.1139535219968" targetNodeId="8zu2.4224548511521359213" resolveInfo="GlossaryPointer" />
     </node>
+    <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="2588579461811878242">
+      <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="8zu2.2588579461811878239" resolveInfo="TermsConfigItem" />
+    </node>
   </roots>
   <root id="8574110643282370467">
     <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="8574110643282370470">
@@ -209,6 +212,11 @@
           </node>
         </node>
       </node>
+    </node>
+  </root>
+  <root id="2588579461811878242">
+    <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="2588579461811878244">
+      <property name="text" nameId="tpc2.1073389577007" value="terms" />
     </node>
   </root>
 </model>
