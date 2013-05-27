@@ -12,7 +12,7 @@
   <import index="dbrf" modelUID="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#javax.swing(JDK/javax.swing@java_stub)" version="-1" />
   <import index="1t7x" modelUID="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.awt(JDK/java.awt@java_stub)" version="-1" />
   <import index="eqhl" modelUID="r:147b294d-1dd0-41c5-9d44-67586fcda349(com.mbeddr.analyses.cbmc.rt.counterexample_lifted)" version="-1" />
-  <import index="zxyo" modelUID="r:d4362ffa-7076-42f2-8aa2-9e47fe478fff(com.mbeddr.analyses.cbmc.rt.counterexample_div_by_zero)" version="-1" />
+  <import index="zxyo" modelUID="r:d4362ffa-7076-42f2-8aa2-9e47fe478fff(com.mbeddr.analyses.cbmc.rt.counterexample_robustness)" version="-1" />
   <import index="qele" modelUID="r:94a9027f-1810-4f8c-a611-19948fed3505(com.mbeddr.analyses.cbmc.rt.counterexample_assert)" version="-1" />
   <import index="rbq9" modelUID="r:e9339685-9249-4681-a8f5-318d0236a4a8(com.mbeddr.analyses.cbmc.rt.counterexample_raw)" version="-1" />
   <import index="mlkb" modelUID="r:491ddc27-c006-485d-bc91-fe536ea00e82(com.mbeddr.analyses.cbmc.rt.counterexample_protocol)" version="-1" />
@@ -570,7 +570,7 @@
             <node role="body" roleId="tpee.1163670683720" type="tpee.StatementList" typeId="tpee.1068580123136" id="8989352057116407147">
               <node role="statement" roleId="tpee.1068581517665" type="tpee.ReturnStatement" typeId="tpee.1068581242878" id="8989352057116407150">
                 <node role="expression" roleId="tpee.1068581517676" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="8989352057116407152">
-                  <property name="value" nameId="tpee.1070475926801" value="Analysis time (s)" />
+                  <property name="value" nameId="tpee.1070475926801" value="Time (s)" />
                 </node>
               </node>
             </node>
@@ -1802,72 +1802,82 @@
       </node>
       <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="3166796021226913453">
         <node role="statement" roleId="tpee.1068581517665" type="tpee.ReturnStatement" typeId="tpee.1068581242878" id="3166796021226913454">
-          <node role="expression" roleId="tpee.1068581517676" type="tpee.OrExpression" typeId="tpee.1080223426719" id="3166796021226913455">
-            <property name="right_transform_hint" value="true" />
-            <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.OrExpression" typeId="tpee.1080223426719" id="3166796021226913456">
-              <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.InstanceOfExpression" typeId="tpee.1081256982272" id="3166796021226913457">
-                <node role="classType" roleId="tpee.1081256993305" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="3166796021226913458">
-                  <link role="classifier" roleId="tpee.1107535924139" targetNodeId="eqhl.6224485357112738022" resolveInfo="CBMCLiftedCounterexampleLeaveDecisionTableState" />
-                </node>
-                <node role="leftExpression" roleId="tpee.1081256993304" type="tpee.ParameterReference" typeId="tpee.1068581242874" id="3166796021226913459">
-                  <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="3166796021226913448" resolveInfo="node" />
-                </node>
+          <node role="expression" roleId="tpee.1068581517676" type="tpee.OrExpression" typeId="tpee.1080223426719" id="6155532056383074197">
+            <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.InstanceOfExpression" typeId="tpee.1081256982272" id="6155532056383074201">
+              <node role="classType" roleId="tpee.1081256993305" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="6155532056383074204">
+                <link role="classifier" roleId="tpee.1107535924139" targetNodeId="eqhl.6155532056383074157" resolveInfo="CBMCLiftedCounterexampleStatemachineState" />
               </node>
-              <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.OrExpression" typeId="tpee.1080223426719" id="3166796021226913460">
-                <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.InstanceOfExpression" typeId="tpee.1081256982272" id="3166796021226913461">
-                  <node role="classType" roleId="tpee.1081256993305" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="3166796021226913462">
-                    <link role="classifier" roleId="tpee.1107535924139" targetNodeId="eqhl.4277510433733039078" resolveInfo="CBMCLiftedCounterexampleEnterDecisionTableState" />
+              <node role="leftExpression" roleId="tpee.1081256993304" type="tpee.ParameterReference" typeId="tpee.1068581242874" id="6155532056383074200">
+                <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="3166796021226913448" resolveInfo="node" />
+              </node>
+            </node>
+            <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.OrExpression" typeId="tpee.1080223426719" id="3166796021226913455">
+              <property name="right_transform_hint" value="true" />
+              <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.OrExpression" typeId="tpee.1080223426719" id="3166796021226913456">
+                <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.InstanceOfExpression" typeId="tpee.1081256982272" id="3166796021226913457">
+                  <node role="classType" roleId="tpee.1081256993305" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="3166796021226913458">
+                    <link role="classifier" roleId="tpee.1107535924139" targetNodeId="eqhl.6224485357112738022" resolveInfo="CBMCLiftedCounterexampleLeaveDecisionTableState" />
                   </node>
-                  <node role="leftExpression" roleId="tpee.1081256993304" type="tpee.ParameterReference" typeId="tpee.1068581242874" id="3166796021226913463">
+                  <node role="leftExpression" roleId="tpee.1081256993304" type="tpee.ParameterReference" typeId="tpee.1068581242874" id="3166796021226913459">
                     <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="3166796021226913448" resolveInfo="node" />
                   </node>
                 </node>
-                <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.OrExpression" typeId="tpee.1080223426719" id="3166796021226913464">
-                  <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.OrExpression" typeId="tpee.1080223426719" id="3166796021226913465">
-                    <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.OrExpression" typeId="tpee.1080223426719" id="3166796021226913466">
-                      <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.InstanceOfExpression" typeId="tpee.1081256982272" id="3166796021226913467">
-                        <node role="classType" roleId="tpee.1081256993305" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="3166796021226913468">
-                          <link role="classifier" roleId="tpee.1107535924139" targetNodeId="eqhl.4207776615987969176" resolveInfo="CBMCLiftedCounterexampleFunctionCallState" />
+                <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.OrExpression" typeId="tpee.1080223426719" id="3166796021226913460">
+                  <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.InstanceOfExpression" typeId="tpee.1081256982272" id="3166796021226913461">
+                    <node role="classType" roleId="tpee.1081256993305" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="3166796021226913462">
+                      <link role="classifier" roleId="tpee.1107535924139" targetNodeId="eqhl.4277510433733039078" resolveInfo="CBMCLiftedCounterexampleEnterDecisionTableState" />
+                    </node>
+                    <node role="leftExpression" roleId="tpee.1081256993304" type="tpee.ParameterReference" typeId="tpee.1068581242874" id="3166796021226913463">
+                      <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="3166796021226913448" resolveInfo="node" />
+                    </node>
+                  </node>
+                  <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.OrExpression" typeId="tpee.1080223426719" id="3166796021226913464">
+                    <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.OrExpression" typeId="tpee.1080223426719" id="3166796021226913465">
+                      <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.OrExpression" typeId="tpee.1080223426719" id="3166796021226913466">
+                        <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.InstanceOfExpression" typeId="tpee.1081256982272" id="3166796021226913467">
+                          <node role="classType" roleId="tpee.1081256993305" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="3166796021226913468">
+                            <link role="classifier" roleId="tpee.1107535924139" targetNodeId="eqhl.4207776615987969176" resolveInfo="CBMCLiftedCounterexampleFunctionCallState" />
+                          </node>
+                          <node role="leftExpression" roleId="tpee.1081256993304" type="tpee.ParameterReference" typeId="tpee.1068581242874" id="3166796021226913469">
+                            <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="3166796021226913448" resolveInfo="node" />
+                          </node>
                         </node>
-                        <node role="leftExpression" roleId="tpee.1081256993304" type="tpee.ParameterReference" typeId="tpee.1068581242874" id="3166796021226913469">
-                          <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="3166796021226913448" resolveInfo="node" />
+                        <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.InstanceOfExpression" typeId="tpee.1081256982272" id="3166796021226913470">
+                          <node role="classType" roleId="tpee.1081256993305" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="3166796021226913471">
+                            <link role="classifier" roleId="tpee.1107535924139" targetNodeId="eqhl.4207776615987970179" resolveInfo="CBMCLiftedCounterexampleFunctionReturnState" />
+                          </node>
+                          <node role="leftExpression" roleId="tpee.1081256993304" type="tpee.ParameterReference" typeId="tpee.1068581242874" id="3166796021226913472">
+                            <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="3166796021226913448" resolveInfo="node" />
+                          </node>
                         </node>
                       </node>
-                      <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.InstanceOfExpression" typeId="tpee.1081256982272" id="3166796021226913470">
-                        <node role="classType" roleId="tpee.1081256993305" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="3166796021226913471">
-                          <link role="classifier" roleId="tpee.1107535924139" targetNodeId="eqhl.4207776615987970179" resolveInfo="CBMCLiftedCounterexampleFunctionReturnState" />
+                      <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.InstanceOfExpression" typeId="tpee.1081256982272" id="3166796021226913473">
+                        <node role="classType" roleId="tpee.1081256993305" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="3166796021226913474">
+                          <link role="classifier" roleId="tpee.1107535924139" targetNodeId="eqhl.4277510433732904282" resolveInfo="CBMCLiftedCounterexampleEnterInstanceConfigState" />
                         </node>
-                        <node role="leftExpression" roleId="tpee.1081256993304" type="tpee.ParameterReference" typeId="tpee.1068581242874" id="3166796021226913472">
+                        <node role="leftExpression" roleId="tpee.1081256993304" type="tpee.ParameterReference" typeId="tpee.1068581242874" id="3166796021226913475">
                           <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="3166796021226913448" resolveInfo="node" />
                         </node>
                       </node>
                     </node>
-                    <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.InstanceOfExpression" typeId="tpee.1081256982272" id="3166796021226913473">
-                      <node role="classType" roleId="tpee.1081256993305" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="3166796021226913474">
-                        <link role="classifier" roleId="tpee.1107535924139" targetNodeId="eqhl.4277510433732904282" resolveInfo="CBMCLiftedCounterexampleEnterInstanceConfigState" />
+                    <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.InstanceOfExpression" typeId="tpee.1081256982272" id="3166796021226913476">
+                      <node role="classType" roleId="tpee.1081256993305" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="3166796021226913477">
+                        <link role="classifier" roleId="tpee.1107535924139" targetNodeId="eqhl.4277510433732960036" resolveInfo="CBMCLiftedCounterexampleLeaveInstanceConfigState" />
                       </node>
-                      <node role="leftExpression" roleId="tpee.1081256993304" type="tpee.ParameterReference" typeId="tpee.1068581242874" id="3166796021226913475">
+                      <node role="leftExpression" roleId="tpee.1081256993304" type="tpee.ParameterReference" typeId="tpee.1068581242874" id="3166796021226913478">
                         <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="3166796021226913448" resolveInfo="node" />
                       </node>
                     </node>
                   </node>
-                  <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.InstanceOfExpression" typeId="tpee.1081256982272" id="3166796021226913476">
-                    <node role="classType" roleId="tpee.1081256993305" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="3166796021226913477">
-                      <link role="classifier" roleId="tpee.1107535924139" targetNodeId="eqhl.4277510433732960036" resolveInfo="CBMCLiftedCounterexampleLeaveInstanceConfigState" />
-                    </node>
-                    <node role="leftExpression" roleId="tpee.1081256993304" type="tpee.ParameterReference" typeId="tpee.1068581242874" id="3166796021226913478">
-                      <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="3166796021226913448" resolveInfo="node" />
-                    </node>
-                  </node>
                 </node>
               </node>
-            </node>
-            <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.InstanceOfExpression" typeId="tpee.1081256982272" id="3166796021226913479">
-              <node role="classType" roleId="tpee.1081256993305" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="3166796021226913480">
-                <link role="classifier" roleId="tpee.1107535924139" targetNodeId="eqhl.7554338819202078051" resolveInfo="CBMCLiftedCounterexampleEnterStatemachineInitState" />
-              </node>
-              <node role="leftExpression" roleId="tpee.1081256993304" type="tpee.ParameterReference" typeId="tpee.1068581242874" id="3166796021226913481">
-                <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="3166796021226913448" resolveInfo="node" />
+              <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.InstanceOfExpression" typeId="tpee.1081256982272" id="3166796021226913479">
+                <node role="classType" roleId="tpee.1081256993305" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="3166796021226913480">
+                  <link role="classifier" roleId="tpee.1107535924139" targetNodeId="eqhl.7554338819202078051" resolveInfo="CBMCLiftedCounterexampleEnterStatemachineInitState" />
+                </node>
+                <node role="leftExpression" roleId="tpee.1081256993304" type="tpee.ParameterReference" typeId="tpee.1068581242874" id="3166796021226913481">
+                  <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="3166796021226913448" resolveInfo="node" />
+                </node>
               </node>
             </node>
           </node>

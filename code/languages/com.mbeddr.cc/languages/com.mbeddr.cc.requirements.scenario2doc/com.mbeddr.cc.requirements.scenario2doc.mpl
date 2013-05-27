@@ -15,8 +15,11 @@
       </dependencies>
       <usedLanguages>
         <usedLanguage>e865cad2-7cc8-437a-951a-665bcbcb8b1a(com.mbeddr.cc.requirements)</usedLanguage>
+        <usedLanguage>d6714220-402d-48cb-a4a2-88223c6257f6(com.mbeddr.cc.requirements.scenarios)</usedLanguage>
+        <usedLanguage>d4280a54-f6df-4383-aa41-d1b2bffa7eb1(com.mbeddr.core.base)</usedLanguage>
         <usedLanguage>2374bc90-7e37-41f1-a9c4-c2e35194c36a(com.mbeddr.doc)</usedLanguage>
         <usedLanguage>63e0e566-5131-447e-90e3-12ea330e1a00(com.mbeddr.mpsutil.blutil)</usedLanguage>
+        <usedLanguage>92d2ea16-5a42-4fdf-a676-c7604efe3504(de.slisson.mps.richtext)</usedLanguage>
         <usedLanguage>b401a680-8325-4110-8fd3-84331ff25bef(jetbrains.mps.lang.generator)</usedLanguage>
         <usedLanguage>d7706f63-9be2-479c-a3da-ae92af1e64d5(jetbrains.mps.lang.generator.generationContext)</usedLanguage>
       </usedLanguages>
@@ -35,8 +38,8 @@
   </usedDevKits>
   <extendedLanguages>
     <extendedLanguage>2374bc90-7e37-41f1-a9c4-c2e35194c36a(com.mbeddr.doc)</extendedLanguage>
-    <extendedLanguage>d6714220-402d-48cb-a4a2-88223c6257f6(com.mbeddr.cc.requirements.scenarios)</extendedLanguage>
     <extendedLanguage>445de13f-b9dd-436f-be62-42c616f697e2(com.mbeddr.doc.c)</extendedLanguage>
+    <extendedLanguage>d6714220-402d-48cb-a4a2-88223c6257f6(com.mbeddr.cc.requirements.scenarios)</extendedLanguage>
   </extendedLanguages>
 </language>
 

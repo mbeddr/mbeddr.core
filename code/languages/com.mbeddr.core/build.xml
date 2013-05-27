@@ -7,6 +7,7 @@
   <property name="jvm.arg.XX:MaxPermSize" value="-XX:MaxPermSize=128m"/>
   
   <taskdef name="make-tests" classname="com.mbeddr.tools.ant.MakeTestsTask" classpath="${mbeddr.github.core.home}/tools/ant/tasks/MakeTestsTask.jar" />
+  <taskdef name="move-plugin-jars" classname="com.mbeddr.shortenpluginnames.ShortPluginNamesTask" classpath="${mbeddr.github.core.home}/tools/ant/tasks/ShortenPluginJarsTask.jar" />
   
   <!-- validate if path properties are set in build.properties -->
   <fail unless="mbeddr.github.core.home">mbeddr.github.core.home must be set in your build.properties</fail>
@@ -107,6 +108,10 @@
   		
   		<make-tests workingDirectory="${basedir}"/>
 		
+  </target>
+  
+  <target name="move-plugin-jars" >  		
+  		<move-plugin-jars mpsLocation="${mps.home}"/>		
   </target>
   
   <target name="run-ts-tests" >

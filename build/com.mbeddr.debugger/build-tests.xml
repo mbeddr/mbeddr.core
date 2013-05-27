@@ -204,7 +204,7 @@
         <fileset file="${artifacts.buildMPS}/lib/diffutils-1.2.1.jar" />
         <fileset dir="${artifacts.buildMPS}/lib" includes="*.jar" />
         <fileset dir="${artifacts.buildMPS}/lib/ant/lib" includes="*.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.debugger.build/com.mbeddr.core.debugger.zip/debugger/languages/com.mbeddr.core.debugger/com.mbeddr.core.debug.jar" />
+        <fileset file="${build.tmp}/deps/com.mbeddr.debugger.build/com.mbeddr.core.debugger.zip/mbeddr.debugger/languages/com.mbeddr.core.debugger/com.mbeddr.core.debug.jar" />
         <fileset file="${artifacts.buildMPS}/languages/languageDesign/jetbrains.mps.lang.test.runtime.jar" />
       </classpath>
     </javac>
@@ -278,7 +278,7 @@
         <fileset file="${artifacts.buildMPS}/lib/diffutils-1.2.1.jar" />
         <fileset dir="${artifacts.buildMPS}/lib" includes="*.jar" />
         <fileset dir="${artifacts.buildMPS}/lib/ant/lib" includes="*.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.debugger.build/com.mbeddr.core.debugger.zip/debugger/languages/com.mbeddr.core.debugger/com.mbeddr.core.debug.jar" />
+        <fileset file="${build.tmp}/deps/com.mbeddr.debugger.build/com.mbeddr.core.debugger.zip/mbeddr.debugger/languages/com.mbeddr.core.debugger/com.mbeddr.core.debug.jar" />
         <fileset file="${artifacts.buildMPS}/languages/languageDesign/jetbrains.mps.lang.test.runtime.jar" />
       </classpath>
     </javac>
@@ -292,7 +292,7 @@
     <echo message="generating" />
     <generate parallelMode="true" fork="true">
       <plugin path="${artifacts.buildMPS}/plugins/mps-debugger-api" />
-      <plugin path="${build.tmp}/deps/com.mbeddr.debugger.build/com.mbeddr.core.debugger.zip/debugger" />
+      <plugin path="${build.tmp}/deps/com.mbeddr.debugger.build/com.mbeddr.core.debugger.zip/mbeddr.debugger" />
       <library file="${artifacts.buildMPS}/languages/baseLanguage/jetbrains.mps.baseLanguage.blTypes.jar" />
       <library file="${artifacts.buildMPS}/languages/baseLanguage/jetbrains.mps.baseLanguage.classifiers.jar" />
       <library file="${artifacts.buildMPS}/languages/baseLanguage/jetbrains.mps.baseLanguage.closures.jar" />
@@ -356,7 +356,7 @@
       <library file="${artifacts.buildMPS}/plugins/mps-dates/languages/jetbrains.mps.baseLanguage.dates.runtime.jar" />
       <library file="${artifacts.buildMPS}/plugins/mps-dates/languages/jetbrains.mps.baseLanguage.datesInternal.jar" />
       <library file="${artifacts.buildMPS}/plugins/mps-debugger-api/lib/debugger-api.jar" />
-      <library file="${build.tmp}/deps/com.mbeddr.debugger.build/com.mbeddr.core.debugger.zip/debugger/languages/com.mbeddr.core.debugger/com.mbeddr.core.debug.jar" />
+      <library file="${build.tmp}/deps/com.mbeddr.debugger.build/com.mbeddr.core.debugger.zip/mbeddr.debugger/languages/com.mbeddr.core.debugger/com.mbeddr.core.debug.jar" />
       <library file="${build.tmp}/deps/com.mbeddr.spawner.build/com.mbeddr.spawner.zip/mbeddr.spawner/languages/Eclipse.Debugger.jar" />
       <chunk>
         <module file="${mbeddr.core}/tests/test.debugger.cdt/cdt.msd" />

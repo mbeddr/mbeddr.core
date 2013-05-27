@@ -32,7 +32,8 @@ public class GenerateProjectTask extends Task {
 	public void execute() {
 		File runningDirectory = getProject().getBaseDir();
 		List<GitRepository> gitRepositories = readRepositoriesFromProperties();
-		List<ModuleMapping> moduleMappings = collectModulePaths(gitRepositories);
+		List<String> ignoredDirectories = readIgnoredDirectoriesFromProperties();
+		List<ModuleMapping> moduleMappings = collectModulePaths(gitRepositories,ignoredDirectories);
 		List<String> gitRepoNames = getRepositoryNames(gitRepositories);
 		this.xmlWriter.createProjectFile(runningDirectory, moduleMappings,
 				gitRepoNames);
@@ -47,20 +48,32 @@ public class GenerateProjectTask extends Task {
 	}
 
 	private List<ModuleMapping> collectModulePaths(
-			List<GitRepository> gitRepositories) {
+			List<GitRepository> gitRepositories, List<String> ignoredDirectories) {
 		List<ModuleMapping> modulePaths = new ArrayList<ModuleMapping>();
 		for (GitRepository gitRepository : gitRepositories) {
-			modulePaths.addAll(moduleLocator.getModuleMappings(gitRepository.getPath(), gitRepository.getName()));
+			modulePaths.addAll(moduleLocator.getModuleMappings(gitRepository.getPath(), gitRepository.getName(), ignoredDirectories));
 		}
 		return modulePaths;
 	}
 	
+	private List<String> readIgnoredDirectoriesFromProperties() {
+		List<String> ignoredDirectories = new ArrayList<String>();
+		Set<String> propertyKeys = (Set<String>) getProject().getProperties()
+				.keySet();
+		for (String key : propertyKeys) {
+			if (key.startsWith(repositoryPrefix + ".ignore.")) {
+				ignoredDirectories.add(getProject().getProperties().get(key).toString());								
+			}
+		}
+		return ignoredDirectories;
+	}
+		
 	private List<GitRepository> readRepositoriesFromProperties() {
 		List<GitRepository> gitRepositories = new ArrayList<GitRepository>();
 		Set<String> propertyKeys = (Set<String>) getProject().getProperties()
 				.keySet();
 		for (String key : propertyKeys) {
-			if (key.startsWith(repositoryPrefix + ".")) {
+			if (key.startsWith(repositoryPrefix + ".") && !(key.startsWith(repositoryPrefix + ".ignore."))) {
 				String repoNameWithoutPrefix = key.replace(repositoryPrefix
 						+ ".", "");
 				File path = new File(getProject().getProperties().get(key)
