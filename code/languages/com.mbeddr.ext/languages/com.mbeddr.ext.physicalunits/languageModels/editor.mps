@@ -186,6 +186,16 @@
         <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="ym4j.2078797996880543461" resolveInfo="physicalMeaning" />
       </node>
     </node>
+    <node role="inspectedCellModel" roleId="tpc2.1078153129734" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="676979522556118818">
+      <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Horizontal" typeId="tpc2.1106270549637" id="676979522556118819" />
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="676979522556118820">
+        <property name="text" nameId="tpc2.1073389577007" value="identifier name:" />
+      </node>
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Property" typeId="tpc2.1073389658414" id="676979522556118821">
+        <property name="allowEmptyText" nameId="tpc2.1140114345053" value="true" />
+        <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="ym4j.676979522556118811" resolveInfo="identifierName" />
+      </node>
+    </node>
   </root>
   <root id="8099136929591173609">
     <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_RefCell" typeId="tpc2.1088013125922" id="8099136929591173611">
@@ -230,6 +240,16 @@
         <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="ym4j.2078797996880543461" resolveInfo="physicalMeaning" />
       </node>
     </node>
+    <node role="inspectedCellModel" roleId="tpc2.1078153129734" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="676979522556118814">
+      <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Horizontal" typeId="tpc2.1106270549637" id="676979522556118815" />
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="676979522556118813">
+        <property name="text" nameId="tpc2.1073389577007" value="identifier name:" />
+      </node>
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Property" typeId="tpc2.1073389658414" id="676979522556118817">
+        <property name="allowEmptyText" nameId="tpc2.1140114345053" value="true" />
+        <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="ym4j.676979522556118811" resolveInfo="identifierName" />
+      </node>
+    </node>
   </root>
   <root id="1656687801206561199">
     <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="1656687801206561201">
@@ -246,6 +266,16 @@
       </node>
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Property" typeId="tpc2.1073389658414" id="1656687801206561208">
         <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="ym4j.2078797996880543461" resolveInfo="physicalMeaning" />
+      </node>
+    </node>
+    <node role="inspectedCellModel" roleId="tpc2.1078153129734" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="676979522556118822">
+      <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Horizontal" typeId="tpc2.1106270549637" id="676979522556118823" />
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="676979522556118824">
+        <property name="text" nameId="tpc2.1073389577007" value="identifier name:" />
+      </node>
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Property" typeId="tpc2.1073389658414" id="676979522556118825">
+        <property name="allowEmptyText" nameId="tpc2.1140114345053" value="true" />
+        <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="ym4j.676979522556118811" resolveInfo="identifierName" />
       </node>
     </node>
   </root>
