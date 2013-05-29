@@ -225,7 +225,7 @@
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4557518620047668880">
       <property name="virtualPackage" nameId="tpck.1193676396447" value="data" />
       <property name="name" nameId="tpck.1169194664001" value="CommentReqData" />
-      <link role="extends" roleId="tpce.1071489389519" targetNodeId="8983772170066653152" resolveInfo="RepresentAsStringData" />
+      <link role="extends" roleId="tpce.1071489389519" targetNodeId="8745401669463257452" resolveInfo="RequirementsData" />
     </node>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="8983772170066653152">
       <property name="virtualPackage" nameId="tpck.1193676396447" value="data" />
