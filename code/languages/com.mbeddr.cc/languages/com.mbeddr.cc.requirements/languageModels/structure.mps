@@ -257,6 +257,11 @@
       <property name="name" nameId="tpck.1169194664001" value="EstimatedEffortTag" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="8983772170066710141" resolveInfo="RepresentAsStringTag" />
     </node>
+    <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="882101644642998760">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="summary" />
+      <property name="name" nameId="tpck.1169194664001" value="EstimatedEffortSummary" />
+      <link role="extends" roleId="tpce.1071489389519" targetNodeId="3314758227758983876" resolveInfo="RequirementsSummary" />
+    </node>
   </roots>
   <root id="8745401669462952101">
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="8375407818529829156">
@@ -767,6 +772,12 @@
     <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="882101644642944296">
       <property name="name" nameId="tpck.1169194664001" value="max" />
       <link role="dataType" roleId="tpce.1082985295845" targetNodeId="tpck.1082983657062" resolveInfo="integer" />
+    </node>
+  </root>
+  <root id="882101644642998760">
+    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="882101644642998761">
+      <property name="value" nameId="tpce.1105725733873" value="ee" />
+      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473891462" resolveInfo="alias" />
     </node>
   </root>
 </model>
