@@ -1,9 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="CodeStyleSettings">
+    <option name="fieldPrefix" value="" />
+    <option name="fieldSuffix" value="" />
+    <option name="localVariablePrefix" value="" />
+    <option name="localVariableSuffix" value="" />
+    <option name="parameterPrefix" value="" />
+    <option name="parameterSuffix" value="" />
+    <option name="staticFieldPrefix" value="" />
+    <option name="staticFieldSuffix" value="" />
+  </component>
   <component name="DependencyValidationManager">
     <option name="SKIP_IMPORT_STATEMENTS" value="false" />
   </component>
   <component name="Encoding" useUTFGuessing="true" native2AsciiForPropertiesFiles="false" />
+  <component name="MPSFavoritesManager">
+    <favorites_list name="F1" />
+  </component>
   <component name="MPSProject">
     <projectModules>
       <modulePath path="${project}/languages/blocks/blocks.mpl" folder="languages" />
@@ -42,7 +55,7 @@
   </component>
   <component name="VcsDirectoryMappings">
     <mapping directory="$mbeddr.github.core.home$" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/../../.." vcs="Git" />
+    <mapping directory="$mbeddr.github.core.home$" vcs="Git" />
   </component>
 </project>
 
