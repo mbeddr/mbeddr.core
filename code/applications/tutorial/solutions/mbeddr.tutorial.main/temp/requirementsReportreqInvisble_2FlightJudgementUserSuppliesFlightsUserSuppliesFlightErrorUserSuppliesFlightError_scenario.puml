@@ -5,11 +5,11 @@ title
 
 end title
 participant Pilot
-url of Pilot is [[http://mbeddr.com/r:976b3005-35fa-433e-9a5d-a7c08f8308cf##__##6898387700925062299]]
+url of Pilot is [[http://mbeddr.com/r:41c5430c-b0e5-40b7-a0b1-1a7041a2e9aa##__##6898387700925062299]]
 participant UI
-url of UI is [[http://mbeddr.com/r:976b3005-35fa-433e-9a5d-a7c08f8308cf##__##6898387700925260474]]
+url of UI is [[http://mbeddr.com/r:41c5430c-b0e5-40b7-a0b1-1a7041a2e9aa##__##6898387700925260474]]
 activate Pilot
-Pilot -> UI : submitFlight(exampleFlight) [[http://mbeddr.com/r:976b3005-35fa-433e-9a5d-a7c08f8308cf##__##1942554214112319820]]
+Pilot -> UI : submitFlight(exampleFlight) [[http://mbeddr.com/r:41c5430c-b0e5-40b7-a0b1-1a7041a2e9aa##__##1942554214112319820]]
 activate UI
 note over UI #FFFFFF
   - maybe the database is full
