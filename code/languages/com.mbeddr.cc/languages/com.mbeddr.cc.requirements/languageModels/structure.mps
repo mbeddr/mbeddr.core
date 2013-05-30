@@ -287,6 +287,11 @@
       <property name="name" nameId="tpck.1169194664001" value="RequirementStatusAccepted" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="882101644643192133" resolveInfo="RequirementStatus" />
     </node>
+    <node type="tpce.EnumerationDataTypeDeclaration" typeId="tpce.1082978164219" id="920436694379176417">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="tags" />
+      <property name="name" nameId="tpck.1169194664001" value="EffortConfidence" />
+      <link role="memberDataType" roleId="tpce.1083171729157" targetNodeId="tpck.1082983657062" resolveInfo="integer" />
+    </node>
   </roots>
   <root id="8745401669462952101">
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="8375407818529829156">
@@ -827,20 +832,20 @@
   </root>
   <root id="882101644642944256">
     <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="882101644642944257">
-      <property name="value" nameId="tpce.1105725733873" value="ee" />
+      <property name="value" nameId="tpce.1105725733873" value="effort" />
       <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473891462" resolveInfo="alias" />
     </node>
     <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="882101644643145938">
-      <property name="value" nameId="tpce.1105725733873" value="estimated effort (min..max)" />
+      <property name="value" nameId="tpce.1105725733873" value="estimated effort" />
       <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473914776" resolveInfo="shortDescription" />
     </node>
     <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="882101644642944295">
-      <property name="name" nameId="tpck.1169194664001" value="min" />
+      <property name="name" nameId="tpck.1169194664001" value="effort" />
       <link role="dataType" roleId="tpce.1082985295845" targetNodeId="tpck.1082983657062" resolveInfo="integer" />
     </node>
-    <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="882101644642944296">
-      <property name="name" nameId="tpck.1169194664001" value="max" />
-      <link role="dataType" roleId="tpce.1082985295845" targetNodeId="tpck.1082983657062" resolveInfo="integer" />
+    <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="920436694379176432">
+      <property name="name" nameId="tpck.1169194664001" value="confidence" />
+      <link role="dataType" roleId="tpce.1082985295845" targetNodeId="920436694379176417" resolveInfo="EffortConfidence" />
     </node>
   </root>
   <root id="882101644642998760">
@@ -898,6 +903,24 @@
     <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="882101644643279451">
       <property name="value" nameId="tpce.1105725733873" value="accepted by customer" />
       <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473914776" resolveInfo="shortDescription" />
+    </node>
+  </root>
+  <root id="920436694379176417">
+    <node role="member" roleId="tpce.1083172003582" type="tpce.EnumerationMemberDeclaration" typeId="tpce.1083171877298" id="920436694379176421">
+      <property name="externalValue" nameId="tpce.1083923523172" value="-" />
+      <property name="internalValue" nameId="tpce.1083923523171" value="0" />
+    </node>
+    <node role="member" roleId="tpce.1083172003582" type="tpce.EnumerationMemberDeclaration" typeId="tpce.1083171877298" id="920436694379176418">
+      <property name="internalValue" nameId="tpce.1083923523171" value="1" />
+      <property name="externalValue" nameId="tpce.1083923523172" value="Low" />
+    </node>
+    <node role="member" roleId="tpce.1083172003582" type="tpce.EnumerationMemberDeclaration" typeId="tpce.1083171877298" id="920436694379176419">
+      <property name="externalValue" nameId="tpce.1083923523172" value="Med" />
+      <property name="internalValue" nameId="tpce.1083923523171" value="2" />
+    </node>
+    <node role="member" roleId="tpce.1083172003582" type="tpce.EnumerationMemberDeclaration" typeId="tpce.1083171877298" id="920436694379176420">
+      <property name="externalValue" nameId="tpce.1083923523172" value="High" />
+      <property name="internalValue" nameId="tpce.1083923523171" value="3" />
     </node>
   </root>
 </model>
