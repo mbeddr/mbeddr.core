@@ -1,0 +1,34 @@
+@startuml
+title
+<u>Requirement</u> UseCases.FlightJudgement.FlightIsInterpolated.Interpolation
+<u>Scenario</u> Interpolation
+
+end title
+participant UI
+url of UI is [[http://mbeddr.com/r:976b3005-35fa-433e-9a5d-a7c08f8308cf##__##6898387700925260474]]
+participant DataStore
+url of DataStore is [[http://mbeddr.com/r:976b3005-35fa-433e-9a5d-a7c08f8308cf##__##6898387700925260483]]
+participant Interpolator
+url of Interpolator is [[http://mbeddr.com/r:976b3005-35fa-433e-9a5d-a7c08f8308cf##__##8119642625901795400]]
+participant Judger
+url of Judger is [[http://mbeddr.com/r:976b3005-35fa-433e-9a5d-a7c08f8308cf##__##8119642625901800289]]
+activate UI
+UI -> DataStore : getAFlight [[http://mbeddr.com/r:976b3005-35fa-433e-9a5d-a7c08f8308cf##__##8983161156585760478]]
+activate DataStore
+UI <-- DataStore:f
+deactivate DataStore
+UI -> DataStore : getAFlight [[http://mbeddr.com/r:976b3005-35fa-433e-9a5d-a7c08f8308cf##__##9159582801230978115]]
+activate DataStore
+UI <-- DataStore:f2
+deactivate DataStore
+UI -> Interpolator : process(f2) [[http://mbeddr.com/r:976b3005-35fa-433e-9a5d-a7c08f8308cf##__##8983161156585760486]]
+activate Interpolator
+UI <-- Interpolator:ok
+deactivate Interpolator
+loop over all the trackpoints in f
+UI -> Judger : judge(t) [[http://mbeddr.com/r:976b3005-35fa-433e-9a5d-a7c08f8308cf##__##8983161156585762366]]
+activate Judger
+deactivate Judger
+end loop 
+deactivate UI
+@enduml

@@ -10,7 +10,7 @@
   <devkit namespace="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
   <devkit namespace="54c79f9f-f3ba-4167-91f1-eb4e98a9c47c(com.mbeddr.documentation)" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
-  <import index="75wo" modelUID="r:eaa205a4-f15c-47d3-99e2-e648881b5997(com.mbeddr.cc.requirements.structure)" version="7" implicit="yes" />
+  <import index="75wo" modelUID="r:eaa205a4-f15c-47d3-99e2-e648881b5997(com.mbeddr.cc.requirements.structure)" version="11" implicit="yes" />
   <import index="4l29" modelUID="r:9f885776-26d3-48f5-a714-b3a8fa61c18a(com.mbeddr.cc.requirements.scenarios.structure)" version="6" implicit="yes" />
   <import index="3vkx" modelUID="r:1c91fcc2-cf14-47f5-a4d4-3b424626f0d4(com.mbeddr.cc.requirements.c.structure)" version="4" implicit="yes" />
   <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="23" implicit="yes" />
@@ -48,10 +48,13 @@
       <property name="title" nameId="2c95.126932837435324910" value="Requirements for Flight Judgement" />
     </node>
     <node type="51wr.BuildConfiguration" typeId="51wr.7717755763392524104" id="5785245534400491126" />
+    <node type="vs0r.AssessmentContainer" typeId="vs0r.865293814733114043" id="3815661793603772590">
+      <property name="name" nameId="tpck.1169194664001" value="Assessments" />
+    </node>
   </roots>
   <root id="1433966787984154171">
     <node role="requirements" roleId="75wo.8745401669462963171" type="75wo.Requirement" typeId="75wo.8745401669462952101" id="1433966787984154172">
-      <property name="priority" nameId="75wo.3314758227758879688" value="0" />
+      <property name="priority" value="0" />
       <property name="open" value="false" />
       <property name="name" nameId="tpck.1169194664001" value="PointsForTakeoff" />
       <property name="summmary" nameId="75wo.3402431285977818823" value="Once a flight lifts off, you get 100 points" />
@@ -78,7 +81,7 @@
       </node>
     </node>
     <node role="requirements" roleId="75wo.8745401669462963171" type="75wo.Requirement" typeId="75wo.8745401669462952101" id="7451725615401720594">
-      <property name="priority" nameId="75wo.3314758227758879688" value="0" />
+      <property name="priority" value="0" />
       <property name="open" value="false" />
       <property name="name" nameId="tpck.1169194664001" value="PointsFactor" />
       <property name="summmary" nameId="75wo.3402431285977818823" value="The factor of points" />
@@ -102,7 +105,7 @@
       </node>
     </node>
     <node role="requirements" roleId="75wo.8745401669462963171" type="75wo.Requirement" typeId="75wo.8745401669462952101" id="1433966787984154174">
-      <property name="priority" nameId="75wo.3314758227758879688" value="0" />
+      <property name="priority" value="0" />
       <property name="open" value="false" />
       <property name="name" nameId="tpck.1169194664001" value="InFlightPoints" />
       <property name="summmary" nameId="75wo.3402431285977818823" value="Points you get for each trackpoint" />
@@ -253,7 +256,7 @@
       </node>
       <node role="kind" roleId="75wo.8921256082857728256" type="75wo.FunctionalRequirementKind" typeId="75wo.8921256082857728250" id="1433966787984154175" />
       <node role="details" roleId="75wo.8745401669462962629" type="75wo.Requirement" typeId="75wo.8745401669462952101" id="1433966787984154176">
-        <property name="priority" nameId="75wo.3314758227758879688" value="0" />
+        <property name="priority" value="0" />
         <property name="open" value="false" />
         <property name="name" nameId="tpck.1169194664001" value="FasterThan100" />
         <property name="summmary" nameId="75wo.3402431285977818823" value="For each trackpoint where you go more than 100 mps, you get 10 points" />
@@ -270,7 +273,7 @@
         </node>
       </node>
       <node role="details" roleId="75wo.8745401669462962629" type="75wo.Requirement" typeId="75wo.8745401669462952101" id="1433966787984154178">
-        <property name="priority" nameId="75wo.3314758227758879688" value="0" />
+        <property name="priority" value="0" />
         <property name="open" value="false" />
         <property name="name" nameId="tpck.1169194664001" value="FasterThan200" />
         <property name="summmary" nameId="75wo.3402431285977818823" value="For each trackpoint where you go more than 200 mps, you get 20 points" />
@@ -301,7 +304,7 @@
       </node>
     </node>
     <node role="requirements" roleId="75wo.8745401669462963171" type="75wo.Requirement" typeId="75wo.8745401669462952101" id="1433966787984154180">
-      <property name="priority" nameId="75wo.3314758227758879688" value="0" />
+      <property name="priority" value="0" />
       <property name="open" value="false" />
       <property name="name" nameId="tpck.1169194664001" value="Landing" />
       <property name="summmary" nameId="75wo.3402431285977818823" value="Stuff Relating to Landing" />
@@ -313,7 +316,7 @@
       </node>
       <node role="kind" roleId="75wo.8921256082857728256" type="75wo.FunctionalRequirementKind" typeId="75wo.8921256082857728250" id="1433966787984154181" />
       <node role="details" roleId="75wo.8745401669462962629" type="75wo.Requirement" typeId="75wo.8745401669462952101" id="1433966787984154182">
-        <property name="priority" nameId="75wo.3314758227758879688" value="0" />
+        <property name="priority" value="0" />
         <property name="open" value="false" />
         <property name="name" nameId="tpck.1169194664001" value="ShortLandingRoll" />
         <property name="summmary" nameId="75wo.3402431285977818823" value="You should land as short as possible" />
@@ -330,7 +333,7 @@
         </node>
       </node>
       <node role="details" roleId="75wo.8745401669462962629" type="75wo.Requirement" typeId="75wo.8745401669462952101" id="1433966787984154184">
-        <property name="priority" nameId="75wo.3314758227758879688" value="0" />
+        <property name="priority" value="0" />
         <property name="open" value="true" />
         <property name="name" nameId="tpck.1169194664001" value="FullStop" />
         <property name="summmary" nameId="75wo.3402431285977818823" value="Once you land successfully, you get another 100 points." />
@@ -371,7 +374,7 @@
   </root>
   <root id="8119642625901794439">
     <node role="requirements" roleId="75wo.8745401669462963171" type="75wo.Requirement" typeId="75wo.8745401669462952101" id="8119642625901795403">
-      <property name="priority" nameId="75wo.3314758227758879688" value="0" />
+      <property name="priority" value="0" />
       <property name="open" value="false" />
       <property name="name" nameId="tpck.1169194664001" value="FlightData" />
       <property name="summmary" nameId="75wo.3402431285977818823" value="Provides flight data" />
@@ -403,7 +406,7 @@
       </node>
     </node>
     <node role="requirements" roleId="75wo.8745401669462963171" type="75wo.Requirement" typeId="75wo.8745401669462952101" id="6446320527598544106">
-      <property name="priority" nameId="75wo.3314758227758879688" value="0" />
+      <property name="priority" value="0" />
       <property name="open" value="false" />
       <property name="name" nameId="tpck.1169194664001" value="Nuller" />
       <property name="summmary" nameId="75wo.3402431285977818823" value="nullifies the altitute" />
@@ -423,7 +426,7 @@
       </node>
     </node>
     <node role="requirements" roleId="75wo.8745401669462963171" type="75wo.Requirement" typeId="75wo.8745401669462952101" id="8119642625901795398">
-      <property name="priority" nameId="75wo.3314758227758879688" value="0" />
+      <property name="priority" value="0" />
       <property name="open" value="false" />
       <property name="name" nameId="tpck.1169194664001" value="Interpolator" />
       <property name="summmary" nameId="75wo.3402431285977818823" value="averages over the flights" />
@@ -450,7 +453,7 @@
       </node>
     </node>
     <node role="requirements" roleId="75wo.8745401669462963171" type="75wo.Requirement" typeId="75wo.8745401669462952101" id="8119642625901800280">
-      <property name="priority" nameId="75wo.3314758227758879688" value="0" />
+      <property name="priority" value="0" />
       <property name="open" value="false" />
       <property name="name" nameId="tpck.1169194664001" value="InMemoryStore" />
       <property name="summmary" nameId="75wo.3402431285977818823" value="stores flights in memory" />
@@ -487,7 +490,7 @@
       </node>
     </node>
     <node role="requirements" roleId="75wo.8745401669462963171" type="75wo.Requirement" typeId="75wo.8745401669462952101" id="8119642625901800298">
-      <property name="priority" nameId="75wo.3314758227758879688" value="0" />
+      <property name="priority" value="0" />
       <property name="open" value="false" />
       <property name="name" nameId="tpck.1169194664001" value="Driver" />
       <property name="summmary" nameId="75wo.3402431285977818823" value="Coordinates the overall program functionality" />
@@ -516,7 +519,7 @@
       </node>
     </node>
     <node role="requirements" roleId="75wo.8745401669462963171" type="75wo.Requirement" typeId="75wo.8745401669462952101" id="8119642625901800287">
-      <property name="priority" nameId="75wo.3314758227758879688" value="0" />
+      <property name="priority" value="0" />
       <property name="open" value="false" />
       <property name="name" nameId="tpck.1169194664001" value="Judger" />
       <property name="summmary" nameId="75wo.3402431285977818823" value="Judges a flight" />
@@ -544,17 +547,17 @@
   </root>
   <root id="6898387700925052063">
     <node role="requirements" roleId="75wo.8745401669462963171" type="75wo.Requirement" typeId="75wo.8745401669462952101" id="3126418051239998839">
-      <property name="priority" nameId="75wo.3314758227758879688" value="0" />
+      <property name="priority" value="0" />
       <property name="open" value="false" />
       <property name="name" nameId="tpck.1169194664001" value="FlightJudgement" />
       <property name="summmary" nameId="75wo.3402431285977818823" value="Describes the flight judgement rules" />
       <node role="details" roleId="75wo.8745401669462962629" type="75wo.Requirement" typeId="75wo.8745401669462952101" id="6898387700925052066">
-        <property name="priority" nameId="75wo.3314758227758879688" value="0" />
+        <property name="priority" value="0" />
         <property name="open" value="false" />
         <property name="name" nameId="tpck.1169194664001" value="UserSuppliesFlights" />
         <property name="summmary" nameId="75wo.3402431285977818823" value="An end user supplies a flight to the UI" />
         <node role="details" roleId="75wo.8745401669462962629" type="75wo.Requirement" typeId="75wo.8745401669462952101" id="1942554214112319815">
-          <property name="priority" nameId="75wo.3314758227758879688" value="0" />
+          <property name="priority" value="0" />
           <property name="open" value="false" />
           <property name="name" nameId="tpck.1169194664001" value="UserSuppliesFlightError" />
           <property name="summmary" nameId="75wo.3402431285977818823" value="An erro occurs during submission" />
@@ -609,7 +612,7 @@
           </node>
         </node>
         <node role="details" roleId="75wo.8745401669462962629" type="75wo.Requirement" typeId="75wo.8745401669462952101" id="6898387700925291928">
-          <property name="priority" nameId="75wo.3314758227758879688" value="0" />
+          <property name="priority" value="0" />
           <property name="open" value="false" />
           <property name="name" nameId="tpck.1169194664001" value="UserSuppliesFlightsSuccess" />
           <property name="summmary" nameId="75wo.3402431285977818823" value="Successful submission of Flight" />
@@ -666,12 +669,12 @@
         </node>
       </node>
       <node role="details" roleId="75wo.8745401669462962629" type="75wo.Requirement" typeId="75wo.8745401669462952101" id="8983161156585739652">
-        <property name="priority" nameId="75wo.3314758227758879688" value="0" />
+        <property name="priority" value="0" />
         <property name="open" value="false" />
         <property name="name" nameId="tpck.1169194664001" value="FlightIsInterpolated" />
         <property name="summmary" nameId="75wo.3402431285977818823" value="Flight is Interpolated and Evaluated" />
         <node role="details" roleId="75wo.8745401669462962629" type="75wo.Requirement" typeId="75wo.8745401669462952101" id="8983161156585742570">
-          <property name="priority" nameId="75wo.3314758227758879688" value="0" />
+          <property name="priority" value="0" />
           <property name="open" value="false" />
           <property name="summmary" nameId="75wo.3402431285977818823" value="Describes the Interpolation" />
           <property name="name" nameId="tpck.1169194664001" value="Interpolation" />
@@ -774,7 +777,7 @@
         </node>
       </node>
       <node role="details" roleId="75wo.8745401669462962629" type="75wo.Requirement" typeId="75wo.8745401669462952101" id="1942554214112320148">
-        <property name="priority" nameId="75wo.3314758227758879688" value="0" />
+        <property name="priority" value="0" />
         <property name="open" value="false" />
         <property name="name" nameId="tpck.1169194664001" value="PilotCollectsFlightData" />
         <property name="summmary" nameId="75wo.3402431285977818823" value="A pilot flies the airplane and collects flight data" />
@@ -801,7 +804,7 @@
         </node>
       </node>
       <node role="details" roleId="75wo.8745401669462962629" type="75wo.Requirement" typeId="75wo.8745401669462952101" id="6898387700925260480">
-        <property name="priority" nameId="75wo.3314758227758879688" value="0" />
+        <property name="priority" value="0" />
         <property name="open" value="false" />
         <property name="name" nameId="tpck.1169194664001" value="DataStore" />
         <property name="summmary" nameId="75wo.3402431285977818823" value="Stores the flight data" />
@@ -839,7 +842,7 @@
         </node>
       </node>
       <node role="details" roleId="75wo.8745401669462962629" type="75wo.Requirement" typeId="75wo.8745401669462952101" id="6898387700925062305">
-        <property name="priority" nameId="75wo.3314758227758879688" value="0" />
+        <property name="priority" value="0" />
         <property name="open" value="false" />
         <property name="name" nameId="tpck.1169194664001" value="UserInterface" />
         <property name="summmary" nameId="75wo.3402431285977818823" value="The UI with which the end user interacts" />
@@ -875,7 +878,7 @@
         </node>
       </node>
       <node role="details" roleId="75wo.8745401669462962629" type="75wo.Requirement" typeId="75wo.8745401669462952101" id="6898387700925052068">
-        <property name="priority" nameId="75wo.3314758227758879688" value="0" />
+        <property name="priority" value="0" />
         <property name="open" value="false" />
         <property name="name" nameId="tpck.1169194664001" value="Pilot" />
         <property name="summmary" nameId="75wo.3402431285977818823" value="The person who flies a plane and collects flight data" />
@@ -908,7 +911,7 @@
         </node>
       </node>
       <node role="details" roleId="75wo.8745401669462962629" type="75wo.Requirement" typeId="75wo.8745401669462952101" id="3126418051239998853">
-        <property name="priority" nameId="75wo.3314758227758879688" value="0" />
+        <property name="priority" value="0" />
         <property name="open" value="false" />
         <property name="name" nameId="tpck.1169194664001" value="Aircraft" />
         <property name="summmary" nameId="75wo.3402431285977818823" value="The aircraft a pilot flies in" />
@@ -1016,6 +1019,313 @@
     </node>
     <node role="configurationItems" roleId="vs0r.4459718605982007338" type="555r.RequirementsC2DocConfigItem" typeId="555r.5785245534400582270" id="5785245534400582588" />
     <node role="configurationItems" roleId="vs0r.4459718605982007338" type="bfq5.Scenarios2DocConfigItem" typeId="bfq5.5785245534400582270" id="5785245534401242437" />
+  </root>
+  <root id="3815661793603772590">
+    <node role="assessments" roleId="vs0r.865293814733114045" type="vs0r.Assessment" typeId="vs0r.865293814733114044" id="3815661793603772591">
+      <property name="name" nameId="tpck.1169194664001" value="NoEffort" />
+      <property name="mustBeOk" nameId="vs0r.3815661793603523593" value="true" />
+      <node role="results" roleId="vs0r.865293814733118687" type="vs0r.AssessmentResultEntry" typeId="vs0r.865293814733118686" id="3815661793603772714">
+        <property name="status" nameId="vs0r.8389796016067541249" value="0" />
+        <property name="lastFound" nameId="vs0r.6619757161337247129" value="1369943756968" />
+        <node role="comment" roleId="vs0r.6619757161337461931" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="3815661793603772715">
+          <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="3815661793603772716">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3815661793603772717" />
+          </node>
+        </node>
+        <node role="result" roleId="vs0r.865293814733133843" type="75wo.NoEffortAssResult" typeId="75wo.865293814733182278" id="3815661793603772718">
+          <link role="requirement" roleId="75wo.865293814733182279" targetNodeId="3126418051239998853" resolveInfo="Aircraft" />
+        </node>
+      </node>
+      <node role="results" roleId="vs0r.865293814733118687" type="vs0r.AssessmentResultEntry" typeId="vs0r.865293814733118686" id="3815661793603772709">
+        <property name="status" nameId="vs0r.8389796016067541249" value="0" />
+        <property name="lastFound" nameId="vs0r.6619757161337247129" value="1369943756968" />
+        <node role="comment" roleId="vs0r.6619757161337461931" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="3815661793603772710">
+          <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="3815661793603772711">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3815661793603772712" />
+          </node>
+        </node>
+        <node role="result" roleId="vs0r.865293814733133843" type="75wo.NoEffortAssResult" typeId="75wo.865293814733182278" id="3815661793603772713">
+          <link role="requirement" roleId="75wo.865293814733182279" targetNodeId="6898387700925052068" resolveInfo="Pilot" />
+        </node>
+      </node>
+      <node role="results" roleId="vs0r.865293814733118687" type="vs0r.AssessmentResultEntry" typeId="vs0r.865293814733118686" id="3815661793603772704">
+        <property name="status" nameId="vs0r.8389796016067541249" value="0" />
+        <property name="lastFound" nameId="vs0r.6619757161337247129" value="1369943756968" />
+        <node role="comment" roleId="vs0r.6619757161337461931" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="3815661793603772705">
+          <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="3815661793603772706">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3815661793603772707" />
+          </node>
+        </node>
+        <node role="result" roleId="vs0r.865293814733133843" type="75wo.NoEffortAssResult" typeId="75wo.865293814733182278" id="3815661793603772708">
+          <link role="requirement" roleId="75wo.865293814733182279" targetNodeId="6898387700925062305" resolveInfo="UserInterface" />
+        </node>
+      </node>
+      <node role="results" roleId="vs0r.865293814733118687" type="vs0r.AssessmentResultEntry" typeId="vs0r.865293814733118686" id="3815661793603772699">
+        <property name="status" nameId="vs0r.8389796016067541249" value="0" />
+        <property name="lastFound" nameId="vs0r.6619757161337247129" value="1369943756968" />
+        <node role="comment" roleId="vs0r.6619757161337461931" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="3815661793603772700">
+          <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="3815661793603772701">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3815661793603772702" />
+          </node>
+        </node>
+        <node role="result" roleId="vs0r.865293814733133843" type="75wo.NoEffortAssResult" typeId="75wo.865293814733182278" id="3815661793603772703">
+          <link role="requirement" roleId="75wo.865293814733182279" targetNodeId="6898387700925260480" resolveInfo="DataStore" />
+        </node>
+      </node>
+      <node role="results" roleId="vs0r.865293814733118687" type="vs0r.AssessmentResultEntry" typeId="vs0r.865293814733118686" id="3815661793603772694">
+        <property name="status" nameId="vs0r.8389796016067541249" value="0" />
+        <property name="lastFound" nameId="vs0r.6619757161337247129" value="1369943756968" />
+        <node role="comment" roleId="vs0r.6619757161337461931" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="3815661793603772695">
+          <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="3815661793603772696">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3815661793603772697" />
+          </node>
+        </node>
+        <node role="result" roleId="vs0r.865293814733133843" type="75wo.NoEffortAssResult" typeId="75wo.865293814733182278" id="3815661793603772698">
+          <link role="requirement" roleId="75wo.865293814733182279" targetNodeId="1942554214112320148" resolveInfo="PilotCollectsFlightData" />
+        </node>
+      </node>
+      <node role="results" roleId="vs0r.865293814733118687" type="vs0r.AssessmentResultEntry" typeId="vs0r.865293814733118686" id="3815661793603772689">
+        <property name="status" nameId="vs0r.8389796016067541249" value="0" />
+        <property name="lastFound" nameId="vs0r.6619757161337247129" value="1369943756968" />
+        <node role="comment" roleId="vs0r.6619757161337461931" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="3815661793603772690">
+          <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="3815661793603772691">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3815661793603772692" />
+          </node>
+        </node>
+        <node role="result" roleId="vs0r.865293814733133843" type="75wo.NoEffortAssResult" typeId="75wo.865293814733182278" id="3815661793603772693">
+          <link role="requirement" roleId="75wo.865293814733182279" targetNodeId="8983161156585742570" resolveInfo="Interpolation" />
+        </node>
+      </node>
+      <node role="results" roleId="vs0r.865293814733118687" type="vs0r.AssessmentResultEntry" typeId="vs0r.865293814733118686" id="3815661793603772684">
+        <property name="status" nameId="vs0r.8389796016067541249" value="0" />
+        <property name="lastFound" nameId="vs0r.6619757161337247129" value="1369943756968" />
+        <node role="comment" roleId="vs0r.6619757161337461931" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="3815661793603772685">
+          <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="3815661793603772686">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3815661793603772687" />
+          </node>
+        </node>
+        <node role="result" roleId="vs0r.865293814733133843" type="75wo.NoEffortAssResult" typeId="75wo.865293814733182278" id="3815661793603772688">
+          <link role="requirement" roleId="75wo.865293814733182279" targetNodeId="8983161156585739652" resolveInfo="FlightIsInterpolated" />
+        </node>
+      </node>
+      <node role="results" roleId="vs0r.865293814733118687" type="vs0r.AssessmentResultEntry" typeId="vs0r.865293814733118686" id="3815661793603772679">
+        <property name="status" nameId="vs0r.8389796016067541249" value="0" />
+        <property name="lastFound" nameId="vs0r.6619757161337247129" value="1369943756968" />
+        <node role="comment" roleId="vs0r.6619757161337461931" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="3815661793603772680">
+          <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="3815661793603772681">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3815661793603772682" />
+          </node>
+        </node>
+        <node role="result" roleId="vs0r.865293814733133843" type="75wo.NoEffortAssResult" typeId="75wo.865293814733182278" id="3815661793603772683">
+          <link role="requirement" roleId="75wo.865293814733182279" targetNodeId="6898387700925291928" resolveInfo="UserSuppliesFlightsSuccess" />
+        </node>
+      </node>
+      <node role="results" roleId="vs0r.865293814733118687" type="vs0r.AssessmentResultEntry" typeId="vs0r.865293814733118686" id="3815661793603772674">
+        <property name="status" nameId="vs0r.8389796016067541249" value="0" />
+        <property name="lastFound" nameId="vs0r.6619757161337247129" value="1369943756968" />
+        <node role="comment" roleId="vs0r.6619757161337461931" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="3815661793603772675">
+          <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="3815661793603772676">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3815661793603772677" />
+          </node>
+        </node>
+        <node role="result" roleId="vs0r.865293814733133843" type="75wo.NoEffortAssResult" typeId="75wo.865293814733182278" id="3815661793603772678">
+          <link role="requirement" roleId="75wo.865293814733182279" targetNodeId="1942554214112319815" resolveInfo="UserSuppliesFlightError" />
+        </node>
+      </node>
+      <node role="results" roleId="vs0r.865293814733118687" type="vs0r.AssessmentResultEntry" typeId="vs0r.865293814733118686" id="3815661793603772669">
+        <property name="status" nameId="vs0r.8389796016067541249" value="0" />
+        <property name="lastFound" nameId="vs0r.6619757161337247129" value="1369943756968" />
+        <node role="comment" roleId="vs0r.6619757161337461931" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="3815661793603772670">
+          <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="3815661793603772671">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3815661793603772672" />
+          </node>
+        </node>
+        <node role="result" roleId="vs0r.865293814733133843" type="75wo.NoEffortAssResult" typeId="75wo.865293814733182278" id="3815661793603772673">
+          <link role="requirement" roleId="75wo.865293814733182279" targetNodeId="6898387700925052066" resolveInfo="UserSuppliesFlights" />
+        </node>
+      </node>
+      <node role="results" roleId="vs0r.865293814733118687" type="vs0r.AssessmentResultEntry" typeId="vs0r.865293814733118686" id="3815661793603772664">
+        <property name="status" nameId="vs0r.8389796016067541249" value="0" />
+        <property name="lastFound" nameId="vs0r.6619757161337247129" value="1369943756968" />
+        <node role="comment" roleId="vs0r.6619757161337461931" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="3815661793603772665">
+          <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="3815661793603772666">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3815661793603772667" />
+          </node>
+        </node>
+        <node role="result" roleId="vs0r.865293814733133843" type="75wo.NoEffortAssResult" typeId="75wo.865293814733182278" id="3815661793603772668">
+          <link role="requirement" roleId="75wo.865293814733182279" targetNodeId="3126418051239998839" resolveInfo="FlightJudgement" />
+        </node>
+      </node>
+      <node role="results" roleId="vs0r.865293814733118687" type="vs0r.AssessmentResultEntry" typeId="vs0r.865293814733118686" id="3815661793603772659">
+        <property name="status" nameId="vs0r.8389796016067541249" value="0" />
+        <property name="lastFound" nameId="vs0r.6619757161337247129" value="1369943756967" />
+        <node role="comment" roleId="vs0r.6619757161337461931" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="3815661793603772660">
+          <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="3815661793603772661">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3815661793603772662" />
+          </node>
+        </node>
+        <node role="result" roleId="vs0r.865293814733133843" type="75wo.NoEffortAssResult" typeId="75wo.865293814733182278" id="3815661793603772663">
+          <link role="requirement" roleId="75wo.865293814733182279" targetNodeId="8119642625901800287" resolveInfo="Judger" />
+        </node>
+      </node>
+      <node role="results" roleId="vs0r.865293814733118687" type="vs0r.AssessmentResultEntry" typeId="vs0r.865293814733118686" id="3815661793603772654">
+        <property name="status" nameId="vs0r.8389796016067541249" value="0" />
+        <property name="lastFound" nameId="vs0r.6619757161337247129" value="1369943756967" />
+        <node role="comment" roleId="vs0r.6619757161337461931" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="3815661793603772655">
+          <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="3815661793603772656">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3815661793603772657" />
+          </node>
+        </node>
+        <node role="result" roleId="vs0r.865293814733133843" type="75wo.NoEffortAssResult" typeId="75wo.865293814733182278" id="3815661793603772658">
+          <link role="requirement" roleId="75wo.865293814733182279" targetNodeId="8119642625901800298" resolveInfo="Driver" />
+        </node>
+      </node>
+      <node role="results" roleId="vs0r.865293814733118687" type="vs0r.AssessmentResultEntry" typeId="vs0r.865293814733118686" id="3815661793603772649">
+        <property name="status" nameId="vs0r.8389796016067541249" value="0" />
+        <property name="lastFound" nameId="vs0r.6619757161337247129" value="1369943756967" />
+        <node role="comment" roleId="vs0r.6619757161337461931" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="3815661793603772650">
+          <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="3815661793603772651">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3815661793603772652" />
+          </node>
+        </node>
+        <node role="result" roleId="vs0r.865293814733133843" type="75wo.NoEffortAssResult" typeId="75wo.865293814733182278" id="3815661793603772653">
+          <link role="requirement" roleId="75wo.865293814733182279" targetNodeId="8119642625901800280" resolveInfo="InMemoryStore" />
+        </node>
+      </node>
+      <node role="results" roleId="vs0r.865293814733118687" type="vs0r.AssessmentResultEntry" typeId="vs0r.865293814733118686" id="3815661793603772644">
+        <property name="status" nameId="vs0r.8389796016067541249" value="0" />
+        <property name="lastFound" nameId="vs0r.6619757161337247129" value="1369943756967" />
+        <node role="comment" roleId="vs0r.6619757161337461931" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="3815661793603772645">
+          <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="3815661793603772646">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3815661793603772647" />
+          </node>
+        </node>
+        <node role="result" roleId="vs0r.865293814733133843" type="75wo.NoEffortAssResult" typeId="75wo.865293814733182278" id="3815661793603772648">
+          <link role="requirement" roleId="75wo.865293814733182279" targetNodeId="8119642625901795398" resolveInfo="Interpolator" />
+        </node>
+      </node>
+      <node role="results" roleId="vs0r.865293814733118687" type="vs0r.AssessmentResultEntry" typeId="vs0r.865293814733118686" id="3815661793603772639">
+        <property name="status" nameId="vs0r.8389796016067541249" value="0" />
+        <property name="lastFound" nameId="vs0r.6619757161337247129" value="1369943756967" />
+        <node role="comment" roleId="vs0r.6619757161337461931" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="3815661793603772640">
+          <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="3815661793603772641">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3815661793603772642" />
+          </node>
+        </node>
+        <node role="result" roleId="vs0r.865293814733133843" type="75wo.NoEffortAssResult" typeId="75wo.865293814733182278" id="3815661793603772643">
+          <link role="requirement" roleId="75wo.865293814733182279" targetNodeId="6446320527598544106" resolveInfo="Nuller" />
+        </node>
+      </node>
+      <node role="results" roleId="vs0r.865293814733118687" type="vs0r.AssessmentResultEntry" typeId="vs0r.865293814733118686" id="3815661793603772634">
+        <property name="status" nameId="vs0r.8389796016067541249" value="0" />
+        <property name="lastFound" nameId="vs0r.6619757161337247129" value="1369943756967" />
+        <node role="comment" roleId="vs0r.6619757161337461931" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="3815661793603772635">
+          <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="3815661793603772636">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3815661793603772637" />
+          </node>
+        </node>
+        <node role="result" roleId="vs0r.865293814733133843" type="75wo.NoEffortAssResult" typeId="75wo.865293814733182278" id="3815661793603772638">
+          <link role="requirement" roleId="75wo.865293814733182279" targetNodeId="8119642625901795403" resolveInfo="FlightData" />
+        </node>
+      </node>
+      <node role="results" roleId="vs0r.865293814733118687" type="vs0r.AssessmentResultEntry" typeId="vs0r.865293814733118686" id="3815661793603772629">
+        <property name="status" nameId="vs0r.8389796016067541249" value="0" />
+        <property name="lastFound" nameId="vs0r.6619757161337247129" value="1369943756967" />
+        <node role="comment" roleId="vs0r.6619757161337461931" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="3815661793603772630">
+          <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="3815661793603772631">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3815661793603772632" />
+          </node>
+        </node>
+        <node role="result" roleId="vs0r.865293814733133843" type="75wo.NoEffortAssResult" typeId="75wo.865293814733182278" id="3815661793603772633">
+          <link role="requirement" roleId="75wo.865293814733182279" targetNodeId="1433966787984154184" resolveInfo="FullStop" />
+        </node>
+      </node>
+      <node role="results" roleId="vs0r.865293814733118687" type="vs0r.AssessmentResultEntry" typeId="vs0r.865293814733118686" id="3815661793603772624">
+        <property name="status" nameId="vs0r.8389796016067541249" value="0" />
+        <property name="lastFound" nameId="vs0r.6619757161337247129" value="1369943756967" />
+        <node role="comment" roleId="vs0r.6619757161337461931" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="3815661793603772625">
+          <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="3815661793603772626">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3815661793603772627" />
+          </node>
+        </node>
+        <node role="result" roleId="vs0r.865293814733133843" type="75wo.NoEffortAssResult" typeId="75wo.865293814733182278" id="3815661793603772628">
+          <link role="requirement" roleId="75wo.865293814733182279" targetNodeId="1433966787984154182" resolveInfo="ShortLandingRoll" />
+        </node>
+      </node>
+      <node role="results" roleId="vs0r.865293814733118687" type="vs0r.AssessmentResultEntry" typeId="vs0r.865293814733118686" id="3815661793603772619">
+        <property name="status" nameId="vs0r.8389796016067541249" value="0" />
+        <property name="lastFound" nameId="vs0r.6619757161337247129" value="1369943756967" />
+        <node role="comment" roleId="vs0r.6619757161337461931" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="3815661793603772620">
+          <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="3815661793603772621">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3815661793603772622" />
+          </node>
+        </node>
+        <node role="result" roleId="vs0r.865293814733133843" type="75wo.NoEffortAssResult" typeId="75wo.865293814733182278" id="3815661793603772623">
+          <link role="requirement" roleId="75wo.865293814733182279" targetNodeId="1433966787984154180" resolveInfo="Landing" />
+        </node>
+      </node>
+      <node role="results" roleId="vs0r.865293814733118687" type="vs0r.AssessmentResultEntry" typeId="vs0r.865293814733118686" id="3815661793603772614">
+        <property name="status" nameId="vs0r.8389796016067541249" value="0" />
+        <property name="lastFound" nameId="vs0r.6619757161337247129" value="1369943756967" />
+        <node role="comment" roleId="vs0r.6619757161337461931" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="3815661793603772615">
+          <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="3815661793603772616">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3815661793603772617" />
+          </node>
+        </node>
+        <node role="result" roleId="vs0r.865293814733133843" type="75wo.NoEffortAssResult" typeId="75wo.865293814733182278" id="3815661793603772618">
+          <link role="requirement" roleId="75wo.865293814733182279" targetNodeId="1433966787984154178" resolveInfo="FasterThan200" />
+        </node>
+      </node>
+      <node role="results" roleId="vs0r.865293814733118687" type="vs0r.AssessmentResultEntry" typeId="vs0r.865293814733118686" id="3815661793603772609">
+        <property name="status" nameId="vs0r.8389796016067541249" value="0" />
+        <property name="lastFound" nameId="vs0r.6619757161337247129" value="1369943756966" />
+        <node role="comment" roleId="vs0r.6619757161337461931" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="3815661793603772610">
+          <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="3815661793603772611">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3815661793603772612" />
+          </node>
+        </node>
+        <node role="result" roleId="vs0r.865293814733133843" type="75wo.NoEffortAssResult" typeId="75wo.865293814733182278" id="3815661793603772613">
+          <link role="requirement" roleId="75wo.865293814733182279" targetNodeId="1433966787984154176" resolveInfo="FasterThan100" />
+        </node>
+      </node>
+      <node role="results" roleId="vs0r.865293814733118687" type="vs0r.AssessmentResultEntry" typeId="vs0r.865293814733118686" id="3815661793603772604">
+        <property name="status" nameId="vs0r.8389796016067541249" value="0" />
+        <property name="lastFound" nameId="vs0r.6619757161337247129" value="1369943756966" />
+        <node role="comment" roleId="vs0r.6619757161337461931" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="3815661793603772605">
+          <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="3815661793603772606">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3815661793603772607" />
+          </node>
+        </node>
+        <node role="result" roleId="vs0r.865293814733133843" type="75wo.NoEffortAssResult" typeId="75wo.865293814733182278" id="3815661793603772608">
+          <link role="requirement" roleId="75wo.865293814733182279" targetNodeId="1433966787984154174" resolveInfo="InFlightPoints" />
+        </node>
+      </node>
+      <node role="results" roleId="vs0r.865293814733118687" type="vs0r.AssessmentResultEntry" typeId="vs0r.865293814733118686" id="3815661793603772599">
+        <property name="status" nameId="vs0r.8389796016067541249" value="0" />
+        <property name="lastFound" nameId="vs0r.6619757161337247129" value="1369943756966" />
+        <node role="comment" roleId="vs0r.6619757161337461931" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="3815661793603772600">
+          <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="3815661793603772601">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3815661793603772602" />
+          </node>
+        </node>
+        <node role="result" roleId="vs0r.865293814733133843" type="75wo.NoEffortAssResult" typeId="75wo.865293814733182278" id="3815661793603772603">
+          <link role="requirement" roleId="75wo.865293814733182279" targetNodeId="7451725615401720594" resolveInfo="PointsFactor" />
+        </node>
+      </node>
+      <node role="results" roleId="vs0r.865293814733118687" type="vs0r.AssessmentResultEntry" typeId="vs0r.865293814733118686" id="3815661793603772594">
+        <property name="status" nameId="vs0r.8389796016067541249" value="0" />
+        <property name="lastFound" nameId="vs0r.6619757161337247129" value="1369943756966" />
+        <node role="comment" roleId="vs0r.6619757161337461931" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="3815661793603772595">
+          <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="3815661793603772596">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3815661793603772597" />
+          </node>
+        </node>
+        <node role="result" roleId="vs0r.865293814733133843" type="75wo.NoEffortAssResult" typeId="75wo.865293814733182278" id="3815661793603772598">
+          <link role="requirement" roleId="75wo.865293814733182279" targetNodeId="1433966787984154172" resolveInfo="PointsForTakeoff" />
+        </node>
+      </node>
+      <node role="query" roleId="vs0r.865293814733115677" type="75wo.NoEffortAssQuery" typeId="75wo.865293814733131610" id="3815661793603772593" />
+    </node>
   </root>
 </model>
 

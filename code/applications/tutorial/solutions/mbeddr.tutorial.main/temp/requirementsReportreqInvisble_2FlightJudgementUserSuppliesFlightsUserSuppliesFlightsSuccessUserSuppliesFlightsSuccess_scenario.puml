@@ -1,0 +1,22 @@
+@startuml
+title
+<u>Requirement</u> UseCases.FlightJudgement.UserSuppliesFlights.UserSuppliesFlightsSuccess
+<u>Scenario</u> UserSuppliesFlightsSuccess
+
+end title
+participant Pilot
+url of Pilot is [[http://mbeddr.com/r:976b3005-35fa-433e-9a5d-a7c08f8308cf##__##6898387700925062299]]
+participant UI
+url of UI is [[http://mbeddr.com/r:976b3005-35fa-433e-9a5d-a7c08f8308cf##__##6898387700925260474]]
+participant DataStore
+url of DataStore is [[http://mbeddr.com/r:976b3005-35fa-433e-9a5d-a7c08f8308cf##__##6898387700925260483]]
+activate Pilot
+Pilot -> UI : submitFlight(exampleFlight) [[http://mbeddr.com/r:976b3005-35fa-433e-9a5d-a7c08f8308cf##__##6898387700925313667]]
+activate UI
+UI -> DataStore : store(exampleFlight) [[http://mbeddr.com/r:976b3005-35fa-433e-9a5d-a7c08f8308cf##__##6898387700925391604]]
+activate DataStore
+deactivate DataStore
+Pilot <-- UI:ok
+deactivate UI
+deactivate Pilot
+@enduml
