@@ -185,6 +185,14 @@
       <property name="virtualPackage" nameId="tpck.1193676396447" value="data" />
       <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="75wo.920436694379342507" resolveInfo="TextReqData" />
     </node>
+    <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="865293814733133822">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="assessment" />
+      <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="75wo.865293814733131610" resolveInfo="NoEffortAssQuery" />
+    </node>
+    <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="865293814733182280">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="assessment" />
+      <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="75wo.865293814733182278" resolveInfo="NoEffortAssResult" />
+    </node>
   </roots>
   <root id="8745401669462962631">
     <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="170293353486776495">
@@ -2452,6 +2460,22 @@
         <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="75wo.920436694379342509" />
       </node>
       <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Indent" typeId="tpc2.1237303669825" id="920436694379342514" />
+    </node>
+  </root>
+  <root id="865293814733133822">
+    <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="865293814733133825">
+      <property name="text" nameId="tpc2.1073389577007" value="requirements with no efforts" />
+    </node>
+  </root>
+  <root id="865293814733182280">
+    <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_RefCell" typeId="tpc2.1088013125922" id="865293814733182282">
+      <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="75wo.865293814733182279" />
+      <node role="editorComponent" roleId="tpc2.1088186146602" type="tpc2.InlineEditorComponent" typeId="tpc2.1088185857835" id="865293814733182283">
+        <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Property" typeId="tpc2.1073389658414" id="865293814733182285">
+          <property name="readOnly" nameId="tpc2.1140017977771" value="true" />
+          <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="tpck.1169194664001" resolveInfo="name" />
+        </node>
+      </node>
     </node>
   </root>
 </model>
