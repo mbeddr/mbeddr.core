@@ -238,11 +238,6 @@
       <property name="virtualPackage" nameId="tpck.1193676396447" value="tags" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
     </node>
-    <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="8983772170066710141">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="tags" />
-      <property name="name" nameId="tpck.1169194664001" value="RepresentAsStringTag" />
-      <link role="extends" roleId="tpce.1071489389519" targetNodeId="8983772170066710139" resolveInfo="RequirementsTag" />
-    </node>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="8983772170066800836">
       <property name="name" nameId="tpck.1169194664001" value="RequirementsClass" />
       <property name="virtualPackage" nameId="tpck.1193676396447" value="class" />
@@ -256,7 +251,7 @@
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="882101644642944256">
       <property name="virtualPackage" nameId="tpck.1193676396447" value="tags" />
       <property name="name" nameId="tpck.1169194664001" value="EstimatedEffortTag" />
-      <link role="extends" roleId="tpce.1071489389519" targetNodeId="8983772170066710141" resolveInfo="RepresentAsStringTag" />
+      <link role="extends" roleId="tpce.1071489389519" targetNodeId="8983772170066710139" resolveInfo="RequirementsTag" />
     </node>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="882101644642998760">
       <property name="virtualPackage" nameId="tpck.1193676396447" value="summary" />
@@ -266,7 +261,7 @@
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="882101644643192127">
       <property name="virtualPackage" nameId="tpck.1193676396447" value="tags" />
       <property name="name" nameId="tpck.1169194664001" value="StatusTag" />
-      <link role="extends" roleId="tpce.1071489389519" targetNodeId="8983772170066710141" resolveInfo="RepresentAsStringTag" />
+      <link role="extends" roleId="tpce.1071489389519" targetNodeId="8983772170066710139" resolveInfo="RequirementsTag" />
     </node>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="882101644643192133">
       <property name="virtualPackage" nameId="tpck.1193676396447" value="tags" />
@@ -843,11 +838,6 @@
   </root>
   <root id="8983772170066710139">
     <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.BooleanConceptProperty" typeId="tpce.1105725574259" id="8983772170066710140">
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473854053" resolveInfo="abstract" />
-    </node>
-  </root>
-  <root id="8983772170066710141">
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.BooleanConceptProperty" typeId="tpce.1105725574259" id="8983772170066723123">
       <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473854053" resolveInfo="abstract" />
     </node>
   </root>
