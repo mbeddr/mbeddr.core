@@ -28,7 +28,7 @@
   <import index="tp2q" modelUID="r:00000000-0000-4000-0000-011c8959032e(jetbrains.mps.baseLanguage.collections.structure)" version="7" implicit="yes" />
   <roots>
     <node type="tpf8.TemplateSwitch" typeId="tpf8.1112730859144" id="5785245534400582257">
-      <property name="name" nameId="tpck.1169194664001" value="scenarios2doc" />
+      <property name="name" nameId="tpck.1169194664001" value="dscenarios2doc" />
       <link role="modifiedSwitch" roleId="tpf8.1112820671508" targetNodeId="oyxn.5785245534400531216" resolveInfo="reqData2doc" />
     </node>
     <node type="75wo.RequirementsModule" typeId="75wo.8745401669462963169" id="5785245534401214224">
@@ -44,7 +44,7 @@
       <node role="ruleConsequence" roleId="tpf8.1169672767469" type="tpf8.InlineTemplateWithContext_RuleConsequence" typeId="tpf8.8900764248744213868" id="5785245534401214209">
         <node role="contentNode" roleId="tpf8.8900764248744213871" type="2c95.Document" typeId="2c95.3350625596579911728" id="5785245534401214218">
           <property name="name" nameId="tpck.1169194664001" value="dummy" />
-          <link role="config" roleId="2c95.6386504476136472832" targetNodeId="5785245534401214368" resolveInfo="Config" />
+          <link role="config" roleId="2c95.6657644269295214800" targetNodeId="5785245534401214368" resolveInfo="Config" />
           <node role="contents" roleId="2c95.3350625596580064250" type="2c95.EmptyDocContent" typeId="2c95.3350625596579911760" id="8903209210859194975">
             <property name="name" nameId="tpck.1169194664001" value="empty_1363378261277_1" />
           </node>
@@ -178,7 +178,7 @@
       <node role="ruleConsequence" roleId="tpf8.1169672767469" type="tpf8.InlineTemplateWithContext_RuleConsequence" typeId="tpf8.8900764248744213868" id="3126418051240127477">
         <node role="contentNode" roleId="tpf8.8900764248744213871" type="2c95.Document" typeId="2c95.3350625596579911728" id="3126418051240127478">
           <property name="name" nameId="tpck.1169194664001" value="dummy" />
-          <link role="config" roleId="2c95.6386504476136472832" targetNodeId="5785245534401214368" resolveInfo="Config" />
+          <link role="config" roleId="2c95.6657644269295214800" targetNodeId="5785245534401214368" resolveInfo="Config" />
           <node role="contents" roleId="2c95.3350625596580064250" type="2c95.EmptyDocContent" typeId="2c95.3350625596579911760" id="3126418051240127479">
             <property name="name" nameId="tpck.1169194664001" value="empty_1363378261277_1" />
           </node>
@@ -279,7 +279,7 @@
       <node role="ruleConsequence" roleId="tpf8.1169672767469" type="tpf8.InlineTemplateWithContext_RuleConsequence" typeId="tpf8.8900764248744213868" id="8903209210859200108">
         <node role="contentNode" roleId="tpf8.8900764248744213871" type="2c95.Document" typeId="2c95.3350625596579911728" id="8903209210859200109">
           <property name="name" nameId="tpck.1169194664001" value="dummy" />
-          <link role="config" roleId="2c95.6386504476136472832" targetNodeId="5785245534401214368" resolveInfo="Config" />
+          <link role="config" roleId="2c95.6657644269295214800" targetNodeId="5785245534401214368" resolveInfo="Config" />
           <node role="contents" roleId="2c95.3350625596580064250" type="2c95.EmptyDocContent" typeId="2c95.3350625596579911760" id="8903209210859200110">
             <property name="name" nameId="tpck.1169194664001" value="empty_1363378261277_1" />
           </node>
@@ -592,7 +592,7 @@
       <node role="ruleConsequence" roleId="tpf8.1169672767469" type="tpf8.InlineTemplateWithContext_RuleConsequence" typeId="tpf8.8900764248744213868" id="3126418051240127608">
         <node role="contentNode" roleId="tpf8.8900764248744213871" type="2c95.Document" typeId="2c95.3350625596579911728" id="3126418051240127609">
           <property name="name" nameId="tpck.1169194664001" value="dummy" />
-          <link role="config" roleId="2c95.6386504476136472832" targetNodeId="5785245534401214368" resolveInfo="Config" />
+          <link role="config" roleId="2c95.6657644269295214800" targetNodeId="5785245534401214368" resolveInfo="Config" />
           <node role="contents" roleId="2c95.3350625596580064250" type="2c95.EmptyDocContent" typeId="2c95.3350625596579911760" id="3126418051240127610">
             <property name="name" nameId="tpck.1169194664001" value="empty_1363378261277_1" />
           </node>
@@ -796,7 +796,7 @@
   </root>
   <root id="5785245534401214224">
     <node role="requirements" roleId="75wo.8745401669462963171" type="75wo.Requirement" typeId="75wo.8745401669462952101" id="5785245534401214226">
-      <property name="priority" nameId="75wo.3314758227758879688" value="0" />
+      <property name="priority" value="0" />
       <property name="open" value="true" />
       <property name="name" nameId="tpck.1169194664001" value="Scenario" />
       <property name="summmary" nameId="75wo.3402431285977818823" value="Summary" />
@@ -804,9 +804,11 @@
       <node role="additionalData" roleId="75wo.8745401669463270518" type="4l29.Scenario" typeId="4l29.5744000828452824073" id="5785245534401214233">
         <property name="name" nameId="tpck.1169194664001" value="s" />
       </node>
-      <node role="text" roleId="75wo.8375407818529829156" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="5785245534401214234">
-        <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="5785245534401214235">
-          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5785245534401214236" />
+      <node role="doc" roleId="75wo.6657644269295007507" type="75wo.ReqDocParagraph" typeId="75wo.6657644269295006436" id="4559893981897096460">
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="4559893981897096461">
+          <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="4559893981897096462">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4559893981897096463" />
+          </node>
         </node>
       </node>
     </node>
