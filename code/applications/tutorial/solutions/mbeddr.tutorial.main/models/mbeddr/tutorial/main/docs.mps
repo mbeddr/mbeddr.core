@@ -7,7 +7,7 @@
   <devkit namespace="54c79f9f-f3ba-4167-91f1-eb4e98a9c47c(com.mbeddr.documentation)" />
   <import index="e1tx" modelUID="r:bd5ec23c-c294-47cc-a078-675c03abdb69(mbeddr.tutorial.main.defaultExtensions)" version="-1" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
-  <import index="2c95" modelUID="r:5f7188a9-e7b4-4a2e-bef9-38d2cf379fdc(com.mbeddr.doc.structure)" version="11" implicit="yes" />
+  <import index="2c95" modelUID="r:5f7188a9-e7b4-4a2e-bef9-38d2cf379fdc(com.mbeddr.doc.structure)" version="12" implicit="yes" />
   <import index="87nw" modelUID="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" version="5" implicit="yes" />
   <import index="g9w8" modelUID="r:506f4964-2b3f-49f3-a581-8c498222bac6(com.mbeddr.doc.gen_latex.structure)" version="-1" implicit="yes" />
   <import index="rh4a" modelUID="r:51a64317-678a-4e8f-9df1-1e83f73c9d71(com.mbeddr.doc.c.structure)" version="5" implicit="yes" />
@@ -18,7 +18,7 @@
     <node type="2c95.Document" typeId="2c95.3350625596579911728" id="2637267020265430783">
       <property name="name" nameId="tpck.1169194664001" value="overview" />
       <property name="virtualPackage" nameId="tpck.1193676396447" value="documents" />
-      <link role="config" roleId="2c95.6386504476136472832" targetNodeId="2637267020265430784" resolveInfo="Config" />
+      <link role="config" roleId="2c95.6657644269295214800" targetNodeId="2637267020265430784" resolveInfo="Config" />
     </node>
     <node type="2c95.DocumentConfig" typeId="2c95.6386504476136472782" id="2637267020265430784">
       <property name="name" nameId="tpck.1169194664001" value="Config" />
@@ -26,12 +26,12 @@
     <node type="2c95.Document" typeId="2c95.3350625596579911728" id="794010416819640951">
       <property name="name" nameId="tpck.1169194664001" value="existingLanguages" />
       <property name="virtualPackage" nameId="tpck.1193676396447" value="documents" />
-      <link role="config" roleId="2c95.6386504476136472832" targetNodeId="2637267020265430784" resolveInfo="Config" />
+      <link role="config" roleId="2c95.6657644269295214800" targetNodeId="2637267020265430784" resolveInfo="Config" />
     </node>
     <node type="2c95.Document" typeId="2c95.3350625596579911728" id="794010416819640964">
       <property name="name" nameId="tpck.1169194664001" value="newLanguages" />
       <property name="virtualPackage" nameId="tpck.1193676396447" value="documents" />
-      <link role="config" roleId="2c95.6386504476136472832" targetNodeId="2637267020265430784" resolveInfo="Config" />
+      <link role="config" roleId="2c95.6657644269295214800" targetNodeId="2637267020265430784" resolveInfo="Config" />
     </node>
     <node type="2c95.DocumentExport" typeId="2c95.3350625596580256366" id="794010416819641044">
       <property name="name" nameId="tpck.1169194664001" value="TutorialOverview" />
