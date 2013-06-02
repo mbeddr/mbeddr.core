@@ -205,18 +205,18 @@
       <property name="name" nameId="tpck.1169194664001" value="AssessmentGroup" />
     </node>
     <node type="tp4k.ActionDeclaration" typeId="tp4k.1203071646776" id="3969129843280028519">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="hints" />
-      <property name="name" nameId="tpck.1169194664001" value="TurnHintsOn" />
-      <property name="caption" nameId="tp4k.1205250923097" value="Editor Hints" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="buttonsInEditor" />
+      <property name="name" nameId="tpck.1169194664001" value="TurnButtonsInEditorOn" />
+      <property name="caption" nameId="tp4k.1205250923097" value="Editor Helper Buttons" />
     </node>
     <node type="tp4k.ActionGroupDeclaration" typeId="tp4k.1203087890642" id="3969129843280035678">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="hints" />
-      <property name="name" nameId="tpck.1169194664001" value="HintGroup" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="buttonsInEditor" />
+      <property name="name" nameId="tpck.1169194664001" value="EditorButtonGroup" />
     </node>
     <node type="tp4k.ActionDeclaration" typeId="tp4k.1203071646776" id="3969129843280202135">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="hints" />
-      <property name="name" nameId="tpck.1169194664001" value="TurnHintsOff" />
-      <property name="caption" nameId="tp4k.1205250923097" value="Editor Hints" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="buttonsInEditor" />
+      <property name="name" nameId="tpck.1169194664001" value="TurnButtonsInEditorOff" />
+      <property name="caption" nameId="tp4k.1205250923097" value="Editor Helper Buttons" />
     </node>
   </roots>
   <root id="1611636138415080827" />
@@ -5149,8 +5149,8 @@
       <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="3969129843280028525">
         <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="3969129843280030317">
           <node role="expression" roleId="tpee.1068580123156" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="3969129843280202133">
-            <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="hwgx.3969129843280023149" resolveInfo="HintHelper" />
-            <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="hwgx.3969129843280023163" resolveInfo="showHints" />
+            <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="hwgx.3969129843280023149" resolveInfo="EditorButtonHelper" />
+            <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="hwgx.3969129843280023163" resolveInfo="showButtons" />
             <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.BooleanConstant" typeId="tpee.1068580123137" id="3969129843280202134">
               <property name="value" nameId="tpee.1068580123138" value="true" />
             </node>
@@ -5182,8 +5182,8 @@
         <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="3969129843280202127">
           <node role="expression" roleId="tpee.1068580123156" type="tpee.NotExpression" typeId="tpee.1081516740877" id="3969129843280202131">
             <node role="expression" roleId="tpee.1081516765348" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="3969129843280202132">
-              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="hwgx.3969129843280023155" resolveInfo="showHints" />
-              <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="hwgx.3969129843280023149" resolveInfo="HintHelper" />
+              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="hwgx.3969129843280023155" resolveInfo="showButtons" />
+              <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="hwgx.3969129843280023149" resolveInfo="EditorButtonHelper" />
             </node>
           </node>
         </node>
@@ -5194,10 +5194,10 @@
     <node role="contents" roleId="tp4k.1207145245948" type="tp4k.ElementListContents" typeId="tp4k.1207145163717" id="3969129843280035679">
       <node role="reference" roleId="tp4k.1207145201301" type="tp4k.Separator" typeId="tp4k.1204908117386" id="3969129843280052719" />
       <node role="reference" roleId="tp4k.1207145201301" type="tp4k.ActionInstance" typeId="tp4k.1203088046679" id="3969129843280035683">
-        <link role="action" roleId="tp4k.1203088061055" targetNodeId="3969129843280028519" resolveInfo="TurnHintsOn" />
+        <link role="action" roleId="tp4k.1203088061055" targetNodeId="3969129843280028519" resolveInfo="TurnButtonsInEditorOn" />
       </node>
       <node role="reference" roleId="tp4k.1207145201301" type="tp4k.ActionInstance" typeId="tp4k.1203088046679" id="3969129843280202151">
-        <link role="action" roleId="tp4k.1203088061055" targetNodeId="3969129843280202135" resolveInfo="TurnHintsOff" />
+        <link role="action" roleId="tp4k.1203088061055" targetNodeId="3969129843280202135" resolveInfo="TurnButtonsInEditorOff" />
       </node>
     </node>
     <node role="modifier" roleId="tp4k.1204991552650" type="tp4k.ModificationStatement" typeId="tp4k.1203092361741" id="3969129843280035681">
@@ -5219,8 +5219,8 @@
       <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="3969129843280202139">
         <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="3969129843280202140">
           <node role="expression" roleId="tpee.1068580123156" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="3969129843280202141">
-            <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="hwgx.3969129843280023149" resolveInfo="HintHelper" />
-            <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="hwgx.3969129843280023163" resolveInfo="showHints" />
+            <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="hwgx.3969129843280023149" resolveInfo="EditorButtonHelper" />
+            <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="hwgx.3969129843280023163" resolveInfo="showButtons" />
             <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.BooleanConstant" typeId="tpee.1068580123137" id="3969129843280202142" />
           </node>
         </node>
@@ -5251,8 +5251,8 @@
       <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="3969129843280202145">
         <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="3969129843280202146">
           <node role="expression" roleId="tpee.1068580123156" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="3969129843280202148">
-            <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="hwgx.3969129843280023155" resolveInfo="showHints" />
-            <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="hwgx.3969129843280023149" resolveInfo="HintHelper" />
+            <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="hwgx.3969129843280023155" resolveInfo="showButtons" />
+            <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="hwgx.3969129843280023149" resolveInfo="EditorButtonHelper" />
           </node>
         </node>
       </node>
