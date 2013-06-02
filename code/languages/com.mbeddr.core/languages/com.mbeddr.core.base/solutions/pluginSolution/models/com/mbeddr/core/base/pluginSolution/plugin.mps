@@ -204,6 +204,15 @@
       <property name="virtualPackage" nameId="tpck.1193676396447" value="assessment" />
       <property name="name" nameId="tpck.1169194664001" value="AssessmentGroup" />
     </node>
+    <node type="tp4k.ActionDeclaration" typeId="tp4k.1203071646776" id="3969129843280028519">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="hints" />
+      <property name="name" nameId="tpck.1169194664001" value="ToggleHints" />
+      <property name="caption" nameId="tp4k.1205250923097" value="Toggle Hints" />
+    </node>
+    <node type="tp4k.ActionGroupDeclaration" typeId="tp4k.1203087890642" id="3969129843280035678">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="hints" />
+      <property name="name" nameId="tpck.1169194664001" value="HintGroup" />
+    </node>
   </roots>
   <root id="1611636138415080827" />
   <root id="7518061998923645758">
@@ -5118,6 +5127,37 @@
     </node>
     <node role="modifier" roleId="tp4k.1204991552650" type="tp4k.ModificationStatement" typeId="tp4k.1203092361741" id="3815661793603882582">
       <link role="modifiedGroup" roleId="tp4k.1203092736097" targetNodeId="tprs.1087177419518375880" resolveInfo="MPSToolBarRun" />
+    </node>
+  </root>
+  <root id="3969129843280028519">
+    <node role="parameter" roleId="tp4k.1217413222820" type="tp4k.ActionDataParameterDeclaration" typeId="tp4k.1217252042208" id="3969129843280028522">
+      <property name="name" nameId="tpck.1169194664001" value="project" />
+      <link role="key" roleId="tp4k.1217252646389" targetNodeId="6tyf.~PlatformDataKeys%dPROJECT" resolveInfo="PROJECT" />
+      <node role="condition" roleId="tp4k.5538333046911298738" type="tp4k.RequiredCondition" typeId="tp4k.5538333046911348654" id="3969129843280028523" />
+    </node>
+    <node role="executeFunction" roleId="tp4k.1203083461638" type="tp4k.ExecuteBlock" typeId="tp4k.1203083511112" id="3969129843280028524">
+      <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="3969129843280028525">
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="3969129843280030317">
+          <node role="expression" roleId="tpee.1068580123156" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="3969129843280030356">
+            <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="hwgx.3969129843280030320" resolveInfo="toogleHints" />
+            <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="hwgx.3969129843280023149" resolveInfo="HintHelper" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node role="icon" roleId="tp4k.8976425910813834639" type="1oap.IconResource" typeId="1oap.8974276187400029883" id="3969129843280028554">
+      <property name="path" nameId="1oap.8974276187400029899" value="${solution_descriptor}/icons/hints.png" />
+    </node>
+  </root>
+  <root id="3969129843280035678">
+    <node role="contents" roleId="tp4k.1207145245948" type="tp4k.ElementListContents" typeId="tp4k.1207145163717" id="3969129843280035679">
+      <node role="reference" roleId="tp4k.1207145201301" type="tp4k.Separator" typeId="tp4k.1204908117386" id="3969129843280052719" />
+      <node role="reference" roleId="tp4k.1207145201301" type="tp4k.ActionInstance" typeId="tp4k.1203088046679" id="3969129843280035683">
+        <link role="action" roleId="tp4k.1203088061055" targetNodeId="3969129843280028519" resolveInfo="ToggleHints" />
+      </node>
+    </node>
+    <node role="modifier" roleId="tp4k.1204991552650" type="tp4k.ModificationStatement" typeId="tp4k.1203092361741" id="3969129843280035681">
+      <link role="modifiedGroup" roleId="tp4k.1203092736097" targetNodeId="tprs.885275291024029562" resolveInfo="View" />
     </node>
   </root>
 </model>
