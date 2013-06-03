@@ -26,12 +26,15 @@
   <roots>
     <node type="75wo.RequirementsModule" typeId="75wo.8745401669462963169" id="1433966787984154171">
       <property name="name" nameId="tpck.1169194664001" value="FlightJudgementRules" />
+      <property name="showDetails" nameId="75wo.3348865852192832937" value="true" />
     </node>
     <node type="75wo.RequirementsModule" typeId="75wo.8745401669462963169" id="8119642625901794439">
       <property name="name" nameId="tpck.1169194664001" value="ArchitecturalComponents" />
+      <property name="showDetails" nameId="75wo.3348865852192832937" value="true" />
     </node>
     <node type="75wo.RequirementsModule" typeId="75wo.8745401669462963169" id="6898387700925052063">
       <property name="name" nameId="tpck.1169194664001" value="UseCases" />
+      <property name="showDetails" nameId="75wo.3348865852192832937" value="true" />
     </node>
     <node type="2c95.Document" typeId="2c95.3350625596579911728" id="5785245534400491064">
       <property name="name" nameId="tpck.1169194664001" value="requirementsReport" />
@@ -387,6 +390,7 @@
         </node>
       </node>
     </node>
+    <node role="cls" roleId="75wo.8983772170066800844" type="75wo.DefaultRequirementsClass" typeId="75wo.8983772170066800838" id="3348865852193241099" />
   </root>
   <root id="8119642625901794439">
     <node role="requirements" roleId="75wo.8745401669462963171" type="75wo.Requirement" typeId="75wo.8745401669462952101" id="8119642625901795403">
@@ -572,6 +576,12 @@
         </node>
       </node>
     </node>
+    <node role="cls" roleId="75wo.8983772170066800844" type="75wo.DefaultRequirementsClass" typeId="75wo.8983772170066800838" id="3348865852193241095" />
+    <node role="abstract" roleId="75wo.2588579461811806005" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="3348865852193241096">
+      <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="3348865852193241097">
+        <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3348865852193241098" />
+      </node>
+    </node>
   </root>
   <root id="6898387700925052063">
     <node role="requirements" roleId="75wo.8745401669462963171" type="75wo.Requirement" typeId="75wo.8745401669462952101" id="3126418051239998839">
@@ -588,7 +598,7 @@
           <property name="priority" value="0" />
           <property name="open" value="false" />
           <property name="name" nameId="tpck.1169194664001" value="UserSuppliesFlightError" />
-          <property name="summmary" nameId="75wo.3402431285977818823" value="An erro occurs during submission" />
+          <property name="summmary" nameId="75wo.3402431285977818823" value="An error occurs during submission" />
           <node role="kind" roleId="75wo.8921256082857728256" type="4l29.ScenarioRequirementKind" typeId="4l29.5744000828452835552" id="1942554214112319817" />
           <node role="additionalData" roleId="75wo.8745401669463270518" type="4l29.Scenario" typeId="4l29.5744000828452824073" id="1942554214112319818">
             <property name="name" nameId="tpck.1169194664001" value="UserSuppliesFlightError" />
@@ -621,7 +631,7 @@
             <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="4559893981897095991">
               <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="4559893981897095992">
                 <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4559893981897095993">
-                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent feugiat enim arcu, ut egestas velit. Suspendisse potenti. Etiam risus ante, bibendum ut mattis eget, convallis sit amet nunc. Ut nec justo sapien, vel condimentum velit. Quisque venenatis faucibus tellus consequat rhoncus. Vestibulum dapibus dictum vulputate. Phasellus rhoncus quam eu dui dictum sollicitudin.\nDuis tempus justo magna. Nunc lobortis libero sed eros interdum aliquet eleifend nisl mattis. Vivamus est orci, tempus non sagittis sed, vulputate quis nunc. Integer sollicitudin enim in orci iaculis facilisis non et elit. Fusce rutrum, eros faucibus congue scelerisque, sapien sapien pharetra leo, quis rhoncus velit enim vel orci. Etiam id elit leo, ultricies viverra mauris. Pellentesque pretium dui varius eros sodales tempus. Sed nec arcu eu lectus euismod sodales sit amet consectetur augue. Aliquam nibh arcu, egestas sit amet interdum quis, sollicitudin et eros. Pellentesque non lectus a lacus sollicitudin pellentesque et sed metus. Integer metus urna, semper sit amet sollicitudin vel, ultrices vel massa. Suspendisse id auctor turpis. Curabitur inter" />
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent feugiat enim arcu, ut egestas velit. Suspendisse potenti. Etiam risus ante, bibendum ut mattis eget, convallis sit amet nunc. " />
                 </node>
               </node>
             </node>
@@ -995,6 +1005,7 @@
         </node>
       </node>
     </node>
+    <node role="cls" roleId="75wo.8983772170066800844" type="75wo.DefaultRequirementsClass" typeId="75wo.8983772170066800838" id="3348865852193241100" />
   </root>
   <root id="5785245534400491064">
     <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Section" typeId="2c95.3350625596580064455" id="5785245534400491071">
