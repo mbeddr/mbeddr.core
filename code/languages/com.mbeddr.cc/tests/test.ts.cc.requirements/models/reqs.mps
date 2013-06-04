@@ -12,14 +12,17 @@
   <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="23" implicit="yes" />
   <import index="87nw" modelUID="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" version="5" implicit="yes" />
   <import index="2c95" modelUID="r:5f7188a9-e7b4-4a2e-bef9-38d2cf379fdc(com.mbeddr.doc.structure)" version="12" implicit="yes" />
+  <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="7" implicit="yes" />
   <roots>
     <node type="75wo.RequirementsModule" typeId="75wo.8745401669462963169" id="8745401669463114528">
       <property name="name" nameId="tpck.1169194664001" value="HighLevelRequirements" />
       <property name="showTraces" nameId="26ao.3291018189726920316" value="true" />
+      <property name="showDetails" nameId="75wo.3348865852192832937" value="true" />
     </node>
     <node type="75wo.RequirementsModule" typeId="75wo.8745401669462963169" id="1165432222362120317">
       <property name="name" nameId="tpck.1169194664001" value="DetailedRequirements" />
       <property name="showTraces" nameId="26ao.3291018189726920316" value="true" />
+      <property name="showDetails" nameId="75wo.3348865852192832937" value="true" />
     </node>
     <node type="51wr.BuildConfiguration" typeId="51wr.7717755763392524104" id="8200057468984897506" />
     <node type="mj1l.TypeSizeConfiguration" typeId="mj1l.3335993110369795380" id="8200057468984898930" />
@@ -190,6 +193,12 @@
         </node>
       </node>
     </node>
+    <node role="cls" roleId="75wo.8983772170066800844" type="75wo.DefaultRequirementsClass" typeId="75wo.8983772170066800838" id="3348865852193241129" />
+    <node role="abstract" roleId="75wo.2588579461811806005" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="3348865852193241130">
+      <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="3348865852193241131">
+        <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3348865852193241132" />
+      </node>
+    </node>
   </root>
   <root id="1165432222362120317">
     <node role="imports" roleId="75wo.1165432222362099166" type="75wo.ModuleRef" typeId="75wo.439567521322965024" id="1165432222362120332">
@@ -212,6 +221,12 @@
             </node>
           </node>
         </node>
+      </node>
+    </node>
+    <node role="cls" roleId="75wo.8983772170066800844" type="75wo.DefaultRequirementsClass" typeId="75wo.8983772170066800838" id="3348865852193241125" />
+    <node role="abstract" roleId="75wo.2588579461811806005" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="3348865852193241126">
+      <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="3348865852193241127">
+        <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3348865852193241128" />
       </node>
     </node>
   </root>

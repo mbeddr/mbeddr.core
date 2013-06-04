@@ -26,6 +26,7 @@
     </node>
     <node type="75wo.RequirementsModule" typeId="75wo.8745401669462963169" id="3534497005926839233">
       <property name="name" nameId="tpck.1169194664001" value="Requirements" />
+      <property name="showDetails" nameId="75wo.3348865852192832937" value="true" />
     </node>
     <node type="mj1l.TypeSizeConfiguration" typeId="mj1l.3335993110369795380" id="3534497005926839241" />
     <node type="51wr.BuildConfiguration" typeId="51wr.7717755763392524104" id="3534497005926839283" />
@@ -180,7 +181,6 @@
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4559893981897094922">
               <property name="escapedValue" nameId="87nw.2557074442922438158" value="Hier ist die BEschreibung." />
             </node>
-            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4559893981897094923" />
           </node>
         </node>
       </node>
@@ -387,6 +387,12 @@
         </node>
       </node>
     </node>
+    <node role="abstract" roleId="75wo.2588579461811806005" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="3348865852193241105">
+      <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="3348865852193241106">
+        <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3348865852193241107" />
+      </node>
+    </node>
+    <node role="cls" roleId="75wo.8983772170066800844" type="75wo.DefaultRequirementsClass" typeId="75wo.8983772170066800838" id="3348865852193241108" />
   </root>
   <root id="3534497005926839241">
     <node role="pointerDiffType" roleId="mj1l.3813668170744198630" type="mj1l.UnsignedInt32tType" typeId="mj1l.8463282783691618450" id="3534497005926839242">

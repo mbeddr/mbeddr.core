@@ -21,6 +21,7 @@
   <roots>
     <node type="75wo.RequirementsModule" typeId="75wo.8745401669462963169" id="4155609647750946107">
       <property name="name" nameId="tpck.1169194664001" value="ReqsModule" />
+      <property name="showDetails" nameId="75wo.3348865852192832937" value="true" />
     </node>
     <node type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="4155609647750946111">
       <property name="name" nameId="tpck.1169194664001" value="HelloWorld" />
@@ -43,6 +44,12 @@
             </node>
           </node>
         </node>
+      </node>
+    </node>
+    <node role="cls" roleId="75wo.8983772170066800844" type="75wo.DefaultRequirementsClass" typeId="75wo.8983772170066800838" id="3348865852193241121" />
+    <node role="abstract" roleId="75wo.2588579461811806005" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="3348865852193241122">
+      <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="3348865852193241123">
+        <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3348865852193241124" />
       </node>
     </node>
   </root>

@@ -26,9 +26,12 @@
   <roots>
     <node type="75wo.RequirementsModule" typeId="75wo.8745401669462963169" id="1433966787984154171">
       <property name="name" nameId="tpck.1169194664001" value="FlightJudgementRules" />
+      <property name="showTraces" value="true" />
+      <property name="showDetails" nameId="75wo.3348865852192832937" value="true" />
     </node>
     <node type="75wo.RequirementsModule" typeId="75wo.8745401669462963169" id="8119642625901794439">
       <property name="name" nameId="tpck.1169194664001" value="ArchitecturalComponents" />
+      <property name="showDetails" nameId="75wo.3348865852192832937" value="true" />
     </node>
     <node type="75wo.RequirementsModule" typeId="75wo.8745401669462963169" id="6898387700925052063">
       <property name="name" nameId="tpck.1169194664001" value="UseCases" />
@@ -387,6 +390,7 @@
         </node>
       </node>
     </node>
+    <node role="cls" roleId="75wo.8983772170066800844" type="75wo.DefaultRequirementsClass" typeId="75wo.8983772170066800838" id="3348865852193241099" />
   </root>
   <root id="8119642625901794439">
     <node role="requirements" roleId="75wo.8745401669462963171" type="75wo.Requirement" typeId="75wo.8745401669462952101" id="8119642625901795403">
@@ -572,6 +576,12 @@
         </node>
       </node>
     </node>
+    <node role="cls" roleId="75wo.8983772170066800844" type="75wo.DefaultRequirementsClass" typeId="75wo.8983772170066800838" id="3348865852193241095" />
+    <node role="abstract" roleId="75wo.2588579461811806005" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="3348865852193241096">
+      <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="3348865852193241097">
+        <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3348865852193241098" />
+      </node>
+    </node>
   </root>
   <root id="6898387700925052063">
     <node role="requirements" roleId="75wo.8745401669462963171" type="75wo.Requirement" typeId="75wo.8745401669462952101" id="3126418051239998839">
@@ -588,43 +598,19 @@
           <property name="priority" value="0" />
           <property name="open" value="false" />
           <property name="name" nameId="tpck.1169194664001" value="UserSuppliesFlightError" />
-          <property name="summmary" nameId="75wo.3402431285977818823" value="An erro occurs during submission" />
+          <property name="summmary" nameId="75wo.3402431285977818823" value="An error occurs during submission" />
           <node role="kind" roleId="75wo.8921256082857728256" type="4l29.ScenarioRequirementKind" typeId="4l29.5744000828452835552" id="1942554214112319817" />
-          <node role="additionalData" roleId="75wo.8745401669463270518" type="4l29.Scenario" typeId="4l29.5744000828452824073" id="1942554214112319818">
-            <property name="name" nameId="tpck.1169194664001" value="UserSuppliesFlightError" />
-            <node role="initials" roleId="4l29.5744000828452824190" type="4l29.InitialContext" typeId="4l29.5744000828452824121" id="1942554214112319819">
-              <link role="initiator" roleId="4l29.5744000828452824122" targetNodeId="6898387700925062299" resolveInfo="Pilot" />
-              <node role="contents" roleId="4l29.5744000828452862537" type="4l29.SequentialCall" typeId="4l29.5744000828452842290" id="1942554214112319820">
-                <link role="capability" roleId="4l29.5744000828452854655" targetNodeId="6898387700925313669" resolveInfo="submitFlight" />
-                <node role="targetParticipant" roleId="4l29.5744000828452849518" type="4l29.ParticipantRef" typeId="4l29.5744000828452824074" id="1942554214112319821">
-                  <link role="participant" roleId="4l29.5744000828452824075" targetNodeId="6898387700925260474" resolveInfo="UI" />
-                </node>
-                <node role="returns" roleId="4l29.6446320527598513761" type="4l29.StatusValueError" typeId="4l29.6446320527598544129" id="1942554214112319827">
-                  <property name="msg" nameId="4l29.6446320527598544131" value="init failed" />
-                </node>
-                <node role="args" roleId="4l29.5744000828452981042" type="4l29.OwnedItemRef" typeId="4l29.6446320527598618610" id="1942554214112319826">
-                  <link role="data" roleId="4l29.6446320527598618612" targetNodeId="6898387700925412273" resolveInfo="exampleFlight" />
-                </node>
-                <node role="contents" roleId="4l29.5744000828452862537" type="4l29.ImplStep" typeId="4l29.8009804792183241983" id="1942554214112320139">
-                  <property name="text" nameId="4l29.8009804792183241985" value="maybe the database is full" />
-                </node>
-                <node role="contents" roleId="4l29.5744000828452862537" type="4l29.ImplStep" typeId="4l29.8009804792183241983" id="1942554214112320141">
-                  <property name="text" nameId="4l29.8009804792183241985" value="or the connection to the database failed" />
-                </node>
-              </node>
-              <node role="contents" roleId="4l29.5744000828452862537" type="4l29.Error" typeId="4l29.8119642625901719122" id="1942554214112320137">
-                <property name="message" nameId="4l29.8119642625901719133" value="FAILED" />
-              </node>
-            </node>
-          </node>
           <node role="doc" roleId="75wo.6657644269295007507" type="75wo.ReqDocParagraph" typeId="75wo.6657644269295006436" id="4559893981897095990">
             <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="4559893981897095991">
               <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="4559893981897095992">
                 <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4559893981897095993">
-                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent feugiat enim arcu, ut egestas velit. Suspendisse potenti. Etiam risus ante, bibendum ut mattis eget, convallis sit amet nunc. Ut nec justo sapien, vel condimentum velit. Quisque venenatis faucibus tellus consequat rhoncus. Vestibulum dapibus dictum vulputate. Phasellus rhoncus quam eu dui dictum sollicitudin.\nDuis tempus justo magna. Nunc lobortis libero sed eros interdum aliquet eleifend nisl mattis. Vivamus est orci, tempus non sagittis sed, vulputate quis nunc. Integer sollicitudin enim in orci iaculis facilisis non et elit. Fusce rutrum, eros faucibus congue scelerisque, sapien sapien pharetra leo, quis rhoncus velit enim vel orci. Etiam id elit leo, ultricies viverra mauris. Pellentesque pretium dui varius eros sodales tempus. Sed nec arcu eu lectus euismod sodales sit amet consectetur augue. Aliquam nibh arcu, egestas sit amet interdum quis, sollicitudin et eros. Pellentesque non lectus a lacus sollicitudin pellentesque et sed metus. Integer metus urna, semper sit amet sollicitudin vel, ultrices vel massa. Suspendisse id auctor turpis. Curabitur inter" />
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent feugiat enim arcu, ut egestas velit. Suspendisse potenti. Etiam risus ante, bibendum ut mattis eget, convallis sit amet nunc. " />
                 </node>
               </node>
             </node>
+          </node>
+          <node role="additionalData" roleId="75wo.8745401669463270518" type="4l29.Scenario" typeId="4l29.5744000828452824073" id="1626886780547238932">
+            <property name="name" nameId="tpck.1169194664001" value="UserSuppliesFlightError" />
           </node>
         </node>
         <node role="kind" roleId="75wo.8921256082857728256" type="4l29.UseCaseKind" typeId="4l29.6514529288613812198" id="6898387700925052067" />
@@ -995,6 +981,7 @@
         </node>
       </node>
     </node>
+    <node role="cls" roleId="75wo.8983772170066800844" type="75wo.DefaultRequirementsClass" typeId="75wo.8983772170066800838" id="3348865852193241100" />
   </root>
   <root id="5785245534400491064">
     <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Section" typeId="2c95.3350625596580064455" id="5785245534400491071">
@@ -1071,310 +1058,99 @@
     <node role="configurationItems" roleId="vs0r.4459718605982007338" type="bfq5.Scenarios2DocConfigItem" typeId="bfq5.5785245534400582270" id="5785245534401242437" />
   </root>
   <root id="3815661793603772590">
-    <node role="assessments" roleId="vs0r.865293814733114045" type="vs0r.Assessment" typeId="vs0r.865293814733114044" id="3815661793603772591">
-      <property name="name" nameId="tpck.1169194664001" value="NoEffort" />
+    <node role="assessments" roleId="vs0r.865293814733114045" type="vs0r.Assessment" typeId="vs0r.865293814733114044" id="1626886780547224680">
+      <property name="name" nameId="tpck.1169194664001" value="RequirementsWithoutEfforts" />
       <property name="mustBeOk" nameId="vs0r.3815661793603523593" value="true" />
-      <node role="results" roleId="vs0r.865293814733118687" type="vs0r.AssessmentResultEntry" typeId="vs0r.865293814733118686" id="3815661793603772714">
-        <property name="status" nameId="vs0r.8389796016067541249" value="0" />
-        <property name="lastFound" nameId="vs0r.6619757161337247129" value="1369943756968" />
-        <node role="comment" roleId="vs0r.6619757161337461931" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="3815661793603772715">
-          <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="3815661793603772716">
-            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3815661793603772717" />
+      <node role="results" roleId="vs0r.865293814733118687" type="vs0r.AssessmentResultEntry" typeId="vs0r.865293814733118686" id="1626886780547224814">
+        <property name="status" nameId="vs0r.8389796016067541249" value="1" />
+        <property name="lastFound" nameId="vs0r.6619757161337247129" value="1370273570809" />
+        <node role="comment" roleId="vs0r.6619757161337461931" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="1626886780547224815">
+          <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="1626886780547224816">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1626886780547224817" />
           </node>
         </node>
-        <node role="result" roleId="vs0r.865293814733133843" type="75wo.NoEffortAssResult" typeId="75wo.865293814733182278" id="3815661793603772718">
-          <link role="requirement" roleId="75wo.865293814733182279" targetNodeId="3126418051239998853" resolveInfo="Aircraft" />
-        </node>
-      </node>
-      <node role="results" roleId="vs0r.865293814733118687" type="vs0r.AssessmentResultEntry" typeId="vs0r.865293814733118686" id="3815661793603772709">
-        <property name="status" nameId="vs0r.8389796016067541249" value="0" />
-        <property name="lastFound" nameId="vs0r.6619757161337247129" value="1369943756968" />
-        <node role="comment" roleId="vs0r.6619757161337461931" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="3815661793603772710">
-          <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="3815661793603772711">
-            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3815661793603772712" />
-          </node>
-        </node>
-        <node role="result" roleId="vs0r.865293814733133843" type="75wo.NoEffortAssResult" typeId="75wo.865293814733182278" id="3815661793603772713">
-          <link role="requirement" roleId="75wo.865293814733182279" targetNodeId="6898387700925052068" resolveInfo="Pilot" />
-        </node>
-      </node>
-      <node role="results" roleId="vs0r.865293814733118687" type="vs0r.AssessmentResultEntry" typeId="vs0r.865293814733118686" id="3815661793603772704">
-        <property name="status" nameId="vs0r.8389796016067541249" value="0" />
-        <property name="lastFound" nameId="vs0r.6619757161337247129" value="1369943756968" />
-        <node role="comment" roleId="vs0r.6619757161337461931" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="3815661793603772705">
-          <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="3815661793603772706">
-            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3815661793603772707" />
-          </node>
-        </node>
-        <node role="result" roleId="vs0r.865293814733133843" type="75wo.NoEffortAssResult" typeId="75wo.865293814733182278" id="3815661793603772708">
-          <link role="requirement" roleId="75wo.865293814733182279" targetNodeId="6898387700925062305" resolveInfo="UserInterface" />
-        </node>
-      </node>
-      <node role="results" roleId="vs0r.865293814733118687" type="vs0r.AssessmentResultEntry" typeId="vs0r.865293814733118686" id="3815661793603772699">
-        <property name="status" nameId="vs0r.8389796016067541249" value="0" />
-        <property name="lastFound" nameId="vs0r.6619757161337247129" value="1369943756968" />
-        <node role="comment" roleId="vs0r.6619757161337461931" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="3815661793603772700">
-          <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="3815661793603772701">
-            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3815661793603772702" />
-          </node>
-        </node>
-        <node role="result" roleId="vs0r.865293814733133843" type="75wo.NoEffortAssResult" typeId="75wo.865293814733182278" id="3815661793603772703">
-          <link role="requirement" roleId="75wo.865293814733182279" targetNodeId="6898387700925260480" resolveInfo="DataStore" />
-        </node>
-      </node>
-      <node role="results" roleId="vs0r.865293814733118687" type="vs0r.AssessmentResultEntry" typeId="vs0r.865293814733118686" id="3815661793603772694">
-        <property name="status" nameId="vs0r.8389796016067541249" value="0" />
-        <property name="lastFound" nameId="vs0r.6619757161337247129" value="1369943756968" />
-        <node role="comment" roleId="vs0r.6619757161337461931" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="3815661793603772695">
-          <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="3815661793603772696">
-            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3815661793603772697" />
-          </node>
-        </node>
-        <node role="result" roleId="vs0r.865293814733133843" type="75wo.NoEffortAssResult" typeId="75wo.865293814733182278" id="3815661793603772698">
-          <link role="requirement" roleId="75wo.865293814733182279" targetNodeId="1942554214112320148" resolveInfo="PilotCollectsFlightData" />
-        </node>
-      </node>
-      <node role="results" roleId="vs0r.865293814733118687" type="vs0r.AssessmentResultEntry" typeId="vs0r.865293814733118686" id="3815661793603772689">
-        <property name="status" nameId="vs0r.8389796016067541249" value="0" />
-        <property name="lastFound" nameId="vs0r.6619757161337247129" value="1369943756968" />
-        <node role="comment" roleId="vs0r.6619757161337461931" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="3815661793603772690">
-          <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="3815661793603772691">
-            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3815661793603772692" />
-          </node>
-        </node>
-        <node role="result" roleId="vs0r.865293814733133843" type="75wo.NoEffortAssResult" typeId="75wo.865293814733182278" id="3815661793603772693">
-          <link role="requirement" roleId="75wo.865293814733182279" targetNodeId="8983161156585742570" resolveInfo="Interpolation" />
-        </node>
-      </node>
-      <node role="results" roleId="vs0r.865293814733118687" type="vs0r.AssessmentResultEntry" typeId="vs0r.865293814733118686" id="3815661793603772684">
-        <property name="status" nameId="vs0r.8389796016067541249" value="0" />
-        <property name="lastFound" nameId="vs0r.6619757161337247129" value="1369943756968" />
-        <node role="comment" roleId="vs0r.6619757161337461931" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="3815661793603772685">
-          <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="3815661793603772686">
-            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3815661793603772687" />
-          </node>
-        </node>
-        <node role="result" roleId="vs0r.865293814733133843" type="75wo.NoEffortAssResult" typeId="75wo.865293814733182278" id="3815661793603772688">
-          <link role="requirement" roleId="75wo.865293814733182279" targetNodeId="8983161156585739652" resolveInfo="FlightIsInterpolated" />
-        </node>
-      </node>
-      <node role="results" roleId="vs0r.865293814733118687" type="vs0r.AssessmentResultEntry" typeId="vs0r.865293814733118686" id="3815661793603772679">
-        <property name="status" nameId="vs0r.8389796016067541249" value="0" />
-        <property name="lastFound" nameId="vs0r.6619757161337247129" value="1369943756968" />
-        <node role="comment" roleId="vs0r.6619757161337461931" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="3815661793603772680">
-          <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="3815661793603772681">
-            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3815661793603772682" />
-          </node>
-        </node>
-        <node role="result" roleId="vs0r.865293814733133843" type="75wo.NoEffortAssResult" typeId="75wo.865293814733182278" id="3815661793603772683">
-          <link role="requirement" roleId="75wo.865293814733182279" targetNodeId="6898387700925291928" resolveInfo="UserSuppliesFlightsSuccess" />
-        </node>
-      </node>
-      <node role="results" roleId="vs0r.865293814733118687" type="vs0r.AssessmentResultEntry" typeId="vs0r.865293814733118686" id="3815661793603772674">
-        <property name="status" nameId="vs0r.8389796016067541249" value="0" />
-        <property name="lastFound" nameId="vs0r.6619757161337247129" value="1369943756968" />
-        <node role="comment" roleId="vs0r.6619757161337461931" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="3815661793603772675">
-          <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="3815661793603772676">
-            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3815661793603772677" />
-          </node>
-        </node>
-        <node role="result" roleId="vs0r.865293814733133843" type="75wo.NoEffortAssResult" typeId="75wo.865293814733182278" id="3815661793603772678">
-          <link role="requirement" roleId="75wo.865293814733182279" targetNodeId="1942554214112319815" resolveInfo="UserSuppliesFlightError" />
-        </node>
-      </node>
-      <node role="results" roleId="vs0r.865293814733118687" type="vs0r.AssessmentResultEntry" typeId="vs0r.865293814733118686" id="3815661793603772669">
-        <property name="status" nameId="vs0r.8389796016067541249" value="0" />
-        <property name="lastFound" nameId="vs0r.6619757161337247129" value="1369943756968" />
-        <node role="comment" roleId="vs0r.6619757161337461931" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="3815661793603772670">
-          <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="3815661793603772671">
-            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3815661793603772672" />
-          </node>
-        </node>
-        <node role="result" roleId="vs0r.865293814733133843" type="75wo.NoEffortAssResult" typeId="75wo.865293814733182278" id="3815661793603772673">
-          <link role="requirement" roleId="75wo.865293814733182279" targetNodeId="6898387700925052066" resolveInfo="UserSuppliesFlights" />
-        </node>
-      </node>
-      <node role="results" roleId="vs0r.865293814733118687" type="vs0r.AssessmentResultEntry" typeId="vs0r.865293814733118686" id="3815661793603772664">
-        <property name="status" nameId="vs0r.8389796016067541249" value="0" />
-        <property name="lastFound" nameId="vs0r.6619757161337247129" value="1369943756968" />
-        <node role="comment" roleId="vs0r.6619757161337461931" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="3815661793603772665">
-          <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="3815661793603772666">
-            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3815661793603772667" />
-          </node>
-        </node>
-        <node role="result" roleId="vs0r.865293814733133843" type="75wo.NoEffortAssResult" typeId="75wo.865293814733182278" id="3815661793603772668">
-          <link role="requirement" roleId="75wo.865293814733182279" targetNodeId="3126418051239998839" resolveInfo="FlightJudgement" />
-        </node>
-      </node>
-      <node role="results" roleId="vs0r.865293814733118687" type="vs0r.AssessmentResultEntry" typeId="vs0r.865293814733118686" id="3815661793603772659">
-        <property name="status" nameId="vs0r.8389796016067541249" value="0" />
-        <property name="lastFound" nameId="vs0r.6619757161337247129" value="1369943756967" />
-        <node role="comment" roleId="vs0r.6619757161337461931" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="3815661793603772660">
-          <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="3815661793603772661">
-            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3815661793603772662" />
-          </node>
-        </node>
-        <node role="result" roleId="vs0r.865293814733133843" type="75wo.NoEffortAssResult" typeId="75wo.865293814733182278" id="3815661793603772663">
-          <link role="requirement" roleId="75wo.865293814733182279" targetNodeId="8119642625901800287" resolveInfo="Judger" />
-        </node>
-      </node>
-      <node role="results" roleId="vs0r.865293814733118687" type="vs0r.AssessmentResultEntry" typeId="vs0r.865293814733118686" id="3815661793603772654">
-        <property name="status" nameId="vs0r.8389796016067541249" value="0" />
-        <property name="lastFound" nameId="vs0r.6619757161337247129" value="1369943756967" />
-        <node role="comment" roleId="vs0r.6619757161337461931" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="3815661793603772655">
-          <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="3815661793603772656">
-            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3815661793603772657" />
-          </node>
-        </node>
-        <node role="result" roleId="vs0r.865293814733133843" type="75wo.NoEffortAssResult" typeId="75wo.865293814733182278" id="3815661793603772658">
-          <link role="requirement" roleId="75wo.865293814733182279" targetNodeId="8119642625901800298" resolveInfo="Driver" />
-        </node>
-      </node>
-      <node role="results" roleId="vs0r.865293814733118687" type="vs0r.AssessmentResultEntry" typeId="vs0r.865293814733118686" id="3815661793603772649">
-        <property name="status" nameId="vs0r.8389796016067541249" value="0" />
-        <property name="lastFound" nameId="vs0r.6619757161337247129" value="1369943756967" />
-        <node role="comment" roleId="vs0r.6619757161337461931" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="3815661793603772650">
-          <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="3815661793603772651">
-            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3815661793603772652" />
-          </node>
-        </node>
-        <node role="result" roleId="vs0r.865293814733133843" type="75wo.NoEffortAssResult" typeId="75wo.865293814733182278" id="3815661793603772653">
-          <link role="requirement" roleId="75wo.865293814733182279" targetNodeId="8119642625901800280" resolveInfo="InMemoryStore" />
-        </node>
-      </node>
-      <node role="results" roleId="vs0r.865293814733118687" type="vs0r.AssessmentResultEntry" typeId="vs0r.865293814733118686" id="3815661793603772644">
-        <property name="status" nameId="vs0r.8389796016067541249" value="0" />
-        <property name="lastFound" nameId="vs0r.6619757161337247129" value="1369943756967" />
-        <node role="comment" roleId="vs0r.6619757161337461931" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="3815661793603772645">
-          <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="3815661793603772646">
-            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3815661793603772647" />
-          </node>
-        </node>
-        <node role="result" roleId="vs0r.865293814733133843" type="75wo.NoEffortAssResult" typeId="75wo.865293814733182278" id="3815661793603772648">
-          <link role="requirement" roleId="75wo.865293814733182279" targetNodeId="8119642625901795398" resolveInfo="Interpolator" />
-        </node>
-      </node>
-      <node role="results" roleId="vs0r.865293814733118687" type="vs0r.AssessmentResultEntry" typeId="vs0r.865293814733118686" id="3815661793603772639">
-        <property name="status" nameId="vs0r.8389796016067541249" value="0" />
-        <property name="lastFound" nameId="vs0r.6619757161337247129" value="1369943756967" />
-        <node role="comment" roleId="vs0r.6619757161337461931" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="3815661793603772640">
-          <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="3815661793603772641">
-            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3815661793603772642" />
-          </node>
-        </node>
-        <node role="result" roleId="vs0r.865293814733133843" type="75wo.NoEffortAssResult" typeId="75wo.865293814733182278" id="3815661793603772643">
-          <link role="requirement" roleId="75wo.865293814733182279" targetNodeId="6446320527598544106" resolveInfo="Nuller" />
-        </node>
-      </node>
-      <node role="results" roleId="vs0r.865293814733118687" type="vs0r.AssessmentResultEntry" typeId="vs0r.865293814733118686" id="3815661793603772634">
-        <property name="status" nameId="vs0r.8389796016067541249" value="0" />
-        <property name="lastFound" nameId="vs0r.6619757161337247129" value="1369943756967" />
-        <node role="comment" roleId="vs0r.6619757161337461931" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="3815661793603772635">
-          <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="3815661793603772636">
-            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3815661793603772637" />
-          </node>
-        </node>
-        <node role="result" roleId="vs0r.865293814733133843" type="75wo.NoEffortAssResult" typeId="75wo.865293814733182278" id="3815661793603772638">
-          <link role="requirement" roleId="75wo.865293814733182279" targetNodeId="8119642625901795403" resolveInfo="FlightData" />
-        </node>
-      </node>
-      <node role="results" roleId="vs0r.865293814733118687" type="vs0r.AssessmentResultEntry" typeId="vs0r.865293814733118686" id="3815661793603772629">
-        <property name="status" nameId="vs0r.8389796016067541249" value="0" />
-        <property name="lastFound" nameId="vs0r.6619757161337247129" value="1369943756967" />
-        <node role="comment" roleId="vs0r.6619757161337461931" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="3815661793603772630">
-          <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="3815661793603772631">
-            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3815661793603772632" />
-          </node>
-        </node>
-        <node role="result" roleId="vs0r.865293814733133843" type="75wo.NoEffortAssResult" typeId="75wo.865293814733182278" id="3815661793603772633">
-          <link role="requirement" roleId="75wo.865293814733182279" targetNodeId="1433966787984154184" resolveInfo="FullStop" />
-        </node>
-      </node>
-      <node role="results" roleId="vs0r.865293814733118687" type="vs0r.AssessmentResultEntry" typeId="vs0r.865293814733118686" id="3815661793603772624">
-        <property name="status" nameId="vs0r.8389796016067541249" value="0" />
-        <property name="lastFound" nameId="vs0r.6619757161337247129" value="1369943756967" />
-        <node role="comment" roleId="vs0r.6619757161337461931" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="3815661793603772625">
-          <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="3815661793603772626">
-            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3815661793603772627" />
-          </node>
-        </node>
-        <node role="result" roleId="vs0r.865293814733133843" type="75wo.NoEffortAssResult" typeId="75wo.865293814733182278" id="3815661793603772628">
-          <link role="requirement" roleId="75wo.865293814733182279" targetNodeId="1433966787984154182" resolveInfo="ShortLandingRoll" />
-        </node>
-      </node>
-      <node role="results" roleId="vs0r.865293814733118687" type="vs0r.AssessmentResultEntry" typeId="vs0r.865293814733118686" id="3815661793603772619">
-        <property name="status" nameId="vs0r.8389796016067541249" value="0" />
-        <property name="lastFound" nameId="vs0r.6619757161337247129" value="1369943756967" />
-        <node role="comment" roleId="vs0r.6619757161337461931" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="3815661793603772620">
-          <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="3815661793603772621">
-            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3815661793603772622" />
-          </node>
-        </node>
-        <node role="result" roleId="vs0r.865293814733133843" type="75wo.NoEffortAssResult" typeId="75wo.865293814733182278" id="3815661793603772623">
-          <link role="requirement" roleId="75wo.865293814733182279" targetNodeId="1433966787984154180" resolveInfo="Landing" />
-        </node>
-      </node>
-      <node role="results" roleId="vs0r.865293814733118687" type="vs0r.AssessmentResultEntry" typeId="vs0r.865293814733118686" id="3815661793603772614">
-        <property name="status" nameId="vs0r.8389796016067541249" value="0" />
-        <property name="lastFound" nameId="vs0r.6619757161337247129" value="1369943756967" />
-        <node role="comment" roleId="vs0r.6619757161337461931" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="3815661793603772615">
-          <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="3815661793603772616">
-            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3815661793603772617" />
-          </node>
-        </node>
-        <node role="result" roleId="vs0r.865293814733133843" type="75wo.NoEffortAssResult" typeId="75wo.865293814733182278" id="3815661793603772618">
-          <link role="requirement" roleId="75wo.865293814733182279" targetNodeId="1433966787984154178" resolveInfo="FasterThan200" />
-        </node>
-      </node>
-      <node role="results" roleId="vs0r.865293814733118687" type="vs0r.AssessmentResultEntry" typeId="vs0r.865293814733118686" id="3815661793603772609">
-        <property name="status" nameId="vs0r.8389796016067541249" value="0" />
-        <property name="lastFound" nameId="vs0r.6619757161337247129" value="1369943756966" />
-        <node role="comment" roleId="vs0r.6619757161337461931" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="3815661793603772610">
-          <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="3815661793603772611">
-            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3815661793603772612" />
-          </node>
-        </node>
-        <node role="result" roleId="vs0r.865293814733133843" type="75wo.NoEffortAssResult" typeId="75wo.865293814733182278" id="3815661793603772613">
-          <link role="requirement" roleId="75wo.865293814733182279" targetNodeId="1433966787984154176" resolveInfo="FasterThan100" />
-        </node>
-      </node>
-      <node role="results" roleId="vs0r.865293814733118687" type="vs0r.AssessmentResultEntry" typeId="vs0r.865293814733118686" id="3815661793603772604">
-        <property name="status" nameId="vs0r.8389796016067541249" value="0" />
-        <property name="lastFound" nameId="vs0r.6619757161337247129" value="1369943756966" />
-        <node role="comment" roleId="vs0r.6619757161337461931" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="3815661793603772605">
-          <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="3815661793603772606">
-            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3815661793603772607" />
-          </node>
-        </node>
-        <node role="result" roleId="vs0r.865293814733133843" type="75wo.NoEffortAssResult" typeId="75wo.865293814733182278" id="3815661793603772608">
-          <link role="requirement" roleId="75wo.865293814733182279" targetNodeId="1433966787984154174" resolveInfo="InFlightPoints" />
-        </node>
-      </node>
-      <node role="results" roleId="vs0r.865293814733118687" type="vs0r.AssessmentResultEntry" typeId="vs0r.865293814733118686" id="3815661793603772599">
-        <property name="status" nameId="vs0r.8389796016067541249" value="0" />
-        <property name="lastFound" nameId="vs0r.6619757161337247129" value="1369943756966" />
-        <node role="comment" roleId="vs0r.6619757161337461931" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="3815661793603772600">
-          <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="3815661793603772601">
-            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3815661793603772602" />
-          </node>
-        </node>
-        <node role="result" roleId="vs0r.865293814733133843" type="75wo.NoEffortAssResult" typeId="75wo.865293814733182278" id="3815661793603772603">
+        <node role="result" roleId="vs0r.865293814733133843" type="75wo.NoEffortAssResult" typeId="75wo.865293814733182278" id="1626886780547224818">
           <link role="requirement" roleId="75wo.865293814733182279" targetNodeId="7451725615401720594" resolveInfo="PointsFactor" />
         </node>
       </node>
-      <node role="results" roleId="vs0r.865293814733118687" type="vs0r.AssessmentResultEntry" typeId="vs0r.865293814733118686" id="3815661793603772594">
-        <property name="status" nameId="vs0r.8389796016067541249" value="0" />
-        <property name="lastFound" nameId="vs0r.6619757161337247129" value="1369943756966" />
-        <node role="comment" roleId="vs0r.6619757161337461931" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="3815661793603772595">
-          <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="3815661793603772596">
-            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3815661793603772597" />
+      <node role="results" roleId="vs0r.865293814733118687" type="vs0r.AssessmentResultEntry" typeId="vs0r.865293814733118686" id="1626886780547224809">
+        <property name="status" nameId="vs0r.8389796016067541249" value="1" />
+        <property name="lastFound" nameId="vs0r.6619757161337247129" value="1370273570809" />
+        <node role="comment" roleId="vs0r.6619757161337461931" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="1626886780547224810">
+          <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="1626886780547224811">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1626886780547224812" />
           </node>
         </node>
-        <node role="result" roleId="vs0r.865293814733133843" type="75wo.NoEffortAssResult" typeId="75wo.865293814733182278" id="3815661793603772598">
+        <node role="result" roleId="vs0r.865293814733133843" type="75wo.NoEffortAssResult" typeId="75wo.865293814733182278" id="1626886780547224813">
           <link role="requirement" roleId="75wo.865293814733182279" targetNodeId="1433966787984154172" resolveInfo="PointsForTakeoff" />
         </node>
       </node>
-      <node role="query" roleId="vs0r.865293814733115677" type="75wo.NoEffortAssQuery" typeId="75wo.865293814733131610" id="3815661793603772593" />
+      <node role="results" roleId="vs0r.865293814733118687" type="vs0r.AssessmentResultEntry" typeId="vs0r.865293814733118686" id="1626886780547224803">
+        <property name="status" nameId="vs0r.8389796016067541249" value="2" />
+        <property name="lastFound" nameId="vs0r.6619757161337247129" value="1370273570811" />
+        <node role="comment" roleId="vs0r.6619757161337461931" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="1626886780547224804">
+          <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="1626886780547224805">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1626886780547224806" />
+          </node>
+        </node>
+        <node role="result" roleId="vs0r.865293814733133843" type="75wo.NoEffortAssResult" typeId="75wo.865293814733182278" id="1626886780547224807">
+          <link role="requirement" roleId="75wo.865293814733182279" targetNodeId="3126418051239998853" resolveInfo="Aircraft" />
+        </node>
+      </node>
+      <node role="results" roleId="vs0r.865293814733118687" type="vs0r.AssessmentResultEntry" typeId="vs0r.865293814733118686" id="1626886780547224798">
+        <property name="status" nameId="vs0r.8389796016067541249" value="2" />
+        <property name="lastFound" nameId="vs0r.6619757161337247129" value="1370273570811" />
+        <node role="comment" roleId="vs0r.6619757161337461931" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="1626886780547224799">
+          <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="1626886780547224800">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1626886780547224801" />
+          </node>
+        </node>
+        <node role="result" roleId="vs0r.865293814733133843" type="75wo.NoEffortAssResult" typeId="75wo.865293814733182278" id="1626886780547224802">
+          <link role="requirement" roleId="75wo.865293814733182279" targetNodeId="6898387700925052068" resolveInfo="Pilot" />
+        </node>
+      </node>
+      <node role="results" roleId="vs0r.865293814733118687" type="vs0r.AssessmentResultEntry" typeId="vs0r.865293814733118686" id="1626886780547224793">
+        <property name="status" nameId="vs0r.8389796016067541249" value="0" />
+        <property name="lastFound" nameId="vs0r.6619757161337247129" value="1370273570811" />
+        <node role="comment" roleId="vs0r.6619757161337461931" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="1626886780547224794">
+          <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="1626886780547224795">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1626886780547224796" />
+          </node>
+        </node>
+        <node role="result" roleId="vs0r.865293814733133843" type="75wo.NoEffortAssResult" typeId="75wo.865293814733182278" id="1626886780547224797">
+          <link role="requirement" roleId="75wo.865293814733182279" targetNodeId="6898387700925062305" resolveInfo="UserInterface" />
+        </node>
+      </node>
+      <node role="results" roleId="vs0r.865293814733118687" type="vs0r.AssessmentResultEntry" typeId="vs0r.865293814733118686" id="1626886780547224788">
+        <property name="status" nameId="vs0r.8389796016067541249" value="0" />
+        <property name="lastFound" nameId="vs0r.6619757161337247129" value="1370273570811" />
+        <node role="comment" roleId="vs0r.6619757161337461931" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="1626886780547224789">
+          <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="1626886780547224790">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1626886780547224791" />
+          </node>
+        </node>
+        <node role="result" roleId="vs0r.865293814733133843" type="75wo.NoEffortAssResult" typeId="75wo.865293814733182278" id="1626886780547224792">
+          <link role="requirement" roleId="75wo.865293814733182279" targetNodeId="6898387700925260480" resolveInfo="DataStore" />
+        </node>
+      </node>
+      <node role="results" roleId="vs0r.865293814733118687" type="vs0r.AssessmentResultEntry" typeId="vs0r.865293814733118686" id="1626886780547224783">
+        <property name="status" nameId="vs0r.8389796016067541249" value="0" />
+        <property name="lastFound" nameId="vs0r.6619757161337247129" value="1370273570811" />
+        <node role="comment" roleId="vs0r.6619757161337461931" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="1626886780547224784">
+          <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="1626886780547224785">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1626886780547224786" />
+          </node>
+        </node>
+        <node role="result" roleId="vs0r.865293814733133843" type="75wo.NoEffortAssResult" typeId="75wo.865293814733182278" id="1626886780547224787">
+          <link role="requirement" roleId="75wo.865293814733182279" targetNodeId="1942554214112320148" resolveInfo="PilotCollectsFlightData" />
+        </node>
+      </node>
+      <node role="query" roleId="vs0r.865293814733115677" type="75wo.NoEffortAssQuery" typeId="75wo.865293814733131610" id="1626886780547224682" />
+      <node role="summaries" roleId="vs0r.671216505796427450" type="vs0r.DefaultAssessmentSummary" typeId="vs0r.671216505796623802" id="1626886780547224909">
+        <property name="totalCount" nameId="vs0r.671216505796623805" value="25" />
+        <property name="newlyAdded" nameId="vs0r.671216505796623807" value="20" />
+        <property name="ok" nameId="vs0r.671216505796623806" value="2" />
+      </node>
     </node>
   </root>
 </model>
