@@ -35,7 +35,6 @@
     </node>
     <node type="75wo.RequirementsModule" typeId="75wo.8745401669462963169" id="6898387700925052063">
       <property name="name" nameId="tpck.1169194664001" value="UseCases" />
-      <property name="showDetails" nameId="75wo.3348865852192832937" value="true" />
     </node>
     <node type="2c95.Document" typeId="2c95.3350625596579911728" id="5785245534400491064">
       <property name="name" nameId="tpck.1169194664001" value="requirementsReport" />
@@ -601,33 +600,6 @@
           <property name="name" nameId="tpck.1169194664001" value="UserSuppliesFlightError" />
           <property name="summmary" nameId="75wo.3402431285977818823" value="An error occurs during submission" />
           <node role="kind" roleId="75wo.8921256082857728256" type="4l29.ScenarioRequirementKind" typeId="4l29.5744000828452835552" id="1942554214112319817" />
-          <node role="additionalData" roleId="75wo.8745401669463270518" type="4l29.Scenario" typeId="4l29.5744000828452824073" id="1942554214112319818">
-            <property name="name" nameId="tpck.1169194664001" value="UserSuppliesFlightError" />
-            <node role="initials" roleId="4l29.5744000828452824190" type="4l29.InitialContext" typeId="4l29.5744000828452824121" id="1942554214112319819">
-              <link role="initiator" roleId="4l29.5744000828452824122" targetNodeId="6898387700925062299" resolveInfo="Pilot" />
-              <node role="contents" roleId="4l29.5744000828452862537" type="4l29.SequentialCall" typeId="4l29.5744000828452842290" id="1942554214112319820">
-                <link role="capability" roleId="4l29.5744000828452854655" targetNodeId="6898387700925313669" resolveInfo="submitFlight" />
-                <node role="targetParticipant" roleId="4l29.5744000828452849518" type="4l29.ParticipantRef" typeId="4l29.5744000828452824074" id="1942554214112319821">
-                  <link role="participant" roleId="4l29.5744000828452824075" targetNodeId="6898387700925260474" resolveInfo="UI" />
-                </node>
-                <node role="returns" roleId="4l29.6446320527598513761" type="4l29.StatusValueError" typeId="4l29.6446320527598544129" id="1942554214112319827">
-                  <property name="msg" nameId="4l29.6446320527598544131" value="init failed" />
-                </node>
-                <node role="args" roleId="4l29.5744000828452981042" type="4l29.OwnedItemRef" typeId="4l29.6446320527598618610" id="1942554214112319826">
-                  <link role="data" roleId="4l29.6446320527598618612" targetNodeId="6898387700925412273" resolveInfo="exampleFlight" />
-                </node>
-                <node role="contents" roleId="4l29.5744000828452862537" type="4l29.ImplStep" typeId="4l29.8009804792183241983" id="1942554214112320139">
-                  <property name="text" nameId="4l29.8009804792183241985" value="maybe the database is full" />
-                </node>
-                <node role="contents" roleId="4l29.5744000828452862537" type="4l29.ImplStep" typeId="4l29.8009804792183241983" id="1942554214112320141">
-                  <property name="text" nameId="4l29.8009804792183241985" value="or the connection to the database failed" />
-                </node>
-              </node>
-              <node role="contents" roleId="4l29.5744000828452862537" type="4l29.Error" typeId="4l29.8119642625901719122" id="1942554214112320137">
-                <property name="message" nameId="4l29.8119642625901719133" value="FAILED" />
-              </node>
-            </node>
-          </node>
           <node role="doc" roleId="75wo.6657644269295007507" type="75wo.ReqDocParagraph" typeId="75wo.6657644269295006436" id="4559893981897095990">
             <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="4559893981897095991">
               <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="4559893981897095992">
@@ -636,6 +608,9 @@
                 </node>
               </node>
             </node>
+          </node>
+          <node role="additionalData" roleId="75wo.8745401669463270518" type="4l29.Scenario" typeId="4l29.5744000828452824073" id="1626886780547238932">
+            <property name="name" nameId="tpck.1169194664001" value="UserSuppliesFlightError" />
           </node>
         </node>
         <node role="kind" roleId="75wo.8921256082857728256" type="4l29.UseCaseKind" typeId="4l29.6514529288613812198" id="6898387700925052067" />

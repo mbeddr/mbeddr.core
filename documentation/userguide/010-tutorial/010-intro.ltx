@@ -133,7 +133,9 @@ recommend you stay with the distribution discussed above.
   directory separators even on Windows!}). The easiest way to find all the places 
   where this has to be adapted is to search for all \ic{build.properties.example} under the mbeddr
   root mbeddr directory; remove the \ic{.example} and fill in the respective
-  directories. 
+  directories. Note also that the shell scripts rely on Apache ant. You have
+  to install it (from \ic{http://ant.apache.org/}) on your machine and make sure
+  that the \ic{ant} script is in your path.
 
   \item When running the above-mentioned script, you should have an internet
   connection because the script also downloads a few additional MPS plugins and
