@@ -32,6 +32,7 @@
     <node type="75wo.RequirementsModule" typeId="75wo.8745401669462963169" id="8119642625901794439">
       <property name="name" nameId="tpck.1169194664001" value="ArchitecturalComponents" />
       <property name="showDetails" nameId="75wo.3348865852192832937" value="true" />
+      <link role="config" roleId="2c95.6657644269295214800" targetNodeId="5785245534400491065" resolveInfo="Config" />
     </node>
     <node type="75wo.RequirementsModule" typeId="75wo.8745401669462963169" id="6898387700925052063">
       <property name="name" nameId="tpck.1169194664001" value="UseCases" />
