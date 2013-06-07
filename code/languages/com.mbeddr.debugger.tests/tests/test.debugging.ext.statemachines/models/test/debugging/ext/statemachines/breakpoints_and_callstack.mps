@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model modelUID="r:acc5db2e-8b9b-4322-abd4-1df77627ed1b(test.debugging.ext.statemachines.breakpoints)">
+<model modelUID="r:acc5db2e-8b9b-4322-abd4-1df77627ed1b(test.debugging.ext.statemachines.breakpoints_and_callstack)">
   <persistence version="7" />
   <devkit namespace="87468ddd-5b04-4352-a61d-70ff981afab6(com.mbeddr.debugger-testing)" />
   <devkit namespace="43d889ae-8e6a-4f6e-a649-d59342d8728d(com.mbeddr.statemachines)" />
