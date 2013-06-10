@@ -77,6 +77,25 @@
           <property name="name" nameId="tpck.1169194664001" value="dummy" />
           <property name="text" nameId="2c95.3350625596580064225" value="Dummy" />
           <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Invisble" typeId="2c95.3126418051240156265" id="3126418051240419978">
+            <node role="contents" roleId="2c95.3126418051240385698" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="8587612447638963187">
+              <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="8587612447638963188">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8587612447638963189" />
+              </node>
+              <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.CopySrcNodeMacro" typeId="tpf8.1114706874351" id="8587612447638963191">
+                <node role="sourceNodeQuery" roleId="tpf8.1168024447342" type="tpf8.SourceSubstituteMacro_SourceNodeQuery" typeId="tpf8.1168024337012" id="8587612447638963194">
+                  <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="8587612447638963195">
+                    <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="8587612447638963196">
+                      <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="8587612447638963197">
+                        <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="8587612447638963198">
+                          <link role="link" roleId="tp25.1138056516764" targetNodeId="75wo.2588579461811806005" />
+                        </node>
+                        <node role="operand" roleId="tpee.1197027771414" type="tpf8.TemplateFunctionParameter_sourceNode" typeId="tpf8.1167169188348" id="8587612447638963199" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
             <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.TemplateFragment" typeId="tpf8.1095672379244" id="3126418051240434191" />
             <node role="contents" roleId="2c95.3126418051240385698" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="3126418051240470066">
               <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="3126418051240470067">
