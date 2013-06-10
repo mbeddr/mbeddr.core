@@ -70,7 +70,7 @@
       <node role="validation" roleId="rpmx.4360423713604451010" type="rpmx.ValidationConfiguration" typeId="rpmx.4360423713604419372" id="9082533278989534551">
         <node role="validations" roleId="rpmx.4360423713604419402" type="rpmx.ValidateDebuggerSuspended" typeId="rpmx.7048220250906049590" id="9082533278989534552">
           <node role="marker" roleId="rpmx.7048220250906049591" type="rpmx.MarkerRef" typeId="rpmx.4193597469137492644" id="9082533278989548242">
-            <link role="marker" roleId="rpmx.4193597469137492645" targetNodeId="9082533278989535643" resolveInfo="transCondFailing" />
+            <link role="marker" roleId="rpmx.4193597469137492645" targetNodeId="6151459193021205046" resolveInfo="transCondFailing" />
           </node>
         </node>
       </node>
@@ -82,7 +82,7 @@
       <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="9082533278989548248" />
       <node role="suspension" roleId="rpmx.105850086902839308" type="rpmx.SuspensionPointConfiguration" typeId="rpmx.105850086903250145" id="9082533278989548249">
         <node role="suspensionPoint" roleId="rpmx.105850086903250160" type="rpmx.MarkerReference" typeId="rpmx.105850086903250161" id="9082533278989548250">
-          <link role="marker" roleId="rpmx.105850086903274948" targetNodeId="9082533278989535643" resolveInfo="transCondFailing" />
+          <link role="marker" roleId="rpmx.105850086903274948" targetNodeId="6151459193021205046" resolveInfo="transCondFailing" />
         </node>
       </node>
       <node role="stepping" roleId="rpmx.105850086903379490" type="rpmx.SteppingConfiguration" typeId="rpmx.105850086903379387" id="9082533278989548251">
@@ -93,7 +93,7 @@
       <node role="validation" roleId="rpmx.4360423713604451010" type="rpmx.ValidationConfiguration" typeId="rpmx.4360423713604419372" id="9082533278989548253">
         <node role="validations" roleId="rpmx.4360423713604419402" type="rpmx.ValidateDebuggerSuspended" typeId="rpmx.7048220250906049590" id="9082533278989548254">
           <node role="marker" roleId="rpmx.7048220250906049591" type="rpmx.MarkerRef" typeId="rpmx.4193597469137492644" id="9082533278989548255">
-            <link role="marker" roleId="rpmx.4193597469137492645" targetNodeId="2032275818418966463" resolveInfo="transCondSucc" />
+            <link role="marker" roleId="rpmx.4193597469137492645" targetNodeId="6151459193021205047" resolveInfo="transCondSucc" />
           </node>
         </node>
       </node>
@@ -105,7 +105,7 @@
       <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="9082533278989549733" />
       <node role="suspension" roleId="rpmx.105850086902839308" type="rpmx.SuspensionPointConfiguration" typeId="rpmx.105850086903250145" id="9082533278989549734">
         <node role="suspensionPoint" roleId="rpmx.105850086903250160" type="rpmx.MarkerReference" typeId="rpmx.105850086903250161" id="2536856479942258105">
-          <link role="marker" roleId="rpmx.105850086903274948" targetNodeId="2032275818418966463" resolveInfo="transCondSucc" />
+          <link role="marker" roleId="rpmx.105850086903274948" targetNodeId="6151459193021205047" resolveInfo="transCondSucc" />
         </node>
       </node>
       <node role="stepping" roleId="rpmx.105850086903379490" type="rpmx.SteppingConfiguration" typeId="rpmx.105850086903379387" id="9082533278989549736">
@@ -366,9 +366,9 @@
             </node>
             <node role="left" roleId="mj1l.8860443239512128064" type="clqz.StatemachineVarRef" typeId="clqz.1786180596061383227" id="9082533278989535642">
               <link role="var" roleId="clqz.1786180596061383228" targetNodeId="4663449261074423772" resolveInfo="aVar" />
-              <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="rpmx.MarkerAnnotation" typeId="rpmx.4193597469137492628" id="9082533278989535643">
-                <property name="name" nameId="tpck.1169194664001" value="transCondFailing" />
-              </node>
+            </node>
+            <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="rpmx.MarkerAnnotation" typeId="rpmx.4193597469137492628" id="6151459193021205046">
+              <property name="name" nameId="tpck.1169194664001" value="transCondFailing" />
             </node>
           </node>
         </node>
@@ -412,9 +412,9 @@
             </node>
             <node role="left" roleId="mj1l.8860443239512128064" type="clqz.StatemachineVarRef" typeId="clqz.1786180596061383227" id="4141878798835856409">
               <link role="var" roleId="clqz.1786180596061383228" targetNodeId="4663449261074423772" resolveInfo="aVar" />
-              <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="rpmx.MarkerAnnotation" typeId="rpmx.4193597469137492628" id="2032275818418966463">
-                <property name="name" nameId="tpck.1169194664001" value="transCondSucc" />
-              </node>
+            </node>
+            <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="rpmx.MarkerAnnotation" typeId="rpmx.4193597469137492628" id="6151459193021205047">
+              <property name="name" nameId="tpck.1169194664001" value="transCondSucc" />
             </node>
           </node>
         </node>
