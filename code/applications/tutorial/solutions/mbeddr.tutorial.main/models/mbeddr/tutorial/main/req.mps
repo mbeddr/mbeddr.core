@@ -55,7 +55,7 @@
     </node>
     <node type="51wr.BuildConfiguration" typeId="51wr.7717755763392524104" id="5785245534400491126" />
     <node type="vs0r.AssessmentContainer" typeId="vs0r.865293814733114043" id="3815661793603772590">
-      <property name="name" nameId="tpck.1169194664001" value="Assessments" />
+      <property name="name" nameId="tpck.1169194664001" value="EffortsAndVisualizations" />
     </node>
   </roots>
   <root id="1433966787984154171">
