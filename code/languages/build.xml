@@ -78,7 +78,7 @@
 	  <ant antfile="build.xml" dir="com.mbeddr.analyses" target="delete-mps-generated-code" />
   </target>	
 	  
-  <target name="build-languages" >
+  <target name="build-languages" depends="delete-mps-generated-code" >
 	  <ant antfile="build.xml" dir="com.mbeddr.mpsutil" target="build-languages" />
 	  <ant antfile="build.xml" dir="com.mbeddr.debugger" target="build-languages" />
 	  <ant antfile="build.xml" dir="com.mbeddr.core" target="build-languages" />
