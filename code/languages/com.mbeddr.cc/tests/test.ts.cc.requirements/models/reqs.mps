@@ -16,12 +16,10 @@
     <node type="75wo.RequirementsModule" typeId="75wo.8745401669462963169" id="8745401669463114528">
       <property name="name" nameId="tpck.1169194664001" value="HighLevelRequirements" />
       <property name="showTraces" value="true" />
-      <property name="showDetails" nameId="75wo.3348865852192832937" value="true" />
     </node>
     <node type="75wo.RequirementsModule" typeId="75wo.8745401669462963169" id="1165432222362120317">
       <property name="name" nameId="tpck.1169194664001" value="DetailedRequirements" />
       <property name="showTraces" value="true" />
-      <property name="showDetails" nameId="75wo.3348865852192832937" value="true" />
     </node>
     <node type="51wr.BuildConfiguration" typeId="51wr.7717755763392524104" id="8200057468984897506" />
     <node type="mj1l.TypeSizeConfiguration" typeId="mj1l.3335993110369795380" id="8200057468984898930" />

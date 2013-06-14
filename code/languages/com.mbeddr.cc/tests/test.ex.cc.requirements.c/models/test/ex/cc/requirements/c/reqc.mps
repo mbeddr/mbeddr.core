@@ -26,7 +26,6 @@
     </node>
     <node type="75wo.RequirementsModule" typeId="75wo.8745401669462963169" id="3534497005926839233">
       <property name="name" nameId="tpck.1169194664001" value="Requirements" />
-      <property name="showDetails" nameId="75wo.3348865852192832937" value="true" />
     </node>
     <node type="mj1l.TypeSizeConfiguration" typeId="mj1l.3335993110369795380" id="3534497005926839241" />
     <node type="51wr.BuildConfiguration" typeId="51wr.7717755763392524104" id="3534497005926839283" />
