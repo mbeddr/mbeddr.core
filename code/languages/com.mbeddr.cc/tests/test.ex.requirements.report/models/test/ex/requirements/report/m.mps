@@ -33,7 +33,6 @@
   </roots>
   <root id="5785245534400482590">
     <node role="requirements" roleId="75wo.8745401669462963171" type="75wo.Requirement" typeId="75wo.8745401669462952101" id="5785245534400482591">
-      <property name="priority" value="0" />
       <property name="open" value="false" />
       <property name="name" nameId="tpck.1169194664001" value="R1" />
       <property name="summmary" nameId="75wo.3402431285977818823" value="Das ist das erste Requirements" />
@@ -49,7 +48,6 @@
       </node>
     </node>
     <node role="requirements" roleId="75wo.8745401669462963171" type="75wo.Requirement" typeId="75wo.8745401669462952101" id="5785245534400482596">
-      <property name="priority" value="0" />
       <property name="open" value="true" />
       <property name="name" nameId="tpck.1169194664001" value="R2" />
       <property name="summmary" nameId="75wo.3402431285977818823" value="Hier ist das zweite" />
