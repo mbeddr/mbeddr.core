@@ -790,8 +790,8 @@
       </node>
       <node role="validation" roleId="rpmx.4360423713604451010" type="rpmx.ValidationConfiguration" typeId="rpmx.4360423713604419372" id="2468281964189465475">
         <node role="validations" roleId="rpmx.4360423713604419402" type="rpmx.ValidateDebuggerSuspended" typeId="rpmx.7048220250906049590" id="2468281964189465476">
-          <node role="marker" roleId="rpmx.7048220250906049591" type="rpmx.MarkerRef" typeId="rpmx.4193597469137492644" id="6603573713217273566">
-            <link role="marker" roleId="rpmx.4193597469137492645" targetNodeId="6603573713217273565" resolveInfo="onTestSM" />
+          <node role="marker" roleId="rpmx.7048220250906049591" type="rpmx.MarkerRef" typeId="rpmx.4193597469137492644" id="2392608156124780472">
+            <link role="marker" roleId="rpmx.4193597469137492645" targetNodeId="2468281964189375608" resolveInfo="afterSteps" />
           </node>
         </node>
       </node>
