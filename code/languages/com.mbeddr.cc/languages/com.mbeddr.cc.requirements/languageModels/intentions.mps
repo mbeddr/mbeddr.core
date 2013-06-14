@@ -76,7 +76,7 @@
       <link role="forConcept" roleId="tp3j.2522969319638198290" targetNodeId="75wo.8745401669462952101" resolveInfo="Requirement" />
     </node>
     <node type="tp3j.IntentionDeclaration" typeId="tp3j.1192794744107" id="4557518620047757721">
-      <property name="name" nameId="tpck.1169194664001" value="addCommentToComment" />
+      <property name="name" nameId="tpck.1169194664001" value="addReplyComment" />
       <link role="forConcept" roleId="tp3j.2522969319638198290" targetNodeId="75wo.4557518620047668880" resolveInfo="CommentReqData" />
     </node>
     <node type="tp3j.IntentionDeclaration" typeId="tp3j.1192794744107" id="920436694379176499">
@@ -737,7 +737,7 @@
       <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="4557518620047757723">
         <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="4557518620047757724">
           <node role="expression" roleId="tpee.1068580123156" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="4557518620047757729">
-            <property name="value" nameId="tpee.1070475926801" value="Add Comment after this one " />
+            <property name="value" nameId="tpee.1070475926801" value="Reply Comment after this one " />
           </node>
         </node>
       </node>

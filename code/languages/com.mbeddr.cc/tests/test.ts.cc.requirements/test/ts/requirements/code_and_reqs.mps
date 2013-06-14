@@ -31,7 +31,6 @@
   </roots>
   <root id="4155609647750946107">
     <node role="requirements" roleId="75wo.8745401669462963171" type="75wo.Requirement" typeId="75wo.8745401669462952101" id="4155609647750946108">
-      <property name="priority" value="0" />
       <property name="open" value="false" />
       <property name="name" nameId="tpck.1169194664001" value="simple_req" />
       <property name="summmary" nameId="75wo.3402431285977818823" value="a simple requirement" />

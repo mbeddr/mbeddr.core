@@ -16,7 +16,6 @@
   </roots>
   <root id="3501833067872368458">
     <node role="requirements" roleId="75wo.8745401669462963171" type="75wo.Requirement" typeId="75wo.8745401669462952101" id="3501833067872368459">
-      <property name="priority" value="0" />
       <property name="open" value="false" />
       <property name="name" nameId="tpck.1169194664001" value="AOO_Mode" />
       <property name="summmary" nameId="75wo.3402431285977818823" value="the pacer send atrial signal exactly (no sooner and no later) with a defined rate" />

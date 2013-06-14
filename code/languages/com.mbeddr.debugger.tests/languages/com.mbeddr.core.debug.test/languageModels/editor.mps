@@ -167,6 +167,10 @@
       <property name="virtualPackage" nameId="tpck.1193676396447" value="configuration.validation.element" />
       <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="rpmx.2250775661460263464" resolveInfo="DebuggerDetachedValidation" />
     </node>
+    <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="3450485464476995122">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="configuration.stepping.element" />
+      <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="rpmx.3450485464476995120" resolveInfo="ResumeCommand" />
+    </node>
   </roots>
   <root id="4193597469137492659">
     <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="4193597469137492660">
@@ -1748,7 +1752,7 @@
               <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="5710167937130266056">
                 <node role="expression" roleId="tpee.1068580123156" type="tpee.GreaterThanExpression" typeId="tpee.1081506762703" id="5710167937130266057">
                   <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="5710167937130266058">
-                    <property name="value" nameId="tpee.1068580320021" value="1" />
+                    <property name="value" nameId="tpee.1068580320021" value="0" />
                   </node>
                   <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.DotExpression" typeId="tpee.1197027756228" id="5710167937130266059">
                     <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="5710167937130266060">
@@ -2094,6 +2098,11 @@
   <root id="2250775661460263466">
     <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="2250775661460263468">
       <property name="text" nameId="tpc2.1073389577007" value="debugger detached" />
+    </node>
+  </root>
+  <root id="3450485464476995122">
+    <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="3450485464476995124">
+      <property name="text" nameId="tpc2.1073389577007" value="resume" />
     </node>
   </root>
 </model>
