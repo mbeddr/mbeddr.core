@@ -796,7 +796,6 @@
   </root>
   <root id="5785245534401214224">
     <node role="requirements" roleId="75wo.8745401669462963171" type="75wo.Requirement" typeId="75wo.8745401669462952101" id="5785245534401214226">
-      <property name="priority" value="0" />
       <property name="open" value="true" />
       <property name="name" nameId="tpck.1169194664001" value="Scenario" />
       <property name="summmary" nameId="75wo.3402431285977818823" value="Summary" />

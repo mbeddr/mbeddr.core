@@ -6,20 +6,18 @@
   <devkit namespace="a4dac888-0788-4852-b4c0-f386bf6f2c0b(com.mbeddr.cc.reqtrace)" />
   <import index="75wo" modelUID="r:eaa205a4-f15c-47d3-99e2-e648881b5997(com.mbeddr.cc.requirements.structure)" version="11" implicit="yes" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
-  <import index="26ao" modelUID="r:7c15925b-a4a5-4da3-88aa-931a5a9ed982(com.mbeddr.cc.trace.structure)" version="5" implicit="yes" />
   <import index="87nw" modelUID="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" version="5" implicit="yes" />
   <import index="2c95" modelUID="r:5f7188a9-e7b4-4a2e-bef9-38d2cf379fdc(com.mbeddr.doc.structure)" version="12" implicit="yes" />
   <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="7" implicit="yes" />
   <roots>
     <node type="75wo.RequirementsModule" typeId="75wo.8745401669462963169" id="8028557988791054195">
       <property name="name" nameId="tpck.1169194664001" value="Section_3_System_Requirements" />
-      <property name="showTraces" nameId="26ao.3291018189726920316" value="true" />
+      <property name="showTraces" value="true" />
       <property name="showDetails" nameId="75wo.3348865852192832937" value="true" />
     </node>
   </roots>
   <root id="8028557988791054195">
     <node role="requirements" roleId="75wo.8745401669462963171" type="75wo.Requirement" typeId="75wo.8745401669462952101" id="8028557988791054196">
-      <property name="priority" value="0" />
       <property name="open" value="false" />
       <property name="name" nameId="tpck.1169194664001" value="PulseWidth" />
       <property name="summmary" nameId="75wo.3402431285977818823" value="Timings of the Atrial and Ventricle pulse widths" />
@@ -35,7 +33,6 @@
       </node>
     </node>
     <node role="requirements" roleId="75wo.8745401669462963171" type="75wo.Requirement" typeId="75wo.8745401669462952101" id="8028557988791054210">
-      <property name="priority" value="0" />
       <property name="open" value="true" />
       <property name="name" nameId="tpck.1169194664001" value="OperatingModes" />
       <property name="summmary" nameId="75wo.3402431285977818823" value="The operating modes the pacemaker has to support" />
@@ -51,7 +48,6 @@
       </node>
     </node>
     <node role="requirements" roleId="75wo.8745401669462963171" type="75wo.Requirement" typeId="75wo.8745401669462952101" id="8028557988791054213">
-      <property name="priority" value="0" />
       <property name="open" value="false" />
       <property name="name" nameId="tpck.1169194664001" value="PulseAmplitude" />
       <property name="summmary" nameId="75wo.3402431285977818823" value="Setting the Atrial and Ventricle pulse amplitudes" />
@@ -67,7 +63,6 @@
       </node>
     </node>
     <node role="requirements" roleId="75wo.8745401669462963171" type="75wo.Requirement" typeId="75wo.8745401669462952101" id="6021234015572534776">
-      <property name="priority" value="0" />
       <property name="open" value="false" />
       <property name="name" nameId="tpck.1169194664001" value="RateSensing" />
       <property name="summmary" nameId="75wo.3402431285977818823" value="The manner in which the sensing should be carried out" />
@@ -83,7 +78,6 @@
       </node>
     </node>
     <node role="requirements" roleId="75wo.8745401669462963171" type="75wo.Requirement" typeId="75wo.8745401669462952101" id="6021234015572537057">
-      <property name="priority" value="0" />
       <property name="open" value="false" />
       <property name="name" nameId="tpck.1169194664001" value="NoResponseToSensing" />
       <property name="summmary" nameId="75wo.3402431285977818823" value="Asynchronous pacing" />
@@ -99,7 +93,6 @@
       </node>
     </node>
     <node role="requirements" roleId="75wo.8745401669462963171" type="75wo.Requirement" typeId="75wo.8745401669462952101" id="6021234015572537061">
-      <property name="priority" value="0" />
       <property name="open" value="false" />
       <property name="name" nameId="tpck.1169194664001" value="TriggeredResponseToSensing" />
       <property name="summmary" nameId="75wo.3402431285977818823" value="Sense-Trigger pacing" />
@@ -115,7 +108,6 @@
       </node>
     </node>
     <node role="requirements" roleId="75wo.8745401669462963171" type="75wo.Requirement" typeId="75wo.8745401669462952101" id="6021234015572537063">
-      <property name="priority" value="0" />
       <property name="open" value="false" />
       <property name="name" nameId="tpck.1169194664001" value="InhibitedResponseToSensing" />
       <property name="summmary" nameId="75wo.3402431285977818823" value="Sense-Inibit pacing" />
@@ -131,7 +123,6 @@
       </node>
     </node>
     <node role="requirements" roleId="75wo.8745401669462963171" type="75wo.Requirement" typeId="75wo.8745401669462952101" id="6021234015572537065">
-      <property name="priority" value="0" />
       <property name="open" value="false" />
       <property name="name" nameId="tpck.1169194664001" value="TrackedResponsetoSensing" />
       <property name="summmary" nameId="75wo.3402431285977818823" value="Atrial-Track-Ventricle pacing" />
@@ -147,7 +138,6 @@
       </node>
     </node>
     <node role="requirements" roleId="75wo.8745401669462963171" type="75wo.Requirement" typeId="75wo.8745401669462952101" id="6021234015572537067">
-      <property name="priority" value="0" />
       <property name="open" value="false" />
       <property name="name" nameId="tpck.1169194664001" value="BradycardiaStates" />
       <property name="summmary" nameId="75wo.3402431285977818823" value="The states in which one can find the pacer" />
@@ -163,7 +153,6 @@
       </node>
     </node>
     <node role="requirements" roleId="75wo.8745401669462963171" type="75wo.Requirement" typeId="75wo.8745401669462952101" id="6021234015572537069">
-      <property name="priority" value="0" />
       <property name="open" value="false" />
       <property name="name" nameId="tpck.1169194664001" value="BradycardiaPermanentState" />
       <property name="summmary" nameId="75wo.3402431285977818823" value="Permanent State definition" />
@@ -179,7 +168,6 @@
       </node>
     </node>
     <node role="requirements" roleId="75wo.8745401669462963171" type="75wo.Requirement" typeId="75wo.8745401669462952101" id="6021234015572537073">
-      <property name="priority" value="0" />
       <property name="open" value="false" />
       <property name="name" nameId="tpck.1169194664001" value="BradycardiaTemporaryState" />
       <property name="summmary" nameId="75wo.3402431285977818823" value="Temporary State definition" />
@@ -195,7 +183,6 @@
       </node>
     </node>
     <node role="requirements" roleId="75wo.8745401669462963171" type="75wo.Requirement" typeId="75wo.8745401669462952101" id="6021234015572537075">
-      <property name="priority" value="0" />
       <property name="open" value="false" />
       <property name="name" nameId="tpck.1169194664001" value="BradycardiaPaceNowState" />
       <property name="summmary" nameId="75wo.3402431285977818823" value="Pace-Now State definition" />
@@ -211,7 +198,6 @@
       </node>
     </node>
     <node role="requirements" roleId="75wo.8745401669462963171" type="75wo.Requirement" typeId="75wo.8745401669462952101" id="6021234015572537077">
-      <property name="priority" value="0" />
       <property name="open" value="false" />
       <property name="name" nameId="tpck.1169194664001" value="BradycardiaMagnetState" />
       <property name="summmary" nameId="75wo.3402431285977818823" value="Magnet State definition" />
@@ -227,7 +213,6 @@
       </node>
     </node>
     <node role="requirements" roleId="75wo.8745401669462963171" type="75wo.Requirement" typeId="75wo.8745401669462952101" id="6021234015572537079">
-      <property name="priority" value="0" />
       <property name="open" value="false" />
       <property name="name" nameId="tpck.1169194664001" value="BradycardiaPowerOnResetState" />
       <property name="summmary" nameId="75wo.3402431285977818823" value="Power-On Reset (POR) State definition" />
@@ -243,7 +228,6 @@
       </node>
     </node>
     <node role="requirements" roleId="75wo.8745401669462963171" type="75wo.Requirement" typeId="75wo.8745401669462952101" id="6021234015572537081">
-      <property name="priority" value="0" />
       <property name="open" value="false" />
       <property name="name" nameId="tpck.1169194664001" value="MagnetTest" />
       <property name="summmary" nameId="75wo.3402431285977818823" value="Determining the battery status of the device" />
@@ -259,7 +243,6 @@
       </node>
     </node>
     <node role="requirements" roleId="75wo.8745401669462963171" type="75wo.Requirement" typeId="75wo.8745401669462952101" id="6021234015572537083">
-      <property name="priority" value="0" />
       <property name="open" value="false" />
       <property name="name" nameId="tpck.1169194664001" value="ImplantData" />
       <property name="summmary" nameId="75wo.3402431285977818823" value="Other infos stored on the device itself" />

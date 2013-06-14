@@ -3544,22 +3544,7 @@
   </root>
   <root id="2426041105269208058">
     <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="2426041105269208061">
-      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_RefCell" typeId="tpc2.1088013125922" id="2426041105269208068">
-        <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="75wo.2426041105269208056" />
-        <node role="editorComponent" roleId="tpc2.1088186146602" type="tpc2.InlineEditorComponent" typeId="tpc2.1088185857835" id="2426041105269208069">
-          <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Property" typeId="tpc2.1073389658414" id="2426041105269208071">
-            <property name="readOnly" nameId="tpc2.1140017977771" value="true" />
-            <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="tpck.1169194664001" resolveInfo="name" />
-          </node>
-        </node>
-      </node>
       <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Indent" typeId="tpc2.1237303669825" id="2426041105269208063" />
-      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="2426041105269208073">
-        <property name="text" nameId="tpc2.1073389577007" value=":" />
-        <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.PunctuationLeftStyleClassItem" typeId="tpc2.1233758997495" id="2426041105269290175">
-          <property name="flag" nameId="tpc2.1186414551515" value="true" />
-        </node>
-      </node>
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_RefCell" typeId="tpc2.1088013125922" id="2426041105269208075">
         <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="75wo.2426041105269208057" />
         <node role="editorComponent" roleId="tpc2.1088186146602" type="tpc2.InlineEditorComponent" typeId="tpc2.1088185857835" id="2426041105269208076">
@@ -3577,8 +3562,8 @@
                       </node>
                       <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_ConceptMethodCall" typeId="tp25.1179409122411" id="2426041105269290234">
                         <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="hwgx.2426041105269290259" resolveInfo="asLimitedTextString" />
-                        <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="2426041105269339435">
-                          <property name="value" nameId="tpee.1068580320021" value="40" />
+                        <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="2426041105270903602">
+                          <property name="value" nameId="tpee.1068580320021" value="80" />
                         </node>
                       </node>
                     </node>
@@ -3587,7 +3572,7 @@
               </node>
             </node>
             <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.ForegroundColorStyleClassItem" typeId="tpc2.1186404549998" id="2426041105269713197">
-              <property name="color" nameId="tpc2.1186403713874" value="gray" />
+              <property name="color" nameId="tpc2.1186403713874" value="darkGray" />
             </node>
           </node>
         </node>
