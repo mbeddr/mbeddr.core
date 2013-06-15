@@ -11,7 +11,6 @@
   <roots>
     <node type="75wo.RequirementsModule" typeId="75wo.8745401669462963169" id="3501833067872368458">
       <property name="name" nameId="tpck.1169194664001" value="BasicRequirements" />
-      <property name="showDetails" nameId="75wo.3348865852192832937" value="true" />
     </node>
   </roots>
   <root id="3501833067872368458">
