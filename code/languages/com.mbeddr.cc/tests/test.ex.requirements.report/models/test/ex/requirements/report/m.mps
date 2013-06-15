@@ -16,7 +16,6 @@
   <roots>
     <node type="75wo.RequirementsModule" typeId="75wo.8745401669462963169" id="5785245534400482590">
       <property name="name" nameId="tpck.1169194664001" value="Requirements" />
-      <property name="showDetails" nameId="75wo.3348865852192832937" value="true" />
     </node>
     <node type="2c95.Document" typeId="2c95.3350625596579911728" id="5785245534400482602">
       <property name="name" nameId="tpck.1169194664001" value="root" />
