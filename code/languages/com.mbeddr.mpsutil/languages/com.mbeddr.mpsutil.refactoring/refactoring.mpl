@@ -1,13 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<language namespace="com.mbeddr.mpsutil.refactoring" uuid="1fc20ffe-f35b-4791-a0b7-d706bad5c49a" doNotGenerateAdapters="true">
+<language namespace="com.mbeddr.mpsutil.refactoring" uuid="1fc20ffe-f35b-4791-a0b7-d706bad5c49a">
   <models>
-    <modelRoot path="${language_descriptor}/languageModels" />
+    <modelRoot contentPath="${module}" type="default">
+      <sourceRoot location="languageModels" />
+    </modelRoot>
   </models>
   <accessoryModels />
   <generators>
     <generator name="main" generatorUID="com.mbeddr.mpsutil.refactoring#7518061998923596540" uuid="f47c72c0-b22e-4aef-a0e3-1bd67990c535">
       <models>
-        <modelRoot path="${language_descriptor}/generator/template" />
+        <modelRoot contentPath="${module}" type="default">
+          <sourceRoot location="generator/template" />
+        </modelRoot>
       </models>
       <external-templates>
         <generator generatorUID="1d6e05d7-9de9-40a7-9dad-7b8444280942(jetbrains.mps.lang.plugin#1203080439937)" />

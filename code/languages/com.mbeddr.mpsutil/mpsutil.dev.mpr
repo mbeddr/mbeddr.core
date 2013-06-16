@@ -6,13 +6,13 @@
   <component name="Encoding" useUTFGuessing="true" native2AsciiForPropertiesFiles="false" />
   <component name="MPSProject">
     <projectModules>
-      <modulePath path="${project}/languages/com.mbeddr.mpsutil.bldoc/bldoc.mpl" />
-      <modulePath path="${project}/languages/com.mbeddr.mpsutil.blutil/blutil.mpl" folder="" />
-      <modulePath path="${project}/languages/com.mbeddr.mpsutil.genutil/genutil.mpl" folder="" />
-      <modulePath path="${project}/languages/com.mbeddr.mpsutil.langstats/langstats.mpl" folder="" />
-      <modulePath path="${project}/languages/com.mbeddr.mpsutil.refactoring/refactoring.mpl" folder="" />
-      <modulePath path="${project}/languages/com.mbeddr.mpsutil.tables.rt/tables.rt.msd" />
-      <modulePath path="${project}/tests/test.ts.match/match.msd" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.bldoc/bldoc.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.blutil/blutil.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.genutil/genutil.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.langstats/langstats.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.refactoring/refactoring.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.tables.rt/tables.rt.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/tests/test.ts.match/match.msd" folder="" />
     </projectModules>
     <genConfs />
   </component>
@@ -24,7 +24,7 @@
   </component>
   <component name="ProjectRootManager" version="2" />
   <component name="ProjectVersion">
-    <option name="version" value="2.5" />
+    <option name="version" value="3.0" />
   </component>
   <component name="VcsDirectoryMappings">
     <mapping directory="$mbeddr.github.core.home$" vcs="Git" />
