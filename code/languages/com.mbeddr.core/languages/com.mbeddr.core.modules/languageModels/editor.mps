@@ -19,7 +19,7 @@
   <import index="e2lb" modelUID="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" version="-1" implicit="yes" />
   <import index="vrqd" modelUID="r:53e59391-150a-45ff-930e-2b4fdafb0904(com.mbeddr.core.expressions.editor)" version="2" implicit="yes" />
   <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="5" implicit="yes" />
-  <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="21" implicit="yes" />
+  <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="23" implicit="yes" />
   <import index="r4b4" modelUID="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" version="3" implicit="yes" />
   <import index="j4gk" modelUID="r:44b6f9b4-bfdb-4b99-b104-960ec485d777(com.mbeddr.core.statements.editor)" version="1" implicit="yes" />
   <roots>
@@ -247,6 +247,9 @@
     <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="7308356872494660983">
       <property name="virtualPackage" nameId="tpck.1193676396447" value="global" />
       <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="x27k.7308356872494660981" resolveInfo="GlobalConstantFuntionArgumentRef" />
+    </node>
+    <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="3179063443441650014">
+      <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="x27k.3179063443441650011" resolveInfo="ExportedDummy" />
     </node>
   </roots>
   <root id="6437088627575722855">
@@ -2795,6 +2798,12 @@
           <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="tpck.1169194664001" resolveInfo="name" />
         </node>
       </node>
+    </node>
+  </root>
+  <root id="3179063443441650014">
+    <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="3179063443441681546">
+      <property name="text" nameId="tpc2.1073389577007" value="exported" />
+      <link role="styleClass" roleId="tpc2.1186406756722" targetNodeId="1317894735999272948" resolveInfo="exported" />
     </node>
   </root>
 </model>

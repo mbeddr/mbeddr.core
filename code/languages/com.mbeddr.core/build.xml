@@ -97,6 +97,8 @@
          <include name="**/source_gen/**" />
          <include name="**/source_gen.caches/**" />
          <include name="**/classes_gen/**" />
+         <include name="**/test_gen/**" />
+         <include name="**/test_gen.caches/**" />		 		 
       </fileset>
     </delete>
   </target>
