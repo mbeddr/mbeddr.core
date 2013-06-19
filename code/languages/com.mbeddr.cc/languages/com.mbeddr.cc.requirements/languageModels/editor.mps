@@ -3059,6 +3059,7 @@
       </node>
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_RefNode" typeId="tpc2.1073389882823" id="4557518620047716800">
         <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="75wo.4557518620047716796" />
+        <link role="actionMap" roleId="tpc2.1139959269582" targetNodeId="r4b4.8714404591632795581" resolveInfo="preventDeletion" />
         <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.IndentLayoutOnNewLineStyleClassItem" typeId="tpc2.1237385578942" id="4557518620047716803">
           <property name="flag" nameId="tpc2.1186414551515" value="true" />
         </node>
