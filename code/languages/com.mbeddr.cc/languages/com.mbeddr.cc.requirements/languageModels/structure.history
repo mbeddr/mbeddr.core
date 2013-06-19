@@ -16,13 +16,13 @@
     <dependencies>
       <model index="f21f" modelUID="r:4a0e833e-2a72-40dd-9dd5-8d4cbc79a7bc(com.mbeddr.cc.trace.editor)" version="-1" />
       <model index="5zzw" modelUID="r:95e79a09-2c9b-4b4c-9713-9635ede32e0c(com.mbeddr.cc.trace.refactorings)" version="-1" />
-      <model index="26ao" modelUID="r:7c15925b-a4a5-4da3-88aa-931a5a9ed982(com.mbeddr.cc.trace.structure)" version="-1" />
-      <model index="xvsr" modelUID="r:18791582-199a-4c4c-a282-6d61b7657294(com.mbeddr.cc.requirements.behavior)" version="-1" />
       <model index="s6bi" modelUID="r:a85ddf64-0248-4e9b-81ab-306845f3da69(com.mbeddr.cc.requirements.intentions)" version="-1" />
-      <model index="75wo" modelUID="r:eaa205a4-f15c-47d3-99e2-e648881b5997(com.mbeddr.cc.requirements.structure)" version="1" />
+      <model index="xvsr" modelUID="r:18791582-199a-4c4c-a282-6d61b7657294(com.mbeddr.cc.requirements.behavior)" version="-1" />
+      <model index="26ao" modelUID="r:7c15925b-a4a5-4da3-88aa-931a5a9ed982(com.mbeddr.cc.trace.structure)" version="-1" />
       <model index="cxb7" modelUID="r:76ee7d03-b107-4cfa-af31-c8085d27d752(com.mbeddr.cc.trace.intentions)" version="-1" />
-      <model index="mi8d" modelUID="r:3424d837-c178-4d7b-8543-e9f3af3f6072(com.mbeddr.cc.requirements.refactorings)" version="-1" />
+      <model index="75wo" modelUID="r:eaa205a4-f15c-47d3-99e2-e648881b5997(com.mbeddr.cc.requirements.structure)" version="1" />
       <model index="603" modelUID="r:e75c96fc-f7f0-4331-ae4f-5b6af3aa2cc4(com.mbeddr.cc.requirements.editor)" version="-1" />
+      <model index="mi8d" modelUID="r:3424d837-c178-4d7b-8543-e9f3af3f6072(com.mbeddr.cc.requirements.refactorings)" version="-1" />
       <model index="y6af" modelUID="r:266125ed-2b05-4b4a-aa3e-7e3d1931d4cd(com.mbeddr.cc.trace.behavior)" version="-1" />
     </dependencies>
     <move id="75wo.3402431285977807417" to="26ao.439567521322929004" />
@@ -218,8 +218,8 @@
       <model index="f21f" modelUID="r:4a0e833e-2a72-40dd-9dd5-8d4cbc79a7bc(com.mbeddr.cc.trace.editor)" version="0" />
       <model index="26ao" modelUID="r:7c15925b-a4a5-4da3-88aa-931a5a9ed982(com.mbeddr.cc.trace.structure)" version="0" />
       <model index="wv0b" modelUID="r:7997f0fd-03cf-4899-b0e1-fc6ea1a5f5f1(com.mbeddr.cc.requirements.constraints)" version="-1" />
-      <model index="75wo" modelUID="r:eaa205a4-f15c-47d3-99e2-e648881b5997(com.mbeddr.cc.requirements.structure)" version="2" />
       <model index="qeo3" modelUID="r:838107b6-6775-42a4-a627-76f34bc65522(com.mbeddr.cc.trace.constraints)" version="-1" />
+      <model index="75wo" modelUID="r:eaa205a4-f15c-47d3-99e2-e648881b5997(com.mbeddr.cc.requirements.structure)" version="2" />
       <model index="603" modelUID="r:e75c96fc-f7f0-4331-ae4f-5b6af3aa2cc4(com.mbeddr.cc.requirements.editor)" version="0" />
     </dependencies>
     <move id="75wo.8745401669463168539" to="26ao.439567521322929332" />
@@ -512,6 +512,12 @@
       <model index="75wo" modelUID="r:eaa205a4-f15c-47d3-99e2-e648881b5997(com.mbeddr.cc.requirements.structure)" version="10" />
     </dependencies>
     <rename id="75wo.882101644643224349" type="CONCEPT" from="RequirementStatusDraft" to="RequirementStatusAgreed" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="75wo" modelUID="r:eaa205a4-f15c-47d3-99e2-e648881b5997(com.mbeddr.cc.requirements.structure)" version="11" />
+    </dependencies>
+    <move id="75wo.3814452005696798863" to="75wo.3352153450712436947" />
   </StructureModification>
 </history>
 
