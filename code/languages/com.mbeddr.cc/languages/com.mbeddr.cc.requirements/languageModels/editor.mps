@@ -1866,11 +1866,9 @@
       <node role="renderingCondition" roleId="tpc2.1142887637401" type="tpc2.QueryFunction_NodeCondition" typeId="tpc2.1142886221719" id="3348865852192912196">
         <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="3348865852192912197">
           <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="1039011227345355052">
-            <node role="expression" roleId="tpee.1068580123156" type="tpee.NotExpression" typeId="tpee.1081516740877" id="1039011227345355053">
-              <node role="expression" roleId="tpee.1081516765348" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="1039011227345355057">
-                <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="xvsr.1039011227345292654" resolveInfo="isOutlineMode" />
-                <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="xvsr.1039011227345284374" resolveInfo="EditorModeHelper" />
-              </node>
+            <node role="expression" roleId="tpee.1068580123156" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="1039011227345355057">
+              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="xvsr.1039011227345292654" resolveInfo="isOutlineMode" />
+              <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="xvsr.1039011227345284374" resolveInfo="EditorModeHelper" />
             </node>
           </node>
         </node>
