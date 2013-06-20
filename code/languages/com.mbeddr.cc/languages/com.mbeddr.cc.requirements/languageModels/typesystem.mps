@@ -54,6 +54,9 @@
     <node type="tpd4.TypesystemQuickFix" typeId="tpd4.1216383170661" id="3754657941423430898">
       <property name="name" nameId="tpck.1169194664001" value="fix_RequirementForClass" />
     </node>
+    <node type="tpd4.NonTypesystemRule" typeId="tpd4.1195214364922" id="4317007310192936196">
+      <property name="name" nameId="tpck.1169194664001" value="check_RequirementsModule" />
+    </node>
   </roots>
   <root id="3402431285977757864">
     <node role="body" roleId="tpd4.1195213635060" type="tpee.StatementList" typeId="tpee.1068580123136" id="3402431285977757865">
@@ -836,6 +839,32 @@
           </node>
         </node>
       </node>
+    </node>
+  </root>
+  <root id="4317007310192936196">
+    <node role="body" roleId="tpd4.1195213635060" type="tpee.StatementList" typeId="tpee.1068580123136" id="4317007310192936197">
+      <node role="statement" roleId="tpee.1068581517665" type="tpee.LocalVariableDeclarationStatement" typeId="tpee.1068581242864" id="4317007310192936199">
+        <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="4317007310192936200">
+          <property name="name" nameId="tpck.1169194664001" value="s" />
+          <node role="type" roleId="tpee.5680397130376446158" type="tp2q.SetType" typeId="tp2q.1226511727824" id="4317007310192936201">
+            <node role="elementType" roleId="tp2q.1226511765987" type="tp25.SNodeType" typeId="tp25.1138055754698" id="4317007310192941163">
+              <link role="concept" roleId="tp25.1138405853777" targetNodeId="75wo.8745401669462963169" resolveInfo="RequirementsModule" />
+            </node>
+          </node>
+          <node role="initializer" roleId="tpee.1068431790190" type="tpee.GenericNewExpression" typeId="tpee.1145552977093" id="4317007310192941165">
+            <node role="creator" roleId="tpee.1145553007750" type="tp2q.HashSetCreator" typeId="tp2q.1226516258405" id="4317007310192968057">
+              <node role="elementType" roleId="tp2q.1237721435807" type="tp25.SNodeType" typeId="tp25.1138055754698" id="4317007310192968058">
+                <link role="concept" roleId="tp25.1138405853777" targetNodeId="75wo.8745401669462963169" resolveInfo="RequirementsModule" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node role="statement" roleId="tpee.1068581517665" type="tpee.Statement" typeId="tpee.1068580123157" id="4317007310192968059" />
+    </node>
+    <node role="applicableNode" roleId="tpd4.1174648101952" type="tpd4.ConceptReference" typeId="tpd4.1174642788531" id="4317007310192936198">
+      <property name="name" nameId="tpck.1169194664001" value="rm" />
+      <link role="concept" roleId="tpd4.1174642800329" targetNodeId="75wo.8745401669462963169" resolveInfo="RequirementsModule" />
     </node>
   </root>
 </model>
