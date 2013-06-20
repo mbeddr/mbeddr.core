@@ -150,9 +150,6 @@
                   </node>
                 </node>
               </node>
-              <node role="sizeSpec" roleId="2c95.2588579461812060100" type="2c95.PageWidthSizeSpec" typeId="2c95.8624890525767637976" id="3352153450712813664">
-                <property name="percentage" nameId="2c95.8624890525767637977" value="100" />
-              </node>
               <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.PropertyMacro" typeId="tpf8.1087833241328" id="3352153450712813665">
                 <property name="propertyName" nameId="tpck.1757699476691236117" value="name" />
                 <node role="propertyValueFunction" roleId="tpf8.1167756362303" type="tpf8.PropertyMacro_GetPropertyValue" typeId="tpf8.1167756080639" id="3352153450712813666">
@@ -215,6 +212,7 @@
                   </node>
                 </node>
               </node>
+              <node role="sizeSpec" roleId="2c95.2588579461812060100" type="2c95.ScaleDownNotUp100" typeId="2c95.4317007310193476045" id="4317007310193519130" />
             </node>
             <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.TemplateFragment" typeId="tpf8.1095672379244" id="3126418051240434191" />
             <node role="contents" roleId="2c95.3126418051240385698" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="3126418051240470066">

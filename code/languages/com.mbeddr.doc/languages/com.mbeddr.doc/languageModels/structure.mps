@@ -204,11 +204,6 @@
       <property name="name" nameId="tpck.1169194664001" value="NamedSizeSpec" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
     </node>
-    <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="8624890525767886396">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="config.scaling" />
-      <property name="name" nameId="tpck.1169194664001" value="DefaultSizeSpec" />
-      <link role="extends" roleId="tpce.1071489389519" targetNodeId="8624890525767555424" resolveInfo="FigureSizeSpec" />
-    </node>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="6068976060904002601">
       <property name="virtualPackage" nameId="tpck.1193676396447" value="export" />
       <property name="name" nameId="tpck.1169194664001" value="AbstractExport" />
@@ -286,6 +281,11 @@
     <node type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="3352153450711894223">
       <property name="virtualPackage" nameId="tpck.1193676396447" value="config" />
       <property name="name" nameId="tpck.1169194664001" value="IDocConfigItem" />
+    </node>
+    <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4317007310193476045">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="config.scaling" />
+      <property name="name" nameId="tpck.1169194664001" value="ScaleDownNotUp100" />
+      <link role="extends" roleId="tpce.1071489389519" targetNodeId="8624890525767555424" resolveInfo="FigureSizeSpec" />
     </node>
   </roots>
   <root id="3350625596579911728">
@@ -820,12 +820,6 @@
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="vs0r.7024921229555594291" resolveInfo="IIdentifierNamedConcept" />
     </node>
   </root>
-  <root id="8624890525767886396">
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="8624890525767886397">
-      <property name="value" nameId="tpce.1105725733873" value="default" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473891462" resolveInfo="alias" />
-    </node>
-  </root>
   <root id="6068976060904002601">
     <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.BooleanConceptProperty" typeId="tpce.1105725574259" id="6068976060904002602">
       <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473854053" resolveInfo="abstract" />
@@ -1093,5 +1087,11 @@
     </node>
   </root>
   <root id="3352153450711894223" />
+  <root id="4317007310193476045">
+    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="4317007310193476047">
+      <property name="value" nameId="tpce.1105725733873" value="scale down not up 100" />
+      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473891462" resolveInfo="alias" />
+    </node>
+  </root>
 </model>
 

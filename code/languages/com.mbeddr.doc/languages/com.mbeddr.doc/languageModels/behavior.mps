@@ -168,6 +168,10 @@
       <property name="virtualPackage" nameId="tpck.1193676396447" value="config" />
       <link role="concept" roleId="1i04.1225194240799" targetNodeId="2c95.3352153450711894223" resolveInfo="IDocConfigItem" />
     </node>
+    <node type="1i04.ConceptBehavior" typeId="1i04.1225194240794" id="4317007310193476051">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="config.scaling" />
+      <link role="concept" roleId="1i04.1225194240799" targetNodeId="2c95.4317007310193476045" resolveInfo="ScaleDownNotUp100" />
+    </node>
   </roots>
   <root id="3350625596580059253">
     <node role="constructor" roleId="1i04.1225194240801" type="1i04.ConceptConstructorDeclaration" typeId="1i04.1225194413805" id="3350625596580059254">
@@ -5329,6 +5333,11 @@
   <root id="3352153450712239891">
     <node role="constructor" roleId="1i04.1225194240801" type="1i04.ConceptConstructorDeclaration" typeId="1i04.1225194413805" id="3352153450712239892">
       <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="3352153450712239893" />
+    </node>
+  </root>
+  <root id="4317007310193476051">
+    <node role="constructor" roleId="1i04.1225194240801" type="1i04.ConceptConstructorDeclaration" typeId="1i04.1225194413805" id="4317007310193476052">
+      <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="4317007310193476053" />
     </node>
   </root>
 </model>

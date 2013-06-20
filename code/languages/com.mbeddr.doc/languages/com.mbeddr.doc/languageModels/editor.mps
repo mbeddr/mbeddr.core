@@ -142,10 +142,6 @@
       <property name="virtualPackage" nameId="tpck.1193676396447" value="config.scaling" />
       <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="2c95.8624890525767800825" resolveInfo="NamedSizeSpec" />
     </node>
-    <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="8624890525767886398">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="config.scaling" />
-      <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="2c95.8624890525767886396" resolveInfo="DefaultSizeSpec" />
-    </node>
     <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="6068976060904007497">
       <property name="virtualPackage" nameId="tpck.1193676396447" value="export" />
       <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="2c95.6068976060904007493" resolveInfo="IncludableExport" />
@@ -199,6 +195,10 @@
       <property name="virtualPackage" nameId="tpck.1193676396447" value="paragraphs" />
       <property name="name" nameId="tpck.1169194664001" value="preventDeletion" />
       <link role="applicableConcept" roleId="tpc2.1139535219968" targetNodeId="87nw.2557074442922380897" resolveInfo="Text" />
+    </node>
+    <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="4317007310193476048">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="config.scaling" />
+      <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="2c95.4317007310193476045" resolveInfo="ScaleDownNotUp100" />
     </node>
   </roots>
   <root id="3350625596579911735">
@@ -1940,11 +1940,6 @@
       </node>
     </node>
   </root>
-  <root id="8624890525767886398">
-    <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="8624890525767886400">
-      <property name="text" nameId="tpc2.1073389577007" value="default" />
-    </node>
-  </root>
   <root id="6068976060904007497">
     <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="6068976060904007499">
       <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Indent" typeId="tpc2.1237303669825" id="6068976060904007500" />
@@ -3418,6 +3413,11 @@
           <node role="statement" roleId="tpee.1068581517665" type="tpee.Statement" typeId="tpee.1068580123157" id="8714404591632795585" />
         </node>
       </node>
+    </node>
+  </root>
+  <root id="4317007310193476048">
+    <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="4317007310193476050">
+      <property name="text" nameId="tpc2.1073389577007" value="scale down (not up) to 100% page width" />
     </node>
   </root>
 </model>
