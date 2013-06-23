@@ -53,6 +53,11 @@
       <property name="name" nameId="tpck.1169194664001" value="TraceWord" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
     </node>
+    <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="2668975618728950291">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="tracekind" />
+      <property name="name" nameId="tpck.1169194664001" value="ExemplifiesTraceKind" />
+      <link role="extends" roleId="tpce.1071489389519" targetNodeId="439567521322928999" resolveInfo="TraceKind" />
+    </node>
   </roots>
   <root id="439567521322928994">
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="4577779292081940161">
@@ -164,6 +169,12 @@
     <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="4577779292081954648">
       <property name="value" nameId="tpce.1105725733873" value="trace to a requirements (or other traceable)" />
       <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473914776" resolveInfo="shortDescription" />
+    </node>
+  </root>
+  <root id="2668975618728950291">
+    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="2668975618728950292">
+      <property name="value" nameId="tpce.1105725733873" value="exemplifies" />
+      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473891462" resolveInfo="alias" />
     </node>
   </root>
 </model>

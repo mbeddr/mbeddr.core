@@ -29,6 +29,10 @@
       <property name="virtualPackage" nameId="tpck.1193676396447" value="tracekind" />
       <link role="concept" roleId="1i04.1225194240799" targetNodeId="26ao.439567521322929001" resolveInfo="TestsTraceKind" />
     </node>
+    <node type="1i04.ConceptBehavior" typeId="1i04.1225194240794" id="2668975618728954260">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="tracekind" />
+      <link role="concept" roleId="1i04.1225194240799" targetNodeId="26ao.2668975618728950291" resolveInfo="ExemplifiesTraceKind" />
+    </node>
   </roots>
   <root id="439567521322929155">
     <node role="method" roleId="1i04.1225194240805" type="1i04.ConceptMethodDeclaration" typeId="1i04.1225194472830" id="439567521322929156">
@@ -216,6 +220,27 @@
     </node>
     <node role="constructor" roleId="1i04.1225194240801" type="1i04.ConceptConstructorDeclaration" typeId="1i04.1225194413805" id="4837632670852786591">
       <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="4837632670852786592" />
+    </node>
+  </root>
+  <root id="2668975618728954260">
+    <node role="method" roleId="1i04.1225194240805" type="1i04.ConceptMethodDeclaration" typeId="1i04.1225194472830" id="2668975618728954263">
+      <property name="name" nameId="tpck.1169194664001" value="getTraceColor" />
+      <link role="overriddenMethod" roleId="1i04.1225194472831" targetNodeId="4837632670852786571" resolveInfo="getTraceColor" />
+      <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="2668975618728954266">
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="2668975618728954269">
+          <node role="expression" roleId="tpee.1068580123156" type="tpee.StaticFieldReference" typeId="tpee.1070533707846" id="2668975618728954270">
+            <link role="classifier" roleId="tpee.1144433057691" targetNodeId="1t7x.~Color" resolveInfo="Color" />
+            <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="1t7x.~Color%dlightGray" resolveInfo="lightGray" />
+          </node>
+        </node>
+      </node>
+      <node role="returnType" roleId="tpee.1068580123133" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="2668975618728954267">
+        <link role="classifier" roleId="tpee.1107535924139" targetNodeId="1t7x.~Color" resolveInfo="Color" />
+      </node>
+      <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="2668975618728954268" />
+    </node>
+    <node role="constructor" roleId="1i04.1225194240801" type="1i04.ConceptConstructorDeclaration" typeId="1i04.1225194413805" id="2668975618728954261">
+      <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="2668975618728954262" />
     </node>
   </root>
 </model>
