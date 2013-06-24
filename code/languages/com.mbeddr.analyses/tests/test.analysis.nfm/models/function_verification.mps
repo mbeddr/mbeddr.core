@@ -23,7 +23,7 @@
   <import index="v7ag" modelUID="r:9596407c-f27a-49d3-abde-3a66293c5b61(com.mbeddr.ext.components.structure)" version="19" implicit="yes" />
   <import index="k146" modelUID="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" version="5" implicit="yes" />
   <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="21" implicit="yes" />
-  <import index="q5q6" modelUID="r:5d65e582-fa41-4818-b31c-b2aee1644b4a(com.mbeddr.analyses.cbmc.structure)" version="16" implicit="yes" />
+  <import index="q5q6" modelUID="r:5d65e582-fa41-4818-b31c-b2aee1644b4a(com.mbeddr.analyses.cbmc.structure)" version="18" implicit="yes" />
   <roots>
     <node type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="5512262613064826610">
       <property name="name" nameId="tpck.1169194664001" value="Contracts" />
@@ -154,7 +154,7 @@
           <property name="const" nameId="mj1l.2941277002445651368" value="false" />
         </node>
         <node role="init" roleId="v7ag.5308710777891512022" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="5512262613064826650">
-          <property name="value" nameId="mj1l.8860443239512128104" value="-1" />
+          <property name="value" nameId="mj1l.8860443239512128104" value="1" />
         </node>
       </node>
       <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Field" typeId="v7ag.5308710777891512019" id="5512262613064826651">
@@ -319,7 +319,7 @@
               </node>
               <node role="def" roleId="k146.4143042878078342166" type="mj1l.UnsafeCastExpression" typeId="mj1l.7664133259366168728" id="5512262613064826717">
                 <node role="expr" roleId="mj1l.7664133259366168729" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="5512262613064826718">
-                  <property name="value" nameId="mj1l.8860443239512128104" value="-1.0" />
+                  <property name="value" nameId="mj1l.8860443239512128104" value="1.0" />
                 </node>
                 <node role="targetType" roleId="mj1l.7664133259366168730" type="mj1l.FloatType" typeId="mj1l.4739982148980385695" id="5512262613064826719">
                   <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
@@ -429,8 +429,8 @@
       <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="5512262613064826755">
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="5512262613064826756">
           <property name="name" nameId="tpck.1169194664001" value="time" />
-          <node role="init" roleId="c4fa.4185783222026502647" type="x27k.FunctionCall" typeId="x27k.5950410542643524492" id="5512262613064826757">
-            <link role="function" roleId="x27k.5950410542643524493" targetNodeId="1aw3.2161187783549497007" resolveInfo="readTime" />
+          <node role="init" roleId="c4fa.4185783222026502647" type="x27k.FunctionCall" typeId="x27k.5950410542643524492" id="9047848667681021848">
+            <link role="function" roleId="x27k.5950410542643524493" targetNodeId="5512262613064826864" resolveInfo="readTime" />
           </node>
           <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int16tType" typeId="mj1l.8463282783691618435" id="5512262613064826758">
             <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
@@ -439,12 +439,20 @@
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="5512262613064826759">
           <property name="name" nameId="tpck.1169194664001" value="dist" />
-          <node role="init" roleId="c4fa.4185783222026502647" type="x27k.FunctionCall" typeId="x27k.5950410542643524492" id="5512262613064826760">
-            <link role="function" roleId="x27k.5950410542643524493" targetNodeId="1aw3.2161187783549497005" resolveInfo="readDistance" />
+          <node role="init" roleId="c4fa.4185783222026502647" type="x27k.FunctionCall" typeId="x27k.5950410542643524492" id="9047848667681021849">
+            <link role="function" roleId="x27k.5950410542643524493" targetNodeId="5512262613064826862" resolveInfo="readDistance" />
           </node>
           <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int16tType" typeId="mj1l.8463282783691618435" id="5512262613064826761">
             <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
             <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+          </node>
+        </node>
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="8354860797161608551">
+          <node role="expr" roleId="c4fa.7254843406768833939" type="v7ag.PortAdapterOpCallExpr" typeId="v7ag.466603768608410221" id="8354860797161608555">
+            <link role="operation" roleId="v7ag.8105003328815071752" targetNodeId="5512262613064826613" resolveInfo="activate" />
+            <node role="expression" roleId="mj1l.7254843406768839760" type="v7ag.PortAdapterRefExpr" typeId="v7ag.8105003328815039001" id="8354860797161608552">
+              <link role="portAdater" roleId="v7ag.8105003328815039002" targetNodeId="5512262613064826751" resolveInfo="comp" />
+            </node>
           </node>
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.IfStatement" typeId="c4fa.6275792049641600983" id="5512262613064826762">
@@ -465,11 +473,11 @@
             </node>
           </node>
           <node role="condition" roleId="c4fa.6275792049641600984" type="mj1l.AndExpression" typeId="mj1l.8399455261460717640" id="5512262613064826769">
-            <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.GreaterEqualsExpression" typeId="mj1l.8860443239512147447" id="5512262613064826770">
-              <node role="left" roleId="mj1l.8860443239512128064" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="5512262613064826771">
+            <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.GreaterExpression" typeId="mj1l.8860443239512147445" id="2800097362786388235">
+              <node role="left" roleId="mj1l.8860443239512128064" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="2800097362786388236">
                 <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="5512262613064826756" resolveInfo="time" />
               </node>
-              <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="5512262613064826772">
+              <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2800097362786388237">
                 <property name="value" nameId="mj1l.8860443239512128104" value="0" />
               </node>
             </node>
@@ -541,9 +549,6 @@
           </node>
         </node>
       </node>
-    </node>
-    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="5512262613064826794">
-      <property name="name" nameId="tpck.1169194664001" value="empty_1355149911205_1" />
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="5512262613064826795">
       <property name="name" nameId="tpck.1169194664001" value="empty_1354263190727_9" />
@@ -804,12 +809,14 @@
   <root id="5512262613064826867">
     <node role="analyses" roleId="q46j.6472990431939692464" type="q5q6.ComponentsCBMCAnalysis" typeId="q5q6.6472990431939799912" id="5512262613064826868">
       <property name="unwindingDepth" nameId="q5q6.6472990431939799909" value="25" />
+      <property name="analysisDepth" nameId="q5q6.441761995014974059" value="200" />
       <link role="analyzedComponent" roleId="q5q6.6472990431939799913" targetNodeId="5512262613064826645" resolveInfo="PlauzibilizedSpeedComputer" />
       <link role="entryPoint" roleId="q5q6.6472990431939799908" targetNodeId="5512262613064826754" resolveInfo="emitCurrentSpeed" />
     </node>
     <node role="analyses" roleId="q46j.6472990431939692464" type="q5q6.ComponentsCBMCAnalysis" typeId="q5q6.6472990431939799912" id="5512262613064826869">
       <property name="unwindingAssertions" nameId="q5q6.6472990431939799910" value="true" />
       <property name="unwindingDepth" nameId="q5q6.6472990431939799909" value="25" />
+      <property name="analysisDepth" nameId="q5q6.441761995014974059" value="200" />
       <link role="analyzedComponent" roleId="q5q6.6472990431939799913" targetNodeId="5512262613064826645" resolveInfo="PlauzibilizedSpeedComputer" />
       <link role="entryPoint" roleId="q5q6.6472990431939799908" targetNodeId="5512262613064826780" resolveInfo="main" />
     </node>
@@ -831,8 +838,8 @@
             <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
             <property name="const" nameId="mj1l.2941277002445651368" value="false" />
           </node>
-          <node role="init" roleId="c4fa.4185783222026502647" type="x27k.FunctionCall" typeId="x27k.5950410542643524492" id="5512262613064826877">
-            <link role="function" roleId="x27k.5950410542643524493" targetNodeId="1aw3.2161187783549497005" resolveInfo="readDistance" />
+          <node role="init" roleId="c4fa.4185783222026502647" type="x27k.FunctionCall" typeId="x27k.5950410542643524492" id="7090217596231483107">
+            <link role="function" roleId="x27k.5950410542643524493" targetNodeId="5512262613064826862" resolveInfo="readDistance" />
           </node>
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="5512262613064826878">
@@ -841,8 +848,8 @@
             <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
             <property name="const" nameId="mj1l.2941277002445651368" value="false" />
           </node>
-          <node role="init" roleId="c4fa.4185783222026502647" type="x27k.FunctionCall" typeId="x27k.5950410542643524492" id="5512262613064826880">
-            <link role="function" roleId="x27k.5950410542643524493" targetNodeId="1aw3.2161187783549497007" resolveInfo="readTime" />
+          <node role="init" roleId="c4fa.4185783222026502647" type="x27k.FunctionCall" typeId="x27k.5950410542643524492" id="7090217596231483108">
+            <link role="function" roleId="x27k.5950410542643524493" targetNodeId="5512262613064826864" resolveInfo="readTime" />
           </node>
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="5512262613064826881" />
