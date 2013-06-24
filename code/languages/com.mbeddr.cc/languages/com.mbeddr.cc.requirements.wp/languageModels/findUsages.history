@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<history>
+  <StructureModification>
+    <dependencies>
+      <model index="qyz6" modelUID="r:d315307a-bdd8-48c9-8f04-0212031ef533(com.lmsintl.accent.req_ext.behavior)" version="-1" />
+      <model index="iweb" modelUID="r:d2772e85-16c7-4d07-a36c-076a15144a6b(com.lmsintl.accent.req_ext.typesystem)" version="-1" />
+      <model index="6bl6" modelUID="r:6058adf1-9d5f-4373-8e10-ad839d5b6c2b(com.lmsintl.accent.req_ext.scripts)" version="-1" />
+      <model index="hgb3" modelUID="r:2eb2874e-a673-4352-806c-3a5c950ecb8f(com.lmsintl.accent.req_ext.constraints)" version="-1" />
+      <model index="fvtu" modelUID="r:74bd10fe-eb83-400d-98a5-facbcb3407da(com.lmsintl.accent.req_ext.findUsages)" version="-1" />
+      <model index="a6i6" modelUID="r:0362c9b1-0f29-4538-944a-db6531ef3482(com.lmsintl.accent.req_ext.intentions)" version="-1" />
+      <model index="6pek" modelUID="r:f4cb7d35-a323-48d6-ad03-3ebdeae26d42(com.lmsintl.accent.req_ext.structure)" version="3" />
+      <model index="rrcl" modelUID="r:27a94665-3457-402f-8460-4e4e1aece231(com.lmsintl.accent.req_ext.editor)" version="-1" />
+    </dependencies>
+    <RenameModel oldModel="r:d315307a-bdd8-48c9-8f04-0212031ef533(com.lmsintl.accent.req_ext.behavior)" newModel="r:d315307a-bdd8-48c9-8f04-0212031ef533(com.mbeddr.cc.requirements.wp.behavior)" />
+    <RenameModel oldModel="r:d2772e85-16c7-4d07-a36c-076a15144a6b(com.lmsintl.accent.req_ext.typesystem)" newModel="r:d2772e85-16c7-4d07-a36c-076a15144a6b(com.mbeddr.cc.requirements.wp.typesystem)" />
+    <RenameModel oldModel="r:f4cb7d35-a323-48d6-ad03-3ebdeae26d42(com.lmsintl.accent.req_ext.structure)" newModel="r:f4cb7d35-a323-48d6-ad03-3ebdeae26d42(com.mbeddr.cc.requirements.wp.structure)" />
+    <RenameModel oldModel="r:74bd10fe-eb83-400d-98a5-facbcb3407da(com.lmsintl.accent.req_ext.findUsages)" newModel="r:74bd10fe-eb83-400d-98a5-facbcb3407da(com.mbeddr.cc.requirements.wp.findUsages)" />
+    <RenameModel oldModel="r:2eb2874e-a673-4352-806c-3a5c950ecb8f(com.lmsintl.accent.req_ext.constraints)" newModel="r:2eb2874e-a673-4352-806c-3a5c950ecb8f(com.mbeddr.cc.requirements.wp.constraints)" />
+    <RenameModel oldModel="r:27a94665-3457-402f-8460-4e4e1aece231(com.lmsintl.accent.req_ext.editor)" newModel="r:27a94665-3457-402f-8460-4e4e1aece231(com.mbeddr.cc.requirements.wp.editor)" />
+    <RenameModel oldModel="r:6058adf1-9d5f-4373-8e10-ad839d5b6c2b(com.lmsintl.accent.req_ext.scripts)" newModel="r:6058adf1-9d5f-4373-8e10-ad839d5b6c2b(com.mbeddr.cc.requirements.wp.scripts)" />
+    <RenameModel oldModel="r:0362c9b1-0f29-4538-944a-db6531ef3482(com.lmsintl.accent.req_ext.intentions)" newModel="r:0362c9b1-0f29-4538-944a-db6531ef3482(com.mbeddr.cc.requirements.wp.intentions)" />
+  </StructureModification>
+</history>
+

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<history>
+  <StructureModification>
+    <dependencies>
+      <model index="qyz6" modelUID="r:d315307a-bdd8-48c9-8f04-0212031ef533(com.lmsintl.accent.req_ext.behavior)" version="-1" />
+      <model index="iweb" modelUID="r:d2772e85-16c7-4d07-a36c-076a15144a6b(com.lmsintl.accent.req_ext.typesystem)" version="-1" />
+      <model index="6bl6" modelUID="r:6058adf1-9d5f-4373-8e10-ad839d5b6c2b(com.lmsintl.accent.req_ext.scripts)" version="-1" />
+      <model index="hgb3" modelUID="r:2eb2874e-a673-4352-806c-3a5c950ecb8f(com.lmsintl.accent.req_ext.constraints)" version="-1" />
+      <model index="fvtu" modelUID="r:74bd10fe-eb83-400d-98a5-facbcb3407da(com.lmsintl.accent.req_ext.findUsages)" version="-1" />
+      <model index="a6i6" modelUID="r:0362c9b1-0f29-4538-944a-db6531ef3482(com.lmsintl.accent.req_ext.intentions)" version="-1" />
+      <model index="6pek" modelUID="r:f4cb7d35-a323-48d6-ad03-3ebdeae26d42(com.lmsintl.accent.req_ext.structure)" version="3" />
+      <model index="rrcl" modelUID="r:27a94665-3457-402f-8460-4e4e1aece231(com.lmsintl.accent.req_ext.editor)" version="-1" />
+    </dependencies>
+    <RenameModel oldModel="r:d315307a-bdd8-48c9-8f04-0212031ef533(com.lmsintl.accent.req_ext.behavior)" newModel="r:d315307a-bdd8-48c9-8f04-0212031ef533(com.mbeddr.cc.requirements.wp.behavior)" />
+    <RenameModel oldModel="r:d2772e85-16c7-4d07-a36c-076a15144a6b(com.lmsintl.accent.req_ext.typesystem)" newModel="r:d2772e85-16c7-4d07-a36c-076a15144a6b(com.mbeddr.cc.requirements.wp.typesystem)" />
+    <RenameModel oldModel="r:f4cb7d35-a323-48d6-ad03-3ebdeae26d42(com.lmsintl.accent.req_ext.structure)" newModel="r:f4cb7d35-a323-48d6-ad03-3ebdeae26d42(com.mbeddr.cc.requirements.wp.structure)" />
+    <RenameModel oldModel="r:74bd10fe-eb83-400d-98a5-facbcb3407da(com.lmsintl.accent.req_ext.findUsages)" newModel="r:74bd10fe-eb83-400d-98a5-facbcb3407da(com.mbeddr.cc.requirements.wp.findUsages)" />
+    <RenameModel oldModel="r:2eb2874e-a673-4352-806c-3a5c950ecb8f(com.lmsintl.accent.req_ext.constraints)" newModel="r:2eb2874e-a673-4352-806c-3a5c950ecb8f(com.mbeddr.cc.requirements.wp.constraints)" />
+    <RenameModel oldModel="r:27a94665-3457-402f-8460-4e4e1aece231(com.lmsintl.accent.req_ext.editor)" newModel="r:27a94665-3457-402f-8460-4e4e1aece231(com.mbeddr.cc.requirements.wp.editor)" />
+    <RenameModel oldModel="r:6058adf1-9d5f-4373-8e10-ad839d5b6c2b(com.lmsintl.accent.req_ext.scripts)" newModel="r:6058adf1-9d5f-4373-8e10-ad839d5b6c2b(com.mbeddr.cc.requirements.wp.scripts)" />
+    <RenameModel oldModel="r:0362c9b1-0f29-4538-944a-db6531ef3482(com.lmsintl.accent.req_ext.intentions)" newModel="r:0362c9b1-0f29-4538-944a-db6531ef3482(com.mbeddr.cc.requirements.wp.intentions)" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="afec" modelUID="r:9799ba03-d2ea-41fa-8baf-941595094e98(com.lmsintl.accent.req.editor)" version="-1" />
+      <model index="qyz6" modelUID="r:d315307a-bdd8-48c9-8f04-0212031ef533(com.mbeddr.cc.requirements.wp.behavior)" version="0" />
+      <model index="a6i6" modelUID="r:0362c9b1-0f29-4538-944a-db6531ef3482(com.mbeddr.cc.requirements.wp.intentions)" version="0" />
+      <model index="odrf" modelUID="r:097eb45c-bc71-4685-b712-9d45b4d59037(com.lmsintl.accent.req.intentions)" version="-1" />
+      <model index="6pek" modelUID="r:f4cb7d35-a323-48d6-ad03-3ebdeae26d42(com.mbeddr.cc.requirements.wp.structure)" version="4" />
+      <model index="k6de" modelUID="r:05eed60c-3d6a-42b7-a037-7305f1ec1efc(com.lmsintl.accent.req.behavior)" version="-1" />
+      <model index="dslc" modelUID="r:01b242df-5e59-4c31-a75c-f320934235ce(com.lmsintl.accent.req.structure)" version="-1" />
+      <model index="rrcl" modelUID="r:27a94665-3457-402f-8460-4e4e1aece231(com.mbeddr.cc.requirements.wp.editor)" version="0" />
+    </dependencies>
+    <move id="6pek.8983772170066815097" to="dslc.3411780537800178744" />
+    <move id="6pek.4317007310193573304" to="dslc.3411780537800178746" />
+    <move id="6pek.8983772170066815096" to="dslc.3411780537800178743" />
+    <move id="6pek.4317007310193573303" to="dslc.3411780537800178745" />
+    <move id="a6i6.3754657941424168105" to="odrf.3411780537800178755" />
+    <move id="a6i6.3754657941424168022" to="odrf.3411780537800178754" />
+    <move id="a6i6.3754657941424168054" to="odrf.3411780537800178761" />
+    <move id="a6i6.3754657941424168221" to="odrf.3411780537800178777" />
+    <move id="a6i6.3754657941424168075" to="odrf.3411780537800178756" />
+    <move id="a6i6.3754657941424168145" to="odrf.3411780537800178768" />
+    <move id="a6i6.3754657941424168019" to="odrf.3411780537800178753" />
+    <move id="a6i6.3754657941424168262" to="odrf.3411780537800178783" />
+    <move id="a6i6.3754657941424168255" to="odrf.3411780537800178781" />
+    <move id="a6i6.3754657941424168050" to="odrf.3411780537800178759" />
+    <move id="a6i6.3754657941424168148" to="odrf.3411780537800178771" />
+    <move id="a6i6.3754657941424168021" to="odrf.3411780537800178751" />
+    <move id="a6i6.3754657941424168263" to="odrf.3411780537800178784" />
+    <move id="a6i6.3754657941424168115" to="odrf.3411780537800178775" />
+    <move id="a6i6.3754657941424168080" to="odrf.3411780537800178762" />
+    <move id="a6i6.3754657941424168112" to="odrf.3411780537800178767" />
+    <move id="a6i6.3754657941424168258" to="odrf.3411780537800178782" />
+    <move id="a6i6.3754657941424168152" to="odrf.3411780537800178779" />
+    <move id="a6i6.3754657941424168151" to="odrf.3411780537800178774" />
+    <move id="a6i6.3754657941424168249" to="odrf.3411780537800178776" />
+    <move id="a6i6.3754657941424168015" to="odrf.3411780537800178747" />
+    <move id="a6i6.3754657941424168051" to="odrf.3411780537800178760" />
+    <move id="a6i6.3754657941424168150" to="odrf.3411780537800178773" />
+    <move id="a6i6.3754657941424168081" to="odrf.3411780537800178763" />
+    <move id="a6i6.3754657941424168147" to="odrf.3411780537800178770" />
+    <move id="a6i6.3754657941424168023" to="odrf.3411780537800178758" />
+    <move id="a6i6.3754657941424168044" to="odrf.3411780537800178757" />
+    <move id="a6i6.3754657941424168110" to="odrf.3411780537800178765" />
+    <move id="a6i6.3754657941424168084" to="odrf.3411780537800178764" />
+    <move id="a6i6.3754657941424168199" to="odrf.3411780537800178778" />
+    <move id="a6i6.3754657941424168149" to="odrf.3411780537800178772" />
+    <move id="a6i6.3754657941424168017" to="odrf.3411780537800178749" />
+    <move id="a6i6.3754657941424168020" to="odrf.3411780537800178750" />
+    <move id="a6i6.3754657941424168016" to="odrf.3411780537800178748" />
+    <move id="a6i6.3754657941424168227" to="odrf.3411780537800178780" />
+    <move id="a6i6.3754657941424168146" to="odrf.3411780537800178769" />
+    <move id="a6i6.3754657941424168018" to="odrf.3411780537800178752" />
+    <move id="a6i6.3754657941424168114" to="odrf.3411780537800178786" />
+    <move id="a6i6.3754657941424168111" to="odrf.3411780537800178766" />
+    <move id="a6i6.3754657941424168113" to="odrf.3411780537800178785" />
+    <move id="qyz6.3754657941423502770" to="k6de.3411780537800178830" />
+    <move id="qyz6.3754657941423502761" to="k6de.3411780537800178793" />
+    <move id="qyz6.3754657941423502778" to="k6de.3411780537800178802" />
+    <move id="qyz6.3754657941423502767" to="k6de.3411780537800178827" />
+    <move id="qyz6.3754657941423502731" to="k6de.3411780537800178797" />
+    <move id="qyz6.3754657941423502782" to="k6de.3411780537800178805" />
+    <move id="qyz6.3754657941423502790" to="k6de.3411780537800178809" />
+    <move id="qyz6.3754657941423502766" to="k6de.3411780537800178800" />
+    <move id="qyz6.3754657941423502781" to="k6de.3411780537800178804" />
+    <move id="qyz6.3754657941423502768" to="k6de.3411780537800178828" />
+    <move id="qyz6.3754657941423466746" to="k6de.3411780537800178789" />
+    <move id="qyz6.3754657941423502730" to="k6de.3411780537800178796" />
+    <move id="qyz6.3754657941423502771" to="k6de.3411780537800178801" />
+    <move id="qyz6.3754657941423502844" to="k6de.3411780537800178815" />
+    <move id="qyz6.3754657941423502769" to="k6de.3411780537800178829" />
+    <move id="qyz6.3754657941423466741" to="k6de.3411780537800178831" />
+    <move id="qyz6.3754657941423502793" to="k6de.3411780537800178812" />
+    <move id="qyz6.3754657941423502784" to="k6de.3411780537800178814" />
+    <move id="qyz6.3754657941423502734" to="k6de.3411780537800178792" />
+    <move id="qyz6.3754657941423502822" to="k6de.3411780537800178818" />
+    <move id="qyz6.3754657941423502729" to="k6de.3411780537800178795" />
+    <move id="qyz6.3754657941423502876" to="k6de.3411780537800178822" />
+    <move id="qyz6.3754657941423466742" to="k6de.3411780537800178832" />
+    <move id="qyz6.3754657941423502733" to="k6de.3411780537800178790" />
+    <move id="qyz6.3754657941423502855" to="k6de.3411780537800178823" />
+    <move id="qyz6.3754657941423502904" to="k6de.3411780537800178821" />
+    <move id="qyz6.3754657941423502792" to="k6de.3411780537800178811" />
+    <move id="qyz6.3754657941423502780" to="k6de.3411780537800178803" />
+    <move id="qyz6.3754657941423502882" to="k6de.3411780537800178824" />
+    <move id="qyz6.3754657941423502795" to="k6de.3411780537800178817" />
+    <move id="qyz6.3754657941423502732" to="k6de.3411780537800178798" />
+    <move id="qyz6.3754657941423466743" to="k6de.3411780537800178788" />
+    <move id="qyz6.3754657941423502850" to="k6de.3411780537800178819" />
+    <move id="qyz6.3754657941423502816" to="k6de.3411780537800178816" />
+    <move id="qyz6.3754657941423502773" to="k6de.3411780537800178807" />
+    <move id="qyz6.3754657941423502791" to="k6de.3411780537800178810" />
+    <move id="qyz6.3754657941423502912" to="k6de.3411780537800178826" />
+    <move id="qyz6.3754657941423502910" to="k6de.3411780537800178825" />
+    <move id="qyz6.3754657941423502763" to="k6de.3411780537800178799" />
+    <move id="qyz6.3754657941423466740" to="k6de.3411780537800178787" />
+    <move id="qyz6.3754657941423502794" to="k6de.3411780537800178813" />
+    <move id="qyz6.3754657941423502755" to="k6de.3411780537800178791" />
+    <move id="qyz6.3754657941423502789" to="k6de.3411780537800178808" />
+    <move id="qyz6.3754657941423502783" to="k6de.3411780537800178806" />
+    <move id="qyz6.3754657941423502854" to="k6de.3411780537800178820" />
+    <move id="qyz6.3754657941423502762" to="k6de.3411780537800178794" />
+    <move id="rrcl.8983772170066815100" to="afec.3411780537800178834" />
+    <move id="rrcl.8983772170066815098" to="afec.3411780537800178833" />
+    <move id="rrcl.4317007310193573307" to="afec.3411780537800178836" />
+    <move id="rrcl.4317007310193573305" to="afec.3411780537800178835" />
+  </StructureModification>
+</history>
+
