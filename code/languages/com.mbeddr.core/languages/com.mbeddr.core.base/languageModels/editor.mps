@@ -137,6 +137,9 @@
     <node type="tpee.ClassConcept" typeId="tpee.1068390468198" id="2668975618728954833">
       <property name="name" nameId="tpck.1169194664001" value="ProgressBarCell" />
     </node>
+    <node type="tpee.ClassConcept" typeId="tpee.1068390468198" id="5149698356471833219">
+      <property name="name" nameId="tpck.1169194664001" value="BasicColors" />
+    </node>
   </roots>
   <root id="7024921229556157914">
     <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="7024921229556157916">
@@ -203,17 +206,17 @@
                   </node>
                   <node role="ifTrue" roleId="tpee.1068580123161" type="tpee.StatementList" typeId="tpee.1068580123136" id="710642085453320514">
                     <node role="statement" roleId="tpee.1068581517665" type="tpee.ReturnStatement" typeId="tpee.1068581242878" id="710642085453320543">
-                      <node role="expression" roleId="tpee.1068581517676" type="tpee.StaticFieldReference" typeId="tpee.1070533707846" id="710642085453320546">
-                        <link role="classifier" roleId="tpee.1144433057691" targetNodeId="1t7x.~Color" resolveInfo="Color" />
-                        <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="1t7x.~Color%dblue" resolveInfo="blue" />
+                      <node role="expression" roleId="tpee.1068581517676" type="tpee.StaticFieldReference" typeId="tpee.1070533707846" id="5149698356471834252">
+                        <link role="classifier" roleId="tpee.1144433057691" targetNodeId="5149698356471833219" resolveInfo="BasicColors" />
+                        <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="5149698356471834220" resolveInfo="TODO_BLUE" />
                       </node>
                     </node>
                   </node>
                 </node>
                 <node role="statement" roleId="tpee.1068581517665" type="tpee.ReturnStatement" typeId="tpee.1068581242878" id="710642085453320548">
-                  <node role="expression" roleId="tpee.1068581517676" type="tpee.StaticFieldReference" typeId="tpee.1070533707846" id="710642085453320550">
-                    <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="1t7x.~Color%dgray" resolveInfo="gray" />
-                    <link role="classifier" roleId="tpee.1144433057691" targetNodeId="1t7x.~Color" resolveInfo="Color" />
+                  <node role="expression" roleId="tpee.1068581517676" type="tpee.StaticFieldReference" typeId="tpee.1070533707846" id="5149698356471834255">
+                    <link role="classifier" roleId="tpee.1144433057691" targetNodeId="5149698356471833219" resolveInfo="BasicColors" />
+                    <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="5149698356471833221" resolveInfo="COMMENT_GREEN" />
                   </node>
                 </node>
               </node>
@@ -223,9 +226,6 @@
         <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_RefNode" typeId="tpc2.1073389882823" id="4052432714772623002">
           <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="vs0r.4052432714772608243" />
           <link role="actionMap" roleId="tpc2.1139959269582" targetNodeId="8714404591632795581" resolveInfo="preventDeletion" />
-          <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.ForegroundColorStyleClassItem" typeId="tpc2.1186404549998" id="4052432714772702533">
-            <property name="color" nameId="tpc2.1186403713874" value="gray" />
-          </node>
         </node>
         <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Horizontal" typeId="tpc2.1106270549637" id="8587612447638978758" />
       </node>
@@ -5314,6 +5314,51 @@
         </node>
       </node>
     </node>
+  </root>
+  <root id="5149698356471833219">
+    <node role="staticField" roleId="tpee.1128555889557" type="tpee.StaticFieldDeclaration" typeId="tpee.1070462154015" id="5149698356471833221">
+      <property name="name" nameId="tpck.1169194664001" value="COMMENT_GREEN" />
+      <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="5149698356471834207" />
+      <node role="type" roleId="tpee.5680397130376446158" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="5149698356471833228">
+        <link role="classifier" roleId="tpee.1107535924139" targetNodeId="1t7x.~Color" resolveInfo="Color" />
+      </node>
+      <node role="initializer" roleId="tpee.1068431790190" type="tpee.GenericNewExpression" typeId="tpee.1145552977093" id="5149698356471833230">
+        <node role="creator" roleId="tpee.1145553007750" type="tpee.ClassCreator" typeId="tpee.1212685548494" id="5149698356471833231">
+          <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="1t7x.~Color%d&lt;init&gt;(int,int,int)" resolveInfo="Color" />
+          <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="5149698356471833232">
+            <property name="value" nameId="tpee.1068580320021" value="14" />
+          </node>
+          <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="5149698356471833234">
+            <property name="value" nameId="tpee.1068580320021" value="117" />
+          </node>
+          <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="5149698356471834185">
+            <property name="value" nameId="tpee.1068580320021" value="35" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node role="staticField" roleId="tpee.1128555889557" type="tpee.StaticFieldDeclaration" typeId="tpee.1070462154015" id="5149698356471834220">
+      <property name="name" nameId="tpck.1169194664001" value="TODO_BLUE" />
+      <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="5149698356471834221" />
+      <node role="type" roleId="tpee.5680397130376446158" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="5149698356471834222">
+        <link role="classifier" roleId="tpee.1107535924139" targetNodeId="1t7x.~Color" resolveInfo="Color" />
+      </node>
+      <node role="initializer" roleId="tpee.1068431790190" type="tpee.GenericNewExpression" typeId="tpee.1145552977093" id="5149698356471834223">
+        <node role="creator" roleId="tpee.1145553007750" type="tpee.ClassCreator" typeId="tpee.1212685548494" id="5149698356471834224">
+          <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="1t7x.~Color%d&lt;init&gt;(int,int,int)" resolveInfo="Color" />
+          <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="5149698356471834225">
+            <property name="value" nameId="tpee.1068580320021" value="15" />
+          </node>
+          <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="5149698356471834226">
+            <property name="value" nameId="tpee.1068580320021" value="32" />
+          </node>
+          <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="5149698356471834227">
+            <property name="value" nameId="tpee.1068580320021" value="219" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="5149698356471833220" />
   </root>
 </model>
 
