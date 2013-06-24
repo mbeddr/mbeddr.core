@@ -513,5 +513,17 @@
     </dependencies>
     <rename id="75wo.882101644643224349" type="CONCEPT" from="RequirementStatusDraft" to="RequirementStatusAgreed" />
   </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="75wo" modelUID="r:eaa205a4-f15c-47d3-99e2-e648881b5997(com.mbeddr.cc.requirements.structure)" version="11" />
+    </dependencies>
+    <move id="75wo.3814452005696798863" to="75wo.3352153450712436947" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="75wo" modelUID="r:eaa205a4-f15c-47d3-99e2-e648881b5997(com.mbeddr.cc.requirements.structure)" version="12" />
+    </dependencies>
+    <rename id="75wo.7717508395849194444" type="CONCEPT" from="ReqModRefWord" to="CfReqModRefWord" />
+  </StructureModification>
 </history>
 

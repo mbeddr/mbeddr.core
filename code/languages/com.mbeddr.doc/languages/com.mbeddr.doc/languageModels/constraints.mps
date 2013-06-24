@@ -68,7 +68,7 @@
     <node type="tp1t.ConceptConstraints" typeId="tp1t.1213093968558" id="8624890525767886395">
       <property name="virtualPackage" nameId="tpck.1193676396447" value="config.scaling" />
       <link role="concept" roleId="tp1t.1213093996982" targetNodeId="2c95.8624890525767555424" resolveInfo="FigureSizeSpec" />
-      <link role="defaultConcreteConcept" roleId="tp1t.1213106917431" targetNodeId="2c95.8624890525767637976" resolveInfo="PageWidthSizeSpec" />
+      <link role="defaultConcreteConcept" roleId="tp1t.1213106917431" targetNodeId="2c95.4317007310193476045" resolveInfo="ScaleDownNotUp100" />
     </node>
     <node type="tp1t.ConceptConstraints" typeId="tp1t.1213093968558" id="8730648445434044922">
       <property name="virtualPackage" nameId="tpck.1193676396447" value="paragraphs" />

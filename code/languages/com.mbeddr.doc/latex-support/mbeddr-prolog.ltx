@@ -27,6 +27,8 @@
 \usepackage{listings} 
 \usepackage{tikz}
 \usepackage{etoolbox}
+\usepackage{fullpage}
+\usepackage{calc}
 
 \newcommand{\changefont}[3]{\fontfamily{#1}\fontseries{#2}\fontshape{#3}\selectfont}
 
@@ -98,4 +100,16 @@ config, components, wire, statically, no, middleware
 {morekeywords={
 Unit, Configuration, derived, unit, for},
 comment=[l]{//}
+}
+
+\setcounter{tocdepth}{2} 
+
+
+
+\newlength{\imgwidth}
+
+\newcommand\scalegraphics[1]{%   
+    \settowidth{\imgwidth}{\includegraphics{#1}}%
+    \setlength{\imgwidth}{\minof{\imgwidth}{\textwidth}}%
+    \includegraphics[width=\imgwidth]{#1}%
 }
