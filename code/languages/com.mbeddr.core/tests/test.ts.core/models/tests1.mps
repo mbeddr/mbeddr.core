@@ -10303,6 +10303,16 @@
                 <property name="value" nameId="yq40.6113173064526131578" value="Hallo Welt" />
               </node>
             </node>
+            <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="3030532866322862954">
+              <property name="name" nameId="tpck.1169194664001" value="strArrWithoutSize" />
+              <node role="type" roleId="mj1l.318113533128716676" type="yq40.StringArrayType" typeId="yq40.5684014141267595977" id="3030532866322862955">
+                <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+                <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+              </node>
+              <node role="init" roleId="c4fa.4185783222026502647" type="yq40.StringLiteral" typeId="yq40.6113173064526131575" id="3030532866322862957">
+                <property name="value" nameId="yq40.6113173064526131578" value="Hallo Welt" />
+              </node>
+            </node>
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="4633402679181505240">
               <property name="name" nameId="tpck.1169194664001" value="i8Ptr" />
               <node role="type" roleId="mj1l.318113533128716676" type="yq40.PointerType" typeId="yq40.279446265608459824" id="4633402679181505242">
