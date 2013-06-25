@@ -469,6 +469,11 @@
       <property name="name" nameId="tpck.1169194664001" value="PortAdapterElementRefExpr" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="998890089995051771" resolveInfo="DataElementRefExpr" />
     </node>
+    <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4567175157254595828">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="adapter" />
+      <property name="name" nameId="tpck.1169194664001" value="SinglePortRefExpr" />
+      <link role="extends" roleId="tpce.1071489389519" targetNodeId="8105003328815208362" resolveInfo="PortRefExpr" />
+    </node>
   </roots>
   <root id="4491876417845474761">
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="4491876417845484918">
@@ -1979,6 +1984,17 @@
       <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
       <link role="specializedLink" roleId="tpce.1071599698500" targetNodeId="mj1l.7254843406768839760" />
       <link role="target" roleId="tpce.1071599976176" targetNodeId="8105003328815039001" resolveInfo="PortAdapterRefExpr" />
+    </node>
+  </root>
+  <root id="4567175157254595828">
+    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="4567175157254597161">
+      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
+      <property name="role" nameId="tpce.1071599776563" value="index" />
+      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="mj1l.8860443239512128050" resolveInfo="Expression" />
+    </node>
+    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.BooleanConceptProperty" typeId="tpce.1105725574259" id="4567175157254597160">
+      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473994950" resolveInfo="dontSubstituteByDefault" />
     </node>
   </root>
 </model>
