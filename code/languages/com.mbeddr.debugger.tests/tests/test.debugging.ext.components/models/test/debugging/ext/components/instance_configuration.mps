@@ -122,6 +122,16 @@
               </node>
             </node>
           </node>
+          <node role="childern" roleId="rpmx.6894131567068077386" type="rpmx.WatchableWithValueExpression" typeId="rpmx.6894131567067751707" id="5620256631490347740">
+            <node role="name" roleId="rpmx.6894131567067751708" type="rpmx.WatchableNameExpression" typeId="rpmx.6894131567067751702" id="5620256631490347739">
+              <property name="name" nameId="tpck.1169194664001" value="aAdapeter" />
+            </node>
+            <node role="value" roleId="rpmx.6894131567067751709" type="rpmx.PrimitiveValueExpression" typeId="rpmx.6894131567067751726" id="5620256631490347743">
+              <node role="value" roleId="rpmx.6894131567068111705" type="rpmx.LiteralValue" typeId="rpmx.6894131567068111611" id="5620256631490347744">
+                <property name="value" nameId="rpmx.6894131567068111701" value="A" />
+              </node>
+            </node>
+          </node>
           <node role="value" roleId="rpmx.6894131567068111706" type="rpmx.LiteralValue" typeId="rpmx.6894131567068111611" id="1218249513293359092">
             <property name="value" nameId="rpmx.6894131567068111701" value="instance configuration" />
           </node>
@@ -499,6 +509,16 @@
                   </node>
                 </node>
               </node>
+              <node role="childern" roleId="rpmx.6894131567068077386" type="rpmx.WatchableWithValueExpression" typeId="rpmx.6894131567067751707" id="5620256631490370474">
+                <node role="name" roleId="rpmx.6894131567067751708" type="rpmx.WatchableNameExpression" typeId="rpmx.6894131567067751702" id="5620256631490370475">
+                  <property name="name" nameId="tpck.1169194664001" value="aAdapeter" />
+                </node>
+                <node role="value" roleId="rpmx.6894131567067751709" type="rpmx.PrimitiveValueExpression" typeId="rpmx.6894131567067751726" id="5620256631490370476">
+                  <node role="value" roleId="rpmx.6894131567068111705" type="rpmx.LiteralValue" typeId="rpmx.6894131567068111611" id="5620256631490370477">
+                    <property name="value" nameId="rpmx.6894131567068111701" value="A" />
+                  </node>
+                </node>
+              </node>
               <node role="value" roleId="rpmx.6894131567068111706" type="rpmx.LiteralValue" typeId="rpmx.6894131567068111611" id="7599526456373072602">
                 <property name="value" nameId="rpmx.6894131567068111701" value="instance configuration" />
               </node>
@@ -700,6 +720,7 @@
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="v7ag.InstanceConfiguration" typeId="v7ag.4491876417845649024" id="6970948587881383808">
       <property name="name" nameId="tpck.1169194664001" value="instanceConfiguration" />
+      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
       <node role="contents" roleId="v7ag.7780999115923944213" type="v7ag.ComponentInstance" typeId="v7ag.4491876417845649014" id="6970948587881383812">
         <property name="name" nameId="tpck.1169194664001" value="first" />
         <link role="component" roleId="v7ag.4491876417845649015" targetNodeId="6970948587881383811" resolveInfo="A" />
