@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model modelUID="r:5d65e582-fa41-4818-b31c-b2aee1644b4a(com.mbeddr.analyses.cbmc.structure)" version="17">
+<model modelUID="r:5d65e582-fa41-4818-b31c-b2aee1644b4a(com.mbeddr.analyses.cbmc.structure)" version="18">
   <persistence version="7" />
   <language namespace="83888646-71ce-4f1c-9c53-c54016f6ad4f(jetbrains.mps.baseLanguage.collections)" />
   <language namespace="c72da2b9-7cce-4447-8389-f407dc1158b7(jetbrains.mps.lang.structure)" />
@@ -29,18 +29,18 @@
     </node>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="6472990431939799907">
       <property name="virtualPackage" nameId="tpck.1193676396447" value="configuration.cbmc" />
-      <property name="name" nameId="tpck.1169194664001" value="CBMCAnalysis" />
+      <property name="name" nameId="tpck.1169194664001" value="CProverBasedAnalysis" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="q46j.6472990431939692465" resolveInfo="Analysis" />
     </node>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="6472990431939799912">
       <property name="virtualPackage" nameId="tpck.1193676396447" value="configuration.cbmc" />
       <property name="name" nameId="tpck.1169194664001" value="ComponentsCBMCAnalysis" />
-      <link role="extends" roleId="tpce.1071489389519" targetNodeId="6472990431939799907" resolveInfo="CBMCAnalysis" />
+      <link role="extends" roleId="tpce.1071489389519" targetNodeId="6472990431939799907" resolveInfo="CProverBasedAnalysis" />
     </node>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="6472990431940227507">
       <property name="virtualPackage" nameId="tpck.1193676396447" value="configuration.cbmc" />
       <property name="name" nameId="tpck.1169194664001" value="AssertionsCBMCAnalysis" />
-      <link role="extends" roleId="tpce.1071489389519" targetNodeId="6472990431939799907" resolveInfo="CBMCAnalysis" />
+      <link role="extends" roleId="tpce.1071489389519" targetNodeId="6472990431939799907" resolveInfo="CProverBasedAnalysis" />
     </node>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4887422885165621122">
       <property name="name" nameId="tpck.1169194664001" value="CPROVERassume" />
@@ -60,12 +60,12 @@
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="5070503009225618710">
       <property name="virtualPackage" nameId="tpck.1193676396447" value="configuration.cbmc" />
       <property name="name" nameId="tpck.1169194664001" value="DecTabCBMCAnalysis" />
-      <link role="extends" roleId="tpce.1071489389519" targetNodeId="6472990431939799907" resolveInfo="CBMCAnalysis" />
+      <link role="extends" roleId="tpce.1071489389519" targetNodeId="6472990431939799907" resolveInfo="CProverBasedAnalysis" />
     </node>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="8376973589777602107">
       <property name="virtualPackage" nameId="tpck.1193676396447" value="configuration.cbmc" />
       <property name="name" nameId="tpck.1169194664001" value="StatemachineCBMCAnalysis" />
-      <link role="extends" roleId="tpce.1071489389519" targetNodeId="6472990431939799907" resolveInfo="CBMCAnalysis" />
+      <link role="extends" roleId="tpce.1071489389519" targetNodeId="6472990431939799907" resolveInfo="CProverBasedAnalysis" />
     </node>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7573444803550855446">
       <property name="name" nameId="tpck.1169194664001" value="CBMCAdvancedVerificationConditionBase" />
@@ -157,15 +157,15 @@
       <property name="name" nameId="tpck.1169194664001" value="PImmediatelyPrecedesQ" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="7392194941658581812" resolveInfo="CBMCAdvancedBinaryVerificationCondition" />
     </node>
-    <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="9047848667681355291">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="configuration.cbmc" />
-      <property name="name" nameId="tpck.1169194664001" value="RobustnessCBMCAnalysis" />
-      <link role="extends" roleId="tpce.1071489389519" targetNodeId="6472990431939799907" resolveInfo="CBMCAnalysis" />
-    </node>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="2613206384569151192">
       <property name="name" nameId="tpck.1169194664001" value="MacroAbstraction" />
       <property name="virtualPackage" nameId="tpck.1193676396447" value="manual_abstraction" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.3364660638048049748" resolveInfo="NodeAttribute" />
+    </node>
+    <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="9047848667681355291">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="configuration.cbmc" />
+      <property name="name" nameId="tpck.1169194664001" value="RobustnessCBMCAnalysis" />
+      <link role="extends" roleId="tpce.1071489389519" targetNodeId="6472990431939799907" resolveInfo="CProverBasedAnalysis" />
     </node>
   </roots>
   <root id="2161187783549671007">
@@ -234,6 +234,10 @@
     <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="441761995014974059">
       <property name="name" nameId="tpck.1169194664001" value="analysisDepth" />
       <link role="dataType" roleId="tpce.1082985295845" targetNodeId="tpck.1082983657062" resolveInfo="integer" />
+    </node>
+    <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="4626864039426341465">
+      <property name="name" nameId="tpck.1169194664001" value="useCbmc" />
+      <link role="dataType" roleId="tpce.1082985295845" targetNodeId="tpck.1082983657063" resolveInfo="boolean" />
     </node>
     <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.BooleanConceptProperty" typeId="tpce.1105725574259" id="6472990431939799911">
       <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473854053" resolveInfo="abstract" />
@@ -493,6 +497,16 @@
       <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473891462" resolveInfo="alias" />
     </node>
   </root>
+  <root id="2613206384569151192">
+    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="2613206384569151194">
+      <property name="value" nameId="tpce.1105725733873" value="abstracted" />
+      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.5169995583184591164" resolveInfo="role" />
+    </node>
+    <node role="conceptLink" roleId="tpce.1105736949336" type="tpce.ReferenceConceptLink" typeId="tpce.1105736778597" id="2613206384569151195">
+      <link role="conceptLinkDeclaration" roleId="tpce.1105736734721" targetNodeId="tpck.5169995583184591169" resolveInfo="attributed" />
+      <link role="target" roleId="tpce.1105736807942" targetNodeId="clqz.5338908363445763648" resolveInfo="ConditionMacro" />
+    </node>
+  </root>
   <root id="9047848667681355291">
     <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="9047848667681374187">
       <property name="name" nameId="tpck.1169194664001" value="check_div_by_zero" />
@@ -521,16 +535,6 @@
     <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="9047848667681355292">
       <property name="value" nameId="tpce.1105725733873" value="robustness_analysis_config" />
       <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473891462" resolveInfo="alias" />
-    </node>
-  </root>
-  <root id="2613206384569151192">
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="2613206384569151194">
-      <property name="value" nameId="tpce.1105725733873" value="abstracted" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.5169995583184591164" resolveInfo="role" />
-    </node>
-    <node role="conceptLink" roleId="tpce.1105736949336" type="tpce.ReferenceConceptLink" typeId="tpce.1105736778597" id="2613206384569151195">
-      <link role="conceptLinkDeclaration" roleId="tpce.1105736734721" targetNodeId="tpck.5169995583184591169" resolveInfo="attributed" />
-      <link role="target" roleId="tpce.1105736807942" targetNodeId="clqz.5338908363445763648" resolveInfo="ConditionMacro" />
     </node>
   </root>
 </model>

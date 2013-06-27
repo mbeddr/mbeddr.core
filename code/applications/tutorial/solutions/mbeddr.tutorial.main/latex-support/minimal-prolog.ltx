@@ -27,6 +27,7 @@
 \usepackage{listings} 
 \usepackage{tikz}
 \usepackage{etoolbox}
+\usepackage{calc}
 
 \newcommand{\changefont}[3]{\fontfamily{#1}\fontseries{#2}\fontshape{#3}\selectfont}
 
@@ -69,4 +70,11 @@ columns=flexible,                       % Column format
 morekeywords={}  
 } 
  
- 
+
+\newlength{\imgwidth}
+
+\newcommand\scalegraphics[1]{%   
+    \settowidth{\imgwidth}{\includegraphics{#1}}%
+    \setlength{\imgwidth}{\minof{\imgwidth}{\textwidth}}%
+    \includegraphics[width=\imgwidth]{#1}%
+}

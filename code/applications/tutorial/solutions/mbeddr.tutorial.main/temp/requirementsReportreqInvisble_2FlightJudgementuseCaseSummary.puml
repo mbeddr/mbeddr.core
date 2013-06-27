@@ -1,0 +1,32 @@
+@startuml
+left to right direction
+actor Pilot
+actor Pilot
+actor Aircraft
+rectangle system {
+actor UI
+url of UI is [[http://mbeddr.com/r:0a202323-79f1-42c1-9cd4-527b01aee7f0##__##6898387700925260474]]
+actor UI
+url of UI is [[http://mbeddr.com/r:0a202323-79f1-42c1-9cd4-527b01aee7f0##__##6898387700925260474]]
+actor DataStore
+url of DataStore is [[http://mbeddr.com/r:0a202323-79f1-42c1-9cd4-527b01aee7f0##__##6898387700925260483]]
+actor Interpolator
+url of Interpolator is [[http://mbeddr.com/r:0a202323-79f1-42c1-9cd4-527b01aee7f0##__##8119642625901795400]]
+actor Judger
+url of Judger is [[http://mbeddr.com/r:0a202323-79f1-42c1-9cd4-527b01aee7f0##__##8119642625901800289]]
+usecase UserSuppliesFlights
+url of UserSuppliesFlights is [[http://mbeddr.com/r:0a202323-79f1-42c1-9cd4-527b01aee7f0##__##6898387700925062298]]
+Pilot -- UserSuppliesFlights
+UserSuppliesFlights -- UI
+usecase FlightIsInterpolated
+url of FlightIsInterpolated is [[http://mbeddr.com/r:0a202323-79f1-42c1-9cd4-527b01aee7f0##__##8983161156585739656]]
+UI -- FlightIsInterpolated
+FlightIsInterpolated -- DataStore
+FlightIsInterpolated -- Interpolator
+FlightIsInterpolated -- Judger
+usecase PilotCollectsFlightData
+url of PilotCollectsFlightData is [[http://mbeddr.com/r:0a202323-79f1-42c1-9cd4-527b01aee7f0##__##1942554214112320151]]
+Pilot -- PilotCollectsFlightData
+PilotCollectsFlightData -- Aircraft
+}
+@enduml

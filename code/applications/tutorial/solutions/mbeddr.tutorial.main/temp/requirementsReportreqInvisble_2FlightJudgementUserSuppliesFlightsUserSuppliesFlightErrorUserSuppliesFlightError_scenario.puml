@@ -1,0 +1,22 @@
+@startuml
+title
+<u>Requirement</u> UseCases.FlightJudgement.UserSuppliesFlights.UserSuppliesFlightError
+<u>Scenario</u> UserSuppliesFlightError
+
+end title
+participant Pilot
+url of Pilot is [[http://mbeddr.com/r:0a202323-79f1-42c1-9cd4-527b01aee7f0##__##6898387700925062299]]
+participant UI
+url of UI is [[http://mbeddr.com/r:0a202323-79f1-42c1-9cd4-527b01aee7f0##__##6898387700925260474]]
+activate Pilot
+Pilot -> UI : submitFlight(exampleFlight) [[http://mbeddr.com/r:0a202323-79f1-42c1-9cd4-527b01aee7f0##__##1942554214112319820]]
+activate UI
+note over UI #FFFFFF
+  - maybe the database is full
+  - or the connection to the database failed
+end note
+Pilot <-- UI:error
+deactivate UI
+hnote over Pilot #FFAAAA: FAILED
+deactivate Pilot
+@enduml

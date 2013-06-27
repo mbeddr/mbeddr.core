@@ -110,5 +110,11 @@
     </dependencies>
     <rename id="2gv2.7179305966071579075" type="CONCEPT" from="IPermanentBreakpoint" to="IPermanentBreakpointsProvider" />
   </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="2gv2" modelUID="r:055bac8c-a50b-42ec-a317-e20a256152b4(com.mbeddr.core.debug.structure)" version="12" />
+    </dependencies>
+    <rename id="2gv2.4141878798836724144" type="CONCEPT" from="INotBreakpoint" to="INoBreakpointSupport" />
+  </StructureModification>
 </history>
 

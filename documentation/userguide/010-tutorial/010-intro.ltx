@@ -42,8 +42,10 @@ after the change:
 -Dfile.encoding=UTF-8
 \end{lstlisting}
 
-\onwin On some 32bit Windows XP systems we had to reduce the \ic{-Xmx1200m}
-setting to \ic{768m} to get it to work.
+\onwin On some Windows systems we had to reduce the \ic{-Xmx1200m}
+setting to \ic{768m} to get it to work. If MPS does not start with the error
+message \emph{Could not create the VM}, then it is likely that this is the
+problem.
 
 
 
@@ -121,8 +123,10 @@ recommend you stay with the distribution discussed above.
 
 
 \begin{itemize}
-  \item Clone the repository onto your local machine. The repository is at 
-  \ic{https://github.com/mbeddr/mbeddr.core}. 
+  \item Clone the repository onto your local machine. Our github repository is
+  at \\ 
+  \ic{https://github.com/mbeddr/mbeddr.core}, the repository URL to be
+  used for cloning (for various prototocols) can be found at this URL.
   
   
   \item Rebuild all the languages. We provide a shell script for this purpose 
@@ -133,7 +137,9 @@ recommend you stay with the distribution discussed above.
   directory separators even on Windows!}). The easiest way to find all the places 
   where this has to be adapted is to search for all \ic{build.properties.example} under the mbeddr
   root mbeddr directory; remove the \ic{.example} and fill in the respective
-  directories. 
+  directories. Note also that the shell scripts rely on Apache ant. You have
+  to install it (from \ic{http://ant.apache.org/}) on your machine and make sure
+  that the \ic{ant} script is in your path.
 
   \item When running the above-mentioned script, you should have an internet
   connection because the script also downloads a few additional MPS plugins and
@@ -143,12 +149,18 @@ recommend you stay with the distribution discussed above.
 
   \item We now have to make future application projects aware of the
   \ic{mbeddr.core} languages in the github checkout directory. Start MPS and go
-  to the $File \rightarrow Settings$ (on the Mac it is under $MPS \rightarrow Preferences$) and select the $Global
-  Libraries$ in the IDE settings. Create a library called \ic{mbeddr.core} that
-  points to the \ic{code} directory of the unzipped mbeddr
-  installation. The library must point to the \ic{code}
-  directory of the checkout so that all languages are below it, 
-  including \emph{core} and \emph{mpsutil}.
+  to the $File \rightarrow Settings$ (on the Mac it is under $MPS \rightarrow Preferences$) 
+  and select the $Path Variables$ in the $IDE Settings$. Create a path variable
+  named \ic{mbeddr.github.core.home} and have it
+  point into the root directory of your mbeddr git clone (e.g. \\
+  \ic{/Users/peter/Documents/mbeddr.core}).
+
+  \item Then go to the $Global Libraries$ in the IDE settings. Create a library
+  called \ic{mbeddr.core} that points to the \ic{code} directory of the github
+  repository directory (\ic{/Users/peter/Documents/mbeddr.core/code}). The
+  library must point to the \ic{code} directory of the checkout so that all languages are below it,
+  including \emph{core} and \emph{mpsutil}. Because we had earlier define the
+  path variable, it will use the path variable for defining the library.
 
 \begin{center} 
   \includegraphics[width=10cm]{figures/core/SettingsGlobalLibraries.png}

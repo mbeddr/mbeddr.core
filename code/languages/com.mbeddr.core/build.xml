@@ -34,7 +34,6 @@
  
   <property name="utilLanguageDir" value="${mbeddr.github.core.home}/${util.project.dir}/languages"/>
   <property name="debuggerLanguageDir" value="${mbeddr.github.core.home}/${debugger.project.dir}/languages"/>
-  <property name="lissonLanguageDir" value="${lisson.home}/"/>
  
   <jvmargs id="myargs">
       <arg value="-ea"/>
@@ -66,7 +65,6 @@
 
       <library name="util.languages" dir="${utilLanguageDir}"/>
       <library name="debugger.languages" dir="${debuggerLanguageDir}"/>
-      <library name="lisson.languages" dir="${lissonLanguageDir}"/>
       <macro name="mbeddr.github.core.home" path="${mbeddr.github.core.home}"/>
 
       <modules dir="${mbeddr.github.core.home}/${mbeddr.core.project.dir}/languages"/>
@@ -87,7 +85,6 @@
       <library name="mbeddr.project" dir="${mbeddr.github.core.home}/${mbeddr.core.project.dir}"/>
       <library name="util.languages" dir="${utilLanguageDir}"/>
       <library name="debugger.languages" dir="${debuggerLanguageDir}"/>
-      <library name="lisson.languages" dir="${lissonLanguageDir}"/>
       
       <modules dir="${mbeddr.github.core.home}/${mbeddr.core.project.dir}/tests"/>
 
@@ -100,6 +97,8 @@
          <include name="**/source_gen/**" />
          <include name="**/source_gen.caches/**" />
          <include name="**/classes_gen/**" />
+         <include name="**/test_gen/**" />
+         <include name="**/test_gen.caches/**" />		 		 
       </fileset>
     </delete>
   </target>
@@ -136,8 +135,7 @@
        
       <sysproperty key="mps.junit.pathmacro.mbeddr.assembla.ext.home" value="${mbeddr.github.core.home}"/>
       <sysproperty key="mps.junit.pathmacro.mbeddr.github.core.home" value="${mbeddr.github.core.home}"/>
-      <sysproperty key="mps.junit.pathmacro.lisson.home" value="${lisson.home}"/>
-      <sysproperty key="mps.junit.project" value="${mbeddr.github.core.home}/${mbeddr.core.project.mpr}"/>
+        <sysproperty key="mps.junit.project" value="${mbeddr.github.core.home}/${mbeddr.core.project.mpr}"/>
 
       <classpath>
         <fileset dir="${mps.home}/lib">

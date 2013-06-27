@@ -105,15 +105,15 @@
   </StructureModification>
   <StructureModification>
     <dependencies>
-      <model index="4gky" modelUID="r:e1dfab1d-c7a7-43e7-9f26-028afd483e82(com.mbeddr.doc.behavior)" version="0" />
       <model index="1v5f" modelUID="r:4f711f61-0afc-435a-be43-8c850e85d84d(com.mbeddr.doc.c.behavior)" version="-1" />
+      <model index="4gky" modelUID="r:e1dfab1d-c7a7-43e7-9f26-028afd483e82(com.mbeddr.doc.behavior)" version="0" />
       <model index="z726" modelUID="r:6b7eb85f-64d8-4de6-8906-0e18804729df(com.mbeddr.doc.editor)" version="0" />
       <model index="ued5" modelUID="r:68fe904b-51be-40c5-b65a-2001514243b6(com.mbeddr.doc.c.constraints)" version="-1" />
-      <model index="ye83" modelUID="r:a5b5b4fe-a87a-44d6-a204-cb07050793ac(com.mbeddr.doc.constraints)" version="-1" />
       <model index="2c95" modelUID="r:5f7188a9-e7b4-4a2e-bef9-38d2cf379fdc(com.mbeddr.doc.structure)" version="10" />
+      <model index="ye83" modelUID="r:a5b5b4fe-a87a-44d6-a204-cb07050793ac(com.mbeddr.doc.constraints)" version="-1" />
       <model index="4kkr" modelUID="r:318990e2-97c9-4ddb-9f83-64a51d64d6b7(com.mbeddr.doc.c.typesystem)" version="-1" />
-      <model index="lj1a" modelUID="r:4678d28a-4cfe-45ce-be25-7ac92fa82f13(com.mbeddr.doc.typesystem)" version="-1" />
       <model index="rh4a" modelUID="r:51a64317-678a-4e8f-9df1-1e83f73c9d71(com.mbeddr.doc.c.structure)" version="4" />
+      <model index="lj1a" modelUID="r:4678d28a-4cfe-45ce-be25-7ac92fa82f13(com.mbeddr.doc.typesystem)" version="-1" />
       <model index="mkfm" modelUID="r:f4588adc-1966-4e6d-8bea-4fe2404fbaa1(com.mbeddr.doc.c.editor)" version="-1" />
     </dependencies>
     <move id="rh4a.8624890525767931145" to="2c95.2588579461812060100" />
@@ -372,6 +372,12 @@
     <move id="ued5.4755612053022373497" to="ye83.2588579461812060308" />
     <move id="ued5.4755612053022386227" to="ye83.2588579461812060338" />
     <move id="ued5.4755612053022373501" to="ye83.2588579461812060329" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="2c95" modelUID="r:5f7188a9-e7b4-4a2e-bef9-38d2cf379fdc(com.mbeddr.doc.structure)" version="11" />
+    </dependencies>
+    <rename id="2c95.6657644269295214799" type="CONCEPT" from="IDocConfigProvider" to="IDocumentLike" />
   </StructureModification>
 </history>
 

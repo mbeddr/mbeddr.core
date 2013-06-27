@@ -78,5 +78,11 @@
     </dependencies>
     <rename id="q5q6.6472990431940227507" type="CONCEPT" from="FunctionsCBMCAnalysis" to="AssertionsCBMCAnalysis" />
   </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="q5q6" modelUID="r:5d65e582-fa41-4818-b31c-b2aee1644b4a(com.mbeddr.analyses.cbmc.structure)" version="17" />
+    </dependencies>
+    <rename id="q5q6.6472990431939799907" type="CONCEPT" from="CBMCAnalysis" to="CProverBasedAnalysis" />
+  </StructureModification>
 </history>
 
