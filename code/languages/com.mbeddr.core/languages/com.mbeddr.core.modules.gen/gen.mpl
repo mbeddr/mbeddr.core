@@ -1,13 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<language namespace="com.mbeddr.core.modules.gen" uuid="62296a07-bc38-46d2-8034-198c24063588" doNotGenerateAdapters="true">
+<language namespace="com.mbeddr.core.modules.gen" uuid="62296a07-bc38-46d2-8034-198c24063588">
   <models>
-    <modelRoot path="${language_descriptor}/languageModels" />
+    <modelRoot contentPath="${module}" type="default">
+      <sourceRoot location="languageModels" />
+    </modelRoot>
   </models>
   <accessoryModels />
   <generators>
     <generator name="main" generatorUID="com.mbeddr.core.modules.gen#1758019824472882132" uuid="be090156-a678-454c-bd8f-89ebd4a0e6af">
       <models>
-        <modelRoot path="${language_descriptor}/generator/template" />
+        <modelRoot contentPath="${module}" type="default">
+          <sourceRoot location="generator/template" />
+        </modelRoot>
       </models>
       <external-templates />
       <dependencies>

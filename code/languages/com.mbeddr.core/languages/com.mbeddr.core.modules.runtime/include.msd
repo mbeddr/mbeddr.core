@@ -1,16 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <solution name="com.mbeddr.core.modules.runtime" uuid="fda566a8-0df7-442b-b355-ba0f7b3d1cbd" pluginKind="PLUGIN_EDITOR" compileInMPS="true">
   <models>
-    <modelRoot path="${solution_descriptor}/" />
-    <modelRoot path="${solution_descriptor}/lib/commons-io-2.4.jar">
-      <manager moduleId="f3061a53-9226-4cc5-a443-f952ceaf5816" className="jetbrains.mps.baseLanguage.stubs.JavaStubs" />
+    <modelRoot contentPath="${module}" type="default">
+      <sourceRoot location="." />
+      <sourceRoot location="models" />
     </modelRoot>
-    <modelRoot path="${solution_descriptor}/models" />
+    <modelRoot path="${module}/lib/commons-io-2.4.jar" type="java_classes" />
   </models>
   <stubModelEntries>
-    <stubModelEntry path="${solution_descriptor}/lib/commons-io-2.4.jar">
-      <manager moduleId="f3061a53-9226-4cc5-a443-f952ceaf5816" className="jetbrains.mps.baseLanguage.stubs.JavaStubs" />
-    </stubModelEntry>
+    <stubModelEntry path="${module}/lib/commons-io-2.4.jar" />
   </stubModelEntries>
   <sourcePath />
   <dependencies>

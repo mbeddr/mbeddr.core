@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <solution name="test.ts.core" uuid="6c345d5a-820d-4b6d-9bea-8a6794de05b7" compileInMPS="true">
   <models>
-    <modelRoot path="${solution_descriptor}/" />
-    <modelRoot path="${solution_descriptor}/models" />
+    <modelRoot contentPath="${module}" type="default">
+      <sourceRoot location="." />
+      <sourceRoot location="models" />
+    </modelRoot>
   </models>
   <sourcePath />
   <dependencies>

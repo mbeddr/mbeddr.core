@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<language namespace="com.mbeddr.core.udt" uuid="efda956e-491e-4f00-ba14-36af2f213ecf" doNotGenerateAdapters="true">
+<language namespace="com.mbeddr.core.udt" uuid="efda956e-491e-4f00-ba14-36af2f213ecf">
   <models>
-    <modelRoot path="${language_descriptor}/languageModels" />
+    <modelRoot contentPath="${module}" type="default">
+      <sourceRoot location="languageModels" />
+    </modelRoot>
   </models>
   <accessoryModels />
   <generators />

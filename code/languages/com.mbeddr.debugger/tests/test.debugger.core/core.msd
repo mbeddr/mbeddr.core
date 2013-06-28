@@ -1,21 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <solution name="test.debugger.core" uuid="fa1d9f5d-d5ce-44c5-94ac-ba5f1a1fba8e" pluginKind="PLUGIN_OTHER" compileInMPS="true">
   <models>
-    <modelRoot path="${solution_descriptor}/" />
-    <modelRoot path="${solution_descriptor}/libs/easymock-3.1.jar">
-      <manager moduleId="f3061a53-9226-4cc5-a443-f952ceaf5816" className="jetbrains.mps.baseLanguage.stubs.JavaStubs" />
+    <modelRoot contentPath="${module}" type="default">
+      <sourceRoot location="." />
     </modelRoot>
-    <modelRoot path="${solution_descriptor}/libs/mockito-all-1.9.0.jar">
-      <manager moduleId="f3061a53-9226-4cc5-a443-f952ceaf5816" className="jetbrains.mps.baseLanguage.stubs.JavaStubs" />
-    </modelRoot>
+    <modelRoot path="${module}/libs/easymock-3.1.jar" type="java_classes" />
+    <modelRoot path="${module}/libs/mockito-all-1.9.0.jar" type="java_classes" />
   </models>
   <stubModelEntries>
-    <stubModelEntry path="${solution_descriptor}/libs/easymock-3.1.jar">
-      <manager moduleId="f3061a53-9226-4cc5-a443-f952ceaf5816" className="jetbrains.mps.baseLanguage.stubs.JavaStubs" />
-    </stubModelEntry>
-    <stubModelEntry path="${solution_descriptor}/libs/mockito-all-1.9.0.jar">
-      <manager moduleId="f3061a53-9226-4cc5-a443-f952ceaf5816" className="jetbrains.mps.baseLanguage.stubs.JavaStubs" />
-    </stubModelEntry>
+    <stubModelEntry path="${module}/libs/easymock-3.1.jar" />
+    <stubModelEntry path="${module}/libs/mockito-all-1.9.0.jar" />
   </stubModelEntries>
   <sourcePath />
   <dependencies>

@@ -1,13 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<language namespace="com.mbeddr.core.debug.blext" uuid="ebb5e132-d298-4649-b320-b3f4d7f3acff" doNotGenerateAdapters="true">
+<language namespace="com.mbeddr.core.debug.blext" uuid="ebb5e132-d298-4649-b320-b3f4d7f3acff">
   <models>
-    <modelRoot path="${language_descriptor}/languageModels" />
+    <modelRoot contentPath="${module}" type="default">
+      <sourceRoot location="languageModels" />
+    </modelRoot>
   </models>
   <accessoryModels />
   <generators>
     <generator name="main" generatorUID="com.mbeddr.core.debug.blext#1734689175229870721" uuid="344da95f-aad8-4bc8-84c1-544255417ecc">
       <models>
-        <modelRoot path="${language_descriptor}/generator/template" />
+        <modelRoot contentPath="${module}" type="default">
+          <sourceRoot location="generator/template" />
+        </modelRoot>
       </models>
       <external-templates>
         <generator generatorUID="2ca6a34d-0b96-4602-9cdd-f9e33d51126a(jetbrains.mps.lang.behavior#1225195312923)" />
