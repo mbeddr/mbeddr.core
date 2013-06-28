@@ -2619,8 +2619,8 @@
           <property name="flag" nameId="tpc2.1186414551515" value="true" />
         </node>
       </node>
-      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Property" typeId="tpc2.1073389658414" id="3457272138385423177">
-        <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="v7ag.3457272138385423167" resolveInfo="count" />
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_RefNode" typeId="tpc2.1073389882823" id="2742494070477841516">
+        <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="v7ag.2742494070477836211" />
       </node>
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="3457272138385423175">
         <property name="text" nameId="tpc2.1073389577007" value="]" />

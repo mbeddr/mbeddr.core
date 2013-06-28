@@ -49,6 +49,10 @@
         <property name="name" nameId="tpck.1169194664001" value="y" />
         <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="3912676515585219898" />
       </node>
+      <node role="members" roleId="clbe.7099329415459888018" type="clbe.Member" typeId="clbe.5882395403881875736" id="4912778074593707520">
+        <property name="name" nameId="tpck.1169194664001" value="z" />
+        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="4912778074593707521" />
+      </node>
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="2812390151932500204">
       <property name="name" nameId="tpck.1169194664001" value="empty_1358195110729_14" />
@@ -134,6 +138,19 @@
             <node role="value" roleId="k146.3073566081777391257" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3073566081777429648">
               <property name="value" nameId="mj1l.8860443239512128104" value="20" />
             </node>
+          </node>
+          <node role="memberAssigns" roleId="k146.3073566081777411306" type="k146.WithMemberAssignment" typeId="k146.3073566081777391256" id="4912778074593707524">
+            <link role="member" roleId="k146.3073566081777391258" targetNodeId="4912778074593707520" resolveInfo="z" />
+            <node role="value" roleId="k146.3073566081777391257" type="x27k.FunctionCall" typeId="x27k.5950410542643524492" id="4912778074593707528">
+              <link role="function" roleId="x27k.5950410542643524493" targetNodeId="9164040870051490210" resolveInfo="getInit" />
+              <node role="actuals" roleId="x27k.5950410542643524495" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="4912778074593707529">
+                <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
+                <property name="value" nameId="mj1l.8860443239512128104" value="3" />
+              </node>
+            </node>
+          </node>
+          <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="rpmx.MarkerAnnotation" typeId="rpmx.4193597469137492628" id="4912778074593707531">
+            <property name="name" nameId="tpck.1169194664001" value="withStatement" />
           </node>
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="x27k.ReturnStatement" typeId="x27k.8967919205527146149" id="2812390151932498226">
@@ -418,8 +435,8 @@
       </node>
       <node role="validation" roleId="rpmx.4360423713604451010" type="rpmx.ValidationConfiguration" typeId="rpmx.4360423713604419372" id="8924761790438006425">
         <node role="validations" roleId="rpmx.4360423713604419402" type="rpmx.ValidateDebuggerSuspended" typeId="rpmx.7048220250906049590" id="8924761790438006426">
-          <node role="marker" roleId="rpmx.7048220250906049591" type="rpmx.MarkerRef" typeId="rpmx.4193597469137492644" id="2392608156124769824">
-            <link role="marker" roleId="rpmx.4193597469137492645" targetNodeId="2812390151932498555" resolveInfo="stmntAfterAssignment" />
+          <node role="marker" roleId="rpmx.7048220250906049591" type="rpmx.MarkerRef" typeId="rpmx.4193597469137492644" id="4912778074593707533">
+            <link role="marker" roleId="rpmx.4193597469137492645" targetNodeId="4912778074593707531" resolveInfo="withStatement" />
           </node>
         </node>
         <node role="validations" roleId="rpmx.4360423713604419402" type="rpmx.StackFramesReference" typeId="rpmx.1218249513292851176" id="5710167937131356709">
@@ -427,6 +444,7 @@
         </node>
       </node>
     </node>
+    <node role="contents" roleId="rpmx.5710167937130937944" type="rpmx.EmptyDebuggerContent" typeId="rpmx.105850086901771260" id="4912778074593716623" />
     <node role="contents" roleId="rpmx.5710167937130937944" type="rpmx.DebuggerTestcase" typeId="rpmx.105850086902839305" id="8924761790438006943">
       <property name="name" nameId="tpck.1169194664001" value="stepOverStructDeclaration" />
       <node role="returnType" roleId="tpee.1068580123133" type="tpee.VoidType" typeId="tpee.1068581517677" id="8924761790438006944" />
@@ -457,6 +475,7 @@
         </node>
       </node>
     </node>
+    <node role="contents" roleId="rpmx.5710167937130937944" type="rpmx.EmptyDebuggerContent" typeId="rpmx.105850086901771260" id="4912778074593716624" />
     <node role="contents" roleId="rpmx.5710167937130937944" type="rpmx.DebuggerTestcase" typeId="rpmx.105850086902839305" id="8924761790438007448">
       <property name="name" nameId="tpck.1169194664001" value="stepIntoStructDeclaration" />
       <node role="returnType" roleId="tpee.1068580123133" type="tpee.VoidType" typeId="tpee.1068581517677" id="8924761790438007449" />
@@ -482,6 +501,76 @@
         </node>
       </node>
     </node>
+    <node role="contents" roleId="rpmx.5710167937130937944" type="rpmx.EmptyDebuggerContent" typeId="rpmx.105850086901771260" id="4912778074593707570" />
+    <node role="contents" roleId="rpmx.5710167937130937944" type="rpmx.DebuggerTestcase" typeId="rpmx.105850086902839305" id="4912778074593707536">
+      <property name="name" nameId="tpck.1169194664001" value="stepIntoCallablesOfWithStatement" />
+      <node role="returnType" roleId="tpee.1068580123133" type="tpee.VoidType" typeId="tpee.1068581517677" id="4912778074593707537" />
+      <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="4912778074593707538" />
+      <node role="suspension" roleId="rpmx.105850086902839308" type="rpmx.SuspensionPointConfiguration" typeId="rpmx.105850086903250145" id="4912778074593707563">
+        <node role="suspensionPoint" roleId="rpmx.105850086903250160" type="rpmx.MarkerReference" typeId="rpmx.105850086903250161" id="4912778074593707564">
+          <link role="marker" roleId="rpmx.105850086903274948" targetNodeId="4912778074593707531" resolveInfo="withStatement" />
+        </node>
+      </node>
+      <node role="stepping" roleId="rpmx.105850086903379490" type="rpmx.SteppingConfiguration" typeId="rpmx.105850086903379387" id="4912778074593707565">
+        <node role="steppingElements" roleId="rpmx.105850086903379390" type="rpmx.StepIntoCommand" typeId="rpmx.4231345613098876386" id="4912778074593707566">
+          <property name="times" nameId="rpmx.610689949604310287" value="4" />
+        </node>
+      </node>
+      <node role="validation" roleId="rpmx.4360423713604451010" type="rpmx.ValidationConfiguration" typeId="rpmx.4360423713604419372" id="4912778074593707567">
+        <node role="validations" roleId="rpmx.4360423713604419402" type="rpmx.ValidateDebuggerSuspended" typeId="rpmx.7048220250906049590" id="4912778074593707568">
+          <node role="marker" roleId="rpmx.7048220250906049591" type="rpmx.MarkerRef" typeId="rpmx.4193597469137492644" id="4912778074593707569">
+            <link role="marker" roleId="rpmx.4193597469137492645" targetNodeId="2812390151932498555" resolveInfo="stmntAfterAssignment" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node role="contents" roleId="rpmx.5710167937130937944" type="rpmx.EmptyDebuggerContent" typeId="rpmx.105850086901771260" id="4912778074593707561" />
+    <node role="contents" roleId="rpmx.5710167937130937944" type="rpmx.DebuggerTestcase" typeId="rpmx.105850086902839305" id="4912778074593707540">
+      <property name="name" nameId="tpck.1169194664001" value="stepToWithStatement" />
+      <node role="returnType" roleId="tpee.1068580123133" type="tpee.VoidType" typeId="tpee.1068581517677" id="4912778074593707541" />
+      <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="4912778074593707542" />
+      <node role="suspension" roleId="rpmx.105850086902839308" type="rpmx.SuspensionPointConfiguration" typeId="rpmx.105850086903250145" id="4912778074593707554">
+        <node role="suspensionPoint" roleId="rpmx.105850086903250160" type="rpmx.MarkerReference" typeId="rpmx.105850086903250161" id="4912778074593707555">
+          <link role="marker" roleId="rpmx.105850086903274948" targetNodeId="2812390151932498598" resolveInfo="stmntBeforeMemberAssignment" />
+        </node>
+      </node>
+      <node role="stepping" roleId="rpmx.105850086903379490" type="rpmx.SteppingConfiguration" typeId="rpmx.105850086903379387" id="4912778074593707556">
+        <node role="steppingElements" roleId="rpmx.105850086903379390" type="rpmx.StepOverCommand" typeId="rpmx.4231345613098876381" id="4912778074593707557">
+          <property name="times" nameId="rpmx.610689949604310287" value="1" />
+        </node>
+      </node>
+      <node role="validation" roleId="rpmx.4360423713604451010" type="rpmx.ValidationConfiguration" typeId="rpmx.4360423713604419372" id="4912778074593707558">
+        <node role="validations" roleId="rpmx.4360423713604419402" type="rpmx.ValidateDebuggerSuspended" typeId="rpmx.7048220250906049590" id="4912778074593707559">
+          <node role="marker" roleId="rpmx.7048220250906049591" type="rpmx.MarkerRef" typeId="rpmx.4193597469137492644" id="4912778074593707560">
+            <link role="marker" roleId="rpmx.4193597469137492645" targetNodeId="4912778074593707531" resolveInfo="withStatement" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node role="contents" roleId="rpmx.5710167937130937944" type="rpmx.EmptyDebuggerContent" typeId="rpmx.105850086901771260" id="4912778074593707562" />
+    <node role="contents" roleId="rpmx.5710167937130937944" type="rpmx.DebuggerTestcase" typeId="rpmx.105850086902839305" id="4912778074593707544">
+      <property name="name" nameId="tpck.1169194664001" value="stepOverWithStatement" />
+      <node role="returnType" roleId="tpee.1068580123133" type="tpee.VoidType" typeId="tpee.1068581517677" id="4912778074593707545" />
+      <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="4912778074593707546" />
+      <node role="suspension" roleId="rpmx.105850086902839308" type="rpmx.SuspensionPointConfiguration" typeId="rpmx.105850086903250145" id="4912778074593707547">
+        <node role="suspensionPoint" roleId="rpmx.105850086903250160" type="rpmx.MarkerReference" typeId="rpmx.105850086903250161" id="4912778074593707548">
+          <link role="marker" roleId="rpmx.105850086903274948" targetNodeId="4912778074593707531" resolveInfo="withStatement" />
+        </node>
+      </node>
+      <node role="stepping" roleId="rpmx.105850086903379490" type="rpmx.SteppingConfiguration" typeId="rpmx.105850086903379387" id="4912778074593707549">
+        <node role="steppingElements" roleId="rpmx.105850086903379390" type="rpmx.StepOverCommand" typeId="rpmx.4231345613098876381" id="4912778074593707550">
+          <property name="times" nameId="rpmx.610689949604310287" value="1" />
+        </node>
+      </node>
+      <node role="validation" roleId="rpmx.4360423713604451010" type="rpmx.ValidationConfiguration" typeId="rpmx.4360423713604419372" id="4912778074593707551">
+        <node role="validations" roleId="rpmx.4360423713604419402" type="rpmx.ValidateDebuggerSuspended" typeId="rpmx.7048220250906049590" id="4912778074593707552">
+          <node role="marker" roleId="rpmx.7048220250906049591" type="rpmx.MarkerRef" typeId="rpmx.4193597469137492644" id="4912778074593707553">
+            <link role="marker" roleId="rpmx.4193597469137492645" targetNodeId="2812390151932498555" resolveInfo="stmntAfterAssignment" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node role="contents" roleId="rpmx.5710167937130937944" type="rpmx.EmptyDebuggerContent" typeId="rpmx.105850086901771260" id="4912778074593707535" />
   </root>
 </model>
 
