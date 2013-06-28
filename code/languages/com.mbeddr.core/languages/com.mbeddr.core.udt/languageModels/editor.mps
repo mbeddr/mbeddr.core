@@ -202,7 +202,6 @@
   </root>
   <root id="8811614583515725858">
     <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="8811614583515725860">
-      <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Vertical" typeId="tpc2.1106270571710" id="2742494070478218828" />
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Component" typeId="tpc2.1078939183254" id="2742494070478183305">
         <link role="editorComponent" roleId="tpc2.1078939183255" targetNodeId="cl6c.6708182213627106151" resolveInfo="preventNameManglingFlag" />
       </node>
@@ -288,6 +287,7 @@
           <property name="text" nameId="tpc2.1073389577007" value="}" />
         </node>
       </node>
+      <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Vertical" typeId="tpc2.1106270571710" id="2742494070478218828" />
     </node>
   </root>
   <root id="8811614583515725878">

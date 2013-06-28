@@ -94,7 +94,6 @@ documentation/*/*.synctex.gz
 documentation/userguide/*.pdf
 documentation/build
 
-
 # ----------------------------------------------------
 # result files from the NuSMV unit tests
 code/languages/com.mbeddr.ext/result.txt
@@ -111,16 +110,17 @@ tools/zgrviewer/zvtm-core-formps/target/*
 
 # -----------------------------------------------------------
 # compiled java classes within the ant-task eclipse workspace 
-/Users/domenik/repositories/mbeddr.core/tools/ant/ant-task-workspace/*/bin/
+tools/ant/ant-task-workspace/*/bin/*/*.class
 
 # -----------------------------------------------------------
 # debugger test code
+<<<<<<< HEAD
+code/languages/com.mbeddr.debugger/tests/test.debugger.cdt/testcode/debuggableTest
+code/languages/offline.sh
+=======
 code/languages/com.mbeddr.debugger/tests/test.debugger.cdt/testcode/a.*
 code/languages/com.mbeddr.debugger/tests/test.debugger.cdt/testcode/*.exe
 code/languages/com.mbeddr.debugger/tests/test.debugger.cdt/testcode/debuggableTest*
-code/languages/com.mbeddr.debugger/tests/test.debugger.cdt/testcode/debuggableTest
 code/languages/com.mbeddr.debugger/tests/test.debugger.cdt/testcode/
-
-#Some local script (not to be shared)
-code/languages/offline.sh
-
+code/languages/com.mbeddr.debugger/tests/test.debugger.cdt/testcode/
+>>>>>>> origin/master
