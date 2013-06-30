@@ -94,6 +94,7 @@ documentation/*/*.synctex.gz
 documentation/userguide/*.pdf
 documentation/build
 
+
 # ----------------------------------------------------
 # result files from the NuSMV unit tests
 code/languages/com.mbeddr.ext/result.txt
@@ -119,3 +120,7 @@ code/languages/com.mbeddr.debugger/tests/test.debugger.cdt/testcode/*.exe
 code/languages/com.mbeddr.debugger/tests/test.debugger.cdt/testcode/debuggableTest*
 code/languages/com.mbeddr.debugger/tests/test.debugger.cdt/testcode/debuggableTest
 code/languages/com.mbeddr.debugger/tests/test.debugger.cdt/testcode/
+
+#Some local script (not to be shared)
+code/languages/offline.sh
+
