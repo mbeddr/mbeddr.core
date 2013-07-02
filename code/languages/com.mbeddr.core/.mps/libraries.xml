@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectLibraryManager">
+    <option name="libraries">
+      <map>
+        <entry key="debugger">
+          <value>
+            <Library>
+              <option name="name" value="debugger" />
+              <option name="path" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.debugger" />
+            </Library>
+          </value>
+        </entry>
+        <entry key="lisson">
+          <value>
+            <Library>
+              <option name="name" value="lisson" />
+              <option name="path" value="${lisson.home}" />
+            </Library>
+          </value>
+        </entry>
+        <entry key="mps.util">
+          <value>
+            <Library>
+              <option name="name" value="mps.util" />
+              <option name="path" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.mpsutil" />
+            </Library>
+          </value>
+        </entry>
+        <entry key="spawner">
+          <value>
+            <Library>
+              <option name="name" value="spawner" />
+              <option name="path" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.spawner" />
+            </Library>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
+

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MPSProject">
+    <projectModules>
+      <modulePath path="$PROJECT_DIR$/devkits/com.mbeddr.core/core.devkit" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.core.arrays/arrays.mpl" folder="core" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.core.base/base.mpl" folder="core" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.core.base/solutions/pluginSolution/pluginSolution.msd" folder="core.solutions" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.core.buildconfig/buildconfig.mpl" folder="core-extended" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.core.cimport/com.mbeddr.core.cimport.mpl" folder="core" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.core.cstubs.test/test.mpl" folder="tests.cstub" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.core.cstubs/cstubs.mpl" folder="core" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.core.embedded/embedded.mpl" folder="core-extended" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.core.expressions/expressions.mpl" folder="core" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.core.legacy/legacy.mpl" folder="core" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.core.legacy/solutions/pluginSolution/pluginSolution.msd" folder="core.solutions" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.core.make/make.mpl" folder="core" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.core.modules.gen/gen.mpl" folder="core" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.core.modules.runtime/include.msd" folder="core.solutions" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.core.modules/modules.mpl" folder="core" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.core.modules/solutions/pluginSolution/pluginSolution.msd" folder="core.solutions" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.core.runconfiguration/runconfiguration.mpl" folder="core" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.core.runconfiguration/solutions/pluginSolution/pluginSolution.msd" folder="core.solutions" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.core.statements/solutions/pluginSolution/pluginSolution.msd" folder="core.solutions" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.core.statements/statements.mpl" folder="core" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.core.udt/udt.mpl" folder="core" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.core.unittest/solutions/pluginSolution/pluginSolution.msd" folder="core-extended.solutions" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.core.unittest/unittest.mpl" folder="core-extended" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.core.util/solutions/pluginSolution/pluginSolution.msd" folder="core-extended.solutions" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.core.util/util.mpl" folder="core-extended" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.plantuml/solutions/pluginSolution/pluginSolution.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/dataflow/dataflow.mpl" folder="core" />
+      <modulePath path="$PROJECT_DIR$/tests/NewSolution/test.imp.core.cimport.msd" folder="tests" />
+      <modulePath path="$PROJECT_DIR$/tests/aLibrary/aLibrary.msd" folder="tests" />
+      <modulePath path="$PROJECT_DIR$/tests/test.cstub.core/core.msd" folder="tests.cstub" />
+      <modulePath path="$PROJECT_DIR$/tests/test.cstub.testheader.expressions/expressions.msd" folder="tests.cstub" />
+      <modulePath path="$PROJECT_DIR$/tests/test.cstub.testheader/testheader.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/tests/test.ex.core.libs/libs.msd" folder="tests" />
+      <modulePath path="$PROJECT_DIR$/tests/test.ex.core/core.msd" folder="tests" />
+      <modulePath path="$PROJECT_DIR$/tests/test.ex.errorreporting/errorreporting.msd" folder="tests" />
+      <modulePath path="$PROJECT_DIR$/tests/test.ts.core.dataflow/dataflow.msd" folder="tests.dataflow" />
+      <modulePath path="$PROJECT_DIR$/tests/test.ts.core/core.msd" folder="tests" />
+    </projectModules>
+    <genConfs />
+  </component>
+</project>
+
