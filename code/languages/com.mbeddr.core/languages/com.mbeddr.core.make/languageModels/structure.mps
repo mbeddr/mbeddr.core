@@ -4,7 +4,6 @@
   <language namespace="c72da2b9-7cce-4447-8389-f407dc1158b7(jetbrains.mps.lang.structure)" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="tpce" modelUID="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" version="0" implicit="yes" />
-  <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="5" implicit="yes" />
   <import index="i2y7" modelUID="r:098cbe90-1cfd-414a-b5e8-aca28752df17(com.mbeddr.core.make.structure)" version="-1" implicit="yes" />
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="5950410542643585247" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="Makefile" />
@@ -129,30 +128,6 @@
       <property name="role" nameId="tpce.1071599776563" value="var" />
       <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
       <link role="target" roleId="tpce.1071599976176" targetNodeId="3373914745211365206" resolveInfo="Variable" />
-    </node>
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="208195772221022787" nodeInfo="ig">
-    <property name="name" nameId="tpck.1169194664001" value="ModuleRefCommandItem" />
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="command" />
-    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="module reference" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="3373914745211590944" resolveInfo="CommandItem" />
-    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="208195772221022788" nodeInfo="ig">
-      <property name="metaClass" nameId="tpce.1071599937831" value="reference" />
-      <property name="role" nameId="tpce.1071599776563" value="module" />
-      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="x27k.6437088627575722813" resolveInfo="Module" />
-    </node>
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="208195772221043021" nodeInfo="ig">
-    <property name="name" nameId="tpck.1169194664001" value="ModuleRefDependency" />
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="dependency" />
-    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="module reference" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="5950410542643587167" resolveInfo="Dependency" />
-    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="208195772221043047" nodeInfo="ig">
-      <property name="metaClass" nameId="tpce.1071599937831" value="reference" />
-      <property name="role" nameId="tpce.1071599776563" value="module" />
-      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="x27k.6437088627575722813" resolveInfo="Module" />
     </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="745648737914657273" nodeInfo="ig">

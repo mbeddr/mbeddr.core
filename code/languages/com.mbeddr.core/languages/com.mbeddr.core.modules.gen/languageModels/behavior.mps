@@ -1667,5 +1667,12 @@
       </node>
     </node>
   </root>
+  <root type="1i04.ConceptBehavior" typeId="1i04.1225194240794" id="3208636348796115953" nodeInfo="ng">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="functionpointer" />
+    <link role="concept" roleId="1i04.1225194240799" targetNodeId="d0vh.1633557431899891820" resolveInfo="CFunctionPointerArgument" />
+    <node role="constructor" roleId="1i04.1225194240801" type="1i04.ConceptConstructorDeclaration" typeId="1i04.1225194413805" id="3208636348796115954" nodeInfo="nn">
+      <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="3208636348796115955" nodeInfo="sn" />
+    </node>
+  </root>
 </model>
 

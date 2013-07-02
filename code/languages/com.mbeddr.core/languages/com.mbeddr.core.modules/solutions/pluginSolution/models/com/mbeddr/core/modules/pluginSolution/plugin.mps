@@ -14,8 +14,6 @@
   <language namespace="83888646-71ce-4f1c-9c53-c54016f6ad4f(jetbrains.mps.baseLanguage.collections)" />
   <import index="e4fp" modelUID="r:4a2bfa22-28af-4fc8-8439-eb79cb594966(com.mbeddr.core.modules.refactorings)" version="-1" />
   <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="5" />
-  <import index="fxg7" modelUID="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.io(java.io@java_stub)" version="-1" />
-  <import index="6tyf" modelUID="f:java_stub#742f6602-5a2f-4313-aa6e-ae1cd4ffdc61#com.intellij.openapi.actionSystem(MPS.Platform/com.intellij.openapi.actionSystem@java_stub)" version="-1" />
   <import index="z76a" modelUID="r:dfc27cab-2d08-4c79-ac99-e95209e18392(jetbrains.mps.baseLanguage.pluginSolution.plugin)" version="-1" />
   <import index="flgp" modelUID="f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.lang.dataFlow.framework.instructions(MPS.Core/jetbrains.mps.lang.dataFlow.framework.instructions@java_stub)" version="-1" />
   <import index="5xh9" modelUID="f:java_stub#742f6602-5a2f-4313-aa6e-ae1cd4ffdc61#jetbrains.mps.ide.actions(MPS.Platform/jetbrains.mps.ide.actions@java_stub)" version="-1" />
@@ -23,9 +21,9 @@
   <import index="aplb" modelUID="r:a1d8bbbf-d4f0-431f-8dcd-a6badc777315(jetbrains.mps.lang.dataFlow)" version="-1" />
   <import index="9xhd" modelUID="r:2462c642-dc5b-476a-b684-01d77df4913e(com.mbeddr.core.modules.dataFlow)" version="-1" />
   <import index="cxih" modelUID="r:c6e01f98-6040-4dd0-a88b-62f17e77e610(jetbrains.mps.ide.dataFlow.presentation)" version="-1" />
-  <import index="h12" modelUID="f:java_stub#742f6602-5a2f-4313-aa6e-ae1cd4ffdc61#com.intellij.openapi.ui(MPS.Platform/com.intellij.openapi.ui@java_stub)" version="-1" />
   <import index="cu2c" modelUID="f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.smodel(MPS.Core/jetbrains.mps.smodel@java_stub)" version="-1" />
   <import index="hxuy" modelUID="f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.lang.dataFlow.framework(MPS.Core/jetbrains.mps.lang.dataFlow.framework@java_stub)" version="-1" />
+  <import index="fxg7" modelUID="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.io(JDK/java.io@java_stub)" version="-1" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="tp4k" modelUID="r:00000000-0000-4000-0000-011c89590368(jetbrains.mps.lang.plugin.structure)" version="35" implicit="yes" />
   <import index="tpee" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="4" implicit="yes" />
@@ -34,52 +32,53 @@
   <import index="qff7" modelUID="r:2ba2e307-a81d-4a21-9e0b-de3624e2fb83(jetbrains.mps.lang.access.structure)" version="0" implicit="yes" />
   <import index="tp2q" modelUID="r:00000000-0000-4000-0000-011c8959032e(jetbrains.mps.baseLanguage.collections.structure)" version="7" implicit="yes" />
   <import index="tgbt" modelUID="r:c70ee934-afb1-4c02-b6a9-1c4d1908a792(jetbrains.mps.lang.plugin.standalone.structure)" version="1" implicit="yes" />
-  <root type=".com.mbeddr.mpsutil.refactoring.structure.RefactoringAction" id="7518061998923661565" nodeInfo="ng">
-    <property name="name" value="Extract into New Module" />
-    <link role="refactoring" targetNodeId="e4fp.3769661359949250512" resolveInfo="extractIntoNewModule" />
-    <node role="shortcut" type="tp4k.KeyMapKeystroke" typeId="tp4k.1207318242772" id="7518061998923661598" nodeInfo="ng">
+  <import index="4w5v" modelUID="r:18d75373-a465-46d0-9749-aacc22a947bc(com.mbeddr.mpsutil.refactoring.structure)" version="-1" implicit="yes" />
+  <root type="4w5v.RefactoringAction" typeId="4w5v.7518061998923573137" id="7518061998923661565" nodeInfo="ng">
+    <property name="name" nameId="tpck.1169194664001" value="Extract into New Module" />
+    <link role="refactoring" roleId="4w5v.7518061998923573138" targetNodeId="e4fp.3769661359949250512" resolveInfo="extractIntoNewModule" />
+    <node role="shortcut" roleId="4w5v.7518061998923573139" type="tp4k.KeyMapKeystroke" typeId="tp4k.1207318242772" id="7518061998923661598" nodeInfo="ng">
       <property name="modifiers" nameId="tp4k.1207318242773" value="ctrl+alt" />
       <property name="keycode" nameId="tp4k.1207318242774" value="VK_E" />
     </node>
-    <node role="parameters" type=".com.mbeddr.mpsutil.refactoring.structure.RefactoringParameter" id="7518061998923702648" nodeInfo="ng">
-      <link role="param" targetNodeId="e4fp.3769661359949255589" resolveInfo="newModuleName" />
-      <node role="chooser" type=".com.mbeddr.mpsutil.refactoring.structure.StringChooser" id="7518061998923722452" nodeInfo="ng">
-        <property name="title" value="Enter Name of new Module" />
+    <node role="parameters" roleId="4w5v.7518061998923573158" type="4w5v.RefactoringParameter" typeId="4w5v.7518061998923573140" id="7518061998923702648" nodeInfo="ng">
+      <link role="param" roleId="4w5v.7518061998923573141" targetNodeId="e4fp.3769661359949255589" resolveInfo="newModuleName" />
+      <node role="chooser" roleId="4w5v.7518061998923573142" type="4w5v.StringChooser" typeId="4w5v.7518061998923713757" id="7518061998923722452" nodeInfo="ng">
+        <property name="title" nameId="4w5v.7518061998923720371" value="Enter Name of new Module" />
       </node>
     </node>
   </root>
-  <root type=".com.mbeddr.mpsutil.refactoring.structure.RefactoringAction" id="7518061998923661599" nodeInfo="ng">
-    <property name="name" value="Move Into New Section" />
-    <link role="refactoring" targetNodeId="e4fp.5947739078127898585" resolveInfo="moveIntoNewSection" />
-    <node role="shortcut" type="tp4k.KeyMapKeystroke" typeId="tp4k.1207318242772" id="7518061998923661600" nodeInfo="ng">
+  <root type="4w5v.RefactoringAction" typeId="4w5v.7518061998923573137" id="7518061998923661599" nodeInfo="ng">
+    <property name="name" nameId="tpck.1169194664001" value="Move Into New Section" />
+    <link role="refactoring" roleId="4w5v.7518061998923573138" targetNodeId="e4fp.5947739078127898585" resolveInfo="moveIntoNewSection" />
+    <node role="shortcut" roleId="4w5v.7518061998923573139" type="tp4k.KeyMapKeystroke" typeId="tp4k.1207318242772" id="7518061998923661600" nodeInfo="ng">
       <property name="modifiers" nameId="tp4k.1207318242773" value="ctrl+alt" />
       <property name="keycode" nameId="tp4k.1207318242774" value="VK_S" />
     </node>
-    <node role="parameters" type=".com.mbeddr.mpsutil.refactoring.structure.RefactoringParameter" id="7518061998923702666" nodeInfo="ng">
-      <link role="param" targetNodeId="e4fp.5947739078127898586" resolveInfo="newSectionName" />
-      <node role="chooser" type=".com.mbeddr.mpsutil.refactoring.structure.StringChooser" id="7518061998923725665" nodeInfo="ng">
-        <property name="title" value="Enter Name of new Section" />
+    <node role="parameters" roleId="4w5v.7518061998923573158" type="4w5v.RefactoringParameter" typeId="4w5v.7518061998923573140" id="7518061998923702666" nodeInfo="ng">
+      <link role="param" roleId="4w5v.7518061998923573141" targetNodeId="e4fp.5947739078127898586" resolveInfo="newSectionName" />
+      <node role="chooser" roleId="4w5v.7518061998923573142" type="4w5v.StringChooser" typeId="4w5v.7518061998923713757" id="7518061998923725665" nodeInfo="ng">
+        <property name="title" nameId="4w5v.7518061998923720371" value="Enter Name of new Section" />
       </node>
     </node>
   </root>
-  <root type=".com.mbeddr.mpsutil.refactoring.structure.RefactoringAction" id="7518061998923661601" nodeInfo="ng">
-    <property name="name" value="Move Into Existing Section" />
-    <link role="refactoring" targetNodeId="e4fp.5947739078127914184" resolveInfo="moveIntoSection" />
-    <node role="shortcut" type="tp4k.KeyMapKeystroke" typeId="tp4k.1207318242772" id="7518061998923661602" nodeInfo="ng">
+  <root type="4w5v.RefactoringAction" typeId="4w5v.7518061998923573137" id="7518061998923661601" nodeInfo="ng">
+    <property name="name" nameId="tpck.1169194664001" value="Move Into Existing Section" />
+    <link role="refactoring" roleId="4w5v.7518061998923573138" targetNodeId="e4fp.5947739078127914184" resolveInfo="moveIntoSection" />
+    <node role="shortcut" roleId="4w5v.7518061998923573139" type="tp4k.KeyMapKeystroke" typeId="tp4k.1207318242772" id="7518061998923661602" nodeInfo="ng">
       <property name="modifiers" nameId="tp4k.1207318242773" value="ctrl+alt" />
       <property name="keycode" nameId="tp4k.1207318242774" value="VK_E" />
     </node>
-    <node role="parameters" type=".com.mbeddr.mpsutil.refactoring.structure.RefactoringParameter" id="7518061998923702660" nodeInfo="ng">
-      <link role="param" targetNodeId="e4fp.5947739078127914232" resolveInfo="targetSection" />
-      <node role="chooser" type=".com.mbeddr.mpsutil.refactoring.structure.NodeChooser" id="7518061998923725430" nodeInfo="ng">
-        <property name="title" value="Select Target Section" />
-        <node role="filter" type=".com.mbeddr.mpsutil.refactoring.structure.FilterClause" id="4014172070413031691" nodeInfo="ng">
-          <node role="body" type="tpee.StatementList" typeId="tpee.1068580123136" id="4014172070413031692" nodeInfo="sn">
+    <node role="parameters" roleId="4w5v.7518061998923573158" type="4w5v.RefactoringParameter" typeId="4w5v.7518061998923573140" id="7518061998923702660" nodeInfo="ng">
+      <link role="param" roleId="4w5v.7518061998923573141" targetNodeId="e4fp.5947739078127914232" resolveInfo="targetSection" />
+      <node role="chooser" roleId="4w5v.7518061998923573142" type="4w5v.NodeChooser" typeId="4w5v.7518061998923713762" id="7518061998923725430" nodeInfo="ng">
+        <property name="title" nameId="4w5v.7518061998923720371" value="Select Target Section" />
+        <node role="filter" roleId="4w5v.7518061998923713768" type="4w5v.FilterClause" typeId="4w5v.7518061998923713763" id="4014172070413031691" nodeInfo="ng">
+          <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="4014172070413031692" nodeInfo="sn">
             <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="628455769094622263" nodeInfo="nn">
               <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="4014172070413049411" nodeInfo="nn">
                 <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="4014172070413049412" nodeInfo="nn">
                   <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="4014172070413049413" nodeInfo="nn">
-                    <node role="operand" roleId="tpee.1197027771414" type=".com.mbeddr.mpsutil.refactoring.structure.FilterInputParam" id="4014172070413049414" nodeInfo="ng" />
+                    <node role="operand" roleId="tpee.1197027771414" type="4w5v.FilterInputParam" typeId="4w5v.7518061998923728716" id="4014172070413049414" nodeInfo="ng" />
                     <node role="operation" roleId="tpee.1197027833540" type="tp2q.GetFirstOperation" typeId="tp2q.1165525191778" id="4014172070413049415" nodeInfo="nn" />
                   </node>
                   <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_GetAncestorOperation" typeId="tp25.1171407110247" id="4014172070413049416" nodeInfo="nn">
@@ -104,19 +103,19 @@
       </node>
     </node>
   </root>
-  <root type=".com.mbeddr.mpsutil.refactoring.structure.RefactoringAction" id="7518061998923661603" nodeInfo="ng">
-    <property name="name" value="Move to Imported Module" />
-    <link role="refactoring" targetNodeId="e4fp.3769661359949283788" resolveInfo="moveToImportedModule" />
-    <node role="shortcut" type="tp4k.KeyMapKeystroke" typeId="tp4k.1207318242772" id="7518061998923661604" nodeInfo="ng">
+  <root type="4w5v.RefactoringAction" typeId="4w5v.7518061998923573137" id="7518061998923661603" nodeInfo="ng">
+    <property name="name" nameId="tpck.1169194664001" value="Move to Imported Module" />
+    <link role="refactoring" roleId="4w5v.7518061998923573138" targetNodeId="e4fp.3769661359949283788" resolveInfo="moveToImportedModule" />
+    <node role="shortcut" roleId="4w5v.7518061998923573139" type="tp4k.KeyMapKeystroke" typeId="tp4k.1207318242772" id="7518061998923661604" nodeInfo="ng">
       <property name="modifiers" nameId="tp4k.1207318242773" value="ctrl+alt" />
       <property name="keycode" nameId="tp4k.1207318242774" value="VK_M" />
     </node>
-    <node role="parameters" type=".com.mbeddr.mpsutil.refactoring.structure.RefactoringParameter" id="7518061998923729645" nodeInfo="ng">
-      <link role="param" targetNodeId="e4fp.3769661359949283789" resolveInfo="targetModule" />
-      <node role="chooser" type=".com.mbeddr.mpsutil.refactoring.structure.NodeChooser" id="7518061998923729647" nodeInfo="ng">
-        <property name="title" value="Select Target Module" />
-        <node role="filter" type=".com.mbeddr.mpsutil.refactoring.structure.FilterClause" id="7518061998923729648" nodeInfo="ng">
-          <node role="body" type="tpee.StatementList" typeId="tpee.1068580123136" id="7518061998923729649" nodeInfo="sn">
+    <node role="parameters" roleId="4w5v.7518061998923573158" type="4w5v.RefactoringParameter" typeId="4w5v.7518061998923573140" id="7518061998923729645" nodeInfo="ng">
+      <link role="param" roleId="4w5v.7518061998923573141" targetNodeId="e4fp.3769661359949283789" resolveInfo="targetModule" />
+      <node role="chooser" roleId="4w5v.7518061998923573142" type="4w5v.NodeChooser" typeId="4w5v.7518061998923713762" id="7518061998923729647" nodeInfo="ng">
+        <property name="title" nameId="4w5v.7518061998923720371" value="Select Target Module" />
+        <node role="filter" roleId="4w5v.7518061998923713768" type="4w5v.FilterClause" typeId="4w5v.7518061998923713763" id="7518061998923729648" nodeInfo="ng">
+          <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="7518061998923729649" nodeInfo="sn">
             <node role="statement" roleId="tpee.1068581517665" type="tpee.LocalVariableDeclarationStatement" typeId="tpee.1068581242864" id="4014172070412858001" nodeInfo="nn">
               <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="4014172070412858002" nodeInfo="nr">
                 <property name="name" nameId="tpck.1169194664001" value="result" />
@@ -139,7 +138,7 @@
                       </node>
                       <node role="initializer" roleId="tpee.1068431790190" type="tpee.DotExpression" typeId="tpee.1197027756228" id="3769661359949284600" nodeInfo="nn">
                         <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="3769661359949284593" nodeInfo="nn">
-                          <node role="operand" roleId="tpee.1197027771414" type=".com.mbeddr.mpsutil.refactoring.structure.FilterInputParam" id="7518061998923730862" nodeInfo="ng" />
+                          <node role="operand" roleId="tpee.1197027771414" type="4w5v.FilterInputParam" typeId="4w5v.7518061998923728716" id="7518061998923730862" nodeInfo="ng" />
                           <node role="operation" roleId="tpee.1197027833540" type="tp2q.GetElementOperation" typeId="tp2q.1162934736510" id="3769661359949284597" nodeInfo="nn">
                             <node role="argument" roleId="tp2q.1162934736511" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="3769661359949284599" nodeInfo="nn">
                               <property name="value" nameId="tpee.1068580320021" value="0" />
@@ -235,32 +234,32 @@
       </node>
     </node>
   </root>
-  <root type=".com.mbeddr.mpsutil.refactoring.structure.RefactoringAction" id="7518061998923661605" nodeInfo="ng">
-    <property name="name" value="Replicate" />
-    <link role="refactoring" targetNodeId="e4fp.380699267178693507" resolveInfo="replicate" />
-    <node role="parameters" type=".com.mbeddr.mpsutil.refactoring.structure.RefactoringParameter" id="7518061998923702692" nodeInfo="ng">
-      <link role="param" targetNodeId="e4fp.380699267178696082" resolveInfo="count" />
-      <node role="chooser" type=".com.mbeddr.mpsutil.refactoring.structure.StringChooser" id="7518061998923722453" nodeInfo="ng">
-        <property name="title" value="Count" />
+  <root type="4w5v.RefactoringAction" typeId="4w5v.7518061998923573137" id="7518061998923661605" nodeInfo="ng">
+    <property name="name" nameId="tpck.1169194664001" value="Replicate" />
+    <link role="refactoring" roleId="4w5v.7518061998923573138" targetNodeId="e4fp.380699267178693507" resolveInfo="replicate" />
+    <node role="parameters" roleId="4w5v.7518061998923573158" type="4w5v.RefactoringParameter" typeId="4w5v.7518061998923573140" id="7518061998923702692" nodeInfo="ng">
+      <link role="param" roleId="4w5v.7518061998923573141" targetNodeId="e4fp.380699267178696082" resolveInfo="count" />
+      <node role="chooser" roleId="4w5v.7518061998923573142" type="4w5v.StringChooser" typeId="4w5v.7518061998923713757" id="7518061998923722453" nodeInfo="ng">
+        <property name="title" nameId="4w5v.7518061998923720371" value="Count" />
       </node>
     </node>
   </root>
   <root type="tgbt.StandalonePluginDescriptor" typeId="tgbt.7520713872864775836" id="7990137026351650149" nodeInfo="ng" />
-  <root type=".com.mbeddr.mpsutil.refactoring.structure.RefactoringAction" id="2400440333612945069" nodeInfo="ng">
-    <property name="name" value="Convert into Implementation Module" />
-    <link role="refactoring" targetNodeId="e4fp.2400440333612944625" resolveInfo="convertExternalModuleIntoImplModule" />
+  <root type="4w5v.RefactoringAction" typeId="4w5v.7518061998923573137" id="2400440333612945069" nodeInfo="ng">
+    <property name="name" nameId="tpck.1169194664001" value="Convert into Implementation Module" />
+    <link role="refactoring" roleId="4w5v.7518061998923573138" targetNodeId="e4fp.2400440333612944625" resolveInfo="convertExternalModuleIntoImplModule" />
   </root>
-  <root type=".com.mbeddr.mpsutil.refactoring.structure.RefactoringAction" id="881042019526389163" nodeInfo="ng">
-    <property name="name" value="Extract Constant" />
-    <link role="refactoring" targetNodeId="e4fp.1582169519237927131" resolveInfo="extractConstant" />
-    <node role="shortcut" type="tp4k.KeyMapKeystroke" typeId="tp4k.1207318242772" id="881042019526389164" nodeInfo="ng">
+  <root type="4w5v.RefactoringAction" typeId="4w5v.7518061998923573137" id="881042019526389163" nodeInfo="ng">
+    <property name="name" nameId="tpck.1169194664001" value="Extract Constant" />
+    <link role="refactoring" roleId="4w5v.7518061998923573138" targetNodeId="e4fp.1582169519237927131" resolveInfo="extractConstant" />
+    <node role="shortcut" roleId="4w5v.7518061998923573139" type="tp4k.KeyMapKeystroke" typeId="tp4k.1207318242772" id="881042019526389164" nodeInfo="ng">
       <property name="modifiers" nameId="tp4k.1207318242773" value="ctrl+alt" />
       <property name="keycode" nameId="tp4k.1207318242774" value="VK_C" />
     </node>
-    <node role="parameters" type=".com.mbeddr.mpsutil.refactoring.structure.RefactoringParameter" id="881042019526389167" nodeInfo="ng">
-      <link role="param" targetNodeId="e4fp.1582169519237927155" resolveInfo="varName" />
-      <node role="chooser" type=".com.mbeddr.mpsutil.refactoring.structure.StringChooser" id="881042019526389168" nodeInfo="ng">
-        <property name="title" value="Constant Name" />
+    <node role="parameters" roleId="4w5v.7518061998923573158" type="4w5v.RefactoringParameter" typeId="4w5v.7518061998923573140" id="881042019526389167" nodeInfo="ng">
+      <link role="param" roleId="4w5v.7518061998923573141" targetNodeId="e4fp.1582169519237927155" resolveInfo="varName" />
+      <node role="chooser" roleId="4w5v.7518061998923573142" type="4w5v.StringChooser" typeId="4w5v.7518061998923713757" id="881042019526389168" nodeInfo="ng">
+        <property name="title" nameId="4w5v.7518061998923720371" value="Constant Name" />
       </node>
     </node>
   </root>

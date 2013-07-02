@@ -21,6 +21,8 @@
   <import index="tp2c" modelUID="r:00000000-0000-4000-0000-011c89590338(jetbrains.mps.baseLanguage.closures.structure)" version="3" implicit="yes" />
   <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="5" implicit="yes" />
   <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="23" implicit="yes" />
+  <import index="7aka" modelUID="r:02a5dde5-8560-4c26-8875-8f2a79444bd3(com.mbeddr.mpsutil.bldoc.structure)" version="-1" implicit="yes" />
+  <import index="87nw" modelUID="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" version="5" implicit="yes" />
   <root type="tp1h.Refactoring" typeId="tp1h.6895093993902236229" id="3769661359949250512" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="extractIntoNewModule" />
     <property name="userFriendlyName" nameId="tp1h.6895093993902236371" value="Extract into New Module" />
@@ -200,11 +202,10 @@
             <node role="statement" roleId="tpee.1068581517665" type="tpee.IfStatement" typeId="tpee.1068580123159" id="3769661359949356689" nodeInfo="nn">
               <node role="ifTrue" roleId="tpee.1068580123161" type="tpee.StatementList" typeId="tpee.1068580123136" id="3769661359949356690" nodeInfo="sn">
                 <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="3769661359949283575" nodeInfo="nn">
-                  <node role="smodelAttribute" roleId="tpck.5169995583184591170" type=".com.mbeddr.mpsutil.bldoc.structure.BLDoc" id="4195764031267263158" nodeInfo="ng">
-                    <node role="text" type=".de.slisson.mps.richtext.structure.Text" id="4195764031267263159" nodeInfo="ng">
-                      <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="4195764031267263160" nodeInfo="ng" />
-                      <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="4195764031267263161" nodeInfo="ng">
-                        <property name="escapedValue" value="They have to be exported to be visible from the \&quot;old\&quot; module" />
+                  <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="7aka.BLDoc" typeId="7aka.6925419451529157942" id="4195764031267263158" nodeInfo="ng">
+                    <node role="text" roleId="7aka.6925419451529198196" type="87nw.Text" typeId="87nw.2557074442922380897" id="4195764031267263159" nodeInfo="ng">
+                      <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4195764031267263160" nodeInfo="ng">
+                        <property name="escapedValue" nameId="87nw.2557074442922438158" value="They have to be exported to be visible from the \&quot;old\&quot; module" />
                       </node>
                     </node>
                   </node>
@@ -324,11 +325,11 @@
             <node role="statement" roleId="tpee.1068581517665" type="tpee.IfStatement" typeId="tpee.1068580123159" id="3769661359949356705" nodeInfo="nn">
               <node role="ifTrue" roleId="tpee.1068580123161" type="tpee.StatementList" typeId="tpee.1068580123136" id="3769661359949356706" nodeInfo="sn">
                 <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="3769661359949356707" nodeInfo="nn">
-                  <node role="smodelAttribute" roleId="tpck.5169995583184591170" type=".com.mbeddr.mpsutil.bldoc.structure.BLDoc" id="4195764031267263162" nodeInfo="ng">
-                    <node role="text" type=".de.slisson.mps.richtext.structure.Text" id="4195764031267263163" nodeInfo="ng">
-                      <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="4195764031267263164" nodeInfo="ng" />
-                      <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="4195764031267263165" nodeInfo="ng">
-                        <property name="escapedValue" value="They have to be exported to be visible from the \&quot;old\&quot; module" />
+                  <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="7aka.BLDoc" typeId="7aka.6925419451529157942" id="4195764031267263162" nodeInfo="ng">
+                    <node role="text" roleId="7aka.6925419451529198196" type="87nw.Text" typeId="87nw.2557074442922380897" id="4195764031267263163" nodeInfo="ng">
+                      <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4195764031267263164" nodeInfo="ng" />
+                      <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4195764031267263165" nodeInfo="ng">
+                        <property name="escapedValue" nameId="87nw.2557074442922438158" value="They have to be exported to be visible from the \&quot;old\&quot; module" />
                       </node>
                     </node>
                   </node>

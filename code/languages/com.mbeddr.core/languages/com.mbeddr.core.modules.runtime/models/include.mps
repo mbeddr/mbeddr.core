@@ -21,7 +21,6 @@
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" />
   <import index="k146" modelUID="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" version="5" />
   <import index="cu2c" modelUID="f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.smodel(MPS.Core/jetbrains.mps.smodel@java_stub)" version="-1" />
-  <import index="aow2" modelUID="f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#org.apache.commons.lang(MPS.Core/org.apache.commons.lang@java_stub)" version="-1" />
   <import index="7lmn" modelUID="r:07cb7f90-0acc-4344-993d-7234f63252df(com.mbeddr.core.modules.runtime.include)" version="-1" />
   <import index="vsqj" modelUID="f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.project(MPS.Core/jetbrains.mps.project@java_stub)" version="-1" />
   <import index="7nqk" modelUID="f:java_stub#85d9f97b-1654-4692-b61c-fcc40db03653#org.eclipse.cdt.core.dom.ast(Eclipse.Debugger/org.eclipse.cdt.core.dom.ast@java_stub)" version="-1" />
@@ -42,13 +41,15 @@
   <import index="sf5" modelUID="f:java_stub#85d9f97b-1654-4692-b61c-fcc40db03653#org.eclipse.cdt.core.dom.ast.c(Eclipse.Debugger/org.eclipse.cdt.core.dom.ast.c@java_stub)" version="-1" />
   <import index="xqpa" modelUID="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang.reflect(JDK/java.lang.reflect@java_stub)" version="-1" />
   <import index="dbrf" modelUID="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#javax.swing(JDK/javax.swing@java_stub)" version="-1" />
-  <import index="ibdw" modelUID="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.util.logging(java.util.logging@java_stub)" version="-1" />
   <import index="ff4b" modelUID="f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.progress(MPS.Core/jetbrains.mps.progress@java_stub)" version="-1" />
   <import index="1ven" modelUID="f:java_stub#85d9f97b-1654-4692-b61c-fcc40db03653#org.eclipse.cdt.internal.core.dom(Eclipse.Debugger/org.eclipse.cdt.internal.core.dom@java_stub)" version="-1" />
   <import index="fojm" modelUID="f:java_stub#85d9f97b-1654-4692-b61c-fcc40db03653#org.eclipse.cdt.internal.core.parser(Eclipse.Debugger/org.eclipse.cdt.internal.core.parser@java_stub)" version="-1" />
   <import index="gn6g" modelUID="f:java_stub#85d9f97b-1654-4692-b61c-fcc40db03653#org.eclipse.cdt.core.dom(Eclipse.Debugger/org.eclipse.cdt.core.dom@java_stub)" version="-1" />
   <import index="x7kv" modelUID="f:java_stub#fda566a8-0df7-442b-b355-ba0f7b3d1cbd#org.apache.commons.io(com.mbeddr.core.modules.runtime/org.apache.commons.io@java_stub)" version="-1" />
   <import index="ec5l" modelUID="f:java_stub#8865b7a8-5271-43d3-884c-6fd1d9cfdd34#org.jetbrains.mps.openapi.model(MPS.OpenAPI/org.jetbrains.mps.openapi.model@java_stub)" version="-1" />
+  <import index="ibdw" modelUID="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.util.logging(JDK/java.util.logging@java_stub)" version="-1" />
+  <import index="z68t" modelUID="f:java_stub#af475b0c-72e2-4133-9bc7-2e20f1acd8e1#org.apache.commons.lang(org.apache.commons.lang/org.apache.commons.lang@java_stub)" version="-1" />
+  <import index="z8de" modelUID="f:java_stub#8865b7a8-5271-43d3-884c-6fd1d9cfdd34#org.jetbrains.mps.openapi.util(MPS.OpenAPI/org.jetbrains.mps.openapi.util@java_stub)" version="-1" />
   <import index="tp25" modelUID="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" version="-1" implicit="yes" />
   <import index="tp2q" modelUID="r:00000000-0000-4000-0000-011c8959032e(jetbrains.mps.baseLanguage.collections.structure)" version="7" implicit="yes" />
   <import index="tpib" modelUID="r:00000000-0000-4000-0000-011c8959057f(jetbrains.mps.baseLanguage.logging.structure)" version="0" implicit="yes" />
@@ -56,6 +57,9 @@
   <import index="qff7" modelUID="r:2ba2e307-a81d-4a21-9e0b-de3624e2fb83(jetbrains.mps.lang.access.structure)" version="0" implicit="yes" />
   <import index="tpee" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="3" implicit="yes" />
   <import index="m373" modelUID="r:4095af4f-a097-4799-aaa9-03df087ddfa6(jetbrains.mps.baseLanguage.javadoc.structure)" version="5" implicit="yes" />
+  <import index="7aka" modelUID="r:02a5dde5-8560-4c26-8875-8f2a79444bd3(com.mbeddr.mpsutil.bldoc.structure)" version="-1" implicit="yes" />
+  <import index="87nw" modelUID="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" version="5" implicit="yes" />
+  <import index="hba4" modelUID="r:f5bd2ad9-cd54-4408-b815-07f9f306f074(com.mbeddr.mpsutil.blutil.structure)" version="7" implicit="yes" />
   <root type="tpee.ClassConcept" typeId="tpee.1068390468198" id="270496905847836993" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="CStubUtil" />
     <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="270496905847836994" nodeInfo="nn" />
@@ -80,6 +84,10 @@
       <node role="initializer" roleId="tpee.1068431790190" type="tpee.GenericNewExpression" typeId="tpee.1145552977093" id="5530222396244598341" nodeInfo="nn">
         <node role="creator" roleId="tpee.1145553007750" type="tpee.ClassCreator" typeId="tpee.1212685548494" id="5530222396244635102" nodeInfo="nn">
           <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="k7g3.~HashMap%d&lt;init&gt;()" resolveInfo="HashMap" />
+          <node role="typeParameter" roleId="tpee.1212687122400" type="tpee.StringType" typeId="tpee.1225271177708" id="3208636348800370929" nodeInfo="in" />
+          <node role="typeParameter" roleId="tpee.1212687122400" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="3208636348800376572" nodeInfo="in">
+            <link role="classifier" roleId="tpee.1107535924139" targetNodeId="e2lb.~Integer" resolveInfo="Integer" />
+          </node>
         </node>
       </node>
     </node>
@@ -226,7 +234,7 @@
                       <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="1811724433024630239" resolveInfo="monitor" />
                     </node>
                     <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="1811724433026110254" nodeInfo="nn">
-                      <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="ff4b.~ProgressMonitor%disCanceled()%cboolean" resolveInfo="isCanceled" />
+                      <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="z8de.~ProgressMonitor%disCanceled()%cboolean" resolveInfo="isCanceled" />
                     </node>
                   </node>
                 </node>
@@ -250,7 +258,7 @@
                       <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="1811724433024630239" resolveInfo="monitor" />
                     </node>
                     <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="1811724433026110177" nodeInfo="nn">
-                      <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="ff4b.~ProgressMonitor%dadvance(int)%cvoid" resolveInfo="advance" />
+                      <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="z8de.~ProgressMonitor%dadvance(int)%cvoid" resolveInfo="advance" />
                       <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="1811724433026110178" nodeInfo="nn">
                         <property name="value" nameId="tpee.1068580320021" value="1" />
                       </node>
@@ -263,7 +271,7 @@
                       <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="1811724433024630239" resolveInfo="monitor" />
                     </node>
                     <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="1811724433027130894" nodeInfo="nn">
-                      <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="ff4b.~ProgressMonitor%dstep(java%dlang%dString)%cvoid" resolveInfo="step" />
+                      <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="z8de.~ProgressMonitor%dstep(java%dlang%dString)%cvoid" resolveInfo="step" />
                       <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="1811724433027130895" nodeInfo="nn">
                         <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="1811724433024630358" resolveInfo="absolutePath" />
                       </node>
@@ -510,8 +518,8 @@
       </node>
       <node role="parameter" roleId="tpee.1068580123134" type="tpee.ParameterDeclaration" typeId="tpee.1068498886292" id="1811724433024630239" nodeInfo="ir">
         <property name="name" nameId="tpck.1169194664001" value="monitor" />
-        <node role="type" roleId="tpee.5680397130376446158" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="1811724433025917501" nodeInfo="in">
-          <link role="classifier" roleId="tpee.1107535924139" targetNodeId="dbrf.~ProgressMonitor" resolveInfo="ProgressMonitor" />
+        <node role="type" roleId="tpee.5680397130376446158" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="3208636348800392147" nodeInfo="in">
+          <link role="classifier" roleId="tpee.1107535924139" targetNodeId="z8de.~ProgressMonitor" resolveInfo="ProgressMonitor" />
         </node>
       </node>
     </node>
@@ -834,15 +842,15 @@
           <node role="ifTrue" roleId="tpee.1068580123161" type="tpee.StatementList" typeId="tpee.1068580123136" id="2286884745047726481" nodeInfo="sn">
             <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="2286884745047726500" nodeInfo="nn">
               <node role="expression" roleId="tpee.1068580123156" type="tpee.AssignmentExpression" typeId="tpee.1068498886294" id="2286884745047726502" nodeInfo="nn">
-                <node role="rValue" roleId="tpee.1068498886297" type=".com.mbeddr.mpsutil.blutil.structure.BuilderExpression" id="2286884745047726505" nodeInfo="ng">
-                  <node role="root" type=".com.mbeddr.mpsutil.blutil.structure.ChildStep" id="2286884745047726506" nodeInfo="ng">
-                    <link role="childLink" targetNodeId="tpck.5169995583184591170" />
-                    <node role="value" type=".com.mbeddr.mpsutil.blutil.structure.ConceptRef" id="2286884745047726508" nodeInfo="ng">
-                      <link role="concept" targetNodeId="clbe.8811614583515725893" resolveInfo="EnumType" />
+                <node role="rValue" roleId="tpee.1068498886297" type="hba4.BuilderExpression" typeId="hba4.4481811096720536877" id="2286884745047726505" nodeInfo="ng">
+                  <node role="root" roleId="hba4.4481811096720536927" type="hba4.ChildStep" typeId="hba4.4481811096720537459" id="2286884745047726506" nodeInfo="ng">
+                    <link role="childLink" roleId="hba4.4481811096720607067" targetNodeId="tpck.5169995583184591170" />
+                    <node role="value" roleId="hba4.6308171743671982944" type="hba4.ConceptRef" typeId="hba4.4481811096720976618" id="2286884745047726508" nodeInfo="ng">
+                      <link role="concept" roleId="hba4.4481811096720976619" targetNodeId="clbe.8811614583515725893" resolveInfo="EnumType" />
                     </node>
-                    <node role="children" type=".com.mbeddr.mpsutil.blutil.structure.RefStep" id="2286884745047726510" nodeInfo="ng">
-                      <link role="refLink" targetNodeId="clbe.8811614583515725894" />
-                      <node role="target" type="tpee.ParenthesizedExpression" typeId="tpee.1079359253375" id="2286884745047726513" nodeInfo="nn">
+                    <node role="children" roleId="hba4.4481811096720537463" type="hba4.RefStep" typeId="hba4.4481811096721038000" id="2286884745047726510" nodeInfo="ng">
+                      <link role="refLink" roleId="hba4.4481811096721038001" targetNodeId="clbe.8811614583515725894" />
+                      <node role="target" roleId="hba4.4481811096721038002" type="tpee.ParenthesizedExpression" typeId="tpee.1079359253375" id="2286884745047726513" nodeInfo="nn">
                         <node role="expression" roleId="tpee.1079359253376" type="tpee.CastExpression" typeId="tpee.1070534934090" id="2286884745047726514" nodeInfo="nn">
                           <node role="type" roleId="tpee.1070534934091" type="tp25.SNodeType" typeId="tp25.1138055754698" id="2286884745047726517" nodeInfo="in">
                             <link role="concept" roleId="tp25.1138405853777" targetNodeId="clbe.8811614583515725851" resolveInfo="EnumDeclaration" />
@@ -876,12 +884,12 @@
           <node role="ifTrue" roleId="tpee.1068580123161" type="tpee.StatementList" typeId="tpee.1068580123136" id="3667119776391873389" nodeInfo="sn">
             <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="3667119776391873390" nodeInfo="nn">
               <node role="expression" roleId="tpee.1068580123156" type="tpee.AssignmentExpression" typeId="tpee.1068498886294" id="3667119776391873391" nodeInfo="nn">
-                <node role="rValue" roleId="tpee.1068498886297" type=".com.mbeddr.mpsutil.blutil.structure.BuilderExpression" id="3667119776391873392" nodeInfo="ng">
-                  <node role="root" type=".com.mbeddr.mpsutil.blutil.structure.ChildStep" id="3667119776391873393" nodeInfo="ng">
-                    <link role="childLink" targetNodeId="tpck.5169995583184591170" />
-                    <node role="children" type=".com.mbeddr.mpsutil.blutil.structure.RefStep" id="3667119776391873395" nodeInfo="ng">
-                      <link role="refLink" targetNodeId="clbe.6116558314501347864" />
-                      <node role="target" type="tpee.ParenthesizedExpression" typeId="tpee.1079359253375" id="3667119776391873396" nodeInfo="nn">
+                <node role="rValue" roleId="tpee.1068498886297" type="hba4.BuilderExpression" typeId="hba4.4481811096720536877" id="3667119776391873392" nodeInfo="ng">
+                  <node role="root" roleId="hba4.4481811096720536927" type="hba4.ChildStep" typeId="hba4.4481811096720537459" id="3667119776391873393" nodeInfo="ng">
+                    <link role="childLink" roleId="hba4.4481811096720607067" targetNodeId="tpck.5169995583184591170" />
+                    <node role="children" roleId="hba4.4481811096720537463" type="hba4.RefStep" typeId="hba4.4481811096721038000" id="3667119776391873395" nodeInfo="ng">
+                      <link role="refLink" roleId="hba4.4481811096721038001" targetNodeId="clbe.6116558314501347864" />
+                      <node role="target" roleId="hba4.4481811096721038002" type="tpee.ParenthesizedExpression" typeId="tpee.1079359253375" id="3667119776391873396" nodeInfo="nn">
                         <node role="expression" roleId="tpee.1079359253376" type="tpee.CastExpression" typeId="tpee.1070534934090" id="3667119776391873397" nodeInfo="nn">
                           <node role="type" roleId="tpee.1070534934091" type="tp25.SNodeType" typeId="tp25.1138055754698" id="3667119776391873398" nodeInfo="in">
                             <link role="concept" roleId="tp25.1138405853777" targetNodeId="clbe.6116558314501347857" resolveInfo="TypeDef" />
@@ -892,8 +900,8 @@
                         </node>
                       </node>
                     </node>
-                    <node role="value" type=".com.mbeddr.mpsutil.blutil.structure.ConceptRef" id="3667119776391873406" nodeInfo="ng">
-                      <link role="concept" targetNodeId="clbe.6116558314501347863" resolveInfo="TypeDefType" />
+                    <node role="value" roleId="hba4.6308171743671982944" type="hba4.ConceptRef" typeId="hba4.4481811096720976618" id="3667119776391873406" nodeInfo="ng">
+                      <link role="concept" roleId="hba4.4481811096720976619" targetNodeId="clbe.6116558314501347863" resolveInfo="TypeDefType" />
                     </node>
                   </node>
                 </node>
@@ -918,15 +926,15 @@
           <node role="ifTrue" roleId="tpee.1068580123161" type="tpee.StatementList" typeId="tpee.1068580123136" id="2722267669525886221" nodeInfo="sn">
             <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="2722267669525886222" nodeInfo="nn">
               <node role="expression" roleId="tpee.1068580123156" type="tpee.AssignmentExpression" typeId="tpee.1068498886294" id="2722267669525886223" nodeInfo="nn">
-                <node role="rValue" roleId="tpee.1068498886297" type=".com.mbeddr.mpsutil.blutil.structure.BuilderExpression" id="2722267669525886224" nodeInfo="ng">
-                  <node role="root" type=".com.mbeddr.mpsutil.blutil.structure.ChildStep" id="2722267669525886225" nodeInfo="ng">
-                    <link role="childLink" targetNodeId="tpck.5169995583184591170" />
-                    <node role="value" type=".com.mbeddr.mpsutil.blutil.structure.ConceptRef" id="2722267669525886238" nodeInfo="ng">
-                      <link role="concept" targetNodeId="clbe.8811614583515725893" resolveInfo="EnumType" />
+                <node role="rValue" roleId="tpee.1068498886297" type="hba4.BuilderExpression" typeId="hba4.4481811096720536877" id="2722267669525886224" nodeInfo="ng">
+                  <node role="root" roleId="hba4.4481811096720536927" type="hba4.ChildStep" typeId="hba4.4481811096720537459" id="2722267669525886225" nodeInfo="ng">
+                    <link role="childLink" roleId="hba4.4481811096720607067" targetNodeId="tpck.5169995583184591170" />
+                    <node role="value" roleId="hba4.6308171743671982944" type="hba4.ConceptRef" typeId="hba4.4481811096720976618" id="2722267669525886238" nodeInfo="ng">
+                      <link role="concept" roleId="hba4.4481811096720976619" targetNodeId="clbe.8811614583515725893" resolveInfo="EnumType" />
                     </node>
-                    <node role="children" type=".com.mbeddr.mpsutil.blutil.structure.RefStep" id="2722267669525886241" nodeInfo="ng">
-                      <link role="refLink" targetNodeId="clbe.8811614583515725894" />
-                      <node role="target" type="tpee.CastExpression" typeId="tpee.1070534934090" id="2722267669525886243" nodeInfo="nn">
+                    <node role="children" roleId="hba4.4481811096720537463" type="hba4.RefStep" typeId="hba4.4481811096721038000" id="2722267669525886241" nodeInfo="ng">
+                      <link role="refLink" roleId="hba4.4481811096721038001" targetNodeId="clbe.8811614583515725894" />
+                      <node role="target" roleId="hba4.4481811096721038002" type="tpee.CastExpression" typeId="tpee.1070534934090" id="2722267669525886243" nodeInfo="nn">
                         <node role="expression" roleId="tpee.1070534934092" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="2164035044993563072" nodeInfo="nn">
                           <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="2164035044993501778" resolveInfo="moduleContent" />
                         </node>
@@ -958,15 +966,15 @@
           <node role="ifTrue" roleId="tpee.1068580123161" type="tpee.StatementList" typeId="tpee.1068580123136" id="2722267669525886248" nodeInfo="sn">
             <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="2722267669525886249" nodeInfo="nn">
               <node role="expression" roleId="tpee.1068580123156" type="tpee.AssignmentExpression" typeId="tpee.1068498886294" id="2722267669525886250" nodeInfo="nn">
-                <node role="rValue" roleId="tpee.1068498886297" type=".com.mbeddr.mpsutil.blutil.structure.BuilderExpression" id="2722267669525886251" nodeInfo="ng">
-                  <node role="root" type=".com.mbeddr.mpsutil.blutil.structure.ChildStep" id="2722267669525886252" nodeInfo="ng">
-                    <link role="childLink" targetNodeId="tpck.5169995583184591170" />
-                    <node role="value" type=".com.mbeddr.mpsutil.blutil.structure.ConceptRef" id="2722267669525886264" nodeInfo="ng">
-                      <link role="concept" targetNodeId="clbe.6394819151180597816" resolveInfo="StructType" />
+                <node role="rValue" roleId="tpee.1068498886297" type="hba4.BuilderExpression" typeId="hba4.4481811096720536877" id="2722267669525886251" nodeInfo="ng">
+                  <node role="root" roleId="hba4.4481811096720536927" type="hba4.ChildStep" typeId="hba4.4481811096720537459" id="2722267669525886252" nodeInfo="ng">
+                    <link role="childLink" roleId="hba4.4481811096720607067" targetNodeId="tpck.5169995583184591170" />
+                    <node role="value" roleId="hba4.6308171743671982944" type="hba4.ConceptRef" typeId="hba4.4481811096720976618" id="2722267669525886264" nodeInfo="ng">
+                      <link role="concept" roleId="hba4.4481811096720976619" targetNodeId="clbe.6394819151180597816" resolveInfo="StructType" />
                     </node>
-                    <node role="children" type=".com.mbeddr.mpsutil.blutil.structure.RefStep" id="2722267669525886254" nodeInfo="ng">
-                      <link role="refLink" targetNodeId="clbe.6394819151180597817" />
-                      <node role="target" type="tpee.CastExpression" typeId="tpee.1070534934090" id="2722267669525886255" nodeInfo="nn">
+                    <node role="children" roleId="hba4.4481811096720537463" type="hba4.RefStep" typeId="hba4.4481811096721038000" id="2722267669525886254" nodeInfo="ng">
+                      <link role="refLink" roleId="hba4.4481811096721038001" targetNodeId="clbe.6394819151180597817" />
+                      <node role="target" roleId="hba4.4481811096721038002" type="tpee.CastExpression" typeId="tpee.1070534934090" id="2722267669525886255" nodeInfo="nn">
                         <node role="expression" roleId="tpee.1070534934092" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="2164035044993563073" nodeInfo="nn">
                           <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="2164035044993501778" resolveInfo="moduleContent" />
                         </node>
@@ -998,15 +1006,15 @@
           <node role="ifTrue" roleId="tpee.1068580123161" type="tpee.StatementList" typeId="tpee.1068580123136" id="5119111209187152332" nodeInfo="sn">
             <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="5119111209187152333" nodeInfo="nn">
               <node role="expression" roleId="tpee.1068580123156" type="tpee.AssignmentExpression" typeId="tpee.1068498886294" id="5119111209187152334" nodeInfo="nn">
-                <node role="rValue" roleId="tpee.1068498886297" type=".com.mbeddr.mpsutil.blutil.structure.BuilderExpression" id="5119111209187152335" nodeInfo="ng">
-                  <node role="root" type=".com.mbeddr.mpsutil.blutil.structure.ChildStep" id="5119111209187152336" nodeInfo="ng">
-                    <link role="childLink" targetNodeId="tpck.5169995583184591170" />
-                    <node role="value" type=".com.mbeddr.mpsutil.blutil.structure.ConceptRef" id="5119111209187152348" nodeInfo="ng">
-                      <link role="concept" targetNodeId="clbe.5882395403881907205" resolveInfo="UnionType" />
+                <node role="rValue" roleId="tpee.1068498886297" type="hba4.BuilderExpression" typeId="hba4.4481811096720536877" id="5119111209187152335" nodeInfo="ng">
+                  <node role="root" roleId="hba4.4481811096720536927" type="hba4.ChildStep" typeId="hba4.4481811096720537459" id="5119111209187152336" nodeInfo="ng">
+                    <link role="childLink" roleId="hba4.4481811096720607067" targetNodeId="tpck.5169995583184591170" />
+                    <node role="value" roleId="hba4.6308171743671982944" type="hba4.ConceptRef" typeId="hba4.4481811096720976618" id="5119111209187152348" nodeInfo="ng">
+                      <link role="concept" roleId="hba4.4481811096720976619" targetNodeId="clbe.5882395403881907205" resolveInfo="UnionType" />
                     </node>
-                    <node role="children" type=".com.mbeddr.mpsutil.blutil.structure.RefStep" id="5119111209187152338" nodeInfo="ng">
-                      <link role="refLink" targetNodeId="clbe.5882395403881907207" />
-                      <node role="target" type="tpee.CastExpression" typeId="tpee.1070534934090" id="5119111209187152339" nodeInfo="nn">
+                    <node role="children" roleId="hba4.4481811096720537463" type="hba4.RefStep" typeId="hba4.4481811096721038000" id="5119111209187152338" nodeInfo="ng">
+                      <link role="refLink" roleId="hba4.4481811096721038001" targetNodeId="clbe.5882395403881907207" />
+                      <node role="target" roleId="hba4.4481811096721038002" type="tpee.CastExpression" typeId="tpee.1070534934090" id="5119111209187152339" nodeInfo="nn">
                         <node role="expression" roleId="tpee.1070534934092" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="2164035044993563076" nodeInfo="nn">
                           <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="2164035044993501778" resolveInfo="moduleContent" />
                         </node>
@@ -2184,15 +2192,15 @@
                         <node role="lValue" roleId="tpee.1068498886295" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="767256501283938234" nodeInfo="nn">
                           <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="767256501283938199" resolveInfo="defineRef" />
                         </node>
-                        <node role="rValue" roleId="tpee.1068498886297" type=".com.mbeddr.mpsutil.blutil.structure.BuilderExpression" id="767256501283938259" nodeInfo="ng">
-                          <node role="root" type=".com.mbeddr.mpsutil.blutil.structure.ChildStep" id="767256501283938260" nodeInfo="ng">
-                            <link role="childLink" targetNodeId="tpck.5169995583184591170" />
-                            <node role="value" type=".com.mbeddr.mpsutil.blutil.structure.ConceptRef" id="767256501283938261" nodeInfo="ng">
-                              <link role="concept" targetNodeId="x27k.3788988821852026523" resolveInfo="GlobalConstantRef" />
+                        <node role="rValue" roleId="tpee.1068498886297" type="hba4.BuilderExpression" typeId="hba4.4481811096720536877" id="767256501283938259" nodeInfo="ng">
+                          <node role="root" roleId="hba4.4481811096720536927" type="hba4.ChildStep" typeId="hba4.4481811096720537459" id="767256501283938260" nodeInfo="ng">
+                            <link role="childLink" roleId="hba4.4481811096720607067" targetNodeId="tpck.5169995583184591170" />
+                            <node role="value" roleId="hba4.6308171743671982944" type="hba4.ConceptRef" typeId="hba4.4481811096720976618" id="767256501283938261" nodeInfo="ng">
+                              <link role="concept" roleId="hba4.4481811096720976619" targetNodeId="x27k.3788988821852026523" resolveInfo="GlobalConstantRef" />
                             </node>
-                            <node role="children" type=".com.mbeddr.mpsutil.blutil.structure.RefStep" id="767256501283938262" nodeInfo="ng">
-                              <link role="refLink" targetNodeId="x27k.3376775282622611130" />
-                              <node role="target" type="tp25.SNodeTypeCastExpression" typeId="tp25.1140137987495" id="767256501283938263" nodeInfo="nn">
+                            <node role="children" roleId="hba4.4481811096720537463" type="hba4.RefStep" typeId="hba4.4481811096721038000" id="767256501283938262" nodeInfo="ng">
+                              <link role="refLink" roleId="hba4.4481811096721038001" targetNodeId="x27k.3376775282622611130" />
+                              <node role="target" roleId="hba4.4481811096721038002" type="tp25.SNodeTypeCastExpression" typeId="tp25.1140137987495" id="767256501283938263" nodeInfo="nn">
                                 <link role="concept" roleId="tp25.1140138128738" targetNodeId="x27k.3788988821851860886" resolveInfo="GlobalConstantDeclaration" />
                                 <node role="leftExpression" roleId="tp25.1140138123956" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="767256501283938264" nodeInfo="nn">
                                   <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="767256501283938186" resolveInfo="moduleContent" />
@@ -2275,13 +2283,20 @@
       <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="178383611730709446" nodeInfo="sn">
         <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="178383611730709458" nodeInfo="nn">
           <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="178383611730709459" nodeInfo="nn">
-            <node role="operand" roleId="tpee.1197027771414" type="tp25.SemanticDowncastExpression" typeId="tp25.1145404486709" id="178383611730709460" nodeInfo="nn">
-              <node role="leftExpression" roleId="tp25.1145404616321" type="tpee.VariableReference" typeId="tpee.1068498886296" id="5058375741168476371" nodeInfo="nn">
-                <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="178383611730709524" resolveInfo="moduleContent" />
+            <node role="operand" roleId="tpee.1197027771414" type="tpee.ParenthesizedExpression" typeId="tpee.1079359253375" id="3208636348801906408" nodeInfo="nn">
+              <node role="expression" roleId="tpee.1079359253376" type="tpee.CastExpression" typeId="tpee.1070534934090" id="3208636348801906409" nodeInfo="nn">
+                <node role="expression" roleId="tpee.1070534934092" type="tp25.SemanticDowncastExpression" typeId="tp25.1145404486709" id="3208636348801906406" nodeInfo="nn">
+                  <node role="leftExpression" roleId="tp25.1145404616321" type="tpee.VariableReference" typeId="tpee.1068498886296" id="3208636348801906407" nodeInfo="nn">
+                    <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="178383611730709524" resolveInfo="moduleContent" />
+                  </node>
+                </node>
+                <node role="type" roleId="tpee.1070534934091" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="3208636348801907163" nodeInfo="in">
+                  <link role="classifier" roleId="tpee.1107535924139" targetNodeId="cu2c.~SNode" resolveInfo="SNode" />
+                </node>
               </node>
             </node>
             <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="178383611730709462" nodeInfo="nn">
-              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="cu2c.~SNode%dsetId(jetbrains%dmps%dsmodel%dSNodeId)%cvoid" resolveInfo="setId" />
+              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="cu2c.~SNode%dsetId(org%djetbrains%dmps%dopenapi%dmodel%dSNodeId)%cvoid" resolveInfo="setId" />
               <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="638966541988365324" nodeInfo="nn">
                 <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="638966541988365262" resolveInfo="createIdForModelRoot" />
                 <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="638966541988363998" resolveInfo="CParserUtil" />
@@ -2310,9 +2325,9 @@
         </node>
         <node role="statement" roleId="tpee.1068581517665" type="tpee.Statement" typeId="tpee.1068580123157" id="3016000952673434482" nodeInfo="nn" />
         <node role="statement" roleId="tpee.1068581517665" type="tpee.Statement" typeId="tpee.1068580123157" id="3016000952673434480" nodeInfo="nn">
-          <node role="smodelAttribute" roleId="tpck.5169995583184591170" type=".com.mbeddr.mpsutil.bldoc.structure.KnownBug" id="3016000952673434481" nodeInfo="ng">
-            <property name="text" value="performance issue with comments" />
-            <property name="bugNumber" value="91" />
+          <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="7aka.KnownBug" typeId="7aka.14270488321463783" id="3016000952673434481" nodeInfo="ng">
+            <property name="text" nameId="7aka.14270488321463784" value="performance issue with comments" />
+            <property name="bugNumber" nameId="7aka.14270488321463788" value="91" />
           </node>
         </node>
         <node role="statement" roleId="tpee.1068581517665" type="tpee.SingleLineComment" typeId="tpee.6329021646629104954" id="2750391522242856264" nodeInfo="nn">
@@ -2420,15 +2435,15 @@
                       </node>
                     </node>
                     <node role="operation" roleId="tpee.1197027833540" type="tp2q.AddElementOperation" typeId="tp2q.1160612413312" id="3028139340121048023" nodeInfo="nn">
-                      <node role="argument" roleId="tp2q.1160612519549" type=".com.mbeddr.mpsutil.blutil.structure.BuilderExpression" id="3028139340121048025" nodeInfo="ng">
-                        <node role="root" type=".com.mbeddr.mpsutil.blutil.structure.ChildStep" id="3028139340121048027" nodeInfo="ng">
-                          <link role="childLink" targetNodeId="tpck.5169995583184591170" />
-                          <node role="value" type=".com.mbeddr.mpsutil.blutil.structure.ConceptRef" id="3028139340121048021" nodeInfo="ng">
-                            <link role="concept" targetNodeId="x27k.2877808180148899328" resolveInfo="CommentModuleContent" />
+                      <node role="argument" roleId="tp2q.1160612519549" type="hba4.BuilderExpression" typeId="hba4.4481811096720536877" id="3028139340121048025" nodeInfo="ng">
+                        <node role="root" roleId="hba4.4481811096720536927" type="hba4.ChildStep" typeId="hba4.4481811096720537459" id="3028139340121048027" nodeInfo="ng">
+                          <link role="childLink" roleId="hba4.4481811096720607067" targetNodeId="tpck.5169995583184591170" />
+                          <node role="value" roleId="hba4.6308171743671982944" type="hba4.ConceptRef" typeId="hba4.4481811096720976618" id="3028139340121048021" nodeInfo="ng">
+                            <link role="concept" roleId="hba4.4481811096720976619" targetNodeId="x27k.2877808180148899328" resolveInfo="CommentModuleContent" />
                           </node>
-                          <node role="children" type=".com.mbeddr.mpsutil.blutil.structure.SimplePropertyStep" id="3028139340121048017" nodeInfo="ng">
-                            <link role="property" targetNodeId="x27k.2877808180148899333" resolveInfo="comment" />
-                            <node role="value" type="tpee.DotExpression" typeId="tpee.1197027756228" id="1165198536957947543" nodeInfo="nn">
+                          <node role="children" roleId="hba4.4481811096720537463" type="hba4.SimplePropertyStep" typeId="hba4.4481811096720581223" id="3028139340121048017" nodeInfo="ng">
+                            <link role="property" roleId="hba4.4481811096720581232" targetNodeId="x27k.2877808180148899333" resolveInfo="comment" />
+                            <node role="value" roleId="hba4.4481811096720588312" type="tpee.DotExpression" typeId="tpee.1197027756228" id="1165198536957947543" nodeInfo="nn">
                               <node role="operand" roleId="tpee.1197027771414" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="1165198536957947540" nodeInfo="nn">
                                 <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="1165198536957946799" resolveInfo="sb" />
                               </node>
@@ -2437,9 +2452,9 @@
                               </node>
                             </node>
                           </node>
-                          <node role="children" type=".com.mbeddr.mpsutil.blutil.structure.SimplePropertyStep" id="3028139340121048029" nodeInfo="ng">
-                            <link role="property" targetNodeId="tpck.1169194664001" resolveInfo="name" />
-                            <node role="value" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3028139340121048019" nodeInfo="nn">
+                          <node role="children" roleId="hba4.4481811096720537463" type="hba4.SimplePropertyStep" typeId="hba4.4481811096720581223" id="3028139340121048029" nodeInfo="ng">
+                            <link role="property" roleId="hba4.4481811096720581232" targetNodeId="tpck.1169194664001" resolveInfo="name" />
+                            <node role="value" roleId="hba4.4481811096720588312" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3028139340121048019" nodeInfo="nn">
                               <property name="value" nameId="tpee.1070475926801" value="&lt;no name&gt;" />
                             </node>
                           </node>
@@ -2866,15 +2881,15 @@
                       </node>
                     </node>
                     <node role="operation" roleId="tpee.1197027833540" type="tp2q.AddElementOperation" typeId="tp2q.1160612413312" id="337785462029151108" nodeInfo="nn">
-                      <node role="argument" roleId="tp2q.1160612519549" type=".com.mbeddr.mpsutil.blutil.structure.BuilderExpression" id="337785462029151109" nodeInfo="ng">
-                        <node role="root" type=".com.mbeddr.mpsutil.blutil.structure.ChildStep" id="337785462029151110" nodeInfo="ng">
-                          <link role="childLink" targetNodeId="tpck.5169995583184591170" />
-                          <node role="value" type=".com.mbeddr.mpsutil.blutil.structure.ConceptRef" id="337785462029151111" nodeInfo="ng">
-                            <link role="concept" targetNodeId="x27k.1317894735999299713" resolveInfo="ModuleImport" />
+                      <node role="argument" roleId="tp2q.1160612519549" type="hba4.BuilderExpression" typeId="hba4.4481811096720536877" id="337785462029151109" nodeInfo="ng">
+                        <node role="root" roleId="hba4.4481811096720536927" type="hba4.ChildStep" typeId="hba4.4481811096720537459" id="337785462029151110" nodeInfo="ng">
+                          <link role="childLink" roleId="hba4.4481811096720607067" targetNodeId="tpck.5169995583184591170" />
+                          <node role="value" roleId="hba4.6308171743671982944" type="hba4.ConceptRef" typeId="hba4.4481811096720976618" id="337785462029151111" nodeInfo="ng">
+                            <link role="concept" roleId="hba4.4481811096720976619" targetNodeId="x27k.1317894735999299713" resolveInfo="ModuleImport" />
                           </node>
-                          <node role="children" type=".com.mbeddr.mpsutil.blutil.structure.RefStep" id="337785462029151112" nodeInfo="ng">
-                            <link role="refLink" targetNodeId="x27k.1317894735999299714" />
-                            <node role="target" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="3284580646979906768" nodeInfo="nn">
+                          <node role="children" roleId="hba4.4481811096720537463" type="hba4.RefStep" typeId="hba4.4481811096721038000" id="337785462029151112" nodeInfo="ng">
+                            <link role="refLink" roleId="hba4.4481811096721038001" targetNodeId="x27k.1317894735999299714" />
+                            <node role="target" roleId="hba4.4481811096721038002" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="3284580646979906768" nodeInfo="nn">
                               <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="3284580646979906772" resolveInfo="moduleToImport" />
                             </node>
                           </node>
@@ -3768,15 +3783,15 @@
                                   </node>
                                 </node>
                                 <node role="operation" roleId="tpee.1197027833540" type="tp2q.AddElementOperation" typeId="tp2q.1160612413312" id="4087824413127428758" nodeInfo="nn">
-                                  <node role="argument" roleId="tp2q.1160612519549" type=".com.mbeddr.mpsutil.blutil.structure.BuilderExpression" id="2600161866775135928" nodeInfo="ng">
-                                    <node role="root" type=".com.mbeddr.mpsutil.blutil.structure.ChildStep" id="2600161866775135929" nodeInfo="ng">
-                                      <link role="childLink" targetNodeId="tpck.5169995583184591170" />
-                                      <node role="value" type=".com.mbeddr.mpsutil.blutil.structure.ConceptRef" id="2600161866775135931" nodeInfo="ng">
-                                        <link role="concept" targetNodeId="x27k.6116558314501417952" resolveInfo="HeaderDescriptor" />
+                                  <node role="argument" roleId="tp2q.1160612519549" type="hba4.BuilderExpression" typeId="hba4.4481811096720536877" id="2600161866775135928" nodeInfo="ng">
+                                    <node role="root" roleId="hba4.4481811096720536927" type="hba4.ChildStep" typeId="hba4.4481811096720537459" id="2600161866775135929" nodeInfo="ng">
+                                      <link role="childLink" roleId="hba4.4481811096720607067" targetNodeId="tpck.5169995583184591170" />
+                                      <node role="value" roleId="hba4.6308171743671982944" type="hba4.ConceptRef" typeId="hba4.4481811096720976618" id="2600161866775135931" nodeInfo="ng">
+                                        <link role="concept" roleId="hba4.4481811096720976619" targetNodeId="x27k.6116558314501417952" resolveInfo="HeaderDescriptor" />
                                       </node>
-                                      <node role="children" type=".com.mbeddr.mpsutil.blutil.structure.SimplePropertyStep" id="2600161866775135935" nodeInfo="ng">
-                                        <link role="property" targetNodeId="x27k.6116558314501417936" resolveInfo="path" />
-                                        <node role="value" type="tpee.PlusExpression" typeId="tpee.1068581242875" id="3963866709493491667" nodeInfo="nn">
+                                      <node role="children" roleId="hba4.4481811096720537463" type="hba4.SimplePropertyStep" typeId="hba4.4481811096720581223" id="2600161866775135935" nodeInfo="ng">
+                                        <link role="property" roleId="hba4.4481811096720581232" targetNodeId="x27k.6116558314501417936" resolveInfo="path" />
+                                        <node role="value" roleId="hba4.4481811096720588312" type="tpee.PlusExpression" typeId="tpee.1068581242875" id="3963866709493491667" nodeInfo="nn">
                                           <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3963866709493491670" nodeInfo="nn">
                                             <property name="value" nameId="tpee.1070475926801" value="\&quot;" />
                                           </node>
@@ -3861,13 +3876,20 @@
                         </node>
                         <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="5227140517566077822" nodeInfo="nn">
                           <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="5227140517566077840" nodeInfo="nn">
-                            <node role="operand" roleId="tpee.1197027771414" type="tp25.SemanticDowncastExpression" typeId="tp25.1145404486709" id="5227140517566077836" nodeInfo="nn">
-                              <node role="leftExpression" roleId="tp25.1145404616321" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="5227140517566077823" nodeInfo="nn">
-                                <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="3412295143259025323" resolveInfo="module" />
+                            <node role="operand" roleId="tpee.1197027771414" type="tpee.ParenthesizedExpression" typeId="tpee.1079359253375" id="3208636348801908561" nodeInfo="nn">
+                              <node role="expression" roleId="tpee.1079359253376" type="tpee.CastExpression" typeId="tpee.1070534934090" id="3208636348801908562" nodeInfo="nn">
+                                <node role="expression" roleId="tpee.1070534934092" type="tp25.SemanticDowncastExpression" typeId="tp25.1145404486709" id="3208636348801908559" nodeInfo="nn">
+                                  <node role="leftExpression" roleId="tp25.1145404616321" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="3208636348801908560" nodeInfo="nn">
+                                    <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="3412295143259025323" resolveInfo="module" />
+                                  </node>
+                                </node>
+                                <node role="type" roleId="tpee.1070534934091" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="3208636348802006365" nodeInfo="in">
+                                  <link role="classifier" roleId="tpee.1107535924139" targetNodeId="cu2c.~SNode" resolveInfo="SNode" />
+                                </node>
                               </node>
                             </node>
                             <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="5227140517566077846" nodeInfo="nn">
-                              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="cu2c.~SNode%dsetId(jetbrains%dmps%dsmodel%dSNodeId)%cvoid" resolveInfo="setId" />
+                              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="cu2c.~SNode%dsetId(org%djetbrains%dmps%dopenapi%dmodel%dSNodeId)%cvoid" resolveInfo="setId" />
                               <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="638966541988365323" nodeInfo="nn">
                                 <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="638966541988365262" resolveInfo="createIdForModelRoot" />
                                 <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="638966541988363998" resolveInfo="CParserUtil" />
@@ -4618,13 +4640,20 @@
         </node>
         <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="3334965554181459477" nodeInfo="nn">
           <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="3334965554181459478" nodeInfo="nn">
-            <node role="operand" roleId="tpee.1197027771414" type="tp25.SemanticDowncastExpression" typeId="tp25.1145404486709" id="3334965554181459479" nodeInfo="nn">
-              <node role="leftExpression" roleId="tp25.1145404616321" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="3334965554181459480" nodeInfo="nn">
-                <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="3334965554181459425" resolveInfo="dummyModule" />
+            <node role="operand" roleId="tpee.1197027771414" type="tpee.ParenthesizedExpression" typeId="tpee.1079359253375" id="3208636348802104280" nodeInfo="nn">
+              <node role="expression" roleId="tpee.1079359253376" type="tpee.CastExpression" typeId="tpee.1070534934090" id="3208636348802104281" nodeInfo="nn">
+                <node role="expression" roleId="tpee.1070534934092" type="tp25.SemanticDowncastExpression" typeId="tp25.1145404486709" id="3208636348802104278" nodeInfo="nn">
+                  <node role="leftExpression" roleId="tp25.1145404616321" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="3208636348802104279" nodeInfo="nn">
+                    <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="3334965554181459425" resolveInfo="dummyModule" />
+                  </node>
+                </node>
+                <node role="type" roleId="tpee.1070534934091" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="3208636348802104845" nodeInfo="in">
+                  <link role="classifier" roleId="tpee.1107535924139" targetNodeId="cu2c.~SNode" resolveInfo="SNode" />
+                </node>
               </node>
             </node>
             <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="3334965554181459481" nodeInfo="nn">
-              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="cu2c.~SNode%dsetId(jetbrains%dmps%dsmodel%dSNodeId)%cvoid" resolveInfo="setId" />
+              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="cu2c.~SNode%dsetId(org%djetbrains%dmps%dopenapi%dmodel%dSNodeId)%cvoid" resolveInfo="setId" />
               <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="3334965554181459482" nodeInfo="nn">
                 <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="638966541988363998" resolveInfo="CParserUtil" />
                 <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="638966541988365262" resolveInfo="createIdForModelRoot" />
@@ -5099,15 +5128,15 @@
                                     <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="8885491090088554503" resolveInfo="gcdOriginal" />
                                   </node>
                                   <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_InsertPrevSiblingOperation" typeId="tp25.1143224127713" id="3125271056635866593" nodeInfo="nn">
-                                    <node role="insertedNode" roleId="tp25.1143224127716" type=".com.mbeddr.mpsutil.blutil.structure.BuilderExpression" id="3125271056635866595" nodeInfo="ng">
-                                      <node role="root" type=".com.mbeddr.mpsutil.blutil.structure.ChildStep" id="3125271056635866596" nodeInfo="ng">
-                                        <link role="childLink" targetNodeId="tpck.5169995583184591170" />
-                                        <node role="value" type=".com.mbeddr.mpsutil.blutil.structure.ConceptRef" id="3125271056635866662" nodeInfo="ng">
-                                          <link role="concept" targetNodeId="x27k.2877808180148899328" resolveInfo="CommentModuleContent" />
+                                    <node role="insertedNode" roleId="tp25.1143224127716" type="hba4.BuilderExpression" typeId="hba4.4481811096720536877" id="3125271056635866595" nodeInfo="ng">
+                                      <node role="root" roleId="hba4.4481811096720536927" type="hba4.ChildStep" typeId="hba4.4481811096720537459" id="3125271056635866596" nodeInfo="ng">
+                                        <link role="childLink" roleId="hba4.4481811096720607067" targetNodeId="tpck.5169995583184591170" />
+                                        <node role="value" roleId="hba4.6308171743671982944" type="hba4.ConceptRef" typeId="hba4.4481811096720976618" id="3125271056635866662" nodeInfo="ng">
+                                          <link role="concept" roleId="hba4.4481811096720976619" targetNodeId="x27k.2877808180148899328" resolveInfo="CommentModuleContent" />
                                         </node>
-                                        <node role="children" type=".com.mbeddr.mpsutil.blutil.structure.SimplePropertyStep" id="3125271056635866669" nodeInfo="ng">
-                                          <link role="property" targetNodeId="x27k.2877808180148899333" resolveInfo="comment" />
-                                          <node role="value" type="tpee.PlusExpression" typeId="tpee.1068581242875" id="3125271056635866776" nodeInfo="nn">
+                                        <node role="children" roleId="hba4.4481811096720537463" type="hba4.SimplePropertyStep" typeId="hba4.4481811096720581223" id="3125271056635866669" nodeInfo="ng">
+                                          <link role="property" roleId="hba4.4481811096720581232" targetNodeId="x27k.2877808180148899333" resolveInfo="comment" />
+                                          <node role="value" roleId="hba4.4481811096720588312" type="tpee.PlusExpression" typeId="tpee.1068581242875" id="3125271056635866776" nodeInfo="nn">
                                             <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.DotExpression" typeId="tpee.1197027756228" id="3125271056635879973" nodeInfo="nn">
                                               <node role="operand" roleId="tpee.1197027771414" type="tp25.SNodeTypeCastExpression" typeId="tp25.1140137987495" id="3125271056635879951" nodeInfo="nn">
                                                 <link role="concept" roleId="tp25.1140138128738" targetNodeId="s5bn.8720844099624588923" resolveInfo="OpaqueTextWithType" />
@@ -5129,9 +5158,9 @@
                                             </node>
                                           </node>
                                         </node>
-                                        <node role="children" type=".com.mbeddr.mpsutil.blutil.structure.SimplePropertyStep" id="3125271056635866753" nodeInfo="ng">
-                                          <link role="property" targetNodeId="tpck.1169194664001" resolveInfo="name" />
-                                          <node role="value" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3125271056635866755" nodeInfo="nn">
+                                        <node role="children" roleId="hba4.4481811096720537463" type="hba4.SimplePropertyStep" typeId="hba4.4481811096720581223" id="3125271056635866753" nodeInfo="ng">
+                                          <link role="property" roleId="hba4.4481811096720581232" targetNodeId="tpck.1169194664001" resolveInfo="name" />
+                                          <node role="value" roleId="hba4.4481811096720588312" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3125271056635866755" nodeInfo="nn">
                                             <property name="value" nameId="tpee.1070475926801" value="&lt;no name&gt;" />
                                           </node>
                                         </node>
@@ -5297,22 +5326,22 @@
                       <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="3948649030656113898" nodeInfo="nn">
                         <node role="expression" roleId="tpee.1068580123156" type="tpee.AssignmentExpression" typeId="tpee.1068498886294" id="3948649030656113902" nodeInfo="nn">
                           <node role="rValue" roleId="tpee.1068498886297" type="tpee.TernaryOperatorExpression" typeId="tpee.1163668896201" id="3948649030656113908" nodeInfo="nn">
-                            <node role="ifTrue" roleId="tpee.1163668922816" type=".com.mbeddr.mpsutil.blutil.structure.BuilderExpression" id="3948649030656113912" nodeInfo="ng">
-                              <node role="root" type=".com.mbeddr.mpsutil.blutil.structure.ChildStep" id="3948649030656113913" nodeInfo="ng">
-                                <link role="childLink" targetNodeId="tpck.5169995583184591170" />
-                                <node role="value" type=".com.mbeddr.mpsutil.blutil.structure.ConceptRef" id="3948649030656113961" nodeInfo="ng">
-                                  <link role="concept" targetNodeId="mj1l.595416243537320771" resolveInfo="UnsignedShortType" />
+                            <node role="ifTrue" roleId="tpee.1163668922816" type="hba4.BuilderExpression" typeId="hba4.4481811096720536877" id="3948649030656113912" nodeInfo="ng">
+                              <node role="root" roleId="hba4.4481811096720536927" type="hba4.ChildStep" typeId="hba4.4481811096720537459" id="3948649030656113913" nodeInfo="ng">
+                                <link role="childLink" roleId="hba4.4481811096720607067" targetNodeId="tpck.5169995583184591170" />
+                                <node role="value" roleId="hba4.6308171743671982944" type="hba4.ConceptRef" typeId="hba4.4481811096720976618" id="3948649030656113961" nodeInfo="ng">
+                                  <link role="concept" roleId="hba4.4481811096720976619" targetNodeId="mj1l.595416243537320771" resolveInfo="UnsignedShortType" />
                                 </node>
                               </node>
                             </node>
                             <node role="condition" roleId="tpee.1163668914799" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="3948649030656113905" nodeInfo="nn">
                               <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="3948649030656113884" resolveInfo="isUnsigned" />
                             </node>
-                            <node role="ifFalse" roleId="tpee.1163668934364" type=".com.mbeddr.mpsutil.blutil.structure.BuilderExpression" id="2497083023867902355" nodeInfo="ng">
-                              <node role="root" type=".com.mbeddr.mpsutil.blutil.structure.ChildStep" id="2497083023867902356" nodeInfo="ng">
-                                <link role="childLink" targetNodeId="tpck.5169995583184591170" />
-                                <node role="value" type=".com.mbeddr.mpsutil.blutil.structure.ConceptRef" id="2497083023867902358" nodeInfo="ng">
-                                  <link role="concept" targetNodeId="mj1l.3335993110369949928" resolveInfo="ShortType" />
+                            <node role="ifFalse" roleId="tpee.1163668934364" type="hba4.BuilderExpression" typeId="hba4.4481811096720536877" id="2497083023867902355" nodeInfo="ng">
+                              <node role="root" roleId="hba4.4481811096720536927" type="hba4.ChildStep" typeId="hba4.4481811096720537459" id="2497083023867902356" nodeInfo="ng">
+                                <link role="childLink" roleId="hba4.4481811096720607067" targetNodeId="tpck.5169995583184591170" />
+                                <node role="value" roleId="hba4.6308171743671982944" type="hba4.ConceptRef" typeId="hba4.4481811096720976618" id="2497083023867902358" nodeInfo="ng">
+                                  <link role="concept" roleId="hba4.4481811096720976619" targetNodeId="mj1l.3335993110369949928" resolveInfo="ShortType" />
                                 </node>
                               </node>
                             </node>
@@ -5337,22 +5366,22 @@
                       <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="3948649030656113917" nodeInfo="nn">
                         <node role="expression" roleId="tpee.1068580123156" type="tpee.AssignmentExpression" typeId="tpee.1068498886294" id="3948649030656113918" nodeInfo="nn">
                           <node role="rValue" roleId="tpee.1068498886297" type="tpee.TernaryOperatorExpression" typeId="tpee.1163668896201" id="3948649030656113919" nodeInfo="nn">
-                            <node role="ifTrue" roleId="tpee.1163668922816" type=".com.mbeddr.mpsutil.blutil.structure.BuilderExpression" id="3948649030656113920" nodeInfo="ng">
-                              <node role="root" type=".com.mbeddr.mpsutil.blutil.structure.ChildStep" id="3948649030656113921" nodeInfo="ng">
-                                <link role="childLink" targetNodeId="tpck.5169995583184591170" />
-                                <node role="value" type=".com.mbeddr.mpsutil.blutil.structure.ConceptRef" id="3948649030656113962" nodeInfo="ng">
-                                  <link role="concept" targetNodeId="mj1l.8463282783691596310" resolveInfo="UnsignedLongType" />
+                            <node role="ifTrue" roleId="tpee.1163668922816" type="hba4.BuilderExpression" typeId="hba4.4481811096720536877" id="3948649030656113920" nodeInfo="ng">
+                              <node role="root" roleId="hba4.4481811096720536927" type="hba4.ChildStep" typeId="hba4.4481811096720537459" id="3948649030656113921" nodeInfo="ng">
+                                <link role="childLink" roleId="hba4.4481811096720607067" targetNodeId="tpck.5169995583184591170" />
+                                <node role="value" roleId="hba4.6308171743671982944" type="hba4.ConceptRef" typeId="hba4.4481811096720976618" id="3948649030656113962" nodeInfo="ng">
+                                  <link role="concept" roleId="hba4.4481811096720976619" targetNodeId="mj1l.8463282783691596310" resolveInfo="UnsignedLongType" />
                                 </node>
                               </node>
                             </node>
                             <node role="condition" roleId="tpee.1163668914799" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="3948649030656113924" nodeInfo="nn">
                               <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="3948649030656113884" resolveInfo="isUnsigned" />
                             </node>
-                            <node role="ifFalse" roleId="tpee.1163668934364" type=".com.mbeddr.mpsutil.blutil.structure.BuilderExpression" id="2497083023867939878" nodeInfo="ng">
-                              <node role="root" type=".com.mbeddr.mpsutil.blutil.structure.ChildStep" id="2497083023867939879" nodeInfo="ng">
-                                <link role="childLink" targetNodeId="tpck.5169995583184591170" />
-                                <node role="value" type=".com.mbeddr.mpsutil.blutil.structure.ConceptRef" id="2497083023867939888" nodeInfo="ng">
-                                  <link role="concept" targetNodeId="mj1l.86532984527104137" resolveInfo="LongType" />
+                            <node role="ifFalse" roleId="tpee.1163668934364" type="hba4.BuilderExpression" typeId="hba4.4481811096720536877" id="2497083023867939878" nodeInfo="ng">
+                              <node role="root" roleId="hba4.4481811096720536927" type="hba4.ChildStep" typeId="hba4.4481811096720537459" id="2497083023867939879" nodeInfo="ng">
+                                <link role="childLink" roleId="hba4.4481811096720607067" targetNodeId="tpck.5169995583184591170" />
+                                <node role="value" roleId="hba4.6308171743671982944" type="hba4.ConceptRef" typeId="hba4.4481811096720976618" id="2497083023867939888" nodeInfo="ng">
+                                  <link role="concept" roleId="hba4.4481811096720976619" targetNodeId="mj1l.86532984527104137" resolveInfo="LongType" />
                                 </node>
                               </node>
                             </node>
@@ -5377,22 +5406,22 @@
                       <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="3948649030656113927" nodeInfo="nn">
                         <node role="expression" roleId="tpee.1068580123156" type="tpee.AssignmentExpression" typeId="tpee.1068498886294" id="3948649030656113928" nodeInfo="nn">
                           <node role="rValue" roleId="tpee.1068498886297" type="tpee.TernaryOperatorExpression" typeId="tpee.1163668896201" id="3948649030656113929" nodeInfo="nn">
-                            <node role="ifTrue" roleId="tpee.1163668922816" type=".com.mbeddr.mpsutil.blutil.structure.BuilderExpression" id="3948649030656113930" nodeInfo="ng">
-                              <node role="root" type=".com.mbeddr.mpsutil.blutil.structure.ChildStep" id="3948649030656113931" nodeInfo="ng">
-                                <link role="childLink" targetNodeId="tpck.5169995583184591170" />
-                                <node role="value" type=".com.mbeddr.mpsutil.blutil.structure.ConceptRef" id="3948649030656113963" nodeInfo="ng">
-                                  <link role="concept" targetNodeId="mj1l.8463282783691618471" resolveInfo="UnsignedLongLongType" />
+                            <node role="ifTrue" roleId="tpee.1163668922816" type="hba4.BuilderExpression" typeId="hba4.4481811096720536877" id="3948649030656113930" nodeInfo="ng">
+                              <node role="root" roleId="hba4.4481811096720536927" type="hba4.ChildStep" typeId="hba4.4481811096720537459" id="3948649030656113931" nodeInfo="ng">
+                                <link role="childLink" roleId="hba4.4481811096720607067" targetNodeId="tpck.5169995583184591170" />
+                                <node role="value" roleId="hba4.6308171743671982944" type="hba4.ConceptRef" typeId="hba4.4481811096720976618" id="3948649030656113963" nodeInfo="ng">
+                                  <link role="concept" roleId="hba4.4481811096720976619" targetNodeId="mj1l.8463282783691618471" resolveInfo="UnsignedLongLongType" />
                                 </node>
                               </node>
                             </node>
                             <node role="condition" roleId="tpee.1163668914799" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="3948649030656113934" nodeInfo="nn">
                               <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="3948649030656113884" resolveInfo="isUnsigned" />
                             </node>
-                            <node role="ifFalse" roleId="tpee.1163668934364" type=".com.mbeddr.mpsutil.blutil.structure.BuilderExpression" id="2497083023867939884" nodeInfo="ng">
-                              <node role="root" type=".com.mbeddr.mpsutil.blutil.structure.ChildStep" id="2497083023867939885" nodeInfo="ng">
-                                <link role="childLink" targetNodeId="tpck.5169995583184591170" />
-                                <node role="value" type=".com.mbeddr.mpsutil.blutil.structure.ConceptRef" id="2497083023867939887" nodeInfo="ng">
-                                  <link role="concept" targetNodeId="mj1l.8463282783691596316" resolveInfo="LongLongType" />
+                            <node role="ifFalse" roleId="tpee.1163668934364" type="hba4.BuilderExpression" typeId="hba4.4481811096720536877" id="2497083023867939884" nodeInfo="ng">
+                              <node role="root" roleId="hba4.4481811096720536927" type="hba4.ChildStep" typeId="hba4.4481811096720537459" id="2497083023867939885" nodeInfo="ng">
+                                <link role="childLink" roleId="hba4.4481811096720607067" targetNodeId="tpck.5169995583184591170" />
+                                <node role="value" roleId="hba4.6308171743671982944" type="hba4.ConceptRef" typeId="hba4.4481811096720976618" id="2497083023867939887" nodeInfo="ng">
+                                  <link role="concept" roleId="hba4.4481811096720976619" targetNodeId="mj1l.8463282783691596316" resolveInfo="LongLongType" />
                                 </node>
                               </node>
                             </node>
@@ -5496,15 +5525,15 @@
                               </node>
                               <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="9015901842068153047" nodeInfo="nn">
                                 <node role="expression" roleId="tpee.1068580123156" type="tpee.AssignmentExpression" typeId="tpee.1068498886294" id="9015901842068153051" nodeInfo="nn">
-                                  <node role="rValue" roleId="tpee.1068498886297" type=".com.mbeddr.mpsutil.blutil.structure.BuilderExpression" id="9015901842068153054" nodeInfo="ng">
-                                    <node role="root" type=".com.mbeddr.mpsutil.blutil.structure.ChildStep" id="9015901842068153055" nodeInfo="ng">
-                                      <link role="childLink" targetNodeId="tpck.5169995583184591170" />
-                                      <node role="value" type=".com.mbeddr.mpsutil.blutil.structure.ConceptRef" id="9015901842068153057" nodeInfo="ng">
-                                        <link role="concept" targetNodeId="clbe.6183845377104662871" resolveInfo="UnsignedBitType" />
+                                  <node role="rValue" roleId="tpee.1068498886297" type="hba4.BuilderExpression" typeId="hba4.4481811096720536877" id="9015901842068153054" nodeInfo="ng">
+                                    <node role="root" roleId="hba4.4481811096720536927" type="hba4.ChildStep" typeId="hba4.4481811096720537459" id="9015901842068153055" nodeInfo="ng">
+                                      <link role="childLink" roleId="hba4.4481811096720607067" targetNodeId="tpck.5169995583184591170" />
+                                      <node role="value" roleId="hba4.6308171743671982944" type="hba4.ConceptRef" typeId="hba4.4481811096720976618" id="9015901842068153057" nodeInfo="ng">
+                                        <link role="concept" roleId="hba4.4481811096720976619" targetNodeId="clbe.6183845377104662871" resolveInfo="UnsignedBitType" />
                                       </node>
-                                      <node role="children" type=".com.mbeddr.mpsutil.blutil.structure.SimplePropertyStep" id="9015901842068153061" nodeInfo="ng">
-                                        <link role="property" targetNodeId="clbe.6183845377104662872" resolveInfo="width" />
-                                        <node role="value" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="9015901842068153139" nodeInfo="nn">
+                                      <node role="children" roleId="hba4.4481811096720537463" type="hba4.SimplePropertyStep" typeId="hba4.4481811096720581223" id="9015901842068153061" nodeInfo="ng">
+                                        <link role="property" roleId="hba4.4481811096720581232" targetNodeId="clbe.6183845377104662872" resolveInfo="width" />
+                                        <node role="value" roleId="hba4.4481811096720588312" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="9015901842068153139" nodeInfo="nn">
                                           <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="9015901842068153116" resolveInfo="width" />
                                         </node>
                                       </node>
@@ -5589,11 +5618,11 @@
                       <node role="lValue" roleId="tpee.1068498886295" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="7328173333039290198" nodeInfo="nn">
                         <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="2497083023867939857" resolveInfo="result" />
                       </node>
-                      <node role="rValue" roleId="tpee.1068498886297" type=".com.mbeddr.mpsutil.blutil.structure.BuilderExpression" id="7328173333039290199" nodeInfo="ng">
-                        <node role="root" type=".com.mbeddr.mpsutil.blutil.structure.ChildStep" id="7328173333039290200" nodeInfo="ng">
-                          <link role="childLink" targetNodeId="tpck.5169995583184591170" />
-                          <node role="value" type=".com.mbeddr.mpsutil.blutil.structure.ConceptRef" id="7328173333039290203" nodeInfo="ng">
-                            <link role="concept" targetNodeId="mj1l.7892328519581699353" resolveInfo="VoidType" />
+                      <node role="rValue" roleId="tpee.1068498886297" type="hba4.BuilderExpression" typeId="hba4.4481811096720536877" id="7328173333039290199" nodeInfo="ng">
+                        <node role="root" roleId="hba4.4481811096720536927" type="hba4.ChildStep" typeId="hba4.4481811096720537459" id="7328173333039290200" nodeInfo="ng">
+                          <link role="childLink" roleId="hba4.4481811096720607067" targetNodeId="tpck.5169995583184591170" />
+                          <node role="value" roleId="hba4.6308171743671982944" type="hba4.ConceptRef" typeId="hba4.4481811096720976618" id="7328173333039290203" nodeInfo="ng">
+                            <link role="concept" roleId="hba4.4481811096720976619" targetNodeId="mj1l.7892328519581699353" resolveInfo="VoidType" />
                           </node>
                         </node>
                       </node>
@@ -5611,22 +5640,22 @@
                   <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="3948649030656113937" nodeInfo="nn">
                     <node role="expression" roleId="tpee.1068580123156" type="tpee.AssignmentExpression" typeId="tpee.1068498886294" id="3948649030656113938" nodeInfo="nn">
                       <node role="rValue" roleId="tpee.1068498886297" type="tpee.TernaryOperatorExpression" typeId="tpee.1163668896201" id="3948649030656113939" nodeInfo="nn">
-                        <node role="ifTrue" roleId="tpee.1163668922816" type=".com.mbeddr.mpsutil.blutil.structure.BuilderExpression" id="3948649030656113940" nodeInfo="ng">
-                          <node role="root" type=".com.mbeddr.mpsutil.blutil.structure.ChildStep" id="3948649030656113941" nodeInfo="ng">
-                            <link role="childLink" targetNodeId="tpck.5169995583184591170" />
-                            <node role="value" type=".com.mbeddr.mpsutil.blutil.structure.ConceptRef" id="3948649030656113964" nodeInfo="ng">
-                              <link role="concept" targetNodeId="mj1l.8463282783691492716" resolveInfo="UnsignedCharType" />
+                        <node role="ifTrue" roleId="tpee.1163668922816" type="hba4.BuilderExpression" typeId="hba4.4481811096720536877" id="3948649030656113940" nodeInfo="ng">
+                          <node role="root" roleId="hba4.4481811096720536927" type="hba4.ChildStep" typeId="hba4.4481811096720537459" id="3948649030656113941" nodeInfo="ng">
+                            <link role="childLink" roleId="hba4.4481811096720607067" targetNodeId="tpck.5169995583184591170" />
+                            <node role="value" roleId="hba4.6308171743671982944" type="hba4.ConceptRef" typeId="hba4.4481811096720976618" id="3948649030656113964" nodeInfo="ng">
+                              <link role="concept" roleId="hba4.4481811096720976619" targetNodeId="mj1l.8463282783691492716" resolveInfo="UnsignedCharType" />
                             </node>
                           </node>
                         </node>
                         <node role="condition" roleId="tpee.1163668914799" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="3948649030656113944" nodeInfo="nn">
                           <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="3948649030656113884" resolveInfo="isUnsigned" />
                         </node>
-                        <node role="ifFalse" roleId="tpee.1163668934364" type=".com.mbeddr.mpsutil.blutil.structure.BuilderExpression" id="3948649030656113958" nodeInfo="ng">
-                          <node role="root" type=".com.mbeddr.mpsutil.blutil.structure.ChildStep" id="3948649030656113959" nodeInfo="ng">
-                            <link role="childLink" targetNodeId="tpck.5169995583184591170" />
-                            <node role="value" type=".com.mbeddr.mpsutil.blutil.structure.ConceptRef" id="3948649030656113960" nodeInfo="ng">
-                              <link role="concept" targetNodeId="mj1l.1664480272136207708" resolveInfo="CharType" />
+                        <node role="ifFalse" roleId="tpee.1163668934364" type="hba4.BuilderExpression" typeId="hba4.4481811096720536877" id="3948649030656113958" nodeInfo="ng">
+                          <node role="root" roleId="hba4.4481811096720536927" type="hba4.ChildStep" typeId="hba4.4481811096720537459" id="3948649030656113959" nodeInfo="ng">
+                            <link role="childLink" roleId="hba4.4481811096720607067" targetNodeId="tpck.5169995583184591170" />
+                            <node role="value" roleId="hba4.6308171743671982944" type="hba4.ConceptRef" typeId="hba4.4481811096720976618" id="3948649030656113960" nodeInfo="ng">
+                              <link role="concept" roleId="hba4.4481811096720976619" targetNodeId="mj1l.1664480272136207708" resolveInfo="CharType" />
                             </node>
                           </node>
                         </node>
@@ -5648,22 +5677,22 @@
                   <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="3948649030656113947" nodeInfo="nn">
                     <node role="expression" roleId="tpee.1068580123156" type="tpee.AssignmentExpression" typeId="tpee.1068498886294" id="3948649030656113948" nodeInfo="nn">
                       <node role="rValue" roleId="tpee.1068498886297" type="tpee.TernaryOperatorExpression" typeId="tpee.1163668896201" id="3948649030656113949" nodeInfo="nn">
-                        <node role="ifTrue" roleId="tpee.1163668922816" type=".com.mbeddr.mpsutil.blutil.structure.BuilderExpression" id="3948649030656113950" nodeInfo="ng">
-                          <node role="root" type=".com.mbeddr.mpsutil.blutil.structure.ChildStep" id="3948649030656113951" nodeInfo="ng">
-                            <link role="childLink" targetNodeId="tpck.5169995583184591170" />
-                            <node role="value" type=".com.mbeddr.mpsutil.blutil.structure.ConceptRef" id="3948649030656113965" nodeInfo="ng">
-                              <link role="concept" targetNodeId="mj1l.8463282783691492730" resolveInfo="UnsignedIntType" />
+                        <node role="ifTrue" roleId="tpee.1163668922816" type="hba4.BuilderExpression" typeId="hba4.4481811096720536877" id="3948649030656113950" nodeInfo="ng">
+                          <node role="root" roleId="hba4.4481811096720536927" type="hba4.ChildStep" typeId="hba4.4481811096720537459" id="3948649030656113951" nodeInfo="ng">
+                            <link role="childLink" roleId="hba4.4481811096720607067" targetNodeId="tpck.5169995583184591170" />
+                            <node role="value" roleId="hba4.6308171743671982944" type="hba4.ConceptRef" typeId="hba4.4481811096720976618" id="3948649030656113965" nodeInfo="ng">
+                              <link role="concept" roleId="hba4.4481811096720976619" targetNodeId="mj1l.8463282783691492730" resolveInfo="UnsignedIntType" />
                             </node>
                           </node>
                         </node>
                         <node role="condition" roleId="tpee.1163668914799" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="3948649030656113954" nodeInfo="nn">
                           <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="3948649030656113884" resolveInfo="isUnsigned" />
                         </node>
-                        <node role="ifFalse" roleId="tpee.1163668934364" type=".com.mbeddr.mpsutil.blutil.structure.BuilderExpression" id="2497083023867939904" nodeInfo="ng">
-                          <node role="root" type=".com.mbeddr.mpsutil.blutil.structure.ChildStep" id="2497083023867939905" nodeInfo="ng">
-                            <link role="childLink" targetNodeId="tpck.5169995583184591170" />
-                            <node role="value" type=".com.mbeddr.mpsutil.blutil.structure.ConceptRef" id="2497083023867939925" nodeInfo="ng">
-                              <link role="concept" targetNodeId="mj1l.8860443239512128108" resolveInfo="IntType" />
+                        <node role="ifFalse" roleId="tpee.1163668934364" type="hba4.BuilderExpression" typeId="hba4.4481811096720536877" id="2497083023867939904" nodeInfo="ng">
+                          <node role="root" roleId="hba4.4481811096720536927" type="hba4.ChildStep" typeId="hba4.4481811096720537459" id="2497083023867939905" nodeInfo="ng">
+                            <link role="childLink" roleId="hba4.4481811096720607067" targetNodeId="tpck.5169995583184591170" />
+                            <node role="value" roleId="hba4.6308171743671982944" type="hba4.ConceptRef" typeId="hba4.4481811096720976618" id="2497083023867939925" nodeInfo="ng">
+                              <link role="concept" roleId="hba4.4481811096720976619" targetNodeId="mj1l.8860443239512128108" resolveInfo="IntType" />
                             </node>
                           </node>
                         </node>
@@ -5691,11 +5720,11 @@
                       <node role="lValue" roleId="tpee.1068498886295" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="2497083023867939909" nodeInfo="nn">
                         <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="2497083023867939857" resolveInfo="result" />
                       </node>
-                      <node role="rValue" roleId="tpee.1068498886297" type=".com.mbeddr.mpsutil.blutil.structure.BuilderExpression" id="2497083023867939910" nodeInfo="ng">
-                        <node role="root" type=".com.mbeddr.mpsutil.blutil.structure.ChildStep" id="2497083023867939911" nodeInfo="ng">
-                          <link role="childLink" targetNodeId="tpck.5169995583184591170" />
-                          <node role="value" type=".com.mbeddr.mpsutil.blutil.structure.ConceptRef" id="2497083023867939926" nodeInfo="ng">
-                            <link role="concept" targetNodeId="mj1l.4739982148980385695" resolveInfo="FloatType" />
+                      <node role="rValue" roleId="tpee.1068498886297" type="hba4.BuilderExpression" typeId="hba4.4481811096720536877" id="2497083023867939910" nodeInfo="ng">
+                        <node role="root" roleId="hba4.4481811096720536927" type="hba4.ChildStep" typeId="hba4.4481811096720537459" id="2497083023867939911" nodeInfo="ng">
+                          <link role="childLink" roleId="hba4.4481811096720607067" targetNodeId="tpck.5169995583184591170" />
+                          <node role="value" roleId="hba4.6308171743671982944" type="hba4.ConceptRef" typeId="hba4.4481811096720976618" id="2497083023867939926" nodeInfo="ng">
+                            <link role="concept" roleId="hba4.4481811096720976619" targetNodeId="mj1l.4739982148980385695" resolveInfo="FloatType" />
                           </node>
                         </node>
                       </node>
@@ -5711,11 +5740,11 @@
                       <node role="lValue" roleId="tpee.1068498886295" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="2497083023867939921" nodeInfo="nn">
                         <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="2497083023867939857" resolveInfo="result" />
                       </node>
-                      <node role="rValue" roleId="tpee.1068498886297" type=".com.mbeddr.mpsutil.blutil.structure.BuilderExpression" id="2497083023867939922" nodeInfo="ng">
-                        <node role="root" type=".com.mbeddr.mpsutil.blutil.structure.ChildStep" id="2497083023867939923" nodeInfo="ng">
-                          <link role="childLink" targetNodeId="tpck.5169995583184591170" />
-                          <node role="value" type=".com.mbeddr.mpsutil.blutil.structure.ConceptRef" id="2497083023867939927" nodeInfo="ng">
-                            <link role="concept" targetNodeId="mj1l.8864856114140038681" resolveInfo="DoubleType" />
+                      <node role="rValue" roleId="tpee.1068498886297" type="hba4.BuilderExpression" typeId="hba4.4481811096720536877" id="2497083023867939922" nodeInfo="ng">
+                        <node role="root" roleId="hba4.4481811096720536927" type="hba4.ChildStep" typeId="hba4.4481811096720537459" id="2497083023867939923" nodeInfo="ng">
+                          <link role="childLink" roleId="hba4.4481811096720607067" targetNodeId="tpck.5169995583184591170" />
+                          <node role="value" roleId="hba4.6308171743671982944" type="hba4.ConceptRef" typeId="hba4.4481811096720976618" id="2497083023867939927" nodeInfo="ng">
+                            <link role="concept" roleId="hba4.4481811096720976619" targetNodeId="mj1l.8864856114140038681" resolveInfo="DoubleType" />
                           </node>
                         </node>
                       </node>
@@ -5924,9 +5953,9 @@
             <node role="statements" roleId="tpee.1082485599096" type="tpee.StatementList" typeId="tpee.1068580123136" id="7120841548877540770" nodeInfo="sn">
               <node role="statement" roleId="tpee.1068581517665" type="tpee.Statement" typeId="tpee.1068580123157" id="1544185720216499125" nodeInfo="nn" />
               <node role="statement" roleId="tpee.1068581517665" type="tpee.IfStatement" typeId="tpee.1068580123159" id="7120841548877540771" nodeInfo="nn">
-                <node role="smodelAttribute" roleId="tpck.5169995583184591170" type=".com.mbeddr.mpsutil.bldoc.structure.KnownBug" id="1544185720216499126" nodeInfo="ng">
-                  <property name="bugNumber" value="320" />
-                  <property name="text" value="Maybe check old version" />
+                <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="7aka.KnownBug" typeId="7aka.14270488321463783" id="1544185720216499126" nodeInfo="ng">
+                  <property name="bugNumber" nameId="7aka.14270488321463788" value="320" />
+                  <property name="text" nameId="7aka.14270488321463784" value="Maybe check old version" />
                 </node>
                 <node role="condition" roleId="tpee.1068580123160" type="tpee.DotExpression" typeId="tpee.1197027756228" id="7120841548877540797" nodeInfo="nn">
                   <node role="operand" roleId="tpee.1197027771414" type="tpee.ClassifierClassExpression" typeId="tpee.1116615150612" id="1544185720216499122" nodeInfo="nn">
@@ -6007,15 +6036,15 @@
                 <node role="lValue" roleId="tpee.1068498886295" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="7896055371488450291" nodeInfo="nn">
                   <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="2497083023867939857" resolveInfo="result" />
                 </node>
-                <node role="rValue" roleId="tpee.1068498886297" type=".com.mbeddr.mpsutil.blutil.structure.BuilderExpression" id="7896055371488450297" nodeInfo="ng">
-                  <node role="root" type=".com.mbeddr.mpsutil.blutil.structure.ChildStep" id="7896055371488450298" nodeInfo="ng">
-                    <link role="childLink" targetNodeId="tpck.5169995583184591170" />
-                    <node role="value" type=".com.mbeddr.mpsutil.blutil.structure.ConceptRef" id="1452920870315407165" nodeInfo="ng">
-                      <link role="concept" targetNodeId="k146.777213082402126069" resolveInfo="ErrorTypeNotFound" />
+                <node role="rValue" roleId="tpee.1068498886297" type="hba4.BuilderExpression" typeId="hba4.4481811096720536877" id="7896055371488450297" nodeInfo="ng">
+                  <node role="root" roleId="hba4.4481811096720536927" type="hba4.ChildStep" typeId="hba4.4481811096720537459" id="7896055371488450298" nodeInfo="ng">
+                    <link role="childLink" roleId="hba4.4481811096720607067" targetNodeId="tpck.5169995583184591170" />
+                    <node role="value" roleId="hba4.6308171743671982944" type="hba4.ConceptRef" typeId="hba4.4481811096720976618" id="1452920870315407165" nodeInfo="ng">
+                      <link role="concept" roleId="hba4.4481811096720976619" targetNodeId="k146.777213082402126069" resolveInfo="ErrorTypeNotFound" />
                     </node>
-                    <node role="children" type=".com.mbeddr.mpsutil.blutil.structure.SimplePropertyStep" id="777213082402149979" nodeInfo="ng">
-                      <link role="property" targetNodeId="k146.777213082402129269" resolveInfo="rawType" />
-                      <node role="value" type="tpee.DotExpression" typeId="tpee.1197027756228" id="777213082402149981" nodeInfo="nn">
+                    <node role="children" roleId="hba4.4481811096720537463" type="hba4.SimplePropertyStep" typeId="hba4.4481811096720581223" id="777213082402149979" nodeInfo="ng">
+                      <link role="property" roleId="hba4.4481811096720581232" targetNodeId="k146.777213082402129269" resolveInfo="rawType" />
+                      <node role="value" roleId="hba4.4481811096720588312" type="tpee.DotExpression" typeId="tpee.1197027756228" id="777213082402149981" nodeInfo="nn">
                         <node role="operand" roleId="tpee.1197027771414" type="tpee.VariableReference" typeId="tpee.1068498886296" id="5058375741168351484" nodeInfo="nn">
                           <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="2497083023867902245" resolveInfo="iastNode" />
                         </node>
@@ -6099,22 +6128,22 @@
                   <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="4034566330402096456" nodeInfo="nn">
                     <node role="expression" roleId="tpee.1068580123156" type="tpee.AssignmentExpression" typeId="tpee.1068498886294" id="4034566330402096457" nodeInfo="nn">
                       <node role="rValue" roleId="tpee.1068498886297" type="tpee.TernaryOperatorExpression" typeId="tpee.1163668896201" id="4034566330402096458" nodeInfo="nn">
-                        <node role="ifTrue" roleId="tpee.1163668922816" type=".com.mbeddr.mpsutil.blutil.structure.BuilderExpression" id="4034566330402096459" nodeInfo="ng">
-                          <node role="root" type=".com.mbeddr.mpsutil.blutil.structure.ChildStep" id="4034566330402096460" nodeInfo="ng">
-                            <link role="childLink" targetNodeId="tpck.5169995583184591170" />
-                            <node role="value" type=".com.mbeddr.mpsutil.blutil.structure.ConceptRef" id="4034566330402096461" nodeInfo="ng">
-                              <link role="concept" targetNodeId="mj1l.595416243537320771" resolveInfo="UnsignedShortType" />
+                        <node role="ifTrue" roleId="tpee.1163668922816" type="hba4.BuilderExpression" typeId="hba4.4481811096720536877" id="4034566330402096459" nodeInfo="ng">
+                          <node role="root" roleId="hba4.4481811096720536927" type="hba4.ChildStep" typeId="hba4.4481811096720537459" id="4034566330402096460" nodeInfo="ng">
+                            <link role="childLink" roleId="hba4.4481811096720607067" targetNodeId="tpck.5169995583184591170" />
+                            <node role="value" roleId="hba4.6308171743671982944" type="hba4.ConceptRef" typeId="hba4.4481811096720976618" id="4034566330402096461" nodeInfo="ng">
+                              <link role="concept" roleId="hba4.4481811096720976619" targetNodeId="mj1l.595416243537320771" resolveInfo="UnsignedShortType" />
                             </node>
                           </node>
                         </node>
                         <node role="condition" roleId="tpee.1163668914799" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="4034566330402096462" nodeInfo="nn">
                           <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="4034566330402096445" resolveInfo="isUnsigned" />
                         </node>
-                        <node role="ifFalse" roleId="tpee.1163668934364" type=".com.mbeddr.mpsutil.blutil.structure.BuilderExpression" id="4034566330402096463" nodeInfo="ng">
-                          <node role="root" type=".com.mbeddr.mpsutil.blutil.structure.ChildStep" id="4034566330402096464" nodeInfo="ng">
-                            <link role="childLink" targetNodeId="tpck.5169995583184591170" />
-                            <node role="value" type=".com.mbeddr.mpsutil.blutil.structure.ConceptRef" id="4034566330402096465" nodeInfo="ng">
-                              <link role="concept" targetNodeId="mj1l.3335993110369949928" resolveInfo="ShortType" />
+                        <node role="ifFalse" roleId="tpee.1163668934364" type="hba4.BuilderExpression" typeId="hba4.4481811096720536877" id="4034566330402096463" nodeInfo="ng">
+                          <node role="root" roleId="hba4.4481811096720536927" type="hba4.ChildStep" typeId="hba4.4481811096720537459" id="4034566330402096464" nodeInfo="ng">
+                            <link role="childLink" roleId="hba4.4481811096720607067" targetNodeId="tpck.5169995583184591170" />
+                            <node role="value" roleId="hba4.6308171743671982944" type="hba4.ConceptRef" typeId="hba4.4481811096720976618" id="4034566330402096465" nodeInfo="ng">
+                              <link role="concept" roleId="hba4.4481811096720976619" targetNodeId="mj1l.3335993110369949928" resolveInfo="ShortType" />
                             </node>
                           </node>
                         </node>
@@ -6139,22 +6168,22 @@
                   <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="4034566330402096472" nodeInfo="nn">
                     <node role="expression" roleId="tpee.1068580123156" type="tpee.AssignmentExpression" typeId="tpee.1068498886294" id="4034566330402096473" nodeInfo="nn">
                       <node role="rValue" roleId="tpee.1068498886297" type="tpee.TernaryOperatorExpression" typeId="tpee.1163668896201" id="4034566330402096474" nodeInfo="nn">
-                        <node role="ifTrue" roleId="tpee.1163668922816" type=".com.mbeddr.mpsutil.blutil.structure.BuilderExpression" id="4034566330402096475" nodeInfo="ng">
-                          <node role="root" type=".com.mbeddr.mpsutil.blutil.structure.ChildStep" id="4034566330402096476" nodeInfo="ng">
-                            <link role="childLink" targetNodeId="tpck.5169995583184591170" />
-                            <node role="value" type=".com.mbeddr.mpsutil.blutil.structure.ConceptRef" id="4034566330402096477" nodeInfo="ng">
-                              <link role="concept" targetNodeId="mj1l.8463282783691596310" resolveInfo="UnsignedLongType" />
+                        <node role="ifTrue" roleId="tpee.1163668922816" type="hba4.BuilderExpression" typeId="hba4.4481811096720536877" id="4034566330402096475" nodeInfo="ng">
+                          <node role="root" roleId="hba4.4481811096720536927" type="hba4.ChildStep" typeId="hba4.4481811096720537459" id="4034566330402096476" nodeInfo="ng">
+                            <link role="childLink" roleId="hba4.4481811096720607067" targetNodeId="tpck.5169995583184591170" />
+                            <node role="value" roleId="hba4.6308171743671982944" type="hba4.ConceptRef" typeId="hba4.4481811096720976618" id="4034566330402096477" nodeInfo="ng">
+                              <link role="concept" roleId="hba4.4481811096720976619" targetNodeId="mj1l.8463282783691596310" resolveInfo="UnsignedLongType" />
                             </node>
                           </node>
                         </node>
                         <node role="condition" roleId="tpee.1163668914799" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="4034566330402096478" nodeInfo="nn">
                           <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="4034566330402096445" resolveInfo="isUnsigned" />
                         </node>
-                        <node role="ifFalse" roleId="tpee.1163668934364" type=".com.mbeddr.mpsutil.blutil.structure.BuilderExpression" id="4034566330402096479" nodeInfo="ng">
-                          <node role="root" type=".com.mbeddr.mpsutil.blutil.structure.ChildStep" id="4034566330402096480" nodeInfo="ng">
-                            <link role="childLink" targetNodeId="tpck.5169995583184591170" />
-                            <node role="value" type=".com.mbeddr.mpsutil.blutil.structure.ConceptRef" id="4034566330402096481" nodeInfo="ng">
-                              <link role="concept" targetNodeId="mj1l.86532984527104137" resolveInfo="LongType" />
+                        <node role="ifFalse" roleId="tpee.1163668934364" type="hba4.BuilderExpression" typeId="hba4.4481811096720536877" id="4034566330402096479" nodeInfo="ng">
+                          <node role="root" roleId="hba4.4481811096720536927" type="hba4.ChildStep" typeId="hba4.4481811096720537459" id="4034566330402096480" nodeInfo="ng">
+                            <link role="childLink" roleId="hba4.4481811096720607067" targetNodeId="tpck.5169995583184591170" />
+                            <node role="value" roleId="hba4.6308171743671982944" type="hba4.ConceptRef" typeId="hba4.4481811096720976618" id="4034566330402096481" nodeInfo="ng">
+                              <link role="concept" roleId="hba4.4481811096720976619" targetNodeId="mj1l.86532984527104137" resolveInfo="LongType" />
                             </node>
                           </node>
                         </node>
@@ -6179,22 +6208,22 @@
                   <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="4034566330402096488" nodeInfo="nn">
                     <node role="expression" roleId="tpee.1068580123156" type="tpee.AssignmentExpression" typeId="tpee.1068498886294" id="4034566330402096489" nodeInfo="nn">
                       <node role="rValue" roleId="tpee.1068498886297" type="tpee.TernaryOperatorExpression" typeId="tpee.1163668896201" id="4034566330402096490" nodeInfo="nn">
-                        <node role="ifTrue" roleId="tpee.1163668922816" type=".com.mbeddr.mpsutil.blutil.structure.BuilderExpression" id="4034566330402096491" nodeInfo="ng">
-                          <node role="root" type=".com.mbeddr.mpsutil.blutil.structure.ChildStep" id="4034566330402096492" nodeInfo="ng">
-                            <link role="childLink" targetNodeId="tpck.5169995583184591170" />
-                            <node role="value" type=".com.mbeddr.mpsutil.blutil.structure.ConceptRef" id="4034566330402096493" nodeInfo="ng">
-                              <link role="concept" targetNodeId="mj1l.8463282783691618471" resolveInfo="UnsignedLongLongType" />
+                        <node role="ifTrue" roleId="tpee.1163668922816" type="hba4.BuilderExpression" typeId="hba4.4481811096720536877" id="4034566330402096491" nodeInfo="ng">
+                          <node role="root" roleId="hba4.4481811096720536927" type="hba4.ChildStep" typeId="hba4.4481811096720537459" id="4034566330402096492" nodeInfo="ng">
+                            <link role="childLink" roleId="hba4.4481811096720607067" targetNodeId="tpck.5169995583184591170" />
+                            <node role="value" roleId="hba4.6308171743671982944" type="hba4.ConceptRef" typeId="hba4.4481811096720976618" id="4034566330402096493" nodeInfo="ng">
+                              <link role="concept" roleId="hba4.4481811096720976619" targetNodeId="mj1l.8463282783691618471" resolveInfo="UnsignedLongLongType" />
                             </node>
                           </node>
                         </node>
                         <node role="condition" roleId="tpee.1163668914799" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="4034566330402096494" nodeInfo="nn">
                           <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="4034566330402096445" resolveInfo="isUnsigned" />
                         </node>
-                        <node role="ifFalse" roleId="tpee.1163668934364" type=".com.mbeddr.mpsutil.blutil.structure.BuilderExpression" id="4034566330402096495" nodeInfo="ng">
-                          <node role="root" type=".com.mbeddr.mpsutil.blutil.structure.ChildStep" id="4034566330402096496" nodeInfo="ng">
-                            <link role="childLink" targetNodeId="tpck.5169995583184591170" />
-                            <node role="value" type=".com.mbeddr.mpsutil.blutil.structure.ConceptRef" id="4034566330402096497" nodeInfo="ng">
-                              <link role="concept" targetNodeId="mj1l.8463282783691596316" resolveInfo="LongLongType" />
+                        <node role="ifFalse" roleId="tpee.1163668934364" type="hba4.BuilderExpression" typeId="hba4.4481811096720536877" id="4034566330402096495" nodeInfo="ng">
+                          <node role="root" roleId="hba4.4481811096720536927" type="hba4.ChildStep" typeId="hba4.4481811096720537459" id="4034566330402096496" nodeInfo="ng">
+                            <link role="childLink" roleId="hba4.4481811096720607067" targetNodeId="tpck.5169995583184591170" />
+                            <node role="value" roleId="hba4.6308171743671982944" type="hba4.ConceptRef" typeId="hba4.4481811096720976618" id="4034566330402096497" nodeInfo="ng">
+                              <link role="concept" roleId="hba4.4481811096720976619" targetNodeId="mj1l.8463282783691596316" resolveInfo="LongLongType" />
                             </node>
                           </node>
                         </node>
@@ -6298,15 +6327,15 @@
                           </node>
                           <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="4034566330402096538" nodeInfo="nn">
                             <node role="expression" roleId="tpee.1068580123156" type="tpee.AssignmentExpression" typeId="tpee.1068498886294" id="4034566330402096539" nodeInfo="nn">
-                              <node role="rValue" roleId="tpee.1068498886297" type=".com.mbeddr.mpsutil.blutil.structure.BuilderExpression" id="4034566330402096540" nodeInfo="ng">
-                                <node role="root" type=".com.mbeddr.mpsutil.blutil.structure.ChildStep" id="4034566330402096541" nodeInfo="ng">
-                                  <link role="childLink" targetNodeId="tpck.5169995583184591170" />
-                                  <node role="value" type=".com.mbeddr.mpsutil.blutil.structure.ConceptRef" id="4034566330402096542" nodeInfo="ng">
-                                    <link role="concept" targetNodeId="clbe.6183845377104662871" resolveInfo="UnsignedBitType" />
+                              <node role="rValue" roleId="tpee.1068498886297" type="hba4.BuilderExpression" typeId="hba4.4481811096720536877" id="4034566330402096540" nodeInfo="ng">
+                                <node role="root" roleId="hba4.4481811096720536927" type="hba4.ChildStep" typeId="hba4.4481811096720537459" id="4034566330402096541" nodeInfo="ng">
+                                  <link role="childLink" roleId="hba4.4481811096720607067" targetNodeId="tpck.5169995583184591170" />
+                                  <node role="value" roleId="hba4.6308171743671982944" type="hba4.ConceptRef" typeId="hba4.4481811096720976618" id="4034566330402096542" nodeInfo="ng">
+                                    <link role="concept" roleId="hba4.4481811096720976619" targetNodeId="clbe.6183845377104662871" resolveInfo="UnsignedBitType" />
                                   </node>
-                                  <node role="children" type=".com.mbeddr.mpsutil.blutil.structure.SimplePropertyStep" id="4034566330402096543" nodeInfo="ng">
-                                    <link role="property" targetNodeId="clbe.6183845377104662872" resolveInfo="width" />
-                                    <node role="value" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="4034566330402096544" nodeInfo="nn">
+                                  <node role="children" roleId="hba4.4481811096720537463" type="hba4.SimplePropertyStep" typeId="hba4.4481811096720581223" id="4034566330402096543" nodeInfo="ng">
+                                    <link role="property" roleId="hba4.4481811096720581232" targetNodeId="clbe.6183845377104662872" resolveInfo="width" />
+                                    <node role="value" roleId="hba4.4481811096720588312" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="4034566330402096544" nodeInfo="nn">
                                       <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="4034566330402096530" resolveInfo="width" />
                                     </node>
                                   </node>
@@ -6392,11 +6421,11 @@
                   <node role="lValue" roleId="tpee.1068498886295" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="4034566330402096574" nodeInfo="nn">
                     <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="4034566330402096429" resolveInfo="result" />
                   </node>
-                  <node role="rValue" roleId="tpee.1068498886297" type=".com.mbeddr.mpsutil.blutil.structure.BuilderExpression" id="4034566330402096575" nodeInfo="ng">
-                    <node role="root" type=".com.mbeddr.mpsutil.blutil.structure.ChildStep" id="4034566330402096576" nodeInfo="ng">
-                      <link role="childLink" targetNodeId="tpck.5169995583184591170" />
-                      <node role="value" type=".com.mbeddr.mpsutil.blutil.structure.ConceptRef" id="4034566330402096577" nodeInfo="ng">
-                        <link role="concept" targetNodeId="mj1l.7892328519581699353" resolveInfo="VoidType" />
+                  <node role="rValue" roleId="tpee.1068498886297" type="hba4.BuilderExpression" typeId="hba4.4481811096720536877" id="4034566330402096575" nodeInfo="ng">
+                    <node role="root" roleId="hba4.4481811096720536927" type="hba4.ChildStep" typeId="hba4.4481811096720537459" id="4034566330402096576" nodeInfo="ng">
+                      <link role="childLink" roleId="hba4.4481811096720607067" targetNodeId="tpck.5169995583184591170" />
+                      <node role="value" roleId="hba4.6308171743671982944" type="hba4.ConceptRef" typeId="hba4.4481811096720976618" id="4034566330402096577" nodeInfo="ng">
+                        <link role="concept" roleId="hba4.4481811096720976619" targetNodeId="mj1l.7892328519581699353" resolveInfo="VoidType" />
                       </node>
                     </node>
                   </node>
@@ -6414,22 +6443,22 @@
               <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="4034566330402096582" nodeInfo="nn">
                 <node role="expression" roleId="tpee.1068580123156" type="tpee.AssignmentExpression" typeId="tpee.1068498886294" id="4034566330402096583" nodeInfo="nn">
                   <node role="rValue" roleId="tpee.1068498886297" type="tpee.TernaryOperatorExpression" typeId="tpee.1163668896201" id="4034566330402096584" nodeInfo="nn">
-                    <node role="ifTrue" roleId="tpee.1163668922816" type=".com.mbeddr.mpsutil.blutil.structure.BuilderExpression" id="4034566330402096585" nodeInfo="ng">
-                      <node role="root" type=".com.mbeddr.mpsutil.blutil.structure.ChildStep" id="4034566330402096586" nodeInfo="ng">
-                        <link role="childLink" targetNodeId="tpck.5169995583184591170" />
-                        <node role="value" type=".com.mbeddr.mpsutil.blutil.structure.ConceptRef" id="4034566330402096587" nodeInfo="ng">
-                          <link role="concept" targetNodeId="mj1l.8463282783691492716" resolveInfo="UnsignedCharType" />
+                    <node role="ifTrue" roleId="tpee.1163668922816" type="hba4.BuilderExpression" typeId="hba4.4481811096720536877" id="4034566330402096585" nodeInfo="ng">
+                      <node role="root" roleId="hba4.4481811096720536927" type="hba4.ChildStep" typeId="hba4.4481811096720537459" id="4034566330402096586" nodeInfo="ng">
+                        <link role="childLink" roleId="hba4.4481811096720607067" targetNodeId="tpck.5169995583184591170" />
+                        <node role="value" roleId="hba4.6308171743671982944" type="hba4.ConceptRef" typeId="hba4.4481811096720976618" id="4034566330402096587" nodeInfo="ng">
+                          <link role="concept" roleId="hba4.4481811096720976619" targetNodeId="mj1l.8463282783691492716" resolveInfo="UnsignedCharType" />
                         </node>
                       </node>
                     </node>
                     <node role="condition" roleId="tpee.1163668914799" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="4034566330402096588" nodeInfo="nn">
                       <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="4034566330402096445" resolveInfo="isUnsigned" />
                     </node>
-                    <node role="ifFalse" roleId="tpee.1163668934364" type=".com.mbeddr.mpsutil.blutil.structure.BuilderExpression" id="4034566330402096589" nodeInfo="ng">
-                      <node role="root" type=".com.mbeddr.mpsutil.blutil.structure.ChildStep" id="4034566330402096590" nodeInfo="ng">
-                        <link role="childLink" targetNodeId="tpck.5169995583184591170" />
-                        <node role="value" type=".com.mbeddr.mpsutil.blutil.structure.ConceptRef" id="4034566330402096591" nodeInfo="ng">
-                          <link role="concept" targetNodeId="mj1l.1664480272136207708" resolveInfo="CharType" />
+                    <node role="ifFalse" roleId="tpee.1163668934364" type="hba4.BuilderExpression" typeId="hba4.4481811096720536877" id="4034566330402096589" nodeInfo="ng">
+                      <node role="root" roleId="hba4.4481811096720536927" type="hba4.ChildStep" typeId="hba4.4481811096720537459" id="4034566330402096590" nodeInfo="ng">
+                        <link role="childLink" roleId="hba4.4481811096720607067" targetNodeId="tpck.5169995583184591170" />
+                        <node role="value" roleId="hba4.6308171743671982944" type="hba4.ConceptRef" typeId="hba4.4481811096720976618" id="4034566330402096591" nodeInfo="ng">
+                          <link role="concept" roleId="hba4.4481811096720976619" targetNodeId="mj1l.1664480272136207708" resolveInfo="CharType" />
                         </node>
                       </node>
                     </node>
@@ -6451,22 +6480,22 @@
               <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="4034566330402096597" nodeInfo="nn">
                 <node role="expression" roleId="tpee.1068580123156" type="tpee.AssignmentExpression" typeId="tpee.1068498886294" id="4034566330402096598" nodeInfo="nn">
                   <node role="rValue" roleId="tpee.1068498886297" type="tpee.TernaryOperatorExpression" typeId="tpee.1163668896201" id="4034566330402096599" nodeInfo="nn">
-                    <node role="ifTrue" roleId="tpee.1163668922816" type=".com.mbeddr.mpsutil.blutil.structure.BuilderExpression" id="4034566330402096600" nodeInfo="ng">
-                      <node role="root" type=".com.mbeddr.mpsutil.blutil.structure.ChildStep" id="4034566330402096601" nodeInfo="ng">
-                        <link role="childLink" targetNodeId="tpck.5169995583184591170" />
-                        <node role="value" type=".com.mbeddr.mpsutil.blutil.structure.ConceptRef" id="4034566330402096602" nodeInfo="ng">
-                          <link role="concept" targetNodeId="mj1l.8463282783691492730" resolveInfo="UnsignedIntType" />
+                    <node role="ifTrue" roleId="tpee.1163668922816" type="hba4.BuilderExpression" typeId="hba4.4481811096720536877" id="4034566330402096600" nodeInfo="ng">
+                      <node role="root" roleId="hba4.4481811096720536927" type="hba4.ChildStep" typeId="hba4.4481811096720537459" id="4034566330402096601" nodeInfo="ng">
+                        <link role="childLink" roleId="hba4.4481811096720607067" targetNodeId="tpck.5169995583184591170" />
+                        <node role="value" roleId="hba4.6308171743671982944" type="hba4.ConceptRef" typeId="hba4.4481811096720976618" id="4034566330402096602" nodeInfo="ng">
+                          <link role="concept" roleId="hba4.4481811096720976619" targetNodeId="mj1l.8463282783691492730" resolveInfo="UnsignedIntType" />
                         </node>
                       </node>
                     </node>
                     <node role="condition" roleId="tpee.1163668914799" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="4034566330402096603" nodeInfo="nn">
                       <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="4034566330402096445" resolveInfo="isUnsigned" />
                     </node>
-                    <node role="ifFalse" roleId="tpee.1163668934364" type=".com.mbeddr.mpsutil.blutil.structure.BuilderExpression" id="4034566330402096604" nodeInfo="ng">
-                      <node role="root" type=".com.mbeddr.mpsutil.blutil.structure.ChildStep" id="4034566330402096605" nodeInfo="ng">
-                        <link role="childLink" targetNodeId="tpck.5169995583184591170" />
-                        <node role="value" type=".com.mbeddr.mpsutil.blutil.structure.ConceptRef" id="4034566330402096606" nodeInfo="ng">
-                          <link role="concept" targetNodeId="mj1l.8860443239512128108" resolveInfo="IntType" />
+                    <node role="ifFalse" roleId="tpee.1163668934364" type="hba4.BuilderExpression" typeId="hba4.4481811096720536877" id="4034566330402096604" nodeInfo="ng">
+                      <node role="root" roleId="hba4.4481811096720536927" type="hba4.ChildStep" typeId="hba4.4481811096720537459" id="4034566330402096605" nodeInfo="ng">
+                        <link role="childLink" roleId="hba4.4481811096720607067" targetNodeId="tpck.5169995583184591170" />
+                        <node role="value" roleId="hba4.6308171743671982944" type="hba4.ConceptRef" typeId="hba4.4481811096720976618" id="4034566330402096606" nodeInfo="ng">
+                          <link role="concept" roleId="hba4.4481811096720976619" targetNodeId="mj1l.8860443239512128108" resolveInfo="IntType" />
                         </node>
                       </node>
                     </node>
@@ -6494,11 +6523,11 @@
                   <node role="lValue" roleId="tpee.1068498886295" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="4034566330402096615" nodeInfo="nn">
                     <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="4034566330402096429" resolveInfo="result" />
                   </node>
-                  <node role="rValue" roleId="tpee.1068498886297" type=".com.mbeddr.mpsutil.blutil.structure.BuilderExpression" id="4034566330402096616" nodeInfo="ng">
-                    <node role="root" type=".com.mbeddr.mpsutil.blutil.structure.ChildStep" id="4034566330402096617" nodeInfo="ng">
-                      <link role="childLink" targetNodeId="tpck.5169995583184591170" />
-                      <node role="value" type=".com.mbeddr.mpsutil.blutil.structure.ConceptRef" id="4034566330402096618" nodeInfo="ng">
-                        <link role="concept" targetNodeId="mj1l.4739982148980385695" resolveInfo="FloatType" />
+                  <node role="rValue" roleId="tpee.1068498886297" type="hba4.BuilderExpression" typeId="hba4.4481811096720536877" id="4034566330402096616" nodeInfo="ng">
+                    <node role="root" roleId="hba4.4481811096720536927" type="hba4.ChildStep" typeId="hba4.4481811096720537459" id="4034566330402096617" nodeInfo="ng">
+                      <link role="childLink" roleId="hba4.4481811096720607067" targetNodeId="tpck.5169995583184591170" />
+                      <node role="value" roleId="hba4.6308171743671982944" type="hba4.ConceptRef" typeId="hba4.4481811096720976618" id="4034566330402096618" nodeInfo="ng">
+                        <link role="concept" roleId="hba4.4481811096720976619" targetNodeId="mj1l.4739982148980385695" resolveInfo="FloatType" />
                       </node>
                     </node>
                   </node>
@@ -6514,11 +6543,11 @@
                   <node role="lValue" roleId="tpee.1068498886295" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="4034566330402096624" nodeInfo="nn">
                     <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="4034566330402096429" resolveInfo="result" />
                   </node>
-                  <node role="rValue" roleId="tpee.1068498886297" type=".com.mbeddr.mpsutil.blutil.structure.BuilderExpression" id="4034566330402096625" nodeInfo="ng">
-                    <node role="root" type=".com.mbeddr.mpsutil.blutil.structure.ChildStep" id="4034566330402096626" nodeInfo="ng">
-                      <link role="childLink" targetNodeId="tpck.5169995583184591170" />
-                      <node role="value" type=".com.mbeddr.mpsutil.blutil.structure.ConceptRef" id="4034566330402096627" nodeInfo="ng">
-                        <link role="concept" targetNodeId="mj1l.8864856114140038681" resolveInfo="DoubleType" />
+                  <node role="rValue" roleId="tpee.1068498886297" type="hba4.BuilderExpression" typeId="hba4.4481811096720536877" id="4034566330402096625" nodeInfo="ng">
+                    <node role="root" roleId="hba4.4481811096720536927" type="hba4.ChildStep" typeId="hba4.4481811096720537459" id="4034566330402096626" nodeInfo="ng">
+                      <link role="childLink" roleId="hba4.4481811096720607067" targetNodeId="tpck.5169995583184591170" />
+                      <node role="value" roleId="hba4.6308171743671982944" type="hba4.ConceptRef" typeId="hba4.4481811096720976618" id="4034566330402096627" nodeInfo="ng">
+                        <link role="concept" roleId="hba4.4481811096720976619" targetNodeId="mj1l.8864856114140038681" resolveInfo="DoubleType" />
                       </node>
                     </node>
                   </node>
@@ -6592,15 +6621,15 @@
                 <node role="lValue" roleId="tpee.1068498886295" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="4034566330402096742" nodeInfo="nn">
                   <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="4034566330402096429" resolveInfo="result" />
                 </node>
-                <node role="rValue" roleId="tpee.1068498886297" type=".com.mbeddr.mpsutil.blutil.structure.BuilderExpression" id="4034566330402096743" nodeInfo="ng">
-                  <node role="root" type=".com.mbeddr.mpsutil.blutil.structure.ChildStep" id="4034566330402096744" nodeInfo="ng">
-                    <link role="childLink" targetNodeId="tpck.5169995583184591170" />
-                    <node role="value" type=".com.mbeddr.mpsutil.blutil.structure.ConceptRef" id="4034566330402096745" nodeInfo="ng">
-                      <link role="concept" targetNodeId="k146.777213082402126069" resolveInfo="ErrorTypeNotFound" />
+                <node role="rValue" roleId="tpee.1068498886297" type="hba4.BuilderExpression" typeId="hba4.4481811096720536877" id="4034566330402096743" nodeInfo="ng">
+                  <node role="root" roleId="hba4.4481811096720536927" type="hba4.ChildStep" typeId="hba4.4481811096720537459" id="4034566330402096744" nodeInfo="ng">
+                    <link role="childLink" roleId="hba4.4481811096720607067" targetNodeId="tpck.5169995583184591170" />
+                    <node role="value" roleId="hba4.6308171743671982944" type="hba4.ConceptRef" typeId="hba4.4481811096720976618" id="4034566330402096745" nodeInfo="ng">
+                      <link role="concept" roleId="hba4.4481811096720976619" targetNodeId="k146.777213082402126069" resolveInfo="ErrorTypeNotFound" />
                     </node>
-                    <node role="children" type=".com.mbeddr.mpsutil.blutil.structure.SimplePropertyStep" id="4034566330402096746" nodeInfo="ng">
-                      <link role="property" targetNodeId="k146.777213082402129269" resolveInfo="rawType" />
-                      <node role="value" type="tpee.DotExpression" typeId="tpee.1197027756228" id="4034566330402096747" nodeInfo="nn">
+                    <node role="children" roleId="hba4.4481811096720537463" type="hba4.SimplePropertyStep" typeId="hba4.4481811096720581223" id="4034566330402096746" nodeInfo="ng">
+                      <link role="property" roleId="hba4.4481811096720581232" targetNodeId="k146.777213082402129269" resolveInfo="rawType" />
+                      <node role="value" roleId="hba4.4481811096720588312" type="tpee.DotExpression" typeId="tpee.1197027756228" id="4034566330402096747" nodeInfo="nn">
                         <node role="operand" roleId="tpee.1197027771414" type="tpee.VariableReference" typeId="tpee.1068498886296" id="5058375741168382190" nodeInfo="nn">
                           <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="4034566330402096421" resolveInfo="declSpecifier" />
                         </node>
@@ -6786,15 +6815,15 @@
                 <node role="lValue" roleId="tpee.1068498886295" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="4034566330402095720" nodeInfo="nn">
                   <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="4034566330402095407" resolveInfo="result" />
                 </node>
-                <node role="rValue" roleId="tpee.1068498886297" type=".com.mbeddr.mpsutil.blutil.structure.BuilderExpression" id="4034566330402095721" nodeInfo="ng">
-                  <node role="root" type=".com.mbeddr.mpsutil.blutil.structure.ChildStep" id="4034566330402095722" nodeInfo="ng">
-                    <link role="childLink" targetNodeId="tpck.5169995583184591170" />
-                    <node role="value" type=".com.mbeddr.mpsutil.blutil.structure.ConceptRef" id="4034566330402095723" nodeInfo="ng">
-                      <link role="concept" targetNodeId="k146.777213082402126069" resolveInfo="ErrorTypeNotFound" />
+                <node role="rValue" roleId="tpee.1068498886297" type="hba4.BuilderExpression" typeId="hba4.4481811096720536877" id="4034566330402095721" nodeInfo="ng">
+                  <node role="root" roleId="hba4.4481811096720536927" type="hba4.ChildStep" typeId="hba4.4481811096720537459" id="4034566330402095722" nodeInfo="ng">
+                    <link role="childLink" roleId="hba4.4481811096720607067" targetNodeId="tpck.5169995583184591170" />
+                    <node role="value" roleId="hba4.6308171743671982944" type="hba4.ConceptRef" typeId="hba4.4481811096720976618" id="4034566330402095723" nodeInfo="ng">
+                      <link role="concept" roleId="hba4.4481811096720976619" targetNodeId="k146.777213082402126069" resolveInfo="ErrorTypeNotFound" />
                     </node>
-                    <node role="children" type=".com.mbeddr.mpsutil.blutil.structure.SimplePropertyStep" id="4034566330402095724" nodeInfo="ng">
-                      <link role="property" targetNodeId="k146.777213082402129269" resolveInfo="rawType" />
-                      <node role="value" type="tpee.DotExpression" typeId="tpee.1197027756228" id="4034566330402095725" nodeInfo="nn">
+                    <node role="children" roleId="hba4.4481811096720537463" type="hba4.SimplePropertyStep" typeId="hba4.4481811096720581223" id="4034566330402095724" nodeInfo="ng">
+                      <link role="property" roleId="hba4.4481811096720581232" targetNodeId="k146.777213082402129269" resolveInfo="rawType" />
+                      <node role="value" roleId="hba4.4481811096720588312" type="tpee.DotExpression" typeId="tpee.1197027756228" id="4034566330402095725" nodeInfo="nn">
                         <node role="operand" roleId="tpee.1197027771414" type="tpee.VariableReference" typeId="tpee.1068498886296" id="5058375741168352462" nodeInfo="nn">
                           <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="4034566330402095399" resolveInfo="typedefNameSpecifier" />
                         </node>
@@ -6935,15 +6964,15 @@
                 <node role="lValue" roleId="tpee.1068498886295" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="4034566330402095947" nodeInfo="nn">
                   <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="4034566330402095836" resolveInfo="result" />
                 </node>
-                <node role="rValue" roleId="tpee.1068498886297" type=".com.mbeddr.mpsutil.blutil.structure.BuilderExpression" id="4034566330402095948" nodeInfo="ng">
-                  <node role="root" type=".com.mbeddr.mpsutil.blutil.structure.ChildStep" id="4034566330402095949" nodeInfo="ng">
-                    <link role="childLink" targetNodeId="tpck.5169995583184591170" />
-                    <node role="value" type=".com.mbeddr.mpsutil.blutil.structure.ConceptRef" id="4034566330402095950" nodeInfo="ng">
-                      <link role="concept" targetNodeId="k146.777213082402126069" resolveInfo="ErrorTypeNotFound" />
+                <node role="rValue" roleId="tpee.1068498886297" type="hba4.BuilderExpression" typeId="hba4.4481811096720536877" id="4034566330402095948" nodeInfo="ng">
+                  <node role="root" roleId="hba4.4481811096720536927" type="hba4.ChildStep" typeId="hba4.4481811096720537459" id="4034566330402095949" nodeInfo="ng">
+                    <link role="childLink" roleId="hba4.4481811096720607067" targetNodeId="tpck.5169995583184591170" />
+                    <node role="value" roleId="hba4.6308171743671982944" type="hba4.ConceptRef" typeId="hba4.4481811096720976618" id="4034566330402095950" nodeInfo="ng">
+                      <link role="concept" roleId="hba4.4481811096720976619" targetNodeId="k146.777213082402126069" resolveInfo="ErrorTypeNotFound" />
                     </node>
-                    <node role="children" type=".com.mbeddr.mpsutil.blutil.structure.SimplePropertyStep" id="4034566330402095951" nodeInfo="ng">
-                      <link role="property" targetNodeId="k146.777213082402129269" resolveInfo="rawType" />
-                      <node role="value" type="tpee.DotExpression" typeId="tpee.1197027756228" id="4034566330402095952" nodeInfo="nn">
+                    <node role="children" roleId="hba4.4481811096720537463" type="hba4.SimplePropertyStep" typeId="hba4.4481811096720581223" id="4034566330402095951" nodeInfo="ng">
+                      <link role="property" roleId="hba4.4481811096720581232" targetNodeId="k146.777213082402129269" resolveInfo="rawType" />
+                      <node role="value" roleId="hba4.4481811096720588312" type="tpee.DotExpression" typeId="tpee.1197027756228" id="4034566330402095952" nodeInfo="nn">
                         <node role="operand" roleId="tpee.1197027771414" type="tpee.VariableReference" typeId="tpee.1068498886296" id="5058375741168493109" nodeInfo="nn">
                           <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="4034566330402095828" resolveInfo="elaboratedTypeSpecifier" />
                         </node>
@@ -7091,15 +7120,15 @@
       <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="6480474362682794307" nodeInfo="nn" />
       <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="6480474362682794308" nodeInfo="sn">
         <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="6480474362682794538" nodeInfo="nn">
-          <node role="expression" roleId="tpee.1068580123156" type=".com.mbeddr.mpsutil.blutil.structure.BuilderExpression" id="7265792597308389436" nodeInfo="ng">
-            <node role="root" type=".com.mbeddr.mpsutil.blutil.structure.ChildStep" id="7265792597308389437" nodeInfo="ng">
-              <link role="childLink" targetNodeId="tpck.5169995583184591170" />
-              <node role="value" type=".com.mbeddr.mpsutil.blutil.structure.ConceptRef" id="7265792597308389439" nodeInfo="ng">
-                <link role="concept" targetNodeId="mj1l.7265792597306864412" resolveInfo="NotParsedExpression" />
+          <node role="expression" roleId="tpee.1068580123156" type="hba4.BuilderExpression" typeId="hba4.4481811096720536877" id="7265792597308389436" nodeInfo="ng">
+            <node role="root" roleId="hba4.4481811096720536927" type="hba4.ChildStep" typeId="hba4.4481811096720537459" id="7265792597308389437" nodeInfo="ng">
+              <link role="childLink" roleId="hba4.4481811096720607067" targetNodeId="tpck.5169995583184591170" />
+              <node role="value" roleId="hba4.6308171743671982944" type="hba4.ConceptRef" typeId="hba4.4481811096720976618" id="7265792597308389439" nodeInfo="ng">
+                <link role="concept" roleId="hba4.4481811096720976619" targetNodeId="mj1l.7265792597306864412" resolveInfo="NotParsedExpression" />
               </node>
-              <node role="children" type=".com.mbeddr.mpsutil.blutil.structure.SimplePropertyStep" id="7265792597308389443" nodeInfo="ng">
-                <link role="property" targetNodeId="mj1l.2604304000476764369" resolveInfo="raw_signature" />
-                <node role="value" type="tpee.VariableReference" typeId="tpee.1068498886296" id="5058375741168478513" nodeInfo="nn">
+              <node role="children" roleId="hba4.4481811096720537463" type="hba4.SimplePropertyStep" typeId="hba4.4481811096720581223" id="7265792597308389443" nodeInfo="ng">
+                <link role="property" roleId="hba4.4481811096720581232" targetNodeId="mj1l.2604304000476764369" resolveInfo="raw_signature" />
+                <node role="value" roleId="hba4.4481811096720588312" type="tpee.VariableReference" typeId="tpee.1068498886296" id="5058375741168478513" nodeInfo="nn">
                   <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="6480474362682794323" resolveInfo="name" />
                 </node>
               </node>
@@ -7562,23 +7591,23 @@
                   </node>
                 </node>
                 <node role="operation" roleId="tpee.1197027833540" type="tp2q.AddElementOperation" typeId="tp2q.1160612413312" id="1984157627501937938" nodeInfo="nn">
-                  <node role="argument" roleId="tp2q.1160612519549" type=".com.mbeddr.mpsutil.blutil.structure.BuilderExpression" id="4741426500143429804" nodeInfo="ng">
-                    <node role="root" type=".com.mbeddr.mpsutil.blutil.structure.ChildStep" id="4741426500143429805" nodeInfo="ng">
-                      <link role="childLink" targetNodeId="tpck.5169995583184591170" />
-                      <node role="children" type=".com.mbeddr.mpsutil.blutil.structure.SimplePropertyStep" id="5607679019054222111" nodeInfo="ng">
-                        <link role="property" targetNodeId="x27k.2877808180148899333" resolveInfo="comment" />
-                        <node role="value" type="tpee.VariableReference" typeId="tpee.1068498886296" id="5058375741168476199" nodeInfo="nn">
+                  <node role="argument" roleId="tp2q.1160612519549" type="hba4.BuilderExpression" typeId="hba4.4481811096720536877" id="4741426500143429804" nodeInfo="ng">
+                    <node role="root" roleId="hba4.4481811096720536927" type="hba4.ChildStep" typeId="hba4.4481811096720537459" id="4741426500143429805" nodeInfo="ng">
+                      <link role="childLink" roleId="hba4.4481811096720607067" targetNodeId="tpck.5169995583184591170" />
+                      <node role="children" roleId="hba4.4481811096720537463" type="hba4.SimplePropertyStep" typeId="hba4.4481811096720581223" id="5607679019054222111" nodeInfo="ng">
+                        <link role="property" roleId="hba4.4481811096720581232" targetNodeId="x27k.2877808180148899333" resolveInfo="comment" />
+                        <node role="value" roleId="hba4.4481811096720588312" type="tpee.VariableReference" typeId="tpee.1068498886296" id="5058375741168476199" nodeInfo="nn">
                           <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="1984157627501937913" resolveInfo="comment" />
                         </node>
                       </node>
-                      <node role="children" type=".com.mbeddr.mpsutil.blutil.structure.SimplePropertyStep" id="5607679019054222116" nodeInfo="ng">
-                        <link role="property" targetNodeId="tpck.1169194664001" resolveInfo="name" />
-                        <node role="value" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="5607679019054222118" nodeInfo="nn">
+                      <node role="children" roleId="hba4.4481811096720537463" type="hba4.SimplePropertyStep" typeId="hba4.4481811096720581223" id="5607679019054222116" nodeInfo="ng">
+                        <link role="property" roleId="hba4.4481811096720581232" targetNodeId="tpck.1169194664001" resolveInfo="name" />
+                        <node role="value" roleId="hba4.4481811096720588312" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="5607679019054222118" nodeInfo="nn">
                           <property name="value" nameId="tpee.1070475926801" value="&lt;no name&gt;" />
                         </node>
                       </node>
-                      <node role="value" type=".com.mbeddr.mpsutil.blutil.structure.ConceptRef" id="5607679019054222108" nodeInfo="ng">
-                        <link role="concept" targetNodeId="x27k.2877808180148899328" resolveInfo="CommentModuleContent" />
+                      <node role="value" roleId="hba4.6308171743671982944" type="hba4.ConceptRef" typeId="hba4.4481811096720976618" id="5607679019054222108" nodeInfo="ng">
+                        <link role="concept" roleId="hba4.4481811096720976619" targetNodeId="x27k.2877808180148899328" resolveInfo="CommentModuleContent" />
                       </node>
                     </node>
                   </node>
@@ -7892,49 +7921,49 @@
             <node role="type" roleId="tpee.5680397130376446158" type="tp25.SNodeType" typeId="tp25.1138055754698" id="618300813489805328" nodeInfo="in">
               <link role="concept" roleId="tp25.1138405853777" targetNodeId="x27k.6021475212425916971" resolveInfo="GlobalConstantFunctionDeclaration" />
             </node>
-            <node role="initializer" roleId="tpee.1068431790190" type=".com.mbeddr.mpsutil.blutil.structure.BuilderExpression" id="618300813489805333" nodeInfo="ng">
-              <node role="root" type=".com.mbeddr.mpsutil.blutil.structure.ChildStep" id="618300813489805334" nodeInfo="ng">
-                <link role="childLink" targetNodeId="tpck.5169995583184591170" />
-                <node role="value" type=".com.mbeddr.mpsutil.blutil.structure.ConceptRef" id="618300813489805336" nodeInfo="ng">
-                  <link role="concept" targetNodeId="x27k.6021475212425916971" resolveInfo="GlobalConstantFunctionDeclaration" />
+            <node role="initializer" roleId="tpee.1068431790190" type="hba4.BuilderExpression" typeId="hba4.4481811096720536877" id="618300813489805333" nodeInfo="ng">
+              <node role="root" roleId="hba4.4481811096720536927" type="hba4.ChildStep" typeId="hba4.4481811096720537459" id="618300813489805334" nodeInfo="ng">
+                <link role="childLink" roleId="hba4.4481811096720607067" targetNodeId="tpck.5169995583184591170" />
+                <node role="value" roleId="hba4.6308171743671982944" type="hba4.ConceptRef" typeId="hba4.4481811096720976618" id="618300813489805336" nodeInfo="ng">
+                  <link role="concept" roleId="hba4.4481811096720976619" targetNodeId="x27k.6021475212425916971" resolveInfo="GlobalConstantFunctionDeclaration" />
                 </node>
-                <node role="children" type=".com.mbeddr.mpsutil.blutil.structure.SimplePropertyStep" id="618300813489805340" nodeInfo="ng">
-                  <link role="property" targetNodeId="tpck.1169194664001" resolveInfo="name" />
-                  <node role="value" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="618300813489805342" nodeInfo="nn">
+                <node role="children" roleId="hba4.4481811096720537463" type="hba4.SimplePropertyStep" typeId="hba4.4481811096720581223" id="618300813489805340" nodeInfo="ng">
+                  <link role="property" roleId="hba4.4481811096720581232" targetNodeId="tpck.1169194664001" resolveInfo="name" />
+                  <node role="value" roleId="hba4.4481811096720588312" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="618300813489805342" nodeInfo="nn">
                     <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="618300813489805289" resolveInfo="name" />
                   </node>
                 </node>
-                <node role="children" type=".com.mbeddr.mpsutil.blutil.structure.ChildStep" id="7308356872494617814" nodeInfo="ng">
-                  <link role="childLink" targetNodeId="x27k.8655966904682451042" />
-                  <node role="value" type=".com.mbeddr.mpsutil.blutil.structure.ConceptRef" id="7308356872494617818" nodeInfo="ng">
-                    <link role="concept" targetNodeId="c4fa.3830958861296871078" resolveInfo="ArbitraryTextExpression" />
+                <node role="children" roleId="hba4.4481811096720537463" type="hba4.ChildStep" typeId="hba4.4481811096720537459" id="7308356872494617814" nodeInfo="ng">
+                  <link role="childLink" roleId="hba4.4481811096720607067" targetNodeId="x27k.8655966904682451042" />
+                  <node role="value" roleId="hba4.6308171743671982944" type="hba4.ConceptRef" typeId="hba4.4481811096720976618" id="7308356872494617818" nodeInfo="ng">
+                    <link role="concept" roleId="hba4.4481811096720976619" targetNodeId="c4fa.3830958861296871078" resolveInfo="ArbitraryTextExpression" />
                   </node>
-                  <node role="children" type=".com.mbeddr.mpsutil.blutil.structure.ChildStep" id="7308356872494617844" nodeInfo="ng">
-                    <link role="childLink" targetNodeId="c4fa.6275956088646286745" />
-                    <node role="value" type=".com.mbeddr.mpsutil.blutil.structure.ConceptRef" id="7308356872494617846" nodeInfo="ng">
-                      <link role="concept" targetNodeId="mj1l.7892328519581699353" resolveInfo="VoidType" />
+                  <node role="children" roleId="hba4.4481811096720537463" type="hba4.ChildStep" typeId="hba4.4481811096720537459" id="7308356872494617844" nodeInfo="ng">
+                    <link role="childLink" roleId="hba4.4481811096720607067" targetNodeId="c4fa.6275956088646286745" />
+                    <node role="value" roleId="hba4.6308171743671982944" type="hba4.ConceptRef" typeId="hba4.4481811096720976618" id="7308356872494617846" nodeInfo="ng">
+                      <link role="concept" roleId="hba4.4481811096720976619" targetNodeId="mj1l.7892328519581699353" resolveInfo="VoidType" />
                     </node>
                   </node>
-                  <node role="children" type=".com.mbeddr.mpsutil.blutil.structure.ChildStep" id="7308356872494617822" nodeInfo="ng">
-                    <link role="childLink" targetNodeId="c4fa.3830958861296879115" />
-                    <node role="value" type=".com.mbeddr.mpsutil.blutil.structure.ConceptRef" id="7308356872494617824" nodeInfo="ng">
-                      <link role="concept" targetNodeId="c4fa.3830958861296879113" resolveInfo="AbritraryTextItem" />
+                  <node role="children" roleId="hba4.4481811096720537463" type="hba4.ChildStep" typeId="hba4.4481811096720537459" id="7308356872494617822" nodeInfo="ng">
+                    <link role="childLink" roleId="hba4.4481811096720607067" targetNodeId="c4fa.3830958861296879115" />
+                    <node role="value" roleId="hba4.6308171743671982944" type="hba4.ConceptRef" typeId="hba4.4481811096720976618" id="7308356872494617824" nodeInfo="ng">
+                      <link role="concept" roleId="hba4.4481811096720976619" targetNodeId="c4fa.3830958861296879113" resolveInfo="AbritraryTextItem" />
                     </node>
-                    <node role="children" type=".com.mbeddr.mpsutil.blutil.structure.SimplePropertyStep" id="7308356872494617828" nodeInfo="ng">
-                      <link role="property" targetNodeId="c4fa.3830958861296879114" resolveInfo="text" />
-                      <node role="value" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="7308356872494617830" nodeInfo="nn">
+                    <node role="children" roleId="hba4.4481811096720537463" type="hba4.SimplePropertyStep" typeId="hba4.4481811096720581223" id="7308356872494617828" nodeInfo="ng">
+                      <link role="property" roleId="hba4.4481811096720581232" targetNodeId="c4fa.3830958861296879114" resolveInfo="text" />
+                      <node role="value" roleId="hba4.4481811096720588312" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="7308356872494617830" nodeInfo="nn">
                         <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="618300813489805312" resolveInfo="expansion" />
                       </node>
                     </node>
                   </node>
-                  <node role="children" type=".com.mbeddr.mpsutil.blutil.structure.SimplePropertyStep" id="7308356872494617836" nodeInfo="ng">
-                    <link role="property" targetNodeId="c4fa.6275956088645591175" resolveInfo="requiredStdHeader" />
-                    <node role="value" type="tpee.NullLiteral" typeId="tpee.1070534058343" id="7308356872494617840" nodeInfo="nn" />
+                  <node role="children" roleId="hba4.4481811096720537463" type="hba4.SimplePropertyStep" typeId="hba4.4481811096720581223" id="7308356872494617836" nodeInfo="ng">
+                    <link role="property" roleId="hba4.4481811096720581232" targetNodeId="c4fa.6275956088645591175" resolveInfo="requiredStdHeader" />
+                    <node role="value" roleId="hba4.4481811096720588312" type="tpee.NullLiteral" typeId="tpee.1070534058343" id="7308356872494617840" nodeInfo="nn" />
                   </node>
                 </node>
-                <node role="children" type=".com.mbeddr.mpsutil.blutil.structure.SimplePropertyStep" id="555185027743888679" nodeInfo="ng">
-                  <link role="property" targetNodeId="x27k.6708182213627106114" resolveInfo="preventNameMangling" />
-                  <node role="value" type="tpee.BooleanConstant" typeId="tpee.1068580123137" id="555185027743888681" nodeInfo="nn">
+                <node role="children" roleId="hba4.4481811096720537463" type="hba4.SimplePropertyStep" typeId="hba4.4481811096720581223" id="555185027743888679" nodeInfo="ng">
+                  <link role="property" roleId="hba4.4481811096720581232" targetNodeId="x27k.6708182213627106114" resolveInfo="preventNameMangling" />
+                  <node role="value" roleId="hba4.4481811096720588312" type="tpee.BooleanConstant" typeId="tpee.1068580123137" id="555185027743888681" nodeInfo="nn">
                     <property name="value" nameId="tpee.1068580123138" value="true" />
                   </node>
                 </node>
@@ -7947,6 +7976,15 @@
             <property name="name" nameId="tpck.1169194664001" value="p" />
           </node>
           <node role="body" roleId="tpee.1154032183016" type="tpee.StatementList" typeId="tpee.1068580123136" id="618300813489805355" nodeInfo="sn">
+            <node role="statement" roleId="tpee.1068581517665" type="tpee.LocalVariableDeclarationStatement" typeId="tpee.1068581242864" id="1113882575351426984" nodeInfo="nn">
+              <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="1113882575351426987" nodeInfo="nr">
+                <property name="name" nameId="tpck.1169194664001" value="ignore" />
+                <node role="type" roleId="tpee.5680397130376446158" type="tp25.SNodeType" typeId="tp25.1138055754698" id="1113882575351426982" nodeInfo="in">
+                  <link role="concept" roleId="tp25.1138405853777" targetNodeId="mj1l.8860443239512128054" resolveInfo="Type" />
+                </node>
+                <node role="initializer" roleId="tpee.1068431790190" type="tpee.NullLiteral" typeId="tpee.1070534058343" id="1113882575351427146" nodeInfo="nn" />
+              </node>
+            </node>
             <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="618300813489805366" nodeInfo="nn">
               <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="618300813489805380" nodeInfo="nn">
                 <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="618300813489805370" nodeInfo="nn">
@@ -7958,20 +7996,28 @@
                   </node>
                 </node>
                 <node role="operation" roleId="tpee.1197027833540" type="tp2q.AddElementOperation" typeId="tp2q.1160612413312" id="618300813489805386" nodeInfo="nn">
-                  <node role="argument" roleId="tp2q.1160612519549" type=".com.mbeddr.mpsutil.blutil.structure.BuilderExpression" id="618300813489805388" nodeInfo="ng">
-                    <node role="root" type=".com.mbeddr.mpsutil.blutil.structure.ChildStep" id="618300813489805389" nodeInfo="ng">
-                      <link role="childLink" targetNodeId="tpck.5169995583184591170" />
-                      <node role="value" type=".com.mbeddr.mpsutil.blutil.structure.ConceptRef" id="618300813489805391" nodeInfo="ng">
-                        <link role="concept" targetNodeId="x27k.6021475212426054485" resolveInfo="GlobalConstantFunctionArgument" />
+                  <node role="argument" roleId="tp2q.1160612519549" type="hba4.BuilderExpression" typeId="hba4.4481811096720536877" id="618300813489805388" nodeInfo="ng">
+                    <node role="root" roleId="hba4.4481811096720536927" type="hba4.ChildStep" typeId="hba4.4481811096720537459" id="618300813489805389" nodeInfo="ng">
+                      <link role="childLink" roleId="hba4.4481811096720607067" targetNodeId="tpck.5169995583184591170" />
+                      <node role="value" roleId="hba4.6308171743671982944" type="hba4.ConceptRef" typeId="hba4.4481811096720976618" id="618300813489805391" nodeInfo="ng">
+                        <link role="concept" roleId="hba4.4481811096720976619" targetNodeId="x27k.6021475212426054485" resolveInfo="GlobalConstantFunctionArgument" />
                       </node>
-                      <node role="children" type=".com.mbeddr.mpsutil.blutil.structure.SimplePropertyStep" id="618300813489805395" nodeInfo="ng">
-                        <link role="property" targetNodeId="tpck.1169194664001" resolveInfo="name" />
-                        <node role="value" type="tpee.DotExpression" typeId="tpee.1197027756228" id="618300813489805400" nodeInfo="nn">
+                      <node role="children" roleId="hba4.4481811096720537463" type="hba4.SimplePropertyStep" typeId="hba4.4481811096720581223" id="618300813489805395" nodeInfo="ng">
+                        <link role="property" roleId="hba4.4481811096720581232" targetNodeId="tpck.1169194664001" resolveInfo="name" />
+                        <node role="value" roleId="hba4.4481811096720588312" type="tpee.DotExpression" typeId="tpee.1197027756228" id="618300813489805400" nodeInfo="nn">
                           <node role="operand" roleId="tpee.1197027771414" type="tp2q.ForEachVariableReference" typeId="tp2q.1153944233411" id="618300813489805397" nodeInfo="nn">
                             <link role="variable" roleId="tp2q.1153944258490" targetNodeId="618300813489805353" resolveInfo="p" />
                           </node>
                           <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="618300813489805406" nodeInfo="nn">
                             <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="7nqk.~IASTFunctionStyleMacroParameter%dgetParameter()%cjava%dlang%dString" resolveInfo="getParameter" />
+                          </node>
+                        </node>
+                      </node>
+                      <node role="children" roleId="hba4.4481811096720537463" type="hba4.ChildStep" typeId="hba4.4481811096720537459" id="1113882575351427589" nodeInfo="ng">
+                        <link role="childLink" roleId="hba4.4481811096720607067" targetNodeId="mj1l.318113533128716676" />
+                        <node role="value" roleId="hba4.6308171743671982944" type="hba4.ExpressionChildValue" typeId="hba4.734120071946422046" id="1113882575351428080" nodeInfo="ng">
+                          <node role="expr" roleId="hba4.734120071946422047" type="tpee.VariableReference" typeId="tpee.1068498886296" id="1113882575351428112" nodeInfo="nn">
+                            <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="1113882575351426987" resolveInfo="ignore" />
                           </node>
                         </node>
                       </node>
@@ -9554,8 +9600,8 @@
             </node>
           </node>
           <node role="condition" roleId="tpee.1068580123160" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="9093904621248588749" nodeInfo="nn">
-            <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="aow2.~StringUtils" resolveInfo="StringUtils" />
-            <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="aow2.~StringUtils%disEmpty(java%dlang%dString)%cboolean" resolveInfo="isEmpty" />
+            <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="z68t.~StringUtils" resolveInfo="StringUtils" />
+            <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="z68t.~StringUtils%disEmpty(java%dlang%dString)%cboolean" resolveInfo="isEmpty" />
             <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.DotExpression" typeId="tpee.1197027756228" id="9093904621248588750" nodeInfo="nn">
               <node role="operand" roleId="tpee.1197027771414" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="9093904621248588751" nodeInfo="nn">
                 <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="9093904621248588730" resolveInfo="structMember" />
@@ -9707,15 +9753,15 @@
           <node role="ifTrue" roleId="tpee.1068580123161" type="tpee.StatementList" typeId="tpee.1068580123136" id="6574255070746212196" nodeInfo="sn">
             <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="6574255070746212197" nodeInfo="nn">
               <node role="expression" roleId="tpee.1068580123156" type="tpee.AssignmentExpression" typeId="tpee.1068498886294" id="6574255070746212198" nodeInfo="nn">
-                <node role="rValue" roleId="tpee.1068498886297" type=".com.mbeddr.mpsutil.blutil.structure.BuilderExpression" id="6574255070746212199" nodeInfo="ng">
-                  <node role="root" type=".com.mbeddr.mpsutil.blutil.structure.ChildStep" id="6574255070746212200" nodeInfo="ng">
-                    <link role="childLink" targetNodeId="tpck.5169995583184591170" />
-                    <node role="value" type=".com.mbeddr.mpsutil.blutil.structure.ConceptRef" id="6574255070746212201" nodeInfo="ng">
-                      <link role="concept" targetNodeId="clbe.6394819151180597807" resolveInfo="StructDeclaration" />
+                <node role="rValue" roleId="tpee.1068498886297" type="hba4.BuilderExpression" typeId="hba4.4481811096720536877" id="6574255070746212199" nodeInfo="ng">
+                  <node role="root" roleId="hba4.4481811096720536927" type="hba4.ChildStep" typeId="hba4.4481811096720537459" id="6574255070746212200" nodeInfo="ng">
+                    <link role="childLink" roleId="hba4.4481811096720607067" targetNodeId="tpck.5169995583184591170" />
+                    <node role="value" roleId="hba4.6308171743671982944" type="hba4.ConceptRef" typeId="hba4.4481811096720976618" id="6574255070746212201" nodeInfo="ng">
+                      <link role="concept" roleId="hba4.4481811096720976619" targetNodeId="clbe.6394819151180597807" resolveInfo="StructDeclaration" />
                     </node>
-                    <node role="children" type=".com.mbeddr.mpsutil.blutil.structure.SimplePropertyStep" id="6574255070746212202" nodeInfo="ng">
-                      <link role="property" targetNodeId="tpck.1169194664001" resolveInfo="name" />
-                      <node role="value" type="tpee.VariableReference" typeId="tpee.1068498886296" id="5058375741168479092" nodeInfo="nn">
+                    <node role="children" roleId="hba4.4481811096720537463" type="hba4.SimplePropertyStep" typeId="hba4.4481811096720581223" id="6574255070746212202" nodeInfo="ng">
+                      <link role="property" roleId="hba4.4481811096720581232" targetNodeId="tpck.1169194664001" resolveInfo="name" />
+                      <node role="value" roleId="hba4.4481811096720588312" type="tpee.VariableReference" typeId="tpee.1068498886296" id="5058375741168479092" nodeInfo="nn">
                         <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="6574255070746218346" resolveInfo="name" />
                       </node>
                     </node>
@@ -9783,15 +9829,15 @@
               <node role="statement" roleId="tpee.1068581517665" type="tpee.Statement" typeId="tpee.1068580123157" id="6574255070746212224" nodeInfo="nn" />
               <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="6574255070746212225" nodeInfo="nn">
                 <node role="expression" roleId="tpee.1068580123156" type="tpee.AssignmentExpression" typeId="tpee.1068498886294" id="6574255070746212226" nodeInfo="nn">
-                  <node role="rValue" roleId="tpee.1068498886297" type=".com.mbeddr.mpsutil.blutil.structure.BuilderExpression" id="6574255070746212227" nodeInfo="ng">
-                    <node role="root" type=".com.mbeddr.mpsutil.blutil.structure.ChildStep" id="6574255070746212228" nodeInfo="ng">
-                      <link role="childLink" targetNodeId="tpck.5169995583184591170" />
-                      <node role="value" type=".com.mbeddr.mpsutil.blutil.structure.ConceptRef" id="6574255070746212229" nodeInfo="ng">
-                        <link role="concept" targetNodeId="clbe.6394819151180597807" resolveInfo="StructDeclaration" />
+                  <node role="rValue" roleId="tpee.1068498886297" type="hba4.BuilderExpression" typeId="hba4.4481811096720536877" id="6574255070746212227" nodeInfo="ng">
+                    <node role="root" roleId="hba4.4481811096720536927" type="hba4.ChildStep" typeId="hba4.4481811096720537459" id="6574255070746212228" nodeInfo="ng">
+                      <link role="childLink" roleId="hba4.4481811096720607067" targetNodeId="tpck.5169995583184591170" />
+                      <node role="value" roleId="hba4.6308171743671982944" type="hba4.ConceptRef" typeId="hba4.4481811096720976618" id="6574255070746212229" nodeInfo="ng">
+                        <link role="concept" roleId="hba4.4481811096720976619" targetNodeId="clbe.6394819151180597807" resolveInfo="StructDeclaration" />
                       </node>
-                      <node role="children" type=".com.mbeddr.mpsutil.blutil.structure.SimplePropertyStep" id="6574255070746212230" nodeInfo="ng">
-                        <link role="property" targetNodeId="tpck.1169194664001" resolveInfo="name" />
-                        <node role="value" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="6574255070746212231" nodeInfo="nn">
+                      <node role="children" roleId="hba4.4481811096720537463" type="hba4.SimplePropertyStep" typeId="hba4.4481811096720581223" id="6574255070746212230" nodeInfo="ng">
+                        <link role="property" roleId="hba4.4481811096720581232" targetNodeId="tpck.1169194664001" resolveInfo="name" />
+                        <node role="value" roleId="hba4.4481811096720588312" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="6574255070746212231" nodeInfo="nn">
                           <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="6574255070746212211" resolveInfo="uniqueName" />
                         </node>
                       </node>
@@ -9826,15 +9872,15 @@
             <node role="type" roleId="tpee.5680397130376446158" type="tp25.SNodeType" typeId="tp25.1138055754698" id="6574255070746218362" nodeInfo="in">
               <link role="concept" roleId="tp25.1138405853777" targetNodeId="clbe.6394819151180597816" resolveInfo="StructType" />
             </node>
-            <node role="initializer" roleId="tpee.1068431790190" type=".com.mbeddr.mpsutil.blutil.structure.BuilderExpression" id="6574255070746218363" nodeInfo="ng">
-              <node role="root" type=".com.mbeddr.mpsutil.blutil.structure.ChildStep" id="6574255070746218364" nodeInfo="ng">
-                <link role="childLink" targetNodeId="tpck.5169995583184591170" />
-                <node role="value" type=".com.mbeddr.mpsutil.blutil.structure.ConceptRef" id="6574255070746218365" nodeInfo="ng">
-                  <link role="concept" targetNodeId="clbe.6394819151180597816" resolveInfo="StructType" />
+            <node role="initializer" roleId="tpee.1068431790190" type="hba4.BuilderExpression" typeId="hba4.4481811096720536877" id="6574255070746218363" nodeInfo="ng">
+              <node role="root" roleId="hba4.4481811096720536927" type="hba4.ChildStep" typeId="hba4.4481811096720537459" id="6574255070746218364" nodeInfo="ng">
+                <link role="childLink" roleId="hba4.4481811096720607067" targetNodeId="tpck.5169995583184591170" />
+                <node role="value" roleId="hba4.6308171743671982944" type="hba4.ConceptRef" typeId="hba4.4481811096720976618" id="6574255070746218365" nodeInfo="ng">
+                  <link role="concept" roleId="hba4.4481811096720976619" targetNodeId="clbe.6394819151180597816" resolveInfo="StructType" />
                 </node>
-                <node role="children" type=".com.mbeddr.mpsutil.blutil.structure.RefStep" id="6574255070746218366" nodeInfo="ng">
-                  <link role="refLink" targetNodeId="clbe.6394819151180597817" />
-                  <node role="target" type="tpee.LocalInstanceFieldReference" typeId="tpee.7785501532031639928" id="6574255070746218367" nodeInfo="nn">
+                <node role="children" roleId="hba4.4481811096720537463" type="hba4.RefStep" typeId="hba4.4481811096721038000" id="6574255070746218366" nodeInfo="ng">
+                  <link role="refLink" roleId="hba4.4481811096721038001" targetNodeId="clbe.6394819151180597817" />
+                  <node role="target" roleId="hba4.4481811096721038002" type="tpee.LocalInstanceFieldReference" typeId="tpee.7785501532031639928" id="6574255070746218367" nodeInfo="nn">
                     <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="2274997040902824106" resolveInfo="structDeclaration" />
                   </node>
                 </node>
@@ -9990,22 +10036,22 @@
                 <node role="type" roleId="tpee.5680397130376446158" type="tp25.SNodeType" typeId="tp25.1138055754698" id="2497083023867916551" nodeInfo="in">
                   <link role="concept" roleId="tp25.1138405853777" targetNodeId="x27k.7892328519581704407" resolveInfo="Argument" />
                 </node>
-                <node role="initializer" roleId="tpee.1068431790190" type=".com.mbeddr.mpsutil.blutil.structure.BuilderExpression" id="2497083023867916553" nodeInfo="ng">
-                  <node role="root" type=".com.mbeddr.mpsutil.blutil.structure.ChildStep" id="2497083023867916554" nodeInfo="ng">
-                    <link role="childLink" targetNodeId="tpck.5169995583184591170" />
-                    <node role="value" type=".com.mbeddr.mpsutil.blutil.structure.ConceptRef" id="2497083023867916556" nodeInfo="ng">
-                      <link role="concept" targetNodeId="x27k.7892328519581704407" resolveInfo="Argument" />
+                <node role="initializer" roleId="tpee.1068431790190" type="hba4.BuilderExpression" typeId="hba4.4481811096720536877" id="2497083023867916553" nodeInfo="ng">
+                  <node role="root" roleId="hba4.4481811096720536927" type="hba4.ChildStep" typeId="hba4.4481811096720537459" id="2497083023867916554" nodeInfo="ng">
+                    <link role="childLink" roleId="hba4.4481811096720607067" targetNodeId="tpck.5169995583184591170" />
+                    <node role="value" roleId="hba4.6308171743671982944" type="hba4.ConceptRef" typeId="hba4.4481811096720976618" id="2497083023867916556" nodeInfo="ng">
+                      <link role="concept" roleId="hba4.4481811096720976619" targetNodeId="x27k.7892328519581704407" resolveInfo="Argument" />
                     </node>
-                    <node role="children" type=".com.mbeddr.mpsutil.blutil.structure.SimplePropertyStep" id="2497083023867916558" nodeInfo="ng">
-                      <link role="property" targetNodeId="tpck.1169194664001" resolveInfo="name" />
-                      <node role="value" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="2274997040902836008" nodeInfo="nn">
+                    <node role="children" roleId="hba4.4481811096720537463" type="hba4.SimplePropertyStep" typeId="hba4.4481811096720581223" id="2497083023867916558" nodeInfo="ng">
+                      <link role="property" roleId="hba4.4481811096720581232" targetNodeId="tpck.1169194664001" resolveInfo="name" />
+                      <node role="value" roleId="hba4.4481811096720588312" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="2274997040902836008" nodeInfo="nn">
                         <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="2274997040902835999" resolveInfo="name" />
                       </node>
                     </node>
-                    <node role="children" type=".com.mbeddr.mpsutil.blutil.structure.ChildStep" id="2497083023867916576" nodeInfo="ng">
-                      <link role="childLink" targetNodeId="mj1l.318113533128716676" />
-                      <node role="value" type=".com.mbeddr.mpsutil.blutil.structure.ExpressionChildValue" id="2497083023867916578" nodeInfo="ng">
-                        <node role="expr" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="8507524364937915969" nodeInfo="nn">
+                    <node role="children" roleId="hba4.4481811096720537463" type="hba4.ChildStep" typeId="hba4.4481811096720537459" id="2497083023867916576" nodeInfo="ng">
+                      <link role="childLink" roleId="hba4.4481811096720607067" targetNodeId="mj1l.318113533128716676" />
+                      <node role="value" roleId="hba4.6308171743671982944" type="hba4.ExpressionChildValue" typeId="hba4.734120071946422046" id="2497083023867916578" nodeInfo="ng">
+                        <node role="expr" roleId="hba4.734120071946422047" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="8507524364937915969" nodeInfo="nn">
                           <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="8507524364937915950" resolveInfo="realType" />
                         </node>
                       </node>
@@ -10152,22 +10198,22 @@
             <node role="type" roleId="tpee.5680397130376446158" type="tp25.SNodeType" typeId="tp25.1138055754698" id="1694414027524464435" nodeInfo="in">
               <link role="concept" roleId="tp25.1138405853777" targetNodeId="clbe.5882395403881875736" resolveInfo="Member" />
             </node>
-            <node role="initializer" roleId="tpee.1068431790190" type=".com.mbeddr.mpsutil.blutil.structure.BuilderExpression" id="2274997040902836085" nodeInfo="ng">
-              <node role="root" type=".com.mbeddr.mpsutil.blutil.structure.ChildStep" id="2274997040902836086" nodeInfo="ng">
-                <link role="childLink" targetNodeId="tpck.5169995583184591170" />
-                <node role="value" type=".com.mbeddr.mpsutil.blutil.structure.ConceptRef" id="1694414027524464436" nodeInfo="ng">
-                  <link role="concept" targetNodeId="clbe.5882395403881875736" resolveInfo="Member" />
+            <node role="initializer" roleId="tpee.1068431790190" type="hba4.BuilderExpression" typeId="hba4.4481811096720536877" id="2274997040902836085" nodeInfo="ng">
+              <node role="root" roleId="hba4.4481811096720536927" type="hba4.ChildStep" typeId="hba4.4481811096720537459" id="2274997040902836086" nodeInfo="ng">
+                <link role="childLink" roleId="hba4.4481811096720607067" targetNodeId="tpck.5169995583184591170" />
+                <node role="value" roleId="hba4.6308171743671982944" type="hba4.ConceptRef" typeId="hba4.4481811096720976618" id="1694414027524464436" nodeInfo="ng">
+                  <link role="concept" roleId="hba4.4481811096720976619" targetNodeId="clbe.5882395403881875736" resolveInfo="Member" />
                 </node>
-                <node role="children" type=".com.mbeddr.mpsutil.blutil.structure.SimplePropertyStep" id="2274997040902836090" nodeInfo="ng">
-                  <link role="property" targetNodeId="tpck.1169194664001" resolveInfo="name" />
-                  <node role="value" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="2274997040902836092" nodeInfo="nn">
+                <node role="children" roleId="hba4.4481811096720537463" type="hba4.SimplePropertyStep" typeId="hba4.4481811096720581223" id="2274997040902836090" nodeInfo="ng">
+                  <link role="property" roleId="hba4.4481811096720581232" targetNodeId="tpck.1169194664001" resolveInfo="name" />
+                  <node role="value" roleId="hba4.4481811096720588312" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="2274997040902836092" nodeInfo="nn">
                     <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="1544185720216104745" resolveInfo="name" />
                   </node>
                 </node>
-                <node role="children" type=".com.mbeddr.mpsutil.blutil.structure.ChildStep" id="2274997040902836094" nodeInfo="ng">
-                  <link role="childLink" targetNodeId="mj1l.318113533128716676" />
-                  <node role="value" type=".com.mbeddr.mpsutil.blutil.structure.ExpressionChildValue" id="2274997040902836096" nodeInfo="ng">
-                    <node role="expr" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="2274997040902836098" nodeInfo="nn">
+                <node role="children" roleId="hba4.4481811096720537463" type="hba4.ChildStep" typeId="hba4.4481811096720537459" id="2274997040902836094" nodeInfo="ng">
+                  <link role="childLink" roleId="hba4.4481811096720607067" targetNodeId="mj1l.318113533128716676" />
+                  <node role="value" roleId="hba4.6308171743671982944" type="hba4.ExpressionChildValue" typeId="hba4.734120071946422046" id="2274997040902836096" nodeInfo="ng">
+                    <node role="expr" roleId="hba4.734120071946422047" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="2274997040902836098" nodeInfo="nn">
                       <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="2274997040902836049" resolveInfo="realType" />
                     </node>
                   </node>
@@ -10549,15 +10595,15 @@
               <node role="ifTrue" roleId="tpee.1068580123161" type="tpee.StatementList" typeId="tpee.1068580123136" id="1451255793041214043" nodeInfo="sn">
                 <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="1451255793041214056" nodeInfo="nn">
                   <node role="expression" roleId="tpee.1068580123156" type="tpee.AssignmentExpression" typeId="tpee.1068498886294" id="1451255793041214057" nodeInfo="nn">
-                    <node role="rValue" roleId="tpee.1068498886297" type=".com.mbeddr.mpsutil.blutil.structure.BuilderExpression" id="1451255793041214058" nodeInfo="ng">
-                      <node role="root" type=".com.mbeddr.mpsutil.blutil.structure.ChildStep" id="1451255793041214059" nodeInfo="ng">
-                        <link role="childLink" targetNodeId="tpck.5169995583184591170" />
-                        <node role="value" type=".com.mbeddr.mpsutil.blutil.structure.ConceptRef" id="1451255793041214060" nodeInfo="ng">
-                          <link role="concept" targetNodeId="clbe.8811614583515725851" resolveInfo="EnumDeclaration" />
+                    <node role="rValue" roleId="tpee.1068498886297" type="hba4.BuilderExpression" typeId="hba4.4481811096720536877" id="1451255793041214058" nodeInfo="ng">
+                      <node role="root" roleId="hba4.4481811096720536927" type="hba4.ChildStep" typeId="hba4.4481811096720537459" id="1451255793041214059" nodeInfo="ng">
+                        <link role="childLink" roleId="hba4.4481811096720607067" targetNodeId="tpck.5169995583184591170" />
+                        <node role="value" roleId="hba4.6308171743671982944" type="hba4.ConceptRef" typeId="hba4.4481811096720976618" id="1451255793041214060" nodeInfo="ng">
+                          <link role="concept" roleId="hba4.4481811096720976619" targetNodeId="clbe.8811614583515725851" resolveInfo="EnumDeclaration" />
                         </node>
-                        <node role="children" type=".com.mbeddr.mpsutil.blutil.structure.SimplePropertyStep" id="1451255793041214061" nodeInfo="ng">
-                          <link role="property" targetNodeId="tpck.1169194664001" resolveInfo="name" />
-                          <node role="value" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="1451255793041214062" nodeInfo="nn">
+                        <node role="children" roleId="hba4.4481811096720537463" type="hba4.SimplePropertyStep" typeId="hba4.4481811096720581223" id="1451255793041214061" nodeInfo="ng">
+                          <link role="property" roleId="hba4.4481811096720581232" targetNodeId="tpck.1169194664001" resolveInfo="name" />
+                          <node role="value" roleId="hba4.4481811096720588312" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="1451255793041214062" nodeInfo="nn">
                             <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="1919388633516631944" resolveInfo="name" />
                           </node>
                         </node>
@@ -10625,15 +10671,15 @@
                   <node role="statement" roleId="tpee.1068581517665" type="tpee.Statement" typeId="tpee.1068580123157" id="6810278294187613234" nodeInfo="nn" />
                   <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="1919388633516631950" nodeInfo="nn">
                     <node role="expression" roleId="tpee.1068580123156" type="tpee.AssignmentExpression" typeId="tpee.1068498886294" id="1919388633516631951" nodeInfo="nn">
-                      <node role="rValue" roleId="tpee.1068498886297" type=".com.mbeddr.mpsutil.blutil.structure.BuilderExpression" id="1919388633516631952" nodeInfo="ng">
-                        <node role="root" type=".com.mbeddr.mpsutil.blutil.structure.ChildStep" id="1919388633516631953" nodeInfo="ng">
-                          <link role="childLink" targetNodeId="tpck.5169995583184591170" />
-                          <node role="value" type=".com.mbeddr.mpsutil.blutil.structure.ConceptRef" id="1919388633516632096" nodeInfo="ng">
-                            <link role="concept" targetNodeId="clbe.8811614583515725851" resolveInfo="EnumDeclaration" />
+                      <node role="rValue" roleId="tpee.1068498886297" type="hba4.BuilderExpression" typeId="hba4.4481811096720536877" id="1919388633516631952" nodeInfo="ng">
+                        <node role="root" roleId="hba4.4481811096720536927" type="hba4.ChildStep" typeId="hba4.4481811096720537459" id="1919388633516631953" nodeInfo="ng">
+                          <link role="childLink" roleId="hba4.4481811096720607067" targetNodeId="tpck.5169995583184591170" />
+                          <node role="value" roleId="hba4.6308171743671982944" type="hba4.ConceptRef" typeId="hba4.4481811096720976618" id="1919388633516632096" nodeInfo="ng">
+                            <link role="concept" roleId="hba4.4481811096720976619" targetNodeId="clbe.8811614583515725851" resolveInfo="EnumDeclaration" />
                           </node>
-                          <node role="children" type=".com.mbeddr.mpsutil.blutil.structure.SimplePropertyStep" id="1451255793041214071" nodeInfo="ng">
-                            <link role="property" targetNodeId="tpck.1169194664001" resolveInfo="name" />
-                            <node role="value" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="7398366471050051051" nodeInfo="nn">
+                          <node role="children" roleId="hba4.4481811096720537463" type="hba4.SimplePropertyStep" typeId="hba4.4481811096720581223" id="1451255793041214071" nodeInfo="ng">
+                            <link role="property" roleId="hba4.4481811096720581232" targetNodeId="tpck.1169194664001" resolveInfo="name" />
+                            <node role="value" roleId="hba4.4481811096720588312" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="7398366471050051051" nodeInfo="nn">
                               <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="7398366471050019362" resolveInfo="uniqueName" />
                             </node>
                           </node>
@@ -10806,15 +10852,15 @@
                 <node role="type" roleId="tpee.5680397130376446158" type="tp25.SNodeType" typeId="tp25.1138055754698" id="1919388633516632298" nodeInfo="in">
                   <link role="concept" roleId="tp25.1138405853777" targetNodeId="clbe.8811614583515725853" resolveInfo="EnumLiteral" />
                 </node>
-                <node role="initializer" roleId="tpee.1068431790190" type=".com.mbeddr.mpsutil.blutil.structure.BuilderExpression" id="1919388633516632151" nodeInfo="ng">
-                  <node role="root" type=".com.mbeddr.mpsutil.blutil.structure.ChildStep" id="1919388633516632152" nodeInfo="ng">
-                    <link role="childLink" targetNodeId="tpck.5169995583184591170" />
-                    <node role="value" type=".com.mbeddr.mpsutil.blutil.structure.ConceptRef" id="1919388633516632156" nodeInfo="ng">
-                      <link role="concept" targetNodeId="clbe.8811614583515725853" resolveInfo="EnumLiteral" />
+                <node role="initializer" roleId="tpee.1068431790190" type="hba4.BuilderExpression" typeId="hba4.4481811096720536877" id="1919388633516632151" nodeInfo="ng">
+                  <node role="root" roleId="hba4.4481811096720536927" type="hba4.ChildStep" typeId="hba4.4481811096720537459" id="1919388633516632152" nodeInfo="ng">
+                    <link role="childLink" roleId="hba4.4481811096720607067" targetNodeId="tpck.5169995583184591170" />
+                    <node role="value" roleId="hba4.6308171743671982944" type="hba4.ConceptRef" typeId="hba4.4481811096720976618" id="1919388633516632156" nodeInfo="ng">
+                      <link role="concept" roleId="hba4.4481811096720976619" targetNodeId="clbe.8811614583515725853" resolveInfo="EnumLiteral" />
                     </node>
-                    <node role="children" type=".com.mbeddr.mpsutil.blutil.structure.SimplePropertyStep" id="1919388633516632157" nodeInfo="ng">
-                      <link role="property" targetNodeId="tpck.1169194664001" resolveInfo="name" />
-                      <node role="value" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="1919388633516632172" nodeInfo="nn">
+                    <node role="children" roleId="hba4.4481811096720537463" type="hba4.SimplePropertyStep" typeId="hba4.4481811096720581223" id="1919388633516632157" nodeInfo="ng">
+                      <link role="property" roleId="hba4.4481811096720581232" targetNodeId="tpck.1169194664001" resolveInfo="name" />
+                      <node role="value" roleId="hba4.4481811096720588312" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="1919388633516632172" nodeInfo="nn">
                         <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="1919388633516632161" resolveInfo="name" />
                       </node>
                     </node>
@@ -11097,15 +11143,15 @@
                 <node role="type" roleId="tpee.5680397130376446158" type="tp25.SNodeType" typeId="tp25.1138055754698" id="1919388633516632017" nodeInfo="in">
                   <link role="concept" roleId="tp25.1138405853777" targetNodeId="clbe.8811614583515725893" resolveInfo="EnumType" />
                 </node>
-                <node role="initializer" roleId="tpee.1068431790190" type=".com.mbeddr.mpsutil.blutil.structure.BuilderExpression" id="1919388633516632018" nodeInfo="ng">
-                  <node role="root" type=".com.mbeddr.mpsutil.blutil.structure.ChildStep" id="1919388633516632019" nodeInfo="ng">
-                    <link role="childLink" targetNodeId="tpck.5169995583184591170" />
-                    <node role="value" type=".com.mbeddr.mpsutil.blutil.structure.ConceptRef" id="1919388633516632321" nodeInfo="ng">
-                      <link role="concept" targetNodeId="clbe.8811614583515725893" resolveInfo="EnumType" />
+                <node role="initializer" roleId="tpee.1068431790190" type="hba4.BuilderExpression" typeId="hba4.4481811096720536877" id="1919388633516632018" nodeInfo="ng">
+                  <node role="root" roleId="hba4.4481811096720536927" type="hba4.ChildStep" typeId="hba4.4481811096720537459" id="1919388633516632019" nodeInfo="ng">
+                    <link role="childLink" roleId="hba4.4481811096720607067" targetNodeId="tpck.5169995583184591170" />
+                    <node role="value" roleId="hba4.6308171743671982944" type="hba4.ConceptRef" typeId="hba4.4481811096720976618" id="1919388633516632321" nodeInfo="ng">
+                      <link role="concept" roleId="hba4.4481811096720976619" targetNodeId="clbe.8811614583515725893" resolveInfo="EnumType" />
                     </node>
-                    <node role="children" type=".com.mbeddr.mpsutil.blutil.structure.RefStep" id="1919388633516632021" nodeInfo="ng">
-                      <link role="refLink" targetNodeId="clbe.8811614583515725894" />
-                      <node role="target" type="tpee.LocalInstanceFieldReference" typeId="tpee.7785501532031639928" id="1919388633516632022" nodeInfo="nn">
+                    <node role="children" roleId="hba4.4481811096720537463" type="hba4.RefStep" typeId="hba4.4481811096721038000" id="1919388633516632021" nodeInfo="ng">
+                      <link role="refLink" roleId="hba4.4481811096721038001" targetNodeId="clbe.8811614583515725894" />
+                      <node role="target" roleId="hba4.4481811096721038002" type="tpee.LocalInstanceFieldReference" typeId="tpee.7785501532031639928" id="1919388633516632022" nodeInfo="nn">
                         <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="1919388633516631792" resolveInfo="enumDeclaration" />
                       </node>
                     </node>
@@ -11142,22 +11188,22 @@
                     <node role="type" roleId="tpee.5680397130376446158" type="tp25.SNodeType" typeId="tp25.1138055754698" id="2990649367529118265" nodeInfo="in">
                       <link role="concept" roleId="tp25.1138405853777" targetNodeId="clbe.6116558314501347857" resolveInfo="TypeDef" />
                     </node>
-                    <node role="initializer" roleId="tpee.1068431790190" type=".com.mbeddr.mpsutil.blutil.structure.BuilderExpression" id="2990649367529118266" nodeInfo="ng">
-                      <node role="root" type=".com.mbeddr.mpsutil.blutil.structure.ChildStep" id="2990649367529118267" nodeInfo="ng">
-                        <link role="childLink" targetNodeId="tpck.5169995583184591170" />
-                        <node role="value" type=".com.mbeddr.mpsutil.blutil.structure.ConceptRef" id="2990649367529118285" nodeInfo="ng">
-                          <link role="concept" targetNodeId="clbe.6116558314501347857" resolveInfo="TypeDef" />
+                    <node role="initializer" roleId="tpee.1068431790190" type="hba4.BuilderExpression" typeId="hba4.4481811096720536877" id="2990649367529118266" nodeInfo="ng">
+                      <node role="root" roleId="hba4.4481811096720536927" type="hba4.ChildStep" typeId="hba4.4481811096720537459" id="2990649367529118267" nodeInfo="ng">
+                        <link role="childLink" roleId="hba4.4481811096720607067" targetNodeId="tpck.5169995583184591170" />
+                        <node role="value" roleId="hba4.6308171743671982944" type="hba4.ConceptRef" typeId="hba4.4481811096720976618" id="2990649367529118285" nodeInfo="ng">
+                          <link role="concept" roleId="hba4.4481811096720976619" targetNodeId="clbe.6116558314501347857" resolveInfo="TypeDef" />
                         </node>
-                        <node role="children" type=".com.mbeddr.mpsutil.blutil.structure.SimplePropertyStep" id="2990649367529118269" nodeInfo="ng">
-                          <link role="property" targetNodeId="tpck.1169194664001" resolveInfo="name" />
-                          <node role="value" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="2990649367529118270" nodeInfo="nn">
+                        <node role="children" roleId="hba4.4481811096720537463" type="hba4.SimplePropertyStep" typeId="hba4.4481811096720581223" id="2990649367529118269" nodeInfo="ng">
+                          <link role="property" roleId="hba4.4481811096720581232" targetNodeId="tpck.1169194664001" resolveInfo="name" />
+                          <node role="value" roleId="hba4.4481811096720588312" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="2990649367529118270" nodeInfo="nn">
                             <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="1919388633516632009" resolveInfo="name" />
                           </node>
                         </node>
-                        <node role="children" type=".com.mbeddr.mpsutil.blutil.structure.ChildStep" id="2990649367529118287" nodeInfo="ng">
-                          <link role="childLink" targetNodeId="clbe.6116558314501347862" />
-                          <node role="value" type=".com.mbeddr.mpsutil.blutil.structure.ExpressionChildValue" id="2990649367529118289" nodeInfo="ng">
-                            <node role="expr" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="2990649367529118291" nodeInfo="nn">
+                        <node role="children" roleId="hba4.4481811096720537463" type="hba4.ChildStep" typeId="hba4.4481811096720537459" id="2990649367529118287" nodeInfo="ng">
+                          <link role="childLink" roleId="hba4.4481811096720607067" targetNodeId="clbe.6116558314501347862" />
+                          <node role="value" roleId="hba4.6308171743671982944" type="hba4.ExpressionChildValue" typeId="hba4.734120071946422046" id="2990649367529118289" nodeInfo="ng">
+                            <node role="expr" roleId="hba4.734120071946422047" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="2990649367529118291" nodeInfo="nn">
                               <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="1919388633516632016" resolveInfo="enumType" />
                             </node>
                           </node>
@@ -11208,22 +11254,22 @@
                       <node role="type" roleId="tpee.5680397130376446158" type="tp25.SNodeType" typeId="tp25.1138055754698" id="1919388633516632032" nodeInfo="in">
                         <link role="concept" roleId="tp25.1138405853777" targetNodeId="x27k.6610873504380335822" resolveInfo="GlobalVariableDeclaration" />
                       </node>
-                      <node role="initializer" roleId="tpee.1068431790190" type=".com.mbeddr.mpsutil.blutil.structure.BuilderExpression" id="1919388633516632033" nodeInfo="ng">
-                        <node role="root" type=".com.mbeddr.mpsutil.blutil.structure.ChildStep" id="1919388633516632034" nodeInfo="ng">
-                          <link role="childLink" targetNodeId="tpck.5169995583184591170" />
-                          <node role="value" type=".com.mbeddr.mpsutil.blutil.structure.ConceptRef" id="1919388633516632035" nodeInfo="ng">
-                            <link role="concept" targetNodeId="x27k.6610873504380335822" resolveInfo="GlobalVariableDeclaration" />
+                      <node role="initializer" roleId="tpee.1068431790190" type="hba4.BuilderExpression" typeId="hba4.4481811096720536877" id="1919388633516632033" nodeInfo="ng">
+                        <node role="root" roleId="hba4.4481811096720536927" type="hba4.ChildStep" typeId="hba4.4481811096720537459" id="1919388633516632034" nodeInfo="ng">
+                          <link role="childLink" roleId="hba4.4481811096720607067" targetNodeId="tpck.5169995583184591170" />
+                          <node role="value" roleId="hba4.6308171743671982944" type="hba4.ConceptRef" typeId="hba4.4481811096720976618" id="1919388633516632035" nodeInfo="ng">
+                            <link role="concept" roleId="hba4.4481811096720976619" targetNodeId="x27k.6610873504380335822" resolveInfo="GlobalVariableDeclaration" />
                           </node>
-                          <node role="children" type=".com.mbeddr.mpsutil.blutil.structure.SimplePropertyStep" id="1919388633516632036" nodeInfo="ng">
-                            <link role="property" targetNodeId="tpck.1169194664001" resolveInfo="name" />
-                            <node role="value" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="1919388633516632037" nodeInfo="nn">
+                          <node role="children" roleId="hba4.4481811096720537463" type="hba4.SimplePropertyStep" typeId="hba4.4481811096720581223" id="1919388633516632036" nodeInfo="ng">
+                            <link role="property" roleId="hba4.4481811096720581232" targetNodeId="tpck.1169194664001" resolveInfo="name" />
+                            <node role="value" roleId="hba4.4481811096720588312" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="1919388633516632037" nodeInfo="nn">
                               <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="1919388633516632009" resolveInfo="name" />
                             </node>
                           </node>
-                          <node role="children" type=".com.mbeddr.mpsutil.blutil.structure.ChildStep" id="1919388633516632038" nodeInfo="ng">
-                            <link role="childLink" targetNodeId="mj1l.318113533128716676" />
-                            <node role="value" type=".com.mbeddr.mpsutil.blutil.structure.ExpressionChildValue" id="1919388633516632039" nodeInfo="ng">
-                              <node role="expr" type="tpee.DotExpression" typeId="tpee.1197027756228" id="1919388633516632040" nodeInfo="nn">
+                          <node role="children" roleId="hba4.4481811096720537463" type="hba4.ChildStep" typeId="hba4.4481811096720537459" id="1919388633516632038" nodeInfo="ng">
+                            <link role="childLink" roleId="hba4.4481811096720607067" targetNodeId="mj1l.318113533128716676" />
+                            <node role="value" roleId="hba4.6308171743671982944" type="hba4.ExpressionChildValue" typeId="hba4.734120071946422046" id="1919388633516632039" nodeInfo="ng">
+                              <node role="expr" roleId="hba4.734120071946422047" type="tpee.DotExpression" typeId="tpee.1197027756228" id="1919388633516632040" nodeInfo="nn">
                                 <node role="operand" roleId="tpee.1197027771414" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="1919388633516632041" nodeInfo="nn">
                                   <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="1919388633516632025" resolveInfo="dto" />
                                 </node>
@@ -11475,8 +11521,8 @@
             </node>
           </node>
           <node role="condition" roleId="tpee.1068580123160" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="9093904621248556990" nodeInfo="nn">
-            <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="aow2.~StringUtils%disEmpty(java%dlang%dString)%cboolean" resolveInfo="isEmpty" />
-            <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="aow2.~StringUtils" resolveInfo="StringUtils" />
+            <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="z68t.~StringUtils" resolveInfo="StringUtils" />
+            <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="z68t.~StringUtils%disEmpty(java%dlang%dString)%cboolean" resolveInfo="isEmpty" />
             <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.DotExpression" typeId="tpee.1197027756228" id="9093904621248556994" nodeInfo="nn">
               <node role="operand" roleId="tpee.1197027771414" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="9093904621248556991" nodeInfo="nn">
                 <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="9093904621248556975" resolveInfo="unionMember" />
@@ -11624,15 +11670,15 @@
           <node role="ifTrue" roleId="tpee.1068580123161" type="tpee.StatementList" typeId="tpee.1068580123136" id="6574255070746243769" nodeInfo="sn">
             <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="6574255070746243770" nodeInfo="nn">
               <node role="expression" roleId="tpee.1068580123156" type="tpee.AssignmentExpression" typeId="tpee.1068498886294" id="6574255070746243771" nodeInfo="nn">
-                <node role="rValue" roleId="tpee.1068498886297" type=".com.mbeddr.mpsutil.blutil.structure.BuilderExpression" id="6574255070746243772" nodeInfo="ng">
-                  <node role="root" type=".com.mbeddr.mpsutil.blutil.structure.ChildStep" id="6574255070746243773" nodeInfo="ng">
-                    <link role="childLink" targetNodeId="tpck.5169995583184591170" />
-                    <node role="value" type=".com.mbeddr.mpsutil.blutil.structure.ConceptRef" id="6574255070746243826" nodeInfo="ng">
-                      <link role="concept" targetNodeId="clbe.5882395403881907066" resolveInfo="UnionDeclaration" />
+                <node role="rValue" roleId="tpee.1068498886297" type="hba4.BuilderExpression" typeId="hba4.4481811096720536877" id="6574255070746243772" nodeInfo="ng">
+                  <node role="root" roleId="hba4.4481811096720536927" type="hba4.ChildStep" typeId="hba4.4481811096720537459" id="6574255070746243773" nodeInfo="ng">
+                    <link role="childLink" roleId="hba4.4481811096720607067" targetNodeId="tpck.5169995583184591170" />
+                    <node role="value" roleId="hba4.6308171743671982944" type="hba4.ConceptRef" typeId="hba4.4481811096720976618" id="6574255070746243826" nodeInfo="ng">
+                      <link role="concept" roleId="hba4.4481811096720976619" targetNodeId="clbe.5882395403881907066" resolveInfo="UnionDeclaration" />
                     </node>
-                    <node role="children" type=".com.mbeddr.mpsutil.blutil.structure.SimplePropertyStep" id="6574255070746243775" nodeInfo="ng">
-                      <link role="property" targetNodeId="tpck.1169194664001" resolveInfo="name" />
-                      <node role="value" type="tpee.VariableReference" typeId="tpee.1068498886296" id="5058375741168477545" nodeInfo="nn">
+                    <node role="children" roleId="hba4.4481811096720537463" type="hba4.SimplePropertyStep" typeId="hba4.4481811096720581223" id="6574255070746243775" nodeInfo="ng">
+                      <link role="property" roleId="hba4.4481811096720581232" targetNodeId="tpck.1169194664001" resolveInfo="name" />
+                      <node role="value" roleId="hba4.4481811096720588312" type="tpee.VariableReference" typeId="tpee.1068498886296" id="5058375741168477545" nodeInfo="nn">
                         <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="6574255070746243765" resolveInfo="name" />
                       </node>
                     </node>
@@ -11701,15 +11747,15 @@
               <node role="statement" roleId="tpee.1068581517665" type="tpee.Statement" typeId="tpee.1068580123157" id="6574255070746243797" nodeInfo="nn" />
               <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="6574255070746243798" nodeInfo="nn">
                 <node role="expression" roleId="tpee.1068580123156" type="tpee.AssignmentExpression" typeId="tpee.1068498886294" id="6574255070746243799" nodeInfo="nn">
-                  <node role="rValue" roleId="tpee.1068498886297" type=".com.mbeddr.mpsutil.blutil.structure.BuilderExpression" id="6574255070746243800" nodeInfo="ng">
-                    <node role="root" type=".com.mbeddr.mpsutil.blutil.structure.ChildStep" id="6574255070746243801" nodeInfo="ng">
-                      <link role="childLink" targetNodeId="tpck.5169995583184591170" />
-                      <node role="value" type=".com.mbeddr.mpsutil.blutil.structure.ConceptRef" id="6574255070746243827" nodeInfo="ng">
-                        <link role="concept" targetNodeId="clbe.5882395403881907066" resolveInfo="UnionDeclaration" />
+                  <node role="rValue" roleId="tpee.1068498886297" type="hba4.BuilderExpression" typeId="hba4.4481811096720536877" id="6574255070746243800" nodeInfo="ng">
+                    <node role="root" roleId="hba4.4481811096720536927" type="hba4.ChildStep" typeId="hba4.4481811096720537459" id="6574255070746243801" nodeInfo="ng">
+                      <link role="childLink" roleId="hba4.4481811096720607067" targetNodeId="tpck.5169995583184591170" />
+                      <node role="value" roleId="hba4.6308171743671982944" type="hba4.ConceptRef" typeId="hba4.4481811096720976618" id="6574255070746243827" nodeInfo="ng">
+                        <link role="concept" roleId="hba4.4481811096720976619" targetNodeId="clbe.5882395403881907066" resolveInfo="UnionDeclaration" />
                       </node>
-                      <node role="children" type=".com.mbeddr.mpsutil.blutil.structure.SimplePropertyStep" id="6574255070746243803" nodeInfo="ng">
-                        <link role="property" targetNodeId="tpck.1169194664001" resolveInfo="name" />
-                        <node role="value" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="6574255070746243804" nodeInfo="nn">
+                      <node role="children" roleId="hba4.4481811096720537463" type="hba4.SimplePropertyStep" typeId="hba4.4481811096720581223" id="6574255070746243803" nodeInfo="ng">
+                        <link role="property" roleId="hba4.4481811096720581232" targetNodeId="tpck.1169194664001" resolveInfo="name" />
+                        <node role="value" roleId="hba4.4481811096720588312" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="6574255070746243804" nodeInfo="nn">
                           <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="6574255070746243784" resolveInfo="uniqueName" />
                         </node>
                       </node>
@@ -11744,15 +11790,15 @@
             <node role="type" roleId="tpee.5680397130376446158" type="tp25.SNodeType" typeId="tp25.1138055754698" id="6574255070746243814" nodeInfo="in">
               <link role="concept" roleId="tp25.1138405853777" targetNodeId="clbe.5882395403881907205" resolveInfo="UnionType" />
             </node>
-            <node role="initializer" roleId="tpee.1068431790190" type=".com.mbeddr.mpsutil.blutil.structure.BuilderExpression" id="6574255070746243815" nodeInfo="ng">
-              <node role="root" type=".com.mbeddr.mpsutil.blutil.structure.ChildStep" id="6574255070746243816" nodeInfo="ng">
-                <link role="childLink" targetNodeId="tpck.5169995583184591170" />
-                <node role="value" type=".com.mbeddr.mpsutil.blutil.structure.ConceptRef" id="6574255070746243828" nodeInfo="ng">
-                  <link role="concept" targetNodeId="clbe.5882395403881907205" resolveInfo="UnionType" />
+            <node role="initializer" roleId="tpee.1068431790190" type="hba4.BuilderExpression" typeId="hba4.4481811096720536877" id="6574255070746243815" nodeInfo="ng">
+              <node role="root" roleId="hba4.4481811096720536927" type="hba4.ChildStep" typeId="hba4.4481811096720537459" id="6574255070746243816" nodeInfo="ng">
+                <link role="childLink" roleId="hba4.4481811096720607067" targetNodeId="tpck.5169995583184591170" />
+                <node role="value" roleId="hba4.6308171743671982944" type="hba4.ConceptRef" typeId="hba4.4481811096720976618" id="6574255070746243828" nodeInfo="ng">
+                  <link role="concept" roleId="hba4.4481811096720976619" targetNodeId="clbe.5882395403881907205" resolveInfo="UnionType" />
                 </node>
-                <node role="children" type=".com.mbeddr.mpsutil.blutil.structure.RefStep" id="6574255070746243818" nodeInfo="ng">
-                  <link role="refLink" targetNodeId="clbe.5882395403881907207" />
-                  <node role="target" type="tpee.LocalInstanceFieldReference" typeId="tpee.7785501532031639928" id="6574255070746243819" nodeInfo="nn">
+                <node role="children" roleId="hba4.4481811096720537463" type="hba4.RefStep" typeId="hba4.4481811096721038000" id="6574255070746243818" nodeInfo="ng">
+                  <link role="refLink" roleId="hba4.4481811096721038001" targetNodeId="clbe.5882395403881907207" />
+                  <node role="target" roleId="hba4.4481811096721038002" type="tpee.LocalInstanceFieldReference" typeId="tpee.7785501532031639928" id="6574255070746243819" nodeInfo="nn">
                     <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="6574255070746243694" resolveInfo="unionDeclaration" />
                   </node>
                 </node>
@@ -11866,25 +11912,25 @@
             <node role="type" roleId="tpee.5680397130376446158" type="tp25.SNodeType" typeId="tp25.1138055754698" id="1806732468136916883" nodeInfo="in">
               <link role="concept" roleId="tp25.1138405853777" targetNodeId="nbyu.1730914748330889909" resolveInfo="MemberMLE" />
             </node>
-            <node role="initializer" roleId="tpee.1068431790190" type=".com.mbeddr.mpsutil.blutil.structure.BuilderExpression" id="1806732468136916884" nodeInfo="ng">
-              <node role="root" type=".com.mbeddr.mpsutil.blutil.structure.ChildStep" id="1806732468136916885" nodeInfo="ng">
-                <link role="childLink" targetNodeId="tpck.5169995583184591170" />
-                <node role="children" type=".com.mbeddr.mpsutil.blutil.structure.SimplePropertyStep" id="1806732468136916887" nodeInfo="ng">
-                  <link role="property" targetNodeId="tpck.1169194664001" resolveInfo="name" />
-                  <node role="value" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="1806732468136916888" nodeInfo="nn">
+            <node role="initializer" roleId="tpee.1068431790190" type="hba4.BuilderExpression" typeId="hba4.4481811096720536877" id="1806732468136916884" nodeInfo="ng">
+              <node role="root" roleId="hba4.4481811096720536927" type="hba4.ChildStep" typeId="hba4.4481811096720537459" id="1806732468136916885" nodeInfo="ng">
+                <link role="childLink" roleId="hba4.4481811096720607067" targetNodeId="tpck.5169995583184591170" />
+                <node role="children" roleId="hba4.4481811096720537463" type="hba4.SimplePropertyStep" typeId="hba4.4481811096720581223" id="1806732468136916887" nodeInfo="ng">
+                  <link role="property" roleId="hba4.4481811096720581232" targetNodeId="tpck.1169194664001" resolveInfo="name" />
+                  <node role="value" roleId="hba4.4481811096720588312" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="1806732468136916888" nodeInfo="nn">
                     <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="1806732468136916876" resolveInfo="name" />
                   </node>
                 </node>
-                <node role="children" type=".com.mbeddr.mpsutil.blutil.structure.ChildStep" id="1806732468136916889" nodeInfo="ng">
-                  <link role="childLink" targetNodeId="mj1l.318113533128716676" />
-                  <node role="value" type=".com.mbeddr.mpsutil.blutil.structure.ExpressionChildValue" id="1806732468136916890" nodeInfo="ng">
-                    <node role="expr" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="1806732468136916891" nodeInfo="nn">
+                <node role="children" roleId="hba4.4481811096720537463" type="hba4.ChildStep" typeId="hba4.4481811096720537459" id="1806732468136916889" nodeInfo="ng">
+                  <link role="childLink" roleId="hba4.4481811096720607067" targetNodeId="mj1l.318113533128716676" />
+                  <node role="value" roleId="hba4.6308171743671982944" type="hba4.ExpressionChildValue" typeId="hba4.734120071946422046" id="1806732468136916890" nodeInfo="ng">
+                    <node role="expr" roleId="hba4.734120071946422047" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="1806732468136916891" nodeInfo="nn">
                       <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="1806732468136916870" resolveInfo="realType" />
                     </node>
                   </node>
                 </node>
-                <node role="value" type=".com.mbeddr.mpsutil.blutil.structure.ConceptRef" id="1806732468136916905" nodeInfo="ng">
-                  <link role="concept" targetNodeId="nbyu.1730914748330889909" resolveInfo="MemberMLE" />
+                <node role="value" roleId="hba4.6308171743671982944" type="hba4.ConceptRef" typeId="hba4.4481811096720976618" id="1806732468136916905" nodeInfo="ng">
+                  <link role="concept" roleId="hba4.4481811096720976619" targetNodeId="nbyu.1730914748330889909" resolveInfo="MemberMLE" />
                 </node>
               </node>
             </node>
@@ -12475,11 +12521,11 @@
               <node role="ifTrue" roleId="tpee.1068580123161" type="tpee.StatementList" typeId="tpee.1068580123136" id="3400910992741629763" nodeInfo="sn">
                 <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="3400910992741629764" nodeInfo="nn">
                   <node role="expression" roleId="tpee.1068580123156" type="tpee.AssignmentExpression" typeId="tpee.1068498886294" id="3400910992741629765" nodeInfo="nn">
-                    <node role="rValue" roleId="tpee.1068498886297" type=".com.mbeddr.mpsutil.blutil.structure.BuilderExpression" id="3400910992741629766" nodeInfo="ng">
-                      <node role="root" type=".com.mbeddr.mpsutil.blutil.structure.ChildStep" id="3400910992741629767" nodeInfo="ng">
-                        <link role="childLink" targetNodeId="tpck.5169995583184591170" />
-                        <node role="value" type=".com.mbeddr.mpsutil.blutil.structure.ConceptRef" id="3400910992741629768" nodeInfo="ng">
-                          <link role="concept" targetNodeId="nbyu.1730914748330889919" resolveInfo="StructMLE" />
+                    <node role="rValue" roleId="tpee.1068498886297" type="hba4.BuilderExpression" typeId="hba4.4481811096720536877" id="3400910992741629766" nodeInfo="ng">
+                      <node role="root" roleId="hba4.4481811096720536927" type="hba4.ChildStep" typeId="hba4.4481811096720537459" id="3400910992741629767" nodeInfo="ng">
+                        <link role="childLink" roleId="hba4.4481811096720607067" targetNodeId="tpck.5169995583184591170" />
+                        <node role="value" roleId="hba4.6308171743671982944" type="hba4.ConceptRef" typeId="hba4.4481811096720976618" id="3400910992741629768" nodeInfo="ng">
+                          <link role="concept" roleId="hba4.4481811096720976619" targetNodeId="nbyu.1730914748330889919" resolveInfo="StructMLE" />
                         </node>
                       </node>
                     </node>
@@ -12502,11 +12548,11 @@
                 <node role="statements" roleId="tpee.1082485599096" type="tpee.StatementList" typeId="tpee.1068580123136" id="3400910992741629774" nodeInfo="sn">
                   <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="3400910992741629775" nodeInfo="nn">
                     <node role="expression" roleId="tpee.1068580123156" type="tpee.AssignmentExpression" typeId="tpee.1068498886294" id="3400910992741629776" nodeInfo="nn">
-                      <node role="rValue" roleId="tpee.1068498886297" type=".com.mbeddr.mpsutil.blutil.structure.BuilderExpression" id="3400910992741629777" nodeInfo="ng">
-                        <node role="root" type=".com.mbeddr.mpsutil.blutil.structure.ChildStep" id="3400910992741629778" nodeInfo="ng">
-                          <link role="childLink" targetNodeId="tpck.5169995583184591170" />
-                          <node role="value" type=".com.mbeddr.mpsutil.blutil.structure.ConceptRef" id="3400910992741629779" nodeInfo="ng">
-                            <link role="concept" targetNodeId="nbyu.1730914748330889922" resolveInfo="UnionMLE" />
+                      <node role="rValue" roleId="tpee.1068498886297" type="hba4.BuilderExpression" typeId="hba4.4481811096720536877" id="3400910992741629777" nodeInfo="ng">
+                        <node role="root" roleId="hba4.4481811096720536927" type="hba4.ChildStep" typeId="hba4.4481811096720537459" id="3400910992741629778" nodeInfo="ng">
+                          <link role="childLink" roleId="hba4.4481811096720607067" targetNodeId="tpck.5169995583184591170" />
+                          <node role="value" roleId="hba4.6308171743671982944" type="hba4.ConceptRef" typeId="hba4.4481811096720976618" id="3400910992741629779" nodeInfo="ng">
+                            <link role="concept" roleId="hba4.4481811096720976619" targetNodeId="nbyu.1730914748330889922" resolveInfo="UnionMLE" />
                           </node>
                         </node>
                       </node>
@@ -12903,11 +12949,11 @@
               <node role="ifTrue" roleId="tpee.1068580123161" type="tpee.StatementList" typeId="tpee.1068580123136" id="940585098340052513" nodeInfo="sn">
                 <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="940585098340052514" nodeInfo="nn">
                   <node role="expression" roleId="tpee.1068580123156" type="tpee.AssignmentExpression" typeId="tpee.1068498886294" id="940585098340052515" nodeInfo="nn">
-                    <node role="rValue" roleId="tpee.1068498886297" type=".com.mbeddr.mpsutil.blutil.structure.BuilderExpression" id="940585098340052516" nodeInfo="ng">
-                      <node role="root" type=".com.mbeddr.mpsutil.blutil.structure.ChildStep" id="940585098340052517" nodeInfo="ng">
-                        <link role="childLink" targetNodeId="tpck.5169995583184591170" />
-                        <node role="value" type=".com.mbeddr.mpsutil.blutil.structure.ConceptRef" id="940585098340052518" nodeInfo="ng">
-                          <link role="concept" targetNodeId="nbyu.1730914748330889919" resolveInfo="StructMLE" />
+                    <node role="rValue" roleId="tpee.1068498886297" type="hba4.BuilderExpression" typeId="hba4.4481811096720536877" id="940585098340052516" nodeInfo="ng">
+                      <node role="root" roleId="hba4.4481811096720536927" type="hba4.ChildStep" typeId="hba4.4481811096720537459" id="940585098340052517" nodeInfo="ng">
+                        <link role="childLink" roleId="hba4.4481811096720607067" targetNodeId="tpck.5169995583184591170" />
+                        <node role="value" roleId="hba4.6308171743671982944" type="hba4.ConceptRef" typeId="hba4.4481811096720976618" id="940585098340052518" nodeInfo="ng">
+                          <link role="concept" roleId="hba4.4481811096720976619" targetNodeId="nbyu.1730914748330889919" resolveInfo="StructMLE" />
                         </node>
                       </node>
                     </node>
@@ -12930,11 +12976,11 @@
                 <node role="statements" roleId="tpee.1082485599096" type="tpee.StatementList" typeId="tpee.1068580123136" id="940585098340052524" nodeInfo="sn">
                   <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="940585098340052525" nodeInfo="nn">
                     <node role="expression" roleId="tpee.1068580123156" type="tpee.AssignmentExpression" typeId="tpee.1068498886294" id="940585098340052526" nodeInfo="nn">
-                      <node role="rValue" roleId="tpee.1068498886297" type=".com.mbeddr.mpsutil.blutil.structure.BuilderExpression" id="940585098340052527" nodeInfo="ng">
-                        <node role="root" type=".com.mbeddr.mpsutil.blutil.structure.ChildStep" id="940585098340052528" nodeInfo="ng">
-                          <link role="childLink" targetNodeId="tpck.5169995583184591170" />
-                          <node role="value" type=".com.mbeddr.mpsutil.blutil.structure.ConceptRef" id="940585098340052529" nodeInfo="ng">
-                            <link role="concept" targetNodeId="nbyu.1730914748330889922" resolveInfo="UnionMLE" />
+                      <node role="rValue" roleId="tpee.1068498886297" type="hba4.BuilderExpression" typeId="hba4.4481811096720536877" id="940585098340052527" nodeInfo="ng">
+                        <node role="root" roleId="hba4.4481811096720536927" type="hba4.ChildStep" typeId="hba4.4481811096720537459" id="940585098340052528" nodeInfo="ng">
+                          <link role="childLink" roleId="hba4.4481811096720607067" targetNodeId="tpck.5169995583184591170" />
+                          <node role="value" roleId="hba4.6308171743671982944" type="hba4.ConceptRef" typeId="hba4.4481811096720976618" id="940585098340052529" nodeInfo="ng">
+                            <link role="concept" roleId="hba4.4481811096720976619" targetNodeId="nbyu.1730914748330889922" resolveInfo="UnionMLE" />
                           </node>
                         </node>
                       </node>
@@ -13014,22 +13060,22 @@
                 <node role="type" roleId="tpee.5680397130376446158" type="tp25.SNodeType" typeId="tp25.1138055754698" id="940585098340052570" nodeInfo="in">
                   <link role="concept" roleId="tp25.1138405853777" targetNodeId="nbyu.1730914748330889914" resolveInfo="NVMLayoutSpec" />
                 </node>
-                <node role="initializer" roleId="tpee.1068431790190" type=".com.mbeddr.mpsutil.blutil.structure.BuilderExpression" id="940585098340052571" nodeInfo="ng">
-                  <node role="root" type=".com.mbeddr.mpsutil.blutil.structure.ChildStep" id="940585098340052572" nodeInfo="ng">
-                    <link role="childLink" targetNodeId="tpck.5169995583184591170" />
-                    <node role="value" type=".com.mbeddr.mpsutil.blutil.structure.ConceptRef" id="940585098340052573" nodeInfo="ng">
-                      <link role="concept" targetNodeId="nbyu.1730914748330889914" resolveInfo="NVMLayoutSpec" />
+                <node role="initializer" roleId="tpee.1068431790190" type="hba4.BuilderExpression" typeId="hba4.4481811096720536877" id="940585098340052571" nodeInfo="ng">
+                  <node role="root" roleId="hba4.4481811096720536927" type="hba4.ChildStep" typeId="hba4.4481811096720537459" id="940585098340052572" nodeInfo="ng">
+                    <link role="childLink" roleId="hba4.4481811096720607067" targetNodeId="tpck.5169995583184591170" />
+                    <node role="value" roleId="hba4.6308171743671982944" type="hba4.ConceptRef" typeId="hba4.4481811096720976618" id="940585098340052573" nodeInfo="ng">
+                      <link role="concept" roleId="hba4.4481811096720976619" targetNodeId="nbyu.1730914748330889914" resolveInfo="NVMLayoutSpec" />
                     </node>
-                    <node role="children" type=".com.mbeddr.mpsutil.blutil.structure.SimplePropertyStep" id="940585098340052574" nodeInfo="ng">
-                      <link role="property" targetNodeId="tpck.1169194664001" resolveInfo="name" />
-                      <node role="value" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="940585098340052575" nodeInfo="nn">
+                    <node role="children" roleId="hba4.4481811096720537463" type="hba4.SimplePropertyStep" typeId="hba4.4481811096720581223" id="940585098340052574" nodeInfo="ng">
+                      <link role="property" roleId="hba4.4481811096720581232" targetNodeId="tpck.1169194664001" resolveInfo="name" />
+                      <node role="value" roleId="hba4.4481811096720588312" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="940585098340052575" nodeInfo="nn">
                         <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="940585098340052534" resolveInfo="uniqueName" />
                       </node>
                     </node>
-                    <node role="children" type=".com.mbeddr.mpsutil.blutil.structure.ChildStep" id="940585098340052576" nodeInfo="ng">
-                      <link role="childLink" targetNodeId="nbyu.1730914748330889915" />
-                      <node role="value" type=".com.mbeddr.mpsutil.blutil.structure.ExpressionChildValue" id="940585098340052577" nodeInfo="ng">
-                        <node role="expr" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="940585098340052578" nodeInfo="nn">
+                    <node role="children" roleId="hba4.4481811096720537463" type="hba4.ChildStep" typeId="hba4.4481811096720537459" id="940585098340052576" nodeInfo="ng">
+                      <link role="childLink" roleId="hba4.4481811096720607067" targetNodeId="nbyu.1730914748330889915" />
+                      <node role="value" roleId="hba4.6308171743671982944" type="hba4.ExpressionChildValue" typeId="hba4.734120071946422046" id="940585098340052577" nodeInfo="ng">
+                        <node role="expr" roleId="hba4.734120071946422047" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="940585098340052578" nodeInfo="nn">
                           <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="940585098340052510" resolveInfo="newMLE" />
                         </node>
                       </node>
@@ -14381,8 +14427,8 @@
               <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="638966541988364856" resolveInfo="relativePath" />
             </node>
             <node role="rValue" roleId="tpee.1068498886297" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="638966541988364845" nodeInfo="nn">
-              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="aow2.~StringUtils%dremoveEnd(java%dlang%dString,java%dlang%dString)%cjava%dlang%dString" resolveInfo="removeEnd" />
-              <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="aow2.~StringUtils" resolveInfo="StringUtils" />
+              <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="z68t.~StringUtils" resolveInfo="StringUtils" />
+              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="z68t.~StringUtils%dremoveEnd(java%dlang%dString,java%dlang%dString)%cjava%dlang%dString" resolveInfo="removeEnd" />
               <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.VariableReference" typeId="tpee.1068498886296" id="5058375741168351293" nodeInfo="nn">
                 <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="638966541988364856" resolveInfo="relativePath" />
               </node>
@@ -14398,8 +14444,8 @@
               <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="638966541988364856" resolveInfo="relativePath" />
             </node>
             <node role="rValue" roleId="tpee.1068498886297" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="638966541988364851" nodeInfo="nn">
-              <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="aow2.~StringUtils" resolveInfo="StringUtils" />
-              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="aow2.~StringUtils%dremoveEnd(java%dlang%dString,java%dlang%dString)%cjava%dlang%dString" resolveInfo="removeEnd" />
+              <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="z68t.~StringUtils" resolveInfo="StringUtils" />
+              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="z68t.~StringUtils%dremoveEnd(java%dlang%dString,java%dlang%dString)%cjava%dlang%dString" resolveInfo="removeEnd" />
               <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.VariableReference" typeId="tpee.1068498886296" id="5058375741168493247" nodeInfo="nn">
                 <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="638966541988364856" resolveInfo="relativePath" />
               </node>
@@ -14979,8 +15025,8 @@
             </node>
           </node>
           <node role="condition" roleId="tpee.1068580123160" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="638966541988365095" nodeInfo="nn">
-            <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="aow2.~StringUtils%disNotEmpty(java%dlang%dString)%cboolean" resolveInfo="isNotEmpty" />
-            <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="aow2.~StringUtils" resolveInfo="StringUtils" />
+            <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="z68t.~StringUtils" resolveInfo="StringUtils" />
+            <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="z68t.~StringUtils%disNotEmpty(java%dlang%dString)%cboolean" resolveInfo="isNotEmpty" />
             <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="638966541988365096" nodeInfo="nn">
               <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="638966541988365045" resolveInfo="pathVariable" />
             </node>
@@ -15134,8 +15180,8 @@
                 <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="638966541988365319" resolveInfo="targetModel" />
               </node>
             </node>
-            <node role="type" roleId="tpee.5680397130376446158" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="638966541988365277" nodeInfo="in">
-              <link role="classifier" roleId="tpee.1107535924139" targetNodeId="cu2c.~SModelDescriptor" resolveInfo="SModelDescriptor" />
+            <node role="type" roleId="tpee.5680397130376446158" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="3208636348800223760" nodeInfo="in">
+              <link role="classifier" roleId="tpee.1107535924139" targetNodeId="ec5l.~SModel" resolveInfo="SModel" />
             </node>
           </node>
         </node>
@@ -15526,9 +15572,9 @@
       <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="638966541988365451" nodeInfo="sn">
         <node role="statement" roleId="tpee.1068581517665" type="tpee.CommentedStatementsBlock" typeId="tpee.1177326519037" id="638966541988365452" nodeInfo="nn">
           <node role="statement" roleId="tpee.1177326540772" type="tpee.Statement" typeId="tpee.1068580123157" id="638966541988365453" nodeInfo="nn">
-            <node role="smodelAttribute" roleId="tpck.5169995583184591170" type=".com.mbeddr.mpsutil.bldoc.structure.KnownBug" id="638966541988365454" nodeInfo="ng">
-              <property name="text" value="performance issue with comments" />
-              <property name="bugNumber" value="91" />
+            <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="7aka.KnownBug" typeId="7aka.14270488321463783" id="638966541988365454" nodeInfo="ng">
+              <property name="text" nameId="7aka.14270488321463784" value="performance issue with comments" />
+              <property name="bugNumber" nameId="7aka.14270488321463788" value="91" />
             </node>
           </node>
           <node role="statement" roleId="tpee.1177326540772" type="tp2q.ForEachStatement" typeId="tp2q.1153943597977" id="638966541988365455" nodeInfo="nn">
@@ -15583,21 +15629,21 @@
                     </node>
                   </node>
                   <node role="operation" roleId="tpee.1197027833540" type="tp2q.AddElementOperation" typeId="tp2q.1160612413312" id="638966541988365478" nodeInfo="nn">
-                    <node role="argument" roleId="tp2q.1160612519549" type=".com.mbeddr.mpsutil.blutil.structure.BuilderExpression" id="638966541988365479" nodeInfo="ng">
-                      <node role="root" type=".com.mbeddr.mpsutil.blutil.structure.ChildStep" id="638966541988365480" nodeInfo="ng">
-                        <link role="childLink" targetNodeId="tpck.5169995583184591170" />
-                        <node role="value" type=".com.mbeddr.mpsutil.blutil.structure.ConceptRef" id="638966541988365481" nodeInfo="ng">
-                          <link role="concept" targetNodeId="x27k.2877808180148899328" resolveInfo="CommentModuleContent" />
+                    <node role="argument" roleId="tp2q.1160612519549" type="hba4.BuilderExpression" typeId="hba4.4481811096720536877" id="638966541988365479" nodeInfo="ng">
+                      <node role="root" roleId="hba4.4481811096720536927" type="hba4.ChildStep" typeId="hba4.4481811096720537459" id="638966541988365480" nodeInfo="ng">
+                        <link role="childLink" roleId="hba4.4481811096720607067" targetNodeId="tpck.5169995583184591170" />
+                        <node role="value" roleId="hba4.6308171743671982944" type="hba4.ConceptRef" typeId="hba4.4481811096720976618" id="638966541988365481" nodeInfo="ng">
+                          <link role="concept" roleId="hba4.4481811096720976619" targetNodeId="x27k.2877808180148899328" resolveInfo="CommentModuleContent" />
                         </node>
-                        <node role="children" type=".com.mbeddr.mpsutil.blutil.structure.SimplePropertyStep" id="638966541988365482" nodeInfo="ng">
-                          <link role="property" targetNodeId="x27k.2877808180148899333" resolveInfo="comment" />
-                          <node role="value" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="638966541988365483" nodeInfo="nn">
+                        <node role="children" roleId="hba4.4481811096720537463" type="hba4.SimplePropertyStep" typeId="hba4.4481811096720581223" id="638966541988365482" nodeInfo="ng">
+                          <link role="property" roleId="hba4.4481811096720581232" targetNodeId="x27k.2877808180148899333" resolveInfo="comment" />
+                          <node role="value" roleId="hba4.4481811096720588312" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="638966541988365483" nodeInfo="nn">
                             <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="638966541988365466" resolveInfo="comment" />
                           </node>
                         </node>
-                        <node role="children" type=".com.mbeddr.mpsutil.blutil.structure.SimplePropertyStep" id="638966541988365484" nodeInfo="ng">
-                          <link role="property" targetNodeId="tpck.1169194664001" resolveInfo="name" />
-                          <node role="value" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="638966541988365485" nodeInfo="nn">
+                        <node role="children" roleId="hba4.4481811096720537463" type="hba4.SimplePropertyStep" typeId="hba4.4481811096720581223" id="638966541988365484" nodeInfo="ng">
+                          <link role="property" roleId="hba4.4481811096720581232" targetNodeId="tpck.1169194664001" resolveInfo="name" />
+                          <node role="value" roleId="hba4.4481811096720588312" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="638966541988365485" nodeInfo="nn">
                             <property name="value" nameId="tpee.1070475926801" value="&lt;no name&gt;" />
                           </node>
                         </node>
@@ -16116,11 +16162,11 @@
           <node role="ifTrue" roleId="tpee.1068580123161" type="tpee.StatementList" typeId="tpee.1068580123136" id="638966541988365733" nodeInfo="sn">
             <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="638966541988365734" nodeInfo="nn">
               <node role="expression" roleId="tpee.1068580123156" type="tpee.AssignmentExpression" typeId="tpee.1068498886294" id="638966541988365735" nodeInfo="nn">
-                <node role="rValue" roleId="tpee.1068498886297" type=".com.mbeddr.mpsutil.blutil.structure.BuilderExpression" id="638966541988365736" nodeInfo="ng">
-                  <node role="root" type=".com.mbeddr.mpsutil.blutil.structure.ChildStep" id="638966541988365737" nodeInfo="ng">
-                    <link role="childLink" targetNodeId="tpck.5169995583184591170" />
-                    <node role="value" type=".com.mbeddr.mpsutil.blutil.structure.ConceptRef" id="638966541988365738" nodeInfo="ng">
-                      <link role="concept" targetNodeId="mj1l.8463282783691618426" resolveInfo="Int8tType" />
+                <node role="rValue" roleId="tpee.1068498886297" type="hba4.BuilderExpression" typeId="hba4.4481811096720536877" id="638966541988365736" nodeInfo="ng">
+                  <node role="root" roleId="hba4.4481811096720536927" type="hba4.ChildStep" typeId="hba4.4481811096720537459" id="638966541988365737" nodeInfo="ng">
+                    <link role="childLink" roleId="hba4.4481811096720607067" targetNodeId="tpck.5169995583184591170" />
+                    <node role="value" roleId="hba4.6308171743671982944" type="hba4.ConceptRef" typeId="hba4.4481811096720976618" id="638966541988365738" nodeInfo="ng">
+                      <link role="concept" roleId="hba4.4481811096720976619" targetNodeId="mj1l.8463282783691618426" resolveInfo="Int8tType" />
                     </node>
                   </node>
                 </node>
@@ -16146,11 +16192,11 @@
           <node role="ifTrue" roleId="tpee.1068580123161" type="tpee.StatementList" typeId="tpee.1068580123136" id="638966541988365745" nodeInfo="sn">
             <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="638966541988365746" nodeInfo="nn">
               <node role="expression" roleId="tpee.1068580123156" type="tpee.AssignmentExpression" typeId="tpee.1068498886294" id="638966541988365747" nodeInfo="nn">
-                <node role="rValue" roleId="tpee.1068498886297" type=".com.mbeddr.mpsutil.blutil.structure.BuilderExpression" id="638966541988365748" nodeInfo="ng">
-                  <node role="root" type=".com.mbeddr.mpsutil.blutil.structure.ChildStep" id="638966541988365749" nodeInfo="ng">
-                    <link role="childLink" targetNodeId="tpck.5169995583184591170" />
-                    <node role="value" type=".com.mbeddr.mpsutil.blutil.structure.ConceptRef" id="638966541988365750" nodeInfo="ng">
-                      <link role="concept" targetNodeId="mj1l.8463282783691618435" resolveInfo="Int16tType" />
+                <node role="rValue" roleId="tpee.1068498886297" type="hba4.BuilderExpression" typeId="hba4.4481811096720536877" id="638966541988365748" nodeInfo="ng">
+                  <node role="root" roleId="hba4.4481811096720536927" type="hba4.ChildStep" typeId="hba4.4481811096720537459" id="638966541988365749" nodeInfo="ng">
+                    <link role="childLink" roleId="hba4.4481811096720607067" targetNodeId="tpck.5169995583184591170" />
+                    <node role="value" roleId="hba4.6308171743671982944" type="hba4.ConceptRef" typeId="hba4.4481811096720976618" id="638966541988365750" nodeInfo="ng">
+                      <link role="concept" roleId="hba4.4481811096720976619" targetNodeId="mj1l.8463282783691618435" resolveInfo="Int16tType" />
                     </node>
                   </node>
                 </node>
@@ -16176,11 +16222,11 @@
           <node role="ifTrue" roleId="tpee.1068580123161" type="tpee.StatementList" typeId="tpee.1068580123136" id="638966541988365757" nodeInfo="sn">
             <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="638966541988365758" nodeInfo="nn">
               <node role="expression" roleId="tpee.1068580123156" type="tpee.AssignmentExpression" typeId="tpee.1068498886294" id="638966541988365759" nodeInfo="nn">
-                <node role="rValue" roleId="tpee.1068498886297" type=".com.mbeddr.mpsutil.blutil.structure.BuilderExpression" id="638966541988365760" nodeInfo="ng">
-                  <node role="root" type=".com.mbeddr.mpsutil.blutil.structure.ChildStep" id="638966541988365761" nodeInfo="ng">
-                    <link role="childLink" targetNodeId="tpck.5169995583184591170" />
-                    <node role="value" type=".com.mbeddr.mpsutil.blutil.structure.ConceptRef" id="638966541988365762" nodeInfo="ng">
-                      <link role="concept" targetNodeId="mj1l.8463282783691618440" resolveInfo="Int32tType" />
+                <node role="rValue" roleId="tpee.1068498886297" type="hba4.BuilderExpression" typeId="hba4.4481811096720536877" id="638966541988365760" nodeInfo="ng">
+                  <node role="root" roleId="hba4.4481811096720536927" type="hba4.ChildStep" typeId="hba4.4481811096720537459" id="638966541988365761" nodeInfo="ng">
+                    <link role="childLink" roleId="hba4.4481811096720607067" targetNodeId="tpck.5169995583184591170" />
+                    <node role="value" roleId="hba4.6308171743671982944" type="hba4.ConceptRef" typeId="hba4.4481811096720976618" id="638966541988365762" nodeInfo="ng">
+                      <link role="concept" roleId="hba4.4481811096720976619" targetNodeId="mj1l.8463282783691618440" resolveInfo="Int32tType" />
                     </node>
                   </node>
                 </node>
@@ -16206,11 +16252,11 @@
           <node role="ifTrue" roleId="tpee.1068580123161" type="tpee.StatementList" typeId="tpee.1068580123136" id="638966541988365769" nodeInfo="sn">
             <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="638966541988365770" nodeInfo="nn">
               <node role="expression" roleId="tpee.1068580123156" type="tpee.AssignmentExpression" typeId="tpee.1068498886294" id="638966541988365771" nodeInfo="nn">
-                <node role="rValue" roleId="tpee.1068498886297" type=".com.mbeddr.mpsutil.blutil.structure.BuilderExpression" id="638966541988365772" nodeInfo="ng">
-                  <node role="root" type=".com.mbeddr.mpsutil.blutil.structure.ChildStep" id="638966541988365773" nodeInfo="ng">
-                    <link role="childLink" targetNodeId="tpck.5169995583184591170" />
-                    <node role="value" type=".com.mbeddr.mpsutil.blutil.structure.ConceptRef" id="638966541988365774" nodeInfo="ng">
-                      <link role="concept" targetNodeId="mj1l.8463282783691618445" resolveInfo="Int64tType" />
+                <node role="rValue" roleId="tpee.1068498886297" type="hba4.BuilderExpression" typeId="hba4.4481811096720536877" id="638966541988365772" nodeInfo="ng">
+                  <node role="root" roleId="hba4.4481811096720536927" type="hba4.ChildStep" typeId="hba4.4481811096720537459" id="638966541988365773" nodeInfo="ng">
+                    <link role="childLink" roleId="hba4.4481811096720607067" targetNodeId="tpck.5169995583184591170" />
+                    <node role="value" roleId="hba4.6308171743671982944" type="hba4.ConceptRef" typeId="hba4.4481811096720976618" id="638966541988365774" nodeInfo="ng">
+                      <link role="concept" roleId="hba4.4481811096720976619" targetNodeId="mj1l.8463282783691618445" resolveInfo="Int64tType" />
                     </node>
                   </node>
                 </node>
@@ -16236,11 +16282,11 @@
           <node role="ifTrue" roleId="tpee.1068580123161" type="tpee.StatementList" typeId="tpee.1068580123136" id="638966541988365781" nodeInfo="sn">
             <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="638966541988365782" nodeInfo="nn">
               <node role="expression" roleId="tpee.1068580123156" type="tpee.AssignmentExpression" typeId="tpee.1068498886294" id="638966541988365783" nodeInfo="nn">
-                <node role="rValue" roleId="tpee.1068498886297" type=".com.mbeddr.mpsutil.blutil.structure.BuilderExpression" id="638966541988365784" nodeInfo="ng">
-                  <node role="root" type=".com.mbeddr.mpsutil.blutil.structure.ChildStep" id="638966541988365785" nodeInfo="ng">
-                    <link role="childLink" targetNodeId="tpck.5169995583184591170" />
-                    <node role="value" type=".com.mbeddr.mpsutil.blutil.structure.ConceptRef" id="638966541988365786" nodeInfo="ng">
-                      <link role="concept" targetNodeId="mj1l.8463282783691618461" resolveInfo="UnsignedInt8tType" />
+                <node role="rValue" roleId="tpee.1068498886297" type="hba4.BuilderExpression" typeId="hba4.4481811096720536877" id="638966541988365784" nodeInfo="ng">
+                  <node role="root" roleId="hba4.4481811096720536927" type="hba4.ChildStep" typeId="hba4.4481811096720537459" id="638966541988365785" nodeInfo="ng">
+                    <link role="childLink" roleId="hba4.4481811096720607067" targetNodeId="tpck.5169995583184591170" />
+                    <node role="value" roleId="hba4.6308171743671982944" type="hba4.ConceptRef" typeId="hba4.4481811096720976618" id="638966541988365786" nodeInfo="ng">
+                      <link role="concept" roleId="hba4.4481811096720976619" targetNodeId="mj1l.8463282783691618461" resolveInfo="UnsignedInt8tType" />
                     </node>
                   </node>
                 </node>
@@ -16266,11 +16312,11 @@
           <node role="ifTrue" roleId="tpee.1068580123161" type="tpee.StatementList" typeId="tpee.1068580123136" id="638966541988365793" nodeInfo="sn">
             <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="638966541988365794" nodeInfo="nn">
               <node role="expression" roleId="tpee.1068580123156" type="tpee.AssignmentExpression" typeId="tpee.1068498886294" id="638966541988365795" nodeInfo="nn">
-                <node role="rValue" roleId="tpee.1068498886297" type=".com.mbeddr.mpsutil.blutil.structure.BuilderExpression" id="638966541988365796" nodeInfo="ng">
-                  <node role="root" type=".com.mbeddr.mpsutil.blutil.structure.ChildStep" id="638966541988365797" nodeInfo="ng">
-                    <link role="childLink" targetNodeId="tpck.5169995583184591170" />
-                    <node role="value" type=".com.mbeddr.mpsutil.blutil.structure.ConceptRef" id="638966541988365798" nodeInfo="ng">
-                      <link role="concept" targetNodeId="mj1l.8463282783691618466" resolveInfo="UnsignedInt16tType" />
+                <node role="rValue" roleId="tpee.1068498886297" type="hba4.BuilderExpression" typeId="hba4.4481811096720536877" id="638966541988365796" nodeInfo="ng">
+                  <node role="root" roleId="hba4.4481811096720536927" type="hba4.ChildStep" typeId="hba4.4481811096720537459" id="638966541988365797" nodeInfo="ng">
+                    <link role="childLink" roleId="hba4.4481811096720607067" targetNodeId="tpck.5169995583184591170" />
+                    <node role="value" roleId="hba4.6308171743671982944" type="hba4.ConceptRef" typeId="hba4.4481811096720976618" id="638966541988365798" nodeInfo="ng">
+                      <link role="concept" roleId="hba4.4481811096720976619" targetNodeId="mj1l.8463282783691618466" resolveInfo="UnsignedInt16tType" />
                     </node>
                   </node>
                 </node>
@@ -16296,11 +16342,11 @@
           <node role="ifTrue" roleId="tpee.1068580123161" type="tpee.StatementList" typeId="tpee.1068580123136" id="638966541988365805" nodeInfo="sn">
             <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="638966541988365806" nodeInfo="nn">
               <node role="expression" roleId="tpee.1068580123156" type="tpee.AssignmentExpression" typeId="tpee.1068498886294" id="638966541988365807" nodeInfo="nn">
-                <node role="rValue" roleId="tpee.1068498886297" type=".com.mbeddr.mpsutil.blutil.structure.BuilderExpression" id="638966541988365808" nodeInfo="ng">
-                  <node role="root" type=".com.mbeddr.mpsutil.blutil.structure.ChildStep" id="638966541988365809" nodeInfo="ng">
-                    <link role="childLink" targetNodeId="tpck.5169995583184591170" />
-                    <node role="value" type=".com.mbeddr.mpsutil.blutil.structure.ConceptRef" id="638966541988365810" nodeInfo="ng">
-                      <link role="concept" targetNodeId="mj1l.8463282783691618450" resolveInfo="UnsignedInt32tType" />
+                <node role="rValue" roleId="tpee.1068498886297" type="hba4.BuilderExpression" typeId="hba4.4481811096720536877" id="638966541988365808" nodeInfo="ng">
+                  <node role="root" roleId="hba4.4481811096720536927" type="hba4.ChildStep" typeId="hba4.4481811096720537459" id="638966541988365809" nodeInfo="ng">
+                    <link role="childLink" roleId="hba4.4481811096720607067" targetNodeId="tpck.5169995583184591170" />
+                    <node role="value" roleId="hba4.6308171743671982944" type="hba4.ConceptRef" typeId="hba4.4481811096720976618" id="638966541988365810" nodeInfo="ng">
+                      <link role="concept" roleId="hba4.4481811096720976619" targetNodeId="mj1l.8463282783691618450" resolveInfo="UnsignedInt32tType" />
                     </node>
                   </node>
                 </node>
@@ -16326,11 +16372,11 @@
           <node role="ifTrue" roleId="tpee.1068580123161" type="tpee.StatementList" typeId="tpee.1068580123136" id="638966541988365817" nodeInfo="sn">
             <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="638966541988365818" nodeInfo="nn">
               <node role="expression" roleId="tpee.1068580123156" type="tpee.AssignmentExpression" typeId="tpee.1068498886294" id="638966541988365819" nodeInfo="nn">
-                <node role="rValue" roleId="tpee.1068498886297" type=".com.mbeddr.mpsutil.blutil.structure.BuilderExpression" id="638966541988365820" nodeInfo="ng">
-                  <node role="root" type=".com.mbeddr.mpsutil.blutil.structure.ChildStep" id="638966541988365821" nodeInfo="ng">
-                    <link role="childLink" targetNodeId="tpck.5169995583184591170" />
-                    <node role="value" type=".com.mbeddr.mpsutil.blutil.structure.ConceptRef" id="638966541988365822" nodeInfo="ng">
-                      <link role="concept" targetNodeId="mj1l.8463282783691618456" resolveInfo="UnsignedInt64tType" />
+                <node role="rValue" roleId="tpee.1068498886297" type="hba4.BuilderExpression" typeId="hba4.4481811096720536877" id="638966541988365820" nodeInfo="ng">
+                  <node role="root" roleId="hba4.4481811096720536927" type="hba4.ChildStep" typeId="hba4.4481811096720537459" id="638966541988365821" nodeInfo="ng">
+                    <link role="childLink" roleId="hba4.4481811096720607067" targetNodeId="tpck.5169995583184591170" />
+                    <node role="value" roleId="hba4.6308171743671982944" type="hba4.ConceptRef" typeId="hba4.4481811096720976618" id="638966541988365822" nodeInfo="ng">
+                      <link role="concept" roleId="hba4.4481811096720976619" targetNodeId="mj1l.8463282783691618456" resolveInfo="UnsignedInt64tType" />
                     </node>
                   </node>
                 </node>
@@ -16356,11 +16402,11 @@
           <node role="ifTrue" roleId="tpee.1068580123161" type="tpee.StatementList" typeId="tpee.1068580123136" id="638966541988365829" nodeInfo="sn">
             <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="638966541988365830" nodeInfo="nn">
               <node role="expression" roleId="tpee.1068580123156" type="tpee.AssignmentExpression" typeId="tpee.1068498886294" id="638966541988365831" nodeInfo="nn">
-                <node role="rValue" roleId="tpee.1068498886297" type=".com.mbeddr.mpsutil.blutil.structure.BuilderExpression" id="638966541988365832" nodeInfo="ng">
-                  <node role="root" type=".com.mbeddr.mpsutil.blutil.structure.ChildStep" id="638966541988365833" nodeInfo="ng">
-                    <link role="childLink" targetNodeId="tpck.5169995583184591170" />
-                    <node role="value" type=".com.mbeddr.mpsutil.blutil.structure.ConceptRef" id="638966541988365834" nodeInfo="ng">
-                      <link role="concept" targetNodeId="mj1l.8463282783691618461" resolveInfo="UnsignedInt8tType" />
+                <node role="rValue" roleId="tpee.1068498886297" type="hba4.BuilderExpression" typeId="hba4.4481811096720536877" id="638966541988365832" nodeInfo="ng">
+                  <node role="root" roleId="hba4.4481811096720536927" type="hba4.ChildStep" typeId="hba4.4481811096720537459" id="638966541988365833" nodeInfo="ng">
+                    <link role="childLink" roleId="hba4.4481811096720607067" targetNodeId="tpck.5169995583184591170" />
+                    <node role="value" roleId="hba4.6308171743671982944" type="hba4.ConceptRef" typeId="hba4.4481811096720976618" id="638966541988365834" nodeInfo="ng">
+                      <link role="concept" roleId="hba4.4481811096720976619" targetNodeId="mj1l.8463282783691618461" resolveInfo="UnsignedInt8tType" />
                     </node>
                   </node>
                 </node>
@@ -16386,11 +16432,11 @@
           <node role="ifTrue" roleId="tpee.1068580123161" type="tpee.StatementList" typeId="tpee.1068580123136" id="638966541988365841" nodeInfo="sn">
             <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="638966541988365842" nodeInfo="nn">
               <node role="expression" roleId="tpee.1068580123156" type="tpee.AssignmentExpression" typeId="tpee.1068498886294" id="638966541988365843" nodeInfo="nn">
-                <node role="rValue" roleId="tpee.1068498886297" type=".com.mbeddr.mpsutil.blutil.structure.BuilderExpression" id="638966541988365844" nodeInfo="ng">
-                  <node role="root" type=".com.mbeddr.mpsutil.blutil.structure.ChildStep" id="638966541988365845" nodeInfo="ng">
-                    <link role="childLink" targetNodeId="tpck.5169995583184591170" />
-                    <node role="value" type=".com.mbeddr.mpsutil.blutil.structure.ConceptRef" id="638966541988365846" nodeInfo="ng">
-                      <link role="concept" targetNodeId="mj1l.8463282783691618466" resolveInfo="UnsignedInt16tType" />
+                <node role="rValue" roleId="tpee.1068498886297" type="hba4.BuilderExpression" typeId="hba4.4481811096720536877" id="638966541988365844" nodeInfo="ng">
+                  <node role="root" roleId="hba4.4481811096720536927" type="hba4.ChildStep" typeId="hba4.4481811096720537459" id="638966541988365845" nodeInfo="ng">
+                    <link role="childLink" roleId="hba4.4481811096720607067" targetNodeId="tpck.5169995583184591170" />
+                    <node role="value" roleId="hba4.6308171743671982944" type="hba4.ConceptRef" typeId="hba4.4481811096720976618" id="638966541988365846" nodeInfo="ng">
+                      <link role="concept" roleId="hba4.4481811096720976619" targetNodeId="mj1l.8463282783691618466" resolveInfo="UnsignedInt16tType" />
                     </node>
                   </node>
                 </node>
@@ -16416,11 +16462,11 @@
           <node role="ifTrue" roleId="tpee.1068580123161" type="tpee.StatementList" typeId="tpee.1068580123136" id="638966541988365853" nodeInfo="sn">
             <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="638966541988365854" nodeInfo="nn">
               <node role="expression" roleId="tpee.1068580123156" type="tpee.AssignmentExpression" typeId="tpee.1068498886294" id="638966541988365855" nodeInfo="nn">
-                <node role="rValue" roleId="tpee.1068498886297" type=".com.mbeddr.mpsutil.blutil.structure.BuilderExpression" id="638966541988365856" nodeInfo="ng">
-                  <node role="root" type=".com.mbeddr.mpsutil.blutil.structure.ChildStep" id="638966541988365857" nodeInfo="ng">
-                    <link role="childLink" targetNodeId="tpck.5169995583184591170" />
-                    <node role="value" type=".com.mbeddr.mpsutil.blutil.structure.ConceptRef" id="638966541988365858" nodeInfo="ng">
-                      <link role="concept" targetNodeId="mj1l.8463282783691618450" resolveInfo="UnsignedInt32tType" />
+                <node role="rValue" roleId="tpee.1068498886297" type="hba4.BuilderExpression" typeId="hba4.4481811096720536877" id="638966541988365856" nodeInfo="ng">
+                  <node role="root" roleId="hba4.4481811096720536927" type="hba4.ChildStep" typeId="hba4.4481811096720537459" id="638966541988365857" nodeInfo="ng">
+                    <link role="childLink" roleId="hba4.4481811096720607067" targetNodeId="tpck.5169995583184591170" />
+                    <node role="value" roleId="hba4.6308171743671982944" type="hba4.ConceptRef" typeId="hba4.4481811096720976618" id="638966541988365858" nodeInfo="ng">
+                      <link role="concept" roleId="hba4.4481811096720976619" targetNodeId="mj1l.8463282783691618450" resolveInfo="UnsignedInt32tType" />
                     </node>
                   </node>
                 </node>
@@ -16446,11 +16492,11 @@
           <node role="ifTrue" roleId="tpee.1068580123161" type="tpee.StatementList" typeId="tpee.1068580123136" id="638966541988365865" nodeInfo="sn">
             <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="638966541988365866" nodeInfo="nn">
               <node role="expression" roleId="tpee.1068580123156" type="tpee.AssignmentExpression" typeId="tpee.1068498886294" id="638966541988365867" nodeInfo="nn">
-                <node role="rValue" roleId="tpee.1068498886297" type=".com.mbeddr.mpsutil.blutil.structure.BuilderExpression" id="638966541988365868" nodeInfo="ng">
-                  <node role="root" type=".com.mbeddr.mpsutil.blutil.structure.ChildStep" id="638966541988365869" nodeInfo="ng">
-                    <link role="childLink" targetNodeId="tpck.5169995583184591170" />
-                    <node role="value" type=".com.mbeddr.mpsutil.blutil.structure.ConceptRef" id="638966541988365870" nodeInfo="ng">
-                      <link role="concept" targetNodeId="mj1l.8463282783691618456" resolveInfo="UnsignedInt64tType" />
+                <node role="rValue" roleId="tpee.1068498886297" type="hba4.BuilderExpression" typeId="hba4.4481811096720536877" id="638966541988365868" nodeInfo="ng">
+                  <node role="root" roleId="hba4.4481811096720536927" type="hba4.ChildStep" typeId="hba4.4481811096720537459" id="638966541988365869" nodeInfo="ng">
+                    <link role="childLink" roleId="hba4.4481811096720607067" targetNodeId="tpck.5169995583184591170" />
+                    <node role="value" roleId="hba4.6308171743671982944" type="hba4.ConceptRef" typeId="hba4.4481811096720976618" id="638966541988365870" nodeInfo="ng">
+                      <link role="concept" roleId="hba4.4481811096720976619" targetNodeId="mj1l.8463282783691618456" resolveInfo="UnsignedInt64tType" />
                     </node>
                   </node>
                 </node>
@@ -16624,11 +16670,10 @@
         <link role="classifier" roleId="tpee.1107535924139" targetNodeId="2009438888129319782" resolveInfo="DeclaratorDTO" />
       </node>
       <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="638966541988531466" nodeInfo="nn">
-        <node role="smodelAttribute" roleId="tpck.5169995583184591170" type=".com.mbeddr.mpsutil.bldoc.structure.BLDoc" id="4195764031267263166" nodeInfo="ng">
-          <node role="text" type=".de.slisson.mps.richtext.structure.Text" id="4195764031267263167" nodeInfo="ng">
-            <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="4195764031267263168" nodeInfo="ng" />
-            <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="4195764031267263169" nodeInfo="ng">
-              <property name="escapedValue" value="problem:in regular c you hava \&quot;int a, b[], *c\&quot;. in mbeddr c you hava \&quot;int a; int[b]; int* c\&quot;\n\nso the real type in regular c depends on the declarator" />
+        <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="7aka.BLDoc" typeId="7aka.6925419451529157942" id="4195764031267263166" nodeInfo="ng">
+          <node role="text" roleId="7aka.6925419451529198196" type="87nw.Text" typeId="87nw.2557074442922380897" id="4195764031267263167" nodeInfo="ng">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4195764031267263168" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="problem:in regular c you hava \&quot;int a, b[], *c\&quot;. in mbeddr c you hava \&quot;int a; int[b]; int* c\&quot;\n\nso the real type in regular c depends on the declarator" />
             </node>
           </node>
         </node>
@@ -16700,16 +16745,16 @@
                 <node role="type" roleId="tpee.5680397130376446158" type="tp25.SNodeType" typeId="tp25.1138055754698" id="638966541988531498" nodeInfo="in">
                   <link role="concept" roleId="tp25.1138405853777" targetNodeId="yq40.5679441017214012545" resolveInfo="ArrayType" />
                 </node>
-                <node role="initializer" roleId="tpee.1068431790190" type=".com.mbeddr.mpsutil.blutil.structure.BuilderExpression" id="638966541988531499" nodeInfo="ng">
-                  <node role="root" type=".com.mbeddr.mpsutil.blutil.structure.ChildStep" id="638966541988531500" nodeInfo="ng">
-                    <link role="childLink" targetNodeId="tpck.5169995583184591170" />
-                    <node role="value" type=".com.mbeddr.mpsutil.blutil.structure.ConceptRef" id="638966541988531501" nodeInfo="ng">
-                      <link role="concept" targetNodeId="yq40.5679441017214012545" resolveInfo="ArrayType" />
+                <node role="initializer" roleId="tpee.1068431790190" type="hba4.BuilderExpression" typeId="hba4.4481811096720536877" id="638966541988531499" nodeInfo="ng">
+                  <node role="root" roleId="hba4.4481811096720536927" type="hba4.ChildStep" typeId="hba4.4481811096720537459" id="638966541988531500" nodeInfo="ng">
+                    <link role="childLink" roleId="hba4.4481811096720607067" targetNodeId="tpck.5169995583184591170" />
+                    <node role="value" roleId="hba4.6308171743671982944" type="hba4.ConceptRef" typeId="hba4.4481811096720976618" id="638966541988531501" nodeInfo="ng">
+                      <link role="concept" roleId="hba4.4481811096720976619" targetNodeId="yq40.5679441017214012545" resolveInfo="ArrayType" />
                     </node>
-                    <node role="children" type=".com.mbeddr.mpsutil.blutil.structure.ChildStep" id="638966541988531502" nodeInfo="ng">
-                      <link role="childLink" targetNodeId="yq40.5679441017214012546" />
-                      <node role="value" type=".com.mbeddr.mpsutil.blutil.structure.ExpressionChildValue" id="638966541988531503" nodeInfo="ng">
-                        <node role="expr" type="tpee.VariableReference" typeId="tpee.1068498886296" id="5058375741168493263" nodeInfo="nn">
+                    <node role="children" roleId="hba4.4481811096720537463" type="hba4.ChildStep" typeId="hba4.4481811096720537459" id="638966541988531502" nodeInfo="ng">
+                      <link role="childLink" roleId="hba4.4481811096720607067" targetNodeId="yq40.5679441017214012546" />
+                      <node role="value" roleId="hba4.6308171743671982944" type="hba4.ExpressionChildValue" typeId="hba4.734120071946422046" id="638966541988531503" nodeInfo="ng">
+                        <node role="expr" roleId="hba4.734120071946422047" type="tpee.VariableReference" typeId="tpee.1068498886296" id="5058375741168493263" nodeInfo="nn">
                           <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="638966541988531608" resolveInfo="type" />
                         </node>
                       </node>
@@ -16770,15 +16815,15 @@
                     </node>
                     <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="638966541988531526" nodeInfo="nn">
                       <node role="expression" roleId="tpee.1068580123156" type="tpee.AssignmentExpression" typeId="tpee.1068498886294" id="638966541988531527" nodeInfo="nn">
-                        <node role="rValue" roleId="tpee.1068498886297" type=".com.mbeddr.mpsutil.blutil.structure.BuilderExpression" id="638966541988531528" nodeInfo="ng">
-                          <node role="root" type=".com.mbeddr.mpsutil.blutil.structure.ChildStep" id="638966541988531529" nodeInfo="ng">
-                            <link role="childLink" targetNodeId="tpck.5169995583184591170" />
-                            <node role="value" type=".com.mbeddr.mpsutil.blutil.structure.ConceptRef" id="2941277002443953958" nodeInfo="ng">
-                              <link role="concept" targetNodeId="mj1l.8860443239512128103" resolveInfo="NumberLiteral" />
+                        <node role="rValue" roleId="tpee.1068498886297" type="hba4.BuilderExpression" typeId="hba4.4481811096720536877" id="638966541988531528" nodeInfo="ng">
+                          <node role="root" roleId="hba4.4481811096720536927" type="hba4.ChildStep" typeId="hba4.4481811096720537459" id="638966541988531529" nodeInfo="ng">
+                            <link role="childLink" roleId="hba4.4481811096720607067" targetNodeId="tpck.5169995583184591170" />
+                            <node role="value" roleId="hba4.6308171743671982944" type="hba4.ConceptRef" typeId="hba4.4481811096720976618" id="2941277002443953958" nodeInfo="ng">
+                              <link role="concept" roleId="hba4.4481811096720976619" targetNodeId="mj1l.8860443239512128103" resolveInfo="NumberLiteral" />
                             </node>
-                            <node role="children" type=".com.mbeddr.mpsutil.blutil.structure.SimplePropertyStep" id="638966541988531531" nodeInfo="ng">
-                              <link role="property" targetNodeId="mj1l.8860443239512128104" resolveInfo="value" />
-                              <node role="value" type="tpee.PlusExpression" typeId="tpee.1068581242875" id="2941277002443953960" nodeInfo="nn">
+                            <node role="children" roleId="hba4.4481811096720537463" type="hba4.SimplePropertyStep" typeId="hba4.4481811096720581223" id="638966541988531531" nodeInfo="ng">
+                              <link role="property" roleId="hba4.4481811096720581232" targetNodeId="mj1l.8860443239512128104" resolveInfo="value" />
+                              <node role="value" roleId="hba4.4481811096720588312" type="tpee.PlusExpression" typeId="tpee.1068581242875" id="2941277002443953960" nodeInfo="nn">
                                 <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="2941277002443953963" nodeInfo="nn">
                                   <property name="value" nameId="tpee.1070475926801" value="" />
                                 </node>
@@ -16812,22 +16857,22 @@
                     </node>
                     <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="638966541988531540" nodeInfo="nn">
                       <node role="expression" roleId="tpee.1068580123156" type="tpee.AssignmentExpression" typeId="tpee.1068498886294" id="638966541988531541" nodeInfo="nn">
-                        <node role="rValue" roleId="tpee.1068498886297" type=".com.mbeddr.mpsutil.blutil.structure.BuilderExpression" id="638966541988531542" nodeInfo="ng">
-                          <node role="root" type=".com.mbeddr.mpsutil.blutil.structure.ChildStep" id="638966541988531543" nodeInfo="ng">
-                            <link role="childLink" targetNodeId="tpck.5169995583184591170" />
-                            <node role="value" type=".com.mbeddr.mpsutil.blutil.structure.ConceptRef" id="638966541988531544" nodeInfo="ng">
-                              <link role="concept" targetNodeId="yq40.5679441017214012545" resolveInfo="ArrayType" />
+                        <node role="rValue" roleId="tpee.1068498886297" type="hba4.BuilderExpression" typeId="hba4.4481811096720536877" id="638966541988531542" nodeInfo="ng">
+                          <node role="root" roleId="hba4.4481811096720536927" type="hba4.ChildStep" typeId="hba4.4481811096720537459" id="638966541988531543" nodeInfo="ng">
+                            <link role="childLink" roleId="hba4.4481811096720607067" targetNodeId="tpck.5169995583184591170" />
+                            <node role="value" roleId="hba4.6308171743671982944" type="hba4.ConceptRef" typeId="hba4.4481811096720976618" id="638966541988531544" nodeInfo="ng">
+                              <link role="concept" roleId="hba4.4481811096720976619" targetNodeId="yq40.5679441017214012545" resolveInfo="ArrayType" />
                             </node>
-                            <node role="children" type=".com.mbeddr.mpsutil.blutil.structure.ChildStep" id="638966541988531545" nodeInfo="ng">
-                              <link role="childLink" targetNodeId="yq40.5679441017214012546" />
-                              <node role="value" type=".com.mbeddr.mpsutil.blutil.structure.ExpressionChildValue" id="638966541988531546" nodeInfo="ng">
-                                <node role="expr" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="638966541988531547" nodeInfo="nn">
+                            <node role="children" roleId="hba4.4481811096720537463" type="hba4.ChildStep" typeId="hba4.4481811096720537459" id="638966541988531545" nodeInfo="ng">
+                              <link role="childLink" roleId="hba4.4481811096720607067" targetNodeId="yq40.5679441017214012546" />
+                              <node role="value" roleId="hba4.6308171743671982944" type="hba4.ExpressionChildValue" typeId="hba4.734120071946422046" id="638966541988531546" nodeInfo="ng">
+                                <node role="expr" roleId="hba4.734120071946422047" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="638966541988531547" nodeInfo="nn">
                                   <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="638966541988531537" resolveInfo="tmp" />
                                 </node>
                               </node>
-                              <node role="smodelAttribute" type=".com.mbeddr.mpsutil.bldoc.structure.KnownBug" id="638966541988531548" nodeInfo="ng">
-                                <property name="text" value="there should be no error" />
-                                <property name="bugNumber" value="274" />
+                              <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="7aka.KnownBug" typeId="7aka.14270488321463783" id="638966541988531548" nodeInfo="ng">
+                                <property name="text" nameId="7aka.14270488321463784" value="there should be no error" />
+                                <property name="bugNumber" nameId="7aka.14270488321463788" value="274" />
                               </node>
                             </node>
                           </node>
@@ -17015,16 +17060,16 @@
                 <node role="type" roleId="tpee.5680397130376446158" type="tp25.SNodeType" typeId="tp25.1138055754698" id="638966541988531589" nodeInfo="in">
                   <link role="concept" roleId="tp25.1138405853777" targetNodeId="yq40.279446265608459824" resolveInfo="PointerType" />
                 </node>
-                <node role="initializer" roleId="tpee.1068431790190" type=".com.mbeddr.mpsutil.blutil.structure.BuilderExpression" id="638966541988531590" nodeInfo="ng">
-                  <node role="root" type=".com.mbeddr.mpsutil.blutil.structure.ChildStep" id="638966541988531591" nodeInfo="ng">
-                    <link role="childLink" targetNodeId="tpck.5169995583184591170" />
-                    <node role="value" type=".com.mbeddr.mpsutil.blutil.structure.ConceptRef" id="638966541988531592" nodeInfo="ng">
-                      <link role="concept" targetNodeId="yq40.279446265608459824" resolveInfo="PointerType" />
+                <node role="initializer" roleId="tpee.1068431790190" type="hba4.BuilderExpression" typeId="hba4.4481811096720536877" id="638966541988531590" nodeInfo="ng">
+                  <node role="root" roleId="hba4.4481811096720536927" type="hba4.ChildStep" typeId="hba4.4481811096720537459" id="638966541988531591" nodeInfo="ng">
+                    <link role="childLink" roleId="hba4.4481811096720607067" targetNodeId="tpck.5169995583184591170" />
+                    <node role="value" roleId="hba4.6308171743671982944" type="hba4.ConceptRef" typeId="hba4.4481811096720976618" id="638966541988531592" nodeInfo="ng">
+                      <link role="concept" roleId="hba4.4481811096720976619" targetNodeId="yq40.279446265608459824" resolveInfo="PointerType" />
                     </node>
-                    <node role="children" type=".com.mbeddr.mpsutil.blutil.structure.ChildStep" id="638966541988531593" nodeInfo="ng">
-                      <link role="childLink" targetNodeId="yq40.279446265608459825" />
-                      <node role="value" type=".com.mbeddr.mpsutil.blutil.structure.ExpressionChildValue" id="638966541988531594" nodeInfo="ng">
-                        <node role="expr" type="tpee.VariableReference" typeId="tpee.1068498886296" id="5058375741168492834" nodeInfo="nn">
+                    <node role="children" roleId="hba4.4481811096720537463" type="hba4.ChildStep" typeId="hba4.4481811096720537459" id="638966541988531593" nodeInfo="ng">
+                      <link role="childLink" roleId="hba4.4481811096720607067" targetNodeId="yq40.279446265608459825" />
+                      <node role="value" roleId="hba4.6308171743671982944" type="hba4.ExpressionChildValue" typeId="hba4.734120071946422046" id="638966541988531594" nodeInfo="ng">
+                        <node role="expr" roleId="hba4.734120071946422047" type="tpee.VariableReference" typeId="tpee.1068498886296" id="5058375741168492834" nodeInfo="nn">
                           <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="638966541988531608" resolveInfo="type" />
                         </node>
                       </node>
@@ -17109,11 +17154,10 @@
         <link role="classifier" roleId="tpee.1107535924139" targetNodeId="2009438888129319782" resolveInfo="DeclaratorDTO" />
       </node>
       <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="2567691893340452023" nodeInfo="nn">
-        <node role="smodelAttribute" roleId="tpck.5169995583184591170" type=".com.mbeddr.mpsutil.bldoc.structure.BLDoc" id="4195764031267263174" nodeInfo="ng">
-          <node role="text" type=".de.slisson.mps.richtext.structure.Text" id="4195764031267263175" nodeInfo="ng">
-            <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="4195764031267263176" nodeInfo="ng" />
-            <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="4195764031267263177" nodeInfo="ng">
-              <property name="escapedValue" value="problem:in regular c you hava \&quot;int a, b[], *c\&quot;. in mbeddr c you hava \&quot;int a; int[b]; int* c\&quot;\nso the real type in regular c depends on the declarator" />
+        <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="7aka.BLDoc" typeId="7aka.6925419451529157942" id="4195764031267263174" nodeInfo="ng">
+          <node role="text" roleId="7aka.6925419451529198196" type="87nw.Text" typeId="87nw.2557074442922380897" id="4195764031267263175" nodeInfo="ng">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4195764031267263176" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="problem:in regular c you hava \&quot;int a, b[], *c\&quot;. in mbeddr c you hava \&quot;int a; int[b]; int* c\&quot;\nso the real type in regular c depends on the declarator" />
             </node>
           </node>
         </node>
@@ -17187,16 +17231,16 @@
                     <node role="type" roleId="tpee.5680397130376446158" type="tp25.SNodeType" typeId="tp25.1138055754698" id="2567691893340452055" nodeInfo="in">
                       <link role="concept" roleId="tp25.1138405853777" targetNodeId="yq40.5679441017214012545" resolveInfo="ArrayType" />
                     </node>
-                    <node role="initializer" roleId="tpee.1068431790190" type=".com.mbeddr.mpsutil.blutil.structure.BuilderExpression" id="2567691893340452056" nodeInfo="ng">
-                      <node role="root" type=".com.mbeddr.mpsutil.blutil.structure.ChildStep" id="2567691893340452057" nodeInfo="ng">
-                        <link role="childLink" targetNodeId="tpck.5169995583184591170" />
-                        <node role="value" type=".com.mbeddr.mpsutil.blutil.structure.ConceptRef" id="2567691893340452058" nodeInfo="ng">
-                          <link role="concept" targetNodeId="yq40.5679441017214012545" resolveInfo="ArrayType" />
+                    <node role="initializer" roleId="tpee.1068431790190" type="hba4.BuilderExpression" typeId="hba4.4481811096720536877" id="2567691893340452056" nodeInfo="ng">
+                      <node role="root" roleId="hba4.4481811096720536927" type="hba4.ChildStep" typeId="hba4.4481811096720537459" id="2567691893340452057" nodeInfo="ng">
+                        <link role="childLink" roleId="hba4.4481811096720607067" targetNodeId="tpck.5169995583184591170" />
+                        <node role="value" roleId="hba4.6308171743671982944" type="hba4.ConceptRef" typeId="hba4.4481811096720976618" id="2567691893340452058" nodeInfo="ng">
+                          <link role="concept" roleId="hba4.4481811096720976619" targetNodeId="yq40.5679441017214012545" resolveInfo="ArrayType" />
                         </node>
-                        <node role="children" type=".com.mbeddr.mpsutil.blutil.structure.ChildStep" id="2567691893340452059" nodeInfo="ng">
-                          <link role="childLink" targetNodeId="yq40.5679441017214012546" />
-                          <node role="value" type=".com.mbeddr.mpsutil.blutil.structure.ExpressionChildValue" id="2567691893340452060" nodeInfo="ng">
-                            <node role="expr" type="tpee.VariableReference" typeId="tpee.1068498886296" id="5058375741168351462" nodeInfo="nn">
+                        <node role="children" roleId="hba4.4481811096720537463" type="hba4.ChildStep" typeId="hba4.4481811096720537459" id="2567691893340452059" nodeInfo="ng">
+                          <link role="childLink" roleId="hba4.4481811096720607067" targetNodeId="yq40.5679441017214012546" />
+                          <node role="value" roleId="hba4.6308171743671982944" type="hba4.ExpressionChildValue" typeId="hba4.734120071946422046" id="2567691893340452060" nodeInfo="ng">
+                            <node role="expr" roleId="hba4.734120071946422047" type="tpee.VariableReference" typeId="tpee.1068498886296" id="5058375741168351462" nodeInfo="nn">
                               <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="2567691893340452211" resolveInfo="type" />
                             </node>
                           </node>
@@ -17257,15 +17301,15 @@
                         </node>
                         <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="2567691893340452083" nodeInfo="nn">
                           <node role="expression" roleId="tpee.1068580123156" type="tpee.AssignmentExpression" typeId="tpee.1068498886294" id="2567691893340452084" nodeInfo="nn">
-                            <node role="rValue" roleId="tpee.1068498886297" type=".com.mbeddr.mpsutil.blutil.structure.BuilderExpression" id="2567691893340452085" nodeInfo="ng">
-                              <node role="root" type=".com.mbeddr.mpsutil.blutil.structure.ChildStep" id="2567691893340452086" nodeInfo="ng">
-                                <link role="childLink" targetNodeId="tpck.5169995583184591170" />
-                                <node role="value" type=".com.mbeddr.mpsutil.blutil.structure.ConceptRef" id="2567691893340452087" nodeInfo="ng">
-                                  <link role="concept" targetNodeId="mj1l.8860443239512128103" resolveInfo="NumberLiteral" />
+                            <node role="rValue" roleId="tpee.1068498886297" type="hba4.BuilderExpression" typeId="hba4.4481811096720536877" id="2567691893340452085" nodeInfo="ng">
+                              <node role="root" roleId="hba4.4481811096720536927" type="hba4.ChildStep" typeId="hba4.4481811096720537459" id="2567691893340452086" nodeInfo="ng">
+                                <link role="childLink" roleId="hba4.4481811096720607067" targetNodeId="tpck.5169995583184591170" />
+                                <node role="value" roleId="hba4.6308171743671982944" type="hba4.ConceptRef" typeId="hba4.4481811096720976618" id="2567691893340452087" nodeInfo="ng">
+                                  <link role="concept" roleId="hba4.4481811096720976619" targetNodeId="mj1l.8860443239512128103" resolveInfo="NumberLiteral" />
                                 </node>
-                                <node role="children" type=".com.mbeddr.mpsutil.blutil.structure.SimplePropertyStep" id="2567691893340452088" nodeInfo="ng">
-                                  <link role="property" targetNodeId="mj1l.8860443239512128104" resolveInfo="value" />
-                                  <node role="value" type="tpee.PlusExpression" typeId="tpee.1068581242875" id="2567691893340452089" nodeInfo="nn">
+                                <node role="children" roleId="hba4.4481811096720537463" type="hba4.SimplePropertyStep" typeId="hba4.4481811096720581223" id="2567691893340452088" nodeInfo="ng">
+                                  <link role="property" roleId="hba4.4481811096720581232" targetNodeId="mj1l.8860443239512128104" resolveInfo="value" />
+                                  <node role="value" roleId="hba4.4481811096720588312" type="tpee.PlusExpression" typeId="tpee.1068581242875" id="2567691893340452089" nodeInfo="nn">
                                     <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="2567691893340452090" nodeInfo="nn">
                                       <property name="value" nameId="tpee.1070475926801" value="" />
                                     </node>
@@ -17299,22 +17343,22 @@
                         </node>
                         <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="2567691893340452099" nodeInfo="nn">
                           <node role="expression" roleId="tpee.1068580123156" type="tpee.AssignmentExpression" typeId="tpee.1068498886294" id="2567691893340452100" nodeInfo="nn">
-                            <node role="rValue" roleId="tpee.1068498886297" type=".com.mbeddr.mpsutil.blutil.structure.BuilderExpression" id="2567691893340452101" nodeInfo="ng">
-                              <node role="root" type=".com.mbeddr.mpsutil.blutil.structure.ChildStep" id="2567691893340452102" nodeInfo="ng">
-                                <link role="childLink" targetNodeId="tpck.5169995583184591170" />
-                                <node role="value" type=".com.mbeddr.mpsutil.blutil.structure.ConceptRef" id="2567691893340452103" nodeInfo="ng">
-                                  <link role="concept" targetNodeId="yq40.5679441017214012545" resolveInfo="ArrayType" />
+                            <node role="rValue" roleId="tpee.1068498886297" type="hba4.BuilderExpression" typeId="hba4.4481811096720536877" id="2567691893340452101" nodeInfo="ng">
+                              <node role="root" roleId="hba4.4481811096720536927" type="hba4.ChildStep" typeId="hba4.4481811096720537459" id="2567691893340452102" nodeInfo="ng">
+                                <link role="childLink" roleId="hba4.4481811096720607067" targetNodeId="tpck.5169995583184591170" />
+                                <node role="value" roleId="hba4.6308171743671982944" type="hba4.ConceptRef" typeId="hba4.4481811096720976618" id="2567691893340452103" nodeInfo="ng">
+                                  <link role="concept" roleId="hba4.4481811096720976619" targetNodeId="yq40.5679441017214012545" resolveInfo="ArrayType" />
                                 </node>
-                                <node role="children" type=".com.mbeddr.mpsutil.blutil.structure.ChildStep" id="2567691893340452104" nodeInfo="ng">
-                                  <link role="childLink" targetNodeId="yq40.5679441017214012546" />
-                                  <node role="value" type=".com.mbeddr.mpsutil.blutil.structure.ExpressionChildValue" id="2567691893340452105" nodeInfo="ng">
-                                    <node role="expr" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="2567691893340452106" nodeInfo="nn">
+                                <node role="children" roleId="hba4.4481811096720537463" type="hba4.ChildStep" typeId="hba4.4481811096720537459" id="2567691893340452104" nodeInfo="ng">
+                                  <link role="childLink" roleId="hba4.4481811096720607067" targetNodeId="yq40.5679441017214012546" />
+                                  <node role="value" roleId="hba4.6308171743671982944" type="hba4.ExpressionChildValue" typeId="hba4.734120071946422046" id="2567691893340452105" nodeInfo="ng">
+                                    <node role="expr" roleId="hba4.734120071946422047" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="2567691893340452106" nodeInfo="nn">
                                       <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="2567691893340452096" resolveInfo="tmp" />
                                     </node>
                                   </node>
-                                  <node role="smodelAttribute" type=".com.mbeddr.mpsutil.bldoc.structure.KnownBug" id="2567691893340452107" nodeInfo="ng">
-                                    <property name="text" value="there should be no error" />
-                                    <property name="bugNumber" value="274" />
+                                  <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="7aka.KnownBug" typeId="7aka.14270488321463783" id="2567691893340452107" nodeInfo="ng">
+                                    <property name="text" nameId="7aka.14270488321463784" value="there should be no error" />
+                                    <property name="bugNumber" nameId="7aka.14270488321463788" value="274" />
                                   </node>
                                 </node>
                               </node>
@@ -17506,16 +17550,16 @@
                     <node role="type" roleId="tpee.5680397130376446158" type="tp25.SNodeType" typeId="tp25.1138055754698" id="2567691893340452180" nodeInfo="in">
                       <link role="concept" roleId="tp25.1138405853777" targetNodeId="yq40.279446265608459824" resolveInfo="PointerType" />
                     </node>
-                    <node role="initializer" roleId="tpee.1068431790190" type=".com.mbeddr.mpsutil.blutil.structure.BuilderExpression" id="2567691893340452181" nodeInfo="ng">
-                      <node role="root" type=".com.mbeddr.mpsutil.blutil.structure.ChildStep" id="2567691893340452182" nodeInfo="ng">
-                        <link role="childLink" targetNodeId="tpck.5169995583184591170" />
-                        <node role="value" type=".com.mbeddr.mpsutil.blutil.structure.ConceptRef" id="2567691893340452183" nodeInfo="ng">
-                          <link role="concept" targetNodeId="yq40.279446265608459824" resolveInfo="PointerType" />
+                    <node role="initializer" roleId="tpee.1068431790190" type="hba4.BuilderExpression" typeId="hba4.4481811096720536877" id="2567691893340452181" nodeInfo="ng">
+                      <node role="root" roleId="hba4.4481811096720536927" type="hba4.ChildStep" typeId="hba4.4481811096720537459" id="2567691893340452182" nodeInfo="ng">
+                        <link role="childLink" roleId="hba4.4481811096720607067" targetNodeId="tpck.5169995583184591170" />
+                        <node role="value" roleId="hba4.6308171743671982944" type="hba4.ConceptRef" typeId="hba4.4481811096720976618" id="2567691893340452183" nodeInfo="ng">
+                          <link role="concept" roleId="hba4.4481811096720976619" targetNodeId="yq40.279446265608459824" resolveInfo="PointerType" />
                         </node>
-                        <node role="children" type=".com.mbeddr.mpsutil.blutil.structure.ChildStep" id="2567691893340452184" nodeInfo="ng">
-                          <link role="childLink" targetNodeId="yq40.279446265608459825" />
-                          <node role="value" type=".com.mbeddr.mpsutil.blutil.structure.ExpressionChildValue" id="2567691893340452185" nodeInfo="ng">
-                            <node role="expr" type="tpee.VariableReference" typeId="tpee.1068498886296" id="5058375741168382315" nodeInfo="nn">
+                        <node role="children" roleId="hba4.4481811096720537463" type="hba4.ChildStep" typeId="hba4.4481811096720537459" id="2567691893340452184" nodeInfo="ng">
+                          <link role="childLink" roleId="hba4.4481811096720607067" targetNodeId="yq40.279446265608459825" />
+                          <node role="value" roleId="hba4.6308171743671982944" type="hba4.ExpressionChildValue" typeId="hba4.734120071946422046" id="2567691893340452185" nodeInfo="ng">
+                            <node role="expr" roleId="hba4.734120071946422047" type="tpee.VariableReference" typeId="tpee.1068498886296" id="5058375741168382315" nodeInfo="nn">
                               <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="2567691893340452211" resolveInfo="type" />
                             </node>
                           </node>
@@ -19752,13 +19796,20 @@
                     </node>
                     <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="719533080082253367" nodeInfo="nn">
                       <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="719533080082253368" nodeInfo="nn">
-                        <node role="operand" roleId="tpee.1197027771414" type="tp25.SemanticDowncastExpression" typeId="tp25.1145404486709" id="719533080082253369" nodeInfo="nn">
-                          <node role="leftExpression" roleId="tp25.1145404616321" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="719533080082253370" nodeInfo="nn">
-                            <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="719533080082253363" resolveInfo="functionModuleContent" />
+                        <node role="operand" roleId="tpee.1197027771414" type="tpee.ParenthesizedExpression" typeId="tpee.1079359253375" id="3208636348801043312" nodeInfo="nn">
+                          <node role="expression" roleId="tpee.1079359253376" type="tpee.CastExpression" typeId="tpee.1070534934090" id="3208636348801043313" nodeInfo="nn">
+                            <node role="expression" roleId="tpee.1070534934092" type="tp25.SemanticDowncastExpression" typeId="tp25.1145404486709" id="3208636348801043310" nodeInfo="nn">
+                              <node role="leftExpression" roleId="tp25.1145404616321" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="3208636348801043311" nodeInfo="nn">
+                                <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="719533080082253363" resolveInfo="functionModuleContent" />
+                              </node>
+                            </node>
+                            <node role="type" roleId="tpee.1070534934091" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="3208636348801135938" nodeInfo="in">
+                              <link role="classifier" roleId="tpee.1107535924139" targetNodeId="cu2c.~SNode" resolveInfo="SNode" />
+                            </node>
                           </node>
                         </node>
                         <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="719533080082253371" nodeInfo="nn">
-                          <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="cu2c.~SNode%dsetId(jetbrains%dmps%dsmodel%dSNodeId)%cvoid" resolveInfo="setId" />
+                          <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="cu2c.~SNode%dsetId(org%djetbrains%dmps%dopenapi%dmodel%dSNodeId)%cvoid" resolveInfo="setId" />
                           <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="719533080082253372" nodeInfo="nn">
                             <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="638966541988363998" resolveInfo="CParserUtil" />
                             <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="638966541988365262" resolveInfo="createIdForModelRoot" />
@@ -19842,13 +19893,20 @@
                           </node>
                           <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="719533080082253405" nodeInfo="nn">
                             <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="719533080082253406" nodeInfo="nn">
-                              <node role="operand" roleId="tpee.1197027771414" type="tp25.SemanticDowncastExpression" typeId="tp25.1145404486709" id="719533080082253407" nodeInfo="nn">
-                                <node role="leftExpression" roleId="tp25.1145404616321" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="719533080082253408" nodeInfo="nn">
-                                  <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="719533080082253400" resolveInfo="decl" />
+                              <node role="operand" roleId="tpee.1197027771414" type="tpee.ParenthesizedExpression" typeId="tpee.1079359253375" id="3208636348801434503" nodeInfo="nn">
+                                <node role="expression" roleId="tpee.1079359253376" type="tpee.CastExpression" typeId="tpee.1070534934090" id="3208636348801434504" nodeInfo="nn">
+                                  <node role="expression" roleId="tpee.1070534934092" type="tp25.SemanticDowncastExpression" typeId="tp25.1145404486709" id="3208636348801434501" nodeInfo="nn">
+                                    <node role="leftExpression" roleId="tp25.1145404616321" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="3208636348801434502" nodeInfo="nn">
+                                      <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="719533080082253400" resolveInfo="decl" />
+                                    </node>
+                                  </node>
+                                  <node role="type" roleId="tpee.1070534934091" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="3208636348801573002" nodeInfo="in">
+                                    <link role="classifier" roleId="tpee.1107535924139" targetNodeId="cu2c.~SNode" resolveInfo="SNode" />
+                                  </node>
                                 </node>
                               </node>
                               <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="719533080082253409" nodeInfo="nn">
-                                <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="cu2c.~SNode%dsetId(jetbrains%dmps%dsmodel%dSNodeId)%cvoid" resolveInfo="setId" />
+                                <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="cu2c.~SNode%dsetId(org%djetbrains%dmps%dopenapi%dmodel%dSNodeId)%cvoid" resolveInfo="setId" />
                                 <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="719533080082253410" nodeInfo="nn">
                                   <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="638966541988363998" resolveInfo="CParserUtil" />
                                   <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="638966541988365262" resolveInfo="createIdForModelRoot" />
@@ -20303,8 +20361,8 @@
                             </node>
                             <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.ParenthesizedExpression" typeId="tpee.1079359253375" id="7088068046711190624" nodeInfo="nn">
                               <node role="expression" roleId="tpee.1079359253376" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="7088068046711190645" nodeInfo="nn">
-                                <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="aow2.~StringUtils%disEmpty(java%dlang%dString)%cboolean" resolveInfo="isEmpty" />
-                                <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="aow2.~StringUtils" resolveInfo="StringUtils" />
+                                <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="z68t.~StringUtils" resolveInfo="StringUtils" />
+                                <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="z68t.~StringUtils%disEmpty(java%dlang%dString)%cboolean" resolveInfo="isEmpty" />
                                 <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.DotExpression" typeId="tpee.1197027756228" id="7088068046711190658" nodeInfo="nn">
                                   <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="7088068046711190649" nodeInfo="nn">
                                     <node role="operand" roleId="tpee.1197027771414" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="7088068046711190646" nodeInfo="nn">
@@ -20644,15 +20702,15 @@
                                                   <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="7nqk.~IASTFileLocation%dgetStartingLineNumber()%cint" resolveInfo="getStartingLineNumber" />
                                                 </node>
                                               </node>
-                                              <node role="actualArgument" roleId="tpee.1068499141038" type=".com.mbeddr.mpsutil.blutil.structure.BuilderExpression" id="3284580646979597490" nodeInfo="ng">
-                                                <node role="root" type=".com.mbeddr.mpsutil.blutil.structure.ChildStep" id="3284580646979597491" nodeInfo="ng">
-                                                  <link role="childLink" targetNodeId="tpck.5169995583184591170" />
-                                                  <node role="value" type=".com.mbeddr.mpsutil.blutil.structure.ConceptRef" id="3284580646979597493" nodeInfo="ng">
-                                                    <link role="concept" targetNodeId="clbe.6394819151180597807" resolveInfo="StructDeclaration" />
+                                              <node role="actualArgument" roleId="tpee.1068499141038" type="hba4.BuilderExpression" typeId="hba4.4481811096720536877" id="3284580646979597490" nodeInfo="ng">
+                                                <node role="root" roleId="hba4.4481811096720536927" type="hba4.ChildStep" typeId="hba4.4481811096720537459" id="3284580646979597491" nodeInfo="ng">
+                                                  <link role="childLink" roleId="hba4.4481811096720607067" targetNodeId="tpck.5169995583184591170" />
+                                                  <node role="value" roleId="hba4.6308171743671982944" type="hba4.ConceptRef" typeId="hba4.4481811096720976618" id="3284580646979597493" nodeInfo="ng">
+                                                    <link role="concept" roleId="hba4.4481811096720976619" targetNodeId="clbe.6394819151180597807" resolveInfo="StructDeclaration" />
                                                   </node>
-                                                  <node role="children" type=".com.mbeddr.mpsutil.blutil.structure.SimplePropertyStep" id="3284580646979597497" nodeInfo="ng">
-                                                    <link role="property" targetNodeId="tpck.1169194664001" resolveInfo="name" />
-                                                    <node role="value" type="tpee.DotExpression" typeId="tpee.1197027756228" id="3284580646979597576" nodeInfo="nn">
+                                                  <node role="children" roleId="hba4.4481811096720537463" type="hba4.SimplePropertyStep" typeId="hba4.4481811096720581223" id="3284580646979597497" nodeInfo="ng">
+                                                    <link role="property" roleId="hba4.4481811096720581232" targetNodeId="tpck.1169194664001" resolveInfo="name" />
+                                                    <node role="value" roleId="hba4.4481811096720588312" type="tpee.DotExpression" typeId="tpee.1197027756228" id="3284580646979597576" nodeInfo="nn">
                                                       <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="3284580646979597549" nodeInfo="nn">
                                                         <node role="operand" roleId="tpee.1197027771414" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="3284580646979793433" nodeInfo="nn">
                                                           <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="3284580646979793414" resolveInfo="specifier" />
@@ -20717,15 +20775,15 @@
                                                     <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="7nqk.~IASTFileLocation%dgetStartingLineNumber()%cint" resolveInfo="getStartingLineNumber" />
                                                   </node>
                                                 </node>
-                                                <node role="actualArgument" roleId="tpee.1068499141038" type=".com.mbeddr.mpsutil.blutil.structure.BuilderExpression" id="3284580646979597595" nodeInfo="ng">
-                                                  <node role="root" type=".com.mbeddr.mpsutil.blutil.structure.ChildStep" id="3284580646979597596" nodeInfo="ng">
-                                                    <link role="childLink" targetNodeId="tpck.5169995583184591170" />
-                                                    <node role="value" type=".com.mbeddr.mpsutil.blutil.structure.ConceptRef" id="3284580646979597635" nodeInfo="ng">
-                                                      <link role="concept" targetNodeId="clbe.5882395403881907066" resolveInfo="UnionDeclaration" />
+                                                <node role="actualArgument" roleId="tpee.1068499141038" type="hba4.BuilderExpression" typeId="hba4.4481811096720536877" id="3284580646979597595" nodeInfo="ng">
+                                                  <node role="root" roleId="hba4.4481811096720536927" type="hba4.ChildStep" typeId="hba4.4481811096720537459" id="3284580646979597596" nodeInfo="ng">
+                                                    <link role="childLink" roleId="hba4.4481811096720607067" targetNodeId="tpck.5169995583184591170" />
+                                                    <node role="value" roleId="hba4.6308171743671982944" type="hba4.ConceptRef" typeId="hba4.4481811096720976618" id="3284580646979597635" nodeInfo="ng">
+                                                      <link role="concept" roleId="hba4.4481811096720976619" targetNodeId="clbe.5882395403881907066" resolveInfo="UnionDeclaration" />
                                                     </node>
-                                                    <node role="children" type=".com.mbeddr.mpsutil.blutil.structure.SimplePropertyStep" id="3284580646979597598" nodeInfo="ng">
-                                                      <link role="property" targetNodeId="tpck.1169194664001" resolveInfo="name" />
-                                                      <node role="value" type="tpee.DotExpression" typeId="tpee.1197027756228" id="3284580646979597599" nodeInfo="nn">
+                                                    <node role="children" roleId="hba4.4481811096720537463" type="hba4.SimplePropertyStep" typeId="hba4.4481811096720581223" id="3284580646979597598" nodeInfo="ng">
+                                                      <link role="property" roleId="hba4.4481811096720581232" targetNodeId="tpck.1169194664001" resolveInfo="name" />
+                                                      <node role="value" roleId="hba4.4481811096720588312" type="tpee.DotExpression" typeId="tpee.1197027756228" id="3284580646979597599" nodeInfo="nn">
                                                         <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="3284580646979597600" nodeInfo="nn">
                                                           <node role="operand" roleId="tpee.1197027771414" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="3284580646979793435" nodeInfo="nn">
                                                             <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="3284580646979793414" resolveInfo="specifier" />
@@ -20791,15 +20849,15 @@
                                                     <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="7nqk.~IASTFileLocation%dgetStartingLineNumber()%cint" resolveInfo="getStartingLineNumber" />
                                                   </node>
                                                 </node>
-                                                <node role="actualArgument" roleId="tpee.1068499141038" type=".com.mbeddr.mpsutil.blutil.structure.BuilderExpression" id="3284580646979597621" nodeInfo="ng">
-                                                  <node role="root" type=".com.mbeddr.mpsutil.blutil.structure.ChildStep" id="3284580646979597622" nodeInfo="ng">
-                                                    <link role="childLink" targetNodeId="tpck.5169995583184591170" />
-                                                    <node role="value" type=".com.mbeddr.mpsutil.blutil.structure.ConceptRef" id="3284580646979597636" nodeInfo="ng">
-                                                      <link role="concept" targetNodeId="clbe.8811614583515725851" resolveInfo="EnumDeclaration" />
+                                                <node role="actualArgument" roleId="tpee.1068499141038" type="hba4.BuilderExpression" typeId="hba4.4481811096720536877" id="3284580646979597621" nodeInfo="ng">
+                                                  <node role="root" roleId="hba4.4481811096720536927" type="hba4.ChildStep" typeId="hba4.4481811096720537459" id="3284580646979597622" nodeInfo="ng">
+                                                    <link role="childLink" roleId="hba4.4481811096720607067" targetNodeId="tpck.5169995583184591170" />
+                                                    <node role="value" roleId="hba4.6308171743671982944" type="hba4.ConceptRef" typeId="hba4.4481811096720976618" id="3284580646979597636" nodeInfo="ng">
+                                                      <link role="concept" roleId="hba4.4481811096720976619" targetNodeId="clbe.8811614583515725851" resolveInfo="EnumDeclaration" />
                                                     </node>
-                                                    <node role="children" type=".com.mbeddr.mpsutil.blutil.structure.SimplePropertyStep" id="3284580646979597624" nodeInfo="ng">
-                                                      <link role="property" targetNodeId="tpck.1169194664001" resolveInfo="name" />
-                                                      <node role="value" type="tpee.DotExpression" typeId="tpee.1197027756228" id="3284580646979597625" nodeInfo="nn">
+                                                    <node role="children" roleId="hba4.4481811096720537463" type="hba4.SimplePropertyStep" typeId="hba4.4481811096720581223" id="3284580646979597624" nodeInfo="ng">
+                                                      <link role="property" roleId="hba4.4481811096720581232" targetNodeId="tpck.1169194664001" resolveInfo="name" />
+                                                      <node role="value" roleId="hba4.4481811096720588312" type="tpee.DotExpression" typeId="tpee.1197027756228" id="3284580646979597625" nodeInfo="nn">
                                                         <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="3284580646979597626" nodeInfo="nn">
                                                           <node role="operand" roleId="tpee.1197027771414" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="3284580646979793437" nodeInfo="nn">
                                                             <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="3284580646979793414" resolveInfo="specifier" />
@@ -24755,9 +24813,9 @@
       <node role="returnType" roleId="tpee.1068580123133" type="tpee.BooleanType" typeId="tpee.1070534644030" id="2567691893340692654" nodeInfo="in" />
       <node role="visibility" roleId="tpee.1178549979242" type="tpee.ProtectedVisibility" typeId="tpee.1146644641414" id="2567691893340692655" nodeInfo="nn" />
       <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="2567691893340692656" nodeInfo="sn">
-        <node role="smodelAttribute" roleId="tpck.5169995583184591170" type=".com.mbeddr.mpsutil.bldoc.structure.KnownBug" id="1544185720216299722" nodeInfo="ng">
-          <property name="bugNumber" value="320" />
-          <property name="text" value="Different interfaces used" />
+        <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="7aka.KnownBug" typeId="7aka.14270488321463783" id="1544185720216299722" nodeInfo="ng">
+          <property name="bugNumber" nameId="7aka.14270488321463788" value="320" />
+          <property name="text" nameId="7aka.14270488321463784" value="Different interfaces used" />
         </node>
         <node role="statement" roleId="tpee.1068581517665" type="tpee.SingleLineComment" typeId="tpee.6329021646629104954" id="1544185720216299732" nodeInfo="nn">
           <node role="commentPart" roleId="tpee.6329021646629175155" type="tpee.StatementCommentPart" typeId="tpee.6329021646629175143" id="1544185720216299733" nodeInfo="nn">
@@ -25071,15 +25129,15 @@
               <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="4034566330402109813" nodeInfo="nn">
                 <node role="expression" roleId="tpee.1068580123156" type="tpee.LocalInstanceMethodCall" typeId="tpee.3066917033203108594" id="4034566330402109814" nodeInfo="nn">
                   <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="2497083023867910622" resolveInfo="addNode" />
-                  <node role="actualArgument" roleId="tpee.1068499141038" type=".com.mbeddr.mpsutil.blutil.structure.BuilderExpression" id="914951969739988034" nodeInfo="ng">
-                    <node role="root" type=".com.mbeddr.mpsutil.blutil.structure.ChildStep" id="914951969739988035" nodeInfo="ng">
-                      <link role="childLink" targetNodeId="tpck.5169995583184591170" />
-                      <node role="value" type=".com.mbeddr.mpsutil.blutil.structure.ConceptRef" id="914951969739988036" nodeInfo="ng">
-                        <link role="concept" targetNodeId="k146.777213082402126069" resolveInfo="ErrorTypeNotFound" />
+                  <node role="actualArgument" roleId="tpee.1068499141038" type="hba4.BuilderExpression" typeId="hba4.4481811096720536877" id="914951969739988034" nodeInfo="ng">
+                    <node role="root" roleId="hba4.4481811096720536927" type="hba4.ChildStep" typeId="hba4.4481811096720537459" id="914951969739988035" nodeInfo="ng">
+                      <link role="childLink" roleId="hba4.4481811096720607067" targetNodeId="tpck.5169995583184591170" />
+                      <node role="value" roleId="hba4.6308171743671982944" type="hba4.ConceptRef" typeId="hba4.4481811096720976618" id="914951969739988036" nodeInfo="ng">
+                        <link role="concept" roleId="hba4.4481811096720976619" targetNodeId="k146.777213082402126069" resolveInfo="ErrorTypeNotFound" />
                       </node>
-                      <node role="children" type=".com.mbeddr.mpsutil.blutil.structure.SimplePropertyStep" id="914951969739988037" nodeInfo="ng">
-                        <link role="property" targetNodeId="k146.777213082402129269" resolveInfo="rawType" />
-                        <node role="value" type="tpee.DotExpression" typeId="tpee.1197027756228" id="914951969739988038" nodeInfo="nn">
+                      <node role="children" roleId="hba4.4481811096720537463" type="hba4.SimplePropertyStep" typeId="hba4.4481811096720581223" id="914951969739988037" nodeInfo="ng">
+                        <link role="property" roleId="hba4.4481811096720581232" targetNodeId="k146.777213082402129269" resolveInfo="rawType" />
+                        <node role="value" roleId="hba4.4481811096720588312" type="tpee.DotExpression" typeId="tpee.1197027756228" id="914951969739988038" nodeInfo="nn">
                           <node role="operand" roleId="tpee.1197027771414" type="tpee.VariableReference" typeId="tpee.1068498886296" id="5058375741168493058" nodeInfo="nn">
                             <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="2567691893340692716" resolveInfo="baseDeclSpecifier" />
                           </node>
@@ -27038,15 +27096,15 @@
                   </node>
                   <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="914951969739997143" nodeInfo="nn">
                     <node role="expression" roleId="tpee.1068580123156" type="tpee.AssignmentExpression" typeId="tpee.1068498886294" id="914951969739997192" nodeInfo="nn">
-                      <node role="rValue" roleId="tpee.1068498886297" type=".com.mbeddr.mpsutil.blutil.structure.BuilderExpression" id="914951969739997195" nodeInfo="ng">
-                        <node role="root" type=".com.mbeddr.mpsutil.blutil.structure.ChildStep" id="914951969739997196" nodeInfo="ng">
-                          <link role="childLink" targetNodeId="tpck.5169995583184591170" />
-                          <node role="value" type=".com.mbeddr.mpsutil.blutil.structure.ConceptRef" id="914951969739997198" nodeInfo="ng">
-                            <link role="concept" targetNodeId="mj1l.8860443239512128103" resolveInfo="NumberLiteral" />
+                      <node role="rValue" roleId="tpee.1068498886297" type="hba4.BuilderExpression" typeId="hba4.4481811096720536877" id="914951969739997195" nodeInfo="ng">
+                        <node role="root" roleId="hba4.4481811096720536927" type="hba4.ChildStep" typeId="hba4.4481811096720537459" id="914951969739997196" nodeInfo="ng">
+                          <link role="childLink" roleId="hba4.4481811096720607067" targetNodeId="tpck.5169995583184591170" />
+                          <node role="value" roleId="hba4.6308171743671982944" type="hba4.ConceptRef" typeId="hba4.4481811096720976618" id="914951969739997198" nodeInfo="ng">
+                            <link role="concept" roleId="hba4.4481811096720976619" targetNodeId="mj1l.8860443239512128103" resolveInfo="NumberLiteral" />
                           </node>
-                          <node role="children" type=".com.mbeddr.mpsutil.blutil.structure.SimplePropertyStep" id="914951969739997234" nodeInfo="ng">
-                            <link role="property" targetNodeId="mj1l.8860443239512128104" resolveInfo="value" />
-                            <node role="value" type="tpee.PlusExpression" typeId="tpee.1068581242875" id="914951969739997258" nodeInfo="nn">
+                          <node role="children" roleId="hba4.4481811096720537463" type="hba4.SimplePropertyStep" typeId="hba4.4481811096720581223" id="914951969739997234" nodeInfo="ng">
+                            <link role="property" roleId="hba4.4481811096720581232" targetNodeId="mj1l.8860443239512128104" resolveInfo="value" />
+                            <node role="value" roleId="hba4.4481811096720588312" type="tpee.PlusExpression" typeId="tpee.1068581242875" id="914951969739997258" nodeInfo="nn">
                               <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="914951969739997261" nodeInfo="nn">
                                 <property name="value" nameId="tpee.1070475926801" value="" />
                               </node>
@@ -28539,16 +28597,16 @@
                 </node>
                 <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="1544185720216496193" nodeInfo="nn">
                   <node role="expression" roleId="tpee.1068580123156" type="tpee.AssignmentExpression" typeId="tpee.1068498886294" id="1544185720216496194" nodeInfo="nn">
-                    <node role="rValue" roleId="tpee.1068498886297" type=".com.mbeddr.mpsutil.blutil.structure.BuilderExpression" id="1544185720216496195" nodeInfo="ng">
-                      <node role="root" type=".com.mbeddr.mpsutil.blutil.structure.ChildStep" id="1544185720216496196" nodeInfo="ng">
-                        <link role="childLink" targetNodeId="tpck.5169995583184591170" />
-                        <node role="value" type=".com.mbeddr.mpsutil.blutil.structure.ConceptRef" id="1544185720216496197" nodeInfo="ng">
-                          <link role="concept" targetNodeId="x27k.8551646674110395547" resolveInfo="FunctionRefType" />
+                    <node role="rValue" roleId="tpee.1068498886297" type="hba4.BuilderExpression" typeId="hba4.4481811096720536877" id="1544185720216496195" nodeInfo="ng">
+                      <node role="root" roleId="hba4.4481811096720536927" type="hba4.ChildStep" typeId="hba4.4481811096720537459" id="1544185720216496196" nodeInfo="ng">
+                        <link role="childLink" roleId="hba4.4481811096720607067" targetNodeId="tpck.5169995583184591170" />
+                        <node role="value" roleId="hba4.6308171743671982944" type="hba4.ConceptRef" typeId="hba4.4481811096720976618" id="1544185720216496197" nodeInfo="ng">
+                          <link role="concept" roleId="hba4.4481811096720976619" targetNodeId="x27k.8551646674110395547" resolveInfo="FunctionRefType" />
                         </node>
-                        <node role="children" type=".com.mbeddr.mpsutil.blutil.structure.ChildStep" id="1544185720216496198" nodeInfo="ng">
-                          <link role="childLink" targetNodeId="x27k.8551646674110395548" />
-                          <node role="value" type=".com.mbeddr.mpsutil.blutil.structure.ExpressionChildValue" id="1544185720216496199" nodeInfo="ng">
-                            <node role="expr" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="1544185720216496200" nodeInfo="nn">
+                        <node role="children" roleId="hba4.4481811096720537463" type="hba4.ChildStep" typeId="hba4.4481811096720537459" id="1544185720216496198" nodeInfo="ng">
+                          <link role="childLink" roleId="hba4.4481811096720607067" targetNodeId="x27k.8551646674110395548" />
+                          <node role="value" roleId="hba4.6308171743671982944" type="hba4.ExpressionChildValue" typeId="hba4.734120071946422046" id="1544185720216496199" nodeInfo="ng">
+                            <node role="expr" roleId="hba4.734120071946422047" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="1544185720216496200" nodeInfo="nn">
                               <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="1544185720216496188" resolveInfo="type" />
                             </node>
                           </node>
@@ -28710,22 +28768,22 @@
                     <node role="type" roleId="tpee.5680397130376446158" type="tp25.SNodeType" typeId="tp25.1138055754698" id="1544185720216496260" nodeInfo="in">
                       <link role="concept" roleId="tp25.1138405853777" targetNodeId="clbe.6116558314501347857" resolveInfo="TypeDef" />
                     </node>
-                    <node role="initializer" roleId="tpee.1068431790190" type=".com.mbeddr.mpsutil.blutil.structure.BuilderExpression" id="1544185720216496261" nodeInfo="ng">
-                      <node role="root" type=".com.mbeddr.mpsutil.blutil.structure.ChildStep" id="1544185720216496262" nodeInfo="ng">
-                        <link role="childLink" targetNodeId="tpck.5169995583184591170" />
-                        <node role="value" type=".com.mbeddr.mpsutil.blutil.structure.ConceptRef" id="1544185720216496263" nodeInfo="ng">
-                          <link role="concept" targetNodeId="clbe.6116558314501347857" resolveInfo="TypeDef" />
+                    <node role="initializer" roleId="tpee.1068431790190" type="hba4.BuilderExpression" typeId="hba4.4481811096720536877" id="1544185720216496261" nodeInfo="ng">
+                      <node role="root" roleId="hba4.4481811096720536927" type="hba4.ChildStep" typeId="hba4.4481811096720537459" id="1544185720216496262" nodeInfo="ng">
+                        <link role="childLink" roleId="hba4.4481811096720607067" targetNodeId="tpck.5169995583184591170" />
+                        <node role="value" roleId="hba4.6308171743671982944" type="hba4.ConceptRef" typeId="hba4.4481811096720976618" id="1544185720216496263" nodeInfo="ng">
+                          <link role="concept" roleId="hba4.4481811096720976619" targetNodeId="clbe.6116558314501347857" resolveInfo="TypeDef" />
                         </node>
-                        <node role="children" type=".com.mbeddr.mpsutil.blutil.structure.SimplePropertyStep" id="1544185720216496264" nodeInfo="ng">
-                          <link role="property" targetNodeId="tpck.1169194664001" resolveInfo="name" />
-                          <node role="value" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="1544185720216496265" nodeInfo="nn">
+                        <node role="children" roleId="hba4.4481811096720537463" type="hba4.SimplePropertyStep" typeId="hba4.4481811096720581223" id="1544185720216496264" nodeInfo="ng">
+                          <link role="property" roleId="hba4.4481811096720581232" targetNodeId="tpck.1169194664001" resolveInfo="name" />
+                          <node role="value" roleId="hba4.4481811096720588312" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="1544185720216496265" nodeInfo="nn">
                             <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="1544185720216496126" resolveInfo="name" />
                           </node>
                         </node>
-                        <node role="children" type=".com.mbeddr.mpsutil.blutil.structure.ChildStep" id="1544185720216496266" nodeInfo="ng">
-                          <link role="childLink" targetNodeId="clbe.6116558314501347862" />
-                          <node role="value" type=".com.mbeddr.mpsutil.blutil.structure.ExpressionChildValue" id="1544185720216496267" nodeInfo="ng">
-                            <node role="expr" type="tp25.SNodeTypeCastExpression" typeId="tp25.1140137987495" id="8916575427188187526" nodeInfo="nn">
+                        <node role="children" roleId="hba4.4481811096720537463" type="hba4.ChildStep" typeId="hba4.4481811096720537459" id="1544185720216496266" nodeInfo="ng">
+                          <link role="childLink" roleId="hba4.4481811096720607067" targetNodeId="clbe.6116558314501347862" />
+                          <node role="value" roleId="hba4.6308171743671982944" type="hba4.ExpressionChildValue" typeId="hba4.734120071946422046" id="1544185720216496267" nodeInfo="ng">
+                            <node role="expr" roleId="hba4.734120071946422047" type="tp25.SNodeTypeCastExpression" typeId="tp25.1140137987495" id="8916575427188187526" nodeInfo="nn">
                               <link role="concept" roleId="tp25.1140138128738" targetNodeId="mj1l.8860443239512128054" resolveInfo="Type" />
                               <node role="leftExpression" roleId="tp25.1140138123956" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="1544185720216496268" nodeInfo="nn">
                                 <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="1544185720216496175" resolveInfo="realType" />
@@ -28782,16 +28840,16 @@
                                 <node role="type" roleId="tpee.5680397130376446158" type="tp25.SNodeType" typeId="tp25.1138055754698" id="1544185720216496290" nodeInfo="in">
                                   <link role="concept" roleId="tp25.1138405853777" targetNodeId="x27k.6437088627575724001" resolveInfo="Function" />
                                 </node>
-                                <node role="initializer" roleId="tpee.1068431790190" type=".com.mbeddr.mpsutil.blutil.structure.BuilderExpression" id="1544185720216496291" nodeInfo="ng">
-                                  <node role="root" type=".com.mbeddr.mpsutil.blutil.structure.ChildStep" id="1544185720216496292" nodeInfo="ng">
-                                    <link role="childLink" targetNodeId="tpck.5169995583184591170" />
-                                    <node role="value" type=".com.mbeddr.mpsutil.blutil.structure.ConceptRef" id="1544185720216496293" nodeInfo="ng">
-                                      <link role="concept" targetNodeId="x27k.6437088627575724001" resolveInfo="Function" />
+                                <node role="initializer" roleId="tpee.1068431790190" type="hba4.BuilderExpression" typeId="hba4.4481811096720536877" id="1544185720216496291" nodeInfo="ng">
+                                  <node role="root" roleId="hba4.4481811096720536927" type="hba4.ChildStep" typeId="hba4.4481811096720537459" id="1544185720216496292" nodeInfo="ng">
+                                    <link role="childLink" roleId="hba4.4481811096720607067" targetNodeId="tpck.5169995583184591170" />
+                                    <node role="value" roleId="hba4.6308171743671982944" type="hba4.ConceptRef" typeId="hba4.4481811096720976618" id="1544185720216496293" nodeInfo="ng">
+                                      <link role="concept" roleId="hba4.4481811096720976619" targetNodeId="x27k.6437088627575724001" resolveInfo="Function" />
                                     </node>
-                                    <node role="children" type=".com.mbeddr.mpsutil.blutil.structure.ChildStep" id="1544185720216496294" nodeInfo="ng">
-                                      <link role="childLink" targetNodeId="mj1l.318113533128716676" />
-                                      <node role="value" type=".com.mbeddr.mpsutil.blutil.structure.ExpressionChildValue" id="1544185720216496295" nodeInfo="ng">
-                                        <node role="expr" type="tp25.SNodeTypeCastExpression" typeId="tp25.1140137987495" id="8916575427188187570" nodeInfo="nn">
+                                    <node role="children" roleId="hba4.4481811096720537463" type="hba4.ChildStep" typeId="hba4.4481811096720537459" id="1544185720216496294" nodeInfo="ng">
+                                      <link role="childLink" roleId="hba4.4481811096720607067" targetNodeId="mj1l.318113533128716676" />
+                                      <node role="value" roleId="hba4.6308171743671982944" type="hba4.ExpressionChildValue" typeId="hba4.734120071946422046" id="1544185720216496295" nodeInfo="ng">
+                                        <node role="expr" roleId="hba4.734120071946422047" type="tp25.SNodeTypeCastExpression" typeId="tp25.1140137987495" id="8916575427188187570" nodeInfo="nn">
                                           <link role="concept" roleId="tp25.1140138128738" targetNodeId="mj1l.8860443239512128054" resolveInfo="Type" />
                                           <node role="leftExpression" roleId="tp25.1140138123956" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="1544185720216496296" nodeInfo="nn">
                                             <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="1544185720216496175" resolveInfo="realType" />
@@ -28799,15 +28857,15 @@
                                         </node>
                                       </node>
                                     </node>
-                                    <node role="children" type=".com.mbeddr.mpsutil.blutil.structure.SimplePropertyStep" id="1544185720216496297" nodeInfo="ng">
-                                      <link role="property" targetNodeId="tpck.1169194664001" resolveInfo="name" />
-                                      <node role="value" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="1544185720216496298" nodeInfo="nn">
+                                    <node role="children" roleId="hba4.4481811096720537463" type="hba4.SimplePropertyStep" typeId="hba4.4481811096720581223" id="1544185720216496297" nodeInfo="ng">
+                                      <link role="property" roleId="hba4.4481811096720581232" targetNodeId="tpck.1169194664001" resolveInfo="name" />
+                                      <node role="value" roleId="hba4.4481811096720588312" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="1544185720216496298" nodeInfo="nn">
                                         <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="1544185720216496126" resolveInfo="name" />
                                       </node>
                                     </node>
-                                    <node role="children" type=".com.mbeddr.mpsutil.blutil.structure.SimplePropertyStep" id="1544185720216496299" nodeInfo="ng">
-                                      <link role="property" targetNodeId="x27k.9066372830132870213" resolveInfo="hasEllipsis" />
-                                      <node role="value" type="tpee.AndExpression" typeId="tpee.1080120340718" id="1544185720216496300" nodeInfo="nn">
+                                    <node role="children" roleId="hba4.4481811096720537463" type="hba4.SimplePropertyStep" typeId="hba4.4481811096720581223" id="1544185720216496299" nodeInfo="ng">
+                                      <link role="property" roleId="hba4.4481811096720581232" targetNodeId="x27k.9066372830132870213" resolveInfo="hasEllipsis" />
+                                      <node role="value" roleId="hba4.4481811096720588312" type="tpee.AndExpression" typeId="tpee.1080120340718" id="1544185720216496300" nodeInfo="nn">
                                         <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.NotExpression" typeId="tpee.1081516740877" id="1544185720216496301" nodeInfo="nn">
                                           <node role="expression" roleId="tpee.1081516765348" type="tpee.LocalInstanceFieldReference" typeId="tpee.7785501532031639928" id="1544185720216496302" nodeInfo="nn">
                                             <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="1544185720216495926" resolveInfo="isFunctionPointer" />
@@ -28818,15 +28876,15 @@
                                         </node>
                                       </node>
                                     </node>
-                                    <node role="children" type=".com.mbeddr.mpsutil.blutil.structure.ChildStep" id="1544185720216496304" nodeInfo="ng">
-                                      <link role="childLink" targetNodeId="x27k.4185783222026475860" />
-                                      <node role="value" type=".com.mbeddr.mpsutil.blutil.structure.ConceptRef" id="8916575427188187573" nodeInfo="ng">
-                                        <link role="concept" targetNodeId="c4fa.4185783222026475861" resolveInfo="StatementList" />
+                                    <node role="children" roleId="hba4.4481811096720537463" type="hba4.ChildStep" typeId="hba4.4481811096720537459" id="1544185720216496304" nodeInfo="ng">
+                                      <link role="childLink" roleId="hba4.4481811096720607067" targetNodeId="x27k.4185783222026475860" />
+                                      <node role="value" roleId="hba4.6308171743671982944" type="hba4.ConceptRef" typeId="hba4.4481811096720976618" id="8916575427188187573" nodeInfo="ng">
+                                        <link role="concept" roleId="hba4.4481811096720976619" targetNodeId="c4fa.4185783222026475861" resolveInfo="StatementList" />
                                       </node>
                                     </node>
-                                    <node role="children" type=".com.mbeddr.mpsutil.blutil.structure.SimplePropertyStep" id="1544185720216496309" nodeInfo="ng">
-                                      <link role="property" targetNodeId="x27k.5095889050033549114" resolveInfo="__inlinetext" />
-                                      <node role="value" type="tpee.NullLiteral" typeId="tpee.1070534058343" id="1544185720216496310" nodeInfo="nn" />
+                                    <node role="children" roleId="hba4.4481811096720537463" type="hba4.SimplePropertyStep" typeId="hba4.4481811096720581223" id="1544185720216496309" nodeInfo="ng">
+                                      <link role="property" roleId="hba4.4481811096720581232" targetNodeId="x27k.5095889050033549114" resolveInfo="__inlinetext" />
+                                      <node role="value" roleId="hba4.4481811096720588312" type="tpee.NullLiteral" typeId="tpee.1070534058343" id="1544185720216496310" nodeInfo="nn" />
                                     </node>
                                   </node>
                                 </node>
@@ -28861,16 +28919,16 @@
                           <node role="type" roleId="tpee.5680397130376446158" type="tp25.SNodeType" typeId="tp25.1138055754698" id="1544185720216496322" nodeInfo="in">
                             <link role="concept" roleId="tp25.1138405853777" targetNodeId="x27k.6437088627575724000" resolveInfo="FunctionPrototype" />
                           </node>
-                          <node role="initializer" roleId="tpee.1068431790190" type=".com.mbeddr.mpsutil.blutil.structure.BuilderExpression" id="1544185720216496323" nodeInfo="ng">
-                            <node role="root" type=".com.mbeddr.mpsutil.blutil.structure.ChildStep" id="1544185720216496324" nodeInfo="ng">
-                              <link role="childLink" targetNodeId="tpck.5169995583184591170" />
-                              <node role="value" type=".com.mbeddr.mpsutil.blutil.structure.ConceptRef" id="1544185720216496325" nodeInfo="ng">
-                                <link role="concept" targetNodeId="x27k.6437088627575724000" resolveInfo="FunctionPrototype" />
+                          <node role="initializer" roleId="tpee.1068431790190" type="hba4.BuilderExpression" typeId="hba4.4481811096720536877" id="1544185720216496323" nodeInfo="ng">
+                            <node role="root" roleId="hba4.4481811096720536927" type="hba4.ChildStep" typeId="hba4.4481811096720537459" id="1544185720216496324" nodeInfo="ng">
+                              <link role="childLink" roleId="hba4.4481811096720607067" targetNodeId="tpck.5169995583184591170" />
+                              <node role="value" roleId="hba4.6308171743671982944" type="hba4.ConceptRef" typeId="hba4.4481811096720976618" id="1544185720216496325" nodeInfo="ng">
+                                <link role="concept" roleId="hba4.4481811096720976619" targetNodeId="x27k.6437088627575724000" resolveInfo="FunctionPrototype" />
                               </node>
-                              <node role="children" type=".com.mbeddr.mpsutil.blutil.structure.ChildStep" id="1544185720216496326" nodeInfo="ng">
-                                <link role="childLink" targetNodeId="mj1l.318113533128716676" />
-                                <node role="value" type=".com.mbeddr.mpsutil.blutil.structure.ExpressionChildValue" id="1544185720216496327" nodeInfo="ng">
-                                  <node role="expr" type="tp25.SNodeTypeCastExpression" typeId="tp25.1140137987495" id="8916575427188187548" nodeInfo="nn">
+                              <node role="children" roleId="hba4.4481811096720537463" type="hba4.ChildStep" typeId="hba4.4481811096720537459" id="1544185720216496326" nodeInfo="ng">
+                                <link role="childLink" roleId="hba4.4481811096720607067" targetNodeId="mj1l.318113533128716676" />
+                                <node role="value" roleId="hba4.6308171743671982944" type="hba4.ExpressionChildValue" typeId="hba4.734120071946422046" id="1544185720216496327" nodeInfo="ng">
+                                  <node role="expr" roleId="hba4.734120071946422047" type="tp25.SNodeTypeCastExpression" typeId="tp25.1140137987495" id="8916575427188187548" nodeInfo="nn">
                                     <link role="concept" roleId="tp25.1140138128738" targetNodeId="mj1l.8860443239512128054" resolveInfo="Type" />
                                     <node role="leftExpression" roleId="tp25.1140138123956" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="1544185720216496328" nodeInfo="nn">
                                       <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="1544185720216496175" resolveInfo="realType" />
@@ -28878,15 +28936,15 @@
                                   </node>
                                 </node>
                               </node>
-                              <node role="children" type=".com.mbeddr.mpsutil.blutil.structure.SimplePropertyStep" id="1544185720216496329" nodeInfo="ng">
-                                <link role="property" targetNodeId="tpck.1169194664001" resolveInfo="name" />
-                                <node role="value" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="1544185720216496330" nodeInfo="nn">
+                              <node role="children" roleId="hba4.4481811096720537463" type="hba4.SimplePropertyStep" typeId="hba4.4481811096720581223" id="1544185720216496329" nodeInfo="ng">
+                                <link role="property" roleId="hba4.4481811096720581232" targetNodeId="tpck.1169194664001" resolveInfo="name" />
+                                <node role="value" roleId="hba4.4481811096720588312" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="1544185720216496330" nodeInfo="nn">
                                   <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="1544185720216496126" resolveInfo="name" />
                                 </node>
                               </node>
-                              <node role="children" type=".com.mbeddr.mpsutil.blutil.structure.SimplePropertyStep" id="1544185720216496331" nodeInfo="ng">
-                                <link role="property" targetNodeId="x27k.9066372830132870213" resolveInfo="hasEllipsis" />
-                                <node role="value" type="tpee.AndExpression" typeId="tpee.1080120340718" id="1544185720216496332" nodeInfo="nn">
+                              <node role="children" roleId="hba4.4481811096720537463" type="hba4.SimplePropertyStep" typeId="hba4.4481811096720581223" id="1544185720216496331" nodeInfo="ng">
+                                <link role="property" roleId="hba4.4481811096720581232" targetNodeId="x27k.9066372830132870213" resolveInfo="hasEllipsis" />
+                                <node role="value" roleId="hba4.4481811096720588312" type="tpee.AndExpression" typeId="tpee.1080120340718" id="1544185720216496332" nodeInfo="nn">
                                   <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.NotExpression" typeId="tpee.1081516740877" id="1544185720216496333" nodeInfo="nn">
                                     <node role="expression" roleId="tpee.1081516765348" type="tpee.LocalInstanceFieldReference" typeId="tpee.7785501532031639928" id="1544185720216496334" nodeInfo="nn">
                                       <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="1544185720216495926" resolveInfo="isFunctionPointer" />
@@ -28897,9 +28955,9 @@
                                   </node>
                                 </node>
                               </node>
-                              <node role="children" type=".com.mbeddr.mpsutil.blutil.structure.SimplePropertyStep" id="1544185720216496336" nodeInfo="ng">
-                                <link role="property" targetNodeId="x27k.6708182213627045681" resolveInfo="extern" />
-                                <node role="value" type="tpee.LocalInstanceFieldReference" typeId="tpee.7785501532031639928" id="1544185720216496337" nodeInfo="nn">
+                              <node role="children" roleId="hba4.4481811096720537463" type="hba4.SimplePropertyStep" typeId="hba4.4481811096720581223" id="1544185720216496336" nodeInfo="ng">
+                                <link role="property" roleId="hba4.4481811096720581232" targetNodeId="x27k.6708182213627045681" resolveInfo="extern" />
+                                <node role="value" roleId="hba4.4481811096720588312" type="tpee.LocalInstanceFieldReference" typeId="tpee.7785501532031639928" id="1544185720216496337" nodeInfo="nn">
                                   <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="1544185720216495934" resolveInfo="isExtern" />
                                 </node>
                               </node>
@@ -31097,15 +31155,15 @@
               <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="1544185720216478735" nodeInfo="nn">
                 <node role="expression" roleId="tpee.1068580123156" type="tpee.LocalInstanceMethodCall" typeId="tpee.3066917033203108594" id="1544185720216478736" nodeInfo="nn">
                   <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="2497083023867910622" resolveInfo="addNode" />
-                  <node role="actualArgument" roleId="tpee.1068499141038" type=".com.mbeddr.mpsutil.blutil.structure.BuilderExpression" id="1544185720216478737" nodeInfo="ng">
-                    <node role="root" type=".com.mbeddr.mpsutil.blutil.structure.ChildStep" id="1544185720216478738" nodeInfo="ng">
-                      <link role="childLink" targetNodeId="tpck.5169995583184591170" />
-                      <node role="value" type=".com.mbeddr.mpsutil.blutil.structure.ConceptRef" id="1544185720216478739" nodeInfo="ng">
-                        <link role="concept" targetNodeId="k146.777213082402126069" resolveInfo="ErrorTypeNotFound" />
+                  <node role="actualArgument" roleId="tpee.1068499141038" type="hba4.BuilderExpression" typeId="hba4.4481811096720536877" id="1544185720216478737" nodeInfo="ng">
+                    <node role="root" roleId="hba4.4481811096720536927" type="hba4.ChildStep" typeId="hba4.4481811096720537459" id="1544185720216478738" nodeInfo="ng">
+                      <link role="childLink" roleId="hba4.4481811096720607067" targetNodeId="tpck.5169995583184591170" />
+                      <node role="value" roleId="hba4.6308171743671982944" type="hba4.ConceptRef" typeId="hba4.4481811096720976618" id="1544185720216478739" nodeInfo="ng">
+                        <link role="concept" roleId="hba4.4481811096720976619" targetNodeId="k146.777213082402126069" resolveInfo="ErrorTypeNotFound" />
                       </node>
-                      <node role="children" type=".com.mbeddr.mpsutil.blutil.structure.SimplePropertyStep" id="1544185720216478740" nodeInfo="ng">
-                        <link role="property" targetNodeId="k146.777213082402129269" resolveInfo="rawType" />
-                        <node role="value" type="tpee.DotExpression" typeId="tpee.1197027756228" id="1544185720216478741" nodeInfo="nn">
+                      <node role="children" roleId="hba4.4481811096720537463" type="hba4.SimplePropertyStep" typeId="hba4.4481811096720581223" id="1544185720216478740" nodeInfo="ng">
+                        <link role="property" roleId="hba4.4481811096720581232" targetNodeId="k146.777213082402129269" resolveInfo="rawType" />
+                        <node role="value" roleId="hba4.4481811096720588312" type="tpee.DotExpression" typeId="tpee.1197027756228" id="1544185720216478741" nodeInfo="nn">
                           <node role="operand" roleId="tpee.1197027771414" type="tpee.VariableReference" typeId="tpee.1068498886296" id="5058375741168484048" nodeInfo="nn">
                             <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="1544185720216478747" resolveInfo="declSpecifier" />
                           </node>
@@ -32598,22 +32656,22 @@
                     <node role="type" roleId="tpee.5680397130376446158" type="tp25.SNodeType" typeId="tp25.1138055754698" id="1544185720216496945" nodeInfo="in">
                       <link role="concept" roleId="tp25.1138405853777" targetNodeId="clbe.6116558314501347857" resolveInfo="TypeDef" />
                     </node>
-                    <node role="initializer" roleId="tpee.1068431790190" type=".com.mbeddr.mpsutil.blutil.structure.BuilderExpression" id="1544185720216496946" nodeInfo="ng">
-                      <node role="root" type=".com.mbeddr.mpsutil.blutil.structure.ChildStep" id="1544185720216496947" nodeInfo="ng">
-                        <link role="childLink" targetNodeId="tpck.5169995583184591170" />
-                        <node role="value" type=".com.mbeddr.mpsutil.blutil.structure.ConceptRef" id="1544185720216496948" nodeInfo="ng">
-                          <link role="concept" targetNodeId="clbe.6116558314501347857" resolveInfo="TypeDef" />
+                    <node role="initializer" roleId="tpee.1068431790190" type="hba4.BuilderExpression" typeId="hba4.4481811096720536877" id="1544185720216496946" nodeInfo="ng">
+                      <node role="root" roleId="hba4.4481811096720536927" type="hba4.ChildStep" typeId="hba4.4481811096720537459" id="1544185720216496947" nodeInfo="ng">
+                        <link role="childLink" roleId="hba4.4481811096720607067" targetNodeId="tpck.5169995583184591170" />
+                        <node role="value" roleId="hba4.6308171743671982944" type="hba4.ConceptRef" typeId="hba4.4481811096720976618" id="1544185720216496948" nodeInfo="ng">
+                          <link role="concept" roleId="hba4.4481811096720976619" targetNodeId="clbe.6116558314501347857" resolveInfo="TypeDef" />
                         </node>
-                        <node role="children" type=".com.mbeddr.mpsutil.blutil.structure.SimplePropertyStep" id="1544185720216496949" nodeInfo="ng">
-                          <link role="property" targetNodeId="tpck.1169194664001" resolveInfo="name" />
-                          <node role="value" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="1544185720216496950" nodeInfo="nn">
+                        <node role="children" roleId="hba4.4481811096720537463" type="hba4.SimplePropertyStep" typeId="hba4.4481811096720581223" id="1544185720216496949" nodeInfo="ng">
+                          <link role="property" roleId="hba4.4481811096720581232" targetNodeId="tpck.1169194664001" resolveInfo="name" />
+                          <node role="value" roleId="hba4.4481811096720588312" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="1544185720216496950" nodeInfo="nn">
                             <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="1544185720216496923" resolveInfo="name" />
                           </node>
                         </node>
-                        <node role="children" type=".com.mbeddr.mpsutil.blutil.structure.ChildStep" id="1544185720216496951" nodeInfo="ng">
-                          <link role="childLink" targetNodeId="clbe.6116558314501347862" />
-                          <node role="value" type=".com.mbeddr.mpsutil.blutil.structure.ExpressionChildValue" id="1544185720216496952" nodeInfo="ng">
-                            <node role="expr" type="tpee.DotExpression" typeId="tpee.1197027756228" id="1544185720216496953" nodeInfo="nn">
+                        <node role="children" roleId="hba4.4481811096720537463" type="hba4.ChildStep" typeId="hba4.4481811096720537459" id="1544185720216496951" nodeInfo="ng">
+                          <link role="childLink" roleId="hba4.4481811096720607067" targetNodeId="clbe.6116558314501347862" />
+                          <node role="value" roleId="hba4.6308171743671982944" type="hba4.ExpressionChildValue" typeId="hba4.734120071946422046" id="1544185720216496952" nodeInfo="ng">
+                            <node role="expr" roleId="hba4.734120071946422047" type="tpee.DotExpression" typeId="tpee.1197027756228" id="1544185720216496953" nodeInfo="nn">
                               <node role="operand" roleId="tpee.1197027771414" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="1544185720216496954" nodeInfo="nn">
                                 <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="1544185720216496937" resolveInfo="dto" />
                               </node>
@@ -32623,9 +32681,9 @@
                             </node>
                           </node>
                         </node>
-                        <node role="children" type=".com.mbeddr.mpsutil.blutil.structure.SimplePropertyStep" id="1544185720216496956" nodeInfo="ng">
-                          <link role="property" targetNodeId="x27k.6708182213627106114" resolveInfo="preventNameMangling" />
-                          <node role="value" type="tpee.BooleanConstant" typeId="tpee.1068580123137" id="1544185720216496957" nodeInfo="nn">
+                        <node role="children" roleId="hba4.4481811096720537463" type="hba4.SimplePropertyStep" typeId="hba4.4481811096720581223" id="1544185720216496956" nodeInfo="ng">
+                          <link role="property" roleId="hba4.4481811096720581232" targetNodeId="x27k.6708182213627106114" resolveInfo="preventNameMangling" />
+                          <node role="value" roleId="hba4.4481811096720588312" type="tpee.BooleanConstant" typeId="tpee.1068580123137" id="1544185720216496957" nodeInfo="nn">
                             <property name="value" nameId="tpee.1068580123138" value="true" />
                           </node>
                         </node>
@@ -32674,22 +32732,22 @@
                       <node role="type" roleId="tpee.5680397130376446158" type="tp25.SNodeType" typeId="tp25.1138055754698" id="1544185720216496974" nodeInfo="in">
                         <link role="concept" roleId="tp25.1138405853777" targetNodeId="x27k.6610873504380335822" resolveInfo="GlobalVariableDeclaration" />
                       </node>
-                      <node role="initializer" roleId="tpee.1068431790190" type=".com.mbeddr.mpsutil.blutil.structure.BuilderExpression" id="1544185720216496975" nodeInfo="ng">
-                        <node role="root" type=".com.mbeddr.mpsutil.blutil.structure.ChildStep" id="1544185720216496976" nodeInfo="ng">
-                          <link role="childLink" targetNodeId="tpck.5169995583184591170" />
-                          <node role="value" type=".com.mbeddr.mpsutil.blutil.structure.ConceptRef" id="1544185720216496977" nodeInfo="ng">
-                            <link role="concept" targetNodeId="x27k.6610873504380335822" resolveInfo="GlobalVariableDeclaration" />
+                      <node role="initializer" roleId="tpee.1068431790190" type="hba4.BuilderExpression" typeId="hba4.4481811096720536877" id="1544185720216496975" nodeInfo="ng">
+                        <node role="root" roleId="hba4.4481811096720536927" type="hba4.ChildStep" typeId="hba4.4481811096720537459" id="1544185720216496976" nodeInfo="ng">
+                          <link role="childLink" roleId="hba4.4481811096720607067" targetNodeId="tpck.5169995583184591170" />
+                          <node role="value" roleId="hba4.6308171743671982944" type="hba4.ConceptRef" typeId="hba4.4481811096720976618" id="1544185720216496977" nodeInfo="ng">
+                            <link role="concept" roleId="hba4.4481811096720976619" targetNodeId="x27k.6610873504380335822" resolveInfo="GlobalVariableDeclaration" />
                           </node>
-                          <node role="children" type=".com.mbeddr.mpsutil.blutil.structure.SimplePropertyStep" id="1544185720216496978" nodeInfo="ng">
-                            <link role="property" targetNodeId="tpck.1169194664001" resolveInfo="name" />
-                            <node role="value" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="1544185720216496979" nodeInfo="nn">
+                          <node role="children" roleId="hba4.4481811096720537463" type="hba4.SimplePropertyStep" typeId="hba4.4481811096720581223" id="1544185720216496978" nodeInfo="ng">
+                            <link role="property" roleId="hba4.4481811096720581232" targetNodeId="tpck.1169194664001" resolveInfo="name" />
+                            <node role="value" roleId="hba4.4481811096720588312" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="1544185720216496979" nodeInfo="nn">
                               <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="1544185720216496923" resolveInfo="name" />
                             </node>
                           </node>
-                          <node role="children" type=".com.mbeddr.mpsutil.blutil.structure.ChildStep" id="1544185720216496980" nodeInfo="ng">
-                            <link role="childLink" targetNodeId="mj1l.318113533128716676" />
-                            <node role="value" type=".com.mbeddr.mpsutil.blutil.structure.ExpressionChildValue" id="1544185720216496981" nodeInfo="ng">
-                              <node role="expr" type="tpee.DotExpression" typeId="tpee.1197027756228" id="1544185720216496982" nodeInfo="nn">
+                          <node role="children" roleId="hba4.4481811096720537463" type="hba4.ChildStep" typeId="hba4.4481811096720537459" id="1544185720216496980" nodeInfo="ng">
+                            <link role="childLink" roleId="hba4.4481811096720607067" targetNodeId="mj1l.318113533128716676" />
+                            <node role="value" roleId="hba4.6308171743671982944" type="hba4.ExpressionChildValue" typeId="hba4.734120071946422046" id="1544185720216496981" nodeInfo="ng">
+                              <node role="expr" roleId="hba4.734120071946422047" type="tpee.DotExpression" typeId="tpee.1197027756228" id="1544185720216496982" nodeInfo="nn">
                                 <node role="operand" roleId="tpee.1197027771414" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="1544185720216496983" nodeInfo="nn">
                                   <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="1544185720216496965" resolveInfo="dto" />
                                 </node>
@@ -32699,9 +32757,9 @@
                               </node>
                             </node>
                           </node>
-                          <node role="children" type=".com.mbeddr.mpsutil.blutil.structure.SimplePropertyStep" id="1544185720216496985" nodeInfo="ng">
-                            <link role="property" targetNodeId="x27k.6708182213627106114" resolveInfo="preventNameMangling" />
-                            <node role="value" type="tpee.BooleanConstant" typeId="tpee.1068580123137" id="1544185720216496986" nodeInfo="nn">
+                          <node role="children" roleId="hba4.4481811096720537463" type="hba4.SimplePropertyStep" typeId="hba4.4481811096720581223" id="1544185720216496985" nodeInfo="ng">
+                            <link role="property" roleId="hba4.4481811096720581232" targetNodeId="x27k.6708182213627106114" resolveInfo="preventNameMangling" />
+                            <node role="value" roleId="hba4.4481811096720588312" type="tpee.BooleanConstant" typeId="tpee.1068580123137" id="1544185720216496986" nodeInfo="nn">
                               <property name="value" nameId="tpee.1068580123138" value="true" />
                             </node>
                           </node>

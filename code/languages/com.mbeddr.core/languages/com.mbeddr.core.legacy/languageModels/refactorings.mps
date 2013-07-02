@@ -129,7 +129,7 @@
         <property name="name" nameId="tpck.1169194664001" value="candidates" />
         <node role="type" roleId="tpee.5680397130376446158" type="tp2q.SequenceType" typeId="tp2q.1151689724996" id="8037912318727735143" nodeInfo="in">
           <node role="elementType" roleId="tp2q.1151689745422" type="tp25.SNodeType" typeId="tp25.1138055754698" id="8037912318727735145" nodeInfo="in">
-            <link role="concept" roleId="tp25.1138405853777" targetNodeId="x27k.3788988821851860886" resolveInfo="GlobalConstantDeclaration" />
+            <link role="concept" roleId="tp25.1138405853777" targetNodeId="x27k.3376775282622142916" resolveInfo="AbstractDefineLike" />
           </node>
         </node>
       </node>
@@ -409,7 +409,7 @@
             <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.GenericNewExpression" typeId="tpee.1145552977093" id="8037912318727740274" nodeInfo="nn">
               <node role="creator" roleId="tpee.1145553007750" type="tp2q.SingletonSequenceCreator" typeId="tp2q.1235573135402" id="8037912318727740275" nodeInfo="nn">
                 <node role="elementType" roleId="tp2q.1235573175711" type="tp25.SNodeType" typeId="tp25.1138055754698" id="8037912318727740276" nodeInfo="in">
-                  <link role="concept" roleId="tp25.1138405853777" targetNodeId="x27k.3788988821851860886" resolveInfo="GlobalConstantDeclaration" />
+                  <link role="concept" roleId="tp25.1138405853777" targetNodeId="x27k.3376775282622142916" resolveInfo="AbstractDefineLike" />
                 </node>
                 <node role="singletonValue" roleId="tp2q.1235573187520" type="tpee.DotExpression" typeId="tpee.1197027756228" id="8895010969726076697" nodeInfo="nn">
                   <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="8895010969726076668" nodeInfo="nn">
