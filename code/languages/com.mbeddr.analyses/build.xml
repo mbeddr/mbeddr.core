@@ -35,6 +35,9 @@
 
   <property name="mbeddr.analyses.project.dir" value="code/languages/com.mbeddr.analyses"/>
   <property name="mbeddr.analyses.project.mpr" value="code/languages/com.mbeddr.analyses/analyses.dev.mpr"/> <!-- for the time being in core project... -->
+
+  <property name="mbeddr.doc.project.dir" value="code/languages/com.mbeddr.doc"/>
+  <property name="mbeddr.doc.project.mpr" value="code/languages/com.mbeddr.doc/com.mbeddr.doc.dev.mpr"/> <!-- for the time being in core project... -->
   
   <property name="mbeddr.cc.project.dir" value="code/languages/com.mbeddr.cc"/>
   <property name="mbeddr.cc.project.mpr" value="code/languages/com.mbeddr.cc/cc.dev.mpr"/> <!-- for the time being in core project... -->
@@ -47,6 +50,7 @@
   <property name="coreLanguageDir" value="${mbeddr.github.core.home}/${mbeddr.core.project.dir}/languages"/>
   <property name="extLanguageDir" value="${mbeddr.github.core.home}/${mbeddr.ext.project.dir}/languages"/>
   <property name="ccLanguageDir" value="${mbeddr.github.core.home}/${mbeddr.cc.project.dir}/languages"/>
+  <property name="docLanguageDir" value="${mbeddr.github.core.home}/${mbeddr.doc.project.dir}/languages"/>
     
   <jvmargs id="myargs">
       <arg value="-ea"/>
@@ -89,6 +93,7 @@
       <library name="debugger.project" dir="${debuggerLanguageDir}"/>                                                                                        
       <library name="ext.project" dir="${extLanguageDir}"/> 
       <library name="cc.project" dir="${ccLanguageDir}"/>
+      <library name="doc.project" dir="${docLanguageDir}"/>
       <modules dir="${mbeddr.github.core.home}/${mbeddr.analyses.project.dir}/languages"/>
     </mps.generate>
   </target>
@@ -104,6 +109,7 @@
       <library name="debugger.project" dir="${debuggerLanguageDir}"/>                                                                                        
       <library name="ext.project" dir="${extLanguageDir}"/> 
       <library name="cc.project" dir="${ccLanguageDir}"/> 
+      <library name="doc.project" dir="${docLanguageDir}"/>	  
       <library name="analyses.project" dir="${mbeddr.github.core.home}/${mbeddr.analyses.project.dir}/languages"/> 
 
       <!-- executable tests -->
