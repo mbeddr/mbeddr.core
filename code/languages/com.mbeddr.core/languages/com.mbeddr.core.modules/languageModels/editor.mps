@@ -251,6 +251,10 @@
     <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="3179063443441650014">
       <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="x27k.3179063443441650011" resolveInfo="ExportedDummy" />
     </node>
+    <node type="tpc2.EditorComponentDeclaration" typeId="tpc2.1078938745671" id="3209727427932140988">
+      <property name="name" nameId="tpck.1169194664001" value="ActsAsMainFlag" />
+      <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="x27k.3209727427932102586" resolveInfo="IMayActAsMainFunction" />
+    </node>
   </roots>
   <root id="6437088627575722855">
     <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="6437088627575722857">
@@ -2804,6 +2808,12 @@
     <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="3179063443441681546">
       <property name="text" nameId="tpc2.1073389577007" value="exported" />
       <link role="styleClass" roleId="tpc2.1186406756722" targetNodeId="1317894735999272948" resolveInfo="exported" />
+    </node>
+  </root>
+  <root id="3209727427932140988">
+    <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="3209727427932140990">
+      <property name="text" nameId="tpc2.1073389577007" value="(acts as main)" />
+      <link role="styleClass" roleId="tpc2.1186406756722" targetNodeId="vrqd.3134547887598403854" resolveInfo="nothing" />
     </node>
   </root>
 </model>
