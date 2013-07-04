@@ -11,6 +11,7 @@
       <modulePath path="${project}/languages/com.mbeddr.core.debug.test/test.mpl" />
       <modulePath path="${project}/languages/com.mbeddr.core.debug.util/util.mpl" />
       <modulePath path="${project}/tests/test.debugger.runtime/runtime.msd" />
+      <modulePath path="${project}/tests/test.debugging.cc.variability/test.debugging.cc.variability.msd.msd" folder="" />
       <modulePath path="${project}/tests/test.debugging.core/core.msd" />
       <modulePath path="${project}/tests/test.debugging.cross/test.debugging.cross.msd" />
       <modulePath path="${project}/tests/test.debugging.ext.components/test.debugging.ext.components.msd" />
@@ -23,6 +24,14 @@
   <component name="ProjectLibraryManager">
     <option name="libraries">
       <map>
+        <entry key="cc">
+          <value>
+            <Library>
+              <option name="name" value="cc" />
+              <option name="path" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.cc" />
+            </Library>
+          </value>
+        </entry>
         <entry key="core">
           <value>
             <Library>
