@@ -71,6 +71,17 @@
           </node>
         </node>
       </node>
+      <node role="additionalData" roleId="75wo.8745401669463270518" type="6pek.WorkPackage" typeId="6pek.8587612447638802592" id="3340584831013385754">
+        <property name="name" nameId="tpck.1169194664001" value="inital" />
+        <property name="scope" nameId="6pek.3411780537800178873" value="1" />
+        <property name="resonsible" nameId="6pek.3411780537800178874" value="peter" />
+        <property name="effort" nameId="6pek.8587612447638802594" value="1" />
+        <node role="description" roleId="6pek.8587612447638802618" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="3340584831013385755">
+          <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="3340584831013385756">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3340584831013385757" />
+          </node>
+        </node>
+      </node>
     </node>
     <node role="requirements" roleId="75wo.8745401669462963171" type="75wo.Requirement" typeId="75wo.8745401669462952101" id="1433966787984154172">
       <property name="open" value="false" />
