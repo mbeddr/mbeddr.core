@@ -35,6 +35,7 @@
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="6825476687691297431">
       <property name="name" nameId="tpck.1169194664001" value="FeatureAttribute" />
       <property name="virtualPackage" nameId="tpck.1193676396447" value="fm" />
+      <property name="iconPath" nameId="tpce.1160488491229" value="${language_descriptor}/icons/attribute.png" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
     </node>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="6825476687691297434">

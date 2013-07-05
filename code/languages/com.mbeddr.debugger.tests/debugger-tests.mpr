@@ -48,6 +48,14 @@
             </Library>
           </value>
         </entry>
+        <entry key="doc">
+          <value>
+            <Library>
+              <option name="name" value="doc" />
+              <option name="path" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.doc" />
+            </Library>
+          </value>
+        </entry>
         <entry key="ext">
           <value>
             <Library>
