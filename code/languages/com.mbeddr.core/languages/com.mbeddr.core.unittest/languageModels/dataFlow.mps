@@ -20,6 +20,7 @@
       <link role="conceptDeclaration" roleId="tp41.1206442096288" targetNodeId="yz9a.6275792049641586523" resolveInfo="TestCase" />
     </node>
     <node type="tp41.DataFlowBuilderDeclaration" typeId="tp41.1206442055221" id="2416710259287150040">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="asserts" />
       <link role="conceptDeclaration" roleId="tp41.1206442096288" targetNodeId="yz9a.6275792049641587287" resolveInfo="AssertStatement" />
     </node>
   </roots>

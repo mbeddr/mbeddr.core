@@ -13,10 +13,11 @@
   <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="5" implicit="yes" />
   <import index="k146" modelUID="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" version="5" implicit="yes" />
   <import index="tp2q" modelUID="r:00000000-0000-4000-0000-011c8959032e(jetbrains.mps.baseLanguage.collections.structure)" version="7" implicit="yes" />
-  <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="22" implicit="yes" />
+  <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="23" implicit="yes" />
   <roots>
     <node type="tpd4.InferenceRule" typeId="tpd4.1174643105530" id="6275792049641587390">
       <property name="name" nameId="tpck.1169194664001" value="typeof_AssertStatement" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="asserts" />
     </node>
     <node type="tpd4.InferenceRule" typeId="tpd4.1174643105530" id="5686538669182343404">
       <property name="name" nameId="tpck.1169194664001" value="typeof_ExecuteTestExpression" />
@@ -37,6 +38,10 @@
     <node type="tpd4.InferenceRule" typeId="tpd4.1174643105530" id="4918562978281491441">
       <property name="name" nameId="tpck.1169194664001" value="typeof_AssertExprList" />
       <property name="virtualPackage" nameId="tpck.1193676396447" value="exprlist" />
+    </node>
+    <node type="tpd4.InferenceRule" typeId="tpd4.1174643105530" id="7755897872837214321">
+      <property name="name" nameId="tpck.1169194664001" value="typeof_StructuredBinOpAssertStatement" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="asserts" />
     </node>
   </roots>
   <root id="6275792049641587390">
@@ -349,6 +354,60 @@
     <node role="applicableNode" roleId="tpd4.1174648101952" type="tpd4.ConceptReference" typeId="tpd4.1174642788531" id="4918562978281491443">
       <property name="name" nameId="tpck.1169194664001" value="ael" />
       <link role="concept" roleId="tpd4.1174642800329" targetNodeId="yz9a.1472658431693994435" resolveInfo="AssertExprList" />
+    </node>
+  </root>
+  <root id="7755897872837214321">
+    <node role="body" roleId="tpd4.1195213635060" type="tpee.StatementList" typeId="tpee.1068580123136" id="7755897872837214322">
+      <node role="statement" roleId="tpee.1068581517665" type="tpd4.CreateLessThanInequationStatement" typeId="tpd4.1174663118805" id="7755897872837214375">
+        <node role="rightExpression" roleId="tpd4.1174660783414" type="tpd4.NormalTypeClause" typeId="tpd4.1185788614172" id="7755897872837214379">
+          <node role="normalType" roleId="tpd4.1185788644032" type="tpee.GenericNewExpression" typeId="tpee.1145552977093" id="7755897872837214380">
+            <node role="creator" roleId="tpee.1145553007750" type="tp25.SNodeCreator" typeId="tp25.1180636770613" id="7755897872837219340">
+              <node role="createdType" roleId="tp25.1180636770616" type="tp25.SNodeType" typeId="tp25.1138055754698" id="7755897872837219341">
+                <link role="concept" roleId="tp25.1138405853777" targetNodeId="mj1l.8864856114140038681" resolveInfo="DoubleType" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node role="leftExpression" roleId="tpd4.1174660783413" type="tpd4.NormalTypeClause" typeId="tpd4.1185788614172" id="7755897872837214378">
+          <node role="normalType" roleId="tpd4.1185788644032" type="tpd4.TypeOfExpression" typeId="tpd4.1174657487114" id="7755897872837214325">
+            <node role="term" roleId="tpd4.1174657509053" type="tpee.DotExpression" typeId="tpee.1197027756228" id="7755897872837214348">
+              <node role="operand" roleId="tpee.1197027771414" type="tpd4.ApplicableNodeReference" typeId="tpd4.1174650418652" id="7755897872837214327">
+                <link role="applicableNode" roleId="tpd4.1174650432090" targetNodeId="7755897872837214323" resolveInfo="sas" />
+              </node>
+              <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="7755897872837214354">
+                <link role="link" roleId="tp25.1138056516764" targetNodeId="yz9a.7755897872837031764" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node role="statement" roleId="tpee.1068581517665" type="tpd4.CreateLessThanInequationStatement" typeId="tpd4.1174663118805" id="7755897872837219342">
+        <node role="rightExpression" roleId="tpd4.1174660783414" type="tpd4.NormalTypeClause" typeId="tpd4.1185788614172" id="7755897872837219343">
+          <node role="normalType" roleId="tpd4.1185788644032" type="tpee.GenericNewExpression" typeId="tpee.1145552977093" id="7755897872837219344">
+            <node role="creator" roleId="tpee.1145553007750" type="tp25.SNodeCreator" typeId="tp25.1180636770613" id="7755897872837219345">
+              <node role="createdType" roleId="tp25.1180636770616" type="tp25.SNodeType" typeId="tp25.1138055754698" id="7755897872837219346">
+                <link role="concept" roleId="tp25.1138405853777" targetNodeId="mj1l.8864856114140038681" resolveInfo="DoubleType" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node role="leftExpression" roleId="tpd4.1174660783413" type="tpd4.NormalTypeClause" typeId="tpd4.1185788614172" id="7755897872837219347">
+          <node role="normalType" roleId="tpd4.1185788644032" type="tpd4.TypeOfExpression" typeId="tpd4.1174657487114" id="7755897872837219348">
+            <node role="term" roleId="tpd4.1174657509053" type="tpee.DotExpression" typeId="tpee.1197027756228" id="7755897872837219349">
+              <node role="operand" roleId="tpee.1197027771414" type="tpd4.ApplicableNodeReference" typeId="tpd4.1174650418652" id="7755897872837219350">
+                <link role="applicableNode" roleId="tpd4.1174650432090" targetNodeId="7755897872837214323" resolveInfo="sas" />
+              </node>
+              <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="7755897872837219353">
+                <link role="link" roleId="tp25.1138056516764" targetNodeId="yz9a.7755897872837031765" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node role="applicableNode" roleId="tpd4.1174648101952" type="tpd4.ConceptReference" typeId="tpd4.1174642788531" id="7755897872837214323">
+      <property name="name" nameId="tpck.1169194664001" value="sas" />
+      <link role="concept" roleId="tpd4.1174642800329" targetNodeId="yz9a.7755897872837031762" resolveInfo="StructuredBinOpAssertStatement" />
     </node>
   </root>
 </model>
