@@ -110,7 +110,7 @@
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="yvrq.StoreRtConfigStatement" typeId="yvrq.8882953773355830195" id="3716885538279496961">
           <link role="rtFeatureModel" roleId="yvrq.8000796061690159789" targetNodeId="8882953773355744171" resolveInfo="someFM" />
-          <link role="configModel" roleId="yvrq.8000796061690159814" targetNodeId="8882953773355744176" resolveInfo="Cfg1" />
+          <link role="configModel" roleId="yvrq.8000796061690159814" targetNodeId="3716885538279497740" resolveInfo="Cfg3" />
           <node role="target" roleId="yvrq.8882953773355838792" type="x27k.GlobalVarRef" typeId="x27k.6610873504380357354" id="8842534433307562470">
             <link role="var" roleId="x27k.6610873504380357355" targetNodeId="8882953773355858245" resolveInfo="cfg" />
           </node>
@@ -405,6 +405,34 @@
               <property name="const" nameId="mj1l.2941277002445651368" value="false" />
             </node>
           </node>
+          <node role="attributes" roleId="qqyh.6825476687691297429" type="qqyh.FeatureAttribute" typeId="qqyh.6825476687691297431" id="8842534433307673763">
+            <property name="name" nameId="tpck.1169194664001" value="blub" />
+            <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int32tType" typeId="mj1l.8463282783691618440" id="8842534433307673765">
+              <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+              <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+            </node>
+          </node>
+        </node>
+        <node role="children" roleId="qqyh.6825476687691297428" type="qqyh.Feature" typeId="qqyh.6825476687691297426" id="8842534433307602154">
+          <property name="name" nameId="tpck.1169194664001" value="f4" />
+          <node role="constraint" roleId="qqyh.6825476687691297427" type="qqyh.OptionalConstraint" typeId="qqyh.6825476687691317627" id="8842534433307602159" />
+          <node role="children" roleId="qqyh.6825476687691297428" type="qqyh.Feature" typeId="qqyh.6825476687691297426" id="8842534433307602160">
+            <property name="name" nameId="tpck.1169194664001" value="bla" />
+          </node>
+        </node>
+      </node>
+      <node role="derivedFeatures" roleId="qqyh.2203816361987258682" type="qqyh.DerivedFeature" typeId="qqyh.2203816361987134490" id="8842534433307602156">
+        <property name="name" nameId="tpck.1169194664001" value="a" />
+        <node role="value" roleId="qqyh.2203816361987258679" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="8842534433307602158">
+          <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
+          <property name="value" nameId="mj1l.8860443239512128104" value="2" />
+        </node>
+      </node>
+      <node role="derivedFeatures" roleId="qqyh.2203816361987258682" type="qqyh.DerivedFeature" typeId="qqyh.2203816361987134490" id="8842534433307661089">
+        <property name="name" nameId="tpck.1169194664001" value="a" />
+        <node role="value" roleId="qqyh.2203816361987258679" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="8842534433307661091">
+          <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
+          <property name="value" nameId="mj1l.8860443239512128104" value="3" />
         </node>
       </node>
     </node>
@@ -438,6 +466,13 @@
               <property name="value" nameId="mj1l.8860443239512128104" value="42" />
             </node>
           </node>
+          <node role="values" roleId="qqyh.6825476687691297424" type="qqyh.AttributeValue" typeId="qqyh.6825476687691297413" id="8842534433307673766">
+            <link role="attribute" roleId="qqyh.6825476687691297415" targetNodeId="8842534433307673763" resolveInfo="blub" />
+            <node role="value" roleId="qqyh.6825476687691297414" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="8842534433307673768">
+              <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
+              <property name="value" nameId="mj1l.8860443239512128104" value="2" />
+            </node>
+          </node>
         </node>
       </node>
     </node>
@@ -459,22 +494,88 @@
       <node role="watchables" roleId="rpmx.1218249513292256533" type="rpmx.WatchableNameExpression" typeId="rpmx.6894131567067751702" id="8842534433307563560">
         <property name="name" nameId="tpck.1169194664001" value="x" />
       </node>
-      <node role="watchables" roleId="rpmx.1218249513292256533" type="rpmx.WatchableNameExpression" typeId="rpmx.6894131567067751702" id="8842534433307563561">
-        <property name="name" nameId="tpck.1169194664001" value="cfg" />
+    </node>
+    <node role="contents" roleId="rpmx.5710167937130937944" type="rpmx.EmptyDebuggerContent" typeId="rpmx.105850086901771260" id="8842534433307918144" />
+    <node role="contents" roleId="rpmx.5710167937130937944" type="rpmx.WatchablesDeclaration" typeId="rpmx.1218249513292256529" id="8842534433307918146">
+      <property name="name" nameId="tpck.1169194664001" value="uninitializedFM" />
+      <node role="watchables" roleId="rpmx.1218249513292256533" type="rpmx.WatchableWithValueExpression" typeId="rpmx.6894131567067751707" id="8842534433307918139">
+        <node role="name" roleId="rpmx.6894131567067751708" type="rpmx.WatchableNameExpression" typeId="rpmx.6894131567067751702" id="8842534433307563561">
+          <property name="name" nameId="tpck.1169194664001" value="cfg" />
+        </node>
+        <node role="value" roleId="rpmx.6894131567067751709" type="rpmx.PrimitiveValueExpression" typeId="rpmx.6894131567067751726" id="8842534433307918142">
+          <node role="value" roleId="rpmx.6894131567068111705" type="rpmx.LiteralValue" typeId="rpmx.6894131567068111611" id="8842534433307918143">
+            <property name="value" nameId="rpmx.6894131567068111701" value="someFM" />
+          </node>
+        </node>
+      </node>
+      <node role="extends" roleId="rpmx.5710167937131356722" type="rpmx.WatchableDeclarationReference" typeId="rpmx.1218249513292277439" id="8842534433307918147">
+        <link role="declaration" roleId="rpmx.1218249513292301610" targetNodeId="8842534433307563558" resolveInfo="inTest" />
       </node>
     </node>
     <node role="contents" roleId="rpmx.5710167937130937944" type="rpmx.EmptyDebuggerContent" typeId="rpmx.105850086901771260" id="8842534433307563552" />
+    <node role="contents" roleId="rpmx.5710167937130937944" type="rpmx.WatchablesDeclaration" typeId="rpmx.1218249513292256529" id="8842534433307918149">
+      <property name="name" nameId="tpck.1169194664001" value="initializedFM" />
+      <node role="watchables" roleId="rpmx.1218249513292256533" type="rpmx.WatchableWithValueExpression" typeId="rpmx.6894131567067751707" id="8842534433307918150">
+        <node role="name" roleId="rpmx.6894131567067751708" type="rpmx.WatchableNameExpression" typeId="rpmx.6894131567067751702" id="8842534433307918151">
+          <property name="name" nameId="tpck.1169194664001" value="cfg" />
+        </node>
+        <node role="value" roleId="rpmx.6894131567067751709" type="rpmx.ComplexValueExpression" typeId="rpmx.6894131567068077383" id="8842534433307918155">
+          <node role="childern" roleId="rpmx.6894131567068077386" type="rpmx.WatchableWithValueExpression" typeId="rpmx.6894131567067751707" id="8842534433307918158">
+            <node role="name" roleId="rpmx.6894131567067751708" type="rpmx.WatchableNameExpression" typeId="rpmx.6894131567067751702" id="8842534433307918157">
+              <property name="name" nameId="tpck.1169194664001" value="root" />
+            </node>
+            <node role="value" roleId="rpmx.6894131567067751709" type="rpmx.ComplexValueExpression" typeId="rpmx.6894131567068077383" id="8842534433307918163">
+              <node role="childern" roleId="rpmx.6894131567068077386" type="rpmx.WatchableWithValueExpression" typeId="rpmx.6894131567067751707" id="8842534433307918166">
+                <node role="name" roleId="rpmx.6894131567067751708" type="rpmx.WatchableNameExpression" typeId="rpmx.6894131567067751702" id="8842534433307918165">
+                  <property name="name" nameId="tpck.1169194664001" value="f3" />
+                </node>
+                <node role="value" roleId="rpmx.6894131567067751709" type="rpmx.ComplexValueExpression" typeId="rpmx.6894131567068077383" id="8842534433307918172">
+                  <node role="childern" roleId="rpmx.6894131567068077386" type="rpmx.WatchableWithValueExpression" typeId="rpmx.6894131567067751707" id="8842534433307918175">
+                    <node role="name" roleId="rpmx.6894131567067751708" type="rpmx.WatchableNameExpression" typeId="rpmx.6894131567067751702" id="8842534433307918174">
+                      <property name="name" nameId="tpck.1169194664001" value="attr" />
+                    </node>
+                    <node role="value" roleId="rpmx.6894131567067751709" type="rpmx.PrimitiveValueExpression" typeId="rpmx.6894131567067751726" id="8842534433307918180">
+                      <node role="value" roleId="rpmx.6894131567068111705" type="rpmx.LiteralValue" typeId="rpmx.6894131567068111611" id="8842534433307918181">
+                        <property name="value" nameId="rpmx.6894131567068111701" value="42" />
+                      </node>
+                    </node>
+                  </node>
+                  <node role="childern" roleId="rpmx.6894131567068077386" type="rpmx.WatchableWithValueExpression" typeId="rpmx.6894131567067751707" id="8842534433307918183">
+                    <node role="name" roleId="rpmx.6894131567067751708" type="rpmx.WatchableNameExpression" typeId="rpmx.6894131567067751702" id="8842534433307918182">
+                      <property name="name" nameId="tpck.1169194664001" value="blub" />
+                    </node>
+                    <node role="value" roleId="rpmx.6894131567067751709" type="rpmx.PrimitiveValueExpression" typeId="rpmx.6894131567067751726" id="8842534433307918186">
+                      <node role="value" roleId="rpmx.6894131567068111705" type="rpmx.LiteralValue" typeId="rpmx.6894131567068111611" id="8842534433307918187">
+                        <property name="value" nameId="rpmx.6894131567068111701" value="2" />
+                      </node>
+                    </node>
+                  </node>
+                  <node role="value" roleId="rpmx.6894131567068111706" type="rpmx.LiteralValue" typeId="rpmx.6894131567068111611" id="8842534433307918173">
+                    <property name="value" nameId="rpmx.6894131567068111701" value="feature" />
+                  </node>
+                </node>
+              </node>
+              <node role="value" roleId="rpmx.6894131567068111706" type="rpmx.LiteralValue" typeId="rpmx.6894131567068111611" id="8842534433307918164">
+                <property name="value" nameId="rpmx.6894131567068111701" value="feature" />
+              </node>
+            </node>
+          </node>
+          <node role="value" roleId="rpmx.6894131567068111706" type="rpmx.LiteralValue" typeId="rpmx.6894131567068111611" id="8842534433307918156">
+            <property name="value" nameId="rpmx.6894131567068111701" value="someFM" />
+          </node>
+        </node>
+      </node>
+      <node role="extends" roleId="rpmx.5710167937131356722" type="rpmx.WatchableDeclarationReference" typeId="rpmx.1218249513292277439" id="8842534433307918154">
+        <link role="declaration" roleId="rpmx.1218249513292301610" targetNodeId="8842534433307563558" resolveInfo="inTest" />
+      </node>
+    </node>
+    <node role="contents" roleId="rpmx.5710167937130937944" type="rpmx.EmptyDebuggerContent" typeId="rpmx.105850086901771260" id="8842534433307918148" />
     <node role="contents" roleId="rpmx.5710167937130937944" type="rpmx.DebuggerTestcase" typeId="rpmx.105850086902839305" id="8842534433307570505">
       <property name="name" nameId="tpck.1169194664001" value="inTestcase" />
       <property name="abstract" nameId="rpmx.105850086903217241" value="true" />
       <node role="returnType" roleId="tpee.1068580123133" type="tpee.VoidType" typeId="tpee.1068581517677" id="8842534433307570506" />
       <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="8842534433307570507" />
       <node role="validation" roleId="rpmx.4360423713604451010" type="rpmx.ValidationConfiguration" typeId="rpmx.4360423713604419372" id="8842534433307570508">
-        <node role="validations" roleId="rpmx.4360423713604419402" type="rpmx.WatchablesValidationList" typeId="rpmx.4550138447367847233" id="8842534433307570511">
-          <node role="extends" roleId="rpmx.1218249513292277448" type="rpmx.WatchableDeclarationReference" typeId="rpmx.1218249513292277439" id="8842534433307570512">
-            <link role="declaration" roleId="rpmx.1218249513292301610" targetNodeId="8842534433307563558" resolveInfo="inTest" />
-          </node>
-        </node>
         <node role="validations" roleId="rpmx.4360423713604419402" type="rpmx.StackFramesReference" typeId="rpmx.1218249513292851176" id="8842534433307570513">
           <link role="declaration" roleId="rpmx.1218249513292851177" targetNodeId="8842534433307563553" resolveInfo="inTest" />
         </node>
@@ -491,6 +592,11 @@
         <node role="validations" roleId="rpmx.4360423713604419402" type="rpmx.ValidateDebuggerSuspended" typeId="rpmx.7048220250906049590" id="8842534433307570522">
           <node role="marker" roleId="rpmx.7048220250906049591" type="rpmx.MarkerRef" typeId="rpmx.4193597469137492644" id="8842534433307570523">
             <link role="marker" roleId="rpmx.4193597469137492645" targetNodeId="8842534433307570495" resolveInfo="onStoreConfig" />
+          </node>
+        </node>
+        <node role="validations" roleId="rpmx.4360423713604419402" type="rpmx.WatchablesValidationList" typeId="rpmx.4550138447367847233" id="8842534433307918195">
+          <node role="extends" roleId="rpmx.1218249513292277448" type="rpmx.WatchableDeclarationReference" typeId="rpmx.1218249513292277439" id="8842534433307918197">
+            <link role="declaration" roleId="rpmx.1218249513292301610" targetNodeId="8842534433307918146" resolveInfo="uninitializedFM" />
           </node>
         </node>
       </node>
@@ -545,6 +651,11 @@
             <link role="marker" roleId="rpmx.4193597469137492645" targetNodeId="8842534433307570543" resolveInfo="variantSwitch" />
           </node>
         </node>
+        <node role="validations" roleId="rpmx.4360423713604419402" type="rpmx.WatchablesValidationList" typeId="rpmx.4550138447367847233" id="8842534433307918193">
+          <node role="extends" roleId="rpmx.1218249513292277448" type="rpmx.WatchableDeclarationReference" typeId="rpmx.1218249513292277439" id="8842534433307918194">
+            <link role="declaration" roleId="rpmx.1218249513292301610" targetNodeId="8842534433307918149" resolveInfo="initializedFM" />
+          </node>
+        </node>
       </node>
     </node>
     <node role="contents" roleId="rpmx.5710167937130937944" type="rpmx.EmptyDebuggerContent" typeId="rpmx.105850086901771260" id="8842534433307587210" />
@@ -572,6 +683,11 @@
             <link role="marker" roleId="rpmx.4193597469137492645" targetNodeId="8842534433307563178" resolveInfo="inDefault" />
           </node>
         </node>
+        <node role="validations" roleId="rpmx.4360423713604419402" type="rpmx.WatchablesValidationList" typeId="rpmx.4550138447367847233" id="8842534433307918191">
+          <node role="extends" roleId="rpmx.1218249513292277448" type="rpmx.WatchableDeclarationReference" typeId="rpmx.1218249513292277439" id="8842534433307918192">
+            <link role="declaration" roleId="rpmx.1218249513292301610" targetNodeId="8842534433307918149" resolveInfo="initializedFM" />
+          </node>
+        </node>
       </node>
     </node>
     <node role="contents" roleId="rpmx.5710167937130937944" type="rpmx.EmptyDebuggerContent" typeId="rpmx.105850086901771260" id="8842534433307587215" />
@@ -594,6 +710,11 @@
         <node role="validations" roleId="rpmx.4360423713604419402" type="rpmx.ValidateDebuggerSuspended" typeId="rpmx.7048220250906049590" id="8842534433307587235">
           <node role="marker" roleId="rpmx.7048220250906049591" type="rpmx.MarkerRef" typeId="rpmx.4193597469137492644" id="8842534433307587236">
             <link role="marker" roleId="rpmx.4193597469137492645" targetNodeId="8842534433307563178" resolveInfo="inDefault" />
+          </node>
+        </node>
+        <node role="validations" roleId="rpmx.4360423713604419402" type="rpmx.WatchablesValidationList" typeId="rpmx.4550138447367847233" id="8842534433307918189">
+          <node role="extends" roleId="rpmx.1218249513292277448" type="rpmx.WatchableDeclarationReference" typeId="rpmx.1218249513292277439" id="8842534433307918190">
+            <link role="declaration" roleId="rpmx.1218249513292301610" targetNodeId="8842534433307918149" resolveInfo="initializedFM" />
           </node>
         </node>
       </node>
