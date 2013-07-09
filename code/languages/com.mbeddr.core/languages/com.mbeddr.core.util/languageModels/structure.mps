@@ -11,6 +11,7 @@
   <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="5" implicit="yes" />
   <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="5" implicit="yes" />
   <import index="clbe" modelUID="r:61d840b4-12c1-49ea-b142-b2a1550a9b15(com.mbeddr.core.udt.structure)" version="7" implicit="yes" />
+  <import index="k146" modelUID="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" version="5" implicit="yes" />
   <roots>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="5686538669182273028">
       <property name="name" nameId="tpck.1169194664001" value="BlockExpression" />
@@ -233,6 +234,11 @@
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="676979522555858286">
       <property name="virtualPackage" nameId="tpck.1193676396447" value="flags" />
       <property name="name" nameId="tpck.1169194664001" value="FlagGet" />
+      <link role="extends" roleId="tpce.1071489389519" targetNodeId="3457272138385168029" resolveInfo="FlagOp" />
+    </node>
+    <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="358309236632831838">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="flags" />
+      <property name="name" nameId="tpck.1169194664001" value="FlagToggle" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="3457272138385168029" resolveInfo="FlagOp" />
     </node>
   </roots>
@@ -1034,6 +1040,12 @@
   <root id="676979522555858286">
     <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="676979522555858287">
       <property name="value" nameId="tpce.1105725733873" value="getbits" />
+      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473891462" resolveInfo="alias" />
+    </node>
+  </root>
+  <root id="358309236632831838">
+    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="358309236632831839">
+      <property name="value" nameId="tpce.1105725733873" value="togglebits" />
       <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473891462" resolveInfo="alias" />
     </node>
   </root>
