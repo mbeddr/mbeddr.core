@@ -12,7 +12,7 @@
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="tp2c" modelUID="r:00000000-0000-4000-0000-011c89590338(jetbrains.mps.baseLanguage.closures.structure)" version="3" implicit="yes" />
   <import index="tp2q" modelUID="r:00000000-0000-4000-0000-011c8959032e(jetbrains.mps.baseLanguage.collections.structure)" version="7" implicit="yes" />
-  <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="21" implicit="yes" />
+  <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="23" implicit="yes" />
   <roots>
     <node type="1i04.ConceptBehavior" typeId="1i04.1225194240794" id="2017717622748558973">
       <property name="virtualPackage" nameId="tpck.1193676396447" value="configuration.cbmc" />
@@ -37,6 +37,10 @@
     <node type="1i04.ConceptBehavior" typeId="1i04.1225194240794" id="4697221030755522497">
       <property name="virtualPackage" nameId="tpck.1193676396447" value="harness" />
       <link role="concept" roleId="1i04.1225194240799" targetNodeId="q5q6.8985851583396634740" resolveInfo="GuardedCall" />
+    </node>
+    <node type="1i04.ConceptBehavior" typeId="1i04.1225194240794" id="4073870544743762009">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="cbmc_macros" />
+      <link role="concept" roleId="1i04.1225194240799" targetNodeId="q5q6.4887422885165621122" resolveInfo="CPROVERassume" />
     </node>
   </roots>
   <root id="2017717622748558973">
@@ -372,6 +376,11 @@
           </node>
         </node>
       </node>
+    </node>
+  </root>
+  <root id="4073870544743762009">
+    <node role="constructor" roleId="1i04.1225194240801" type="1i04.ConceptConstructorDeclaration" typeId="1i04.1225194413805" id="4073870544743762010">
+      <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="4073870544743762011" />
     </node>
   </root>
 </model>
