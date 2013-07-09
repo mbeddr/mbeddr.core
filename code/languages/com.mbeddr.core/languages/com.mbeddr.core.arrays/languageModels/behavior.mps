@@ -690,16 +690,16 @@
       <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="3557252397244039385" nodeInfo="sn">
         <node role="statement" roleId="tpee.1068581517665" type="tpee.IfStatement" typeId="tpee.1068580123159" id="1493517870462244902" nodeInfo="nn">
           <node role="ifTrue" roleId="tpee.1068580123161" type="tpee.StatementList" typeId="tpee.1068580123136" id="1493517870462244903" nodeInfo="sn">
-            <node role="statement" roleId="tpee.1068581517665" type=".com.mbeddr.core.debug.blext.structure.ChildrenToWatchablesStatement" id="3557252397244039400" nodeInfo="ng">
-              <node role="highlightedNode" type="1i04.ThisNodeExpression" typeId="1i04.1225194691553" id="3557252397244039403" nodeInfo="nn" />
-              <node role="typeMapper" type=".com.mbeddr.core.debug.blext.structure.SingleTypeMapper" id="3557252397244040866" nodeInfo="ng">
-                <node role="typeMapper" type="tpee.DotExpression" typeId="tpee.1197027756228" id="3557252397244040890" nodeInfo="nn">
+            <node role="statement" roleId="tpee.1068581517665" type="talm.ChildrenToWatchablesStatement" typeId="talm.2011139961867340775" id="3557252397244039400" nodeInfo="ng">
+              <node role="highlightedNode" roleId="talm.2011139961867340802" type="1i04.ThisNodeExpression" typeId="1i04.1225194691553" id="3557252397244039403" nodeInfo="nn" />
+              <node role="typeMapper" roleId="talm.2011139961867340776" type="talm.SingleTypeMapper" typeId="talm.7593887520504267026" id="3557252397244040866" nodeInfo="ng">
+                <node role="typeMapper" roleId="talm.7593887520504267036" type="tpee.DotExpression" typeId="tpee.1197027756228" id="3557252397244040890" nodeInfo="nn">
                   <node role="operand" roleId="tpee.1197027771414" type="1i04.ThisNodeExpression" typeId="1i04.1225194691553" id="3557252397244040869" nodeInfo="nn" />
                   <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="3557252397244040895" nodeInfo="nn">
                     <link role="link" roleId="tp25.1138056516764" targetNodeId="yq40.279446265608459825" />
                   </node>
                 </node>
-                <node role="namePattern" type=".com.mbeddr.core.debug.blext.structure.IdentifierExpression" id="3557252397244040927" nodeInfo="ng" />
+                <node role="namePattern" roleId="talm.7593887520504413459" type="talm.IdentifierExpression" typeId="talm.2011139961867522368" id="3557252397244040927" nodeInfo="ng" />
               </node>
             </node>
           </node>
@@ -1903,15 +1903,15 @@
       <link role="overriddenMethod" roleId="1i04.1225194472831" targetNodeId="exl8.8519572659617671165" resolveInfo="resolveChildren" />
       <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="8519572659617671435" nodeInfo="nn" />
       <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="8519572659617671436" nodeInfo="sn">
-        <node role="statement" roleId="tpee.1068581517665" type=".com.mbeddr.core.debug.blext.structure.ChildrenToWatchablesStatement" id="7593887520504443301" nodeInfo="ng">
-          <node role="typeMapper" type=".com.mbeddr.core.debug.blext.structure.SingleTypeMapper" id="7593887520504443304" nodeInfo="ng">
-            <node role="typeMapper" type="tpee.DotExpression" typeId="tpee.1197027756228" id="7593887520504443378" nodeInfo="nn">
+        <node role="statement" roleId="tpee.1068581517665" type="talm.ChildrenToWatchablesStatement" typeId="talm.2011139961867340775" id="7593887520504443301" nodeInfo="ng">
+          <node role="typeMapper" roleId="talm.2011139961867340776" type="talm.SingleTypeMapper" typeId="talm.7593887520504267026" id="7593887520504443304" nodeInfo="ng">
+            <node role="typeMapper" roleId="talm.7593887520504267036" type="tpee.DotExpression" typeId="tpee.1197027756228" id="7593887520504443378" nodeInfo="nn">
               <node role="operand" roleId="tpee.1197027771414" type="1i04.ThisNodeExpression" typeId="1i04.1225194691553" id="7593887520504443357" nodeInfo="nn" />
               <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="7593887520504443383" nodeInfo="nn">
                 <link role="link" roleId="tp25.1138056516764" targetNodeId="yq40.5679441017214012546" />
               </node>
             </node>
-            <node role="namePattern" type="tpee.PlusExpression" typeId="tpee.1068581242875" id="7593887520504443353" nodeInfo="nn">
+            <node role="namePattern" roleId="talm.7593887520504413459" type="tpee.PlusExpression" typeId="tpee.1068581242875" id="7593887520504443353" nodeInfo="nn">
               <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="7593887520504443356" nodeInfo="nn">
                 <property name="value" nameId="tpee.1070475926801" value="]" />
               </node>
@@ -1919,11 +1919,11 @@
                 <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="7593887520504443308" nodeInfo="nn">
                   <property name="value" nameId="tpee.1070475926801" value="[" />
                 </node>
-                <node role="rightExpression" roleId="tpee.1081773367579" type=".com.mbeddr.core.debug.blext.structure.IndexExpression" id="7593887520504443332" nodeInfo="ng" />
+                <node role="rightExpression" roleId="tpee.1081773367579" type="talm.IndexExpression" typeId="talm.2011139961867406242" id="7593887520504443332" nodeInfo="ng" />
               </node>
             </node>
           </node>
-          <node role="highlightedNode" type="1i04.ThisNodeExpression" typeId="1i04.1225194691553" id="7593887520504443307" nodeInfo="nn" />
+          <node role="highlightedNode" roleId="talm.2011139961867340802" type="1i04.ThisNodeExpression" typeId="1i04.1225194691553" id="7593887520504443307" nodeInfo="nn" />
         </node>
       </node>
       <node role="parameter" roleId="tpee.1068580123134" type="tpee.ParameterDeclaration" typeId="tpee.1068498886292" id="8519572659617671437" nodeInfo="ir">
@@ -5049,15 +5049,15 @@
       <link role="overriddenMethod" roleId="1i04.1225194472831" targetNodeId="exl8.8519572659617671043" resolveInfo="map" />
       <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="862133296698438891" nodeInfo="nn" />
       <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="862133296698438892" nodeInfo="sn">
-        <node role="statement" roleId="tpee.1068581517665" type=".com.mbeddr.core.debug.blext.structure.ValueMappingStatement" id="7634928937260735517" nodeInfo="ng">
-          <node role="rules" type=".com.mbeddr.core.debug.blext.structure.ValueMappingRule" id="7634928937260735521" nodeInfo="ng">
+        <node role="statement" roleId="tpee.1068581517665" type="talm.ValueMappingStatement" typeId="talm.4996624930072785034" id="7634928937260735517" nodeInfo="ng">
+          <node role="rules" roleId="talm.4996624930072785055" type="talm.ValueMappingRule" typeId="talm.4996624930072785047" id="7634928937260735521" nodeInfo="ng">
             <property name="priority" value="-1" />
-            <node role="value" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="7634928937261122826" nodeInfo="nn">
+            <node role="value" roleId="talm.4996624930072785096" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="7634928937261122826" nodeInfo="nn">
               <property name="value" nameId="tpee.1070475926801" value="null" />
             </node>
-            <node role="condition" type="tpee.EqualsExpression" typeId="tpee.1068580123152" id="7634928937261122819" nodeInfo="nn">
+            <node role="condition" roleId="talm.4996624930072785095" type="tpee.EqualsExpression" typeId="tpee.1068580123152" id="7634928937261122819" nodeInfo="nn">
               <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.DotExpression" typeId="tpee.1197027756228" id="7634928937261122820" nodeInfo="nn">
-                <node role="operand" roleId="tpee.1197027771414" type=".com.mbeddr.core.debug.blext.structure.CVariableValueExpression" id="7634928937261122821" nodeInfo="ng" />
+                <node role="operand" roleId="tpee.1197027771414" type="talm.CVariableValueExpression" typeId="talm.7634928937261088600" id="7634928937261122821" nodeInfo="ng" />
                 <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="7634928937261122822" nodeInfo="nn">
                   <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="e2lb.~String%dindexOf(java%dlang%dString)%cint" resolveInfo="indexOf" />
                   <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="7634928937261122823" nodeInfo="nn">
@@ -5070,14 +5070,14 @@
               </node>
             </node>
           </node>
-          <node role="rules" type=".com.mbeddr.core.debug.blext.structure.ValueMappingRule" id="7634928937260735518" nodeInfo="ng">
+          <node role="rules" roleId="talm.4996624930072785055" type="talm.ValueMappingRule" typeId="talm.4996624930072785047" id="7634928937260735518" nodeInfo="ng">
             <property name="priority" value="-1" />
-            <node role="condition" type="tpee.NotEqualsExpression" typeId="tpee.1073239437375" id="7634928937261122812" nodeInfo="nn">
+            <node role="condition" roleId="talm.4996624930072785095" type="tpee.NotEqualsExpression" typeId="tpee.1073239437375" id="7634928937261122812" nodeInfo="nn">
               <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="7634928937261122813" nodeInfo="nn">
                 <property name="value" nameId="tpee.1068580320021" value="-1" />
               </node>
               <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.DotExpression" typeId="tpee.1197027756228" id="7634928937261122814" nodeInfo="nn">
-                <node role="operand" roleId="tpee.1197027771414" type=".com.mbeddr.core.debug.blext.structure.CVariableValueExpression" id="7634928937261122815" nodeInfo="ng" />
+                <node role="operand" roleId="tpee.1197027771414" type="talm.CVariableValueExpression" typeId="talm.7634928937261088600" id="7634928937261122815" nodeInfo="ng" />
                 <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="7634928937261122816" nodeInfo="nn">
                   <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="e2lb.~String%dindexOf(java%dlang%dString)%cint" resolveInfo="indexOf" />
                   <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="7634928937261122817" nodeInfo="nn">
@@ -5086,12 +5086,12 @@
                 </node>
               </node>
             </node>
-            <node role="value" type="tpee.DotExpression" typeId="tpee.1197027756228" id="7634928937261123598" nodeInfo="nn">
-              <node role="operand" roleId="tpee.1197027771414" type=".com.mbeddr.core.debug.blext.structure.CVariableValueExpression" id="7634928937261123544" nodeInfo="ng" />
+            <node role="value" roleId="talm.4996624930072785096" type="tpee.DotExpression" typeId="tpee.1197027756228" id="7634928937261123598" nodeInfo="nn">
+              <node role="operand" roleId="tpee.1197027771414" type="talm.CVariableValueExpression" typeId="talm.7634928937261088600" id="7634928937261123544" nodeInfo="ng" />
               <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="7634928937261123605" nodeInfo="nn">
                 <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="e2lb.~String%dsubstring(int)%cjava%dlang%dString" resolveInfo="substring" />
                 <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.DotExpression" typeId="tpee.1197027756228" id="7634928937261122852" nodeInfo="nn">
-                  <node role="operand" roleId="tpee.1197027771414" type=".com.mbeddr.core.debug.blext.structure.CVariableValueExpression" id="7634928937261122830" nodeInfo="ng" />
+                  <node role="operand" roleId="tpee.1197027771414" type="talm.CVariableValueExpression" typeId="talm.7634928937261088600" id="7634928937261122830" nodeInfo="ng" />
                   <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="7634928937261123539" nodeInfo="nn">
                     <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="e2lb.~String%dindexOf(java%dlang%dString)%cint" resolveInfo="indexOf" />
                     <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="7634928937261123540" nodeInfo="nn">
@@ -5102,8 +5102,8 @@
               </node>
             </node>
           </node>
-          <node role="defaultRule" type=".com.mbeddr.core.debug.blext.structure.DefaultValueMappingRule" id="862133296698267234" nodeInfo="ng">
-            <node role="value" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="862133296698267235" nodeInfo="nn">
+          <node role="defaultRule" roleId="talm.7634928937261243380" type="talm.DefaultValueMappingRule" typeId="talm.7634928937261243331" id="862133296698267234" nodeInfo="ng">
+            <node role="value" roleId="talm.4996624930072785096" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="862133296698267235" nodeInfo="nn">
               <property name="value" nameId="tpee.1070475926801" value="not-mapped" />
             </node>
           </node>

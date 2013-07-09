@@ -16,6 +16,7 @@
   <import index="tp2c" modelUID="r:00000000-0000-4000-0000-011c89590338(jetbrains.mps.baseLanguage.closures.structure)" version="3" implicit="yes" />
   <import index="tp2q" modelUID="r:00000000-0000-4000-0000-011c8959032e(jetbrains.mps.baseLanguage.collections.structure)" version="7" implicit="yes" />
   <import index="k146" modelUID="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" version="5" implicit="yes" />
+  <import index="hba4" modelUID="r:f5bd2ad9-cd54-4408-b815-07f9f306f074(com.mbeddr.mpsutil.blutil.structure)" version="7" implicit="yes" />
   <root type="tp1t.ConceptConstraints" typeId="tp1t.1213093968558" id="6275792049641587308" nodeInfo="ng">
     <link role="concept" roleId="tp1t.1213093996982" targetNodeId="yz9a.6275792049641587287" resolveInfo="AssertStatement" />
   </root>
@@ -201,8 +202,8 @@
                   </node>
                 </node>
               </node>
-              <node role="operation" roleId="tpee.1197027833540" type=".com.mbeddr.mpsutil.blutil.structure.FilterOperation" id="17217465924413634" nodeInfo="ng">
-                <link role="concept" targetNodeId="k146.2688792604367903085" resolveInfo="MessageDefinitionTable" />
+              <node role="operation" roleId="tpee.1197027833540" type="hba4.FilterOperation" typeId="hba4.17217465924316850" id="17217465924413634" nodeInfo="ng">
+                <link role="concept" roleId="hba4.17217465924316851" targetNodeId="k146.2688792604367903085" resolveInfo="MessageDefinitionTable" />
               </node>
             </node>
           </node>
@@ -258,8 +259,8 @@
                   </node>
                 </node>
               </node>
-              <node role="operation" roleId="tpee.1197027833540" type=".com.mbeddr.mpsutil.blutil.structure.FilterOperation" id="17217465924413660" nodeInfo="ng">
-                <link role="concept" targetNodeId="k146.2688792604367903085" resolveInfo="MessageDefinitionTable" />
+              <node role="operation" roleId="tpee.1197027833540" type="hba4.FilterOperation" typeId="hba4.17217465924316850" id="17217465924413660" nodeInfo="ng">
+                <link role="concept" roleId="hba4.17217465924316851" targetNodeId="k146.2688792604367903085" resolveInfo="MessageDefinitionTable" />
               </node>
             </node>
           </node>
