@@ -80,7 +80,7 @@
       <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="8616087288193573578">
         <node role="statement" roleId="tpee.1068581517665" type="2omo.AppendOperation" typeId="2omo.1237306079178" id="8616087288193573579">
           <node role="part" roleId="2omo.1237306115446" type="2omo.ConstantStringAppendPart" typeId="2omo.1237305557638" id="8616087288193573580">
-            <property name="value" nameId="2omo.1237305576108" value="nondet_int()" />
+            <property name="value" nameId="2omo.1237305576108" value="nondet_double()" />
           </node>
         </node>
       </node>
