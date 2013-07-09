@@ -31,6 +31,7 @@
   <import index="tp2c" modelUID="r:00000000-0000-4000-0000-011c89590338(jetbrains.mps.baseLanguage.closures.structure)" version="3" implicit="yes" />
   <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="7" implicit="yes" />
   <import index="tpib" modelUID="r:00000000-0000-4000-0000-011c8959057f(jetbrains.mps.baseLanguage.logging.structure)" version="0" implicit="yes" />
+  <import index="hba4" modelUID="r:f5bd2ad9-cd54-4408-b815-07f9f306f074(com.mbeddr.mpsutil.blutil.structure)" version="7" implicit="yes" />
   <root type="tpf8.MappingConfiguration" typeId="tpf8.1095416546421" id="1758019824472891830" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="main" />
     <node role="mappingLabel" roleId="tpf8.1200911492601" type="tpf8.MappingLabelDeclaration" typeId="tpf8.1200911316486" id="8257817273847034483" nodeInfo="ng">
@@ -350,8 +351,8 @@
                       <link role="link" roleId="tp25.1138056546658" targetNodeId="x27k.1317894735999304826" />
                     </node>
                   </node>
-                  <node role="operation" roleId="tpee.1197027833540" type=".com.mbeddr.mpsutil.blutil.structure.FilterOperation" id="4811430974075136741" nodeInfo="ng">
-                    <link role="concept" targetNodeId="x27k.3830958861296798479" resolveInfo="StdHeaderImport" />
+                  <node role="operation" roleId="tpee.1197027833540" type="hba4.FilterOperation" typeId="hba4.17217465924316850" id="4811430974075136741" nodeInfo="ng">
+                    <link role="concept" roleId="hba4.17217465924316851" targetNodeId="x27k.3830958861296798479" resolveInfo="StdHeaderImport" />
                   </node>
                 </node>
                 <node role="operation" roleId="tpee.1197027833540" type="tp2q.AnyOperation" typeId="tp2q.1235566554328" id="4811430974075136742" nodeInfo="nn">
@@ -1267,8 +1268,8 @@
                           <link role="link" roleId="tp25.1138056546658" targetNodeId="x27k.1317894735999304826" />
                         </node>
                       </node>
-                      <node role="operation" roleId="tpee.1197027833540" type=".com.mbeddr.mpsutil.blutil.structure.FilterOperation" id="4811430974075025352" nodeInfo="ng">
-                        <link role="concept" targetNodeId="x27k.3830958861296798479" resolveInfo="StdHeaderImport" />
+                      <node role="operation" roleId="tpee.1197027833540" type="hba4.FilterOperation" typeId="hba4.17217465924316850" id="4811430974075025352" nodeInfo="ng">
+                        <link role="concept" roleId="hba4.17217465924316851" targetNodeId="x27k.3830958861296798479" resolveInfo="StdHeaderImport" />
                       </node>
                     </node>
                     <node role="operation" roleId="tpee.1197027833540" type="tp2q.AnyOperation" typeId="tp2q.1235566554328" id="4811430974075025353" nodeInfo="nn">
@@ -1286,10 +1287,10 @@
                               </node>
                               <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="4811430974075025361" nodeInfo="nn">
                                 <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="e2lb.~String%dequals(java%dlang%dObject)%cboolean" resolveInfo="equals" />
-                                <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.DotExpression" typeId="tpee.1197027756228" id="4811430974075025362" nodeInfo="nn">
+                                <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.DotExpression" typeId="tpee.1197027756228" id="6206177249215213371" nodeInfo="nn">
                                   <node role="operand" roleId="tpee.1197027771414" type="tpf8.TemplateFunctionParameter_sourceNode" typeId="tpf8.1167169188348" id="4811430974075025363" nodeInfo="nn" />
-                                  <node role="operation" roleId="tpee.1197027833540" type="tp25.SConceptPropertyAccess" typeId="tp25.1145994841052" id="4811430974075025364" nodeInfo="nn">
-                                    <link role="conceptProperty" roleId="tp25.1145994841055" targetNodeId="x27k.4811430974075023015" resolveInfo="headerToImport" />
+                                  <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_ConceptMethodCall" typeId="tp25.1179409122411" id="6206177249215224051" nodeInfo="nn">
+                                    <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="qd6m.996536665506346123" resolveInfo="headerToImport" />
                                   </node>
                                 </node>
                               </node>

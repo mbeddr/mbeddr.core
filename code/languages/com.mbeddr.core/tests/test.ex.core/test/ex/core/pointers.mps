@@ -13,6 +13,7 @@
   <import index="clbe" modelUID="r:61d840b4-12c1-49ea-b142-b2a1550a9b15(com.mbeddr.core.udt.structure)" version="7" implicit="yes" />
   <import index="yz9a" modelUID="r:734c02dd-cc16-4184-99eb-5fd9f43aa37e(com.mbeddr.core.unittest.structure)" version="0" implicit="yes" />
   <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="5" implicit="yes" />
+  <import index="87nw" modelUID="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" version="5" implicit="yes" />
   <root type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="279446265608457321" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="pointerStuff" />
     <node role="imports" roleId="x27k.1317894735999304826" type="x27k.ModuleImport" typeId="x27k.1317894735999299713" id="6173518449210280458" nodeInfo="ng">
@@ -724,9 +725,9 @@
       <property name="name" nameId="tpck.1169194664001" value="globalRef" />
       <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="vs0r.ElementDocumentation" typeId="vs0r.3857533489766146428" id="2749618433534965683" nodeInfo="ng">
         <node role="text" roleId="vs0r.4052432714772608243" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="3860690561158027011" nodeInfo="ng">
-          <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="3860690561158027014" nodeInfo="ng">
-            <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="3860690561158027016" nodeInfo="ng">
-              <property name="escapedValue" value="a function reference in a global variable a function reference in a global variable" />
+          <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="3860690561158027014" nodeInfo="ng">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3860690561158027016" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="a function reference in a global variable a function reference in a global variable" />
             </node>
           </node>
         </node>
@@ -758,9 +759,9 @@
       <property name="name" nameId="tpck.1169194664001" value="add" />
       <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="vs0r.ElementDocumentation" typeId="vs0r.3857533489766146428" id="2749618433534961599" nodeInfo="ng">
         <node role="text" roleId="vs0r.4052432714772608243" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="3860690561158027803" nodeInfo="ng">
-          <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="3860690561158027806" nodeInfo="ng">
-            <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="3860690561158027808" nodeInfo="ng">
-              <property name="escapedValue" value="a simple add function a simple add function" />
+          <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="3860690561158027806" nodeInfo="ng">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3860690561158027808" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="a simple add function a simple add function" />
             </node>
           </node>
         </node>
@@ -841,9 +842,9 @@
           </node>
           <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="vs0r.ElementDocumentation" typeId="vs0r.3857533489766146428" id="2749618433534965684" nodeInfo="ng">
             <node role="text" roleId="vs0r.4052432714772608243" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="3860690561158029245" nodeInfo="ng">
-              <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="3860690561158029248" nodeInfo="ng">
-                <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="3860690561158029250" nodeInfo="ng">
-                  <property name="escapedValue" value="assign a reference to add to globalref... assign a reference to add to globalref..." />
+              <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="3860690561158029248" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3860690561158029250" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="assign a reference to add to globalref... assign a reference to add to globalref..." />
                 </node>
               </node>
             </node>
@@ -853,9 +854,9 @@
           <property name="name" nameId="tpck.1169194664001" value="res" />
           <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="vs0r.ElementDocumentation" typeId="vs0r.3857533489766146428" id="2749618433534965685" nodeInfo="ng">
             <node role="text" roleId="vs0r.4052432714772608243" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="3860690561158027827" nodeInfo="ng">
-              <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="3860690561158027830" nodeInfo="ng">
-                <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="3860690561158027832" nodeInfo="ng">
-                  <property name="escapedValue" value="and call it... and call it..." />
+              <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="3860690561158027830" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3860690561158027832" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="and call it... and call it..." />
                 </node>
               </node>
             </node>
@@ -889,9 +890,9 @@
           <property name="name" nameId="tpck.1169194664001" value="localRef" />
           <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="vs0r.ElementDocumentation" typeId="vs0r.3857533489766146428" id="2749618433534965686" nodeInfo="ng">
             <node role="text" roleId="vs0r.4052432714772608243" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="3860690561158028232" nodeInfo="ng">
-              <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="3860690561158028235" nodeInfo="ng">
-                <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="3860690561158028237" nodeInfo="ng">
-                  <property name="escapedValue" value="a local variable of function reference type a local variable of function reference type" />
+              <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="3860690561158028235" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3860690561158028237" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="a local variable of function reference type a local variable of function reference type" />
                 </node>
               </node>
             </node>
@@ -916,9 +917,9 @@
           <property name="name" nameId="tpck.1169194664001" value="localres" />
           <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="vs0r.ElementDocumentation" typeId="vs0r.3857533489766146428" id="2749618433534965687" nodeInfo="ng">
             <node role="text" roleId="vs0r.4052432714772608243" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="3860690561158025579" nodeInfo="ng">
-              <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="3860690561158025582" nodeInfo="ng">
-                <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="3860690561158025584" nodeInfo="ng">
-                  <property name="escapedValue" value="calling through the local one calling through the local one" />
+              <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="3860690561158025582" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3860690561158025584" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="calling through the local one calling through the local one" />
                 </node>
               </node>
             </node>
@@ -969,9 +970,9 @@
           <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="8551646674110580414" />
           <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="vs0r.ElementDocumentation" typeId="vs0r.3857533489766146428" id="2749618433534965689" nodeInfo="ng">
             <node role="text" roleId="vs0r.4052432714772608243" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="3860690561158025909" nodeInfo="ng">
-              <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="3860690561158025912" nodeInfo="ng">
-                <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="3860690561158025914" nodeInfo="ng">
-                  <property name="escapedValue" value="calling the HOF function with a function reference calling the HOF function with a function reference" />
+              <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="3860690561158025912" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3860690561158025914" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="calling the HOF function with a function reference calling the HOF function with a function reference" />
                 </node>
               </node>
             </node>
@@ -1003,9 +1004,9 @@
           </node>
           <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="vs0r.ElementDocumentation" typeId="vs0r.3857533489766146428" id="2749618433534965690" nodeInfo="ng">
             <node role="text" roleId="vs0r.4052432714772608243" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="3860690561158026993" nodeInfo="ng">
-              <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="3860690561158026996" nodeInfo="ng">
-                <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="3860690561158026998" nodeInfo="ng">
-                  <property name="escapedValue" value="calling the HOF directly with a function reference calling the HOF directly with a function reference" />
+              <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="3860690561158026996" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3860690561158026998" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="calling the HOF directly with a function reference calling the HOF directly with a function reference" />
                 </node>
               </node>
             </node>
@@ -1071,9 +1072,9 @@
       <property name="name" nameId="tpck.1169194664001" value="higherOrderFunction" />
       <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="vs0r.ElementDocumentation" typeId="vs0r.3857533489766146428" id="2749618433534965688" nodeInfo="ng">
         <node role="text" roleId="vs0r.4052432714772608243" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="3860690561158028682" nodeInfo="ng">
-          <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="3860690561158028685" nodeInfo="ng">
-            <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="3860690561158028687" nodeInfo="ng">
-              <property name="escapedValue" value="a function taking another function as an argument a function taking another function as an argument" />
+          <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="3860690561158028685" nodeInfo="ng">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3860690561158028687" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="a function taking another function as an argument a function taking another function as an argument" />
             </node>
           </node>
         </node>
@@ -2898,9 +2899,9 @@
       <node role="body" roleId="yz9a.6275792049641586525" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="5684014141267564511" nodeInfo="ng">
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="5684014141267564513" nodeInfo="ng">
           <node role="textblock" roleId="c4fa.8624890525768479139" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8624890525768587238" nodeInfo="ng">
-            <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="8624890525768587241" nodeInfo="ng">
-              <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="8624890525768587243" nodeInfo="ng">
-                <property name="escapedValue" value="this is just a compile test" />
+            <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8624890525768587241" nodeInfo="ng">
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8624890525768587243" nodeInfo="ng">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="this is just a compile test" />
               </node>
             </node>
           </node>
