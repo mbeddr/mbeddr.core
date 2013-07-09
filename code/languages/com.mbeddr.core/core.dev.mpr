@@ -21,6 +21,7 @@
       <modulePath path="${project}/languages/com.mbeddr.core.base/base.mpl" folder="core" />
       <modulePath path="${project}/languages/com.mbeddr.core.base/solutions/pluginSolution/pluginSolution.msd" folder="core.solutions" />
       <modulePath path="${project}/languages/com.mbeddr.core.buildconfig/buildconfig.mpl" folder="core-extended" />
+      <modulePath path="${project}/languages/com.mbeddr.core.buildconfig/solution/pluginSolution/com.mbddr.core.buildconfig.pluginSolution.msd" />
       <modulePath path="${project}/languages/com.mbeddr.core.cimport/com.mbeddr.core.cimport.mpl" folder="core" />
       <modulePath path="${project}/languages/com.mbeddr.core.cstubs.test/test.mpl" folder="tests.cstub" />
       <modulePath path="${project}/languages/com.mbeddr.core.cstubs/cstubs.mpl" folder="core" />
