@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MPSProject">
+    <projectModules>
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.core.debug.blext/blext.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.core.debug/debug.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/tests/test.debugger.cdt/cdt.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/tests/test.debugger.core/core.msd" folder="" />
+    </projectModules>
+    <genConfs />
+  </component>
+</project>
+

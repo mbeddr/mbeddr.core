@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="test.cstub.core" uuid="28b0fb17-21d9-440a-bb1c-b10da1784dee" compileInMPS="true">
+<solution name="test.cstub.core" uuid="28b0fb17-21d9-440a-bb1c-b10da1784dee" pluginKind="PLUGIN_OTHER" compileInMPS="true">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="." />

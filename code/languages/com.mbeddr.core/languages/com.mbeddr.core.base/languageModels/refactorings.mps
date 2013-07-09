@@ -14,6 +14,7 @@
   <import index="tp2q" modelUID="r:00000000-0000-4000-0000-011c8959032e(jetbrains.mps.baseLanguage.collections.structure)" version="7" implicit="yes" />
   <import index="hwgx" modelUID="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)" version="3" implicit="yes" />
   <import index="tpdg" modelUID="r:00000000-0000-4000-0000-011c895902a8(jetbrains.mps.lang.actions.structure)" version="23" implicit="yes" />
+  <import index="hba4" modelUID="r:f5bd2ad9-cd54-4408-b815-07f9f306f074(com.mbeddr.mpsutil.blutil.structure)" version="7" implicit="yes" />
   <root type="tp1h.Refactoring" typeId="tp1h.6895093993902236229" id="7024921229556135295" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="commentedOutCode" />
     <property name="userFriendlyName" nameId="tp1h.6895093993902236371" value="Comment Out" />
@@ -187,8 +188,8 @@
               <node role="operand" roleId="tpee.1197027771414" type="tp1h.RefactoringContext_ConceptFunctionParameter" typeId="tp1h.7953996722066256458" id="7024921229556143769" nodeInfo="nn" />
               <node role="operation" roleId="tpee.1197027833540" type="tp1h.NodesOperation" typeId="tp1h.7953996722066252917" id="7024921229556144635" nodeInfo="nn" />
             </node>
-            <node role="operation" roleId="tpee.1197027833540" type=".com.mbeddr.mpsutil.blutil.structure.FilterOperation" id="17217465924392234" nodeInfo="ng">
-              <link role="concept" targetNodeId="vs0r.7024921229556133800" resolveInfo="ICommentable" />
+            <node role="operation" roleId="tpee.1197027833540" type="hba4.FilterOperation" typeId="hba4.17217465924316850" id="17217465924392234" nodeInfo="ng">
+              <link role="concept" roleId="hba4.17217465924316851" targetNodeId="vs0r.7024921229556133800" resolveInfo="ICommentable" />
             </node>
           </node>
         </node>
@@ -233,8 +234,8 @@
               <node role="operand" roleId="tpee.1197027771414" type="tp1h.RefactoringContext_ConceptFunctionParameter" typeId="tp1h.7953996722066256458" id="7024921229556320809" nodeInfo="nn" />
               <node role="operation" roleId="tpee.1197027833540" type="tp1h.NodesOperation" typeId="tp1h.7953996722066252917" id="7024921229556320810" nodeInfo="nn" />
             </node>
-            <node role="operation" roleId="tpee.1197027833540" type=".com.mbeddr.mpsutil.blutil.structure.FilterOperation" id="17217465924381101" nodeInfo="ng">
-              <link role="concept" targetNodeId="vs0r.7024921229556133803" resolveInfo="ICommentedCode" />
+            <node role="operation" roleId="tpee.1197027833540" type="hba4.FilterOperation" typeId="hba4.17217465924316850" id="17217465924381101" nodeInfo="ng">
+              <link role="concept" roleId="hba4.17217465924316851" targetNodeId="vs0r.7024921229556133803" resolveInfo="ICommentedCode" />
             </node>
           </node>
         </node>
