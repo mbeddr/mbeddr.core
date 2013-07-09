@@ -131,6 +131,9 @@
     <node role="dependencies" roleId="3ior.5617550519002745381" type="3ior.BuildProjectDependency" typeId="3ior.4993211115183325728" id="7247348105538752424">
       <link role="script" roleId="3ior.5617550519002745380" targetNodeId="auf4.8628756186118973852" resolveInfo="com.mbeddr.cc.ple.build" />
     </node>
+    <node role="dependencies" roleId="3ior.5617550519002745381" type="3ior.BuildProjectDependency" typeId="3ior.4993211115183325728" id="7949124126993147009">
+      <link role="script" roleId="3ior.5617550519002745380" targetNodeId="auf4.6247780594427548258" resolveInfo="com.mbeddr.cc.req.build" />
+    </node>
     <node role="dependencies" roleId="3ior.5617550519002745381" type="3ior.BuildProjectDependency" typeId="3ior.4993211115183325728" id="7247348105538752428">
       <link role="script" roleId="3ior.5617550519002745380" targetNodeId="pyq9.6247780594427554415" resolveInfo="com.mbeddr.ext.units" />
     </node>
@@ -193,6 +196,9 @@
       </node>
       <node role="dependencies" roleId="kdzh.6592112598314499028" type="kdzh.BuildMps_IdeaPluginDependency" typeId="kdzh.6592112598314499027" id="7247348105538752547">
         <link role="target" roleId="kdzh.6592112598314499066" targetNodeId="7247348105538752469" />
+      </node>
+      <node role="dependencies" roleId="kdzh.6592112598314499028" type="kdzh.BuildMps_IdeaPluginDependency" typeId="kdzh.6592112598314499027" id="7949124126993147011">
+        <link role="target" roleId="kdzh.6592112598314499066" targetNodeId="auf4.6247780594427548303" />
       </node>
       <node role="dependencies" roleId="kdzh.6592112598314499028" type="kdzh.BuildMps_IdeaPluginDependency" typeId="kdzh.6592112598314499027" id="7247348105538752552">
         <link role="target" roleId="kdzh.6592112598314499066" targetNodeId="al5i.8628756186118380506" />
@@ -756,6 +762,9 @@
     <node role="dependencies" roleId="3ior.5617550519002745381" type="3ior.BuildProjectDependency" typeId="3ior.4993211115183325728" id="7247348105538752462">
       <link role="script" roleId="3ior.5617550519002745380" targetNodeId="auf4.8628756186118973852" resolveInfo="com.mbeddr.cc.ple.build" />
     </node>
+    <node role="dependencies" roleId="3ior.5617550519002745381" type="3ior.BuildProjectDependency" typeId="3ior.4993211115183325728" id="7949124126993139960">
+      <link role="script" roleId="3ior.5617550519002745380" targetNodeId="auf4.6247780594427548258" resolveInfo="com.mbeddr.cc.req.build" />
+    </node>
     <node role="dependencies" roleId="3ior.5617550519002745381" type="3ior.BuildProjectDependency" typeId="3ior.4993211115183325728" id="7247348105538752463">
       <link role="script" roleId="3ior.5617550519002745380" targetNodeId="pyq9.6247780594427554415" resolveInfo="com.mbeddr.ext.units" />
     </node>
@@ -809,6 +818,9 @@
       </node>
       <node role="dependencies" roleId="kdzh.6592112598314499028" type="kdzh.BuildMps_IdeaPluginDependency" typeId="kdzh.6592112598314499027" id="7247348105538752477">
         <link role="target" roleId="kdzh.6592112598314499066" targetNodeId="auf4.8628756186118983442" resolveInfo="com.mbeddr.cc.ple" />
+      </node>
+      <node role="dependencies" roleId="kdzh.6592112598314499028" type="kdzh.BuildMps_IdeaPluginDependency" typeId="kdzh.6592112598314499027" id="7949124126993139961">
+        <link role="target" roleId="kdzh.6592112598314499066" targetNodeId="auf4.6247780594427548303" />
       </node>
       <node role="dependencies" roleId="kdzh.6592112598314499028" type="kdzh.BuildMps_IdeaPluginDependency" typeId="kdzh.6592112598314499027" id="7247348105538752478">
         <link role="target" roleId="kdzh.6592112598314499066" targetNodeId="pyq9.6247780594427554430" resolveInfo="com.mbeddr.ext.units" />
@@ -884,6 +896,17 @@
           <node role="dependency" roleId="kdzh.7259033139236285167" type="kdzh.BuildMps_ModuleDependencyOnModule" typeId="kdzh.5253498789149585690" id="7360615763635452254">
             <property name="reexport" nameId="kdzh.5253498789149547713" value="false" />
             <link role="module" roleId="kdzh.5253498789149547705" targetNodeId="pyq9.6247780594427554281" resolveInfo="com.mbeddr.ext.components" />
+          </node>
+        </node>
+        <node role="dependencies" roleId="kdzh.5253498789149547704" type="kdzh.BuildMps_ExtractedModuleDependency" typeId="kdzh.7259033139236285166" id="7949124126993139962">
+          <node role="dependency" roleId="kdzh.7259033139236285167" type="kdzh.BuildMps_ModuleDependencyOnModule" typeId="kdzh.5253498789149585690" id="7949124126993139963">
+            <property name="reexport" nameId="kdzh.5253498789149547713" value="false" />
+            <link role="module" roleId="kdzh.5253498789149547705" targetNodeId="auf4.6247780594427548389" resolveInfo="com.mbeddr.cc.trace" />
+          </node>
+        </node>
+        <node role="dependencies" roleId="kdzh.5253498789149547704" type="kdzh.BuildMps_ExtractedModuleDependency" typeId="kdzh.7259033139236285166" id="7949124126993139964">
+          <node role="dependency" roleId="kdzh.7259033139236285167" type="kdzh.BuildMps_ModuleDependencyExtendLanguage" typeId="kdzh.4278635856200794926" id="7949124126993139965">
+            <link role="language" roleId="kdzh.4278635856200794928" targetNodeId="auf4.6247780594427548389" resolveInfo="com.mbeddr.cc.trace" />
           </node>
         </node>
       </node>
@@ -1067,6 +1090,9 @@
     <node role="dependencies" roleId="3ior.5617550519002745381" type="3ior.BuildProjectDependency" typeId="3ior.4993211115183325728" id="7247348105538928872">
       <link role="script" roleId="3ior.5617550519002745380" targetNodeId="7247348105538752431" resolveInfo="com.mbeddr.analyses.base" />
     </node>
+    <node role="dependencies" roleId="3ior.5617550519002745381" type="3ior.BuildProjectDependency" typeId="3ior.4993211115183325728" id="7949124126993152619">
+      <link role="script" roleId="3ior.5617550519002745380" targetNodeId="auf4.6247780594427548258" resolveInfo="com.mbeddr.cc.req.build" />
+    </node>
     <node role="dependencies" roleId="3ior.5617550519002745381" type="3ior.BuildProjectDependency" typeId="3ior.4993211115183325728" id="7247348105538928959">
       <link role="script" roleId="3ior.5617550519002745380" targetNodeId="pyq9.6247780594427554375" resolveInfo="com.mbeddr.ext.statemachine" />
     </node>
@@ -1120,6 +1146,9 @@
       </node>
       <node role="dependencies" roleId="kdzh.6592112598314499028" type="kdzh.BuildMps_IdeaPluginDependency" typeId="kdzh.6592112598314499027" id="7247348105538928889">
         <link role="target" roleId="kdzh.6592112598314499066" targetNodeId="al5i.8628756186118380506" resolveInfo="com.mbeddr.mpsutil" />
+      </node>
+      <node role="dependencies" roleId="kdzh.6592112598314499028" type="kdzh.BuildMps_IdeaPluginDependency" typeId="kdzh.6592112598314499027" id="7949124126993152621">
+        <link role="target" roleId="kdzh.6592112598314499066" targetNodeId="auf4.6247780594427548303" />
       </node>
       <node role="dependencies" roleId="kdzh.6592112598314499028" type="kdzh.BuildMps_IdeaPluginDependency" typeId="kdzh.6592112598314499027" id="7247348105538928885">
         <link role="target" roleId="kdzh.6592112598314499066" targetNodeId="g8gn.8628756186118765539" resolveInfo="com.mbeddr.core" />
@@ -1465,6 +1494,9 @@
     <node role="dependencies" roleId="3ior.5617550519002745381" type="3ior.BuildProjectDependency" typeId="3ior.4993211115183325728" id="7247348105538928999">
       <link role="script" roleId="3ior.5617550519002745380" targetNodeId="7247348105538752431" resolveInfo="com.mbeddr.analyses.base" />
     </node>
+    <node role="dependencies" roleId="3ior.5617550519002745381" type="3ior.BuildProjectDependency" typeId="3ior.4993211115183325728" id="7949124126993152623">
+      <link role="script" roleId="3ior.5617550519002745380" targetNodeId="auf4.6247780594427548258" resolveInfo="com.mbeddr.cc.req.build" />
+    </node>
     <node role="dependencies" roleId="3ior.5617550519002745381" type="3ior.BuildProjectDependency" typeId="3ior.4993211115183325728" id="7247348105538929054">
       <link role="script" roleId="3ior.5617550519002745380" targetNodeId="pyq9.6247780594427554251" resolveInfo="com.mbeddr.ext.components" />
     </node>
@@ -1527,6 +1559,9 @@
       </node>
       <node role="dependencies" roleId="kdzh.6592112598314499028" type="kdzh.BuildMps_IdeaPluginDependency" typeId="kdzh.6592112598314499027" id="7247348105538929014">
         <link role="target" roleId="kdzh.6592112598314499066" targetNodeId="g8gn.8628756186118765539" resolveInfo="com.mbeddr.core" />
+      </node>
+      <node role="dependencies" roleId="kdzh.6592112598314499028" type="kdzh.BuildMps_IdeaPluginDependency" typeId="kdzh.6592112598314499027" id="7949124126993152625">
+        <link role="target" roleId="kdzh.6592112598314499066" targetNodeId="auf4.6247780594427548303" />
       </node>
       <node role="dependencies" roleId="kdzh.6592112598314499028" type="kdzh.BuildMps_IdeaPluginDependency" typeId="kdzh.6592112598314499027" id="7247348105538929055">
         <link role="target" roleId="kdzh.6592112598314499066" targetNodeId="pyq9.6247780594427554266" />
