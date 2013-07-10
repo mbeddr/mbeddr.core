@@ -53,6 +53,7 @@
       <modulePath path="${project}/tests/test.ex.core.libs/libs.msd" folder="tests" />
       <modulePath path="${project}/tests/test.ex.core/core.msd" folder="tests" />
       <modulePath path="${project}/tests/test.ex.errorreporting/errorreporting.msd" folder="tests" />
+      <modulePath path="${project}/tests/test.imp.core.import-optimizer/test.imp.core.import-optimizer.msd" folder="tests" />
       <modulePath path="${project}/tests/test.ts.core.dataflow/dataflow.msd" folder="tests.dataflow" />
       <modulePath path="${project}/tests/test.ts.core/core.msd" folder="tests" />
     </projectModules>
@@ -72,27 +73,11 @@
             </Library>
           </value>
         </entry>
-        <entry key="lisson.stuff">
-          <value>
-            <Library>
-              <option name="name" value="lisson.stuff" />
-              <option name="path" value="${mps_home}/bin/${lisson.home}" />
-            </Library>
-          </value>
-        </entry>
         <entry key="mpsutil">
           <value>
             <Library>
               <option name="name" value="mpsutil" />
               <option name="path" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.mpsutil" />
-            </Library>
-          </value>
-        </entry>
-        <entry key="spawner">
-          <value>
-            <Library>
-              <option name="name" value="spawner" />
-              <option name="path" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.spawner" />
             </Library>
           </value>
         </entry>
