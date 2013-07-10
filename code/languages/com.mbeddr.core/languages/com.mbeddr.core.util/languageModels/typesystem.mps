@@ -143,6 +143,10 @@
       <property name="virtualPackage" nameId="tpck.1193676396447" value="ringbuffer" />
       <property name="name" nameId="tpck.1169194664001" value="check_RingBufferType" />
     </node>
+    <node type="tpd4.InferenceRule" typeId="tpd4.1174643105530" id="3643500611636210059">
+      <property name="name" nameId="tpck.1169194664001" value="typeof_RingBufferInitExpression" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="ringbuffer" />
+    </node>
   </roots>
   <root id="5686538669182300976">
     <node role="body" roleId="tpd4.1195213635060" type="tpee.StatementList" typeId="tpee.1068580123136" id="5686538669182300977">
@@ -2390,6 +2394,16 @@
     <node role="applicableNode" roleId="tpd4.1174648101952" type="tpd4.ConceptReference" typeId="tpd4.1174642788531" id="857825425328041429">
       <property name="name" nameId="tpck.1169194664001" value="rbt" />
       <link role="concept" roleId="tpd4.1174642800329" targetNodeId="k146.857825425327997988" resolveInfo="RingBufferType" />
+    </node>
+  </root>
+  <root id="3643500611636210059">
+    <node role="body" roleId="tpd4.1195213635060" type="tpee.StatementList" typeId="tpee.1068580123136" id="3643500611636210060">
+      <node role="statement" roleId="tpee.1068581517665" type="tpee.Statement" typeId="tpee.1068580123157" id="3643500611636215062" />
+      <node role="statement" roleId="tpee.1068581517665" type="tpee.Statement" typeId="tpee.1068580123157" id="3643500611636215061" />
+    </node>
+    <node role="applicableNode" roleId="tpd4.1174648101952" type="tpd4.ConceptReference" typeId="tpd4.1174642788531" id="3643500611636210061">
+      <property name="name" nameId="tpck.1169194664001" value="rbie" />
+      <link role="concept" roleId="tpd4.1174642800329" targetNodeId="k146.3643500611636210039" resolveInfo="RingBufferInitExpression" />
     </node>
   </root>
 </model>
