@@ -93,6 +93,7 @@
     </node>
     <node type="tpf8.MappingConfiguration" typeId="tpf8.1095416546421" id="857825425328359292">
       <property name="name" nameId="tpck.1169194664001" value="ringbuffer" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="ringbuffer" />
     </node>
   </roots>
   <root id="745648737914842688">
