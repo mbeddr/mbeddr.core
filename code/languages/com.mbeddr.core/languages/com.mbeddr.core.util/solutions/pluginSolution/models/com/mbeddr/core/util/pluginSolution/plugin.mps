@@ -213,7 +213,7 @@
               <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="3727943345593737504" resolveInfo="makeImplModule" />
               <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="3727943345593737502" resolveInfo="WizardHelper" />
               <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3727943345593809204">
-                <property name="value" nameId="tpee.1070475926801" value="Hello World" />
+                <property name="value" nameId="tpee.1070475926801" value="HelloWorld" />
               </node>
             </node>
           </node>
