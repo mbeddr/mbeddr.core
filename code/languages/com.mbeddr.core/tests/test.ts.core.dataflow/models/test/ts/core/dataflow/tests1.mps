@@ -22,6 +22,7 @@
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="tp5g" modelUID="r:00000000-0000-4000-0000-011c89590388(jetbrains.mps.lang.test.structure)" version="4" implicit="yes" />
   <import index="d0vh" modelUID="r:9488318d-ce46-4320-b4e7-2566a511c366(com.mbeddr.core.modules.gen.structure)" version="-1" implicit="yes" />
+  <import index="87nw" modelUID="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" version="5" implicit="yes" />
   <root type="mj1l.TypeSizeConfiguration" typeId="mj1l.3335993110369795380" id="6072660817912344434" nodeInfo="ng">
     <node role="sizeTType" roleId="mj1l.8863019357864392147" type="mj1l.Int32tType" typeId="mj1l.8463282783691618440" id="6072660817912344484" nodeInfo="ng">
       <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
@@ -198,9 +199,9 @@
           <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="5064779709389485443" nodeInfo="ng">
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="3183653817686715525" nodeInfo="ng">
               <node role="textblock" roleId="c4fa.8624890525768479139" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8624890525768588132" nodeInfo="ng">
-                <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="8624890525768588135" nodeInfo="ng">
-                  <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="8624890525768588137" nodeInfo="ng">
-                    <property name="escapedValue" value="no errors, jumps are set to mayBeUnreachable" />
+                <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8624890525768588135" nodeInfo="ng">
+                  <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8624890525768588137" nodeInfo="ng">
+                    <property name="escapedValue" nameId="87nw.2557074442922438158" value="no errors, jumps are set to mayBeUnreachable" />
                   </node>
                 </node>
               </node>
@@ -338,9 +339,9 @@
                 </node>
                 <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="5781444008245311609" nodeInfo="ng">
                   <node role="textblock" roleId="c4fa.8624890525768479139" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8624890525768588006" nodeInfo="ng">
-                    <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="8624890525768588009" nodeInfo="ng">
-                      <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="8624890525768588011" nodeInfo="ng">
-                        <property name="escapedValue" value="dead code" />
+                    <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8624890525768588009" nodeInfo="ng">
+                      <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8624890525768588011" nodeInfo="ng">
+                        <property name="escapedValue" nameId="87nw.2557074442922438158" value="dead code" />
                       </node>
                     </node>
                   </node>
@@ -360,9 +361,9 @@
               <node role="thenPart" roleId="c4fa.6275792049641600985" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="5781444008245311594" nodeInfo="ng">
                 <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="5781444008245311610" nodeInfo="ng">
                   <node role="textblock" roleId="c4fa.8624890525768479139" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8624890525768587976" nodeInfo="ng">
-                    <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="8624890525768587979" nodeInfo="ng">
-                      <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="8624890525768587981" nodeInfo="ng">
-                        <property name="escapedValue" value="live code" />
+                    <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8624890525768587979" nodeInfo="ng">
+                      <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8624890525768587981" nodeInfo="ng">
+                        <property name="escapedValue" nameId="87nw.2557074442922438158" value="live code" />
                       </node>
                     </node>
                   </node>
@@ -379,9 +380,9 @@
               <node role="elsePart" roleId="c4fa.3134547887598486571" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="5781444008245311605" nodeInfo="ng">
                 <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="5781444008245311611" nodeInfo="ng">
                   <node role="textblock" roleId="c4fa.8624890525768479139" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8624890525768587280" nodeInfo="ng">
-                    <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="8624890525768587283" nodeInfo="ng">
-                      <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="8624890525768587285" nodeInfo="ng">
-                        <property name="escapedValue" value="dead code" />
+                    <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8624890525768587283" nodeInfo="ng">
+                      <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8624890525768587285" nodeInfo="ng">
+                        <property name="escapedValue" nameId="87nw.2557074442922438158" value="dead code" />
                       </node>
                     </node>
                   </node>
@@ -423,9 +424,9 @@
               <node role="elsePart" roleId="c4fa.3134547887598486571" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="5781444008245311629" nodeInfo="ng">
                 <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="5781444008245311645" nodeInfo="ng">
                   <node role="textblock" roleId="c4fa.8624890525768479139" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8624890525768587568" nodeInfo="ng">
-                    <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="8624890525768587571" nodeInfo="ng">
-                      <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="8624890525768587573" nodeInfo="ng">
-                        <property name="escapedValue" value="not dead, can not be determined when the data flow graph is built" />
+                    <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8624890525768587571" nodeInfo="ng">
+                      <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8624890525768587573" nodeInfo="ng">
+                        <property name="escapedValue" nameId="87nw.2557074442922438158" value="not dead, can not be determined when the data flow graph is built" />
                       </node>
                     </node>
                   </node>
@@ -435,9 +436,9 @@
                 <node role="body" roleId="c4fa.3134547887598498471" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="5781444008245311647" nodeInfo="ng">
                   <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="5781444008245311662" nodeInfo="ng">
                     <node role="textblock" roleId="c4fa.8624890525768479139" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8624890525768587478" nodeInfo="ng">
-                      <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="8624890525768587481" nodeInfo="ng">
-                        <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="8624890525768587483" nodeInfo="ng">
-                          <property name="escapedValue" value="not dead, can not be determined when the data flow graph is built" />
+                      <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8624890525768587481" nodeInfo="ng">
+                        <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8624890525768587483" nodeInfo="ng">
+                          <property name="escapedValue" nameId="87nw.2557074442922438158" value="not dead, can not be determined when the data flow graph is built" />
                         </node>
                       </node>
                     </node>
@@ -502,9 +503,9 @@
             </node>
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="5781444008245311753" nodeInfo="ng">
               <node role="textblock" roleId="c4fa.8624890525768479139" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8624890525768587352" nodeInfo="ng">
-                <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="8624890525768587355" nodeInfo="ng">
-                  <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="8624890525768587357" nodeInfo="ng">
-                    <property name="escapedValue" value="body is executed only once" />
+                <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8624890525768587355" nodeInfo="ng">
+                  <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8624890525768587357" nodeInfo="ng">
+                    <property name="escapedValue" nameId="87nw.2557074442922438158" value="body is executed only once" />
                   </node>
                 </node>
               </node>
@@ -556,9 +557,9 @@
             </node>
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="5781444008245311792" nodeInfo="ng">
               <node role="textblock" roleId="c4fa.8624890525768479139" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8624890525768587616" nodeInfo="ng">
-                <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="8624890525768587619" nodeInfo="ng">
-                  <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="8624890525768587621" nodeInfo="ng">
-                    <property name="escapedValue" value="dead code, condition is always true" />
+                <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8624890525768587619" nodeInfo="ng">
+                  <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8624890525768587621" nodeInfo="ng">
+                    <property name="escapedValue" nameId="87nw.2557074442922438158" value="dead code, condition is always true" />
                   </node>
                 </node>
               </node>
@@ -597,9 +598,9 @@
               <node role="body" roleId="c4fa.8441331188640771828" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="5781444008245312994" nodeInfo="ng">
                 <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="5781444008245313019" nodeInfo="ng">
                   <node role="textblock" roleId="c4fa.8624890525768479139" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8624890525768587334" nodeInfo="ng">
-                    <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="8624890525768587337" nodeInfo="ng">
-                      <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="8624890525768587339" nodeInfo="ng">
-                        <property name="escapedValue" value="no dead code in body" />
+                    <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8624890525768587337" nodeInfo="ng">
+                      <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8624890525768587339" nodeInfo="ng">
+                        <property name="escapedValue" nameId="87nw.2557074442922438158" value="no dead code in body" />
                       </node>
                     </node>
                   </node>
@@ -629,9 +630,9 @@
                     </node>
                     <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="5781444008245313039" nodeInfo="ng">
                       <node role="textblock" roleId="c4fa.8624890525768479139" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8624890525768587850" nodeInfo="ng">
-                        <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="8624890525768587853" nodeInfo="ng">
-                          <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="8624890525768587855" nodeInfo="ng">
-                            <property name="escapedValue" value="dead code in the body" />
+                        <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8624890525768587853" nodeInfo="ng">
+                          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8624890525768587855" nodeInfo="ng">
+                            <property name="escapedValue" nameId="87nw.2557074442922438158" value="dead code in the body" />
                           </node>
                         </node>
                       </node>
@@ -658,9 +659,9 @@
             </node>
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="5781444008245312990" nodeInfo="ng">
               <node role="textblock" roleId="c4fa.8624890525768479139" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8624890525768587628" nodeInfo="ng">
-                <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="8624890525768587631" nodeInfo="ng">
-                  <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="8624890525768587633" nodeInfo="ng">
-                    <property name="escapedValue" value=" dead code" />
+                <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8624890525768587631" nodeInfo="ng">
+                  <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8624890525768587633" nodeInfo="ng">
+                    <property name="escapedValue" nameId="87nw.2557074442922438158" value=" dead code" />
                   </node>
                 </node>
               </node>
@@ -739,9 +740,9 @@
             </node>
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="5781444008245311943" nodeInfo="ng">
               <node role="textblock" roleId="c4fa.8624890525768479139" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8624890525768587892" nodeInfo="ng">
-                <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="8624890525768587895" nodeInfo="ng">
-                  <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="8624890525768587897" nodeInfo="ng">
-                    <property name="escapedValue" value=" dead code in the body" />
+                <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8624890525768587895" nodeInfo="ng">
+                  <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8624890525768587897" nodeInfo="ng">
+                    <property name="escapedValue" nameId="87nw.2557074442922438158" value=" dead code in the body" />
                   </node>
                 </node>
               </node>
@@ -798,9 +799,9 @@
             </node>
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="5781444008245312183" nodeInfo="ng">
               <node role="textblock" roleId="c4fa.8624890525768479139" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8624890525768587868" nodeInfo="ng">
-                <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="8624890525768587871" nodeInfo="ng">
-                  <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="8624890525768587873" nodeInfo="ng">
-                    <property name="escapedValue" value="no dead code, value of a is unknown" />
+                <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8624890525768587871" nodeInfo="ng">
+                  <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8624890525768587873" nodeInfo="ng">
+                    <property name="escapedValue" nameId="87nw.2557074442922438158" value="no dead code, value of a is unknown" />
                   </node>
                 </node>
               </node>
@@ -852,9 +853,9 @@
             </node>
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="5781444008245311873" nodeInfo="ng">
               <node role="textblock" roleId="c4fa.8624890525768479139" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8624890525768587340" nodeInfo="ng">
-                <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="8624890525768587343" nodeInfo="ng">
-                  <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="8624890525768587345" nodeInfo="ng">
-                    <property name="escapedValue" value="infinite for loop, code after the loop is dead" />
+                <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8624890525768587343" nodeInfo="ng">
+                  <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8624890525768587345" nodeInfo="ng">
+                    <property name="escapedValue" nameId="87nw.2557074442922438158" value="infinite for loop, code after the loop is dead" />
                   </node>
                 </node>
               </node>
@@ -915,9 +916,9 @@
               <node role="body" roleId="k146.8729447926330241139" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="5781444008245312774" nodeInfo="ng">
                 <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="5781444008245312816" nodeInfo="ng">
                   <node role="textblock" roleId="c4fa.8624890525768479139" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8624890525768587250" nodeInfo="ng">
-                    <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="8624890525768587253" nodeInfo="ng">
-                      <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="8624890525768587255" nodeInfo="ng">
-                        <property name="escapedValue" value="no dead code" />
+                    <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8624890525768587253" nodeInfo="ng">
+                      <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8624890525768587255" nodeInfo="ng">
+                        <property name="escapedValue" nameId="87nw.2557074442922438158" value="no dead code" />
                       </node>
                     </node>
                   </node>
@@ -936,9 +937,9 @@
             </node>
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="5781444008245312818" nodeInfo="ng">
               <node role="textblock" roleId="c4fa.8624890525768479139" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8624890525768588090" nodeInfo="ng">
-                <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="8624890525768588093" nodeInfo="ng">
-                  <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="8624890525768588095" nodeInfo="ng">
-                    <property name="escapedValue" value="value unknown, it is not statically checked how often the loops body is executed" />
+                <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8624890525768588093" nodeInfo="ng">
+                  <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8624890525768588095" nodeInfo="ng">
+                    <property name="escapedValue" nameId="87nw.2557074442922438158" value="value unknown, it is not statically checked how often the loops body is executed" />
                   </node>
                 </node>
               </node>
@@ -1048,9 +1049,9 @@
             </node>
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="5781444008245312888" nodeInfo="ng">
               <node role="textblock" roleId="c4fa.8624890525768479139" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8624890525768587526" nodeInfo="ng">
-                <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="8624890525768587529" nodeInfo="ng">
-                  <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="8624890525768587531" nodeInfo="ng">
-                    <property name="escapedValue" value="no value information available due to the loop" />
+                <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8624890525768587529" nodeInfo="ng">
+                  <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8624890525768587531" nodeInfo="ng">
+                    <property name="escapedValue" nameId="87nw.2557074442922438158" value="no value information available due to the loop" />
                   </node>
                 </node>
               </node>
@@ -1069,9 +1070,9 @@
             </node>
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="5781444008245312946" nodeInfo="ng">
               <node role="textblock" roleId="c4fa.8624890525768479139" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8624890525768587490" nodeInfo="ng">
-                <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="8624890525768587493" nodeInfo="ng">
-                  <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="8624890525768587495" nodeInfo="ng">
-                    <property name="escapedValue" value="no value information available, loop can be executed or not" />
+                <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8624890525768587493" nodeInfo="ng">
+                  <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8624890525768587495" nodeInfo="ng">
+                    <property name="escapedValue" nameId="87nw.2557074442922438158" value="no value information available, loop can be executed or not" />
                   </node>
                 </node>
               </node>
@@ -1140,9 +1141,9 @@
                   </node>
                   <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="5781444008245315712" nodeInfo="ng">
                     <node role="textblock" roleId="c4fa.8624890525768479139" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8624890525768587274" nodeInfo="ng">
-                      <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="8624890525768587277" nodeInfo="ng">
-                        <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="8624890525768587279" nodeInfo="ng">
-                          <property name="escapedValue" value="unreachable code" />
+                      <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8624890525768587277" nodeInfo="ng">
+                        <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8624890525768587279" nodeInfo="ng">
+                          <property name="escapedValue" nameId="87nw.2557074442922438158" value="unreachable code" />
                         </node>
                       </node>
                     </node>
@@ -1161,9 +1162,9 @@
             </node>
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="5781444008245315717" nodeInfo="ng">
               <node role="textblock" roleId="c4fa.8624890525768479139" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8624890525768588030" nodeInfo="ng">
-                <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="8624890525768588033" nodeInfo="ng">
-                  <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="8624890525768588035" nodeInfo="ng">
-                    <property name="escapedValue" value="body of case 1 is \&quot;executed\&quot; once" />
+                <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8624890525768588033" nodeInfo="ng">
+                  <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8624890525768588035" nodeInfo="ng">
+                    <property name="escapedValue" nameId="87nw.2557074442922438158" value="body of case 1 is \&quot;executed\&quot; once" />
                   </node>
                 </node>
               </node>
@@ -1250,9 +1251,9 @@
             </node>
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="5781444008245315867" nodeInfo="ng">
               <node role="textblock" roleId="c4fa.8624890525768479139" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8624890525768587886" nodeInfo="ng">
-                <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="8624890525768587889" nodeInfo="ng">
-                  <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="8624890525768587891" nodeInfo="ng">
-                    <property name="escapedValue" value="unknown value, all cases can be executed" />
+                <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8624890525768587889" nodeInfo="ng">
+                  <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8624890525768587891" nodeInfo="ng">
+                    <property name="escapedValue" nameId="87nw.2557074442922438158" value="unknown value, all cases can be executed" />
                   </node>
                 </node>
               </node>
@@ -1349,9 +1350,9 @@
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="5752503586047041427" nodeInfo="ng" />
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="5781444008245318513" nodeInfo="ng">
               <node role="textblock" roleId="c4fa.8624890525768479139" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8624890525768587370" nodeInfo="ng">
-                <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="8624890525768587373" nodeInfo="ng">
-                  <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="8624890525768587375" nodeInfo="ng">
-                    <property name="escapedValue" value="no value information, all cases can be executed" />
+                <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8624890525768587373" nodeInfo="ng">
+                  <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8624890525768587375" nodeInfo="ng">
+                    <property name="escapedValue" nameId="87nw.2557074442922438158" value="no value information, all cases can be executed" />
                   </node>
                 </node>
               </node>
@@ -1403,9 +1404,9 @@
             </node>
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="5781444008245318563" nodeInfo="ng">
               <node role="textblock" roleId="c4fa.8624890525768479139" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8624890525768587856" nodeInfo="ng">
-                <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="8624890525768587859" nodeInfo="ng">
-                  <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="8624890525768587861" nodeInfo="ng">
-                    <property name="escapedValue" value="dead code in case 1, y will allways be 2 after the switch expression" />
+                <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8624890525768587859" nodeInfo="ng">
+                  <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8624890525768587861" nodeInfo="ng">
+                    <property name="escapedValue" nameId="87nw.2557074442922438158" value="dead code in case 1, y will allways be 2 after the switch expression" />
                   </node>
                 </node>
               </node>
@@ -1527,9 +1528,9 @@
             </node>
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="5781444008245364451" nodeInfo="ng">
               <node role="textblock" roleId="c4fa.8624890525768479139" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8624890525768587310" nodeInfo="ng">
-                <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="8624890525768587313" nodeInfo="ng">
-                  <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="8624890525768587315" nodeInfo="ng">
-                    <property name="escapedValue" value="not decidable, all c's can be executed" />
+                <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8624890525768587313" nodeInfo="ng">
+                  <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8624890525768587315" nodeInfo="ng">
+                    <property name="escapedValue" nameId="87nw.2557074442922438158" value="not decidable, all c's can be executed" />
                   </node>
                 </node>
               </node>
@@ -1697,9 +1698,9 @@
             </node>
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="2433973446246556258" nodeInfo="ng">
               <node role="textblock" roleId="c4fa.8624890525768479139" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8624890525768587958" nodeInfo="ng">
-                <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="8624890525768587961" nodeInfo="ng">
-                  <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="8624890525768587963" nodeInfo="ng">
-                    <property name="escapedValue" value="no warning, a can be either 1 or 2, currently only evaluated if only one value is known" />
+                <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8624890525768587961" nodeInfo="ng">
+                  <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8624890525768587963" nodeInfo="ng">
+                    <property name="escapedValue" nameId="87nw.2557074442922438158" value="no warning, a can be either 1 or 2, currently only evaluated if only one value is known" />
                   </node>
                 </node>
               </node>
@@ -1744,9 +1745,9 @@
             </node>
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="2433973446246556312" nodeInfo="ng">
               <node role="textblock" roleId="c4fa.8624890525768479139" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8624890525768587922" nodeInfo="ng">
-                <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="8624890525768587925" nodeInfo="ng">
-                  <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="8624890525768587927" nodeInfo="ng">
-                    <property name="escapedValue" value="value known, else is never executed" />
+                <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8624890525768587925" nodeInfo="ng">
+                  <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8624890525768587927" nodeInfo="ng">
+                    <property name="escapedValue" nameId="87nw.2557074442922438158" value="value known, else is never executed" />
                   </node>
                 </node>
               </node>
@@ -1796,9 +1797,9 @@
             </node>
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="2433973446246556329" nodeInfo="ng">
               <node role="textblock" roleId="c4fa.8624890525768479139" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8624890525768587226" nodeInfo="ng">
-                <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="8624890525768587229" nodeInfo="ng">
-                  <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="8624890525768587231" nodeInfo="ng">
-                    <property name="escapedValue" value="value known, else is never executed" />
+                <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8624890525768587229" nodeInfo="ng">
+                  <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8624890525768587231" nodeInfo="ng">
+                    <property name="escapedValue" nameId="87nw.2557074442922438158" value="value known, else is never executed" />
                   </node>
                 </node>
               </node>
@@ -1900,9 +1901,9 @@
           <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="5781444008245365364" nodeInfo="ng">
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="5781444008245365377" nodeInfo="ng">
               <node role="textblock" roleId="c4fa.8624890525768479139" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8624890525768588114" nodeInfo="ng">
-                <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="8624890525768588117" nodeInfo="ng">
-                  <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="8624890525768588119" nodeInfo="ng">
-                    <property name="escapedValue" value="two unused parameters" />
+                <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8624890525768588117" nodeInfo="ng">
+                  <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8624890525768588119" nodeInfo="ng">
+                    <property name="escapedValue" nameId="87nw.2557074442922438158" value="two unused parameters" />
                   </node>
                 </node>
               </node>
@@ -1919,18 +1920,18 @@
             </node>
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="5781444008245365390" nodeInfo="ng">
               <node role="textblock" roleId="c4fa.8624890525768479139" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8624890525768587658" nodeInfo="ng">
-                <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="8624890525768587661" nodeInfo="ng">
-                  <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="8624890525768587663" nodeInfo="ng">
-                    <property name="escapedValue" value="warning, for globals a possible initialization is assumed" />
+                <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8624890525768587661" nodeInfo="ng">
+                  <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8624890525768587663" nodeInfo="ng">
+                    <property name="escapedValue" nameId="87nw.2557074442922438158" value="warning, for globals a possible initialization is assumed" />
                   </node>
                 </node>
               </node>
             </node>
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="5781444008245365406" nodeInfo="ng">
               <node role="textblock" roleId="c4fa.8624890525768479139" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8624890525768587604" nodeInfo="ng">
-                <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="8624890525768587607" nodeInfo="ng">
-                  <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="8624890525768587609" nodeInfo="ng">
-                    <property name="escapedValue" value="no value information available" />
+                <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8624890525768587607" nodeInfo="ng">
+                  <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8624890525768587609" nodeInfo="ng">
+                    <property name="escapedValue" nameId="87nw.2557074442922438158" value="no value information available" />
                   </node>
                 </node>
               </node>
@@ -1948,9 +1949,9 @@
             </node>
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="5781444008245365412" nodeInfo="ng">
               <node role="textblock" roleId="c4fa.8624890525768479139" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8624890525768587346" nodeInfo="ng">
-                <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="8624890525768587349" nodeInfo="ng">
-                  <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="8624890525768587351" nodeInfo="ng">
-                    <property name="escapedValue" value="value information available" />
+                <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8624890525768587349" nodeInfo="ng">
+                  <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8624890525768587351" nodeInfo="ng">
+                    <property name="escapedValue" nameId="87nw.2557074442922438158" value="value information available" />
                   </node>
                 </node>
               </node>
@@ -1974,18 +1975,18 @@
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="2669782318780102706" nodeInfo="ng" />
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="5781444008245365392" nodeInfo="ng">
               <node role="textblock" roleId="c4fa.8624890525768479139" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8624890525768587778" nodeInfo="ng">
-                <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="8624890525768587781" nodeInfo="ng">
-                  <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="8624890525768587783" nodeInfo="ng">
-                    <property name="escapedValue" value="no errors for external globals a possible initialization is assumed too" />
+                <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8624890525768587781" nodeInfo="ng">
+                  <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8624890525768587783" nodeInfo="ng">
+                    <property name="escapedValue" nameId="87nw.2557074442922438158" value="no errors for external globals a possible initialization is assumed too" />
                   </node>
                 </node>
               </node>
             </node>
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="5781444008245365408" nodeInfo="ng">
               <node role="textblock" roleId="c4fa.8624890525768479139" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8624890525768588072" nodeInfo="ng">
-                <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="8624890525768588075" nodeInfo="ng">
-                  <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="8624890525768588077" nodeInfo="ng">
-                    <property name="escapedValue" value="no value information available" />
+                <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8624890525768588075" nodeInfo="ng">
+                  <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8624890525768588077" nodeInfo="ng">
+                    <property name="escapedValue" nameId="87nw.2557074442922438158" value="no value information available" />
                   </node>
                 </node>
               </node>
@@ -2003,9 +2004,9 @@
             </node>
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="5781444008245365430" nodeInfo="ng">
               <node role="textblock" roleId="c4fa.8624890525768479139" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8624890525768587826" nodeInfo="ng">
-                <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="8624890525768587829" nodeInfo="ng">
-                  <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="8624890525768587831" nodeInfo="ng">
-                    <property name="escapedValue" value="value information available" />
+                <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8624890525768587829" nodeInfo="ng">
+                  <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8624890525768587831" nodeInfo="ng">
+                    <property name="escapedValue" nameId="87nw.2557074442922438158" value="value information available" />
                   </node>
                 </node>
               </node>
@@ -2028,9 +2029,9 @@
             </node>
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="2669782318780155277" nodeInfo="ng">
               <node role="textblock" roleId="c4fa.8624890525768479139" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8624890525768587670" nodeInfo="ng">
-                <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="8624890525768587673" nodeInfo="ng">
-                  <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="8624890525768587675" nodeInfo="ng">
-                    <property name="escapedValue" value="no error or warning here, as there is an initializer in the var decl" />
+                <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8624890525768587673" nodeInfo="ng">
+                  <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8624890525768587675" nodeInfo="ng">
+                    <property name="escapedValue" nameId="87nw.2557074442922438158" value="no error or warning here, as there is an initializer in the var decl" />
                   </node>
                 </node>
               </node>
@@ -2073,9 +2074,9 @@
             </node>
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="5781444008245365464" nodeInfo="ng">
               <node role="textblock" roleId="c4fa.8624890525768479139" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8624890525768587838" nodeInfo="ng">
-                <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="8624890525768587841" nodeInfo="ng">
-                  <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="8624890525768587843" nodeInfo="ng">
-                    <property name="escapedValue" value="no value information available, analysis is not interprocedural" />
+                <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8624890525768587841" nodeInfo="ng">
+                  <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8624890525768587843" nodeInfo="ng">
+                    <property name="escapedValue" nameId="87nw.2557074442922438158" value="no value information available, analysis is not interprocedural" />
                   </node>
                 </node>
               </node>
@@ -2256,9 +2257,9 @@
             </node>
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="5781444008245365836" nodeInfo="ng">
               <node role="textblock" roleId="c4fa.8624890525768479139" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8624890525768587874" nodeInfo="ng">
-                <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="8624890525768587877" nodeInfo="ng">
-                  <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="8624890525768587879" nodeInfo="ng">
-                    <property name="escapedValue" value="value information available after initialization" />
+                <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8624890525768587877" nodeInfo="ng">
+                  <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8624890525768587879" nodeInfo="ng">
+                    <property name="escapedValue" nameId="87nw.2557074442922438158" value="value information available after initialization" />
                   </node>
                 </node>
               </node>
@@ -2290,9 +2291,9 @@
             </node>
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="5781444008245365887" nodeInfo="ng">
               <node role="textblock" roleId="c4fa.8624890525768479139" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8624890525768588084" nodeInfo="ng">
-                <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="8624890525768588087" nodeInfo="ng">
-                  <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="8624890525768588089" nodeInfo="ng">
-                    <property name="escapedValue" value="value information available after initialization" />
+                <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8624890525768588087" nodeInfo="ng">
+                  <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8624890525768588089" nodeInfo="ng">
+                    <property name="escapedValue" nameId="87nw.2557074442922438158" value="value information available after initialization" />
                   </node>
                 </node>
               </node>
@@ -2333,18 +2334,18 @@
             </node>
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="5781444008245365947" nodeInfo="ng">
               <node role="textblock" roleId="c4fa.8624890525768479139" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8624890525768587688" nodeInfo="ng">
-                <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="8624890525768587691" nodeInfo="ng">
-                  <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="8624890525768587693" nodeInfo="ng">
-                    <property name="escapedValue" value="value information available after initialization" />
+                <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8624890525768587691" nodeInfo="ng">
+                  <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8624890525768587693" nodeInfo="ng">
+                    <property name="escapedValue" nameId="87nw.2557074442922438158" value="value information available after initialization" />
                   </node>
                 </node>
               </node>
             </node>
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="4087861105423440992" nodeInfo="ng">
               <node role="textblock" roleId="c4fa.8624890525768479139" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8624890525768587538" nodeInfo="ng">
-                <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="8624890525768587541" nodeInfo="ng">
-                  <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="8624890525768587543" nodeInfo="ng">
-                    <property name="escapedValue" value="and a warning that the var is a constant" />
+                <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8624890525768587541" nodeInfo="ng">
+                  <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8624890525768587543" nodeInfo="ng">
+                    <property name="escapedValue" nameId="87nw.2557074442922438158" value="and a warning that the var is a constant" />
                   </node>
                 </node>
               </node>
@@ -2397,9 +2398,9 @@
             </node>
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="5781444008245441535" nodeInfo="ng">
               <node role="textblock" roleId="c4fa.8624890525768479139" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8624890525768588012" nodeInfo="ng">
-                <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="8624890525768588015" nodeInfo="ng">
-                  <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="8624890525768588017" nodeInfo="ng">
-                    <property name="escapedValue" value="value information of globals are available before the call" />
+                <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8624890525768588015" nodeInfo="ng">
+                  <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8624890525768588017" nodeInfo="ng">
+                    <property name="escapedValue" nameId="87nw.2557074442922438158" value="value information of globals are available before the call" />
                   </node>
                 </node>
               </node>
@@ -2439,9 +2440,9 @@
             </node>
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="4378677424457806326" nodeInfo="ng">
               <node role="textblock" roleId="c4fa.8624890525768479139" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8624890525768588138" nodeInfo="ng">
-                <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="8624890525768588141" nodeInfo="ng">
-                  <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="8624890525768588143" nodeInfo="ng">
-                    <property name="escapedValue" value="vi of array elements are available before call" />
+                <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8624890525768588141" nodeInfo="ng">
+                  <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8624890525768588143" nodeInfo="ng">
+                    <property name="escapedValue" nameId="87nw.2557074442922438158" value="vi of array elements are available before call" />
                   </node>
                 </node>
               </node>
@@ -2486,9 +2487,9 @@
             </node>
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="5781444008245433201" nodeInfo="ng">
               <node role="textblock" roleId="c4fa.8624890525768479139" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8624890525768587982" nodeInfo="ng">
-                <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="8624890525768587985" nodeInfo="ng">
-                  <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="8624890525768587987" nodeInfo="ng">
-                    <property name="escapedValue" value="value information of ret value not available" />
+                <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8624890525768587985" nodeInfo="ng">
+                  <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8624890525768587987" nodeInfo="ng">
+                    <property name="escapedValue" nameId="87nw.2557074442922438158" value="value information of ret value not available" />
                   </node>
                 </node>
               </node>
@@ -2503,9 +2504,9 @@
             </node>
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="5781444008245365845" nodeInfo="ng">
               <node role="textblock" roleId="c4fa.8624890525768479139" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8624890525768587742" nodeInfo="ng">
-                <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="8624890525768587745" nodeInfo="ng">
-                  <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="8624890525768587747" nodeInfo="ng">
-                    <property name="escapedValue" value="value information available after function call" />
+                <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8624890525768587745" nodeInfo="ng">
+                  <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8624890525768587747" nodeInfo="ng">
+                    <property name="escapedValue" nameId="87nw.2557074442922438158" value="value information available after function call" />
                   </node>
                 </node>
               </node>
@@ -2527,9 +2528,9 @@
             </node>
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="5781444008245433023" nodeInfo="ng">
               <node role="textblock" roleId="c4fa.8624890525768479139" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8624890525768587256" nodeInfo="ng">
-                <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="8624890525768587259" nodeInfo="ng">
-                  <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="8624890525768587261" nodeInfo="ng">
-                    <property name="escapedValue" value="value information of pointer type, array type and of variables a pointer points to is not available" />
+                <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8624890525768587259" nodeInfo="ng">
+                  <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8624890525768587261" nodeInfo="ng">
+                    <property name="escapedValue" nameId="87nw.2557074442922438158" value="value information of pointer type, array type and of variables a pointer points to is not available" />
                   </node>
                 </node>
               </node>
@@ -2574,9 +2575,9 @@
             </node>
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="5781444008245441537" nodeInfo="ng">
               <node role="textblock" roleId="c4fa.8624890525768479139" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8624890525768587514" nodeInfo="ng">
-                <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="8624890525768587517" nodeInfo="ng">
-                  <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="8624890525768587519" nodeInfo="ng">
-                    <property name="escapedValue" value="value information of globals are not available after the call" />
+                <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8624890525768587517" nodeInfo="ng">
+                  <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8624890525768587519" nodeInfo="ng">
+                    <property name="escapedValue" nameId="87nw.2557074442922438158" value="value information of globals are not available after the call" />
                   </node>
                 </node>
               </node>
@@ -2588,9 +2589,9 @@
             </node>
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="5781444008245666931" nodeInfo="ng">
               <node role="textblock" roleId="c4fa.8624890525768479139" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8624890525768587232" nodeInfo="ng">
-                <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="8624890525768587235" nodeInfo="ng">
-                  <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="8624890525768587237" nodeInfo="ng">
-                    <property name="escapedValue" value="unless they are consts" />
+                <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8624890525768587235" nodeInfo="ng">
+                  <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8624890525768587237" nodeInfo="ng">
+                    <property name="escapedValue" nameId="87nw.2557074442922438158" value="unless they are consts" />
                   </node>
                 </node>
               </node>
@@ -2640,9 +2641,9 @@
             </node>
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="5781444008245433086" nodeInfo="ng">
               <node role="textblock" roleId="c4fa.8624890525768479139" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8624890525768587802" nodeInfo="ng">
-                <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="8624890525768587805" nodeInfo="ng">
-                  <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="8624890525768587807" nodeInfo="ng">
-                    <property name="escapedValue" value="value information available after initialization" />
+                <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8624890525768587805" nodeInfo="ng">
+                  <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8624890525768587807" nodeInfo="ng">
+                    <property name="escapedValue" nameId="87nw.2557074442922438158" value="value information available after initialization" />
                   </node>
                 </node>
               </node>
@@ -2674,9 +2675,9 @@
             </node>
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="5781444008245433097" nodeInfo="ng">
               <node role="textblock" roleId="c4fa.8624890525768479139" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8624890525768587304" nodeInfo="ng">
-                <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="8624890525768587307" nodeInfo="ng">
-                  <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="8624890525768587309" nodeInfo="ng">
-                    <property name="escapedValue" value="value information available after initialization" />
+                <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8624890525768587307" nodeInfo="ng">
+                  <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8624890525768587309" nodeInfo="ng">
+                    <property name="escapedValue" nameId="87nw.2557074442922438158" value="value information available after initialization" />
                   </node>
                 </node>
               </node>
@@ -2717,9 +2718,9 @@
             </node>
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="5781444008245433110" nodeInfo="ng">
               <node role="textblock" roleId="c4fa.8624890525768479139" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8624890525768587574" nodeInfo="ng">
-                <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="8624890525768587577" nodeInfo="ng">
-                  <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="8624890525768587579" nodeInfo="ng">
-                    <property name="escapedValue" value="value information available after initialization" />
+                <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8624890525768587577" nodeInfo="ng">
+                  <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8624890525768587579" nodeInfo="ng">
+                    <property name="escapedValue" nameId="87nw.2557074442922438158" value="value information available after initialization" />
                   </node>
                 </node>
               </node>
@@ -2842,9 +2843,9 @@
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="5781444008245433303" nodeInfo="ng" />
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="5781444008245433305" nodeInfo="ng">
               <node role="textblock" roleId="c4fa.8624890525768479139" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8624890525768587880" nodeInfo="ng">
-                <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="8624890525768587883" nodeInfo="ng">
-                  <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="8624890525768587885" nodeInfo="ng">
-                    <property name="escapedValue" value="value information of ret value not available" />
+                <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8624890525768587883" nodeInfo="ng">
+                  <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8624890525768587885" nodeInfo="ng">
+                    <property name="escapedValue" nameId="87nw.2557074442922438158" value="value information of ret value not available" />
                   </node>
                 </node>
               </node>
@@ -2859,9 +2860,9 @@
             </node>
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="5781444008245433310" nodeInfo="ng">
               <node role="textblock" roleId="c4fa.8624890525768479139" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8624890525768587412" nodeInfo="ng">
-                <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="8624890525768587415" nodeInfo="ng">
-                  <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="8624890525768587417" nodeInfo="ng">
-                    <property name="escapedValue" value="value information available after function call" />
+                <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8624890525768587415" nodeInfo="ng">
+                  <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8624890525768587417" nodeInfo="ng">
+                    <property name="escapedValue" nameId="87nw.2557074442922438158" value="value information available after function call" />
                   </node>
                 </node>
               </node>
@@ -2883,9 +2884,9 @@
             </node>
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="5781444008245433318" nodeInfo="ng">
               <node role="textblock" roleId="c4fa.8624890525768479139" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8624890525768587592" nodeInfo="ng">
-                <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="8624890525768587595" nodeInfo="ng">
-                  <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="8624890525768587597" nodeInfo="ng">
-                    <property name="escapedValue" value="value information of pointer type, array type and of variables a pointer points to is not available" />
+                <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8624890525768587595" nodeInfo="ng">
+                  <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8624890525768587597" nodeInfo="ng">
+                    <property name="escapedValue" nameId="87nw.2557074442922438158" value="value information of pointer type, array type and of variables a pointer points to is not available" />
                   </node>
                 </node>
               </node>
@@ -2925,9 +2926,9 @@
             </node>
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="5781444008245441548" nodeInfo="ng">
               <node role="textblock" roleId="c4fa.8624890525768479139" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8624890525768587694" nodeInfo="ng">
-                <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="8624890525768587697" nodeInfo="ng">
-                  <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="8624890525768587699" nodeInfo="ng">
-                    <property name="escapedValue" value="value information of globals are not available after the call" />
+                <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8624890525768587697" nodeInfo="ng">
+                  <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8624890525768587699" nodeInfo="ng">
+                    <property name="escapedValue" nameId="87nw.2557074442922438158" value="value information of globals are not available after the call" />
                   </node>
                 </node>
               </node>
@@ -2939,9 +2940,9 @@
             </node>
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="5781444008245666933" nodeInfo="ng">
               <node role="textblock" roleId="c4fa.8624890525768479139" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8624890525768587772" nodeInfo="ng">
-                <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="8624890525768587775" nodeInfo="ng">
-                  <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="8624890525768587777" nodeInfo="ng">
-                    <property name="escapedValue" value="unless they are consts" />
+                <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8624890525768587775" nodeInfo="ng">
+                  <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8624890525768587777" nodeInfo="ng">
+                    <property name="escapedValue" nameId="87nw.2557074442922438158" value="unless they are consts" />
                   </node>
                 </node>
               </node>
@@ -3081,18 +3082,18 @@
             </node>
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="5579776927402352655" nodeInfo="ng">
               <node role="textblock" roleId="c4fa.8624890525768479139" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8624890525768587454" nodeInfo="ng">
-                <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="8624890525768587457" nodeInfo="ng">
-                  <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="8624890525768587459" nodeInfo="ng">
-                    <property name="escapedValue" value="redundant initializer" />
+                <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8624890525768587457" nodeInfo="ng">
+                  <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8624890525768587459" nodeInfo="ng">
+                    <property name="escapedValue" nameId="87nw.2557074442922438158" value="redundant initializer" />
                   </node>
                 </node>
               </node>
             </node>
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="5579776927402595487" nodeInfo="ng">
               <node role="textblock" roleId="c4fa.8624890525768479139" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8624890525768587712" nodeInfo="ng">
-                <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="8624890525768587715" nodeInfo="ng">
-                  <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="8624890525768587717" nodeInfo="ng">
-                    <property name="escapedValue" value="c is a constant" />
+                <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8624890525768587715" nodeInfo="ng">
+                  <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8624890525768587717" nodeInfo="ng">
+                    <property name="escapedValue" nameId="87nw.2557074442922438158" value="c is a constant" />
                   </node>
                 </node>
               </node>
@@ -3136,9 +3137,9 @@
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="5579776927402595488" nodeInfo="ng" />
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="5579776927402352665" nodeInfo="ng">
               <node role="textblock" roleId="c4fa.8624890525768479139" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8624890525768587784" nodeInfo="ng">
-                <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="8624890525768587787" nodeInfo="ng">
-                  <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="8624890525768587789" nodeInfo="ng">
-                    <property name="escapedValue" value="unused variable" />
+                <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8624890525768587787" nodeInfo="ng">
+                  <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8624890525768587789" nodeInfo="ng">
+                    <property name="escapedValue" nameId="87nw.2557074442922438158" value="unused variable" />
                   </node>
                 </node>
               </node>
@@ -3154,9 +3155,9 @@
             </node>
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="5579776927402352711" nodeInfo="ng">
               <node role="textblock" roleId="c4fa.8624890525768479139" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8624890525768588066" nodeInfo="ng">
-                <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="8624890525768588069" nodeInfo="ng">
-                  <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="8624890525768588071" nodeInfo="ng">
-                    <property name="escapedValue" value="uninitialized reads" />
+                <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8624890525768588069" nodeInfo="ng">
+                  <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8624890525768588071" nodeInfo="ng">
+                    <property name="escapedValue" nameId="87nw.2557074442922438158" value="uninitialized reads" />
                   </node>
                 </node>
               </node>
@@ -3185,9 +3186,9 @@
             </node>
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="5579776927402352758" nodeInfo="ng">
               <node role="textblock" roleId="c4fa.8624890525768479139" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8624890525768587382" nodeInfo="ng">
-                <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="8624890525768587385" nodeInfo="ng">
-                  <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="8624890525768587387" nodeInfo="ng">
-                    <property name="escapedValue" value="unused assignment" />
+                <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8624890525768587385" nodeInfo="ng">
+                  <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8624890525768587387" nodeInfo="ng">
+                    <property name="escapedValue" nameId="87nw.2557074442922438158" value="unused assignment" />
                   </node>
                 </node>
               </node>
@@ -3204,9 +3205,9 @@
             </node>
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="5579776927402595483" nodeInfo="ng">
               <node role="textblock" roleId="c4fa.8624890525768479139" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8624890525768587952" nodeInfo="ng">
-                <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="8624890525768587955" nodeInfo="ng">
-                  <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="8624890525768587957" nodeInfo="ng">
-                    <property name="escapedValue" value="no warning, value propagation is not yet implemented for EnumTypes" />
+                <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8624890525768587955" nodeInfo="ng">
+                  <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8624890525768587957" nodeInfo="ng">
+                    <property name="escapedValue" nameId="87nw.2557074442922438158" value="no warning, value propagation is not yet implemented for EnumTypes" />
                   </node>
                 </node>
               </node>
@@ -3467,9 +3468,9 @@
             </node>
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="5752503586047815114" nodeInfo="ng">
               <node role="textblock" roleId="c4fa.8624890525768479139" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8624890525768587640" nodeInfo="ng">
-                <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="8624890525768587643" nodeInfo="ng">
-                  <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="8624890525768587645" nodeInfo="ng">
-                    <property name="escapedValue" value="value information for sibilngs is resetted" />
+                <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8624890525768587643" nodeInfo="ng">
+                  <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8624890525768587645" nodeInfo="ng">
+                    <property name="escapedValue" nameId="87nw.2557074442922438158" value="value information for sibilngs is resetted" />
                   </node>
                 </node>
               </node>
@@ -3542,9 +3543,9 @@
             </node>
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="5579776927402790770" nodeInfo="ng">
               <node role="textblock" roleId="c4fa.8624890525768479139" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8624890525768588048" nodeInfo="ng">
-                <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="8624890525768588051" nodeInfo="ng">
-                  <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="8624890525768588053" nodeInfo="ng">
-                    <property name="escapedValue" value="unused initializer" />
+                <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8624890525768588051" nodeInfo="ng">
+                  <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8624890525768588053" nodeInfo="ng">
+                    <property name="escapedValue" nameId="87nw.2557074442922438158" value="unused initializer" />
                   </node>
                 </node>
               </node>
@@ -3567,9 +3568,9 @@
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="1199641370205305600" nodeInfo="ng" />
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="5579776927402790778" nodeInfo="ng">
               <node role="textblock" roleId="c4fa.8624890525768479139" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8624890525768588018" nodeInfo="ng">
-                <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="8624890525768588021" nodeInfo="ng">
-                  <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="8624890525768588023" nodeInfo="ng">
-                    <property name="escapedValue" value="unused variable" />
+                <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8624890525768588021" nodeInfo="ng">
+                  <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8624890525768588023" nodeInfo="ng">
+                    <property name="escapedValue" nameId="87nw.2557074442922438158" value="unused variable" />
                   </node>
                 </node>
               </node>
@@ -3593,9 +3594,9 @@
             </node>
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="5579776927402790894" nodeInfo="ng">
               <node role="textblock" roleId="c4fa.8624890525768479139" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8624890525768587706" nodeInfo="ng">
-                <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="8624890525768587709" nodeInfo="ng">
-                  <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="8624890525768587711" nodeInfo="ng">
-                    <property name="escapedValue" value="not initialized" />
+                <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8624890525768587709" nodeInfo="ng">
+                  <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8624890525768587711" nodeInfo="ng">
+                    <property name="escapedValue" nameId="87nw.2557074442922438158" value="not initialized" />
                   </node>
                 </node>
               </node>
@@ -3633,9 +3634,9 @@
             </node>
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="5579776927402790896" nodeInfo="ng">
               <node role="textblock" roleId="c4fa.8624890525768479139" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8624890525768588000" nodeInfo="ng">
-                <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="8624890525768588003" nodeInfo="ng">
-                  <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="8624890525768588005" nodeInfo="ng">
-                    <property name="escapedValue" value="initialized but unused" />
+                <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8624890525768588003" nodeInfo="ng">
+                  <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8624890525768588005" nodeInfo="ng">
+                    <property name="escapedValue" nameId="87nw.2557074442922438158" value="initialized but unused" />
                   </node>
                 </node>
               </node>
@@ -3676,9 +3677,9 @@
             </node>
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="5579776927402595597" nodeInfo="ng">
               <node role="textblock" roleId="c4fa.8624890525768479139" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8624890525768587376" nodeInfo="ng">
-                <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="8624890525768587379" nodeInfo="ng">
-                  <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="8624890525768587381" nodeInfo="ng">
-                    <property name="escapedValue" value="no warning, u1.m1 and u2.m2 have been initialized" />
+                <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8624890525768587379" nodeInfo="ng">
+                  <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8624890525768587381" nodeInfo="ng">
+                    <property name="escapedValue" nameId="87nw.2557074442922438158" value="no warning, u1.m1 and u2.m2 have been initialized" />
                   </node>
                 </node>
               </node>
@@ -3711,9 +3712,9 @@
             </node>
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="5579776927402735287" nodeInfo="ng">
               <node role="textblock" roleId="c4fa.8624890525768479139" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8624890525768588060" nodeInfo="ng">
-                <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="8624890525768588063" nodeInfo="ng">
-                  <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="8624890525768588065" nodeInfo="ng">
-                    <property name="escapedValue" value="no warnings structs must be initialized for member initialization" />
+                <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8624890525768588063" nodeInfo="ng">
+                  <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8624890525768588065" nodeInfo="ng">
+                    <property name="escapedValue" nameId="87nw.2557074442922438158" value="no warnings structs must be initialized for member initialization" />
                   </node>
                 </node>
               </node>
@@ -3768,9 +3769,9 @@
             </node>
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="5579776927402735270" nodeInfo="ng">
               <node role="textblock" roleId="c4fa.8624890525768479139" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8624890525768587934" nodeInfo="ng">
-                <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="8624890525768587937" nodeInfo="ng">
-                  <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="8624890525768587939" nodeInfo="ng">
-                    <property name="escapedValue" value="unused assignment" />
+                <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8624890525768587937" nodeInfo="ng">
+                  <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8624890525768587939" nodeInfo="ng">
+                    <property name="escapedValue" nameId="87nw.2557074442922438158" value="unused assignment" />
                   </node>
                 </node>
               </node>
@@ -3813,9 +3814,9 @@
             </node>
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="5579776927402595621" nodeInfo="ng">
               <node role="textblock" roleId="c4fa.8624890525768479139" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8624890525768587244" nodeInfo="ng">
-                <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="8624890525768587247" nodeInfo="ng">
-                  <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="8624890525768587249" nodeInfo="ng">
-                    <property name="escapedValue" value="statically evaluatable and initialized" />
+                <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8624890525768587247" nodeInfo="ng">
+                  <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8624890525768587249" nodeInfo="ng">
+                    <property name="escapedValue" nameId="87nw.2557074442922438158" value="statically evaluatable and initialized" />
                   </node>
                 </node>
               </node>
@@ -3856,9 +3857,9 @@
             </node>
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="5579776927402790942" nodeInfo="ng">
               <node role="textblock" roleId="c4fa.8624890525768479139" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8624890525768588096" nodeInfo="ng">
-                <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="8624890525768588099" nodeInfo="ng">
-                  <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="8624890525768588101" nodeInfo="ng">
-                    <property name="escapedValue" value="not initialized" />
+                <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8624890525768588099" nodeInfo="ng">
+                  <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8624890525768588101" nodeInfo="ng">
+                    <property name="escapedValue" nameId="87nw.2557074442922438158" value="not initialized" />
                   </node>
                 </node>
               </node>
@@ -3878,9 +3879,9 @@
             </node>
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="5579776927402790944" nodeInfo="ng">
               <node role="textblock" roleId="c4fa.8624890525768479139" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8624890525768587682" nodeInfo="ng">
-                <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="8624890525768587685" nodeInfo="ng">
-                  <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="8624890525768587687" nodeInfo="ng">
-                    <property name="escapedValue" value="unused" />
+                <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8624890525768587685" nodeInfo="ng">
+                  <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8624890525768587687" nodeInfo="ng">
+                    <property name="escapedValue" nameId="87nw.2557074442922438158" value="unused" />
                   </node>
                 </node>
               </node>
@@ -3912,9 +3913,9 @@
             </node>
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="5579776927402790985" nodeInfo="ng">
               <node role="textblock" roleId="c4fa.8624890525768479139" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8624890525768588042" nodeInfo="ng">
-                <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="8624890525768588045" nodeInfo="ng">
-                  <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="8624890525768588047" nodeInfo="ng">
-                    <property name="escapedValue" value="not initialized" />
+                <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8624890525768588045" nodeInfo="ng">
+                  <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8624890525768588047" nodeInfo="ng">
+                    <property name="escapedValue" nameId="87nw.2557074442922438158" value="not initialized" />
                   </node>
                 </node>
               </node>
@@ -4058,9 +4059,9 @@
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="9064908667073882435" nodeInfo="ng" />
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="5579776927402792461" nodeInfo="ng">
               <node role="textblock" roleId="c4fa.8624890525768479139" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8624890525768587298" nodeInfo="ng">
-                <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="8624890525768587301" nodeInfo="ng">
-                  <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="8624890525768587303" nodeInfo="ng">
-                    <property name="escapedValue" value="no errors" />
+                <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8624890525768587301" nodeInfo="ng">
+                  <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8624890525768587303" nodeInfo="ng">
+                    <property name="escapedValue" nameId="87nw.2557074442922438158" value="no errors" />
                   </node>
                 </node>
               </node>
@@ -4192,9 +4193,9 @@
             </node>
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="5579776927402820008" nodeInfo="ng">
               <node role="textblock" roleId="c4fa.8624890525768479139" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8624890525768587808" nodeInfo="ng">
-                <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="8624890525768587811" nodeInfo="ng">
-                  <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="8624890525768587813" nodeInfo="ng">
-                    <property name="escapedValue" value="warnings, not initialized" />
+                <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8624890525768587811" nodeInfo="ng">
+                  <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8624890525768587813" nodeInfo="ng">
+                    <property name="escapedValue" nameId="87nw.2557074442922438158" value="warnings, not initialized" />
                   </node>
                 </node>
               </node>
@@ -4281,9 +4282,9 @@
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="7274201720603095760" nodeInfo="ng" />
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="5579776927402948801" nodeInfo="ng">
               <node role="textblock" roleId="c4fa.8624890525768479139" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8624890525768587646" nodeInfo="ng">
-                <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="8624890525768587649" nodeInfo="ng">
-                  <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="8624890525768587651" nodeInfo="ng">
-                    <property name="escapedValue" value="no warnings after assignment with reference" />
+                <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8624890525768587649" nodeInfo="ng">
+                  <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8624890525768587651" nodeInfo="ng">
+                    <property name="escapedValue" nameId="87nw.2557074442922438158" value="no warnings after assignment with reference" />
                   </node>
                 </node>
               </node>
@@ -4328,9 +4329,9 @@
             </node>
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="5579776927403445627" nodeInfo="ng">
               <node role="textblock" roleId="c4fa.8624890525768479139" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8624890525768587898" nodeInfo="ng">
-                <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="8624890525768587901" nodeInfo="ng">
-                  <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="8624890525768587903" nodeInfo="ng">
-                    <property name="escapedValue" value="warnings, not initialized" />
+                <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8624890525768587901" nodeInfo="ng">
+                  <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8624890525768587903" nodeInfo="ng">
+                    <property name="escapedValue" nameId="87nw.2557074442922438158" value="warnings, not initialized" />
                   </node>
                 </node>
               </node>
@@ -4447,9 +4448,9 @@
             </node>
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="5579776927403172468" nodeInfo="ng">
               <node role="textblock" roleId="c4fa.8624890525768479139" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8624890525768587910" nodeInfo="ng">
-                <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="8624890525768587913" nodeInfo="ng">
-                  <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="8624890525768587915" nodeInfo="ng">
-                    <property name="escapedValue" value="no warning, has been initialized" />
+                <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8624890525768587913" nodeInfo="ng">
+                  <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8624890525768587915" nodeInfo="ng">
+                    <property name="escapedValue" nameId="87nw.2557074442922438158" value="no warning, has been initialized" />
                   </node>
                 </node>
               </node>
@@ -4529,9 +4530,9 @@
             </node>
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="5579776927403172536" nodeInfo="ng">
               <node role="textblock" roleId="c4fa.8624890525768479139" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8624890525768587718" nodeInfo="ng">
-                <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="8624890525768587721" nodeInfo="ng">
-                  <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="8624890525768587723" nodeInfo="ng">
-                    <property name="escapedValue" value="no warnings for both, read can not be unread again" />
+                <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8624890525768587721" nodeInfo="ng">
+                  <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8624890525768587723" nodeInfo="ng">
+                    <property name="escapedValue" nameId="87nw.2557074442922438158" value="no warnings for both, read can not be unread again" />
                   </node>
                 </node>
               </node>
@@ -4680,9 +4681,9 @@
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="4462901426780019070" nodeInfo="ng" />
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="5579776927403512098" nodeInfo="ng">
               <node role="textblock" roleId="c4fa.8624890525768479139" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8624890525768587820" nodeInfo="ng">
-                <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="8624890525768587823" nodeInfo="ng">
-                  <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="8624890525768587825" nodeInfo="ng">
-                    <property name="escapedValue" value="no warnings" />
+                <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8624890525768587823" nodeInfo="ng">
+                  <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8624890525768587825" nodeInfo="ng">
+                    <property name="escapedValue" nameId="87nw.2557074442922438158" value="no warnings" />
                   </node>
                 </node>
               </node>
@@ -4767,9 +4768,9 @@
             </node>
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="5579776927403512099" nodeInfo="ng">
               <node role="textblock" roleId="c4fa.8624890525768479139" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8624890525768588054" nodeInfo="ng">
-                <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="8624890525768588057" nodeInfo="ng">
-                  <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="8624890525768588059" nodeInfo="ng">
-                    <property name="escapedValue" value="no warnings" />
+                <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8624890525768588057" nodeInfo="ng">
+                  <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8624890525768588059" nodeInfo="ng">
+                    <property name="escapedValue" nameId="87nw.2557074442922438158" value="no warnings" />
                   </node>
                 </node>
               </node>
@@ -4847,9 +4848,9 @@
             </node>
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="5579776927403512147" nodeInfo="ng">
               <node role="textblock" roleId="c4fa.8624890525768479139" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8624890525768587970" nodeInfo="ng">
-                <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="8624890525768587973" nodeInfo="ng">
-                  <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="8624890525768587975" nodeInfo="ng">
-                    <property name="escapedValue" value="no warnings" />
+                <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8624890525768587973" nodeInfo="ng">
+                  <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8624890525768587975" nodeInfo="ng">
+                    <property name="escapedValue" nameId="87nw.2557074442922438158" value="no warnings" />
                   </node>
                 </node>
               </node>
@@ -4903,9 +4904,9 @@
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="5579776927403512175" nodeInfo="ng" />
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="5579776927403512153" nodeInfo="ng">
               <node role="textblock" roleId="c4fa.8624890525768479139" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8624890525768587928" nodeInfo="ng">
-                <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="8624890525768587931" nodeInfo="ng">
-                  <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="8624890525768587933" nodeInfo="ng">
-                    <property name="escapedValue" value="no warnings" />
+                <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8624890525768587931" nodeInfo="ng">
+                  <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8624890525768587933" nodeInfo="ng">
+                    <property name="escapedValue" nameId="87nw.2557074442922438158" value="no warnings" />
                   </node>
                 </node>
               </node>
@@ -4971,9 +4972,9 @@
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="5579776927403536719" nodeInfo="ng" />
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="5579776927403561027" nodeInfo="ng">
               <node role="textblock" roleId="c4fa.8624890525768479139" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8624890525768587622" nodeInfo="ng">
-                <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="8624890525768587625" nodeInfo="ng">
-                  <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="8624890525768587627" nodeInfo="ng">
-                    <property name="escapedValue" value="no warnings" />
+                <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8624890525768587625" nodeInfo="ng">
+                  <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8624890525768587627" nodeInfo="ng">
+                    <property name="escapedValue" nameId="87nw.2557074442922438158" value="no warnings" />
                   </node>
                 </node>
               </node>
@@ -5029,9 +5030,9 @@
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="5579776927403561025" nodeInfo="ng" />
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="5579776927403561024" nodeInfo="ng">
               <node role="textblock" roleId="c4fa.8624890525768479139" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8624890525768587904" nodeInfo="ng">
-                <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="8624890525768587907" nodeInfo="ng">
-                  <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="8624890525768587909" nodeInfo="ng">
-                    <property name="escapedValue" value="no warnings" />
+                <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8624890525768587907" nodeInfo="ng">
+                  <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8624890525768587909" nodeInfo="ng">
+                    <property name="escapedValue" nameId="87nw.2557074442922438158" value="no warnings" />
                   </node>
                 </node>
               </node>
@@ -5073,9 +5074,9 @@
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="5579776927403445656" nodeInfo="ng" />
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="9064908667075046437" nodeInfo="ng">
               <node role="textblock" roleId="c4fa.8624890525768479139" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8624890525768588036" nodeInfo="ng">
-                <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="8624890525768588039" nodeInfo="ng">
-                  <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="8624890525768588041" nodeInfo="ng">
-                    <property name="escapedValue" value="no warnings, all members are read after initialization" />
+                <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8624890525768588039" nodeInfo="ng">
+                  <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8624890525768588041" nodeInfo="ng">
+                    <property name="escapedValue" nameId="87nw.2557074442922438158" value="no warnings, all members are read after initialization" />
                   </node>
                 </node>
               </node>
@@ -5156,18 +5157,18 @@
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="9064908667074759348" nodeInfo="ng" />
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="9064908667075046439" nodeInfo="ng">
               <node role="textblock" roleId="c4fa.8624890525768479139" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8624890525768587748" nodeInfo="ng">
-                <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="8624890525768587751" nodeInfo="ng">
-                  <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="8624890525768587753" nodeInfo="ng">
-                    <property name="escapedValue" value="no errors, all members are initialized" />
+                <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8624890525768587751" nodeInfo="ng">
+                  <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8624890525768587753" nodeInfo="ng">
+                    <property name="escapedValue" nameId="87nw.2557074442922438158" value="no errors, all members are initialized" />
                   </node>
                 </node>
               </node>
             </node>
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="5752503586047829848" nodeInfo="ng">
               <node role="textblock" roleId="c4fa.8624890525768479139" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8624890525768587496" nodeInfo="ng">
-                <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="8624890525768587499" nodeInfo="ng">
-                  <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="8624890525768587501" nodeInfo="ng">
-                    <property name="escapedValue" value="but statically evaluatale --&gt; warning" />
+                <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8624890525768587499" nodeInfo="ng">
+                  <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8624890525768587501" nodeInfo="ng">
+                    <property name="escapedValue" nameId="87nw.2557074442922438158" value="but statically evaluatale --&gt; warning" />
                   </node>
                 </node>
               </node>
@@ -5429,9 +5430,9 @@
             </node>
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="2433973446246589351" nodeInfo="ng">
               <node role="textblock" roleId="c4fa.8624890525768479139" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8624890525768587760" nodeInfo="ng">
-                <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="8624890525768587763" nodeInfo="ng">
-                  <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="8624890525768587765" nodeInfo="ng">
-                    <property name="escapedValue" value="parenthesized expressions are evaluated" />
+                <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8624890525768587763" nodeInfo="ng">
+                  <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8624890525768587765" nodeInfo="ng">
+                    <property name="escapedValue" nameId="87nw.2557074442922438158" value="parenthesized expressions are evaluated" />
                   </node>
                 </node>
               </node>
@@ -5462,9 +5463,9 @@
             </node>
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="2433973446246589352" nodeInfo="ng">
               <node role="textblock" roleId="c4fa.8624890525768479139" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8624890525768587466" nodeInfo="ng">
-                <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="8624890525768587469" nodeInfo="ng">
-                  <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="8624890525768587471" nodeInfo="ng">
-                    <property name="escapedValue" value="as well as not parenthesized expressions" />
+                <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8624890525768587469" nodeInfo="ng">
+                  <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8624890525768587471" nodeInfo="ng">
+                    <property name="escapedValue" nameId="87nw.2557074442922438158" value="as well as not parenthesized expressions" />
                   </node>
                 </node>
               </node>
@@ -5582,9 +5583,9 @@
             </node>
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="2433973446246570864" nodeInfo="ng">
               <node role="textblock" roleId="c4fa.8624890525768479139" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8624890525768587268" nodeInfo="ng">
-                <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="8624890525768587271" nodeInfo="ng">
-                  <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="8624890525768587273" nodeInfo="ng">
-                    <property name="escapedValue" value="no warning, value not known" />
+                <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8624890525768587271" nodeInfo="ng">
+                  <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8624890525768587273" nodeInfo="ng">
+                    <property name="escapedValue" nameId="87nw.2557074442922438158" value="no warning, value not known" />
                   </node>
                 </node>
               </node>
@@ -5660,9 +5661,9 @@
             </node>
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="2433973446246570925" nodeInfo="ng">
               <node role="textblock" roleId="c4fa.8624890525768479139" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8624890525768587634" nodeInfo="ng">
-                <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="8624890525768587637" nodeInfo="ng">
-                  <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="8624890525768587639" nodeInfo="ng">
-                    <property name="escapedValue" value="value known, all pred assign 1" />
+                <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8624890525768587637" nodeInfo="ng">
+                  <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8624890525768587639" nodeInfo="ng">
+                    <property name="escapedValue" nameId="87nw.2557074442922438158" value="value known, all pred assign 1" />
                   </node>
                 </node>
               </node>
@@ -5729,9 +5730,9 @@
             </node>
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="2433973446246569837" nodeInfo="ng">
               <node role="textblock" roleId="c4fa.8624890525768479139" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8624890525768587442" nodeInfo="ng">
-                <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="8624890525768587445" nodeInfo="ng">
-                  <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="8624890525768587447" nodeInfo="ng">
-                    <property name="escapedValue" value="body is executed only once" />
+                <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8624890525768587445" nodeInfo="ng">
+                  <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8624890525768587447" nodeInfo="ng">
+                    <property name="escapedValue" nameId="87nw.2557074442922438158" value="body is executed only once" />
                   </node>
                 </node>
               </node>
@@ -5783,9 +5784,9 @@
             </node>
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="2433973446246570953" nodeInfo="ng">
               <node role="textblock" roleId="c4fa.8624890525768479139" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8624890525768587220" nodeInfo="ng">
-                <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="8624890525768587223" nodeInfo="ng">
-                  <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="8624890525768587225" nodeInfo="ng">
-                    <property name="escapedValue" value=" value not known, body executed multiple times" />
+                <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8624890525768587223" nodeInfo="ng">
+                  <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8624890525768587225" nodeInfo="ng">
+                    <property name="escapedValue" nameId="87nw.2557074442922438158" value=" value not known, body executed multiple times" />
                   </node>
                 </node>
               </node>
@@ -5901,9 +5902,9 @@
             </node>
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="2433973446246571107" nodeInfo="ng">
               <node role="textblock" roleId="c4fa.8624890525768479139" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8624890525768587406" nodeInfo="ng">
-                <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="8624890525768587409" nodeInfo="ng">
-                  <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="8624890525768587411" nodeInfo="ng">
-                    <property name="escapedValue" value="value not known, body can be executed or not" />
+                <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8624890525768587409" nodeInfo="ng">
+                  <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8624890525768587411" nodeInfo="ng">
+                    <property name="escapedValue" nameId="87nw.2557074442922438158" value="value not known, body can be executed or not" />
                   </node>
                 </node>
               </node>
@@ -5922,9 +5923,9 @@
             </node>
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="2433973446246571109" nodeInfo="ng">
               <node role="textblock" roleId="c4fa.8624890525768479139" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8624890525768587754" nodeInfo="ng">
-                <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="8624890525768587757" nodeInfo="ng">
-                  <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="8624890525768587759" nodeInfo="ng">
-                    <property name="escapedValue" value="value not known body can be executed multiple times" />
+                <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8624890525768587757" nodeInfo="ng">
+                  <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8624890525768587759" nodeInfo="ng">
+                    <property name="escapedValue" nameId="87nw.2557074442922438158" value="value not known body can be executed multiple times" />
                   </node>
                 </node>
               </node>
@@ -5943,9 +5944,9 @@
             </node>
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="2433973446246571111" nodeInfo="ng">
               <node role="textblock" roleId="c4fa.8624890525768479139" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8624890525768587262" nodeInfo="ng">
-                <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="8624890525768587265" nodeInfo="ng">
-                  <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="8624890525768587267" nodeInfo="ng">
-                    <property name="escapedValue" value="value known, execution of the body has no effect" />
+                <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8624890525768587265" nodeInfo="ng">
+                  <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8624890525768587267" nodeInfo="ng">
+                    <property name="escapedValue" nameId="87nw.2557074442922438158" value="value known, execution of the body has no effect" />
                   </node>
                 </node>
               </node>
@@ -6071,9 +6072,9 @@
             </node>
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="2433973446246569948" nodeInfo="ng">
               <node role="textblock" roleId="c4fa.8624890525768479139" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8624890525768587502" nodeInfo="ng">
-                <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="8624890525768587505" nodeInfo="ng">
-                  <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="8624890525768587507" nodeInfo="ng">
-                    <property name="escapedValue" value="values of a and b are unknown" />
+                <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8624890525768587505" nodeInfo="ng">
+                  <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8624890525768587507" nodeInfo="ng">
+                    <property name="escapedValue" nameId="87nw.2557074442922438158" value="values of a and b are unknown" />
                   </node>
                 </node>
               </node>
@@ -6100,9 +6101,9 @@
             </node>
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="2433973446246571166" nodeInfo="ng">
               <node role="textblock" roleId="c4fa.8624890525768479139" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8624890525768587790" nodeInfo="ng">
-                <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="8624890525768587793" nodeInfo="ng">
-                  <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="8624890525768587795" nodeInfo="ng">
-                    <property name="escapedValue" value="value of c is known" />
+                <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8624890525768587793" nodeInfo="ng">
+                  <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8624890525768587795" nodeInfo="ng">
+                    <property name="escapedValue" nameId="87nw.2557074442922438158" value="value of c is known" />
                   </node>
                 </node>
               </node>
@@ -6177,9 +6178,9 @@
               <node role="body" roleId="k146.8729447926330241139" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="2433973446246569990" nodeInfo="ng">
                 <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="2433973446246569991" nodeInfo="ng">
                   <node role="textblock" roleId="c4fa.8624890525768479139" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8624890525768587472" nodeInfo="ng">
-                    <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="8624890525768587475" nodeInfo="ng">
-                      <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="8624890525768587477" nodeInfo="ng">
-                        <property name="escapedValue" value="no dead code" />
+                    <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8624890525768587475" nodeInfo="ng">
+                      <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8624890525768587477" nodeInfo="ng">
+                        <property name="escapedValue" nameId="87nw.2557074442922438158" value="no dead code" />
                       </node>
                     </node>
                   </node>
@@ -6198,9 +6199,9 @@
             </node>
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="2433973446246569996" nodeInfo="ng">
               <node role="textblock" roleId="c4fa.8624890525768479139" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8624890525768587532" nodeInfo="ng">
-                <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="8624890525768587535" nodeInfo="ng">
-                  <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="8624890525768587537" nodeInfo="ng">
-                    <property name="escapedValue" value="value unknown, it is not statically checked how often the loops body is executed" />
+                <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8624890525768587535" nodeInfo="ng">
+                  <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8624890525768587537" nodeInfo="ng">
+                    <property name="escapedValue" nameId="87nw.2557074442922438158" value="value unknown, it is not statically checked how often the loops body is executed" />
                   </node>
                 </node>
               </node>
@@ -6294,18 +6295,18 @@
           <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="2433973446246604450" nodeInfo="ng">
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="3587190153237756922" nodeInfo="ng">
               <node role="textblock" roleId="c4fa.8624890525768479139" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8624890525768587520" nodeInfo="ng">
-                <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="8624890525768587523" nodeInfo="ng">
-                  <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="8624890525768587525" nodeInfo="ng">
-                    <property name="escapedValue" value="no errors, no warnings, array elements are initialized in the var decl" />
+                <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8624890525768587523" nodeInfo="ng">
+                  <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8624890525768587525" nodeInfo="ng">
+                    <property name="escapedValue" nameId="87nw.2557074442922438158" value="no errors, no warnings, array elements are initialized in the var decl" />
                   </node>
                 </node>
               </node>
             </node>
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="3587190153237757624" nodeInfo="ng">
               <node role="textblock" roleId="c4fa.8624890525768479139" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8624890525768587448" nodeInfo="ng">
-                <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="8624890525768587451" nodeInfo="ng">
-                  <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="8624890525768587453" nodeInfo="ng">
-                    <property name="escapedValue" value="and are written with unknown values in in the dfb of the function" />
+                <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8624890525768587451" nodeInfo="ng">
+                  <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8624890525768587453" nodeInfo="ng">
+                    <property name="escapedValue" nameId="87nw.2557074442922438158" value="and are written with unknown values in in the dfb of the function" />
                   </node>
                 </node>
               </node>
@@ -6435,18 +6436,18 @@
             </node>
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="9064908667074793000" nodeInfo="ng">
               <node role="textblock" roleId="c4fa.8624890525768479139" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8624890525768587676" nodeInfo="ng">
-                <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="8624890525768587679" nodeInfo="ng">
-                  <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="8624890525768587681" nodeInfo="ng">
-                    <property name="escapedValue" value=" no error, member has been initialized " />
+                <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8624890525768587679" nodeInfo="ng">
+                  <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8624890525768587681" nodeInfo="ng">
+                    <property name="escapedValue" nameId="87nw.2557074442922438158" value=" no error, member has been initialized " />
                   </node>
                 </node>
               </node>
             </node>
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="5752503586047829880" nodeInfo="ng">
               <node role="textblock" roleId="c4fa.8624890525768479139" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8624890525768587508" nodeInfo="ng">
-                <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="8624890525768587511" nodeInfo="ng">
-                  <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="8624890525768587513" nodeInfo="ng">
-                    <property name="escapedValue" value="warning as it is statically evaluatable" />
+                <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8624890525768587511" nodeInfo="ng">
+                  <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8624890525768587513" nodeInfo="ng">
+                    <property name="escapedValue" nameId="87nw.2557074442922438158" value="warning as it is statically evaluatable" />
                   </node>
                 </node>
               </node>
@@ -6466,9 +6467,9 @@
             </node>
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="9064908667074793002" nodeInfo="ng">
               <node role="textblock" roleId="c4fa.8624890525768479139" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8624890525768587700" nodeInfo="ng">
-                <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="8624890525768587703" nodeInfo="ng">
-                  <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="8624890525768587705" nodeInfo="ng">
-                    <property name="escapedValue" value="member has not been initialized" />
+                <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8624890525768587703" nodeInfo="ng">
+                  <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8624890525768587705" nodeInfo="ng">
+                    <property name="escapedValue" nameId="87nw.2557074442922438158" value="member has not been initialized" />
                   </node>
                 </node>
               </node>
@@ -6497,9 +6498,9 @@
             </node>
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="9064908667074793031" nodeInfo="ng">
               <node role="textblock" roleId="c4fa.8624890525768479139" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8624890525768587400" nodeInfo="ng">
-                <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="8624890525768587403" nodeInfo="ng">
-                  <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="8624890525768587405" nodeInfo="ng">
-                    <property name="escapedValue" value="unused assignments to point p2 and both members" />
+                <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8624890525768587403" nodeInfo="ng">
+                  <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8624890525768587405" nodeInfo="ng">
+                    <property name="escapedValue" nameId="87nw.2557074442922438158" value="unused assignments to point p2 and both members" />
                   </node>
                 </node>
               </node>
@@ -6757,9 +6758,9 @@
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="7897559875242202225" nodeInfo="ng" />
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="2669782318782063360" nodeInfo="ng">
               <node role="textblock" roleId="c4fa.8624890525768479139" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8624890525768587844" nodeInfo="ng">
-                <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="8624890525768587847" nodeInfo="ng">
-                  <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="8624890525768587849" nodeInfo="ng">
-                    <property name="escapedValue" value="no errors, fields are initialized" />
+                <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8624890525768587847" nodeInfo="ng">
+                  <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8624890525768587849" nodeInfo="ng">
+                    <property name="escapedValue" nameId="87nw.2557074442922438158" value="no errors, fields are initialized" />
                   </node>
                 </node>
               </node>
@@ -6875,9 +6876,9 @@
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="2669782318782062658" nodeInfo="ng" />
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="3587190153237570532" nodeInfo="ng">
               <node role="textblock" roleId="c4fa.8624890525768479139" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8624890525768587316" nodeInfo="ng">
-                <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="8624890525768587319" nodeInfo="ng">
-                  <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="8624890525768587321" nodeInfo="ng">
-                    <property name="escapedValue" value="no warnings, means no useless initialization --&gt; correct elements are read after initialization" />
+                <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8624890525768587319" nodeInfo="ng">
+                  <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8624890525768587321" nodeInfo="ng">
+                    <property name="escapedValue" nameId="87nw.2557074442922438158" value="no warnings, means no useless initialization --&gt; correct elements are read after initialization" />
                   </node>
                 </node>
               </node>
@@ -6905,9 +6906,9 @@
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="2669782318782064867" nodeInfo="ng" />
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="3587190153237569849" nodeInfo="ng">
               <node role="textblock" roleId="c4fa.8624890525768479139" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8624890525768587730" nodeInfo="ng">
-                <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="8624890525768587733" nodeInfo="ng">
-                  <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="8624890525768587735" nodeInfo="ng">
-                    <property name="escapedValue" value="no errors, elements are initialized" />
+                <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8624890525768587733" nodeInfo="ng">
+                  <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8624890525768587735" nodeInfo="ng">
+                    <property name="escapedValue" nameId="87nw.2557074442922438158" value="no errors, elements are initialized" />
                   </node>
                 </node>
               </node>
@@ -6969,9 +6970,9 @@
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="3587190153237468107" nodeInfo="ng" />
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="3587190153237570159" nodeInfo="ng">
               <node role="textblock" roleId="c4fa.8624890525768479139" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8624890525768588102" nodeInfo="ng">
-                <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="8624890525768588105" nodeInfo="ng">
-                  <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="8624890525768588107" nodeInfo="ng">
-                    <property name="escapedValue" value="no warnings, means no useless initialization --&gt; correct elements are read after initialization" />
+                <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8624890525768588105" nodeInfo="ng">
+                  <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8624890525768588107" nodeInfo="ng">
+                    <property name="escapedValue" nameId="87nw.2557074442922438158" value="no warnings, means no useless initialization --&gt; correct elements are read after initialization" />
                   </node>
                 </node>
               </node>
@@ -7000,9 +7001,9 @@
             </node>
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="3587190153237570181" nodeInfo="ng">
               <node role="textblock" roleId="c4fa.8624890525768479139" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8624890525768587424" nodeInfo="ng">
-                <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="8624890525768587427" nodeInfo="ng">
-                  <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="8624890525768587429" nodeInfo="ng">
-                    <property name="escapedValue" value="no errors, elements are initialized" />
+                <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8624890525768587427" nodeInfo="ng">
+                  <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8624890525768587429" nodeInfo="ng">
+                    <property name="escapedValue" nameId="87nw.2557074442922438158" value="no errors, elements are initialized" />
                   </node>
                 </node>
               </node>
@@ -7059,18 +7060,18 @@
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="1049346859913664893" nodeInfo="ng" />
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="3587190153237607549" nodeInfo="ng">
               <node role="textblock" roleId="c4fa.8624890525768479139" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8624890525768587964" nodeInfo="ng">
-                <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="8624890525768587967" nodeInfo="ng">
-                  <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="8624890525768587969" nodeInfo="ng">
-                    <property name="escapedValue" value="warning as the s0.s1b.s2b.barr elements are never read" />
+                <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8624890525768587967" nodeInfo="ng">
+                  <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8624890525768587969" nodeInfo="ng">
+                    <property name="escapedValue" nameId="87nw.2557074442922438158" value="warning as the s0.s1b.s2b.barr elements are never read" />
                   </node>
                 </node>
               </node>
             </node>
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="4087861105423454320" nodeInfo="ng">
               <node role="textblock" roleId="c4fa.8624890525768479139" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8624890525768587736" nodeInfo="ng">
-                <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="8624890525768587739" nodeInfo="ng">
-                  <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="8624890525768587741" nodeInfo="ng">
-                    <property name="escapedValue" value="not a constant as some members have not been initialized" />
+                <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8624890525768587739" nodeInfo="ng">
+                  <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8624890525768587741" nodeInfo="ng">
+                    <property name="escapedValue" nameId="87nw.2557074442922438158" value="not a constant as some members have not been initialized" />
                   </node>
                 </node>
               </node>
@@ -7139,9 +7140,9 @@
             </node>
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="3587190153237607108" nodeInfo="ng">
               <node role="textblock" roleId="c4fa.8624890525768479139" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8624890525768587328" nodeInfo="ng">
-                <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="8624890525768587331" nodeInfo="ng">
-                  <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="8624890525768587333" nodeInfo="ng">
-                    <property name="escapedValue" value=" no errors all members have been initialized correctly" />
+                <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8624890525768587331" nodeInfo="ng">
+                  <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8624890525768587333" nodeInfo="ng">
+                    <property name="escapedValue" nameId="87nw.2557074442922438158" value=" no errors all members have been initialized correctly" />
                   </node>
                 </node>
               </node>
@@ -7546,9 +7547,9 @@
             </node>
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="3587190153237643053" nodeInfo="ng">
               <node role="textblock" roleId="c4fa.8624890525768479139" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8624890525768587388" nodeInfo="ng">
-                <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="8624890525768587391" nodeInfo="ng">
-                  <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="8624890525768587393" nodeInfo="ng">
-                    <property name="escapedValue" value="not initialized" />
+                <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8624890525768587391" nodeInfo="ng">
+                  <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8624890525768587393" nodeInfo="ng">
+                    <property name="escapedValue" nameId="87nw.2557074442922438158" value="not initialized" />
                   </node>
                 </node>
               </node>
@@ -7568,9 +7569,9 @@
             </node>
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="3587190153237643062" nodeInfo="ng">
               <node role="textblock" roleId="c4fa.8624890525768479139" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8624890525768588108" nodeInfo="ng">
-                <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="8624890525768588111" nodeInfo="ng">
-                  <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="8624890525768588113" nodeInfo="ng">
-                    <property name="escapedValue" value="no warning if in an assignment expression" />
+                <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8624890525768588111" nodeInfo="ng">
+                  <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8624890525768588113" nodeInfo="ng">
+                    <property name="escapedValue" nameId="87nw.2557074442922438158" value="no warning if in an assignment expression" />
                   </node>
                 </node>
               </node>
@@ -7592,9 +7593,9 @@
             </node>
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="2669782318781875948" nodeInfo="ng">
               <node role="textblock" roleId="c4fa.8624890525768479139" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8624890525768587598" nodeInfo="ng">
-                <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="8624890525768587601" nodeInfo="ng">
-                  <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="8624890525768587603" nodeInfo="ng">
-                    <property name="escapedValue" value="or no primitive type" />
+                <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8624890525768587601" nodeInfo="ng">
+                  <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8624890525768587603" nodeInfo="ng">
+                    <property name="escapedValue" nameId="87nw.2557074442922438158" value="or no primitive type" />
                   </node>
                 </node>
               </node>
@@ -7655,9 +7656,9 @@
             </node>
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="3587190153237643087" nodeInfo="ng">
               <node role="textblock" roleId="c4fa.8624890525768479139" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8624890525768587394" nodeInfo="ng">
-                <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="8624890525768587397" nodeInfo="ng">
-                  <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="8624890525768587399" nodeInfo="ng">
-                    <property name="escapedValue" value="no warnings array elements have been initialized" />
+                <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8624890525768587397" nodeInfo="ng">
+                  <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8624890525768587399" nodeInfo="ng">
+                    <property name="escapedValue" nameId="87nw.2557074442922438158" value="no warnings array elements have been initialized" />
                   </node>
                 </node>
               </node>
@@ -7692,9 +7693,9 @@
             </node>
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="3587190153237643098" nodeInfo="ng">
               <node role="textblock" roleId="c4fa.8624890525768479139" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8624890525768587988" nodeInfo="ng">
-                <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="8624890525768587991" nodeInfo="ng">
-                  <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="8624890525768587993" nodeInfo="ng">
-                    <property name="escapedValue" value="warnings, array element twoDimArray[0][0] has not been initialized yet" />
+                <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8624890525768587991" nodeInfo="ng">
+                  <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8624890525768587993" nodeInfo="ng">
+                    <property name="escapedValue" nameId="87nw.2557074442922438158" value="warnings, array element twoDimArray[0][0] has not been initialized yet" />
                   </node>
                 </node>
               </node>
@@ -7720,9 +7721,9 @@
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="3587190153237643107" nodeInfo="ng" />
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="3587190153237643108" nodeInfo="ng">
               <node role="textblock" roleId="c4fa.8624890525768479139" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8624890525768587292" nodeInfo="ng">
-                <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="8624890525768587295" nodeInfo="ng">
-                  <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="8624890525768587297" nodeInfo="ng">
-                    <property name="escapedValue" value="no warning, value propagation not yet implemented for arrays" />
+                <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8624890525768587295" nodeInfo="ng">
+                  <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8624890525768587297" nodeInfo="ng">
+                    <property name="escapedValue" nameId="87nw.2557074442922438158" value="no warning, value propagation not yet implemented for arrays" />
                   </node>
                 </node>
               </node>
@@ -7756,9 +7757,9 @@
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="3587190153237643118" nodeInfo="ng" />
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="3587190153237643119" nodeInfo="ng">
               <node role="textblock" roleId="c4fa.8624890525768479139" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8624890525768587556" nodeInfo="ng">
-                <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="8624890525768587559" nodeInfo="ng">
-                  <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="8624890525768587561" nodeInfo="ng">
-                    <property name="escapedValue" value="initializer is redundant as the next statement overrides some elements" />
+                <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8624890525768587559" nodeInfo="ng">
+                  <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8624890525768587561" nodeInfo="ng">
+                    <property name="escapedValue" nameId="87nw.2557074442922438158" value="initializer is redundant as the next statement overrides some elements" />
                   </node>
                 </node>
               </node>
@@ -7819,9 +7820,9 @@
             </node>
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="3587190153237643146" nodeInfo="ng">
               <node role="textblock" roleId="c4fa.8624890525768479139" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8624890525768587994" nodeInfo="ng">
-                <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="8624890525768587997" nodeInfo="ng">
-                  <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="8624890525768587999" nodeInfo="ng">
-                    <property name="escapedValue" value="same value assigned" />
+                <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8624890525768587997" nodeInfo="ng">
+                  <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8624890525768587999" nodeInfo="ng">
+                    <property name="escapedValue" nameId="87nw.2557074442922438158" value="same value assigned" />
                   </node>
                 </node>
               </node>
@@ -7932,9 +7933,9 @@
             </node>
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="5409094285039144514" nodeInfo="ng">
               <node role="textblock" roleId="c4fa.8624890525768479139" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8624890525768587436" nodeInfo="ng">
-                <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="8624890525768587439" nodeInfo="ng">
-                  <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="8624890525768587441" nodeInfo="ng">
-                    <property name="escapedValue" value="unused assignment" />
+                <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8624890525768587439" nodeInfo="ng">
+                  <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8624890525768587441" nodeInfo="ng">
+                    <property name="escapedValue" nameId="87nw.2557074442922438158" value="unused assignment" />
                   </node>
                 </node>
               </node>
@@ -7967,9 +7968,9 @@
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="3587190153237643195" nodeInfo="ng" />
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="3587190153237643196" nodeInfo="ng">
               <node role="textblock" roleId="c4fa.8624890525768479139" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8624890525768587364" nodeInfo="ng">
-                <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="8624890525768587367" nodeInfo="ng">
-                  <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="8624890525768587369" nodeInfo="ng">
-                    <property name="escapedValue" value=" constant" />
+                <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8624890525768587367" nodeInfo="ng">
+                  <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8624890525768587369" nodeInfo="ng">
+                    <property name="escapedValue" nameId="87nw.2557074442922438158" value=" constant" />
                   </node>
                 </node>
               </node>
@@ -7989,9 +7990,9 @@
             </node>
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="3587190153237643202" nodeInfo="ng">
               <node role="textblock" roleId="c4fa.8624890525768479139" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8624890525768587664" nodeInfo="ng">
-                <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="8624890525768587667" nodeInfo="ng">
-                  <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="8624890525768587669" nodeInfo="ng">
-                    <property name="escapedValue" value="unused var" />
+                <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8624890525768587667" nodeInfo="ng">
+                  <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8624890525768587669" nodeInfo="ng">
+                    <property name="escapedValue" nameId="87nw.2557074442922438158" value="unused var" />
                   </node>
                 </node>
               </node>
@@ -8027,9 +8028,9 @@
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="3587190153237643211" nodeInfo="ng" />
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="3587190153237643212" nodeInfo="ng">
               <node role="textblock" roleId="c4fa.8624890525768479139" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8624890525768587766" nodeInfo="ng">
-                <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="8624890525768587769" nodeInfo="ng">
-                  <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="8624890525768587771" nodeInfo="ng">
-                    <property name="escapedValue" value="errors as ist is not known which arr is read and some are not yet initialized" />
+                <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8624890525768587769" nodeInfo="ng">
+                  <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8624890525768587771" nodeInfo="ng">
+                    <property name="escapedValue" nameId="87nw.2557074442922438158" value="errors as ist is not known which arr is read and some are not yet initialized" />
                   </node>
                 </node>
               </node>
@@ -8173,9 +8174,9 @@
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="3587190153237643291" nodeInfo="ng" />
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="3587190153237643292" nodeInfo="ng">
               <node role="textblock" roleId="c4fa.8624890525768479139" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8624890525768587418" nodeInfo="ng">
-                <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="8624890525768587421" nodeInfo="ng">
-                  <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="8624890525768587423" nodeInfo="ng">
-                    <property name="escapedValue" value="error, not sure if initialized" />
+                <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8624890525768587421" nodeInfo="ng">
+                  <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8624890525768587423" nodeInfo="ng">
+                    <property name="escapedValue" nameId="87nw.2557074442922438158" value="error, not sure if initialized" />
                   </node>
                 </node>
               </node>
@@ -8205,9 +8206,9 @@
             </node>
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="2669782318782442876" nodeInfo="ng">
               <node role="textblock" roleId="c4fa.8624890525768479139" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8624890525768587322" nodeInfo="ng">
-                <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="8624890525768587325" nodeInfo="ng">
-                  <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="8624890525768587327" nodeInfo="ng">
-                    <property name="escapedValue" value="no error, only an adress" />
+                <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8624890525768587325" nodeInfo="ng">
+                  <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8624890525768587327" nodeInfo="ng">
+                    <property name="escapedValue" nameId="87nw.2557074442922438158" value="no error, only an adress" />
                   </node>
                 </node>
               </node>
@@ -8276,9 +8277,9 @@
             </node>
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="3587190153237643339" nodeInfo="ng">
               <node role="textblock" roleId="c4fa.8624890525768479139" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8624890525768587724" nodeInfo="ng">
-                <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="8624890525768587727" nodeInfo="ng">
-                  <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="8624890525768587729" nodeInfo="ng">
-                    <property name="escapedValue" value="all elements are initialized" />
+                <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8624890525768587727" nodeInfo="ng">
+                  <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8624890525768587729" nodeInfo="ng">
+                    <property name="escapedValue" nameId="87nw.2557074442922438158" value="all elements are initialized" />
                   </node>
                 </node>
               </node>
@@ -8402,9 +8403,9 @@
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="3587190153237643371" nodeInfo="ng" />
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="3587190153237643340" nodeInfo="ng">
               <node role="textblock" roleId="c4fa.8624890525768479139" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8624890525768587484" nodeInfo="ng">
-                <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="8624890525768587487" nodeInfo="ng">
-                  <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="8624890525768587489" nodeInfo="ng">
-                    <property name="escapedValue" value="but warnings as the assignments are useless" />
+                <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8624890525768587487" nodeInfo="ng">
+                  <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8624890525768587489" nodeInfo="ng">
+                    <property name="escapedValue" nameId="87nw.2557074442922438158" value="but warnings as the assignments are useless" />
                   </node>
                 </node>
               </node>
@@ -8543,9 +8544,9 @@
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="3587190153237643402" nodeInfo="ng" />
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="4087861105422524633" nodeInfo="ng">
               <node role="textblock" roleId="c4fa.8624890525768479139" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8624890525768587286" nodeInfo="ng">
-                <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="8624890525768587289" nodeInfo="ng">
-                  <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="8624890525768587291" nodeInfo="ng">
-                    <property name="escapedValue" value="assignment of null \/ unknown to the last known array element" />
+                <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8624890525768587289" nodeInfo="ng">
+                  <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8624890525768587291" nodeInfo="ng">
+                    <property name="escapedValue" nameId="87nw.2557074442922438158" value="assignment of null \/ unknown to the last known array element" />
                   </node>
                 </node>
               </node>
@@ -8727,9 +8728,9 @@
           <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="3587190153237704827" nodeInfo="ng">
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="3587190153237850368" nodeInfo="ng">
               <node role="textblock" roleId="c4fa.8624890525768479139" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8624890525768588078" nodeInfo="ng">
-                <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="8624890525768588081" nodeInfo="ng">
-                  <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="8624890525768588083" nodeInfo="ng">
-                    <property name="escapedValue" value="warnings, struct member of global variables are not initialized by default " />
+                <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8624890525768588081" nodeInfo="ng">
+                  <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8624890525768588083" nodeInfo="ng">
+                    <property name="escapedValue" nameId="87nw.2557074442922438158" value="warnings, struct member of global variables are not initialized by default " />
                   </node>
                 </node>
               </node>
@@ -8785,18 +8786,18 @@
             </node>
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="2669782318782566008" nodeInfo="ng">
               <node role="textblock" roleId="c4fa.8624890525768479139" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8624890525768587610" nodeInfo="ng">
-                <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="8624890525768587613" nodeInfo="ng">
-                  <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="8624890525768587615" nodeInfo="ng">
-                    <property name="escapedValue" value="a ref to a struct with an init expression doesnt need these warnings" />
+                <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8624890525768587613" nodeInfo="ng">
+                  <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8624890525768587615" nodeInfo="ng">
+                    <property name="escapedValue" nameId="87nw.2557074442922438158" value="a ref to a struct with an init expression doesnt need these warnings" />
                   </node>
                 </node>
               </node>
             </node>
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="5752503586047833248" nodeInfo="ng">
               <node role="textblock" roleId="c4fa.8624890525768479139" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8624890525768587832" nodeInfo="ng">
-                <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="8624890525768587835" nodeInfo="ng">
-                  <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="8624890525768587837" nodeInfo="ng">
-                    <property name="escapedValue" value="but is " />
+                <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8624890525768587835" nodeInfo="ng">
+                  <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8624890525768587837" nodeInfo="ng">
+                    <property name="escapedValue" nameId="87nw.2557074442922438158" value="but is " />
                   </node>
                 </node>
               </node>
@@ -8817,9 +8818,9 @@
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="3587190153237704994" nodeInfo="ng" />
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="3587190153237850403" nodeInfo="ng">
               <node role="textblock" roleId="c4fa.8624890525768479139" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8624890525768587358" nodeInfo="ng">
-                <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="8624890525768587361" nodeInfo="ng">
-                  <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="8624890525768587363" nodeInfo="ng">
-                    <property name="escapedValue" value="warnings, same for consts but they are initialized with the corresponding value" />
+                <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8624890525768587361" nodeInfo="ng">
+                  <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8624890525768587363" nodeInfo="ng">
+                    <property name="escapedValue" nameId="87nw.2557074442922438158" value="warnings, same for consts but they are initialized with the corresponding value" />
                   </node>
                 </node>
               </node>
@@ -8965,9 +8966,9 @@
           <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="3587190153237850458" nodeInfo="ng">
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="3587190153238574130" nodeInfo="ng">
               <node role="textblock" roleId="c4fa.8624890525768479139" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8624890525768587550" nodeInfo="ng">
-                <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="8624890525768587553" nodeInfo="ng">
-                  <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="8624890525768587555" nodeInfo="ng">
-                    <property name="escapedValue" value="warning, not initialized " />
+                <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8624890525768587553" nodeInfo="ng">
+                  <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8624890525768587555" nodeInfo="ng">
+                    <property name="escapedValue" nameId="87nw.2557074442922438158" value="warning, not initialized " />
                   </node>
                 </node>
               </node>
@@ -8992,9 +8993,9 @@
             </node>
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="3587190153238773223" nodeInfo="ng">
               <node role="textblock" roleId="c4fa.8624890525768479139" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8624890525768587814" nodeInfo="ng">
-                <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="8624890525768587817" nodeInfo="ng">
-                  <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="8624890525768587819" nodeInfo="ng">
-                    <property name="escapedValue" value="warning, unused assignment" />
+                <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8624890525768587817" nodeInfo="ng">
+                  <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8624890525768587819" nodeInfo="ng">
+                    <property name="escapedValue" nameId="87nw.2557074442922438158" value="warning, unused assignment" />
                   </node>
                 </node>
               </node>
@@ -9036,9 +9037,9 @@
             </node>
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="3587190153238574230" nodeInfo="ng">
               <node role="textblock" roleId="c4fa.8624890525768479139" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8624890525768587460" nodeInfo="ng">
-                <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="8624890525768587463" nodeInfo="ng">
-                  <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="8624890525768587465" nodeInfo="ng">
-                    <property name="escapedValue" value="warnings, not initialized" />
+                <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8624890525768587463" nodeInfo="ng">
+                  <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8624890525768587465" nodeInfo="ng">
+                    <property name="escapedValue" nameId="87nw.2557074442922438158" value="warnings, not initialized" />
                   </node>
                 </node>
               </node>
@@ -9081,9 +9082,9 @@
             </node>
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="3587190153238872782" nodeInfo="ng">
               <node role="textblock" roleId="c4fa.8624890525768479139" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8624890525768588024" nodeInfo="ng">
-                <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="8624890525768588027" nodeInfo="ng">
-                  <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="8624890525768588029" nodeInfo="ng">
-                    <property name="escapedValue" value="no warnings, variables are initialized after write" />
+                <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8624890525768588027" nodeInfo="ng">
+                  <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8624890525768588029" nodeInfo="ng">
+                    <property name="escapedValue" nameId="87nw.2557074442922438158" value="no warnings, variables are initialized after write" />
                   </node>
                 </node>
               </node>
@@ -9108,9 +9109,9 @@
             </node>
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="5409094285039150000" nodeInfo="ng">
               <node role="textblock" roleId="c4fa.8624890525768479139" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8624890525768588126" nodeInfo="ng">
-                <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="8624890525768588129" nodeInfo="ng">
-                  <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="8624890525768588131" nodeInfo="ng">
-                    <property name="escapedValue" value="no warnings vars have been intitialized" />
+                <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8624890525768588129" nodeInfo="ng">
+                  <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8624890525768588131" nodeInfo="ng">
+                    <property name="escapedValue" nameId="87nw.2557074442922438158" value="no warnings vars have been intitialized" />
                   </node>
                 </node>
               </node>
@@ -9356,18 +9357,18 @@
             </node>
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="5409094285039150469" nodeInfo="ng">
               <node role="textblock" roleId="c4fa.8624890525768479139" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8624890525768587580" nodeInfo="ng">
-                <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="8624890525768587583" nodeInfo="ng">
-                  <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="8624890525768587585" nodeInfo="ng">
-                    <property name="escapedValue" value="initialized as the function must return something" />
+                <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8624890525768587583" nodeInfo="ng">
+                  <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8624890525768587585" nodeInfo="ng">
+                    <property name="escapedValue" nameId="87nw.2557074442922438158" value="initialized as the function must return something" />
                   </node>
                 </node>
               </node>
             </node>
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="5752503586048337551" nodeInfo="ng">
               <node role="textblock" roleId="c4fa.8624890525768479139" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8624890525768588120" nodeInfo="ng">
-                <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="8624890525768588123" nodeInfo="ng">
-                  <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="8624890525768588125" nodeInfo="ng">
-                    <property name="escapedValue" value="it is assumed that retured vars children are initialized" />
+                <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8624890525768588123" nodeInfo="ng">
+                  <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8624890525768588125" nodeInfo="ng">
+                    <property name="escapedValue" nameId="87nw.2557074442922438158" value="it is assumed that retured vars children are initialized" />
                   </node>
                 </node>
               </node>
@@ -9591,9 +9592,9 @@
           <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="4087861105422526077" nodeInfo="ng">
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="4087861105422824192" nodeInfo="ng">
               <node role="textblock" roleId="c4fa.8624890525768479139" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8624890525768587862" nodeInfo="ng">
-                <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="8624890525768587865" nodeInfo="ng">
-                  <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="8624890525768587867" nodeInfo="ng">
-                    <property name="escapedValue" value="no warnings or errors" />
+                <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8624890525768587865" nodeInfo="ng">
+                  <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8624890525768587867" nodeInfo="ng">
+                    <property name="escapedValue" nameId="87nw.2557074442922438158" value="no warnings or errors" />
                   </node>
                 </node>
               </node>
@@ -11186,9 +11187,9 @@
           <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="358427452148954275" nodeInfo="ng">
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="358427452148954384" nodeInfo="ng">
               <node role="textblock" roleId="c4fa.8624890525768479139" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8624890525768587562" nodeInfo="ng">
-                <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="8624890525768587565" nodeInfo="ng">
-                  <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="8624890525768587567" nodeInfo="ng">
-                    <property name="escapedValue" value="no unused assignment --&gt; Pointer typed argument" />
+                <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8624890525768587565" nodeInfo="ng">
+                  <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8624890525768587567" nodeInfo="ng">
+                    <property name="escapedValue" nameId="87nw.2557074442922438158" value="no unused assignment --&gt; Pointer typed argument" />
                   </node>
                 </node>
               </node>
@@ -11210,9 +11211,9 @@
             </node>
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="358427452148954659" nodeInfo="ng">
               <node role="textblock" roleId="c4fa.8624890525768479139" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8624890525768587544" nodeInfo="ng">
-                <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="8624890525768587547" nodeInfo="ng">
-                  <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="8624890525768587549" nodeInfo="ng">
-                    <property name="escapedValue" value="no unused assignments, var is dereferenced" />
+                <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8624890525768587547" nodeInfo="ng">
+                  <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8624890525768587549" nodeInfo="ng">
+                    <property name="escapedValue" nameId="87nw.2557074442922438158" value="no unused assignments, var is dereferenced" />
                   </node>
                 </node>
               </node>

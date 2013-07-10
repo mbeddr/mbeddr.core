@@ -27,6 +27,7 @@
   <import index="tpd4" modelUID="r:00000000-0000-4000-0000-011c895902b4(jetbrains.mps.lang.typesystem.structure)" version="3" implicit="yes" />
   <import index="e2lb" modelUID="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" version="-1" implicit="yes" />
   <import index="yz9a" modelUID="r:734c02dd-cc16-4184-99eb-5fd9f43aa37e(com.mbeddr.core.unittest.structure)" version="0" implicit="yes" />
+  <import index="87nw" modelUID="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" version="5" implicit="yes" />
   <root type="tp5g.NodesTestCase" typeId="tp5g.1216913645126" id="7345411391537044518" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="testSimpleTypingRules" />
     <node role="testMethods" roleId="tp5g.1217501895093" type="tp5g.SimpleNodeTest" typeId="tp5g.1225978065297" id="3134547887598577647" nodeInfo="ng">
@@ -4547,9 +4548,9 @@
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="7709967580436128759" nodeInfo="ng" />
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="7709967580436128758" nodeInfo="ng">
               <node role="textblock" roleId="c4fa.8624890525768479139" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8624890525768587796" nodeInfo="ng">
-                <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="8624890525768587799" nodeInfo="ng">
-                  <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="8624890525768587801" nodeInfo="ng">
-                    <property name="escapedValue" value="end test ranges" />
+                <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8624890525768587799" nodeInfo="ng">
+                  <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8624890525768587801" nodeInfo="ng">
+                    <property name="escapedValue" nameId="87nw.2557074442922438158" value="end test ranges" />
                   </node>
                 </node>
               </node>
@@ -4832,9 +4833,9 @@
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="5989577250190654910" nodeInfo="ng">
               <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="5989577250190654947" nodeInfo="ng">
                 <node role="textblock" roleId="c4fa.8624890525768479139" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8624890525768587430" nodeInfo="ng">
-                  <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="8624890525768587433" nodeInfo="ng">
-                    <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="8624890525768587435" nodeInfo="ng">
-                      <property name="escapedValue" value="you can't assign int8 to uint8" />
+                  <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8624890525768587433" nodeInfo="ng">
+                    <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8624890525768587435" nodeInfo="ng">
+                      <property name="escapedValue" nameId="87nw.2557074442922438158" value="you can't assign int8 to uint8" />
                     </node>
                   </node>
                 </node>
@@ -7004,9 +7005,9 @@
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="5989577250190663442" nodeInfo="ng">
               <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="5989577250190663444" nodeInfo="ng">
                 <node role="textblock" roleId="c4fa.8624890525768479139" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8624890525768587916" nodeInfo="ng">
-                  <node role="text" roleId="vs0r.8375407818529178007" type=".de.slisson.mps.richtext.structure.Text" id="8624890525768587919" nodeInfo="ng">
-                    <node role="words" type=".de.slisson.mps.richtext.structure.Word" id="8624890525768587921" nodeInfo="ng">
-                      <property name="escapedValue" value="you can't assign int8 to uint8" />
+                  <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8624890525768587919" nodeInfo="ng">
+                    <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8624890525768587921" nodeInfo="ng">
+                      <property name="escapedValue" nameId="87nw.2557074442922438158" value="you can't assign int8 to uint8" />
                     </node>
                   </node>
                 </node>
