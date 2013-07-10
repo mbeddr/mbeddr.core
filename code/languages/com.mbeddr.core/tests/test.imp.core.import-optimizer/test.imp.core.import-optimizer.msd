@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="test.imp.core.import-optimizer" uuid="48658ac2-9461-472a-8c58-76f3bb44f4f6" compileInMPS="true">
+<solution name="test.imp.core.importoptimizer" uuid="48658ac2-9461-472a-8c58-76f3bb44f4f6" compileInMPS="true">
   <models>
     <modelRoot path="${solution_descriptor}/models" />
   </models>
