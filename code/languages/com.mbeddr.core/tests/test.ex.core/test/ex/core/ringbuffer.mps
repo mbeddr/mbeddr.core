@@ -62,7 +62,6 @@
         <property name="const" nameId="mj1l.2941277002445651368" value="false" />
       </node>
       <node role="body" roleId="yz9a.6275792049641586525" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="857825425328041167">
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="3643500611636366409" />
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="857825425328041217">
           <property name="name" nameId="tpck.1169194664001" value="buffer" />
           <node role="type" roleId="mj1l.318113533128716676" type="k146.RingBufferType" typeId="k146.857825425327997988" id="857825425328041218">
@@ -78,9 +77,6 @@
             </node>
           </node>
           <node role="init" roleId="c4fa.4185783222026502647" type="k146.RingBufferInitExpression" typeId="k146.3643500611636210039" id="3643500611636259142">
-            <node role="values" roleId="k146.3643500611636210055" type="yq40.StringLiteral" typeId="yq40.6113173064526131575" id="3643500611636366407">
-              <property name="value" nameId="yq40.6113173064526131578" value="hallo" />
-            </node>
             <node role="values" roleId="k146.3643500611636210055" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3643500611636259143">
               <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
               <property name="value" nameId="mj1l.8860443239512128104" value="0" />
@@ -106,7 +102,7 @@
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="3643500611635898216">
           <node role="expr" roleId="c4fa.7254843406768833939" type="k146.RingBufferDotExpression" typeId="k146.6573338596884805798" id="3643500611635898220">
             <node role="member" roleId="mj1l.1452920870317550651" type="k146.RingBufferPush" typeId="k146.3643500611635898226" id="3643500611636159313">
-              <node role="value" roleId="k146.3643500611635929146" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3643500611636159315">
+              <node role="value" roleId="k146.3643500611635929146" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3643500611636871022">
                 <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
                 <property name="value" nameId="mj1l.8860443239512128104" value="10" />
               </node>
@@ -121,7 +117,7 @@
             <node role="member" roleId="mj1l.1452920870317550651" type="k146.RingBufferValue" typeId="k146.3643500611636159316" id="3643500611636210033">
               <node role="index" roleId="k146.3643500611636159317" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3643500611636210038">
                 <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
-                <property name="value" nameId="mj1l.8860443239512128104" value="10" />
+                <property name="value" nameId="mj1l.8860443239512128104" value="-1" />
               </node>
             </node>
             <node role="expression" roleId="mj1l.7254843406768839760" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="3643500611636210027">
