@@ -35,6 +35,9 @@
       <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="745202023626971636">
         <link role="module" roleId="51wr.7717755763392524108" targetNodeId="745202023626971576" resolveInfo="HelloWorld" />
       </node>
+      <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="3699268924103181050">
+        <link role="module" roleId="51wr.7717755763392524108" targetNodeId="745202023627225451" resolveInfo="HelloWorld2" />
+      </node>
     </node>
   </root>
   <root id="745202023626971576">
@@ -90,6 +93,9 @@
         <property name="kind" nameId="k146.2688792604367903094" value="1" />
         <property name="text" nameId="k146.2688792604367903089" value="Hello, World!" />
       </node>
+    </node>
+    <node role="imports" roleId="x27k.1317894735999304826" type="x27k.ModuleImport" typeId="x27k.1317894735999299713" id="3699268924103181051">
+      <link role="module" roleId="x27k.1317894735999299714" targetNodeId="745202023627225451" resolveInfo="HelloWorld2" />
     </node>
   </root>
   <root id="745202023627225451">
