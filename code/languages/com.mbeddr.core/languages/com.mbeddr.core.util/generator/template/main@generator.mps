@@ -91,6 +91,9 @@
       <property name="name" nameId="tpck.1169194664001" value="foreach" />
       <property name="virtualPackage" nameId="tpck.1193676396447" value="foreach" />
     </node>
+    <node type="tpf8.MappingConfiguration" typeId="tpf8.1095416546421" id="857825425328359292">
+      <property name="name" nameId="tpck.1169194664001" value="ringbuffer" />
+    </node>
   </roots>
   <root id="745648737914842688">
     <node role="mappingLabel" roleId="tpf8.1200911492601" type="tpf8.MappingLabelDeclaration" typeId="tpf8.1200911316486" id="5686538669182310826">
@@ -6767,6 +6770,17 @@
               <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.TemplateFragment" typeId="tpf8.1095672379244" id="6321794478503236761" />
             </node>
           </node>
+        </node>
+      </node>
+    </node>
+  </root>
+  <root id="857825425328359292">
+    <node role="reductionMappingRule" roleId="tpf8.1167328349397" type="tpf8.Reduction_MappingRule" typeId="tpf8.1167327847730" id="857825425328359293">
+      <link role="applicableConcept" roleId="tpf8.1167169349424" targetNodeId="k146.857825425327997988" resolveInfo="RingBufferType" />
+      <node role="ruleConsequence" roleId="tpf8.1169672767469" type="tpf8.InlineTemplate_RuleConsequence" typeId="tpf8.1177093525992" id="857825425328359295">
+        <node role="templateNode" roleId="tpf8.1177093586806" type="mj1l.Int64tType" typeId="mj1l.8463282783691618445" id="857825425328359297">
+          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
         </node>
       </node>
     </node>
