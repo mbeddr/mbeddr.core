@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model modelUID="r:4c205c46-1e45-4d33-a9e5-43ffd3d553f8(test.imp.core.importoptimizer.imports_not_used)">
+<model modelUID="r:374d5a79-f6aa-4dc8-b11b-ccf13ae825b3(test.imp.core.importorganizer.imported_but_not_used)">
   <persistence version="7" />
+  <devkit namespace="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   <devkit namespace="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="k146" modelUID="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" version="5" implicit="yes" />
@@ -17,9 +18,6 @@
     </node>
     <node type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="745202023627225451">
       <property name="name" nameId="tpck.1169194664001" value="HelloWorld2" />
-    </node>
-    <node type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="745202023627234637">
-      <property name="name" nameId="tpck.1169194664001" value="HelloWorld3" />
     </node>
     <node type="mj1l.TypeSizeConfiguration" typeId="mj1l.3335993110369795380" id="745202023626971588" />
   </roots>
@@ -39,9 +37,6 @@
       </node>
       <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="745202023627225478">
         <link role="module" roleId="51wr.7717755763392524108" targetNodeId="745202023627225451" resolveInfo="HelloWorld2" />
-      </node>
-      <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="745202023627234645">
-        <link role="module" roleId="51wr.7717755763392524108" targetNodeId="745202023627234637" resolveInfo="HelloWorld3" />
       </node>
     </node>
   </root>
@@ -99,8 +94,8 @@
         <property name="text" nameId="k146.2688792604367903089" value="Hello, World!" />
       </node>
     </node>
-    <node role="imports" roleId="x27k.1317894735999304826" type="x27k.ModuleImport" typeId="x27k.1317894735999299713" id="745202023627234643">
-      <link role="module" roleId="x27k.1317894735999299714" targetNodeId="745202023627234637" resolveInfo="HelloWorld3" />
+    <node role="imports" roleId="x27k.1317894735999304826" type="x27k.ModuleImport" typeId="x27k.1317894735999299713" id="745202023627227544">
+      <link role="module" roleId="x27k.1317894735999299714" targetNodeId="745202023627225451" resolveInfo="HelloWorld2" />
     </node>
   </root>
   <root id="745202023627225451">
@@ -112,27 +107,7 @@
         <property name="const" nameId="mj1l.2941277002445651368" value="false" />
       </node>
       <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="745202023627225470">
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="745202023627239311">
-          <node role="expr" roleId="c4fa.7254843406768833939" type="x27k.FunctionCall" typeId="x27k.5950410542643524492" id="745202023627239312">
-            <link role="function" roleId="x27k.5950410542643524493" targetNodeId="745202023627234638" resolveInfo="dummy2" />
-          </node>
-        </node>
-      </node>
-    </node>
-    <node role="imports" roleId="x27k.1317894735999304826" type="x27k.ModuleImport" typeId="x27k.1317894735999299713" id="745202023627234642">
-      <link role="module" roleId="x27k.1317894735999299714" targetNodeId="745202023627234637" resolveInfo="HelloWorld3" />
-    </node>
-  </root>
-  <root id="745202023627234637">
-    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="745202023627234638">
-      <property name="name" nameId="tpck.1169194664001" value="dummy2" />
-      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
-      <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="745202023627234639">
-        <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
-        <property name="const" nameId="mj1l.2941277002445651368" value="false" />
-      </node>
-      <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="745202023627234640">
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="745202023627234641" />
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="745202023627225471" />
       </node>
     </node>
   </root>
