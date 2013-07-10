@@ -2078,7 +2078,7 @@
         <node role="items" roleId="c4fa.3830958861296879115" type="c4fa.AbritraryTextItem" typeId="c4fa.3830958861296879113" id="7308356872494556468" nodeInfo="ng">
           <property name="text" nameId="c4fa.3830958861296879114" value="__a + __b" />
         </node>
-        <node role="dummyType" roleId="c4fa.6275956088646286745" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="7308356872494556469" nodeInfo="ng">
+        <node role="dummyType" roleId="c4fa.6275956088646286745" type="mj1l.UnsignedInt8tType" typeId="mj1l.8463282783691618461" id="4789037880436788353" nodeInfo="ng">
           <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
           <property name="const" nameId="mj1l.2941277002445651368" value="false" />
         </node>
@@ -2801,7 +2801,7 @@
         <node role="items" roleId="c4fa.3830958861296879115" type="c4fa.AbritraryTextItem" typeId="c4fa.3830958861296879113" id="7308356872494556692" nodeInfo="ng">
           <property name="text" nameId="c4fa.3830958861296879114" value="dummy" />
         </node>
-        <node role="dummyType" roleId="c4fa.6275956088646286745" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="7308356872494556693" nodeInfo="ng">
+        <node role="dummyType" roleId="c4fa.6275956088646286745" type="mj1l.Int16tType" typeId="mj1l.8463282783691618435" id="4789037880436799568" nodeInfo="ng">
           <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
           <property name="const" nameId="mj1l.2941277002445651368" value="false" />
         </node>
