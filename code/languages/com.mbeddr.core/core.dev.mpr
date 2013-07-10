@@ -21,6 +21,7 @@
       <modulePath path="${project}/languages/com.mbeddr.core.base/base.mpl" folder="core" />
       <modulePath path="${project}/languages/com.mbeddr.core.base/solutions/pluginSolution/pluginSolution.msd" folder="core.solutions" />
       <modulePath path="${project}/languages/com.mbeddr.core.buildconfig/buildconfig.mpl" folder="core-extended" />
+      <modulePath path="${project}/languages/com.mbeddr.core.buildconfig/solution/pluginSolution/com.mbddr.core.buildconfig.pluginSolution.msd" folder="core-extended.solutions" />
       <modulePath path="${project}/languages/com.mbeddr.core.cimport/com.mbeddr.core.cimport.mpl" folder="core" />
       <modulePath path="${project}/languages/com.mbeddr.core.cstubs.test/test.mpl" folder="tests.cstub" />
       <modulePath path="${project}/languages/com.mbeddr.core.cstubs/cstubs.mpl" folder="core" />
@@ -52,6 +53,7 @@
       <modulePath path="${project}/tests/test.ex.core.libs/libs.msd" folder="tests" />
       <modulePath path="${project}/tests/test.ex.core/core.msd" folder="tests" />
       <modulePath path="${project}/tests/test.ex.errorreporting/errorreporting.msd" folder="tests" />
+      <modulePath path="${project}/tests/test.imp.core.import-optimizer/test.imp.core.import-optimizer.msd" folder="tests" />
       <modulePath path="${project}/tests/test.ts.core.dataflow/dataflow.msd" folder="tests.dataflow" />
       <modulePath path="${project}/tests/test.ts.core/core.msd" folder="tests" />
     </projectModules>
@@ -71,27 +73,11 @@
             </Library>
           </value>
         </entry>
-        <entry key="lisson.stuff">
-          <value>
-            <Library>
-              <option name="name" value="lisson.stuff" />
-              <option name="path" value="${mps_home}/bin/${lisson.home}" />
-            </Library>
-          </value>
-        </entry>
         <entry key="mpsutil">
           <value>
             <Library>
               <option name="name" value="mpsutil" />
               <option name="path" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.mpsutil" />
-            </Library>
-          </value>
-        </entry>
-        <entry key="spawner">
-          <value>
-            <Library>
-              <option name="name" value="spawner" />
-              <option name="path" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.spawner" />
             </Library>
           </value>
         </entry>
