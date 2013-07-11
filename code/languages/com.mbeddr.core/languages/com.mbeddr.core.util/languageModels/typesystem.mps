@@ -139,6 +139,7 @@
     <node type="tpd4.InferenceRule" typeId="tpd4.1174643105530" id="358309236632831840">
       <property name="name" nameId="tpck.1169194664001" value="typeof_FlagToggle" />
       <property name="virtualPackage" nameId="tpck.1193676396447" value="flags" />
+      <property name="overrides" nameId="tpd4.1195213689297" value="true" />
     </node>
     <node type="tpd4.NonTypesystemRule" typeId="tpd4.1195214364922" id="857825425328041426">
       <property name="virtualPackage" nameId="tpck.1193676396447" value="ringbuffer" />
