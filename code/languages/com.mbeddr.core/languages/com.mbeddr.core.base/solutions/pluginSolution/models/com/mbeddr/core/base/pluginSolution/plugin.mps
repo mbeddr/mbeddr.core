@@ -2180,18 +2180,6 @@
                   </node>
                 </node>
               </node>
-              <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="7133461010954617914">
-                <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="7133461010954617915">
-                  <node role="operand" roleId="tpee.1197027771414" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="7133461010954617916">
-                    <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="7133461010954617646" resolveInfo="commandWithParameters" />
-                  </node>
-                  <node role="operation" roleId="tpee.1197027833540" type="tp2q.AddElementOperation" typeId="tp2q.1160612413312" id="7133461010954617917">
-                    <node role="argument" roleId="tp2q.1160612519549" type="tpee.ParameterReference" typeId="tpee.1068581242874" id="7133461010954617918">
-                      <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="7133461010954617599" resolveInfo="path" />
-                    </node>
-                  </node>
-                </node>
-              </node>
             </node>
           </node>
           <node role="elsifClauses" roleId="tpee.1206060520071" type="tpee.ElsifClause" typeId="tpee.1206060495898" id="7133461010954617562">
