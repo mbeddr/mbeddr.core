@@ -2095,6 +2095,9 @@
   </root>
   <root id="8793291511880188110" />
   <root id="1452920870317533092">
+    <node role="conceptPropertyDeclaration" roleId="tpce.1137467167200" type="tpce.BooleanConceptPropertyDeclaration" typeId="tpce.1105725240314" id="8046082822450325928">
+      <property name="name" nameId="tpck.1169194664001" value="isArrow" />
+    </node>
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="1452920870317550651">
       <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
       <property name="role" nameId="tpce.1071599776563" value="member" />
@@ -2265,6 +2268,10 @@
   <root id="6573338596884805799">
     <node role="conceptLinkDeclaration" roleId="tpce.1137532086877" type="tpce.ReferenceConceptLinkDeclaration" typeId="tpce.1105741578420" id="6573338596884805802">
       <property name="name" nameId="tpck.1169194664001" value="dotExprConcept" />
+      <link role="targetType" roleId="tpce.1105736621938" targetNodeId="tpce.1071489090640" resolveInfo="ConceptDeclaration" />
+    </node>
+    <node role="conceptLinkDeclaration" roleId="tpce.1137532086877" type="tpce.ReferenceConceptLinkDeclaration" typeId="tpce.1105741578420" id="8046082822450235228">
+      <property name="name" nameId="tpck.1169194664001" value="arrowExprConcept" />
       <link role="targetType" roleId="tpce.1105736621938" targetNodeId="tpce.1071489090640" resolveInfo="ConceptDeclaration" />
     </node>
   </root>

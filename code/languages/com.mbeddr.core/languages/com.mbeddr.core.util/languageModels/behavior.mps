@@ -11,7 +11,7 @@
   <language namespace="9ded098b-ad6a-4657-bfd9-48636cfe8bc3(jetbrains.mps.lang.traceable)" />
   <language namespace="d4615e3b-d671-4ba9-af01-2b78369b0ba7(jetbrains.mps.lang.pattern)" />
   <devkit namespace="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
-  <import index="k146" modelUID="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" version="5" />
+  <import index="k146" modelUID="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" version="6" />
   <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="5" />
   <import index="2gv2" modelUID="r:055bac8c-a50b-42ec-a317-e20a256152b4(com.mbeddr.core.debug.structure)" version="13" />
   <import index="exl8" modelUID="r:9058158e-0926-42f8-8d00-d1d86f1ff722(com.mbeddr.core.debug.behavior)" version="-1" />
@@ -137,7 +137,15 @@
     </node>
     <node type="1i04.ConceptBehavior" typeId="1i04.1225194240794" id="8046082822449911802">
       <property name="virtualPackage" nameId="tpck.1193676396447" value="ringbuffer" />
-      <link role="concept" roleId="1i04.1225194240799" targetNodeId="k146.6573338596884805798" resolveInfo="RingBufferDotExpression" />
+      <link role="concept" roleId="1i04.1225194240799" targetNodeId="k146.6573338596884805798" resolveInfo="RingBufferDotOrArrowExpression" />
+    </node>
+    <node type="1i04.ConceptBehavior" typeId="1i04.1225194240794" id="8046082822450249992">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="ringbuffer" />
+      <link role="concept" roleId="1i04.1225194240799" targetNodeId="k146.8046082822450249988" resolveInfo="RingBufferDotExpression" />
+    </node>
+    <node type="1i04.ConceptBehavior" typeId="1i04.1225194240794" id="8046082822450250002">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="ringbuffer" />
+      <link role="concept" roleId="1i04.1225194240799" targetNodeId="k146.8046082822450250001" resolveInfo="RingBufferArrowExpression" />
     </node>
   </roots>
   <root id="5686538669182294937">
@@ -7598,7 +7606,7 @@
         <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="8046082822449911235">
           <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="8046082822449911307">
             <node role="operand" roleId="tpee.1197027771414" type="tp25.SNodeTypeCastExpression" typeId="tp25.1140137987495" id="8046082822449911285">
-              <link role="concept" roleId="tp25.1140138128738" targetNodeId="k146.6573338596884805798" resolveInfo="RingBufferDotExpression" />
+              <link role="concept" roleId="tp25.1140138128738" targetNodeId="k146.6573338596884805798" resolveInfo="RingBufferDotOrArrowExpression" />
               <node role="leftExpression" roleId="tp25.1140138123956" type="tpee.DotExpression" typeId="tpee.1197027756228" id="8046082822449911257">
                 <node role="operand" roleId="tpee.1197027771414" type="1i04.ThisNodeExpression" typeId="1i04.1225194691553" id="8046082822449911236" />
                 <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_GetParentOperation" typeId="tp25.1139613262185" id="8046082822449911263" />
@@ -7619,27 +7627,16 @@
       </node>
       <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="8046082822449911317">
         <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="8046082822449911318">
-          <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="8046082822449911396">
-            <node role="operand" roleId="tpee.1197027771414" type="tp25.SNodeTypeCastExpression" typeId="tp25.1140137987495" id="8046082822449911374">
-              <link role="concept" roleId="tp25.1140138128738" targetNodeId="k146.857825425327997988" resolveInfo="RingBufferType" />
-              <node role="leftExpression" roleId="tp25.1140138123956" type="tpee.DotExpression" typeId="tpee.1197027756228" id="8046082822449911346">
-                <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="8046082822449911319">
-                  <node role="operand" roleId="tpee.1197027771414" type="tp25.SNodeTypeCastExpression" typeId="tp25.1140137987495" id="8046082822449911320">
-                    <link role="concept" roleId="tp25.1140138128738" targetNodeId="k146.6573338596884805798" resolveInfo="RingBufferDotExpression" />
-                    <node role="leftExpression" roleId="tp25.1140138123956" type="tpee.DotExpression" typeId="tpee.1197027756228" id="8046082822449911321">
-                      <node role="operand" roleId="tpee.1197027771414" type="1i04.ThisNodeExpression" typeId="1i04.1225194691553" id="8046082822449911322" />
-                      <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_GetParentOperation" typeId="tp25.1139613262185" id="8046082822449911323" />
-                    </node>
-                  </node>
-                  <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="8046082822449911324">
-                    <link role="link" roleId="tp25.1138056516764" targetNodeId="mj1l.7254843406768839760" />
-                  </node>
-                </node>
-                <node role="operation" roleId="tpee.1197027833540" type="tpd4.Node_TypeOperation" typeId="tpd4.1176544042499" id="8046082822449911352" />
+          <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="8046082822449911319">
+            <node role="operand" roleId="tpee.1197027771414" type="tp25.SNodeTypeCastExpression" typeId="tp25.1140137987495" id="8046082822449911320">
+              <link role="concept" roleId="tp25.1140138128738" targetNodeId="k146.6573338596884805798" resolveInfo="RingBufferDotOrArrowExpression" />
+              <node role="leftExpression" roleId="tp25.1140138123956" type="tpee.DotExpression" typeId="tpee.1197027756228" id="8046082822449911321">
+                <node role="operand" roleId="tpee.1197027771414" type="1i04.ThisNodeExpression" typeId="1i04.1225194691553" id="8046082822449911322" />
+                <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_GetParentOperation" typeId="tp25.1139613262185" id="8046082822449911323" />
               </node>
             </node>
-            <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="8046082822449911402">
-              <link role="link" roleId="tp25.1138056516764" targetNodeId="k146.3601652329323379598" />
+            <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_ConceptMethodCall" typeId="tp25.1179409122411" id="8046082822450631805">
+              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="8046082822449911805" resolveInfo="ringBuffer" />
             </node>
           </node>
         </node>
@@ -7652,11 +7649,29 @@
   <root id="8046082822449911802">
     <node role="method" roleId="1i04.1225194240805" type="1i04.ConceptMethodDeclaration" typeId="1i04.1225194472830" id="8046082822449911805">
       <property name="name" nameId="tpck.1169194664001" value="ringBuffer" />
+      <property name="isVirtual" nameId="1i04.1225194472832" value="true" />
+      <property name="isAbstract" nameId="1i04.1225194472834" value="true" />
       <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="8046082822449911806" />
       <node role="returnType" roleId="tpee.1068580123133" type="tp25.SNodeType" typeId="tp25.1138055754698" id="8046082822449911809">
         <link role="concept" roleId="tp25.1138405853777" targetNodeId="k146.3601652329323210591" resolveInfo="RingBufferDeclaration" />
       </node>
-      <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="8046082822449911808">
+      <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="8046082822449911808" />
+    </node>
+    <node role="constructor" roleId="1i04.1225194240801" type="1i04.ConceptConstructorDeclaration" typeId="1i04.1225194413805" id="8046082822449911803">
+      <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="8046082822449911804" />
+    </node>
+  </root>
+  <root id="8046082822450249992">
+    <node role="constructor" roleId="1i04.1225194240801" type="1i04.ConceptConstructorDeclaration" typeId="1i04.1225194413805" id="8046082822450249993">
+      <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="8046082822450249994" />
+    </node>
+    <node role="method" roleId="1i04.1225194240805" type="1i04.ConceptMethodDeclaration" typeId="1i04.1225194472830" id="8046082822450249995">
+      <property name="name" nameId="tpck.1169194664001" value="ringBuffer" />
+      <property name="isVirtual" nameId="1i04.1225194472832" value="false" />
+      <property name="isAbstract" nameId="1i04.1225194472834" value="false" />
+      <link role="overriddenMethod" roleId="1i04.1225194472831" targetNodeId="8046082822449911805" resolveInfo="ringBuffer" />
+      <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="8046082822450249996" />
+      <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="8046082822450249997">
         <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="8046082822449911810">
           <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="8046082822449911910">
             <node role="operand" roleId="tpee.1197027771414" type="tp25.SNodeTypeCastExpression" typeId="tp25.1140137987495" id="8046082822449911888">
@@ -7677,9 +7692,51 @@
           </node>
         </node>
       </node>
+      <node role="returnType" roleId="tpee.1068580123133" type="tp25.SNodeType" typeId="tp25.1138055754698" id="8046082822450249998">
+        <link role="concept" roleId="tp25.1138405853777" targetNodeId="k146.3601652329323210591" resolveInfo="RingBufferDeclaration" />
+      </node>
     </node>
-    <node role="constructor" roleId="1i04.1225194240801" type="1i04.ConceptConstructorDeclaration" typeId="1i04.1225194413805" id="8046082822449911803">
-      <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="8046082822449911804" />
+  </root>
+  <root id="8046082822450250002">
+    <node role="method" roleId="1i04.1225194240805" type="1i04.ConceptMethodDeclaration" typeId="1i04.1225194472830" id="8046082822450250005">
+      <property name="name" nameId="tpck.1169194664001" value="ringBuffer" />
+      <link role="overriddenMethod" roleId="1i04.1225194472831" targetNodeId="8046082822449911805" resolveInfo="ringBuffer" />
+      <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="8046082822450250008">
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="8046082822450250011">
+          <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="8046082822450250012">
+            <node role="operand" roleId="tpee.1197027771414" type="tp25.SNodeTypeCastExpression" typeId="tp25.1140137987495" id="8046082822450250013">
+              <link role="concept" roleId="tp25.1140138128738" targetNodeId="k146.857825425327997988" resolveInfo="RingBufferType" />
+              <node role="leftExpression" roleId="tp25.1140138123956" type="tpee.DotExpression" typeId="tpee.1197027756228" id="8046082822450250063">
+                <node role="operand" roleId="tpee.1197027771414" type="tp25.SNodeTypeCastExpression" typeId="tp25.1140137987495" id="8046082822450250041">
+                  <link role="concept" roleId="tp25.1140138128738" targetNodeId="yq40.279446265608459824" resolveInfo="PointerType" />
+                  <node role="leftExpression" roleId="tp25.1140138123956" type="tpee.DotExpression" typeId="tpee.1197027756228" id="8046082822450250014">
+                    <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="8046082822450250015">
+                      <node role="operand" roleId="tpee.1197027771414" type="1i04.ThisNodeExpression" typeId="1i04.1225194691553" id="8046082822450250016" />
+                      <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="8046082822450250017">
+                        <link role="link" roleId="tp25.1138056516764" targetNodeId="mj1l.7254843406768839760" />
+                      </node>
+                    </node>
+                    <node role="operation" roleId="tpee.1197027833540" type="tpd4.Node_TypeOperation" typeId="tpd4.1176544042499" id="8046082822450250018" />
+                  </node>
+                </node>
+                <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="8046082822450250069">
+                  <link role="link" roleId="tp25.1138056516764" targetNodeId="yq40.279446265608459825" />
+                </node>
+              </node>
+            </node>
+            <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="8046082822450250071">
+              <link role="link" roleId="tp25.1138056516764" targetNodeId="k146.3601652329323379598" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node role="returnType" roleId="tpee.1068580123133" type="tp25.SNodeType" typeId="tp25.1138055754698" id="8046082822450250009">
+        <link role="concept" roleId="tp25.1138405853777" targetNodeId="k146.3601652329323210591" resolveInfo="RingBufferDeclaration" />
+      </node>
+      <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="8046082822450250010" />
+    </node>
+    <node role="constructor" roleId="1i04.1225194240801" type="1i04.ConceptConstructorDeclaration" typeId="1i04.1225194413805" id="8046082822450250003">
+      <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="8046082822450250004" />
     </node>
   </root>
 </model>
