@@ -4295,7 +4295,9 @@
                           <node role="commentPart" roleId="tpee.6329021646629175155" type="tpee.TextCommentPart" typeId="tpee.6329021646629104957" id="767256501285409715" nodeInfo="nn">
                             <property name="text" nameId="tpee.6329021646629104958" value="second step, parse defines as expressions" />
                           </node>
-                          <node role="commentPart" roleId="tpee.6329021646629175155" type="tpee.CommentPart" typeId="tpee.6329021646629104955" id="767256501285410095" nodeInfo="nn" />
+                          <node role="commentPart" roleId="tpee.6329021646629175155" type="tpee.TextCommentPart" typeId="tpee.6329021646629104957" id="6339856577239786068" nodeInfo="nn">
+                            <property name="text" nameId="tpee.6329021646629104958" value="    " />
+                          </node>
                         </node>
                         <node role="statement" roleId="tpee.1068581517665" type="tpee.Statement" typeId="tpee.1068580123157" id="7241952112095264877" nodeInfo="nn" />
                         <node role="statement" roleId="tpee.1068581517665" type="tpee.Statement" typeId="tpee.1068580123157" id="3334965554181459418" nodeInfo="nn" />
