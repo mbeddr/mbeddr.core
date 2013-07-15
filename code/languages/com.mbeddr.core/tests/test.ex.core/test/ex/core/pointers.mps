@@ -6,12 +6,12 @@
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="23" implicit="yes" />
   <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="5" implicit="yes" />
-  <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="7" implicit="yes" />
+  <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="15" implicit="yes" />
   <import index="87nw" modelUID="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" version="5" implicit="yes" />
   <import index="yq40" modelUID="r:152b3fc0-83a1-4bab-a8cd-565eb8483785(com.mbeddr.core.pointers.structure)" version="3" implicit="yes" />
-  <import index="k146" modelUID="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" version="6" implicit="yes" />
+  <import index="k146" modelUID="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" version="11" implicit="yes" />
   <import index="51wr" modelUID="r:b31f1c3c-99aa-4f1e-a329-cba27efb1a6b(com.mbeddr.core.buildconfig.structure)" version="1" implicit="yes" />
-  <import index="clbe" modelUID="r:61d840b4-12c1-49ea-b142-b2a1550a9b15(com.mbeddr.core.udt.structure)" version="7" implicit="yes" />
+  <import index="clbe" modelUID="r:61d840b4-12c1-49ea-b142-b2a1550a9b15(com.mbeddr.core.udt.structure)" version="8" implicit="yes" />
   <import index="yz9a" modelUID="r:734c02dd-cc16-4184-99eb-5fd9f43aa37e(com.mbeddr.core.unittest.structure)" version="0" implicit="yes" />
   <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="5" implicit="yes" />
   <roots>
@@ -2493,13 +2493,13 @@
           </node>
           <node role="init" roleId="c4fa.4185783222026502647" type="k146.NamedArgStructInitExpression" typeId="k146.3059865549680361316" id="4378677424457831958">
             <node role="memberAssigns" roleId="k146.3059865549680413567" type="k146.WithMemberAssignment" typeId="k146.3073566081777391256" id="4378677424457831959">
-              <link role="member" roleId="k146.3073566081777391258" targetNodeId="4378677424457831121" resolveInfo="x" />
+              <link role="element" roleId="k146.3073566081777391258" targetNodeId="4378677424457831121" resolveInfo="x" />
               <node role="value" roleId="k146.3073566081777391257" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="4378677424457831969">
                 <property name="value" nameId="mj1l.8860443239512128104" value="0" />
               </node>
             </node>
             <node role="memberAssigns" roleId="k146.3059865549680413567" type="k146.WithMemberAssignment" typeId="k146.3073566081777391256" id="4378677424457831976">
-              <link role="member" roleId="k146.3073566081777391258" targetNodeId="4378677424457831142" resolveInfo="y" />
+              <link role="element" roleId="k146.3073566081777391258" targetNodeId="4378677424457831142" resolveInfo="y" />
               <node role="value" roleId="k146.3073566081777391257" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="4378677424457834391">
                 <property name="value" nameId="mj1l.8860443239512128104" value="1" />
               </node>
@@ -2515,13 +2515,13 @@
           </node>
           <node role="init" roleId="c4fa.4185783222026502647" type="k146.NamedArgStructInitExpression" typeId="k146.3059865549680361316" id="4378677424457832022">
             <node role="memberAssigns" roleId="k146.3059865549680413567" type="k146.WithMemberAssignment" typeId="k146.3073566081777391256" id="4378677424457832023">
-              <link role="member" roleId="k146.3073566081777391258" targetNodeId="4378677424457831121" resolveInfo="x" />
+              <link role="element" roleId="k146.3073566081777391258" targetNodeId="4378677424457831121" resolveInfo="x" />
               <node role="value" roleId="k146.3073566081777391257" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="4378677424457832039">
                 <property name="value" nameId="mj1l.8860443239512128104" value="2" />
               </node>
             </node>
             <node role="memberAssigns" roleId="k146.3059865549680413567" type="k146.WithMemberAssignment" typeId="k146.3073566081777391256" id="4378677424457832046">
-              <link role="member" roleId="k146.3073566081777391258" targetNodeId="4378677424457831142" resolveInfo="y" />
+              <link role="element" roleId="k146.3073566081777391258" targetNodeId="4378677424457831142" resolveInfo="y" />
               <node role="value" roleId="k146.3073566081777391257" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="4378677424457832055">
                 <property name="value" nameId="mj1l.8860443239512128104" value="3" />
               </node>
@@ -2538,7 +2538,7 @@
           </node>
           <node role="init" roleId="c4fa.4185783222026502647" type="k146.NamedArgStructInitExpression" typeId="k146.3059865549680361316" id="4378677424457832151">
             <node role="memberAssigns" roleId="k146.3059865549680413567" type="k146.WithMemberAssignment" typeId="k146.3073566081777391256" id="4378677424457832160">
-              <link role="member" roleId="k146.3073566081777391258" targetNodeId="4378677424457831452" resolveInfo="pointPtr" />
+              <link role="element" roleId="k146.3073566081777391258" targetNodeId="4378677424457831452" resolveInfo="pointPtr" />
               <node role="value" roleId="k146.3073566081777391257" type="yq40.ReferenceExpr" typeId="yq40.1595838349830846141" id="4378677424457832199">
                 <node role="expression" roleId="mj1l.7254843406768839760" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="4378677424457832213">
                   <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="4378677424457831994" resolveInfo="p2" />
@@ -4105,13 +4105,13 @@
           </node>
           <node role="init" roleId="c4fa.4185783222026502647" type="k146.NamedArgStructInitExpression" typeId="k146.3059865549680361316" id="3534497005925093258">
             <node role="memberAssigns" roleId="k146.3059865549680413567" type="k146.WithMemberAssignment" typeId="k146.3073566081777391256" id="3534497005925093259">
-              <link role="member" roleId="k146.3073566081777391258" targetNodeId="4115720392370598401" resolveInfo="x" />
+              <link role="element" roleId="k146.3073566081777391258" targetNodeId="4115720392370598401" resolveInfo="x" />
               <node role="value" roleId="k146.3073566081777391257" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3534497005925093260">
                 <property name="value" nameId="mj1l.8860443239512128104" value="10" />
               </node>
             </node>
             <node role="memberAssigns" roleId="k146.3059865549680413567" type="k146.WithMemberAssignment" typeId="k146.3073566081777391256" id="3534497005925093261">
-              <link role="member" roleId="k146.3073566081777391258" targetNodeId="4115720392370598403" resolveInfo="y" />
+              <link role="element" roleId="k146.3073566081777391258" targetNodeId="4115720392370598403" resolveInfo="y" />
               <node role="value" roleId="k146.3073566081777391257" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3534497005925093262">
                 <property name="value" nameId="mj1l.8860443239512128104" value="20" />
               </node>
@@ -4156,13 +4156,13 @@
           <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.AssignmentExpr" typeId="mj1l.22102029902365709" id="3534497005925093264">
             <node role="right" roleId="mj1l.8860443239512128065" type="k146.NamedArgStructInitExpression" typeId="k146.3059865549680361316" id="3534497005925093265">
               <node role="memberAssigns" roleId="k146.3059865549680413567" type="k146.WithMemberAssignment" typeId="k146.3073566081777391256" id="3534497005925093266">
-                <link role="member" roleId="k146.3073566081777391258" targetNodeId="4115720392370598401" resolveInfo="x" />
+                <link role="element" roleId="k146.3073566081777391258" targetNodeId="4115720392370598401" resolveInfo="x" />
                 <node role="value" roleId="k146.3073566081777391257" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3534497005925093267">
                   <property name="value" nameId="mj1l.8860443239512128104" value="30" />
                 </node>
               </node>
               <node role="memberAssigns" roleId="k146.3059865549680413567" type="k146.WithMemberAssignment" typeId="k146.3073566081777391256" id="3534497005925093268">
-                <link role="member" roleId="k146.3073566081777391258" targetNodeId="4115720392370598403" resolveInfo="y" />
+                <link role="element" roleId="k146.3073566081777391258" targetNodeId="4115720392370598403" resolveInfo="y" />
                 <node role="value" roleId="k146.3073566081777391257" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3534497005925093269">
                   <property name="value" nameId="mj1l.8860443239512128104" value="40" />
                 </node>
@@ -4227,13 +4227,13 @@
             <node role="right" roleId="mj1l.8860443239512128065" type="c4fa.ArrayInitExpression" typeId="c4fa.5095889050031622570" id="3534497005925167398">
               <node role="exprs" roleId="c4fa.5095889050031622571" type="k146.NamedArgStructInitExpression" typeId="k146.3059865549680361316" id="3534497005925167404">
                 <node role="memberAssigns" roleId="k146.3059865549680413567" type="k146.WithMemberAssignment" typeId="k146.3073566081777391256" id="3534497005925167407">
-                  <link role="member" roleId="k146.3073566081777391258" targetNodeId="4115720392370598401" resolveInfo="x" />
+                  <link role="element" roleId="k146.3073566081777391258" targetNodeId="4115720392370598401" resolveInfo="x" />
                   <node role="value" roleId="k146.3073566081777391257" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3534497005925167429">
                     <property name="value" nameId="mj1l.8860443239512128104" value="10" />
                   </node>
                 </node>
                 <node role="memberAssigns" roleId="k146.3059865549680413567" type="k146.WithMemberAssignment" typeId="k146.3073566081777391256" id="3534497005925167450">
-                  <link role="member" roleId="k146.3073566081777391258" targetNodeId="4115720392370598403" resolveInfo="y" />
+                  <link role="element" roleId="k146.3073566081777391258" targetNodeId="4115720392370598403" resolveInfo="y" />
                   <node role="value" roleId="k146.3073566081777391257" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3534497005925167477">
                     <property name="value" nameId="mj1l.8860443239512128104" value="20" />
                   </node>
