@@ -14,12 +14,12 @@
   </StructureModification>
   <StructureModification>
     <dependencies>
-      <model index="ui8w" modelUID="r:83f53e7f-110f-49f5-be48-95681cbb1402(com.mbeddr.core.util.constraints)" version="-1" />
       <model index="h7k5" modelUID="r:2003a7dc-1d33-4109-abf0-90ad1f9028fd(com.mbeddr.core.util.editor)" version="-1" />
+      <model index="ui8w" modelUID="r:83f53e7f-110f-49f5-be48-95681cbb1402(com.mbeddr.core.util.constraints)" version="-1" />
       <model index="k146" modelUID="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" version="1" />
       <model index="nxpr" modelUID="r:572f6bc0-c998-48d5-9fdb-9ca4597c66de(com.mbeddr.core.unittest.typesystem)" version="-1" />
-      <model index="38ke" modelUID="r:f379684c-f503-4278-b6e4-762eb5743504(com.mbeddr.core.unittest.constraints)" version="-1" />
       <model index="c9jm" modelUID="r:167d778b-bddc-4b3f-a776-89718ce72b97(com.mbeddr.core.util.typesystem)" version="-1" />
+      <model index="38ke" modelUID="r:f379684c-f503-4278-b6e4-762eb5743504(com.mbeddr.core.unittest.constraints)" version="-1" />
       <model index="z5qa" modelUID="r:f1c0ef54-05cb-4745-9566-9bb6676c1165(com.mbeddr.core.unittest.editor)" version="-1" />
       <model index="yz9a" modelUID="r:734c02dd-cc16-4184-99eb-5fd9f43aa37e(com.mbeddr.core.unittest.structure)" version="-1" />
     </dependencies>
@@ -120,14 +120,14 @@
   </StructureModification>
   <StructureModification>
     <dependencies>
-      <model index="ui8w" modelUID="r:83f53e7f-110f-49f5-be48-95681cbb1402(com.mbeddr.core.util.constraints)" version="0" />
       <model index="h7k5" modelUID="r:2003a7dc-1d33-4109-abf0-90ad1f9028fd(com.mbeddr.core.util.editor)" version="0" />
-      <model index="k146" modelUID="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" version="2" />
-      <model index="wayc" modelUID="r:8ccd67a3-3ed6-472a-aeac-67e00cb6b91d(com.mbeddr.core.expressions.constraints)" version="1" />
+      <model index="ui8w" modelUID="r:83f53e7f-110f-49f5-be48-95681cbb1402(com.mbeddr.core.util.constraints)" version="0" />
       <model index="n7pc" modelUID="r:1f4b6c73-0d50-4599-bc8a-9f6948adf243(com.mbeddr.core.expressions.typesystem)" version="0" />
+      <model index="wayc" modelUID="r:8ccd67a3-3ed6-472a-aeac-67e00cb6b91d(com.mbeddr.core.expressions.constraints)" version="1" />
+      <model index="k146" modelUID="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" version="2" />
       <model index="vrqd" modelUID="r:53e59391-150a-45ff-930e-2b4fdafb0904(com.mbeddr.core.expressions.editor)" version="1" />
-      <model index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="19" />
       <model index="c9jm" modelUID="r:167d778b-bddc-4b3f-a776-89718ce72b97(com.mbeddr.core.util.typesystem)" version="0" />
+      <model index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="19" />
     </dependencies>
     <move id="mj1l.5065104421776346453" to="k146.5065104421776378467" />
     <move id="mj1l.5065104421776346452" to="k146.5065104421776378466" />
@@ -174,11 +174,11 @@
       <model index="h7k5" modelUID="r:2003a7dc-1d33-4109-abf0-90ad1f9028fd(com.mbeddr.core.util.editor)" version="1" />
       <model index="k146" modelUID="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" version="3" />
       <model index="r4c1" modelUID="r:80150d67-e770-44dd-9f99-66a4523b55af(ForeachLanguage.structure)" version="-1" />
-      <model index="vl23" modelUID="r:0de4b2f6-f56e-4b3e-8d04-7585133a9116(ForeachLanguage.editor)" version="-1" />
       <model index="yi43" modelUID="r:1e8a195e-9746-45e6-a347-a6bdffae3936(com.mbeddr.core.util.behavior)" version="-1" />
+      <model index="vl23" modelUID="r:0de4b2f6-f56e-4b3e-8d04-7585133a9116(ForeachLanguage.editor)" version="-1" />
       <model index="c9jm" modelUID="r:167d778b-bddc-4b3f-a776-89718ce72b97(com.mbeddr.core.util.typesystem)" version="1" />
-      <model index="5giz" modelUID="r:142fffda-568b-448d-92bd-060ead5818b2(ForeachLanguage.typesystem)" version="-1" />
       <model index="uwzr" modelUID="r:27fe086a-475c-4627-9b67-c6163b2fa3dc(ForeachLanguage.behavior)" version="-1" />
+      <model index="5giz" modelUID="r:142fffda-568b-448d-92bd-060ead5818b2(ForeachLanguage.typesystem)" version="-1" />
     </dependencies>
     <move id="r4c1.1734689175229240472" to="k146.6321794478502972494" />
     <move id="r4c1.1734689175229172174" to="k146.6321794478502972492" />
@@ -404,6 +404,12 @@
     <move id="5giz.1734689175229163391" to="c9jm.6321794478503144493" />
     <move id="5giz.1734689175229163378" to="c9jm.6321794478503144498" />
     <move id="5giz.1734689175229163342" to="c9jm.6321794478503144483" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="k146" modelUID="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" version="5" />
+    </dependencies>
+    <rename id="k146.6573338596884805798" type="CONCEPT" from="RingBufferDotExpression" to="RingBufferDotOrArrowExpression" />
   </StructureModification>
 </history>
 
