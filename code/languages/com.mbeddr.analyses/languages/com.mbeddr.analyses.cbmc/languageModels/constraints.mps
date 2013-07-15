@@ -43,6 +43,10 @@
       <property name="virtualPackage" nameId="tpck.1193676396447" value="harness" />
       <link role="concept" roleId="tp1t.1213093996982" targetNodeId="q5q6.8985851583396614966" resolveInfo="GuardedNonDeterministicChoice" />
     </node>
+    <node type="tp1t.ConceptConstraints" typeId="tp1t.1213093968558" id="2263984427998442313">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="configuration.cbmc" />
+      <link role="concept" roleId="tp1t.1213093996982" targetNodeId="q5q6.6472990431939799907" resolveInfo="CProverBasedAnalysis" />
+    </node>
   </roots>
   <root id="535044775891210428">
     <node role="referent" roleId="tp1t.1213100494875" type="tp1t.NodeReferentConstraint" typeId="tp1t.1148687176410" id="2017717622748290834">
@@ -347,5 +351,6 @@
       </node>
     </node>
   </root>
+  <root id="2263984427998442313" />
 </model>
 
