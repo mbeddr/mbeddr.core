@@ -55,6 +55,10 @@
             <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
             <property name="value" nameId="mj1l.8860443239512128104" value="3" />
           </node>
+          <node role="lowerBound" roleId="v7ag.2798845822163873817" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2580867847990983632">
+            <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
+            <property name="value" nameId="mj1l.8860443239512128104" value="0" />
+          </node>
         </node>
       </node>
       <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="3457272138385410199">

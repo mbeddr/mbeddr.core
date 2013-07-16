@@ -53,7 +53,11 @@
         <node role="cardinality" roleId="v7ag.3457272138385423181" type="v7ag.ReqPortCardinality" typeId="v7ag.3457272138385423166" id="3457272138385490488">
           <node role="upperBound" roleId="v7ag.2742494070477836211" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2742494070477941416">
             <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
-            <property name="value" nameId="mj1l.8860443239512128104" value="3" />
+            <property name="value" nameId="mj1l.8860443239512128104" value="2" />
+          </node>
+          <node role="lowerBound" roleId="v7ag.2798845822163873817" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2580867847991184752">
+            <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
+            <property name="value" nameId="mj1l.8860443239512128104" value="0" />
           </node>
         </node>
       </node>
