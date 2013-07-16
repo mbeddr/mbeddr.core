@@ -350,7 +350,7 @@
           <property name="name" nameId="tpck.1169194664001" value="CSub1" />
           <link role="baseComponent" roleId="v7ag.4491876417845678669" targetNodeId="4429602430543920798" resolveInfo="CAbstract" />
           <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="7239575231152319177">
-            <property name="name" nameId="tpck.1169194664001" value="getNumberImpl" />
+            <property name="name" nameId="tpck.1169194664001" value="getNumber" />
             <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="7239575231152319178">
               <node role="statements" roleId="c4fa.4185783222026475862" type="x27k.ReturnStatement" typeId="x27k.8967919205527146149" id="7239575231152319478">
                 <node role="expression" roleId="x27k.8967919205527146150" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="7239575231152319479">
