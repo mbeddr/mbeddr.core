@@ -234,5 +234,30 @@
     <move id="2rho.1730914748330886398" to="nb4f.1730914748330890347" />
     <move id="2rho.1730914748330874200" to="nb4f.1730914748330890338" />
   </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="hwgx" modelUID="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)" version="3" />
+      <model index="2rho" modelUID="r:4e770e63-2ef5-4a0d-b2e8-c5c1a1565703(com.mbeddr.core.udt.behavior)" version="0" />
+      <model index="clbe" modelUID="r:61d840b4-12c1-49ea-b142-b2a1550a9b15(com.mbeddr.core.udt.structure)" version="7" />
+      <model index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="14" />
+    </dependencies>
+    <move id="vs0r.843825774841772524" to="clbe.843825774841772529" />
+    <move id="vs0r.843825774841762060" to="clbe.843825774841772528" />
+    <move id="vs0r.352800964937836506" to="clbe.843825774841772527" />
+    <move id="vs0r.352800964937267031" to="clbe.843825774841772526" />
+    <move id="vs0r.352800964937267030" to="clbe.843825774841772525" />
+    <move id="hwgx.352800964938011073" to="2rho.843825774841772534" />
+    <move id="hwgx.352800964938011071" to="2rho.843825774841772540" />
+    <move id="hwgx.352800964938011070" to="2rho.843825774841772533" />
+    <move id="hwgx.352800964938011072" to="2rho.843825774841772541" />
+    <move id="hwgx.352800964937836508" to="2rho.843825774841772530" />
+    <move id="hwgx.352800964938011079" to="2rho.843825774841772539" />
+    <move id="hwgx.352800964937836510" to="2rho.843825774841772532" />
+    <move id="hwgx.352800964938011074" to="2rho.843825774841772535" />
+    <move id="hwgx.352800964938011077" to="2rho.843825774841772536" />
+    <move id="hwgx.352800964938011078" to="2rho.843825774841772538" />
+    <move id="hwgx.352800964938011076" to="2rho.843825774841772537" />
+    <move id="hwgx.352800964937836509" to="2rho.843825774841772531" />
+  </StructureModification>
 </history>
 
