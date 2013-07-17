@@ -14,8 +14,8 @@
   <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="5" implicit="yes" />
   <import index="yq40" modelUID="r:152b3fc0-83a1-4bab-a8cd-565eb8483785(com.mbeddr.core.pointers.structure)" version="3" implicit="yes" />
   <import index="yz9a" modelUID="r:734c02dd-cc16-4184-99eb-5fd9f43aa37e(com.mbeddr.core.unittest.structure)" version="0" implicit="yes" />
-  <import index="v7ag" modelUID="r:9596407c-f27a-49d3-abde-3a66293c5b61(com.mbeddr.ext.components.structure)" version="19" implicit="yes" />
-  <import index="clbe" modelUID="r:61d840b4-12c1-49ea-b142-b2a1550a9b15(com.mbeddr.core.udt.structure)" version="8" implicit="yes" />
+  <import index="v7ag" modelUID="r:9596407c-f27a-49d3-abde-3a66293c5b61(com.mbeddr.ext.components.structure)" version="22" implicit="yes" />
+  <import index="clbe" modelUID="r:61d840b4-12c1-49ea-b142-b2a1550a9b15(com.mbeddr.core.udt.structure)" version="9" implicit="yes" />
   <import index="p7vm" modelUID="r:28fa862e-f94d-4c39-bdf7-a4bdbc773888(com.mbeddr.ext.components.gen_nomw.structure)" version="0" implicit="yes" />
   <import index="51wr" modelUID="r:b31f1c3c-99aa-4f1e-a329-cba27efb1a6b(com.mbeddr.core.buildconfig.structure)" version="1" implicit="yes" />
   <roots>
@@ -1449,6 +1449,29 @@
                         <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
                         <property name="value" nameId="mj1l.8860443239512128104" value="3" />
                       </node>
+                    </node>
+                  </node>
+                </node>
+                <node role="memberAssigns" roleId="k146.3073566081777411306" type="k146.WithMemberAssignment" typeId="k146.3073566081777391256" id="9178537171064585134">
+                  <link role="element" roleId="k146.3073566081777391258" targetNodeId="352800964937262208" resolveInfo="nonAtomicPosition" />
+                  <node role="value" roleId="k146.3073566081777391257" type="clbe.ValuedElementRefInWithStmnt" typeId="clbe.2003957539749894105" id="9178537171064585138">
+                    <link role="element" roleId="clbe.2003957539749894106" targetNodeId="352800964937262208" resolveInfo="nonAtomicPosition" />
+                    <node role="expression" roleId="mj1l.7254843406768839760" type="mj1l.Expression" typeId="mj1l.8860443239512128050" id="9178537171064585139" />
+                  </node>
+                </node>
+                <node role="memberAssigns" roleId="k146.3073566081777411306" type="k146.WithMemberAssignment" typeId="k146.3073566081777391256" id="9178537171064585140">
+                  <link role="element" roleId="k146.3073566081777391258" targetNodeId="352800964937262208" resolveInfo="nonAtomicPosition" />
+                  <node role="value" roleId="k146.3073566081777391257" type="mj1l.PlusExpression" typeId="mj1l.5763383285156373013" id="9178537171064585149">
+                    <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="9178537171064585153">
+                      <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
+                      <property name="value" nameId="mj1l.8860443239512128104" value="2" />
+                    </node>
+                    <node role="left" roleId="mj1l.8860443239512128064" type="clbe.ValuedElementRefInWithStmnt" typeId="clbe.2003957539749894105" id="9178537171064585144">
+                      <link role="element" roleId="clbe.2003957539749894106" targetNodeId="352800964937262208" resolveInfo="nonAtomicPosition" />
+                      <node role="expression" roleId="mj1l.7254843406768839760" type="mj1l.Expression" typeId="mj1l.8860443239512128050" id="9178537171064585145" />
+                    </node>
+                    <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodePropertiesContainer" typeId="tp5g.1215507532627" id="9178537171064585154">
+                      <node role="properties" roleId="tp5g.1215507909023" type="tp5g.NodeErrorPropety" typeId="tp5g.1215507671101" id="9178537171064585155" />
                     </node>
                   </node>
                 </node>
