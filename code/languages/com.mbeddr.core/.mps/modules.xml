@@ -41,7 +41,6 @@
       <modulePath path="$PROJECT_DIR$/tests/test.ts.core.dataflow/dataflow.msd" folder="tests.dataflow" />
       <modulePath path="$PROJECT_DIR$/tests/test.ts.core/core.msd" folder="tests" />
     </projectModules>
-    <genConfs />
   </component>
 </project>
 
