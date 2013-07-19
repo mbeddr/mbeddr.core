@@ -995,14 +995,14 @@
             <node role="initializer" roleId="tpee.1068431790190" type="tpee.MinusExpression" typeId="tpee.1068581242869" id="4989385012827275752">
               <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.MulExpression" typeId="tpee.1092119917967" id="4989385012827275803">
                 <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="4989385012827275806">
-                  <property name="value" nameId="tpee.1068580320021" value="15" />
+                  <property name="value" nameId="tpee.1068580320021" value="12" />
                 </node>
                 <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="6473263424708411936">
                   <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="6473263424708411931" resolveInfo="n" />
                 </node>
               </node>
               <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="4989385012827275731">
-                <property name="value" nameId="tpee.1068580320021" value="150" />
+                <property name="value" nameId="tpee.1068580320021" value="120" />
               </node>
             </node>
           </node>
