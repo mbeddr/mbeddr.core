@@ -15,6 +15,7 @@ MPS/*
 *.*.log
 
 .idea
+workspace.xml
 
 junitvmwatcher*.properties
 build.properties
