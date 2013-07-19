@@ -14,6 +14,10 @@
       <property name="virtualPackage" nameId="tpck.1193676396447" value="wp" />
       <link role="concept" roleId="tp1t.1213093996982" targetNodeId="6pek.573995335905661940" resolveInfo="WPActualWork" />
     </node>
+    <node type="tp1t.ConceptConstraints" typeId="tp1t.1213093968558" id="4989385012827244027">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="wp" />
+      <link role="concept" roleId="tp1t.1213093996982" targetNodeId="6pek.8587612447638802592" resolveInfo="WorkPackage" />
+    </node>
   </roots>
   <root id="573995335905661949">
     <node role="property" roleId="tp1t.1213098023997" type="tp1t.NodePropertyConstraint" typeId="tp1t.1147467115080" id="573995335905661950">
@@ -112,5 +116,6 @@
       </node>
     </node>
   </root>
+  <root id="4989385012827244027" />
 </model>
 
