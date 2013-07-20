@@ -267,6 +267,7 @@
     </node>
     <node role="binaries" roleId="51wr.5046689135694070731" type="51wr.Executable" typeId="51wr.5046689135693761554" id="4429602430543651521">
       <property name="name" nameId="tpck.1169194664001" value="Bug516" />
+      <property name="isTest" nameId="51wr.3431613015799084476" value="true" />
       <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="5600840408739003006">
         <link role="module" roleId="51wr.7717755763392524108" targetNodeId="4504633138937598624" resolveInfo="InheritanceOfPorts" />
       </node>

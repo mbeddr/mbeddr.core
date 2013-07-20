@@ -791,7 +791,6 @@
           </node>
           <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.RequiredPort" typeId="v7ag.4491876417845628841" id="3457272138385408504">
             <property name="name" nameId="tpck.1169194664001" value="i1" />
-            <property name="multiple" value="true" />
             <link role="intf" roleId="v7ag.4491876417845484932" targetNodeId="3457272138385338540" resolveInfo="ObserverIf" />
             <node role="cardinality" roleId="v7ag.3457272138385423181" type="v7ag.ReqPortCardinality" typeId="v7ag.3457272138385423166" id="3457272138385490478">
               <node role="lowerBound" roleId="v7ag.2798845822163873817" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2580867847991184754">
@@ -806,7 +805,6 @@
           </node>
           <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.RequiredPort" typeId="v7ag.4491876417845628841" id="3457272138385490484">
             <property name="name" nameId="tpck.1169194664001" value="ix" />
-            <property name="multiple" value="true" />
             <property name="optional" nameId="v7ag.349917904115138509" value="true" />
             <link role="intf" roleId="v7ag.4491876417845484932" targetNodeId="3457272138385338540" resolveInfo="ObserverIf" />
             <node role="cardinality" roleId="v7ag.3457272138385423181" type="v7ag.ReqPortCardinality" typeId="v7ag.3457272138385423166" id="3457272138385490485">
@@ -825,7 +823,6 @@
           </node>
           <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.RequiredPort" typeId="v7ag.4491876417845628841" id="3457272138385408510">
             <property name="name" nameId="tpck.1169194664001" value="i2" />
-            <property name="multiple" value="true" />
             <property name="optional" nameId="v7ag.349917904115138509" value="true" />
             <link role="intf" roleId="v7ag.4491876417845484932" targetNodeId="3457272138385338543" resolveInfo="Interface2" />
             <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodePropertiesContainer" typeId="tp5g.1215507532627" id="3457272138385408511">
@@ -843,8 +840,7 @@
             </node>
           </node>
           <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.RequiredPort" typeId="v7ag.4491876417845628841" id="2580867847991184756">
-            <property name="name" nameId="tpck.1169194664001" value="i2" />
-            <property name="multiple" value="true" />
+            <property name="name" nameId="tpck.1169194664001" value="i3" />
             <property name="optional" nameId="v7ag.349917904115138509" value="true" />
             <link role="intf" roleId="v7ag.4491876417845484932" targetNodeId="3457272138385338543" resolveInfo="Interface2" />
             <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodePropertiesContainer" typeId="tp5g.1215507532627" id="2580867847991184757">
@@ -865,8 +861,7 @@
             </node>
           </node>
           <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.RequiredPort" typeId="v7ag.4491876417845628841" id="2580867847991184762">
-            <property name="name" nameId="tpck.1169194664001" value="i2" />
-            <property name="multiple" value="true" />
+            <property name="name" nameId="tpck.1169194664001" value="i4" />
             <property name="optional" nameId="v7ag.349917904115138509" value="true" />
             <link role="intf" roleId="v7ag.4491876417845484932" targetNodeId="3457272138385338543" resolveInfo="Interface2" />
             <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodePropertiesContainer" typeId="tp5g.1215507532627" id="2580867847991184763">
@@ -1454,9 +1449,8 @@
                 </node>
                 <node role="memberAssigns" roleId="k146.3073566081777411306" type="k146.WithMemberAssignment" typeId="k146.3073566081777391256" id="9178537171064585134">
                   <link role="element" roleId="k146.3073566081777391258" targetNodeId="352800964937262208" resolveInfo="nonAtomicPosition" />
-                  <node role="value" roleId="k146.3073566081777391257" type="clbe.ValuedElementRefInWithStmnt" typeId="clbe.2003957539749894105" id="9178537171064585138">
+                  <node role="value" roleId="k146.3073566081777391257" type="clbe.ValuedElementRefInWithStmnt" typeId="clbe.2003957539749894105" id="6316915880083711170">
                     <link role="element" roleId="clbe.2003957539749894106" targetNodeId="352800964937262208" resolveInfo="nonAtomicPosition" />
-                    <node role="expression" roleId="mj1l.7254843406768839760" type="mj1l.Expression" typeId="mj1l.8860443239512128050" id="9178537171064585139" />
                   </node>
                 </node>
                 <node role="memberAssigns" roleId="k146.3073566081777411306" type="k146.WithMemberAssignment" typeId="k146.3073566081777391256" id="9178537171064585140">
@@ -1468,7 +1462,6 @@
                     </node>
                     <node role="left" roleId="mj1l.8860443239512128064" type="clbe.ValuedElementRefInWithStmnt" typeId="clbe.2003957539749894105" id="9178537171064585144">
                       <link role="element" roleId="clbe.2003957539749894106" targetNodeId="352800964937262208" resolveInfo="nonAtomicPosition" />
-                      <node role="expression" roleId="mj1l.7254843406768839760" type="mj1l.Expression" typeId="mj1l.8860443239512128050" id="9178537171064585145" />
                     </node>
                     <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodePropertiesContainer" typeId="tp5g.1215507532627" id="9178537171064585154">
                       <node role="properties" roleId="tp5g.1215507909023" type="tp5g.NodeErrorPropety" typeId="tp5g.1215507671101" id="9178537171064585155" />
