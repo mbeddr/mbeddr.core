@@ -1,55 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<language namespace="com.mbeddr.spreadsheat" uuid="1d891f7b-dc93-42f9-a4bc-b016656b14e2" doNotGenerateAdapters="true">
+<language namespace="com.mbeddr.spreadsheat" uuid="1d891f7b-dc93-42f9-a4bc-b016656b14e2">
   <models>
-    <modelRoot path="${language_descriptor}/languageModels" />
-    <modelRoot path="${language_descriptor}/lib/commons-codec-1.5.jar">
-      <manager moduleId="f3061a53-9226-4cc5-a443-f952ceaf5816" className="jetbrains.mps.baseLanguage.stubs.JavaStubs" />
+    <modelRoot contentPath="${module}" type="default">
+      <sourceRoot location="languageModels" />
     </modelRoot>
-    <modelRoot path="${language_descriptor}/lib/commons-logging-1.1.jar">
-      <manager moduleId="f3061a53-9226-4cc5-a443-f952ceaf5816" className="jetbrains.mps.baseLanguage.stubs.JavaStubs" />
-    </modelRoot>
-    <modelRoot path="${language_descriptor}/lib/dom4j-1.6.1.jar">
-      <manager moduleId="f3061a53-9226-4cc5-a443-f952ceaf5816" className="jetbrains.mps.baseLanguage.stubs.JavaStubs" />
-    </modelRoot>
-    <modelRoot path="${language_descriptor}/lib/junit-3.8.1.jar">
-      <manager moduleId="f3061a53-9226-4cc5-a443-f952ceaf5816" className="jetbrains.mps.baseLanguage.stubs.JavaStubs" />
-    </modelRoot>
-    <modelRoot path="${language_descriptor}/lib/log4j-1.2.13.jar">
-      <manager moduleId="f3061a53-9226-4cc5-a443-f952ceaf5816" className="jetbrains.mps.baseLanguage.stubs.JavaStubs" />
-    </modelRoot>
-    <modelRoot path="${language_descriptor}/lib/poi-3.9-20121203.jar">
-      <manager moduleId="f3061a53-9226-4cc5-a443-f952ceaf5816" className="jetbrains.mps.baseLanguage.stubs.JavaStubs" />
-    </modelRoot>
-    <modelRoot path="${language_descriptor}/lib/poi-excelant-3.9-20121203.jar">
-      <manager moduleId="f3061a53-9226-4cc5-a443-f952ceaf5816" className="jetbrains.mps.baseLanguage.stubs.JavaStubs" />
-    </modelRoot>
-    <modelRoot path="${language_descriptor}/lib/poi-ooxml-3.9-20121203.jar">
-      <manager moduleId="f3061a53-9226-4cc5-a443-f952ceaf5816" className="jetbrains.mps.baseLanguage.stubs.JavaStubs" />
-    </modelRoot>
-    <modelRoot path="${language_descriptor}/lib/poi-ooxml-schemas-3.9-20121203.jar">
-      <manager moduleId="f3061a53-9226-4cc5-a443-f952ceaf5816" className="jetbrains.mps.baseLanguage.stubs.JavaStubs" />
-    </modelRoot>
-    <modelRoot path="${language_descriptor}/lib/poi-scratchpad-3.9-20121203.jar">
-      <manager moduleId="f3061a53-9226-4cc5-a443-f952ceaf5816" className="jetbrains.mps.baseLanguage.stubs.JavaStubs" />
-    </modelRoot>
-    <modelRoot path="${language_descriptor}/lib/stax-api-1.0.1.jar">
-      <manager moduleId="f3061a53-9226-4cc5-a443-f952ceaf5816" className="jetbrains.mps.baseLanguage.stubs.JavaStubs" />
-    </modelRoot>
-    <modelRoot path="${language_descriptor}/lib/xmlbeans-2.3.0.jar">
-      <manager moduleId="f3061a53-9226-4cc5-a443-f952ceaf5816" className="jetbrains.mps.baseLanguage.stubs.JavaStubs" />
-    </modelRoot>
+    <modelRoot path="${module}/lib/commons-codec-1.5.jar" type="java_classes" />
+    <modelRoot path="${module}/lib/commons-logging-1.1.jar" type="java_classes" />
+    <modelRoot path="${module}/lib/dom4j-1.6.1.jar" type="java_classes" />
+    <modelRoot path="${module}/lib/junit-3.8.1.jar" type="java_classes" />
+    <modelRoot path="${module}/lib/log4j-1.2.13.jar" type="java_classes" />
+    <modelRoot path="${module}/lib/poi-3.9-20121203.jar" type="java_classes" />
+    <modelRoot path="${module}/lib/poi-excelant-3.9-20121203.jar" type="java_classes" />
+    <modelRoot path="${module}/lib/poi-ooxml-3.9-20121203.jar" type="java_classes" />
+    <modelRoot path="${module}/lib/poi-ooxml-schemas-3.9-20121203.jar" type="java_classes" />
+    <modelRoot path="${module}/lib/poi-scratchpad-3.9-20121203.jar" type="java_classes" />
+    <modelRoot path="${module}/lib/stax-api-1.0.1.jar" type="java_classes" />
+    <modelRoot path="${module}/lib/xmlbeans-2.3.0.jar" type="java_classes" />
   </models>
   <accessoryModels />
   <generators>
     <generator name="main" generatorUID="com.mbeddr.spreadsheat#2042272859106851293" uuid="7986ede4-bb02-4e5d-8e13-03458d393ab7">
       <models>
-        <modelRoot path="${language_descriptor}/generator/template" />
+        <modelRoot contentPath="${module}" type="default">
+          <sourceRoot location="generator/template" />
+        </modelRoot>
       </models>
       <external-templates>
         <generator generatorUID="be090156-a678-454c-bd8f-89ebd4a0e6af(com.mbeddr.core.modules.gen#1758019824472882132)" />
       </external-templates>
       <dependencies>
         <dependency reexport="false">1d891f7b-dc93-42f9-a4bc-b016656b14e2(com.mbeddr.spreadsheat)</dependency>
+        <dependency reexport="false">2d3c70e9-aab2-4870-8d8d-6036800e4103(jetbrains.mps.kernel)</dependency>
       </dependencies>
       <usedLanguages>
         <usedLanguage>b401a680-8325-4110-8fd3-84331ff25bef(jetbrains.mps.lang.generator)</usedLanguage>
@@ -77,42 +58,18 @@
     </generator>
   </generators>
   <stubModelEntries>
-    <stubModelEntry path="${language_descriptor}/lib/commons-codec-1.5.jar">
-      <manager moduleId="f3061a53-9226-4cc5-a443-f952ceaf5816" className="jetbrains.mps.baseLanguage.stubs.JavaStubs" />
-    </stubModelEntry>
-    <stubModelEntry path="${language_descriptor}/lib/commons-logging-1.1.jar">
-      <manager moduleId="f3061a53-9226-4cc5-a443-f952ceaf5816" className="jetbrains.mps.baseLanguage.stubs.JavaStubs" />
-    </stubModelEntry>
-    <stubModelEntry path="${language_descriptor}/lib/dom4j-1.6.1.jar">
-      <manager moduleId="f3061a53-9226-4cc5-a443-f952ceaf5816" className="jetbrains.mps.baseLanguage.stubs.JavaStubs" />
-    </stubModelEntry>
-    <stubModelEntry path="${language_descriptor}/lib/junit-3.8.1.jar">
-      <manager moduleId="f3061a53-9226-4cc5-a443-f952ceaf5816" className="jetbrains.mps.baseLanguage.stubs.JavaStubs" />
-    </stubModelEntry>
-    <stubModelEntry path="${language_descriptor}/lib/log4j-1.2.13.jar">
-      <manager moduleId="f3061a53-9226-4cc5-a443-f952ceaf5816" className="jetbrains.mps.baseLanguage.stubs.JavaStubs" />
-    </stubModelEntry>
-    <stubModelEntry path="${language_descriptor}/lib/poi-3.9-20121203.jar">
-      <manager moduleId="f3061a53-9226-4cc5-a443-f952ceaf5816" className="jetbrains.mps.baseLanguage.stubs.JavaStubs" />
-    </stubModelEntry>
-    <stubModelEntry path="${language_descriptor}/lib/poi-excelant-3.9-20121203.jar">
-      <manager moduleId="f3061a53-9226-4cc5-a443-f952ceaf5816" className="jetbrains.mps.baseLanguage.stubs.JavaStubs" />
-    </stubModelEntry>
-    <stubModelEntry path="${language_descriptor}/lib/poi-ooxml-3.9-20121203.jar">
-      <manager moduleId="f3061a53-9226-4cc5-a443-f952ceaf5816" className="jetbrains.mps.baseLanguage.stubs.JavaStubs" />
-    </stubModelEntry>
-    <stubModelEntry path="${language_descriptor}/lib/poi-ooxml-schemas-3.9-20121203.jar">
-      <manager moduleId="f3061a53-9226-4cc5-a443-f952ceaf5816" className="jetbrains.mps.baseLanguage.stubs.JavaStubs" />
-    </stubModelEntry>
-    <stubModelEntry path="${language_descriptor}/lib/poi-scratchpad-3.9-20121203.jar">
-      <manager moduleId="f3061a53-9226-4cc5-a443-f952ceaf5816" className="jetbrains.mps.baseLanguage.stubs.JavaStubs" />
-    </stubModelEntry>
-    <stubModelEntry path="${language_descriptor}/lib/stax-api-1.0.1.jar">
-      <manager moduleId="f3061a53-9226-4cc5-a443-f952ceaf5816" className="jetbrains.mps.baseLanguage.stubs.JavaStubs" />
-    </stubModelEntry>
-    <stubModelEntry path="${language_descriptor}/lib/xmlbeans-2.3.0.jar">
-      <manager moduleId="f3061a53-9226-4cc5-a443-f952ceaf5816" className="jetbrains.mps.baseLanguage.stubs.JavaStubs" />
-    </stubModelEntry>
+    <stubModelEntry path="${module}/lib/commons-codec-1.5.jar" />
+    <stubModelEntry path="${module}/lib/commons-logging-1.1.jar" />
+    <stubModelEntry path="${module}/lib/dom4j-1.6.1.jar" />
+    <stubModelEntry path="${module}/lib/junit-3.8.1.jar" />
+    <stubModelEntry path="${module}/lib/log4j-1.2.13.jar" />
+    <stubModelEntry path="${module}/lib/poi-3.9-20121203.jar" />
+    <stubModelEntry path="${module}/lib/poi-excelant-3.9-20121203.jar" />
+    <stubModelEntry path="${module}/lib/poi-ooxml-3.9-20121203.jar" />
+    <stubModelEntry path="${module}/lib/poi-ooxml-schemas-3.9-20121203.jar" />
+    <stubModelEntry path="${module}/lib/poi-scratchpad-3.9-20121203.jar" />
+    <stubModelEntry path="${module}/lib/stax-api-1.0.1.jar" />
+    <stubModelEntry path="${module}/lib/xmlbeans-2.3.0.jar" />
   </stubModelEntries>
   <sourcePath />
   <dependencies>
