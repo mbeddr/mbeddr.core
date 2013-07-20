@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="test.ts.ext.physicalunits.c" uuid="ad0a69f0-b863-4e0e-b8b4-4b0e4ceca144" compileInMPS="true">
+<solution name="test.ts.ext.physicalunits.c" uuid="ad0a69f0-b863-4e0e-b8b4-4b0e4ceca144" pluginKind="PLUGIN_OTHER" compileInMPS="true">
   <models>
-    <modelRoot path="${solution_descriptor}/" />
-    <modelRoot path="${solution_descriptor}/models" />
+    <modelRoot contentPath="${module}" type="default">
+      <sourceRoot location="." />
+      <sourceRoot location="models" />
+    </modelRoot>
   </models>
   <sourcePath />
   <usedLanguages>

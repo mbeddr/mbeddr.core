@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="test.ts.ext.exceptionhandling" uuid="093edbab-7623-47ec-bdd3-feb8dc98e6d7" compileInMPS="true">
+<solution name="test.ts.ext.exceptionhandling" uuid="093edbab-7623-47ec-bdd3-feb8dc98e6d7" pluginKind="PLUGIN_OTHER" compileInMPS="true">
   <models>
-    <modelRoot path="${solution_descriptor}/models" />
-    <modelRoot path="${solution_descriptor}/" />
+    <modelRoot contentPath="${module}" type="default">
+      <sourceRoot location="models" />
+      <sourceRoot location="." />
+    </modelRoot>
   </models>
   <sourcePath />
   <usedLanguages>

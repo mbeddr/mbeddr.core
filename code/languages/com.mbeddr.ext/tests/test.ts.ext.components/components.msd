@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="test.ts.ext.components" uuid="65b00399-c5df-4987-baee-fe04224907ff" compileInMPS="true">
+<solution name="test.ts.ext.components" uuid="65b00399-c5df-4987-baee-fe04224907ff" pluginKind="PLUGIN_OTHER" compileInMPS="true">
   <models>
-    <modelRoot path="${solution_descriptor}/models" />
+    <modelRoot contentPath="${module}" type="default">
+      <sourceRoot location="models" />
+    </modelRoot>
   </models>
   <sourcePath />
   <dependencies>

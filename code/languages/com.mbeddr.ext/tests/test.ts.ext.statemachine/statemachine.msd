@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="test.ts.ext.statemachine" uuid="74d4c629-c4c5-4941-95de-3a99098148fe" compileInMPS="true">
+<solution name="test.ts.ext.statemachine" uuid="74d4c629-c4c5-4941-95de-3a99098148fe" pluginKind="PLUGIN_OTHER" compileInMPS="true">
   <models>
-    <modelRoot path="${solution_descriptor}/models" />
+    <modelRoot contentPath="${module}" type="default">
+      <sourceRoot location="models" />
+    </modelRoot>
   </models>
   <sourcePath />
   <usedLanguages>

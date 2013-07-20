@@ -6,33 +6,32 @@
   <component name="Encoding" useUTFGuessing="true" native2AsciiForPropertiesFiles="false" />
   <component name="MPSProject">
     <projectModules>
-      <modulePath path="${project}/devkits/com.mbeddr.ext.components/components.devkit" />
-      <modulePath path="${project}/devkits/com.mbeddr.ext.statemachines/statemachines.devkit" />
-      <modulePath path="${project}/devkits/com.mbeddr.physicalunits/physicalunits.devkit" />
-      <modulePath path="${project}/devkits/com.mbeddr.statemachinesInComponents/statemachinesInComponents.devkit" folder="" />
-      <modulePath path="${project}/languages/com.mbeddr.ext.components.gen_nomw/gen_nomw.mpl" folder="components" />
-      <modulePath path="${project}/languages/com.mbeddr.ext.components.mock/mock.mpl" folder="components" />
-      <modulePath path="${project}/languages/com.mbeddr.ext.components.statemachine/sm_comp.mpl" folder="statemachine" />
-      <modulePath path="${project}/languages/com.mbeddr.ext.components.test/test.mpl" folder="components" />
-      <modulePath path="${project}/languages/com.mbeddr.ext.components/components.mpl" folder="components" />
-      <modulePath path="${project}/languages/com.mbeddr.ext.exceptionhandling/exceptionhandling.mpl" folder="exceptionhandling" />
-      <modulePath path="${project}/languages/com.mbeddr.ext.physicalunits.c/c.mpl" folder="units" />
-      <modulePath path="${project}/languages/com.mbeddr.ext.physicalunits/physicalunits.mpl" folder="units" />
-      <modulePath path="${project}/languages/com.mbeddr.ext.statemachines/pluginSolution/com.mbeddr.ext.statemachines.pluginSolution.msd" folder="statemachine" />
-      <modulePath path="${project}/languages/com.mbeddr.ext.statemachines/statemachines.mpl" folder="statemachine" />
-      <modulePath path="${project}/lib/com.mbeddr.ext.exceptionhandling.lib/lib.msd" folder="exceptionhandling" />
-      <modulePath path="${project}/tests/test.ex.ext.comp_mocking/comp_mocking.msd" folder="tests.comp" />
-      <modulePath path="${project}/tests/test.ex.ext.components.sri/sri.msd" folder="tests.comp" />
-      <modulePath path="${project}/tests/test.ex.ext.components/components.msd" folder="tests.comp" />
-      <modulePath path="${project}/tests/test.ex.ext.exceptionhandling/exceptionhandling.msd" folder="tests.exhandling" />
-      <modulePath path="${project}/tests/test.ex.ext.physicalunits.c/c.msd" folder="tests.units" />
-      <modulePath path="${project}/tests/test.ex.ext.statemachine/statemachine.msd" folder="tests.sm" />
-      <modulePath path="${project}/tests/test.ts.ext.components/components.msd" folder="tests.comp" />
-      <modulePath path="${project}/tests/test.ts.ext.exceptionhandling/exceptionhandling.msd" folder="tests.exhandling" />
-      <modulePath path="${project}/tests/test.ts.ext.physicalunits.c/c.msd" folder="tests.units" />
-      <modulePath path="${project}/tests/test.ts.ext.statemachine/statemachine.msd" folder="tests.sm" />
+      <modulePath path="$PROJECT_DIR$/devkits/com.mbeddr.ext.components/components.devkit" folder="" />
+      <modulePath path="$PROJECT_DIR$/devkits/com.mbeddr.ext.statemachines/statemachines.devkit" folder="" />
+      <modulePath path="$PROJECT_DIR$/devkits/com.mbeddr.physicalunits/physicalunits.devkit" folder="" />
+      <modulePath path="$PROJECT_DIR$/devkits/com.mbeddr.statemachinesInComponents/statemachinesInComponents.devkit" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.ext.components.gen_nomw/gen_nomw.mpl" folder="components" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.ext.components.mock/mock.mpl" folder="components" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.ext.components.statemachine/sm_comp.mpl" folder="statemachine" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.ext.components.test/test.mpl" folder="components" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.ext.components/components.mpl" folder="components" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.ext.exceptionhandling/exceptionhandling.mpl" folder="exceptionhandling" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.ext.physicalunits.c/c.mpl" folder="units" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.ext.physicalunits/physicalunits.mpl" folder="units" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.ext.statemachines/pluginSolution/com.mbeddr.ext.statemachines.pluginSolution.msd" folder="statemachine" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.ext.statemachines/statemachines.mpl" folder="statemachine" />
+      <modulePath path="$PROJECT_DIR$/lib/com.mbeddr.ext.exceptionhandling.lib/lib.msd" folder="exceptionhandling" />
+      <modulePath path="$PROJECT_DIR$/tests/test.ex.ext.comp_mocking/comp_mocking.msd" folder="tests.comp" />
+      <modulePath path="$PROJECT_DIR$/tests/test.ex.ext.components.sri/sri.msd" folder="tests.comp" />
+      <modulePath path="$PROJECT_DIR$/tests/test.ex.ext.components/components.msd" folder="tests.comp" />
+      <modulePath path="$PROJECT_DIR$/tests/test.ex.ext.exceptionhandling/exceptionhandling.msd" folder="tests.exhandling" />
+      <modulePath path="$PROJECT_DIR$/tests/test.ex.ext.physicalunits.c/c.msd" folder="tests.units" />
+      <modulePath path="$PROJECT_DIR$/tests/test.ex.ext.statemachine/statemachine.msd" folder="tests.sm" />
+      <modulePath path="$PROJECT_DIR$/tests/test.ts.ext.components/components.msd" folder="tests.comp" />
+      <modulePath path="$PROJECT_DIR$/tests/test.ts.ext.exceptionhandling/exceptionhandling.msd" folder="tests.exhandling" />
+      <modulePath path="$PROJECT_DIR$/tests/test.ts.ext.physicalunits.c/c.msd" folder="tests.units" />
+      <modulePath path="$PROJECT_DIR$/tests/test.ts.ext.statemachine/statemachine.msd" folder="tests.sm" />
     </projectModules>
-    <genConfs />
   </component>
   <component name="ProjectLibraryManager">
     <option name="libraries">
@@ -69,7 +68,7 @@
   </component>
   <component name="ProjectRootManager" version="2" />
   <component name="ProjectVersion">
-    <option name="version" value="2.5" />
+    <option name="version" value="3.0" />
   </component>
   <component name="VcsDirectoryMappings">
     <mapping directory="$mbeddr.github.core.home$" vcs="Git" />
