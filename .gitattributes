@@ -7,3 +7,5 @@ generated merge=mps
 *.msd merge=mps
 *.devkit merge=mps
 *.mpr merge=mps
+*.mpsr text merge=mps
+*.model text merge=mps

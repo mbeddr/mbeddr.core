@@ -971,14 +971,11 @@
               </node>
               <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="4157464901389948453" nodeInfo="nn">
                 <node role="expression" roleId="tpee.1068580123156" type="tpee.AssignmentExpression" typeId="tpee.1068498886294" id="4157464901389948460" nodeInfo="nn">
-                  <node role="rValue" roleId="tpee.1068498886297" type="tp25.SNodeTypeCastExpression" typeId="tp25.1140137987495" id="6399862545631391554" nodeInfo="nn">
-                    <link role="concept" roleId="tp25.1140138128738" targetNodeId="mj1l.8860443239512128054" resolveInfo="Type" />
-                    <node role="leftExpression" roleId="tp25.1140138123956" type="tpee.DotExpression" typeId="tpee.1197027756228" id="4157464901389948464" nodeInfo="nn">
-                      <node role="operand" roleId="tpee.1197027771414" type="tpd4.TypeVarReference" typeId="tpd4.1174666260556" id="4157464901389948463" nodeInfo="nn">
-                        <link role="typeVarDeclaration" roleId="tpd4.1174666276259" targetNodeId="4157464901389851210" resolveInfo="T" />
-                      </node>
-                      <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_CopyOperation" typeId="tp25.1144146199828" id="4157464901389948468" nodeInfo="nn" />
+                  <node role="rValue" roleId="tpee.1068498886297" type="tpee.DotExpression" typeId="tpee.1197027756228" id="4157464901389948464" nodeInfo="nn">
+                    <node role="operand" roleId="tpee.1197027771414" type="tpd4.TypeVarReference" typeId="tpd4.1174666260556" id="4157464901389948463" nodeInfo="nn">
+                      <link role="typeVarDeclaration" roleId="tpd4.1174666276259" targetNodeId="4157464901389851210" resolveInfo="T" />
                     </node>
+                    <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_CopyOperation" typeId="tp25.1144146199828" id="4157464901389948468" nodeInfo="nn" />
                   </node>
                   <node role="lValue" roleId="tpee.1068498886295" type="tpee.DotExpression" typeId="tpee.1197027756228" id="4157464901389948455" nodeInfo="nn">
                     <node role="operand" roleId="tpee.1197027771414" type="tpee.VariableReference" typeId="tpee.1068498886296" id="6584628407655049335" nodeInfo="nn">

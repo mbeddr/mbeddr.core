@@ -392,14 +392,6 @@
     <property name="name" nameId="tpck.1169194664001" value="AssertNotEquals" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="assert-not-equals" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="7755897872837031762" resolveInfo="StructuredBinOpAssertStatement" />
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="7755897872837262968" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725733873" value="assert-not-equals" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473891462" resolveInfo="alias" />
-    </node>
-    <node role="conceptLink" roleId="tpce.1105736949336" type="tpce.ReferenceConceptLink" typeId="tpce.1105736778597" id="7755897872837262969" nodeInfo="ig">
-      <link role="conceptLinkDeclaration" roleId="tpce.1105736734721" targetNodeId="7755897872837168163" resolveInfo="binop" />
-      <link role="target" roleId="tpce.1105736807942" targetNodeId="mj1l.7615572890648529894" resolveInfo="NotEqualsExpression" />
-    </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7755897872837262970" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="asserts" />
