@@ -26,10 +26,10 @@
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="1730914748330889910" nodeInfo="ig">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="1730914748330889907" resolveInfo="IMemoryLayoutElement" />
     </node>
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.BooleanConceptProperty" typeId="tpce.1105725574259" id="1730914748330889911" nodeInfo="ig">
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473994950" resolveInfo="dontSubstituteByDefault" />
-    </node>
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="6584628407655575054" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="tpck.1835621062190663819" resolveInfo="IDontSubstituteByDefault" />
+    </node>
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="3008175113698935074" nodeInfo="ig">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="tpck.1835621062190663819" resolveInfo="IDontSubstituteByDefault" />
     </node>
   </root>
@@ -61,22 +61,11 @@
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="1730914748331205461" nodeInfo="ig">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="c4fa.605413736672002878" resolveInfo="IHasPrefixes" />
     </node>
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="1730914748330889917" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725733873" value="nvm layout" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473891462" resolveInfo="alias" />
-    </node>
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.BooleanConceptProperty" typeId="tpce.1105725574259" id="1730914748330889918" nodeInfo="ig">
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="x27k.1317894735999278394" resolveInfo="exportable" />
-    </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="1730914748330889919" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="memlayout" />
     <property name="name" nameId="tpck.1169194664001" value="StructMLE" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="struct" />
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="1730914748330889920" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725733873" value="struct" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473891462" resolveInfo="alias" />
-    </node>
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="1730914748330889921" nodeInfo="ig">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="1730914748330889907" resolveInfo="IMemoryLayoutElement" />
     </node>
@@ -85,10 +74,6 @@
     <property name="virtualPackage" nameId="tpck.1193676396447" value="memlayout" />
     <property name="name" nameId="tpck.1169194664001" value="UnionMLE" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="union" />
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="1730914748330889923" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725733873" value="union" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473891462" resolveInfo="alias" />
-    </node>
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="1730914748330889924" nodeInfo="ig">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="1730914748330889907" resolveInfo="IMemoryLayoutElement" />
     </node>
