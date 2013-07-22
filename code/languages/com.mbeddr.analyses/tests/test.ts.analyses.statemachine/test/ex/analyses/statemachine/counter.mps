@@ -118,8 +118,6 @@
           <property name="value" nameId="mj1l.8860443239512128104" value="0" />
         </node>
         <node role="type" roleId="mj1l.318113533128716676" type="clqz.BoundedIntType" typeId="clqz.7851711690674374947" id="5708867820620657218" nodeInfo="ng">
-          <property name="min" value="0" />
-          <property name="max" value="100" />
           <node role="min" roleId="clqz.1656687801206292530" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="1656687801206329659" nodeInfo="ng">
             <property name="value" nameId="mj1l.8860443239512128104" value="0" />
           </node>
@@ -134,8 +132,6 @@
           <property name="value" nameId="mj1l.8860443239512128104" value="10" />
         </node>
         <node role="type" roleId="mj1l.318113533128716676" type="clqz.BoundedIntType" typeId="clqz.7851711690674374947" id="5708867820620657216" nodeInfo="ng">
-          <property name="min" value="0" />
-          <property name="max" value="100" />
           <node role="min" roleId="clqz.1656687801206292530" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="1656687801206329627" nodeInfo="ng">
             <property name="value" nameId="mj1l.8860443239512128104" value="0" />
           </node>
@@ -153,8 +149,6 @@
         <node role="args" roleId="clqz.1786180596061248896" type="clqz.EventArg" typeId="clqz.1786180596061248885" id="4643433264761024374" nodeInfo="ng">
           <property name="name" nameId="tpck.1169194664001" value="size" />
           <node role="type" roleId="mj1l.318113533128716676" type="clqz.BoundedIntType" typeId="clqz.7851711690674374947" id="5708867820620254066" nodeInfo="ng">
-            <property name="min" value="0" />
-            <property name="max" value="10" />
             <node role="min" roleId="clqz.1656687801206292530" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="1656687801206329647" nodeInfo="ng">
               <property name="value" nameId="mj1l.8860443239512128104" value="0" />
             </node>
@@ -170,8 +164,6 @@
         <node role="args" roleId="clqz.1786180596061248896" type="clqz.EventArg" typeId="clqz.1786180596061248885" id="4643433264761024380" nodeInfo="ng">
           <property name="name" nameId="tpck.1169194664001" value="x" />
           <node role="type" roleId="mj1l.318113533128716676" type="clqz.BoundedIntType" typeId="clqz.7851711690674374947" id="5708867820620254073" nodeInfo="ng">
-            <property name="min" value="0" />
-            <property name="max" value="100" />
             <node role="min" roleId="clqz.1656687801206292530" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="1656687801206329669" nodeInfo="ng">
               <property name="value" nameId="mj1l.8860443239512128104" value="0" />
             </node>
