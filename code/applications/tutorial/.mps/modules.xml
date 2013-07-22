@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MPSProject">
+    <projectModules>
+      <modulePath path="$PROJECT_DIR$/languages/blocks/blocks.mpl" folder="languages" />
+      <modulePath path="$PROJECT_DIR$/languages/cimpl/cimpl.mpl" folder="languages" />
+      <modulePath path="$PROJECT_DIR$/languages/complex/complex.mpl" folder="languages" />
+      <modulePath path="$PROJECT_DIR$/languages/foreach/foreach.mpl" folder="languages" />
+      <modulePath path="$PROJECT_DIR$/languages/heap/heap.mpl" folder="languages" />
+      <modulePath path="$PROJECT_DIR$/languages/mbeddr.tutorial.smtrigger/mbeddr.tutorial.smtrigger.mpl" folder="languages" />
+      <modulePath path="$PROJECT_DIR$/languages/memory/memory.mpl" folder="languages" />
+      <modulePath path="$PROJECT_DIR$/languages/metadata/metadata.mpl" folder="languages" />
+      <modulePath path="$PROJECT_DIR$/languages/osconfig/osconfig.mpl" folder="languages" />
+      <modulePath path="$PROJECT_DIR$/languages/processorregisters/processorregisters.mpl" folder="languages" />
+      <modulePath path="$PROJECT_DIR$/languages/vectors/vectors.mpl" folder="languages" />
+      <modulePath path="$PROJECT_DIR$/solutions/mbeddr.tutorial.main/mbeddr.tutorial.main.msd" folder="exampleCode" />
+      <modulePath path="$PROJECT_DIR$/solutions/mbeddr.tutorial.typesystemtests/typesystemtests.msd" folder="typesystem-tests" />
+    </projectModules>
+  </component>
+</project>
+
