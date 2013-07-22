@@ -59,16 +59,6 @@
       <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
       <link role="target" roleId="tpce.1071599976176" targetNodeId="8860443239512128050" resolveInfo="Expression" />
     </node>
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.BooleanConceptProperty" typeId="tpce.1105725574259" id="8860443239512128053" nodeInfo="ig">
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473854053" resolveInfo="abstract" />
-    </node>
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="4058325937810995684" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725733873" value="--" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473914776" resolveInfo="shortDescription" />
-    </node>
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.BooleanConceptProperty" typeId="tpce.1105725574259" id="2771264470558146428" nodeInfo="ig">
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473994950" resolveInfo="dontSubstituteByDefault" />
-    </node>
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="6584628407655575110" nodeInfo="ig">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="tpck.1835621062190663819" resolveInfo="IDontSubstituteByDefault" />
     </node>
@@ -87,13 +77,6 @@
       <property name="name" nameId="tpck.1169194664001" value="volatile" />
       <link role="dataType" roleId="tpce.1082985295845" targetNodeId="tpck.1082983657063" resolveInfo="boolean" />
     </node>
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.BooleanConceptProperty" typeId="tpce.1105725574259" id="3402431285978393025" nodeInfo="ig">
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473854053" resolveInfo="abstract" />
-    </node>
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="4058325937810995802" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725733873" value="--" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473914776" resolveInfo="shortDescription" />
-    </node>
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="8483575004406606969" nodeInfo="ig">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="2gv2.2513598210665148633" resolveInfo="IMappableType" />
     </node>
@@ -111,17 +94,6 @@
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="##primitive type##" />
     <property name="abstract" nameId="tpce.4628067390765956802" value="true" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="8860443239512128054" resolveInfo="Type" />
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.BooleanConceptProperty" typeId="tpce.1105725574259" id="8860443239512128057" nodeInfo="ig">
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473854053" resolveInfo="abstract" />
-    </node>
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="8860528120402201584" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725733873" value="##primitive type##" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473891462" resolveInfo="alias" />
-    </node>
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="4058325937810995792" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725733873" value="--" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473914776" resolveInfo="shortDescription" />
-    </node>
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="704069370491018853" nodeInfo="ig">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="704069370490430470" resolveInfo="IDataflowPrimitiveType" />
     </node>
@@ -132,14 +104,6 @@
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="true and false" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="boolean" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="8860443239512128056" resolveInfo="PrimitiveType" />
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="8860443239512128059" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725733873" value="boolean" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473891462" resolveInfo="alias" />
-    </node>
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="4058325937810995699" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725733873" value="true and false" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473914776" resolveInfo="shortDescription" />
-    </node>
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="8860443239512166647" nodeInfo="ig">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="8860443239512166593" resolveInfo="IComparable" />
     </node>
@@ -150,17 +114,6 @@
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="--" />
     <property name="abstract" nameId="tpce.4628067390765956802" value="true" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="8860443239512128052" resolveInfo="BinaryExpression" />
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.BooleanConceptProperty" typeId="tpce.1105725574259" id="2093108837558498753" nodeInfo="ig">
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473854053" resolveInfo="abstract" />
-    </node>
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.IntegerConceptProperty" typeId="tpce.1105725498741" id="5763383285156530273" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725713309" value="500" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="5763383285156530264" resolveInfo="priolevel" />
-    </node>
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="4058325937810995682" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725733873" value="--" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473914776" resolveInfo="shortDescription" />
-    </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="8860443239512128090" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="Literal" />
@@ -168,13 +121,6 @@
     <property name="abstract" nameId="tpce.4628067390765956802" value="true" />
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="--" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="8860443239512128050" resolveInfo="Expression" />
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.BooleanConceptProperty" typeId="tpce.1105725574259" id="8860443239512128091" nodeInfo="ig">
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473854053" resolveInfo="abstract" />
-    </node>
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="4058325937810995755" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725733873" value="--" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473914776" resolveInfo="shortDescription" />
-    </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="8860443239512128092" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="BooleanLiteral" />
@@ -182,13 +128,6 @@
     <property name="abstract" nameId="tpce.4628067390765956802" value="true" />
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="--" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="8860443239512128090" resolveInfo="Literal" />
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.BooleanConceptProperty" typeId="tpce.1105725574259" id="8860443239512128093" nodeInfo="ig">
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473854053" resolveInfo="abstract" />
-    </node>
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="4058325937810995697" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725733873" value="--" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473914776" resolveInfo="shortDescription" />
-    </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="8860443239512128094" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="TrueLiteral" />
@@ -196,14 +135,6 @@
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="true" />
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="not false :-)" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="8860443239512128092" resolveInfo="BooleanLiteral" />
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="8860443239512128095" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725733873" value="true" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473891462" resolveInfo="alias" />
-    </node>
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="4058325937810995801" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725733873" value="not false :-)" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473914776" resolveInfo="shortDescription" />
-    </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="8860443239512128099" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="FalseLiteral" />
@@ -211,27 +142,12 @@
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="not true :-)" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="false" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="8860443239512128092" resolveInfo="BooleanLiteral" />
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="8860443239512153319" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725733873" value="false" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473891462" resolveInfo="alias" />
-    </node>
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="4058325937810995729" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725733873" value="not true :-)" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473914776" resolveInfo="shortDescription" />
-    </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="8860443239512128103" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="NumberLiteral" />
     <property name="virtualPackage" nameId="tpck.1193676396447" value="literals" />
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="a number (with optional decimal dot and minus)" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="8860443239512128090" resolveInfo="Literal" />
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="4058325937810995772" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725733873" value="a number (with optional decimal dot and minus)" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473914776" resolveInfo="shortDescription" />
-    </node>
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.BooleanConceptProperty" typeId="tpce.1105725574259" id="869116753978119748" nodeInfo="ig">
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473994950" resolveInfo="dontSubstituteByDefault" />
-    </node>
     <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="8860443239512128104" nodeInfo="ig">
       <property name="name" nameId="tpck.1169194664001" value="value" />
       <link role="dataType" roleId="tpce.1082985295845" targetNodeId="tpck.1082983041843" resolveInfo="string" />
@@ -249,14 +165,6 @@
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="C int type" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="int" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="5569318043967823834" resolveInfo="PrimitiveBasicIntegralType" />
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="8860443239512128109" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725733873" value="int" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473891462" resolveInfo="alias" />
-    </node>
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="4058325937810995748" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725733873" value="C int type" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473914776" resolveInfo="shortDescription" />
-    </node>
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="2384034043170171916" nodeInfo="ig">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="2384034043170171910" resolveInfo="ISigned" />
     </node>
@@ -267,18 +175,6 @@
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="==" />
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="equals" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="4006257212296698015" resolveInfo="BinaryEqualityComparisonExpression" />
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="8860443239512129323" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725733873" value="==" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473891462" resolveInfo="alias" />
-    </node>
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.IntegerConceptProperty" typeId="tpce.1105725498741" id="7615572890648517415" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725713309" value="915" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="5763383285156530264" resolveInfo="priolevel" />
-    </node>
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="4058325937810995725" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725733873" value="equals" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473914776" resolveInfo="shortDescription" />
-    </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="8860443239512147445" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="GreaterExpression" />
@@ -286,18 +182,6 @@
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="greater than" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="&gt;" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="1762375172531559815" resolveInfo="BinaryOrderedComparisonExpression" />
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="8860443239512147446" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725733873" value="&gt;" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473891462" resolveInfo="alias" />
-    </node>
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.IntegerConceptProperty" typeId="tpce.1105725498741" id="7615572890648529901" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725713309" value="925" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="5763383285156530264" resolveInfo="priolevel" />
-    </node>
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="4058325937810995733" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725733873" value="greater than" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473914776" resolveInfo="shortDescription" />
-    </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="8860443239512147447" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="GreaterEqualsExpression" />
@@ -305,18 +189,6 @@
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="&gt;=" />
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="greater equals" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="1762375172531559815" resolveInfo="BinaryOrderedComparisonExpression" />
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="8860443239512147448" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725733873" value="&gt;=" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473891462" resolveInfo="alias" />
-    </node>
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.IntegerConceptProperty" typeId="tpce.1105725498741" id="7615572890648529899" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725713309" value="925" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="5763383285156530264" resolveInfo="priolevel" />
-    </node>
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="4058325937810995732" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725733873" value="greater equals" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473914776" resolveInfo="shortDescription" />
-    </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="8860443239512147449" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="LessExpression" />
@@ -324,18 +196,6 @@
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="&lt;" />
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="less than" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="1762375172531559815" resolveInfo="BinaryOrderedComparisonExpression" />
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="8860443239512147450" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725733873" value="&lt;" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473891462" resolveInfo="alias" />
-    </node>
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.IntegerConceptProperty" typeId="tpce.1105725498741" id="7615572890648529905" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725713309" value="925" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="5763383285156530264" resolveInfo="priolevel" />
-    </node>
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="4058325937810995753" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725733873" value="less than" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473914776" resolveInfo="shortDescription" />
-    </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="8860443239512147451" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="LessEqualsExpression" />
@@ -343,18 +203,6 @@
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="&lt;=" />
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="less equals" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="1762375172531559815" resolveInfo="BinaryOrderedComparisonExpression" />
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="8860443239512147452" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725733873" value="&lt;=" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473891462" resolveInfo="alias" />
-    </node>
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.IntegerConceptProperty" typeId="tpce.1105725498741" id="7615572890648529903" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725713309" value="925" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="5763383285156530264" resolveInfo="priolevel" />
-    </node>
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="4058325937810995751" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725733873" value="less equals" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473914776" resolveInfo="shortDescription" />
-    </node>
   </root>
   <root type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="8860443239512166593" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="IComparable" />
@@ -373,13 +221,6 @@
     <property name="abstract" nameId="tpce.4628067390765956802" value="true" />
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="--" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="8860443239512128052" resolveInfo="BinaryExpression" />
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.BooleanConceptProperty" typeId="tpce.1105725574259" id="5763383285156373015" nodeInfo="ig">
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473854053" resolveInfo="abstract" />
-    </node>
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="4058325937810995680" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725733873" value="--" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473914776" resolveInfo="shortDescription" />
-    </node>
   </root>
   <root type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="5763383285156372998" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="INumber" />
@@ -397,18 +238,6 @@
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="+" />
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="plus" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="5763383285156372997" resolveInfo="BinaryArithmeticExpression" />
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="5763383285156373017" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725733873" value="+" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473891462" resolveInfo="alias" />
-    </node>
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.IntegerConceptProperty" typeId="tpce.1105725498741" id="5763383285156530266" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725713309" value="1000" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="5763383285156530264" resolveInfo="priolevel" />
-    </node>
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="4058325937810995779" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725733873" value="plus" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473914776" resolveInfo="shortDescription" />
-    </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="5763383285156373018" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="MinusExpression" />
@@ -416,18 +245,6 @@
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="-" />
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="subtract" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="5763383285156372997" resolveInfo="BinaryArithmeticExpression" />
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="5763383285156373019" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725733873" value="-" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473891462" resolveInfo="alias" />
-    </node>
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.IntegerConceptProperty" typeId="tpce.1105725498741" id="5763383285156530268" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725713309" value="1000" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="5763383285156530264" resolveInfo="priolevel" />
-    </node>
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="4058325937810995763" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725733873" value="subtract" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473914776" resolveInfo="shortDescription" />
-    </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="5763383285156373020" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="MultiExpression" />
@@ -435,18 +252,6 @@
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="*" />
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="multiply" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="5763383285156372997" resolveInfo="BinaryArithmeticExpression" />
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="5763383285156373021" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725733873" value="*" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473891462" resolveInfo="alias" />
-    </node>
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.IntegerConceptProperty" typeId="tpce.1105725498741" id="5763383285156530270" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725713309" value="2000" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="5763383285156530264" resolveInfo="priolevel" />
-    </node>
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="4058325937810995767" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725733873" value="multiply" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473914776" resolveInfo="shortDescription" />
-    </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="5763383285156373022" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="DivExpression" />
@@ -454,18 +259,6 @@
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="divide" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="/" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="5763383285156372997" resolveInfo="BinaryArithmeticExpression" />
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="5763383285156373023" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725733873" value="/" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473891462" resolveInfo="alias" />
-    </node>
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.IntegerConceptProperty" typeId="tpce.1105725498741" id="5763383285156530272" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725713309" value="2000" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="5763383285156530264" resolveInfo="priolevel" />
-    </node>
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="4058325937810995723" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725733873" value="divide" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473914776" resolveInfo="shortDescription" />
-    </node>
   </root>
   <root type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="5763383285156461605" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="IMemberReference" />
@@ -477,18 +270,6 @@
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="parenthesize" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="(" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="3005510381523579442" resolveInfo="UnaryExpression" />
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.IntegerConceptProperty" typeId="tpce.1105725498741" id="5907789332853856135" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725713309" value="4000" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="5763383285156530264" resolveInfo="priolevel" />
-    </node>
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="8864856114140197036" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725733873" value="(" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473891462" resolveInfo="alias" />
-    </node>
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="4058325937810995777" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725733873" value="parenthesize" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473914776" resolveInfo="shortDescription" />
-    </node>
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="8793291511880188111" nodeInfo="ig">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="8793291511880188110" resolveInfo="IStopReshuffling" />
     </node>
@@ -499,18 +280,6 @@
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="double" />
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="double type" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="9149785691754537075" resolveInfo="PrimitiveIEEE754Type" />
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="8864856114140038682" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725733873" value="double" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473891462" resolveInfo="alias" />
-    </node>
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.IntegerConceptProperty" typeId="tpce.1105725498741" id="9149785691754701070" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725713309" value="64" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="9149785691754537077" resolveInfo="size" />
-    </node>
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="4058325937810995724" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725733873" value="double type" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473914776" resolveInfo="shortDescription" />
-    </node>
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="2384034043170171920" nodeInfo="ig">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="2384034043170171910" resolveInfo="ISigned" />
     </node>
@@ -521,18 +290,6 @@
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="float" />
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="C float type" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="9149785691754537075" resolveInfo="PrimitiveIEEE754Type" />
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="4739982148980385696" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725733873" value="float" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473891462" resolveInfo="alias" />
-    </node>
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.IntegerConceptProperty" typeId="tpce.1105725498741" id="9149785691754701068" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725713309" value="32" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="9149785691754537077" resolveInfo="size" />
-    </node>
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="4058325937810995730" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725733873" value="C float type" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473914776" resolveInfo="shortDescription" />
-    </node>
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="2384034043170171921" nodeInfo="ig">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="2384034043170171910" resolveInfo="ISigned" />
     </node>
@@ -543,13 +300,6 @@
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="--" />
     <property name="abstract" nameId="tpce.4628067390765956802" value="true" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="8860443239512128052" resolveInfo="BinaryExpression" />
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.BooleanConceptProperty" typeId="tpce.1105725574259" id="8399455261460717639" nodeInfo="ig">
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473854053" resolveInfo="abstract" />
-    </node>
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="4058325937810995685" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725733873" value="--" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473914776" resolveInfo="shortDescription" />
-    </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="8399455261460717640" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="expr.logic.binary" />
@@ -557,18 +307,6 @@
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="logical and" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="&amp;&amp;" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="8399455261460717638" resolveInfo="BinaryLogicalExpression" />
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="8399455261460717641" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725733873" value="&amp;&amp;" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473891462" resolveInfo="alias" />
-    </node>
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.IntegerConceptProperty" typeId="tpce.1105725498741" id="8399455261460717648" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725713309" value="600" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="5763383285156530264" resolveInfo="priolevel" />
-    </node>
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="4058325937810995678" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725733873" value="logical and" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473914776" resolveInfo="shortDescription" />
-    </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="8399455261460717642" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="expr.logic.binary" />
@@ -576,18 +314,6 @@
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="logical or" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="||" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="8399455261460717638" resolveInfo="BinaryLogicalExpression" />
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.IntegerConceptProperty" typeId="tpce.1105725498741" id="8399455261460717646" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725713309" value="500" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="5763383285156530264" resolveInfo="priolevel" />
-    </node>
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="8399455261460717644" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725733873" value="||" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473891462" resolveInfo="alias" />
-    </node>
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="4058325937810995775" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725733873" value="logical or" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473914776" resolveInfo="shortDescription" />
-    </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7892328519581699353" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="types" />
@@ -595,14 +321,6 @@
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="void" />
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="the type for nothing :-)" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="8860443239512128056" resolveInfo="PrimitiveType" />
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="7892328519581704403" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725733873" value="void" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473891462" resolveInfo="alias" />
-    </node>
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="4058325937810995824" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725733873" value="the type for nothing :-)" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473914776" resolveInfo="shortDescription" />
-    </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="3830958861296781575" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="expr.logic.unary" />
@@ -610,14 +328,6 @@
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="!" />
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="logical not" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="7615572890648780049" resolveInfo="UnaryLogicalExpression" />
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="3830958861296793250" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725733873" value="!" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473891462" resolveInfo="alias" />
-    </node>
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="4058325937810995771" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725733873" value="logical not" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473914776" resolveInfo="shortDescription" />
-    </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="6610873504380029780" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="CastExpression" />
@@ -625,14 +335,6 @@
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="((..)..)" />
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="downcast an expression" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="8860443239512128050" resolveInfo="Expression" />
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="8000796061690176390" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725733873" value="((..)..)" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473891462" resolveInfo="alias" />
-    </node>
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="4058325937810995700" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725733873" value="downcast an expression" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473914776" resolveInfo="shortDescription" />
-    </node>
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="6610873504380029782" nodeInfo="ig">
       <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
       <property name="role" nameId="tpce.1071599776563" value="expr" />
@@ -658,14 +360,6 @@
       <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
       <link role="target" roleId="tpce.1071599976176" targetNodeId="8860443239512128050" resolveInfo="Expression" />
     </node>
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="6631303246401933800" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725733873" value="int2bool" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473891462" resolveInfo="alias" />
-    </node>
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="4058325937810995738" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725733873" value="cast an int to boolean" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473914776" resolveInfo="shortDescription" />
-    </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="3005510381523579442" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="expr" />
@@ -679,13 +373,6 @@
       <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
       <link role="target" roleId="tpce.1071599976176" targetNodeId="8860443239512128050" resolveInfo="Expression" />
     </node>
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.BooleanConceptProperty" typeId="tpce.1105725574259" id="3005510381523579443" nodeInfo="ig">
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473854053" resolveInfo="abstract" />
-    </node>
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="4058325937810995807" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725733873" value="--" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473914776" resolveInfo="shortDescription" />
-    </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4296381507831569050" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="types.cast" />
@@ -693,14 +380,6 @@
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="int2char" />
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="cast an int to char" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="8860443239512128050" resolveInfo="Expression" />
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="4296381507831569051" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725733873" value="int2char" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473891462" resolveInfo="alias" />
-    </node>
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="4058325937810995740" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725733873" value="cast an int to char" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473914776" resolveInfo="shortDescription" />
-    </node>
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="4296381507831569052" nodeInfo="ig">
       <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
       <property name="role" nameId="tpce.1071599776563" value="expr" />
@@ -718,14 +397,6 @@
       <property name="name" nameId="tpck.1169194664001" value="value" />
       <link role="dataType" roleId="tpce.1082985295845" targetNodeId="tpck.1082983041843" resolveInfo="string" />
     </node>
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="1664480272136214702" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725733873" value="'" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473891462" resolveInfo="alias" />
-    </node>
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="4058325937810995702" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725733873" value="character literal" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473914776" resolveInfo="shortDescription" />
-    </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7615572890648529894" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="expr.comp" />
@@ -733,18 +404,6 @@
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="not equals" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="!=" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="4006257212296698015" resolveInfo="BinaryEqualityComparisonExpression" />
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="7615572890648529895" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725733873" value="!=" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473891462" resolveInfo="alias" />
-    </node>
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.IntegerConceptProperty" typeId="tpce.1105725498741" id="7615572890648529897" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725713309" value="915" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="5763383285156530264" resolveInfo="priolevel" />
-    </node>
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="4058325937810995769" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725733873" value="not equals" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473914776" resolveInfo="shortDescription" />
-    </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="9013371069686136255" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="expr.arith.binary" />
@@ -754,18 +413,6 @@
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="5763383285156372997" resolveInfo="BinaryArithmeticExpression" />
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="3342324201518940094" nodeInfo="ig">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="3342324201518846461" resolveInfo="INumberOperation" />
-    </node>
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.IntegerConceptProperty" typeId="tpce.1105725498741" id="9013371069686137189" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725713309" value="950" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="5763383285156530264" resolveInfo="priolevel" />
-    </node>
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="9013371069686137191" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725733873" value="&lt;&lt;" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473891462" resolveInfo="alias" />
-    </node>
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="4058325937810995692" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725733873" value="bitwise left shift" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473914776" resolveInfo="shortDescription" />
     </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="9013371069685926132" nodeInfo="ig">
@@ -777,18 +424,6 @@
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="3342324201518940097" nodeInfo="ig">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="3342324201518846461" resolveInfo="INumberOperation" />
     </node>
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.IntegerConceptProperty" typeId="tpce.1105725498741" id="9013371069685926133" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725713309" value="800" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="5763383285156530264" resolveInfo="priolevel" />
-    </node>
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="9013371069685926135" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725733873" value="^" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473891462" resolveInfo="alias" />
-    </node>
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="4058325937810995696" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725733873" value="bitwise xor" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473914776" resolveInfo="shortDescription" />
-    </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="2799490600706093744" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="expr.arith.binary" />
@@ -799,18 +434,6 @@
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="3342324201518940093" nodeInfo="ig">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="3342324201518846461" resolveInfo="INumberOperation" />
     </node>
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="2799490600706113504" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725733873" value="%" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473891462" resolveInfo="alias" />
-    </node>
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.IntegerConceptProperty" typeId="tpce.1105725498741" id="2799490600706113506" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725713309" value="2000" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="5763383285156530264" resolveInfo="priolevel" />
-    </node>
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="4058325937810995765" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725733873" value="modulo" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473914776" resolveInfo="shortDescription" />
-    </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="3820836583575227340" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="expr.arith.directassignment" />
@@ -818,14 +441,6 @@
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="+=" />
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="add assign" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="3820836583575227338" resolveInfo="DirectAssignmentExpression" />
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="3820836583575227341" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725733873" value="+=" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473891462" resolveInfo="alias" />
-    </node>
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="4058325937810995722" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725733873" value="add assign" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473914776" resolveInfo="shortDescription" />
-    </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="3820836583575227338" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="expr.arith.directassignment" />
@@ -833,17 +448,6 @@
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="--" />
     <property name="abstract" nameId="tpce.4628067390765956802" value="true" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="5763383285156372997" resolveInfo="BinaryArithmeticExpression" />
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.BooleanConceptProperty" typeId="tpce.1105725574259" id="3820836583575227339" nodeInfo="ig">
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473854053" resolveInfo="abstract" />
-    </node>
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.IntegerConceptProperty" typeId="tpce.1105725498741" id="3820836583575351381" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725713309" value="100" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="5763383285156530264" resolveInfo="priolevel" />
-    </node>
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="4058325937810995705" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725733873" value="--" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473914776" resolveInfo="shortDescription" />
-    </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="3976803464656498416" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="expr.arith.unary" />
@@ -851,21 +455,6 @@
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="post decrement" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="--" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="4375898003726285484" resolveInfo="UnaryArithmeticExpression" />
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="3976803464656498417" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725733873" value="--" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473891462" resolveInfo="alias" />
-    </node>
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.IntegerConceptProperty" typeId="tpce.1105725498741" id="5907789332853856129" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725713309" value="4000" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="5763383285156530264" resolveInfo="priolevel" />
-    </node>
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="4058325937810995781" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725733873" value="post decrement" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473914776" resolveInfo="shortDescription" />
-    </node>
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.BooleanConceptProperty" typeId="tpce.1105725574259" id="4420643699735340192" nodeInfo="ig">
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473994950" resolveInfo="dontSubstituteByDefault" />
-    </node>
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="6584628407655574725" nodeInfo="ig">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="tpck.1835621062190663819" resolveInfo="IDontSubstituteByDefault" />
     </node>
@@ -876,18 +465,6 @@
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="pre decrement" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="--" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="4375898003726285484" resolveInfo="UnaryArithmeticExpression" />
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.IntegerConceptProperty" typeId="tpce.1105725498741" id="5907789332853856133" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725713309" value="3000" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="5763383285156530264" resolveInfo="priolevel" />
-    </node>
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="3976803464656498419" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725733873" value="--" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473891462" resolveInfo="alias" />
-    </node>
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="4058325937810995785" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725733873" value="pre decrement" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473914776" resolveInfo="shortDescription" />
-    </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="3976803464656556878" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="expr.arith.unary" />
@@ -895,18 +472,6 @@
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="arithmetic not" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="~" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="4375898003726285484" resolveInfo="UnaryArithmeticExpression" />
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="3976803464656556879" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725733873" value="~" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473891462" resolveInfo="alias" />
-    </node>
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.IntegerConceptProperty" typeId="tpce.1105725498741" id="5907789332853856141" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725713309" value="3000" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="5763383285156530264" resolveInfo="priolevel" />
-    </node>
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="4058325937810995806" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725733873" value="arithmetic not" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473914776" resolveInfo="shortDescription" />
-    </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="3976803464656531170" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="expr.arith.unary" />
@@ -914,18 +479,6 @@
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="unary minus" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="-" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="4375898003726285484" resolveInfo="UnaryArithmeticExpression" />
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="3976803464656531171" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725733873" value="-" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473891462" resolveInfo="alias" />
-    </node>
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.IntegerConceptProperty" typeId="tpce.1105725498741" id="5907789332853856138" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725713309" value="3000" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="5763383285156530264" resolveInfo="priolevel" />
-    </node>
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="4058325937810995810" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725733873" value="unary minus" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473914776" resolveInfo="shortDescription" />
-    </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7193082937527768541" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="expr.arith.directassignment" />
@@ -933,14 +486,6 @@
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="|=" />
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="bitwise or assign" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="3820836583575227338" resolveInfo="DirectAssignmentExpression" />
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="7193082937527768542" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725733873" value="|=" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473891462" resolveInfo="alias" />
-    </node>
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="4058325937810995711" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725733873" value="bitwise or assign" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473914776" resolveInfo="shortDescription" />
-    </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7193082937527768537" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="expr.arith.directassignment" />
@@ -948,14 +493,6 @@
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="and assign" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="&amp;=" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="3820836583575227338" resolveInfo="DirectAssignmentExpression" />
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="7193082937527768538" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725733873" value="&amp;=" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473891462" resolveInfo="alias" />
-    </node>
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="4058325937810995707" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725733873" value="and assign" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473914776" resolveInfo="shortDescription" />
-    </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7193082937527768539" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="expr.arith.directassignment" />
@@ -963,14 +500,6 @@
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="^=" />
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="bitwise xor assign" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="3820836583575227338" resolveInfo="DirectAssignmentExpression" />
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="7193082937527768540" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725733873" value="^=" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473891462" resolveInfo="alias" />
-    </node>
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="4058325937810995715" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725733873" value="bitwise xor assign" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473914776" resolveInfo="shortDescription" />
-    </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7193082937527768533" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="expr.arith.directassignment" />
@@ -978,14 +507,6 @@
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="bitwise left shift assign" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="&lt;&lt;=" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="3820836583575227338" resolveInfo="DirectAssignmentExpression" />
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="7193082937527768534" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725733873" value="&lt;&lt;=" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473891462" resolveInfo="alias" />
-    </node>
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="4058325937810995709" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725733873" value="bitwise left shift assign" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473914776" resolveInfo="shortDescription" />
-    </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7193082937527768535" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="expr.arith.directassignment" />
@@ -993,14 +514,6 @@
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="bitwise right shift assign" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="&gt;&gt;=" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="3820836583575227338" resolveInfo="DirectAssignmentExpression" />
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="7193082937527768536" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725733873" value="&gt;&gt;=" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473891462" resolveInfo="alias" />
-    </node>
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="4058325937810995713" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725733873" value="bitwise right shift assign" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473914776" resolveInfo="shortDescription" />
-    </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4273030818770088796" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="expr.arith.directassignment" />
@@ -1008,14 +521,6 @@
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="*=" />
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="multiply assign" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="3820836583575227338" resolveInfo="DirectAssignmentExpression" />
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="4273030818770088822" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725733873" value="*=" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473891462" resolveInfo="alias" />
-    </node>
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="4058325937810995721" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725733873" value="multiply assign" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473914776" resolveInfo="shortDescription" />
-    </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4273030818770088794" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="expr.arith.directassignment" />
@@ -1023,14 +528,6 @@
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="subtract and assign" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="-=" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="3820836583575227338" resolveInfo="DirectAssignmentExpression" />
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="4273030818770088795" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725733873" value="-=" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473891462" resolveInfo="alias" />
-    </node>
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="4058325937810995719" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725733873" value="subtract and assign" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473914776" resolveInfo="shortDescription" />
-    </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7193082937527768531" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="expr.arith.directassignment" />
@@ -1038,14 +535,6 @@
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="%=" />
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="modulo assign" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="3820836583575227338" resolveInfo="DirectAssignmentExpression" />
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="7193082937527768532" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725733873" value="%=" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473891462" resolveInfo="alias" />
-    </node>
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="4058325937810995720" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725733873" value="modulo assign" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473914776" resolveInfo="shortDescription" />
-    </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4375898003726285486" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="expr.arith.unary" />
@@ -1053,21 +542,6 @@
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="post increment" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="++" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="4375898003726285484" resolveInfo="UnaryArithmeticExpression" />
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="4375898003726317650" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725733873" value="++" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473891462" resolveInfo="alias" />
-    </node>
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.IntegerConceptProperty" typeId="tpce.1105725498741" id="5907789332853856131" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725713309" value="4000" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="5763383285156530264" resolveInfo="priolevel" />
-    </node>
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="4058325937810995783" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725733873" value="post increment" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473914776" resolveInfo="shortDescription" />
-    </node>
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.BooleanConceptProperty" typeId="tpce.1105725574259" id="4420643699735340195" nodeInfo="ig">
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473994950" resolveInfo="dontSubstituteByDefault" />
-    </node>
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="6584628407655574728" nodeInfo="ig">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="tpck.1835621062190663819" resolveInfo="IDontSubstituteByDefault" />
     </node>
@@ -1078,18 +552,6 @@
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="pre increment" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="++" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="4375898003726285484" resolveInfo="UnaryArithmeticExpression" />
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="4375898003726285488" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725733873" value="++" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473891462" resolveInfo="alias" />
-    </node>
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.IntegerConceptProperty" typeId="tpce.1105725498741" id="5907789332853855395" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725713309" value="3000" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="5763383285156530264" resolveInfo="priolevel" />
-    </node>
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="4058325937810995787" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725733873" value="pre increment" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473914776" resolveInfo="shortDescription" />
-    </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4375898003726285484" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="expr.arith.unary" />
@@ -1097,13 +559,6 @@
     <property name="abstract" nameId="tpce.4628067390765956802" value="true" />
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="--" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="3005510381523579442" resolveInfo="UnaryExpression" />
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.BooleanConceptProperty" typeId="tpce.1105725574259" id="4375898003726285485" nodeInfo="ig">
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473854053" resolveInfo="abstract" />
-    </node>
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="4058325937810995805" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725733873" value="--" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473914776" resolveInfo="shortDescription" />
-    </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="5962749441518381743" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="BitwiseAndExpression" />
@@ -1111,18 +566,6 @@
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="&amp;" />
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="bitwise and" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="5763383285156372997" resolveInfo="BinaryArithmeticExpression" />
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="5962749441518381744" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725733873" value="&amp;" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473891462" resolveInfo="alias" />
-    </node>
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.IntegerConceptProperty" typeId="tpce.1105725498741" id="5962749441518381745" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725713309" value="990" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="5763383285156530264" resolveInfo="priolevel" />
-    </node>
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="4058325937810995690" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725733873" value="bitwise and" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473914776" resolveInfo="shortDescription" />
-    </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4273030818770088820" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="expr.arith.directassignment" />
@@ -1130,14 +573,6 @@
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="/=" />
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="divide and assign" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="3820836583575227338" resolveInfo="DirectAssignmentExpression" />
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="4273030818770088821" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725733873" value="/=" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473891462" resolveInfo="alias" />
-    </node>
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="4058325937810995717" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725733873" value="divide and assign" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473914776" resolveInfo="shortDescription" />
-    </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="1136530067488156615" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="expr.arith.binary" />
@@ -1148,18 +583,6 @@
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="3342324201518940095" nodeInfo="ig">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="3342324201518846461" resolveInfo="INumberOperation" />
     </node>
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.IntegerConceptProperty" typeId="tpce.1105725498741" id="1136530067488156616" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725713309" value="970" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="5763383285156530264" resolveInfo="priolevel" />
-    </node>
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="1136530067488156618" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725733873" value="|" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473891462" resolveInfo="alias" />
-    </node>
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="4058325937810995694" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725733873" value="bitwise or" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473914776" resolveInfo="shortDescription" />
-    </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7615572890648780049" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="expr.logic.unary" />
@@ -1167,17 +590,6 @@
     <property name="abstract" nameId="tpce.4628067390765956802" value="true" />
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="--" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="3005510381523579442" resolveInfo="UnaryExpression" />
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.BooleanConceptProperty" typeId="tpce.1105725574259" id="4058325937811483735" nodeInfo="ig">
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473854053" resolveInfo="abstract" />
-    </node>
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.IntegerConceptProperty" typeId="tpce.1105725498741" id="5907789332853856139" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725713309" value="3000" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="5763383285156530264" resolveInfo="priolevel" />
-    </node>
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="4058325937810995808" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725733873" value="--" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473914776" resolveInfo="shortDescription" />
-    </node>
   </root>
   <root type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="3342324201518846461" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="expr" />
@@ -1189,14 +601,6 @@
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="C long type" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="long" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="5569318043967823834" resolveInfo="PrimitiveBasicIntegralType" />
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="86532984527104143" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725733873" value="long" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473891462" resolveInfo="alias" />
-    </node>
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="4058325937810995761" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725733873" value="C long type" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473914776" resolveInfo="shortDescription" />
-    </node>
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="2384034043170171918" nodeInfo="ig">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="2384034043170171910" resolveInfo="ISigned" />
     </node>
@@ -1210,18 +614,6 @@
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="3342324201518940096" nodeInfo="ig">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="3342324201518846461" resolveInfo="INumberOperation" />
     </node>
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.IntegerConceptProperty" typeId="tpce.1105725498741" id="9013371069685947729" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725713309" value="950" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="5763383285156530264" resolveInfo="priolevel" />
-    </node>
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="9013371069685947731" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725733873" value="&gt;&gt;" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473891462" resolveInfo="alias" />
-    </node>
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="4058325937810995695" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725733873" value="bitwise right shift" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473914776" resolveInfo="shortDescription" />
-    </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="1054289341113496566" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="literals" />
@@ -1232,14 +624,6 @@
     <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="1054289341113496567" nodeInfo="ig">
       <property name="name" nameId="tpck.1169194664001" value="value" />
       <link role="dataType" roleId="tpce.1082985295845" targetNodeId="tpck.1082983041843" resolveInfo="string" />
-    </node>
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="1054289341113496578" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725733873" value="bin" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473891462" resolveInfo="alias" />
-    </node>
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="4058325937810995687" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725733873" value="binary number (010101)" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473914776" resolveInfo="shortDescription" />
     </node>
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="5289481837639973218" nodeInfo="ig">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="5289481837639973214" resolveInfo="INumericLiteral" />
@@ -1255,14 +639,6 @@
       <property name="name" nameId="tpck.1169194664001" value="value" />
       <link role="dataType" roleId="tpce.1082985295845" targetNodeId="tpck.1082983041843" resolveInfo="string" />
     </node>
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="1054289341113450446" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725733873" value="hex" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473891462" resolveInfo="alias" />
-    </node>
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="4058325937810995734" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725733873" value="a hex number (AFFE)" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473914776" resolveInfo="shortDescription" />
-    </node>
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="5289481837639973217" nodeInfo="ig">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="5289481837639973214" resolveInfo="INumericLiteral" />
     </node>
@@ -1273,17 +649,9 @@
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="octal number literal (6721)" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="oct" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="8860443239512128090" resolveInfo="Literal" />
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="4058325937810995773" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725733873" value="octal number literal (6721)" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473914776" resolveInfo="shortDescription" />
-    </node>
     <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="938100142480245062" nodeInfo="ig">
       <property name="name" nameId="tpck.1169194664001" value="value" />
       <link role="dataType" roleId="tpce.1082985295845" targetNodeId="tpck.1082983041843" resolveInfo="string" />
-    </node>
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="938100142480245063" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725733873" value="oct" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473891462" resolveInfo="alias" />
     </node>
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="5289481837639973216" nodeInfo="ig">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="5289481837639973214" resolveInfo="INumericLiteral" />
@@ -1297,13 +665,6 @@
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="8860443239512128056" resolveInfo="PrimitiveType" />
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="1762375172531673444" nodeInfo="ig">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="5763383285156372998" resolveInfo="INumber" />
-    </node>
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.BooleanConceptProperty" typeId="tpce.1105725574259" id="8463282783691490870" nodeInfo="ig">
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473854053" resolveInfo="abstract" />
-    </node>
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="4058325937810995790" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725733873" value="--" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473914776" resolveInfo="shortDescription" />
     </node>
     <node role="conceptPropertyDeclaration" roleId="tpce.1137467167200" type="tpce.IntegerConceptPropertyDeclaration" typeId="tpce.1105725141344" id="3678395359193847342" nodeInfo="ig">
       <property name="name" nameId="tpck.1169194664001" value="size" />
@@ -1319,14 +680,6 @@
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="unsigned char" />
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="C unsigned char type" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="5569318043967823834" resolveInfo="PrimitiveBasicIntegralType" />
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="8463282783691492723" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725733873" value="unsigned char" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473891462" resolveInfo="alias" />
-    </node>
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="4058325937810995812" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725733873" value="C unsigned char type" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473914776" resolveInfo="shortDescription" />
-    </node>
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="8463282783691492717" nodeInfo="ig">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="8860443239512166593" resolveInfo="IComparable" />
     </node>
@@ -1343,14 +696,6 @@
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="unsigned int" />
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="C unsigned int type" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="5569318043967823834" resolveInfo="PrimitiveBasicIntegralType" />
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="8463282783691492731" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725733873" value="unsigned int" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473891462" resolveInfo="alias" />
-    </node>
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="4058325937810995819" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725733873" value="C unsigned int type" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473914776" resolveInfo="shortDescription" />
-    </node>
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="8463282783691492732" nodeInfo="ig">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="8860443239512166593" resolveInfo="IComparable" />
     </node>
@@ -1367,14 +712,6 @@
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="16 bit unsigned long" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="unsigned long" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="5569318043967823834" resolveInfo="PrimitiveBasicIntegralType" />
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="8463282783691596311" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725733873" value="unsigned long" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473891462" resolveInfo="alias" />
-    </node>
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="4058325937810995821" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725733873" value="16 bit unsigned long" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473914776" resolveInfo="shortDescription" />
-    </node>
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="8463282783691596312" nodeInfo="ig">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="8860443239512166593" resolveInfo="IComparable" />
     </node>
@@ -1391,14 +728,6 @@
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="C long long type" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="long long" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="5569318043967823834" resolveInfo="PrimitiveBasicIntegralType" />
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="8463282783691596320" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725733873" value="long long" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473891462" resolveInfo="alias" />
-    </node>
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="4058325937810995759" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725733873" value="C long long type" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473914776" resolveInfo="shortDescription" />
-    </node>
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="2384034043170171917" nodeInfo="ig">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="2384034043170171910" resolveInfo="ISigned" />
     </node>
@@ -1409,18 +738,6 @@
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="int8" />
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="8 bit int type" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="8463282783691490869" resolveInfo="PrimitiveC99IntegralType" />
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="8463282783691618434" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725733873" value="int8" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473891462" resolveInfo="alias" />
-    </node>
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.IntegerConceptProperty" typeId="tpce.1105725498741" id="3678395359193847350" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725713309" value="8" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="3678395359193847342" resolveInfo="size" />
-    </node>
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="4058325937810995746" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725733873" value="8 bit int type" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473914776" resolveInfo="shortDescription" />
-    </node>
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="2384034043170171914" nodeInfo="ig">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="2384034043170171910" resolveInfo="ISigned" />
     </node>
@@ -1431,18 +748,6 @@
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="16 bit int type" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="int16" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="8463282783691490869" resolveInfo="PrimitiveC99IntegralType" />
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="8463282783691618439" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725733873" value="int16" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473891462" resolveInfo="alias" />
-    </node>
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.IntegerConceptProperty" typeId="tpce.1105725498741" id="3678395359193847344" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725713309" value="16" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="3678395359193847342" resolveInfo="size" />
-    </node>
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="4058325937810995736" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725733873" value="16 bit int type" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473914776" resolveInfo="shortDescription" />
-    </node>
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="2384034043170171911" nodeInfo="ig">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="2384034043170171910" resolveInfo="ISigned" />
     </node>
@@ -1453,18 +758,6 @@
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="int32" />
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="32 bit int type" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="8463282783691490869" resolveInfo="PrimitiveC99IntegralType" />
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.IntegerConceptProperty" typeId="tpce.1105725498741" id="3678395359193847346" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725713309" value="32" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="3678395359193847342" resolveInfo="size" />
-    </node>
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="8463282783691618444" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725733873" value="int32" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473891462" resolveInfo="alias" />
-    </node>
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="4058325937810995742" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725733873" value="32 bit int type" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473914776" resolveInfo="shortDescription" />
-    </node>
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="2384034043170171912" nodeInfo="ig">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="2384034043170171910" resolveInfo="ISigned" />
     </node>
@@ -1475,18 +768,6 @@
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="64 bit int type" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="int64" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="8463282783691490869" resolveInfo="PrimitiveC99IntegralType" />
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.IntegerConceptProperty" typeId="tpce.1105725498741" id="3678395359193847348" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725713309" value="64" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="3678395359193847342" resolveInfo="size" />
-    </node>
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="8463282783691618449" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725733873" value="int64" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473891462" resolveInfo="alias" />
-    </node>
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="4058325937810995744" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725733873" value="64 bit int type" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473914776" resolveInfo="shortDescription" />
-    </node>
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="2384034043170171913" nodeInfo="ig">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="2384034043170171910" resolveInfo="ISigned" />
     </node>
@@ -1506,18 +787,6 @@
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7058269619789050749" nodeInfo="ig">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="7058269619789050743" resolveInfo="IUnsigned" />
     </node>
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="8463282783691618454" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725733873" value="uint32" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473891462" resolveInfo="alias" />
-    </node>
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.IntegerConceptProperty" typeId="tpce.1105725498741" id="3678395359193847353" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725713309" value="32" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="3678395359193847342" resolveInfo="size" />
-    </node>
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="4058325937810995816" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725733873" value="32 bit unsigned int" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473914776" resolveInfo="shortDescription" />
-    </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="8463282783691618456" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="types.c99" />
@@ -1533,18 +802,6 @@
     </node>
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7058269619789050747" nodeInfo="ig">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="7058269619789050743" resolveInfo="IUnsigned" />
-    </node>
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="8463282783691618460" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725733873" value="uint64" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473891462" resolveInfo="alias" />
-    </node>
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.IntegerConceptProperty" typeId="tpce.1105725498741" id="3678395359193847355" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725713309" value="64" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="3678395359193847342" resolveInfo="size" />
-    </node>
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="4058325937810995817" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725733873" value="64 bit unsigned int" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473914776" resolveInfo="shortDescription" />
     </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="8463282783691618461" nodeInfo="ig">
@@ -1562,18 +819,6 @@
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7058269619789050745" nodeInfo="ig">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="7058269619789050743" resolveInfo="IUnsigned" />
     </node>
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="8463282783691618465" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725733873" value="uint8" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473891462" resolveInfo="alias" />
-    </node>
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.IntegerConceptProperty" typeId="tpce.1105725498741" id="3678395359193847357" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725713309" value="8" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="3678395359193847342" resolveInfo="size" />
-    </node>
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="4058325937810995818" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725733873" value="8 bit unsigned int" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473914776" resolveInfo="shortDescription" />
-    </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="8463282783691618466" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="types.c99" />
@@ -1590,18 +835,6 @@
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7058269619789050751" nodeInfo="ig">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="7058269619789050743" resolveInfo="IUnsigned" />
     </node>
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="8463282783691618470" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725733873" value="uint16" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473891462" resolveInfo="alias" />
-    </node>
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.IntegerConceptProperty" typeId="tpce.1105725498741" id="3678395359193847351" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725713309" value="16" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="3678395359193847342" resolveInfo="size" />
-    </node>
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="4058325937810995814" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725733873" value="16 bit unsigned int" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473914776" resolveInfo="shortDescription" />
-    </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="8463282783691618471" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="types.basic" />
@@ -1609,14 +842,6 @@
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="unsigned long long" />
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="C unsigned long long type" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="5569318043967823834" resolveInfo="PrimitiveBasicIntegralType" />
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="8463282783691618472" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725733873" value="unsigned long long" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473891462" resolveInfo="alias" />
-    </node>
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="4058325937810995820" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725733873" value="C unsigned long long type" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473914776" resolveInfo="shortDescription" />
-    </node>
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="8463282783691618473" nodeInfo="ig">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="8860443239512166593" resolveInfo="IComparable" />
     </node>
@@ -1639,10 +864,6 @@
     </node>
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="8202952451359187770" nodeInfo="ig">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="vs0r.7123462210702867708" resolveInfo="ILOCCountProvider" />
-    </node>
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="4058325937810995803" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725733873" value="define the type size mapping" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473914776" resolveInfo="shortDescription" />
     </node>
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="3813668170744198630" nodeInfo="ig">
       <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
@@ -1684,10 +905,6 @@
     <property name="virtualPackage" nameId="tpck.1193676396447" value="typeSizeSpec" />
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="a mapping from a C99 type to an integral type" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="4058325937810995804" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725733873" value="a mapping from a C99 type to an integral type" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473914776" resolveInfo="shortDescription" />
-    </node>
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="7496733358578231498" nodeInfo="ig">
       <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
       <property name="role" nameId="tpce.1071599776563" value="basicType" />
@@ -1710,14 +927,6 @@
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="C short type" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="short" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="5569318043967823834" resolveInfo="PrimitiveBasicIntegralType" />
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="3335993110369949932" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725733873" value="short" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473891462" resolveInfo="alias" />
-    </node>
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="4058325937810995793" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725733873" value="C short type" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473914776" resolveInfo="shortDescription" />
-    </node>
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="2384034043170171919" nodeInfo="ig">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="2384034043170171910" resolveInfo="ISigned" />
     </node>
@@ -1728,14 +937,6 @@
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="char" />
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="C char type" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="5569318043967823834" resolveInfo="PrimitiveBasicIntegralType" />
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="1664480272136207709" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725733873" value="char" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473891462" resolveInfo="alias" />
-    </node>
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="4058325937810995704" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725733873" value="C char type" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473914776" resolveInfo="shortDescription" />
-    </node>
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="2384034043170171915" nodeInfo="ig">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="2384034043170171910" resolveInfo="ISigned" />
     </node>
@@ -1749,13 +950,6 @@
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="4006257212296812975" nodeInfo="ig">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="4006257212296812970" resolveInfo="INumeric" />
     </node>
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.BooleanConceptProperty" typeId="tpce.1105725574259" id="5569318043967823835" nodeInfo="ig">
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473854053" resolveInfo="abstract" />
-    </node>
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="4058325937810995789" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725733873" value="--" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473914776" resolveInfo="shortDescription" />
-    </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="595416243537320771" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="types.basic" />
@@ -1763,14 +957,6 @@
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="C unsigned short type" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="unsigned short" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="5569318043967823834" resolveInfo="PrimitiveBasicIntegralType" />
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="595416243537320772" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725733873" value="unsigned short" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473891462" resolveInfo="alias" />
-    </node>
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="4058325937810995822" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725733873" value="C unsigned short type" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473914776" resolveInfo="shortDescription" />
-    </node>
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="595416243537320773" nodeInfo="ig">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="8860443239512166593" resolveInfo="IComparable" />
     </node>
@@ -1787,14 +973,6 @@
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="size_t to represent sizes" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="size_t" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="8860443239512128056" resolveInfo="PrimitiveType" />
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="8863019357864392149" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725733873" value="size_t" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473891462" resolveInfo="alias" />
-    </node>
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="4058325937810995794" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725733873" value="size_t to represent sizes" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473914776" resolveInfo="shortDescription" />
-    </node>
   </root>
   <root type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="318113533128716675" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="ITyped" />
@@ -1809,10 +987,6 @@
     <property name="name" nameId="tpck.1169194664001" value="IEEE754TypeSizeSpecification" />
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="--" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="4058325937810995735" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725733873" value="--" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473914776" resolveInfo="shortDescription" />
-    </node>
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="9149785691755093697" nodeInfo="ig">
       <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
       <property name="role" nameId="tpce.1071599776563" value="basicType" />
@@ -1835,18 +1009,6 @@
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="long double" />
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="C long double type" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="9149785691754537075" resolveInfo="PrimitiveIEEE754Type" />
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="9149785691754701076" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725733873" value="long double" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473891462" resolveInfo="alias" />
-    </node>
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.IntegerConceptProperty" typeId="tpce.1105725498741" id="9149785691754701078" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725713309" value="128" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="9149785691754537077" resolveInfo="size" />
-    </node>
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="4058325937810995757" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725733873" value="C long double type" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473914776" resolveInfo="shortDescription" />
-    </node>
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="2384034043170171922" nodeInfo="ig">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="2384034043170171910" resolveInfo="ISigned" />
     </node>
@@ -1874,14 +1036,6 @@
       <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
       <link role="target" roleId="tpce.1071599976176" targetNodeId="8860443239512128050" resolveInfo="Expression" />
     </node>
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="8729447926330528690" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725733873" value="?" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473891462" resolveInfo="alias" />
-    </node>
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="4058325937810995799" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725733873" value="ternary expression (cond ? then : else)" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473914776" resolveInfo="shortDescription" />
-    </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="9149785691754537075" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="types.ieee754" />
@@ -1894,13 +1048,6 @@
     </node>
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="4006257212296812974" nodeInfo="ig">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="4006257212296812970" resolveInfo="INumeric" />
-    </node>
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.BooleanConceptProperty" typeId="tpce.1105725574259" id="9149785691754537076" nodeInfo="ig">
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473854053" resolveInfo="abstract" />
-    </node>
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="4058325937810995791" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725733873" value="--" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473914776" resolveInfo="shortDescription" />
     </node>
     <node role="conceptPropertyDeclaration" roleId="tpce.1137467167200" type="tpce.IntegerConceptPropertyDeclaration" typeId="tpce.1105725141344" id="9149785691754537077" nodeInfo="ig">
       <property name="name" nameId="tpck.1169194664001" value="size" />
@@ -1922,14 +1069,6 @@
       <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
       <link role="target" roleId="tpce.1071599976176" targetNodeId="8860443239512128050" resolveInfo="Expression" />
     </node>
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="5947739078127951577" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725733873" value="bool2int" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473891462" resolveInfo="alias" />
-    </node>
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="5947739078127951578" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725733873" value="cast a boolean to an int8_t" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473914776" resolveInfo="shortDescription" />
-    </node>
   </root>
   <root type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="7318340272896698379" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="types" />
@@ -1944,18 +1083,12 @@
     <property name="name" nameId="tpck.1169194664001" value="BinaryOrderedComparisonExpression" />
     <property name="abstract" nameId="tpce.4628067390765956802" value="true" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="8860443239512128063" resolveInfo="BinaryComparisonExpression" />
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.BooleanConceptProperty" typeId="tpce.1105725574259" id="1762375172531559816" nodeInfo="ig">
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473854053" resolveInfo="abstract" />
-    </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4006257212296698015" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="expr.comp" />
     <property name="name" nameId="tpck.1169194664001" value="BinaryEqualityComparisonExpression" />
     <property name="abstract" nameId="tpce.4628067390765956802" value="true" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="8860443239512128063" resolveInfo="BinaryComparisonExpression" />
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.BooleanConceptProperty" typeId="tpce.1105725574259" id="4006257212296698016" nodeInfo="ig">
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473854053" resolveInfo="abstract" />
-    </node>
   </root>
   <root type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="8793291511880188110" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="IStopReshuffling" />
@@ -1978,9 +1111,6 @@
       <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
       <link role="target" roleId="tpce.1071599976176" targetNodeId="5763383285156461605" resolveInfo="IMemberReference" />
     </node>
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.BooleanConceptProperty" typeId="tpce.1105725574259" id="1452920870317533093" nodeInfo="ig">
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473854053" resolveInfo="abstract" />
-    </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="22102029902365709" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="expr" />
@@ -1988,18 +1118,6 @@
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="=" />
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="assignment" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="8860443239512128052" resolveInfo="BinaryExpression" />
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="22102029902365710" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725733873" value="=" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473891462" resolveInfo="alias" />
-    </node>
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="22102029902365712" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725733873" value="assignment" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473914776" resolveInfo="shortDescription" />
-    </node>
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.IntegerConceptProperty" typeId="tpce.1105725498741" id="22102029902365716" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725713309" value="100" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="5763383285156530264" resolveInfo="priolevel" />
-    </node>
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="4621481987179741792" nodeInfo="ig">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="3196454794517236255" resolveInfo="IDataflowAssignment" />
     </node>
@@ -2010,9 +1128,6 @@
     <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="2604304000476764369" nodeInfo="ig">
       <property name="name" nameId="tpck.1169194664001" value="raw_signature" />
       <link role="dataType" roleId="tpce.1082985295845" targetNodeId="tpck.1082983041843" resolveInfo="string" />
-    </node>
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.BooleanConceptProperty" typeId="tpce.1105725574259" id="7265792597306864463" nodeInfo="ig">
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473994950" resolveInfo="dontSubstituteByDefault" />
     </node>
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="6584628407655574936" nodeInfo="ig">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="tpck.1835621062190663819" resolveInfo="IDontSubstituteByDefault" />
@@ -2038,14 +1153,6 @@
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="unsafe" />
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="downcast an (incompatible) expression" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="8860443239512128050" resolveInfo="Expression" />
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="6035922876555101587" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725733873" value="unsafe" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473891462" resolveInfo="alias" />
-    </node>
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="7664133259366168731" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725733873" value="downcast an (incompatible) expression" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473914776" resolveInfo="shortDescription" />
-    </node>
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="7664133259366168729" nodeInfo="ig">
       <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
       <property name="role" nameId="tpce.1071599776563" value="expr" />
@@ -2064,10 +1171,6 @@
     <property name="name" nameId="tpck.1169194664001" value="ConstCast" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="constcast" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="3005510381523579442" resolveInfo="UnaryExpression" />
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="8428744930541292313" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725733873" value="constcast" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473891462" resolveInfo="alias" />
-    </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="6035922876555486166" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="types" />
@@ -2075,32 +1178,17 @@
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="ptrdiff_t" />
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="represents the size of a pointer" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="8860443239512128056" resolveInfo="PrimitiveType" />
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="6035922876555486167" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725733873" value="ptrdiff_t" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473891462" resolveInfo="alias" />
-    </node>
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="6035922876555486168" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725733873" value="represents the size of a pointer" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473914776" resolveInfo="shortDescription" />
-    </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="333705943706599770" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="types.cast" />
     <property name="name" nameId="tpck.1169194664001" value="VolatileCast" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="volatilecast" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="3005510381523579442" resolveInfo="UnaryExpression" />
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="333705943706599771" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725733873" value="volatilecast" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473891462" resolveInfo="alias" />
-    </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="3795266832289055347" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="types.c99" />
     <property name="name" nameId="tpck.1169194664001" value="PC99MeetType" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpd4.1188473524530" resolveInfo="MeetType" />
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.BooleanConceptProperty" typeId="tpce.1105725574259" id="1090431670133989585" nodeInfo="ig">
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473994950" resolveInfo="dontSubstituteByDefault" />
-    </node>
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="6584628407655574869" nodeInfo="ig">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="tpck.1835621062190663819" resolveInfo="IDontSubstituteByDefault" />
     </node>
@@ -2218,14 +1306,6 @@
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="va_list" />
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="va_list to variable length lists" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="8860443239512128056" resolveInfo="PrimitiveType" />
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="5598157691785092835" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725733873" value="va_list" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473891462" resolveInfo="alias" />
-    </node>
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="5598157691785092836" nodeInfo="ig">
-      <property name="value" nameId="tpce.1105725733873" value="va_list to variable length lists" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473914776" resolveInfo="shortDescription" />
-    </node>
   </root>
   <root type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="892278390190631052" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="ISelfTypingInBinaryExpression" />
