@@ -67,11 +67,9 @@
             <node role="initializer" roleId="tpee.1068431790190" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="8118611477531793896" nodeInfo="nn">
               <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="fxhk.8118611477531746930" resolveInfo="checkRobustness" />
               <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="fxhk.8118611477531746924" resolveInfo="CBMCAnalysesFacade" />
-              <node role="actualArgument" roleId="tpee.1068499141038" type="tp25.ModuleReferenceExpression" typeId="tp25.4040588429969021681" id="8118611477531793914" nodeInfo="nn">
-                <property name="moduleId" nameId="tp25.4040588429969021683" value="094b2842-e972-4406-b60e-898cdcdb9de5" />
-              </node>
-              <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="8118611477531793920" nodeInfo="nn">
-                <property name="value" nameId="tpee.1070475926801" value="robustness" />
+              <node role="actualArgument" roleId="tpee.1068499141038" type="tp25.ModelReferenceExpression" typeId="tp25.559557797393017698" id="854605433063985571" nodeInfo="nn">
+                <property name="name" nameId="tp25.559557797393017702" value="robustness" />
+                <property name="stereotype" nameId="tp25.559557797393021807" value="" />
               </node>
               <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="8118611477531793918" nodeInfo="nn">
                 <property name="value" nameId="tpee.1070475926801" value="DivByZero" />
@@ -107,7 +105,6 @@
           <node role="states" roleId="o23b.4791280061046137595" type="o23b.CBMCCounterexampleStateTest" typeId="o23b.4791280061046124023" id="4791280061046330075" nodeInfo="ng">
             <property name="nodeKind" nameId="o23b.4791280061046124024" value="call" />
             <property name="nodeValue" nameId="o23b.4791280061046139065" value="main" />
-            <link role="node" roleId="o23b.4791280061046189368" targetNodeId="eqhl.4207776615987961074" />
           </node>
           <node role="states" roleId="o23b.4791280061046137595" type="o23b.CBMCCounterexampleStateTest" typeId="o23b.4791280061046124023" id="4791280061046330076" nodeInfo="ng">
             <property name="nodeKind" nameId="o23b.4791280061046124024" value="argc" />
@@ -192,11 +189,10 @@
             <node role="initializer" roleId="tpee.1068431790190" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="8118611477531967418" nodeInfo="nn">
               <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="fxhk.8118611477531746924" resolveInfo="CBMCAnalysesFacade" />
               <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="fxhk.8118611477531746930" resolveInfo="checkRobustness" />
-              <node role="actualArgument" roleId="tpee.1068499141038" type="tp25.ModuleReferenceExpression" typeId="tp25.4040588429969021681" id="8118611477531967419" nodeInfo="nn">
-                <property name="moduleId" nameId="tp25.4040588429969021683" value="094b2842-e972-4406-b60e-898cdcdb9de5" />
-              </node>
-              <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="8118611477531967420" nodeInfo="nn">
-                <property name="value" nameId="tpee.1070475926801" value="robustness" />
+              <node role="actualArgument" roleId="tpee.1068499141038" type="tp25.ModelReferenceExpression" typeId="tp25.559557797393017698" id="854605433064881591" nodeInfo="nn">
+                <property name="fqName" nameId="tp25.559557797393041554" value="pro" />
+                <property name="name" nameId="tp25.559557797393017702" value="robustness" />
+                <property name="stereotype" nameId="tp25.559557797393021807" value="" />
               </node>
               <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="8118611477531967421" nodeInfo="nn">
                 <property name="value" nameId="tpee.1070475926801" value="DivByZeroUninitializedVariable" />
@@ -273,11 +269,10 @@
             <node role="initializer" roleId="tpee.1068431790190" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="8514070329609144129" nodeInfo="nn">
               <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="fxhk.8118611477531746924" resolveInfo="CBMCAnalysesFacade" />
               <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="fxhk.8118611477531746930" resolveInfo="checkRobustness" />
-              <node role="actualArgument" roleId="tpee.1068499141038" type="tp25.ModuleReferenceExpression" typeId="tp25.4040588429969021681" id="8514070329609144130" nodeInfo="nn">
-                <property name="moduleId" nameId="tp25.4040588429969021683" value="094b2842-e972-4406-b60e-898cdcdb9de5" />
-              </node>
-              <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="8514070329609144131" nodeInfo="nn">
-                <property name="value" nameId="tpee.1070475926801" value="robustness" />
+              <node role="actualArgument" roleId="tpee.1068499141038" type="tp25.ModelReferenceExpression" typeId="tp25.559557797393017698" id="854605433064883677" nodeInfo="nn">
+                <property name="fqName" nameId="tp25.559557797393041554" value="pro" />
+                <property name="name" nameId="tp25.559557797393017702" value="robustness" />
+                <property name="stereotype" nameId="tp25.559557797393021807" value="" />
               </node>
               <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="8514070329609144132" nodeInfo="nn">
                 <property name="value" nameId="tpee.1070475926801" value="DivByZeroFloatVar" />
@@ -354,11 +349,10 @@
             <node role="initializer" roleId="tpee.1068431790190" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="8514070329609145071" nodeInfo="nn">
               <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="fxhk.8118611477531746924" resolveInfo="CBMCAnalysesFacade" />
               <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="fxhk.8118611477531746930" resolveInfo="checkRobustness" />
-              <node role="actualArgument" roleId="tpee.1068499141038" type="tp25.ModuleReferenceExpression" typeId="tp25.4040588429969021681" id="8514070329609145072" nodeInfo="nn">
-                <property name="moduleId" nameId="tp25.4040588429969021683" value="094b2842-e972-4406-b60e-898cdcdb9de5" />
-              </node>
-              <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="8514070329609145073" nodeInfo="nn">
-                <property name="value" nameId="tpee.1070475926801" value="robustness" />
+              <node role="actualArgument" roleId="tpee.1068499141038" type="tp25.ModelReferenceExpression" typeId="tp25.559557797393017698" id="854605433064877390" nodeInfo="nn">
+                <property name="fqName" nameId="tp25.559557797393041554" value="pro" />
+                <property name="name" nameId="tp25.559557797393017702" value="robustness" />
+                <property name="stereotype" nameId="tp25.559557797393021807" value="" />
               </node>
               <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="8514070329609145074" nodeInfo="nn">
                 <property name="value" nameId="tpee.1070475926801" value="DivByZeroUserInput" />
@@ -394,7 +388,6 @@
           <node role="states" roleId="o23b.4791280061046137595" type="o23b.CBMCCounterexampleStateTest" typeId="o23b.4791280061046124023" id="4791280061046336106" nodeInfo="ng">
             <property name="nodeKind" nameId="o23b.4791280061046124024" value="call" />
             <property name="nodeValue" nameId="o23b.4791280061046139065" value="userInputVar" />
-            <link role="node" roleId="o23b.4791280061046189368" targetNodeId="eqhl.4207776615987961074" />
           </node>
           <node role="states" roleId="o23b.4791280061046137595" type="o23b.CBMCCounterexampleStateTest" typeId="o23b.4791280061046124023" id="4791280061046336107" nodeInfo="ng">
             <property name="nodeKind" nameId="o23b.4791280061046124024" value="input_var" />
@@ -465,11 +458,10 @@
             <node role="initializer" roleId="tpee.1068431790190" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="8514070329609206011" nodeInfo="nn">
               <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="fxhk.8118611477531746930" resolveInfo="checkRobustness" />
               <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="fxhk.8118611477531746924" resolveInfo="CBMCAnalysesFacade" />
-              <node role="actualArgument" roleId="tpee.1068499141038" type="tp25.ModuleReferenceExpression" typeId="tp25.4040588429969021681" id="8514070329609206012" nodeInfo="nn">
-                <property name="moduleId" nameId="tp25.4040588429969021683" value="094b2842-e972-4406-b60e-898cdcdb9de5" />
-              </node>
-              <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="8514070329609206013" nodeInfo="nn">
-                <property name="value" nameId="tpee.1070475926801" value="robustness" />
+              <node role="actualArgument" roleId="tpee.1068499141038" type="tp25.ModelReferenceExpression" typeId="tp25.559557797393017698" id="854605433064879494" nodeInfo="nn">
+                <property name="fqName" nameId="tp25.559557797393041554" value="pro" />
+                <property name="name" nameId="tp25.559557797393017702" value="robustness" />
+                <property name="stereotype" nameId="tp25.559557797393021807" value="" />
               </node>
               <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="8514070329609206014" nodeInfo="nn">
                 <property name="value" nameId="tpee.1070475926801" value="DivByZeroUnreachable" />
@@ -546,11 +538,10 @@
             <node role="initializer" roleId="tpee.1068431790190" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="6837789449527005465" nodeInfo="nn">
               <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="fxhk.8118611477531746930" resolveInfo="checkRobustness" />
               <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="fxhk.8118611477531746924" resolveInfo="CBMCAnalysesFacade" />
-              <node role="actualArgument" roleId="tpee.1068499141038" type="tp25.ModuleReferenceExpression" typeId="tp25.4040588429969021681" id="6837789449527005466" nodeInfo="nn">
-                <property name="moduleId" nameId="tp25.4040588429969021683" value="094b2842-e972-4406-b60e-898cdcdb9de5" />
-              </node>
-              <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="6837789449527005467" nodeInfo="nn">
-                <property name="value" nameId="tpee.1070475926801" value="robustness" />
+              <node role="actualArgument" roleId="tpee.1068499141038" type="tp25.ModelReferenceExpression" typeId="tp25.559557797393017698" id="854605433064801104" nodeInfo="nn">
+                <property name="fqName" nameId="tp25.559557797393041554" value="pro" />
+                <property name="name" nameId="tp25.559557797393017702" value="robustness" />
+                <property name="stereotype" nameId="tp25.559557797393021807" value="" />
               </node>
               <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="6837789449527005468" nodeInfo="nn">
                 <property name="value" nameId="tpee.1070475926801" value="Pointer" />
@@ -586,7 +577,6 @@
           <node role="states" roleId="o23b.4791280061046137595" type="o23b.CBMCCounterexampleStateTest" typeId="o23b.4791280061046124023" id="6837789449527005458" nodeInfo="ng">
             <property name="nodeKind" nameId="o23b.4791280061046124024" value="call" />
             <property name="nodeValue" nameId="o23b.4791280061046139065" value="smokeNullPointerAccess" />
-            <link role="node" roleId="o23b.4791280061046189368" targetNodeId="eqhl.4207776615987961074" />
           </node>
           <node role="states" roleId="o23b.4791280061046137595" type="o23b.CBMCCounterexampleStateTest" typeId="o23b.4791280061046124023" id="6837789449527005459" nodeInfo="ng">
             <property name="nodeKind" nameId="o23b.4791280061046124024" value="FAIL" />

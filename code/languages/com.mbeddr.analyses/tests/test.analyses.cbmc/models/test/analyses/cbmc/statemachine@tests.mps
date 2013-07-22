@@ -27,11 +27,10 @@
             <node role="initializer" roleId="tpee.1068431790190" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="7554338819202040954" nodeInfo="nn">
               <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="fxhk.7554338819202040865" resolveInfo="checkStatemachine" />
               <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="fxhk.8118611477531746924" resolveInfo="CBMCAnalysesFacade" />
-              <node role="actualArgument" roleId="tpee.1068499141038" type="tp25.ModuleReferenceExpression" typeId="tp25.4040588429969021681" id="7554338819202040955" nodeInfo="nn">
-                <property name="moduleId" nameId="tp25.4040588429969021683" value="094b2842-e972-4406-b60e-898cdcdb9de5" />
-              </node>
-              <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="7554338819202040956" nodeInfo="nn">
-                <property name="value" nameId="tpee.1070475926801" value="statemachines" />
+              <node role="actualArgument" roleId="tpee.1068499141038" type="tp25.ModelReferenceExpression" typeId="tp25.559557797393017698" id="854605433064724622" nodeInfo="nn">
+                <property name="fqName" nameId="tp25.559557797393041554" value="ver" />
+                <property name="name" nameId="tp25.559557797393017702" value="statemachines" />
+                <property name="stereotype" nameId="tp25.559557797393021807" value="" />
               </node>
               <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="7554338819202040957" nodeInfo="nn">
                 <property name="value" nameId="tpee.1070475926801" value="SmokeStatemachine" />

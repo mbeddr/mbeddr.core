@@ -33,11 +33,10 @@
             <node role="initializer" roleId="tpee.1068431790190" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="535044775891205957" nodeInfo="nn">
               <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="fxhk.8118611477531746924" resolveInfo="CBMCAnalysesFacade" />
               <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="fxhk.12378219274825630" resolveInfo="checkProtocol" />
-              <node role="actualArgument" roleId="tpee.1068499141038" type="tp25.ModuleReferenceExpression" typeId="tp25.4040588429969021681" id="535044775891205958" nodeInfo="nn">
-                <property name="moduleId" nameId="tp25.4040588429969021683" value="094b2842-e972-4406-b60e-898cdcdb9de5" />
-              </node>
-              <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="535044775891205959" nodeInfo="nn">
-                <property name="value" nameId="tpee.1070475926801" value="verification_config" />
+              <node role="actualArgument" roleId="tpee.1068499141038" type="tp25.ModelReferenceExpression" typeId="tp25.559557797393017698" id="854605433064726933" nodeInfo="nn">
+                <property name="fqName" nameId="tp25.559557797393041554" value="ver" />
+                <property name="name" nameId="tp25.559557797393017702" value="verification_config" />
+                <property name="stereotype" nameId="tp25.559557797393021807" value="" />
               </node>
               <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="535044775891205960" nodeInfo="nn">
                 <property name="value" nameId="tpee.1070475926801" value="Simple" />
@@ -116,11 +115,10 @@
             <node role="initializer" roleId="tpee.1068431790190" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="2017717622748524699" nodeInfo="nn">
               <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="fxhk.8118611477531746924" resolveInfo="CBMCAnalysesFacade" />
               <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="fxhk.12378219274825630" resolveInfo="checkProtocol" />
-              <node role="actualArgument" roleId="tpee.1068499141038" type="tp25.ModuleReferenceExpression" typeId="tp25.4040588429969021681" id="2017717622748524700" nodeInfo="nn">
-                <property name="moduleId" nameId="tp25.4040588429969021683" value="094b2842-e972-4406-b60e-898cdcdb9de5" />
-              </node>
-              <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="2017717622748524701" nodeInfo="nn">
-                <property name="value" nameId="tpee.1070475926801" value="verification_config" />
+              <node role="actualArgument" roleId="tpee.1068499141038" type="tp25.ModelReferenceExpression" typeId="tp25.559557797393017698" id="854605433064724622" nodeInfo="nn">
+                <property name="fqName" nameId="tp25.559557797393041554" value="ver" />
+                <property name="name" nameId="tp25.559557797393017702" value="verification_config" />
+                <property name="stereotype" nameId="tp25.559557797393021807" value="" />
               </node>
               <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="2017717622748524702" nodeInfo="nn">
                 <property name="value" nameId="tpee.1070475926801" value="Simple" />

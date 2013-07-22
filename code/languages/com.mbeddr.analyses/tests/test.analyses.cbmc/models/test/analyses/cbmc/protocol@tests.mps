@@ -27,11 +27,10 @@
             <node role="initializer" roleId="tpee.1068431790190" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="12378219274955017" nodeInfo="nn">
               <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="fxhk.12378219274825630" resolveInfo="checkProtocol" />
               <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="fxhk.8118611477531746924" resolveInfo="CBMCAnalysesFacade" />
-              <node role="actualArgument" roleId="tpee.1068499141038" type="tp25.ModuleReferenceExpression" typeId="tp25.4040588429969021681" id="12378219274955018" nodeInfo="nn">
-                <property name="moduleId" nameId="tp25.4040588429969021683" value="094b2842-e972-4406-b60e-898cdcdb9de5" />
-              </node>
-              <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="12378219274955019" nodeInfo="nn">
-                <property name="value" nameId="tpee.1070475926801" value="protocol_unwinding_loops" />
+              <node role="actualArgument" roleId="tpee.1068499141038" type="tp25.ModelReferenceExpression" typeId="tp25.559557797393017698" id="854605433064944522" nodeInfo="nn">
+                <property name="fqName" nameId="tp25.559557797393041554" value="pro" />
+                <property name="name" nameId="tp25.559557797393017702" value="protocol_unwinding_loops" />
+                <property name="stereotype" nameId="tp25.559557797393021807" value="" />
               </node>
               <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="12378219274955020" nodeInfo="nn">
                 <property name="value" nameId="tpee.1070475926801" value="ATM" />
@@ -187,11 +186,10 @@
             <node role="initializer" roleId="tpee.1068431790190" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="12378219275018789" nodeInfo="nn">
               <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="fxhk.12378219274825630" resolveInfo="checkProtocol" />
               <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="fxhk.8118611477531746924" resolveInfo="CBMCAnalysesFacade" />
-              <node role="actualArgument" roleId="tpee.1068499141038" type="tp25.ModuleReferenceExpression" typeId="tp25.4040588429969021681" id="12378219275018790" nodeInfo="nn">
-                <property name="moduleId" nameId="tp25.4040588429969021683" value="094b2842-e972-4406-b60e-898cdcdb9de5" />
-              </node>
-              <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="12378219275018791" nodeInfo="nn">
-                <property name="value" nameId="tpee.1070475926801" value="protocol_extended_component" />
+              <node role="actualArgument" roleId="tpee.1068499141038" type="tp25.ModelReferenceExpression" typeId="tp25.559557797393017698" id="854605433064774003" nodeInfo="nn">
+                <property name="fqName" nameId="tp25.559557797393041554" value="p" />
+                <property name="name" nameId="tp25.559557797393017702" value="protocol_extended_component" />
+                <property name="stereotype" nameId="tp25.559557797393021807" value="" />
               </node>
               <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="12378219275018792" nodeInfo="nn">
                 <property name="value" nameId="tpee.1070475926801" value="module1" />
@@ -257,11 +255,10 @@
             <node role="initializer" roleId="tpee.1068431790190" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="535044775891205957" nodeInfo="nn">
               <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="fxhk.12378219274825630" resolveInfo="checkProtocol" />
               <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="fxhk.8118611477531746924" resolveInfo="CBMCAnalysesFacade" />
-              <node role="actualArgument" roleId="tpee.1068499141038" type="tp25.ModuleReferenceExpression" typeId="tp25.4040588429969021681" id="535044775891205958" nodeInfo="nn">
-                <property name="moduleId" nameId="tp25.4040588429969021683" value="094b2842-e972-4406-b60e-898cdcdb9de5" />
-              </node>
-              <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="535044775891205959" nodeInfo="nn">
-                <property name="value" nameId="tpee.1070475926801" value="protocol_smoke" />
+              <node role="actualArgument" roleId="tpee.1068499141038" type="tp25.ModelReferenceExpression" typeId="tp25.559557797393017698" id="854605433064801104" nodeInfo="nn">
+                <property name="fqName" nameId="tp25.559557797393041554" value="pro" />
+                <property name="name" nameId="tp25.559557797393017702" value="protocol_smoke" />
+                <property name="stereotype" nameId="tp25.559557797393021807" value="" />
               </node>
               <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="535044775891205960" nodeInfo="nn">
                 <property name="value" nameId="tpee.1070475926801" value="ATM" />
@@ -408,11 +405,10 @@
             <node role="initializer" roleId="tpee.1068431790190" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="535044775891206019" nodeInfo="nn">
               <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="fxhk.12378219274825630" resolveInfo="checkProtocol" />
               <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="fxhk.8118611477531746924" resolveInfo="CBMCAnalysesFacade" />
-              <node role="actualArgument" roleId="tpee.1068499141038" type="tp25.ModuleReferenceExpression" typeId="tp25.4040588429969021681" id="535044775891206020" nodeInfo="nn">
-                <property name="moduleId" nameId="tp25.4040588429969021683" value="094b2842-e972-4406-b60e-898cdcdb9de5" />
-              </node>
-              <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="535044775891206021" nodeInfo="nn">
-                <property name="value" nameId="tpee.1070475926801" value="protocol_smoke" />
+              <node role="actualArgument" roleId="tpee.1068499141038" type="tp25.ModelReferenceExpression" typeId="tp25.559557797393017698" id="854605433064805069" nodeInfo="nn">
+                <property name="fqName" nameId="tp25.559557797393041554" value="pro" />
+                <property name="name" nameId="tp25.559557797393017702" value="protocol_smoke" />
+                <property name="stereotype" nameId="tp25.559557797393021807" value="" />
               </node>
               <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="535044775891206022" nodeInfo="nn">
                 <property name="value" nameId="tpee.1070475926801" value="ATM" />
@@ -559,11 +555,10 @@
             <node role="initializer" roleId="tpee.1068431790190" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="535044775891206081" nodeInfo="nn">
               <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="fxhk.12378219274825630" resolveInfo="checkProtocol" />
               <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="fxhk.8118611477531746924" resolveInfo="CBMCAnalysesFacade" />
-              <node role="actualArgument" roleId="tpee.1068499141038" type="tp25.ModuleReferenceExpression" typeId="tp25.4040588429969021681" id="535044775891206082" nodeInfo="nn">
-                <property name="moduleId" nameId="tp25.4040588429969021683" value="094b2842-e972-4406-b60e-898cdcdb9de5" />
-              </node>
-              <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="535044775891206083" nodeInfo="nn">
-                <property name="value" nameId="tpee.1070475926801" value="protocol_smoke" />
+              <node role="actualArgument" roleId="tpee.1068499141038" type="tp25.ModelReferenceExpression" typeId="tp25.559557797393017698" id="854605433064806070" nodeInfo="nn">
+                <property name="fqName" nameId="tp25.559557797393041554" value="pro" />
+                <property name="name" nameId="tp25.559557797393017702" value="protocol_smoke" />
+                <property name="stereotype" nameId="tp25.559557797393021807" value="" />
               </node>
               <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="535044775891206084" nodeInfo="nn">
                 <property name="value" nameId="tpee.1070475926801" value="Car" />
@@ -693,11 +688,10 @@
             <node role="initializer" roleId="tpee.1068431790190" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="535044775891206136" nodeInfo="nn">
               <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="fxhk.12378219274825630" resolveInfo="checkProtocol" />
               <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="fxhk.8118611477531746924" resolveInfo="CBMCAnalysesFacade" />
-              <node role="actualArgument" roleId="tpee.1068499141038" type="tp25.ModuleReferenceExpression" typeId="tp25.4040588429969021681" id="535044775891206137" nodeInfo="nn">
-                <property name="moduleId" nameId="tp25.4040588429969021683" value="094b2842-e972-4406-b60e-898cdcdb9de5" />
-              </node>
-              <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="535044775891206138" nodeInfo="nn">
-                <property name="value" nameId="tpee.1070475926801" value="protocol_smoke" />
+              <node role="actualArgument" roleId="tpee.1068499141038" type="tp25.ModelReferenceExpression" typeId="tp25.559557797393017698" id="854605433064806947" nodeInfo="nn">
+                <property name="fqName" nameId="tp25.559557797393041554" value="pro" />
+                <property name="name" nameId="tp25.559557797393017702" value="protocol_smoke" />
+                <property name="stereotype" nameId="tp25.559557797393021807" value="" />
               </node>
               <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="535044775891206139" nodeInfo="nn">
                 <property name="value" nameId="tpee.1070475926801" value="Car" />
@@ -827,11 +821,10 @@
             <node role="initializer" roleId="tpee.1068431790190" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="535044775891206191" nodeInfo="nn">
               <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="fxhk.8118611477531746924" resolveInfo="CBMCAnalysesFacade" />
               <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="fxhk.12378219274825630" resolveInfo="checkProtocol" />
-              <node role="actualArgument" roleId="tpee.1068499141038" type="tp25.ModuleReferenceExpression" typeId="tp25.4040588429969021681" id="535044775891206192" nodeInfo="nn">
-                <property name="moduleId" nameId="tp25.4040588429969021683" value="094b2842-e972-4406-b60e-898cdcdb9de5" />
-              </node>
-              <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="535044775891206193" nodeInfo="nn">
-                <property name="value" nameId="tpee.1070475926801" value="protocol_smoke" />
+              <node role="actualArgument" roleId="tpee.1068499141038" type="tp25.ModelReferenceExpression" typeId="tp25.559557797393017698" id="854605433064807824" nodeInfo="nn">
+                <property name="fqName" nameId="tp25.559557797393041554" value="pro" />
+                <property name="name" nameId="tp25.559557797393017702" value="protocol_smoke" />
+                <property name="stereotype" nameId="tp25.559557797393021807" value="" />
               </node>
               <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="535044775891206194" nodeInfo="nn">
                 <property name="value" nameId="tpee.1070475926801" value="MultiProvider" />
@@ -1063,11 +1056,10 @@
             <node role="initializer" roleId="tpee.1068431790190" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="535044775891206288" nodeInfo="nn">
               <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="fxhk.8118611477531746924" resolveInfo="CBMCAnalysesFacade" />
               <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="fxhk.12378219274825630" resolveInfo="checkProtocol" />
-              <node role="actualArgument" roleId="tpee.1068499141038" type="tp25.ModuleReferenceExpression" typeId="tp25.4040588429969021681" id="535044775891206289" nodeInfo="nn">
-                <property name="moduleId" nameId="tp25.4040588429969021683" value="094b2842-e972-4406-b60e-898cdcdb9de5" />
-              </node>
-              <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="535044775891206290" nodeInfo="nn">
-                <property name="value" nameId="tpee.1070475926801" value="protocol_smoke" />
+              <node role="actualArgument" roleId="tpee.1068499141038" type="tp25.ModelReferenceExpression" typeId="tp25.559557797393017698" id="854605433064809421" nodeInfo="nn">
+                <property name="fqName" nameId="tp25.559557797393041554" value="pro" />
+                <property name="name" nameId="tp25.559557797393017702" value="protocol_smoke" />
+                <property name="stereotype" nameId="tp25.559557797393021807" value="" />
               </node>
               <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="535044775891206291" nodeInfo="nn">
                 <property name="value" nameId="tpee.1070475926801" value="Stream" />
@@ -1163,11 +1155,10 @@
             <node role="initializer" roleId="tpee.1068431790190" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="535044775891206329" nodeInfo="nn">
               <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="fxhk.12378219274825630" resolveInfo="checkProtocol" />
               <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="fxhk.8118611477531746924" resolveInfo="CBMCAnalysesFacade" />
-              <node role="actualArgument" roleId="tpee.1068499141038" type="tp25.ModuleReferenceExpression" typeId="tp25.4040588429969021681" id="535044775891206330" nodeInfo="nn">
-                <property name="moduleId" nameId="tp25.4040588429969021683" value="094b2842-e972-4406-b60e-898cdcdb9de5" />
-              </node>
-              <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="535044775891206331" nodeInfo="nn">
-                <property name="value" nameId="tpee.1070475926801" value="protocol_smoke" />
+              <node role="actualArgument" roleId="tpee.1068499141038" type="tp25.ModelReferenceExpression" typeId="tp25.559557797393017698" id="854605433064810055" nodeInfo="nn">
+                <property name="fqName" nameId="tp25.559557797393041554" value="pro" />
+                <property name="name" nameId="tp25.559557797393017702" value="protocol_smoke" />
+                <property name="stereotype" nameId="tp25.559557797393021807" value="" />
               </node>
               <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="535044775891206332" nodeInfo="nn">
                 <property name="value" nameId="tpee.1070475926801" value="Stream" />
@@ -1263,11 +1254,10 @@
             <node role="initializer" roleId="tpee.1068431790190" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="535044775891206370" nodeInfo="nn">
               <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="fxhk.8118611477531746924" resolveInfo="CBMCAnalysesFacade" />
               <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="fxhk.12378219274825630" resolveInfo="checkProtocol" />
-              <node role="actualArgument" roleId="tpee.1068499141038" type="tp25.ModuleReferenceExpression" typeId="tp25.4040588429969021681" id="535044775891206371" nodeInfo="nn">
-                <property name="moduleId" nameId="tp25.4040588429969021683" value="094b2842-e972-4406-b60e-898cdcdb9de5" />
-              </node>
-              <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="535044775891206372" nodeInfo="nn">
-                <property name="value" nameId="tpee.1070475926801" value="protocol_smoke" />
+              <node role="actualArgument" roleId="tpee.1068499141038" type="tp25.ModelReferenceExpression" typeId="tp25.559557797393017698" id="854605433064810692" nodeInfo="nn">
+                <property name="fqName" nameId="tp25.559557797393041554" value="pro" />
+                <property name="name" nameId="tp25.559557797393017702" value="protocol_smoke" />
+                <property name="stereotype" nameId="tp25.559557797393021807" value="" />
               </node>
               <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="535044775891206373" nodeInfo="nn">
                 <property name="value" nameId="tpee.1070475926801" value="Stream" />
@@ -1363,11 +1353,10 @@
             <node role="initializer" roleId="tpee.1068431790190" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="535044775891206411" nodeInfo="nn">
               <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="fxhk.8118611477531746924" resolveInfo="CBMCAnalysesFacade" />
               <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="fxhk.12378219274825630" resolveInfo="checkProtocol" />
-              <node role="actualArgument" roleId="tpee.1068499141038" type="tp25.ModuleReferenceExpression" typeId="tp25.4040588429969021681" id="535044775891206412" nodeInfo="nn">
-                <property name="moduleId" nameId="tp25.4040588429969021683" value="094b2842-e972-4406-b60e-898cdcdb9de5" />
-              </node>
-              <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="535044775891206413" nodeInfo="nn">
-                <property name="value" nameId="tpee.1070475926801" value="protocol_smoke" />
+              <node role="actualArgument" roleId="tpee.1068499141038" type="tp25.ModelReferenceExpression" typeId="tp25.559557797393017698" id="854605433064811329" nodeInfo="nn">
+                <property name="fqName" nameId="tp25.559557797393041554" value="pro" />
+                <property name="name" nameId="tp25.559557797393017702" value="protocol_smoke" />
+                <property name="stereotype" nameId="tp25.559557797393021807" value="" />
               </node>
               <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="535044775891206414" nodeInfo="nn">
                 <property name="value" nameId="tpee.1070475926801" value="MultiUserSystem" />
@@ -1454,11 +1443,10 @@
             <node role="initializer" roleId="tpee.1068431790190" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="535044775891206449" nodeInfo="nn">
               <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="fxhk.12378219274825630" resolveInfo="checkProtocol" />
               <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="fxhk.8118611477531746924" resolveInfo="CBMCAnalysesFacade" />
-              <node role="actualArgument" roleId="tpee.1068499141038" type="tp25.ModuleReferenceExpression" typeId="tp25.4040588429969021681" id="535044775891206450" nodeInfo="nn">
-                <property name="moduleId" nameId="tp25.4040588429969021683" value="094b2842-e972-4406-b60e-898cdcdb9de5" />
-              </node>
-              <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="535044775891206451" nodeInfo="nn">
-                <property name="value" nameId="tpee.1070475926801" value="protocol_smoke" />
+              <node role="actualArgument" roleId="tpee.1068499141038" type="tp25.ModelReferenceExpression" typeId="tp25.559557797393017698" id="854605433064811721" nodeInfo="nn">
+                <property name="fqName" nameId="tp25.559557797393041554" value="pro" />
+                <property name="name" nameId="tp25.559557797393017702" value="protocol_smoke" />
+                <property name="stereotype" nameId="tp25.559557797393021807" value="" />
               </node>
               <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="535044775891206452" nodeInfo="nn">
                 <property name="value" nameId="tpee.1070475926801" value="MultiUserSystem" />

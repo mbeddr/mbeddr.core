@@ -45,11 +45,10 @@
             <node role="initializer" roleId="tpee.1068431790190" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="5294451228540238375" nodeInfo="nn">
               <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="fxhk.5294451228540234766" resolveInfo="checkAsserts" />
               <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="fxhk.8118611477531746924" resolveInfo="CBMCAnalysesFacade" />
-              <node role="actualArgument" roleId="tpee.1068499141038" type="tp25.ModuleReferenceExpression" typeId="tp25.4040588429969021681" id="5294451228540238376" nodeInfo="nn">
-                <property name="moduleId" nameId="tp25.4040588429969021683" value="094b2842-e972-4406-b60e-898cdcdb9de5" />
-              </node>
-              <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="5294451228540238377" nodeInfo="nn">
-                <property name="value" nameId="tpee.1070475926801" value="counterexample" />
+              <node role="actualArgument" roleId="tpee.1068499141038" type="tp25.ModelReferenceExpression" typeId="tp25.559557797393017698" id="854605433065051520" nodeInfo="nn">
+                <property name="fqName" nameId="tp25.559557797393041554" value="cou" />
+                <property name="name" nameId="tp25.559557797393017702" value="counterexample" />
+                <property name="stereotype" nameId="tp25.559557797393021807" value="" />
               </node>
               <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="5294451228540238378" nodeInfo="nn">
                 <property name="value" nameId="tpee.1070475926801" value="smoke" />
@@ -256,11 +255,10 @@
             <node role="initializer" roleId="tpee.1068431790190" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="33311699572682177" nodeInfo="nn">
               <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="fxhk.5294451228540234766" resolveInfo="checkAsserts" />
               <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="fxhk.8118611477531746924" resolveInfo="CBMCAnalysesFacade" />
-              <node role="actualArgument" roleId="tpee.1068499141038" type="tp25.ModuleReferenceExpression" typeId="tp25.4040588429969021681" id="33311699572682178" nodeInfo="nn">
-                <property name="moduleId" nameId="tp25.4040588429969021683" value="094b2842-e972-4406-b60e-898cdcdb9de5" />
-              </node>
-              <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="33311699572682179" nodeInfo="nn">
-                <property name="value" nameId="tpee.1070475926801" value="counterexample" />
+              <node role="actualArgument" roleId="tpee.1068499141038" type="tp25.ModelReferenceExpression" typeId="tp25.559557797393017698" id="854605433064801104" nodeInfo="nn">
+                <property name="fqName" nameId="tp25.559557797393041554" value="cou" />
+                <property name="name" nameId="tp25.559557797393017702" value="counterexample" />
+                <property name="stereotype" nameId="tp25.559557797393021807" value="" />
               </node>
               <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="33311699572682180" nodeInfo="nn">
                 <property name="value" nameId="tpee.1070475926801" value="Components" />
@@ -298,7 +296,6 @@
           <node role="states" roleId="o23b.4791280061046137595" type="o23b.CBMCCounterexampleStateTest" typeId="o23b.4791280061046124023" id="4791280061046327165" nodeInfo="ng">
             <property name="nodeKind" nameId="o23b.4791280061046124024" value="call" />
             <property name="nodeValue" nameId="o23b.4791280061046139065" value="aFunCallingComponentRunnable" />
-            <link role="node" roleId="o23b.4791280061046189368" targetNodeId="eqhl.4207776615987961074" />
           </node>
           <node role="states" roleId="o23b.4791280061046137595" type="o23b.CBMCCounterexampleStateTest" typeId="o23b.4791280061046124023" id="4791280061046327189" nodeInfo="ng">
             <property name="nodeKind" nameId="o23b.4791280061046124024" value="enter instance config" />
@@ -348,11 +345,10 @@
             <node role="initializer" roleId="tpee.1068431790190" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="33311699573030570" nodeInfo="nn">
               <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="fxhk.5294451228540234766" resolveInfo="checkAsserts" />
               <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="fxhk.8118611477531746924" resolveInfo="CBMCAnalysesFacade" />
-              <node role="actualArgument" roleId="tpee.1068499141038" type="tp25.ModuleReferenceExpression" typeId="tp25.4040588429969021681" id="33311699573030571" nodeInfo="nn">
-                <property name="moduleId" nameId="tp25.4040588429969021683" value="094b2842-e972-4406-b60e-898cdcdb9de5" />
-              </node>
-              <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="33311699573030572" nodeInfo="nn">
-                <property name="value" nameId="tpee.1070475926801" value="counterexample" />
+              <node role="actualArgument" roleId="tpee.1068499141038" type="tp25.ModelReferenceExpression" typeId="tp25.559557797393017698" id="854605433064982374" nodeInfo="nn">
+                <property name="fqName" nameId="tp25.559557797393041554" value="cou" />
+                <property name="name" nameId="tp25.559557797393017702" value="counterexample" />
+                <property name="stereotype" nameId="tp25.559557797393021807" value="" />
               </node>
               <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="33311699573030573" nodeInfo="nn">
                 <property name="value" nameId="tpee.1070475926801" value="DecisionTable" />
@@ -390,7 +386,6 @@
           <node role="states" roleId="o23b.4791280061046137595" type="o23b.CBMCCounterexampleStateTest" typeId="o23b.4791280061046124023" id="4791280061046328630" nodeInfo="ng">
             <property name="nodeKind" nameId="o23b.4791280061046124024" value="call" />
             <property name="nodeValue" nameId="o23b.4791280061046139065" value="functionUsingDecisionTable" />
-            <link role="node" roleId="o23b.4791280061046189368" targetNodeId="eqhl.4207776615987961074" />
           </node>
           <node role="states" roleId="o23b.4791280061046137595" type="o23b.CBMCCounterexampleStateTest" typeId="o23b.4791280061046124023" id="4791280061046330071" nodeInfo="ng">
             <property name="nodeKind" nameId="o23b.4791280061046124024" value="call" />
@@ -441,11 +436,10 @@
             <node role="initializer" roleId="tpee.1068431790190" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="6224485357112737168" nodeInfo="nn">
               <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="fxhk.5294451228540234766" resolveInfo="checkAsserts" />
               <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="fxhk.8118611477531746924" resolveInfo="CBMCAnalysesFacade" />
-              <node role="actualArgument" roleId="tpee.1068499141038" type="tp25.ModuleReferenceExpression" typeId="tp25.4040588429969021681" id="6224485357112737169" nodeInfo="nn">
-                <property name="moduleId" nameId="tp25.4040588429969021683" value="094b2842-e972-4406-b60e-898cdcdb9de5" />
-              </node>
-              <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="6224485357112737170" nodeInfo="nn">
-                <property name="value" nameId="tpee.1070475926801" value="counterexample" />
+              <node role="actualArgument" roleId="tpee.1068499141038" type="tp25.ModelReferenceExpression" typeId="tp25.559557797393017698" id="854605433064982571" nodeInfo="nn">
+                <property name="fqName" nameId="tp25.559557797393041554" value="cou" />
+                <property name="name" nameId="tp25.559557797393017702" value="counterexample" />
+                <property name="stereotype" nameId="tp25.559557797393021807" value="" />
               </node>
               <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="6224485357112737171" nodeInfo="nn">
                 <property name="value" nameId="tpee.1070475926801" value="DecisionTable" />
@@ -483,7 +477,6 @@
           <node role="states" roleId="o23b.4791280061046137595" type="o23b.CBMCCounterexampleStateTest" typeId="o23b.4791280061046124023" id="4791280061046330075" nodeInfo="ng">
             <property name="nodeKind" nameId="o23b.4791280061046124024" value="call" />
             <property name="nodeValue" nameId="o23b.4791280061046139065" value="functionGoingThroughDecTab" />
-            <link role="node" roleId="o23b.4791280061046189368" targetNodeId="eqhl.4207776615987961074" />
           </node>
           <node role="states" roleId="o23b.4791280061046137595" type="o23b.CBMCCounterexampleStateTest" typeId="o23b.4791280061046124023" id="4791280061046330076" nodeInfo="ng">
             <property name="nodeKind" nameId="o23b.4791280061046124024" value="var" />
@@ -545,11 +538,10 @@
             <node role="initializer" roleId="tpee.1068431790190" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="4755507401199877942" nodeInfo="nn">
               <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="fxhk.5294451228540234766" resolveInfo="checkAsserts" />
               <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="fxhk.8118611477531746924" resolveInfo="CBMCAnalysesFacade" />
-              <node role="actualArgument" roleId="tpee.1068499141038" type="tp25.ModuleReferenceExpression" typeId="tp25.4040588429969021681" id="4755507401199877943" nodeInfo="nn">
-                <property name="moduleId" nameId="tp25.4040588429969021683" value="094b2842-e972-4406-b60e-898cdcdb9de5" />
-              </node>
-              <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="4755507401199877944" nodeInfo="nn">
-                <property name="value" nameId="tpee.1070475926801" value="counterexample" />
+              <node role="actualArgument" roleId="tpee.1068499141038" type="tp25.ModelReferenceExpression" typeId="tp25.559557797393017698" id="854605433064982768" nodeInfo="nn">
+                <property name="fqName" nameId="tp25.559557797393041554" value="cou" />
+                <property name="name" nameId="tp25.559557797393017702" value="counterexample" />
+                <property name="stereotype" nameId="tp25.559557797393021807" value="" />
               </node>
               <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="4755507401199877945" nodeInfo="nn">
                 <property name="value" nameId="tpee.1070475926801" value="DecTabNestedCalls" />
@@ -587,7 +579,6 @@
           <node role="states" roleId="o23b.4791280061046137595" type="o23b.CBMCCounterexampleStateTest" typeId="o23b.4791280061046124023" id="4791280061046331525" nodeInfo="ng">
             <property name="nodeKind" nameId="o23b.4791280061046124024" value="call" />
             <property name="nodeValue" nameId="o23b.4791280061046139065" value="testFunction" />
-            <link role="node" roleId="o23b.4791280061046189368" targetNodeId="eqhl.4207776615987961074" />
           </node>
           <node role="states" roleId="o23b.4791280061046137595" type="o23b.CBMCCounterexampleStateTest" typeId="o23b.4791280061046124023" id="4791280061046331526" nodeInfo="ng">
             <property name="nodeKind" nameId="o23b.4791280061046124024" value="call" />
@@ -610,11 +601,10 @@
               <node role="operand" roleId="tpee.1197027771414" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="33311699573036040" nodeInfo="nn">
                 <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="fxhk.8514070329609207106" resolveInfo="checkPrePostCondition" />
                 <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="fxhk.8118611477531746924" resolveInfo="CBMCAnalysesFacade" />
-                <node role="actualArgument" roleId="tpee.1068499141038" type="tp25.ModuleReferenceExpression" typeId="tp25.4040588429969021681" id="33311699573036041" nodeInfo="nn">
-                  <property name="moduleId" nameId="tp25.4040588429969021683" value="094b2842-e972-4406-b60e-898cdcdb9de5" />
-                </node>
-                <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="33311699573036042" nodeInfo="nn">
-                  <property name="value" nameId="tpee.1070475926801" value="counterexample" />
+                <node role="actualArgument" roleId="tpee.1068499141038" type="tp25.ModelReferenceExpression" typeId="tp25.559557797393017698" id="854605433065054060" nodeInfo="nn">
+                  <property name="fqName" nameId="tp25.559557797393041554" value="cou" />
+                  <property name="name" nameId="tp25.559557797393017702" value="counterexample" />
+                  <property name="stereotype" nameId="tp25.559557797393021807" value="" />
                 </node>
                 <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="33311699573036043" nodeInfo="nn">
                   <property name="value" nameId="tpee.1070475926801" value="DecTabInPPC" />
@@ -656,7 +646,6 @@
           <node role="states" roleId="o23b.4791280061046137595" type="o23b.CBMCCounterexampleStateTest" typeId="o23b.4791280061046124023" id="4791280061046332976" nodeInfo="ng">
             <property name="nodeKind" nameId="o23b.4791280061046124024" value="call" />
             <property name="nodeValue" nameId="o23b.4791280061046139065" value="main" />
-            <link role="node" roleId="o23b.4791280061046189368" targetNodeId="eqhl.4207776615987961074" />
           </node>
           <node role="states" roleId="o23b.4791280061046137595" type="o23b.CBMCCounterexampleStateTest" typeId="o23b.4791280061046124023" id="4791280061046332979" nodeInfo="ng">
             <property name="nodeKind" nameId="o23b.4791280061046124024" value="call" />
@@ -686,11 +675,10 @@
             <node role="initializer" roleId="tpee.1068431790190" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="7554338819202042755" nodeInfo="nn">
               <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="fxhk.7554338819202040865" resolveInfo="checkStatemachine" />
               <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="fxhk.8118611477531746924" resolveInfo="CBMCAnalysesFacade" />
-              <node role="actualArgument" roleId="tpee.1068499141038" type="tp25.ModuleReferenceExpression" typeId="tp25.4040588429969021681" id="7554338819202042756" nodeInfo="nn">
-                <property name="moduleId" nameId="tp25.4040588429969021683" value="094b2842-e972-4406-b60e-898cdcdb9de5" />
-              </node>
-              <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="7554338819202042757" nodeInfo="nn">
-                <property name="value" nameId="tpee.1070475926801" value="counterexample" />
+              <node role="actualArgument" roleId="tpee.1068499141038" type="tp25.ModelReferenceExpression" typeId="tp25.559557797393017698" id="854605433065036933" nodeInfo="nn">
+                <property name="fqName" nameId="tp25.559557797393041554" value="cou" />
+                <property name="name" nameId="tp25.559557797393017702" value="counterexample" />
+                <property name="stereotype" nameId="tp25.559557797393021807" value="" />
               </node>
               <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="7554338819202042758" nodeInfo="nn">
                 <property name="value" nameId="tpee.1070475926801" value="Statemachines" />
@@ -886,11 +874,10 @@
             <node role="initializer" roleId="tpee.1068431790190" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="210871162384222781" nodeInfo="nn">
               <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="fxhk.5294451228540234766" resolveInfo="checkAsserts" />
               <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="fxhk.8118611477531746924" resolveInfo="CBMCAnalysesFacade" />
-              <node role="actualArgument" roleId="tpee.1068499141038" type="tp25.ModuleReferenceExpression" typeId="tp25.4040588429969021681" id="210871162384222782" nodeInfo="nn">
-                <property name="moduleId" nameId="tp25.4040588429969021683" value="094b2842-e972-4406-b60e-898cdcdb9de5" />
-              </node>
-              <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="210871162384222783" nodeInfo="nn">
-                <property name="value" nameId="tpee.1070475926801" value="counterexample" />
+              <node role="actualArgument" roleId="tpee.1068499141038" type="tp25.ModelReferenceExpression" typeId="tp25.559557797393017698" id="854605433065048292" nodeInfo="nn">
+                <property name="fqName" nameId="tp25.559557797393041554" value="cou" />
+                <property name="name" nameId="tp25.559557797393017702" value="counterexample" />
+                <property name="stereotype" nameId="tp25.559557797393021807" value="" />
               </node>
               <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="210871162384222784" nodeInfo="nn">
                 <property name="value" nameId="tpee.1070475926801" value="Statemachines" />
@@ -931,7 +918,6 @@
           <node role="states" roleId="o23b.4791280061046137595" type="o23b.CBMCCounterexampleStateTest" typeId="o23b.4791280061046124023" id="4791280061046147466" nodeInfo="ng">
             <property name="nodeKind" nameId="o23b.4791280061046124024" value="call" />
             <property name="nodeValue" nameId="o23b.4791280061046139065" value="testStatemachineInState" />
-            <link role="node" roleId="o23b.4791280061046189368" targetNodeId="eqhl.4207776615987961074" />
           </node>
           <node role="states" roleId="o23b.4791280061046137595" type="o23b.CBMCCounterexampleStateTest" typeId="o23b.4791280061046124023" id="4791280061046156385" nodeInfo="ng">
             <property name="nodeKind" nameId="o23b.4791280061046124024" value="cnt" />

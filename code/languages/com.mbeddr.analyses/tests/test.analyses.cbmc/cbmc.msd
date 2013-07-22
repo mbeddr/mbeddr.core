@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="test.analyses.cbmc" uuid="ca8c2e79-8ed0-47c1-bbdd-d0b9690a9c5b" compileInMPS="true">
+<solution name="test.analyses.cbmc" uuid="ca8c2e79-8ed0-47c1-bbdd-d0b9690a9c5b" pluginKind="PLUGIN_OTHER" compileInMPS="true">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
