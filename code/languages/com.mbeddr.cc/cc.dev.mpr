@@ -6,39 +6,38 @@
   <component name="Encoding" useUTFGuessing="true" native2AsciiForPropertiesFiles="false" />
   <component name="MPSProject">
     <projectModules>
-      <modulePath path="${project}/devkits/com.mbeddr.archdec/archdec.devkit" folder="archdec" />
-      <modulePath path="${project}/devkits/com.mbeddr.cc.reqtrace/reqtrace.devkit" folder="requirements" />
-      <modulePath path="${project}/devkits/com.mbeddr.cc.variability/variability.devkit" folder="ple_var" />
-      <modulePath path="${project}/languages/com.mbeddr.cc.archdec/archdec.mpl" folder="archdec" />
-      <modulePath path="${project}/languages/com.mbeddr.cc.requirements.c/c.mpl" folder="requirements" />
-      <modulePath path="${project}/languages/com.mbeddr.cc.requirements.c2doc/com.mbeddr.cc.requirements.c2doc.mpl" folder="requirements" />
-      <modulePath path="${project}/languages/com.mbeddr.cc.requirements.csv/csv.mpl" folder="requirements" />
-      <modulePath path="${project}/languages/com.mbeddr.cc.requirements.report/com.mbeddr.cc.requirements.report.mpl" folder="requirements" />
-      <modulePath path="${project}/languages/com.mbeddr.cc.requirements.scenario2doc/com.mbeddr.cc.requirements.scenario2doc.mpl" folder="requirements" />
-      <modulePath path="${project}/languages/com.mbeddr.cc.requirements.scenarios/scenarios.mpl" folder="requirements" />
-      <modulePath path="${project}/languages/com.mbeddr.cc.requirements.wp/wp.mpl" folder="requirements" />
-      <modulePath path="${project}/languages/com.mbeddr.cc.requirements/requirements.mpl" folder="requirements" />
-      <modulePath path="${project}/languages/com.mbeddr.cc.requirements/solutions/pluginSolution/pluginSolution.msd" folder="requirements" />
-      <modulePath path="${project}/languages/com.mbeddr.cc.trace/solutions/pluginSolution/pluginSolution.msd" folder="requirements" />
-      <modulePath path="${project}/languages/com.mbeddr.cc.trace/trace.mpl" folder="requirements" />
-      <modulePath path="${project}/languages/com.mbeddr.cc.var.annotations/fm.mpl" folder="ple_var" />
-      <modulePath path="${project}/languages/com.mbeddr.cc.var.annotations/solutions/pluginSolution/pluginSolution.msd" folder="ple_var" />
-      <modulePath path="${project}/languages/com.mbeddr.cc.var.buildconfig/buildconfig.mpl" folder="ple_var" />
-      <modulePath path="${project}/languages/com.mbeddr.cc.var.c/c.mpl" folder="ple_var" />
-      <modulePath path="${project}/languages/com.mbeddr.cc.var.fm/fm.mpl" folder="ple_var" />
-      <modulePath path="${project}/languages/com.mbeddr.cc.var.rt.comp/comp.mpl" folder="ple_var" />
-      <modulePath path="${project}/languages/com.mbeddr.cc.var.rt/rt.mpl" folder="ple_var" />
-      <modulePath path="${project}/tests/test.ex.cc.fm/fm.msd" folder="tests" />
-      <modulePath path="${project}/tests/test.ex.cc.fmrt/fmrt.msd" folder="tests" />
-      <modulePath path="${project}/tests/test.ex.cc.requirements.c/c.msd" folder="tests" />
-      <modulePath path="${project}/tests/test.ex.cc.var.c/c.msd" folder="tests" />
-      <modulePath path="${project}/tests/test.ex.requirements.report/test.ex.requirements.report.msd" folder="tests" />
-      <modulePath path="${project}/tests/test.ts.cc.archdec/archdec.msd" folder="tests" />
-      <modulePath path="${project}/tests/test.ts.cc.requirements.scenarios/scenarios.msd" folder="tests" />
-      <modulePath path="${project}/tests/test.ts.cc.requirements/requirements.msd" folder="tests" />
-      <modulePath path="${project}/tests/test.ts.cc.var.c/c.msd" folder="tests" />
+      <modulePath path="$PROJECT_DIR$/devkits/com.mbeddr.archdec/archdec.devkit" folder="archdec" />
+      <modulePath path="$PROJECT_DIR$/devkits/com.mbeddr.cc.reqtrace/reqtrace.devkit" folder="requirements" />
+      <modulePath path="$PROJECT_DIR$/devkits/com.mbeddr.cc.variability/variability.devkit" folder="ple_var" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.cc.archdec/archdec.mpl" folder="archdec" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.cc.requirements.c/c.mpl" folder="requirements" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.cc.requirements.c2doc/com.mbeddr.cc.requirements.c2doc.mpl" folder="requirements" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.cc.requirements.csv/csv.mpl" folder="requirements" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.cc.requirements.report/com.mbeddr.cc.requirements.report.mpl" folder="requirements" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.cc.requirements.scenario2doc/com.mbeddr.cc.requirements.scenario2doc.mpl" folder="requirements" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.cc.requirements.scenarios/scenarios.mpl" folder="requirements" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.cc.requirements.wp/wp.mpl" folder="requirements" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.cc.requirements/requirements.mpl" folder="requirements" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.cc.requirements/solutions/pluginSolution/pluginSolution.msd" folder="requirements" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.cc.trace/solutions/pluginSolution/pluginSolution.msd" folder="requirements" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.cc.trace/trace.mpl" folder="requirements" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.cc.var.annotations/fm.mpl" folder="ple_var" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.cc.var.annotations/solutions/pluginSolution/pluginSolution.msd" folder="ple_var" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.cc.var.buildconfig/buildconfig.mpl" folder="ple_var" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.cc.var.c/c.mpl" folder="ple_var" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.cc.var.fm/fm.mpl" folder="ple_var" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.cc.var.rt.comp/comp.mpl" folder="ple_var" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.cc.var.rt/rt.mpl" folder="ple_var" />
+      <modulePath path="$PROJECT_DIR$/tests/test.ex.cc.fm/fm.msd" folder="tests" />
+      <modulePath path="$PROJECT_DIR$/tests/test.ex.cc.fmrt/fmrt.msd" folder="tests" />
+      <modulePath path="$PROJECT_DIR$/tests/test.ex.cc.requirements.c/c.msd" folder="tests" />
+      <modulePath path="$PROJECT_DIR$/tests/test.ex.cc.var.c/c.msd" folder="tests" />
+      <modulePath path="$PROJECT_DIR$/tests/test.ex.requirements.report/test.ex.requirements.report.msd" folder="tests" />
+      <modulePath path="$PROJECT_DIR$/tests/test.ts.cc.archdec/archdec.msd" folder="tests" />
+      <modulePath path="$PROJECT_DIR$/tests/test.ts.cc.requirements.scenarios/scenarios.msd" folder="tests" />
+      <modulePath path="$PROJECT_DIR$/tests/test.ts.cc.requirements/requirements.msd" folder="tests" />
+      <modulePath path="$PROJECT_DIR$/tests/test.ts.cc.var.c/c.msd" folder="tests" />
     </projectModules>
-    <genConfs />
   </component>
   <component name="ProjectLibraryManager">
     <option name="libraries">
@@ -99,7 +98,7 @@
   </component>
   <component name="ProjectRootManager" version="2" />
   <component name="ProjectVersion">
-    <option name="version" value="2.5" />
+    <option name="version" value="3.0" />
   </component>
   <component name="VcsDirectoryMappings">
     <mapping directory="$mbeddr.github.core.home$" vcs="Git" />

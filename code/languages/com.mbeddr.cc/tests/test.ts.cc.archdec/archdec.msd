@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="test.ts.cc.archdec" uuid="6362fec7-e11b-42e5-be33-4bb0fa83dcfc" compileInMPS="true">
+<solution name="test.ts.cc.archdec" uuid="6362fec7-e11b-42e5-be33-4bb0fa83dcfc" pluginKind="PLUGIN_OTHER" compileInMPS="true">
   <models>
-    <modelRoot path="${solution_descriptor}/models" />
+    <modelRoot contentPath="${module}" type="default">
+      <sourceRoot location="models" />
+    </modelRoot>
   </models>
   <sourcePath />
   <usedLanguages>

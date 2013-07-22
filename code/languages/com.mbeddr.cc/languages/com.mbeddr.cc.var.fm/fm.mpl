@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<language namespace="com.mbeddr.cc.var.fm" uuid="e401b447-8019-4ccd-a72c-bfb0230f5782" doNotGenerateAdapters="true">
+<language namespace="com.mbeddr.cc.var.fm" uuid="e401b447-8019-4ccd-a72c-bfb0230f5782">
   <models>
-    <modelRoot path="${language_descriptor}/languageModels" />
+    <modelRoot contentPath="${module}" type="default">
+      <sourceRoot location="languageModels" />
+    </modelRoot>
   </models>
   <accessoryModels />
   <generators />
   <sourcePath />
   <dependencies>
+    <dependency reexport="false">3f233e7f-b8a6-46d2-a57f-795d56775243(Annotations)</dependency>
     <dependency reexport="false">017fba0e-af15-4a23-b0a8-02b5c1141e75(com.mbeddr.cc.var.annotations)</dependency>
     <dependency reexport="false">2d3c70e9-aab2-4870-8d8d-6036800e4103(jetbrains.mps.kernel)</dependency>
   </dependencies>

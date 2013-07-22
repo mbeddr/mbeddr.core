@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="test.ts.cc.var.c" uuid="7155c081-a292-4e73-b275-f5d60082f861" compileInMPS="true">
+<solution name="test.ts.cc.var.c" uuid="7155c081-a292-4e73-b275-f5d60082f861" pluginKind="PLUGIN_OTHER" compileInMPS="true">
   <models>
-    <modelRoot path="${solution_descriptor}/models" />
+    <modelRoot contentPath="${module}" type="default">
+      <sourceRoot location="models" />
+    </modelRoot>
   </models>
   <sourcePath />
   <usedLanguages>
