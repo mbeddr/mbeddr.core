@@ -102,6 +102,9 @@
     <node role="extends" roleId="tpce.1169127546356" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="8202952451359188147" nodeInfo="ig">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="7123462210702867708" resolveInfo="ILOCCountProvider" />
     </node>
+    <node role="extends" roleId="tpce.1169127546356" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="6429810721713180870" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="3857533489766146432" resolveInfo="IDocumentable" />
+    </node>
   </root>
   <root type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="4459718605982007337" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="IConfigurationContainer" />
