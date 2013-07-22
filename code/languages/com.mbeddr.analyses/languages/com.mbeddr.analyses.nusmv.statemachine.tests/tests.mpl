@@ -1,13 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<language namespace="com.mbeddr.analyses.nusmv.statemachine.tests" uuid="f50c1d3e-50a5-48aa-8271-b3711c1a93b5" doNotGenerateAdapters="true">
+<language namespace="com.mbeddr.analyses.nusmv.statemachine.tests" uuid="f50c1d3e-50a5-48aa-8271-b3711c1a93b5">
   <models>
-    <modelRoot path="${language_descriptor}/languageModels" />
+    <modelRoot contentPath="${module}" type="default">
+      <sourceRoot location="languageModels" />
+    </modelRoot>
   </models>
   <accessoryModels />
   <generators>
     <generator name="main" generatorUID="com.mbeddr.analyses.nusmv.statemachine.tests#5780134359532646620" uuid="ed369cbc-1b5a-4840-85b5-d21589f29073">
       <models>
-        <modelRoot path="${language_descriptor}/generator/template" />
+        <modelRoot contentPath="${module}" type="default">
+          <sourceRoot location="generator/template" />
+        </modelRoot>
       </models>
       <external-templates>
         <generator generatorUID="5f9babc9-8d5d-4825-8e61-17b241ee6272(jetbrains.mps.baseLanguage.collections#1151699677197)" />
@@ -16,10 +20,12 @@
         <generator generatorUID="25ad6911-c3f8-4b85-823f-807f393d1667(com.mbeddr.analyses.nusmv.statemachine#1579201292658953368)" />
       </external-templates>
       <dependencies>
+        <dependency reexport="false">498d89d2-c2e9-11e2-ad49-6cf049e62fe5(MPS.IDEA)</dependency>
         <dependency reexport="false">742f6602-5a2f-4313-aa6e-ae1cd4ffdc61(MPS.Platform)</dependency>
         <dependency reexport="false">25d559de-599f-4919-b0d2-22ca6cabbcb5(com.mbeddr.analyses.nusmv.rt)</dependency>
         <dependency reexport="false">564e97d6-8fb7-41f5-bfc1-c7ed376efd62(com.mbeddr.ext.statemachines)</dependency>
         <dependency reexport="false">83f155ff-422c-4b5a-a2f2-b459302dd215(jetbrains.mps.baseLanguage.unitTest.libs)</dependency>
+        <dependency reexport="false">2d3c70e9-aab2-4870-8d8d-6036800e4103(jetbrains.mps.kernel)</dependency>
       </dependencies>
       <usedLanguages>
         <usedLanguage>b401a680-8325-4110-8fd3-84331ff25bef(jetbrains.mps.lang.generator)</usedLanguage>

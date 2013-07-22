@@ -1,13 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<language namespace="com.mbeddr.analyses.nusmv" uuid="6d6531a5-3257-4592-b692-9db6a8c7e80f" doNotGenerateAdapters="true">
+<language namespace="com.mbeddr.analyses.nusmv" uuid="6d6531a5-3257-4592-b692-9db6a8c7e80f">
   <models>
-    <modelRoot path="${language_descriptor}/languageModels" />
+    <modelRoot contentPath="${module}" type="default">
+      <sourceRoot location="languageModels" />
+    </modelRoot>
   </models>
   <accessoryModels />
   <generators>
     <generator name="main" generatorUID="com.mbeddr.analyses.nusmv#536077958821417725" uuid="89be5ffd-bfda-4535-9eea-1028bd80563b">
       <models>
-        <modelRoot path="${language_descriptor}/generator/template" />
+        <modelRoot contentPath="${module}" type="default">
+          <sourceRoot location="generator/template" />
+        </modelRoot>
       </models>
       <external-templates />
       <usedLanguages>
@@ -24,6 +28,7 @@
   </generators>
   <sourcePath />
   <dependencies>
+    <dependency reexport="false">cc7da2f6-419f-4133-a811-31fcd3295a85(jetbrains.mps.debugger.api.api)</dependency>
     <dependency reexport="false">7a5dda62-9140-4668-ab76-d5ed1746f2b2(jetbrains.mps.lang.typesystem)</dependency>
   </dependencies>
   <usedLanguages>

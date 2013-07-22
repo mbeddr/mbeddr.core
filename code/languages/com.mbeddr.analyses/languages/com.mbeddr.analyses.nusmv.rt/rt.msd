@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <solution name="com.mbeddr.analyses.nusmv.rt" uuid="25d559de-599f-4919-b0d2-22ca6cabbcb5" pluginKind="PLUGIN_OTHER" compileInMPS="true">
   <models>
-    <modelRoot path="${solution_descriptor}/" />
+    <modelRoot contentPath="${module}" type="default">
+      <sourceRoot location="." />
+    </modelRoot>
   </models>
   <sourcePath />
   <dependencies>
     <dependency reexport="false">6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)</dependency>
+    <dependency reexport="false">498d89d2-c2e9-11e2-ad49-6cf049e62fe5(MPS.IDEA)</dependency>
     <dependency reexport="false">742f6602-5a2f-4313-aa6e-ae1cd4ffdc61(MPS.Platform)</dependency>
     <dependency reexport="false">6d6531a5-3257-4592-b692-9db6a8c7e80f(com.mbeddr.analyses.nusmv)</dependency>
     <dependency reexport="false">d62d6e81-9ae0-456b-b2c3-d71c0f373ded(com.mbeddr.analyses.nusmv.statemachine)</dependency>
