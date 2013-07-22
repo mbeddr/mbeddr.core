@@ -1,13 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<language namespace="mbeddr.tutorial.processorregisters" uuid="f0055926-d605-4ab8-9b98-55d1e17723f5" doNotGenerateAdapters="true">
+<language namespace="mbeddr.tutorial.processorregisters" uuid="f0055926-d605-4ab8-9b98-55d1e17723f5">
   <models>
-    <modelRoot path="${language_descriptor}/languageModels" />
+    <modelRoot contentPath="${module}" type="default">
+      <sourceRoot location="languageModels" />
+    </modelRoot>
   </models>
   <accessoryModels />
   <generators>
     <generator name="main" generatorUID="mbeddr.tutorial.processorregisters#1462098009437633268" uuid="1c9f4176-b8a6-4f4b-a057-482d8043e191">
       <models>
-        <modelRoot path="${language_descriptor}/generator/template" />
+        <modelRoot contentPath="${module}" type="default">
+          <sourceRoot location="generator/template" />
+        </modelRoot>
       </models>
       <external-templates>
         <generator generatorUID="be090156-a678-454c-bd8f-89ebd4a0e6af(com.mbeddr.core.modules.gen#1758019824472882132)" />
@@ -60,6 +64,7 @@
   <dependencies>
     <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
     <dependency reexport="false">1ed103c3-3aa6-49b7-9c21-6765ee11f224(MPS.Editor)</dependency>
+    <dependency reexport="false">86441d7a-e194-42da-81a5-2161ec62a379(MPS.Workbench)</dependency>
     <dependency reexport="false">cc7da2f6-419f-4133-a811-31fcd3295a85(jetbrains.mps.debugger.api.api)</dependency>
     <dependency reexport="false">36c11d2d-1875-4a95-8bdb-70ea1ac63222(jetbrains.mps.execution.api)</dependency>
   </dependencies>

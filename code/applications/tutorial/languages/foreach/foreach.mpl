@@ -1,13 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<language namespace="mbeddr.tutorial.foreach" uuid="32128dbe-9db6-4d05-9eaa-43601c29f276" doNotGenerateAdapters="true">
+<language namespace="mbeddr.tutorial.foreach" uuid="32128dbe-9db6-4d05-9eaa-43601c29f276">
   <models>
-    <modelRoot path="${language_descriptor}/languageModels" />
+    <modelRoot contentPath="${module}" type="default">
+      <sourceRoot location="languageModels" />
+    </modelRoot>
   </models>
   <accessoryModels />
   <generators>
     <generator name="foreach2C" generatorUID="mbeddr.tutorial.foreach#7977993180520148024" uuid="05e06a58-3ae8-4bb9-afa8-dc2de7767792">
       <models>
-        <modelRoot path="${language_descriptor}/generator/template" />
+        <modelRoot contentPath="${module}" type="default">
+          <sourceRoot location="generator/template" />
+        </modelRoot>
       </models>
       <external-templates>
         <generator generatorUID="53c31cc6-9e98-4153-905a-a7b5c490ea53(com.mbeddr.core.modules#1758019824472891829)" />
@@ -48,6 +52,7 @@
   </generators>
   <sourcePath />
   <dependencies>
+    <dependency reexport="false">86441d7a-e194-42da-81a5-2161ec62a379(MPS.Workbench)</dependency>
     <dependency reexport="false">cc7da2f6-419f-4133-a811-31fcd3295a85(jetbrains.mps.debugger.api.api)</dependency>
     <dependency reexport="false">36c11d2d-1875-4a95-8bdb-70ea1ac63222(jetbrains.mps.execution.api)</dependency>
   </dependencies>

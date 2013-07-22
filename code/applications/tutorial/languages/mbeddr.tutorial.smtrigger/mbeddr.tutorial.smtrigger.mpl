@@ -1,13 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<language namespace="mbeddr.tutorial.smtrigger" uuid="8f78d0b6-57c9-4fa8-86fe-8c30d0d5b15c" doNotGenerateAdapters="true">
+<language namespace="mbeddr.tutorial.smtrigger" uuid="8f78d0b6-57c9-4fa8-86fe-8c30d0d5b15c">
   <models>
-    <modelRoot path="${language_descriptor}/languageModels" />
+    <modelRoot contentPath="${module}" type="default">
+      <sourceRoot location="languageModels" />
+    </modelRoot>
   </models>
   <accessoryModels />
   <generators>
     <generator name="smtrigger2c" generatorUID="mbeddr.tutorial.smtrigger#2051642899460594294" uuid="afa48319-8ac2-446a-b8b2-5e2332176ee4">
       <models>
-        <modelRoot path="${language_descriptor}/generator/template" />
+        <modelRoot contentPath="${module}" type="default">
+          <sourceRoot location="generator/template" />
+        </modelRoot>
       </models>
       <external-templates>
         <generator generatorUID="ea79507d-33bf-45ac-af32-13a874687ef0(com.mbeddr.ext.statemachines#8836799689252270723)" />
@@ -40,6 +44,9 @@
     </generator>
   </generators>
   <sourcePath />
+  <dependencies>
+    <dependency reexport="false">564e97d6-8fb7-41f5-bfc1-c7ed376efd62(com.mbeddr.ext.statemachines)</dependency>
+  </dependencies>
   <usedDevKits>
     <usedDevKit>2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)</usedDevKit>
   </usedDevKits>

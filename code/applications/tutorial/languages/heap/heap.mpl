@@ -1,13 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<language namespace="mbeddr.tutorial.heap" uuid="16ff087a-23cd-49b8-9c5b-a2c20cea9d3e" doNotGenerateAdapters="true">
+<language namespace="mbeddr.tutorial.heap" uuid="16ff087a-23cd-49b8-9c5b-a2c20cea9d3e">
   <models>
-    <modelRoot path="${language_descriptor}/languageModels" />
+    <modelRoot contentPath="${module}" type="default">
+      <sourceRoot location="languageModels" />
+    </modelRoot>
   </models>
   <accessoryModels />
   <generators>
     <generator name="safeheap2C" generatorUID="mbeddr.tutorial.heap#6125369673958882338" uuid="5f893116-247b-482a-bec7-c76b745a8d6f">
       <models>
-        <modelRoot path="${language_descriptor}/generator/template" />
+        <modelRoot contentPath="${module}" type="default">
+          <sourceRoot location="generator/template" />
+        </modelRoot>
       </models>
       <external-templates>
         <generator generatorUID="1584b8e5-f354-4c2e-8130-92bbe4a1192b(com.mbeddr.core.unittest#6275792049641599010)" />
@@ -44,6 +48,9 @@
     </generator>
   </generators>
   <sourcePath />
+  <dependencies>
+    <dependency reexport="false">cc7da2f6-419f-4133-a811-31fcd3295a85(jetbrains.mps.debugger.api.api)</dependency>
+  </dependencies>
   <usedLanguages>
     <usedLanguage>af65afd8-f0dd-4942-87d9-63a55f2a9db1(jetbrains.mps.lang.behavior)</usedLanguage>
   </usedLanguages>

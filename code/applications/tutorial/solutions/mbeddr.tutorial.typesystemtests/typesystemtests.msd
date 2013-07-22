@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="mbeddr.tutorial.typesystemtests" uuid="8d0b45ab-f5f6-42ef-9f1c-c9dab8872e09" compileInMPS="true">
+<solution name="mbeddr.tutorial.typesystemtests" uuid="8d0b45ab-f5f6-42ef-9f1c-c9dab8872e09" pluginKind="PLUGIN_OTHER" compileInMPS="true">
   <models>
-    <modelRoot path="${solution_descriptor}/models" />
+    <modelRoot contentPath="${module}" type="default">
+      <sourceRoot location="models" />
+    </modelRoot>
   </models>
   <sourcePath />
   <dependencies>
