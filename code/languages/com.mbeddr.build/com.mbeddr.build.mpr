@@ -6,22 +6,21 @@
   <component name="Encoding" useUTFGuessing="true" native2AsciiForPropertiesFiles="false" />
   <component name="MPSProject">
     <projectModules>
-      <modulePath path="${project}/solutions/com.mbeddr.allInOne/allInOne.msd" />
-      <modulePath path="${project}/solutions/com.mbeddr.analyses.dev.build/build.msd" />
-      <modulePath path="${project}/solutions/com.mbeddr.cc.dev.build/build.msd" />
-      <modulePath path="${project}/solutions/com.mbeddr.core.dev.build/build.msd" />
-      <modulePath path="${project}/solutions/com.mbeddr.debugger-test.build.dev.build/com.mbeddr.debugger-test.build.dev.build.msd" />
-      <modulePath path="${project}/solutions/com.mbeddr.debugger.dev.build/debugger.msd" folder="" />
-      <modulePath path="${project}/solutions/com.mbeddr.doc.dev.build/com.mbeddr.doc.dev.build.msd" />
-      <modulePath path="${project}/solutions/com.mbeddr.ext.build/build.msd" />
-      <modulePath path="${project}/solutions/com.mbeddr.mpsutil.dev.build/build.msd" />
-      <modulePath path="${project}/solutions/com.mbeddr.spawner.dev.build/debugger.msd" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.allInOne/allInOne.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.analyses.dev.build/build.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.cc.dev.build/build.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.core.dev.build/build.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.debugger-test.build.dev.build/com.mbeddr.debugger-test.build.dev.build.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.debugger.dev.build/debugger.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.doc.dev.build/com.mbeddr.doc.dev.build.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.ext.build/build.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.dev.build/build.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.spawner.dev.build/debugger.msd" folder="" />
     </projectModules>
-    <genConfs />
   </component>
   <component name="ProjectRootManager" version="2" />
   <component name="ProjectVersion">
-    <option name="version" value="2.5" />
+    <option name="version" value="3.0" />
   </component>
   <component name="VcsDirectoryMappings">
     <mapping directory="$mbeddr.github.core.home$" vcs="Git" />
