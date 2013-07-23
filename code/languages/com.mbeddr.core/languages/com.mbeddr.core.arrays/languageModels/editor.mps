@@ -249,6 +249,7 @@
         </node>
       </node>
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_RefNode" typeId="tpc2.1073389882823" id="4415315037677889402" nodeInfo="ng">
+        <property name="attractsFocus" nameId="tpc2.1130859485024" value="2" />
         <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="yq40.4415315037677889398" />
       </node>
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="4415315037677889404" nodeInfo="nn">
@@ -308,6 +309,7 @@
         </node>
       </node>
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_RefNode" typeId="tpc2.1073389882823" id="4415315037677926515" nodeInfo="ng">
+        <property name="attractsFocus" nameId="tpc2.1130859485024" value="2" />
         <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="yq40.4415315037677926511" />
       </node>
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="4415315037677926517" nodeInfo="nn">
