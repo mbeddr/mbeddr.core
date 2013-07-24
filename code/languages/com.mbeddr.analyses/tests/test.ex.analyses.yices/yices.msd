@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="test.ex.analyses.yices.dectab" uuid="063a58aa-9bae-4e7e-b092-c64f1b1789da" compileInMPS="true">
+<solution name="test.ex.analyses.yices.dectab" uuid="063a58aa-9bae-4e7e-b092-c64f1b1789da" pluginKind="PLUGIN_OTHER" compileInMPS="true">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="." />

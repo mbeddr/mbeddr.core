@@ -603,6 +603,9 @@
               </node>
             </node>
           </node>
+          <node role="id" roleId="tpc2.4323500428121274054" type="tpc2.EditorCellId" typeId="tpc2.4323500428121233431" id="7889970966823634517" nodeInfo="ng">
+            <property name="name" nameId="tpck.1169194664001" value="arguments" />
+          </node>
         </node>
         <node role="cellLayout" roleId="tpc2.1140524464360" type="tpc2.CellLayout_Indent" typeId="tpc2.1237303669825" id="8257817273846903830" nodeInfo="nn" />
       </node>
