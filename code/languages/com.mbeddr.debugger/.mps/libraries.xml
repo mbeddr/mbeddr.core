@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectLibraryManager">
+    <option name="libraries">
+      <map>
+        <entry key="spawner.build">
+          <value>
+            <Library>
+              <option name="name" value="spawner.build" />
+              <option name="path" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.build/solutions/com.mbeddr.spawner.dev.build" />
+            </Library>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
+

@@ -312,6 +312,7 @@
       <plugin path="${build.tmp}/deps/mps-multiline/mps-multiline.zip/mps-multiline" />
       <plugin path="${build.tmp}/deps/mps-richtext/mps-richtext.zip/mps-richtext" />
       <library file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.blTypes.jar" />
+      <library file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.checkedDots.jar" />
       <library file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.classifiers.jar" />
       <library file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.closures.jar" />
       <library file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.collections.jar" />
