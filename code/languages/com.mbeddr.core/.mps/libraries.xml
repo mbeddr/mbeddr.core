@@ -11,6 +11,14 @@
             </Library>
           </value>
         </entry>
+        <entry key="mbeddrbuild">
+          <value>
+            <Library>
+              <option name="name" value="mbeddrbuild" />
+              <option name="path" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.build" />
+            </Library>
+          </value>
+        </entry>
         <entry key="mpsutil">
           <value>
             <Library>
