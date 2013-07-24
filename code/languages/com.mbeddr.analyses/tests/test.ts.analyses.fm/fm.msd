@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="test.ex.analyses.fm" uuid="d6d16be4-566f-4264-97c3-53e69ad27683" compileInMPS="true">
+<solution name="test.ex.analyses.fm" uuid="d6d16be4-566f-4264-97c3-53e69ad27683" pluginKind="PLUGIN_OTHER" compileInMPS="true">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="." />
