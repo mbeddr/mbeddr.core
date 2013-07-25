@@ -14,3 +14,8 @@ ant -f ../../build/com.mbeddr.ext/build-units.xml generate build
 
 ant -f ../../build/com.mbeddr.cc/build-ple.xml generate build
 ant -f ../../build/com.mbeddr.cc/build-req.xml generate build
+
+ant -f ../../build/com.mbeddr.analyses/build-base.xml generate build
+ant -f ../../build/com.mbeddr.analyses/build-yices.xml generate build
+ant -f ../../build/com.mbeddr.analyses/build-nusmv.xml generate build
+ant -f ../../build/com.mbeddr.analyses/build-cbmc.xml generate build
