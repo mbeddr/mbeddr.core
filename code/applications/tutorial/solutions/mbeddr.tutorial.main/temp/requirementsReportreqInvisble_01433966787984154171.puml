@@ -1,0 +1,22 @@
+@startuml
+hide members
+InFlightPoints -> PointsFactor: refines
+InFlightPoints -> FasterThan100: requires also
+InFlightPoints -> FasterThan200: requires also
+Landing -> InFlightPoints: requires also
+class Landing << (R,#DDDDDD) >> #DDDDDD {
+}
+url of Landing is [[http://mbeddr.com/r:842cc873-5fc8-4eb2-bb22-33f594e1def8##__##1433966787984154180]]
+class PointsFactor << (R,#DDDDDD) >> #DDDDDD {
+}
+url of PointsFactor is [[http://mbeddr.com/r:842cc873-5fc8-4eb2-bb22-33f594e1def8##__##7451725615401720594]]
+class InFlightPoints << (R,#DDDDDD) >> #DDDDDD {
+}
+url of InFlightPoints is [[http://mbeddr.com/r:842cc873-5fc8-4eb2-bb22-33f594e1def8##__##1433966787984154174]]
+class FasterThan200 << (R,#DDDDDD) >> #DDDDDD {
+}
+url of FasterThan200 is [[http://mbeddr.com/r:842cc873-5fc8-4eb2-bb22-33f594e1def8##__##1433966787984154178]]
+class FasterThan100 << (R,#DDDDDD) >> #DDDDDD {
+}
+url of FasterThan100 is [[http://mbeddr.com/r:842cc873-5fc8-4eb2-bb22-33f594e1def8##__##1433966787984154176]]
+@enduml

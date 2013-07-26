@@ -15,18 +15,18 @@
   <devkit namespace="f5226c26-1a3d-4ca7-8823-0d9ca197c4ac(com.mbeddr.analyses.componentcontracts)" />
   <import index="iwll" modelUID="r:79ed4c17-66fc-4c5a-bff7-46990b4e0c5d(mbeddr.tutorial.main.req)" version="-1" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
-  <import index="k146" modelUID="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" version="5" implicit="yes" />
+  <import index="k146" modelUID="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" version="11" implicit="yes" />
   <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="23" implicit="yes" />
   <import index="yq40" modelUID="r:152b3fc0-83a1-4bab-a8cd-565eb8483785(com.mbeddr.core.pointers.structure)" version="3" implicit="yes" />
-  <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="7" implicit="yes" />
+  <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="15" implicit="yes" />
   <import index="51wr" modelUID="r:b31f1c3c-99aa-4f1e-a329-cba27efb1a6b(com.mbeddr.core.buildconfig.structure)" version="1" implicit="yes" />
   <import index="yz9a" modelUID="r:734c02dd-cc16-4184-99eb-5fd9f43aa37e(com.mbeddr.core.unittest.structure)" version="0" implicit="yes" />
   <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="5" implicit="yes" />
   <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="5" implicit="yes" />
-  <import index="clbe" modelUID="r:61d840b4-12c1-49ea-b142-b2a1550a9b15(com.mbeddr.core.udt.structure)" version="7" implicit="yes" />
+  <import index="clbe" modelUID="r:61d840b4-12c1-49ea-b142-b2a1550a9b15(com.mbeddr.core.udt.structure)" version="9" implicit="yes" />
   <import index="3c6d" modelUID="r:d6d71b6a-f5ea-4b72-bd01-9d5b19792726(com.mbeddr.ext.physicalunits.c.structure)" version="1" implicit="yes" />
   <import index="ym4j" modelUID="r:cf0df747-2506-460f-a33d-eb236a605ee8(com.mbeddr.ext.physicalunits.structure)" version="10" implicit="yes" />
-  <import index="v7ag" modelUID="r:9596407c-f27a-49d3-abde-3a66293c5b61(com.mbeddr.ext.components.structure)" version="19" implicit="yes" />
+  <import index="v7ag" modelUID="r:9596407c-f27a-49d3-abde-3a66293c5b61(com.mbeddr.ext.components.structure)" version="22" implicit="yes" />
   <import index="p7vm" modelUID="r:28fa862e-f94d-4c39-bdf7-a4bdbc773888(com.mbeddr.ext.components.gen_nomw.structure)" version="0" implicit="yes" />
   <import index="mxvz" modelUID="r:b92c0a08-d42f-4c78-a3f4-d5f989493286(com.mbeddr.ext.components.mock.structure)" version="-1" implicit="yes" />
   <import index="clqz" modelUID="r:5ebcdb77-81e9-4964-beae-35bd9a2f28b5(com.mbeddr.ext.statemachines.structure)" version="12" implicit="yes" />
@@ -41,7 +41,7 @@
   <import index="pszp" modelUID="r:5097c9c6-4a5a-40ee-bd76-4904ba8fa229(com.mbeddr.analyses.nusmv.statemachine.structure)" version="22" implicit="yes" />
   <import index="v0r9" modelUID="r:277b15fc-1383-4213-8385-5a16481fa36c(com.mbeddr.ext.components.test.structure)" version="4" implicit="yes" />
   <import index="3vkx" modelUID="r:1c91fcc2-cf14-47f5-a4d4-3b424626f0d4(com.mbeddr.cc.requirements.c.structure)" version="4" implicit="yes" />
-  <import index="q5q6" modelUID="r:5d65e582-fa41-4818-b31c-b2aee1644b4a(com.mbeddr.analyses.cbmc.structure)" version="17" implicit="yes" />
+  <import index="q5q6" modelUID="r:5d65e582-fa41-4818-b31c-b2aee1644b4a(com.mbeddr.analyses.cbmc.structure)" version="18" implicit="yes" />
   <import index="o4ko" modelUID="r:3b74f196-2fa2-402c-83a3-1b40739a14d2(com.mbeddr.analyses.yices.dectab.structure)" version="4" implicit="yes" />
   <import index="87nw" modelUID="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" version="5" implicit="yes" />
   <roots>
@@ -474,13 +474,13 @@
           </node>
           <node role="init" roleId="c4fa.4185783222026502647" type="k146.NamedArgStructInitExpression" typeId="k146.3059865549680361316" id="9141254329931952630">
             <node role="memberAssigns" roleId="k146.3059865549680413567" type="k146.WithMemberAssignment" typeId="k146.3073566081777391256" id="9141254329931952633">
-              <link role="member" roleId="k146.3073566081777391258" targetNodeId="1731059994647587995" resolveInfo="id" />
+              <link role="element" roleId="k146.3073566081777391258" targetNodeId="1731059994647587995" resolveInfo="id" />
               <node role="value" roleId="k146.3073566081777391257" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="9141254329931952637">
                 <property name="value" nameId="mj1l.8860443239512128104" value="1" />
               </node>
             </node>
             <node role="memberAssigns" roleId="k146.3059865549680413567" type="k146.WithMemberAssignment" typeId="k146.3073566081777391256" id="8135882712510806670">
-              <link role="member" roleId="k146.3073566081777391258" targetNodeId="1731059994647587997" resolveInfo="timestamp" />
+              <link role="element" roleId="k146.3073566081777391258" targetNodeId="1731059994647587997" resolveInfo="timestamp" />
               <node role="value" roleId="k146.3073566081777391257" type="3c6d.LiteralWithUnit" typeId="3c6d.5513256947824592491" id="8135882712510806706">
                 <node role="unit" roleId="3c6d.5513256947824592493" type="ym4j.SISecond" typeId="ym4j.3801772042669047312" id="8135882712510806707" />
                 <node role="value" roleId="3c6d.5513256947824592492" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="8135882712510806676">
@@ -489,7 +489,7 @@
               </node>
             </node>
             <node role="memberAssigns" roleId="k146.3059865549680413567" type="k146.WithMemberAssignment" typeId="k146.3073566081777391256" id="9141254329931952640">
-              <link role="member" roleId="k146.3073566081777391258" targetNodeId="1731059994647588001" resolveInfo="x" />
+              <link role="element" roleId="k146.3073566081777391258" targetNodeId="1731059994647588001" resolveInfo="x" />
               <node role="value" roleId="k146.3073566081777391257" type="3c6d.LiteralWithUnit" typeId="3c6d.5513256947824592491" id="8135882712510800820">
                 <node role="unit" roleId="3c6d.5513256947824592493" type="ym4j.SIMetre" typeId="ym4j.3801772042669047305" id="8135882712510800821" />
                 <node role="value" roleId="3c6d.5513256947824592492" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="9141254329931952644">
@@ -498,7 +498,7 @@
               </node>
             </node>
             <node role="memberAssigns" roleId="k146.3059865549680413567" type="k146.WithMemberAssignment" typeId="k146.3073566081777391256" id="9141254329931952647">
-              <link role="member" roleId="k146.3073566081777391258" targetNodeId="1731059994647588005" resolveInfo="y" />
+              <link role="element" roleId="k146.3073566081777391258" targetNodeId="1731059994647588005" resolveInfo="y" />
               <node role="value" roleId="k146.3073566081777391257" type="3c6d.LiteralWithUnit" typeId="3c6d.5513256947824592491" id="8135882712510800824">
                 <node role="unit" roleId="3c6d.5513256947824592493" type="ym4j.SIMetre" typeId="ym4j.3801772042669047305" id="8135882712510800825" />
                 <node role="value" roleId="3c6d.5513256947824592492" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="9141254329931952651">
@@ -507,7 +507,7 @@
               </node>
             </node>
             <node role="memberAssigns" roleId="k146.3059865549680413567" type="k146.WithMemberAssignment" typeId="k146.3073566081777391256" id="9141254329931952654">
-              <link role="member" roleId="k146.3073566081777391258" targetNodeId="1731059994647588009" resolveInfo="alt" />
+              <link role="element" roleId="k146.3073566081777391258" targetNodeId="1731059994647588009" resolveInfo="alt" />
               <node role="value" roleId="k146.3073566081777391257" type="3c6d.LiteralWithUnit" typeId="3c6d.5513256947824592491" id="8135882712510800828">
                 <node role="unit" roleId="3c6d.5513256947824592493" type="ym4j.SIMetre" typeId="ym4j.3801772042669047305" id="8135882712510800829" />
                 <node role="value" roleId="3c6d.5513256947824592492" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="9141254329931952658">
@@ -643,13 +643,13 @@
           </node>
           <node role="init" roleId="c4fa.4185783222026502647" type="k146.NamedArgStructInitExpression" typeId="k146.3059865549680361316" id="8135882712510806187">
             <node role="memberAssigns" roleId="k146.3059865549680413567" type="k146.WithMemberAssignment" typeId="k146.3073566081777391256" id="8135882712510806188">
-              <link role="member" roleId="k146.3073566081777391258" targetNodeId="1731059994647587995" resolveInfo="id" />
+              <link role="element" roleId="k146.3073566081777391258" targetNodeId="1731059994647587995" resolveInfo="id" />
               <node role="value" roleId="k146.3073566081777391257" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="8135882712510806189">
                 <property name="value" nameId="mj1l.8860443239512128104" value="1" />
               </node>
             </node>
             <node role="memberAssigns" roleId="k146.3059865549680413567" type="k146.WithMemberAssignment" typeId="k146.3073566081777391256" id="8135882712510806681">
-              <link role="member" roleId="k146.3073566081777391258" targetNodeId="1731059994647587997" resolveInfo="timestamp" />
+              <link role="element" roleId="k146.3073566081777391258" targetNodeId="1731059994647587997" resolveInfo="timestamp" />
               <node role="value" roleId="k146.3073566081777391257" type="3c6d.LiteralWithUnit" typeId="3c6d.5513256947824592491" id="8135882712510806692">
                 <node role="unit" roleId="3c6d.5513256947824592493" type="ym4j.SISecond" typeId="ym4j.3801772042669047312" id="8135882712510806693" />
                 <node role="value" roleId="3c6d.5513256947824592492" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="8135882712510806687">
@@ -658,7 +658,7 @@
               </node>
             </node>
             <node role="memberAssigns" roleId="k146.3059865549680413567" type="k146.WithMemberAssignment" typeId="k146.3073566081777391256" id="8135882712510806190">
-              <link role="member" roleId="k146.3073566081777391258" targetNodeId="1731059994647588001" resolveInfo="x" />
+              <link role="element" roleId="k146.3073566081777391258" targetNodeId="1731059994647588001" resolveInfo="x" />
               <node role="value" roleId="k146.3073566081777391257" type="3c6d.LiteralWithUnit" typeId="3c6d.5513256947824592491" id="8135882712510806191">
                 <node role="unit" roleId="3c6d.5513256947824592493" type="ym4j.SIMetre" typeId="ym4j.3801772042669047305" id="8135882712510806192" />
                 <node role="value" roleId="3c6d.5513256947824592492" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="8135882712510806193">
@@ -667,7 +667,7 @@
               </node>
             </node>
             <node role="memberAssigns" roleId="k146.3059865549680413567" type="k146.WithMemberAssignment" typeId="k146.3073566081777391256" id="8135882712510806194">
-              <link role="member" roleId="k146.3073566081777391258" targetNodeId="1731059994647588005" resolveInfo="y" />
+              <link role="element" roleId="k146.3073566081777391258" targetNodeId="1731059994647588005" resolveInfo="y" />
               <node role="value" roleId="k146.3073566081777391257" type="3c6d.LiteralWithUnit" typeId="3c6d.5513256947824592491" id="8135882712510806195">
                 <node role="unit" roleId="3c6d.5513256947824592493" type="ym4j.SIMetre" typeId="ym4j.3801772042669047305" id="8135882712510806196" />
                 <node role="value" roleId="3c6d.5513256947824592492" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="8135882712510806197">
@@ -676,7 +676,7 @@
               </node>
             </node>
             <node role="memberAssigns" roleId="k146.3059865549680413567" type="k146.WithMemberAssignment" typeId="k146.3073566081777391256" id="8135882712510806198">
-              <link role="member" roleId="k146.3073566081777391258" targetNodeId="1731059994647588009" resolveInfo="alt" />
+              <link role="element" roleId="k146.3073566081777391258" targetNodeId="1731059994647588009" resolveInfo="alt" />
               <node role="value" roleId="k146.3073566081777391257" type="3c6d.LiteralWithUnit" typeId="3c6d.5513256947824592491" id="8135882712510806199">
                 <node role="unit" roleId="3c6d.5513256947824592493" type="ym4j.SIMetre" typeId="ym4j.3801772042669047305" id="8135882712510806200" />
                 <node role="value" roleId="3c6d.5513256947824592492" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="8135882712510806201">
@@ -764,13 +764,13 @@
           </node>
           <node role="init" roleId="c4fa.4185783222026502647" type="k146.NamedArgStructInitExpression" typeId="k146.3059865549680361316" id="5160057464295093569">
             <node role="memberAssigns" roleId="k146.3059865549680413567" type="k146.WithMemberAssignment" typeId="k146.3073566081777391256" id="5160057464295093570">
-              <link role="member" roleId="k146.3073566081777391258" targetNodeId="1731059994647587995" resolveInfo="id" />
+              <link role="element" roleId="k146.3073566081777391258" targetNodeId="1731059994647587995" resolveInfo="id" />
               <node role="value" roleId="k146.3073566081777391257" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="5160057464295093571">
                 <property name="value" nameId="mj1l.8860443239512128104" value="1" />
               </node>
             </node>
             <node role="memberAssigns" roleId="k146.3059865549680413567" type="k146.WithMemberAssignment" typeId="k146.3073566081777391256" id="5160057464295093572">
-              <link role="member" roleId="k146.3073566081777391258" targetNodeId="1731059994647587997" resolveInfo="timestamp" />
+              <link role="element" roleId="k146.3073566081777391258" targetNodeId="1731059994647587997" resolveInfo="timestamp" />
               <node role="value" roleId="k146.3073566081777391257" type="3c6d.LiteralWithUnit" typeId="3c6d.5513256947824592491" id="5160057464295093573">
                 <node role="unit" roleId="3c6d.5513256947824592493" type="ym4j.SISecond" typeId="ym4j.3801772042669047312" id="5160057464295093574" />
                 <node role="value" roleId="3c6d.5513256947824592492" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="5160057464295093575">
@@ -779,7 +779,7 @@
               </node>
             </node>
             <node role="memberAssigns" roleId="k146.3059865549680413567" type="k146.WithMemberAssignment" typeId="k146.3073566081777391256" id="5160057464295093576">
-              <link role="member" roleId="k146.3073566081777391258" targetNodeId="1731059994647588001" resolveInfo="x" />
+              <link role="element" roleId="k146.3073566081777391258" targetNodeId="1731059994647588001" resolveInfo="x" />
               <node role="value" roleId="k146.3073566081777391257" type="3c6d.LiteralWithUnit" typeId="3c6d.5513256947824592491" id="5160057464295093577">
                 <node role="unit" roleId="3c6d.5513256947824592493" type="ym4j.SIMetre" typeId="ym4j.3801772042669047305" id="5160057464295093578" />
                 <node role="value" roleId="3c6d.5513256947824592492" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="5160057464295093579">
@@ -788,7 +788,7 @@
               </node>
             </node>
             <node role="memberAssigns" roleId="k146.3059865549680413567" type="k146.WithMemberAssignment" typeId="k146.3073566081777391256" id="5160057464295093580">
-              <link role="member" roleId="k146.3073566081777391258" targetNodeId="1731059994647588005" resolveInfo="y" />
+              <link role="element" roleId="k146.3073566081777391258" targetNodeId="1731059994647588005" resolveInfo="y" />
               <node role="value" roleId="k146.3073566081777391257" type="3c6d.LiteralWithUnit" typeId="3c6d.5513256947824592491" id="5160057464295093581">
                 <node role="unit" roleId="3c6d.5513256947824592493" type="ym4j.SIMetre" typeId="ym4j.3801772042669047305" id="5160057464295093582" />
                 <node role="value" roleId="3c6d.5513256947824592492" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="5160057464295093583">
@@ -797,7 +797,7 @@
               </node>
             </node>
             <node role="memberAssigns" roleId="k146.3059865549680413567" type="k146.WithMemberAssignment" typeId="k146.3073566081777391256" id="5160057464295093584">
-              <link role="member" roleId="k146.3073566081777391258" targetNodeId="1731059994647588009" resolveInfo="alt" />
+              <link role="element" roleId="k146.3073566081777391258" targetNodeId="1731059994647588009" resolveInfo="alt" />
               <node role="value" roleId="k146.3073566081777391257" type="3c6d.LiteralWithUnit" typeId="3c6d.5513256947824592491" id="5160057464295093585">
                 <node role="unit" roleId="3c6d.5513256947824592493" type="ym4j.SIMetre" typeId="ym4j.3801772042669047305" id="5160057464295093586" />
                 <node role="value" roleId="3c6d.5513256947824592492" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="5160057464295093587">
@@ -1776,13 +1776,13 @@
             </node>
             <node role="init" roleId="c4fa.4185783222026502647" type="k146.NamedArgStructInitExpression" typeId="k146.3059865549680361316" id="1634970928501131039">
               <node role="memberAssigns" roleId="k146.3059865549680413567" type="k146.WithMemberAssignment" typeId="k146.3073566081777391256" id="1634970928501131040">
-                <link role="member" roleId="k146.3073566081777391258" targetNodeId="1731059994647587995" resolveInfo="id" />
+                <link role="element" roleId="k146.3073566081777391258" targetNodeId="1731059994647587995" resolveInfo="id" />
                 <node role="value" roleId="k146.3073566081777391257" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="1634970928501131041">
                   <property name="value" nameId="mj1l.8860443239512128104" value="1" />
                 </node>
               </node>
               <node role="memberAssigns" roleId="k146.3059865549680413567" type="k146.WithMemberAssignment" typeId="k146.3073566081777391256" id="1634970928501131042">
-                <link role="member" roleId="k146.3073566081777391258" targetNodeId="1731059994647587997" resolveInfo="timestamp" />
+                <link role="element" roleId="k146.3073566081777391258" targetNodeId="1731059994647587997" resolveInfo="timestamp" />
                 <node role="value" roleId="k146.3073566081777391257" type="3c6d.LiteralWithUnit" typeId="3c6d.5513256947824592491" id="1634970928501131043">
                   <node role="unit" roleId="3c6d.5513256947824592493" type="ym4j.SISecond" typeId="ym4j.3801772042669047312" id="1634970928501131044" />
                   <node role="value" roleId="3c6d.5513256947824592492" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="1634970928501131045">
@@ -1791,7 +1791,7 @@
                 </node>
               </node>
               <node role="memberAssigns" roleId="k146.3059865549680413567" type="k146.WithMemberAssignment" typeId="k146.3073566081777391256" id="1634970928501131046">
-                <link role="member" roleId="k146.3073566081777391258" targetNodeId="1731059994647588013" resolveInfo="speed" />
+                <link role="element" roleId="k146.3073566081777391258" targetNodeId="1731059994647588013" resolveInfo="speed" />
                 <node role="value" roleId="k146.3073566081777391257" type="3c6d.LiteralWithUnit" typeId="3c6d.5513256947824592491" id="1634970928501131047">
                   <node role="unit" roleId="3c6d.5513256947824592493" type="ym4j.UnitDeclarationRef" typeId="ym4j.8099136929591173606" id="1634970928501131048">
                     <link role="ref" roleId="ym4j.1085404444144943750" targetNodeId="8135882712510800448" resolveInfo="mps" />
@@ -1810,13 +1810,13 @@
             </node>
             <node role="init" roleId="c4fa.4185783222026502647" type="k146.NamedArgStructInitExpression" typeId="k146.3059865549680361316" id="1634970928501131052">
               <node role="memberAssigns" roleId="k146.3059865549680413567" type="k146.WithMemberAssignment" typeId="k146.3073566081777391256" id="1634970928501131053">
-                <link role="member" roleId="k146.3073566081777391258" targetNodeId="1731059994647587995" resolveInfo="id" />
+                <link role="element" roleId="k146.3073566081777391258" targetNodeId="1731059994647587995" resolveInfo="id" />
                 <node role="value" roleId="k146.3073566081777391257" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="1634970928501131054">
                   <property name="value" nameId="mj1l.8860443239512128104" value="1" />
                 </node>
               </node>
               <node role="memberAssigns" roleId="k146.3059865549680413567" type="k146.WithMemberAssignment" typeId="k146.3073566081777391256" id="1634970928501131055">
-                <link role="member" roleId="k146.3073566081777391258" targetNodeId="1731059994647587997" resolveInfo="timestamp" />
+                <link role="element" roleId="k146.3073566081777391258" targetNodeId="1731059994647587997" resolveInfo="timestamp" />
                 <node role="value" roleId="k146.3073566081777391257" type="3c6d.LiteralWithUnit" typeId="3c6d.5513256947824592491" id="1634970928501131056">
                   <node role="unit" roleId="3c6d.5513256947824592493" type="ym4j.SISecond" typeId="ym4j.3801772042669047312" id="1634970928501131057" />
                   <node role="value" roleId="3c6d.5513256947824592492" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="1634970928501131058">
@@ -1825,7 +1825,7 @@
                 </node>
               </node>
               <node role="memberAssigns" roleId="k146.3059865549680413567" type="k146.WithMemberAssignment" typeId="k146.3073566081777391256" id="1634970928501131059">
-                <link role="member" roleId="k146.3073566081777391258" targetNodeId="1731059994647588013" resolveInfo="speed" />
+                <link role="element" roleId="k146.3073566081777391258" targetNodeId="1731059994647588013" resolveInfo="speed" />
                 <node role="value" roleId="k146.3073566081777391257" type="3c6d.LiteralWithUnit" typeId="3c6d.5513256947824592491" id="1634970928501131060">
                   <node role="unit" roleId="3c6d.5513256947824592493" type="ym4j.UnitDeclarationRef" typeId="ym4j.8099136929591173606" id="1634970928501131061">
                     <link role="ref" roleId="ym4j.1085404444144943750" targetNodeId="8135882712510800448" resolveInfo="mps" />
@@ -1910,13 +1910,13 @@
             </node>
             <node role="init" roleId="c4fa.4185783222026502647" type="k146.NamedArgStructInitExpression" typeId="k146.3059865549680361316" id="1731059994647783049">
               <node role="memberAssigns" roleId="k146.3059865549680413567" type="k146.WithMemberAssignment" typeId="k146.3073566081777391256" id="1731059994647798013">
-                <link role="member" roleId="k146.3073566081777391258" targetNodeId="1731059994647587995" resolveInfo="id" />
+                <link role="element" roleId="k146.3073566081777391258" targetNodeId="1731059994647587995" resolveInfo="id" />
                 <node role="value" roleId="k146.3073566081777391257" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="1731059994647798015">
                   <property name="value" nameId="mj1l.8860443239512128104" value="10" />
                 </node>
               </node>
               <node role="memberAssigns" roleId="k146.3059865549680413567" type="k146.WithMemberAssignment" typeId="k146.3073566081777391256" id="1731059994647806590">
-                <link role="member" roleId="k146.3073566081777391258" targetNodeId="1731059994647587997" resolveInfo="timestamp" />
+                <link role="element" roleId="k146.3073566081777391258" targetNodeId="1731059994647587997" resolveInfo="timestamp" />
                 <node role="value" roleId="k146.3073566081777391257" type="3c6d.LiteralWithUnit" typeId="3c6d.5513256947824592491" id="1731059994647806612">
                   <node role="unit" roleId="3c6d.5513256947824592493" type="ym4j.SISecond" typeId="ym4j.3801772042669047312" id="1731059994647806613" />
                   <node role="value" roleId="3c6d.5513256947824592492" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="1731059994647806595">
@@ -1925,7 +1925,7 @@
                 </node>
               </node>
               <node role="memberAssigns" roleId="k146.3059865549680413567" type="k146.WithMemberAssignment" typeId="k146.3073566081777391256" id="1731059994647807539">
-                <link role="member" roleId="k146.3073566081777391258" targetNodeId="1731059994647588009" resolveInfo="alt" />
+                <link role="element" roleId="k146.3073566081777391258" targetNodeId="1731059994647588009" resolveInfo="alt" />
                 <node role="value" roleId="k146.3073566081777391257" type="3c6d.LiteralWithUnit" typeId="3c6d.5513256947824592491" id="1731059994647807552">
                   <node role="unit" roleId="3c6d.5513256947824592493" type="ym4j.SIMetre" typeId="ym4j.3801772042669047305" id="1731059994647807553" />
                   <node role="value" roleId="3c6d.5513256947824592492" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="1731059994647807543">
@@ -2036,13 +2036,13 @@
             </node>
             <node role="init" roleId="c4fa.4185783222026502647" type="k146.NamedArgStructInitExpression" typeId="k146.3059865549680361316" id="1731059994647888722">
               <node role="memberAssigns" roleId="k146.3059865549680413567" type="k146.WithMemberAssignment" typeId="k146.3073566081777391256" id="1731059994647888723">
-                <link role="member" roleId="k146.3073566081777391258" targetNodeId="1731059994647587995" resolveInfo="id" />
+                <link role="element" roleId="k146.3073566081777391258" targetNodeId="1731059994647587995" resolveInfo="id" />
                 <node role="value" roleId="k146.3073566081777391257" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="1731059994647888725">
                   <property name="value" nameId="mj1l.8860443239512128104" value="1" />
                 </node>
               </node>
               <node role="memberAssigns" roleId="k146.3059865549680413567" type="k146.WithMemberAssignment" typeId="k146.3073566081777391256" id="1731059994647888728">
-                <link role="member" roleId="k146.3073566081777391258" targetNodeId="1731059994647587997" resolveInfo="timestamp" />
+                <link role="element" roleId="k146.3073566081777391258" targetNodeId="1731059994647587997" resolveInfo="timestamp" />
                 <node role="value" roleId="k146.3073566081777391257" type="3c6d.LiteralWithUnit" typeId="3c6d.5513256947824592491" id="1731059994647888738">
                   <node role="unit" roleId="3c6d.5513256947824592493" type="ym4j.SISecond" typeId="ym4j.3801772042669047312" id="1731059994647888739" />
                   <node role="value" roleId="3c6d.5513256947824592492" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="1731059994647888730">
@@ -2051,7 +2051,7 @@
                 </node>
               </node>
               <node role="memberAssigns" roleId="k146.3059865549680413567" type="k146.WithMemberAssignment" typeId="k146.3073566081777391256" id="1731059994647888743">
-                <link role="member" roleId="k146.3073566081777391258" targetNodeId="1731059994647588013" resolveInfo="speed" />
+                <link role="element" roleId="k146.3073566081777391258" targetNodeId="1731059994647588013" resolveInfo="speed" />
                 <node role="value" roleId="k146.3073566081777391257" type="3c6d.LiteralWithUnit" typeId="3c6d.5513256947824592491" id="1731059994647888754">
                   <node role="unit" roleId="3c6d.5513256947824592493" type="ym4j.UnitDeclarationRef" typeId="ym4j.8099136929591173606" id="1731059994647888755">
                     <link role="ref" roleId="ym4j.1085404444144943750" targetNodeId="8135882712510800448" resolveInfo="mps" />
@@ -2070,13 +2070,13 @@
             </node>
             <node role="init" roleId="c4fa.4185783222026502647" type="k146.NamedArgStructInitExpression" typeId="k146.3059865549680361316" id="1731059994647888759">
               <node role="memberAssigns" roleId="k146.3059865549680413567" type="k146.WithMemberAssignment" typeId="k146.3073566081777391256" id="1731059994647888760">
-                <link role="member" roleId="k146.3073566081777391258" targetNodeId="1731059994647587995" resolveInfo="id" />
+                <link role="element" roleId="k146.3073566081777391258" targetNodeId="1731059994647587995" resolveInfo="id" />
                 <node role="value" roleId="k146.3073566081777391257" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="1731059994647888761">
                   <property name="value" nameId="mj1l.8860443239512128104" value="1" />
                 </node>
               </node>
               <node role="memberAssigns" roleId="k146.3059865549680413567" type="k146.WithMemberAssignment" typeId="k146.3073566081777391256" id="1731059994647888762">
-                <link role="member" roleId="k146.3073566081777391258" targetNodeId="1731059994647587997" resolveInfo="timestamp" />
+                <link role="element" roleId="k146.3073566081777391258" targetNodeId="1731059994647587997" resolveInfo="timestamp" />
                 <node role="value" roleId="k146.3073566081777391257" type="3c6d.LiteralWithUnit" typeId="3c6d.5513256947824592491" id="1731059994647888763">
                   <node role="unit" roleId="3c6d.5513256947824592493" type="ym4j.SISecond" typeId="ym4j.3801772042669047312" id="1731059994647888764" />
                   <node role="value" roleId="3c6d.5513256947824592492" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="1731059994647888765">
@@ -2085,7 +2085,7 @@
                 </node>
               </node>
               <node role="memberAssigns" roleId="k146.3059865549680413567" type="k146.WithMemberAssignment" typeId="k146.3073566081777391256" id="1731059994647888766">
-                <link role="member" roleId="k146.3073566081777391258" targetNodeId="1731059994647588013" resolveInfo="speed" />
+                <link role="element" roleId="k146.3073566081777391258" targetNodeId="1731059994647588013" resolveInfo="speed" />
                 <node role="value" roleId="k146.3073566081777391257" type="3c6d.LiteralWithUnit" typeId="3c6d.5513256947824592491" id="1731059994647888767">
                   <node role="unit" roleId="3c6d.5513256947824592493" type="ym4j.UnitDeclarationRef" typeId="ym4j.8099136929591173606" id="1731059994647888768">
                     <link role="ref" roleId="ym4j.1085404444144943750" targetNodeId="8135882712510800448" resolveInfo="mps" />
@@ -2306,13 +2306,13 @@
             </node>
             <node role="init" roleId="c4fa.4185783222026502647" type="k146.NamedArgStructInitExpression" typeId="k146.3059865549680361316" id="5160057464294670936">
               <node role="memberAssigns" roleId="k146.3059865549680413567" type="k146.WithMemberAssignment" typeId="k146.3073566081777391256" id="5160057464294670937">
-                <link role="member" roleId="k146.3073566081777391258" targetNodeId="1731059994647587995" resolveInfo="id" />
+                <link role="element" roleId="k146.3073566081777391258" targetNodeId="1731059994647587995" resolveInfo="id" />
                 <node role="value" roleId="k146.3073566081777391257" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="5160057464294670938">
                   <property name="value" nameId="mj1l.8860443239512128104" value="1" />
                 </node>
               </node>
               <node role="memberAssigns" roleId="k146.3059865549680413567" type="k146.WithMemberAssignment" typeId="k146.3073566081777391256" id="5160057464294670939">
-                <link role="member" roleId="k146.3073566081777391258" targetNodeId="1731059994647587997" resolveInfo="timestamp" />
+                <link role="element" roleId="k146.3073566081777391258" targetNodeId="1731059994647587997" resolveInfo="timestamp" />
                 <node role="value" roleId="k146.3073566081777391257" type="3c6d.LiteralWithUnit" typeId="3c6d.5513256947824592491" id="5160057464294670940">
                   <node role="unit" roleId="3c6d.5513256947824592493" type="ym4j.SISecond" typeId="ym4j.3801772042669047312" id="5160057464294670941" />
                   <node role="value" roleId="3c6d.5513256947824592492" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="5160057464294670942">
@@ -2321,7 +2321,7 @@
                 </node>
               </node>
               <node role="memberAssigns" roleId="k146.3059865549680413567" type="k146.WithMemberAssignment" typeId="k146.3073566081777391256" id="5160057464294670943">
-                <link role="member" roleId="k146.3073566081777391258" targetNodeId="1731059994647588013" resolveInfo="speed" />
+                <link role="element" roleId="k146.3073566081777391258" targetNodeId="1731059994647588013" resolveInfo="speed" />
                 <node role="value" roleId="k146.3073566081777391257" type="3c6d.LiteralWithUnit" typeId="3c6d.5513256947824592491" id="5160057464294670944">
                   <node role="unit" roleId="3c6d.5513256947824592493" type="ym4j.UnitDeclarationRef" typeId="ym4j.8099136929591173606" id="5160057464294670945">
                     <link role="ref" roleId="ym4j.1085404444144943750" targetNodeId="8135882712510800448" resolveInfo="mps" />
@@ -2340,13 +2340,13 @@
             </node>
             <node role="init" roleId="c4fa.4185783222026502647" type="k146.NamedArgStructInitExpression" typeId="k146.3059865549680361316" id="5160057464294670949">
               <node role="memberAssigns" roleId="k146.3059865549680413567" type="k146.WithMemberAssignment" typeId="k146.3073566081777391256" id="5160057464294670950">
-                <link role="member" roleId="k146.3073566081777391258" targetNodeId="1731059994647587995" resolveInfo="id" />
+                <link role="element" roleId="k146.3073566081777391258" targetNodeId="1731059994647587995" resolveInfo="id" />
                 <node role="value" roleId="k146.3073566081777391257" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="5160057464294670951">
                   <property name="value" nameId="mj1l.8860443239512128104" value="2" />
                 </node>
               </node>
               <node role="memberAssigns" roleId="k146.3059865549680413567" type="k146.WithMemberAssignment" typeId="k146.3073566081777391256" id="5160057464294670952">
-                <link role="member" roleId="k146.3073566081777391258" targetNodeId="1731059994647587997" resolveInfo="timestamp" />
+                <link role="element" roleId="k146.3073566081777391258" targetNodeId="1731059994647587997" resolveInfo="timestamp" />
                 <node role="value" roleId="k146.3073566081777391257" type="3c6d.LiteralWithUnit" typeId="3c6d.5513256947824592491" id="5160057464294670953">
                   <node role="unit" roleId="3c6d.5513256947824592493" type="ym4j.SISecond" typeId="ym4j.3801772042669047312" id="5160057464294670954" />
                   <node role="value" roleId="3c6d.5513256947824592492" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="5160057464294670955">
@@ -2355,7 +2355,7 @@
                 </node>
               </node>
               <node role="memberAssigns" roleId="k146.3059865549680413567" type="k146.WithMemberAssignment" typeId="k146.3073566081777391256" id="5160057464294670956">
-                <link role="member" roleId="k146.3073566081777391258" targetNodeId="1731059994647588013" resolveInfo="speed" />
+                <link role="element" roleId="k146.3073566081777391258" targetNodeId="1731059994647588013" resolveInfo="speed" />
                 <node role="value" roleId="k146.3073566081777391257" type="3c6d.LiteralWithUnit" typeId="3c6d.5513256947824592491" id="5160057464294670957">
                   <node role="unit" roleId="3c6d.5513256947824592493" type="ym4j.UnitDeclarationRef" typeId="ym4j.8099136929591173606" id="5160057464294670958">
                     <link role="ref" roleId="ym4j.1085404444144943750" targetNodeId="8135882712510800448" resolveInfo="mps" />
@@ -3517,7 +3517,7 @@
               <link role="sibling" roleId="x27k.6068976060903808907" targetNodeId="7727566415687762902" resolveInfo="airborne" />
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6068976060903867049">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value="." />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=". " />
             </node>
           </node>
         </node>
@@ -8547,13 +8547,13 @@
           </node>
           <node role="init" roleId="c4fa.4185783222026502647" type="k146.NamedArgStructInitExpression" typeId="k146.3059865549680361316" id="5441227754062477144">
             <node role="memberAssigns" roleId="k146.3059865549680413567" type="k146.WithMemberAssignment" typeId="k146.3073566081777391256" id="5441227754062477145">
-              <link role="member" roleId="k146.3073566081777391258" targetNodeId="1731059994647587995" resolveInfo="id" />
+              <link role="element" roleId="k146.3073566081777391258" targetNodeId="1731059994647587995" resolveInfo="id" />
               <node role="value" roleId="k146.3073566081777391257" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="5441227754062477146">
                 <property name="value" nameId="mj1l.8860443239512128104" value="1" />
               </node>
             </node>
             <node role="memberAssigns" roleId="k146.3059865549680413567" type="k146.WithMemberAssignment" typeId="k146.3073566081777391256" id="5441227754062477147">
-              <link role="member" roleId="k146.3073566081777391258" targetNodeId="1731059994647587997" resolveInfo="timestamp" />
+              <link role="element" roleId="k146.3073566081777391258" targetNodeId="1731059994647587997" resolveInfo="timestamp" />
               <node role="value" roleId="k146.3073566081777391257" type="3c6d.LiteralWithUnit" typeId="3c6d.5513256947824592491" id="5441227754062477148">
                 <node role="unit" roleId="3c6d.5513256947824592493" type="ym4j.SISecond" typeId="ym4j.3801772042669047312" id="5441227754062477149" />
                 <node role="value" roleId="3c6d.5513256947824592492" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="5441227754062477150">
@@ -8562,7 +8562,7 @@
               </node>
             </node>
             <node role="memberAssigns" roleId="k146.3059865549680413567" type="k146.WithMemberAssignment" typeId="k146.3073566081777391256" id="5441227754062477151">
-              <link role="member" roleId="k146.3073566081777391258" targetNodeId="1731059994647588001" resolveInfo="x" />
+              <link role="element" roleId="k146.3073566081777391258" targetNodeId="1731059994647588001" resolveInfo="x" />
               <node role="value" roleId="k146.3073566081777391257" type="3c6d.LiteralWithUnit" typeId="3c6d.5513256947824592491" id="5441227754062477152">
                 <node role="unit" roleId="3c6d.5513256947824592493" type="ym4j.SIMetre" typeId="ym4j.3801772042669047305" id="5441227754062477153" />
                 <node role="value" roleId="3c6d.5513256947824592492" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="5441227754062477154">
@@ -8571,7 +8571,7 @@
               </node>
             </node>
             <node role="memberAssigns" roleId="k146.3059865549680413567" type="k146.WithMemberAssignment" typeId="k146.3073566081777391256" id="5441227754062477155">
-              <link role="member" roleId="k146.3073566081777391258" targetNodeId="1731059994647588005" resolveInfo="y" />
+              <link role="element" roleId="k146.3073566081777391258" targetNodeId="1731059994647588005" resolveInfo="y" />
               <node role="value" roleId="k146.3073566081777391257" type="3c6d.LiteralWithUnit" typeId="3c6d.5513256947824592491" id="5441227754062477156">
                 <node role="unit" roleId="3c6d.5513256947824592493" type="ym4j.SIMetre" typeId="ym4j.3801772042669047305" id="5441227754062477157" />
                 <node role="value" roleId="3c6d.5513256947824592492" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="5441227754062477158">
@@ -8580,7 +8580,7 @@
               </node>
             </node>
             <node role="memberAssigns" roleId="k146.3059865549680413567" type="k146.WithMemberAssignment" typeId="k146.3073566081777391256" id="5441227754062477159">
-              <link role="member" roleId="k146.3073566081777391258" targetNodeId="1731059994647588009" resolveInfo="alt" />
+              <link role="element" roleId="k146.3073566081777391258" targetNodeId="1731059994647588009" resolveInfo="alt" />
               <node role="value" roleId="k146.3073566081777391257" type="3c6d.LiteralWithUnit" typeId="3c6d.5513256947824592491" id="5441227754062477160">
                 <node role="unit" roleId="3c6d.5513256947824592493" type="ym4j.SIMetre" typeId="ym4j.3801772042669047305" id="5441227754062477161" />
                 <node role="value" roleId="3c6d.5513256947824592492" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="5441227754062477162">
@@ -8589,7 +8589,7 @@
               </node>
             </node>
             <node role="memberAssigns" roleId="k146.3059865549680413567" type="k146.WithMemberAssignment" typeId="k146.3073566081777391256" id="5441227754062521911">
-              <link role="member" roleId="k146.3073566081777391258" targetNodeId="1731059994647588013" resolveInfo="speed" />
+              <link role="element" roleId="k146.3073566081777391258" targetNodeId="1731059994647588013" resolveInfo="speed" />
               <node role="value" roleId="k146.3073566081777391257" type="3c6d.LiteralWithUnit" typeId="3c6d.5513256947824592491" id="5441227754062521920">
                 <node role="unit" roleId="3c6d.5513256947824592493" type="ym4j.UnitDeclarationRef" typeId="ym4j.8099136929591173606" id="5441227754062521921">
                   <link role="ref" roleId="ym4j.1085404444144943750" targetNodeId="8135882712510800448" resolveInfo="mps" />
@@ -9229,13 +9229,13 @@
           </node>
           <node role="init" roleId="c4fa.4185783222026502647" type="k146.NamedArgStructInitExpression" typeId="k146.3059865549680361316" id="869116753978119623">
             <node role="memberAssigns" roleId="k146.3059865549680413567" type="k146.WithMemberAssignment" typeId="k146.3073566081777391256" id="869116753978119638">
-              <link role="member" roleId="k146.3073566081777391258" targetNodeId="1731059994647587995" resolveInfo="id" />
+              <link role="element" roleId="k146.3073566081777391258" targetNodeId="1731059994647587995" resolveInfo="id" />
               <node role="value" roleId="k146.3073566081777391257" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="869116753978119648">
                 <property name="value" nameId="mj1l.8860443239512128104" value="1" />
               </node>
             </node>
             <node role="memberAssigns" roleId="k146.3059865549680413567" type="k146.WithMemberAssignment" typeId="k146.3073566081777391256" id="869116753978119624">
-              <link role="member" roleId="k146.3073566081777391258" targetNodeId="1731059994647588009" resolveInfo="alt" />
+              <link role="element" roleId="k146.3073566081777391258" targetNodeId="1731059994647588009" resolveInfo="alt" />
               <node role="value" roleId="k146.3073566081777391257" type="3c6d.LiteralWithUnit" typeId="3c6d.5513256947824592491" id="869116753978119633">
                 <node role="unit" roleId="3c6d.5513256947824592493" type="ym4j.SIMetre" typeId="ym4j.3801772042669047305" id="869116753978119634" />
                 <node role="value" roleId="3c6d.5513256947824592492" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="869116753978119626">
@@ -9244,7 +9244,7 @@
               </node>
             </node>
             <node role="memberAssigns" roleId="k146.3059865549680413567" type="k146.WithMemberAssignment" typeId="k146.3073566081777391256" id="869116753978119635">
-              <link role="member" roleId="k146.3073566081777391258" targetNodeId="1731059994647588013" resolveInfo="speed" />
+              <link role="element" roleId="k146.3073566081777391258" targetNodeId="1731059994647588013" resolveInfo="speed" />
               <node role="value" roleId="k146.3073566081777391257" type="3c6d.LiteralWithUnit" typeId="3c6d.5513256947824592491" id="869116753978119646">
                 <node role="unit" roleId="3c6d.5513256947824592493" type="ym4j.UnitDeclarationRef" typeId="ym4j.8099136929591173606" id="869116753978119649">
                   <link role="ref" roleId="ym4j.1085404444144943750" targetNodeId="8135882712510800448" resolveInfo="mps" />
@@ -9710,7 +9710,7 @@
         <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="6700886800242035161">
           <node role="statements" roleId="c4fa.4185783222026475862" type="k146.WithStatement" typeId="k146.3073566081777363796" id="6700886800242035238">
             <node role="memberAssigns" roleId="k146.3073566081777411306" type="k146.WithMemberAssignment" typeId="k146.3073566081777391256" id="6700886800242040132">
-              <link role="member" roleId="k146.3073566081777391258" targetNodeId="1731059994647587995" resolveInfo="id" />
+              <link role="element" roleId="k146.3073566081777391258" targetNodeId="1731059994647587995" resolveInfo="id" />
               <node role="value" roleId="k146.3073566081777391257" type="mj1l.CastExpression" typeId="mj1l.6610873504380029780" id="6700886800242040137">
                 <node role="expr" roleId="mj1l.6610873504380029782" type="v7ag.FieldRef" typeId="v7ag.5308710777891565561" id="6700886800242040135">
                   <link role="field" roleId="v7ag.5308710777891565562" targetNodeId="6700886800242035175" resolveInfo="count" />
@@ -9730,7 +9730,7 @@
               </node>
             </node>
             <node role="memberAssigns" roleId="k146.3073566081777411306" type="k146.WithMemberAssignment" typeId="k146.3073566081777391256" id="6700886800242035250">
-              <link role="member" roleId="k146.3073566081777391258" targetNodeId="1731059994647588001" resolveInfo="x" />
+              <link role="element" roleId="k146.3073566081777391258" targetNodeId="1731059994647588001" resolveInfo="x" />
               <node role="value" roleId="k146.3073566081777391257" type="v7ag.DataElementRefExpr" typeId="v7ag.998890089995051771" id="6700886800242035255">
                 <link role="element" roleId="v7ag.998890089995051773" targetNodeId="6700886800242034962" resolveInfo="x" />
                 <node role="expression" roleId="mj1l.7254843406768839760" type="v7ag.PortRefExpr" typeId="v7ag.8105003328815208362" id="6700886800242035252">
@@ -9739,7 +9739,7 @@
               </node>
             </node>
             <node role="memberAssigns" roleId="k146.3073566081777411306" type="k146.WithMemberAssignment" typeId="k146.3073566081777391256" id="6700886800242035256">
-              <link role="member" roleId="k146.3073566081777391258" targetNodeId="1731059994647588005" resolveInfo="y" />
+              <link role="element" roleId="k146.3073566081777391258" targetNodeId="1731059994647588005" resolveInfo="y" />
               <node role="value" roleId="k146.3073566081777391257" type="v7ag.DataElementRefExpr" typeId="v7ag.998890089995051771" id="6700886800242035257">
                 <link role="element" roleId="v7ag.998890089995051773" targetNodeId="6700886800242034969" resolveInfo="y" />
                 <node role="expression" roleId="mj1l.7254843406768839760" type="v7ag.PortRefExpr" typeId="v7ag.8105003328815208362" id="6700886800242035258">
@@ -9748,7 +9748,7 @@
               </node>
             </node>
             <node role="memberAssigns" roleId="k146.3073566081777411306" type="k146.WithMemberAssignment" typeId="k146.3073566081777391256" id="6700886800242035259">
-              <link role="member" roleId="k146.3073566081777391258" targetNodeId="1731059994647588009" resolveInfo="alt" />
+              <link role="element" roleId="k146.3073566081777391258" targetNodeId="1731059994647588009" resolveInfo="alt" />
               <node role="value" roleId="k146.3073566081777391257" type="v7ag.DataElementRefExpr" typeId="v7ag.998890089995051771" id="6700886800242035260">
                 <link role="element" roleId="v7ag.998890089995051773" targetNodeId="6700886800242034973" resolveInfo="alt" />
                 <node role="expression" roleId="mj1l.7254843406768839760" type="v7ag.PortRefExpr" typeId="v7ag.8105003328815208362" id="6700886800242035261">
@@ -9757,7 +9757,7 @@
               </node>
             </node>
             <node role="memberAssigns" roleId="k146.3073566081777411306" type="k146.WithMemberAssignment" typeId="k146.3073566081777391256" id="6700886800242035262">
-              <link role="member" roleId="k146.3073566081777391258" targetNodeId="1731059994647588013" resolveInfo="speed" />
+              <link role="element" roleId="k146.3073566081777391258" targetNodeId="1731059994647588013" resolveInfo="speed" />
               <node role="value" roleId="k146.3073566081777391257" type="v7ag.DataElementRefExpr" typeId="v7ag.998890089995051771" id="6700886800242035272">
                 <link role="element" roleId="v7ag.998890089995051773" targetNodeId="6700886800242034985" resolveInfo="speed" />
                 <node role="expression" roleId="mj1l.7254843406768839760" type="v7ag.PortRefExpr" typeId="v7ag.8105003328815208362" id="6700886800242035269">
