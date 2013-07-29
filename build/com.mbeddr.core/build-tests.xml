@@ -708,6 +708,7 @@
     <path id="mps.tests.path">
       <pathelement location="${build.layout}/test.cstub.core.jar" />
       <pathelement location="${build.layout}/test.ts.core.dataflow.jar" />
+      <pathelement location="${build.layout}/test.ts.core.jar" />
     </path>
     <pathconvert pathsep="${path.separator}" property="mps.tests.path.string" refid="mps.tests.path" />
     <junit showoutput="true" fork="true">

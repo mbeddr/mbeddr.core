@@ -3562,8 +3562,8 @@
       <node role="modules" roleId="5tjl.4560297596904469360" type="5tjl.BuildMpsLayout_TestModule" typeId="5tjl.4560297596904469362" id="1259987426411808903" nodeInfo="nn">
         <link role="module" roleId="5tjl.4560297596904469363" targetNodeId="6247780594427461887" resolveInfo="test.cstub.core" />
       </node>
-      <node role="modules" roleId="5tjl.4560297596904469360" type="5tjl.BuildMpsLayout_TestModule" typeId="5tjl.4560297596904469362" id="1259987426411807383" nodeInfo="nn">
-        <link role="module" roleId="5tjl.4560297596904469363" targetNodeId="2355782130529971433" resolveInfo="test.ts.core.dataflow" />
+      <node role="modules" roleId="5tjl.4560297596904469360" type="5tjl.BuildMpsLayout_TestModule" typeId="5tjl.4560297596904469362" id="1259987426412283758" nodeInfo="nn">
+        <link role="module" roleId="5tjl.4560297596904469363" targetNodeId="8628756186118852472" resolveInfo="test.ts.core" />
       </node>
       <node role="modules" roleId="5tjl.4560297596904469360" type="5tjl.BuildMpsLayout_TestModule" typeId="5tjl.4560297596904469362" id="1259987426411806165" nodeInfo="nn">
         <link role="module" roleId="5tjl.4560297596904469363" targetNodeId="2355782130529971433" resolveInfo="test.ts.core.dataflow" />
