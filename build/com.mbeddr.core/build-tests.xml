@@ -64,6 +64,7 @@
       <fileset dir="${mbeddr.core}/tests/test.cstub.core" includes="**/*.mps, **/*.metadata, **/*.history" />
     </copyModels>
     <jar destfile="${build.layout}/test.cstub.core-src.jar">
+      <fileset dir="${mbeddr.core}/tests/test.cstub.core/source_gen" includes="**/*.java" />
       <zipfileset file="${mbeddr.core}/tests/test.cstub.core/core.msd" prefix="module" />
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/tests-test.cstub.core" prefix="module/" />
     </jar>
@@ -98,6 +99,7 @@
       <fileset dir="${mbeddr.core}/tests/test.ts.core/models" includes="**/*.mps, **/*.metadata, **/*.history" />
     </copyModels>
     <jar destfile="${build.layout}/test.ts.core-src.jar">
+      <fileset dir="${mbeddr.core}/tests/test.ts.core/source_gen" includes="**/*.java" />
       <zipfileset file="${mbeddr.core}/tests/test.ts.core/core.msd" prefix="module" />
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/tests-test.ts.core" prefix="module/" />
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/tests-test.ts.core-models" prefix="module/models" />
@@ -130,6 +132,7 @@
       <fileset dir="${mbeddr.core}/tests/test.ts.core.dataflow/models" includes="**/*.mps, **/*.metadata, **/*.history" />
     </copyModels>
     <jar destfile="${build.layout}/test.ts.core.dataflow-src.jar">
+      <fileset dir="${mbeddr.core}/tests/test.ts.core.dataflow/source_gen" includes="**/*.java" />
       <zipfileset file="${mbeddr.core}/tests/test.ts.core.dataflow/dataflow.msd" prefix="module" />
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/tests-test.ts.core.dataflow-models" prefix="module/models" />
     </jar>
@@ -307,7 +310,10 @@
     <mkdir dir="${build.tmp}/java/out/test.cstub.core" />
     <javac destdir="${build.tmp}/java/out/test.cstub.core" fork="true" includeantruntime="false">
       <compilerarg value="-Xlint:none" />
-      <src path="${mbeddr.core}/tests/test.cstub.core/test_gen/" />
+      <src>
+        <path location="${mbeddr.core}/tests/test.cstub.core/source_gen" />
+        <pathelement path="${mbeddr.core}/tests/test.cstub.core/test_gen/" />
+      </src>
       <classpath>
         <fileset file="${artifacts.mps}/lib/mps-openapi.jar" />
         <fileset file="${artifacts.mps}/lib/mps-closures.jar" />
@@ -431,7 +437,10 @@
     <mkdir dir="${build.tmp}/java/out/test.ts.core" />
     <javac destdir="${build.tmp}/java/out/test.ts.core" fork="true" includeantruntime="false">
       <compilerarg value="-Xlint:none" />
-      <src path="${mbeddr.core}/tests/test.ts.core/test_gen/" />
+      <src>
+        <path location="${mbeddr.core}/tests/test.ts.core/source_gen" />
+        <pathelement path="${mbeddr.core}/tests/test.ts.core/test_gen/" />
+      </src>
       <classpath>
         <fileset file="${artifacts.mps}/lib/mps-openapi.jar" />
         <fileset file="${artifacts.mps}/lib/mps-closures.jar" />
@@ -526,7 +535,10 @@
     <mkdir dir="${build.tmp}/java/out/test.ts.core.dataflow" />
     <javac destdir="${build.tmp}/java/out/test.ts.core.dataflow" fork="true" includeantruntime="false">
       <compilerarg value="-Xlint:none" />
-      <src path="${mbeddr.core}/tests/test.ts.core.dataflow/test_gen/" />
+      <src>
+        <path location="${mbeddr.core}/tests/test.ts.core.dataflow/source_gen" />
+        <pathelement path="${mbeddr.core}/tests/test.ts.core.dataflow/test_gen/" />
+      </src>
       <classpath>
         <fileset file="${artifacts.mps}/lib/mps-openapi.jar" />
         <fileset file="${artifacts.mps}/lib/mps-closures.jar" />
@@ -770,6 +782,9 @@
   </target>
   
   <target name="cleanSources">
+    <delete dir="${mbeddr.core}/tests/test.cstub.core/source_gen" />
+    <delete dir="${mbeddr.core}/tests/test.ts.core/source_gen" />
+    <delete dir="${mbeddr.core}/tests/test.ts.core.dataflow/source_gen" />
     <delete dir="${mbeddr.core}/tests/test.cstub.core/test_gen" />
     <delete dir="${mbeddr.core}/tests/test.ts.core/test_gen" />
     <delete dir="${mbeddr.core}/tests/test.ts.core.dataflow/test_gen" />
