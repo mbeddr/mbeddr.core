@@ -2,7 +2,6 @@
 <project version="4">
   <component name="MPSProject">
     <projectModules>
-      <modulePath path="${mbeddr.github.core.home}/code/languages/com.mbeddr.build/solutions/com.mbeddr.core.dev.build/build.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/devkits/com.mbeddr.core/core.devkit" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.core.arrays/arrays.mpl" folder="core" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.core.base/base.mpl" folder="core" />
@@ -43,6 +42,7 @@
       <modulePath path="$PROJECT_DIR$/tests/test.imp.core.import-optimizer/test.imp.core.import-optimizer.msd" folder="tests" />
       <modulePath path="$PROJECT_DIR$/tests/test.ts.core.dataflow/dataflow.msd" folder="tests.dataflow" />
       <modulePath path="$PROJECT_DIR$/tests/test.ts.core/core.msd" folder="tests" />
+      <modulePath path="$PROJECT_DIR$/../../../../mbeddr.core.30/code/languages/com.mbeddr.build/solutions/com.mbeddr.core.dev.build/build.msd" folder="" />
     </projectModules>
   </component>
 </project>
