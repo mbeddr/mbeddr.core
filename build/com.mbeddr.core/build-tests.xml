@@ -35,7 +35,6 @@
   
   <target name="assemble" depends="classes, declare-mps-tasks">
     <mkdir dir="${build.layout}" />
-    <mkdir dir="${build.tmp}/default/com.mbeddr.core.tests.zip" />
     <mkdir dir="${build.tmp}/default/test.cstub.core.jar" />
     <mkdir dir="${build.tmp}/default/test.cstub.core.jar/META-INF" />
     <echoxml file="${build.tmp}/default/test.cstub.core.jar/META-INF/module.xml">
@@ -56,7 +55,7 @@
         <sources jar="test.cstub.core-src.jar" descriptor="core.msd" />
       </module>
     </echoxml>
-    <jar destfile="${build.tmp}/default/com.mbeddr.core.tests.zip/test.cstub.core.jar">
+    <jar destfile="${build.layout}/test.cstub.core.jar">
       <fileset dir="${build.tmp}/java/out/test.cstub.core" />
       <fileset dir="${mbeddr.core}/tests/test.cstub.core" includes="icons/**, resources/**" />
       <fileset dir="${build.tmp}/default/test.cstub.core.jar" />
@@ -64,7 +63,7 @@
     <copyModels todir="${build.tmp}/customProcessors/copyModels/tests-test.cstub.core">
       <fileset dir="${mbeddr.core}/tests/test.cstub.core" includes="**/*.mps, **/*.metadata, **/*.history" />
     </copyModels>
-    <jar destfile="${build.tmp}/default/com.mbeddr.core.tests.zip/test.cstub.core-src.jar">
+    <jar destfile="${build.layout}/test.cstub.core-src.jar">
       <zipfileset file="${mbeddr.core}/tests/test.cstub.core/core.msd" prefix="module" />
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/tests-test.cstub.core" prefix="module/" />
     </jar>
@@ -87,7 +86,7 @@
         <sources jar="test.ts.core-src.jar" descriptor="core.msd" />
       </module>
     </echoxml>
-    <jar destfile="${build.tmp}/default/com.mbeddr.core.tests.zip/test.ts.core.jar">
+    <jar destfile="${build.layout}/test.ts.core.jar">
       <fileset dir="${build.tmp}/java/out/test.ts.core" />
       <fileset dir="${mbeddr.core}/tests/test.ts.core" includes="icons/**, resources/**" />
       <fileset dir="${build.tmp}/default/test.ts.core.jar" />
@@ -98,7 +97,7 @@
     <copyModels todir="${build.tmp}/customProcessors/copyModels/tests-test.ts.core-models">
       <fileset dir="${mbeddr.core}/tests/test.ts.core/models" includes="**/*.mps, **/*.metadata, **/*.history" />
     </copyModels>
-    <jar destfile="${build.tmp}/default/com.mbeddr.core.tests.zip/test.ts.core-src.jar">
+    <jar destfile="${build.layout}/test.ts.core-src.jar">
       <zipfileset file="${mbeddr.core}/tests/test.ts.core/core.msd" prefix="module" />
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/tests-test.ts.core" prefix="module/" />
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/tests-test.ts.core-models" prefix="module/models" />
@@ -122,7 +121,7 @@
         <sources jar="test.ts.core.dataflow-src.jar" descriptor="dataflow.msd" />
       </module>
     </echoxml>
-    <jar destfile="${build.tmp}/default/com.mbeddr.core.tests.zip/test.ts.core.dataflow.jar">
+    <jar destfile="${build.layout}/test.ts.core.dataflow.jar">
       <fileset dir="${build.tmp}/java/out/test.ts.core.dataflow" />
       <fileset dir="${mbeddr.core}/tests/test.ts.core.dataflow" includes="icons/**, resources/**" />
       <fileset dir="${build.tmp}/default/test.ts.core.dataflow.jar" />
@@ -130,13 +129,10 @@
     <copyModels todir="${build.tmp}/customProcessors/copyModels/tests-test.ts.core.dataflow-models">
       <fileset dir="${mbeddr.core}/tests/test.ts.core.dataflow/models" includes="**/*.mps, **/*.metadata, **/*.history" />
     </copyModels>
-    <jar destfile="${build.tmp}/default/com.mbeddr.core.tests.zip/test.ts.core.dataflow-src.jar">
+    <jar destfile="${build.layout}/test.ts.core.dataflow-src.jar">
       <zipfileset file="${mbeddr.core}/tests/test.ts.core.dataflow/dataflow.msd" prefix="module" />
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/tests-test.ts.core.dataflow-models" prefix="module/models" />
     </jar>
-    <zip destfile="${build.layout}/com.mbeddr.core.tests.zip">
-      <fileset dir="${build.tmp}/default/com.mbeddr.core.tests.zip" />
-    </zip>
     <echo file="${build.layout}/build.properties">mps.build.number=${mps.build.number}${line.separator}mps.date=${mps.date}${line.separator}mps.build.vcs.number=${mps.build.vcs.number}${line.separator}mps.teamcity.buildConfName=${mps.teamcity.buildConfName}${line.separator}mps.idea.platform.build.number=${mps.idea.platform.build.number}${line.separator}mpsBootstrapCore.version=${mpsBootstrapCore.version}${line.separator}com.mbeddr.mpsutil.build.build.number=${com.mbeddr.mpsutil.build.build.number}</echo>
   </target>
   
@@ -160,8 +156,6 @@
     <unzip src="${artifacts.mps-multiline}/mps-multiline.zip" dest="${build.tmp}/deps/mps-multiline/mps-multiline.zip" />
     <mkdir dir="${build.tmp}/deps/com.mbeddr.spawner.build/com.mbeddr.spawner.zip" />
     <unzip src="${artifacts.com.mbeddr.spawner.build}/com.mbeddr.spawner.zip" dest="${build.tmp}/deps/com.mbeddr.spawner.build/com.mbeddr.spawner.zip" />
-    <mkdir dir="${build.tmp}/deps/com.mbeddr.core.tests.build/com.mbeddr.core.tests.zip" />
-    <unzip src="${build.layout}/com.mbeddr.core.tests.zip" dest="${build.tmp}/deps/com.mbeddr.core.tests.build/com.mbeddr.core.tests.zip" />
   </target>
   
   <target name="build" depends="assemble, check" />
@@ -171,7 +165,7 @@
     <delete dir="${build.layout}" />
   </target>
   
-  <target name="compileJava" depends="java.compile.test.cstub.core, java.compile.test.cstub.testheader, java.compile.test.ts.core, java.compile.test.ts.core.dataflow" />
+  <target name="compileJava" depends="java.compile.test.cstub.core, java.compile.test.ts.core, java.compile.test.ts.core.dataflow" />
   
   <target name="processResources" />
   
@@ -278,7 +272,6 @@
       <library file="${build.tmp}/deps/mps-richtext/mps-richtext.zip/mps-richtext/languages/mps-richtext/de.slisson.mps.richtext.jar" />
       <chunk>
         <module file="${mbeddr.core}/tests/test.cstub.core/core.msd" />
-        <module file="${mbeddr.core}/tests/test.cstub.testheader/testheader.msd" />
         <module file="${mbeddr.core}/tests/test.ts.core/core.msd" />
         <module file="${mbeddr.core}/tests/test.ts.core.dataflow/dataflow.msd" />
       </chunk>
@@ -430,84 +423,6 @@
         <fileset file="${artifacts.mps}/plugins/mps-testing/languages/languageDesign/jetbrains.mps.lang.test.runtime.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.typesystem.jar" />
-      </classpath>
-    </javac>
-  </target>
-  
-  <target name="java.compile.test.cstub.testheader" depends="fetchDependencies">
-    <mkdir dir="${build.tmp}/java/out/test.cstub.testheader" />
-    <javac destdir="${build.tmp}/java/out/test.cstub.testheader" fork="true" includeantruntime="false">
-      <compilerarg value="-Xlint:none" />
-      <src>
-        <path location="${mbeddr.core}/tests/test.cstub.testheader/source_gen" />
-      </src>
-      <classpath>
-        <fileset file="${artifacts.mps}/lib/mps-openapi.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-closures.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-collections.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-tuples.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-core.jar" />
-        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.unitTest.libs/bsh-core-2.0b4.jar" />
-        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.unitTest.libs/cglib-nodep-2.1_3.jar" />
-        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.unitTest.libs/hamcrest-core-1.1.jar" />
-        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.unitTest.libs/hamcrest-library-1.1.jar" />
-        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.unitTest.libs/jmock-2.5.1.jar" />
-        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.unitTest.libs/jmock-junit3-2.5.1.jar" />
-        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.unitTest.libs/jmock-junit4-2.5.1.jar" />
-        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.unitTest.libs/objenesis-1.0.jar" />
-        <fileset file="${artifacts.mps}/lib/annotations.jar" />
-        <fileset file="${artifacts.mps}/lib/junit-4.10.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/lib/commons-io-2.4.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/lib/batik-anim.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/lib/batik-awt-util.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/lib/batik-bridge.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/lib/batik-codec.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/lib/batik-css.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/lib/batik-dom.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/lib/batik-ext.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/lib/batik-extension.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/lib/batik-gui-util.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/lib/batik-gvt.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/lib/batik-parser.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/lib/batik-script.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/lib/batik-svg-dom.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/lib/batik-svggen.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/lib/batik-swing.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/lib/batik-transcoder.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/lib/batik-util.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/lib/batik-xml.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/lib/batik.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/lib/js.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/lib/plantuml.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/lib/xalan-2.6.0.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/lib/xerces_2_5_0.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/lib/xml-apis-ext.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/lib/xml-apis.jar" />
-        <fileset file="${build.tmp}/deps/mps-multiline/mps-multiline.zip/mps-multiline/lib/diff_match_patch.jar" />
-        <fileset file="${build.tmp}/deps/mps-multiline/mps-multiline.zip/mps-multiline/lib/commons-lang3-3.1.jar" />
-        <fileset file="${build.tmp}/deps/mps-multiline/mps-multiline.zip/mps-multiline/lib/commons-lang-2.6.jar" />
-        <fileset file="${artifacts.mps}/lib/jdom.jar" />
-        <fileset file="${artifacts.mps}/lib/log4j.jar" />
-        <fileset file="${artifacts.mps}/lib/ecj-4.2.1.jar" />
-        <fileset file="${artifacts.mps}/lib/trove4j.jar" />
-        <fileset file="${artifacts.mps}/lib/xstream-1.4.3.jar" />
-        <fileset file="${artifacts.mps}/lib/asm4-all.jar" />
-        <fileset file="${artifacts.mps}/lib/diffutils-1.2.1.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/languages/com.mbeddr.core/com.mbeddr.core.base.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/languages/com.mbeddr.core/com.mbeddr.core.cstubs.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/languages/com.mbeddr.core/com.mbeddr.core.modules.runtime.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/languages/com.mbeddr.core/com.mbeddr.plantuml.pluginSolution.jar" />
-        <fileset file="${build.tmp}/deps/mps-multiline/mps-multiline.zip/mps-multiline/languages/mps-multiline/de.slisson.mps.editor.multiline.runtime.jar" />
-        <fileset file="${build.tmp}/deps/mps-richtext/mps-richtext.zip/mps-richtext/languages/mps-richtext/de.slisson.mps.richtext.jar" />
-        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.jar" />
-        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.blTypes.jar" />
-        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.closures.jar" />
-        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.collections.jar" />
-        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.jdk7.jar" />
-        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.scopes.jar" />
-        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
-        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.structure.jar" />
-        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
       </classpath>
     </javac>
   </target>
@@ -791,9 +706,8 @@
     </path>
     <pathconvert pathsep="${path.separator}" property="mps.plugins.path.string" refid="mps.plugins.path" />
     <path id="mps.tests.path">
-      <pathelement location="${build.tmp}/deps/com.mbeddr.core.tests.build/com.mbeddr.core.tests.zip/test.cstub.core.jar" />
-      <pathelement location="${build.tmp}/deps/com.mbeddr.core.tests.build/com.mbeddr.core.tests.zip/test.ts.core.dataflow.jar" />
-      <pathelement location="${build.tmp}/deps/com.mbeddr.core.tests.build/com.mbeddr.core.tests.zip/test.ts.core.jar" />
+      <pathelement location="${build.layout}/test.cstub.core.jar" />
+      <pathelement location="${build.layout}/test.ts.core.dataflow.jar" />
     </path>
     <pathconvert pathsep="${path.separator}" property="mps.tests.path.string" refid="mps.tests.path" />
     <junit showoutput="true" fork="true">
@@ -855,7 +769,6 @@
   </target>
   
   <target name="cleanSources">
-    <delete dir="${mbeddr.core}/tests/test.cstub.testheader/source_gen" />
     <delete dir="${mbeddr.core}/tests/test.cstub.core/test_gen" />
     <delete dir="${mbeddr.core}/tests/test.ts.core/test_gen" />
     <delete dir="${mbeddr.core}/tests/test.ts.core.dataflow/test_gen" />
