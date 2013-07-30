@@ -127,8 +127,11 @@
       <fileset dir="${build.tmp}/default/com.mbeddr.ext.components.jar" />
     </jar>
     <jar destfile="${build.tmp}/default/com.mbeddr.ext.components.zip/mbeddr.components/languages/com.mbeddr.ext.components/com.mbeddr.ext.components-generator.jar">
-      <fileset dir="${build.tmp}/java/out/com.mbeddr.ext.components#312587838749342891" />
+      <fileset dir="${build.tmp}/java/out/com.mbeddr.ext.components#3043586575060320369" />
     </jar>
+    <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-com.mbeddr.ext.components-generator-template">
+      <fileset dir="${mbeddr.ext}/languages/com.mbeddr.ext.components/generator/template" includes="**/*.mps, **/*.metadata, **/*.history" />
+    </copyModels>
     <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-com.mbeddr.ext.components-languageModels">
       <fileset dir="${mbeddr.ext}/languages/com.mbeddr.ext.components/languageModels" includes="**/*.mps, **/*.metadata, **/*.history" />
     </copyModels>
@@ -136,6 +139,7 @@
       <fileset dir="${mbeddr.ext}/languages/com.mbeddr.ext.components/generator/source_gen" includes="**/*.java" />
       <fileset dir="${mbeddr.ext}/languages/com.mbeddr.ext.components/source_gen" includes="**/*.java" />
       <zipfileset file="${mbeddr.ext}/languages/com.mbeddr.ext.components/components.mpl" prefix="module" />
+      <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-com.mbeddr.ext.components-generator-template" prefix="module/generator/template" />
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-com.mbeddr.ext.components-languageModels" prefix="module/languageModels" />
     </jar>
     <mkdir dir="${build.tmp}/default/com.mbeddr.ext.components.gen_nomw.jar" />
@@ -236,16 +240,16 @@
   </target>
   
   <target name="fetchDependencies">
-    <mkdir dir="${build.tmp}/deps/com.mbeddr.mpsutil.build/com.mbeddr.mpsutil.zip" />
-    <unzip src="${artifacts.com.mbeddr.mpsutil.build}/com.mbeddr.mpsutil.zip" dest="${build.tmp}/deps/com.mbeddr.mpsutil.build/com.mbeddr.mpsutil.zip" />
+    <mkdir dir="${build.tmp}/deps/mps-multiline/mps-multiline.zip" />
+    <unzip src="${artifacts.mps-multiline}/mps-multiline.zip" dest="${build.tmp}/deps/mps-multiline/mps-multiline.zip" />
     <mkdir dir="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip" />
     <unzip src="${artifacts.com.mbeddr.core.build}/com.mbeddr.core.zip" dest="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip" />
     <mkdir dir="${build.tmp}/deps/mps-richtext/mps-richtext.zip" />
     <unzip src="${artifacts.mps-richtext}/mps-richtext.zip" dest="${build.tmp}/deps/mps-richtext/mps-richtext.zip" />
-    <mkdir dir="${build.tmp}/deps/mps-multiline/mps-multiline.zip" />
-    <unzip src="${artifacts.mps-multiline}/mps-multiline.zip" dest="${build.tmp}/deps/mps-multiline/mps-multiline.zip" />
     <mkdir dir="${build.tmp}/deps/com.mbeddr.debugger.build/com.mbeddr.core.debugger.zip" />
     <unzip src="${artifacts.com.mbeddr.debugger.build}/com.mbeddr.core.debugger.zip" dest="${build.tmp}/deps/com.mbeddr.debugger.build/com.mbeddr.core.debugger.zip" />
+    <mkdir dir="${build.tmp}/deps/com.mbeddr.mpsutil.build/com.mbeddr.mpsutil.zip" />
+    <unzip src="${artifacts.com.mbeddr.mpsutil.build}/com.mbeddr.mpsutil.zip" dest="${build.tmp}/deps/com.mbeddr.mpsutil.build/com.mbeddr.mpsutil.zip" />
     <mkdir dir="${build.tmp}/deps/com.mbeddr.spawner.build/com.mbeddr.spawner.zip" />
     <unzip src="${artifacts.com.mbeddr.spawner.build}/com.mbeddr.spawner.zip" dest="${build.tmp}/deps/com.mbeddr.spawner.build/com.mbeddr.spawner.zip" />
   </target>
@@ -257,7 +261,7 @@
     <delete dir="${build.layout}" />
   </target>
   
-  <target name="compileJava" depends="java.compile.com.mbeddr.ext.components.mock, java.compile.com.mbeddr.ext.components.mock#2151335435833468530, java.compile.com.mbeddr.ext.components, java.compile.com.mbeddr.ext.components#312587838749342891, java.compile.com.mbeddr.ext.components.gen_nomw, java.compile.com.mbeddr.ext.components.gen_nomw#8105003328815413560, java.compile.com.mbeddr.ext.components.test, java.compile.com.mbeddr.ext.components.test#8230733038425113223" />
+  <target name="compileJava" depends="java.compile.com.mbeddr.ext.components.mock, java.compile.com.mbeddr.ext.components.mock#2151335435833468530, java.compile.com.mbeddr.ext.components, java.compile.com.mbeddr.ext.components#3043586575060320369, java.compile.com.mbeddr.ext.components.gen_nomw, java.compile.com.mbeddr.ext.components.gen_nomw#8105003328815413560, java.compile.com.mbeddr.ext.components.test, java.compile.com.mbeddr.ext.components.test#8230733038425113223" />
   
   <target name="processResources" />
   
@@ -631,9 +635,9 @@
     </javac>
   </target>
   
-  <target name="java.compile.com.mbeddr.ext.components#312587838749342891" depends="java.compile.com.mbeddr.ext.components, fetchDependencies">
-    <mkdir dir="${build.tmp}/java/out/com.mbeddr.ext.components#312587838749342891" />
-    <javac destdir="${build.tmp}/java/out/com.mbeddr.ext.components#312587838749342891" fork="true" includeantruntime="false">
+  <target name="java.compile.com.mbeddr.ext.components#3043586575060320369" depends="java.compile.com.mbeddr.ext.components, fetchDependencies">
+    <mkdir dir="${build.tmp}/java/out/com.mbeddr.ext.components#3043586575060320369" />
+    <javac destdir="${build.tmp}/java/out/com.mbeddr.ext.components#3043586575060320369" fork="true" includeantruntime="false">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${mbeddr.ext}/languages/com.mbeddr.ext.components/generator/source_gen" />
