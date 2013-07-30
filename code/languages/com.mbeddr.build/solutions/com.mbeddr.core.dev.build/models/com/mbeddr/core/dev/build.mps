@@ -3260,6 +3260,27 @@
     <property name="name" nameId="tpck.1169194664001" value="com.mbeddr.core.tests.build" />
     <property name="internalBaseDirectory" nameId="3ior.5204048710541015587" value="../../../../../build/com.mbeddr.core" />
     <property name="fileName" nameId="3ior.4915877860348071612" value="build-tests.xml" />
+    <node role="parts" roleId="3ior.7389400916848080626" type="kdzh.BuildMps_IdeaPlugin" typeId="kdzh.6592112598314498932" id="6892792631326058927" nodeInfo="ng">
+      <property name="id" nameId="kdzh.6592112598314498927" value="dummy" />
+      <node role="name" roleId="kdzh.6592112598314499021" type="3ior.BuildStringNotEmpty" typeId="3ior.841011766566059607" id="6892792631326058929" nodeInfo="ng">
+        <node role="parts" roleId="3ior.4903714810883783243" type="3ior.BuildTextStringPart" typeId="3ior.4903714810883702019" id="6892792631326059331" nodeInfo="ng">
+          <property name="text" nameId="3ior.4903714810883755350" value="dummy" />
+        </node>
+      </node>
+      <node role="containerName" roleId="kdzh.6592112598314855574" type="3ior.BuildStringNotEmpty" typeId="3ior.841011766566059607" id="6892792631326058931" nodeInfo="ng">
+        <node role="parts" roleId="3ior.4903714810883783243" type="3ior.BuildTextStringPart" typeId="3ior.4903714810883702019" id="6892792631326059333" nodeInfo="ng">
+          <property name="text" nameId="3ior.4903714810883755350" value="dummy" />
+        </node>
+      </node>
+      <node role="version" roleId="kdzh.6592112598314498931" type="3ior.BuildStringNotEmpty" typeId="3ior.841011766566059607" id="6892792631326058933" nodeInfo="ng">
+        <node role="parts" roleId="3ior.4903714810883783243" type="3ior.BuildTextStringPart" typeId="3ior.4903714810883702019" id="6892792631326059405" nodeInfo="ng">
+          <property name="text" nameId="3ior.4903714810883755350" value="1.0" />
+        </node>
+      </node>
+      <node role="dependencies" roleId="kdzh.6592112598314499028" type="kdzh.BuildMps_IdeaPluginDependency" typeId="kdzh.6592112598314499027" id="6892792631326059827" nodeInfo="ng">
+        <link role="target" roleId="kdzh.6592112598314499066" targetNodeId="ffeo.6497499977866930931" />
+      </node>
+    </node>
     <node role="parts" roleId="3ior.7389400916848080626" type="kdzh.BuildMps_Group" typeId="kdzh.1500819558095907805" id="8628756186118852471" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="com.mbeddr.core.tests" />
       <node role="modules" roleId="kdzh.1500819558095907806" type="kdzh.BuildMps_Solution" typeId="kdzh.3189788309731840247" id="6247780594427461887" nodeInfo="ng">

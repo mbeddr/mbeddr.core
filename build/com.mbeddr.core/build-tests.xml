@@ -181,6 +181,10 @@
   <target name="generate" depends="declare-mps-tasks, fetchDependencies">
     <echo message="generating" />
     <generate parallelMode="true" fork="true">
+      <plugin path="${artifacts.mps}/plugins/mps-core/META-INF/plugin.xml/../.." />
+      <plugin path="${artifacts.mps}/plugins/mps-debugger-api" />
+      <plugin path="${artifacts.mps}/plugins/mps-execution-api" />
+      <plugin path="${artifacts.mps}/plugins/mps-testing" />
       <library file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.blTypes.jar" />
       <library file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.classifiers.jar" />
       <library file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.closures.jar" />
