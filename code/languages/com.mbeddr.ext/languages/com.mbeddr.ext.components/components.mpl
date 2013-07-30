@@ -7,7 +7,7 @@
   </models>
   <accessoryModels />
   <generators>
-    <generator name="main" generatorUID="com.mbeddr.ext.components#312587838749342891" uuid="0e384510-95ab-427d-a3f4-b0e5ceb69b2b">
+    <generator name="dummy" generatorUID="com.mbeddr.ext.components#312587838749342891" uuid="0e384510-95ab-427d-a3f4-b0e5ceb69b2b">
       <models />
       <external-templates />
       <mapping-priorities />
