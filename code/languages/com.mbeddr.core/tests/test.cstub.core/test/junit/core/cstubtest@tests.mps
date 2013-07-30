@@ -13760,7 +13760,7 @@
     </node>
   </root>
   <root type="tp5g.TestInfo" typeId="tp5g.5097124989038916362" id="1423209693057696534" nodeInfo="ng">
-    <property name="projectPath" nameId="tp5g.5097124989038916363" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.core/core.dev.mpr" />
+    <property name="projectPath" nameId="tp5g.5097124989038916363" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.core/" />
   </root>
   <root type="tp5g.NodesTestCase" typeId="tp5g.1216913645126" id="2528067842539182837" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="FunctionTest" />
