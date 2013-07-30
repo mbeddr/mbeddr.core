@@ -4,7 +4,7 @@
   <language namespace="7bb2fde4-1dd3-4cc6-b8d6-6755853dd5fd(com.mbeddr.ext.exceptionhandling)" />
   <language namespace="92d2ea16-5a42-4fdf-a676-c7604efe3504(de.slisson.mps.richtext)" />
   <devkit namespace="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
-  <import index="ujda" modelUID="r:80b4c780-9553-4c4a-bae4-115a5444171e(com.mbeddr.ext.exceptionhandling.lib.rt)" version="-1" />
+  <import index="v3ig" modelUID="r:ee0a2f8a-4e98-42eb-81c7-06dfeb754336(com.mbeddr.ext.exceptionhandling.library.rt)" version="-1" />
   <import index="87nw" modelUID="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" version="5" implicit="yes" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="skt0" modelUID="r:cd7772f1-c9fe-4c4a-93ce-2a11779f34fe(com.mbeddr.ext.exceptionhandling.structure)" version="5" implicit="yes" />
@@ -94,7 +94,7 @@
       <property name="name" nameId="tpck.1169194664001" value="Test" />
       <property name="isTest" nameId="51wr.3431613015799084476" value="true" />
       <node role="referencedLibs" roleId="51wr.2671893947946267988" type="51wr.LibraryRef" typeId="51wr.2671893947946267774" id="7425368374252545399">
-        <link role="lib" roleId="51wr.2671893947946267775" targetNodeId="ujda.7425368374252539487" resolveInfo="ExceptionHandlingRuntime" />
+        <link role="lib" roleId="51wr.2671893947946267775" targetNodeId="v3ig.4555063472425675085" resolveInfo="ExceptionHandlingRuntime" />
       </node>
       <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="8839366091450596637">
         <link role="module" roleId="51wr.7717755763392524108" targetNodeId="7375645517686181997" resolveInfo="TestSuite" />

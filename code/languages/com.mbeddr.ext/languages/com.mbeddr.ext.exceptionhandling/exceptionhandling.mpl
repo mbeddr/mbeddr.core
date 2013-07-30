@@ -19,7 +19,7 @@
       </external-templates>
       <dependencies>
         <dependency reexport="false">6d11763d-483d-4b2b-8efc-09336c1b0001(com.mbeddr.core.modules)</dependency>
-        <dependency reexport="false">41e01e06-e491-4e99-b423-0d3299bae764(com.mbeddr.ext.exceptionhandling.lib)</dependency>
+        <dependency reexport="false">d76eac52-ac9a-4fa0-9366-63ecb42b92ea(com.mbeddr.ext.exceptionhandling.library)</dependency>
       </dependencies>
       <usedLanguages>
         <usedLanguage>61c69711-ed61-4850-81d9-7714ff227fb0(com.mbeddr.core.expressions)</usedLanguage>
@@ -57,14 +57,14 @@
   <dependencies>
     <dependency reexport="false">61c69711-ed61-4850-81d9-7714ff227fb0(com.mbeddr.core.expressions)</dependency>
     <dependency reexport="false">a9d69647-0840-491e-bf39-2eb0805d2011(com.mbeddr.core.statements)</dependency>
-    <dependency reexport="false">41e01e06-e491-4e99-b423-0d3299bae764(com.mbeddr.ext.exceptionhandling.lib)</dependency>
+    <dependency reexport="false">d76eac52-ac9a-4fa0-9366-63ecb42b92ea(com.mbeddr.ext.exceptionhandling.library)</dependency>
   </dependencies>
   <usedDevKits>
     <usedDevKit>2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)</usedDevKit>
   </usedDevKits>
   <extendedLanguages>
-    <extendedLanguage>a9d69647-0840-491e-bf39-2eb0805d2011(com.mbeddr.core.statements)</extendedLanguage>
     <extendedLanguage>61c69711-ed61-4850-81d9-7714ff227fb0(com.mbeddr.core.expressions)</extendedLanguage>
+    <extendedLanguage>a9d69647-0840-491e-bf39-2eb0805d2011(com.mbeddr.core.statements)</extendedLanguage>
     <extendedLanguage>6d11763d-483d-4b2b-8efc-09336c1b0001(com.mbeddr.core.modules)</extendedLanguage>
   </extendedLanguages>
 </language>
