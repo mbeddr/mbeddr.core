@@ -97,10 +97,10 @@
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-com.mbeddr.ext.exceptionhandling-generator-template" prefix="module/generator/template" />
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-com.mbeddr.ext.exceptionhandling-languageModels" prefix="module/languageModels" />
     </jar>
-    <mkdir dir="${build.tmp}/default/com.mbeddr.ext.exceptionhandling.lib.jar" />
-    <mkdir dir="${build.tmp}/default/com.mbeddr.ext.exceptionhandling.lib.jar/META-INF" />
-    <echoxml file="${build.tmp}/default/com.mbeddr.ext.exceptionhandling.lib.jar/META-INF/module.xml">
-      <module namespace="com.mbeddr.ext.exceptionhandling.lib" type="solution" uuid="41e01e06-e491-4e99-b423-0d3299bae764">
+    <mkdir dir="${build.tmp}/default/com.mbeddr.ext.exceptionhandling.library.jar" />
+    <mkdir dir="${build.tmp}/default/com.mbeddr.ext.exceptionhandling.library.jar/META-INF" />
+    <echoxml file="${build.tmp}/default/com.mbeddr.ext.exceptionhandling.library.jar/META-INF/module.xml">
+      <module namespace="com.mbeddr.ext.exceptionhandling.library" type="solution" uuid="d76eac52-ac9a-4fa0-9366-63ecb42b92ea">
         <dependencies>
           <module ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" />
           <module ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" />
@@ -111,25 +111,21 @@
           <module ref="83f155ff-422c-4b5a-a2f2-b459302dd215(jetbrains.mps.baseLanguage.unitTest.libs)" />
           <module ref="9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)" />
         </dependencies>
-        <sources jar="com.mbeddr.ext.exceptionhandling.lib-src.jar" descriptor="lib.msd" />
+        <sources jar="com.mbeddr.ext.exceptionhandling.library-src.jar" descriptor="com.mbeddr.ext.exceptionhandling.library.msd" />
       </module>
     </echoxml>
-    <jar destfile="${build.tmp}/default/com.mbeddr.ext.exceptionhandling.zip/mbeddr.exceptionhandling/languages/com.mbeddr.ext.exceptionhandling/com.mbeddr.ext.exceptionhandling.lib.jar">
-      <fileset dir="${build.tmp}/java/out/com.mbeddr.ext.exceptionhandling.lib" />
-      <fileset dir="${mbeddr.ext}/lib/com.mbeddr.ext.exceptionhandling.lib" includes="icons/**, resources/**" />
-      <fileset dir="${build.tmp}/default/com.mbeddr.ext.exceptionhandling.lib.jar" />
+    <jar destfile="${build.tmp}/default/com.mbeddr.ext.exceptionhandling.zip/mbeddr.exceptionhandling/languages/com.mbeddr.ext.exceptionhandling/com.mbeddr.ext.exceptionhandling.library.jar">
+      <fileset dir="${build.tmp}/java/out/com.mbeddr.ext.exceptionhandling.library" />
+      <fileset dir="${mbeddr.ext}/solutions/com.mbeddr.ext.exceptionhandling.lib" includes="icons/**, resources/**" />
+      <fileset dir="${build.tmp}/default/com.mbeddr.ext.exceptionhandling.library.jar" />
     </jar>
-    <copyModels todir="${build.tmp}/customProcessors/copyModels/lib-com.mbeddr.ext.exceptionhandling.lib">
-      <fileset dir="${mbeddr.ext}/lib/com.mbeddr.ext.exceptionhandling.lib" includes="**/*.mps, **/*.metadata, **/*.history" />
+    <copyModels todir="${build.tmp}/customProcessors/copyModels/solutions-com.mbeddr.ext.exceptionhandling.lib-models">
+      <fileset dir="${mbeddr.ext}/solutions/com.mbeddr.ext.exceptionhandling.lib/models" includes="**/*.mps, **/*.metadata, **/*.history" />
     </copyModels>
-    <copyModels todir="${build.tmp}/customProcessors/copyModels/lib-com.mbeddr.ext.exceptionhandling.lib-models">
-      <fileset dir="${mbeddr.ext}/lib/com.mbeddr.ext.exceptionhandling.lib/models" includes="**/*.mps, **/*.metadata, **/*.history" />
-    </copyModels>
-    <jar destfile="${build.tmp}/default/com.mbeddr.ext.exceptionhandling.zip/mbeddr.exceptionhandling/languages/com.mbeddr.ext.exceptionhandling/com.mbeddr.ext.exceptionhandling.lib-src.jar">
-      <fileset dir="${mbeddr.ext}/lib/com.mbeddr.ext.exceptionhandling.lib/source_gen" includes="**/*.java" />
-      <zipfileset file="${mbeddr.ext}/lib/com.mbeddr.ext.exceptionhandling.lib/lib.msd" prefix="module" />
-      <zipfileset dir="${build.tmp}/customProcessors/copyModels/lib-com.mbeddr.ext.exceptionhandling.lib" prefix="module/" />
-      <zipfileset dir="${build.tmp}/customProcessors/copyModels/lib-com.mbeddr.ext.exceptionhandling.lib-models" prefix="module/models" />
+    <jar destfile="${build.tmp}/default/com.mbeddr.ext.exceptionhandling.zip/mbeddr.exceptionhandling/languages/com.mbeddr.ext.exceptionhandling/com.mbeddr.ext.exceptionhandling.library-src.jar">
+      <fileset dir="${mbeddr.ext}/solutions/com.mbeddr.ext.exceptionhandling.lib/source_gen" includes="**/*.java" />
+      <zipfileset file="${mbeddr.ext}/solutions/com.mbeddr.ext.exceptionhandling.lib/com.mbeddr.ext.exceptionhandling.library.msd" prefix="module" />
+      <zipfileset dir="${build.tmp}/customProcessors/copyModels/solutions-com.mbeddr.ext.exceptionhandling.lib-models" prefix="module/models" />
     </jar>
     <zip destfile="${build.layout}/com.mbeddr.ext.exceptionhandling.zip">
       <fileset dir="${build.tmp}/default/com.mbeddr.ext.exceptionhandling.zip" />
@@ -147,14 +143,14 @@
   <target name="fetchDependencies">
     <mkdir dir="${build.tmp}/deps/mps-multiline/mps-multiline.zip" />
     <unzip src="${artifacts.mps-multiline}/mps-multiline.zip" dest="${build.tmp}/deps/mps-multiline/mps-multiline.zip" />
-    <mkdir dir="${build.tmp}/deps/com.mbeddr.debugger.build/com.mbeddr.core.debugger.zip" />
-    <unzip src="${artifacts.com.mbeddr.debugger.build}/com.mbeddr.core.debugger.zip" dest="${build.tmp}/deps/com.mbeddr.debugger.build/com.mbeddr.core.debugger.zip" />
-    <mkdir dir="${build.tmp}/deps/com.mbeddr.mpsutil.build/com.mbeddr.mpsutil.zip" />
-    <unzip src="${artifacts.com.mbeddr.mpsutil.build}/com.mbeddr.mpsutil.zip" dest="${build.tmp}/deps/com.mbeddr.mpsutil.build/com.mbeddr.mpsutil.zip" />
     <mkdir dir="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip" />
     <unzip src="${artifacts.com.mbeddr.core.build}/com.mbeddr.core.zip" dest="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip" />
     <mkdir dir="${build.tmp}/deps/mps-richtext/mps-richtext.zip" />
     <unzip src="${artifacts.mps-richtext}/mps-richtext.zip" dest="${build.tmp}/deps/mps-richtext/mps-richtext.zip" />
+    <mkdir dir="${build.tmp}/deps/com.mbeddr.debugger.build/com.mbeddr.core.debugger.zip" />
+    <unzip src="${artifacts.com.mbeddr.debugger.build}/com.mbeddr.core.debugger.zip" dest="${build.tmp}/deps/com.mbeddr.debugger.build/com.mbeddr.core.debugger.zip" />
+    <mkdir dir="${build.tmp}/deps/com.mbeddr.mpsutil.build/com.mbeddr.mpsutil.zip" />
+    <unzip src="${artifacts.com.mbeddr.mpsutil.build}/com.mbeddr.mpsutil.zip" dest="${build.tmp}/deps/com.mbeddr.mpsutil.build/com.mbeddr.mpsutil.zip" />
     <mkdir dir="${build.tmp}/deps/com.mbeddr.spawner.build/com.mbeddr.spawner.zip" />
     <unzip src="${artifacts.com.mbeddr.spawner.build}/com.mbeddr.spawner.zip" dest="${build.tmp}/deps/com.mbeddr.spawner.build/com.mbeddr.spawner.zip" />
   </target>
@@ -166,7 +162,7 @@
     <delete dir="${build.layout}" />
   </target>
   
-  <target name="compileJava" depends="java.compile.com.mbeddr.ext.exceptionhandling, java.compile.com.mbeddr.ext.exceptionhandling#3809480042719653955, java.compile.com.mbeddr.ext.exceptionhandling.lib" />
+  <target name="compileJava" depends="java.compile.com.mbeddr.ext.exceptionhandling, java.compile.com.mbeddr.ext.exceptionhandling#3809480042719653955, java.compile.com.mbeddr.ext.exceptionhandling.library" />
   
   <target name="processResources" />
   
@@ -286,7 +282,7 @@
       <library file="${build.tmp}/deps/mps-richtext/mps-richtext.zip/mps-richtext/languages/mps-richtext/de.slisson.mps.richtext.jar" />
       <chunk>
         <module file="${mbeddr.ext}/languages/com.mbeddr.ext.exceptionhandling/exceptionhandling.mpl" />
-        <module file="${mbeddr.ext}/lib/com.mbeddr.ext.exceptionhandling.lib/lib.msd" />
+        <module file="${mbeddr.ext}/solutions/com.mbeddr.ext.exceptionhandling.lib/com.mbeddr.ext.exceptionhandling.library.msd" />
       </chunk>
     </generate>
   </target>
@@ -314,7 +310,7 @@
     </ant>
   </target>
   
-  <target name="java.compile.com.mbeddr.ext.exceptionhandling" depends="java.compile.com.mbeddr.ext.exceptionhandling.lib, fetchDependencies">
+  <target name="java.compile.com.mbeddr.ext.exceptionhandling" depends="java.compile.com.mbeddr.ext.exceptionhandling.library, fetchDependencies">
     <mkdir dir="${build.tmp}/java/out/com.mbeddr.ext.exceptionhandling" />
     <javac destdir="${build.tmp}/java/out/com.mbeddr.ext.exceptionhandling" fork="true" includeantruntime="false">
       <compilerarg value="-Xlint:none" />
@@ -327,7 +323,7 @@
         <fileset file="${artifacts.mps}/lib/mps-collections.jar" />
         <fileset file="${artifacts.mps}/lib/mps-tuples.jar" />
         <fileset file="${artifacts.mps}/lib/mps-core.jar" />
-        <pathelement path="${build.tmp}/java/out/com.mbeddr.ext.exceptionhandling.lib" />
+        <pathelement path="${build.tmp}/java/out/com.mbeddr.ext.exceptionhandling.library" />
         <fileset file="${artifacts.mps}/lib/mps-editor-api.jar" />
         <fileset file="${artifacts.mps}/lib/mps-editor-runtime.jar" />
         <fileset file="${artifacts.mps}/lib/mps-editor.jar" />
@@ -367,7 +363,7 @@
     </javac>
   </target>
   
-  <target name="java.compile.com.mbeddr.ext.exceptionhandling#3809480042719653955" depends="java.compile.com.mbeddr.ext.exceptionhandling, java.compile.com.mbeddr.ext.exceptionhandling.lib, fetchDependencies">
+  <target name="java.compile.com.mbeddr.ext.exceptionhandling#3809480042719653955" depends="java.compile.com.mbeddr.ext.exceptionhandling, java.compile.com.mbeddr.ext.exceptionhandling.library, fetchDependencies">
     <mkdir dir="${build.tmp}/java/out/com.mbeddr.ext.exceptionhandling#3809480042719653955" />
     <javac destdir="${build.tmp}/java/out/com.mbeddr.ext.exceptionhandling#3809480042719653955" fork="true" includeantruntime="false">
       <compilerarg value="-Xlint:none" />
@@ -385,7 +381,7 @@
         <fileset file="${artifacts.mps}/lib/mps-editor.jar" />
         <fileset file="${artifacts.mps}/lib/mps-platform.jar" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.ext.exceptionhandling" />
-        <pathelement path="${build.tmp}/java/out/com.mbeddr.ext.exceptionhandling.lib" />
+        <pathelement path="${build.tmp}/java/out/com.mbeddr.ext.exceptionhandling.library" />
         <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.unitTest.libs/bsh-core-2.0b4.jar" />
         <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.unitTest.libs/cglib-nodep-2.1_3.jar" />
         <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.unitTest.libs/hamcrest-core-1.1.jar" />
@@ -462,12 +458,12 @@
     </javac>
   </target>
   
-  <target name="java.compile.com.mbeddr.ext.exceptionhandling.lib" depends="fetchDependencies">
-    <mkdir dir="${build.tmp}/java/out/com.mbeddr.ext.exceptionhandling.lib" />
-    <javac destdir="${build.tmp}/java/out/com.mbeddr.ext.exceptionhandling.lib" fork="true" includeantruntime="false">
+  <target name="java.compile.com.mbeddr.ext.exceptionhandling.library" depends="fetchDependencies">
+    <mkdir dir="${build.tmp}/java/out/com.mbeddr.ext.exceptionhandling.library" />
+    <javac destdir="${build.tmp}/java/out/com.mbeddr.ext.exceptionhandling.library" fork="true" includeantruntime="false">
       <compilerarg value="-Xlint:none" />
       <src>
-        <path location="${mbeddr.ext}/lib/com.mbeddr.ext.exceptionhandling.lib/source_gen" />
+        <path location="${mbeddr.ext}/solutions/com.mbeddr.ext.exceptionhandling.lib/source_gen" />
       </src>
       <classpath>
         <fileset file="${artifacts.mps}/lib/mps-openapi.jar" />
@@ -531,6 +527,6 @@
   <target name="cleanSources">
     <delete dir="${mbeddr.ext}/languages/com.mbeddr.ext.exceptionhandling/source_gen" />
     <delete dir="${mbeddr.ext}/languages/com.mbeddr.ext.exceptionhandling/generator/source_gen" />
-    <delete dir="${mbeddr.ext}/lib/com.mbeddr.ext.exceptionhandling.lib/source_gen" />
+    <delete dir="${mbeddr.ext}/solutions/com.mbeddr.ext.exceptionhandling.lib/source_gen" />
   </target>
 </project>
