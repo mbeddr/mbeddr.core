@@ -1,13 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<language namespace="com.mbeddr.ext.exceptionhandling" uuid="7bb2fde4-1dd3-4cc6-b8d6-6755853dd5fd" doNotGenerateAdapters="true">
+<language namespace="com.mbeddr.ext.exceptionhandling" uuid="7bb2fde4-1dd3-4cc6-b8d6-6755853dd5fd">
   <models>
-    <modelRoot path="${language_descriptor}/languageModels" />
+    <modelRoot contentPath="${module}" type="default">
+      <sourceRoot location="languageModels" />
+    </modelRoot>
   </models>
   <accessoryModels />
   <generators>
     <generator name="main" generatorUID="com.mbeddr.ext.exceptionhandling#3809480042719653955" uuid="a62a7922-4e1d-4ca5-a129-ea09d6451f42">
       <models>
-        <modelRoot path="${language_descriptor}/generator/template" />
+        <modelRoot contentPath="${module}" type="default">
+          <sourceRoot location="generator/template" />
+        </modelRoot>
       </models>
       <external-templates>
         <generator generatorUID="be090156-a678-454c-bd8f-89ebd4a0e6af(com.mbeddr.core.modules.gen#1758019824472882132)" />
