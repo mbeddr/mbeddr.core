@@ -6,13 +6,7 @@
     </modelRoot>
   </models>
   <accessoryModels />
-  <generators>
-    <generator name="dummy" generatorUID="com.mbeddr.ext.components#312587838749342891" uuid="0e384510-95ab-427d-a3f4-b0e5ceb69b2b">
-      <models />
-      <external-templates />
-      <mapping-priorities />
-    </generator>
-  </generators>
+  <generators />
   <sourcePath />
   <dependencies>
     <dependency reexport="false">6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)</dependency>
