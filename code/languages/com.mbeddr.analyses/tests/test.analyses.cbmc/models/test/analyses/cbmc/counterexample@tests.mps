@@ -237,9 +237,6 @@
       </node>
     </node>
   </root>
-  <root type="tp5g.TestInfo" typeId="tp5g.5097124989038916362" id="1567877737115580222" nodeInfo="ng">
-    <property name="projectPath" nameId="tp5g.5097124989038916363" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.analyses/analyses.dev.mpr" />
-  </root>
   <root type="tp5g.NodesTestCase" typeId="tp5g.1216913645126" id="33311699572682170" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="Components" />
     <node role="testMethods" roleId="tp5g.1217501895093" type="tp5g.SimpleNodeTest" typeId="tp5g.1225978065297" id="33311699572682171" nodeInfo="ng">

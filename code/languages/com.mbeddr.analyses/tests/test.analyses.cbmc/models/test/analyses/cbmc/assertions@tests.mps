@@ -278,8 +278,5 @@
       </node>
     </node>
   </root>
-  <root type="tp5g.TestInfo" typeId="tp5g.5097124989038916362" id="7364716885853488051" nodeInfo="ng">
-    <property name="projectPath" nameId="tp5g.5097124989038916363" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.analyses/analyses.dev.mpr" />
-  </root>
 </model>
 

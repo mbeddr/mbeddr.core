@@ -440,8 +440,8 @@
           </node>
         </node>
         <node role="generator" roleId="kdzh.9200313594498201639" type="kdzh.BuildMps_Generator" typeId="kdzh.5507251971038816436" id="4346260978176186740" nodeInfo="ng">
-          <property name="name" nameId="tpck.1169194664001" value="com.mbeddr.ext.components#312587838749342891" />
-          <property name="uuid" nameId="kdzh.322010710375892619" value="0e384510-95ab-427d-a3f4-b0e5ceb69b2b" />
+          <property name="name" nameId="tpck.1169194664001" value="com.mbeddr.ext.components#3043586575060320369" />
+          <property name="uuid" nameId="kdzh.322010710375892619" value="c477f4b1-bf34-40f2-bc0a-5ef1026187db" />
           <property name="doNotCompile" nameId="kdzh.1500819558096356884" value="false" />
         </node>
       </node>
@@ -844,7 +844,7 @@
         <node role="dependencies" roleId="kdzh.5253498789149547704" type="kdzh.BuildMps_ExtractedModuleDependency" typeId="kdzh.7259033139236285166" id="7360615763635453003" nodeInfo="nn">
           <node role="dependency" roleId="kdzh.7259033139236285167" type="kdzh.BuildMps_ModuleDependencyOnModule" typeId="kdzh.5253498789149585690" id="7360615763635453004" nodeInfo="ng">
             <property name="reexport" nameId="kdzh.5253498789149547713" value="false" />
-            <link role="module" roleId="kdzh.5253498789149547705" targetNodeId="6247780594427554370" resolveInfo="com.mbeddr.ext.exceptionhandling.lib" />
+            <link role="module" roleId="kdzh.5253498789149547705" targetNodeId="6247780594427554370" resolveInfo="com.mbeddr.ext.exceptionhandling.library" />
           </node>
         </node>
         <node role="generator" roleId="kdzh.9200313594498201639" type="kdzh.BuildMps_Generator" typeId="kdzh.5507251971038816436" id="4346260978176187751" nodeInfo="ng">
@@ -860,24 +860,24 @@
           <node role="dependencies" roleId="kdzh.5253498789149547704" type="kdzh.BuildMps_ExtractedModuleDependency" typeId="kdzh.7259033139236285166" id="4346260978176187754" nodeInfo="nn">
             <node role="dependency" roleId="kdzh.7259033139236285167" type="kdzh.BuildMps_ModuleDependencyOnModule" typeId="kdzh.5253498789149585690" id="4346260978176187755" nodeInfo="ng">
               <property name="reexport" nameId="kdzh.5253498789149547713" value="false" />
-              <link role="module" roleId="kdzh.5253498789149547705" targetNodeId="6247780594427554370" resolveInfo="com.mbeddr.ext.exceptionhandling.lib" />
+              <link role="module" roleId="kdzh.5253498789149547705" targetNodeId="6247780594427554370" resolveInfo="com.mbeddr.ext.exceptionhandling.library" />
             </node>
           </node>
         </node>
       </node>
       <node role="modules" roleId="kdzh.1500819558095907806" type="kdzh.BuildMps_Solution" typeId="kdzh.3189788309731840247" id="6247780594427554370" nodeInfo="ng">
         <property name="compact" nameId="kdzh.8369506495128725901" value="true" />
-        <property name="uuid" nameId="kdzh.322010710375892619" value="41e01e06-e491-4e99-b423-0d3299bae764" />
-        <property name="name" nameId="tpck.1169194664001" value="com.mbeddr.ext.exceptionhandling.lib" />
+        <property name="uuid" nameId="kdzh.322010710375892619" value="d76eac52-ac9a-4fa0-9366-63ecb42b92ea" />
+        <property name="name" nameId="tpck.1169194664001" value="com.mbeddr.ext.exceptionhandling.library" />
         <property name="doNotCompile" nameId="kdzh.1500819558096356884" value="false" />
         <node role="path" roleId="kdzh.322010710375956261" type="3ior.BuildSourceMacroRelativePath" typeId="3ior.7389400916848153117" id="6247780594427554802" nodeInfo="ng">
           <link role="macro" roleId="3ior.7389400916848153130" targetNodeId="6247780594427554833" resolveInfo="mbeddr.ext" />
           <node role="compositePart" roleId="3ior.7321017245477039051" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="6247780594427554803" nodeInfo="nn">
-            <property name="head" nameId="3ior.8618885170173601779" value="lib" />
+            <property name="head" nameId="3ior.8618885170173601779" value="solutions" />
             <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="6247780594427554804" nodeInfo="nn">
               <property name="head" nameId="3ior.8618885170173601779" value="com.mbeddr.ext.exceptionhandling.lib" />
               <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="6247780594427554805" nodeInfo="nn">
-                <property name="head" nameId="3ior.8618885170173601779" value="lib.msd" />
+                <property name="head" nameId="3ior.8618885170173601779" value="com.mbeddr.ext.exceptionhandling.library.msd" />
               </node>
             </node>
           </node>
@@ -2228,7 +2228,7 @@
         <node role="dependencies" roleId="kdzh.5253498789149547704" type="kdzh.BuildMps_ExtractedModuleDependency" typeId="kdzh.7259033139236285166" id="7360615763635453051" nodeInfo="nn">
           <node role="dependency" roleId="kdzh.7259033139236285167" type="kdzh.BuildMps_ModuleDependencyOnModule" typeId="kdzh.5253498789149585690" id="7360615763635453052" nodeInfo="ng">
             <property name="reexport" nameId="kdzh.5253498789149547713" value="false" />
-            <link role="module" roleId="kdzh.5253498789149547705" targetNodeId="6247780594427554370" resolveInfo="com.mbeddr.ext.exceptionhandling.lib" />
+            <link role="module" roleId="kdzh.5253498789149547705" targetNodeId="6247780594427554370" resolveInfo="com.mbeddr.ext.exceptionhandling.library" />
           </node>
         </node>
       </node>

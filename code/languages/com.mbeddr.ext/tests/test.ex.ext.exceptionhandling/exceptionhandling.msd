@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <solution name="test.ex.ext.exceptionhandling" uuid="b6bd6635-d6ef-4fee-b110-44476b204eac" compileInMPS="true">
   <models>
-    <modelRoot path="${solution_descriptor}/" />
+    <modelRoot contentPath="${module}" type="default">
+      <sourceRoot location="." />
+    </modelRoot>
   </models>
   <sourcePath />
   <dependencies>
-    <dependency reexport="false">41e01e06-e491-4e99-b423-0d3299bae764(com.mbeddr.ext.exceptionhandling.lib)</dependency>
+    <dependency reexport="false">d76eac52-ac9a-4fa0-9366-63ecb42b92ea(com.mbeddr.ext.exceptionhandling.library)</dependency>
   </dependencies>
   <usedLanguages>
     <usedLanguage>06d68b77-b699-4918-83b8-857e63787800(com.mbeddr.core.unittest)</usedLanguage>
