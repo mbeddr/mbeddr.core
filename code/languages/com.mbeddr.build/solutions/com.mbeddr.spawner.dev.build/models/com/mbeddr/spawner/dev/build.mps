@@ -83,504 +83,450 @@
       </node>
     </node>
     <node role="layout" roleId="3ior.5617550519002745372" type="3ior.BuildLayout" typeId="3ior.5617550519002745364" id="6247780594427434821" nodeInfo="ng">
-      <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_Zip" typeId="3ior.7389400916848050071" id="6247780594427434822" nodeInfo="ng">
-        <node role="containerName" roleId="3ior.4380385936562148502" type="3ior.BuildStringNotEmpty" typeId="3ior.841011766566059607" id="6247780594427434823" nodeInfo="ng">
-          <node role="parts" roleId="3ior.4903714810883783243" type="3ior.BuildTextStringPart" typeId="3ior.4903714810883702019" id="6247780594427434824" nodeInfo="ng">
-            <property name="text" nameId="3ior.4903714810883755350" value="com.mbeddr.spawner.zip" />
+      <node role="children" roleId="3ior.7389400916848037006" type="kdzh.BuildMpsLayout_Plugin" typeId="kdzh.6592112598314498926" id="2680783833515508341" nodeInfo="ng">
+        <link role="plugin" roleId="kdzh.6592112598314801433" targetNodeId="6247780594427434826" resolveInfo="com.mbeddr.spawner" />
+        <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_Folder" typeId="3ior.7389400916848036984" id="2680783833515516415" nodeInfo="ng">
+          <node role="children" roleId="3ior.7389400916848037006" type="kdzh.BuildMpsLayout_ModuleJars" typeId="kdzh.1265949165890536423" id="2680783833515519040" nodeInfo="ng">
+            <link role="module" roleId="kdzh.1265949165890536425" targetNodeId="8628756186118765626" resolveInfo="com.mbeddr.spawner" />
           </node>
-        </node>
-        <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_Folder" typeId="3ior.7389400916848036984" id="5621334030472304102" nodeInfo="ng">
-          <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_Folder" typeId="3ior.7389400916848036984" id="3736697914103123611" nodeInfo="ng">
-            <node role="containerName" roleId="3ior.4380385936562148502" type="3ior.BuildStringNotEmpty" typeId="3ior.841011766566059607" id="3736697914103123612" nodeInfo="ng">
-              <node role="parts" roleId="3ior.4903714810883783243" type="3ior.BuildTextStringPart" typeId="3ior.4903714810883702019" id="3736697914103123613" nodeInfo="ng">
-                <property name="text" nameId="3ior.4903714810883755350" value="META-INF" />
+          <node role="children" roleId="3ior.7389400916848037006" type="kdzh.BuildMpsLayout_ModuleJars" typeId="kdzh.1265949165890536423" id="8658633319051816669" nodeInfo="ng">
+            <link role="module" roleId="kdzh.1265949165890536425" targetNodeId="6247780594427434836" resolveInfo="Eclipse.Debugger" />
+          </node>
+          <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_File" typeId="3ior.9126048691955220717" id="2680783833515518015" nodeInfo="ng">
+            <node role="path" roleId="3ior.9126048691955220762" type="3ior.BuildSourceMacroRelativePath" typeId="3ior.7389400916848153117" id="2680783833515518016" nodeInfo="ng">
+              <link role="macro" roleId="3ior.7389400916848153130" targetNodeId="8628756186118380495" resolveInfo="mbeddr.github.core.home" />
+              <node role="compositePart" roleId="3ior.7321017245477039051" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="2680783833515518017" nodeInfo="nn">
+                <property name="head" nameId="3ior.8618885170173601779" value="tools" />
+                <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="2680783833515518018" nodeInfo="nn">
+                  <property name="head" nameId="3ior.8618885170173601779" value="Eclipse.Debugger" />
+                  <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="2680783833515518019" nodeInfo="nn">
+                    <property name="head" nameId="3ior.8618885170173601779" value="lib" />
+                    <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="2680783833515518020" nodeInfo="nn">
+                      <property name="head" nameId="3ior.8618885170173601779" value="aopalliance.jar" />
+                    </node>
+                  </node>
+                </node>
               </node>
             </node>
-            <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_File" typeId="3ior.9126048691955220717" id="3736697914103123614" nodeInfo="ng">
-              <node role="path" roleId="3ior.9126048691955220762" type="3ior.BuildSourceMacroRelativePath" typeId="3ior.7389400916848153117" id="3736697914103121456" nodeInfo="ng">
+          </node>
+          <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_File" typeId="3ior.9126048691955220717" id="2680783833515518021" nodeInfo="ng">
+            <node role="path" roleId="3ior.9126048691955220762" type="3ior.BuildSourceMacroRelativePath" typeId="3ior.7389400916848153117" id="2680783833515518022" nodeInfo="ng">
+              <link role="macro" roleId="3ior.7389400916848153130" targetNodeId="8628756186118380495" resolveInfo="mbeddr.github.core.home" />
+              <node role="compositePart" roleId="3ior.7321017245477039051" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="2680783833515518023" nodeInfo="nn">
+                <property name="head" nameId="3ior.8618885170173601779" value="tools" />
+                <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="2680783833515518024" nodeInfo="nn">
+                  <property name="head" nameId="3ior.8618885170173601779" value="Eclipse.Debugger" />
+                  <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="2680783833515518025" nodeInfo="nn">
+                    <property name="head" nameId="3ior.8618885170173601779" value="lib" />
+                    <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="2680783833515518026" nodeInfo="nn">
+                      <property name="head" nameId="3ior.8618885170173601779" value="cdt.jar" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_File" typeId="3ior.9126048691955220717" id="2680783833515518027" nodeInfo="ng">
+            <node role="path" roleId="3ior.9126048691955220762" type="3ior.BuildSourceMacroRelativePath" typeId="3ior.7389400916848153117" id="2680783833515518028" nodeInfo="ng">
+              <link role="macro" roleId="3ior.7389400916848153130" targetNodeId="8628756186118380495" resolveInfo="mbeddr.github.core.home" />
+              <node role="compositePart" roleId="3ior.7321017245477039051" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="2680783833515518029" nodeInfo="nn">
+                <property name="head" nameId="3ior.8618885170173601779" value="tools" />
+                <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="2680783833515518030" nodeInfo="nn">
+                  <property name="head" nameId="3ior.8618885170173601779" value="Eclipse.Debugger" />
+                  <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="2680783833515518031" nodeInfo="nn">
+                    <property name="head" nameId="3ior.8618885170173601779" value="lib" />
+                    <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="2680783833515518032" nodeInfo="nn">
+                      <property name="head" nameId="3ior.8618885170173601779" value="cdt-facade.jar" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_File" typeId="3ior.9126048691955220717" id="2680783833515518033" nodeInfo="ng">
+            <node role="path" roleId="3ior.9126048691955220762" type="3ior.BuildSourceMacroRelativePath" typeId="3ior.7389400916848153117" id="2680783833515518034" nodeInfo="ng">
+              <link role="macro" roleId="3ior.7389400916848153130" targetNodeId="8628756186118380495" resolveInfo="mbeddr.github.core.home" />
+              <node role="compositePart" roleId="3ior.7321017245477039051" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="2680783833515518035" nodeInfo="nn">
+                <property name="head" nameId="3ior.8618885170173601779" value="tools" />
+                <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="2680783833515518036" nodeInfo="nn">
+                  <property name="head" nameId="3ior.8618885170173601779" value="Eclipse.Debugger" />
+                  <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="2680783833515518037" nodeInfo="nn">
+                    <property name="head" nameId="3ior.8618885170173601779" value="lib" />
+                    <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="2680783833515518038" nodeInfo="nn">
+                      <property name="head" nameId="3ior.8618885170173601779" value="com.ibm.icu_4.4.2.v20110823.jar" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_File" typeId="3ior.9126048691955220717" id="2680783833515518039" nodeInfo="ng">
+            <node role="path" roleId="3ior.9126048691955220762" type="3ior.BuildSourceMacroRelativePath" typeId="3ior.7389400916848153117" id="2680783833515518040" nodeInfo="ng">
+              <link role="macro" roleId="3ior.7389400916848153130" targetNodeId="8628756186118380495" resolveInfo="mbeddr.github.core.home" />
+              <node role="compositePart" roleId="3ior.7321017245477039051" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="2680783833515518041" nodeInfo="nn">
+                <property name="head" nameId="3ior.8618885170173601779" value="tools" />
+                <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="2680783833515518042" nodeInfo="nn">
+                  <property name="head" nameId="3ior.8618885170173601779" value="Eclipse.Debugger" />
+                  <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="2680783833515518043" nodeInfo="nn">
+                    <property name="head" nameId="3ior.8618885170173601779" value="lib" />
+                    <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="2680783833515518044" nodeInfo="nn">
+                      <property name="head" nameId="3ior.8618885170173601779" value="guice-3.0.jar" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_File" typeId="3ior.9126048691955220717" id="2680783833515518045" nodeInfo="ng">
+            <node role="path" roleId="3ior.9126048691955220762" type="3ior.BuildSourceMacroRelativePath" typeId="3ior.7389400916848153117" id="2680783833515518046" nodeInfo="ng">
+              <link role="macro" roleId="3ior.7389400916848153130" targetNodeId="8628756186118380495" resolveInfo="mbeddr.github.core.home" />
+              <node role="compositePart" roleId="3ior.7321017245477039051" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="2680783833515518047" nodeInfo="nn">
+                <property name="head" nameId="3ior.8618885170173601779" value="tools" />
+                <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="2680783833515518048" nodeInfo="nn">
+                  <property name="head" nameId="3ior.8618885170173601779" value="Eclipse.Debugger" />
+                  <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="2680783833515518049" nodeInfo="nn">
+                    <property name="head" nameId="3ior.8618885170173601779" value="lib" />
+                    <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="2680783833515518050" nodeInfo="nn">
+                      <property name="head" nameId="3ior.8618885170173601779" value="guice-multibindings-3.0.jar" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_File" typeId="3ior.9126048691955220717" id="2680783833515518051" nodeInfo="ng">
+            <node role="path" roleId="3ior.9126048691955220762" type="3ior.BuildSourceMacroRelativePath" typeId="3ior.7389400916848153117" id="2680783833515518052" nodeInfo="ng">
+              <link role="macro" roleId="3ior.7389400916848153130" targetNodeId="8628756186118380495" resolveInfo="mbeddr.github.core.home" />
+              <node role="compositePart" roleId="3ior.7321017245477039051" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="2680783833515518053" nodeInfo="nn">
+                <property name="head" nameId="3ior.8618885170173601779" value="tools" />
+                <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="2680783833515518054" nodeInfo="nn">
+                  <property name="head" nameId="3ior.8618885170173601779" value="Eclipse.Debugger" />
+                  <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="2680783833515518055" nodeInfo="nn">
+                    <property name="head" nameId="3ior.8618885170173601779" value="lib" />
+                    <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="2680783833515518056" nodeInfo="nn">
+                      <property name="head" nameId="3ior.8618885170173601779" value="javax.inject.jar" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_File" typeId="3ior.9126048691955220717" id="2680783833515518057" nodeInfo="ng">
+            <node role="path" roleId="3ior.9126048691955220762" type="3ior.BuildSourceMacroRelativePath" typeId="3ior.7389400916848153117" id="2680783833515518058" nodeInfo="ng">
+              <link role="macro" roleId="3ior.7389400916848153130" targetNodeId="8628756186118380495" resolveInfo="mbeddr.github.core.home" />
+              <node role="compositePart" roleId="3ior.7321017245477039051" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="2680783833515518059" nodeInfo="nn">
+                <property name="head" nameId="3ior.8618885170173601779" value="tools" />
+                <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="2680783833515518060" nodeInfo="nn">
+                  <property name="head" nameId="3ior.8618885170173601779" value="Eclipse.Debugger" />
+                  <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="2680783833515518061" nodeInfo="nn">
+                    <property name="head" nameId="3ior.8618885170173601779" value="lib" />
+                    <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="2680783833515518062" nodeInfo="nn">
+                      <property name="head" nameId="3ior.8618885170173601779" value="org.eclipse.core.contenttype_3.4.200.v20120523-2004.jar" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_File" typeId="3ior.9126048691955220717" id="2680783833515518063" nodeInfo="ng">
+            <node role="path" roleId="3ior.9126048691955220762" type="3ior.BuildSourceMacroRelativePath" typeId="3ior.7389400916848153117" id="2680783833515518064" nodeInfo="ng">
+              <link role="macro" roleId="3ior.7389400916848153130" targetNodeId="8628756186118380495" resolveInfo="mbeddr.github.core.home" />
+              <node role="compositePart" roleId="3ior.7321017245477039051" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="2680783833515518065" nodeInfo="nn">
+                <property name="head" nameId="3ior.8618885170173601779" value="tools" />
+                <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="2680783833515518066" nodeInfo="nn">
+                  <property name="head" nameId="3ior.8618885170173601779" value="Eclipse.Debugger" />
+                  <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="2680783833515518067" nodeInfo="nn">
+                    <property name="head" nameId="3ior.8618885170173601779" value="lib" />
+                    <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="2680783833515518068" nodeInfo="nn">
+                      <property name="head" nameId="3ior.8618885170173601779" value="org.eclipse.core.filebuffers_3.5.200.v20120523-1310.jar" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_File" typeId="3ior.9126048691955220717" id="2680783833515518069" nodeInfo="ng">
+            <node role="path" roleId="3ior.9126048691955220762" type="3ior.BuildSourceMacroRelativePath" typeId="3ior.7389400916848153117" id="2680783833515518070" nodeInfo="ng">
+              <link role="macro" roleId="3ior.7389400916848153130" targetNodeId="8628756186118380495" resolveInfo="mbeddr.github.core.home" />
+              <node role="compositePart" roleId="3ior.7321017245477039051" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="2680783833515518071" nodeInfo="nn">
+                <property name="head" nameId="3ior.8618885170173601779" value="tools" />
+                <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="2680783833515518072" nodeInfo="nn">
+                  <property name="head" nameId="3ior.8618885170173601779" value="Eclipse.Debugger" />
+                  <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="2680783833515518073" nodeInfo="nn">
+                    <property name="head" nameId="3ior.8618885170173601779" value="lib" />
+                    <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="2680783833515518074" nodeInfo="nn">
+                      <property name="head" nameId="3ior.8618885170173601779" value="org.eclipse.core.filesystem_1.3.200.v20120522-2012.jar" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_File" typeId="3ior.9126048691955220717" id="2680783833515518075" nodeInfo="ng">
+            <node role="path" roleId="3ior.9126048691955220762" type="3ior.BuildSourceMacroRelativePath" typeId="3ior.7389400916848153117" id="2680783833515518076" nodeInfo="ng">
+              <link role="macro" roleId="3ior.7389400916848153130" targetNodeId="8628756186118380495" resolveInfo="mbeddr.github.core.home" />
+              <node role="compositePart" roleId="3ior.7321017245477039051" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="2680783833515518077" nodeInfo="nn">
+                <property name="head" nameId="3ior.8618885170173601779" value="tools" />
+                <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="2680783833515518078" nodeInfo="nn">
+                  <property name="head" nameId="3ior.8618885170173601779" value="Eclipse.Debugger" />
+                  <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="2680783833515518079" nodeInfo="nn">
+                    <property name="head" nameId="3ior.8618885170173601779" value="lib" />
+                    <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="2680783833515518080" nodeInfo="nn">
+                      <property name="head" nameId="3ior.8618885170173601779" value="org.eclipse.core.jobs_3.5.300.v20120622-204750.jar" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_File" typeId="3ior.9126048691955220717" id="2680783833515518081" nodeInfo="ng">
+            <node role="path" roleId="3ior.9126048691955220762" type="3ior.BuildSourceMacroRelativePath" typeId="3ior.7389400916848153117" id="2680783833515518082" nodeInfo="ng">
+              <link role="macro" roleId="3ior.7389400916848153130" targetNodeId="8628756186118380495" resolveInfo="mbeddr.github.core.home" />
+              <node role="compositePart" roleId="3ior.7321017245477039051" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="2680783833515518083" nodeInfo="nn">
+                <property name="head" nameId="3ior.8618885170173601779" value="tools" />
+                <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="2680783833515518084" nodeInfo="nn">
+                  <property name="head" nameId="3ior.8618885170173601779" value="Eclipse.Debugger" />
+                  <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="2680783833515518085" nodeInfo="nn">
+                    <property name="head" nameId="3ior.8618885170173601779" value="lib" />
+                    <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="2680783833515518086" nodeInfo="nn">
+                      <property name="head" nameId="3ior.8618885170173601779" value="org.eclipse.core.resources_3.8.1.v20120802-154922.jar" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_File" typeId="3ior.9126048691955220717" id="2680783833515518087" nodeInfo="ng">
+            <node role="path" roleId="3ior.9126048691955220762" type="3ior.BuildSourceMacroRelativePath" typeId="3ior.7389400916848153117" id="2680783833515518088" nodeInfo="ng">
+              <link role="macro" roleId="3ior.7389400916848153130" targetNodeId="8628756186118380495" resolveInfo="mbeddr.github.core.home" />
+              <node role="compositePart" roleId="3ior.7321017245477039051" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="2680783833515518089" nodeInfo="nn">
+                <property name="head" nameId="3ior.8618885170173601779" value="tools" />
+                <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="2680783833515518090" nodeInfo="nn">
+                  <property name="head" nameId="3ior.8618885170173601779" value="Eclipse.Debugger" />
+                  <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="2680783833515518091" nodeInfo="nn">
+                    <property name="head" nameId="3ior.8618885170173601779" value="lib" />
+                    <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="2680783833515518092" nodeInfo="nn">
+                      <property name="head" nameId="3ior.8618885170173601779" value="org.eclipse.core.runtime_3.8.0.v20120521-2346.jar" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_File" typeId="3ior.9126048691955220717" id="2680783833515518093" nodeInfo="ng">
+            <node role="path" roleId="3ior.9126048691955220762" type="3ior.BuildSourceMacroRelativePath" typeId="3ior.7389400916848153117" id="2680783833515518094" nodeInfo="ng">
+              <link role="macro" roleId="3ior.7389400916848153130" targetNodeId="8628756186118380495" resolveInfo="mbeddr.github.core.home" />
+              <node role="compositePart" roleId="3ior.7321017245477039051" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="2680783833515518095" nodeInfo="nn">
+                <property name="head" nameId="3ior.8618885170173601779" value="tools" />
+                <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="2680783833515518096" nodeInfo="nn">
+                  <property name="head" nameId="3ior.8618885170173601779" value="Eclipse.Debugger" />
+                  <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="2680783833515518097" nodeInfo="nn">
+                    <property name="head" nameId="3ior.8618885170173601779" value="lib" />
+                    <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="2680783833515518098" nodeInfo="nn">
+                      <property name="head" nameId="3ior.8618885170173601779" value="org.eclipse.core.variables_3.2.600.v20120521-2012.jar" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_File" typeId="3ior.9126048691955220717" id="2680783833515518099" nodeInfo="ng">
+            <node role="path" roleId="3ior.9126048691955220762" type="3ior.BuildSourceMacroRelativePath" typeId="3ior.7389400916848153117" id="2680783833515518100" nodeInfo="ng">
+              <link role="macro" roleId="3ior.7389400916848153130" targetNodeId="8628756186118380495" resolveInfo="mbeddr.github.core.home" />
+              <node role="compositePart" roleId="3ior.7321017245477039051" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="2680783833515518101" nodeInfo="nn">
+                <property name="head" nameId="3ior.8618885170173601779" value="tools" />
+                <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="2680783833515518102" nodeInfo="nn">
+                  <property name="head" nameId="3ior.8618885170173601779" value="Eclipse.Debugger" />
+                  <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="2680783833515518103" nodeInfo="nn">
+                    <property name="head" nameId="3ior.8618885170173601779" value="lib" />
+                    <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="2680783833515518104" nodeInfo="nn">
+                      <property name="head" nameId="3ior.8618885170173601779" value="org.eclipse.debug.core_3.7.100.v20120521-2012.jar" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_File" typeId="3ior.9126048691955220717" id="2680783833515518105" nodeInfo="ng">
+            <node role="path" roleId="3ior.9126048691955220762" type="3ior.BuildSourceMacroRelativePath" typeId="3ior.7389400916848153117" id="2680783833515518106" nodeInfo="ng">
+              <link role="macro" roleId="3ior.7389400916848153130" targetNodeId="8628756186118380495" resolveInfo="mbeddr.github.core.home" />
+              <node role="compositePart" roleId="3ior.7321017245477039051" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="2680783833515518107" nodeInfo="nn">
+                <property name="head" nameId="3ior.8618885170173601779" value="tools" />
+                <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="2680783833515518108" nodeInfo="nn">
+                  <property name="head" nameId="3ior.8618885170173601779" value="Eclipse.Debugger" />
+                  <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="2680783833515518109" nodeInfo="nn">
+                    <property name="head" nameId="3ior.8618885170173601779" value="lib" />
+                    <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="2680783833515518110" nodeInfo="nn">
+                      <property name="head" nameId="3ior.8618885170173601779" value="org.eclipse.equinox.app_1.3.100.v20120522-1841.jar" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_File" typeId="3ior.9126048691955220717" id="2680783833515518111" nodeInfo="ng">
+            <node role="path" roleId="3ior.9126048691955220762" type="3ior.BuildSourceMacroRelativePath" typeId="3ior.7389400916848153117" id="2680783833515518112" nodeInfo="ng">
+              <link role="macro" roleId="3ior.7389400916848153130" targetNodeId="8628756186118380495" resolveInfo="mbeddr.github.core.home" />
+              <node role="compositePart" roleId="3ior.7321017245477039051" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="2680783833515518113" nodeInfo="nn">
+                <property name="head" nameId="3ior.8618885170173601779" value="tools" />
+                <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="2680783833515518114" nodeInfo="nn">
+                  <property name="head" nameId="3ior.8618885170173601779" value="Eclipse.Debugger" />
+                  <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="2680783833515518115" nodeInfo="nn">
+                    <property name="head" nameId="3ior.8618885170173601779" value="lib" />
+                    <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="2680783833515518116" nodeInfo="nn">
+                      <property name="head" nameId="3ior.8618885170173601779" value="org.eclipse.equinox.common_3.6.100.v20120522-1841.jar" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_File" typeId="3ior.9126048691955220717" id="2680783833515518117" nodeInfo="ng">
+            <node role="path" roleId="3ior.9126048691955220762" type="3ior.BuildSourceMacroRelativePath" typeId="3ior.7389400916848153117" id="2680783833515518118" nodeInfo="ng">
+              <link role="macro" roleId="3ior.7389400916848153130" targetNodeId="8628756186118380495" resolveInfo="mbeddr.github.core.home" />
+              <node role="compositePart" roleId="3ior.7321017245477039051" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="2680783833515518119" nodeInfo="nn">
+                <property name="head" nameId="3ior.8618885170173601779" value="tools" />
+                <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="2680783833515518120" nodeInfo="nn">
+                  <property name="head" nameId="3ior.8618885170173601779" value="Eclipse.Debugger" />
+                  <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="2680783833515518121" nodeInfo="nn">
+                    <property name="head" nameId="3ior.8618885170173601779" value="lib" />
+                    <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="2680783833515518122" nodeInfo="nn">
+                      <property name="head" nameId="3ior.8618885170173601779" value="org.eclipse.equinox.preferences_3.5.0.v20120522-1841.jar" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_File" typeId="3ior.9126048691955220717" id="2680783833515518123" nodeInfo="ng">
+            <node role="path" roleId="3ior.9126048691955220762" type="3ior.BuildSourceMacroRelativePath" typeId="3ior.7389400916848153117" id="2680783833515518124" nodeInfo="ng">
+              <link role="macro" roleId="3ior.7389400916848153130" targetNodeId="8628756186118380495" resolveInfo="mbeddr.github.core.home" />
+              <node role="compositePart" roleId="3ior.7321017245477039051" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="2680783833515518125" nodeInfo="nn">
+                <property name="head" nameId="3ior.8618885170173601779" value="tools" />
+                <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="2680783833515518126" nodeInfo="nn">
+                  <property name="head" nameId="3ior.8618885170173601779" value="Eclipse.Debugger" />
+                  <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="2680783833515518127" nodeInfo="nn">
+                    <property name="head" nameId="3ior.8618885170173601779" value="lib" />
+                    <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="2680783833515518128" nodeInfo="nn">
+                      <property name="head" nameId="3ior.8618885170173601779" value="org.eclipse.equinox.registry_3.5.200.v20120522-1841.jar" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_File" typeId="3ior.9126048691955220717" id="2680783833515518129" nodeInfo="ng">
+            <node role="path" roleId="3ior.9126048691955220762" type="3ior.BuildSourceMacroRelativePath" typeId="3ior.7389400916848153117" id="2680783833515518130" nodeInfo="ng">
+              <link role="macro" roleId="3ior.7389400916848153130" targetNodeId="8628756186118380495" resolveInfo="mbeddr.github.core.home" />
+              <node role="compositePart" roleId="3ior.7321017245477039051" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="2680783833515518131" nodeInfo="nn">
+                <property name="head" nameId="3ior.8618885170173601779" value="tools" />
+                <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="2680783833515518132" nodeInfo="nn">
+                  <property name="head" nameId="3ior.8618885170173601779" value="Eclipse.Debugger" />
+                  <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="2680783833515518133" nodeInfo="nn">
+                    <property name="head" nameId="3ior.8618885170173601779" value="lib" />
+                    <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="2680783833515518134" nodeInfo="nn">
+                      <property name="head" nameId="3ior.8618885170173601779" value="org.eclipse.ltk.core.refactoring_3.6.0.v20120523-1543.jar" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_File" typeId="3ior.9126048691955220717" id="2680783833515518135" nodeInfo="ng">
+            <node role="path" roleId="3ior.9126048691955220762" type="3ior.BuildSourceMacroRelativePath" typeId="3ior.7389400916848153117" id="2680783833515518136" nodeInfo="ng">
+              <link role="macro" roleId="3ior.7389400916848153130" targetNodeId="8628756186118380495" resolveInfo="mbeddr.github.core.home" />
+              <node role="compositePart" roleId="3ior.7321017245477039051" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="2680783833515518137" nodeInfo="nn">
+                <property name="head" nameId="3ior.8618885170173601779" value="tools" />
+                <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="2680783833515518138" nodeInfo="nn">
+                  <property name="head" nameId="3ior.8618885170173601779" value="Eclipse.Debugger" />
+                  <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="2680783833515518139" nodeInfo="nn">
+                    <property name="head" nameId="3ior.8618885170173601779" value="lib" />
+                    <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="2680783833515518140" nodeInfo="nn">
+                      <property name="head" nameId="3ior.8618885170173601779" value="org.eclipse.osgi_3.8.1.v20120830-144521.jar" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_File" typeId="3ior.9126048691955220717" id="2680783833515518141" nodeInfo="ng">
+            <node role="path" roleId="3ior.9126048691955220762" type="3ior.BuildSourceMacroRelativePath" typeId="3ior.7389400916848153117" id="2680783833515518142" nodeInfo="ng">
+              <link role="macro" roleId="3ior.7389400916848153130" targetNodeId="8628756186118380495" resolveInfo="mbeddr.github.core.home" />
+              <node role="compositePart" roleId="3ior.7321017245477039051" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="2680783833515518143" nodeInfo="nn">
+                <property name="head" nameId="3ior.8618885170173601779" value="tools" />
+                <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="2680783833515518144" nodeInfo="nn">
+                  <property name="head" nameId="3ior.8618885170173601779" value="Eclipse.Debugger" />
+                  <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="2680783833515518145" nodeInfo="nn">
+                    <property name="head" nameId="3ior.8618885170173601779" value="lib" />
+                    <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="2680783833515518146" nodeInfo="nn">
+                      <property name="head" nameId="3ior.8618885170173601779" value="org.eclipse.text_3.5.200.v20120523-1310.jar" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_File" typeId="3ior.9126048691955220717" id="2680783833515518147" nodeInfo="ng">
+            <node role="path" roleId="3ior.9126048691955220762" type="3ior.BuildSourceMacroRelativePath" typeId="3ior.7389400916848153117" id="2680783833515518148" nodeInfo="ng">
+              <link role="macro" roleId="3ior.7389400916848153130" targetNodeId="8628756186118380495" resolveInfo="mbeddr.github.core.home" />
+              <node role="compositePart" roleId="3ior.7321017245477039051" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="2680783833515518149" nodeInfo="nn">
+                <property name="head" nameId="3ior.8618885170173601779" value="tools" />
+                <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="2680783833515518150" nodeInfo="nn">
+                  <property name="head" nameId="3ior.8618885170173601779" value="Eclipse.Debugger" />
+                  <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="2680783833515518151" nodeInfo="nn">
+                    <property name="head" nameId="3ior.8618885170173601779" value="lib" />
+                    <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="2680783833515518152" nodeInfo="nn">
+                      <property name="head" nameId="3ior.8618885170173601779" value="org.hamcrest.core_1.1.0.v20090501071000.jar" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_File" typeId="3ior.9126048691955220717" id="2680783833515518153" nodeInfo="ng">
+            <node role="path" roleId="3ior.9126048691955220762" type="3ior.BuildSourceMacroRelativePath" typeId="3ior.7389400916848153117" id="2680783833515518154" nodeInfo="ng">
+              <link role="macro" roleId="3ior.7389400916848153130" targetNodeId="8628756186118380495" resolveInfo="mbeddr.github.core.home" />
+              <node role="compositePart" roleId="3ior.7321017245477039051" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="2680783833515518155" nodeInfo="nn">
+                <property name="head" nameId="3ior.8618885170173601779" value="tools" />
+                <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="2680783833515518156" nodeInfo="nn">
+                  <property name="head" nameId="3ior.8618885170173601779" value="Eclipse.Debugger" />
+                  <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="2680783833515518157" nodeInfo="nn">
+                    <property name="head" nameId="3ior.8618885170173601779" value="lib" />
+                    <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="2680783833515518158" nodeInfo="nn">
+                      <property name="head" nameId="3ior.8618885170173601779" value="runtime_registry_compatibility.jar" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_Folder" typeId="3ior.7389400916848036984" id="2680783833515518159" nodeInfo="ng">
+            <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_Files" typeId="3ior.2750015747481074431" id="2680783833515518160" nodeInfo="ng">
+              <node role="path" roleId="3ior.2750015747481074432" type="3ior.BuildSourceMacroRelativePath" typeId="3ior.7389400916848153117" id="2680783833515518161" nodeInfo="ng">
                 <link role="macro" roleId="3ior.7389400916848153130" targetNodeId="8628756186118765768" resolveInfo="mbeddr.core" />
-                <node role="compositePart" roleId="3ior.7321017245477039051" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="3736697914103121457" nodeInfo="nn">
+                <node role="compositePart" roleId="3ior.7321017245477039051" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="2680783833515518162" nodeInfo="nn">
                   <property name="head" nameId="3ior.8618885170173601779" value="languages" />
-                  <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="3736697914103121458" nodeInfo="nn">
+                  <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="2680783833515518163" nodeInfo="nn">
                     <property name="head" nameId="3ior.8618885170173601779" value="com.mbeddr.core.spawner" />
-                    <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="3736697914103121463" nodeInfo="nn">
-                      <property name="head" nameId="3ior.8618885170173601779" value="source_gen" />
-                      <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="3736697914103121464" nodeInfo="nn">
-                        <property name="head" nameId="3ior.8618885170173601779" value="com" />
-                        <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="3736697914103121465" nodeInfo="nn">
-                          <property name="head" nameId="3ior.8618885170173601779" value="mbeddr" />
-                          <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="3736697914103121466" nodeInfo="nn">
-                            <property name="head" nameId="3ior.8618885170173601779" value="spawner" />
-                            <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="2002594043806111819" nodeInfo="nn">
-                              <property name="head" nameId="3ior.8618885170173601779" value="loader" />
-                              <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="2002594043806111820" nodeInfo="nn">
-                                <property name="head" nameId="3ior.8618885170173601779" value="plugin.xml" />
-                              </node>
-                            </node>
-                          </node>
-                        </node>
+                    <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="2680783833515518164" nodeInfo="nn">
+                      <property name="head" nameId="3ior.8618885170173601779" value="data" />
+                      <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="2680783833515518165" nodeInfo="nn">
+                        <property name="head" nameId="3ior.8618885170173601779" value="spawner" />
                       </node>
                     </node>
                   </node>
                 </node>
+              </node>
+            </node>
+            <node role="containerName" roleId="3ior.4380385936562148502" type="3ior.BuildStringNotEmpty" typeId="3ior.841011766566059607" id="2680783833515518166" nodeInfo="ng">
+              <node role="parts" roleId="3ior.4903714810883783243" type="3ior.BuildTextStringPart" typeId="3ior.4903714810883702019" id="2680783833515518167" nodeInfo="ng">
+                <property name="text" nameId="3ior.4903714810883755350" value="spawner" />
               </node>
             </node>
           </node>
-          <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_Folder" typeId="3ior.7389400916848036984" id="2067439475997470552" nodeInfo="ng">
-            <node role="children" roleId="3ior.7389400916848037006" type="kdzh.BuildMpsLayout_ModuleJars" typeId="kdzh.1265949165890536423" id="7832182067800364640" nodeInfo="ng">
-              <link role="module" roleId="kdzh.1265949165890536425" targetNodeId="6247780594427434836" resolveInfo="Eclipse.Debugger" />
-            </node>
-            <node role="containerName" roleId="3ior.4380385936562148502" type="3ior.BuildStringNotEmpty" typeId="3ior.841011766566059607" id="2067439475997470553" nodeInfo="ng">
-              <node role="parts" roleId="3ior.4903714810883783243" type="3ior.BuildTextStringPart" typeId="3ior.4903714810883702019" id="2067439475997470554" nodeInfo="ng">
-                <property name="text" nameId="3ior.4903714810883755350" value="languages" />
-              </node>
-            </node>
-          </node>
-          <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_Folder" typeId="3ior.7389400916848036984" id="8628756186118801850" nodeInfo="ng">
-            <node role="containerName" roleId="3ior.4380385936562148502" type="3ior.BuildStringNotEmpty" typeId="3ior.841011766566059607" id="8628756186118801851" nodeInfo="ng">
-              <node role="parts" roleId="3ior.4903714810883783243" type="3ior.BuildTextStringPart" typeId="3ior.4903714810883702019" id="8628756186118801852" nodeInfo="ng">
-                <property name="text" nameId="3ior.4903714810883755350" value="lib" />
-              </node>
-            </node>
-            <node role="children" roleId="3ior.7389400916848037006" type="kdzh.BuildMpsLayout_ModuleJars" typeId="kdzh.1265949165890536423" id="2067439475997558020" nodeInfo="ng">
-              <link role="module" roleId="kdzh.1265949165890536425" targetNodeId="8628756186118765626" resolveInfo="com.mbeddr.spawner" />
-            </node>
-            <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_File" typeId="3ior.9126048691955220717" id="5497188532610193060" nodeInfo="ng">
-              <node role="path" roleId="3ior.9126048691955220762" type="3ior.BuildSourceMacroRelativePath" typeId="3ior.7389400916848153117" id="5497188532610193062" nodeInfo="ng">
-                <link role="macro" roleId="3ior.7389400916848153130" targetNodeId="8628756186118380495" resolveInfo="mbeddr.github.core.home" />
-                <node role="compositePart" roleId="3ior.7321017245477039051" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="5497188532610193063" nodeInfo="nn">
-                  <property name="head" nameId="3ior.8618885170173601779" value="tools" />
-                  <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="5497188532610193064" nodeInfo="nn">
-                    <property name="head" nameId="3ior.8618885170173601779" value="Eclipse.Debugger" />
-                    <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="5497188532610193065" nodeInfo="nn">
-                      <property name="head" nameId="3ior.8618885170173601779" value="lib" />
-                      <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="5497188532610193066" nodeInfo="nn">
-                        <property name="head" nameId="3ior.8618885170173601779" value="aopalliance.jar" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_File" typeId="3ior.9126048691955220717" id="4130846447817910129" nodeInfo="ng">
-              <node role="path" roleId="3ior.9126048691955220762" type="3ior.BuildSourceMacroRelativePath" typeId="3ior.7389400916848153117" id="4130846447817910131" nodeInfo="ng">
-                <link role="macro" roleId="3ior.7389400916848153130" targetNodeId="8628756186118380495" resolveInfo="mbeddr.github.core.home" />
-                <node role="compositePart" roleId="3ior.7321017245477039051" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="4130846447817910132" nodeInfo="nn">
-                  <property name="head" nameId="3ior.8618885170173601779" value="tools" />
-                  <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="4130846447817910133" nodeInfo="nn">
-                    <property name="head" nameId="3ior.8618885170173601779" value="Eclipse.Debugger" />
-                    <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="4130846447817910134" nodeInfo="nn">
-                      <property name="head" nameId="3ior.8618885170173601779" value="lib" />
-                      <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="4130846447817910135" nodeInfo="nn">
-                        <property name="head" nameId="3ior.8618885170173601779" value="cdt.jar" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_File" typeId="3ior.9126048691955220717" id="7382010292866562145" nodeInfo="ng">
-              <node role="path" roleId="3ior.9126048691955220762" type="3ior.BuildSourceMacroRelativePath" typeId="3ior.7389400916848153117" id="7382010292866562146" nodeInfo="ng">
-                <link role="macro" roleId="3ior.7389400916848153130" targetNodeId="8628756186118380495" resolveInfo="mbeddr.github.core.home" />
-                <node role="compositePart" roleId="3ior.7321017245477039051" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="7382010292866562147" nodeInfo="nn">
-                  <property name="head" nameId="3ior.8618885170173601779" value="tools" />
-                  <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="7382010292866562148" nodeInfo="nn">
-                    <property name="head" nameId="3ior.8618885170173601779" value="Eclipse.Debugger" />
-                    <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="7382010292866562149" nodeInfo="nn">
-                      <property name="head" nameId="3ior.8618885170173601779" value="lib" />
-                      <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="7382010292866562153" nodeInfo="nn">
-                        <property name="head" nameId="3ior.8618885170173601779" value="cdt-facade.jar" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_File" typeId="3ior.9126048691955220717" id="1817061752575551139" nodeInfo="ng">
-              <node role="path" roleId="3ior.9126048691955220762" type="3ior.BuildSourceMacroRelativePath" typeId="3ior.7389400916848153117" id="1817061752575551140" nodeInfo="ng">
-                <link role="macro" roleId="3ior.7389400916848153130" targetNodeId="8628756186118380495" resolveInfo="mbeddr.github.core.home" />
-                <node role="compositePart" roleId="3ior.7321017245477039051" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="1817061752575551141" nodeInfo="nn">
-                  <property name="head" nameId="3ior.8618885170173601779" value="tools" />
-                  <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="1817061752575551142" nodeInfo="nn">
-                    <property name="head" nameId="3ior.8618885170173601779" value="Eclipse.Debugger" />
-                    <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="1817061752575551143" nodeInfo="nn">
-                      <property name="head" nameId="3ior.8618885170173601779" value="lib" />
-                      <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="1817061752575551144" nodeInfo="nn">
-                        <property name="head" nameId="3ior.8618885170173601779" value="com.ibm.icu_4.4.2.v20110823.jar" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_File" typeId="3ior.9126048691955220717" id="5497188532610193084" nodeInfo="ng">
-              <node role="path" roleId="3ior.9126048691955220762" type="3ior.BuildSourceMacroRelativePath" typeId="3ior.7389400916848153117" id="5497188532610193086" nodeInfo="ng">
-                <link role="macro" roleId="3ior.7389400916848153130" targetNodeId="8628756186118380495" resolveInfo="mbeddr.github.core.home" />
-                <node role="compositePart" roleId="3ior.7321017245477039051" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="5497188532610193087" nodeInfo="nn">
-                  <property name="head" nameId="3ior.8618885170173601779" value="tools" />
-                  <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="5497188532610193088" nodeInfo="nn">
-                    <property name="head" nameId="3ior.8618885170173601779" value="Eclipse.Debugger" />
-                    <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="5497188532610193089" nodeInfo="nn">
-                      <property name="head" nameId="3ior.8618885170173601779" value="lib" />
-                      <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="5497188532610193090" nodeInfo="nn">
-                        <property name="head" nameId="3ior.8618885170173601779" value="guice-3.0.jar" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_File" typeId="3ior.9126048691955220717" id="5497188532610193093" nodeInfo="ng">
-              <node role="path" roleId="3ior.9126048691955220762" type="3ior.BuildSourceMacroRelativePath" typeId="3ior.7389400916848153117" id="5497188532610193095" nodeInfo="ng">
-                <link role="macro" roleId="3ior.7389400916848153130" targetNodeId="8628756186118380495" resolveInfo="mbeddr.github.core.home" />
-                <node role="compositePart" roleId="3ior.7321017245477039051" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="5497188532610193096" nodeInfo="nn">
-                  <property name="head" nameId="3ior.8618885170173601779" value="tools" />
-                  <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="5497188532610193097" nodeInfo="nn">
-                    <property name="head" nameId="3ior.8618885170173601779" value="Eclipse.Debugger" />
-                    <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="5497188532610193098" nodeInfo="nn">
-                      <property name="head" nameId="3ior.8618885170173601779" value="lib" />
-                      <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="5497188532610193099" nodeInfo="nn">
-                        <property name="head" nameId="3ior.8618885170173601779" value="guice-multibindings-3.0.jar" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_File" typeId="3ior.9126048691955220717" id="5497188532610193100" nodeInfo="ng">
-              <node role="path" roleId="3ior.9126048691955220762" type="3ior.BuildSourceMacroRelativePath" typeId="3ior.7389400916848153117" id="5497188532610193102" nodeInfo="ng">
-                <link role="macro" roleId="3ior.7389400916848153130" targetNodeId="8628756186118380495" resolveInfo="mbeddr.github.core.home" />
-                <node role="compositePart" roleId="3ior.7321017245477039051" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="5497188532610193103" nodeInfo="nn">
-                  <property name="head" nameId="3ior.8618885170173601779" value="tools" />
-                  <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="5497188532610193104" nodeInfo="nn">
-                    <property name="head" nameId="3ior.8618885170173601779" value="Eclipse.Debugger" />
-                    <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="5497188532610193105" nodeInfo="nn">
-                      <property name="head" nameId="3ior.8618885170173601779" value="lib" />
-                      <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="5497188532610193107" nodeInfo="nn">
-                        <property name="head" nameId="3ior.8618885170173601779" value="javax.inject.jar" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_File" typeId="3ior.9126048691955220717" id="1817061752575551046" nodeInfo="ng">
-              <node role="path" roleId="3ior.9126048691955220762" type="3ior.BuildSourceMacroRelativePath" typeId="3ior.7389400916848153117" id="1817061752575551047" nodeInfo="ng">
-                <link role="macro" roleId="3ior.7389400916848153130" targetNodeId="8628756186118380495" resolveInfo="mbeddr.github.core.home" />
-                <node role="compositePart" roleId="3ior.7321017245477039051" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="1817061752575551048" nodeInfo="nn">
-                  <property name="head" nameId="3ior.8618885170173601779" value="tools" />
-                  <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="1817061752575551049" nodeInfo="nn">
-                    <property name="head" nameId="3ior.8618885170173601779" value="Eclipse.Debugger" />
-                    <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="1817061752575551050" nodeInfo="nn">
-                      <property name="head" nameId="3ior.8618885170173601779" value="lib" />
-                      <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="1817061752575551051" nodeInfo="nn">
-                        <property name="head" nameId="3ior.8618885170173601779" value="org.eclipse.core.contenttype_3.4.200.v20120523-2004.jar" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_File" typeId="3ior.9126048691955220717" id="1817061752575551052" nodeInfo="ng">
-              <node role="path" roleId="3ior.9126048691955220762" type="3ior.BuildSourceMacroRelativePath" typeId="3ior.7389400916848153117" id="1817061752575551053" nodeInfo="ng">
-                <link role="macro" roleId="3ior.7389400916848153130" targetNodeId="8628756186118380495" resolveInfo="mbeddr.github.core.home" />
-                <node role="compositePart" roleId="3ior.7321017245477039051" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="1817061752575551054" nodeInfo="nn">
-                  <property name="head" nameId="3ior.8618885170173601779" value="tools" />
-                  <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="1817061752575551055" nodeInfo="nn">
-                    <property name="head" nameId="3ior.8618885170173601779" value="Eclipse.Debugger" />
-                    <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="1817061752575551056" nodeInfo="nn">
-                      <property name="head" nameId="3ior.8618885170173601779" value="lib" />
-                      <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="1817061752575551057" nodeInfo="nn">
-                        <property name="head" nameId="3ior.8618885170173601779" value="org.eclipse.core.filebuffers_3.5.200.v20120523-1310.jar" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_File" typeId="3ior.9126048691955220717" id="1817061752575551058" nodeInfo="ng">
-              <node role="path" roleId="3ior.9126048691955220762" type="3ior.BuildSourceMacroRelativePath" typeId="3ior.7389400916848153117" id="1817061752575551059" nodeInfo="ng">
-                <link role="macro" roleId="3ior.7389400916848153130" targetNodeId="8628756186118380495" resolveInfo="mbeddr.github.core.home" />
-                <node role="compositePart" roleId="3ior.7321017245477039051" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="1817061752575551060" nodeInfo="nn">
-                  <property name="head" nameId="3ior.8618885170173601779" value="tools" />
-                  <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="1817061752575551061" nodeInfo="nn">
-                    <property name="head" nameId="3ior.8618885170173601779" value="Eclipse.Debugger" />
-                    <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="1817061752575551062" nodeInfo="nn">
-                      <property name="head" nameId="3ior.8618885170173601779" value="lib" />
-                      <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="1817061752575551063" nodeInfo="nn">
-                        <property name="head" nameId="3ior.8618885170173601779" value="org.eclipse.core.filesystem_1.3.200.v20120522-2012.jar" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_File" typeId="3ior.9126048691955220717" id="1817061752575551064" nodeInfo="ng">
-              <node role="path" roleId="3ior.9126048691955220762" type="3ior.BuildSourceMacroRelativePath" typeId="3ior.7389400916848153117" id="1817061752575551065" nodeInfo="ng">
-                <link role="macro" roleId="3ior.7389400916848153130" targetNodeId="8628756186118380495" resolveInfo="mbeddr.github.core.home" />
-                <node role="compositePart" roleId="3ior.7321017245477039051" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="1817061752575551066" nodeInfo="nn">
-                  <property name="head" nameId="3ior.8618885170173601779" value="tools" />
-                  <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="1817061752575551067" nodeInfo="nn">
-                    <property name="head" nameId="3ior.8618885170173601779" value="Eclipse.Debugger" />
-                    <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="1817061752575551068" nodeInfo="nn">
-                      <property name="head" nameId="3ior.8618885170173601779" value="lib" />
-                      <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="1817061752575551069" nodeInfo="nn">
-                        <property name="head" nameId="3ior.8618885170173601779" value="org.eclipse.core.jobs_3.5.300.v20120622-204750.jar" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_File" typeId="3ior.9126048691955220717" id="1817061752575551030" nodeInfo="ng">
-              <node role="path" roleId="3ior.9126048691955220762" type="3ior.BuildSourceMacroRelativePath" typeId="3ior.7389400916848153117" id="1817061752575551032" nodeInfo="ng">
-                <link role="macro" roleId="3ior.7389400916848153130" targetNodeId="8628756186118380495" resolveInfo="mbeddr.github.core.home" />
-                <node role="compositePart" roleId="3ior.7321017245477039051" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="1817061752575551033" nodeInfo="nn">
-                  <property name="head" nameId="3ior.8618885170173601779" value="tools" />
-                  <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="1817061752575551034" nodeInfo="nn">
-                    <property name="head" nameId="3ior.8618885170173601779" value="Eclipse.Debugger" />
-                    <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="1817061752575551035" nodeInfo="nn">
-                      <property name="head" nameId="3ior.8618885170173601779" value="lib" />
-                      <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="1817061752575551036" nodeInfo="nn">
-                        <property name="head" nameId="3ior.8618885170173601779" value="org.eclipse.core.resources_3.8.1.v20120802-154922.jar" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_File" typeId="3ior.9126048691955220717" id="1817061752575551040" nodeInfo="ng">
-              <node role="path" roleId="3ior.9126048691955220762" type="3ior.BuildSourceMacroRelativePath" typeId="3ior.7389400916848153117" id="1817061752575551041" nodeInfo="ng">
-                <link role="macro" roleId="3ior.7389400916848153130" targetNodeId="8628756186118380495" resolveInfo="mbeddr.github.core.home" />
-                <node role="compositePart" roleId="3ior.7321017245477039051" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="1817061752575551042" nodeInfo="nn">
-                  <property name="head" nameId="3ior.8618885170173601779" value="tools" />
-                  <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="1817061752575551043" nodeInfo="nn">
-                    <property name="head" nameId="3ior.8618885170173601779" value="Eclipse.Debugger" />
-                    <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="1817061752575551044" nodeInfo="nn">
-                      <property name="head" nameId="3ior.8618885170173601779" value="lib" />
-                      <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="1817061752575551045" nodeInfo="nn">
-                        <property name="head" nameId="3ior.8618885170173601779" value="org.eclipse.core.runtime_3.8.0.v20120521-2346.jar" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_File" typeId="3ior.9126048691955220717" id="1817061752575551093" nodeInfo="ng">
-              <node role="path" roleId="3ior.9126048691955220762" type="3ior.BuildSourceMacroRelativePath" typeId="3ior.7389400916848153117" id="1817061752575551094" nodeInfo="ng">
-                <link role="macro" roleId="3ior.7389400916848153130" targetNodeId="8628756186118380495" resolveInfo="mbeddr.github.core.home" />
-                <node role="compositePart" roleId="3ior.7321017245477039051" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="1817061752575551095" nodeInfo="nn">
-                  <property name="head" nameId="3ior.8618885170173601779" value="tools" />
-                  <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="1817061752575551096" nodeInfo="nn">
-                    <property name="head" nameId="3ior.8618885170173601779" value="Eclipse.Debugger" />
-                    <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="1817061752575551097" nodeInfo="nn">
-                      <property name="head" nameId="3ior.8618885170173601779" value="lib" />
-                      <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="1817061752575551098" nodeInfo="nn">
-                        <property name="head" nameId="3ior.8618885170173601779" value="org.eclipse.core.variables_3.2.600.v20120521-2012.jar" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_File" typeId="3ior.9126048691955220717" id="1817061752575551072" nodeInfo="ng">
-              <node role="path" roleId="3ior.9126048691955220762" type="3ior.BuildSourceMacroRelativePath" typeId="3ior.7389400916848153117" id="1817061752575551073" nodeInfo="ng">
-                <link role="macro" roleId="3ior.7389400916848153130" targetNodeId="8628756186118380495" resolveInfo="mbeddr.github.core.home" />
-                <node role="compositePart" roleId="3ior.7321017245477039051" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="1817061752575551074" nodeInfo="nn">
-                  <property name="head" nameId="3ior.8618885170173601779" value="tools" />
-                  <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="1817061752575551075" nodeInfo="nn">
-                    <property name="head" nameId="3ior.8618885170173601779" value="Eclipse.Debugger" />
-                    <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="1817061752575551076" nodeInfo="nn">
-                      <property name="head" nameId="3ior.8618885170173601779" value="lib" />
-                      <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="1817061752575551078" nodeInfo="nn">
-                        <property name="head" nameId="3ior.8618885170173601779" value="org.eclipse.debug.core_3.7.100.v20120521-2012.jar" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_File" typeId="3ior.9126048691955220717" id="1817061752575551086" nodeInfo="ng">
-              <node role="path" roleId="3ior.9126048691955220762" type="3ior.BuildSourceMacroRelativePath" typeId="3ior.7389400916848153117" id="1817061752575551087" nodeInfo="ng">
-                <link role="macro" roleId="3ior.7389400916848153130" targetNodeId="8628756186118380495" resolveInfo="mbeddr.github.core.home" />
-                <node role="compositePart" roleId="3ior.7321017245477039051" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="1817061752575551088" nodeInfo="nn">
-                  <property name="head" nameId="3ior.8618885170173601779" value="tools" />
-                  <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="1817061752575551089" nodeInfo="nn">
-                    <property name="head" nameId="3ior.8618885170173601779" value="Eclipse.Debugger" />
-                    <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="1817061752575551090" nodeInfo="nn">
-                      <property name="head" nameId="3ior.8618885170173601779" value="lib" />
-                      <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="1817061752575551091" nodeInfo="nn">
-                        <property name="head" nameId="3ior.8618885170173601779" value="org.eclipse.equinox.app_1.3.100.v20120522-1841.jar" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_File" typeId="3ior.9126048691955220717" id="1817061752575551099" nodeInfo="ng">
-              <node role="path" roleId="3ior.9126048691955220762" type="3ior.BuildSourceMacroRelativePath" typeId="3ior.7389400916848153117" id="1817061752575551100" nodeInfo="ng">
-                <link role="macro" roleId="3ior.7389400916848153130" targetNodeId="8628756186118380495" resolveInfo="mbeddr.github.core.home" />
-                <node role="compositePart" roleId="3ior.7321017245477039051" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="1817061752575551101" nodeInfo="nn">
-                  <property name="head" nameId="3ior.8618885170173601779" value="tools" />
-                  <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="1817061752575551102" nodeInfo="nn">
-                    <property name="head" nameId="3ior.8618885170173601779" value="Eclipse.Debugger" />
-                    <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="1817061752575551103" nodeInfo="nn">
-                      <property name="head" nameId="3ior.8618885170173601779" value="lib" />
-                      <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="1817061752575551104" nodeInfo="nn">
-                        <property name="head" nameId="3ior.8618885170173601779" value="org.eclipse.equinox.common_3.6.100.v20120522-1841.jar" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_File" typeId="3ior.9126048691955220717" id="1817061752575551132" nodeInfo="ng">
-              <node role="path" roleId="3ior.9126048691955220762" type="3ior.BuildSourceMacroRelativePath" typeId="3ior.7389400916848153117" id="1817061752575551133" nodeInfo="ng">
-                <link role="macro" roleId="3ior.7389400916848153130" targetNodeId="8628756186118380495" resolveInfo="mbeddr.github.core.home" />
-                <node role="compositePart" roleId="3ior.7321017245477039051" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="1817061752575551134" nodeInfo="nn">
-                  <property name="head" nameId="3ior.8618885170173601779" value="tools" />
-                  <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="1817061752575551135" nodeInfo="nn">
-                    <property name="head" nameId="3ior.8618885170173601779" value="Eclipse.Debugger" />
-                    <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="1817061752575551136" nodeInfo="nn">
-                      <property name="head" nameId="3ior.8618885170173601779" value="lib" />
-                      <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="1817061752575551137" nodeInfo="nn">
-                        <property name="head" nameId="3ior.8618885170173601779" value="org.eclipse.equinox.preferences_3.5.0.v20120522-1841.jar" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_File" typeId="3ior.9126048691955220717" id="1817061752575551125" nodeInfo="ng">
-              <node role="path" roleId="3ior.9126048691955220762" type="3ior.BuildSourceMacroRelativePath" typeId="3ior.7389400916848153117" id="1817061752575551126" nodeInfo="ng">
-                <link role="macro" roleId="3ior.7389400916848153130" targetNodeId="8628756186118380495" resolveInfo="mbeddr.github.core.home" />
-                <node role="compositePart" roleId="3ior.7321017245477039051" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="1817061752575551127" nodeInfo="nn">
-                  <property name="head" nameId="3ior.8618885170173601779" value="tools" />
-                  <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="1817061752575551128" nodeInfo="nn">
-                    <property name="head" nameId="3ior.8618885170173601779" value="Eclipse.Debugger" />
-                    <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="1817061752575551129" nodeInfo="nn">
-                      <property name="head" nameId="3ior.8618885170173601779" value="lib" />
-                      <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="1817061752575551130" nodeInfo="nn">
-                        <property name="head" nameId="3ior.8618885170173601779" value="org.eclipse.equinox.registry_3.5.200.v20120522-1841.jar" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_File" typeId="3ior.9126048691955220717" id="1817061752575551118" nodeInfo="ng">
-              <node role="path" roleId="3ior.9126048691955220762" type="3ior.BuildSourceMacroRelativePath" typeId="3ior.7389400916848153117" id="1817061752575551119" nodeInfo="ng">
-                <link role="macro" roleId="3ior.7389400916848153130" targetNodeId="8628756186118380495" resolveInfo="mbeddr.github.core.home" />
-                <node role="compositePart" roleId="3ior.7321017245477039051" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="1817061752575551120" nodeInfo="nn">
-                  <property name="head" nameId="3ior.8618885170173601779" value="tools" />
-                  <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="1817061752575551121" nodeInfo="nn">
-                    <property name="head" nameId="3ior.8618885170173601779" value="Eclipse.Debugger" />
-                    <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="1817061752575551122" nodeInfo="nn">
-                      <property name="head" nameId="3ior.8618885170173601779" value="lib" />
-                      <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="1817061752575551123" nodeInfo="nn">
-                        <property name="head" nameId="3ior.8618885170173601779" value="org.eclipse.ltk.core.refactoring_3.6.0.v20120523-1543.jar" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_File" typeId="3ior.9126048691955220717" id="5497188532610193108" nodeInfo="ng">
-              <node role="path" roleId="3ior.9126048691955220762" type="3ior.BuildSourceMacroRelativePath" typeId="3ior.7389400916848153117" id="5497188532610193110" nodeInfo="ng">
-                <link role="macro" roleId="3ior.7389400916848153130" targetNodeId="8628756186118380495" resolveInfo="mbeddr.github.core.home" />
-                <node role="compositePart" roleId="3ior.7321017245477039051" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="5497188532610193111" nodeInfo="nn">
-                  <property name="head" nameId="3ior.8618885170173601779" value="tools" />
-                  <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="5497188532610193112" nodeInfo="nn">
-                    <property name="head" nameId="3ior.8618885170173601779" value="Eclipse.Debugger" />
-                    <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="5497188532610193113" nodeInfo="nn">
-                      <property name="head" nameId="3ior.8618885170173601779" value="lib" />
-                      <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="5497188532610193143" nodeInfo="nn">
-                        <property name="head" nameId="3ior.8618885170173601779" value="org.eclipse.osgi_3.8.1.v20120830-144521.jar" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_File" typeId="3ior.9126048691955220717" id="5497188532610193118" nodeInfo="ng">
-              <node role="path" roleId="3ior.9126048691955220762" type="3ior.BuildSourceMacroRelativePath" typeId="3ior.7389400916848153117" id="5497188532610193119" nodeInfo="ng">
-                <link role="macro" roleId="3ior.7389400916848153130" targetNodeId="8628756186118380495" resolveInfo="mbeddr.github.core.home" />
-                <node role="compositePart" roleId="3ior.7321017245477039051" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="5497188532610193120" nodeInfo="nn">
-                  <property name="head" nameId="3ior.8618885170173601779" value="tools" />
-                  <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="5497188532610193121" nodeInfo="nn">
-                    <property name="head" nameId="3ior.8618885170173601779" value="Eclipse.Debugger" />
-                    <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="5497188532610193122" nodeInfo="nn">
-                      <property name="head" nameId="3ior.8618885170173601779" value="lib" />
-                      <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="5497188532610193144" nodeInfo="nn">
-                        <property name="head" nameId="3ior.8618885170173601779" value="org.eclipse.text_3.5.200.v20120523-1310.jar" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_File" typeId="3ior.9126048691955220717" id="5497188532610193128" nodeInfo="ng">
-              <node role="path" roleId="3ior.9126048691955220762" type="3ior.BuildSourceMacroRelativePath" typeId="3ior.7389400916848153117" id="5497188532610193129" nodeInfo="ng">
-                <link role="macro" roleId="3ior.7389400916848153130" targetNodeId="8628756186118380495" resolveInfo="mbeddr.github.core.home" />
-                <node role="compositePart" roleId="3ior.7321017245477039051" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="5497188532610193130" nodeInfo="nn">
-                  <property name="head" nameId="3ior.8618885170173601779" value="tools" />
-                  <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="5497188532610193131" nodeInfo="nn">
-                    <property name="head" nameId="3ior.8618885170173601779" value="Eclipse.Debugger" />
-                    <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="5497188532610193132" nodeInfo="nn">
-                      <property name="head" nameId="3ior.8618885170173601779" value="lib" />
-                      <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="5497188532610193146" nodeInfo="nn">
-                        <property name="head" nameId="3ior.8618885170173601779" value="org.hamcrest.core_1.1.0.v20090501071000.jar" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_File" typeId="3ior.9126048691955220717" id="5497188532610193123" nodeInfo="ng">
-              <node role="path" roleId="3ior.9126048691955220762" type="3ior.BuildSourceMacroRelativePath" typeId="3ior.7389400916848153117" id="5497188532610193124" nodeInfo="ng">
-                <link role="macro" roleId="3ior.7389400916848153130" targetNodeId="8628756186118380495" resolveInfo="mbeddr.github.core.home" />
-                <node role="compositePart" roleId="3ior.7321017245477039051" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="5497188532610193125" nodeInfo="nn">
-                  <property name="head" nameId="3ior.8618885170173601779" value="tools" />
-                  <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="5497188532610193126" nodeInfo="nn">
-                    <property name="head" nameId="3ior.8618885170173601779" value="Eclipse.Debugger" />
-                    <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="5497188532610193127" nodeInfo="nn">
-                      <property name="head" nameId="3ior.8618885170173601779" value="lib" />
-                      <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="5497188532610193145" nodeInfo="nn">
-                        <property name="head" nameId="3ior.8618885170173601779" value="runtime_registry_compatibility.jar" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_Folder" typeId="3ior.7389400916848036984" id="2067439475997470043" nodeInfo="ng">
-              <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_Files" typeId="3ior.2750015747481074431" id="2067439475997469532" nodeInfo="ng">
-                <node role="path" roleId="3ior.2750015747481074432" type="3ior.BuildSourceMacroRelativePath" typeId="3ior.7389400916848153117" id="2067439475997469535" nodeInfo="ng">
-                  <link role="macro" roleId="3ior.7389400916848153130" targetNodeId="8628756186118765768" resolveInfo="mbeddr.core" />
-                  <node role="compositePart" roleId="3ior.7321017245477039051" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="2067439475997469536" nodeInfo="nn">
-                    <property name="head" nameId="3ior.8618885170173601779" value="languages" />
-                    <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="2067439475997469537" nodeInfo="nn">
-                      <property name="head" nameId="3ior.8618885170173601779" value="com.mbeddr.core.spawner" />
-                      <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="2067439475997469538" nodeInfo="nn">
-                        <property name="head" nameId="3ior.8618885170173601779" value="data" />
-                        <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="2067439475997469539" nodeInfo="nn">
-                          <property name="head" nameId="3ior.8618885170173601779" value="spawner" />
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-              <node role="containerName" roleId="3ior.4380385936562148502" type="3ior.BuildStringNotEmpty" typeId="3ior.841011766566059607" id="2067439475997470044" nodeInfo="ng">
-                <node role="parts" roleId="3ior.4903714810883783243" type="3ior.BuildTextStringPart" typeId="3ior.4903714810883702019" id="2067439475997470045" nodeInfo="ng">
-                  <property name="text" nameId="3ior.4903714810883755350" value="spawner" />
-                </node>
-              </node>
-            </node>
-          </node>
-          <node role="containerName" roleId="3ior.4380385936562148502" type="3ior.BuildStringNotEmpty" typeId="3ior.841011766566059607" id="5621334030472304103" nodeInfo="ng">
-            <node role="parts" roleId="3ior.4903714810883783243" type="3ior.BuildTextStringPart" typeId="3ior.4903714810883702019" id="5621334030472304104" nodeInfo="ng">
-              <property name="text" nameId="3ior.4903714810883755350" value="mbeddr.spawner" />
+          <node role="containerName" roleId="3ior.4380385936562148502" type="3ior.BuildStringNotEmpty" typeId="3ior.841011766566059607" id="2680783833515516416" nodeInfo="ng">
+            <node role="parts" roleId="3ior.4903714810883783243" type="3ior.BuildTextStringPart" typeId="3ior.4903714810883702019" id="2680783833515516839" nodeInfo="ng">
+              <property name="text" nameId="3ior.4903714810883755350" value="lib" />
             </node>
           </node>
         </node>
@@ -606,8 +552,41 @@
           <property name="text" nameId="3ior.4903714810883755350" value="spawner" />
         </node>
       </node>
-      <node role="content" roleId="kdzh.6592112598314499050" type="kdzh.BuildMps_IdeaPluginModule" typeId="kdzh.6592112598314499036" id="7360615763635453101" nodeInfo="ng">
-        <link role="target" roleId="kdzh.6592112598314499037" targetNodeId="6247780594427434836" resolveInfo="Eclipse.Debugger" />
+      <node role="content" roleId="kdzh.6592112598314499050" type="kdzh.BuildMps_IdeaPluginGroup" typeId="kdzh.6592112598314586625" id="2680783833515494896" nodeInfo="ng">
+        <link role="group" roleId="kdzh.6592112598314586626" targetNodeId="2067439475997557855" resolveInfo="com.mbeddr.spawner" />
+        <node role="customPackaging" roleId="kdzh.4034578608468929327" type="kdzh.BuildMps_IdeaPluginGroupCustomModule" typeId="kdzh.4034578608468929319" id="2680783833516074646" nodeInfo="ng">
+          <link role="target" roleId="kdzh.4034578608468929320" targetNodeId="8628756186118765626" resolveInfo="com.mbeddr.spawner" />
+        </node>
+        <node role="customPackaging" roleId="kdzh.4034578608468929327" type="kdzh.BuildMps_IdeaPluginGroupCustomModule" typeId="kdzh.4034578608468929319" id="8658633319051815555" nodeInfo="ng">
+          <link role="target" roleId="kdzh.4034578608468929320" targetNodeId="6247780594427434836" resolveInfo="Eclipse.Debugger" />
+        </node>
+      </node>
+      <node role="pluginXml" roleId="kdzh.1238980147629899306" type="3ior.BuildSourceMacroRelativePath" typeId="3ior.7389400916848153117" id="8658633319051808986" nodeInfo="ng">
+        <link role="macro" roleId="3ior.7389400916848153130" targetNodeId="8628756186118765768" resolveInfo="mbeddr.core" />
+        <node role="compositePart" roleId="3ior.7321017245477039051" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="8658633319051809268" nodeInfo="nn">
+          <property name="head" nameId="3ior.8618885170173601779" value="languages" />
+          <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="8658633319051809830" nodeInfo="nn">
+            <property name="head" nameId="3ior.8618885170173601779" value="com.mbeddr.core.spawner" />
+            <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="8658633319051810392" nodeInfo="nn">
+              <property name="head" nameId="3ior.8618885170173601779" value="source_gen" />
+              <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="8658633319051810954" nodeInfo="nn">
+                <property name="head" nameId="3ior.8618885170173601779" value="com" />
+                <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="8658633319051811516" nodeInfo="nn">
+                  <property name="head" nameId="3ior.8618885170173601779" value="mbeddr" />
+                  <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="8658633319051812078" nodeInfo="nn">
+                    <property name="head" nameId="3ior.8618885170173601779" value="spawner" />
+                    <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="8658633319051812640" nodeInfo="nn">
+                      <property name="head" nameId="3ior.8618885170173601779" value="loader" />
+                      <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="8658633319051813342" nodeInfo="nn">
+                        <property name="head" nameId="3ior.8618885170173601779" value="plugin.xml" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
     </node>
     <node role="parts" roleId="3ior.7389400916848080626" type="kdzh.BuildMps_Group" typeId="kdzh.1500819558095907805" id="2067439475997557855" nodeInfo="ng">
