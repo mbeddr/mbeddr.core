@@ -9,7 +9,7 @@
   <property name="mpsutil" location="${mbeddr.github.core.home}/code/languages/com.mbeddr.mpsutil" />
   <property name="mbeddr.core" location="${mbeddr.github.core.home}/code/languages/com.mbeddr.core" />
   <property name="multiline.artifacts" location="${lisson.home}/mps-multiline/build/artifacts/mps-multiline" />
-  <property name="richtext.artifacts" location="${lisson.home}/mps-richtext/build/tmp/mps-richtext/" />
+  <property name="richtext.artifacts" location="${lisson.home}/mps-richtext/build/artifacts/mps-richtext/" />
   <property name="artifacts.mps" location="${mps.home}" />
   <property name="artifacts.com.mbeddr.mpsutil.build" location="../com.mbeddr.mpsutil/build/artifacts/com.mbeddr.mpsutil.build" />
   <property name="artifacts.com.mbeddr.core.build" location="${build.dir}/artifacts/com.mbeddr.core.build" />

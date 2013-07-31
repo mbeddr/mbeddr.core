@@ -606,8 +606,42 @@
           <property name="text" nameId="3ior.4903714810883755350" value="spawner" />
         </node>
       </node>
-      <node role="content" roleId="kdzh.6592112598314499050" type="kdzh.BuildMps_IdeaPluginModule" typeId="kdzh.6592112598314499036" id="7360615763635453101" nodeInfo="ng">
+      <node role="content" roleId="kdzh.6592112598314499050" type="kdzh.BuildMps_IdeaPluginGroup" typeId="kdzh.6592112598314586625" id="2680783833515494896" nodeInfo="ng">
+        <link role="group" roleId="kdzh.6592112598314586626" targetNodeId="2067439475997557855" resolveInfo="com.mbeddr.spawner" />
+        <node role="customPackaging" roleId="kdzh.4034578608468929327" type="kdzh.BuildMps_IdeaPluginGroupCustomModule" typeId="kdzh.4034578608468929319" id="2475960130271493910" nodeInfo="ng">
+          <link role="target" roleId="kdzh.4034578608468929320" targetNodeId="8628756186118765626" resolveInfo="com.mbeddr.spawner" />
+        </node>
+      </node>
+      <node role="content" roleId="kdzh.6592112598314499050" type="kdzh.BuildMps_IdeaPluginModule" typeId="kdzh.6592112598314499036" id="2475960130271391204" nodeInfo="ng">
+        <property name="customPackaging" nameId="kdzh.4034578608468849375" value="true" />
         <link role="target" roleId="kdzh.6592112598314499037" targetNodeId="6247780594427434836" resolveInfo="Eclipse.Debugger" />
+      </node>
+      <node role="pluginXml" roleId="kdzh.1238980147629899306" type="3ior.BuildSourceMacroRelativePath" typeId="3ior.7389400916848153117" id="8658633319051808986" nodeInfo="ng">
+        <link role="macro" roleId="3ior.7389400916848153130" targetNodeId="8628756186118765768" resolveInfo="mbeddr.core" />
+        <node role="compositePart" roleId="3ior.7321017245477039051" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="8658633319051809268" nodeInfo="nn">
+          <property name="head" nameId="3ior.8618885170173601779" value="languages" />
+          <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="8658633319051809830" nodeInfo="nn">
+            <property name="head" nameId="3ior.8618885170173601779" value="com.mbeddr.core.spawner" />
+            <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="8658633319051810392" nodeInfo="nn">
+              <property name="head" nameId="3ior.8618885170173601779" value="source_gen" />
+              <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="8658633319051810954" nodeInfo="nn">
+                <property name="head" nameId="3ior.8618885170173601779" value="com" />
+                <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="8658633319051811516" nodeInfo="nn">
+                  <property name="head" nameId="3ior.8618885170173601779" value="mbeddr" />
+                  <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="8658633319051812078" nodeInfo="nn">
+                    <property name="head" nameId="3ior.8618885170173601779" value="spawner" />
+                    <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="8658633319051812640" nodeInfo="nn">
+                      <property name="head" nameId="3ior.8618885170173601779" value="loader" />
+                      <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="8658633319051813342" nodeInfo="nn">
+                        <property name="head" nameId="3ior.8618885170173601779" value="plugin.xml" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
     </node>
     <node role="parts" roleId="3ior.7389400916848080626" type="kdzh.BuildMps_Group" typeId="kdzh.1500819558095907805" id="2067439475997557855" nodeInfo="ng">
