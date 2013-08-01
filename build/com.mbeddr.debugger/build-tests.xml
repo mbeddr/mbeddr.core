@@ -486,6 +486,7 @@
       <sysproperty key="plugin.path" value="${mps.plugins.path.string}" />
       <sysproperty key="mps.libraries" value="${mps.libraries.path.string}" />
       <sysproperty key="mps.test.modules" value="${mps.tests.path.string}" />
+      <sysproperty key="mps.macro.mbeddr.github.core.home" value="${mbeddr.github.core.home}" />
       
       <test name="jetbrains.mps.testbench.junit.suites.ModuleTestSuite" outfile="TEST-jetbrains.mps.testbench.junit.suites.ModuleTestSuite-com.mbeddr.debugger.tests" />
       <formatter type="xml" />
