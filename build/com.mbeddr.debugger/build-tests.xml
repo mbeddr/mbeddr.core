@@ -7,6 +7,7 @@
   <property name="mbeddr.github.core.home" location="${basedir}/../../" />
   <property name="mpsutil" location="${mbeddr.github.core.home}/code/languages/com.mbeddr.mpsutil" />
   <property name="mbeddr.core" location="${mbeddr.github.core.home}/code/languages/com.mbeddr.debugger" />
+  <property name="mps.macro.mbeddr.github.core.home" location="${mbeddr.github.core.home}" />
   <property name="artifacts.mps" location="${mps.home}" />
   <property name="artifacts.com.mbeddr.spawner.build" location="../com.mbeddr.spawner/build/artifacts/com.mbeddr.spawner.build" />
   <property name="artifacts.com.mbeddr.debugger.build" location="${build.dir}/artifacts/com.mbeddr.debugger.build" />
@@ -125,6 +126,8 @@
   <target name="fetchDependencies">
     <mkdir dir="${build.tmp}/deps/com.mbeddr.debugger.build/com.mbeddr.core.debugger.zip" />
     <unzip src="${artifacts.com.mbeddr.debugger.build}/com.mbeddr.core.debugger.zip" dest="${build.tmp}/deps/com.mbeddr.debugger.build/com.mbeddr.core.debugger.zip" />
+    <mkdir dir="${build.tmp}/deps/com.mbeddr.debugger.tests.build/com.mbeddr.core.debugger.tests.zip" />
+    <unzip src="${build.layout}/com.mbeddr.core.debugger.tests.zip" dest="${build.tmp}/deps/com.mbeddr.debugger.tests.build/com.mbeddr.core.debugger.tests.zip" />
   </target>
   
   <target name="build" depends="assemble, check" />
@@ -140,7 +143,7 @@
   
   <target name="classes" depends="compileJava, processResources" />
   
-  <target name="test" depends="classes" />
+  <target name="test" depends="classes, module-tests" />
   
   <target name="check" depends="test" />
   
@@ -237,12 +240,15 @@
     </ant>
   </target>
   
+  <target name="module-tests" depends="assemble, test.com.mbeddr.debugger.tests" />
+  
   <target name="java.compile.test.debugger.cdt" depends="java.compile.test.debugger.core, fetchDependencies">
     <mkdir dir="${build.tmp}/java/out/test.debugger.cdt" />
     <javac destdir="${build.tmp}/java/out/test.debugger.cdt" fork="true" includeantruntime="false">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${mbeddr.core}/tests/test.debugger.cdt/source_gen" />
+        <pathelement path="${mbeddr.core}/tests/test.debugger.cdt/test_gen/" />
       </src>
       <classpath>
         <fileset file="${artifacts.mps}/lib/mps-openapi.jar" />
@@ -317,6 +323,7 @@
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${mbeddr.core}/tests/test.debugger.core/source_gen" />
+        <pathelement path="${mbeddr.core}/tests/test.debugger.core/test_gen/" />
       </src>
       <classpath>
         <fileset file="${artifacts.mps}/lib/mps-openapi.jar" />
@@ -384,8 +391,130 @@
     </javac>
   </target>
   
+  <target name="test.com.mbeddr.debugger.tests" depends="assemble">
+    <path id="mps.libraries.path">
+      <pathelement location="${artifacts.com.mbeddr.spawner.build}/mbeddr.spawner/languages/Eclipse.Debugger.jar" />
+      <pathelement location="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.blTypes.jar" />
+      <pathelement location="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.classifiers.jar" />
+      <pathelement location="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.closures.jar" />
+      <pathelement location="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.collections.jar" />
+      <pathelement location="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.extensionMethods.jar" />
+      <pathelement location="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.jar" />
+      <pathelement location="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.javadoc.jar" />
+      <pathelement location="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.jdk7.jar" />
+      <pathelement location="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.logging.jar" />
+      <pathelement location="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.scopes.jar" />
+      <pathelement location="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.tuples.jar" />
+      <pathelement location="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.unitTest.libs/jetbrains.mps.baseLanguage.unitTest.libs.jar" />
+      <pathelement location="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguageInternal.jar" />
+      <pathelement location="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.access.jar" />
+      <pathelement location="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.actions.jar" />
+      <pathelement location="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.behavior.jar" />
+      <pathelement location="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.checkedName.jar" />
+      <pathelement location="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.constraints.jar" />
+      <pathelement location="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
+      <pathelement location="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.editor.jar" />
+      <pathelement location="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.findUsages.jar" />
+      <pathelement location="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.generator.generationContext.jar" />
+      <pathelement location="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.generator.generationParameters.jar" />
+      <pathelement location="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.generator.jar" />
+      <pathelement location="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.intentions.jar" />
+      <pathelement location="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.pattern.jar" />
+      <pathelement location="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.plugin.jar" />
+      <pathelement location="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.project.jar" />
+      <pathelement location="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.quotation.jar" />
+      <pathelement location="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.refactoring.jar" />
+      <pathelement location="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.resources.jar" />
+      <pathelement location="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.scopes.jar" />
+      <pathelement location="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.scopes.runtime.jar" />
+      <pathelement location="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.script.jar" />
+      <pathelement location="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.sharedConcepts.jar" />
+      <pathelement location="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.smodel.jar" />
+      <pathelement location="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.structure.jar" />
+      <pathelement location="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.stubs.jar" />
+      <pathelement location="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.textGen.jar" />
+      <pathelement location="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
+      <pathelement location="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.typesystem.jar" />
+      <pathelement location="${artifacts.mps}/languages/make/jetbrains.mps.make.reduced.jar" />
+      <pathelement location="${artifacts.mps}/languages/make/jetbrains.mps.tool.gentest.jar" />
+      <pathelement location="${artifacts.mps}/languages/workbench/jetbrains.mps.uiLanguage.jar" />
+      <pathelement location="${artifacts.mps}/languages/xml/jetbrains.mps.core.xml.jar" />
+      <pathelement location="${artifacts.mps}/lib/mps-closures.jar" />
+      <pathelement location="${artifacts.mps}/lib/mps-collections.jar" />
+      <pathelement location="${artifacts.mps}/lib/mps-core.jar" />
+      <pathelement location="${artifacts.mps}/lib/mps-editor.jar" />
+      <pathelement location="${artifacts.mps}/lib/mps-openapi.jar" />
+      <pathelement location="${artifacts.mps}/lib/mps-platform.jar" />
+      <pathelement location="${artifacts.mps}/lib/mps-test.jar" />
+      <pathelement location="${artifacts.mps}/lib/mps-tool.jar" />
+      <pathelement location="${artifacts.mps}/lib/mps-tuples.jar" />
+      <pathelement location="${artifacts.mps}/lib/mps-workbench.jar" />
+      <pathelement location="${artifacts.mps}/plugins/mps-debugger-api/lib/debugger-api.jar" />
+      <pathelement location="${artifacts.mps}/plugins/mps-execution-api/lib/execution-api.jar" />
+      <pathelement location="${artifacts.mps}/plugins/mps-testing/languages/baseLanguage/jetbrains.mps.baseLanguage.unitTest.jar" />
+      <pathelement location="${artifacts.mps}/plugins/mps-testing/languages/languageDesign/jetbrains.mps.lang.test.jar" />
+      <pathelement location="${artifacts.mps}/plugins/mps-testing/languages/languageDesign/jetbrains.mps.lang.test.runtime.jar" />
+      <pathelement location="${build.tmp}/deps/com.mbeddr.debugger.build/com.mbeddr.core.debugger.zip/mbeddr.debugger/languages/com.mbeddr.core.debugger/com.mbeddr.core.debug.jar" />
+    </path>
+    <pathconvert pathsep="${path.separator}" property="mps.libraries.path.string" refid="mps.libraries.path" />
+    <path id="mps.plugins.path">
+      <pathelement location="${artifacts.com.mbeddr.spawner.build}/mbeddr.spawner" />
+      <pathelement location="${artifacts.mps}/plugins/mps-core/META-INF/plugin.xml/../.." />
+      <pathelement location="${artifacts.mps}/plugins/mps-debugger-api" />
+      <pathelement location="${artifacts.mps}/plugins/mps-execution-api" />
+      <pathelement location="${artifacts.mps}/plugins/mps-testing" />
+      <pathelement location="${build.tmp}/deps/com.mbeddr.debugger.build/com.mbeddr.core.debugger.zip/mbeddr.debugger" />
+    </path>
+    <pathconvert pathsep="${path.separator}" property="mps.plugins.path.string" refid="mps.plugins.path" />
+    <path id="mps.tests.path">
+      <pathelement location="${build.tmp}/deps/com.mbeddr.debugger.tests.build/com.mbeddr.core.debugger.tests.zip/debugger.tests/languages/com.mbeddr.core.debugger.tests/test.debugger.cdt.jar" />
+      <pathelement location="${build.tmp}/deps/com.mbeddr.debugger.tests.build/com.mbeddr.core.debugger.tests.zip/debugger.tests/languages/com.mbeddr.core.debugger.tests/test.debugger.core.jar" />
+    </path>
+    <pathconvert pathsep="${path.separator}" property="mps.tests.path.string" refid="mps.tests.path" />
+    <junit showoutput="true" fork="true">
+      <jvmarg value="-ea" />
+      <jvmarg value="-Xss1024k" />
+      <jvmarg value="-Xmx1024m" />
+      <jvmarg value="-XX:MaxPermSize=256m" />
+      <jvmarg value="-XX:+HeapDumpOnOutOfMemoryError" />
+      
+      <classpath>
+        <fileset dir="${artifacts.mps}/lib">
+          <include name="**/*.jar" />
+        </fileset>
+        <fileset dir="${artifacts.com.mbeddr.spawner.build}/mbeddr.spawner">
+          <include name="**/lib/*.jar" />
+        </fileset>
+        <fileset dir="${artifacts.mps}/plugins/mps-core/META-INF/plugin.xml/../..">
+          <include name="**/lib/*.jar" />
+        </fileset>
+        <fileset dir="${artifacts.mps}/plugins/mps-debugger-api">
+          <include name="**/lib/*.jar" />
+        </fileset>
+        <fileset dir="${artifacts.mps}/plugins/mps-execution-api">
+          <include name="**/lib/*.jar" />
+        </fileset>
+        <fileset dir="${artifacts.mps}/plugins/mps-testing">
+          <include name="**/lib/*.jar" />
+        </fileset>
+        <fileset dir="${build.tmp}/deps/com.mbeddr.debugger.build/com.mbeddr.core.debugger.zip/mbeddr.debugger">
+          <include name="**/lib/*.jar" />
+        </fileset>
+      </classpath>
+      
+      <sysproperty key="plugin.path" value="${mps.plugins.path.string}" />
+      <sysproperty key="mps.libraries" value="${mps.libraries.path.string}" />
+      <sysproperty key="mps.test.modules" value="${mps.tests.path.string}" />
+      
+      <test name="jetbrains.mps.testbench.junit.suites.ModuleTestSuite" outfile="TEST-jetbrains.mps.testbench.junit.suites.ModuleTestSuite-com.mbeddr.debugger.tests" />
+      <formatter type="xml" />
+    </junit>
+  </target>
+  
   <target name="cleanSources">
     <delete dir="${mbeddr.core}/tests/test.debugger.cdt/source_gen" />
     <delete dir="${mbeddr.core}/tests/test.debugger.core/source_gen" />
+    <delete dir="${mbeddr.core}/tests/test.debugger.cdt/test_gen" />
+    <delete dir="${mbeddr.core}/tests/test.debugger.core/test_gen" />
   </target>
 </project>
