@@ -224,7 +224,7 @@
       </node>
     </node>
     <node role="imports" roleId="rpmx.5710167937130937945" type="rpmx.DebuggerTestReference" typeId="rpmx.8924761790438948080" id="5710167937131567054" nodeInfo="ng">
-      <link role="test" roleId="rpmx.8924761790438948081" targetNodeId="5710167937131566947" resolveInfo="LoopsLibrary" />
+      <link role="test" roleId="rpmx.8924761790438948081" targetNodeId="3853561535654484105" resolveInfo="LoopsLibrary" />
     </node>
   </root>
   <root type="rpmx.DebuggerTest" typeId="rpmx.7048220250905867886" id="5710167937131567055" nodeInfo="ng">
@@ -478,7 +478,7 @@
       </node>
     </node>
     <node role="imports" roleId="rpmx.5710167937130937945" type="rpmx.DebuggerTestReference" typeId="rpmx.8924761790438948080" id="5710167937131611844" nodeInfo="ng">
-      <link role="test" roleId="rpmx.8924761790438948081" targetNodeId="5710167937131566947" resolveInfo="LoopsLibrary" />
+      <link role="test" roleId="rpmx.8924761790438948081" targetNodeId="3853561535654484105" resolveInfo="LoopsLibrary" />
     </node>
   </root>
   <root type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="5710167937131567141" nodeInfo="ng">
@@ -1648,10 +1648,10 @@
       </node>
     </node>
     <node role="imports" roleId="rpmx.5710167937130937945" type="rpmx.DebuggerTestReference" typeId="rpmx.8924761790438948080" id="5710167937131648351" nodeInfo="ng">
-      <link role="test" roleId="rpmx.8924761790438948081" targetNodeId="5710167937131566947" resolveInfo="LoopsLibrary" />
+      <link role="test" roleId="rpmx.8924761790438948081" targetNodeId="3853561535654484105" resolveInfo="LoopsLibrary" />
     </node>
   </root>
-  <root type="rpmx.DebuggerTestLibrary" typeId="rpmx.5710167937130873101" id="5710167937131566947" nodeInfo="ng">
+  <root type="rpmx.DebuggerTest" typeId="rpmx.7048220250905867886" id="3853561535654484105" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="LoopsLibrary" />
     <node role="contents" roleId="rpmx.5710167937130937944" type="rpmx.StackFramesDeclaration" typeId="rpmx.1218249513292774460" id="5710167937131566948" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="inDoWhileStatement" />
@@ -1727,6 +1727,9 @@
       <node role="watchables" roleId="rpmx.1218249513292256533" type="rpmx.WatchableNameExpression" typeId="rpmx.6894131567067751702" id="5710167937131566968" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="aVar" />
       </node>
+    </node>
+    <node role="binaryRef" roleId="rpmx.5100083648679329380" type="rpmx.BinaryRef" typeId="rpmx.5100083648679329379" id="3853561535654573965" nodeInfo="ng">
+      <link role="binary" roleId="rpmx.7048220250906128789" targetNodeId="5710167937131566970" resolveInfo="LoopsTest" />
     </node>
   </root>
 </model>
