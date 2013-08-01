@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model modelUID="r:d438826f-ca9d-4f37-96ba-64e84536b6a7(test.analyses.cbmc.analysis@tests)">
+<model modelUID="r:d438826f-ca9d-4f37-96ba-64e84536b6a7(test.analyses.cbmc.analysis_config@tests)">
   <persistence version="8" />
   <language namespace="f61473f9-130f-42f6-b98d-6c438812c2f6(jetbrains.mps.baseLanguage.unitTest)" />
   <language namespace="8585453e-6bfb-4d80-98de-b16074f1d86c(jetbrains.mps.lang.test)" />
