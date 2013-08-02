@@ -3,11 +3,11 @@
   <property name="build.dir" location="build" />
   <property name="build.tmp" location="${build.dir}/tmp/com.mbeddr.debugger.testing.tests.ext.physical-units.build" />
   <property name="build.layout" location="${build.dir}/artifacts/com.mbeddr.debugger.testing.tests.ext.physical-units.build" />
-  <property name="mps_home" location="${basedir}/../../../../../../../../Applications/MPS25.app" />
+  <property name="mps.home" location="${basedir}/../../../../../../../../Applications/MPS25.app" />
   <property name="mbeddr.github.core.home" location="${basedir}/../../" />
   <property name="multiline.artifacts" location="" />
   <property name="richtext.artifacts" location="" />
-  <property name="artifacts.mps" location="${mps_home}" />
+  <property name="artifacts.mps" location="${mps.home}" />
   <property name="artifacts.com.mbeddr.spawner.build" location="../com.mbeddr.spawner/build/artifacts/com.mbeddr.spawner.build" />
   <property name="artifacts.com.mbeddr.core.build" location="../com.mbeddr.core/build/artifacts/com.mbeddr.core.build" />
   <property name="artifacts.com.mbeddr.debugger.build" location="../com.mbeddr.debugger/build/artifacts/com.mbeddr.debugger.build" />
