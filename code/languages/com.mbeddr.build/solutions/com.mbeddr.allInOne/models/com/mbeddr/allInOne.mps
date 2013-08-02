@@ -125,7 +125,7 @@
             <link role="target" roleId="3ior.5610619299013057365" targetNodeId="g8gn.8628756186118765535" resolveInfo="com.mbeddr.core.zip" />
           </node>
           <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_ImportContent" typeId="3ior.5610619299013057363" id="6247780594427982568" nodeInfo="ng">
-            <link role="target" roleId="3ior.5610619299013057365" targetNodeId="og8s.6247780594427434822" resolveInfo="com.mbeddr.debugger.zip" />
+            <link role="target" roleId="3ior.5610619299013057365" targetNodeId="og8s.4699195107807380428" resolveInfo="com.mbeddr.spawner.zip" />
           </node>
           <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_ImportContent" typeId="3ior.5610619299013057363" id="6247780594427982570" nodeInfo="ng">
             <link role="target" roleId="3ior.5610619299013057365" targetNodeId="pyq9.6247780594427554262" resolveInfo="com.mbeddr.ext.components.zip" />
@@ -179,7 +179,6 @@
           </node>
         </node>
       </node>
-      <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_Node" typeId="3ior.7389400916848036997" id="6247780594427982560" nodeInfo="ng" />
     </node>
   </root>
 </model>
