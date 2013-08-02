@@ -1,26 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model modelUID="r:025045d9-bdd4-4184-95f6-68fba303ebd7(test.debugging.ext.statemachines.primitive.stepOver)">
+<model modelUID="r:4a5fd9fd-679e-4956-9c8f-0e23dcafeeeb(test.debugging.ext.statemachines.stepover@tests)">
   <persistence version="8" />
-  <language namespace="2693fc71-9b0e-4b05-ab13-f57227d675f2(com.mbeddr.core.util)" />
-  <language namespace="6d11763d-483d-4b2b-8efc-09336c1b0001(com.mbeddr.core.modules)" />
-  <language namespace="a9d69647-0840-491e-bf39-2eb0805d2011(com.mbeddr.core.statements)" />
+  <language namespace="f61473f9-130f-42f6-b98d-6c438812c2f6(jetbrains.mps.baseLanguage.unitTest)" />
+  <language namespace="8585453e-6bfb-4d80-98de-b16074f1d86c(jetbrains.mps.lang.test)" />
   <language namespace="06d68b77-b699-4918-83b8-857e63787800(com.mbeddr.core.unittest)" />
-  <language namespace="61c69711-ed61-4850-81d9-7714ff227fb0(com.mbeddr.core.expressions)" />
   <language namespace="3bf5377a-e904-4ded-9754-5a516023bfaa(com.mbeddr.core.pointers)" />
-  <devkit namespace="87468ddd-5b04-4352-a61d-70ff981afab6(com.mbeddr.debugger-testing)" />
-  <devkit namespace="43d889ae-8e6a-4f6e-a649-d59342d8728d(com.mbeddr.statemachines)" />
-  <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
-  <import index="tpee" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="4" implicit="yes" />
-  <import index="yq40" modelUID="r:152b3fc0-83a1-4bab-a8cd-565eb8483785(com.mbeddr.core.pointers.structure)" version="3" implicit="yes" />
+  <language namespace="564e97d6-8fb7-41f5-bfc1-c7ed376efd62(com.mbeddr.ext.statemachines)" />
+  <language namespace="2693fc71-9b0e-4b05-ab13-f57227d675f2(com.mbeddr.core.util)" />
+  <language namespace="89c70b13-7f9c-47c3-b3c2-c218b52ed82c(com.mbeddr.core.debug.test)" />
+  <language namespace="a9d69647-0840-491e-bf39-2eb0805d2011(com.mbeddr.core.statements)" />
+  <language namespace="61c69711-ed61-4850-81d9-7714ff227fb0(com.mbeddr.core.expressions)" />
+  <language namespace="f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)" />
+  <language namespace="6d11763d-483d-4b2b-8efc-09336c1b0001(com.mbeddr.core.modules)" />
+  <language namespace="2d7fadf5-33f6-4e80-a78f-0f739add2bde(com.mbeddr.core.buildconfig)" />
   <import index="51wr" modelUID="r:b31f1c3c-99aa-4f1e-a329-cba27efb1a6b(com.mbeddr.core.buildconfig.structure)" version="1" implicit="yes" />
+  <import index="tp5g" modelUID="r:00000000-0000-4000-0000-011c89590388(jetbrains.mps.lang.test.structure)" version="15" implicit="yes" />
+  <import index="tpee" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="4" implicit="yes" />
   <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="15" implicit="yes" />
-  <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="5" implicit="yes" />
-  <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="5" implicit="yes" />
-  <import index="tp5g" modelUID="r:00000000-0000-4000-0000-011c89590388(jetbrains.mps.lang.test.structure)" version="4" implicit="yes" />
+  <import index="yq40" modelUID="r:152b3fc0-83a1-4bab-a8cd-565eb8483785(com.mbeddr.core.pointers.structure)" version="3" implicit="yes" />
   <import index="k146" modelUID="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" version="11" implicit="yes" />
-  <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="23" implicit="yes" />
-  <import index="rpmx" modelUID="r:64720d49-3cb5-4469-81c5-0c62eda0a2cb(com.mbeddr.core.debug.test.structure)" version="88" implicit="yes" />
+  <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="4" implicit="yes" />
+  <import index="clqz" modelUID="r:5ebcdb77-81e9-4964-beae-35bd9a2f28b5(com.mbeddr.ext.statemachines.structure)" version="12" implicit="yes" />
   <import index="yz9a" modelUID="r:734c02dd-cc16-4184-99eb-5fd9f43aa37e(com.mbeddr.core.unittest.structure)" version="0" implicit="yes" />
+  <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
+  <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="22" implicit="yes" />
+  <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="5" implicit="yes" />
+  <import index="rpmx" modelUID="r:64720d49-3cb5-4469-81c5-0c62eda0a2cb(com.mbeddr.core.debug.test.structure)" version="88" implicit="yes" />
   <root type="51wr.BuildConfiguration" typeId="51wr.7717755763392524104" id="4141878798835846464" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="dummy" />
     <node role="target" roleId="51wr.5323740605968447026" type="51wr.DesktopPlatform" typeId="51wr.5323740605968447022" id="4141878798835846465" nodeInfo="ng">
@@ -31,8 +36,8 @@
     <node role="configurationItems" roleId="vs0r.4459718605982007338" type="k146.ReportingConfiguration" typeId="k146.4459718605982051949" id="4141878798835846466" nodeInfo="ng">
       <node role="strategy" roleId="k146.4459718605982051999" type="k146.PrintfReportingStrategy" typeId="k146.4459718605982051980" id="4141878798835846467" nodeInfo="ng" />
     </node>
-    <node role="configurationItems" roleId="vs0r.4459718605982007338" type=".com.mbeddr.ext.statemachines.structure.StatemachineConfigItem" id="4141878798835846635" nodeInfo="ng">
-      <property name="triggerAsConst" value="true" />
+    <node role="configurationItems" roleId="vs0r.4459718605982007338" type="clqz.StatemachineConfigItem" typeId="clqz.4709703140582114943" id="4141878798835846635" nodeInfo="ng">
+      <property name="triggerAsConst" nameId="clqz.4709703140582114945" value="true" />
     </node>
     <node role="binaries" roleId="51wr.5046689135694070731" type="51wr.Executable" typeId="51wr.5046689135693761554" id="4141878798835846468" nodeInfo="ng">
       <property name="isTest" nameId="51wr.3431613015799084476" value="true" />
@@ -168,8 +173,8 @@
     <property name="name" nameId="tpck.1169194664001" value="StepOverInSMTest" />
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.GlobalVariableDeclaration" typeId="x27k.6610873504380335822" id="4141878798835846502" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="sm" />
-      <node role="type" roleId="mj1l.318113533128716676" type=".com.mbeddr.ext.statemachines.structure.StatemachineType" id="4141878798835846503" nodeInfo="ng">
-        <link role="machine" targetNodeId="8444296659257885033" resolveInfo="SM" />
+      <node role="type" roleId="mj1l.318113533128716676" type="clqz.StatemachineType" typeId="clqz.7851711690674263345" id="4141878798835846503" nodeInfo="ng">
+        <link role="machine" roleId="clqz.7851711690674263346" targetNodeId="8444296659257885033" resolveInfo="SM" />
       </node>
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="4141878798835846501" nodeInfo="ng">
@@ -221,39 +226,39 @@
         <property name="const" nameId="mj1l.2941277002445651368" value="false" />
       </node>
       <node role="body" roleId="yz9a.6275792049641586525" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="4141878798835846420" nodeInfo="ng">
-        <node role="statements" roleId="c4fa.4185783222026475862" type=".com.mbeddr.ext.statemachines.structure.InitializeSMStatement" id="4141878798835846511" nodeInfo="ng">
-          <node role="statemachine" type="x27k.GlobalVarRef" typeId="x27k.6610873504380357354" id="4141878798835846513" nodeInfo="ng">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="clqz.InitializeSMStatement" typeId="clqz.1786180596061208520" id="4141878798835846511" nodeInfo="ng">
+          <node role="statemachine" roleId="clqz.1786180596061208522" type="x27k.GlobalVarRef" typeId="x27k.6610873504380357354" id="4141878798835846513" nodeInfo="ng">
             <link role="var" roleId="x27k.6610873504380357355" targetNodeId="4141878798835846502" resolveInfo="sm" />
           </node>
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type=".com.mbeddr.ext.statemachines.structure.TriggerSMStatement" id="4141878798835846498" nodeInfo="ng">
-          <link role="event" targetNodeId="8444296659257885036" resolveInfo="seitch" />
-          <node role="statemachine" type="x27k.GlobalVarRef" typeId="x27k.6610873504380357354" id="4141878798835846504" nodeInfo="ng">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="clqz.TriggerSMStatement" typeId="clqz.7851711690674279259" id="4141878798835846498" nodeInfo="ng">
+          <link role="event" roleId="clqz.1786180596061231919" targetNodeId="8444296659257885036" resolveInfo="seitch" />
+          <node role="statemachine" roleId="clqz.7851711690674279260" type="x27k.GlobalVarRef" typeId="x27k.6610873504380357354" id="4141878798835846504" nodeInfo="ng">
             <link role="var" roleId="x27k.6610873504380357355" targetNodeId="4141878798835846502" resolveInfo="sm" />
           </node>
-          <node role="smodelAttribute" type="rpmx.MarkerAnnotation" typeId="rpmx.4193597469137492628" id="3450485464476995112" nodeInfo="ng">
+          <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="rpmx.MarkerAnnotation" typeId="rpmx.4193597469137492628" id="3450485464476995112" nodeInfo="ng">
             <property name="name" nameId="tpck.1169194664001" value="transitionFromRedToGreen" />
           </node>
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type=".com.mbeddr.ext.statemachines.structure.TriggerSMStatement" id="3450485464477218238" nodeInfo="ng">
-          <link role="event" targetNodeId="8444296659257885036" resolveInfo="seitch" />
-          <node role="statemachine" type="x27k.GlobalVarRef" typeId="x27k.6610873504380357354" id="3450485464477218239" nodeInfo="ng">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="clqz.TriggerSMStatement" typeId="clqz.7851711690674279259" id="3450485464477218238" nodeInfo="ng">
+          <link role="event" roleId="clqz.1786180596061231919" targetNodeId="8444296659257885036" resolveInfo="seitch" />
+          <node role="statemachine" roleId="clqz.7851711690674279260" type="x27k.GlobalVarRef" typeId="x27k.6610873504380357354" id="3450485464477218239" nodeInfo="ng">
             <link role="var" roleId="x27k.6610873504380357355" targetNodeId="4141878798835846502" resolveInfo="sm" />
           </node>
-          <node role="smodelAttribute" type="rpmx.MarkerAnnotation" typeId="rpmx.4193597469137492628" id="3450485464477218240" nodeInfo="ng">
+          <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="rpmx.MarkerAnnotation" typeId="rpmx.4193597469137492628" id="3450485464477218240" nodeInfo="ng">
             <property name="name" nameId="tpck.1169194664001" value="transitionFromGreenToBlue" />
           </node>
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type=".com.mbeddr.ext.statemachines.structure.TriggerSMStatement" id="2032275818418987946" nodeInfo="ng">
-          <link role="event" targetNodeId="3450485464476995109" resolveInfo="nothing" />
-          <node role="statemachine" type="x27k.GlobalVarRef" typeId="x27k.6610873504380357354" id="2032275818418987948" nodeInfo="ng">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="clqz.TriggerSMStatement" typeId="clqz.7851711690674279259" id="2032275818418987946" nodeInfo="ng">
+          <link role="event" roleId="clqz.1786180596061231919" targetNodeId="3450485464476995109" resolveInfo="nothing" />
+          <node role="statemachine" roleId="clqz.7851711690674279260" type="x27k.GlobalVarRef" typeId="x27k.6610873504380357354" id="2032275818418987948" nodeInfo="ng">
             <link role="var" roleId="x27k.6610873504380357355" targetNodeId="4141878798835846502" resolveInfo="sm" />
           </node>
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="4141878798835846515" nodeInfo="ng">
-          <node role="expr" roleId="c4fa.7254843406768833939" type=".com.mbeddr.ext.statemachines.structure.IsInStateExpression" id="4141878798835846516" nodeInfo="ng">
-            <link role="state" targetNodeId="8444296659257885035" resolveInfo="green" />
-            <node role="expr" type="x27k.GlobalVarRef" typeId="x27k.6610873504380357354" id="4141878798835846518" nodeInfo="ng">
+          <node role="expr" roleId="c4fa.7254843406768833939" type="clqz.IsInStateExpression" typeId="clqz.2558982571829189197" id="4141878798835846516" nodeInfo="ng">
+            <link role="state" roleId="clqz.2558982571829202228" targetNodeId="8444296659257885035" resolveInfo="green" />
+            <node role="expr" roleId="clqz.2558982571829189198" type="x27k.GlobalVarRef" typeId="x27k.6610873504380357354" id="4141878798835846518" nodeInfo="ng">
               <link role="var" roleId="x27k.6610873504380357355" targetNodeId="4141878798835846502" resolveInfo="sm" />
             </node>
           </node>
@@ -263,70 +268,70 @@
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="4141878798835846477" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="empty_1370250500789_5" />
     </node>
-    <node role="contents" roleId="x27k.6437088627575722833" type=".com.mbeddr.ext.statemachines.structure.Statemachine" id="8444296659257885033" nodeInfo="ng">
-      <property name="name" value="SM" />
-      <link role="initial" targetNodeId="8444296659257885034" resolveInfo="red" />
-      <node role="contents" type=".com.mbeddr.ext.statemachines.structure.StatemachineVariableDeclaration" id="4663449261074423772" nodeInfo="ng">
-        <property name="name" value="aVar" />
-        <node role="init" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="4663449261074423776" nodeInfo="ng">
+    <node role="contents" roleId="x27k.6437088627575722833" type="clqz.Statemachine" typeId="clqz.5778488248013533809" id="8444296659257885033" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="SM" />
+      <link role="initial" roleId="clqz.5778488248013533842" targetNodeId="8444296659257885034" resolveInfo="red" />
+      <node role="contents" roleId="clqz.7835233251114737454" type="clqz.StatemachineVariableDeclaration" typeId="clqz.5633981208992643165" id="4663449261074423772" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="aVar" />
+        <node role="init" roleId="clqz.4643433264760912612" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="4663449261074423776" nodeInfo="ng">
           <property name="value" nameId="mj1l.8860443239512128104" value="3" />
         </node>
-        <node role="type" type=".com.mbeddr.ext.statemachines.structure.BoundedIntType" id="4663449261074423775" nodeInfo="ng">
+        <node role="type" roleId="mj1l.318113533128716676" type="clqz.BoundedIntType" typeId="clqz.7851711690674374947" id="4663449261074423775" nodeInfo="ng">
           <property name="min" value="0" />
           <property name="max" value="5" />
-          <node role="min" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="1656687801206329607" nodeInfo="ng">
+          <node role="min" roleId="clqz.1656687801206292530" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="1656687801206329607" nodeInfo="ng">
             <property name="value" nameId="mj1l.8860443239512128104" value="0" />
           </node>
-          <node role="max" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="1656687801206329608" nodeInfo="ng">
+          <node role="max" roleId="clqz.1656687801206292531" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="1656687801206329608" nodeInfo="ng">
             <property name="value" nameId="mj1l.8860443239512128104" value="5" />
           </node>
         </node>
       </node>
-      <node role="contents" type=".com.mbeddr.ext.statemachines.structure.StatemachineVariableDeclaration" id="3450485464477215811" nodeInfo="ng">
-        <property name="name" value="anoterVar" />
-        <node role="init" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3450485464477215812" nodeInfo="ng">
+      <node role="contents" roleId="clqz.7835233251114737454" type="clqz.StatemachineVariableDeclaration" typeId="clqz.5633981208992643165" id="3450485464477215811" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="anoterVar" />
+        <node role="init" roleId="clqz.4643433264760912612" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3450485464477215812" nodeInfo="ng">
           <property name="value" nameId="mj1l.8860443239512128104" value="3" />
         </node>
-        <node role="type" type=".com.mbeddr.ext.statemachines.structure.BoundedIntType" id="3450485464477215813" nodeInfo="ng">
+        <node role="type" roleId="mj1l.318113533128716676" type="clqz.BoundedIntType" typeId="clqz.7851711690674374947" id="3450485464477215813" nodeInfo="ng">
           <property name="min" value="0" />
           <property name="max" value="5" />
-          <node role="min" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3450485464477215814" nodeInfo="ng">
+          <node role="min" roleId="clqz.1656687801206292530" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3450485464477215814" nodeInfo="ng">
             <property name="value" nameId="mj1l.8860443239512128104" value="0" />
           </node>
-          <node role="max" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3450485464477215815" nodeInfo="ng">
+          <node role="max" roleId="clqz.1656687801206292531" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3450485464477215815" nodeInfo="ng">
             <property name="value" nameId="mj1l.8860443239512128104" value="5" />
           </node>
         </node>
       </node>
-      <node role="contents" type=".com.mbeddr.ext.statemachines.structure.InEvent" id="3450485464476995109" nodeInfo="ng">
-        <property name="name" value="nothing" />
+      <node role="contents" roleId="clqz.7835233251114737454" type="clqz.InEvent" typeId="clqz.4643433264760980253" id="3450485464476995109" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="nothing" />
       </node>
-      <node role="contents" type=".com.mbeddr.ext.statemachines.structure.InEvent" id="8444296659257885036" nodeInfo="ng">
-        <property name="name" value="seitch" />
+      <node role="contents" roleId="clqz.7835233251114737454" type="clqz.InEvent" typeId="clqz.4643433264760980253" id="8444296659257885036" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="seitch" />
       </node>
-      <node role="contents" type=".com.mbeddr.ext.statemachines.structure.State" id="8444296659257885034" nodeInfo="ng">
-        <property name="name" value="red" />
-        <node role="contents" type=".com.mbeddr.ext.statemachines.structure.DoAction" id="3450485464476995041" nodeInfo="ng">
-          <node role="body" type=".com.mbeddr.ext.statemachines.structure.ActionList" id="3450485464476995042" nodeInfo="ng">
-            <node role="statements" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="3450485464476995043" nodeInfo="ng">
+      <node role="contents" roleId="clqz.7835233251114737454" type="clqz.State" typeId="clqz.5778488248013533839" id="8444296659257885034" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="red" />
+        <node role="contents" roleId="clqz.4249345261280348989" type="clqz.DoAction" typeId="clqz.8409287311039121599" id="3450485464476995041" nodeInfo="ng">
+          <node role="body" roleId="clqz.8409287311039042109" type="clqz.ActionList" typeId="clqz.1957198122968598264" id="3450485464476995042" nodeInfo="ng">
+            <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="3450485464476995043" nodeInfo="ng">
               <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.AssignmentExpr" typeId="mj1l.22102029902365709" id="3450485464476995047" nodeInfo="ng">
                 <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3450485464476995050" nodeInfo="ng">
                   <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
                   <property name="value" nameId="mj1l.8860443239512128104" value="10" />
                 </node>
-                <node role="left" roleId="mj1l.8860443239512128064" type=".com.mbeddr.ext.statemachines.structure.StatemachineVarRef" id="3450485464477215816" nodeInfo="ng">
-                  <link role="var" targetNodeId="3450485464477215811" resolveInfo="anoterVar" />
+                <node role="left" roleId="mj1l.8860443239512128064" type="clqz.StatemachineVarRef" typeId="clqz.1786180596061383227" id="3450485464477215816" nodeInfo="ng">
+                  <link role="var" roleId="clqz.1786180596061383228" targetNodeId="3450485464477215811" resolveInfo="anoterVar" />
                 </node>
               </node>
             </node>
-            <node role="statements" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="3450485464477026029" nodeInfo="ng">
+            <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="3450485464477026029" nodeInfo="ng">
               <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.AssignmentExpr" typeId="mj1l.22102029902365709" id="3450485464477026033" nodeInfo="ng">
                 <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3450485464477026036" nodeInfo="ng">
                   <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
                   <property name="value" nameId="mj1l.8860443239512128104" value="2" />
                 </node>
-                <node role="left" roleId="mj1l.8860443239512128064" type=".com.mbeddr.ext.statemachines.structure.StatemachineVarRef" id="3450485464477215817" nodeInfo="ng">
-                  <link role="var" targetNodeId="3450485464477215811" resolveInfo="anoterVar" />
+                <node role="left" roleId="mj1l.8860443239512128064" type="clqz.StatemachineVarRef" typeId="clqz.1786180596061383227" id="3450485464477215817" nodeInfo="ng">
+                  <link role="var" roleId="clqz.1786180596061383228" targetNodeId="3450485464477215811" resolveInfo="anoterVar" />
                 </node>
               </node>
               <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="rpmx.MarkerAnnotation" typeId="rpmx.4193597469137492628" id="9082533278989534540" nodeInfo="ng">
@@ -335,46 +340,46 @@
             </node>
           </node>
         </node>
-        <node role="contents" type=".com.mbeddr.ext.statemachines.structure.Transition" id="9082533278989535628" nodeInfo="ng">
-          <link role="targetState" targetNodeId="8444296659257885035" resolveInfo="green" />
-          <node role="trigger" type=".com.mbeddr.ext.statemachines.structure.Trigger" id="9082533278989535629" nodeInfo="ng">
-            <link role="event" targetNodeId="8444296659257885036" resolveInfo="seitch" />
+        <node role="contents" roleId="clqz.4249345261280348989" type="clqz.Transition" typeId="clqz.5778488248013533883" id="9082533278989535628" nodeInfo="ng">
+          <link role="targetState" roleId="clqz.5778488248013533913" targetNodeId="8444296659257885035" resolveInfo="green" />
+          <node role="trigger" roleId="clqz.3670856444174351950" type="clqz.Trigger" typeId="clqz.1786180596061233739" id="9082533278989535629" nodeInfo="ng">
+            <link role="event" roleId="clqz.8951398808641876049" targetNodeId="8444296659257885036" resolveInfo="seitch" />
           </node>
-          <node role="actions" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="9082533278989535630" nodeInfo="ng">
+          <node role="actions" roleId="clqz.5778488248013533907" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="9082533278989535630" nodeInfo="ng">
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="9082533278989535631" nodeInfo="ng">
               <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="9082533278989535632" nodeInfo="ng">
                 <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="9082533278989535633" nodeInfo="ng">
                   <property name="value" nameId="mj1l.8860443239512128104" value="10" />
                 </node>
-                <node role="left" roleId="mj1l.8860443239512128064" type=".com.mbeddr.ext.statemachines.structure.StatemachineVarRef" id="9082533278989535634" nodeInfo="ng">
-                  <link role="var" targetNodeId="4663449261074423772" resolveInfo="aVar" />
+                <node role="left" roleId="mj1l.8860443239512128064" type="clqz.StatemachineVarRef" typeId="clqz.1786180596061383227" id="9082533278989535634" nodeInfo="ng">
+                  <link role="var" roleId="clqz.1786180596061383228" targetNodeId="4663449261074423772" resolveInfo="aVar" />
                 </node>
               </node>
             </node>
           </node>
-          <node role="guard" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="9082533278989535640" nodeInfo="ng">
+          <node role="guard" roleId="clqz.5778488248013533903" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="9082533278989535640" nodeInfo="ng">
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="9082533278989535641" nodeInfo="ng">
               <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
               <property name="value" nameId="mj1l.8860443239512128104" value="4" />
             </node>
-            <node role="left" roleId="mj1l.8860443239512128064" type=".com.mbeddr.ext.statemachines.structure.StatemachineVarRef" id="9082533278989535642" nodeInfo="ng">
-              <link role="var" targetNodeId="4663449261074423772" resolveInfo="aVar" />
+            <node role="left" roleId="mj1l.8860443239512128064" type="clqz.StatemachineVarRef" typeId="clqz.1786180596061383227" id="9082533278989535642" nodeInfo="ng">
+              <link role="var" roleId="clqz.1786180596061383228" targetNodeId="4663449261074423772" resolveInfo="aVar" />
             </node>
             <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="rpmx.MarkerAnnotation" typeId="rpmx.4193597469137492628" id="6151459193021205046" nodeInfo="ng">
               <property name="name" nameId="tpck.1169194664001" value="transCondFailing" />
             </node>
           </node>
         </node>
-        <node role="contents" type=".com.mbeddr.ext.statemachines.structure.Transition" id="8444296659257885037" nodeInfo="ng">
-          <link role="targetState" targetNodeId="8444296659257885035" resolveInfo="green" />
-          <node role="trigger" type=".com.mbeddr.ext.statemachines.structure.Trigger" id="8444296659257885040" nodeInfo="ng">
-            <link role="event" targetNodeId="8444296659257885036" resolveInfo="seitch" />
+        <node role="contents" roleId="clqz.4249345261280348989" type="clqz.Transition" typeId="clqz.5778488248013533883" id="8444296659257885037" nodeInfo="ng">
+          <link role="targetState" roleId="clqz.5778488248013533913" targetNodeId="8444296659257885035" resolveInfo="green" />
+          <node role="trigger" roleId="clqz.3670856444174351950" type="clqz.Trigger" typeId="clqz.1786180596061233739" id="8444296659257885040" nodeInfo="ng">
+            <link role="event" roleId="clqz.8951398808641876049" targetNodeId="8444296659257885036" resolveInfo="seitch" />
           </node>
-          <node role="actions" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="8444296659257885039" nodeInfo="ng">
+          <node role="actions" roleId="clqz.5778488248013533907" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="8444296659257885039" nodeInfo="ng">
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="6827806583616245511" nodeInfo="ng">
               <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.AssignmentExpr" typeId="mj1l.22102029902365709" id="7798099075967794993" nodeInfo="ng">
-                <node role="left" roleId="mj1l.8860443239512128064" type=".com.mbeddr.ext.statemachines.structure.StatemachineVarRef" id="7798099075967794994" nodeInfo="ng">
-                  <link role="var" targetNodeId="4663449261074423772" resolveInfo="aVar" />
+                <node role="left" roleId="mj1l.8860443239512128064" type="clqz.StatemachineVarRef" typeId="clqz.1786180596061383227" id="7798099075967794994" nodeInfo="ng">
+                  <link role="var" roleId="clqz.1786180596061383228" targetNodeId="4663449261074423772" resolveInfo="aVar" />
                 </node>
                 <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="7798099075967794995" nodeInfo="ng">
                   <property name="value" nameId="mj1l.8860443239512128104" value="10" />
@@ -386,8 +391,8 @@
             </node>
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="3450485464476995004" nodeInfo="ng">
               <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.AssignmentExpr" typeId="mj1l.22102029902365709" id="7798099075967794990" nodeInfo="ng">
-                <node role="left" roleId="mj1l.8860443239512128064" type=".com.mbeddr.ext.statemachines.structure.StatemachineVarRef" id="7798099075967794991" nodeInfo="ng">
-                  <link role="var" targetNodeId="4663449261074423772" resolveInfo="aVar" />
+                <node role="left" roleId="mj1l.8860443239512128064" type="clqz.StatemachineVarRef" typeId="clqz.1786180596061383227" id="7798099075967794991" nodeInfo="ng">
+                  <link role="var" roleId="clqz.1786180596061383228" targetNodeId="4663449261074423772" resolveInfo="aVar" />
                 </node>
                 <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="7798099075967794992" nodeInfo="ng">
                   <property name="value" nameId="mj1l.8860443239512128104" value="10" />
@@ -398,25 +403,25 @@
               </node>
             </node>
           </node>
-          <node role="guard" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="4141878798835856412" nodeInfo="ng">
+          <node role="guard" roleId="clqz.5778488248013533903" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="4141878798835856412" nodeInfo="ng">
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="4141878798835856415" nodeInfo="ng">
               <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
               <property name="value" nameId="mj1l.8860443239512128104" value="3" />
             </node>
-            <node role="left" roleId="mj1l.8860443239512128064" type=".com.mbeddr.ext.statemachines.structure.StatemachineVarRef" id="4141878798835856409" nodeInfo="ng">
-              <link role="var" targetNodeId="4663449261074423772" resolveInfo="aVar" />
+            <node role="left" roleId="mj1l.8860443239512128064" type="clqz.StatemachineVarRef" typeId="clqz.1786180596061383227" id="4141878798835856409" nodeInfo="ng">
+              <link role="var" roleId="clqz.1786180596061383228" targetNodeId="4663449261074423772" resolveInfo="aVar" />
             </node>
             <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="rpmx.MarkerAnnotation" typeId="rpmx.4193597469137492628" id="6151459193021205047" nodeInfo="ng">
               <property name="name" nameId="tpck.1169194664001" value="transCondSucc" />
             </node>
           </node>
         </node>
-        <node role="contents" type=".com.mbeddr.ext.statemachines.structure.ExitAction" id="3450485464476995025" nodeInfo="ng">
-          <node role="body" type=".com.mbeddr.ext.statemachines.structure.ActionList" id="3450485464476995026" nodeInfo="ng">
-            <node role="statements" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="3450485464476995027" nodeInfo="ng">
+        <node role="contents" roleId="clqz.4249345261280348989" type="clqz.ExitAction" typeId="clqz.4753668641245545020" id="3450485464476995025" nodeInfo="ng">
+          <node role="body" roleId="clqz.8409287311039042109" type="clqz.ActionList" typeId="clqz.1957198122968598264" id="3450485464476995026" nodeInfo="ng">
+            <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="3450485464476995027" nodeInfo="ng">
               <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.AssignmentExpr" typeId="mj1l.22102029902365709" id="7798099075967794987" nodeInfo="ng">
-                <node role="left" roleId="mj1l.8860443239512128064" type=".com.mbeddr.ext.statemachines.structure.StatemachineVarRef" id="7798099075967794988" nodeInfo="ng">
-                  <link role="var" targetNodeId="4663449261074423772" resolveInfo="aVar" />
+                <node role="left" roleId="mj1l.8860443239512128064" type="clqz.StatemachineVarRef" typeId="clqz.1786180596061383227" id="7798099075967794988" nodeInfo="ng">
+                  <link role="var" roleId="clqz.1786180596061383228" targetNodeId="4663449261074423772" resolveInfo="aVar" />
                 </node>
                 <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="7798099075967794989" nodeInfo="ng">
                   <property name="value" nameId="mj1l.8860443239512128104" value="10" />
@@ -426,14 +431,14 @@
                 <property name="name" nameId="tpck.1169194664001" value="inExitAction" />
               </node>
             </node>
-            <node role="statements" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="9082533278989566411" nodeInfo="ng">
+            <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="9082533278989566411" nodeInfo="ng">
               <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.AssignmentExpr" typeId="mj1l.22102029902365709" id="9082533278989566415" nodeInfo="ng">
                 <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="9082533278989566418" nodeInfo="ng">
                   <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
                   <property name="value" nameId="mj1l.8860443239512128104" value="23" />
                 </node>
-                <node role="left" roleId="mj1l.8860443239512128064" type=".com.mbeddr.ext.statemachines.structure.StatemachineVarRef" id="9082533278989566412" nodeInfo="ng">
-                  <link role="var" targetNodeId="4663449261074423772" resolveInfo="aVar" />
+                <node role="left" roleId="mj1l.8860443239512128064" type="clqz.StatemachineVarRef" typeId="clqz.1786180596061383227" id="9082533278989566412" nodeInfo="ng">
+                  <link role="var" roleId="clqz.1786180596061383228" targetNodeId="4663449261074423772" resolveInfo="aVar" />
                 </node>
               </node>
               <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="rpmx.MarkerAnnotation" typeId="rpmx.4193597469137492628" id="2536856479942258106" nodeInfo="ng">
@@ -441,20 +446,20 @@
               </node>
             </node>
           </node>
-          <node role="smodelAttribute" type="rpmx.MarkerAnnotation" typeId="rpmx.4193597469137492628" id="3450485464477275683" nodeInfo="ng">
+          <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="rpmx.MarkerAnnotation" typeId="rpmx.4193597469137492628" id="3450485464477275683" nodeInfo="ng">
             <property name="name" nameId="tpck.1169194664001" value="ExitAction" />
           </node>
         </node>
       </node>
-      <node role="contents" type=".com.mbeddr.ext.statemachines.structure.EmptyStatemachineContent" id="6827806583614791747" nodeInfo="ng" />
-      <node role="contents" type=".com.mbeddr.ext.statemachines.structure.State" id="8444296659257885035" nodeInfo="ng">
-        <property name="name" value="green" />
-        <node role="contents" type=".com.mbeddr.ext.statemachines.structure.EntryAction" id="3450485464476995032" nodeInfo="ng">
-          <node role="body" type=".com.mbeddr.ext.statemachines.structure.ActionList" id="3450485464476995033" nodeInfo="ng">
-            <node role="statements" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="3450485464476995034" nodeInfo="ng">
+      <node role="contents" roleId="clqz.7835233251114737454" type="clqz.EmptyStatemachineContent" typeId="clqz.8927638623067326788" id="6827806583614791747" nodeInfo="ng" />
+      <node role="contents" roleId="clqz.7835233251114737454" type="clqz.State" typeId="clqz.5778488248013533839" id="8444296659257885035" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="green" />
+        <node role="contents" roleId="clqz.4249345261280348989" type="clqz.EntryAction" typeId="clqz.4753668641245534592" id="3450485464476995032" nodeInfo="ng">
+          <node role="body" roleId="clqz.8409287311039042109" type="clqz.ActionList" typeId="clqz.1957198122968598264" id="3450485464476995033" nodeInfo="ng">
+            <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="3450485464476995034" nodeInfo="ng">
               <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.AssignmentExpr" typeId="mj1l.22102029902365709" id="7798099075967794996" nodeInfo="ng">
-                <node role="left" roleId="mj1l.8860443239512128064" type=".com.mbeddr.ext.statemachines.structure.StatemachineVarRef" id="7798099075967794997" nodeInfo="ng">
-                  <link role="var" targetNodeId="4663449261074423772" resolveInfo="aVar" />
+                <node role="left" roleId="mj1l.8860443239512128064" type="clqz.StatemachineVarRef" typeId="clqz.1786180596061383227" id="7798099075967794997" nodeInfo="ng">
+                  <link role="var" roleId="clqz.1786180596061383228" targetNodeId="4663449261074423772" resolveInfo="aVar" />
                 </node>
                 <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="7798099075967794998" nodeInfo="ng">
                   <property name="value" nameId="mj1l.8860443239512128104" value="10" />
@@ -464,30 +469,30 @@
                 <property name="name" nameId="tpck.1169194664001" value="firstStmntInEntry" />
               </node>
             </node>
-            <node role="statements" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="9082533278989562007" nodeInfo="ng">
+            <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="9082533278989562007" nodeInfo="ng">
               <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.AssignmentExpr" typeId="mj1l.22102029902365709" id="9082533278989562011" nodeInfo="ng">
                 <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="9082533278989562014" nodeInfo="ng">
                   <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
                   <property name="value" nameId="mj1l.8860443239512128104" value="23" />
                 </node>
-                <node role="left" roleId="mj1l.8860443239512128064" type=".com.mbeddr.ext.statemachines.structure.StatemachineVarRef" id="9082533278989562008" nodeInfo="ng">
-                  <link role="var" targetNodeId="4663449261074423772" resolveInfo="aVar" />
+                <node role="left" roleId="mj1l.8860443239512128064" type="clqz.StatemachineVarRef" typeId="clqz.1786180596061383227" id="9082533278989562008" nodeInfo="ng">
+                  <link role="var" roleId="clqz.1786180596061383228" targetNodeId="4663449261074423772" resolveInfo="aVar" />
                 </node>
               </node>
             </node>
           </node>
         </node>
-        <node role="contents" type=".com.mbeddr.ext.statemachines.structure.Transition" id="8444296659257885041" nodeInfo="ng">
-          <link role="targetState" targetNodeId="4249345261280336723" resolveInfo="blue" />
-          <node role="actions" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="8444296659257885043" nodeInfo="ng">
+        <node role="contents" roleId="clqz.4249345261280348989" type="clqz.Transition" typeId="clqz.5778488248013533883" id="8444296659257885041" nodeInfo="ng">
+          <link role="targetState" roleId="clqz.5778488248013533913" targetNodeId="4249345261280336723" resolveInfo="blue" />
+          <node role="actions" roleId="clqz.5778488248013533907" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="8444296659257885043" nodeInfo="ng">
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="3450485464476995011" nodeInfo="ng">
               <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.AssignmentExpr" typeId="mj1l.22102029902365709" id="3450485464476995012" nodeInfo="ng">
                 <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3450485464476995013" nodeInfo="ng">
                   <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
                   <property name="value" nameId="mj1l.8860443239512128104" value="5" />
                 </node>
-                <node role="left" roleId="mj1l.8860443239512128064" type=".com.mbeddr.ext.statemachines.structure.StatemachineVarRef" id="3450485464476995014" nodeInfo="ng">
-                  <link role="var" targetNodeId="4663449261074423772" resolveInfo="aVar" />
+                <node role="left" roleId="mj1l.8860443239512128064" type="clqz.StatemachineVarRef" typeId="clqz.1786180596061383227" id="3450485464476995014" nodeInfo="ng">
+                  <link role="var" roleId="clqz.1786180596061383228" targetNodeId="4663449261074423772" resolveInfo="aVar" />
                 </node>
               </node>
               <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="rpmx.MarkerAnnotation" typeId="rpmx.4193597469137492628" id="3450485464476995015" nodeInfo="ng">
@@ -500,28 +505,28 @@
                   <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
                   <property name="value" nameId="mj1l.8860443239512128104" value="5" />
                 </node>
-                <node role="left" roleId="mj1l.8860443239512128064" type=".com.mbeddr.ext.statemachines.structure.StatemachineVarRef" id="4141878798835846489" nodeInfo="ng">
-                  <link role="var" targetNodeId="4663449261074423772" resolveInfo="aVar" />
+                <node role="left" roleId="mj1l.8860443239512128064" type="clqz.StatemachineVarRef" typeId="clqz.1786180596061383227" id="4141878798835846489" nodeInfo="ng">
+                  <link role="var" roleId="clqz.1786180596061383228" targetNodeId="4663449261074423772" resolveInfo="aVar" />
                 </node>
               </node>
             </node>
           </node>
-          <node role="trigger" type=".com.mbeddr.ext.statemachines.structure.Trigger" id="8444296659257885044" nodeInfo="ng">
-            <link role="event" targetNodeId="8444296659257885036" resolveInfo="seitch" />
+          <node role="trigger" roleId="clqz.3670856444174351950" type="clqz.Trigger" typeId="clqz.1786180596061233739" id="8444296659257885044" nodeInfo="ng">
+            <link role="event" roleId="clqz.8951398808641876049" targetNodeId="8444296659257885036" resolveInfo="seitch" />
           </node>
-          <node role="smodelAttribute" type="rpmx.MarkerAnnotation" typeId="rpmx.4193597469137492628" id="3450485464476995016" nodeInfo="ng">
+          <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="rpmx.MarkerAnnotation" typeId="rpmx.4193597469137492628" id="3450485464476995016" nodeInfo="ng">
             <property name="name" nameId="tpck.1169194664001" value="onTransitionWithoutCond" />
           </node>
         </node>
       </node>
-      <node role="contents" type=".com.mbeddr.ext.statemachines.structure.State" id="4249345261280336723" nodeInfo="ng">
-        <property name="name" value="blue" />
-        <node role="contents" type=".com.mbeddr.ext.statemachines.structure.Transition" id="2032275818418981896" nodeInfo="ng">
-          <link role="targetState" targetNodeId="4249345261280336723" resolveInfo="blue" />
-          <node role="trigger" type=".com.mbeddr.ext.statemachines.structure.Trigger" id="2032275818418981898" nodeInfo="ng">
-            <link role="event" targetNodeId="3450485464476995109" resolveInfo="nothing" />
+      <node role="contents" roleId="clqz.7835233251114737454" type="clqz.State" typeId="clqz.5778488248013533839" id="4249345261280336723" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="blue" />
+        <node role="contents" roleId="clqz.4249345261280348989" type="clqz.Transition" typeId="clqz.5778488248013533883" id="2032275818418981896" nodeInfo="ng">
+          <link role="targetState" roleId="clqz.5778488248013533913" targetNodeId="4249345261280336723" resolveInfo="blue" />
+          <node role="trigger" roleId="clqz.3670856444174351950" type="clqz.Trigger" typeId="clqz.1786180596061233739" id="2032275818418981898" nodeInfo="ng">
+            <link role="event" roleId="clqz.8951398808641876049" targetNodeId="3450485464476995109" resolveInfo="nothing" />
           </node>
-          <node role="guard" type="k146.DecTab" typeId="k146.6209595569797584861" id="2032275818418981899" nodeInfo="ng">
+          <node role="guard" roleId="clqz.5778488248013533903" type="k146.DecTab" typeId="k146.6209595569797584861" id="2032275818418981899" nodeInfo="ng">
             <node role="xExpr" roleId="k146.6209595569797584862" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="2032275818418981913" nodeInfo="ng">
               <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2032275818418981916" nodeInfo="ng">
                 <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
@@ -567,15 +572,15 @@
             <node role="cExpr" roleId="k146.6209595569797584864" type="mj1l.TrueLiteral" typeId="mj1l.8860443239512128094" id="2032275818418981941" nodeInfo="ng" />
             <node role="def" roleId="k146.4143042878078342166" type="mj1l.TrueLiteral" typeId="mj1l.8860443239512128094" id="2032275818418981909" nodeInfo="ng" />
           </node>
-          <node role="actions" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="2032275818418981946" nodeInfo="ng">
+          <node role="actions" roleId="clqz.5778488248013533907" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="2032275818418981946" nodeInfo="ng">
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="2032275818418981948" nodeInfo="ng">
               <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.AssignmentExpr" typeId="mj1l.22102029902365709" id="2032275818418981952" nodeInfo="ng">
                 <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2032275818418981955" nodeInfo="ng">
                   <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
                   <property name="value" nameId="mj1l.8860443239512128104" value="3" />
                 </node>
-                <node role="left" roleId="mj1l.8860443239512128064" type=".com.mbeddr.ext.statemachines.structure.StatemachineVarRef" id="2032275818418981949" nodeInfo="ng">
-                  <link role="var" targetNodeId="4663449261074423772" resolveInfo="aVar" />
+                <node role="left" roleId="mj1l.8860443239512128064" type="clqz.StatemachineVarRef" typeId="clqz.1786180596061383227" id="2032275818418981949" nodeInfo="ng">
+                  <link role="var" roleId="clqz.1786180596061383228" targetNodeId="4663449261074423772" resolveInfo="aVar" />
                 </node>
               </node>
             </node>
@@ -585,15 +590,15 @@
                   <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
                   <property name="value" nameId="mj1l.8860443239512128104" value="6" />
                 </node>
-                <node role="left" roleId="mj1l.8860443239512128064" type=".com.mbeddr.ext.statemachines.structure.StatemachineVarRef" id="2032275818418981959" nodeInfo="ng">
-                  <link role="var" targetNodeId="4663449261074423772" resolveInfo="aVar" />
+                <node role="left" roleId="mj1l.8860443239512128064" type="clqz.StatemachineVarRef" typeId="clqz.1786180596061383227" id="2032275818418981959" nodeInfo="ng">
+                  <link role="var" roleId="clqz.1786180596061383228" targetNodeId="4663449261074423772" resolveInfo="aVar" />
                 </node>
               </node>
             </node>
           </node>
         </node>
       </node>
-      <node role="contents" type=".com.mbeddr.ext.statemachines.structure.EmptyStatemachineContent" id="6827806583615570183" nodeInfo="ng" />
+      <node role="contents" roleId="clqz.7835233251114737454" type="clqz.EmptyStatemachineContent" typeId="clqz.8927638623067326788" id="6827806583615570183" nodeInfo="ng" />
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="2032275818418993947" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="empty_1370345416473_1" />
@@ -621,7 +626,7 @@
     </node>
   </root>
   <root type="tp5g.TestInfo" typeId="tp5g.5097124989038916362" id="8165847842702726628" nodeInfo="ng">
-    <property name="projectPath" nameId="tp5g.5097124989038916363" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.debugger.tests/debugger-tests.mpr" />
+    <property name="projectPath" nameId="tp5g.5097124989038916363" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.debugger.tests/" />
   </root>
   <root type="mj1l.TypeSizeConfiguration" typeId="mj1l.3335993110369795380" id="4141878798835846421" nodeInfo="ng">
     <node role="pointerDiffType" roleId="mj1l.3813668170744198630" type="mj1l.UnsignedInt32tType" typeId="mj1l.8463282783691618450" id="4141878798835846422" nodeInfo="ng">
