@@ -179,16 +179,18 @@
   </target>
   
   <target name="fetchDependencies">
-    <mkdir dir="${build.tmp}/deps/mps-multiline/mps-multiline.zip" />
-    <unzip src="${artifacts.mps-multiline}/mps-multiline.zip" dest="${build.tmp}/deps/mps-multiline/mps-multiline.zip" />
-    <mkdir dir="${build.tmp}/deps/com.mbeddr.mpsutil.build/com.mbeddr.mpsutil.zip" />
-    <unzip src="${artifacts.com.mbeddr.mpsutil.build}/com.mbeddr.mpsutil.zip" dest="${build.tmp}/deps/com.mbeddr.mpsutil.build/com.mbeddr.mpsutil.zip" />
     <mkdir dir="${build.tmp}/deps/mps-richtext/mps-richtext.zip" />
     <unzip src="${artifacts.mps-richtext}/mps-richtext.zip" dest="${build.tmp}/deps/mps-richtext/mps-richtext.zip" />
-    <mkdir dir="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip" />
-    <unzip src="${artifacts.com.mbeddr.core.build}/com.mbeddr.core.zip" dest="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip" />
     <mkdir dir="${build.tmp}/deps/com.mbeddr.debugger.build/com.mbeddr.core.debugger.zip" />
     <unzip src="${artifacts.com.mbeddr.debugger.build}/com.mbeddr.core.debugger.zip" dest="${build.tmp}/deps/com.mbeddr.debugger.build/com.mbeddr.core.debugger.zip" />
+    <mkdir dir="${build.tmp}/deps/com.mbeddr.mpsutil.build/com.mbeddr.mpsutil.zip" />
+    <unzip src="${artifacts.com.mbeddr.mpsutil.build}/com.mbeddr.mpsutil.zip" dest="${build.tmp}/deps/com.mbeddr.mpsutil.build/com.mbeddr.mpsutil.zip" />
+    <mkdir dir="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip" />
+    <unzip src="${artifacts.com.mbeddr.core.build}/com.mbeddr.core.zip" dest="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip" />
+    <mkdir dir="${build.tmp}/deps/com.mbeddr.spawner.build/com.mbeddr.spawner.zip" />
+    <unzip src="${artifacts.com.mbeddr.spawner.build}/com.mbeddr.spawner.zip" dest="${build.tmp}/deps/com.mbeddr.spawner.build/com.mbeddr.spawner.zip" />
+    <mkdir dir="${build.tmp}/deps/mps-multiline/mps-multiline.zip" />
+    <unzip src="${artifacts.mps-multiline}/mps-multiline.zip" dest="${build.tmp}/deps/mps-multiline/mps-multiline.zip" />
   </target>
   
   <target name="build" depends="assemble, check" />
@@ -211,7 +213,6 @@
   <target name="generate" depends="declare-mps-tasks, fetchDependencies">
     <echo message="generating" />
     <generate parallelMode="true" fork="true">
-      <plugin path="${artifacts.com.mbeddr.spawner.build}/mbeddr.spawner" />
       <plugin path="${artifacts.mps}/plugins/mps-build" />
       <plugin path="${artifacts.mps}/plugins/mps-core/META-INF/plugin.xml/../.." />
       <plugin path="${artifacts.mps}/plugins/mps-debugger-api" />
@@ -222,9 +223,9 @@
       <plugin path="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core" />
       <plugin path="${build.tmp}/deps/com.mbeddr.debugger.build/com.mbeddr.core.debugger.zip/mbeddr.debugger" />
       <plugin path="${build.tmp}/deps/com.mbeddr.mpsutil.build/com.mbeddr.mpsutil.zip/mbeddr.mpsutil" />
+      <plugin path="${build.tmp}/deps/com.mbeddr.spawner.build/com.mbeddr.spawner.zip/mbeddr.spawner" />
       <plugin path="${build.tmp}/deps/mps-multiline/mps-multiline.zip/mps-multiline" />
       <plugin path="${build.tmp}/deps/mps-richtext/mps-richtext.zip/mps-richtext" />
-      <library file="${artifacts.com.mbeddr.spawner.build}/mbeddr.spawner/languages/Eclipse.Debugger.jar" />
       <library file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.blTypes.jar" />
       <library file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.classifiers.jar" />
       <library file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.closures.jar" />
@@ -319,6 +320,7 @@
       <library file="${build.tmp}/deps/com.mbeddr.debugger.build/com.mbeddr.core.debugger.zip/mbeddr.debugger/languages/com.mbeddr.core.debugger/com.mbeddr.core.debug.jar" />
       <library file="${build.tmp}/deps/com.mbeddr.mpsutil.build/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil/com.mbeddr.mpsutil.bldoc.jar" />
       <library file="${build.tmp}/deps/com.mbeddr.mpsutil.build/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil/com.mbeddr.mpsutil.blutil.jar" />
+      <library file="${build.tmp}/deps/com.mbeddr.spawner.build/com.mbeddr.spawner.zip/mbeddr.spawner/languages/Eclipse.Debugger.jar" />
       <library file="${build.tmp}/deps/mps-multiline/mps-multiline.zip/mps-multiline/languages/mps-multiline/de.slisson.mps.editor.multiline.runtime.jar" />
       <library file="${build.tmp}/deps/mps-richtext/mps-richtext.zip/mps-richtext/languages/mps-richtext/de.slisson.mps.richtext.jar" />
       <chunk>
@@ -377,30 +379,30 @@
         <fileset file="${artifacts.mps}/lib/mps-icons.jar" />
         <fileset file="${artifacts.mps}/lib/mps-workbench.jar" />
         <fileset file="${artifacts.mps}/plugins/mps-debugger-api/lib/debugger-api.jar" />
-        <fileset file="${artifacts.com.mbeddr.spawner.build}/mbeddr.spawner/lib/aopalliance.jar" />
-        <fileset file="${artifacts.com.mbeddr.spawner.build}/mbeddr.spawner/lib/cdt.jar" />
-        <fileset file="${artifacts.com.mbeddr.spawner.build}/mbeddr.spawner/lib/cdt-facade.jar" />
-        <fileset file="${artifacts.com.mbeddr.spawner.build}/mbeddr.spawner/lib/com.ibm.icu_4.4.2.v20110823.jar" />
-        <fileset file="${artifacts.com.mbeddr.spawner.build}/mbeddr.spawner/lib/guice-3.0.jar" />
-        <fileset file="${artifacts.com.mbeddr.spawner.build}/mbeddr.spawner/lib/guice-multibindings-3.0.jar" />
-        <fileset file="${artifacts.com.mbeddr.spawner.build}/mbeddr.spawner/lib/javax.inject.jar" />
-        <fileset file="${artifacts.com.mbeddr.spawner.build}/mbeddr.spawner/lib/org.eclipse.core.contenttype_3.4.200.v20120523-2004.jar" />
-        <fileset file="${artifacts.com.mbeddr.spawner.build}/mbeddr.spawner/lib/org.eclipse.core.filebuffers_3.5.200.v20120523-1310.jar" />
-        <fileset file="${artifacts.com.mbeddr.spawner.build}/mbeddr.spawner/lib/org.eclipse.core.filesystem_1.3.200.v20120522-2012.jar" />
-        <fileset file="${artifacts.com.mbeddr.spawner.build}/mbeddr.spawner/lib/org.eclipse.core.jobs_3.5.300.v20120622-204750.jar" />
-        <fileset file="${artifacts.com.mbeddr.spawner.build}/mbeddr.spawner/lib/org.eclipse.core.resources_3.8.1.v20120802-154922.jar" />
-        <fileset file="${artifacts.com.mbeddr.spawner.build}/mbeddr.spawner/lib/org.eclipse.core.runtime_3.8.0.v20120521-2346.jar" />
-        <fileset file="${artifacts.com.mbeddr.spawner.build}/mbeddr.spawner/lib/org.eclipse.core.variables_3.2.600.v20120521-2012.jar" />
-        <fileset file="${artifacts.com.mbeddr.spawner.build}/mbeddr.spawner/lib/org.eclipse.debug.core_3.7.100.v20120521-2012.jar" />
-        <fileset file="${artifacts.com.mbeddr.spawner.build}/mbeddr.spawner/lib/org.eclipse.equinox.app_1.3.100.v20120522-1841.jar" />
-        <fileset file="${artifacts.com.mbeddr.spawner.build}/mbeddr.spawner/lib/org.eclipse.equinox.common_3.6.100.v20120522-1841.jar" />
-        <fileset file="${artifacts.com.mbeddr.spawner.build}/mbeddr.spawner/lib/org.eclipse.equinox.preferences_3.5.0.v20120522-1841.jar" />
-        <fileset file="${artifacts.com.mbeddr.spawner.build}/mbeddr.spawner/lib/org.eclipse.equinox.registry_3.5.200.v20120522-1841.jar" />
-        <fileset file="${artifacts.com.mbeddr.spawner.build}/mbeddr.spawner/lib/org.eclipse.ltk.core.refactoring_3.6.0.v20120523-1543.jar" />
-        <fileset file="${artifacts.com.mbeddr.spawner.build}/mbeddr.spawner/lib/org.eclipse.osgi_3.8.1.v20120830-144521.jar" />
-        <fileset file="${artifacts.com.mbeddr.spawner.build}/mbeddr.spawner/lib/org.eclipse.text_3.5.200.v20120523-1310.jar" />
-        <fileset file="${artifacts.com.mbeddr.spawner.build}/mbeddr.spawner/lib/org.hamcrest.core_1.1.0.v20090501071000.jar" />
-        <fileset file="${artifacts.com.mbeddr.spawner.build}/mbeddr.spawner/lib/runtime_registry_compatibility.jar" />
+        <fileset file="${build.tmp}/deps/com.mbeddr.spawner.build/com.mbeddr.spawner.zip/mbeddr.spawner/lib/aopalliance.jar" />
+        <fileset file="${build.tmp}/deps/com.mbeddr.spawner.build/com.mbeddr.spawner.zip/mbeddr.spawner/lib/cdt.jar" />
+        <fileset file="${build.tmp}/deps/com.mbeddr.spawner.build/com.mbeddr.spawner.zip/mbeddr.spawner/lib/cdt-facade.jar" />
+        <fileset file="${build.tmp}/deps/com.mbeddr.spawner.build/com.mbeddr.spawner.zip/mbeddr.spawner/lib/com.ibm.icu_4.4.2.v20110823.jar" />
+        <fileset file="${build.tmp}/deps/com.mbeddr.spawner.build/com.mbeddr.spawner.zip/mbeddr.spawner/lib/guice-3.0.jar" />
+        <fileset file="${build.tmp}/deps/com.mbeddr.spawner.build/com.mbeddr.spawner.zip/mbeddr.spawner/lib/guice-multibindings-3.0.jar" />
+        <fileset file="${build.tmp}/deps/com.mbeddr.spawner.build/com.mbeddr.spawner.zip/mbeddr.spawner/lib/javax.inject.jar" />
+        <fileset file="${build.tmp}/deps/com.mbeddr.spawner.build/com.mbeddr.spawner.zip/mbeddr.spawner/lib/org.eclipse.core.contenttype_3.4.200.v20120523-2004.jar" />
+        <fileset file="${build.tmp}/deps/com.mbeddr.spawner.build/com.mbeddr.spawner.zip/mbeddr.spawner/lib/org.eclipse.core.filebuffers_3.5.200.v20120523-1310.jar" />
+        <fileset file="${build.tmp}/deps/com.mbeddr.spawner.build/com.mbeddr.spawner.zip/mbeddr.spawner/lib/org.eclipse.core.filesystem_1.3.200.v20120522-2012.jar" />
+        <fileset file="${build.tmp}/deps/com.mbeddr.spawner.build/com.mbeddr.spawner.zip/mbeddr.spawner/lib/org.eclipse.core.jobs_3.5.300.v20120622-204750.jar" />
+        <fileset file="${build.tmp}/deps/com.mbeddr.spawner.build/com.mbeddr.spawner.zip/mbeddr.spawner/lib/org.eclipse.core.resources_3.8.1.v20120802-154922.jar" />
+        <fileset file="${build.tmp}/deps/com.mbeddr.spawner.build/com.mbeddr.spawner.zip/mbeddr.spawner/lib/org.eclipse.core.runtime_3.8.0.v20120521-2346.jar" />
+        <fileset file="${build.tmp}/deps/com.mbeddr.spawner.build/com.mbeddr.spawner.zip/mbeddr.spawner/lib/org.eclipse.core.variables_3.2.600.v20120521-2012.jar" />
+        <fileset file="${build.tmp}/deps/com.mbeddr.spawner.build/com.mbeddr.spawner.zip/mbeddr.spawner/lib/org.eclipse.debug.core_3.7.100.v20120521-2012.jar" />
+        <fileset file="${build.tmp}/deps/com.mbeddr.spawner.build/com.mbeddr.spawner.zip/mbeddr.spawner/lib/org.eclipse.equinox.app_1.3.100.v20120522-1841.jar" />
+        <fileset file="${build.tmp}/deps/com.mbeddr.spawner.build/com.mbeddr.spawner.zip/mbeddr.spawner/lib/org.eclipse.equinox.common_3.6.100.v20120522-1841.jar" />
+        <fileset file="${build.tmp}/deps/com.mbeddr.spawner.build/com.mbeddr.spawner.zip/mbeddr.spawner/lib/org.eclipse.equinox.preferences_3.5.0.v20120522-1841.jar" />
+        <fileset file="${build.tmp}/deps/com.mbeddr.spawner.build/com.mbeddr.spawner.zip/mbeddr.spawner/lib/org.eclipse.equinox.registry_3.5.200.v20120522-1841.jar" />
+        <fileset file="${build.tmp}/deps/com.mbeddr.spawner.build/com.mbeddr.spawner.zip/mbeddr.spawner/lib/org.eclipse.ltk.core.refactoring_3.6.0.v20120523-1543.jar" />
+        <fileset file="${build.tmp}/deps/com.mbeddr.spawner.build/com.mbeddr.spawner.zip/mbeddr.spawner/lib/org.eclipse.osgi_3.8.1.v20120830-144521.jar" />
+        <fileset file="${build.tmp}/deps/com.mbeddr.spawner.build/com.mbeddr.spawner.zip/mbeddr.spawner/lib/org.eclipse.text_3.5.200.v20120523-1310.jar" />
+        <fileset file="${build.tmp}/deps/com.mbeddr.spawner.build/com.mbeddr.spawner.zip/mbeddr.spawner/lib/org.hamcrest.core_1.1.0.v20090501071000.jar" />
+        <fileset file="${build.tmp}/deps/com.mbeddr.spawner.build/com.mbeddr.spawner.zip/mbeddr.spawner/lib/runtime_registry_compatibility.jar" />
         <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.unitTest.libs/bsh-core-2.0b4.jar" />
         <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.unitTest.libs/cglib-nodep-2.1_3.jar" />
         <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.unitTest.libs/hamcrest-core-1.1.jar" />

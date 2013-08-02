@@ -22,14 +22,10 @@
   </path>
   
   <target name="assemble" depends="classes, declare-mps-tasks">
-    <mkdir dir="${build.layout}/mbeddr.spawner" />
-    <mkdir dir="${build.layout}/mbeddr.spawner/META-INF" />
-    <copy todir="${build.layout}/mbeddr.spawner/META-INF">
-      <fileset file="${mbeddr.core}/languages/com.mbeddr.core.spawner/source_gen/com/mbeddr/spawner/loader/plugin.xml" />
-    </copy>
-    <mkdir dir="${build.layout}/mbeddr.spawner/languages" />
-    <mkdir dir="${build.layout}/mbeddr.spawner/languages/com.mbeddr.spawner" />
-    <mkdir dir="${build.layout}/mbeddr.spawner/languages" />
+    <mkdir dir="${build.layout}" />
+    <mkdir dir="${build.tmp}/default/com.mbeddr.spawner.zip" />
+    <mkdir dir="${build.tmp}/default/com.mbeddr.spawner.zip/mbeddr.spawner" />
+    <mkdir dir="${build.tmp}/default/com.mbeddr.spawner.zip/mbeddr.spawner/languages" />
     <mkdir dir="${build.tmp}/default/Eclipse.Debugger.jar" />
     <mkdir dir="${build.tmp}/default/Eclipse.Debugger.jar/META-INF" />
     <echoxml file="${build.tmp}/default/Eclipse.Debugger.jar/META-INF/module.xml">
@@ -64,14 +60,14 @@
         <sources jar="Eclipse.Debugger-src.jar" descriptor="Debugger.msd" />
       </module>
     </echoxml>
-    <jar destfile="${build.layout}/mbeddr.spawner/languages/Eclipse.Debugger.jar">
+    <jar destfile="${build.tmp}/default/com.mbeddr.spawner.zip/mbeddr.spawner/languages/Eclipse.Debugger.jar">
       <fileset dir="${mbeddr.github.core.home}/tools/Eclipse.Debugger" includes="icons/**, resources/**" />
       <fileset dir="${build.tmp}/default/Eclipse.Debugger.jar" />
     </jar>
-    <jar destfile="${build.layout}/mbeddr.spawner/languages/Eclipse.Debugger-src.jar">
+    <jar destfile="${build.tmp}/default/com.mbeddr.spawner.zip/mbeddr.spawner/languages/Eclipse.Debugger-src.jar">
       <zipfileset file="${mbeddr.github.core.home}/tools/Eclipse.Debugger/Debugger.msd" prefix="module" />
     </jar>
-    <mkdir dir="${build.layout}/mbeddr.spawner/lib" />
+    <mkdir dir="${build.tmp}/default/com.mbeddr.spawner.zip/mbeddr.spawner/lib" />
     <mkdir dir="${build.tmp}/default/com.mbeddr.spawner.jar" />
     <mkdir dir="${build.tmp}/default/com.mbeddr.spawner.jar/META-INF" />
     <echoxml file="${build.tmp}/default/com.mbeddr.spawner.jar/META-INF/module.xml">
@@ -90,7 +86,7 @@
         <sources jar="com.mbeddr.spawner-src.jar" descriptor="spawner.msd" />
       </module>
     </echoxml>
-    <jar destfile="${build.layout}/mbeddr.spawner/lib/com.mbeddr.spawner.jar">
+    <jar destfile="${build.tmp}/default/com.mbeddr.spawner.zip/mbeddr.spawner/lib/com.mbeddr.spawner.jar">
       <fileset dir="${build.tmp}/java/out/com.mbeddr.spawner" />
       <fileset dir="${mbeddr.core}/languages/com.mbeddr.core.spawner" includes="icons/**, resources/**" />
       <fileset dir="${build.tmp}/default/com.mbeddr.spawner.jar" />
@@ -101,88 +97,41 @@
     <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-com.mbeddr.core.spawner-models">
       <fileset dir="${mbeddr.core}/languages/com.mbeddr.core.spawner/models" includes="**/*.mps, **/*.metadata, **/*.history" />
     </copyModels>
-    <jar destfile="${build.layout}/mbeddr.spawner/lib/com.mbeddr.spawner-src.jar">
+    <jar destfile="${build.tmp}/default/com.mbeddr.spawner.zip/mbeddr.spawner/lib/com.mbeddr.spawner-src.jar">
       <fileset dir="${mbeddr.core}/languages/com.mbeddr.core.spawner/source_gen" includes="**/*.java" />
       <zipfileset file="${mbeddr.core}/languages/com.mbeddr.core.spawner/spawner.msd" prefix="module" />
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-com.mbeddr.core.spawner" prefix="module/" />
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-com.mbeddr.core.spawner-models" prefix="module/models" />
     </jar>
-    <copy todir="${build.layout}/mbeddr.spawner/lib">
-      <fileset file="${mbeddr.github.core.home}/tools/Eclipse.Debugger/lib/aopalliance.jar" />
-    </copy>
-    <copy todir="${build.layout}/mbeddr.spawner/lib">
-      <fileset file="${mbeddr.github.core.home}/tools/Eclipse.Debugger/lib/cdt.jar" />
-    </copy>
-    <copy todir="${build.layout}/mbeddr.spawner/lib">
-      <fileset file="${mbeddr.github.core.home}/tools/Eclipse.Debugger/lib/cdt-facade.jar" />
-    </copy>
-    <copy todir="${build.layout}/mbeddr.spawner/lib">
-      <fileset file="${mbeddr.github.core.home}/tools/Eclipse.Debugger/lib/com.ibm.icu_4.4.2.v20110823.jar" />
-    </copy>
-    <copy todir="${build.layout}/mbeddr.spawner/lib">
-      <fileset file="${mbeddr.github.core.home}/tools/Eclipse.Debugger/lib/guice-3.0.jar" />
-    </copy>
-    <copy todir="${build.layout}/mbeddr.spawner/lib">
-      <fileset file="${mbeddr.github.core.home}/tools/Eclipse.Debugger/lib/guice-multibindings-3.0.jar" />
-    </copy>
-    <copy todir="${build.layout}/mbeddr.spawner/lib">
-      <fileset file="${mbeddr.github.core.home}/tools/Eclipse.Debugger/lib/javax.inject.jar" />
-    </copy>
-    <copy todir="${build.layout}/mbeddr.spawner/lib">
-      <fileset file="${mbeddr.github.core.home}/tools/Eclipse.Debugger/lib/org.eclipse.core.contenttype_3.4.200.v20120523-2004.jar" />
-    </copy>
-    <copy todir="${build.layout}/mbeddr.spawner/lib">
-      <fileset file="${mbeddr.github.core.home}/tools/Eclipse.Debugger/lib/org.eclipse.core.filebuffers_3.5.200.v20120523-1310.jar" />
-    </copy>
-    <copy todir="${build.layout}/mbeddr.spawner/lib">
-      <fileset file="${mbeddr.github.core.home}/tools/Eclipse.Debugger/lib/org.eclipse.core.filesystem_1.3.200.v20120522-2012.jar" />
-    </copy>
-    <copy todir="${build.layout}/mbeddr.spawner/lib">
-      <fileset file="${mbeddr.github.core.home}/tools/Eclipse.Debugger/lib/org.eclipse.core.jobs_3.5.300.v20120622-204750.jar" />
-    </copy>
-    <copy todir="${build.layout}/mbeddr.spawner/lib">
-      <fileset file="${mbeddr.github.core.home}/tools/Eclipse.Debugger/lib/org.eclipse.core.resources_3.8.1.v20120802-154922.jar" />
-    </copy>
-    <copy todir="${build.layout}/mbeddr.spawner/lib">
-      <fileset file="${mbeddr.github.core.home}/tools/Eclipse.Debugger/lib/org.eclipse.core.runtime_3.8.0.v20120521-2346.jar" />
-    </copy>
-    <copy todir="${build.layout}/mbeddr.spawner/lib">
-      <fileset file="${mbeddr.github.core.home}/tools/Eclipse.Debugger/lib/org.eclipse.core.variables_3.2.600.v20120521-2012.jar" />
-    </copy>
-    <copy todir="${build.layout}/mbeddr.spawner/lib">
-      <fileset file="${mbeddr.github.core.home}/tools/Eclipse.Debugger/lib/org.eclipse.debug.core_3.7.100.v20120521-2012.jar" />
-    </copy>
-    <copy todir="${build.layout}/mbeddr.spawner/lib">
-      <fileset file="${mbeddr.github.core.home}/tools/Eclipse.Debugger/lib/org.eclipse.equinox.app_1.3.100.v20120522-1841.jar" />
-    </copy>
-    <copy todir="${build.layout}/mbeddr.spawner/lib">
-      <fileset file="${mbeddr.github.core.home}/tools/Eclipse.Debugger/lib/org.eclipse.equinox.common_3.6.100.v20120522-1841.jar" />
-    </copy>
-    <copy todir="${build.layout}/mbeddr.spawner/lib">
-      <fileset file="${mbeddr.github.core.home}/tools/Eclipse.Debugger/lib/org.eclipse.equinox.preferences_3.5.0.v20120522-1841.jar" />
-    </copy>
-    <copy todir="${build.layout}/mbeddr.spawner/lib">
-      <fileset file="${mbeddr.github.core.home}/tools/Eclipse.Debugger/lib/org.eclipse.equinox.registry_3.5.200.v20120522-1841.jar" />
-    </copy>
-    <copy todir="${build.layout}/mbeddr.spawner/lib">
-      <fileset file="${mbeddr.github.core.home}/tools/Eclipse.Debugger/lib/org.eclipse.ltk.core.refactoring_3.6.0.v20120523-1543.jar" />
-    </copy>
-    <copy todir="${build.layout}/mbeddr.spawner/lib">
-      <fileset file="${mbeddr.github.core.home}/tools/Eclipse.Debugger/lib/org.eclipse.osgi_3.8.1.v20120830-144521.jar" />
-    </copy>
-    <copy todir="${build.layout}/mbeddr.spawner/lib">
-      <fileset file="${mbeddr.github.core.home}/tools/Eclipse.Debugger/lib/org.eclipse.text_3.5.200.v20120523-1310.jar" />
-    </copy>
-    <copy todir="${build.layout}/mbeddr.spawner/lib">
-      <fileset file="${mbeddr.github.core.home}/tools/Eclipse.Debugger/lib/org.hamcrest.core_1.1.0.v20090501071000.jar" />
-    </copy>
-    <copy todir="${build.layout}/mbeddr.spawner/lib">
-      <fileset file="${mbeddr.github.core.home}/tools/Eclipse.Debugger/lib/runtime_registry_compatibility.jar" />
-    </copy>
-    <mkdir dir="${build.layout}/mbeddr.spawner/lib/spawner" />
-    <copy todir="${build.layout}/mbeddr.spawner/lib/spawner">
-      <fileset dir="${mbeddr.core}/languages/com.mbeddr.core.spawner/data/spawner" />
-    </copy>
+    <zip destfile="${build.layout}/com.mbeddr.spawner.zip">
+      <zipfileset file="${mbeddr.core}/languages/com.mbeddr.core.spawner/source_gen/com/mbeddr/spawner/loader/plugin.xml" prefix="mbeddr.spawner/META-INF" />
+      <zipfileset file="${mbeddr.github.core.home}/tools/Eclipse.Debugger/lib/aopalliance.jar" prefix="mbeddr.spawner/lib" />
+      <zipfileset file="${mbeddr.github.core.home}/tools/Eclipse.Debugger/lib/cdt.jar" prefix="mbeddr.spawner/lib" />
+      <zipfileset file="${mbeddr.github.core.home}/tools/Eclipse.Debugger/lib/cdt-facade.jar" prefix="mbeddr.spawner/lib" />
+      <zipfileset file="${mbeddr.github.core.home}/tools/Eclipse.Debugger/lib/com.ibm.icu_4.4.2.v20110823.jar" prefix="mbeddr.spawner/lib" />
+      <zipfileset file="${mbeddr.github.core.home}/tools/Eclipse.Debugger/lib/guice-3.0.jar" prefix="mbeddr.spawner/lib" />
+      <zipfileset file="${mbeddr.github.core.home}/tools/Eclipse.Debugger/lib/guice-multibindings-3.0.jar" prefix="mbeddr.spawner/lib" />
+      <zipfileset file="${mbeddr.github.core.home}/tools/Eclipse.Debugger/lib/javax.inject.jar" prefix="mbeddr.spawner/lib" />
+      <zipfileset file="${mbeddr.github.core.home}/tools/Eclipse.Debugger/lib/org.eclipse.core.contenttype_3.4.200.v20120523-2004.jar" prefix="mbeddr.spawner/lib" />
+      <zipfileset file="${mbeddr.github.core.home}/tools/Eclipse.Debugger/lib/org.eclipse.core.filebuffers_3.5.200.v20120523-1310.jar" prefix="mbeddr.spawner/lib" />
+      <zipfileset file="${mbeddr.github.core.home}/tools/Eclipse.Debugger/lib/org.eclipse.core.filesystem_1.3.200.v20120522-2012.jar" prefix="mbeddr.spawner/lib" />
+      <zipfileset file="${mbeddr.github.core.home}/tools/Eclipse.Debugger/lib/org.eclipse.core.jobs_3.5.300.v20120622-204750.jar" prefix="mbeddr.spawner/lib" />
+      <zipfileset file="${mbeddr.github.core.home}/tools/Eclipse.Debugger/lib/org.eclipse.core.resources_3.8.1.v20120802-154922.jar" prefix="mbeddr.spawner/lib" />
+      <zipfileset file="${mbeddr.github.core.home}/tools/Eclipse.Debugger/lib/org.eclipse.core.runtime_3.8.0.v20120521-2346.jar" prefix="mbeddr.spawner/lib" />
+      <zipfileset file="${mbeddr.github.core.home}/tools/Eclipse.Debugger/lib/org.eclipse.core.variables_3.2.600.v20120521-2012.jar" prefix="mbeddr.spawner/lib" />
+      <zipfileset file="${mbeddr.github.core.home}/tools/Eclipse.Debugger/lib/org.eclipse.debug.core_3.7.100.v20120521-2012.jar" prefix="mbeddr.spawner/lib" />
+      <zipfileset file="${mbeddr.github.core.home}/tools/Eclipse.Debugger/lib/org.eclipse.equinox.app_1.3.100.v20120522-1841.jar" prefix="mbeddr.spawner/lib" />
+      <zipfileset file="${mbeddr.github.core.home}/tools/Eclipse.Debugger/lib/org.eclipse.equinox.common_3.6.100.v20120522-1841.jar" prefix="mbeddr.spawner/lib" />
+      <zipfileset file="${mbeddr.github.core.home}/tools/Eclipse.Debugger/lib/org.eclipse.equinox.preferences_3.5.0.v20120522-1841.jar" prefix="mbeddr.spawner/lib" />
+      <zipfileset file="${mbeddr.github.core.home}/tools/Eclipse.Debugger/lib/org.eclipse.equinox.registry_3.5.200.v20120522-1841.jar" prefix="mbeddr.spawner/lib" />
+      <zipfileset file="${mbeddr.github.core.home}/tools/Eclipse.Debugger/lib/org.eclipse.ltk.core.refactoring_3.6.0.v20120523-1543.jar" prefix="mbeddr.spawner/lib" />
+      <zipfileset file="${mbeddr.github.core.home}/tools/Eclipse.Debugger/lib/org.eclipse.osgi_3.8.1.v20120830-144521.jar" prefix="mbeddr.spawner/lib" />
+      <zipfileset file="${mbeddr.github.core.home}/tools/Eclipse.Debugger/lib/org.eclipse.text_3.5.200.v20120523-1310.jar" prefix="mbeddr.spawner/lib" />
+      <zipfileset file="${mbeddr.github.core.home}/tools/Eclipse.Debugger/lib/org.hamcrest.core_1.1.0.v20090501071000.jar" prefix="mbeddr.spawner/lib" />
+      <zipfileset file="${mbeddr.github.core.home}/tools/Eclipse.Debugger/lib/runtime_registry_compatibility.jar" prefix="mbeddr.spawner/lib" />
+      <zipfileset dir="${mbeddr.core}/languages/com.mbeddr.core.spawner/data/spawner" prefix="mbeddr.spawner/lib/spawner" />
+      <fileset dir="${build.tmp}/default/com.mbeddr.spawner.zip" />
+    </zip>
     <echo file="${build.layout}/build.properties">mps.build.number=${mps.build.number}${line.separator}mps.date=${mps.date}${line.separator}mps.build.vcs.number=${mps.build.vcs.number}${line.separator}mps.teamcity.buildConfName=${mps.teamcity.buildConfName}${line.separator}mps.idea.platform.build.number=${mps.idea.platform.build.number}${line.separator}mpsBootstrapCore.version=${mpsBootstrapCore.version}</echo>
   </target>
   

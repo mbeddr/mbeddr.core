@@ -4,6 +4,7 @@
     <projectModules>
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.allInOne/allInOne.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.analyses.dev.build/build.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.build.build/com.mbeddr.build.build.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.cc.dev.build/build.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.core.dev.build/build.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.debugger-test.build.dev.build/com.mbeddr.debugger-test.build.dev.build.msd" folder="" />
