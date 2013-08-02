@@ -1,20 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model modelUID="r:4a785a93-c84a-4026-805c-2ae4eb89348d(test.debugging.ext.components.mocks)">
+<model modelUID="r:a792b735-70af-4cd7-8a2a-8db9d7abb7e2(test.debugging.ext.components.mocks@tests)">
   <persistence version="8" />
-  <devkit namespace="87468ddd-5b04-4352-a61d-70ff981afab6(com.mbeddr.debugger-testing)" />
-  <devkit namespace="24565007-e59f-42fc-ac10-da3836deec1c(com.mbeddr.components)" />
-  <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
-  <import index="tpee" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="4" implicit="yes" />
-  <import index="yq40" modelUID="r:152b3fc0-83a1-4bab-a8cd-565eb8483785(com.mbeddr.core.pointers.structure)" version="3" implicit="yes" />
+  <language namespace="f61473f9-130f-42f6-b98d-6c438812c2f6(jetbrains.mps.baseLanguage.unitTest)" />
+  <language namespace="8585453e-6bfb-4d80-98de-b16074f1d86c(jetbrains.mps.lang.test)" />
+  <language namespace="06d68b77-b699-4918-83b8-857e63787800(com.mbeddr.core.unittest)" />
+  <language namespace="3bf5377a-e904-4ded-9754-5a516023bfaa(com.mbeddr.core.pointers)" />
+  <language namespace="a9d69647-0840-491e-bf39-2eb0805d2011(com.mbeddr.core.statements)" />
+  <language namespace="61c69711-ed61-4850-81d9-7714ff227fb0(com.mbeddr.core.expressions)" />
+  <language namespace="2d7fadf5-33f6-4e80-a78f-0f739add2bde(com.mbeddr.core.buildconfig)" />
+  <language namespace="6d11763d-483d-4b2b-8efc-09336c1b0001(com.mbeddr.core.modules)" />
+  <language namespace="f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)" />
+  <language namespace="41911c23-eb23-4ee6-872f-bc7f7ebce290(com.mbeddr.ext.components.test)" />
+  <language namespace="2693fc71-9b0e-4b05-ab13-f57227d675f2(com.mbeddr.core.util)" />
+  <language namespace="89c70b13-7f9c-47c3-b3c2-c218b52ed82c(com.mbeddr.core.debug.test)" />
+  <language namespace="bd640b8f-4be4-42b6-8dc0-2c94d1ddf606(com.mbeddr.ext.components.gen_nomw)" />
+  <language namespace="36a565f1-3fa0-42d6-baac-f87e209c9789(com.mbeddr.ext.components.mock)" />
+  <language namespace="97d24244-51db-4e2e-97fc-7bd73b1f5f40(com.mbeddr.ext.components)" />
   <import index="51wr" modelUID="r:b31f1c3c-99aa-4f1e-a329-cba27efb1a6b(com.mbeddr.core.buildconfig.structure)" version="1" implicit="yes" />
+  <import index="tp5g" modelUID="r:00000000-0000-4000-0000-011c89590388(jetbrains.mps.lang.test.structure)" version="15" implicit="yes" />
+  <import index="v0r9" modelUID="r:277b15fc-1383-4213-8385-5a16481fa36c(com.mbeddr.ext.components.test.structure)" version="4" implicit="yes" />
+  <import index="tpee" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="4" implicit="yes" />
+  <import index="v7ag" modelUID="r:9596407c-f27a-49d3-abde-3a66293c5b61(com.mbeddr.ext.components.structure)" version="19" implicit="yes" />
   <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="15" implicit="yes" />
-  <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="5" implicit="yes" />
-  <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="5" implicit="yes" />
-  <import index="tp5g" modelUID="r:00000000-0000-4000-0000-011c89590388(jetbrains.mps.lang.test.structure)" version="4" implicit="yes" />
+  <import index="yq40" modelUID="r:152b3fc0-83a1-4bab-a8cd-565eb8483785(com.mbeddr.core.pointers.structure)" version="3" implicit="yes" />
   <import index="k146" modelUID="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" version="11" implicit="yes" />
-  <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="23" implicit="yes" />
-  <import index="rpmx" modelUID="r:64720d49-3cb5-4469-81c5-0c62eda0a2cb(com.mbeddr.core.debug.test.structure)" version="88" implicit="yes" />
+  <import index="p7vm" modelUID="r:28fa862e-f94d-4c39-bdf7-a4bdbc773888(com.mbeddr.ext.components.gen_nomw.structure)" version="0" implicit="yes" />
+  <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="4" implicit="yes" />
   <import index="yz9a" modelUID="r:734c02dd-cc16-4184-99eb-5fd9f43aa37e(com.mbeddr.core.unittest.structure)" version="0" implicit="yes" />
+  <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
+  <import index="mxvz" modelUID="r:b92c0a08-d42f-4c78-a3f4-d5f989493286(com.mbeddr.ext.components.mock.structure)" version="-1" implicit="yes" />
+  <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="22" implicit="yes" />
+  <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="5" implicit="yes" />
+  <import index="rpmx" modelUID="r:64720d49-3cb5-4469-81c5-0c62eda0a2cb(com.mbeddr.core.debug.test.structure)" version="88" implicit="yes" />
   <root type="51wr.BuildConfiguration" typeId="51wr.7717755763392524104" id="6305416899339624995" nodeInfo="ng">
     <node role="target" roleId="51wr.5323740605968447026" type="51wr.DesktopPlatform" typeId="51wr.5323740605968447022" id="6305416899339624996" nodeInfo="ng">
       <property name="compiler" nameId="51wr.5323740605968447024" value="gcc" />
@@ -24,9 +41,9 @@
     <node role="configurationItems" roleId="vs0r.4459718605982007338" type="k146.ReportingConfiguration" typeId="k146.4459718605982051949" id="6305416899339624997" nodeInfo="ng">
       <node role="strategy" roleId="k146.4459718605982051999" type="k146.PrintfReportingStrategy" typeId="k146.4459718605982051980" id="6305416899339624998" nodeInfo="ng" />
     </node>
-    <node role="configurationItems" roleId="vs0r.4459718605982007338" type=".com.mbeddr.ext.components.structure.ComponentsConfigItem" id="6305416899339625203" nodeInfo="ng">
-      <node role="genStrategy" type=".com.mbeddr.ext.components.gen_nomw.structure.NoMwComponentsGenStrategy" id="6305416899339625205" nodeInfo="ng">
-        <property name="generateContracts" value="true" />
+    <node role="configurationItems" roleId="vs0r.4459718605982007338" type="v7ag.ComponentsConfigItem" typeId="v7ag.2103658896110121032" id="6305416899339625203" nodeInfo="ng">
+      <node role="genStrategy" roleId="v7ag.2103658896110238743" type="p7vm.NoMwComponentsGenStrategy" typeId="p7vm.2103658896110278831" id="6305416899339625205" nodeInfo="ng">
+        <property name="generateContracts" nameId="p7vm.4768833643347725006" value="true" />
       </node>
     </node>
     <node role="binaries" roleId="51wr.5046689135694070731" type="51wr.Executable" typeId="51wr.5046689135693761554" id="6305416899339624999" nodeInfo="ng">
@@ -45,8 +62,8 @@
       <property name="name" nameId="tpck.1169194664001" value="main" />
       <property name="exported" nameId="x27k.1317894735999272944" value="true" />
       <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="6305416899339624940" nodeInfo="ng">
-        <node role="statements" roleId="c4fa.4185783222026475862" type=".com.mbeddr.ext.components.structure.InitializeConfiguration" id="6305416899339625046" nodeInfo="ng">
-          <link role="config" targetNodeId="6305416899339625034" resolveInfo="instances" />
+        <node role="statements" roleId="c4fa.4185783222026475862" type="v7ag.InitializeConfiguration" typeId="v7ag.591155063063570513" id="6305416899339625046" nodeInfo="ng">
+          <link role="config" roleId="v7ag.591155063063570514" targetNodeId="6305416899339625034" resolveInfo="instances" />
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="x27k.ReturnStatement" typeId="x27k.8967919205527146149" id="6305416899339624943" nodeInfo="ng">
           <node role="expression" roleId="x27k.8967919205527146150" type="yz9a.ExecuteTestExpression" typeId="yz9a.186853311768094629" id="6305416899339695943" nodeInfo="ng">
@@ -94,10 +111,10 @@
       </node>
       <node role="body" roleId="yz9a.6275792049641586525" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="6305416899339695939" nodeInfo="ng">
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="6305416899339695940" nodeInfo="ng">
-          <node role="expr" roleId="c4fa.7254843406768833939" type=".com.mbeddr.ext.components.test.structure.DirectRunnableCall" id="6305416899339695941" nodeInfo="ng">
-            <link role="config" targetNodeId="6305416899339625034" resolveInfo="instances" />
-            <link role="runnable" targetNodeId="6305416899339625025" resolveInfo="doSomething" />
-            <link role="instance" targetNodeId="4390760819953081318" resolveInfo="component2" />
+          <node role="expr" roleId="c4fa.7254843406768833939" type="v0r9.DirectRunnableCall" typeId="v0r9.8230733038424928674" id="6305416899339695941" nodeInfo="ng">
+            <link role="runnable" roleId="v0r9.6105672464781003798" targetNodeId="6305416899339625025" resolveInfo="doSomething" />
+            <link role="config" roleId="v7ag.1482737808881210673" targetNodeId="6305416899339625034" resolveInfo="instances" />
+            <link role="instance" roleId="v7ag.1482737808881210674" targetNodeId="4390760819953081318" resolveInfo="component2" />
           </node>
           <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="rpmx.MarkerAnnotation" typeId="rpmx.4193597469137492628" id="6305416899339704544" nodeInfo="ng">
             <property name="name" nameId="tpck.1169194664001" value="invokingComponent" />
@@ -108,88 +125,88 @@
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="6305416899339625032" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="empty_1365412623447_10" />
     </node>
-    <node role="contents" roleId="x27k.6437088627575722833" type=".com.mbeddr.ext.components.structure.InstanceConfiguration" id="6305416899339625034" nodeInfo="ng">
-      <property name="name" value="instances" />
-      <node role="contents" type=".com.mbeddr.ext.components.structure.ComponentInstance" id="6305416899339625035" nodeInfo="ng">
-        <property name="name" value="mock1" />
-        <link role="component" targetNodeId="6305416899339625005" resolveInfo="ServerPrimitiveMock" />
+    <node role="contents" roleId="x27k.6437088627575722833" type="v7ag.InstanceConfiguration" typeId="v7ag.4491876417845649024" id="6305416899339625034" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="instances" />
+      <node role="contents" roleId="v7ag.7780999115923944213" type="v7ag.ComponentInstance" typeId="v7ag.4491876417845649014" id="6305416899339625035" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="mock1" />
+        <link role="component" roleId="v7ag.4491876417845649015" targetNodeId="6305416899339625005" resolveInfo="ServerPrimitiveMock" />
       </node>
-      <node role="contents" type=".com.mbeddr.ext.components.structure.ComponentInstance" id="4390760819953028998" nodeInfo="ng">
-        <property name="name" value="mock2" />
-        <link role="component" targetNodeId="4390760819953028986" resolveInfo="ServerMockWithSequence" />
+      <node role="contents" roleId="v7ag.7780999115923944213" type="v7ag.ComponentInstance" typeId="v7ag.4491876417845649014" id="4390760819953028998" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="mock2" />
+        <link role="component" roleId="v7ag.4491876417845649015" targetNodeId="4390760819953028986" resolveInfo="ServerMockWithSequence" />
       </node>
-      <node role="contents" type=".com.mbeddr.ext.components.structure.ComponentInstance" id="6305416899339625037" nodeInfo="ng">
-        <property name="name" value="component1" />
-        <link role="component" targetNodeId="6305416899339625008" resolveInfo="Client" />
+      <node role="contents" roleId="v7ag.7780999115923944213" type="v7ag.ComponentInstance" typeId="v7ag.4491876417845649014" id="6305416899339625037" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="component1" />
+        <link role="component" roleId="v7ag.4491876417845649015" targetNodeId="6305416899339625008" resolveInfo="Client" />
       </node>
-      <node role="contents" type=".com.mbeddr.ext.components.structure.ComponentInstance" id="4390760819953081318" nodeInfo="ng">
-        <property name="name" value="component2" />
-        <link role="component" targetNodeId="6305416899339625008" resolveInfo="Client" />
+      <node role="contents" roleId="v7ag.7780999115923944213" type="v7ag.ComponentInstance" typeId="v7ag.4491876417845649014" id="4390760819953081318" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="component2" />
+        <link role="component" roleId="v7ag.4491876417845649015" targetNodeId="6305416899339625008" resolveInfo="Client" />
       </node>
-      <node role="contents" type=".com.mbeddr.ext.components.structure.AssemblyConnector" id="6305416899339625043" nodeInfo="ng">
-        <node role="source" type=".com.mbeddr.ext.components.structure.InstancePortRef" id="6305416899339625044" nodeInfo="ng">
-          <link role="port" targetNodeId="6305416899339625023" resolveInfo="server1" />
-          <link role="instance" targetNodeId="6305416899339625037" resolveInfo="component1" />
+      <node role="contents" roleId="v7ag.7780999115923944213" type="v7ag.AssemblyConnector" typeId="v7ag.4491876417845649016" id="6305416899339625043" nodeInfo="ng">
+        <node role="source" roleId="v7ag.4491876417845649020" type="v7ag.InstancePortRef" typeId="v7ag.4491876417845649017" id="6305416899339625044" nodeInfo="ng">
+          <link role="instance" roleId="v7ag.4491876417845649018" targetNodeId="6305416899339625037" resolveInfo="component1" />
+          <link role="port" roleId="v7ag.3444913373458569211" targetNodeId="6305416899339625023" resolveInfo="server1" />
         </node>
-        <node role="target" type=".com.mbeddr.ext.components.structure.InstancePortRef" id="6305416899339625045" nodeInfo="ng">
-          <link role="instance" targetNodeId="6305416899339625035" resolveInfo="mock1" />
-          <link role="port" targetNodeId="6305416899339625018" resolveInfo="server" />
-        </node>
-      </node>
-      <node role="contents" type=".com.mbeddr.ext.components.structure.AssemblyConnector" id="2906074397379137726" nodeInfo="ng">
-        <node role="source" type=".com.mbeddr.ext.components.structure.InstancePortRef" id="2906074397379137727" nodeInfo="ng">
-          <link role="instance" targetNodeId="6305416899339625037" resolveInfo="component1" />
-          <link role="port" targetNodeId="2906074397379137725" resolveInfo="server2" />
-        </node>
-        <node role="target" type=".com.mbeddr.ext.components.structure.InstancePortRef" id="2906074397379137728" nodeInfo="ng">
-          <link role="instance" targetNodeId="4390760819953028998" resolveInfo="mock2" />
-          <link role="port" targetNodeId="4390760819953028987" resolveInfo="server" />
+        <node role="target" roleId="v7ag.4491876417845649021" type="v7ag.InstancePortRef" typeId="v7ag.4491876417845649017" id="6305416899339625045" nodeInfo="ng">
+          <link role="instance" roleId="v7ag.4491876417845649018" targetNodeId="6305416899339625035" resolveInfo="mock1" />
+          <link role="port" roleId="v7ag.3444913373458569211" targetNodeId="6305416899339625018" resolveInfo="server" />
         </node>
       </node>
-      <node role="contents" type=".com.mbeddr.ext.components.structure.AssemblyConnector" id="4390760819953081319" nodeInfo="ng">
-        <node role="source" type=".com.mbeddr.ext.components.structure.InstancePortRef" id="4390760819953081320" nodeInfo="ng">
-          <link role="instance" targetNodeId="4390760819953081318" resolveInfo="component2" />
-          <link role="port" targetNodeId="2906074397379137725" resolveInfo="server2" />
+      <node role="contents" roleId="v7ag.7780999115923944213" type="v7ag.AssemblyConnector" typeId="v7ag.4491876417845649016" id="2906074397379137726" nodeInfo="ng">
+        <node role="source" roleId="v7ag.4491876417845649020" type="v7ag.InstancePortRef" typeId="v7ag.4491876417845649017" id="2906074397379137727" nodeInfo="ng">
+          <link role="port" roleId="v7ag.3444913373458569211" targetNodeId="2906074397379137725" resolveInfo="server2" />
+          <link role="instance" roleId="v7ag.4491876417845649018" targetNodeId="6305416899339625037" resolveInfo="component1" />
         </node>
-        <node role="target" type=".com.mbeddr.ext.components.structure.InstancePortRef" id="4390760819953081321" nodeInfo="ng">
-          <link role="instance" targetNodeId="6305416899339625035" resolveInfo="mock1" />
-          <link role="port" targetNodeId="6305416899339625018" resolveInfo="server" />
+        <node role="target" roleId="v7ag.4491876417845649021" type="v7ag.InstancePortRef" typeId="v7ag.4491876417845649017" id="2906074397379137728" nodeInfo="ng">
+          <link role="instance" roleId="v7ag.4491876417845649018" targetNodeId="4390760819953028998" resolveInfo="mock2" />
+          <link role="port" roleId="v7ag.3444913373458569211" targetNodeId="4390760819953028987" resolveInfo="server" />
         </node>
       </node>
-      <node role="contents" type=".com.mbeddr.ext.components.structure.AssemblyConnector" id="2906074397379137729" nodeInfo="ng">
-        <node role="source" type=".com.mbeddr.ext.components.structure.InstancePortRef" id="2906074397379137730" nodeInfo="ng">
-          <link role="instance" targetNodeId="4390760819953081318" resolveInfo="component2" />
-          <link role="port" targetNodeId="6305416899339625023" resolveInfo="server1" />
+      <node role="contents" roleId="v7ag.7780999115923944213" type="v7ag.AssemblyConnector" typeId="v7ag.4491876417845649016" id="4390760819953081319" nodeInfo="ng">
+        <node role="source" roleId="v7ag.4491876417845649020" type="v7ag.InstancePortRef" typeId="v7ag.4491876417845649017" id="4390760819953081320" nodeInfo="ng">
+          <link role="instance" roleId="v7ag.4491876417845649018" targetNodeId="4390760819953081318" resolveInfo="component2" />
+          <link role="port" roleId="v7ag.3444913373458569211" targetNodeId="2906074397379137725" resolveInfo="server2" />
         </node>
-        <node role="target" type=".com.mbeddr.ext.components.structure.InstancePortRef" id="2906074397379137731" nodeInfo="ng">
-          <link role="instance" targetNodeId="4390760819953028998" resolveInfo="mock2" />
-          <link role="port" targetNodeId="4390760819953028987" resolveInfo="server" />
+        <node role="target" roleId="v7ag.4491876417845649021" type="v7ag.InstancePortRef" typeId="v7ag.4491876417845649017" id="4390760819953081321" nodeInfo="ng">
+          <link role="port" roleId="v7ag.3444913373458569211" targetNodeId="6305416899339625018" resolveInfo="server" />
+          <link role="instance" roleId="v7ag.4491876417845649018" targetNodeId="6305416899339625035" resolveInfo="mock1" />
+        </node>
+      </node>
+      <node role="contents" roleId="v7ag.7780999115923944213" type="v7ag.AssemblyConnector" typeId="v7ag.4491876417845649016" id="2906074397379137729" nodeInfo="ng">
+        <node role="source" roleId="v7ag.4491876417845649020" type="v7ag.InstancePortRef" typeId="v7ag.4491876417845649017" id="2906074397379137730" nodeInfo="ng">
+          <link role="instance" roleId="v7ag.4491876417845649018" targetNodeId="4390760819953081318" resolveInfo="component2" />
+          <link role="port" roleId="v7ag.3444913373458569211" targetNodeId="6305416899339625023" resolveInfo="server1" />
+        </node>
+        <node role="target" roleId="v7ag.4491876417845649021" type="v7ag.InstancePortRef" typeId="v7ag.4491876417845649017" id="2906074397379137731" nodeInfo="ng">
+          <link role="port" roleId="v7ag.3444913373458569211" targetNodeId="4390760819953028987" resolveInfo="server" />
+          <link role="instance" roleId="v7ag.4491876417845649018" targetNodeId="4390760819953028998" resolveInfo="mock2" />
         </node>
       </node>
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="6305416899339625031" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="empty_1365412621272_9" />
     </node>
-    <node role="contents" roleId="x27k.6437088627575722833" type=".com.mbeddr.ext.components.structure.ClientServerInterface" id="6305416899339625011" nodeInfo="ng">
-      <property name="exported" value="true" />
-      <property name="name" value="DoSomething" />
-      <node role="contents" type=".com.mbeddr.ext.components.structure.Operation" id="6305416899339625016" nodeInfo="ng">
-        <property name="name" value="doSomething" />
-        <node role="type" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="6305416899339625017" nodeInfo="ng">
+    <node role="contents" roleId="x27k.6437088627575722833" type="v7ag.ClientServerInterface" typeId="v7ag.4491876417845484922" id="6305416899339625011" nodeInfo="ng">
+      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
+      <property name="name" nameId="tpck.1169194664001" value="DoSomething" />
+      <node role="contents" roleId="v7ag.4491876417845484926" type="v7ag.Operation" typeId="v7ag.4491876417845484924" id="6305416899339625016" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="doSomething" />
+        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="6305416899339625017" nodeInfo="ng">
           <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
           <property name="const" nameId="mj1l.2941277002445651368" value="false" />
         </node>
       </node>
-      <node role="contents" type=".com.mbeddr.ext.components.structure.Operation" id="6305416899339697539" nodeInfo="ng">
-        <property name="name" value="ready" />
-        <node role="parameters" type=".com.mbeddr.ext.components.structure.OperationParameter" id="4390760819953028993" nodeInfo="ng">
-          <property name="name" value="a" />
-          <node role="type" type="mj1l.Int32tType" typeId="mj1l.8463282783691618440" id="4390760819953028994" nodeInfo="ng">
+      <node role="contents" roleId="v7ag.4491876417845484926" type="v7ag.Operation" typeId="v7ag.4491876417845484924" id="6305416899339697539" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="ready" />
+        <node role="parameters" roleId="v7ag.4491876417845683832" type="v7ag.OperationParameter" typeId="v7ag.4491876417845683828" id="4390760819953028993" nodeInfo="ng">
+          <property name="name" nameId="tpck.1169194664001" value="a" />
+          <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int32tType" typeId="mj1l.8463282783691618440" id="4390760819953028994" nodeInfo="ng">
             <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
             <property name="const" nameId="mj1l.2941277002445651368" value="false" />
           </node>
         </node>
-        <node role="type" type="mj1l.BooleanType" typeId="mj1l.8860443239512128058" id="6305416899339697541" nodeInfo="ng">
+        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.BooleanType" typeId="mj1l.8860443239512128058" id="6305416899339697541" nodeInfo="ng">
           <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
           <property name="const" nameId="mj1l.2941277002445651368" value="false" />
         </node>
@@ -198,55 +215,55 @@
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="6305416899339625010" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="empty_1365412530037_8" />
     </node>
-    <node role="contents" roleId="x27k.6437088627575722833" type=".com.mbeddr.ext.components.mock.structure.MockComponent" id="6305416899339625005" nodeInfo="ng">
-      <property name="reportMessages" value="true" />
-      <property name="name" value="ServerPrimitiveMock" />
-      <node role="contents" type=".com.mbeddr.ext.components.structure.ProvidedPort" id="6305416899339625018" nodeInfo="ng">
-        <property name="name" value="server" />
-        <link role="intf" targetNodeId="6305416899339625011" resolveInfo="DoSomething" />
+    <node role="contents" roleId="x27k.6437088627575722833" type="mxvz.MockComponent" typeId="mxvz.2151335435833216353" id="6305416899339625005" nodeInfo="ng">
+      <property name="reportMessages" nameId="mxvz.4331139697889880620" value="true" />
+      <property name="name" nameId="tpck.1169194664001" value="ServerPrimitiveMock" />
+      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.ProvidedPort" typeId="v7ag.4491876417845628840" id="6305416899339625018" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="server" />
+        <link role="intf" roleId="v7ag.4491876417845484932" targetNodeId="6305416899339625011" resolveInfo="DoSomething" />
       </node>
-      <node role="contents" type=".com.mbeddr.ext.components.mock.structure.ExpectTotalNoOfCalls" id="2906074397379137733" nodeInfo="ng">
-        <property name="noOfCalls" value="1" />
+      <node role="contents" roleId="v7ag.6041318036221669720" type="mxvz.ExpectTotalNoOfCalls" typeId="mxvz.4957503999940758571" id="2906074397379137733" nodeInfo="ng">
+        <property name="noOfCalls" nameId="mxvz.4957503999940761153" value="1" />
       </node>
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="4390760819953028984" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="empty_1365592400147_1" />
     </node>
-    <node role="contents" roleId="x27k.6437088627575722833" type=".com.mbeddr.ext.components.mock.structure.MockComponent" id="4390760819953028986" nodeInfo="ng">
-      <property name="reportMessages" value="true" />
-      <property name="name" value="ServerMockWithSequence" />
-      <node role="contents" type=".com.mbeddr.ext.components.structure.ProvidedPort" id="4390760819953028987" nodeInfo="ng">
-        <property name="name" value="server" />
-        <link role="intf" targetNodeId="6305416899339625011" resolveInfo="DoSomething" />
+    <node role="contents" roleId="x27k.6437088627575722833" type="mxvz.MockComponent" typeId="mxvz.2151335435833216353" id="4390760819953028986" nodeInfo="ng">
+      <property name="reportMessages" nameId="mxvz.4331139697889880620" value="true" />
+      <property name="name" nameId="tpck.1169194664001" value="ServerMockWithSequence" />
+      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.ProvidedPort" typeId="v7ag.4491876417845628840" id="4390760819953028987" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="server" />
+        <link role="intf" roleId="v7ag.4491876417845484932" targetNodeId="6305416899339625011" resolveInfo="DoSomething" />
       </node>
-      <node role="contents" type=".com.mbeddr.ext.components.structure.Field" id="3629580915884388813" nodeInfo="ng">
-        <property name="name" value="bla" />
-        <node role="type" type="mj1l.Int32tType" typeId="mj1l.8463282783691618440" id="3629580915884388814" nodeInfo="ng">
+      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Field" typeId="v7ag.5308710777891512019" id="3629580915884388813" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="bla" />
+        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int32tType" typeId="mj1l.8463282783691618440" id="3629580915884388814" nodeInfo="ng">
           <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
           <property name="const" nameId="mj1l.2941277002445651368" value="false" />
         </node>
-        <node role="init" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3629580915884388816" nodeInfo="ng">
+        <node role="init" roleId="v7ag.5308710777891512022" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3629580915884388816" nodeInfo="ng">
           <property name="value" nameId="mj1l.8860443239512128104" value="0" />
         </node>
       </node>
-      <node role="contents" type=".com.mbeddr.ext.components.mock.structure.SequenceExpectation" id="7635126078858676544" nodeInfo="ng">
-        <node role="steps" type=".com.mbeddr.ext.components.mock.structure.Step" id="7936036100143319330" nodeInfo="ng">
-          <link role="port" targetNodeId="4390760819953028987" resolveInfo="server" />
-          <link role="op" targetNodeId="6305416899339697539" resolveInfo="ready" />
-          <node role="returnValue" type="mj1l.TrueLiteral" typeId="mj1l.8860443239512128094" id="7936036100143319331" nodeInfo="ng" />
-          <node role="smodelAttribute" type="rpmx.MarkerAnnotation" typeId="rpmx.4193597469137492628" id="1095141890318300352" nodeInfo="ng">
+      <node role="contents" roleId="v7ag.6041318036221669720" type="mxvz.SequenceExpectation" typeId="mxvz.4957503999940784579" id="7635126078858676544" nodeInfo="ng">
+        <node role="steps" roleId="mxvz.4957503999940784582" type="mxvz.Step" typeId="mxvz.4957503999940784581" id="7936036100143319330" nodeInfo="ng">
+          <link role="port" roleId="mxvz.4957503999940788277" targetNodeId="4390760819953028987" resolveInfo="server" />
+          <link role="op" roleId="mxvz.4957503999940788278" targetNodeId="6305416899339697539" resolveInfo="ready" />
+          <node role="returnValue" roleId="mxvz.4957503999941129330" type="mj1l.TrueLiteral" typeId="mj1l.8860443239512128094" id="7936036100143319331" nodeInfo="ng" />
+          <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="rpmx.MarkerAnnotation" typeId="rpmx.4193597469137492628" id="1095141890318300352" nodeInfo="ng">
             <property name="name" nameId="tpck.1169194664001" value="1stStep" />
           </node>
         </node>
-        <node role="steps" type=".com.mbeddr.ext.components.mock.structure.Step" id="7635126078858676545" nodeInfo="ng">
-          <link role="port" targetNodeId="4390760819953028987" resolveInfo="server" />
-          <link role="op" targetNodeId="6305416899339625016" resolveInfo="doSomething" />
+        <node role="steps" roleId="mxvz.4957503999940784582" type="mxvz.Step" typeId="mxvz.4957503999940784581" id="7635126078858676545" nodeInfo="ng">
+          <link role="port" roleId="mxvz.4957503999940788277" targetNodeId="4390760819953028987" resolveInfo="server" />
+          <link role="op" roleId="mxvz.4957503999940788278" targetNodeId="6305416899339625016" resolveInfo="doSomething" />
         </node>
-        <node role="steps" type=".com.mbeddr.ext.components.mock.structure.Step" id="7635126078858676551" nodeInfo="ng">
-          <link role="port" targetNodeId="4390760819953028987" resolveInfo="server" />
-          <link role="op" targetNodeId="6305416899339697539" resolveInfo="ready" />
-          <node role="returnValue" type="mj1l.TrueLiteral" typeId="mj1l.8860443239512128094" id="7635126078858676553" nodeInfo="ng" />
-          <node role="body" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="3629580915884310110" nodeInfo="ng">
+        <node role="steps" roleId="mxvz.4957503999940784582" type="mxvz.Step" typeId="mxvz.4957503999940784581" id="7635126078858676551" nodeInfo="ng">
+          <link role="port" roleId="mxvz.4957503999940788277" targetNodeId="4390760819953028987" resolveInfo="server" />
+          <link role="op" roleId="mxvz.4957503999940788278" targetNodeId="6305416899339697539" resolveInfo="ready" />
+          <node role="returnValue" roleId="mxvz.4957503999941129330" type="mj1l.TrueLiteral" typeId="mj1l.8860443239512128094" id="7635126078858676553" nodeInfo="ng" />
+          <node role="body" roleId="mxvz.5160057464295244586" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="3629580915884310110" nodeInfo="ng">
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="3629580915884311074" nodeInfo="ng">
               <property name="name" nameId="tpck.1169194664001" value="blaa" />
               <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int32tType" typeId="mj1l.8463282783691618440" id="3629580915884311075" nodeInfo="ng">
@@ -264,58 +281,58 @@
             </node>
           </node>
         </node>
-        <node role="steps" type=".com.mbeddr.ext.components.mock.structure.Step" id="7635126078858679893" nodeInfo="ng">
-          <link role="port" targetNodeId="4390760819953028987" resolveInfo="server" />
-          <link role="op" targetNodeId="6305416899339697539" resolveInfo="ready" />
-          <node role="assertions" type=".com.mbeddr.ext.components.mock.structure.ParamterAssertion" id="5833350030648443320" nodeInfo="ng">
-            <link role="param" targetNodeId="4390760819953028993" resolveInfo="a" />
-            <node role="expr" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="5833350030648443326" nodeInfo="ng">
+        <node role="steps" roleId="mxvz.4957503999940784582" type="mxvz.Step" typeId="mxvz.4957503999940784581" id="7635126078858679893" nodeInfo="ng">
+          <link role="port" roleId="mxvz.4957503999940788277" targetNodeId="4390760819953028987" resolveInfo="server" />
+          <link role="op" roleId="mxvz.4957503999940788278" targetNodeId="6305416899339697539" resolveInfo="ready" />
+          <node role="assertions" roleId="mxvz.4957503999941447514" type="mxvz.ParamterAssertion" typeId="mxvz.4957503999941447492" id="5833350030648443320" nodeInfo="ng">
+            <link role="param" roleId="mxvz.4957503999941447495" targetNodeId="4390760819953028993" resolveInfo="a" />
+            <node role="expr" roleId="mxvz.4331139697889521540" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="5833350030648443326" nodeInfo="ng">
               <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="5833350030648443329" nodeInfo="ng">
                 <property name="value" nameId="mj1l.8860443239512128104" value="3" />
               </node>
-              <node role="left" roleId="mj1l.8860443239512128064" type=".com.mbeddr.ext.components.mock.structure.ParamRefExpression" id="4390760819953028995" nodeInfo="ng">
-                <link role="param" targetNodeId="4390760819953028993" resolveInfo="a" />
+              <node role="left" roleId="mj1l.8860443239512128064" type="mxvz.ParamRefExpression" typeId="mxvz.4331139697889290796" id="4390760819953028995" nodeInfo="ng">
+                <link role="param" roleId="mxvz.4331139697889301323" targetNodeId="4390760819953028993" resolveInfo="a" />
               </node>
             </node>
-            <node role="smodelAttribute" type="rpmx.MarkerAnnotation" typeId="rpmx.4193597469137492628" id="2906074397379298768" nodeInfo="ng">
+            <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="rpmx.MarkerAnnotation" typeId="rpmx.4193597469137492628" id="2906074397379298768" nodeInfo="ng">
               <property name="name" nameId="tpck.1169194664001" value="failingAssertion" />
             </node>
           </node>
-          <node role="assertions" type=".com.mbeddr.ext.components.mock.structure.ParamterAssertion" id="7635126078858679895" nodeInfo="ng">
-            <link role="param" targetNodeId="4390760819953028993" resolveInfo="a" />
-            <node role="expr" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="7635126078858679896" nodeInfo="ng">
+          <node role="assertions" roleId="mxvz.4957503999941447514" type="mxvz.ParamterAssertion" typeId="mxvz.4957503999941447492" id="7635126078858679895" nodeInfo="ng">
+            <link role="param" roleId="mxvz.4957503999941447495" targetNodeId="4390760819953028993" resolveInfo="a" />
+            <node role="expr" roleId="mxvz.4331139697889521540" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="7635126078858679896" nodeInfo="ng">
               <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="7635126078858679897" nodeInfo="ng">
                 <property name="value" nameId="mj1l.8860443239512128104" value="2" />
               </node>
-              <node role="left" roleId="mj1l.8860443239512128064" type=".com.mbeddr.ext.components.mock.structure.ParamRefExpression" id="4390760819953028996" nodeInfo="ng">
-                <link role="param" targetNodeId="4390760819953028993" resolveInfo="a" />
+              <node role="left" roleId="mj1l.8860443239512128064" type="mxvz.ParamRefExpression" typeId="mxvz.4331139697889290796" id="4390760819953028996" nodeInfo="ng">
+                <link role="param" roleId="mxvz.4331139697889301323" targetNodeId="4390760819953028993" resolveInfo="a" />
               </node>
             </node>
           </node>
-          <node role="returnValue" type="mj1l.FalseLiteral" typeId="mj1l.8860443239512128099" id="7635126078858679900" nodeInfo="ng" />
+          <node role="returnValue" roleId="mxvz.4957503999941129330" type="mj1l.FalseLiteral" typeId="mj1l.8860443239512128099" id="7635126078858679900" nodeInfo="ng" />
         </node>
       </node>
-      <node role="contents" type=".com.mbeddr.ext.components.mock.structure.ExpectNoCall" id="5528592168124404099" nodeInfo="ng" />
+      <node role="contents" roleId="v7ag.6041318036221669720" type="mxvz.ExpectNoCall" typeId="mxvz.2151335435833308548" id="5528592168124404099" nodeInfo="ng" />
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="6305416899339625006" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="empty_1365412511528_5" />
     </node>
-    <node role="contents" roleId="x27k.6437088627575722833" type=".com.mbeddr.ext.components.structure.AtomicComponent" id="6305416899339625008" nodeInfo="ng">
-      <property name="exported" value="true" />
-      <property name="name" value="Client" />
-      <node role="contents" type=".com.mbeddr.ext.components.structure.RequiredPort" id="6305416899339625023" nodeInfo="ng">
-        <property name="name" value="server1" />
-        <property name="optional" value="false" />
-        <link role="intf" targetNodeId="6305416899339625011" resolveInfo="DoSomething" />
+    <node role="contents" roleId="x27k.6437088627575722833" type="v7ag.AtomicComponent" typeId="v7ag.4491876417845649011" id="6305416899339625008" nodeInfo="ng">
+      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
+      <property name="name" nameId="tpck.1169194664001" value="Client" />
+      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.RequiredPort" typeId="v7ag.4491876417845628841" id="6305416899339625023" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="server1" />
+        <property name="optional" nameId="v7ag.349917904115138509" value="false" />
+        <link role="intf" roleId="v7ag.4491876417845484932" targetNodeId="6305416899339625011" resolveInfo="DoSomething" />
       </node>
-      <node role="contents" type=".com.mbeddr.ext.components.structure.RequiredPort" id="2906074397379137725" nodeInfo="ng">
-        <property name="name" value="server2" />
-        <property name="optional" value="false" />
-        <link role="intf" targetNodeId="6305416899339625011" resolveInfo="DoSomething" />
+      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.RequiredPort" typeId="v7ag.4491876417845628841" id="2906074397379137725" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="server2" />
+        <property name="optional" nameId="v7ag.349917904115138509" value="false" />
+        <link role="intf" roleId="v7ag.4491876417845484932" targetNodeId="6305416899339625011" resolveInfo="DoSomething" />
       </node>
-      <node role="contents" type=".com.mbeddr.ext.components.structure.Runnable" id="6305416899339625025" nodeInfo="ng">
-        <property name="name" value="doSomething" />
-        <node role="body" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="6305416899339625026" nodeInfo="ng">
+      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="6305416899339625025" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="doSomething" />
+        <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="6305416899339625026" nodeInfo="ng">
           <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="6305416899339696461" nodeInfo="ng">
             <property name="name" nameId="tpck.1169194664001" value="dummy" />
             <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int32tType" typeId="mj1l.8463282783691618440" id="6305416899339696462" nodeInfo="ng">
@@ -330,28 +347,28 @@
             </node>
           </node>
           <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="2906074397379137735" nodeInfo="ng">
-            <node role="expr" roleId="c4fa.7254843406768833939" type=".com.mbeddr.ext.components.structure.RequiredPortOpCallExpr" id="2906074397379137739" nodeInfo="ng">
-              <link role="operation" targetNodeId="6305416899339625016" resolveInfo="doSomething" />
-              <node role="expression" type=".com.mbeddr.ext.components.structure.PortRefExpr" id="2906074397379137736" nodeInfo="ng">
-                <link role="port" targetNodeId="2906074397379137725" resolveInfo="server2" />
+            <node role="expr" roleId="c4fa.7254843406768833939" type="v7ag.RequiredPortOpCallExpr" typeId="v7ag.466603768608442377" id="2906074397379137739" nodeInfo="ng">
+              <link role="operation" roleId="v7ag.8105003328815071752" targetNodeId="6305416899339625016" resolveInfo="doSomething" />
+              <node role="expression" roleId="mj1l.7254843406768839760" type="v7ag.PortRefExpr" typeId="v7ag.8105003328815208362" id="2906074397379137736" nodeInfo="ng">
+                <link role="port" roleId="v7ag.8105003328815208363" targetNodeId="2906074397379137725" resolveInfo="server2" />
               </node>
             </node>
           </node>
           <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="2906074397379236466" nodeInfo="ng">
-            <node role="expr" roleId="c4fa.7254843406768833939" type=".com.mbeddr.ext.components.structure.RequiredPortOpCallExpr" id="2906074397379236467" nodeInfo="ng">
-              <link role="operation" targetNodeId="6305416899339625016" resolveInfo="doSomething" />
-              <node role="expression" type=".com.mbeddr.ext.components.structure.PortRefExpr" id="2906074397379236468" nodeInfo="ng">
-                <link role="port" targetNodeId="2906074397379137725" resolveInfo="server2" />
+            <node role="expr" roleId="c4fa.7254843406768833939" type="v7ag.RequiredPortOpCallExpr" typeId="v7ag.466603768608442377" id="2906074397379236467" nodeInfo="ng">
+              <link role="operation" roleId="v7ag.8105003328815071752" targetNodeId="6305416899339625016" resolveInfo="doSomething" />
+              <node role="expression" roleId="mj1l.7254843406768839760" type="v7ag.PortRefExpr" typeId="v7ag.8105003328815208362" id="2906074397379236468" nodeInfo="ng">
+                <link role="port" roleId="v7ag.8105003328815208363" targetNodeId="2906074397379137725" resolveInfo="server2" />
               </node>
             </node>
           </node>
           <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="1095141890318176564" nodeInfo="ng">
-            <node role="expr" roleId="c4fa.7254843406768833939" type=".com.mbeddr.ext.components.structure.RequiredPortOpCallExpr" id="1095141890318176568" nodeInfo="ng">
-              <link role="operation" targetNodeId="6305416899339697539" resolveInfo="ready" />
-              <node role="expression" type=".com.mbeddr.ext.components.structure.PortRefExpr" id="1095141890318176565" nodeInfo="ng">
-                <link role="port" targetNodeId="6305416899339625023" resolveInfo="server1" />
+            <node role="expr" roleId="c4fa.7254843406768833939" type="v7ag.RequiredPortOpCallExpr" typeId="v7ag.466603768608442377" id="1095141890318176568" nodeInfo="ng">
+              <link role="operation" roleId="v7ag.8105003328815071752" targetNodeId="6305416899339697539" resolveInfo="ready" />
+              <node role="expression" roleId="mj1l.7254843406768839760" type="v7ag.PortRefExpr" typeId="v7ag.8105003328815208362" id="1095141890318176565" nodeInfo="ng">
+                <link role="port" roleId="v7ag.8105003328815208363" targetNodeId="6305416899339625023" resolveInfo="server1" />
               </node>
-              <node role="actuals" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="1095141890318176569" nodeInfo="ng">
+              <node role="actuals" roleId="v7ag.8105003328815091213" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="1095141890318176569" nodeInfo="ng">
                 <property name="value" nameId="mj1l.8860443239512128104" value="3" />
               </node>
             </node>
@@ -360,10 +377,10 @@
             </node>
           </node>
           <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="6305416899339696455" nodeInfo="ng">
-            <node role="expr" roleId="c4fa.7254843406768833939" type=".com.mbeddr.ext.components.structure.RequiredPortOpCallExpr" id="6305416899339696459" nodeInfo="ng">
-              <link role="operation" targetNodeId="6305416899339625016" resolveInfo="doSomething" />
-              <node role="expression" type=".com.mbeddr.ext.components.structure.PortRefExpr" id="6305416899339696456" nodeInfo="ng">
-                <link role="port" targetNodeId="6305416899339625023" resolveInfo="server1" />
+            <node role="expr" roleId="c4fa.7254843406768833939" type="v7ag.RequiredPortOpCallExpr" typeId="v7ag.466603768608442377" id="6305416899339696459" nodeInfo="ng">
+              <link role="operation" roleId="v7ag.8105003328815071752" targetNodeId="6305416899339625016" resolveInfo="doSomething" />
+              <node role="expression" roleId="mj1l.7254843406768839760" type="v7ag.PortRefExpr" typeId="v7ag.8105003328815208362" id="6305416899339696456" nodeInfo="ng">
+                <link role="port" roleId="v7ag.8105003328815208363" targetNodeId="6305416899339625023" resolveInfo="server1" />
               </node>
             </node>
             <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="rpmx.MarkerAnnotation" typeId="rpmx.4193597469137492628" id="1095141890318300361" nodeInfo="ng">
@@ -376,12 +393,12 @@
               <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
               <property name="const" nameId="mj1l.2941277002445651368" value="false" />
             </node>
-            <node role="init" roleId="c4fa.4185783222026502647" type=".com.mbeddr.ext.components.structure.RequiredPortOpCallExpr" id="6305416899339697547" nodeInfo="ng">
-              <link role="operation" targetNodeId="6305416899339697539" resolveInfo="ready" />
-              <node role="expression" type=".com.mbeddr.ext.components.structure.PortRefExpr" id="6305416899339697544" nodeInfo="ng">
-                <link role="port" targetNodeId="6305416899339625023" resolveInfo="server1" />
+            <node role="init" roleId="c4fa.4185783222026502647" type="v7ag.RequiredPortOpCallExpr" typeId="v7ag.466603768608442377" id="6305416899339697547" nodeInfo="ng">
+              <link role="operation" roleId="v7ag.8105003328815071752" targetNodeId="6305416899339697539" resolveInfo="ready" />
+              <node role="expression" roleId="mj1l.7254843406768839760" type="v7ag.PortRefExpr" typeId="v7ag.8105003328815208362" id="6305416899339697544" nodeInfo="ng">
+                <link role="port" roleId="v7ag.8105003328815208363" targetNodeId="6305416899339625023" resolveInfo="server1" />
               </node>
-              <node role="actuals" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="4390760819953028997" nodeInfo="ng">
+              <node role="actuals" roleId="v7ag.8105003328815091213" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="4390760819953028997" nodeInfo="ng">
                 <property name="value" nameId="mj1l.8860443239512128104" value="2" />
               </node>
             </node>
@@ -403,12 +420,12 @@
             </node>
           </node>
           <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="1095141890318190261" nodeInfo="ng">
-            <node role="expr" roleId="c4fa.7254843406768833939" type=".com.mbeddr.ext.components.structure.RequiredPortOpCallExpr" id="1095141890318190262" nodeInfo="ng">
-              <link role="operation" targetNodeId="6305416899339697539" resolveInfo="ready" />
-              <node role="expression" type=".com.mbeddr.ext.components.structure.PortRefExpr" id="1095141890318190263" nodeInfo="ng">
-                <link role="port" targetNodeId="6305416899339625023" resolveInfo="server1" />
+            <node role="expr" roleId="c4fa.7254843406768833939" type="v7ag.RequiredPortOpCallExpr" typeId="v7ag.466603768608442377" id="1095141890318190262" nodeInfo="ng">
+              <link role="operation" roleId="v7ag.8105003328815071752" targetNodeId="6305416899339697539" resolveInfo="ready" />
+              <node role="expression" roleId="mj1l.7254843406768839760" type="v7ag.PortRefExpr" typeId="v7ag.8105003328815208362" id="1095141890318190263" nodeInfo="ng">
+                <link role="port" roleId="v7ag.8105003328815208363" targetNodeId="6305416899339625023" resolveInfo="server1" />
               </node>
-              <node role="actuals" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="1095141890318190264" nodeInfo="ng">
+              <node role="actuals" roleId="v7ag.8105003328815091213" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="1095141890318190264" nodeInfo="ng">
                 <property name="value" nameId="mj1l.8860443239512128104" value="2" />
               </node>
             </node>
@@ -430,7 +447,7 @@
             </node>
           </node>
         </node>
-        <node role="type" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="6305416899339625029" nodeInfo="ng">
+        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="6305416899339625029" nodeInfo="ng">
           <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
           <property name="const" nameId="mj1l.2941277002445651368" value="false" />
         </node>
@@ -1147,7 +1164,7 @@
     </node>
   </root>
   <root type="tp5g.TestInfo" typeId="tp5g.5097124989038916362" id="8165847842702726628" nodeInfo="ng">
-    <property name="projectPath" nameId="tp5g.5097124989038916363" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.debugger.tests/debugger-tests.mpr" />
+    <property name="projectPath" nameId="tp5g.5097124989038916363" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.debugger.tests/" />
   </root>
   <root type="mj1l.TypeSizeConfiguration" typeId="mj1l.3335993110369795380" id="6305416899339624953" nodeInfo="ng">
     <node role="pointerDiffType" roleId="mj1l.3813668170744198630" type="mj1l.UnsignedInt32tType" typeId="mj1l.8463282783691618450" id="6305416899339624954" nodeInfo="ng">
