@@ -63,6 +63,7 @@
         <depends>com.mbeddr.debugger</depends>
         <depends>com.mbeddr.mpsutil</depends>
         <depends>com.mbeddr.spawner</depends>
+        <depends>jetbrains.mps.debugger.api</depends>
         
         <extensions defaultExtensionNs="com.intellij">
           <mps.LanguageLibrary dir="/languages" />

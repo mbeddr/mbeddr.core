@@ -16,6 +16,7 @@
     <dependency reexport="false">dcd3e3f0-fb75-4b63-83e0-7a84aeddbb20(com.mbeddr.mpsutil.dev.build)</dependency>
     <dependency reexport="false">ba19fd84-07a8-4c0c-b27a-83b037421bea(com.mbeddr.spawner.dev.build)</dependency>
     <dependency reexport="false">830041d3-fd09-4005-819d-9d2e06a676ba(de.slisson.mps.richtext.build)</dependency>
+    <dependency reexport="false">25891414-2b70-48c7-b1cc-8dc0c127d669(jetbrains.mps.debugger.api.runtime)</dependency>
     <dependency reexport="false">422c2909-59d6-41a9-b318-40e6256b250f(jetbrains.mps.ide.build)</dependency>
     <dependency reexport="false">05bb02f1-9d98-4854-9173-66e072421464(mps-multiline.build)</dependency>
   </dependencies>
