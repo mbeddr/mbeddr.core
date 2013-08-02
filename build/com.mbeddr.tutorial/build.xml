@@ -3,7 +3,7 @@
   <property name="build.dir" location="build" />
   <property name="build.tmp" location="${build.dir}/tmp/com.mbeddr.tutorial.build" />
   <property name="build.layout" location="${build.dir}/artifacts/com.mbeddr.tutorial.build" />
-  <property name="mps_home" location="" />
+  <property name="mps.home" location="" />
   <property name="mbeddr.github.core.home" location="${basedir}/../../" />
   <property name="smartmeter.code" location="" />
   <property name="mbeddr.assembla.ext.home" location="" />
@@ -13,7 +13,7 @@
   <property name="lisson.home" location="${mbeddr.github.core.home}/.." />
   <property name="multiline.artifacts" location="${lisson.home}/mps-multiline/build/artifacts/mps-multiline" />
   <property name="richtext.artifacts" location="${lisson.home}/mps-richtext/build/artifacts/mps-richtext" />
-  <property name="artifacts.mps" location="${mps_home}" />
+  <property name="artifacts.mps" location="${mps.home}" />
   <property name="artifacts.com.mbeddr.mpsutil.build" location="../com.mbeddr.mpsutil/build/artifacts/com.mbeddr.mpsutil.build" />
   <property name="artifacts.com.mbeddr.ext.statemachine" location="../com.mbeddr.ext/build/artifacts/com.mbeddr.ext.statemachine" />
   <property name="artifacts.com.mbeddr.ext.components" location="../com.mbeddr.ext/build/artifacts/com.mbeddr.ext.components" />
