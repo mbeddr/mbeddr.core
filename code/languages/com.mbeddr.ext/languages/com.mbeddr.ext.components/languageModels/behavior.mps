@@ -16239,6 +16239,14 @@
         <property name="value" nameId="tpee.1070475926801" value="PREVENT_CONSTRUCTOR_CALL" />
       </node>
     </node>
+    <node role="member" roleId="tpee.5375687026011219971" type="tpee.StaticFieldDeclaration" typeId="tpee.1070462154015" id="2783362721533400665" nodeInfo="igu">
+      <property name="name" nameId="tpck.1169194664001" value="TRUE" />
+      <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="2783362721533400666" nodeInfo="nn" />
+      <node role="type" roleId="tpee.5680397130376446158" type="tpee.StringType" typeId="tpee.1225271177708" id="2783362721533400667" nodeInfo="in" />
+      <node role="initializer" roleId="tpee.1068431790190" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="2783362721533400668" nodeInfo="nn">
+        <property name="value" nameId="tpee.1070475926801" value="true" />
+      </node>
+    </node>
     <node role="member" roleId="tpee.5375687026011219971" type="tpee.ConstructorDeclaration" typeId="tpee.1068580123140" id="437987614769616871" nodeInfo="igu">
       <node role="returnType" roleId="tpee.1068580123133" type="tpee.VoidType" typeId="tpee.1068581517677" id="437987614769616872" nodeInfo="in" />
       <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="437987614769616873" nodeInfo="nn" />
