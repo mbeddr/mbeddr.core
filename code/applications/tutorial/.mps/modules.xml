@@ -14,7 +14,7 @@
       <modulePath path="$PROJECT_DIR$/languages/processorregisters/processorregisters.mpl" folder="languages" />
       <modulePath path="$PROJECT_DIR$/languages/vectors/vectors.mpl" folder="languages" />
       <modulePath path="$PROJECT_DIR$/solutions/mbeddr.tutorial.main/mbeddr.tutorial.main.msd" folder="exampleCode" />
-      <modulePath path="$PROJECT_DIR$/solutions/mbeddr.tutorial.typesystemtests/typesystemtests.msd" folder="typesystem-tests" />
+      <modulePath path="$PROJECT_DIR$/tests/mbeddr.tutorial.typesystemtests/typesystemtests.msd" folder="" />
     </projectModules>
   </component>
 </project>
