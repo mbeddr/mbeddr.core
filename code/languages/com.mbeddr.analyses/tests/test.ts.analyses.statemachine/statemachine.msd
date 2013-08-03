@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="test.analyses.statemachine" uuid="4921e5d9-579d-4829-bb95-25aed1a142e6" compileInMPS="true">
+<solution name="test.analyses.statemachine" uuid="4921e5d9-579d-4829-bb95-25aed1a142e6" pluginKind="PLUGIN_OTHER" compileInMPS="true">
   <models>
-    <modelRoot path="${solution_descriptor}/" />
-    <modelRoot path="${solution_descriptor}/models" />
+    <modelRoot contentPath="${module}" type="default">
+      <sourceRoot location="." />
+      <sourceRoot location="models" />
+    </modelRoot>
   </models>
   <sourcePath />
   <usedLanguages>
