@@ -11,6 +11,7 @@
   <property name="lisson.home" location="${mbeddr.github.core.home}/.." />
   <property name="multiline.artifacts" location="${lisson.home}/mps-multiline/build/artifacts/mps-multiline" />
   <property name="richtext.artifacts" location="${lisson.home}/mps-richtext/build/artifacts/mps-richtext" />
+  <property name="mps.macro.mbeddr.github.core.home" location="${mbeddr.github.core.home}" />
   <property name="artifacts.mps" location="${mps.home}" />
   <property name="artifacts.com.mbeddr.core.build" location="../com.mbeddr.core/build/artifacts/com.mbeddr.core.build" />
   <property name="artifacts.com.mbeddr.spawner.build" location="../com.mbeddr.spawner/build/artifacts/com.mbeddr.spawner.build" />
@@ -834,6 +835,7 @@
       <sysproperty key="plugin.path" value="${mps.plugins.path.string}" />
       <sysproperty key="mps.libraries" value="${mps.libraries.path.string}" />
       <sysproperty key="mps.test.modules" value="${mps.tests.path.string}" />
+      <sysproperty key="mps.macro.mbeddr.github.core.home" value="${mbeddr.github.core.home}" />
       
       <test name="jetbrains.mps.testbench.junit.suites.ModuleTestSuite" outfile="TEST-jetbrains.mps.testbench.junit.suites.ModuleTestSuite-com.mbeddr.cc.tests" />
       <formatter type="xml" />
