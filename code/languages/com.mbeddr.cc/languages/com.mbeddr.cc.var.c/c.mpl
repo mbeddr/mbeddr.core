@@ -1,20 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<language namespace="com.mbeddr.cc.var.c" uuid="634736cf-ea73-4eb1-abe9-d2ecc5fcf837" doNotGenerateAdapters="true">
+<language namespace="com.mbeddr.cc.var.c" uuid="634736cf-ea73-4eb1-abe9-d2ecc5fcf837">
   <models>
-    <modelRoot path="${language_descriptor}/languageModels" />
+    <modelRoot contentPath="${module}" type="default">
+      <sourceRoot location="languageModels" />
+    </modelRoot>
   </models>
   <accessoryModels />
   <generators>
     <generator name="varcprocessor" generatorUID="com.mbeddr.cc.var.c#5959167564567364349" uuid="281e5eb6-93f3-49c6-ab04-1cfcbdb57239">
       <models>
-        <modelRoot path="${language_descriptor}/generator/template" />
+        <modelRoot contentPath="${module}" type="default">
+          <sourceRoot location="generator/template" />
+        </modelRoot>
       </models>
       <external-templates>
         <generator generatorUID="996a24a9-6231-48b3-bb70-d8c04cde5f96(com.mbeddr.cc.var.buildconfig#6617704999132074775)" />
       </external-templates>
       <dependencies>
         <dependency reexport="false">2d7fadf5-33f6-4e80-a78f-0f739add2bde(com.mbeddr.core.buildconfig)</dependency>
-        <dependency reexport="false">a151b91b-cb79-47fa-bb82-2e83ba393144(test.ex.cc.fmrt)</dependency>
       </dependencies>
       <usedLanguages>
         <usedLanguage>63e0e566-5131-447e-90e3-12ea330e1a00(com.mbeddr.mpsutil.blutil)</usedLanguage>
