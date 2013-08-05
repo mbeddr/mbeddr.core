@@ -18,7 +18,6 @@
     <dependency reexport="false">a9d69647-0840-491e-bf39-2eb0805d2011(com.mbeddr.core.statements)</dependency>
     <dependency reexport="false">2693fc71-9b0e-4b05-ab13-f57227d675f2(com.mbeddr.core.util)</dependency>
     <dependency reexport="false">564e97d6-8fb7-41f5-bfc1-c7ed376efd62(com.mbeddr.ext.statemachines)</dependency>
-    <dependency reexport="false">9fec53cd-1e2c-4a56-8c98-c24ef988de3b(test.analysis.nfm)</dependency>
   </dependencies>
   <usedLanguages>
     <usedLanguage>7e09729e-68e4-4442-9bc8-024c5cdac3a2(com.mbeddr.analyses.cbmc.testing)</usedLanguage>
