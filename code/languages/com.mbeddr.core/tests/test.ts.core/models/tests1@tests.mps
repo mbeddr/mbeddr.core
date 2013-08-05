@@ -9394,6 +9394,7 @@
               </node>
               <node role="right" roleId="yz9a.8551646674110384358" type="mj1l.FloatType" typeId="mj1l.4739982148980385695" id="3976803464656498411" nodeInfo="ng" />
             </node>
+            <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="7146330090844332106" nodeInfo="ng" />
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="3976803464656494647" nodeInfo="ng" />
           </node>
           <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="5708867820622915222" nodeInfo="ng" />
@@ -9546,6 +9547,28 @@
               </node>
               <node role="right" roleId="yz9a.8551646674110384358" type="mj1l.FloatType" typeId="mj1l.4739982148980385695" id="3976803464656555927" nodeInfo="ng" />
             </node>
+            <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="7146330090844332756" nodeInfo="ng" />
+            <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="7146330090844354155" nodeInfo="ng">
+              <property name="name" nameId="tpck.1169194664001" value="ui" />
+              <node role="type" roleId="mj1l.318113533128716676" type="mj1l.UnsignedInt8tType" typeId="mj1l.8463282783691618461" id="7146330090844354153" nodeInfo="ng">
+                <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+                <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+              </node>
+            </node>
+            <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="7146330090844354224" nodeInfo="ng" />
+            <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.SameTypeTestStatement" typeId="yz9a.8551646674110384354" id="7146330090844369693" nodeInfo="ng">
+              <node role="left" roleId="yz9a.8551646674110384357" type="mj1l.UnaryMinusExpression" typeId="mj1l.3976803464656531170" id="7146330090844369863" nodeInfo="ng">
+                <node role="expression" roleId="mj1l.7254843406768839760" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="7146330090844369979" nodeInfo="ng">
+                  <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="7146330090844354155" resolveInfo="ui" />
+                </node>
+              </node>
+              <node role="right" roleId="yz9a.8551646674110384358" type="mj1l.Int16tType" typeId="mj1l.8463282783691618435" id="7146330090844369997" nodeInfo="ng">
+                <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+                <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+              </node>
+            </node>
+            <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="7146330090844332837" nodeInfo="ng" />
+            <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="7146330090844332879" nodeInfo="ng" />
           </node>
           <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="5708867820622915200" nodeInfo="ng" />
           <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="vs0r.DoNotAnalyzeDataFlowAnnotation" typeId="vs0r.7307224057853283254" id="4633402679181391067" nodeInfo="ng" />
