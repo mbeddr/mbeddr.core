@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <solution name="com.mbeddr.ext.build" uuid="06f4ccb3-313d-4d48-9667-87a8fb963fb2" compileInMPS="true">
   <models>
-    <modelRoot path="${solution_descriptor}/models" />
+    <modelRoot contentPath="${module}" type="default">
+      <sourceRoot location="models" />
+    </modelRoot>
   </models>
   <sourcePath />
   <dependencies>
@@ -16,6 +18,7 @@
   <usedLanguages>
     <usedLanguage>798100da-4f0a-421a-b991-71f8c50ce5d2(jetbrains.mps.build)</usedLanguage>
     <usedLanguage>0cf935df-4699-4e9c-a132-fa109541cba3(jetbrains.mps.build.mps)</usedLanguage>
+    <usedLanguage>3600cb0a-44dd-4a5b-9968-22924406419e(jetbrains.mps.build.mps.tests)</usedLanguage>
   </usedLanguages>
 </solution>
 

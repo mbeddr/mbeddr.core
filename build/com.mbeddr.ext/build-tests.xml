@@ -6,7 +6,7 @@
   <property name="mps.home" location="${basedir}/../../../../../../../../Applications/MPS30.app" />
   <property name="mbeddr.github.core.home" location="${basedir}/../../" />
   <property name="mbeddr.ext" location="${mbeddr.github.core.home}/code/languages/com.mbeddr.ext" />
-  <property name="lisson.home" location="${mbeddr.github.core.home}/../lisson" />
+  <property name="lisson.home" location="${mbeddr.github.core.home}/.." />
   <property name="multiline.artifacts" location="${lisson.home}/mps-multiline/build/artifacts/mps-multiline/" />
   <property name="richtext.artifacts" location="${lisson.home}/mps-richtext/build/artifacts/mps-richtext/" />
   <property name="artifacts.mps" location="${mps.home}" />
@@ -40,12 +40,12 @@
   <target name="assemble" depends="classes, declare-mps-tasks">
     <mkdir dir="${build.layout}" />
     <mkdir dir="${build.tmp}/default/com.mbeddr.ext.tests.zip" />
-    <mkdir dir="${build.tmp}/default/com.mbeddr.ext.tests.zip/mbeddr.ext.tests" />
-    <mkdir dir="${build.tmp}/default/com.mbeddr.ext.tests.zip/mbeddr.ext.tests/META-INF" />
-    <echoxml file="${build.tmp}/default/com.mbeddr.ext.tests.zip/mbeddr.ext.tests/META-INF/plugin.xml">
+    <mkdir dir="${build.tmp}/default/com.mbeddr.ext.tests.zip/mbeddr.ext.ts.tests" />
+    <mkdir dir="${build.tmp}/default/com.mbeddr.ext.tests.zip/mbeddr.ext.ts.tests/META-INF" />
+    <echoxml file="${build.tmp}/default/com.mbeddr.ext.tests.zip/mbeddr.ext.ts.tests/META-INF/plugin.xml">
       <idea-plugin version="2" xmlns:xi="http://www.w3.org/2001/XInclude">
-        <id>com.mbeddr.ext.tests</id>
-        <name>com.mbeddr.ext.tests</name>
+        <id>com.mbeddr.ext.ts.tests</id>
+        <name>com.mbeddr.ext.ts.tests</name>
         <version>1.0</version>
         <depends>jetbrains.mps.core</depends>
         <depends>com.mbeddr.spawner</depends>
@@ -64,102 +64,8 @@
         </extensions>
       </idea-plugin>
     </echoxml>
-    <mkdir dir="${build.tmp}/default/com.mbeddr.ext.tests.zip/mbeddr.ext.tests/languages" />
-    <mkdir dir="${build.tmp}/default/com.mbeddr.ext.tests.zip/mbeddr.ext.tests/languages/com.mbeddr.ext.tests" />
-    <mkdir dir="${build.tmp}/default/test.ex.ext.exceptionhandling.jar" />
-    <mkdir dir="${build.tmp}/default/test.ex.ext.exceptionhandling.jar/META-INF" />
-    <echoxml file="${build.tmp}/default/test.ex.ext.exceptionhandling.jar/META-INF/module.xml">
-      <module namespace="test.ex.ext.exceptionhandling" type="solution" uuid="b6bd6635-d6ef-4fee-b110-44476b204eac">
-        <dependencies>
-          <module ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" />
-          <module ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" />
-          <module ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" />
-          <module ref="4c6a28d1-2c60-478d-b36e-db9b3cbb21fb(closures.runtime)" />
-          <module ref="9b80526e-f0bf-4992-bdf5-cee39c1833f3(collections.runtime)" />
-          <module ref="dc038ceb-b7ea-4fea-ac12-55f7400e97ba(de.slisson.mps.editor.multiline.runtime)" />
-          <module ref="83f155ff-422c-4b5a-a2f2-b459302dd215(jetbrains.mps.baseLanguage.unitTest.libs)" />
-          <module ref="9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)" />
-        </dependencies>
-        <sources jar="test.ex.ext.exceptionhandling-src.jar" descriptor="exceptionhandling.msd" />
-      </module>
-    </echoxml>
-    <jar destfile="${build.tmp}/default/com.mbeddr.ext.tests.zip/mbeddr.ext.tests/languages/com.mbeddr.ext.tests/test.ex.ext.exceptionhandling.jar">
-      <fileset dir="${build.tmp}/java/out/test.ex.ext.exceptionhandling" />
-      <fileset dir="${mbeddr.ext}/tests/test.ex.ext.exceptionhandling" includes="icons/**, resources/**" />
-      <fileset dir="${build.tmp}/default/test.ex.ext.exceptionhandling.jar" />
-    </jar>
-    <copyModels todir="${build.tmp}/customProcessors/copyModels/tests-test.ex.ext.exceptionhandling">
-      <fileset dir="${mbeddr.ext}/tests/test.ex.ext.exceptionhandling" includes="**/*.mps, **/*.metadata, **/*.history" />
-    </copyModels>
-    <jar destfile="${build.tmp}/default/com.mbeddr.ext.tests.zip/mbeddr.ext.tests/languages/com.mbeddr.ext.tests/test.ex.ext.exceptionhandling-src.jar">
-      <fileset dir="${mbeddr.ext}/tests/test.ex.ext.exceptionhandling/source_gen" includes="**/*.java" />
-      <zipfileset file="${mbeddr.ext}/tests/test.ex.ext.exceptionhandling/exceptionhandling.msd" prefix="module" />
-      <zipfileset dir="${build.tmp}/customProcessors/copyModels/tests-test.ex.ext.exceptionhandling" prefix="module/" />
-    </jar>
-    <mkdir dir="${build.tmp}/default/test.ex.ext.comp_mocking.jar" />
-    <mkdir dir="${build.tmp}/default/test.ex.ext.comp_mocking.jar/META-INF" />
-    <echoxml file="${build.tmp}/default/test.ex.ext.comp_mocking.jar/META-INF/module.xml">
-      <module namespace="test.ex.ext.comp_mocking" type="solution" uuid="e25a40ff-8151-4b8f-ba37-3b49794e8872">
-        <dependencies>
-          <module ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" />
-          <module ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" />
-          <module ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" />
-          <module ref="4c6a28d1-2c60-478d-b36e-db9b3cbb21fb(closures.runtime)" />
-          <module ref="9b80526e-f0bf-4992-bdf5-cee39c1833f3(collections.runtime)" />
-          <module ref="dc038ceb-b7ea-4fea-ac12-55f7400e97ba(de.slisson.mps.editor.multiline.runtime)" />
-          <module ref="83f155ff-422c-4b5a-a2f2-b459302dd215(jetbrains.mps.baseLanguage.unitTest.libs)" />
-          <module ref="9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)" />
-        </dependencies>
-        <sources jar="test.ex.ext.comp_mocking-src.jar" descriptor="comp_mocking.msd" />
-      </module>
-    </echoxml>
-    <jar destfile="${build.tmp}/default/com.mbeddr.ext.tests.zip/mbeddr.ext.tests/languages/com.mbeddr.ext.tests/test.ex.ext.comp_mocking.jar">
-      <fileset dir="${build.tmp}/java/out/test.ex.ext.comp_mocking" />
-      <fileset dir="${mbeddr.ext}/tests/test.ex.ext.comp_mocking" includes="icons/**, resources/**" />
-      <fileset dir="${build.tmp}/default/test.ex.ext.comp_mocking.jar" />
-    </jar>
-    <copyModels todir="${build.tmp}/customProcessors/copyModels/tests-test.ex.ext.comp_mocking">
-      <fileset dir="${mbeddr.ext}/tests/test.ex.ext.comp_mocking" includes="**/*.mps, **/*.metadata, **/*.history" />
-    </copyModels>
-    <copyModels todir="${build.tmp}/customProcessors/copyModels/tests-test.ex.ext.comp_mocking-models">
-      <fileset dir="${mbeddr.ext}/tests/test.ex.ext.comp_mocking/models" includes="**/*.mps, **/*.metadata, **/*.history" />
-    </copyModels>
-    <jar destfile="${build.tmp}/default/com.mbeddr.ext.tests.zip/mbeddr.ext.tests/languages/com.mbeddr.ext.tests/test.ex.ext.comp_mocking-src.jar">
-      <fileset dir="${mbeddr.ext}/tests/test.ex.ext.comp_mocking/source_gen" includes="**/*.java" />
-      <zipfileset file="${mbeddr.ext}/tests/test.ex.ext.comp_mocking/comp_mocking.msd" prefix="module" />
-      <zipfileset dir="${build.tmp}/customProcessors/copyModels/tests-test.ex.ext.comp_mocking" prefix="module/" />
-      <zipfileset dir="${build.tmp}/customProcessors/copyModels/tests-test.ex.ext.comp_mocking-models" prefix="module/models" />
-    </jar>
-    <mkdir dir="${build.tmp}/default/test.ex.ext.statemachine.jar" />
-    <mkdir dir="${build.tmp}/default/test.ex.ext.statemachine.jar/META-INF" />
-    <echoxml file="${build.tmp}/default/test.ex.ext.statemachine.jar/META-INF/module.xml">
-      <module namespace="test.ex.ext.statemachine" type="solution" uuid="3ef85fa6-42d3-4b91-b2be-19b37203ff69">
-        <dependencies>
-          <module ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" />
-          <module ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" />
-          <module ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" />
-          <module ref="4c6a28d1-2c60-478d-b36e-db9b3cbb21fb(closures.runtime)" />
-          <module ref="9b80526e-f0bf-4992-bdf5-cee39c1833f3(collections.runtime)" />
-          <module ref="dc038ceb-b7ea-4fea-ac12-55f7400e97ba(de.slisson.mps.editor.multiline.runtime)" />
-          <module ref="83f155ff-422c-4b5a-a2f2-b459302dd215(jetbrains.mps.baseLanguage.unitTest.libs)" />
-          <module ref="9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)" />
-        </dependencies>
-        <sources jar="test.ex.ext.statemachine-src.jar" descriptor="statemachine.msd" />
-      </module>
-    </echoxml>
-    <jar destfile="${build.tmp}/default/com.mbeddr.ext.tests.zip/mbeddr.ext.tests/languages/com.mbeddr.ext.tests/test.ex.ext.statemachine.jar">
-      <fileset dir="${build.tmp}/java/out/test.ex.ext.statemachine" />
-      <fileset dir="${mbeddr.ext}/tests/test.ex.ext.statemachine" includes="icons/**, resources/**" />
-      <fileset dir="${build.tmp}/default/test.ex.ext.statemachine.jar" />
-    </jar>
-    <copyModels todir="${build.tmp}/customProcessors/copyModels/tests-test.ex.ext.statemachine">
-      <fileset dir="${mbeddr.ext}/tests/test.ex.ext.statemachine" includes="**/*.mps, **/*.metadata, **/*.history" />
-    </copyModels>
-    <jar destfile="${build.tmp}/default/com.mbeddr.ext.tests.zip/mbeddr.ext.tests/languages/com.mbeddr.ext.tests/test.ex.ext.statemachine-src.jar">
-      <fileset dir="${mbeddr.ext}/tests/test.ex.ext.statemachine/source_gen" includes="**/*.java" />
-      <zipfileset file="${mbeddr.ext}/tests/test.ex.ext.statemachine/statemachine.msd" prefix="module" />
-      <zipfileset dir="${build.tmp}/customProcessors/copyModels/tests-test.ex.ext.statemachine" prefix="module/" />
-    </jar>
+    <mkdir dir="${build.tmp}/default/com.mbeddr.ext.tests.zip/mbeddr.ext.ts.tests/languages" />
+    <mkdir dir="${build.tmp}/default/com.mbeddr.ext.tests.zip/mbeddr.ext.ts.tests/languages/com.mbeddr.ext.ts.tests" />
     <mkdir dir="${build.tmp}/default/test.ts.ext.physicalunits.c.jar" />
     <mkdir dir="${build.tmp}/default/test.ts.ext.physicalunits.c.jar/META-INF" />
     <echoxml file="${build.tmp}/default/test.ts.ext.physicalunits.c.jar/META-INF/module.xml">
@@ -179,7 +85,7 @@
         <sources jar="test.ts.ext.physicalunits.c-src.jar" descriptor="c.msd" />
       </module>
     </echoxml>
-    <jar destfile="${build.tmp}/default/com.mbeddr.ext.tests.zip/mbeddr.ext.tests/languages/com.mbeddr.ext.tests/test.ts.ext.physicalunits.c.jar">
+    <jar destfile="${build.tmp}/default/com.mbeddr.ext.tests.zip/mbeddr.ext.ts.tests/languages/com.mbeddr.ext.ts.tests/test.ts.ext.physicalunits.c.jar">
       <fileset dir="${build.tmp}/java/out/test.ts.ext.physicalunits.c" />
       <fileset dir="${mbeddr.ext}/tests/test.ts.ext.physicalunits.c" includes="icons/**, resources/**" />
       <fileset dir="${build.tmp}/default/test.ts.ext.physicalunits.c.jar" />
@@ -190,45 +96,11 @@
     <copyModels todir="${build.tmp}/customProcessors/copyModels/tests-test.ts.ext.physicalunits.c-models">
       <fileset dir="${mbeddr.ext}/tests/test.ts.ext.physicalunits.c/models" includes="**/*.mps, **/*.metadata, **/*.history" />
     </copyModels>
-    <jar destfile="${build.tmp}/default/com.mbeddr.ext.tests.zip/mbeddr.ext.tests/languages/com.mbeddr.ext.tests/test.ts.ext.physicalunits.c-src.jar">
+    <jar destfile="${build.tmp}/default/com.mbeddr.ext.tests.zip/mbeddr.ext.ts.tests/languages/com.mbeddr.ext.ts.tests/test.ts.ext.physicalunits.c-src.jar">
       <fileset dir="${mbeddr.ext}/tests/test.ts.ext.physicalunits.c/source_gen" includes="**/*.java" />
       <zipfileset file="${mbeddr.ext}/tests/test.ts.ext.physicalunits.c/c.msd" prefix="module" />
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/tests-test.ts.ext.physicalunits.c" prefix="module/" />
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/tests-test.ts.ext.physicalunits.c-models" prefix="module/models" />
-    </jar>
-    <mkdir dir="${build.tmp}/default/test.ex.ext.physicalunits.c.jar" />
-    <mkdir dir="${build.tmp}/default/test.ex.ext.physicalunits.c.jar/META-INF" />
-    <echoxml file="${build.tmp}/default/test.ex.ext.physicalunits.c.jar/META-INF/module.xml">
-      <module namespace="test.ex.ext.physicalunits.c" type="solution" uuid="985139fa-26d8-4f35-b671-8ad039ab0965">
-        <dependencies>
-          <module ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" />
-          <module ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" />
-          <module ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" />
-          <module ref="4c6a28d1-2c60-478d-b36e-db9b3cbb21fb(closures.runtime)" />
-          <module ref="9b80526e-f0bf-4992-bdf5-cee39c1833f3(collections.runtime)" />
-          <module ref="dc038ceb-b7ea-4fea-ac12-55f7400e97ba(de.slisson.mps.editor.multiline.runtime)" />
-          <module ref="83f155ff-422c-4b5a-a2f2-b459302dd215(jetbrains.mps.baseLanguage.unitTest.libs)" />
-          <module ref="9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)" />
-        </dependencies>
-        <sources jar="test.ex.ext.physicalunits.c-src.jar" descriptor="c.msd" />
-      </module>
-    </echoxml>
-    <jar destfile="${build.tmp}/default/com.mbeddr.ext.tests.zip/mbeddr.ext.tests/languages/com.mbeddr.ext.tests/test.ex.ext.physicalunits.c.jar">
-      <fileset dir="${build.tmp}/java/out/test.ex.ext.physicalunits.c" />
-      <fileset dir="${mbeddr.ext}/tests/test.ex.ext.physicalunits.c" includes="icons/**, resources/**" />
-      <fileset dir="${build.tmp}/default/test.ex.ext.physicalunits.c.jar" />
-    </jar>
-    <copyModels todir="${build.tmp}/customProcessors/copyModels/tests-test.ex.ext.physicalunits.c">
-      <fileset dir="${mbeddr.ext}/tests/test.ex.ext.physicalunits.c" includes="**/*.mps, **/*.metadata, **/*.history" />
-    </copyModels>
-    <copyModels todir="${build.tmp}/customProcessors/copyModels/tests-test.ex.ext.physicalunits.c-models">
-      <fileset dir="${mbeddr.ext}/tests/test.ex.ext.physicalunits.c/models" includes="**/*.mps, **/*.metadata, **/*.history" />
-    </copyModels>
-    <jar destfile="${build.tmp}/default/com.mbeddr.ext.tests.zip/mbeddr.ext.tests/languages/com.mbeddr.ext.tests/test.ex.ext.physicalunits.c-src.jar">
-      <fileset dir="${mbeddr.ext}/tests/test.ex.ext.physicalunits.c/source_gen" includes="**/*.java" />
-      <zipfileset file="${mbeddr.ext}/tests/test.ex.ext.physicalunits.c/c.msd" prefix="module" />
-      <zipfileset dir="${build.tmp}/customProcessors/copyModels/tests-test.ex.ext.physicalunits.c" prefix="module/" />
-      <zipfileset dir="${build.tmp}/customProcessors/copyModels/tests-test.ex.ext.physicalunits.c-models" prefix="module/models" />
     </jar>
     <mkdir dir="${build.tmp}/default/test.ts.ext.components.jar" />
     <mkdir dir="${build.tmp}/default/test.ts.ext.components.jar/META-INF" />
@@ -249,7 +121,7 @@
         <sources jar="test.ts.ext.components-src.jar" descriptor="components.msd" />
       </module>
     </echoxml>
-    <jar destfile="${build.tmp}/default/com.mbeddr.ext.tests.zip/mbeddr.ext.tests/languages/com.mbeddr.ext.tests/test.ts.ext.components.jar">
+    <jar destfile="${build.tmp}/default/com.mbeddr.ext.tests.zip/mbeddr.ext.ts.tests/languages/com.mbeddr.ext.ts.tests/test.ts.ext.components.jar">
       <fileset dir="${build.tmp}/java/out/test.ts.ext.components" />
       <fileset dir="${mbeddr.ext}/tests/test.ts.ext.components" includes="icons/**, resources/**" />
       <fileset dir="${build.tmp}/default/test.ts.ext.components.jar" />
@@ -257,7 +129,7 @@
     <copyModels todir="${build.tmp}/customProcessors/copyModels/tests-test.ts.ext.components-models">
       <fileset dir="${mbeddr.ext}/tests/test.ts.ext.components/models" includes="**/*.mps, **/*.metadata, **/*.history" />
     </copyModels>
-    <jar destfile="${build.tmp}/default/com.mbeddr.ext.tests.zip/mbeddr.ext.tests/languages/com.mbeddr.ext.tests/test.ts.ext.components-src.jar">
+    <jar destfile="${build.tmp}/default/com.mbeddr.ext.tests.zip/mbeddr.ext.ts.tests/languages/com.mbeddr.ext.ts.tests/test.ts.ext.components-src.jar">
       <fileset dir="${mbeddr.ext}/tests/test.ts.ext.components/source_gen" includes="**/*.java" />
       <zipfileset file="${mbeddr.ext}/tests/test.ts.ext.components/components.msd" prefix="module" />
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/tests-test.ts.ext.components-models" prefix="module/models" />
@@ -281,7 +153,7 @@
         <sources jar="test.ts.ext.exceptionhandling-src.jar" descriptor="exceptionhandling.msd" />
       </module>
     </echoxml>
-    <jar destfile="${build.tmp}/default/com.mbeddr.ext.tests.zip/mbeddr.ext.tests/languages/com.mbeddr.ext.tests/test.ts.ext.exceptionhandling.jar">
+    <jar destfile="${build.tmp}/default/com.mbeddr.ext.tests.zip/mbeddr.ext.ts.tests/languages/com.mbeddr.ext.ts.tests/test.ts.ext.exceptionhandling.jar">
       <fileset dir="${build.tmp}/java/out/test.ts.ext.exceptionhandling" />
       <fileset dir="${mbeddr.ext}/tests/test.ts.ext.exceptionhandling" includes="icons/**, resources/**" />
       <fileset dir="${build.tmp}/default/test.ts.ext.exceptionhandling.jar" />
@@ -292,45 +164,11 @@
     <copyModels todir="${build.tmp}/customProcessors/copyModels/tests-test.ts.ext.exceptionhandling-models">
       <fileset dir="${mbeddr.ext}/tests/test.ts.ext.exceptionhandling/models" includes="**/*.mps, **/*.metadata, **/*.history" />
     </copyModels>
-    <jar destfile="${build.tmp}/default/com.mbeddr.ext.tests.zip/mbeddr.ext.tests/languages/com.mbeddr.ext.tests/test.ts.ext.exceptionhandling-src.jar">
+    <jar destfile="${build.tmp}/default/com.mbeddr.ext.tests.zip/mbeddr.ext.ts.tests/languages/com.mbeddr.ext.ts.tests/test.ts.ext.exceptionhandling-src.jar">
       <fileset dir="${mbeddr.ext}/tests/test.ts.ext.exceptionhandling/source_gen" includes="**/*.java" />
       <zipfileset file="${mbeddr.ext}/tests/test.ts.ext.exceptionhandling/exceptionhandling.msd" prefix="module" />
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/tests-test.ts.ext.exceptionhandling" prefix="module/" />
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/tests-test.ts.ext.exceptionhandling-models" prefix="module/models" />
-    </jar>
-    <mkdir dir="${build.tmp}/default/test.ex.ext.components.jar" />
-    <mkdir dir="${build.tmp}/default/test.ex.ext.components.jar/META-INF" />
-    <echoxml file="${build.tmp}/default/test.ex.ext.components.jar/META-INF/module.xml">
-      <module namespace="test.ex.ext.components" type="solution" uuid="918bed95-9fff-4e37-86fa-fc4753295149">
-        <dependencies>
-          <module ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" />
-          <module ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" />
-          <module ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" />
-          <module ref="4c6a28d1-2c60-478d-b36e-db9b3cbb21fb(closures.runtime)" />
-          <module ref="9b80526e-f0bf-4992-bdf5-cee39c1833f3(collections.runtime)" />
-          <module ref="dc038ceb-b7ea-4fea-ac12-55f7400e97ba(de.slisson.mps.editor.multiline.runtime)" />
-          <module ref="83f155ff-422c-4b5a-a2f2-b459302dd215(jetbrains.mps.baseLanguage.unitTest.libs)" />
-          <module ref="9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)" />
-        </dependencies>
-        <sources jar="test.ex.ext.components-src.jar" descriptor="components.msd" />
-      </module>
-    </echoxml>
-    <jar destfile="${build.tmp}/default/com.mbeddr.ext.tests.zip/mbeddr.ext.tests/languages/com.mbeddr.ext.tests/test.ex.ext.components.jar">
-      <fileset dir="${build.tmp}/java/out/test.ex.ext.components" />
-      <fileset dir="${mbeddr.ext}/tests/test.ex.ext.components" includes="icons/**, resources/**" />
-      <fileset dir="${build.tmp}/default/test.ex.ext.components.jar" />
-    </jar>
-    <copyModels todir="${build.tmp}/customProcessors/copyModels/tests-test.ex.ext.components">
-      <fileset dir="${mbeddr.ext}/tests/test.ex.ext.components" includes="**/*.mps, **/*.metadata, **/*.history" />
-    </copyModels>
-    <copyModels todir="${build.tmp}/customProcessors/copyModels/tests-test.ex.ext.components-models">
-      <fileset dir="${mbeddr.ext}/tests/test.ex.ext.components/models" includes="**/*.mps, **/*.metadata, **/*.history" />
-    </copyModels>
-    <jar destfile="${build.tmp}/default/com.mbeddr.ext.tests.zip/mbeddr.ext.tests/languages/com.mbeddr.ext.tests/test.ex.ext.components-src.jar">
-      <fileset dir="${mbeddr.ext}/tests/test.ex.ext.components/source_gen" includes="**/*.java" />
-      <zipfileset file="${mbeddr.ext}/tests/test.ex.ext.components/components.msd" prefix="module" />
-      <zipfileset dir="${build.tmp}/customProcessors/copyModels/tests-test.ex.ext.components" prefix="module/" />
-      <zipfileset dir="${build.tmp}/customProcessors/copyModels/tests-test.ex.ext.components-models" prefix="module/models" />
     </jar>
     <zip destfile="${build.layout}/com.mbeddr.ext.tests.zip">
       <fileset dir="${build.tmp}/default/com.mbeddr.ext.tests.zip" />
@@ -355,24 +193,26 @@
     <unzip src="${artifacts.com.mbeddr.ext.exceptionhandling}/com.mbeddr.ext.exceptionhandling.zip" dest="${build.tmp}/deps/com.mbeddr.ext.exceptionhandling/com.mbeddr.ext.exceptionhandling.zip" />
     <mkdir dir="${build.tmp}/deps/com.mbeddr.mpsutil.build/com.mbeddr.mpsutil.zip" />
     <unzip src="${artifacts.com.mbeddr.mpsutil.build}/com.mbeddr.mpsutil.zip" dest="${build.tmp}/deps/com.mbeddr.mpsutil.build/com.mbeddr.mpsutil.zip" />
+    <mkdir dir="${build.tmp}/deps/com.mbeddr.spawner.build/com.mbeddr.spawner.zip" />
+    <unzip src="${artifacts.com.mbeddr.spawner.build}/com.mbeddr.spawner.zip" dest="${build.tmp}/deps/com.mbeddr.spawner.build/com.mbeddr.spawner.zip" />
+    <mkdir dir="${build.tmp}/deps/com.mbeddr.ext.units/com.mbeddr.ext.units.zip" />
+    <unzip src="${artifacts.com.mbeddr.ext.units}/com.mbeddr.ext.units.zip" dest="${build.tmp}/deps/com.mbeddr.ext.units/com.mbeddr.ext.units.zip" />
+    <mkdir dir="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip" />
+    <unzip src="${artifacts.com.mbeddr.core.build}/com.mbeddr.core.zip" dest="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip" />
+    <mkdir dir="${build.tmp}/deps/com.mbeddr.ext.components/com.mbeddr.ext.components.zip" />
+    <unzip src="${artifacts.com.mbeddr.ext.components}/com.mbeddr.ext.components.zip" dest="${build.tmp}/deps/com.mbeddr.ext.components/com.mbeddr.ext.components.zip" />
+    <mkdir dir="${build.tmp}/deps/mps-multiline/mps-multiline.zip" />
+    <unzip src="${artifacts.mps-multiline}/mps-multiline.zip" dest="${build.tmp}/deps/mps-multiline/mps-multiline.zip" />
+    <mkdir dir="${build.tmp}/deps/mps-richtext/mps-richtext.zip" />
+    <unzip src="${artifacts.mps-richtext}/mps-richtext.zip" dest="${build.tmp}/deps/mps-richtext/mps-richtext.zip" />
+    <mkdir dir="${build.tmp}/deps/com.mbeddr.debugger.build/com.mbeddr.core.debugger.zip" />
+    <unzip src="${artifacts.com.mbeddr.debugger.build}/com.mbeddr.core.debugger.zip" dest="${build.tmp}/deps/com.mbeddr.debugger.build/com.mbeddr.core.debugger.zip" />
     <mkdir dir="${build.tmp}/deps/com.mbeddr.ext.statemachinesInComponents/com.mbeddr.ext.statemachineInComponents.zip" />
     <unzip src="${artifacts.com.mbeddr.ext.statemachinesInComponents}/com.mbeddr.ext.statemachineInComponents.zip" dest="${build.tmp}/deps/com.mbeddr.ext.statemachinesInComponents/com.mbeddr.ext.statemachineInComponents.zip" />
     <mkdir dir="${build.tmp}/deps/com.mbeddr.ext.statemachine/com.mbeddr.ext.statemachine.zip" />
     <unzip src="${artifacts.com.mbeddr.ext.statemachine}/com.mbeddr.ext.statemachine.zip" dest="${build.tmp}/deps/com.mbeddr.ext.statemachine/com.mbeddr.ext.statemachine.zip" />
-    <mkdir dir="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip" />
-    <unzip src="${artifacts.com.mbeddr.core.build}/com.mbeddr.core.zip" dest="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip" />
-    <mkdir dir="${build.tmp}/deps/mps-richtext/mps-richtext.zip" />
-    <unzip src="${artifacts.mps-richtext}/mps-richtext.zip" dest="${build.tmp}/deps/mps-richtext/mps-richtext.zip" />
-    <mkdir dir="${build.tmp}/deps/com.mbeddr.ext.units/com.mbeddr.ext.units.zip" />
-    <unzip src="${artifacts.com.mbeddr.ext.units}/com.mbeddr.ext.units.zip" dest="${build.tmp}/deps/com.mbeddr.ext.units/com.mbeddr.ext.units.zip" />
-    <mkdir dir="${build.tmp}/deps/com.mbeddr.spawner.build/com.mbeddr.spawner.zip" />
-    <unzip src="${artifacts.com.mbeddr.spawner.build}/com.mbeddr.spawner.zip" dest="${build.tmp}/deps/com.mbeddr.spawner.build/com.mbeddr.spawner.zip" />
-    <mkdir dir="${build.tmp}/deps/mps-multiline/mps-multiline.zip" />
-    <unzip src="${artifacts.mps-multiline}/mps-multiline.zip" dest="${build.tmp}/deps/mps-multiline/mps-multiline.zip" />
-    <mkdir dir="${build.tmp}/deps/com.mbeddr.debugger.build/com.mbeddr.core.debugger.zip" />
-    <unzip src="${artifacts.com.mbeddr.debugger.build}/com.mbeddr.core.debugger.zip" dest="${build.tmp}/deps/com.mbeddr.debugger.build/com.mbeddr.core.debugger.zip" />
-    <mkdir dir="${build.tmp}/deps/com.mbeddr.ext.components/com.mbeddr.ext.components.zip" />
-    <unzip src="${artifacts.com.mbeddr.ext.components}/com.mbeddr.ext.components.zip" dest="${build.tmp}/deps/com.mbeddr.ext.components/com.mbeddr.ext.components.zip" />
+    <mkdir dir="${build.tmp}/deps/com.mbeddr.ext.tests/com.mbeddr.ext.tests.zip" />
+    <unzip src="${build.layout}/com.mbeddr.ext.tests.zip" dest="${build.tmp}/deps/com.mbeddr.ext.tests/com.mbeddr.ext.tests.zip" />
   </target>
   
   <target name="build" depends="assemble, check" />
@@ -382,13 +222,13 @@
     <delete dir="${build.layout}" />
   </target>
   
-  <target name="compileJava" depends="java.compile.test.ex.ext.exceptionhandling, java.compile.test.ex.ext.comp_mocking, java.compile.test.ex.ext.statemachine, java.compile.test.ts.ext.physicalunits.c, java.compile.test.ex.ext.physicalunits.c, java.compile.test.ts.ext.components, java.compile.test.ts.ext.exceptionhandling, java.compile.test.ex.ext.components" />
+  <target name="compileJava" depends="java.compile.test.ex.ext.exceptionhandling, java.compile.test.ex.ext.comp_mocking, java.compile.test.ex.ext.statemachine, java.compile.test.ex.ext.physicalunits.c, java.compile.test.ex.ext.components, java.compile.test.ts.ext.physicalunits.c, java.compile.test.ts.ext.components, java.compile.test.ts.ext.exceptionhandling" />
   
   <target name="processResources" />
   
   <target name="classes" depends="compileJava, processResources" />
   
-  <target name="test" depends="classes" />
+  <target name="test" depends="classes, module-tests" />
   
   <target name="check" depends="test" />
   
@@ -575,12 +415,15 @@
     </ant>
   </target>
   
+  <target name="module-tests" depends="assemble, test.com.mbeddr.ext.tests" />
+  
   <target name="java.compile.test.ex.ext.exceptionhandling" depends="fetchDependencies">
     <mkdir dir="${build.tmp}/java/out/test.ex.ext.exceptionhandling" />
     <javac destdir="${build.tmp}/java/out/test.ex.ext.exceptionhandling" fork="true" includeantruntime="false">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${mbeddr.ext}/tests/test.ex.ext.exceptionhandling/source_gen" />
+        <pathelement path="${mbeddr.ext}/tests/test.ex.ext.exceptionhandling/test_gen/" />
       </src>
       <classpath>
         <fileset file="${artifacts.mps}/lib/mps-openapi.jar" />
@@ -648,6 +491,7 @@
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${mbeddr.ext}/tests/test.ex.ext.comp_mocking/source_gen" />
+        <pathelement path="${mbeddr.ext}/tests/test.ex.ext.comp_mocking/test_gen/" />
       </src>
       <classpath>
         <fileset file="${artifacts.mps}/lib/mps-openapi.jar" />
@@ -714,6 +558,141 @@
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${mbeddr.ext}/tests/test.ex.ext.statemachine/source_gen" />
+        <pathelement path="${mbeddr.ext}/tests/test.ex.ext.statemachine/test_gen/" />
+      </src>
+      <classpath>
+        <fileset file="${artifacts.mps}/lib/mps-openapi.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-closures.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-collections.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-tuples.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-core.jar" />
+        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.unitTest.libs/bsh-core-2.0b4.jar" />
+        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.unitTest.libs/cglib-nodep-2.1_3.jar" />
+        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.unitTest.libs/hamcrest-core-1.1.jar" />
+        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.unitTest.libs/hamcrest-library-1.1.jar" />
+        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.unitTest.libs/jmock-2.5.1.jar" />
+        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.unitTest.libs/jmock-junit3-2.5.1.jar" />
+        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.unitTest.libs/jmock-junit4-2.5.1.jar" />
+        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.unitTest.libs/objenesis-1.0.jar" />
+        <fileset file="${artifacts.mps}/lib/annotations.jar" />
+        <fileset file="${artifacts.mps}/lib/junit-4.10.jar" />
+        <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/lib/commons-io-2.4.jar" />
+        <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/lib/batik-anim.jar" />
+        <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/lib/batik-awt-util.jar" />
+        <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/lib/batik-bridge.jar" />
+        <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/lib/batik-codec.jar" />
+        <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/lib/batik-css.jar" />
+        <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/lib/batik-dom.jar" />
+        <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/lib/batik-ext.jar" />
+        <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/lib/batik-extension.jar" />
+        <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/lib/batik-gui-util.jar" />
+        <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/lib/batik-gvt.jar" />
+        <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/lib/batik-parser.jar" />
+        <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/lib/batik-script.jar" />
+        <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/lib/batik-svg-dom.jar" />
+        <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/lib/batik-svggen.jar" />
+        <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/lib/batik-swing.jar" />
+        <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/lib/batik-transcoder.jar" />
+        <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/lib/batik-util.jar" />
+        <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/lib/batik-xml.jar" />
+        <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/lib/batik.jar" />
+        <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/lib/js.jar" />
+        <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/lib/plantuml.jar" />
+        <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/lib/xalan-2.6.0.jar" />
+        <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/lib/xerces_2_5_0.jar" />
+        <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/lib/xml-apis-ext.jar" />
+        <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/lib/xml-apis.jar" />
+        <fileset file="${build.tmp}/deps/mps-multiline/mps-multiline.zip/mps-multiline/lib/diff_match_patch.jar" />
+        <fileset file="${build.tmp}/deps/mps-multiline/mps-multiline.zip/mps-multiline/lib/commons-lang3-3.1.jar" />
+        <fileset file="${build.tmp}/deps/mps-multiline/mps-multiline.zip/mps-multiline/lib/commons-lang-2.6.jar" />
+        <fileset file="${artifacts.mps}/lib/jdom.jar" />
+        <fileset file="${artifacts.mps}/lib/log4j.jar" />
+        <fileset file="${artifacts.mps}/lib/ecj-4.2.1.jar" />
+        <fileset file="${artifacts.mps}/lib/trove4j.jar" />
+        <fileset file="${artifacts.mps}/lib/xstream-1.4.3.jar" />
+        <fileset file="${artifacts.mps}/lib/asm4-all.jar" />
+        <fileset file="${artifacts.mps}/lib/diffutils-1.2.1.jar" />
+        <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/languages/com.mbeddr.core/com.mbeddr.core.modules.runtime.jar" />
+        <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/languages/com.mbeddr.core/com.mbeddr.plantuml.pluginSolution.jar" />
+        <fileset file="${build.tmp}/deps/mps-multiline/mps-multiline.zip/mps-multiline/languages/mps-multiline/de.slisson.mps.editor.multiline.runtime.jar" />
+      </classpath>
+    </javac>
+  </target>
+  
+  <target name="java.compile.test.ex.ext.physicalunits.c" depends="fetchDependencies">
+    <mkdir dir="${build.tmp}/java/out/test.ex.ext.physicalunits.c" />
+    <javac destdir="${build.tmp}/java/out/test.ex.ext.physicalunits.c" fork="true" includeantruntime="false">
+      <compilerarg value="-Xlint:none" />
+      <src>
+        <path location="${mbeddr.ext}/tests/test.ex.ext.physicalunits.c/source_gen" />
+        <pathelement path="${mbeddr.ext}/tests/test.ex.ext.physicalunits.c/test_gen/" />
+      </src>
+      <classpath>
+        <fileset file="${artifacts.mps}/lib/mps-openapi.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-closures.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-collections.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-tuples.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-core.jar" />
+        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.unitTest.libs/bsh-core-2.0b4.jar" />
+        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.unitTest.libs/cglib-nodep-2.1_3.jar" />
+        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.unitTest.libs/hamcrest-core-1.1.jar" />
+        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.unitTest.libs/hamcrest-library-1.1.jar" />
+        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.unitTest.libs/jmock-2.5.1.jar" />
+        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.unitTest.libs/jmock-junit3-2.5.1.jar" />
+        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.unitTest.libs/jmock-junit4-2.5.1.jar" />
+        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.unitTest.libs/objenesis-1.0.jar" />
+        <fileset file="${artifacts.mps}/lib/annotations.jar" />
+        <fileset file="${artifacts.mps}/lib/junit-4.10.jar" />
+        <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/lib/commons-io-2.4.jar" />
+        <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/lib/batik-anim.jar" />
+        <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/lib/batik-awt-util.jar" />
+        <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/lib/batik-bridge.jar" />
+        <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/lib/batik-codec.jar" />
+        <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/lib/batik-css.jar" />
+        <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/lib/batik-dom.jar" />
+        <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/lib/batik-ext.jar" />
+        <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/lib/batik-extension.jar" />
+        <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/lib/batik-gui-util.jar" />
+        <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/lib/batik-gvt.jar" />
+        <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/lib/batik-parser.jar" />
+        <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/lib/batik-script.jar" />
+        <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/lib/batik-svg-dom.jar" />
+        <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/lib/batik-svggen.jar" />
+        <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/lib/batik-swing.jar" />
+        <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/lib/batik-transcoder.jar" />
+        <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/lib/batik-util.jar" />
+        <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/lib/batik-xml.jar" />
+        <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/lib/batik.jar" />
+        <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/lib/js.jar" />
+        <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/lib/plantuml.jar" />
+        <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/lib/xalan-2.6.0.jar" />
+        <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/lib/xerces_2_5_0.jar" />
+        <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/lib/xml-apis-ext.jar" />
+        <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/lib/xml-apis.jar" />
+        <fileset file="${build.tmp}/deps/mps-multiline/mps-multiline.zip/mps-multiline/lib/diff_match_patch.jar" />
+        <fileset file="${build.tmp}/deps/mps-multiline/mps-multiline.zip/mps-multiline/lib/commons-lang3-3.1.jar" />
+        <fileset file="${build.tmp}/deps/mps-multiline/mps-multiline.zip/mps-multiline/lib/commons-lang-2.6.jar" />
+        <fileset file="${artifacts.mps}/lib/jdom.jar" />
+        <fileset file="${artifacts.mps}/lib/log4j.jar" />
+        <fileset file="${artifacts.mps}/lib/ecj-4.2.1.jar" />
+        <fileset file="${artifacts.mps}/lib/trove4j.jar" />
+        <fileset file="${artifacts.mps}/lib/xstream-1.4.3.jar" />
+        <fileset file="${artifacts.mps}/lib/asm4-all.jar" />
+        <fileset file="${artifacts.mps}/lib/diffutils-1.2.1.jar" />
+        <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/languages/com.mbeddr.core/com.mbeddr.core.modules.runtime.jar" />
+        <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/languages/com.mbeddr.core/com.mbeddr.plantuml.pluginSolution.jar" />
+        <fileset file="${build.tmp}/deps/mps-multiline/mps-multiline.zip/mps-multiline/languages/mps-multiline/de.slisson.mps.editor.multiline.runtime.jar" />
+      </classpath>
+    </javac>
+  </target>
+  
+  <target name="java.compile.test.ex.ext.components" depends="fetchDependencies">
+    <mkdir dir="${build.tmp}/java/out/test.ex.ext.components" />
+    <javac destdir="${build.tmp}/java/out/test.ex.ext.components" fork="true" includeantruntime="false">
+      <compilerarg value="-Xlint:none" />
+      <src>
+        <path location="${mbeddr.ext}/tests/test.ex.ext.components/source_gen" />
+        <pathelement path="${mbeddr.ext}/tests/test.ex.ext.components/test_gen/" />
       </src>
       <classpath>
         <fileset file="${artifacts.mps}/lib/mps-openapi.jar" />
@@ -780,6 +759,7 @@
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${mbeddr.ext}/tests/test.ts.ext.physicalunits.c/source_gen" />
+        <pathelement path="${mbeddr.ext}/tests/test.ts.ext.physicalunits.c/test_gen/" />
       </src>
       <classpath>
         <fileset file="${artifacts.mps}/lib/mps-openapi.jar" />
@@ -848,78 +828,13 @@
     </javac>
   </target>
   
-  <target name="java.compile.test.ex.ext.physicalunits.c" depends="fetchDependencies">
-    <mkdir dir="${build.tmp}/java/out/test.ex.ext.physicalunits.c" />
-    <javac destdir="${build.tmp}/java/out/test.ex.ext.physicalunits.c" fork="true" includeantruntime="false">
-      <compilerarg value="-Xlint:none" />
-      <src>
-        <path location="${mbeddr.ext}/tests/test.ex.ext.physicalunits.c/source_gen" />
-      </src>
-      <classpath>
-        <fileset file="${artifacts.mps}/lib/mps-openapi.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-closures.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-collections.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-tuples.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-core.jar" />
-        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.unitTest.libs/bsh-core-2.0b4.jar" />
-        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.unitTest.libs/cglib-nodep-2.1_3.jar" />
-        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.unitTest.libs/hamcrest-core-1.1.jar" />
-        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.unitTest.libs/hamcrest-library-1.1.jar" />
-        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.unitTest.libs/jmock-2.5.1.jar" />
-        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.unitTest.libs/jmock-junit3-2.5.1.jar" />
-        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.unitTest.libs/jmock-junit4-2.5.1.jar" />
-        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.unitTest.libs/objenesis-1.0.jar" />
-        <fileset file="${artifacts.mps}/lib/annotations.jar" />
-        <fileset file="${artifacts.mps}/lib/junit-4.10.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/lib/commons-io-2.4.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/lib/batik-anim.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/lib/batik-awt-util.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/lib/batik-bridge.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/lib/batik-codec.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/lib/batik-css.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/lib/batik-dom.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/lib/batik-ext.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/lib/batik-extension.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/lib/batik-gui-util.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/lib/batik-gvt.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/lib/batik-parser.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/lib/batik-script.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/lib/batik-svg-dom.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/lib/batik-svggen.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/lib/batik-swing.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/lib/batik-transcoder.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/lib/batik-util.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/lib/batik-xml.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/lib/batik.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/lib/js.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/lib/plantuml.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/lib/xalan-2.6.0.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/lib/xerces_2_5_0.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/lib/xml-apis-ext.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/lib/xml-apis.jar" />
-        <fileset file="${build.tmp}/deps/mps-multiline/mps-multiline.zip/mps-multiline/lib/diff_match_patch.jar" />
-        <fileset file="${build.tmp}/deps/mps-multiline/mps-multiline.zip/mps-multiline/lib/commons-lang3-3.1.jar" />
-        <fileset file="${build.tmp}/deps/mps-multiline/mps-multiline.zip/mps-multiline/lib/commons-lang-2.6.jar" />
-        <fileset file="${artifacts.mps}/lib/jdom.jar" />
-        <fileset file="${artifacts.mps}/lib/log4j.jar" />
-        <fileset file="${artifacts.mps}/lib/ecj-4.2.1.jar" />
-        <fileset file="${artifacts.mps}/lib/trove4j.jar" />
-        <fileset file="${artifacts.mps}/lib/xstream-1.4.3.jar" />
-        <fileset file="${artifacts.mps}/lib/asm4-all.jar" />
-        <fileset file="${artifacts.mps}/lib/diffutils-1.2.1.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/languages/com.mbeddr.core/com.mbeddr.core.modules.runtime.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/languages/com.mbeddr.core/com.mbeddr.plantuml.pluginSolution.jar" />
-        <fileset file="${build.tmp}/deps/mps-multiline/mps-multiline.zip/mps-multiline/languages/mps-multiline/de.slisson.mps.editor.multiline.runtime.jar" />
-      </classpath>
-    </javac>
-  </target>
-  
   <target name="java.compile.test.ts.ext.components" depends="fetchDependencies">
     <mkdir dir="${build.tmp}/java/out/test.ts.ext.components" />
     <javac destdir="${build.tmp}/java/out/test.ts.ext.components" fork="true" includeantruntime="false">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${mbeddr.ext}/tests/test.ts.ext.components/source_gen" />
+        <pathelement path="${mbeddr.ext}/tests/test.ts.ext.components/test_gen/" />
       </src>
       <classpath>
         <fileset file="${artifacts.mps}/lib/mps-openapi.jar" />
@@ -1012,6 +927,7 @@
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${mbeddr.ext}/tests/test.ts.ext.exceptionhandling/source_gen" />
+        <pathelement path="${mbeddr.ext}/tests/test.ts.ext.exceptionhandling/test_gen/" />
       </src>
       <classpath>
         <fileset file="${artifacts.mps}/lib/mps-openapi.jar" />
@@ -1080,70 +996,201 @@
     </javac>
   </target>
   
-  <target name="java.compile.test.ex.ext.components" depends="fetchDependencies">
-    <mkdir dir="${build.tmp}/java/out/test.ex.ext.components" />
-    <javac destdir="${build.tmp}/java/out/test.ex.ext.components" fork="true" includeantruntime="false">
-      <compilerarg value="-Xlint:none" />
-      <src>
-        <path location="${mbeddr.ext}/tests/test.ex.ext.components/source_gen" />
-      </src>
+  <target name="test.com.mbeddr.ext.tests" depends="assemble">
+    <path id="mps.libraries.path">
+      <pathelement location="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.blTypes.jar" />
+      <pathelement location="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.classifiers.jar" />
+      <pathelement location="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.closures.jar" />
+      <pathelement location="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.collections.jar" />
+      <pathelement location="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.extensionMethods.jar" />
+      <pathelement location="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.jar" />
+      <pathelement location="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.javadoc.jar" />
+      <pathelement location="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.jdk7.jar" />
+      <pathelement location="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.logging.jar" />
+      <pathelement location="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.logging.runtime.jar" />
+      <pathelement location="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.scopes.jar" />
+      <pathelement location="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.tuples.jar" />
+      <pathelement location="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.unitTest.libs/jetbrains.mps.baseLanguage.unitTest.libs.jar" />
+      <pathelement location="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguageInternal.jar" />
+      <pathelement location="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.access.jar" />
+      <pathelement location="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.actions.jar" />
+      <pathelement location="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.behavior.jar" />
+      <pathelement location="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.checkedName.jar" />
+      <pathelement location="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.constraints.jar" />
+      <pathelement location="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
+      <pathelement location="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.editor.jar" />
+      <pathelement location="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.findUsages.jar" />
+      <pathelement location="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.generator.generationContext.jar" />
+      <pathelement location="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.generator.generationParameters.jar" />
+      <pathelement location="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.generator.jar" />
+      <pathelement location="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.intentions.jar" />
+      <pathelement location="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.pattern.jar" />
+      <pathelement location="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.plugin.jar" />
+      <pathelement location="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.project.jar" />
+      <pathelement location="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.quotation.jar" />
+      <pathelement location="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.refactoring.jar" />
+      <pathelement location="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.resources.jar" />
+      <pathelement location="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.scopes.jar" />
+      <pathelement location="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.scopes.runtime.jar" />
+      <pathelement location="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.script.jar" />
+      <pathelement location="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.sharedConcepts.jar" />
+      <pathelement location="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.smodel.jar" />
+      <pathelement location="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.structure.jar" />
+      <pathelement location="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.stubs.jar" />
+      <pathelement location="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.textGen.jar" />
+      <pathelement location="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
+      <pathelement location="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.typesystem.jar" />
+      <pathelement location="${artifacts.mps}/languages/make/jetbrains.mps.make.reduced.jar" />
+      <pathelement location="${artifacts.mps}/languages/make/jetbrains.mps.tool.gentest.jar" />
+      <pathelement location="${artifacts.mps}/languages/workbench/jetbrains.mps.lang.plugin.standalone.jar" />
+      <pathelement location="${artifacts.mps}/languages/workbench/jetbrains.mps.uiLanguage.jar" />
+      <pathelement location="${artifacts.mps}/languages/xml/jetbrains.mps.core.xml.jar" />
+      <pathelement location="${artifacts.mps}/lib/mps-closures.jar" />
+      <pathelement location="${artifacts.mps}/lib/mps-collections.jar" />
+      <pathelement location="${artifacts.mps}/lib/mps-core.jar" />
+      <pathelement location="${artifacts.mps}/lib/mps-editor.jar" />
+      <pathelement location="${artifacts.mps}/lib/mps-openapi.jar" />
+      <pathelement location="${artifacts.mps}/lib/mps-platform.jar" />
+      <pathelement location="${artifacts.mps}/lib/mps-test.jar" />
+      <pathelement location="${artifacts.mps}/lib/mps-tool.jar" />
+      <pathelement location="${artifacts.mps}/lib/mps-tuples.jar" />
+      <pathelement location="${artifacts.mps}/lib/mps-workbench.jar" />
+      <pathelement location="${artifacts.mps}/plugins/mps-core/languages/languageDesign/jetbrains.mps.lang.editor.table.runtime.jar" />
+      <pathelement location="${artifacts.mps}/plugins/mps-debugger-api/lib/debugger-api.jar" />
+      <pathelement location="${artifacts.mps}/plugins/mps-devkit/languages/languageDesign/jetbrains.mps.lang.dataFlow.pluginSolution.jar" />
+      <pathelement location="${artifacts.mps}/plugins/mps-execution-api/lib/execution-api.jar" />
+      <pathelement location="${artifacts.mps}/plugins/mps-execution-languages/lib/execution-languages.jar" />
+      <pathelement location="${artifacts.mps}/plugins/mps-testing/languages/baseLanguage/jetbrains.mps.baseLanguage.unitTest.jar" />
+      <pathelement location="${artifacts.mps}/plugins/mps-testing/languages/languageDesign/jetbrains.mps.lang.smodelTests.jar" />
+      <pathelement location="${artifacts.mps}/plugins/mps-testing/languages/languageDesign/jetbrains.mps.lang.test.jar" />
+      <pathelement location="${artifacts.mps}/plugins/mps-testing/languages/languageDesign/jetbrains.mps.lang.test.runtime.jar" />
+      <pathelement location="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/languages/com.mbeddr.core/com.mbddr.core.buildconfig.pluginSolution.jar" />
+      <pathelement location="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/languages/com.mbeddr.core/com.mbeddr.core.base.jar" />
+      <pathelement location="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/languages/com.mbeddr.core/com.mbeddr.core.buildconfig.jar" />
+      <pathelement location="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/languages/com.mbeddr.core/com.mbeddr.core.cstubs.jar" />
+      <pathelement location="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/languages/com.mbeddr.core/com.mbeddr.core.embedded.jar" />
+      <pathelement location="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/languages/com.mbeddr.core/com.mbeddr.core.expressions.jar" />
+      <pathelement location="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/languages/com.mbeddr.core/com.mbeddr.core.jar" />
+      <pathelement location="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/languages/com.mbeddr.core/com.mbeddr.core.legacy.jar" />
+      <pathelement location="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/languages/com.mbeddr.core/com.mbeddr.core.make.jar" />
+      <pathelement location="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/languages/com.mbeddr.core/com.mbeddr.core.modules.gen.jar" />
+      <pathelement location="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/languages/com.mbeddr.core/com.mbeddr.core.modules.jar" />
+      <pathelement location="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/languages/com.mbeddr.core/com.mbeddr.core.modules.runtime.jar" />
+      <pathelement location="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/languages/com.mbeddr.core/com.mbeddr.core.pointers.jar" />
+      <pathelement location="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/languages/com.mbeddr.core/com.mbeddr.core.runconfiguration.jar" />
+      <pathelement location="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/languages/com.mbeddr.core/com.mbeddr.core.statements.jar" />
+      <pathelement location="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/languages/com.mbeddr.core/com.mbeddr.core.udt.jar" />
+      <pathelement location="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/languages/com.mbeddr.core/com.mbeddr.core.unittest.jar" />
+      <pathelement location="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/languages/com.mbeddr.core/com.mbeddr.core.util.jar" />
+      <pathelement location="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/languages/com.mbeddr.core/com.mbeddr.plantuml.pluginSolution.jar" />
+      <pathelement location="${build.tmp}/deps/com.mbeddr.debugger.build/com.mbeddr.core.debugger.zip/mbeddr.debugger/languages/com.mbeddr.core.debugger/com.mbeddr.core.debug.blext.jar" />
+      <pathelement location="${build.tmp}/deps/com.mbeddr.debugger.build/com.mbeddr.core.debugger.zip/mbeddr.debugger/languages/com.mbeddr.core.debugger/com.mbeddr.core.debug.jar" />
+      <pathelement location="${build.tmp}/deps/com.mbeddr.ext.components/com.mbeddr.ext.components.zip/mbeddr.components/languages/com.mbeddr.ext.components/com.mbeddr.components.jar" />
+      <pathelement location="${build.tmp}/deps/com.mbeddr.ext.components/com.mbeddr.ext.components.zip/mbeddr.components/languages/com.mbeddr.ext.components/com.mbeddr.ext.components.gen_nomw.jar" />
+      <pathelement location="${build.tmp}/deps/com.mbeddr.ext.components/com.mbeddr.ext.components.zip/mbeddr.components/languages/com.mbeddr.ext.components/com.mbeddr.ext.components.jar" />
+      <pathelement location="${build.tmp}/deps/com.mbeddr.ext.components/com.mbeddr.ext.components.zip/mbeddr.components/languages/com.mbeddr.ext.components/com.mbeddr.ext.components.mock.jar" />
+      <pathelement location="${build.tmp}/deps/com.mbeddr.ext.components/com.mbeddr.ext.components.zip/mbeddr.components/languages/com.mbeddr.ext.components/com.mbeddr.ext.components.test.jar" />
+      <pathelement location="${build.tmp}/deps/com.mbeddr.ext.exceptionhandling/com.mbeddr.ext.exceptionhandling.zip/mbeddr.exceptionhandling/languages/com.mbeddr.ext.exceptionhandling/com.mbeddr.ext.exceptionhandling.jar" />
+      <pathelement location="${build.tmp}/deps/com.mbeddr.ext.exceptionhandling/com.mbeddr.ext.exceptionhandling.zip/mbeddr.exceptionhandling/languages/com.mbeddr.ext.exceptionhandling/com.mbeddr.ext.exceptionhandling.library.jar" />
+      <pathelement location="${build.tmp}/deps/com.mbeddr.ext.units/com.mbeddr.ext.units.zip/mbeddr.units/languages/com.mbeddr.ext.units/com.mbeddr.ext.physicalunits.c.jar" />
+      <pathelement location="${build.tmp}/deps/com.mbeddr.ext.units/com.mbeddr.ext.units.zip/mbeddr.units/languages/com.mbeddr.ext.units/com.mbeddr.ext.physicalunits.jar" />
+      <pathelement location="${build.tmp}/deps/com.mbeddr.ext.units/com.mbeddr.ext.units.zip/mbeddr.units/languages/com.mbeddr.ext.units/com.mbeddr.physicalunits.jar" />
+      <pathelement location="${build.tmp}/deps/com.mbeddr.mpsutil.build/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil/com.mbeddr.mpsutil.bldoc.jar" />
+      <pathelement location="${build.tmp}/deps/com.mbeddr.mpsutil.build/com.mbeddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil/com.mbeddr.mpsutil.blutil.jar" />
+      <pathelement location="${build.tmp}/deps/com.mbeddr.spawner.build/com.mbeddr.spawner.zip/mbeddr.spawner/languages/Eclipse.Debugger.jar" />
+      <pathelement location="${build.tmp}/deps/mps-multiline/mps-multiline.zip/mps-multiline/languages/mps-multiline/de.slisson.mps.editor.multiline.runtime.jar" />
+      <pathelement location="${build.tmp}/deps/mps-richtext/mps-richtext.zip/mps-richtext/languages/mps-richtext/de.slisson.mps.richtext.jar" />
+    </path>
+    <pathconvert pathsep="${path.separator}" property="mps.libraries.path.string" refid="mps.libraries.path" />
+    <path id="mps.plugins.path">
+      <pathelement location="${artifacts.mps}/plugins/mps-build" />
+      <pathelement location="${artifacts.mps}/plugins/mps-core/META-INF/plugin.xml/../.." />
+      <pathelement location="${artifacts.mps}/plugins/mps-debugger-api" />
+      <pathelement location="${artifacts.mps}/plugins/mps-debugger-java" />
+      <pathelement location="${artifacts.mps}/plugins/mps-execution-api" />
+      <pathelement location="${artifacts.mps}/plugins/mps-execution-languages" />
+      <pathelement location="${artifacts.mps}/plugins/mps-testing" />
+      <pathelement location="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core" />
+      <pathelement location="${build.tmp}/deps/com.mbeddr.debugger.build/com.mbeddr.core.debugger.zip/mbeddr.debugger" />
+      <pathelement location="${build.tmp}/deps/com.mbeddr.ext.components/com.mbeddr.ext.components.zip/mbeddr.components" />
+      <pathelement location="${build.tmp}/deps/com.mbeddr.ext.units/com.mbeddr.ext.units.zip/mbeddr.units" />
+      <pathelement location="${build.tmp}/deps/com.mbeddr.mpsutil.build/com.mbeddr.mpsutil.zip/mbeddr.mpsutil" />
+      <pathelement location="${build.tmp}/deps/com.mbeddr.spawner.build/com.mbeddr.spawner.zip/mbeddr.spawner" />
+      <pathelement location="${build.tmp}/deps/mps-multiline/mps-multiline.zip/mps-multiline" />
+      <pathelement location="${build.tmp}/deps/mps-richtext/mps-richtext.zip/mps-richtext" />
+    </path>
+    <pathconvert pathsep="${path.separator}" property="mps.plugins.path.string" refid="mps.plugins.path" />
+    <path id="mps.tests.path">
+      <pathelement location="${build.tmp}/deps/com.mbeddr.ext.tests/com.mbeddr.ext.tests.zip/mbeddr.ext.ts.tests/languages/com.mbeddr.ext.ts.tests/test.ts.ext.components.jar" />
+      <pathelement location="${build.tmp}/deps/com.mbeddr.ext.tests/com.mbeddr.ext.tests.zip/mbeddr.ext.ts.tests/languages/com.mbeddr.ext.ts.tests/test.ts.ext.exceptionhandling.jar" />
+      <pathelement location="${build.tmp}/deps/com.mbeddr.ext.tests/com.mbeddr.ext.tests.zip/mbeddr.ext.ts.tests/languages/com.mbeddr.ext.ts.tests/test.ts.ext.physicalunits.c.jar" />
+    </path>
+    <pathconvert pathsep="${path.separator}" property="mps.tests.path.string" refid="mps.tests.path" />
+    <junit showoutput="true" fork="true">
+      <jvmarg value="-ea" />
+      <jvmarg value="-Xss1024k" />
+      <jvmarg value="-Xmx1024m" />
+      <jvmarg value="-XX:MaxPermSize=256m" />
+      <jvmarg value="-XX:+HeapDumpOnOutOfMemoryError" />
+      
       <classpath>
-        <fileset file="${artifacts.mps}/lib/mps-openapi.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-closures.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-collections.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-tuples.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-core.jar" />
-        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.unitTest.libs/bsh-core-2.0b4.jar" />
-        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.unitTest.libs/cglib-nodep-2.1_3.jar" />
-        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.unitTest.libs/hamcrest-core-1.1.jar" />
-        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.unitTest.libs/hamcrest-library-1.1.jar" />
-        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.unitTest.libs/jmock-2.5.1.jar" />
-        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.unitTest.libs/jmock-junit3-2.5.1.jar" />
-        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.unitTest.libs/jmock-junit4-2.5.1.jar" />
-        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.unitTest.libs/objenesis-1.0.jar" />
-        <fileset file="${artifacts.mps}/lib/annotations.jar" />
-        <fileset file="${artifacts.mps}/lib/junit-4.10.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/lib/commons-io-2.4.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/lib/batik-anim.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/lib/batik-awt-util.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/lib/batik-bridge.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/lib/batik-codec.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/lib/batik-css.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/lib/batik-dom.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/lib/batik-ext.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/lib/batik-extension.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/lib/batik-gui-util.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/lib/batik-gvt.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/lib/batik-parser.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/lib/batik-script.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/lib/batik-svg-dom.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/lib/batik-svggen.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/lib/batik-swing.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/lib/batik-transcoder.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/lib/batik-util.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/lib/batik-xml.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/lib/batik.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/lib/js.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/lib/plantuml.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/lib/xalan-2.6.0.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/lib/xerces_2_5_0.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/lib/xml-apis-ext.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/lib/xml-apis.jar" />
-        <fileset file="${build.tmp}/deps/mps-multiline/mps-multiline.zip/mps-multiline/lib/diff_match_patch.jar" />
-        <fileset file="${build.tmp}/deps/mps-multiline/mps-multiline.zip/mps-multiline/lib/commons-lang3-3.1.jar" />
-        <fileset file="${build.tmp}/deps/mps-multiline/mps-multiline.zip/mps-multiline/lib/commons-lang-2.6.jar" />
-        <fileset file="${artifacts.mps}/lib/jdom.jar" />
-        <fileset file="${artifacts.mps}/lib/log4j.jar" />
-        <fileset file="${artifacts.mps}/lib/ecj-4.2.1.jar" />
-        <fileset file="${artifacts.mps}/lib/trove4j.jar" />
-        <fileset file="${artifacts.mps}/lib/xstream-1.4.3.jar" />
-        <fileset file="${artifacts.mps}/lib/asm4-all.jar" />
-        <fileset file="${artifacts.mps}/lib/diffutils-1.2.1.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/languages/com.mbeddr.core/com.mbeddr.core.modules.runtime.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/languages/com.mbeddr.core/com.mbeddr.plantuml.pluginSolution.jar" />
-        <fileset file="${build.tmp}/deps/mps-multiline/mps-multiline.zip/mps-multiline/languages/mps-multiline/de.slisson.mps.editor.multiline.runtime.jar" />
+        <fileset dir="${artifacts.mps}/lib">
+          <include name="**/*.jar" />
+        </fileset>
+        <fileset dir="${artifacts.mps}/plugins/mps-build">
+          <include name="**/lib/*.jar" />
+        </fileset>
+        <fileset dir="${artifacts.mps}/plugins/mps-core/META-INF/plugin.xml/../..">
+          <include name="**/lib/*.jar" />
+        </fileset>
+        <fileset dir="${artifacts.mps}/plugins/mps-debugger-api">
+          <include name="**/lib/*.jar" />
+        </fileset>
+        <fileset dir="${artifacts.mps}/plugins/mps-debugger-java">
+          <include name="**/lib/*.jar" />
+        </fileset>
+        <fileset dir="${artifacts.mps}/plugins/mps-execution-api">
+          <include name="**/lib/*.jar" />
+        </fileset>
+        <fileset dir="${artifacts.mps}/plugins/mps-execution-languages">
+          <include name="**/lib/*.jar" />
+        </fileset>
+        <fileset dir="${artifacts.mps}/plugins/mps-testing">
+          <include name="**/lib/*.jar" />
+        </fileset>
+        <fileset dir="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core">
+          <include name="**/lib/*.jar" />
+        </fileset>
+        <fileset dir="${build.tmp}/deps/com.mbeddr.debugger.build/com.mbeddr.core.debugger.zip/mbeddr.debugger">
+          <include name="**/lib/*.jar" />
+        </fileset>
+        <fileset dir="${build.tmp}/deps/com.mbeddr.ext.components/com.mbeddr.ext.components.zip/mbeddr.components">
+          <include name="**/lib/*.jar" />
+        </fileset>
+        <fileset dir="${build.tmp}/deps/com.mbeddr.ext.units/com.mbeddr.ext.units.zip/mbeddr.units">
+          <include name="**/lib/*.jar" />
+        </fileset>
+        <fileset dir="${build.tmp}/deps/com.mbeddr.mpsutil.build/com.mbeddr.mpsutil.zip/mbeddr.mpsutil">
+          <include name="**/lib/*.jar" />
+        </fileset>
+        <fileset dir="${build.tmp}/deps/com.mbeddr.spawner.build/com.mbeddr.spawner.zip/mbeddr.spawner">
+          <include name="**/lib/*.jar" />
+        </fileset>
+        <fileset dir="${build.tmp}/deps/mps-multiline/mps-multiline.zip/mps-multiline">
+          <include name="**/lib/*.jar" />
+        </fileset>
+        <fileset dir="${build.tmp}/deps/mps-richtext/mps-richtext.zip/mps-richtext">
+          <include name="**/lib/*.jar" />
+        </fileset>
       </classpath>
-    </javac>
+      
+      <sysproperty key="plugin.path" value="${mps.plugins.path.string}" />
+      <sysproperty key="mps.libraries" value="${mps.libraries.path.string}" />
+      <sysproperty key="mps.test.modules" value="${mps.tests.path.string}" />
+      
+      <test name="jetbrains.mps.testbench.junit.suites.ModuleTestSuite" outfile="TEST-jetbrains.mps.testbench.junit.suites.ModuleTestSuite-com.mbeddr.ext.tests" />
+      <formatter type="xml" />
+    </junit>
   </target>
   
   <target name="cleanSources">
@@ -1155,5 +1202,13 @@
     <delete dir="${mbeddr.ext}/tests/test.ts.ext.components/source_gen" />
     <delete dir="${mbeddr.ext}/tests/test.ts.ext.exceptionhandling/source_gen" />
     <delete dir="${mbeddr.ext}/tests/test.ts.ext.physicalunits.c/source_gen" />
+    <delete dir="${mbeddr.ext}/tests/test.ex.ext.comp_mocking/test_gen" />
+    <delete dir="${mbeddr.ext}/tests/test.ex.ext.components/test_gen" />
+    <delete dir="${mbeddr.ext}/tests/test.ex.ext.exceptionhandling/test_gen" />
+    <delete dir="${mbeddr.ext}/tests/test.ex.ext.physicalunits.c/test_gen" />
+    <delete dir="${mbeddr.ext}/tests/test.ex.ext.statemachine/test_gen" />
+    <delete dir="${mbeddr.ext}/tests/test.ts.ext.components/test_gen" />
+    <delete dir="${mbeddr.ext}/tests/test.ts.ext.exceptionhandling/test_gen" />
+    <delete dir="${mbeddr.ext}/tests/test.ts.ext.physicalunits.c/test_gen" />
   </target>
 </project>
