@@ -804,67 +804,38 @@
       </node>
     </node>
     <node role="layout" roleId="3ior.5617550519002745372" type="3ior.BuildLayout" typeId="3ior.5617550519002745364" id="6247780594427537451" nodeInfo="ng">
-      <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_Zip" typeId="3ior.7389400916848050071" id="6247780594427537452" nodeInfo="ng">
-        <node role="children" roleId="3ior.7389400916848037006" type="kdzh.BuildMpsLayout_Plugin" typeId="kdzh.6592112598314498926" id="6247780594427537453" nodeInfo="ng">
-          <link role="plugin" roleId="kdzh.6592112598314801433" targetNodeId="6247780594427537470" />
-        </node>
-        <node role="containerName" roleId="3ior.4380385936562148502" type="3ior.BuildStringNotEmpty" typeId="3ior.841011766566059607" id="6247780594427537454" nodeInfo="ng">
-          <node role="parts" roleId="3ior.4903714810883783243" type="3ior.BuildTextStringPart" typeId="3ior.4903714810883702019" id="6247780594427537455" nodeInfo="ng">
-            <property name="text" nameId="3ior.4903714810883755350" value="com.mbeddr.cc.zip" />
-          </node>
-        </node>
+      <node role="children" roleId="3ior.7389400916848037006" type="kdzh.BuildMpsLayout_ModuleJars" typeId="kdzh.1265949165890536423" id="9141467591177993286" nodeInfo="ng">
+        <link role="module" roleId="kdzh.1265949165890536425" targetNodeId="6247780594427537573" resolveInfo="test.ex.cc.fm" />
+      </node>
+      <node role="children" roleId="3ior.7389400916848037006" type="kdzh.BuildMpsLayout_ModuleJars" typeId="kdzh.1265949165890536423" id="9141467591177993657" nodeInfo="ng">
+        <link role="module" roleId="kdzh.1265949165890536425" targetNodeId="9141467591177726664" resolveInfo="test.ts.cc.requirements.scenarios" />
+      </node>
+      <node role="children" roleId="3ior.7389400916848037006" type="kdzh.BuildMpsLayout_ModuleJars" typeId="kdzh.1265949165890536423" id="9141467591177994031" nodeInfo="ng">
+        <link role="module" roleId="kdzh.1265949165890536425" targetNodeId="9141467591177709492" resolveInfo="test.ts.cc.var.c" />
+      </node>
+      <node role="children" roleId="3ior.7389400916848037006" type="kdzh.BuildMpsLayout_ModuleJars" typeId="kdzh.1265949165890536423" id="9141467591177994411" nodeInfo="ng">
+        <link role="module" roleId="kdzh.1265949165890536425" targetNodeId="6247780594427537578" resolveInfo="test.ts.requirements" />
       </node>
     </node>
-    <node role="parts" roleId="3ior.7389400916848080626" type="kdzh.BuildMps_IdeaPlugin" typeId="kdzh.6592112598314498932" id="6247780594427537470" nodeInfo="ng">
-      <property name="id" nameId="kdzh.6592112598314498927" value="com.mbeddr.cc.test.dev" />
-      <node role="name" roleId="kdzh.6592112598314499021" type="3ior.BuildStringNotEmpty" typeId="3ior.841011766566059607" id="6247780594427537471" nodeInfo="ng">
-        <node role="parts" roleId="3ior.4903714810883783243" type="3ior.BuildTextStringPart" typeId="3ior.4903714810883702019" id="6247780594427537472" nodeInfo="ng">
-          <property name="text" nameId="3ior.4903714810883755350" value="com.mbeddr.cc.test.dev" />
+    <node role="parts" roleId="3ior.7389400916848080626" type="kdzh.BuildMps_IdeaPlugin" typeId="kdzh.6592112598314498932" id="9141467591178169006" nodeInfo="ng">
+      <property name="id" nameId="kdzh.6592112598314498927" value="dummy" />
+      <node role="name" roleId="kdzh.6592112598314499021" type="3ior.BuildStringNotEmpty" typeId="3ior.841011766566059607" id="9141467591178169008" nodeInfo="ng">
+        <node role="parts" roleId="3ior.4903714810883783243" type="3ior.BuildTextStringPart" typeId="3ior.4903714810883702019" id="9141467591178169713" nodeInfo="ng">
+          <property name="text" nameId="3ior.4903714810883755350" value="dummy" />
         </node>
       </node>
-      <node role="version" roleId="kdzh.6592112598314498931" type="3ior.BuildStringNotEmpty" typeId="3ior.841011766566059607" id="6247780594427537473" nodeInfo="ng">
-        <node role="parts" roleId="3ior.4903714810883783243" type="3ior.BuildTextStringPart" typeId="3ior.4903714810883702019" id="6247780594427537474" nodeInfo="ng">
+      <node role="containerName" roleId="kdzh.6592112598314855574" type="3ior.BuildStringNotEmpty" typeId="3ior.841011766566059607" id="9141467591178169010" nodeInfo="ng">
+        <node role="parts" roleId="3ior.4903714810883783243" type="3ior.BuildTextStringPart" typeId="3ior.4903714810883702019" id="9141467591178169717" nodeInfo="ng">
+          <property name="text" nameId="3ior.4903714810883755350" value="dummy" />
+        </node>
+      </node>
+      <node role="version" roleId="kdzh.6592112598314498931" type="3ior.BuildStringNotEmpty" typeId="3ior.841011766566059607" id="9141467591178169012" nodeInfo="ng">
+        <node role="parts" roleId="3ior.4903714810883783243" type="3ior.BuildTextStringPart" typeId="3ior.4903714810883702019" id="9141467591178170077" nodeInfo="ng">
           <property name="text" nameId="3ior.4903714810883755350" value="1.0" />
         </node>
       </node>
-      <node role="content" roleId="kdzh.6592112598314499050" type="kdzh.BuildMps_IdeaPluginGroup" typeId="kdzh.6592112598314586625" id="6247780594427537583" nodeInfo="ng">
-        <link role="group" roleId="kdzh.6592112598314586626" targetNodeId="6247780594427537572" resolveInfo="com.mbeddr.cc.test" />
-      </node>
-      <node role="dependencies" roleId="kdzh.6592112598314499028" type="kdzh.BuildMps_IdeaPluginDependency" typeId="kdzh.6592112598314499027" id="6247780594427537476" nodeInfo="ng">
-        <link role="target" roleId="kdzh.6592112598314499066" targetNodeId="ffeo.4973949960459588488" resolveInfo="jetbrains.mps.core" />
-      </node>
-      <node role="dependencies" roleId="kdzh.6592112598314499028" type="kdzh.BuildMps_IdeaPluginDependency" typeId="kdzh.6592112598314499027" id="8306217617074425026" nodeInfo="ng">
-        <link role="target" roleId="kdzh.6592112598314499066" targetNodeId="og8s.6247780594427434826" />
-      </node>
-      <node role="dependencies" roleId="kdzh.6592112598314499028" type="kdzh.BuildMps_IdeaPluginDependency" typeId="kdzh.6592112598314499027" id="6247780594427537477" nodeInfo="ng">
-        <link role="target" roleId="kdzh.6592112598314499066" targetNodeId="g8gn.8628756186118765539" resolveInfo="com.mbeddr.core" />
-      </node>
-      <node role="dependencies" roleId="kdzh.6592112598314499028" type="kdzh.BuildMps_IdeaPluginDependency" typeId="kdzh.6592112598314499027" id="6247780594427537478" nodeInfo="ng">
-        <link role="target" roleId="kdzh.6592112598314499066" targetNodeId="al5i.8628756186118380506" resolveInfo="com.mbeddr.mpsutil" />
-      </node>
-      <node role="dependencies" roleId="kdzh.6592112598314499028" type="kdzh.BuildMps_IdeaPluginDependency" typeId="kdzh.6592112598314499027" id="6247780594427537799" nodeInfo="ng">
-        <link role="target" roleId="kdzh.6592112598314499066" targetNodeId="8628756186118983442" />
-      </node>
-      <node role="dependencies" roleId="kdzh.6592112598314499028" type="kdzh.BuildMps_IdeaPluginDependency" typeId="kdzh.6592112598314499027" id="1021502391328617055" nodeInfo="ng">
-        <link role="target" roleId="kdzh.6592112598314499066" targetNodeId="fswa.8607331426312061457" />
-      </node>
-      <node role="dependencies" roleId="kdzh.6592112598314499028" type="kdzh.BuildMps_IdeaPluginDependency" typeId="kdzh.6592112598314499027" id="6247780594427548622" nodeInfo="ng">
-        <link role="target" roleId="kdzh.6592112598314499066" targetNodeId="6247780594427548303" />
-      </node>
-      <node role="dependencies" roleId="kdzh.6592112598314499028" type="kdzh.BuildMps_IdeaPluginDependency" typeId="kdzh.6592112598314499027" id="8066005271802602201" nodeInfo="ng">
-        <link role="target" roleId="kdzh.6592112598314499066" targetNodeId="ax0f.6247780594427434826" />
-      </node>
-      <node role="dependencies" roleId="kdzh.6592112598314499028" type="kdzh.BuildMps_IdeaPluginDependency" typeId="kdzh.6592112598314499027" id="3860690561157489025" nodeInfo="ng">
-        <link role="target" roleId="kdzh.6592112598314499066" targetNodeId="ayz1.1671983567912265693" />
-      </node>
-      <node role="containerName" roleId="kdzh.6592112598314855574" type="3ior.BuildStringNotEmpty" typeId="3ior.841011766566059607" id="6247780594427537479" nodeInfo="ng">
-        <node role="parts" roleId="3ior.4903714810883783243" type="3ior.BuildTextStringPart" typeId="3ior.4903714810883702019" id="6247780594427537480" nodeInfo="ng">
-          <property name="text" nameId="3ior.4903714810883755350" value="mbeddr.cc.test" />
-        </node>
-      </node>
-      <node role="vendor" roleId="kdzh.7832771629084912518" type="kdzh.BuildMps_IdeaPluginVendor" typeId="kdzh.7832771629084799699" id="6247780594427537481" nodeInfo="ng">
-        <property name="name" nameId="kdzh.7832771629084799702" value="mbeddr" />
-        <property name="url" nameId="kdzh.7832771629084799701" value="http://mbeddr.com" />
+      <node role="dependencies" roleId="kdzh.6592112598314499028" type="kdzh.BuildMps_IdeaPluginDependency" typeId="kdzh.6592112598314499027" id="9141467591178170615" nodeInfo="ng">
+        <link role="target" roleId="kdzh.6592112598314499066" targetNodeId="ffeo.6497499977866930931" />
       </node>
     </node>
     <node role="parts" roleId="3ior.7389400916848080626" type="kdzh.BuildMps_Group" typeId="kdzh.1500819558095907805" id="6247780594427537572" nodeInfo="ng">
