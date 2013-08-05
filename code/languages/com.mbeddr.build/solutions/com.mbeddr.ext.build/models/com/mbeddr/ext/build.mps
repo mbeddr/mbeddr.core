@@ -2435,8 +2435,14 @@
     </node>
     <node role="aspects" roleId="3ior.3542413272732620719" type="5tjl.BuildMpsLayout_TestModules" typeId="5tjl.4560297596904469357" id="3668159920706863624" nodeInfo="nn">
       <property name="name" nameId="tpck.1169194664001" value="com.mbeddr.ext.tests" />
-      <node role="modules" roleId="5tjl.4560297596904469360" type="5tjl.BuildMpsLayout_TestModuleGroup" typeId="5tjl.4560297596904469355" id="3668159920707391525" nodeInfo="ng">
-        <link role="group" roleId="5tjl.4560297596904469356" targetNodeId="3668159920707379327" resolveInfo="com.mbeddr.ext.ts.tests" />
+      <node role="modules" roleId="5tjl.4560297596904469360" type="5tjl.BuildMpsLayout_TestModule" typeId="5tjl.4560297596904469362" id="9141467591177202089" nodeInfo="nn">
+        <link role="module" roleId="5tjl.4560297596904469363" targetNodeId="3668159920707379355" resolveInfo="test.ts.ext.components" />
+      </node>
+      <node role="modules" roleId="5tjl.4560297596904469360" type="5tjl.BuildMpsLayout_TestModule" typeId="5tjl.4560297596904469362" id="9141467591177204181" nodeInfo="nn">
+        <link role="module" roleId="5tjl.4560297596904469363" targetNodeId="3668159920707379362" resolveInfo="test.ts.ext.exceptionhandling" />
+      </node>
+      <node role="modules" roleId="5tjl.4560297596904469360" type="5tjl.BuildMpsLayout_TestModule" typeId="5tjl.4560297596904469362" id="9141467591177205097" nodeInfo="nn">
+        <link role="module" roleId="5tjl.4560297596904469363" targetNodeId="3668159920707379345" resolveInfo="test.ts.ext.physicalunits.c" />
       </node>
     </node>
   </root>
