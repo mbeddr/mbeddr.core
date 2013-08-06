@@ -1,1 +1,1 @@
-ant build
+ant build-languages

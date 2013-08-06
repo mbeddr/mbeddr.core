@@ -1,1 +1,0 @@
-ant delete-mps-generated-code

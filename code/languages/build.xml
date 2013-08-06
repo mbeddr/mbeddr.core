@@ -1,4 +1,4 @@
-<project name="mbeddr download and deploy plugins" default="install-plugins">
+<project name="mbeddr download and deploy plugins" default="build-languages">
   <property file="build.properties"/>
   
   <!-- url/mps properties -->
@@ -116,7 +116,7 @@
           </not>
       </condition>
   </fail>
-
+	    	    	    	  
   <target name="install-plugins">
 	  <!-- create directory structure -->
 	  <mkdir dir="${multiline.build-path}"/>
@@ -226,7 +226,7 @@
 	  <ant antfile="${com.mbeddr.analyses.ts-tests-build-file.name}" dir="${com.mbeddr.analyses.build-file.location}" target="${clean-plugins.task}" />	 	  
   </target>	
   	  
-  <target name="build" depends="delete-mps-generated-code,delete-build-plugins" >	 
+  <target name="build-languages" depends="delete-mps-generated-code,delete-build-plugins" >	 
 	  <ant antfile="${com.mbeddr.mpsutil.build-file.name}" dir="${com.mbeddr.mpsutil.build-file.location}" target="${generate-code.task}" />
 	  <ant antfile="${com.mbeddr.mpsutil.build-file.name}" dir="${com.mbeddr.mpsutil.build-file.location}" target="${build-plugin.task}" />
 	  

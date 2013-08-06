@@ -1,1 +1,0 @@
-call ant delete-mps-generated-code
