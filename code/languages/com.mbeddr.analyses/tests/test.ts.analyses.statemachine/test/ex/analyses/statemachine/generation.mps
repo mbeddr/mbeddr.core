@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model modelUID="r:fe7ab535-3076-49f1-b83f-574d9a9bc68a(test.ts.analyses.statemachine.generation)">
+<model modelUID="r:fe7ab535-3076-49f1-b83f-574d9a9bc68a(test.ex.analyses.statemachine.generation)">
   <persistence version="8" />
   <devkit namespace="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
   <devkit namespace="43d889ae-8e6a-4f6e-a649-d59342d8728d(com.mbeddr.statemachines)" />
