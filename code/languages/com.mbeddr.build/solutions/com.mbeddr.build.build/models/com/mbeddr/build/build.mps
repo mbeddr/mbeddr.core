@@ -450,8 +450,8 @@
           </node>
         </node>
         <node role="generator" roleId="kdzh.9200313594498201639" type="kdzh.BuildMps_Generator" typeId="kdzh.5507251971038816436" id="4699195107803794340" nodeInfo="ng">
-          <property name="name" nameId="tpck.1169194664001" value="mbeddr.tutorial.metadata#7769043652732851938" />
-          <property name="uuid" nameId="kdzh.322010710375892619" value="70249bd6-21b1-4002-9c00-14afd18437b3" />
+          <property name="name" nameId="tpck.1169194664001" value="mbeddr.tutorial.metadata#1373401575434711868" />
+          <property name="uuid" nameId="kdzh.322010710375892619" value="d2a1d480-ae8b-4f62-a006-70cfebe511d6" />
           <property name="doNotCompile" nameId="kdzh.1500819558096356884" value="false" />
         </node>
       </node>

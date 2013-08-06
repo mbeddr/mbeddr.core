@@ -231,7 +231,7 @@
       <fileset dir="${build.tmp}/default/mbeddr.tutorial.metadata.jar" />
     </jar>
     <jar destfile="${build.layout}/mbeddr.tutorial.metadata-generator.jar">
-      <fileset dir="${build.tmp}/java/out/mbeddr.tutorial.metadata#7769043652732851938" />
+      <fileset dir="${build.tmp}/java/out/mbeddr.tutorial.metadata#1373401575434711868" />
     </jar>
     <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-metadata-generator-template">
       <fileset dir="${tutorial.home}/languages/metadata/generator/template" includes="**/*.mps, **/*.metadata, **/*.history" />
@@ -484,6 +484,7 @@
     <ant antfile="../com.mbeddr.doc/build.xml" inheritAll="false" useNativeBasedir="true" />
     <ant antfile="../com.mbeddr.cc/build-req.xml" inheritAll="false" useNativeBasedir="true" />
     <ant antfile="../com.mbeddr.analyses/build-base.xml" inheritAll="false" useNativeBasedir="true" />
+    <ant antfile="../com.mbeddr.ext/build-SmInComp.xml" inheritAll="false" useNativeBasedir="true" />
     <ant antfile="../com.mbeddr.analyses/build-yices.xml" inheritAll="false" useNativeBasedir="true" />
     <ant antfile="../com.mbeddr.analyses/build-cbmc.xml" inheritAll="false" useNativeBasedir="true" />
     <ant antfile="../com.mbeddr.analyses/build-nusmv.xml" inheritAll="false" useNativeBasedir="true" />
@@ -513,7 +514,7 @@
     <delete dir="${build.layout}" />
   </target>
   
-  <target name="compileJava" depends="java.compile.mbeddr.tutorial.blocks, java.compile.mbeddr.tutorial.blocks#6275956088647057041, java.compile.mbeddr.tutorial.heap, java.compile.mbeddr.tutorial.heap#6125369673958882338, java.compile.mbeddr.tutorial.osconfig.cimpl, java.compile.mbeddr.tutorial.osconfig.cimpl#5485104033529951841, java.compile.mbeddr.tutotial.osconfig.memory, java.compile.mbeddr.tutorial.metadata, java.compile.mbeddr.tutorial.metadata#7769043652732851938, java.compile.mbeddr.tutorial.vectors, java.compile.mbeddr.tutorial.processorregisters, java.compile.mbeddr.tutorial.processorregisters#1462098009437633268, java.compile.mbeddr.tutorial.osconfig, java.compile.mbeddr.tutorial.complex, java.compile.mbeddr.tutorial.smtrigger, java.compile.mbeddr.tutorial.smtrigger#2051642899460594294, java.compile.mbeddr.tutorial.foreach, java.compile.mbeddr.tutorial.foreach#7977993180520148024" />
+  <target name="compileJava" depends="java.compile.mbeddr.tutorial.blocks, java.compile.mbeddr.tutorial.blocks#6275956088647057041, java.compile.mbeddr.tutorial.heap, java.compile.mbeddr.tutorial.heap#6125369673958882338, java.compile.mbeddr.tutorial.osconfig.cimpl, java.compile.mbeddr.tutorial.osconfig.cimpl#5485104033529951841, java.compile.mbeddr.tutotial.osconfig.memory, java.compile.mbeddr.tutorial.metadata, java.compile.mbeddr.tutorial.metadata#1373401575434711868, java.compile.mbeddr.tutorial.vectors, java.compile.mbeddr.tutorial.processorregisters, java.compile.mbeddr.tutorial.processorregisters#1462098009437633268, java.compile.mbeddr.tutorial.osconfig, java.compile.mbeddr.tutorial.complex, java.compile.mbeddr.tutorial.smtrigger, java.compile.mbeddr.tutorial.smtrigger#2051642899460594294, java.compile.mbeddr.tutorial.foreach, java.compile.mbeddr.tutorial.foreach#7977993180520148024" />
   
   <target name="processResources" />
   
@@ -686,6 +687,10 @@
       <target name="assemble" />
     </ant>
     <ant antfile="../com.mbeddr.analyses/build-base.xml" inheritAll="false" useNativeBasedir="true">
+      <target name="generate" />
+      <target name="assemble" />
+    </ant>
+    <ant antfile="../com.mbeddr.ext/build-SmInComp.xml" inheritAll="false" useNativeBasedir="true">
       <target name="generate" />
       <target name="assemble" />
     </ant>
@@ -1152,9 +1157,9 @@
     </javac>
   </target>
   
-  <target name="java.compile.mbeddr.tutorial.metadata#7769043652732851938" depends="java.compile.mbeddr.tutorial.metadata, fetchDependencies">
-    <mkdir dir="${build.tmp}/java/out/mbeddr.tutorial.metadata#7769043652732851938" />
-    <javac destdir="${build.tmp}/java/out/mbeddr.tutorial.metadata#7769043652732851938" fork="true" includeantruntime="false">
+  <target name="java.compile.mbeddr.tutorial.metadata#1373401575434711868" depends="java.compile.mbeddr.tutorial.metadata, fetchDependencies">
+    <mkdir dir="${build.tmp}/java/out/mbeddr.tutorial.metadata#1373401575434711868" />
+    <javac destdir="${build.tmp}/java/out/mbeddr.tutorial.metadata#1373401575434711868" fork="true" includeantruntime="false">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${tutorial.home}/languages/metadata/generator/source_gen" />

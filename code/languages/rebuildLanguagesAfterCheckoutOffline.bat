@@ -1,1 +1,1 @@
-call ant build
+call ant build-languages
