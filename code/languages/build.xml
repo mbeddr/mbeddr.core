@@ -54,7 +54,8 @@
   <property name="com.mbeddr.ext.SmInComp-build-file.name" value="build-SmInComp.xml" /> 
   <property name="com.mbeddr.ext.units-build-file.name" value="build-units.xml" /> 
   <property name="com.mbeddr.ext.statemachine-build-file.name" value="build-statemachine.xml" /> 
-  <property name="com.mbeddr.ext.tests-build-file.name" value="build-tests.xml" /> 
+  <property name="com.mbeddr.ext.ex-tests-build-file.name" value="build-ex-tests.xml" /> 
+  <property name="com.mbeddr.ext.ts-tests-build-file.name" value="build-ts-tests.xml" /> 
   
   <!-- com.mbeddr.analyses -->  
   <property name="com.mbeddr.analyses.build-path.postfix" value="${mbeddr.github.core.home}/build/com.mbeddr.analyses/build/artifacts/com.mbeddr.analyses.build" />  
@@ -63,6 +64,7 @@
   <property name="com.mbeddr.analyses.cbmc-build-file.name" value="build-cbmc.xml" /> 
   <property name="com.mbeddr.analyses.nusmv-build-file.name" value="build-nusmv.xml" /> 
   <property name="com.mbeddr.analyses.yices-build-file.name" value="build-yices.xml" /> 
+  <property name="com.mbeddr.analyses.ex-tests-build-file.name" value="build-ex-tests.xml" /> 
       
   <!-- multiline -->  
   <property name="multiline.zip-file.name" value="mps-multiline.zip" />
@@ -118,33 +120,33 @@
 	  <mkdir dir="${multiline.build-path}"/>
 	  <mkdir dir="${mps-editor-override.build-path}"/>
 	  <mkdir dir="${mps-richtext.build-path}"/>
-<!--	  <mkdir dir="${spawner.build-path}"/> -->
+	  <mkdir dir="${spawner.build-path}"/> 
 	  
 	  <!-- clean-plugin-folder -->
 	  <delete dir="${mps.home}/${plugins.folder.name}/${mps-editor-override.expanded-folder.name}" verbose="true" />
 	  <delete dir="${mps.home}/${plugins.folder.name}/${multiline.expanded-folder.name}" verbose="true" />
 	  <delete dir="${mps.home}/${plugins.folder.name}/${mps-richtext.expanded-folder.name}" verbose="true" />
-	<!--  <delete dir="${mps.home}/${plugins.folder.name}/${spawner.expanded-folder.name}" verbose="true" /> -->
+	  <delete dir="${mps.home}/${plugins.folder.name}/${spawner.expanded-folder.name}" verbose="true" />
 	  
 	  <delete file="${multiline.build-path}/${multiline.zip-file.name}"/>	  
 	  <delete file="${mps-editor-override.build-path}/${mps-editor-override.zip-file.name}"/>
 	  <delete file="${mps-richtext.build-path}/${mps-richtext.zip-file.name}"/>
-	<!--  <delete file="${spawner.build-path}/${spawner.zip-file.name}"/>	-->
+	  <delete file="${spawner.build-path}/${spawner.zip-file.name}"/>
 	    	  
 	  <!-- download-plugins -->
 	  <get src="${base-url}/${multiline.build-id}/${latest-build}/${multiline.zip-file.name}" dest="${multiline.build-path}" verbose="true" skipexisting="true" usetimestamp="true"/>
 	  <get src="${base-url}/${mps-richtext.build-id}/${latest-build}/${mps-richtext.zip-file.name}" dest="${mps-richtext.build-path}" verbose="true" skipexisting="true" usetimestamp="true"/>
 	  <get src="${base-url}/${mps-editor-override.build-id}/${latest-build}/${mps-editor-override.zip-file.name}" dest="${mps-editor-override.build-path}" verbose="true" skipexisting="true" usetimestamp="true"/>
-	<!--  <get src="${base-url}/${spawner.build-id}/${latest-build}/${spawner.suburl}/${spawner.zip-file.name}" dest="${spawner.build-path}" verbose="true" skipexisting="true" usetimestamp="true"/>	  -->
+	  <get src="${base-url}/${spawner.build-id}/${latest-build}/${spawner.suburl}/${spawner.zip-file.name}" dest="${spawner.build-path}" verbose="true" skipexisting="true" usetimestamp="true"/>	 
 	  	 
 	  <!-- unzip-plugins -->
 	  <unzip src="${multiline.build-path}/${multiline.zip-file.name}" dest="${mps.home}/${plugins.folder.name}" overwrite="true" />
 	  <unzip src="${mps-richtext.build-path}/${mps-richtext.zip-file.name}" dest="${mps.home}/${plugins.folder.name}" overwrite="true" />
 	  <unzip src="${mps-editor-override.build-path}/${mps-editor-override.zip-file.name}" dest="${mps.home}/${plugins.folder.name}" overwrite="true" />
-	<!--  <unzip src="${spawner.build-path}/${spawner.zip-file.name}" dest="${mps.home}/${plugins.folder.name}" overwrite="true" /> 	 	  -->
+	  <unzip src="${spawner.build-path}/${spawner.zip-file.name}" dest="${mps.home}/${plugins.folder.name}" overwrite="true" /> 	 	  
   </target>
 
-  <target name="delete-mps-generated-code" >		  
+  <target name="delete-mps-generated-code" >	
 	  <ant antfile="${com.mbeddr.mpsutil.build-file.name}" dir="${com.mbeddr.mpsutil.build-file.location}" target="${clean.task}" />
 	  
 	  <ant antfile="${com.mbeddr.debugger.main-build-file.name}" dir="${com.mbeddr.debugger.build-file.location}" target="${clean.task}" />
@@ -158,7 +160,7 @@
 	  <ant antfile="${com.mbeddr.cc.ple-build-file.name}" dir="${com.mbeddr.cc.build-file.location}" target="${clean.task}" />
 	  <ant antfile="${com.mbeddr.cc.req-build-file.name}" dir="${com.mbeddr.cc.build-file.location}" target="${clean.task}" />
 	  <ant antfile="${com.mbeddr.cc.tests-build-file.name}" dir="${com.mbeddr.cc.build-file.location}" target="${clean.task}" />
-	  	  
+	  	 
 	  <ant antfile="${com.mbeddr.debugger.testing.runtime-tests-build-file.name}" dir="${com.mbeddr.debugger.testing.build-file.location}" target="${clean.task}" />
 	  <ant antfile="${com.mbeddr.debugger.testing.runtime-build-file.name}" dir="${com.mbeddr.debugger.testing.build-file.location}" target="${clean.task}" />
 	  <ant antfile="${com.mbeddr.debugger.testing.cross-build-file.name}" dir="${com.mbeddr.debugger.testing.build-file.location}" target="${clean.task}" />
@@ -166,7 +168,7 @@
 	  <ant antfile="${com.mbeddr.debugger.testing.statemachine-tests-build-file.name}" dir="${com.mbeddr.debugger.testing.build-file.location}" target="${clean.task}" />
 	  <ant antfile="${com.mbeddr.debugger.testing.physical-units-tests-build-file.name}" dir="${com.mbeddr.debugger.testing.build-file.location}" target="${clean.task}" />
 	  <ant antfile="${com.mbeddr.debugger.testing.components-tests-build-file.name}" dir="${com.mbeddr.debugger.testing.build-file.location}" target="${clean.task}" />
-	  	  
+	  	 
 	  <ant antfile="${com.mbeddr.ext.components-build-file.name}" dir="${com.mbeddr.ext.build-file.location}" target="${clean.task}" />
 	  <ant antfile="${com.mbeddr.ext.units-build-file.name}" dir="${com.mbeddr.ext.build-file.location}" target="${clean.task}" />
 	  <ant antfile="${com.mbeddr.ext.statemachine-build-file.name}" dir="${com.mbeddr.ext.build-file.location}" target="${clean.task}" />
@@ -178,6 +180,7 @@
 	  <ant antfile="${com.mbeddr.analyses.cbmc-build-file.name}" dir="${com.mbeddr.analyses.build-file.location}" target="${clean.task}" />
 	  <ant antfile="${com.mbeddr.analyses.nusmv-build-file.name}" dir="${com.mbeddr.analyses.build-file.location}" target="${clean.task}" />
 	  <ant antfile="${com.mbeddr.analyses.yices-build-file.name}" dir="${com.mbeddr.analyses.build-file.location}" target="${clean.task}" />
+	  <ant antfile="${com.mbeddr.analyses.ex-tests-build-file.name}" dir="${com.mbeddr.analyses.build-file.location}" target="${clean.task}" />	 	  
   </target>	
 	  
   <target name="build" depends="delete-mps-generated-code" >	 
@@ -201,12 +204,13 @@
 	  <ant antfile="${com.mbeddr.cc.ple-build-file.name}" dir="${com.mbeddr.cc.build-file.location}" target="${build-plugin.task}" />
 	  <ant antfile="${com.mbeddr.cc.req-build-file.name}" dir="${com.mbeddr.cc.build-file.location}" target="${generate-code.task}" />
 	  <ant antfile="${com.mbeddr.cc.req-build-file.name}" dir="${com.mbeddr.cc.build-file.location}" target="${build-plugin.task}" />
+		 
 	  <ant antfile="${com.mbeddr.cc.tests-build-file.name}" dir="${com.mbeddr.cc.build-file.location}" target="${generate-code.task}" />
 	  <ant antfile="${com.mbeddr.cc.tests-build-file.name}" dir="${com.mbeddr.cc.build-file.location}" target="${build-plugin.task}" />
-	  	  
+	  	 
 	  <ant antfile="${com.mbeddr.debugger.testing.runtime-build-file.name}" dir="${com.mbeddr.debugger.testing.build-file.location}" target="${generate-code.task}" />
 	  <ant antfile="${com.mbeddr.debugger.testing.runtime-build-file.name}" dir="${com.mbeddr.debugger.testing.build-file.location}" target="${build-plugin.task}" />  
-	  <!--
+
 	  <ant antfile="${com.mbeddr.debugger.testing.cross-build-file.name}" dir="${com.mbeddr.debugger.testing.build-file.location}" target="${generate-code.task}" />
 	  <ant antfile="${com.mbeddr.debugger.testing.cross-build-file.name}" dir="${com.mbeddr.debugger.testing.build-file.location}" target="${build-plugin.task}" />	  
 	  <ant antfile="${com.mbeddr.debugger.testing.core-tests-build-file.name}" dir="${com.mbeddr.debugger.testing.build-file.location}" target="${generate-code.task}" />
@@ -219,7 +223,7 @@
 	  <ant antfile="${com.mbeddr.debugger.testing.components-tests-build-file.name}" dir="${com.mbeddr.debugger.testing.build-file.location}" target="${build-plugin.task}" />
 	  <ant antfile="${com.mbeddr.debugger.testing.runtime-tests-build-file.name}" dir="${com.mbeddr.debugger.testing.build-file.location}" target="${generate-code.task}" />
 	  <ant antfile="${com.mbeddr.debugger.testing.runtime-tests-build-file.name}" dir="${com.mbeddr.debugger.testing.build-file.location}" target="${build-plugin.task}" />	
-	  	 --> 
+	 		  
 	  <ant antfile="${com.mbeddr.ext.components-build-file.name}" dir="${com.mbeddr.ext.build-file.location}" target="${generate-code.task}" />
 	  <ant antfile="${com.mbeddr.ext.components-build-file.name}" dir="${com.mbeddr.ext.build-file.location}" target="${build-plugin.task}" />
 	  <ant antfile="${com.mbeddr.ext.units-build-file.name}" dir="${com.mbeddr.ext.build-file.location}" target="${generate-code.task}" />
@@ -231,10 +235,12 @@
 	  <ant antfile="${com.mbeddr.ext.SmInComp-build-file.name}" dir="${com.mbeddr.ext.build-file.location}" target="${build-plugin.task}" />
 	  <ant antfile="${com.mbeddr.ext.exceptionhandling-build-file.name}" dir="${com.mbeddr.ext.build-file.location}" target="${generate-code.task}" />
 	  <ant antfile="${com.mbeddr.ext.exceptionhandling-build-file.name}" dir="${com.mbeddr.ext.build-file.location}" target="${build-plugin.task}" />		  
+ 
+	  <ant antfile="${com.mbeddr.ext.ex-tests-build-file.name}" dir="${com.mbeddr.ext.build-file.location}" target="${generate-code.task}" />	 			
+	  <ant antfile="${com.mbeddr.ext.ex-tests-build-file.name}" dir="${com.mbeddr.ext.build-file.location}" target="${build-plugin.task}" />	
+	  <ant antfile="${com.mbeddr.ext.ts-tests-build-file.name}" dir="${com.mbeddr.ext.build-file.location}" target="${generate-code.task}" />	 			
+	  <ant antfile="${com.mbeddr.ext.ts-tests-build-file.name}" dir="${com.mbeddr.ext.build-file.location}" target="${build-plugin.task}" />	 			
 
-	  <ant antfile="${com.mbeddr.ext.tests-build-file.name}" dir="${com.mbeddr.ext.build-file.location}" target="${generate-code.task}" />	 			
-	  <ant antfile="${com.mbeddr.ext.tests-build-file.name}" dir="${com.mbeddr.ext.build-file.location}" target="${build-plugin.task}" />	 			
-  
 	  <ant antfile="${com.mbeddr.analyses.base-build-file.name}" dir="${com.mbeddr.analyses.build-file.location}" target="${generate-code.task}" />
 	  <ant antfile="${com.mbeddr.analyses.base-build-file.name}" dir="${com.mbeddr.analyses.build-file.location}" target="${build-plugin.task}" />	 		   
 	  <ant antfile="${com.mbeddr.analyses.nusmv-build-file.name}" dir="${com.mbeddr.analyses.build-file.location}" target="${generate-code.task}" />
@@ -242,14 +248,18 @@
 	  <ant antfile="${com.mbeddr.analyses.yices-build-file.name}" dir="${com.mbeddr.analyses.build-file.location}" target="${generate-code.task}" />
 	  <ant antfile="${com.mbeddr.analyses.yices-build-file.name}" dir="${com.mbeddr.analyses.build-file.location}" target="${build-plugin.task}" />	  	  
 	  <ant antfile="${com.mbeddr.analyses.cbmc-build-file.name}" dir="${com.mbeddr.analyses.build-file.location}" target="${generate-code.task}" />
-	  <ant antfile="${com.mbeddr.analyses.cbmc-build-file.name}" dir="${com.mbeddr.analyses.build-file.location}" target="${build-plugin.task}" />				
+	  <ant antfile="${com.mbeddr.analyses.cbmc-build-file.name}" dir="${com.mbeddr.analyses.build-file.location}" target="${build-plugin.task}" />
+			  
+	  <ant antfile="${com.mbeddr.analyses.ex-tests-build-file.name}" dir="${com.mbeddr.analyses.build-file.location}" target="${generate-code.task}" />	 	 			   
+	  <ant antfile="${com.mbeddr.analyses.ex-tests-build-file.name}" dir="${com.mbeddr.analyses.build-file.location}" target="${build-plugin.task}" />	 	  	  				
   </target>	
   
   <target name="run-tests">
-	  
+	  <!--
 	  <ant antfile="${com.mbeddr.debugger.tests-build-file.name}" dir="${com.mbeddr.debugger.build-file.location}" target="${run-tests.task}" />
 	  <ant antfile="${com.mbeddr.core.tests-build-file.name}" dir="${com.mbeddr.core.build-file.location}" target="${run-tests.task}" />	  
 	  <ant antfile="${com.mbeddr.doc.main-build-file.name}" dir="${com.mbeddr.doc.build-file.location}" target="${run-tests.task}" />	  
+		  -->
 	  <!--
 	  <ant antfile="${com.mbeddr.debugger.testing.runtime-tests-build-file.name}" dir="${com.mbeddr.debugger.testing.build-file.location}" target="${run-tests.task}" />
 	  <ant antfile="${com.mbeddr.debugger.testing.runtime-build-file.name}" dir="${com.mbeddr.debugger.testing.build-file.location}" target="${run-tests.task}" />
@@ -259,13 +269,10 @@
 	  <ant antfile="${com.mbeddr.debugger.testing.physical-units-tests-build-file.name}" dir="${com.mbeddr.debugger.testing.build-file.location}" target="${run-tests.task}" />
 	  <ant antfile="${com.mbeddr.debugger.testing.components-tests-build-file.name}" dir="${com.mbeddr.debugger.testing.build-file.location}" target="${run-tests.task}" />	  
 	  -->
-	  <ant antfile="${com.mbeddr.ext.tests-build-file.name}" dir="${com.mbeddr.ext.build-file.location}" target="${run-tests.task}" />	 			
 	  
-	  <!--
-	  <ant antfile="${com.mbeddr.analyses.base-build-file.name}" dir="${com.mbeddr.analyses.build-file.location}" target="${run-tests.task}" />
-	  <ant antfile="${com.mbeddr.analyses.cbmc-build-file.name}" dir="${com.mbeddr.analyses.build-file.location}" target="${run-tests.task}" />
-	  <ant antfile="${com.mbeddr.analyses.nusmv-build-file.name}" dir="${com.mbeddr.analyses.build-file.location}" target="${run-tests.task}" />
-	  <ant antfile="${com.mbeddr.analyses.yices-build-file.name}" dir="${com.mbeddr.analyses.build-file.location}" target="${run-tests.task}" />	  	  	  	  
+	  <ant antfile="${com.mbeddr.ext.tests-build-file.name}" dir="${com.mbeddr.ext.build-file.location}" target="${run-tests.task}" />	 			
+	  <!--	  
+	  <ant antfile="${com.mbeddr.analyses.ex-tests-build-file.name}" dir="${com.mbeddr.analyses.build-file.location}" target="${run-tests.task}" />	 	  	  					    	  	  	  
 		  -->
   </target>	    
 	  	  
