@@ -1,2 +1,2 @@
 ant install-plugins
-ant build-languages
+ant build
