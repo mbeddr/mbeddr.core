@@ -346,7 +346,7 @@
   </target>	        
   
   <target name="make-tests" description="Run 'make test' for child Makefiles">
-	  <echo message="path="${make-tests.dir}"/>
+	  <echo message="path=${make-tests.dir}"/>
   	  <make-tests workingDirectory="${make-tests.dir}"/>
   </target>
   	  	  
