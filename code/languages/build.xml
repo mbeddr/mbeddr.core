@@ -174,7 +174,8 @@
 	  <ant antfile="${com.mbeddr.ext.statemachine-build-file.name}" dir="${com.mbeddr.ext.build-file.location}" target="${clean.task}" />
 	  <ant antfile="${com.mbeddr.ext.SmInComp-build-file.name}" dir="${com.mbeddr.ext.build-file.location}" target="${clean.task}" />
 	  <ant antfile="${com.mbeddr.ext.exceptionhandling-build-file.name}" dir="${com.mbeddr.ext.build-file.location}" target="${clean.task}" />
-	  <ant antfile="${com.mbeddr.ext.tests-build-file.name}" dir="${com.mbeddr.ext.build-file.location}" target="${clean.task}" />	 			
+	  <ant antfile="${com.mbeddr.ext.ts-tests-build-file.name}" dir="${com.mbeddr.ext.build-file.location}" target="${clean.task}" />	 			
+	  <ant antfile="${com.mbeddr.ext.ex-tests-build-file.name}" dir="${com.mbeddr.ext.build-file.location}" target="${clean.task}" />	 			
 					  
 	  <ant antfile="${com.mbeddr.analyses.base-build-file.name}" dir="${com.mbeddr.analyses.build-file.location}" target="${clean.task}" />
 	  <ant antfile="${com.mbeddr.analyses.cbmc-build-file.name}" dir="${com.mbeddr.analyses.build-file.location}" target="${clean.task}" />
