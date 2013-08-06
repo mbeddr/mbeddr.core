@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="test.analyses.statemachine" uuid="4921e5d9-579d-4829-bb95-25aed1a142e6" compileInMPS="true">
+<solution name="test.analyses.statemachine" uuid="4921e5d9-579d-4829-bb95-25aed1a142e6" pluginKind="PLUGIN_OTHER" compileInMPS="true">
   <models>
-    <modelRoot path="${solution_descriptor}/" />
-    <modelRoot path="${solution_descriptor}/models" />
+    <modelRoot contentPath="${module}" type="default">
+      <sourceRoot location="." />
+      <sourceRoot location="models" />
+    </modelRoot>
   </models>
   <sourcePath />
   <usedLanguages>
     <usedLanguage>48f0d4ba-4f2e-4310-ae44-81f9bd77f184(com.mbeddr.analyses.base.unittests)</usedLanguage>
     <usedLanguage>d62d6e81-9ae0-456b-b2c3-d71c0f373ded(com.mbeddr.analyses.nusmv.statemachine)</usedLanguage>
-    <usedLanguage>f50c1d3e-50a5-48aa-8271-b3711c1a93b5(com.mbeddr.analyses.nusmv.statemachine.tests)</usedLanguage>
     <usedLanguage>2d7fadf5-33f6-4e80-a78f-0f739add2bde(com.mbeddr.core.buildconfig)</usedLanguage>
     <usedLanguage>61c69711-ed61-4850-81d9-7714ff227fb0(com.mbeddr.core.expressions)</usedLanguage>
     <usedLanguage>6d11763d-483d-4b2b-8efc-09336c1b0001(com.mbeddr.core.modules)</usedLanguage>

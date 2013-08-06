@@ -26,16 +26,19 @@
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.analyses.yices.rt/rt.msd" folder="yices" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.analyses.yices/yices.mpl" folder="yices" />
       <modulePath path="$PROJECT_DIR$/languages/testing/com.mbeddr.analyses.cbmc.testing.mpl" folder="cbmc" />
+      <modulePath path="$PROJECT_DIR$/tests/NewSolution/test.ts.analyses.yices.dectab.msd" folder="test.yices" />
       <modulePath path="$PROJECT_DIR$/tests/test.analyses.cbmc.testcode/testcode.msd" folder="test.cbmc" />
       <modulePath path="$PROJECT_DIR$/tests/test.analyses.cbmc.testcode_analyses_config/testcode_analyses_config.msd" folder="test.cbmc" />
       <modulePath path="$PROJECT_DIR$/tests/test.analyses.cbmc.testcode_nightly/testcode_nightly.msd/testcode_nightly.msd" folder="test.cbmc" />
       <modulePath path="$PROJECT_DIR$/tests/test.analyses.cbmc/cbmc.msd" folder="test.cbmc" />
-      <modulePath path="$PROJECT_DIR$/tests/test.analysis.formsera/formsera.msd" folder="test" />
-      <modulePath path="$PROJECT_DIR$/tests/test.analysis.nfm/nfm.msd" folder="test" />
+      <modulePath path="$PROJECT_DIR$/tests/test.analysis.formsera/formsera.msd" folder="test.formsera" />
+      <modulePath path="$PROJECT_DIR$/tests/test.analysis.nfm/nfm.msd" folder="test.formsera" />
       <modulePath path="$PROJECT_DIR$/tests/test.ex.analyses.nusmv/solution.msd" folder="test.nusmv" />
       <modulePath path="$PROJECT_DIR$/tests/test.ex.analyses.yices/yices.msd" folder="test.yices" />
       <modulePath path="$PROJECT_DIR$/tests/test.ts.analyses.fm/fm.msd" folder="test.yices" />
+      <modulePath path="$PROJECT_DIR$/tests/test.ts.analyses.fmod.msd" folder="test.yices" />
       <modulePath path="$PROJECT_DIR$/tests/test.ts.analyses.statemachine/statemachine.msd" folder="test.nusmv" />
+      <modulePath path="$PROJECT_DIR$/tests/test.ts.analysis.statemachine/test.ts.analysis.statemachine.msd" folder="test.nusmv" />
     </projectModules>
   </component>
 </project>
