@@ -30,8 +30,8 @@
       <modulePath path="$PROJECT_DIR$/tests/test.analyses.cbmc.testcode_analyses_config/testcode_analyses_config.msd" folder="test.cbmc" />
       <modulePath path="$PROJECT_DIR$/tests/test.analyses.cbmc.testcode_nightly/testcode_nightly.msd/testcode_nightly.msd" folder="test.cbmc" />
       <modulePath path="$PROJECT_DIR$/tests/test.analyses.cbmc/cbmc.msd" folder="test.cbmc" />
-      <modulePath path="$PROJECT_DIR$/tests/test.analysis.formsera/formsera.msd" folder="test" />
-      <modulePath path="$PROJECT_DIR$/tests/test.analysis.nfm/nfm.msd" folder="test" />
+      <modulePath path="$PROJECT_DIR$/tests/test.analysis.formsera/formsera.msd" folder="test.formsera" />
+      <modulePath path="$PROJECT_DIR$/tests/test.analysis.nfm/nfm.msd" folder="test.formsera" />
       <modulePath path="$PROJECT_DIR$/tests/test.ex.analyses.nusmv/solution.msd" folder="test.nusmv" />
       <modulePath path="$PROJECT_DIR$/tests/test.ex.analyses.yices/yices.msd" folder="test.yices" />
       <modulePath path="$PROJECT_DIR$/tests/test.ts.analyses.fm/fm.msd" folder="test.yices" />
