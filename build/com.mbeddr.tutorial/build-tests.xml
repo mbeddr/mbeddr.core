@@ -97,6 +97,7 @@
     <ant antfile="../com.mbeddr.doc/build.xml" inheritAll="false" useNativeBasedir="true" />
     <ant antfile="../com.mbeddr.cc/build-req.xml" inheritAll="false" useNativeBasedir="true" />
     <ant antfile="../com.mbeddr.analyses/build-base.xml" inheritAll="false" useNativeBasedir="true" />
+    <ant antfile="../com.mbeddr.ext/build-SmInComp.xml" inheritAll="false" useNativeBasedir="true" />
     <ant antfile="../com.mbeddr.analyses/build-yices.xml" inheritAll="false" useNativeBasedir="true" />
     <ant antfile="../com.mbeddr.analyses/build-cbmc.xml" inheritAll="false" useNativeBasedir="true" />
     <ant antfile="../com.mbeddr.analyses/build-nusmv.xml" inheritAll="false" useNativeBasedir="true" />
@@ -291,6 +292,10 @@
       <target name="assemble" />
     </ant>
     <ant antfile="../com.mbeddr.analyses/build-base.xml" inheritAll="false" useNativeBasedir="true">
+      <target name="generate" />
+      <target name="assemble" />
+    </ant>
+    <ant antfile="../com.mbeddr.ext/build-SmInComp.xml" inheritAll="false" useNativeBasedir="true">
       <target name="generate" />
       <target name="assemble" />
     </ant>
