@@ -2477,7 +2477,7 @@
         </node>
       </node>
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="7533755140569615067" nodeInfo="nn">
-        <property name="text" nameId="tpc2.1073389577007" value="((int)" />
+        <property name="text" nameId="tpc2.1073389577007" value="(int)(" />
         <link role="actionMap" roleId="tpc2.1139959269582" targetNodeId="7533755140569634389" resolveInfo="deleteCastToInt" />
         <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.ForegroundColorStyleClassItem" typeId="tpc2.1186404549998" id="7533755140569615097" nodeInfo="nn">
           <property name="color" nameId="tpc2.1186403713874" value="orange" />
