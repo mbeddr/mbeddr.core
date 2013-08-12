@@ -33,6 +33,7 @@
   <import index="tp2c" modelUID="r:00000000-0000-4000-0000-011c89590338(jetbrains.mps.baseLanguage.closures.structure)" version="3" implicit="yes" />
   <import index="qff7" modelUID="r:2ba2e307-a81d-4a21-9e0b-de3624e2fb83(jetbrains.mps.lang.access.structure)" version="0" implicit="yes" />
   <import index="e2lc" modelUID="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" version="-1" implicit="yes" />
+  <import index="tpco" modelUID="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" version="-1" implicit="yes" />
   <root type="tpc2.EditorComponentDeclaration" typeId="tpc2.1078938745671" id="7024921229556157914" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="commentedCodeDefault" />
     <property name="virtualPackage" nameId="tpck.1193676396447" value="commenting" />
@@ -5878,6 +5879,13 @@
       <node role="returnType" roleId="tpee.1068580123133" type="tpee.VoidType" typeId="tpee.1068581517677" id="3411780537799714644" nodeInfo="in" />
       <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="3411780537799714645" nodeInfo="nn" />
       <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="3411780537799714646" nodeInfo="sn" />
+    </node>
+  </root>
+  <root type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="8707984185523702436" nodeInfo="ng">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="assessment" />
+    <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="vs0r.865293814733115675" resolveInfo="AssessmentQuery" />
+    <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Component" typeId="tpc2.1078939183254" id="8707984185523709597" nodeInfo="ng">
+      <link role="editorComponent" roleId="tpc2.1078939183255" targetNodeId="tpco.2900100530630621651" resolveInfo="AliasEditorComponent" />
     </node>
   </root>
 </model>

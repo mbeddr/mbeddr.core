@@ -42,7 +42,6 @@
       <modulePath path="$PROJECT_DIR$/tests/test.imp.core.import-optimizer/test.imp.core.import-optimizer.msd" folder="tests" />
       <modulePath path="$PROJECT_DIR$/tests/test.ts.core.dataflow/dataflow.msd" folder="tests.dataflow" />
       <modulePath path="$PROJECT_DIR$/tests/test.ts.core/core.msd" folder="tests" />
-      <modulePath path="$PROJECT_DIR$/../../../../mbeddr.core.30/code/languages/com.mbeddr.build/solutions/com.mbeddr.core.dev.build/build.msd" folder="" />
     </projectModules>
   </component>
 </project>

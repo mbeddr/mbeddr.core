@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="StandaloneTemplate.build" uuid="edc5b88b-bfb6-4c0f-8d41-40e7fc558265" compileInMPS="true">
+<solution name="com.mbeddr.rcp.build" uuid="edc5b88b-bfb6-4c0f-8d41-40e7fc558265" compileInMPS="true">
   <models>
-    <modelRoot path="${solution_descriptor}/models" />
+    <modelRoot contentPath="${module}" type="default">
+      <sourceRoot location="models" />
+    </modelRoot>
   </models>
   <sourcePath />
   <dependencies>

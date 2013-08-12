@@ -3,6 +3,7 @@
 
 distros/*
 MPS/*
+mps-distrib/*
 
 .DS_Store
 .metadata

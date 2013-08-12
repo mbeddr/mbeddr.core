@@ -927,5 +927,8 @@
       <link role="dataType" roleId="tpce.1082985295845" targetNodeId="tpck.1082983657062" resolveInfo="integer" />
     </node>
   </root>
+  <root type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="13085436577882829" nodeInfo="ig">
+    <property name="name" nameId="tpck.1169194664001" value="IMbeddrIDERoot" />
+  </root>
 </model>
 
