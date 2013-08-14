@@ -77,6 +77,14 @@
   <property name="com.mbeddr.analyses.ex-tests-build-file.name" value="build-ex-tests.xml" /> 
   <property name="com.mbeddr.analyses.ts-tests-build-file.name" value="build-ts-tests.xml" /> 
   <property name="com.mbeddr.analyses.working-dir" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.analyses" />  
+  
+  <!-- com.mbeddr.tutorial -->  
+  <property name="com.mbeddr.tutorial.build-path.postfix" value="${mbeddr.github.core.home}/build/com.mbeddr.tutorial/build/artifacts/com.mbeddr.analyses.build" />  
+  <property name="com.mbeddr.tutorial.build-file.location" value="${mbeddr.github.core.home}/build/com.mbeddr.tutorial" />     
+  <property name="com.mbeddr.tutorial.languages-build-file.name" value="build-languages.xml" /> 
+  <property name="com.mbeddr.tutorial.solutions-build-file.name" value="build-solutions.xml" /> 
+  <property name="com.mbeddr.tutorial.tests-build-file.name" value="build-tests.xml" /> 
+  <property name="com.mbeddr.tutorial.working-dir" value="${mbeddr.github.core.home}/code/applications/tutorial" />
       
   <!-- multiline -->  
   <property name="multiline.zip-file.name" value="mps-multiline.zip" />
@@ -199,7 +207,7 @@
 	  <ant antfile="${com.mbeddr.analyses.ts-tests-build-file.name}" dir="${com.mbeddr.analyses.build-file.location}" target="${clean-generated-code.task}" />	 	
   </target>	
   
-  <target name="delete-build-plugins" >	
+  <target name="delete-built-plugins" >	
 	  <ant antfile="${com.mbeddr.mpsutil.build-file.name}" dir="${com.mbeddr.mpsutil.build-file.location}" target="${clean-plugins.task}" />
 	  
 	  <ant antfile="${com.mbeddr.debugger.main-build-file.name}" dir="${com.mbeddr.debugger.build-file.location}" target="${clean-plugins.task}" />
@@ -239,7 +247,8 @@
 	  <ant antfile="${com.mbeddr.analyses.ts-tests-build-file.name}" dir="${com.mbeddr.analyses.build-file.location}" target="${clean-plugins.task}" />	 	  
   </target>	
   	  
-  <target name="build-languages" depends="delete-mps-generated-code,delete-build-plugins" >	 	  
+  <target name="build-languages" depends="delete-mps-generated-code,delete-built-plugins,install-plugins" >	 	  
+
 	  <ant antfile="${com.mbeddr.mpsutil.build-file.name}" dir="${com.mbeddr.mpsutil.build-file.location}" target="${generate-code.task}" />
 	  <ant antfile="${com.mbeddr.mpsutil.build-file.name}" dir="${com.mbeddr.mpsutil.build-file.location}" target="${build-plugin.task}" />
 	  
@@ -270,7 +279,7 @@
 	  <ant antfile="${com.mbeddr.ext.SmInComp-build-file.name}" dir="${com.mbeddr.ext.build-file.location}" target="${generate-code.task}" />
 	  <ant antfile="${com.mbeddr.ext.SmInComp-build-file.name}" dir="${com.mbeddr.ext.build-file.location}" target="${build-plugin.task}" />
 	  <ant antfile="${com.mbeddr.ext.exceptionhandling-build-file.name}" dir="${com.mbeddr.ext.build-file.location}" target="${generate-code.task}" />
-	  <ant antfile="${com.mbeddr.ext.exceptionhandling-build-file.name}" dir="${com.mbeddr.ext.build-file.location}" target="${build-plugin.task}" />		  
+	  <ant antfile="${com.mbeddr.ext.exceptionhandling-build-file.name}" dir="${com.mbeddr.ext.build-file.location}" target="${build-plugin.task}" />		
 
 	  <ant antfile="${com.mbeddr.analyses.base-build-file.name}" dir="${com.mbeddr.analyses.build-file.location}" target="${generate-code.task}" />
 	  <ant antfile="${com.mbeddr.analyses.base-build-file.name}" dir="${com.mbeddr.analyses.build-file.location}" target="${build-plugin.task}" />	 		   
@@ -279,7 +288,17 @@
 	  <ant antfile="${com.mbeddr.analyses.yices-build-file.name}" dir="${com.mbeddr.analyses.build-file.location}" target="${generate-code.task}" />
 	  <ant antfile="${com.mbeddr.analyses.yices-build-file.name}" dir="${com.mbeddr.analyses.build-file.location}" target="${build-plugin.task}" />	  	  
 	  <ant antfile="${com.mbeddr.analyses.cbmc-build-file.name}" dir="${com.mbeddr.analyses.build-file.location}" target="${generate-code.task}" />
-	  <ant antfile="${com.mbeddr.analyses.cbmc-build-file.name}" dir="${com.mbeddr.analyses.build-file.location}" target="${build-plugin.task}" />	  				
+	  <ant antfile="${com.mbeddr.analyses.cbmc-build-file.name}" dir="${com.mbeddr.analyses.build-file.location}" target="${build-plugin.task}" />	  	
+
+	  <!-- == building the tutorial == 
+	  <ant antfile="${com.mbeddr.tutorial.languages-build-file.name}" dir="${com.mbeddr.tutorial.build-file.location}" target="${generate-code.task}" />
+	  <ant antfile="${com.mbeddr.tutorial.languages-build-file.name}" dir="${com.mbeddr.tutorial.build-file.location}" target="${build-plugin.task}" />
+	  <ant antfile="${com.mbeddr.tutorial.solutions-build-file.name}" dir="${com.mbeddr.tutorial.build-file.location}" target="${generate-code.task}" />
+	  <ant antfile="${com.mbeddr.tutorial.solutions-build-file.name}" dir="${com.mbeddr.tutorial.build-file.location}" target="${build-plugin.task}" />
+	  <ant antfile="${com.mbeddr.tutorial.tests-build-file.name}" dir="${com.mbeddr.tutorial.build-file.location}" target="${generate-code.task}" />
+	  <ant antfile="${com.mbeddr.tutorial.tests-build-file.name}" dir="${com.mbeddr.tutorial.build-file.location}" target="${build-plugin.task}" />
+	  <ant antfile="${com.mbeddr.tutorial.tests-build-file.name}" dir="${com.mbeddr.tutorial.build-file.location}" target="${run-tests.task}" />
+	  -->
   </target>	
   
   <target name="build-and-run-tests">	  
