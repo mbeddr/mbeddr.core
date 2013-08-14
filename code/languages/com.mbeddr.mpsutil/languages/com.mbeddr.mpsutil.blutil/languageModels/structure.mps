@@ -3,8 +3,8 @@
   <persistence version="8" />
   <language namespace="c72da2b9-7cce-4447-8389-f407dc1158b7(jetbrains.mps.lang.structure)" />
   <devkit namespace="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
+  <import index="tpee" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="3" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
-  <import index="tpee" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="3" implicit="yes" />
   <import index="tpce" modelUID="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" version="0" implicit="yes" />
   <import index="hba4" modelUID="r:f5bd2ad9-cd54-4408-b815-07f9f306f074(com.mbeddr.mpsutil.blutil.structure)" version="7" implicit="yes" />
   <import index="tp2q" modelUID="r:00000000-0000-4000-0000-011c8959032e(jetbrains.mps.baseLanguage.collections.structure)" version="7" implicit="yes" />
@@ -521,6 +521,29 @@
       <property name="role" nameId="tpce.1071599776563" value="body" />
       <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
       <link role="target" roleId="tpce.1071599976176" targetNodeId="tpee.1068580123136" resolveInfo="StatementList" />
+    </node>
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="8738853969697765531" nodeInfo="ig">
+    <property name="name" nameId="tpck.1169194664001" value="GridConstraintsNextColumOperation" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="nextColumn" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="ui" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="8738853969696680918" resolveInfo="GridConstraintsOperation" />
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="37070967466327274" nodeInfo="ig">
+    <property name="name" nameId="tpck.1169194664001" value="GridConstraintsNextRowOperation" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="nextRow" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="ui" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="8738853969696680918" resolveInfo="GridConstraintsOperation" />
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="8738853969696680918" nodeInfo="ig">
+    <property name="name" nameId="tpck.1169194664001" value="GridConstraintsOperation" />
+    <property name="staticScope" nameId="tpce.5404671619616246344" value="none" />
+    <property name="abstract" nameId="tpce.4628067390765956802" value="true" />
+    <property name="final" nameId="tpce.4628067390765956807" value="false" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="ui" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="8738853969697539260" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="tpee.1197027803184" resolveInfo="IOperation" />
     </node>
   </root>
 </model>

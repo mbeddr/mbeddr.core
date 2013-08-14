@@ -1269,5 +1269,25 @@
       </node>
     </node>
   </root>
+  <root type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="8738853969697765633" nodeInfo="ng">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="ui" />
+    <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="hba4.8738853969697765531" resolveInfo="GridConstraintsNextColumOperation" />
+    <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="8738853969697765710" nodeInfo="nn">
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="8738853969697765723" nodeInfo="nn">
+        <property name="text" nameId="tpc2.1073389577007" value="nextColumn" />
+      </node>
+      <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Horizontal" typeId="tpc2.1106270549637" id="8738853969697765713" nodeInfo="nn" />
+    </node>
+  </root>
+  <root type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="8738853969696667159" nodeInfo="ng">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="ui" />
+    <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="hba4.37070967466327274" resolveInfo="GridConstraintsNextRowOperation" />
+    <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="8738853969696680900" nodeInfo="nn">
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="8738853969696680913" nodeInfo="nn">
+        <property name="text" nameId="tpc2.1073389577007" value="nextRow" />
+      </node>
+      <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Horizontal" typeId="tpc2.1106270549637" id="8738853969696680903" nodeInfo="nn" />
+    </node>
+  </root>
 </model>
 
