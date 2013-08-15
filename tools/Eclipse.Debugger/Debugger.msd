@@ -28,7 +28,7 @@
   </models>
   <facets>
     <facet type="java" />
-    <facet pluginId="com.mbeddr.core.Eclipse.Debugger" type="ideaPlugin" />
+    <facet pluginId="com.mbeddr.spawner" type="ideaPlugin" />
   </facets>
   <stubModelEntries>
     <stubModelEntry path="${module}/lib/aopalliance.jar" />
