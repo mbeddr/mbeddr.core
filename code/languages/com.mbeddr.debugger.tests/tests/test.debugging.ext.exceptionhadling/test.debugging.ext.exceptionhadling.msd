@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="test.debugging.ext.exceptionhadling" uuid="d0a15d6b-a05b-4a89-9ca0-1a59efeeb1b9" compileInMPS="true">
+<solution name="test.debugging.ext.exceptionhadling" uuid="d0a15d6b-a05b-4a89-9ca0-1a59efeeb1b9" pluginKind="PLUGIN_OTHER" compileInMPS="true">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />

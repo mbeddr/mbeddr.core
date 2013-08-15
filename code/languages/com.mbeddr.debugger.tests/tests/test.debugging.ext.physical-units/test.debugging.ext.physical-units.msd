@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="test.debugging.ext.physicalunits" uuid="18301da2-9df6-42b3-9529-654087394850" compileInMPS="true">
+<solution name="test.debugging.ext.physicalunits" uuid="18301da2-9df6-42b3-9529-654087394850" pluginKind="PLUGIN_OTHER" compileInMPS="true">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
