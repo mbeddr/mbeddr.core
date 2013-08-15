@@ -107,10 +107,10 @@
   </target>
   
   <target name="fetchDependencies">
-    <mkdir dir="${build.tmp}/deps/com.mbeddr.spawner.build/com.mbeddr.spawner.zip" />
-    <unzip src="${artifacts.com.mbeddr.spawner.build}/com.mbeddr.spawner.zip" dest="${build.tmp}/deps/com.mbeddr.spawner.build/com.mbeddr.spawner.zip" />
     <mkdir dir="${build.tmp}/deps/com.mbeddr.debugger.build/com.mbeddr.core.debugger.zip" />
     <unzip src="${artifacts.com.mbeddr.debugger.build}/com.mbeddr.core.debugger.zip" dest="${build.tmp}/deps/com.mbeddr.debugger.build/com.mbeddr.core.debugger.zip" />
+    <mkdir dir="${build.tmp}/deps/com.mbeddr.spawner.build/com.mbeddr.spawner.zip" />
+    <unzip src="${artifacts.com.mbeddr.spawner.build}/com.mbeddr.spawner.zip" dest="${build.tmp}/deps/com.mbeddr.spawner.build/com.mbeddr.spawner.zip" />
   </target>
   
   <target name="build" depends="assemble, check" />
@@ -226,6 +226,7 @@
   <target name="module-tests" depends="assemble, test.com.mbeddr.debugger.tests" />
   
   <target name="java.compile.test.debugger.cdt" depends="java.compile.test.debugger.core, fetchDependencies">
+    <mkdir dir="${mbeddr.core}/tests/test.debugger.cdt/source_gen" />
     <mkdir dir="${build.tmp}/java/out/test.debugger.cdt" />
     <javac destdir="${build.tmp}/java/out/test.debugger.cdt" fork="true" includeantruntime="false">
       <compilerarg value="-Xlint:none" />
@@ -301,6 +302,7 @@
   </target>
   
   <target name="java.compile.test.debugger.core" depends="fetchDependencies">
+    <mkdir dir="${mbeddr.core}/tests/test.debugger.core/source_gen" />
     <mkdir dir="${build.tmp}/java/out/test.debugger.core" />
     <javac destdir="${build.tmp}/java/out/test.debugger.core" fork="true" includeantruntime="false">
       <compilerarg value="-Xlint:none" />

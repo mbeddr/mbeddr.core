@@ -242,6 +242,7 @@
   </target>
   
   <target name="java.compile.com.mbeddr.core.debug" depends="fetchDependencies">
+    <mkdir dir="${mbeddr.core}/languages/com.mbeddr.core.debug/source_gen" />
     <mkdir dir="${build.tmp}/java/out/com.mbeddr.core.debug" />
     <javac destdir="${build.tmp}/java/out/com.mbeddr.core.debug" fork="true" includeantruntime="false">
       <compilerarg value="-Xlint:none" />
@@ -313,6 +314,7 @@
   </target>
   
   <target name="java.compile.com.mbeddr.core.debug.blext" depends="java.compile.com.mbeddr.core.debug, fetchDependencies">
+    <mkdir dir="${mbeddr.core}/languages/com.mbeddr.core.debug.blext/source_gen" />
     <mkdir dir="${build.tmp}/java/out/com.mbeddr.core.debug.blext" />
     <javac destdir="${build.tmp}/java/out/com.mbeddr.core.debug.blext" fork="true" includeantruntime="false">
       <compilerarg value="-Xlint:none" />
@@ -371,6 +373,7 @@
   </target>
   
   <target name="java.compile.com.mbeddr.core.debug.blext#1734689175229870721" depends="java.compile.com.mbeddr.core.debug, java.compile.com.mbeddr.core.debug.blext, fetchDependencies">
+    <mkdir dir="${mbeddr.core}/languages/com.mbeddr.core.debug.blext/generator/source_gen" />
     <mkdir dir="${build.tmp}/java/out/com.mbeddr.core.debug.blext#1734689175229870721" />
     <javac destdir="${build.tmp}/java/out/com.mbeddr.core.debug.blext#1734689175229870721" fork="true" includeantruntime="false">
       <compilerarg value="-Xlint:none" />

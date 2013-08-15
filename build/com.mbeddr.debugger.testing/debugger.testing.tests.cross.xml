@@ -219,7 +219,6 @@
       <library file="${artifacts.mps}/lib/mps-workbench.jar" />
       <library file="${artifacts.mps}/plugins/mps-core/languages/languageDesign/jetbrains.mps.lang.editor.table.runtime.jar" />
       <library file="${artifacts.mps}/plugins/mps-debugger-api/lib/debugger-api.jar" />
-      <library file="${artifacts.mps}/plugins/mps-devkit/languages/languageDesign/jetbrains.mps.lang.dataFlow.pluginSolution.jar" />
       <library file="${artifacts.mps}/plugins/mps-execution-api/lib/execution-api.jar" />
       <library file="${artifacts.mps}/plugins/mps-execution-languages/lib/execution-languages.jar" />
       <library file="${artifacts.mps}/plugins/mps-testing/languages/baseLanguage/jetbrains.mps.baseLanguage.unitTest.jar" />
@@ -290,6 +289,7 @@
   </target>
   
   <target name="java.compile.test.debugging.cross" depends="fetchDependencies">
+    <mkdir dir="${mbeddr.github.core.home}/code/languages/com.mbeddr.debugger.tests/tests/test.debugging.cross/source_gen" />
     <mkdir dir="${build.tmp}/java/out/test.debugging.cross" />
     <javac destdir="${build.tmp}/java/out/test.debugging.cross" fork="true" includeantruntime="false">
       <compilerarg value="-Xlint:none" />
