@@ -322,7 +322,6 @@
       <library file="${artifacts.mps}/lib/mps-workbench.jar" />
       <library file="${artifacts.mps}/plugins/mps-core/languages/languageDesign/jetbrains.mps.lang.editor.table.runtime.jar" />
       <library file="${artifacts.mps}/plugins/mps-debugger-api/lib/debugger-api.jar" />
-      <library file="${artifacts.mps}/plugins/mps-devkit/languages/languageDesign/jetbrains.mps.lang.dataFlow.pluginSolution.jar" />
       <library file="${artifacts.mps}/plugins/mps-execution-api/lib/execution-api.jar" />
       <library file="${artifacts.mps}/plugins/mps-execution-languages/lib/execution-languages.jar" />
       <library file="${artifacts.mps}/plugins/mps-testing/languages/baseLanguage/jetbrains.mps.baseLanguage.unitTest.jar" />
@@ -423,6 +422,7 @@
   <target name="module-tests" depends="assemble" />
   
   <target name="java.compile.test.ex.ext.exceptionhandling" depends="fetchDependencies">
+    <mkdir dir="${mbeddr.ext}/tests/test.ex.ext.exceptionhandling/source_gen" />
     <mkdir dir="${build.tmp}/java/out/test.ex.ext.exceptionhandling" />
     <javac destdir="${build.tmp}/java/out/test.ex.ext.exceptionhandling" fork="true" includeantruntime="false">
       <compilerarg value="-Xlint:none" />
@@ -491,6 +491,7 @@
   </target>
   
   <target name="java.compile.test.ex.ext.comp_mocking" depends="fetchDependencies">
+    <mkdir dir="${mbeddr.ext}/tests/test.ex.ext.comp_mocking/source_gen" />
     <mkdir dir="${build.tmp}/java/out/test.ex.ext.comp_mocking" />
     <javac destdir="${build.tmp}/java/out/test.ex.ext.comp_mocking" fork="true" includeantruntime="false">
       <compilerarg value="-Xlint:none" />
@@ -558,6 +559,7 @@
   </target>
   
   <target name="java.compile.test.ex.ext.statemachine" depends="fetchDependencies">
+    <mkdir dir="${mbeddr.ext}/tests/test.ex.ext.statemachine/source_gen" />
     <mkdir dir="${build.tmp}/java/out/test.ex.ext.statemachine" />
     <javac destdir="${build.tmp}/java/out/test.ex.ext.statemachine" fork="true" includeantruntime="false">
       <compilerarg value="-Xlint:none" />
@@ -625,6 +627,7 @@
   </target>
   
   <target name="java.compile.test.ex.ext.physicalunits.c" depends="fetchDependencies">
+    <mkdir dir="${mbeddr.ext}/tests/test.ex.ext.physicalunits.c/source_gen" />
     <mkdir dir="${build.tmp}/java/out/test.ex.ext.physicalunits.c" />
     <javac destdir="${build.tmp}/java/out/test.ex.ext.physicalunits.c" fork="true" includeantruntime="false">
       <compilerarg value="-Xlint:none" />
@@ -692,6 +695,7 @@
   </target>
   
   <target name="java.compile.test.ex.ext.components" depends="fetchDependencies">
+    <mkdir dir="${mbeddr.ext}/tests/test.ex.ext.components/source_gen" />
     <mkdir dir="${build.tmp}/java/out/test.ex.ext.components" />
     <javac destdir="${build.tmp}/java/out/test.ex.ext.components" fork="true" includeantruntime="false">
       <compilerarg value="-Xlint:none" />
