@@ -247,7 +247,7 @@
 	  <ant antfile="${com.mbeddr.analyses.ts-tests-build-file.name}" dir="${com.mbeddr.analyses.build-file.location}" target="${clean-plugins.task}" />	 	  
   </target>	
   	  
-  <target name="build-languages" depends="delete-mps-generated-code,delete-built-plugins,install-plugins" >	 	  
+  <target name="build-languages" depends="delete-mps-generated-code,delete-built-plugins" >	 	  
 
 	  <ant antfile="${com.mbeddr.mpsutil.build-file.name}" dir="${com.mbeddr.mpsutil.build-file.location}" target="${generate-code.task}" />
 	  <ant antfile="${com.mbeddr.mpsutil.build-file.name}" dir="${com.mbeddr.mpsutil.build-file.location}" target="${build-plugin.task}" />
