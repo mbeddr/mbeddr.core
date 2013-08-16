@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="test.imp.core.importorganizer" uuid="48658ac2-9461-472a-8c58-76f3bb44f4f6" compileInMPS="true">
+<solution name="test.imp.core.importorganizer" uuid="48658ac2-9461-472a-8c58-76f3bb44f4f6" pluginKind="PLUGIN_OTHER" compileInMPS="true">
   <models>
-    <modelRoot path="${solution_descriptor}/models" />
+    <modelRoot contentPath="${module}" type="default">
+      <sourceRoot location="models" />
+    </modelRoot>
   </models>
   <sourcePath />
   <dependencies>
