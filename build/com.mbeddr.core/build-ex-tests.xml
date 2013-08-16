@@ -274,7 +274,6 @@
       <library file="${artifacts.mps}/lib/mps-workbench.jar" />
       <library file="${artifacts.mps}/plugins/mps-core/languages/languageDesign/jetbrains.mps.lang.editor.table.runtime.jar" />
       <library file="${artifacts.mps}/plugins/mps-debugger-api/lib/debugger-api.jar" />
-      <library file="${artifacts.mps}/plugins/mps-devkit/languages/languageDesign/jetbrains.mps.lang.dataFlow.pluginSolution.jar" />
       <library file="${artifacts.mps}/plugins/mps-execution-api/lib/execution-api.jar" />
       <library file="${artifacts.mps}/plugins/mps-execution-languages/lib/execution-languages.jar" />
       <library file="${artifacts.mps}/plugins/mps-testing/languages/baseLanguage/jetbrains.mps.baseLanguage.unitTest.jar" />
@@ -340,6 +339,7 @@
   <target name="module-tests" depends="assemble" />
   
   <target name="java.compile.test.ex.core" depends="fetchDependencies">
+    <mkdir dir="${mbeddr.core}/tests/test.ex.core/source_gen" />
     <mkdir dir="${build.tmp}/java/out/test.ex.core" />
     <javac destdir="${build.tmp}/java/out/test.ex.core" fork="true" includeantruntime="false">
       <compilerarg value="-Xlint:none" />
@@ -407,6 +407,7 @@
   </target>
   
   <target name="java.compile.test.ex.core.libs" depends="java.compile.aLibrary, fetchDependencies">
+    <mkdir dir="${mbeddr.core}/tests/test.ex.core.libs/source_gen" />
     <mkdir dir="${build.tmp}/java/out/test.ex.core.libs" />
     <javac destdir="${build.tmp}/java/out/test.ex.core.libs" fork="true" includeantruntime="false">
       <compilerarg value="-Xlint:none" />
@@ -475,6 +476,7 @@
   </target>
   
   <target name="java.compile.test.ex.errorreporting" depends="fetchDependencies">
+    <mkdir dir="${mbeddr.core}/tests/test.ex.errorreporting/source_gen" />
     <mkdir dir="${build.tmp}/java/out/test.ex.errorreporting" />
     <javac destdir="${build.tmp}/java/out/test.ex.errorreporting" fork="true" includeantruntime="false">
       <compilerarg value="-Xlint:none" />
@@ -542,6 +544,7 @@
   </target>
   
   <target name="java.compile.aLibrary" depends="fetchDependencies">
+    <mkdir dir="${mbeddr.core}/tests/aLibrary/source_gen" />
     <mkdir dir="${build.tmp}/java/out/aLibrary" />
     <javac destdir="${build.tmp}/java/out/aLibrary" fork="true" includeantruntime="false">
       <compilerarg value="-Xlint:none" />
