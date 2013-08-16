@@ -123,12 +123,12 @@
       </node>
       <node role="shortName" roleId="kdzh.6108265972537372847" type="3ior.BuildStringNotEmpty" typeId="3ior.841011766566059607" id="6168924288978682815" nodeInfo="ng">
         <node role="parts" roleId="3ior.4903714810883783243" type="3ior.BuildTextStringPart" typeId="3ior.4903714810883702019" id="6168924288978682832" nodeInfo="ng">
-          <property name="text" nameId="3ior.4903714810883755350" value="mebddr IDE" />
+          <property name="text" nameId="3ior.4903714810883755350" value="mbeddr" />
         </node>
       </node>
       <node role="fullName" roleId="kdzh.6108265972537372848" type="3ior.BuildStringNotEmpty" typeId="3ior.841011766566059607" id="6168924288978682817" nodeInfo="ng">
         <node role="parts" roleId="3ior.4903714810883783243" type="3ior.BuildTextStringPart" typeId="3ior.4903714810883702019" id="6168924288978682838" nodeInfo="ng">
-          <property name="text" nameId="3ior.4903714810883755350" value="mbeddr" />
+          <property name="text" nameId="3ior.4903714810883755350" value="mbeddr IDE" />
         </node>
       </node>
       <node role="codename" roleId="kdzh.3497141547781549827" type="3ior.BuildString" typeId="3ior.4380385936562003279" id="6168924288978682835" nodeInfo="ng">
