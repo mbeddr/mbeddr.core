@@ -141,18 +141,18 @@
   </target>
   
   <target name="fetchDependencies">
-    <mkdir dir="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip" />
-    <unzip src="${artifacts.com.mbeddr.core.build}/com.mbeddr.core.zip" dest="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip" />
+    <mkdir dir="${build.tmp}/deps/mps-richtext/mps-richtext.zip" />
+    <unzip src="${artifacts.mps-richtext}/mps-richtext.zip" dest="${build.tmp}/deps/mps-richtext/mps-richtext.zip" />
+    <mkdir dir="${build.tmp}/deps/com.mbeddr.debugger.build/com.mbeddr.core.debugger.zip" />
+    <unzip src="${artifacts.com.mbeddr.debugger.build}/com.mbeddr.core.debugger.zip" dest="${build.tmp}/deps/com.mbeddr.debugger.build/com.mbeddr.core.debugger.zip" />
     <mkdir dir="${build.tmp}/deps/mps-multiline/mps-multiline.zip" />
     <unzip src="${artifacts.mps-multiline}/mps-multiline.zip" dest="${build.tmp}/deps/mps-multiline/mps-multiline.zip" />
+    <mkdir dir="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip" />
+    <unzip src="${artifacts.com.mbeddr.core.build}/com.mbeddr.core.zip" dest="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip" />
     <mkdir dir="${build.tmp}/deps/com.mbeddr.mpsutil.build/com.mbeddr.mpsutil.zip" />
     <unzip src="${artifacts.com.mbeddr.mpsutil.build}/com.mbeddr.mpsutil.zip" dest="${build.tmp}/deps/com.mbeddr.mpsutil.build/com.mbeddr.mpsutil.zip" />
     <mkdir dir="${build.tmp}/deps/com.mbeddr.spawner.build/com.mbeddr.spawner.zip" />
     <unzip src="${artifacts.com.mbeddr.spawner.build}/com.mbeddr.spawner.zip" dest="${build.tmp}/deps/com.mbeddr.spawner.build/com.mbeddr.spawner.zip" />
-    <mkdir dir="${build.tmp}/deps/com.mbeddr.debugger.build/com.mbeddr.core.debugger.zip" />
-    <unzip src="${artifacts.com.mbeddr.debugger.build}/com.mbeddr.core.debugger.zip" dest="${build.tmp}/deps/com.mbeddr.debugger.build/com.mbeddr.core.debugger.zip" />
-    <mkdir dir="${build.tmp}/deps/mps-richtext/mps-richtext.zip" />
-    <unzip src="${artifacts.mps-richtext}/mps-richtext.zip" dest="${build.tmp}/deps/mps-richtext/mps-richtext.zip" />
   </target>
   
   <target name="build" depends="assemble, check" />
@@ -250,7 +250,6 @@
       <library file="${artifacts.mps}/lib/mps-workbench.jar" />
       <library file="${artifacts.mps}/plugins/mps-core/languages/languageDesign/jetbrains.mps.lang.editor.table.runtime.jar" />
       <library file="${artifacts.mps}/plugins/mps-debugger-api/lib/debugger-api.jar" />
-      <library file="${artifacts.mps}/plugins/mps-devkit/languages/languageDesign/jetbrains.mps.lang.dataFlow.pluginSolution.jar" />
       <library file="${artifacts.mps}/plugins/mps-execution-api/lib/execution-api.jar" />
       <library file="${artifacts.mps}/plugins/mps-execution-languages/lib/execution-languages.jar" />
       <library file="${artifacts.mps}/plugins/mps-testing/languages/baseLanguage/jetbrains.mps.baseLanguage.unitTest.jar" />
@@ -312,6 +311,7 @@
   </target>
   
   <target name="java.compile.com.mbeddr.ext.exceptionhandling" depends="java.compile.com.mbeddr.ext.exceptionhandling.library, fetchDependencies">
+    <mkdir dir="${mbeddr.ext}/languages/com.mbeddr.ext.exceptionhandling/source_gen" />
     <mkdir dir="${build.tmp}/java/out/com.mbeddr.ext.exceptionhandling" />
     <javac destdir="${build.tmp}/java/out/com.mbeddr.ext.exceptionhandling" fork="true" includeantruntime="false">
       <compilerarg value="-Xlint:none" />
@@ -365,6 +365,7 @@
   </target>
   
   <target name="java.compile.com.mbeddr.ext.exceptionhandling#3809480042719653955" depends="java.compile.com.mbeddr.ext.exceptionhandling, java.compile.com.mbeddr.ext.exceptionhandling.library, fetchDependencies">
+    <mkdir dir="${mbeddr.ext}/languages/com.mbeddr.ext.exceptionhandling/generator/source_gen" />
     <mkdir dir="${build.tmp}/java/out/com.mbeddr.ext.exceptionhandling#3809480042719653955" />
     <javac destdir="${build.tmp}/java/out/com.mbeddr.ext.exceptionhandling#3809480042719653955" fork="true" includeantruntime="false">
       <compilerarg value="-Xlint:none" />
@@ -460,6 +461,7 @@
   </target>
   
   <target name="java.compile.com.mbeddr.ext.exceptionhandling.library" depends="fetchDependencies">
+    <mkdir dir="${mbeddr.ext}/solutions/com.mbeddr.ext.exceptionhandling.lib/source_gen" />
     <mkdir dir="${build.tmp}/java/out/com.mbeddr.ext.exceptionhandling.library" />
     <javac destdir="${build.tmp}/java/out/com.mbeddr.ext.exceptionhandling.library" fork="true" includeantruntime="false">
       <compilerarg value="-Xlint:none" />

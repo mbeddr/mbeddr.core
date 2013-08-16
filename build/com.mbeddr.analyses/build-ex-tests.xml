@@ -345,11 +345,11 @@
     <ant antfile="../com.mbeddr.spawner/build.xml" inheritAll="false" useNativeBasedir="true" />
     <ant antfile="../com.mbeddr.debugger/build.xml" inheritAll="false" useNativeBasedir="true" />
     <ant antfile="../com.mbeddr.core/build.xml" inheritAll="false" useNativeBasedir="true" />
+    <ant antfile="../com.mbeddr.ext/build-components.xml" inheritAll="false" useNativeBasedir="true" />
     <ant antfile="../com.mbeddr.cc/build-ple.xml" inheritAll="false" useNativeBasedir="true" />
     <ant antfile="../com.mbeddr.doc/build.xml" inheritAll="false" useNativeBasedir="true" />
     <ant antfile="../com.mbeddr.cc/build-req.xml" inheritAll="false" useNativeBasedir="true" />
     <ant antfile="../com.mbeddr.ext/build-units.xml" inheritAll="false" useNativeBasedir="true" />
-    <ant antfile="../com.mbeddr.ext/build-components.xml" inheritAll="false" useNativeBasedir="true" />
     <ant antfile="build-base.xml" inheritAll="false" useNativeBasedir="true" />
     <ant antfile="../com.mbeddr.ext/build-statemachine.xml" inheritAll="false" useNativeBasedir="true" />
     <ant antfile="../com.mbeddr.ext/build-SmInComp.xml" inheritAll="false" useNativeBasedir="true" />
@@ -474,7 +474,6 @@
       <library file="${artifacts.mps}/lib/mps-workbench.jar" />
       <library file="${artifacts.mps}/plugins/mps-core/languages/languageDesign/jetbrains.mps.lang.editor.table.runtime.jar" />
       <library file="${artifacts.mps}/plugins/mps-debugger-api/lib/debugger-api.jar" />
-      <library file="${artifacts.mps}/plugins/mps-devkit/languages/languageDesign/jetbrains.mps.lang.dataFlow.pluginSolution.jar" />
       <library file="${artifacts.mps}/plugins/mps-execution-api/lib/execution-api.jar" />
       <library file="${artifacts.mps}/plugins/mps-execution-languages/lib/execution-languages.jar" />
       <library file="${artifacts.mps}/plugins/mps-testing/languages/baseLanguage/jetbrains.mps.baseLanguage.unitTest.jar" />
@@ -574,6 +573,10 @@
       <target name="generate" />
       <target name="assemble" />
     </ant>
+    <ant antfile="../com.mbeddr.ext/build-components.xml" inheritAll="false" useNativeBasedir="true">
+      <target name="generate" />
+      <target name="assemble" />
+    </ant>
     <ant antfile="../com.mbeddr.cc/build-ple.xml" inheritAll="false" useNativeBasedir="true">
       <target name="generate" />
       <target name="assemble" />
@@ -587,10 +590,6 @@
       <target name="assemble" />
     </ant>
     <ant antfile="../com.mbeddr.ext/build-units.xml" inheritAll="false" useNativeBasedir="true">
-      <target name="generate" />
-      <target name="assemble" />
-    </ant>
-    <ant antfile="../com.mbeddr.ext/build-components.xml" inheritAll="false" useNativeBasedir="true">
       <target name="generate" />
       <target name="assemble" />
     </ant>
@@ -621,6 +620,7 @@
   </target>
   
   <target name="java.compile.test.analyses.cbmc.testcode" depends="fetchDependencies">
+    <mkdir dir="${mbeddr.analyses}/tests/test.analyses.cbmc.testcode/source_gen" />
     <mkdir dir="${build.tmp}/java/out/test.analyses.cbmc.testcode" />
     <javac destdir="${build.tmp}/java/out/test.analyses.cbmc.testcode" fork="true" includeantruntime="false">
       <compilerarg value="-Xlint:none" />
@@ -687,6 +687,7 @@
   </target>
   
   <target name="java.compile.test.analyses.cbmc.testcode_analyses_config" depends="fetchDependencies">
+    <mkdir dir="${mbeddr.analyses}/tests/test.analyses.cbmc.testcode_analyses_config/source_gen" />
     <mkdir dir="${build.tmp}/java/out/test.analyses.cbmc.testcode_analyses_config" />
     <javac destdir="${build.tmp}/java/out/test.analyses.cbmc.testcode_analyses_config" fork="true" includeantruntime="false">
       <compilerarg value="-Xlint:none" />
@@ -753,6 +754,7 @@
   </target>
   
   <target name="java.compile.test.analyses.cbmc.testcode_nightly" depends="fetchDependencies">
+    <mkdir dir="${mbeddr.analyses}/tests/test.analyses.cbmc.testcode_nightly/testcode_nightly.msd/source_gen" />
     <mkdir dir="${build.tmp}/java/out/test.analyses.cbmc.testcode_nightly" />
     <javac destdir="${build.tmp}/java/out/test.analyses.cbmc.testcode_nightly" fork="true" includeantruntime="false">
       <compilerarg value="-Xlint:none" />
@@ -819,6 +821,7 @@
   </target>
   
   <target name="java.compile.test.analysis.nfm" depends="fetchDependencies">
+    <mkdir dir="${mbeddr.analyses}/tests/test.analysis.nfm/source_gen" />
     <mkdir dir="${build.tmp}/java/out/test.analysis.nfm" />
     <javac destdir="${build.tmp}/java/out/test.analysis.nfm" fork="true" includeantruntime="false">
       <compilerarg value="-Xlint:none" />
@@ -886,6 +889,7 @@
   </target>
   
   <target name="java.compile.test.analysis.formsera" depends="fetchDependencies">
+    <mkdir dir="${mbeddr.analyses}/tests/test.analysis.formsera/source_gen" />
     <mkdir dir="${build.tmp}/java/out/test.analysis.formsera" />
     <javac destdir="${build.tmp}/java/out/test.analysis.formsera" fork="true" includeantruntime="false">
       <compilerarg value="-Xlint:none" />
@@ -955,6 +959,7 @@
   </target>
   
   <target name="java.compile.test.analyses.nusmv" depends="fetchDependencies">
+    <mkdir dir="${mbeddr.analyses}/tests/test.ex.analyses.nusmv/source_gen" />
     <mkdir dir="${build.tmp}/java/out/test.analyses.nusmv" />
     <javac destdir="${build.tmp}/java/out/test.analyses.nusmv" fork="true" includeantruntime="false">
       <compilerarg value="-Xlint:none" />
@@ -1021,6 +1026,7 @@
   </target>
   
   <target name="java.compile.test.analyses.statemachine" depends="fetchDependencies">
+    <mkdir dir="${mbeddr.analyses}/tests/test.ts.analyses.statemachine/source_gen" />
     <mkdir dir="${build.tmp}/java/out/test.analyses.statemachine" />
     <javac destdir="${build.tmp}/java/out/test.analyses.statemachine" fork="true" includeantruntime="false">
       <compilerarg value="-Xlint:none" />
@@ -1097,6 +1103,7 @@
   </target>
   
   <target name="java.compile.test.ex.analyses.fm" depends="fetchDependencies">
+    <mkdir dir="${mbeddr.analyses}/tests/test.ts.analyses.fm/source_gen" />
     <mkdir dir="${build.tmp}/java/out/test.ex.analyses.fm" />
     <javac destdir="${build.tmp}/java/out/test.ex.analyses.fm" fork="true" includeantruntime="false">
       <compilerarg value="-Xlint:none" />
@@ -1194,6 +1201,7 @@
   </target>
   
   <target name="java.compile.test.ex.analyses.yices.dectab" depends="fetchDependencies">
+    <mkdir dir="${mbeddr.analyses}/tests/test.ex.analyses.yices/source_gen" />
     <mkdir dir="${build.tmp}/java/out/test.ex.analyses.yices.dectab" />
     <javac destdir="${build.tmp}/java/out/test.ex.analyses.yices.dectab" fork="true" includeantruntime="false">
       <compilerarg value="-Xlint:none" />
