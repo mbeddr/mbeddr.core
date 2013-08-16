@@ -491,20 +491,20 @@
   </target>
   
   <target name="fetchDependencies">
-    <mkdir dir="${build.tmp}/deps/com.mbeddr.mpsutil.build/com.mbeddr.mpsutil.zip" />
-    <unzip src="${artifacts.com.mbeddr.mpsutil.build}/com.mbeddr.mpsutil.zip" dest="${build.tmp}/deps/com.mbeddr.mpsutil.build/com.mbeddr.mpsutil.zip" />
-    <mkdir dir="${build.tmp}/deps/com.mbeddr.spawner.build/com.mbeddr.spawner.zip" />
-    <unzip src="${artifacts.com.mbeddr.spawner.build}/com.mbeddr.spawner.zip" dest="${build.tmp}/deps/com.mbeddr.spawner.build/com.mbeddr.spawner.zip" />
-    <mkdir dir="${build.tmp}/deps/com.mbeddr.doc.build/com.mbeddr.doc.zip" />
-    <unzip src="${artifacts.com.mbeddr.doc.build}/com.mbeddr.doc.zip" dest="${build.tmp}/deps/com.mbeddr.doc.build/com.mbeddr.doc.zip" />
-    <mkdir dir="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip" />
-    <unzip src="${artifacts.com.mbeddr.core.build}/com.mbeddr.core.zip" dest="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip" />
-    <mkdir dir="${build.tmp}/deps/mps-multiline/mps-multiline.zip" />
-    <unzip src="${artifacts.mps-multiline}/mps-multiline.zip" dest="${build.tmp}/deps/mps-multiline/mps-multiline.zip" />
     <mkdir dir="${build.tmp}/deps/mps-richtext/mps-richtext.zip" />
     <unzip src="${artifacts.mps-richtext}/mps-richtext.zip" dest="${build.tmp}/deps/mps-richtext/mps-richtext.zip" />
     <mkdir dir="${build.tmp}/deps/com.mbeddr.debugger.build/com.mbeddr.core.debugger.zip" />
     <unzip src="${artifacts.com.mbeddr.debugger.build}/com.mbeddr.core.debugger.zip" dest="${build.tmp}/deps/com.mbeddr.debugger.build/com.mbeddr.core.debugger.zip" />
+    <mkdir dir="${build.tmp}/deps/mps-multiline/mps-multiline.zip" />
+    <unzip src="${artifacts.mps-multiline}/mps-multiline.zip" dest="${build.tmp}/deps/mps-multiline/mps-multiline.zip" />
+    <mkdir dir="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip" />
+    <unzip src="${artifacts.com.mbeddr.core.build}/com.mbeddr.core.zip" dest="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip" />
+    <mkdir dir="${build.tmp}/deps/com.mbeddr.doc.build/com.mbeddr.doc.zip" />
+    <unzip src="${artifacts.com.mbeddr.doc.build}/com.mbeddr.doc.zip" dest="${build.tmp}/deps/com.mbeddr.doc.build/com.mbeddr.doc.zip" />
+    <mkdir dir="${build.tmp}/deps/com.mbeddr.mpsutil.build/com.mbeddr.mpsutil.zip" />
+    <unzip src="${artifacts.com.mbeddr.mpsutil.build}/com.mbeddr.mpsutil.zip" dest="${build.tmp}/deps/com.mbeddr.mpsutil.build/com.mbeddr.mpsutil.zip" />
+    <mkdir dir="${build.tmp}/deps/com.mbeddr.spawner.build/com.mbeddr.spawner.zip" />
+    <unzip src="${artifacts.com.mbeddr.spawner.build}/com.mbeddr.spawner.zip" dest="${build.tmp}/deps/com.mbeddr.spawner.build/com.mbeddr.spawner.zip" />
   </target>
   
   <target name="build" depends="assemble, check" />
@@ -603,7 +603,6 @@
       <library file="${artifacts.mps}/lib/mps-workbench.jar" />
       <library file="${artifacts.mps}/plugins/mps-core/languages/languageDesign/jetbrains.mps.lang.editor.table.runtime.jar" />
       <library file="${artifacts.mps}/plugins/mps-debugger-api/lib/debugger-api.jar" />
-      <library file="${artifacts.mps}/plugins/mps-devkit/languages/languageDesign/jetbrains.mps.lang.dataFlow.pluginSolution.jar" />
       <library file="${artifacts.mps}/plugins/mps-execution-api/lib/execution-api.jar" />
       <library file="${artifacts.mps}/plugins/mps-testing/languages/baseLanguage/jetbrains.mps.baseLanguage.unitTest.jar" />
       <library file="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip/mbeddr.core/languages/com.mbeddr.core/com.mbddr.core.buildconfig.pluginSolution.jar" />
@@ -674,6 +673,7 @@
   </target>
   
   <target name="java.compile.com.mbeddr.cc.requirements.pluginSolution" depends="java.compile.com.mbeddr.cc.requirements, java.compile.com.mbeddr.cc.trace, fetchDependencies">
+    <mkdir dir="${mbeddr.cc}/languages/com.mbeddr.cc.requirements/solutions/pluginSolution/source_gen" />
     <mkdir dir="${build.tmp}/java/out/com.mbeddr.cc.requirements.pluginSolution" />
     <javac destdir="${build.tmp}/java/out/com.mbeddr.cc.requirements.pluginSolution" fork="true" includeantruntime="false">
       <compilerarg value="-Xlint:none" />
@@ -733,6 +733,7 @@
   </target>
   
   <target name="java.compile.com.mbeddr.cc.trace.pluginSolution" depends="java.compile.com.mbeddr.cc.trace, fetchDependencies">
+    <mkdir dir="${mbeddr.cc}/languages/com.mbeddr.cc.trace/solutions/pluginSolution/source_gen" />
     <mkdir dir="${build.tmp}/java/out/com.mbeddr.cc.trace.pluginSolution" />
     <javac destdir="${build.tmp}/java/out/com.mbeddr.cc.trace.pluginSolution" fork="true" includeantruntime="false">
       <compilerarg value="-Xlint:none" />
@@ -778,6 +779,7 @@
   </target>
   
   <target name="java.compile.com.mbeddr.cc.requirements" depends="java.compile.com.mbeddr.cc.trace, fetchDependencies">
+    <mkdir dir="${mbeddr.cc}/languages/com.mbeddr.cc.requirements/source_gen" />
     <mkdir dir="${build.tmp}/java/out/com.mbeddr.cc.requirements" />
     <javac destdir="${build.tmp}/java/out/com.mbeddr.cc.requirements" fork="true" includeantruntime="false">
       <compilerarg value="-Xlint:none" />
@@ -834,6 +836,7 @@
   </target>
   
   <target name="java.compile.com.mbeddr.cc.requirements#5044281954033843801" depends="java.compile.com.mbeddr.cc.requirements, java.compile.com.mbeddr.cc.trace, fetchDependencies">
+    <mkdir dir="${mbeddr.cc}/languages/com.mbeddr.cc.requirements/generator/source_gen" />
     <mkdir dir="${build.tmp}/java/out/com.mbeddr.cc.requirements#5044281954033843801" />
     <javac destdir="${build.tmp}/java/out/com.mbeddr.cc.requirements#5044281954033843801" fork="true" includeantruntime="false">
       <compilerarg value="-Xlint:none" />
@@ -893,6 +896,7 @@
   </target>
   
   <target name="java.compile.com.mbeddr.cc.requirements.c" depends="java.compile.com.mbeddr.cc.requirements, java.compile.com.mbeddr.cc.trace, fetchDependencies">
+    <mkdir dir="${mbeddr.cc}/languages/com.mbeddr.cc.requirements.c/source_gen" />
     <mkdir dir="${build.tmp}/java/out/com.mbeddr.cc.requirements.c" />
     <javac destdir="${build.tmp}/java/out/com.mbeddr.cc.requirements.c" fork="true" includeantruntime="false">
       <compilerarg value="-Xlint:none" />
@@ -956,6 +960,7 @@
   </target>
   
   <target name="java.compile.com.mbeddr.cc.requirements.c#3534497005926849038" depends="java.compile.com.mbeddr.cc.requirements, java.compile.com.mbeddr.cc.requirements.c, java.compile.com.mbeddr.cc.trace, fetchDependencies">
+    <mkdir dir="${mbeddr.cc}/languages/com.mbeddr.cc.requirements.c/generator/source_gen" />
     <mkdir dir="${build.tmp}/java/out/com.mbeddr.cc.requirements.c#3534497005926849038" />
     <javac destdir="${build.tmp}/java/out/com.mbeddr.cc.requirements.c#3534497005926849038" fork="true" includeantruntime="false">
       <compilerarg value="-Xlint:none" />
@@ -1016,6 +1021,7 @@
   </target>
   
   <target name="java.compile.com.mbeddr.cc.requirements.scenarios" depends="java.compile.com.mbeddr.cc.requirements, java.compile.com.mbeddr.cc.trace, fetchDependencies">
+    <mkdir dir="${mbeddr.cc}/languages/com.mbeddr.cc.requirements.scenarios/source_gen" />
     <mkdir dir="${build.tmp}/java/out/com.mbeddr.cc.requirements.scenarios" />
     <javac destdir="${build.tmp}/java/out/com.mbeddr.cc.requirements.scenarios" fork="true" includeantruntime="false">
       <compilerarg value="-Xlint:none" />
@@ -1073,6 +1079,7 @@
   </target>
   
   <target name="java.compile.com.mbeddr.cc.requirements.c2doc" depends="java.compile.com.mbeddr.cc.requirements, java.compile.com.mbeddr.cc.requirements.c, java.compile.com.mbeddr.cc.requirements.report, java.compile.com.mbeddr.cc.trace, fetchDependencies">
+    <mkdir dir="${mbeddr.cc}/languages/com.mbeddr.cc.requirements.c2doc/source_gen" />
     <mkdir dir="${build.tmp}/java/out/com.mbeddr.cc.requirements.c2doc" />
     <javac destdir="${build.tmp}/java/out/com.mbeddr.cc.requirements.c2doc" fork="true" includeantruntime="false">
       <compilerarg value="-Xlint:none" />
@@ -1131,6 +1138,7 @@
   </target>
   
   <target name="java.compile.com.mbeddr.cc.requirements.c2doc#5785245534400582255" depends="java.compile.com.mbeddr.cc.requirements, java.compile.com.mbeddr.cc.requirements.c, java.compile.com.mbeddr.cc.requirements.c2doc, java.compile.com.mbeddr.cc.requirements.report, java.compile.com.mbeddr.cc.requirements.report#5785245534400478720, java.compile.com.mbeddr.cc.trace, fetchDependencies">
+    <mkdir dir="${mbeddr.cc}/languages/com.mbeddr.cc.requirements.c2doc/generator/source_gen" />
     <mkdir dir="${build.tmp}/java/out/com.mbeddr.cc.requirements.c2doc#5785245534400582255" />
     <javac destdir="${build.tmp}/java/out/com.mbeddr.cc.requirements.c2doc#5785245534400582255" fork="true" includeantruntime="false">
       <compilerarg value="-Xlint:none" />
@@ -1195,6 +1203,7 @@
   </target>
   
   <target name="java.compile.com.mbeddr.cc.requirements.csv" depends="java.compile.com.mbeddr.cc.requirements, java.compile.com.mbeddr.cc.trace, fetchDependencies">
+    <mkdir dir="${mbeddr.cc}/languages/com.mbeddr.cc.requirements.csv/source_gen" />
     <mkdir dir="${build.tmp}/java/out/com.mbeddr.cc.requirements.csv" />
     <javac destdir="${build.tmp}/java/out/com.mbeddr.cc.requirements.csv" fork="true" includeantruntime="false">
       <compilerarg value="-Xlint:none" />
@@ -1251,6 +1260,7 @@
   </target>
   
   <target name="java.compile.com.mbeddr.cc.trace" depends="fetchDependencies">
+    <mkdir dir="${mbeddr.cc}/languages/com.mbeddr.cc.trace/source_gen" />
     <mkdir dir="${build.tmp}/java/out/com.mbeddr.cc.trace" />
     <javac destdir="${build.tmp}/java/out/com.mbeddr.cc.trace" fork="true" includeantruntime="false">
       <compilerarg value="-Xlint:none" />
@@ -1299,6 +1309,7 @@
   </target>
   
   <target name="java.compile.com.mbeddr.cc.requirements.scenario2doc" depends="java.compile.com.mbeddr.cc.requirements, java.compile.com.mbeddr.cc.requirements.scenarios, java.compile.com.mbeddr.cc.trace, fetchDependencies">
+    <mkdir dir="${mbeddr.cc}/languages/com.mbeddr.cc.requirements.scenario2doc/source_gen" />
     <mkdir dir="${build.tmp}/java/out/com.mbeddr.cc.requirements.scenario2doc" />
     <javac destdir="${build.tmp}/java/out/com.mbeddr.cc.requirements.scenario2doc" fork="true" includeantruntime="false">
       <compilerarg value="-Xlint:none" />
@@ -1358,6 +1369,7 @@
   </target>
   
   <target name="java.compile.com.mbeddr.cc.requirements.scenario2doc#5785245534401182239" depends="java.compile.com.mbeddr.cc.requirements, java.compile.com.mbeddr.cc.requirements.report#5785245534400478720, java.compile.com.mbeddr.cc.requirements.scenario2doc, java.compile.com.mbeddr.cc.requirements.scenarios, java.compile.com.mbeddr.cc.trace, fetchDependencies">
+    <mkdir dir="${mbeddr.cc}/languages/com.mbeddr.cc.requirements.scenario2doc/generator/source_gen" />
     <mkdir dir="${build.tmp}/java/out/com.mbeddr.cc.requirements.scenario2doc#5785245534401182239" />
     <javac destdir="${build.tmp}/java/out/com.mbeddr.cc.requirements.scenario2doc#5785245534401182239" fork="true" includeantruntime="false">
       <compilerarg value="-Xlint:none" />
@@ -1423,6 +1435,7 @@
   </target>
   
   <target name="java.compile.com.mbeddr.cc.requirements.report" depends="java.compile.com.mbeddr.cc.requirements, java.compile.com.mbeddr.cc.trace, fetchDependencies">
+    <mkdir dir="${mbeddr.cc}/languages/com.mbeddr.cc.requirements.report/source_gen" />
     <mkdir dir="${build.tmp}/java/out/com.mbeddr.cc.requirements.report" />
     <javac destdir="${build.tmp}/java/out/com.mbeddr.cc.requirements.report" fork="true" includeantruntime="false">
       <compilerarg value="-Xlint:none" />
@@ -1481,6 +1494,7 @@
   </target>
   
   <target name="java.compile.com.mbeddr.cc.requirements.report#5785245534400478720" depends="java.compile.com.mbeddr.cc.requirements, java.compile.com.mbeddr.cc.requirements.report, java.compile.com.mbeddr.cc.trace, fetchDependencies">
+    <mkdir dir="${mbeddr.cc}/languages/com.mbeddr.cc.requirements.report/generator/source_gen" />
     <mkdir dir="${build.tmp}/java/out/com.mbeddr.cc.requirements.report#5785245534400478720" />
     <javac destdir="${build.tmp}/java/out/com.mbeddr.cc.requirements.report#5785245534400478720" fork="true" includeantruntime="false">
       <compilerarg value="-Xlint:none" />
@@ -1542,6 +1556,7 @@
   </target>
   
   <target name="java.compile.com.mbeddr.cc.requirements.wp" depends="java.compile.com.mbeddr.cc.requirements, java.compile.com.mbeddr.cc.trace, fetchDependencies">
+    <mkdir dir="${mbeddr.cc}/languages/com.mbeddr.cc.requirements.wp/source_gen" />
     <mkdir dir="${build.tmp}/java/out/com.mbeddr.cc.requirements.wp" />
     <javac destdir="${build.tmp}/java/out/com.mbeddr.cc.requirements.wp" fork="true" includeantruntime="false">
       <compilerarg value="-Xlint:none" />

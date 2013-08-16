@@ -222,6 +222,7 @@
   <target name="makeDependents" />
   
   <target name="java.compile.com.mbeddr.spawner" depends="fetchDependencies">
+    <mkdir dir="${mbeddr.core}/languages/com.mbeddr.core.spawner/source_gen" />
     <mkdir dir="${build.tmp}/java/out/com.mbeddr.spawner" />
     <javac destdir="${build.tmp}/java/out/com.mbeddr.spawner" fork="true" includeantruntime="false">
       <compilerarg value="-Xlint:none" />

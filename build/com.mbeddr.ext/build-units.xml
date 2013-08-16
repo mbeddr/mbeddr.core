@@ -147,18 +147,18 @@
   </target>
   
   <target name="fetchDependencies">
-    <mkdir dir="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip" />
-    <unzip src="${artifacts.com.mbeddr.core.build}/com.mbeddr.core.zip" dest="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip" />
+    <mkdir dir="${build.tmp}/deps/mps-richtext/mps-richtext.zip" />
+    <unzip src="${artifacts.mps-richtext}/mps-richtext.zip" dest="${build.tmp}/deps/mps-richtext/mps-richtext.zip" />
+    <mkdir dir="${build.tmp}/deps/com.mbeddr.debugger.build/com.mbeddr.core.debugger.zip" />
+    <unzip src="${artifacts.com.mbeddr.debugger.build}/com.mbeddr.core.debugger.zip" dest="${build.tmp}/deps/com.mbeddr.debugger.build/com.mbeddr.core.debugger.zip" />
     <mkdir dir="${build.tmp}/deps/mps-multiline/mps-multiline.zip" />
     <unzip src="${artifacts.mps-multiline}/mps-multiline.zip" dest="${build.tmp}/deps/mps-multiline/mps-multiline.zip" />
+    <mkdir dir="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip" />
+    <unzip src="${artifacts.com.mbeddr.core.build}/com.mbeddr.core.zip" dest="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip" />
     <mkdir dir="${build.tmp}/deps/com.mbeddr.mpsutil.build/com.mbeddr.mpsutil.zip" />
     <unzip src="${artifacts.com.mbeddr.mpsutil.build}/com.mbeddr.mpsutil.zip" dest="${build.tmp}/deps/com.mbeddr.mpsutil.build/com.mbeddr.mpsutil.zip" />
     <mkdir dir="${build.tmp}/deps/com.mbeddr.spawner.build/com.mbeddr.spawner.zip" />
     <unzip src="${artifacts.com.mbeddr.spawner.build}/com.mbeddr.spawner.zip" dest="${build.tmp}/deps/com.mbeddr.spawner.build/com.mbeddr.spawner.zip" />
-    <mkdir dir="${build.tmp}/deps/com.mbeddr.debugger.build/com.mbeddr.core.debugger.zip" />
-    <unzip src="${artifacts.com.mbeddr.debugger.build}/com.mbeddr.core.debugger.zip" dest="${build.tmp}/deps/com.mbeddr.debugger.build/com.mbeddr.core.debugger.zip" />
-    <mkdir dir="${build.tmp}/deps/mps-richtext/mps-richtext.zip" />
-    <unzip src="${artifacts.mps-richtext}/mps-richtext.zip" dest="${build.tmp}/deps/mps-richtext/mps-richtext.zip" />
   </target>
   
   <target name="build" depends="assemble, check" />
@@ -258,7 +258,6 @@
       <library file="${artifacts.mps}/lib/mps-workbench.jar" />
       <library file="${artifacts.mps}/plugins/mps-core/languages/languageDesign/jetbrains.mps.lang.editor.table.runtime.jar" />
       <library file="${artifacts.mps}/plugins/mps-debugger-api/lib/debugger-api.jar" />
-      <library file="${artifacts.mps}/plugins/mps-devkit/languages/languageDesign/jetbrains.mps.lang.dataFlow.pluginSolution.jar" />
       <library file="${artifacts.mps}/plugins/mps-execution-api/lib/execution-api.jar" />
       <library file="${artifacts.mps}/plugins/mps-execution-languages/lib/execution-languages.jar" />
       <library file="${artifacts.mps}/plugins/mps-testing/languages/baseLanguage/jetbrains.mps.baseLanguage.unitTest.jar" />
@@ -321,6 +320,7 @@
   </target>
   
   <target name="java.compile.com.mbeddr.ext.physicalunits" depends="fetchDependencies">
+    <mkdir dir="${mbeddr.ext}/languages/com.mbeddr.ext.physicalunits/source_gen" />
     <mkdir dir="${build.tmp}/java/out/com.mbeddr.ext.physicalunits" />
     <javac destdir="${build.tmp}/java/out/com.mbeddr.ext.physicalunits" fork="true" includeantruntime="false">
       <compilerarg value="-Xlint:none" />
@@ -368,6 +368,7 @@
   </target>
   
   <target name="java.compile.com.mbeddr.ext.physicalunits.c" depends="java.compile.com.mbeddr.ext.physicalunits, fetchDependencies">
+    <mkdir dir="${mbeddr.ext}/languages/com.mbeddr.ext.physicalunits.c/source_gen" />
     <mkdir dir="${build.tmp}/java/out/com.mbeddr.ext.physicalunits.c" />
     <javac destdir="${build.tmp}/java/out/com.mbeddr.ext.physicalunits.c" fork="true" includeantruntime="false">
       <compilerarg value="-Xlint:none" />
@@ -430,6 +431,7 @@
   </target>
   
   <target name="java.compile.com.mbeddr.ext.physicalunits.c#7720784317543457155" depends="java.compile.com.mbeddr.ext.physicalunits, java.compile.com.mbeddr.ext.physicalunits.c, fetchDependencies">
+    <mkdir dir="${mbeddr.ext}/languages/com.mbeddr.ext.physicalunits.c/generator/source_gen" />
     <mkdir dir="${build.tmp}/java/out/com.mbeddr.ext.physicalunits.c#7720784317543457155" />
     <javac destdir="${build.tmp}/java/out/com.mbeddr.ext.physicalunits.c#7720784317543457155" fork="true" includeantruntime="false">
       <compilerarg value="-Xlint:none" />
