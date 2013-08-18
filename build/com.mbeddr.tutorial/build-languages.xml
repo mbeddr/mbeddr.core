@@ -593,7 +593,6 @@
       <library file="${artifacts.mps}/lib/mps-workbench.jar" />
       <library file="${artifacts.mps}/plugins/mps-core/languages/languageDesign/jetbrains.mps.lang.editor.table.runtime.jar" />
       <library file="${artifacts.mps}/plugins/mps-debugger-api/lib/debugger-api.jar" />
-      <library file="${artifacts.mps}/plugins/mps-devkit/languages/languageDesign/jetbrains.mps.lang.dataFlow.pluginSolution.jar" />
       <library file="${artifacts.mps}/plugins/mps-execution-api/lib/execution-api.jar" />
       <library file="${artifacts.mps}/plugins/mps-execution-languages/lib/execution-languages.jar" />
       <library file="${artifacts.mps}/plugins/mps-testing/languages/baseLanguage/jetbrains.mps.baseLanguage.unitTest.jar" />
@@ -711,6 +710,7 @@
   <target name="module-tests" depends="assemble" />
   
   <target name="java.compile.mbeddr.tutorial.blocks" depends="fetchDependencies">
+    <mkdir dir="${tutorial.home}/languages/blocks/source_gen" />
     <mkdir dir="${build.tmp}/java/out/mbeddr.tutorial.blocks" />
     <javac destdir="${build.tmp}/java/out/mbeddr.tutorial.blocks" fork="true" includeantruntime="false">
       <compilerarg value="-Xlint:none" />
@@ -763,6 +763,7 @@
   </target>
   
   <target name="java.compile.mbeddr.tutorial.blocks#6275956088647057041" depends="java.compile.mbeddr.tutorial.blocks, fetchDependencies">
+    <mkdir dir="${tutorial.home}/languages/blocks/generator/source_gen" />
     <mkdir dir="${build.tmp}/java/out/mbeddr.tutorial.blocks#6275956088647057041" />
     <javac destdir="${build.tmp}/java/out/mbeddr.tutorial.blocks#6275956088647057041" fork="true" includeantruntime="false">
       <compilerarg value="-Xlint:none" />
@@ -820,6 +821,7 @@
   </target>
   
   <target name="java.compile.mbeddr.tutorial.heap" depends="fetchDependencies">
+    <mkdir dir="${tutorial.home}/languages/heap/source_gen" />
     <mkdir dir="${build.tmp}/java/out/mbeddr.tutorial.heap" />
     <javac destdir="${build.tmp}/java/out/mbeddr.tutorial.heap" fork="true" includeantruntime="false">
       <compilerarg value="-Xlint:none" />
@@ -880,6 +882,7 @@
   </target>
   
   <target name="java.compile.mbeddr.tutorial.heap#6125369673958882338" depends="java.compile.mbeddr.tutorial.heap, fetchDependencies">
+    <mkdir dir="${tutorial.home}/languages/heap/generator/source_gen" />
     <mkdir dir="${build.tmp}/java/out/mbeddr.tutorial.heap#6125369673958882338" />
     <javac destdir="${build.tmp}/java/out/mbeddr.tutorial.heap#6125369673958882338" fork="true" includeantruntime="false">
       <compilerarg value="-Xlint:none" />
@@ -945,6 +948,7 @@
   </target>
   
   <target name="java.compile.mbeddr.tutorial.osconfig.cimpl" depends="java.compile.mbeddr.tutorial.osconfig, fetchDependencies">
+    <mkdir dir="${tutorial.home}/languages/cimpl/source_gen" />
     <mkdir dir="${build.tmp}/java/out/mbeddr.tutorial.osconfig.cimpl" />
     <javac destdir="${build.tmp}/java/out/mbeddr.tutorial.osconfig.cimpl" fork="true" includeantruntime="false">
       <compilerarg value="-Xlint:none" />
@@ -998,6 +1002,7 @@
   </target>
   
   <target name="java.compile.mbeddr.tutorial.osconfig.cimpl#5485104033529951841" depends="java.compile.mbeddr.tutorial.osconfig, java.compile.mbeddr.tutorial.osconfig.cimpl, fetchDependencies">
+    <mkdir dir="${tutorial.home}/languages/cimpl/generator/source_gen" />
     <mkdir dir="${build.tmp}/java/out/mbeddr.tutorial.osconfig.cimpl#5485104033529951841" />
     <javac destdir="${build.tmp}/java/out/mbeddr.tutorial.osconfig.cimpl#5485104033529951841" fork="true" includeantruntime="false">
       <compilerarg value="-Xlint:none" />
@@ -1056,6 +1061,7 @@
   </target>
   
   <target name="java.compile.mbeddr.tutotial.osconfig.memory" depends="java.compile.mbeddr.tutorial.osconfig, fetchDependencies">
+    <mkdir dir="${tutorial.home}/languages/memory/source_gen" />
     <mkdir dir="${build.tmp}/java/out/mbeddr.tutotial.osconfig.memory" />
     <javac destdir="${build.tmp}/java/out/mbeddr.tutotial.osconfig.memory" fork="true" includeantruntime="false">
       <compilerarg value="-Xlint:none" />
@@ -1105,6 +1111,7 @@
   </target>
   
   <target name="java.compile.mbeddr.tutorial.metadata" depends="fetchDependencies">
+    <mkdir dir="${tutorial.home}/languages/metadata/source_gen" />
     <mkdir dir="${build.tmp}/java/out/mbeddr.tutorial.metadata" />
     <javac destdir="${build.tmp}/java/out/mbeddr.tutorial.metadata" fork="true" includeantruntime="false">
       <compilerarg value="-Xlint:none" />
@@ -1158,6 +1165,7 @@
   </target>
   
   <target name="java.compile.mbeddr.tutorial.metadata#1373401575434711868" depends="java.compile.mbeddr.tutorial.metadata, fetchDependencies">
+    <mkdir dir="${tutorial.home}/languages/metadata/generator/source_gen" />
     <mkdir dir="${build.tmp}/java/out/mbeddr.tutorial.metadata#1373401575434711868" />
     <javac destdir="${build.tmp}/java/out/mbeddr.tutorial.metadata#1373401575434711868" fork="true" includeantruntime="false">
       <compilerarg value="-Xlint:none" />
@@ -1216,6 +1224,7 @@
   </target>
   
   <target name="java.compile.mbeddr.tutorial.vectors" depends="fetchDependencies">
+    <mkdir dir="${tutorial.home}/languages/vectors/source_gen" />
     <mkdir dir="${build.tmp}/java/out/mbeddr.tutorial.vectors" />
     <javac destdir="${build.tmp}/java/out/mbeddr.tutorial.vectors" fork="true" includeantruntime="false">
       <compilerarg value="-Xlint:none" />
@@ -1264,6 +1273,7 @@
   </target>
   
   <target name="java.compile.mbeddr.tutorial.processorregisters" depends="fetchDependencies">
+    <mkdir dir="${tutorial.home}/languages/processorregisters/source_gen" />
     <mkdir dir="${build.tmp}/java/out/mbeddr.tutorial.processorregisters" />
     <javac destdir="${build.tmp}/java/out/mbeddr.tutorial.processorregisters" fork="true" includeantruntime="false">
       <compilerarg value="-Xlint:none" />
@@ -1329,6 +1339,7 @@
   </target>
   
   <target name="java.compile.mbeddr.tutorial.processorregisters#1462098009437633268" depends="java.compile.mbeddr.tutorial.processorregisters, fetchDependencies">
+    <mkdir dir="${tutorial.home}/languages/processorregisters/generator/source_gen" />
     <mkdir dir="${build.tmp}/java/out/mbeddr.tutorial.processorregisters#1462098009437633268" />
     <javac destdir="${build.tmp}/java/out/mbeddr.tutorial.processorregisters#1462098009437633268" fork="true" includeantruntime="false">
       <compilerarg value="-Xlint:none" />
@@ -1392,6 +1403,7 @@
   </target>
   
   <target name="java.compile.mbeddr.tutorial.osconfig" depends="fetchDependencies">
+    <mkdir dir="${tutorial.home}/languages/osconfig/source_gen" />
     <mkdir dir="${build.tmp}/java/out/mbeddr.tutorial.osconfig" />
     <javac destdir="${build.tmp}/java/out/mbeddr.tutorial.osconfig" fork="true" includeantruntime="false">
       <compilerarg value="-Xlint:none" />
@@ -1433,6 +1445,7 @@
   </target>
   
   <target name="java.compile.mbeddr.tutorial.complex" depends="fetchDependencies">
+    <mkdir dir="${tutorial.home}/languages/complex/source_gen" />
     <mkdir dir="${build.tmp}/java/out/mbeddr.tutorial.complex" />
     <javac destdir="${build.tmp}/java/out/mbeddr.tutorial.complex" fork="true" includeantruntime="false">
       <compilerarg value="-Xlint:none" />
@@ -1481,6 +1494,7 @@
   </target>
   
   <target name="java.compile.mbeddr.tutorial.smtrigger" depends="fetchDependencies">
+    <mkdir dir="${tutorial.home}/languages/mbeddr.tutorial.smtrigger/source_gen" />
     <mkdir dir="${build.tmp}/java/out/mbeddr.tutorial.smtrigger" />
     <javac destdir="${build.tmp}/java/out/mbeddr.tutorial.smtrigger" fork="true" includeantruntime="false">
       <compilerarg value="-Xlint:none" />
@@ -1540,6 +1554,7 @@
   </target>
   
   <target name="java.compile.mbeddr.tutorial.smtrigger#2051642899460594294" depends="java.compile.mbeddr.tutorial.smtrigger, fetchDependencies">
+    <mkdir dir="${tutorial.home}/languages/mbeddr.tutorial.smtrigger/generator/source_gen" />
     <mkdir dir="${build.tmp}/java/out/mbeddr.tutorial.smtrigger#2051642899460594294" />
     <javac destdir="${build.tmp}/java/out/mbeddr.tutorial.smtrigger#2051642899460594294" fork="true" includeantruntime="false">
       <compilerarg value="-Xlint:none" />
@@ -1641,6 +1656,7 @@
   </target>
   
   <target name="java.compile.mbeddr.tutorial.foreach" depends="fetchDependencies">
+    <mkdir dir="${tutorial.home}/languages/foreach/source_gen" />
     <mkdir dir="${build.tmp}/java/out/mbeddr.tutorial.foreach" />
     <javac destdir="${build.tmp}/java/out/mbeddr.tutorial.foreach" fork="true" includeantruntime="false">
       <compilerarg value="-Xlint:none" />
@@ -1706,6 +1722,7 @@
   </target>
   
   <target name="java.compile.mbeddr.tutorial.foreach#7977993180520148024" depends="java.compile.mbeddr.tutorial.foreach, fetchDependencies">
+    <mkdir dir="${tutorial.home}/languages/foreach/generator/source_gen" />
     <mkdir dir="${build.tmp}/java/out/mbeddr.tutorial.foreach#7977993180520148024" />
     <javac destdir="${build.tmp}/java/out/mbeddr.tutorial.foreach#7977993180520148024" fork="true" includeantruntime="false">
       <compilerarg value="-Xlint:none" />

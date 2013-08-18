@@ -18,7 +18,7 @@
         <icon size32="/MPS_16.png" size16="/MPS_16.png" />
         <dialogs-image url="/mbeddr-logo.png" />
         <package code="code" />
-        <names product="mebddr IDE" fullname="mbeddr" />
+        <names product="mbeddr" fullname="mbeddr IDE" />
         <welcome-screen caption-url="/mbeddr-logo.png" slogan-url="/null" logo-url="/null" />
         <feedback release-url="http://itemis.de" />
       </component>

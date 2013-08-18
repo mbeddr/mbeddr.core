@@ -4,9 +4,9 @@
   <property name="build.tmp" location="${build.dir}/tmp/com.mbeddr.allInOne" />
   <property name="build.layout" location="${build.dir}/artifacts/com.mbeddr.allInOne" />
   <property name="mps_home" location="" />
-  <property name="multiline.artifacts" location="" />
-  <property name="richtext.artifacts" location="" />
-  <property name="override.artifacts" location="" />
+  <property name="multiline.artifacts" location="${basedir}/../mps-multiline/build/artifacts/mps-multiline" />
+  <property name="richtext.artifacts" location="${basedir}/../mps-richtext/build/artifacts/mps-richtext" />
+  <property name="override.artifacts" location="${basedir}/../mps-editor-override/build/artifacts/mps-editor-override" />
   <property name="artifacts.mps" location="${mps_home}" />
   <property name="artifacts.com.mbeddr.mpsutil.build" location="../com.mbeddr.mpsutil/build/artifacts/com.mbeddr.mpsutil.build" />
   <property name="artifacts.com.mbeddr.spawner.build" location="../com.mbeddr.spawner/build/artifacts/com.mbeddr.spawner.build" />

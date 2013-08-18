@@ -48,7 +48,6 @@
         <depends>com.mbeddr.spawner</depends>
         <depends>com.mbeddr.debugger</depends>
         <depends>de.slisson.mps.richtext</depends>
-        <depends>jetbrains.mps.ide.devkit</depends>
         <depends>jetbrains.mps.execution.languages</depends>
         
         <extensions defaultExtensionNs="com.intellij">
@@ -1080,14 +1079,14 @@
   <target name="fetchDependencies">
     <mkdir dir="${build.tmp}/deps/mps-richtext/mps-richtext.zip" />
     <unzip src="${artifacts.mps-richtext}/mps-richtext.zip" dest="${build.tmp}/deps/mps-richtext/mps-richtext.zip" />
-    <mkdir dir="${build.tmp}/deps/com.mbeddr.debugger.build/com.mbeddr.core.debugger.zip" />
-    <unzip src="${artifacts.com.mbeddr.debugger.build}/com.mbeddr.core.debugger.zip" dest="${build.tmp}/deps/com.mbeddr.debugger.build/com.mbeddr.core.debugger.zip" />
-    <mkdir dir="${build.tmp}/deps/mps-multiline/mps-multiline.zip" />
-    <unzip src="${artifacts.mps-multiline}/mps-multiline.zip" dest="${build.tmp}/deps/mps-multiline/mps-multiline.zip" />
     <mkdir dir="${build.tmp}/deps/com.mbeddr.mpsutil.build/com.mbeddr.mpsutil.zip" />
     <unzip src="${artifacts.com.mbeddr.mpsutil.build}/com.mbeddr.mpsutil.zip" dest="${build.tmp}/deps/com.mbeddr.mpsutil.build/com.mbeddr.mpsutil.zip" />
+    <mkdir dir="${build.tmp}/deps/mps-multiline/mps-multiline.zip" />
+    <unzip src="${artifacts.mps-multiline}/mps-multiline.zip" dest="${build.tmp}/deps/mps-multiline/mps-multiline.zip" />
     <mkdir dir="${build.tmp}/deps/com.mbeddr.spawner.build/com.mbeddr.spawner.zip" />
     <unzip src="${artifacts.com.mbeddr.spawner.build}/com.mbeddr.spawner.zip" dest="${build.tmp}/deps/com.mbeddr.spawner.build/com.mbeddr.spawner.zip" />
+    <mkdir dir="${build.tmp}/deps/com.mbeddr.debugger.build/com.mbeddr.core.debugger.zip" />
+    <unzip src="${artifacts.com.mbeddr.debugger.build}/com.mbeddr.core.debugger.zip" dest="${build.tmp}/deps/com.mbeddr.debugger.build/com.mbeddr.core.debugger.zip" />
   </target>
   
   <target name="build" depends="assemble, check" />
@@ -1193,8 +1192,6 @@
       <library file="${artifacts.mps}/plugins/mps-core/languages/languageDesign/jetbrains.mps.lang.editor.table.runtime.jar" />
       <library file="${artifacts.mps}/plugins/mps-debugger-api/languages/mps-debugger-api/jetbrains.mps.debugger.api.lang.jar" />
       <library file="${artifacts.mps}/plugins/mps-debugger-api/lib/debugger-api.jar" />
-      <library file="${artifacts.mps}/plugins/mps-devkit/languages/baseLanguage/jetbrains.mps.baseLanguage.pluginSolution.jar" />
-      <library file="${artifacts.mps}/plugins/mps-devkit/languages/languageDesign/jetbrains.mps.lang.dataFlow.pluginSolution.jar" />
       <library file="${artifacts.mps}/plugins/mps-execution-api/languages/mps-execution-api/jetbrains.mps.execution.common.jar" />
       <library file="${artifacts.mps}/plugins/mps-execution-api/languages/mps-execution-api/jetbrains.mps.execution.settings.jar" />
       <library file="${artifacts.mps}/plugins/mps-execution-api/lib/execution-api.jar" />
@@ -1441,11 +1438,9 @@
         <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.closures.jar" />
         <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.collections.jar" />
         <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.jdk7.jar" />
-        <fileset file="${artifacts.mps}/plugins/mps-devkit/languages/baseLanguage/jetbrains.mps.baseLanguage.pluginSolution.jar" />
         <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.scopes.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.constraints.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
-        <fileset file="${artifacts.mps}/plugins/mps-devkit/languages/languageDesign/jetbrains.mps.lang.dataFlow.pluginSolution.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.pattern.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.scopes.runtime.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.sharedConcepts.jar" />

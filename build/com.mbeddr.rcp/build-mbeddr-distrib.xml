@@ -6,9 +6,9 @@
   <property name="version" value="0.1" />
   <property name="buildnumber" value="130.001" />
   <property name="mps_home" location="" />
-  <property name="multiline.artifacts" location="" />
-  <property name="richtext.artifacts" location="" />
-  <property name="override.artifacts" location="" />
+  <property name="multiline.artifacts" location="${basedir}/../mps-multiline/build/artifacts/mps-multiline" />
+  <property name="richtext.artifacts" location="${basedir}/../mps-richtext/build/artifacts/mps-richtext" />
+  <property name="override.artifacts" location="${basedir}/../mps-editor-override/build/artifacts/mps-editor-override" />
   <property name="artifacts.com.mbeddr.rcp.branding" location="${build.dir}/artifacts/com.mbeddr.rcp.branding" />
   <property name="artifacts.jetbrains.mps.standalone" location="${build.dir}/artifacts/jetbrains.mps.standalone" />
   <property name="artifacts.com.mbeddr.mpsutil.build" location="../com.mbeddr.mpsutil/build/artifacts/com.mbeddr.mpsutil.build" />
@@ -30,6 +30,13 @@
   <property name="artifacts.mps-richtext" location="${richtext.artifacts}" />
   <property name="artifacts.mps-multiline" location="${multiline.artifacts}" />
   <property name="artifacts.mps-editor-override" location="${override.artifacts}" />
+  <property name="artifacts.mpsStandalone" location="${mps_home}" />
+  <property name="artifacts.mpsDebuggerPlugin" location="${mps_home}/plugins" />
+  <property name="artifacts.mpsExecutionPlugin" location="${mps_home}/plugins" />
+  <property name="artifacts.mpsTesting" location="${mps_home}/plugins" />
+  <property name="artifacts.mpsMakePlugin" location="${mps_home}/plugins" />
+  <property name="artifacts.mpsTroveCollections" location="${mps_home}/plugins" />
+  <property name="artifacts.mpsBuild" location="${mps_home}/plugins" />
   <property file="${artifacts.jetbrains.mps.standalone}/build.properties" prefix="import.jetbrains.mps.standalone" />
   <property file="${artifacts.com.mbeddr.mpsutil.build}/build.properties" prefix="import.com.mbeddr.mpsutil.build" />
   <property name="jetbrains.mps.standalone.buildnumber" value="${import.jetbrains.mps.standalone.jetbrains.mps.standalone.buildnumber}" />
@@ -62,25 +69,35 @@
     </copy>
     <tar destfile="${build.layout}/${buildnumber}-linux.tar.gz" compression="gzip" longfile="gnu">
       <tarfileset dir="${artifacts.com.mbeddr.rcp.branding}" prefix="mbeddr ${version}" />
-      <tarfileset dir="${build.tmp}/deps/com.mbeddr.cc.ple.build/com.mbeddr.cc.ple.zip" prefix="mbeddr ${version}" />
-      <tarfileset dir="${build.tmp}/deps/com.mbeddr.cc.req.build/com.mbeddr.cc.req.zip" prefix="mbeddr ${version}" />
-      <tarfileset dir="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip" prefix="mbeddr ${version}" />
-      <tarfileset dir="${build.tmp}/deps/com.mbeddr.spawner.build/com.mbeddr.spawner.zip" prefix="mbeddr ${version}" />
-      <tarfileset dir="${build.tmp}/deps/com.mbeddr.ext.components/com.mbeddr.ext.components.zip" prefix="mbeddr ${version}" />
-      <tarfileset dir="${build.tmp}/deps/com.mbeddr.ext.exceptionhandling/com.mbeddr.ext.exceptionhandling.zip" prefix="mbeddr ${version}" />
-      <tarfileset dir="${build.tmp}/deps/com.mbeddr.ext.statemachine/com.mbeddr.ext.statemachine.zip" prefix="mbeddr ${version}" />
-      <tarfileset dir="${build.tmp}/deps/com.mbeddr.ext.statemachinesInComponents/com.mbeddr.ext.statemachineInComponents.zip" prefix="mbeddr ${version}" />
-      <tarfileset dir="${build.tmp}/deps/com.mbeddr.ext.units/com.mbeddr.ext.units.zip" prefix="mbeddr ${version}" />
-      <tarfileset dir="${build.tmp}/deps/com.mbeddr.debugger.build/com.mbeddr.core.debugger.zip" prefix="mbeddr ${version}" />
-      <tarfileset dir="${build.tmp}/deps/com.mbeddr.mpsutil.build/com.mbeddr.mpsutil.zip" prefix="mbeddr ${version}" />
-      <tarfileset dir="${build.tmp}/deps/com.mbeddr.analyses.base/com.mbeddr.analyses.base.zip" prefix="mbeddr ${version}" />
-      <tarfileset dir="${build.tmp}/deps/com.mbeddr.analyses.cbmc/com.mbeddr.analyses.cbmc.zip" prefix="mbeddr ${version}" />
-      <tarfileset dir="${build.tmp}/deps/com.mbeddr.analyses.nusmv/com.mbeddr.analyses.nusmv.zip" prefix="mbeddr ${version}" />
-      <tarfileset dir="${build.tmp}/deps/com.mbeddr.analyses.yices/com.mbeddr.analyses.yices.zip" prefix="mbeddr ${version}" />
-      <tarfileset dir="${build.tmp}/deps/com.mbeddr.doc.build/com.mbeddr.doc.zip" prefix="mbeddr ${version}" />
-      <tarfileset dir="${build.tmp}/deps/mps-multiline/mps-multiline.zip" prefix="mbeddr ${version}" />
-      <tarfileset dir="${build.tmp}/deps/mps-richtext/mps-richtext.zip" prefix="mbeddr ${version}" />
-      <tarfileset dir="${build.tmp}/deps/mps-editor-override/mps-editor-override.zip" prefix="mbeddr ${version}" />
+      <tarfileset dir="${artifacts.jetbrains.mps.standalone}" prefix="mbeddr ${version}" />
+      <tarfileset file="${artifacts.mpsMakePlugin}/mps-make.jar" prefix="mbeddr ${version}/plugins" />
+      <tarfileset dir="${build.tmp}/deps/com.mbeddr.cc.ple.build/com.mbeddr.cc.ple.zip" prefix="mbeddr ${version}/plugins" />
+      <tarfileset dir="${build.tmp}/deps/com.mbeddr.cc.req.build/com.mbeddr.cc.req.zip" prefix="mbeddr ${version}/plugins" />
+      <tarfileset dir="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip" prefix="mbeddr ${version}/plugins" />
+      <tarfileset dir="${build.tmp}/deps/com.mbeddr.spawner.build/com.mbeddr.spawner.zip" prefix="mbeddr ${version}/plugins" />
+      <tarfileset dir="${build.tmp}/deps/com.mbeddr.ext.components/com.mbeddr.ext.components.zip" prefix="mbeddr ${version}/plugins" />
+      <tarfileset dir="${build.tmp}/deps/com.mbeddr.ext.exceptionhandling/com.mbeddr.ext.exceptionhandling.zip" prefix="mbeddr ${version}/plugins" />
+      <tarfileset dir="${build.tmp}/deps/com.mbeddr.ext.statemachine/com.mbeddr.ext.statemachine.zip" prefix="mbeddr ${version}/plugins" />
+      <tarfileset dir="${build.tmp}/deps/com.mbeddr.ext.statemachinesInComponents/com.mbeddr.ext.statemachineInComponents.zip" prefix="mbeddr ${version}/plugins" />
+      <tarfileset dir="${build.tmp}/deps/com.mbeddr.ext.units/com.mbeddr.ext.units.zip" prefix="mbeddr ${version}/plugins" />
+      <tarfileset dir="${build.tmp}/deps/com.mbeddr.debugger.build/com.mbeddr.core.debugger.zip" prefix="mbeddr ${version}/plugins" />
+      <tarfileset dir="${build.tmp}/deps/com.mbeddr.mpsutil.build/com.mbeddr.mpsutil.zip" prefix="mbeddr ${version}/plugins" />
+      <tarfileset dir="${build.tmp}/deps/com.mbeddr.analyses.base/com.mbeddr.analyses.base.zip" prefix="mbeddr ${version}/plugins" />
+      <tarfileset dir="${build.tmp}/deps/com.mbeddr.analyses.cbmc/com.mbeddr.analyses.cbmc.zip" prefix="mbeddr ${version}/plugins" />
+      <tarfileset dir="${build.tmp}/deps/com.mbeddr.analyses.nusmv/com.mbeddr.analyses.nusmv.zip" prefix="mbeddr ${version}/plugins" />
+      <tarfileset dir="${build.tmp}/deps/com.mbeddr.analyses.yices/com.mbeddr.analyses.yices.zip" prefix="mbeddr ${version}/plugins" />
+      <tarfileset dir="${build.tmp}/deps/com.mbeddr.doc.build/com.mbeddr.doc.zip" prefix="mbeddr ${version}/plugins" />
+      <tarfileset dir="${build.tmp}/deps/mps-multiline/mps-multiline.zip" prefix="mbeddr ${version}/plugins" />
+      <tarfileset dir="${build.tmp}/deps/mps-richtext/mps-richtext.zip" prefix="mbeddr ${version}/plugins" />
+      <tarfileset dir="${build.tmp}/deps/mps-editor-override/mps-editor-override.zip" prefix="mbeddr ${version}/plugins" />
+      <tarfileset dir="${artifacts.mpsDebuggerPlugin}/mps-execution-api" prefix="mbeddr ${version}/plugins/mps-execution-api" />
+      <tarfileset dir="${artifacts.mpsDebuggerPlugin}/mps-debugger-api" prefix="mbeddr ${version}/plugins/mps-debugger-api" />
+      <tarfileset dir="${artifacts.mpsTesting}/mps-testing" prefix="mbeddr ${version}/plugins/mps-testing" />
+      <tarfileset dir="${artifacts.mpsExecutionPlugin}/mps-execution-configurations" prefix="mbeddr ${version}/plugins/mps-execution-configurations" />
+      <tarfileset dir="${artifacts.mpsExecutionPlugin}/mps-execution-languages" prefix="mbeddr ${version}/plugins/mps-execution-languages" />
+      <tarfileset dir="${artifacts.mpsDebuggerPlugin}/mps-debugger-java" prefix="mbeddr ${version}/plugins/mps-debugger-java" />
+      <tarfileset dir="${artifacts.mpsTroveCollections}/mps-trove" prefix="mbeddr ${version}/plugins/mps-trove" />
+      <tarfileset dir="${artifacts.mpsBuild}/mps-build" prefix="mbeddr ${version}/plugins/mps-build" />
       <tarfileset dir="${mps_home}/bin/linux" prefix="mbeddr ${version}/bin">
         <exclude name="**/fsnotifier" />
         <exclude name="**/fsnotifier64" />
@@ -92,25 +109,35 @@
     </tar>
     <zip destfile="${build.layout}/${buildnumber}.zip">
       <zipfileset dir="${artifacts.com.mbeddr.rcp.branding}" prefix="mbeddr ${version}" />
-      <zipfileset dir="${build.tmp}/deps/com.mbeddr.cc.ple.build/com.mbeddr.cc.ple.zip" prefix="mbeddr ${version}" />
-      <zipfileset dir="${build.tmp}/deps/com.mbeddr.cc.req.build/com.mbeddr.cc.req.zip" prefix="mbeddr ${version}" />
-      <zipfileset dir="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip" prefix="mbeddr ${version}" />
-      <zipfileset dir="${build.tmp}/deps/com.mbeddr.spawner.build/com.mbeddr.spawner.zip" prefix="mbeddr ${version}" />
-      <zipfileset dir="${build.tmp}/deps/com.mbeddr.ext.components/com.mbeddr.ext.components.zip" prefix="mbeddr ${version}" />
-      <zipfileset dir="${build.tmp}/deps/com.mbeddr.ext.exceptionhandling/com.mbeddr.ext.exceptionhandling.zip" prefix="mbeddr ${version}" />
-      <zipfileset dir="${build.tmp}/deps/com.mbeddr.ext.statemachine/com.mbeddr.ext.statemachine.zip" prefix="mbeddr ${version}" />
-      <zipfileset dir="${build.tmp}/deps/com.mbeddr.ext.statemachinesInComponents/com.mbeddr.ext.statemachineInComponents.zip" prefix="mbeddr ${version}" />
-      <zipfileset dir="${build.tmp}/deps/com.mbeddr.ext.units/com.mbeddr.ext.units.zip" prefix="mbeddr ${version}" />
-      <zipfileset dir="${build.tmp}/deps/com.mbeddr.debugger.build/com.mbeddr.core.debugger.zip" prefix="mbeddr ${version}" />
-      <zipfileset dir="${build.tmp}/deps/com.mbeddr.mpsutil.build/com.mbeddr.mpsutil.zip" prefix="mbeddr ${version}" />
-      <zipfileset dir="${build.tmp}/deps/com.mbeddr.analyses.base/com.mbeddr.analyses.base.zip" prefix="mbeddr ${version}" />
-      <zipfileset dir="${build.tmp}/deps/com.mbeddr.analyses.cbmc/com.mbeddr.analyses.cbmc.zip" prefix="mbeddr ${version}" />
-      <zipfileset dir="${build.tmp}/deps/com.mbeddr.analyses.nusmv/com.mbeddr.analyses.nusmv.zip" prefix="mbeddr ${version}" />
-      <zipfileset dir="${build.tmp}/deps/com.mbeddr.analyses.yices/com.mbeddr.analyses.yices.zip" prefix="mbeddr ${version}" />
-      <zipfileset dir="${build.tmp}/deps/com.mbeddr.doc.build/com.mbeddr.doc.zip" prefix="mbeddr ${version}" />
-      <zipfileset dir="${build.tmp}/deps/mps-multiline/mps-multiline.zip" prefix="mbeddr ${version}" />
-      <zipfileset dir="${build.tmp}/deps/mps-richtext/mps-richtext.zip" prefix="mbeddr ${version}" />
-      <zipfileset dir="${build.tmp}/deps/mps-editor-override/mps-editor-override.zip" prefix="mbeddr ${version}" />
+      <zipfileset dir="${artifacts.jetbrains.mps.standalone}" prefix="mbeddr ${version}" />
+      <zipfileset file="${artifacts.mpsMakePlugin}/mps-make.jar" prefix="mbeddr ${version}/plugins" />
+      <zipfileset dir="${build.tmp}/deps/com.mbeddr.cc.ple.build/com.mbeddr.cc.ple.zip" prefix="mbeddr ${version}/plugins" />
+      <zipfileset dir="${build.tmp}/deps/com.mbeddr.cc.req.build/com.mbeddr.cc.req.zip" prefix="mbeddr ${version}/plugins" />
+      <zipfileset dir="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip" prefix="mbeddr ${version}/plugins" />
+      <zipfileset dir="${build.tmp}/deps/com.mbeddr.spawner.build/com.mbeddr.spawner.zip" prefix="mbeddr ${version}/plugins" />
+      <zipfileset dir="${build.tmp}/deps/com.mbeddr.ext.components/com.mbeddr.ext.components.zip" prefix="mbeddr ${version}/plugins" />
+      <zipfileset dir="${build.tmp}/deps/com.mbeddr.ext.exceptionhandling/com.mbeddr.ext.exceptionhandling.zip" prefix="mbeddr ${version}/plugins" />
+      <zipfileset dir="${build.tmp}/deps/com.mbeddr.ext.statemachine/com.mbeddr.ext.statemachine.zip" prefix="mbeddr ${version}/plugins" />
+      <zipfileset dir="${build.tmp}/deps/com.mbeddr.ext.statemachinesInComponents/com.mbeddr.ext.statemachineInComponents.zip" prefix="mbeddr ${version}/plugins" />
+      <zipfileset dir="${build.tmp}/deps/com.mbeddr.ext.units/com.mbeddr.ext.units.zip" prefix="mbeddr ${version}/plugins" />
+      <zipfileset dir="${build.tmp}/deps/com.mbeddr.debugger.build/com.mbeddr.core.debugger.zip" prefix="mbeddr ${version}/plugins" />
+      <zipfileset dir="${build.tmp}/deps/com.mbeddr.mpsutil.build/com.mbeddr.mpsutil.zip" prefix="mbeddr ${version}/plugins" />
+      <zipfileset dir="${build.tmp}/deps/com.mbeddr.analyses.base/com.mbeddr.analyses.base.zip" prefix="mbeddr ${version}/plugins" />
+      <zipfileset dir="${build.tmp}/deps/com.mbeddr.analyses.cbmc/com.mbeddr.analyses.cbmc.zip" prefix="mbeddr ${version}/plugins" />
+      <zipfileset dir="${build.tmp}/deps/com.mbeddr.analyses.nusmv/com.mbeddr.analyses.nusmv.zip" prefix="mbeddr ${version}/plugins" />
+      <zipfileset dir="${build.tmp}/deps/com.mbeddr.analyses.yices/com.mbeddr.analyses.yices.zip" prefix="mbeddr ${version}/plugins" />
+      <zipfileset dir="${build.tmp}/deps/com.mbeddr.doc.build/com.mbeddr.doc.zip" prefix="mbeddr ${version}/plugins" />
+      <zipfileset dir="${build.tmp}/deps/mps-multiline/mps-multiline.zip" prefix="mbeddr ${version}/plugins" />
+      <zipfileset dir="${build.tmp}/deps/mps-richtext/mps-richtext.zip" prefix="mbeddr ${version}/plugins" />
+      <zipfileset dir="${build.tmp}/deps/mps-editor-override/mps-editor-override.zip" prefix="mbeddr ${version}/plugins" />
+      <zipfileset dir="${artifacts.mpsDebuggerPlugin}/mps-execution-api" prefix="mbeddr ${version}/plugins/mps-execution-api" />
+      <zipfileset dir="${artifacts.mpsDebuggerPlugin}/mps-debugger-api" prefix="mbeddr ${version}/plugins/mps-debugger-api" />
+      <zipfileset dir="${artifacts.mpsTesting}/mps-testing" prefix="mbeddr ${version}/plugins/mps-testing" />
+      <zipfileset dir="${artifacts.mpsExecutionPlugin}/mps-execution-configurations" prefix="mbeddr ${version}/plugins/mps-execution-configurations" />
+      <zipfileset dir="${artifacts.mpsExecutionPlugin}/mps-execution-languages" prefix="mbeddr ${version}/plugins/mps-execution-languages" />
+      <zipfileset dir="${artifacts.mpsDebuggerPlugin}/mps-debugger-java" prefix="mbeddr ${version}/plugins/mps-debugger-java" />
+      <zipfileset dir="${artifacts.mpsTroveCollections}/mps-trove" prefix="mbeddr ${version}/plugins/mps-trove" />
+      <zipfileset dir="${artifacts.mpsBuild}/mps-build" prefix="mbeddr ${version}/plugins/mps-build" />
       <zipfileset file="${mps_home}/bin/mps.vmoptions" prefix="mbeddr ${version}/bin" />
       <zipfileset file="${mps_home}/bin/mps.exe.vmoptions" prefix="mbeddr ${version}/bin" />
       <zipfileset dir="${mps_home}/bin/win" prefix="mbeddr ${version}/bin/win">
@@ -154,25 +181,35 @@
     </copy>
     <zip destfile="${build.layout}/${buildnumber}-macos.zip">
       <zipfileset dir="${artifacts.com.mbeddr.rcp.branding}" prefix="mbeddr ${buildnumber}.app" />
-      <zipfileset dir="${build.tmp}/deps/com.mbeddr.cc.ple.build/com.mbeddr.cc.ple.zip" prefix="mbeddr ${buildnumber}.app" />
-      <zipfileset dir="${build.tmp}/deps/com.mbeddr.cc.req.build/com.mbeddr.cc.req.zip" prefix="mbeddr ${buildnumber}.app" />
-      <zipfileset dir="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip" prefix="mbeddr ${buildnumber}.app" />
-      <zipfileset dir="${build.tmp}/deps/com.mbeddr.spawner.build/com.mbeddr.spawner.zip" prefix="mbeddr ${buildnumber}.app" />
-      <zipfileset dir="${build.tmp}/deps/com.mbeddr.ext.components/com.mbeddr.ext.components.zip" prefix="mbeddr ${buildnumber}.app" />
-      <zipfileset dir="${build.tmp}/deps/com.mbeddr.ext.exceptionhandling/com.mbeddr.ext.exceptionhandling.zip" prefix="mbeddr ${buildnumber}.app" />
-      <zipfileset dir="${build.tmp}/deps/com.mbeddr.ext.statemachine/com.mbeddr.ext.statemachine.zip" prefix="mbeddr ${buildnumber}.app" />
-      <zipfileset dir="${build.tmp}/deps/com.mbeddr.ext.statemachinesInComponents/com.mbeddr.ext.statemachineInComponents.zip" prefix="mbeddr ${buildnumber}.app" />
-      <zipfileset dir="${build.tmp}/deps/com.mbeddr.ext.units/com.mbeddr.ext.units.zip" prefix="mbeddr ${buildnumber}.app" />
-      <zipfileset dir="${build.tmp}/deps/com.mbeddr.debugger.build/com.mbeddr.core.debugger.zip" prefix="mbeddr ${buildnumber}.app" />
-      <zipfileset dir="${build.tmp}/deps/com.mbeddr.mpsutil.build/com.mbeddr.mpsutil.zip" prefix="mbeddr ${buildnumber}.app" />
-      <zipfileset dir="${build.tmp}/deps/com.mbeddr.analyses.base/com.mbeddr.analyses.base.zip" prefix="mbeddr ${buildnumber}.app" />
-      <zipfileset dir="${build.tmp}/deps/com.mbeddr.analyses.cbmc/com.mbeddr.analyses.cbmc.zip" prefix="mbeddr ${buildnumber}.app" />
-      <zipfileset dir="${build.tmp}/deps/com.mbeddr.analyses.nusmv/com.mbeddr.analyses.nusmv.zip" prefix="mbeddr ${buildnumber}.app" />
-      <zipfileset dir="${build.tmp}/deps/com.mbeddr.analyses.yices/com.mbeddr.analyses.yices.zip" prefix="mbeddr ${buildnumber}.app" />
-      <zipfileset dir="${build.tmp}/deps/com.mbeddr.doc.build/com.mbeddr.doc.zip" prefix="mbeddr ${buildnumber}.app" />
-      <zipfileset dir="${build.tmp}/deps/mps-multiline/mps-multiline.zip" prefix="mbeddr ${buildnumber}.app" />
-      <zipfileset dir="${build.tmp}/deps/mps-richtext/mps-richtext.zip" prefix="mbeddr ${buildnumber}.app" />
-      <zipfileset dir="${build.tmp}/deps/mps-editor-override/mps-editor-override.zip" prefix="mbeddr ${buildnumber}.app" />
+      <zipfileset dir="${artifacts.jetbrains.mps.standalone}" prefix="mbeddr ${buildnumber}.app" />
+      <zipfileset file="${artifacts.mpsMakePlugin}/mps-make.jar" prefix="mbeddr ${buildnumber}.app/plugins" />
+      <zipfileset dir="${build.tmp}/deps/com.mbeddr.cc.ple.build/com.mbeddr.cc.ple.zip" prefix="mbeddr ${buildnumber}.app/plugins" />
+      <zipfileset dir="${build.tmp}/deps/com.mbeddr.cc.req.build/com.mbeddr.cc.req.zip" prefix="mbeddr ${buildnumber}.app/plugins" />
+      <zipfileset dir="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip" prefix="mbeddr ${buildnumber}.app/plugins" />
+      <zipfileset dir="${build.tmp}/deps/com.mbeddr.spawner.build/com.mbeddr.spawner.zip" prefix="mbeddr ${buildnumber}.app/plugins" />
+      <zipfileset dir="${build.tmp}/deps/com.mbeddr.ext.components/com.mbeddr.ext.components.zip" prefix="mbeddr ${buildnumber}.app/plugins" />
+      <zipfileset dir="${build.tmp}/deps/com.mbeddr.ext.exceptionhandling/com.mbeddr.ext.exceptionhandling.zip" prefix="mbeddr ${buildnumber}.app/plugins" />
+      <zipfileset dir="${build.tmp}/deps/com.mbeddr.ext.statemachine/com.mbeddr.ext.statemachine.zip" prefix="mbeddr ${buildnumber}.app/plugins" />
+      <zipfileset dir="${build.tmp}/deps/com.mbeddr.ext.statemachinesInComponents/com.mbeddr.ext.statemachineInComponents.zip" prefix="mbeddr ${buildnumber}.app/plugins" />
+      <zipfileset dir="${build.tmp}/deps/com.mbeddr.ext.units/com.mbeddr.ext.units.zip" prefix="mbeddr ${buildnumber}.app/plugins" />
+      <zipfileset dir="${build.tmp}/deps/com.mbeddr.debugger.build/com.mbeddr.core.debugger.zip" prefix="mbeddr ${buildnumber}.app/plugins" />
+      <zipfileset dir="${build.tmp}/deps/com.mbeddr.mpsutil.build/com.mbeddr.mpsutil.zip" prefix="mbeddr ${buildnumber}.app/plugins" />
+      <zipfileset dir="${build.tmp}/deps/com.mbeddr.analyses.base/com.mbeddr.analyses.base.zip" prefix="mbeddr ${buildnumber}.app/plugins" />
+      <zipfileset dir="${build.tmp}/deps/com.mbeddr.analyses.cbmc/com.mbeddr.analyses.cbmc.zip" prefix="mbeddr ${buildnumber}.app/plugins" />
+      <zipfileset dir="${build.tmp}/deps/com.mbeddr.analyses.nusmv/com.mbeddr.analyses.nusmv.zip" prefix="mbeddr ${buildnumber}.app/plugins" />
+      <zipfileset dir="${build.tmp}/deps/com.mbeddr.analyses.yices/com.mbeddr.analyses.yices.zip" prefix="mbeddr ${buildnumber}.app/plugins" />
+      <zipfileset dir="${build.tmp}/deps/com.mbeddr.doc.build/com.mbeddr.doc.zip" prefix="mbeddr ${buildnumber}.app/plugins" />
+      <zipfileset dir="${build.tmp}/deps/mps-multiline/mps-multiline.zip" prefix="mbeddr ${buildnumber}.app/plugins" />
+      <zipfileset dir="${build.tmp}/deps/mps-richtext/mps-richtext.zip" prefix="mbeddr ${buildnumber}.app/plugins" />
+      <zipfileset dir="${build.tmp}/deps/mps-editor-override/mps-editor-override.zip" prefix="mbeddr ${buildnumber}.app/plugins" />
+      <zipfileset dir="${artifacts.mpsDebuggerPlugin}/mps-execution-api" prefix="mbeddr ${buildnumber}.app/plugins/mps-execution-api" />
+      <zipfileset dir="${artifacts.mpsDebuggerPlugin}/mps-debugger-api" prefix="mbeddr ${buildnumber}.app/plugins/mps-debugger-api" />
+      <zipfileset dir="${artifacts.mpsTesting}/mps-testing" prefix="mbeddr ${buildnumber}.app/plugins/mps-testing" />
+      <zipfileset dir="${artifacts.mpsExecutionPlugin}/mps-execution-configurations" prefix="mbeddr ${buildnumber}.app/plugins/mps-execution-configurations" />
+      <zipfileset dir="${artifacts.mpsExecutionPlugin}/mps-execution-languages" prefix="mbeddr ${buildnumber}.app/plugins/mps-execution-languages" />
+      <zipfileset dir="${artifacts.mpsDebuggerPlugin}/mps-debugger-java" prefix="mbeddr ${buildnumber}.app/plugins/mps-debugger-java" />
+      <zipfileset dir="${artifacts.mpsTroveCollections}/mps-trove" prefix="mbeddr ${buildnumber}.app/plugins/mps-trove" />
+      <zipfileset dir="${artifacts.mpsBuild}/mps-build" prefix="mbeddr ${buildnumber}.app/plugins/mps-build" />
       <zipfileset file="${mps_home}/bin/mac/Contents/Info.plist" prefix="mbeddr ${buildnumber}.app/Contents" />
       <zipfileset file="${mps_home}/bin/mac/Contents/Resources/mps.icns" prefix="mbeddr ${buildnumber}.app/Contents/Resources" />
       <zipfileset file="${mps_home}/bin/mac/Contents/MacOS/mps" prefix="mbeddr ${buildnumber}.app/Contents/MacOS" filemode="755" />

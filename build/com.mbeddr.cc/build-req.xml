@@ -8,7 +8,7 @@
   <property name="mpsutil" location="${mbeddr.github.core.home}/code/languages/com.mbeddr.mpsutil" />
   <property name="mbeddr.core" location="${mbeddr.github.core.home}/code/languages/com.mbeddr.core" />
   <property name="mbeddr.cc" location="${mbeddr.github.core.home}/code/languages/com.mbeddr.cc" />
-  <property name="lisson.home" location="${mbeddr.github.core.home}/../lisson" />
+  <property name="lisson.home" location="${mbeddr.github.core.home}/build" />
   <property name="multiline.artifacts" location="${lisson.home}/mps-multiline/build/artifacts/mps-multiline" />
   <property name="richtext.artifacts" location="${lisson.home}/mps-richtext/build/artifacts/mps-richtext" />
   <property name="artifacts.mps" location="${mps.home}" />
@@ -53,7 +53,6 @@
         <depends>com.mbeddr.mpsutil</depends>
         <depends>com.mbeddr.debugger</depends>
         <depends>de.slisson.mps.richtext</depends>
-        <depends>jetbrains.mps.ide.devkit</depends>
         
         <extensions defaultExtensionNs="com.intellij">
           <mps.LanguageLibrary dir="/languages" />
@@ -491,20 +490,20 @@
   </target>
   
   <target name="fetchDependencies">
-    <mkdir dir="${build.tmp}/deps/mps-richtext/mps-richtext.zip" />
-    <unzip src="${artifacts.mps-richtext}/mps-richtext.zip" dest="${build.tmp}/deps/mps-richtext/mps-richtext.zip" />
-    <mkdir dir="${build.tmp}/deps/com.mbeddr.debugger.build/com.mbeddr.core.debugger.zip" />
-    <unzip src="${artifacts.com.mbeddr.debugger.build}/com.mbeddr.core.debugger.zip" dest="${build.tmp}/deps/com.mbeddr.debugger.build/com.mbeddr.core.debugger.zip" />
-    <mkdir dir="${build.tmp}/deps/mps-multiline/mps-multiline.zip" />
-    <unzip src="${artifacts.mps-multiline}/mps-multiline.zip" dest="${build.tmp}/deps/mps-multiline/mps-multiline.zip" />
-    <mkdir dir="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip" />
-    <unzip src="${artifacts.com.mbeddr.core.build}/com.mbeddr.core.zip" dest="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip" />
     <mkdir dir="${build.tmp}/deps/com.mbeddr.doc.build/com.mbeddr.doc.zip" />
     <unzip src="${artifacts.com.mbeddr.doc.build}/com.mbeddr.doc.zip" dest="${build.tmp}/deps/com.mbeddr.doc.build/com.mbeddr.doc.zip" />
+    <mkdir dir="${build.tmp}/deps/mps-richtext/mps-richtext.zip" />
+    <unzip src="${artifacts.mps-richtext}/mps-richtext.zip" dest="${build.tmp}/deps/mps-richtext/mps-richtext.zip" />
     <mkdir dir="${build.tmp}/deps/com.mbeddr.mpsutil.build/com.mbeddr.mpsutil.zip" />
     <unzip src="${artifacts.com.mbeddr.mpsutil.build}/com.mbeddr.mpsutil.zip" dest="${build.tmp}/deps/com.mbeddr.mpsutil.build/com.mbeddr.mpsutil.zip" />
+    <mkdir dir="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip" />
+    <unzip src="${artifacts.com.mbeddr.core.build}/com.mbeddr.core.zip" dest="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip" />
+    <mkdir dir="${build.tmp}/deps/mps-multiline/mps-multiline.zip" />
+    <unzip src="${artifacts.mps-multiline}/mps-multiline.zip" dest="${build.tmp}/deps/mps-multiline/mps-multiline.zip" />
     <mkdir dir="${build.tmp}/deps/com.mbeddr.spawner.build/com.mbeddr.spawner.zip" />
     <unzip src="${artifacts.com.mbeddr.spawner.build}/com.mbeddr.spawner.zip" dest="${build.tmp}/deps/com.mbeddr.spawner.build/com.mbeddr.spawner.zip" />
+    <mkdir dir="${build.tmp}/deps/com.mbeddr.debugger.build/com.mbeddr.core.debugger.zip" />
+    <unzip src="${artifacts.com.mbeddr.debugger.build}/com.mbeddr.core.debugger.zip" dest="${build.tmp}/deps/com.mbeddr.debugger.build/com.mbeddr.core.debugger.zip" />
   </target>
   
   <target name="build" depends="assemble, check" />
