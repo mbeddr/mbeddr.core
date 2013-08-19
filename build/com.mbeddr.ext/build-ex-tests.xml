@@ -373,6 +373,9 @@
         <module file="${mbeddr.ext}/tests/test.ex.ext.physicalunits.c/c.msd" />
         <module file="${mbeddr.ext}/tests/test.ex.ext.statemachine/statemachine.msd" />
       </chunk>
+      <jvmargs>
+        <arg value="-Xmx512m" />
+      </jvmargs>
     </generate>
   </target>
   
@@ -424,7 +427,7 @@
   <target name="java.compile.test.ex.ext.exceptionhandling" depends="fetchDependencies">
     <mkdir dir="${mbeddr.ext}/tests/test.ex.ext.exceptionhandling/source_gen" />
     <mkdir dir="${build.tmp}/java/out/test.ex.ext.exceptionhandling" />
-    <javac destdir="${build.tmp}/java/out/test.ex.ext.exceptionhandling" fork="true" includeantruntime="false">
+    <javac destdir="${build.tmp}/java/out/test.ex.ext.exceptionhandling" fork="true" includeantruntime="false" debug="true">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${mbeddr.ext}/tests/test.ex.ext.exceptionhandling/source_gen" />
@@ -488,12 +491,16 @@
         <fileset file="${build.tmp}/deps/mps-multiline/mps-multiline.zip/mps-multiline/languages/mps-multiline/de.slisson.mps.editor.multiline.runtime.jar" />
       </classpath>
     </javac>
+    <copy todir="${build.tmp}/java/out/test.ex.ext.exceptionhandling">
+      <fileset dir="${mbeddr.ext}/tests/test.ex.ext.exceptionhandling/source_gen" excludes="**/*.java" />
+      <fileset dir="${mbeddr.ext}/tests/test.ex.ext.exceptionhandling/test_gen/" excludes="**/*.java" />
+    </copy>
   </target>
   
   <target name="java.compile.test.ex.ext.comp_mocking" depends="fetchDependencies">
     <mkdir dir="${mbeddr.ext}/tests/test.ex.ext.comp_mocking/source_gen" />
     <mkdir dir="${build.tmp}/java/out/test.ex.ext.comp_mocking" />
-    <javac destdir="${build.tmp}/java/out/test.ex.ext.comp_mocking" fork="true" includeantruntime="false">
+    <javac destdir="${build.tmp}/java/out/test.ex.ext.comp_mocking" fork="true" includeantruntime="false" debug="true">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${mbeddr.ext}/tests/test.ex.ext.comp_mocking/source_gen" />
@@ -556,12 +563,16 @@
         <fileset file="${build.tmp}/deps/mps-multiline/mps-multiline.zip/mps-multiline/languages/mps-multiline/de.slisson.mps.editor.multiline.runtime.jar" />
       </classpath>
     </javac>
+    <copy todir="${build.tmp}/java/out/test.ex.ext.comp_mocking">
+      <fileset dir="${mbeddr.ext}/tests/test.ex.ext.comp_mocking/source_gen" excludes="**/*.java" />
+      <fileset dir="${mbeddr.ext}/tests/test.ex.ext.comp_mocking/test_gen/" excludes="**/*.java" />
+    </copy>
   </target>
   
   <target name="java.compile.test.ex.ext.statemachine" depends="fetchDependencies">
     <mkdir dir="${mbeddr.ext}/tests/test.ex.ext.statemachine/source_gen" />
     <mkdir dir="${build.tmp}/java/out/test.ex.ext.statemachine" />
-    <javac destdir="${build.tmp}/java/out/test.ex.ext.statemachine" fork="true" includeantruntime="false">
+    <javac destdir="${build.tmp}/java/out/test.ex.ext.statemachine" fork="true" includeantruntime="false" debug="true">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${mbeddr.ext}/tests/test.ex.ext.statemachine/source_gen" />
@@ -624,12 +635,16 @@
         <fileset file="${build.tmp}/deps/mps-multiline/mps-multiline.zip/mps-multiline/languages/mps-multiline/de.slisson.mps.editor.multiline.runtime.jar" />
       </classpath>
     </javac>
+    <copy todir="${build.tmp}/java/out/test.ex.ext.statemachine">
+      <fileset dir="${mbeddr.ext}/tests/test.ex.ext.statemachine/source_gen" excludes="**/*.java" />
+      <fileset dir="${mbeddr.ext}/tests/test.ex.ext.statemachine/test_gen/" excludes="**/*.java" />
+    </copy>
   </target>
   
   <target name="java.compile.test.ex.ext.physicalunits.c" depends="fetchDependencies">
     <mkdir dir="${mbeddr.ext}/tests/test.ex.ext.physicalunits.c/source_gen" />
     <mkdir dir="${build.tmp}/java/out/test.ex.ext.physicalunits.c" />
-    <javac destdir="${build.tmp}/java/out/test.ex.ext.physicalunits.c" fork="true" includeantruntime="false">
+    <javac destdir="${build.tmp}/java/out/test.ex.ext.physicalunits.c" fork="true" includeantruntime="false" debug="true">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${mbeddr.ext}/tests/test.ex.ext.physicalunits.c/source_gen" />
@@ -692,12 +707,16 @@
         <fileset file="${build.tmp}/deps/mps-multiline/mps-multiline.zip/mps-multiline/languages/mps-multiline/de.slisson.mps.editor.multiline.runtime.jar" />
       </classpath>
     </javac>
+    <copy todir="${build.tmp}/java/out/test.ex.ext.physicalunits.c">
+      <fileset dir="${mbeddr.ext}/tests/test.ex.ext.physicalunits.c/source_gen" excludes="**/*.java" />
+      <fileset dir="${mbeddr.ext}/tests/test.ex.ext.physicalunits.c/test_gen/" excludes="**/*.java" />
+    </copy>
   </target>
   
   <target name="java.compile.test.ex.ext.components" depends="fetchDependencies">
     <mkdir dir="${mbeddr.ext}/tests/test.ex.ext.components/source_gen" />
     <mkdir dir="${build.tmp}/java/out/test.ex.ext.components" />
-    <javac destdir="${build.tmp}/java/out/test.ex.ext.components" fork="true" includeantruntime="false">
+    <javac destdir="${build.tmp}/java/out/test.ex.ext.components" fork="true" includeantruntime="false" debug="true">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${mbeddr.ext}/tests/test.ex.ext.components/source_gen" />
@@ -760,6 +779,10 @@
         <fileset file="${build.tmp}/deps/mps-multiline/mps-multiline.zip/mps-multiline/languages/mps-multiline/de.slisson.mps.editor.multiline.runtime.jar" />
       </classpath>
     </javac>
+    <copy todir="${build.tmp}/java/out/test.ex.ext.components">
+      <fileset dir="${mbeddr.ext}/tests/test.ex.ext.components/source_gen" excludes="**/*.java" />
+      <fileset dir="${mbeddr.ext}/tests/test.ex.ext.components/test_gen/" excludes="**/*.java" />
+    </copy>
   </target>
   
   <target name="cleanSources">

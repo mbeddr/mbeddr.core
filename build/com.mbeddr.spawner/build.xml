@@ -212,6 +212,9 @@
         <module file="${mbeddr.github.core.home}/tools/Eclipse.Debugger/Debugger.msd" />
         <module file="${mbeddr.core}/languages/com.mbeddr.core.spawner/spawner.msd" />
       </chunk>
+      <jvmargs>
+        <arg value="-Xmx512m" />
+      </jvmargs>
     </generate>
   </target>
   

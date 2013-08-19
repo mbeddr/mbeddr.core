@@ -243,26 +243,26 @@
   </target>
   
   <target name="fetchDependencies">
+    <mkdir dir="${build.tmp}/deps/com.mbeddr.debugger.build/com.mbeddr.core.debugger.zip" />
+    <unzip src="${artifacts.com.mbeddr.debugger.build}/com.mbeddr.core.debugger.zip" dest="${build.tmp}/deps/com.mbeddr.debugger.build/com.mbeddr.core.debugger.zip" />
+    <mkdir dir="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip" />
+    <unzip src="${artifacts.com.mbeddr.core.build}/com.mbeddr.core.zip" dest="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip" />
+    <mkdir dir="${build.tmp}/deps/com.mbeddr.ext.components/com.mbeddr.ext.components.zip" />
+    <unzip src="${artifacts.com.mbeddr.ext.components}/com.mbeddr.ext.components.zip" dest="${build.tmp}/deps/com.mbeddr.ext.components/com.mbeddr.ext.components.zip" />
+    <mkdir dir="${build.tmp}/deps/mps-multiline/mps-multiline.zip" />
+    <unzip src="${artifacts.mps-multiline}/mps-multiline.zip" dest="${build.tmp}/deps/mps-multiline/mps-multiline.zip" />
+    <mkdir dir="${build.tmp}/deps/com.mbeddr.cc.req.build/com.mbeddr.cc.req.zip" />
+    <unzip src="${artifacts.com.mbeddr.cc.req.build}/com.mbeddr.cc.req.zip" dest="${build.tmp}/deps/com.mbeddr.cc.req.build/com.mbeddr.cc.req.zip" />
     <mkdir dir="${build.tmp}/deps/com.mbeddr.ext.statemachine/com.mbeddr.ext.statemachine.zip" />
     <unzip src="${artifacts.com.mbeddr.ext.statemachine}/com.mbeddr.ext.statemachine.zip" dest="${build.tmp}/deps/com.mbeddr.ext.statemachine/com.mbeddr.ext.statemachine.zip" />
     <mkdir dir="${build.tmp}/deps/mps-richtext/mps-richtext.zip" />
     <unzip src="${artifacts.mps-richtext}/mps-richtext.zip" dest="${build.tmp}/deps/mps-richtext/mps-richtext.zip" />
-    <mkdir dir="${build.tmp}/deps/com.mbeddr.ext.components/com.mbeddr.ext.components.zip" />
-    <unzip src="${artifacts.com.mbeddr.ext.components}/com.mbeddr.ext.components.zip" dest="${build.tmp}/deps/com.mbeddr.ext.components/com.mbeddr.ext.components.zip" />
-    <mkdir dir="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip" />
-    <unzip src="${artifacts.com.mbeddr.core.build}/com.mbeddr.core.zip" dest="${build.tmp}/deps/com.mbeddr.core.build/com.mbeddr.core.zip" />
-    <mkdir dir="${build.tmp}/deps/com.mbeddr.cc.req.build/com.mbeddr.cc.req.zip" />
-    <unzip src="${artifacts.com.mbeddr.cc.req.build}/com.mbeddr.cc.req.zip" dest="${build.tmp}/deps/com.mbeddr.cc.req.build/com.mbeddr.cc.req.zip" />
-    <mkdir dir="${build.tmp}/deps/com.mbeddr.mpsutil.build/com.mbeddr.mpsutil.zip" />
-    <unzip src="${artifacts.com.mbeddr.mpsutil.build}/com.mbeddr.mpsutil.zip" dest="${build.tmp}/deps/com.mbeddr.mpsutil.build/com.mbeddr.mpsutil.zip" />
-    <mkdir dir="${build.tmp}/deps/mps-multiline/mps-multiline.zip" />
-    <unzip src="${artifacts.mps-multiline}/mps-multiline.zip" dest="${build.tmp}/deps/mps-multiline/mps-multiline.zip" />
     <mkdir dir="${build.tmp}/deps/com.mbeddr.ext.statemachinesInComponents/com.mbeddr.ext.statemachineInComponents.zip" />
     <unzip src="${artifacts.com.mbeddr.ext.statemachinesInComponents}/com.mbeddr.ext.statemachineInComponents.zip" dest="${build.tmp}/deps/com.mbeddr.ext.statemachinesInComponents/com.mbeddr.ext.statemachineInComponents.zip" />
     <mkdir dir="${build.tmp}/deps/com.mbeddr.spawner.build/com.mbeddr.spawner.zip" />
     <unzip src="${artifacts.com.mbeddr.spawner.build}/com.mbeddr.spawner.zip" dest="${build.tmp}/deps/com.mbeddr.spawner.build/com.mbeddr.spawner.zip" />
-    <mkdir dir="${build.tmp}/deps/com.mbeddr.debugger.build/com.mbeddr.core.debugger.zip" />
-    <unzip src="${artifacts.com.mbeddr.debugger.build}/com.mbeddr.core.debugger.zip" dest="${build.tmp}/deps/com.mbeddr.debugger.build/com.mbeddr.core.debugger.zip" />
+    <mkdir dir="${build.tmp}/deps/com.mbeddr.mpsutil.build/com.mbeddr.mpsutil.zip" />
+    <unzip src="${artifacts.com.mbeddr.mpsutil.build}/com.mbeddr.mpsutil.zip" dest="${build.tmp}/deps/com.mbeddr.mpsutil.build/com.mbeddr.mpsutil.zip" />
     <mkdir dir="${build.tmp}/deps/com.mbeddr.analyses.base/com.mbeddr.analyses.base.zip" />
     <unzip src="${artifacts.com.mbeddr.analyses.base}/com.mbeddr.analyses.base.zip" dest="${build.tmp}/deps/com.mbeddr.analyses.base/com.mbeddr.analyses.base.zip" />
   </target>
@@ -408,6 +408,9 @@
         <module file="${mbeddr.analyses}/devkits/com.mbeddr.analyses.statemachine/statemachine.devkit" />
       </chunk>
       <chunk />
+      <jvmargs>
+        <arg value="-Xmx512m" />
+      </jvmargs>
     </generate>
   </target>
   
@@ -469,7 +472,7 @@
   <target name="java.compile.com.mbeddr.analyses.nusmv" depends="fetchDependencies">
     <mkdir dir="${mbeddr.analyses}/languages/com.mbeddr.analyses.nusmv/source_gen" />
     <mkdir dir="${build.tmp}/java/out/com.mbeddr.analyses.nusmv" />
-    <javac destdir="${build.tmp}/java/out/com.mbeddr.analyses.nusmv" fork="true" includeantruntime="false">
+    <javac destdir="${build.tmp}/java/out/com.mbeddr.analyses.nusmv" fork="true" includeantruntime="false" debug="true">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${mbeddr.analyses}/languages/com.mbeddr.analyses.nusmv/source_gen" />
@@ -523,12 +526,15 @@
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.typesystem.jar" />
       </classpath>
     </javac>
+    <copy todir="${build.tmp}/java/out/com.mbeddr.analyses.nusmv">
+      <fileset dir="${mbeddr.analyses}/languages/com.mbeddr.analyses.nusmv/source_gen" excludes="**/*.java" />
+    </copy>
   </target>
   
   <target name="java.compile.com.mbeddr.analyses.nusmv#536077958821417725" depends="java.compile.com.mbeddr.analyses.nusmv, fetchDependencies">
     <mkdir dir="${mbeddr.analyses}/languages/com.mbeddr.analyses.nusmv/generator/source_gen" />
     <mkdir dir="${build.tmp}/java/out/com.mbeddr.analyses.nusmv#536077958821417725" />
-    <javac destdir="${build.tmp}/java/out/com.mbeddr.analyses.nusmv#536077958821417725" fork="true" includeantruntime="false">
+    <javac destdir="${build.tmp}/java/out/com.mbeddr.analyses.nusmv#536077958821417725" fork="true" includeantruntime="false" debug="true">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${mbeddr.analyses}/languages/com.mbeddr.analyses.nusmv/generator/source_gen" />
@@ -583,6 +589,9 @@
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.typesystem.jar" />
       </classpath>
     </javac>
+    <copy todir="${build.tmp}/java/out/com.mbeddr.analyses.nusmv#536077958821417725">
+      <fileset dir="${mbeddr.analyses}/languages/com.mbeddr.analyses.nusmv/generator/source_gen" excludes="**/*.java" />
+    </copy>
   </target>
   
   <target name="java.compile.java.modules.cycle.1" depends="java.compile.com.mbeddr.analyses.nusmv, fetchDependencies">
@@ -675,7 +684,7 @@
   <target name="java.compile.com.mbeddr.analyses.nusmv.statemachine" depends="java.compile.java.modules.cycle.1, fetchDependencies">
     <mkdir dir="${mbeddr.analyses}/languages/com.mbeddr.analyses.nusmv.statemachine/source_gen" />
     <mkdir dir="${build.tmp}/java/out/com.mbeddr.analyses.nusmv.statemachine" />
-    <javac destdir="${build.tmp}/java/out/com.mbeddr.analyses.nusmv.statemachine" fork="true" includeantruntime="false">
+    <javac destdir="${build.tmp}/java/out/com.mbeddr.analyses.nusmv.statemachine" fork="true" includeantruntime="false" debug="true">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${mbeddr.analyses}/languages/com.mbeddr.analyses.nusmv.statemachine/source_gen" />
@@ -740,12 +749,15 @@
         <pathelement path="${build.tmp}/java.modules.cycle.1" />
       </classpath>
     </javac>
+    <copy todir="${build.tmp}/java/out/com.mbeddr.analyses.nusmv.statemachine">
+      <fileset dir="${mbeddr.analyses}/languages/com.mbeddr.analyses.nusmv.statemachine/source_gen" excludes="**/*.java" />
+    </copy>
   </target>
   
   <target name="java.compile.com.mbeddr.analyses.nusmv.statemachine#1579201292658953368" depends="java.compile.com.mbeddr.analyses.nusmv, java.compile.com.mbeddr.analyses.nusmv.rt, java.compile.com.mbeddr.analyses.nusmv.statemachine, fetchDependencies">
     <mkdir dir="${mbeddr.analyses}/languages/com.mbeddr.analyses.nusmv.statemachine/generator/source_gen" />
     <mkdir dir="${build.tmp}/java/out/com.mbeddr.analyses.nusmv.statemachine#1579201292658953368" />
-    <javac destdir="${build.tmp}/java/out/com.mbeddr.analyses.nusmv.statemachine#1579201292658953368" fork="true" includeantruntime="false">
+    <javac destdir="${build.tmp}/java/out/com.mbeddr.analyses.nusmv.statemachine#1579201292658953368" fork="true" includeantruntime="false" debug="true">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${mbeddr.analyses}/languages/com.mbeddr.analyses.nusmv.statemachine/generator/source_gen" />
@@ -813,12 +825,15 @@
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.typesystem.jar" />
       </classpath>
     </javac>
+    <copy todir="${build.tmp}/java/out/com.mbeddr.analyses.nusmv.statemachine#1579201292658953368">
+      <fileset dir="${mbeddr.analyses}/languages/com.mbeddr.analyses.nusmv.statemachine/generator/source_gen" excludes="**/*.java" />
+    </copy>
   </target>
   
   <target name="java.compile.com.mbeddr.analyses.nusmv.rt" depends="java.compile.com.mbeddr.analyses.nusmv, java.compile.java.modules.cycle.1, fetchDependencies">
     <mkdir dir="${mbeddr.analyses}/languages/com.mbeddr.analyses.nusmv.rt/source_gen" />
     <mkdir dir="${build.tmp}/java/out/com.mbeddr.analyses.nusmv.rt" />
-    <javac destdir="${build.tmp}/java/out/com.mbeddr.analyses.nusmv.rt" fork="true" includeantruntime="false">
+    <javac destdir="${build.tmp}/java/out/com.mbeddr.analyses.nusmv.rt" fork="true" includeantruntime="false" debug="true">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${mbeddr.analyses}/languages/com.mbeddr.analyses.nusmv.rt/source_gen" />
@@ -901,12 +916,15 @@
         <pathelement path="${build.tmp}/java.modules.cycle.1" />
       </classpath>
     </javac>
+    <copy todir="${build.tmp}/java/out/com.mbeddr.analyses.nusmv.rt">
+      <fileset dir="${mbeddr.analyses}/languages/com.mbeddr.analyses.nusmv.rt/source_gen" excludes="**/*.java" />
+    </copy>
   </target>
   
   <target name="java.compile.com.mbeddr.analyses.nusmv.statemachine.pluginSolution" depends="java.compile.com.mbeddr.analyses.nusmv.rt, java.compile.com.mbeddr.analyses.nusmv.statemachine, fetchDependencies">
     <mkdir dir="${mbeddr.analyses}/languages/com.mbeddr.analyses.nusmv.statemachine/solutions/pluginSolution/source_gen" />
     <mkdir dir="${build.tmp}/java/out/com.mbeddr.analyses.nusmv.statemachine.pluginSolution" />
-    <javac destdir="${build.tmp}/java/out/com.mbeddr.analyses.nusmv.statemachine.pluginSolution" fork="true" includeantruntime="false">
+    <javac destdir="${build.tmp}/java/out/com.mbeddr.analyses.nusmv.statemachine.pluginSolution" fork="true" includeantruntime="false" debug="true">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${mbeddr.analyses}/languages/com.mbeddr.analyses.nusmv.statemachine/solutions/pluginSolution/source_gen" />
@@ -969,6 +987,9 @@
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.typesystem.jar" />
       </classpath>
     </javac>
+    <copy todir="${build.tmp}/java/out/com.mbeddr.analyses.nusmv.statemachine.pluginSolution">
+      <fileset dir="${mbeddr.analyses}/languages/com.mbeddr.analyses.nusmv.statemachine/solutions/pluginSolution/source_gen" excludes="**/*.java" />
+    </copy>
   </target>
   
   <target name="cleanSources">

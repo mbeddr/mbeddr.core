@@ -378,6 +378,9 @@
         <module file="${mbeddr.analyses}/tests/test.ts.analyses.yices.dectab/test.ts.analyses.yices.dectab.msd" />
         <module file="${mbeddr.analyses}/tests/test.ts.analysis.statemachine/test.ts.analysis.statemachine.msd" />
       </chunk>
+      <jvmargs>
+        <arg value="-Xmx512m" />
+      </jvmargs>
     </generate>
   </target>
   

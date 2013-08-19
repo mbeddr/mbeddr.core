@@ -319,6 +319,9 @@
         <module file="${mbeddr.core}/tests/test.ts.core/core.msd" />
         <module file="${mbeddr.core}/tests/test.ts.core.dataflow/dataflow.msd" />
       </chunk>
+      <jvmargs>
+        <arg value="-Xmx512m" />
+      </jvmargs>
     </generate>
   </target>
   

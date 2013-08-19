@@ -247,6 +247,9 @@
       <chunk>
         <module file="${mbeddr.github.core.home}/code/languages/com.mbeddr.debugger.tests/tests/test.debugger.runtime/runtime.msd" />
       </chunk>
+      <jvmargs>
+        <arg value="-Xmx512m" />
+      </jvmargs>
     </generate>
   </target>
   

@@ -641,6 +641,9 @@
         <property name="url" nameId="kdzh.7832771629084799701" value="http://mbeddr.com" />
       </node>
     </node>
+    <node role="parts" roleId="3ior.7389400916848080626" type="3ior.BuildSource_JavaOptions" typeId="3ior.927724900262033858" id="9016963486461274514" nodeInfo="ng">
+      <property name="generateDebugInfo" nameId="3ior.927724900262033861" value="true" />
+    </node>
     <node role="parts" roleId="3ior.7389400916848080626" type="kdzh.BuildMps_Group" typeId="kdzh.1500819558095907805" id="7247348105538752347" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="com.mbeddr.analyses.yices" />
       <node role="modules" roleId="kdzh.1500819558095907806" type="kdzh.BuildMps_Language" typeId="kdzh.3189788309731840248" id="7247348105538752350" nodeInfo="ng">
@@ -1978,6 +1981,9 @@
         <property name="url" nameId="kdzh.7832771629084799701" value="http://mbeddr.com" />
       </node>
     </node>
+    <node role="parts" roleId="3ior.7389400916848080626" type="3ior.BuildSource_JavaOptions" typeId="3ior.927724900262033858" id="9016963486461249802" nodeInfo="ng">
+      <property name="generateDebugInfo" nameId="3ior.927724900262033861" value="true" />
+    </node>
     <node role="parts" roleId="3ior.7389400916848080626" type="kdzh.BuildMps_Group" typeId="kdzh.1500819558095907805" id="7247348105538752482" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="com.mbeddr.analyses.base" />
       <node role="modules" roleId="kdzh.1500819558095907806" type="kdzh.BuildMps_Language" typeId="kdzh.3189788309731840248" id="3668159920709522788" nodeInfo="ng">
@@ -2890,6 +2896,9 @@
         <property name="name" nameId="kdzh.7832771629084799702" value="mbeddr" />
         <property name="url" nameId="kdzh.7832771629084799701" value="http://mbeddr.com" />
       </node>
+    </node>
+    <node role="parts" roleId="3ior.7389400916848080626" type="3ior.BuildSource_JavaOptions" typeId="3ior.927724900262033858" id="9016963486461273984" nodeInfo="ng">
+      <property name="generateDebugInfo" nameId="3ior.927724900262033861" value="true" />
     </node>
     <node role="parts" roleId="3ior.7389400916848080626" type="kdzh.BuildMps_Group" typeId="kdzh.1500819558095907805" id="7247348105538928893" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="com.mbeddr.analyses.nusmv" />
@@ -3965,6 +3974,9 @@
         <property name="name" nameId="kdzh.7832771629084799702" value="mbeddr" />
         <property name="url" nameId="kdzh.7832771629084799701" value="http://mbeddr.com" />
       </node>
+    </node>
+    <node role="parts" roleId="3ior.7389400916848080626" type="3ior.BuildSource_JavaOptions" typeId="3ior.927724900262033858" id="9016963486461272987" nodeInfo="ng">
+      <property name="generateDebugInfo" nameId="3ior.927724900262033861" value="true" />
     </node>
     <node role="parts" roleId="3ior.7389400916848080626" type="kdzh.BuildMps_Group" typeId="kdzh.1500819558095907805" id="7247348105538929019" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="com.mbeddr.analyses.cbmc" />
